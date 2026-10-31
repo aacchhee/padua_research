@@ -40,6 +40,14 @@ Subagent effort is set from the agent definition and is not independently expose
 - Novelty gate (AC Step 0 override): registry before seed was empty apart from the template text; the seed is not an acceptance or novelty verdict. Each direction records closest predecessors and kill tests per candidate.
 - Checkpoints pushed: 8edbc69, bef4490.
 
+### Direction launch (2026-10-31, after Step 0)
+
+- L1+L4: Claude Opus 5.5, xhigh (requested); owns directions/L1, code/L1, theory files 1nn/4nn.
+- L3: Claude Opus 5.5, xhigh (requested); owns directions/L3, code/L3, theory files 3nn.
+- L5 (side): Claude Sonnet 5.5, high (requested); owns directions/L5, code/L5, theory files 5nn.
+- L2 queued. Reproduction of inputs (Sonnet 5.5 high) still running; owns repro/.
+- Each developer returns after ≤ 3 rounds; the orchestrator checkpoints, then commissions prior-art checks and independent adversarial reconstructions (separate Opus 5.5 xhigh agents) before any acceptance.
+
 ## Runs needed
 
 (none yet; directions add exact commands)
