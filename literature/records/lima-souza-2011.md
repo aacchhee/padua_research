@@ -25,3 +25,7 @@ See [search log](../SEARCH-charter-unisolvence-20261031.md). Imported prior sear
 ## History
 
 2026-10-31: Step0 import under explicit task override; provisional ID only.
+
+## Metadata search addendum
+
+2026-10-31: DOI candidate10.1007/s00200-011-0158-0; AAECC22(5–6)(2011)393–411. A2015 publisher-hosted article bibliography (https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/el.2015.0905) gives this metadata. DOI opening failed via connected browser; original abstract/fulltext NOT inspected, metadata remains UNVERIFIED pending primary resolution. Do not confuse this with the separate2011 LAA eigenstructure paper DOI10.1016/j.laa.2011.03.031.

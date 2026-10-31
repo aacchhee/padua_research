@@ -36,3 +36,9 @@ Literature agent imported 29 records and a complete supplied-candidate/dispositi
 Search terms across state, theory, topics, literature: checkerboard, alternation, Hankel, quasi-definite, finite field, discriminant, unisolvence, lower set, Cartesian; initial scientific registries empty. Main shortlist is supplied HS and Padua source records; literature agent investigating interlacing-grid factorization predecessor. No novelty claim.
 
 Root reproduced unchanged harris_simanek_check.py with Python3.12.14, numpy2.3.5 (source RNG0); completed rc0. Output staged /workspace/padua-cold/charter-unisolvence-20261031/root/harris_simanek_check.log. Floating-point only: m6,15,30 and both parities/random/warped/Padua configurations as code. Random m30 QR comparison differs by about 7.7e-5 despite Gram orthogonality near 1e-14; no uniform numerical-accuracy claim inferred and no finite-precision theory developed. U0 reproduced unchanged run_all.py rc0; details in U0 records.
+
+## Checkpoint 59468bd
+
+Charter/baseline committed and pushed. Prior-art expansion adds40 total source records (still provisional). GitHub open-PR listing returned no open PRs, so no active allocation reservation observed; refresh again at final PR preparation.
+
+Copied nine relied-on input scripts byte-identically into input-code/ (source SHA256 and Git blob identities in IDENTITY.json). Reproduction commands can now be run from committed code without reacquiring ignored original notes. Original run_all lacks child exit propagation; U0 records individual exit codes in a wrapper. Root floating-point Harris log retained without promoting its broad numerical agreement claims.

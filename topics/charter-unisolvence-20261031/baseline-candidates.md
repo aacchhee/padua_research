@@ -67,3 +67,14 @@ This table preserves the original numbered ten, their round2 A–E refinements, 
 | vector weights | Humet Ch5 vector-weight generalized implicit Q theorem | Unpublished slides, source reports unproved theorem | Deferred contextual; do not rediscover as new. |
 
 Contextual bibliographies and original-source acquisition requests in the supplied notes remain pending-reference. Their relative rankings do not constitute authorization to activate additional directions. A source’s failed experiment does not reject a theorem or family outside its recorded scope.
+
+## Executed prior-art corrections and acceptance blockers
+
+2026-10-31: targeted web search and primary excerpts identified Bos–De Marchi–Waldron2009, De Marchi–Usevich2014 Proposition1 / §4 Corollary1, Camargo–De Marchi2015 (fulltext pending), Floater2017 and Cao–Ghimire–Wang2022. See literature records30–36. Consequently:
+
+- U1b axis-only factorization is existing prior art, not by itself a surviving separation. A precise Hankel-minor rewrite/cutoff/arbitrary-field statement must be compared to those factors before acceptance. The 2014 source displays even degree and calls odd degree similar; neither odd-degree completion nor field transfer is silently inherited here.
+- U2a’s source-reported HS Conjecture3 open status is outdated over decreasing real nodes: Cao–Ghimire–Wang2022 Thm3.1 proves it, with quotient uniqueness Thm4.2. This corrects the imported baseline without erasing historical disposition. A field-general statement remains a different question.
+- U3 kernel formulas have an additional explicit predecessor in Cao–Ghimire–Wang2022.
+- Finite-field Padua queries did not locate a matching paper within the returned results, a bounded search-negative observation only. No novelty established.
+
+No candidate is scientifically accepted by this literature developer. Fulltext gaps are pending-reference; local independent reconstruction and orchestrator/auditor decisions remain mandatory.

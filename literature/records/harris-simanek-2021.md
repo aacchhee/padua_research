@@ -25,3 +25,7 @@ See [search log](../SEARCH-charter-unisolvence-20261031.md). Imported prior sear
 ## History
 
 2026-10-31: Step0 import under explicit task override; provisional ID only.
+
+## Primary inspection addendum (2026-10-31)
+
+Author-hosted draft https://www.ms.uky.edu/~larry/paper.dir/PAMS_Rectangular.pdf: inspected first page (strictly decreasing real nodes, m≥1) and draft pp.4–5 (eq11, positivity paragraph, Thm1, Cor2, Conj3, eq14). This confirms the ordered-real σ=1 statement and records explicit use of positivity. Coverage is partial; journal page locators remain supplied. The stronger rectangular-degree conjecture was subsequently proved by Cao–Ghimire–Wang2022 (record LIT?charter-unisolvence-codex-33); the supplied notes’ present-tense open attribution is outdated. No blanket upgrade of imported source content.
