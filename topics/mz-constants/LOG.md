@@ -48,3 +48,6 @@
 - Low findings: L1 stale conditional in PD-T028; L2 the non-vacuity range of 128000/(log N)², and how the finite tables relate to the log⁻² order; L3 PD-T017 proves the full-space λ_min(CC,N) bound.
 - Executed: the developer's M1/M2/M3, reproduction and protocol commands, all matching the committed and Astra outputs exactly. Also the auditor's own checker `tracks/mz-constants/evidence/claude-audit-01-check.py` (exact sign checks to N=60, Padua compression to N=14, and a MEASURED shifted-log fit to N=5120) and a manuscript build (14 pages, no warnings).
 - Stage returns to WORK for Codex `response-01.md`. Only AC merges.
+- Follow-up (same audit): the registry/ledger subsection §5 is completed.
+  - P1 (Medium): `claude/programme-ideas-20261031` holds a second, conflicting `topics/padua-batch-20261031/ALLOCATIONS.md`, with an add/add merge conflict and a different owner rule. It must be reconciled into one ledger before any member PR is ready.
+  - P2–P6 (Low): PROOF_STATUS placeholder dependency and part-status text; missing PD-N/IDEA dispositions in the registries; non-reciprocal split links; registry rule text lost on integration; stale PR #2 pins and the "no IDs reserved" line above.

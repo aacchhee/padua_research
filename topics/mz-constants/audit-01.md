@@ -1,7 +1,7 @@
 # Audit 01 — MZ constants (cross-agent mathematical audit)
 
 - Auditor: Claude, independent auditor (the other agent from the Codex developer). Model: Opus 5.5, xhigh effort, as requested in the handoff prompt `Claude (Opus 5.5 xhigh): Continue codex/mz-constants-20261031.` The runtime reports the model; the effort level is taken from the session request.
-- Reason for this choice: `agents/WORKFLOW.md` assigns Opus 5.5 high or xhigh to mathematical audit and xhigh to adversarial audit of novel mechanisms. This package has both. A separate Claude subagent (Opus 5.5, high effort) checked the registry, ID ledger, batch rehearsal, manifests and file limits. Its findings are integrated in §5 and were re-checked by the auditor where marked.
+- Reason for this choice: `agents/WORKFLOW.md` assigns Opus 5.5 high or xhigh to mathematical audit and xhigh to adversarial audit of novel mechanisms. This package has both. A separate Claude subagent (Opus 5.5) checked the registry, ID ledger, batch rehearsal, manifests and file limits. Its findings are integrated in §5 and were re-checked by the auditor where marked.
 - Date: 2026-10-31 (Europe/Oslo evening).
 - Rules read at the branch head `fdf0648cbaa9fb722c611d709e638de7dfe86368`: `AGENTS.md`, `agents/WORKFLOW.md`, `agents/claude/CLAUDE_ROLES.md`, and `topics/mz-constants/AUDIT_HANDOFF.md`.
 - Audited candidate: branch `codex/mz-constants-20261031` at head `fdf0648cbaa9fb722c611d709e638de7dfe86368`. The base is `d36722823441dc40c6e19d69a174459348dd309c`, equal to current `origin/main`. PR [aacchhee/padua_research#3](https://github.com/aacchhee/padua_research/pull/3). The theory-file SHA-256 values match `audit-targets.json` (§5).
@@ -11,6 +11,7 @@
 - **Verdict: CHANGES REQUESTED.**
   - There is no High finding, and no mathematical error was found. Every PROVED statement in scope was reconstructed line by line and found correct as stated, with correct hypotheses and statuses.
   - Medium findings M1–M2 affect what the registry and manuscript present as the headline results, and which prior art must be screened. They do not affect validity.
+  - Protocol finding P1 (Medium, §5) concerns a split batch ledger that must be reconciled before any member PR is ready. P2–P7 are Low or Informational bookkeeping items.
   - Under the workflow, findings set the stage to WORK. Codex answers in `response-01.md`. The proposed change in M1 adds a one-line corollary; that addition needs a focused re-audit only.
 
 ## 1. Independent checks actually run
@@ -156,15 +157,89 @@ Verified by the auditor directly:
 - The only broken local link is the ignored PDF, which is expected.
 - Windows cold-storage delivery for the developer's artifacts remains pending, as `cold-storage.md` states. The auditor did not attempt it, because those artifacts exist only in the developer's workspace.
 
-**Delegated registry/ledger review — IN PROGRESS at this commit.** The following was delegated to a separate Claude subagent (Opus 5.5) and will be added to this section in a follow-up commit, without changing §1–§4:
-- PROOF_STATUS rows against the theory headers;
-- the 65 crosswalk mappings;
-- the disjointness of the batch ledger from PR #2 and the claude/* branches;
-- the batch rehearsal and merge-tree conflicts;
-- the audit-targets hashes;
-- the commit trailers and the PR #3 sections.
+**Delegated registry/ledger review.** A separate Claude subagent (Opus 5.5) ran this review read-only at `fdf0648`. The auditor re-checked P1, P2, P3, P6 and P8 directly (the commands are noted in each), and accepts the subagent's results as listed. Severity uses this report's scale.
 
-Until that is recorded, readiness cannot be assessed on the protocol side.
+### P1 (Medium; blocks readiness) — Two different ledgers exist at the shared path `topics/padua-batch-20261031/ALLOCATIONS.md`
+
+The two versions:
+- **This branch's ledger** names the "root Codex MZ orchestrator" as allocation owner. Its member table lists the charter, MZ and Lanczos only.
+- **`claude/programme-ideas-20261031`** (head `a02bc35`, commit `8f500db`, 20:57 UTC) independently created a ledger at the same path. It declares itself the single ledger, uses a different owner rule ("whichever member branch next reaches PR preparation…"), and still lists MZ as "Provisional IDs only… pinned `e9761aa`".
+
+Auditor check: `git merge-tree --write-tree --name-only origin/claude/programme-ideas-20261031 HEAD` gives `CONFLICT (add/add)` on that file.
+
+No final ID collides yet; programme-ideas uses only provisional labels. However, WORKFLOW requires one ledger and one owner, and conflicting reservations must be resolved before any affected PR becomes ready.
+
+Requested:
+- Reconcile into one ledger with one recorded owner.
+- Add the programme-ideas member row.
+- Record that the next free ranges are PD-T029, PD-N007, LIT-061 and IDEA-077, after MZ.
+- Propagate the reconciled ledger to every member branch.
+
+### P2 (Low) — PROOF_STATUS rows use placeholder text
+
+`PROOF_STATUS.md:9–29`:
+- Every MZ row's "Depends on" reads "explicit local dependencies in file".
+- Every "Status by mathematical part" reads "exact statement in canonical theory".
+
+The theory files list real dependencies, for example PD-T014→PD-T013/015, PD-T024→PD-T022/023 and PD-T021→PD-T018/PD-N004.
+
+Auditor check: `sed -n 9,29p PROOF_STATUS.md`.
+
+Requested: put the ID lists in the column, as PR #2's rows do. Readers are told to check the registry before using a row as a dependency.
+
+### P3 (Low) — Dispositions are missing from PD-N rows and from `state/IDEAS.md`
+
+- The PD-N rows (`PROOF_STATUS.md:25–29`) read "scoped mechanism failure/refutation; see theory". They should name what was killed, for example "IDEA-060 REJECTED: refuted (see PD-N002)". The full set is 060 refuted, 061 failed, 068 refuted, 069 failed and 070 failed.
+- `grep -c REJECTED state/IDEAS.md` returns 0 (auditor-checked). IDEA-060…076 are link stubs. The seed disposition table still shows IDEA-053/054 as "active" and IDEA-055 as "deferred", although they are developed and PROVED.
+
+Requested: add a current disposition table for IDEA-052…076 to `state/IDEAS.md`, using the allowed vocabulary. IDEA-064, 067 and 072 are "equivalent" while supporting PROVED results, so state whether that is an IDEA disposition or a known-mechanism note. No candidate was dropped: all 65 provisional labels are mapped.
+
+### P4 (Low) — Split-from / split-into links do not reciprocate
+
+- PD-T019's split into PD-T018 and PD-N004 is not mirrored in their headers.
+- PD-T027 and PD-T028 cite filenames, not PD-T014 and PD-T021.
+- PD-T015 does not name PD-T014 as its parent.
+
+`ID_CROSSWALK.md:77–80` is consistent with the intended structure. Requested: use IDs, and make each pair point at the other.
+
+### P5 (Low) — Registry rule text is lost on integration
+
+The branch deletes main's four-paragraph PROOF_STATUS preamble, including the `REJECTED: refuted (see PD-Nnnn)` convention. PR #2 also replaces it, so after both are integrated the rule text is gone. After integration, both the patched PROOF_STATUS (lines 3 and 23) and ID_CROSSWALK (lines 3 and 130) also claim different single ledgers.
+
+This is a registry-documentation change that needs AC's awareness and a fix during ledger reconciliation (P1).
+
+### P6 (Low) — Stale pins
+
+- `LOG.md:7` still says "no IDs reserved yet" (auditor-checked).
+- The ledger, `final-id-map.json` (`competing_pr2_head`) and `batch-rehearsal.json` (`charter_source`) all pin PR #2 at `eb7bdcd`. PR #2 is now at `3bd9d4e` (auditor-checked with `git rev-parse`).
+
+The shared-registry blobs are identical at both heads, so the rehearsal still holds. Requested: refresh the pins, and re-rehearse after PR #2's response.
+
+### P7 (Informational) — Formatting, PR wording and template deviation
+
+- Missing spaces glue numbers and hashes to words in `integration-impact.md:3,9,11` and `state/IDEAS.md:275–277` (for example "SHA256654f052a…"). This makes copy errors likely.
+- PR #3's body says "No merge sequence is requested now". It needs an explicit decision request to AC at readiness.
+- `cold-storage.md` uses SHA-256 plus the base SHA instead of the template's blob IDs, and says so at line 10. This is acceptable.
+
+### Verified clean (subagent; P-checks re-run by the auditor where noted)
+
+- **Theory headers.** All 21 header IDs and statuses match PROOF_STATUS.
+- **Crosswalk.** 65/65 crosswalk rows match `final-id-map.json`, with no duplicate finals. All 19 LIT IDs appear in INDEX and in their records.
+- **Ranges.** The MZ ranges (PD-T013–028, PD-N002–006, LIT-042–060, IDEA-052–076) are disjoint from PR #2's ranges, and nothing is renumbered.
+- **Rehearsal.**
+  - `merge-tree` of PR #2 (both heads) against MZ gives exactly the 9 conflicts recorded in `batch-rehearsal.json`; main+MZ is clean.
+  - The resolution patch's pre-image matches, its SHA-256 and size match the record, and a dry-run application produced the recorded post-image blobs.
+  - The result has 34 unique PD rows and no conflict markers.
+- **Hashes.** `audit-targets.json` pins 123/123 files, all matching by SHA-256 and size.
+- **Evidence.** Every committed evidence file matches a manifest entry.
+- **Commits.** All 7 commits carry `Agent:`/`Model:` trailers, and no rule, agent, template or `.github` file changed.
+
+Not checked:
+- the local-only rehearsal commits `be1665d` and `b21e395` (their results were reproduced independently instead);
+- Windows delivery;
+- when the programme-ideas ledger was pushed relative to the MZ allocation.
+
+`claude/bivariate-lanczos-20261031` will conflict textually with MZ in `literature/{CORPUS,INDEX}.md` and `state/IDEAS.md`; it has only provisional IDs.
 
 ## 6. Remaining uncertainty
 
@@ -175,4 +250,4 @@ Until that is recorded, readiness cannot be assessed on the protocol side.
 
 ## 7. Requested next step
 
-Stage returns to **WORK**. Codex answers M1, M2 and L1–L3 (plus any §5 items) in `response-01.md`, without editing this report. M1's corollary is a material addition; the auditor will re-audit only the changed statements and files. M2 can be closed by a named, recorded pending-reference disposition. Only AC merges.
+Stage returns to **WORK**. Codex answers M1, M2, L1–L3 and P1–P6 in `response-01.md`, without editing this report. M1's corollary is a material addition; the auditor will re-audit only the changed statements and files. M2 can be closed by a named, recorded pending-reference disposition. Only AC merges.
