@@ -1,0 +1,25 @@
+# l1_r07_offpattern_anatomy.py numpy=2.5.3
+== cubic-clustered checkerboard m=30 (M=496): max off-pattern |h_BJ| 2.1e-13, |phi| 2.1e-13, |rho| 1.1e-16
+   BJ loss L(n)                               n8:7e-16 n12:4e-14 n16:2e-11 n20:8e-09 n24:7e-07
+   D(c* + h_BJ off)                           n8:3e-16 n12:4e-14 n16:2e-11 n20:8e-09 n24:7e-07
+   D(c* + phi off)  [feedback part]           n8:8e-15 n12:3e-13 n16:3e-10 n20:3e-08 n24:2e-06
+   D(c* + rho off)  [rounding part]           n8:8e-15 n12:3e-13 n16:3e-10 n20:4e-08 n24:2e-06
+   D(c* + term-wise rounding model), median   n8:3e-15 n12:9e-13 n16:2e-10 n20:4e-08 n24:2e-06
+   D(c* + |h_BJ| random signs), median        n8:1e-13 n12:1e-10 n16:6e-08 n20:1e-05 n24:5e-04
+   top-100 gain entries (n<=20): median gain 4.7e+12; medians |h_BJ| 2.3e-20, |phi| 2.3e-20, |rho| 3.1e-23, u*s 4.4e-22, u*s2 1.4e-22
+   gain*|h_BJ| over all off-pattern entries: largest 5.7e-06, 10th 1.9e-06, 100th 2.0e-08
+   gain*|phi| over all off-pattern entries: largest 5.7e-06, 10th 1.9e-06, 100th 2.0e-08
+   gain*|rho| over all off-pattern entries: largest 3.4e-08, 10th 4.5e-09, 100th 9.6e-11
+   gain*u*s2 over all off-pattern entries:  largest 2.6e-08, 10th 1.1e-08, 100th 4.4e-10
+== equispaced checkerboard m=30 (control, descriptive) (M=496): max off-pattern |h_BJ| 4.8e-16, |phi| 4.5e-16, |rho| 7.8e-17
+   BJ loss L(n)                               n8:9e-16 n12:1e-15 n16:4e-15 n20:1e-14 n24:4e-14
+   D(c* + h_BJ off)                           n8:5e-16 n12:2e-15 n16:4e-15 n20:1e-14 n24:4e-14
+   D(c* + phi off)  [feedback part]           n8:5e-16 n12:2e-15 n16:4e-15 n20:1e-14 n24:4e-14
+   D(c* + rho off)  [rounding part]           n8:3e-16 n12:3e-16 n16:2e-15 n20:2e-15 n24:5e-15
+   D(c* + term-wise rounding model), median   n8:1e-16 n12:4e-16 n16:2e-15 n20:5e-15 n24:1e-14
+   D(c* + |h_BJ| random signs), median        n8:1e-15 n12:5e-15 n16:2e-14 n20:1e-13 n24:3e-13
+   top-100 gain entries (n<=20): median gain 5.2e+02; medians |h_BJ| 1.5e-17, |phi| 1.5e-17, |rho| 4.5e-19, u*s 1.4e-17, u*s2 1.4e-18
+   gain*|h_BJ| over all off-pattern entries: largest 5.5e-14, 10th 3.7e-14, 100th 7.9e-15
+   gain*|phi| over all off-pattern entries: largest 5.5e-14, 10th 3.7e-14, 100th 7.8e-15
+   gain*|rho| over all off-pattern entries: largest 1.5e-15, 10th 9.4e-16, 100th 2.2e-16
+   gain*u*s2 over all off-pattern entries:  largest 2.4e-15, 10th 1.9e-15, 100th 6.8e-16

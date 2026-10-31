@@ -39,3 +39,33 @@
    mp check node     0: ||L^-1||_F (n=16) float64 1.495513e+02  mpmath(30) 1.495513e+02  rel diff 4.0e-15
    mp check node  1061: ||L^-1||_F (n=16) float64 3.694151e+05  mpmath(30) 3.694151e+05  rel diff 2.2e-13
    mp check node   840: ||L^-1||_F (n=16) float64 2.165287e+02  mpmath(30) 2.165287e+02  rel diff 2.5e-15
+## triangle M=1681 (36s)
+   n          :        4        8       12       16       20
+   BJ loss    :  6.9e-15  7.4e-12  3.2e-08  3.7e-03  1.0e+00
+   u*med||L^-1||:  2.5e-15  1.0e-13  7.1e-12  4.0e-10  1.3e-07
+   u*max||L^-1||:  2.7e-14  1.8e-11  2.4e-08  6.9e-05  1.2e+00
+   argmax node at n=20: z = (-0.982, +0.979), |z| = 1.387
+   ||L^-1|| quantiles at n=20 (10/50/90/100%): 2.2e+03 1.2e+09 1.3e+13 1.0e+16
+   mp check node     0: ||L^-1||_F (n=16) float64 1.115199e+04  mpmath(30) 1.115199e+04  rel diff 2.4e-12
+   mp check node   104: ||L^-1||_F (n=16) float64 6.200859e+11  mpmath(30) 6.200256e+11  rel diff 9.7e-05
+   mp check node   840: ||L^-1||_F (n=16) float64 3.709843e+02  mpmath(30) 3.709843e+02  rel diff 1.1e-15
+## tensor_cheb M=1681 (27s)
+   n          :        4        8       12       16       20
+   BJ loss    :  1.1e-14  1.2e-14  1.6e-14  1.7e-14  1.8e-14
+   u*med||L^-1||:  1.1e-15  2.6e-15  3.8e-15  5.2e-15  6.6e-15
+   u*max||L^-1||:  1.9e-15  8.5e-15  2.2e-14  4.3e-14  7.2e-14
+   argmax node at n=20: z = (-0.999, +0.999), |z| = 1.413
+   ||L^-1|| quantiles at n=20 (10/50/90/100%): 3.8e+01 5.9e+01 2.9e+02 6.5e+02
+   mp check node     0: ||L^-1||_F (n=16) float64 4.968971e+02  mpmath(30) 4.968971e+02  rel diff 2.3e-16
+   mp check node    40: ||L^-1||_F (n=16) float64 4.968971e+02  mpmath(30) 4.968971e+02  rel diff 1.1e-15
+   mp check node   840: ||L^-1||_F (n=16) float64 5.728001e+01  mpmath(30) 5.728001e+01  rel diff 1.2e-16
+## gauss_rot0.3 M=1681 (28s)
+   n          :        4        8       12       16       20
+   BJ loss    :  6.9e-15  6.9e-15  2.7e-13  1.1e-10  4.2e-08
+   u*med||L^-1||:  6.5e-16  2.0e-15  2.4e-14  8.9e-13  5.2e-11
+   u*max||L^-1||:  6.6e-15  2.0e-13  1.9e-11  3.8e-09  2.7e-06
+   argmax node at n=20: z = (+0.178, +1.529), |z| = 1.539
+   ||L^-1|| quantiles at n=20 (10/50/90/100%): 2.7e+04 4.7e+05 2.3e+07 2.5e+10
+   mp check node     0: ||L^-1||_F (n=16) float64 4.707395e+04  mpmath(30) 4.707395e+04  rel diff 3.6e-11
+   mp check node   882: ||L^-1||_F (n=16) float64 3.611548e+07  mpmath(30) 3.611548e+07  rel diff 4.1e-15
+   mp check node   840: ||L^-1||_F (n=16) float64 7.392954e+02  mpmath(30) 7.392954e+02  rel diff 2.3e-13

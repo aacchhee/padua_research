@@ -1,0 +1,12 @@
+Padua n=4: 15 nodes; generators vanish exactly: True
+  float SDP max-min eigenvalue 0.074276 (proposal only)
+  rational C (anti-diagonal sums exactly 0):
+     ['0', '0', '-1/2', '0', '-10501/10000', '0']
+     ['0', '1', '0', '6867/10000', '0', '477/4000']
+     ['-1/2', '0', '1817/2500', '0', '-5727/10000', '0']
+     ['0', '6867/10000', '0', '9069/10000', '0', '-1/2']
+     ['-10501/10000', '0', '-5727/10000', '0', '1', '0']
+     ['0', '477/4000', '0', '-1/2', '0', '0']
+  G_i^T C G_i PD at all 15 nodes (exact in Q(sqrt2,sqrt5)): True; float min eigenvalue 0.07427
+  p_C: total degree 9 (<= 9), value and gradient vanish exactly at all nodes: True
+  => by 303(e): exact obstruction (no delta(eps) -> 0) for Padua n=4: True

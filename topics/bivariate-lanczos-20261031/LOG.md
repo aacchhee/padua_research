@@ -102,6 +102,13 @@ Subagent effort is set from the agent definition and is not independently expose
 - Hygiene: three compiled `libgivens_*.so` files had entered WIP commits; untracked now (`git rm --cached`) and `*.so` added to `tracks/bivariate-lanczos/code/.gitignore`; sources `givens_core.c`, `givens_dual.c` are committed (they remain in published history; small, regenerable). Recorded rather than rewritten.
 - L5 paused at R03 (side direction; next question recorded). Independent reconstruction to follow.
 
+### L3 reconstruction 01 returned (2026-10-31)
+
+- Separate Claude Opus 5.5 xhigh (requested) agent; audited head `0b7b396`; report [reviews/L3-reconstruction-01.md](reviews/L3-reconstruction-01.md) (sha256 of every audited theory file, full state/IDEAS.md read).
+- Verdicts: CONFIRMED 301(a)–(c), 303, 305, 308, N302; CONFIRMED WITH CORRECTIONS 301(d), 302, 304(c), 309(b); 306 and N301 confirmed with an independent exact rerun (own sympy Q(√2) checker; rational interval arithmetic shows p* > 0 to radius 0.04; second n = 3 certificate; developer script byte-identical log) — eligible CONDITIONAL → PROVED after a small quantifier fix (L1 finding); 307 MEASURED with wording fixes. Beyond scope: an exact Padua n = 4 obstruction certificate passes.
+- Medium findings: M1 scope framing (plan History corrected by orchestrator; R01/STATUS to be fixed by developer); M2 302's "for some c > 0" residual is vacuous — fix c = 1; M3 kill criteria not shown to precede the tests (deciding log committed 22:34, criteria first at 22:57). 13 low findings (incl. R01 timestamp also an estimate; 304(c) isomorphism only measured; Greenbaum "√ε same order" contested by LIT?…-209).
+- Action: findings passed to the L3 developer for a response file; reviewed files 300–309, N301, N302 unfrozen for corrections with History lines. No status upgraded by the orchestrator.
+
 ## Runs needed
 
 (none yet; directions add exact commands)

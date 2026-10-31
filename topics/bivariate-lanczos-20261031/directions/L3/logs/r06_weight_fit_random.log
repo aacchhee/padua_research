@@ -1,0 +1,2 @@
+set=random M=1681 weight-only linearised fit; D(2n+1) must be <= M (overdetermined)
+ n    N  D2n+1  loss      |e|max    rho(2)   resid_max  max|eta|/w_min

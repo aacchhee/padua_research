@@ -253,3 +253,36 @@ Aliases: coefficient-map conditioning test; off-pattern (structural-zero) coupli
   - H_cond-abs ("absolute u-noise on the structural zeros reproduces the loss"): with exact coefficients plus u·N(0,1) on every off-pattern window entry (3 seeds, median D): survives iff within 10× of L(n) at both degrees; killed if ≥ 100× below at either degree; otherwise inconclusive.
   - H_rel-harmless ("relative u-noise on the nonzero product-type entries and β is harmless"): survives iff the median D is ≥ 100× below L(n) at both degrees; killed if within 10× at either.
 - Actual test results: R06.md.
+
+- R06 note (2026-10-31, after the IDEA-117 run, before `l1_r06_gain_identity.py` was run): the first-order product-case gain identity (PD-T?…-114, derived after seeing the IDEA-117 results) is checked numerically by the criterion, written before the check run: for every sampled window entry (k, l) of the clustered and the equispaced checkerboard (m = 30, degrees ≤ 20), |A_direct − A_formula|_{e,d} ≤ 1e-8·‖R_d‖ for all (e, d), where A_direct = Ξ*ᵀR is computed by propagating the forcing through the exact-coefficient recursion in long double and A_formula from univariate data only. A violation means the identity (or its implementation) is wrong. The comparisons of first-order predictions with the IDEA-117 measurements are descriptive (no criterion).
+
+- **Pending correction PC-11 (R06, 2026-10-31T22:36:02Z; PD-T?…-112 (a)):** the clustered-checkerboard coefficient deviations quoted in PD-T?…-112 (1.0e-6 double, 9.4e-10 long double) are maxima over degrees ≤ 29; over degrees ≤ 24 the on-pattern deviation is 1.6e-14 and harmless, and the channel is carried by the off-pattern values (2.1e-13). Read PD-T?…-112 with PD-T?…-114. Details: R06 §5.
+
+---
+
+## IDEA?bivariate-lanczos-claude-118 — why the BJ off-pattern errors are benign: rounding vs feedback vs signs (R07)
+
+Aliases: off-pattern error anatomy; φ/ρ split.
+
+- Question / scope: R06 §8. Clustered checkerboard m = 30 (as in R06), BJ block CGS, nmax = 24, degrees n = 16 and 20, L(n) = BJ loss in the same script, D(·) = nonlinear long-double Gram defect of Ξ(c* + δ) with δ only on off-pattern entries (R06 definitions).
+- Split of the BJ off-pattern values h = φ + ρ, φ_{k,l} = Σ_i q̂_{i,l} u0_i evaluated in long double from the stored double vectors (u0 = fl(a ⊙ q̂_{p(k)}) as in the code), ρ = h − φ (rounding of the double dot product).
+- Kill criteria written before testing (2026-10-31T22:36:02Z, before `l1_r07_offpattern_anatomy.py` was written or run; the script name was lost to shell substitution in the first write and restored by hand at once):
+  - H_fb ("the feedback part carries the loss"): survives iff D(c* + φ) is within 10× of L(n) and D(c* + ρ) ≥ 100× below L(n) at both degrees; killed if D(c* + φ) ≥ 100× below L(n) at either degree; otherwise inconclusive.
+  - H_rd ("the rounding part carries the loss"): survives iff D(c* + ρ) within 10× of L(n) and D(c* + φ) ≥ 100× below L(n) at both degrees; killed if D(c* + ρ) ≥ 100× below L(n) at either degree; otherwise inconclusive.
+  - H_term ("independent rounding of every product term, δh_{k,l} = u Σ_i ε_i ξ*_{i,l}(a ξ*_{p(k)})_i with ε_i iid N(0,1), reproduces the loss"; 3 seeds, median D): survives iff within 10× of L(n) at both degrees; killed if ≥ 100× above or ≥ 100× below at either degree; otherwise inconclusive.
+  - H_sign ("magnitudes suffice: |h| with random signs reproduces the loss"; 3 seeds, median D): survives iff within 10× of L(n) at both degrees; killed if ≥ 100× above at either degree; otherwise inconclusive.
+- Descriptive only (no criterion): sizes of φ, ρ, u·s, u·ŝ (s = Σ_i |ξ*_{i,l}||(aξ*_p)_i|, ŝ = ‖ξ*_l ⊙ aξ*_p‖₂) on the 100 largest-gain off-pattern entries; equispaced control.
+- Actual test results: R07.md.
+
+---
+
+## IDEA?bivariate-lanczos-claude-119 — term-wise rounding through the exact coefficient map as an a-priori loss estimate on product-type measures (R07)
+
+Aliases: term-wise first-order predictor; exact-data loss estimate.
+
+- Motivation (after the IDEA-118 run, which is in R07.md): on the clustered m = 30 checkerboard the term-wise rounding model put on the exact coefficients (δh_{k,l} = u Σ_i ε_i ξ*_{i,l}(aξ*_p)_i on off-pattern entries) gave 10.3×, 4.6×, 3.2× the BJ loss at n = 16, 20, 24; on the equispaced control 0.5× and 0.5×. This estimate uses only exact data (c*, Ξ*) and random draws.
+- Kill criterion written before testing (before `l1_r07_termwise_predictor.py` was written or run; 2026-10-31T22:38:55Z), on sets not used so far: checkerboards with clustering s|s| (quadratic, m = 30), s|s|³ (quartic, m = 30), s|s|² with m = 36, and Chebyshev–Lobatto nodes cos(πi/m), m = 30. Estimate E(n) = median over 3 seeds of the nonlinear long-double D(c* + term-wise model), BJ block CGS loss L(n), n ∈ {16, 20}:
+  - on sets with L(20) ≥ 1e-13: survives iff 0.1 ≤ E(n)/L(n) ≤ 10 at both degrees on every such set; killed if some ratio is < 0.01 or > 100; otherwise inconclusive;
+  - on sets with L(20) < 1e-13: survives iff E(20) < 1e-12; killed if E(20) ≥ 1e-11.
+  The overall verdict is the worst over the sets (killed > inconclusive > survives).
+  - Clarification added before the run: "not used so far" means not used in R06–R07; the Chebyshev–Lobatto checkerboard m = 30 was used in R04 for its BJ loss (flat at 3e-15, PD-T?…-112 (a)), so it is a known-flat control and enters through the L(20) < 1e-13 branch.

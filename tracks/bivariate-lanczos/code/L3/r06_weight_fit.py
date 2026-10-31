@@ -81,9 +81,14 @@ def main():
         eta, *_ = np.linalg.lstsq(Jac, e, rcond=None)
         r = Jac @ eta - e
         rho = np.linalg.norm(r) / np.linalg.norm(e)
+        # bounded fit: positive weights within a factor 2 (|eta_i| <= w_i/2), linearisation valid
+        from scipy.optimize import lsq_linear
+        sc = np.linalg.norm(e)
+        bl = lsq_linear(Jac / sc, e / sc, bounds=(-w / 2, w / 2), lsmr_tol='auto', max_iter=2000)
+        rho_pos = np.linalg.norm(Jac @ bl.x - e) / np.linalg.norm(e)
         loss = np.abs(Q[:, :N].T @ Q[:, :N] - np.eye(N)).max()
         print(f"{n:2d} {N:4d} {D:5d}  {loss:.2e}  {np.abs(e).max():.2e}  {rho:.3f}    {np.abs(r).max():.2e}   "
-              f"{np.abs(eta).max()/w.min():.2e}   [{E} entries]", flush=True)
+              f"{np.abs(eta).max()/w.min():.2e}   rho_pos(|eta|<=w/2)={rho_pos:.3f}   [{E} entries]", flush=True)
 
 
 if __name__ == '__main__':
