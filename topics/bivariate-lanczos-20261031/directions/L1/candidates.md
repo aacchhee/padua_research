@@ -286,3 +286,17 @@ Aliases: term-wise first-order predictor; exact-data loss estimate.
   - on sets with L(20) < 1e-13: survives iff E(20) < 1e-12; killed if E(20) ≥ 1e-11.
   The overall verdict is the worst over the sets (killed > inconclusive > survives).
   - Clarification added before the run: "not used so far" means not used in R06–R07; the Chebyshev–Lobatto checkerboard m = 30 was used in R04 for its BJ loss (flat at 3e-15, PD-T?…-112 (a)), so it is a known-flat control and enters through the L(20) < 1e-13 branch.
+
+- **Pending correction PC-12 (R07, 2026-10-31T22:40:30Z; PD-T?…-112 (a), R04 §3 C1 wording, R06.md §1 before commit):** "weights 1.7e-33…0.47" for the cubic-clustered m = 30 checkerboard is the range of the x-factor weights (y-factor: 5.3e-35…0.48); the bivariate checkerboard weights span 1.8e-67…0.47. R06.md §1 was corrected in place before commit (it had copied the factor range as the bivariate range).
+
+---
+
+## IDEA?bivariate-lanczos-claude-120 — closed-loop dot-product rounding as the sole error source (R07)
+
+Aliases: closed-loop term-wise model; dot-product-only rounding.
+
+- Motivation (after IDEA-118/-119, R07.md): the open-loop estimate (term-wise noise on exact coefficients) over-estimates the loss by about 1×, 10×, 20–150× for quadratic, cubic, quartic clustering, and the BJ off-pattern values contain a feedback part φ that cancels the rounding part ρ. A closed-loop model keeps the feedback: run the BJ recurrence (block window, CGS) entirely in long double, but replace each computed coefficient h_{k,l} by its long-double inner product plus u Σ_i ε_i q_{i,l} u0_i (ε iid N(0,1), all window entries, u = 2^-52). Elementwise products, vector updates and norms then carry only long-double rounding.
+- Kill criterion written before testing (before `l1_r07_closed_loop.py` was written or run; 2026-10-31T22:40:30Z). Checkerboards: cubic m = 30, equispaced m = 30, quadratic m = 30, quartic m = 30, cubic m = 36, Chebyshev–Lobatto m = 30. Closed-loop loss C(n) = median over 3 seeds of max|QᵀQ − I| (long double) at degree n; BJ double loss L(n); n ∈ {16, 20}:
+  - sets with L(20) ≥ 1e-13: survives iff 0.2 ≤ C(n)/L(n) ≤ 5 at both degrees on every such set; killed if some ratio is < 0.02 or > 50; otherwise inconclusive;
+  - sets with L(20) < 1e-13: survives iff C(20) < 1e-12; killed if C(20) ≥ 1e-11.
+  The overall verdict is the worst over the sets.

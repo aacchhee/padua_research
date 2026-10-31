@@ -1,3 +1,4 @@
 # rv_prop_selection.py numpy 2.5.3
    square_rotpi4  dev    loss: 1.5e-14 3.9e-12 1.2e-09 2.1e-06 | u*med: 9.4e-15 2.3e-13 9.8e-12 1.1e-09 | u*max: 4.7e-13 1.3e-10 7.1e-08 1.9e-04
    square_rotpi4  mirror loss: 4.1e-14 4.2e-11 2.9e-07 6.0e-03 | u*med: 4.1e-15 1.9e-14 6.3e-13 1.0e-10 | u*max: 3.3e-13 6.2e-10 5.8e-06 1.9e-01
+   square_rotpi4  alt    loss: 6.9e-15 3.1e-14 1.4e-12 1.3e-10 | u*med: 2.5e-15 5.3e-15 1.2e-14 3.2e-14 | u*max: 6.8e-14 1.6e-12 8.5e-11 9.1e-09
