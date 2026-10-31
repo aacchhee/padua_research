@@ -1,6 +1,6 @@
 {
   "schema": "lattice-audit-targets-v1",
-  "source_head": "61dcbe5e5a9a020810c0b8a9be974e1eba98f0ca",
+  "source_head": "a9e519ac3e0ff65f4ede8954d4630f2160600301",
   "note": "Exact hashes govern bytes after source_head. Scientific ZIP excludes later protocol envelope; the final repository manifest may additionally pin it. Nested independent audit manifests are retained; root self/archive checks are excluded.",
   "files": [
     {
@@ -203,15 +203,15 @@
     },
     {
       "path": "topics/lattice-unisolvence-20261031/AUDIT_HANDOFF.md",
-      "bytes": 8627,
-      "sha256": "37042a10f224de4f414497493bb543da7270c761260ee7e6738032ba3f428cd4",
-      "git_blob": "2aad0d5166e293948d9e2f9c78896040c57134a3"
+      "bytes": 9410,
+      "sha256": "6b36b27425c750288c5d2467426ce63d65d99cfddcb6b8c1751766bc3ccaffc5",
+      "git_blob": "659675d40387ffedb3297abf826378214eb9913d"
     },
     {
       "path": "topics/lattice-unisolvence-20261031/LOG.md",
-      "bytes": 6549,
-      "sha256": "ae5841a5c2a670d85b5f6b3a5cb9e942222493163574f186726b43e5065aa27e",
-      "git_blob": "0fcd7ec4652d8b24e64736277bb9e951908ce8bb"
+      "bytes": 7332,
+      "sha256": "58ffb0973ad7fba7f26f0c8d41c6046413c87d2ed3a782b4572685efffe3d78a",
+      "git_blob": "ded11ce7ee2e49915c9f08d3875bba5391ef632c"
     },
     {
       "path": "topics/lattice-unisolvence-20261031/REQUEST.md",
@@ -701,15 +701,15 @@
     },
     {
       "path": "topics/lattice-unisolvence-20261031/plan.md",
-      "bytes": 7045,
-      "sha256": "26524e02002a6424970bd9b06c656c8e16662b0add5c8d5c277036be2ef537f9",
-      "git_blob": "a9b23931597b5fb76589d8fa5260360f8e626517"
+      "bytes": 7736,
+      "sha256": "9b2c1257aca9e1017fc49c0abedef4268816a009975993662647f957fbdca3e3",
+      "git_blob": "e3f27fde201767255b81c54fadd568d3af7b17b1"
     },
     {
       "path": "topics/lattice-unisolvence-20261031/progress.md",
-      "bytes": 2960,
-      "sha256": "5dce436223cf0d6d31fac9e1ae82c1bd2655db7675e02734bd6605e5a3d63661",
-      "git_blob": "a1a443610246453c34f6f26b9ccf48bb5ec89d57"
+      "bytes": 3651,
+      "sha256": "449219bf4ef533f3a71a3d39ead35cbb5813495cac4a04f530959162f1bb3c23",
+      "git_blob": "1b11e97f7686ed6a7ca79bb6266bed9cf2b1b41d"
     },
     {
       "path": "topics/lattice-unisolvence-20261031/protocol/check_protocol.py",
@@ -722,6 +722,18 @@
       "bytes": 509,
       "sha256": "ca28fb4b36fba0b733a5b7e72c3e907b9ec07e634499ba9a9d0b84fb95f973ca",
       "git_blob": "875ca377691045a64f0a64ee7f8d6353418992e1"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/protocol/post-parent-merge.json",
+      "bytes": 1811,
+      "sha256": "b4569fdb709cf4ec52d164fe7d828657dc514ee2ae3a793d712b85527e1f8d89",
+      "git_blob": "0162b4a02fa8dc3d9434ec942d579116b7dfe211"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/protocol/post-parent-merge.md",
+      "bytes": 2848,
+      "sha256": "d9266e7b404552a1c9f75533f5d7f987459af6ae965390a902de375c93509fb6",
+      "git_blob": "a05229a987f2be7395f566d8621d4988425002a0"
     },
     {
       "path": "topics/lattice-unisolvence-20261031/protocol/preliminary.md",
@@ -743,9 +755,9 @@
     },
     {
       "path": "topics/lattice-unisolvence-20261031/provenance.json",
-      "bytes": 928,
-      "sha256": "b1ae4121c464301db75b48f411047f28edab92188421b435862367240f7051d0",
-      "git_blob": "d36b190f5a9a2da881fdbf9165107de42a89f5c7"
+      "bytes": 1154,
+      "sha256": "e659fdfca2b78f1b7f54c23d58e10e64cd843d5896b9bcfeea5ccc432faf62a1",
+      "git_blob": "f60ec927247cc25e75e7f68152ecc2b6e4cc496f"
     },
     {
       "path": "topics/lattice-unisolvence-20261031/provisional-id-map.json",
@@ -755,15 +767,15 @@
     },
     {
       "path": "topics/lattice-unisolvence-20261031/report.md",
-      "bytes": 11361,
-      "sha256": "c32722b121e9cef1324528ce3790f41a408947c3facdeca6233c0e29497f1078",
-      "git_blob": "da2aac508845d6ba6cba42830f2f2fc042525773"
+      "bytes": 12052,
+      "sha256": "6bf7508d96884d0268f3626ccb42c6cb8b298222958f8683c54c7dbe138ad245",
+      "git_blob": "9c646ec70089b5a777a7d119aaaa6b4258c7c3bd"
     },
     {
       "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
-      "bytes": 10742,
-      "sha256": "96d662d569c0a3467aa18694c64587b7bdf763f45865224d5eca029588ede4e1",
-      "git_blob": "2b9ed071cef57448a969ebf6a83d5319cee73309"
+      "bytes": 11244,
+      "sha256": "3b5621458e28bac8560cc1166a157b416d14f7b21e11966965984f338c7c081d",
+      "git_blob": "9eca53d1b006f86a2a02aae254d02d8ece1b5c80"
     },
     {
       "path": "tracks/README.md",

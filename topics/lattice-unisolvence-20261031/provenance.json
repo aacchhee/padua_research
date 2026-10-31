@@ -12,5 +12,12 @@
     "codex/mz-constants-20261031": "6d10a82cf6fd6f7ef6fbe76e68133ccbcbe51994",
     "claude/bivariate-lanczos-20261031": "1127f9c73903e11b56cbfe3e8c667bfcbe810beb",
     "claude/programme-ideas-20261031": "a02bc357e5f0eed479f7020b85fecc57fda9b47f"
+  },
+  "parent_integrated": {
+    "pr": 2,
+    "merge_commit": "08fafe62d9798385dfafaacc9a41344272737e68",
+    "topic_merge": "a9e519ac3e0ff65f4ede8954d4630f2160600301",
+    "target": "main",
+    "parent_tree_unchanged": true
   }
 }

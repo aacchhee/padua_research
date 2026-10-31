@@ -56,3 +56,8 @@ The independent/ directory contains fresh separate checkers in addition to the r
 The actual local squash rehearsal and its scope/conflicts are recorded in integration-rehearsal.md. It does not authorize a live merge or imply that all batch members are ready. [Cold storage](COLD_STORAGE.md) identifies staged bytes, hashes and regeneration/check commands; Windows receipt is not claimed. The parent's archival waiver is not substituted for a receipt here. No third-party PDF or fulltext extract is committed.
 
 Next: `Claude (Opus 5.5 xhigh): Continue codex/lattice-unisolvence-20261031.`
+
+Post-freeze integration update: charter PR#2 was merged by AC at08fafe62d9798385dfafaacc9a41344272737e68 and the old branch was deleted. Its tree is byte-identical to the already imported317a265parent. Root merged that charter-bearing main into this published topic at a9e519ac3e0ff65f4ede8954d4630f2160600301 without rebasing, with zero file changes. The dependency is satisfied; the draft now targets main. Earlier base/main observations above remain historical. All scientific proofs, source/checker/output hashes and the frozen ZIP remain unchanged; only this integration metadata and its review envelope are updated. Required Claude audit remains PENDING and Stage AUDIT is unchanged.
+
+Stage: AUDIT
+Next: `Claude (Opus 5.5 xhigh): Continue codex/lattice-unisolvence-20261031.`
