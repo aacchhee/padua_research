@@ -33,6 +33,13 @@
 
 Subagent effort is set from the agent definition and is not independently exposed to the orchestrator; where the runtime does not confirm it, the log says "requested".
 
+### Step 0 (complete 2026-10-31)
+
+- Subtasks: (i) fulltext records, Claude Sonnet 5.5 high (requested), 65 tool uses, ~14 min — 7 records, LIT?…-101–162, complete fulltext coverage (page images checked where text layer garbled); PDFs/text kept in scratchpad only. (ii) notes baseline, Claude Sonnet 5.5 high (requested), ~14 min — 64 records, LIT?…-001–077, 16 web metadata calls (logged in lit/search-log.md), CORPUS/INDEX rebuilt, state/IDEAS.md seeded (48 candidates: 15 active, 12 settled-background, 15 deferred, 6 out-of-scope), baseline-candidates.md. Orchestrator merged fulltext rows into INDEX/CORPUS.
+- Corrections that affect interpretation of the frozen questions are in plan.md History.
+- Novelty gate (AC Step 0 override): registry before seed was empty apart from the template text; the seed is not an acceptance or novelty verdict. Each direction records closest predecessors and kill tests per candidate.
+- Checkpoints pushed: 8edbc69, bef4490.
+
 ## Runs needed
 
 (none yet; directions add exact commands)
