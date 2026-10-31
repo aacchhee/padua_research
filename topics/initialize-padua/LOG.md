@@ -4,7 +4,7 @@
 - Stage: WORK · Next: `Codex (Sol 6.1 medium): Continue codex/initialize-padua in aacchhee/padua_research; answer audit-02.md in response-02.md.`
 - Claims: none; this topic initializes infrastructure only.
 - For the PR: initialize the protocol, state, literature database, ID conventions and templates; no scientific registrations.
-- Open for AC: scientific question and initial sources remain unspecified; audit-01 L5 (PD-N scope for non-mathematical rejections) and I2 (branch protection / squash-only) need AC decisions.
+- Open for AC: scientific question and initial sources remain unspecified; audit-01 L5 (PD-N scope for non-mathematical rejections) needs an AC decision. I2 (branch protection / squash-only) is decided: AC configures it personally, and agents make no settings changes.
 
 ## 2026-10-31 — Codex
 
@@ -49,6 +49,11 @@
 - New: R1 (Medium) the minor-step aggregation can yield PARTIAL for an OPEN main statement, and PARTIAL vs OPEN for a preserved target is ambiguous; R2 (Medium) `PROOF_STATUS.md` has no disposition column, so a refuted claim keeps its old status; R3 (Low) the `Agent:` trailer of `73ec2ba` does not parse; I3 and I4 (Info).
 - Response verification reproduced: diff check passed, 33 links / 0 broken, audit-01 unchanged, `.github` absent.
 - Stage set to WORK. R1 and R2 are rule/registry-structure changes and return to AUDIT for a check limited to those diffs.
+
+## 2026-10-31 — Claude, Opus 5.5 high (AC decision recorded)
+
+- AC decision on audit-01 I2: "I take care of branch protection." AC owns the configuration of `main` protection and merge methods. The finding is closed for agents, with no agent action or settings change, as `AGENTS.md` requires. It no longer blocks readiness.
+- No rule, template or registry change; the stage stays WORK pending response-02.
 
 ## Runs needed
 
