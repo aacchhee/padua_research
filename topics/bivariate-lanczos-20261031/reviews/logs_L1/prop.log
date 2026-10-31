@@ -29,3 +29,13 @@
    mp check node     0: ||L^-1||_F (n=16) float64 6.412770e+02  mpmath(30) 6.412770e+02  rel diff 4.0e-14
    mp check node  1022: ||L^-1||_F (n=16) float64 6.614052e+08  mpmath(30) 6.614052e+08  rel diff 6.0e-09
    mp check node   840: ||L^-1||_F (n=16) float64 6.383022e+02  mpmath(30) 6.383022e+02  rel diff 1.4e-13
+## disk M=1681 (27s)
+   n          :        4        8       12       16       20
+   BJ loss    :  6.9e-15  6.9e-15  1.1e-13  2.8e-12  9.6e-11
+   u*med||L^-1||:  9.7e-16  2.6e-15  9.1e-15  5.9e-14  5.1e-13
+   u*max||L^-1||:  2.8e-15  5.1e-14  1.2e-12  4.4e-11  3.0e-09
+   argmax node at n=20: z = (-0.109, +0.991), |z| = 0.997
+   ||L^-1|| quantiles at n=20 (10/50/90/100%): 5.5e+01 4.6e+03 1.6e+06 2.7e+07
+   mp check node     0: ||L^-1||_F (n=16) float64 1.495513e+02  mpmath(30) 1.495513e+02  rel diff 4.0e-15
+   mp check node  1061: ||L^-1||_F (n=16) float64 3.694151e+05  mpmath(30) 3.694151e+05  rel diff 2.2e-13
+   mp check node   840: ||L^-1||_F (n=16) float64 2.165287e+02  mpmath(30) 2.165287e+02  rel diff 2.5e-15
