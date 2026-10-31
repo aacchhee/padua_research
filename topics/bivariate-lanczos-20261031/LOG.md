@@ -115,6 +115,10 @@ Subagent effort is set from the agent definition and is not independently expose
 - **Pause justification:** L1-Q1 and L4-Q1 are answered; the remaining L1 opening (closed-loop damping bound, off-pattern gains at non-product points) is narrower than the never-started frozen L2-Q1, whose ingredients L1 has now supplied (exact ω-recurrence PD-T?…-106, error-channel split, relation-choice effect, two-relation failure). With the two-slot limit (L1, L3), L1 is paused with 3 rounds left and its next question recorded; it can resume when a slot frees.
 - L2 launched in slot 1 (Claude Opus 5.5 xhigh, requested). L5 side direction paused at R03.
 
+### RESULTS.md contention (2026-10-31)
+
+- `C:\Users\andreyac\Downloads\padua\RESULTS.md` is written concurrently by other sessions. Twice an earlier version reappeared after a write (other sessions' audit entries vanished once; this campaign's L3 line once). The orchestrator always re-stages, merges as a line superset and writes with an mtime guard; latest write is a superset (25.7 KB) containing other sessions' entries and this campaign's entries (input reproduction, L1 R01–R07, L3 R01–R03 + reconstruction, L5 R01–R03). Reported to AC.
+
 ## Runs needed
 
 (none yet; directions add exact commands)

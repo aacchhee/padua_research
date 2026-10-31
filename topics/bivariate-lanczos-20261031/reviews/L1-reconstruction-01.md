@@ -192,7 +192,7 @@ My selection-rule measurements (below) are a quantitative instance of exactly BP
 **(a) Non-product supports: CONFIRMED** (my seeds and node generators; `sweep_ritz.log`).
 - On rotation pairs of the same 1681 points, u/ρ_Z is identical to all printed digits (3.7e-14 at n = 24 for the square, the 0.3 rotation and the π/4 rotation). The BJ loss is 2.3e-14, 4.7e-6 and 1.0e-2 respectively.
 - On the disk and the triangle, u/ρ_{X,Y,Z} ≤ 6e-14 at n ≤ 24 while the loss reaches 7.5e-9 and 1.
-- Single and joint residuals agree within a factor 3 everywhere, so they never separate.
+- Single and joint residuals agree within a factor ≈ 6 everywhere (≤ 3 on the squares), while the loss misses them by 10³–10¹². They never separate.
 
 **(b) Tensor over-prediction: the measurement reproduces, but it does not support the use made of it.**
 - My tensor_cheb 41² data, n = 33…40 at every degree: u/ρ_X = 2.0e-14 … **2.5e-14 at n = 39**, consistent with the loss of 2.0e-14. At **n = 40**, u/ρ_X jumps to 8.7e-2.
@@ -221,12 +221,12 @@ The square rotated by 0.3 and the disk behave similarly. The rate is ≈ 3–5 p
 
 ### PD-T?…-107 — regimes and predictor (MEASURED → CONFIRMED WITH CORRECTIONS)
 
-**(b) Non-product growth: CONFIRMED** on every non-product set I tried (square rotated 0.3 and π/4, disk, two triangles, annulus, tensor rotated 0.3). It starts at n ≈ 8–12, behaves alike for BJ and HL (HL 3–10× lower), and the following hold:
+**(b) Non-product growth: CONFIRMED** on every non-product set I tried (square rotated 0.3 and π/4, disk, two triangles, annulus, tensor rotated 0.3). It starts at n ≈ 8–12 and is present for both BJ and HL. HL is 3–10× lower on the rotated squares, disk and annulus, and 10²–10⁴× lower on the triangles and the rotated tensor grid, but it still grows there. The following hold:
 - **Scales with u:** BJ float32/float64 loss ratios before saturation are 1.6e8–8e8 against u₃₂/u₆₄ = 5.4e8 (`sweep_loss.log`).
 - **M-independent for n ≤ 18:** square rotated π/4, n = 16: 1.2e-9 / 1.3e-9 / 1.0e-9 at M = 1681 / 6724 / 26896; disk 2.8e-12 / 2.1e-12 / 1.5e-12. At n = 22, M = 1681 is 10–20× above the larger M, a finite-M acceleration (`sweep_M.log`). This partly discharges the developer's Runs-needed item, up to M = 26896 rather than 10⁵–10⁶.
 - **Correction (minor, matters for R04's targets):** log-loss is **convex** in n on n ≤ 24. Quadratic fits cut the rms 2–7× against linear fits. The per-degree factor rises from ≈ 3–4 at n ≈ 10 to ≈ 8–12 at n ≈ 22 (square rotated π/4: increments 0.59 → 0.91 decades/degree; tensor rotated 0.3: 0.57 → 1.1). "Exponential" understates this; an a priori lower-bound target should not presuppose a fixed rate.
 
-**(a) Product-aligned regime: CONFIRMED for the listed set types** (random square stable to n = 24, then Ritz-type with u/ρ within a factor 3; tensor grid flat). **Refuted as a support-based classifier (major):**
+**(a) Product-aligned regime: CONFIRMED for the listed set types** (random square stable to n ≈ 22, then Ritz-type with loss/(u/ρ) = 0.2–0.8 for n = 24–32; tensor grid flat). **Refuted as a support-based classifier (major):**
 - **Product support, non-product weights:** weights exp(8xy) on the square give BJ loss 1.8e-12 already at n = 8 and 4.0e-7 at n = 24. That is ≈ 10³ above u/ρ_Z. The two-relation recurrence is at ≈ u/ρ (`extra.log` (ii)). exp(xy) and exp(4xy) are stable.
 - **Sampled product density:** the Gaussian cloud (unrotated) has BJ loss 3.6e-5 at n = 24, against u/ρ_Z = 5.8e-7. BJ exceeds u/ρ by 6–370× at n = 16–28. Here the two-relation recurrence is **Ritz-governed** (loss/(u/ρ_Z) = 0.5–1.2). The rotated cloud behaves the same.
 - So the regime is set by the (empirical) measure's coefficients, with a quantitative threshold, not by the support. R02/R03's phrasing "product-aligned supports vs non-product supports" should be restated accordingly.

@@ -112,7 +112,15 @@ def main():
             Qh = A.krylov(xp, yp, np.ones(N), N); Hx, Hy = A.H_from_Q(Qh, xp, yp); Hx, Hy = A.signfix_H(Hx, Hy, N, np.sign(np.sum(Qh[:, 0])))
             rec["hl"] = A.relerr(Hx, Hy, Rx, Ry)
             C = orth_cheb(x, y, w0, N)        # prefix property is weight independent; use the orthogonal cubature-weighted matrix
-            rec.update(prefix_summary(C[perm]))
+            B = C[perm]; rec.update(prefix_summary(B))
+            # exact sigma_min by SVD: all K <= 300, a grid K = 300..N step 50, and the 30 K with smallest |u_KK| (LU w/o pivoting)
+            lo, up, g, res = A.prefix_lu_bounds(B)
+            Ks = sorted(set(list(range(1, 301)) + list(range(300, N + 1, 50)) + [N] + [int(k) + 1 for k in np.argsort(up)[:30]]))
+            t = time.time(); sv = {K: float(np.linalg.svd(B[:K, :K], compute_uv=False)[-1]) for K in Ks}
+            kmin = min(sv, key=sv.get)
+            rec.update(svd_K_checked=len(Ks), svd_min=sv[kmin], svd_K_at_min=kmin, svd_n_lt_1e11=sum(v < 1e-11 for v in sv.values()),
+                       svd_min_Kle300=min(sv[K] for K in range(1, 301)), t_svd=round(time.time() - t, 1),
+                       svd_at_30_smallest_ukk=sorted(sv[int(k) + 1] for k in np.argsort(up)[:30])[:5])
             emit(out, rec)
     elif mode == "unif":
         TAB = {66: 5, 136: 8, 231: 11, 496: 17, 861: 22}
