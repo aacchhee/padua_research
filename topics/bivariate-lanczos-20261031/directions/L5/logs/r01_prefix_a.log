@@ -78,3 +78,8 @@ n=40 rpiv3  nsing=    0 namb=0 min_exact=1.0e-03@K=None n<1e-8:0 first_sing=None
   err padua_cub n=40 gepp: givens-scheme:7.2e-14 givens-largest:1.8e-11 hl:4.2e-15 hh:2.2e-15
   err padua_cub n=40 rpiv1: givens-scheme:7.1e-14 givens-largest:1.8e-11 hl:4.3e-15 hh:2.2e-15
   err padua_cub n=40 rpiv2: givens-scheme:6.0e-14 givens-largest:2.8e-11 hl:4.9e-15 hh:2.2e-15
+  err padua_cub n=40 rpiv3: givens-scheme:7.8e-14 givens-largest:5.7e-11 hl:4.5e-15 hh:2.2e-15
+  err padua_rand n=40 gepp: givens-scheme:9.1e-14 givens-largest:3.6e-11 hl:8.6e-15 hh:2.4e-15
+  err padua_rand n=40 rpiv1: givens-scheme:6.9e-14 givens-largest:4.4e-11 hl:8.8e-15 hh:2.4e-15
+  err padua_rand n=40 rpiv2: givens-scheme:8.0e-14 givens-largest:7.3e-11 hl:8.1e-15 hh:2.4e-15
+  err padua_rand n=40 rpiv3: givens-scheme:8.2e-14 givens-largest:3.7e-11 hl:8.5e-15 hh:2.4e-15
