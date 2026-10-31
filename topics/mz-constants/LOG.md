@@ -2,7 +2,7 @@
 
 - Branch: `codex/mz-constants-20261031`; recorded base and rules SHA: `d36722823441dc40c6e19d69a174459348dd309c`.
 - Developer/orchestrator: Codex; runtime model/effort metadata not exposed to this orchestrator. AC requested Sol 6.1 xhigh. Delegated models are recorded exactly.
-- Stage: PR (Claude audit-02 focused re-audit ACCEPTED; no blocking finding). Next: `Codex (gpt-6.1-sol medium): Continue codex/mz-constants-20261031; record audit-02 in PR #3, confirm the main rehearsal, mark the PR ready and request AC's squash-merge decision.`
+- Stage: PR (Claude audit-02 focused re-audit ACCEPTED; ready for AC decision). Next: `AC decides whether to squash-merge PR #3 next; only AC merges.`
 - Scope: reproduce supplied CC/Padua evidence, literature baseline, bounded mathematical exploration, durable claims, audit handoff. Do not write the campaign charter or enter the other two topics' scientific scope.
 - Authoritative shared ledger: `topics/padua-batch-20261031/ALLOCATIONS.md`; charter PD-T001–012 / PD-N001 / LIT-001–041 / IDEA-001–051 first; MZ PD-T013–028 / PD-N002–006 / LIT-042–065 / IDEA-052–076 second. The five audit-response LIT additions are explicit; no accepted ID is renumbered.
 
@@ -79,3 +79,11 @@ All audit findings are answered in response-01.md. Revised manuscript: 15 A4 pag
   - ledger blob identity across the three live member branches;
   - charter preservation and registry preamble checks;
   - a manuscript build: 15 pages, no warnings.
+
+## Audit-02 readiness recording — Codex
+
+- AC requested gpt-6.1-sol medium for this administrative step; root runtime model/effort metadata is unexposed. Rules were read at a27fdafce835a9710fcf2f18560557788c5c9ee4; fetched audit-delivery head 8f4f7b0dcbcde8d37bfa759834375e88155c28fc, with rule files unchanged. This is acceptance/readiness bookkeeping only: no new mechanism, result, source statement or novelty claim, so the novelty-generation gate does not apply.
+- Audit-02 ACCEPTED response-01 with no blocking finding. It independently confirmed the endpoint corollary, source limitations, all M1/M2/L/P dispositions, ledger identity, accepted charter preservation, current-main ancestry and clean manuscript build. Its four informational notes are nonblocking. The original manuscript/hand-off PENDING text is historical to the audited draft; no scientific source is reworded to retroactively change that draft.
+- Current main remains 08fafe62d9798385dfafaacc9a41344272737e68. A fresh actual squash rehearsal of the audit-delivery head on that main had zero conflicts, the same tree as merge-tree and candidate, 34 unique result rows, 65 literature rows and 105 preserved charter files. Live programme-ideas and bivariate-Lanczos retain ledger blob 43c581fb242fd28ebe4d89ee4a42e3bbd660a159. Exact evidence: readiness-02-checks.json.
+- Current frontier and acceptance columns now record completed audit/PR readiness and the post-merge OPEN/pending-reference frontier. No epistemic status, dependency, disposition, allocation, theory, manuscript, bibliography, producer or numerical evidence changes. Exact metadata-only transforms and before/after hashes: readiness-02-impact.json. Historical response targets remain checked against their audited Git objects.
+- PR #3's AUDIT section records audit-02, the confirmed main rehearsal and the decision request. AC is asked to review and squash-merge this MZ PR next if satisfied. No main push, PR merge, force-push, tag, rule or setting change is performed.

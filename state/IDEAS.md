@@ -392,7 +392,7 @@ Full predecessor comparison, separation criterion, prewritten kill test, evidenc
 
 ## Current MZ dispositions — audit-01 response
 
-This table supersedes the historical launch-state table. Mathematical validity of the original claims was accepted in Claude audit-01; the response's endpoint specialization and editorial/source updates await focused re-audit. `REJECTED: refuted` and `REJECTED: failed` apply only to the named claim/mechanism. `equivalent` below is an IDEA disposition relative to the supplied mechanism, not a rejected mathematical theorem or a downgrade of its separately PROVED result. Retained successful results make no historical novelty claim.
+This table supersedes the historical launch-state table. Mathematical validity of the original claims was accepted in Claude audit-01; audit-02 accepted the response's endpoint specialization and editorial/source updates. This readiness update changes no candidate disposition or mathematical status. `REJECTED: refuted` and `REJECTED: failed` apply only to the named claim/mechanism. `equivalent` below is an IDEA disposition relative to the supplied mechanism, not a rejected mathematical theorem or a downgrade of its separately PROVED result. Retained successful results make no historical novelty claim.
 
 | Idea | Current disposition / accepted outcome | Canonical evidence and exact scope | Next action |
 |---|---|---|---|
