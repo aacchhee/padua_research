@@ -13,7 +13,7 @@ Split into: none.
 
 with D_t ∈ R^{(t+1)×(t+1)} lower triangular (diagonal β's, strictly lower part = within-degree coefficients), G_t(z) ∈ R^{(t+1)×t} (the parent entry a_k(z) − h minus the other degree-(t−1) coefficients) and E_t ∈ R^{(t+1)×(t−1)} (minus the degree-(t−2) coefficients). Define V_t = (P_t; P_{t−1}) and the block transfer matrices T_1(z) = [D_1⁻¹G_1; I_1], T_t(z) = [[D_t⁻¹G_t, D_t⁻¹E_t], [I_t, 0]] (t ≥ 2). Then:
 
-1. **(Transfer representation.)** The response to a forcing in block s alone is P_t = [T_t(z)⋯T_{s+1}(z)]_{1st block row} (D_s⁻¹(−Φ_s); 0), so ‖(L*(z)⁻¹)_{[t],[s]}‖₂ ≤ ‖T_t(z)⋯T_{s+1}(z)‖₂ ‖D_s⁻¹‖₂ for s < t, and the diagonal block is −D_t⁻¹.
+1. **(Transfer representation.)** The response to a forcing in block s alone is P_t = [T_t(z)⋯T_{s+1}(z)]_{1st block row} (D_s⁻¹(−Φ_s); 0), so ‖(L*(z)⁻¹)_{[t],[s]}‖₂ ≤ ‖T_t(z)⋯T_{s+1}(z)‖₂ ‖D_s⁻¹‖₂ for s < t, and the diagonal block is −D_t⁻¹ [note 2026-10-31T23:37Z, recon-02 m7: this is the block of the map Φ ↦ P = −L*⁻¹Φ; the diagonal block of L*⁻¹ itself is +D_t⁻¹. Norms are unaffected].
 2. **(Perturbed-product lemma.)** For matrices T⁰_r, ΔT_r of compatible sizes and K ≥ 1 with ‖T⁰_b⋯T⁰_a‖₂ ≤ K for all a ≤ b (empty product = I), every product of the perturbed matrices satisfies ‖(T⁰_b + ΔT_b)⋯(T⁰_a + ΔT_a)‖₂ ≤ K Π_{r=a}^{b}(1 + K‖ΔT_r‖₂).
 3. **(Near-product bound.)** Let μ⁰ be any measure with product-type window coefficients (PD-T?…-105 part 1; e.g. the product of the marginals of μ), T⁰_r(z) its transfers at the same point z, K(z) := max(1, sup_{s<b≤n} ‖T⁰_b(z)⋯T⁰_{s+1}(z)‖₂) and ε_r(z) := ‖T_r(z) − T⁰_r(z)‖₂. Then for all s < t ≤ n
   ‖(L*(z)⁻¹)_{[t],[s]}‖₂ ≤ ‖D_s⁻¹‖₂ K(z) Π_{r=s+1}^{t}(1 + K(z)ε_r(z)) ≤ ‖D_s⁻¹‖₂ K(z) exp(K(z) Σ_r ε_r(z)).
@@ -64,3 +64,4 @@ A reference closer than the product of the marginals (e.g. a product measure in 
 
 - 2026-10-31: created (Claude Opus 5.5, xhigh; L1 R04).
 - 2026-10-31T23:05Z (re-check after reconstruction 01, which covered R01–R03 only): not affected by B1/B2. The bound is exact algebra for the propagator L*(z) of the dev selection; the same transfer argument applies to any selection with a degree-block structure. The informativeness measurements (PD-T?…-112 (f)) use the dev rule.
+- 2026-10-31T23:37Z (response to reconstruction 02): CONFIRMED by recon-02 (proof re-derived). The m7 sign note is added in part 1. The informativeness numbers were not rerun by the reviewer.

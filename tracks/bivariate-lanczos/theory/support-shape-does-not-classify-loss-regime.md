@@ -7,7 +7,7 @@ Split into: none.
 
 ## Statement
 
-[FP, MEASURED] BJ window recurrence (block window, CGS, double). u = 2^-53 and u/ρ_Z the joint Ritz prediction on the computed span (minimal Ritz residual of Z = X + iY).
+[FP, MEASURED] BJ window recurrence (block window, CGS, double). u = 2^-53 and u/ρ_Z the joint Ritz prediction on the computed span (minimal Ritz residual of Z = X + iY) [note 2026-10-31T23:37Z, recon-02 m2: Paige's prediction is u‖A‖/ρ. On the square ‖X‖, ‖Y‖ ≤ 1, so (a) is unaffected. On the standard Gaussian cloud ‖X‖, ‖Y‖ ≈ 3–4, so "2.4·10³×" in (b) overstates the excess by about that factor (≈ 6–8·10² × u‖Z‖/ρ_Z). The conclusion is unchanged].
 
 (a) **Product support, non-product weights.** On the seed-11 square (M = 1681) with weights exp(c·xy), loss / u/ρ_Z:
 
@@ -66,3 +66,4 @@ A quantitative classifier in terms of the measure. Candidates are the within-deg
 ## History
 
 - 2026-10-31T23:05Z: created (Claude Opus 5.5, xhigh; L1 response to reconstruction 01, major finding on PD-T?…-107).
+- 2026-10-31T23:37Z (response to reconstruction 02): CONFIRMED WITH CORRECTIONS. m2 (‖A‖ factor) is noted in the Statement. Recon-02 corrects its own recon-01 wording: its exp(4xy) run gives 4.6× u/ρ_Z at n = 24, not "stable". The developer's 32× is a seed-level difference, not a contradiction.

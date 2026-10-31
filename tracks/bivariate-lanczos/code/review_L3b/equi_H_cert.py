@@ -14,7 +14,8 @@ Independent of the developer's exact_checkerboard.py / exact_certificates.py (no
    constraint space by construction; exact PD test of every 2x2 block (a > 0, ad - b^2 > 0).
 Prints dim S_1, rank of the Hessian map, the high-precision optimum t_D (dual, same normalisation as
 the developer: sum tr A_i = 1, t = min lambda_min) and the exact certified min_i det/tr.
-Usage: python3 -I equi_H_cert.py nmin nmax [dps]
+Usage: python3 -I equi_H_cert.py nmin nmax [dps] [equi|randrat] [seeds, e.g. 1,2,3]
+(randrat = negative-control family: N_n random rational points in [-1,1]^2 with denominators 1000)
 """
 import sys
 import time
@@ -175,9 +176,16 @@ def frac_of(x, den_exp):
     return Fr(int(mp.nint(x * D)), D)
 
 
-def run_n(n, dps, log):
+def nodes_randrat(n, seed):
+    import random
+    rnd = random.Random(seed)
+    N = (n + 1) * (n + 2) // 2
+    return [(Fr(rnd.randint(-1000, 1000), 1000), Fr(rnd.randint(-1000, 1000), 1000)) for _ in range(N)]
+
+
+def run_n(n, dps, log, family='equi', seed=0):
     t0 = time.time()
-    nodes = nodes_equi(n); M = len(nodes); Dg = 2 * n + 1
+    nodes = nodes_equi(n) if family == 'equi' else nodes_randrat(n, seed); M = len(nodes); Dg = 2 * n + 1
     E = [(a, b) for k in range(Dg + 1) for b in range(k + 1) for a in [k - b]]   # T_a(x) T_b(y), a + b <= 2n+1
     jets = []
     for (x, y) in nodes:
@@ -202,7 +210,7 @@ def run_n(n, dps, log):
         Hs.append(row)
     Hmap = [[Hs[i][k][q] for k in range(K)] for i in range(M) for q in range(3)]
     rkH = rank(Hmap)
-    log(f"equi n={n}: M={M} dim Pi_2n+1={len(E)} rank J={rkJ} (3M={3*M}) dim S1={K} (expected {n*(n+1)//2}) "
+    log(f"{family}{'' if family == 'equi' else ' seed=' + str(seed)} n={n}: M={M} dim Pi_2n+1={len(E)} rank J={rkJ} (3M={3*M}) dim S1={K} (expected {n*(n+1)//2}) "
         f"rank Hess|S1={rkH} (injective {rkH == K})  [{time.time()-t0:.1f}s exact setup]")
     # ---- DUAL: v = (a_i, b_i, d_i)_i with sum_i a_i pxx + 2 b_i pxy + d_i pyy = 0 for all basis p
     G = [[x for i in range(M) for x in (Hs[i][k][0], 2 * Hs[i][k][1], Hs[i][k][2])] for k in range(K)]
@@ -297,8 +305,11 @@ def main():
     dps = int(sys.argv[3]) if len(sys.argv) > 3 else 40
     log = lambda s_: print(s_, flush=True)
     log(f"equi_H_cert.py nmin={nmin} nmax={nmax} dps={dps} (mpmath {mp.__version__})")
+    family = sys.argv[4] if len(sys.argv) > 4 else 'equi'
+    seeds = [int(s_) for s_ in sys.argv[5].split(',')] if len(sys.argv) > 5 else [0]
     for n in range(nmin, nmax + 1):
-        run_n(n, dps, log)
+        for sd in (seeds if family != 'equi' else [0]):
+            run_n(n, dps, log, family, sd)
 
 
 if __name__ == '__main__':

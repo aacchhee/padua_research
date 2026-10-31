@@ -45,6 +45,7 @@ What remains measured:
 - Attempted mechanism: "one-relation-per-column selection (as a class) is the cause, the truncation is not".
 - Parameter range: the five seed-11 sets, n ≤ 24, four parent rules, block and full windows, one CGS pass.
 - Not covered: other parent rules; other windows except depth 10 and CGS2 (the reconstruction ran these: modest effects); larger M.
+- Extension (recon-02 M1, REVIEWER-MEASURED, `reviews/logs_L1b/checkerboard.log`): the selection dependence also holds on a product-type measure, with a set-dependent ranking. On the cubic-clustered checkerboard (m = 30) at n = 24: dev 1.0e-6, mirror 2.7e-7, **alt 3.1e-13**, **adapt 9.3e-6**; two relations 0.61. On the equispaced and Lobatto checkerboards all rules are at 1e-15–1e-13. The pivot-adaptive rule, best on rotation 0.3 and the triangle, is 9× worse than dev there. No single tested rule is best on every set.
 
 ## Statement status
 
@@ -91,3 +92,4 @@ Finite: one M, one seed per shape, n ≤ 24. "adapt" and "alt" are heuristics; n
 ## History
 
 - 2026-10-31T23:05Z: created (Claude Opus 5.5, xhigh; L1 response to reconstruction 01, finding B1).
+- 2026-10-31T23:37Z (response to reconstruction 02): CONFIRMED by recon-02. The product-type extension with set-dependent winners (M1) is added under Scope.

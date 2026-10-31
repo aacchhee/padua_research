@@ -61,3 +61,4 @@ A predictor for the coefficient channel; a stable remedy covering both channels 
 - 2026-10-31T23:05Z (re-check after reconstruction 01):
   - (c) is consistent with and strengthened by recon-01: the two-relation recurrence is also worse than BJ on tensor 41² (developer rerun 8.0e-13 vs 1.8e-14 at n = 24), does not remove the Ritz-type loss of a Gaussian cloud, and only reduces the triangle with one pass (PD-T?…-109 (b), narrowed).
   - (a) and (b) are dev-rule statements (PD-N?…-105).
+- 2026-10-31T23:37Z (response to reconstruction 02): (c) CONFIRMED by recon-02 (two-relation control 1.1e-5, 0.29, 0.61 at n = 12, 20, 24 on the cubic checkerboard); (a), (b) not rerun.

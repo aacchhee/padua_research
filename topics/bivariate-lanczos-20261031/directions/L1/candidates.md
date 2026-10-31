@@ -354,3 +354,12 @@ These three verdicts are therefore **convention-sensitive**, i.e. not decided at
 - IDEA?…-118: H_sign killed (unaffected); H_fb, H_rd inconclusive (unaffected); H_term convention-sensitive.
 - IDEA?…-119: convention-sensitive (no longer "REJECTED: failed"). The over-estimate grows with the clustering strength at both conventions: about 0.5–1× quadratic, 2–13× cubic, 11–120× quartic at n = 16, 20.
 - IDEA?…-120: convention-sensitive. Across both conventions, C/L lies in [0.14, 1.06] on the clustered sets for n = 16, 20; closed-loop dot-product rounding reproduces the order of magnitude, within a factor ≤ 8 below the loss.
+
+### C02 — dispositions after reconstruction 02 (2026-10-31T23:38Z; reviews/L1-reconstruction-02.md; response-recon-02.md)
+
+- **IDEA?…-116 / PD-T?…-113 part 2:** PROVED as the exact finite dev-rule statement. G(n) is defined with k > s. Recon-02's independent two-way exact rerun reproduced every value and maximiser and decided both inequalities exactly. Part 3: PROVED for T_40 and rotated Q_24, CONDITIONAL for Q_40.
+- **IDEA?…-118 H_term:** survives (convention-free: recon-02 with actual double dot products, REVIEWER-MEASURED; also at 2^-53).
+- **IDEA?…-119:** inconclusive (convention-free, REVIEWER-MEASURED: quartic 21.6 / 12.9, cubic m = 36 16.4 / 21.1). Not REJECTED.
+- **IDEA?…-120:** survives (convention-free, REVIEWER-MEASURED: C/L 0.56–1.86 on all six sets). The term-wise noise-model version stays convention-sensitive and under-estimates actual rounding, because the per-term model misses summation rounding.
+- **PC-11 addendum (recon-02 m10):** the quoted on-pattern deviation 1.6e-14 excludes β; including β it is 3.0e-13 (recon-02). Harmless.
+- **PD-N?…-105 extension (recon-02 M1, REVIEWER-MEASURED):** on the cubic checkerboard the ranking reverses. At n = 24: alt 3.1e-13, mirror 2.7e-7, dev 1.0e-6, adapt 9.3e-6. No single tested rule is best everywhere.

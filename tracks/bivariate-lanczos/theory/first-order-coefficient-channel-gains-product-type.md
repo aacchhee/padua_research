@@ -16,7 +16,7 @@ Let μ = Σ_i w_i δ_{z_i}, z_i = (ξ_i, η_i), be a positive discrete measure (
 3. **[EXACT] Gram derivative by univariate data.** ∂(ΞᵀΞ)/∂h_{k,l} = −(A + Aᵀ) on degrees ≤ n, with A = Ξ*ᵀR^{(k,l)} and, for e = (a, b),
    - j ≥ 1: A_{e,(t+r, j+r)} = δ_{a−b, i_l} · ⟨r_b, r_{j_l} G^{y,[j]}_{j+r}⟩_{μ_Y};
    - j = 0: A_{e,(i′+r, r)} = ⟨p_{a−b}, p_{i_l} G^{x,[t]}_{i′}⟩_{μ_X} · ⟨r_b, r_{j_l} r_r⟩_{μ_Y}.
-   (A β_k-perturbation is the case l := k with weight β*_k.)
+   (A β_k-perturbation: ∂ξ_k/∂β_k = −ξ*_k/β*_k, so the derivative is −R^{(k,k)}, the case l := k with no extra weight. Corrected 2026-10-31T23:37Z, recon-02 m8; original: "(A β_k-perturbation is the case l := k with weight β*_k.)")
 4. **[EXACT] On/off split.** An entry is on-pattern (nonzero in c*) iff i_l = i for j ≥ 1, resp. j_l = 0 for j = 0. For on-pattern entries the derivative in part 3 is exactly the Gram derivative of the univariate coefficient map of μ_Y (perturbing a^y_{j−1} if j_l = j−1, b^y_{j−1} if j_l = j−2) replicated on the x-degree-i chain, resp. of μ_X (a^x_{t−1}, b^x_{t−1}) replicated on each y-degree. Off-pattern entries have derivatives with a cross-variable factor that the univariate maps do not contain: ⟨r_b, r_{j_l} G^{y,[j]}_{j+r}⟩ with j_l unrelated to j (j ≥ 1), or the linearisation coefficient ⟨r_b, r_{j_l} r_r⟩_{μ_Y} with j_l ≥ 1 (j = 0).
 5. **[FP, MEASURED]** Harris–Simanek checkerboards m = 30 (PD-T?…-111, -112), degrees ≤ 20. Gain := max |A + Aᵀ| over degrees ≤ n.
    - Formula check: on 91 sampled entries per set, |A_direct − A_formula| ≤ 1.1e-14·‖R_d‖ (clustered), 1.6e-15·‖R_d‖ (equispaced); pre-stated criterion 1e-8 met.
@@ -73,3 +73,7 @@ Size of the cross-variable factors in terms of the factor measures (an elementar
 
 - R06 (2026-10-31): created after the IDEA?…-117 run (the identity was derived after seeing that the off-pattern entries carry the loss; the numerical check criterion was written before the check run, candidates.md R06 note).
 - 2026-10-31T23:05Z (re-check after reconstruction 01): not affected by B1/B2. Exact algebra at a product-type point, BJ (dev) ordering; the HL mirror is covered by x ↔ y symmetry; other parent rules are not covered.
+- 2026-10-31T23:37Z (response to reconstruction 02):
+  - Parts 1–4 CONFIRMED (re-derived by recon-02); part 5's on/off split was reproduced independently, the gain magnitudes were not rerun.
+  - m8: the β-perturbation parenthesis is corrected.
+  - M1: all of part 5 is a dev-rule statement. On the same cubic checkerboard, recon-02 measures the loss at n = 24 as dev 1.0e-6, mirror 2.7e-7, alt 3.1e-13, adapt 9.3e-6. The off-pattern channel under the alt and adapt rules is not analysed (other rules break the chain structure used in parts 2–4).

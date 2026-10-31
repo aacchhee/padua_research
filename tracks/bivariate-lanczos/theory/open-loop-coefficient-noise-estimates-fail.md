@@ -25,9 +25,9 @@ Overall status: MEASURED.
 |---|---|---|
 | (a) | MEASURED | `logs/r06_coefficient_channel.log` |
 | (b) | MEASURED | `logs/r07_offpattern_anatomy.log` |
-| (c) | MEASURED | `logs/r07_termwise_predictor.log` |
+| (c) | MEASURED (trend). The kill verdict is decided convention-free as **inconclusive** by recon-02 with actual double rounding (REVIEWER-MEASURED: E/L at n = 16/20 quadratic 1.13 / 0.53, cubic 5.13 / 4.70, quartic 21.6 / 12.9, cubic m = 36 16.4 / 21.1). | `logs/r07_termwise_predictor.log`, `logs/c01_u53_rerun.log`, `reviews/logs_L1b/open_loop.log` |
 
-Candidate / claim disposition: IDEA?…-117 H_cond-abs inconclusive (as a predictor: failed); IDEA?…-118 H_sign REJECTED: failed; IDEA?…-119 REJECTED: failed (quartic). Corrected 2026-10-31T23:11Z: IDEA?…-119 convention-sensitive (killed at 2^-52, inconclusive at 2^-53); no longer REJECTED.
+Candidate / claim disposition: IDEA?…-117 H_cond-abs inconclusive (as a predictor: failed); IDEA?…-118 H_sign REJECTED: failed; IDEA?…-119 REJECTED: failed (quartic). Corrected 2026-10-31T23:11Z: IDEA?…-119 convention-sensitive (killed at 2^-52, inconclusive at 2^-53); no longer REJECTED. Resolved 2026-10-31T23:37Z (recon-02, actual double rounding, REVIEWER-MEASURED): IDEA?…-119 inconclusive; IDEA?…-118 H_term survives.
 Rejection reason: failed (MEASURED, stated ranges).
 
 ## Depends on
@@ -48,7 +48,7 @@ Measured; see logs.
 
 ## Scope
 
-Product-type checkerboards only. The failure is attributed to the missing feedback: the closed-loop model of PD-T?…-115 (c) succeeds on the same sets.
+Product-type checkerboards only, dev rule. The failure is attributed to the missing feedback. The closed loop with actual double dot products reproduces the loss on the same sets (PD-T?…-115 (d), REVIEWER-MEASURED, C/L 0.56–1.86); the closed-loop term-wise noise model does so only within a convention-dependent factor (115 (c)). [Corrected 2026-10-31T23:37Z, recon-02 m1; original: "Product-type checkerboards only. The failure is attributed to the missing feedback: the closed-loop model of PD-T?…-115 (c) succeeds on the same sets."]
 
 ## Open items
 
@@ -59,3 +59,7 @@ An exact-data estimate that includes the feedback (the operator (I − T)⁻¹ o
 - 2026-10-31: created (Claude Opus 5.5, xhigh; L1 R07).
 - 2026-10-31T23:11Z (re-check after reconstruction 01): not affected by B1. The B2-type convention issue affects (c); IDEA?…-119's disposition is corrected to convention-sensitive. (a) (overshoot 10⁶–10⁷) and (b) (signs, no noise scale) are unaffected.
   - Title narrowed at the same time. Original title: "Open-loop coefficient-noise estimates of the clustered-checkerboard loss fail: generic u-noise, sign-randomised magnitudes, and term-wise rounding on the exact coefficients".
+- 2026-10-31T23:37Z (response to reconstruction 02):
+  - M3: IDEA?…-119 is decided convention-free as inconclusive with actual double rounding (reviewer-measured), replacing "convention-sensitive". The trend in (c) is confirmed by recon-02.
+  - m1: the Scope sentence is corrected (original kept there).
+

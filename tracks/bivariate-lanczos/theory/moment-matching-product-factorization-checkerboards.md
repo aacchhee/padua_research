@@ -61,3 +61,4 @@ None for the statements.
 
 - 2026-10-31: created (Claude Opus 5.5, xhigh; L1 R04).
 - 2026-10-31T23:05Z (re-check after reconstruction 01): not affected by B1/B2 (exact algebra). Note: on product-type measures the mirror rule gives the same product structure by x ↔ y symmetry; the alt/adapt rules of PD-N?…-105 are not covered by part 1's chain description.
+- 2026-10-31T23:37Z (response to reconstruction 02): CONFIRMED (re-derived; exact rational check for m = 4 is sharp at degree 2m+1, first failure x⁴y⁵; the ordering hypothesis is necessary).

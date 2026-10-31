@@ -69,3 +69,7 @@ Explain the coefficient channel (candidate: conditioning of the coefficient map 
   - (d) is consistent with the narrowed PD-T?…-109 (b): the two-relation control is not a general remedy (also tensor, Gaussian and triangle, recon-01).
   - The clustered checkerboard is a product-type measure with strong loss, which is in line with recon-01's finding that the support does not classify the regime (PD-N?…-106).
   - Pending corrections PC-11 and PC-12 (candidates.md) are to be read with (a).
+- 2026-10-31T23:37Z (response to reconstruction 02):
+  - (a), (b), (d) are CONFIRMED by recon-02's independent rerun (cubic: 7.2e-16 … 1.0e-6 at n = 8…24).
+  - m10 (PC-11): the on-pattern deviation 1.6e-14 excludes β; including β, recon-02 measures 3.0e-13 over degrees ≤ 24. Harmless either way, as the on-pattern-only D shows.
+  - M1: all loss values are dev-rule; the alt rule gives 3.1e-13 at n = 24 on the cubic set (PD-N?…-105, extension).
