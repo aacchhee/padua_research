@@ -1,0 +1,883 @@
+{
+  "gram": [
+    {
+      "coarse_lebesgue_upper_expression": 21.13091018784734,
+      "direct_gram_max_abs_residual": 1.1102230246251565e-16,
+      "even_modes": 9,
+      "gap_1_minus_sigma": 0.1343738752432454,
+      "n": 4,
+      "odd_modes": 6,
+      "phase": 1,
+      "sigma_max": 0.8656261247567546,
+      "status": "MEASURED floating block diagnostic; no universal strictness claim",
+      "weighted_normalized_condition_2": 3.7261032610797327
+    },
+    {
+      "coarse_lebesgue_upper_expression": 43.08458122703438,
+      "direct_gram_max_abs_residual": 5.551115123125783e-16,
+      "even_modes": 25,
+      "gap_1_minus_sigma": 0.09696807028251053,
+      "n": 8,
+      "odd_modes": 20,
+      "phase": 1,
+      "sigma_max": 0.9030319297174895,
+      "status": "MEASURED floating block diagnostic; no universal strictness claim",
+      "weighted_normalized_condition_2": 4.430050337698613
+    },
+    {
+      "coarse_lebesgue_upper_expression": 68.73307302739317,
+      "even_modes": 49,
+      "gap_1_minus_sigma": 0.07704950637384089,
+      "n": 12,
+      "odd_modes": 42,
+      "phase": 1,
+      "sigma_max": 0.9229504936261591,
+      "status": "MEASURED floating block diagnostic; no universal strictness claim",
+      "weighted_normalized_condition_2": 4.995731874898154
+    },
+    {
+      "coarse_lebesgue_upper_expression": 96.34105225172235,
+      "even_modes": 81,
+      "gap_1_minus_sigma": 0.06593691915875399,
+      "n": 16,
+      "odd_modes": 72,
+      "phase": 1,
+      "sigma_max": 0.934063080841246,
+      "status": "MEASURED floating block diagnostic; no universal strictness claim",
+      "weighted_normalized_condition_2": 5.415904425695216
+    },
+    {
+      "coarse_lebesgue_upper_expression": 219.2809777281466,
+      "even_modes": 289,
+      "gap_1_minus_sigma": 0.04666818756239588,
+      "n": 32,
+      "odd_modes": 272,
+      "phase": 1,
+      "sigma_max": 0.9533318124376041,
+      "status": "MEASURED floating block diagnostic; no universal strictness claim",
+      "weighted_normalized_condition_2": 6.469601700389772
+    },
+    {
+      "coarse_lebesgue_upper_expression": 498.7384204467257,
+      "even_modes": 1089,
+      "gap_1_minus_sigma": 0.03449384733074512,
+      "n": 64,
+      "odd_modes": 1056,
+      "phase": 1,
+      "sigma_max": 0.9655061526692549,
+      "status": "MEASURED floating block diagnostic; no universal strictness claim",
+      "weighted_normalized_condition_2": 7.5485995247778686
+    }
+  ],
+  "metadata": {
+    "dependency_sha256": {
+      "c1_gram.py": "dc7c97e4214b899ec719739f8b567d49d8513916063d51fc93ebb1c63e2a9d47",
+      "c1_mod4.py": "3adecb8592f7a944a333431ff7f665ba440627469dc446944097664124c1fc70",
+      "c1_stability.py": "7f4b7107ce9023030b2091dc44b08672d405fc8f63d5b8876271bc7481e12952"
+    },
+    "independent_rerun": "pending",
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "source_sha256": "36ef0ead1d9cd944352fbfb71e4917e2c90dcb00e5713aefa4eb7c7d75a82406",
+    "status": "MEASURED finite ranks/float64/adaptive samples; analytic count proof separate"
+  },
+  "phase_base_counts": [
+    {
+      "n": 0,
+      "phase_counts": [
+        2,
+        1,
+        0,
+        1
+      ],
+      "target": 1
+    },
+    {
+      "n": 1,
+      "phase_counts": [
+        3,
+        4,
+        3,
+        2
+      ],
+      "target": 3
+    },
+    {
+      "n": 2,
+      "phase_counts": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "target": 6
+    },
+    {
+      "n": 3,
+      "phase_counts": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "target": 10
+    }
+  ],
+  "ranks": [
+    {
+      "draw": 0,
+      "n": 4,
+      "p": 1009,
+      "phase": 1,
+      "rank": 15,
+      "seed": 2026604001,
+      "target": 15,
+      "x": [
+        561,
+        405,
+        471,
+        886,
+        967
+      ],
+      "y": [
+        841,
+        275,
+        938,
+        982,
+        900,
+        538
+      ]
+    },
+    {
+      "draw": 1,
+      "n": 4,
+      "p": 1009,
+      "phase": 1,
+      "rank": 15,
+      "seed": 2026604002,
+      "target": 15,
+      "x": [
+        205,
+        18,
+        63,
+        138,
+        525
+      ],
+      "y": [
+        373,
+        265,
+        663,
+        458,
+        447,
+        329
+      ]
+    },
+    {
+      "draw": 0,
+      "n": 4,
+      "p": 1013,
+      "phase": 1,
+      "rank": 15,
+      "seed": 2026604401,
+      "target": 15,
+      "x": [
+        915,
+        494,
+        570,
+        18,
+        944
+      ],
+      "y": [
+        343,
+        711,
+        34,
+        669,
+        791,
+        700
+      ]
+    },
+    {
+      "draw": 1,
+      "n": 4,
+      "p": 1013,
+      "phase": 1,
+      "rank": 15,
+      "seed": 2026604402,
+      "target": 15,
+      "x": [
+        273,
+        436,
+        526,
+        123,
+        938
+      ],
+      "y": [
+        702,
+        614,
+        78,
+        340,
+        189,
+        619
+      ]
+    },
+    {
+      "draw": 0,
+      "n": 4,
+      "p": 1019,
+      "phase": 1,
+      "rank": 15,
+      "seed": 2026605001,
+      "target": 15,
+      "x": [
+        727,
+        168,
+        637,
+        677,
+        650
+      ],
+      "y": [
+        247,
+        579,
+        965,
+        299,
+        216,
+        61
+      ]
+    },
+    {
+      "draw": 1,
+      "n": 4,
+      "p": 1019,
+      "phase": 1,
+      "rank": 15,
+      "seed": 2026605002,
+      "target": 15,
+      "x": [
+        257,
+        861,
+        456,
+        127,
+        209
+      ],
+      "y": [
+        712,
+        487,
+        442,
+        605,
+        535,
+        909
+      ]
+    },
+    {
+      "draw": 0,
+      "n": 8,
+      "p": 1009,
+      "phase": 1,
+      "rank": 45,
+      "seed": 2027004001,
+      "target": 45,
+      "x": [
+        933,
+        52,
+        410,
+        655,
+        586,
+        388,
+        482,
+        890,
+        158
+      ],
+      "y": [
+        536,
+        360,
+        683,
+        764,
+        873,
+        61,
+        255,
+        765,
+        531,
+        67
+      ]
+    },
+    {
+      "draw": 1,
+      "n": 8,
+      "p": 1009,
+      "phase": 1,
+      "rank": 45,
+      "seed": 2027004002,
+      "target": 45,
+      "x": [
+        609,
+        298,
+        500,
+        485,
+        303,
+        607,
+        345,
+        361,
+        477
+      ],
+      "y": [
+        1007,
+        535,
+        785,
+        243,
+        254,
+        544,
+        217,
+        822,
+        188,
+        889
+      ]
+    },
+    {
+      "draw": 0,
+      "n": 8,
+      "p": 1013,
+      "phase": 1,
+      "rank": 45,
+      "seed": 2027004401,
+      "target": 45,
+      "x": [
+        463,
+        642,
+        743,
+        213,
+        884,
+        634,
+        16,
+        506,
+        778
+      ],
+      "y": [
+        439,
+        151,
+        837,
+        123,
+        204,
+        498,
+        946,
+        102,
+        12,
+        380
+      ]
+    },
+    {
+      "draw": 1,
+      "n": 8,
+      "p": 1013,
+      "phase": 1,
+      "rank": 45,
+      "seed": 2027004402,
+      "target": 45,
+      "x": [
+        969,
+        350,
+        178,
+        465,
+        544,
+        191,
+        965,
+        278,
+        6
+      ],
+      "y": [
+        451,
+        542,
+        504,
+        818,
+        928,
+        139,
+        549,
+        809,
+        351,
+        167
+      ]
+    },
+    {
+      "draw": 0,
+      "n": 8,
+      "p": 1019,
+      "phase": 1,
+      "rank": 45,
+      "seed": 2027005001,
+      "target": 45,
+      "x": [
+        558,
+        984,
+        17,
+        722,
+        785,
+        588,
+        63,
+        109,
+        941
+      ],
+      "y": [
+        221,
+        886,
+        16,
+        468,
+        535,
+        56,
+        136,
+        45,
+        116,
+        395
+      ]
+    },
+    {
+      "draw": 1,
+      "n": 8,
+      "p": 1019,
+      "phase": 1,
+      "rank": 45,
+      "seed": 2027005002,
+      "target": 45,
+      "x": [
+        603,
+        225,
+        612,
+        454,
+        418,
+        934,
+        810,
+        24,
+        562
+      ],
+      "y": [
+        517,
+        201,
+        898,
+        685,
+        441,
+        832,
+        884,
+        89,
+        479,
+        904
+      ]
+    }
+  ],
+  "stability": [
+    {
+      "condition_2": 5.7595033292372895,
+      "family": "mod4",
+      "inverse_residual_inf": 2.0087359337136585e-15,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -0.5349976198870974,
+        -1.0
+      ],
+      "maximizer_angles": [
+        2.135301256736813,
+        3.141592653589793
+      ],
+      "n": 4,
+      "numerical_rank": 15,
+      "phase": 1,
+      "sample_count": 6893,
+      "sampled_lebesgue_max": 8.95058240083698,
+      "svd_tolerance": 1.6196171616677884e-14,
+      "target": 15,
+      "wall_seconds": 0.03096681100009846
+    },
+    {
+      "condition_2": 2.9983916265214368,
+      "family": "padua",
+      "inverse_residual_inf": 2.213507155346406e-15,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -1.0,
+        -1.0
+      ],
+      "maximizer_angles": [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "n": 4,
+      "numerical_rank": 15,
+      "phase": null,
+      "sample_count": 6797,
+      "sampled_lebesgue_max": 4.409725435508212,
+      "svd_tolerance": 1.579028051143739e-14,
+      "target": 15,
+      "wall_seconds": 0.007428502999800912
+    },
+    {
+      "condition_2": 7.533618831616936,
+      "family": "lower_leja",
+      "inverse_residual_inf": 1.420844993121911e-15,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "leja_candidate_indices": [
+        0,
+        16,
+        8,
+        11,
+        4
+      ],
+      "maximizer": [
+        0.5996348475233524,
+        -0.7475083268625966
+      ],
+      "maximizer_angles": [
+        0.9277515805132357,
+        2.4150993524471533
+      ],
+      "n": 4,
+      "numerical_rank": 15,
+      "phase": null,
+      "sample_count": 7121,
+      "sampled_lebesgue_max": 7.885974782112827,
+      "svd_tolerance": 1.971138266436798e-14,
+      "target": 15,
+      "wall_seconds": 0.009882638999897608
+    },
+    {
+      "condition_2": 7.619733608990417,
+      "family": "mod4",
+      "inverse_residual_inf": 1.105724853664295e-14,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        0.3229884451178865,
+        1.0
+      ],
+      "maximizer_angles": [
+        1.241910845872215,
+        0.0
+      ],
+      "n": 8,
+      "numerical_rank": 45,
+      "phase": 1,
+      "sample_count": 6831,
+      "sampled_lebesgue_max": 16.27746305640503,
+      "svd_tolerance": 8.361866635481324e-14,
+      "target": 45,
+      "wall_seconds": 0.011354686000004222
+    },
+    {
+      "condition_2": 2.6820887982953217,
+      "family": "padua",
+      "inverse_residual_inf": 7.91033905045424e-15,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        1.0,
+        -1.0
+      ],
+      "maximizer_angles": [
+        0.0,
+        3.141592653589793
+      ],
+      "n": 8,
+      "numerical_rank": 45,
+      "phase": null,
+      "sample_count": 6797,
+      "sampled_lebesgue_max": 6.213459646909054,
+      "svd_tolerance": 8.039835192483038e-14,
+      "target": 45,
+      "wall_seconds": 0.010629483000002438
+    },
+    {
+      "condition_2": 14.483169659231109,
+      "family": "lower_leja",
+      "inverse_residual_inf": 6.828416629687053e-15,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "leja_candidate_indices": [
+        0,
+        32,
+        16,
+        22,
+        9,
+        26,
+        5,
+        13,
+        19
+      ],
+      "maximizer": [
+        0.357604045997758,
+        0.357604045997758
+      ],
+      "maximizer_angles": [
+        1.2050953069629595,
+        1.2050953069629595
+      ],
+      "n": 8,
+      "numerical_rank": 45,
+      "phase": null,
+      "sample_count": 7004,
+      "sampled_lebesgue_max": 17.62241177998338,
+      "svd_tolerance": 1.015023627447826e-13,
+      "target": 45,
+      "wall_seconds": 0.011048648000041794
+    },
+    {
+      "condition_2": 8.438037970675206,
+      "family": "mod4",
+      "inverse_residual_inf": 2.5994343396534836e-14,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -0.22388804785849828,
+        -1.0
+      ],
+      "maximizer_angles": [
+        1.7965982987716629,
+        3.141592653589793
+      ],
+      "n": 12,
+      "numerical_rank": 91,
+      "phase": 1,
+      "sample_count": 6848,
+      "sampled_lebesgue_max": 22.96111658136973,
+      "svd_tolerance": 2.384557345940969e-13,
+      "target": 91,
+      "wall_seconds": 0.01425898699994832
+    },
+    {
+      "condition_2": 2.546932811290209,
+      "family": "padua",
+      "inverse_residual_inf": 2.369588900097419e-14,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -1.0,
+        -1.0
+      ],
+      "maximizer_angles": [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "n": 12,
+      "numerical_rank": 91,
+      "phase": null,
+      "sample_count": 6806,
+      "sampled_lebesgue_max": 7.449377097586092,
+      "svd_tolerance": 2.2725655128892865e-13,
+      "target": 91,
+      "wall_seconds": 0.015879411000014443
+    },
+    {
+      "condition_2": 19.409282757839073,
+      "family": "lower_leja",
+      "inverse_residual_inf": 1.842297592414534e-14,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "leja_candidate_indices": [
+        0,
+        48,
+        24,
+        33,
+        13,
+        39,
+        8,
+        19,
+        29,
+        43,
+        5,
+        16,
+        36
+      ],
+      "maximizer": [
+        0.4231125130726442,
+        0.25011597343536635
+      ],
+      "maximizer_angles": [
+        1.133918598405066,
+        1.317996292951343
+      ],
+      "n": 12,
+      "numerical_rank": 91,
+      "phase": null,
+      "sample_count": 6995,
+      "sampled_lebesgue_max": 28.17823247067799,
+      "svd_tolerance": 2.8960452146477575e-13,
+      "target": 91,
+      "wall_seconds": 0.015559392999875854
+    },
+    {
+      "condition_2": 9.031296797534813,
+      "family": "mod4",
+      "inverse_residual_inf": 6.495276999628555e-14,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -0.5329224279557898,
+        -1.0
+      ],
+      "maximizer_angles": [
+        2.1328468874761954,
+        3.1415926535897927
+      ],
+      "n": 16,
+      "numerical_rank": 153,
+      "phase": 1,
+      "sample_count": 6899,
+      "sampled_lebesgue_max": 28.590886420403823,
+      "svd_tolerance": 5.162313874651294e-13,
+      "target": 153,
+      "wall_seconds": 0.0362117939998825
+    },
+    {
+      "condition_2": 2.46814901070243,
+      "family": "padua",
+      "inverse_residual_inf": 5.405999126700484e-14,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        1.0,
+        -1.0
+      ],
+      "maximizer_angles": [
+        0.0,
+        3.141592653589793
+      ],
+      "n": 16,
+      "numerical_rank": 153,
+      "phase": null,
+      "sample_count": 6804,
+      "sampled_lebesgue_max": 8.407436284650426,
+      "svd_tolerance": 4.889252773886466e-13,
+      "target": 153,
+      "wall_seconds": 0.029369791999897643
+    },
+    {
+      "condition_2": 28.48320556562318,
+      "family": "lower_leja",
+      "inverse_residual_inf": 6.539157506950744e-14,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "leja_candidate_indices": [
+        0,
+        64,
+        32,
+        45,
+        17,
+        25,
+        53,
+        10,
+        39,
+        57,
+        6,
+        29,
+        49,
+        21,
+        36,
+        13,
+        60
+      ],
+      "maximizer": [
+        0.5349976198870973,
+        0.5349976198870973
+      ],
+      "maximizer_angles": [
+        1.0062913968529805,
+        1.0062913968529805
+      ],
+      "n": 16,
+      "numerical_rank": 153,
+      "phase": null,
+      "sample_count": 6970,
+      "sampled_lebesgue_max": 61.04327780185578,
+      "svd_tolerance": 6.31912736364591e-13,
+      "target": 153,
+      "wall_seconds": 0.03195079500005704
+    },
+    {
+      "condition_2": 10.480952902970133,
+      "family": "mod4",
+      "inverse_residual_inf": 5.114172482717635e-13,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -0.6248594881423862,
+        -1.0
+      ],
+      "maximizer_angles": [
+        2.2457478734645786,
+        3.141592653589793
+      ],
+      "n": 32,
+      "numerical_rank": 561,
+      "phase": 1,
+      "sample_count": 6872,
+      "sampled_lebesgue_max": 45.85327388201243,
+      "svd_tolerance": 3.5604964471930922e-12,
+      "target": 561,
+      "wall_seconds": 0.15440350399990166
+    },
+    {
+      "condition_2": 2.3231587710852226,
+      "family": "padua",
+      "inverse_residual_inf": 4.4105459573191147e-13,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -1.0,
+        -1.0
+      ],
+      "maximizer_angles": [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "n": 32,
+      "numerical_rank": 561,
+      "phase": null,
+      "sample_count": 6816,
+      "sampled_lebesgue_max": 10.993594541100563,
+      "svd_tolerance": 3.324826168238896e-12,
+      "target": 561,
+      "wall_seconds": 0.1266559440000492
+    },
+    {
+      "condition_2": 50.23272185025738,
+      "family": "lower_leja",
+      "inverse_residual_inf": 7.464865314429914e-13,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "leja_candidate_indices": [
+        0,
+        128,
+        64,
+        89,
+        35,
+        105,
+        21,
+        51,
+        77,
+        114,
+        13,
+        44,
+        96,
+        70,
+        28,
+        120,
+        57,
+        8,
+        83,
+        101,
+        39,
+        110,
+        17,
+        61,
+        74,
+        31,
+        92,
+        123,
+        5,
+        48,
+        80,
+        24,
+        117
+      ],
+      "maximizer": [
+        0.3962466958914657,
+        0.3962466958914657
+      ],
+      "maximizer_angles": [
+        1.1633710295324702,
+        1.1633710295324702
+      ],
+      "n": 32,
+      "numerical_rank": 561,
+      "phase": null,
+      "sample_count": 6988,
+      "sampled_lebesgue_max": 149.78739281765186,
+      "svd_tolerance": 4.311112013437171e-12,
+      "target": 561,
+      "wall_seconds": 0.14992551799991816
+    }
+  ]
+}

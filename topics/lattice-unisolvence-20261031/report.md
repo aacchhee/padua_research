@@ -63,7 +63,7 @@ The arbitrary-field row-root criterion replaces pointwise evaluation by a square
 |15 /0|43.052|8.187|37.795|
 |30 /1|44.001|10.736|89.899|
 |31 /0|71.507|10.867|99.349|
-|32 /1|45.853|see extension.json|149.787|
+|32 /1|45.853|10.994|149.787|
 
 These are **MEASURED adaptive sample maxima**, with recorded conditioning and inverse residuals, not true suprema or asymptotic fits. The additional measured block gap at n64is0.0344938473. Across C1,84exact modular draws,57adaptive comparison rows and17Gram diagnostics are retained. The universal unisolvence and log² targets remain OPEN. Ten initial conceptual rounds plus a written two-round extension filled the previously omitted n≡0mod4phase; the12-round stop preserves a precise new-proof resumption condition.
 

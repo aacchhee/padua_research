@@ -1,0 +1,81 @@
+{
+  "lattice_source": "c2bc5a6e91e5c35b8a702dbbdb3b8609e8ec1061",
+  "parent_source": "317a26597dedc9adc9cfc6a26fa00078df7d29e4",
+  "parent_squash": "8f1e61512afd38de8c06981689e2040b6915add7",
+  "initial_squash_exit": 1,
+  "conflicts_observed": [
+    "ID_CROSSWALK.md",
+    "PAPER_MAP.md",
+    "PROOF_STATUS.md",
+    "literature/INDEX.md",
+    "state/CURRENT.md",
+    "state/IDEAS.md",
+    "topics/README.md",
+    "topics/padua-batch-20261031/ALLOCATIONS.md",
+    "tracks/README.md"
+  ],
+  "verified_repairs": [
+    {
+      "path": "ID_CROSSWALK.md",
+      "parent_sha256": "8502eea314a2e22b97a4e2dba80350bec2e760a808d7f1f7d22b6f8f031a9e59",
+      "source_sha256": "5222d84fe6ae4a892dfa3e15a136ca5ddd3a866e1a3b2142d7a13e2ff0dd6770",
+      "rule": "parent exact byte prefix"
+    },
+    {
+      "path": "PAPER_MAP.md",
+      "parent_sha256": "e096a46e686c5131f57c27e98f8542fa28c05225d8b638ab9e83a4e4028d0e28",
+      "source_sha256": "8bd00dcca543668bf8bce794835aeb45e0e2e832ea67895c1c52db280ca6140f",
+      "rule": "parent exact byte prefix"
+    },
+    {
+      "path": "PROOF_STATUS.md",
+      "parent_sha256": "50315a4b6e21803ea1ebcabe2054d07a3a36ac854bde88edb5b4e73608874960",
+      "source_sha256": "32a9ce137927052fc5607b5fca5fa0bc94f05b7954af3429c09193a674f83759",
+      "rule": "parent exact byte prefix"
+    },
+    {
+      "path": "literature/INDEX.md",
+      "parent_sha256": "eec92d273fba4704fb459851faad38d2ad968caf285f839cd67860fa58dcff71",
+      "source_sha256": "fa855fa0132ec3dce5c2c996685091b735a1ad6792c30a714a8b151b68d0d983",
+      "rule": "parent exact byte prefix"
+    },
+    {
+      "path": "state/CURRENT.md",
+      "parent_sha256": "52db40040b838bcc9e593da4ee31171ea44ba18dfd0c2075a6a538d797ed9836",
+      "source_sha256": "2e6f9dc19fb99347916e7527200b157b1e9e0b7fc489a687f80f4dfceda98c11",
+      "rule": "parent exact byte prefix"
+    },
+    {
+      "path": "state/IDEAS.md",
+      "parent_sha256": "3f269f84f7184a65f1db9705f35a97054736769064065cdf186874b7f53793f4",
+      "source_sha256": "e9019714881a2c3ef4189a0ef0682570085a713e708f10348483a88d45491455",
+      "rule": "parent exact byte prefix"
+    },
+    {
+      "path": "topics/README.md",
+      "parent_sha256": "966d702091fd60f18e31b7044a7180b7a1cf3a831d36981386f3246e0642a969",
+      "source_sha256": "7497468ecb5e3a7f0fd5e7f7c65bc20b2dbb50842322e76a1cec1e158451fa40",
+      "rule": "parent exact byte prefix"
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "parent_sha256": "4b41aed1c1a44728bf428c7f1935b97b730fa30163381490339ab0c6a680207e",
+      "source_sha256": "96d662d569c0a3467aa18694c64587b7bdf763f45865224d5eca029588ede4e1",
+      "rule": "parent exact byte prefix"
+    },
+    {
+      "path": "tracks/README.md",
+      "parent_sha256": "89f57d6b3580dd9789389aeb50ed12bb42273787fa004b33b76a1ee14d9207c0",
+      "source_sha256": "e0ea093c762c6fc225cced71a075bc9edf577be894d18a62aa34327b3d534d85",
+      "rule": "parent byte prefix after explicitly recorded active-track metadata sentence replacement"
+    }
+  ],
+  "unresolved_conflicts": [],
+  "result_commit": "d6c9b6cbcc75dbde139f93794e3ff3b5bae61065",
+  "result_tree": "39fdb18f03b10f29af7756d4dc9c6dd16b1625d3",
+  "source_tree": "39fdb18f03b10f29af7756d4dc9c6dd16b1625d3",
+  "identical_source_tree": true,
+  "origin_main_unchanged": true,
+  "charter_science_diff": [],
+  "semantic_check": "Whole tree equals source after nine verified additive shared-file resolutions; scientific parent files remain unchanged. No scientific rerun inferred, no live merge."
+}

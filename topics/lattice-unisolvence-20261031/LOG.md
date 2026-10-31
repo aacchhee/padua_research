@@ -5,7 +5,7 @@ Next: `Claude (Opus 5.5 xhigh): Continue codex/lattice-unisolvence-20261031.`
 
 ## Authority / provenance
 
-Rules d36722823441dc40c6e19d69a174459348dd309c, re-read unchanged at e949ef06895acd5463cdf8df7e0e5f795218f70f. Required base eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64, not main. Merged charter's Claude audit head 3bd9d4e8e7817eaf0abd5b7a750ea77eb8101342. Mathematics accepted there; protocol A1–A3 still pending. No base mutation or rewrite. Root is orchestrator; runtime model/effort metadata unexposed, allocated subagents recorded in plan.
+Rules d36722823441dc40c6e19d69a174459348dd309c, re-read unchanged at e949ef06895acd5463cdf8df7e0e5f795218f70f. Required base eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64, not main. Merged charter's Claude audit head 3bd9d4e8e7817eaf0abd5b7a750ea77eb8101342. At launch, mathematics was accepted there and protocol A1–A3 were pending; the later imported317a265response resolves those parent items. No base mutation or rewrite. Root is orchestrator; runtime model/effort metadata unexposed, allocated subagents recorded in plan.
 
 ## Novelty gate
 
@@ -17,7 +17,7 @@ Read full state/IDEAS.md (all headings/aliases, contextual entries, corrections,
 
 ## Runs needed
 
-C0 catalogue then C3 exact rank tests; all planned, none claimed executed here. See plan/direction ledgers for updates.
+No required scientific producer run remains for the stated scopes. Required Claude audit, coordinated final allocation/batch reconciliation and archival receipt remain as recorded in AUDIT_HANDOFF.md. Earlier planned runs were completed with direction evidence.
 
 ## Dependency / integration
 
@@ -34,3 +34,5 @@ Base refresh: charter advanced to317a26597dedc9adc9cfc6a26fa00078df7d29e4 after 
 C3 round5: isolated n2 modulo6 fibre a=(3,1,2) has a direct all-field axis-factorized determinant with two additive-gap iff conditions. Independent Astra reconstructed the hand proof and symbolic identity. Its naive same-coefficient consecutive-grid extension already fails at tested n3/4/6 (and count at n5), so no direct induction opening is hidden by closure. C1 continues stable odd/shifted subsequences rather than rejecting all mod4 patterns from one singular phase. Source follow-up extends the literature ledger to67 queries and22 exact-coverage records; still no novelty claim.
 
 Development complete: C0two rounds, C3five rounds, C1twelve rounds including the frozen justified two-round phase-completion extension. All-degree2D counts/transversality and four structural/supporting C1proofs are retained; universal unisolvence and polylog stability remain OPEN. Canonical registration preserves21provisional theory records (13PROVED,6MEASURED,2OPEN),13IDEAfamilies with every tested row, and32provisional LIT statements (10initial source groups plus22coverage-qualified records). Required Claude audit PENDING. No new final range is allocated, no publication novelty asserted. Stage AUDIT; exact next prompt above.
+
+Supplementary review disposition: Astra found that newly appended state/IDEAS links used root-relative repository paths instead of paths relative to state/. Root changed only those appended Markdown targets to ../topics/ and ../tracks/. No statement, status, source, checker or evidence changed. Historical launch/Run-needed prose was clarified as history; the final inventory/remaining obligations are authoritative.

@@ -1,0 +1,31 @@
+{
+  "all_checks_passed": true,
+  "antipodal_index_checks_n": "2,6,...,98",
+  "checker_sha256": "6a6c7c2db3a8542cd80f0330089ac56ccbc8a1e254ed8a2cac4dd2bfc1a66bab",
+  "count_n_range": [
+    0,
+    128
+  ],
+  "count_phases_checked": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "crossed_determinants": [
+    0,
+    16,
+    -180,
+    0
+  ],
+  "extension_matrix_ranks_checked": 12,
+  "input_sha256": {
+    "topics/lattice-unisolvence-20261031/directions/C1/extension.json": "0b7dd941ebd269eef37daa98259e784872af08ceccce6522035b472691c04948",
+    "topics/lattice-unisolvence-20261031/directions/C1/results.json": "e2576de67528fefae7c04d3f1dfe8f7d0626bb0cd0518a6295d9223bb27d00c9"
+  },
+  "matrix_ranks_checked": 84,
+  "method": "Fresh total-degree matrices, exact polynomial determinant, direct counts and central-inversion set equality.",
+  "quadratic_formal_identity_checked": true,
+  "shifted_matrix_ranks_checked": 36,
+  "sympy": "1.14.0"
+}

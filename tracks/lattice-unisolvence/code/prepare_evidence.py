@@ -27,9 +27,10 @@ def main():
     topic = root / 'topics/lattice-unisolvence-20261031'
     prefixes = ['tracks/lattice-unisolvence', 'literature/lattice-unisolvence',
                 'topics/lattice-unisolvence-20261031']
-    excluded = {'audit-targets.json', 'manifest-check.json', 'cold-manifest.json'}
+    excluded = {'audit-targets.json', 'manifest-check.json', 'cold-manifest.json', 'cold-check.json'}
     paths = sorted({p for prefix in prefixes for p in (root / prefix).rglob('*')
-                    if p.is_file() and p.name not in excluded
+                    if p.is_file() and not (p.parent == topic and p.name in excluded)
+                    and not (args.archive and (topic / 'protocol') in p.parents)
                     and p.suffix not in {'.pyc', '.zip'} and '__pycache__' not in p.parts
                     and not p.name.startswith('COLD_STORAGE')})
     paths += [root / p for p in ['topics/padua-batch-20261031/ALLOCATIONS.md',
@@ -39,7 +40,7 @@ def main():
     paths = sorted(set(paths))
     manifest = {'schema': 'lattice-audit-targets-v1',
                 'source_head': subprocess.check_output(['git','rev-parse','HEAD'], cwd=root, text=True).strip(),
-                'note': 'Exact file hashes are authoritative for files written after source_head; no self-hash.',
+                'note': 'Exact hashes govern bytes after source_head. Scientific ZIP excludes later protocol envelope; the final repository manifest may additionally pin it. Nested independent audit manifests are retained; root self/archive checks are excluded.',
                 'files': [identity(p, root) for p in paths]}
     (topic / 'audit-targets.json').write_text(json.dumps(manifest, indent=2) + '\n')
     result = {'files': len(paths)}

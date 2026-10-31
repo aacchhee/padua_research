@@ -1,0 +1,14 @@
+{
+  "symbolic": {
+    "all_checks_passed": true,
+    "maximum_absolute_float_difference": 0.0,
+    "developer_sha256": "07ad11b7425720a9b18e3051513bbf29ce310ea33916af8bd6a844ba465c0b43",
+    "rerun_sha256": "07ad11b7425720a9b18e3051513bbf29ce310ea33916af8bd6a844ba465c0b43"
+  },
+  "gram": {
+    "all_checks_passed": true,
+    "maximum_absolute_float_difference": 0.0,
+    "developer_sha256": "a015034f85e2ff47e390e8d4bc0262fd9f312c50d0fbb0382e4b0645e92ab475",
+    "rerun_sha256": "a015034f85e2ff47e390e8d4bc0262fd9f312c50d0fbb0382e4b0645e92ab475"
+  }
+}

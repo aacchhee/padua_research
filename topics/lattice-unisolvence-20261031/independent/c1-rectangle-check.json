@@ -1,0 +1,17 @@
+{
+  "all_checks_passed": true,
+  "n": 3,
+  "p": 1009,
+  "determinants_lex_columns": [
+    [
+      540,
+      489
+    ],
+    [
+      995,
+      732
+    ]
+  ],
+  "rectangle": 544,
+  "nonseparable": true
+}

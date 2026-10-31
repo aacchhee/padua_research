@@ -1,0 +1,13 @@
+{
+  "all_checks_passed": true,
+  "checker_sha256": "30492401bf80111361bcdb2f70a8b1cba119f5c8961030ae4859e2c3d10be414",
+  "input_sha256": {
+    "topics/lattice-unisolvence-20261031/directions/C3/obstructions.json": "d61b0a60f1b99aad93b96514ef78f05f5e1542514d6db7756fbd916a54a76def",
+    "topics/lattice-unisolvence-20261031/directions/C3/ranks.json": "560471d0053fef785bcee9c64f1b7fe9a384e24c0c74ef3d4cd58b9d6c703130"
+  },
+  "method": "Independent all-subset projection counts and row-space-basis determinant computation with lexicographic monomials.",
+  "nonseparable_representatives": 114,
+  "projection_certificates_found": 86,
+  "projection_decisions_checked": 95,
+  "rectangle_tests_checked": 426
+}
