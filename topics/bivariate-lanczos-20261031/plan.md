@@ -68,10 +68,14 @@ Provisional IDs `<NS>?bivariate-lanczos-claude-<nnn>`: literature 001–199 (ful
 | L1+L4 | R01 | 2026-10-31 | L1-Q1, L4-Q1 (frozen) | Kill test K1 and K2 both fire (MEASURED); local relations PROVED; L4 obstruction PROVED | [R01](directions/L1/R01.md) |
 | L1 | R02 | 2026-10-31 | What governs loss off product supports | Block Paige identity, node-row representation, exact ω-recurrence PROVED; amplification by per-node propagator MEASURED | [R02](directions/L1/R02.md) |
 | L1 | R03 | 2026-10-31 | A priori vs feedback; truncation vs row selection | Row-selection characterization PROVED; exact-coefficient growth and two-relation remedy MEASURED | [R03](directions/L1/R03.md) |
+| L3 | R01 | 2026-10-31 | L3-Q1 (frozen) | Literal reading trivial; exact reading via moment cone; overdetermined δ = 0 PROVED | [R01](directions/L3/R01.md) |
+| L3 | R02 | 2026-10-31 | Square-case rates | δ ≳ √ε necessary PROVED; rate theorem with condition (H) PROVED; Padua n = 2/3 CONDITIONAL | [R02](directions/L3/R02.md) |
+| L3 | R03 | 2026-10-31 | Checkerboard control, literature | (H) survey MEASURED; count-alone hypothesis refuted (MEASURED); literature confirmations | [R03](directions/L3/R03.md) |
 
 ## History
 
 - 2026-10-31: plan frozen before launch (orchestrator).
+- 2026-10-31 (L3 R01 scope decision, developer; to be checked by reconstruction and audit): read literally, L3-Q1 ("exact sections of μ′ equal (Ĥ_x, Ĥ_y) up to O(ε)") is trivially answered by μ′ = μ, δ = 0. L3 therefore answers the exact-representation reading (consistent ε-perturbed data represented exactly / with residual smaller than the perturbation). The frozen wording is preserved; both readings and their answers are recorded in theory file PD-T?…-300.
 - 2026-10-31 22:12: Benchmarks section updated per AC message (ordered nodes; checkerboard product-OP closed form pending external audit). Frozen questions unchanged.
 - 2026-10-31, Step 0 corrections (frozen questions not reworded; these notes govern their interpretation; sources: fulltext records LIT?…-101–162, notes records LIT?…-001–077):
   - HL SIMAX 2002 p. 1088 is an **observation**, not a conjecture: finite-precision behaviour "seems similar" to Lanczos, some loss of orthogonality among vectors of different cycles, "appears closely connected" to convergence of Ritz values of the square part of the section N_k of the normal operator N in the (N, N*) form, eq. (4.2). It mentions neither H_x/H_y separately nor data. That paper's window is 2k (its Thm 3.7); HL BIT Thm 2.3 (p. 397) gives ≤ 2k+1 for commuting symmetric (H, K), exact arithmetic only. O(M N^{3/2}) is not a published statement there (no flop count given).

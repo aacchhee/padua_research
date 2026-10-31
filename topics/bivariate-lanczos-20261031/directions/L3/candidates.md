@@ -78,7 +78,7 @@ Aliases: interior commutativity conditions; truncated Favard; graded commuting e
 
 ## IDEA?bivariate-lanczos-claude-305 — Quantitative Lin theorem for the nearly commuting computed pair (route (iv))
 
-Aliases: Lin's theorem; Kachkovskiy–Safarov √‖[A,B]‖ bound (attribution UNVERIFIED, record kachkovskiy-safarov-2016).
+Aliases: Lin's theorem; Kachkovskiy–Safarov √‖[A,B]‖ bound (attribution UNVERIFIED in R01; CONFIRMED in R03 from the arXiv fulltext via WebFetch: Introduction (1.3), dimension-free C, consequence of Thm 1.1 — see lit_reading.md; record kachkovskiy-safarov-2016 to be updated by the orchestrator).
 
 - Question / scope: obtain the backward measure from a nearby commuting pair.
 - Mechanism: almost commuting symmetric (Ĥ_x, Ĥ_y) ⇒ commuting (A′, B′) at distance f(‖[Ĥ_x, Ĥ_y]‖), joint spectrum near the nodes.
@@ -109,6 +109,27 @@ Aliases: same nodes, perturbed weights; δ = 0.
 - Closest registry entries: 017 (structured backward stability, "ill-posed as stated").
 - Separation: 017's ill-posedness concerns exact commutation of computed sections; here the sections need not commute (overdetermined) and the backward data are weights only.
 - Disposition: survived → PD-T?…-303(a) (PROVED), threshold ε < r(0) ≥ w_min σ_1.
+
+## IDEA?bivariate-lanczos-claude-309 — Quadratic-generator (Hankel) form of S_1 in the square case (R02)
+
+Aliases: p_C = Σ c_jk q_j q_k, C ⊥ Hankel; Hankel test Σ G_iA_iG_iᵀ ∈ Hankel.
+- Closest: IDEA 302 (H); seed 033; record bos-dmv-xu-2007 (two-term Padua generators, as reported).
+- Separation: turns (H) into an SDP with explicit generator gradients; falsifier (K5): span{p_C} ≠ S_1 numerically.
+- Kill criterion (before testing): K5 (R02 §1). Result: did not fire (Padua n ≤ 7, random n ≤ 6).
+- Disposition: survived → PD-T?…-309 (PROVED parts), PD-T?…-307 item 5 (MEASURED). Open: proof of S_1 = {p_C}.
+
+## IDEA?bivariate-lanczos-claude-310 — Closed-form certificate C1 = Σ_j (q_j² − q_{j−1}q_{j+1}) for all Padua n ≥ 3 (R02)
+
+- Kill criterion (before testing, K6): reject if λ_min(G_iᵀC1G_i) < 0 at some node for some n ∈ [3, 12].
+- Result: fired — min λ = −0.199 (n = 3) … −1.4e-5 (n = 12), negative for every n = 2..12 (log `r02_closed_form_C.log`).
+- Disposition: REJECTED; reason: failed (this explicit C does not certify PD Hessians; scope n = 2..12, Padua). No PD-N (single explicit trial; the deficit → 0 suggests a corrected C may work — R02 next question).
+
+## IDEA?bivariate-lanczos-claude-311 — "(H) is decided by the square count / checkerboard structure alone" (R03 control)
+
+- Hypothesis tested: all ordered square checkerboards behave like Padua (transition at n = 3).
+- Kill criterion (before testing): an ordered checkerboard family with (H) at some n ≥ 3 (t_D > 1e-6) kills it.
+- Result: fired — equispaced checkerboards satisfy (H) for n = 3, 4, 5 (t_D = 1.8e-3, 1.3e-4, 4.8e-6); graded for n = 3, 4 (PD-T?…-307 item 6, MEASURED).
+- Disposition: REJECTED; reason: refuted within the measured scope (numerical, MEASURED evidence only; no PD-N because the refuted statement was a working hypothesis, recorded here). Consequence: the Padua obstruction is a property of the Chebyshev–Lobatto distribution, not of the square count; δ(ε) in the square case is node-set dependent (√ε vs obstruction).
 
 ## Proposed obstruction rows for state/IDEAS.md (orchestrator to merge at PR preparation)
 

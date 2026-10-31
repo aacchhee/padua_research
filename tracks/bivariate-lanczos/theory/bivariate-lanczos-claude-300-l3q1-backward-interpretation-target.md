@@ -30,7 +30,10 @@ Overall status: OPEN (reading (G) open; reading (E) decided in the cases below w
 | (E) Padua n = 2 | CONDITIONAL (independent rerun of exact checker) | δ ≍ √ε; 306 |
 | (E) Padua n = 3 | CONDITIONAL (independent rerun of exact checker) | obstruction: no δ(ε) → 0; explicit family E = −ε ev_ζ; PD-N?…-301 |
 | (E) Padua n = 4..7; random square sets | MEASURED | robust failure of (H) numerically (obstruction regime) for Padua 4..7; random sets: (H) n ≤ 2, mixed n = 3, failure n ≥ 4; 307 |
+| (E) other square sets (ordered Harris–Simanek checkerboards) | MEASURED | node-set dependent: equispaced (H) n ≤ 5, graded n ≤ 4, sorted-uniform mixed; 307 item 6 (R03) |
 | (G) Greenbaum (loss-of-orthogonality) regime, both cases | OPEN | needs the L1 local relations; R01 next question |
+
+Literature context (R03, `directions/L3/lit_reading.md`, WebFetch readings): the quantitative Lin bound C‖[X,Y]‖^{1/2} is Kachkovskiy–Safarov (1.3) (confirmed); the two-matrix commuting-extension problem is "wide open" per Koiran §1.4 (confirmed); Greenbaum's 1D proof covers interval width √ε‖A‖ (as reported by Šimonová–Tichý; Greenbaum unread), the same order as the square-case (H) rate.
 
 ## Depends on
 
