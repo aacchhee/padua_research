@@ -59,7 +59,7 @@ Exact families with closed-form sparse recurrences: Padua points with cubature w
 
 ## ID allocation
 
-Provisional IDs `<NS>?bivariate-lanczos-claude-<nnn>`: literature 001–199 (fulltext-read records 101–199); IDEA seeds 001–099; direction-local ranges L1 100s, L2 200s, L3 300s, L4 400s, L5 500s for IDEA/PD-T/PD-N. Final IDs only at PR preparation via `topics/padua-batch-20261031/ALLOCATIONS.md`, shared with `codex/charter-unisolvence-20261031`.
+Provisional IDs `<NS>?bivariate-lanczos-claude-<nnn>`: literature 001–099 (notes baseline), 101–199 (fulltext-read records), 201–299 (online resolution pass), 301–399 (orchestrator/later records); IDEA seeds 001–099; direction-local ranges L1 100s, L2 200s, L3 300s, L4 400s, L5 500s for IDEA/PD-T/PD-N. Final IDs only at PR preparation via `topics/padua-batch-20261031/ALLOCATIONS.md`, shared with `codex/charter-unisolvence-20261031`.
 
 ## Round ledger
 

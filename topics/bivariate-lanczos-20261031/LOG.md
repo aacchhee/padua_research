@@ -90,6 +90,12 @@ Subagent effort is set from the agent definition and is not independently expose
 - Orchestrator read pp. 407–408, 412–413, 415–416, 418–419 of AC's copy (`1-s2.0-S0021904509001178-main.pdf`; scratchpad only). Record `literature/records/barrio-pena-sauer-2010.md` (LIT?…-301–303). INDEX/CORPUS rows deferred to consolidation (the online literature agent currently owns those files).
 - Impact: the "one relation per new polynomial" selection, the averaged all-relations alternative (their eq. (6)/Thm 8), the remark that the choice of variable affects rounding error, and the triangular-substitution error bound (eqs. (18)–(20)) are **known** in the monic-OP evaluation setting. PD-T?…-108's framing must cite BPS 2010 as closest predecessor; remaining separation rests on discrete-measure Lanczos vectors, window truncation, and the measured link to exponential orthogonality loss off product supports. Passed to the L1 developer and the L1 reconstructor.
 
+### Online literature resolution pass returned (2026-10-31)
+
+- Claude Sonnet 5.5 high (requested); 121 tool uses. 36 new statements LIT?…-201–236; 15 records updated, 2 created (`xu-tams-1994-operator`, `xu-tams-1994-blockjacobi`); INDEX/CORPUS rows updated; search log section "Online resolution pass 2026-10-31" (89 rows). All reading via WebFetch digests (locators not checked against page images; flagged per record).
+- Attributions: Koiran arXiv 2401.01302 §1.4 does call the two-matrix analogue "wide open" (exact commuting extensions of general pairs only) — plan attribution holds narrowly; Kachkovskiy–Safarov JAMS 29 (2016) eq. (1.3) confirmed (‖X−X′‖+‖Y−Y′‖ ≤ C‖[X,Y]‖^{1/2}, C universal, unspecified; also Davidson 1985 Cor. 4.5); Greenbaum 1989 metadata/abstract only — interval-width accounts conflict (√u / u^{1/4} / cubic factor), so no δ(ε) is taken from the literature; Simons Problem 2.19 read (extend Paige to block Lanczos). Xu block-Jacobi/Favard: Trans. AMS 343 (1994) 193–202 Thms 2.1/2.2, Cor. 2.3 (not 1993). Xu–Pitman: Padua ideal paper says Pitman RN 312 does not directly cover Padua — contradicts earlier attribution LIT?…-076 (both preserved). Degani–Schiff–Tannor read as 2004 preprint (Thm 2: N ≥ n + ½ max rank[A_i,A_j]; symmetric pair has a symmetric commuting extension of size 2n).
+- Plan ID ranges updated (LIT 201–299 online pass; 301–399 orchestrator records, e.g. BPS 2010 = 301–303).
+
 ## Runs needed
 
 (none yet; directions add exact commands)
