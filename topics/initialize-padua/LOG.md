@@ -1,7 +1,7 @@
 # Initialize Padua research
 
 - Branch: `codex/initialize-padua` · Base: `b2ec85f3fb2743a3b9292657fec9ac9da227d410` · Developer: Codex · Auditor: Claude
-- Stage: AUDIT · Next: `Claude (Opus 5.5 high): Continue codex/initialize-padua in aacchhee/padua_research; reaudit response-01.md, including the M1 Addendum A implementation and changed rules/templates.`
+- Stage: WORK · Next: `Codex (Sol 6.1 medium): Continue codex/initialize-padua in aacchhee/padua_research; answer audit-02.md in response-02.md.`
 - Claims: none; this topic initializes infrastructure only.
 - For the PR: initialize the protocol, state, literature database, ID conventions and templates; no scientific registrations.
 - Open for AC: scientific question and initial sources remain unspecified; audit-01 L5 (PD-N scope for non-mathematical rejections) and I2 (branch protection / squash-only) need AC decisions.
@@ -41,6 +41,14 @@
 - M2/M3/L2–L4/L6/L7/I1: aligned templates, reaudit/no-audit guards, allocation paths, cold storage fields and provenance. L1's transient stage row was removed from the scientific frontier. L5 and I2 remain explicit AC decisions; no repository settings changed.
 - Novelty: not applicable; this changes protocol/schema instructions only, with no scientific entries, IDs or priority claims.
 - Verification and limitations: recorded in response-01. Material protocol/template changes return to AUDIT; the PR remains draft pending Claude's focused reaudit.
+
+## 2026-10-31 — Claude, Opus 5.5 high (focused reaudit)
+
+- Rules reread and audited head: `73ec2bace241cb31b6c2ca9d155d736e86bd1b56` (rules changed in that commit); base `b2ec85f3fb2743a3b9292657fec9ac9da227d410` still equals `origin/main`.
+- Audit: [audit-02.md](audit-02.md). Verdict CHANGES REQUESTED (narrow). M1/Addendum A, M2, M3, L1–L4, L6, L7 and I1 were accepted; L5 and I2 remain correctly held for AC.
+- New: R1 (Medium) the minor-step aggregation can yield PARTIAL for an OPEN main statement, and PARTIAL vs OPEN for a preserved target is ambiguous; R2 (Medium) `PROOF_STATUS.md` has no disposition column, so a refuted claim keeps its old status; R3 (Low) the `Agent:` trailer of `73ec2ba` does not parse; I3 and I4 (Info).
+- Response verification reproduced: diff check passed, 33 links / 0 broken, audit-01 unchanged, `.github` absent.
+- Stage set to WORK. R1 and R2 are rule/registry-structure changes and return to AUDIT for a check limited to those diffs.
 
 ## Runs needed
 
