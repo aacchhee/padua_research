@@ -1,0 +1,19 @@
+{
+  "charter_source": "317a26597dedc9adc9cfc6a26fa00078df7d29e4",
+  "charter_squash": "8f1e61512afd38de8c06981689e2040b6915add7",
+  "mz_source": "6d10a82cf6fd6f7ef6fbe76e68133ccbcbe51994",
+  "mz_squash_exit": 1,
+  "conflicts": [
+    "ID_CROSSWALK.md",
+    "PAPER_MAP.md",
+    "PROOF_STATUS.md",
+    "literature/CORPUS.md",
+    "literature/INDEX.md",
+    "state/CURRENT.md",
+    "state/IDEAS.md",
+    "topics/README.md",
+    "topics/padua-batch-20261031/ALLOCATIONS.md",
+    "tracks/README.md"
+  ],
+  "scope": "Disposable local branch; no live branch or main mutation; unresolved conflicts are readiness work, not an approved integration."
+}

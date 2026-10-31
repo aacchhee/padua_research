@@ -1,6 +1,6 @@
 # Lattice-unisolvence campaign plan
 
-Stage WORK. Root is the orchestrator/developer; runtime model/effort metadata is not exposed. Assigned mathematical developers use gpt-6.1-sol xhigh, literature gpt-6.1-sol high, adversarial reconstruction gpt-6-astra xhigh. No ultra assignment.
+Stage AUDIT. Root is the orchestrator/developer; runtime model/effort metadata is not exposed. Assigned mathematical developers use gpt-6.1-sol xhigh, literature gpt-6.1-sol high, adversarial reconstruction gpt-6-astra xhigh. No ultra assignment.
 
 ## Authority and pinned starting state
 
@@ -27,8 +27,9 @@ Up to ten conceptual rounds per direction, extension to twenty only with written
 
 | Direction / round | Frozen question / command scope | Outcome | Next |
 |---|---|---|---|
-| C0 / launch | question above; bounds to be frozen before enumeration | not executed | counting developer |
-| C3 / launch | question above; consume explicit C0 catalogue | not executed | await catalogue |
+| C0 / rounds1–2 | bounded count catalogue; density/infinite-family count | CLOSED:5061trials,451count survivors, direct proofs | retained rows and C3 handoff |
+| C3 / rounds1–5 | exact rank; covers/projections; axis rectangles; Lobatto; isolated n2 | CLOSED:142survivor reps,213certificates, isolated axis factorization; broad target OPEN | Claude audit / precise future structural step |
+| C1 / rounds1–12 | adjacent mod4phases; row/Gram reductions; stability; all-degree phase completion | CLOSED at justified extended budget; universal contraction/log² OPEN | Claude audit / prove strictness or kernel bound |
 
 ## Evidence and completion
 
@@ -45,3 +46,11 @@ Exact checkers and small essential outputs may be committed within repository li
 ## C0 closure and C1 activation
 
 C0 closed after two conceptual rounds: finite catalogue + elementary density/infinite-six count and short-axis obstruction complete in its declared scope. No unresolved counting proof opening remains there; all omitted classes retained deferred. C3 structural/stability work continues. C1 is activated as the second substantive direction, with question frozen in directions/C1/launch.md before any run; developer ownership transfers from C0 to C1. Literature baseline and candidate-specific predecessor screen are already recorded. At no point are C0,C1,C3 substantively active together.
+
+## Scientific continuation checkpoints
+
+C3 closes its five-round route after exact layer/projection certificates, rectangle nonseparability tests, Lobatto sampling and a direct isolated n2 axis-factorization proof. Its naive fixed-coefficient continuation is already deficient or count-invalid at the next tested degrees, and the broad target remains OPEN. C1's initial symmetry obstruction is not used to erase its stable odd-degree or shifted-phase subsequences; those openings automatically continue through bounded higher-degree tests and analytic reductions, up to the ten-round budget. Every extension is frozen in the direction records before execution.
+
+## Justified C1 extension, frozen before execution
+
+After ten actual C1 rounds, a concrete omitted counting opening remains: phase1 (`i+j mod4 in{1,2}`) may fill the n≡0mod4 degrees excluded by the original phase0 count. The complete4-block/remainder count at n4 and the antipodal complement test are cheap decisive checks. Root therefore authorizes a justified extension to **at most12 C1 rounds**, within AC's maximum20: round11 count/symmetry and finite Chebyshev tests for this missing subsequence; round12 consolidate a single all-degree phase schedule if valid and identify its exact remaining proof obligation. This does not authorize new blind searches or a polylog claim. If the resulting target still needs the same unresolved contraction/inverse inequality and no new proof route is found, stop with that target OPEN rather than extending for more samples.

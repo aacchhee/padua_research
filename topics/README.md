@@ -10,3 +10,4 @@ Keep proposals, gate decisions, reports, audit-NN.md, response-NN.md and reprodu
 |---|---|---|
 | [charter-unisolvence-20261031](charter-unisolvence-20261031/LOG.md) | codex/charter-unisolvence-20261031; PR | First charter, literature baseline and bounded arbitrary-field checkerboard campaign |
 | [initialize-padua](initialize-padua/LOG.md) | Historical initialization record | Repository rules/templates and pre-merge audits |
+| [lattice-unisolvence-20261031](lattice-unisolvence-20261031/LOG.md) | codex/lattice-unisolvence-20261031; AUDIT | Stacked periodic-pattern count/rank/structure campaign; required Claude audit PENDING |

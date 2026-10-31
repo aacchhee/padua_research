@@ -14,7 +14,8 @@ import zipfile
 def identity(path, root):
     data = path.read_bytes()
     return {'path': str(path.relative_to(root)), 'bytes': len(data),
-            'sha256': hashlib.sha256(data).hexdigest()}
+            'sha256': hashlib.sha256(data).hexdigest(),
+            'git_blob': hashlib.sha1(b'blob ' + str(len(data)).encode() + b'\0' + data).hexdigest()}
 
 
 def main():
@@ -49,7 +50,8 @@ def main():
                 archive.write(path, str(path.relative_to(root)))
         data = args.archive.read_bytes()
         result['archive'] = {'staging_path': str(args.archive.resolve()), 'bytes': len(data),
-                             'sha256': hashlib.sha256(data).hexdigest()}
+                             'sha256': hashlib.sha256(data).hexdigest(),
+            'git_blob': hashlib.sha1(b'blob ' + str(len(data)).encode() + b'\0' + data).hexdigest()}
         (topic / 'cold-manifest.json').write_text(json.dumps(result, indent=2) + '\n')
     print(json.dumps(result, sort_keys=True))
 

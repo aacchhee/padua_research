@@ -122,3 +122,42 @@ Batch 11:
 - `"trivariate" "interpolation" "congruences"`
 
 The exact-modulus searches were dominated by unrelated lattice/congruence algebra, coding and spline results; those are not evidential predecessors. The less literal searches returned the already inspected LC/Bos/Harris families, Floater, and a trigonometric-lattice source. Added [Floater source29](records/floater-2017.md) (journal direct403, primary slides inspected) and [Sørevik–Nome source30](records/sorevik-nome-2016.md) (d-nb PDF429; primary Springer open-access HTML succeeds). No exact matching candidate theorem identified; this bounded screen does not prove novelty. See [candidate screen](candidate-screen.md).
+
+## C1 odd-degree and shifted-phase identification follow-up
+
+The orchestrator requested this bounded literature follow-up after reporting small odd-degree Chebyshev experiments and shifted phases. Those experiments were not rerun by this literature developer and retain their mathematical developers' own scope/status. Query numbering continues the41 queries above; numbers here are query IDs, separate from provisional source IDs.
+
+42. `"polynomial interpolation" "modulo 4"`
+43. `"Chebyshev" interpolation "four grids"`
+44. `"Lagrange" interpolation "quarter" Chebyshev`
+45. `"interpolation" "shifted parity" nodes`
+46. `bivariate total degree interpolation Chebyshev Lobatto nodes odd degree union grids`
+47. `Padua points generalized checkerboard four rectangular grids interpolation`
+48. `Lissajous Chebyshev interpolation shifted nodes modulo four`
+49. `quarter periodic bivariate polynomial interpolation nodes`
+50. `bivariate polynomial interpolation unions rectangular grids periodic patterns nodes`
+51. `"Chebyshev" "mod 4" "interpolation"`
+52. `"Padua" "mod 4"`
+53. `"interpolation" "four rectangular grids"`
+54. `"bivariate interpolation" "diagonal" Chebyshev nodes`
+55. `"Padua-like" "four" grids`
+56. `"Chebyshev" interpolation "stripes"`
+57. `"polynomial interpolation" "periodic pattern"`
+58. `"Chebyshev" "quarter-periodic"`
+59. `"polynomial interpolation" "union of four"`
+60. `"Lissajous" "modulo 4"`
+61. `"Padua" "odd" "antipodal" interpolation`
+62. `"Bivariate Lagrange interpolation" "non-degenerate" Lissajous arxiv`
+63. `Chebyshev interpolation nodes diagonal modulo4 Padua variants`
+64. `"polynomial interpolation" "multi-grid" total degree`
+65. `"Lagrange interpolation" "union" "four" Chebyshev`
+66. `"Caliari" "Computational aspects" "284" 2008`
+67. `"Erb" "Kaethner" "Ahlborg" "Buzug" "124" "2016" interpolation`
+
+Primary follow-up reading: [Caliari–De Marchi–Vianello2008, source31](records/caliari-demarchi-vianello-2008.md), all four odd/even Padua definitions and orientation changes; [Erb–Kaethner–Ahlborg–Buzug2016, source32](records/erb-kaethner-ahlborg-buzug-2016.md), nondegenerate signed-node simplification and interpolation space. Both reduce their displayed geometric node descriptions to two Cartesian parity blocks. No complete-paper reading claimed.
+
+Access details: `https://www.math.unipd.it/~marcov/pdf/PDcomp.pdf` succeeded; its direct journal page `https://www.sciencedirect.com/science/article/pii/S0377042707005614` returned403. `https://arxiv.org/pdf/1411.7589` succeeded. The2015 Lissajous survey `https://www2.math.ethz.ch/EMIS/journals/DRNA/pdf/erb_etal_10ypdpts.pdf` returned404 and its tcd mirror timed out. `https://www.research.unipd.it/retrieve/e14fb26e-15a6-3de1-e053-1705fe0ac030/2015-ErbKaethnerDenckerAlborg.pdf` initially exposed its primary introduction/phase convention but subsequent find operations returned403; its later sections were not inspected in this pass. No claim about eq11 or its interpolation theorem is taken from that inaccessible remainder.
+
+A newly surfaced2026 article, Nasri–Mezzanotte–Occorsio, [Extended interpolation on the square and a mixed interpolating sequence](https://link.springer.com/article/10.1007/s40314-025-03489-0), was screened through its primary abstract/introduction and definition of P_(m,m) in §2. It uses tensor products of univariate Jacobi-zero extended interpolation and a mixed sequence, rather than the supplied fixed total-degree mod4 subset. Full remainder and any more distant relation remain UNVERIFIED; no result is inherited from it.
+
+Outcome: no exact match to the odd-degree mod4 adjacent-sum family or shifted phases was identified. “Four Padua families,” a signed parametrization, or phase shifts in Lissajous notation alone are not an identification. The [candidate-screen addendum](candidate-screen.md#c1-addendum-odd-degree-and-shifted-phase-follow-up) states the precise limits; no universal absence or novelty conclusion.

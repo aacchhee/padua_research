@@ -13,3 +13,5 @@ Artifacts:
 - [Cyclic6 3D and adjacent-residue mod4 2D screen](../../literature/lattice-unisolvence/candidate-screen.md): candidate-specific searches and explicit equivalence kill tests. No exact matching theorem identified; novelty remains UNVERIFIED.
 
 No Git operations, shared-registry edits, theorem status upgrades, numerical runs, or third-party fulltext retention were performed by this developer. A surviving exact structural claim still needs candidate-specific independent adversarial reconstruction and any load-bearing source re-reading. This baseline does not authorize an acceptance decision.
+
+Final follow-up addendum: queries42–67and primary source records31–32are in the source ledger and candidate-screen addendum. The completed baseline therefore has67queries and22coverage-qualified records (20primary-paper excerpt records, one slides record and one abstract-only record), with no complete reading or novelty claim.

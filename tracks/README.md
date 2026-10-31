@@ -4,4 +4,11 @@
 |---|---|---|
 | [unisolvence](unisolvence/README.md) | Algebraic total-degree checkerboard interpolation over arbitrary fields, motivated by Padua sets | PD-T001–012, PD-N001; Claude audit-01 accepted mathematics; Stage PR |
 
-Track theories use global IDs and explicit assumptions/statuses. Negative results are scoped mechanisms; equivalent/abandoned ideas remain idea dispositions. No other scientific track is active.
+Track theories use global IDs and explicit assumptions/statuses. Negative results are scoped mechanisms; equivalent/abandoned ideas remain idea dispositions. Additional active tracks are recorded below.
+
+
+## Lattice extension
+
+| Track | Question | Results and stage |
+|---|---|---|
+| [lattice-unisolvence](lattice-unisolvence/README.md) | Periodic2D/3D total-degree interpolation beyond checkerboards | Provisional21theory records, direct proofs/measurements/OPEN targets separated; AUDIT, Claude PENDING |
