@@ -28,12 +28,14 @@ def main(names):
         x, y = P[:, 0].copy(), P[:, 1].copy()
         ns = degrees(nmax)
         print(f"== {name}: M={len(x)} nmax={nmax}", flush=True)
-        for mode in ('none', 'fullcgs2', 'oracle'):
-            Q, coef, tab, st = C.run(x, y, w, nmax, reorth=mode)
+        for mode in MODES:
+            orth = 'cgs2w' if mode.startswith('w2') else 'cgs'
+            reo = mode[3:] if mode.startswith('w2') else mode
+            Q, coef, tab, st = C.run(x, y, w, nmax, orth=orth, reorth=reo)
             recs = C.section_errors(Q, coef, tab, x, y, ns)
-            dr = C.drift(Q, P, w, ns) if mode != 'oracle' else [None] * len(ns)
+            dr = C.drift(Q, P, w, ns) if mode in ('none', 'fullcgs2') else [None] * len(ns)
             th = {'rot0.3': 0.3, 'rotpi4': np.pi / 4}.get(name, 0.0)
-            dr2 = C.drift(Q, P, w, ns, theta=th) if (th and mode != 'oracle') else [None] * len(ns)
+            dr2 = C.drift(Q, P, w, ns, theta=th) if (th and mode in ('none', 'fullcgs2')) else [None] * len(ns)
             nJ = np.abs(x).max()
             kill = {'F': [], 'tau': [], 'H': []}
             for r, d, d2 in zip(recs, dr, dr2):
@@ -59,5 +61,9 @@ def main(names):
         print(f"# {name} done in {time.time() - t0:.1f}s", flush=True)
 
 
+MODES = ('none', 'fullcgs2', 'oracle')
 if __name__ == '__main__':
-    main(sys.argv[1:] if len(sys.argv) > 1 else C.BENCH)
+    args = sys.argv[1:]
+    if args and args[0] == '--w2':
+        MODES = ('w2_none', 'w2_oracle'); args = args[1:]
+    main(args if args else C.BENCH)

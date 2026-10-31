@@ -83,3 +83,14 @@ Aliases: E3; "abs-dot scale"; coefficient-channel-aware ω-estimate.
 ### Amendment to IDEA?…-204 (drift), disclosed post hoc
 
 The smoke test on rotπ/4 showed the box-scaled Chebyshev reference has u·κ ≈ the measured drift at every degree (not discriminating there). Added after seeing it: (i) a reference-free certificate, the proved inequality max(θ_s, θ_{s+1}) ≥ δ_J(s)/(2‖J‖) where δ_J(s) = max column norm of (I − Π̂_{s+1})J Ŵ_s (J-defect of the computed spans) and θ_s the largest principal angle between Ŝ_s and S_s; (ii) for the rotated squares, a second reference in the unrotated frame (S_n is rotation invariant). H_drift is also counted as killed if δ_J(s)/(2‖J‖) > √u for a fully reorthogonalized run. The pre-registered rule is reported unchanged alongside.
+
+### IDEA?bivariate-lanczos-claude-206 — two-pass window (CGS2 restricted to the window)
+
+Written 2026-11-01T00:16:00+01:00, AFTER the R01 section suite showed that the semi-orthogonal F-section failures (rot0.3, triangle, annulus) coincide with growth of the local level μ (in-window Gram entries), and BEFORE any two-pass-window run.
+
+Aliases: "two-pass window"; CGS2-window; local-orthogonality repair; task item "two-pass window".
+
+- Mechanism: second CGS pass against the same window W_k (coefficients added to h). Proposition L (to be proved in R01): β_k|Ω_{W_k,k}| ≤ ‖Ω_{W_k}‖²‖h⁽¹⁾‖ + c·u‖Aq̂_p‖, so global semi-orthogonality implies local orthogonality without induction; single-pass CGS only gives β_k|Ω_{W,k}| ≤ ‖Ω_W‖‖h‖ + c·u‖Aq̂_p‖.
+- Closest entries: HL ORTH (MGS + conditional second pass, LIT?…-110/-118), Kahan–Parlett twice-is-enough (as reported in LIT?…-110), Carson et al. 2025 BCGS2 (abstract). Separation: applied to the truncated window only, as the hypothesis-supplier of the 2D Simon theorem; falsified as distinct if it is identical to HL ORTH's effect (HL ORTH's second pass is conditional).
+- Predictions / kill criteria (before running): (P1) with the two-pass window and no other reorthogonalization, μ(n) ≤ 10³u at every degree where L(n) ≤ √u on every benchmark — killed if violated; (P2) with the two-pass window plus oracle partial reorthogonalization at √u, e_F(n) ≤ u^{3/4} at every semi-orthogonal degree on every benchmark — killed if violated; (P3, J-part, expected to FAIL by the commutator obstruction) e_H(n) ≤ u^{3/4} at semi-orthogonal degrees — recorded, its failure supports the obstruction.
+- Disposition: pending.
