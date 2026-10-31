@@ -1,6 +1,6 @@
 # Padua research
 
-An independent research campaign owned by AC. The scientific question, scope, assumptions and success criteria will be set in the first research topic.
+An independent research campaign owned by AC on algebraic unisolvence of structured bivariate interpolation sets over arbitrary fields, motivated by Padua points. The charter is in state/CURRENT.md; the first campaign and exact scope are in tracks/unisolvence/README.md.
 
 ## Start here
 
@@ -25,7 +25,7 @@ An independent research campaign owned by AC. The scientific question, scope, as
 | `topics/` | Branch logs, proposals, audits, responses and reproducible checks |
 | `templates/` | Reusable records for ideas, results, sources, topics and cold storage |
 
-The registries start empty. No scientific result, source, negative result, numerical evidence, priority claim or subject-specific assumption is preloaded. IDs are local to this repository; external statements require explicit citations.
+The first campaign registers scoped proofs, measured checks, open targets and source dispositions. Claude audit-01 accepted the mathematical scope and classifications; response-01 records administrative resolutions and AC’s Windows-verification waiver. IDs are local; external statements retain explicit reading coverage, and no input-source proof or novelty claim is inherited.
 
 ## First research prompt
 

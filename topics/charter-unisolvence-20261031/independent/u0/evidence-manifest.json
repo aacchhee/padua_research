@@ -1,0 +1,382 @@
+{
+  "rules_base": "d36722823441dc40c6e19d69a174459348dd309c",
+  "committed_source_checkpoint_reported_by_root": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "numpy": "2.3.5",
+    "sympy": "1.14.0"
+  },
+  "independence": "Wrote reconstruction and exact checker before reading producer proofs/checker. Independent execution outputs have separate paths. Never modified producer or supplied sources.",
+  "source_inputs": [
+    {
+      "source": "/workspace/padua_research/topics/charter-unisolvence-20261031/sources/padua_unisolvence_inputs/code/ff_padua/discriminant_real.py",
+      "copy": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/discriminant_real.py",
+      "sha256": "1e0e65b6b07e2b1bc903b1f315f0ac7ffd5b1adb59416e98ec324709ea94869d",
+      "bytes": 1231,
+      "committed_copy": "/workspace/padua_research/topics/charter-unisolvence-20261031/input-code/ff_padua/discriminant_real.py"
+    },
+    {
+      "source": "/workspace/padua_research/topics/charter-unisolvence-20261031/sources/padua_unisolvence_inputs/code/ff_padua/fast_transform.py",
+      "copy": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/fast_transform.py",
+      "sha256": "10f7ef3b12e608ae49b45970ea8135ce9e5377fa44c83196a1367110ac89f28d",
+      "bytes": 6027,
+      "committed_copy": "/workspace/padua_research/topics/charter-unisolvence-20261031/input-code/ff_padua/fast_transform.py"
+    },
+    {
+      "source": "/workspace/padua_research/topics/charter-unisolvence-20261031/sources/padua_unisolvence_inputs/code/ff_padua/ffield.py",
+      "copy": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/ffield.py",
+      "sha256": "d62c66a9168d45ffa96fabed3cdf1d2656099e46edd4e8d369ebf4ed1f6d7faf",
+      "bytes": 5992,
+      "committed_copy": "/workspace/padua_research/topics/charter-unisolvence-20261031/input-code/ff_padua/ffield.py"
+    },
+    {
+      "source": "/workspace/padua_research/topics/charter-unisolvence-20261031/sources/padua_unisolvence_inputs/code/ff_padua/hs_ff.py",
+      "copy": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/hs_ff.py",
+      "sha256": "c3ed1d577c1db4bb78b8b9a0236651e61e69564a461283fa81963ebe3f23e098",
+      "bytes": 4397,
+      "committed_copy": "/workspace/padua_research/topics/charter-unisolvence-20261031/input-code/ff_padua/hs_ff.py"
+    },
+    {
+      "source": "/workspace/padua_research/topics/charter-unisolvence-20261031/sources/padua_unisolvence_inputs/code/ff_padua/padua_codes.py",
+      "copy": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/padua_codes.py",
+      "sha256": "05e5d71e69d04496d5219d8097799f24c03534dfcc1a3012d7337bcd4f40f997",
+      "bytes": 2482,
+      "committed_copy": "/workspace/padua_research/topics/charter-unisolvence-20261031/input-code/ff_padua/padua_codes.py"
+    },
+    {
+      "source": "/workspace/padua_research/topics/charter-unisolvence-20261031/sources/padua_unisolvence_inputs/code/ff_padua/padua_ff.py",
+      "copy": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/padua_ff.py",
+      "sha256": "8c627dfa3641289db3a187a45db1d0d8ee4a57f97783dc7da8b2a89978ad40df",
+      "bytes": 10467,
+      "committed_copy": "/workspace/padua_research/topics/charter-unisolvence-20261031/input-code/ff_padua/padua_ff.py"
+    },
+    {
+      "source": "/workspace/padua_research/topics/charter-unisolvence-20261031/sources/padua_unisolvence_inputs/code/ff_padua/quadratic_padua.py",
+      "copy": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/quadratic_padua.py",
+      "sha256": "1df666d6d7acdfd26d14d0f5f26cdbfb3190bfec76031efc43daaaac81f5dc4f",
+      "bytes": 2109,
+      "committed_copy": "/workspace/padua_research/topics/charter-unisolvence-20261031/input-code/ff_padua/quadratic_padua.py"
+    },
+    {
+      "source": "/workspace/padua_research/topics/charter-unisolvence-20261031/sources/padua_unisolvence_inputs/code/ff_padua/run_all.py",
+      "copy": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/run_all.py",
+      "sha256": "def7954b426e2a71b8ae9688e2b41c24f81d234e0e930a57168c60e5f7c3b95a",
+      "bytes": 606,
+      "committed_copy": "/workspace/padua_research/topics/charter-unisolvence-20261031/input-code/ff_padua/run_all.py"
+    }
+  ],
+  "source_child_statuses": [
+    {
+      "script": "padua_ff.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-I",
+        "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/padua_ff.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.8384573409999803
+    },
+    {
+      "script": "fast_transform.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-I",
+        "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/fast_transform.py"
+      ],
+      "exit_code": 0,
+      "seconds": 4.762887613999965
+    },
+    {
+      "script": "quadratic_padua.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-I",
+        "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/quadratic_padua.py"
+      ],
+      "exit_code": 0,
+      "seconds": 16.69108455600002
+    },
+    {
+      "script": "discriminant_real.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-I",
+        "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/discriminant_real.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.12507515000004332
+    },
+    {
+      "script": "hs_ff.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-I",
+        "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/hs_ff.py"
+      ],
+      "exit_code": 0,
+      "seconds": 12.37623750900002
+    },
+    {
+      "script": "padua_codes.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-I",
+        "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/padua_codes.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.72284420699998
+    }
+  ],
+  "driver_status": {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-I",
+      "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/run_all.py"
+    ],
+    "exit_code": 0,
+    "seconds": 39.61354586599998,
+    "caution": "The wrapper ignores child exit codes; source-run-statuses.json records separately executed child processes."
+  },
+  "own_exact_execution": {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/padua_research/topics/charter-unisolvence-20261031/independent/u0/exact_check.py"
+    ],
+    "stdout": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/exact-check.json",
+    "stderr": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/exact-check.stderr",
+    "exit_code": 0,
+    "seed": null
+  },
+  "producer_exact_execution": {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-I",
+      "/workspace/padua_research/topics/charter-unisolvence-20261031/directions/U0/verify_exact.py"
+    ],
+    "stdout": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/producer-verify-exact.stdout",
+    "stderr": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/producer-verify-exact.stderr",
+    "exit_code": 0,
+    "seed": null
+  },
+  "cold_artifacts": [
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/discriminant_real.py.status.json",
+      "bytes": 306,
+      "sha256": "b7c39aebb58a70e049e0344260d0d24bacc602fec1aff71294a9cbca969ec9b3"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/discriminant_real.py.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/discriminant_real.py.stdout",
+      "bytes": 1020,
+      "sha256": "e59218825f81892a34ca5110a6c4f0d8b957d5bbc35f4147559c467dfb2c8021"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/exact-check.json",
+      "bytes": 26225,
+      "sha256": "d8b23552b19c03c88c11c56648dd6a1182e651e26733d9e4eebd99b64c37a0c9"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/exact-check.stderr",
+      "bytes": 36,
+      "sha256": "eca574c74e3fb48e51742b1a765205e5110e160a23b99d354565011fa2e42ce3"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/fast_transform.py.status.json",
+      "bytes": 298,
+      "sha256": "3aa4a30b4ad38afe71fc8e021cd3bd03be61f05b78cfd7fbd27a6fcf0d64769e"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/fast_transform.py.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/fast_transform.py.stdout",
+      "bytes": 2506,
+      "sha256": "354b6167872696daeabdd93d551d3540832f8e2966627516337e95ac208e67ed"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/hs_ff.py.status.json",
+      "bytes": 280,
+      "sha256": "e48af9a605b5d151e3c0ac78c412256e8f4264f64d2fd8706d5a1910bbae5dc7"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/hs_ff.py.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/hs_ff.py.stdout",
+      "bytes": 2469,
+      "sha256": "0e07fc5ff08952688a93bb24005dfffe792b289e20343752b0958e17992de2dc"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/padua_codes.py.status.json",
+      "bytes": 291,
+      "sha256": "0c179460b5f12968dc37e64b5b06e1e2b83aae83c09326839a309a90c5106776"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/padua_codes.py.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/padua_codes.py.stdout",
+      "bytes": 1421,
+      "sha256": "a8b2da53888c893c8a2e0aef43b2d49d5f54c1baf7a028d3a513a85e7b41a744"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/padua_ff.py.status.json",
+      "bytes": 287,
+      "sha256": "aa0fc2d3bc29cf55e27cd0562982e13c9bb90c306e75d2343d95fda9294305c1"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/padua_ff.py.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/padua_ff.py.stdout",
+      "bytes": 12539,
+      "sha256": "edd514e29c1691ba3142dcd2209a158f596ac3a7e25cea5fdf99522aa080b563"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/producer-verify-exact.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/producer-verify-exact.stdout",
+      "bytes": 1802,
+      "sha256": "b8ec4733f41e1683f4c2a0dc5100a0047e416faefd4616fb73e45b02ff3ec228"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/quadratic_padua.py.status.json",
+      "bytes": 300,
+      "sha256": "1cc712d7abf95697856109eeaac940c3c9882222a97cd6932b31954f0bd06494"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/quadratic_padua.py.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/quadratic_padua.py.stdout",
+      "bytes": 1606,
+      "sha256": "3dbc20f0e415cf12ca88dad998796affb4644cdafc078009836dabdba0562ce4"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/run_all.py.status.json",
+      "bytes": 382,
+      "sha256": "273fd678f1ef34e3f18c644bc27dc7faa66127e271932a969ca383fc2496547d"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/run_all.py.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/run_all.py.stdout",
+      "bytes": 2369,
+      "sha256": "dce17396c4267c1f8e70cd3051f371500900134c8f08d6c5563d448f97921820"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/__pycache__/ffield.cpython-312.pyc",
+      "bytes": 13736,
+      "sha256": "cd6e073fbde5b7b695a2f64ac3dc86ab6e06b52a8b3fd591ecc7da54fee1f142"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/__pycache__/padua_ff.cpython-312.pyc",
+      "bytes": 21363,
+      "sha256": "412b01b795836045a49aecacc161824b3ad21495469c6e7082e8f7f0e30359f9"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/discriminant_real.log",
+      "bytes": 1020,
+      "sha256": "e59218825f81892a34ca5110a6c4f0d8b957d5bbc35f4147559c467dfb2c8021"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/discriminant_real.py",
+      "bytes": 1231,
+      "sha256": "1e0e65b6b07e2b1bc903b1f315f0ac7ffd5b1adb59416e98ec324709ea94869d"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/fast_transform.log",
+      "bytes": 2506,
+      "sha256": "64413af46d6ca1004b0d0cc8f6b1829836e076d88d879beb84b854a942825013"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/fast_transform.py",
+      "bytes": 6027,
+      "sha256": "10f7ef3b12e608ae49b45970ea8135ce9e5377fa44c83196a1367110ac89f28d"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/ffield.py",
+      "bytes": 5992,
+      "sha256": "d62c66a9168d45ffa96fabed3cdf1d2656099e46edd4e8d369ebf4ed1f6d7faf"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/hs_ff.log",
+      "bytes": 2469,
+      "sha256": "0e07fc5ff08952688a93bb24005dfffe792b289e20343752b0958e17992de2dc"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/hs_ff.py",
+      "bytes": 4397,
+      "sha256": "c3ed1d577c1db4bb78b8b9a0236651e61e69564a461283fa81963ebe3f23e098"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/padua_codes.log",
+      "bytes": 1421,
+      "sha256": "a8b2da53888c893c8a2e0aef43b2d49d5f54c1baf7a028d3a513a85e7b41a744"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/padua_codes.py",
+      "bytes": 2482,
+      "sha256": "05e5d71e69d04496d5219d8097799f24c03534dfcc1a3012d7337bcd4f40f997"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/padua_ff.log",
+      "bytes": 12539,
+      "sha256": "edd514e29c1691ba3142dcd2209a158f596ac3a7e25cea5fdf99522aa080b563"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/padua_ff.py",
+      "bytes": 10467,
+      "sha256": "8c627dfa3641289db3a187a45db1d0d8ee4a57f97783dc7da8b2a89978ad40df"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/quadratic_padua.log",
+      "bytes": 1606,
+      "sha256": "3dbc20f0e415cf12ca88dad998796affb4644cdafc078009836dabdba0562ce4"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/quadratic_padua.py",
+      "bytes": 2109,
+      "sha256": "1df666d6d7acdfd26d14d0f5f26cdbfb3190bfec76031efc43daaaac81f5dc4f"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-copy/run_all.py",
+      "bytes": 606,
+      "sha256": "def7954b426e2a71b8ae9688e2b41c24f81d234e0e930a57168c60e5f7c3b95a"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-manifest.json",
+      "bytes": 3153,
+      "sha256": "609468c63a50ebaf668b590c21bd3e5c4852dbd016dacfcf60b2e25f62af29f9"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/source-run-statuses.json",
+      "bytes": 1891,
+      "sha256": "f6b9fe6276d48c136173d7503acae905462a51b7894f4c01dcbac6c8a8dd5043"
+    }
+  ],
+  "retention": "Keep staged Padua cold outputs; final archival delivery to AC Windows destination is pending. Paths are cloud-local, not delivered Windows files.",
+  "retrieval": "Read each local absolute path; verify SHA256 and byte count. Recreate inputs byte-identically from committed input-code/ff_padua and commands.",
+  "trusted_dependencies": "Python exact integers; supplied NumPy int64 distances within safe range; SymPy for hs symbolic output only; float logdet remains numerical."
+}

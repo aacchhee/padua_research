@@ -1,0 +1,1 @@
+{"artifacts_verified": 33, "child_statuses_zero": 6, "exact_checker_rows": 10, "manifest_sha256": "92e0239d6c5b5077920714ab273f0b32c76a1a6890fcbe3551945067e64108d3", "result": "PASS", "source_scripts_verified": 8}

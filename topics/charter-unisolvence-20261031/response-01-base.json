@@ -1,0 +1,44 @@
+{
+  "rules_read_at": "3bd9d4e8e7817eaf0abd5b7a750ea77eb8101342",
+  "heads_at_reconciliation": {
+    "main": "d36722823441dc40c6e19d69a174459348dd309c",
+    "codex/charter-unisolvence-20261031": "3bd9d4e8e7817eaf0abd5b7a750ea77eb8101342",
+    "codex/mz-constants-20261031": "fdf0648cbaa9fb722c611d709e638de7dfe86368",
+    "claude/bivariate-lanczos-20261031": "6673669103d59c4a955071dd3301408604413ed8",
+    "claude/programme-ideas-20261031": "a02bc357e5f0eed479f7020b85fecc57fda9b47f"
+  },
+  "batch_ledger_sources": [
+    {
+      "branch": "codex/mz-constants-20261031",
+      "commit": "fdf0648cbaa9fb722c611d709e638de7dfe86368",
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "sha256": "d797442980d524346846dc4bebdf46483f022e0fcd53d0bf7fd5a63134de2312",
+      "git_blob": "ebe7237c075633ef5d1caa1cc5f4ef4cc36df9ca"
+    },
+    {
+      "branch": "claude/programme-ideas-20261031",
+      "commit": "a02bc357e5f0eed479f7020b85fecc57fda9b47f",
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "sha256": "5a79ae39f147e5614041b4b8bf733c3b533d99787c481c8f1f721a085b62b6b0",
+      "git_blob": "529a15c95f54f83c003e7b1389aecf553236ab04"
+    }
+  ],
+  "open_prs_observed": [
+    {
+      "number": 2,
+      "branch": "codex/charter-unisolvence-20261031",
+      "draft": true
+    },
+    {
+      "number": 3,
+      "branch": "codex/mz-constants-20261031",
+      "draft": true
+    }
+  ],
+  "final_readiness_refresh": {
+    "main": "d36722823441dc40c6e19d69a174459348dd309c",
+    "charter_remote": "3bd9d4e8e7817eaf0abd5b7a750ea77eb8101342",
+    "mz_remote": "6d10a82cf6fd6f7ef6fbe76e68133ccbcbe51994",
+    "mz_ledger_diff_from_pinned_fdf0648": "empty; same source blob and reservations"
+  }
+}

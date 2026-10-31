@@ -1,0 +1,57 @@
+[
+  {
+    "path": "/workspace/padua_research/theory/unisolvence/u0/code-distances.md",
+    "sha256": "a6008d7b5d81b7f7525fc7f0d7aae4e512be6d7e6387d97e400f515ded6326f7",
+    "bytes": 3604
+  },
+  {
+    "path": "/workspace/padua_research/theory/unisolvence/u0/code-structure.md",
+    "sha256": "5e4ebdee93aaca6fd8b184ffc19dc97a7d1647e60518eff1876ebb217b7e8bef",
+    "bytes": 3405
+  },
+  {
+    "path": "/workspace/padua_research/theory/unisolvence/u0/discriminant.md",
+    "sha256": "78f4054bccd0d0e8ffb72f93fe6ffe824828b5bf35706298789f9fe5973fb4c4",
+    "bytes": 4130
+  },
+  {
+    "path": "/workspace/padua_research/theory/unisolvence/u0/gram-unisolvence.md",
+    "sha256": "9c939744c725adcff630ef503f610a50b2295d0d86c292c8a96b111cc433ffdd",
+    "bytes": 5044
+  },
+  {
+    "path": "/workspace/padua_research/theory/unisolvence/u0/measurements.md",
+    "sha256": "7e078ec0cdb20ff48937d1629f1af8533155c91a5b13adbbec1c99a7049686eb",
+    "bytes": 4242
+  },
+  {
+    "path": "/workspace/padua_research/theory/unisolvence/u0/open-targets.md",
+    "sha256": "ed402e6751ebb787459ead324a7b046d4c722ea16a1197a71e09dc4a907ab8a4",
+    "bytes": 3653
+  },
+  {
+    "path": "/workspace/padua_research/theory/unisolvence/u0/quadratic-character.md",
+    "sha256": "1f742b41cb92e46c7dffd1e19ea70ea81d30bfdf950ed8cab8ad985a3ef8cc48",
+    "bytes": 4145
+  },
+  {
+    "path": "/workspace/padua_research/theory/unisolvence/u0/rationality.md",
+    "sha256": "271899708ebd4dc693e8bd0e513c4074242554246e1edad741a6de451f21b5de",
+    "bytes": 4230
+  },
+  {
+    "path": "/workspace/padua_research/topics/charter-unisolvence-20261031/directions/U0/check_evidence.py",
+    "sha256": "d3cbd0d171d79edc3945b4b180cb226d6c9e037a9a1236d08d9ca1606189c5ab",
+    "bytes": 1944
+  },
+  {
+    "path": "/workspace/padua_research/topics/charter-unisolvence-20261031/directions/U0/replay_source.py",
+    "sha256": "2e72bbf80e157edabcaa99debfa8b2e97de55dbf184c9323a61ab2ff8b593cb5",
+    "bytes": 2065
+  },
+  {
+    "path": "/workspace/padua_research/topics/charter-unisolvence-20261031/directions/U0/verify_exact.py",
+    "sha256": "f1120a41235c881fe67d77afe8d5ae2c8b0e41fe2ea8d3e9b5566bc0d37eb462",
+    "bytes": 6336
+  }
+]

@@ -1,0 +1,1548 @@
+{
+ "checker": "claude-audit-01 check_padua.py",
+ "python": "3.13.18",
+ "numpy": "2.3.5",
+ "checker_sha256": "1bb4ebf57632f2823069e04e7b8133b36671efe6855474a3be72ff579607e4cc",
+ "gf_sha256": "ca0d134aafd7ef989b962f77ff1df645ac2a148ba8d01c5902a416e6d72f14e4",
+ "padua_field_cases": [
+  {
+   "q": 3,
+   "n": 1,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 5,
+   "n": 1,
+   "good_char": true,
+   "rational": true,
+   "signs": "++",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 5,
+   "n": 2,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 5,
+   "n": 3,
+   "good_char": true,
+   "rational": false,
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 7,
+   "n": 1,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 7,
+   "n": 2,
+   "good_char": true,
+   "rational": true,
+   "signs": "-+",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 7,
+   "n": 3,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 9,
+   "n": 1,
+   "good_char": true,
+   "rational": true,
+   "signs": "++",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 9,
+   "n": 4,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 11,
+   "n": 1,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 11,
+   "n": 2,
+   "good_char": true,
+   "rational": true,
+   "signs": "--",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 11,
+   "n": 3,
+   "good_char": true,
+   "rational": false,
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 11,
+   "n": 4,
+   "good_char": true,
+   "rational": false,
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 11,
+   "n": 5,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 13,
+   "n": 1,
+   "good_char": true,
+   "rational": true,
+   "signs": "++",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 13,
+   "n": 2,
+   "good_char": true,
+   "rational": true,
+   "signs": "++",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 13,
+   "n": 3,
+   "good_char": true,
+   "rational": false,
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 13,
+   "n": 6,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 17,
+   "n": 1,
+   "good_char": true,
+   "rational": true,
+   "signs": "++",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 17,
+   "n": 2,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 17,
+   "n": 3,
+   "good_char": true,
+   "rational": true,
+   "signs": "-+",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 17,
+   "n": 8,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 19,
+   "n": 1,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 19,
+   "n": 2,
+   "good_char": true,
+   "rational": true,
+   "signs": "-+",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 19,
+   "n": 3,
+   "good_char": true,
+   "rational": false,
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 19,
+   "n": 4,
+   "good_char": true,
+   "rational": false,
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 19,
+   "n": 5,
+   "good_char": true,
+   "rational": false,
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 19,
+   "n": 9,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": true
+  },
+  {
+   "q": 23,
+   "n": 1,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 23,
+   "n": 2,
+   "good_char": true,
+   "rational": true,
+   "signs": "--",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 23,
+   "n": 3,
+   "good_char": true,
+   "rational": true,
+   "signs": "--",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 23,
+   "n": 11,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": true
+  },
+  {
+   "q": 25,
+   "n": 1,
+   "good_char": true,
+   "rational": true,
+   "signs": "++",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 25,
+   "n": 2,
+   "good_char": true,
+   "rational": true,
+   "signs": "++",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 25,
+   "n": 3,
+   "good_char": true,
+   "rational": true,
+   "signs": "++",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 25,
+   "n": 12,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": true
+  },
+  {
+   "q": 27,
+   "n": 1,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 27,
+   "n": 13,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": false
+  },
+  {
+   "q": 29,
+   "n": 1,
+   "good_char": true,
+   "rational": true,
+   "signs": "++",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 29,
+   "n": 2,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 29,
+   "n": 3,
+   "good_char": true,
+   "rational": false,
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 29,
+   "n": 4,
+   "good_char": true,
+   "rational": false,
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 29,
+   "n": 5,
+   "good_char": true,
+   "rational": false,
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 29,
+   "n": 6,
+   "good_char": true,
+   "rational": false,
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 29,
+   "n": 14,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": false
+  },
+  {
+   "q": 31,
+   "n": 1,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 31,
+   "n": 2,
+   "good_char": true,
+   "rational": true,
+   "signs": "-+",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 31,
+   "n": 3,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 31,
+   "n": 4,
+   "good_char": true,
+   "rational": true,
+   "signs": "-+",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 31,
+   "n": 5,
+   "good_char": true,
+   "rational": false,
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 31,
+   "n": 15,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": false
+  },
+  {
+   "q": 37,
+   "n": 1,
+   "good_char": true,
+   "rational": true,
+   "signs": "++",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 37,
+   "n": 2,
+   "good_char": true,
+   "rational": true,
+   "signs": "++",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 37,
+   "n": 3,
+   "good_char": true,
+   "rational": false,
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 37,
+   "n": 18,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": false
+  },
+  {
+   "q": 41,
+   "n": 1,
+   "good_char": true,
+   "rational": true,
+   "signs": "++",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 41,
+   "n": 2,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 41,
+   "n": 3,
+   "good_char": true,
+   "rational": true,
+   "signs": "-+",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 41,
+   "n": 4,
+   "good_char": true,
+   "rational": true,
+   "signs": "++",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 41,
+   "n": 5,
+   "good_char": true,
+   "rational": false,
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 41,
+   "n": 6,
+   "good_char": true,
+   "rational": false,
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 41,
+   "n": 7,
+   "good_char": true,
+   "rational": false,
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 41,
+   "n": 14,
+   "good_char": true,
+   "rational": false,
+   "moments_checked": false
+  },
+  {
+   "q": 41,
+   "n": 20,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": false
+  },
+  {
+   "q": 43,
+   "n": 1,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 43,
+   "n": 2,
+   "good_char": true,
+   "rational": true,
+   "signs": "-+",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 43,
+   "n": 3,
+   "good_char": true,
+   "rational": false,
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 43,
+   "n": 6,
+   "good_char": true,
+   "rational": false,
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 43,
+   "n": 11,
+   "good_char": true,
+   "rational": false,
+   "moments_checked": true
+  },
+  {
+   "q": 43,
+   "n": 21,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": false
+  },
+  {
+   "q": 47,
+   "n": 1,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 47,
+   "n": 2,
+   "good_char": true,
+   "rational": true,
+   "signs": "--",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 47,
+   "n": 3,
+   "good_char": true,
+   "rational": true,
+   "signs": "--",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 47,
+   "n": 23,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": false
+  },
+  {
+   "q": 49,
+   "n": 1,
+   "good_char": true,
+   "rational": true,
+   "signs": "++",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 49,
+   "n": 2,
+   "good_char": true,
+   "rational": true,
+   "signs": "++",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 49,
+   "n": 3,
+   "good_char": true,
+   "rational": true,
+   "signs": "++",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 49,
+   "n": 4,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 49,
+   "n": 5,
+   "good_char": true,
+   "rational": true,
+   "signs": "-+",
+   "moments_checked": true,
+   "gram_checked": true,
+   "dickson_det_checked": true
+  },
+  {
+   "q": 49,
+   "n": 15,
+   "good_char": true,
+   "rational": false,
+   "moments_checked": false
+  },
+  {
+   "q": 49,
+   "n": 24,
+   "good_char": true,
+   "rational": true,
+   "signs": "+-",
+   "moments_checked": false
+  }
+ ],
+ "rational_cases": 60,
+ "nonrational_in_Fq2_cases": 21,
+ "bad_char_reductions_singular": [
+  {
+   "p": 2,
+   "n": 1,
+   "field": "GF(2^1)",
+   "det": 0
+  },
+  {
+   "p": 2,
+   "n": 2,
+   "field": "GF(2^2)",
+   "det": 0
+  },
+  {
+   "p": 3,
+   "n": 2,
+   "field": "GF(3^2)",
+   "det": 0
+  },
+  {
+   "p": 2,
+   "n": 3,
+   "field": "GF(2^2)",
+   "det": 0
+  },
+  {
+   "p": 3,
+   "n": 3,
+   "field": "GF(3^2)",
+   "det": 0
+  },
+  {
+   "p": 2,
+   "n": 4,
+   "field": "GF(2^4)",
+   "det": 0
+  },
+  {
+   "p": 5,
+   "n": 4,
+   "field": "GF(5^2)",
+   "det": 0
+  },
+  {
+   "p": 2,
+   "n": 5,
+   "field": "GF(2^4)",
+   "det": 0
+  },
+  {
+   "p": 3,
+   "n": 5,
+   "field": "GF(3^4)",
+   "det": 0
+  },
+  {
+   "p": 5,
+   "n": 5,
+   "field": "GF(5^2)",
+   "det": 0
+  },
+  {
+   "p": 2,
+   "n": 6,
+   "field": "GF(2^6)",
+   "det": 0
+  },
+  {
+   "p": 3,
+   "n": 6,
+   "field": "GF(3^6)",
+   "det": 0
+  },
+  {
+   "p": 7,
+   "n": 6,
+   "field": "GF(7^2)",
+   "det": 0
+  },
+  {
+   "p": 2,
+   "n": 7,
+   "field": "GF(2^3)",
+   "det": 0
+  },
+  {
+   "p": 7,
+   "n": 7,
+   "field": "GF(7^2)",
+   "det": 0
+  },
+  {
+   "p": 2,
+   "n": 8,
+   "field": "GF(2^6)",
+   "det": 0
+  },
+  {
+   "p": 3,
+   "n": 8,
+   "field": "GF(3^4)",
+   "det": 0
+  }
+ ],
+ "quadratic_character_cases": [
+  {
+   "q": 3,
+   "n": 1,
+   "points": 3,
+   "description_equal": true
+  },
+  {
+   "q": 5,
+   "n": 2,
+   "points": 6,
+   "description_equal": true
+  },
+  {
+   "q": 7,
+   "n": 3,
+   "points": 10,
+   "description_equal": true
+  },
+  {
+   "q": 9,
+   "n": 4,
+   "points": 15,
+   "description_equal": true
+  },
+  {
+   "q": 11,
+   "n": 5,
+   "points": 21,
+   "description_equal": true
+  },
+  {
+   "q": 13,
+   "n": 6,
+   "points": 28,
+   "description_equal": true
+  },
+  {
+   "q": 17,
+   "n": 8,
+   "points": 45,
+   "description_equal": true
+  },
+  {
+   "q": 19,
+   "n": 9,
+   "points": 55,
+   "description_equal": true
+  },
+  {
+   "q": 23,
+   "n": 11,
+   "points": 78,
+   "description_equal": true
+  },
+  {
+   "q": 25,
+   "n": 12,
+   "points": 91,
+   "description_equal": true
+  },
+  {
+   "q": 27,
+   "n": 13,
+   "points": 105,
+   "description_equal": true
+  },
+  {
+   "q": 29,
+   "n": 14,
+   "points": 120,
+   "description_equal": true
+  },
+  {
+   "q": 31,
+   "n": 15,
+   "points": 136,
+   "description_equal": true
+  },
+  {
+   "q": 37,
+   "n": 18,
+   "points": 190,
+   "description_equal": true
+  },
+  {
+   "q": 41,
+   "n": 20,
+   "points": 231,
+   "description_equal": true
+  },
+  {
+   "q": 43,
+   "n": 21,
+   "points": 253,
+   "description_equal": true
+  },
+  {
+   "q": 47,
+   "n": 23,
+   "points": 300,
+   "description_equal": true
+  },
+  {
+   "q": 49,
+   "n": 24,
+   "points": 325,
+   "description_equal": true
+  }
+ ],
+ "code_cases": [
+  {
+   "q": 5,
+   "n": 2,
+   "k": 0,
+   "N": 6,
+   "K": 1,
+   "lower_bound": 6,
+   "min_distance": 6,
+   "projective_messages": 1
+  },
+  {
+   "q": 5,
+   "n": 2,
+   "k": 1,
+   "N": 6,
+   "K": 3,
+   "lower_bound": 3,
+   "min_distance": 3,
+   "projective_messages": 31
+  },
+  {
+   "q": 5,
+   "n": 2,
+   "k": 2,
+   "N": 6,
+   "K": 6,
+   "lower_bound": 1,
+   "min_distance": 1,
+   "projective_messages": 3906
+  },
+  {
+   "q": 7,
+   "n": 3,
+   "k": 0,
+   "N": 10,
+   "K": 1,
+   "lower_bound": 10,
+   "min_distance": 10,
+   "projective_messages": 1
+  },
+  {
+   "q": 7,
+   "n": 3,
+   "k": 1,
+   "N": 10,
+   "K": 3,
+   "lower_bound": 6,
+   "min_distance": 7,
+   "projective_messages": 57
+  },
+  {
+   "q": 7,
+   "n": 3,
+   "k": 2,
+   "N": 10,
+   "K": 6,
+   "lower_bound": 3,
+   "min_distance": 4,
+   "projective_messages": 19608
+  },
+  {
+   "q": 7,
+   "n": 3,
+   "k": 3,
+   "N": 10,
+   "K": 10,
+   "lower_bound": 1
+  },
+  {
+   "q": 7,
+   "n": 2,
+   "k": 0,
+   "N": 6,
+   "K": 1,
+   "lower_bound": 6,
+   "min_distance": 6,
+   "projective_messages": 1
+  },
+  {
+   "q": 7,
+   "n": 2,
+   "k": 1,
+   "N": 6,
+   "K": 3,
+   "lower_bound": 3,
+   "min_distance": 4,
+   "projective_messages": 57
+  },
+  {
+   "q": 7,
+   "n": 2,
+   "k": 2,
+   "N": 6,
+   "K": 6,
+   "lower_bound": 1,
+   "min_distance": 1,
+   "projective_messages": 19608
+  },
+  {
+   "q": 7,
+   "n": 1,
+   "k": 0,
+   "N": 3,
+   "K": 1,
+   "lower_bound": 3,
+   "min_distance": 3,
+   "projective_messages": 1
+  },
+  {
+   "q": 7,
+   "n": 1,
+   "k": 1,
+   "N": 3,
+   "K": 3,
+   "lower_bound": 1,
+   "min_distance": 1,
+   "projective_messages": 57
+  },
+  {
+   "q": 9,
+   "n": 4,
+   "k": 0,
+   "N": 15,
+   "K": 1,
+   "lower_bound": 15,
+   "min_distance": 15,
+   "projective_messages": 1
+  },
+  {
+   "q": 9,
+   "n": 4,
+   "k": 1,
+   "N": 15,
+   "K": 3,
+   "lower_bound": 10,
+   "min_distance": 11,
+   "projective_messages": 91
+  },
+  {
+   "q": 9,
+   "n": 4,
+   "k": 2,
+   "N": 15,
+   "K": 6,
+   "lower_bound": 6,
+   "min_distance": 7,
+   "projective_messages": 66430
+  },
+  {
+   "q": 9,
+   "n": 4,
+   "k": 3,
+   "N": 15,
+   "K": 10,
+   "lower_bound": 3
+  },
+  {
+   "q": 9,
+   "n": 4,
+   "k": 4,
+   "N": 15,
+   "K": 15,
+   "lower_bound": 1
+  },
+  {
+   "q": 11,
+   "n": 5,
+   "k": 0,
+   "N": 21,
+   "K": 1,
+   "lower_bound": 21,
+   "min_distance": 21,
+   "projective_messages": 1
+  },
+  {
+   "q": 11,
+   "n": 5,
+   "k": 1,
+   "N": 21,
+   "K": 3,
+   "lower_bound": 15,
+   "min_distance": 17,
+   "projective_messages": 133
+  },
+  {
+   "q": 11,
+   "n": 5,
+   "k": 2,
+   "N": 21,
+   "K": 6,
+   "lower_bound": 10,
+   "min_distance": 13,
+   "projective_messages": 177156
+  },
+  {
+   "q": 11,
+   "n": 5,
+   "k": 3,
+   "N": 21,
+   "K": 10,
+   "lower_bound": 6
+  },
+  {
+   "q": 11,
+   "n": 5,
+   "k": 4,
+   "N": 21,
+   "K": 15,
+   "lower_bound": 3
+  },
+  {
+   "q": 11,
+   "n": 5,
+   "k": 5,
+   "N": 21,
+   "K": 21,
+   "lower_bound": 1
+  },
+  {
+   "q": 13,
+   "n": 6,
+   "k": 0,
+   "N": 28,
+   "K": 1,
+   "lower_bound": 28,
+   "min_distance": 28,
+   "projective_messages": 1
+  },
+  {
+   "q": 13,
+   "n": 6,
+   "k": 1,
+   "N": 28,
+   "K": 3,
+   "lower_bound": 21,
+   "min_distance": 23,
+   "projective_messages": 183
+  },
+  {
+   "q": 13,
+   "n": 6,
+   "k": 2,
+   "N": 28,
+   "K": 6,
+   "lower_bound": 15,
+   "min_distance": 18,
+   "projective_messages": 402234
+  },
+  {
+   "q": 13,
+   "n": 6,
+   "k": 3,
+   "N": 28,
+   "K": 10,
+   "lower_bound": 10
+  },
+  {
+   "q": 13,
+   "n": 6,
+   "k": 4,
+   "N": 28,
+   "K": 15,
+   "lower_bound": 6
+  },
+  {
+   "q": 13,
+   "n": 6,
+   "k": 5,
+   "N": 28,
+   "K": 21,
+   "lower_bound": 3
+  },
+  {
+   "q": 13,
+   "n": 6,
+   "k": 6,
+   "N": 28,
+   "K": 28,
+   "lower_bound": 1
+  },
+  {
+   "q": 17,
+   "n": 8,
+   "k": 0,
+   "N": 45,
+   "K": 1,
+   "lower_bound": 45,
+   "min_distance": 45,
+   "projective_messages": 1
+  },
+  {
+   "q": 17,
+   "n": 8,
+   "k": 1,
+   "N": 45,
+   "K": 3,
+   "lower_bound": 36,
+   "min_distance": 39,
+   "projective_messages": 307
+  },
+  {
+   "q": 17,
+   "n": 8,
+   "k": 2,
+   "N": 45,
+   "K": 6,
+   "lower_bound": 28,
+   "min_distance": 33,
+   "projective_messages": 1508598
+  },
+  {
+   "q": 17,
+   "n": 8,
+   "k": 3,
+   "N": 45,
+   "K": 10,
+   "lower_bound": 21
+  },
+  {
+   "q": 17,
+   "n": 8,
+   "k": 4,
+   "N": 45,
+   "K": 15,
+   "lower_bound": 15
+  },
+  {
+   "q": 17,
+   "n": 8,
+   "k": 5,
+   "N": 45,
+   "K": 21,
+   "lower_bound": 10
+  },
+  {
+   "q": 17,
+   "n": 8,
+   "k": 6,
+   "N": 45,
+   "K": 28,
+   "lower_bound": 6
+  },
+  {
+   "q": 17,
+   "n": 8,
+   "k": 7,
+   "N": 45,
+   "K": 36,
+   "lower_bound": 3
+  },
+  {
+   "q": 17,
+   "n": 8,
+   "k": 8,
+   "N": 45,
+   "K": 45,
+   "lower_bound": 1
+  },
+  {
+   "q": 13,
+   "n": 2,
+   "k": 0,
+   "N": 6,
+   "K": 1,
+   "lower_bound": 6,
+   "min_distance": 6,
+   "projective_messages": 1
+  },
+  {
+   "q": 13,
+   "n": 2,
+   "k": 1,
+   "N": 6,
+   "K": 3,
+   "lower_bound": 3,
+   "min_distance": 4,
+   "projective_messages": 183
+  },
+  {
+   "q": 13,
+   "n": 2,
+   "k": 2,
+   "N": 6,
+   "K": 6,
+   "lower_bound": 1,
+   "min_distance": 1,
+   "projective_messages": 402234
+  },
+  {
+   "q": 11,
+   "n": 2,
+   "k": 0,
+   "N": 6,
+   "K": 1,
+   "lower_bound": 6,
+   "min_distance": 6,
+   "projective_messages": 1
+  },
+  {
+   "q": 11,
+   "n": 2,
+   "k": 1,
+   "N": 6,
+   "K": 3,
+   "lower_bound": 3,
+   "min_distance": 4,
+   "projective_messages": 133
+  },
+  {
+   "q": 11,
+   "n": 2,
+   "k": 2,
+   "N": 6,
+   "K": 6,
+   "lower_bound": 1,
+   "min_distance": 1,
+   "projective_messages": 177156
+  },
+  {
+   "q": 5,
+   "n": 1,
+   "k": 0,
+   "N": 3,
+   "K": 1,
+   "lower_bound": 3,
+   "min_distance": 3,
+   "projective_messages": 1
+  },
+  {
+   "q": 5,
+   "n": 1,
+   "k": 1,
+   "N": 3,
+   "K": 3,
+   "lower_bound": 1,
+   "min_distance": 1,
+   "projective_messages": 31
+  },
+  {
+   "q": 25,
+   "n": 12,
+   "k": 0,
+   "N": 91,
+   "K": 1,
+   "lower_bound": 91,
+   "min_distance": 91,
+   "projective_messages": 1
+  },
+  {
+   "q": 25,
+   "n": 12,
+   "k": 1,
+   "N": 91,
+   "K": 3,
+   "lower_bound": 78,
+   "min_distance": 83,
+   "projective_messages": 651
+  },
+  {
+   "q": 25,
+   "n": 12,
+   "k": 2,
+   "N": 91,
+   "K": 6,
+   "lower_bound": 66
+  },
+  {
+   "q": 25,
+   "n": 12,
+   "k": 3,
+   "N": 91,
+   "K": 10,
+   "lower_bound": 55
+  },
+  {
+   "q": 25,
+   "n": 12,
+   "k": 4,
+   "N": 91,
+   "K": 15,
+   "lower_bound": 45
+  },
+  {
+   "q": 25,
+   "n": 12,
+   "k": 5,
+   "N": 91,
+   "K": 21,
+   "lower_bound": 36
+  },
+  {
+   "q": 25,
+   "n": 12,
+   "k": 6,
+   "N": 91,
+   "K": 28,
+   "lower_bound": 28
+  },
+  {
+   "q": 25,
+   "n": 12,
+   "k": 7,
+   "N": 91,
+   "K": 36,
+   "lower_bound": 21
+  },
+  {
+   "q": 25,
+   "n": 12,
+   "k": 8,
+   "N": 91,
+   "K": 45,
+   "lower_bound": 15
+  },
+  {
+   "q": 25,
+   "n": 12,
+   "k": 9,
+   "N": 91,
+   "K": 55,
+   "lower_bound": 10
+  },
+  {
+   "q": 25,
+   "n": 12,
+   "k": 10,
+   "N": 91,
+   "K": 66,
+   "lower_bound": 6
+  },
+  {
+   "q": 25,
+   "n": 12,
+   "k": 11,
+   "N": 91,
+   "K": 78,
+   "lower_bound": 3
+  },
+  {
+   "q": 25,
+   "n": 12,
+   "k": 12,
+   "N": 91,
+   "K": 91,
+   "lower_bound": 1
+  }
+ ],
+ "max_arc_PG2_7": 8,
+ "mp_dickson_char0_relerr": {
+  "1": 0.0,
+  "2": 3.8725919148493183e-121,
+  "3": 1.9362959574246591e-121,
+  "4": 9.681479787123296e-122,
+  "5": 5.034369489304114e-120,
+  "6": 2.7108143403945228e-120,
+  "7": 4.647110297819182e-120,
+  "8": 5.034369489304114e-120,
+  "9": 1.3554071701972614e-120,
+  "10": 1.607125644662467e-118
+ },
+ "all_assertions": "PASS"
+}

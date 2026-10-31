@@ -1,0 +1,56 @@
+[
+  {
+    "file": "ff_padua/discriminant_real.py",
+    "bytes": 1231,
+    "sha256": "1e0e65b6b07e2b1bc903b1f315f0ac7ffd5b1adb59416e98ec324709ea94869d",
+    "git_blob": "2f15a992d35cf9ae9fd2d6c7450d1878bd830e71"
+  },
+  {
+    "file": "ff_padua/fast_transform.py",
+    "bytes": 6027,
+    "sha256": "10f7ef3b12e608ae49b45970ea8135ce9e5377fa44c83196a1367110ac89f28d",
+    "git_blob": "7f1808ccf048a86515329748713e588fd6bcb34b"
+  },
+  {
+    "file": "ff_padua/ffield.py",
+    "bytes": 5992,
+    "sha256": "d62c66a9168d45ffa96fabed3cdf1d2656099e46edd4e8d369ebf4ed1f6d7faf",
+    "git_blob": "dbcf8a0f1438ba7944b78e14fec9e15828657379"
+  },
+  {
+    "file": "ff_padua/hs_ff.py",
+    "bytes": 4397,
+    "sha256": "c3ed1d577c1db4bb78b8b9a0236651e61e69564a461283fa81963ebe3f23e098",
+    "git_blob": "6ef1b8cd0bbd2015ae1a12e2a5c9c05f2bf698b4"
+  },
+  {
+    "file": "ff_padua/padua_codes.py",
+    "bytes": 2482,
+    "sha256": "05e5d71e69d04496d5219d8097799f24c03534dfcc1a3012d7337bcd4f40f997",
+    "git_blob": "82e6b89b6e9c05bb87c3ff698ab1bc9620ff2ced"
+  },
+  {
+    "file": "ff_padua/padua_ff.py",
+    "bytes": 10467,
+    "sha256": "8c627dfa3641289db3a187a45db1d0d8ee4a57f97783dc7da8b2a89978ad40df",
+    "git_blob": "b43465bb90f3071eb907eda4697242d7db114c0b"
+  },
+  {
+    "file": "ff_padua/quadratic_padua.py",
+    "bytes": 2109,
+    "sha256": "1df666d6d7acdfd26d14d0f5f26cdbfb3190bfec76031efc43daaaac81f5dc4f",
+    "git_blob": "7c64aaf3721c60a262e9cc1307f951be7fc6bd03"
+  },
+  {
+    "file": "ff_padua/run_all.py",
+    "bytes": 606,
+    "sha256": "def7954b426e2a71b8ae9688e2b41c24f81d234e0e930a57168c60e5f7c3b95a",
+    "git_blob": "85af84fd2739b200567af4c6bc500a0b4c2be8e0"
+  },
+  {
+    "file": "harris_simanek_check.py",
+    "bytes": 5174,
+    "sha256": "57e1efa4f6ff3bb2241dfebb2fcb50ef029de773c998cd7e4ca8701b6e21da60",
+    "git_blob": "06c3dc603039dd28c8b47278e173fb18f192e42c"
+  }
+]
