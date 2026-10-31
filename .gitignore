@@ -1,0 +1,19 @@
+# Local environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+Thumbs.db
+
+# Local credentials
+.env
+.env.*
+!.env.example
+
+# Generated data belongs in campaign-specific cold storage.
+/local-output/
+/local-cache/
