@@ -2,3 +2,4 @@ exact_checkerboard family=equi n=7..8; numpy 2.5.3, cvxpy 1.6.0
 /usr/local/lib/python3.13/site-packages/cvxpy/problems/problem.py:1481: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
   warnings.warn(
 equi n=7: M=36 D=136 rank J=108 dim S1=28 (exp 28) rank Hess|S1=28 | DUAL exact PASS (float t=4.483e-11; exact min det/tr over nodes=3.396e-11) => (H) CERTIFIED [70s]
+equi n=8: M=45 D=171 rank J=135 dim S1=36 (exp 36) rank Hess|S1=36 | dual exact FAIL (float t=-1.2609774570441833e-12, margin -5.340211505529058e-11); primal exact FAIL (float lam=-2.9047842479349246e-13) => UNRESOLVED [162s]
