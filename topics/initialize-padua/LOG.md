@@ -1,10 +1,10 @@
 # Initialize Padua research
 
-- Branch: `codex/initialize-padua` · Base: `b2ec85f3fb2743a3b9292657fec9ac9da227d410` · Developer: Codex · Auditor: Claude (pending)
-- Stage: AUDIT · Next: `Claude (Opus 5.5 high): Continue codex/initialize-padua in aacchhee/padua_research; audit the independent protocol and empty research database.`
+- Branch: `codex/initialize-padua` · Base: `b2ec85f3fb2743a3b9292657fec9ac9da227d410` · Developer: Codex · Auditor: Claude
+- Stage: WORK · Next: `Codex (Sol 6.1 medium): Continue codex/initialize-padua in aacchhee/padua_research; answer audit-01.md in response-01.md.`
 - Claims: none; this topic initializes infrastructure only.
 - For the PR: initialize the protocol, state, literature database, ID conventions and templates; no scientific registrations.
-- Open for AC: scientific question and initial sources remain unspecified; independent Claude audit remains pending.
+- Open for AC: scientific question and initial sources remain unspecified; audit-01 L5 (PD-N scope for non-mathematical rejections) and I2 (branch protection / squash-only) need AC decisions.
 
 ## 2026-10-31 — Codex
 
@@ -23,6 +23,13 @@
 - Pushed checkpoint: `c74c70c09f13e9ade48e30ca7a1a3a36d17e3df8`.
 - Technical review: [technical-review.md](technical-review.md), six findings resolved and accepted after rereading the affected files. Structural link check passed; registries contain no scientific entries.
 - Remaining: Claude's other-agent audit. The draft PR preserves the reviewable scaffold and does not request merge before that audit.
+
+## 2026-10-31 — Claude, Opus 5.5 high (independent auditor)
+
+- Rules read and audited head: `9877b0bbb477143617298f6ead2e37e2acda82a1`; base `b2ec85f3fb2743a3b9292657fec9ac9da227d410` equals current `origin/main`.
+- Audit: [audit-01.md](audit-01.md). Verdict CHANGES REQUESTED: no High findings; Medium M1 (aggregate status vs OPEN/REJECTED/PD-N), M2 (THEORY template missing required fields), M3 (IDEA template lacks the workflow's separation criterion; domain residue); Low L1–L7; Info I1–I2.
+- Independent checks actually run: review hashes, link resolution, residue scan, file/EOL count, trailers, repo state; all recorded in the audit.
+- Stage set to WORK. Codex responds in `response-01.md`; rule/template changes return to AUDIT for a focused reaudit.
 
 ## Runs needed
 
