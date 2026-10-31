@@ -7,7 +7,7 @@ Rules (all on the same data, error = relative Frobenius error of (Hx,Hy) vs the 
   pairnorm1, pairnorm100   alt pair (pivot, entry below) only if its norm exceeds kappa x the primary pair norm
   defer         scheme + prefix-aware deferral: a node whose insertion makes min_j |pivot_j| < tau (tau = 1e-8) is held in a buffer and
                 retried (oldest first) after every acceptance; at stream end the buffer is drained by taking the node with the largest min-pivot.
-usage: python3 -I exp_r03.py OUT.jsonl n [n ...]
+usage: [L5_TAUS=1e-8,1e-3] python3 -I exp_r03.py OUT.jsonl n [n ...]
 """
 import sys, os, json, time
 import numpy as np
@@ -15,6 +15,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import l5_lib as L, prefix as PF
 F = L.F
 TAU = 1e-8
+TAUS = [float(t) for t in os.environ.get("L5_TAUS", "1e-8").split(",")]   # deferral thresholds
 
 def to_err(Hx, Hy, N, Hxr, Hyr):
     _, hx, hy = F.fixsign(np.eye(Hx.shape[0], N), N, Hx[:N, :N], Hy[:N, :N])
@@ -70,10 +71,12 @@ def main():
                     else: Hx, Hy, st = L.givens_c2(x, y, v, rule, kap)
                     rec[rname] = to_err(Hx, Hy, N, Hxr, Hyr)
                     rec["nalt_" + rname] = float(st[2]); rec["nnoise_" + rname] = float(st[3]) if kind == "c2" else None
-                t = time.time(); Hx, Hy, info = defer_run(x, y, v)
-                rec["defer"] = to_err(Hx, Hy, N, Hxr, Hyr); rec["defer_info"] = info; rec["defer_secs"] = round(time.time() - t, 1)
+                for tau in TAUS:
+                    t = time.time(); Hx, Hy, info = defer_run(x, y, v, tau)
+                    key = "defer" if tau == 1e-8 else f"defer_tau{tau:g}"
+                    rec[key] = to_err(Hx, Hy, N, Hxr, Hyr); rec[key + "_info"] = info; rec[key + "_secs"] = round(time.time() - t, 1)
                 out.write(json.dumps(rec) + "\n"); out.flush()
-                print(f"n={n} {wname} {lab:6s} " + " ".join(f"{k}:{rec[k]:.1e}" for k in list(RULES) + ["defer"]) + f"  defer_info={info}", flush=True)
+                print(f"n={n} {wname} {lab:6s} " + " ".join(f"{k}:{rec[k]:.1e}" for k in list(RULES) + [k for k in rec if k.startswith("defer") and not k.endswith(("_info", "_secs"))]) + f"  info={info}", flush=True)
 
 if __name__ == "__main__":
     main()

@@ -75,6 +75,43 @@ def main():
         den = np.max(np.abs(S.T @ (eps * ev)))
         return num / den
 
+    if mode == 'resid':
+        # min l1 moment residual over positive measures on a NESTED grid of K_delta
+        # (radii 0 and 12 geometric radii delta*10^(-3..0), 24 rotated angles);
+        # always feasible LP. Lower bound from the certificate p* (theory file 303)
+        # when p* >= 0 on K_delta: resid >= eps * p*(z*) / ||c*||_inf.
+        from inspect_certificate import certificate
+        cstar = None
+        if S.shape[1] > 0:
+            cs, lam = certificate(nodes, n)
+            if lam > 0:
+                cstar = cs / np.max(np.abs(cs))
+        for eps in [1e-3, 1e-5]:
+            Lp = Lmu - eps * ev
+            for delta in [0.0, 1e-3, 3e-3, 0.01, 0.02, 0.04, 0.06, 0.08, 0.1, 0.2]:
+                pts = [z for z in nodes]
+                if delta > 0:
+                    for z in nodes:
+                        for rho in delta * np.logspace(-3, 0, 12):
+                            for th in np.linspace(0, 2 * np.pi, 24, endpoint=False):
+                                a = th + 0.37 * np.log10(rho / delta)
+                                pts.append(z + rho * np.array([np.cos(a), np.sin(a)]))
+                A = basis_vals(np.array(pts), d)
+                Dd, m = A.shape
+                c = np.r_[np.zeros(m), np.ones(2 * Dd)]
+                Aeq = np.c_[A, np.eye(Dd), -np.eye(Dd)]
+                res = linprog(c, A_eq=Aeq, b_eq=Lp, bounds=(0, None), method='highs',
+                              options=dict(time_limit=300.0))
+                lb = ''
+                if cstar is not None:
+                    pz = float(basis_vals([zstar], d)[:, 0] @ cstar)
+                    lb = f"  cert LB (valid if delta<=delta0) = {eps * pz / 1.0:.3e}"
+                if res.fun is None:
+                    print(f"  eps={eps:.0e} delta={delta:<6}: status={res.status} ({res.message[:60]}) -- no value", flush=True)
+                    continue
+                print(f"  eps={eps:.0e} delta={delta:<6}: status={res.status} min l1 resid = {res.fun:.3e}"
+                      f"  resid/eps = {res.fun/eps:.3e}{lb}", flush=True)
+        return
     if mode == 'scan':
         for eps in [1e-3, 1e-6]:
             Lp = Lmu - eps * ev

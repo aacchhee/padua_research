@@ -308,6 +308,41 @@ def main():
         print(f"    node {i} ({float(z[0]):+.4f},{float(z[1]):+.4f}): hxx={float(h[0]):.6g} det={float(det):.6g} "
               f"[sign hxx {h[0].sign()}, sign det {det.sign()}]")
     print(f"  => Padua n=3: S1 contains p* with PD Hessians at all nodes: {'PROVED (exact)' if ok else 'NOT CERTIFIED'}")
+    # Rigorous explicit radius delta_0 with p* >= 0 on every closed ball B(z_i, delta_0):
+    # p*(z+h) >= 1/2 lam_i |h|^2 - (1/6) C3 |h|^3, lam_i >= det_i/tr_i, C3 >= sup over the box
+    # |x|,|y| <= 1 + rmax of |D^3 p*(xi)[u,u,u]| (|u| = 1), bounded by
+    # sum_{a+b=3} binom(3,a) sum_m |c_m| ff(m_x,a) ff(m_y,b) Rb^(m_x-a+m_y-b).
+    s_lo, s_hi = F(14142135, 10 ** 7), F(14142136, 10 ** 7)  # bounds for sqrt2
+
+    def lower(v):
+        return v.a + (v.b * s_lo if v.b >= 0 else v.b * s_hi)
+
+    def upper(v):
+        return v.a + (v.b * s_hi if v.b >= 0 else v.b * s_lo)
+
+    rmax = F(1, 10)
+    Rb = 1 + rmax
+    coef_abs = [max(abs(lower(c)), abs(upper(c))) for c in pstar]
+
+    def ff(m, k):
+        r = 1
+        for t in range(k):
+            r *= max(m - t, 0)
+        return r
+    C3 = F(0)
+    binom3 = {0: 1, 1: 3, 2: 3, 3: 1}
+    for a in range(4):
+        b = 3 - a
+        C3 += binom3[a] * sum((ca * ff(mx, a) * ff(my, b) * Rb ** max(mx - a + my - b, 0)
+                               for ca, (mx, my) in zip(coef_abs, E) if mx >= a and my >= b), F(0))
+    lam_lb = []
+    for h in H:
+        det = h[0] * h[2] - h[1] * h[1]
+        tr = h[0] + h[2]
+        lam_lb.append(lower(det) / upper(tr))
+    d0 = min(rmax, min(3 * l / C3 for l in lam_lb))
+    print(f"  rigorous radius: min lambda_min lower bound = {float(min(lam_lb)):.6g}, C3 upper bound = {float(C3):.6g}, "
+          f"delta_0 = {d0} ~ {float(d0):.4e}  (p* >= 0 on all closed balls B(z_i, delta_0))")
 
 
 if __name__ == '__main__':

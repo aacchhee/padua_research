@@ -3,7 +3,7 @@ double and long double in lockstep (givens_dual.c) -- no external reference need
 the state after i points is the state of the algorithm run on the first i points).
 
 usage: python3 -I exp_r02_dual.py OUT.jsonl FAMILY n [n ...]      FAMILY in {padua_cub, padua_unif, random}
-Checkpoints: 8 values log-spaced from 40 to M.  Output: relative Frobenius difference of the active blocks (double vs long double).
+Checkpoints: 10 values log-spaced from 40 to M.  Output: relative Frobenius difference of the active blocks (double vs long double).
 """
 import sys, os, json, time, ctypes
 import numpy as np
@@ -26,7 +26,10 @@ def main():
     for s in sizes:
         if fam.startswith("padua"):
             P, wc = L.padua_cubature(s); M = len(P); w = wc if fam == "padua_cub" else np.ones(M)
-            perms = {"given": np.arange(M), "rand1": np.random.default_rng(10 * s + 1).permutation(M)}
+            import prefix as PF
+            _, _, Qc = PF.padua_orthogonal_basis(s)
+            perms = {"given": np.arange(M), "rand1": np.random.default_rng(10 * s + 1).permutation(M),
+                     "rand2": np.random.default_rng(10 * s + 2).permutation(M), "gepp": PF.gepp_order(Qc)}
         else:
             M = s; perms = {}
             for k in (1, 2):
@@ -35,7 +38,7 @@ def main():
         for lab, perm in perms.items():
             if fam == "random":
                 k = int(lab[-1]); P = np.random.default_rng(7000 * k + M).uniform(-1, 1, (M, 2)); perm = np.arange(M)
-            ck = sorted(set(int(round(c)) for c in np.geomspace(40, M, 8)))
+            ck = sorted(set(int(round(c)) for c in np.geomspace(40, M, 10)))
             t = time.time()
             r = dual(P[perm, 0], P[perm, 1], np.sqrt(w[perm]), ck)
             rec = dict(family=fam, size=s, M=M, order=lab, ckpt=ck, relfro=r[:, 0].tolist(), maxabs=r[:, 1].tolist(), nrot=r[:, 2].tolist(), secs=round(time.time() - t, 1))

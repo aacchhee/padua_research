@@ -35,3 +35,6 @@ padua_rand 50 rand1 givens-scheme:3.1e-13 givens-largest:5.2e-09 hl:1.2e-14 bj:9
 padua_rand 50 rand2 givens-scheme:3.7e-13 givens-largest:6.4e-08 hl:1.2e-14 bj:2.2e-14 cgs2:2.8e-15 hh:2.7e-15
 padua_rand 50 rand3 givens-scheme:3.4e-12 givens-largest:1.4e-07 hl:1.2e-14 bj:3.8e-14 cgs2:2.9e-15 hh:2.7e-15
 [ref n=62 N=2016 909s]
+padua_rand 62 given givens-scheme:9.7e-14 givens-largest:1.9e-01 hl:1.8e-14 bj:1.9e-13 cgs2:3.8e-15 hh:3.3e-15
+padua_rand 62 sortx givens-scheme:1.1e-13 givens-largest:3.9e-04 hl:1.9e-14 bj:9.0e-14 cgs2:4.0e-15 hh:3.3e-15
+padua_rand 62 rand1 givens-scheme:7.8e-12 givens-largest:3.5e-06 hl:1.8e-14 bj:4.8e-14 cgs2:3.8e-15 hh:3.2e-15

@@ -1,0 +1,21 @@
+Padua n=3 D=36 dimS1=6 grid R=8 nth=24; z*=[1.01620907 1.02524413] (r=0.03); mode=resid
+  eps=1e-03 delta=0.0   : status=0 min l1 resid = 8.566e-03  resid/eps = 8.566e+00  cert LB (valid if delta<=delta0) = 1.463e-05
+  eps=1e-03 delta=0.001 : status=0 min l1 resid = 1.318e-04  resid/eps = 1.318e-01  cert LB (valid if delta<=delta0) = 1.463e-05
+  eps=1e-03 delta=0.003 : status=0 min l1 resid = 3.490e-05  resid/eps = 3.490e-02  cert LB (valid if delta<=delta0) = 1.463e-05
+  eps=1e-03 delta=0.01  : status=0 min l1 resid = 3.022e-05  resid/eps = 3.022e-02  cert LB (valid if delta<=delta0) = 1.463e-05
+  eps=1e-03 delta=0.02  : status=0 min l1 resid = 2.872e-05  resid/eps = 2.872e-02  cert LB (valid if delta<=delta0) = 1.463e-05
+  eps=1e-03 delta=0.04  : status=0 min l1 resid = 2.741e-05  resid/eps = 2.741e-02  cert LB (valid if delta<=delta0) = 1.463e-05
+  eps=1e-03 delta=0.06  : status=0 min l1 resid = 2.683e-05  resid/eps = 2.683e-02  cert LB (valid if delta<=delta0) = 1.463e-05
+  eps=1e-03 delta=0.08  : status=0 min l1 resid = 2.613e-05  resid/eps = 2.613e-02  cert LB (valid if delta<=delta0) = 1.463e-05
+  eps=1e-03 delta=0.1   : status=0 min l1 resid = 2.529e-05  resid/eps = 2.529e-02  cert LB (valid if delta<=delta0) = 1.463e-05
+  eps=1e-03 delta=0.2   : status=0 min l1 resid = 2.411e-05  resid/eps = 2.411e-02  cert LB (valid if delta<=delta0) = 1.463e-05
+  eps=1e-05 delta=0.0   : status=0 min l1 resid = 8.566e-05  resid/eps = 8.566e+00  cert LB (valid if delta<=delta0) = 1.463e-07
+  eps=1e-05 delta=0.001 : status=1 (Time limit reached. (HiGHS Status 13: model_status is Time l) -- no value
+  eps=1e-05 delta=0.003 : status=0 min l1 resid = 2.767e-07  resid/eps = 2.767e-02  cert LB (valid if delta<=delta0) = 1.463e-07
+  eps=1e-05 delta=0.01  : status=0 min l1 resid = 2.749e-07  resid/eps = 2.749e-02  cert LB (valid if delta<=delta0) = 1.463e-07
+  eps=1e-05 delta=0.02  : status=0 min l1 resid = 2.718e-07  resid/eps = 2.718e-02  cert LB (valid if delta<=delta0) = 1.463e-07
+  eps=1e-05 delta=0.04  : status=0 min l1 resid = 2.631e-07  resid/eps = 2.631e-02  cert LB (valid if delta<=delta0) = 1.463e-07
+  eps=1e-05 delta=0.06  : status=0 min l1 resid = 2.585e-07  resid/eps = 2.585e-02  cert LB (valid if delta<=delta0) = 1.463e-07
+  eps=1e-05 delta=0.08  : status=0 min l1 resid = 2.558e-07  resid/eps = 2.558e-02  cert LB (valid if delta<=delta0) = 1.463e-07
+  eps=1e-05 delta=0.1   : status=0 min l1 resid = 2.491e-07  resid/eps = 2.491e-02  cert LB (valid if delta<=delta0) = 1.463e-07
+  eps=1e-05 delta=0.2   : status=0 min l1 resid = 2.275e-07  resid/eps = 2.275e-02  cert LB (valid if delta<=delta0) = 1.463e-07
