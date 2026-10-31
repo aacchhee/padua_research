@@ -154,3 +154,17 @@ Written 2026-11-01T00:26:57+01:00, AFTER the PRO-2D (IDEA?…-208) smoke test on
 | IDEA?…-207 dev / mirror / alt / adapt | killed for every rule (dev 5 sets, mirror 4, alt 4, adapt only rotπ/4: θ_LB 2.1e-7); adapt below √u on the other five non-product sets (7–10 decades below BJ); two-relation control below 5e-13 on all six non-product sets but fails on the cubic checkerboard | each rule REJECTED: failed (uniform safety); adapt retained as the best one-relation rule (deferred: resume with an rotπ/4-type fix or a hybrid with two relations) | PD-T?…-206, PD-N?…-203 |
 | IDEA?…-208 PRO-2D (E1D trigger) | killed on rotπ/4, triangle, L-shape, annulus, cubic checkerboard | REJECTED: failed | PD-N?…-202 |
 | IDEA?…-209 PRO-2D-J | survives on 11 of 12; killed on the cubic checkerboard at n = 29 (L = 2.0e-7); cost 0.16–0.71 of CGS2-against-all; secondary ≤ 30% criterion fails on 4 hard sets | REJECTED: failed on the cubic checkerboard (scope: that set, last degree); otherwise the measured strategy for loss of orthogonality; does not repair the drift | PD-T?…-207 |
+
+---
+
+## R03 pre-registration (written 2026-11-01T00:44:13+01:00, before any R03 run)
+
+### IDEA?bivariate-lanczos-claude-210 — correctly rounded (or extended-precision) window dot products against the coefficient channel
+
+Aliases: exact window dots; compensated dots; L1 hand-off "compensated/extra-precision window dot products"; ρ-removal.
+
+- Origin: L1 SUMMARY §5 and PD-T?…-115 (closed-loop dot-product rounding ρ drives the clustered-checkerboard loss through off-pattern gains).
+- Mechanism: in the BJ block-window CGS step compute each window coefficient as the correctly rounded value of q̂_lᵀa (Dekker splitting of the products + math.fsum), everything else in double ('exact'); variant 'ld': the whole step (product, dots, update, normalisation) in x87 long double, vectors stored in double.
+- Sets: Harris–Simanek checkerboards m = 30 with grading s|s| (quadratic), s|s|² (cubic), s|s|³ (quartic), and cubic with m = 36 (the PD-T?…-115 sets, our construction), Chebyshev–Lobatto (control); rotπ/4, triangle, tensor 41² (vector/space-channel controls).
+- **Kill criteria (before running).** P1 (main): on each of the four clustered checkerboards, 'exact' reduces L(n) at n = 20 and at n = 24 by ≥ 100× relative to the double run; the candidate is killed if on some clustered set the reduction is < 10× at both n = 20 and n = 24. P2 (channel separation): on rotπ/4 and the triangle the 'exact' reduction of L at n = 20 (triangle 16) and 24 (triangle 20) is < 10×; the separation claim is killed if the reduction is ≥ 10× at both degrees on either set. P3: θ_LB on rotπ/4 and the triangle changes by < 10× under 'exact' (killed otherwise).
+- Reported, no kill: 'ld' on the same sets; PRO-2D-J with 'exact' dots on the cubic checkerboard (its R02 failure).

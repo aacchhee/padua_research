@@ -59,9 +59,10 @@ def _checkerboard(kind, m=30):
         X, Y = -np.cos(np.arange(m + 1) * np.pi / m), -np.cos(np.arange(m + 2) * np.pi / (m + 1))
     elif kind == 'equi':
         X, Y = np.linspace(-1, 1, m + 1), np.linspace(-1, 1, m + 2)
-    elif kind == 'cubic':
+    elif kind in ('cubic', 'quad', 'quart'):
+        ex = {'quad': 1, 'cubic': 2, 'quart': 3}[kind]
         s1, s2 = np.linspace(-1, 1, m + 1), np.linspace(-1, 1, m + 2)
-        X, Y = s1 * np.abs(s1) ** 2, s2 * np.abs(s2) ** 2
+        X, Y = s1 * np.abs(s1) ** ex, s2 * np.abs(s2) ** ex
     else:
         raise ValueError(kind)
     P, w, wx, wy = CB.checkerboard(X, Y)
@@ -89,13 +90,37 @@ def benchmark(name):
     if name == 'padua48':
         P, w = L1.nodes_padua(48); return P, w, 47
     if name.startswith('cb_'):
-        P, w = _checkerboard(name[3:]); return P, w, 29
+        kind = name[3:]
+        m = 30
+        if kind.endswith('36'):
+            kind, m = kind[:-2], 36
+        P, w = _checkerboard(kind, m); return P, w, m - 1
     raise ValueError(name)
 
 
 # ----------------------------------------------------------------------------- recurrence
+_SPLIT = 134217729.0   # 2^27 + 1 (Dekker)
+
+
+def _two_prod(x, y):
+    p = x * y
+    cx = _SPLIT * x; xh = cx - (cx - x); xl = x - xh
+    cy = _SPLIT * y; yh = cy - (cy - y); yl = y - yh
+    e = ((xh * yh - p) + xh * yl + xl * yh) + xl * yl
+    return p, e
+
+
+def wdot(Qw, v, dots='double'):
+    """Q_w^T v: 'double' (BLAS), 'exact' (correctly rounded: Dekker products + math.fsum; IDEA?...-210)."""
+    if dots == 'double' or Qw.shape[1] == 0:
+        return Qw.T @ v
+    import math
+    P, E = _two_prod(Qw, v[:, None])
+    return np.array([math.fsum(np.concatenate([P[:, i], E[:, i]])) for i in range(Qw.shape[1])])
+
+
 def run(x, y, w, nmax, orth='cgs', reorth='none', thresh=SQRTU, eta=U34, est=None, dtype=np.float64,
-        window_kind='block'):
+        window_kind='block', dots='double'):
     """BJ window recurrence.
     orth   : 'cgs' one window pass | 'cgs2w' two window passes (two-pass window)
     reorth : 'none' | 'fullcgs2' (CGS2 against ALL previous columns: V+A type) |
@@ -137,11 +162,20 @@ def run(x, y, w, nmax, orth='cgs', reorth='none', thresh=SQRTU, eta=U34, est=Non
             stats['dots_reorth'] += 2 * k
         else:
             Qw = Q[:, W]
-            h = Qw.T @ a; r = a - Qw @ h
+            if dots == 'ld':
+                LD = np.longdouble
+                QwL = Qw.astype(LD); aL = (x.astype(LD) if op[k] == 'J' else y.astype(LD)) * Q[:, p].astype(LD)
+                hL = QwL.T @ aL; rL = aL - QwL @ hL
+                if orth == 'cgs2w':
+                    h2L = QwL.T @ rL; rL = rL - QwL @ h2L; hL = hL + h2L
+                    stats['dots_window'] += len(W)
+                h = hL.astype(np.float64); r = rL.astype(np.float64)   # normalisation then in double
+            else:
+                h = wdot(Qw, a, dots); r = a - Qw @ h
+                if orth == 'cgs2w':
+                    h2 = wdot(Qw, r, dots); r = r - Qw @ h2; h = h + h2
+                    stats['dots_window'] += len(W)
             stats['dots_window'] += len(W)
-            if orth == 'cgs2w':
-                h2 = Qw.T @ r; r = r - Qw @ h2; h = h + h2
-                stats['dots_window'] += len(W)
             if reorth in ('oracle', 'est') and W.size and W[0] > 0:
                 O = np.arange(0, W[0])
                 beta0 = float(np.sqrt(r @ r))
@@ -161,7 +195,7 @@ def run(x, y, w, nmax, orth='cgs', reorth='none', thresh=SQRTU, eta=U34, est=Non
                     g1 = QL.T @ r; r = r - QL @ g1
                     g2 = QL.T @ r; r = r - QL @ g2
                     # window second pass so that local orthogonality is restored after the correction
-                    h3 = Qw.T @ r; r = r - Qw @ h3; h = h + h3
+                    h3 = wdot(Qw, r, dots if dots != 'ld' else 'double'); r = r - Qw @ h3; h = h + h3
                     Lset = Ls; g = g1 + g2
                     stats['n_reorth'] += 1; stats['reorth_vectors'] += len(Ls)
                     stats['dots_reorth'] += 2 * len(Ls) + len(W)
