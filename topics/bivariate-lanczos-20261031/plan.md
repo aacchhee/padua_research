@@ -72,6 +72,7 @@ Provisional IDs `<NS>?bivariate-lanczos-claude-<nnn>`: literature 001–199 (ful
 | L3 | R02 | 2026-10-31 | Square-case rates | δ ≳ √ε necessary PROVED; rate theorem with condition (H) PROVED; Padua n = 2/3 CONDITIONAL | [R02](directions/L3/R02.md) |
 | L3 | R03 | 2026-10-31 | Checkerboard control, literature | (H) survey MEASURED; count-alone hypothesis refuted (MEASURED); literature confirmations | [R03](directions/L3/R03.md) |
 | L1 | R04 | 2026-10-31 | Near-product upper bound; checkerboard control | Near-product bound PROVED (weak); clustered-checkerboard loss and remedy failure MEASURED (PD-N?…-103) | [R04](directions/L1/R04.md) |
+| L1 | R05 | 2026-10-31 | Exact certificates; error channels | Moment-matching factorisation PROVED; triangle-grid growth certificate CONDITIONAL; two error channels MEASURED; corrections PC-1–10 | [R05](directions/L1/R05.md) |
 | L3 | R04 | 2026-10-31 | Exact certificates for equispaced checkerboards | (H) certified n = 1..7 CONDITIONAL; margins MEASURED | [R04](directions/L3/R04.md) |
 
 ## History
