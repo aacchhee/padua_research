@@ -1,1 +1,2 @@
 n=60 N=1891 uniform weights, rng(2) permutation: error vs Householder H: scheme:2.0e-12 largest:2.1e-04 hl:1.1e-14
+prefix scan (1008s): n_sing=0 n_amb=0 min exact sigma over refined=9.67e-10 at K=None; number of prefixes with hi<1e-6: 158, <1e-8: 2

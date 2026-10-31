@@ -76,3 +76,31 @@ Reason: the pre-registered `defer` (tau = 1e-8) was seen at n = 20 to accept pre
 #### 504c'' — windowed best-pivot deferral `deferbestW` (post-hoc variant, kill test written before it is run)
 
 Reason: FIFO threshold deferral (tau = 1e-8 and 1e-3) fails on structured streams (errors 1e-9..1e-5) because it accepts the first admissible node, not a well-conditioned one. Variant: keep a window of the first W pending nodes (W = 8, 32); at each step tentatively insert all of them and commit the one with the largest min_j |pivot_j| (ties: oldest); the window is refilled from the stream. **Killed** if on any tested stream (n = 20, 30; both weights; given, sortx, rand1, gepp) its error exceeds 3 x the `scheme` error on the `gepp` stream of the same n and weights. Cost note: O(W) tentative insertions per step, each O(K^2); not claimed practical.
+
+---
+
+## Results and dispositions (written at the end of R03; the kill criteria above are unchanged)
+
+### IDEA 501 (rotation counting explains the Givens deficit)
+
+Result (R01, `logs/analysis_r01.txt`): Givens-scheme slope 1.40 [1.09, 1.70] (Padua cubature), 1.55 (U weights), 1.08 (unit weights), 1.28 [1.06, 1.50] (arcsine random); HL 0.71-0.79, CGS2 0.38-0.53, Householder 0.28-0.38 in these controlled families; upper range M >= 496: Givens 2.15/2.50, HL 0.75/0.80, CGS2 0.57/0.55. Uniform-density random nodes: CGS2 1.57, HL 2.28 (Householder 2.11), confounded by cond ~ M^2.96. Verdict by the kill criterion as written: **not killed** in the five conditioning-controlled families; **killed literally** in the uniform-random family (CGS2 >= 0.9), a family I consider confounded (stated, not hidden). Disposition: the claim 'Givens grows faster than HL/CGS2/Householder' is supported (slope difference 0.3-0.8); 'HL ~ sqrt(M)' is not supported at this precision (0.71-0.81). Rotation counting as a *mechanism* remains OPEN (the worst-case count gives M^{3/2}; no model predicts the observed ~M). Theory: PD-T?bivariate-lanczos-claude-502 (MEASURED).
+
+### IDEA 502 (prefix mechanism for 'largest')
+
+Result (R01, `logs/analysis_r01b.txt`): catastrophe (ratio >= 1e3 and error >= 1e-10) occurs on 16 of 54 all-prefix-unisolvent cases (n >= 20), including gepp/rpiv1-3 at n = 50 with min prefix sigma_min >= 4.7e-4; also 13 of 18 non-unisolvent cases. **Kill test fires:** the prefix mechanism in the 'only on non-unisolvent prefixes' form is killed (MEASURED, scope Padua n <= 62 for the natural/sorted orders and n <= 50 for the prefix-controlled orders, IEEE double). Graded picture: 'largest' error grows x15-50 per Delta n = 10 on every order and is 3-10 orders of magnitude larger on non-unisolvent orders. Disposition: REJECTED: failed. Canonical record: PD-N?bivariate-lanczos-claude-501 (MEASURED negative, scoped); PD-T?bivariate-lanczos-claude-503 (prefix statistics) and PD-T?bivariate-lanczos-claude-505 (PROVED existence of all-prefix-unisolvent orders).
+
+### IDEA 503 (worst-case rotation-count bound)
+
+Result (R02): Theorem A PROVED (PD-T?bivariate-lanczos-claude-501 in the theory directory; note that ID digits 501 are used by different kinds PD-T/PD-N, see the kind prefix): backward error <= 16.5 u nu M(M-1), relative O(u M^{3/2}); holds for any pivot choice. Kill criterion: the bound has the same polynomial character as the textbook comparator bounds (Householder gamma_{cMN}; LITERATURE, UNVERIFIED), so it does not separate M from sqrt(M). Disposition: REJECTED as an explanation of the deficit (no separation); kept as a positive routine result. No PD-N is recorded because the comparator statement is unverified.
+
+### IDEA 504 (safe pivot/deflation rules)
+
+Results (R03, `logs/r03_rules.*`, `r03_defer3.*`, `r03_deferbest*.*`, `r03_detector.log`):
+- (a) fixed 'scheme': **killed as an order-independent rule** by the pre-registered 10x clause: n = 50 rand3 error 1.6e-12 (cubature) and 3.4e-12 (U) versus 6.0e-14 and 6.6e-14 on the given order (27x, 52x); the absolute 1e-11 clause is not triggered (max 3.4e-12 at n <= 50; the REPRO n = 60 case 2.0e-12). Scheme is accurate (<= 3.4e-12) on every order tested up to n = 50; the failure is a growth of the order-spread, correlated with the minimum prefix sigma_min (Spearman -0.51 over 40 cases).
+- (b1) pivk10, pivk100: **killed** (n = 30 given cubature: 8.6e-9 and 5.9e-12 versus scheme 2.3e-14; random weights 4.3e-3 for both); on all-unisolvent streams they equal scheme.
+- (b2) pairnorm1: **killed** (equals 'largest' within 15% on rand1-3/gepp, 2.0e-12 at n = 30 rand1 versus scheme 4.7e-14); pairnorm100: never worse than 2.4x scheme (n = 30 random-weight given: 5.9e-14 versus 2.4e-14) and never better -> **equivalent to scheme** (not an improvement).
+- (c) defer (tau = 1e-8): **killed** (n = 20 given 3.1e-9 and sortx 1.5e-8 versus gepp-scheme 1.9e-14; forced insertions 0-3).
+- 504c' defer3 (tau = 1e-3): **killed** (n = 20 given 5.5e-10, sortx 2.0e-9; n = 30 sortx 0.13, cubature given 1.5e-3; forced insertions up to 10 at n = 30).
+- 504c'' deferbestW (W = 8, 32): **not killed** at n = 20 and 30 (24 stream/parameter rows, errors 1.1e-14..6.8e-14, all <= 1.62x the gepp-scheme error of the same n/weights; the window cannot avoid singular prefixes on given/sortx -- min over the run of the min pivot is 0 -- yet the error stays at scheme level) and at n = 50 rand1 (cubature: 2.7e-13 versus scheme 1.5e-13 on that stream and 1.1e-13 on gepp, 2.4x). **No gain over scheme anywhere tested** (scheme is already as accurate on those streams). The case where a gain is possible (n = 50 rand2/rand3, and n = 60 REPRO order) was not completed (background run lost): Runs needed. Cost O(W) tentative insertions per step; not practical.
+- Online detector 'prefix K singular <=> min over j <= K of |primary pivot_j| < 1e-10': **survives** 20 order/size cases (n = 10, 14, 20; no violation in either direction). Exactness in exact arithmetic: OPEN (non-routine; escalated).
+Disposition: no tested modification of the pivot rule improves on 'scheme'; IDEA 504 (b)/(c) REJECTED: failed (MEASURED, scope above); (a) scheme retained as the recommended rule with the stated order-spread caveat.

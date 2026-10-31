@@ -150,3 +150,16 @@ Aliases: p_C = Σ c_jk q_j q_k, C ⊥ Hankel; Hankel test Σ G_iA_iG_iᵀ ∈ Ha
 - PD-T?…-307 item 6 and R03 §2 say "equispaced … n = 6 unresolved": superseded by R04 — (H) is exactly certified for n = 6, 7 (PD-T?…-310); first unresolved n is 8.
 - R02/R03 STATUS.md timestamps (23:20, 23:40) were estimates written before the hand-back at ≈ 23:05, not observed times (orchestrator note in STATUS.md). From R04 on, STATUS lines use `date -Iseconds`.
 - R01 §7 / candidates IDEA 305 (R01 text) call the Kachkovskiy–Safarov attribution UNVERIFIED; R03 lit_reading.md confirms it (Introduction (1.3)). Same for Koiran §1.4 "wide open".
+
+## IDEA?bivariate-lanczos-claude-313 — Two-term Turán certificate for all Padua n ≥ 4 (R05)
+
+Aliases: κ(t) = −(1−c) − ct; P_n = 9(g_1² − ½g_0g_2) + (g_2² − g_1g_3).
+- Closest: IDEA 302 (H), 309 (Hankel form); records bos-dmv-xu-2007 (two-term generators, as reported); Blekherman JAMS 2012 Lemma 3.1 (as reported by the prior-art check: PD-Hessian double zeros stay nonnegative under perturbation).
+- Kill criteria (before testing): K10 (interior), K11 (all nodes) — R05 §3.
+- Results: K10 not fired; K11 fired at n = 2, 3, holds n = 4..12 numerically and is proved for all n ≥ 4 (PD-T?…-313, CONDITIONAL on rerun/hand check of three expansions).
+- Disposition: survived for n ≥ 4 → PD-T?…-312, 313, PD-N?…-303; failed for n ≤ 3 (recorded; n = 3 handled by N301).
+
+## Pending corrections (R05, from the independent prior-art check, 2026-10-31)
+
+- R03 §3 / lit_reading.md: the claim "Greenbaum's 1D proven width is √ε" and the parallel with the square-case √ε rate are withdrawn: sources conflict (Šimonová–Tichý §1: √ε‖A‖ in the proof; T. Chen arXiv 2608.21268 §4: ε^{1/4}, Greenbaum 1989 eq. (7.10); Meurant–Strakoš 2006 Thm 4.9), as reported by the prior-art check. Greenbaum 1989 remains pending-reference.
+- Closest predecessors to be added to the IDEA records at PR preparation: IDEA 301/302 and theory 302/303 ← Tchakaloff/Richter; Di Dio–Schmüdgen Prop. 27, Thm 40, Lemma 37(ii), Prop. 43; Blekherman JAMS 2012 Lemma 3.1. IDEA 304 / theory 301 ← Degani–Schiff–Tannor Thms 9–11 and §5.3; Xu Trans. AMS 342 (1994) Thm 4.2 (unread, possibly relevant: Delgado–Geronimo–Iliev–Marcellán SIMAX 28 (2006); Cichoń–Stochel–Szafraniec JAT 134 (2005)). IDEA 303 / theory 308 ← Passer–Shalit–Solel; Davidson–Dor-On–Shalit–Solel Prop. 4.3. (All as reported by the prior-art check; not read by the L3 developer.)
