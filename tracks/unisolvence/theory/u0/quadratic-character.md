@@ -1,4 +1,4 @@
-# PD-T?charter-u0-codex-04 — Quadratic-character description at q=2n+1
+# PD-T007 — Quadratic-character description at q=2n+1
 
 ID kind: PD-T. Aliases: quadratic Padua set, split/nonsplit trace sets.
 Split from: supplied finite_field_padua.md Theorem 6.
@@ -22,11 +22,11 @@ The split roots `u` run over `F_q^*`, and the nonsplit roots `v` run over `U={v 
 
 ## Status by part
 
-Overall status: **PROVED** (independent developer proof; adversarial acceptance PENDING). No novelty or general coding-weight-distribution claim.
+Overall status: **PROVED** (independent developer proof; supplementary Astra check complete; required Claude audit PENDING). No novelty or general coding-weight-distribution claim.
 
 ## Depends on
 
-`PD-T?charter-u0-codex-01,02`; elementary finite-field quadratic and Frobenius arithmetic.
+`PD-T004`, `PD-T005`; elementary finite-field quadratic and Frobenius arithmetic.
 
 ## Proof
 
@@ -38,17 +38,17 @@ For `y=(v+v^-1)/2` with `v in U`, `v!=-1`, one still has `2(y+1)=(v+1)²/v` in `
 
 `chi(2(y+1))=(v+1)^(q-1) v^(-(q-1)/2)=v^(-(q+1)/2)=v^((q+1)/2)`.
 
-For `v=eta^k`, this is `(-1)^k`. At `v=-1`, that sign is `(-1)^((q+1)/2)=-chi(-1)`, exactly the exceptional `delta`. Equality of signs is therefore exactly `j+k even`. Where both coordinates differ from `-1`, multiplying the two characters cancels the square factor `4`, giving the shortened parity condition. The count and unisolvence now follow from `PD-T?charter-u0-codex-01` and rationality from `02`.
+For `v=eta^k`, this is `(-1)^k`. At `v=-1`, that sign is `(-1)^((q+1)/2)=-chi(-1)`, exactly the exceptional `delta`. Equality of signs is therefore exactly `j+k even`. Where both coordinates differ from `-1`, multiplying the two characters cancels the square factor `4`, giving the shortened parity condition. The count and unisolvence now follow from `PD-T004` and rationality from `PD-T005`.
 
 ## Checks and sources
 
 The unmodified `quadratic_padua.py` checks primes `5<=q<=47` only. It supplies no extension-field execution. The separately implemented developer `verify_exact.py` checks `q=3,9` inside `F_81`, including the missing smallest field and a nonprime field. Details are in [measurements.md](measurements.md), with commands/hashes in the U0 evidence record. The general prime-power statement is proved above, not inferred from either finite scope.
 
-Source Theorem 6 and secondary predecessor `LIT?charter-unisolvence-codex-14,15` are unverified provenance. No original-paper reading or absence-of-prior-art claim is inherited.
+Source Theorem 6 and secondary predecessor `LIT-014`, `LIT-015` are unverified provenance. No original-paper reading or absence-of-prior-art claim is inherited.
 
 ## Scope and open items
 
-The `-1` endpoint exceptions are essential; the shortened character condition only applies off those two lines. General code weight distributions and character-sum applications remain outside scope. Independent audit pending.
+The `-1` endpoint exceptions are essential; the shortened character condition only applies off those two lines. General code weight distributions and character-sum applications remain outside scope. Supplementary Astra check complete; required Claude audit pending.
 
 ## History
 

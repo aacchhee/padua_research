@@ -1,4 +1,4 @@
-# PD-T?charter-u0-codex-02 — Rationality and the four Padua torus sign types
+# PD-T005 — Rationality and the four Padua torus sign types
 
 ID kind: PD-T. Aliases: field-validity dictionary, split/nonsplit axes.
 Split from: supplied finite_field_padua.md §1.
@@ -27,11 +27,11 @@ All nodes means every node of the canonical set, rather than a subset of rationa
 
 ## Status by part
 
-Overall status: **PROVED** (developer proof; independent acceptance PENDING). No rejected candidate or novelty claim.
+Overall status: **PROVED** (developer proof; supplementary Astra check complete; required Claude audit PENDING). No rejected candidate or novelty claim.
 
 ## Depends on
 
-Definitions in `PD-T?charter-u0-codex-01`; basic finite-field Frobenius arithmetic.
+Definitions in `PD-T004`; basic finite-field Frobenius arithmetic.
 
 ## Proof
 
@@ -45,11 +45,11 @@ If `rho^q=rho^-1`, then `rho^(q+1)=1` and `rho^(q²)=rho`, the norm-one descript
 
 ## Checks and sources
 
-Read supplied §1 and secondary predecessor records `LIT?charter-unisolvence-codex-02,14,15`; no original literature proof is a dependency. The source `padua_ff.py` cannot construct every good-characteristic set, because it only implements `F_p` and `F_(p²)`; absence from that implementation is not nonexistence in the algebraic closure. It checks 76 admissible prime cases and one partial-rationality example. See [measurements.md](measurements.md).
+Read supplied §1 and secondary predecessor records `LIT-002`, `LIT-014`, `LIT-015`; no original literature proof is a dependency. The source `padua_ff.py` cannot construct every good-characteristic set, because it only implements `F_p` and `F_(p²)`; absence from that implementation is not nonexistence in the algebraic closure. It checks 76 admissible prime cases and one partial-rationality example. See [measurements.md](measurements.md).
 
 ## Scope and open items
 
-This establishes the exact finite-field rationality criterion, not arbitrary extension-degree complexity. The source already notes the `n=1` degeneration; it is not a counterexample to an intended four-type statement. No PD-N is warranted. Independent audit pending.
+This establishes the exact finite-field rationality criterion, not arbitrary extension-degree complexity. The source already notes the `n=1` degeneration; it is not a counterexample to an intended four-type statement. No PD-N is warranted. Supplementary Astra check complete; required Claude audit pending.
 
 ## History
 

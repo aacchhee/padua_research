@@ -1,6 +1,7 @@
 # Paper map
 
-No manuscripts are planned or registered. Drafts belong under their scientific track and cite final IDs with the statuses in [PROOF_STATUS.md](PROOF_STATUS.md).
+No manuscript has been drafted or accepted. The following is a development brief only; publication-level overlap remains unverified.
 
-| Manuscript | Research question | Track / draft | Supporting result IDs | Gaps | Readiness |
+| Manuscript / brief | Research question | Track / draft | Supporting result IDs | Gaps | Readiness |
 |---|---|---|---|---|---|
+| Possible expository field-uniform note | Correct checkerboard criterion in every characteristic, canonical Padua discriminant/character examples | unisolvence; report brief only | PD-T001–008; PD-N001 | Claude audit; exact publication overlap with2014/2015 factors; optional applications | Not a manuscript; no novelty claim or publication action |

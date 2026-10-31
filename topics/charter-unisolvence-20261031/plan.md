@@ -27,3 +27,12 @@ U2: other patterns and higher-dimensional criteria, deferred pending U1 scope; 3
 | baseline | 0 | Source checksums passed; inventory in progress | LOG.md; literature/ |
 | U0 | 1 | Supplied-code reproduction and scope | directions/U0/ |
 | U1 | 1 | Factorization and decisive exact tests; launch after baseline | directions/U1/ |
+
+## Completed round and continuation disposition
+
+- U0 rounds1–4 completed: unchanged-source reproduction; Gram/discriminant; rationality/characters; codes and bounded stop. Six retained candidates, five proved core statements, finite observations separate, unverified ideal/complexity extensions deferred by the quick-registration scope.
+- U1 rounds1–5 completed: exact char2 kill test; odd-characteristic Gram proof; integral even-index repair; symbolic factors; direct kernel/cubature consequence. All concrete proof openings in these frozen questions were followed. No extension used.
+- U2 pre-screen records known resolution of real HSConj3 and existing determinant mechanisms; no separated frozen new mechanism survived to launch. U3 counts/pivots/decoding/char2 kernels remain explicit deferred frontier, not an abandoned proof opening.
+- Exact per-round questions, corrections and aborted symbolic expansion are retained in direction plans/records. No required developer scientific runs remain; Claude audit and Windows cold-storage receipt are next.
+
+Stage AUDIT. Next: `Claude (Opus 5.5 xhigh): Continue codex/charter-unisolvence-20261031.`

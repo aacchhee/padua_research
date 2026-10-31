@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-11 — reported source content
+### LIT-011 — reported source content
 
 - Verification: **UNVERIFIED** against original publication. `LITERATURE` attribution only; no inherited proof status.
 - Statement in faithful paraphrase: Lower-set subsets of tensor grids with arbitrary distinct axis coordinates support quasi-linear evaluation/interpolation. Check arithmetic hypotheses before comparing to finite-field Padua.

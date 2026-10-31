@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-02 — reported source content
+### LIT-002 — reported source content
 
 - Verification: **UNVERIFIED** against original publication. `LITERATURE` attribution only; no inherited proof status.
 - Statement in faithful paraphrase: Padua ideal generators, corrected reproducing kernel and cubature weights supply the classical ingredients for sparse recurrences. This is a source report, not a fresh proof.

@@ -1,8 +1,8 @@
-# PD-T?charter-u0-codex-08 — Unverified source extensions beyond bounded U0 registration
+# PD-T011 — Unverified source extensions beyond bounded U0 registration
 
 ID kind: PD-T. Aliases: ideal/recurrence transfer, arbitrary-length fast-transform bound.
 Split from: supplied finite_field_padua.md Theorems 4–5.
-Split into: none. Independently established core results have their own IDs `01–05` and do not change this target's status.
+Split into: none. Independently established core results have their own IDs `PD-T004–PD-T008` and do not change this target's status.
 
 ## Statement
 
@@ -21,18 +21,18 @@ Overall status: **OPEN** as local verification targets.
 
 | Part | Status | Missing obligation |
 |---|---|---|
-| Ideal/H-basis/recurrence universal statement | OPEN | Full explicit algebraic proof and independent reconstruction; finite code checks only are retained in `06` |
+| Ideal/H-basis/recurrence universal statement | OPEN | Full explicit algebraic proof and independent reconstruction; finite code checks only are retained in `PD-T009` |
 | Arbitrary-length complexity statement | OPEN | Cost model, necessary extension-degree/root availability, exact convolution algorithm and proved operation count; supplied code has quadratic prime-length DFT leaves |
 
 Disposition: deferred after bounded quick registration, not rejected. Neither a failed proof nor refutation is claimed. No PD-N is warranted.
 
 ## Depends on
 
-Definitions and good-characteristic unisolvence in `PD-T?charter-u0-codex-01`. The target 2 baseline must compare with `LIT?charter-unisolvence-codex-11,12,13`; these literature records remain secondary/unverified here.
+Definitions and good-characteristic unisolvence in `PD-T004`. The target 2 baseline must compare with `LIT-011`, `LIT-012`, `LIT-013`; these literature records remain secondary/unverified here.
 
 ## Checks and sources
 
-The source finite checks were actually reproduced, but do not close these universal targets. No additional targeted run or proof development is claimed. Source provenance: `LIT?charter-unisolvence-codex-25`, supplied note Theorems 4–5. Original-source priority and a complete duplicate screen remain pending.
+The source finite checks were actually reproduced, but do not close these universal targets. No additional targeted run or proof development is claimed. Source provenance: `LIT-025`, supplied note Theorems 4–5. Original-source priority and a complete duplicate screen remain pending.
 
 ## Scope and next unresolved steps
 

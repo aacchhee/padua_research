@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-03 — reported source content
+### LIT-003 — reported source content
 
 - Verification: **UNVERIFIED** against original publication. `LITERATURE` attribution only; no inherited proof status.
 - Statement in faithful paraphrase: Coefficient formulas reproduce total-degree interpolation in the product Chebyshev basis, with a factor 1/2 for the exceptional highest x mode.

@@ -1,4 +1,4 @@
-# PD-T?charter-u1-codex-03 — A field-valid Lagrange kernel and discrete-product cubature
+# PD-T003 — A field-valid Lagrange kernel and discrete-product cubature
 
 ID kind: PD-T. Aliases: U1e; monic product-OP kernel; square-root-free checkerboard interpolation.
 Split from: none. Split into: none. This is a classical direct corollary, not a novel mechanism.
@@ -21,8 +21,8 @@ Then ℓ_z∈Π_m and ℓ_z(z′)=1 when z=z′, 0 otherwise, for z′∈S_e. Co
 
 ## Status / dependencies / scope
 
-Overall status: PROVED (developer proof; independent adversarial audit pending).
-Depends on: `PD-T?charter-u1-codex-01`, exact weighted Gram identity and characteristic≠2 iff. All proof obligations are algebraic; no source theorem is inherited.
+Overall status: PROVED (developer proof; supplementary Astra check complete; required Claude audit pending).
+Depends on: `PD-T001`, exact weighted Gram identity and characteristic≠2 iff. All proof obligations are algebraic; no source theorem is inherited.
 Novelty/disposition: known reproducing-kernel argument applied to the established checkerboard factorization; no new mechanism. Closest predecessor is Harris–Simanek's kernel and cubature (reported Thms 1,5 and eq14), with classical Padua analogues. Exact source normalization is not used as a dependency.
 
 ## Proof

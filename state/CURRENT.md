@@ -22,8 +22,16 @@ Step 0 is a literature baseline under AC's explicit override, not a complete nov
 
 ## Evidence and next step
 
-Source import verified 17/17 checksums; exploration in progress. [Plan](../topics/charter-unisolvence-20261031/plan.md), [progress](../topics/charter-unisolvence-20261031/progress.md), [literature baseline](../literature/INDEX.md). No claim accepted yet.
+Source import verified17/17 checksums; bounded exploration and independent supplementary checks are complete. [Plan](../topics/charter-unisolvence-20261031/plan.md), [progress](../topics/charter-unisolvence-20261031/progress.md), [literature baseline](../literature/INDEX.md). Required Claude acceptance audit remains PENDING; written mathematical statuses are in PROOF_STATUS.md.
 
 Cold storage chosen by AC: `C:\Users\andreyac\Downloads\padua\cold_storage\charter-unisolvence-20261031\`. Stage handoff files and a manifest; do not claim Windows delivery from the cloud workspace.
 
-Stage WORK. Next: `Claude (Opus 5.5 xhigh): Continue codex/charter-unisolvence-20261031.`
+Stage AUDIT. Next: `Claude (Opus 5.5 xhigh): Continue codex/charter-unisolvence-20261031.`
+
+## Developed results and retained frontier
+
+PD-N001 refutes original U1 necessity in characteristic2 (F4,m1 andF8,m2). PD-T001 proves its exact characteristic≠2 restriction; PD-T002 gives a corrected even-index barycentric criterion over every field, both parities, allm≥0, with within-axis distinctness only. For lengthL axes, the corrected cutoff is1,…,floor((L−2)/2); empty ranges are vacuous. PD-T003 gives the monic-OP kernel/discrete-product cubature consequence in characteristic≠2.
+
+PD-T004–008 prove canonical good-characteristic Padua Gram/unisolvence, finite-field rationality, Dickson squared discriminant, quadratic-character description and general code structure. PD-T009/010 keep finite checks/distances MEASURED. PD-T012 proves universal linear-code upper bounds matching the measured q7 attainments. PD-T011 retains ideal/recurrence and unrestricted-transform source extensions OPEN, deferred after bounded registration. U2 other-pattern and U3 counting/pivot/decoding frontiers remain deferred.
+
+Mechanisms are conservatively attributed to existing determinant and kernel theory; no publication-level novelty claim. [Track](../tracks/unisolvence/README.md), [ranked report](../topics/charter-unisolvence-20261031/report.md), [audit handoff](../topics/charter-unisolvence-20261031/AUDIT_HANDOFF.md). Four U0 and five U1 conceptual rounds used; no extension or ultra assignment. The source theory remains retrievable through frozen commits and the ID crosswalk.

@@ -1,4 +1,4 @@
-# PD-T?charter-u0-codex-01 — Good-characteristic Padua Gram identity and unisolvence
+# PD-T004 — Good-characteristic Padua Gram identity and unisolvence
 
 ID kind: PD-T. Aliases: finite-field Padua, checkerboard Chebyshev orthogonality.
 Split from: supplied finite_field_padua.md Theorems 1–2 (unverified source statements).
@@ -18,7 +18,7 @@ Unisolvent means evaluation `P_n(E)->E^S` is an isomorphism. We assume actual ro
 
 ## Status by part
 
-Overall status: **PROVED** (developer-written independent derivation; adversarial acceptance PENDING).
+Overall status: **PROVED** (developer-written independent derivation; supplementary Astra check complete; required Claude audit PENDING).
 
 | Mathematical part | Status | Evidence |
 |---|---|---|
@@ -52,13 +52,13 @@ If `c_j=c_l`, then `rho^j,rho^l` solve the same quadratic `t^2-2c_j t+1`; hence 
 
 ## Checks and sources
 
-Supplied source `finite_field_padua.md §§1–2` was read but did not supply an inherited proof. Closest literature records: `LIT?charter-unisolvence-codex-02,03,14`; their original papers remain uninspected by this developer. No priority conclusion.
+Supplied source `finite_field_padua.md §§1–2` was read but did not supply an inherited proof. Closest literature records: `LIT-002`, `LIT-003`, `LIT-014`; their original papers remain uninspected by this developer. No priority conclusion.
 
 Unchanged source `padua_ff.py` was executed through `run_all.py`; the recorded 76 `(n,p)` cases with `1<=n<=10` passed. The finite check is supporting MEASURED evidence in [measurements.md](measurements.md), not the proof above. Commands, environment, source hashes and cold artifacts: `topics/charter-unisolvence-20261031/directions/U0/evidence.md`.
 
 ## Scope and open items
 
-The result is about the canonical root-of-unity checkerboard. It does not establish arbitrary labelled checkerboard unisolvence or the Harris–Simanek alternation criterion. Over `F_q`, coordinates must additionally satisfy the rationality criterion. Independent mathematical audit remains pending.
+The result is about the canonical root-of-unity checkerboard. It does not establish arbitrary labelled checkerboard unisolvence or the Harris–Simanek alternation criterion. Over `F_q`, coordinates must additionally satisfy the rationality criterion. Supplementary Astra mathematical check is complete; required Claude audit remains pending.
 
 ## History
 

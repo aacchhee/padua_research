@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-36 — predecessor content
+### LIT-036 — predecessor content
 
 - Statement in faithful paraphrase: Lower-set interpolation and its decomposition into blocks are existing frameworks.
 - Hypotheses and notation: retain the source real/ordered/triangular hypotheses; see locator.

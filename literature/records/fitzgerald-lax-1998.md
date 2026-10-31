@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-39 — active-campaign predecessor
+### LIT-039 — active-campaign predecessor
 
 - Statement in faithful paraphrase:Affine variety codes evaluate coordinate-ring functions at rational points; abstract describes theoretical Gröbner-basis decoding up to half the true minimum distance.
 - Hypotheses/notation:retain the precise field/dimension/source scope above.

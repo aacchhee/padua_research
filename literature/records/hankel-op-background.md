@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-35 — predecessor content
+### LIT-035 — predecessor content
 
 - Statement in faithful paraphrase: Finite Hankel nonsingularity is a classical condition for existence of a formal orthogonal sequence.
 - Hypotheses and notation: retain the source real/ordered/triangular hypotheses; see locator.

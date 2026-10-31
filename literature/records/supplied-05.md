@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-29 — reported source content
+### LIT-029 — reported source content
 
 - Verification: **UNVERIFIED** against original publication. `LITERATURE` attribution only; no inherited proof status.
 - Statement in faithful paraphrase: Imported research report; all mathematical claims, novelty verdicts and reported runs require independent reconstruction. Complete supplied note inspected, original papers and historical paths were not inherited.

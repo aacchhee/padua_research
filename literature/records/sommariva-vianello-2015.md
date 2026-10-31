@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-05 — reported source content
+### LIT-005 — reported source content
 
 - Verification: **UNVERIFIED** against original publication. `LITERATURE` attribution only; no inherited proof status.
 - Statement in faithful paraphrase: QRCP and NNLS compress discrete measures; QR of a Chebyshev Vandermonde builds the basis. The authors describe cost and orthogonality limitations of HL/seed algorithms and provide compressed least-squares/WAM bounds.

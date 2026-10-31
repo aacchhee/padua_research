@@ -1,8 +1,8 @@
-# PD-T?charter-u0-codex-06 — Finite reproduction observations for supplied Padua scripts
+# PD-T009 — Finite reproduction observations for supplied Padua scripts
 
 ID kind: PD-T. Aliases: U0 supplied-script finite checks.
 Split from: supplied finite_field_padua.md computational assertions.
-Split into: [code-distances.md](code-distances.md), `PD-T?charter-u0-codex-07`.
+Split into: [code-distances.md](code-distances.md), `PD-T010`.
 
 ## Statement
 
@@ -20,7 +20,7 @@ Scope is the actual source loop selections, not all primes below 6000 or every p
 
 ## Status by part
 
-Overall status: **MEASURED**. Each numbered observation is MEASURED. Separate written universal proofs live under IDs `01–05`; this record neither proves nor weakens them. Candidate disposition: retained finite evidence; independent acceptance pending.
+Overall status: **MEASURED**. Each numbered observation is MEASURED. Separate written universal proofs live under IDs `PD-T004–PD-T008`; this record neither proves nor weakens them. Candidate disposition: retained finite evidence; independent acceptance pending.
 
 ## Depends on
 
@@ -34,7 +34,7 @@ Canonical committed input code: `topics/charter-unisolvence-20261031/input-code/
 
 ## Sources
 
-`LIT?charter-unisolvence-codex-25`, the supplied note; original literature remains uninspected by this developer. The source's `<=4e-16` wording does not identify the actual printed log-determinant metric and does not match its reproduced rounded maximum `4.3e-16`; no determinant-relative-error assertion is retained.
+`LIT-025`, the supplied note; original literature remains uninspected by this developer. The source's `<=4e-16` wording does not identify the actual printed log-determinant metric and does not match its reproduced rounded maximum `4.3e-16`; no determinant-relative-error assertion is retained.
 
 ## Scope and open items
 

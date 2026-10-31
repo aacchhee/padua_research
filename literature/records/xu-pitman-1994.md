@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-07 — reported source content
+### LIT-007 — reported source content
 
 - Verification: **UNVERIFIED** against original publication. `LITERATURE` attribution only; no inherited proof status.
 - Statement in faithful paraphrase: Reported correct source for extended modified-block-Jacobi cubature theory relevant to Padua. Fulltext and exact hypotheses are pending-reference.

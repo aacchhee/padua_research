@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-15 — reported source content
+### LIT-015 — reported source content
 
 - Verification: **UNVERIFIED** against original publication. `LITERATURE` attribution only; no inherited proof status.
 - Statement in faithful paraphrase: Reported characteristic-zero sparse interpolation in generalized Chebyshev bases; finite-field Padua is not reported as covered.

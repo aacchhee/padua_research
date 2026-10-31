@@ -9,7 +9,7 @@ Rules/base `d36722823441dc40c6e19d69a174459348dd309c`; Codex development, 2026-1
 - Closest predecessor: Harris–Simanek ordered-real theorem, supplied hs_ff.py conjecture; no separating conjecture is claimed here.
 - Separation: replace ordered-real positivity by the exact stated quasi-definiteness condition over arbitrary fields. One unisolvent board with any zero required minor, or singular board with every required minor nonzero, kills the iff.
 - Cheapest test: characteristic 2 and m=0,1, then exact small symbolic determinant.
-- Actual result: characteristic 2, m=1 refutes the iff, with an elementary explicit proof. The unrestricted conjecture is REJECTED: refuted; restriction to char≠2 is preserved explicitly as U1c, never substituted silently.
+- Actual result: characteristic 2, m=1 refutes the iff, with an elementary explicit proof. The unrestricted conjecture is REJECTED: refuted; restriction to char≠2 is preserved explicitly as U1b, never substituted silently.
 - Canonical negative: `PD-N?charter-u1-codex-01`, theory `char2-refutation.md`.
 - Source scope caveat: finite odd-prime random agreement cannot detect the characteristic-2 obstruction.
 

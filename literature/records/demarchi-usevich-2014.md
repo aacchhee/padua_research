@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-31 — predecessor content
+### LIT-031 — predecessor content
 
 - Statement in faithful paraphrase: An almost-square tensor-grid determinant with specified triangular polynomial-matrix structure factors into univariate determinants. Section4 applies this to distinct Padua-like labels, displaying even degree; odd degree is said similar.
 - Hypotheses and notation: retain the source real/ordered/triangular hypotheses; see locator.

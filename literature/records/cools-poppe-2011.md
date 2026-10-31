@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-04 — reported source content
+### LIT-004 — reported source content
 
 - Verification: **UNVERIFIED** against original publication. `LITERATURE` attribution only; no inherited proof status.
 - Statement in faithful paraphrase: Padua is a rank-one Chebyshev lattice. Higher-dimensional lattices/blending provide cubature and hyperinterpolation, not a proved minimal-cardinality total-degree interpolating family. FFT implementations and searches are announced as future work.

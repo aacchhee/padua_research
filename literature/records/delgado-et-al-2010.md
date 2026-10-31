@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-08 — reported source content
+### LIT-008 — reported source content
 
 - Verification: **UNVERIFIED** against original publication. `LITERATURE` attribution only; no inherited proof status.
 - Statement in faithful paraphrase: Multivariate Uvarov modifications are prior art for finite mass-point changes; the rank boundary correction is not a new mechanism.

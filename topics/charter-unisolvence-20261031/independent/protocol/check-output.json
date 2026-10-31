@@ -1,0 +1,115 @@
+{
+  "head": "e626f63ac2728a7d7112640282d2e49b316fe2fe",
+  "theory_checks": [
+    {
+      "path": "tracks/unisolvence/theory/u0/code-distances.md",
+      "source_commit": "4f3d247c64d8c74a923b50f5ff575f83b5401cb8",
+      "source_blob_sha256": "a6008d7b5d81b7f7525fc7f0d7aae4e512be6d7e6387d97e400f515ded6326f7",
+      "source_hash_matches": true,
+      "final_hash_matches": true,
+      "exact_documented_transform": true
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/code-structure.md",
+      "source_commit": "4f3d247c64d8c74a923b50f5ff575f83b5401cb8",
+      "source_blob_sha256": "5e4ebdee93aaca6fd8b184ffc19dc97a7d1647e60518eff1876ebb217b7e8bef",
+      "source_hash_matches": true,
+      "final_hash_matches": true,
+      "exact_documented_transform": true
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/discriminant.md",
+      "source_commit": "4f3d247c64d8c74a923b50f5ff575f83b5401cb8",
+      "source_blob_sha256": "78f4054bccd0d0e8ffb72f93fe6ffe824828b5bf35706298789f9fe5973fb4c4",
+      "source_hash_matches": true,
+      "final_hash_matches": true,
+      "exact_documented_transform": true
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/gram-unisolvence.md",
+      "source_commit": "4f3d247c64d8c74a923b50f5ff575f83b5401cb8",
+      "source_blob_sha256": "9c939744c725adcff630ef503f610a50b2295d0d86c292c8a96b111cc433ffdd",
+      "source_hash_matches": true,
+      "final_hash_matches": true,
+      "exact_documented_transform": true
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/measurements.md",
+      "source_commit": "4f3d247c64d8c74a923b50f5ff575f83b5401cb8",
+      "source_blob_sha256": "7e078ec0cdb20ff48937d1629f1af8533155c91a5b13adbbec1c99a7049686eb",
+      "source_hash_matches": true,
+      "final_hash_matches": true,
+      "exact_documented_transform": true
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/open-targets.md",
+      "source_commit": "4f3d247c64d8c74a923b50f5ff575f83b5401cb8",
+      "source_blob_sha256": "ed402e6751ebb787459ead324a7b046d4c722ea16a1197a71e09dc4a907ab8a4",
+      "source_hash_matches": true,
+      "final_hash_matches": true,
+      "exact_documented_transform": true
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/quadratic-character.md",
+      "source_commit": "4f3d247c64d8c74a923b50f5ff575f83b5401cb8",
+      "source_blob_sha256": "1f742b41cb92e46c7dffd1e19ea70ea81d30bfdf950ed8cab8ad985a3ef8cc48",
+      "source_hash_matches": true,
+      "final_hash_matches": true,
+      "exact_documented_transform": true
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/rationality.md",
+      "source_commit": "4f3d247c64d8c74a923b50f5ff575f83b5401cb8",
+      "source_blob_sha256": "271899708ebd4dc693e8bd0e513c4074242554246e1edad741a6de451f21b5de",
+      "source_hash_matches": true,
+      "final_hash_matches": true,
+      "exact_documented_transform": true
+    },
+    {
+      "path": "tracks/unisolvence/theory/u1/all-characteristic-criterion.md",
+      "source_commit": "d5a5efbc6228ea21ef38b438ef976260f90ea83e",
+      "source_blob_sha256": "f02b5004a90ded8a7fa425c35ae701aaa30f286d5ebc3494f3afa6763f79655d",
+      "source_hash_matches": true,
+      "final_hash_matches": true,
+      "exact_documented_transform": true
+    },
+    {
+      "path": "tracks/unisolvence/theory/u1/char2-refutation.md",
+      "source_commit": "d5a5efbc6228ea21ef38b438ef976260f90ea83e",
+      "source_blob_sha256": "7214f3b070e73f1870ed831fde41b941a61b757724c800e64a9cbe744f8ce3ee",
+      "source_hash_matches": true,
+      "final_hash_matches": true,
+      "exact_documented_transform": true
+    },
+    {
+      "path": "tracks/unisolvence/theory/u1/kernel-cubature-corollary.md",
+      "source_commit": "d5a5efbc6228ea21ef38b438ef976260f90ea83e",
+      "source_blob_sha256": "c486a2f07292bb5feff058b56123dbf46010aea09c61f0256f739489093d7a31",
+      "source_hash_matches": true,
+      "final_hash_matches": true,
+      "exact_documented_transform": true
+    },
+    {
+      "path": "tracks/unisolvence/theory/u1/odd-characteristic-criterion.md",
+      "source_commit": "d5a5efbc6228ea21ef38b438ef976260f90ea83e",
+      "source_blob_sha256": "dbbf0eac543887725a695723a3159cb6150bcea3b7ad63c2702dc685d4adb972",
+      "source_hash_matches": true,
+      "final_hash_matches": true,
+      "exact_documented_transform": true
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/code-optimality-bounds.md",
+      "source_commit": "4f3d247c64d8c74a923b50f5ff575f83b5401cb8",
+      "source_blob_sha256": "10f7973b684e6d9fbdfe71da09b156ae8700386f2c8297cab25a8c4c8fab280c",
+      "source_hash_matches": true,
+      "final_hash_matches": true,
+      "exact_documented_transform": true
+    }
+  ],
+  "all_source_transforms_pass": true,
+  "non_git_non_cache_total_bytes": 1035928,
+  "largest_file_bytes": 77280,
+  "pdf_zip_html_paths": [],
+  "missing_canonical_markdown_links": [],
+  "rules_or_github_diff": ""
+}

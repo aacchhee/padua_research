@@ -4,7 +4,7 @@
 - Base and rules SHA: `d36722823441dc40c6e19d69a174459348dd309c` (AGENTS.md, agents/WORKFLOW.md, agents/codex/CODEX.md read again at branch head).
 - Developer/orchestrator: Codex; runtime model/effort not exposed by the root runtime. Delegated mathematical work uses gpt-6.1-sol xhigh; mechanical/literature work gpt-6.1-sol medium.
 - Auditor: Claude, PENDING; independent Astra reconstruction supplements handoff.
-- Stage: WORK
+- Stage: AUDIT
 - Next: `Claude (Opus 5.5 xhigh): Continue codex/charter-unisolvence-20261031.`
 
 ## 2026-10-31 — Start and authority
@@ -42,3 +42,25 @@ Root reproduced unchanged harris_simanek_check.py with Python3.12.14, numpy2.3.5
 Charter/baseline committed and pushed. Prior-art expansion adds40 total source records (still provisional). GitHub open-PR listing returned no open PRs, so no active allocation reservation observed; refresh again at final PR preparation.
 
 Copied nine relied-on input scripts byte-identically into input-code/ (source SHA256 and Git blob identities in IDENTITY.json). Reproduction commands can now be run from committed code without reacquiring ignored original notes. Original run_all lacks child exit propagation; U0 records individual exit codes in a wrapper. Root floating-point Harris log retained without promoting its broad numerical agreement claims.
+
+## Development completed and PR preparation
+
+Scientific source checkpoints: U0 `4f3d247c64d8c74a923b50f5ff575f83b5401cb8`, U1 `d5a5efbc6228ea21ef38b438ef976260f90ea83e`, independent U1 receipts `e626f63ac2728a7d7112640282d2e49b316fe2fe`. These preserve pre-integration hashes/paths. Four U0 and five U1 conceptual rounds; no extension/ultra. U3 kernel is a direct U1 consequence, not a third simultaneous substantive direction. No U2 scientific launch.
+
+Independent U0: gpt-6-astra high; before-producer reconstruction, actual separate6sourcechildren, own exactchecker112determinantcases and primepowers, producer checker rerun, all-code elementary bounds. Independent U1: gpt-6-astra xhigh; before-producer derivation, separate9336axis-pair/18672board checker, frozen producer bothmode reruns and symbolic-summary verification. They supplement, do not replace Claude audit. All exact finite aggregate observations stay MEASURED.
+
+At PR preparation refreshed origin/main=d36722823441dc40c6e19d69a174459348dd309c and open-PR API=[]; one allocation owner, no competing reservations. Created tracks/unisolvence, allocated12PD-T,1PD-N,41LIT and51IDEA entries. ID_CROSSWALK/ALLOCATIONS preserve every mapping and source disposition. integration-impact.json verifies actual source bytes plus listed ID/editorial-reference/audit metadata transforms; no proof/statement/epistemic status changed.
+
+Resolved independent minor U1 candidate prose findings: corrected odd-restriction alias U1c→U1b, and replaced symbolic-pending wording with completed canonical proof/check status. Full symbolic record explicitly distinguishes m2directmultivariate from m3/4factor assembly+directslices. The aborted rational expansion is retained as a computational route, not PD-N. Literature classifies axis/Hankel mechanism as reformulation; HSConj3 correction and all source scope limits retained.
+
+Cold-storage portable integrity checker executed PASS104artifacts/17archivepayloads; bundle/manifest identities and actual cloud staging versus pending Windows delivery are in COLD_STORAGE.md. Original paper PDFs/fulltext extracts never committed. Root package-build quoting typo was fixed before successful manifest generation; no scientific output was affected.
+
+Required cross-agent acceptance: PENDING Claude Opus5.5xhigh. Draft PR is authorized/prepared; no merge permission requested or action taken. Final protocol checker gpt-6-astra medium supplements handoff and reviews registry/provenance/size/link consistency.
+
+Stage AUDIT. Next: `Claude (Opus 5.5 xhigh): Continue codex/charter-unisolvence-20261031.`
+
+## Final verification receipt
+
+Supplementary protocol reviewer (assigned gpt-6-astra medium) froze independent/protocol/report.md:82/82audit-target hashes,13/13actual source-blob/documented transforms,55provenance rows,canonical links,public-file/size scan all PASS; two editorial findings resolved with exact replacement lists. Independently reran portable checker PASS104files+17archivepayloads and verified ZIP identity. Root also extracted the ZIP into a fresh temporary directory and ran the portable checker there:PASS104+17. Parsed10new scientific/packaging Python helpers without errors and git diff --check passed. Final source math checks are complete; further repetition is not needed absent a new defect.
+
+All delivered canonical theorem statuses remain10PROVED (ninePD-T plusonePD-N),2MEASURED,1OPEN. Required Claude cross-agent acceptance remainsPENDING. No rules/agents/.github changes,main writes,tags,merge orforcepush.

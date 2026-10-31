@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-32 — predecessor content
+### LIT-032 — predecessor content
 
 - Statement in faithful paraphrase: Interlacing two real rectangular grids gives unisolvence in associated lower polynomial spaces; slides use tensor interpolation/Newton divided differences. The bibliography identifies 2009,2014,2015 determinant predecessors.
 - Hypotheses and notation: retain the source real/ordered/triangular hypotheses; see locator.

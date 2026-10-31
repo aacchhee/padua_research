@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-40 — active-campaign predecessor
+### LIT-040 — active-campaign predecessor
 
 - Statement in faithful paraphrase:The abstract computes dimension, length and minimum distance for evaluation codes on Cartesian products of finite sets.
 - Hypotheses/notation:retain the precise field/dimension/source scope above.

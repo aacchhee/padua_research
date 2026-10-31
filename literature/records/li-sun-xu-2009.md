@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-10 — reported source content
+### LIT-010 — reported source content
 
 - Verification: **UNVERIFIED** against original publication. `LITERATURE` attribution only; no inherited proof status.
 - Statement in faithful paraphrase: Reported conjectural asymptotic n³/4 node requirement for degree 2n−1 Chebyshev cubature on the cube. This is a conjecture, not an obstruction theorem or finite-n certificate.

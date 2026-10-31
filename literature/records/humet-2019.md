@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-21 — reported source content
+### LIT-021 — reported source content
 
 - Verification: **UNVERIFIED** against original publication. `LITERATURE` attribution only; no inherited proof status.
 - Statement in faithful paraphrase: Round3 reports no downdating, stability analysis or truncated variant; vector-weight extension and generalized implicit Q theorem occur in slides. These are reports of coverage, not independently verified absences.

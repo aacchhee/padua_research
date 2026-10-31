@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-33 — predecessor content
+### LIT-033 — predecessor content
 
 - Statement in faithful paraphrase: For decreasing real lists and arbitrary nonnegative excess σ, Lagrange bases exist in degree n+floor(σ/2); the paper expressly proves Harris–Simanek Conjecture3 and gives quotient-space uniqueness.
 - Hypotheses and notation: retain the source real/ordered/triangular hypotheses; see locator.

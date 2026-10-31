@@ -1,4 +1,4 @@
-# PD-N?charter-u1-codex-01 — Characteristic-two refutation of the supplied quasi-definiteness iff
+# PD-N001 — Characteristic-two refutation of the supplied quasi-definiteness iff
 
 ID kind: PD-N. Aliases: U1a refutation; loss of parity in alternation weights.
 Split from: supplied U1a conjecture, unchanged scope: for every field and every m, a labelled checkerboard S_e(X,Y) is unisolvent iff both alternation functionals have all leading Hankel minors of orders 1,…,|H|−1 nonzero.
@@ -14,7 +14,7 @@ Let K have characteristic 2 and an element a∉{0,1}, e.g. K=F_2[a]/(a²+a+1). T
 
 ## Status by part
 
-Overall status: PROVED (elementary explicit proof; independent audit pending).
+Overall status: PROVED (elementary explicit proof; supplementary Astra check complete; required Claude audit pending).
 Candidate / claim disposition: REJECTED: refuted, for the exact arbitrary-field iff. The characteristic≠2 restriction is a separately preserved result, not a silent narrowing.
 
 ## Negative-result scope
@@ -38,7 +38,7 @@ No imported mathematical dependency. Exact F4 implementation and both determinan
 
 ## Scope and open items
 
-This refutes necessity in the exact arbitrary-field claim. Its sufficiency direction remains true over every field: it is proved in characteristic≠2 in the separate theorem, and in characteristic 2 its antecedent is false because Y has length≥2 and Δ1(Y)=0. It does not refute a criterion using divided-alternation/even-index barycentric moments. Independent adversarial reconstruction pending.
+This refutes necessity in the exact arbitrary-field claim. Its sufficiency direction remains true over every field: it is proved in characteristic≠2 in the separate theorem, and in characteristic 2 its antecedent is false because Y has length≥2 and Δ1(Y)=0. It does not refute a criterion using divided-alternation/even-index barycentric moments. Supplementary Astra reconstruction complete; required Claude audit pending.
 
 ## History
 

@@ -1,0 +1,252 @@
+[
+  {
+    "old_path": "theory/unisolvence/u0/code-distances.md",
+    "new_path": "tracks/unisolvence/theory/u0/code-distances.md",
+    "before_sha256": "a6008d7b5d81b7f7525fc7f0d7aae4e512be6d7e6387d97e400f515ded6326f7",
+    "after_sha256": "641178876ac5a6a398ed87c835af94dc767668c59859f18002d81ad1c8c43377",
+    "impact": "Exact provisional-to-final ID replacements, path migration, and listed editorial references/audit metadata only; mathematical statements and proofs unchanged",
+    "source_commit": "4f3d247c64d8c74a923b50f5ff575f83b5401cb8",
+    "editorial_replacements": [
+      {
+        "old": "`PD-T004,04,05`",
+        "new": "`PD-T004`, `PD-T007`, `PD-T008`"
+      }
+    ]
+  },
+  {
+    "old_path": "theory/unisolvence/u0/code-structure.md",
+    "new_path": "tracks/unisolvence/theory/u0/code-structure.md",
+    "before_sha256": "5e4ebdee93aaca6fd8b184ffc19dc97a7d1647e60518eff1876ebb217b7e8bef",
+    "after_sha256": "a6188a5097201aee46d4a2407efbdcf96b2ef69ebe1dcbde87e67f9a60dacf91",
+    "impact": "Exact provisional-to-final ID replacements, path migration, and listed editorial references/audit metadata only; mathematical statements and proofs unchanged",
+    "source_commit": "4f3d247c64d8c74a923b50f5ff575f83b5401cb8",
+    "editorial_replacements": [
+      {
+        "old": "stay in `07`",
+        "new": "stay in `PD-T010`"
+      },
+      {
+        "old": "independent acceptance PENDING",
+        "new": "supplementary Astra check complete; required Claude audit PENDING"
+      }
+    ]
+  },
+  {
+    "old_path": "theory/unisolvence/u0/discriminant.md",
+    "new_path": "tracks/unisolvence/theory/u0/discriminant.md",
+    "before_sha256": "78f4054bccd0d0e8ffb72f93fe6ffe824828b5bf35706298789f9fe5973fb4c4",
+    "after_sha256": "1975f3cab8a337b3e65e4d00df9c24b779e9ddfa35d9d3ee9525bc0b695bbd84",
+    "impact": "Exact provisional-to-final ID replacements, path migration, and listed editorial references/audit metadata only; mathematical statements and proofs unchanged",
+    "source_commit": "4f3d247c64d8c74a923b50f5ff575f83b5401cb8",
+    "editorial_replacements": [
+      {
+        "old": "`LIT-002,03`",
+        "new": "`LIT-002`, `LIT-003`"
+      },
+      {
+        "old": "Independent audit pending",
+        "new": "Supplementary Astra check complete; required Claude audit pending"
+      },
+      {
+        "old": "independent acceptance PENDING",
+        "new": "supplementary Astra check complete; required Claude audit PENDING"
+      }
+    ]
+  },
+  {
+    "old_path": "theory/unisolvence/u0/gram-unisolvence.md",
+    "new_path": "tracks/unisolvence/theory/u0/gram-unisolvence.md",
+    "before_sha256": "9c939744c725adcff630ef503f610a50b2295d0d86c292c8a96b111cc433ffdd",
+    "after_sha256": "24e39132b79a56c215f0e823a90a1909b82c64e01373a266047c2fafb1c5888c",
+    "impact": "Exact provisional-to-final ID replacements, path migration, and listed editorial references/audit metadata only; mathematical statements and proofs unchanged",
+    "source_commit": "4f3d247c64d8c74a923b50f5ff575f83b5401cb8",
+    "editorial_replacements": [
+      {
+        "old": "`LIT-002,03,14`",
+        "new": "`LIT-002`, `LIT-003`, `LIT-014`"
+      },
+      {
+        "old": "adversarial acceptance PENDING",
+        "new": "supplementary Astra check complete; required Claude audit PENDING"
+      },
+      {
+        "old": "Independent mathematical audit remains pending",
+        "new": "Supplementary Astra mathematical check is complete; required Claude audit remains pending"
+      }
+    ]
+  },
+  {
+    "old_path": "theory/unisolvence/u0/measurements.md",
+    "new_path": "tracks/unisolvence/theory/u0/measurements.md",
+    "before_sha256": "7e078ec0cdb20ff48937d1629f1af8533155c91a5b13adbbec1c99a7049686eb",
+    "after_sha256": "bd42c34e2328facd5686a4bf8962977efa7237e496408dc368936e046aac4fbe",
+    "impact": "Exact provisional-to-final ID replacements, path migration, and listed editorial references/audit metadata only; mathematical statements and proofs unchanged",
+    "source_commit": "4f3d247c64d8c74a923b50f5ff575f83b5401cb8",
+    "editorial_replacements": [
+      {
+        "old": "IDs `01\u201305`",
+        "new": "IDs `PD-T004\u2013PD-T008`"
+      }
+    ]
+  },
+  {
+    "old_path": "theory/unisolvence/u0/open-targets.md",
+    "new_path": "tracks/unisolvence/theory/u0/open-targets.md",
+    "before_sha256": "ed402e6751ebb787459ead324a7b046d4c722ea16a1197a71e09dc4a907ab8a4",
+    "after_sha256": "75e993977e9d1cd5a0c4437b003bafed181475c0ec36906e8b974653df86562c",
+    "impact": "Exact provisional-to-final ID replacements, path migration, and listed editorial references/audit metadata only; mathematical statements and proofs unchanged",
+    "source_commit": "4f3d247c64d8c74a923b50f5ff575f83b5401cb8",
+    "editorial_replacements": [
+      {
+        "old": "IDs `01\u201305`",
+        "new": "IDs `PD-T004\u2013PD-T008`"
+      },
+      {
+        "old": "retained in `06`",
+        "new": "retained in `PD-T009`"
+      },
+      {
+        "old": "`LIT-011,12,13`",
+        "new": "`LIT-011`, `LIT-012`, `LIT-013`"
+      }
+    ]
+  },
+  {
+    "old_path": "theory/unisolvence/u0/quadratic-character.md",
+    "new_path": "tracks/unisolvence/theory/u0/quadratic-character.md",
+    "before_sha256": "1f742b41cb92e46c7dffd1e19ea70ea81d30bfdf950ed8cab8ad985a3ef8cc48",
+    "after_sha256": "82b265d4fa94464e7700b24dffaca3690a647d62a9b6f132b353463cb02dbde7",
+    "impact": "Exact provisional-to-final ID replacements, path migration, and listed editorial references/audit metadata only; mathematical statements and proofs unchanged",
+    "source_commit": "4f3d247c64d8c74a923b50f5ff575f83b5401cb8",
+    "editorial_replacements": [
+      {
+        "old": "`PD-T004,02`",
+        "new": "`PD-T004`, `PD-T005`"
+      },
+      {
+        "old": "rationality from `02`",
+        "new": "rationality from `PD-T005`"
+      },
+      {
+        "old": "`LIT-014,15`",
+        "new": "`LIT-014`, `LIT-015`"
+      },
+      {
+        "old": "Independent audit pending",
+        "new": "Supplementary Astra check complete; required Claude audit pending"
+      },
+      {
+        "old": "adversarial acceptance PENDING",
+        "new": "supplementary Astra check complete; required Claude audit PENDING"
+      }
+    ]
+  },
+  {
+    "old_path": "theory/unisolvence/u0/rationality.md",
+    "new_path": "tracks/unisolvence/theory/u0/rationality.md",
+    "before_sha256": "271899708ebd4dc693e8bd0e513c4074242554246e1edad741a6de451f21b5de",
+    "after_sha256": "3e0765a861d9d8b1a0efa27cd1c6576a698ca9c28b1ea1d532943e3244b09858",
+    "impact": "Exact provisional-to-final ID replacements, path migration, and listed editorial references/audit metadata only; mathematical statements and proofs unchanged",
+    "source_commit": "4f3d247c64d8c74a923b50f5ff575f83b5401cb8",
+    "editorial_replacements": [
+      {
+        "old": "`LIT-002,14,15`",
+        "new": "`LIT-002`, `LIT-014`, `LIT-015`"
+      },
+      {
+        "old": "Independent audit pending",
+        "new": "Supplementary Astra check complete; required Claude audit pending"
+      },
+      {
+        "old": "independent acceptance PENDING",
+        "new": "supplementary Astra check complete; required Claude audit PENDING"
+      }
+    ]
+  },
+  {
+    "old_path": "theory/unisolvence/u1/all-characteristic-criterion.md",
+    "new_path": "tracks/unisolvence/theory/u1/all-characteristic-criterion.md",
+    "before_sha256": "f02b5004a90ded8a7fa425c35ae701aaa30f286d5ebc3494f3afa6763f79655d",
+    "after_sha256": "4a89fd08c7b654ccd63abcec30076ab738dbe79e96880bb79163bf36cfd75b5f",
+    "impact": "Exact provisional-to-final ID replacements, path migration, and listed editorial references/audit metadata only; mathematical statements and proofs unchanged",
+    "source_commit": "d5a5efbc6228ea21ef38b438ef976260f90ea83e",
+    "editorial_replacements": [
+      {
+        "old": "independent adversarial reconstruction pending",
+        "new": "supplementary Astra reconstruction complete; required Claude audit pending"
+      },
+      {
+        "old": "Independent adversarial reconstruction/rerun and prior-art comparison remain required before acceptance.",
+        "new": "Supplementary Astra reconstruction/rerun and bounded prior-art comparison are complete; required Claude audit remains pending."
+      }
+    ]
+  },
+  {
+    "old_path": "theory/unisolvence/u1/char2-refutation.md",
+    "new_path": "tracks/unisolvence/theory/u1/char2-refutation.md",
+    "before_sha256": "7214f3b070e73f1870ed831fde41b941a61b757724c800e64a9cbe744f8ce3ee",
+    "after_sha256": "3e911cb10049c2d29cdefa67fac3f0f706d90124f03951bb9d199f3b6167d4c9",
+    "impact": "Exact provisional-to-final ID replacements, path migration, and listed editorial references/audit metadata only; mathematical statements and proofs unchanged",
+    "source_commit": "d5a5efbc6228ea21ef38b438ef976260f90ea83e",
+    "editorial_replacements": [
+      {
+        "old": "Independent adversarial reconstruction pending",
+        "new": "Supplementary Astra reconstruction complete; required Claude audit pending"
+      },
+      {
+        "old": "independent audit pending",
+        "new": "supplementary Astra check complete; required Claude audit pending"
+      }
+    ]
+  },
+  {
+    "old_path": "theory/unisolvence/u1/kernel-cubature-corollary.md",
+    "new_path": "tracks/unisolvence/theory/u1/kernel-cubature-corollary.md",
+    "before_sha256": "c486a2f07292bb5feff058b56123dbf46010aea09c61f0256f739489093d7a31",
+    "after_sha256": "ee42277b64b1267938fe147511a6b1759fe75efb35cdc958508b52e244bd42d2",
+    "impact": "Exact provisional-to-final ID replacements, path migration, and listed editorial references/audit metadata only; mathematical statements and proofs unchanged",
+    "source_commit": "d5a5efbc6228ea21ef38b438ef976260f90ea83e",
+    "editorial_replacements": [
+      {
+        "old": "independent adversarial audit pending",
+        "new": "supplementary Astra check complete; required Claude audit pending"
+      }
+    ]
+  },
+  {
+    "old_path": "theory/unisolvence/u1/odd-characteristic-criterion.md",
+    "new_path": "tracks/unisolvence/theory/u1/odd-characteristic-criterion.md",
+    "before_sha256": "dbbf0eac543887725a695723a3159cb6150bcea3b7ad63c2702dc685d4adb972",
+    "after_sha256": "5c16ad8d54f9f9c7058501afc2b7d0c5a14ec1a647811162a268ab7fcae6dca7",
+    "impact": "Exact provisional-to-final ID replacements, path migration, and listed editorial references/audit metadata only; mathematical statements and proofs unchanged",
+    "source_commit": "d5a5efbc6228ea21ef38b438ef976260f90ea83e",
+    "editorial_replacements": [
+      {
+        "old": "independent adversarial audit pending",
+        "new": "supplementary Astra check complete; required Claude audit pending"
+      },
+      {
+        "old": "provisional LIT-001; original-source verification and De Marchi\u2013Usevich comparison are external pending obligations.",
+        "new": "LIT-001; bounded primary inspection and De Marchi\u2013Usevich comparison are recorded in literature/U1-COMPARISON.md; publication-level novelty remains unverified."
+      },
+      {
+        "old": "Independent adversarial reconstruction and final literature/ID review remain pending.",
+        "new": "Supplementary Astra reconstruction and final literature/ID review are recorded in the track audit log; required Claude audit remains pending."
+      }
+    ]
+  },
+  {
+    "old_path": "topics/charter-unisolvence-20261031/independent/u0/code-optimality-bounds.md",
+    "new_path": "tracks/unisolvence/theory/u0/code-optimality-bounds.md",
+    "before_sha256": "10f7973b684e6d9fbdfe71da09b156ae8700386f2c8297cab25a8c4c8fab280c",
+    "after_sha256": "327690212b7968c336d5c9e5371fdc119d334be8efd96d16d4f27d7a9c770388",
+    "impact": "Exact provisional-to-final ID replacements, path migration, and listed editorial references/audit metadata only; mathematical statements and proofs unchanged",
+    "source_commit": "4f3d247c64d8c74a923b50f5ff575f83b5401cb8",
+    "editorial_replacements": [
+      {
+        "old": "Final cross-agent audit and final-ID allocation remain pending.",
+        "new": "Final IDs are allocated in ID_CROSSWALK.md; required Claude cross-agent audit remains pending."
+      }
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+# U3 consequences and retained frontier
+
+The frozen question for the developed consequence was written before derivation in U1 round5: does its exact Gram identity yield a monic-OP cardinal kernel without positivity, and to which product functional is cubature exact? PD-T003 answers it in characteristic≠2; this is a direct U1 consequence rather than a third concurrent substantive direction. Closest predecessor is the classical reproducing-kernel argument and Harris–Simanek. A failed cardinal identity or an unnoticed continuous/discrete measure change would kill the claimed formula. Independent Astra reconstruction found no such gap.
+
+IDEA-005 records this known-mechanism consequence. The characteristic2 version of the same factor2 formula is not asserted. IDEA-014 (algebraic zero-pivot certificates) remains deferred: an isotropic Gram pivot can vanish over a general field even when evaluation is invertible, so assumptions must separate recurrence breakdown from non-unisolvence. IDEA-015 covers decoding/weight distributions; IDEA-016 covers exact counts of unisolvent labellings over Fq. They remain deferred with no claimed proof opening. Cheapest next count test: fix q,m, quotient only justified label symmetries, compare exhaustive counts to zeros of the proved minors; random-rate agreement is only MEASURED.
+
+U0 already supplies the explicit weighted code dual/dimension/lower bound and its own measured finite examples, not an additional concurrent U3 campaign. No extra scientific runs claimed in this folder.

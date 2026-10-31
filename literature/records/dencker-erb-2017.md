@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-14 — reported source content
+### LIT-014 — reported source content
 
 - Verification: **UNVERIFIED** against original publication. `LITERATURE` attribution only; no inherited proof status.
 - Statement in faithful paraphrase: Multidimensional Lissajous–Chebyshev interpolation/discrete orthogonality is relevant predecessor; characteristic transfer is an unverified proposed derivation.

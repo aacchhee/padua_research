@@ -1,4 +1,4 @@
-# PD-T?charter-u0-codex-03 — Squared Padua Vandermonde in Dickson coordinates
+# PD-T006 — Squared Padua Vandermonde in Dickson coordinates
 
 ID kind: PD-T. Aliases: Padua discriminant, closed-form squared determinant.
 Split from: supplied finite_field_padua.md Theorem 3.
@@ -6,7 +6,7 @@ Split into: none.
 
 ## Statement
 
-Under `PD-T?charter-u0-codex-01`, let `A` be the total-degree monomial evaluation matrix at `(X,Y)=(2x,2y)` with columns `X^aY^b`, `a+b<=n`, and `N=(n+1)(n+2)/2`. Then
+Under `PD-T004`, let `A` be the total-degree monomial evaluation matrix at `(X,Y)=(2x,2y)` with columns `X^aY^b`, `a+b<=n`, and `N=(n+1)(n+2)/2`. Then
 
 `det(A)^2 = 2^((n²+3n+6)/2) [n(n+1)]^N`.
 
@@ -18,11 +18,11 @@ Matrix row and column order is arbitrary because the determinant is squared. The
 
 ## Status by part
 
-Overall status: **PROVED** (complete developer derivation; independent acceptance PENDING). No novelty verdict.
+Overall status: **PROVED** (complete developer derivation; supplementary Astra check complete; required Claude audit PENDING). No novelty verdict.
 
 ## Depends on
 
-[gram-unisolvence.md](gram-unisolvence.md), `PD-T?charter-u0-codex-01`. Elementary determinant and integral-reduction arithmetic. No source theorem inherited.
+[gram-unisolvence.md](gram-unisolvence.md), `PD-T004`. Elementary determinant and integral-reduction arithmetic. No source theorem inherited.
 
 ## Proof
 
@@ -46,11 +46,11 @@ In characteristic zero, every `X_j=zeta^j+zeta^-j` and `Y_k=eta^k+eta^-k` is an 
 
 The unmodified source modular checks passed in 76 cases. The source floating-point calculation for `1<=n<=12` is only an observation about log determinants; it is not an exact determinant check or a bound on relative determinant error. Independent developer code also checks `q=3,9` exactly. See [measurements.md](measurements.md) and the U0 evidence manifest.
 
-Supplied Theorem 3 and predecessor records `LIT?charter-unisolvence-codex-02,03` are provenance, not proof dependencies. Original papers and priority remain unverified.
+Supplied Theorem 3 and predecessor records `LIT-002`, `LIT-003` are provenance, not proof dependencies. Original papers and priority remain unverified.
 
 ## Scope and open items
 
-The formula is the squared monomial determinant in the specified coordinates, not the unsquared determinant or an arbitrary point normalization. It does not state that every unisolvent set of the same size is impossible in bad characteristic. Independent audit pending.
+The formula is the squared monomial determinant in the specified coordinates, not the unsquared determinant or an arbitrary point normalization. It does not state that every unisolvent set of the same size is impossible in bad characteristic. Supplementary Astra check complete; required Claude audit pending.
 
 ## History
 

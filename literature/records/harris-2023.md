@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-34 — predecessor content
+### LIT-034 — predecessor content
 
 - Statement in faithful paraphrase: Positive real three-term recurrence sequences admit alternation points precisely under stated reflection relations among coefficients.
 - Hypotheses and notation: retain the source real/ordered/triangular hypotheses; see locator.

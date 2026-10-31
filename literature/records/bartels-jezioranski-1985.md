@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-17 — reported source content
+### LIT-017 — reported source content
 
 - Verification: **UNVERIFIED** against original publication. `LITERATURE` attribution only; no inherited proof status.
 - Statement in faithful paraphrase: Truncated multivariate recurrence predates HL; no rounding analysis is reported. Weisfeld1959 is reported as an earlier predecessor.

@@ -1,7 +1,7 @@
-# PD-T?charter-u0-codex-07 — Eight exact finite Padua-code distance observations
+# PD-T010 — Eight exact finite Padua-code distance observations
 
 ID kind: PD-T. Aliases: small Padua evaluation-code distances.
-Split from: supplied finite_field_padua.md §4 and general code claims `PD-T?charter-u0-codex-05`.
+Split from: supplied finite_field_padua.md §4 and general code claims `PD-T008`.
 Split into: none.
 
 ## Statement
@@ -29,7 +29,7 @@ Overall status: **MEASURED**. All eight rows are MEASURED, with finite exhaustiv
 
 ## Depends on
 
-Specified scripts/interpreter and field arithmetic. The mathematical interpretation of the matrices uses `PD-T?charter-u0-codex-01,04,05`, whose proofs are separate.
+Specified scripts/interpreter and field arithmetic. The mathematical interpretation of the matrices uses `PD-T004`, `PD-T007`, `PD-T008`, whose proofs are separate.
 
 ## Checks and evidence
 
@@ -39,7 +39,7 @@ The independent adversary separately reports `q=7`, `k=1,2` enumeration returnin
 
 ## Sources
 
-Supplied §4, `LIT?charter-unisolvence-codex-25`, reports the table and optimality claims. Ball (2012) was not read and is not a dependency.
+Supplied §4, `LIT-025`, reports the table and optimality claims. Ball (2012) was not read and is not a dependency.
 
 ## Scope and open items
 

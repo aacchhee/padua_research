@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-09 — reported source content
+### LIT-009 — reported source content
 
 - Verification: **UNVERIFIED** against original publication. `LITERATURE` attribution only; no inherited proof status.
 - Statement in faithful paraphrase: Cubature nodes as joint eigenvalues of commuting extensions are prior art. Supplied ingestion inspected abstract only; exact theorem and dimensions remain to check.

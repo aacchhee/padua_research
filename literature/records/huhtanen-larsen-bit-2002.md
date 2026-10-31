@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-16 — reported source content
+### LIT-016 — reported source content
 
 - Verification: **UNVERIFIED** against original publication. `LITERATURE` attribution only; no inherited proof status.
 - Statement in faithful paraphrase: Truncated short multivariate recurrences, vanishing-polynomial detection and curve fitting predate the proposed mechanisms. Source numerical claims remain separately unverified.

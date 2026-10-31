@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-19 — reported source content
+### LIT-019 — reported source content
 
 - Verification: **UNVERIFIED** against original publication. `LITERATURE` attribution only; no inherited proof status.
 - Statement in faithful paraphrase: Exact orthogonal bases and multiplication matrices with isotropy pivoting are prior art. Displacement-rank comment is a comparison remark, not a theorem.

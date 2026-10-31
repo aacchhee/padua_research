@@ -1,8 +1,8 @@
-# PD-T?charter-u0-codex-05 — Evaluation-code dimension, weighted dual and distance bound
+# PD-T008 — Evaluation-code dimension, weighted dual and distance bound
 
 ID kind: PD-T. Aliases: Padua codes, footprint lower bound.
 Split from: supplied finite_field_padua.md §4 general claims.
-Split into: [code-distances.md](code-distances.md), `PD-T?charter-u0-codex-07`, contains only finite measured distances.
+Split into: [code-distances.md](code-distances.md), `PD-T010`, contains only finite measured distances.
 
 ## Statement
 
@@ -10,7 +10,7 @@ Let the canonical `Pad_n` consist of `N=(n+1)(n+2)/2` rational points over `F_q`
 
 `C_k^perp = W span{ev(T_a(x)T_b(y)): k<a+b<=n}`
 
-for the ordinary coordinate dot product, where `W` is the invertible diagonal weight matrix in `PD-T?charter-u0-codex-01`. Its minimum nonzero Hamming weight satisfies `d(C_k)>=dim P_(n-k)=(n-k+1)(n-k+2)/2`.
+for the ordinary coordinate dot product, where `W` is the invertible diagonal weight matrix in `PD-T004`. Its minimum nonzero Hamming weight satisfies `d(C_k)>=dim P_(n-k)=(n-k+1)(n-k+2)/2`.
 
 ## Definitions and assumptions
 
@@ -18,11 +18,11 @@ Hamming weight counts nonzero coordinates. This statement does not claim any exa
 
 ## Status by part
 
-Overall status: **PROVED** (developer derivation; independent acceptance PENDING). No novelty claim.
+Overall status: **PROVED** (developer derivation; supplementary Astra check complete; required Claude audit PENDING). No novelty claim.
 
 ## Depends on
 
-[gram-unisolvence.md](gram-unisolvence.md), `PD-T?charter-u0-codex-01`, and its explicit Gram identity. No Gröbner-basis or external coding theorem is required.
+[gram-unisolvence.md](gram-unisolvence.md), `PD-T004`, and its explicit Gram identity. No Gröbner-basis or external coding theorem is required.
 
 ## Proof
 
@@ -36,7 +36,7 @@ Supplied code checks weighted duality for `k=n-1` at `(q,n)=(7,3),(11,5),(13,6),
 
 ## Scope and open items
 
-The multiplication proof shows the same distance lower bound for every `P_n`-unisolvent set, so the bound alone does not distinguish Padua codes. The independent adversary has supplied a separate self-contained all-code bound, `PD-T?charter-u0audit-codex-01`, in `independent/u0/code-optimality-bounds.md`; integrating and accepting that bound is the orchestrator's handoff. The finite attainment observations stay in `07`. Independent acceptance pending.
+The multiplication proof shows the same distance lower bound for every `P_n`-unisolvent set, so the bound alone does not distinguish Padua codes. The independent adversary has supplied a separate self-contained all-code bound, `PD-T012`, in `independent/u0/code-optimality-bounds.md`; integrating and accepting that bound is the orchestrator's handoff. The finite attainment observations stay in `PD-T010`. Independent acceptance pending.
 
 ## History
 

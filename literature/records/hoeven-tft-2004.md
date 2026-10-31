@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-12 — reported source content
+### LIT-012 — reported source content
 
 - Verification: **UNVERIFIED** against original publication. `LITERATURE` attribution only; no inherited proof status.
 - Statement in faithful paraphrase: Simplicial multivariate TFT already supplies minimal-point total-degree evaluation/interpolation; finite-field Padua cannot claim that application alone as new.

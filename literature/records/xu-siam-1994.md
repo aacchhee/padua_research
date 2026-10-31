@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-06 — reported source content
+### LIT-006 — reported source content
 
 - Verification: **UNVERIFIED** against original publication. `LITERATURE` attribution only; no inherited proof status.
 - Statement in faithful paraphrase: Round2 attributed Padua modified Jacobi theory here. Round3 corrects this: this paper covers dim Π_(n−1) nodes; Padua needs the Pitman extension. Preserve the correction; do not use the earlier attribution as an established theorem.

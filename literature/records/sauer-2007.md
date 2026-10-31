@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-18 — reported source content
+### LIT-018 — reported source content
 
 - Verification: **UNVERIFIED** against original publication. `LITERATURE` attribution only; no inherited proof status.
 - Statement in faithful paraphrase: Approximate ideals/H-bases, pivoted QR and a-priori bounds are reported predecessors; failure of a new proof route is not a negative theorem.

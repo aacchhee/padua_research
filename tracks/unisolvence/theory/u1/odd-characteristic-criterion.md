@@ -1,4 +1,4 @@
-# PD-T?charter-u1-codex-01 — Alternation Hankel criterion away from characteristic two
+# PD-T001 — Alternation Hankel criterion away from characteristic two
 
 ID kind: PD-T. Aliases: U1b; odd-characteristic restriction of source U1a; triangular tensor Gram factorization.
 Split from: supplied arbitrary-field U1a, whose original scope is refuted in `char2-refutation.md`.
@@ -20,7 +20,7 @@ All arithmetic is exact in K. There is no order, positivity, algebraic closure, 
 
 ## Status by part
 
-Overall status: PROVED (developer proof; independent adversarial audit pending).
+Overall status: PROVED (developer proof; supplementary Astra check complete; required Claude audit pending).
 
 | Part | Status | Evidence |
 |---|---|---|
@@ -54,11 +54,11 @@ Finally, Δ_L(H)=det(V_H)^2∏w_i =1. In fact ∏ω′_H(h_i)=(-1)^(L(L−1)/2) 
 
 ## Checks and sources
 
-Exact checker: `topics/charter-unisolvence-20261031/directions/U1/exact_checker.py`; run and scope recorded separately in directions/U1/evidence.md. Source hs_ff.py was actually reproduced by U0; its agreement is measured, not a dependency. Closest source: Harris–Simanek (2021), Thm 1 and Appendix A.1 as reported in provisional LIT?charter-unisolvence-codex-01; original-source verification and De Marchi–Usevich comparison are external pending obligations.
+Exact checker: `topics/charter-unisolvence-20261031/directions/U1/exact_checker.py`; run and scope recorded separately in directions/U1/evidence.md. Source hs_ff.py was actually reproduced by U0; its agreement is measured, not a dependency. Closest source: Harris–Simanek (2021), Thm 1 and Appendix A.1 as reported in LIT-001; bounded primary inspection and De Marchi–Usevich comparison are recorded in literature/U1-COMPARISON.md; publication-level novelty remains unverified.
 
 ## Scope and open items
 
-The proof establishes every m, both parities and every field of characteristic≠2. It does not repair the original characteristic-2 functional; that functional loses the parity information. The corrected functional and all-characteristic statement are separate. Independent adversarial reconstruction and final literature/ID review remain pending.
+The proof establishes every m, both parities and every field of characteristic≠2. It does not repair the original characteristic-2 functional; that functional loses the parity information. The corrected functional and all-characteristic statement are separate. Supplementary Astra reconstruction and final literature/ID review are recorded in the track audit log; required Claude audit remains pending.
 
 ## History
 

@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-37 — active-campaign predecessor
+### LIT-037 — active-campaign predecessor
 
 - Statement in faithful paraphrase:Publisher abstract describes a Givens-based inverse-eigenvalue algorithm for discrete orthonormal bivariate recurrences and extension to more variables. Campaign background asks to examine its zero-pivot/unisolvence claim; that exact claim and its field/order/positive-inner-product hypotheses are UNVERIFIED here.
 - Hypotheses/notation:retain the precise field/dimension/source scope above.

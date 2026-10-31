@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-30 — predecessor content
+### LIT-030 — predecessor content
 
 - Statement in faithful paraphrase: Even-degree Padua-like checkerboard determinants were conjectured to separate into axis-only functions. The abstract explicitly leaves a technical lemma unproved.
 - Hypotheses and notation: retain the source real/ordered/triangular hypotheses; see locator.

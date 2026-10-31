@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?charter-unisolvence-codex-13 — reported source content
+### LIT-013 — reported source content
 
 - Verification: **UNVERIFIED** against original publication. `LITERATURE` attribution only; no inherited proof status.
 - Statement in faithful paraphrase: Finite-field univariate DCT/DST types are prior art. This alone does not settle finite-field checkerboard unisolvence.
