@@ -94,3 +94,53 @@ Aliases: "two-pass window"; CGS2-window; local-orthogonality repair; task item "
 - Closest entries: HL ORTH (MGS + conditional second pass, LIT?…-110/-118), Kahan–Parlett twice-is-enough (as reported in LIT?…-110), Carson et al. 2025 BCGS2 (abstract). Separation: applied to the truncated window only, as the hypothesis-supplier of the 2D Simon theorem; falsified as distinct if it is identical to HL ORTH's effect (HL ORTH's second pass is conditional).
 - Predictions / kill criteria (before running): (P1) with the two-pass window and no other reorthogonalization, μ(n) ≤ 10³u at every degree where L(n) ≤ √u on every benchmark — killed if violated; (P2) with the two-pass window plus oracle partial reorthogonalization at √u, e_F(n) ≤ u^{3/4} at every semi-orthogonal degree on every benchmark — killed if violated; (P3, J-part, expected to FAIL by the commutator obstruction) e_H(n) ≤ u^{3/4} at semi-orthogonal degrees — recorded, its failure supports the obstruction.
 - Disposition: pending.
+
+---
+
+## R01 results and dispositions (appended 2026-11-01 after the runs; the pre-registered text above is unchanged)
+
+| ID | Result (verdict file `logs/r01_verdicts.txt`) | Disposition | Canonical record |
+|---|---|---|---|
+| IDEA?…-201 (E1, E1D) | frozen kill test not fired: max U = 1.08 (E1), 3.85 (E1D); tracks within max(U,O) ≤ 7.1 off the checkerboards; overestimates cubic checkerboard 2.4e5 | survives (as an estimate of loss of orthogonality; not a bound) | PD-T?…-203 |
+| IDEA?…-202 (E2, E2D) | not fired: max U = 1.22 / 1.15; verdicts as E1 (commutator sources measured exactly change little) | survives; not separated from -201 in tracking quality (separation criterion "E2 ≈ E1": met → equivalent in effect within scope) | PD-T?…-203 |
+| IDEA?…-205 (E3) | not fired (U ≤ 1.44) but improvement criterion fails (cubic O 1.8e5 vs 2.4e5, needed ≥ 100× drop) | REJECTED: failed (aim: repair the coefficient-channel overestimate; scope R01 benchmarks) | PD-T?…-203 (b) |
+| IDEA?…-203 F-part | killed for one-pass windows on rot0.3, triangle, annulus (local level μ ≥ 1.2e-11); not fired for fullcgs2 or two-pass windows; Theorem A PROVED explains the pattern | survives in the corrected form "semi-orthogonality + local orthogonality ⇒ O(u) F-section" (PD-T?…-201); the unconditional one-pass form is REJECTED: failed | PD-T?…-201, -204 |
+| IDEA?…-203 J-part (τ, Ĥ_J) | killed on 8–9 benchmarks for every run type including fullcgs2 (Ĥ_J) and partial/two-pass (τ) | REJECTED: failed (BJ selection, scope of PD-N?…-201) | PD-N?…-201, PD-T?…-202 |
+| IDEA?…-204 (H_drift) | pre-registered rule inconclusive (reference too ill-conditioned); post-hoc reference-free bound and unrotated reference kill it on 5 non-product sets | REJECTED: failed (kill rests on criteria added after the smoke test, disclosed) | PD-N?…-201 |
+| IDEA?…-206 (two-pass window) | P1, P2 survive on all 12 benchmarks; P3 fails as expected | survives | PD-T?…-201 (Prop. L, Cor. A′), -204 |
+
+---
+
+## R02 pre-registration (written 2026-11-01T00:24:54+01:00, before any R02 run)
+
+Origin of the selection candidates: reconstruction 01 (`reviews/L1-reconstruction-01.md`, PD-T?…-109 section: the selection rule changes loss by 10⁴–10⁸; rules 'mirror', 'alt' (X for 2j < t, else Y), 'adapt' (per column the candidate with larger β/‖Aq̂_p‖)); BPS 2010 Remark 9 / §5 (LIT?…-302) for the point-dependent variable choice. Own implementation (not the reviewer's code).
+
+### IDEA?bivariate-lanczos-claude-207 — a selection rule whose spans stay J- and Y-closed under reorthogonalization
+
+Aliases: "selection repairs the space channel"; adaptive/balanced selection + reorthogonalization; reviewer-origin candidate.
+
+- Mechanism: PD-T?…-202 generalises to any one-relation selection: for each operator the unformed products are fixed by commutativity and their residuals follow a clamped recursion; the selection changes the propagator (reconstruction 01, a priori). Hypothesis: for 'adapt' (and possibly 'alt'), the defects δ_X, δ_Y and the drift stay at rounding level.
+- Closest entries: PD-N?…-201 (BJ), PD-T?…-108/-109 (L1), IDEA?…-117–120 (L1 coefficient channel), Liu–Narayan two-relation (LIT, as reported). Separation: one relation per column (cost of the window recurrence) vs two-relation block completion.
+- Test: selections dev, mirror, alt, adapt, each with fullcgs2 (spans only) and with a two-pass window and no reorthogonalization (loss); controls: two-relation block recurrence with 2 passes. Benchmarks: rot0.3, rotπ/4, disk, triangle, L-shape, annulus (non-product), square, tensor 41², cubic checkerboard (controls). Quantities: L(n), μ(n), δ_X, δ_Y, θ_LB := max(δ_X/(2‖X‖), δ_Y/(2‖Y‖)) (reference-free, PD-T?…-202 part 5 for both operators), drift against the unrotated-frame reference (rotated squares) and against a Koornwinder–Dubiner reference (triangle), with reference bound u·κ.
+- **Kill criterion (before testing), per selection rule S:** "S keeps the spans near S_n under fullcgs2" is killed if θ_LB > √u at some n on some non-product benchmark, or a reference drift > √u where u·κ < 1e-11. It **survives** if θ_LB ≤ 10³u√N_n and reference drift ≤ 10³·max(u·κ, u√N_n) at every tested degree of every benchmark; otherwise inconclusive.
+- Secondary (reported, no kill): plain loss of S with a two-pass window and no reorthogonalization.
+
+### IDEA?bivariate-lanczos-claude-208 — PRO-2D: two-pass window + ω-triggered partial reorthogonalization (BJ ordering)
+
+Aliases: 2D partial reorthogonalization; Simon-type PRO for the window recurrence; strategy of L2 R02.
+
+- Mechanism: two-pass window (local orthogonality, Prop. L); after it, the E1 estimate (IDEA?…-201, sign-matched variant E1D for the trigger, which never underestimated by more than 3.9×) predicts the out-of-window row; if its max exceeds √u, reorthogonalize (two CGS passes) against {l : |ω̃_l| > u^{3/4}} plus the window, reset those estimates to rounding level, and treat the next column likewise (Simon's "next step" rule).
+- Closest entries: Simon 1984 PRO (LIT?…-212), IDEA?…-003. Separation: 2D window, implicit Ĥ_J in the estimate, two-pass window as the local-orthogonality supplier.
+- **Kill criteria (before testing):** killed if on any benchmark of R01 L(n) > 10√u at some degree (fails to keep semi-orthogonality), or e_F(n) > u^{3/4} at a degree with L(n) ≤ √u. Cost success criterion (reported): reorthogonalization dot products ≤ 30% of fullcgs2's on every benchmark.
+- Known limitation stated before testing: with the BJ selection it cannot repair the J-section or the drift (PD-N?…-201); it is the strategy for loss of orthogonality only.
+
+### Cost comparison protocol (before testing)
+
+Dot-product counts (exact, from the run) and wall time for BJ one-pass, two-pass window, PRO-2D, adapt + two-pass window, fullcgs2 (≡ V+A-type CGS2 against all previous columns), at M ∈ {1681, 10⁴, 10⁵} on rotπ/4 (n = 24) and the triangle (n = 20); model counts: window passes ≈ Σ_k |W_k| ≈ (4/3)n³·(M flops-pairs), fullcgs2 ≈ N²·M. M = 10⁶ goes to Runs needed with an exact driver.
+
+### IDEA?bivariate-lanczos-claude-209 — PRO-2D-J: PRO-2D with the J-rows measured (commutator channel exact in the trigger)
+
+Written 2026-11-01T00:26:57+01:00, AFTER the PRO-2D (IDEA?…-208) smoke test on rotπ/4 and the triangle failed its kill rule (L(24) = 5.0e-7 and L(20) = 2.4e-6 > 10√u) and BEFORE any PRO-2D-J run (disclosed post-hoc candidate).
+
+- Mechanism: as -208, but at J-steps the provisional out-of-window row is measured exactly (one inner-product pass, n per degree → O(M N^{3/2}) total, cf. -202) and the stored J-rows are exact; F-steps use the sign-matched estimate. Motivation: after reorthogonalization removes the propagated loss, the J-step commutator sources (R01 audit: up to 10⁸–10¹⁰ × the rounding scale on non-product sets) are no longer subdominant; -208's estimate ignores them.
+- Kill criteria (before running): identical to -208 (L(n) > 10√u at some degree of some R01 benchmark, or e_F > u^{3/4} at a semi-orthogonal degree). Cost criterion reported: (reorthogonalization + measurement dot products) / fullcgs2.

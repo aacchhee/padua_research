@@ -148,6 +148,9 @@ def run(x, y, w, nmax, orth='cgs', reorth='none', thresh=SQRTU, eta=U34, est=Non
                 if reorth == 'oracle':
                     row = Q[:, O].T @ (r / beta0)
                     stats['dots_measure'] += len(O)
+                elif est.jmeasure and op[k] == 'J':
+                    row = Q[:, O].T @ (r / beta0)
+                    stats['dots_measure'] += len(O)
                 else:
                     row = est.provisional(k, op[k], p, W, h, beta0)
                 trig = np.max(np.abs(row)) > thresh
@@ -415,3 +418,132 @@ def drift(Q, P, w, ns, theta=0.0):
         D = Wn - Uref @ (Uref.T @ Wn)
         out.append(dict(n=n, drift=float(np.linalg.norm(D, 2)), ref_bound=U * kap, kappa=kap))
     return out
+
+
+# ----------------------------------------------------------------------------- general selection rules (R02)
+def candidates_sel(t, j):
+    c = []
+    if j <= t - 1:
+        c.append(('X', (t - 1, j)))
+    if j >= 1:
+        c.append(('Y', (t - 1, j - 1)))
+    return c
+
+
+def rule_sel(sel, t, j):
+    """selection rules of reconstruction 01 (re-implemented): 'dev' = BJ (X injects (t,0)), 'mirror' = HL BIT
+    (Y injects (t,t)), 'alt' = X for 2j < t else Y."""
+    if sel == 'dev':
+        return ('X', (t - 1, 0)) if j == 0 else ('Y', (t - 1, j - 1))
+    if sel == 'mirror':
+        return ('Y', (t - 1, t - 1)) if j == t else ('X', (t - 1, j))
+    if sel == 'alt':
+        return ('X', (t - 1, j)) if 2 * j < t else ('Y', (t - 1, j - 1))
+    raise ValueError(sel)
+
+
+def run_sel(x, y, w, nmax, sel='dev', orth='cgs2w', reorth='none', dtype=np.float64):
+    """One-relation window recurrence with selection rule `sel` ('dev','mirror','alt','adapt'), block window,
+    orth 'cgs' | 'cgs2w', reorth 'none' | 'fullcgs2'.  'adapt': per column the candidate with the larger
+    beta/||A q_p|| after the first window pass.  Returns Q, info (list of (op, parent) per column), stats."""
+    idx = [(t, j) for t in range(nmax + 1) for j in range(t + 1)]
+    pos = {k: i for i, k in enumerate(idx)}
+    start = [t * (t + 1) // 2 for t in range(nmax + 2)]
+    N = len(idx)
+    x = np.asarray(x, dtype=dtype); y = np.asarray(y, dtype=dtype)
+    M = len(x)
+    Q = np.zeros((M, N), dtype=dtype)
+    v = np.sqrt(np.asarray(w, dtype=dtype)); Q[:, 0] = v / np.sqrt(v @ v)
+    info = [None] * N
+    stats = dict(dots_window=0, dots_reorth=0)
+    for k in range(1, N):
+        t, j = idx[k]
+        W = np.arange(start[max(t - 2, 0)], k)
+        opts = candidates_sel(t, j) if sel == 'adapt' else [rule_sel(sel, t, j)]
+        best = None
+        for (op, par) in opts:
+            p = pos[par]
+            a = (x if op == 'X' else y) * Q[:, p]
+            na = np.sqrt(a @ a)
+            if reorth == 'fullcgs2':
+                Qk = Q[:, :k]
+                r = a - Qk @ (Qk.T @ a); r = r - Qk @ (Qk.T @ r)
+                stats['dots_reorth'] += 2 * k
+            else:
+                Qw = Q[:, W]
+                r = a - Qw @ (Qw.T @ a)
+                stats['dots_window'] += len(W)
+            score = np.sqrt(r @ r) / na
+            if best is None or score > best[0]:
+                best = (score, op, p, r)
+        _, op, p, r = best
+        if reorth != 'fullcgs2' and orth == 'cgs2w':
+            Qw = Q[:, W]; r = r - Qw @ (Qw.T @ r); stats['dots_window'] += len(W)
+        Q[:, k] = r / np.sqrt(r @ r)
+        info[k] = (op, p)
+    return Q, info, stats
+
+
+def two_relation(x, y, w, nmax, passes=2):
+    """control: block recurrence using both relations per degree (Liu-Narayan-type), CGS against blocks n-2, n-1,
+    `passes` passes, orthonormal completion by the n+1 leading left singular vectors."""
+    s = np.sqrt(w)
+    blocks = [(s / np.linalg.norm(s))[:, None]]
+    for n in range(1, nmax + 1):
+        P = blocks[-1]
+        R = np.concatenate([x[:, None] * P, y[:, None] * P], axis=1)
+        Wm = np.concatenate(blocks[-2:], axis=1)
+        for _ in range(passes):
+            R = R - Wm @ (Wm.T @ R)
+        Uu, sv, _ = np.linalg.svd(R, full_matrices=False)
+        blocks.append(Uu[:, :n + 1])
+    return np.concatenate(blocks, axis=1)
+
+
+def defects(Q, x, y, nmax):
+    """delta_X(s), delta_Y(s), s = 0..nmax-1, of the nested spans of Q (Householder Q-factor), and local level
+    max |Omega_{l,k}| over |deg l - deg k| <= 2 (on Q itself), per degree."""
+    Uh, _ = np.linalg.qr(Q[:, :Nof(nmax)])
+    dX, dY = np.zeros(nmax), np.zeros(nmax)
+    for s in range(nmax):
+        Us = Uh[:, :Nof(s + 1)]
+        cols = list(range(Nof(s - 1) if s >= 1 else 0, Nof(s)))
+        for arr, a in ((dX, x), (dY, y)):
+            AV = a[:, None] * Uh[:, cols]
+            arr[s] = float(np.linalg.norm(AV - Us @ (Us.T @ AV), axis=0).max())
+    G = Q.T @ Q
+    deg = degree_of(Q.shape[1])
+    L = np.zeros(nmax + 1); mu = np.zeros(nmax + 1)
+    A = np.abs(G - np.eye(len(G)))
+    loc = np.abs(deg[:, None] - deg[None, :]) <= 2
+    for n in range(nmax + 1):
+        Nn = Nof(n)
+        L[n] = A[:Nn, :Nn].max()
+        B = np.where(loc[:Nn, :Nn], A[:Nn, :Nn], 0.0); np.fill_diagonal(B, 0.0)
+        mu[n] = B.max()
+    return dX, dY, L, mu
+
+
+def koornwinder_reference(P, w, n):
+    """Orthonormal basis of S_n for nodes in the triangle {x, y >= -1, x + y <= 0} from the Koornwinder-Dubiner
+    basis (orthogonal for Lebesgue measure on the triangle), Householder QR; returns (Uref, kappa)."""
+    from scipy.special import eval_jacobi
+    xi = (P[:, 0] + 1) / 2; et = (P[:, 1] + 1) / 2
+    om = 1 - et
+    cols = []
+    for t in range(n + 1):
+        for l in range(t + 1):
+            kk = t - l
+            arg = np.where(om > 0, (2 * xi - om) / np.where(om > 0, om, 1), 0.0)
+            cols.append(eval_jacobi(kk, 0, 0, arg) * om ** kk * eval_jacobi(l, 2 * kk + 1, 0, 2 * et - 1))
+    V = np.column_stack(cols) * np.sqrt(w)[:, None]
+    V = V / np.linalg.norm(V, axis=0)
+    sv = np.linalg.svd(V, compute_uv=False)
+    Uref, _ = np.linalg.qr(V)
+    return Uref, float(sv[0] / sv[-1])
+
+
+def drift_ref(Q, Uref, n):
+    Nn = Nof(n)
+    Wn, _ = np.linalg.qr(Q[:, :Nn])
+    return float(np.linalg.norm(Wn - Uref @ (Uref.T @ Wn), 2))

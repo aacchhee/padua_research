@@ -93,6 +93,29 @@ def main():
             if rmin is None or r < rmin[0]:
                 rmin = (r, j, k, node_class(n, j, k))
         print(f"n={n:2d}: certified delta_0(n) >= {float(rmin[0]):.4e} = {rmin[0]} (binding node (j,k)=({rmin[1]},{rmin[2]}) [{rmin[3]}])  ({time.time()-t0:.1f}s)", flush=True)
+        print(f"       MEASURED (float sampling, 720 directions, radii geometric): first radius with min P_n < 0 on the circle: {sampled_radius(n):.3e}", flush=True)
+
+
+def sampled_radius(n):
+    """MEASURED only: smallest sampled radius r at which P_n < 0 somewhere on the circle |h| = r around
+    some Padua node (Chebyshev evaluation of g_m in double precision)."""
+    import numpy as np
+    from numpy.polynomial import chebyshev as Ch
+
+    def T(k, z):
+        cc = np.zeros(k + 1); cc[k] = 1
+        return Ch.chebval(z, cc)
+
+    def P(xx, yy):
+        g = [T(n - m, xx) * T(m, yy) - T(m, xx) * T(n + 1 - m, yy) for m in range(4)]
+        return 9 * (g[1] ** 2 - 0.5 * g[0] * g[2]) + (g[2] ** 2 - g[1] * g[3])
+    ang = np.linspace(0, 2 * np.pi, 720, endpoint=False)
+    nodes = [(np.cos(j * np.pi / n), np.cos(k * np.pi / (n + 1))) for (j, k) in padua_nodes(n)]
+    for r in np.geomspace(1e-4, 0.5, 200):
+        for (x0, y0) in nodes:
+            if np.min(P(x0 + r * np.cos(ang), y0 + r * np.sin(ang))) < 0:
+                return r
+    return float('inf')
 
 
 if __name__ == '__main__':

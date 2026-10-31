@@ -134,6 +134,14 @@ Subagent effort is set from the agent definition and is not independently expose
 - Major: support-shape classification fails (exp(8xy) weights on the square unstable; Gaussian cloud, a product density, 6–370× above u/ρ for BJ); two-relation remedy not uniformly better (Gaussian cloud; triangles need two passes; 50× worse than BJ on tensor grid); missing citations BPS 2010, Liu–Narayan 2023; asymmetric N = M exclusion. Not rerun: iid-forcing predictor, mixed-precision split, "P* = P", triangle orientation scan, Padua, L-shapes; one seed per shape.
 - Actions: L1 developer resumed only to respond (response-recon-01.md) and correct files (covering consequences for R04–R07); relation-selection finding passed to L2; reconstruction 02 of L1 R04–R07 to follow the response.
 
+### L1 reconstruction 02 returned (2026-11-01)
+
+- Same independent reviewer (Claude Opus 5.5 xhigh, requested); audited files identical at `c8ccce0`/`7f5d57b`; report [reviews/L1-reconstruction-02.md](reviews/L1-reconstruction-02.md). No blocking findings.
+- Response to review 01 judged faithful (refuted claims REJECTED with PD-N 105/106; no backdating — corrections ≥ 23:00Z after review 01 finished 22:57:54Z; disclosed guessed stamps uncheckable to the minute).
+- **T-113 part 2 independent exact rerun:** basis built two independent ways (exact Gram–Schmidt and exact moment-matrix factorisation), part 1 checked in mpmath to 1e-56; all log₁₀G(n) reproduced on T_24, Q_24, T_40, rotated Q_24; criterion holds in exact rationals (T_24: G(12) ≥ 10⁶ G(6); Q_24: G(12) ≤ 10² G(6)). Recommendation: CONDITIONAL → PROVED as a finite dev-rule statement after the wording fix (G(n) must take k > s).
+- Confirmed 110, 111 (sharp; needs ordered nodes), 114 parts 1–4, 112 (a,b,d), N103(c), N105; N106 with minor corrections. Majors: M1 selection rule matters on the clustered checkerboard too, and winners differ by set (n = 24: alt 3.1e-13, dev 1.0e-6, adapt 9.3e-6) — qualify the L2 hand-off and SUMMARY item 5; M2 T-113 wording; M3 convention-sensitive R07 verdicts decided with real double dot products (closed loop C/L ∈ [0.56, 1.86] on six sets: IDEA-120 survives, 115 main claim holds; IDEA-119 inconclusive; H_term survives; N(0,1) model underestimates real rounding 3–6×). Minors incl. ledger note on the wrong row (fixed by orchestrator), PD-N-106 u/ρ missing ‖A‖ factor, reviewer's own recon-01 exp(4xy) remark corrected.
+- Action: L1 developer resumed for a short response-recon-02 (no new rounds).
+
 ## Runs needed
 
 (none yet; directions add exact commands)

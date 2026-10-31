@@ -1,0 +1,179 @@
+# R01 verdicts (u = 2^-53); rules: candidates.md (IDEA?...-201..206)
+
+## IDEA-201/202/205: frozen kill rule U = max_D L/E > 10 kills; O = max_D E/L (tracking)
+bench                     E1               E1D                E2               E2D                E3
+square     U= 0.64 O=2.5e+00 U= 0.07 O=1.9e+01 U= 0.65 O=1.9e+00 U= 0.17 O=8.1e+00 U= 0.59 O=2.6e+00
+rot0.3     U= 0.23 O=7.1e+00 U= 0.18 O=9.7e+00 U= 0.71 O=4.6e+00 U= 0.31 O=1.1e+01 U= 0.26 O=6.7e+00
+rotpi4     U= 0.49 O=4.6e+00 U= 0.30 O=6.5e+00 U= 0.93 O=3.9e+00 U= 0.38 O=1.3e+01 U= 0.49 O=3.8e+00
+disk       U= 1.04 O=1.4e+00 U= 0.65 O=2.5e+00 U= 1.14 O=1.4e+00 U= 0.76 O=2.4e+00 U= 1.20 O=1.2e+00
+triangle   U= 1.06 O=5.6e+00 U= 3.85 O=5.7e+00 U= 1.04 O=1.2e+01 U= 1.15 O=1.4e+01 U= 1.44 O=5.3e+00
+lshape     U= 0.84 O=1.9e+00 U= 0.99 O=4.6e+00 U= 1.22 O=1.7e+00 U= 0.55 O=4.7e+00 U= 0.96 O=1.7e+00
+annulus    U= 1.08 O=2.6e+00 U= 0.65 O=8.5e+00 U= 1.05 O=2.4e+00 U= 0.42 O=7.6e+00 U= 1.02 O=2.5e+00
+tensor41       uninformative U= 0.16 O=9.8e+00     uninformative U= 0.16 O=6.6e+00     uninformative
+padua48        uninformative U= 0.20 O=1.1e+01     uninformative U= 0.21 O=7.1e+00     uninformative
+cb_cheb        uninformative     uninformative     uninformative     uninformative     uninformative
+cb_equi    U= 0.06 O=2.3e+01 U= 0.06 O=2.4e+01 U= 0.15 O=9.6e+00 U= 0.16 O=1.1e+01 U= 0.08 O=1.8e+01
+cb_cubic   U= 0.01 O=2.4e+05 U= 0.00 O=2.7e+05 U= 0.00 O=1.4e+05 U= 0.00 O=1.4e+05 U= 0.00 O=1.8e+05
+  E1: max U = 1.08 -> survives frozen kill test; max O = 2.43e+05
+  E1D: max U = 3.85 -> survives frozen kill test; max O = 2.74e+05
+  E2: max U = 1.22 -> survives frozen kill test; max O = 1.40e+05
+  E2D: max U = 1.15 -> survives frozen kill test; max O = 1.38e+05
+  E3: max U = 1.44 -> survives frozen kill test; max O = 1.79e+05
+
+## IDEA-203 (frozen 2nd clause): semi-orthogonal (L <= sqrt u) degrees with e > u^(3/4), per section type
+none      square    SO-degrees 4..32: max eF=1.2e-14 etau=4.3e-15 eH=1.3e-12 local=3.0e-14  fails: eF[] etau[] eH[32]
+none      rot0.3    SO-degrees 4..20: max eF=8.1e-11 etau=3.0e-12 eH=3.7e-09 local=5.0e-10  fails: eF[18, 20] etau[20] eH[16, 18, 20]
+none      rotpi4    SO-degrees 4..16: max eF=1.7e-15 etau=7.5e-14 eH=4.8e-10 local=2.9e-15  fails: eF[] etau[] eH[12, 14, 16]
+none      disk      SO-degrees 4..24: max eF=1.7e-15 etau=2.5e-12 eH=3.4e-09 local=3.8e-15  fails: eF[] etau[24] eH[16, 18, 20, 22, 24]
+none      triangle  SO-degrees 4..10: max eF=1.4e-10 etau=1.6e-12 eH=1.5e-10 local=6.6e-10  fails: eF[8, 10] etau[10] eH[8, 10]
+none      lshape    SO-degrees 4..16: max eF=5.7e-15 etau=9.3e-14 eH=1.2e-10 local=1.6e-14  fails: eF[] etau[] eH[12, 16]
+none      annulus   SO-degrees 4..16: max eF=4.1e-12 etau=1.8e-13 eH=3.1e-11 local=1.2e-11  fails: eF[16] etau[] eH[16]
+none      tensor41  SO-degrees 4..39: max eF=8.8e-15 etau=2.0e-14 eH=2.0e-14 local=8.2e-15  fails: eF[] etau[] eH[]
+none      padua48   SO-degrees 8..47: max eF=8.1e-15 etau=8.1e-15 eH=1.2e-14 local=1.6e-14  fails: eF[] etau[] eH[]
+none      cb_cheb   SO-degrees 4..29: max eF=1.4e-15 etau=1.6e-15 eH=3.0e-15 local=2.6e-15  fails: eF[] etau[] eH[]
+none      cb_equi   SO-degrees 4..29: max eF=1.2e-15 etau=7.9e-16 eH=9.8e-14 local=1.3e-15  fails: eF[] etau[] eH[]
+none      cb_cubic  SO-degrees 4..20: max eF=5.2e-16 etau=3.3e-16 eH=3.0e-09 local=6.7e-16  fails: eF[] etau[] eH[16, 20]
+fullcgs2  square    SO-degrees 4..32: max eF=2.0e-15 etau=2.8e-15 eH=6.1e-13 local=1.8e-16  fails: eF[] etau[] eH[]
+fullcgs2  rot0.3    SO-degrees 4..24: max eF=1.7e-15 etau=1.3e-15 eH=5.9e-07 local=2.1e-16  fails: eF[] etau[] eH[16, 18, 20, 22, 24]
+fullcgs2  rotpi4    SO-degrees 4..24: max eF=1.7e-15 etau=1.7e-15 eH=2.8e-04 local=2.0e-16  fails: eF[] etau[] eH[14, 16, 18, 20, 22, 24]
+fullcgs2  disk      SO-degrees 4..24: max eF=1.8e-15 etau=1.6e-15 eH=5.3e-10 local=1.5e-16  fails: eF[] etau[] eH[18, 20, 22, 24]
+fullcgs2  triangle  SO-degrees 4..20: max eF=2.2e-15 etau=2.1e-15 eH=8.4e-04 local=2.8e-16  fails: eF[] etau[] eH[10, 12, 14, 16, 18, 20]
+fullcgs2  lshape    SO-degrees 4..30: max eF=1.8e-15 etau=1.6e-15 eH=5.5e-03 local=1.9e-16  fails: eF[] etau[] eH[16, 20, 24, 28, 30]
+fullcgs2  annulus   SO-degrees 4..30: max eF=1.7e-15 etau=2.9e-15 eH=1.3e-02 local=1.4e-16  fails: eF[] etau[] eH[16, 20, 24, 28, 30]
+fullcgs2  tensor41  SO-degrees 4..39: max eF=7.7e-15 etau=1.9e-14 eH=1.9e-14 local=2.6e-15  fails: eF[] etau[] eH[]
+fullcgs2  padua48   SO-degrees 8..47: max eF=1.7e-15 etau=1.7e-15 eH=1.7e-15 local=1.4e-15  fails: eF[] etau[] eH[]
+fullcgs2  cb_cheb   SO-degrees 4..29: max eF=1.4e-15 etau=2.0e-15 eH=2.0e-15 local=1.6e-15  fails: eF[] etau[] eH[]
+fullcgs2  cb_equi   SO-degrees 4..29: max eF=8.9e-16 etau=6.5e-16 eH=1.8e-15 local=7.8e-16  fails: eF[] etau[] eH[]
+fullcgs2  cb_cubic  SO-degrees 4..29: max eF=7.1e-16 etau=3.3e-16 eH=9.8e-12 local=7.8e-16  fails: eF[] etau[] eH[29]
+oracle    square    SO-degrees 4..32: max eF=1.2e-14 etau=4.3e-15 eH=1.3e-12 local=3.0e-14  fails: eF[] etau[] eH[32]
+oracle    rot0.3    SO-degrees 4..24: max eF=6.9e-10 etau=1.7e-10 eH=2.1e-07 local=2.2e-09  fails: eF[18, 20, 22, 24] etau[20, 22, 24] eH[16, 18, 20, 22, 24]
+oracle    rotpi4    SO-degrees 4..24: max eF=1.7e-15 etau=2.4e-09 eH=7.7e-04 local=4.6e-15  fails: eF[] etau[20, 22, 24] eH[12, 14, 16, 18, 20, 22, 24]
+oracle    disk      SO-degrees 4..24: max eF=1.7e-15 etau=2.5e-12 eH=3.4e-09 local=3.8e-15  fails: eF[] etau[24] eH[16, 18, 20, 22, 24]
+oracle    triangle  SO-degrees 4..10: max eF=1.4e-10 etau=1.6e-12 eH=1.5e-10 local=6.6e-10  fails: eF[8, 10] etau[10] eH[8, 10]
+oracle    lshape    SO-degrees 4..30: max eF=3.3e-14 etau=1.5e-09 eH=5.7e-03 local=8.4e-14  fails: eF[] etau[20, 24, 28, 30] eH[12, 16, 20, 24, 28, 30]
+oracle    annulus   SO-degrees 4..30: max eF=7.4e-11 etau=5.4e-10 eH=6.1e-03 local=1.3e-10  fails: eF[16, 20, 24, 28, 30] etau[20, 24, 28, 30] eH[16, 20, 24, 28, 30]
+oracle    tensor41  SO-degrees 4..39: max eF=8.8e-15 etau=2.0e-14 eH=2.0e-14 local=8.2e-15  fails: eF[] etau[] eH[]
+oracle    padua48   SO-degrees 8..47: max eF=8.1e-15 etau=8.1e-15 eH=1.2e-14 local=1.6e-14  fails: eF[] etau[] eH[]
+oracle    cb_cheb   SO-degrees 4..29: max eF=1.4e-15 etau=1.6e-15 eH=3.0e-15 local=2.6e-15  fails: eF[] etau[] eH[]
+oracle    cb_equi   SO-degrees 4..29: max eF=1.2e-15 etau=7.9e-16 eH=9.8e-14 local=1.3e-15  fails: eF[] etau[] eH[]
+oracle    cb_cubic  SO-degrees 4..29: max eF=7.2e-16 etau=1.6e-09 eH=7.8e-09 local=6.4e-15  fails: eF[] etau[28, 29] eH[16, 20, 24, 28, 29]
+w2_none   square    SO-degrees 4..32: max eF=1.9e-15 etau=3.0e-15 eH=5.8e-13 local=1.7e-16  fails: eF[] etau[] eH[]
+w2_none   rot0.3    SO-degrees 4..20: max eF=1.6e-15 etau=1.2e-12 eH=8.0e-10 local=1.9e-16  fails: eF[] etau[20] eH[16, 18, 20]
+w2_none   rotpi4    SO-degrees 4..18: max eF=1.7e-15 etau=1.7e-12 eH=1.8e-08 local=2.2e-16  fails: eF[] etau[18] eH[12, 14, 16, 18]
+w2_none   disk      SO-degrees 4..24: max eF=1.7e-15 etau=9.0e-13 eH=3.4e-10 local=1.9e-16  fails: eF[] etau[] eH[20, 22, 24]
+w2_none   triangle  SO-degrees 4..14: max eF=2.2e-15 etau=8.0e-12 eH=1.4e-09 local=3.2e-16  fails: eF[] etau[14] eH[10, 12, 14]
+w2_none   lshape    SO-degrees 4..20: max eF=1.6e-15 etau=2.0e-12 eH=4.2e-09 local=1.6e-16  fails: eF[] etau[20] eH[16, 20]
+w2_none   annulus   SO-degrees 4..20: max eF=1.6e-15 etau=2.6e-12 eH=3.8e-10 local=1.7e-16  fails: eF[] etau[20] eH[16, 20]
+w2_none   tensor41  SO-degrees 4..39: max eF=7.7e-15 etau=1.9e-14 eH=1.9e-14 local=2.8e-15  fails: eF[] etau[] eH[]
+w2_none   padua48   SO-degrees 8..47: max eF=1.7e-15 etau=2.6e-15 eH=2.6e-15 local=1.9e-15  fails: eF[] etau[] eH[]
+w2_none   cb_cheb   SO-degrees 4..29: max eF=1.6e-15 etau=1.4e-15 eH=1.4e-15 local=1.2e-15  fails: eF[] etau[] eH[]
+w2_none   cb_equi   SO-degrees 4..29: max eF=6.7e-16 etau=8.6e-16 eH=2.1e-14 local=7.2e-16  fails: eF[] etau[] eH[]
+w2_none   cb_cubic  SO-degrees 4..16: max eF=4.4e-16 etau=1.9e-16 eH=1.4e-10 local=5.6e-16  fails: eF[] etau[] eH[16]
+w2_oracle square    SO-degrees 4..32: max eF=1.9e-15 etau=3.0e-15 eH=5.8e-13 local=1.7e-16  fails: eF[] etau[] eH[]
+w2_oracle rot0.3    SO-degrees 4..24: max eF=1.6e-15 etau=2.4e-10 eH=3.7e-07 local=1.9e-16  fails: eF[] etau[20, 22, 24] eH[16, 18, 20, 22, 24]
+w2_oracle rotpi4    SO-degrees 4..24: max eF=1.7e-15 etau=3.4e-09 eH=1.2e-03 local=2.2e-16  fails: eF[] etau[18, 20, 22, 24] eH[12, 14, 16, 18, 20, 22, 24]
+w2_oracle disk      SO-degrees 4..24: max eF=1.7e-15 etau=9.0e-13 eH=3.4e-10 local=1.9e-16  fails: eF[] etau[] eH[20, 22, 24]
+w2_oracle triangle  SO-degrees 4..20: max eF=2.2e-15 etau=2.7e-09 eH=6.6e-04 local=3.2e-16  fails: eF[] etau[14, 16, 18, 20] eH[10, 12, 14, 16, 18, 20]
+w2_oracle lshape    SO-degrees 4..30: max eF=1.6e-15 etau=1.0e-09 eH=4.6e-03 local=1.6e-16  fails: eF[] etau[20, 24, 28, 30] eH[16, 20, 24, 28, 30]
+w2_oracle annulus   SO-degrees 4..30: max eF=1.6e-15 etau=1.2e-09 eH=5.2e-03 local=1.8e-16  fails: eF[] etau[20, 24, 28, 30] eH[16, 20, 24, 28, 30]
+w2_oracle tensor41  SO-degrees 4..39: max eF=7.7e-15 etau=1.9e-14 eH=1.9e-14 local=2.8e-15  fails: eF[] etau[] eH[]
+w2_oracle padua48   SO-degrees 8..47: max eF=1.7e-15 etau=2.6e-15 eH=2.6e-15 local=1.9e-15  fails: eF[] etau[] eH[]
+w2_oracle cb_cheb   SO-degrees 4..29: max eF=1.6e-15 etau=1.4e-15 eH=1.4e-15 local=1.2e-15  fails: eF[] etau[] eH[]
+w2_oracle cb_equi   SO-degrees 4..29: max eF=6.7e-16 etau=8.6e-16 eH=2.1e-14 local=7.2e-16  fails: eF[] etau[] eH[]
+w2_oracle cb_cubic  SO-degrees 4..29: max eF=7.8e-16 etau=2.6e-09 eH=5.2e-09 local=7.2e-16  fails: eF[] etau[28, 29] eH[16, 20, 24, 28, 29]
+  eF: KILLED on rot0.3/none, triangle/none, annulus/none, rot0.3/oracle, triangle/oracle, annulus/oracle
+  etau: KILLED on rot0.3/none, disk/none, triangle/none, rot0.3/oracle, rotpi4/oracle, disk/oracle, triangle/oracle, lshape/oracle, annulus/oracle, cb_cubic/oracle, rot0.3/w2_none, rotpi4/w2_none, triangle/w2_none, lshape/w2_none, annulus/w2_none, rot0.3/w2_oracle, rotpi4/w2_oracle, triangle/w2_oracle, lshape/w2_oracle, annulus/w2_oracle, cb_cubic/w2_oracle
+  eH: KILLED on square/none, rot0.3/none, rotpi4/none, disk/none, triangle/none, lshape/none, annulus/none, cb_cubic/none, rot0.3/fullcgs2, rotpi4/fullcgs2, disk/fullcgs2, triangle/fullcgs2, lshape/fullcgs2, annulus/fullcgs2, cb_cubic/fullcgs2, square/oracle, rot0.3/oracle, rotpi4/oracle, disk/oracle, triangle/oracle, lshape/oracle, annulus/oracle, cb_cubic/oracle, rot0.3/w2_none, rotpi4/w2_none, disk/w2_none, triangle/w2_none, lshape/w2_none, annulus/w2_none, cb_cubic/w2_none, rot0.3/w2_oracle, rotpi4/w2_oracle, disk/w2_oracle, triangle/w2_oracle, lshape/w2_oracle, annulus/w2_oracle, cb_cubic/w2_oracle
+
+## IDEA-206 (two-pass window): P1 local <= 1e3 u at SO degrees (w2_none); P2 eF <= u^(3/4) at SO degrees (w2_oracle)
+  w2_none local > 1.1e-13: none
+  w2_oracle eF > 1.1e-12: none
+  w2_oracle eH > 1.1e-12: [('rot0.3', 16, 2.581582514427793e-12), ('rot0.3', 18, 4.8154003480334257e-11), ('rot0.3', 20, 7.954229486960003e-10), ('rot0.3', 22, 5.731123812765243e-09), ('rot0.3', 24, 3.668211945072151e-07), ('rotpi4', 12, 1.1283768864338233e-12), ('rotpi4', 14, 1.9869036297614693e-11), ('rotpi4', 16, 5.496525831211616e-10), ('rotpi4', 18, 1.759331930695906e-08), ('rotpi4', 20, 5.662036362164802e-07), ('rotpi4', 22, 2.29234998428002e-05), ('rotpi4', 24, 0.001179563547786464), ('disk', 20, 5.256084392070641e-12), ('disk', 22, 3.313802919699722e-11), ('disk', 24, 3.372604924639438e-10), ('triangle', 10, 1.357337807766256e-12), ('triangle', 12, 3.533268768610552e-11), ('triangle', 14, 1.3952244204830934e-09), ('triangle', 16, 1.5572227147000177e-07), ('triangle', 18, 1.149443913980822e-05), ('triangle', 20, 0.0006620729859273393), ('lshape', 16, 2.7678899931854208e-11), ('lshape', 20, 4.1700864801596525e-09), ('lshape', 24, 7.521940481203358e-07), ('lshape', 28, 0.00017546879323581465), ('lshape', 30, 0.00459176880698021), ('annulus', 16, 1.936076383185609e-12), ('annulus', 20, 3.751585713862965e-10), ('annulus', 24, 2.9239324733358033e-07), ('annulus', 28, 5.5100452095105436e-05), ('annulus', 30, 0.005191237734678799), ('cb_cubic', 16, 1.3822790549131778e-10), ('cb_cubic', 20, 3.592531809860797e-09), ('cb_cubic', 24, 4.387230105507542e-09), ('cb_cubic', 28, 5.1560903875692065e-09), ('cb_cubic', 29, 5.1560903875692065e-09)]
+
+## IDEA-204 (drift under fullcgs2): pre-registered rule (box Chebyshev reference) and amendments
+  square    n= 4 L=6.9e-15 drift=2.8e-14 (u*kappa=3.8e-16) thetaLB=6.0e-16  pre-rule:- LB:- unrot:-
+  square    n= 8 L=6.9e-15 drift=6.8e-15 (u*kappa=8.7e-16) thetaLB=6.0e-16  pre-rule:- LB:- unrot:-
+  square    n=12 L=6.9e-15 drift=6.8e-15 (u*kappa=2.6e-15) thetaLB=6.3e-16  pre-rule:- LB:- unrot:-
+  square    n=16 L=6.9e-15 drift=1.8e-14 (u*kappa=1.1e-14) thetaLB=7.4e-16  pre-rule:- LB:- unrot:-
+  square    n=20 L=6.9e-15 drift=8.6e-14 (u*kappa=5.7e-14) thetaLB=1.7e-15  pre-rule:- LB:- unrot:-
+  square    n=24 L=6.9e-15 drift=5.8e-13 (u*kappa=4.2e-13) thetaLB=6.0e-15  pre-rule:- LB:- unrot:-
+  square    n=28 L=6.9e-15 drift=5.4e-12 (u*kappa=4.2e-12) thetaLB=1.9e-14  pre-rule:- LB:- unrot:-
+  square    n=32 L=6.9e-15 drift=5.4e-11 (u*kappa=4.6e-11) thetaLB=1.2e-13  pre-rule:- LB:- unrot:-
+  rot0.3    n= 4 L=6.9e-15 drift=2.8e-14 (u*kappa=2.8e-15) drift_unrot=2.8e-14 (u*kappa=3.8e-16) thetaLB=3.3e-16  pre-rule:- LB:- unrot:-
+  rot0.3    n= 8 L=6.9e-15 drift=9.6e-14 (u*kappa=1.2e-13) drift_unrot=9.6e-15 (u*kappa=8.7e-16) thetaLB=1.9e-15  pre-rule:- LB:- unrot:-
+  rot0.3    n=12 L=6.9e-15 drift=4.5e-12 (u*kappa=5.3e-12) drift_unrot=2.9e-13 (u*kappa=2.6e-15) thetaLB=5.3e-14  pre-rule:- LB:- unrot:-
+  rot0.3    n=16 L=6.9e-15 drift=2.2e-10 (u*kappa=2.6e-10) drift_unrot=6.9e-11 (u*kappa=1.1e-14) thetaLB=5.4e-12  pre-rule:- LB:- unrot:-
+  rot0.3    n=20 L=6.9e-15 drift=2.2e-08 (u*kappa=1.5e-08) drift_unrot=1.9e-08 (u*kappa=5.7e-14) thetaLB=1.3e-09  pre-rule:- LB:- unrot:KILL
+  rot0.3    n=22 L=6.9e-15 drift=1.8e-07 (u*kappa=1.1e-07) drift_unrot=1.7e-07 (u*kappa=1.5e-13) thetaLB=9.1e-09  pre-rule:- LB:- unrot:KILL
+  rot0.3    n=24 L=6.9e-15 drift=5.2e-06 (u*kappa=8.8e-07) drift_unrot=5.2e-06 (u*kappa=4.2e-13) thetaLB=4.4e-07  pre-rule:- LB:KILL unrot:KILL
+  rotpi4    n= 4 L=6.9e-15 drift=2.8e-14 (u*kappa=8.8e-15) drift_unrot=2.8e-14 (u*kappa=3.8e-16) thetaLB=2.3e-16  pre-rule:- LB:- unrot:-
+  rotpi4    n= 8 L=6.9e-15 drift=1.6e-12 (u*kappa=1.4e-12) drift_unrot=3.3e-14 (u*kappa=8.7e-16) thetaLB=3.5e-15  pre-rule:- LB:- unrot:-
+  rotpi4    n=12 L=6.9e-15 drift=2.2e-10 (u*kappa=2.2e-10) drift_unrot=5.2e-12 (u*kappa=2.6e-15) thetaLB=4.9e-13  pre-rule:- LB:- unrot:-
+  rotpi4    n=16 L=6.9e-15 drift=3.2e-08 (u*kappa=3.3e-08) drift_unrot=2.2e-09 (u*kappa=1.1e-14) thetaLB=2.0e-10  pre-rule:- LB:- unrot:-
+  rotpi4    n=18 L=6.9e-15 drift=4.1e-07 (u*kappa=4.3e-07) drift_unrot=7.1e-08 (u*kappa=2.3e-14) thetaLB=5.6e-09  pre-rule:- LB:- unrot:KILL
+  rotpi4    n=20 L=6.9e-15 drift=5.6e-06 (u*kappa=5.8e-06) drift_unrot=2.5e-06 (u*kappa=5.7e-14) thetaLB=1.7e-07  pre-rule:- LB:KILL unrot:KILL
+  rotpi4    n=22 L=6.9e-15 drift=1.1e-04 (u*kappa=7.8e-05) drift_unrot=9.4e-05 (u*kappa=1.5e-13) thetaLB=6.3e-06  pre-rule:- LB:KILL unrot:KILL
+  rotpi4    n=24 L=6.9e-15 drift=4.1e-03 (u*kappa=1.0e-03) drift_unrot=4.1e-03 (u*kappa=4.2e-13) thetaLB=2.8e-04  pre-rule:- LB:KILL unrot:KILL
+  disk      n= 4 L=6.9e-15 drift=2.8e-14 (u*kappa=1.9e-15) thetaLB=5.8e-16  pre-rule:- LB:- unrot:-
+  disk      n= 8 L=6.9e-15 drift=1.1e-13 (u*kappa=5.5e-14) thetaLB=8.7e-16  pre-rule:- LB:- unrot:-
+  disk      n=12 L=6.9e-15 drift=3.0e-12 (u*kappa=1.6e-12) thetaLB=1.3e-14  pre-rule:- LB:- unrot:-
+  disk      n=16 L=6.9e-15 drift=8.5e-11 (u*kappa=5.3e-11) thetaLB=2.9e-13  pre-rule:- LB:- unrot:-
+  disk      n=20 L=6.9e-15 drift=2.6e-09 (u*kappa=1.8e-09) thetaLB=7.2e-12  pre-rule:- LB:- unrot:-
+  disk      n=24 L=6.9e-15 drift=7.8e-08 (u*kappa=6.4e-08) thetaLB=3.8e-10  pre-rule:- LB:- unrot:-
+  triangle  n= 4 L=6.9e-15 drift=4.0e-14 (u*kappa=4.2e-14) thetaLB=7.7e-16  pre-rule:- LB:- unrot:-
+  triangle  n= 8 L=6.9e-15 drift=4.0e-11 (u*kappa=3.8e-11) thetaLB=9.6e-14  pre-rule:- LB:- unrot:-
+  triangle  n=12 L=6.9e-15 drift=4.0e-08 (u*kappa=3.6e-08) thetaLB=5.5e-11  pre-rule:- LB:- unrot:-
+  triangle  n=16 L=6.9e-15 drift=4.1e-05 (u*kappa=3.6e-05) thetaLB=2.2e-07  pre-rule:- LB:KILL unrot:-
+  triangle  n=18 L=6.9e-15 drift=1.4e-03 (u*kappa=1.2e-03) thetaLB=1.4e-05  pre-rule:- LB:KILL unrot:-
+  triangle  n=20 L=6.9e-15 drift=5.0e-02 (u*kappa=4.2e-02) thetaLB=7.8e-04  pre-rule:- LB:KILL unrot:-
+  lshape    n= 4 L=5.3e-15 drift=4.4e-14 (u*kappa=4.2e-15) thetaLB=5.4e-16  pre-rule:- LB:- unrot:-
+  lshape    n= 8 L=5.3e-15 drift=4.1e-13 (u*kappa=3.9e-13) thetaLB=1.0e-14  pre-rule:- LB:- unrot:-
+  lshape    n=12 L=5.3e-15 drift=4.5e-11 (u*kappa=4.2e-11) thetaLB=9.2e-13  pre-rule:- LB:- unrot:-
+  lshape    n=16 L=5.3e-15 drift=4.9e-09 (u*kappa=4.6e-09) thetaLB=3.1e-11  pre-rule:- LB:- unrot:-
+  lshape    n=20 L=5.3e-15 drift=5.6e-07 (u*kappa=5.2e-07) thetaLB=5.8e-09  pre-rule:- LB:- unrot:-
+  lshape    n=24 L=5.3e-15 drift=7.1e-05 (u*kappa=6.7e-05) thetaLB=1.1e-06  pre-rule:- LB:KILL unrot:-
+  lshape    n=28 L=5.3e-15 drift=9.9e-03 (u*kappa=9.7e-03) thetaLB=3.1e-04  pre-rule:- LB:KILL unrot:-
+  lshape    n=30 L=5.3e-15 drift=1.3e-01 (u*kappa=1.2e-01) thetaLB=8.7e-03  pre-rule:- LB:KILL unrot:-
+  annulus   n= 4 L=5.3e-15 drift=4.4e-14 (u*kappa=2.3e-15) thetaLB=8.7e-16  pre-rule:- LB:- unrot:-
+  annulus   n= 8 L=5.3e-15 drift=1.5e-13 (u*kappa=9.4e-14) thetaLB=1.6e-15  pre-rule:- LB:- unrot:-
+  annulus   n=12 L=5.3e-15 drift=5.8e-12 (u*kappa=4.1e-12) thetaLB=7.1e-14  pre-rule:- LB:- unrot:-
+  annulus   n=16 L=5.3e-15 drift=2.6e-10 (u*kappa=1.9e-10) thetaLB=8.1e-12  pre-rule:- LB:- unrot:-
+  annulus   n=20 L=5.3e-15 drift=2.4e-08 (u*kappa=9.1e-09) thetaLB=1.8e-09  pre-rule:- LB:- unrot:-
+  annulus   n=24 L=5.3e-15 drift=6.3e-06 (u*kappa=4.5e-07) thetaLB=5.7e-07  pre-rule:- LB:KILL unrot:-
+  annulus   n=28 L=5.3e-15 drift=3.4e-03 (u*kappa=2.3e-05) thetaLB=2.4e-04  pre-rule:- LB:KILL unrot:-
+  annulus   n=30 L=5.3e-15 drift=1.8e-01 (u*kappa=1.7e-04) thetaLB=1.3e-02  pre-rule:- LB:KILL unrot:-
+  tensor41  n= 4 L=6.9e-15 drift=2.9e-14 (u*kappa=1.1e-16) thetaLB=8.3e-15  pre-rule:- LB:- unrot:-
+  tensor41  n= 8 L=6.9e-15 drift=7.7e-15 (u*kappa=1.1e-16) thetaLB=8.3e-15  pre-rule:- LB:- unrot:-
+  tensor41  n=12 L=6.9e-15 drift=7.7e-15 (u*kappa=1.2e-16) thetaLB=8.3e-15  pre-rule:- LB:- unrot:-
+  tensor41  n=16 L=6.9e-15 drift=7.7e-15 (u*kappa=1.2e-16) thetaLB=8.3e-15  pre-rule:- LB:- unrot:-
+  tensor41  n=20 L=6.9e-15 drift=7.8e-15 (u*kappa=1.3e-16) thetaLB=8.3e-15  pre-rule:- LB:- unrot:-
+  tensor41  n=24 L=6.9e-15 drift=7.8e-15 (u*kappa=1.4e-16) thetaLB=8.3e-15  pre-rule:- LB:- unrot:-
+  tensor41  n=28 L=6.9e-15 drift=7.8e-15 (u*kappa=1.5e-16) thetaLB=8.3e-15  pre-rule:- LB:- unrot:-
+  tensor41  n=32 L=6.9e-15 drift=7.8e-15 (u*kappa=1.6e-16) thetaLB=8.3e-15  pre-rule:- LB:- unrot:-
+  tensor41  n=36 L=6.9e-15 drift=9.1e-15 (u*kappa=1.7e-16) thetaLB=8.3e-15  pre-rule:- LB:- unrot:-
+  padua48   n= 8 L=3.8e-15 drift=4.2e-15 (u*kappa=1.1e-16) thetaLB=1.7e-15  pre-rule:- LB:- unrot:-
+  padua48   n=16 L=3.8e-15 drift=4.1e-15 (u*kappa=1.1e-16) thetaLB=1.7e-15  pre-rule:- LB:- unrot:-
+  padua48   n=24 L=3.8e-15 drift=5.1e-15 (u*kappa=1.1e-16) thetaLB=1.7e-15  pre-rule:- LB:- unrot:-
+  padua48   n=32 L=3.8e-15 drift=7.6e-15 (u*kappa=1.1e-16) thetaLB=1.8e-15  pre-rule:- LB:- unrot:-
+  padua48   n=40 L=3.8e-15 drift=9.2e-15 (u*kappa=1.1e-16) thetaLB=1.9e-15  pre-rule:- LB:- unrot:-
+  cb_cheb   n= 4 L=1.6e-15 drift=4.9e-15 (u*kappa=1.1e-16) thetaLB=6.5e-16  pre-rule:- LB:- unrot:-
+  cb_cheb   n= 8 L=1.6e-15 drift=2.3e-15 (u*kappa=1.1e-16) thetaLB=6.5e-16  pre-rule:- LB:- unrot:-
+  cb_cheb   n=12 L=1.8e-15 drift=3.4e-15 (u*kappa=1.1e-16) thetaLB=7.9e-16  pre-rule:- LB:- unrot:-
+  cb_cheb   n=16 L=1.8e-15 drift=5.2e-15 (u*kappa=1.1e-16) thetaLB=1.0e-15  pre-rule:- LB:- unrot:-
+  cb_cheb   n=20 L=1.8e-15 drift=6.7e-15 (u*kappa=1.1e-16) thetaLB=1.1e-15  pre-rule:- LB:- unrot:-
+  cb_cheb   n=24 L=1.8e-15 drift=7.5e-15 (u*kappa=1.1e-16) thetaLB=1.2e-15  pre-rule:- LB:- unrot:-
+  cb_cheb   n=28 L=1.8e-15 drift=6.1e-15 (u*kappa=1.1e-16) thetaLB=1.2e-15  pre-rule:- LB:- unrot:-
+  cb_equi   n= 4 L=6.1e-16 drift=1.8e-14 (u*kappa=6.3e-14) thetaLB=2.3e-16  pre-rule:- LB:- unrot:-
+  cb_equi   n= 8 L=1.3e-15 drift=1.1e-12 (u*kappa=5.3e-12) thetaLB=4.4e-16  pre-rule:- LB:- unrot:-
+  cb_equi   n=12 L=1.3e-15 drift=3.3e-11 (u*kappa=1.3e-10) thetaLB=4.4e-16  pre-rule:- LB:- unrot:-
+  cb_equi   n=16 L=1.3e-15 drift=4.6e-10 (u*kappa=1.4e-09) thetaLB=5.4e-16  pre-rule:- LB:- unrot:-
+  cb_equi   n=20 L=1.3e-15 drift=2.8e-09 (u*kappa=7.4e-09) thetaLB=6.0e-16  pre-rule:- LB:- unrot:-
+  cb_equi   n=24 L=1.3e-15 drift=8.0e-09 (u*kappa=2.3e-08) thetaLB=6.5e-16  pre-rule:- LB:- unrot:-
+  cb_equi   n=28 L=1.3e-15 drift=8.7e-09 (u*kappa=4.2e-08) thetaLB=6.5e-16  pre-rule:- LB:- unrot:-
+  cb_cubic  n= 4 L=4.4e-16 drift=4.9e-05 (u*kappa=3.3e-04) thetaLB=5.6e-17  pre-rule:- LB:- unrot:-
+  cb_cubic  n= 8 L=8.9e-16 drift=1.0e+00 (u*kappa=3.8e+01) thetaLB=1.0e-16  pre-rule:- LB:- unrot:-
+  cb_cubic  n=12 L=8.9e-16 drift=1.0e+00 (u*kappa=1.9e+03) thetaLB=2.6e-16  pre-rule:- LB:- unrot:-
+  cb_cubic  n=16 L=8.9e-16 drift=1.0e+00 (u*kappa=3.1e+03) thetaLB=4.2e-16  pre-rule:- LB:- unrot:-
+  cb_cubic  n=20 L=8.9e-16 drift=1.0e+00 (u*kappa=3.2e+05) thetaLB=4.6e-16  pre-rule:- LB:- unrot:-
+  cb_cubic  n=24 L=8.9e-16 drift=1.0e+00 (u*kappa=6.0e+06) thetaLB=6.7e-16  pre-rule:- LB:- unrot:-
+  cb_cubic  n=28 L=8.9e-16 drift=1.0e+00 (u*kappa=3.4e+09) thetaLB=2.8e-15  pre-rule:- LB:- unrot:-
