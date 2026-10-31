@@ -1,0 +1,10 @@
+source_sha256 6a090d79f85642794725d6dce4c3b96b9495ce5325721091b4f6272e50d32942
+input_sha256 df44efc4f554d14f825f6ec42eb917cd73b1e515e0da55193b8db52034728342
+sympy 1.14.0
+PASS m 2 parity 0 compact axis minors and signed difference-factor table
+PASS m 2 parity 1 compact axis minors and signed difference-factor table
+PASS m 3 parity 0 compact axis minors and signed difference-factor table
+PASS m 3 parity 1 compact axis minors and signed difference-factor table
+PASS m 4 parity 0 compact axis minors and signed difference-factor table
+PASS m 4 parity 1 compact axis minors and signed difference-factor table
+PASS all 6 symbolic summary cases

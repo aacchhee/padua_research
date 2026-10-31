@@ -1,0 +1,59 @@
+INDEPENDENT U1 EXACT CHECK; all aggregate coverage is MEASURED
+python 3.12.14 platform Linux-6.18.57-x86_64-with-glibc2.41
+source_sha256 227ecbb04e9130bf9fb06c5d15eb70bdc31b5fcdd3a478bca6799803967a2ce5
+seed 20261031071
+finite-field inverse checks passed; extension basis moduli: GF4=7 GF8=11 GF16=19
+{"field": "F2", "input_sha256": "305be7d621129e86aac29f79918a1f6de04b3b59b69d1abf841e8751a7776f55", "labelled_axis_pairs": 4, "m": 0, "mode": "exhaustive", "original_iff_mismatches": 4, "singular_both_parities": 0}
+{"field": "F3", "input_sha256": "d26bb87db3be2bd73328c814cd8d8ea456f687fa48b3b620636eb62c3c43286f", "labelled_axis_pairs": 18, "m": 0, "mode": "exhaustive", "original_iff_mismatches": 0, "singular_both_parities": 0}
+{"field": "F3", "input_sha256": "61105e7972f53cf59d113b438469ba95773cc108567496f94a85deb35f7643fd", "labelled_axis_pairs": 36, "m": 1, "mode": "exhaustive", "original_iff_mismatches": 0, "singular_both_parities": 0}
+{"field": "F5", "input_sha256": "481fed842c10b9c8e9fab1ce887c45d0613cd4434547c0e2f7c84dfe3c3ec625", "labelled_axis_pairs": 30, "m": 0, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 0}
+{"field": "F5", "input_sha256": "a8abf207cbddd9a7cfbedbf86dbe97c628c43ddb110fd6d147bfaefd9255ec45", "labelled_axis_pairs": 30, "m": 1, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 0}
+{"field": "F5", "input_sha256": "0c253eef9623ff1fe2bfdd99f1bd965d0330086d1f5bbdbba69cb8e5eb51008f", "labelled_axis_pairs": 7200, "m": 2, "mode": "exhaustive", "original_iff_mismatches": 0, "singular_both_parities": 2400}
+{"field": "F5", "input_sha256": "f3f416b1ba0b8db11d8830b387f0c633658a124745809088ad652f77538b115b", "labelled_axis_pairs": 30, "m": 3, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 11}
+{"field": "F7", "input_sha256": "2a06f1de2832eca69eb4610bd59392e75d08a24d7b105af1919c296083bc9e89", "labelled_axis_pairs": 30, "m": 0, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 0}
+{"field": "F7", "input_sha256": "29b195ff418f75171d6b52d4113fdee18ce91540dad7d6ac1097c0b8ea561c77", "labelled_axis_pairs": 30, "m": 1, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 0}
+{"field": "F7", "input_sha256": "52ed3639e94c7e242d377cc7c65e55aa8dbf3f33203bf5cd10bd31240f2f2a9f", "labelled_axis_pairs": 30, "m": 2, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 8}
+{"field": "F7", "input_sha256": "47438a9180f68d89b51844f0a0df0b1f5085ff84b92af7e30d71d2610d6c7fa1", "labelled_axis_pairs": 30, "m": 3, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 10}
+{"field": "F7", "input_sha256": "024860a8376b878233002c00122b92e5803930b2735f0c5d9ed94ec699ca562e", "labelled_axis_pairs": 30, "m": 4, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 7}
+{"field": "F7", "input_sha256": "5c285af0d271fed7dba9599797a0c7f3b06ad113fd35f12d64ab024e8605b76a", "labelled_axis_pairs": 30, "m": 5, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 16}
+{"field": "F11", "input_sha256": "348697223faf60bafb713a752be505527ab763e657be17738209ff8b70beee42", "labelled_axis_pairs": 30, "m": 0, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 0}
+{"field": "F11", "input_sha256": "623299ad5c60d80082bd6325715407ce80c9af5f79fd29815bee4db611667bf1", "labelled_axis_pairs": 30, "m": 1, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 0}
+{"field": "F11", "input_sha256": "ef85e60d1a7ce5cfed5a831a34f566373d39e8620c042f71dc429f05dbae1d93", "labelled_axis_pairs": 30, "m": 2, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 1}
+{"field": "F11", "input_sha256": "31302c67204abf68f81eaac9059525e741aa8794d60dc3681555ccff7fd0b262", "labelled_axis_pairs": 30, "m": 3, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 5}
+{"field": "F11", "input_sha256": "e1ceac7e0c747d8553f15c0e0ffae135718df69f3e52f2505fd075d973a77f05", "labelled_axis_pairs": 30, "m": 4, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 9}
+{"field": "F11", "input_sha256": "32a1bf215bf82280e2a49fff190a81403bcd6dbdc75d3096faa9ed1bae1f0b5a", "labelled_axis_pairs": 30, "m": 5, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 10}
+{"field": "F11", "input_sha256": "a180e3f95ab23af59c51108392bd783dc0637cf9fb1cc7d05879c9ea745b73c1", "labelled_axis_pairs": 30, "m": 6, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 11}
+{"field": "F17", "input_sha256": "25d0a54c79dc5870199a0d8bf06b02ed73c38bd0480393c246abe09b922286eb", "labelled_axis_pairs": 30, "m": 0, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 0}
+{"field": "F17", "input_sha256": "10ad2442817d7c98be05ee5cdacf3f1fb871f48d1d1fd276ca50b4589ad7e8df", "labelled_axis_pairs": 30, "m": 1, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 0}
+{"field": "F17", "input_sha256": "ced7d9cad2a0517a11ff64efd3d2c16f9d11591375d89c2dcd77df466521f6fc", "labelled_axis_pairs": 30, "m": 2, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 3}
+{"field": "F17", "input_sha256": "7bf36db298605ff7d39d5c93be4992a5716c1824f65c5de90307ec2f3b747ec7", "labelled_axis_pairs": 30, "m": 3, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 3}
+{"field": "F17", "input_sha256": "09784e9cfb9d6758717451ad6eab4a5df1b2c79375c855b730b49ebf4c7b2730", "labelled_axis_pairs": 30, "m": 4, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 7}
+{"field": "F17", "input_sha256": "0a6697c291f7ce127cd7f48220cb3a34d7d2a8c487a18826908835f25274402b", "labelled_axis_pairs": 30, "m": 5, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 9}
+{"field": "F17", "input_sha256": "55ec53b2e2adf20a9a27ab5d4523bd4ab4f7f3c14abb36e5fe6e4181387cf264", "labelled_axis_pairs": 30, "m": 6, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 10}
+{"field": "GF4", "input_sha256": "68cae006fb3d37fb5e62922bac23c269d13afb6220a13200eb4bd56e5399d1e4", "labelled_axis_pairs": 48, "m": 0, "mode": "exhaustive", "original_iff_mismatches": 48, "singular_both_parities": 0}
+{"field": "GF4", "input_sha256": "bd97987cff22c104657613446a1a94091adee7d89875472df50d75057729565e", "labelled_axis_pairs": 288, "m": 1, "mode": "exhaustive", "original_iff_mismatches": 288, "singular_both_parities": 0}
+{"field": "GF4", "input_sha256": "1a382ed5a94df67aaf82e2b849f3e471d0ce78e702cf1f077cf10085604b285e", "labelled_axis_pairs": 576, "m": 2, "mode": "exhaustive", "original_iff_mismatches": 0, "singular_both_parities": 576}
+{"field": "GF8", "input_sha256": "06337e313a13c56728c47c0ca5186a67c6ff563dd48cf3ac34fdd262f93181e4", "labelled_axis_pairs": 30, "m": 0, "mode": "seeded", "original_iff_mismatches": 30, "singular_both_parities": 0}
+{"field": "GF8", "input_sha256": "b468d13f3ca23d023242794e8abf08c6d97767cb1b30c836e01daef642af7eec", "labelled_axis_pairs": 30, "m": 1, "mode": "seeded", "original_iff_mismatches": 30, "singular_both_parities": 0}
+{"field": "GF8", "input_sha256": "9b32f3fb854d4add38ea6f4b611dfe668f425c433f37e4b0931922daacf55afb", "labelled_axis_pairs": 30, "m": 2, "mode": "seeded", "original_iff_mismatches": 23, "singular_both_parities": 7}
+{"field": "GF8", "input_sha256": "b73255a5c166f36bfad34d52604f1a533b03b790435fa53c6ec5d42e8cb8a6e7", "labelled_axis_pairs": 30, "m": 3, "mode": "seeded", "original_iff_mismatches": 26, "singular_both_parities": 4}
+{"field": "GF8", "input_sha256": "f2164c8f970b05155e1fd134cf67398686c4cfc4452fc794c5c196b5c43b3a1b", "labelled_axis_pairs": 30, "m": 4, "mode": "seeded", "original_iff_mismatches": 17, "singular_both_parities": 13}
+{"field": "GF8", "input_sha256": "4e898f8e796343f6a37d1ef87c49483280e42e6c56b2a26faf74e3d4061a9b73", "labelled_axis_pairs": 30, "m": 5, "mode": "seeded", "original_iff_mismatches": 15, "singular_both_parities": 15}
+{"field": "GF8", "input_sha256": "6b132de7e3d21a083feb1c29bd321718f0bc96f8cceaf7e3358d27886566c9c0", "labelled_axis_pairs": 30, "m": 6, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 30}
+{"field": "GF16", "input_sha256": "20e292af1d2bc5f6c3a204efbd9832966296bfc2d6672a62e1d3f0ec420dd43c", "labelled_axis_pairs": 30, "m": 0, "mode": "seeded", "original_iff_mismatches": 30, "singular_both_parities": 0}
+{"field": "GF16", "input_sha256": "4e8be6648f1b6aace01fb699b597577192ee388f82df05bb5805a97a0f91808b", "labelled_axis_pairs": 30, "m": 1, "mode": "seeded", "original_iff_mismatches": 30, "singular_both_parities": 0}
+{"field": "GF16", "input_sha256": "d3668ae32ba0099cd0eadde857607a45c04a994cdbd5d96310fa5ed14e622c78", "labelled_axis_pairs": 30, "m": 2, "mode": "seeded", "original_iff_mismatches": 28, "singular_both_parities": 2}
+{"field": "GF16", "input_sha256": "8584493ee2676d2c1be6eb4d70da411ec7377b1a2bd2e64fdfaa65ce5c9333bf", "labelled_axis_pairs": 30, "m": 3, "mode": "seeded", "original_iff_mismatches": 25, "singular_both_parities": 5}
+{"field": "GF16", "input_sha256": "686b53d661b311470567b8bfa4a956b3b17c47e6637ae1d2cff1b301401ffa01", "labelled_axis_pairs": 30, "m": 4, "mode": "seeded", "original_iff_mismatches": 29, "singular_both_parities": 1}
+{"field": "GF16", "input_sha256": "1f4d528cbb0d5aa0dbfcd0c23ea3d573ccd65fe498281080442ede61bed97483", "labelled_axis_pairs": 30, "m": 5, "mode": "seeded", "original_iff_mismatches": 22, "singular_both_parities": 8}
+{"field": "GF16", "input_sha256": "04e6d34fe90e9a031233d6397bf880d33c4cf41b7eca1317edeebb295573c2d8", "labelled_axis_pairs": 30, "m": 6, "mode": "seeded", "original_iff_mismatches": 25, "singular_both_parities": 5}
+{"field": "Q", "input_sha256": "f0f44d4af361d5957c4f6afaed2678844f7e2e8446091e950c19861c7ca5c58c", "labelled_axis_pairs": 8, "m": 0, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 0}
+{"field": "Q", "input_sha256": "86b49d85053f5e749b42931a3b90e9ea0baa98e4d7ab4ec8d6e3340058471b9b", "labelled_axis_pairs": 8, "m": 1, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 0}
+{"field": "Q", "input_sha256": "47153b9c5ca923ceac99761035d621c978ab7da98b5c37e647565c525538d164", "labelled_axis_pairs": 8, "m": 2, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 0}
+{"field": "Q", "input_sha256": "7824d0ebdd61642c8e8836600a5fc8786a4df1e5aacc15b286f29aa6e120ece8", "labelled_axis_pairs": 8, "m": 3, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 0}
+{"field": "Q", "input_sha256": "f78d892f3e0a70f51cbeb1bbd20b0ee13bcf8adc58d55a4bbda8622a877c92ae", "labelled_axis_pairs": 8, "m": 4, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 0}
+{"field": "Q", "input_sha256": "f7fb63e335800081c086171debb37547f5254c57d57509de8af826d3a95bf314", "labelled_axis_pairs": 8, "m": 5, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 0}
+{"field": "Q", "input_sha256": "03c5ba8ae9e1863f8bb35a7547ae202cdef394acf8feaf01f5d3c9d58cbd54f3", "labelled_axis_pairs": 8, "m": 6, "mode": "seeded", "original_iff_mismatches": 0, "singular_both_parities": 0}
+PASS axis pairs 9336 checkerboards 18672
+Each case checked both parity determinants, allchar normalized squared identity, odd-char iff,
+allchar shortened iff, full alt determinant=1, complementary minors, normalization, central nonvanishing.

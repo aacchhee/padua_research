@@ -1,0 +1,73 @@
+{
+  "rules_base": "d36722823441dc40c6e19d69a174459348dd309c",
+  "reviewed_producer_checkpoint": "d5a5efbc6228ea21ef38b438ef976260f90ea83e",
+  "reviewer": "Codex gpt-6-astra xhigh",
+  "status": "Final supplementary independent reconstruction; final Claude audit still required; two nonmathematical candidate-record corrections assigned to root integration",
+  "files": [
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u1/check-output.txt",
+      "bytes": 11439,
+      "sha256": "6ad6130432037466c382e9b7c7842f31ef5364961d16fb46f6a5c1e2dcb01e4f"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u1/check_symbolic_summary.py",
+      "bytes": 2927,
+      "sha256": "6a090d79f85642794725d6dce4c3b96b9495ce5325721091b4f6272e50d32942"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u1/check_u1.py",
+      "bytes": 7146,
+      "sha256": "227ecbb04e9130bf9fb06c5d15eb70bdc31b5fcdd3a478bca6799803967a2ce5"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u1/evidence.md",
+      "bytes": 11388,
+      "sha256": "1c0ba14ac91ac404d1a1d43ecd7e90a1d750b6207366b5e3621486428fa79cad"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u1/integration-check.txt",
+      "bytes": 747,
+      "sha256": "6b6c0b3cd63fa0c1873a4c92585570485da42a45816ef4b5dad3d19f8ab5e6be"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u1/producer-final-finite.json",
+      "bytes": 10186,
+      "sha256": "2e11931b57274e3444a93ea92755fac79b1cbd2d4d1fd24136760a9c4f3db937"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u1/producer-final-symbolic.json",
+      "bytes": 18648,
+      "sha256": "df44efc4f554d14f825f6ec42eb917cd73b1e515e0da55193b8db52034728342"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u1/producer-rerun-finite.json",
+      "bytes": 10194,
+      "sha256": "58f13035386c6b3db32f6616d91550101483b19928a4dfe84c8bf4176bbdb74f"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u1/reconstruction-allchar.md",
+      "bytes": 11129,
+      "sha256": "b686f30b998380520ec053c10831e64680dc9ea37f10b9dd1dc0bd19ab92d4ae"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u1/reconstruction-char2.md",
+      "bytes": 3458,
+      "sha256": "cea5da26981fc2c9830d3ca7c6ab7e1833d131eac27cc546fea506b069df0f27"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u1/reconstruction-oddchar.md",
+      "bytes": 3194,
+      "sha256": "c3d0ae41135f86e621b1e5c36e20c056af11315b777df11a1e195d12b3fc2a32"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u1/report.md",
+      "bytes": 11337,
+      "sha256": "4d4bb1a831cf3b8151ae7de35b92c966d60da25145b51ce3414b566895c5eab5"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u1/symbolic-summary-output.txt",
+      "bytes": 642,
+      "sha256": "3e55091a09a0d5dee9704f1dd8560bb39402123816b51b6642257116fe3d687b"
+    }
+  ]
+}

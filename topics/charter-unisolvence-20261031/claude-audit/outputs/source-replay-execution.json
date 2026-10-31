@@ -1,0 +1,92 @@
+[
+  {
+    "script": "padua_ff.py",
+    "command": [
+      "/usr/local/bin/python3",
+      "-I",
+      "/tmp/claude-0/-home-claude/d1e7b251-903a-564c-8716-3976df55d9ec/scratchpad/reruns/src/padua_ff.py"
+    ],
+    "script_sha256": "8c627dfa3641289db3a187a45db1d0d8ee4a57f97783dc7da8b2a89978ad40df",
+    "returncode": 0,
+    "elapsed_seconds": 1.9130029880000166,
+    "log": "/tmp/claude-0/-home-claude/d1e7b251-903a-564c-8716-3976df55d9ec/scratchpad/reruns/replay/padua_ff.log",
+    "no_traceback": true,
+    "required_marker": "ALL CHECKS PASSED",
+    "marker_ok": true
+  },
+  {
+    "script": "fast_transform.py",
+    "command": [
+      "/usr/local/bin/python3",
+      "-I",
+      "/tmp/claude-0/-home-claude/d1e7b251-903a-564c-8716-3976df55d9ec/scratchpad/reruns/src/fast_transform.py"
+    ],
+    "script_sha256": "10f7ef3b12e608ae49b45970ea8135ce9e5377fa44c83196a1367110ac89f28d",
+    "returncode": 0,
+    "elapsed_seconds": 4.729586570000038,
+    "log": "/tmp/claude-0/-home-claude/d1e7b251-903a-564c-8716-3976df55d9ec/scratchpad/reruns/replay/fast_transform.log",
+    "no_traceback": true,
+    "required_marker": null,
+    "marker_ok": true
+  },
+  {
+    "script": "quadratic_padua.py",
+    "command": [
+      "/usr/local/bin/python3",
+      "-I",
+      "/tmp/claude-0/-home-claude/d1e7b251-903a-564c-8716-3976df55d9ec/scratchpad/reruns/src/quadratic_padua.py"
+    ],
+    "script_sha256": "1df666d6d7acdfd26d14d0f5f26cdbfb3190bfec76031efc43daaaac81f5dc4f",
+    "returncode": 0,
+    "elapsed_seconds": 19.079265254999996,
+    "log": "/tmp/claude-0/-home-claude/d1e7b251-903a-564c-8716-3976df55d9ec/scratchpad/reruns/replay/quadratic_padua.log",
+    "no_traceback": true,
+    "required_marker": "ALL OK",
+    "marker_ok": true
+  },
+  {
+    "script": "discriminant_real.py",
+    "command": [
+      "/usr/local/bin/python3",
+      "-I",
+      "/tmp/claude-0/-home-claude/d1e7b251-903a-564c-8716-3976df55d9ec/scratchpad/reruns/src/discriminant_real.py"
+    ],
+    "script_sha256": "1e0e65b6b07e2b1bc903b1f315f0ac7ffd5b1adb59416e98ec324709ea94869d",
+    "returncode": 0,
+    "elapsed_seconds": 0.08783385399999588,
+    "log": "/tmp/claude-0/-home-claude/d1e7b251-903a-564c-8716-3976df55d9ec/scratchpad/reruns/replay/discriminant_real.log",
+    "no_traceback": true,
+    "required_marker": null,
+    "marker_ok": true
+  },
+  {
+    "script": "hs_ff.py",
+    "command": [
+      "/usr/local/bin/python3",
+      "-I",
+      "/tmp/claude-0/-home-claude/d1e7b251-903a-564c-8716-3976df55d9ec/scratchpad/reruns/src/hs_ff.py"
+    ],
+    "script_sha256": "c3ed1d577c1db4bb78b8b9a0236651e61e69564a461283fa81963ebe3f23e098",
+    "returncode": 0,
+    "elapsed_seconds": 15.958972022000012,
+    "log": "/tmp/claude-0/-home-claude/d1e7b251-903a-564c-8716-3976df55d9ec/scratchpad/reruns/replay/hs_ff.log",
+    "no_traceback": true,
+    "required_marker": null,
+    "marker_ok": true
+  },
+  {
+    "script": "padua_codes.py",
+    "command": [
+      "/usr/local/bin/python3",
+      "-I",
+      "/tmp/claude-0/-home-claude/d1e7b251-903a-564c-8716-3976df55d9ec/scratchpad/reruns/src/padua_codes.py"
+    ],
+    "script_sha256": "05e5d71e69d04496d5219d8097799f24c03534dfcc1a3012d7337bcd4f40f997",
+    "returncode": 0,
+    "elapsed_seconds": 2.35191131900001,
+    "log": "/tmp/claude-0/-home-claude/d1e7b251-903a-564c-8716-3976df55d9ec/scratchpad/reruns/replay/padua_codes.log",
+    "no_traceback": true,
+    "required_marker": null,
+    "marker_ok": true
+  }
+]
