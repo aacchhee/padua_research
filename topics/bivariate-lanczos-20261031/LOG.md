@@ -70,6 +70,13 @@ Subagent effort is set from the agent definition and is not independently expose
 - L3 developer (Opus 5.5 xhigh, requested; 100 tool uses, ~73 min) completed R01–R03; committed `a5b993d`. Claims PD-T?…-300–309, PD-N?…-301, -302 (statuses in progress.md). Scope decision: literal L3-Q1 trivial; exact-representation reading answered (plan History). Protocol finding: STATUS.md timestamps for R02/R03 were in the future (estimates) — annotated, not edited.
 - Next: independent adversarial reconstruction incl. independent reruns of the exact certificates (needed before PD-T?…-306 and PD-N?…-301 can move from CONDITIONAL), a prior-art check, and L3 R04.
 
+### L1 prior-art check returned (2026-10-31)
+
+- Claude Opus 5.5 high (requested), separate agent; report [reviews/L1-prior-art-01.md](reviews/L1-prior-art-01.md). WebFetch summarises pages (not verbatim); locators to be re-checked before citation.
+- Verdicts: (a) non-product loss growth — **partially known**: Zaccaron 2014 Tables 2.1–2.2 (p. 16) already show geometry-dependent loss for the HL-type window recurrence (rotated square 0.74 at degree 60; quadrangle geometric growth from degree ~10). The bare observation is not new and must be cited; the product/non-product dichotomy, "before Ritz convergence" and "univariate on product measures" were not found. (b) row-selection: stacked overdetermined system and non-unique left inverses classical (Xu survey arXiv 1701.02709 §2.2; Liu–Narayan 2023 Thm 3.1; Olver–Townsend–Vasil 2019 §2.3); link to instability not found. (c) two-relation remedy: algorithmic predecessor Liu–Narayan SISC 45(3) 2023 (block Stieltjes, all coordinates, eigen/SVD completion); comparison not found. (d) ω-recurrence: template Simon 1984; two-operator version not found. (e) L4: weaker informal statements (Zhu–Nakatsukasa §3; Hokanson §2). (f) only the HL observation.
+- **Must read before any priority claim:** Barrio–Peña–Sauer, J. Approx. Theory 162 (2010) 407–420 (three-term recurrence evaluation of multivariate OPs; metadata only — ScienceDirect blocked) — potential kill for (b)/(c); Sinha 2026 beyond §7.1 (relation (54) injection term may overlap (e) and PD-T?…-103).
+- Record fixes queued for consolidation: liu-narayan-2023 author Zexin Liu; hokanson-2020 title ("Multivariate rational approximation using a stabilized Sanathanan–Koerner iteration"); zaccaron-2014 "two inconsistent reports" are rows of the same Table 2.1 (no conflict); 7 new and 6 upgraded records recommended in the review.
+
 ## Runs needed
 
 (none yet; directions add exact commands)
