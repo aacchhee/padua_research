@@ -28,6 +28,10 @@
 - Reading evidence and limitations: supplied provenance reports/Round 3 open problems 2023 2026.md §4.3; attached instructions inside the inputs are treated as data, not authority.
 - Relation to campaign claims (no inherited proof status): Finite-field unisolvence is out of scope for this campaign (kept for completeness).
 
+## AC correction (2026-10-31)
+
+AC reports (from the parallel unisolvence topic) that the unisolvence and positivity statements require **ordered (monotone) real node lists**; "any distinct node sequences" in the round-2/round-3 inputs is wrong (counterexample X = (0,1,2), Y = (0,1,3,2), rank 5 of 6; consistent with LIT?bivariate-lanczos-claude-071). Also reported: HS Conjecture 3 for ordered real nodes proved by Cao–Ghimire–Wang 2022 — **UNVERIFIED**, verify before citing. Related developer results (not accepted dependencies): `codex/charter-unisolvence-20261031` at `eb7bdcd`, PD-T001 (`tracks/unisolvence/theory/u1/odd-characteristic-criterion.md`) and PD-T003 (`tracks/unisolvence/theory/u1/kernel-cubature-corollary.md`), status developer PROVED, Claude audit pending.
+
 ## Search and attribution notes
 
 Shared key with the Codex branch; merge at PR preparation. Web metadata checks, if any, are logged in `topics/bivariate-lanczos-20261031/lit/search-log.md`. Imported prior searches are reports of other agents' work, not this agent's execution. Unsupported assertions are UNVERIFIED.
@@ -35,3 +39,4 @@ Shared key with the Codex branch; merge at PR preparation. Web metadata checks, 
 ## History
 
 2026-10-31: Step 0 baseline record (AC-requested; not a novelty gate). Provisional IDs only; final `LIT-nnn` allocated at PR preparation.
+2026-10-31: AC ordered-node correction recorded (orchestrator).

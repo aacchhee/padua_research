@@ -48,6 +48,12 @@ Subagent effort is set from the agent definition and is not independently expose
 - L2 queued. Reproduction of inputs (Sonnet 5.5 high) still running; owns repro/.
 - Each developer returns after ≤ 3 rounds; the orchestrator checkpoints, then commissions prior-art checks and independent adversarial reconstructions (separate Opus 5.5 xhigh agents) before any acceptance.
 
+### AC message 2026-10-31 22:12 — information from the parallel unisolvence topic
+
+- Source: `codex/charter-unisolvence-20261031` at `eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64` (verified present on origin; Stage AUDIT, Claude audit pending). PD-T001 `tracks/unisolvence/theory/u1/odd-characteristic-criterion.md` (det(V_e)²·∏w_i(X)w_j(Y) = 2^{−N}∏_{r=1}^{m+1}Δ_r(X)Δ_r(Y)); PD-T003 `tracks/unisolvence/theory/u1/kernel-cubature-corollary.md` (L_X⊗L_Y = 2Σ_{S_e} w_i(X)w_j(Y)f for total degree ≤ 2m). Status: developer PROVED with supplementary Astra reconstruction, **not accepted** — cited by branch/SHA/ID only, never as dependencies. PD-N001/PD-T002 (char 2, other fields) irrelevant here. FYI: `codex/mz-constants-20261031` at `33bf9e6` (out of scope; no action).
+- Correction applied: Harris–Simanek needs ordered (monotone) nodes; recorded in plan Benchmarks, `literature/records/harris-simanek-2021.md` and IDEA?…-038 rows (state/IDEAS.md, baseline-candidates.md). Orchestrator check: `tracks/bivariate-lanczos/code/inputs/harris_simanek_check.py` builds all node lists monotone (random: sorted descending; warped: cos of a monotone map of [0,π]; Padua: Chebyshev–Lobatto descending) — usable as a benchmark. Cao–Ghimire–Wang 2022 (HS Conjecture 3) recorded UNVERIFIED.
+- Integration: active rounds not interrupted; the checkerboard family is passed to L1/L3/L5 when each returns, and to L2 at launch.
+
 ## Runs needed
 
 (none yet; directions add exact commands)
