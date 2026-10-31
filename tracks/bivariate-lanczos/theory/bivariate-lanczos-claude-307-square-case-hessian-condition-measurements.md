@@ -13,6 +13,8 @@ MEASURED, floating point (double precision; SDP solver CLARABEL via cvxpy 1.6.0;
 3. Positivity radius of the numerical certificates (max-λ_min normalisation): p* ≥ 0 on balls of radius 0.05 (n = 3), 0.01 (n = 4), < 0.01 (n = 5) around all Padua nodes; the certificates are not optimised for radius.
 4. LP rates (perturbation E = −ε ev_{z*}, z* = node_0 + r(cos 1, sin 1)): n = 1, r = 0.3: δ_min/√ε = 0.212, 0.193, 0.191, 0.191, 0.191 (ε = 1e-2..1e-6); n = 2, r = 0.03: 0.057, 0.054, 0.054, 0.054, 0.054; n = 3: minimal ℓ1 residual/ε ≈ 0.023–0.035 for all δ ∈ [0.003, 0.2] (ε = 1e-3, 1e-5), never 0. n = 1 with r = 0.03 gives δ_min/ε ≈ 2 at ε ≤ 1e-5 but those runs fail the S_1-residual reliability check (UNRELIABLE: LP tolerance comparable to the S_1-component of E) and are not evidence.
 
+5. (Added R02.) Quadratic-generator form (PD-T?…-309): for Padua n = 1..7 and a random square set (seed 1, n = 1..6), the map C ↦ p_C on {C ⊥ Hankel} has rank n(n+1)/2 and its image coincides with the numerically computed S_1 (all principal-angle cosines 1 to ≤ 1e-15); the SDP max λ s.t. G_iᵀCG_i ⪰ λI, ‖c‖_∞ ≤ 1 gives λ ≤ 2e-11 for Padua n = 1, 2 and λ = 0.126, 0.0553, 0.0603, 0.0159, 0.0109 for n = 3..7 (same verdicts as item 1). Logs `r02_structure_padua.log`, `r02_structure_random_seed1.log`.
+
 ## Definitions / Assumptions
 
 As in PD-T?…-303. Floating point; numerical nullspaces with relative SVD threshold 1e-11; LP grids are inner approximations of K_δ.

@@ -1,0 +1,8 @@
+n=1: max|gen at nodes|=1.2e-16 rank(gens)=3 (n+2=3) interior-gradient-formula err=0.0e+00
+n=2: max|gen at nodes|=6.7e-16 rank(gens)=4 (n+2=4) interior-gradient-formula err=4.4e-16
+n=3: max|gen at nodes|=6.7e-16 rank(gens)=5 (n+2=5) interior-gradient-formula err=8.9e-16
+n=4: max|gen at nodes|=5.0e-16 rank(gens)=6 (n+2=6) interior-gradient-formula err=1.8e-15
+n=5: max|gen at nodes|=1.3e-15 rank(gens)=7 (n+2=7) interior-gradient-formula err=5.3e-15
+n=6: max|gen at nodes|=1.3e-15 rank(gens)=8 (n+2=8) interior-gradient-formula err=1.2e-14
+n=7: max|gen at nodes|=8.9e-16 rank(gens)=9 (n+2=9) interior-gradient-formula err=1.2e-14
+n=8: max|gen at nodes|=2.7e-15 rank(gens)=10 (n+2=10) interior-gradient-formula err=4.1e-14

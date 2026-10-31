@@ -168,3 +168,31 @@ Aliases: triangular row selection of the Jacobi pencil; two-relation block recur
 - Kill criterion written before testing (R03, before `l1_both_relations.py` was run): on the square rotated by 0.3 and by π/4 and on the disk (M = 1681, seed 11), if the two-relation block recurrence (one CGS pass against blocks n−2, n−1, then SVD) has loss at n = 20 within 10× of the BJ window recurrence's, the row selection is not the cause (killed); if its loss at n = 20 stays below 10³u ≈ 2.2e-13 on all three, the selection is the cause (survives).
 - Actual test results (R03, `logs/r03_both_relations.log`): two-relation loss at n = 20: 2e-14 (rotated 0.3), 1e-14 (π/4), 9e-15 (disk); BJ: 1e-8, 2e-6, 2e-10. Kill criterion not met.
 - Disposition: survives (MEASURED); canonical records PD-T?…-108 (row-selection lemma, PROVED) and PD-T?…-109 (b); hand-off to L2/L5 as a remedy candidate (no analysis yet).
+
+---
+
+## Pending corrections to reviewed R01–R03 files (found in R04; the reviewed files are not edited — corrections are stated in R04.md §6)
+
+- PC-1 (PD-N?…-101, (a) parameter range): the probe sets of `l1_defect_probe.py` (square rotated by 0.05; sheared squares; rotated Beta-product set) were listed as sets on which loss exceeds u/ρ_O by 10²–10¹⁴, but that probe computed **no** Ritz residuals. The 10²–10¹⁴ statement is supported only on the R01 main sets and on the seed-11 square rotated by 0.3 and π/4, disk and triangle (u/ρ_Z from `l1_node_propagator.py`). For the square rotated by 0.05 the loss at n = 24 is 2e-13, i.e. borderline (≈ 3× the seed-11 square's u/ρ_Z), not a 10²-fold miss.
+- PC-2 (PD-T?…-107 (b)): "loss grows exponentially from degree ≈ 8–12" does not hold for the 0.05 rotation (loss 7e-15, 2e-14, 2e-13 at n = 16, 20, 24: growth starts near n ≈ 18).
+
+## IDEA?bivariate-lanczos-claude-112 — near-product perturbation bound for the node propagator (R04)
+
+Aliases: discrete-Gronwall transfer bound; near-product upper bound; product-of-marginals reference.
+
+- Question / scope: R03 §8(a): an a priori upper bound on ‖L*(z)⁻¹‖ for measures whose window coefficients are close to those of a product-type reference.
+- Mechanism and hypotheses: write L*(z)⁻¹ through block transfer matrices T_t(z) (degree blocks); compare with the reference μ_x ⊗ μ_y (product of the marginals of μ), whose transfers factorise (PD-T?…-105); perturbed-product (discrete Gronwall) lemma.
+- Closest: IDEA?…-109, -110, -111; Bauer–Fike/perturbed-product lemmas are textbook (not recorded).
+- Separation criterion: quantitative bound in terms of ε_t = ‖T_t − T⁰_t‖ and the reference constant K; falsified by any sampled (node, s, t) where the measured transfer-product norm exceeds the bound (that would be a proof or code error).
+- Kill criteria written before testing (R04, before `l1_r04_near_product.py` was run): (K1) consistency: at every sampled node and pair s < t ≤ 20 the actual ‖T_t⋯T_{s+1}‖₂ ≤ K Π(1 + Kε_r); any violation kills the implementation/proof until explained. (K2) informativeness (classification, not a kill): at θ = 0 (random square vs product of its marginals) and θ = 0.05 the bound is "informative" if log10(bound/actual) ≤ 2 for the median sampled node at t = 20, s = 0. (K3) rate scaling hypothesis H_lin (toy-model prediction, R04 §2): the excess growth rate g̃(θ) = g(θ) − g(0) of the exact-coefficient propagator response (per degree, between n = 12 and n = 24, square M = 1681 seed 11 rotated by θ) is linear in θ: H_lin is killed if g̃(θ)/θ at θ = 0.025 differs from g̃(θ)/θ at θ = 0.2 by more than a factor 3.
+- Actual test results: R04.md.
+
+## IDEA?bivariate-lanczos-claude-113 — measures that agree with a product measure up to degree 2n+1 (Padua cubature, Harris–Simanek checkerboards) inherit the product factorisation; checkerboard control (R04)
+
+Aliases: moment-matching extension; checkerboard control; product-type measure on a non-tensor support.
+
+- Question / scope: PD-T?…-105 assumed a tensor grid. Does the factorisation hold whenever the inner products up to degree 2n+1 equal those of a product measure, and does the FP recurrence on Harris–Simanek checkerboards (M = N, ordered X of length m+1, Y of length m+2, weights |1/ω′|) behave like the product regime?
+- Closest: IDEA?…-038 (sparse Padua/HS recurrences, settled background), plan.md Benchmarks (HS checkerboards; codex branch claims cited by ID only, not used as dependencies), IDEA?…-109.
+- Separation criterion: support is not a tensor grid and M = N; falsified if the exact window coefficients of a checkerboard are not product-type below degree m (within-degree coupling > 1e-12 relative), or if (product-type coefficients but) the FP loss shows bivariate amplification.
+- Kill criteria written before testing (R04, before `l1_r04_checkerboard.py` was run), m = 30 (M = N_30 = 496), e = 0, three node families (Chebyshev–Lobatto-type, equispaced, clustered x = s|s|² on equispaced s): (C1) product type: max within-degree coupling ratio (PD-T?…-107 (e)) over degrees ≤ m − 1 is ≤ 1e-12 for all three families — else the moment-matching claim is killed for that family; (C2) no bivariate amplification: the 2D BJ loss at every degree t ≤ m − 2 is ≤ 100 × max(10³u, L_x(t), L_y(t)), where L_x(t), L_y(t) are the losses of univariate Lanczos (no reorthogonalisation) on (X, |w_X|) and (Y, |w_Y|) at step t — else the CONDITIONAL FP transfer of PD-T?…-105 fails on that family.
+- Actual test results: R04.md.

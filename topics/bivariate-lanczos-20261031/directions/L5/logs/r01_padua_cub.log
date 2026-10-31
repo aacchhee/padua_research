@@ -39,3 +39,4 @@ padua_cub 62 given givens-scheme:9.5e-14 givens-largest:7.1e-04 hl:1.0e-14 bj:4.
 padua_cub 62 sortx givens-scheme:8.9e-14 givens-largest:2.0e-03 hl:1.0e-14 bj:4.2e-13 cgs2:3.0e-15 hh:3.1e-15
 padua_cub 62 rand1 givens-scheme:3.8e-12 givens-largest:4.6e-06 hl:8.2e-15 bj:4.0e-14 cgs2:3.0e-15 hh:3.1e-15
 padua_cub 62 rand2 givens-scheme:1.2e-11 givens-largest:7.8e-07 hl:8.9e-15 bj:7.6e-14 cgs2:2.8e-15 hh:3.1e-15
+padua_cub 62 rand3 givens-scheme:9.0e-13 givens-largest:5.1e-04 hl:8.8e-15 bj:9.9e-14 cgs2:3.0e-15 hh:3.1e-15
