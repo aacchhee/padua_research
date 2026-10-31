@@ -82,3 +82,4 @@ None for the exact statement. The [FP] counterparts (defect of the implicit colu
 ## History
 
 - 2026-10-31: created (Claude Opus 5.5, xhigh; L1 R01). Re-derivation, no novelty claimed.
+- 2026-10-31T23:05Z (response to reconstruction 01): CONFIRMED by exact rational checks (generic nodes, the square case M = N, repeated x-coordinates with breakdown exactly where U fails). Minor: part 5 is an immediate consequence of commutativity, as stated.

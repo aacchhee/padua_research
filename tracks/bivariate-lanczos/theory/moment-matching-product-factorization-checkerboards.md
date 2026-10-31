@@ -60,3 +60,4 @@ None for the statements.
 ## History
 
 - 2026-10-31: created (Claude Opus 5.5, xhigh; L1 R04).
+- 2026-10-31T23:05Z (re-check after reconstruction 01): not affected by B1/B2 (exact algebra). Note: on product-type measures the mirror rule gives the same product structure by x ↔ y symmetry; the alt/adapt rules of PD-N?…-105 are not covered by part 1's chain description.

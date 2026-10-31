@@ -23,7 +23,7 @@ Write w_k = |W_k| (≤ 3t − 1 for the block window, ≤ 2t + 1 for the exact w
 3. **(Matrix form for J: one formed column per degree.)** For every t ≥ 0, J q̂_{t,0} = Q̂_{t+1} τ_t + f_{(t+1,0)} with τ_t the computed coefficients (rows W_{(t+1,0)} = blocks t−1, t, and β_{(t+1,0)} in row (t+1, 0)). No relation is formed for J q̂_{t,j}, j ≥ 1.
 4. **(Implicit-operator defect.)** Let Π_s := Q̂_sQ̂_s⁺ (orthogonal projector onto range Q̂_s). For every column l of degree s define, as analysis objects that the algorithm never computes, g_l := Q̂_{s+1}⁺ J q̂_l and the **defect** d_l := (I − Π_{s+1}) J q̂_l, so J q̂_l = Q̂_{s+1} g_l + d_l exactly; in matrix form J Q̂_{n−1} = Q̂_n T̃_J + G_J with columns of G_J equal to (I − Π_n) d_l. In exact arithmetic all d_l = 0. In [FP], d_{(t,0)} = (I − Π_{t+1}) f_{(t+1,0)} (local rounding only), and for j ≥ 1 the defects satisfy the exact **defect recursion**
    β_{(t,j)} d_{(t,j)} = (I − Π_{t+1}) [ F d_{(t−1,j−1)} − Σ_{l∈W_{(t,j)}} (h_{(t,j)})_l d_l + E_F^{(t)} g_{(t−1,j−1)} − J f_{(t,j)} ],
-   where E_F^{(t)} = F Q̂_t − Q̂_{t+1} T_F^{(t)} collects the F-local errors of the columns of degree ≤ t. The J-defect is forced only by local rounding (f and E_F) and propagated by the same computed recurrence that produces the basis vectors, with F as the multiplier.
+   where E_F^{(t)} = F Q̂_t − Q̂_{t+1} T_F^{(t)} collects the F-local errors of the columns of degree ≤ t. The J-defect is forced only by local rounding (f and E_F) and propagated by the same computed recurrence that produces the basis vectors, with F as the multiplier. [Wording corrected 2026-10-31, recon-01 minor: "propagated by the same computed coefficients, interleaved with the projectors (I − Π_{t+1}), with F as the multiplier".]
 
 ## Definitions
 
@@ -56,6 +56,11 @@ R01 (`tracks/bivariate-lanczos/code/L1/l1_kill_test.py`) logs `defect_x`, `defec
 
 *1 (BJ).* a = A q̂_p + δ_a, |δ_a| ≤ u|A q̂_p| (diagonal A). r = a − Q̂_W h + δ_r with |δ_r| ≤ γ_{w+1}(|a| + |Q̂_W||h|) (a dot product of length w followed by one subtraction, componentwise). q̂_k = r/β + δ_q with |δ_q| ≤ u|r|/β, so β q̂_k = r + βδ_q. Hence f_k := −(δ_a + δ_r + βδ_q) and ‖f_k‖ ≤ u‖A‖μ + γ_{w+1}(‖a‖ + ‖|Q̂_W|‖₂‖h‖) + u‖r‖. Use ‖a‖ ≤ (1+u)‖A‖μ, ‖|Q̂_W|‖₂ ≤ ‖Q̂_W‖_F ≤ √w μ, ‖h‖ ≤ (1+γ_M)‖Q̂_W‖₂‖a‖ = (1+γ_M) κ ‖a‖, ‖r‖ ≤ ‖a‖ + ‖Q̂_W h‖ + ‖δ_r‖ ≤ (1 + κ²)‖a‖ + O(u). Collecting first-order terms: ‖f_k‖ ≤ u‖A‖μ[1 + (w+1)(1 + √w μ κ) + 1 + κ²]; since κ ≤ √w μ we have κ² ≤ κ√w μ, hence ‖f_k‖ ≤ [(w+2)(1 + κ√w μ) + 1]u‖A‖μ. Normalisation: β = ‖r‖(1 + ε), |ε| ≤ γ_M/2 + u + O(u²) (sum of M squares and a square root), so ‖q̂_k‖ = ‖r‖/β · (1 + O(u)) and |‖q̂_k‖ − 1| ≤ (M/2 + 2)u.
 *1 (HL).* Each MGS step r ← r − c q̂_l with c = fl(q̂_lᵀ r) has |δ| ≤ u(|r| + 2|c||q̂_l|) componentwise; c is the recorded coefficient, so its own rounding does not enter f. Over at most 2w steps, with |c| ≤ (1+γ_M)μ‖r‖ and ‖r‖ nonincreasing up to O(u) factors bounded by κ², ‖Σδ‖ ≤ 2w·3u κ²μ‖A‖μ; add δ_a and the normalisation term.
+
+*Corrections (2026-10-31T23:05Z, reconstruction 01, minor; first-order constants unaffected):*
+- 1 (BJ): "‖h‖ ≤ (1+γ_M)κ‖a‖" is not a valid inequality. The correct bound is ‖h‖ ≤ κ‖a‖ + γ_M√w μ‖a‖. The difference enters only at O(u²).
+- 1 (HL): the accounting omits the rounding of the coefficient sum h = c + c′ over the two sweeps. That term is ≲ uκ²‖a‖ and is absorbed by the κ² slack of the stated constant.
+- "‖r‖ nonincreasing up to O(u) factors bounded by κ²" should read: each MGS step does not increase ‖r‖ (up to O(u)) whenever ‖q̂_l‖ ≤ √2; the κ² factor bounds the accumulated coefficients.
 *2–3.* Stack the relations of 1. for the children of the columns of Q̂_{n−1} (F) and for the columns (t, 0) (J), using the window/pattern of PD-T?…-101, 4.
 *4.* J q̂_l = Q̂_{s+1}g_l + d_l is the orthogonal decomposition with respect to range Q̂_{s+1}. For (t, 0): J q̂_{t,0} = Q̂_{t+1}τ_t + f_{(t+1,0)} by 3., and (I − Π_{t+1})Q̂_{t+1} = 0. For j ≥ 1: multiply the local relation β q̂_{t,j} = F q̂_{t−1,j−1} − Q̂_W h − f by J and use JF = FJ (diagonal matrices): β J q̂_{t,j} = F J q̂_{t−1,j−1} − Σ_l h_l J q̂_l − J f. Substitute J q̂_{t−1,j−1} = Q̂_t g + d_{(t−1,j−1)} and F Q̂_t = Q̂_{t+1}T_F^{(t)} + E_F^{(t)}, and J q̂_l = Q̂_{deg l+1} g_l + d_l with deg l + 1 ≤ t + 1 for l ∈ W. All Q̂_{t+1}-terms are annihilated by (I − Π_{t+1}); since β J q̂_{t,j} = β Q̂_{t+1}g_{(t,j)} + β d_{(t,j)} with d_{(t,j)} = (I − Π_{t+1})J q̂_{t,j}, applying (I − Π_{t+1}) to both sides gives the recursion.
 
@@ -70,3 +75,4 @@ A priori bound on ‖G_J‖ in terms of u, the window and the loss of orthogonal
 ## History
 
 - 2026-10-31: created (Claude Opus 5.5, xhigh; L1 R01).
+- 2026-10-31T23:05Z (response to reconstruction 01): CONFIRMED by recon-01. Minor corrections added after Proof 1 (HL) and in part 4's last sentence; the original wording is kept.

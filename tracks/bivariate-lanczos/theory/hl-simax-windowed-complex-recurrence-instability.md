@@ -54,3 +54,4 @@ An independent implementation by the auditor.
 ## History
 
 - 2026-10-31: created (Claude Opus 5.5, xhigh; L1 R01).
+- 2026-10-31T23:05Z (response to reconstruction 01): CONFIRMED by an independent implementation of the published listing. Minor: "from degree ≈ 6" fits CGS; with ORTH the onset is n ≈ 8–10 in recon-01's runs. Read the statement's "from degree ≈ 6" as "from degree ≈ 6–10" (original wording kept).

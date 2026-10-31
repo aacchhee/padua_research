@@ -43,6 +43,19 @@ PD-T?…-101 (supports, symmetry of the square part of H_A), PD-T?…-104 (L̂(z
 
 None needed beyond the algebra; R03's exact-coefficient propagator (`code/L1/l1_exact_propagator.py`) builds L*(z) from long-double exact coefficients.
 
+## Sources
+
+Added 2026-10-31T23:05Z, recon-01 major finding P3; PC-7, PC-9. The algebra is known; no novelty is claimed for it.
+- In block form, the window recurrence is Xu's recurrence formula with one particular left inverse of the stacked block A_{n−1} = [A_{n−1,1}; A_{n−1,2}]. The left-inverse form is textbook: Dunkl–Xu Thm 3.2.5, as cited by Barrio–Peña–Sauer 2010 p. 412 (Dunkl–Xu not read by me); Xu's survey arXiv 1701.02709 §2.2 eq. (2.14); Liu–Narayan 2023 Thm 3.1; Olver–Townsend–Vasil 2019 §2.3 (the last three as reported by the prior-art check).
+- Barrio–Peña–Sauer, J. Approx. Theory 162 (2010) 407–420, fulltext read pp. 409–410, 413, 418–419 (scratchpad only), give:
+  - the one-variable-per-polynomial recurrence, eq. (5), with a free choice of variable;
+  - the assembled form and the all-relations average, eq. (6) and Thm 8;
+  - Remark 9: the choice affects numerical behaviour;
+  - §5: point-dependent selection heuristics;
+  - (18)–(20): Clenshaw evaluation as block triangular substitution, with a forward bound in a comparison-matrix inverse.
+  They are the closest predecessor of parts 1 and 3.
+- Separation: BPS work with monic OPs, where A_{n,j} is a 0/1 shift and the selected system has no within-degree coupling. Here the basis is the strongly orthogonal graded-lex one, whose selected block is lower triangular with coupling. The setting is discrete-measure Lanczos vectors with window truncation, and the selection is linked to loss of orthogonality (PD-T?…-104, -106, PD-N?…-105). BPS report no experiments.
+
 ## Proof or evidence
 
 *1.* Row k of L*(z)π: β_kπ_k + Σ_{l∈W_k}(h_k)_lπ_l − a_k(z)π_{p(k)}. With the exact coefficients, Σ_{l∈W_k}(h_k)_lπ_l + β_kπ_k = Σ_r (H_{A_k})_{r,p(k)}π_r because column p(k) of H_{A_k} is supported on W_k ∪ {k}. So row k is −ℛ^{A_k}_{p(k)}(z).
@@ -51,7 +64,7 @@ None needed beyond the algebra; R03's exact-coefficient propagator (`code/L1/l1_
 
 ## Scope
 
-Reformulation that locates the non-product instability: the propagator is the inverse of a triangular selection of a consistent overdetermined pencil. On product measures the selected system decouples (PD-T?…-105); on non-product measures it does not, and R03 measures that the two-relation (least-squares) completion of the same truncated pencil removes the growth on rotated squares and the disk (PD-T?…-109).
+Reformulation: the propagator is the inverse of a triangular selection of a consistent overdetermined pencil. On product measures the selected system decouples (PD-T?…-105). On non-product measures it does not. Its conditioning depends strongly on which selection is used (PD-N?…-105: one-relation rules differ by 10³–10⁸), and the two-relation completion removes the growth only on some sets (PD-T?…-109 (b), narrowed). Corrected 2026-10-31T23:05Z (recon-01 B1, P4); original wording: "Reformulation that locates the non-product instability: the propagator is the inverse of a triangular selection of a consistent overdetermined pencil. On product measures the selected system decouples (PD-T?…-105); on non-product measures it does not, and R03 measures that the two-relation (least-squares) completion of the same truncated pencil removes the growth on rotated squares and the disk (PD-T?…-109)."
 
 ## Open items
 
@@ -60,3 +73,6 @@ A bound for ‖L*(z)⁻¹‖ in terms of the pencil (a conditioning statement fo
 ## History
 
 - 2026-10-31: created (Claude Opus 5.5, xhigh; L1 R03).
+- 2026-10-31T23:05Z (response to reconstruction 01): CONFIRMED as mathematics by recon-01.
+  - P3 (major): Sources added (Xu / Dunkl–Xu left inverse, BPS 2010, Liu–Narayan, OTV), with the separation.
+  - B1/P4: the Scope sentence "locates the non-product instability" is replaced; the selection dependence is in PD-N?…-105.

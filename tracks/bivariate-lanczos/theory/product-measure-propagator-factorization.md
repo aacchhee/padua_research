@@ -24,7 +24,7 @@ Impulse response ρ^{[s]}: the solution of b_{l+1}ρ_{l+1} = (η − a_l)ρ_l �
 
 ## Assumptions
 
-Tensor grid with product weights (exact product measure); n ≤ min(m_x, m_y) − 1 (U(n) holds and all columns of degree ≤ n are nonzero). Part 2 is a statement about the idealised propagator with exact coefficients; in floating point the computed coefficients differ from these by rounding-induced amounts (on tensor 41² the computed off-pattern coefficients are ≤ 7e-15 relative, `logs/r02_block_solve_growth.log`), so for the computed propagator part 2 holds to first order in that deviation (CONDITIONAL on it staying small).
+Tensor grid with product weights (exact product measure), with μ_x and μ_y normalised as **probability measures** (Σu_a = Σv_b = 1). This was implicit and is needed: W_0 = −1 uses σ_1 = μ_y(1)/b_1, and |r_l(η_b)| ≤ 1/√v_b uses it (added 2026-10-31, recon-01 minor). n ≤ min(m_x, m_y) − 1 (U(n) holds and all columns of degree ≤ n are nonzero). Part 2 is a statement about the idealised propagator with exact coefficients; in floating point the computed coefficients differ from these by rounding-induced amounts (on tensor 41² the computed off-pattern coefficients are ≤ 7e-15 relative, `logs/r02_block_solve_growth.log`), so for the computed propagator part 2 holds to first order in that deviation (CONDITIONAL on it staying small).
 
 ## Status by part
 
@@ -34,7 +34,7 @@ Overall status: PROVED (part 2 under the stated idealisation).
 |---|---|---|
 | 1. product structure and exact coefficients | PROVED | proof below; measured: tensor 41² off-pattern within-degree coupling ≤ 7e-15 |
 | 2. factorisation and bound (idealised propagator) | PROVED | proof below |
-| 2′. same for the computed propagator in FP | CONDITIONAL | named hypothesis: computed coefficients = exact ones + O(δ) with δ small; first order in δ |
+| 2′. same for the computed propagator in FP | CONDITIONAL | named hypothesis: computed coefficients = exact ones + O(δ) with ‖L(z)⁻¹‖·δ ≪ 1 (the second condition was added 2026-10-31, recon-01 minor); first order in δ |
 | 3. non-product: decomposition fails | PROVED (reading of 1.) | measured coupling ratios 1–2.5 on rotated squares and the triangle (PD-T?…-107 (f)) |
 
 ## Depends on
@@ -53,7 +53,9 @@ PD-T?…-101 (ordering, graded basis), PD-T?…-104 (node propagator). Standard 
 
 ## Scope
 
-Explains why the recurrence shows no amplification beyond univariate Lanczos behaviour on exact product measures (tensor grids, and Padua points with cubature weights below degree n_P), consistent with the flat loss and propagator response measured there (PD-T?…-107). It says nothing quantitative about near-product measures (random points in a square) beyond the qualitative coupling ratio, and nothing about non-product measures except that the factorisation fails. Λ_y is finite and depends only on μ_y; how large it is (it grows when a marginal node is captured, Paige's univariate mechanism) is not bounded here.
+The statement explains the **idealised propagator** (no amplification beyond univariate behaviour on exact product measures and, by PD-T?…-111, on moment-matching measures such as Padua with cubature weights). It does **not** by itself explain the loss: the link from propagator to loss is OPEN (PD-T?…-104 open item). The flat loss measured on these sets (PD-T?…-107) is consistent with it. On product-type measures with very non-uniform weights the loss is not flat, because of a coefficient channel (PD-T?…-112, -114, -115). Nothing quantitative is said about near-product or non-product measures beyond the coupling reading of part 3. Non-diagonal within-degree coupling does not by itself imply growth: weights exp(xy) and exp(4xy) on the square are stable or mildly unstable (recon-01; developer rerun 2.7× and 32× u/ρ_Z at n = 24). Λ_y is finite and depends only on μ_y; it is not bounded here.
+
+Corrected 2026-10-31T23:05Z (recon-01 major finding on scope). Original wording: "Explains why the recurrence shows no amplification beyond univariate Lanczos behaviour on exact product measures (tensor grids, and Padua points with cubature weights below degree n_P), consistent with the flat loss and propagator response measured there (PD-T?…-107). It says nothing quantitative about near-product measures (random points in a square) beyond the qualitative coupling ratio, and nothing about non-product measures except that the factorisation fails. Λ_y is finite and depends only on μ_y; how large it is (it grows when a marginal node is captured, Paige's univariate mechanism) is not bounded here."
 
 ## Open items
 
@@ -62,3 +64,10 @@ Explains why the recurrence shows no amplification beyond univariate Lanczos beh
 ## History
 
 - 2026-10-31: created (Claude Opus 5.5, xhigh; L1 R02).
+- 2026-10-31T23:05Z (response to reconstruction 01; verdict CONFIRMED WITH CORRECTIONS):
+  - Scope (major): the idealised propagator is explained, not the loss; original wording kept in Scope.
+  - Minors: the probability normalisation is made explicit; 2′ needs ‖L⁻¹‖δ ≪ 1.
+  - Minor, A′_t: the definition (1 ≤ r ≤ j) excludes the coupling to (t, 0) while part 3's "equivalently" includes it. Part 3 is to be read with A′_t extended to 0 ≤ r < j, the coupling to every earlier column of the same degree.
+  - Minor: recon-01 notes that the factor (n+1)² in part 2 can be (n+1). This is not re-derived here; the stated bound is valid either way.
+  - Minor: part 3 is close to vacuous as a statement (a reading of part 1), agreed.
+  - Part 1 is known (BPS 2010 Remark 5; PC-10).

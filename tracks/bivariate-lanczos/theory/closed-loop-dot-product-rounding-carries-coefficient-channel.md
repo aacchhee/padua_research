@@ -17,7 +17,7 @@ Split into: none.
 (b) **Open-loop estimate across clustering strengths (IDEA?…-119).** E(n) = term-wise noise on the exact coefficients, compared with L(n) at n = 16 / 20: quadratic s|s| (m = 30) 1.08 / 0.95; cubic m = 30 10.3 / 4.6 (from (a)); cubic m = 36 10.5 / 12.8; quartic s|s|³ (m = 30) 119 / 22; Chebyshev–Lobatto (flat control) E(20) = 1.2e-15. The over-estimate grows with the clustering strength.
 (c) **Closed loop (IDEA?…-120).** Run the BJ recurrence in long double and replace each coefficient by its long-double inner product plus u Σ_i ε_i q_{i,l}u0_i, all window entries. The resulting loss C(n) (median of 3) satisfies C/L at n = 16 / 20 of: cubic m = 30 0.58 / 0.52; quadratic 0.33 / 0.37; quartic 1.06 / 0.82; cubic m = 36 0.28 / 0.78. On the flat sets, equispaced has C(20) = 3.7e-15 (L = 1.5e-14) and Chebyshev–Lobatto 2.5e-16 (L = 3.1e-15). Over n = 8…24 the ratio C/L on the four clustered sets lies in [0.23, 1.06]. The plain long-double BJ loss scales with the unit roundoff (cubic m = 30, n = 16: 5.9e-15 against 1.8e-11, ratio 3.0·10³ for an ε-ratio 2048).
 
-Reading (MEASURED, scope as stated): dot-product rounding alone, fed back through the recurrence, accounts for 25–100% of the loss on all four clustered sets. It is amplified by the off-pattern gains of PD-T?…-114 and damped by the feedback of the window inner products. That damping is the reason open-loop models over-estimate the loss, by about 1× (quadratic) to 10² (quartic). The size of the generic-u-noise overshoot (R06: 10⁶–10⁷) is mostly a scale effect: at the high-gain entries the dot-product terms have absolute size ≈ 10⁻⁶ u.
+[Correction 2026-10-31T23:11Z: the (b) and (c) verdicts and the 25–100% figure depend on the noise-scale convention; see History.] Reading (MEASURED, scope as stated): dot-product rounding alone, fed back through the recurrence, accounts for 25–100% of the loss on all four clustered sets. It is amplified by the off-pattern gains of PD-T?…-114 and damped by the feedback of the window inner products. That damping is the reason open-loop models over-estimate the loss, by about 1× (quadratic) to 10² (quartic). The size of the generic-u-noise overshoot (R06: 10⁶–10⁷) is mostly a scale effect: at the high-gain entries the dot-product terms have absolute size ≈ 10⁻⁶ u.
 
 ## Definitions
 
@@ -64,3 +64,11 @@ An analytic account of the feedback damping. The closed-loop linearisation is δ
 ## History
 
 - R07 (2026-10-31): created. IDEA?…-118 and -119 criteria were written before their runs; IDEA?…-120 was written before its run, but after the BJ losses of all six sets were known from the IDEA?…-118/-119 runs.
+- 2026-10-31T23:11Z (re-check after reconstruction 01, B2-type convention issue; supersedes a provisional line written at 23:05Z that predicted, before the rerun, that the verdicts would not change):
+  - Re-run with noise scale u = 2^-53 (the plan's unit roundoff; `logs/c01_u53_rerun.log`). Verdicts by the same rules:
+    - (a) H_term: survives (5.1× / 2.3×);
+    - (b) IDEA?…-119: inconclusive (quartic 60× / 11×);
+    - (c) IDEA?…-120: inconclusive (quadratic 0.17 / 0.19; cubic m = 36 0.14 at n = 16).
+    These verdicts are convention-sensitive. Statements independent of the convention: φ/ρ cancellation; random signs 10³× (H_sign killed); the scale effect; the growth of the open-loop over-estimate with clustering strength; and closed-loop C/L ∈ [0.14, 1.06] at n = 16, 20.
+  - The Reading's "accounts for 25–100% of the loss" is corrected to "reproduces the order of magnitude (C/L between 0.14 and 1.06 depending on set and noise-scale convention)". Original wording is kept in the Statement.
+  - Not affected by B1 (product-type checkerboards, dev rule).

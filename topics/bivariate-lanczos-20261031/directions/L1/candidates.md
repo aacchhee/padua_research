@@ -30,6 +30,13 @@ Aliases: single-section Paige; "L1 reduces to per-operator block Paige theory"; 
 - Actual test results and committed evidence (R01, `logs/r01_verdict.txt`): single sections PREDICT on the four bj runs where Z predicts (random squares; K1 fires as operationalised); they over-predict by ~10¹³ on tensor 41² at n = 40 (exact one-coordinate invariant subspaces, no loss); on all 23 informative non-product runs no object predicts (K2 fires).
 - Disposition and precise rejected scope: REJECTED: failed — as the governing object of loss, within the R01 node sets (tensor over-prediction; non-product supports). Scoped negative statement: PD-N?bivariate-lanczos-claude-101 (MEASURED).
 - Disposition reason: failed (MEASURED; scope R01 sets, M ≤ 6724, n ≤ 48).
+- **Correction 2026-10-31T23:10Z (reconstruction 01, B2; developer re-check `logs/c01_rule_sensitivity.log`):**
+  - K1 as reported ("fires") is not confirmed. The rule fixed u := 2^-52, while the plan's [FP] u is the unit roundoff 2^-53. At u = 2^-53, K1 does **not** fire: Z predicts on random1681_s0 hl, random1681_s7 hl and random6724_s0 bj. On random1681_s0 hl neither single section predicts (both only "track"); conversely, single sections predict where Z only tracks on random1681_s0, s0_swapxy and s7 bj.
+  - The factor-3 band cannot separate objects whose residuals agree within 2×, which holds on every informative product-type run. Corrected report: **K1 inconclusive (no separation between single and joint sections).**
+  - The tensor over-prediction rests only on the chain-completion degree n = 40. Excluded symmetrically to Padua N = M, no single-section falsifier remains.
+  - Disposition narrowed: REJECTED: failed on the non-product sets (PD-N?…-101 (a), via K2) only. The rejection reason "tensor over-prediction" is withdrawn.
+  - The K1 consequence "L1 reduces to per-operator Paige theory" is neither established nor refuted by R01.
+  - Original disposition text kept above.
 - Canonical theory / negative-result ID: PD-N?bivariate-lanczos-claude-101.
 - Topic / audit / history: created R01, 2026-10-31; disposition R01.
 
@@ -47,6 +54,7 @@ Aliases: joint-Ritz prediction; HL SIMAX p. 1088 observation, quantified; loss �
 - Cheapest decisive test / kill criterion (pre-registered): identical rule as -101 with O = Z; killed (as a predictor) on any run where D_{r,Z} ≠ ∅ and Z does not predict.
 - Actual test results: R01 — Z predicts on random squares (bj), indistinguishable from single sections there; fails on every informative non-product run; N_k (simax run) fails everywhere because the windowed (N, N*) recurrence is itself unstable (PD-N?…-102).
 - Disposition: REJECTED: failed as a general mechanism (MEASURED, non-product supports); consistent but not separated from single sections on product-aligned supports (PD-T?…-107 (a)).
+- **Correction 2026-10-31T23:10Z (reconstruction 01, B2):** K1 is inconclusive at the plan's u = 2^-53 (see IDEA?…-101), so this record and -101 stand or fall together. Both fail on (a) only, and are not separated on product-type runs. "Product-aligned supports" means the listed set types, not a classifier by support (PD-N?…-106).
 - Canonical theory / negative-result ID: PD-N?bivariate-lanczos-claude-101 (shared), PD-N?…-102 (N_k / complex form).
 - Topic / history: created R01, 2026-10-31; disposition R01.
 
@@ -114,6 +122,10 @@ Aliases: non-product instability; rotation sensitivity of the window recurrence;
 - Actual test results: both partial runs reproduce the all-double growth on the rotated square (R02 §3); kill criterion not met → intrinsic amplification.
 - Disposition: active (theory PD-T?…-105 for the product case; lower bound for a non-product case OPEN, R03).
 - Canonical theory ID: PD-T?…-105, PD-T?…-107; negative statement PD-N?…-101.
+- **Correction 2026-10-31T23:10Z (reconstruction 01, P2/P3):**
+  - The conclusion "intrinsic amplification" was not tested against the selection rule. The mixed-precision test only localises the error source between F- and J-products. Different one-relation parent rules change the loss by 10³–10⁸ (PD-N?…-105), so "intrinsic" holds per selection rule only.
+  - The geometry-dependence observation is prior art (Zaccaron 2014, PC-5); the novelty-gate verdict is corrected to "variant with difference" per PC-5.
+  - "Supports that are not products" is not a classifier: product supports with non-product weights also lose (PD-N?…-106).
 - Topic / history: opened R01 (as "defect instability"), reframed R02.
 
 ## IDEA?bivariate-lanczos-claude-107 — per-node propagator response as a loss predictor (shadow recurrence)
@@ -157,6 +169,8 @@ Aliases: exact-coefficient propagator growth; intrinsic marching instability; P*
 - Test discriminability: P* uses only exact coefficients (full long-double reorthogonalisation); P uses the run's coefficients; the forcing is identical in size.
 - Actual test results (R03, `logs/r03_exact_propagator.log`): P* = P to the printed digit on square, square rotated by π/4, disk, triangle; P* grows by ≈ 4·10⁹ from n = 4 to 20 on the rotated square. Kill criterion not met.
 - Disposition: survives (MEASURED, scope M = 1681, n ≤ 20); canonical record PD-T?bivariate-lanczos-claude-109 (a); an a priori bound is OPEN (R04).
+- Novelty gate verdict (added 2026-10-31T23:10Z; the template line was missing, recon-01 P2): variant with difference. The exact-coefficient propagator is classical as an object (BPS 2010 (18)–(20), Clenshaw as triangular substitution); the measured a-priori growth for the dev selection is not found in the documented search.
+- **Correction 2026-10-31T23:10Z (reconstruction 01, B1/P4):** "a property of the measure and the ordering" must include the selection (parent) rule. The P* test was run for the dev rule only, and other rules give different exact propagators (recon-01 `prop_selection.log`; PD-N?…-105). Disposition unchanged in substance: survives for the dev rule.
 
 ## IDEA?bivariate-lanczos-claude-111 — the non-product amplification comes from the single-relation row selection, not from truncation
 
@@ -168,6 +182,13 @@ Aliases: triangular row selection of the Jacobi pencil; two-relation block recur
 - Kill criterion written before testing (R03, before `l1_both_relations.py` was run): on the square rotated by 0.3 and by π/4 and on the disk (M = 1681, seed 11), if the two-relation block recurrence (one CGS pass against blocks n−2, n−1, then SVD) has loss at n = 20 within 10× of the BJ window recurrence's, the row selection is not the cause (killed); if its loss at n = 20 stays below 10³u ≈ 2.2e-13 on all three, the selection is the cause (survives).
 - Actual test results (R03, `logs/r03_both_relations.log`): two-relation loss at n = 20: 2e-14 (rotated 0.3), 1e-14 (π/4), 9e-15 (disk); BJ: 1e-8, 2e-6, 2e-10. Kill criterion not met.
 - Disposition: survives (MEASURED); canonical records PD-T?…-108 (row-selection lemma, PROVED) and PD-T?…-109 (b); hand-off to L2/L5 as a remedy candidate (no analysis yet).
+- Novelty gate verdict (added 2026-10-31T23:10Z; the line was missing, recon-01 P2): variant with difference. The algorithmic predecessor is Liu–Narayan 2023 (block Stieltjes with all coordinate relations, PC-6); the stacked system and left inverses are classical (Xu, Dunkl–Xu, BPS 2010; PC-7, PC-9).
+- **Correction 2026-10-31T23:10Z (reconstruction 01, B1):**
+  - The kill criterion can only show that the truncation is not *sufficient* for the growth: two relations with the same truncation are stable on the three tested sets. The recorded inference "the row selection, not the truncation, causes the instability" (R03 §3 B) exceeds that, and it is **REJECTED: refuted** (PD-N?…-105, MEASURED).
+    - Some one-relation selections are 10³–10⁸ more stable than dev at the same truncation.
+    - Without truncation, single-pass CGS with the dev rule is stable on rotation π/4 and the disk, but as unstable as BJ on the triangle and rotation 0.3.
+  - What survives (MEASURED): the two-relation block recurrence removes the growth on the rotated squares and the disk at the same truncation, and reduces it on the triangle. It does not help, or is worse, on the Gaussian cloud, the tensor grid and the clustered checkerboard (PD-T?…-109 (b), narrowed; PD-N?…-103 (c)).
+  - Disposition: the candidate as titled is REJECTED: refuted; the two-relation control is kept as a measured, scoped observation (L2 hand-off).
 
 ---
 
@@ -312,3 +333,24 @@ These are checks of the reviewer's findings with my own code and seeds. They are
 - C01-3 (B1, truncation): dev rule, one CGS pass against all previous columns (no truncation). The finding is confirmed iff the loss at n = 24 is ≤ 1e-12 on rotation π/4 and on the disk, and ≥ 1e-6 at n = 20 on the triangle.
 - C01-4 (major, support classifier): the finding is confirmed iff BJ loss at n = 24 is ≥ 100·u/ρ_Z on the seed-11 square with weights exp(8xy), and ≥ 10·u/ρ_Z on a Gaussian cloud (M = 1681, default_rng(12), standard normal coordinates).
 - C01-5 (major, two-relation scope; l1_both_relations.both): the finding is confirmed iff the two-relation loss on tensor 41² at n = 24 is ≥ 10× BJ's, and on the triangle the one-pass loss is ≥ 1e-12 at n = 24 while the two-pass loss is below the one-pass loss.
+- C01-6 (written 2026-10-31T23:09:22Z, before `l1_c01_u53_rerun.py` was written or run; prompted by the B2 convention finding and the orchestrator's instruction to use the plan's u = 2^-53). The R07 noise models (IDEA?…-118 H_term, IDEA?…-119, IDEA?…-120) used u = 2^-52 (the scripts' EPS) as the noise scale, which is twice the plan's unit roundoff. They are re-run unchanged except for the noise scale u = 2^-53, and the verdicts are re-evaluated by the same written rules. A verdict that changes between the two conventions is recorded as convention-sensitive, i.e. not decided at the resolution of the rule.
+
+### C01 results (written 2026-10-31T23:10:52Z; logs `c01_rule_sensitivity.log`, `c01_recon_runs.log`, `c01_u53_rerun.log`)
+
+Every reconstruction finding checked is confirmed with my own code and seeds:
+- C01-1: K1 fires at 2^-52 and does not fire at 2^-53.
+- C01-1′: with tensor n = 40 excluded, no single-section 'over' remains.
+- C01-2: dev vs best other rule at n = 24 (n = 20 for the triangle): rotation 0.3, 5.8e-6 vs 2.9e-12; rotation π/4, 4.2e-3 vs 1.5e-8; triangle, 1.0 vs 1.6e-9.
+- C01-3: no truncation, n = 24: rotation π/4 1.9e-14, disk 6.9e-15; the triangle is 1.0 at n = 20.
+- C01-4: square with exp(8xy) weights, 1.6·10⁵ × u/ρ_Z at n = 24; Gaussian cloud, 2.4·10³ ×.
+- C01-5: tensor two-relation vs BJ, 8.0e-13 vs 1.8e-14; triangle one pass 2.6e-10, two passes 1.4e-11.
+
+C01-6 (R07 noise models at the plan's u = 2^-53). The verdicts change:
+- IDEA?…-118 H_term: 5.1× / 2.3× → survives (inconclusive at 2^-52).
+- IDEA?…-119 overall: inconclusive (quartic 60× / 11×; killed at 2^-52).
+- IDEA?…-120 overall: inconclusive (quadratic 0.17 / 0.19; cubic m = 36 0.14 at n = 16; survives at 2^-52).
+
+These three verdicts are therefore **convention-sensitive**, i.e. not decided at the resolution of the written rules. The N(0,1)·u noise model is itself a calibration choice: round-to-nearest relative errors have standard deviation ≈ u/√3. Corrected dispositions:
+- IDEA?…-118: H_sign killed (unaffected); H_fb, H_rd inconclusive (unaffected); H_term convention-sensitive.
+- IDEA?…-119: convention-sensitive (no longer "REJECTED: failed"). The over-estimate grows with the clustering strength at both conventions: about 0.5–1× quadratic, 2–13× cubic, 11–120× quartic at n = 16, 20.
+- IDEA?…-120: convention-sensitive. Across both conventions, C/L lies in [0.14, 1.06] on the clustered sets for n = 16, 20; closed-loop dot-product rounding reproduces the order of magnitude, within a factor ≤ 8 below the loss.

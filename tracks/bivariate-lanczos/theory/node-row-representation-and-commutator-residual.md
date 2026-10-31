@@ -62,3 +62,4 @@ A bound of max|Q̂ᵀQ̂ − I| in terms of max_i ‖L̂(z_i)⁻¹φ^{(i)}‖ an
 ## History
 
 - 2026-10-31: created (Claude Opus 5.5, xhigh; L1 R02).
+- 2026-10-31T23:05Z (response to reconstruction 01): CONFIRMED by an exact rational simulated computed run (parts 1 and 3, 0 mismatches). No findings.

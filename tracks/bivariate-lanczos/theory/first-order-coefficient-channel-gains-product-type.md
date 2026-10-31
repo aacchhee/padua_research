@@ -72,3 +72,4 @@ Size of the cross-variable factors in terms of the factor measures (an elementar
 ## History
 
 - R06 (2026-10-31): created after the IDEA?…-117 run (the identity was derived after seeing that the off-pattern entries carry the loss; the numerical check criterion was written before the check run, candidates.md R06 note).
+- 2026-10-31T23:05Z (re-check after reconstruction 01): not affected by B1/B2. Exact algebra at a product-type point, BJ (dev) ordering; the HL mirror is covered by x ↔ y symmetry; other parent rules are not covered.

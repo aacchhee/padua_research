@@ -11,7 +11,7 @@ Split into: none.
 
   β_k ω_{lk} = Σ_r (T_{A_k})_{rl} ω_{rp} + (E_{A_k} e_l)ᵀ q̂_p − Σ_{l′∈W_k} (h_k)_{l′} ω_{ll′} − q̂_lᵀ f_k.
 
-The **sources** are s_{lk} := (E_{A_k} e_l)ᵀq̂_p − q̂_lᵀf_k: for F-products they consist of local rounding only (E_F, f); for J-products, (C_res e_l)ᵀq̂_p enters in addition. For l outside the window W_k the first sum involves only ω_{rp} with r of degree ≤ deg(l)+1 ≤ deg(k) − 2, i.e. older entries of the Gram matrix: the identity is a linear recursion for the loss of orthogonality driven by these sources.
+The **sources** are s_{lk} := (E_{A_k} e_l)ᵀq̂_p − q̂_lᵀf_k: for F-products they consist of local rounding only (E_F, f); for J-products, (C_res e_l)ᵀq̂_p enters in addition. For l outside the window W_k the first sum involves only ω_{rp} with r of degree ≤ deg(l)+1 ≤ deg(k) − 2, i.e. older entries of the Gram matrix [correction 2026-10-31, recon-01 minor: the inequality deg(l)+1 ≤ deg(k) − 2 holds for the block window (BJ) only. For the exact window (HL) an l = (t−2, i < j−2) lies outside W_k with deg(l)+1 = t−1. The conclusion still holds, because those ω_{rp} have r and p of degree ≤ t−1 < t = deg(k), so they are older entries]: the identity is a linear recursion for the loss of orthogonality driven by these sources.
 
 ## Definitions
 
@@ -54,3 +54,4 @@ Bound the amplification of the recursion (equivalently of the node propagators o
 ## History
 
 - 2026-10-31: created (Claude Opus 5.5, xhigh; L1 R02).
+- 2026-10-31T23:05Z (response to reconstruction 01): CONFIRMED by recon-01 (exact rational check, 155 pairs). The one wrong inequality for the exact window is corrected in place, with the original text kept.

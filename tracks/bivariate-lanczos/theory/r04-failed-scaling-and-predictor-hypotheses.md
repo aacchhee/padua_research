@@ -58,3 +58,6 @@ A predictor for the coefficient channel; a stable remedy covering both channels 
 ## History
 
 - 2026-10-31: created (Claude Opus 5.5, xhigh; L1 R04).
+- 2026-10-31T23:05Z (re-check after reconstruction 01):
+  - (c) is consistent with and strengthened by recon-01: the two-relation recurrence is also worse than BJ on tensor 41² (developer rerun 8.0e-13 vs 1.8e-14 at n = 24), does not remove the Ritz-type loss of a Gaussian cloud, and only reduces the triangle with one pass (PD-T?…-109 (b), narrowed).
+  - (a) and (b) are dev-rule statements (PD-N?…-105).

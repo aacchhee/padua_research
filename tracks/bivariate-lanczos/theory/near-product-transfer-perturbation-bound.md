@@ -63,3 +63,4 @@ A reference closer than the product of the marginals (e.g. a product measure in 
 ## History
 
 - 2026-10-31: created (Claude Opus 5.5, xhigh; L1 R04).
+- 2026-10-31T23:05Z (re-check after reconstruction 01, which covered R01–R03 only): not affected by B1/B2. The bound is exact algebra for the propagator L*(z) of the dev selection; the same transfer argument applies to any selection with a degree-block structure. The informativeness measurements (PD-T?…-112 (f)) use the dev rule.

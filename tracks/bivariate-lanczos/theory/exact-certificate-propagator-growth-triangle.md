@@ -62,3 +62,7 @@ Asymptotic growth rate for the triangle (and its independence of m suggested by 
 ## History
 
 - 2026-10-31: created (Claude Opus 5.5, xhigh; L1 R05).
+- 2026-10-31T23:05Z (re-check after reconstruction 01):
+  - Scope (B1): the certificate and the impulse identity are for the dev (BJ input-code) selection, whose monic form is the BJ recurrence. The certified contrast "exponential on T_24, polynomial on Q_24" is a dev-rule statement. Recon-01's `prop_selection.log` shows the exact propagator on a random triangle is selection-dependent: u·max‖L*⁻¹‖ at n = 20 is 1.2 (dev) and 3.4e-8 (adapt), though still far above the square.
+  - "Exponential" in the title is a finite-range description (log₁₀G increments over degrees 6–12); recon-01 measured the double loss to be convex in n, so no fixed rate is presupposed.
+  - Part 2 remains CONDITIONAL on the independent rerun.

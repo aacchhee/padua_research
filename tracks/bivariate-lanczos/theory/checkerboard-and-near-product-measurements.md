@@ -64,3 +64,8 @@ Explain the coefficient channel (candidate: conditioning of the coefficient map 
 ## History
 
 - 2026-10-31: created (Claude Opus 5.5, xhigh; L1 R04).
+- 2026-10-31T23:05Z (re-check after reconstruction 01):
+  - All loss measurements here use the dev (BJ) parent rule (B1, PD-N?…-105: other rules change non-product losses by 10³–10⁸); (e) the rotation sweep and (f) the informativeness are dev-rule statements.
+  - (d) is consistent with the narrowed PD-T?…-109 (b): the two-relation control is not a general remedy (also tensor, Gaussian and triangle, recon-01).
+  - The clustered checkerboard is a product-type measure with strong loss, which is in line with recon-01's finding that the support does not classify the regime (PD-N?…-106).
+  - Pending corrections PC-11 and PC-12 (candidates.md) are to be read with (a).

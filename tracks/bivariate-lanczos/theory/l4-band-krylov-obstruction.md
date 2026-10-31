@@ -47,7 +47,7 @@ PD-T?bivariate-lanczos-claude-101 (graded basis, for Corollary 2's identificatio
 
 ## Checks
 
-Numerical sanity check of Lemma 5's count (codim S_n ∩ X S_n in S_n = n+1) on 1681 random nodes, n ≤ 10: see R01.md §4 (computed by principal angles between the computed spans; Runs section of R01).
+Numerical sanity check of Lemma 5's count (codim S_n ∩ X S_n in S_n = n+1) on 400 random nodes (default_rng(3)), n ≤ 8 [corrected 2026-10-31, recon-01 minor; originally "1681 random nodes, n ≤ 10"]: see R01.md §4 (computed by principal angles between the computed spans; Runs section of R01).
 
 ## Sources
 
@@ -79,7 +79,7 @@ Status per item; literature items are as reported in the repository records (abs
 
 1. **Algebraic (block) Paige identity** — transfers, re-derived here for growing blocks with one injected column per degree (PD-T?…-103, PROVED as exact algebra on the computed relations). It uses only the symmetry of F and the complete F-relations; the injected column enters through the first row of the boundary block B_F, which is (n+1)×n (not square) because one column of block n is injected rather than produced by F. The block-Paige identity of sinha-2026 (abstract-level, LIT?…-018) is the fixed/shrinking-block analogue; nothing beyond the algebraic identity is imported.
 2. **Paige's local-orthogonality lemma and the ε-bounds of Paige 1976/1980** (as reported, LIT?…-003/-004) — do **not** transfer verbatim: they use the three-term structure; for the window CGS (BJ) no analogue is proved here (OPEN); for ORTH (HL) local orthogonality within the window is the standard twice-is-enough property (as reported, LIT?…-110), not re-proved.
-3. **Greenbaum-type and block Greenbaum-type backward results** (greenbaum-1989, simonova-tichy-2025; conditional even for one operator, LIT?…-016/-017) — do not transfer without an injection-aware model: the injected vectors J q̂_{t−1,0} are not in any band Krylov space of F with a start block fixed in advance (Theorem), and the implicit J-relations carry the defect G_J (PD-T?…-102, 4.). Plan L3 owns the backward question.
+3. **Greenbaum-type and block Greenbaum-type backward results** (greenbaum-1989, simonova-tichy-2025; conditional even for one operator, LIT?…-016/-017) — do not transfer without an injection-aware model: the injected vectors J q̂_{t−1,0} are not, for all degrees at once, in a band Krylov space of F with a start block fixed in advance (Theorem; they do lie in such spaces up to a degree) [wording narrowed 2026-10-31, recon-01 minor; originally "are not in any band Krylov space of F with a start block fixed in advance"], and the implicit J-relations carry the defect G_J (PD-T?…-102, 4.). Plan L3 owns the backward question.
 4. **Block Gram–Schmidt (BCGS/BCGS2) loss-of-orthogonality bounds** (carson-et-al-2025, abstract-level, LIT?…-022/-023) — cover full (non-truncated) block orthogonalisation; the window recurrence truncates (OBST?…-07). They apply only to the intra-window step, which is a single-vector Gram–Schmidt against ≤ 2t+1 vectors; no transfer to the global loss.
 5. **Bai–Day–Ye first-order ω-model** (LIT?…-013, a model, not a theorem, single operator) — transfers as a template for the F-part only; for the J-part the defect recursion (PD-T?…-102, 4.) is an additional source term (L2).
 6. **Simon's semi-orthogonality theorem** (as reported, LIT?…-009) — its hypotheses involve the complete relation of one operator; it can apply to the F-section, not to the J-section (never formed) nor to the pair (L2).
@@ -95,3 +95,10 @@ None for the statement. The finite-precision consequences of the placement (whic
 ## History
 
 - 2026-10-31: created (Claude Opus 5.5, xhigh; L1 R01).
+- 2026-10-31T23:05Z (response to reconstruction 01; verdict CONFIRMED with minor corrections):
+  - The Checks counts (400 nodes, n ≤ 8) and the transfer item 3 wording are corrected in place.
+  - Corollary 2: the staggered-start description Σ_a K_{n−a+1}(F, v_a) is not a member of the B_{j,i} class of the Statement. The lower bound still applies because Lemma 1 holds for any S = span V + A B′ with B′ ⊂ S.
+  - The Statement covers real A. For complex commutant elements (e.g. N = X + iY) the proof transfers verbatim over C; this is not written out.
+  - The Remark's sentence "L4-Q1 has computational content only inside the commutant" is an assertion, not a proved statement.
+  - Recon-01 adds its own (unaudited) extensions: a commutant + rank-r argument, and continuation schemes for affine A under U(n+2). They are recorded there and not adopted here.
+  - Recon-01 also showed U(2m+1) is necessary: nodes on k lines admit band descriptions with k fixed starts.
