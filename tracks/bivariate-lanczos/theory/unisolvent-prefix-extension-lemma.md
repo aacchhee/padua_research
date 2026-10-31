@@ -52,6 +52,8 @@ Order the nodes so that S comes first, and write V = [[B, C],[D, E]] with B = V[
 
 An existence statement for exact arithmetic. It does not say how large the smallest prefix singular value must be, nor that a *cheap online* test finds an admissible node (the measured detector `min_j |pivot_j| < 1e-10` in R03 is a separate MEASURED claim), and the bound σ_min(S_c)/√(N−K) is not claimed to be uniform in n.
 
+**Scope notes added after reconstruction 01 (CONFIRMED, findings L3).** (a) The order produced by floating-point GEPP (scipy `getrf`) is an exact-arithmetic GEPP order only up to near ties; its use as 'all prefixes unisolvent' in measured claims rests on the numerical certificate of `prefix.py` (and the reviewer's independent LU-based lower bounds, certified min sigma_min >= 6.5e-5 (n = 30), 2.4e-5 (n = 40), 1.2e-5 (n = 50) on the reviewer's orthonormal matrix), not on this lemma. (b) For M > N (random nodes, where Algorithm 1 uses M graded monomials beyond degree n) the proof carries over verbatim whenever the M×M matrix of the nodes against the first M graded monomials is nonsingular (generic, not guaranteed); the lemma as stated is for N = dim Pi_n.
+
 ## Open items
 
 Quantitative growth of the best achievable min_K σ_min(prefix block) over orders (Lebesgue-constant-type quantity); a proof that the online pivot detector is exact in exact arithmetic is OPEN (R03, gap described there).
@@ -59,3 +61,5 @@ Quantitative growth of the best achievable min_K σ_min(prefix block) over order
 ## History
 
 2026-10-31, Claude Sonnet 5.5 (high), L5 R03: created.
+
+2026-10-31T22:58Z, Claude Sonnet 5.5 (high), response to L5 reconstruction 01: finding L3 and the M > N scope note added. Reconstruction verdict: CONFIRMED.

@@ -7,24 +7,28 @@ Split into: none (the worst-case bound is `givens-updating-rotation-count-backwa
 
 ## Statement
 
-[FP, MEASURED] Within the recorded scope below, the relative Frobenius error of the leading N×N blocks of (H_x, H_y) computed by (a) point-by-point Givens updating with the fixed 'scheme' rule (Van Barel–Chesnokov 2010, Algorithm 1, real nodes), (b) the HL recurrence (window 2 degrees, MGS + one reorthogonalisation), (c) BJ (same window, CGS, no reorthogonalisation), (d) full CGS2, (e) Householder QR of the weighted Chebyshev–Vandermonde matrix, against a long-double three-pass-reorthogonalised reference, has the following fitted log–log slopes in M:
+[FP, MEASURED] Within the recorded scope below, the relative Frobenius error of the leading N×N blocks of (H_x, H_y) computed by (a) point-by-point Givens updating with the fixed 'scheme' rule (Van Barel–Chesnokov 2010, Algorithm 1, real nodes), (b) the HL recurrence (window 2 degrees, MGS + one reorthogonalisation), (c) BJ (same window, CGS, no reorthogonalisation), (d) full CGS2, (e) Householder QR of the weighted Chebyshev–Vandermonde matrix, against a long-double three-pass-reorthogonalised reference, has the following behaviour in M.
 
-| family (replicates per size) | Givens-scheme | HL | BJ | CGS2 | Householder |
+**Headline: the frozen kill test fires as written (reconstruction finding M3).** Plan L5-Q1 and the criterion pre-registered in candidates.md (IDEA 501) kill the rotation-counting explanation for a family if the Givens-scheme slope is <= 0.7 or the HL or CGS2 slope is >= 0.9, on the full range or on M >= 496, and call it not killed overall only if no family triggers. **The uniform-density random-node family triggers it** (CGS2 1.57, HL 2.28 on the full range; also on M >= 496). So the verdict on the test as written and as operationalised is **KILLED (in that family)**. The reading 'not killed in the four other families' (Padua with cubature, U(0.1,1) and unit weights; arcsine-density random nodes) is a **post-hoc reading**: it rests on (i) excluding the uniform family as confounded (a confound was anticipated, no exclusion rule was pre-registered) and (ii) adding the arcsine family after the runs had started (the arcsine family only reaches M = 1326). Both steps are disclosed here and in R01.
+
+Primary table: slopes of the per-size mean of log10 error against log10 M (the effective sample is the number of sizes, 7 for M = 66..2016; 95% t-interval with df = sizes − 2; `logs/analysis_r01c.txt`, produced by `analyze_r01c.py`). 'quad' is the coefficient of (log10 M − mean)² in the quadratic fit (t-statistic in brackets).
+
+| family / class | Givens-scheme | HL | BJ | CGS2 | Householder |
 |---|---|---|---|---|---|
-| Padua, cubature weights, M = 66..2016 (5 orders) | 1.40 [1.09, 1.70] | 0.73 [0.70, 0.76] | 1.17 [0.95, 1.40] | 0.48 [0.46, 0.50] | 0.38 |
-|   — structured orders (given, sortx) only | 0.93 [0.89, 0.98] | 0.80 | 1.31 | 0.50 | 0.37 |
-|   — random orders (rand1–3) only | 1.71 [1.35, 2.07] | 0.69 | 1.09 | 0.47 | 0.38 |
-| Padua, weights U(0.1,1), M = 66..2016 (5 orders) | 1.55 [1.15, 1.94] | 0.79 [0.77, 0.81] | 1.01 [0.86, 1.15] | 0.53 [0.51, 0.55] | 0.38 |
-|   — structured / random orders only | 0.92 / 1.96 | 0.81 / 0.78 | 1.05 / 0.98 | 0.54 / 0.53 | 0.38 / 0.38 |
-| Padua, unit weights, M = 66, 231, 496, 861 (5 orders) | 1.08 [0.90, 1.25] | 0.77 [0.74, 0.80] | 0.65 | 0.52 [0.51, 0.54] | 0.38 |
-| random nodes, arcsine density, M/N ≈ 3, M = 66..1326 (5 seeds) | 1.28 [1.06, 1.50] | 0.71 [0.69, 0.74] | 1.12 [0.97, 1.28] | 0.38 [0.36, 0.40] | 0.28 [0.26, 0.30] |
-| random nodes, uniform on [−1,1]², M/N ≈ 3, M = 66..2016 (5 seeds) — **confounded** | 2.87 [2.49, 3.26] | 2.28 | 2.76 | 1.57 | 2.11 |
+| Padua, cubature, 5 orders | 1.40 [1.01, 1.79]; quad +0.73 (3.7) | 0.73 [0.69, 0.77] | 1.17 [0.87, 1.48] | 0.48 [0.44, 0.53] | 0.38 |
+| — structured orders (given, sortx) | 0.93 [0.88, 0.99]; quad +0.07 (1.5) | 0.80 [0.71, 0.88] | 1.31 [0.64, 1.97] | 0.50 | 0.37 |
+| — random orders (rand1–3) | 1.71 [1.07, 2.35]; quad +1.17 (3.4) | 0.69 | 1.09 | 0.47 | 0.38 |
+| Padua, U(0.1,1) weights, 5 orders | 1.55 [1.03, 2.06]; quad +0.93 (3.4) | 0.79 [0.74, 0.84] | 1.01 [0.82, 1.19] | 0.53 [0.50, 0.56] | 0.38 |
+| — structured / random | 0.92 [0.88, 0.97] / 1.96 [1.13, 2.79] | 0.81 / 0.78 | 1.05 / 0.98 | 0.54 / 0.53 | 0.38 / 0.38 |
+| Padua, unit weights, M = 66, 231, 496, 861 | 1.08 [0.81, 1.34] (df 2) | 0.77 [0.65, 0.88] | 0.65 [−0.45, 1.75] | 0.52 [0.50, 0.55] | 0.38 |
+| random, arcsine density, M = 66..1326 | 1.28 [0.96, 1.60] (df 4) | 0.71 [0.69, 0.73] | 1.12 [0.94, 1.31] | 0.38 [0.35, 0.41] | 0.28 |
+| **random, uniform density, M = 66..2016 (confounded)** | 2.87 [1.79, 3.96]; quad +2.16 (5.6) | 2.28 [1.66, 2.89] | 2.76 [2.14, 3.38] | **1.57 [1.01, 2.13]** | 2.11 [1.58, 2.64] |
 
-Brackets: 95% t-interval of the OLS slope over all (order or seed, size) replicates; the cluster-bootstrap intervals are in `logs/analysis_r01.txt` and agree to ±0.05 on the full range (they are wider for the upper range M ≥ 496, which has only 4 sizes). Geometric-mean errors by size, ratios Givens/HL (4–7 at M = 66, up to 26 at M = 1326 for Padua cubature; 4.1 → 70 for uniform random nodes) and the 'largest' rule are in the same file.
+Corrections to the earlier version of this table (reconstruction finding M2): the earlier intervals (e.g. Padua cubature 1.40 [1.09, 1.70]) came from OLS over all 35 (order, size) points and a within-size bootstrap, which treat the replicates of one size as independent evidence about the power law; they were too narrow. The size-level intervals above are the primary ones. The log–log curve for Givens-scheme is **convex** in the pooled Padua families (quad +0.73 and +0.93, t about 3.5) and the random orders (+1.2 to +1.5), so a single power law is the wrong summary there: only the structured-order slope 0.93 [0.88, 0.99] (quad not significant) is a clean power-law statement; the pooled 1.40/1.55 mixes it with a convex random-order curve driven by prefix conditioning (PD-T?bivariate-lanczos-claude-503 C), not by rotation count. **The upper-range slopes (M >= 496, 4 sizes, df 2) are not statistically supported:** Padua cubature Givens 2.15 [0.60, 3.71], U(0.1,1) 2.50 [0.31, 4.70], with large quad terms; the arcsine family has df 1 there. The earlier cluster-bootstrap intervals in `logs/analysis_r01.txt` are retained as the original output and are superseded by `analysis_r01c.txt`.
 
-**Kill test of plan L5-Q1 (operational reading in candidates.md, IDEA 501).** The explanation 'Givens ∝ M, HL/CGS2 ∝ √M' is *not killed* in the Padua families (Givens slope > 0.7 on the full range and for M ≥ 496; HL ≤ 0.81 and CGS2 ≤ 0.57 < 0.9) and not killed in the conditioning-controlled random family. It is *literally killed* in the uniform-random-node family (CGS2 slope 1.57 ≥ 0.9, HL 2.28), but that family is confounded: cond of the weighted Chebyshev–Vandermonde matrix grows like M^2.96 (geometric means 2.1e1 at M = 66 to 3.8e5 at M = 2016), the Householder slope is 2.11, and the slopes measure sensitivity of the problem, not rounding of the algorithm; the controlled arcsine family shows Householder 0.28, CGS2 0.38, HL 0.71.
+Secondary, post-hoc and disclosed: **Householder-normalised comparison** (per instance log10(error/Householder error), then the size-level fit; removes the per-instance conditioning that confounds the uniform family): Padua cubature Givens 1.02 [0.62, 1.42], HL 0.35 [0.30, 0.40], CGS2 0.11 [0.06, 0.15], BJ 0.80; Padua U(0.1,1) Givens 1.17 [0.65, 1.69], HL 0.41, CGS2 0.15; arcsine random Givens 1.00 [0.66, 1.34], HL 0.43, CGS2 0.10; **uniform random** Givens 0.76 [0.06, 1.46], HL 0.16 [−0.04, 0.37], CGS2 −0.54 [−0.72, −0.36], BJ 0.65. The Givens-versus-HL/CGS2 separation therefore survives the conditioning confound in the uniform family, with a wide interval for Givens (it agrees with the reviewer's independent re-analysis of the same logs: 0.76 [0.06, 1.46], HL 0.16, CGS2 −0.54). This normalised analysis was chosen after seeing that the uniform family kills the test; it does not change the as-written verdict.
 
-**What is and is not supported.** (1) Givens-scheme grows faster than HL/CGS2/Householder in every family, by a slope difference of 0.3–0.8 over M = 66..2016 (excluding the confounded uniform-random family). (2) The slope of ≈ 1 (0.91–0.93 on structured orders, 1.08–1.28 pooled) is consistent with 'one unit of error per rotation touching an entry'; the slope is **not** 1 on random orders (1.7–2.0 in Padua), where the error depends on the node order beyond M (see PD-T?bivariate-lanczos-claude-503). (3) The HL slope (0.71–0.81) lies between ½ and 1; it is above the ½ of CGS2 and Householder. The statement 'HL ∝ √M' is therefore not supported at the precision of this experiment; only HL < 0.9 is. (4) Nothing here distinguishes a coherent from a random accumulation of rotation errors; the long-double replay in R02 is the only direct evidence on that.
+**What is and is not supported.** (1) Givens-scheme grows faster than HL/CGS2/Householder in every family, by a slope difference of 0.3–0.8 (Padua) and a normalised difference of 0.6–0.9. (2) A slope of about 1 is clean only for the structured orders; on random orders the curve is convex (1.7–2.0 pooled), with the order dependence of PD-T?…-503. (3) The HL slope (0.69–0.81) lies between ½ and 1, above the ½ of CGS2 and Householder: 'HL ∝ √M' is **not supported**, only HL < 0.9. (4) Nothing here distinguishes coherent from random accumulation of rotation errors. (5) The kill test cannot detect growth that is too steep (reconstruction finding L4): a Givens slope of 1.7–2.0 passes the '<= 0.7 kills' clause although the rotation-count picture does not predict it either; this is a remark on the frozen design, not a change to it.
 
 ## Definitions
 
@@ -40,10 +44,10 @@ Overall status: MEASURED.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
-| table of fitted slopes and the kill-test verdicts above | MEASURED | `logs/r01_padua_cub.jsonl`, `r01_padua_rand.jsonl`, `r01_padua_unif.jsonl`, `r01_random.jsonl`, `r01_random_cheb.jsonl`; `logs/analysis_r01.txt` |
+| table of size-level slopes, curvature, the as-written kill verdict and the normalised secondary analysis | MEASURED | `logs/r01_padua_cub.jsonl`, `r01_padua_rand.jsonl`, `r01_padua_unif.jsonl`, `r01_random.jsonl`, `r01_random_cheb.jsonl`; `logs/analysis_r01.txt` (original), `logs/analysis_r01c.txt` (size-level, primary) |
 | interpretation: rotation counting | OPEN | worst-case bound (PD-T?…-501) gives M^{3/2} relative; no model in this file predicts the observed ≈ M^1 |
 
-Candidate / claim disposition: not applicable.
+Candidate / claim disposition: IDEA?bivariate-lanczos-claude-501 (rotation counting explains the deficit): pre-registered kill criterion FIRED as written in the uniform-density random family (post-hoc reading: not killed in the other four families); see candidates.md.
 
 ## Depends on
 
@@ -51,7 +55,7 @@ Input code `f6_givens_vs_hl_deficit.py` (unchanged, unaudited input). `givens-up
 
 ## Checks
 
-Producer commands: `OPENBLAS_NUM_THREADS=1 python3 -I exp_r01.py FAMILY OUT.jsonl [sizes]` (FAMILY ∈ padua_cub, padua_rand, padua_unif, random, random_cheb) in `tracks/bivariate-lanczos/code/L5/` (library `l5_lib.py`, C core `givens_core.c`; build `gcc -O2 -ffp-contract=off -shared -fPIC -o libgivens_core.so givens_core.c -lm`); analysis `python3 -I analyze_r01.py LOGDIR`. Rules/base SHA of the repository clone at run time: `2d8c3ab8348be80a6f16f69ee7ef9c7bb66ed42e` (read-only `git rev-parse`); code uncommitted at run time, so the sha256 of the scripts is in the first (`meta`) line of every jsonl. `exp_r01.py` was edited once after the Padua and uniform-random runs had started (added the `random_cheb` family and `np.clip` in the conditioning computation; no change to the computation of the reported errors). The runs shared two cores with other agents' jobs; timings are not reported. Independent rerun: none yet.
+Producer commands: `OPENBLAS_NUM_THREADS=1 python3 -I exp_r01.py FAMILY OUT.jsonl [sizes]` (FAMILY ∈ padua_cub, padua_rand, padua_unif, random, random_cheb) in `tracks/bivariate-lanczos/code/L5/` (library `l5_lib.py`, C core `givens_core.c`; build `gcc -O2 -ffp-contract=off -shared -fPIC -o libgivens_core.so givens_core.c -lm`); analysis `python3 -I analyze_r01.py LOGDIR` (original) and `python3 -I analyze_r01c.py LOGDIR > logs/analysis_r01c.txt` (size-level intervals, curvature, Householder-normalised; added after review). Rules/base SHA of the repository clone at run time: `2d8c3ab8348be80a6f16f69ee7ef9c7bb66ed42e` (read-only `git rev-parse`); code uncommitted at run time, so the sha256 of the scripts is in the first (`meta`) line of every jsonl. `exp_r01.py` was edited once after the Padua and uniform-random runs had started (added the `random_cheb` family and `np.clip` in the conditioning computation; no change to the computation of the reported errors). The runs shared two cores with other agents' jobs; timings are not reported. Independent rerun: none yet.
 
 ## Sources
 
@@ -72,3 +76,5 @@ Padua first-family sets (M = N), nodes in [−1,1]², uniform/arcsine random nod
 ## History
 
 2026-10-31, Claude Sonnet 5.5 (high), L5 R01: created from the logs listed above.
+
+2026-10-31T22:58Z, Claude Sonnet 5.5 (high), response to L5 reconstruction 01: findings M2 (size-level intervals, curvature, upper range unsupported), M3 (headline reordered: kill fires as written in the uniform family; Householder-normalised analysis added as post-hoc secondary), L4 (design remark), I1.
