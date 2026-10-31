@@ -85,6 +85,11 @@ Subagent effort is set from the agent definition and is not independently expose
 - Must read before priority claims on (a): Delgado–Geronimo–Iliev–Marcellán SIMAX 28 (2006) 118–147; Cichoń–Stochel–Szafraniec JAT 134 (2005) 11–64. Not reached: Greenbaum 1989 fulltext (paywalled → pending-reference), Schmüdgen 2017 book, Curto–Fialkow, Fialkow–Nie.
 - Records recommended (new: Di Dio–Schmüdgen, Blekherman 2012, Xu Trans. AMS 1994, Xu lecture notes, Lasserre, Passer–Shalit–Solel, DDSS, Putinar 1997, Bayer–Teichmann, Greenbaum–Strakoš 1992, Meurant–Strakoš 2006, Eftekhari et al.; update: degani-schiff-tannor-2005, greenbaum-1989, chen-2026, simonova-tichy-2025) — queued for the consolidation literature pass.
 
+### Barrio–Peña–Sauer 2010 read (AC supplied 23:18)
+
+- Orchestrator read pp. 407–408, 412–413, 415–416, 418–419 of AC's copy (`1-s2.0-S0021904509001178-main.pdf`; scratchpad only). Record `literature/records/barrio-pena-sauer-2010.md` (LIT?…-301–303). INDEX/CORPUS rows deferred to consolidation (the online literature agent currently owns those files).
+- Impact: the "one relation per new polynomial" selection, the averaged all-relations alternative (their eq. (6)/Thm 8), the remark that the choice of variable affects rounding error, and the triangular-substitution error bound (eqs. (18)–(20)) are **known** in the monic-OP evaluation setting. PD-T?…-108's framing must cite BPS 2010 as closest predecessor; remaining separation rests on discrete-measure Lanczos vectors, window truncation, and the measured link to exponential orthogonality loss off product supports. Passed to the L1 developer and the L1 reconstructor.
+
 ## Runs needed
 
 (none yet; directions add exact commands)
