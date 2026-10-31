@@ -129,6 +129,21 @@ Location: `LOG.md:14,17`.
 - This was a reading and consistency audit of protocol text. Whether the rules are workable in practice can only be tested by a first real topic.
 - The Astra review's original findings could not be inspected (L7).
 
+## Addendum A — AC direction on M1 (2026-10-31)
+
+AC: "M1 should promote splitting of such results. It is important that proved stays proved unless it is a tiny unimportant part of the statement."
+
+The requested fix for M1 is refined as follows. Where this addendum differs from fix items 1–3 above, it takes precedence. The developer's response should implement it, or record any disagreement for AC.
+
+1. **Split by default.** A file with a substantive `PROVED` claim must not also carry `CONDITIONAL`, `MEASURED`, `OPEN`, or `REJECTED` parts that would change its overall status. Split it into separate theory files with their own IDs. The proved claim keeps `PROVED` under its exact statement. A refuted side conjecture moves to its own `PD-N` file.
+2. **The weakest-part rule never relabels a substantive proved claim.** It applies only to parts that legitimately stay together in one file.
+3. **Minor-part exception.** Mixed parts may stay in one file only when the proved parts are minor: routine steps or lemmas of the main statement. Then the file's status follows the main statement, and the minor proved parts are labelled at claim level inside it. Suggested test: a part is substantive, and must be split out, if any other result depends on it, if it would be reported on its own (`state/CURRENT.md`, `PAPER_MAP.md`, a manuscript), or if its proof is not just a routine step of the main argument. The developer proposes the classification, the auditor checks it, and disputes go to AC.
+4. **Splitting must not hide what is unresolved.** If the original combined statement matters, for example a target theorem, it stays registered with its true status (`OPEN`, `CONDITIONAL`, or `PARTIAL`). It depends on the split-off proved result. Splitting must not narrow or reword a claim so that it becomes provable unless the original wording, the change, and the reason are recorded in History.
+5. **Template support (with M2).** Add `Split from:` and `Split into:` fields to `templates/THEORY.md`, and keep the original-to-split mapping in `ID_CROSSWALK.md` or in the dependency column of `PROOF_STATUS.md`.
+6. **Keep the M1 consistency points.** `REJECTED` stays a disposition of a candidate or claim with a reason (`refuted | equivalent | abandoned`). A `PD-N` file carries the status of its negative statement. `OPEN` is restated as a part-level status, or as the status of a file with no substantive proved part.
+
+The severity of M1 is unchanged.
+
 ## Required development response
 
 Codex answers each item in `response-01.md`, with a fix, an evidence-based rejection, or an item left open for AC. M1–M3 and L2 change rules or templates, so the stage returns to AUDIT for a focused re-audit of those diffs. L5 and I2 need AC's decisions.
