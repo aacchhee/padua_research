@@ -15,12 +15,13 @@ As in PD-T?…-303; [EXACT]; [IDEALIZED: perturbations given as data]. Positivit
 
 ## Status by part
 
-Overall status: CONDITIONAL.
+Overall status: PROVED (n = 1..7).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
 | finite reduction (certificate ⇒ (H) ⇒ √ε rate) | PROVED | PD-T?…-303(c),(d),(f) |
-| certificates exist and pass the exact checks, n = 1..7 | CONDITIONAL | developer's exact checker passes; obligation: independent rerun |
+| certificates exist and pass the exact checks, n = 1..7 | PROVED | developer's exact checker; independent exact rerun by L3-reconstruction-02 (`review_L3b/equi_H_cert.py`, Chebyshev basis, own Fraction RREF, mpmath log-barrier proposer, exact acceptance; log `reviews/logs_L3b/equi_H_cert_n1_7.log`) |
+| n = 8: (H) holds | reviewer computation (L3-reconstruction-02, `equi_H_cert_n8.log`, high-precision t_D = 4.12e-15, exact min det/tr 2.06e-15) | not yet a developer record and not independently rerun; the developer's double-precision proposal (t_D = −1.3e-12) had the wrong sign and was correctly left unresolved |
 
 ## Depends on
 
@@ -44,8 +45,9 @@ n ≤ 7, this node family. n = 8 unresolved (margin below double-precision propo
 
 ## Open items
 
-Independent rerun; n ≥ 8 (extended-precision proposer); whether (H) eventually fails for equispaced checkerboards.
+n = 8: independent rerun of the reviewer's certificate (then cite); n ≥ 9 needs an extended-precision proposer; whether (H) eventually fails for equispaced checkerboards.
 
 ## History
 
 2026-10-31T23:15+01:00, Claude Opus 5.5 (xhigh, requested), L3 developer, round R04 (working tree fba4d2f).
+- 2026-11-01T00:47:14+01:00, L3 developer (Claude Opus 5.5, xhigh requested): CONDITIONAL → PROVED for n = 1..7 citing the independent exact rerun; reviewer's n = 8 certificate recorded as a reviewer computation of L3-reconstruction-02 (reviews/L3-reconstruction-02.md, audited head ae991c1). Original wording of the replaced passages: «Overall status: CONDITIONAL.»; «| certificates exist and pass the exact checks, n = 1..7 | CONDITIONAL | developer's exact checker passes; obligation: independent rerun |»; «Independent rerun; n ≥ 8 (extended-precision proposer); whether (H) eventually fails for equispaced checkerboards.».

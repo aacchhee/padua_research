@@ -168,3 +168,11 @@ Aliases: exact window dots; compensated dots; L1 hand-off "compensated/extra-pre
 - Sets: Harris–Simanek checkerboards m = 30 with grading s|s| (quadratic), s|s|² (cubic), s|s|³ (quartic), and cubic with m = 36 (the PD-T?…-115 sets, our construction), Chebyshev–Lobatto (control); rotπ/4, triangle, tensor 41² (vector/space-channel controls).
 - **Kill criteria (before running).** P1 (main): on each of the four clustered checkerboards, 'exact' reduces L(n) at n = 20 and at n = 24 by ≥ 100× relative to the double run; the candidate is killed if on some clustered set the reduction is < 10× at both n = 20 and n = 24. P2 (channel separation): on rotπ/4 and the triangle the 'exact' reduction of L at n = 20 (triangle 16) and 24 (triangle 20) is < 10×; the separation claim is killed if the reduction is ≥ 10× at both degrees on either set. P3: θ_LB on rotπ/4 and the triangle changes by < 10× under 'exact' (killed otherwise).
 - Reported, no kill: 'ld' on the same sets; PRO-2D-J with 'exact' dots on the cubic checkerboard (its R02 failure).
+
+---
+
+## R03 results and dispositions (appended after the run; pre-registered text unchanged)
+
+| ID | Result (`logs/r03_dots.raw.gz`) | Disposition | Canonical record |
+|---|---|---|---|
+| IDEA?…-210 | P1 killed on all four clustered checkerboards (exact-dot reduction 1.3–8.5× at n = 20/24); P2 killed on rotπ/4 (14–19× reduction there); triangle 10× worse at n = 16; P3 survives (θ_LB changes < 3×); PRO-2D-J + exact dots still fails at cubic n = 29 | REJECTED: failed (remedy for the coefficient channel; channel separator) | PD-N?…-204 |

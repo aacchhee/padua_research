@@ -75,6 +75,9 @@ Provisional IDs `<NS>?bivariate-lanczos-claude-<nnn>`: literature 001–099 (not
 | L1 | R05 | 2026-10-31 | Exact certificates; error channels | Moment-matching factorisation PROVED; triangle-grid growth certificate CONDITIONAL; two error channels MEASURED; corrections PC-1–10 | [R05](directions/L1/R05.md) |
 | L1 | R06 | 2026-10-31 | Coefficient-map conditioning (clustered checkerboards) | Off-pattern channel MEASURED; gain identity PROVED (114 parts 1–4) | [R06](directions/L1/R06.md) |
 | L1 | R07 | 2026-10-31 | Why actual errors are benign vs generic noise | Closed-loop model MEASURED (115); open-loop estimates fail (PD-N?…-104) | [R07](directions/L1/R07.md) |
+| L2 | R01 | 2026-11-01 | L2-Q1 (frozen) | Kill test not fired (MEASURED); F-section semi-orthogonality theorem PROVED; J-part obstruction PROVED | [R01](directions/L2/R01.md) |
+| L2 | R02 | 2026-11-01 | Selection rules, strategy, cost | Coupled residuals PROVED; PRO-2D-J MEASURED (11/12); rounding-only trigger fails (MEASURED) | [R02](directions/L2/R02.md) |
+| L2 | R03 | 2026-11-01 | Exact window dot products | Do not remove coefficient channel (MEASURED, PD-N?…-204) | [R03](directions/L2/R03.md) |
 | L5 | R01 | 2026-10-31 | L5-Q1 (frozen) | Slopes MEASURED (rotation counting not killed on controlled families); prefix mechanism killed (MEASURED) | [R01](directions/L5/R01.md) |
 | L5 | R02 | 2026-10-31 | Worst-case rotation bound | Routine backward bound PROVED (no M vs √M separation) | [R02](directions/L5/R02.md) |
 | L5 | R03 | 2026-10-31 | Safe pivot/deflation rules | No rule beats 'scheme' (MEASURED); prefix-extension lemma PROVED; invariant proof OPEN | [R03](directions/L5/R03.md) |

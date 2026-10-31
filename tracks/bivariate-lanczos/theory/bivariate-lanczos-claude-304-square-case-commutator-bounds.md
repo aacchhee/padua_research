@@ -62,3 +62,4 @@ Explicit C in (a); behaviour of κ̂ for floating-point Padua runs with the H_y 
 
 2026-10-31, Claude Opus 5.5 (xhigh, requested), L3 developer, base 2d8c3ab: created in round R01.
 - 2026-10-31T23:54:00+01:00, L3 developer: finding 304(a) (added the positive-cluster-mass step) and L3 (isomorphism part of (c) relabelled MEASURED; overall file status PROVED refers to (a), (b) and the factorisation part of (c)) of L3-reconstruction-01 (topics/bivariate-lanczos-20261031/reviews/L3-reconstruction-01.md, audited head 0b7b396).
+- 2026-11-01T00:47:14+01:00, L3 developer: finding L11 of L3-reconstruction-02 (reviews/L3-reconstruction-02.md, audited head ae991c1) — original wording of the passages replaced at 2026-10-31T23:54 (round-1 response): «μ̃ has N_n distinct atoms near the nodes (Π_n-unisolvent for δ small), so its Q is square orthogonal and κ(Φ(μ̃)) = 0.»; «| (c) first-order identification | PROVED (routine) | — |».

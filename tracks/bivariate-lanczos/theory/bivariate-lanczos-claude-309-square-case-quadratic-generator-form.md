@@ -58,3 +58,4 @@ Reduces the square-case obstruction test to a structured SDP in C (n(n+1)/2 unkn
 
 2026-10-31, Claude Opus 5.5 (xhigh, requested), L3 developer, base 2d8c3ab: created in round R02.
 - 2026-10-31T23:54:00+01:00, L3 developer: findings L6 (injectivity as an explicit conjunct) and L7 (status wording: assumption, not LITERATURE dependency) of L3-reconstruction-01 (topics/bivariate-lanczos-20261031/reviews/L3-reconstruction-01.md, audited head 0b7b396).
+- 2026-11-01T00:47:14+01:00, L3 developer: finding L11 of L3-reconstruction-02 (reviews/L3-reconstruction-02.md, audited head ae991c1) — original wording of the passages replaced at 2026-10-31T23:54 (round-1 response): «then S_1 = {p_C} and (H) ⟺ there are A_i ≻ 0 with Σ_i G_i A_i G_iᵀ a Hankel matrix (and the Hessian map is injective).»; «Overall status: PROVED (with the LITERATURE dependency in (c) stated).».

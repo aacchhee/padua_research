@@ -7,7 +7,7 @@ Split into: none.
 
 ## Statement
 
-There are square-case section data — Padua n = 3, Ĥ = Φ(L_μ + E) with E(p*) < 0 and ‖E‖ ≤ ε ≤ ε_1 — that are compressions of commuting symmetric pairs with joint spectrum in K_δ for every δ > 0 once ε < ρ(δ) (PD-T?…-308), but are not the exact sections of any positive measure supported in K_δ for δ ≤ δ_0 (PD-N?…-301). Hence the existence of a compression/dilation backward model does not imply the existence of an exact-section (Greenbaum-type) backward model.
+There are square-case section data — Padua n = 3, Ĥ = Φ(L_μ + E) with E(p*) < 0 and ‖E‖ ≤ ε ≤ ε_1 — that are compressions of commuting symmetric pairs with joint spectrum in K_δ for every δ > 0 once ε < ρ(δ)/L_Φ (PD-T?…-308; ρ(δ) bounds ‖Ĥ − H‖ in a matrix norm and ‖Φ(L_μ + E) − Φ(L_μ)‖ ≤ L_Φ‖E‖ with L_Φ the local Lipschitz constant of Φ, PD-T?…-301(c)), but are not the exact sections of any positive measure supported in K_δ for δ ≤ δ_0 (PD-N?…-301). Hence the existence of a compression/dilation backward model does not imply the existence of an exact-section (Greenbaum-type) backward model.
 
 ## Negative-result scope (PD-N only)
 
@@ -27,7 +27,7 @@ Candidate / claim disposition: REJECTED (route (ii) as a decision method for L3-
 
 ## Depends on / Checks / Sources / Proof
 
-PD-T?…-308, PD-N?…-301; combine both with ε < min(ρ(δ), ε_1).
+PD-T?…-308, PD-N?…-301; combine both with ε < min(ρ(δ)/L_Φ, ε_1).
 
 ## Scope / Open items
 
@@ -36,3 +36,4 @@ Route (ii) remains a valid weaker backward statement (compression), recorded as 
 ## History
 
 - 2026-10-31T23:55:17+01:00, Claude Opus 5.5 (xhigh, requested), L3 developer: created per finding L10 of L3-reconstruction-01.
+- 2026-11-01T00:47:14+01:00, L3 developer (Claude Opus 5.5, xhigh requested): finding L5 (hypothesis ε < ρ(δ)/L_Φ) of L3-reconstruction-02 (reviews/L3-reconstruction-02.md, audited head ae991c1). Original wording of the replaced passages: «for every δ > 0 once ε < ρ(δ) (PD-T?…-308)»; «combine both with ε < min(ρ(δ), ε_1).».

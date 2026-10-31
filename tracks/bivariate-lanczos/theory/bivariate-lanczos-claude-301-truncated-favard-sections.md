@@ -74,3 +74,4 @@ Floating-point consistency defect of the computed entries (the e_n relations) af
 
 2026-10-31, Claude Opus 5.5 (xhigh, requested), L3 developer, base 2d8c3ab8348be80a6f16f69ee7ef9c7bb66ed42e: created in round R01.
 - 2026-10-31T23:54:00+01:00, L3 developer (Claude Opus 5.5, xhigh requested): finding L4 of L3-reconstruction-01 (topics/bivariate-lanczos-20261031/reviews/L3-reconstruction-01.md, audited head 0b7b396) — stated the formed-entries convention of (d) and its difference from L1's convention.
+- 2026-11-01T00:47:14+01:00, L3 developer: finding L11 of L3-reconstruction-02 (reviews/L3-reconstruction-02.md, audited head ae991c1) — original wording of the passages replaced at 2026-10-31T23:54 (round-1 response): «(d) [Computed entries.] The truncated recurrence (HL/BJ order: y-product only for the first vector of each degree) forms all structured entries of H_x and only the columns (k,0) of H_y.».

@@ -17,15 +17,15 @@ has degree ≤ 2n+1, vanishes together with its gradient at every Padua point {(
 
 ## Status by part
 
-Overall status: CONDITIONAL.
+Overall status: PROVED.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
 | P_n ∈ S_1 | PROVED | PD-T?…-312 (first row) |
 | interior nodes PD (all n ≥ 3, c = 1/10) | PROVED | PD-T?…-312 |
 | boundary gradient formulas (edges, corners, sign reductions) | PROVED | Chebyshev identities below; floating cross-check max error 5.7e-14 (n = 3..8) |
-| boundary quadratic forms: closed forms of A, B, X and 4AB − X² (E1, E3, C11) | CONDITIONAL | obtained by exact symbolic expansion (sympy, `r05_boundary_proof.py`); short polynomials, hand-checkable; obligation: independent rerun or hand check |
-| positivity of 4AB − X² and of A or B (n ≥ 4) | PROVED given the row above | elementary bounds below |
+| boundary quadratic forms: closed forms of A, B, X and 4AB − X² (E1, E3, C11) | PROVED | exact symbolic expansion (`r05_boundary_proof.py`); hand-checked and independently re-derived (n symbolic) by L3-reconstruction-02 (`review_L3b/turan_symbolic.py`), and the whole certificate independently verified exactly (rigorous rational interval arithmetic) for n = 4..16 (`review_L3b/padua_turan_check.py`, log `reviews/logs_L3b/padua_turan_check.log`) |
+| positivity of 4AB − X² and of A or B (n ≥ 4) | PROVED | elementary bounds below |
 
 ## Depends on
 
@@ -33,7 +33,7 @@ PD-T?…-309(c), PD-T?…-312.
 
 ## Checks
 
-`python3 r05_boundary_proof.py` → `logs/r05_boundary_proof.log` (gradient formulas vs direct differentiation; closed forms; s-polynomials; exact n = 4 node values). End-to-end MEASURED check `python3 r05_direct_check.py 3 14` → `logs/r05_direct_check.log`: deg P_n ≤ 2n+1, node values/gradients at rounding level, minimal Hessian eigenvalue over nodes 3.06, 1.49, 0.80, 0.46, 0.28, 0.18, 0.12, 0.087, 0.063, 0.046, 0.034 for n = 4..14, and −225 for n = 3 (the certificate does not work at n = 3; n = 3 is PD-N?…-301 with a different p*). Environment: Python 3.13.18, sympy 1.13.3, numpy 2.5.3. No independent rerun yet.
+`python3 r05_boundary_proof.py` → `logs/r05_boundary_proof.log` (gradient formulas vs direct differentiation; closed forms; s-polynomials; exact n = 4 node values). End-to-end MEASURED check `python3 r05_direct_check.py 3 14` → `logs/r05_direct_check.log`: deg P_n ≤ 2n+1, node values/gradients at rounding level, minimal Hessian eigenvalue over nodes 3.06, 1.49, 0.80, 0.46, 0.28, 0.18, 0.12, 0.087, 0.063, 0.046, 0.034 for n = 4..14, and −225 for n = 3 (the certificate does not work at n = 3; n = 3 is PD-N?…-301 with a different p*). Environment: Python 3.13.18, sympy 1.13.3, numpy 2.5.3. Independent rerun: L3-reconstruction-02 (own exact code, no developer import): degree, exact double zeros, exact boundary gradient formulas and rigorous PD for n = 4..16; minima of λ_min(Hess P_n) 3.0587 (n = 4) … 0.02079 (n = 16), attained at the interior node (1,1); n = 3 fails (−225) as stated. The developer's floating values drift from n = 13 (monomial cancellation). Trusted dependencies: Python integers/fractions (reviewer exact code), sympy (developer's and reviewer's symbolic expansions).
 
 ## Sources
 
@@ -61,8 +61,9 @@ All Padua degrees n ≥ 4 (this family of Padua points). n = 3: separate exact c
 
 ## Open items
 
-Independent rerun / hand check of the three expansions; explicit radius δ_0(n) (exists by PD-T?…-303(e), not computed; it shrinks with n).
+Explicit radius δ_0(n): exists by PD-T?…-303(e); rigorous reviewer bounds (L3-reconstruction-02, `padua_delta0.py`, a reviewer computation, not yet independently rerun): δ_0(n) ≥ 5.63e-4, 1.02e-4, 2.36e-5, 6.61e-6, 2.15e-6, 7.87e-7, 3.18e-7, 1.40e-7, 6.55e-8 for n = 4..12; first sampled negative radius 3.4e-2 … 3.5e-4 (MEASURED). So δ_0(n) → 0 with n (roughly n⁻³ in the sampled column): the obstruction holds for each n, with no radius uniform in n.
 
 ## History
 
 2026-10-31T23:23+01:00, Claude Opus 5.5 (xhigh, requested), L3 developer, round R05.
+- 2026-11-01T00:47:14+01:00, L3 developer (Claude Opus 5.5, xhigh requested): CONDITIONAL → PROVED citing the independent exact rerun and hand check; findings L7 (δ_0(n) → 0) and L13 (stale 'No independent rerun yet') of L3-reconstruction-02 (reviews/L3-reconstruction-02.md, audited head ae991c1). Original wording of the replaced passages: «Overall status: CONDITIONAL.»; «| boundary quadratic forms: closed forms of A, B, X and 4AB − X² (E1, E3, C11) | CONDITIONAL | obtained by exact symbolic expansion (sympy, `r05_boundary_proof.py`); short polynomials, hand-checkable; obligation: independent rerun or hand check |»; «| positivity of 4AB − X² and of A or B (n ≥ 4) | PROVED given the row above | elementary bounds below |»; «No independent rerun yet.»; «Independent rerun / hand check of the three expansions; explicit radius δ_0(n) (exists by PD-T?…-303(e), not computed; it shrinks with n).».

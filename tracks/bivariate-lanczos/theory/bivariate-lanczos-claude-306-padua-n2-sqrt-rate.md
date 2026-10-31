@@ -25,11 +25,14 @@ Overall status: PROVED.
 
 ## Depends on
 
+Trusted dependencies: Python integers and fractions.Fraction (developer's exact checker), cvxpy/CLARABEL only as a proposer; reviewer rerun: sympy QQ<√2>, DomainMatrix, own sign test. The nodes of n = 2 are rational, so no field extension and no LITERATURE dependency are involved.
+
+
 PD-T?…-303; checker `tracks/bivariate-lanczos/code/L3/exact_certificates.py` (sha256 752188b6…ee6c5, see `directions/L3/logs/code_sha256.txt`).
 
 ## Checks
 
-Command: `cd tracks/bivariate-lanczos/code/L3 && python3 exact_certificates.py` (Python 3.13.18, numpy 2.5.3, cvxpy 1.6.0 with CLARABEL used only to PROPOSE a candidate; all acceptance tests are exact Fraction arithmetic: exact nullspace of the 18 × 21 jet matrix in the monomial basis of Π_5, exact rank of the Hessian map (3), exact least-norm correction of the rounded candidate onto the 3 linear constraints, exact PD test a > 0, ac − b² > 0 for each A_i). Output `directions/L3/logs/exact_certificates.log`: "rank J=18 dim S1=3 (expected 3); rank Hess|S1=3 (injective: True) … DUAL certificate for (H): exact PD check PASS (float SDP margin t=0.0152) … (H) holds for Padua n=2: PROVED (exact)" — the word PROVED in the log is the checker's verdict; the registry status stays CONDITIONAL until an independent rerun. The six A_i are printed in the log.
+Command: `cd tracks/bivariate-lanczos/code/L3 && python3 exact_certificates.py` (Python 3.13.18, numpy 2.5.3, cvxpy 1.6.0 with CLARABEL used only to PROPOSE a candidate; all acceptance tests are exact Fraction arithmetic: exact nullspace of the 18 × 21 jet matrix in the monomial basis of Π_5, exact rank of the Hessian map (3), exact least-norm correction of the rounded candidate onto the 3 linear constraints, exact PD test a > 0, ac − b² > 0 for each A_i). Output `directions/L3/logs/exact_certificates.log`: "rank J=18 dim S1=3 (expected 3); rank Hess|S1=3 (injective: True) … DUAL certificate for (H): exact PD check PASS (float SDP margin t=0.0152) … (H) holds for Padua n=2: PROVED (exact)" — the word PROVED in the log is the checker's verdict; the registry status was CONDITIONAL until the independent rerun of L3-reconstruction-01 and is now PROVED. The six A_i are printed in the log.
 MEASURED illustration: `lp_rate.py 2 bisect 0.03`: δ_min/√ε = 0.0574, 0.0538, 0.0535, 0.0535, 0.0542 for ε = 1e-2..1e-6, all LP S1-residual checks ok (log `lp_rate_n2_r0.03.log`); `lp_rate.py 2 resid 0.03`: minimal ℓ1 residual exactly 0 once δ ≥ 0.003 (ε = 1e-3) and δ ≥ 0.001 (ε = 1e-5) (log `lp_resid_n2.log`).
 
 ## Sources
@@ -52,3 +55,6 @@ A hand proof for n = 2 (e.g. via structure of S_1 for six points) not attempted.
 
 2026-10-31, Claude Opus 5.5 (xhigh, requested), L3 developer, base 2d8c3ab: created in round R01.
 - 2026-10-31T23:54:00+01:00, L3 developer: CONDITIONAL → PROVED, citing the independent exact rerun of L3-reconstruction-01 (topics/bivariate-lanczos-20261031/reviews/L3-reconstruction-01.md, audited head 0b7b396) (all computer-assisted-proof obligations met; the L1 quantifier fix was applied in 303(e)/N301).
+- 2026-11-01T00:47:14+01:00, L3 developer: finding L11 of L3-reconstruction-02 (reviews/L3-reconstruction-02.md, audited head ae991c1) — original wording of the passages replaced at 2026-10-31T23:54 (round-1 response): «Overall status: CONDITIONAL.»; «| the certificate exists and passes the exact checks | CONDITIONAL | verified by the developer's exact Q(√2)/rational checker; obligation: independent rerun of the checker (workflow rule for computer-assisted proofs) |»; «| δ* ≍ √ε for Padua n = 2 | CONDITIONAL | on the row above |».
+- 2026-11-01T00:47:14+01:00, L3 developer: finding L11 of L3-reconstruction-02 (reviews/L3-reconstruction-02.md, audited head ae991c1) — original wording of the passages replaced at 2026-10-31T23:54 (round-1 response): «Independent rerun. A hand proof for n = 2».
+- 2026-11-01T00:47:14+01:00, L3 developer (Claude Opus 5.5, xhigh requested): findings L9 (stale CONDITIONAL sentence) and L10 (trusted dependencies) of L3-reconstruction-02 (reviews/L3-reconstruction-02.md, audited head ae991c1). Original wording of the replaced passages: «the registry status stays CONDITIONAL until an independent rerun.»; «## Depends on».

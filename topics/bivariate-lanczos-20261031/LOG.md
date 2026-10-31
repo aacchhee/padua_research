@@ -149,9 +149,15 @@ Subagent effort is set from the agent definition and is not independently expose
 - Medium (315): M1 the "leaves linear regime for n ≥ 16" is a double-precision reference artefact (80-bit reference: linear to n = 20; K15 still killed); M2 "as inconsistent as inaccurate" / "no Greenbaum regime" overreach on the random square. Lows: ranges in 315, stale text, History lines lacking original wording, R05/R06 pre-registration self-reported, R06 hypotheses lack IDEA/PD-N records, trusted dependencies not listed in 306/N301.
 - Action: L3 developer resumed for response-recon-02 (no new rounds).
 
+### L2 R01–R03 returned (2026-11-01)
+
+- L2 developer (Claude Opus 5.5 xhigh, requested). Claims PD-T?…-201–207, PD-N?…-201–204 (see progress.md). u = 2⁻⁵³ throughout. Kill rules written before runs except three added after seeing data (timed and disclosed in candidates.md), incl. the span-drift kill (post-smoke-test criteria). Open: cause of PRO-2D-J's last-degree failure on the cubic checkerboard; loose constants in Theorem A.
+- Runs needed (syvert0/1/2), from `tracks/bivariate-lanczos/code/L2` with `OMP_NUM_THREADS=16 OPENBLAS_NUM_THREADS=16`: `python3 -I l2_r02_cost.py --sets rotpi4,triangle --M 1000000` (≈ 16 GB); same with `--nrot 32 --ntri 28 --methods bj2w,proJ,adapt2w,fullcgs2,tworel2` (≈ 27 GB).
+- Next: independent reconstruction of L2 (separate Opus 5.5 xhigh), with priority on the span-drift claim PD-N?…-201 (it would mean even full reorthogonalization does not compute the graded spaces S_n to better than ~1e-3 on rotated squares).
+
 ## Runs needed
 
-(none yet; directions add exact commands)
+Consolidated list (exact commands in the cited records): L1 SUMMARY §6; L2 above; L3 SUMMARY §5; L5 R01 §7 and R03 §7 and response-recon-01; repro/REPRO.md §5. None executed by this session; all require AC's servers (syvert0/1/2) or more time.
 
 ## Open for AC
 

@@ -99,7 +99,7 @@ Aliases: Lin's theorem; Kachkovskiy–Safarov √‖[A,B]‖ bound (attribution 
 ## IDEA?bivariate-lanczos-claude-307 — Greenbaum-type exact commuting (graded) backward model with δ(ε) → 0 in the square case
 
 Aliases: seed 005 in its exact form.
-- Disposition: REJECTED: refuted for Padua n = 3 → PD-N?bivariate-lanczos-claude-301 (CONDITIONAL on independent rerun of the exact checker); MEASURED failure for Padua n = 4..7 (PD-T?…-307); holds with δ ≍ √ε for n = 1 (PROVED) and Padua n = 2 (CONDITIONAL).
+- Disposition: REJECTED: refuted for Padua n = 3 → PD-N?bivariate-lanczos-claude-301 (PROVED after independent rerun) and for every Padua n ≥ 4 → PD-N?…-303 (PROVED under the Padua-unisolvence assumption); holds with δ ≍ √ε for n = 1 (PROVED) and Padua n = 2 (PROVED). [Updated per finding L9 of L3-reconstruction-02; original: "PD-N?…-301 (CONDITIONAL on independent rerun of the exact checker); MEASURED failure for Padua n = 4..7 (PD-T?…-307); … Padua n = 2 (CONDITIONAL)".]
 - Kill criterion (plan.md): explicit small-n perturbation satisfying all interior commutativity conditions, no representing measure with δ → 0 — FIRED at Padua n = 3 (family E = −ε ev_ζ, p*(ζ) > 0).
 
 ## IDEA?bivariate-lanczos-claude-308 — Weight-only backward model in the overdetermined case
@@ -167,3 +167,25 @@ Aliases: κ(t) = −(1−c) − ct; P_n = 9(g_1² − ½g_0g_2) + (g_2² − g_1
 ## Corrections (2026-10-31T23:55:46+01:00; response to L3-reconstruction-01)
 
 - M3 header correction; L10 PD-N files N304–N306 created; closest predecessors per the prior-art check listed in the R05 pending-corrections block above (to be merged into each IDEA record at PR preparation).
+
+## IDEA?bivariate-lanczos-claude-314 — R06 hypothesis A: consistency of the completed pair survives loss on product-aligned supports (K13)
+
+- Kill criterion (R06 §3, written before the K13 run): asym ≤ 1e3·u·‖Ĥ‖ while loss ≤ 1e-3 on a product-aligned set.
+- Result: killed on the random square (2.1e3·u at n = 28). Caveat (finding M2 of L3-reconstruction-02): the raw F data stay nearly symmetric; the excess is in the implicit J-completion.
+- Disposition: REJECTED (refuted, completed-pair version) → PD-N?bivariate-lanczos-claude-307 (MEASURED).
+
+## IDEA?bivariate-lanczos-claude-315 — R06 hypothesis B: on non-product supports the consistency defect grows with the loss (K14)
+
+- Kill criterion (written before the run): a rotated-square run with loss ≥ 1e-6 and asym ≤ 1e3·u·‖Ĥ‖.
+- Result: not killed (asym_J/loss = 2.2–10.2, n = 10..26); reproduced by L3-reconstruction-02.
+- Disposition: survives within scope (rotated square, BJ/CGS, M = 1681) → PD-T?…-315 (MEASURED).
+
+## IDEA?bivariate-lanczos-claude-316 — R06 hypothesis C: a weight-only (first-order consistent) fit removes ≥ 90% of the forward error (K15)
+
+- Kill criterion (written at 23:29 after the K13/K14 results, before its own test; disclosed): ρ > 0.5 at some n ≥ 18 with loss ≥ 1e-9 on the rotated square.
+- Result: killed — developer kill at n = 19 used an out-of-linear-regime minimiser (finding M1); the reviewer's 80-bit-reference rerun kills it in the linear regime at n = 18–20 (ρ = 0.65–0.74).
+- Disposition: REJECTED (refuted, within scope) → PD-N?bivariate-lanczos-claude-308 (MEASURED).
+
+## Corrections (2026-11-01T00:48:09+01:00; response to L3-reconstruction-02)
+
+- L8: IDEA 314–316 and PD-N?…-307/308 added; L9: IDEA 307 disposition updated (original wording kept in the entry).

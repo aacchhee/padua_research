@@ -53,3 +53,4 @@ None for this statement.
 
 2026-10-31, Claude Opus 5.5 (xhigh, requested), L3 developer, base 2d8c3ab: created in round R01.
 - 2026-10-31T23:54:00+01:00, L3 developer: "atom" → "support point" and the residual convention c = 1 (finding M2) per L3-reconstruction-01 (topics/bivariate-lanczos-20261031/reviews/L3-reconstruction-01.md, audited head 0b7b396).
+- 2026-11-01T00:47:14+01:00, L3 developer: finding L11 of L3-reconstruction-02 (reviews/L3-reconstruction-02.md, audited head ae991c1) — original wording of the passages replaced at 2026-10-31T23:54 (round-1 response): «has an atom at distance ≥ (ε/C)^{1/2} from the nodes.»; «exact representation (or residual ≤ θε, θ < 1).».
