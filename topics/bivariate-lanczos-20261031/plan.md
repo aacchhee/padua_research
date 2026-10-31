@@ -15,7 +15,7 @@ At most two substantive directions run at once. Slot assignment:
 | Slot | Direction | Status | Model |
 |---|---|---|---|
 | 1 | **L1+L4** Paige-type theory, with the placement question L4 answered inside L1 (it decides which single-operator/block theory transfers) | R01–R07 done; paused 2026-10-31 (3 rounds left) to free the slot for L2 | Opus 5.5 xhigh |
-| 2 | **L3** backward interpretation / commuting extensions | launch after Step 0 | Opus 5.5 xhigh |
+| 2 | **L3** backward interpretation / commuting extensions | R01–R06 done; paused 2026-10-31 (4 rounds left) pending reconstruction 02 | Opus 5.5 xhigh |
 | side | **L5** Givens deficit and pivot rules (AC: "short-note side direction"; treated as non-substantive, run alongside) | launch after Step 0 | Sonnet 5.5 high |
 | queued → 1 | **L2** provable partial/selective reorthogonalization | launched 2026-10-31 in slot 1 after L1 paused at R07 | Opus 5.5 xhigh (theory and modest experiments) |
 
@@ -79,6 +79,8 @@ Provisional IDs `<NS>?bivariate-lanczos-claude-<nnn>`: literature 001–099 (not
 | L5 | R02 | 2026-10-31 | Worst-case rotation bound | Routine backward bound PROVED (no M vs √M separation) | [R02](directions/L5/R02.md) |
 | L5 | R03 | 2026-10-31 | Safe pivot/deflation rules | No rule beats 'scheme' (MEASURED); prefix-extension lemma PROVED; invariant proof OPEN | [R03](directions/L5/R03.md) |
 | L3 | R04 | 2026-10-31 | Exact certificates for equispaced checkerboards | (H) certified n = 1..7 CONDITIONAL; margins MEASURED | [R04](directions/L3/R04.md) |
+| L3 | R05 | 2026-10-31 | Padua obstruction for all n | Interior lemma PROVED; P_n certificate for n ≥ 4 CONDITIONAL (313/N303) | [R05](directions/L3/R05.md) |
+| L3 | R06 | 2026-10-31 | Greenbaum reading (G) | Consistency ⟺ symmetry PROVED (314); asymmetry ≈ forward error MEASURED (315); G OPEN | [R06](directions/L3/R06.md) |
 
 ## History
 

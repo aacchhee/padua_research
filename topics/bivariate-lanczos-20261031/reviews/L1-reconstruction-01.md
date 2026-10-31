@@ -3,7 +3,7 @@
 ## Header
 
 - **Reconstructor:** Claude Opus 5.5 (`claude-opus-5-5`), effort **xhigh** — the WORKFLOW table's level for an adversarial audit of a novel mechanism. I am a separate agent from the L1 developer and made no Git state changes. I wrote only this file, the scripts in `tracks/bivariate-lanczos/code/review_L1/` and the logs in `reviews/logs_L1/` (≈ 140 KB in total).
-- **Date:** 2026-10-31. **Branch:** `claude/bivariate-lanczos-20261031`. **Head when I started (rules read here):** `1063469a0ccff27823459e6f9c613eb26def8e10`. **Head when I finished:** `f9bb09990f7c039388320cd9d0cb92ddd2863b03` (orchestrator commits: L1 R04–R05, the BPS 2010 record, other directions).
+- **Date:** 2026-10-31. **Branch:** `claude/bivariate-lanczos-20261031`. **Head when I started (rules read here):** `1063469a0ccff27823459e6f9c613eb26def8e10`. **Head during the reruns:** `f9bb09990f7c039388320cd9d0cb92ddd2863b03`. **Head when I finished writing:** `246d494e511c2733d4004d2430f737cba0f75d17`. The intervening orchestrator commits add L1 R04–R05, the BPS 2010 record, other directions, and a WIP checkpoint that captured an intermediate version of this report. This file is the final version.
 - **Audited content:** every theory file below and `R01.md`–`R03.md` are byte-identical to the developer commit `b84af76` (checked read-only with `git show b84af76:<path> | sha256sum`). The current `candidates.md` (sha256 `27ba43dd…`) differs from `b84af76` (`bb5f6d8b…`) only by appended R04 sections. Records IDEA?…-101…-111, which I audited, are unchanged. R04–R05 are outside this audit.
 - **Rules read:** `AGENTS.md`, `agents/WORKFLOW.md`, `agents/claude/CLAUDE_ROLES.md` §Independent audit, `topics/…/plan.md` (notation, frozen L1-Q1/L4-Q1, History).
 - **Read coverage:** `state/IDEAS.md` read in full (144 lines; seed table 001–048, OBST-01…15, disposition table). Also read in full: `directions/L1/BRIEF.md`, `STATUS.md`, `R01.md`, `R02.md`, `R03.md`, `candidates.md` (records 101–111), `directions/COMMON_RULES.md`, the 12 theory files below, the developer code `code/L1/l1_recurrence.py` and `l1_kill_test.py` (read so I could reproduce the setup, never imported), and all developer logs in `directions/L1/logs/` except the `.raw` bodies. The `.raw` JSON records were parsed by `rv_rule_sensitivity.py`. The developer's analysis scripts were not reused.
@@ -274,7 +274,15 @@ I did not reproduce "P* = P to the printed digit", because I did not form the co
    | disk | 7.5e-9 | 8.2e-12 | 9.1e-12 | 1.1e-11 |
    | triangle | 1 | 1 | 4.9e-5 | **9.2e-8** |
 
-   The exact-coefficient propagator itself is selection-dependent a priori (`prop_selection.log`). Square rotated π/4, u·max‖L*⁻¹‖ at n = 20: dev 1.9e-4, mirror 1.9e-1, alt 9.1e-9. [Remaining rows are in the log; see Addendum.]
+   The exact-coefficient propagator itself is selection-dependent a priori (`prop_selection.log`; exact coefficients for each selection; the disk rows were not computed because I stopped the run). u·max_i‖L*(z_i)⁻¹‖ at n = 20:
+
+   | Set | dev | mirror | alt | adapt |
+   |---|---|---|---|---|
+   | square rotated π/4 | 1.9e-4 | 1.9e-1 | 9.1e-9 | 6.8e-8 |
+   | square rotated 0.3 | 8.5e-7 | 2.7e-8 | 2.9e-9 | 4.5e-12 |
+   | triangle | 1.2 | 1.5e-4 | 2.5e-5 | 3.4e-8 |
+
+   The median moves in the same way, e.g. triangle 1.3e-7 (dev) → 1.3e-14 (adapt).
 
    So the a priori amplification is a property of (measure, coordinates, **selection rule**). Some one-relation selections are 10⁴–10⁸ more stable than the developer's at n = 24, although none tested is as stable as the two-relation recurrence with two passes.
 
@@ -376,7 +384,7 @@ These are appropriate:
 | `OPENBLAS_NUM_THREADS=1 python3 -I -u rv_prop.py > L/prop.log` | Exact-coefficient ‖L*(z_i)⁻¹‖ at all nodes; mpmath validation |
 | `python3 -I -u rv_extra.py > L/extra.log` | (N, N*) recurrence; Ritz on Gaussian and exp(8xy); T-102 bound check |
 | `python3 -I rv_rule_sensitivity.py <developer logs>/r01_{input3,rotation,swap,padua,irregular}.raw > L/rule_sensitivity.log` | Protocol re-application of the pre-registered rule to the developer's raw output (not a rerun) |
-| `OPENBLAS_NUM_THREADS=2 python3 -I -u rv_prop_selection.py > L/prop_selection.log` | Selection dependence of the exact propagator |
+| `OPENBLAS_NUM_THREADS=2 python3 -I -u rv_prop_selection.py > L/prop_selection.log` | Selection dependence of the exact propagator; stopped after the triangle rows, so the disk rows were not computed |
 
 **Script SHA-256.**
 - rv_core `b2360c4c…2b00`
