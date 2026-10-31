@@ -1,0 +1,29 @@
+# l1_c01_recon_checks.py rule numpy=2.5.3
+== u = 2^-52 (rule as written); N = M excluded (R01)
+   Z predicts on random1681_s0          bj: X PREDICTS      Y PREDICTS
+   Z predicts on random1681_s0_swapxy   bj: X PREDICTS      Y PREDICTS
+   Z predicts on random1681_s7          bj: X PREDICTS      Y PREDICTS
+   Z predicts on random6724_s0          bj: X PREDICTS      Y PREDICTS
+   K1 fires: True;  single-section 'over' with Z predicting/uninformative: [('tensorcheb41', 'bj'), ('tensorcheb41', 'hl')]
+== u = 2^-52 (rule as written); N = M and tensor41 n = 40 excluded (symmetric)
+   Z predicts on random1681_s0          bj: X PREDICTS      Y PREDICTS
+   Z predicts on random1681_s0_swapxy   bj: X PREDICTS      Y PREDICTS
+   Z predicts on random1681_s7          bj: X PREDICTS      Y PREDICTS
+   Z predicts on random6724_s0          bj: X PREDICTS      Y PREDICTS
+   K1 fires: True;  single-section 'over' with Z predicting/uninformative: []
+== u = 2^-53 (plan unit roundoff); N = M excluded (R01)
+   Z predicts on random1681_s0          hl: X tracks        Y tracks
+   Z predicts on random1681_s7          hl: X tracks        Y PREDICTS
+   Z predicts on random6724_s0          bj: X PREDICTS      Y PREDICTS
+   single predicts, Z does not: random1681_s0          bj: X tracks Y PREDICTS Z tracks
+   single predicts, Z does not: random1681_s0_swapxy   bj: X PREDICTS Y PREDICTS Z tracks
+   single predicts, Z does not: random1681_s7          bj: X PREDICTS Y PREDICTS Z tracks
+   K1 fires: False;  single-section 'over' with Z predicting/uninformative: [('tensorcheb41', 'bj'), ('tensorcheb41', 'hl')]
+== u = 2^-53 (plan unit roundoff); N = M and tensor41 n = 40 excluded (symmetric)
+   Z predicts on random1681_s0          hl: X tracks        Y tracks
+   Z predicts on random1681_s7          hl: X tracks        Y PREDICTS
+   Z predicts on random6724_s0          bj: X PREDICTS      Y PREDICTS
+   single predicts, Z does not: random1681_s0          bj: X tracks Y PREDICTS Z tracks
+   single predicts, Z does not: random1681_s0_swapxy   bj: X PREDICTS Y PREDICTS Z tracks
+   single predicts, Z does not: random1681_s7          bj: X PREDICTS Y PREDICTS Z tracks
+   K1 fires: False;  single-section 'over' with Z predicting/uninformative: []
