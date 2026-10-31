@@ -138,3 +138,15 @@ Aliases: p_C = Σ c_jk q_j q_k, C ⊥ Hankel; Hankel test Σ G_iA_iG_iᵀ ∈ Ha
 | OBST?…-L3-a | Square case M = N_n: dim Π_{2n+1} − 3N_n = n(n+1)/2 > 0 polynomials vanish to second order at all nodes, so exact backward measures need support spread ≥ c√ε (≥ c√‖κ̂‖) | 004, 005, 031, 032 | PD-N?…-302 PROVED; PD-T?…-304 PROVED | escape: residual ≥ perturbation (trivial), or fully commuting data (δ = O(ε)) |
 | OBST?…-L3-b | Locally nonnegative singular polynomial: Padua n = 3 has p* ∈ Π_7 with double zeros and PD Hessians at all nodes ⇒ no exact backward measure within δ_0 for perturbations with E(p*) < 0 | 005, 031, 032 | PD-N?…-301 CONDITIONAL (rerun); n = 4..7 MEASURED | escape: support beyond δ_0, residual ≥ |E(p*)|, or error directions with E(p*) ≥ 0 |
 | OBST?…-L3-c | Computed coefficients are overdetermined (excess e_n = 1, 6, 17, 36, … relations), so the completed H_y and the functional L̂ are defined only up to the consistency defect | 008, 031 | PD-T?…-301(d) PROVED (count) | relevant for reading (G) and L2's ω-recurrence |
+
+## IDEA?bivariate-lanczos-claude-312 — "Equispaced checkerboards satisfy (H) for every n" (R04)
+
+- Kill criterion (before testing, K9): killed by an exact primal (failure) certificate at any tested n.
+- Result: not killed for n ≤ 7 (exact dual certificates, PD-T?…-310, CONDITIONAL on rerun); n = 8 unresolved; margins collapse super-geometrically (PD-T?…-311, MEASURED).
+- Disposition: open (neither confirmed nor refuted beyond n = 7).
+
+## Pending corrections (frozen files not edited; recorded per coordinator instruction 2026-10-31)
+
+- PD-T?…-307 item 6 and R03 §2 say "equispaced … n = 6 unresolved": superseded by R04 — (H) is exactly certified for n = 6, 7 (PD-T?…-310); first unresolved n is 8.
+- R02/R03 STATUS.md timestamps (23:20, 23:40) were estimates written before the hand-back at ≈ 23:05, not observed times (orchestrator note in STATUS.md). From R04 on, STATUS lines use `date -Iseconds`.
+- R01 §7 / candidates IDEA 305 (R01 text) call the Kachkovskiy–Safarov attribution UNVERIFIED; R03 lit_reading.md confirms it (Introduction (1.3)). Same for Koiran §1.4 "wide open".
