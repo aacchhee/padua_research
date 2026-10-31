@@ -1,6 +1,6 @@
 # Ideas registry
 
-Canonical seed and campaign dispositions, updated2026-10-31. Read every entry, source-disposition row and obstruction before new mechanisms. Every source proposal and correction is preserved; a supplied verdict is not a local proof or acceptance. Final-ID allocation owner/base/active-PR check: [ledger](../topics/charter-unisolvence-20261031/ALLOCATIONS.md). Full original pre-exploration seed: [baseline](../topics/charter-unisolvence-20261031/baseline-candidates.md). Candidate details instantiate the template in direction folders; no final-Claude acceptance is claimed.
+Canonical seed and campaign dispositions, updated2026-10-31. Read every entry, source-disposition row and obstruction before new mechanisms. Every source proposal and correction is preserved; a supplied verdict is not a local proof or acceptance. Final-ID allocation owner/base/active-PR check: [ledger](../topics/charter-unisolvence-20261031/ALLOCATIONS.md). Full original pre-exploration seed: [baseline](../topics/charter-unisolvence-20261031/baseline-candidates.md). Candidate details instantiate the template in direction folders; Claude audit-01 accepted the stated mathematics, dispositions and conservative mechanism classification; administrative dispositions are in response-01.md.
 
 ## Campaign candidate dispositions (canonical)
 
@@ -118,4 +118,4 @@ No candidate is scientifically accepted by this literature developer. Fulltext g
 
 ## History and reading obligations
 
-Step0 seed preceded U1 launch under AC's explicit override. Source corrections include HSConj3 solved by Cao–Ghimire–Wang2022, exact source test counts and floating log-determinant metric. No source report becomes an inherited proof. Each active candidate received a bounded predecessor screen and independent Astra reconstruction before retention as a developed result; Claude audit remains pending. Contextual entries preserve supplied dispositions and are deferred from this campaign, without asserting locally verified scientific status.
+Step0 seed preceded U1 launch under AC's explicit override. Source corrections include HSConj3 solved by Cao–Ghimire–Wang2022, exact source test counts and floating log-determinant metric. No source report becomes an inherited proof. Each active candidate received a bounded predecessor screen and independent Astra reconstruction before retention as a developed result; Claude audit-01 accepted that scope and classification; response-01 records the administrative dispositions. Contextual entries preserve supplied dispositions and are deferred from this campaign, without asserting locally verified scientific status.

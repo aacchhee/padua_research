@@ -28,7 +28,7 @@ In particular A_E and W_e are always nonzero. Every denominator in (2) is a prod
 
 ## Status and dependencies
 
-Overall status: PROVED (developer proof; supplementary Astra reconstruction complete; required Claude audit pending). Both (1) and (2) have complete algebraic proofs below. Mechanism classification: reformulation/direct corollary of known Padua-like axis determinant factorization, with locally proved characteristic transfer and cutoff bookkeeping; see literature/U1-COMPARISON.md, read in full by this developer. No novelty claim.
+Overall status: PROVED (developer proof; supplementary Astra reconstruction complete; Claude audit-01 accepted the mathematics). Both (1) and (2) have complete algebraic proofs below. Mechanism classification: reformulation/direct corollary of known Padua-like axis determinant factorization, with locally proved characteristic transfer and cutoff bookkeeping; see literature/U1-COMPARISON.md, read in full by this developer. No novelty claim.
 
 Depends on: `PD-T001`, only its rational-function identity proved in characteristic zero, and elementary Cauchy–Binet/field arithmetic. The specialization argument is proved below and does not assume the characteristic≠2 theorem in characteristic 2.
 
@@ -80,6 +80,8 @@ Closest literature: source alternation-minor conjecture; Harris–Simanek; De Ma
 
 ## Open items and history
 
-Supplementary Astra reconstruction/rerun and bounded prior-art comparison are complete; required Claude audit remains pending. Full-symbolic m=2,3,4 factor records and exact numeric slices are verification records, not limitations on the proved quantifiers.
+Supplementary Astra reconstruction/rerun and bounded prior-art comparison are complete; Claude audit-01 accepted the mathematics. Full-symbolic m=2,3,4 factor records and exact numeric slices are verification records, not limitations on the proved quantifiers.
 
 2026-10-31, Codex `gpt-6.1-sol` xhigh, rules/base d36722823441dc40c6e19d69a174459348dd309c. Changed functional B_H explicitly replaces the refuted characteristic-2 alternation functional; original claim remains preserved in its negative file.
+
+2026-10-31, Codex response-01 A2: updated completed handoff references and Claude audit-01 acceptance metadata only; mathematical statements, proofs and epistemic statuses unchanged.

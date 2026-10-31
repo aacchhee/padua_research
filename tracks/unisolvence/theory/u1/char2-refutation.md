@@ -14,7 +14,7 @@ Let K have characteristic 2 and an element a∉{0,1}, e.g. K=F_2[a]/(a²+a+1). T
 
 ## Status by part
 
-Overall status: PROVED (elementary explicit proof; supplementary Astra check complete; required Claude audit pending).
+Overall status: PROVED (elementary explicit proof; supplementary Astra check complete; Claude audit-01 accepted the mathematics).
 Candidate / claim disposition: REJECTED: refuted, for the exact arbitrary-field iff. The characteristic≠2 restriction is a separately preserved result, not a silent narrowing.
 
 ## Negative-result scope
@@ -38,8 +38,10 @@ No imported mathematical dependency. Exact F4 implementation and both determinan
 
 ## Scope and open items
 
-This refutes necessity in the exact arbitrary-field claim. Its sufficiency direction remains true over every field: it is proved in characteristic≠2 in the separate theorem, and in characteristic 2 its antecedent is false because Y has length≥2 and Δ1(Y)=0. It does not refute a criterion using divided-alternation/even-index barycentric moments. Supplementary Astra reconstruction complete; required Claude audit pending.
+This refutes necessity in the exact arbitrary-field claim. Its sufficiency direction remains true over every field: it is proved in characteristic≠2 in the separate theorem, and in characteristic 2 its antecedent is false because Y has length≥2 and Δ1(Y)=0. It does not refute a criterion using divided-alternation/even-index barycentric moments. Supplementary Astra reconstruction complete; Claude audit-01 accepted the mathematics.
 
 ## History
 
 2026-10-31, Codex `gpt-6.1-sol` xhigh, rules/base d36722823441dc40c6e19d69a174459348dd309c. Original field scope preserved explicitly on refutation.
+
+2026-10-31, Codex response-01 A2: updated completed handoff references and Claude audit-01 acceptance metadata only; mathematical statements, proofs and epistemic statuses unchanged.

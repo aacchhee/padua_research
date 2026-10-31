@@ -6,4 +6,4 @@ PD-T001 proves the alternation criterion in characteristic≠2; PD-N001 refutes 
 
 Mechanism attribution is conservative: [2014/2015 factorization comparison](../../literature/U1-COMPARISON.md). No publication-level novelty claim. Exclusions and exact good-characteristic Padua assumptions are in the charter/theory. [Negative results](NEGATIVE_RESULTS.md), [audit log](AUDIT_LOG.md).
 
-The track was created at PR preparation. Claude audit PENDING; only AC merges.
+The track was created at PR preparation. Claude audit-01 accepted the mathematical scope and classifications. Response-01 resolves the administrative findings, including AC’s Windows-verification waiver. Stage PR; only AC merges.

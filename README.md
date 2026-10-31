@@ -25,7 +25,7 @@ An independent research campaign owned by AC on algebraic unisolvence of structu
 | `topics/` | Branch logs, proposals, audits, responses and reproducible checks |
 | `templates/` | Reusable records for ideas, results, sources, topics and cold storage |
 
-The first campaign registers scoped proofs, measured checks, open targets and source dispositions. Required Claude audit remains pending. IDs are local; external statements retain explicit reading coverage, and no input-source proof or novelty claim is inherited.
+The first campaign registers scoped proofs, measured checks, open targets and source dispositions. Claude audit-01 accepted the mathematical scope and classifications; response-01 records administrative resolutions and AC’s Windows-verification waiver. IDs are local; external statements retain explicit reading coverage, and no input-source proof or novelty claim is inherited.
 
 ## First research prompt
 

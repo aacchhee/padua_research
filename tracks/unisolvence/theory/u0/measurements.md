@@ -20,7 +20,7 @@ Scope is the actual source loop selections, not all primes below 6000 or every p
 
 ## Status by part
 
-Overall status: **MEASURED**. Each numbered observation is MEASURED. Separate written universal proofs live under IDs `PD-T004–PD-T008`; this record neither proves nor weakens them. Candidate disposition: retained finite evidence; independent acceptance pending.
+Overall status: **MEASURED**. Each numbered observation is MEASURED. Separate written universal proofs live under IDs `PD-T004–PD-T008`; this record neither proves nor weakens them. Candidate disposition: retained finite evidence; Claude audit-01 accepted the mathematical classification.
 
 ## Depends on
 
@@ -38,8 +38,10 @@ Canonical committed input code: `topics/charter-unisolvence-20261031/input-code/
 
 ## Scope and open items
 
-Finite successful checks do not establish universal correctness, nonsmooth-length complexity, arbitrary-field Harris–Simanek criteria or code optimality. Independent adversary has reported separate reruns to the orchestrator; its exact report and hashes must be integrated before acceptance.
+Finite successful checks do not establish universal correctness, nonsmooth-length complexity, arbitrary-field Harris–Simanek criteria or code optimality. The separate reruns, exact report and frozen hashes are integrated in the [independent U0 record](../../../../topics/charter-unisolvence-20261031/independent/u0/audit.md). [AUDIT_LOG](../../AUDIT_LOG.md) also links Claude audit-01, which accepted the mathematical statuses and independently reproduced the finite observations; those observations remain MEASURED.
 
 ## History
 
 2026-10-31, Codex U0, assigned `gpt-6.1-sol xhigh`; rules/base `d36722823441dc40c6e19d69a174459348dd309c`. Reproduced unchanged sources, preserved all logs outside Git and separated their scope from proofs.
+
+2026-10-31, Codex response-01 A2: updated completed handoff references and Claude audit-01 acceptance metadata only; mathematical statements, proofs and epistemic statuses unchanged.

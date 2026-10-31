@@ -21,7 +21,7 @@ Then ℓ_z∈Π_m and ℓ_z(z′)=1 when z=z′, 0 otherwise, for z′∈S_e. Co
 
 ## Status / dependencies / scope
 
-Overall status: PROVED (developer proof; supplementary Astra check complete; required Claude audit pending).
+Overall status: PROVED (developer proof; supplementary Astra check complete; Claude audit-01 accepted the mathematics).
 Depends on: `PD-T001`, exact weighted Gram identity and characteristic≠2 iff. All proof obligations are algebraic; no source theorem is inherited.
 Novelty/disposition: known reproducing-kernel argument applied to the established checkerboard factorization; no new mechanism. Closest predecessor is Harris–Simanek's kernel and cubature (reported Thms 1,5 and eq14), with classical Padua analogues. Exact source normalization is not used as a dependency.
 
@@ -33,6 +33,8 @@ Under the extra Hankel hypotheses, ordinary monic Gram–Schmidt is defined thro
 
 ## Checks, limitations and history
 
-The identities are proved directly from the previously checked Gram relation; no distinct computational claim is made here. An independent mathematical reconstruction is required before acceptance. This cubature is for the finite discrete product functional L_X⊗L_Y, not a statement about a continuous Chebyshev measure, positivity, or degree-2m−1 continuous Padua cubature. In characteristic 2 the factor 2 formula is inapplicable; the all-characteristic determinant criterion does not imply that this same kernel normalization survives there.
+The identities are proved directly from the previously checked Gram relation; no distinct computational claim is made here. Independent reconstructions and Claude audit-01 acceptance are recorded in the track AUDIT_LOG. This cubature is for the finite discrete product functional L_X⊗L_Y, not a statement about a continuous Chebyshev measure, positivity, or degree-2m−1 continuous Padua cubature. In characteristic 2 the factor 2 formula is inapplicable; the all-characteristic determinant criterion does not imply that this same kernel normalization survives there.
 
 2026-10-31, Codex `gpt-6.1-sol` xhigh, rules/base d36722823441dc40c6e19d69a174459348dd309c. Round5 retained before derivation, as a direct U1 consequence without activating another direction.
+
+2026-10-31, Codex response-01 A2: updated completed handoff references and Claude audit-01 acceptance metadata only; mathematical statements, proofs and epistemic statuses unchanged.

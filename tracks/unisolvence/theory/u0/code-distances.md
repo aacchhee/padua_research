@@ -35,7 +35,7 @@ Specified scripts/interpreter and field arithmetic. The mathematical interpretat
 
 The unchanged source `padua_codes.py` was executed twice by this developer (once by original driver, once by child-status wrapper) and reported all eight distances. `verify_exact.py`, which imports no supplied module, independently implements the developer cross-check and reports the same values plus a minimum-weight monomial coefficient witness for each row. These are separate implementations, not separate agents. Cold outputs: `source-copy/padua_codes.log`, `child-replay/padua_codes.log`, `verify_exact.jsonl` under `/workspace/padua-cold/charter-unisolvence-20261031/U0/`. Full identity manifest and commands: U0 `evidence.md`.
 
-The independent adversary separately reports `q=7`, `k=1,2` enumeration returning `7,4`, with `57,19608` projective messages. Integration of its report/hashes is the orchestrator's audit step. Its suggested elementary proof excluding a linear `[10,6,5]_7` code is a bound for all codes, separate from this record's measured attainment. U0 does not inherit a proof merely from that message. The complete bound proof is handed off for a separate durable result.
+The integrated [independent U0 report](../../../../topics/charter-unisolvence-20261031/independent/u0/audit.md) and its frozen hashes record `q=7`, `k=1,2` enumeration returning `7,4`, with `57,19608` projective messages. The elementary universal linear-code bounds are separately integrated as [PD-T012](code-optimality-bounds.md); this record's attained distances remain MEASURED. [AUDIT_LOG](../../AUDIT_LOG.md) links Claude audit-01, which independently reproduced all eight rows and accepted this status separation.
 
 ## Sources
 
@@ -43,8 +43,10 @@ Supplied §4, `LIT-025`, reports the table and optimality claims. Ball (2012) wa
 
 ## Scope and open items
 
-No general minimum-distance formula, decoder, weight distribution or prime-power extension table is claimed. The exact source code also reports constant codes and two additional parameter cases; these remain source reproduction logs rather than new registered table claims. Independent adversarial acceptance pending.
+No general minimum-distance formula, decoder, weight distribution or prime-power extension table is claimed. The exact source code also reports constant codes and two additional parameter cases; these remain source reproduction logs rather than new registered table claims. Claude audit-01 accepted the stated scope and MEASURED classification; administrative dispositions are in response-01.md.
 
 ## History
 
 2026-10-31, Codex U0, assigned `gpt-6.1-sol xhigh`; rules/base `d36722823441dc40c6e19d69a174459348dd309c`. Split the finite table from proved general structure and from all-code optimality bounds.
+
+2026-10-31, Codex response-01 A2: updated completed handoff references and Claude audit-01 acceptance metadata only; mathematical statements, proofs and epistemic statuses unchanged.

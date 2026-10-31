@@ -22,7 +22,7 @@ The split roots `u` run over `F_q^*`, and the nonsplit roots `v` run over `U={v 
 
 ## Status by part
 
-Overall status: **PROVED** (independent developer proof; supplementary Astra check complete; required Claude audit PENDING). No novelty or general coding-weight-distribution claim.
+Overall status: **PROVED** (independent developer proof; supplementary Astra check complete; Claude audit-01 accepted the mathematics). No novelty or general coding-weight-distribution claim.
 
 ## Depends on
 
@@ -48,8 +48,10 @@ Source Theorem 6 and secondary predecessor `LIT-014`, `LIT-015` are unverified p
 
 ## Scope and open items
 
-The `-1` endpoint exceptions are essential; the shortened character condition only applies off those two lines. General code weight distributions and character-sum applications remain outside scope. Supplementary Astra check complete; required Claude audit pending.
+The `-1` endpoint exceptions are essential; the shortened character condition only applies off those two lines. General code weight distributions and character-sum applications remain outside scope. Supplementary Astra check complete; Claude audit-01 accepted the mathematics.
 
 ## History
 
 2026-10-31, Codex U0; rules/base `d36722823441dc40c6e19d69a174459348dd309c`; assigned `gpt-6.1-sol xhigh`. Derived the nonsplit Frobenius identity and both endpoint parities explicitly, rather than relying on the supplied sketch.
+
+2026-10-31, Codex response-01 A2: updated completed handoff references and Claude audit-01 acceptance metadata only; mathematical statements, proofs and epistemic statuses unchanged.
