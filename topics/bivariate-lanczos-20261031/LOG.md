@@ -109,6 +109,12 @@ Subagent effort is set from the agent definition and is not independently expose
 - Medium findings: M1 scope framing (plan History corrected by orchestrator; R01/STATUS to be fixed by developer); M2 302's "for some c > 0" residual is vacuous — fix c = 1; M3 kill criteria not shown to precede the tests (deciding log committed 22:34, criteria first at 22:57). 13 low findings (incl. R01 timestamp also an estimate; 304(c) isomorphism only measured; Greenbaum "√ε same order" contested by LIT?…-209).
 - Action: findings passed to the L3 developer for a response file; reviewed files 300–309, N301, N302 unfrozen for corrections with History lines. No status upgraded by the orchestrator.
 
+### L1 R06–R07 returned; L1 paused; L2 launched (2026-10-31)
+
+- L1 developer completed R06–R07 (7/10 rounds); claims PD-T?…-114, -115, PD-N?…-104; corrections PC-11, PC-12; disclosures (114 derived after the R06 run; IDEA-119/-120 criteria written with BJ losses known; IDEA-118 rerun printing 3 digits). Its SUMMARY.md write was blocked by the tool; the orchestrator saved the developer's text verbatim with one marked correction (recurrence attribution "Brezinski–Jelassi" → Bartels–Jezioranski).
+- **Pause justification:** L1-Q1 and L4-Q1 are answered; the remaining L1 opening (closed-loop damping bound, off-pattern gains at non-product points) is narrower than the never-started frozen L2-Q1, whose ingredients L1 has now supplied (exact ω-recurrence PD-T?…-106, error-channel split, relation-choice effect, two-relation failure). With the two-slot limit (L1, L3), L1 is paused with 3 rounds left and its next question recorded; it can resume when a slot frees.
+- L2 launched in slot 1 (Claude Opus 5.5 xhigh, requested). L5 side direction paused at R03.
+
 ## Runs needed
 
 (none yet; directions add exact commands)

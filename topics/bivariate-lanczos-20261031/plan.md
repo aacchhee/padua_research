@@ -14,10 +14,10 @@ At most two substantive directions run at once. Slot assignment:
 
 | Slot | Direction | Status | Model |
 |---|---|---|---|
-| 1 | **L1+L4** Paige-type theory, with the placement question L4 answered inside L1 (it decides which single-operator/block theory transfers) | launch after Step 0 | Opus 5.5 xhigh |
+| 1 | **L1+L4** Paige-type theory, with the placement question L4 answered inside L1 (it decides which single-operator/block theory transfers) | R01–R07 done; paused 2026-10-31 (3 rounds left) to free the slot for L2 | Opus 5.5 xhigh |
 | 2 | **L3** backward interpretation / commuting extensions | launch after Step 0 | Opus 5.5 xhigh |
 | side | **L5** Givens deficit and pivot rules (AC: "short-note side direction"; treated as non-substantive, run alongside) | launch after Step 0 | Sonnet 5.5 high |
-| queued | **L2** provable partial/selective reorthogonalization | deferred until L1 yields a usable local-relation/bound statement or a slot frees | Opus 5.5 xhigh (theory), Sonnet 5.5 high (code) |
+| queued → 1 | **L2** provable partial/selective reorthogonalization | launched 2026-10-31 in slot 1 after L1 paused at R07 | Opus 5.5 xhigh (theory and modest experiments) |
 
 Rounds: ≤10 conceptual rounds per direction; extension to ≤20 only with a written justification in the direction's round ledger. Automatic continuation while a concrete opening survives. One round = one recorded attempt that ends with a dated round record `directions/<D>/R<nn>.md` (question, attempt, result with status labels, failed routes, next question).
 
@@ -73,6 +73,8 @@ Provisional IDs `<NS>?bivariate-lanczos-claude-<nnn>`: literature 001–099 (not
 | L3 | R03 | 2026-10-31 | Checkerboard control, literature | (H) survey MEASURED; count-alone hypothesis refuted (MEASURED); literature confirmations | [R03](directions/L3/R03.md) |
 | L1 | R04 | 2026-10-31 | Near-product upper bound; checkerboard control | Near-product bound PROVED (weak); clustered-checkerboard loss and remedy failure MEASURED (PD-N?…-103) | [R04](directions/L1/R04.md) |
 | L1 | R05 | 2026-10-31 | Exact certificates; error channels | Moment-matching factorisation PROVED; triangle-grid growth certificate CONDITIONAL; two error channels MEASURED; corrections PC-1–10 | [R05](directions/L1/R05.md) |
+| L1 | R06 | 2026-10-31 | Coefficient-map conditioning (clustered checkerboards) | Off-pattern channel MEASURED; gain identity PROVED (114 parts 1–4) | [R06](directions/L1/R06.md) |
+| L1 | R07 | 2026-10-31 | Why actual errors are benign vs generic noise | Closed-loop model MEASURED (115); open-loop estimates fail (PD-N?…-104) | [R07](directions/L1/R07.md) |
 | L5 | R01 | 2026-10-31 | L5-Q1 (frozen) | Slopes MEASURED (rotation counting not killed on controlled families); prefix mechanism killed (MEASURED) | [R01](directions/L5/R01.md) |
 | L5 | R02 | 2026-10-31 | Worst-case rotation bound | Routine backward bound PROVED (no M vs √M separation) | [R02](directions/L5/R02.md) |
 | L5 | R03 | 2026-10-31 | Safe pivot/deflation rules | No rule beats 'scheme' (MEASURED); prefix-extension lemma PROVED; invariant proof OPEN | [R03](directions/L5/R03.md) |

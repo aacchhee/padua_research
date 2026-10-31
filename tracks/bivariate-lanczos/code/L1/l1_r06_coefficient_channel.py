@@ -8,7 +8,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import numpy as np
 import l1_recurrence as L
 import l1_r04_checkerboard as C
-# l1_r04_checkerboard_diag.py (frozen) runs its diagnosis at import; its two helpers are copied verbatim below.
+# l1_r04_checkerboard_diag.py (frozen) runs its diagnosis at import; the bodies of its two helpers are copied verbatim below (docstrings added).
 
 LD = np.longdouble
 EPS = 2.0 ** -52
