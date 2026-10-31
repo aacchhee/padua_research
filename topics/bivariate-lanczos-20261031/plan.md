@@ -71,6 +71,8 @@ Provisional IDs `<NS>?bivariate-lanczos-claude-<nnn>`: literature 001–199 (ful
 | L3 | R01 | 2026-10-31 | L3-Q1 (frozen) | Literal reading trivial; exact reading via moment cone; overdetermined δ = 0 PROVED | [R01](directions/L3/R01.md) |
 | L3 | R02 | 2026-10-31 | Square-case rates | δ ≳ √ε necessary PROVED; rate theorem with condition (H) PROVED; Padua n = 2/3 CONDITIONAL | [R02](directions/L3/R02.md) |
 | L3 | R03 | 2026-10-31 | Checkerboard control, literature | (H) survey MEASURED; count-alone hypothesis refuted (MEASURED); literature confirmations | [R03](directions/L3/R03.md) |
+| L1 | R04 | 2026-10-31 | Near-product upper bound; checkerboard control | Near-product bound PROVED (weak); clustered-checkerboard loss and remedy failure MEASURED (PD-N?…-103) | [R04](directions/L1/R04.md) |
+| L3 | R04 | 2026-10-31 | Exact certificates for equispaced checkerboards | (H) certified n = 1..7 CONDITIONAL; margins MEASURED | [R04](directions/L3/R04.md) |
 
 ## History
 
