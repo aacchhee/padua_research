@@ -1,0 +1,3 @@
+Padua n=50 N=M=1326 given givens-scheme:H5.5e-14/Q1.3e-13  givens-largest:H3.9e-05/Q1.0e-04  hl:H8.4e-15/Q6.2e-15  bj:H3.5e-14/Q6.0e-14  cgs2:H2.5e-15/Q3.4e-15  hh:H2.6e-15/Q2.4e-15
+Padua n=50 N=M=1326 random givens-scheme:H1.9e-13/Q5.7e-13  givens-largest:H2.8e-08/Q3.1e-08  hl:H8.6e-15/Q6.3e-15  bj:H1.6e-13/Q8.3e-14  cgs2:H2.6e-15/Q3.0e-15  hh:H2.6e-15/Q2.4e-15
+Padua n=50 randW given givens-scheme:H6.0e-14/Q1.5e-13  givens-largest:H1.8e-04/Q2.9e-04  hl:H1.2e-14/Q8.9e-15  bj:H3.6e-14/Q4.3e-14  cgs2:H3.0e-15/Q4.2e-15  hh:H2.7e-15/Q2.5e-15

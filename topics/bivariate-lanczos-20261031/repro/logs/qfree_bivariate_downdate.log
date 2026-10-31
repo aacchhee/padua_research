@@ -1,0 +1,6 @@
+W= 400 N= 45 n= 8 uniform max leverage=0.852  err vs recompute: [160] 1.4e-14 [320] 1.8e-14 [480] 1.2e-14 [640] 1.2e-14 [800] 2.7e-14
+W= 400 N= 91 n=12 uniform max leverage=0.999  err vs recompute: [160] 4.5e-13 [320] 5.5e-13 [480] 2.8e-12 [640] 1.6e-11 [800] 9.0e-12
+W= 150 N= 91 n=12 uniform max leverage=1.000  err vs recompute: [160] 2.8e-11 [320] 2.4e-09 [480] 1.0e-08 [640] 1.3e-07 [800] 1.4e-08
+W= 100 N= 91 n=12 uniform max leverage=1.000  err vs recompute: [120] 8.5e-06 [240] 5.1e-06 [360] 1.2e-06 [480] 2.9e-04 [600] 2.7e-04
+W= 400 N= 91 n=12 cheb    max leverage=0.870  err vs recompute: [160] 1.2e-14 [320] 1.9e-14 [480] 3.6e-14 [640] 5.3e-14 [800] 2.0e-13
+W=  95 N= 91 n=12 uniform max leverage=1.000  err vs recompute: [60] 1.8e-07 [120] 1.6e-03 [180] 8.0e-04 [240] 2.1e-03 [300] 5.5e-02

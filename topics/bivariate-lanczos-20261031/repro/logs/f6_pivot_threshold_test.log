@@ -1,0 +1,4 @@
+Padua n=20 unif given order: scheme/tol=0: H1.0e-14  scheme/tol=1e-14: H1.1e-14  scheme/tol=1e-12: H8.2e-14  largest/tol=0: H1.1e-14  largest/tol=1e-14: H7.7e-04  largest/tol=1e-12: H2.5e-13
+Padua n=20 randW given order: scheme/tol=0: H1.4e-14  scheme/tol=1e-14: H1.4e-14  scheme/tol=1e-12: H1.4e-13  largest/tol=0: H3.3e-04  largest/tol=1e-14: H2.4e-03  largest/tol=1e-12: H2.4e-03
+Padua n=30 unif given order: scheme/tol=0: H2.3e-14  scheme/tol=1e-14: H2.4e-14  scheme/tol=1e-12: H2.8e-13  largest/tol=0: H2.0e-09  largest/tol=1e-14: H1.6e-04  largest/tol=1e-12: H7.0e-03
+Padua n=30 randW given order: scheme/tol=0: H3.0e-14  scheme/tol=1e-14: H2.8e-14  scheme/tol=1e-12: H3.2e-13  largest/tol=0: H1.7e-03  largest/tol=1e-14: H1.1e-03  largest/tol=1e-12: H9.6e-03

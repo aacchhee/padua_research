@@ -1,0 +1,35 @@
+[ref n=10 N=66 0s]
+padua_rand 10 given givens-scheme:4.0e-15 givens-largest:3.6e-15 hl:1.2e-15 bj:2.3e-15 cgs2:5.4e-16 hh:8.7e-16
+padua_rand 10 sortx givens-scheme:4.3e-15 givens-largest:3.4e-15 hl:1.1e-15 bj:3.0e-15 cgs2:6.4e-16 hh:8.7e-16
+padua_rand 10 rand1 givens-scheme:5.9e-15 givens-largest:5.2e-15 hl:1.2e-15 bj:1.5e-15 cgs2:6.2e-16 hh:8.8e-16
+padua_rand 10 rand2 givens-scheme:5.4e-15 givens-largest:4.1e-15 hl:1.3e-15 bj:1.7e-15 cgs2:6.5e-16 hh:8.9e-16
+padua_rand 10 rand3 givens-scheme:5.7e-15 givens-largest:4.8e-15 hl:1.1e-15 bj:1.4e-15 cgs2:6.0e-16 hh:8.6e-16
+[ref n=15 N=136 0s]
+padua_rand 15 given givens-scheme:7.1e-15 givens-largest:1.1e-02 hl:1.9e-15 bj:4.8e-15 cgs2:8.7e-16 hh:1.2e-15
+padua_rand 15 sortx givens-scheme:9.1e-15 givens-largest:9.4e-15 hl:1.9e-15 bj:1.1e-14 cgs2:8.9e-16 hh:1.2e-15
+padua_rand 15 rand1 givens-scheme:1.1e-14 givens-largest:1.5e-14 hl:1.8e-15 bj:7.0e-15 cgs2:8.0e-16 hh:1.1e-15
+padua_rand 15 rand2 givens-scheme:1.1e-14 givens-largest:1.3e-14 hl:2.0e-15 bj:6.4e-15 cgs2:8.3e-16 hh:1.1e-15
+padua_rand 15 rand3 givens-scheme:1.0e-14 givens-largest:1.5e-14 hl:2.0e-15 bj:7.1e-15 cgs2:8.8e-16 hh:1.1e-15
+[ref n=20 N=231 1s]
+padua_rand 20 given givens-scheme:1.4e-14 givens-largest:1.4e-03 hl:3.5e-15 bj:6.7e-15 cgs2:1.3e-15 hh:1.5e-15
+padua_rand 20 sortx givens-scheme:1.4e-14 givens-largest:3.6e-14 hl:3.3e-15 bj:6.2e-15 cgs2:1.2e-15 hh:1.5e-15
+padua_rand 20 rand1 givens-scheme:2.2e-14 givens-largest:1.1e-13 hl:3.3e-15 bj:1.8e-14 cgs2:1.2e-15 hh:1.5e-15
+padua_rand 20 rand2 givens-scheme:2.0e-14 givens-largest:4.0e-14 hl:3.4e-15 bj:1.0e-14 cgs2:1.3e-15 hh:1.5e-15
+padua_rand 20 rand3 givens-scheme:1.8e-14 givens-largest:5.2e-14 hl:3.4e-15 bj:4.7e-15 cgs2:1.1e-15 hh:1.5e-15
+[ref n=30 N=496 11s]
+padua_rand 30 given givens-scheme:2.4e-14 givens-largest:6.1e-03 hl:6.2e-15 bj:2.7e-14 cgs2:1.7e-15 hh:1.9e-15
+padua_rand 30 sortx givens-scheme:2.6e-14 givens-largest:2.4e-09 hl:5.8e-15 bj:1.2e-14 cgs2:1.9e-15 hh:1.9e-15
+padua_rand 30 rand1 givens-scheme:5.2e-14 givens-largest:1.6e-12 hl:5.5e-15 bj:3.7e-14 cgs2:1.7e-15 hh:1.9e-15
+padua_rand 30 rand2 givens-scheme:8.2e-14 givens-largest:2.8e-12 hl:5.8e-15 bj:2.8e-14 cgs2:1.8e-15 hh:1.9e-15
+padua_rand 30 rand3 givens-scheme:7.5e-14 givens-largest:1.1e-12 hl:5.9e-15 bj:1.6e-14 cgs2:1.7e-15 hh:1.9e-15
+[ref n=40 N=861 77s]
+padua_rand 40 given givens-scheme:4.1e-14 givens-largest:1.1e-04 hl:8.5e-15 bj:3.0e-14 cgs2:2.2e-15 hh:2.4e-15
+padua_rand 40 sortx givens-scheme:4.0e-14 givens-largest:1.0e-06 hl:8.8e-15 bj:3.2e-14 cgs2:2.3e-15 hh:2.4e-15
+padua_rand 40 rand1 givens-scheme:2.3e-13 givens-largest:1.9e-10 hl:7.9e-15 bj:8.0e-14 cgs2:2.2e-15 hh:2.4e-15
+padua_rand 40 rand2 givens-scheme:1.3e-13 givens-largest:1.8e-10 hl:8.3e-15 bj:3.5e-14 cgs2:2.4e-15 hh:2.4e-15
+padua_rand 40 rand3 givens-scheme:8.1e-14 givens-largest:1.6e-10 hl:8.2e-15 bj:2.3e-14 cgs2:2.2e-15 hh:2.4e-15
+[ref n=50 N=1326 205s]
+padua_rand 50 given givens-scheme:6.6e-14 givens-largest:2.1e-04 hl:1.2e-14 bj:4.3e-14 cgs2:3.0e-15 hh:2.7e-15
+padua_rand 50 sortx givens-scheme:6.6e-14 givens-largest:8.9e-04 hl:1.3e-14 bj:5.1e-14 cgs2:2.9e-15 hh:2.7e-15
+padua_rand 50 rand1 givens-scheme:3.1e-13 givens-largest:5.2e-09 hl:1.2e-14 bj:9.3e-14 cgs2:2.9e-15 hh:2.7e-15
+padua_rand 50 rand2 givens-scheme:3.7e-13 givens-largest:6.4e-08 hl:1.2e-14 bj:2.2e-14 cgs2:2.8e-15 hh:2.7e-15
