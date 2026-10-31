@@ -21,3 +21,10 @@
 
 - Reproduce every relied-on supplied measurement with committed commands and source hashes.
 - Cold storage selected by AC: `C:\Users\andreyac\Downloads\padua\cold_storage\mz-constants\`. This Linux workspace cannot attest delivery to that Windows path; use staging/manifest and state transfer pending.
+
+## 2026-10-31 — development checkpoint
+
+- Pushed e9761aa (verified import/frozen questions/provisional idea seeds), then 57984e3 (M1 proof, complete bounded M0 screen and reproduced numerical evidence).
+- M1 developer `/root/m1_upper`, explicitly gpt-6.1-sol xhigh, completed four rounds and then moved to M3, keeping two active substantive directions with M2. M2 developer `/root/m2_lower`, explicitly gpt-6.1-sol xhigh, derived cardinal Schur and endpoint-cancelled harmonic U bounds. Reproduction `/root/reproduce`, explicitly gpt-6.1-sol medium, completed finite suites. Independent adversarial `/root/adversarial`, explicitly gpt-6-astra xhigh, reconstructs every accepted candidate and actually reran the numerical suite. M0 `/root/literature_baseline`, explicitly gpt-6.1-sol high, completed 43-query screen.
+- All imported rigorous statements are locally reproved rather than inherited. Several source implications require correction: An–Wu states a conditional corollary; Padua marginal domination alone does not prove convergence; inverse-Gram stability is not the hyperinterpolation operator norm. The endpoint η rate requires upper-spectrum information beyond λ_max<2−c/N.
+- Refresh of origin/main returned d367228. GitHub open-PR query now finds draft #2, `codex/charter-unisolvence-20261031`, head eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64, with its standalone allocation ledger. Those reserved IDs must be preserved in a batch ledger before allocating here. No competing registry had been visible at the earlier initial query. No main merge or charter edits performed.
