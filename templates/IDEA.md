@@ -15,5 +15,6 @@ Aliases: <all mechanism names and close variants>.
 - Resources / cost ledger (optional, when relevant):
 - Actual test results and committed evidence:
 - Disposition and precise rejected scope, if any:
-- Canonical theory / negative-result ID:
+- Disposition reason: <refuted | failed | equivalent | abandoned; explain the exact scope and evidence, with its epistemic status>.
+- Canonical theory / negative-result ID: <PD-N optional only for a genuine negative mathematical statement with scoped failure/refutation evidence; equivalence or abandonment alone stays an IDEA disposition>.
 - Topic / audit / history:

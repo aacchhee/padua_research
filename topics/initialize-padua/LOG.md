@@ -1,10 +1,10 @@
 # Initialize Padua research
 
 - Branch: `codex/initialize-padua` · Base: `b2ec85f3fb2743a3b9292657fec9ac9da227d410` · Developer: Codex · Auditor: Claude
-- Stage: WORK · Next: `Codex (Sol 6.1 medium): Continue codex/initialize-padua in aacchhee/padua_research; answer audit-02.md in response-02.md.`
+- Stage: AUDIT · Next: `Claude (Opus 5.5 high): Continue codex/initialize-padua in aacchhee/padua_research; check response-02.md and the R1/R2 and AC L5 rule/schema changes.`
 - Claims: none; this topic initializes infrastructure only.
 - For the PR: initialize the protocol, state, literature database, ID conventions and templates; no scientific registrations.
-- Open for AC: scientific question and initial sources remain unspecified; audit-01 L5 (PD-N scope for non-mathematical rejections) needs an AC decision. I2 (branch protection / squash-only) is decided: AC configures it personally, and agents make no settings changes.
+- Open for AC: scientific question and initial sources remain unspecified. L5 is decided and applied: PD-N only for refuted/failed mechanisms; equivalent or abandoned candidates stay as IDEA dispositions. I2 is decided: AC configures branch protection/merge methods personally, and agents make no settings changes.
 
 ## 2026-10-31 — Codex
 
@@ -55,6 +55,18 @@
 - AC decision on audit-01 I2: "I take care of branch protection." AC owns the configuration of `main` protection and merge methods. The finding is closed for agents, with no agent action or settings change, as `AGENTS.md` requires. It no longer blocks readiness.
 - No rule, template or registry change; the stage stays WORK pending response-02.
 
+## 2026-10-31 — Codex, Sol 6.1 medium (response-02)
+
+- Rules and starting head: `c314ca6e105b3128656c34875e358e71c98946be`; AGENTS, WORKFLOW and CODEX read at that commit, followed by audit-02 in full.
+- Base refreshed in the topic clone: `b2ec85f3fb2743a3b9292657fec9ac9da227d410`; main already incorporated, topic fast-forwarded to the current remote head without rewriting published history.
+- Response: [response-02.md](response-02.md). R1 explicitly excludes minor routine steps from aggregation and defines target decomposition for PARTIAL vs supporting lemmas for OPEN. R2 adds canonical disposition/reason visibility and a refuting PD-N link requirement.
+- AC L5 decision applied across workflow, roles, templates, proof registry, idea registry and tracks: no administrative PD-N records; equivalent/abandoned candidates stay as IDEA dispositions. No existing record or allocation needed migration because the registries are empty.
+- R3: `73ec2ba`'s separated Agent/Model paragraphs are a historical trailer-format irregularity; only Model parses. The published commit is not rewritten. This response uses one contiguous final trailer paragraph and checks Git's parser.
+- I3/I4: filenames use a portable slug/final ID rather than a provisional `?` label; duplicate rejection-reason field and obsolete administrative-status exception removed.
+- Models/ownership: AC requested Sol 6.1 medium; template subtask `response02_templates` used `gpt-6.1-sol` medium on two disjoint files. Only Codex orchestration controls Git; parent effort is not independently exposed by the runtime.
+- Novelty: not applicable; no scientific idea, mechanism, claim, status upgrade or final ID is introduced. Existing audit/response records remain unchanged.
+- Stage returns to AUDIT for a focused Claude check of R1/R2 and the authorized L5 changes; PR stays draft. Verification is recorded in response-02 and the PR.
+
 ## Runs needed
 
-No scientific runs: the campaign charter has not been specified. Claude's focused reaudit of response-01 and the changed rules/templates remains required before readiness for merge. L5 and I2 remain for AC.
+No scientific runs: the campaign charter has not been specified. Claude's focused check of response-02 and the R1/R2/L5 changes remains required before readiness for merge. L5 and I2 have both been decided by AC; I2 needs no agent settings action.

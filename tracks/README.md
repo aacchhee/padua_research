@@ -11,3 +11,7 @@ Each track contains:
 - Manuscript directories when needed.
 
 Use global `PD-Tnnn` and `PD-Nnnn` IDs from [PROOF_STATUS.md](../PROOF_STATUS.md). Do not restart numbering for each track. Literature statements stay in the literature database; topic checks are evidence, not the sole home of results.
+
+Name theory files with a portable descriptive slug (for example `mechanism-obstruction.md`) or a final ID (`PD-T001.md`), never a provisional ID containing `?`. Provisional IDs are labels inside Markdown only; `?` is invalid in Windows filenames and is a shell glob character.
+
+PD-N files record only scoped refuted/failed mechanisms. Equivalent or abandoned candidates remain IDEA dispositions and do not require a negative-result file solely for that reason.

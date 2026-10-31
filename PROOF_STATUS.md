@@ -6,7 +6,9 @@ Use repository-global IDs `PD-T001`, `PD-T002`, ... for positive or unresolved r
 
 Every mathematical result, including a distinct measured claim, has a [theory file](templates/THEORY.md) when produced and a row here at PR preparation. Published statements use `LIT-nnn` in the literature database and do not inherit a research proof status.
 
-Split substantive proved results into their own files/IDs so they keep PROVED. Keep an original unresolved target registered with its true status and dependencies on the split results; record the split in [ID_CROSSWALK.md](ID_CROSSWALK.md). REJECTED is a separate candidate disposition, not a proof status; a `PD-N` statement has its own epistemic status. Administrative records asserting no mathematical statement carry `not applicable` rather than an invented proof status.
+Split substantive proved results into their own files/IDs so they keep PROVED. Keep an original unresolved target registered with its true status and dependencies on the split results; record the split in [ID_CROSSWALK.md](ID_CROSSWALK.md). Minor routine steps do not contribute to aggregation. PARTIAL requires explicitly identified parts of the target's statement, some PROVED under split-off IDs and the remainder OPEN; supporting lemmas alone leave the unresolved target OPEN.
 
-| ID | Statement and scope | Status | Status by mathematical part | Depends on | Theory file | Evidence / audit |
-|---|---|---|---|---|---|---|
+REJECTED is a separate disposition, not a proof status. A refuted registered claim must show `REJECTED: refuted (see PD-Nnnn)` with a link to its refuting result in the disposition column. Check this column before relying on any row: a rejected claim is not a usable dependency even if its earlier epistemic status remains as history. PD-N is reserved for scoped refuted/failed mechanisms; its status describes the negative statement. Equivalent or abandoned candidates stay as IDEA dispositions and do not create administrative PD-N rows.
+
+| ID | Statement and scope | Status | Status by mathematical part | Disposition / reason | Depends on | Theory file | Evidence / audit |
+|---|---|---|---|---|---|---|---|

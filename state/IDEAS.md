@@ -8,7 +8,7 @@ Before developing an idea, scan every heading and alias line, read all obstructi
 
 At a branch audit involving ideas or novelty claims, read this file completely in bounded chunks. A protocol-only change may record novelty as not applicable. An empty registry does not establish novelty in the literature.
 
-Use [the idea template](../templates/IDEA.md). Assign `IDEA-nnn` at PR preparation; never recycle IDs. Preserve aliases and scope when updating dispositions. Every failed or rejected mechanism also has a `PD-Nnnn` negative result with its own durable theory file.
+Use [the idea template](../templates/IDEA.md). Assign `IDEA-nnn` at PR preparation; never recycle IDs. Preserve aliases and scope when updating dispositions. Only refuted or failed mechanisms with a scoped negative statement and evidence get a `PD-Nnnn` theory file. Equivalent or abandoned candidates stay here as IDEA dispositions with reasons and references; equivalence or abandonment alone creates no PD-N allocation. A separate evidenced failure is still registered if the candidate is later abandoned.
 
 ## Entries
 
