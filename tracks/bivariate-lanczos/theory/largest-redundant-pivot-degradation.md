@@ -13,11 +13,15 @@ Split into: none.
 
 (N2) *Non-unisolvence is not necessary.* On orders whose every prefix is unisolvent with min prefix sigma_min >= 4.7e-4 (gepp and rpiv1-3, `unisolvent-prefix-extension-lemma.md`), 'largest' reaches (cubature weights) 4.2e-13..1.5e-12 (n = 30), 1.8e-11..5.7e-11 (n = 40) and 9.3e-10..3.1e-9 (n = 50) against 'scheme' 3.8e-14..4.5e-14, 6.0e-14..7.8e-14 and 1.1e-13..1.2e-13: ratios 11..33, 250..720 and 8.6e3..2.8e4; the U(0.1,1)-weight values are similar (within a factor 2.5). The error grows by a factor 15..50 per Delta n = 10 (gepp: 2.8e-14, 4.2e-13, 1.8e-11, 9.3e-10 for n = 20, 30, 40, 50). Under the operational definition of candidates.md (catastrophe = error ratio >= 1e3 and 'largest' error >= 1e-10), 16 of the 54 (weights, n, order) cases with n >= 20 and all prefixes unisolvent are catastrophic: the 14 cases at n = 50 (gepp, rand1-3, rpiv1-3, for each of the two weight types) plus n = 40 rand3 for both weight types (listing in `logs/analysis_r01b.txt`). Hence the kill test of plan L5-Q1 for the prefix mechanism *fires*: 'the catastrophe occurs only on orders with non-unisolvent intermediate prefixes' is false in this scope. 14 of the 16 have min sigma_min >= 1e-8 (the pre-registered tolerance); the two with 3.0e-9 are n = 50 rand3 (both weight types). The 8 cases of gepp and rpiv1-3 at n = 50 (4 per weight type) (min sigma_min >= 4.7e-4) are unaffected by any tolerance choice.
 
+*Scope of the kill (reconstruction finding M4).* The kill of the binary prefix mechanism rests on the **operational catastrophe threshold** (ratio >= 1e3 and error >= 1e-10), not on the seed's magnitude of about 7e-4. On the well-conditioned unisolvent orders the 'largest' error stays <= 3.1e-9 up to n = 50; errors of 1e-4 or more occur only on non-unisolvent orders (given/sortx: 3.4e-4 at n = 50, 7.1e-4 at n = 62) or on the near-singular REPRO order (min prefix sigma_min 9.7e-10: 2.1e-4), and the largest error on an all-unisolvent order in the developer data is 5.9e-7 (n = 50 rand3, sigma_min 3.0e-9). The data fit a **graded prefix-conditioning effect** rather than a binary one: 'largest' degrades on every order at about x15-50 per Delta n = 10, and reaches >= 1e-6 only on singular or near-singular (sigma_min <~ 1e-9) prefix sequences in the tested range. This last statement is a description of the data, neither tested nor refuted by the kill. The classification itself is fragile (n = 40 rand2 counts as non-unisolvent only through a K = 2 prefix with two equal x-coordinates, yet behaves like rand1/rand3). The independent reconstruction confirmed the kill with its own code and orders (geppR1, geppR2 with random row scalings; certified min sigma_min >= 4.3e-6 at n = 50; 'largest' 2.1e-9, 1.8e-9, ratios 1.6e4, 1.8e4).
+
 (N3) *Non-unisolvence aggravates it.* Median 'largest'/'scheme' ratio over the two weight types, by order class: `given` 1e9..1e12 at n = 30, 40, 50 (also 8e11 at n = 15 and 5e10 at n = 20, driven by the random-weight stream); `sortx` 5e4 (n = 30), 1.6e7 (n = 40), 7e9 (n = 50); random orders (all prefixes unisolvent except n = 15, 40 rand2) 33, 1.2e3, 1e5; gepp/rpiv 30, 460, 1.2e4. So the singular-prefix streams are 3..10 orders of magnitude worse than the unisolvent ones at the same n (3 for `sortx` n = 30 against random orders, 10 for `given` n = 30 against gepp/rpiv). Singular prefixes are not sufficient for a large 'largest' error (cubature weights, n = 15 and 20, `given` and `sortx`: ratio 1.1..1.4; random weights n = 20 `sortx`: 2.7) and not necessary (N2).
 
-(N4) *Magnitude-based variants (R03).* Only-if-larger-by-kappa pivot rules ('pivk10', 'pivk100') and pair-norm rules ('pairnorm1', 'pairnorm100') on n = 20, 30 (cubature and random weights; `logs/r03_rules.jsonl`): on gepp and rand1-3 'pivk10', 'pivk100' and 'pairnorm100' equal 'scheme' to the printed digits (the alternative is not taken) and 'pairnorm1' equals 'largest' within 15%; on the structured streams at n = 30 (`given`, cubature weights, scheme 2.3e-14): pivk10 8.6e-9, pivk100 5.9e-12, pairnorm1 4.0e-12, pairnorm100 2.2e-14 (= scheme); random weights `given`: pivk10 and pivk100 4.3e-3, pairnorm1 1.6e-13, pairnorm100 5.9e-14. No variant beats 'scheme' anywhere. (Disposition of these rules: R03.md.)
+(N4) *Magnitude-threshold variants are separate records.* The variants that take the alternative pivot only when it is kappa times larger (pivk10, pivk100, the reading of VB-C p. 395 'if two pivots differ in some orders of magnitude') or compare pair norms (pairnorm1, pairnorm100) are recorded, with their own scoped negative statement, in `magnitude-threshold-pivot-rules-failure.md` (PD-N?bivariate-lanczos-claude-507); the detector-threshold deferral rules in `fifo-threshold-deferral-failure.md` (PD-N?bivariate-lanczos-claude-508). Not repeated here (reconstruction finding L9). The only fact used here: 'pairnorm1' coincides with 'largest' within 15% on rand1-3 and gepp (n = 20, 30), so 'largest' is the kappa = 1 member of that family.
 
 (N5) *Random nodes differ.* For random nodes with M/N approximately 3 and uniform density, 'largest' is not worse than 'scheme' (M = 2016: 1.45e-12 versus 5.6e-11; slopes 1.84 versus 2.87); for arcsine-density random nodes, 'largest' is worse and steeper (slope 2.10 versus 1.28 for M = 66..1326; 1.1e-12 versus 6.4e-14 at M = 1326, ratio 17).
+
+(N6) *What fails is the zero pattern, not the backward error (REVIEWER-MEASURED, reconstruction 01, `b_kill.jsonl`; not rerun by me).* On all-prefix-unisolvent orders 'scheme' and 'largest' have the same orthogonal-similarity residual (2.7e-15 at n = 30, 4.4e-15 at n = 50) and the same first-column residual, while the structure defect (largest entry below the candidate pivots, relative to ||H||_F/sqrt(M)) tracks the forward error (n = 50 gepp: 8.4e-10 for 'largest' versus 6.8e-14 for 'scheme'; forward error 9.3e-10 versus 1.2e-13).
 
 ## Definitions
 
@@ -29,22 +33,25 @@ IEEE double; real nodes; the tables of parents of Algorithm 1 ('downside-up', y-
 
 ## Status by part
 
-Overall status: MEASURED (the status of the negative statement; the candidate 'larger pivot is a stabilising heuristic' carries the disposition REJECTED: failed, scope above).
+Overall status: MEASURED (the status of the negative statement; dispositions below).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
 | N1–N3 | MEASURED | `logs/r01_padua_cub.jsonl`, `r01_padua_rand.jsonl`, `r01_prefix_a.jsonl`, `r01_prefix_b.jsonl`; `analyze_r01b.py` output in `logs/analysis_r01b.txt` |
-| N4 | MEASURED | `logs/r03_rules.jsonl`, `r03_rules.log` |
+| N4 | pointer | PD-N?bivariate-lanczos-claude-507, -508 |
+| N6 | REVIEWER-MEASURED | reconstruction 01 `b_kill.jsonl` |
 | N5 | MEASURED | `logs/r01_random.jsonl`, `logs/r01_random_cheb.jsonl` |
 | a mechanism (why larger pivot degrades) | OPEN | see Open items |
 
-Candidate / claim disposition: REJECTED (the seed-p. 395 suggestion and the Humet-type max-norm pivot as a stability enhancement in point-by-point Givens updating on Padua points; and the prefix mechanism in the 'only' form).
-Rejection reason: failed (mechanism does not achieve its stability aim in the stated range); the 'only on non-unisolvent prefixes' conjecture is refuted (MEASURED) in the stated range.
+Candidate / claim disposition (wording corrected after reconstruction findings L7, L8):
+- Claim 'the "largest" catastrophe occurs only on orders with a non-unisolvent intermediate prefix' (IDEA?bivariate-lanczos-claude-502): REJECTED: refuted (the negation is established within the scope below; MEASURED, operational threshold, see the N2 scope paragraph).
+- Mechanism 'choose the larger redundant pivot (kappa = 1) as a stabilising rule in point-by-point Givens updating': REJECTED: failed (it does not achieve its stability aim in the scope below).
+- The VB-C p. 395 suggestion proper ('if two pivots differ in some orders of magnitude' = the kappa >> 1 rule) is **not** the 'largest' rule; its rejection rests on PD-N?bivariate-lanczos-claude-507, not on the 'largest' data here.
 
 ## Negative-result scope
 
-Attempted mechanism: IDEA?bivariate-lanczos-claude-013/016/502 — choose the larger redundant pivot (and variants by magnitude); and the diagnostic claim that its failures occur only on non-unisolvent prefixes.
-Parameter range: Algorithm 1, real nodes, IEEE double, Padua first-family n = 10, 15, 20, 30, 40, 50, 62 (cubature weights; U(0.1,1) weights; unit weights up to n = 40 in `r01_padua_unif.jsonl`), orders given, sortx, rand1–3, gepp, rpiv1–3 (the last two only up to n = 50), and random nodes M ≤ 2016. 'No catastrophe at n ≤ 15' is part of the scope.
+Attempted mechanism: IDEA?bivariate-lanczos-claude-013/016/502 — choose the larger redundant pivot (kappa = 1); and the diagnostic claim that its failures occur only on non-unisolvent prefixes.
+Parameter range: Algorithm 1, real nodes, IEEE double, Padua first-family n = 10, 15, 20, 30, 40, 50, 62 (cubature weights; U(0.1,1) weights; unit weights up to n = 40 in `r01_padua_unif.jsonl`), orders given, sortx, rand1–3, gepp, rpiv1–3 (the last two only up to n = 50), and random nodes M ≤ 2016. The data support 'no catastrophe at n <= 10' (ratios 0.8-1.3 for all 9 orders and both weight types) and nothing stronger: a catastrophe occurs at n = 15 (`given` order, U(0.1,1) weights, 1.1e-2, ratio 1.6e12; reconstruction finding M5). Magnitude-threshold and deferral variants: see PD-N?bivariate-lanczos-claude-507 and -508.
 
 ## Depends on
 
@@ -73,3 +80,5 @@ Exactly the range above. This does not show that every stability heuristic based
 ## History
 
 2026-10-31, Claude Sonnet 5.5 (high), L5 R03: created.
+
+2026-10-31T23:00Z, Claude Sonnet 5.5 (high), response to L5 reconstruction 01: M1 (N6 added: zero pattern, not backward error), M4 (kill scope, graded statement), M5 (scope n <= 10), L7 (p. 395 is the kappa rule; rejection moved to 507), L8 (refuted/failed wording), L9 (N4 split into PD-N 507 and 508).

@@ -300,3 +300,15 @@ Aliases: closed-loop term-wise model; dot-product-only rounding.
   - sets with L(20) ≥ 1e-13: survives iff 0.2 ≤ C(n)/L(n) ≤ 5 at both degrees on every such set; killed if some ratio is < 0.02 or > 50; otherwise inconclusive;
   - sets with L(20) < 1e-13: survives iff C(20) < 1e-12; killed if C(20) ≥ 1e-11.
   The overall verdict is the worst over the sets.
+
+---
+
+## C01 — verification criteria for reconstruction 01 (reviews/L1-reconstruction-01.md), written 2026-10-31T23:02:34Z before `l1_c01_recon_checks.py` was written or run
+
+These are checks of the reviewer's findings with my own code and seeds. They are not new candidates. u = 2^-53 (the plan's unit roundoff) is used in every Ritz prediction u/ρ; the R01 rule is also re-applied at 2^-52 for comparison.
+- C01-1 (B2 (i)): the frozen R01 rule (τ = 10³u, factor-3 band) is re-applied to the R01 raw logs at u = 2^-53. The finding is confirmed iff K1 does not fire there.
+- C01-1′ (B2 (ii)): with the chain-completion degree of tensor 41² (n = 40, where S_n contains every function of x) excluded, symmetric to the R01 N = M exclusion for Padua. The finding is confirmed iff, at both conventions, no run has a single section tagged 'over' while Z predicts or is uninformative.
+- C01-2 (B1, selection): BJ-type recurrence (block window, one CGS pass, double), seed-11 sets of R02/R03 (M = 1681), parent rules dev (input code), mirror (HL BIT), alt (balanced: X-product for j < t/2, Y-product otherwise), adapt (per column the admissible product with the larger β/‖Aq_p‖). The finding is confirmed iff on at least two of {rotation 0.3, rotation π/4, triangle} the best of mirror/alt/adapt is ≥ 10³ below dev at n = 24 (the first degree where dev saturates at ≥ 0.1, if that is earlier).
+- C01-3 (B1, truncation): dev rule, one CGS pass against all previous columns (no truncation). The finding is confirmed iff the loss at n = 24 is ≤ 1e-12 on rotation π/4 and on the disk, and ≥ 1e-6 at n = 20 on the triangle.
+- C01-4 (major, support classifier): the finding is confirmed iff BJ loss at n = 24 is ≥ 100·u/ρ_Z on the seed-11 square with weights exp(8xy), and ≥ 10·u/ρ_Z on a Gaussian cloud (M = 1681, default_rng(12), standard normal coordinates).
+- C01-5 (major, two-relation scope; l1_both_relations.both): the finding is confirmed iff the two-relation loss on tensor 41² at n = 24 is ≥ 10× BJ's, and on the triangle the one-pass loss is ≥ 1e-12 at n = 24 while the two-pass loss is below the one-pass loss.
