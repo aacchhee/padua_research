@@ -407,7 +407,23 @@ def T105_impulse_check():
 
 # -------------------------------------------------------------- T-401 lemmas, hypothesis necessity
 def span_rank(vecs):
-    return sp.Matrix([list(v) for v in vecs]).T.rank() if vecs else 0
+    """exact rank by fraction Gaussian elimination"""
+    rows = [list(v) for v in vecs]
+    if not rows:
+        return 0
+    rank = 0; ncol = len(rows[0])
+    for c in range(ncol):
+        piv = next((i for i in range(rank, len(rows)) if rows[i][c] != 0), None)
+        if piv is None:
+            continue
+        rows[rank], rows[piv] = rows[piv], rows[rank]
+        pr = rows[rank]
+        for i in range(rank + 1, len(rows)):
+            if rows[i][c] != 0:
+                f = rows[i][c] / pr[c]
+                rows[i] = [a - f * b for a, b in zip(rows[i], pr)]
+        rank += 1
+    return rank
 
 
 def poly_vecs(xs, ys, deg, wvec=None):
@@ -447,6 +463,12 @@ def T401_checks():
         S = poly_vecs(xs, ys, n); XS = [[x * v for x, v in zip(xs, vec)] for vec in S]
         print(f"T-401 strengthening check, generic nodes n={n}: dim(S_n + X S_n) = {span_rank(S + XS)}, N_n + n + 1 = {(n+1)*(n+2)//2 + n + 1}, N_(n+1) = {(n+2)*(n+3)//2}")
 
+
+import time as _time
+_T0 = _time.time()
+_print = print
+def print(*a, **k):
+    _print(f'[{_time.time()-_T0:6.1f}s]', *a, **k, flush=True)
 
 if __name__ == '__main__':
     print('# rv_exact_checks.py  python', sys.version.split()[0], ' sympy', sp.__version__, ' seed 31102026')

@@ -73,6 +73,9 @@ Provisional IDs `<NS>?bivariate-lanczos-claude-<nnn>`: literature 001–099 (not
 | L3 | R03 | 2026-10-31 | Checkerboard control, literature | (H) survey MEASURED; count-alone hypothesis refuted (MEASURED); literature confirmations | [R03](directions/L3/R03.md) |
 | L1 | R04 | 2026-10-31 | Near-product upper bound; checkerboard control | Near-product bound PROVED (weak); clustered-checkerboard loss and remedy failure MEASURED (PD-N?…-103) | [R04](directions/L1/R04.md) |
 | L1 | R05 | 2026-10-31 | Exact certificates; error channels | Moment-matching factorisation PROVED; triangle-grid growth certificate CONDITIONAL; two error channels MEASURED; corrections PC-1–10 | [R05](directions/L1/R05.md) |
+| L5 | R01 | 2026-10-31 | L5-Q1 (frozen) | Slopes MEASURED (rotation counting not killed on controlled families); prefix mechanism killed (MEASURED) | [R01](directions/L5/R01.md) |
+| L5 | R02 | 2026-10-31 | Worst-case rotation bound | Routine backward bound PROVED (no M vs √M separation) | [R02](directions/L5/R02.md) |
+| L5 | R03 | 2026-10-31 | Safe pivot/deflation rules | No rule beats 'scheme' (MEASURED); prefix-extension lemma PROVED; invariant proof OPEN | [R03](directions/L5/R03.md) |
 | L3 | R04 | 2026-10-31 | Exact certificates for equispaced checkerboards | (H) certified n = 1..7 CONDITIONAL; margins MEASURED | [R04](directions/L3/R04.md) |
 
 ## History

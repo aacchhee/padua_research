@@ -3,7 +3,7 @@
 ID kind: PD-T.
 Aliases: Givens deficit slopes; L5-Q1 first clause; IDEA?bivariate-lanczos-claude-501 (test of seed IDEA 015).
 Split from: none.
-Split into: none (the worst-case bound is `givens-updating-rotation-count-backward-bound.md`; the pivot-rule failure is PD-N?bivariate-lanczos-claude-501).
+Split into: none (the worst-case bound is `givens-updating-rotation-count-backward-bound.md`; the pivot-rule failure is PD-N?bivariate-lanczos-claude-506).
 
 ## Statement
 

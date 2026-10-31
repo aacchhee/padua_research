@@ -1,0 +1,20 @@
+numpy 2.5.3 scipy 1.18.1 cvxpy 1.6.0
+LP rerun Padua n=2: z*=node0+0.03(cos1,sin1); K_delta ~ 113-point square grid in each disc; min l1 moment residual (Legendre basis)
+  eps=1e-02: delta_min ~ 5.3699e-03  /sqrt(eps) = 0.0537  /eps = 0.537
+  eps=1e-03: delta_min ~ 1.5685e-03  /sqrt(eps) = 0.0496  /eps = 1.57
+  eps=1e-04: delta_min ~ 4.9338e-04  /sqrt(eps) = 0.0493  /eps = 4.93
+numpy 2.5.3 scipy 1.18.1 cvxpy 1.6.0
+LP rerun Padua n=1: z*=node0+0.3(cos1,sin1); K_delta ~ 113-point square grid in each disc; min l1 moment residual (Legendre basis)
+  eps=1e-02: delta_min ~ 2.1373e-02  /sqrt(eps) = 0.2137  /eps = 2.14
+  eps=1e-03: delta_min ~ 6.1570e-03  /sqrt(eps) = 0.1947  /eps = 6.16
+  eps=1e-04: delta_min ~ 1.9184e-03  /sqrt(eps) = 0.1918  /eps = 19.2
+numpy 2.5.3 scipy 1.18.1 cvxpy 1.6.0
+residual rerun Padua n=3, eps=0.001, z*=node0+0.03(cos1,sin1); grid 149 pts/disc
+  delta=0.003 : status=0 min l1 resid/eps = 1.219e-02
+  delta=0.02  : status=0 min l1 resid/eps = 1.061e-02
+  delta=0.04  : status=0 min l1 resid/eps = 1.156e-02
+  delta=0.1   : status=0 min l1 resid/eps = 1.450e-02
+
+real	0m20.335s
+user	0m12.191s
+sys	0m0.308s

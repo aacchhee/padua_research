@@ -3,7 +3,7 @@
 ID kind: PD-T.
 Aliases: prefix mechanism data; IDEA?bivariate-lanczos-claude-502 (test of seed IDEA 016); relational recovery of intermediate states.
 Split from: none.
-Split into: none (the existence of all-prefix-unisolvent orders is PROVED in `unisolvent-prefix-extension-lemma.md`; the failure of the 'largest' rule is PD-N?bivariate-lanczos-claude-501).
+Split into: none (the existence of all-prefix-unisolvent orders is PROVED in `unisolvent-prefix-extension-lemma.md`; the failure of the 'largest' rule is PD-N?bivariate-lanczos-claude-506).
 
 ## Statement
 
@@ -13,7 +13,7 @@ All parts [FP/numerical-rank, MEASURED] within the scope below.
 
 (B) *Online detector.* 'Prefix K (K ≤ n=10,14,20 sets) is numerically singular ⇔ min over the monomials j ≤ K of the primary pivot |V(j)[j, p(j)]| (and |w_1| for j = 1) of the 'scheme' Givens state after K points is < 1e-10' holds without exception on 20 order/size cases (n = 10: given, sortx, rand1–3, gepp, rpiv1; n = 14: same; n = 20: given, sortx, rand1, rand2, gepp, rpiv1; `logs/r03_detector.log`): all 58 / 58, 110 / 110, 218 / 218 singular prefixes flagged, all singular prefixes of the random orders flagged (n = 14: 1 and 2), no unisolvent prefix flagged. The *newest* pivot alone (monomial K) is **not** a detector (n = 10 given: 6 of 58 singular prefixes have it < 1e-10; n = 14: 10 of 110). The min-pivot is also correlated with σ_min on unisolvent prefixes (Spearman 0.3..0.9, order dependent) — a conditioning proxy, not an estimate.
 
-(C) *Effect on the 'scheme' rule.* On the 40 (n, order, weight) cases with all prefixes unisolvent and n ≥ 30 (3 random + gepp + 3 rpiv at n = 30, 40, 50 minus the singular rand2 at n = 40, cubature and U(0.1,1) weights), Spearman correlation of log10(scheme error) with log10(min prefix σ_min) is −0.51 (p = 9e-4); at n = 50 alone −0.71 (14 cases: scheme error 1.1e-13..1.3e-13 for gepp/rpiv with σ_min ≥ 4.7e-4 versus 3.1e-13, 3.7e-13, 1.6e-12 (cub) and 3.4e-12 (U) for the random orders with σ_min 3e-9..3.5e-8). The REPRO outlier (`topics/…/repro/REPRO.md`: Padua n = 60, uniform weights, random order from `default_rng(2)`): scheme 2.0e-12 and largest 2.1e-4 (error versus the Householder H) were reproduced bit-for-bit in magnitude by `diag_repro_x60.py`; its prefix scan result is in R03.md. 
+(C) *Effect on the 'scheme' rule.* On the 40 (n, order, weight) cases with all prefixes unisolvent and n ≥ 30 (3 random + gepp + 3 rpiv at n = 30, 40, 50 minus the singular rand2 at n = 40, cubature and U(0.1,1) weights), Spearman correlation of log10(scheme error) with log10(min prefix σ_min) is −0.51 (p = 9e-4); at n = 50 alone −0.71 (14 cases: scheme error 1.1e-13..1.3e-13 for gepp/rpiv with σ_min ≥ 4.7e-4 versus 3.1e-13, 3.7e-13, 1.6e-12 (cub) and 3.4e-12 (U) for the random orders with σ_min 3e-9..3.5e-8). The REPRO outlier (`topics/…/repro/REPRO.md`: Padua n = 60, uniform weights, random order from `default_rng(2)`): scheme 2.0e-12 and largest 2.1e-4 (error versus the Householder H) were reproduced bit-for-bit in magnitude by `diag_repro_x60.py`; its prefix scan (1008 s) found no singular prefix and a minimum exact prefix sigma_min of 9.7e-10 (158 prefixes with upper bound < 1e-6, 2 below 1e-8): the smallest value recorded in this study. Three further random n = 60 orders gave scheme errors 2.0e-11, 5.1e-13, 1.6e-12 (prefix scans not run) and the gepp order 2.0e-13 (`logs/r03_x60.json`, `logs/r03_x60_controls.jsonl`; R03.md): the REPRO value is a typical draw. 
 
 (D) *Intermediate states are not continuous in the data on non-unisolvent prefixes.* Running double and long-double Givens in lockstep (`exp_r02_dual.py`, `logs/r02_dual.jsonl`), the active (H_x, H_y) blocks differ by relative Frobenius 0.24–0.6 at every checkpoint before the end for the `given` order at n = 15, 20, 30, 40 while the *final* matrices agree to 7.9e-15, 9.9e-15, 2.3e-14, 4.1e-14 (same as the error against the reference). For unisolvent orders the lockstep difference grows monotonically in the number i of inserted points with log–log slope 0.83–0.87 (gepp, n = 30, 40), 0.65–0.70 (gepp, n = 15, 20), and for random orders reaches 1e-12..1e-11 in mid-run (n = 40) before dropping to 1e-13 at i = M.
 
@@ -36,7 +36,7 @@ Overall status: MEASURED.
 | (C) scheme error vs prefix conditioning | MEASURED (moderate correlation) | `analyze_r01b.py`-style join in R03.md; confounded by n |
 | (D) lockstep instability | MEASURED | `logs/r02_dual.jsonl` |
 
-Candidate / claim disposition: the prefix mechanism *as formulated in plan L5-Q1* is not here; see PD-N?bivariate-lanczos-claude-501.
+Candidate / claim disposition: the prefix mechanism *as formulated in plan L5-Q1* is not here; see PD-N?bivariate-lanczos-claude-506.
 
 ## Depends on
 
