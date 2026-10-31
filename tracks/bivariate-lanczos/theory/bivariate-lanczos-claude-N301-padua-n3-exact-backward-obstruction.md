@@ -7,7 +7,7 @@ Split into: none.
 
 ## Statement
 
-Let P_3 be the ten Padua points of degree 3 ({(cos jπ/3, cos kπ/4) : 0 ≤ j ≤ 3, 0 ≤ k ≤ 4, j+k even}), μ = Σ w_i δ_{z_i} with any positive weights. There is an explicit polynomial p* ∈ Π_7 with rational coefficients (listed in `directions/L3/logs/exact_certificates.log`; even in y) such that p*(z_i) = 0, ∇p*(z_i) = 0 and Hess p*(z_i) ≻ 0 for all ten nodes, and p* ≥ 0 on K_{δ_0} with δ_0 = 30117029139000/77370908310949543 ≈ 3.89·10⁻⁴ (rigorous Taylor bound; numerically p* ≥ 0 up to radius ≈ 0.05). Consequently (PD-T?…-303(e)): for every ε > 0 and every functional E on Π_7 with ‖E‖ ≤ ε and E(p*) < 0 — for example E = −ε ev_ζ with ζ any point where p*(ζ) > 0, i.e. removing a mass ε at ζ — the consistent degree-3 section pair Φ(L_μ + E) (exact structural zero pattern, all interior commutativity conditions exact, last-block commutator O(ε)) is NOT the exact section pair of any positive measure supported in K_δ for any δ ≤ δ_0, and any positive measure on K_δ, δ ≤ δ_0, has functional distance ≥ |E(p*)|/‖p*‖_* from L_μ + E. Hence no δ(ε) → 0 exists for the exact form of L3-Q1 at Padua n = 3.
+Let P_3 be the ten Padua points of degree 3 ({(cos jπ/3, cos kπ/4) : 0 ≤ j ≤ 3, 0 ≤ k ≤ 4, j+k even}), μ = Σ w_i δ_{z_i} with any positive weights. There is an explicit polynomial p* ∈ Π_7 with rational coefficients (listed in `directions/L3/logs/exact_certificates.log`; even in y) such that p*(z_i) = 0, ∇p*(z_i) = 0 and Hess p*(z_i) ≻ 0 for all ten nodes, and p* ≥ 0 on K_{δ_0} with δ_0 = 30117029139000/77370908310949543 ≈ 3.89·10⁻⁴ (rigorous Taylor bound; numerically p* ≥ 0 up to radius ≈ 0.05). Consequently (PD-T?…-303(e)): for every ε ∈ (0, ε_1] (ε_1 > 0 such that M_3(L_μ + E) ≻ 0 for ‖E‖ ≤ ε_1) and every functional E on Π_7 with ‖E‖ ≤ ε and E(p*) < 0 — for example E = −ε ev_ζ with ζ any point where p*(ζ) > 0, i.e. removing a mass ε at ζ — the consistent degree-3 section pair Φ(L_μ + E) (exact structural zero pattern, all interior commutativity conditions exact, last-block commutator O(ε)) is NOT the exact section pair of any positive measure supported in K_δ for any δ ≤ δ_0, and any positive measure on K_δ, δ ≤ δ_0, has functional distance ≥ |E(p*)|/‖p*‖_* from L_μ + E. Hence no δ(ε) → 0 exists for the exact form of L3-Q1 at Padua n = 3.
 
 ## Negative-result scope (PD-N only)
 
@@ -16,14 +16,14 @@ Parameter range: Padua points n = 3, any positive weights, perturbative regime, 
 
 ## Status by part
 
-Overall status: CONDITIONAL.
+Overall status: PROVED.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
 | reduction: existence of such p* ⇒ obstruction | PROVED | PD-T?…-303(e), PD-T?…-302, PD-T?…-301 |
-| p* ∈ S_1 with all Hessians PD (exact, Q(√2)) and the explicit δ_0 bound | CONDITIONAL | developer's exact checker passes; obligation: independent rerun (workflow rule for computer-assisted proofs) |
+| p* ∈ S_1 with all Hessians PD (exact, Q(√2)) and the explicit δ_0 bound | PROVED | developer's exact checker; independent exact rerun by L3-reconstruction-01 (`indep_exact_check.py`: p*(z_i) = 0, ∇p*(z_i) = 0, Hess p*(z_i) ≻ 0 exactly, min λ_min ≥ 0.112782; developer δ_0 confirmed; rigorous rational interval arithmetic shows p* > 0 on punctured discs of radius 0.04 — a reviewer computation, cited as such) and a second, independently derived certificate (reviewer, radius 0.02) |
 
-Candidate / claim disposition: the mechanism (exact Greenbaum-type commuting model with δ → 0, square case) is REJECTED: refuted for Padua n = 3 (pending the rerun obligation above).
+Candidate / claim disposition: the mechanism (exact Greenbaum-type commuting model with δ → 0, square case) is REJECTED: refuted for Padua n = 3.
 Rejection reason: refuted (within the stated scope).
 
 ## Depends on
@@ -49,8 +49,9 @@ As in the negative-result scope.
 
 ## Open items
 
-Independent rerun; exact certificates for n ≥ 4 (fields Q(√2, √5), …); structural explanation of p* (why (H) fails from n = 3 on for Padua).
+Exact certificates for n ≥ 4 (now: PD-T?…-313 / PD-N?…-303 for all n ≥ 4, and the reconstruction's exact n = 4 certificate); structural explanation of p* (why (H) fails from n = 3 on for Padua).
 
 ## History
 
 2026-10-31, Claude Opus 5.5 (xhigh, requested), L3 developer, base 2d8c3ab: created in round R01.
+- 2026-10-31T23:54:00+01:00, L3 developer: findings L1 (quantifier ε ≤ ε_1) and L2 (reviewer's rigorous radius 0.04 cited; the developer's δ_0 ≈ 3.89e-4 remains the developer-certified value) of L3-reconstruction-01 (topics/bivariate-lanczos-20261031/reviews/L3-reconstruction-01.md, audited head 0b7b396); CONDITIONAL → PROVED citing that review's independent exact rerun.

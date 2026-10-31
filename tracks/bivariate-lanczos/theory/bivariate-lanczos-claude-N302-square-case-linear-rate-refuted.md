@@ -7,12 +7,12 @@ Split into: none.
 
 ## Statement
 
-For every n ≥ 1, every Π_n-unisolvent node set with M = N_n points and every positive weights, there are C > 0 and, for every small ε > 0, a consistent ε-perturbation Ĥ = Φ(L_μ + E) of the degree-n sections such that every positive measure whose exact degree-n sections equal Ĥ has an atom at distance ≥ (ε/C)^{1/2} from the nodes. In particular no construction with δ = O(ε) works in the square case (Padua or not).
+For every n ≥ 1, every Π_n-unisolvent node set with M = N_n points and every positive weights, there are C > 0 and, for every small ε > 0, a consistent ε-perturbation Ĥ = Φ(L_μ + E) of the degree-n sections such that every positive measure whose exact degree-n sections equal Ĥ has a support point at distance ≥ (ε/C)^{1/2} from the nodes. In particular no construction with δ = O(ε) works in the square case (Padua or not).
 
 ## Negative-result scope (PD-N only)
 
 Attempted mechanism: the second branch of the frozen L3-Q1 kill test ("a construction that always works with δ = O(ε)") in the square case; IDEA?bivariate-lanczos-claude-306.
-Parameter range: square case M = N_n, n ≥ 1, perturbative regime, exact representation (or residual ≤ θε, θ < 1). The overdetermined case is not affected (there δ = 0, PD-T?…-303(a)).
+Parameter range: square case M = N_n, n ≥ 1, perturbative regime, exact representation (or residual ≤ θε, θ < 1, with the residual defined with fixed scale c = 1 as in PD-T?…-302). The overdetermined case is not affected (there δ = 0, PD-T?…-303(a)).
 
 ## Status by part
 
@@ -52,3 +52,4 @@ None for this statement.
 ## History
 
 2026-10-31, Claude Opus 5.5 (xhigh, requested), L3 developer, base 2d8c3ab: created in round R01.
+- 2026-10-31T23:54:00+01:00, L3 developer: "atom" → "support point" and the residual convention c = 1 (finding M2) per L3-reconstruction-01 (topics/bivariate-lanczos-20261031/reviews/L3-reconstruction-01.md, audited head 0b7b396).

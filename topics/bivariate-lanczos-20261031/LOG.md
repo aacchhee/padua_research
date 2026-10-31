@@ -119,6 +119,12 @@ Subagent effort is set from the agent definition and is not independently expose
 
 - `C:\Users\andreyac\Downloads\padua\RESULTS.md` is written concurrently by other sessions. Twice an earlier version reappeared after a write (other sessions' audit entries vanished once; this campaign's L3 line once). The orchestrator always re-stages, merges as a line superset and writes with an mtime guard; latest write is a superset (25.7 KB) containing other sessions' entries and this campaign's entries (input reproduction, L1 R01–R07, L3 R01–R03 + reconstruction, L5 R01–R03). Reported to AC.
 
+### L5 reconstruction 01 returned (2026-10-31)
+
+- Separate Claude Opus 5.5 high (requested) agent; audited head `dd919d2` (no audited file changed through `3d6c0da`); report [reviews/L5-reconstruction-01.md](reviews/L5-reconstruction-01.md); independent C Givens implementation in code/review_L5/.
+- Verdicts: PD-T?…-501 CONFIRMED WITH CORRECTIONS (M1: the bound is also met by Q̃ = I, so it is not an IEP backward-stability statement; 'largest' has the same backward residual and first column as 'scheme', its zero-pattern defect equals its forward error); -505 CONFIRMED; -502 slopes CONFIRMED WITH CORRECTIONS (own rerun to M = 1035: Givens 1.18, HL 0.71, CGS2 0.48; M2 CIs too narrow, fit curved; upper-range slopes unsupported); M3 the frozen kill test fires as written on the uniform-random family and excluding it is post-hoc (headline must say so; normalising by Householder error keeps the separation +0.76 vs +0.16); prefix kill CONFIRMED (new GEPP orders: 'largest' 0.9–2.1e-9 at ratio 7.6e3–1.8e4 with certified prefix σ_min ≥ 4e-6), M4 seed-size failures (≥ 1e-6) only on (near-)singular prefixes; REPRO n = 60 reproduced exactly; M5 PD-N 506 scope should read n ≤ 10. Low: p. 395 suggestion is the kappa-pivot rule, not 'largest'; IDEA 502 "refuted" not "failed"; 504(c) deferral rules lack a PD-N; ID crosswalk unclear; pre-registration self-attested.
+- Action: L5 developer resumed to answer in directions/L5/response-recon-01.md and apply fixes with History lines.
+
 ## Runs needed
 
 (none yet; directions add exact commands)

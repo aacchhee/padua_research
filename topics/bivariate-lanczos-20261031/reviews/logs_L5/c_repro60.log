@@ -1,0 +1,6 @@
+{"meta": true, "mode": "repro60", "argv": ["exp_review.py", "repro60", "/home/claude/padua_research/topics/bivariate-lanczos-20261031/reviews/logs_L5/c_repro60.jsonl"], "start": "2026-10-31T22:52:10Z", "numpy": "2.5.3", "python": "3.13.18", "blas": "1", "sha_exp": "ccac2697dbc1675b", "sha_lib": "01139ca2e7ceec3f", "sha_c": "fe12b714c7f06d48"}
+{"mode": "repro60", "n": 60, "M": 1891, "order": "repro_rng2", "reference": "householder(double)", "scheme": "1.97e-12", "rot_scheme": [1786995.0, 0.0, 0.0], "largest": "2.09e-04", "rot_largest": [1786995.0, 0.0, 841712.0], "t_givens": "7.86e+01", "hl": "1.10e-14", "lu": "ok", "min_lo": "1.20e-14", "K_min_lo": 1891, "min_up": "3.17e-05", "K_min_up": 174, "n_up_lt_1e11": 0, "growth": "1.36e+09", "lu_resid": "2.04e-08", "svd_K_checked": 340, "svd_min": "9.67e-10", "svd_K_at_min": 114, "svd_n_lt_1e11": 0, "svd_min_Kle300": "9.67e-10", "t_svd": "2.59e+01", "svd_at_30_smallest_ukk": [9.667237346731645e-10, 3.870308377607276e-09, 2.6639227721581747e-08, 3.495585108751568e-08, 8.620559707105356e-08]}
+
+real	2m9.649s
+user	2m4.465s
+sys	0m0.414s

@@ -1,6 +1,6 @@
 # L3 candidates (IDEA template records)
 
-Direction L3, topic bivariate-lanczos-20261031. Developer Claude Opus 5.5 (xhigh, requested). Base 2d8c3ab8348be80a6f16f69ee7ef9c7bb66ed42e (rules d36722823441dc40c6e19d69a174459348dd309c). Provisional IDs `IDEA?bivariate-lanczos-claude-3nn`; final IDs at PR preparation. Kill criteria were written in R01 §2 before the corresponding test was run. No novelty claims (see R01 §1 for the gate and its limits).
+Direction L3, topic bivariate-lanczos-20261031. Developer Claude Opus 5.5 (xhigh, requested). Base 2d8c3ab8348be80a6f16f69ee7ef9c7bb66ed42e (rules d36722823441dc40c6e19d69a174459348dd309c). Provisional IDs `IDEA?bivariate-lanczos-claude-3nn`; final IDs at PR preparation. Kill criteria of R01–R03 were recorded together with or after the deciding runs and are NOT evidenced as pre-registered (finding M3 of L3-reconstruction-01); from R04 on they were written to file before the runs (see R04–R06). No novelty claims (see R01 §1 for the gate and its limits).
 
 ---
 
@@ -57,7 +57,7 @@ Aliases: minimal matrix convex set; Naimark dilation; compression of a commuting
 - Cheapest decisive test: dual-cone argument at the square point.
 - Kill criterion written before testing: if the square point is on the boundary of the matrix cone for small δ, the route would give an obstruction of its own.
 - Actual test results: square point is interior for every δ > 0 (PD-T?…-308, PROVED) — so the route answers a weaker question and cannot detect the obstruction.
-- Disposition: REJECTED for L3-Q1.
+- Disposition: REJECTED for L3-Q1. PD-N?bivariate-lanczos-claude-304 (compression ⇏ section; PROVED) added per finding L10.
 - Disposition reason: failed — the mechanism (compression model) does not achieve the aim (exact sections) under the stated hypotheses; scope: square case, perturbative regime. Positive side result kept as PD-T?…-308. No PD-N (the negative content is the logical gap "compression ⇏ section", recorded here and in 308's Scope).
 - Topic / audit / history: R01.
 
@@ -122,14 +122,14 @@ Aliases: p_C = Σ c_jk q_j q_k, C ⊥ Hankel; Hankel test Σ G_iA_iG_iᵀ ∈ Ha
 
 - Kill criterion (before testing, K6): reject if λ_min(G_iᵀC1G_i) < 0 at some node for some n ∈ [3, 12].
 - Result: fired — min λ = −0.199 (n = 3) … −1.4e-5 (n = 12), negative for every n = 2..12 (log `r02_closed_form_C.log`).
-- Disposition: REJECTED; reason: failed (this explicit C does not certify PD Hessians; scope n = 2..12, Padua). No PD-N (single explicit trial; the deficit → 0 suggests a corrected C may work — R02 next question).
+- Disposition: REJECTED; reason: failed (this explicit C does not certify PD Hessians; scope n = 2..12, Padua). PD-N?bivariate-lanczos-claude-305 (MEASURED) added per finding L10 (the earlier note "No PD-N" is superseded) (single explicit trial; the deficit → 0 suggests a corrected C may work — R02 next question).
 
 ## IDEA?bivariate-lanczos-claude-311 — "(H) is decided by the square count / checkerboard structure alone" (R03 control)
 
 - Hypothesis tested: all ordered square checkerboards behave like Padua (transition at n = 3).
 - Kill criterion (before testing): an ordered checkerboard family with (H) at some n ≥ 3 (t_D > 1e-6) kills it.
 - Result: fired — equispaced checkerboards satisfy (H) for n = 3, 4, 5 (t_D = 1.8e-3, 1.3e-4, 4.8e-6); graded for n = 3, 4 (PD-T?…-307 item 6, MEASURED).
-- Disposition: REJECTED; reason: refuted within the measured scope (numerical, MEASURED evidence only; no PD-N because the refuted statement was a working hypothesis, recorded here). Consequence: the Padua obstruction is a property of the Chebyshev–Lobatto distribution, not of the square count; δ(ε) in the square case is node-set dependent (√ε vs obstruction).
+- Disposition: REJECTED; reason: refuted within the measured scope (PD-N?bivariate-lanczos-claude-306, MEASURED, added per finding L10; superseded note: no PD-N because the refuted statement was a working hypothesis, recorded here). Consequence: the Padua obstruction is a property of the Chebyshev–Lobatto distribution, not of the square count; δ(ε) in the square case is node-set dependent (√ε vs obstruction).
 
 ## Proposed obstruction rows for state/IDEAS.md (orchestrator to merge at PR preparation)
 
@@ -163,3 +163,7 @@ Aliases: κ(t) = −(1−c) − ct; P_n = 9(g_1² − ½g_0g_2) + (g_2² − g_1
 
 - R03 §3 / lit_reading.md: the claim "Greenbaum's 1D proven width is √ε" and the parallel with the square-case √ε rate are withdrawn: sources conflict (Šimonová–Tichý §1: √ε‖A‖ in the proof; T. Chen arXiv 2608.21268 §4: ε^{1/4}, Greenbaum 1989 eq. (7.10); Meurant–Strakoš 2006 Thm 4.9), as reported by the prior-art check. Greenbaum 1989 remains pending-reference.
 - Closest predecessors to be added to the IDEA records at PR preparation: IDEA 301/302 and theory 302/303 ← Tchakaloff/Richter; Di Dio–Schmüdgen Prop. 27, Thm 40, Lemma 37(ii), Prop. 43; Blekherman JAMS 2012 Lemma 3.1. IDEA 304 / theory 301 ← Degani–Schiff–Tannor Thms 9–11 and §5.3; Xu Trans. AMS 342 (1994) Thm 4.2 (unread, possibly relevant: Delgado–Geronimo–Iliev–Marcellán SIMAX 28 (2006); Cichoń–Stochel–Szafraniec JAT 134 (2005)). IDEA 303 / theory 308 ← Passer–Shalit–Solel; Davidson–Dor-On–Shalit–Solel Prop. 4.3. (All as reported by the prior-art check; not read by the L3 developer.)
+
+## Corrections (2026-10-31T23:55:46+01:00; response to L3-reconstruction-01)
+
+- M3 header correction; L10 PD-N files N304–N306 created; closest predecessors per the prior-art check listed in the R05 pending-corrections block above (to be merged into each IDEA record at PR preparation).

@@ -10,7 +10,7 @@ Split into: none.
 Square case M = N_n, Π_n-unisolvent nodes. Let I_{n+1} := {q ∈ Π_{n+1} : q(z_i) = 0 ∀ i} (dimension n+2) and let q_0, …, q_{n+1} be its basis whose top-degree forms are x^j y^{n+1−j} (exists and is unique). For a real symmetric (n+2) × (n+2) matrix C write C ⊥ Hankel if Σ_{j+k=m} c_jk = 0 for m = 0, …, 2n+2, and set p_C := Σ_{j,k} c_jk q_j q_k.
 
 (a) If C ⊥ Hankel then p_C ∈ S_1 (degree ≤ 2n+1, value and gradient zero at every node) and Hess p_C(z_i) = 2 G_iᵀ C G_i, G_i := [∇q_0(z_i); …; ∇q_{n+1}(z_i)] ∈ ℝ^{(n+2)×2}. The space of such C has dimension n(n+1)/2 (= the lower bound for dim S_1).
-(b) Consequently: if some C ⊥ Hankel has G_iᵀ C G_i ≻ 0 for every node, the obstruction of PD-T?…-303(e) holds (no δ(ε) → 0). If moreover C ↦ p_C is injective on {C ⊥ Hankel} and dim S_1 = n(n+1)/2, then S_1 = {p_C} and (H) ⟺ there are A_i ≻ 0 with Σ_i G_i A_i G_iᵀ a Hankel matrix (and the Hessian map is injective).
+(b) Consequently: if some C ⊥ Hankel has G_iᵀ C G_i ≻ 0 for every node, the obstruction of PD-T?…-303(e) holds (no δ(ε) → 0). If moreover C ↦ p_C is injective on {C ⊥ Hankel} and dim S_1 = n(n+1)/2, then S_1 = {p_C} and: (H) ⟺ [the Hessian map is injective on S_1 AND there are A_i ≻ 0 with Σ_i G_i A_i G_iᵀ a Hankel matrix].
 (c) [Padua generators.] For the Padua points {(cos jπ/n, cos kπ/(n+1)) : j+k even}, the n+2 polynomials g_m := T_{n−m}(x)T_m(y) − T_m(x)T_{n+1−m}(y) (m = 0..n) and ω := (x²−1)U_{n−1}(x) vanish at every node; top(g_m) = −λ_m x^m y^{n+1−m} with λ_m > 0 and top(ω) = 2^{n−1} x^{n+1}, so (given Padua unisolvence for Π_n) they form a basis of I_{n+1} and q_m = −g_m/λ_m, q_{n+1} = ω/2^{n−1}. At interior nodes (|x|, |y| < 1), with s := T_n(x) = (−1)^j: ∇g_m = s(−n U_{m−1}(x) T_m(y), (n+1) T_m(x) U_{m−1}(y)) (U_{−1} := 0, so ∇g_0 = 0) and ∇ω = (n s, 0).
 
 ## Definitions / Assumptions
@@ -19,7 +19,7 @@ Square case M = N_n, Π_n-unisolvent nodes. Let I_{n+1} := {q ∈ Π_{n+1} : q(z
 
 ## Status by part
 
-Overall status: PROVED (with the LITERATURE dependency in (c) stated).
+Overall status: PROVED under the stated assumption that the Padua points are Π_n-unisolvent (used only for the spanning claim in (c); verified exactly for n ≤ 4 by the reconstruction's `unisolvence_check.py`; not load-bearing for PD-N?…-301/303).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -57,3 +57,4 @@ Reduces the square-case obstruction test to a structured SDP in C (n(n+1)/2 unkn
 ## History
 
 2026-10-31, Claude Opus 5.5 (xhigh, requested), L3 developer, base 2d8c3ab: created in round R02.
+- 2026-10-31T23:54:00+01:00, L3 developer: findings L6 (injectivity as an explicit conjunct) and L7 (status wording: assumption, not LITERATURE dependency) of L3-reconstruction-01 (topics/bivariate-lanczos-20261031/reviews/L3-reconstruction-01.md, audited head 0b7b396).

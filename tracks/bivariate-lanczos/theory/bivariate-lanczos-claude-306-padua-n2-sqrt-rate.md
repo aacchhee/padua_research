@@ -15,13 +15,13 @@ As in PD-T?…-303; [EXACT]; [IDEALIZED: perturbations given as data].
 
 ## Status by part
 
-Overall status: CONDITIONAL.
+Overall status: PROVED.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
 | finite reduction: (H) ⟸ exact certificate (injectivity + PD A_i annihilating S_1) | PROVED | PD-T?…-303(f) |
-| the certificate exists and passes the exact checks | CONDITIONAL | verified by the developer's exact Q(√2)/rational checker; obligation: independent rerun of the checker (workflow rule for computer-assisted proofs) |
-| δ* ≍ √ε for Padua n = 2 | CONDITIONAL | on the row above |
+| the certificate exists and passes the exact checks | PROVED | developer's exact checker; independent exact rerun by L3-reconstruction-01 (`tracks/bivariate-lanczos/code/review_L3/indep_exact_check.py`, sympy QQ<√2> + own sign test, log `reviews/logs_L3/indep_exact_check.log`: S_1 recomputed, constraints exact, A_i ≻ 0, min λ_min(A_i) ≥ 0.015199) and byte-identical developer rerun |
+| δ* ≍ √ε for Padua n = 2 | PROVED | rows above + PD-T?…-303 |
 
 ## Depends on
 
@@ -46,8 +46,9 @@ Padua n = 2 only (any positive weights; (H) does not depend on the weights). MEA
 
 ## Open items
 
-Independent rerun. A hand proof for n = 2 (e.g. via structure of S_1 for six points) not attempted.
+A hand proof for n = 2 (e.g. via structure of S_1 for six points) not attempted.
 
 ## History
 
 2026-10-31, Claude Opus 5.5 (xhigh, requested), L3 developer, base 2d8c3ab: created in round R01.
+- 2026-10-31T23:54:00+01:00, L3 developer: CONDITIONAL → PROVED, citing the independent exact rerun of L3-reconstruction-01 (topics/bivariate-lanczos-20261031/reviews/L3-reconstruction-01.md, audited head 0b7b396) (all computer-assisted-proof obligations met; the L1 quantifier fix was applied in 303(e)/N301).

@@ -18,7 +18,7 @@ Fix n ≥ 1, N = N_n = dim Π_n = (n+1)(n+2)/2, and the graded order of plan.md 
 
 (c) Φ is a bijection from {L : L(1) = 1, M_n(L) ≻ 0} onto the set 𝒞_n of structured pairs satisfying the interior commutativity conditions; Φ is real-analytic and Φ^{-1} is polynomial in the matrix entries. Hence 𝒞_n is a real-analytic manifold of dimension dim Π_{2n+1} − 1 = (n+1)(2n+3) − 1, and Φ, Φ^{-1} are locally Lipschitz. Sections are invariant under L ↦ cL (c > 0).
 
-(d) [Computed entries.] The truncated recurrence (HL/BJ order: y-product only for the first vector of each degree) forms all structured entries of H_x and only the columns (k,0) of H_y. These computed entries determine L (hence all of H_y) when consistent; they exceed dim Π_{2n+1} − 1 by e_n = 1, 6, 17, 36, 65, 106, 161, 232, 321, 430 for n = 1..10 (count, see Checks), so in exact arithmetic they satisfy e_n polynomial consistency relations.
+(d) [Computed entries.] Convention: the degree-n data are taken to include the products of the degree-n vectors (half of the step to degree n+1), so that B_{n,x} and column (n,0) of H_y are formed. With that convention the truncated recurrence (HL/BJ order: y-product only for the first vector of each degree) forms all structured entries of H_x and only the columns (k,0) of H_y. (Under L1's convention, PD-T?…-101(4), a degree-n run forms only the F-columns of S_{n−1}; then the formed entries determine L only on Π_{2n} and the excess differs, e.g. e′_1 = 0, e′_2 = 2 per the reconstruction.) These computed entries determine L (hence all of H_y) when consistent; they exceed dim Π_{2n+1} − 1 by e_n = 1, 6, 17, 36, 65, 106, 161, 232, 321, 430 for n = 1..10 (count, see Checks), so in exact arithmetic they satisfy e_n polynomial consistency relations.
 
 ## Definitions
 
@@ -73,3 +73,4 @@ Floating-point consistency defect of the computed entries (the e_n relations) af
 ## History
 
 2026-10-31, Claude Opus 5.5 (xhigh, requested), L3 developer, base 2d8c3ab8348be80a6f16f69ee7ef9c7bb66ed42e: created in round R01.
+- 2026-10-31T23:54:00+01:00, L3 developer (Claude Opus 5.5, xhigh requested): finding L4 of L3-reconstruction-01 (topics/bivariate-lanczos-20261031/reviews/L3-reconstruction-01.md, audited head 0b7b396) — stated the formed-entries convention of (d) and its difference from L1's convention.

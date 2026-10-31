@@ -13,11 +13,11 @@ and condition
  (H): there is no nonzero p ∈ S_1 with Hess p(z_i) ⪰ 0 for every i.
 Let δ*(ε) := inf{δ : r(δ) ≥ ε} (all ε-perturbations exactly representable on K_δ for δ > δ*(ε); PD-T?…-302(b)). Constants c, C, ε_0, δ_0, δ_1 > 0 below depend only on (z, w, n, ‖·‖).
 
-(a) [Interior; overdetermined.] If S_0 = {0} (i.e. the nodes are Π_{2n+1}-unisolvent; requires M ≥ dim Π_{2n+1}), then r(0) ≥ w_min · σ_1 > 0, σ_1 := min_{‖p‖_*=1} Σ_i |p(z_i)|. So δ*(ε) = 0 for ε < r(0): every perturbation is represented on the ORIGINAL nodes with positive weights w′, and ‖w′ − w‖ = O(ε).
+(a) [Interior; overdetermined.] If S_0 = {0} (i.e. the nodes are Π_{2n+1}-determining: no nonzero polynomial of degree ≤ 2n+1 vanishes on them; requires M ≥ dim Π_{2n+1}), then r(0) ≥ w_min · σ_1 > 0, σ_1 := min_{‖p‖_*=1} Σ_i |p(z_i)|. So δ*(ε) = 0 for ε < r(0): every perturbation is represented on the ORIGINAL nodes with positive weights w′, and ‖w′ − w‖ = O(ε).
 (b) [Linear rate.] If S_0 ≠ {0} and S_1 = {0}: c δ ≤ r(δ) ≤ C δ for 0 ≤ δ ≤ δ_1; hence δ*(ε) ≍ ε.
 (c) [√ε is necessary whenever S_1 ≠ {0}.] r(δ) ≤ C δ² for δ ≤ δ_1; hence δ*(ε) ≥ (ε/C)^{1/2}. Moreover for every positive μ′ on K_δ and every p ∈ S_1: |L_{μ′}(p)| ≤ C_p μ′(K_δ) δ².
 (d) [√ε is sufficient under (H).] If S_1 ≠ {0} and (H) holds: c δ² ≤ r(δ) ≤ C δ² for δ ≤ δ_1; hence δ*(ε) ≍ √ε.
-(e) [Obstruction.] If some p* ∈ S_1 has Hess p*(z_i) ≻ 0 for every i, then there is δ_0 > 0 with p* ≥ 0 on K_{δ_0}, so r(δ) = 0 for 0 ≤ δ ≤ δ_0. For every ε > 0 and every E with ‖E‖ ≤ ε and E(p*) < 0 (e.g. E = −ε ev_ζ/‖ev_ζ‖ for any ζ with p*(ζ) > 0), the consistent sections Φ(L_μ + E) are not the exact sections of any positive measure on K_δ for any δ ≤ δ_0, and dist(L_μ + E, C(K_δ)) ≥ |E(p*)|/‖p*‖_*. In particular δ*(ε) ≥ δ_0 for every ε > 0 (no δ(ε) → 0 exists).
+(e) [Obstruction.] If some p* ∈ S_1 has Hess p*(z_i) ≻ 0 for every i, then there is δ_0 > 0 with p* ≥ 0 on K_{δ_0}, so r(δ) = 0 for 0 ≤ δ ≤ δ_0. Let ε_1 > 0 be such that M_n(L_μ + E) ≻ 0 whenever ‖E‖ ≤ ε_1 (so Φ(L_μ + E) is defined). For every ε ∈ (0, ε_1] and every E with ‖E‖ ≤ ε and E(p*) < 0 (e.g. E = −ε ev_ζ/‖ev_ζ‖ for any ζ with p*(ζ) > 0), the consistent sections Φ(L_μ + E) are not the exact sections of any positive measure on K_δ for any δ ≤ δ_0, and dist(L_μ + E, C(K_δ)) ≥ |E(p*)|/‖p*‖_*. In particular δ*(ε) ≥ δ_0 for every ε ∈ (0, ε_1] (no δ(ε) → 0 exists).
 (f) [Dual form of (H).] (H) holds iff the Hessian map p ↦ (Hess p(z_i))_i is injective on S_1 and there exist positive definite 2×2 matrices A_1..A_M with Σ_i ⟨A_i, Hess p(z_i)⟩ = 0 for all p ∈ S_1.
 
 ## Definitions
@@ -72,8 +72,9 @@ General finite node sets in ℝ² with positive weights, degree-n sections (func
 
 ## Open items
 
-(1) Degenerate subcase (PSD-singular Hessians). (2) Explicit constants (c, C, δ_0) in terms of computable quantities (κ, c_J, w_min) — only existence here. (3) Generic intermediate M: whether S_1 = {0} for generic nodes when 3M ≥ dim Π_{2n+1} — expected from the Alexander–Hirschowitz theorem on double points (recalled, NOT read; UNVERIFIED; not used).
+(1) Degenerate subcase (PSD-singular Hessians). (2) Explicit constants (c, C, δ_0) in terms of computable quantities (κ, c_J, w_min) — only existence here: the frozen request for an "explicit δ(ε)" is met as an explicit RATE (0, ε, √ε, or no δ → 0), not with explicit constants. (3) Generic intermediate M: whether S_1 = {0} for generic nodes when 3M ≥ dim Π_{2n+1} — expected from the Alexander–Hirschowitz theorem on double points (recalled, NOT read; UNVERIFIED; not used).
 
 ## History
 
 2026-10-31, Claude Opus 5.5 (xhigh, requested), L3 developer, base 2d8c3ab: created in round R01. The orchestrator's suggestion "count 3N zero/gradient conditions vs dim Π_{2n}" is refined: the relevant space is Π_{2n+1} (positivity is only local on K_δ, so odd degree is allowed) and the decisive object in the boundary case is the Hessian cone condition (H), not the count alone.
+- 2026-10-31T23:54:00+01:00, L3 developer: findings L1 (quantifier ε ≤ ε_1 so that M_n(L_μ + E) ≻ 0), L11 ("determining" instead of "unisolvent") and L12 (explicit rate, constants by compactness) of L3-reconstruction-01 (topics/bivariate-lanczos-20261031/reviews/L3-reconstruction-01.md, audited head 0b7b396).

@@ -29,7 +29,8 @@ Overall status: PROVED.
 |---|---|---|
 | (a) ‖κ‖ ≤ Cδ², hence δ ≥ c√‖κ‖ | PROVED | barycentre argument below |
 | (b) commuting data ⇒ N_n-point μ′, δ ≤ ‖ΔH‖ | PROVED | normal-matrix eigenvalue inclusion below |
-| (c) first-order identification | PROVED (routine) | — |
+| (c) d(κ∘Φ) vanishes on T (factors through V*/T) | PROVED (routine) | — |
+| (c) the induced map V*/T → Skew_{n+1} is an isomorphism ("κ is, to first order, the S_1*-component") | MEASURED | reconstruction `indep_measured.py dkappa`: rank n(n+1)/2 for Padua n = 2, 3; not proved |
 
 ## Depends on
 
@@ -45,7 +46,7 @@ Textbook (Bauer–Fike for normal matrices).
 
 ## Proof or evidence
 
-(a) Let μ′ = Σ_j w′_j δ_{ξ_j}, ξ_j = z_{i(j)} + h_j, |h_j| ≤ δ (balls disjoint for δ ≤ δ_1). Barycentre surrogate: W_i := Σ_{j: i(j)=i} w′_j, b_i := Σ_{i(j)=i} w′_j h_j / W_i, μ̃ := Σ_i W_i δ_{z_i + b_i}. Taylor expansion of ev_{ξ_j} about z_i + b_i: the first-order terms cancel by the barycentre identity, so ‖L_{μ′} − L_{μ̃}‖ ≤ C_2′ μ′(K_δ) δ². μ̃ has N_n distinct atoms near the nodes (Π_n-unisolvent for δ small), so its Q is square orthogonal and κ(Φ(μ̃)) = 0. The map L ↦ κ(Φ(L)) is analytic on {M_n(L) ≻ 0} (PD-T?…-301(c)) hence Lipschitz near L_μ (normalising L(1) = 1): ‖κ(Φ(μ′))‖ ≤ Lip · ‖L_{μ′} − L_{μ̃}‖/μ′(K_δ) ≤ C δ². The consequence follows since κ is a function of the section pair.
+(a) Let μ′ = Σ_j w′_j δ_{ξ_j}, ξ_j = z_{i(j)} + h_j, |h_j| ≤ δ (balls disjoint for δ ≤ δ_1). Barycentre surrogate: W_i := Σ_{j: i(j)=i} w′_j, b_i := Σ_{i(j)=i} w′_j h_j / W_i, μ̃ := Σ_i W_i δ_{z_i + b_i}. Taylor expansion of ev_{ξ_j} about z_i + b_i: the first-order terms cancel by the barycentre identity, so ‖L_{μ′} − L_{μ̃}‖ ≤ C_2′ μ′(K_δ) δ². The cluster masses are positive: Φ(μ′) close to H gives L_{μ′} close to L_μ (normalised; Φ^{-1} is Lipschitz near Φ(μ), PD-T?…-301(c)), and pairing with ℓ_i² (ℓ_i the Π_n Lagrange basis at the nodes) gives W_i = L_{μ′}(ℓ_i²) + O(δ) = w_i + O(δ + ‖Φ(μ′) − H‖) > 0 for δ and ‖Φ(μ′) − H‖ small. Hence μ̃ has N_n distinct atoms with positive masses near the nodes (Π_n-unisolvent for δ small), so its Q is square orthogonal and κ(Φ(μ̃)) = 0. The map L ↦ κ(Φ(L)) is analytic on {M_n(L) ≻ 0} (PD-T?…-301(c)) hence Lipschitz near L_μ (normalising L(1) = 1): ‖κ(Φ(μ′))‖ ≤ Lip · ‖L_{μ′} − L_{μ̃}‖/μ′(K_δ) ≤ C δ². The consequence follows since κ is a function of the section pair.
 (b) Commuting real symmetric Ĥ_x, Ĥ_y have a common orthonormal eigenbasis v_j with Ĥ_x v_j = x̂_j v_j, Ĥ_y v_j = ŷ_j v_j; N̂ := Ĥ_x + iĤ_y is normal with eigenvalues ẑ_j = x̂_j + iŷ_j, and N := H_x + iH_y is normal with eigenvalues z_i; N̂ − N = ΔH_x + iΔH_y, so each ẑ_j is within ‖ΔH_x + iΔH_y‖_2 of some z_i. With π as in PD-T?…-301(b), π(Π_n) = R^N, i.e. e_0 is cyclic for the pair, so the ẑ_j are distinct and all weights (v_jᵀe_0)² > 0. In the eigenbasis, Ĥ_x, Ĥ_y become diag(x̂), diag(ŷ) and e_0 becomes (v_jᵀe_0)_j; the graded Gram–Schmidt basis generated from e_0 by (Ĥ_x, Ĥ_y) is e_0, …, e_{N−1} (triangularity of π), so the degree-n sections of μ′ are Ĥ itself.
 (c) Nodes and weights are local coordinates of the N_n-point measures near μ, all of which have κ = 0; dimension count dim Π_{2n+1} − 3N_n = n(n+1)/2.
 
@@ -60,3 +61,4 @@ Explicit C in (a); behaviour of κ̂ for floating-point Padua runs with the H_y 
 ## History
 
 2026-10-31, Claude Opus 5.5 (xhigh, requested), L3 developer, base 2d8c3ab: created in round R01.
+- 2026-10-31T23:54:00+01:00, L3 developer: finding 304(a) (added the positive-cluster-mass step) and L3 (isomorphism part of (c) relabelled MEASURED; overall file status PROVED refers to (a), (b) and the factorisation part of (c)) of L3-reconstruction-01 (topics/bivariate-lanczos-20261031/reviews/L3-reconstruction-01.md, audited head 0b7b396).
