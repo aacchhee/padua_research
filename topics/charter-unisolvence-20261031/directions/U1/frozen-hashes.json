@@ -1,0 +1,51 @@
+{
+  "rules_base": "d36722823441dc40c6e19d69a174459348dd309c",
+  "status": "FROZEN producer files; root Git pinning and independent audit pending",
+  "files": [
+    {
+      "path": "theory/unisolvence/u1/all-characteristic-criterion.md",
+      "bytes": 6548,
+      "sha256": "f02b5004a90ded8a7fa425c35ae701aaa30f286d5ebc3494f3afa6763f79655d"
+    },
+    {
+      "path": "theory/unisolvence/u1/char2-refutation.md",
+      "bytes": 4668,
+      "sha256": "7214f3b070e73f1870ed831fde41b941a61b757724c800e64a9cbe744f8ce3ee"
+    },
+    {
+      "path": "theory/unisolvence/u1/kernel-cubature-corollary.md",
+      "bytes": 3635,
+      "sha256": "c486a2f07292bb5feff058b56123dbf46010aea09c61f0256f739489093d7a31"
+    },
+    {
+      "path": "theory/unisolvence/u1/odd-characteristic-criterion.md",
+      "bytes": 5564,
+      "sha256": "dbbf0eac543887725a695723a3159cb6150bcea3b7ad63c2702dc685d4adb972"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/directions/U1/candidates.md",
+      "bytes": 5926,
+      "sha256": "42342903d8ff25ff1b9ecab33d6df7c0f8b266a0ecba11f508546da7d4e0e747"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/directions/U1/evidence.md",
+      "bytes": 5846,
+      "sha256": "05ce2e5f9385486a3ab17cb1a38ce903371e1bdfbd66d3971dd4afae9b530a80"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/directions/U1/exact_checker.py",
+      "bytes": 11810,
+      "sha256": "4216b9944c45345709ba11ffbb59b70799432329b646c0c44446da9be2cff56b"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/directions/U1/plan.md",
+      "bytes": 4702,
+      "sha256": "6b8b113b4603f7e3d3805861461f501b35c9b0b83ccbed99b4b049ac5b40eef6"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/directions/U1/symbolic-factors.md",
+      "bytes": 5310,
+      "sha256": "525e46dc54f02f0f3507e8af579d0bc2f298b4361e4d734dc98248faf092bd92"
+    }
+  ]
+}

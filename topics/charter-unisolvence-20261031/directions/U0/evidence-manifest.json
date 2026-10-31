@@ -1,0 +1,251 @@
+{
+  "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+  "rules_base_commit": "d36722823441dc40c6e19d69a174459348dd309c",
+  "artifacts": [
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/child-replay/discriminant_real.log",
+      "bytes": 1020,
+      "sha256": "e59218825f81892a34ca5110a6c4f0d8b957d5bbc35f4147559c467dfb2c8021",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "python3 -I /workspace/padua_research/topics/charter-unisolvence-20261031/directions/U0/replay_source.py /workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy /workspace/padua-cold/charter-unisolvence-20261031/U0/child-replay"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/child-replay/execution.json",
+      "bytes": 3489,
+      "sha256": "3aa1f9f3302059f538a600dae761fcaac2b6a7ac58b6d780a19fd21fa75fce2a",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "python3 -I /workspace/padua_research/topics/charter-unisolvence-20261031/directions/U0/replay_source.py /workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy /workspace/padua-cold/charter-unisolvence-20261031/U0/child-replay"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/child-replay/fast_transform.log",
+      "bytes": 2506,
+      "sha256": "64b131cdbee7145b26a3027414eae818f240d24b0e8dff1ed1959ae3f4585377",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "python3 -I /workspace/padua_research/topics/charter-unisolvence-20261031/directions/U0/replay_source.py /workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy /workspace/padua-cold/charter-unisolvence-20261031/U0/child-replay"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/child-replay/hs_ff.log",
+      "bytes": 2469,
+      "sha256": "0e07fc5ff08952688a93bb24005dfffe792b289e20343752b0958e17992de2dc",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "python3 -I /workspace/padua_research/topics/charter-unisolvence-20261031/directions/U0/replay_source.py /workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy /workspace/padua-cold/charter-unisolvence-20261031/U0/child-replay"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/child-replay/padua_codes.log",
+      "bytes": 1421,
+      "sha256": "a8b2da53888c893c8a2e0aef43b2d49d5f54c1baf7a028d3a513a85e7b41a744",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "python3 -I /workspace/padua_research/topics/charter-unisolvence-20261031/directions/U0/replay_source.py /workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy /workspace/padua-cold/charter-unisolvence-20261031/U0/child-replay"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/child-replay/padua_ff.log",
+      "bytes": 12539,
+      "sha256": "edd514e29c1691ba3142dcd2209a158f596ac3a7e25cea5fdf99522aa080b563",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "python3 -I /workspace/padua_research/topics/charter-unisolvence-20261031/directions/U0/replay_source.py /workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy /workspace/padua-cold/charter-unisolvence-20261031/U0/child-replay"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/child-replay/quadratic_padua.log",
+      "bytes": 1606,
+      "sha256": "3dbc20f0e415cf12ca88dad998796affb4644cdafc078009836dabdba0562ce4",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "python3 -I /workspace/padua_research/topics/charter-unisolvence-20261031/directions/U0/replay_source.py /workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy /workspace/padua-cold/charter-unisolvence-20261031/U0/child-replay"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/child-replay.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "python3 -I /workspace/padua_research/topics/charter-unisolvence-20261031/directions/U0/replay_source.py /workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy /workspace/padua-cold/charter-unisolvence-20261031/U0/child-replay"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/child-replay.stdout",
+      "bytes": 214,
+      "sha256": "b2964bb38b985abcf1344a81019f7ee8d79ce7efcdf21b4e0be67613f52d27f7",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "python3 -I /workspace/padua_research/topics/charter-unisolvence-20261031/directions/U0/replay_source.py /workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy /workspace/padua-cold/charter-unisolvence-20261031/U0/child-replay"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/environment.json",
+      "bytes": 610,
+      "sha256": "da794059c960dcd1dcd7a25621a9f58f2570eedce740735fde6f590bbf899417",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "round1 provenance capture and source-copy/run_all.py subprocess execution (see run_all.execution.json)"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/run_all.execution.json",
+      "bytes": 290,
+      "sha256": "1b683e0f46787d9d3308aaf8e66b420b5081194b4567776f5cbd2ea5762d49e8",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "round1 provenance capture and source-copy/run_all.py subprocess execution (see run_all.execution.json)"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/run_all.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "round1 provenance capture and source-copy/run_all.py subprocess execution (see run_all.execution.json)"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/run_all.stdout",
+      "bytes": 2369,
+      "sha256": "422f75e8712a6a455e902dc0501dc2c79072d418c8422884066be6401257b775",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "round1 provenance capture and source-copy/run_all.py subprocess execution (see run_all.execution.json)"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy/discriminant_real.log",
+      "bytes": 1020,
+      "sha256": "e59218825f81892a34ca5110a6c4f0d8b957d5bbc35f4147559c467dfb2c8021",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "python3 -I /workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy/run_all.py"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy/discriminant_real.py",
+      "bytes": 1231,
+      "sha256": "1e0e65b6b07e2b1bc903b1f315f0ac7ffd5b1adb59416e98ec324709ea94869d",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "byte-identical copy of committed input-code/ff_padua/discriminant_real.py"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy/fast_transform.log",
+      "bytes": 2506,
+      "sha256": "82e870684d391e641ea27d59923cb0d58d21021cab82306f5517d1694a379597",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "python3 -I /workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy/run_all.py"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy/fast_transform.py",
+      "bytes": 6027,
+      "sha256": "10f7ef3b12e608ae49b45970ea8135ce9e5377fa44c83196a1367110ac89f28d",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "byte-identical copy of committed input-code/ff_padua/fast_transform.py"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy/ffield.py",
+      "bytes": 5992,
+      "sha256": "d62c66a9168d45ffa96fabed3cdf1d2656099e46edd4e8d369ebf4ed1f6d7faf",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "byte-identical copy of committed input-code/ff_padua/ffield.py"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy/hs_ff.log",
+      "bytes": 2469,
+      "sha256": "0e07fc5ff08952688a93bb24005dfffe792b289e20343752b0958e17992de2dc",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "python3 -I /workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy/run_all.py"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy/hs_ff.py",
+      "bytes": 4397,
+      "sha256": "c3ed1d577c1db4bb78b8b9a0236651e61e69564a461283fa81963ebe3f23e098",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "byte-identical copy of committed input-code/ff_padua/hs_ff.py"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy/padua_codes.log",
+      "bytes": 1421,
+      "sha256": "a8b2da53888c893c8a2e0aef43b2d49d5f54c1baf7a028d3a513a85e7b41a744",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "python3 -I /workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy/run_all.py"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy/padua_codes.py",
+      "bytes": 2482,
+      "sha256": "05e5d71e69d04496d5219d8097799f24c03534dfcc1a3012d7337bcd4f40f997",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "byte-identical copy of committed input-code/ff_padua/padua_codes.py"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy/padua_ff.log",
+      "bytes": 12539,
+      "sha256": "edd514e29c1691ba3142dcd2209a158f596ac3a7e25cea5fdf99522aa080b563",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "python3 -I /workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy/run_all.py"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy/padua_ff.py",
+      "bytes": 10467,
+      "sha256": "8c627dfa3641289db3a187a45db1d0d8ee4a57f97783dc7da8b2a89978ad40df",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "byte-identical copy of committed input-code/ff_padua/padua_ff.py"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy/quadratic_padua.log",
+      "bytes": 1606,
+      "sha256": "3dbc20f0e415cf12ca88dad998796affb4644cdafc078009836dabdba0562ce4",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "python3 -I /workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy/run_all.py"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy/quadratic_padua.py",
+      "bytes": 2109,
+      "sha256": "1df666d6d7acdfd26d14d0f5f26cdbfb3190bfec76031efc43daaaac81f5dc4f",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "byte-identical copy of committed input-code/ff_padua/quadratic_padua.py"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/source-copy/run_all.py",
+      "bytes": 606,
+      "sha256": "def7954b426e2a71b8ae9688e2b41c24f81d234e0e930a57168c60e5f7c3b95a",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "byte-identical copy of committed input-code/ff_padua/run_all.py"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/source-identities.json",
+      "bytes": 2553,
+      "sha256": "430bd64a8cbfe19b0f62fa0e353f4221c8e8c3b6a9ffc86821121b06624fbfe4",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "round1 provenance capture and source-copy/run_all.py subprocess execution (see run_all.execution.json)"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/verify_exact.jsonl",
+      "bytes": 1802,
+      "sha256": "b8ec4733f41e1683f4c2a0dc5100a0047e416faefd4616fb73e45b02ff3ec228",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "python3 -I /workspace/padua_research/topics/charter-unisolvence-20261031/directions/U0/verify_exact.py"
+    },
+    {
+      "path": "/workspace/padua-cold/charter-unisolvence-20261031/U0/verify_exact.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_commit": "5123a32774110e9290c42bc1cf3c6838ee6c3d35",
+      "generating_command": "python3 -I /workspace/padua_research/topics/charter-unisolvence-20261031/directions/U0/verify_exact.py"
+    },
+    {
+      "path": "/workspace/padua_research/topics/charter-unisolvence-20261031/directions/U0/replay_source.py",
+      "bytes": 2065,
+      "sha256": "2e72bbf80e157edabcaa99debfa8b2e97de55dbf184c9323a61ab2ff8b593cb5",
+      "source_commit": "U0 final candidate file hash; orchestrator commit pending",
+      "generating_command": "developer-written verification code"
+    },
+    {
+      "path": "/workspace/padua_research/topics/charter-unisolvence-20261031/directions/U0/verify_exact.py",
+      "bytes": 6336,
+      "sha256": "f1120a41235c881fe67d77afe8d5ae2c8b0e41fe2ea8d3e9b5566bc0d37eb462",
+      "source_commit": "U0 final candidate file hash; orchestrator commit pending",
+      "generating_command": "developer-written verification code"
+    },
+    {
+      "path": "/workspace/padua_research/topics/charter-unisolvence-20261031/directions/U0/check_evidence.py",
+      "bytes": 1944,
+      "sha256": "d3cbd0d171d79edc3945b4b180cb226d6c9e037a9a1236d08d9ca1606189c5ab",
+      "source_commit": "U0 final candidate file hash; orchestrator commit pending",
+      "generating_command": "developer-written verification code"
+    }
+  ],
+  "source_script_identities": "source-identities.json; committed input-code/IDENTITY.json contains Git blob IDs",
+  "retention": "Padua campaign cold artifacts; retain until AC chooses a retention policy; no expiry/deletion authorized",
+  "retrieval": "local absolute paths; verify SHA-256 and size with check_evidence.py; remote/off-machine backup not confirmed",
+  "source_script_blobs": {
+    "ff_padua/discriminant_real.py": "2f15a992d35cf9ae9fd2d6c7450d1878bd830e71",
+    "ff_padua/fast_transform.py": "7f1808ccf048a86515329748713e588fd6bcb34b",
+    "ff_padua/ffield.py": "dbcf8a0f1438ba7944b78e14fec9e15828657379",
+    "ff_padua/hs_ff.py": "6ef1b8cd0bbd2015ae1a12e2a5c9c05f2bf698b4",
+    "ff_padua/padua_codes.py": "82e6b89b6e9c05bb87c3ff698ab1bc9620ff2ced",
+    "ff_padua/padua_ff.py": "b43465bb90f3071eb907eda4697242d7db114c0b",
+    "ff_padua/quadratic_padua.py": "7c64aaf3721c60a262e9cc1307f951be7fc6bd03",
+    "ff_padua/run_all.py": "85af84fd2739b200567af4c6bc500a0b4c2be8e0"
+  },
+  "checker_command": "python3 -I topics/charter-unisolvence-20261031/directions/U0/check_evidence.py /workspace/padua-cold/charter-unisolvence-20261031/U0 topics/charter-unisolvence-20261031/input-code/ff_padua"
+}

@@ -1,0 +1,5 @@
+PASS tracks/unisolvence/theory/u1/all-characteristic-criterion.md ID reversal exactly recovers reviewed SHA256 f02b5004a90ded8a7fa425c35ae701aaa30f286d5ebc3494f3afa6763f79655d
+PASS tracks/unisolvence/theory/u1/char2-refutation.md ID reversal exactly recovers reviewed SHA256 7214f3b070e73f1870ed831fde41b941a61b757724c800e64a9cbe744f8ce3ee
+PASS tracks/unisolvence/theory/u1/kernel-cubature-corollary.md ID reversal exactly recovers reviewed SHA256 c486a2f07292bb5feff058b56123dbf46010aea09c61f0256f739489093d7a31
+PASS tracks/unisolvence/theory/u1/odd-characteristic-criterion.md ID reversal exactly recovers reviewed SHA256 dbbf0eac543887725a695723a3159cb6150bcea3b7ad63c2702dc685d4adb972
+PASS all 4 U1 theory files: ID replacements and move only

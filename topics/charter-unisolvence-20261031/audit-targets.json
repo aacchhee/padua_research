@@ -1,0 +1,415 @@
+{
+  "scope": "Canonical scientific development, registries, source records, proof/evidence mapping and checkers; required Claude acceptance audit PENDING",
+  "files": [
+    {
+      "path": "ID_CROSSWALK.md",
+      "bytes": 26679,
+      "sha256": "a09fe306b2aae73b2abe33b26521d34127c3d9b9a35fb5a5e614855644a7182c"
+    },
+    {
+      "path": "PAPER_MAP.md",
+      "bytes": 628,
+      "sha256": "cae5ec7edb45d950aab5ddc25b86674f820a845efacdfb1a4fad715f36c2d6dd"
+    },
+    {
+      "path": "PROOF_STATUS.md",
+      "bytes": 5598,
+      "sha256": "e4dc3c15d96afa5696b9740e47b6bcb347eb6a82621a4e5f3933099e30915161"
+    },
+    {
+      "path": "literature/CORPUS.md",
+      "bytes": 15485,
+      "sha256": "7fff8f9fa805686c8096888a01fa2f3a7fea00b59c4819cd605efaa78c15af72"
+    },
+    {
+      "path": "literature/INDEX.md",
+      "bytes": 16243,
+      "sha256": "eec92d273fba4704fb459851faad38d2ad968caf285f839cd67860fa58dcff71"
+    },
+    {
+      "path": "literature/SEARCH-charter-unisolvence-20261031.md",
+      "bytes": 6483,
+      "sha256": "e716715f99b0530ce9e66a99319942a9a510945bc7cb429b2aa0fba99701b129"
+    },
+    {
+      "path": "literature/U1-COMPARISON.md",
+      "bytes": 9095,
+      "sha256": "f2185c34aebca39c6a8db5b966fb5180b84f82965a2a365806ed3489ab683232"
+    },
+    {
+      "path": "literature/records/README.md",
+      "bytes": 227,
+      "sha256": "eb4b953efcbf3027e10d021354b3a2d52c8fd53ef251b2ea194352a1809b8d23"
+    },
+    {
+      "path": "literature/records/ball-2012.md",
+      "bytes": 1484,
+      "sha256": "ef2dc3c86fb42b1e30a8a5bf7785a0d82d2dc1a1e91a882b500e521baaedc736"
+    },
+    {
+      "path": "literature/records/bartels-jezioranski-1985.md",
+      "bytes": 1725,
+      "sha256": "c1d1fd0b7f45953692fc62ba07d9939d87d386b3b178c1dce14afc9b488fb18b"
+    },
+    {
+      "path": "literature/records/bjs-2008.md",
+      "bytes": 1679,
+      "sha256": "0824d2622e7839f792057ca8b2eda59d45c9ea18a68097eff3e1533c89a6f222"
+    },
+    {
+      "path": "literature/records/bos-dm-waldron-2009.md",
+      "bytes": 1660,
+      "sha256": "23596b59834c27ee63ce4606c502b2cc6a85eebef0fff7789637d8119442d809"
+    },
+    {
+      "path": "literature/records/bos-dmv-xu-2007.md",
+      "bytes": 1860,
+      "sha256": "adb842f1cd512540d2438b57315b1cbb0c221e5aeb54d695d46779e14b627fe2"
+    },
+    {
+      "path": "literature/records/caliari-dmv-2008.md",
+      "bytes": 1831,
+      "sha256": "65a54369193885383fb90c96ca1d9c5a7a9cca2dacf7fab3272a45b633799cdd"
+    },
+    {
+      "path": "literature/records/camargo-demarchi-2015.md",
+      "bytes": 2330,
+      "sha256": "d82827c3ddc53ca7934fe7fbed617e9a14f4a66f99890fe8ce37bf52eddb0e64"
+    },
+    {
+      "path": "literature/records/cao-ghimire-wang-2022.md",
+      "bytes": 1796,
+      "sha256": "96fff78e2545d1ebe0030ec4440a790fc86073e8d16e07409188f0163e47964d"
+    },
+    {
+      "path": "literature/records/cools-poppe-2011.md",
+      "bytes": 1996,
+      "sha256": "8d2e1df883ed61d843cb5629a65a3018e137dc7521315262afa35f8fff250eca"
+    },
+    {
+      "path": "literature/records/degani-schiff-tannor-2005.md",
+      "bytes": 1841,
+      "sha256": "42b954cf2699fefeffe6c36b6c23502bc9b2b3dc8bb2d5233a473b5d0e609271"
+    },
+    {
+      "path": "literature/records/delgado-et-al-2010.md",
+      "bytes": 1839,
+      "sha256": "ee7c482ee819667d322592f1e4a91a4fb5b920e35a60b34a9421b3606ff2dcbf"
+    },
+    {
+      "path": "literature/records/demarchi-usevich-2014.md",
+      "bytes": 1966,
+      "sha256": "9e2d30e452aa9577f81986b4ee682d56e7de17aa1f302563885dc9ef5a3f41cb"
+    },
+    {
+      "path": "literature/records/dencker-erb-2017.md",
+      "bytes": 1795,
+      "sha256": "97f8316f7f916ba2fa0184e3066d20f5dd661835ecb1fd2f30521d139be96307"
+    },
+    {
+      "path": "literature/records/egk-1991.md",
+      "bytes": 1704,
+      "sha256": "8395f0e18b7c9dc990e283a5953c3444ae644ad60ba4ed0e58b2827b493bb060"
+    },
+    {
+      "path": "literature/records/fitzgerald-lax-1998.md",
+      "bytes": 1475,
+      "sha256": "7b599fd5d4949ab65766ad62fc693d0dcad2794b8cc6fdc5b921333617454b66"
+    },
+    {
+      "path": "literature/records/floater-2017.md",
+      "bytes": 1883,
+      "sha256": "f1ab7c9b18a415ab2894f2c86bb43419d43db043f84f3cbf70e4ff06684b623f"
+    },
+    {
+      "path": "literature/records/hankel-op-background.md",
+      "bytes": 1547,
+      "sha256": "c1c26bb3481c674da2b52e67de84eb43e19f0901cc726f155d7e7bab9728cbc0"
+    },
+    {
+      "path": "literature/records/harris-2023.md",
+      "bytes": 1628,
+      "sha256": "666a2c653a3f0b1f09063e9483007d2c494c6006309b8ee3ea5a6eaeb8fd4f6e"
+    },
+    {
+      "path": "literature/records/harris-simanek-2021.md",
+      "bytes": 2750,
+      "sha256": "09e6afc538d0e0fd88d40a1c21b88927e33f84317a2857d2691f0f4e891f6241"
+    },
+    {
+      "path": "literature/records/hoeven-schost-2013.md",
+      "bytes": 1813,
+      "sha256": "615d87341db7cab6a8a17912a4b90612613b80117ca283b3f266eda1b3eb1365"
+    },
+    {
+      "path": "literature/records/hoeven-tft-2004.md",
+      "bytes": 1782,
+      "sha256": "826f4aa495e4fc6e0f4f1f7f91607aa5db12ab78ad668fe8787e63aed436daf1"
+    },
+    {
+      "path": "literature/records/hubert-singer-2022.md",
+      "bytes": 1748,
+      "sha256": "9471745759dd9e0bc8f01565ae2fdaf41bb4f2430e471f2e28b754463e05a90c"
+    },
+    {
+      "path": "literature/records/huhtanen-larsen-bit-2002.md",
+      "bytes": 1814,
+      "sha256": "e9daf5ab7520f4e25b276ac6b48334999ed51f0b4f93baf19fe2c23b7497023d"
+    },
+    {
+      "path": "literature/records/humet-2019.md",
+      "bytes": 1836,
+      "sha256": "b7d2ee21ca7859815285271876f282d6d3c47256ac1f5b23608cd3fffc4bf545"
+    },
+    {
+      "path": "literature/records/li-sun-xu-2009.md",
+      "bytes": 1833,
+      "sha256": "f384d5b0ba6e15edaf20842c1d166f89432b3492b0a5878a7d7e7b23b73b7b53"
+    },
+    {
+      "path": "literature/records/lima-souza-2011.md",
+      "bytes": 2227,
+      "sha256": "5c79216d7d9cfd0ac324c1880dd2a2b9c4f4f4d5935fa1b0b44a892c45d016b8"
+    },
+    {
+      "path": "literature/records/lopez-renteria-villarreal-2014.md",
+      "bytes": 1434,
+      "sha256": "9cb5f38ebfa7ceae3b4465f6feb456e1253180a464c6ac0ca3556fdffc95a278"
+    },
+    {
+      "path": "literature/records/lower-set-background.md",
+      "bytes": 1502,
+      "sha256": "a480da3299bd28848f4e6a5ab5c1049bf10ecc61a0147d033e1d75703bfe3a09"
+    },
+    {
+      "path": "literature/records/mourrain-2017.md",
+      "bytes": 1713,
+      "sha256": "8f46514eca712de7cb0354fb0c78fe52d8c88ac04a53dd5f065f07e5c1391741"
+    },
+    {
+      "path": "literature/records/mourrain-telen-vanbarel.md",
+      "bytes": 1673,
+      "sha256": "e6fb860307d8484bd0109961e69483561cc744fd4650dbb8d86260c535df407d"
+    },
+    {
+      "path": "literature/records/sauer-2007.md",
+      "bytes": 1725,
+      "sha256": "cd4c07854a6fdb5b6d7b3649b6c3e380883bdc85fd70560cd5eb3be8b18f68ed"
+    },
+    {
+      "path": "literature/records/sommariva-vianello-2015.md",
+      "bytes": 1917,
+      "sha256": "38e5758dfe39b44bf17e0881ead2c59e92c996cbe9163838c20d4557c1a6a5a1"
+    },
+    {
+      "path": "literature/records/supplied-01.md",
+      "bytes": 1865,
+      "sha256": "98a216b6938817cf564789ff28d8b3d7bd58009863d1a05f5975217069be63a6"
+    },
+    {
+      "path": "literature/records/supplied-02.md",
+      "bytes": 1871,
+      "sha256": "535871912cf50bf4cad0a29126f8e56fcb00e2d56e8cb21c0e12ce00dbd70aef"
+    },
+    {
+      "path": "literature/records/supplied-03.md",
+      "bytes": 1885,
+      "sha256": "0b67fdd5f469d9d43058deb92e2c0821c019f4df5c13578013ae0dc7a94ea576"
+    },
+    {
+      "path": "literature/records/supplied-04.md",
+      "bytes": 1883,
+      "sha256": "1b1d760ba8a950bed7b5ac8fbd8a15c64b5227007327a77355f25408aff6fe19"
+    },
+    {
+      "path": "literature/records/supplied-05.md",
+      "bytes": 1893,
+      "sha256": "a9e3e463b2adf473a76f4669afd247b9913a111aeb57cd1e51f52e6326e91b87"
+    },
+    {
+      "path": "literature/records/vanbarel-chesnokov-2010.md",
+      "bytes": 1723,
+      "sha256": "2ac7c12841433f3c4dd2da40102514075cb2588b5c863271ff52e279f3094442"
+    },
+    {
+      "path": "literature/records/xu-2025.md",
+      "bytes": 1643,
+      "sha256": "c99d6b308bf86eb1b5edbfdd5084925c304fd903a8c022a85bc892fcc6289c69"
+    },
+    {
+      "path": "literature/records/xu-pitman-1994.md",
+      "bytes": 1803,
+      "sha256": "8e0c2fbb19c63715a12b771fe98c2bd5654e73e5f8f994c19e9ee7ebf029a94e"
+    },
+    {
+      "path": "literature/records/xu-siam-1994.md",
+      "bytes": 1926,
+      "sha256": "c1d4eb660d2b94ea4610e03ef6a5dee0950a006b97bbd1381e570e9d1b3c0468"
+    },
+    {
+      "path": "state/CURRENT.md",
+      "bytes": 5615,
+      "sha256": "176ffdafcccada7091e481b8033a8b247c5c5a2fa87b32f8d3a181a829bd7200"
+    },
+    {
+      "path": "state/IDEAS.md",
+      "bytes": 23246,
+      "sha256": "a4b7a1d6271d4a6267e4744434c8a9506b92437ffa04f13ee061890771fffdee"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+      "bytes": 1635,
+      "sha256": "d70d681e0008fc06e4141e484b7b79e7868039b0397e706088d73e9a1ac5c514"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/cold-storage-check.json",
+      "bytes": 181,
+      "sha256": "5aecb3f9aaf30ff8fcd9c60c448fb996c9ff22a5011facca48c0ebb3641fbb7d"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/cold-storage-manifest.json",
+      "bytes": 77280,
+      "sha256": "bc519ed735cfccdb2102222be148556f19012acd6cdf3ed2bcc696257e00d13c"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/directions/U0/check_evidence.py",
+      "bytes": 1944,
+      "sha256": "d3cbd0d171d79edc3945b4b180cb226d6c9e037a9a1236d08d9ca1606189c5ab"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/directions/U0/replay_source.py",
+      "bytes": 2065,
+      "sha256": "2e72bbf80e157edabcaa99debfa8b2e97de55dbf184c9323a61ab2ff8b593cb5"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/directions/U0/verify_exact.py",
+      "bytes": 6336,
+      "sha256": "f1120a41235c881fe67d77afe8d5ae2c8b0e41fe2ea8d3e9b5566bc0d37eb462"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/directions/U1/exact_checker.py",
+      "bytes": 11810,
+      "sha256": "4216b9944c45345709ba11ffbb59b70799432329b646c0c44446da9be2cff56b"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/final-id-map.json",
+      "bytes": 4912,
+      "sha256": "ece89ee77fe648fa707bdea847f6df334fde4e7a0af7448207412fc6e481fb82"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u0/check_evidence.py",
+      "bytes": 1367,
+      "sha256": "d5473f5598125bea8fda2ff9ee84c076f03bfa9121b01db4987513f9da480d61"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u0/exact_check.py",
+      "bytes": 6115,
+      "sha256": "5fb0374da08d36823ebea3e488df60e94584645c98c2eb61057d82b757b415e1"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u1/check_symbolic_summary.py",
+      "bytes": 2927,
+      "sha256": "6a090d79f85642794725d6dce4c3b96b9495ce5325721091b4f6272e50d32942"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u1/check_u1.py",
+      "bytes": 7146,
+      "sha256": "227ecbb04e9130bf9fb06c5d15eb70bdc31b5fcdd3a478bca6799803967a2ce5"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/integration-impact.json",
+      "bytes": 12179,
+      "sha256": "9979a8a6554271cdbcde46f6c833f154d4b2679c0dc0bca5a2c792f9d1817484"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/plan.md",
+      "bytes": 3881,
+      "sha256": "707963784672c7e668f1923a46447092159655a9a2a5aef1c0cb91aad8841661"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/report.md",
+      "bytes": 6855,
+      "sha256": "5108c444c1211ba78622daac638224300d090e4261979ee3566cb52f4e459d93"
+    },
+    {
+      "path": "tracks/unisolvence/AUDIT_LOG.md",
+      "bytes": 1534,
+      "sha256": "2b9ac5a935d0fcfce952509a1a654338300c25c010b03da8ff1ef63441fd247c"
+    },
+    {
+      "path": "tracks/unisolvence/NEGATIVE_RESULTS.md",
+      "bytes": 549,
+      "sha256": "08599171ad9a3739b19b1987cf56202a4e82c929cc421c7c3a126408cb564f5b"
+    },
+    {
+      "path": "tracks/unisolvence/README.md",
+      "bytes": 1308,
+      "sha256": "05764ec03b1b7af308d23e148bb7c836e8e4dd30ab4c40f38c6c1556c0a9fbbd"
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/code-distances.md",
+      "bytes": 3544,
+      "sha256": "641178876ac5a6a398ed87c835af94dc767668c59859f18002d81ad1c8c43377"
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/code-optimality-bounds.md",
+      "bytes": 7507,
+      "sha256": "327690212b7968c336d5c9e5371fdc119d334be8efd96d16d4f27d7a9c770388"
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/code-structure.md",
+      "bytes": 3355,
+      "sha256": "a6188a5097201aee46d4a2407efbdcf96b2ef69ebe1dcbde87e67f9a60dacf91"
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/discriminant.md",
+      "bytes": 4137,
+      "sha256": "1975f3cab8a337b3e65e4d00df9c24b779e9ddfa35d9d3ee9525bc0b695bbd84"
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/gram-unisolvence.md",
+      "bytes": 5096,
+      "sha256": "24e39132b79a56c215f0e823a90a1909b82c64e01373a266047c2fafb1c5888c"
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/measurements.md",
+      "bytes": 4193,
+      "sha256": "bd42c34e2328facd5686a4bf8962977efa7237e496408dc368936e046aac4fbe"
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/open-targets.md",
+      "bytes": 3600,
+      "sha256": "75e993977e9d1cd5a0c4437b003bafed181475c0ec36906e8b974653df86562c"
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/quadratic-character.md",
+      "bytes": 4165,
+      "sha256": "82b265d4fa94464e7700b24dffaca3690a647d62a9b6f132b353463cb02dbde7"
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/rationality.md",
+      "bytes": 4262,
+      "sha256": "3e0765a861d9d8b1a0efa27cd1c6576a698ca9c28b1ea1d532943e3244b09858"
+    },
+    {
+      "path": "tracks/unisolvence/theory/u1/all-characteristic-criterion.md",
+      "bytes": 6564,
+      "sha256": "4a89fd08c7b654ccd63abcec30076ab738dbe79e96880bb79163bf36cfd75b5f"
+    },
+    {
+      "path": "tracks/unisolvence/theory/u1/char2-refutation.md",
+      "bytes": 4719,
+      "sha256": "3e911cb10049c2d29cdefa67fac3f0f706d90124f03951bb9d199f3b6167d4c9"
+    },
+    {
+      "path": "tracks/unisolvence/theory/u1/kernel-cubature-corollary.md",
+      "bytes": 3629,
+      "sha256": "ee42277b64b1267938fe147511a6b1759fe75efb35cdc958508b52e244bd42d2"
+    },
+    {
+      "path": "tracks/unisolvence/theory/u1/odd-characteristic-criterion.md",
+      "bytes": 5649,
+      "sha256": "5c16ad8d54f9f9c7058501afc2b7d0c5a14ec1a647811162a268ab7fcae6dca7"
+    }
+  ]
+}

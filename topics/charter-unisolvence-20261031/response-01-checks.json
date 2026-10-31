@@ -1,0 +1,157 @@
+{
+  "kind": "Administrative response verification; no scientific evidence or status upgrade",
+  "source_audit_delivery_commit": "3bd9d4e8e7817eaf0abd5b7a750ea77eb8101342",
+  "audited_scientific_commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+  "result": "PASS",
+  "documented_source_transforms_passed": 13,
+  "historical_audit_targets_verified": 82,
+  "audit_target_inventory_preserved": true,
+  "unchanged_code_auditor_and_evidence_files": [
+    "topics/charter-unisolvence-20261031/audit-01.md",
+    "topics/charter-unisolvence-20261031/claude-audit/MANIFEST.md",
+    "topics/charter-unisolvence-20261031/claude-audit/check_checkerboard.py",
+    "topics/charter-unisolvence-20261031/claude-audit/check_padua.py",
+    "topics/charter-unisolvence-20261031/claude-audit/gf.py",
+    "topics/charter-unisolvence-20261031/claude-audit/outputs/checkerboard.json",
+    "topics/charter-unisolvence-20261031/claude-audit/outputs/padua.json",
+    "topics/charter-unisolvence-20261031/claude-audit/outputs/source-replay-execution.json",
+    "topics/charter-unisolvence-20261031/cold-storage-check.json",
+    "topics/charter-unisolvence-20261031/cold-storage-manifest.json",
+    "topics/charter-unisolvence-20261031/directions/U0/check_evidence.py",
+    "topics/charter-unisolvence-20261031/directions/U0/replay_source.py",
+    "topics/charter-unisolvence-20261031/directions/U0/verify_exact.py",
+    "topics/charter-unisolvence-20261031/directions/U1/exact_checker.py",
+    "topics/charter-unisolvence-20261031/independent/protocol/check-output.json",
+    "topics/charter-unisolvence-20261031/independent/protocol/check_integration.py",
+    "topics/charter-unisolvence-20261031/independent/protocol/report.md",
+    "topics/charter-unisolvence-20261031/independent/u0/audit.md",
+    "topics/charter-unisolvence-20261031/independent/u0/check-summary.json",
+    "topics/charter-unisolvence-20261031/independent/u0/check_evidence.py",
+    "topics/charter-unisolvence-20261031/independent/u0/code-optimality-bounds.md",
+    "topics/charter-unisolvence-20261031/independent/u0/evidence-check.json",
+    "topics/charter-unisolvence-20261031/independent/u0/evidence-manifest.json",
+    "topics/charter-unisolvence-20261031/independent/u0/exact_check.py",
+    "topics/charter-unisolvence-20261031/independent/u0/reconstruction.md",
+    "topics/charter-unisolvence-20261031/independent/u0/reviewed-hashes.json",
+    "topics/charter-unisolvence-20261031/independent/u1/check-output.txt",
+    "topics/charter-unisolvence-20261031/independent/u1/check_symbolic_summary.py",
+    "topics/charter-unisolvence-20261031/independent/u1/check_u1.py",
+    "topics/charter-unisolvence-20261031/independent/u1/evidence.md",
+    "topics/charter-unisolvence-20261031/independent/u1/integration-check.txt",
+    "topics/charter-unisolvence-20261031/independent/u1/manifest.json",
+    "topics/charter-unisolvence-20261031/independent/u1/producer-final-finite.json",
+    "topics/charter-unisolvence-20261031/independent/u1/producer-final-symbolic.json",
+    "topics/charter-unisolvence-20261031/independent/u1/producer-rerun-finite.json",
+    "topics/charter-unisolvence-20261031/independent/u1/reconstruction-allchar.md",
+    "topics/charter-unisolvence-20261031/independent/u1/reconstruction-char2.md",
+    "topics/charter-unisolvence-20261031/independent/u1/reconstruction-oddchar.md",
+    "topics/charter-unisolvence-20261031/independent/u1/report.md",
+    "topics/charter-unisolvence-20261031/independent/u1/symbolic-summary-output.txt",
+    "topics/charter-unisolvence-20261031/input-code/ff_padua/discriminant_real.py",
+    "topics/charter-unisolvence-20261031/input-code/ff_padua/fast_transform.py",
+    "topics/charter-unisolvence-20261031/input-code/ff_padua/ffield.py",
+    "topics/charter-unisolvence-20261031/input-code/ff_padua/hs_ff.py",
+    "topics/charter-unisolvence-20261031/input-code/ff_padua/padua_codes.py",
+    "topics/charter-unisolvence-20261031/input-code/ff_padua/padua_ff.py",
+    "topics/charter-unisolvence-20261031/input-code/ff_padua/quadratic_padua.py",
+    "topics/charter-unisolvence-20261031/input-code/ff_padua/run_all.py",
+    "topics/charter-unisolvence-20261031/input-code/harris_simanek_check.py",
+    "topics/charter-unisolvence-20261031/verify_cold_storage.py"
+  ],
+  "protected_theory_checks": [
+    {
+      "path": "tracks/unisolvence/theory/u0/code-distances.md",
+      "epistemic_status": "MEASURED",
+      "protected_sections_sha256": "3fa9131e3da690ad3bda8ca0e53bd877cecf712bb9bf0d8104fa804482dd2036",
+      "unchanged": true
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/code-optimality-bounds.md",
+      "epistemic_status": "PROVED",
+      "protected_sections_sha256": "5504a7f3b164340cc715610126b5021e1a21507fbd763eeb97b5bb52144f676c",
+      "unchanged": true
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/code-structure.md",
+      "epistemic_status": "PROVED",
+      "protected_sections_sha256": "e36135240e73b5fd1a07b680afe3aa4f6dc31d0c90b4e67fcfec8ba043f22261",
+      "unchanged": true
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/discriminant.md",
+      "epistemic_status": "PROVED",
+      "protected_sections_sha256": "7f05b9596a836dfb6e4d87eea4ef55ddf71237fd9a08b203be6632124141ffb1",
+      "unchanged": true
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/gram-unisolvence.md",
+      "epistemic_status": "PROVED",
+      "protected_sections_sha256": "0a4e5adb1947fd8ba02120aae9b08a9d7b1829fdef28609249db558de4b0a4e9",
+      "unchanged": true
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/measurements.md",
+      "epistemic_status": "MEASURED",
+      "protected_sections_sha256": "63df43484e14d91ac64fa9dfa433f8cfeef33b13a8fd9ffcf624c9022e602789",
+      "unchanged": true
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/open-targets.md",
+      "epistemic_status": "OPEN",
+      "protected_sections_sha256": "9d4b81c2b1aa60a60cea50eedf6d6c474541d43f6784785b25a75ee1bb6823a9",
+      "unchanged": true
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/quadratic-character.md",
+      "epistemic_status": "PROVED",
+      "protected_sections_sha256": "f0c3c8338ba48c3face5dccd68861aadcd54c5591c8b80fa48fd682e0dc3fc0d",
+      "unchanged": true
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/rationality.md",
+      "epistemic_status": "PROVED",
+      "protected_sections_sha256": "09fe9295a957d1ed423c76cb102418e3bd22388a467a75137e1b94a2467727bb",
+      "unchanged": true
+    },
+    {
+      "path": "tracks/unisolvence/theory/u1/all-characteristic-criterion.md",
+      "epistemic_status": "PROVED",
+      "protected_sections_sha256": "748fff17a3ebbe446443fb2f1a17a787add215c1cab4df44a0401bd340a67106",
+      "unchanged": true
+    },
+    {
+      "path": "tracks/unisolvence/theory/u1/char2-refutation.md",
+      "epistemic_status": "PROVED",
+      "protected_sections_sha256": "18b95428ed6ef1c176337f0dff9b4532f8a979a9fc19feabd83a13d307bc0f4a",
+      "unchanged": true
+    },
+    {
+      "path": "tracks/unisolvence/theory/u1/kernel-cubature-corollary.md",
+      "epistemic_status": "PROVED",
+      "protected_sections_sha256": "1bbe8e468276ac0f21f3cbf12d570ee632d618f5bb441788329b559125734248",
+      "unchanged": true
+    },
+    {
+      "path": "tracks/unisolvence/theory/u1/odd-characteristic-criterion.md",
+      "epistemic_status": "PROVED",
+      "protected_sections_sha256": "19fe6e65d7aeaa4a90584e6e65abe03d0be730e3c91bef30b22c426c8762c629",
+      "unchanged": true
+    }
+  ],
+  "missing_canonical_links": [],
+  "rules_or_workflows_changed": false,
+  "diff_check": "PASS",
+  "cloud_integrity_check": {
+    "result": "PASS",
+    "files_verified": 104,
+    "imported_archive_payloads_verified": 17,
+    "manifest_sha256": "bc519ed735cfccdb2102222be148556f19012acd6cdf3ed2bcc696257e00d13c"
+  },
+  "zip": {
+    "bytes": 210015,
+    "sha256": "fdcc1ce22b0addabee97d01dfcb2bdb18be5b340091fda0c52b1608014d32eb3"
+  },
+  "windows_delivery_confirmed": false,
+  "windows_verification_performed": false,
+  "a3_disposition": "AC waived Windows verification/receipt requirement and authorized proceeding as-is"
+}
