@@ -13,7 +13,7 @@
 - Rules read at `d36722823441dc40c6e19d69a174459348dd309c` (AGENTS.md, agents/WORKFLOW.md, agents/claude/CLAUDE_ROLES.md). The requested branch did not exist on the remote; it was created from that commit (= `origin/main`). Role: orchestrator; Claude develops, Codex audits.
 - `origin/main` fetched: `d36722823441dc40c6e19d69a174459348dd309c`. Parallel branch `origin/codex/charter-unisolvence-20261031` at `59468bd52666b9cdc2749eccffaef194f26ead1b` (inspected read-only: it writes the charter, `state/CURRENT.md`, `state/IDEAS.md`, `literature/CORPUS.md`, `literature/INDEX.md` and 29 `literature/records/*`). Its literature keys are reused for shared sources so the two PRs merge into one record per source; overlap is reconciled at PR preparation.
 - AC instructions that override default gate wording (as AGENTS.md allows): Step 0 literature baseline instead of a full novelty gate; exploration may precede a full duplicate screen; each candidate records closest predecessor and kill test and gets a prior-art check plus an independent adversarial reconstruction (separate Opus agent) before acceptance; labelled idealized scaffolding only; ≤10 rounds per direction (≤20 with written justification); ≤2 substantive directions at a time; floating-point experiments are MEASURED only; paywalled load-bearing source → pending-reference. Out of scope: finite-field unisolvence; bivariate moments→OP complexity; 3D Padua; MZ constants.
-- Git: commits authored as Andrey Chesnokov <aacchhee@gmail.com> (repo-local config) with `Agent:`/`Model:` trailers. The session's `add_repo` request for push access was refused by the environment's permission classifier; the public repository is readable through the session proxy. Push is attempted at each checkpoint; if refused, work stays committed locally and the obstruction is reported to AC.
+- Git: commits authored as Andrey Chesnokov <aacchhee@gmail.com> (repo-local config) with `Agent:`/`Model:` trailers. The session's `add_repo` request for push access was refused by the environment's permission classifier; the public repository is readable through the session proxy. Push is attempted at each checkpoint; if refused, work stays committed locally and the obstruction is reported to AC. 21:41 local: AC approved writing to the repo; push access attached; branch pushed at `5685668`.
 
 ### Inputs
 
@@ -39,4 +39,4 @@ Subagent effort is set from the agent definition and is not independently expose
 
 ## Open for AC
 
-- Push access: see Git note above.
+- (resolved 2026-10-31 21:41) Push access attached after AC approval.
