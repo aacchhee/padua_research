@@ -1,0 +1,4 @@
+exact_checkerboard family=equi n=7..8; numpy 2.5.3, cvxpy 1.6.0
+/usr/local/lib/python3.13/site-packages/cvxpy/problems/problem.py:1481: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  warnings.warn(
+equi n=7: M=36 D=136 rank J=108 dim S1=28 (exp 28) rank Hess|S1=28 | DUAL exact PASS (float t=4.483e-11; exact min det/tr over nodes=3.396e-11) => (H) CERTIFIED [70s]

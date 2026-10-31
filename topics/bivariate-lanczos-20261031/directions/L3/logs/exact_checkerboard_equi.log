@@ -1,0 +1,7 @@
+exact_checkerboard family=equi n=1..6; numpy 2.5.3, cvxpy 1.6.0
+equi n=1: M=3 D=10 rank J=9 dim S1=1 (exp 1) rank Hess|S1=1 | DUAL exact PASS (float t=8.574e-02; exact min det/tr over nodes=4.287e-02) => (H) CERTIFIED [0s]
+equi n=2: M=6 D=21 rank J=18 dim S1=3 (exp 3) rank Hess|S1=3 | DUAL exact PASS (float t=2.005e-02; exact min det/tr over nodes=1.002e-02) => (H) CERTIFIED [0s]
+equi n=3: M=10 D=36 rank J=30 dim S1=6 (exp 6) rank Hess|S1=6 | DUAL exact PASS (float t=1.828e-03; exact min det/tr over nodes=9.141e-04) => (H) CERTIFIED [1s]
+equi n=4: M=15 D=55 rank J=45 dim S1=10 (exp 10) rank Hess|S1=10 | DUAL exact PASS (float t=1.326e-04; exact min det/tr over nodes=6.632e-05) => (H) CERTIFIED [4s]
+equi n=5: M=21 D=78 rank J=63 dim S1=15 (exp 15) rank Hess|S1=15 | DUAL exact PASS (float t=4.847e-06; exact min det/tr over nodes=2.423e-06) => (H) CERTIFIED [11s]
+equi n=6: M=28 D=105 rank J=84 dim S1=21 (exp 21) rank Hess|S1=21 | DUAL exact PASS (float t=4.615e-08; exact min det/tr over nodes=2.308e-08) => (H) CERTIFIED [33s]

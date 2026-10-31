@@ -1,0 +1,66 @@
+# PD-T?bivariate-lanczos-claude-112 — Checkerboard control and near-product measurements (R04): two error channels, and a product-type measure with strong loss
+
+ID kind: PD-T.
+Aliases: checkerboard control; coefficient channel vs vector channel; exact split Q̂ = Ξ̄ − Φ̃ measured; rotation-angle sweep.
+Split from: none.
+Split into: none.
+
+## Statement
+
+[FP, MEASURED] BJ window recurrence (block window, CGS), u := 2^-52.
+
+(a) **Checkerboards (m = 30, M = 496, e = 0; PD-T?…-111).** Window coefficients agree with the product reference to 8.9e-16 (Chebyshev–Lobatto), 5.3e-15 (equispaced), 1.0e-6 in double / 9.4e-10 in long double (cubic clustering, weights 1.7e-33…0.47). Loss: Chebyshev–Lobatto flat at 3e-15 up to completion; equispaced grows mildly to 1e-13 (t = 28) and 2e-13 (t = 30); clustered grows from t ≈ 12: 3e-14, 1e-11, 4e-9, 9e-7, 7e-5 at t = 12, 16, 20, 24, 28, while univariate Lanczos on the factors stays ≤ 5e-16 up to step 20. The clustered growth scales with u (long double: 7e-15 at t = 16, 3e-8 at t = 28), is also present with block-window CGS2 and with HL/ORTH (so not a local Gram–Schmidt effect), and is not predicted by Ritz residuals (u/ρ_Z ≤ 4e-14, u/ρ_{H_x}, u/ρ_{H_y} ≤ 4e-11 up to t = 24).
+(b) **Two error channels (exact split, PD-T?…-104).** Re-running the computed recurrence in long double from q̂_0 without forcing gives Ξ̄, and Φ̃ := Ξ̄ − Q̂ is the propagated vector-operation error. On the square rotated by π/4 the loss is carried by Φ̃ (|Φ̃| = 5e-12, 3e-9, 4e-6 vs loss 6e-12, 2e-9, 2e-6 at n = 12, 16, 20: vector channel); on the square both are at the same level (Ritz-type, vector channel); on the clustered checkerboard |Φ̃| stays at 4e-16–9e-16 up to n = 20 while the loss equals the Gram defect of Ξ̄ (1e-11 at n = 16): **coefficient channel** — the computed coefficients themselves define polynomials that are not orthonormal for μ.
+(c) **Predictors.** The node-propagator response with uniform forcing u/√M (R02) or with componentwise-scaled forcing reproduces the vector channel (within 1–8× on square, rotated square, disk) but misses the coefficient channel (clustered checkerboard: response 4e-15 vs loss 1e-11 at n = 16) and still under-predicts the triangle (25× at n = 12, 350× at n = 16 with scaled forcing); a worst-case coefficient-noise model (absolute inner-product error u‖q̂_l‖‖Aq̂_p‖ on every window entry) over-predicts by up to 10⁷ (clustered) and 40× (square).
+(d) **Two-relation control fails on the clustered checkerboard.** The two-relation block recurrence of PD-T?…-109 (b) loses orthogonality catastrophically there (1e-11, 1e-5, 1e-3, 0.4 at n = 8, 12, 16, 20).
+(e) **Rotation sweep (exact-coefficient propagator, square M = 1681 seed 11, rate between n = 12 and 24).** Excess growth rate over θ = 0: 0.010, 0.026, 0.126, 0.308, 0.879, 1.245 per degree at θ = 0.0125, 0.025, 0.05, 0.1, 0.2, 0.4; excess/θ = 0.80, 1.02, 2.52, 3.08, 4.39, 3.11 (superlinear onset for θ ≲ 0.2).
+(f) **Near-product bound informativeness (PD-T?…-110).** No violation; median log10(bound/actual) at (s, t) = (0, 20): 0.4 (tensor 41²), 10.4 (random square vs product of its marginals; median max_t ε_t = 0.95), 13.6 (rotation 0.05), 27.8 (rotation 0.3).
+
+## Definitions
+
+As in PD-T?…-104, -107, -110, -111.
+
+## Assumptions
+
+IEEE double / x87 long double; seeds and sets as listed; weights |1/ω′| normalised.
+
+## Status by part
+
+Overall status: MEASURED.
+
+| Mathematical part | Status | Evidence / remaining gap |
+|---|---|---|
+| (a) | MEASURED | `logs/r04_checkerboard.log`, `r04_checkerboard_diag.log`, `r04_checkerboard_local.log`, `r04_checkerboard_ritz.log`, `r04_checkerboard_more.log` |
+| (b) | MEASURED | `logs/r04_actual_forcing.log` |
+| (c) | MEASURED | `logs/r04_scaled_predictor.log`, `r04_coef_forcing.log`, `r04_checkerboard_diag.log` |
+| (d) | MEASURED | `logs/r04_checkerboard_more.log` |
+| (e), (f) | MEASURED | `logs/r04_near_product.log` |
+| mechanism of the coefficient channel on clustered product-type measures | OPEN | not explained by any tested model |
+
+## Depends on
+
+PD-T?…-104 (split), -110, -111.
+
+## Checks
+
+Commands: R04.md §5. Independent rerun: none yet.
+
+## Sources
+
+Liu–Narayan, arXiv 2202.04843 (multivariate Stieltjes): read only through a WebFetch model summary of the PDF on 2026-10-31 (not a direct reading): the summary reports that evaluation there stacks all coordinates' relations (Thm 3.1, eq. (9)), that one coordinate's relation is called insufficient in isolation (§3.1), no stability comparison of single vs stacked relations, and degraded orthogonality on a holed square and a Madagascar-shaped domain attributed to conditioning (§6.2). Barrio–Peña–Sauer, "Three term recurrence for the evaluation of multivariate orthogonal polynomials" (cited there as [1]): not found/read — pending-reference.
+
+## Proof or evidence
+
+Measured; see logs.
+
+## Scope
+
+m = 30 checkerboards, M = 1681 random sets, n ≤ 30. Item (a) shows that product-type exact coefficients do **not** by themselves guarantee small loss in floating point when the weights span many orders of magnitude; PD-T?…-105's factorisation is a statement about the propagator (vector channel), which stays bounded there (b, c).
+
+## Open items
+
+Explain the coefficient channel (candidate: conditioning of the coefficient map for weights spanning 33 decades, amplified through the polynomial recurrence — untested); a predictor that captures both channels.
+
+## History
+
+- 2026-10-31: created (Claude Opus 5.5, xhigh; L1 R04).

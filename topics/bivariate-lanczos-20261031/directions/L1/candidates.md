@@ -205,3 +205,13 @@ Aliases: scaled shadow recurrence; factorised propagator test.
 - Closest: IDEA?…-107 (predictor), -109/-113 (factorisation).
 - Kill criteria written before testing (R04, before `l1_r04_scaled_predictor.py` was run; written after the R04 checkerboard and diagnosis runs, which motivated it): (S1) improvement: on the triangle (seed 11, M = 1681) the scaled predictor Ps is within 10× of the loss at n = 12 and 16, and within 5× on the seed-11 square, square rotated by π/4 and disk at their largest degree — else the scaled predictor is no improvement (killed as an improvement). (S2) clustered checkerboard (m = 30, cubic clustering): if Ps_factorised (product-reference coefficients) is within 10× of the measured loss at n = 8..24, the clustered growth is univariate (factorised) amplification with no bivariate component; if Ps_factorised stays more than 100× below the loss while Ps (run coefficients) tracks it, the growth is bivariate amplification by rounding-induced coupling.
 - Actual test results: R04.md.
+
+## IDEA?bivariate-lanczos-claude-115 — coefficient-aware forcing: absolute inner-product errors on structurally zero window coefficients (R04)
+
+Aliases: coefficient-noise predictor; rounding-induced non-product coupling.
+
+- Question / scope: the exact split Q̂ = Ξ̄ − Φ̃ (`logs/r04_actual_forcing.log`) shows that on the clustered checkerboard the loss sits in Ξ̄ (computed-coefficient polynomials) while the propagated vector-operation errors Φ̃ stay at 5e-16; the R02/R04 forcing models scale coefficient errors relative to |h|, which is ~0 for the structurally zero (product-type) window entries, whereas a computed inner product has an absolute error ~u‖q̂_l‖‖A q̂_p‖. Hypothesis: the clustered-checkerboard loss is amplification of this rounding-induced non-product coupling.
+- Mechanism: forcing at node i, step k: u·ζ·(|a q̂_p(i)| + Σ_{l∈W_k}(|h_l| + ‖q̂_l‖‖A q̂_p‖)|q̂_l(i)| + β_k|q̂_k(i)|), ζ ~ N(0,1), propagated with the run's coefficients.
+- Closest: IDEA?…-107, -114.
+- Kill criterion written before testing (R04, before `l1_r04_coef_forcing.py` was run; motivated by the post-hoc split above): accepted if the predictor is within 10× of the loss at every degree n ≥ 8 with loss ≥ 10³u on the clustered checkerboard and on the seed-11 triangle, and within 5× on the seed-11 square, square rotated by π/4 and disk at their largest degree; otherwise killed.
+- Actual test results: R04.md.

@@ -1,0 +1,114 @@
+
+=== family padua_cub: 35 runs; sizes [66, 136, 231, 496, 861, 1326, 2016]; replicates per size {66: 5, 136: 5, 231: 5, 496: 5, 861: 5, 1326: 5, 2016: 5}
+geometric-mean error by size:
+   M       givens-scheme  givens-largest              hl              bj            cgs2              hh
+    66        4.72e-15        4.60e-15        7.45e-16        1.69e-15        5.26e-16        8.33e-16
+   136        9.32e-15        1.11e-14        1.41e-15        7.89e-15        8.12e-16        1.12e-15
+   231        1.54e-14        3.92e-14        1.94e-15        1.46e-14        9.70e-16        1.42e-15
+   496        3.80e-14        1.49e-11        3.33e-15        1.49e-14        1.32e-15        1.82e-15
+   861        7.23e-14        2.40e-09        4.78e-15        4.81e-14        1.79e-15        2.27e-15
+  1326        1.95e-13        6.66e-07        7.35e-15        7.86e-14        2.24e-15        2.59e-15
+  2016        8.02e-13        7.67e-05        9.28e-15        1.40e-13        2.97e-15        3.11e-15
+slopes (OLS, SE, 95% t-interval, 95% cluster-bootstrap interval):
+ range full
+   givens-scheme   slope   1.40  SE 0.15  t-CI [ 1.09, 1.70]  boot-CI [ 1.06, 1.73]
+   givens-largest  slope   7.12  SE 0.54  t-CI [ 6.02, 8.23]  boot-CI [ 6.46, 7.79]
+   hl              slope   0.73  SE 0.02  t-CI [ 0.70, 0.76]  boot-CI [ 0.70, 0.76]
+   bj              slope   1.17  SE 0.11  t-CI [ 0.95, 1.40]  boot-CI [ 1.00, 1.36]
+   cgs2            slope   0.48  SE 0.01  t-CI [ 0.46, 0.50]  boot-CI [ 0.47, 0.50]
+   hh              slope   0.38  SE 0.00  t-CI [ 0.37, 0.39]  boot-CI [ 0.37, 0.39]
+ range upper(M>=496)
+   givens-scheme   slope   2.15  SE 0.56  t-CI [ 0.98, 3.33]  boot-CI [ 1.02, 3.30]
+   givens-largest  slope  11.16  SE 1.59  t-CI [ 7.81,14.51]  boot-CI [ 8.18,13.76]
+   hl              slope   0.75  SE 0.06  t-CI [ 0.62, 0.88]  boot-CI [ 0.67, 0.84]
+   bj              slope   1.57  SE 0.39  t-CI [ 0.75, 2.40]  boot-CI [ 0.78, 2.35]
+   cgs2            slope   0.57  SE 0.02  t-CI [ 0.53, 0.62]  boot-CI [ 0.54, 0.60]
+   hh              slope   0.38  SE 0.01  t-CI [ 0.36, 0.39]  boot-CI [ 0.37, 0.38]
+slopes by order class (full range; OLS slope [t-CI]):
+   structured (given, sortx)  givens-scheme   slope   0.93  [ 0.89, 0.98]
+   structured (given, sortx)  givens-largest  slope   8.57  [ 6.89,10.25]
+   structured (given, sortx)  hl              slope   0.80  [ 0.75, 0.84]
+   structured (given, sortx)  bj              slope   1.31  [ 0.94, 1.67]
+   structured (given, sortx)  cgs2            slope   0.50  [ 0.47, 0.53]
+   structured (given, sortx)  hh              slope   0.37  [ 0.36, 0.38]
+   random (rand1-3)           givens-scheme   slope   1.71  [ 1.35, 2.07]
+   random (rand1-3)           givens-largest  slope   6.16  [ 4.95, 7.36]
+   random (rand1-3)           hl              slope   0.69  [ 0.67, 0.71]
+   random (rand1-3)           bj              slope   1.09  [ 0.81, 1.37]
+   random (rand1-3)           cgs2            slope   0.47  [ 0.45, 0.50]
+   random (rand1-3)           hh              slope   0.38  [ 0.37, 0.39]
+ratio of geometric means (Givens-scheme / X):
+   M           hl     cgs2       hh       bj
+    66      6.3      9.0      5.7      2.8
+   136      6.6     11.5      8.3      1.2
+   231      7.9     15.9     10.8      1.1
+   496     11.4     28.8     20.9      2.6
+   861     15.1     40.4     31.9      1.5
+  1326     26.5     86.9     75.1      2.5
+  2016     86.5    270.2    258.0      5.7
+
+=== family padua_rand: 35 runs; sizes [66, 136, 231, 496, 861, 1326, 2016]; replicates per size {66: 5, 136: 5, 231: 5, 496: 5, 861: 5, 1326: 5, 2016: 5}
+geometric-mean error by size:
+   M       givens-scheme  givens-largest              hl              bj            cgs2              hh
+    66        4.97e-15        4.18e-15        1.17e-15        1.88e-15        6.10e-16        8.72e-16
+   136        9.71e-15        3.13e-12        1.93e-15        6.94e-15        8.53e-16        1.16e-15
+   231        1.71e-14        6.52e-12        3.38e-15        8.18e-15        1.23e-15        1.50e-15
+   496        4.59e-14        5.88e-10        5.84e-15        2.23e-14        1.77e-15        1.91e-15
+   861        8.25e-14        1.43e-08        8.32e-15        3.63e-14        2.25e-15        2.39e-15
+  1326        2.77e-13        1.54e-06        1.19e-14        4.44e-14        2.90e-15        2.67e-15
+  2016        1.58e-12        2.03e-04        1.81e-14        6.95e-14        3.85e-15        3.24e-15
+slopes (OLS, SE, 95% t-interval, 95% cluster-bootstrap interval):
+ range full
+   givens-scheme   slope   1.55  SE 0.20  t-CI [ 1.15, 1.94]  boot-CI [ 1.12, 1.99]
+   givens-largest  slope   6.60  SE 1.09  t-CI [ 4.37, 8.82]  boot-CI [ 4.93, 8.03]
+   hl              slope   0.79  SE 0.01  t-CI [ 0.77, 0.81]  boot-CI [ 0.77, 0.80]
+   bj              slope   1.01  SE 0.07  t-CI [ 0.86, 1.15]  boot-CI [ 0.89, 1.13]
+   cgs2            slope   0.53  SE 0.01  t-CI [ 0.51, 0.55]  boot-CI [ 0.52, 0.54]
+   hh              slope   0.38  SE 0.00  t-CI [ 0.37, 0.39]  boot-CI [ 0.38, 0.38]
+ range upper(M>=496)
+   givens-scheme   slope   2.50  SE 0.73  t-CI [ 0.96, 4.05]  boot-CI [ 1.02, 4.09]
+   givens-largest  slope   9.16  SE 2.73  t-CI [ 3.42,14.90]  boot-CI [ 2.97,14.11]
+   hl              slope   0.80  SE 0.02  t-CI [ 0.75, 0.85]  boot-CI [ 0.78, 0.83]
+   bj              slope   0.78  SE 0.21  t-CI [ 0.33, 1.23]  boot-CI [ 0.40, 1.20]
+   cgs2            slope   0.55  SE 0.02  t-CI [ 0.51, 0.60]  boot-CI [ 0.52, 0.58]
+   hh              slope   0.37  SE 0.01  t-CI [ 0.35, 0.38]  boot-CI [ 0.36, 0.37]
+slopes by order class (full range; OLS slope [t-CI]):
+   structured (given, sortx)  givens-scheme   slope   0.92  [ 0.88, 0.96]
+   structured (given, sortx)  givens-largest  slope   7.18  [ 2.75,11.60]
+   structured (given, sortx)  hl              slope   0.81  [ 0.77, 0.84]
+   structured (given, sortx)  bj              slope   1.05  [ 0.85, 1.24]
+   structured (given, sortx)  cgs2            slope   0.54  [ 0.50, 0.57]
+   structured (given, sortx)  hh              slope   0.38  [ 0.36, 0.39]
+   random (rand1-3)           givens-scheme   slope   1.96  [ 1.47, 2.45]
+   random (rand1-3)           givens-largest  slope   6.21  [ 5.06, 7.36]
+   random (rand1-3)           hl              slope   0.78  [ 0.75, 0.81]
+   random (rand1-3)           bj              slope   0.98  [ 0.77, 1.19]
+   random (rand1-3)           cgs2            slope   0.53  [ 0.51, 0.55]
+   random (rand1-3)           hh              slope   0.38  [ 0.37, 0.39]
+ratio of geometric means (Givens-scheme / X):
+   M           hl     cgs2       hh       bj
+    66      4.2      8.1      5.7      2.6
+   136      5.0     11.4      8.4      1.4
+   231      5.1     13.9     11.4      2.1
+   496      7.9     25.9     24.0      2.1
+   861      9.9     36.7     34.5      2.3
+  1326     23.2     95.6    103.8      6.2
+  2016     87.5    410.6    487.8     22.7
+
+=== family padua_unif: 20 runs; sizes [66, 231, 496, 861]; replicates per size {66: 5, 231: 5, 496: 5, 861: 5}
+geometric-mean error by size:
+   M       givens-scheme  givens-largest              hl              bj            cgs2              hh
+    66        4.11e-15        4.05e-15        8.50e-16        4.61e-15        5.34e-16        8.42e-16
+   231        1.41e-14        2.83e-14        2.42e-15        2.43e-14        1.01e-15        1.42e-15
+   496        4.01e-14        5.72e-11        4.14e-15        2.36e-14        1.52e-15        1.82e-15
+   861        6.09e-14        1.28e-08        6.06e-15        2.43e-14        2.05e-15        2.27e-15
+slopes (OLS, SE, 95% t-interval, 95% cluster-bootstrap interval):
+ range full
+   givens-scheme   slope   1.08  SE 0.08  t-CI [ 0.90, 1.25]  boot-CI [ 0.95, 1.20]
+   givens-largest  slope   5.80  SE 1.07  t-CI [ 3.55, 8.04]  boot-CI [ 4.22, 7.62]
+   hl              slope   0.77  SE 0.01  t-CI [ 0.74, 0.80]  boot-CI [ 0.74, 0.79]
+   bj              slope   0.65  SE 0.18  t-CI [ 0.28, 1.02]  boot-CI [ 0.43, 0.86]
+   cgs2            slope   0.52  SE 0.01  t-CI [ 0.51, 0.54]  boot-CI [ 0.51, 0.53]
+   hh              slope   0.38  SE 0.00  t-CI [ 0.37, 0.39]  boot-CI [ 0.38, 0.39]
+ range upper(M>=496)
+slopes by order class (full range; OLS slope [t-CI]):
