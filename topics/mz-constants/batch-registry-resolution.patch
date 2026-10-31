@@ -1,0 +1,512 @@
+diff --git a/ID_CROSSWALK.md b/ID_CROSSWALK.md
+index d9cf238..b9a89ad 100644
+--- a/ID_CROSSWALK.md
++++ b/ID_CROSSWALK.md
+@@ -124,3 +124,84 @@ Single allocation owner and base/active-PR check: [standalone ledger](topics/cha
+ | Source U1a / IDEA-001 | PD-N001; PD-T001; PD-T002 | Original iff necessity refuted in characteristic2; explicit odd-characteristic restriction proved; changed functional gives separate all-field theorem | d5a5efb | Original scope retained; no silent narrowing or inherited proof |
+ | Supplied U0 Theorems1–6 | PD-T004–PD-T011 | Five proved core statements, measured source/finite-distance observations, unverified universal extensions OPEN | 4f3d247 | Source's combined labels not inherited as local proof status |
+ | Source code-optimality claim / IDEA-010 | PD-T010; PD-T012 | Attained distances MEASURED separately from universal linear-code bounds PROVED | 4f3d247 | No unsupported source MDS dependency or automatic computer-proof promotion |
++
++## MZ batch additions
++
++Authoritative reservations and batch limits: [batch ledger](topics/padua-batch-20261031/ALLOCATIONS.md). All existing charter IDs are preserved in its pinned standalone snapshot; this table records only MZ additions. Exact machine-readable mapping: [final-id-map.json](topics/mz-constants/final-id-map.json). Scientific checkpoint before substitution: `2dc9264333cdf8372947448f4b9bdd3bb577d0e1`. Auditor records deliberately retain their original provisional labels, resolved here; source inputs/checker code/evidence are unchanged.
++
++| Provisional ID | Final ID | Source branch / commit | Canonical file | Allocating PR / batch |
++|---|---|---|---|---|
++| PD-T?mz-constants-codex-11 | PD-T013 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m1-cc-foundation.md](tracks/mz-constants/theory/m1-cc-foundation.md) | padua-batch-20261031 |
++| PD-T?mz-constants-codex-12 | PD-T014 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m1-upper-bound.md](tracks/mz-constants/theory/m1-upper-bound.md) | padua-batch-20261031 |
++| PD-T?mz-constants-codex-13 | PD-T015 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m1-coefficient-floor.md](tracks/mz-constants/theory/m1-coefficient-floor.md) | padua-batch-20261031 |
++| PD-T?mz-constants-codex-14 | PD-T016 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m1-full-degree-obstruction.md](tracks/mz-constants/theory/m1-full-degree-obstruction.md) | padua-batch-20261031 |
++| PD-T?mz-constants-codex-21 | PD-T017 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m2-cardinal-lower.md](tracks/mz-constants/theory/m2-cardinal-lower.md) | padua-batch-20261031 |
++| PD-T?mz-constants-codex-22 | PD-T018 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m2-parity-upper.md](tracks/mz-constants/theory/m2-parity-upper.md) | padua-batch-20261031 |
++| PD-T?mz-constants-codex-23 | PD-T019 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m2-u-witness.md](tracks/mz-constants/theory/m2-u-witness.md) | padua-batch-20261031 |
++| PD-T?mz-constants-codex-27 | PD-T020 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m2-sharp-constant-open.md](tracks/mz-constants/theory/m2-sharp-constant-open.md) | padua-batch-20261031 |
++| PD-T?mz-constants-codex-28 | PD-T021 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m2-padua-marginal.md](tracks/mz-constants/theory/m2-padua-marginal.md) | padua-batch-20261031 |
++| PD-T?mz-constants-codex-31 | PD-T022 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m3-upper-ratio.md](tracks/mz-constants/theory/m3-upper-ratio.md) | padua-batch-20261031 |
++| PD-T?mz-constants-codex-32 | PD-T023 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m3-lower-ratio.md](tracks/mz-constants/theory/m3-lower-ratio.md) | padua-batch-20261031 |
++| PD-T?mz-constants-codex-33 | PD-T024 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m3-uniform-eta.md](tracks/mz-constants/theory/m3-uniform-eta.md) | padua-batch-20261031 |
++| PD-T?mz-constants-codex-34 | PD-T025 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m3-hyperinterpolation.md](tracks/mz-constants/theory/m3-hyperinterpolation.md) | padua-batch-20261031 |
++| PD-T?mz-constants-codex-41 | PD-T026 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/reproduced-spectra.md](tracks/mz-constants/theory/reproduced-spectra.md) | padua-batch-20261031 |
++| PD-T?mz-constants-codex-51 | PD-T027 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/open-upper-limit.md](tracks/mz-constants/theory/open-upper-limit.md) | padua-batch-20261031 |
++| PD-T?mz-constants-codex-52 | PD-T028 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/open-padua-target.md](tracks/mz-constants/theory/open-padua-target.md) | padua-batch-20261031 |
++| PD-N?mz-constants-codex-11 | PD-N002 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m1-failed-psd.md](tracks/mz-constants/theory/m1-failed-psd.md) | padua-batch-20261031 |
++| PD-N?mz-constants-codex-12 | PD-N003 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m1-failed-diagonal-dominance.md](tracks/mz-constants/theory/m1-failed-diagonal-dominance.md) | padua-batch-20261031 |
++| PD-N?mz-constants-codex-24 | PD-N004 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m2-eta-counterexample.md](tracks/mz-constants/theory/m2-eta-counterexample.md) | padua-batch-20261031 |
++| PD-N?mz-constants-codex-25 | PD-N005 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m2-l1-obstruction.md](tracks/mz-constants/theory/m2-l1-obstruction.md) | padua-batch-20261031 |
++| PD-N?mz-constants-codex-26 | PD-N006 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m2-parity-obstruction.md](tracks/mz-constants/theory/m2-parity-obstruction.md) | padua-batch-20261031 |
++| LIT?mz-constants-codex-01 | LIT-042 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-input-reports.md](literature/records/mz-input-reports.md) | padua-batch-20261031 |
++| LIT?mz-constants-codex-02 | LIT-043 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-input-reports.md](literature/records/mz-input-reports.md) | padua-batch-20261031 |
++| LIT?mz-constants-codex-03 | LIT-044 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-input-reports.md](literature/records/mz-input-reports.md) | padua-batch-20261031 |
++| LIT?mz-constants-codex-04 | LIT-045 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-an-sommariva-vianello-2026.md](literature/records/mz-an-sommariva-vianello-2026.md) | padua-batch-20261031 |
++| LIT?mz-constants-codex-05 | LIT-046 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-an-wu-2022.md](literature/records/mz-an-wu-2022.md) | padua-batch-20261031 |
++| LIT?mz-constants-codex-06 | LIT-047 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-sloan-smith-1978-1980.md](literature/records/mz-sloan-smith-1978-1980.md) | padua-batch-20261031 |
++| LIT?mz-constants-codex-07 | LIT-048 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-sloan-smith-1978-1980.md](literature/records/mz-sloan-smith-1978-1980.md) | padua-batch-20261031 |
++| LIT?mz-constants-codex-08 | LIT-049 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-mastroianni-milovanovic-2008.md](literature/records/mz-mastroianni-milovanovic-2008.md) | padua-batch-20261031 |
++| LIT?mz-constants-codex-09 | LIT-050 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-classical-mz-screen.md](literature/records/mz-classical-mz-screen.md) | padua-batch-20261031 |
++| LIT?mz-constants-codex-10 | LIT-051 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-classical-mz-screen.md](literature/records/mz-classical-mz-screen.md) | padua-batch-20261031 |
++| LIT?mz-constants-codex-11 | LIT-052 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-classical-mz-screen.md](literature/records/mz-classical-mz-screen.md) | padua-batch-20261031 |
++| LIT?mz-constants-codex-12 | LIT-053 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-widom-1966-screen.md](literature/records/mz-widom-1966-screen.md) | padua-batch-20261031 |
++| LIT?mz-constants-codex-13 | LIT-054 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-widom-1966-screen.md](literature/records/mz-widom-1966-screen.md) | padua-batch-20261031 |
++| LIT?mz-constants-codex-14 | LIT-055 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-quadrature-aliasing-screen.md](literature/records/mz-quadrature-aliasing-screen.md) | padua-batch-20261031 |
++| LIT?mz-constants-codex-15 | LIT-056 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-quadrature-aliasing-screen.md](literature/records/mz-quadrature-aliasing-screen.md) | padua-batch-20261031 |
++| LIT?mz-constants-codex-16 | LIT-057 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-quadrature-aliasing-screen.md](literature/records/mz-quadrature-aliasing-screen.md) | padua-batch-20261031 |
++| LIT?mz-constants-codex-17 | LIT-058 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-don-gottlieb-1994.md](literature/records/mz-don-gottlieb-1994.md) | padua-batch-20261031 |
++| LIT?mz-constants-codex-18 | LIT-059 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-passi-cv-2026.md](literature/records/mz-passi-cv-2026.md) | padua-batch-20261031 |
++| LIT?mz-constants-codex-19 | LIT-060 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-passi-cv-2026.md](literature/records/mz-passi-cv-2026.md) | padua-batch-20261031 |
++| IDEA?mz-constants-codex-01 | IDEA-052 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [state/IDEAS.md](state/IDEAS.md) | padua-batch-20261031 |
++| IDEA?mz-constants-codex-02 | IDEA-053 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [state/IDEAS.md](state/IDEAS.md) | padua-batch-20261031 |
++| IDEA?mz-constants-codex-03 | IDEA-054 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [state/IDEAS.md](state/IDEAS.md) | padua-batch-20261031 |
++| IDEA?mz-constants-codex-04 | IDEA-055 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [state/IDEAS.md](state/IDEAS.md) | padua-batch-20261031 |
++| IDEA?mz-constants-codex-05 | IDEA-056 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [state/IDEAS.md](state/IDEAS.md) | padua-batch-20261031 |
++| IDEA?mz-constants-codex-06 | IDEA-057 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [state/IDEAS.md](state/IDEAS.md) | padua-batch-20261031 |
++| IDEA?mz-constants-codex-07 | IDEA-058 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [state/IDEAS.md](state/IDEAS.md) | padua-batch-20261031 |
++| IDEA?mz-constants-codex-08 | IDEA-059 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [state/IDEAS.md](state/IDEAS.md) | padua-batch-20261031 |
++| IDEA?mz-constants-codex-11 | IDEA-060 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M1/IDEAS.md](topics/mz-constants/directions/M1/IDEAS.md) | padua-batch-20261031 |
++| IDEA?mz-constants-codex-12 | IDEA-061 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M1/IDEAS.md](topics/mz-constants/directions/M1/IDEAS.md) | padua-batch-20261031 |
++| IDEA?mz-constants-codex-13 | IDEA-062 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M1/IDEAS.md](topics/mz-constants/directions/M1/IDEAS.md) | padua-batch-20261031 |
++| IDEA?mz-constants-codex-14 | IDEA-063 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M1/IDEAS.md](topics/mz-constants/directions/M1/IDEAS.md) | padua-batch-20261031 |
++| IDEA?mz-constants-codex-15 | IDEA-064 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M1/IDEAS.md](topics/mz-constants/directions/M1/IDEAS.md) | padua-batch-20261031 |
++| IDEA?mz-constants-codex-21 | IDEA-065 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M2/candidates.md](topics/mz-constants/directions/M2/candidates.md) | padua-batch-20261031 |
++| IDEA?mz-constants-codex-22 | IDEA-066 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M2/candidates.md](topics/mz-constants/directions/M2/candidates.md) | padua-batch-20261031 |
++| IDEA?mz-constants-codex-23 | IDEA-067 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M2/candidates.md](topics/mz-constants/directions/M2/candidates.md) | padua-batch-20261031 |
++| IDEA?mz-constants-codex-24 | IDEA-068 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M2/candidates.md](topics/mz-constants/directions/M2/candidates.md) | padua-batch-20261031 |
++| IDEA?mz-constants-codex-25 | IDEA-069 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M2/candidates.md](topics/mz-constants/directions/M2/candidates.md) | padua-batch-20261031 |
++| IDEA?mz-constants-codex-26 | IDEA-070 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M2/candidates.md](topics/mz-constants/directions/M2/candidates.md) | padua-batch-20261031 |
++| IDEA?mz-constants-codex-27 | IDEA-071 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M2/candidates.md](topics/mz-constants/directions/M2/candidates.md) | padua-batch-20261031 |
++| IDEA?mz-constants-codex-28 | IDEA-072 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M2/padua-foundation-record.md](topics/mz-constants/directions/M2/padua-foundation-record.md) | padua-batch-20261031 |
++| IDEA?mz-constants-codex-31 | IDEA-073 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M3/IDEAS.md](topics/mz-constants/directions/M3/IDEAS.md) | padua-batch-20261031 |
++| IDEA?mz-constants-codex-32 | IDEA-074 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M3/IDEAS.md](topics/mz-constants/directions/M3/IDEAS.md) | padua-batch-20261031 |
++| IDEA?mz-constants-codex-33 | IDEA-075 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M3/IDEAS.md](topics/mz-constants/directions/M3/IDEAS.md) | padua-batch-20261031 |
++| IDEA?mz-constants-codex-34 | IDEA-076 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M3/IDEAS.md](topics/mz-constants/directions/M3/IDEAS.md) | padua-batch-20261031 |
++
++## Original-to-split result mappings
++
++| Original target ID / file | Split result ID / file | Relation / exact scope | Source commit | Reason / history |
++|---|---|---|---|---|
++| M2 endpoint order in plan | PD-T017; PD-T018 | lower and matching upper inequalities, both PROVED | 2dc9264 | substantive separate statements; sharp constant PD-T020 stays OPEN |
++| PD-T024 fixed-ratio MZ | PD-T022; PD-T023 | explicit upper and lower spectral intervals, both PROVED | 2dc9264 | original target remains PROVED by the two parts |
++| M1 sharp strengthening | PD-T014 vs PD-T027 | strict threshold PROVED; stronger sharp limit/uniform gap OPEN | 2dc9264 | no silent narrowing of sharp target |
++| M4 two-dimensional target PD-T028 | PD-T021 marginal compression | supporting reduction only; main target stays OPEN | 2dc9264 | signed-weight upper spectrum does not follow from compression |
+diff --git a/PAPER_MAP.md b/PAPER_MAP.md
+index a3a082f..69649e6 100644
+--- a/PAPER_MAP.md
++++ b/PAPER_MAP.md
+@@ -5,3 +5,11 @@ No manuscript has been drafted or accepted. The following is a development brief
+ | Manuscript / brief | Research question | Track / draft | Supporting result IDs | Gaps | Readiness |
+ |---|---|---|---|---|---|
+ | Possible expository field-uniform note | Correct checkerboard criterion in every characteristic, canonical Padua discriminant/character examples | unisolvence; report brief only | PD-T001–008; PD-N001 | Claude audit; exact publication overlap with2014/2015 factors; optional applications | Not a manuscript; no novelty claim or publication action |
++
++## MZ batch additions
++
++Drafts belong under their scientific track and cite final IDs with the statuses in [PROOF_STATUS.md](PROOF_STATUS.md). This branch registers the scoped MZ draft; the separate charter topic retains ownership of its manuscript plans.
++
++| Manuscript | Research question | Track / draft | Supporting result IDs | Gaps | Readiness |
++|---|---|---|---|---|---|
++| Marcinkiewicz–Zygmund constants of Clenshaw–Curtis and Padua rules beyond half-exactness | strict upper threshold, endpoint logarithmic order, explicit fixed-ratio constants and signed Padua compression | [MZ source and build](tracks/mz-constants/paper/README.md) | PD-T013–019; PD-T021–026; PD-N004 | historical overlap and journal comparison; PD-T020/027/028 OPEN; no2D upper theorem | complete14-page development draft; independent Astra manuscript review; required Claude audit PENDING; not for submission |
+diff --git a/PROOF_STATUS.md b/PROOF_STATUS.md
+index 552c766..5c7b571 100644
+--- a/PROOF_STATUS.md
++++ b/PROOF_STATUS.md
+@@ -17,3 +17,33 @@ Written mathematical statuses and dispositions are distinct. Required Claude acc
+ | PD-T010 | Eight exact finite Padua-code distance observations | MEASURED | Exact statement in linked theory file; substantive parts separated | Retained; required Claude audit PENDING | Committed exact enumeration; finite scope | [code-distances](tracks/unisolvence/theory/u0/code-distances.md) | Actual separate reruns; no completed computer-proof claim |
+ | PD-T011 | Unverified source extensions beyond bounded U0 registration | OPEN | Exact statement in linked theory file; substantive parts separated | Deferred source-verification targets; not rejected | PD-T004 definitions; remaining obligations OPEN | [open-targets](tracks/unisolvence/theory/u0/open-targets.md) | Supplementary Astra reconstruction/checks complete; Claude PENDING |
+ | PD-T012 | Upper bounds for two linear-code parameters over F_7 | PROVED | Exact statement in linked theory file; substantive parts separated | Retained; required Claude audit PENDING | Elementary projective linear-code arguments | [code-optimality-bounds](tracks/unisolvence/theory/u0/code-optimality-bounds.md) | Astra hand proof; separate Sol xhigh reconstruction in U0/bound-review.md |
++
++## MZ batch additions
++
++MZ final allocation is reconciled against the existing charter reservations in the [single batch ledger](topics/padua-batch-20261031/ALLOCATIONS.md). Charter PD-T001–012/PD-N001 belong to draft PR #2 and are not duplicated here before its integration. This branch registers its own results below. No existing accepted ID is renumbered.
++
++Status describes the mathematics; acceptance, novelty, and cross-agent PR readiness are separate. PROVED analytic claims received scoped independent Astra reconstruction; required Claude audit is PENDING. Floats remain MEASURED. Historical fulltext gaps leave novelty unresolved. PD-N entries concern only the exact failed/refuted mechanism in their statement, never an entire target.
++
++| ID | Statement and scope | Status | Status by mathematical part | Disposition / reason | Depends on | Theory file | Evidence / audit |
++|---|---|---|---|---|---|---|---|
++| PD-T013 | exact CC weights, aliasing and defect | PROVED | exact statement in canonical theory; no mixed-status aggregation | no rejection | explicit local dependencies in file | [m1-cc-foundation.md](tracks/mz-constants/theory/m1-cc-foundation.md) | [Astra scope](topics/mz-constants/independent-astra-01.md); Claude PENDING |
++| PD-T014 | CC upper spectrum below two | PROVED | exact statement in canonical theory; no mixed-status aggregation | no rejection | explicit local dependencies in file | [m1-upper-bound.md](tracks/mz-constants/theory/m1-upper-bound.md) | [Astra scope](topics/mz-constants/independent-astra-01.md); Claude PENDING |
++| PD-T015 | a quantitative Chebyshev mass floor | PROVED | exact statement in canonical theory; no mixed-status aggregation | no rejection | explicit local dependencies in file | [m1-coefficient-floor.md](tracks/mz-constants/theory/m1-coefficient-floor.md) | [Astra scope](topics/mz-constants/independent-astra-01.md); Claude PENDING |
++| PD-T016 | full-degree CC exceeds the threshold | PROVED | exact statement in canonical theory; no mixed-status aggregation | no rejection | explicit local dependencies in file | [m1-full-degree-obstruction.md](tracks/mz-constants/theory/m1-full-degree-obstruction.md) | [Astra scope](topics/mz-constants/independent-astra-01.md); Claude PENDING |
++| PD-T017 | an all-N cardinal lower bound | PROVED | exact statement in canonical theory; no mixed-status aggregation | no rejection | explicit local dependencies in file | [m2-cardinal-lower.md](tracks/mz-constants/theory/m2-cardinal-lower.md) | [Astra scope](topics/mz-constants/independent-astra-01.md); Claude PENDING |
++| PD-T018 | parity-exact matching logarithmic upper bound | PROVED | exact statement in canonical theory; no mixed-status aggregation | no rejection | explicit local dependencies in file | [m2-parity-upper.md](tracks/mz-constants/theory/m2-parity-upper.md) | [Astra scope](topics/mz-constants/independent-astra-01.md); Claude PENDING |
++| PD-T019 | exact U endpoint witness | PROVED | exact statement in canonical theory; no mixed-status aggregation | no rejection | explicit local dependencies in file | [m2-u-witness.md](tracks/mz-constants/theory/m2-u-witness.md) | [Astra scope](topics/mz-constants/independent-astra-01.md); Claude PENDING |
++| PD-T020 | sharp endpoint leading constant | OPEN | exact statement in canonical theory; no mixed-status aggregation | no rejection | explicit local dependencies in file | [m2-sharp-constant-open.md](tracks/mz-constants/theory/m2-sharp-constant-open.md) | [Astra scope](topics/mz-constants/independent-astra-01.md); Claude PENDING |
++| PD-T021 | exact Padua marginal and spectral domination | PROVED | exact statement in canonical theory; no mixed-status aggregation | no rejection | explicit local dependencies in file | [m2-padua-marginal.md](tracks/mz-constants/theory/m2-padua-marginal.md) | [Astra scope](topics/mz-constants/independent-astra-01.md); Claude PENDING |
++| PD-T022 | a fixed-ratio CC upper constant below two | PROVED | exact statement in canonical theory; no mixed-status aggregation | no rejection | explicit local dependencies in file | [m3-upper-ratio.md](tracks/mz-constants/theory/m3-upper-ratio.md) | [Astra scope](topics/mz-constants/independent-astra-01.md); Claude PENDING |
++| PD-T023 | an explicit fixed-ratio CC lower bound | PROVED | exact statement in canonical theory; no mixed-status aggregation | no rejection | explicit local dependencies in file | [m3-lower-ratio.md](tracks/mz-constants/theory/m3-lower-ratio.md) | [Astra scope](topics/mz-constants/independent-astra-01.md); Claude PENDING |
++| PD-T024 | explicit strong MZ constants at every fixed ratio | PROVED | exact statement in canonical theory; no mixed-status aggregation | no rejection | explicit local dependencies in file | [m3-uniform-eta.md](tracks/mz-constants/theory/m3-uniform-eta.md) | [Astra scope](topics/mz-constants/independent-astra-01.md); Claude PENDING |
++| PD-T025 | hyperinterpolation stability from the upper Gram bound | PROVED | exact statement in canonical theory; no mixed-status aggregation | no rejection | explicit local dependencies in file | [m3-hyperinterpolation.md](tracks/mz-constants/theory/m3-hyperinterpolation.md) | [Astra scope](topics/mz-constants/independent-astra-01.md); Claude PENDING |
++| PD-T026 | Bounded reproduced numerical spectra | MEASURED | exact statement in canonical theory; no mixed-status aggregation | no rejection | explicit local dependencies in file | [reproduced-spectra.md](tracks/mz-constants/theory/reproduced-spectra.md) | [Astra scope](topics/mz-constants/independent-astra-01.md); Claude PENDING |
++| PD-T027 | sharp endpoint upper spectrum | OPEN | exact statement in canonical theory; no mixed-status aggregation | no rejection | explicit local dependencies in file | [open-upper-limit.md](tracks/mz-constants/theory/open-upper-limit.md) | [Astra scope](topics/mz-constants/independent-astra-01.md); Claude PENDING |
++| PD-T028 | two-dimensional Padua upper and endpoint targets | OPEN | exact statement in canonical theory; no mixed-status aggregation | no rejection | explicit local dependencies in file | [open-padua-target.md](tracks/mz-constants/theory/open-padua-target.md) | [Astra scope](topics/mz-constants/independent-astra-01.md); Claude PENDING |
++| PD-N002 | the nonnegative Hankel defect is indefinite | PROVED | exact statement in canonical theory; no mixed-status aggregation | scoped mechanism failure/refutation; see theory | explicit local dependencies in file | [m1-failed-psd.md](tracks/mz-constants/theory/m1-failed-psd.md) | [Astra scope](topics/mz-constants/independent-astra-01.md); Claude PENDING |
++| PD-N003 | unweighted diagonal dominance fails at N=5 | PROVED | exact statement in canonical theory; no mixed-status aggregation | scoped mechanism failure/refutation; see theory | explicit local dependencies in file | [m1-failed-diagonal-dominance.md](tracks/mz-constants/theory/m1-failed-diagonal-dominance.md) | [Astra scope](topics/mz-constants/independent-astra-01.md); Claude PENDING |
++| PD-N004 | the endpoint eta≤3/4 mechanism fails at N=512 | PROVED | exact statement in canonical theory; no mixed-status aggregation | scoped mechanism failure/refutation; see theory | explicit local dependencies in file | [m2-eta-counterexample.md](tracks/mz-constants/theory/m2-eta-counterexample.md) | [Astra scope](topics/mz-constants/independent-astra-01.md); Claude PENDING |
++| PD-N005 | absolute-cardinal column domination fails | PROVED | exact statement in canonical theory; no mixed-status aggregation | scoped mechanism failure/refutation; see theory | explicit local dependencies in file | [m2-l1-obstruction.md](tracks/mz-constants/theory/m2-l1-obstruction.md) | [Astra scope](topics/mz-constants/independent-astra-01.md); Claude PENDING |
++| PD-N006 | strictly alternating node trials miss the degree constraint | PROVED | exact statement in canonical theory; no mixed-status aggregation | scoped mechanism failure/refutation; see theory | explicit local dependencies in file | [m2-parity-obstruction.md](tracks/mz-constants/theory/m2-parity-obstruction.md) | [Astra scope](topics/mz-constants/independent-astra-01.md); Claude PENDING |
+diff --git a/literature/CORPUS.md b/literature/CORPUS.md
+index 3137a09..d2cb3e4 100644
+--- a/literature/CORPUS.md
++++ b/literature/CORPUS.md
+@@ -47,3 +47,20 @@ Step0 supplied-source baseline, 2026-10-31; rules/base d36722823441dc40c6e19d69a
+ | camargo-demarchi-2015 | Camargo–De Marchi, A few remarks on “On certain Vandermonde determinants whose variables separate”, DRNA8(1)(2015)1–11 | https://doi.org/10.14658/PUPJ-DRNA-2015-1-1 | primary PDF accessible in followup | abstract; Thm2.1 and proof opening; §3 pp.7–8 excerpts | [record](records/camargo-demarchi-2015.md) | remaining proof / arbitrary-field overlap; [comparison](U1-COMPARISON.md) |
+ | subresultants-rational-interpolation-2012 | Subresultants, Sylvester sums and the rational interpolation problem; arXiv1211.6895 | https://arxiv.org/abs/1211.6895 | metadata pointer found | unread original; search-index excerpt only | [comparison pointer](U1-COMPARISON.md) | exact bibliography/theorem, rational-interpolation and Hankel conventions UNVERIFIED; no theorem ID assigned |
+ | bilinear-bezoutians-2013 | On the bilinear structure associated to Bezoutians; DOI10.1016/j.jalgebra.2013.10.030 | https://doi.org/10.1016/j.jalgebra.2013.10.030 | metadata pointer found | unread original; publisher-index excerpt only | [comparison pointer](U1-COMPARISON.md) | exact bibliography/theorem, Hankel/Bézout/subresultant conventions UNVERIFIED; no theorem ID assigned |
++
++## MZ batch additions
++
++Inventory of known MZ sources, including unread sources. Reading coverage is statement-specific in the linked records and [INDEX](INDEX.md). Do not infer a full source audit from a metadata/access record. No third-party PDF/fulltext extract is committed. Charter source rows will be preserved at sequential integration, not preemptively authored by MZ.
++
++| Key | Citation / scope | DOI / URL / supplied location | Availability / reading coverage | Record | Gaps |
++|---|---|---|---|---|---|
++| mz-an-sommariva-vianello-2026 | mz-an-sommariva-vianello-2026 — weak MZ constants | https://arxiv.org/abs/2601.04708 | see exact per-statement coverage | [mz-an-sommariva-vianello-2026.md](records/mz-an-sommariva-vianello-2026.md) | named gaps retained in record; historical fulltexts may be pending-reference |
++| mz-an-wu-2022 | mz-an-wu-2022 — quadrature exactness in hyperinterpolation | https://doi.org/10.1007/s10543-022-00935-x | see exact per-statement coverage | [mz-an-wu-2022.md](records/mz-an-wu-2022.md) | named gaps retained in record; historical fulltexts may be pending-reference |
++| mz-classical-mz-screen | mz-classical-mz-screen — historical inequalities requiring exact hypotheses | https://doi.org/10.1137/0518041 | see exact per-statement coverage | [mz-classical-mz-screen.md](records/mz-classical-mz-screen.md) | named gaps retained in record; historical fulltexts may be pending-reference |
++| mz-don-gottlieb-1994 | mz-don-gottlieb-1994 — Chebyshev–Legendre method | https://doi.org/10.1137/0731079 | see exact per-statement coverage | [mz-don-gottlieb-1994.md](records/mz-don-gottlieb-1994.md) | named gaps retained in record; historical fulltexts may be pending-reference |
++| mz-input-reports | mz-input-reports — supplied F7/P1/C4-transfer reports | supplied archive, pinned input manifest | see exact per-statement coverage | [mz-input-reports.md](records/mz-input-reports.md) | named gaps retained in record; historical fulltexts may be pending-reference |
++| mz-mastroianni-milovanovic-2008 | mz-mastroianni-milovanovic-2008 — Interpolation Processes | https://doi.org/10.1007/978-3-540-68349-0 | see exact per-statement coverage | [mz-mastroianni-milovanovic-2008.md](records/mz-mastroianni-milovanovic-2008.md) | named gaps retained in record; historical fulltexts may be pending-reference |
++| mz-passi-cv-2026 | mz-passi-cv-2026 — thesis and current author metadata | https://www.math.unipd.it/~alvise/TESI_STUDENTI/PASSI.pdf | see exact per-statement coverage | [mz-passi-cv-2026.md](records/mz-passi-cv-2026.md) | named gaps retained in record; historical fulltexts may be pending-reference |
++| mz-quadrature-aliasing-screen | mz-quadrature-aliasing-screen — Trefethen, Xiang–Bornemann, Hale–Townsend | https://doi.org/10.1137/060659831 | see exact per-statement coverage | [mz-quadrature-aliasing-screen.md](records/mz-quadrature-aliasing-screen.md) | named gaps retained in record; historical fulltexts may be pending-reference |
++| mz-sloan-smith-1978-1980 | mz-sloan-smith-1978-1980 — CC product integration | https://doi.org/10.1007/BF01398509 | see exact per-statement coverage | [mz-sloan-smith-1978-1980.md](records/mz-sloan-smith-1978-1980.md) | named gaps retained in record; historical fulltexts may be pending-reference |
++| mz-widom-1966-screen | mz-widom-1966-screen — matrix-asymptotic pointers | https://doi.org/10.1090/S0002-9947-1966-0187099-X | see exact per-statement coverage | [mz-widom-1966-screen.md](records/mz-widom-1966-screen.md) | named gaps retained in record; historical fulltexts may be pending-reference |
+diff --git a/literature/INDEX.md b/literature/INDEX.md
+index 7caa63d..ae3a62e 100644
+--- a/literature/INDEX.md
++++ b/literature/INDEX.md
+@@ -45,3 +45,29 @@ Read before any original PDF or priority/novelty claim. Every initially imported
+ | LIT-039 | background / limited coverage | Affine variety codes evaluate coordinate-ring functions at rational points; abstract describes theoretical Gröbner-basis decoding up to half the true minimum distance. | fitzgerald-lax-1998 | abstract; exact theorem pending | [record](records/fitzgerald-lax-1998.md) | primary publisher abstract/metadata only; subscription fulltext pending-reference |
+ | LIT-040 | background / limited coverage | The abstract computes dimension, length and minimum distance for evaluation codes on Cartesian products of finite sets. | lopez-renteria-villarreal-2014 | abstract; exact theorem pending | [record](records/lopez-renteria-villarreal-2014.md) | primary arXiv abstract/bibliography only; fulltext not inspected |
+ | LIT-041 | predecessor / primary partial inspection | Triangular function-matrix determinant factorization on general rectangles and real Padua-like factor nonvanishing; field/order scope retained | camargo-demarchi-2015 | Thm2.1 p.2 eq3; Thm3.1 p.7; proof pp.7–8; eq29 p.7 | [record](records/camargo-demarchi-2015.md) | primary abstract/theorem/proof-opening excerpts; remaining proof UNVERIFIED |
++
++## MZ batch additions
++
++The [M0 search record](../topics/mz-constants/literature-search.md) gives 43 actual queries, selected primary reading, exact coverage limits and candidate kill tests. No exhaustive priority claim. Historical load-bearing sources and ASV journal comparison are pending-reference where full text was not inspected. Supplied research reports are source reports, not published theorems or inherited proofs. Reservations start after the charter PR's LIT-001–041: see [batch ledger](../topics/padua-batch-20261031/ALLOCATIONS.md).
++
++| LIT ID | Claim type / keywords | Published statement and hypotheses | Source key | Page / theorem | Record | Reading coverage |
++|---|---|---|---|---|---|---|
++| LIT-042 | source statement / discovery | reported direct predecessor; exact hypotheses and limitations in record | mz-input-reports | record-specific locator | [mz-input-reports.md](records/mz-input-reports.md) | selected text, abstract, metadata or UNVERIFIED as individually labeled; no blanket fulltext claim |
++| LIT-043 | source statement / discovery | reported An–Wu application issue; exact hypotheses and limitations in record | mz-input-reports | record-specific locator | [mz-input-reports.md](records/mz-input-reports.md) | selected text, abstract, metadata or UNVERIFIED as individually labeled; no blanket fulltext claim |
++| LIT-044 | source statement / discovery | reported C4 transfer and stale status; exact hypotheses and limitations in record | mz-input-reports | record-specific locator | [mz-input-reports.md](records/mz-input-reports.md) | selected text, abstract, metadata or UNVERIFIED as individually labeled; no blanket fulltext claim |
++| LIT-045 | source statement / discovery | finite-degree CC/Padua observations; exact hypotheses and limitations in record | mz-an-sommariva-vianello-2026 | record-specific locator | [mz-an-sommariva-vianello-2026.md](records/mz-an-sommariva-vianello-2026.md) | selected text, abstract, metadata or UNVERIFIED as individually labeled; no blanket fulltext claim |
++| LIT-046 | source statement / discovery | explicitly conditional CC application; exact hypotheses and limitations in record | mz-an-wu-2022 | record-specific locator | [mz-an-wu-2022.md](records/mz-an-wu-2022.md) | selected text, abstract, metadata or UNVERIFIED as individually labeled; no blanket fulltext claim |
++| LIT-047 | source statement / discovery | 1978 convergence/weight result (summary coverage); exact hypotheses and limitations in record | mz-sloan-smith-1978-1980 | record-specific locator | [mz-sloan-smith-1978-1980.md](records/mz-sloan-smith-1978-1980.md) | selected text, abstract, metadata or UNVERIFIED as individually labeled; no blanket fulltext claim |
++| LIT-048 | source statement / discovery | 1980 implementation/error result (summary coverage); exact hypotheses and limitations in record | mz-sloan-smith-1978-1980 | record-specific locator | [mz-sloan-smith-1978-1980.md](records/mz-sloan-smith-1978-1980.md) | selected text, abstract, metadata or UNVERIFIED as individually labeled; no blanket fulltext claim |
++| LIT-049 | source statement / discovery | correct chapter scope; unresolved L2 trap; exact hypotheses and limitations in record | mz-mastroianni-milovanovic-2008 | record-specific locator | [mz-mastroianni-milovanovic-2008.md](records/mz-mastroianni-milovanovic-2008.md) | selected text, abstract, metadata or UNVERIFIED as individually labeled; no blanket fulltext claim |
++| LIT-050 | source statement / discovery | Lubinsky–Máté–Nevai 1987; exact hypotheses and limitations in record | mz-classical-mz-screen | record-specific locator | [mz-classical-mz-screen.md](records/mz-classical-mz-screen.md) | selected text, abstract, metadata or UNVERIFIED as individually labeled; no blanket fulltext claim |
++| LIT-051 | source statement / discovery | Mastroianni–Totik 2000; exact hypotheses and limitations in record | mz-classical-mz-screen | record-specific locator | [mz-classical-mz-screen.md](records/mz-classical-mz-screen.md) | selected text, abstract, metadata or UNVERIFIED as individually labeled; no blanket fulltext claim |
++| LIT-052 | source statement / discovery | Lubinsky 1998 survey; exact hypotheses and limitations in record | mz-classical-mz-screen | record-specific locator | [mz-classical-mz-screen.md](records/mz-classical-mz-screen.md) | selected text, abstract, metadata or UNVERIFIED as individually labeled; no blanket fulltext claim |
++| LIT-053 | source statement / discovery | Widom, Hankel matrices; exact hypotheses and limitations in record | mz-widom-1966-screen | record-specific locator | [mz-widom-1966-screen.md](records/mz-widom-1966-screen.md) | selected text, abstract, metadata or UNVERIFIED as individually labeled; no blanket fulltext claim |
++| LIT-054 | source statement / discovery | Widom–Wilf, small eigenvalues; exact hypotheses and limitations in record | mz-widom-1966-screen | record-specific locator | [mz-widom-1966-screen.md](records/mz-widom-1966-screen.md) | selected text, abstract, metadata or UNVERIFIED as individually labeled; no blanket fulltext claim |
++| LIT-055 | source statement / discovery | Trefethen 2008 exact mode aliasing; exact hypotheses and limitations in record | mz-quadrature-aliasing-screen | record-specific locator | [mz-quadrature-aliasing-screen.md](records/mz-quadrature-aliasing-screen.md) | selected text, abstract, metadata or UNVERIFIED as individually labeled; no blanket fulltext claim |
++| LIT-056 | source statement / discovery | Xiang–Bornemann 2012 coefficient-decay quadrature; exact hypotheses and limitations in record | mz-quadrature-aliasing-screen | record-specific locator | [mz-quadrature-aliasing-screen.md](records/mz-quadrature-aliasing-screen.md) | selected text, abstract, metadata or UNVERIFIED as individually labeled; no blanket fulltext claim |
++| LIT-057 | source statement / discovery | Hale–Townsend 2014 transform; exact hypotheses and limitations in record | mz-quadrature-aliasing-screen | record-specific locator | [mz-quadrature-aliasing-screen.md](records/mz-quadrature-aliasing-screen.md) | selected text, abstract, metadata or UNVERIFIED as individually labeled; no blanket fulltext claim |
++| LIT-058 | source statement / discovery | PDE-method ancestor, unresolved norm comparison; exact hypotheses and limitations in record | mz-don-gottlieb-1994 | record-specific locator | [mz-don-gottlieb-1994.md](records/mz-don-gottlieb-1994.md) | selected text, abstract, metadata or UNVERIFIED as individually labeled; no blanket fulltext claim |
++| LIT-059 | source statement / discovery | Passi thesis is bachelor's, numerical extension; exact hypotheses and limitations in record | mz-passi-cv-2026 | record-specific locator | [mz-passi-cv-2026.md](records/mz-passi-cv-2026.md) | selected text, abstract, metadata or UNVERIFIED as individually labeled; no blanket fulltext claim |
++| LIT-060 | source statement / discovery | author CV publication/in-preparation metadata; exact hypotheses and limitations in record | mz-passi-cv-2026 | record-specific locator | [mz-passi-cv-2026.md](records/mz-passi-cv-2026.md) | selected text, abstract, metadata or UNVERIFIED as individually labeled; no blanket fulltext claim |
+diff --git a/state/CURRENT.md b/state/CURRENT.md
+index e64cc9d..e38060d 100644
+--- a/state/CURRENT.md
++++ b/state/CURRENT.md
+@@ -35,3 +35,5 @@ PD-N001 refutes original U1 necessity in characteristic2 (F4,m1 andF8,m2). PD-T0
+ PD-T004–008 prove canonical good-characteristic Padua Gram/unisolvence, finite-field rationality, Dickson squared discriminant, quadratic-character description and general code structure. PD-T009/010 keep finite checks/distances MEASURED. PD-T012 proves universal linear-code upper bounds matching the measured q7 attainments. PD-T011 retains ideal/recurrence and unrestricted-transform source extensions OPEN, deferred after bounded registration. U2 other-pattern and U3 counting/pivot/decoding frontiers remain deferred.
+ 
+ Mechanisms are conservatively attributed to existing determinant and kernel theory; no publication-level novelty claim. [Track](../tracks/unisolvence/README.md), [ranked report](../topics/charter-unisolvence-20261031/report.md), [audit handoff](../topics/charter-unisolvence-20261031/AUDIT_HANDOFF.md). Four U0 and five U1 conceptual rounds used; no extension or ultra assignment. The source theory remains retrievable through frozen commits and the ID crosswalk.
++
++MZ track (PR preparation, codex/mz-constants-20261031): for Lebesgue Clenshaw–Curtis at N+1 Lobatto nodes, PD-T014 proves λ_max<2 below degreeN, PD-T017/018 prove λ_min(N,N−1) asymp(1+logN)^−2, and PD-T024 supplies explicit η(θ)<1 for every fixedθ<1; PD-N004 refutes the uniform endpoint eta≤3/4 applicability assumption at N512, while PD-T025 gives the separate upper-Gram hyperinterpolation application and PD-T021 the exact signed-Padua marginal reduction. Sharp constants and the full2Dtarget remain OPEN, finite spectra MEASURED. This is one scoped track paragraph, not a replacement charter. StageAUDIT; requiredClaude audit and batchcoordination remain pending; see [log](../topics/mz-constants/LOG.md), [report](../topics/mz-constants/report.md), and [shared allocation ledger](../topics/padua-batch-20261031/ALLOCATIONS.md).
+diff --git a/state/IDEAS.md b/state/IDEAS.md
+index ec63d2c..8c810a2 100644
+--- a/state/IDEAS.md
++++ b/state/IDEAS.md
+@@ -119,3 +119,273 @@ No candidate is scientifically accepted by this literature developer. Fulltext g
+ ## History and reading obligations
+ 
+ Step0 seed preceded U1 launch under AC's explicit override. Source corrections include HSConj3 solved by Cao–Ghimire–Wang2022, exact source test counts and floating log-determinant metric. No source report becomes an inherited proof. Each active candidate received a bounded predecessor screen and independent Astra reconstruction before retention as a developed result; Claude audit remains pending. Contextual entries preserve supplied dispositions and are deferred from this campaign, without asserting locally verified scientific status.
++
++## Entries — supplied seeds at launch (historical dispositions)
++
++The active/deferred and gate-pending wording in these eight original seeds records the predevelopment state. Current dispositions superseding it are in the MZ development section below; the closed first targets are M1/M2/M3 and the manuscript gate is now met.
++
++### IDEA-052 — Literature baseline (M0)
++
++Aliases: duplicate screen; classical interpolation norms; historical priority.
++
++- Question / scope: do the listed predecessors already contain the precise CC discrete norm bounds?
++- Mechanism and hypotheses: compare node counts, Lebesgue measure, degree ranges and explicit constants in full text.
++- Closest registry entries (read in full): none at d367228; supplied F7 is unaudited predecessor.
++- Separation criterion: an inspectable theorem with the same norm and degree range kills a novelty claim even if notation differs.
++- Literature baseline and limitations: [search record](../topics/mz-constants/literature-search.md); unavailable load-bearing fulltexts remain pending-reference.
++- Applicable obstructions: empty registry supplies no evidence of priority.
++- Novelty gate verdict: variant of the supplied search; no novelty claimed.
++- Cheapest decisive test / kill criterion: check ASV and An–Wu fulltexts, then historical norm results before accepting novelty.
++- Test discriminability: distinguishes a numerical observation from a matching theorem; title/abstract alone cannot exclude coverage.
++- Actual results: sourced statements in literature/records/mz-*.md, with explicit reading limits.
++- Disposition: active baseline; no research theorem.
++- Canonical theory: none; topic/audit: topics/mz-constants/.
++
++### IDEA-053 — CC upper spectrum (M1 seed)
++
++Aliases: Hankel defect; λ_max<2; beyond half-exactness.
++
++- Question: Q_N(p²)<2∫p² for every nonzero p∈Π_(N−1), N≥2?
++- Mechanism: exact Chebyshev aliasing and Legendre connection coefficients; distinguish entrywise positivity from positive semidefiniteness.
++- Closest entries: full M0 seed and supplied F7; no preexisting scientific registry entry.
++- Separation criterion: a quantitative upper norm constant below 2 over the entire requested range; a historical theorem giving it removes novelty.
++- Literature: M0 ongoing; Sloan–Smith and historical MZ bounds are threats, not exclusions.
++- Applicable obstruction: at n=N the T_N quotient exceeds 2. Restricting to Π_(N−1) is essential.
++- Verdict: supplied candidate/variant; no novelty accepted.
++- Cheapest decisive test and prewritten kill criterion: reproduce small N and find whether any nonzero p violates <2; test any proposed PSD inference on a 2×2 minor.
++- Test discriminability: numerical violation kills a universal candidate; finite agreement cannot prove it.
++- Actual results: direction M1 records; no inherited proof.
++- Disposition: active, independent Astra reconstruction and prior-art check required before acceptance.
++- Canonical theory: tracks/mz-constants/theory/m1-*.md; topic/audit: topics/mz-constants/directions/M1/.
++
++### IDEA-054 — CC lower spectrum (M2 seed)
++
++Aliases: log² interpolation norm; weighted Schur; endpoint packet; Widom asymptotics.
++
++- Question: c/(1+log N)²≤λ_min(N,N−1)≤C/(1+log N)²?
++- Mechanism: DCT-I cardinal mass matrix, positive CC weight floor, weighted Schur majorant; matching explicit parity-compatible packet.
++- Closest entries: M1 seed, supplied F7 and C4-template mapping; private material is motivation only and must be reproved publicly.
++- Separation criterion: prove both all-N inequalities for this precise quadrature norm. A bound only on one side or full Π_N test vector outside Π_(N−1) kills the claimed match.
++- Literature: M0; Mastroianni–Milovanović and weighted interpolation norm theory may subsume this.
++- Obstructions: U_(N−1) yields only an O(1/log N) upper bound; a Schur upper majorant does not provide the matching lower mass-matrix eigenvalue bound.
++- Verdict: supplied candidate/variant; no novelty accepted.
++- Cheapest decisive test / prewritten kill: check cardinal scaling, endpoint factor and parity constraint before asymptotics; measure whether a packet quotient/log²N vanishes.
++- Test discriminability: algebraic constraint failure kills that packet; slowly varying finite data do not establish asymptotics.
++- Actual results: M2 direction record; supplied fits remain unverified until rerun.
++- Disposition: active, prior-art and Astra review required before acceptance.
++- Canonical theory: tracks/mz-constants/theory/m2-*.md.
++
++### IDEA-055 — Fixed-ratio bound and corrected applicability (M3)
++
++Aliases: relaxed-exactness hyperinterpolation; η(θ); An–Wu assumption.
++
++- Question: explicit η(θ)<1 uniform in n≤θN for fixed θ<1?
++- Mechanism: combine upper norm control with a uniform positive lower bound; derive error constants with the actually established MZ factor.
++- Closest entries: full M1/M2 seeds; supplied F7 fixed-ratio measurements and An–Wu conditional theorem.
++- Separation criterion: explicit constants near θ=1 rather than unspecified norm equivalence; fulltext coverage can kill novelty.
++- Literature limits: exact published degree/node conventions must be verified. Refuting an applicability assumption does not refute a conditional theorem.
++- Obstruction: a constant independent of N at n=N−1 cannot follow from the supplied U quotient.
++- Verdict: variant with a quantitative target; unaccepted.
++- Cheapest test / kill: n=N−1 destroys a proposed uniform endpoint η≤3/4; fixed-ratio spectra test proposed explicit constants.
++- Test discriminability: endpoint counterexample does not refute fixed θ<1.
++- Actual results: queued; no independent acceptance yet.
++- Disposition: deferred until active slot free; resume after M1 or M2 closes its bounded rounds.
++- Canonical theory: pending.
++
++### IDEA-056 — Padua signed-weight extension (M4)
++
++Aliases: exact x-marginal; total degree; two-dimensional Schur.
++
++- Question: λ_max<2 and lower asymptotics on Π_(m−1) for interpolatory Lebesgue Padua rules?
++- Mechanism: exact x-marginal 2Q_m and a separate two-dimensional argument.
++- Closest entries: M1/M2 seeds and supplied marginal code; classical Padua cubature is prior art.
++- Separation criterion: a 2D upper bound or matching asymptotic requires information beyond compression to univariate polynomials. Marginal domination alone kills any claimed implication of an upper bound or convergence.
++- Literature / obstruction: signed weights forbid free positive-definiteness; private C4 curve obstruction is only an analogy.
++- Verdict: supplied variant; no accepted novelty.
++- Cheapest decisive test / kill: prove normalization with p(x)/√2 and compare signed Gram spectra before attempting Schur.
++- Test discriminability: exact compression proves domination only; no positivity conclusion.
++- Actual results: reproduction only; no new substantive direction launched.
++- Disposition: deferred until M1/M3; foundational reduction may be audited separately.
++- Canonical theory: pending.
++
++### IDEA-057 — Other interpolatory rules (M5)
++
++Aliases: Fejér; Gauss–Lobatto; Gauss–Radau; measure dependence.
++
++- Question / mechanism: classify sharp η<1 degree windows by aliasing and exactness for each node/weight/measure triple.
++- Closest entries: full M1/M4 seeds, ASV questions and supplied Passi lead.
++- Separation: beyond a relabeling of CC; a change of measure changes the norm and must be explicit.
++- Literature / obstruction: fulltext screen pending; any node-vanishing polynomial forces a zero Gram eigenvalue at degree≥number of nodes.
++- Verdict: supplied candidate; no novelty accepted.
++- Cheapest test / prewritten kill: the exact node polynomial kills any η<1 claim in that range.
++- Test discriminability: does not classify the lower-degree window.
++- Actual results: not launched.
++- Disposition: deferred; resume after M1/M3 if a concrete unclassified family remains.
++- Canonical theory: pending.
++
++### IDEA-058 — Fast and certified spectra (M6)
++
++Aliases: HSS; node order; interval checker; finite reduction.
++
++- Question / mechanism: can a rigorously reduced finite check close an analytic gap or accelerate exploratory spectra beyond 10^5?
++- Closest entries: M1/M2 seeds; supplied HSS rank observations; structured-matrix algorithms are prior art.
++- Separation: certified bound is distinct from tolerance-dependent numerical rank; rank growth or a missing all-N tail argument kills certification.
++- Literature / obstruction: primary algorithm coverage pending; floats are MEASURED, regardless of solver precision.
++- Verdict: supplied computational variant, not a theorem.
++- Cheapest test / kill: compare small dense spectra and residuals; require reduction, rigorous arithmetic, committed checker and actual independent rerun before PROVED.
++- Test discriminability: finite numerical agreement validates only measured scope.
++- Actual results: bounded reproduction delegated; heavy runs not launched.
++- Disposition: deferred as proof route until an exact finite obligation exists.
++- Canonical theory: reproduction claim under a separate provisional PD-T ID.
++
++### IDEA-059 — Manuscript (M7)
++
++Aliases: short note; DRNA; BIT; Numer. Algorithms.
++
++- Question / mechanism: synthesize accepted M1/M3 and M2 or a scoped part into a short paper.
++- Closest entries: full M1–M6 seeds and supplied proposed title; no new mechanism.
++- Separation / kill: the explicit acceptance gate fails if M1 or M3 remains open or unaudited; drafting cannot upgrade a result.
++- Literature / obstruction: novelty and possible An–Sommariva–Xue overlap must be checked before submission.
++- Verdict: synthesis only; no novelty claim.
++- Cheapest decisive test: review gate and final IDs after independent checks.
++- Test discriminability: editorial readiness is separate from mathematical validity.
++- Actual results: gate pending.
++- Disposition: deferred until gate met; report development briefs if not.
++- Canonical theory: none; paper destination tracks/mz-constants/paper/ only if gate reached.
++
++## Obstruction table
++
++| Obstruction ID | Exact obstruction and hypotheses | Affected ideas | Evidence | Scope / escape conditions |
++|---|---|---|---|---|
++
++## Disposition table
++
++| Idea ID | Verdict | Outcome | Canonical record | Next decisive step |
++|---|---|---|---|---|
++| IDEA-052 | supplied search variant | active baseline | literature-search.md | verify fulltext coverage |
++| IDEA-053 | supplied mathematical variant | active M1 | directions/M1/ | quantitative proof and Astra review |
++| IDEA-054 | supplied mathematical variant | active M2 | directions/M2/ | cardinal/packet proof and Astra review |
++| IDEA-055 | quantitative variant | deferred | M3 seed | active slot and exact constants |
++| IDEA-056 | supplied 2D variant | deferred | M4 seed | separate signed-weight argument |
++| IDEA-057 | supplied classification variant | deferred | M5 seed | identify unsolved family after M1/M3 |
++| IDEA-058 | computational variant | deferred proof route | M6 seed | proved finite reduction |
++| IDEA-059 | synthesis | deferred | M7 seed | explicit acceptance gate |
++
++## MZ development dispositions and local candidate memory
++
++All local candidates below were independently reconstructed by gpt-6-astra xhigh; the exact scope/accepted or deferred disposition is in the [audit](../topics/mz-constants/independent-astra-01.md). Analytic validity was accepted for the proved M1/M2/M3 statements and the exact marginal reduction; novelty remains unresolved. Seed M1/M2/M3 targets are now developed, and the manuscript gate is met. M4's main signed-weight target, M5 classification and M6 certification route remain deferred/OPEN. The gate does not constitute required Claude acceptance.
++
++### IDEA-060 — infer PSD from the active defect signs
++
++Aliases: nonnegative Hankel defect; direct Loewner domination.
++
++Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M1/IDEAS.md](../topics/mz-constants/directions/M1/IDEAS.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-11`; final mapping is immutable.
++
++### IDEA-061 — direct row diagonal dominance
++
++Aliases: Gershgorin of 2M−R; plain Chebyshev mass rows.
++
++Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M1/IDEAS.md](../topics/mz-constants/directions/M1/IDEAS.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-12`; final mapping is immutable.
++
++### IDEA-062 — absolute-coefficient comparison for a Z-matrix
++
++Aliases: sign replacement; Z-matrix upper MZ proof; 2M−R comparison.
++
++Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M1/IDEAS.md](../topics/mz-constants/directions/M1/IDEAS.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-13`; final mapping is immutable.
++
++### IDEA-063 — quantify the gap through a telescoping mass floor
++
++Aliases: half-constant coefficient scaling; weighted mass dominance.
++
++Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M1/IDEAS.md](../topics/mz-constants/directions/M1/IDEAS.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-14`; final mapping is immutable.
++
++### IDEA-064 — source-reported full-degree top mode
++
++Aliases: T_N obstruction; codimension-one endpoint exclusion.
++
++Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M1/IDEAS.md](../topics/mz-constants/directions/M1/IDEAS.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-15`; final mapping is immutable.
++
++### IDEA-065 — weighted cardinal-cell Schur estimate
++
++Aliases: interpolation operator with endpoint weight; critical weighted convolution.
++
++Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M2/candidates.md](../topics/mz-constants/directions/M2/candidates.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-21`; final mapping is immutable.
++
++### IDEA-066 — endpoint-cancelled harmonic U witness
++
++Aliases: parity-exact harmonic trial; admissible log-cubed continuous mass.
++
++Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M2/candidates.md](../topics/mz-constants/directions/M2/candidates.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-22`; final mapping is immutable.
++
++### IDEA-067 — exact simpler U witness
++
++Aliases: U_(N−1) endpoint polynomial.
++
++Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M2/candidates.md](../topics/mz-constants/directions/M2/candidates.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-23`; final mapping is immutable.
++
++### IDEA-068 — uniform endpoint eta≤3/4
++
++Aliases: three-quarter endpoint bound.
++
++Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M2/candidates.md](../topics/mz-constants/directions/M2/candidates.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-24`; final mapping is immutable.
++
++### IDEA-069 — ordinary Lebesgue bound plus cardinal L1 columns
++
++Aliases: absolute-cardinal Cauchy route.
++
++Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M2/candidates.md](../topics/mz-constants/directions/M2/candidates.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-25`; final mapping is immutable.
++
++### IDEA-070 — direct transfer of full-space alternating trial
++
++Aliases: uncorrected alternating normalized-node vector.
++
++Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M2/candidates.md](../topics/mz-constants/directions/M2/candidates.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-26`; final mapping is immutable.
++
++### IDEA-071 — a sharp rescaled endpoint limit
++
++Aliases: exact leading logarithmic constant.
++
++Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M2/candidates.md](../topics/mz-constants/directions/M2/candidates.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-27`; final mapping is immutable.
++
++### IDEA-072 — correctly normalized Padua marginal
++
++Aliases: marginal uniqueness; univariate isometric compression.
++
++Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M2/padua-foundation-record.md](../topics/mz-constants/directions/M2/padua-foundation-record.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-28`; final mapping is immutable.
++
++### IDEA-073 — degree-sensitive sign comparison
++
++Aliases: rho Z-matrix; ratio-dependent upper MZ constant.
++
++Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M3/IDEAS.md](../topics/mz-constants/directions/M3/IDEAS.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-31`; final mapping is immutable.
++
++### IDEA-074 — filtered circle reconstruction removes the log N loss
++
++Aliases: oversampled Fejér kernel; de la Vallée Poussin difference; inverse weighted Schur.
++
++Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M3/IDEAS.md](../topics/mz-constants/directions/M3/IDEAS.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-32`; final mapping is immutable.
++
++### IDEA-075 — hyperinterpolation uses the upper Gram bound directly
++
++Aliases: adjoint evaluation bound; positive-rule hyperinterpolation stability.
++
++Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M3/IDEAS.md](../topics/mz-constants/directions/M3/IDEAS.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-33`; final mapping is immutable.
++
++### IDEA-076 — explicit two-sided assembly
++
++Aliases: strong eta(theta); fixed-ratio spectrum interval.
++
++Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M3/IDEAS.md](../topics/mz-constants/directions/M3/IDEAS.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-34`; final mapping is immutable.
++
++
++## MZ obstruction memory
++
++| Obstruction | Exact hypotheses / scope | Affected mechanism | Evidence / escape condition |
++|---|---|---|---|
++| Hankel signs do not imply PSD | CC restricted defect indefinite for N≥5 | entrywise-positive-defect-to-Loewner inference | PD-N002; use the separate Z-matrix argument |
++| Plain row dominance fails | exact N5 row margin−2/35 | unscaled Gershgorin proof of2M−R | PD-N003; weighted continuous mass floor escapes it |
++| Uniform eta≤3/4 fails | N512,n511,513points | endpoint applicability assumption | PD-N004; conditional source theorem remains valid |
++| Uniform absolute cardinal columns fail | endpoint column has inverse normalized mass growing withN | ordinary cardinal-L1-column proof | PD-N005; angular-cell weighted Schur escapes it |
++| Alternating full-space trial inadmissible | specified strictly alternating values force nonzero degreeN coefficient | uncorrected transfer to Π_(N−1) | PD-N006; harmonicU combination enforces exact constraint |
++| Marginal lower domination is one-sided | signedPaduaRule, isometric univariate compression | inferring2D upperbound/convergencefromcompression | PD-T021/PD-T028; control complementary modes separately |
++| Endpoint eta rate needs uppergap | 1−eta=min(λmin,2−λmax) | inferringlog^-2eta deficiencyfromλmin alone | PD-T027; prove uniformgap or sharperendpointestimate |
+diff --git a/topics/README.md b/topics/README.md
+index d339b7f..d13367b 100644
+--- a/topics/README.md
++++ b/topics/README.md
+@@ -10,3 +10,5 @@ Keep proposals, gate decisions, reports, audit-NN.md, response-NN.md and reprodu
+ |---|---|---|
+ | [charter-unisolvence-20261031](charter-unisolvence-20261031/LOG.md) | codex/charter-unisolvence-20261031; AUDIT | First charter, literature baseline and bounded arbitrary-field checkerboard campaign |
+ | [initialize-padua](initialize-padua/LOG.md) | Historical initialization record | Repository rules/templates and pre-merge audits |
++
++Active MZ campaign: [log](mz-constants/LOG.md), [report](mz-constants/report.md), [audit handoff](mz-constants/AUDIT_HANDOFF.md). Shared reservations: [batch ledger](padua-batch-20261031/ALLOCATIONS.md).
+diff --git a/tracks/README.md b/tracks/README.md
+index e40e1ec..3f17771 100644
+--- a/tracks/README.md
++++ b/tracks/README.md
+@@ -5,3 +5,7 @@
+ | [unisolvence](unisolvence/README.md) | Algebraic total-degree checkerboard interpolation over arbitrary fields, motivated by Padua sets | PD-T001–012, PD-N001; required Claude audit PENDING |
+ 
+ Track theories use global IDs and explicit assumptions/statuses. Negative results are scoped mechanisms; equivalent/abandoned ideas remain idea dispositions. No other scientific track is active.
++
++## Active scoped track
++
++[CC/Padua MZ constants](mz-constants/README.md): analytic CC upper, endpoint and fixed-ratio bounds; signed Padua marginal reduction, finite reproduced spectra and explicit open targets. The campaign charter is owned by the separate charter topic.

@@ -1,0 +1,37 @@
+{
+  "base": "d36722823441dc40c6e19d69a174459348dd309c",
+  "charter_source": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+  "charter_local_squash": "b21e395da9723e8b64772ffeb76d1d54a1b22b5e",
+  "mz_source": "39f4785d48de7e77ff99e209bda954d632c61956",
+  "resolved_local_squash": "be1665d7ba6b0de3478f07dcce6a8870921d3c6f",
+  "disposable_worktree": "/tmp/mz-batch-final-rehearsal-20261031",
+  "disposable_local_branch": "codex/mz-batch-final-rehearsal-20261031",
+  "conflicts": [
+    "ID_CROSSWALK.md",
+    "PAPER_MAP.md",
+    "PROOF_STATUS.md",
+    "literature/CORPUS.md",
+    "literature/INDEX.md",
+    "state/CURRENT.md",
+    "state/IDEAS.md",
+    "topics/README.md",
+    "tracks/README.md"
+  ],
+  "semantic_checks": {
+    "proof_ids_unique": 34,
+    "literature_ids_unique": 60,
+    "idea_ids_present": 76,
+    "all_charter_shared_files_preserved_as_prefix": true,
+    "authored_diff_check_passed": true
+  },
+  "verbatim_input_whitespace_exceptions": [
+    "topics/mz-constants/sources/padua_mz_inputs/code/bttbmap_b2_cc_schur.py:18",
+    "topics/mz-constants/sources/padua_mz_inputs/code/bttbmap_b2b_cc_testvec.py:18"
+  ],
+  "repair_patch": {
+    "path": "topics/mz-constants/batch-registry-resolution.patch",
+    "bytes": 67983,
+    "sha256": "654f052af0e54aa08392afe90bf9785ae802c6f35c56365b6143463e9d5c039e"
+  },
+  "limit": "Local rehearsal only; no remote branch/main changed. Actual topic update waits for AC integration or branch-owner coordination."
+}

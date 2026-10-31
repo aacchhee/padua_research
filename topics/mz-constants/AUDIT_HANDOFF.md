@@ -19,14 +19,14 @@ The mathematical proofs are analytic. The exact finite checkers supplement them;
 From repository root, with Python3.12, NumPy2.3.5 and SciPy1.17.0 (exact versions in evidence):
 
 ```sh
-python tracks/mz-constants/code/m1_exact_check.py --help
+python tracks/mz-constants/code/m1_exact_check.py --max-n 40 --float 2 3 4 5 6 10 20 40 80 160 320
 python tracks/mz-constants/code/m2_endpoint.py --exact 512 --measure 8 16 32 64 128 256 512 1024
 python tracks/mz-constants/code/m3_exact_check.py --max-n 25 --measure 20 40 80 160
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python tracks/mz-constants/code/reproduce.py --suite all --max-N 1280 --output /tmp/mz-claude-reproduction.json
 python tracks/mz-constants/evidence/protocol-check.py
 ```
 
-The exact executed M1 invocation and outputs are in directions/M1/RUNS.md; `--help` above is discovery only, not represented as a theorem check. Astra's own independent check/replays and comparisons are under tracks/mz-constants/evidence/astra-*. Re-executed numerical JSON has new timestamps/timings; compare numerical fields and source hashes, not full-file timestamps.
+The exact executed M1 invocation and outputs are in directions/M1/RUNS.md. Astra's own independent check/replays and comparisons are under tracks/mz-constants/evidence/astra-*. Re-executed numerical JSON has new timestamps/timings; compare numerical fields and source hashes, not full-file timestamps.
 
 For manuscript compilation use the exact commands and destination in tracks/mz-constants/paper/README.md. The PDF is a local deliverable outside Git; TeX and bibliography are committed. No PDF/source fulltext belonging to third parties is committed.
 
