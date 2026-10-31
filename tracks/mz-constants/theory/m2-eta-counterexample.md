@@ -4,8 +4,8 @@ Review update, 2026-10-31: final ID allocation and scoped independent Astra revi
 
 ID kind: PD-N.
 Aliases: exact U witness counterexample to a uniform three-quarter endpoint bound.
-Split from: the original combined M2 evidence discussion.
-Split into: none; exact U norm identity is PD-T019.
+Split from: the original combined M2 endpoint evidence discussion retained with [PD-T019](m2-u-witness.md). This finite negative statement is separate from, and uses, PD-T019's exact norm identity; it is not a conjunct or case of that identity.
+Split into: none; exact U norm identity and reciprocal provenance are in PD-T019. The separate matching log-squared result PD-T018 is not used in this finite certificate.
 
 ## Statement
 
@@ -75,3 +75,5 @@ Independent acceptance. Literature worker must separately verify the precise sou
 ## History
 
 2026-10-31, Codex subagent, gpt-6.1-sol xhigh (explicit orchestrator assignment), rules/base d36722823441dc40c6e19d69a174459348dd309c. Split from the supporting U formula so the negative statement retains its exact scope.
+
+2026-10-31, audit-01 P4 response, Codex gpt-6.1-sol xhigh (explicit assignment), rules `6d10a82cf6fd6f7ef6fbe76e68133ccbcbe51994`: made provenance reciprocal with PD-T019 and distinguished the proof dependency from a true statement decomposition. The finite scope, proof, PROVED status and IDEA-068 disposition are unchanged.

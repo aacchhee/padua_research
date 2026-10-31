@@ -108,3 +108,7 @@ No more M1 conceptual rounds are necessary to close the frozen first target. The
 | PD-N003 | tracks/mz-constants/theory/m1-failed-diagonal-dominance.md | PROVED scoped mechanism failure |
 
 All acceptance decisions are pending; the orchestrator will integrate final IDs and shared crosswalks at PR preparation. No Git state, shared registry, or manuscript was mutated by this worker.
+
+## Audit-01 M1 — retained mass inequality and superseded application
+
+IDEA-063 / PD-T015 remains an independent PROVED mass inequality, not a failed candidate. Its use to derive the original endpoint constant 2−2/(πN) is quantitatively superseded by IDEA-073 / PD-T022: 2−4/N+4/N² is smaller for every N≥2. PD-T014 keeps its independent short proof of the strict qualitative threshold and the original weaker quantitative proof. The current report/manuscript use the stronger corollary; this addendum preserves the historical four rounds and makes the current comparison explicit.

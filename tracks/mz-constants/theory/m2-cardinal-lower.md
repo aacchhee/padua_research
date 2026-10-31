@@ -15,7 +15,7 @@ Let N≥2 be an integer. For every real polynomial p of degree at most N,
     K_N=4π²(π+1)² h_N(h_N+2H_(floor(N/2)+1)),
     h_N=2H_(N+1)−1,   H_s=Σ_(r=1)^s 1/r.
 
-Consequently λ_min(CC,N−1)≥1/K_N. In particular it is bounded below by a positive explicit constant times (1+log N)^−2. The statement is stronger in degree than the M2 question: it includes Π_N.
+Consequently λ_min(CC,N)≥1/K_N, and restriction gives λ_min(CC,N−1)≥λ_min(CC,N)≥1/K_N. In particular both are bounded below by a positive explicit constant times (1+log N)^−2. The statement includes the full interpolation space Π_N.
 
 ## Definitions
 
@@ -133,3 +133,5 @@ Independent mathematical acceptance and full historical duplicate screen. Improv
 ## History
 
 2026-10-31, Codex subagent mathematical development, gpt-6.1-sol xhigh (explicit orchestrator assignment), rules/base SHA above. The supplied matrix-entry hypothesis was replaced by a separately derived cardinal-cell argument. No private text copied.
+
+2026-10-31, audit-01 L3 response, Codex gpt-6.1-sol xhigh (explicit assignment), rules `6d10a82cf6fd6f7ef6fbe76e68133ccbcbe51994`: the original consequent stated only λ_min(CC,N−1)≥1/K_N although the unchanged inequality and proof cover Π_N. Stated λ_min(CC,N)≥1/K_N explicitly and retained the degree-N−1 consequence by restriction. Status remains PROVED.

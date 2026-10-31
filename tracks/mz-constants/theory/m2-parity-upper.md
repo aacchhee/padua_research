@@ -4,8 +4,8 @@ Review update, 2026-10-31: final ID allocation and scoped independent Astra revi
 
 ID kind: PD-T.
 Aliases: endpoint-cancelled harmonic U witness; degree-constrained log-squared upper estimate.
-Split from: M2 target, two-sided logarithmic endpoint order.
-Split into: none. The lower bound is PD-T017; the simpler U witness is PD-T019.
+Split from: the original M2 two-sided logarithmic endpoint target and the endpoint discussion retained in [PD-T019](m2-u-witness.md). PD-T019 is a related independent supporting witness, not a proof dependency or a parent whose exact norm statement is decomposed here.
+Split into: none. The lower bound is PD-T017; the simpler U witness is PD-T019, whose header reciprocally records this separation.
 
 ## Statement
 
@@ -126,6 +126,8 @@ For L≥128, its quotient is at most 250·512/L²=128000/L². If 0<L<128, the co
 
 This supplies the matching upper order in the precise degree-N−1 space. The large constants are analytic comparison constants, not estimates of the optimal leading coefficient. The lower theorem and this theorem establish a full two-sided order result, subject to independent acceptance.
 
+The witness estimate starts at log N≥128, but its bound 128000/(log N)² is below the trivial upper bound 1 exactly when log N>√128000≈357.7709 (equivalently N>exp(√128000)); it is therefore vacuous throughout all computationally feasible full-spectrum calculations considered here, and the finite tables do not exhibit or determine an asymptotic leading constant.
+
 ## Open items
 
 Prior-art comparison and independent adversarial audit. Determining lim (log N)²λ_min, or proving that it exists, remains open. This result alone implies liminf η_N≥1 for η_N=||I−G_N||₂; asserting η_N→1 also requires upper-spectrum control and is not done here.
@@ -133,3 +135,5 @@ Prior-art comparison and independent adversarial audit. Determining lim (log N)�
 ## History
 
 2026-10-31, Codex subagent, gpt-6.1-sol xhigh (explicit orchestrator assignment); rules/base d36722823441dc40c6e19d69a174459348dd309c. The full-space alternating-node trial was not transferred; the harmonic U construction was derived to satisfy degree and endpoint constraints.
+
+2026-10-31, audit-01 L2/P4 response, Codex gpt-6.1-sol xhigh (explicit assignment), rules `6d10a82cf6fd6f7ef6fbe76e68133ccbcbe51994`: stated the exact non-vacuity threshold and finite-table limitation without introducing a fit or changing the comparison constant. Added reciprocal semantic provenance to PD-T019, distinguishing separation of the endpoint discussion from decomposition of its exact norm statement. The proof, statement and PROVED status are unchanged.

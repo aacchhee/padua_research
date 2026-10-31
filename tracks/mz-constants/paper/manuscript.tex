@@ -31,7 +31,8 @@
 \maketitle
 \begin{center}\small
 \textbf{Development status.} Independent Astra reconstruction accepted the analytic
-M1--M3 results within its stated scope. Required Claude audit: \textbf{PENDING}.
+M1--M3 results within its stated scope. Claude audit~01 accepted the original mathematical statements; focused
+re-audit of this response: \textbf{PENDING}.
 Historical priority and novelty: \textbf{unresolved}; see Section~\ref{sec:context}.
 \end{center}
 
@@ -40,7 +41,8 @@ For the Lebesgue Clenshaw--Curtis rule on the $N+1$ Chebyshev extrema,
 we prove that its squared-polynomial norm ratio is less than two through
 degree $N-1$. An absolute-coefficient comparison for a matrix with
 nonpositive off-diagonal entries gives the explicit upper bound
-$2-2/(\pi N)$. At degree $N-1$, weighted estimates for cardinal
+$2-4/N+4/N^2$ by specializing its degree-sensitive form.
+At degree $N-1$, weighted estimates for cardinal
 interpolation and a parity-compatible harmonic combination of second-kind
 Chebyshev polynomials give a minimum Gram eigenvalue of order
 $(1+\log N)^{-2}$. Thus the Gram condition number has order
@@ -113,13 +115,16 @@ points \citep{LIT-046}. We will keep these meanings separate.
 For orientation, our principal CC conclusions are
 \begin{align}
  &0<\lambda_-(N,n)\le\lambda_+(N,n)
-       \le 2-\frac2{\pi N}<2, &&0\le n<N,\label{eq:main-upper}\\
+       \le 2-\frac4N+\frac4{N^2}<2, &&0\le n<N,\label{eq:main-upper}\\
  &\lambda_-(N,N-1)\asymp (1+\log N)^{-2},\label{eq:main-endpoint}\\
  &\frac{(1-n/N)^2}{C_*}\le\lambda_-(N,n)
        \le\lambda_+(N,n)\le1+\max\{2n/N-1,0\}^2,
        &&0\le n<N,\label{eq:main-ratio}
 \end{align}
 with $C_*=12(1+\pi)^4(1+2/\pi)$. All constants are deliberately nonsharp.
+The upper constant in \eqref{eq:main-upper} is the endpoint corollary
+of the degree-sensitive estimate \eqref{eq:main-ratio}; it equals the
+exact quotient one when $N=2$, and the upper inequality is strict for $N\ge3$.
 At full degree $N$ the upper threshold fails, as an explicit $T_N$
 test shows below. Padua conclusions will be restricted to an exact
 compression and a one-sided asymptotic implication.
@@ -144,6 +149,20 @@ Only their recorded summaries, abstracts, metadata, or bibliographies have
 been inspected; their relevant full-text norm theorems are
 \emph{pending-reference}. The same restriction applies to the
 Widom and Widom--Wilf matrix-asymptotic pointers \citep{LIT-053,LIT-054}.
+Weighted mean convergence of Lagrange interpolation and converse
+quadrature-sum inequalities are a further unresolved source of possible
+overlap: Erd\H{o}s--Feldheim, Askey, Nevai~III (with its later addendum),
+Lubinsky's converse-MZ work, and Smith's explicit Lobatto theorem
+\citep{LIT-061,LIT-062,LIT-063,LIT-064,LIT-065}.
+Mastroianni--Russo and Xu follow-ups are also named in the source screen.
+Selected primary text was reached for the first, second, fourth and fifth
+records; Nevai's precise theorem remains \emph{pending-reference}.
+Lubinsky gives converse inequalities in the relevant general form, but
+its critical CC nodal-coefficient specialization was not verified.
+Smith's inspected Lobatto result uses a different continuous weight and
+continuous-function input norm. The exact Lobatto nodes, endpoint weights,
+Lebesgue $L^2$ versus CC-weighted nodal $\ell^2$ norm, and critical logarithmic
+growth must be matched before any equivalence or novelty verdict.
 In particular, a weighted nodal $\ell^2$ to Lebesgue $L^2$ Lobatto
 interpolation theorem could be equivalent to part of
 \eqref{eq:main-endpoint}. No claim of a first proof, exhaustive openness,
@@ -252,13 +271,14 @@ then $a^TMa=\int_0^\pi q^2\sin\theta\dd\theta
 \le\int_0^\pi q^2\dd\theta=(\pi/2)a^TEa$, proving the upper bound.
 \end{proof}
 
-\begin{theorem}[Strict upper threshold; \id{PD-T014}]\label{thm:upper}
+\begin{theorem}[Strict threshold and endpoint refinement; \id{PD-T014}, \id{PD-T022}]\label{thm:upper}
 For $0\ne p\in\Pn_{N-1}$,
 \[
- 0<Q_N(p^2)\le\left(2-\frac2{\pi N}\right)\int_{-1}^1p^2
+ 0<Q_N(p^2)\le\left(2-\frac4N+\frac4{N^2}\right)\int_{-1}^1p^2
  <2\int_{-1}^1p^2.
 \]
 The same bound holds on every $\Pn_n$ with $n<N$.
+For $N=2$ every quotient equals one; for $N\ge3$ the upper inequality is strict.
 \end{theorem}
 \begin{proof}
 Set $A=2M-R=M+D/2$. We show that its off-diagonal entries are
@@ -275,12 +295,30 @@ Since $D$ is entrywise nonnegative,
 \[
  2\int p^2-Q_N(p^2)\ge v^TMv+\tfrac12v^TDv\ge v^TMv.
 \]
-This is positive for $v\ne0$. Quantitatively, Lemma~\ref{lem:floor} gives
-$v^TMv\ge N^{-1}v^TEv=N^{-1}a^TEa\ge2(\pi N)^{-1}a^TMa$.
-This proves the upper bound. Positivity of $Q_N(p^2)$ follows from
+This is positive for $v\ne0$, proving the qualitative threshold of
+\id{PD-T014} without the coefficient floor. Positivity of $Q_N(p^2)$ follows from
 positive weights and the impossibility that a nonzero polynomial of
 degree at most $N$ vanish at all $N+1$ nodes. Restriction proves the rest.
+
+The explicit endpoint refinement is the $n=N-1$ corollary of the independent
+degree-sensitive sign comparison in Theorem~\ref{thm:ratio-upper}
+(\id{PD-T022}): $\rho=(1-2/N)^2$ and
+$1+\rho=2-4/N+4/N^2$. At $N=2$, $\rho=0$ and exactness applies;
+at $N\ge3$ the strict case of that theorem applies.
 \end{proof}
+
+\begin{remark}[Retained alternative quantitative proof]
+The independent mass inequality of Lemma~\ref{lem:floor} (\id{PD-T015})
+also gives
+$v^TMv\ge N^{-1}v^TEv=N^{-1}a^TEa\ge2(\pi N)^{-1}a^TMa$
+in the preceding sign argument, proving the historical bound
+\[
+ Q_N(p^2)\le\left(2-\frac2{\pi N}\right)\int_{-1}^1p^2.
+\]
+That proof remains valid, but its constant is quantitatively superseded
+by Theorem~\ref{thm:upper}, since $4-4/N\ge2>2/\pi$ for every $N\ge2$.
+The mass inequality retains its independent statement and proof.
+\end{remark}
 
 \begin{remark}[The sign argument and its boundary]
 Entrywise nonnegativity of $D$ does not mean $D\succeq0$.
@@ -345,7 +383,8 @@ For every $p\in\Pn_N$,
 \begin{equation}\label{eq:cardinal-result}
  \int_{-1}^1p^2\le K_N Q_N(p^2).
 \end{equation}
-Consequently $\lambda_-(N,N-1)\ge K_N^{-1}
+Consequently $\lambda_-(N,N)\ge K_N^{-1}$, and restriction gives
+$\lambda_-(N,N-1)\ge\lambda_-(N,N)\ge K_N^{-1}
 \ge c(1+\log N)^{-2}$ for an absolute $c>0$.
 \end{theorem}
 \begin{proof}
@@ -504,6 +543,13 @@ $\lambda_-(N,N-1)\le1<128000/L^2$.
 This covers every remaining $N$, without an unperformed finite check.
 \end{proof}
 
+The witness estimate starts at $\log N\ge128$, but
+$128000/(\log N)^2<1$ exactly when
+$\log N>\sqrt{128000}\approx357.7709$.
+Thus this explicit constant is vacuous throughout all computationally feasible
+full-spectrum calculations considered here. The finite values in
+Table~\ref{tab:cc} do not exhibit or determine an asymptotic leading constant.
+
 \begin{corollary}[Endpoint defect and condition number]\label{cor:endpoint}
 For $G_N=G_{N,N-1}$,
 \[
@@ -558,10 +604,24 @@ Consequently
  (A_\rho)_{ij}=-\frac\rho{d^2-1}
                 -\frac{1+\rho}{s^2-1}+\frac1{r^2-1}<0.
 \]
-As in Theorem~\ref{thm:upper}, replacement of coefficients $a$ by
-$v=|a|$ gives
+For this matrix with nonpositive off-diagonal entries, replacement of
+coefficients $a$ by $v=|a|$ gives
 $a^TA_\rho a\ge\rho v^TMv+v^TDv/2>0$ for $a\ne0$.
 This proves the result.
+\end{proof}
+
+\begin{corollary}[Endpoint upper constant; \id{PD-T022}]\label{cor:ratio-endpoint}
+For every $N\ge2$,
+\[
+ \lambda_+(N,N-1)\le1+(1-2/N)^2=2-\frac4N+\frac4{N^2}.
+\]
+Equality holds at $N=2$; the displayed upper inequality is strict for $N\ge3$.
+\end{corollary}
+\begin{proof}
+Set $n=N-1$ in Theorem~\ref{thm:ratio-upper}. Then
+$\max\{2n/N-1,0\}=1-2/N$. The case $N=2$ has $2n=N$ and $\rho=0$;
+every $N\ge3$ has $2n>N$ and $\rho>0$. This proves the endpoint
+refinement used in Theorem~\ref{thm:upper} and \eqref{eq:main-upper}.
 \end{proof}
 
 \begin{theorem}[Filtered lower estimate; \id{PD-T023}]\label{thm:ratio-lower}
@@ -772,9 +832,10 @@ Taking the infimum proves \eqref{eq:hypererror}.
 
 For CC, $V=2$, $0\le n<N$, and one may take
 \begin{equation}\label{eq:Bcc}
- B_{N,n}=\min\left\{2-\frac2{\pi N},\,
-                    1+\max\{2n/N-1,0\}^2\right\}<2.
+ B_{N,n}=1+\rho_{N,n}=1+\max\{2n/N-1,0\}^2<2.
 \end{equation}
+Indeed $n\le N-1$ gives $1+\rho_{N,n}\le2-4/N+4/N^2<2-2/(\pi N)$;
+the minimum of the two earlier bounds always selects $1+\rho_{N,n}$.
 Thus for every $0\le k\le\min(n,d_N-n)$,
 \begin{equation}\label{eq:CCerror}
  \norm{f-\mathcal L_nf}_{L^2(-1,1)}
@@ -894,6 +955,7 @@ $m$ & $n$ & $\lambda_-$ & $\lambda_+$ & $\eta$ & negative weights\\\midrule
 \end{table}
 
 The separately checked Padua marginals at construction degrees $10,20,31$
+(covering odd and even degrees)
 obeyed $\max_j|a_j-2w_j|<8.73\cdot10^{-16}$.
 The two negative weights in each listed Padua experiment underscore the
 need to retain a signed-form argument. Finite positive eigenvalues alone

@@ -28,15 +28,16 @@ where \(E_k(f)=\inf_{r\in\Pi_k}\|f-r\|_\infty\). On a general polynomial domain,
 
 For Lebesgue CC on [-1,1], N>=2 and 0<=n<N, one can take
 \[
-B=\min\left\{2-\frac2{\pi N},\ 1+\max\{2n/N-1,0\}^2\right\}<2.
+B=1+\rho_{N,n}=1+\max\{2n/N-1,0\}^2<2.
 \]
+Indeed \(n\le N-1\) implies \(1+\rho_{N,n}\le2-4/N+4/N^2<2-2/(\pi N)\), by PD-T022's endpoint corollary; the previous minimum of these bounds always selected \(1+\rho_{N,n}\).
 For every 0<=k<=min(n,N−n), bound (2) consequently has constant at most \((1+\sqrt2)\sqrt2\), uniformly in N and n. If n=0, k=0 is permitted. The extra parity exactness of even-N CC can enlarge k, but is not required here.
 
 ## Status and dependencies
 
 Overall status: **PROVED** in development; pinned independent review and historical source comparison pending. General bound (1) requires no lower Gram estimate and no eta<1 assumption. Its application does not assert that the true operator norm grows logarithmically when the inverse Gram eigenvalue does.
 
-Depends on elementary finite-dimensional duality, proved below; the CC application uses positive weights/exactness from PD-T013, upper theorem PD-T014, and fixed-ratio upper theorem PD-T022. No external hyperinterpolation theorem is assumed.
+Depends on elementary finite-dimensional duality, proved below; the CC application uses positive weights/exactness from PD-T013 and degree-sensitive upper theorem PD-T022. PD-T014 gives a retained weaker alternative bound, not an additional dependency for the stated B. No external hyperinterpolation theorem is assumed.
 
 ## Proof
 
@@ -53,7 +54,7 @@ For every \(r\in\Pi_k\), the asserted exactness gives \(Q(rP_i)=\int rP_i\,d\mu\
 \le\|f-r\|_2+\|\mathcal L_n(f-r)\|_2
 \le\sqrt V(1+\sqrt B)\|f-r\|_\infty.
 \]
-Taking the infimum proves (2), without needing attainment. In the CC case V=2 and exactness through N suffices for every stated k. The explicit upper bound follows from the two cited local theorems.
+Taking the infimum proves (2), without needing attainment. In the CC case V=2 and exactness through N suffices for every stated k. The explicit upper bound follows from PD-T022.
 
 ## Checks, sources, limits and open items
 
@@ -66,3 +67,5 @@ This is the ordinary quadrature hyperinterpolant, not least-squares fitting thro
 ## History
 
 2026-10-31, Codex gpt-6.1-sol xhigh, rules `d36722823441dc40c6e19d69a174459348dd309c`: the orchestrator identified that an inverse-MZ factor need not be the true stability norm. This file reconstructs the corrected direct upper-Gram argument as a separate substantive application.
+
+2026-10-31, audit-01 M1 response, Codex gpt-6.1-sol xhigh (explicit assignment), rules `6d10a82cf6fd6f7ef6fbe76e68133ccbcbe51994`: replaced the original \(\min\{2-2/(\pi N),1+\rho_{N,n}\}\) by the identical simpler value \(1+\rho_{N,n}\), with the all-\(n<N\) dominance proof stated. Neither the hyperinterpolation claim nor its status changed.

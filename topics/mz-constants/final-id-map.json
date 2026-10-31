@@ -1,6 +1,6 @@
 {
   "scientific_checkpoint": "2dc9264333cdf8372947448f4b9bdd3bb577d0e1",
-  "competing_pr2_head": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+  "competing_pr2_head": "317a26597dedc9adc9cfc6a26fa00078df7d29e4",
   "mappings": {
     "PD-T?mz-constants-codex-11": "PD-T013",
     "PD-T?mz-constants-codex-12": "PD-T014",
@@ -66,7 +66,12 @@
     "IDEA?mz-constants-codex-31": "IDEA-073",
     "IDEA?mz-constants-codex-32": "IDEA-074",
     "IDEA?mz-constants-codex-33": "IDEA-075",
-    "IDEA?mz-constants-codex-34": "IDEA-076"
+    "IDEA?mz-constants-codex-34": "IDEA-076",
+    "LIT?mz-response-codex-01": "LIT-061",
+    "LIT?mz-response-codex-02": "LIT-062",
+    "LIT?mz-response-codex-03": "LIT-063",
+    "LIT?mz-response-codex-04": "LIT-064",
+    "LIT?mz-response-codex-05": "LIT-065"
   },
   "canonical": {
     "PD-T?mz-constants-codex-27": {
@@ -328,6 +333,28 @@
     "IDEA?mz-constants-codex-28": {
       "path": "topics/mz-constants/directions/M2/padua-foundation-record.md",
       "title": "IDEA?mz-constants-codex-28 — correctly normalized Padua marginal"
+    },
+    "LIT?mz-response-codex-01": {
+      "path": "literature/records/mz-mean-convergence-screen.md",
+      "title": "LIT?mz-response-codex-01 — Erdős–Feldheim 1936"
+    },
+    "LIT?mz-response-codex-02": {
+      "path": "literature/records/mz-mean-convergence-screen.md",
+      "title": "LIT?mz-response-codex-02 — Askey 1972 and its 1969 report"
+    },
+    "LIT?mz-response-codex-03": {
+      "path": "literature/records/mz-mean-convergence-screen.md",
+      "title": "LIT?mz-response-codex-03 — Nevai 1984, with 1990 addendum pending"
+    },
+    "LIT?mz-response-codex-04": {
+      "path": "literature/records/mz-mean-convergence-screen.md",
+      "title": "LIT?mz-response-codex-04 — Lubinsky converse MZ paper 147"
+    },
+    "LIT?mz-response-codex-05": {
+      "path": "literature/records/mz-mean-convergence-screen.md",
+      "title": "LIT?mz-response-codex-05 — Smith's explicit Lobatto comparison"
     }
-  }
+  },
+  "historical_competing_pr2_head": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+  "merged_charter_main": "08fafe62d9798385dfafaacc9a41344272737e68"
 }

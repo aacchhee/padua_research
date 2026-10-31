@@ -4,9 +4,11 @@ Review update, 2026-10-31: final ID allocation and scoped independent Astra revi
 
 ID kind: PD-T. Aliases: absolute-coefficient Z-matrix comparison; CC upper MZ bound.
 Split from: frozen M1 target \(\lambda_{\max}(Q_N|_{\Pi_{N-1}})<2\) for all \(N\ge2\).
-Split into: supporting coefficient-floor lemma PD-T015, not a part of the target's own statement.
+Split into: supporting coefficient-floor lemma [PD-T015](m1-coefficient-floor.md), not a part of the target's own statement. Related retained stronger target: [PD-T027](open-upper-limit.md), which remains OPEN; the strict threshold here is background support rather than a proved part of PD-T027's sharp-limit/uniform-gap statement.
 
 ## Statement
+
+The frozen qualitative statement is \(0<Q_N(p^2)<2\int p^2\) for every nonzero \(p\in\Pi_{N-1}\), \(N\ge2\). Its short sign proof below is independent of the coefficient floor. The following original quantitative strengthening is retained verbatim as a proved alternative, now quantitatively superseded by the endpoint corollary of PD-T022.
 
 For every integer \(N\ge2\) and every nonzero real polynomial \(p\in\Pi_{N-1}\), the Lebesgue CC rule on the \(N+1\) nodes \(\cos(j\pi/N)\) satisfies
 \[
@@ -15,13 +17,19 @@ For every integer \(N\ge2\) and every nonzero real polynomial \(p\in\Pi_{N-1}\),
 \]
 Equivalently, all eigenvalues of its discrete Gram matrix in any continuous-Lebesgue-orthonormal basis for \(\Pi_{N-1}\) belong to \((0,2-2/(\pi N)]\). The same bound holds on every subspace \(\Pi_n\), \(n\le N-1\).
 
+The stronger endpoint corollary [PD-T022](m3-upper-ratio.md) gives
+\[
+\lambda_+(N,N-1)\le2-\frac4N+\frac4{N^2}\qquad(N\ge2).
+\]
+It is exact at \(N=2\), where the value is one; the displayed upper inequality is strict for \(N\ge3\). This is a corollary of PD-T022, not a replacement or silent narrowing of the original statement (1).
+
 ## Definitions, assumptions and status
 
 CC weights, moments \(\mu_k\), the continuous mass matrix \(M\), the discrete mass matrix \(R\), and \(D=2(M-R)\) are defined in PD-T013. Throughout this proof their indices are \(0,\ldots,N-1\).
 
 Overall status: **PROVED** in development; independent pinned review and prior-art screening remain pending. The strict target and its explicit finite-N strengthening are proved analytically. No claim about the sharp limiting upper constant is included.
 
-Depends on: PD-T013 (exact defect/positive weights) and PD-T015 (quantitative coefficient floor). The qualitative upper bound \(<2\) uses only the exact defect and positivity of the continuous integral, not the floor or CC-weight positivity.
+Depends on: PD-T013 (exact defect/positive weights) and PD-T015 (the retained weaker quantitative alternative). The qualitative upper bound \(<2\) uses only the exact defect and positivity of the continuous integral, not the floor or CC-weight positivity. The stronger endpoint corollary is a separate consequence of PD-T022, whose proof uses PD-T013 independently of this theorem and PD-T015.
 
 ## Proof
 
@@ -51,6 +59,8 @@ v^TMv\ge\frac1N v^TEv=\frac1N a^TEa
 \]
 Combine this with (3) to obtain the upper inequality in (1). Its positivity follows from the locally proved positive CC weights and polynomial unisolvence. Restriction proves the assertion for smaller degrees.
 
+For the stronger endpoint comparison, substitute \(n=N-1\) into PD-T022. That independent proof gives \(1+(1-2/N)^2=2-4/N+4/N^2\), with the exact \(\rho=0\) case at \(N=2\). It is smaller than the coefficient-floor constant in (1) because \(4-4/N\ge2>2/\pi\). The original quantitative proof above remains valid.
+
 ## Checks
 
 The exact rational checker `tracks/mz-constants/code/m1_exact_check.py` checks the defect, entrywise signs, off-diagonal signs of \(A\), telescoping floor and obstruction in the finite range recorded in `topics/mz-constants/directions/M1/RUNS.md`. Optional floating generalized eigenvalues are explicitly MEASURED. The universal theorem depends on the written proof, not a finite numerical extrapolation.
@@ -66,3 +76,5 @@ The bound degrades toward two as \(N\) grows. The much smaller measured limiting
 ## History
 
 2026-10-31, Codex gpt-6.1-sol xhigh, rules/base `d36722823441dc40c6e19d69a174459348dd309c`: frozen strict target proved by a Z-matrix sign argument; strengthened with an explicit finite-N gap and supporting lemma split. No manuscript or acceptance claim made.
+
+2026-10-31, audit-01 response, Codex gpt-6.1-sol xhigh (explicit assignment), rules `6d10a82cf6fd6f7ef6fbe76e68133ccbcbe51994`: preserved the original bound (1) and proof, marked its quantitative role superseded by PD-T022's endpoint corollary, and retained PD-T015 as an independent PROVED supporting mass inequality/alternative proof. Added reciprocal semantic links to PD-T015 and the OPEN supporting target PD-T027; no original target or status was narrowed.

@@ -5,7 +5,7 @@ Review update, 2026-10-31: final ID allocation and scoped independent Astra revi
 ID kind: PD-T.
 Aliases: second-kind Chebyshev endpoint test; odd harmonic norm identity.
 Split from: the original M2 endpoint target; this supporting result has its own substantive statement.
-Split into: the eta counterexample is PD-N004; matching log-squared upper order is PD-T018.
+Split into: the endpoint discussion was separated into [PD-N004](m2-eta-counterexample.md), the finite eta counterexample, and [PD-T018](m2-parity-upper.md), the matching log-squared upper order. These are separate claims, not conjuncts or cases of the exact norm statement below: PD-N004 uses this norm identity as a proof dependency, whereas PD-T018 uses a different witness and does not depend on PD-T019. Both headers reciprocally record this separation; no standalone original-target ID is asserted.
 
 ## Statement
 
@@ -68,3 +68,5 @@ Independent adversarial acceptance and source attribution screen.
 ## History
 
 2026-10-31, Codex subagent, gpt-6.1-sol xhigh (explicit orchestrator assignment); base/rules SHA above. Independently reconstructed from the polynomial identity.
+
+2026-10-31, audit-01 P4 response, Codex gpt-6.1-sol xhigh (explicit assignment), rules `6d10a82cf6fd6f7ef6fbe76e68133ccbcbe51994`: made the PD-T018/PD-N004 links reciprocal and clarified that this is separation of the original endpoint discussion, not a decomposition of the exact norm identity. Statement, proof and PROVED status are unchanged.

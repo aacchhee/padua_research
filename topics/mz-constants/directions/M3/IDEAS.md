@@ -92,3 +92,7 @@ All first M3 target obligations are resolved in development, leaving prior-art a
 | PD-T025 | tracks/mz-constants/theory/m3-hyperinterpolation.md | PROVED |
 
 The orchestrator owns global final-ID/crosswalk integration and every Git mutation.
+
+## Audit-01 M1 / §4 — explicit quantitative separation update
+
+IDEA-073's proved degree-sensitive upper bound has the endpoint specialization 1+(1−2/N)²=2−4/N+4/N² for every N≥2. It quantitatively dominates IDEA-063's original 2−2/(πN) application for every allowed N, since 4−4/N≥2>2/π. Therefore the two constants are not competing headline results: the PD-T022 specialization is the current headline. IDEA-063 and PD-T015 remain retained as an independent PROVED mass inequality and alternative weaker proof; no claim is rejected merely for being dominated. The cheap kill criterion for the specialization is the N=2 exactness edge and the scalar expansion/dominance comparison; these were checked separately in scientific-response-01.md. The general theorem, the earlier mechanism record and historical rounds are preserved. The newly explicit corollary and its presentation await focused re-audit, without a novelty claim.

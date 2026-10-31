@@ -17,3 +17,5 @@ This is a track within the campaign; it does not replace the repository charter.
 - [Scoped negative results](NEGATIVE_RESULTS.md)
 
 Development used provisional IDs; PR preparation allocated final PD-T013–028, PD-N002–006, LIT-042–060 and IDEA-052–076 through the shared batch ledger. Status and acceptance are distinct: the declared analytic claims passed independent Astra reconstruction, while the required Claude handoff remains pending. Numerical observations are MEASURED. No novelty or exhaustive-literature claim follows from a proof's correctness.
+
+Audit-01 response: the headline explicit endpoint upper bound is now PD-T022's2−4/N+4/N² specialization; PD-T014 retains its short qualitative proof and PD-T015 its independent mass inequality. Original claims passed Claude's mathematical audit; focused review of the response and the new named literature gaps is pending.

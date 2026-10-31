@@ -2,9 +2,9 @@
 
 - Branch: `codex/mz-constants-20261031`; recorded base and rules SHA: `d36722823441dc40c6e19d69a174459348dd309c`.
 - Developer/orchestrator: Codex; runtime model/effort metadata not exposed to this orchestrator. AC requested Sol 6.1 xhigh. Delegated models are recorded exactly.
-- Stage: WORK (Claude audit-01: CHANGES REQUESTED, no High findings). Next: `Codex (Sol 6.1 xhigh): Continue codex/mz-constants-20261031; answer audit-01.md in response-01.md.`
+- Stage: AUDIT (response-01 complete; focused Claude re-audit PENDING). Next: `Claude (Opus 5.5 xhigh): Continue codex/mz-constants-20261031; focused re-audit response-01.md.`
 - Scope: reproduce supplied CC/Padua evidence, literature baseline, bounded mathematical exploration, durable claims, audit handoff. Do not write the campaign charter or enter the other two topics' scientific scope.
-- Shared allocation ledger at PR preparation: `topics/padua-batch-20261031/ALLOCATIONS.md`; no IDs reserved yet.
+- Authoritative shared ledger: `topics/padua-batch-20261031/ALLOCATIONS.md`; charter PD-T001–012 / PD-N001 / LIT-001–041 / IDEA-001–051 first; MZ PD-T013–028 / PD-N002–006 / LIT-042–065 / IDEA-052–076 second. The five audit-response LIT additions are explicit; no accepted ID is renumbered.
 
 ## 2026-10-31 — startup and provenance
 
@@ -22,7 +22,7 @@
 - No scientific producer run remains required for the stated analytic results. Bounded relied-on measurements were reproduced and independently replayed; imported larger runs remain unverified input and are not used as proof.
 - Cold storage selected by AC: `C:\Users\andreyac\Downloads\padua\cold_storage\mz-constants\`. This Linux workspace cannot attest delivery to that Windows path; use staging/manifest and state transfer pending.
 
-## Final development and handoff
+## Original v1 development and handoff — historical
 
 - M1/M2/M3 analytic validity, exact Padua marginal and scoped negative mechanisms accepted by separate gpt-6-astra xhigh reconstruction after documented prior-art dispositions; no novelty clearance. All65 provisional labels mapped to disjoint final IDs, preserving PR2 reservations. No accepted ID renumbered.
 - Complete14-page manuscript compiled without final-pass warnings; source/bibliography, numerical transcription and full proofs reviewed independently. Required Claude audit remains PENDING. Source and artifact hashes are in directions/M7/manuscript-record.md.
@@ -51,3 +51,17 @@
 - Follow-up (same audit): the registry/ledger subsection §5 is completed.
   - P1 (Medium): `claude/programme-ideas-20261031` holds a second, conflicting `topics/padua-batch-20261031/ALLOCATIONS.md`, with an add/add merge conflict and a different owner rule. It must be reconciled into one ledger before any member PR is ready.
   - P2–P6 (Low): PROOF_STATUS placeholder dependency and part-status text; missing PD-N/IDEA dispositions in the registries; non-reciprocal split links; registry rule text lost on integration; stale PR #2 pins and the "no IDs reserved" line above.
+
+## Audit-01 response start — Codex
+
+- User explicitly requests response-01 and P1 reconciliation, with charter first and MZ second; later confirmed that PR #2 is merged and MZ is next.
+- Starting local head fdf0648 was clean; fetched audit delivery 6d10a82cf6fd6f7ef6fbe76e68133ccbcbe51994 and fast-forwarded. Read AGENTS.md, agents/WORKFLOW.md and agents/codex/CODEX.md at that head; rules were unchanged from the original baseline. Main was initially d367228, then AC's charter merge advanced it to 08fafe62d9798385dfafaacc9a41344272737e68 during preparation.
+- Merged charter-bearing origin/main in bc85509adc303126c6d8276a4457393e81d7f394, resolving ten shared-file conflicts additively and taking the charter's reconciled ledger. All 105 charter track/topic files and all original IDs were preserved. No programme rule proposal was imported.
+- Assigned gpt-6.1-sol xhigh scientific/editorial response and high targeted literature screen. This changes presentation and exposes an existing theorem's endpoint corollary; it introduces no new mechanism or priority claim. The existing IDEA-063/073 comparison and all obstruction/disposition tables were read; no new IDEA/PD ID is allocated. The original literature gap remains unresolved after a targeted primary screen.
+- P1 ledger commit b56c7d65520b4c9a1311342de19fb47c9ba1d8f1 was pushed. Identical ledger bytes were propagated by normal non-force commits to programme c989031bacb3d35c711f4ace40a10e8909802106 and bivariate-Lanczos 48f7a02697d7753279e27d3ad462a4817c67ade0. Each changes only the ledger; receipt: ledger-reconciliation-01.json. The already merged/deleted charter branch is not rewritten, and no main push or PR merge was performed.
+- The five audit-M2 source records use LIT-061–065; next free LIT is LIT-066. Other next IDs remain PD-T029, PD-N007 and IDEA-077. Original reservations and scientific statuses are unchanged.
+- Focused independent gpt-6-astra high review is in progress. Original audit-01.md and all historical independent reports/checker outputs remain immutable; the response will be handed back for focused Claude re-audit.
+
+## Response-01 development complete
+
+All audit findings are answered in response-01.md. Revised manuscript: 15 A4 pages, clean final LaTeX/BibTeX logs, distinct current artifacts in local-output/mz-constants/paper-response-01; original v1 preserved. The original 65 mappings, 21 mathematical statuses, accepted charter files/rows, source/checker bytes and original audit are unchanged. Five source records are added under explicit LIT reservations. The current root checker passes 34 combined result rows, 65 literature rows, 25 MZ dispositions, 105 preserved charter files, 54 preserved charter rows, the historical 123-file audit scope and ledger propagation. Source science is ready for focused re-audit; final packaging records fresh rehearsal and response hashes without rewriting old audit manifests. Only AC merges.

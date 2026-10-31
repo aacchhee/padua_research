@@ -118,3 +118,47 @@ The failed shell PDF fetch was diagnosed with the cloud-environment-runtime skil
 ## Final M0 handoff
 
 M0 source discovery and bounded primary-access screen are recorded for every requested source family, with 19 provisional statements/pointers and exact reading coverage. The screen found no matching M1 sharp upper theorem or M2 exact endpoint law in the inspected primary portions; it cannot exclude the explicitly uninspected fulltexts. No campaign theorem, novelty claim or accepted mathematical status is assigned by these literature files. The orchestrator owns proof/audit acceptance, final IDs, shared registries and Git.
+
+## 2026-10-31 audit-response screen — audit-01 M2
+
+Rules read at `6d10a82cf6fd6f7ef6fbe76e68133ccbcbe51994`. Codex literature developer, `gpt-6.1-sol`, high (explicit orchestrator assignment). `literature/INDEX.md` and the complete `state/IDEAS.md` were read. This follow-up adds a named prior-art family to the original 43-query screen; it does not generate a new mechanism or claim novelty. The numbered list above and original handoff remain historical records of that earlier scope.
+
+The following 20 literal targeted queries were actually issued through `search_service_web_run` / `system2_search_query` on this date, including unsuccessful searches:
+
+1. `Nevai "Mean convergence of Lagrange interpolation. III" 1984`
+2. `Askey 1972 "Lagrange" "mean convergence"`
+3. `Lubinsky "paper147" "converse"`
+4. `Erdos Feldheim 1936 interpolation Lagrange`
+5. `"Mean convergence of Lagrange interpolation" "III" Nevai AMS 282 669 698`
+6. `site:lubinsky.math.gatech.edu "Converse" "Lobatto"`
+7. `"Mastroianni" "Russo" "mean convergence"`
+8. `"Xu" "Lobatto" "mean convergence"`
+9. `"Nevai" "0732113" "necessary"`
+10. `"Sur le mode de convergence pour l’interpolation de Lagrange" pdf`
+11. `"Weighted Marcinkiewicz inequalities and boundedness of the Lagrange operator"`
+12. `"Mean convergence of Lagrange interpolation. III" pdf Nevai`
+13. `"On Converse Marcinkiewicz-Zygmund Inequalities" "Lobatto"`
+14. `"Lubinsky" "converse" "Lobatto" quadrature`
+15. `"On Converse Marcinkiewicz-Zygmund Inequalities in" Lubinsky 1999 DOI`
+16. `Nevai "Mean Convergence" "III" "pdf" generalized Jacobi 1984`
+17. `"Lubinsky" "Lobatto" "inequalities"`
+18. `"Erdös-Turán mean convergence theorem for Lagrange interpolation at Lobatto points" Xu 1987 DOI`
+19. `"Mean convergence of generalized Jacobi series and interpolating polynomials" "10.1006"`
+20. `"Mean convergence of Lagrange interpolation. III" site:ams.org abstract`
+
+Query 18's tentative author/year were search terms, not an attribution: the primary source identifies **W. E. Smith, 1986**. Third-party summaries were used only for discovery; no mathematical assertion is promoted from them to a primary theorem.
+
+| Primary source/access | Actual outcome | Durable disposition |
+|---|---|---|
+| Erdős–Feldheim original Rényi scan | Selected title/text and visual inspection of p. 914 | Statement found; exact preceding-note conventions pending |
+| Askey 1972 DOI/bibliography and 1969 CWI report | Corrected journal-version metadata; selected earlier-report text; journal body open failed | Journal comparison and target critical case pending |
+| Nevai III AMS article/PDF, CiteSeer mirror | Article body inaccessible (403/errors); author bibliography and primary reference metadata reached | Exact theorem/parameter/added-endpoint conditions **FULLTEXT UNVERIFIED**; include 1990 addendum |
+| Lubinsky paper 147 author PDF and publisher abstract | Selected results pp. 1–7; Theorem 1.2 visually inspected; no full proof audit | Converse theorem form found; CC specialization and log rate pending |
+| Mastroianni–Russo and Xu author bibliographies | Named follow-up citations reached; Xu DOI body opens failed | Bibliographic pointers only; no theorem extracted |
+| Smith 1986 Cambridge PDF | Abstract/introduction/Theorem 1/Corollary 1 selected text; p. 379 screenshot retry timed out | Explicit Lobatto comparison found; target norm translation pending |
+
+Exact titles, DOIs/URLs, node/weight/norm mismatches and reading limits are in [the new mean-convergence source record](../../literature/records/mz-mean-convergence-screen.md); [literature-response-01.md](literature-response-01.md) supplies the audit disposition and manuscript integration wording. Five provisional LIT-061–065 groups await orchestrator allocation; follow-up bibliography makes no additional theorem claim.
+
+**Named unresolved threat added to M0:** weighted mean convergence at Jacobi/Chebyshev nodes and converse quadrature-sum inequalities may subsume PD-T017 and the endpoint order behind PD-T018. Nevai III/addendum, corrected Askey, Lubinsky's full-interpolation-space hypotheses, and Mastroianni–Russo/Xu require further reading. The screen found relevant primary statements but no verified matching CC-weighted `l²→L²(dx)` quantitative borderline theorem in the inspected portions. No exclusion, exhaustive novelty search, or mathematical status change follows. Keep the description at **self-contained proof; novelty unresolved**. No third-party PDF/fulltext extract was copied into the public tree.
+
+Allocation update: the root MZ owner reserved LIT-061–065 in the shared ledger after merging charter-bearing main. The worker's no-allocation statement above describes its development phase; final mapping and ledger-propagation receipt are part of response-01.

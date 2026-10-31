@@ -5,7 +5,7 @@ Review update, 2026-10-31: final ID allocation and scoped independent Astra revi
 ID kind: PD-T.
 Aliases: factor-two x-marginal; univariate compression of the Padua Gram matrix.
 Split from: supplied Padua marginal source fact, reconstructed independently.
-Split into: none. The genuine two-dimensional upper-spectrum and minimum-eigenvalue asymptotics remain separate OPEN targets.
+Split into: none. The genuine two-dimensional upper-spectrum, minimum-eigenvalue asymptotics and defect-convergence targets are retained separately in [PD-T028](open-padua-target.md), whose header links back to PD-T021. This marginal/compression theorem is supporting information separated from the original M4 discussion, not a proved conjunct or case of those OPEN targets.
 
 ## Statement
 
@@ -97,3 +97,5 @@ Independent acceptance. Genuine Padua upper-spectrum and two-sided endpoint ques
 ## History
 
 2026-10-31, Codex gpt-6.1-sol xhigh (explicit orchestrator assignment), rules/base SHA above. Requested by root after completing M2 development, as source-fact reconstruction rather than a third substantive exploration. Normalization 2 is retained explicitly through the isometry.
+
+2026-10-31, audit-01 P4 response, Codex gpt-6.1-sol xhigh (explicit assignment), rules `6d10a82cf6fd6f7ef6fbe76e68133ccbcbe51994`: made the PD-T028 relationship reciprocal and distinguished supporting-target separation from a decomposition of its unresolved statement. No mathematical statement, proof or PROVED status changed.

@@ -4,7 +4,7 @@ Review update, 2026-10-31: final ID allocation and scoped independent Astra revi
 
 ID kind: PD-T. Aliases: signed Padua weak MZ; two-dimensional log-squared endpoint.
 Split from: original M4 target.
-Split into: the exact marginal reduction is separately PROVED in m2-padua-marginal.md; it is supporting information, not a proved part of either target below.
+Split into: the exact marginal reduction is separately PROVED in [PD-T021](m2-padua-marginal.md), whose header links back to PD-T028. This separates supporting information from the original M4 discussion; it is not a proved part of any target below and supplies no statement decomposition that would make PD-T028 PARTIAL.
 
 ## Statement
 
@@ -28,7 +28,7 @@ Supplied F7/ASV numerical predecessor and M0 screen; reproduced spectra m10,20,3
 
 ## Proof or evidence
 
-There is no proof of these targets. Exact marginal compression gives eta_Padua≥eta_CC and therefore liminf eta_Padua≥1 once the CC endpoint convergence is established. It supplies no limsup or 2D upper spectral bound. Negative weights require a distinct argument.
+There is no proof of these targets. PD-T021 already proves unconditionally that exact marginal compression gives eta_Padua≥eta_CC and liminf eta_Padua≥1: PD-T018 establishes λ_min(CC,N−1)→0, and eta_Padua≥1−λ_min(CC,N−1) suffices. This proved liminf supplies no limsup or 2D upper spectral bound. Negative weights require a distinct argument.
 
 ## Scope and open items
 
@@ -37,3 +37,5 @@ Resume with a concrete signed-form or aliasing argument controlling the compleme
 ## History
 
 2026-10-31, Codex orchestrator, runtime metadata unexposed: exact supplied marginal statement split from the original stronger two-dimensional questions; source's unproved convergence implication is not inherited.
+
+2026-10-31, audit-01 L1/P4 response, Codex gpt-6.1-sol xhigh (explicit assignment), rules `6d10a82cf6fd6f7ef6fbe76e68133ccbcbe51994`: replaced the stale phrase "once the CC endpoint convergence is established" because PD-T021 already proves the liminf from PD-T018. Named the reciprocal PD-T021 link and clarified its supporting role; all original two-dimensional targets and the OPEN status are unchanged.

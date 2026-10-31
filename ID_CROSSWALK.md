@@ -203,3 +203,25 @@ Authoritative batch reservations, integration order and allocation owner: [share
 | PD-T024 fixed-ratio MZ | PD-T022; PD-T023 | explicit upper and lower spectral intervals, both PROVED | 2dc9264 | original target remains PROVED by the two parts |
 | M1 sharp strengthening | PD-T014 vs PD-T027 | strict threshold PROVED; stronger sharp limit/uniform gap OPEN | 2dc9264 | no silent narrowing of sharp target |
 | M4 two-dimensional target PD-T028 | PD-T021 marginal compression | supporting reduction only; main target stays OPEN | 2dc9264 | signed-weight upper spectrum does not follow from compression |
+
+## Audit-01 literature response additions
+
+Same authoritative [batch ledger](topics/padua-batch-20261031/ALLOCATIONS.md); no existing mapping changed.
+
+| Provisional ID | Final ID | Source branch / commit | Canonical file | Allocating PR / batch |
+|---|---|---|---|---|
+| LIT?mz-response-codex-01 | LIT-061 | codex/mz-constants-20261031 response-01; rules6d10a82 | [literature/records/mz-mean-convergence-screen.md](literature/records/mz-mean-convergence-screen.md) | padua-batch-20261031; audit response |
+| LIT?mz-response-codex-02 | LIT-062 | codex/mz-constants-20261031 response-01; rules6d10a82 | [literature/records/mz-mean-convergence-screen.md](literature/records/mz-mean-convergence-screen.md) | padua-batch-20261031; audit response |
+| LIT?mz-response-codex-03 | LIT-063 | codex/mz-constants-20261031 response-01; rules6d10a82 | [literature/records/mz-mean-convergence-screen.md](literature/records/mz-mean-convergence-screen.md) | padua-batch-20261031; audit response |
+| LIT?mz-response-codex-04 | LIT-064 | codex/mz-constants-20261031 response-01; rules6d10a82 | [literature/records/mz-mean-convergence-screen.md](literature/records/mz-mean-convergence-screen.md) | padua-batch-20261031; audit response |
+| LIT?mz-response-codex-05 | LIT-065 | codex/mz-constants-20261031 response-01; rules6d10a82 | [literature/records/mz-mean-convergence-screen.md](literature/records/mz-mean-convergence-screen.md) | padua-batch-20261031; audit response |
+
+## Reciprocal derivation and supporting-result links (audit P4)
+
+| Parent / source | Child / consequence | Relation (not a circular logical dependency) |
+|---|---|---|
+| PD-T014 | PD-T015 | Independent supporting mass inequality split during the original quantitative refinement; original application retained but dominated by PD-T022 |
+| PD-T019 | PD-T018 | Simple U prototype extended to a different admissible harmonic-U witness; matching-order theorem has its own independent proof |
+| PD-T019 | PD-N004 | Exact U norms used for a separately registered finite eta counterexample |
+| PD-T014 | PD-T027 | Proved strict threshold retained separately from stronger OPEN sharp-limit target |
+| PD-T021 | PD-T028 | Proved marginal reduction supports an independently OPEN full2Dtarget, not a proved case of it |

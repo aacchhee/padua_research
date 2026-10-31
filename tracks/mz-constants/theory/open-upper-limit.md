@@ -4,7 +4,7 @@ Review update, 2026-10-31: final ID allocation and scoped independent Astra revi
 
 ID kind: PD-T. Aliases: 1.004437 limit; uniform endpoint upper gap.
 Split from: M1 supplied strengthened target beyond the strict threshold.
-Split into: the strict threshold has its own PROVED file m1-upper-bound.md; it is a supporting result, not a proof of this sharper target.
+Split into: the strict threshold is separately PROVED in [PD-T014](m1-upper-bound.md), whose header links back to PD-T027. This is separation of related targets from the original M1 discussion, not decomposition of the sharp-limit/uniform-gap statement below; PD-T014 is supporting background and proves no part of that sharper statement.
 
 ## Statement
 
@@ -20,7 +20,7 @@ Overall status: OPEN. The existence/value of the limit and uniform endpoint gap 
 
 ## Depends on
 
-No dependency establishes the target. Background: m1-upper-bound.md and m3-upper-ratio.md; finite decimal evidence: reproduced-spectra.md (MEASURED through N1280 only).
+No dependency establishes the target. Background: PD-T014 (strict threshold) and PD-T022 (degree-sensitive bound and endpoint corollary); finite decimal evidence: PD-T026 (MEASURED through N1280 only).
 
 ## Checks and sources
 
@@ -37,3 +37,5 @@ Resume with a concrete sharper spectral comparison or an asymptotic operator mod
 ## History
 
 2026-10-31, Codex orchestrator, runtime metadata unexposed: preserves the supplied sharp strengthening as a distinct OPEN target rather than silently dropping it after the strict theorem.
+
+2026-10-31, audit-01 P4 response, Codex gpt-6.1-sol xhigh (explicit assignment), rules `6d10a82cf6fd6f7ef6fbe76e68133ccbcbe51994`: named the reciprocal PD-T014 link and PD-T022 background by ID; clarified supporting-target separation rather than a proved portion of the present statement. The original target and OPEN status are unchanged.

@@ -3,7 +3,7 @@
 Review update, 2026-10-31: final ID allocation and scoped independent Astra review are complete; see topics/mz-constants/independent-astra-01.md and ID_CROSSWALK.md. The original development-stage pending-review wording below is historical. Required Claude audit and unresolved literature/novelty coverage remain PENDING. This administrative update changes no mathematical claim or proof.
 
 ID kind: PD-T. Aliases: telescoping mass floor; weighted diagonal dominance.
-Split from: M1 quantitative refinement of the strict upper-bound proof.
+Split from: [PD-T014](m1-upper-bound.md), the M1 quantitative refinement of the strict upper-bound proof. This is a supporting inequality, not a part of PD-T014's own spectral statement.
 Split into: none.
 
 ## Statement and definitions
@@ -15,7 +15,7 @@ For every integer \(N\ge2\), put \(n=N-1\), and let \(M\) be the Lebesgue mass m
 
 ## Assumptions and status
 
-Only real Chebyshev coefficients and the Lebesgue measure on \([-1,1]\). Overall status: **PROVED** in development, pinned independent review pending. This is a substantive supporting inequality for the quantitative M1 theorem; it is not itself the M1 spectral theorem.
+Only real Chebyshev coefficients and the Lebesgue measure on \([-1,1]\). Overall status: **PROVED** in development, pinned independent review pending. This remains a substantive independent supporting mass inequality and supplies the retained alternative quantitative proof in PD-T014; it is not itself the M1 spectral theorem. PD-T022's endpoint corollary now supersedes that alternative's spectral constant, without changing this inequality, proof or status.
 
 Depends on: moment formula in PD-T013 (also directly reproved by elementary integration). No external theorem or scientific claim is assumed.
 
@@ -55,8 +55,10 @@ This proves the result.
 
 ## Checks, sources, limitations and open items
 
-Exact telescoping and floor checks are in `tracks/mz-constants/code/m1_exact_check.py`, with executed commands and hashes in `topics/mz-constants/directions/M1/RUNS.md`. The all-N argument is analytic. No inherited/private theorem or primary literature statement is used. The floor is not asserted sharp; it serves only to make the M1 strict gap explicit. Independent pinned audit and documented prior-art screen remain pending.
+Exact telescoping and floor checks are in `tracks/mz-constants/code/m1_exact_check.py`, with executed commands and hashes in `topics/mz-constants/directions/M1/RUNS.md`. The all-N argument is analytic. No inherited/private theorem or primary literature statement is used. The floor is not asserted sharp; it makes the retained alternative M1 strict gap explicit. Independent pinned audit and documented prior-art screen remain pending.
 
 ## History
 
 2026-10-31, Codex gpt-6.1-sol xhigh, rules `d36722823441dc40c6e19d69a174459348dd309c`: developed after the strict Z-matrix argument, split as its own substantive supporting result.
+
+2026-10-31, audit-01 response, Codex gpt-6.1-sol xhigh (explicit assignment), rules `6d10a82cf6fd6f7ef6fbe76e68133ccbcbe51994`: clarified the parent PD-T014 and preserved this independent PROVED mass inequality and its alternative-proof role after PD-T022 quantitatively superseded the weaker spectral constant. Statement (1), proof and status are unchanged.

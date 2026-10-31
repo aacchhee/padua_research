@@ -1,6 +1,6 @@
 # Ideas registry
 
-Canonical seed and campaign dispositions, updated2026-10-31. Read every entry, source-disposition row and obstruction before new mechanisms. Every source proposal and correction is preserved; a supplied verdict is not a local proof or acceptance. Final-ID allocation owner/base/active-PR check: [ledger](../topics/charter-unisolvence-20261031/ALLOCATIONS.md). Full original pre-exploration seed: [baseline](../topics/charter-unisolvence-20261031/baseline-candidates.md). Candidate details instantiate the template in direction folders; Claude audit-01 accepted the stated mathematics, dispositions and conservative mechanism classification; administrative dispositions are in response-01.md.
+Canonical seed and campaign dispositions, updated2026-10-31. Read every entry, source-disposition row and obstruction before new mechanisms. Every source proposal and correction is preserved; a supplied verdict is not a local proof or acceptance. Final-ID allocation owner/order: [shared batch ledger](../topics/padua-batch-20261031/ALLOCATIONS.md); the charter member ledger retains its historical first-block provenance. Full original pre-exploration seed: [baseline](../topics/charter-unisolvence-20261031/baseline-candidates.md). Candidate details instantiate the template in direction folders; Claude audit-01 accepted the stated mathematics, dispositions and conservative mechanism classification; administrative dispositions are in response-01.md.
 
 ## Campaign candidate dispositions (canonical)
 
@@ -258,7 +258,7 @@ Aliases: short note; DRNA; BIT; Numer. Algorithms.
 | Obstruction ID | Exact obstruction and hypotheses | Affected ideas | Evidence | Scope / escape conditions |
 |---|---|---|---|---|
 
-## Disposition table
+## Seed disposition table — historical launch state
 
 | Idea ID | Verdict | Outcome | Canonical record | Next decisive step |
 |---|---|---|---|---|
@@ -382,10 +382,42 @@ Full predecessor comparison, separation criterion, prewritten kill test, evidenc
 
 | Obstruction | Exact hypotheses / scope | Affected mechanism | Evidence / escape condition |
 |---|---|---|---|
-| Hankel signs do not imply PSD | CC restricted defect indefinite for N≥5 | entrywise-positive-defect-to-Loewner inference | PD-N002; use the separate Z-matrix argument |
-| Plain row dominance fails | exact N5 row margin−2/35 | unscaled Gershgorin proof of2M−R | PD-N003; weighted continuous mass floor escapes it |
-| Uniform eta≤3/4 fails | N512,n511,513points | endpoint applicability assumption | PD-N004; conditional source theorem remains valid |
-| Uniform absolute cardinal columns fail | endpoint column has inverse normalized mass growing withN | ordinary cardinal-L1-column proof | PD-N005; angular-cell weighted Schur escapes it |
-| Alternating full-space trial inadmissible | specified strictly alternating values force nonzero degreeN coefficient | uncorrected transfer to Π_(N−1) | PD-N006; harmonicU combination enforces exact constraint |
-| Marginal lower domination is one-sided | signedPaduaRule, isometric univariate compression | inferring2D upperbound/convergencefromcompression | PD-T021/PD-T028; control complementary modes separately |
-| Endpoint eta rate needs uppergap | 1−eta=min(λmin,2−λmax) | inferringlog^-2eta deficiencyfromλmin alone | PD-T027; prove uniformgap or sharperendpointestimate |
+| Hankel signs do not imply PSD | Restricted CC defect is indefinite for every N≥5 | Entrywise-positive-defect to Loewner inference | PD-N002; use the separate Z-matrix argument |
+| Plain row dominance fails | Exact N=5 row margin −2/35 | Unscaled Gershgorin proof of 2M−R | PD-N003; weighted continuous mass floor escapes it |
+| Uniform eta≤3/4 fails | N=512, n=511, 513 points | Endpoint applicability assumption | PD-N004; conditional source theorem remains valid |
+| Absolute cardinal columns fail | Normalized endpoint column grows with N | Ordinary cardinal-L1-column proof | PD-N005; angular-cell weighted Schur escapes it |
+| Alternating full-space trial inadmissible | Strictly positive alternating amplitudes force degree N | Uncorrected transfer to Π_(N−1) | PD-N006; harmonic U combination enforces the constraint |
+| Marginal domination is one-sided | Signed Padua form and univariate isometric compression | Inferring 2D upper bounds or convergence from compression | PD-T021 / PD-T028; complementary modes require control |
+| Endpoint eta rate needs an upper gap | 1−eta=min(λ_min,2−λ_max) | Inferring a log^−2 eta deficit from λ_min alone | PD-T027; prove a uniform or sufficiently strong upper gap |
+
+## Current MZ dispositions — audit-01 response
+
+This table supersedes the historical launch-state table. Mathematical validity of the original claims was accepted in Claude audit-01; the response's endpoint specialization and editorial/source updates await focused re-audit. `REJECTED: refuted` and `REJECTED: failed` apply only to the named claim/mechanism. `equivalent` below is an IDEA disposition relative to the supplied mechanism, not a rejected mathematical theorem or a downgrade of its separately PROVED result. Retained successful results make no historical novelty claim.
+
+| Idea | Current disposition / accepted outcome | Canonical evidence and exact scope | Next action |
+|---|---|---|---|
+| IDEA-052 | retained; completed bounded literature baseline | LIT-042–065, source-specific reading limits | named fulltext and norm-translation gaps remain |
+| IDEA-053 | retained; strict upper-threshold target PROVED | PD-T014; stronger endpoint specialization PD-T022 | focused re-audit of specialization |
+| IDEA-054 | retained; two-sided endpoint order PROVED | PD-T017 and PD-T018 | historical overlap and sharp constant remain unresolved |
+| IDEA-055 | retained; fixed-ratio target PROVED | PD-T022–024; separate application PD-T025 | focused response review; no endpoint-uniform eta claimed |
+| IDEA-056 | deferred for full signed-Padua target | PD-T028 OPEN; exact supporting reduction PD-T021 PROVED | resume only with complementary-mode control |
+| IDEA-057 | deferred | rule-by-rule classification not launched | specify nodes, weights, measure and prior-art gap |
+| IDEA-058 | deferred for certification/fast-rank mechanism | PD-T026 MEASURED reproduction retained | proved finite reduction before any certified all-N claim |
+| IDEA-059 | retained; manuscript gate met and complete draft written | M7 source/build record; submission readiness unresolved | focused Claude re-audit then AC readiness decision |
+| IDEA-060 | REJECTED: refuted | PD-N002: PSD-defect inference fails for N≥5 | no broader theorem refutation |
+| IDEA-061 | REJECTED: failed | PD-N003: unweighted row dominance fails at N5 | weighted continuous mass alternative retained |
+| IDEA-062 | retained; successful mechanism PROVED | PD-T014 qualitative Z-matrix argument | no novelty claim |
+| IDEA-063 | retained; independent mass inequality PROVED | PD-T015; quantitative application in PD-T014 is dominated by IDEA-073 / PD-T022 | preserve original proof as alternative, no status downgrade |
+| IDEA-064 | equivalent — IDEA disposition for supplied full-degree mechanism | PD-T016 PROVED independently; source-equivalent fact retained | no PD-N for equivalence |
+| IDEA-065 | retained; cardinal-cell lower estimate PROVED | PD-T017 on full Π_N | screen weighted mean-convergence literature |
+| IDEA-066 | retained; admissible harmonic witness PROVED | PD-T018; explicit constant asymptotically informative only at stated huge threshold | no limiting coefficient inferred from tables |
+| IDEA-067 | equivalent — IDEA disposition for supplied U witness | PD-T019 PROVED exact identities retained | no novelty or matching-order claim from U alone |
+| IDEA-068 | REJECTED: refuted | PD-N004: uniform eta≤3/4 range fails at N512,n511 | conditional An–Wu theorem remains valid |
+| IDEA-069 | REJECTED: failed | PD-N005: specified uniform absolute-cardinal column domination | weighted-cell proof escapes this hypothesis |
+| IDEA-070 | REJECTED: failed | PD-N006: strictly positive alternating full-space trial misses degree constraint | separately corrected witnesses not excluded |
+| IDEA-071 | deferred | PD-T020 OPEN sharp endpoint limit | resume with asymptotic operator/control mechanism |
+| IDEA-072 | equivalent — IDEA disposition for supplied marginal mechanism | PD-T021 PROVED factor-two compression retained | main 2D target PD-T028 remains OPEN |
+| IDEA-073 | retained; degree-sensitive upper comparison PROVED | PD-T022; endpoint corollary quantitatively dominates IDEA-063 application | focused re-audit of specialization |
+| IDEA-074 | retained; filtered weighted Schur lower bound PROVED | PD-T023 | historical weighted-MZ overlap unresolved |
+| IDEA-075 | retained as known-mechanism application | PD-T025 PROVED; generic upper-Gram route already ASV | do not claim generic mechanism novel |
+| IDEA-076 | retained; explicit fixed-ratio synthesis PROVED | PD-T024 from PD-T022 and PD-T023 | no uniform endpoint eta or sharp-rate inference |

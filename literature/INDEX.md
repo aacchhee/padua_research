@@ -69,3 +69,15 @@ Read before any original PDF or priority/novelty claim. Every initially imported
 | LIT-058 | source statement / discovery | PDE-method ancestor, unresolved norm comparison; exact hypotheses and limitations in record | mz-don-gottlieb-1994 | record-specific locator | [mz-don-gottlieb-1994.md](records/mz-don-gottlieb-1994.md) | selected text, abstract, metadata or UNVERIFIED as individually labeled; no blanket fulltext claim |
 | LIT-059 | source statement / discovery | Passi thesis is bachelor's, numerical extension; exact hypotheses and limitations in record | mz-passi-cv-2026 | record-specific locator | [mz-passi-cv-2026.md](records/mz-passi-cv-2026.md) | selected text, abstract, metadata or UNVERIFIED as individually labeled; no blanket fulltext claim |
 | LIT-060 | source statement / discovery | author CV publication/in-preparation metadata; exact hypotheses and limitations in record | mz-passi-cv-2026 | record-specific locator | [mz-passi-cv-2026.md](records/mz-passi-cv-2026.md) | selected text, abstract, metadata or UNVERIFIED as individually labeled; no blanket fulltext claim |
+
+## Audit-01 M2 — weighted mean convergence and converse quadrature sums
+
+These five entries name the directly relevant prior-art family. Exact Lobatto/CC-weight borderline translations remain pending-reference; no novelty clearance follows.
+
+| LIT ID | Claim type / keywords | Published statement and hypotheses | Source key | Page / theorem | Record | Reading coverage |
+|---|---|---|---|---|---|---|
+| LIT-061 | mean convergence / converse MZ | Erdős–Feldheim 1936; scope and exact mismatch in record | mz-mean-convergence-screen | individual locator in record | [source record](records/mz-mean-convergence-screen.md) | Original scan pp.913–914; predecessor node convention unresolved |
+| LIT-062 | mean convergence / converse MZ | Askey 1972 and its 1969 report; scope and exact mismatch in record | mz-mean-convergence-screen | individual locator in record | [source record](records/mz-mean-convergence-screen.md) | Selected1969report; corrected1972journal body pending |
+| LIT-063 | mean convergence / converse MZ | Nevai 1984, with 1990 addendum pending; scope and exact mismatch in record | mz-mean-convergence-screen | individual locator in record | [source record](records/mz-mean-convergence-screen.md) | Primary bibliography/metadata only; theorem and1990addendum pending |
+| LIT-064 | mean convergence / converse MZ | Lubinsky converse MZ paper 147; scope and exact mismatch in record | mz-mean-convergence-screen | individual locator in record | [source record](records/mz-mean-convergence-screen.md) | Preprint pp.1–7 selected general converse theorems; CC coefficient/log translation pending |
+| LIT-065 | mean convergence / converse MZ | Smith's explicit Lobatto comparison; scope and exact mismatch in record | mz-mean-convergence-screen | individual locator in record | [source record](records/mz-mean-convergence-screen.md) | Selected Lobatto theorem/corollary; continuous weight/input norm differ |
