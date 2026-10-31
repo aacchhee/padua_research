@@ -8,7 +8,7 @@
 
 ## Source statement
 
-### LIT?mz-constants-codex-17 — PDE-method ancestor, unresolved norm comparison
+### LIT-058 — PDE-method ancestor, unresolved norm comparison
 
 The publisher abstract describes using Chebyshev collocation points with Legendre-method advantages through boundary-condition treatment. No theorem about the actual CC weights or sharp MZ constants was extracted.
 

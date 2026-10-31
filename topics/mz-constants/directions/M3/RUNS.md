@@ -44,7 +44,7 @@ No all-N claim is inferred from these measurements. The universal exact formulas
 ## Runs needed and audit boundary
 
 - Independent actual rerun at the code hash above, plus reconstruction of every all-N proof and constants, particularly n=0, k=n filter plateau, circle versus half-circle factors, and half-open distance-shell counts.
-- Confirm local CC-weight dependency PD-T?mz-constants-codex-21 is independently accepted under its exact hypotheses.
+- Confirm local CC-weight dependency PD-T017 is independently accepted under its exact hypotheses.
 - Complete historical fixed-ratio weighted-MZ and operator-bound prior-art screen; lack of a matching local registry entry does not imply novelty.
 
 The small output is reproduced here; no generated large artifact or cold-storage claim exists. The orchestrator records pinned theory hashes, final IDs and final acceptance separately. This worker wrote no manuscript and changed no shared registry or Git state.

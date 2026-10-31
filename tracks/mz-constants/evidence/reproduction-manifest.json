@@ -19,14 +19,20 @@
     },
     {
       "path": "tracks/mz-constants/theory/reproduced-spectra.md",
-      "sha256": "cc0dea3c09c8ff3aea539388c573594cce4cb1c53d64e04cf0c41657487d62f5",
-      "bytes": 5133
+      "sha256": "4f5d7452aa65f4f15f8eb0d773ec4469d3a003d1b1e3660f6ac6d8c7eae7a4a4",
+      "bytes": 5504
     }
   ],
   "source_manifest_sha256": "c12ee67df3efc0a17791930da47332e6f7e8532f2006938a3608a6fd93ada19b",
   "source_manifest_verified_entries": 21,
   "checker": "Python hashlib SHA256 comparison for every SHA256SUMS.txt entry; all matched. Runner self-hash matches final code.",
   "retention": "Small essential JSON is a commit candidate. Local console duplicate is disposable; external Windows cold-storage archival pending.",
-  "independent_rerun": "pending external auditor execution, not claimed here",
-  "generated_json_bytes": 29202
+  "independent_rerun": "Completed by separate gpt-6-astra xhigh; see topics/mz-constants/independent-astra-01.md and evidence/astra-replay-comparison.json. Measurements remain MEASURED.",
+  "generated_json_bytes": 29202,
+  "manifest_history": {
+    "previous_sha256": "740a7afb0167b44f2206c5050ce9b88b87e08bc59daf06c7a58e84810a36867f",
+    "previous_manifest_commit": "2dc9264333cdf8372947448f4b9bdd3bb577d0e1",
+    "reason": "Refresh prose/theory identity after exact final-ID substitution; runner and numerical JSON bytes unchanged.",
+    "finalization": "Final-ID substitution and historical-review banner only in theory/prose; scientific producer/output unchanged."
+  }
 }

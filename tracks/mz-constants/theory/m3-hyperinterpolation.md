@@ -1,4 +1,6 @@
-# PD-T?mz-constants-codex-34 — hyperinterpolation stability from the upper Gram bound
+# PD-T025 — hyperinterpolation stability from the upper Gram bound
+
+Review update, 2026-10-31: final ID allocation and scoped independent Astra review are complete; see topics/mz-constants/independent-astra-01.md and ID_CROSSWALK.md. The original development-stage pending-review wording below is historical. Required Claude audit and unresolved literature/novelty coverage remain PENDING. This administrative update changes no mathematical claim or proof.
 
 ID kind: PD-T. Aliases: positive-rule upper-Gram stability; corrected use of an MZ factor.
 Split from: M3 applicability question. Split into: none; this supporting application does not replace the fixed-ratio MZ target.
@@ -34,7 +36,7 @@ For every 0<=k<=min(n,N−n), bound (2) consequently has constant at most \((1+\
 
 Overall status: **PROVED** in development; pinned independent review and historical source comparison pending. General bound (1) requires no lower Gram estimate and no eta<1 assumption. Its application does not assert that the true operator norm grows logarithmically when the inverse Gram eigenvalue does.
 
-Depends on elementary finite-dimensional duality, proved below; the CC application uses positive weights/exactness from PD-T?mz-constants-codex-11, upper theorem -12, and fixed-ratio upper theorem -31. No external hyperinterpolation theorem is assumed.
+Depends on elementary finite-dimensional duality, proved below; the CC application uses positive weights/exactness from PD-T013, upper theorem PD-T014, and fixed-ratio upper theorem PD-T022. No external hyperinterpolation theorem is assumed.
 
 ## Proof
 

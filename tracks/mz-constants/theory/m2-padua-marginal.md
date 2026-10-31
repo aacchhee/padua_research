@@ -1,4 +1,6 @@
-# PD-T?mz-constants-codex-28 — exact Padua marginal and spectral domination
+# PD-T021 — exact Padua marginal and spectral domination
+
+Review update, 2026-10-31: final ID allocation and scoped independent Astra review are complete; see topics/mz-constants/independent-astra-01.md and ID_CROSSWALK.md. The original development-stage pending-review wording below is historical. Required Claude audit and unresolved literature/novelty coverage remain PENDING. This administrative update changes no mathematical claim or proof.
 
 ID kind: PD-T.
 Aliases: factor-two x-marginal; univariate compression of the Padua Gram matrix.
@@ -21,7 +23,7 @@ where w_j^CC are the N+1-node CC weights. For every 0≤n≤N, define the real s
     λ_max(G_N,n^P)≥λ_max(G_N,n^CC),
     ||I−G_N,n^P||₂≥||I−G_N,n^CC||₂.                   (2)
 
-In particular at n=N−1, liminf_(N→∞)||I−G_N,N−1^P||₂≥1, using PD-T?mz-constants-codex-22. At N=512,n=511 the deviation is >3/4, using PD-N?mz-constants-codex-24.
+In particular at n=N−1, liminf_(N→∞)||I−G_N,N−1^P||₂≥1, using PD-T018. At N=512,n=511 the deviation is >3/4, using PD-N004.
 
 ## Definitions
 
@@ -47,7 +49,7 @@ Candidate / claim disposition: equivalent to the supplied marginal mechanism; in
 
 ## Depends on
 
-Univariate Vandermonde interpolation and finite-dimensional symmetric variational principle. Only the asymptotic consequence uses PD-T?mz-constants-codex-22, and only the finite consequence uses PD-N?mz-constants-codex-24. The algebraic identities and domination (1)–(2) are independent of those results.
+Univariate Vandermonde interpolation and finite-dimensional symmetric variational principle. Only the asymptotic consequence uses PD-T018, and only the finite consequence uses PD-N004. The algebraic identities and domination (1)–(2) are independent of those results.
 
 ## Checks
 

@@ -1,4 +1,6 @@
-# PD-T?mz-constants-codex-13 — a quantitative Chebyshev mass floor
+# PD-T015 — a quantitative Chebyshev mass floor
+
+Review update, 2026-10-31: final ID allocation and scoped independent Astra review are complete; see topics/mz-constants/independent-astra-01.md and ID_CROSSWALK.md. The original development-stage pending-review wording below is historical. Required Claude audit and unresolved literature/novelty coverage remain PENDING. This administrative update changes no mathematical claim or proof.
 
 ID kind: PD-T. Aliases: telescoping mass floor; weighted diagonal dominance.
 Split from: M1 quantitative refinement of the strict upper-bound proof.
@@ -15,7 +17,7 @@ For every integer \(N\ge2\), put \(n=N-1\), and let \(M\) be the Lebesgue mass m
 
 Only real Chebyshev coefficients and the Lebesgue measure on \([-1,1]\). Overall status: **PROVED** in development, pinned independent review pending. This is a substantive supporting inequality for the quantitative M1 theorem; it is not itself the M1 spectral theorem.
 
-Depends on: moment formula in PD-T?mz-constants-codex-11 (also directly reproved by elementary integration). No external theorem or scientific claim is assumed.
+Depends on: moment formula in PD-T013 (also directly reproved by elementary integration). No external theorem or scientific claim is assumed.
 
 ## Proof
 

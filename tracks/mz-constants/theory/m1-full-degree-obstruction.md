@@ -1,4 +1,6 @@
-# PD-T?mz-constants-codex-14 — full-degree CC exceeds the threshold
+# PD-T016 — full-degree CC exceeds the threshold
+
+Review update, 2026-10-31: final ID allocation and scoped independent Astra review are complete; see topics/mz-constants/independent-astra-01.md and ID_CROSSWALK.md. The original development-stage pending-review wording below is historical. Required Claude audit and unresolved literature/novelty coverage remain PENDING. This administrative update changes no mathematical claim or proof.
 
 ID kind: PD-T. Aliases: Chebyshev top-degree obstruction; full Lobatto upper MZ obstruction.
 Split from: none; this is a substantive source-reported assertion independently reconstructed.
@@ -15,7 +17,7 @@ Thus its maximum Gram eigenvalue on \(\Pi_N\) is strictly greater than two. The 
 
 ## Status and dependencies
 
-Overall status: **PROVED** in development, pinned independent review pending. Depends only on CC exactness for constants and the elementary moment formula, locally proved in PD-T?mz-constants-codex-11. This is a positive theorem about an obstruction, rather than a record of a new failed mechanism; it retains a PD-T ID.
+Overall status: **PROVED** in development, pinned independent review pending. Depends only on CC exactness for constants and the elementary moment formula, locally proved in PD-T013. This is a positive theorem about an obstruction, rather than a record of a new failed mechanism; it retains a PD-T ID.
 
 ## Proof
 

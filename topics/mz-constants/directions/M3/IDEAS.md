@@ -8,7 +8,7 @@ The complete current `state/IDEAS.md` was reread after the orchestrator populate
 
 Frozen question remains: for **each fixed 0<=theta<1**, give an explicit eta(theta)<1 valid uniformly for all N>=2 and degrees n<=theta N, using the actual Lebesgue CC weights. An operator-stability result alone would not close this question. General historical MZ inequalities are a serious prior-art threat; exact fulltexts/weight translation are still unresolved. No novelty or acceptance claim follows from this local proof.
 
-## IDEA?mz-constants-codex-31 — degree-sensitive sign comparison
+## IDEA-073 — degree-sensitive sign comparison
 
 Aliases: rho Z-matrix; ratio-dependent upper MZ constant.
 
@@ -22,9 +22,9 @@ Aliases: rho Z-matrix; ratio-dependent upper MZ constant.
 - First kill test and prewritten criterion: check the extremal max(i,j)=n pair and exact ratio inequality; reject this constant if d/r>2n/N−1. Algebra gives d/r<=1−2(N−n)/r<=2n/N−1, so the test survives. Exact finite enumeration follows.
 - Actual evidence: checker passes every pair 2<=N<=25, 0<=n<N, and every same-parity off-diagonal entry. Universal proof is analytic.
 - Disposition: development complete; PROVED, acceptance pending.
-- Canonical theory: PD-T?mz-constants-codex-31, `m3-upper-ratio.md`.
+- Canonical theory: PD-T022, `m3-upper-ratio.md`.
 
-## IDEA?mz-constants-codex-32 — filtered circle reconstruction removes the log N loss
+## IDEA-074 — filtered circle reconstruction removes the log N loss
 
 Aliases: oversampled Fejér kernel; de la Vallée Poussin difference; inverse weighted Schur.
 
@@ -38,9 +38,9 @@ Aliases: oversampled Fejér kernel; de la Vallée Poussin difference; inverse we
 - Cheapest decisive test/kill criterion written before estimates: inspect Fourier coefficients at |k|=n and |k|=N and the maximal alias difference. The coefficient at n is exactly one, degree is N−1, and |l−k|<=n+N−1<2N. The n=0 convention nF_n=0 is checked explicitly.
 - Verification plan/outcome: exact Fourier tests passed all 324 pairs N2..25; analytic row/column Schur constants give C*=12(1+pi)^4(1+2/pi). Independent adversarial auditor separately reconstructed the plateau, shell counts, circle factors and constant before pinned audit and found no gap. Pinned rerun/reconstruction remains pending.
 - Disposition: development complete; PROVED, acceptance pending.
-- Canonical theory: PD-T?mz-constants-codex-32, `m3-lower-ratio.md`.
+- Canonical theory: PD-T023, `m3-lower-ratio.md`.
 
-## IDEA?mz-constants-codex-33 — hyperinterpolation uses the upper Gram bound directly
+## IDEA-075 — hyperinterpolation uses the upper Gram bound directly
 
 Aliases: adjoint evaluation bound; positive-rule hyperinterpolation stability.
 
@@ -54,9 +54,9 @@ Aliases: adjoint evaluation bound; positive-rule hyperinterpolation stability.
 - First kill test/criterion: compute sup over unit coefficient vector of |Q(fp)|. If weighted Cauchy–Schwarz required a lower Gram factor, the proposed upper-only estimate would fail. It instead gives sqrt(Q(f²)Q(p²))<=sqrt(VB)||f||∞ immediately. The exactness condition must integrate each product rP_i; n+k suffices.
 - Actual result: complete analytic proof; no implementation-mirroring numerical test needed. For CC n<N, B<2 gives a uniform constant below(1+sqrt2)sqrt2 in the error estimate whenever k<=min(n,N−n).
 - Disposition: PROVED development, independent review pending; does not replace fixed-ratio eta target.
-- Canonical theory: PD-T?mz-constants-codex-34, `m3-hyperinterpolation.md`.
+- Canonical theory: PD-T025, `m3-hyperinterpolation.md`.
 
-## IDEA?mz-constants-codex-34 — explicit two-sided assembly
+## IDEA-076 — explicit two-sided assembly
 
 Aliases: strong eta(theta); fixed-ratio spectrum interval.
 
@@ -70,7 +70,7 @@ Aliases: strong eta(theta); fixed-ratio spectrum interval.
 - Cheapest decisive test/criterion: substitute 1−n/N>=1−theta and verify rho(n/N)<=rho(theta), then check Atheta>0 and rho(theta)<1. These scalar inequalities hold.
 - Actual result: eta(theta)=max{1−(1−theta)²/C*,max(2theta−1,0)²}<1. Spectrum lies in[(1−theta)²/C*,1+max(2theta−1,0)²].
 - Disposition: target PROVED development, acceptance pending. No PD-N is created for a successful/equivalent synthesis.
-- Canonical theory: PD-T?mz-constants-codex-33, `m3-uniform-eta.md`.
+- Canonical theory: PD-T024, `m3-uniform-eta.md`.
 
 ## Round ledger and endpoint caveat
 
@@ -86,9 +86,9 @@ All first M3 target obligations are resolved in development, leaving prior-art a
 
 | ID | File | Development status |
 |---|---|---|
-| PD-T?mz-constants-codex-31 | tracks/mz-constants/theory/m3-upper-ratio.md | PROVED |
-| PD-T?mz-constants-codex-32 | tracks/mz-constants/theory/m3-lower-ratio.md | PROVED |
-| PD-T?mz-constants-codex-33 | tracks/mz-constants/theory/m3-uniform-eta.md | PROVED |
-| PD-T?mz-constants-codex-34 | tracks/mz-constants/theory/m3-hyperinterpolation.md | PROVED |
+| PD-T022 | tracks/mz-constants/theory/m3-upper-ratio.md | PROVED |
+| PD-T023 | tracks/mz-constants/theory/m3-lower-ratio.md | PROVED |
+| PD-T024 | tracks/mz-constants/theory/m3-uniform-eta.md | PROVED |
+| PD-T025 | tracks/mz-constants/theory/m3-hyperinterpolation.md | PROVED |
 
 The orchestrator owns global final-ID/crosswalk integration and every Git mutation.

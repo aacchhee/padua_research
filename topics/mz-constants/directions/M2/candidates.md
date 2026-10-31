@@ -4,7 +4,7 @@ Rules/base d36722823441dc40c6e19d69a174459348dd309c. Codex gpt-6.1-sol xhigh, ex
 
 Before generation: read the complete state/IDEAS.md and literature/INDEX.md (both empty), plan.md, literature-search.md and literature/records/mz-input-reports.md. Searched `cardinal`, `Schur`, `D1`, `log^2`, `log²`, `testvec`, `lambda_min`, `endpoint` throughout topics, tracks, literature and state. The closest local scientific records are the supplied B2/B2b scripts and the input reports. No registry predecessor exists; that says nothing exhaustive about external literature. Historical Lobatto interpolation norm theorems remain the principal duplicate risk.
 
-## IDEA?mz-constants-codex-21 — weighted cardinal-cell Schur estimate
+## IDEA-065 — weighted cardinal-cell Schur estimate
 
 Aliases: interpolation operator with endpoint weight; critical weighted convolution.
 
@@ -18,13 +18,13 @@ Aliases: interpolation operator with endpoint weight; critical weighted convolut
 - Cheapest decisive test: derive endpoints and verify the two Schur sums symbolically.
 - Kill criterion written before testing: failure of the weight floor or emergence of polynomial rather than harmonic Schur growth kills this route.
 - Test discriminability: both calculations concern every integer N and actual CC weights, rather than finite spectra.
-- Actual test results and committed evidence: analytic proof PD-T?mz-constants-codex-21; diagnostic floor checks N=8,…,1024 in developer-run.jsonl.
+- Actual test results and committed evidence: analytic proof PD-T017; diagnostic floor checks N=8,…,1024 in developer-run.jsonl.
 - Disposition and precise rejected scope, if any: survives local development; acceptance pending.
 - Disposition reason: no rejection.
-- Canonical theory / negative-result ID: PD-T?mz-constants-codex-21.
+- Canonical theory / negative-result ID: PD-T017.
 - Topic / audit / history: M2 rounds 1–2; independent Astra requested with pinned file hashes.
 
-## IDEA?mz-constants-codex-22 — endpoint-cancelled harmonic U witness
+## IDEA-066 — endpoint-cancelled harmonic U witness
 
 Aliases: parity-exact harmonic trial; admissible log-cubed continuous mass.
 
@@ -38,13 +38,13 @@ Aliases: parity-exact harmonic trial; admissible log-cubed continuous mass.
 - Cheapest decisive test: evaluate degree, endpoints and interior values exactly before norm estimates.
 - Kill criterion written before testing: nonzero endpoints of order NlogN or a degree-N term would destroy the intended Q=O(logN) argument.
 - Test discriminability: exact symbolic cancellation settles admissibility and the source of endpoint mass.
-- Actual test results and committed evidence: all cancellations hold; analytic log-cubed lower mass and logarithmic discrete upper mass in PD-T?mz-constants-codex-22. Diagnostics N=8,…,1024 recorded, not promoted to proof.
+- Actual test results and committed evidence: all cancellations hold; analytic log-cubed lower mass and logarithmic discrete upper mass in PD-T018. Diagnostics N=8,…,1024 recorded, not promoted to proof.
 - Disposition and precise rejected scope, if any: survives local development; acceptance pending.
 - Disposition reason: no rejection.
-- Canonical theory / negative-result ID: PD-T?mz-constants-codex-22.
+- Canonical theory / negative-result ID: PD-T018.
 - Topic / audit / history: M2 round 4; independent Astra requested.
 
-## IDEA?mz-constants-codex-23 — exact simpler U witness
+## IDEA-067 — exact simpler U witness
 
 Aliases: U_(N−1) endpoint polynomial.
 
@@ -58,13 +58,13 @@ Aliases: U_(N−1) endpoint polynomial.
 - Cheapest decisive test: derive the exact integral as an odd harmonic sum.
 - Kill criterion written before testing: erroneous endpoint normalization would invalidate the reported quotient.
 - Test discriminability: both discrete and continuous norms are exact identities.
-- Actual test results and committed evidence: PD-T?mz-constants-codex-23; rational N=512 diagnostic agrees.
+- Actual test results and committed evidence: PD-T019; rational N=512 diagnostic agrees.
 - Disposition and precise rejected scope, if any: equivalent to supplied witness; mathematical reconstruction retained for dependencies.
 - Disposition reason: equivalent; no PD-N created for equivalence.
-- Canonical theory / negative-result ID: PD-T?mz-constants-codex-23.
+- Canonical theory / negative-result ID: PD-T019.
 - Topic / audit / history: M2 round 3, verification rather than novelty exploration.
 
-## IDEA?mz-constants-codex-24 — uniform endpoint eta≤3/4
+## IDEA-068 — uniform endpoint eta≤3/4
 
 Aliases: three-quarter endpoint bound.
 
@@ -78,13 +78,13 @@ Aliases: three-quarter endpoint bound.
 - Cheapest decisive test: rational U quotient at N=512.
 - Kill criterion written before testing: RQ≥1/4 would fail to refute this bound at this case.
 - Test discriminability: variational principle converts strict RQ<1/4 directly to eta>3/4.
-- Actual test results and committed evidence: exact rational diagnostic true; standalone analytic certificate in PD-N?mz-constants-codex-24.
+- Actual test results and committed evidence: exact rational diagnostic true; standalone analytic certificate in PD-N004.
 - Disposition and precise rejected scope, if any: REJECTED: refuted for any uniform assertion covering N=512,n=511.
 - Disposition reason: refuted; no conditional theorem is rejected.
-- Canonical theory / negative-result ID: PD-N?mz-constants-codex-24.
+- Canonical theory / negative-result ID: PD-N004.
 - Topic / audit / history: M2 round 5; acceptance pending Astra and attribution check.
 
-## IDEA?mz-constants-codex-25 — ordinary Lebesgue bound plus cardinal L1 columns
+## IDEA-069 — ordinary Lebesgue bound plus cardinal L1 columns
 
 Aliases: absolute-cardinal Cauchy route.
 
@@ -98,13 +98,13 @@ Aliases: absolute-cardinal Cauchy route.
 - Cheapest decisive test: integrate the explicit endpoint cardinal function.
 - Kill criterion written before testing: superlogarithmic endpoint ratio kills the uniform-column route.
 - Test discriminability: exact formula addresses its required hypothesis for arbitrarily large N.
-- Actual test results and committed evidence: ∫|ℓ_0|=1/N, exact; PD-N?mz-constants-codex-25.
+- Actual test results and committed evidence: ∫|ℓ_0|=1/N, exact; PD-N005.
 - Disposition and precise rejected scope, if any: REJECTED: failed for this absolute-column mechanism.
 - Disposition reason: failed; the lower-bound target survives and is proved by candidate 21.
-- Canonical theory / negative-result ID: PD-N?mz-constants-codex-25.
+- Canonical theory / negative-result ID: PD-N005.
 - Topic / audit / history: M2 round 1; independently flagged also by Astra during discussion.
 
-## IDEA?mz-constants-codex-26 — direct transfer of full-space alternating trial
+## IDEA-070 — direct transfer of full-space alternating trial
 
 Aliases: uncorrected alternating normalized-node vector.
 
@@ -118,13 +118,13 @@ Aliases: uncorrected alternating normalized-node vector.
 - Cheapest decisive test: exact top-coefficient constraint before any eigenvalue experiment.
 - Kill criterion written before testing: nonzero T_N coefficient kills the direct transfer.
 - Test discriminability: an exact necessary and sufficient condition for degree≤N−1.
-- Actual test results and committed evidence: all-N positivity proof in PD-N?mz-constants-codex-26.
+- Actual test results and committed evidence: all-N positivity proof in PD-N006.
 - Disposition and precise rejected scope, if any: REJECTED: failed only as an uncorrected direct transfer; no claim against its full-space model.
 - Disposition reason: failed; corrected witnesses remain possible and candidate 22 supplies one.
-- Canonical theory / negative-result ID: PD-N?mz-constants-codex-26.
+- Canonical theory / negative-result ID: PD-N006.
 - Topic / audit / history: M2 round 3; independently flagged also by Astra.
 
-## IDEA?mz-constants-codex-27 — a sharp rescaled endpoint limit
+## IDEA-071 — a sharp rescaled endpoint limit
 
 Aliases: exact leading logarithmic constant.
 
@@ -141,5 +141,5 @@ Aliases: exact leading logarithmic constant.
 - Actual test results and committed evidence: none beyond separately proved comparison bounds.
 - Disposition and precise rejected scope, if any: deferred.
 - Disposition reason: resume only after order theorem audit and prior-art comparison, with a concrete sharpness mechanism.
-- Canonical theory / negative-result ID: PD-T?mz-constants-codex-27, OPEN.
+- Canonical theory / negative-result ID: PD-T020, OPEN.
 - Topic / audit / history: split out at M2 completion; not counted as a new conceptual mechanism round.

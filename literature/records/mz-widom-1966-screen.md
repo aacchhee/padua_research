@@ -5,13 +5,13 @@
 
 ## Source records
 
-### LIT?mz-constants-codex-12 — Widom, Hankel matrices
+### LIT-053 — Widom, Hankel matrices
 
 - Citation/pointer: H. Widom, *Hankel matrices*, Trans. Amer. Math. Soc. 121 (1966), 1–35, DOI <https://doi.org/10.1090/S0002-9947-1966-0187099-X>.
 - Primary attempt: <https://www.ams.org/tran/1966-121-01/S0002-9947-1966-0187099-X/S0002-9947-1966-0187099-X.pdf> returned 403 in the connector.
 - Locator/gap: no theorem/page inspected. A Hankel label alone supplies no CC extreme-eigenvalue law. Extract the exact matrix class and asymptotic before treating this as a prior result or usable template.
 
-### LIT?mz-constants-codex-13 — Widom–Wilf, small eigenvalues
+### LIT-054 — Widom–Wilf, small eigenvalues
 
 - Citation/pointer: H. Widom, H. Wilf, *Small eigenvalues of large Hankel matrices*, Proc. Amer. Math. Soc. 17 (1966), 338–344, DOI <https://doi.org/10.1090/S0002-9939-1966-0189237-7>.
 - Primary attempts: <https://www.ams.org/proc/1966-017-02/S0002-9939-1966-0189237-7/S0002-9939-1966-0189237-7.pdf> and Wilf's author reprints page returned 403. Search locates the paper, not an inspected theorem.

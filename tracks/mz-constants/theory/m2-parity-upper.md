@@ -1,9 +1,11 @@
-# PD-T?mz-constants-codex-22 — parity-exact matching logarithmic upper bound
+# PD-T018 — parity-exact matching logarithmic upper bound
+
+Review update, 2026-10-31: final ID allocation and scoped independent Astra review are complete; see topics/mz-constants/independent-astra-01.md and ID_CROSSWALK.md. The original development-stage pending-review wording below is historical. Required Claude audit and unresolved literature/novelty coverage remain PENDING. This administrative update changes no mathematical claim or proof.
 
 ID kind: PD-T.
 Aliases: endpoint-cancelled harmonic U witness; degree-constrained log-squared upper estimate.
 Split from: M2 target, two-sided logarithmic endpoint order.
-Split into: none. The lower bound is PD-T?mz-constants-codex-21; the simpler U witness is PD-T?mz-constants-codex-23.
+Split into: none. The lower bound is PD-T017; the simpler U witness is PD-T019.
 
 ## Statement
 
@@ -11,11 +13,11 @@ For every integer N≥2,
 
     λ_min(CC,N−1) ≤128000/(log N)².
 
-Together with PD-T?mz-constants-codex-21 this proves λ_min(CC,N−1) asymp (1+log N)^−2 with explicit nonsharp comparison constants. No limit constant is asserted.
+Together with PD-T017 this proves λ_min(CC,N−1) asymp (1+log N)^−2 with explicit nonsharp comparison constants. No limit constant is asserted.
 
 ## Definitions
 
-Use CC nodes, weights, λ_min and Lebesgue measure from PD-T?mz-constants-codex-21. The Chebyshev polynomials of the second kind satisfy U_r(cosθ)=sin((r+1)θ)/sinθ and U_r(±1)=(±1)^r(r+1). For N≥3 put M=floor((N−1)/2), and define
+Use CC nodes, weights, λ_min and Lebesgue measure from PD-T017. The Chebyshev polynomials of the second kind satisfy U_r(cosθ)=sin((r+1)θ)/sinθ and U_r(±1)=(±1)^r(r+1). For N≥3 put M=floor((N−1)/2), and define
 
     p_N=Σ_(m=1)^M [U_(N−1−2m)−(1−2m/N)U_(N−1)]/m.
 
@@ -35,7 +37,7 @@ Candidate / claim disposition: active.
 
 ## Depends on
 
-Only the elementary weight upper bound w_k≤5sinθ_k/N proved in PD-T?mz-constants-codex-21. Its logarithmic lower theorem is not used in this proof.
+Only the elementary weight upper bound w_k≤5sinθ_k/N proved in PD-T017. Its logarithmic lower theorem is not used in this proof.
 
 ## Checks
 

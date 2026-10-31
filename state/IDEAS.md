@@ -2,7 +2,7 @@
 
 ## How to use
 
-This is the campaign's canonical idea and obstruction memory. The MZ campaign seeds supplied candidates below using provisional IDs, as AC explicitly requested before exploration. Final allocation waits until PR preparation.
+This is the campaign's canonical idea and obstruction memory. The MZ campaign seeds supplied candidates below before exploration, as AC explicitly requested. Final IDs were allocated during PR preparation using the shared batch ledger; all provisional labels remain in ID_CROSSWALK.md.
 
 Before developing an idea, scan every heading and alias line, read all obstruction/disposition tables, search mechanism keywords throughout the body, and read each shortlisted entry in full. Record closest entries, applicable obstructions and the hypotheses escaped, duplicate/variant/new verdict, and the cheapest decisive test. Do not pursue a duplicate.
 
@@ -10,9 +10,11 @@ At a branch audit involving ideas or novelty claims, read this file completely i
 
 Use [the idea template](../templates/IDEA.md). Assign `IDEA-nnn` at PR preparation; never recycle IDs. Preserve aliases and scope when updating dispositions. Only refuted or failed mechanisms with a scoped negative statement and evidence get a `PD-Nnnn` theory file. Equivalent or abandoned candidates stay here as IDEA dispositions with reasons and references; equivalence or abandonment alone creates no PD-N allocation. A separate evidenced failure is still registered if the candidate is later abandoned.
 
-## Entries
+## Entries — supplied seeds at launch (historical dispositions)
 
-### IDEA?mz-constants-codex-01 — Literature baseline (M0)
+The active/deferred and gate-pending wording in these eight original seeds records the predevelopment state. Current dispositions superseding it are in the MZ development section below; the closed first targets are M1/M2/M3 and the manuscript gate is now met.
+
+### IDEA-052 — Literature baseline (M0)
 
 Aliases: duplicate screen; classical interpolation norms; historical priority.
 
@@ -29,7 +31,7 @@ Aliases: duplicate screen; classical interpolation norms; historical priority.
 - Disposition: active baseline; no research theorem.
 - Canonical theory: none; topic/audit: topics/mz-constants/.
 
-### IDEA?mz-constants-codex-02 — CC upper spectrum (M1 seed)
+### IDEA-053 — CC upper spectrum (M1 seed)
 
 Aliases: Hankel defect; λ_max<2; beyond half-exactness.
 
@@ -46,7 +48,7 @@ Aliases: Hankel defect; λ_max<2; beyond half-exactness.
 - Disposition: active, independent Astra reconstruction and prior-art check required before acceptance.
 - Canonical theory: tracks/mz-constants/theory/m1-*.md; topic/audit: topics/mz-constants/directions/M1/.
 
-### IDEA?mz-constants-codex-03 — CC lower spectrum (M2 seed)
+### IDEA-054 — CC lower spectrum (M2 seed)
 
 Aliases: log² interpolation norm; weighted Schur; endpoint packet; Widom asymptotics.
 
@@ -63,7 +65,7 @@ Aliases: log² interpolation norm; weighted Schur; endpoint packet; Widom asympt
 - Disposition: active, prior-art and Astra review required before acceptance.
 - Canonical theory: tracks/mz-constants/theory/m2-*.md.
 
-### IDEA?mz-constants-codex-04 — Fixed-ratio bound and corrected applicability (M3)
+### IDEA-055 — Fixed-ratio bound and corrected applicability (M3)
 
 Aliases: relaxed-exactness hyperinterpolation; η(θ); An–Wu assumption.
 
@@ -80,7 +82,7 @@ Aliases: relaxed-exactness hyperinterpolation; η(θ); An–Wu assumption.
 - Disposition: deferred until active slot free; resume after M1 or M2 closes its bounded rounds.
 - Canonical theory: pending.
 
-### IDEA?mz-constants-codex-05 — Padua signed-weight extension (M4)
+### IDEA-056 — Padua signed-weight extension (M4)
 
 Aliases: exact x-marginal; total degree; two-dimensional Schur.
 
@@ -96,7 +98,7 @@ Aliases: exact x-marginal; total degree; two-dimensional Schur.
 - Disposition: deferred until M1/M3; foundational reduction may be audited separately.
 - Canonical theory: pending.
 
-### IDEA?mz-constants-codex-06 — Other interpolatory rules (M5)
+### IDEA-057 — Other interpolatory rules (M5)
 
 Aliases: Fejér; Gauss–Lobatto; Gauss–Radau; measure dependence.
 
@@ -111,7 +113,7 @@ Aliases: Fejér; Gauss–Lobatto; Gauss–Radau; measure dependence.
 - Disposition: deferred; resume after M1/M3 if a concrete unclassified family remains.
 - Canonical theory: pending.
 
-### IDEA?mz-constants-codex-07 — Fast and certified spectra (M6)
+### IDEA-058 — Fast and certified spectra (M6)
 
 Aliases: HSS; node order; interval checker; finite reduction.
 
@@ -126,7 +128,7 @@ Aliases: HSS; node order; interval checker; finite reduction.
 - Disposition: deferred as proof route until an exact finite obligation exists.
 - Canonical theory: reproduction claim under a separate provisional PD-T ID.
 
-### IDEA?mz-constants-codex-08 — Manuscript (M7)
+### IDEA-059 — Manuscript (M7)
 
 Aliases: short note; DRNA; BIT; Numer. Algorithms.
 
@@ -150,11 +152,130 @@ Aliases: short note; DRNA; BIT; Numer. Algorithms.
 
 | Idea ID | Verdict | Outcome | Canonical record | Next decisive step |
 |---|---|---|---|---|
-| IDEA?mz-constants-codex-01 | supplied search variant | active baseline | literature-search.md | verify fulltext coverage |
-| IDEA?mz-constants-codex-02 | supplied mathematical variant | active M1 | directions/M1/ | quantitative proof and Astra review |
-| IDEA?mz-constants-codex-03 | supplied mathematical variant | active M2 | directions/M2/ | cardinal/packet proof and Astra review |
-| IDEA?mz-constants-codex-04 | quantitative variant | deferred | M3 seed | active slot and exact constants |
-| IDEA?mz-constants-codex-05 | supplied 2D variant | deferred | M4 seed | separate signed-weight argument |
-| IDEA?mz-constants-codex-06 | supplied classification variant | deferred | M5 seed | identify unsolved family after M1/M3 |
-| IDEA?mz-constants-codex-07 | computational variant | deferred proof route | M6 seed | proved finite reduction |
-| IDEA?mz-constants-codex-08 | synthesis | deferred | M7 seed | explicit acceptance gate |
+| IDEA-052 | supplied search variant | active baseline | literature-search.md | verify fulltext coverage |
+| IDEA-053 | supplied mathematical variant | active M1 | directions/M1/ | quantitative proof and Astra review |
+| IDEA-054 | supplied mathematical variant | active M2 | directions/M2/ | cardinal/packet proof and Astra review |
+| IDEA-055 | quantitative variant | deferred | M3 seed | active slot and exact constants |
+| IDEA-056 | supplied 2D variant | deferred | M4 seed | separate signed-weight argument |
+| IDEA-057 | supplied classification variant | deferred | M5 seed | identify unsolved family after M1/M3 |
+| IDEA-058 | computational variant | deferred proof route | M6 seed | proved finite reduction |
+| IDEA-059 | synthesis | deferred | M7 seed | explicit acceptance gate |
+
+## MZ development dispositions and local candidate memory
+
+All local candidates below were independently reconstructed by gpt-6-astra xhigh; the exact scope/accepted or deferred disposition is in the [audit](../topics/mz-constants/independent-astra-01.md). Analytic validity was accepted for the proved M1/M2/M3 statements and the exact marginal reduction; novelty remains unresolved. Seed M1/M2/M3 targets are now developed, and the manuscript gate is met. M4's main signed-weight target, M5 classification and M6 certification route remain deferred/OPEN. The gate does not constitute required Claude acceptance.
+
+### IDEA-060 — infer PSD from the active defect signs
+
+Aliases: nonnegative Hankel defect; direct Loewner domination.
+
+Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M1/IDEAS.md](../topics/mz-constants/directions/M1/IDEAS.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-11`; final mapping is immutable.
+
+### IDEA-061 — direct row diagonal dominance
+
+Aliases: Gershgorin of 2M−R; plain Chebyshev mass rows.
+
+Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M1/IDEAS.md](../topics/mz-constants/directions/M1/IDEAS.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-12`; final mapping is immutable.
+
+### IDEA-062 — absolute-coefficient comparison for a Z-matrix
+
+Aliases: sign replacement; Z-matrix upper MZ proof; 2M−R comparison.
+
+Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M1/IDEAS.md](../topics/mz-constants/directions/M1/IDEAS.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-13`; final mapping is immutable.
+
+### IDEA-063 — quantify the gap through a telescoping mass floor
+
+Aliases: half-constant coefficient scaling; weighted mass dominance.
+
+Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M1/IDEAS.md](../topics/mz-constants/directions/M1/IDEAS.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-14`; final mapping is immutable.
+
+### IDEA-064 — source-reported full-degree top mode
+
+Aliases: T_N obstruction; codimension-one endpoint exclusion.
+
+Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M1/IDEAS.md](../topics/mz-constants/directions/M1/IDEAS.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-15`; final mapping is immutable.
+
+### IDEA-065 — weighted cardinal-cell Schur estimate
+
+Aliases: interpolation operator with endpoint weight; critical weighted convolution.
+
+Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M2/candidates.md](../topics/mz-constants/directions/M2/candidates.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-21`; final mapping is immutable.
+
+### IDEA-066 — endpoint-cancelled harmonic U witness
+
+Aliases: parity-exact harmonic trial; admissible log-cubed continuous mass.
+
+Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M2/candidates.md](../topics/mz-constants/directions/M2/candidates.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-22`; final mapping is immutable.
+
+### IDEA-067 — exact simpler U witness
+
+Aliases: U_(N−1) endpoint polynomial.
+
+Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M2/candidates.md](../topics/mz-constants/directions/M2/candidates.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-23`; final mapping is immutable.
+
+### IDEA-068 — uniform endpoint eta≤3/4
+
+Aliases: three-quarter endpoint bound.
+
+Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M2/candidates.md](../topics/mz-constants/directions/M2/candidates.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-24`; final mapping is immutable.
+
+### IDEA-069 — ordinary Lebesgue bound plus cardinal L1 columns
+
+Aliases: absolute-cardinal Cauchy route.
+
+Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M2/candidates.md](../topics/mz-constants/directions/M2/candidates.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-25`; final mapping is immutable.
+
+### IDEA-070 — direct transfer of full-space alternating trial
+
+Aliases: uncorrected alternating normalized-node vector.
+
+Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M2/candidates.md](../topics/mz-constants/directions/M2/candidates.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-26`; final mapping is immutable.
+
+### IDEA-071 — a sharp rescaled endpoint limit
+
+Aliases: exact leading logarithmic constant.
+
+Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M2/candidates.md](../topics/mz-constants/directions/M2/candidates.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-27`; final mapping is immutable.
+
+### IDEA-072 — correctly normalized Padua marginal
+
+Aliases: marginal uniqueness; univariate isometric compression.
+
+Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M2/padua-foundation-record.md](../topics/mz-constants/directions/M2/padua-foundation-record.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-28`; final mapping is immutable.
+
+### IDEA-073 — degree-sensitive sign comparison
+
+Aliases: rho Z-matrix; ratio-dependent upper MZ constant.
+
+Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M3/IDEAS.md](../topics/mz-constants/directions/M3/IDEAS.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-31`; final mapping is immutable.
+
+### IDEA-074 — filtered circle reconstruction removes the log N loss
+
+Aliases: oversampled Fejér kernel; de la Vallée Poussin difference; inverse weighted Schur.
+
+Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M3/IDEAS.md](../topics/mz-constants/directions/M3/IDEAS.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-32`; final mapping is immutable.
+
+### IDEA-075 — hyperinterpolation uses the upper Gram bound directly
+
+Aliases: adjoint evaluation bound; positive-rule hyperinterpolation stability.
+
+Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M3/IDEAS.md](../topics/mz-constants/directions/M3/IDEAS.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-33`; final mapping is immutable.
+
+### IDEA-076 — explicit two-sided assembly
+
+Aliases: strong eta(theta); fixed-ratio spectrum interval.
+
+Full predecessor comparison, separation criterion, prewritten kill test, evidence and exact disposition: [topics/mz-constants/directions/M3/IDEAS.md](../topics/mz-constants/directions/M3/IDEAS.md). Preserve this entry even when the mechanism failed or is equivalent. Original label: `IDEA?mz-constants-codex-34`; final mapping is immutable.
+
+
+## MZ obstruction memory
+
+| Obstruction | Exact hypotheses / scope | Affected mechanism | Evidence / escape condition |
+|---|---|---|---|
+| Hankel signs do not imply PSD | CC restricted defect indefinite for N≥5 | entrywise-positive-defect-to-Loewner inference | PD-N002; use the separate Z-matrix argument |
+| Plain row dominance fails | exact N5 row margin−2/35 | unscaled Gershgorin proof of2M−R | PD-N003; weighted continuous mass floor escapes it |
+| Uniform eta≤3/4 fails | N512,n511,513points | endpoint applicability assumption | PD-N004; conditional source theorem remains valid |
+| Uniform absolute cardinal columns fail | endpoint column has inverse normalized mass growing withN | ordinary cardinal-L1-column proof | PD-N005; angular-cell weighted Schur escapes it |
+| Alternating full-space trial inadmissible | specified strictly alternating values force nonzero degreeN coefficient | uncorrected transfer to Π_(N−1) | PD-N006; harmonicU combination enforces exact constraint |
+| Marginal lower domination is one-sided | signedPaduaRule, isometric univariate compression | inferring2D upperbound/convergencefromcompression | PD-T021/PD-T028; control complementary modes separately |
+| Endpoint eta rate needs uppergap | 1−eta=min(λmin,2−λmax) | inferringlog^-2eta deficiencyfromλmin alone | PD-T027; prove uniformgap or sharperendpointestimate |

@@ -7,15 +7,15 @@
 
 ## Imported source reports
 
-### LIT?mz-constants-codex-01 — reported direct predecessor
+### LIT-042 — reported direct predecessor
 
 The notes attribute numerical eta<1 beyond half-exactness for CC and Lebesgue-measure Padua rules to ASV arXiv:2601.04708 §§3.1–3.2; they propose sharp upper constants and endpoint asymptotics as a narrower research core. This is an attribution to be checked against the primary version, not evidence of novelty or proof.
 
-### LIT?mz-constants-codex-02 — reported An–Wu application issue
+### LIT-043 — reported An–Wu application issue
 
 F7 attributes an assumed eta=3/4 over a range of CC point counts to An–Wu Corollary 4.1 and claims an endpoint counterexample to that assumption. The campaign must verify source version, point-count convention and scope. No statement here refutes the conditional corollary or adopts the supplied mathematical derivation.
 
-### LIT?mz-constants-codex-03 — reported C4 transfer and stale status
+### LIT-044 — reported C4 transfer and stale status
 
 The mapping report proposes a weighted Schur estimate in CC node coordinates as a route to lambda_min >= c/log^2 N; its entry bounds and floor are reported as measured, and a matching upper bound remains a separate task. It also reports a full-degree lambda_max obstruction and calls the analogous private D1' OPEN. The orchestrator's later pinned-source inspection reports a conflicting PROVED label for D1'; that mismatch must be resolved before any transfer claim. No C4 status is inherited in this repository.
 

@@ -6,7 +6,7 @@
 
 ## Extracted source statement
 
-### LIT?mz-constants-codex-08 — correct chapter scope; unresolved L2 trap
+### LIT-049 — correct chapter scope; unresolved L2 trap
 
 Chapter 4 is *Algebraic Interpolation in Uniform Norm*, pp. 235–318. Its abstract describes optimal nodes with logarithmic Lebesgue constants and near-best uniform approximation. This does not identify an l2(CC weights) to L2(dx) Lobatto interpolation theorem.
 

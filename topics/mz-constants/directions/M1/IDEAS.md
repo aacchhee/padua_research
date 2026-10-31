@@ -2,7 +2,7 @@
 
 Rules/base: `d36722823441dc40c6e19d69a174459348dd309c`, read 2026-10-31. Developer: Codex, assigned gpt-6.1-sol xhigh. The complete `state/IDEAS.md`, `literature/INDEX.md`, supplied report record and frozen plan/literature baseline were read before exploration. Global registries are empty. Searches actually issued via `rg` covered Hankel, defect, alias, Schur, positivity, upper spectrum, lambda_max, D1 and T_N throughout ideas/state, tracks, topics and literature. The supplied Hankel formula is the sole local mathematical predecessor. Historical literature screening remains incomplete; no candidate is accepted or claimed novel before that screen and a separate reconstruction.
 
-## IDEA?mz-constants-codex-11 — infer PSD from the active defect signs
+## IDEA-060 — infer PSD from the active defect signs
 
 Aliases: nonnegative Hankel defect; direct Loewner domination.
 
@@ -17,9 +17,9 @@ Aliases: nonnegative Hankel defect; direct Loewner domination.
 - Discriminability: one negative minor disproves a universal PSD conclusion; finitely many positive tests could not prove it.
 - Actual result: N=5 already kills it. General minor with i=floor(N/2), j=i+2 proves indefiniteness for every N>=5; finite checker also checks this minor.
 - Disposition: **REJECTED: refuted** for N>=5, not a refutation of the threshold-two target.
-- Canonical negative result: PD-N?mz-constants-codex-11, `m1-failed-psd.md`.
+- Canonical negative result: PD-N002, `m1-failed-psd.md`.
 
-## IDEA?mz-constants-codex-12 — direct row diagonal dominance
+## IDEA-061 — direct row diagonal dominance
 
 Aliases: Gershgorin of 2M−R; plain Chebyshev mass rows.
 
@@ -34,9 +34,9 @@ Aliases: Gershgorin of 2M−R; plain Chebyshev mass rows.
 - Discriminability: a negative margin refutes the property, while it does not refute positive definiteness.
 - Actual result: floating exploratory matrix calculation at N=5 found a negative margin. Exact row 2 margin is −2/35. See executed check record.
 - Disposition: **REJECTED: failed**, solely for the universal unweighted row-dominance proof route.
-- Canonical negative result: PD-N?mz-constants-codex-12, `m1-failed-diagonal-dominance.md`.
+- Canonical negative result: PD-N003, `m1-failed-diagonal-dominance.md`.
 
-## IDEA?mz-constants-codex-13 — absolute-coefficient comparison for a Z-matrix
+## IDEA-062 — absolute-coefficient comparison for a Z-matrix
 
 Aliases: sign replacement; Z-matrix upper MZ proof; 2M−R comparison.
 
@@ -51,9 +51,9 @@ Aliases: sign replacement; Z-matrix upper MZ proof; 2M−R comparison.
 - Actual test: r−d=2(N−max(i,j))>=2 proves the required sign for every allowed pair. Exact checks N=2..40 supplement the proof.
 - Verification plan/outcome: self-contained analytic proof in PD-T?…-12; adversarial reconstruction provisionally confirms the sign argument; pinned audit and prior-art screen pending.
 - Disposition: development complete, acceptance pending. The strict theorem is PROVED in development; it is not merely a finite measurement.
-- Canonical theory: PD-T?mz-constants-codex-12, `m1-upper-bound.md`.
+- Canonical theory: PD-T014, `m1-upper-bound.md`.
 
-## IDEA?mz-constants-codex-14 — quantify the gap through a telescoping mass floor
+## IDEA-063 — quantify the gap through a telescoping mass floor
 
 Aliases: half-constant coefficient scaling; weighted mass dominance.
 
@@ -69,7 +69,7 @@ Aliases: half-constant coefficient scaling; weighted mass dominance.
 - Disposition: PROVED development, separate audit/prior-art pending.
 - Canonical theories: PD-T?…-13 `m1-coefficient-floor.md`; quantitative conclusion in PD-T?…-12.
 
-## IDEA?mz-constants-codex-15 — source-reported full-degree top mode
+## IDEA-064 — source-reported full-degree top mode
 
 Aliases: T_N obstruction; codimension-one endpoint exclusion.
 
@@ -100,11 +100,11 @@ No more M1 conceptual rounds are necessary to close the frozen first target. The
 
 | Provisional ID | Durable file | Development status |
 |---|---|---|
-| PD-T?mz-constants-codex-11 | tracks/mz-constants/theory/m1-cc-foundation.md | PROVED |
-| PD-T?mz-constants-codex-12 | tracks/mz-constants/theory/m1-upper-bound.md | PROVED |
-| PD-T?mz-constants-codex-13 | tracks/mz-constants/theory/m1-coefficient-floor.md | PROVED |
-| PD-T?mz-constants-codex-14 | tracks/mz-constants/theory/m1-full-degree-obstruction.md | PROVED |
-| PD-N?mz-constants-codex-11 | tracks/mz-constants/theory/m1-failed-psd.md | PROVED scoped refutation |
-| PD-N?mz-constants-codex-12 | tracks/mz-constants/theory/m1-failed-diagonal-dominance.md | PROVED scoped mechanism failure |
+| PD-T013 | tracks/mz-constants/theory/m1-cc-foundation.md | PROVED |
+| PD-T014 | tracks/mz-constants/theory/m1-upper-bound.md | PROVED |
+| PD-T015 | tracks/mz-constants/theory/m1-coefficient-floor.md | PROVED |
+| PD-T016 | tracks/mz-constants/theory/m1-full-degree-obstruction.md | PROVED |
+| PD-N002 | tracks/mz-constants/theory/m1-failed-psd.md | PROVED scoped refutation |
+| PD-N003 | tracks/mz-constants/theory/m1-failed-diagonal-dominance.md | PROVED scoped mechanism failure |
 
 All acceptance decisions are pending; the orchestrator will integrate final IDs and shared crosswalks at PR preparation. No Git state, shared registry, or manuscript was mutated by this worker.

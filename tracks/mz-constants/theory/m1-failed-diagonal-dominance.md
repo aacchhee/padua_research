@@ -1,16 +1,18 @@
-# PD-N?mz-constants-codex-12 — unweighted diagonal dominance fails at N=5
+# PD-N003 — unweighted diagonal dominance fails at N=5
+
+Review update, 2026-10-31: final ID allocation and scoped independent Astra review are complete; see topics/mz-constants/independent-astra-01.md and ID_CROSSWALK.md. The original development-stage pending-review wording below is historical. Required Claude audit and unresolved literature/novelty coverage remain PENDING. This administrative update changes no mathematical claim or proof.
 
 ID kind: PD-N. Aliases: plain row diagonal-dominance failure.
-Split from: candidate IDEA?mz-constants-codex-12. Split into: none.
+Split from: candidate IDEA-061. Split into: none.
 
 ## Statement, definitions and assumptions
 
-Let \(N=5\), with \(M,R\) the degree-four continuous/discrete Chebyshev mass matrices of PD-T?mz-constants-codex-11. Then \(A=2M-R\) is not weakly diagonally dominant by rows: its row indexed by 2 has margin \(-2/35\).
+Let \(N=5\), with \(M,R\) the degree-four continuous/discrete Chebyshev mass matrices of PD-T013. Then \(A=2M-R\) is not weakly diagonally dominant by rows: its row indexed by 2 has margin \(-2/35\).
 
 ## Status and negative-result scope
 
 Overall status: **PROVED** in development, independent pinned audit pending.
-Attempted mechanism: IDEA?mz-constants-codex-12, proving \(A\succ0\) for every \(N\ge2\) solely by unweighted row diagonal dominance of this matrix in the stated Chebyshev basis.
+Attempted mechanism: IDEA-061, proving \(A\succ0\) for every \(N\ge2\) solely by unweighted row diagonal dominance of this matrix in the stated Chebyshev basis.
 Parameter range: exact counterexample at \(N=5\); no universal claim of failure for every larger \(N\) is made. Candidate disposition: **REJECTED: failed**. The target theorem is not rejected.
 
 ## Proof
@@ -23,7 +25,7 @@ Thus \(A_{22}-|A_{20}|-|A_{24}|=-2/35<0\). This disproves the asserted universal
 
 ## Dependencies, checks, sources and open items
 
-Depends only on the exact cosine moment/alias formulas in PD-T?mz-constants-codex-11. The rational checker `tracks/mz-constants/code/m1_exact_check.py` separately calculates this margin; executed command/hashes are in `topics/mz-constants/directions/M1/RUNS.md`. No external source is used. Independent pinned audit remains pending.
+Depends only on the exact cosine moment/alias formulas in PD-T013. The rational checker `tracks/mz-constants/code/m1_exact_check.py` separately calculates this margin; executed command/hashes are in `topics/mz-constants/directions/M1/RUNS.md`. No external source is used. Independent pinned audit remains pending.
 
 ## History
 

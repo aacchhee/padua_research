@@ -16,4 +16,4 @@ This is a track within the campaign; it does not replace the repository charter.
 - [Independent audit log](AUDIT_LOG.md)
 - [Scoped negative results](NEGATIVE_RESULTS.md)
 
-All results use provisional IDs during development. Status and acceptance are distinct: a complete development proof remains subject to the independent reconstruction and Claude handoff. Numerical observations are MEASURED. No novelty or exhaustive-literature claim follows from a proof's correctness.
+Development used provisional IDs; PR preparation allocated final PD-T013–028, PD-N002–006, LIT-042–060 and IDEA-052–076 through the shared batch ledger. Status and acceptance are distinct: the declared analytic claims passed independent Astra reconstruction, while the required Claude handoff remains pending. Numerical observations are MEASURED. No novelty or exhaustive-literature claim follows from a proof's correctness.

@@ -1,4 +1,6 @@
-# PD-T?mz-constants-codex-52 — two-dimensional Padua upper and endpoint targets
+# PD-T028 — two-dimensional Padua upper and endpoint targets
+
+Review update, 2026-10-31: final ID allocation and scoped independent Astra review are complete; see topics/mz-constants/independent-astra-01.md and ID_CROSSWALK.md. The original development-stage pending-review wording below is historical. Required Claude audit and unresolved literature/novelty coverage remain PENDING. This administrative update changes no mathematical claim or proof.
 
 ID kind: PD-T. Aliases: signed Padua weak MZ; two-dimensional log-squared endpoint.
 Split from: original M4 target.
@@ -18,7 +20,7 @@ Overall status: OPEN. All universal assertions in this statement are OPEN. The f
 
 ## Depends on
 
-Background only: PD-T?mz-constants-codex-28 exact compression; PD-T?mz-constants-codex-41 finite measurements. No classical/private theorem is imported as a proof.
+Background only: PD-T021 exact compression; PD-T026 finite measurements. No classical/private theorem is imported as a proof.
 
 ## Checks and sources
 

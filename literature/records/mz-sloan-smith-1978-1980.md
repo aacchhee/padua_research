@@ -6,7 +6,7 @@
 
 ## Extracted source reports
 
-### LIT?mz-constants-codex-06 — 1978 convergence/weight result (summary coverage)
+### LIT-047 — 1978 convergence/weight result (summary coverage)
 
 The publisher summary describes interpolatory product integration of kf at cos(i pi/n), i=0,...,n. For k in Lp with p>1 it reports convergence for continuous, even Riemann-integrable f, convergence of the sum of absolute weights to integral |k|, and limiting individual-weight expressions under additional assumptions.
 
@@ -14,7 +14,7 @@ The publisher summary describes interpolatory product integration of kf at cos(i
 - Gap: exact additional hypotheses and theorem numbers, proof estimates for interpolation norms and their possible uniformity in n.
 - Relation: close node/weight ancestor, but the summary's fixed-integrand convergence is not the campaign's supremum over n-dependent squared polynomials. Fulltext must be screened before excluding equivalent M1–M3 bounds.
 
-### LIT?mz-constants-codex-07 — 1980 implementation/error result (summary coverage)
+### LIT-048 — 1980 implementation/error result (summary coverage)
 
 The publisher summary describes the same interpolatory product rule and two error estimates; k=1 yields CC. It reports tests for singular and oscillatory k and smooth f.
 

@@ -1,4 +1,6 @@
-# PD-T?mz-constants-codex-51 — sharp endpoint upper spectrum
+# PD-T027 — sharp endpoint upper spectrum
+
+Review update, 2026-10-31: final ID allocation and scoped independent Astra review are complete; see topics/mz-constants/independent-astra-01.md and ID_CROSSWALK.md. The original development-stage pending-review wording below is historical. Required Claude audit and unresolved literature/novelty coverage remain PENDING. This administrative update changes no mathematical claim or proof.
 
 ID kind: PD-T. Aliases: 1.004437 limit; uniform endpoint upper gap.
 Split from: M1 supplied strengthened target beyond the strict threshold.

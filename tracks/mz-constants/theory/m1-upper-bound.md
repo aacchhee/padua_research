@@ -1,8 +1,10 @@
-# PD-T?mz-constants-codex-12 — CC upper spectrum below two
+# PD-T014 — CC upper spectrum below two
+
+Review update, 2026-10-31: final ID allocation and scoped independent Astra review are complete; see topics/mz-constants/independent-astra-01.md and ID_CROSSWALK.md. The original development-stage pending-review wording below is historical. Required Claude audit and unresolved literature/novelty coverage remain PENDING. This administrative update changes no mathematical claim or proof.
 
 ID kind: PD-T. Aliases: absolute-coefficient Z-matrix comparison; CC upper MZ bound.
 Split from: frozen M1 target \(\lambda_{\max}(Q_N|_{\Pi_{N-1}})<2\) for all \(N\ge2\).
-Split into: supporting coefficient-floor lemma PD-T?mz-constants-codex-13, not a part of the target's own statement.
+Split into: supporting coefficient-floor lemma PD-T015, not a part of the target's own statement.
 
 ## Statement
 
@@ -15,11 +17,11 @@ Equivalently, all eigenvalues of its discrete Gram matrix in any continuous-Lebe
 
 ## Definitions, assumptions and status
 
-CC weights, moments \(\mu_k\), the continuous mass matrix \(M\), the discrete mass matrix \(R\), and \(D=2(M-R)\) are defined in PD-T?mz-constants-codex-11. Throughout this proof their indices are \(0,\ldots,N-1\).
+CC weights, moments \(\mu_k\), the continuous mass matrix \(M\), the discrete mass matrix \(R\), and \(D=2(M-R)\) are defined in PD-T013. Throughout this proof their indices are \(0,\ldots,N-1\).
 
 Overall status: **PROVED** in development; independent pinned review and prior-art screening remain pending. The strict target and its explicit finite-N strengthening are proved analytically. No claim about the sharp limiting upper constant is included.
 
-Depends on: PD-T?mz-constants-codex-11 (exact defect/positive weights) and PD-T?mz-constants-codex-13 (quantitative coefficient floor). The qualitative upper bound \(<2\) uses only the exact defect and positivity of the continuous integral, not the floor or CC-weight positivity.
+Depends on: PD-T013 (exact defect/positive weights) and PD-T015 (quantitative coefficient floor). The qualitative upper bound \(<2\) uses only the exact defect and positivity of the continuous integral, not the floor or CC-weight positivity.
 
 ## Proof
 
@@ -59,7 +61,7 @@ The independent adversarial auditor reconstructed (2)–(3) from cosine moments 
 
 Closest local predecessor: supplied Hankel identity and source suggestion to exploit entrywise positivity, recorded in `literature/records/mz-input-reports.md`. Those notes do not supply this proof. Historical CC product-integration/interpolation prior art remains under documented screen in `topics/mz-constants/literature-search.md`; no novelty/priority claim is made. No private C4 theorem or external result is used.
 
-The bound degrades toward two as \(N\) grows. The much smaller measured limiting value near 1.004437 remains OPEN as a sharp asymptotic question, and is not needed for (1). Full degree \(\Pi_N\) is expressly excluded and violates the threshold; see PD-T?mz-constants-codex-14.
+The bound degrades toward two as \(N\) grows. The much smaller measured limiting value near 1.004437 remains OPEN as a sharp asymptotic question, and is not needed for (1). Full degree \(\Pi_N\) is expressly excluded and violates the threshold; see PD-T016.
 
 ## History
 

@@ -1,9 +1,11 @@
-# PD-T?mz-constants-codex-21 — an all-N cardinal lower bound
+# PD-T017 — an all-N cardinal lower bound
+
+Review update, 2026-10-31: final ID allocation and scoped independent Astra review are complete; see topics/mz-constants/independent-astra-01.md and ID_CROSSWALK.md. The original development-stage pending-review wording below is historical. Required Claude audit and unresolved literature/novelty coverage remain PENDING. This administrative update changes no mathematical claim or proof.
 
 ID kind: PD-T.
 Aliases: weighted cell Schur bound; full Lobatto interpolation lower spectrum.
 Split from: M2 target, two-sided logarithmic endpoint order.
-Split into: none. The matching upper bound has its own result PD-T?mz-constants-codex-22.
+Split into: none. The matching upper bound has its own result PD-T018.
 
 ## Statement
 
@@ -126,7 +128,7 @@ This proves the desired lower order for all N, including the full interpolation 
 
 ## Open items
 
-Independent mathematical acceptance and full historical duplicate screen. Improve constants only if scientifically useful; the explicit matching upper order is split into PD-T?mz-constants-codex-22.
+Independent mathematical acceptance and full historical duplicate screen. Improve constants only if scientifically useful; the explicit matching upper order is split into PD-T018.
 
 ## History
 

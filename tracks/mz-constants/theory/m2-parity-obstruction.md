@@ -1,4 +1,6 @@
-# PD-N?mz-constants-codex-26 — strictly alternating node trials miss the degree constraint
+# PD-N006 — strictly alternating node trials miss the degree constraint
+
+Review update, 2026-10-31: final ID allocation and scoped independent Astra review are complete; see topics/mz-constants/independent-astra-01.md and ID_CROSSWALK.md. The original development-stage pending-review wording below is historical. Required Claude audit and unresolved literature/novelty coverage remain PENDING. This administrative update changes no mathematical claim or proof.
 
 ID kind: PD-N.
 Aliases: full-space alternating vector obstruction; missing top Chebyshev coefficient.
@@ -25,7 +27,7 @@ Overall status: PROVED (development; audit pending).
 |---|---|---|
 | Positive alternating trial cannot satisfy top-coefficient constraint | PROVED | Exact inverse DCT coefficient |
 
-Candidate / claim disposition: IDEA?mz-constants-codex-26 REJECTED: failed as a direct transfer to Π_(N−1).
+Candidate / claim disposition: IDEA-070 REJECTED: failed as a direct transfer to Π_(N−1).
 Rejection reason: failed; statement does not exclude a separately corrected trial.
 
 ## Negative-result scope (PD-N only)
@@ -35,7 +37,7 @@ Parameter range: every N≥2, whenever all amplitudes are strictly positive.
 
 ## Depends on
 
-Finite cosine interpolation; positivity of the CC weights from PD-T?mz-constants-codex-21.
+Finite cosine interpolation; positivity of the CC weights from PD-T017.
 
 ## Checks
 
@@ -51,7 +53,7 @@ The coefficient of T_N in the interpolant is
 
     a_N^(Cheb)=(1/N)Σ_(k=0)^N (−1)^k v_k/c_k.
 
-For v_k=(−1)^k a_k the sum is strictly positive. Thus it does not vanish, proving exact degree N. In normalized coordinates the admissibility constraint is Σ(−1)^k y_k/(c_k√w_k)=0, which the stated trial violates. The endpoint-cancelled harmonic U witness in PD-T?mz-constants-codex-22 is separately constructed within Π_(N−1).
+For v_k=(−1)^k a_k the sum is strictly positive. Thus it does not vanish, proving exact degree N. In normalized coordinates the admissibility constraint is Σ(−1)^k y_k/(c_k√w_k)=0, which the stated trial violates. The endpoint-cancelled harmonic U witness in PD-T018 is separately constructed within Π_(N−1).
 
 ## Scope
 

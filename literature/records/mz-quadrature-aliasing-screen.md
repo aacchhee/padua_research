@@ -5,7 +5,7 @@
 
 ## Source statements
 
-### LIT?mz-constants-codex-14 — Trefethen 2008 exact mode aliasing
+### LIT-055 — Trefethen 2008 exact mode aliasing
 
 - Citation: L. N. Trefethen, *Is Gauss Quadrature Better than Clenshaw–Curtis?*, SIAM Rev. 50 (2008), 67–87, DOI <https://doi.org/10.1137/060659831>.
 - Text: <https://www.math.stonybrook.edu/~bishop/classes/math401.F09/Trefethen-Quad.pdf>; read abstract, Theorem 4.1 and §5 Theorems 5.1–5.2/formulas (5.2)–(5.4), published pp. 73–80 (selected portions).
@@ -14,7 +14,7 @@
 - Relation: the exact published algebra is a direct predecessor of campaign Chebyshev defect entries. The new candidate's proposed separation is assembling the quadratic-form Gram matrix and proving 2T-Q positive by an off-diagonal sign comparison. That comparison and the uniform upper ratio <2 were not found in these selected portions. This does not clear uninspected historical sources.
 - Gap: remaining text not completely screened. A fixed-function convergence theorem cannot alone control a supremum over N-dependent p².
 
-### LIT?mz-constants-codex-15 — Xiang–Bornemann 2012 coefficient-decay quadrature
+### LIT-056 — Xiang–Bornemann 2012 coefficient-decay quadrature
 
 - Citation: S. Xiang, F. Bornemann, *On the Convergence Rates of Gauss and Clenshaw–Curtis Quadrature for Functions of Limited Regularity*, SIAM J. Numer. Anal. 50 (2012), 2581–2587, primary <https://arxiv.org/html/1203.2445> (v3, 31 July 2012).
 - Coverage: abstract, introduction theorem, §3 aliasing statement and displayed error formulas (selected text; HTML has missing reference labels).
@@ -22,7 +22,7 @@
 - Locator: introduction theorem; §3 *Convergence rate of Clenshaw–Curtis quadrature*.
 - Relation/gap: closest coefficient-aliasing literature; does not in inspected portions state a sharp CC squared-polynomial MZ constant. Coefficient-decay constants for an N-dependent p² require separate control.
 
-### LIT?mz-constants-codex-16 — Hale–Townsend 2014 transform
+### LIT-057 — Hale–Townsend 2014 transform
 
 - Citation: N. Hale, A. Townsend, *A Fast, Simple, and Stable Chebyshev–Legendre Transform Using an Asymptotic Formula*, SIAM J. Sci. Comput. 36 (2014), A148–A167, DOI <https://doi.org/10.1137/130932223>.
 - Text: <https://appliedmaths.sun.ac.za/~nhale/publications/HaleTownsend2014a.pdf>.

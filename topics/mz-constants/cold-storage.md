@@ -5,7 +5,7 @@ Status: **locally staged only** in this Padua workspace. No delivery to Windows 
 | File | Actual storage path | Bytes | SHA-256 | Source base | Frozen generating command | Script content identity | Checker result |
 |---|---|---:|---|---|---|---|---|
 | Reproduction JSON | `/workspace/padua_research/tracks/mz-constants/evidence/reproduction.json` | 29202 | `b85b06fa9b3317d6ce84f9d354626b74edad4e8f9885341ecad39166d4fd6d40` | `d36722823441dc40c6e19d69a174459348dd309c` | Command R below | Runner SHA256 `fe88a16d2ac08df96dc5e18a224ac1b0d46d5cec4310cc86fff0f7fda1aa44ac` | SHA256 and size matched; embedded runner hash matched current code |
-| Reproduction manifest | `/workspace/padua_research/tracks/mz-constants/evidence/reproduction-manifest.json` | 1521 | `740a7afb0167b44f2206c5050ce9b88b87e08bc59daf06c7a58e84810a36867f` | `d36722823441dc40c6e19d69a174459348dd309c` | Command M below | Administrative inline Python; source below; numerical producer identified by runner SHA256 above | SHA256 and size matched; all four referenced artifact identities matched |
+| Reproduction manifest | `/workspace/padua_research/tracks/mz-constants/evidence/reproduction-manifest.json` | 2084 | `f07b2502444313da2e2180412e5a4c244a6e750e96973a25a090d914fff80be5` | `d36722823441dc40c6e19d69a174459348dd309c` | Command M below | Administrative inline Python; source below; numerical producer identified by runner SHA256 above | SHA256 and size matched; all four referenced artifact identities matched |
 
 Source base is the rule/input starting revision, **not** a claim that the newly developed runner already existed at that commit. The runner's SHA256 pins its actual bytes; no Git blob ID is claimed by this worker. The input bundle manifest SHA256 is `c12ee67df3efc0a17791930da47332e6f7e8532f2006938a3608a6fd93ada19b`; all 21 listed files were checked against it.
 
@@ -19,7 +19,7 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python tracks/mz-cons
 
 The actual run redirected console output to `local-output/mz-constants/reproduction-console.txt`. Re-execution creates new UTC timestamps and elapsed times; it is expected to change the JSON hash. Preserve the archived JSON if byte-for-byte retrieval is required.
 
-Command M is the actual administrative manifest refresh after the two prose model-provenance corrections; it did not rerun numerical code:
+Command M is the actual administrative manifest refresh after prose model-provenance corrections and final-ID/review metadata updates; it did not rerun numerical code:
 
 ```sh
 python - <<'PY'
@@ -39,7 +39,7 @@ The original manifest was assembled with Python `hashlib` and `json` from the fo
 
 ## Committed checker output
 
-This worker does not perform Git operations; commitment is the orchestrator's step. The following checker was actually executed against the staged bytes on 2026-10-31 and printed `PASS: two staged files, all manifest artifacts, embedded runner identity`. Its result is recorded here for commitment with the manifest:
+This worker does not perform Git operations; commitment is the orchestrator's step. The following checker was actually executed against the staged bytes on 2026-10-31 and printed `PASS: two staged files, all manifest artifacts, embedded runner identity`. Its result was independently rechecked by the orchestrator after final-ID/review metadata updates; all current hashes and sizes passed. Its result is recorded here for commitment with the manifest:
 
 ```sh
 python - <<'PY'
@@ -47,7 +47,7 @@ import hashlib,json
 from pathlib import Path
 expected={
  'tracks/mz-constants/evidence/reproduction.json':(29202,'b85b06fa9b3317d6ce84f9d354626b74edad4e8f9885341ecad39166d4fd6d40'),
- 'tracks/mz-constants/evidence/reproduction-manifest.json':(1521,'740a7afb0167b44f2206c5050ce9b88b87e08bc59daf06c7a58e84810a36867f')}
+ 'tracks/mz-constants/evidence/reproduction-manifest.json':(2084,'f07b2502444313da2e2180412e5a4c244a6e750e96973a25a090d914fff80be5')}
 for n,(size,h) in expected.items():
     p=Path(n)
     assert p.stat().st_size==size and hashlib.sha256(p.read_bytes()).hexdigest()==h,n

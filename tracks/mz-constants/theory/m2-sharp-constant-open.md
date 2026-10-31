@@ -1,9 +1,11 @@
-# PD-T?mz-constants-codex-27 — sharp endpoint leading constant
+# PD-T020 — sharp endpoint leading constant
+
+Review update, 2026-10-31: final ID allocation and scoped independent Astra review are complete; see topics/mz-constants/independent-astra-01.md and ID_CROSSWALK.md. The original development-stage pending-review wording below is historical. Required Claude audit and unresolved literature/novelty coverage remain PENDING. This administrative update changes no mathematical claim or proof.
 
 ID kind: PD-T.
 Aliases: limit of logarithm-squared minimum eigenvalue.
 Split from: the original M2 request for endpoint order with an explicit constant if possible.
-Split into: proved comparison estimates PD-T?mz-constants-codex-21 and PD-T?mz-constants-codex-22; they do not settle this sharper statement.
+Split into: proved comparison estimates PD-T017 and PD-T018; they do not settle this sharper statement.
 
 ## Statement
 
@@ -15,7 +17,7 @@ and, if the limit exists, determine c_* explicitly.
 
 ## Definitions
 
-CC nodes, weights, measure and degree convention as in PD-T?mz-constants-codex-21. Natural logarithm.
+CC nodes, weights, measure and degree convention as in PD-T017. Natural logarithm.
 
 ## Assumptions
 
@@ -33,7 +35,7 @@ Candidate / claim disposition: deferred; no rejection. This target is retained e
 
 ## Depends on
 
-The precise definitions only. PD-T?mz-constants-codex-21 and -22 supply positive finite comparison bounds but are supporting results, not proved cases of the limit statement.
+The precise definitions only. PD-T017 and PD-T018 supply positive finite comparison bounds but are supporting results, not proved cases of the limit statement.
 
 ## Checks
 

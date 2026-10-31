@@ -1,4 +1,6 @@
-# PD-T?mz-constants-codex-31 — a fixed-ratio CC upper constant below two
+# PD-T022 — a fixed-ratio CC upper constant below two
+
+Review update, 2026-10-31: final ID allocation and scoped independent Astra review are complete; see topics/mz-constants/independent-astra-01.md and ID_CROSSWALK.md. The original development-stage pending-review wording below is historical. Required Claude audit and unresolved literature/novelty coverage remain PENDING. This administrative update changes no mathematical claim or proof.
 
 ID kind: PD-T. Aliases: degree-sensitive Z-matrix bound; oversampled upper MZ constant.
 Split from: M3 fixed-ratio two-sided target. Split into: none.
@@ -15,11 +17,11 @@ If \(2n\le N\), equality holds for every \(p\). If \(2n>N\), inequality (1) is s
 
 ## Definitions, assumptions and status
 
-\(Q_N\) is the Lebesgue CC rule on \(N+1\) Lobatto nodes. \(M,R,D=2(M-R)\) denote its continuous/discrete Chebyshev mass matrices and exact Hankel defect on indices \(0,\ldots,n\), as in PD-T?mz-constants-codex-11.
+\(Q_N\) is the Lebesgue CC rule on \(N+1\) Lobatto nodes. \(M,R,D=2(M-R)\) denote its continuous/discrete Chebyshev mass matrices and exact Hankel defect on indices \(0,\ldots,n\), as in PD-T013.
 
-Overall status: **PROVED** in development; prior-art screen and pinned independent acceptance pending. This is a degree-sensitive refinement of PD-T?mz-constants-codex-12, not a uniform upper gap at \(n=N-1\).
+Overall status: **PROVED** in development; prior-art screen and pinned independent acceptance pending. This is a degree-sensitive refinement of PD-T014, not a uniform upper gap at \(n=N-1\).
 
-Depends on: locally proved moment/alias/defect signs, PD-T?mz-constants-codex-11. The sign-replacement argument of M1 is repeated explicitly. No external theorem is used.
+Depends on: locally proved moment/alias/defect signs, PD-T013. The sign-replacement argument of M1 is repeated explicitly. No external theorem is used.
 
 ## Proof
 

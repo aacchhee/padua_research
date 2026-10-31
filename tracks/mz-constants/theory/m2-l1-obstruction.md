@@ -1,4 +1,6 @@
-# PD-N?mz-constants-codex-25 — absolute-cardinal column domination fails
+# PD-N005 — absolute-cardinal column domination fails
+
+Review update, 2026-10-31: final ID allocation and scoped independent Astra review are complete; see topics/mz-constants/independent-astra-01.md and ID_CROSSWALK.md. The original development-stage pending-review wording below is historical. Required Claude audit and unresolved literature/novelty coverage remain PENDING. This administrative update changes no mathematical claim or proof.
 
 ID kind: PD-N.
 Aliases: endpoint cardinal L1 obstruction.
@@ -11,7 +13,7 @@ For each N≥2, ∫[-1,1]|ℓ_0(x)| dx=1/N. Consequently there is no constant C 
 
 ## Definitions
 
-The node and cardinal conventions of PD-T?mz-constants-codex-21.
+The node and cardinal conventions of PD-T017.
 
 ## Assumptions
 
@@ -25,7 +27,7 @@ Overall status: PROVED (development; audit pending).
 |---|---|---|
 | Exact endpoint absolute integral and obstruction | PROVED | Direct trigonometric integration |
 
-Candidate / claim disposition: IDEA?mz-constants-codex-25 REJECTED: failed.
+Candidate / claim disposition: IDEA-069 REJECTED: failed.
 Rejection reason: failed for this specific column-domination mechanism, not for the lower-bound target.
 
 ## Negative-result scope (PD-N only)
@@ -35,7 +37,7 @@ Parameter range: all N≥2; the endpoint k=0 alone obstructs the claimed uniform
 
 ## Depends on
 
-Only the explicit cardinal formula and endpoint weights in PD-T?mz-constants-codex-21.
+Only the explicit cardinal formula and endpoint weights in PD-T017.
 
 ## Checks
 
@@ -55,7 +57,7 @@ Reflection θ↦π−θ makes the cosine term zero. The remaining absolute sine 
 
 ## Scope
 
-Only the stated absolute-cardinal L1 column route fails. The weighted cell Schur argument of PD-T?mz-constants-codex-21 escapes this assumption.
+Only the stated absolute-cardinal L1 column route fails. The weighted cell Schur argument of PD-T017 escapes this assumption.
 
 ## Open items
 

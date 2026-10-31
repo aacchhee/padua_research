@@ -4,7 +4,7 @@
 
 ## Source statements
 
-### LIT?mz-constants-codex-18 — Passi thesis is bachelor's, numerical extension
+### LIT-059 — Passi thesis is bachelor's, numerical extension
 
 - Citation: Agnese Passi, *Esperimenti numerici sulla esattezza della quadratura nell'iperinterpolazione*, Università degli Studi di Padova, 2025/2026, dated 24 April 2026, supervisor Alvise Sommariva.
 - Primary: <https://www.math.unipd.it/~alvise/TESI_STUDENTI/PASSI.pdf>.
@@ -12,7 +12,7 @@
 - Statement: title page identifies a three-year mathematics bachelor's thesis. The introduction/chapter 4 describe numerical Fejér-rule comparisons extending the earlier CC/weak-MZ experiment, using Legendre polynomials for Lebesgue measure. Chapter 4 presents observations beyond half-exactness.
 - Relation/gap: a direct experimental predecessor, not an extracted all-degree proof of M1–M3. The supplied MSc label is incorrect. Its entire theoretical chapter and code were not audited; claims attributed to unseen portions stay **FULLTEXT UNVERIFIED**.
 
-### LIT?mz-constants-codex-19 — author CV publication/in-preparation metadata
+### LIT-060 — author CV publication/in-preparation metadata
 
 - Primary: <https://sites.google.com/view/alvisesommarivaunipd/home-page/curriculum-vitae>.
 - Coverage: thesis list entry for Passi and publication-list entries 1 and 6 (selected text).

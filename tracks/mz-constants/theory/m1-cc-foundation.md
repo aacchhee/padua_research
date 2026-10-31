@@ -1,4 +1,6 @@
-# PD-T?mz-constants-codex-11 — exact CC weights, aliasing and defect
+# PD-T013 — exact CC weights, aliasing and defect
+
+Review update, 2026-10-31: final ID allocation and scoped independent Astra review are complete; see topics/mz-constants/independent-astra-01.md and ID_CROSSWALK.md. The original development-stage pending-review wording below is historical. Required Claude audit and unresolved literature/novelty coverage remain PENDING. This administrative update changes no mathematical claim or proof.
 
 ID kind: PD-T. Aliases: DCT-I CC weights; Lebesgue Lobatto aliasing; Hankel defect.
 Split from: none. Split into: none.
@@ -37,7 +39,7 @@ I-G=\tfrac12 C^TDC.\tag{3}
 
 ## Assumptions and status
 
-Only the definitions above; no inherited theorem on CC weight positivity is assumed. Overall status: **PROVED** in development, independent pinned review pending. These exact identities and positive weights are substantive supporting results for M1/M2. No positive-semidefinite assertion about \(D\) is made; that assertion is false for \(N\ge5\) on \(\Pi_{N-1}\), as recorded in PD-N?mz-constants-codex-11.
+Only the definitions above; no inherited theorem on CC weight positivity is assumed. Overall status: **PROVED** in development, independent pinned review pending. These exact identities and positive weights are substantive supporting results for M1/M2. No positive-semidefinite assertion about \(D\) is made; that assertion is false for \(N\ge5\) on \(\Pi_{N-1}\), as recorded in PD-N002.
 
 ## Proof
 

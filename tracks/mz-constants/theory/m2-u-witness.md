@@ -1,9 +1,11 @@
-# PD-T?mz-constants-codex-23 — exact U endpoint witness
+# PD-T019 — exact U endpoint witness
+
+Review update, 2026-10-31: final ID allocation and scoped independent Astra review are complete; see topics/mz-constants/independent-astra-01.md and ID_CROSSWALK.md. The original development-stage pending-review wording below is historical. Required Claude audit and unresolved literature/novelty coverage remain PENDING. This administrative update changes no mathematical claim or proof.
 
 ID kind: PD-T.
 Aliases: second-kind Chebyshev endpoint test; odd harmonic norm identity.
 Split from: the original M2 endpoint target; this supporting result has its own substantive statement.
-Split into: the eta counterexample is PD-N?mz-constants-codex-24; matching log-squared upper order is PD-T?mz-constants-codex-22.
+Split into: the eta counterexample is PD-N004; matching log-squared upper order is PD-T018.
 
 ## Statement
 
@@ -17,7 +19,7 @@ Therefore its quotient is at most an explicit constant times 1/log N. This witne
 
 ## Definitions
 
-CC conventions as in PD-T?mz-constants-codex-21. U_r(cosθ)=sin((r+1)θ)/sinθ, continuously at 0 and π. Set S_N=Σ_(j=1)^N(2j−1)^−1.
+CC conventions as in PD-T017. U_r(cosθ)=sin((r+1)θ)/sinθ, continuously at 0 and π. Set S_N=Σ_(j=1)^N(2j−1)^−1.
 
 ## Assumptions
 
@@ -35,7 +37,7 @@ Candidate / claim disposition: active as a simpler supporting result.
 
 ## Depends on
 
-Exact endpoint weights from the elementary telescoping calculation in PD-T?mz-constants-codex-21; no spectrum estimate.
+Exact endpoint weights from the elementary telescoping calculation in PD-T017; no spectrum estimate.
 
 ## Checks
 

@@ -1,8 +1,16 @@
 # Literature corpus
 
-No sources have been supplied or inventoried. This is the inventory of all known campaign sources, including unread sources. It is not a claim that a source was read.
+Inventory of known MZ sources, including unread sources. Reading coverage is statement-specific in the linked records and [INDEX](INDEX.md). Do not infer a full source audit from a metadata/access record. No third-party PDF/fulltext extract is committed. Charter source rows will be preserved at sequential integration, not preemptively authored by MZ.
 
-Assign a stable bibliographic key. Record an accessible URL or an AC-supplied location; do not commit restricted full text. Read [INDEX.md](INDEX.md) before opening a source. Distinguish metadata-only, abstract-only, partial and full-text reading.
-
-| Key | Citation | DOI / URL / supplied location | Availability | Reading coverage | Record | Gaps |
-|---|---|---|---|---|---|---|
+| Key | Citation / scope | DOI / URL / supplied location | Availability / reading coverage | Record | Gaps |
+|---|---|---|---|---|---|
+| mz-an-sommariva-vianello-2026 | mz-an-sommariva-vianello-2026 — weak MZ constants | https://arxiv.org/abs/2601.04708 | see exact per-statement coverage | [mz-an-sommariva-vianello-2026.md](records/mz-an-sommariva-vianello-2026.md) | named gaps retained in record; historical fulltexts may be pending-reference |
+| mz-an-wu-2022 | mz-an-wu-2022 — quadrature exactness in hyperinterpolation | https://doi.org/10.1007/s10543-022-00935-x | see exact per-statement coverage | [mz-an-wu-2022.md](records/mz-an-wu-2022.md) | named gaps retained in record; historical fulltexts may be pending-reference |
+| mz-classical-mz-screen | mz-classical-mz-screen — historical inequalities requiring exact hypotheses | https://doi.org/10.1137/0518041 | see exact per-statement coverage | [mz-classical-mz-screen.md](records/mz-classical-mz-screen.md) | named gaps retained in record; historical fulltexts may be pending-reference |
+| mz-don-gottlieb-1994 | mz-don-gottlieb-1994 — Chebyshev–Legendre method | https://doi.org/10.1137/0731079 | see exact per-statement coverage | [mz-don-gottlieb-1994.md](records/mz-don-gottlieb-1994.md) | named gaps retained in record; historical fulltexts may be pending-reference |
+| mz-input-reports | mz-input-reports — supplied F7/P1/C4-transfer reports | supplied archive, pinned input manifest | see exact per-statement coverage | [mz-input-reports.md](records/mz-input-reports.md) | named gaps retained in record; historical fulltexts may be pending-reference |
+| mz-mastroianni-milovanovic-2008 | mz-mastroianni-milovanovic-2008 — Interpolation Processes | https://doi.org/10.1007/978-3-540-68349-0 | see exact per-statement coverage | [mz-mastroianni-milovanovic-2008.md](records/mz-mastroianni-milovanovic-2008.md) | named gaps retained in record; historical fulltexts may be pending-reference |
+| mz-passi-cv-2026 | mz-passi-cv-2026 — thesis and current author metadata | https://www.math.unipd.it/~alvise/TESI_STUDENTI/PASSI.pdf | see exact per-statement coverage | [mz-passi-cv-2026.md](records/mz-passi-cv-2026.md) | named gaps retained in record; historical fulltexts may be pending-reference |
+| mz-quadrature-aliasing-screen | mz-quadrature-aliasing-screen — Trefethen, Xiang–Bornemann, Hale–Townsend | https://doi.org/10.1137/060659831 | see exact per-statement coverage | [mz-quadrature-aliasing-screen.md](records/mz-quadrature-aliasing-screen.md) | named gaps retained in record; historical fulltexts may be pending-reference |
+| mz-sloan-smith-1978-1980 | mz-sloan-smith-1978-1980 — CC product integration | https://doi.org/10.1007/BF01398509 | see exact per-statement coverage | [mz-sloan-smith-1978-1980.md](records/mz-sloan-smith-1978-1980.md) | named gaps retained in record; historical fulltexts may be pending-reference |
+| mz-widom-1966-screen | mz-widom-1966-screen — matrix-asymptotic pointers | https://doi.org/10.1090/S0002-9947-1966-0187099-X | see exact per-statement coverage | [mz-widom-1966-screen.md](records/mz-widom-1966-screen.md) | named gaps retained in record; historical fulltexts may be pending-reference |

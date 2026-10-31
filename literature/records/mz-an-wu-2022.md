@@ -7,7 +7,7 @@
 
 ## Extracted source statement
 
-### LIT?mz-constants-codex-05 — explicitly conditional CC application
+### LIT-046 — explicitly conditional CC application
 
 For positive rules exact through n+k (0<k<=n), the main theorem assumes an MZ relative squared-norm error eta<1 on degree <=n. Section 4 assumes eta=3/4 for its examples. Corollary 4.1 includes m-point CC with n+2<=m<=2n+1, explicitly retaining the theorem's conditions and eta=3/4, and gives error <=3 sqrt(V) E_(m-1-n)(f).
 

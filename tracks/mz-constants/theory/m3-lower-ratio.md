@@ -1,4 +1,6 @@
-# PD-T?mz-constants-codex-32 — an explicit fixed-ratio CC lower bound
+# PD-T023 — an explicit fixed-ratio CC lower bound
+
+Review update, 2026-10-31: final ID allocation and scoped independent Astra review are complete; see topics/mz-constants/independent-astra-01.md and ID_CROSSWALK.md. The original development-stage pending-review wording below is historical. Required Claude audit and unresolved literature/novelty coverage remain PENDING. This administrative update changes no mathematical claim or proof.
 
 ID kind: PD-T. Aliases: oversampled Fejér reconstruction; filtered weighted Schur bound.
 Split from: M3 fixed-ratio two-sided target. Split into: none.
@@ -28,7 +30,7 @@ Circle integration uses ordinary \(dt\) on \([0,2\pi)\), without normalization. 
 
 Overall status: **PROVED** in development; pinned independent audit and prior-art screen pending. The constants are deliberately loose.
 
-Depends on: PD-T?mz-constants-codex-21, section1, only its elementary CC-weight bounds: \(w_j\ge\sin(t_j)/N\) at interior half-circle nodes; \(w_0=w_N\ge N^{-2}\). That proof is local and explicitly reconstructs the Fourier series and weights. It has its own pending audit. No external classical MZ theorem or private result is assumed. All remaining ingredients are proved below.
+Depends on: PD-T017, section1, only its elementary CC-weight bounds: \(w_j\ge\sin(t_j)/N\) at interior half-circle nodes; \(w_0=w_N\ge N^{-2}\). That proof is local and explicitly reconstructs the Fourier series and weights. It has its own pending audit. No external classical MZ theorem or private result is assumed. All remaining ingredients are proved below.
 
 ## Proof
 

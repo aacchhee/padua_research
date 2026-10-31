@@ -1,8 +1,10 @@
-# PD-T?mz-constants-codex-33 — explicit strong MZ constants at every fixed ratio
+# PD-T024 — explicit strong MZ constants at every fixed ratio
+
+Review update, 2026-10-31: final ID allocation and scoped independent Astra review are complete; see topics/mz-constants/independent-astra-01.md and ID_CROSSWALK.md. The original development-stage pending-review wording below is historical. Required Claude audit and unresolved literature/novelty coverage remain PENDING. This administrative update changes no mathematical claim or proof.
 
 ID kind: PD-T. Aliases: fixed-ratio eta below one; strong CC MZ inequality.
 Split from: frozen M3 question “explicit eta(theta)<1 uniform in n<=theta N for every fixed theta<1”.
-Split into: substantive upper and lower results PD-T?mz-constants-codex-31 and -32.
+Split into: substantive upper and lower results PD-T022 and PD-T023.
 
 ## Statement, definitions and assumptions
 
@@ -24,7 +26,7 @@ More precisely the interval \([A_\theta,1+\rho_\theta]\) contains the full Gram 
 
 Overall status: **PROVED** in development; separate pinned independent review and prior-art acceptance pending. This proves the original fixed-ratio target with explicit, nonsharp constants. It does not replace that target by the hyperinterpolation corollary.
 
-Depends on PD-T?mz-constants-codex-31 (upper interval) and -32 (lower interval); the latter uses the explicit CC-weight bounds in PD-T?mz-constants-codex-21. These are local analytic development proofs with their own audit boundaries; no external MZ theorem is assumed.
+Depends on PD-T022 (upper interval) and PD-T023 (lower interval); the latter uses the explicit CC-weight bounds in PD-T017. These are local analytic development proofs with their own audit boundaries; no external MZ theorem is assumed.
 
 ## Proof
 

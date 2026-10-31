@@ -15,3 +15,7 @@ Use global `PD-Tnnn` and `PD-Nnnn` IDs from [PROOF_STATUS.md](../PROOF_STATUS.md
 Name theory files with a portable descriptive slug (for example `mechanism-obstruction.md`) or a final ID (`PD-T001.md`), never a provisional ID containing `?`. Provisional IDs are labels inside Markdown only; `?` is invalid in Windows filenames and is a shell glob character.
 
 PD-N files record only scoped refuted/failed mechanisms. Equivalent or abandoned candidates remain IDEA dispositions and do not require a negative-result file solely for that reason.
+
+## Active scoped track
+
+[CC/Padua MZ constants](mz-constants/README.md): analytic CC upper, endpoint and fixed-ratio bounds; signed Padua marginal reduction, finite reproduced spectra and explicit open targets. The campaign charter is owned by the separate charter topic.
