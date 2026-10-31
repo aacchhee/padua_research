@@ -1,0 +1,13 @@
+{
+  "archive_bytes": 832029,
+  "archive_sha256": "7b173b14f12eb73661e165e544f189a42faa13c08d94e957126a08eb7b7ba53a",
+  "archive_entries": 161,
+  "enclosed_file_identities_checked": 160,
+  "SHA256_bytes_Git_blob_CRC": "PASS",
+  "independent_target_manifest_included": true,
+  "protocol_envelope_excluded": true,
+  "exact_stage_next": "PASS",
+  "unchanged_rules": "PASS",
+  "original_and_latest_parent_ancestry": "PASS",
+  "snapshot_sha256": "062ad98a6cb689c6b78126f50e76763c0d1e0b21f9398227899d27755b171d3b"
+}
