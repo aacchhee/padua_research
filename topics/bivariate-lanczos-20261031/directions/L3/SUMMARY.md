@@ -1,47 +1,59 @@
-# L3 — Direction summary after R06 (2026-10-31)
+# L3 summary — after R01–R06 and reconstructions 01–02 (2026-11-01T00:49+01:00)
 
-> Orchestrator note: saved by the orchestrator from the L3 developer's hand-back text (the developer's file write was blocked by the tool). Content is the developer's, lightly formatted; no changes of substance. Statuses are the developer's after applying reconstruction 01 ([response](response-recon-01.md)); R04–R06 claims (310–315, N303–N306) are not yet independently reconstructed.
+> Orchestrator note: saved by the orchestrator from the L3 developer's hand-back (the developer's write is blocked by the tool). Content is the developer's, lightly formatted. Earlier version (after R06, before reconstruction 02) is in Git history. Responses: [response-recon-01.md](response-recon-01.md), [response-recon-02.md](response-recon-02.md).
 
-Developer: Claude Opus 5.5, xhigh. 6 of 10 rounds used. IDs provisional (PD-T?bivariate-lanczos-claude-3nn, PD-N?…-N3nn). Readings of the frozen L3-Q1 (after reconstruction finding M1): L0 literal, L sections-only, E exact representation (answered here), G Greenbaum (with local relations of the computed basis).
+Developer: Claude Opus 5.5, xhigh. 6 of 10 rounds used. IDs provisional (PD-T?bivariate-lanczos-claude-3nn, PD-N?…-N3nn).
 
-## 1. Verdict
+## 1. L3-Q1 verdict by reading
 
-In reading (E): overdetermined case δ = 0 (PROVED). Square case: δ = O(ε) impossible and δ ≥ c√ε necessary (PROVED); δ ≍ √ε attained for n = 1 and Padua n = 2 (PROVED) and for equispaced checkerboards n ≤ 7 (CONDITIONAL); no δ → 0 for Padua n = 3 (PROVED) and n ≥ 4 (CONDITIONAL). δ(ε) is explicit only as a rate. Reading (G) is OPEN; no Greenbaum regime was observed in the tested runs.
+- **(L0)** Relations on the sections alone: trivially negative.
+- **(L)** With an added forward-accuracy hypothesis: trivially positive (μ′ = μ).
+- **(E)** Exact representation of consistent ε-perturbed data:
+  - Overdetermined case (Π_{2n+1}-determining nodes): δ = 0 for ε < r(0). PROVED.
+  - Square case M = N_n: δ = O(ε) impossible; δ ≥ c√ε and δ ≥ c√‖[Ĥ_x, Ĥ_y]_{nn}‖ necessary. PROVED.
+  - δ ≍ √ε: n = 1, Padua n = 2, equispaced checkerboards n ≤ 7 (PROVED); equispaced n = 8 (reviewer computation, pending independent rerun).
+  - No δ(ε) → 0: Padua n = 3 (PROVED) and every Padua n ≥ 4 (PROVED under unisolvence). δ₀(n) → 0 as n grows.
+  - "Explicit δ(ε)" is met as a rate; constants come from compactness.
+- **(G)** Greenbaum regime: OPEN. 314 (PROVED): the completed computed pair is consistent iff it is symmetric. Rotated square, BJ/CGS, linear regime n ≤ 20 (MEASURED): asymmetry ≈ forward error ≈ (2–10)·loss; no first-order consistent fit removes more than ≈ 55% of the forward error. Random square: the inaccurate F data are nearly symmetric — a Greenbaum-like counter-indication, unresolved.
 
 ## 2. Ranked survivors
 
-1. N301 (Padua n = 3 obstruction, PROVED after the quantifier fix, independent exact rerun by reconstruction 01) and 313/N303 (all n ≥ 4: P_n = 9(g₁² − ½g₀g₂) + (g₂² − g₁g₃), g_m = T_{n−m}(x)T_m(y) − T_m(x)T_{n+1−m}(y), double zeros and PD Hessians at all Padua nodes; CONDITIONAL on three short symbolic expansions; the reviewer's exact n = 4 certificate supports n = 4).
-2. 303 (rate theorem) and 302 (reduction to moment-cone membership over K_δ, residual with c = 1).
-3. N302 and 304 (square-case √ε necessity; commutator bound).
-4. 301 (truncated Favard correspondence).
-5. 305, 306, 310 (√ε attained: n = 1, Padua n = 2, equispaced n ≤ 7).
-6. 312 (interior-node Turán-type lemma: Hessian PD iff 0 < c sin²θ sin²φ < 1/4) and 309 (generator form).
-7. 314 (computed data are exact sections of some functional iff the completed pair (Ĥ_F, Ĥ_J) is symmetric; PROVED).
-8. 308 and N304 (compression/dilation model).
-9. MEASURED: 307, 311, 315 (asymmetry ≈ forward error ≈ (0.7–10)·loss on rotated/random squares; no first-order consistent fit does much better), N305, N306.
+1. **N301 + 313/N303** — Padua obstruction. Certificate p* for n = 3; for n ≥ 4, P_n = 9(g₁² − ½g₀g₂) + (g₂² − g₁g₃), g_m = T_{n−m}(x)T_m(y) − T_m(x)T_{n+1−m}(y), with double zeros and PD Hessians at all nodes. PROVED (N303 under unisolvence, a trusted LITERATURE dependency); independent exact rerun for n = 4..16.
+2. **303 + 302** — rate theorem: S₀ = 0 → δ = 0; S₁ = 0 → ε; S₁ ≠ 0 → δ ≳ √ε, with (H) ≍ √ε; a PD-Hessian p* ∈ S₁ → obstruction. Reduction to localized positive cubature with inradius r(δ) ≥ ε. PROVED.
+3. **N302 + 304** — no δ = O(ε) in the square case; ‖κ‖ ≤ Cδ²; commuting data give δ ≤ ‖ΔH‖. PROVED, except 304(c) isomorphism part (MEASURED).
+4. **301** — truncated Favard: commutator supported on block (n,n) ⟺ functional on Π_{2n+1}; words-formula inverse; excess count e_n. PROVED.
+5. **305, 306, 310** — √ε attained. PROVED.
+6. **312, 309** — interior Turán lemma; quadratic-generator (Hankel) form. PROVED (309 under unisolvence).
+7. **314** — consistency ⟺ symmetry. PROVED.
+8. **308, N304, N306** — compression model; compression ⇏ section; (H) not decided by the node count. PROVED.
+9. **MEASURED:** 307, 311, 315, N305, N307, N308.
+- **300** (combined target): OPEN.
 
-## 3. Prior-art separations (from reviews/L3-prior-art-01.md)
+## 3. Failed routes
 
-- 301 vs Xu Trans. AMS 1994 Thm 4.2 and Degani–Schiff–Tannor 2005 Thms 9–11: the truncated commutator-support characterisation and the excess count. Delgado–Geronimo–Iliev–Marcellán SIMAX 2006 and Cichoń–Stochel–Szafraniec JAT 2005 must be read first.
-- 302 vs Tchakaloff / Di Dio–Schmüdgen Prop. 27: localisation to K_δ and the inradius criterion.
-- 303 vs Di Dio–Schmüdgen Thm 40 / Lemma 37 / Prop. 43 and Blekherman 2012 Lemma 3.1: the quantitative trichotomy and condition (H).
-- 304 vs Möller / DST counts: where the extra support lies.
-- Padua certificates: no match found in the documented search.
-- 308: framework known (Passer–Shalit–Solel; Davidson–Dor-On–Shalit–Solel).
-- Withdrawn: the parallel between the 303(d) √ε rate and a "1D Greenbaum width √ε" (literature accounts conflict; Greenbaum 1989 pending-reference).
+Dilation route (N304); quantitative Lin (no Krylov structure); count route as first stated; C1 candidate (N305); κ-family certificates for n ≤ 3 (fail for every c); "count decides (H)" (N306); R06 hypotheses A (N307) and C (N308); the Greenbaum-width parallel (withdrawn, sources contested).
 
-## 4. Development briefs
+## 4. Prior-art separations (from reviews/L3-prior-art-01.md)
 
-- N303: hand check or independent rerun of the symbolic expansions, then explicit δ₀(n).
-- 303: explicit constants and the degenerate subcase.
-- 304(c): prove the isomorphism part (currently full rank measured for n = 2, 3).
-- 309: prove S₁ equals the quadratic-generator family.
-- 310: extended precision for n ≥ 8.
-- 314/315: an a-priori asymmetry–residual bound; HL/ORTH, O(1) loss and large M.
+| Result | Closest prior work | What L3 adds |
+|---|---|---|
+| 301 | Xu, Trans. AMS 1994, Thm 4.2; Degani–Schiff–Tannor 2005, Thms 9–11 | Truncated commutator-support characterisation and the count e_n. Still to read: Delgado–Geronimo–Iliev–Marcellán 2006, Cichoń–Stochel–Szafraniec 2005 |
+| 302 | Tchakaloff; Di Dio–Schmüdgen, Prop. 27 | Localisation to K_δ and the inradius criterion |
+| 303 | Di Dio–Schmüdgen, Thm 40, Lemma 37, Prop. 43; Blekherman 2012, Lemma 3.1 | The quantitative trichotomy and condition (H) |
+| 304 | Möller and DST node counts | Where the extra support lies |
+| Padua certificates | none found in the documented search | — |
+| 308 | Passer–Shalit–Solel; Davidson–Dor-On–Shalit–Solel | Routine |
 
-## 5. Runs needed
+## 5. Development briefs
 
-- Independent reruns: `exact_checkerboard.py 1 7 equi`, `r05_boundary_proof.py`, `r05_interior_identity.py`, `r05_direct_check.py 3 14`, `r06_consistency.py` (rot03 26, random 40, tensor 40), `r06_weight_fit.py rot03 14 26` (all in tracks/bivariate-lanczos/code/L3/).
-- Servers: `r06_consistency.py` with M = 10⁴–10⁵ on syvert0/1/2.
+- **N303:** independent rerun of the reviewer's δ₀(n) bounds; asymptotics of δ₀(n).
+- **303:** explicit constants; the degenerate PSD-singular subcase.
+- **304(c):** proof of the isomorphism part.
+- **309:** prove S₁ = {p_C}.
+- **310:** rerun the reviewer's n = 8 certificate; extended precision for n ≥ 9.
+- **(G):** a-priori relation between asymmetry and the commutator residual; HL/ORTH, O(1) loss and large M (AC's servers). Decisive test: the random-square near-symmetry.
 
-Ready for adversarial reconstruction: 310, 312, 313/N303, 314, N304–N306.
+## 6. Runs needed
+
+- Independent reruns: `r05_*`, `r06_*`; the reviewer's `equi_H_cert.py 8 8 60` and `padua_delta0.py`.
+- On AC's servers: `r06_consistency.py` at M = 10⁴–10⁵.
