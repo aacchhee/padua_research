@@ -54,6 +54,13 @@ Subagent effort is set from the agent definition and is not independently expose
 - Correction applied: Harris–Simanek needs ordered (monotone) nodes; recorded in plan Benchmarks, `literature/records/harris-simanek-2021.md` and IDEA?…-038 rows (state/IDEAS.md, baseline-candidates.md). Orchestrator check: `tracks/bivariate-lanczos/code/inputs/harris_simanek_check.py` builds all node lists monotone (random: sorted descending; warped: cos of a monotone map of [0,π]; Padua: Chebyshev–Lobatto descending) — usable as a benchmark. Cao–Ghimire–Wang 2022 (HS Conjecture 3) recorded UNVERIFIED.
 - Integration: active rounds not interrupted; the checkerboard family is passed to L1/L3/L5 when each returns, and to L2 at launch.
 
+### L1 R01–R03 returned; reviews launched (2026-10-31 ~22:55 local)
+
+- L1+L4 developer (Opus 5.5 xhigh, requested; 119 tool uses, ~61 min) completed R01–R03; committed `b84af76`. Claims PD-T?…-101–109, -401 and PD-N?…-101, -102 (statuses in [progress.md](progress.md)). Developer disclosures: post-hoc change to the R01 decision rule (completion degree N = M excluded; "tracks" label needs ≥ 2 informative degrees); kill criteria for IDEA?…-106/-107 written after the runs (R01, R03 criteria written before).
+- Remote branch had advanced by `48f7a02` (Codex MZ orchestrator propagated the shared batch ledger `topics/padua-batch-20261031/ALLOCATIONS.md`; ledger only). Merged into this branch (`1063469`) without rewriting history. Ledger states: charter PR #2 merged into main at `08fafe6`; allocation owner = Codex MZ orchestrator; this branch must merge charter/MZ-bearing main and obtain a disjoint reservation from that owner before final IDs. main not yet merged here (deferred to PR preparation, as AC instructed).
+- Launched: independent adversarial reconstruction of L1 R01–R03 (separate Claude Opus 5.5 xhigh agent; owns reviews/L1-reconstruction-01.md, code/review_L1/); prior-art check of mechanisms (a)–(f) (separate Claude Opus 5.5 high agent; owns reviews/L1-prior-art-01.md). L1 developer resumed for R04+ with reviewed files frozen and the checkerboard benchmark passed on.
+- RESULTS.md on AC's machine (`C:\Users\andreyac\Downloads\padua\RESULTS.md`): campaign entry appended (re-staged after a newer external edit; prior content preserved).
+
 ## Runs needed
 
 (none yet; directions add exact commands)
