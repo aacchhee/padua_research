@@ -1,25 +1,29 @@
 # Current frontier
 
-Updated: 2026-10-31.
+Updated: 2026-10-31. Owner: AC. Campaign topic: [charter and exploration](../topics/charter-unisolvence-20261031/LOG.md).
 
 ## Campaign charter
 
-- Owner: AC.
-- Research question: not yet specified.
-- Scope and exclusions: to be set by AC in the first research topic.
-- Mathematical model, assumptions and success criteria: not yet specified.
-- Active scientific tracks: none.
-- Registered results, ideas and literature statements: none.
+Subject: algebraic characterization of unisolvent bivariate node sets for total-degree interpolation over an arbitrary field K, with Padua-type sets as the motivating family. For m≥0, Π_m=K[x,y] of total degree at most m; an N=(m+1)(m+2)/2 point set is unisolvent when evaluation Π_m→K^N is an isomorphism. Distinct labelled X=(h_0,…,h_m), Y=(g_0,…,g_{m+1}) define S_e={(h_i,g_j):i+j≡e mod 2}, e∈{0,1}; both have N points. Labels matter.
 
-## Next decisions
+Background: Van Barel–Chesnokov, Numer. Algorithms 55 (2010), 383–402, relates a zero pivot of the bivariate orthogonal-polynomial recurrence to a polynomial vanishing on the nodes. This is a supplied literature attribution, not a locally checked proof. Here rank deficiency of the evaluation map, and explicit polynomial certificates, are the algebraic target.
 
-1. AC supplies the research question, constraints and any initial papers or data.
-2. The first topic records the charter and literature baseline, then proposes decisive tests.
+Success criterion: prove U1, or refute its exact stated scope with a precisely checked counterexample; then pursue surviving U2 generalizations and U3 consequences as far as evidence and round budget carry. U1 asks whether S_e is unisolvent iff both alternation functionals L_H(f)=Σ_i(-1)^i f(H_i)/ω_H′(H_i) have all leading Hankel minors of orders 1,…,|H|-1 nonzero (the source's finite-support quasi-definiteness cutoff). The finite cutoff is explicit: ordinary infinite quasi-definiteness is impossible for a finite-support functional. Characteristic 2 is included in the question until separately resolved.
 
-## Open scientific topics
+Model: exact field arithmetic for proofs. Real ordered positivity is a special hypothesis, never silently imposed on arbitrary fields. Algebraic closures, generic nodes, symbolic indeterminate nodes and oracle data are allowed only with explicit labels. Finite-field and floating-point samples are MEASURED. Computer proofs require a proved finite reduction, exact committed checker and evidence, and independent rerun.
 
-None yet. Repository initialization and its pre-merge audit stage are tracked in the [initialization log](../topics/initialize-padua/LOG.md) and PR #1. The scientific frontier carries no transient initialization stage that would become stale after merge.
+## Scope and working policy
 
-## Evidence
+U1 checkerboards is the priority. U0 registers finite-field Padua existence/rationality, discriminant, quadratic-character sets and small evaluation codes after independent re-verification. U2 records other parity/lattice patterns; U3 records kernels, Lagrange formulas, cubature, discrete forms, algebraic zero-pivot certificates and labelling counts. At most two substantive directions at a time. Ten conceptual rounds each, extendible to twenty only with a recorded justification; automatically continue a concrete opening.
 
-No research computations or scientific claims have been made. See [PROOF_STATUS.md](../PROOF_STATUS.md) and [literature/INDEX.md](../literature/INDEX.md).
+Out of scope: finite-precision Lanczos/recurrence theory; complexity of bivariate moments→orthogonal polynomials (aacchhee/bttb-research, codex/bivariate-schur-campaign-20261031); 3D Padua points; Marcinkiewicz–Zygmund constants. General d≥3 pattern questions may only be registered without developing excluded 3D Padua or the parallel moment-complexity campaign.
+
+Step 0 is a literature baseline under AC's explicit override, not a complete novelty gate. Every candidate retains its closest predecessor, falsifiable separation and kill test, and receives a prior-art check and independent adversarial reconstruction before acceptance. Retain failed routes, corrections and side notes; scoped PD-N only for refuted/failed mechanisms. The public repository contains citations and statements, never third-party PDFs or fulltext extracts.
+
+## Evidence and next step
+
+Source import verified 17/17 checksums; exploration in progress. [Plan](../topics/charter-unisolvence-20261031/plan.md), [progress](../topics/charter-unisolvence-20261031/progress.md), [literature baseline](../literature/INDEX.md). No claim accepted yet.
+
+Cold storage chosen by AC: `C:\Users\andreyac\Downloads\padua\cold_storage\charter-unisolvence-20261031\`. Stage handoff files and a manifest; do not claim Windows delivery from the cloud workspace.
+
+Stage WORK. Next: `Claude (Opus 5.5 xhigh): Continue codex/charter-unisolvence-20261031.`
