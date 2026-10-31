@@ -1,0 +1,63 @@
+{
+  "result": "PASS",
+  "command": "python -I tracks/mz-constants/evidence/astra-response-01-completion.py",
+  "checker_sha256": "385d46dc1b01ea44ea8cdb669683f2995d697df7ebc5ca5799e3ad227332b5de",
+  "base": "08fafe62d9798385dfafaacc9a41344272737e68",
+  "source": "2cc1918b39d191ce233d44d9a33dbe83d697dbb0",
+  "squash": "16d90aaf0e9206ed5b1ff52e47426d834f710635",
+  "source_and_rehearsal_trees_identical": true,
+  "source_descends_from_base": true,
+  "exact_zero_context_patch_paths": [
+    "ID_CROSSWALK.md",
+    "PAPER_MAP.md",
+    "PROOF_STATUS.md",
+    "literature/CORPUS.md",
+    "literature/INDEX.md",
+    "state/CURRENT.md",
+    "state/IDEAS.md",
+    "topics/README.md",
+    "topics/padua-batch-20261031/ALLOCATIONS.md",
+    "tracks/README.md"
+  ],
+  "science_source_hashes_unchanged": 46,
+  "root_protocol_independent_replay": "PASS",
+  "current_response_targets": "Not yet created; root must pin and verify final packaging",
+  "files": {
+    "topics/mz-constants/batch-rehearsal.json": {
+      "sha256": "dc815bd82738008e3e46ab0c6091ef2745db610700fb5769cfaa0494dc206daf",
+      "bytes": 2986
+    },
+    "topics/mz-constants/batch-registry-resolution.patch": {
+      "sha256": "ae7a38b0e8942033d10de9e244d8dc1bc95a9a59ba360f3edd7a83ee52e61735",
+      "bytes": 86795
+    },
+    "topics/mz-constants/integration-impact.md": {
+      "sha256": "526752db74d62076eb0a770d3026dc2a9dc13ab9abb95dd2d3cb7a8f5001d8a3",
+      "bytes": 6397
+    },
+    "topics/mz-constants/check_response_01.py": {
+      "sha256": "fcae74f4242ffcc9cf4f114760b6915e6e83e9655baebcc4fd002003e5d8f824",
+      "bytes": 8328
+    },
+    "topics/mz-constants/AUDIT_HANDOFF.md": {
+      "sha256": "35eb00e145ea14f59d304f23d2531d9bb4e2654884f94d4baab46b368d966bda",
+      "bytes": 5243
+    },
+    "tracks/mz-constants/evidence/astra-response-01-check.py": {
+      "sha256": "e2b151ddf777fc904a9513f79373d8844f0d8c5d5fb4147a10af849026c5d29b",
+      "bytes": 6331
+    },
+    "tracks/mz-constants/evidence/astra-response-01-check.json": {
+      "sha256": "dbce1f28623efb23998474750ef6a3e6445e9c735326da3fb714ff52b189900f",
+      "bytes": 8866
+    },
+    "tracks/mz-constants/evidence/astra-response-01-m3-replay.txt": {
+      "sha256": "ca9deba1297b602b235c13d2f4f00baa1fb5a9c87f7827cdf8892189345e9733",
+      "bytes": 212
+    },
+    "tracks/mz-constants/evidence/astra-response-01-protocol-replay.json": {
+      "sha256": "7add9f2c99d4d5be80ca1ea4ea3d7dc54779083641936ce30bf463ebdb7e6636",
+      "bytes": 954
+    }
+  }
+}

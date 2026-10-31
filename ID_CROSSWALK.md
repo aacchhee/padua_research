@@ -124,3 +124,104 @@ Authoritative batch reservations, integration order and allocation owner: [share
 | Source U1a / IDEA-001 | PD-N001; PD-T001; PD-T002 | Original iff necessity refuted in characteristic2; explicit odd-characteristic restriction proved; changed functional gives separate all-field theorem | d5a5efb | Original scope retained; no silent narrowing or inherited proof |
 | Supplied U0 Theorems1–6 | PD-T004–PD-T011 | Five proved core statements, measured source/finite-distance observations, unverified universal extensions OPEN | 4f3d247 | Source's combined labels not inherited as local proof status |
 | Source code-optimality claim / IDEA-010 | PD-T010; PD-T012 | Attained distances MEASURED separately from universal linear-code bounds PROVED | 4f3d247 | No unsupported source MDS dependency or automatic computer-proof promotion |
+
+## MZ identifier additions
+
+| Provisional ID | Final ID | Source branch / commit | Canonical file | Allocating PR / batch |
+|---|---|---|---|---|
+| PD-T?mz-constants-codex-11 | PD-T013 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m1-cc-foundation.md](tracks/mz-constants/theory/m1-cc-foundation.md) | padua-batch-20261031 |
+| PD-T?mz-constants-codex-12 | PD-T014 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m1-upper-bound.md](tracks/mz-constants/theory/m1-upper-bound.md) | padua-batch-20261031 |
+| PD-T?mz-constants-codex-13 | PD-T015 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m1-coefficient-floor.md](tracks/mz-constants/theory/m1-coefficient-floor.md) | padua-batch-20261031 |
+| PD-T?mz-constants-codex-14 | PD-T016 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m1-full-degree-obstruction.md](tracks/mz-constants/theory/m1-full-degree-obstruction.md) | padua-batch-20261031 |
+| PD-T?mz-constants-codex-21 | PD-T017 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m2-cardinal-lower.md](tracks/mz-constants/theory/m2-cardinal-lower.md) | padua-batch-20261031 |
+| PD-T?mz-constants-codex-22 | PD-T018 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m2-parity-upper.md](tracks/mz-constants/theory/m2-parity-upper.md) | padua-batch-20261031 |
+| PD-T?mz-constants-codex-23 | PD-T019 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m2-u-witness.md](tracks/mz-constants/theory/m2-u-witness.md) | padua-batch-20261031 |
+| PD-T?mz-constants-codex-27 | PD-T020 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m2-sharp-constant-open.md](tracks/mz-constants/theory/m2-sharp-constant-open.md) | padua-batch-20261031 |
+| PD-T?mz-constants-codex-28 | PD-T021 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m2-padua-marginal.md](tracks/mz-constants/theory/m2-padua-marginal.md) | padua-batch-20261031 |
+| PD-T?mz-constants-codex-31 | PD-T022 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m3-upper-ratio.md](tracks/mz-constants/theory/m3-upper-ratio.md) | padua-batch-20261031 |
+| PD-T?mz-constants-codex-32 | PD-T023 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m3-lower-ratio.md](tracks/mz-constants/theory/m3-lower-ratio.md) | padua-batch-20261031 |
+| PD-T?mz-constants-codex-33 | PD-T024 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m3-uniform-eta.md](tracks/mz-constants/theory/m3-uniform-eta.md) | padua-batch-20261031 |
+| PD-T?mz-constants-codex-34 | PD-T025 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m3-hyperinterpolation.md](tracks/mz-constants/theory/m3-hyperinterpolation.md) | padua-batch-20261031 |
+| PD-T?mz-constants-codex-41 | PD-T026 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/reproduced-spectra.md](tracks/mz-constants/theory/reproduced-spectra.md) | padua-batch-20261031 |
+| PD-T?mz-constants-codex-51 | PD-T027 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/open-upper-limit.md](tracks/mz-constants/theory/open-upper-limit.md) | padua-batch-20261031 |
+| PD-T?mz-constants-codex-52 | PD-T028 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/open-padua-target.md](tracks/mz-constants/theory/open-padua-target.md) | padua-batch-20261031 |
+| PD-N?mz-constants-codex-11 | PD-N002 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m1-failed-psd.md](tracks/mz-constants/theory/m1-failed-psd.md) | padua-batch-20261031 |
+| PD-N?mz-constants-codex-12 | PD-N003 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m1-failed-diagonal-dominance.md](tracks/mz-constants/theory/m1-failed-diagonal-dominance.md) | padua-batch-20261031 |
+| PD-N?mz-constants-codex-24 | PD-N004 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m2-eta-counterexample.md](tracks/mz-constants/theory/m2-eta-counterexample.md) | padua-batch-20261031 |
+| PD-N?mz-constants-codex-25 | PD-N005 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m2-l1-obstruction.md](tracks/mz-constants/theory/m2-l1-obstruction.md) | padua-batch-20261031 |
+| PD-N?mz-constants-codex-26 | PD-N006 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [tracks/mz-constants/theory/m2-parity-obstruction.md](tracks/mz-constants/theory/m2-parity-obstruction.md) | padua-batch-20261031 |
+| LIT?mz-constants-codex-01 | LIT-042 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-input-reports.md](literature/records/mz-input-reports.md) | padua-batch-20261031 |
+| LIT?mz-constants-codex-02 | LIT-043 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-input-reports.md](literature/records/mz-input-reports.md) | padua-batch-20261031 |
+| LIT?mz-constants-codex-03 | LIT-044 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-input-reports.md](literature/records/mz-input-reports.md) | padua-batch-20261031 |
+| LIT?mz-constants-codex-04 | LIT-045 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-an-sommariva-vianello-2026.md](literature/records/mz-an-sommariva-vianello-2026.md) | padua-batch-20261031 |
+| LIT?mz-constants-codex-05 | LIT-046 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-an-wu-2022.md](literature/records/mz-an-wu-2022.md) | padua-batch-20261031 |
+| LIT?mz-constants-codex-06 | LIT-047 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-sloan-smith-1978-1980.md](literature/records/mz-sloan-smith-1978-1980.md) | padua-batch-20261031 |
+| LIT?mz-constants-codex-07 | LIT-048 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-sloan-smith-1978-1980.md](literature/records/mz-sloan-smith-1978-1980.md) | padua-batch-20261031 |
+| LIT?mz-constants-codex-08 | LIT-049 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-mastroianni-milovanovic-2008.md](literature/records/mz-mastroianni-milovanovic-2008.md) | padua-batch-20261031 |
+| LIT?mz-constants-codex-09 | LIT-050 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-classical-mz-screen.md](literature/records/mz-classical-mz-screen.md) | padua-batch-20261031 |
+| LIT?mz-constants-codex-10 | LIT-051 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-classical-mz-screen.md](literature/records/mz-classical-mz-screen.md) | padua-batch-20261031 |
+| LIT?mz-constants-codex-11 | LIT-052 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-classical-mz-screen.md](literature/records/mz-classical-mz-screen.md) | padua-batch-20261031 |
+| LIT?mz-constants-codex-12 | LIT-053 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-widom-1966-screen.md](literature/records/mz-widom-1966-screen.md) | padua-batch-20261031 |
+| LIT?mz-constants-codex-13 | LIT-054 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-widom-1966-screen.md](literature/records/mz-widom-1966-screen.md) | padua-batch-20261031 |
+| LIT?mz-constants-codex-14 | LIT-055 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-quadrature-aliasing-screen.md](literature/records/mz-quadrature-aliasing-screen.md) | padua-batch-20261031 |
+| LIT?mz-constants-codex-15 | LIT-056 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-quadrature-aliasing-screen.md](literature/records/mz-quadrature-aliasing-screen.md) | padua-batch-20261031 |
+| LIT?mz-constants-codex-16 | LIT-057 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-quadrature-aliasing-screen.md](literature/records/mz-quadrature-aliasing-screen.md) | padua-batch-20261031 |
+| LIT?mz-constants-codex-17 | LIT-058 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-don-gottlieb-1994.md](literature/records/mz-don-gottlieb-1994.md) | padua-batch-20261031 |
+| LIT?mz-constants-codex-18 | LIT-059 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-passi-cv-2026.md](literature/records/mz-passi-cv-2026.md) | padua-batch-20261031 |
+| LIT?mz-constants-codex-19 | LIT-060 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [literature/records/mz-passi-cv-2026.md](literature/records/mz-passi-cv-2026.md) | padua-batch-20261031 |
+| IDEA?mz-constants-codex-01 | IDEA-052 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [state/IDEAS.md](state/IDEAS.md) | padua-batch-20261031 |
+| IDEA?mz-constants-codex-02 | IDEA-053 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [state/IDEAS.md](state/IDEAS.md) | padua-batch-20261031 |
+| IDEA?mz-constants-codex-03 | IDEA-054 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [state/IDEAS.md](state/IDEAS.md) | padua-batch-20261031 |
+| IDEA?mz-constants-codex-04 | IDEA-055 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [state/IDEAS.md](state/IDEAS.md) | padua-batch-20261031 |
+| IDEA?mz-constants-codex-05 | IDEA-056 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [state/IDEAS.md](state/IDEAS.md) | padua-batch-20261031 |
+| IDEA?mz-constants-codex-06 | IDEA-057 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [state/IDEAS.md](state/IDEAS.md) | padua-batch-20261031 |
+| IDEA?mz-constants-codex-07 | IDEA-058 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [state/IDEAS.md](state/IDEAS.md) | padua-batch-20261031 |
+| IDEA?mz-constants-codex-08 | IDEA-059 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [state/IDEAS.md](state/IDEAS.md) | padua-batch-20261031 |
+| IDEA?mz-constants-codex-11 | IDEA-060 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M1/IDEAS.md](topics/mz-constants/directions/M1/IDEAS.md) | padua-batch-20261031 |
+| IDEA?mz-constants-codex-12 | IDEA-061 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M1/IDEAS.md](topics/mz-constants/directions/M1/IDEAS.md) | padua-batch-20261031 |
+| IDEA?mz-constants-codex-13 | IDEA-062 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M1/IDEAS.md](topics/mz-constants/directions/M1/IDEAS.md) | padua-batch-20261031 |
+| IDEA?mz-constants-codex-14 | IDEA-063 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M1/IDEAS.md](topics/mz-constants/directions/M1/IDEAS.md) | padua-batch-20261031 |
+| IDEA?mz-constants-codex-15 | IDEA-064 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M1/IDEAS.md](topics/mz-constants/directions/M1/IDEAS.md) | padua-batch-20261031 |
+| IDEA?mz-constants-codex-21 | IDEA-065 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M2/candidates.md](topics/mz-constants/directions/M2/candidates.md) | padua-batch-20261031 |
+| IDEA?mz-constants-codex-22 | IDEA-066 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M2/candidates.md](topics/mz-constants/directions/M2/candidates.md) | padua-batch-20261031 |
+| IDEA?mz-constants-codex-23 | IDEA-067 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M2/candidates.md](topics/mz-constants/directions/M2/candidates.md) | padua-batch-20261031 |
+| IDEA?mz-constants-codex-24 | IDEA-068 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M2/candidates.md](topics/mz-constants/directions/M2/candidates.md) | padua-batch-20261031 |
+| IDEA?mz-constants-codex-25 | IDEA-069 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M2/candidates.md](topics/mz-constants/directions/M2/candidates.md) | padua-batch-20261031 |
+| IDEA?mz-constants-codex-26 | IDEA-070 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M2/candidates.md](topics/mz-constants/directions/M2/candidates.md) | padua-batch-20261031 |
+| IDEA?mz-constants-codex-27 | IDEA-071 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M2/candidates.md](topics/mz-constants/directions/M2/candidates.md) | padua-batch-20261031 |
+| IDEA?mz-constants-codex-28 | IDEA-072 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M2/padua-foundation-record.md](topics/mz-constants/directions/M2/padua-foundation-record.md) | padua-batch-20261031 |
+| IDEA?mz-constants-codex-31 | IDEA-073 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M3/IDEAS.md](topics/mz-constants/directions/M3/IDEAS.md) | padua-batch-20261031 |
+| IDEA?mz-constants-codex-32 | IDEA-074 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M3/IDEAS.md](topics/mz-constants/directions/M3/IDEAS.md) | padua-batch-20261031 |
+| IDEA?mz-constants-codex-33 | IDEA-075 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M3/IDEAS.md](topics/mz-constants/directions/M3/IDEAS.md) | padua-batch-20261031 |
+| IDEA?mz-constants-codex-34 | IDEA-076 | codex/mz-constants-20261031; 2dc9264333cdf8372947448f4b9bdd3bb577d0e1 | [topics/mz-constants/directions/M3/IDEAS.md](topics/mz-constants/directions/M3/IDEAS.md) | padua-batch-20261031 |
+
+## Original-to-split result mappings
+
+| Original target ID / file | Split result ID / file | Relation / exact scope | Source commit | Reason / history |
+|---|---|---|---|---|
+| M2 endpoint order in plan | PD-T017; PD-T018 | lower and matching upper inequalities, both PROVED | 2dc9264 | substantive separate statements; sharp constant PD-T020 stays OPEN |
+| PD-T024 fixed-ratio MZ | PD-T022; PD-T023 | explicit upper and lower spectral intervals, both PROVED | 2dc9264 | original target remains PROVED by the two parts |
+| M1 sharp strengthening | PD-T014 vs PD-T027 | strict threshold PROVED; stronger sharp limit/uniform gap OPEN | 2dc9264 | no silent narrowing of sharp target |
+| M4 two-dimensional target PD-T028 | PD-T021 marginal compression | supporting reduction only; main target stays OPEN | 2dc9264 | signed-weight upper spectrum does not follow from compression |
+
+## Audit-01 literature response additions
+
+Same authoritative [batch ledger](topics/padua-batch-20261031/ALLOCATIONS.md); no existing mapping changed.
+
+| Provisional ID | Final ID | Source branch / commit | Canonical file | Allocating PR / batch |
+|---|---|---|---|---|
+| LIT?mz-response-codex-01 | LIT-061 | codex/mz-constants-20261031 response-01; rules6d10a82 | [literature/records/mz-mean-convergence-screen.md](literature/records/mz-mean-convergence-screen.md) | padua-batch-20261031; audit response |
+| LIT?mz-response-codex-02 | LIT-062 | codex/mz-constants-20261031 response-01; rules6d10a82 | [literature/records/mz-mean-convergence-screen.md](literature/records/mz-mean-convergence-screen.md) | padua-batch-20261031; audit response |
+| LIT?mz-response-codex-03 | LIT-063 | codex/mz-constants-20261031 response-01; rules6d10a82 | [literature/records/mz-mean-convergence-screen.md](literature/records/mz-mean-convergence-screen.md) | padua-batch-20261031; audit response |
+| LIT?mz-response-codex-04 | LIT-064 | codex/mz-constants-20261031 response-01; rules6d10a82 | [literature/records/mz-mean-convergence-screen.md](literature/records/mz-mean-convergence-screen.md) | padua-batch-20261031; audit response |
+| LIT?mz-response-codex-05 | LIT-065 | codex/mz-constants-20261031 response-01; rules6d10a82 | [literature/records/mz-mean-convergence-screen.md](literature/records/mz-mean-convergence-screen.md) | padua-batch-20261031; audit response |
+
+## Reciprocal derivation and supporting-result links (audit P4)
+
+| Parent / source | Child / consequence | Relation (not a circular logical dependency) |
+|---|---|---|
+| PD-T014 | PD-T015 | Independent supporting mass inequality split during the original quantitative refinement; original application retained but dominated by PD-T022 |
+| PD-T019 | PD-T018 | Simple U prototype extended to a different admissible harmonic-U witness; matching-order theorem has its own independent proof |
+| PD-T019 | PD-N004 | Exact U norms used for a separately registered finite eta counterexample |
+| PD-T014 | PD-T027 | Proved strict threshold retained separately from stronger OPEN sharp-limit target |
+| PD-T021 | PD-T028 | Proved marginal reduction supports an independently OPEN full2Dtarget, not a proved case of it |

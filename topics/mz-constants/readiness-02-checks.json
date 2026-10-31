@@ -1,0 +1,40 @@
+{
+  "result": "PASS",
+  "base_main": "08fafe62d9798385dfafaacc9a41344272737e68",
+  "audited_response": "a27fdafce835a9710fcf2f18560557788c5c9ee4",
+  "audit_delivery_head": "8f4f7b0dcbcde8d37bfa759834375e88155c28fc",
+  "merge_tree": "2f72919dba430333705e4eead6cb2564f2469feb",
+  "squash_rehearsal_worktree": "/tmp/mz-ready-rehearsal-02",
+  "disposable_local_branch": "codex/mz-ready-rehearsal-02",
+  "conflicts": [],
+  "squash_tree_matches_merge_tree_and_candidate": true,
+  "historical_response_targets_verified": 140,
+  "changed_targets_at_audit_delivery": [
+    "topics/mz-constants/LOG.md"
+  ],
+  "audited_scientific_scope_unchanged": true,
+  "unique_combined_result_rows": 34,
+  "unique_combined_literature_rows": 65,
+  "preserved_charter_files": 105,
+  "ledger_blob": "43c581fb242fd28ebe4d89ee4a42e3bbd660a159",
+  "live_member_heads": {
+    "claude/programme-ideas-20261031": "2554433c09b7595d597b6c7f35508e57ee1b2c11",
+    "claude/bivariate-lanczos-20261031": "ec7fb5b2a6145b3258bbf22a13a913122fa541b3"
+  },
+  "audit_02_sha256": "8f29e51808f41c34cd39c2acc348d751ddf02afd2075e19dc2c5910d197c4407",
+  "limit": "Readiness confirmation and local disposable squash only; no main push or PR merge. Later metadata changes receive a separate exact-scope impact check.",
+  "rehearsal_local_squash_commit": "7e18cf06147dfd7ab2e3257fb2f6a7ab6fc8e161",
+  "metadata_impact_verified": true,
+  "metadata_only_changed_paths": [
+    "PROOF_STATUS.md",
+    "state/IDEAS.md",
+    "PAPER_MAP.md",
+    "state/CURRENT.md",
+    "tracks/mz-constants/AUDIT_LOG.md",
+    "topics/mz-constants/LOG.md"
+  ],
+  "mathematical_registry_fields_unchanged": true,
+  "final_main_refresh": "08fafe62d9798385dfafaacc9a41344272737e68",
+  "readiness_record_sha256": "def82f338b005a3577b0a24de59e8f3df7465de69fd0b64fe447b00198653cdb",
+  "audit_02_unchanged": true
+}

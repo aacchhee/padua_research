@@ -1,0 +1,243 @@
+{
+  "audit": "Independent CC exact rational reconstruction and floating Padua/cardinal checks",
+  "date": "2026-10-31",
+  "model": "gpt-6-astra",
+  "effort": "xhigh",
+  "rules_sha": "d36722823441dc40c6e19d69a174459348dd309c",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "seed": null,
+  "script_sha256": "496420f9da6cb39715b61519c87b8dfbf4a0f6ae1140ff2fdd88c96eda592b11",
+  "exact_CC": [
+    {
+      "N": 2,
+      "exact_checks_pass": true,
+      "negative_D_minor": "None",
+      "U_norm_squared": "8/3",
+      "U_Q": "8/3",
+      "T_N_ratio": "15/7"
+    },
+    {
+      "N": 3,
+      "exact_checks_pass": true,
+      "negative_D_minor": "None",
+      "U_norm_squared": "46/15",
+      "U_Q": "2",
+      "T_N_ratio": "35/17"
+    },
+    {
+      "N": 4,
+      "exact_checks_pass": true,
+      "negative_D_minor": "None",
+      "U_norm_squared": "352/105",
+      "U_Q": "32/15",
+      "T_N_ratio": "63/31"
+    },
+    {
+      "N": 5,
+      "exact_checks_pass": true,
+      "negative_D_minor": "-64/11025",
+      "U_norm_squared": "1126/315",
+      "U_Q": "2",
+      "T_N_ratio": "99/49"
+    },
+    {
+      "N": 6,
+      "exact_checks_pass": true,
+      "negative_D_minor": "-1024/99225",
+      "U_norm_squared": "13016/3465",
+      "U_Q": "72/35",
+      "T_N_ratio": "143/71"
+    },
+    {
+      "N": 7,
+      "exact_checks_pass": true,
+      "negative_D_minor": "-64/99225",
+      "U_norm_squared": "176138/45045",
+      "U_Q": "2",
+      "T_N_ratio": "195/97"
+    },
+    {
+      "N": 8,
+      "exact_checks_pass": true,
+      "negative_D_minor": "-16384/12006225",
+      "U_norm_squared": "182144/45045",
+      "U_Q": "128/63",
+      "T_N_ratio": "255/127"
+    },
+    {
+      "N": 9,
+      "exact_checks_pass": true,
+      "negative_D_minor": "-64/480249",
+      "U_norm_squared": "3186538/765765",
+      "U_Q": "2",
+      "T_N_ratio": "323/161"
+    },
+    {
+      "N": 10,
+      "exact_checks_pass": true,
+      "negative_D_minor": "-25600/81162081",
+      "U_norm_squared": "62075752/14549535",
+      "U_Q": "200/99",
+      "T_N_ratio": "399/199"
+    },
+    {
+      "N": 11,
+      "exact_checks_pass": true,
+      "negative_D_minor": "-64/1656369",
+      "U_norm_squared": "63461422/14549535",
+      "U_Q": "2",
+      "T_N_ratio": "483/241"
+    },
+    {
+      "N": 12,
+      "exact_checks_pass": true,
+      "negative_D_minor": "-4096/41409225",
+      "U_norm_squared": "1488711776/334639305",
+      "U_Q": "288/143",
+      "T_N_ratio": "575/287"
+    },
+    {
+      "N": 13,
+      "exact_checks_pass": true,
+      "negative_D_minor": "-64/4601025",
+      "U_norm_squared": "7577414602/1673196525",
+      "U_Q": "2",
+      "T_N_ratio": "675/337"
+    },
+    {
+      "N": 14,
+      "exact_checks_pass": true,
+      "negative_D_minor": "-50176/1329696225",
+      "U_norm_squared": "23104065256/5019589575",
+      "U_Q": "392/195",
+      "T_N_ratio": "783/391"
+    },
+    {
+      "N": 15,
+      "exact_checks_pass": true,
+      "negative_D_minor": "-64/10989225",
+      "U_norm_squared": "680057071574/145568097675",
+      "U_Q": "2",
+      "T_N_ratio": "899/449"
+    },
+    {
+      "N": 16,
+      "exact_checks_pass": true,
+      "negative_D_minor": "-65536/3967110225",
+      "U_norm_squared": "21372905414144/4512611027925",
+      "U_Q": "512/255",
+      "T_N_ratio": "1023/511"
+    },
+    {
+      "N": 17,
+      "exact_checks_pass": true,
+      "negative_D_minor": "-64/23474025",
+      "U_norm_squared": "21646396991594/4512611027925",
+      "U_Q": "2",
+      "T_N_ratio": "1155/577"
+    },
+    {
+      "N": 18,
+      "exact_checks_pass": true,
+      "negative_D_minor": "-1024/127803025",
+      "U_norm_squared": "21904260478904/4512611027925",
+      "U_Q": "648/323",
+      "T_N_ratio": "1295/647"
+    },
+    {
+      "N": 19,
+      "exact_checks_pass": true,
+      "negative_D_minor": "-64/46009089",
+      "U_norm_squared": "819482859775298/166966608033225",
+      "U_Q": "2",
+      "T_N_ratio": "1443/721"
+    },
+    {
+      "N": 20,
+      "exact_checks_pass": true,
+      "negative_D_minor": "-102400/24338808081",
+      "U_norm_squared": "828045249930848/166966608033225",
+      "U_Q": "800/399",
+      "T_N_ratio": "1599/799"
+    }
+  ],
+  "measured_Padua": [
+    {
+      "m": 2,
+      "marginal_max_residual": 0.0,
+      "min_weight": -4.440892098500626e-16
+    },
+    {
+      "m": 3,
+      "marginal_max_residual": 1.1102230246251565e-16,
+      "min_weight": -0.05555555555555553
+    },
+    {
+      "m": 4,
+      "marginal_max_residual": 8.881784197001252e-16,
+      "min_weight": -0.008888888888888872
+    },
+    {
+      "m": 5,
+      "marginal_max_residual": 8.881784197001252e-16,
+      "min_weight": -0.010370370370370483
+    },
+    {
+      "m": 6,
+      "marginal_max_residual": 2.220446049250313e-16,
+      "min_weight": -0.003023431594860501
+    },
+    {
+      "m": 7,
+      "marginal_max_residual": 1.27675647831893e-15,
+      "min_weight": -0.003287981859410465
+    },
+    {
+      "m": 8,
+      "marginal_max_residual": 6.661338147750939e-16,
+      "min_weight": -0.0012698412698412588
+    },
+    {
+      "m": 9,
+      "marginal_max_residual": 9.159339953157541e-16,
+      "min_weight": -0.0013686067019417821
+    },
+    {
+      "m": 10,
+      "marginal_max_residual": 2.01574867908505e-15,
+      "min_weight": -0.0006240762604398855
+    }
+  ],
+  "measured_cardinal": [
+    {
+      "N": 16,
+      "full_inverse_lambda_min": 2.930825660463519,
+      "degree_N_minus_1_inverse_lambda_min": 2.9308256604635208,
+      "imported_style_vector_inverse_quotient": 1.171208771866073,
+      "relative_constraint_violation": 0.9807340844557199
+    },
+    {
+      "N": 32,
+      "full_inverse_lambda_min": 3.6136513063963087,
+      "degree_N_minus_1_inverse_lambda_min": 3.6136513063963065,
+      "imported_style_vector_inverse_quotient": 1.5372448959274863,
+      "relative_constraint_violation": 0.9810698204929195
+    },
+    {
+      "N": 64,
+      "full_inverse_lambda_min": 4.36774315691681,
+      "degree_N_minus_1_inverse_lambda_min": 4.36774315691681,
+      "imported_style_vector_inverse_quotient": 1.9641230115689547,
+      "relative_constraint_violation": 0.9818466397894348
+    },
+    {
+      "N": 128,
+      "full_inverse_lambda_min": 5.196698088962407,
+      "degree_N_minus_1_inverse_lambda_min": 5.19669808896241,
+      "imported_style_vector_inverse_quotient": 2.453125674592291,
+      "relative_constraint_violation": 0.9827490420095226
+    }
+  ],
+  "scope": "Exact CC finite checks are supplementary; analytic proof is required for all N. Padua/cardinal results are floating measurements only."
+}
