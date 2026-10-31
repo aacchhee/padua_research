@@ -144,3 +144,13 @@ Written 2026-11-01T00:26:57+01:00, AFTER the PRO-2D (IDEA?…-208) smoke test on
 
 - Mechanism: as -208, but at J-steps the provisional out-of-window row is measured exactly (one inner-product pass, n per degree → O(M N^{3/2}) total, cf. -202) and the stored J-rows are exact; F-steps use the sign-matched estimate. Motivation: after reorthogonalization removes the propagated loss, the J-step commutator sources (R01 audit: up to 10⁸–10¹⁰ × the rounding scale on non-product sets) are no longer subdominant; -208's estimate ignores them.
 - Kill criteria (before running): identical to -208 (L(n) > 10√u at some degree of some R01 benchmark, or e_F > u^{3/4} at a semi-orthogonal degree). Cost criterion reported: (reorthogonalization + measurement dot products) / fullcgs2.
+
+---
+
+## R02 results and dispositions (appended after the runs; pre-registered text unchanged)
+
+| ID | Result (`logs/r02_verdicts.txt`, `logs/r02_cost.jsonl`) | Disposition | Canonical record |
+|---|---|---|---|
+| IDEA?…-207 dev / mirror / alt / adapt | killed for every rule (dev 5 sets, mirror 4, alt 4, adapt only rotπ/4: θ_LB 2.1e-7); adapt below √u on the other five non-product sets (7–10 decades below BJ); two-relation control below 5e-13 on all six non-product sets but fails on the cubic checkerboard | each rule REJECTED: failed (uniform safety); adapt retained as the best one-relation rule (deferred: resume with an rotπ/4-type fix or a hybrid with two relations) | PD-T?…-206, PD-N?…-203 |
+| IDEA?…-208 PRO-2D (E1D trigger) | killed on rotπ/4, triangle, L-shape, annulus, cubic checkerboard | REJECTED: failed | PD-N?…-202 |
+| IDEA?…-209 PRO-2D-J | survives on 11 of 12; killed on the cubic checkerboard at n = 29 (L = 2.0e-7); cost 0.16–0.71 of CGS2-against-all; secondary ≤ 30% criterion fails on 4 hard sets | REJECTED: failed on the cubic checkerboard (scope: that set, last degree); otherwise the measured strategy for loss of orthogonality; does not repair the drift | PD-T?…-207 |

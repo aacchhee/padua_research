@@ -142,6 +142,13 @@ Subagent effort is set from the agent definition and is not independently expose
 - Confirmed 110, 111 (sharp; needs ordered nodes), 114 parts 1–4, 112 (a,b,d), N103(c), N105; N106 with minor corrections. Majors: M1 selection rule matters on the clustered checkerboard too, and winners differ by set (n = 24: alt 3.1e-13, dev 1.0e-6, adapt 9.3e-6) — qualify the L2 hand-off and SUMMARY item 5; M2 T-113 wording; M3 convention-sensitive R07 verdicts decided with real double dot products (closed loop C/L ∈ [0.56, 1.86] on six sets: IDEA-120 survives, 115 main claim holds; IDEA-119 inconclusive; H_term survives; N(0,1) model underestimates real rounding 3–6×). Minors incl. ledger note on the wrong row (fixed by orchestrator), PD-N-106 u/ρ missing ‖A‖ factor, reviewer's own recon-01 exp(4xy) remark corrected.
 - Action: L1 developer resumed for a short response-recon-02 (no new rounds).
 
+### L3 reconstruction 02 returned (2026-11-01)
+
+- Separate Claude Opus 5.5 xhigh (requested) agent; audited head `ae991c1` (no L3 file changed through `4406ac0`); report [reviews/L3-reconstruction-02.md](reviews/L3-reconstruction-02.md). No high findings; nothing refuted.
+- 313/N303 CONFIRMED for all n ≥ 4 (all three expansions and boundary/corner gradients hand-checked; own exact checker with rigorous rational intervals passes n = 4..16; n = 3 fails at (1,0) with −225 as reported) — eligible CONDITIONAL → PROVED (N303 under the stated Padua-unisolvence assumption, LITERATURE). Nonnegativity on node balls is required; rigorous δ₀(n): 5.6e-4 (n = 4) … 6.5e-8 (n = 12). 312 CONFIRMED (iff for every real c; no c in the κ-family certifies n ≤ 3). 310 CONFIRMED n = 1..7 (independent; eligible → PROVED); equispaced n = 8 now certified (t_D = 4.12e-15; developer's float run had the wrong sign) — needs independent rerun. 311 corrections (t_D(7) = 6.78e-11). 314 corrections ("symmetric ⇒ structured" step unproved as written, true with an extra argument). N304–N306 genuine PD-N (N304 needs ε < ρ(δ)/L_Φ; N306 refutation can be PROVED). 306/N301 upgrades follow the computer-proof rule.
+- Medium (315): M1 the "leaves linear regime for n ≥ 16" is a double-precision reference artefact (80-bit reference: linear to n = 20; K15 still killed); M2 "as inconsistent as inaccurate" / "no Greenbaum regime" overreach on the random square. Lows: ranges in 315, stale text, History lines lacking original wording, R05/R06 pre-registration self-reported, R06 hypotheses lack IDEA/PD-N records, trusted dependencies not listed in 306/N301.
+- Action: L3 developer resumed for response-recon-02 (no new rounds).
+
 ## Runs needed
 
 (none yet; directions add exact commands)
