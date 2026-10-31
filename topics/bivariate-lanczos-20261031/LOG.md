@@ -61,6 +61,10 @@ Subagent effort is set from the agent definition and is not independently expose
 - Launched: independent adversarial reconstruction of L1 R01–R03 (separate Claude Opus 5.5 xhigh agent; owns reviews/L1-reconstruction-01.md, code/review_L1/); prior-art check of mechanisms (a)–(f) (separate Claude Opus 5.5 high agent; owns reviews/L1-prior-art-01.md). L1 developer resumed for R04+ with reviewed files frozen and the checkerboard benchmark passed on.
 - RESULTS.md on AC's machine (`C:\Users\andreyac\Downloads\padua\RESULTS.md`): campaign entry appended (re-staged after a newer external edit; prior content preserved).
 
+### AC authorization 2026-10-31 23:00
+
+- AC authorized reading all related literature and papers anywhere on the net. Passed to all running agents (L1, L3, L5, L1 reconstruction, L1 prior-art). Launched an online resolution pass for the pending-reference load-bearing sources (Claude Sonnet 5.5 high, requested; owns those record files, their INDEX/CORPUS rows and a search-log section). Public-repo rule unchanged: no fulltexts or long extracts committed.
+
 ## Runs needed
 
 (none yet; directions add exact commands)
