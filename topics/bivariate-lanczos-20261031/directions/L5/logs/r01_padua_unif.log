@@ -20,3 +20,5 @@ padua_unif 30 rand3 givens-scheme:8.3e-14 givens-largest:1.2e-12 hl:4.1e-15 bj:1
 padua_unif 40 given givens-scheme:3.8e-14 givens-largest:6.5e-05 hl:6.0e-15 bj:3.7e-14 cgs2:2.1e-15 hh:2.3e-15
 padua_unif 40 sortx givens-scheme:4.1e-14 givens-largest:5.8e-06 hl:6.2e-15 bj:4.7e-14 cgs2:2.0e-15 hh:2.3e-15
 padua_unif 40 rand1 givens-scheme:9.1e-14 givens-largest:1.6e-10 hl:5.7e-15 bj:1.1e-14 cgs2:2.0e-15 hh:2.3e-15
+padua_unif 40 rand2 givens-scheme:8.4e-14 givens-largest:9.9e-11 hl:6.0e-15 bj:8.7e-15 cgs2:2.0e-15 hh:2.2e-15
+padua_unif 40 rand3 givens-scheme:7.1e-14 givens-largest:5.6e-11 hl:6.4e-15 bj:5.1e-14 cgs2:2.0e-15 hh:2.3e-15
