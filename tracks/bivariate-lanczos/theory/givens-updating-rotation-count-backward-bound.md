@@ -45,7 +45,7 @@ Nothing in the registry. Literature: `higham-2002` (LIT?bivariate-lanczos-claude
 
 ## Checks
 
-Sanity check of the operation counts (Lemma 1): `givens_core.c` returns R = 2 031 120 = 2016·2015/2 − 10 executed rotations for the Padua n = 62 set in the given order (10 skipped with b = 0), consistent with R ≤ M(M−1)/2 (see R01.md, `logs/`). The theorem has not been checked numerically beyond that count, and the constants (e.g. 16.5u) are not claimed sharp. Independent check: none yet (audit pending).
+Sanity check of the operation counts (Lemma 1): `givens_core.c` (production log `logs/r01_padua_cub.jsonl`, field `stats_givens-scheme`) executes R = 2 031 110 = 2016·2015/2 − 10 rotations for the Padua n = 62 set in the given order (10 skipped with b = 0), 2 031 117 for sortx (3 skipped) and exactly 2 031 120 = M(M−1)/2 for the three random orders (none skipped), consistent with R ≤ M(M−1)/2 (see R01.md). The theorem has not been checked numerically beyond that count, and the constants (e.g. 16.5u) are not claimed sharp. Independent check: none yet (audit pending).
 
 ## Sources
 
