@@ -65,3 +65,9 @@ Provisional IDs `<NS>?bivariate-lanczos-claude-<nnn>`: literature 001–199 (ful
 ## History
 
 - 2026-10-31: plan frozen before launch (orchestrator).
+- 2026-10-31, Step 0 corrections (frozen questions not reworded; these notes govern their interpretation; sources: fulltext records LIT?…-101–162, notes records LIT?…-001–077):
+  - HL SIMAX 2002 p. 1088 is an **observation**, not a conjecture: finite-precision behaviour "seems similar" to Lanczos, some loss of orthogonality among vectors of different cycles, "appears closely connected" to convergence of Ritz values of the square part of the section N_k of the normal operator N in the (N, N*) form, eq. (4.2). It mentions neither H_x/H_y separately nor data. That paper's window is 2k (its Thm 3.7); HL BIT Thm 2.3 (p. 397) gives ≤ 2k+1 for commuting symmetric (H, K), exact arithmetic only. O(M N^{3/2}) is not a published statement there (no flop count given).
+  - None of the seven fulltexts contains a rounding analysis of the bivariate recurrence. Huhtanen SIMAX 2002 is single-operator Lanczos for a linear-system solver (no bivariate recurrence).
+  - Xu SIAM J. Math. Anal. 25 (1994) 991–1001 is the quasi-orthogonal zeros / Gaussian-cubature paper (Thms 3.1, 4.1, 5.1); the block-Jacobi/Favard theory is only recalled there (pp. 993) and lives in Xu's Trans. AMS paper (pending-reference).
+  - VB–C pivot remark is on p. 395 (not 392); EGK "no observable pattern" on p. 352 (not 351).
+  - Koiran 2024 "wide open" attribution not found in the inputs; the only candidate (arXiv 2401.01302) concerns exact commuting extensions — UNVERIFIED. The Kachkovskiy–Safarov almost-commuting bound attributed in the inputs is not confirmed from the abstract — UNVERIFIED.
