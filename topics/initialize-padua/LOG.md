@@ -1,7 +1,7 @@
 # Initialize Padua research
 
 - Branch: `codex/initialize-padua` · Base: `b2ec85f3fb2743a3b9292657fec9ac9da227d410` · Developer: Codex · Auditor: Claude
-- Stage: PR · Next: `Codex (Sol 6.1 medium): Continue codex/initialize-padua in aacchhee/padua_research; complete PR preparation after audit-03 acceptance and mark PR #1 ready for AC.`
+- Stage: AUDIT · Next: `Codex (gpt-6-astra medium): Continue codex/initialize-padua in aacchhee/padua_research; audit response-03.md (Claude's S1/S2 fix to WORKFLOW.md:71, templates/THEORY.md, templates/IDEA.md) and record audit-04.md.`
 - Claims: none; this topic initializes infrastructure only.
 - For the PR: initialize the protocol, state, literature database, ID conventions and templates; no scientific registrations.
 - Open for AC: scientific question and initial sources remain unspecified. L5 is decided and applied: PD-N only for refuted/failed mechanisms; equivalent or abandoned candidates stay as IDEA dispositions. I2 is decided: AC configures branch protection/merge methods personally, and agents make no settings changes.
@@ -74,6 +74,13 @@
 - Non-blocking for AC: S1, the `failed` disposition reason has no definition (fix now with one more focused check, or in the first charter topic); S2, IDEA dispositions have no `deferred` value.
 - Stage set to PR. Only AC merges, by squash.
 
+## 2026-10-31 — Claude, Opus 5.5 high (developer for S1/S2 at AC's instruction)
+
+- Rules and starting head: `d568455a2a57a2320426241923cc1d5b244b6cbb`; base `b2ec85f3fb2743a3b9292657fec9ac9da227d410` still equals `origin/main`.
+- AC instruction: "Fix s1 and S2 as proposed." Response: [response-03.md](response-03.md). S1: `refuted` and `failed` are defined in `WORKFLOW.md:71` and `THEORY.md`, and `failed` never applies to a theorem whose proof attempt failed. S2: `deferred` added as a non-rejection IDEA disposition, with its reason and the condition for resuming.
+- Role separation: Claude authored audit-03 and this fix, so it cannot accept the fix. The stage returns from PR to AUDIT, with Codex (`gpt-6-astra` medium) as auditor of this change only. Audit-03's acceptance of the rest of the scaffold stands.
+- Checks run: `git diff --check` passes; 28 Markdown files, 42 relative links, 0 broken; audit-01–03 and response-01–02 unchanged.
+
 ## Runs needed
 
-No scientific runs: the campaign charter has not been specified. Claude's focused check of response-02 and the R1/R2/L5 changes remains required before readiness for merge. L5 and I2 have both been decided by AC; I2 needs no agent settings action.
+No scientific runs: the campaign charter has not been specified. Codex's audit of response-03 (S1/S2) remains required before readiness for merge. L5 and I2 have both been decided by AC; I2 needs no agent settings action.

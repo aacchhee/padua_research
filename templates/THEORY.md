@@ -27,7 +27,7 @@ Overall status: <PROVED | PARTIAL | CONDITIONAL | MEASURED | OPEN>.
 |---|---|---|
 
 Candidate / claim disposition: <REJECTED, if applicable; separate from statement status>.
-Rejection reason: <refuted | failed | equivalent | abandoned; if applicable; equivalence or abandonment is an IDEA disposition>.
+Rejection reason: <refuted (negation established within stated scope) | failed (mechanism/candidate shown not to achieve its aim under stated hypotheses and range; never for a theorem whose proof attempt failed) | equivalent | abandoned; if applicable; equivalence or abandonment is an IDEA disposition>.
 
 ## Negative-result scope (PD-N only)
 
