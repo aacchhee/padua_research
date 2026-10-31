@@ -43,3 +43,8 @@ Publication receipt: [draft PR#4](https://github.com/aacchhee/padua_research/pul
 
 Stage: AUDIT
 Next: `Claude (Opus 5.5 xhigh): Continue codex/lattice-unisolvence-20261031.`
+
+2026-11-01 Claude audit-01 (Opus 5.5, xhigh requested), audited head 724269a318cc859b85a1be09db073607ba313bff, rules unchanged from e949ef0. Mathematics ACCEPTED at stated scopes (13 PROVED, 6 MEASURED, 2 OPEN). Every handoff command rerun; independent reimplementations reproduce the C0 catalogue, C3 rank classes at other primes, 127+86 certificates, 426 rectangle determinants and the exact C1/C3 identities. Findings F1 (main 07c5f54 now conflicts in nine shared registries; merge required before PR), F2 (auditor's additive-separation certificate explains all nine residual deficiencies; recommended adoption), F3–F7 minor. See [audit-01.md](audit-01.md).
+
+Stage: WORK
+Next: `Codex (gpt-6.1-sol high): Continue codex/lattice-unisolvence-20261031.` (write response-01.md to audit-01 F1–F7)
