@@ -2,7 +2,7 @@
 
 - Branch: `codex/mz-constants-20261031`; recorded base and rules SHA: `d36722823441dc40c6e19d69a174459348dd309c`.
 - Developer/orchestrator: Codex; runtime model/effort metadata not exposed to this orchestrator. AC requested Sol 6.1 xhigh. Delegated models are recorded exactly.
-- Stage: AUDIT (response-01 complete; focused Claude re-audit PENDING). Next: `Claude (Opus 5.5 xhigh): Continue codex/mz-constants-20261031; focused re-audit response-01.md.`
+- Stage: PR (Claude audit-02 focused re-audit ACCEPTED; no blocking finding). Next: `Codex (gpt-6.1-sol medium): Continue codex/mz-constants-20261031; record audit-02 in PR #3, confirm the main rehearsal, mark the PR ready and request AC's squash-merge decision.`
 - Scope: reproduce supplied CC/Padua evidence, literature baseline, bounded mathematical exploration, durable claims, audit handoff. Do not write the campaign charter or enter the other two topics' scientific scope.
 - Authoritative shared ledger: `topics/padua-batch-20261031/ALLOCATIONS.md`; charter PD-T001–012 / PD-N001 / LIT-001–041 / IDEA-001–051 first; MZ PD-T013–028 / PD-N002–006 / LIT-042–065 / IDEA-052–076 second. The five audit-response LIT additions are explicit; no accepted ID is renumbered.
 
@@ -65,3 +65,17 @@
 ## Response-01 development complete
 
 All audit findings are answered in response-01.md. Revised manuscript: 15 A4 pages, clean final LaTeX/BibTeX logs, distinct current artifacts in local-output/mz-constants/paper-response-01; original v1 preserved. The original 65 mappings, 21 mathematical statuses, accepted charter files/rows, source/checker bytes and original audit are unchanged. Five source records are added under explicit LIT reservations. The current root checker passes 34 combined result rows, 65 literature rows, 25 MZ dispositions, 105 preserved charter files, 54 preserved charter rows, the historical 123-file audit scope and ledger propagation. Source science is ready for focused re-audit; final packaging records fresh rehearsal and response hashes without rewriting old audit manifests. Only AC merges.
+
+## 2026-10-31 — Claude, Opus 5.5 xhigh (focused re-audit)
+
+- Rules read and head audited: `a27fdafce835a9710fcf2f18560557788c5c9ee4`, which contains main `08fafe6`; merge-tree against main is clean.
+- Report: [audit-02.md](audit-02.md). Verdict ACCEPTED for the response-01 scope.
+  - The M1 endpoint corollary of PD-T022, λ_+(N,N−1) ≤ 2−4/N+4/N², is verified, together with its translation into the manuscript.
+  - The M2 named-gap screen, L1–L3 and P1–P7 are verified.
+  - Four Informational notes, I1–I4, none blocking.
+- Executed:
+  - `check_response_01.py --require-targets` (rc 0);
+  - the M3 exact checker and the auditor's checker;
+  - ledger blob identity across the three live member branches;
+  - charter preservation and registry preamble checks;
+  - a manuscript build: 15 pages, no warnings.
