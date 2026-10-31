@@ -5,6 +5,7 @@ usage: python3 -I exp_r01.py FAMILY OUT.jsonl [n_or_M ...]
   FAMILY = padua_cub   Padua n, cubature weights            (sizes = n; default 10 15 20 30 40 50 62)
            padua_rand  Padua n, weights ~ U(0.1, 1)        (one weight vector per n shared by the 5 orders)
            padua_unif  Padua n, unit weights               (as in the supplier inputs / VB-C 2010)
+           random_cheb M random nodes with the tensor arcsine density (x = cos(pi U)); otherwise as 'random' (conditioning control)
            random      M uniform random nodes in [-1,1]^2, unit weights, 5 seeds (sizes = M; N = (n+1)(n+2)/2 from TABLE)
 Padua orders: given, sortx, rand1, rand2, rand3.  Random: seed1..seed5 (each its own node set, drawn order).
 Error metric: relative Frobenius error of the leading N x N blocks of (Hx, Hy) after positive-primary-pivot sign fixing.
@@ -63,10 +64,10 @@ def main():
             n = RANDOM_N[M]; N = (n + 1) * (n + 2) // 2
             for seed in range(1, 6):
                 rng = np.random.default_rng(7000 * seed + M)
-                P = rng.uniform(-1, 1, (M, 2)); w = np.ones(M)
+                P = rng.uniform(-1, 1, (M, 2)) if fam == "random" else np.cos(np.pi * rng.uniform(0, 1, (M, 2))); w = np.ones(M)
                 x, y = P[:, 0].copy(), P[:, 1].copy()
                 Hxr, Hyr = L.reference_H(x, y, np.sqrt(w), N)
-                V = np.column_stack([np.cos(a * np.arccos(x)) * np.cos(b * np.arccos(y)) for a, b in F.monos(N)])
+                V = np.column_stack([np.cos(a * np.arccos(np.clip(x, -1, 1))) * np.cos(b * np.arccos(np.clip(y, -1, 1))) for a, b in F.monos(N)])
                 sv = np.linalg.svd(V, compute_uv=False)
                 one_case(fam, M, f"seed{seed}", x, y, w, N, Hxr, Hyr, out, dict(n=n, cond=float(sv[0] / sv[-1])))
 

@@ -30,3 +30,6 @@ random 1326 seed4 givens-scheme:2.4e-12 givens-largest:2.3e-13 hl:4.2e-13 bj:1.7
 random 1326 seed5 givens-scheme:1.0e-12 givens-largest:1.7e-13 hl:1.4e-13 bj:8.9e-13 cgs2:1.3e-14 hh:1.8e-13
 random 2016 seed1 givens-scheme:9.8e-11 givens-largest:1.2e-12 hl:1.0e-12 bj:1.1e-11 cgs2:1.1e-13 hh:8.5e-13
 random 2016 seed2 givens-scheme:1.8e-11 givens-largest:1.2e-12 hl:5.8e-13 bj:6.4e-12 cgs2:3.2e-14 hh:3.1e-13
+random 2016 seed3 givens-scheme:2.1e-10 givens-largest:2.0e-12 hl:5.2e-13 bj:9.6e-12 cgs2:5.0e-14 hh:1.3e-12
+random 2016 seed4 givens-scheme:9.5e-11 givens-largest:9.2e-13 hl:1.3e-12 bj:1.1e-11 cgs2:1.1e-13 hh:7.9e-13
+random 2016 seed5 givens-scheme:1.5e-11 givens-largest:2.3e-12 hl:7.4e-13 bj:5.2e-12 cgs2:6.3e-14 hh:5.0e-13
