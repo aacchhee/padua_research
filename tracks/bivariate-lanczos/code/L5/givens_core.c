@@ -115,3 +115,43 @@ int givens_run2(const double *x, const double *y, const double *v, long M,
     free(w);
     return 0;
 }
+
+/* R03: insert ONE point into an existing state (slot i = number of points already inserted; arrays are M x M row-major, zero
+ * beyond the active block).  Same operations as one pass of the outer loop of givens_run (rule: 0 scheme, 1 largest, 3 pairnorm,
+ * 4 pivot-kappa).  Returns in *minpiv the smallest |pivot| over the monomials j = 0..i after the chase
+ * (|w_0| for j = 0, |V(j)[j,p(j)]| for j >= 1): the online non-unisolvence detector tested in R03. */
+int givens_insert(double *Hx, double *Hy, double *w, long M, long i, double xi, double yi, double vi,
+                  const int *prim_idx, const int *prim_var, const int *alt_idx, const int *alt_var,
+                  int rule, double kappa, double *minpiv)
+{
+    w[i] = vi; Hx[i * M + i] = xi; Hy[i * M + i] = yi;
+    int n = (int)i + 1;
+    for (int j = 0; j < (int)i; j++) {
+        double a, b;
+        if (j == 0) { a = w[0]; b = w[i]; }
+        else {
+            int p = prim_idx[j]; double *H = prim_var[j] == 0 ? Hx : Hy;
+            a = H[(long)j * M + p]; b = H[i * M + p];
+            if (alt_idx[j] >= 0 && rule != 0) {
+                int pa = alt_idx[j]; double *Ha = alt_var[j] == 0 ? Hx : Hy;
+                double aa = Ha[(long)j * M + pa], ba = Ha[i * M + pa]; int take = 0;
+                if (rule == 1) take = fabs(aa) > fabs(a);
+                else if (rule == 3) take = hypot(aa, ba) > kappa * hypot(a, b);
+                else if (rule == 4) take = fabs(aa) > kappa * fabs(a);
+                if (take) { a = aa; b = ba; }
+            }
+        }
+        if (b == 0.0) continue;
+        double r = hypot(a, b), c = a / r, s = b / r;
+        rot_rows_cols(Hx, M, n, j, (int)i, c, s);
+        rot_rows_cols(Hy, M, n, j, (int)i, c, s);
+        double wj = w[j], wi = w[i]; w[j] = c * wj + s * wi; w[i] = -s * wj + c * wi;
+    }
+    double mp = fabs(w[0]);
+    for (int j = 1; j <= (int)i; j++) {
+        double *H = prim_var[j] == 0 ? Hx : Hy; double q = fabs(H[(long)j * M + prim_idx[j]]);
+        if (q < mp) mp = q;
+    }
+    *minpiv = mp;
+    return 0;
+}

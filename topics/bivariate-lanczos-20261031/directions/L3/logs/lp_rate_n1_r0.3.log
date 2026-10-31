@@ -1,0 +1,6 @@
+Padua n=1 D=10 dimS1=1 grid R=8 nth=24; z*=[1.16209069 1.2524413 ] (r=0.3); mode=bisect
+  eps=1e-02: delta_min ~ 2.1235e-02  /sqrt(eps) = 0.2124  /eps = 2.12  S1-rel resid 3.6e-14 [ok]
+  eps=1e-03: delta_min ~ 6.1009e-03  /sqrt(eps) = 0.1929  /eps = 6.1  S1-rel resid 4.2e-13 [ok]
+  eps=1e-04: delta_min ~ 1.9078e-03  /sqrt(eps) = 0.1908  /eps = 19.1  S1-rel resid 6.0e-12 [ok]
+  eps=1e-05: delta_min ~ 6.0313e-04  /sqrt(eps) = 0.1907  /eps = 60.3  S1-rel resid 3.7e-10 [ok]
+  eps=1e-06: delta_min ~ 1.9071e-04  /sqrt(eps) = 0.1907  /eps = 191  S1-rel resid 1.0e-06 [ok]

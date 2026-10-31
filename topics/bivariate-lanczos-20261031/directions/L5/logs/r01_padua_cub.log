@@ -34,3 +34,4 @@ padua_cub 50 sortx givens-scheme:6.0e-14 givens-largest:1.9e-06 hl:9.0e-15 bj:3.
 padua_cub 50 rand1 givens-scheme:1.5e-13 givens-largest:7.1e-09 hl:6.3e-15 bj:1.0e-13 cgs2:2.2e-15 hh:2.6e-15
 padua_cub 50 rand2 givens-scheme:3.2e-13 givens-largest:5.0e-08 hl:6.1e-15 bj:1.4e-13 cgs2:2.1e-15 hh:2.6e-15
 padua_cub 50 rand3 givens-scheme:1.6e-12 givens-largest:5.9e-07 hl:6.1e-15 bj:1.8e-13 cgs2:2.2e-15 hh:2.6e-15
+[ref n=62 N=2016 909s]

@@ -42,6 +42,32 @@ def givens_c(x, y, v, rule="scheme", tol=0.0):
     _lib.givens_run(x, y, v, M, pi, pv, ai, av, _RULES[rule], tol, scale, Hx, Hy, st)
     return Hx, Hy, st
 
+# R03 extension (givens_run2: pair-norm / kappa pivot rules); built as libgivens_core2.so from the same source
+try:
+    _lib2 = ctypes.CDLL(os.path.join(HERE, "libgivens_core2.so"))
+    _lib2.givens_run2.argtypes = [_dp, _dp, _dp, ctypes.c_long, _ip, _ip, _ip, _ip, ctypes.c_int, ctypes.c_double, _dp, _dp, _dp]
+    _lib2.givens_run2.restype = ctypes.c_int
+    _lib2.givens_insert.argtypes = [_dp, _dp, _dp, ctypes.c_long, ctypes.c_long, ctypes.c_double, ctypes.c_double, ctypes.c_double,
+                                    _ip, _ip, _ip, _ip, ctypes.c_int, ctypes.c_double, _dp]
+    _lib2.givens_insert.restype = ctypes.c_int
+except OSError:
+    _lib2 = None
+
+def givens_insert(Hx, Hy, w, i, xi, yi, vi, M, rule=0, kappa=1.0):
+    """in-place insertion of one point into slot i of the state arrays (M x M, M x M, M); returns the smallest |pivot| over monomials 0..i."""
+    pi, pv, ai, av = tables(M); mp = np.zeros(1)
+    _lib2.givens_insert(Hx, Hy, w, M, i, xi, yi, vi, pi, pv, ai, av, rule, kappa, mp)
+    return float(mp[0])
+
+def givens_c2(x, y, v, rule, kappa=1.0):
+    """rule 3: alt pair if hypot(alt) > kappa*hypot(primary); rule 4: alt if |alt pivot| > kappa*|primary pivot| (kappa=1 is 'largest').
+    returns Hx, Hy, stats = (n_rot, n_skip, n_alt, n_noise_rotations(r<1e-10))."""
+    x = np.ascontiguousarray(x, float); y = np.ascontiguousarray(y, float); v = np.ascontiguousarray(v, float)
+    M = len(x); pi, pv, ai, av = tables(M)
+    Hx = np.empty((M, M)); Hy = np.empty((M, M)); st = np.zeros(4)
+    _lib2.givens_run2(x, y, v, M, pi, pv, ai, av, rule, kappa, Hx, Hy, st)
+    return Hx, Hy, st
+
 # ---------------------------------------------------------------- node sets and weights
 def padua_cubature(n):
     """Padua points (first family) and the cubature weights (sum 1, normalised Chebyshev measure) of padua_weights_check.py."""

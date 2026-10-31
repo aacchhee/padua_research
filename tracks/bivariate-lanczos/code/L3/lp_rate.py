@@ -1,75 +1,107 @@
 """MEASURED: smallest support radius delta for which the perturbed functional
 L' = L_mu - eps * ev_{z*} on Pi_{2n+1} has a positive representing measure on a
-discretised K_delta (union of balls around the Padua nodes).
+discretised K_delta (union of closed balls of radius delta around the nodes).
 
-mu = Padua points of degree n with Padua cubature weights.  z* = node_0 + r*
-(r* = 0.03 * (cos 1, sin 1)), so the perturbation removes a tiny mass near a
-node.  By the truncated Favard theorem (theory file 301) representability of L'
-on K_delta is equivalent to the degree-n sections Phi(L') being exact sections
-of a positive measure on K_delta.
+mu = Padua points of degree n with Padua cubature weights; z* = node_0 + r*(cos 1, sin 1)
+(default r = 0.03: removal of a tiny mass near a node).  By the truncated
+Favard theorem (theory file 301), representability of L' on K_delta is
+equivalent to the degree-n sections Phi(L') being exact sections of a positive
+measure on K_delta.
 
-Discretisation: each closed ball B(z_i, delta) is replaced by the points
-z_i + rho*(cos th, sin th) with rho in {0, delta/R, ..., delta} (R radii) and
-nth angles; restricted to the ball, so FEASIBLE on the grid => representable
-(inner approximation, up to LP tolerance); INFEASIBLE on the grid does not
-prove non-representability (the proof for n = 3 is the certificate p*).
-LP: find lambda >= 0 with sum_j lambda_j b_k(xi_j) = L'(b_k), b_k Chebyshev
-tensor basis of Pi_{2n+1}.  Solver: scipy.optimize.linprog (HiGHS).
-delta_min(eps) by bisection on [0, 0.5].
+Discretisation: each ball is replaced by z_i + rho*(cos th, sin th), rho in
+{0, delta/R, ..., delta}, nth (rotated) angles; FEASIBLE on the grid =>
+representable (inner approximation) up to LP tolerance; INFEASIBLE on the grid
+does not prove non-representability (for Padua n = 3 the proof is the
+certificate p*, exact_certificates.py).
+Reliability check: S1-component residual. For a numerical basis c_k of S_1
+(coefficient vectors), report rel = max_k |c_k.(A lam - L')| / max_k |c_k.E|.
+A 'feasible' verdict with rel > 0.1 is flagged UNRELIABLE (the LP tolerance is
+then comparable to the part of E that forces delta ~ sqrt(eps)).
 
-Usage: python3 lp_rate.py n [R nth]
+Usage: python3 lp_rate.py n mode [r] [R] [nth]
+  mode = bisect : delta_min(eps) by bisection on [0, 0.5], eps = 1e-2..1e-6
+  mode = scan   : feasibility at delta in a fixed list, eps in {1e-3, 1e-6}
 """
 import sys
 import numpy as np
 from scipy.optimize import linprog
-from l3lib import padua, padua_weights, jet_rows
+from l3lib import padua, padua_weights, jet_rows, jet_matrix, nullspace
 
 
 def basis_vals(pts, d):
     return np.array([jet_rows(z, d, 0)[0] for z in pts]).T  # D x npts
 
 
-def feasible(nodes, Lp, d, delta, R, nth):
+def grid(nodes, delta, R, nth):
     pts = []
     for z in nodes:
         pts.append(z)
         if delta > 0:
             for rho in np.linspace(delta / R, delta, R):
                 for th in np.linspace(0, 2 * np.pi, nth, endpoint=False):
-                    pts.append(z + rho * np.array([np.cos(th + 0.37 * rho / delta), np.sin(th + 0.37 * rho / delta)]))
-    pts = np.array(pts)
-    A = basis_vals(pts, d)
+                    a = th + 0.37 * rho / delta
+                    pts.append(z + rho * np.array([np.cos(a), np.sin(a)]))
+    return np.array(pts)
+
+
+def solve(nodes, Lp, d, delta, R, nth):
+    A = basis_vals(grid(nodes, delta, R, nth), d)
     res = linprog(np.zeros(A.shape[1]), A_eq=A, b_eq=Lp, bounds=(0, None), method='highs',
-                  options=dict(primal_feasibility_tolerance=1e-10, dual_feasibility_tolerance=1e-10))
-    return res.status == 0
+                  options=dict(primal_feasibility_tolerance=1e-10, dual_feasibility_tolerance=1e-10,
+                               time_limit=120.0))
+    if res.status == 0:
+        return True, A @ res.x - Lp
+    return False, None
 
 
 def main():
     n = int(sys.argv[1]) if len(sys.argv) > 1 else 2
-    R = int(sys.argv[2]) if len(sys.argv) > 2 else 8
-    nth = int(sys.argv[3]) if len(sys.argv) > 3 else 24
+    mode = sys.argv[2] if len(sys.argv) > 2 else 'bisect'
+    r = float(sys.argv[3]) if len(sys.argv) > 3 else 0.03
+    R = int(sys.argv[4]) if len(sys.argv) > 4 else 8
+    nth = int(sys.argv[5]) if len(sys.argv) > 5 else 24
     d = 2 * n + 1
     nodes = padua(n); w = padua_weights(n)
-    zstar = nodes[0] + 0.03 * np.array([np.cos(1.0), np.sin(1.0)])
+    zstar = nodes[0] + r * np.array([np.cos(1.0), np.sin(1.0)])
     Lmu = basis_vals(nodes, d) @ w
     ev = basis_vals([zstar], d)[:, 0]
-    print(f"Padua n={n} D={len(Lmu)} grid R={R} nth={nth}; z*={zstar}")
+    S, _ = nullspace(jet_matrix(nodes, d, 1), rtol=1e-11)
+    print(f"Padua n={n} D={len(Lmu)} dimS1={S.shape[1]} grid R={R} nth={nth}; z*={zstar} (r={r}); mode={mode}")
+
+    def rel(resid, eps):
+        if S.shape[1] == 0:
+            return 0.0
+        num = np.max(np.abs(S.T @ resid))
+        den = np.max(np.abs(S.T @ (eps * ev)))
+        return num / den
+
+    if mode == 'scan':
+        for eps in [1e-3, 1e-6]:
+            Lp = Lmu - eps * ev
+            for delta in [0.0, 0.01, 0.02, 0.04, 0.06, 0.08, 0.1, 0.15, 0.2, 0.3, 0.5]:
+                ok, resid = solve(nodes, Lp, d, delta, R, nth)
+                tag = f"feasible (S1-rel resid {rel(resid, eps):.1e})" if ok else "infeasible"
+                print(f"  eps={eps:.0e} delta={delta:<5}: {tag}", flush=True)
+        return
     for eps in [1e-2, 1e-3, 1e-4, 1e-5, 1e-6]:
         Lp = Lmu - eps * ev
         lo, hi = 0.0, 0.5
-        if not feasible(nodes, Lp, d, hi, R, nth):
-            print(f"  eps={eps:.0e}: infeasible even at delta={hi}")
+        ok, resid = solve(nodes, Lp, d, hi, R, nth)
+        if not ok:
+            print(f"  eps={eps:.0e}: infeasible even at delta={hi}", flush=True)
             continue
-        if feasible(nodes, Lp, d, 0.0, R, nth):
-            print(f"  eps={eps:.0e}: feasible at delta=0")
-            continue
+        last = resid
         for _ in range(30):
             mid = 0.5 * (lo + hi)
-            if feasible(nodes, Lp, d, mid, R, nth):
-                hi = mid
+            ok, resid = solve(nodes, Lp, d, mid, R, nth)
+            if ok:
+                hi = mid; last = resid
             else:
                 lo = mid
-        print(f"  eps={eps:.0e}: delta_min ~ {hi:.4e}  delta_min/sqrt(eps) = {hi/np.sqrt(eps):.3f}  delta_min/eps = {hi/eps:.3g}")
+        rr = rel(last, eps)
+        flag = "UNRELIABLE" if rr > 0.1 else "ok"
+        print(f"  eps={eps:.0e}: delta_min ~ {hi:.4e}  /sqrt(eps) = {hi/np.sqrt(eps):.4f}  /eps = {hi/eps:.3g}"
+              f"  S1-rel resid {rr:.1e} [{flag}]", flush=True)
 
 
 if __name__ == '__main__':

@@ -63,6 +63,14 @@ def main():
                 sl, se, ci, bci = fit([p[0] for p in pts], [p[1] for p in pts])
                 verdict[(fam, rng_name, m)] = (sl, se, ci, bci)
                 print(f"   {m:15s} slope {sl:6.2f}  SE {se:.2f}  t-CI [{ci[0]:5.2f},{ci[1]:5.2f}]  boot-CI [{bci[0]:5.2f},{bci[1]:5.2f}]")
+        if fam.startswith("padua"):
+            print("slopes by order class (full range; OLS slope [t-CI]):")
+            for cname, sel in (("structured (given, sortx)", ("given", "sortx")), ("random (rand1-3)", ("rand1", "rand2", "rand3"))):
+                for m in METHODS:
+                    pts = [(r["M"], r[m]) for r in rs if r["order"] in sel and m in r and r[m] > 0]
+                    if len(set(p[0] for p in pts)) < 3: continue
+                    sl, se, ci, bci = fit([p[0] for p in pts], [p[1] for p in pts], nboot=500)
+                    print(f"   {cname:26s} {m:15s} slope {sl:6.2f}  [{ci[0]:5.2f},{ci[1]:5.2f}]")
         print("ratio of geometric means (Givens-scheme / X):")
         print("   M     " + " ".join(f"{m:>8s}" for m in ["hl", "cgs2", "hh", "bj"]))
         for s in sizes:
