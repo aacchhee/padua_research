@@ -1,0 +1,92 @@
+[
+  {
+    "path": "theory/unisolvence/u0/code-distances.md",
+    "bytes": 3604,
+    "sha256": "a6008d7b5d81b7f7525fc7f0d7aae4e512be6d7e6387d97e400f515ded6326f7"
+  },
+  {
+    "path": "theory/unisolvence/u0/code-structure.md",
+    "bytes": 3405,
+    "sha256": "5e4ebdee93aaca6fd8b184ffc19dc97a7d1647e60518eff1876ebb217b7e8bef"
+  },
+  {
+    "path": "theory/unisolvence/u0/discriminant.md",
+    "bytes": 4130,
+    "sha256": "78f4054bccd0d0e8ffb72f93fe6ffe824828b5bf35706298789f9fe5973fb4c4"
+  },
+  {
+    "path": "theory/unisolvence/u0/gram-unisolvence.md",
+    "bytes": 5044,
+    "sha256": "9c939744c725adcff630ef503f610a50b2295d0d86c292c8a96b111cc433ffdd"
+  },
+  {
+    "path": "theory/unisolvence/u0/measurements.md",
+    "bytes": 4242,
+    "sha256": "7e078ec0cdb20ff48937d1629f1af8533155c91a5b13adbbec1c99a7049686eb"
+  },
+  {
+    "path": "theory/unisolvence/u0/open-targets.md",
+    "bytes": 3653,
+    "sha256": "ed402e6751ebb787459ead324a7b046d4c722ea16a1197a71e09dc4a907ab8a4"
+  },
+  {
+    "path": "theory/unisolvence/u0/quadratic-character.md",
+    "bytes": 4145,
+    "sha256": "1f742b41cb92e46c7dffd1e19ea70ea81d30bfdf950ed8cab8ad985a3ef8cc48"
+  },
+  {
+    "path": "theory/unisolvence/u0/rationality.md",
+    "bytes": 4230,
+    "sha256": "271899708ebd4dc693e8bd0e513c4074242554246e1edad741a6de451f21b5de"
+  },
+  {
+    "path": "topics/charter-unisolvence-20261031/directions/U0/bound-review.md",
+    "bytes": 1625,
+    "sha256": "dd343dbc4e7b278c214d0e3272624cfe37022cf48cb91a34f1ca98c3b1040849"
+  },
+  {
+    "path": "topics/charter-unisolvence-20261031/directions/U0/candidates.md",
+    "bytes": 4854,
+    "sha256": "d6f2129f19945750e6dbfe78bc770cfb6ddce891a41e53df49f46c8130997a8f"
+  },
+  {
+    "path": "topics/charter-unisolvence-20261031/directions/U0/check_evidence.py",
+    "bytes": 1944,
+    "sha256": "d3cbd0d171d79edc3945b4b180cb226d6c9e037a9a1236d08d9ca1606189c5ab"
+  },
+  {
+    "path": "topics/charter-unisolvence-20261031/directions/U0/evidence-check.txt",
+    "bytes": 214,
+    "sha256": "3f8f148d149d6f54a9482b79efc8ac529da63f34848d2bec9b90bfce5aa57c2a"
+  },
+  {
+    "path": "topics/charter-unisolvence-20261031/directions/U0/evidence-manifest.json",
+    "bytes": 15744,
+    "sha256": "92e0239d6c5b5077920714ab273f0b32c76a1a6890fcbe3551945067e64108d3"
+  },
+  {
+    "path": "topics/charter-unisolvence-20261031/directions/U0/evidence.md",
+    "bytes": 6164,
+    "sha256": "496717212d3e084dd6fec2383331a8c026b522ba3bd6332e771f51063d9b1d6e"
+  },
+  {
+    "path": "topics/charter-unisolvence-20261031/directions/U0/plan.md",
+    "bytes": 4392,
+    "sha256": "79c9efec3853b07af9dea14448cb18f9712333e536b61c07dec6ba9ccbf1e1ae"
+  },
+  {
+    "path": "topics/charter-unisolvence-20261031/directions/U0/replay_source.py",
+    "bytes": 2065,
+    "sha256": "2e72bbf80e157edabcaa99debfa8b2e97de55dbf184c9323a61ab2ff8b593cb5"
+  },
+  {
+    "path": "topics/charter-unisolvence-20261031/directions/U0/rounds.md",
+    "bytes": 5140,
+    "sha256": "1b9610c727f441158da839e5316cfaa295d16ad326adba775bf62f3f1d562760"
+  },
+  {
+    "path": "topics/charter-unisolvence-20261031/directions/U0/verify_exact.py",
+    "bytes": 6336,
+    "sha256": "f1120a41235c881fe67d77afe8d5ae2c8b0e41fe2ea8d3e9b5566bc0d37eb462"
+  }
+]
