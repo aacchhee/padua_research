@@ -2,7 +2,7 @@
 
 - Supplied locations: `topics/mz-constants/sources/padua_mz_inputs/notes/adv_F7_F8_F11_F12_F4.md` (F7); `notes/recent_padua_cubature_theory.md` (P1); `notes/bttb_repo_numeric_mapping.md` (row 8, O3/O4, ranked transfer 1); `reports/Round 3 open problems 2023 2026.md` (selected related sections).
 - Access/reading: 2026-10-31; selected F7/P1/C4-transfer sections read in full. These are supplied research notes, not published theorems.
-- Reader: Codex; model/effort runtime-inherited, not independently exposed.
+- Reader: Codex; gpt-6.1-sol, high (explicit orchestrator assignment).
 - All unverified third-party claims below are **FULLTEXT UNVERIFIED** unless a separate primary record explicitly upgrades reading coverage.
 
 ## Imported source reports

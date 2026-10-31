@@ -1,0 +1,32 @@
+{
+  "rules_sha": "d36722823441dc40c6e19d69a174459348dd309c",
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python tracks/mz-constants/code/reproduce.py --suite all --max-N 1280 --output tracks/mz-constants/evidence/reproduction.json",
+  "artifacts": [
+    {
+      "path": "tracks/mz-constants/code/reproduce.py",
+      "sha256": "fe88a16d2ac08df96dc5e18a224ac1b0d46d5cec4310cc86fff0f7fda1aa44ac",
+      "bytes": 6216
+    },
+    {
+      "path": "tracks/mz-constants/evidence/reproduction.json",
+      "sha256": "b85b06fa9b3317d6ce84f9d354626b74edad4e8f9885341ecad39166d4fd6d40",
+      "bytes": 29202
+    },
+    {
+      "path": "topics/mz-constants/reproduction.md",
+      "sha256": "40ff90ddac2a096168713b27e1d835eaf8815a6c2ae9122272bc386b64c06d5c",
+      "bytes": 6171
+    },
+    {
+      "path": "tracks/mz-constants/theory/reproduced-spectra.md",
+      "sha256": "cc0dea3c09c8ff3aea539388c573594cce4cb1c53d64e04cf0c41657487d62f5",
+      "bytes": 5133
+    }
+  ],
+  "source_manifest_sha256": "c12ee67df3efc0a17791930da47332e6f7e8532f2006938a3608a6fd93ada19b",
+  "source_manifest_verified_entries": 21,
+  "checker": "Python hashlib SHA256 comparison for every SHA256SUMS.txt entry; all matched. Runner self-hash matches final code.",
+  "retention": "Small essential JSON is a commit candidate. Local console duplicate is disposable; external Windows cold-storage archival pending.",
+  "independent_rerun": "pending external auditor execution, not claimed here",
+  "generated_json_bytes": 29202
+}
