@@ -22,3 +22,5 @@ C0 catalogue then C3 exact rank tests; all planned, none claimed executed here. 
 ## Dependency / integration
 
 Shared ledger: ../padua-batch-20261031/ALLOCATIONS.md. Charter PR #2 must merge before this stacked topic. Final ranges remain provisional until coordinated PR preparation.
+
+2026-10-31 checkpoint: C0 exact catalogue and C3 first rank screen executed; actual counts and finite scope recorded in progress.md and direction outputs. Questions for C3 layer-cover/symbolic continuation frozen before execution. Separate Astra xhigh auditor assigned independent/ ownership and begins adversarial reconstruction. Literature primary inspections confirm known Lissajous spectral-space distinction; exact coverage remains source-specific. No scientific acceptance or publication novelty inferred.
