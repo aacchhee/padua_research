@@ -28,8 +28,9 @@ Every number below is **MEASURED (floating point)**: an observation of one deter
 ## 2. Environment and protocol
 
 - Python 3.13.18 (Clang 23.1.3), numpy 2.5.3, scipy 1.18.1 (installed; not imported by any script), numpy BLAS: scipy-openblas, OpenBLAS 0.3.34. Linux 6.18.44-fc-v185 x86_64, Intel Xeon @ 2.80 GHz, 2 cores, 8 GB RAM. `numpy.longdouble` = x87 80-bit (eps 1.08e-19), used by the F6 reference.
-- Each script ran in a fresh, empty scratch working directory (`.../scratchpad/repro_run/<tag>/`; still empty afterwards for every run) as `timeout 1800 python3 -I -B <abs path of the copy> [args] > log 2>&1`. `-B` (no bytecode) was added to `-I` so that no `__pycache__` is written into the inputs directory; this is the only deviation from the requested invocation, except for run 12 (below). Environment `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1`. Two runs were executed concurrently on the 2 cores, so wall times are indicative only. Runner: `analysis/run1.sh`.
+- Each script ran in a fresh, empty scratch working directory (`.../scratchpad/repro_run/<tag>/`; still empty afterwards for every run) as `timeout 1800 python3 -I -B <abs path of the copy> [args] > log 2>&1`. `-B` (no bytecode) was added to `-I` so that no `__pycache__` is written into the inputs directory; this is the only deviation from the requested invocation, except for run 12 (below). A `__pycache__/f6_givens_vs_hl_deficit.cpython-313.pyc` nevertheless appeared in the inputs directory at 20:56:56 UTC (during the X60 run; every invocation I made used `-B`, so its origin is unidentified, possibly another process importing the module); I deleted it and re-verified the 12 sha256 sums afterwards (12/12 unchanged). Environment `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1`. Two runs were executed concurrently on the 2 cores, so wall times are indicative only. Runner: `analysis/run1.sh`.
 - "Seeds" are those hard-coded in the scripts. A shared generator is consumed in program order, so a node set depends on everything drawn before it.
+- `analysis/` holds my own post-processing of the logs (not input code): `f1_ratio.py` (ratio loss ÷ (u/res)), `f6_ratios.py` (deficit factors), `f6_slopes.py` (log-log slopes), their outputs `*.txt`, and `run1.sh` (the runner used; paths point to the session scratchpad). They read only the logs.
 - Logs: `logs/<script>[_args].log` (stdout and stderr merged; all small, 25 KB in total, kept in full). SHA-256 of the logs are in section 7.
 
 ## 3. Completed runs
@@ -58,7 +59,7 @@ Extension runs (not requested comparisons; same unchanged script, larger argumen
 |---|---|---|---|---|
 | X40 | `f6_run_padua_large.py 40` (M = 861) | 0 | 191.4 s | `logs/f6_run_padua_large_40.log` |
 | X50 | `f6_run_padua_large.py 50` (M = 1326) | 0 | 546.1 s | `logs/f6_run_padua_large_50.log` |
-| X60 | `f6_run_padua_large.py 60` (M = 1891) | @@X60@@ | | |
+| X60 | `f6_run_padua_large.py 60` (M = 1891) | 0 | 1726.8 s (of the 1800 s timeout) | `logs/f6_run_padua_large_60.log` |
 
 ## 4. Comparison: claimed vs observed
 
@@ -83,7 +84,7 @@ Per-row ratio loss ÷ (u/res), all 57 printed rows: `analysis/f1_ratio_table_eps
 - Tensor grids: loss 1.2e-14 to 1.9e-14 (25²) and 6.5e-14 to 9.6e-14 (41²), nearly flat from deg 4 to 40, Ritz residual 0.3 → 1.4e-2: no rise, as claimed (R).
 - Residual sizes: min Ritz residual falls monotonically with degree on random nodes (0.37 → 7.7e-8 at M = 1681); at M = 1681, deg 40 `#Ritz res<1e-8` is 0, i.e. the loss of 8.4e-9 occurs before any Ritz residual reaches 1e-8 (minimum 7.7e-8).
 
-### 4.2 F6: Givens IEP vs HL etc. (runs 6, 7, X40, X50)
+### 4.2 F6: Givens IEP vs HL etc. (runs 6, 7, X40, X50, X60)
 
 (b) **Relative error of (H_x, H_y)** (Frobenius, vs long-double three-pass reference), uniform weights, **given** (natural) order, Givens "scheme" rule; deterministic, so independent of seeds:
 
@@ -94,31 +95,32 @@ Per-row ratio loss ÷ (u/res), all 57 printed rows: `analysis/f1_ratio_table_eps
 | 496 | 2.3e-14 | 4.2e-15 | 4.6e-14 | 1.5e-15 | 1.8e-15 | 5.5 | 12.8 |
 | 861 (X40) | 3.8e-14 | 6.0e-15 | 3.7e-14 | 2.1e-15 | 2.3e-15 | 6.3 | 16.5 |
 | 1326 (X50) | 5.5e-14 | 8.4e-15 | 3.5e-14 | 2.5e-15 | 2.6e-15 | 6.5 | 21.2 |
+| 1891 (X60) | 8.4e-14 | 1.2e-14 | 1.6e-13 | 3.4e-15 | 3.0e-15 | 7.0 | 28.0 |
 
-**Log–log slopes** of error vs M (least squares over the points; `analysis/f6_slopes_M66_496.txt`, `analysis/f6_slopes_M66_1326.txt`; computed from the logs, the script does not print slopes):
+**Log–log slopes** of error vs M (least squares over the points; `analysis/f6_slopes_M66_496.txt`, `analysis/f6_slopes_M66_1891.txt`; computed from the logs, the script does not print slopes):
 
-| method | claimed (ADV §2.2, M = 66→496) | observed M = 66, 231, 496 (3 pts) | observed M = 66…1326 (5 pts) | verdict |
+| method | claimed (ADV §2.2, M = 66→496) | observed M = 66, 231, 496 (3 pts) | observed M = 66…1891 (6 pts) | verdict |
 |---|---|---|---|---|
-| Givens (scheme) | ≈ 0.96 | 0.95 | 0.95 (last pair 0.86) | R |
-| HL | ≈ 0.8 | 0.82 | 0.76 (last pair 0.78) | R |
-| CGS2 | ≈ 0.5 | 0.52 | 0.53 (last pair 0.40) | R |
-| Householder | ≈ 0.4 | 0.39 | 0.38 (last pair 0.28) | R |
-| BJ (not claimed) | n/a | 1.19, last pair −0.35 | 0.58, last pair −0.13 | erratic, not a power law |
+| Givens (scheme) | ≈ 0.96 | 0.95 | 0.96 (last pair 1.19) | R |
+| HL | ≈ 0.8 | 0.82 | 0.77 (last pair 1.00) | R |
+| CGS2 | ≈ 0.5 | 0.52 | 0.55 (last pair 0.87) | R |
+| Householder | ≈ 0.4 | 0.39 | 0.38 (last pair 0.40) | R |
+| BJ (not claimed) | n/a | 1.19, last pair −0.35 | 0.72, last pair 4.28 | erratic, not a power law |
 | Givens "largest" | n/a | 6.0 (catastrophic, see 4.3) | not meaningful | n/a |
 
-The slopes reproduce, but they rest on 3 (claimed range) or 5 sizes, one deterministic given-order node sequence, and HL's slope (0.76 to 0.82) is between √M (0.5) and M (1). Against the plan's L5 kill thresholds (Givens ≤ 0.7, or HL/CGS2 ≥ 0.9): neither triggers on these data; they do not meet the plan's design (M up to ≥ 2000, ≥ 5 orders/seeds per size). Random-order slopes are not given because each random order is a different permutation with only one or two draws per size.
+The slopes reproduce, but they rest on 3 (claimed range) or 6 sizes of one deterministic given-order node sequence, and HL's slope (0.77 to 0.82 over all points) is between √M (0.5) and M (1). The last-pair slopes (M = 1326→1891) are noisy single-step values (HL 1.00, CGS2 0.87, Givens 1.19, BJ 4.28) and are not a trend. Against the plan's L5 kill thresholds (Givens ≤ 0.7 on the larger range, or HL/CGS2 ≥ 0.9): the all-points fits (Givens 0.96, HL 0.77, CGS2 0.55) trigger neither, but the last-pair HL slope of 1.00 shows how fragile the HL value is; these data do not meet the plan's design (M up to ≥ 2000, ≥ 5 orders/seeds per size; M = 1891 is the largest run). Random-order slopes are not given because each random order is a different permutation with only one or two draws per size.
 
 **Deficit factors** (full list: `analysis/f6_deficit_factors.txt`). Claim ADV §2.2: Givens is behind HL by a factor 4 to 12 (0.6 to 1.1 digits) and behind Householder/CGS2 by 4 to 15, "for every node order and weight choice tried":
 
 | Data set (Givens-scheme ÷ ...) | ÷ HL (digits) | ÷ Householder | ÷ CGS2 | verdict |
 |---|---|---|---|---|
 | Padua n = 10…30, uniform, all orders (16 rows, runs 6, 7) | 3.8 to 16.2 (0.59 to 1.21) | 4.0 to 36.1 | 6.3 to 43.3 | D: the sign and the 0.6 digit lower end reproduce; the upper ends exceed the claim (random-order n = 30: ÷HL 16.2 and 10.8/11.8, ÷HH 24 to 36) |
-| Padua n = 40, 50, uniform, given / random (X40, X50) | 6.3 / 27.6 and 6.5 / 22.1 (0.80 to 1.44) | 16.5 / 69.6 and 21.2 / 73.1 | 18.1 / 80.0 and 22.0 / 73.1 | extends: deficit keeps growing with M |
-| Padua random weights U(0.1,1), given order, n = 20, 30, 40, 50 | 4.2, 4.2, 5.3, 5.0 | 8.7, 13.2, 19.2, 22.2 | 10.8, 13.9, 20.0, 20.0 | R (within the claimed 4 to 12 ÷HL; ÷HH/CGS2 exceed 15 for n ≥ 40) |
+| Padua n = 40, 50, 60, uniform, given / random (X40, X50, X60) | 6.3 / 27.6, 6.5 / 22.1 and 7.0 / **181.8** (0.80 to 1.44; 2.26 at n = 60 random) | 16.5 / 69.6, 21.2 / 73.1, 28.0 / 689.7 | 18.1 / 80.0, 22.0 / 73.1, 24.7 / 625.0 | extends: the given-order deficit keeps growing slowly with M; the n = 60 random-order outlier is a single draw (Givens-scheme 2.0e-12, see 4.3) |
+| Padua random weights U(0.1,1), given order, n = 20, 30, 40, 50, 60 | 4.2, 4.2, 5.3, 5.0, 5.3 | 8.7, 13.2, 19.2, 22.2, 31.0 | 10.8, 13.9, 20.0, 20.0, 26.7 | R (within the claimed 4 to 12 ÷HL; ÷HH/CGS2 exceed 15 for n ≥ 40) |
 | random nodes M = 105, 300, 496 (n = 6, 12, 20), 3 orders each | 1.6 to 7.1 (0.19 to 0.85) | 1.9 to 4.2 | 5.0 to 28.2 | D: the direction reproduces; at M = 496 the factor is only 1.6 to 2.2, below the claimed 4 |
 | 15-point sanity case | 0.3 (Givens better) | 0.3 | 2.2 | the "systematic for every case" statement fails on this case (Givens better than HL and HH) |
 
-Consistent with the claim, HL is worse than Householder/CGS2 as well: HL ÷ HH grows from 1.0 (M = 66) to 2.3 (496), 2.6 (861), 3.2 (1326) on the given order.
+Consistent with the claim, HL is worse than Householder/CGS2 as well: HL ÷ HH grows from 1.0 (M = 66) to 2.3 (496), 2.6 (861), 3.2 (1326) on the given order, and 4.0 at M = 1891.
 
 **Table ADV §2.2, row by row.**
 
@@ -130,7 +132,7 @@ Consistent with the claim, HL is worse than Householder/CGS2 as well: HL ÷ HH g
 | Padua n=30, random weights: 2.5e-14, 6.0e-15, 2.2e-14, 1.8e-15, 1.9e-15 | | run 7: identical | R |
 | random M=496, n=20, 3 orders: Givens 2.4 to 6.0e-13; HL 1.1 to 1.2e-13; BJ 2.5 to 7.1e-13; CGS2 1.2 to 1.7e-14; HH 0.9 to 1.1e-13 | | run 6: Givens 5.9e-14 to 9.6e-14; HL 3.8 to 4.3e-14; BJ 1.1 to 2.9e-13; CGS2 3.4 to 3.6e-15; HH 2.8e-14 | **D**: absolute errors 2.3 to 6 × smaller than claimed (Givens 4 to 6 ×; BJ 2.3 ×; HL 2.8 ×; CGS2 3.5 to 4.7 ×; HH 3.2 to 3.9 ×), and the ordering changes (claimed HL ≈ HH; observed HL/HH = 1.4 to 1.5; claimed Givens/HL 2 to 5, observed 1.6 to 2.2). The claim's values cannot be tied to the committed seed (the random node set conditioning differs); no seed that produces them was found. |
 
-### 4.3 F6: "largest" redundant-pivot rule, diagnostics, thresholds (runs 7, 8, 9, X40, X50)
+### 4.3 F6: "largest" redundant-pivot rule, diagnostics, thresholds (runs 7, 8, 9, X40, X50, X60)
 
 ADV §2.3 table (Givens-scheme / Givens-largest, relative error of (H_x, H_y)):
 
@@ -142,7 +144,7 @@ ADV §2.3 table (Givens-scheme / Givens-largest, relative error of (H_x, H_y)):
 | Padua n=30, random weights | 2.5e-14 / 6.9e-5 | 2.5e-14 / 6.9e-5 | R |
 | random M=496, n=20 ("largest" better) | 2.4 to 6.0e-13 / 4.2 to 5.4e-14 | 5.9 to 9.6e-14 / 3.7 to 4.3e-14 (largest 0.45 to 0.64 × scheme) | direction R ("better"), absolute values D (see 4.2) |
 
-(c) **"Largest" pivot errors, summary.** The catastrophe is not specific to one draw: Padua uniform given order 1.1e-14 (n=20), 2.0e-9 (30), 6.5e-5 (40), 3.9e-5 (50); random order 6.7e-14 (20, run 7; run 6: 8.9e-14, 9.2e-14), 3.3e-12 (30; run 6: 2.1e-12, 4.0e-12), 6.7e-11 (40), 2.8e-8 (50); random weights 7.2e-4 (20), 6.9e-5 (30), 2.0e-5 (40), 1.8e-4 (50), while "scheme" stays at 1e-14 to 2e-13 for all of these (largest ÷ scheme from 1.0 up to 1.7e9 on uniform given orders and 5.5e10 at n = 20 with random weights). The size of the failure is draw-dependent: at n = 20, 30 with random weights run 9 (another draw, same seed 2 but different consumption order) gives 3.3e-4 and 1.7e-3 instead of 7.2e-4 and 6.9e-5. The random-weight failures span 2e-5 to 2e-3 over the six draws seen, all far above scheme. The plan's L5-Q1 value "≈ 7e-4 on Padua n=20, random weights" is reproduced exactly for that draw and is a single draw.
+(c) **"Largest" pivot errors, summary.** The catastrophe is not specific to one draw: Padua uniform given order 1.1e-14 (n=20), 2.0e-9 (30), 6.5e-5 (40), 3.9e-5 (50), 2.5e-4 (60); random order 6.7e-14 (20, run 7; run 6: 8.9e-14, 9.2e-14), 3.3e-12 (30; run 6: 2.1e-12, 4.0e-12), 6.7e-11 (40), 2.8e-8 (50), 2.1e-4 (60); random weights 7.2e-4 (20), 6.9e-5 (30), 2.0e-5 (40), 1.8e-4 (50), 1.3e-2 (60). "Scheme" stays at 1e-14 to 2e-13 for all of these **except one**: n = 60, random order, where Givens-scheme itself reaches 2.0e-12 (10 × its n = 50 value 1.9e-13; HL 1.1e-14, i.e. 182 × better; one draw of one permutation). So the inputs' statement that the fixed 'scheme' rule is robust in all tests (ADV §2.3) holds in every other Padua case of runs 6, 7, X40, X50, X60 (24 distinct cases) but not at n = 60 random order; whether this is a non-unisolvent prefix effect or a rounding-growth effect is not diagnosed (**N**). The ratio largest ÷ scheme runs from 1.0 up to 1.7e9 on uniform given orders, 5.5e10 (n = 20) to 1.4e11 (n = 60) with random weights. The size of the failure is draw-dependent: at n = 20, 30 with random weights run 9 (another draw, same seed 2 but different consumption order) gives 3.3e-4 and 1.7e-3 instead of 7.2e-4 and 6.9e-5. The random-weight failures span 2e-5 to 1.3e-2 over the seven draws seen, all far above scheme. The plan's L5-Q1 value "≈ 7e-4 on Padua n=20, random weights" is reproduced exactly for that draw and is a single draw.
 
 (d-pivot) **Diagnostics (run 8).** ADV §2.3: "the residual at the unused pivot is O(1) to O(300) relative to that pivot, which is itself at noise level (~1e-17)". Observed max residual ratio: 3.0, 3.0, 0.32, 4.5 (n=6); 18, 18, 2.3, 2.3 (n=10); 7.1, 3.0e2, 15, 92 (n=14); 2.3e2, 2.3e2, 1.1e2, 1.1e2 (n=20): range 0.32 to 3.0e2: R. The unused pivot is 5e-19 to 4.4e-17 in 15 of the 16 lines (the exception: n=14, uniform, "largest": 2.1e-10, while the used pivot is 0.19): R. But the listing in ADV §5 says "both pivots sit at noise level": at the printed worst location this holds only for the four n = 6 lines (used pivot 1.2e-16 to 2.0e-16) and one n=14 line (3.5e-16); for the other 11 lines the used pivot is O(5e-3 to 0.2) while the unused one is at noise level. So "unused pivot at noise level" is R; "both at noise level" is **D**. The script does not check unisolvence of the node prefixes, so the plan's mechanism ("catastrophe only on orders with non-unisolvent intermediate prefixes") is **N** (inferred from zero pivots only, not tested).
 
@@ -194,7 +196,7 @@ Claim "the algorithmic error scales roughly like u/min(1−ℓ) times a modest f
 
 ## 5. Runs needed (not executed)
 
-1. **X60**: @@X60NEEDED@@
+1. **No run timed out**, so no run was shortened; X60 finished in 1726.8 s of the 1800 s allowed, so any run with larger n (cost grows like M³) belongs on AC's server (item 2).
 2. **M ≥ 2000** for the L5-Q1 range (plan: M from 66 to ≥ 2000, ≥ 5 node orders/seeds): the unchanged script has a fixed seed 2 per invocation, one random order and one random weight draw; n = 62 gives M = 2016. On AC's server (syvert0/1/2), per n, with a long timeout (single-thread cost grows like M³; n = 50 took 546 s here): `cd <fresh scratch dir> && OPENBLAS_NUM_THREADS=1 timeout 14400 python3 -I -B <repo>/tracks/bivariate-lanczos/code/inputs/f6_run_padua_large.py 62`. Several seeds and orders need a new driver (a new, audited script under `tracks/`), not the input script.
 3. **Single-section Ritz residuals** (L1-Q1 kill test): `f1_loss_vs_ritz.py` computes only the joint Z = Uᵀ(X+iY)U. The residuals of H_x and H_y alone, of the recurrence's own H (not of U), repeated seeds, the Padua-with-cubature-weights and an irregular-domain node set are not covered and need a new script.
 4. **Unisolvence of node prefixes** (L5-Q1 mechanism): no input script checks it; a prefix-by-prefix rank/unisolvence test along each node order is needed to test whether the "largest" catastrophe occurs only on non-unisolvent prefixes.
@@ -209,5 +211,20 @@ Claim "the algorithmic error scales roughly like u/min(1−ℓ) times a modest f
 ## 7. SHA-256 of the logs
 
 ```
-@@SHA@@
+da705f121e9d39f71c2dc6a2eddaf4815a0a91c8a7c71b881b6622d17535701c  bj_window.log
+549dd400c462b80e49ea3ae7fe0baee5c9f0799155901d42d9f5234501a98341  closed_form_H.log
+be37a83e755817dc7bd8369a485f5af3b08f63d9875414d3c372351bc16d2c0b  f1_loss_vs_ritz.log
+8e2309a5303953bdbbea7ef5b23412ea3d41fc0fb33af05c0a1c6999c8973660  f3_qfree_vs_R_downdate.log
+2d049b2c17173678317831a28f73bc35ad29c4dbb2dbc88bad0950a8e10ce85a  f6_diag_redundant_pivot.log
+ceabdd895a21b318c08fda628b54e53508bbf13097e3aacfb1b644a598adedaf  f6_givens_vs_hl_deficit.log
+1ffdfcce9c943d373e06d0cbc096755933715c2b7a8f4e709e0b19f1c9fb129e  f6_pivot_threshold_test.log
+c48e6933f3db2cee4d42db1c31c22d0e4fdd001ebea761e3a393738516e9303b  f6_run_padua_large_20_30.log
+3d9f29d22577f8b163627350095b6df221a438e55dad64f45a59de312fe91a8d  f6_run_padua_large_40.log
+9d3a0224bdbc9215c34e904279267b532fff102eeccab599106c59b872cd0f22  f6_run_padua_large_50.log
+f4c3ff6a4bb173e9ee051cbf728562910dbb761f2f9deabc4c8fad7a1c68efb2  f6_run_padua_large_60.log
+4f5b84c72d73434877d66d26395a0870ca12bf6b2081fa98f99f2e0731f1d761  harris_simanek_check.log
+a2fe8cd104d19a8d6868faa43708f5a108dcf48378ca8c100e19531a20a3b6da  padua_weights_check.log
+2555ee9997386d62a7cea2dad4a44c9dae501c72cd00477573250a0118261493  qfree_bivariate_downdate.log
+af2cbfb78802bde62ab5f5fa5e608a0561a3061cb991973aa73113c5e484fbb8  qfree_vs_conditioning_I_fail.log
+f0fc62523b5058948911e3404a3bb3ed5e93cc8d7438b045bf1b1016d3c1cf8d  qfree_vs_conditioning_noI.log
 ```
