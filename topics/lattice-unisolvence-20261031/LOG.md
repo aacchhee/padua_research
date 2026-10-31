@@ -39,5 +39,7 @@ Supplementary review disposition: Astra found that newly appended state/IDEAS li
 
 Post-freeze integration update: charter PR#2 was merged by AC at08fafe62d9798385dfafaacc9a41344272737e68 and the old branch was deleted. Its tree is byte-identical to the already imported317a265parent. Root merged that charter-bearing main into this published topic at a9e519ac3e0ff65f4ede8954d4630f2160600301 without rebasing, with zero file changes. The dependency is satisfied; the draft now targets main. Earlier base/main observations above remain historical. All scientific proofs, source/checker/output hashes and the frozen ZIP remain unchanged; only this integration metadata and its review envelope are updated. Required Claude audit remains PENDING and Stage AUDIT is unchanged.
 
+Publication receipt: [draft PR#4](https://github.com/aacchhee/padua_research/pull/4) targets main after charter PR#2merged. Required Claude audit is pending.
+
 Stage: AUDIT
 Next: `Claude (Opus 5.5 xhigh): Continue codex/lattice-unisolvence-20261031.`

@@ -1,6 +1,6 @@
 {
   "schema": "lattice-audit-targets-v1",
-  "source_head": "a9e519ac3e0ff65f4ede8954d4630f2160600301",
+  "source_head": "5d6c76c06ec27f61af57f499dab649f01454bad9",
   "note": "Exact hashes govern bytes after source_head. Scientific ZIP excludes later protocol envelope; the final repository manifest may additionally pin it. Nested independent audit manifests are retained; root self/archive checks are excluded.",
   "files": [
     {
@@ -203,15 +203,15 @@
     },
     {
       "path": "topics/lattice-unisolvence-20261031/AUDIT_HANDOFF.md",
-      "bytes": 9410,
-      "sha256": "6b36b27425c750288c5d2467426ce63d65d99cfddcb6b8c1751766bc3ccaffc5",
-      "git_blob": "659675d40387ffedb3297abf826378214eb9913d"
+      "bytes": 9569,
+      "sha256": "0fa533614456a9a39fb448fb475f6fdaf226c7e7a64a8939ad9e270be8cf634d",
+      "git_blob": "ca4d105933687b875b1e3d3174f0994b7fc378dd"
     },
     {
       "path": "topics/lattice-unisolvence-20261031/LOG.md",
-      "bytes": 7332,
-      "sha256": "58ffb0973ad7fba7f26f0c8d41c6046413c87d2ed3a782b4572685efffe3d78a",
-      "git_blob": "ded11ce7ee2e49915c9f08d3875bba5391ef632c"
+      "bytes": 7491,
+      "sha256": "bb9f4c0d91eb05c660359b88900f56e121cd24392a279db8415fc030ac9eeea2",
+      "git_blob": "c5c8ba6ac4c27c81f5240fe8705bbe8533c5dda6"
     },
     {
       "path": "topics/lattice-unisolvence-20261031/REQUEST.md",
@@ -766,6 +766,12 @@
       "git_blob": "587ec106e9ea808462b09683556a37e42c6f0b47"
     },
     {
+      "path": "topics/lattice-unisolvence-20261031/publication-receipt.json",
+      "bytes": 771,
+      "sha256": "5a2c9580e5b154c4c806c5103fdb79f8c2d7fea4f3aa1b66ee7c2d1542077995",
+      "git_blob": "60afa6c5505e90cbfda01dd38d49bd3c410b841f"
+    },
+    {
       "path": "topics/lattice-unisolvence-20261031/report.md",
       "bytes": 12052,
       "sha256": "6bf7508d96884d0268f3626ccb42c6cb8b298222958f8683c54c7dbe138ad245",
@@ -773,9 +779,9 @@
     },
     {
       "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
-      "bytes": 11244,
-      "sha256": "3b5621458e28bac8560cc1166a157b416d14f7b21e11966965984f338c7c081d",
-      "git_blob": "9eca53d1b006f86a2a02aae254d02d8ece1b5c80"
+      "bytes": 11484,
+      "sha256": "085a99069801f901a1005d74a8c12e24f3e744ed7174a77498d9a9f026a0b285",
+      "git_blob": "eb0fd3fee7c049cb4660f6d722629734a95d13e7"
     },
     {
       "path": "tracks/README.md",

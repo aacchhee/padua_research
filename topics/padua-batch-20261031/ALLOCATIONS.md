@@ -69,3 +69,5 @@ Charter→lattice direct squash rehearsal and the wider batch conflict observati
 ## Parent integrated before lattice publication
 
 AC merged charter PR#2 at08fafe62d9798385dfafaacc9a41344272737e68 and deleted its branch. Lattice merged that main at a9e519ac3e0ff65f4ede8954d4630f2160600301 with no file changes because its parent tree already matched. Lattice now targets main; the original charter-first dependency and all reservations remain preserved. The wider MZ/later-member reconciliation is still required before batch readiness. No live PR was merged by this lattice agent.
+
+Lattice publication: [draft PR#4](https://github.com/aacchhee/padua_research/pull/4), target main after the charter dependency was integrated. Stage AUDIT; final allocations/other-member reconciliation remain pending with the named owner.
