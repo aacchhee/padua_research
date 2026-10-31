@@ -41,3 +41,7 @@ Exact checkers and small essential outputs may be committed within repository li
 - rank3d agent (Sol xhigh): direction C3, code/c3_*.py and theory/c3-*.md.
 - root: Git, shared ledger/registries, topic plan/log/progress/report/handoff, integration and verification.
 - separate Astra xhigh reconstruction: assigned disjoint independent/ folder after mathematical checkpoint; no developer acceptance before that check.
+
+## C0 closure and C1 activation
+
+C0 closed after two conceptual rounds: finite catalogue + elementary density/infinite-six count and short-axis obstruction complete in its declared scope. No unresolved counting proof opening remains there; all omitted classes retained deferred. C3 structural/stability work continues. C1 is activated as the second substantive direction, with question frozen in directions/C1/launch.md before any run; developer ownership transfers from C0 to C1. Literature baseline and candidate-specific predecessor screen are already recorded. At no point are C0,C1,C3 substantively active together.

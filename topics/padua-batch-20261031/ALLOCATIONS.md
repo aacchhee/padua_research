@@ -6,7 +6,7 @@ This is the batch ledger requested by AC for the charter, MZ and bivariate-Lancz
 
 Both topics use base/rules `d36722823441dc40c6e19d69a174459348dd309c`. At MZ preparation, `git fetch origin main codex/charter-unisolvence-20261031` fetched that unchanged main and charter head `eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64`. GitHub open-PR query returned draft [#2](https://github.com/aacchhee/padua_research/pull/2), whose standalone ledger at `topics/charter-unisolvence-20261031/ALLOCATIONS.md` was read in full. Its earlier empty-PR observation is historical; the present topic does not override its reservations. No batch ledger existed at that pinned charter head.
 
-MZ scientific checkpoint before final-ID substitution: `2dc9264333cdf8372947448f4b9bdd3bb577d0e1`. Exact MZ map: [final-id-map.json](../mz-constants/final-id-map.json); original scientific file hashes: [preallocation-hashes.json](../mz-constants/preallocation-hashes.json).
+MZ scientific checkpoint before final-ID substitution: `2dc9264333cdf8372947448f4b9bdd3bb577d0e1`. Exact MZ map: [MZ final-id-map.json](https://github.com/aacchhee/padua_research/blob/fdf0648cbaa9fb722c611d709e638de7dfe86368/topics/mz-constants/final-id-map.json); original scientific file hashes: [MZ preallocation-hashes.json](https://github.com/aacchhee/padua_research/blob/fdf0648cbaa9fb722c611d709e638de7dfe86368/topics/mz-constants/preallocation-hashes.json).
 
 | Namespace | Existing charter reservation | MZ reservation | Next unreserved |
 |---|---|---|---|
@@ -29,14 +29,14 @@ Before requesting AC's squash sequence, refresh all member heads, preserve their
 
 ## Lattice campaign adoption and programme-ledger reconciliation
 
-2026-10-31, lattice root orchestrator adopts this shared path. It also read the independent programme ledger at origin/claude/programme-ideas-20261031 (8f500db at this fetch), which records the same charter block, only provisional programme/Lanczos/MZ entries at its older observation, and the policy that the next preparing orchestrator refreshes and reserves the next free block. The later published MZ final reservations above supersede that older observation for MZ only; no programme or Lanczos final range has been inferred or overwritten. Existing final reservations are preserved. No new final range is reserved at lattice launch.
+2026-10-31, lattice root orchestrator adopts this shared path. It also read the independent programme ledger at origin/claude/programme-ideas-20261031 (a02bc357e5f0eed479f7020b85fecc57fda9b47f at this fetch; its internal ledger retains earlier head observations), which records the same charter block, only provisional programme/Lanczos/MZ entries at its older observation, and the policy that the next preparing orchestrator refreshes and reserves the next free block. The later published MZ final reservations above supersede that older observation for MZ only; no programme or Lanczos final range has been inferred or overwritten. Existing final reservations are preserved. No new final range is reserved at lattice launch.
 
 | Additional / refreshed member | Pinned base/head seen | Dependency / order / reservations |
 |---|---|---|
 | codex/charter-unisolvence-20261031 | original eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64; audit head 3bd9d4e8e7817eaf0abd5b7a750ea77eb8101342 | PR #2 first; mathematics accepted by Claude audit-01, protocol responses pending; IDs unchanged |
 | codex/mz-constants-20261031 | remote fdf0648cbaa9fb722c611d709e638de7dfe86368, PR #3 | after charter; ranges above preserved; no lattice scientific dependency |
-| claude/bivariate-lanczos-20261031 | remote 2d8c3ab (full SHA in lattice provenance record) | provisional only at fetched head; no lattice scientific dependency; refresh before allocation |
-| claude/programme-ideas-20261031 | remote 8f500db (full SHA in lattice provenance record) | provisional only at fetched head; ledger owner policy above; no lattice scientific dependency |
+| claude/bivariate-lanczos-20261031 | remote 6673669103d59c4a955071dd3301408604413ed8 (launch fetch) | provisional only at fetched head; no lattice scientific dependency; refresh before allocation |
+| claude/programme-ideas-20261031 | remote a02bc357e5f0eed479f7020b85fecc57fda9b47f (launch fetch) | provisional only at fetched head; ledger owner policy above; no lattice scientific dependency |
 | codex/lattice-unisolvence-20261031 | starts at eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64, merges charter audit 3bd9d4e | **stacked on charter, target charter branch; must merge only AFTER charter PR #2**. C0/C3/LIT provisional namespaces only; no final reservations yet |
 
 Order constraint: charter first, then MZ/lattice/Lanczos/programme in AC's chosen order, with shared-registry reconciliation at each integration. The MZ preference for second is preserved as a proposal, not a new dependency. Lattice does not rewrite, push, or repair other member branches. Programme rule changes are outside lattice scope and not silently adopted. External member acknowledgements and final sequential squash rehearsal remain readiness conditions; a draft may preserve work while pending.

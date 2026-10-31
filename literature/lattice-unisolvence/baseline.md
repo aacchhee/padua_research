@@ -16,3 +16,7 @@ Recorded before exploration under AC's explicit exception. All statements below 
 | LIT?lattice-codex-10 | De Marchi 2022 survey, Constr. Math. Anal. 5(1): unknown Padua analogue in d>=3; Xu arXiv:2407.09903 | User-supplied open-problem wording, UNVERIFIED; no inference that arbitrary 3D unisolvent grids are unknown. |
 
 Prior-art search log and fulltext inspection addenda will be recorded in this directory. Paywalled load-bearing gaps are pending-reference, not a reason to terminate exploration.
+
+## Primary-inspection addendum (2026-10-31)
+
+Frozen entries01–10 above remain unchanged in scope. The literature developer added [exact reading/search coverage](search-log.md), [comparison](comparison.md), [candidate-specific cyclic6/mod4 screen](candidate-screen.md) and provisional records11–30. Coverage is primary fulltext excerpts where explicitly recorded, not complete readings; all outside that scope remain UNVERIFIED. Cools–Poppe detailed fulltext and historical original-source attribution remain pending-reference. No original record is silently upgraded and no acceptance/novelty verdict is implied.
