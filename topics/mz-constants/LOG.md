@@ -2,7 +2,7 @@
 
 - Branch: `codex/mz-constants-20261031`; recorded base and rules SHA: `d36722823441dc40c6e19d69a174459348dd309c`.
 - Developer/orchestrator: Codex; runtime model/effort metadata not exposed to this orchestrator. AC requested Sol 6.1 xhigh. Delegated models are recorded exactly.
-- Stage: AUDIT. Next: `Claude (Opus 5.5 xhigh): Continue codex/mz-constants-20261031.`
+- Stage: WORK (Claude audit-01: CHANGES REQUESTED, no High findings). Next: `Codex (Sol 6.1 xhigh): Continue codex/mz-constants-20261031; answer audit-01.md in response-01.md.`
 - Scope: reproduce supplied CC/Padua evidence, literature baseline, bounded mathematical exploration, durable claims, audit handoff. Do not write the campaign charter or enter the other two topics' scientific scope.
 - Shared allocation ledger at PR preparation: `topics/padua-batch-20261031/ALLOCATIONS.md`; no IDs reserved yet.
 
@@ -36,3 +36,15 @@
 - M1 developer `/root/m1_upper`, explicitly gpt-6.1-sol xhigh, completed four rounds and then moved to M3, keeping two active substantive directions with M2. M2 developer `/root/m2_lower`, explicitly gpt-6.1-sol xhigh, derived cardinal Schur and endpoint-cancelled harmonic U bounds. Reproduction `/root/reproduce`, explicitly gpt-6.1-sol medium, completed finite suites. Independent adversarial `/root/adversarial`, explicitly gpt-6-astra xhigh, reconstructs every accepted candidate and actually reran the numerical suite. M0 `/root/literature_baseline`, explicitly gpt-6.1-sol high, completed 43-query screen.
 - All imported rigorous statements are locally reproved rather than inherited. Several source implications require correction: An–Wu states a conditional corollary; Padua marginal domination alone does not prove convergence; inverse-Gram stability is not the hyperinterpolation operator norm. The endpoint η rate requires upper-spectrum information beyond λ_max<2−c/N.
 - Refresh of origin/main returned d367228. GitHub open-PR query now finds draft #2, `codex/charter-unisolvence-20261031`, head eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64, with its standalone allocation ledger. Those reserved IDs must be preserved in a batch ledger before allocating here. No competing registry had been visible at the earlier initial query. No main merge or charter edits performed.
+
+## 2026-10-31 — Claude, Opus 5.5 xhigh (independent cross-agent auditor)
+
+- Rules read and audited head: `fdf0648cbaa9fb722c611d709e638de7dfe86368`; base `d36722823441dc40c6e19d69a174459348dd309c` equals current `origin/main`.
+- Report: [audit-01.md](audit-01.md). Verdict CHANGES REQUESTED, with no High finding.
+- Mathematics: every PROVED statement in scope (PD-T013–019, 021–025; PD-N002–006) was reconstructed independently and accepted as stated. The OPEN targets PD-T020/027/028 and the MEASURED record PD-T026 are correctly labelled.
+- Medium findings:
+  - M1: PD-T022 at n=N−1 gives λ_+≤2−4/N+4/N². That strictly improves PD-T014's headline 2−2/(πN) for every N, and PD-T015's quantitative role is superseded.
+  - M2: the screen omitted the mean-convergence-of-Lagrange-interpolation / converse quadrature-sum literature (Askey, Nevai and successors), which is the closest prior-art family for PD-T017/018.
+- Low findings: L1 stale conditional in PD-T028; L2 the non-vacuity range of 128000/(log N)², and how the finite tables relate to the log⁻² order; L3 PD-T017 proves the full-space λ_min(CC,N) bound.
+- Executed: the developer's M1/M2/M3, reproduction and protocol commands, all matching the committed and Astra outputs exactly. Also the auditor's own checker `tracks/mz-constants/evidence/claude-audit-01-check.py` (exact sign checks to N=60, Padua compression to N=14, and a MEASURED shifted-log fit to N=5120) and a manuscript build (14 pages, no warnings).
+- Stage returns to WORK for Codex `response-01.md`. Only AC merges.
