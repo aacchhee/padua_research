@@ -18,7 +18,7 @@ Use agentic orchestration: delegate bounded development, independent checks, or 
 
 ## Work cycle
 
-One topic is one branch (`codex/<slug>` or `claude/<slug>`) and one PR, with a log at `topics/<slug>/LOG.md`. `New topic: <objective>.` starts WORK; `Continue <branch>.` follows the log's next step. A small job explicitly requested with `no audit` may omit the audit and log, while retaining branch and PR rules.
+One topic is one branch (`codex/<slug>` or `claude/<slug>`) and one PR, with a log at `topics/<slug>/LOG.md`. `New topic: <objective>.` starts WORK; `Continue <branch>.` follows the log's next step. A small job explicitly requested with `no audit` may omit the audit and log, while retaining branch and PR rules. This exemption must not add or upgrade any `PD-T`, `PD-N`, `IDEA`, or `LIT` entry, or change rules, templates or registry schemas; such work follows the ordinary audit cycle.
 
 Record the stage in the topic log: WORK → AUDIT → PR. The developer sets AUDIT when development is complete; the other agent (Claude for Codex development, Codex for Claude development) writes `audit-NN.md`. An accepted audit sets PR; findings set WORK. The developer answers every finding in `response-NN.md`; material changes return to AUDIT, while an unchanged claim with a documented resolution may proceed to PR. Preserve disagreements for AC. Never edit the auditor's report to resolve it. An independent subagent check supplements this handoff. A draft PR may preserve work before the handoff is complete, with audit marked PENDING.
 
@@ -28,7 +28,7 @@ At session start, fetch current `main` and the topic head and reconcile the base
 2. Run the novelty gate below before generating ideas. For a task that adds no novelty content, record why the gate does not apply.
 3. Develop, test, and checkpoint substantial results. Record unsuccessful approaches and pending runs as they arise. Keep durable theory and evidence files synchronized with the actual result.
 4. Request an independent audit with the exact candidate SHA or file hashes, scope, claimed statuses, dependencies, and reproducible commands. Respond to each finding with a fix, evidence-based rejection, or explicit unresolved item.
-5. Prepare the PR, updating shared state and registries once at this stage. Commit and push the topic branch; open the PR yourself. A draft may be opened earlier with audit explicitly pending. Reaudit material changes to claims, proof, code, or evidence.
+5. Prepare the PR, updating shared state and registries once at this stage. Commit and push the topic branch; open the PR yourself. A draft may be opened earlier with audit explicitly pending. Reaudit material changes to claims, proof, code, evidence, rules, templates, or registry structure. Before requesting merge, remove completed initialization/preparation tasks from the shared frontier or describe their post-merge state; retain the detailed pre-merge stage in the topic log and PR.
 
 ## Novelty gate and candidate discipline
 
@@ -52,12 +52,25 @@ These are claim-level statuses; mixed documents must label their individual clai
 | `PARTIAL` | The mathematical parts include both PROVED and OPEN parts, and no other mathematical status. |
 | `CONDITIONAL` | The stated conclusion depends on a named unproved hypothesis or unverified obligation. |
 | `MEASURED` | A computed or empirical observation within a recorded finite scope, without a general proof claim. |
-| `OPEN` | The mathematical claim remains unresolved; no proved subclaim is being asserted as partial progress. |
-| `REJECTED` | A precisely scoped claim or candidate is refuted, equivalent, or abandoned for a recorded reason; distinguish these reasons. |
+| `OPEN` | The stated mathematical part or target remains unresolved. This does not deny proved supporting results under their own IDs or minor routine steps labeled inside the file. |
 
 `LITERATURE` labels cited source facts and is not a proof status. State what the source establishes, where, and what was independently checked. A quoted or cited theorem is not a locally verified proof; any dependence on it remains explicit. Do not use `PARTIAL` merely for incomplete implementation, unfinished reading, or a suggestive experiment.
 
-For an aggregate file status use the weakest mathematical-part status in the order PROVED > PARTIAL > CONDITIONAL > MEASURED > OPEN > REJECTED, except the PROVED-plus-OPEN-only case carries PARTIAL. Prefer separate theory files where the claims separate naturally. A verification record adding no new mathematical claim is labeled separately and does not weaken a theorem or become a proved dependency. A distinct measured claim gets its own durable registered home. Never upgrade a status without written proof. Every failed or rejected idea also gets a scoped `PD-Nnnn` theory file and an idea-registry entry.
+### Split results before assigning a file status
+
+Split by default. A substantive PROVED claim keeps its exact statement, its own theory file and ID, and PROVED status. Move CONDITIONAL, MEASURED or OPEN claims into separate files and refuted side conjectures into scoped `PD-N` files. Never let a weakest-part calculation relabel a substantive proved result.
+
+A proved part is substantive if another result depends on it, if it would be reported on its own in `state/CURRENT.md`, `PAPER_MAP.md` or a manuscript, or if its proof is more than a routine step of the main argument. Only minor routine proved steps or lemmas may stay mixed with a main statement; label their statuses individually and give the file the status of its main statement. The developer proposes the classification, the auditor checks it, and disputes go to AC.
+
+If the original combined target still matters, keep it registered with its true status (OPEN, CONDITIONAL, PARTIAL, or another applicable epistemic status) and dependencies on the split-off results. PARTIAL requires explicitly identified PROVED and OPEN mathematical parts only; a target can reference a split-off PROVED part without duplicating its substantive claim or proof. Record `Split from:` and `Split into:` in the theory files and original-to-split mappings in `ID_CROSSWALK.md`. Do not narrow or reword an original claim silently: preserve its original wording, the change and the reason in History.
+
+Only after this splitting and minor-part classification may legitimately co-located mathematical parts use the weakest-status order PROVED > PARTIAL > CONDITIONAL > MEASURED > OPEN, with the PROVED-plus-OPEN-only case carrying PARTIAL. This describes the main target's remaining obligations, not the status of a separate proved dependency. A verification record adding no new mathematical claim is labeled separately and does not weaken a theorem or become a proved dependency. A distinct measured claim gets its own durable registered home. Never upgrade a status without written proof.
+
+### Candidate dispositions and negative statements
+
+REJECTED is a candidate/claim disposition, not an epistemic status and never part of the weakest-status ordering. Record the reason separately as `refuted | equivalent | abandoned`, with evidence and exact scope. A `PD-N` file's status is the status of its negative mathematical statement (for example, the claim that a specified mechanism fails under stated hypotheses), which can be PROVED, CONDITIONAL, MEASURED or OPEN as warranted; the killed candidate's REJECTED disposition does not replace that status.
+
+Every failed or rejected idea still gets a scoped `PD-Nnnn` file and an idea-registry entry under the current broad rule. Audit-01 L5 asks AC whether equivalent or abandoned bookkeeping-only candidates should instead need only an IDEA disposition; that narrowing is not adopted without AC's decision. Where a record asserts no negative mathematical statement, label its statement/status fields `not applicable — administrative disposition only`; do not invent a theorem or use REJECTED as its proof status.
 
 ## Computation and evidence
 
@@ -81,4 +94,8 @@ Use three visible PR sections:
 
 Update `state/IDEAS.md`, shared state, global IDs, topic indexes, and allocation records at PR preparation after checking current `main` and active PRs. During exploration keep local records without repeatedly mutating shared registries. Do not let concurrent writers allocate the same ID or overwrite state. Material divergence from the audited SHA requires a recorded impact check and, where needed, a fresh audit.
 
-When several PRs share registries or allocations, maintain a batch allocation ledger with reserved IDs, owners, bases, dependencies, and integration order. Rehearse the intended sequential squash integration in a disposable local branch without touching `main`, record resulting conflicts and semantic checks, and repair the topic branches before requesting AC's merge sequence. This batch procedure is required only for relevant multi-PR work and never authorizes merging, force-pushing, or rewriting published history.
+Use provisional IDs `<namespace>?<topic-slug>-<agent>-<local-number>` for all four namespaces: `PD-T?charter-codex-01`, `PD-N?charter-codex-01`, `IDEA?charter-codex-01`, and `LIT?charter-codex-01`. Final IDs are allocated only during PR preparation; retain every provisional-to-final mapping.
+
+When several PRs share registries or allocations, use a single ledger at `topics/<batch-slug>/ALLOCATIONS.md`, linked from `ID_CROSSWALK.md` and every member PR/log. The ledger records reserved IDs, owners, pinned bases/heads, dependencies and integration order. Before allocating, refresh main and active PRs, choose one allocation owner, and reconcile all reservations with that owner; parallel writers must not independently reserve IDs. Conflicting reservations are resolved and propagated before any affected PR becomes ready. With no batch, record reservations at `topics/<topic-slug>/ALLOCATIONS.md` and link them from `ID_CROSSWALK.md` as soon as allocations exist. No ledger is needed while no IDs are reserved.
+
+Rehearse the intended sequential squash integration in a disposable local branch without touching `main`, record resulting conflicts and semantic checks, and repair the topic branches before requesting AC's merge sequence. This batch rehearsal is required only for relevant multi-PR work and never authorizes merging, force-pushing, or rewriting published history. AC integrates ready PRs by squash merge; agents never perform that merge.

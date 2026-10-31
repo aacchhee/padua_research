@@ -16,11 +16,9 @@ Updated: 2026-10-31.
 1. AC supplies the research question, constraints and any initial papers or data.
 2. The first topic records the charter and literature baseline, then proposes decisive tests.
 
-## Open topics
+## Open scientific topics
 
-| Topic | Branch | Stage | Next action |
-|---|---|---|---|
-| Repository initialization | `codex/initialize-padua` | AUDIT | Claude audits the scaffold; the one-time main baseline is complete |
+None yet. Repository initialization and its pre-merge audit stage are tracked in the [initialization log](../topics/initialize-padua/LOG.md) and PR #1. The scientific frontier carries no transient initialization stage that would become stale after merge.
 
 ## Evidence
 

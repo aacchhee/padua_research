@@ -37,4 +37,4 @@ The reviewer re-read the affected files after integration and returned ACCEPTED 
 | `agents/claude/CLAUDE_ROLES.md` | `24fba81a81664ea98536fc9220269be49a7f77a48e8c44ca67927e7aa0db9993` |
 | `templates/LITERATURE_RECORD.md` | `b48a6d09ef07b8105811122706e529376d87da39e41d908254e997d8b71fee24` |
 
-These hashes identify the review inputs; this human-written review and the subsequent log update are bookkeeping additions outside that candidate. They add no scientific claim or protocol change.
+These hashes identify the review inputs; this orchestrator-written summary of the reviewer's findings and the subsequent log update are bookkeeping additions outside that candidate. They add no scientific claim or protocol change. The reviewer's original report and the pre-fix working files were not preserved in Git, so this summary is not an independently inspectable transcript of those findings.
