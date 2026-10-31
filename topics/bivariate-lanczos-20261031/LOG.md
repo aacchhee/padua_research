@@ -77,6 +77,14 @@ Subagent effort is set from the agent definition and is not independently expose
 - **Must read before any priority claim:** Barrio–Peña–Sauer, J. Approx. Theory 162 (2010) 407–420 (three-term recurrence evaluation of multivariate OPs; metadata only — ScienceDirect blocked) — potential kill for (b)/(c); Sinha 2026 beyond §7.1 (relation (54) injection term may overlap (e) and PD-T?…-103).
 - Record fixes queued for consolidation: liu-narayan-2023 author Zexin Liu; hokanson-2020 title ("Multivariate rational approximation using a stabilized Sanathanan–Koerner iteration"); zaccaron-2014 "two inconsistent reports" are rows of the same Table 2.1 (no conflict); 7 new and 6 upgraded records recommended in the review.
 
+### L3 prior-art check returned (2026-10-31)
+
+- Claude Opus 5.5 high (requested), separate agent; [reviews/L3-prior-art-01.md](reviews/L3-prior-art-01.md); 44 searches/fetches (WebFetch summaries; no page-image check).
+- Main finding: L3 R03's "1D Greenbaum width √ε" is **not supported** — sources conflict (Šimonová–Tichý §1: proof √ε‖A‖, experiments ε‖A‖; T. Chen preprint §4: Greenbaum's bound depends on ε^{1/4}, eq. (7.10) of the 1989 paper; Meurant–Strakoš Acta Numer. 2006 Thm 4.9). The R03 parallel with the √ε rate of PD-T?…-303(d) is to be withdrawn or marked conflicting until Greenbaum 1989 is read. No multivariate/commuting Greenbaum model found.
+- Verdicts (none claims novelty): (a) truncated Favard — partially known (Xu Trans. AMS 342 (1994) Thm 4.2; Degani–Schiff–Tannor Thms 9–11, §5.3: odd-degree positive cubature ⟺ graded commuting extension); (b) moment-cone reduction — partially known (Tchakaloff–Richter; DST; Di Dio–Schmüdgen Prop. 27); (c) rate theorem — partially known (Di Dio–Schmüdgen Thm 40, Lemma 37(ii), Prop. 43; Blekherman JAMS 2012 Lemma 3.1); quantitative trichotomy and condition (H) not found; (d) count side known (Mysovskikh/Xu; DST Thm 12); √ε lower bound and Padua n = 3 certificate not found; (e) dilation/POVM — partially known (Passer–Shalit–Solel; Davidson–Dor-On–Shalit–Solel Prop. 4.3); (f) width conflicting.
+- Must read before priority claims on (a): Delgado–Geronimo–Iliev–Marcellán SIMAX 28 (2006) 118–147; Cichoń–Stochel–Szafraniec JAT 134 (2005) 11–64. Not reached: Greenbaum 1989 fulltext (paywalled → pending-reference), Schmüdgen 2017 book, Curto–Fialkow, Fialkow–Nie.
+- Records recommended (new: Di Dio–Schmüdgen, Blekherman 2012, Xu Trans. AMS 1994, Xu lecture notes, Lasserre, Passer–Shalit–Solel, DDSS, Putinar 1997, Bayer–Teichmann, Greenbaum–Strakoš 1992, Meurant–Strakoš 2006, Eftekhari et al.; update: degani-schiff-tannor-2005, greenbaum-1989, chen-2026, simonova-tichy-2025) — queued for the consolidation literature pass.
+
 ## Runs needed
 
 (none yet; directions add exact commands)
