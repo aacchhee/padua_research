@@ -65,6 +65,11 @@ Subagent effort is set from the agent definition and is not independently expose
 
 - AC authorized reading all related literature and papers anywhere on the net. Passed to all running agents (L1, L3, L5, L1 reconstruction, L1 prior-art). Launched an online resolution pass for the pending-reference load-bearing sources (Claude Sonnet 5.5 high, requested; owns those record files, their INDEX/CORPUS rows and a search-log section). Public-repo rule unchanged: no fulltexts or long extracts committed.
 
+### L3 R01–R03 returned (2026-10-31 ≈ 23:05 local)
+
+- L3 developer (Opus 5.5 xhigh, requested; 100 tool uses, ~73 min) completed R01–R03; committed `a5b993d`. Claims PD-T?…-300–309, PD-N?…-301, -302 (statuses in progress.md). Scope decision: literal L3-Q1 trivial; exact-representation reading answered (plan History). Protocol finding: STATUS.md timestamps for R02/R03 were in the future (estimates) — annotated, not edited.
+- Next: independent adversarial reconstruction incl. independent reruns of the exact certificates (needed before PD-T?…-306 and PD-N?…-301 can move from CONDITIONAL), a prior-art check, and L3 R04.
+
 ## Runs needed
 
 (none yet; directions add exact commands)
