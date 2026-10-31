@@ -8,3 +8,5 @@
 - Bounded float spectra through CC N1280 were separately replayed by Astra; all 637 compared numerical values agree. They remain MEASURED.
 - Checkpoints e9761aa and 57984e3 pushed. Required Claude handoff pending; M7 awaits the explicit candidate-acceptance gate.
 - Newly observed concurrent draft PR #2 reserves PD-T001–012, PD-N001, LIT-001–041, IDEA-001–051. It uses a standalone ledger; the requested batch ledger must reconcile these before MZ final allocation. The charter is not edited by this topic.
+
+Final development update: final allocation preserves those reservations, and MZ has PD-T013–028, PD-N002–006, LIT-042–060 and IDEA-052–076. M1/M2/M3 analytic claims and the exact marginal passed independent Astra reconstruction; all candidate gates and finite independent replays are documented. The14-page manuscript is complete with clean final compilation. Stage AUDIT; required Claude audit, historical fulltext/novelty gaps, batch-member ledger adoption/live integration and Windows delivery remain pending. No development scientific run is hidden as completed or required.

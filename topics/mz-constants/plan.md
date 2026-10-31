@@ -25,5 +25,7 @@ Rules/base: d36722823441dc40c6e19d69a174459348dd309c. Step 0: verified input imp
 | M1/1–4 | Exact PSD minor and plain row-dominance attempts killed; absolute-coefficient Z-matrix proof closes <2, telescoping mass floor quantifies gap | development complete; independent pinned audit |
 | M2/1–3 | Direct cardinal-cell Schur lower bound and parity-exact harmonic U witness provide proposed matching log² order | proof drafts under Astra review |
 | M3/0 | Activated only after M1 frozen target completed; M2 remains the other active direction. Freeze original fixed-ratio η(θ)<1 and separately prove corrected hyperinterpolation application | active, same Sol 6.1 xhigh worker; IDs 31–39 |
+| M3/1–3 | Degree-sensitive sign comparison; filtered Fejér weighted Schur; explicit assembly and known-context hyperinterpolation application | frozen target PROVED and independently reconstructed |
+| M7/1 | Gate checked after M1/M2/M3 prior-art dispositions and Astra mathematical acceptance; complete14-page proof manuscript with final IDs | compiled cleanly; manuscript impact review; Claude PENDING |
 
 Every local candidate retains closest predecessor, separation criterion, kill test, evidence and disposition in its direction folder. Final IDs and shared CURRENT charter paragraph wait until PR preparation; the specifically requested provisional IDEA seeding is performed after Step 0.

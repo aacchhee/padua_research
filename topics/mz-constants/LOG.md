@@ -2,7 +2,7 @@
 
 - Branch: `codex/mz-constants-20261031`; recorded base and rules SHA: `d36722823441dc40c6e19d69a174459348dd309c`.
 - Developer/orchestrator: Codex; runtime model/effort metadata not exposed to this orchestrator. AC requested Sol 6.1 xhigh. Delegated models are recorded exactly.
-- Stage: WORK. Next: `Claude (Opus 5.5 xhigh): Continue codex/mz-constants-20261031.`
+- Stage: AUDIT. Next: `Claude (Opus 5.5 xhigh): Continue codex/mz-constants-20261031.`
 - Scope: reproduce supplied CC/Padua evidence, literature baseline, bounded mathematical exploration, durable claims, audit handoff. Do not write the campaign charter or enter the other two topics' scientific scope.
 - Shared allocation ledger at PR preparation: `topics/padua-batch-20261031/ALLOCATIONS.md`; no IDs reserved yet.
 
@@ -19,8 +19,16 @@
 
 ## Runs needed
 
-- Reproduce every relied-on supplied measurement with committed commands and source hashes.
+- No scientific producer run remains required for the stated analytic results. Bounded relied-on measurements were reproduced and independently replayed; imported larger runs remain unverified input and are not used as proof.
 - Cold storage selected by AC: `C:\Users\andreyac\Downloads\padua\cold_storage\mz-constants\`. This Linux workspace cannot attest delivery to that Windows path; use staging/manifest and state transfer pending.
+
+## Final development and handoff
+
+- M1/M2/M3 analytic validity, exact Padua marginal and scoped negative mechanisms accepted by separate gpt-6-astra xhigh reconstruction after documented prior-art dispositions; no novelty clearance. All65 provisional labels mapped to disjoint final IDs, preserving PR2 reservations. No accepted ID renumbered.
+- Complete14-page manuscript compiled without final-pass warnings; source/bibliography, numerical transcription and full proofs reviewed independently. Required Claude audit remains PENDING. Source and artifact hashes are in directions/M7/manuscript-record.md.
+- Final shared-registry repair is rehearsed in a disposable worktree/local branch; concrete conflict resolution and semantic counts are in integration-impact.md and batch-rehearsal.json. This does not change the live charter or authorize main integration. Member adoption of the batch ledger and future live-branch update remain pending before readiness.
+- All candidate/failed-route records retained; M1 four rounds, M2 five rounds, M3 three rounds; no cap extension. At most two substantive mathematical directions active at once. M4 main target, M5 and M6 proof routes retained rather than falsely rejected. M7 gate met after separate review.
+- Final package is for Claude audit, not merge/submission approval. Only AC merges. Exact handoff: AUDIT_HANDOFF.md; final artifact pin: audit-targets.json. See report.md for ranked development briefs and pending-reference gaps.
 
 ## 2026-10-31 — development checkpoint
 

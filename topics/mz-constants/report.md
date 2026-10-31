@@ -31,7 +31,7 @@ Foundations and scoped mechanisms are independently registered: PD-T013 exact we
 
 **M6 — computation.** Bounded source reproduction plus independent replay completed. No large run or interval-spectrum proof is necessary for the analytic theorems. Tolerance-dependent HSS ranks are measurements. No computer-assisted universal theorem is claimed; all-N claims have written analytic reductions/proofs.
 
-**M7 — manuscript.** The gate was met only after M1/M2/M3 prior-art dispositions and separate Astra reconstruction. A complete draft is being prepared in tracks/mz-constants/paper/ using final IDs. It must retain historical gaps, the eta-rate limitation, and signed-Padua scope; compilation/independent manuscript review are recorded there. Submission readiness requires Claude audit and bibliography/overlap resolution.
+**M7 — manuscript.** The gate was met only after M1/M2/M3 prior-art dispositions and separate Astra reconstruction. The complete14-page draft in tracks/mz-constants/paper/ uses final IDs and compiles without final-pass warnings. It retains historical gaps, the eta-rate limitation, and signed-Padua scope; compilation and independent manuscript review are recorded there. Submission readiness requires Claude audit and bibliography/overlap resolution.
 
 ## Important corrections to the input narrative
 
