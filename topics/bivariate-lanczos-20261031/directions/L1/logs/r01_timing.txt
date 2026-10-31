@@ -1,3 +1,5 @@
 input3 wall 246s
 rotation wall 268s
 irregular wall 388s
+padua wall 700s
+swap wall 59s

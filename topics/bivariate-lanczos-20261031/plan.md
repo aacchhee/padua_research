@@ -65,6 +65,9 @@ Provisional IDs `<NS>?bivariate-lanczos-claude-<nnn>`: literature 001–199 (ful
 
 | Direction | Round | Date | Question | Outcome (status-labelled) | Record |
 |---|---|---|---|---|---|
+| L1+L4 | R01 | 2026-10-31 | L1-Q1, L4-Q1 (frozen) | Kill test K1 and K2 both fire (MEASURED); local relations PROVED; L4 obstruction PROVED | [R01](directions/L1/R01.md) |
+| L1 | R02 | 2026-10-31 | What governs loss off product supports | Block Paige identity, node-row representation, exact ω-recurrence PROVED; amplification by per-node propagator MEASURED | [R02](directions/L1/R02.md) |
+| L1 | R03 | 2026-10-31 | A priori vs feedback; truncation vs row selection | Row-selection characterization PROVED; exact-coefficient growth and two-relation remedy MEASURED | [R03](directions/L1/R03.md) |
 
 ## History
 

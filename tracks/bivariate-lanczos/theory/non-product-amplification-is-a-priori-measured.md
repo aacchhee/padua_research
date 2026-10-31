@@ -1,0 +1,63 @@
+# PD-T?bivariate-lanczos-claude-109 — The non-product amplification is a property of the exact recurrence and of its one-relation-per-column selection (measured)
+
+ID kind: PD-T.
+Aliases: P* = P; a priori propagator growth; two-relation control removes the instability; triangle orientation scan.
+Split from: none.
+Split into: none.
+
+## Statement
+
+[MEASURED] With M = 1681 (seed 11 sets), uniform weights, u = 2^-52:
+
+(a) **Exact coefficients give the same amplification.** The idealised node propagator built from exact window coefficients (long double, full reorthogonalisation) has the same response to iid forcing of size u/√M as the propagator of the double run's computed coefficients, to the printed digit, on the square, the square rotated by π/4, the disk (n ≤ 20) and the triangle (n ≤ 16) — e.g. rotated square P* = P = 9e-6 at n = 20 (measured loss 2e-6), disk P* = P = 2e-10 (loss 2e-10), square P* = P = 1e-14. The computed coefficients deviate from the exact ones by up to 2e-7 (rotated square), 1e-3 (triangle), without changing the response.
+(b) **Two relations remove it.** A block recurrence with the same truncation (degree block n from X Q_{n−1} and Y Q_{n−1}, one CGS pass against blocks n−2 and n−1, orthonormal completion by SVD) keeps the loss at 7e-15–6e-14 up to n = 24 on the square rotated by 0.3 and by π/4 and on the disk, where the BJ window recurrence reaches 5e-6, 4e-3 and 1e-8; on the triangle it reaches 3e-10 at n = 24 against 1 for BJ.
+(c) **Orientation dependence.** For the triangle, the BJ loss at n = 16 varies with the rotation angle θ of the node set between 1.9e-9 (θ = π/4, a symmetry axis aligned with a coordinate axis) and 6.8e-3 (θ = 0); no angle among 12 tested gives loss at the product level (≤ 1e-14).
+
+Consequence: the growth is an a priori property of (measure, ordering, coordinates) — computable from the exact recurrence coefficients — and is caused by the triangular one-relation-per-column selection of the Jacobi pencil (PD-T?…-108), not by the truncation of the window.
+
+## Definitions
+
+P*(n), P(n): max over columns of degree ≤ n of the node-vector norm of the propagator response (PD-T?…-107 (c)). Two-relation recurrence: `code/L1/l1_both_relations.py::both`.
+
+## Assumptions
+
+As stated; IEEE double, x87 long double.
+
+## Status by part
+
+Overall status: MEASURED.
+
+| Mathematical part | Status | Evidence / remaining gap |
+|---|---|---|
+| (a) P* = P | MEASURED | `logs/r03_exact_propagator.log` |
+| (b) two-relation control | MEASURED | `logs/r03_both_relations.log` |
+| (c) triangle orientation scan | MEASURED | `logs/r03_exact_propagator.log` (scan section) |
+| "a priori" consequence | inference from (a) within its scope | an a priori bound remains OPEN |
+
+## Depends on
+
+PD-T?…-104, -105, -107, -108.
+
+## Checks
+
+`python3 -I l1_exact_propagator.py`, `python3 -I l1_both_relations.py` (from `tracks/bivariate-lanczos/code/L1/`). Independent rerun: none yet.
+
+## Sources
+
+Two-relation block recurrences appear in the literature as reported (xu-siam-1994 recalls the block three-term relations; liu-narayan-2023 multivariate Stieltjes; fasondini-olver-xu-2023 block Lanczos on multiplication matrices) — none of these records reports a stability comparison; not used as evidence.
+
+## Proof or evidence
+
+Measured; see logs.
+
+## Scope
+
+M = 1681, n ≤ 24, five shapes. The two-relation recurrence is a control experiment, not a proposed algorithm with an analysis (its basis inside each degree block is an SVD basis, not the graded-lex one; cost per degree O(M n²), the same order as the window recurrence overall).
+
+## Open items
+
+(i) A priori bound or growth rate of ‖L*(z)⁻¹‖ for non-product measures (e.g. potential-theoretic); (ii) the triangle's residual growth under the two-relation recurrence (Ritz-type or amplification?); (iii) larger M (Runs needed); (iv) hand-off of the two-relation variant to L2/L5 as a candidate remedy.
+
+## History
+
+- 2026-10-31: created (Claude Opus 5.5, xhigh; L1 R03).

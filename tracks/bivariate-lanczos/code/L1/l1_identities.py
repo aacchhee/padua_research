@@ -188,3 +188,58 @@ if __name__ == '__main__':
     run('random1681_s0 rotated 0.3 (non-product support)', L.rotate(P, 0.3), w, 24, [12, 16, 20])
     P, w = L.nodes_tensor_cheb(41)
     run('tensorcheb41', P, w, 39, [24, 32, 39])
+
+
+def omega_sources(name, P, w, nmax, win='exact', orth='cgs', check_ld=True):
+    """Exact 2D omega-recurrence (PD-T?...-106): for every new column k (parent p, operator A) and every old l,
+    beta_k w_lk = sum_r (T_A)_{rl} w_rp + (E_A e_l)^T q_p - sum_{l' in W_k} h_l' w_ll' - q_l^T f_k,
+    T_A = T_F (F-products) or Hhat_J (J-products), E_A = E_F or C_res.  Reports, per degree of k, the largest
+    source term |(E_A e_l)^T q_p| over l outside the window, separately for F- and J-products, the largest
+    |w_lk| (loss), and the identity residual (long-double evaluation)."""
+    x, y = P[:, 0].copy(), P[:, 1].copy()
+    nq = nmax + 1
+    Q, coef, tab = L.recurrence(x, y, w, nq, win=win, orth=orth)
+    idx, pos, parent, op, start = tab
+    TF, TJ = coef_matrices(coef, tab, nq)
+    LD = np.longdouble
+    TJl = {k: v.astype(LD) for k, v in TJ.items()}
+    coefl = [None] + [(W, np.asarray(h, dtype=LD), LD(b)) for (W, h, b) in coef[1:]]
+    Ql, TFl, xl, yl = Q.astype(LD), TF.astype(LD), x.astype(LD), y.astype(LD)
+    HJl = hhat_J(TFl, TJl, coefl, tab, nq)
+    m = Nof(nq - 1)
+    EF = yl[:, None] * Ql[:, :m] - Ql @ TFl
+    CR = xl[:, None] * Ql[:, :m] - Ql @ HJl
+    Om = Ql.T @ Ql
+    print(f"== omega-recurrence sources: {name} M={len(x)} win={win} orth={orth}")
+    rows = {}
+    for k in range(1, Nof(nmax)):
+        t, j = idx[k]
+        if t < 3:
+            continue
+        W, h, beta = coefl[k]; p = parent[k]
+        lo = min(W) if W else k
+        old = np.arange(0, lo)
+        if op[k] == 'F':
+            TA, EA, a = TFl, EF, yl
+        else:
+            TA, EA, a = HJl, CR, xl
+        f = a * Ql[:, p] - Ql[:, W] @ h - beta * Ql[:, k]
+        src = EA[:, old].T @ Ql[:, p]
+        if check_ld:
+            lhs = beta * Om[old, k]
+            rhs = TA[:, old].T @ Om[:TA.shape[0], p] + src - Om[np.ix_(old, W)] @ h - Ql[:, old].T @ f
+            res = float(np.abs(lhs - rhs).max())
+        else:
+            res = float('nan')
+        r = rows.setdefault(t, dict(srcF=0.0, srcJ=0.0, lossF=0.0, lossJ=0.0, ampF=0.0, ampJ=0.0, res=0.0))
+        key = 'F' if op[k] == 'F' else 'J'
+        amp = TA[:, old].T @ Om[:TA.shape[0], p] - Om[np.ix_(old, W)] @ h      # recursion (propagation) term
+        r['src' + key] = max(r['src' + key], float(np.abs(src).max()))
+        r['loss' + key] = max(r['loss' + key], float(np.abs(Om[old, k]).max()))
+        r['amp' + key] = max(r['amp' + key], float(np.abs(amp).max() / beta))
+        r['res'] = max(r['res'], res)
+    for t in sorted(rows):
+        r = rows[t]
+        print(f"   deg {t:2d}: loss(l outside window) F-cols {r['lossF']:.1e} J-col {r['lossJ']:.1e} | propagation term/beta "
+              f"F {r['ampF']:.1e} J {r['ampJ']:.1e} | source F {r['srcF']:.1e} J(commutator) {r['srcJ']:.1e} | "
+              f"identity residual {r['res']:.1e}", flush=True)

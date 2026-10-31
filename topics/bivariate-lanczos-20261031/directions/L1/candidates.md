@@ -27,9 +27,11 @@ Aliases: single-section Paige; "L1 reduces to per-operator block Paige theory"; 
   - Frozen kill test K1 (plan.md L1-Q1, first clause) fires iff there is at least one run on which Z predicts and on every run on which Z predicts, H_x or H_y also predicts. If K1 fires, the joint formulation is not the governing object (this candidate survives); if K1 does not fire, this candidate is killed on the runs where Z predicts and no single section does.
   - Frozen kill test K2 (second clause) fires iff on the node sets outside the input's three (Padua with cubature weights, irregular domains, rotated sets), on every run with nonempty D, no O predicts.
 - Test discriminability: tensor-type sets have exactly X-invariant subspaces inside S_n (S_n contains all functions of x on a grid with ≤ n+1 distinct abscissae), so single sections converge with no 2D localization; random and irregular sets localize jointly at isolated nodes; the rotation pair changes single-section residuals while leaving joint ones invariant.
-- Actual test results and committed evidence: see R01.md §3 and `logs/r01_*.log`.
-- Disposition and precise rejected scope, if any: see R01.md.
-- Topic / audit / history: created R01, 2026-10-31.
+- Actual test results and committed evidence (R01, `logs/r01_verdict.txt`): single sections PREDICT on the four bj runs where Z predicts (random squares; K1 fires as operationalised); they over-predict by ~10¹³ on tensor 41² at n = 40 (exact one-coordinate invariant subspaces, no loss); on all 23 informative non-product runs no object predicts (K2 fires).
+- Disposition and precise rejected scope: REJECTED: failed — as the governing object of loss, within the R01 node sets (tensor over-prediction; non-product supports). Scoped negative statement: PD-N?bivariate-lanczos-claude-101 (MEASURED).
+- Disposition reason: failed (MEASURED; scope R01 sets, M ≤ 6724, n ≤ 48).
+- Canonical theory / negative-result ID: PD-N?bivariate-lanczos-claude-101.
+- Topic / audit / history: created R01, 2026-10-31; disposition R01.
 
 ## IDEA?bivariate-lanczos-claude-102 — joint (Z / (N, N*)) governance, retested against single sections
 
@@ -43,8 +45,10 @@ Aliases: joint-Ritz prediction; HL SIMAX p. 1088 observation, quantified; loss �
 - Applicable obstructions: OBST-02 (non-normal sections), OBST-04 (Padua M = N: no long run).
 - Novelty gate verdict: duplicate in mechanism of -002/-006; kept as the measured comparison record.
 - Cheapest decisive test / kill criterion (pre-registered): identical rule as -101 with O = Z; killed (as a predictor) on any run where D_{r,Z} ≠ ∅ and Z does not predict.
-- Actual test results: R01.md §3.
-- Topic / history: created R01, 2026-10-31.
+- Actual test results: R01 — Z predicts on random squares (bj), indistinguishable from single sections there; fails on every informative non-product run; N_k (simax run) fails everywhere because the windowed (N, N*) recurrence is itself unstable (PD-N?…-102).
+- Disposition: REJECTED: failed as a general mechanism (MEASURED, non-product supports); consistent but not separated from single sections on product-aligned supports (PD-T?…-107 (a)).
+- Canonical theory / negative-result ID: PD-N?bivariate-lanczos-claude-101 (shared), PD-N?…-102 (N_k / complex form).
+- Topic / history: created R01, 2026-10-31; disposition R01.
 
 ## IDEA?bivariate-lanczos-claude-103 — exact coefficient pattern of the code's ordering (re-derivation)
 
@@ -56,6 +60,7 @@ Aliases: window lemma; exact-support window; HL BIT Thm 2.3 / BJ Thm 1 for the i
 - Cheapest decisive test: count check against the code's coefficients (structural zeros below 10⁻¹³ in a long-double run).
 - Kill criterion: a nonzero coefficient outside the derived support in a reference run.
 - Canonical theory ID: PD-T?bivariate-lanczos-claude-101 (`theory/window-coefficient-pattern-exact.md`).
+- Actual test result: long-double check, max coefficient outside the derived support 1.25e-19 (R01 §2). Disposition: duplicate (re-derivation kept as a checked dependency; PROVED).
 
 ## IDEA?bivariate-lanczos-claude-104 — [FP] local relations and the growing-block Paige identity for the full operator
 
@@ -67,6 +72,7 @@ Aliases: F-relations; "band Lanczos for F with injected J-vectors"; growing-bloc
 - Novelty gate verdict: variant with difference (of the block Paige identity); within documented search.
 - Kill criterion: an algebraic error (identity residual not at rounding level in a numerical check).
 - Canonical theory IDs: PD-T?bivariate-lanczos-claude-102 (`theory/fp-local-relations-window-recurrence.md`), PD-T?…-103 (`theory/full-operator-paige-identity-growing-blocks.md`).
+- Actual test results (R02): identity residuals at rounding level; the identity controls 0–47% (typically ≤ 10% for F-Ritz vectors) of the new block's component along y. Disposition: survives as a PROVED identity (variant with difference); not a loss bound (R02 F5).
 
 ## IDEA?bivariate-lanczos-claude-105 — the HL SIMAX section equals Z
 
@@ -89,3 +95,76 @@ Aliases: L4 obstruction; band-Krylov non-placement; codimension obstruction.
 - Cheapest decisive test: the proof; numerical sanity check of the codimension count.
 - Kill criterion (frozen, plan.md): an explicit A = f(X, Y) and fixed start block reproducing the graded spaces for all n.
 - Canonical theory ID: PD-T?bivariate-lanczos-claude-401 (`theory/l4-band-krylov-obstruction.md`).
+- Actual test result: proof complete (R01); numerical sanity check of the codimension count `logs/r01_l4_codim_check.log`. Disposition: PROVED; frozen L4 kill test not triggered.
+
+## IDEA?bivariate-lanczos-claude-106 — instability of the window recurrence on non-product supports
+
+Aliases: non-product instability; rotation sensitivity of the window recurrence; marching instability; "defect instability" (R01 working name).
+
+- Question / scope: why loss grows exponentially from low degree on supports that are not products in the recurrence's coordinates (R01 M3), for BJ and HL alike.
+- Mechanism and hypotheses: amplification of local rounding by the computed recurrence's per-node propagator (PD-T?…-104), whose factorisation into univariate Jacobi propagators holds exactly for product measures (PD-T?…-105) and fails otherwise (within-degree coupling A′_t not diagonal).
+- Closest registry entries (read in full): IDEA?…-008 (commutator-defect ω-recurrence remark), OBST?…-03 (H_y only partly computed), IDEA?…-006, OBST?…-04; literature: HL BIT p. 401 and HL SIMAX p. 1088 (observations of loss at "very high degree"); Zaccaron 2014 Table 2.1 as reported (exponential profile, node set unidentified).
+- Separation criterion vs closest entry: -008 posits that the commutator defect must enter a 2D ω-recurrence; here the defect enters (PD-T?…-106) but is not what grows — the growth is amplification by the propagation term, present for errors from F-products alone. Falsified by a non-product support on which errors injected only in F-products are not amplified (mixed-precision test) or by an exact product measure with growing propagator.
+- Literature baseline and search limitations: no rounding analysis in the seven fulltexts (Step 0); block-Lanczos sources are single-operator (abstract-level); no source in the corpus mentions dependence on the orientation/shape of the support.
+- Applicable obstructions and exact hypotheses broken: OBST-04 (Padua M = N) does not apply (M ≫ N sets used).
+- Novelty gate verdict: new within documented search (no claim of novelty in the literature; adversarial reconstruction pending).
+- Cheapest decisive test: rotation pairs (R01) and mixed-precision localisation (R02).
+- Kill criterion (stated post hoc in R02, **not** pre-registered: the mixed-precision run was designed and run before this record was written): if F-only-double and J-only-double runs differ in growth rate by more than a factor 10 per 4 degrees, the instability is attributed to the product type with the larger rate (not intrinsic amplification).
+- Test discriminability: the two partial-precision runs isolate the origin of the amplified errors.
+- Actual test results: both partial runs reproduce the all-double growth on the rotated square (R02 §3); kill criterion not met → intrinsic amplification.
+- Disposition: active (theory PD-T?…-105 for the product case; lower bound for a non-product case OPEN, R03).
+- Canonical theory ID: PD-T?…-105, PD-T?…-107; negative statement PD-N?…-101.
+- Topic / history: opened R01 (as "defect instability"), reframed R02.
+
+## IDEA?bivariate-lanczos-claude-107 — per-node propagator response as a loss predictor (shadow recurrence)
+
+Aliases: node-propagator predictor P(n); shadow recurrence; node-space ω-estimate.
+
+- Question / scope: a computable quantity that predicts loss in both regimes.
+- Mechanism: drive the run's own computed recurrence at all nodes with rounding-size iid forcing (PD-T?…-104 part 1); cost of one extra recurrence pass without inner products (O(M·window) per column).
+- Closest registry entries: IDEA?…-003, -008 (ω-recurrence / partial reorthogonalisation, plan L2), simon-1984-mathcomp (ω-recurrence in coefficient space, abstract-level).
+- Separation criterion: Simon's ω-recurrence runs in coefficient space (O(N²) state for the window recurrence); this runs in node space with the computed coefficients; falsified if P(n) misses the loss by more than 10× on a product-aligned or non-product set with M ≥ 1681 where the loss exceeds 10³u.
+- Kill criterion (stated post hoc in R02, **not** pre-registered: the predictor was run before this record was written): as in the separation criterion.
+- Actual test results: within 1–5× on 7 of 8 sets; misses by 50× (n = 12) and 10³ (n = 16) on the triangle → kill criterion met on the triangle; survives as a diagnostic on the other sets.
+- Disposition: deferred to L2 (diagnostic for a reorthogonalisation criterion), with the triangle failure recorded (scope: diagnostic, not a bound).
+- Canonical theory ID: PD-T?…-107 (c).
+- Topic / history: R02.
+
+## IDEA?bivariate-lanczos-claude-108 — exact ω-recurrence with commutator sources
+
+Aliases: 2D ω-recurrence (exact); loss-source identity.
+
+- Closest: IDEA?…-008 (remark, no derivation), -003; simon-1984-mathcomp, bai-day-ye-1999 (first-order models, as reported).
+- Separation criterion: exact identity rather than first-order model; the bivariate term enters only through the J-products. Falsified by an algebraic error (identity residual above rounding in long double).
+- Actual test result: residual ≤ 1e-19 (R02). Disposition: PROVED (PD-T?…-106); hand-off to L2 (plan L2-Q1).
+
+## IDEA?bivariate-lanczos-claude-109 — product-measure factorisation of the node propagator
+
+Aliases: product decoupling; tensor stability mechanism.
+
+- Closest: IDEA?…-038 (sparse Padua / product recurrences, settled background), OBST?…-04.
+- Separation criterion: a propagator (error-amplification) statement, not a statement about sparsity of the exact sections; falsified by a product measure with propagator growth not explained by its marginals.
+- Actual test result: tensor 41² and Padua cubature flat (R02). Disposition: PROVED under the idealisation (PD-T?…-105); FP transfer CONDITIONAL.
+
+## IDEA?bivariate-lanczos-claude-110 — the non-product amplification is a property of the exact recurrence (a priori computable)
+
+Aliases: exact-coefficient propagator growth; intrinsic marching instability; P* test.
+
+- Question / scope: does the idealised per-node propagator with **exact** window coefficients (PD-T?…-105 setting, without the product assumption) already grow exponentially on non-product supports, or is the growth a feedback through the computed (rounding-corrupted) coefficients?
+- Closest: IDEA?…-106 (mechanism), -109 (product factorisation), PD-T?…-107 (c).
+- Separation criterion: an a priori statement (a property of the measure and the ordering) vs an a posteriori one (a property of the run). Falsified as stated in the kill criterion.
+- Kill criterion written before testing (R03, before `l1_exact_propagator.py` was run): with M = 1681 (seed 11 sets) and n ≤ 20, if P*(n) (exact coefficients, long double) grows by less than 10× from n = 4 to n = 20 on the square rotated by π/4 and on the disk while P(n) (computed coefficients) grows by ≥ 10³ there, the amplification is a feedback of coefficient corruption, not intrinsic (candidate killed). Conversely, if P* and P agree within 3× per degree-4 step on those sets and P* stays within 10× growth on the square, the amplification is intrinsic (candidate survives).
+- Test discriminability: P* uses only exact coefficients (full long-double reorthogonalisation); P uses the run's coefficients; the forcing is identical in size.
+- Actual test results (R03, `logs/r03_exact_propagator.log`): P* = P to the printed digit on square, square rotated by π/4, disk, triangle; P* grows by ≈ 4·10⁹ from n = 4 to 20 on the rotated square. Kill criterion not met.
+- Disposition: survives (MEASURED, scope M = 1681, n ≤ 20); canonical record PD-T?bivariate-lanczos-claude-109 (a); an a priori bound is OPEN (R04).
+
+## IDEA?bivariate-lanczos-claude-111 — the non-product amplification comes from the single-relation row selection, not from truncation
+
+Aliases: triangular row selection of the Jacobi pencil; two-relation block recurrence control; Xu-type left inverse.
+
+- Question / scope: the window recurrence at a point z is forward substitution for a triangular selection of one row per column out of the stacked pencil [xI − H_X; yI − H_Y] (R03 §2). Is the amplification due to that selection?
+- Closest: IDEA?…-110, -106; xu-siam-1994 (block three-term relations with both coordinates, as recalled there; Favard theory in Xu's Trans. AMS paper, pending-reference); liu-narayan-2023 (multivariate Stieltjes with both relations, as reported); fasondini-olver-xu-2023 (block Lanczos on multiplication matrices, as reported).
+- Separation criterion: keeps the same exact truncation (block tridiagonal, window = two previous blocks) but uses both relations per block with an orthonormal (SVD) completion; differs from the window recurrence only in the row selection.
+- Kill criterion written before testing (R03, before `l1_both_relations.py` was run): on the square rotated by 0.3 and by π/4 and on the disk (M = 1681, seed 11), if the two-relation block recurrence (one CGS pass against blocks n−2, n−1, then SVD) has loss at n = 20 within 10× of the BJ window recurrence's, the row selection is not the cause (killed); if its loss at n = 20 stays below 10³u ≈ 2.2e-13 on all three, the selection is the cause (survives).
+- Actual test results (R03, `logs/r03_both_relations.log`): two-relation loss at n = 20: 2e-14 (rotated 0.3), 1e-14 (π/4), 9e-15 (disk); BJ: 1e-8, 2e-6, 2e-10. Kill criterion not met.
+- Disposition: survives (MEASURED); canonical records PD-T?…-108 (row-selection lemma, PROVED) and PD-T?…-109 (b); hand-off to L2/L5 as a remedy candidate (no analysis yet).
