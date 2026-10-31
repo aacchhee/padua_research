@@ -2,7 +2,7 @@
 
 - Branch: `codex/mz-constants-20261031`; recorded base and rules SHA: `d36722823441dc40c6e19d69a174459348dd309c`.
 - Developer/orchestrator: Codex; runtime model/effort metadata not exposed to this orchestrator. AC requested Sol 6.1 xhigh. Delegated models are recorded exactly.
-- Stage: PR (Claude audit-02 focused re-audit ACCEPTED; ready for AC decision). Next: `AC decides whether to squash-merge PR #3 next; only AC merges.`
+- Stage: PR (completed; AC merged PR #3 at 07c5f5465d6de306aa81dbe8ca1f615295163864). Next: consult [the post-merge frontier](POST_MERGE.md) before opening any new scientific direction; the audit/merge-decision task is complete.
 - Scope: reproduce supplied CC/Padua evidence, literature baseline, bounded mathematical exploration, durable claims, audit handoff. Do not write the campaign charter or enter the other two topics' scientific scope.
 - Authoritative shared ledger: `topics/padua-batch-20261031/ALLOCATIONS.md`; charter PD-T001–012 / PD-N001 / LIT-001–041 / IDEA-001–051 first; MZ PD-T013–028 / PD-N002–006 / LIT-042–065 / IDEA-052–076 second. The five audit-response LIT additions are explicit; no accepted ID is renumbered.
 
@@ -87,3 +87,7 @@ All audit findings are answered in response-01.md. Revised manuscript: 15 A4 pag
 - Current main remains 08fafe62d9798385dfafaacc9a41344272737e68. A fresh actual squash rehearsal of the audit-delivery head on that main had zero conflicts, the same tree as merge-tree and candidate, 34 unique result rows, 65 literature rows and 105 preserved charter files. Live programme-ideas and bivariate-Lanczos retain ledger blob 43c581fb242fd28ebe4d89ee4a42e3bbd660a159. Exact evidence: readiness-02-checks.json.
 - Current frontier and acceptance columns now record completed audit/PR readiness and the post-merge OPEN/pending-reference frontier. No epistemic status, dependency, disposition, allocation, theory, manuscript, bibliography, producer or numerical evidence changes. Exact metadata-only transforms and before/after hashes: readiness-02-impact.json. Historical response targets remain checked against their audited Git objects.
 - PR #3's AUDIT section records audit-02, the confirmed main rehearsal and the decision request. AC is asked to review and squash-merge this MZ PR next if satisfied. No main push, PR merge, force-push, tag, rule or setting change is performed.
+
+## Verified post-merge closure
+
+GitHub reports PR #3 closed and merged on 31 October 2026 at 23:20:47 Europe/Oslo. Refreshed origin/main is 07c5f5465d6de306aa81dbe8ca1f615295163864, and its complete tree equals ready head 8ee04f4e5db46dd25fe5752ce605dde27098aae6. Git records a two-parent merge commit, with the charter-bearing main and ready MZ head as parents; this receipt records the observed integration without rewriting history. All accepted result/source identities, statuses and reservations remain unchanged. Verification and the administrative frontier update are in topics/mz-postmerge-frontier-20261031/. No new proof or literature investigation is launched by this closure.
