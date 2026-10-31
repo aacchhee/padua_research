@@ -17,6 +17,13 @@
 - Recovery: local `padua-init/` contains the scaffold; pushed topic head and PR are the durable handoff once published.
 - Limitations: no external Claude runtime is connected; an Astra technical review does not substitute for the other-agent audit required by the protocol. PR stays draft pending that audit.
 
+## Completed technical round
+
+- Task IDs: `/root/draft_protocol` (Sol 6.1 medium), `/root/review_scaffold` (Astra medium).
+- Pushed checkpoint: `c74c70c09f13e9ade48e30ca7a1a3a36d17e3df8`.
+- Technical review: [technical-review.md](technical-review.md), six findings resolved and accepted after rereading the affected files. Structural link check passed; registries contain no scientific entries.
+- Remaining: Claude's other-agent audit. The draft PR preserves the reviewable scaffold and does not request merge before that audit.
+
 ## Runs needed
 
 No scientific runs: the campaign charter has not been specified. Independent audit of the protocol and database is still required before readiness for merge.
