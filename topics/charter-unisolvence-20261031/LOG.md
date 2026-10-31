@@ -4,8 +4,8 @@
 - Base and rules SHA: `d36722823441dc40c6e19d69a174459348dd309c` (AGENTS.md, agents/WORKFLOW.md, agents/codex/CODEX.md read again at branch head).
 - Developer/orchestrator: Codex; runtime model/effort not exposed by the root runtime. Delegated mathematical work uses gpt-6.1-sol xhigh; mechanical/literature work gpt-6.1-sol medium.
 - Auditor: Claude, PENDING; independent Astra reconstruction supplements handoff.
-- Stage: AUDIT
-- Next: `Claude (Opus 5.5 xhigh): Continue codex/charter-unisolvence-20261031.`
+- Stage: PR
+- Next: `Codex (gpt-6.1-sol medium): Continue codex/charter-unisolvence-20261031 — check PR #2 readiness before AC’s merge.`
 
 ## 2026-10-31 — Start and authority
 
@@ -70,3 +70,27 @@ All delivered canonical theorem statuses remain10PROVED (ninePD-T plusonePD-N),2
 Auditor Claude Opus 5.5 (`claude-opus-5-5`; xhigh requested by AC, runtime effort not exposed), independent of the developer. Audited `eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64`; 82/82 audit-target hashes verified. Report: [audit-01.md](audit-01.md); auditor checkers/outputs: [claude-audit/](claude-audit/MANIFEST.md). Mathematics ACCEPTED for all 13 records and dispositions. Three Minor protocol findings: A1 batch-ledger link and integration order, A2 stale hand-off prose, A3 cold-storage delivery receipt. Per workflow, findings set Stage WORK; non-material responses may proceed to PR without re-audit.
 
 Stage WORK. Next: `Codex (gpt-6.1-sol medium): Continue codex/charter-unisolvence-20261031 — answer audit-01 in response-01.md, then prepare the PR.`
+
+## Response-01 — Codex administrative follow-up
+
+Rules and role files re-read at resumed branch head `3bd9d4e8e7817eaf0abd5b7a750ea77eb8101342`; unchanged from the audited rules/base. Requested model/effort: gpt-6.1-sol medium; root runtime metadata remains unexposed. Role: developer/orchestrator answering Claude audit-01, without editing the auditor’s report. Fetched main and topic head; local branch fast-forwarded to the delivered audit, no published history rewrite. Main remains d36722823441dc40c6e19d69a174459348dd309c.
+
+No novelty gate is needed for this response: it generates no candidate/mechanism or novelty claim, changes no scientific statement/proof/checker/output/epistemic status, and allocates no IDs. Audit-01 expressly permits A1/A2 editorial/registry-link fixes and A3 archival disposition to proceed without fresh audit if mathematics stays unchanged.
+
+A1: adopted the [shared batch ledger](../padua-batch-20261031/ALLOCATIONS.md), reconciling programme-ideas a02bc357e5f0eed479f7020b85fecc57fda9b47f with MZ fdf0648cbaa9fb722c611d709e638de7dfe86368. The latter now reserves disjoint PD-T013–028,PD-N002–006,LIT-042–060,IDEA-052–076; charter ranges remain unchanged. Crosswalk/member ledger now link the common ledger. Charter integrates first, MZ second, remaining topics in AC’s chosen order. Remaining sequential squash rehearsal is explicitly deferred to later members, beginning with MZ; no full-batch pass claimed. Pinned heads/source blobs/openPR observations: response-01-base.json.
+
+A2: corrected completed-handoff references to canonical PD-T012 and AUDIT_LOG, plus current audit-01 acceptance metadata. Exact added replacements are in integration-impact.json; response-01-impact.json records all13 unchanged protected mathematical sections and epistemic statuses. Historical audit-targets.json and all auditor/independent/checker/output files are preserved.
+
+A3: AC replied “I have no windows python. proceed as is, no need to check”. Recorded an explicit waiver of Windows verification/receipt as a readiness condition, not a delivery receipt. Cloud ZIP size/SHA match; original cloud manifest/receipt unchanged. Windows delivery/verification remain unconfirmed and nonblocking per AC. See cold-storage-disposition-01.md.
+
+Response-01 disposes all findings within the auditor’s allowed non-material scope. Stage PR; only AC merges.
+
+Next: `Codex (gpt-6.1-sol medium): Continue codex/charter-unisolvence-20261031 — check PR #2 readiness before AC’s merge.`
+
+### Response-01 final verification and readiness
+
+Read-only response checks passed: all13 protected mathematical sections/epistemic labels unchanged; all13 cumulative documented transforms reproduced from actual original Git blobs; all82 historical audit-target hashes verified against eb7bdcd;50 selected code/auditor/independent/evidence files unchanged; canonical links and git diff --check pass. Rechecked the unchanged cloud ZIP (210015bytes,fdcc1ce2…2eb3) and portable verifier PASS104files+17payloads. These are administrative integrity checks, not new mathematical evidence.
+
+Supplementary protocol reviewer gpt-6-astra medium independently checked the response, two ledger source blobs, compatible reservations/order, immutable records and AC waiver; no unresolved finding within that scope. Report: response-01-review.md. Claude audit-01’s allowed non-material disposition applies; no fresh mathematical audit is required.
+
+Final fetch kept main at d367228 and charter remote at3bd9d4e. MZ advanced to6d10a82cf6fd6f7ef6fbe76e68133ccbcbe51994; its batch ledger is byte-identical to the pinned fdf0648 version, so reservations/order did not change. Historical source pins remain valid. PR #2 will show audit-01 acceptance, response dispositions, shared ledger/order and AC’s explicit waiver, then be marked ready for review. Only AC merges.

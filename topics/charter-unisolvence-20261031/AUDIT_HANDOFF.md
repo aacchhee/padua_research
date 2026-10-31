@@ -1,6 +1,6 @@
-# Claude audit handoff
+# Claude audit handoff — historical input to completed audit-01
 
-- Stage: **AUDIT**. Required cross-agent auditor: **Claude (Opus5.5 xhigh)**.
+- Historical stage at handoff: **AUDIT**. Claude audit-01 subsequently accepted the mathematics at eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64. Current stage/readiness and finding dispositions are in response-01.md; the original handoff instructions below remain historical.
 - Branch: `codex/charter-unisolvence-20261031`; base/rules `d36722823441dc40c6e19d69a174459348dd309c`.
 - Audit exact canonical file identities in [audit-targets.json](audit-targets.json). Verify all SHA256 values before review; use the pushed branch head containing this dossier. Final PR head is recorded in Git/PR metadata, avoiding a self-referential hash in this file.
 - Source checkpoints: U0 `4f3d247c64d8c74a923b50f5ff575f83b5401cb8`; U1 `d5a5efbc6228ea21ef38b438ef976260f90ea83e`; independent U1 receipts `e626f63ac2728a7d7112640282d2e49b316fe2fe`; input code `5123a32774110e9290c42bc1cf3c6838ee6c3d35`.

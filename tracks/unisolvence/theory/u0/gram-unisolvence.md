@@ -18,7 +18,7 @@ Unisolvent means evaluation `P_n(E)->E^S` is an isomorphism. We assume actual ro
 
 ## Status by part
 
-Overall status: **PROVED** (developer-written independent derivation; supplementary Astra check complete; required Claude audit PENDING).
+Overall status: **PROVED** (developer-written independent derivation; supplementary Astra check complete; Claude audit-01 accepted the mathematics).
 
 | Mathematical part | Status | Evidence |
 |---|---|---|
@@ -58,8 +58,10 @@ Unchanged source `padua_ff.py` was executed through `run_all.py`; the recorded 7
 
 ## Scope and open items
 
-The result is about the canonical root-of-unity checkerboard. It does not establish arbitrary labelled checkerboard unisolvence or the Harris–Simanek alternation criterion. Over `F_q`, coordinates must additionally satisfy the rationality criterion. Supplementary Astra mathematical check is complete; required Claude audit remains pending.
+The result is about the canonical root-of-unity checkerboard. It does not establish arbitrary labelled checkerboard unisolvence or the Harris–Simanek alternation criterion. Over `F_q`, coordinates must additionally satisfy the rationality criterion. Supplementary Astra mathematical check is complete; Claude audit-01 accepted the mathematics.
 
 ## History
 
 2026-10-31, Codex U0 developer, rules/base `d36722823441dc40c6e19d69a174459348dd309c`; assigned `gpt-6.1-sol xhigh`. Independently reconstructed the character-sum proof after source reproduction. Replaced ambiguous source `Pad_n(F_q)` quantification with its explicit coordinate field.
+
+2026-10-31, Codex response-01 A2: updated completed handoff references and Claude audit-01 acceptance metadata only; mathematical statements, proofs and epistemic statuses unchanged.

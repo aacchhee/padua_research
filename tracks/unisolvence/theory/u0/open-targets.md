@@ -38,8 +38,10 @@ The source finite checks were actually reproduced, but do not close these univer
 
 For target 1, first prove the displayed relations vanish identically on the root-of-unity parameterization, then establish ideal equality by a normal-form/dimension argument and verify every boundary reduction. For target 2, write the exact convolution/root-of-unity assumptions before comparing asymptotics. These are concrete handoffs, outside further U0 development in this bounded registration.
 
-The independent adversary's `q=7` all-code optimality bound is handed separately to the orchestrator; it is not included in these OPEN targets or silently inherited as proved. General decoding and weight distributions are deferred candidates, not registered conjectures.
+The independent `q=7` universal linear-code bounds are integrated separately as [PD-T012](code-optimality-bounds.md), with acceptance recorded in [AUDIT_LOG](../../AUDIT_LOG.md). They are not included in these OPEN targets or inherited as proofs of either extension. General decoding and weight distributions are deferred candidates, not registered conjectures.
 
 ## History
 
 2026-10-31, Codex U0, assigned `gpt-6.1-sol xhigh`; rules/base `d36722823441dc40c6e19d69a174459348dd309c`. Preserved exact unverified source extensions without letting them weaken the separate proved core or pretending that finite measurements settle them.
+
+2026-10-31, Codex response-01 A2: updated completed handoff references and Claude audit-01 acceptance metadata only; mathematical statements, proofs and epistemic statuses unchanged.

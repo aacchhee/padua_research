@@ -1,6 +1,6 @@
 # PD-T012 — Upper bounds for two linear-code parameters over F_7
 
-Rules/base d36722823441dc40c6e19d69a174459348dd309c. Independent U0 checker; 2026-10-31. This is a complete hand proof of two universal upper bounds for **linear** codes over F_7. It does not upgrade the finite computation of the Padua code distances. No new mechanism or novelty is claimed; projective arcs, duality and shortening are standard coding-theory arguments. This verification note supplies an explicit alternative to relying on an uninspected Ball theorem. The provisional result ID is assigned here at the orchestrator’s explicit request; final allocation and integration belong to the orchestrator.
+Rules/base d36722823441dc40c6e19d69a174459348dd309c. Independent U0 checker; 2026-10-31. This is a complete hand proof of two universal upper bounds for **linear** codes over F_7. It does not upgrade the finite computation of the Padua code distances. No new mechanism or novelty is claimed; projective arcs, duality and shortening are standard coding-theory arguments. This verification note supplies an explicit alternative to relying on an uninspected Ball theorem. Final ID PD-T012 and this canonical theory record are integrated; the original independent note is retained as provenance. [AUDIT_LOG](../../AUDIT_LOG.md) records Claude audit-01's acceptance of the mathematical scope.
 
 
 ID kind: PD-T. Aliases: q7 Padua code optimality bounds; elementary projective arc exclusion.
@@ -17,7 +17,7 @@ A linear [N,K] code is a K-dimensional subspace of F_q^N. Its minimum distance i
 
 ## Status by part
 
-Overall status: **PROVED**, by the complete elementary proofs below. This proof is independent of any execution or literature theorem. The root orchestrator separately read and checked its logic; final Claude cross-agent audit remains pending. Candidate disposition: retained verification of source upper bounds, with no novelty claim.
+Overall status: **PROVED**, by the complete elementary proofs below. This proof is independent of any execution or literature theorem. The root orchestrator separately read and checked its logic; Claude audit-01 accepted the mathematics. Candidate disposition: retained verification of source upper bounds, with no novelty claim.
 
 | Mathematical part | Status | Evidence |
 |---|---|---|
@@ -55,8 +55,10 @@ A measured [10,6,4]_7 Padua code therefore attains the universal linear-code bou
 
 ## Scope and open items
 
-These are exact universal upper bounds for the stated linear-code parameters. Nonlinear codes and other field sizes/dimensions are outside scope. Attained Padua distances remain MEASURED; their optional packaging as computer-assisted proofs is not required for these upper-bound proofs. The combined source optimality assertion must cite both this bound and its separately scoped attainment evidence. Final IDs are allocated in ID_CROSSWALK.md; required Claude cross-agent audit remains pending.
+These are exact universal upper bounds for the stated linear-code parameters. Nonlinear codes and other field sizes/dimensions are outside scope. Attained Padua distances remain MEASURED; their optional packaging as computer-assisted proofs is not required for these upper-bound proofs. The combined source optimality assertion must cite both this bound and its separately scoped attainment evidence. Final IDs are allocated in ID_CROSSWALK.md; Claude audit-01 accepted the mathematics.
 
 ## History
 
 2026-10-31: independent Codex U0 checker, requested gpt-6-astra high; actual runtime model/effort metadata not otherwise exposed. Rules/base d36722823441dc40c6e19d69a174459348dd309c. Wrote both elementary arguments independently; root subsequently read the full proof and confirmed its logic. Added the provisional PD-T ID and template fields on root’s explicit request. Original source optimality assertions were split into universal upper bounds here and measured Padua attainment in the producer record; no attainment status was silently upgraded.
+
+2026-10-31, Codex response-01 A2: updated completed handoff references and Claude audit-01 acceptance metadata only; mathematical statements, proofs and epistemic statuses unchanged.

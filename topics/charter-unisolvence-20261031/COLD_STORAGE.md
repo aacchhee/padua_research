@@ -1,6 +1,6 @@
 # Cold-storage manifest — charter-unisolvence-20261031
 
-Actual staging root: `/workspace/padua-cold/charter-unisolvence-20261031/`. AC's chosen archival destination: `C:\Users\andreyac\Downloads\padua\cold_storage\charter-unisolvence-20261031\`. Windows delivery is **pending**; the cloud workspace cannot assert a Windows receipt. Only actually staged files are listed. Caches are omitted because they are not evidence.
+Actual staging root: `/workspace/padua-cold/charter-unisolvence-20261031/`. AC's chosen archival destination: `C:\Users\andreyac\Downloads\padua\cold_storage\charter-unisolvence-20261031\`. Windows delivery and verification remain **unconfirmed**; no Windows receipt is claimed. In response to audit-01 A3, AC explicitly waived the Windows verification/receipt requirement for readiness after reporting no Windows Python; see [cold-storage-disposition-01.md](cold-storage-disposition-01.md). Only actually staged files are listed. Caches are omitted because they are not evidence.
 
 Portable handoff ZIP: `/workspace/padua-cold/charter-unisolvence-20261031-handoff.zip`. Bytes: 210015; SHA256 `fdcc1ce22b0addabee97d01dfcb2bdb18be5b340091fda0c52b1608014d32eb3`. It includes the original user archive, exact scientific outputs/receipts, helper code and a portable integrity manifest/checker. It is outside Git; the original notes remain outside the public repository.
 

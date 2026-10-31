@@ -1,6 +1,6 @@
 # Campaign report and ranked development briefs
 
-Rules/base `d36722823441dc40c6e19d69a174459348dd309c`; branch `codex/charter-unisolvence-20261031`. Scientific work is ready for Claude audit, not merge. Exact statuses below refer to written claims; acceptance by the required cross-agent auditor remains PENDING.
+Rules/base `d36722823441dc40c6e19d69a174459348dd309c`; branch `codex/charter-unisolvence-20261031`. Claude audit-01 accepted the mathematical scope and all 13 epistemic statuses/dispositions at eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64. Response-01 resolves the administrative findings; Stage PR, with only AC authorized to merge.
 
 ## Main outcome and exact U1 scope
 
@@ -39,6 +39,6 @@ No third-party PDFs or fulltext extracts are committed. The41 literature stateme
 
 Cold outputs are staged with hashes and manifests, and a handoff bundle is provided for AC's chosen Windows directory. Cloud-local staging is not a receipt of Windows delivery. See COLD_STORAGE.md.
 
-Claude audit must review the exact handoff commit and dispositions before readiness. Independent Astra checks supplement it. Only AC may merge.
+Claude audit-01 reviewed the exact handoff commit and accepted its mathematics/statuses. Response-01 records the non-material follow-up, reconciled batch order and AC’s Windows-verification waiver. Only AC may merge.
 
-Stage AUDIT. Next: `Claude (Opus 5.5 xhigh): Continue codex/charter-unisolvence-20261031.`
+Stage PR. Next: `Codex (gpt-6.1-sol medium): Continue codex/charter-unisolvence-20261031 — check PR #2 readiness before AC’s merge.`

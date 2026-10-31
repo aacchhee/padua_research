@@ -27,7 +27,7 @@ All nodes means every node of the canonical set, rather than a subset of rationa
 
 ## Status by part
 
-Overall status: **PROVED** (developer proof; supplementary Astra check complete; required Claude audit PENDING). No rejected candidate or novelty claim.
+Overall status: **PROVED** (developer proof; supplementary Astra check complete; Claude audit-01 accepted the mathematics). No rejected candidate or novelty claim.
 
 ## Depends on
 
@@ -49,8 +49,10 @@ Read supplied §1 and secondary predecessor records `LIT-002`, `LIT-014`, `LIT-0
 
 ## Scope and open items
 
-This establishes the exact finite-field rationality criterion, not arbitrary extension-degree complexity. The source already notes the `n=1` degeneration; it is not a counterexample to an intended four-type statement. No PD-N is warranted. Supplementary Astra check complete; required Claude audit pending.
+This establishes the exact finite-field rationality criterion, not arbitrary extension-degree complexity. The source already notes the `n=1` degeneration; it is not a counterexample to an intended four-type statement. No PD-N is warranted. Supplementary Astra check complete; Claude audit-01 accepted the mathematics.
 
 ## History
 
 2026-10-31, Codex U0; rules/base `d36722823441dc40c6e19d69a174459348dd309c`; assigned `gpt-6.1-sol xhigh`. Explicitly separated algebraic-closure existence from `F_q`-rationality and prime-only code coverage.
+
+2026-10-31, Codex response-01 A2: updated completed handoff references and Claude audit-01 acceptance metadata only; mathematical statements, proofs and epistemic statuses unchanged.

@@ -18,7 +18,7 @@ Hamming weight counts nonzero coordinates. This statement does not claim any exa
 
 ## Status by part
 
-Overall status: **PROVED** (developer derivation; supplementary Astra check complete; required Claude audit PENDING). No novelty claim.
+Overall status: **PROVED** (developer derivation; supplementary Astra check complete; Claude audit-01 accepted the mathematics). No novelty claim.
 
 ## Depends on
 
@@ -36,8 +36,10 @@ Supplied code checks weighted duality for `k=n-1` at `(q,n)=(7,3),(11,5),(13,6),
 
 ## Scope and open items
 
-The multiplication proof shows the same distance lower bound for every `P_n`-unisolvent set, so the bound alone does not distinguish Padua codes. The independent adversary has supplied a separate self-contained all-code bound, `PD-T012`, in `independent/u0/code-optimality-bounds.md`; integrating and accepting that bound is the orchestrator's handoff. The finite attainment observations stay in `PD-T010`. Independent acceptance pending.
+The multiplication proof shows the same distance lower bound for every `P_n`-unisolvent set, so the bound alone does not distinguish Padua codes. The integrated universal linear-code bound is [PD-T012](code-optimality-bounds.md). The finite attainment observations remain MEASURED in [PD-T010](code-distances.md). [AUDIT_LOG](../../AUDIT_LOG.md) links the independent reports and Claude audit-01, which accepted the stated mathematics; response-01 records the administrative dispositions.
 
 ## History
 
 2026-10-31, Codex U0; rules/base `d36722823441dc40c6e19d69a174459348dd309c`; assigned `gpt-6.1-sol xhigh`. Split general structure (written proof) from finite distance observations; obtained the lower bound directly from unisolvence.
+
+2026-10-31, Codex response-01 A2: updated completed handoff references and Claude audit-01 acceptance metadata only; mathematical statements, proofs and epistemic statuses unchanged.

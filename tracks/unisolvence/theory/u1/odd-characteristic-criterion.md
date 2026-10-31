@@ -20,7 +20,7 @@ All arithmetic is exact in K. There is no order, positivity, algebraic closure, 
 
 ## Status by part
 
-Overall status: PROVED (developer proof; supplementary Astra check complete; required Claude audit pending).
+Overall status: PROVED (developer proof; supplementary Astra check complete; Claude audit-01 accepted the mathematics).
 
 | Part | Status | Evidence |
 |---|---|---|
@@ -58,8 +58,10 @@ Exact checker: `topics/charter-unisolvence-20261031/directions/U1/exact_checker.
 
 ## Scope and open items
 
-The proof establishes every m, both parities and every field of characteristic≠2. It does not repair the original characteristic-2 functional; that functional loses the parity information. The corrected functional and all-characteristic statement are separate. Supplementary Astra reconstruction and final literature/ID review are recorded in the track audit log; required Claude audit remains pending.
+The proof establishes every m, both parities and every field of characteristic≠2. It does not repair the original characteristic-2 functional; that functional loses the parity information. The corrected functional and all-characteristic statement are separate. Supplementary Astra reconstruction and final literature/ID review are recorded in the track audit log; Claude audit-01 accepted the mathematics.
 
 ## History
 
 2026-10-31, Codex `gpt-6.1-sol` xhigh, rules/base d36722823441dc40c6e19d69a174459348dd309c. Original arbitrary-field wording retained in negative record; restriction stated explicitly after characteristic-2 refutation.
+
+2026-10-31, Codex response-01 A2: updated completed handoff references and Claude audit-01 acceptance metadata only; mathematical statements, proofs and epistemic statuses unchanged.

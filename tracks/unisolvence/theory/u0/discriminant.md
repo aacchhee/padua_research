@@ -18,7 +18,7 @@ Matrix row and column order is arbitrary because the determinant is squared. The
 
 ## Status by part
 
-Overall status: **PROVED** (complete developer derivation; supplementary Astra check complete; required Claude audit PENDING). No novelty verdict.
+Overall status: **PROVED** (complete developer derivation; supplementary Astra check complete; Claude audit-01 accepted the mathematics). No novelty verdict.
 
 ## Depends on
 
@@ -50,8 +50,10 @@ Supplied Theorem 3 and predecessor records `LIT-002`, `LIT-003` are provenance, 
 
 ## Scope and open items
 
-The formula is the squared monomial determinant in the specified coordinates, not the unsquared determinant or an arbitrary point normalization. It does not state that every unisolvent set of the same size is impossible in bad characteristic. Supplementary Astra check complete; required Claude audit pending.
+The formula is the squared monomial determinant in the specified coordinates, not the unsquared determinant or an arbitrary point normalization. It does not state that every unisolvent set of the same size is impossible in bad characteristic. Supplementary Astra check complete; Claude audit-01 accepted the mathematics.
 
 ## History
 
 2026-10-31, Codex U0; rules/base `d36722823441dc40c6e19d69a174459348dd309c`; assigned `gpt-6.1-sol xhigh`. Recomputed both determinant exponents and the `n=1` boundary count; scoped the bad-characteristic corollary to integral canonical reduction.
+
+2026-10-31, Codex response-01 A2: updated completed handoff references and Claude audit-01 acceptance metadata only; mathematical statements, proofs and epistemic statuses unchanged.
