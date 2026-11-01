@@ -2,6 +2,7 @@
   "schema": 1,
   "purpose": "mechanical provenance; no scientific execution or verification",
   "pins": {
+    "main_b3_b1_context": "28aaa20861d08074b77efc74eaef75cdcb36234d",
     "main_results_tracking_rule": "28aaa20861d08074b77efc74eaef75cdcb36234d",
     "main_mz_registry_update": "e0d9e3d08ee26c3b82a295f33b6ff99d928f22b9",
     "part1_and_rules": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
@@ -61,6 +62,102 @@
       "git_blob": "b4d44ae3a11d6cebce976477b45b6c66d3d589d2",
       "sha256": "98e3407ddf7cd245ecc30e0f79cbf2de9ee64ff524c9a82829f2f7296f226470",
       "bytes": 479
+    },
+    {
+      "source": "main_b3_b1_context",
+      "commit": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/candidates.md",
+      "git_blob": "610c955071aba72840a45b7379f8523ab718a2f5",
+      "sha256": "55cfbf8ee57f4ce5d5f1e291ea681a8e942a30adb679ce28a540e691306018e0",
+      "bytes": 23265
+    },
+    {
+      "source": "main_b3_b1_context",
+      "commit": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+      "path": "topics/programme-ideas-20261031/OPEN_TARGETS.md",
+      "git_blob": "98f83956714b002e229cd9ad9b3c9072f19c4591",
+      "sha256": "c181d688edc8927b23e273f2a5f6542e950652b9bd892e5a96c89d2e3e199157",
+      "bytes": 19652
+    },
+    {
+      "source": "main_b3_b1_context",
+      "commit": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+      "path": "topics/programme-ideas-20261031/checks/adversarial-gen1-3.md",
+      "git_blob": "9a8dfd4caf930a6805b043432847f3f5725efaa5",
+      "sha256": "33e335c9ebb2b7a0d7951b07973654dc68ba323a0412b5d4e6a251b83fefa277",
+      "bytes": 32289
+    },
+    {
+      "source": "main_b3_b1_context",
+      "commit": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/orf2d.py",
+      "git_blob": "d21e6779f568282c7e9438a883ba12b8bb4d815a",
+      "sha256": "9e2197347a9125cc9f75178021c59d835bc3c85b7b63ef47d5e0213dc2287525",
+      "bytes": 19958
+    },
+    {
+      "source": "main_b3_b1_context",
+      "commit": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/window_exact.py",
+      "git_blob": "eaf15138f41bdfe3cbbf4a1f64d6ecf0d0827ea1",
+      "sha256": "abf066a0fe35355703586ad02701e3f3cfd55690e16a1f3da5b6749d292524c0",
+      "bytes": 4546
+    },
+    {
+      "source": "main_b3_b1_context",
+      "commit": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+      "path": "topics/programme-ideas-20261031/checks/decisive-gen1-3.md",
+      "git_blob": "363e03e2c7a9af8cce4d9c23c558a79cfb699eef",
+      "sha256": "3e950d1b47b8ec87ffd9ebeed91f8fd27f22f4716d23507918f98dd86eb7825e",
+      "bytes": 30028
+    },
+    {
+      "source": "main_b3_b1_context",
+      "commit": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-01-finite-favard-pattern-pairs.md",
+      "git_blob": "1a7760ef3cd93135837ef1e2acb49a566bb6ed27",
+      "sha256": "9e25301b14086106d623c5d5e44cc2a751eea17d5f58b6c412b75a3ebfdf89aa",
+      "bytes": 12360
+    },
+    {
+      "source": "main_b3_b1_context",
+      "commit": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N01-symmetrised-product-inertia-count.md",
+      "git_blob": "0310faa2c757e13333c731b3fd286a6345a59400",
+      "sha256": "c9cb48f5a0b21cf6bf76e2251c3f91f02320675156f702f00198a81dd3189d32",
+      "bytes": 7379
+    },
+    {
+      "source": "main_b3_b1_context",
+      "commit": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N02-windowed-rational-lanczos-instability.md",
+      "git_blob": "601b7d4be7d9ac272f231b0b49f7570a172f671c",
+      "sha256": "3c96bff3b0827f343932f22b3c629fd7e367a7d19a0d16ccae0ed339d0ccd8ed",
+      "bytes": 5860
+    },
+    {
+      "source": "main_b3_b1_context",
+      "commit": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-301-truncated-favard-sections.md",
+      "git_blob": "2c8d3fb75f1a43445eb3120f571abe38d2f400d6",
+      "sha256": "ac912d431c36b01e4f618211303eb015824c6c97dee94eac07d57116ba485c18",
+      "bytes": 11605
+    },
+    {
+      "source": "main_b3_b1_context",
+      "commit": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-316-square-case-first-order-commutator-isomorphism.md",
+      "git_blob": "f4762347e4dc72fcfc5020bc81b6bdf85cd37853",
+      "sha256": "5e449470b4e76943df1cd5401cfd0357c9e9b0c32c1024fb0bb31abd35dc2a20",
+      "bytes": 3760
+    },
+    {
+      "source": "main_b3_b1_context",
+      "commit": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N304-compression-model-insufficient.md",
+      "git_blob": "68937d932c6f64445fc042f6060b6a87919d91c0",
+      "sha256": "80382df3200705c74fdc95d1cedd3558bff9a3dca573ed5c87d6a0a3ce81a43b",
+      "bytes": 3216
     },
     {
       "source": "part1_response_arrived",
@@ -2330,8 +2427,8 @@
   "outputs": [
     {
       "path": "topics/padua-proof-attempts-2-20261101/LOG.md",
-      "sha256": "1c7c9b1adb12c7c3df382e1b4566baf226c645f3464e5288697f54c68ceee1a3",
-      "bytes": 89509
+      "sha256": "0cc3341b762038294888471532600cdbedcd4177146e96583a918f37d07f9169",
+      "bytes": 93471
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/a4-input-preparation.md",
@@ -2377,6 +2474,11 @@
       "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A5.md",
       "sha256": "0e3ccf525cd92d8bff2652dce373eb69fea6929a0e0f5026b3b25d163a3f3e9e",
       "bytes": 15871
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/attempts/T-B3.md",
+      "sha256": "a389d58154eab60e56fdcb2e967f1c954de0e129a5acd33650db538d2d5bf6cd",
+      "bytes": 18566
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/b1-input-preparation.md",
@@ -2749,9 +2851,14 @@
       "bytes": 10228
     },
     {
+      "path": "topics/padua-proof-attempts-2-20261101/code/b3_four_atom_exact.py",
+      "sha256": "b33647b8cff4c1b23e9b9089f9822fe307e1f8980786eec043b8bfc9ad3f9b7b",
+      "bytes": 6921
+    },
+    {
       "path": "topics/padua-proof-attempts-2-20261101/code/evidence_manifest.py",
-      "sha256": "8ac03b888e375b4b714d985e1f6838ea0cc3fa4efe3afbfddbd17e42b3186dbf",
-      "bytes": 7991
+      "sha256": "436e71992ff295bd6dab2ff400f92be409c8816de7b8423ab1adbb9b20b4cd29",
+      "bytes": 8944
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/evidence-packaging.md",
@@ -2864,9 +2971,14 @@
       "bytes": 29537
     },
     {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-b3.md",
+      "sha256": "72b85a3956aa8a61c3f724a24f7708e65e74bcb6b1cd29eb96a3c55b200bf2e1",
+      "bytes": 19913
+    },
+    {
       "path": "topics/padua-proof-attempts-2-20261101/independent-checks.md",
-      "sha256": "09e991c5efb9e49a2ce3a54e2084fcaed1909972f12067c7a4d881fd907e337d",
-      "bytes": 13834
+      "sha256": "cec01408f05f6fc664a03ce52123b8ddda8c70bf310d88f2375786432da2e399",
+      "bytes": 14752
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-execution-a2.md",
@@ -2927,6 +3039,11 @@
       "path": "topics/padua-proof-attempts-2-20261101/independent-execution-a5.md",
       "sha256": "b69428f1555e6f734ad754e0f77ff05f2c4d2930cce88ab66f7edcd21d9031b2",
       "bytes": 7840
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-execution-b3.md",
+      "sha256": "e9f52c1448d0cb265179390674bb7e60ea59df4e0f4f8674e9727078e72d216c",
+      "bytes": 4584
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/inputs-review.md",
@@ -3914,14 +4031,39 @@
       "bytes": 2183
     },
     {
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/b3_completion.json",
+      "sha256": "96c013b0722926937f44230d38925c9eeb7b110cc74213057039a49502d1c989",
+      "bytes": 1973
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/b3_exact_comparison.json",
+      "sha256": "fa0507808585f58c0a50852f984970887052decd6dfede2fe5d3cf9ec3c8a87a",
+      "bytes": 990
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/b3_final_freeze.json",
+      "sha256": "bbf6119027f1b68099a3b5e61814765a13ac6c36d683cf4e5705d5bcb8e0d3b7",
+      "bytes": 2155
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/b3_four_atom_exact.json",
+      "sha256": "bf95045657bf9f164c3e5a56895ec7bc39d34e2a4cf47b69d2e935585f39a6ef",
+      "bytes": 8975
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/b3_four_atom_independent.json",
+      "sha256": "21eb93c3a5d34c3c43633d678034b5c4347c8e478bd1860873a7c79ddadb9575",
+      "bytes": 8974
+    },
+    {
       "path": "topics/padua-proof-attempts-2-20261101/plan.md",
-      "sha256": "70e87df90f1f69304b09d4cafbf593c3f34d00232b340a5d866c4e80ff3eccb1",
-      "bytes": 4179
+      "sha256": "5a9653420ddaba2b6abcf9076e7e5835c057aa331dbdc7b69c665cb3193476bd",
+      "bytes": 4310
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/proposed-record-changes.md",
-      "sha256": "9f719bff9eaaf2dc3d63b2bf21a8d9eb916aca0c61caaebac3f17ece0ed53497",
-      "bytes": 22545
+      "sha256": "2bcbe84e1350c8a1a263ecc9fa1d27bb022fbebcd8f28469d3734466143662fd",
+      "bytes": 27292
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-01-corner-leading-lower.md",
@@ -4107,6 +4249,21 @@
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-77-central-edge-envelope-expansion.md",
       "sha256": "cadcfbdead5b1e69ab703edafef3c895f43de44f7503b292ee855dac0e4e74a3",
       "bytes": 8769
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-80-uniform-pivot-common-cluster.md",
+      "sha256": "374e2187af14dbc981adcb0c54fbf5e2b7ee9dd6312fc711fb5f8510d367257c",
+      "bytes": 5418
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-N01-computed-section-box-count.md",
+      "sha256": "c0cbcc79ea1d2c806edd64dd04d613164cec8b0c530882fcfd297a2615b2881d",
+      "bytes": 15557
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-N02-common-cluster-route-obstruction.md",
+      "sha256": "7c2066c21276e903c737a50904ad62a8e7693e18d0c021bb15ae578622773b6d",
+      "bytes": 5566
     }
   ],
   "exclusions": [

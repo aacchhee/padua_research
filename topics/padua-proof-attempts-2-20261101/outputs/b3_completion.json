@@ -1,0 +1,43 @@
+{
+  "actual_exact_executions": 2,
+  "actual_mathematical_stop_utc": "2026-11-01T16:34:25Z",
+  "actual_reference_joint_count": 1,
+  "actual_start_utc": "2026-11-01T16:13:51Z",
+  "computed_gap_constant": "1/10",
+  "degree": 1,
+  "dimension": 3,
+  "exact_proof_payload_sha256": "8fe7d5937ae698c255823bed941376e3f0338d972114ca93f333127564df2bc7",
+  "failure": "B3(ii); B3(i) holds on the family",
+  "format": "b3-completion-v1",
+  "hard_ceiling_utc": "2026-11-01T18:13:51Z",
+  "limits": [
+    "specified symmetrised-product count only",
+    "no all-n claim",
+    "no rejection of other count objects S_F",
+    "no failure of nearby commuting reference existence",
+    "no new mathematics/run/proof-body change after stop"
+  ],
+  "negative01_status": "PROVED; required Claude audit PENDING",
+  "next_step": "root integration and required Claude audit; root starts B1 in order",
+  "parameter_range": "every real 0<t<=1/1000000",
+  "proofs": [
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-80-uniform-pivot-common-cluster.md",
+      "sha256": "374e2187af14dbc981adcb0c54fbf5e2b7ee9dd6312fc711fb5f8510d367257c"
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-N01-computed-section-box-count.md",
+      "sha256": "c0cbcc79ea1d2c806edd64dd04d613164cec8b0c530882fcfd297a2615b2881d"
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-N02-common-cluster-route-obstruction.md",
+      "sha256": "7c2066c21276e903c737a50904ad62a8e7693e18d0c021bb15ae578622773b6d"
+    }
+  ],
+  "source_sha256": "b33647b8cff4c1b23e9b9089f9822fe307e1f8980786eec043b8bfc9ad3f9b7b",
+  "specified_symmetrised_product_count": "1/2",
+  "stop_criterion": "DONE: exact fixed-n,p computed-section counterfamily",
+  "supplementary_analytic_receipt_sha256": "72b85a3956aa8a61c3f724a24f7708e65e74bcb6b1cd29eb96a3c55b200bf2e1",
+  "support_size": 4,
+  "uniform_pivot_bound": "1/10"
+}

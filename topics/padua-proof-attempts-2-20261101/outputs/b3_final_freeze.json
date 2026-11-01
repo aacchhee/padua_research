@@ -1,0 +1,53 @@
+{
+  "created_utc": "2026-11-01T16:36:05.472768+00:00",
+  "files": [
+    {
+      "bytes": 18566,
+      "path": "topics/padua-proof-attempts-2-20261101/attempts/T-B3.md",
+      "sha256": "a389d58154eab60e56fdcb2e967f1c954de0e129a5acd33650db538d2d5bf6cd"
+    },
+    {
+      "bytes": 5418,
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-80-uniform-pivot-common-cluster.md",
+      "sha256": "374e2187af14dbc981adcb0c54fbf5e2b7ee9dd6312fc711fb5f8510d367257c"
+    },
+    {
+      "bytes": 15557,
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-N01-computed-section-box-count.md",
+      "sha256": "c0cbcc79ea1d2c806edd64dd04d613164cec8b0c530882fcfd297a2615b2881d"
+    },
+    {
+      "bytes": 5566,
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-N02-common-cluster-route-obstruction.md",
+      "sha256": "7c2066c21276e903c737a50904ad62a8e7693e18d0c021bb15ae578622773b6d"
+    },
+    {
+      "bytes": 6921,
+      "path": "topics/padua-proof-attempts-2-20261101/code/b3_four_atom_exact.py",
+      "sha256": "b33647b8cff4c1b23e9b9089f9822fe307e1f8980786eec043b8bfc9ad3f9b7b"
+    },
+    {
+      "bytes": 8975,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/b3_four_atom_exact.json",
+      "sha256": "bf95045657bf9f164c3e5a56895ec7bc39d34e2a4cf47b69d2e935585f39a6ef"
+    },
+    {
+      "bytes": 8974,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/b3_four_atom_independent.json",
+      "sha256": "21eb93c3a5d34c3c43633d678034b5c4347c8e478bd1860873a7c79ddadb9575"
+    },
+    {
+      "bytes": 990,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/b3_exact_comparison.json",
+      "sha256": "fa0507808585f58c0a50852f984970887052decd6dfede2fe5d3cf9ec3c8a87a"
+    },
+    {
+      "bytes": 1973,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/b3_completion.json",
+      "sha256": "96c013b0722926937f44230d38925c9eeb7b110cc74213057039a49502d1c989"
+    }
+  ],
+  "format": "b3-owned-final-freeze-v1",
+  "generated_b3_outputs_bytes_before_this_manifest": 20912,
+  "mathematical_stop_utc": "2026-11-01T16:34:25Z"
+}

@@ -166,3 +166,49 @@ Rule-only main28aaa20861d08074b77efc74eaef75cdcb36234d changes none of the six l
 
 
 Final A4(a) split checklist: add local70–77and mapping source05→70/77at their exact edge/central-envelope scopes; preserve source05whole-square all-n OPEN status, all source routes and historical measurements. No final IDs are assigned here.
+
+
+## B3 computed-section extension of the symmetrised-product negative
+
+Target: `topics/programme-ideas-20261031/OPEN_TARGETS.md`
+
+Pinned commit: `28aaa20861d08074b77efc74eaef75cdcb36234d`
+
+Old:
+
+```text
+Known: on general symmetric pairs α > ½ is impossible for the symmetrised-product count (PD-N?…-01, PROVED); the two measured cluster examples are not computed sections. Part (i) is itself a quantitative Lin-type question (distance from computed sections to 𝒞_n in terms of δ); `PD-T?bivariate-lanczos-claude-304`(a) (pinned `5f52331`) gives a related square-case bound and should be read first. Nothing here implies S(α) true or false. Done when: either a counterexample inside the computed-section class at distance ≈ c√δ (which would extend PD-N?…-01 to that class), or a theorem with α > ½ under stated hypotheses. Route for a counterexample: two nodes ε apart with M > N chosen so that the recurrence's sections inherit a 45° eigenbasis rotation in the cluster, with the box boundary gap of order √δ.
+```
+
+New:
+
+```text
+Known: on general symmetric pairs α > ½ is impossible for the symmetrised-product count (PD-N?…-01, PROVED); the two measured cluster examples are not computed sections. Part (i) is itself a quantitative Lin-type question (distance from computed sections to 𝒞_n in terms of δ); `PD-T?bivariate-lanczos-claude-304`(a) (pinned `5f52331`) gives a related square-case bound and should be read first. Nothing here implies S(α) true or false. Done when: either a counterexample inside the computed-section class at distance ≈ c√δ (which would extend PD-N?…-01 to that class), or a theorem with α > ½ under stated hypotheses. Route for a counterexample: two nodes ε apart with M > N chosen so that the recurrence's sections inherit a 45° eigenbasis rotation in the cluster, with the box boundary gap of order √δ.
+
+Dated Part2 extension proposed after its Claude audit: PD-N?proof-attempts-2-codex-01 is PROVED and REFUTES this specified S(alpha) on genuine computed sections at fixedn=1,p=1/10,M=4. For every0<t<=10^-6 its explicit four-positive-atom family has0<delta_t->0 and computedgap>=sqrt(delta_t)/10, yet n_box=1/2 while a fixedpositive-pivot commuting reference within g/2 hasjointcount1. Thus(ii)fails forEVERYmember and(i)holds; everyalpha>1/2 andfiniteC(1,p) isdefeated. Twoactualexactexecutionsverify thepositive-momentsectionidentitiesandwholeintervalpolynomialsigns; fullwrittenproofsupplies allnorm/gap/reference/inertiaquantifiers. The original commonshrinkingjointcluster route is separately REJECTED:failed underfixedN,p and FULLresidualhypotheses in scopednegative02, using positiveestimate80; shrinkingtheBOXaboutanisolatednodeescapes it. Preserve the original route/historyabove. No all-n counterexample, failureofothercountobjectsS_F, or failureofnearbycommutingreferenceexistence isclaimed.
+```
+
+Validation: entire Old preserved; unique at pinned current main. No shared source is edited.
+
+
+## B3 source-negative scope history and separate extension
+
+Target: `topics/programme-ideas-20261031/theory/programme-ideas-claude-N01-symmetrised-product-inertia-count.md`
+
+Pinned commit: `28aaa20861d08074b77efc74eaef75cdcb36234d`
+
+Old:
+
+```text
+Whether a δ-tolerant count with α > ½ exists on the class of positive-pivot computed sections (cyclic, size dim Π_n) is not addressed: `OPEN_TARGETS.md` B3. Transfer to the Lanczos topic (LZ-034 / L3) only in this restricted form.
+```
+
+New:
+
+```text
+Whether a δ-tolerant count with α > ½ exists on the class of positive-pivot computed sections (cyclic, size dim Π_n) is not addressed: `OPEN_TARGETS.md` B3. Transfer to the Lanczos topic (LZ-034 / L3) only in this restricted form.
+
+Dated separate extension proposed after the Part2 Claude audit: PD-N?proof-attempts-2-codex-01 proves the specified symmetrised-product S(alpha) FALSE in the positive-pivot computed-section class atfixedn=1,p=1/10,M=4, withn_box=1/2 versusavalidreferencejointcount1 andCOMPUTEDgap>=sqrt(delta)/10 forALL0<t<=10^-6. This extends the failure to a genuine positive-measure family; it does not retrospectively broaden the original theorem in this record or relabel its old measurements as section certificates. Other countobjectsS_F, otherdegrees andreference-existencequestionsremainOPEN. Fullproof, frozenexactsource, ownoutputsfromtwoactualexecutions and supplementaryanalyticreconstructionare retained in the Part2topic.
+```
+
+Validation: entire Old preserved; unique at pinned current main. At authorized post-auditintegration, addlocalnegative01/02andpositive80rows/mappings andupdateIDEA198dispositionforTHEspecifiedS(alpha), preservingoriginalN01scope/historyandotherF/referencequestions. No finalID/range/sharedwrite here.

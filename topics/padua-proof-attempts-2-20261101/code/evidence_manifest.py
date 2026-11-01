@@ -12,6 +12,7 @@ import subprocess
 ROOT = Path(__file__).resolve().parents[3]
 TOPIC = "topics/padua-proof-attempts-2-20261101"
 PINS = {
+    "main_b3_b1_context": "28aaa20861d08074b77efc74eaef75cdcb36234d",
     "main_results_tracking_rule": "28aaa20861d08074b77efc74eaef75cdcb36234d",
     "main_mz_registry_update": "e0d9e3d08ee26c3b82a295f33b6ff99d928f22b9",
     "part1_and_rules": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
@@ -52,6 +53,16 @@ def main():
         for path in paths:
             requested[(PINS[label], path)] = label
 
+    add("main_b3_b1_context", [PG + x for x in ["OPEN_TARGETS.md",
+        "theory/programme-ideas-claude-01-finite-favard-pattern-pairs.md",
+        "theory/programme-ideas-claude-N01-symmetrised-product-inertia-count.md",
+        "theory/programme-ideas-claude-N02-windowed-rational-lanczos-instability.md",
+        "checks/decisive-gen1-3.md", "checks/adversarial-gen1-3.md",
+        "checks/code/decisive/gen1-3/orf2d.py", "checks/code/decisive/gen1-3/window_exact.py"]] + [
+        "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-301-truncated-favard-sections.md",
+        "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N304-compression-model-insufficient.md",
+        "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-316-square-case-first-order-commutator-isomorphism.md",
+        "topics/bivariate-lanczos-20261031/directions/L3/candidates.md"])
     add("main_results_tracking_rule", RULES + ["results/README.md", "RESULTS.md"])
     add("main_mz_registry_update", RULES + ["state/IDEAS.md", "literature/INDEX.md",
         "PROOF_STATUS.md", "ID_CROSSWALK.md", "PAPER_MAP.md", "state/CURRENT.md"] +

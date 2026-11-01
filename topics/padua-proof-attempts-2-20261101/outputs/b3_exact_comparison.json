@@ -1,0 +1,21 @@
+{
+  "actual_different_executor_rerun_completed": true,
+  "compared_utc": "2026-11-01T16:32:37.174508+00:00",
+  "entire_json_equal_after_removing_only_metadata_seconds": true,
+  "format": "b3-exact-independent-comparison-v1",
+  "outputs": [
+    {
+      "bytes": 8975,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/b3_four_atom_exact.json",
+      "sha256": "bf95045657bf9f164c3e5a56895ec7bc39d34e2a4cf47b69d2e935585f39a6ef"
+    },
+    {
+      "bytes": 8974,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/b3_four_atom_independent.json",
+      "sha256": "21eb93c3a5d34c3c43633d678034b5c4347c8e478bd1860873a7c79ddadb9575"
+    }
+  ],
+  "proof_payload_sha256": "8fe7d5937ae698c255823bed941376e3f0338d972114ca93f333127564df2bc7",
+  "scope": "exact symbolic identities and whole-interval signs; complete mathematical interpretation in separate negative01; Claude audit pending",
+  "source_sha256": "b33647b8cff4c1b23e9b9089f9822fe307e1f8980786eec043b8bfc9ad3f9b7b"
+}
