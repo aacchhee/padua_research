@@ -1,0 +1,17 @@
+{
+  "purpose": "mechanical response guards only; no scientific execution or audit claim",
+  "accepted_scientific_candidate": "4265bb94f987ce77d89cd5e15a8c435cbd1411d0",
+  "immutable_audit_delivery": "0dd4a6df2db4a2019541604bb97c05926ab3c22b",
+  "main": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+  "source": "Git index for final response; immutable Git objects for baselines",
+  "frozen_source_and_scientific_output_files": 271,
+  "immutable_auditor_files": 111,
+  "unchanged_proof_sections_except_exact_authorized_chain": 44,
+  "literal_proposals_checked": 10,
+  "generated_bytes_at_check": 4901034,
+  "largest_generated_bytes": 637163,
+  "receipt_excludes_its_own_new_bytes_until_final_manifest_budget_check": true,
+  "checker_sha256": "3e677a732e6eb7ac1828393061fec5ba20d8c3d6c40171adff0b644717f6c82b",
+  "errors": [],
+  "passed": true
+}

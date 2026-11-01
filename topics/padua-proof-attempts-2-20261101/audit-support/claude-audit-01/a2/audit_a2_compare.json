@@ -1,0 +1,171 @@
+{
+ "common_n": [
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28
+ ],
+ "all_overlap": true,
+ "max_abs_mid_diff": 4.04e-21,
+ "rows": [
+  {
+   "n": 2,
+   "overlap": true,
+   "abs_mid_diff": 0.0
+  },
+  {
+   "n": 3,
+   "overlap": true,
+   "abs_mid_diff": 1.26e-22
+  },
+  {
+   "n": 4,
+   "overlap": true,
+   "abs_mid_diff": 2.14e-22
+  },
+  {
+   "n": 5,
+   "overlap": true,
+   "abs_mid_diff": 8.7e-23
+  },
+  {
+   "n": 6,
+   "overlap": true,
+   "abs_mid_diff": 1.9300000000000001e-22
+  },
+  {
+   "n": 7,
+   "overlap": true,
+   "abs_mid_diff": 3.89e-22
+  },
+  {
+   "n": 8,
+   "overlap": true,
+   "abs_mid_diff": 2.5300000000000003e-22
+  },
+  {
+   "n": 9,
+   "overlap": true,
+   "abs_mid_diff": 9.1e-23
+  },
+  {
+   "n": 10,
+   "overlap": true,
+   "abs_mid_diff": 4.51e-22
+  },
+  {
+   "n": 11,
+   "overlap": true,
+   "abs_mid_diff": 3.15e-22
+  },
+  {
+   "n": 12,
+   "overlap": true,
+   "abs_mid_diff": 2.6e-22
+  },
+  {
+   "n": 13,
+   "overlap": true,
+   "abs_mid_diff": 1.34e-22
+  },
+  {
+   "n": 14,
+   "overlap": true,
+   "abs_mid_diff": 3.0099999999999996e-22
+  },
+  {
+   "n": 15,
+   "overlap": true,
+   "abs_mid_diff": 3.74e-22
+  },
+  {
+   "n": 16,
+   "overlap": true,
+   "abs_mid_diff": 2.7600000000000002e-22
+  },
+  {
+   "n": 17,
+   "overlap": true,
+   "abs_mid_diff": 1.1e-22
+  },
+  {
+   "n": 18,
+   "overlap": true,
+   "abs_mid_diff": 4.56e-22
+  },
+  {
+   "n": 19,
+   "overlap": true,
+   "abs_mid_diff": 1.12e-22
+  },
+  {
+   "n": 20,
+   "overlap": true,
+   "abs_mid_diff": 5.8e-23
+  },
+  {
+   "n": 21,
+   "overlap": true,
+   "abs_mid_diff": 4.9e-22
+  },
+  {
+   "n": 22,
+   "overlap": true,
+   "abs_mid_diff": 1.59e-22
+  },
+  {
+   "n": 23,
+   "overlap": true,
+   "abs_mid_diff": 9.999999999999998e-23
+  },
+  {
+   "n": 24,
+   "overlap": true,
+   "abs_mid_diff": 4.6e-22
+  },
+  {
+   "n": 25,
+   "overlap": true,
+   "abs_mid_diff": 4.03e-21
+  },
+  {
+   "n": 26,
+   "overlap": true,
+   "abs_mid_diff": 4.04e-21
+  },
+  {
+   "n": 27,
+   "overlap": true,
+   "abs_mid_diff": 1.91e-21
+  },
+  {
+   "n": 28,
+   "overlap": true,
+   "abs_mid_diff": 2.22e-21
+  }
+ ],
+ "first_n_where_01_lower_bound_exceeds_1": 114616
+}

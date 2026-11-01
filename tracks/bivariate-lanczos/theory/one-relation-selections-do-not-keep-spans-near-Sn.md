@@ -47,6 +47,10 @@ Measured.
 
 Does not refute that adaptive selection is much better than BJ (it is, by 7–10 decades on four sets); it refutes uniform safety of the tested rules on the tested sets. It does not quantify over all possible one-relation selections (audit-01); in particular the adaptive exceptions and the two-relation control of PD-T?…-206 stand.
 
+## Independent public-code extension (MEASURED)
+
+PD-T146 executes actual polyrat 0.2.2 numerical source at commit6903d7af9995c9d88e661fb229626696e00fdfba on the frozen suite. Upstream input [y,x] matches campaign dev including column order; default [x,y] is mirror with reversed within-degree order and is not numerically equivalent to forward mirror. Separate root execution reproduces the rotated-square n24 gap0.004105 and triangle n20 gap0.010164. The post-hoc worst-polynomial training residuals equal those gaps by construction; the worst-polynomial off-sample error depends on the test distribution (1.0e-3 to 1.5e-2 on rotated square). The fixed ridge target exp(x+y) is fit near machine precision on the tested samples. Ill-conditioned/rank-deficient references elsewhere do not certify span drift. This is additional scoped measurement, not an upgrade of this negative result or a proof of every-rule failure. The scalar-operation and aggregate sensitivity statements in the new E1 records remain separately scoped.
+
 ## Open items
 
 As PD-T?…-206.

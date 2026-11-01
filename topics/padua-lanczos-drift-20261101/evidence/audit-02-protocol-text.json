@@ -1,0 +1,280 @@
+{
+  "rules_and_audited_head": "7a6dd1f7f8f10d0f9c2568e89d693b7d04cd571b",
+  "current_main": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+  "scientific_response_candidate": "cef79d66321a93d93d53e53efcb7e6744c387481",
+  "scope": "Literal OLD anchors, immutable original theory checks and administrative provenance; no new novelty or mathematical status judgment.",
+  "anchors": [
+    {
+      "block": 1,
+      "proposal_line": 9,
+      "target": "tracks/bivariate-lanczos/theory/bj-universal-reorthogonalization-obstruction-open.md",
+      "old_sha256": "a877a1330d8bbad01022a579b182f654cf7bccfec1f8a1ab559db098c075a690",
+      "old_occurrences_at_main": 1,
+      "old_occurrences_at_head": 1,
+      "old_occurrences_after_previous_proposals": 1
+    },
+    {
+      "block": 2,
+      "proposal_line": 29,
+      "target": "tracks/bivariate-lanczos/theory/condition-C-staircase-selections-acyclic-sections.md",
+      "old_sha256": "c96dc50c470fcadc8b50d1903c9e95955177916ba0027372e0ce29f1d99a6b7f",
+      "old_occurrences_at_main": 1,
+      "old_occurrences_at_head": 1,
+      "old_occurrences_after_previous_proposals": 1
+    },
+    {
+      "block": 3,
+      "proposal_line": 45,
+      "target": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-300-l3q1-backward-interpretation-target.md",
+      "old_sha256": "a877a1330d8bbad01022a579b182f654cf7bccfec1f8a1ab559db098c075a690",
+      "old_occurrences_at_main": 1,
+      "old_occurrences_at_head": 1,
+      "old_occurrences_after_previous_proposals": 1
+    },
+    {
+      "block": 4,
+      "proposal_line": 63,
+      "target": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-319-padua-obstruction-radius-uniformity.md",
+      "old_sha256": "42de7120011806770fb6bd78779a76d26cfd14e9eadb80f9fb2fec1e78dcba30",
+      "old_occurrences_at_main": 1,
+      "old_occurrences_at_head": 1,
+      "old_occurrences_after_previous_proposals": 1
+    },
+    {
+      "block": 5,
+      "proposal_line": 77,
+      "target": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-319-padua-obstruction-radius-uniformity.md",
+      "old_sha256": "e3e80bf2a12c690ede1dfa06d080454491e81d7383f2ea1cb37dd1d95f842556",
+      "old_occurrences_at_main": 1,
+      "old_occurrences_at_head": 1,
+      "old_occurrences_after_previous_proposals": 1
+    },
+    {
+      "block": 6,
+      "proposal_line": 91,
+      "target": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-319-padua-obstruction-radius-uniformity.md",
+      "old_sha256": "4b05b8a6497df87fc13ee9c1023edbb655840aebbf8b54263f218242273cec49",
+      "old_occurrences_at_main": 1,
+      "old_occurrences_at_head": 1,
+      "old_occurrences_after_previous_proposals": 1
+    },
+    {
+      "block": 7,
+      "proposal_line": 109,
+      "target": "tracks/bivariate-lanczos/theory/reorthogonalization-does-not-restore-graded-spaces.md",
+      "old_sha256": "a877a1330d8bbad01022a579b182f654cf7bccfec1f8a1ab559db098c075a690",
+      "old_occurrences_at_main": 1,
+      "old_occurrences_at_head": 1,
+      "old_occurrences_after_previous_proposals": 1
+    },
+    {
+      "block": 8,
+      "proposal_line": 127,
+      "target": "tracks/bivariate-lanczos/theory/one-relation-selections-do-not-keep-spans-near-Sn.md",
+      "old_sha256": "a877a1330d8bbad01022a579b182f654cf7bccfec1f8a1ab559db098c075a690",
+      "old_occurrences_at_main": 1,
+      "old_occurrences_at_head": 1,
+      "old_occurrences_after_previous_proposals": 1
+    },
+    {
+      "block": 9,
+      "proposal_line": 154,
+      "target": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-319-padua-obstruction-radius-uniformity.md",
+      "old_sha256": "e8c7b5a401b4f216b7b65ba3bb545539598e2bb240ccc65d467b8073a8cf6b13",
+      "old_occurrences_at_main": 1,
+      "old_occurrences_at_head": 1,
+      "old_occurrences_after_previous_proposals": 1
+    },
+    {
+      "block": 10,
+      "proposal_line": 165,
+      "target": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-319-padua-obstruction-radius-uniformity.md",
+      "old_sha256": "f69906ea8aa6fdc2ce0992fba90f00cf60f4c347835e7cc6c33ad95545cb2538",
+      "old_occurrences_at_main": 1,
+      "old_occurrences_at_head": 1,
+      "old_occurrences_after_previous_proposals": 1
+    },
+    {
+      "block": 11,
+      "proposal_line": 176,
+      "target": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-319-padua-obstruction-radius-uniformity.md",
+      "old_sha256": "b0352aa37ea9fec5acccca84a67b66a6797a6a2e73b6d807259c0c91badca670",
+      "old_occurrences_at_main": 1,
+      "old_occurrences_at_head": 1,
+      "old_occurrences_after_previous_proposals": 1
+    },
+    {
+      "block": 12,
+      "proposal_line": 187,
+      "target": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-319-padua-obstruction-radius-uniformity.md",
+      "old_sha256": "0e575ce2f7964628a49f0acccd8ae79d643e8eb3219f8a33933cf8f0927599d9",
+      "old_occurrences_at_main": 1,
+      "old_occurrences_at_head": 1,
+      "old_occurrences_after_previous_proposals": 1
+    },
+    {
+      "block": 13,
+      "proposal_line": 199,
+      "target": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-313-padua-turan-certificate-all-n.md",
+      "old_sha256": "d28b7bc95a5ab0030a82aa583d82a354994a4d25d20ca1131cb4126f500e9877",
+      "old_occurrences_at_main": 1,
+      "old_occurrences_at_head": 1,
+      "old_occurrences_after_previous_proposals": 1
+    },
+    {
+      "block": 14,
+      "proposal_line": 210,
+      "target": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-313-padua-turan-certificate-all-n.md",
+      "old_sha256": "fb48968b06a109765dd6e3c465f295f497d9ae144dc5841ffc969575c6642a8c",
+      "old_occurrences_at_main": 1,
+      "old_occurrences_at_head": 1,
+      "old_occurrences_after_previous_proposals": 1
+    },
+    {
+      "block": 15,
+      "proposal_line": 222,
+      "target": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-305-three-node-square-case-sqrt-rate.md",
+      "old_sha256": "cd2cfddba2bda451fc490b966330869975d0a9f015899e30c76c80f057b82ff2",
+      "old_occurrences_at_main": 1,
+      "old_occurrences_at_head": 1,
+      "old_occurrences_after_previous_proposals": 1
+    },
+    {
+      "block": "optional_history",
+      "target": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-305-three-node-square-case-sqrt-rate.md",
+      "old_occurrences_at_main": 1,
+      "old_occurrences_at_head": 1,
+      "old_occurrences_after_previous_proposals": 1
+    }
+  ],
+  "all_anchors_unique": true,
+  "response_scientific_changes_since_candidate": [],
+  "immutable_audit01_changes_since_candidate": [],
+  "files_read_identities": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 3572,
+      "sha256": "c44a76f138fce01f02c06753b22fbc83fd5c1ee701785d49ba17cef5f8eee05b"
+    },
+    {
+      "path": "agents/WORKFLOW.md",
+      "bytes": 26615,
+      "sha256": "a8927be27a1fe8166e5bcf59c7da8e70618ae0a5f17d56131724baffdad49353"
+    },
+    {
+      "path": "agents/codex/CODEX.md",
+      "bytes": 4969,
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/handoffs/06-reaudit.md",
+      "bytes": 5172,
+      "sha256": "254e5ce62ab6d99f2bad2293be3609b84e41e14aa35f0fa60506df820587439c"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/audit-01.md",
+      "bytes": 23397,
+      "sha256": "904660ccea93092b8fa91c1a3262c9de7ed622e119fa8a4f1636dde3252756db"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/checks/audit-01/E6-novelty-protocol.md",
+      "bytes": 22064,
+      "sha256": "9e49bc186d19b8dc4df1c4c49f38445eb4e04e14489d7e9c7c5c2e1dc408d650"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/response-01.md",
+      "bytes": 10815,
+      "sha256": "74e74dc7ef06d2427aeec8be41792a7599d676d2786a05bbd86c04caf7a58762"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/LOG.md",
+      "bytes": 18634,
+      "sha256": "2892813569da04545b12a612d57b6dbb2160a0ba30d8157fd41412634acda17e"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/COLD_STORAGE.md",
+      "bytes": 3357,
+      "sha256": "7019bb47b8c9d0aa027bc302e6415ed014074ca48943b84b3fffa26e3160b3d4"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/proposed-record-changes.md",
+      "bytes": 15051,
+      "sha256": "7759302ffbbf1e8d8329b2eb77b754b1786bc2055a5a365cbbe6969b530e0556"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/local-results-entry.md",
+      "bytes": 3413,
+      "sha256": "9ec672f3f130de5efdbe7c87e535f8788a9168c61ff6059828e56bf9c92bd9f4"
+    },
+    {
+      "path": "results/padua-lanczos-drift-20261101.md",
+      "bytes": 6347,
+      "sha256": "b527c4ffe1e20c643349f903e4f43beba52e9389c53576eb2c14ff92ca5c3478"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/ideas-e1.md",
+      "bytes": 19456,
+      "sha256": "4940d4499bb2ed3ef68ab39b3d32e63cd4eb8fb7e70fcab3c9985406fb092475"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/ideas-e5.md",
+      "bytes": 15343,
+      "sha256": "bf78ada32224d565d578ecf3f608122d57c552bcd10617483ab042253710048e"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/ideas-e6.md",
+      "bytes": 18329,
+      "sha256": "490808d25c2e936ee1171f01f6c0866f113f523fcb8f5440a334462136340ce5"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/archive-receipt.json",
+      "bytes": 376,
+      "sha256": "f7651101d866f2cc004523cd2054e76f18e94540b55f444aa1f86f2f84efaff8"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/response-01-manifest.json",
+      "bytes": 2727,
+      "sha256": "fbc3f4dd1352e2e0d236e79c78035e50e193c49407b0bd39a4fc07e500506c97"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_reproduce.py",
+      "bytes": 2792,
+      "sha256": "4381f3367651bf69feaf801ef5cec94a704cbcc62e4d982bae6c7a2ef9dbbc02"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/checks/response-01/E1-developer-report.md",
+      "bytes": 11217,
+      "sha256": "2186af70afdfcf71b1888e59d1cedda0c4682e710aa24cf929db77b1b606c0ad"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/checks/response-01/E34-developer-report.md",
+      "bytes": 22027,
+      "sha256": "f8f9fad5710b7838170dacaf0c91014556062d7454af1c92d62e8b5269e0b486"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/checks/response-01/E5-developer-report.md",
+      "bytes": 13304,
+      "sha256": "668e49afd181aeafbb35b72355a003290c823fa1279e8a16764c25d756587305"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/checks/response-01/E6-developer-report.md",
+      "bytes": 11833,
+      "sha256": "883286e2bbbd7fc85c0da727f9ed60bf8f67c15c2ca0a3f3802fcf0786532cb0"
+    }
+  ],
+  "source_provenance_correction": {
+    "basis": "Exact AC request quotations supplied by the current orchestrator audit brief; audit-01 did not have this prompt.",
+    "quotes": [
+      "Campaign mode adventurous and less gated",
+      "Relaxed novelty gate at start and before each new mechanism"
+    ],
+    "scope": "Corrects authority provenance only. Does not change the historically performed gate or justify inventing omitted gate checks."
+  },
+  "historical_receipt_rule": "Audit-01 Windows delivery and readback are attributed to Claude LOG:90; this audit has no Windows bridge and does not re-verify that delivery.",
+  "preparation_advisory": {
+    "file": "topics/padua-lanczos-drift-20261101/proposed-record-changes.md",
+    "line": 143,
+    "issue": "Active preparation prose still points to a local Windows results file and a modification-time guard for shared RESULTS.md.",
+    "current_rule": "agents/WORKFLOW.md repository-only results; topic orchestrator updates own results/<slug>.md, and only own root RESULTS.md section at PR preparation. No further Windows results write."
+  }
+}

@@ -1,0 +1,3088 @@
+{
+ "purpose": "Response-02 (Claude) exact regression for A02-M1: corrected relative-source limit lim delta_(A)/u = (kappa_A/b)||v_m|| in PD-N?drift-codex-15, kappa_(A_m) >= b; finite corroboration of an analytic proof, not a proof.",
+ "command": "PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 -B tracks/bivariate-lanczos/code/drift/e4_response02_check.py --output topics/padua-lanczos-drift-20261101/evidence/response-02-e4-creator-limit.json",
+ "code": "tracks/bivariate-lanczos/code/drift/e4_response02_check.py",
+ "code_sha256": "6b2c0f8737b1755795d1afd2a8c59449043146ab8315682a3b28293f2f144fdf",
+ "python": "3.13.18",
+ "platform": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+ "packages": "Python standard library only (fractions, random, hashlib, json, os, platform, time)",
+ "arithmetic": "exact rationals (fractions.Fraction); every assertion exact; floats appear only as display values for long exact numbers (with digests)",
+ "eta_values": [
+  "1/10",
+  "1/100",
+  "-1/1000",
+  "1/10000",
+  "1/1000000"
+ ],
+ "source_model": "raw_m -> raw_m + eta*r with r a nonzero normal vector (r orthogonal to S_(t+1)); u^2 = eta^2 ||r||^2/||raw_m||^2, i.e. ||f|| = u ||v_m||",
+ "record15_constants": {
+  "T3_BJ_source_v20": {
+   "v20_sq": "22/5",
+   "b_sq": "7/15",
+   "kappaX_sq": "28/45",
+   "kappaX_sq_over_b_sq": "4/3",
+   "limit_sq_X": "88/15",
+   "response01_asserted_limit_sq": "22/5",
+   "asserted_value_correct": false
+  },
+  "T3_BJ_source_v21": {
+   "v21_sq": "3/2",
+   "b_sq": "28/115",
+   "kappaY_sq_eq_b_sq": true,
+   "limit_sq_Y": "3/2",
+   "limit_sq_X": "2",
+   "response01_asserted_limit_sq": "3/2",
+   "asserted_value_correct": true
+  }
+ },
+ "summary": {
+  "instances": 25,
+  "creator_ratio_kappa_sq_over_b_sq_ge_1_all": true,
+  "instances_with_kappa_creator_gt_b": [
+   "T3_uniform_BJ_source_(2,0)",
+   "T3_uniform_BJ_source_(2,0)_normal_x2y",
+   "T4_uniform_t2_XYYY_source_(3,0)",
+   "T4_uniform_t2_XYXY_source_(3,0)",
+   "T4_uniform_t2_XYXY_source_(3,1)"
+  ],
+  "instances_with_kappa_creator_eq_b": [
+   "T3_uniform_BJ_source_(2,1)",
+   "T3_uniform_BJ_source_(2,2)",
+   "T3_uniform_BJ_source_(2,1)_normal_x3",
+   "T3_uniform_mirror_source_(2,1)",
+   "Q3_product_grid_uniform_BJ_source_(2,0)",
+   "Q3_product_grid_uniform_BJ_source_(2,1)",
+   "Q3_product_grid_uniform_BJ_source_(2,2)",
+   "T3_nonuniform_weights_BJ_source_(2,1)",
+   "T4_uniform_t2_XYYY_source_(3,1)",
+   "T4_uniform_t2_XYYY_source_(3,2)",
+   "T4_uniform_t2_XYYY_source_(3,3)",
+   "T4_uniform_t2_XXXY_source_(3,0)",
+   "T4_uniform_t2_XXXY_source_(3,1)",
+   "T4_uniform_t2_XXXY_source_(3,2)",
+   "T4_uniform_t2_XXXY_source_(3,3)",
+   "T4_uniform_t2_XYXY_source_(3,2)",
+   "T4_uniform_t2_XYXY_source_(3,3)",
+   "random12_t0_source_(1,0)",
+   "random12_t0_source_(1,1)",
+   "random12_t1_BJ_source_(2,1)"
+  ],
+  "max_creator_ratio": "9/5"
+ },
+ "response01_evidence_crosscheck": {
+  "file": "topics/padua-lanczos-drift-20261101/evidence/response-01-e4-closure.json",
+  "available": true,
+  "sha256": "956dfe71e8b6958f54e19f2d7fb30f04c5788351b7942bf8be21b41977d3599c",
+  "instances_compared": 23,
+  "kappa_sq_over_b_sq_and_b_sq_equal": true
+ },
+ "instances": [
+  {
+   "name": "T3_uniform_BJ_source_(2,0)",
+   "nodes": 10,
+   "t": 1,
+   "selection_degree_t+1": "XYY",
+   "perturbed_column": "(2,0)",
+   "creating_operator": "X",
+   "normal_direction": "normal part of x^0 y^3 w.r.t. S_2",
+   "r_sq": "72/175",
+   "v_m_sq_unit_parent": "22/5",
+   "b_sq_unit_parent": "7/15",
+   "kappa_sq": {
+    "X": "28/45",
+    "Y": "0"
+   },
+   "kappa_sq_over_b_sq": {
+    "X": "4/3",
+    "Y": "0"
+   },
+   "limit_delta_sq_over_u_sq": {
+    "X": "88/15",
+    "Y": "0"
+   },
+   "limit_from_direct_values_extrapolated": {
+    "X": "88/15",
+    "Y": "0 (delta identically 0)"
+   },
+   "creator_limit_sq": "88/15",
+   "creator_limit_sq_over_v_m_sq": "4/3",
+   "kappa_creator_sq_ge_b_sq": true,
+   "response01_wording_limit_eq_v_m_holds": false,
+   "samples_by_eta": [
+    {
+     "eta": "1/10",
+     "u_sq": "9/9625",
+     "X": {
+      "delta_sq": "168/30895",
+      "delta_sq_over_u_sq": "107800/18537",
+      "limit_minus_value": "1584/30895",
+      "equals_closed_form_exactly": true,
+      "equals_audit02_symbolic_672eta2_over_5(216eta2+245)": true
+     },
+     "Y": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/100",
+     "u_sq": "9/962500",
+     "X": {
+      "delta_sq": "84/1531385",
+      "delta_sq_over_u_sq": "5390000/918831",
+      "limit_minus_value": "792/1531385",
+      "equals_closed_form_exactly": true,
+      "equals_audit02_symbolic_672eta2_over_5(216eta2+245)": true
+     },
+     "Y": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "-1/1000",
+     "u_sq": "9/96250000",
+     "X": {
+      "delta_sq": "84/153125135",
+      "delta_sq_over_u_sq": "539000000/91875081",
+      "limit_minus_value": "792/153125135",
+      "equals_closed_form_exactly": true,
+      "equals_audit02_symbolic_672eta2_over_5(216eta2+245)": true
+     },
+     "Y": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/10000",
+     "u_sq": "9/9625000000",
+     "X": {
+      "delta_sq": "84/15312500135",
+      "delta_sq_over_u_sq": "53900000000/9187500081",
+      "limit_minus_value": "792/15312500135",
+      "equals_closed_form_exactly": true,
+      "equals_audit02_symbolic_672eta2_over_5(216eta2+245)": true
+     },
+     "Y": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/1000000",
+     "u_sq": "9/96250000000000",
+     "X": {
+      "delta_sq": "84/153125000000135",
+      "delta_sq_over_u_sq": "539000000000000/91875000000081",
+      "limit_minus_value": "792/153125000000135",
+      "equals_closed_form_exactly": true,
+      "equals_audit02_symbolic_672eta2_over_5(216eta2+245)": true
+     },
+     "Y": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "T3_uniform_BJ_source_(2,1)",
+   "nodes": 10,
+   "t": 1,
+   "selection_degree_t+1": "XYY",
+   "perturbed_column": "(2,1)",
+   "creating_operator": "Y",
+   "normal_direction": "normal part of x^0 y^3 w.r.t. S_2",
+   "r_sq": "72/175",
+   "v_m_sq_unit_parent": "3/2",
+   "b_sq_unit_parent": "28/115",
+   "kappa_sq": {
+    "X": "112/345",
+    "Y": "28/115"
+   },
+   "kappa_sq_over_b_sq": {
+    "X": "4/3",
+    "Y": "1"
+   },
+   "limit_delta_sq_over_u_sq": {
+    "X": "2",
+    "Y": "3/2"
+   },
+   "limit_from_direct_values_extrapolated": {
+    "X": "2",
+    "Y": "3/2"
+   },
+   "creator_limit_sq": "3/2",
+   "creator_limit_sq_over_v_m_sq": "1",
+   "kappa_creator_sq_ge_b_sq": true,
+   "response01_wording_limit_eq_v_m_holds": true,
+   "samples_by_eta": [
+    {
+     "eta": "1/10",
+     "u_sq": "12/4375",
+     "X": {
+      "delta_sq": "336/62285",
+      "delta_sq_over_u_sq": "24500/12457",
+      "limit_minus_value": "414/12457",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "252/62285",
+      "delta_sq_over_u_sq": "18375/12457",
+      "limit_minus_value": "621/24914",
+      "equals_closed_form_exactly": true
+     },
+     "matches_record15_eq9_closed_forms_84_and_112_over_(56+345u^2)": true
+    },
+    {
+     "eta": "1/100",
+     "u_sq": "3/109375",
+     "X": {
+      "delta_sq": "336/6126035",
+      "delta_sq_over_u_sq": "2450000/1225207",
+      "limit_minus_value": "414/1225207",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "252/6126035",
+      "delta_sq_over_u_sq": "1837500/1225207",
+      "limit_minus_value": "621/2450414",
+      "equals_closed_form_exactly": true
+     },
+     "matches_record15_eq9_closed_forms_84_and_112_over_(56+345u^2)": true
+    },
+    {
+     "eta": "-1/1000",
+     "u_sq": "3/10937500",
+     "X": {
+      "delta_sq": "336/612501035",
+      "delta_sq_over_u_sq": "245000000/122500207",
+      "limit_minus_value": "414/122500207",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "252/612501035",
+      "delta_sq_over_u_sq": "183750000/122500207",
+      "limit_minus_value": "621/245000414",
+      "equals_closed_form_exactly": true
+     },
+     "matches_record15_eq9_closed_forms_84_and_112_over_(56+345u^2)": true
+    },
+    {
+     "eta": "1/10000",
+     "u_sq": "3/1093750000",
+     "X": {
+      "delta_sq": "336/61250001035",
+      "delta_sq_over_u_sq": "24500000000/12250000207",
+      "limit_minus_value": "414/12250000207",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "252/61250001035",
+      "delta_sq_over_u_sq": "18375000000/12250000207",
+      "limit_minus_value": "621/24500000414",
+      "equals_closed_form_exactly": true
+     },
+     "matches_record15_eq9_closed_forms_84_and_112_over_(56+345u^2)": true
+    },
+    {
+     "eta": "1/1000000",
+     "u_sq": "3/10937500000000",
+     "X": {
+      "delta_sq": "336/612500000001035",
+      "delta_sq_over_u_sq": "245000000000000/122500000000207",
+      "limit_minus_value": "414/122500000000207",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "252/612500000001035",
+      "delta_sq_over_u_sq": "183750000000000/122500000000207",
+      "limit_minus_value": "621/245000000000414",
+      "equals_closed_form_exactly": true
+     },
+     "matches_record15_eq9_closed_forms_84_and_112_over_(56+345u^2)": true
+    }
+   ]
+  },
+  {
+   "name": "T3_uniform_BJ_source_(2,2)",
+   "nodes": 10,
+   "t": 1,
+   "selection_degree_t+1": "XYY",
+   "perturbed_column": "(2,2)",
+   "creating_operator": "Y",
+   "normal_direction": "normal part of x^0 y^3 w.r.t. S_2",
+   "r_sq": "72/175",
+   "v_m_sq_unit_parent": "103/30",
+   "b_sq_unit_parent": "28/45",
+   "kappa_sq": {
+    "X": "0",
+    "Y": "28/45"
+   },
+   "kappa_sq_over_b_sq": {
+    "X": "0",
+    "Y": "1"
+   },
+   "limit_delta_sq_over_u_sq": {
+    "X": "0",
+    "Y": "103/30"
+   },
+   "limit_from_direct_values_extrapolated": {
+    "X": "0 (delta identically 0)",
+    "Y": "103/30"
+   },
+   "creator_limit_sq": "103/30",
+   "creator_limit_sq_over_v_m_sq": "1",
+   "kappa_creator_sq_ge_b_sq": true,
+   "response01_wording_limit_eq_v_m_holds": true,
+   "samples_by_eta": [
+    {
+     "eta": "1/10",
+     "u_sq": "144/90125",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "168/30895",
+      "delta_sq_over_u_sq": "126175/37074",
+      "limit_minus_value": "927/30895",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/100",
+     "u_sq": "36/2253125",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "84/1531385",
+      "delta_sq_over_u_sq": "3154375/918831",
+      "limit_minus_value": "927/3062770",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "-1/1000",
+     "u_sq": "9/56328125",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "84/153125135",
+      "delta_sq_over_u_sq": "315437500/91875081",
+      "limit_minus_value": "927/306250270",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/10000",
+     "u_sq": "9/5632812500",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "84/15312500135",
+      "delta_sq_over_u_sq": "31543750000/9187500081",
+      "limit_minus_value": "927/30625000270",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/1000000",
+     "u_sq": "9/56328125000000",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "84/153125000000135",
+      "delta_sq_over_u_sq": "315437500000000/91875000000081",
+      "limit_minus_value": "927/306250000000270",
+      "equals_closed_form_exactly": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "T3_uniform_BJ_source_(2,0)_normal_x2y",
+   "nodes": 10,
+   "t": 1,
+   "selection_degree_t+1": "XYY",
+   "perturbed_column": "(2,0)",
+   "creating_operator": "X",
+   "normal_direction": "normal part of x^2 y^1 w.r.t. S_2",
+   "r_sq": "104/525",
+   "v_m_sq_unit_parent": "22/5",
+   "b_sq_unit_parent": "7/15",
+   "kappa_sq": {
+    "X": "28/45",
+    "Y": "0"
+   },
+   "kappa_sq_over_b_sq": {
+    "X": "4/3",
+    "Y": "0"
+   },
+   "limit_delta_sq_over_u_sq": {
+    "X": "88/15",
+    "Y": "0"
+   },
+   "limit_from_direct_values_extrapolated": {
+    "X": "88/15",
+    "Y": "0 (delta identically 0)"
+   },
+   "creator_limit_sq": "88/15",
+   "creator_limit_sq_over_v_m_sq": "4/3",
+   "kappa_creator_sq_ge_b_sq": true,
+   "response01_wording_limit_eq_v_m_holds": false,
+   "samples_by_eta": [
+    {
+     "eta": "1/10",
+     "u_sq": "13/28875",
+     "X": {
+      "delta_sq": "728/276795",
+      "delta_sq_over_u_sq": "107800/18453",
+      "limit_minus_value": "2288/92265",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/100",
+     "u_sq": "13/2887500",
+     "X": {
+      "delta_sq": "364/13781835",
+      "delta_sq_over_u_sq": "5390000/918789",
+      "limit_minus_value": "1144/4593945",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "-1/1000",
+     "u_sq": "13/288750000",
+     "X": {
+      "delta_sq": "364/1378125585",
+      "delta_sq_over_u_sq": "539000000/91875039",
+      "limit_minus_value": "1144/459375195",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/10000",
+     "u_sq": "13/28875000000",
+     "X": {
+      "delta_sq": "364/137812500585",
+      "delta_sq_over_u_sq": "53900000000/9187500039",
+      "limit_minus_value": "1144/45937500195",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/1000000",
+     "u_sq": "13/288750000000000",
+     "X": {
+      "delta_sq": "364/1378125000000585",
+      "delta_sq_over_u_sq": "539000000000000/91875000000039",
+      "limit_minus_value": "1144/459375000000195",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "T3_uniform_BJ_source_(2,1)_normal_x3",
+   "nodes": 10,
+   "t": 1,
+   "selection_degree_t+1": "XYY",
+   "perturbed_column": "(2,1)",
+   "creating_operator": "Y",
+   "normal_direction": "normal part of x^3 y^0 w.r.t. S_2",
+   "r_sq": "72/175",
+   "v_m_sq_unit_parent": "3/2",
+   "b_sq_unit_parent": "28/115",
+   "kappa_sq": {
+    "X": "112/345",
+    "Y": "28/115"
+   },
+   "kappa_sq_over_b_sq": {
+    "X": "4/3",
+    "Y": "1"
+   },
+   "limit_delta_sq_over_u_sq": {
+    "X": "2",
+    "Y": "3/2"
+   },
+   "limit_from_direct_values_extrapolated": {
+    "X": "2",
+    "Y": "3/2"
+   },
+   "creator_limit_sq": "3/2",
+   "creator_limit_sq_over_v_m_sq": "1",
+   "kappa_creator_sq_ge_b_sq": true,
+   "response01_wording_limit_eq_v_m_holds": true,
+   "samples_by_eta": [
+    {
+     "eta": "1/10",
+     "u_sq": "12/4375",
+     "X": {
+      "delta_sq": "336/62285",
+      "delta_sq_over_u_sq": "24500/12457",
+      "limit_minus_value": "414/12457",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "252/62285",
+      "delta_sq_over_u_sq": "18375/12457",
+      "limit_minus_value": "621/24914",
+      "equals_closed_form_exactly": true
+     },
+     "matches_record15_eq9_closed_forms_84_and_112_over_(56+345u^2)": true
+    },
+    {
+     "eta": "1/100",
+     "u_sq": "3/109375",
+     "X": {
+      "delta_sq": "336/6126035",
+      "delta_sq_over_u_sq": "2450000/1225207",
+      "limit_minus_value": "414/1225207",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "252/6126035",
+      "delta_sq_over_u_sq": "1837500/1225207",
+      "limit_minus_value": "621/2450414",
+      "equals_closed_form_exactly": true
+     },
+     "matches_record15_eq9_closed_forms_84_and_112_over_(56+345u^2)": true
+    },
+    {
+     "eta": "-1/1000",
+     "u_sq": "3/10937500",
+     "X": {
+      "delta_sq": "336/612501035",
+      "delta_sq_over_u_sq": "245000000/122500207",
+      "limit_minus_value": "414/122500207",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "252/612501035",
+      "delta_sq_over_u_sq": "183750000/122500207",
+      "limit_minus_value": "621/245000414",
+      "equals_closed_form_exactly": true
+     },
+     "matches_record15_eq9_closed_forms_84_and_112_over_(56+345u^2)": true
+    },
+    {
+     "eta": "1/10000",
+     "u_sq": "3/1093750000",
+     "X": {
+      "delta_sq": "336/61250001035",
+      "delta_sq_over_u_sq": "24500000000/12250000207",
+      "limit_minus_value": "414/12250000207",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "252/61250001035",
+      "delta_sq_over_u_sq": "18375000000/12250000207",
+      "limit_minus_value": "621/24500000414",
+      "equals_closed_form_exactly": true
+     },
+     "matches_record15_eq9_closed_forms_84_and_112_over_(56+345u^2)": true
+    },
+    {
+     "eta": "1/1000000",
+     "u_sq": "3/10937500000000",
+     "X": {
+      "delta_sq": "336/612500000001035",
+      "delta_sq_over_u_sq": "245000000000000/122500000000207",
+      "limit_minus_value": "414/122500000000207",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "252/612500000001035",
+      "delta_sq_over_u_sq": "183750000000000/122500000000207",
+      "limit_minus_value": "621/245000000000414",
+      "equals_closed_form_exactly": true
+     },
+     "matches_record15_eq9_closed_forms_84_and_112_over_(56+345u^2)": true
+    }
+   ]
+  },
+  {
+   "name": "T3_uniform_mirror_source_(2,1)",
+   "nodes": 10,
+   "t": 1,
+   "selection_degree_t+1": "XXY",
+   "perturbed_column": "(2,1)",
+   "creating_operator": "X",
+   "normal_direction": "normal part of x^0 y^3 w.r.t. S_2",
+   "r_sq": "72/175",
+   "v_m_sq_unit_parent": "8/15",
+   "b_sq_unit_parent": "112/345",
+   "kappa_sq": {
+    "X": "112/345",
+    "Y": "28/115"
+   },
+   "kappa_sq_over_b_sq": {
+    "X": "1",
+    "Y": "3/4"
+   },
+   "limit_delta_sq_over_u_sq": {
+    "X": "8/15",
+    "Y": "2/5"
+   },
+   "limit_from_direct_values_extrapolated": {
+    "X": "8/15",
+    "Y": "2/5"
+   },
+   "creator_limit_sq": "8/15",
+   "creator_limit_sq_over_v_m_sq": "1",
+   "kappa_creator_sq_ge_b_sq": true,
+   "response01_wording_limit_eq_v_m_holds": true,
+   "samples_by_eta": [
+    {
+     "eta": "1/10",
+     "u_sq": "9/875",
+     "X": {
+      "delta_sq": "336/62285",
+      "delta_sq_over_u_sq": "19600/37371",
+      "limit_minus_value": "552/62285",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "252/62285",
+      "delta_sq_over_u_sq": "4900/12457",
+      "limit_minus_value": "414/62285",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/100",
+     "u_sq": "9/87500",
+     "X": {
+      "delta_sq": "336/6126035",
+      "delta_sq_over_u_sq": "1960000/3675621",
+      "limit_minus_value": "552/6126035",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "252/6126035",
+      "delta_sq_over_u_sq": "490000/1225207",
+      "limit_minus_value": "414/6126035",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "-1/1000",
+     "u_sq": "9/8750000",
+     "X": {
+      "delta_sq": "336/612501035",
+      "delta_sq_over_u_sq": "196000000/367500621",
+      "limit_minus_value": "552/612501035",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "252/612501035",
+      "delta_sq_over_u_sq": "49000000/122500207",
+      "limit_minus_value": "414/612501035",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/10000",
+     "u_sq": "9/875000000",
+     "X": {
+      "delta_sq": "336/61250001035",
+      "delta_sq_over_u_sq": "19600000000/36750000621",
+      "limit_minus_value": "552/61250001035",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "252/61250001035",
+      "delta_sq_over_u_sq": "4900000000/12250000207",
+      "limit_minus_value": "414/61250001035",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/1000000",
+     "u_sq": "9/8750000000000",
+     "X": {
+      "delta_sq": "336/612500000001035",
+      "delta_sq_over_u_sq": "196000000000000/367500000000621",
+      "limit_minus_value": "552/612500000001035",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "252/612500000001035",
+      "delta_sq_over_u_sq": "49000000000000/122500000000207",
+      "limit_minus_value": "414/612500000001035",
+      "equals_closed_form_exactly": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "Q3_product_grid_uniform_BJ_source_(2,0)",
+   "nodes": 16,
+   "t": 1,
+   "selection_degree_t+1": "XYY",
+   "perturbed_column": "(2,0)",
+   "creating_operator": "X",
+   "normal_direction": "normal part of x^0 y^3 w.r.t. S_2",
+   "r_sq": "9/20",
+   "v_m_sq_unit_parent": "43/10",
+   "b_sq_unit_parent": "4/5",
+   "kappa_sq": {
+    "X": "4/5",
+    "Y": "0"
+   },
+   "kappa_sq_over_b_sq": {
+    "X": "1",
+    "Y": "0"
+   },
+   "limit_delta_sq_over_u_sq": {
+    "X": "43/10",
+    "Y": "0"
+   },
+   "limit_from_direct_values_extrapolated": {
+    "X": "43/10",
+    "Y": "0 (delta identically 0)"
+   },
+   "creator_limit_sq": "43/10",
+   "creator_limit_sq_over_v_m_sq": "1",
+   "kappa_creator_sq_ge_b_sq": true,
+   "response01_wording_limit_eq_v_m_holds": true,
+   "samples_by_eta": [
+    {
+     "eta": "1/10",
+     "u_sq": "9/10750",
+     "X": {
+      "delta_sq": "36/10045",
+      "delta_sq_over_u_sq": "8600/2009",
+      "limit_minus_value": "387/20090",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/100",
+     "u_sq": "9/1075000",
+     "X": {
+      "delta_sq": "36/1000045",
+      "delta_sq_over_u_sq": "860000/200009",
+      "limit_minus_value": "387/2000090",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "-1/1000",
+     "u_sq": "9/107500000",
+     "X": {
+      "delta_sq": "36/100000045",
+      "delta_sq_over_u_sq": "86000000/20000009",
+      "limit_minus_value": "387/200000090",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/10000",
+     "u_sq": "9/10750000000",
+     "X": {
+      "delta_sq": "36/10000000045",
+      "delta_sq_over_u_sq": "8600000000/2000000009",
+      "limit_minus_value": "387/20000000090",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/1000000",
+     "u_sq": "9/107500000000000",
+     "X": {
+      "delta_sq": "36/100000000000045",
+      "delta_sq_over_u_sq": "86000000000000/20000000000009",
+      "limit_minus_value": "387/200000000000090",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "Q3_product_grid_uniform_BJ_source_(2,1)",
+   "nodes": 16,
+   "t": 1,
+   "selection_degree_t+1": "XYY",
+   "perturbed_column": "(2,1)",
+   "creating_operator": "Y",
+   "normal_direction": "normal part of x^0 y^3 w.r.t. S_2",
+   "r_sq": "9/20",
+   "v_m_sq_unit_parent": "7/2",
+   "b_sq_unit_parent": "5/4",
+   "kappa_sq": {
+    "X": "5/4",
+    "Y": "5/4"
+   },
+   "kappa_sq_over_b_sq": {
+    "X": "1",
+    "Y": "1"
+   },
+   "limit_delta_sq_over_u_sq": {
+    "X": "7/2",
+    "Y": "7/2"
+   },
+   "limit_from_direct_values_extrapolated": {
+    "X": "7/2",
+    "Y": "7/2"
+   },
+   "creator_limit_sq": "7/2",
+   "creator_limit_sq_over_v_m_sq": "1",
+   "kappa_creator_sq_ge_b_sq": true,
+   "response01_wording_limit_eq_v_m_holds": true,
+   "samples_by_eta": [
+    {
+     "eta": "1/10",
+     "u_sq": "9/8750",
+     "X": {
+      "delta_sq": "45/12536",
+      "delta_sq_over_u_sq": "21875/6268",
+      "limit_minus_value": "63/6268",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "45/12536",
+      "delta_sq_over_u_sq": "21875/6268",
+      "limit_minus_value": "63/6268",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/100",
+     "u_sq": "9/875000",
+     "X": {
+      "delta_sq": "45/1250036",
+      "delta_sq_over_u_sq": "1093750/312509",
+      "limit_minus_value": "63/625018",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "45/1250036",
+      "delta_sq_over_u_sq": "1093750/312509",
+      "limit_minus_value": "63/625018",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "-1/1000",
+     "u_sq": "9/87500000",
+     "X": {
+      "delta_sq": "45/125000036",
+      "delta_sq_over_u_sq": "15625000/4464287",
+      "limit_minus_value": "9/8928574",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "45/125000036",
+      "delta_sq_over_u_sq": "15625000/4464287",
+      "limit_minus_value": "9/8928574",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/10000",
+     "u_sq": "9/8750000000",
+     "X": {
+      "delta_sq": "45/12500000036",
+      "delta_sq_over_u_sq": "10937500000/3125000009",
+      "limit_minus_value": "63/6250000018",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "45/12500000036",
+      "delta_sq_over_u_sq": "10937500000/3125000009",
+      "limit_minus_value": "63/6250000018",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/1000000",
+     "u_sq": "9/87500000000000",
+     "X": {
+      "delta_sq": "45/125000000000036",
+      "delta_sq_over_u_sq": "15625000000000/4464285714287",
+      "limit_minus_value": "9/8928571428574",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "45/125000000000036",
+      "delta_sq_over_u_sq": "15625000000000/4464285714287",
+      "limit_minus_value": "9/8928571428574",
+      "equals_closed_form_exactly": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "Q3_product_grid_uniform_BJ_source_(2,2)",
+   "nodes": 16,
+   "t": 1,
+   "selection_degree_t+1": "XYY",
+   "perturbed_column": "(2,2)",
+   "creating_operator": "Y",
+   "normal_direction": "normal part of x^0 y^3 w.r.t. S_2",
+   "r_sq": "9/20",
+   "v_m_sq_unit_parent": "43/10",
+   "b_sq_unit_parent": "4/5",
+   "kappa_sq": {
+    "X": "0",
+    "Y": "4/5"
+   },
+   "kappa_sq_over_b_sq": {
+    "X": "0",
+    "Y": "1"
+   },
+   "limit_delta_sq_over_u_sq": {
+    "X": "0",
+    "Y": "43/10"
+   },
+   "limit_from_direct_values_extrapolated": {
+    "X": "0 (delta identically 0)",
+    "Y": "43/10"
+   },
+   "creator_limit_sq": "43/10",
+   "creator_limit_sq_over_v_m_sq": "1",
+   "kappa_creator_sq_ge_b_sq": true,
+   "response01_wording_limit_eq_v_m_holds": true,
+   "samples_by_eta": [
+    {
+     "eta": "1/10",
+     "u_sq": "9/10750",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "36/10045",
+      "delta_sq_over_u_sq": "8600/2009",
+      "limit_minus_value": "387/20090",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/100",
+     "u_sq": "9/1075000",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "36/1000045",
+      "delta_sq_over_u_sq": "860000/200009",
+      "limit_minus_value": "387/2000090",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "-1/1000",
+     "u_sq": "9/107500000",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "36/100000045",
+      "delta_sq_over_u_sq": "86000000/20000009",
+      "limit_minus_value": "387/200000090",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/10000",
+     "u_sq": "9/10750000000",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "36/10000000045",
+      "delta_sq_over_u_sq": "8600000000/2000000009",
+      "limit_minus_value": "387/20000000090",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/1000000",
+     "u_sq": "9/107500000000000",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "36/100000000000045",
+      "delta_sq_over_u_sq": "86000000000000/20000000000009",
+      "limit_minus_value": "387/200000000000090",
+      "equals_closed_form_exactly": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "T3_nonuniform_weights_BJ_source_(2,1)",
+   "nodes": 10,
+   "t": 1,
+   "selection_degree_t+1": "XYY",
+   "perturbed_column": "(2,1)",
+   "creating_operator": "Y",
+   "normal_direction": "normal part of x^0 y^3 w.r.t. S_2",
+   "r_sq": "1347/2728",
+   "v_m_sq_unit_parent": "91/40",
+   "b_sq_unit_parent": "1604064/8553431",
+   "kappa_sq": {
+    "X": "427750400/1274461219",
+    "Y": "1604064/8553431"
+   },
+   "kappa_sq_over_b_sq": {
+    "X": "800/447",
+    "Y": "1"
+   },
+   "limit_delta_sq_over_u_sq": {
+    "X": "1820/447",
+    "Y": "91/40"
+   },
+   "limit_from_direct_values_extrapolated": {
+    "X": "1820/447",
+    "Y": "91/40"
+   },
+   "creator_limit_sq": "91/40",
+   "creator_limit_sq_over_v_m_sq": "1",
+   "kappa_creator_sq_ge_b_sq": true,
+   "response01_wording_limit_eq_v_m_holds": true,
+   "samples_by_eta": [
+    {
+     "eta": "1/10",
+     "u_sq": "1347/620620",
+     "X": {
+      "delta_sq": "192059929600/22305803160931",
+      "delta_sq_over_u_sq": "265470453248000/66917409482793",
+      "limit_minus_value": "6989692744580/66917409482793",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "720224736/149703376919",
+      "delta_sq_over_u_sq": "331838066560/149703376919",
+      "limit_minus_value": "349484637229/5988135076760",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/100",
+     "u_sq": "1347/62062000",
+     "X": {
+      "delta_sq": "192059929600/2173929240447331",
+      "delta_sq_over_u_sq": "26547045324800000/6521787721341993",
+      "limit_minus_value": "6989692744580/6521787721341993",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "720224736/14590129130519",
+      "delta_sq_over_u_sq": "33183806656000/14590129130519",
+      "limit_minus_value": "349484637229/583605165220760",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "-1/1000",
+     "u_sq": "1347/6206200000",
+     "X": {
+      "delta_sq": "192059929600/217336272969087331",
+      "delta_sq_over_u_sq": "2654704532480000000/652008818907261993",
+      "limit_minus_value": "6989692744580/652008818907261993",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "720224736/1458632704490519",
+      "delta_sq_over_u_sq": "3318380665600000/1458632704490519",
+      "limit_minus_value": "349484637229/58345308179620760",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/10000",
+     "u_sq": "1347/620620000000",
+     "X": {
+      "delta_sq": "192059929600/21733570645833087331",
+      "delta_sq_over_u_sq": "265470453248000000000/65200711937499261993",
+      "limit_minus_value": "6989692744580/65200711937499261993",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "720224736/145862890240490519",
+      "delta_sq_over_u_sq": "331838066560000000/145862890240490519",
+      "limit_minus_value": "349484637229/5834515609619620760",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/1000000",
+     "u_sq": "1347/6206200000000000",
+     "X": {
+      "delta_sq": "192059929600/217335700736572233087331",
+      "delta_sq_over_u_sq": "2654704532480000000000000/652007102209716699261993",
+      "limit_minus_value": "6989692744580/652007102209716699261993",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "720224736/1458628864003840490519",
+      "delta_sq_over_u_sq": "3318380665600000000000/1458628864003840490519",
+      "limit_minus_value": "349484637229/58345154560153619620760",
+      "equals_closed_form_exactly": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "T4_uniform_t2_XYYY_source_(3,0)",
+   "nodes": 15,
+   "t": 2,
+   "selection_degree_t+1": "XYYY",
+   "perturbed_column": "(3,0)",
+   "creating_operator": "X",
+   "normal_direction": "normal part of x^0 y^4 w.r.t. S_3",
+   "r_sq": "32/21",
+   "v_m_sq_unit_parent": "254/35",
+   "b_sq_unit_parent": "27/56",
+   "kappa_sq": {
+    "X": "243/280",
+    "Y": "0"
+   },
+   "kappa_sq_over_b_sq": {
+    "X": "9/5",
+    "Y": "0"
+   },
+   "limit_delta_sq_over_u_sq": {
+    "X": "2286/175",
+    "Y": "0"
+   },
+   "limit_from_direct_values_extrapolated": {
+    "X": "2286/175",
+    "Y": "0 (delta identically 0)"
+   },
+   "creator_limit_sq": "2286/175",
+   "creator_limit_sq_over_v_m_sq": "9/5",
+   "kappa_creator_sq_ge_b_sq": true,
+   "response01_wording_limit_eq_v_m_holds": false,
+   "samples_by_eta": [
+    {
+     "eta": "1/10",
+     "u_sq": "5/5334",
+     "X": {
+      "delta_sq": "243/20125",
+      "delta_sq_over_u_sq": "185166/14375",
+      "limit_minus_value": "18288/100625",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/100",
+     "u_sq": "1/106680",
+     "X": {
+      "delta_sq": "243/1984780",
+      "delta_sq_over_u_sq": "185166/14177",
+      "limit_minus_value": "4572/2480975",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "-1/1000",
+     "u_sq": "1/10668000",
+     "X": {
+      "delta_sq": "243/198450280",
+      "delta_sq_over_u_sq": "9258300/708751",
+      "limit_minus_value": "2286/124031425",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/10000",
+     "u_sq": "1/1066800000",
+     "X": {
+      "delta_sq": "243/19845000280",
+      "delta_sq_over_u_sq": "925830000/70875001",
+      "limit_minus_value": "2286/12403125175",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/1000000",
+     "u_sq": "1/10668000000000",
+     "X": {
+      "delta_sq": "243/198450000000280",
+      "delta_sq_over_u_sq": "9258300000000/708750000001",
+      "limit_minus_value": "2286/124031250000175",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "T4_uniform_t2_XYYY_source_(3,1)",
+   "nodes": 15,
+   "t": 2,
+   "selection_degree_t+1": "XYYY",
+   "perturbed_column": "(3,1)",
+   "creating_operator": "Y",
+   "normal_direction": "normal part of x^0 y^4 w.r.t. S_3",
+   "r_sq": "32/21",
+   "v_m_sq_unit_parent": "34/15",
+   "b_sq_unit_parent": "1215/6832",
+   "kappa_sq": {
+    "X": "16767/27328",
+    "Y": "1215/6832"
+   },
+   "kappa_sq_over_b_sq": {
+    "X": "69/20",
+    "Y": "1"
+   },
+   "limit_delta_sq_over_u_sq": {
+    "X": "391/50",
+    "Y": "34/15"
+   },
+   "limit_from_direct_values_extrapolated": {
+    "X": "391/50",
+    "Y": "34/15"
+   },
+   "creator_limit_sq": "34/15",
+   "creator_limit_sq_over_v_m_sq": "1",
+   "kappa_creator_sq_ge_b_sq": true,
+   "response01_wording_limit_eq_v_m_holds": true,
+   "samples_by_eta": [
+    {
+     "eta": "1/10",
+     "u_sq": "5/1666",
+     "X": {
+      "delta_sq": "16767/741748",
+      "delta_sq_over_u_sq": "1995273/264910",
+      "limit_minus_value": "190808/662275",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "1215/185437",
+      "delta_sq_over_u_sq": "57834/26491",
+      "limit_minus_value": "33184/397365",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/100",
+     "u_sq": "1/33320",
+     "X": {
+      "delta_sq": "16767/71469328",
+      "delta_sq_over_u_sq": "9976365/1276238",
+      "limit_minus_value": "47702/15952975",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "1215/17867332",
+      "delta_sq_over_u_sq": "1445850/638119",
+      "limit_minus_value": "8296/9571785",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "-1/1000",
+     "u_sq": "1/3332000",
+     "X": {
+      "delta_sq": "16767/7144227328",
+      "delta_sq_over_u_sq": "249409125/31893872",
+      "limit_minus_value": "23851/797346800",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "1215/1786056832",
+      "delta_sq_over_u_sq": "18073125/7973468",
+      "limit_minus_value": "1037/119602020",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/10000",
+     "u_sq": "1/333200000",
+     "X": {
+      "delta_sq": "16767/714420027328",
+      "delta_sq_over_u_sq": "12470456250/1594687561",
+      "limit_minus_value": "23851/79734378050",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "1215/178605006832",
+      "delta_sq_over_u_sq": "3614625000/1594687561",
+      "limit_minus_value": "2074/23920313415",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/1000000",
+     "u_sq": "1/3332000000000",
+     "X": {
+      "delta_sq": "729/310617391305536",
+      "delta_sq_over_u_sq": "5421937500000/693342391307",
+      "limit_minus_value": "1037/34667119565350",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "1215/1786050000006832",
+      "delta_sq_over_u_sq": "36146250000000/15946875000061",
+      "limit_minus_value": "2074/239203125000915",
+      "equals_closed_form_exactly": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "T4_uniform_t2_XYYY_source_(3,2)",
+   "nodes": 15,
+   "t": 2,
+   "selection_degree_t+1": "XYYY",
+   "perturbed_column": "(3,2)",
+   "creating_operator": "Y",
+   "normal_direction": "normal part of x^0 y^4 w.r.t. S_3",
+   "r_sq": "32/21",
+   "v_m_sq_unit_parent": "123/35",
+   "b_sq_unit_parent": "405/952",
+   "kappa_sq": {
+    "X": "243/952",
+    "Y": "405/952"
+   },
+   "kappa_sq_over_b_sq": {
+    "X": "3/5",
+    "Y": "1"
+   },
+   "limit_delta_sq_over_u_sq": {
+    "X": "369/175",
+    "Y": "123/35"
+   },
+   "limit_from_direct_values_extrapolated": {
+    "X": "369/175",
+    "Y": "123/35"
+   },
+   "creator_limit_sq": "123/35",
+   "creator_limit_sq_over_v_m_sq": "1",
+   "kappa_creator_sq_ge_b_sq": true,
+   "response01_wording_limit_eq_v_m_holds": true,
+   "samples_by_eta": [
+    {
+     "eta": "1/10",
+     "u_sq": "5/861",
+     "X": {
+      "delta_sq": "243/20797",
+      "delta_sq_over_u_sq": "29889/14855",
+      "limit_minus_value": "50184/519925",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "405/20797",
+      "delta_sq_over_u_sq": "9963/2971",
+      "limit_minus_value": "16728/103985",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/100",
+     "u_sq": "1/17220",
+     "X": {
+      "delta_sq": "243/1985452",
+      "delta_sq_over_u_sq": "149445/70909",
+      "limit_minus_value": "12546/12409075",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "405/1985452",
+      "delta_sq_over_u_sq": "249075/70909",
+      "limit_minus_value": "4182/2481815",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "-1/1000",
+     "u_sq": "1/1722000",
+     "X": {
+      "delta_sq": "243/198450952",
+      "delta_sq_over_u_sq": "7472250/3543767",
+      "limit_minus_value": "6273/620159225",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "405/198450952",
+      "delta_sq_over_u_sq": "12453750/3543767",
+      "limit_minus_value": "2091/124031845",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/10000",
+     "u_sq": "1/172200000",
+     "X": {
+      "delta_sq": "243/19845000952",
+      "delta_sq_over_u_sq": "747225000/354375017",
+      "limit_minus_value": "6273/62015627975",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "405/19845000952",
+      "delta_sq_over_u_sq": "1245375000/354375017",
+      "limit_minus_value": "2091/12403125595",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/1000000",
+     "u_sq": "1/1722000000000",
+     "X": {
+      "delta_sq": "243/198450000000952",
+      "delta_sq_over_u_sq": "7472250000000/3543750000017",
+      "limit_minus_value": "6273/620156250002975",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "405/198450000000952",
+      "delta_sq_over_u_sq": "12453750000000/3543750000017",
+      "limit_minus_value": "2091/124031250000595",
+      "equals_closed_form_exactly": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "T4_uniform_t2_XYYY_source_(3,3)",
+   "nodes": 15,
+   "t": 2,
+   "selection_degree_t+1": "XYYY",
+   "perturbed_column": "(3,3)",
+   "creating_operator": "Y",
+   "normal_direction": "normal part of x^0 y^4 w.r.t. S_3",
+   "r_sq": "32/21",
+   "v_m_sq_unit_parent": "118/21",
+   "b_sq_unit_parent": "243/280",
+   "kappa_sq": {
+    "X": "0",
+    "Y": "243/280"
+   },
+   "kappa_sq_over_b_sq": {
+    "X": "0",
+    "Y": "1"
+   },
+   "limit_delta_sq_over_u_sq": {
+    "X": "0",
+    "Y": "118/21"
+   },
+   "limit_from_direct_values_extrapolated": {
+    "X": "0 (delta identically 0)",
+    "Y": "118/21"
+   },
+   "creator_limit_sq": "118/21",
+   "creator_limit_sq_over_v_m_sq": "1",
+   "kappa_creator_sq_ge_b_sq": true,
+   "response01_wording_limit_eq_v_m_holds": true,
+   "samples_by_eta": [
+    {
+     "eta": "1/10",
+     "u_sq": "9/4130",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "243/20125",
+      "delta_sq_over_u_sq": "3186/575",
+      "limit_minus_value": "944/12075",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/100",
+     "u_sq": "9/413000",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "243/1984780",
+      "delta_sq_over_u_sq": "79650/14177",
+      "limit_minus_value": "236/297717",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "-1/1000",
+     "u_sq": "9/41300000",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "243/198450280",
+      "delta_sq_over_u_sq": "3982500/708751",
+      "limit_minus_value": "118/14883771",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/10000",
+     "u_sq": "9/4130000000",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "243/19845000280",
+      "delta_sq_over_u_sq": "398250000/70875001",
+      "limit_minus_value": "118/1488375021",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/1000000",
+     "u_sq": "9/41300000000000",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "243/198450000000280",
+      "delta_sq_over_u_sq": "3982500000000/708750000001",
+      "limit_minus_value": "118/14883750000021",
+      "equals_closed_form_exactly": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "T4_uniform_t2_XXXY_source_(3,0)",
+   "nodes": 15,
+   "t": 2,
+   "selection_degree_t+1": "XXXY",
+   "perturbed_column": "(3,0)",
+   "creating_operator": "X",
+   "normal_direction": "normal part of x^0 y^4 w.r.t. S_3",
+   "r_sq": "32/21",
+   "v_m_sq_unit_parent": "254/35",
+   "b_sq_unit_parent": "54/49",
+   "kappa_sq": {
+    "X": "54/49",
+    "Y": "117/392"
+   },
+   "kappa_sq_over_b_sq": {
+    "X": "1",
+    "Y": "13/48"
+   },
+   "limit_delta_sq_over_u_sq": {
+    "X": "254/35",
+    "Y": "1651/840"
+   },
+   "limit_from_direct_values_extrapolated": {
+    "X": "254/35",
+    "Y": "1651/840"
+   },
+   "creator_limit_sq": "254/35",
+   "creator_limit_sq_over_v_m_sq": "1",
+   "kappa_creator_sq_ge_b_sq": true,
+   "response01_wording_limit_eq_v_m_holds": true,
+   "samples_by_eta": [
+    {
+     "eta": "1/10",
+     "u_sq": "5/5334",
+     "X": {
+      "delta_sq": "54/7987",
+      "delta_sq_over_u_sq": "41148/5705",
+      "limit_minus_value": "254/5705",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "117/63896",
+      "delta_sq_over_u_sq": "44577/22820",
+      "limit_minus_value": "1651/136920",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/100",
+     "u_sq": "1/106680",
+     "X": {
+      "delta_sq": "54/793849",
+      "delta_sq_over_u_sq": "822960/113407",
+      "limit_minus_value": "254/567035",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "117/6350792",
+      "delta_sq_over_u_sq": "222885/113407",
+      "limit_minus_value": "1651/13608840",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "-1/1000",
+     "u_sq": "1/10668000",
+     "X": {
+      "delta_sq": "54/79380049",
+      "delta_sq_over_u_sq": "82296000/11340007",
+      "limit_minus_value": "254/56700035",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "117/635040392",
+      "delta_sq_over_u_sq": "22288500/11340007",
+      "limit_minus_value": "1651/1360800840",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/10000",
+     "u_sq": "1/1066800000",
+     "X": {
+      "delta_sq": "54/7938000049",
+      "delta_sq_over_u_sq": "8229600000/1134000007",
+      "limit_minus_value": "254/5670000035",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "117/63504000392",
+      "delta_sq_over_u_sq": "2228850000/1134000007",
+      "limit_minus_value": "1651/136080000840",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/1000000",
+     "u_sq": "1/10668000000000",
+     "X": {
+      "delta_sq": "54/79380000000049",
+      "delta_sq_over_u_sq": "82296000000000/11340000000007",
+      "limit_minus_value": "254/56700000000035",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "117/635040000000392",
+      "delta_sq_over_u_sq": "22288500000000/11340000000007",
+      "limit_minus_value": "1651/1360800000000840",
+      "equals_closed_form_exactly": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "T4_uniform_t2_XXXY_source_(3,1)",
+   "nodes": 15,
+   "t": 2,
+   "selection_degree_t+1": "XXXY",
+   "perturbed_column": "(3,1)",
+   "creating_operator": "X",
+   "normal_direction": "normal part of x^0 y^4 w.r.t. S_3",
+   "r_sq": "32/21",
+   "v_m_sq_unit_parent": "53/14",
+   "b_sq_unit_parent": "3645/4774",
+   "kappa_sq": {
+    "X": "3645/4774",
+    "Y": "1215/2728"
+   },
+   "kappa_sq_over_b_sq": {
+    "X": "1",
+    "Y": "7/12"
+   },
+   "limit_delta_sq_over_u_sq": {
+    "X": "53/14",
+    "Y": "53/24"
+   },
+   "limit_from_direct_values_extrapolated": {
+    "X": "53/14",
+    "Y": "53/24"
+   },
+   "creator_limit_sq": "53/14",
+   "creator_limit_sq_over_v_m_sq": "1",
+   "kappa_creator_sq_ge_b_sq": true,
+   "response01_wording_limit_eq_v_m_holds": true,
+   "samples_by_eta": [
+    {
+     "eta": "1/10",
+     "u_sq": "2/371",
+     "X": {
+      "delta_sq": "3645/183379",
+      "delta_sq_over_u_sq": "193185/52394",
+      "limit_minus_value": "18073/183379",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "1215/104788",
+      "delta_sq_over_u_sq": "450765/209576",
+      "limit_minus_value": "18073/314364",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/100",
+     "u_sq": "1/18550",
+     "X": {
+      "delta_sq": "3645/17865274",
+      "delta_sq_over_u_sq": "4829625/1276091",
+      "limit_minus_value": "18073/17865274",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "1215/10208728",
+      "delta_sq_over_u_sq": "11269125/5104364",
+      "limit_minus_value": "18073/30626184",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "-1/1000",
+     "u_sq": "1/1855000",
+     "X": {
+      "delta_sq": "3645/1786054774",
+      "delta_sq_over_u_sq": "482962500/127575341",
+      "limit_minus_value": "18073/1786054774",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "1215/1020602728",
+      "delta_sq_over_u_sq": "281728125/127575341",
+      "limit_minus_value": "18073/3061808184",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/10000",
+     "u_sq": "1/185500000",
+     "X": {
+      "delta_sq": "3645/178605004774",
+      "delta_sq_over_u_sq": "48296250000/12757500341",
+      "limit_minus_value": "18073/178605004774",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "1215/102060002728",
+      "delta_sq_over_u_sq": "28172812500/12757500341",
+      "limit_minus_value": "18073/306180008184",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/1000000",
+     "u_sq": "1/1855000000000",
+     "X": {
+      "delta_sq": "3645/1786050000004774",
+      "delta_sq_over_u_sq": "482962500000000/127575000000341",
+      "limit_minus_value": "18073/1786050000004774",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "1215/1020600000002728",
+      "delta_sq_over_u_sq": "281728125000000/127575000000341",
+      "limit_minus_value": "18073/3061800000008184",
+      "equals_closed_form_exactly": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "T4_uniform_t2_XXXY_source_(3,2)",
+   "nodes": 15,
+   "t": 2,
+   "selection_degree_t+1": "XXXY",
+   "perturbed_column": "(3,2)",
+   "creating_operator": "X",
+   "normal_direction": "normal part of x^0 y^4 w.r.t. S_3",
+   "r_sq": "32/21",
+   "v_m_sq_unit_parent": "5/14",
+   "b_sq_unit_parent": "243/952",
+   "kappa_sq": {
+    "X": "243/952",
+    "Y": "405/952"
+   },
+   "kappa_sq_over_b_sq": {
+    "X": "1",
+    "Y": "5/3"
+   },
+   "limit_delta_sq_over_u_sq": {
+    "X": "5/14",
+    "Y": "25/42"
+   },
+   "limit_from_direct_values_extrapolated": {
+    "X": "5/14",
+    "Y": "25/42"
+   },
+   "creator_limit_sq": "5/14",
+   "creator_limit_sq_over_v_m_sq": "1",
+   "kappa_creator_sq_ge_b_sq": true,
+   "response01_wording_limit_eq_v_m_holds": true,
+   "samples_by_eta": [
+    {
+     "eta": "1/10",
+     "u_sq": "6/175",
+     "X": {
+      "delta_sq": "243/20797",
+      "delta_sq_over_u_sq": "2025/5942",
+      "limit_minus_value": "340/20797",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "405/20797",
+      "delta_sq_over_u_sq": "3375/5942",
+      "limit_minus_value": "1700/62391",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/100",
+     "u_sq": "3/8750",
+     "X": {
+      "delta_sq": "243/1985452",
+      "delta_sq_over_u_sq": "50625/141818",
+      "limit_minus_value": "85/496363",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "405/1985452",
+      "delta_sq_over_u_sq": "84375/141818",
+      "limit_minus_value": "425/1489089",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "-1/1000",
+     "u_sq": "3/875000",
+     "X": {
+      "delta_sq": "243/198450952",
+      "delta_sq_over_u_sq": "1265625/3543767",
+      "limit_minus_value": "85/49612738",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "405/198450952",
+      "delta_sq_over_u_sq": "2109375/3543767",
+      "limit_minus_value": "425/148838214",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/10000",
+     "u_sq": "3/87500000",
+     "X": {
+      "delta_sq": "243/19845000952",
+      "delta_sq_over_u_sq": "126562500/354375017",
+      "limit_minus_value": "85/4961250238",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "405/19845000952",
+      "delta_sq_over_u_sq": "210937500/354375017",
+      "limit_minus_value": "425/14883750714",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/1000000",
+     "u_sq": "3/875000000000",
+     "X": {
+      "delta_sq": "243/198450000000952",
+      "delta_sq_over_u_sq": "1265625000000/3543750000017",
+      "limit_minus_value": "85/49612500000238",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "405/198450000000952",
+      "delta_sq_over_u_sq": "2109375000000/3543750000017",
+      "limit_minus_value": "425/148837500000714",
+      "equals_closed_form_exactly": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "T4_uniform_t2_XXXY_source_(3,3)",
+   "nodes": 15,
+   "t": 2,
+   "selection_degree_t+1": "XXXY",
+   "perturbed_column": "(3,3)",
+   "creating_operator": "Y",
+   "normal_direction": "normal part of x^0 y^4 w.r.t. S_3",
+   "r_sq": "32/21",
+   "v_m_sq_unit_parent": "118/21",
+   "b_sq_unit_parent": "243/280",
+   "kappa_sq": {
+    "X": "0",
+    "Y": "243/280"
+   },
+   "kappa_sq_over_b_sq": {
+    "X": "0",
+    "Y": "1"
+   },
+   "limit_delta_sq_over_u_sq": {
+    "X": "0",
+    "Y": "118/21"
+   },
+   "limit_from_direct_values_extrapolated": {
+    "X": "0 (delta identically 0)",
+    "Y": "118/21"
+   },
+   "creator_limit_sq": "118/21",
+   "creator_limit_sq_over_v_m_sq": "1",
+   "kappa_creator_sq_ge_b_sq": true,
+   "response01_wording_limit_eq_v_m_holds": true,
+   "samples_by_eta": [
+    {
+     "eta": "1/10",
+     "u_sq": "9/4130",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "243/20125",
+      "delta_sq_over_u_sq": "3186/575",
+      "limit_minus_value": "944/12075",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/100",
+     "u_sq": "9/413000",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "243/1984780",
+      "delta_sq_over_u_sq": "79650/14177",
+      "limit_minus_value": "236/297717",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "-1/1000",
+     "u_sq": "9/41300000",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "243/198450280",
+      "delta_sq_over_u_sq": "3982500/708751",
+      "limit_minus_value": "118/14883771",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/10000",
+     "u_sq": "9/4130000000",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "243/19845000280",
+      "delta_sq_over_u_sq": "398250000/70875001",
+      "limit_minus_value": "118/1488375021",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/1000000",
+     "u_sq": "9/41300000000000",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "243/198450000000280",
+      "delta_sq_over_u_sq": "3982500000000/708750000001",
+      "limit_minus_value": "118/14883750000021",
+      "equals_closed_form_exactly": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "T4_uniform_t2_XYXY_source_(3,0)",
+   "nodes": 15,
+   "t": 2,
+   "selection_degree_t+1": "XYXY",
+   "perturbed_column": "(3,0)",
+   "creating_operator": "X",
+   "normal_direction": "normal part of x^0 y^4 w.r.t. S_3",
+   "r_sq": "32/21",
+   "v_m_sq_unit_parent": "254/35",
+   "b_sq_unit_parent": "1215/2296",
+   "kappa_sq": {
+    "X": "1215/1312",
+    "Y": "405/9184"
+   },
+   "kappa_sq_over_b_sq": {
+    "X": "7/4",
+    "Y": "1/12"
+   },
+   "limit_delta_sq_over_u_sq": {
+    "X": "127/10",
+    "Y": "127/210"
+   },
+   "limit_from_direct_values_extrapolated": {
+    "X": "127/10",
+    "Y": "127/210"
+   },
+   "creator_limit_sq": "127/10",
+   "creator_limit_sq_over_v_m_sq": "7/4",
+   "kappa_creator_sq_ge_b_sq": true,
+   "response01_wording_limit_eq_v_m_holds": false,
+   "samples_by_eta": [
+    {
+     "eta": "1/10",
+     "u_sq": "5/5334",
+     "X": {
+      "delta_sq": "1215/103372",
+      "delta_sq_over_u_sq": "648081/51686",
+      "limit_minus_value": "20828/129215",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "405/723604",
+      "delta_sq_over_u_sq": "30861/51686",
+      "limit_minus_value": "20828/2713515",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/100",
+     "u_sq": "1/106680",
+     "X": {
+      "delta_sq": "1215/10207312",
+      "delta_sq_over_u_sq": "16202025/1275914",
+      "limit_minus_value": "5207/3189785",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "405/71451184",
+      "delta_sq_over_u_sq": "771525/1275914",
+      "limit_minus_value": "5207/66985485",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "-1/1000",
+     "u_sq": "1/10668000",
+     "X": {
+      "delta_sq": "1215/1020601312",
+      "delta_sq_over_u_sq": "405050625/31893791",
+      "limit_minus_value": "5207/318937910",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "405/7144209184",
+      "delta_sq_over_u_sq": "19288125/31893791",
+      "limit_minus_value": "5207/6697696110",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/10000",
+     "u_sq": "1/1066800000",
+     "X": {
+      "delta_sq": "1215/102060001312",
+      "delta_sq_over_u_sq": "40505062500/3189375041",
+      "limit_minus_value": "5207/31893750410",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "405/714420009184",
+      "delta_sq_over_u_sq": "1928812500/3189375041",
+      "limit_minus_value": "5207/669768758610",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/1000000",
+     "u_sq": "1/10668000000000",
+     "X": {
+      "delta_sq": "1215/1020600000001312",
+      "delta_sq_over_u_sq": "405050625000000/31893750000041",
+      "limit_minus_value": "5207/318937500000410",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "405/7144200000009184",
+      "delta_sq_over_u_sq": "19288125000000/31893750000041",
+      "limit_minus_value": "5207/6697687500008610",
+      "equals_closed_form_exactly": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "T4_uniform_t2_XYXY_source_(3,1)",
+   "nodes": 15,
+   "t": 2,
+   "selection_degree_t+1": "XYXY",
+   "perturbed_column": "(3,1)",
+   "creating_operator": "Y",
+   "normal_direction": "normal part of x^0 y^4 w.r.t. S_3",
+   "r_sq": "32/21",
+   "v_m_sq_unit_parent": "34/15",
+   "b_sq_unit_parent": "1215/4774",
+   "kappa_sq": {
+    "X": "3645/4774",
+    "Y": "1215/2728"
+   },
+   "kappa_sq_over_b_sq": {
+    "X": "3",
+    "Y": "7/4"
+   },
+   "limit_delta_sq_over_u_sq": {
+    "X": "34/5",
+    "Y": "119/30"
+   },
+   "limit_from_direct_values_extrapolated": {
+    "X": "34/5",
+    "Y": "119/30"
+   },
+   "creator_limit_sq": "119/30",
+   "creator_limit_sq_over_v_m_sq": "7/4",
+   "kappa_creator_sq_ge_b_sq": true,
+   "response01_wording_limit_eq_v_m_holds": false,
+   "samples_by_eta": [
+    {
+     "eta": "1/10",
+     "u_sq": "5/1666",
+     "X": {
+      "delta_sq": "3645/183379",
+      "delta_sq_over_u_sq": "10206/1541",
+      "limit_minus_value": "1364/7705",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "1215/104788",
+      "delta_sq_over_u_sq": "11907/3082",
+      "limit_minus_value": "2387/23115",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/100",
+     "u_sq": "1/33320",
+     "X": {
+      "delta_sq": "3645/17865274",
+      "delta_sq_over_u_sq": "8675100/1276091",
+      "limit_minus_value": "11594/6380455",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "1215/10208728",
+      "delta_sq_over_u_sq": "5060475/1276091",
+      "limit_minus_value": "40579/38282730",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "-1/1000",
+     "u_sq": "1/3332000",
+     "X": {
+      "delta_sq": "3645/1786054774",
+      "delta_sq_over_u_sq": "867510000/127575341",
+      "limit_minus_value": "11594/637876705",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "1215/1020602728",
+      "delta_sq_over_u_sq": "506047500/127575341",
+      "limit_minus_value": "40579/3827260230",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/10000",
+     "u_sq": "1/333200000",
+     "X": {
+      "delta_sq": "3645/178605004774",
+      "delta_sq_over_u_sq": "86751000000/12757500341",
+      "limit_minus_value": "11594/63787501705",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "1215/102060002728",
+      "delta_sq_over_u_sq": "50604750000/12757500341",
+      "limit_minus_value": "40579/382725010230",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/1000000",
+     "u_sq": "1/3332000000000",
+     "X": {
+      "delta_sq": "3645/1786050000004774",
+      "delta_sq_over_u_sq": "867510000000000/127575000000341",
+      "limit_minus_value": "11594/637875000001705",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "1215/1020600000002728",
+      "delta_sq_over_u_sq": "506047500000000/127575000000341",
+      "limit_minus_value": "40579/3827250000010230",
+      "equals_closed_form_exactly": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "T4_uniform_t2_XYXY_source_(3,2)",
+   "nodes": 15,
+   "t": 2,
+   "selection_degree_t+1": "XYXY",
+   "perturbed_column": "(3,2)",
+   "creating_operator": "X",
+   "normal_direction": "normal part of x^0 y^4 w.r.t. S_3",
+   "r_sq": "32/21",
+   "v_m_sq_unit_parent": "5/14",
+   "b_sq_unit_parent": "243/952",
+   "kappa_sq": {
+    "X": "243/952",
+    "Y": "405/952"
+   },
+   "kappa_sq_over_b_sq": {
+    "X": "1",
+    "Y": "5/3"
+   },
+   "limit_delta_sq_over_u_sq": {
+    "X": "5/14",
+    "Y": "25/42"
+   },
+   "limit_from_direct_values_extrapolated": {
+    "X": "5/14",
+    "Y": "25/42"
+   },
+   "creator_limit_sq": "5/14",
+   "creator_limit_sq_over_v_m_sq": "1",
+   "kappa_creator_sq_ge_b_sq": true,
+   "response01_wording_limit_eq_v_m_holds": true,
+   "samples_by_eta": [
+    {
+     "eta": "1/10",
+     "u_sq": "6/175",
+     "X": {
+      "delta_sq": "243/20797",
+      "delta_sq_over_u_sq": "2025/5942",
+      "limit_minus_value": "340/20797",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "405/20797",
+      "delta_sq_over_u_sq": "3375/5942",
+      "limit_minus_value": "1700/62391",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/100",
+     "u_sq": "3/8750",
+     "X": {
+      "delta_sq": "243/1985452",
+      "delta_sq_over_u_sq": "50625/141818",
+      "limit_minus_value": "85/496363",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "405/1985452",
+      "delta_sq_over_u_sq": "84375/141818",
+      "limit_minus_value": "425/1489089",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "-1/1000",
+     "u_sq": "3/875000",
+     "X": {
+      "delta_sq": "243/198450952",
+      "delta_sq_over_u_sq": "1265625/3543767",
+      "limit_minus_value": "85/49612738",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "405/198450952",
+      "delta_sq_over_u_sq": "2109375/3543767",
+      "limit_minus_value": "425/148838214",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/10000",
+     "u_sq": "3/87500000",
+     "X": {
+      "delta_sq": "243/19845000952",
+      "delta_sq_over_u_sq": "126562500/354375017",
+      "limit_minus_value": "85/4961250238",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "405/19845000952",
+      "delta_sq_over_u_sq": "210937500/354375017",
+      "limit_minus_value": "425/14883750714",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/1000000",
+     "u_sq": "3/875000000000",
+     "X": {
+      "delta_sq": "243/198450000000952",
+      "delta_sq_over_u_sq": "1265625000000/3543750000017",
+      "limit_minus_value": "85/49612500000238",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "405/198450000000952",
+      "delta_sq_over_u_sq": "2109375000000/3543750000017",
+      "limit_minus_value": "425/148837500000714",
+      "equals_closed_form_exactly": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "T4_uniform_t2_XYXY_source_(3,3)",
+   "nodes": 15,
+   "t": 2,
+   "selection_degree_t+1": "XYXY",
+   "perturbed_column": "(3,3)",
+   "creating_operator": "Y",
+   "normal_direction": "normal part of x^0 y^4 w.r.t. S_3",
+   "r_sq": "32/21",
+   "v_m_sq_unit_parent": "118/21",
+   "b_sq_unit_parent": "243/280",
+   "kappa_sq": {
+    "X": "0",
+    "Y": "243/280"
+   },
+   "kappa_sq_over_b_sq": {
+    "X": "0",
+    "Y": "1"
+   },
+   "limit_delta_sq_over_u_sq": {
+    "X": "0",
+    "Y": "118/21"
+   },
+   "limit_from_direct_values_extrapolated": {
+    "X": "0 (delta identically 0)",
+    "Y": "118/21"
+   },
+   "creator_limit_sq": "118/21",
+   "creator_limit_sq_over_v_m_sq": "1",
+   "kappa_creator_sq_ge_b_sq": true,
+   "response01_wording_limit_eq_v_m_holds": true,
+   "samples_by_eta": [
+    {
+     "eta": "1/10",
+     "u_sq": "9/4130",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "243/20125",
+      "delta_sq_over_u_sq": "3186/575",
+      "limit_minus_value": "944/12075",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/100",
+     "u_sq": "9/413000",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "243/1984780",
+      "delta_sq_over_u_sq": "79650/14177",
+      "limit_minus_value": "236/297717",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "-1/1000",
+     "u_sq": "9/41300000",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "243/198450280",
+      "delta_sq_over_u_sq": "3982500/708751",
+      "limit_minus_value": "118/14883771",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/10000",
+     "u_sq": "9/4130000000",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "243/19845000280",
+      "delta_sq_over_u_sq": "398250000/70875001",
+      "limit_minus_value": "118/1488375021",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/1000000",
+     "u_sq": "9/41300000000000",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "243/198450000000280",
+      "delta_sq_over_u_sq": "3982500000000/708750000001",
+      "limit_minus_value": "118/14883750000021",
+      "equals_closed_form_exactly": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "random12_t0_source_(1,0)",
+   "nodes": 12,
+   "t": 0,
+   "selection_degree_t+1": "XY",
+   "perturbed_column": "(1,0)",
+   "creating_operator": "X",
+   "normal_direction": "normal part of x^0 y^2 w.r.t. S_1",
+   "r_sq": "56232482218035517508756311/34269253120246711050000",
+   "v_m_sq_unit_parent": "52227953/269500",
+   "b_sq_unit_parent": "6923081438433679/44255337472500",
+   "kappa_sq": {
+    "X": "6923081438433679/44255337472500",
+    "Y": "0"
+   },
+   "kappa_sq_over_b_sq": {
+    "X": "1",
+    "Y": "0"
+   },
+   "limit_delta_sq_over_u_sq": {
+    "X": "52227953/269500",
+    "Y": "0"
+   },
+   "limit_from_direct_values_extrapolated": {
+    "X": "52227953/269500",
+    "Y": "0 (delta identically 0)"
+   },
+   "creator_limit_sq": "52227953/269500",
+   "creator_limit_sq_over_v_m_sq": "1",
+   "kappa_creator_sq_ge_b_sq": true,
+   "response01_wording_limit_eq_v_m_holds": true,
+   "samples_by_eta": [
+    {
+     "eta": "1/10",
+     "u_sq": "2755391628683740357929059239/32542053478351792238617830000",
+     "X": {
+      "delta_sq": "389302053880733606745430244347135146198169/26213470496052061420815189347214458947500",
+      "delta_sq_over_u_sq": "30038838187265791052219425674012144252876/171261340574206801282659237068467798457",
+      "limit_minus_value": "32151844108838557460828106829787629536011/1747564699736804094721012623147630596500",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/100",
+     "u_sq": "2755391628683740357929059239/3254205347835179223861783000000",
+     "X": {
+      "delta_sq": "389302053880733606745430244347135146198169/2374976889335129943900740826031598663947500",
+      "delta_sq_over_u_sq": "3003883818726579105221942567401214425287600/15516515676989515633484840063406444604457",
+      "limit_minus_value": "32151844108838557460828106829787629536011/158331792622341996260049388402106577596500",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "-1/1000",
+     "u_sq": "2755391628683740357929059239/325420534783517922386178300000000",
+     "X": {
+      "delta_sq": "389302053880733606745430244347135146198169/237251318773242918191893304494470019163947500",
+      "delta_sq_over_u_sq": "300388381872657910522194256740121442528760000/1550041949318520398853702922697204125204457",
+      "limit_minus_value": "32151844108838557460828106829787629536011/15816754584882861212792886966298001277596500",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/10000",
+     "u_sq": "2755391628683740357929059239/32542053478351792238617830000000000",
+     "X": {
+      "delta_sq": "389302053880733606745430244347135146198169/23724885507164021742991149671338312069163947500",
+      "delta_sq_over_u_sq": "30038838187265791052219425674012144252876000000/155002585313471608720875511186076972185204457",
+      "limit_minus_value": "32151844108838557460828106829787629536011/1581659033810934782866076644755887471277596500",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/1000000",
+     "u_sq": "2755391628683740357929059239/325420534783517922386178300000000000000",
+     "X": {
+      "delta_sq": "389302053880733606745430244347135146198169/237248830188254030152215480454794143017069163947500",
+      "delta_sq_over_u_sq": "300388381872657910522194256740121442528760000000000/1550025690563259663661141138971321734378185204457",
+      "limit_minus_value": "32151844108838557460828106829787629536011/15816588679216935343481032030319609534471277596500",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "random12_t0_source_(1,1)",
+   "nodes": 12,
+   "t": 0,
+   "selection_degree_t+1": "XY",
+   "perturbed_column": "(1,1)",
+   "creating_operator": "Y",
+   "normal_direction": "normal part of x^0 y^2 w.r.t. S_1",
+   "r_sq": "56232482218035517508756311/34269253120246711050000",
+   "v_m_sq_unit_parent": "1005047/33000",
+   "b_sq_unit_parent": "147299605073057/5283360423000",
+   "kappa_sq": {
+    "X": "0",
+    "Y": "147299605073057/5283360423000"
+   },
+   "kappa_sq_over_b_sq": {
+    "X": "0",
+    "Y": "1"
+   },
+   "limit_delta_sq_over_u_sq": {
+    "X": "0",
+    "Y": "1005047/33000"
+   },
+   "limit_from_direct_values_extrapolated": {
+    "X": "0 (delta identically 0)",
+    "Y": "1005047/33000"
+   },
+   "creator_limit_sq": "1005047/33000",
+   "creator_limit_sq_over_v_m_sq": "1",
+   "kappa_creator_sq_ge_b_sq": true,
+   "response01_wording_limit_eq_v_m_holds": true,
+   "samples_by_eta": [
+    {
+     "eta": "1/10",
+     "u_sq": "56232482218035517508756311/104370333456801806668695000",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "8283022422994332058413409454194364812727/801881216113916796556086571406864553000",
+      "delta_sq_over_u_sq": "5124569633176724712312902985089950205/267293738704638932185362190468954851",
+      "limit_minus_value": "3016120373001494829387148937463130586909/267293738704638932185362190468954851000",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/100",
+     "u_sq": "56232482218035517508756311/10437033345680180666869500000",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "8283022422994332058413409454194364812727/50775570978647488764214078841287379553000",
+      "delta_sq_over_u_sq": "512456963317672471231290298508995020500/16925190326215829588071359613762459851",
+      "limit_minus_value": "3016120373001494829387148937463130586909/16925190326215829588071359613762459851000",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "-1/1000",
+     "u_sq": "56232482218035517508756311/1043703334568018066686950000000",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "8283022422994332058413409454194364812727/5048144547232004685530013305829338879553000",
+      "delta_sq_over_u_sq": "51245696331767247123129029850899502050000/1682714849077334895176671101943112959851",
+      "limit_minus_value": "3016120373001494829387148937463130586909/1682714849077334895176671101943112959851000",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/10000",
+     "u_sq": "56232482218035517508756311/104370333456801806668695000000000",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "8283022422994332058413409454194364812727/504785042172567724362109936004634488879553000",
+      "delta_sq_over_u_sq": "5124569633176724712312902985089950205000000/168261680724189241454036645334878162959851",
+      "limit_minus_value": "3016120373001494829387148937463130586909/168261680724189241454036645334878162959851000",
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/1000000",
+     "u_sq": "56232482218035517508756311/1043703334568018066686950000000000000",
+     "X": {
+      "delta_sq": "0",
+      "delta_sq_over_u_sq": "0",
+      "limit_minus_value": "0",
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": "8283022422994332058413409454194364812727/5047847451058063336457819329193936649488879553000",
+      "delta_sq_over_u_sq": "51245696331767247123129029850899502050000000000/1682615817019354445485939776397978883162959851",
+      "limit_minus_value": "3016120373001494829387148937463130586909/1682615817019354445485939776397978883162959851000",
+      "equals_closed_form_exactly": true
+     }
+    }
+   ]
+  },
+  {
+   "name": "random12_t1_BJ_source_(2,1)",
+   "nodes": 12,
+   "t": 1,
+   "selection_degree_t+1": "XYY",
+   "perturbed_column": "(2,1)",
+   "creating_operator": "Y",
+   "normal_direction": "normal part of x^0 y^3 w.r.t. S_2",
+   "r_sq": "2658482943598755503905388103129468258157889034860096143/57520013091546595640867027881265316433026089600000",
+   "v_m_sq_unit_parent": "188977498202464/10346580828375",
+   "b_sq_unit_parent": "136740579193917711700621833325640230341930734839628128000/40568080979107426666692740425180020390678164372843234493",
+   "kappa_sq": {
+    "X": {
+     "float": "20.458465203778978",
+     "exact_sha256": "408ec6f09bcc50b46cf849e7dae42b5b21e9b89f335a6ee09536ef7d5b0ac359",
+     "exact_len": 140
+    },
+    "Y": "136740579193917711700621833325640230341930734839628128000/40568080979107426666692740425180020390678164372843234493"
+   },
+   "kappa_sq_over_b_sq": {
+    "X": "2409464051217940734/396972435671888615",
+    "Y": "1"
+   },
+   "limit_delta_sq_over_u_sq": {
+    "X": "60511286960027390223168/545837099048846845625",
+    "Y": "188977498202464/10346580828375"
+   },
+   "limit_from_direct_values_extrapolated": {
+    "X": "60511286960027390223168/545837099048846845625",
+    "Y": "188977498202464/10346580828375"
+   },
+   "creator_limit_sq": "188977498202464/10346580828375",
+   "creator_limit_sq_over_v_m_sq": "1",
+   "kappa_creator_sq_ge_b_sq": true,
+   "response01_wording_limit_eq_v_m_holds": true,
+   "samples_by_eta": [
+    {
+     "eta": "1/10",
+     "u_sq": "47286436117791064147965138190363851907854372263056530095541/316217837690573164369327924931789454738736174767360436502528",
+     "X": {
+      "delta_sq": {
+       "float": "9.1573732611578844",
+       "exact_sha256": "25074c63de7c801773557afe13c00ec03f3289abbc8cda797d6f87cfa040079f",
+       "exact_len": 250
+      },
+      "delta_sq_over_u_sq": {
+       "float": "61.237957632407195",
+       "exact_sha256": "c1a3a29e64c442d16d0ef77ac629d2110903d1469038bbb1da98f82f8b8ea3be",
+       "exact_len": 259
+      },
+      "limit_minus_value": {
+       "float": "49.621650601389767",
+       "exact_sha256": "4e5fc10315369472e9f44cfaea6ca4a5bdd6906cf803f0c3d7a75f5a999c6e19",
+       "exact_len": 258
+      },
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": {
+       "float": "1.5087275388072008",
+       "exact_sha256": "208235173e450e9d1a7415034475c3be7679f4d2e1f5acb2f5f29fd4fbd86f6d",
+       "exact_len": 225
+      },
+      "delta_sq_over_u_sq": {
+       "float": "10.089289850421487",
+       "exact_sha256": "b27c1b74d0a736f2dc7f7a4d60c1e9a61c4bfbd35777dd3acf6041fa28627fcd",
+       "exact_len": 228
+      },
+      "limit_minus_value": {
+       "float": "8.1754394680991123",
+       "exact_sha256": "071be68f3a74df791bfaffdd49e7a839bef7382f143f496133c42c1f34fc5c93",
+       "exact_len": 246
+      },
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/100",
+     "u_sq": {
+      "float": "0.0014953753546332826",
+      "exact_sha256": "dcfec4e99281df222defe64e734f5047d0940f54d4d7b124358d9398f73170df",
+      "exact_len": 122
+     },
+     "X": {
+      "delta_sq": {
+       "float": "0.16444422013427373",
+       "exact_sha256": "81ba67d59fa7456ea245ebbbe4f70f7755d1a3e8480d08d1ac261f416cc1d9bc",
+       "exact_len": 252
+      },
+      "delta_sq_over_u_sq": {
+       "float": "109.96852370527473",
+       "exact_sha256": "0d7b6a2034642a56fedcd7900385c3466596d281692e476f6b873d0b858b4c55",
+       "exact_len": 263
+      },
+      "limit_minus_value": {
+       "float": "0.89108452852223075",
+       "exact_sha256": "7b8f2101bd08ade43b9837b0dba6b746f1f2f7846ea76aaab3cb5d4f5854c9fa",
+       "exact_len": 259
+      },
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": {
+       "float": "0.027093088425979669",
+       "exact_sha256": "1478b3add6dbd51840f951ffc08419f4ec8dc0b73bff9d462e8e0dbafbeb40d6",
+       "exact_len": 227
+      },
+      "delta_sq_over_u_sq": {
+       "float": "18.11791824844126",
+       "exact_sha256": "22ef83ca977d9416d85796243fb4f5ae44b0d56ea4d934e97a16a0e49e4f09f5",
+       "exact_len": 232
+      },
+      "limit_minus_value": {
+       "float": "0.14681107007933955",
+       "exact_sha256": "55a3f4b723f663a8b36bba90f47334d480f26f0f13bb1283eaa638b791630826",
+       "exact_len": 247
+      },
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "-1/1000",
+     "u_sq": {
+      "float": "1.4953753546332826e-05",
+      "exact_sha256": "7d9c2e8b63d55543eee0d25263317f422b1ed8068479fea02fb8b2684fea5bd0",
+      "exact_len": 124
+     },
+     "X": {
+      "delta_sq": {
+       "float": "0.001657632940329852",
+       "exact_sha256": "c5ba8f61878138fe9520e3b61d041d7fcd95725c47cc757ada731eb776ba406e",
+       "exact_len": 254
+      },
+      "delta_sq_over_u_sq": {
+       "float": "110.85062591100149",
+       "exact_sha256": "e5cc85679774b23344b64deea6bd55880ee624319f2e0b0aa9d565c7635b610b",
+       "exact_len": 267
+      },
+      "limit_minus_value": {
+       "float": "0.0089823227954783386",
+       "exact_sha256": "a4df127fb5b822a018abee1edce7727a5ae2f201bdbf2a0ac0b094d2dd465684",
+       "exact_len": 261
+      },
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": {
+       "float": "0.0002731041309539651",
+       "exact_sha256": "df30bc0fc7618b8c6332e1297cdb00e6e4e7bf88ef26dd69f371f2f0ff063118",
+       "exact_len": 229
+      },
+      "delta_sq_over_u_sq": {
+       "float": "18.263249431507422",
+       "exact_sha256": "4c8e77a6baec22c1538a555e6b97e0fd5cc2b49b80ec66cd8a92befbcc987e4f",
+       "exact_len": 236
+      },
+      "limit_minus_value": {
+       "float": "0.0014798870131761247",
+       "exact_sha256": "e377ffb7d1175341af7a01418b6b0dd2062bc843bd41d3a17dc4bef78329d26c",
+       "exact_len": 249
+      },
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/10000",
+     "u_sq": {
+      "float": "1.4953753546332827e-07",
+      "exact_sha256": "4f230a57dc13883193bf51bcc3ff3917c6dc45f259986ec7c252bb5feed61727",
+      "exact_len": 126
+     },
+     "X": {
+      "delta_sq": {
+       "float": "1.6577659164690439e-05",
+       "exact_sha256": "fc7b92a7e1a8d716634afb7ca3c7b76d10f1eb52bef10c165dd0877c5c88bee7",
+       "exact_len": 256
+      },
+      "delta_sq_over_u_sq": {
+       "float": "110.85951840336334",
+       "exact_sha256": "bb33a5c9ff2d9b9f0463d922f7341489aa5fdea277b7ad34386b87ca12a5f43c",
+       "exact_len": 271
+      },
+      "limit_minus_value": {
+       "float": "8.9830433618819493e-05",
+       "exact_sha256": "a67aa5f54ab3305a420c3c38f6d3b930969cf3d3afe1577bab3b91b2eefd4060",
+       "exact_len": 263
+      },
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": {
+       "float": "2.7312603950322711e-06",
+       "exact_sha256": "ef08ba0504888c8fb7fa709ef5f1afd45898322fd10058abc5029c20880fe614",
+       "exact_len": 231
+      },
+      "delta_sq_over_u_sq": {
+       "float": "18.264714518463293",
+       "exact_sha256": "f07244f2d54e9e07fe84ceb2285462a1caf133922a253ac6c990a1652dd92aff",
+       "exact_len": 240
+      },
+      "limit_minus_value": {
+       "float": "1.4800057304486069e-05",
+       "exact_sha256": "26b397b703622c424423c9f7faa2c7ba23281dc41d0f4730819979d92a2feb72",
+       "exact_len": 251
+      },
+      "equals_closed_form_exactly": true
+     }
+    },
+    {
+     "eta": "1/1000000",
+     "u_sq": {
+      "float": "1.4953753546332825e-11",
+      "exact_sha256": "953e58d0b575467f96e70e6571ed278c4876287f00886485b5e7434f279ef2dd",
+      "exact_len": 130
+     },
+     "X": {
+      "delta_sq": {
+       "float": "1.6577672596368788e-09",
+       "exact_sha256": "cf7c47a647b1f8400b3ae44e1dd8a79378797f790e50fd25d41d8a42e8cc7f17",
+       "exact_len": 260
+      },
+      "delta_sq_over_u_sq": {
+       "float": "110.85960822481391",
+       "exact_sha256": "733222ab2b295d7eeeb01fe373120e0764d9f7c2e7f57d709beff9a6e71fa0ef",
+       "exact_len": 279
+      },
+      "limit_minus_value": {
+       "float": "8.983050640192345e-09",
+       "exact_sha256": "bfe55d800472821b83f1b37ce08fca844c59ad83cb3365ec3b41198154123b7b",
+       "exact_len": 267
+      },
+      "equals_closed_form_exactly": true
+     },
+     "Y": {
+      "delta_sq": {
+       "float": "2.7312626079750489e-10",
+       "exact_sha256": "07c82b8fcaab97f88b0676fe470ac393c57f049168c6028b8c00f7cb7da6f2db",
+       "exact_len": 235
+      },
+      "delta_sq_over_u_sq": {
+       "float": "18.26472931704059",
+       "exact_sha256": "e092edb16644ef6f604dfe1e7015213d7d66eb7df87fef9ec6f15581ddd05783",
+       "exact_len": 248
+      },
+      "limit_minus_value": {
+       "float": "1.4800069295902186e-09",
+       "exact_sha256": "86f058f651aaeb50cbd06406911e09735982aa6007eb3f5445ae7d8655773e7c",
+       "exact_len": 255
+      },
+      "equals_closed_form_exactly": true
+     }
+    }
+   ]
+  }
+ ],
+ "all_assertions_passed": true,
+ "elapsed_seconds": 2.19
+}

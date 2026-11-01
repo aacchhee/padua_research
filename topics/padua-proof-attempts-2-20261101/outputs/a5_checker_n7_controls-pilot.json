@@ -1,0 +1,172 @@
+{
+  "all_controls_passed": true,
+  "checker_sha256": "d9c4f262fbc853cd99e0d0efb1a0c355b2523523fdf1404a0f0089b92483d070",
+  "controls": [
+    {
+      "accepted": true,
+      "accepted_node_cones": 36,
+      "name": "all_supplied_exact_node_cones",
+      "node_status_counts": {
+        "accepted": 36
+      },
+      "verified_direction_breakpoints": 2220,
+      "verified_node_records": 36
+    },
+    {
+      "name": "wrong_native_minimal_polynomial",
+      "reason": "native minimal polynomial mismatch",
+      "rejected": true
+    },
+    {
+      "name": "counterfeit_tensor_conversion",
+      "reason": "native-to-tensor matrix mismatch",
+      "rejected": true
+    },
+    {
+      "name": "negative_principal_cubic_embedding",
+      "reason": "principal a outer bracket failed",
+      "rejected": true
+    },
+    {
+      "name": "nonprincipal_quartic_root_embedding",
+      "reason": "principal b outer bracket failed",
+      "rejected": true
+    },
+    {
+      "name": "incorrect_tensor_defining_polynomial",
+      "reason": "incorrect tensor defining polynomials",
+      "rejected": true
+    },
+    {
+      "name": "incorrect_tensor_basis_order",
+      "reason": "unknown tensor basis ordering",
+      "rejected": true
+    },
+    {
+      "name": "incorrect_principal_root_accounting",
+      "reason": "principal Chebyshev root accounting mismatch",
+      "rejected": true
+    },
+    {
+      "name": "field_encoding_has_wrong_dimension",
+      "reason": "FIELD needs twelve rational coefficients",
+      "rejected": true
+    },
+    {
+      "accepted": true,
+      "name": "tensor_cubic_quartic_norm_vs_native_degree_twelve_norm",
+      "polynomials": 2
+    },
+    {
+      "name": "exact_node_coordinate_altered",
+      "reason": "supplied node differs from exact board",
+      "rejected": true
+    },
+    {
+      "name": "one_node_record_omitted",
+      "reason": "all 36 ordered node-cone records are required",
+      "rejected": true
+    },
+    {
+      "name": "one_feasible_direction_side_omitted",
+      "reason": "feasible direction-side segments are incomplete",
+      "rejected": true
+    },
+    {
+      "name": "one_internal_directional_zero_breakpoint_omitted",
+      "reason": "a cardinal directional zero breakpoint was omitted",
+      "rejected": true
+    },
+    {
+      "name": "duplicated_direction_breakpoint",
+      "reason": "direction breakpoints duplicate or are not exactly sorted",
+      "rejected": true
+    },
+    {
+      "name": "false_positive_gap_lower_bound",
+      "reason": "claimed node gap lower bound exceeds a breakpoint value",
+      "rejected": true
+    },
+    {
+      "name": "cone_rectangle_hits_inactive_square_face",
+      "reason": "node cone meets an inactive opposite square face",
+      "rejected": true
+    },
+    {
+      "name": "radius_underestimates_whole_cone_rectangle",
+      "reason": "node cone R does not bound the entire supplied rectangle",
+      "rejected": true
+    },
+    {
+      "name": "false_whole_cone_node_cardinal_positivity_bound",
+      "reason": "node cardinal is not certified positive on entire B",
+      "rejected": true
+    },
+    {
+      "name": "one_cardinal_hessian_bound_underestimated",
+      "reason": "node Hessian quadratic-form bound failed",
+      "rejected": true
+    },
+    {
+      "name": "radial_remainder_exceeds_exact_gap",
+      "reason": "node radial remainder inequality R*H < m failed",
+      "rejected": true
+    },
+    {
+      "name": "whole_leaf_not_inside_referenced_cone",
+      "reason": "whole node leaf is not strictly inside its verified cone",
+      "rejected": true
+    },
+    {
+      "name": "non_strict_leaf_cone_containment",
+      "reason": "whole node leaf is not strictly inside its verified cone",
+      "rejected": true
+    },
+    {
+      "name": "zero_gap_or_missing_cone_has_no_discard_authority",
+      "reason": "node leaf references a missing, zero-gap, or unaccepted cone",
+      "rejected": true
+    },
+    {
+      "name": "node_leaf_cannot_hide_ordinary_pattern_list",
+      "reason": "node-cone leaf also contains ordinary patterns",
+      "rejected": true
+    },
+    {
+      "name": "overlapping_prefix_partition",
+      "reason": "leaf paths are not prefix-free",
+      "rejected": true
+    },
+    {
+      "accepted": true,
+      "name": "complete_vs_missing_prefix_subtree"
+    },
+    {
+      "name": "singular_zero_hessian_is_not_an_exclusion",
+      "reason": "no strict positive-curvature/negative-determinant exclusion",
+      "rejected": true
+    },
+    {
+      "name": "one_sturm_projected_root_omitted",
+      "reason": "root partition omits real roots",
+      "rejected": true
+    },
+    {
+      "accepted": true,
+      "masks": 10,
+      "name": "432_component_integer_vectors_vs_symbolic_masks"
+    },
+    {
+      "name": "ordinary_compatible_mask_omitted",
+      "reason": "compatible sign patterns missing, duplicated, reordered, or extraneous at 000000000000000000000",
+      "rejected": true
+    }
+  ],
+  "controls_sha256": "a170805a155b8bd901fd675e8ced09f98e065bd13b4707c831799b80da64c4e4",
+  "formal_field_helper_sha256": "76f9ba3de6d4fa4a3bd403ec2c049997de5acb75dd474ac8e05e9e324d6cd106",
+  "node_certificate_sha256": "ab1632d3253b7e5eb3130998f2bb147e7e2f3967cb85aba4aed09c432f8499b2",
+  "python": "3.12.14",
+  "scope": "independent verifier controls; no degree-seven count",
+  "seconds": 152.70971798899973,
+  "sympy": "1.14.0"
+}

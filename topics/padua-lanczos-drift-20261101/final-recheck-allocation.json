@@ -1,0 +1,309 @@
+{
+  "scope": "Final mechanical refreshed allocation check; no new reservations or ID assignments",
+  "checked_heads": {
+    "main": "806cc7b4509fd93bae652f9545d32d95529f8281",
+    "PR12": "3473cc08d1e09b44eda4808d728f5fde258f6226",
+    "PR14": "328a3ecc62b1f3a832da3e9aafb4e737d9575c21"
+  },
+  "files": [
+    {
+      "head_label": "main",
+      "path": "ID_CROSSWALK.md",
+      "bytes": 252010,
+      "blob": "631cc65a86c1b39a38a13c257064a39b42d2df4b",
+      "sha256": "a65c2e715cbb6fd01f75ae7de900ccf85509e81c34ed0354bd21c2e2289d8229",
+      "complete_bytes_scanned": true,
+      "canonical_first_cell_maxima": {
+        "PD-T": 69,
+        "PD-N": null,
+        "IDEA": null,
+        "LIT": null
+      }
+    },
+    {
+      "head_label": "main",
+      "path": "PROOF_STATUS.md",
+      "bytes": 99924,
+      "blob": "eedee5e38a2469ddb81980f10944b0e08f87c78c",
+      "sha256": "a916cda87c9f7ad1950f62e32d254f5c276d386b63f5e84a32cb08a3298f8b0f",
+      "complete_bytes_scanned": true,
+      "canonical_first_cell_maxima": {
+        "PD-T": 103,
+        "PD-N": 43,
+        "IDEA": null,
+        "LIT": null
+      }
+    },
+    {
+      "head_label": "main",
+      "path": "literature/INDEX.md",
+      "bytes": 265014,
+      "blob": "f9348537234c798a3fa738970513891f0dd8c956",
+      "sha256": "f90355c5b77a638d1a49980330eff1bda7d0e7610771a3bdae465f384b03f056",
+      "complete_bytes_scanned": true,
+      "canonical_first_cell_maxima": {
+        "PD-T": null,
+        "PD-N": null,
+        "IDEA": null,
+        "LIT": 426
+      }
+    },
+    {
+      "head_label": "main",
+      "path": "state/IDEAS.md",
+      "bytes": 159295,
+      "blob": "51d0d9cf79507b0b92e930a19882b942ecb94486",
+      "sha256": "de45820ecb33f8694b0ed4a13177fc2d91094729dc2f164e3d26034fada4d4a0",
+      "complete_bytes_scanned": true,
+      "canonical_first_cell_maxima": {
+        "PD-T": null,
+        "PD-N": null,
+        "IDEA": 209,
+        "LIT": null
+      }
+    },
+    {
+      "head_label": "main",
+      "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+      "bytes": 2271,
+      "blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+      "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+      "complete_bytes_scanned": true,
+      "reservation_headings": []
+    },
+    {
+      "head_label": "main",
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "bytes": 20377,
+      "blob": "625b7ca0d12bd1ac1e3501f05adc573fbdf2aead",
+      "sha256": "26918056d06e8fed622e07e512c062fb8bfce9762e211ffe5bf78aedd0225d36",
+      "complete_bytes_scanned": true,
+      "reservation_headings": [
+        "## PR #9 permanent reservation (2026-11-01)",
+        "## Current transition and PR #11 reservation import (2026-11-01)",
+        "## Earlier instructions and integration snapshots (historical)",
+        "## Reconciled sources and provenance",
+        "## Final reservations",
+        "## Members and integration responsibilities",
+        "## Lattice provisional reservations (unchanged)",
+        "## mz-prior-art-20261101 reservation (2026-11-01)",
+        "## Readiness and history",
+        "## Bivariate-Lanczos block (allocated 2026-11-01)",
+        "## Lattice-unisolvence and programme-ideas blocks (allocated 2026-11-01)",
+        "## PR #9 assignments after reservation publication (2026-11-01)"
+      ]
+    },
+    {
+      "head_label": "PR12",
+      "path": "ID_CROSSWALK.md",
+      "bytes": 249483,
+      "blob": "15637d098d5e88e354f16948ad3c5bf4b103fe2c",
+      "sha256": "543b970b311bb49cc7147db637734f37e6cdb7c48e91d67c3c9e79d55812844c",
+      "complete_bytes_scanned": true,
+      "canonical_first_cell_maxima": {
+        "PD-T": 69,
+        "PD-N": null,
+        "IDEA": null,
+        "LIT": null
+      }
+    },
+    {
+      "head_label": "PR12",
+      "path": "PROOF_STATUS.md",
+      "bytes": 96640,
+      "blob": "8a42699a04ee0d555453f4e2ac10a597dc9e276a",
+      "sha256": "ab3cbc4f09578571828a28773a9a527f0c22dba49270c92b652645c1420b35c2",
+      "complete_bytes_scanned": true,
+      "canonical_first_cell_maxima": {
+        "PD-T": 100,
+        "PD-N": 43,
+        "IDEA": null,
+        "LIT": null
+      }
+    },
+    {
+      "head_label": "PR12",
+      "path": "literature/INDEX.md",
+      "bytes": 265014,
+      "blob": "f9348537234c798a3fa738970513891f0dd8c956",
+      "sha256": "f90355c5b77a638d1a49980330eff1bda7d0e7610771a3bdae465f384b03f056",
+      "complete_bytes_scanned": true,
+      "canonical_first_cell_maxima": {
+        "PD-T": null,
+        "PD-N": null,
+        "IDEA": null,
+        "LIT": 426
+      }
+    },
+    {
+      "head_label": "PR12",
+      "path": "state/IDEAS.md",
+      "bytes": 158605,
+      "blob": "d6570b2b20a9f882b02ca4e79cd737a5fa13179e",
+      "sha256": "f70650460c7b140021a084a2b9ddd56efc73f7e92ce8ef7b2f717db3ae677898",
+      "complete_bytes_scanned": true,
+      "canonical_first_cell_maxima": {
+        "PD-T": null,
+        "PD-N": null,
+        "IDEA": 209,
+        "LIT": null
+      }
+    },
+    {
+      "head_label": "PR12",
+      "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+      "bytes": 2271,
+      "blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+      "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+      "complete_bytes_scanned": true,
+      "reservation_headings": []
+    },
+    {
+      "head_label": "PR12",
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "bytes": 18382,
+      "blob": "4c55ac54bde0f8c901f34d1b73202fa606a467ab",
+      "sha256": "d95ea644838d39dc4370ab8ce6c21b16d39f18d6a6dfdae7e912664807d573c3",
+      "complete_bytes_scanned": true,
+      "reservation_headings": [
+        "## Current transition and PR #11 reservation import (2026-11-01)",
+        "## Earlier instructions and integration snapshots (historical)",
+        "## Reconciled sources and provenance",
+        "## Final reservations",
+        "## Members and integration responsibilities",
+        "## Lattice provisional reservations (unchanged)",
+        "## mz-prior-art-20261101 reservation (2026-11-01)",
+        "## Readiness and history",
+        "## Bivariate-Lanczos block (allocated 2026-11-01)",
+        "## Lattice-unisolvence and programme-ideas blocks (allocated 2026-11-01)"
+      ]
+    },
+    {
+      "head_label": "PR14",
+      "path": "ID_CROSSWALK.md",
+      "bytes": 252381,
+      "blob": "bb2b84d7db3500dcf0e6d27f2bb98755853abb2d",
+      "sha256": "f9ab0a1a06b074ef391e35630f957dba764599fc0f14ec1d82e87df2812f98d6",
+      "complete_bytes_scanned": true,
+      "canonical_first_cell_maxima": {
+        "PD-T": 69,
+        "PD-N": null,
+        "IDEA": null,
+        "LIT": null
+      }
+    },
+    {
+      "head_label": "PR14",
+      "path": "PROOF_STATUS.md",
+      "bytes": 99924,
+      "blob": "eedee5e38a2469ddb81980f10944b0e08f87c78c",
+      "sha256": "a916cda87c9f7ad1950f62e32d254f5c276d386b63f5e84a32cb08a3298f8b0f",
+      "complete_bytes_scanned": true,
+      "canonical_first_cell_maxima": {
+        "PD-T": 103,
+        "PD-N": 43,
+        "IDEA": null,
+        "LIT": null
+      }
+    },
+    {
+      "head_label": "PR14",
+      "path": "literature/INDEX.md",
+      "bytes": 265014,
+      "blob": "f9348537234c798a3fa738970513891f0dd8c956",
+      "sha256": "f90355c5b77a638d1a49980330eff1bda7d0e7610771a3bdae465f384b03f056",
+      "complete_bytes_scanned": true,
+      "canonical_first_cell_maxima": {
+        "PD-T": null,
+        "PD-N": null,
+        "IDEA": null,
+        "LIT": 426
+      }
+    },
+    {
+      "head_label": "PR14",
+      "path": "state/IDEAS.md",
+      "bytes": 159295,
+      "blob": "51d0d9cf79507b0b92e930a19882b942ecb94486",
+      "sha256": "de45820ecb33f8694b0ed4a13177fc2d91094729dc2f164e3d26034fada4d4a0",
+      "complete_bytes_scanned": true,
+      "canonical_first_cell_maxima": {
+        "PD-T": null,
+        "PD-N": null,
+        "IDEA": 209,
+        "LIT": null
+      }
+    },
+    {
+      "head_label": "PR14",
+      "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+      "bytes": 2271,
+      "blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+      "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+      "complete_bytes_scanned": true,
+      "reservation_headings": []
+    },
+    {
+      "head_label": "PR14",
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "bytes": 22083,
+      "blob": "a8faebe95669a46ad2adedd71386098a3c218719",
+      "sha256": "30dc06e08dd3f34fef95aa1aafd4dcc94787db5b83d829b817728b3507f9c324",
+      "complete_bytes_scanned": true,
+      "reservation_headings": [
+        "## Padua MZ 2D reservation \u2014 2026-11-01",
+        "## PR #9 permanent reservation (2026-11-01)",
+        "## Current transition and PR #11 reservation import (2026-11-01)",
+        "## Earlier instructions and integration snapshots (historical)",
+        "## Reconciled sources and provenance",
+        "## Final reservations",
+        "## Members and integration responsibilities",
+        "## Lattice provisional reservations (unchanged)",
+        "## mz-prior-art-20261101 reservation (2026-11-01)",
+        "## Readiness and history",
+        "## Bivariate-Lanczos block (allocated 2026-11-01)",
+        "## Lattice-unisolvence and programme-ideas blocks (allocated 2026-11-01)",
+        "## PR #9 assignments after reservation publication (2026-11-01)"
+      ]
+    }
+  ],
+  "ours": {
+    "PD-T": [
+      136,
+      155
+    ],
+    "PD-N": [
+      62,
+      71
+    ],
+    "IDEA": [
+      246,
+      285
+    ],
+    "LIT": [
+      445,
+      459
+    ]
+  },
+  "MZ14": {
+    "PD-T": [
+      106,
+      135
+    ],
+    "PD-N": [
+      44,
+      61
+    ],
+    "IDEA": [
+      210,
+      245
+    ],
+    "LIT": [
+      427,
+      444
+    ]
+  },
+  "PR14_current_reservation_section": "## Padua MZ 2D reservation \u2014 2026-11-01\n\nOwner branch: `codex/padua-mz-2d-20261101`. This is a reservation for the early draft, not a final-ID assignment. The fresh-range procedure supersedes historical single-owner prose below. All previous allocations, permanent headroom and retired reservations remain in force.\n\nChecked complete ledgers and final-ID uses at main `806cc7b4509fd93bae652f9545d32d95529f8281`, sole other open PR12 `12e9cf4539d0977773cad75fc74f93d1664cb429`, and retained merged PR9 head `752ba068589683afe644b505d673f8da1529cbf0`. All twelve returned repository PRs were individually classified: eleven merged, one open, none closed-unmerged. Main includes the prior PR9 reservation through PD-T105 (including permanent gaps104\u2013105). Historical LIT provisional aliases in the1700s are not final IDs. Full scan with file identities: [reservation-scan.json](../padua-mz-2d-20261101/protocol/reservation-scan.json); [GitHub state receipt](../padua-mz-2d-20261101/protocol/github-scan.json).\n\n| Namespace | Reserved range | Count | Estimated needs + permanent headroom | Next unreserved |\n|---|---|---:|---|---|\n| PD-T | PD-T106\u2013PD-T135 | 30 | 20 +10 | PD-T136 |\n| PD-N | PD-N044\u2013PD-N061 | 18 | 12 +6 | PD-N062 |\n| IDEA | IDEA-210\u2013IDEA-245 | 36 | 24 +12 | IDEA-246 |\n| LIT | LIT-427\u2013LIT-444 | 18 | 12 +6 | LIT-445 |\n\nPublication priority is the pushed commit first adding this section, linked in the campaign PR body. No portion of these ranges may be reused even if unused. Assignment waits for PR preparation and another current-reservations check. The campaign PR will preserve a provisional-to-final map. It does not alter PR12's scientific records or audit-pending status.\n\n",
+  "disjoint_ours_vs_MZ14": true,
+  "interpretation": "Fresh #12/#14 scan retains PR14 ranges 106\u2013135/044\u2013061/210\u2013245/427\u2013444; no higher reservation or canonical Padua final use found. Ours 136\u2013155/062\u2013071/246\u2013285/445\u2013459 remain disjoint. Historical next-unreserved boundaries and foreign bttb source IDs excluded. Main retained originals end105/043/209/426. Inventory and closed-PR classification remains parent responsibility."
+}

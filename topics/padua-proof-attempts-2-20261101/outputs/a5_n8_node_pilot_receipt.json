@@ -1,0 +1,16 @@
+{
+  "format": "a5-n8-node-pilot-receipt-v1",
+  "artifact_path": "/tmp/a5-n8-node-pilot.json",
+  "artifact_sha256": "574a47af6a7d84a5f4b27dd3adce9797350860d6e40242869c58a90673e5b23c",
+  "artifact_bytes": 641540,
+  "summary": {
+    "accepted_cubes": 45,
+    "backend": "flint",
+    "nodes": 45,
+    "positive_gaps": 45,
+    "scope": "exact node cone predicates only; no maxima count",
+    "seconds": 69.56609678268433
+  },
+  "role": "development pilot only; final essential compressed certificate will embed the nodes",
+  "source_command": "PYTHONPATH=/tmp/padua2-deps python -B topics/padua-proof-attempts-2-20261101/code/a5_n8_nodes.py --output topics/padua-proof-attempts-2-20261101/outputs/a5_n8_node_pilot.json"
+}

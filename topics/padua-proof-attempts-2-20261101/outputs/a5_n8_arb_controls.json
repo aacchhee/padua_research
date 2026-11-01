@@ -1,0 +1,106 @@
+{
+  "source_sha256": "6088db34cce2952332bd22e560c8b02e90446236f994dc2bac79b33717e769cb",
+  "checks": [
+    {
+      "degree": 1,
+      "real_roots": 1,
+      "independent_sympy_sturm_complete": true,
+      "intervals": [
+        [
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "degree": 1,
+      "real_roots": 1,
+      "independent_sympy_sturm_complete": true,
+      "intervals": [
+        [
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "degree": 1,
+      "real_roots": 1,
+      "independent_sympy_sturm_complete": true,
+      "intervals": [
+        [
+          "-1",
+          "-1"
+        ]
+      ]
+    },
+    {
+      "degree": 7,
+      "real_roots": 5,
+      "independent_sympy_sturm_complete": true,
+      "intervals": [
+        [
+          "-427419822500504607534271/302231454903657293676544",
+          "-1709679290002018430137083/1208925819614629174706176"
+        ],
+        [
+          "-1208925819614629174706177/1208925819614629174706176",
+          "-1208925819614629174706175/1208925819614629174706176"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "1208925819614629174706175/1208925819614629174706176",
+          "1208925819614629174706177/1208925819614629174706176"
+        ],
+        [
+          "1709679290002018430137083/1208925819614629174706176",
+          "427419822500504607534271/302231454903657293676544"
+        ]
+      ]
+    },
+    {
+      "degree": 2,
+      "real_roots": 0,
+      "independent_sympy_sturm_complete": true,
+      "intervals": []
+    },
+    {
+      "degree": 2,
+      "real_roots": 2,
+      "independent_sympy_sturm_complete": true,
+      "intervals": [
+        [
+          "-805950546409752783137451/1208925819614629174706176",
+          "-402975273204876391568725/604462909807314587353088"
+        ],
+        [
+          "1/2",
+          "1/2"
+        ]
+      ]
+    },
+    {
+      "degree": 3,
+      "real_roots": 2,
+      "independent_sympy_sturm_complete": true,
+      "intervals": [
+        [
+          "-1",
+          "-1"
+        ],
+        [
+          "1",
+          "1"
+        ]
+      ]
+    }
+  ],
+  "immutable_cache": true,
+  "precision_key": true,
+  "exact_uncached_norm_matches": true,
+  "field_variable_rename_cache_hit": true,
+  "scope": "exact/outward producer backend controls; separate certificate checker still verifies all supplied Sturm partitions"
+}

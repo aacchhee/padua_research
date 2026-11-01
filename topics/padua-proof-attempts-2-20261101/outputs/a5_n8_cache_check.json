@@ -1,0 +1,13 @@
+{
+  "format": "a5-n8-exact-cache-check-v1",
+  "source_sha256": "caec0a72fbf707522e75956ffaadeeb6eb0c97629422ac1ddb8f25d63eac6cd9",
+  "norm_matches_uncached_exact_result": true,
+  "exact_variable_rename_cache_hit": true,
+  "immutable_partition_cache": true,
+  "precision_in_cache_key": true,
+  "rational_scale_canonical_key": true,
+  "norm_cache_hits": 1,
+  "partition_cache_hits": 2,
+  "root_partition_size": 12,
+  "role": "exact memoization regression only; no maxima count"
+}

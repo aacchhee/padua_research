@@ -1,0 +1,15 @@
+{
+  "accepted_node_cones": 20,
+  "checker_sha256": "6390d465a0e4c83f5cb75673834da4bfbda98c507266c9a81c60c85baceb7bab",
+  "count_certified": false,
+  "mutation": "node0 status=zero_gap, gap_lower=0, zero_witness=null; otherwise unchanged",
+  "node_input_sha256": "d70d297aaf727d0d6b13ba690fb0768a7f5465aeb2d23b04a2fd0b7d5bb55eb8",
+  "node_status_counts": {
+    "accepted": 20,
+    "zero_gap": 1
+  },
+  "reason": "node leaf references a missing, zero-gap, or unaccepted cone",
+  "verified_direction_breakpoints": 738,
+  "verified_node_records": 21,
+  "zero_lower_bound_has_no_discard_authority": true
+}

@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-11-01T15:20:34.455483+00:00",
+  "files": [
+    {
+      "bytes": 61517,
+      "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n8.md",
+      "sha256": "55fcec639b9c983670da45a81bb17d309a5eca8294323e4cd999de19cd747d89"
+    },
+    {
+      "bytes": 8963,
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-61-degree-eight-maxima-count.md",
+      "sha256": "69721562bed4c93242bb2eacdadfbaeaf825862bb10d153538255731e3100246"
+    },
+    {
+      "bytes": 4939,
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-62-degree-eight-global-argmax.md",
+      "sha256": "63d4d4f6582c9fb5813ae6f7a909e8b643c4833dbcce2c1ae895a2eac91af4f4"
+    },
+    {
+      "bytes": 11913,
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-65-degree-eight-exact-interior-count.md",
+      "sha256": "ee360492ee44a0ec1e164ea48382838d960aaa99f599155ae73123026c6b6b1e"
+    },
+    {
+      "bytes": 2652,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_deadline_stop.json",
+      "sha256": "1eeda8e6681591232a01650655e18c86074f17cf486d1710eca55b6ea6ffdc70"
+    },
+    {
+      "bytes": 12228,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_v3_run_record.json",
+      "sha256": "7295d5adc97f3135acc1c935ac6fa7360f3d7703ba621f5861711817592effff"
+    }
+  ],
+  "format": "a5-n8-final-administrative-freeze-v1",
+  "mathematical_work_stopped_at": "2026-11-01T15:19:00Z"
+}

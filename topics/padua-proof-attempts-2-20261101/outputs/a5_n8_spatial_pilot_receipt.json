@@ -1,0 +1,35 @@
+{
+  "format": "a5-n8-spatial-pilot-receipt-v1",
+  "artifact_path": "/tmp/a5-n8-spatial-pilot.json.gz",
+  "artifact_sha256": "58f55f1993c83b0697e1ea74f9a8b4f993aa5f079ab247db763d43fe94b7fc9a",
+  "artifact_bytes": 146832,
+  "summary": {
+    "Pcache": 1480,
+    "complete": false,
+    "depth": 28,
+    "interior": 0,
+    "interior_complete": false,
+    "leaf_counts": {
+      "gradient": 36699,
+      "hessian": 2,
+      "node_cone": 13
+    },
+    "leaf_pattern_records": 36701,
+    "maximum_ambiguity": 45,
+    "node_leaves": 13,
+    "pending": 19,
+    "seconds": 120.58978176116943,
+    "stats": {
+      "depth_limit": 36,
+      "discard": 1532,
+      "failedmask": 82,
+      "gradient": 36969,
+      "hessian": 4,
+      "mask_checks": 36973,
+      "node_cone": 13,
+      "visited": 3154
+    },
+    "unresolved": 36
+  },
+  "role": "development pilot only; incomplete, all unresolved/pending paths retained in local artifact"
+}

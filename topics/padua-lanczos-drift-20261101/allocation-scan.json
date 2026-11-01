@@ -1,0 +1,682 @@
+{
+  "date": "2026-11-01",
+  "scope": "Bounded mechanical reservation scan; no reservation or final-ID assignment made",
+  "rules_read_at": "cf89b140530d5838bdb208a8c28f3e7aa676ace3",
+  "method": "git ls-tree -r --name-only for every ALLOCATIONS.md; git show of complete contents of all discovered ledgers and four final-ID registries; canonical registry-row IDs distinguished from foreign source references and unreserved boundaries; all ledger sections considered including historical retained reservations.",
+  "remote_inventory": {
+    "provenance": "Fresh orchestrator-supplied GitHub API inventory; not independently queried by setup assistant",
+    "open_PRs": [
+      12,
+      14
+    ],
+    "closed_unmerged_PRs": [],
+    "closed_PRs": "All closed PRs merged per orchestrator inventory",
+    "note": "Previous branch-absence observation superseded: PR #14 / codex/padua-mz-2d-20261101 now exists and is scanned."
+  },
+  "heads": {
+    "main": {
+      "sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "files": [
+        {
+          "path": "ID_CROSSWALK.md",
+          "blob": "631cc65a86c1b39a38a13c257064a39b42d2df4b",
+          "bytes": 252010,
+          "sha256": "a65c2e715cbb6fd01f75ae7de900ccf85509e81c34ed0354bd21c2e2289d8229",
+          "complete_bytes_scanned": true,
+          "canonical_first_cell_counts": {
+            "PD-T": 11,
+            "PD-N": 0,
+            "IDEA": 0,
+            "LIT": 0
+          },
+          "canonical_first_cell_maxima": {
+            "PD-T": 69,
+            "PD-N": null,
+            "IDEA": null,
+            "LIT": null
+          },
+          "parser_limit": "Crosswalk final IDs often occupy the second cell, so crosswalk first-cell maxima do not establish namespace maxima; complete crosswalk mappings and reservation prose also inspected."
+        },
+        {
+          "path": "PROOF_STATUS.md",
+          "blob": "eedee5e38a2469ddb81980f10944b0e08f87c78c",
+          "bytes": 99924,
+          "sha256": "a916cda87c9f7ad1950f62e32d254f5c276d386b63f5e84a32cb08a3298f8b0f",
+          "complete_bytes_scanned": true,
+          "canonical_first_cell_counts": {
+            "PD-T": 103,
+            "PD-N": 43,
+            "IDEA": 0,
+            "LIT": 0
+          },
+          "canonical_first_cell_maxima": {
+            "PD-T": 103,
+            "PD-N": 43,
+            "IDEA": null,
+            "LIT": null
+          },
+          "parser_limit": "Crosswalk final IDs often occupy the second cell, so crosswalk first-cell maxima do not establish namespace maxima; complete crosswalk mappings and reservation prose also inspected."
+        },
+        {
+          "path": "literature/INDEX.md",
+          "blob": "f9348537234c798a3fa738970513891f0dd8c956",
+          "bytes": 265014,
+          "sha256": "f90355c5b77a638d1a49980330eff1bda7d0e7610771a3bdae465f384b03f056",
+          "complete_bytes_scanned": true,
+          "canonical_first_cell_counts": {
+            "PD-T": 0,
+            "PD-N": 0,
+            "IDEA": 0,
+            "LIT": 426
+          },
+          "canonical_first_cell_maxima": {
+            "PD-T": null,
+            "PD-N": null,
+            "IDEA": null,
+            "LIT": 426
+          },
+          "parser_limit": "Crosswalk final IDs often occupy the second cell, so crosswalk first-cell maxima do not establish namespace maxima; complete crosswalk mappings and reservation prose also inspected."
+        },
+        {
+          "path": "state/IDEAS.md",
+          "blob": "51d0d9cf79507b0b92e930a19882b942ecb94486",
+          "bytes": 159295,
+          "sha256": "de45820ecb33f8694b0ed4a13177fc2d91094729dc2f164e3d26034fada4d4a0",
+          "complete_bytes_scanned": true,
+          "canonical_first_cell_counts": {
+            "PD-T": 0,
+            "PD-N": 0,
+            "IDEA": 209,
+            "LIT": 0
+          },
+          "canonical_first_cell_maxima": {
+            "PD-T": null,
+            "PD-N": null,
+            "IDEA": 209,
+            "LIT": null
+          },
+          "parser_limit": "Crosswalk final IDs often occupy the second cell, so crosswalk first-cell maxima do not establish namespace maxima; complete crosswalk mappings and reservation prose also inspected."
+        },
+        {
+          "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+          "blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+          "bytes": 2271,
+          "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+          "complete_bytes_scanned": true
+        },
+        {
+          "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+          "blob": "625b7ca0d12bd1ac1e3501f05adc573fbdf2aead",
+          "bytes": 20377,
+          "sha256": "26918056d06e8fed622e07e512c062fb8bfce9762e211ffe5bf78aedd0225d36",
+          "complete_bytes_scanned": true
+        }
+      ],
+      "max_used": {
+        "PD-T": 103,
+        "PD-N": 43,
+        "IDEA": 209,
+        "LIT": 426
+      },
+      "max_reserved": {
+        "PD-T": 105,
+        "PD-N": 43,
+        "IDEA": 209,
+        "LIT": 426
+      }
+    },
+    "open_PR_12_codex/padua-proof-attempts-2-20261101": {
+      "sha": "0a300db8041fc922483bb16b2f4239fde07cc134",
+      "files": [
+        {
+          "path": "ID_CROSSWALK.md",
+          "blob": "15637d098d5e88e354f16948ad3c5bf4b103fe2c",
+          "bytes": 249483,
+          "sha256": "543b970b311bb49cc7147db637734f37e6cdb7c48e91d67c3c9e79d55812844c",
+          "complete_bytes_scanned": true,
+          "canonical_first_cell_counts": {
+            "PD-T": 11,
+            "PD-N": 0,
+            "IDEA": 0,
+            "LIT": 0
+          },
+          "canonical_first_cell_maxima": {
+            "PD-T": 69,
+            "PD-N": null,
+            "IDEA": null,
+            "LIT": null
+          }
+        },
+        {
+          "path": "PROOF_STATUS.md",
+          "blob": "8a42699a04ee0d555453f4e2ac10a597dc9e276a",
+          "bytes": 96640,
+          "sha256": "ab3cbc4f09578571828a28773a9a527f0c22dba49270c92b652645c1420b35c2",
+          "complete_bytes_scanned": true,
+          "canonical_first_cell_counts": {
+            "PD-T": 100,
+            "PD-N": 43,
+            "IDEA": 0,
+            "LIT": 0
+          },
+          "canonical_first_cell_maxima": {
+            "PD-T": 100,
+            "PD-N": 43,
+            "IDEA": null,
+            "LIT": null
+          }
+        },
+        {
+          "path": "literature/INDEX.md",
+          "blob": "f9348537234c798a3fa738970513891f0dd8c956",
+          "bytes": 265014,
+          "sha256": "f90355c5b77a638d1a49980330eff1bda7d0e7610771a3bdae465f384b03f056",
+          "complete_bytes_scanned": true,
+          "canonical_first_cell_counts": {
+            "PD-T": 0,
+            "PD-N": 0,
+            "IDEA": 0,
+            "LIT": 426
+          },
+          "canonical_first_cell_maxima": {
+            "PD-T": null,
+            "PD-N": null,
+            "IDEA": null,
+            "LIT": 426
+          }
+        },
+        {
+          "path": "state/IDEAS.md",
+          "blob": "d6570b2b20a9f882b02ca4e79cd737a5fa13179e",
+          "bytes": 158605,
+          "sha256": "f70650460c7b140021a084a2b9ddd56efc73f7e92ce8ef7b2f717db3ae677898",
+          "complete_bytes_scanned": true,
+          "canonical_first_cell_counts": {
+            "PD-T": 0,
+            "PD-N": 0,
+            "IDEA": 209,
+            "LIT": 0
+          },
+          "canonical_first_cell_maxima": {
+            "PD-T": null,
+            "PD-N": null,
+            "IDEA": 209,
+            "LIT": null
+          }
+        },
+        {
+          "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+          "blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+          "bytes": 2271,
+          "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+          "complete_bytes_scanned": true
+        },
+        {
+          "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+          "blob": "4c55ac54bde0f8c901f34d1b73202fa606a467ab",
+          "bytes": 18382,
+          "sha256": "d95ea644838d39dc4370ab8ce6c21b16d39f18d6a6dfdae7e912664807d573c3",
+          "complete_bytes_scanned": true
+        }
+      ],
+      "max_used": {
+        "PD-T": 100,
+        "PD-N": 43,
+        "IDEA": 209,
+        "LIT": 426
+      },
+      "max_reserved": {
+        "PD-T": 100,
+        "PD-N": 43,
+        "IDEA": 209,
+        "LIT": 426
+      }
+    },
+    "open_PR_14_codex/padua-mz-2d-20261101": {
+      "sha": "9f0c7710abd19ee5a0d61bce6384e7a399e838d2",
+      "files": [
+        {
+          "path": "ID_CROSSWALK.md",
+          "blob": "bb2b84d7db3500dcf0e6d27f2bb98755853abb2d",
+          "bytes": 252381,
+          "sha256": "f9ab0a1a06b074ef391e35630f957dba764599fc0f14ec1d82e87df2812f98d6",
+          "complete_bytes_scanned": true,
+          "canonical_first_cell_counts": {
+            "PD-T": 11,
+            "PD-N": 0,
+            "IDEA": 0,
+            "LIT": 0
+          },
+          "canonical_first_cell_maxima": {
+            "PD-T": 69,
+            "PD-N": null,
+            "IDEA": null,
+            "LIT": null
+          }
+        },
+        {
+          "path": "PROOF_STATUS.md",
+          "blob": "eedee5e38a2469ddb81980f10944b0e08f87c78c",
+          "bytes": 99924,
+          "sha256": "a916cda87c9f7ad1950f62e32d254f5c276d386b63f5e84a32cb08a3298f8b0f",
+          "complete_bytes_scanned": true,
+          "canonical_first_cell_counts": {
+            "PD-T": 103,
+            "PD-N": 43,
+            "IDEA": 0,
+            "LIT": 0
+          },
+          "canonical_first_cell_maxima": {
+            "PD-T": 103,
+            "PD-N": 43,
+            "IDEA": null,
+            "LIT": null
+          }
+        },
+        {
+          "path": "literature/INDEX.md",
+          "blob": "f9348537234c798a3fa738970513891f0dd8c956",
+          "bytes": 265014,
+          "sha256": "f90355c5b77a638d1a49980330eff1bda7d0e7610771a3bdae465f384b03f056",
+          "complete_bytes_scanned": true,
+          "canonical_first_cell_counts": {
+            "PD-T": 0,
+            "PD-N": 0,
+            "IDEA": 0,
+            "LIT": 426
+          },
+          "canonical_first_cell_maxima": {
+            "PD-T": null,
+            "PD-N": null,
+            "IDEA": null,
+            "LIT": 426
+          }
+        },
+        {
+          "path": "state/IDEAS.md",
+          "blob": "51d0d9cf79507b0b92e930a19882b942ecb94486",
+          "bytes": 159295,
+          "sha256": "de45820ecb33f8694b0ed4a13177fc2d91094729dc2f164e3d26034fada4d4a0",
+          "complete_bytes_scanned": true,
+          "canonical_first_cell_counts": {
+            "PD-T": 0,
+            "PD-N": 0,
+            "IDEA": 209,
+            "LIT": 0
+          },
+          "canonical_first_cell_maxima": {
+            "PD-T": null,
+            "PD-N": null,
+            "IDEA": 209,
+            "LIT": null
+          }
+        },
+        {
+          "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+          "blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+          "bytes": 2271,
+          "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+          "complete_bytes_scanned": true
+        },
+        {
+          "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+          "blob": "a8faebe95669a46ad2adedd71386098a3c218719",
+          "bytes": 22083,
+          "sha256": "30dc06e08dd3f34fef95aa1aafd4dcc94787db5b83d829b817728b3507f9c324",
+          "complete_bytes_scanned": true
+        }
+      ],
+      "max_used": {
+        "PD-T": 103,
+        "PD-N": 43,
+        "IDEA": 209,
+        "LIT": 426
+      },
+      "max_reserved": {
+        "PD-T": 135,
+        "PD-N": 61,
+        "IDEA": 245,
+        "LIT": 444
+      }
+    }
+  },
+  "excluded": {
+    "unreserved_boundaries": [
+      "PD-T136",
+      "PD-N062",
+      "IDEA-246",
+      "LIT-445",
+      "historical next-unreserved values; earlier 106/044/210/427 now consumed by PR #14"
+    ],
+    "foreign_bttb_LIT": [
+      1160,
+      1185,
+      1317,
+      1325,
+      1586,
+      1658,
+      1729,
+      1750
+    ],
+    "note": "Foreign bttb IDs occur as cited external source identifiers inside canonical Padua rows; LIT-1750 is not a Padua reservation. Topic-scoped provisional IDs are not final IDs."
+  },
+  "union_max_reserved_or_used": {
+    "PD-T": 135,
+    "PD-N": 61,
+    "IDEA": 245,
+    "LIT": 444
+  },
+  "recommendation_only": {
+    "PD-T": {
+      "start": 136,
+      "end": 155,
+      "count": 20
+    },
+    "PD-N": {
+      "start": 62,
+      "end": 71,
+      "count": 10
+    },
+    "IDEA": {
+      "start": 246,
+      "end": 285,
+      "count": 40
+    },
+    "LIT": {
+      "start": 445,
+      "end": 459,
+      "count": 15
+    }
+  },
+  "conditions": "Root must preserve/import PR #14 published reservation section into existing shared batch ledger, then append disjoint drift reservation and draft PR body. This assistant edits no ledger/crosswalk. Refresh union at subsequent allocation/readiness boundary; recommendations alone reserve nothing.",
+  "superseded_scan": {
+    "heads": {
+      "main": {
+        "sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+        "files": [
+          {
+            "path": "ID_CROSSWALK.md",
+            "blob": "631cc65a86c1b39a38a13c257064a39b42d2df4b",
+            "bytes": 252010,
+            "sha256": "a65c2e715cbb6fd01f75ae7de900ccf85509e81c34ed0354bd21c2e2289d8229",
+            "complete_bytes_scanned": true,
+            "canonical_first_cell_counts": {
+              "PD-T": 11,
+              "PD-N": 0,
+              "IDEA": 0,
+              "LIT": 0
+            },
+            "canonical_first_cell_maxima": {
+              "PD-T": 69,
+              "PD-N": null,
+              "IDEA": null,
+              "LIT": null
+            },
+            "parser_limit": "Crosswalk final IDs often occupy the second cell, so crosswalk first-cell maxima do not establish namespace maxima; complete crosswalk mappings and reservation prose also inspected."
+          },
+          {
+            "path": "PROOF_STATUS.md",
+            "blob": "eedee5e38a2469ddb81980f10944b0e08f87c78c",
+            "bytes": 99924,
+            "sha256": "a916cda87c9f7ad1950f62e32d254f5c276d386b63f5e84a32cb08a3298f8b0f",
+            "complete_bytes_scanned": true,
+            "canonical_first_cell_counts": {
+              "PD-T": 103,
+              "PD-N": 43,
+              "IDEA": 0,
+              "LIT": 0
+            },
+            "canonical_first_cell_maxima": {
+              "PD-T": 103,
+              "PD-N": 43,
+              "IDEA": null,
+              "LIT": null
+            },
+            "parser_limit": "Crosswalk final IDs often occupy the second cell, so crosswalk first-cell maxima do not establish namespace maxima; complete crosswalk mappings and reservation prose also inspected."
+          },
+          {
+            "path": "literature/INDEX.md",
+            "blob": "f9348537234c798a3fa738970513891f0dd8c956",
+            "bytes": 265014,
+            "sha256": "f90355c5b77a638d1a49980330eff1bda7d0e7610771a3bdae465f384b03f056",
+            "complete_bytes_scanned": true,
+            "canonical_first_cell_counts": {
+              "PD-T": 0,
+              "PD-N": 0,
+              "IDEA": 0,
+              "LIT": 426
+            },
+            "canonical_first_cell_maxima": {
+              "PD-T": null,
+              "PD-N": null,
+              "IDEA": null,
+              "LIT": 426
+            },
+            "parser_limit": "Crosswalk final IDs often occupy the second cell, so crosswalk first-cell maxima do not establish namespace maxima; complete crosswalk mappings and reservation prose also inspected."
+          },
+          {
+            "path": "state/IDEAS.md",
+            "blob": "51d0d9cf79507b0b92e930a19882b942ecb94486",
+            "bytes": 159295,
+            "sha256": "de45820ecb33f8694b0ed4a13177fc2d91094729dc2f164e3d26034fada4d4a0",
+            "complete_bytes_scanned": true,
+            "canonical_first_cell_counts": {
+              "PD-T": 0,
+              "PD-N": 0,
+              "IDEA": 209,
+              "LIT": 0
+            },
+            "canonical_first_cell_maxima": {
+              "PD-T": null,
+              "PD-N": null,
+              "IDEA": 209,
+              "LIT": null
+            },
+            "parser_limit": "Crosswalk final IDs often occupy the second cell, so crosswalk first-cell maxima do not establish namespace maxima; complete crosswalk mappings and reservation prose also inspected."
+          },
+          {
+            "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+            "blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+            "bytes": 2271,
+            "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+            "complete_bytes_scanned": true
+          },
+          {
+            "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+            "blob": "625b7ca0d12bd1ac1e3501f05adc573fbdf2aead",
+            "bytes": 20377,
+            "sha256": "26918056d06e8fed622e07e512c062fb8bfce9762e211ffe5bf78aedd0225d36",
+            "complete_bytes_scanned": true
+          }
+        ],
+        "max_used": {
+          "PD-T": 103,
+          "PD-N": 43,
+          "IDEA": 209,
+          "LIT": 426
+        },
+        "max_reserved": {
+          "PD-T": 105,
+          "PD-N": 43,
+          "IDEA": 209,
+          "LIT": 426
+        }
+      },
+      "open_PR_12_codex/padua-proof-attempts-2-20261101": {
+        "sha": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+        "files": [
+          {
+            "path": "ID_CROSSWALK.md",
+            "blob": "15637d098d5e88e354f16948ad3c5bf4b103fe2c",
+            "bytes": 249483,
+            "sha256": "543b970b311bb49cc7147db637734f37e6cdb7c48e91d67c3c9e79d55812844c",
+            "complete_bytes_scanned": true,
+            "canonical_first_cell_counts": {
+              "PD-T": 11,
+              "PD-N": 0,
+              "IDEA": 0,
+              "LIT": 0
+            },
+            "canonical_first_cell_maxima": {
+              "PD-T": 69,
+              "PD-N": null,
+              "IDEA": null,
+              "LIT": null
+            },
+            "parser_limit": "Crosswalk final IDs often occupy the second cell, so crosswalk first-cell maxima do not establish namespace maxima; complete crosswalk mappings and reservation prose also inspected."
+          },
+          {
+            "path": "PROOF_STATUS.md",
+            "blob": "8a42699a04ee0d555453f4e2ac10a597dc9e276a",
+            "bytes": 96640,
+            "sha256": "ab3cbc4f09578571828a28773a9a527f0c22dba49270c92b652645c1420b35c2",
+            "complete_bytes_scanned": true,
+            "canonical_first_cell_counts": {
+              "PD-T": 100,
+              "PD-N": 43,
+              "IDEA": 0,
+              "LIT": 0
+            },
+            "canonical_first_cell_maxima": {
+              "PD-T": 100,
+              "PD-N": 43,
+              "IDEA": null,
+              "LIT": null
+            },
+            "parser_limit": "Crosswalk final IDs often occupy the second cell, so crosswalk first-cell maxima do not establish namespace maxima; complete crosswalk mappings and reservation prose also inspected."
+          },
+          {
+            "path": "literature/INDEX.md",
+            "blob": "f9348537234c798a3fa738970513891f0dd8c956",
+            "bytes": 265014,
+            "sha256": "f90355c5b77a638d1a49980330eff1bda7d0e7610771a3bdae465f384b03f056",
+            "complete_bytes_scanned": true,
+            "canonical_first_cell_counts": {
+              "PD-T": 0,
+              "PD-N": 0,
+              "IDEA": 0,
+              "LIT": 426
+            },
+            "canonical_first_cell_maxima": {
+              "PD-T": null,
+              "PD-N": null,
+              "IDEA": null,
+              "LIT": 426
+            },
+            "parser_limit": "Crosswalk final IDs often occupy the second cell, so crosswalk first-cell maxima do not establish namespace maxima; complete crosswalk mappings and reservation prose also inspected."
+          },
+          {
+            "path": "state/IDEAS.md",
+            "blob": "d6570b2b20a9f882b02ca4e79cd737a5fa13179e",
+            "bytes": 158605,
+            "sha256": "f70650460c7b140021a084a2b9ddd56efc73f7e92ce8ef7b2f717db3ae677898",
+            "complete_bytes_scanned": true,
+            "canonical_first_cell_counts": {
+              "PD-T": 0,
+              "PD-N": 0,
+              "IDEA": 209,
+              "LIT": 0
+            },
+            "canonical_first_cell_maxima": {
+              "PD-T": null,
+              "PD-N": null,
+              "IDEA": 209,
+              "LIT": null
+            },
+            "parser_limit": "Crosswalk final IDs often occupy the second cell, so crosswalk first-cell maxima do not establish namespace maxima; complete crosswalk mappings and reservation prose also inspected."
+          },
+          {
+            "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+            "blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+            "bytes": 2271,
+            "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+            "complete_bytes_scanned": true
+          },
+          {
+            "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+            "blob": "4c55ac54bde0f8c901f34d1b73202fa606a467ab",
+            "bytes": 18382,
+            "sha256": "d95ea644838d39dc4370ab8ce6c21b16d39f18d6a6dfdae7e912664807d573c3",
+            "complete_bytes_scanned": true
+          }
+        ],
+        "max_used": {
+          "PD-T": 100,
+          "PD-N": 43,
+          "IDEA": 209,
+          "LIT": 426
+        },
+        "max_reserved": {
+          "PD-T": 100,
+          "PD-N": 43,
+          "IDEA": 209,
+          "LIT": 426
+        }
+      }
+    },
+    "recommendation_only": {
+      "PD-T": {
+        "start": 106,
+        "end": 125,
+        "count": 20
+      },
+      "PD-N": {
+        "start": 44,
+        "end": 53,
+        "count": 10
+      },
+      "IDEA": {
+        "start": 210,
+        "end": 249,
+        "count": 40
+      },
+      "LIT": {
+        "start": 427,
+        "end": 441,
+        "count": 15
+      }
+    },
+    "reason": "Fresh orchestrator API inventory discovered new open PR #14 and advanced PR #12 before any reservation; previous absence/sole-open observations no longer current."
+  },
+  "new_reservation_inspected": {
+    "PR": 14,
+    "head": "9f0c7710abd19ee5a0d61bce6384e7a399e838d2",
+    "owner": "codex/padua-mz-2d-20261101",
+    "ranges": {
+      "PD-T": {
+        "start": 106,
+        "end": 135,
+        "count": 30
+      },
+      "PD-N": {
+        "start": 44,
+        "end": 61,
+        "count": 18
+      },
+      "IDEA": {
+        "start": 210,
+        "end": 245,
+        "count": 36
+      },
+      "LIT": {
+        "start": 427,
+        "end": 444,
+        "count": 18
+      }
+    },
+    "source": "topics/padua-batch-20261031/ALLOCATIONS.md, Padua MZ 2D reservation \u2014 2026-11-01",
+    "interpretation": "Explicit permanent reservation, not a next-unreserved boundary. Preserve/import this whole section and its published provenance before appending the drift reservation."
+  },
+  "initial_source_interpretation": {
+    "PD-T": "Main batch ledger PR #9 permanent reservation PD-T101\u2013PD-T105 (count 5); canonical PROOF_STATUS uses 101\u2013103 and explicitly preserves 104\u2013105 as unused permanent headroom. Published priority commit linked in main crosswalk: 020dcddd36fa1e3254cbf288701d5ab02d27c580. PR #12 ledger predates this reservation and adds none.",
+    "PD-N": "Lattice PD-N032\u2013038 and programme PD-N039\u2013043 are highest retained blocks; 044 is a next-unreserved boundary, not allocated.",
+    "IDEA": "Programme IDEA-190\u2013209 is highest retained block; 210 is a next-unreserved boundary.",
+    "LIT": "Programme LIT-332\u2013426 is highest retained block, after retained mz-prior-art 293\u2013299 and lattice 300\u2013331. Canonical INDEX max 426; external bttb source IDs do not extend Padua namespace.",
+    "new_PR_14": "Explicit permanent MZ2D reservation supersedes prior union maxima: PD-T135, PD-N061, IDEA245, LIT444. PR #12 advanced head retains older ledger and adds no range."
+  },
+  "source_interpretation": {
+    "current": "PR #14 explicitly reserves PD-T106\u2013135, PD-N044\u2013061, IDEA-210\u2013245, LIT-427\u2013444. These exceed all previous retained and used IDs at main and PR #12. Next-unreserved 136/062/246/445 are boundaries only.",
+    "PR_12": "Fresh head 0a300db8041fc922483bb16b2f4239fde07cc134 retains older ledger blob 4c55ac54bde0f8c901f34d1b73202fa606a467ab and adds no reservation.",
+    "foreign": "Foreign bttb source IDs remain excluded; Padua canonical LIT use ends 426, with PR #14 permanent reserved headroom through 444."
+  }
+}

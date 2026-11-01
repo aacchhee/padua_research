@@ -1,0 +1,5 @@
+{"node_cones": 36, "node_gap_positive": 36, "seconds": 15.397136449813843}
+{"construction_seconds": 15.39722990989685, "precision": 128}
+{"seconds": 116.33584880828857, "stats": {"visited": 1000, "gradient": 29743, "mask_checks": 29765, "discard": 494, "failedmask": 204, "hessian": 22}, "pending": 13, "depth": 28, "unresolved": 0, "Pcache": 1890}
+{"seconds": 177.7947633266449, "stats": {"visited": 2000, "gradient": 81816, "mask_checks": 81838, "discard": 992, "failedmask": 209, "hessian": 22, "node_cone": 13}, "pending": 17, "depth": 28, "unresolved": 0, "Pcache": 6006}
+{"seconds": 180.21948909759521, "stats": {"visited": 2044, "gradient": 83926, "mask_checks": 83948, "discard": 1014, "failedmask": 209, "hessian": 22, "node_cone": 13}, "pending": 17, "depth": 28, "unresolved": 0, "Pcache": 6126, "interior": 0, "leaf_counts": {"gradient": 82968, "hessian": 3, "node_cone": 13}, "leaf_pattern_records": 82971, "node_leaves": 13, "maximum_ambiguity": 36, "interior_complete": false, "complete": false}

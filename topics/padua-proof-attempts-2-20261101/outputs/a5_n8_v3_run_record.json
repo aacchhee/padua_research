@@ -1,0 +1,303 @@
+{
+  "actual_v3_artifact": {
+    "bytes": 243017,
+    "path": "/tmp/a5-n8-candidate-v3.json.gz",
+    "pending_paths": [
+      "1",
+      "01",
+      "0011",
+      "001011",
+      "0010101",
+      "001010011111",
+      "0010100111101111",
+      "0010100111101110"
+    ],
+    "sha256": "4d1210394d674f785c6a7d2647c6e97c7353cb071785ac38a68a42aa79e7032d",
+    "summary": {
+      "Pcache": 8000,
+      "all_gradient_leaves": 32555,
+      "complete": false,
+      "depth": 30,
+      "interior": 9,
+      "interior_complete": false,
+      "leaf_counts": {
+        "all_gradient": 32555,
+        "gradient": 72642,
+        "hessian": 840,
+        "node_cone": 62,
+        "root": 144
+      },
+      "leaf_pattern_records": 73626,
+      "maximum_ambiguity": 45,
+      "node_leaves": 62,
+      "pending": 8,
+      "seconds": 3600.7278332710266,
+      "stats": {
+        "all_gradient": 32555,
+        "discard": 34127,
+        "failedmask": 10668,
+        "gradient": 104395,
+        "hessian": 1913,
+        "mask_checks": 106600,
+        "node_cone": 62,
+        "root": 292,
+        "visited": 68261
+      },
+      "unresolved": 0
+    }
+  },
+  "actual_v3_exit_code": 0,
+  "actual_v4": {
+    "bytes": 370875,
+    "path": "/tmp/a5-n8-candidate-v4.json.gz",
+    "pending_paths": [
+      "1",
+      "01111",
+      "011101",
+      "0111001111111",
+      "01110011111101",
+      "0111001111110011",
+      "0111001111110010"
+    ],
+    "sha256": "4d0884a64cf6b41c7e9b6fadb7da56bed61a4c44e816b215a8e7ce37fdc0647c",
+    "summary": {
+      "Pcache": 8000,
+      "all_gradient_leaves": 66652,
+      "complete": false,
+      "depth": 34,
+      "interior": 23,
+      "interior_complete": false,
+      "leaf_counts": {
+        "all_gradient": 66652,
+        "gradient": 240795,
+        "hessian": 3490,
+        "node_cone": 159,
+        "root": 259
+      },
+      "leaf_pattern_records": 244544,
+      "maximum_ambiguity": 45,
+      "node_leaves": 159,
+      "pending": 7,
+      "seconds": 3601.4505321979523,
+      "stats": {
+        "all_gradient": 66652,
+        "discard": 70648,
+        "failedmask": 19646,
+        "gradient": 306257,
+        "hessian": 5416,
+        "mask_checks": 312344,
+        "node_cone": 159,
+        "root": 671,
+        "visited": 141302
+      },
+      "unresolved": 0
+    },
+    "validate_only_exit": 0,
+    "validate_only_stdout": "{\"structurally_valid\": true, \"lineage_valid\": true, \"active_left_pending\": 6, \"parked_right_pending\": 1, \"search_advanced\": false, \"input_sha256\": \"4d0884a64cf6b41c7e9b6fadb7da56bed61a4c44e816b215a8e7ce37fdc0647c\", \"input_bytes\": 370875, \"pending\": 7, \"disposed_leaves\": 70648, \"restored_roots\": 23, \"mathematical_certificate_accepted\": false}"
+  },
+  "actual_v5": {
+    "bytes": 390861,
+    "frozen_source_guards_valid": true,
+    "full_frontier_partition": true,
+    "honest_lineage_valid": true,
+    "left_prefix_complete": true,
+    "path": "/tmp/a5-n8-candidate-v5.json.gz",
+    "pending_paths": [
+      "1"
+    ],
+    "sha256": "6eeed0de98794f18379a656fc7d3c6ef13485fe3eee3f43b9f382cd308d21f56",
+    "summary": {
+      "Pcache": 6409,
+      "all_gradient_leaves": 72451,
+      "complete": false,
+      "depth": 34,
+      "interior": 24,
+      "interior_complete": false,
+      "leaf_counts": {
+        "all_gradient": 72451,
+        "gradient": 267179,
+        "hessian": 3501,
+        "node_cone": 173,
+        "root": 261
+      },
+      "leaf_pattern_records": 270941,
+      "maximum_ambiguity": 45,
+      "negative_half_complete": true,
+      "node_leaves": 173,
+      "pending": 1,
+      "seconds": 671.1041657924652,
+      "stats": {
+        "all_gradient": 72451,
+        "discard": 76760,
+        "failedmask": 21206,
+        "gradient": 345149,
+        "hessian": 5495,
+        "mask_checks": 351319,
+        "node_cone": 173,
+        "root": 675,
+        "visited": 153520
+      },
+      "unresolved": 0
+    }
+  },
+  "axis_aware": {
+    "actual_independent_negative_controls": 6,
+    "controls_sha256": "dd2839f8b85161049b8327b201625694edd2d2cf5b62feb8d87819866e40e2fc",
+    "developer_negative_controls": 6,
+    "input_sha256": "6eeed0de98794f18379a656fc7d3c6ef13485fe3eee3f43b9f382cd308d21f56",
+    "leaf_records": 153520,
+    "literal_fixed43root_fixture_checker_output_sha256": "2df5494bd96ead2e7d23c62a5616079476942c5e2d38cabd3edced84cf11cb74",
+    "log": "/tmp/a5-n8-interior-reflected-v1.log",
+    "output": "/tmp/a5-n8-interior-reflected-v1.json.gz",
+    "output_bytes": 637163,
+    "output_sha256": "a3b4f278a322338fb65f60922b4251265288148e1a09fd22882215004e81c324",
+    "proposer_sha256": "f77056651bb1bbf8eb3b154190eadad47ce33cbb3b793b4f32ae31f0834497e5",
+    "root_records": 44,
+    "status": "ACTUAL EXIT0; full ordinary interior proposal materialized, mathematical full coverage not yet accepted",
+    "stderr": "/tmp/a5-n8-interior-reflected-v1.progress"
+  },
+  "axis_joiner": {
+    "actual_developer_and_independent_structural_controls": 24,
+    "controls_sha256": "338bc9ee9d7ea8827f2530b15e54471cff6b3664add08e5e5988d4c97d965b4d",
+    "source_sha256": "bee99288a67fd7fd007bf587ea62cb5e4a91cbf000c60d2fe0eb81d465179581",
+    "status": "PREPARED ONLY; real join not yet executed"
+  },
+  "boundary_execution": {
+    "actual_exit_code": 124,
+    "outer_timeout_seconds": 1800,
+    "output": "/tmp/a5-n8-boundary-final-v1.json",
+    "source_sha256": "6088db34cce2952332bd22e560c8b02e90446236f994dc2bac79b33717e769cb",
+    "status": "ACTUAL EXIT124; missing final artifact",
+    "stderr": "/tmp/a5-n8-boundary-final-v1.progress",
+    "stdout": "/tmp/a5-n8-boundary-final-v1.log"
+  },
+  "boundary_v2": {
+    "actual_exit_code": 124,
+    "output_exists": false,
+    "receipt": "a5_n8_boundary_v2_timeout_receipt.json",
+    "status": "ACTUAL EXIT124; all4edge logs but no final artifact; joining blocked"
+  },
+  "continuation": {
+    "both_actual_structural_controls_sha256": "ed0b5af2766d7f6198753e08b7ea2bfb80b23ffc6b13767d7dc30743a1deaa03",
+    "command": "PYTHONPATH=/tmp/padua2-deps timeout 5400 python -B topics/padua-proof-attempts-2-20261101/code/a5_n8_continue.py --resume /tmp/a5-n8-candidate-v3.json.gz --boxes 200000 --seconds 3600 --depth 44 --ambiguity 8 --full-depth 44 --root-depth 12 --cache-masks 8000 --certificate --boundary --output /tmp/a5-n8-candidate-v4.json.gz",
+    "controls_sha256": "2ac7e60d7f814eee58abfed8bd02b1a2581be79fb13a6d776f5cdab2761e16d0",
+    "independent_executor": "/root/a5_n4 actual own-input continuation active; separate receipt",
+    "scope": "own input only; self-contained old/new evidence; all original mathematical helpers/traversal AST unchanged",
+    "source_sha256": "96ce015c9d3d161030be8d8d0de7e2c20f8e21d31b718948734703f3667476ad",
+    "status": "ACTUAL EXIT0 at V4 cap; incomplete",
+    "stderr": "/tmp/a5-n8-candidate-v4.progress",
+    "stdout": "/tmp/a5-n8-candidate-v4.log"
+  },
+  "deadline_stop_receipt": "a5_n8_deadline_stop.json",
+  "exact_interior_stage_gate": {
+    "both_positive_receipts_absent": true,
+    "failure_receipts": [
+      "55b2a328238f18e550783a0e827d85b3daf9b6efc8fd6b034f047c287bfeea9d",
+      "f9b0da570c3112e85f4d86f5c60a69a1b119f0f021365430b383ee45f1d61dee"
+    ],
+    "no_progress_prefix_promotion": true,
+    "satisfied": false
+  },
+  "format": "a5-n8-v3-run-record-v1",
+  "independent_checker": "/root/a5_n4_checker; formal quotient/Vandermonde/independent Sturm implementation",
+  "independent_executor": "/root/a5_n4; fresh nodes, no node-file; separate receipt",
+  "interrupted_v1_developer_exit": 130,
+  "interrupted_v1_independent_exit": 143,
+  "last_updated_utc": "2026-11-01T15:20:34.455483+00:00",
+  "node_input_sha256": "574a47af6a7d84a5f4b27dd3adce9797350860d6e40242869c58a90673e5b23c",
+  "prepared_v5": {
+    "actual_synthetic_controls_passed_by_both_executors": true,
+    "deadline_utc": "2026-11-01T15:19:00Z",
+    "negative_controls": {
+      "continuation": 53,
+      "static_proposer": 12
+    },
+    "original6_live96_old84_unchanged": true,
+    "source_files": [
+      {
+        "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_continue_v5.py",
+        "sha256": "e1ad5f540ee67f785b79ba333d2bbf221f0f4f8956c93ce6ad9ad5d3b4140993"
+      },
+      {
+        "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_continue_v5_controls.py",
+        "sha256": "8e079f4a9befe14139f690d41d95dc48fde658d17ab4023821b30f42a9afe7bf"
+      },
+      {
+        "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_v5.py",
+        "sha256": "a98e9eaccf64a736619e68781e3037aa90d9014c04e8b532ec85a20cf43978b5"
+      },
+      {
+        "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_v5_controls.py",
+        "sha256": "9fb0bfca0dcd19eec1f0e8e87d5ff4bbf49177de055ab2ddd64042eaf8d5ca79"
+      }
+    ],
+    "stage_upper_seconds": 2400,
+    "status": "ACTUALLY EXECUTED; EXIT0 at complete negative-half frontier"
+  },
+  "producer_command": "PYTHONPATH=/tmp/padua2-deps timeout 5400 python -B topics/padua-proof-attempts-2-20261101/code/a5_n8_boxes.py --node-file /tmp/a5-n8-node-pilot.json --boxes 200000 --seconds 3600 --depth 44 --ambiguity 8 --full-depth 44 --root-depth 12 --cache-masks 8000 --certificate --boundary --output /tmp/a5-n8-candidate-v3.json.gz",
+  "proof_claim": "64 lower bound only; no exact-count/global acceptance",
+  "record_created_utc": "2026-11-01T11:36:40.822485+00:00",
+  "reflection_static": {
+    "acceptance_predicate_added": false,
+    "actual_checker_output_sha256": "4c4c0d06e4c711873c4853167298fed2d092aeb0bb469b0c0b5027805adf3b46",
+    "controls_sha256": "515efd319553af2b6c04c19d5cd8c09d29c50141112492718840df52a0b8448c",
+    "fixture_sha256": "682b21facd2763718d0cba167f3c5816916dd5538c46fa03610fd3fde9a69937",
+    "helper_sha256": "84e3ca91689f671cb05f008d87cd4c1ce835392b715505070e5f45e60e166def",
+    "left_half_complete": false,
+    "source6_unchanged": true,
+    "status": "bounded identities/proposer/unchanged-checker fixture PASSED; full target OPEN"
+  },
+  "rule_read_head": "7ec02d0fa4a06cf9ab7ede5db0b60a5eddf887d1",
+  "scientific_programme_pin": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+  "sources": [
+    {
+      "bytes": 6880,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_field.py",
+      "sha256": "764a7d7e50718c04f076ab3bbc86270adad1c47bc902d0b8d4eecf32ebbd2ec2"
+    },
+    {
+      "bytes": 4848,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_nodes.py",
+      "sha256": "c59018d0f17e6d5b9c803e0344cc878e6b067fe8ba457cd4a623bc649b65056b"
+    },
+    {
+      "bytes": 13042,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_boxes.py",
+      "sha256": "e9d763d409dab8568e4b6c3452ac51283e36b708d8aa733e3f4ac3dda923f958"
+    },
+    {
+      "bytes": 10622,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_boundary.py",
+      "sha256": "6088db34cce2952332bd22e560c8b02e90446236f994dc2bac79b33717e769cb"
+    },
+    {
+      "bytes": 3633,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_global.py",
+      "sha256": "f730b4cc3db102e8615326c60c6a26f28ff4d4ab4815e28aca88c55e05c08c7a"
+    },
+    {
+      "bytes": 8815,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_schema.md",
+      "sha256": "1ca5289329359833859960d216b103284457495d6326d35463e18a761d43ed24"
+    }
+  ],
+  "status": "A5 STOPPED15:19UTC;64 PROVED lower bound44;65 exact interior,61 closed count,62 global OPEN",
+  "stderr": "/tmp/a5-n8-candidate-v3.progress",
+  "stdout": "/tmp/a5-n8-candidate-v3.log",
+  "v3_features": [
+    "atomic preboundary interior checkpoint with complete=false",
+    "theorem53 universal compatible-gradient leaf, natural/centered exact background",
+    "exact immutable norm/root-partition caches",
+    "certified Arb candidates with producer positively rescaled Sturm total/per-interval checks"
+  ],
+  "witness_lower_bound": {
+    "actual_independent_executions": 2,
+    "completeness_certified": false,
+    "global_certified": false,
+    "independent_sha256": "af8d9efe8478b4b7fff46643ad431a63b9782992e307160c4a105ba59b51fa96",
+    "primary_sha256": "ca5648106a89982995232c5555e2bfab62e0a395a743d76aa7e07835e74c30d1",
+    "standalone_replay_exit": 0,
+    "status": "PROVED LOWER BOUND ONLY; Claude audit pending",
+    "strict_interior_lower_bound": 44
+  }
+}

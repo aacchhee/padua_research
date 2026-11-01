@@ -1,0 +1,29 @@
+{
+  "corner_cubic_leading_limit": "PASS",
+  "corner_first_derivative": "PASS",
+  "corner_limit": "-6400*pi^12/729",
+  "corner_quadratic_value": "-4",
+  "corner_second_derivative": "PASS",
+  "corner_sine_addition_identity": "PASS",
+  "failed_coarse_fixed_a_quadratic": "9*A^4/2",
+  "failed_equal_phase_identity": "PASS",
+  "failed_square_edge_identity": "PASS",
+  "python": "3.12.14",
+  "result": "PASS",
+  "scope": "exact symbolic identities; analytic universal proof in theory files",
+  "square_commutator_01": "3*e*(12*e - 1)/(18*e + 1)**2",
+  "square_gram_determinant": "(18*e + 1)/27",
+  "square_moment_differences": {
+    "x^0y^0": "0",
+    "x^0y^1": "0",
+    "x^0y^2": "t**2/3",
+    "x^0y^3": "0",
+    "x^1y^0": "0",
+    "x^1y^1": "t**2/3",
+    "x^1y^2": "0",
+    "x^2y^0": "t**2/3",
+    "x^2y^1": "0",
+    "x^3y^0": "0"
+  },
+  "sympy": "1.14.0"
+}

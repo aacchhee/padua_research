@@ -1,0 +1,75 @@
+{
+  "status": "MEASURED",
+  "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+  "date_utc": "2026-11-01",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "blas_threads": "OPENBLAS_NUM_THREADS=1",
+  "cached_property_version": "1.0.2",
+  "upstream_commit": "6903d7af9995c9d88e661fb229626696e00fdfba",
+  "upstream_version": "0.2.2",
+  "files": [
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e6_benchmark.py",
+      "bytes": 7322,
+      "sha256": "e328b7d5d965637e986285cafe596ac15cdd9320c195d6f02162d883267baafe"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e6_smooth.py",
+      "bytes": 1356,
+      "sha256": "de624205e6909a114521a6e166b212ce05dc84343956e2cbae93a1e515189a1e"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L2/l2_core.py",
+      "bytes": 23914,
+      "sha256": "e8c8fa3378b3531f4fc13faac9902757b97c92c281b2bcd2c02875e0b1c5638d"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_recurrence.py",
+      "bytes": 7275,
+      "sha256": "4b6014359d6cf50d2977ace0524846a5d0bf5498528a382e1c6abde2cb05b884"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_r04_checkerboard.py",
+      "bytes": 4516,
+      "sha256": "1a53cdc4c187edf5ae1e14a60d125b7e2846009134d2d390a68ceb8345506c20"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e6-frozen-grids12.json",
+      "bytes": 12604,
+      "sha256": "3c6a5fc94ef5151e75bb4904ae3309426b3d0bb276cdf3c9a6cd6e37b987dc9a"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e6-frozen-grids.json",
+      "bytes": 16852,
+      "sha256": "8bb5ef149c5c6fa66e03b544f6588ff8e30c50e16490d9bf728f6447bf7b6f50"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e6-benchmarks.json",
+      "bytes": 239594,
+      "sha256": "e7a3f940c4bd79bbf84fbe4eeafca4186c9b969c92665fb972367becc23a3c58"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e6-smooth.json",
+      "bytes": 4977,
+      "sha256": "0cc4627e178e7da9354a2dfdcb511a44162657787985d9a9a9f5388e85740fbe"
+    }
+  ],
+  "commands": [
+    "OPENBLAS_NUM_THREADS=1 python tracks/bivariate-lanczos/code/drift/e6_benchmark.py --output topics/padua-lanczos-drift-20261101/evidence/e6-benchmarks.json",
+    "OPENBLAS_NUM_THREADS=1 python tracks/bivariate-lanczos/code/drift/e6_benchmark.py --sets T24 Q24 --output topics/padua-lanczos-drift-20261101/evidence/e6-frozen-grids12.json",
+    "OPENBLAS_NUM_THREADS=1 python tracks/bivariate-lanczos/code/drift/e6_benchmark.py --sets T24 Q24 --grid-degree 16 --output topics/padua-lanczos-drift-20261101/evidence/e6-frozen-grids.json",
+    "OPENBLAS_NUM_THREADS=1 python tracks/bivariate-lanczos/code/drift/e6_smooth.py --output topics/padua-lanczos-drift-20261101/evidence/e6-smooth.json"
+  ],
+  "checker": "Verify hashes then rerun each command to /tmp and compare case/method scalar metrics; operation/library differences need not give bitwise equality. Validate selection_check asserts and u*kappa/numerical_rank before interpreting gap.",
+  "independent_rerun": "not performed by developer; requested from parent",
+  "retention": "small necessary evidence retained in Git; outside-repository sources locally retained; long-term cold-storage destination pending AC",
+  "limitations": [
+    "BNT source inspected but MATLAB/Chebfun runtime absent; not executed",
+    "ZN author source unresolved; not executed",
+    "Untrusted reference gaps retained as raw diagnostics only",
+    "Adversarial targets selected post hoc; exp(x+y) independently fixed"
+  ]
+}

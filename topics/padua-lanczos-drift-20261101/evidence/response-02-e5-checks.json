@@ -1,0 +1,119 @@
+{
+ "D_definition_pin": {
+  "PD-T069_P_n": true,
+  "PD-T069_final_id_line": true,
+  "PD-T069_g_m": true,
+  "PD-T069_path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-313-padua-turan-certificate-all-n.md",
+  "PD-T069_sha256": "edaa5e2246eefeb11d244aec9443e236e900c3a3466090986f55836e3b2edb23",
+  "ok": true,
+  "record30_P_n": true,
+  "record30_g_m": true,
+  "record30_path": "tracks/bivariate-lanczos/theory/drift-codex-e5-30-padua-positivity-radius-upper-bound.md",
+  "record30_sha256": "2d16144db9996ed7ed2d9e9a60c02e188b91c81e2ece2b79df6e31d25a71705b"
+ },
+ "L3_endpoint_labels": {
+  "Q_a_minus_zero": true,
+  "Q_a_plus_zero": true,
+  "Q_factorisation": true,
+  "Q_vertex_20pi3_9": "-6400*pi**12/729",
+  "Q_vertex_matches_-6400pi^12/729": true,
+  "a_minus": "4*pi**3*(5 - sqrt(2))/9",
+  "a_minus_equals_(2pi^3/3)*r_lo": true,
+  "a_minus_lt_a_plus": true,
+  "a_plus": "4*pi**3*(sqrt(2) + 5)/9",
+  "a_plus_equals_(2pi^3/3)*r_hi": true,
+  "arb_a_minus": "[49.414171734011763843 +/- 4.97e-19]",
+  "arb_a_minus_in_(49.41,49.42)": true,
+  "arb_a_plus": "[88.391502400654103603 +/- 6.53e-20]",
+  "arb_a_plus_in_(88.39,88.40)": true,
+  "arb_sharp_constant": "[219.5413805002682767984686 +/- 1.14e-23]",
+  "arb_sharp_constant_prefix_219.5413805": true,
+  "ok": true,
+  "sharp_constant_alt_form": true,
+  "sharp_constant_identity": true,
+  "superseded_formula_reverses_order": true
+ },
+ "L4_finite_counterexample_n4": {
+  "P4_matches_audit_prefix_-0.10421866": true,
+  "P4_poly_ball_strictly_negative": true,
+  "P4_poly_radius": 4.5793304950257865e-113,
+  "P4_poly_upper_endpoint": "[-0.1042186626401180416335900 +/- 4.34e-26]",
+  "P4_representations_overlap": true,
+  "P4_trig_ball_strictly_negative": true,
+  "P4_zeta4_a_poly": "[-0.1042186626401180416335899566856822703075 +/- 1.64e-42]",
+  "P4_zeta4_astar_poly": "[-0.1042186626401180416335899566856822703075 +/- 1.64e-42]",
+  "P4_zeta4_astar_trig": "[-0.1042186626401180416335899566856822703075 +/- 1.64e-42]",
+  "arb_astar": "[-1539.59260157064120436959271209 +/- 9.0e-30]",
+  "arb_astar_negative": true,
+  "arb_coord_diff_below_1e-100": true,
+  "arb_coord_diff_radius_max": 8.65973515900042e-115,
+  "arb_points_overlap": true,
+  "arb_zeta4_a": [
+   "[0.493619247816445360465023687479 +/- 2.90e-33]",
+   "[0.623589607740736540972143778721 +/- 4.78e-31]"
+  ],
+  "arb_zeta4_astar": [
+   "[0.493619247816445360465023687479 +/- 2.90e-33]",
+   "[0.623589607740736540972143778721 +/- 4.78e-31]"
+  ],
+  "arb_zeta4_in_open_square": true,
+  "exact_astar_over_256_minus_(a/256-2pi)": "0",
+  "exact_identity_astar/4^4=a/4^4-2pi": true,
+  "exact_pi_lt_4_implies_astar_neg": true,
+  "exact_reason_astar_negative": "a*<0 iff pi^2<230.4; pi<4 gives pi^2<16",
+  "exact_zeta4_x_coincide": true,
+  "exact_zeta4_y_coincide": true,
+  "illustration_signs_P_n_zeta_n_astar_n4_12_not_used": {
+   "10": {
+    "sign": "+",
+    "value": "[0.0770323821068 +/- 4.54e-14]"
+   },
+   "11": {
+    "sign": "+",
+    "value": "[0.0336931464369 +/- 1.77e-14]"
+   },
+   "12": {
+    "sign": "+",
+    "value": "[0.0129880359181 +/- 6.33e-16]"
+   },
+   "4": {
+    "sign": "-",
+    "value": "[-0.104218662640 +/- 1.19e-13]"
+   },
+   "5": {
+    "sign": "-",
+    "value": "[-1.89355029462 +/- 4.44e-13]"
+   },
+   "6": {
+    "sign": "+",
+    "value": "[2.89889185688 +/- 4.26e-12]"
+   },
+   "7": {
+    "sign": "+",
+    "value": "[1.62095311336 +/- 3.93e-12]"
+   },
+   "8": {
+    "sign": "+",
+    "value": "[0.00121612511760 +/- 6.84e-17]"
+   },
+   "9": {
+    "sign": "+",
+    "value": "[0.104179962295 +/- 4.73e-13]"
+   }
+  },
+  "leading_limit_Q(astar)": "[27593071933630.760422 +/- 4.79e-7]",
+  "leading_limit_Q(astar)_positive": true,
+  "ok": true,
+  "prec_bits": 384
+ },
+ "code_path": "tracks/bivariate-lanczos/code/drift/e5_response02_check.py",
+ "code_sha256": "983d9d9342c41f33c5cdcc11bc850bf0bc8042e6178435803ee063cd2163bd04",
+ "command": "PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 -B tracks/bivariate-lanczos/code/drift/e5_response02_check.py > topics/padua-lanczos-drift-20261101/evidence/response-02-e5-checks.json",
+ "elapsed_seconds": 0.49,
+ "producer": "Claude response-02 E5 (Opus 5.5 high); audit-02 A02-L3/A02-L4",
+ "python": "3.13.18",
+ "python_flint": "0.9.0",
+ "result": "PASS",
+ "sympy": "1.14.0",
+ "trusted": "SymPy exact simplification; Arb ball arithmetic (python-flint) soundness"
+}

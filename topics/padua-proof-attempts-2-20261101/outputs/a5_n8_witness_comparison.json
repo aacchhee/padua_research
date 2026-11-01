@@ -1,0 +1,29 @@
+{
+  "actual_both_lower_bounds": [
+    44,
+    44
+  ],
+  "equal_mathematical_fields": {
+    "completeness_certified": true,
+    "field_embedding": true,
+    "global_maximum_certified": true,
+    "interior_roots": true,
+    "lower_bound_certified": true,
+    "observed_lower_bound": true
+  },
+  "format": "a5-n8-witness-independent-comparison-v1",
+  "inputs": [
+    {
+      "bytes": 69163,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_interior_witnesses.json",
+      "sha256": "ca5648106a89982995232c5555e2bfab62e0a395a743d76aa7e07835e74c30d1"
+    },
+    {
+      "bytes": 69175,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_interior_witnesses_independent.json",
+      "sha256": "af8d9efe8478b4b7fff46643ad431a63b9782992e307160c4a105ba59b51fa96"
+    }
+  ],
+  "mathematical_witness_payload_sha256": "89f5ccd299897e40fdc27d6c1d3963996efe0e464b002fa7196ba8eeb795794f",
+  "scope": "two actual guarded root-only runs; lower bound only, no completeness or global claim"
+}

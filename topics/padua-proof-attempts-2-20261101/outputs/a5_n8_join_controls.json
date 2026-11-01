@@ -1,0 +1,50 @@
+{
+  "format": "a5-n8-join-structural-controls-v1",
+  "mathematical_certificate_accepted": false,
+  "mathematical_search_executed": false,
+  "negative_control_count": 23,
+  "negative_controls": [
+    "incomplete-interior-flag",
+    "already-complete-interior",
+    "pending-interior",
+    "unresolved-interior",
+    "existing-boundary-fields",
+    "wrong-source",
+    "incomplete-prefix",
+    "mixed-leaf-keys",
+    "wrong-leaf-accounting",
+    "wrong-root-count",
+    "missing-node-record",
+    "partial-edge-set",
+    "duplicate-edge",
+    "boolean-edge-coordinate",
+    "missing-corner",
+    "unresolved-corner",
+    "unresolved-boundary-list",
+    "incomplete-boundary-flag",
+    "wrong-boundary-count",
+    "wrong-disposition-count",
+    "wrong-raw-input-sha",
+    "different-existing-output-preserved",
+    "duplicate-json-key"
+  ],
+  "passed": true,
+  "positive_controls": [
+    "literal-edge-corner-summary-copy",
+    "all-inputs-unmodified",
+    "root-disposition-count-accounting",
+    "deterministic-gzip-roundtrip",
+    "idempotence",
+    "source-pins-guarded"
+  ],
+  "scope": "synthetic STRUCTURAL data only; fixtures intentionally do not satisfy mathematical predicates",
+  "source_sha256_after": {
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n8_join.py": "a004f80c96ba75d78e6fff012c125e306c0d10bf9e625c859a177f17bd92e03e",
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n8_join_controls.py": "55871ddc0b6ccb492eba9e98e4cddbf321de0a9c528b8bd0cf10873c74cd4e38"
+  },
+  "source_sha256_before": {
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n8_join.py": "a004f80c96ba75d78e6fff012c125e306c0d10bf9e625c859a177f17bd92e03e",
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n8_join_controls.py": "55871ddc0b6ccb492eba9e98e4cddbf321de0a9c528b8bd0cf10873c74cd4e38"
+  },
+  "sources_unchanged": true
+}

@@ -1,0 +1,18 @@
+{
+  "status": "MEASURED post-hoc weaker quantitative certificates; thresholds chosen after completed follow-up, not preregistered",
+  "checks": [
+    {
+      "set": "triangle",
+      "squared_ratio_exceeds_49": true,
+      "squared_ratio_exceeds_640000": true,
+      "squared_ratio_exceeds_frozen100": true
+    },
+    {
+      "set": "rotated",
+      "squared_ratio_exceeds_49": true,
+      "squared_ratio_exceeds_640000": false,
+      "squared_ratio_exceeds_frozen100": false
+    }
+  ],
+  "interpretation": "Declared formal scalar-CGS2 capacities: factor>7 on both sets; factor>800 on triangle. These weaker post-hoc certificates do not change factor10 across-both INCONCLUSIVE."
+}

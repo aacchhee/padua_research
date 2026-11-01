@@ -1,0 +1,73 @@
+{
+  "count_certified": false,
+  "fixture_bytes": 140988,
+  "fixture_path": "/tmp/a5-n8-reflection-v5-fixture.json.gz",
+  "fixture_sha256": "3f6a0a675fe47af97e6872bf6a2b8c2b6d3faff7b1170355210882e059f1fb9c",
+  "fixture_summary": {
+    "all_gradient_leaves": 2,
+    "complete": false,
+    "depth": 22,
+    "interior": 18,
+    "interior_complete": false,
+    "leaf_counts": {
+      "all_gradient": 2,
+      "gradient": 320,
+      "hessian": 192,
+      "node_cone": 2,
+      "root": 4
+    },
+    "leaf_pattern_records": 516,
+    "maximum_ambiguity": 45,
+    "node_leaves": 2,
+    "pending": 14,
+    "seconds": 0,
+    "stats": {
+      "all_gradient": 2,
+      "discard": 8,
+      "node_cone": 2,
+      "visited": 29
+    },
+    "unresolved": 0
+  },
+  "format": "a5-n8-versioned-reflection-controls-v1",
+  "independent_verification": "PENDING; unchanged checker must replay every proposed record",
+  "input_sha256": "4d1210394d674f785c6a7d2647c6e97c7353cb071785ac38a68a42aa79e7032d",
+  "negative_control_count": 12,
+  "negative_controls": [
+    "actual-left-half-incomplete",
+    "wrong-field",
+    "wrong-producer",
+    "axis-crossing-root",
+    "implicit-mask-count-mismatch",
+    "reflected-node-cube-containment",
+    "wrong-new-parent-source",
+    "wrong-new-original-frozen-pin",
+    "missing-new-original-sha",
+    "parked-frontier-not-restored",
+    "missing-parked-right-word",
+    "non-right-parked-word"
+  ],
+  "passed": true,
+  "proposal_receipt": {
+    "acceptance_predicate_added": false,
+    "exact_cardinal_identities": 45,
+    "fixture_only": true,
+    "left_complete": false,
+    "mirrored_leaves": 4,
+    "mirrored_ordinary_records": 258,
+    "proposed_roots": 18,
+    "retained_left_roots": 9,
+    "source_left_leaves": 4
+  },
+  "scope": "exact identities and incomplete transformed witness fixture only; no count acceptance",
+  "search_advanced": false,
+  "source_sha256_after": {
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_v5.py": "a98e9eaccf64a736619e68781e3037aa90d9014c04e8b532ec85a20cf43978b5",
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_v5_controls.py": "9fb0bfca0dcd19eec1f0e8e87d5ff4bbf49177de055ab2ddd64042eaf8d5ca79"
+  },
+  "source_sha256_before": {
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_v5.py": "a98e9eaccf64a736619e68781e3037aa90d9014c04e8b532ec85a20cf43978b5",
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_v5_controls.py": "9fb0bfca0dcd19eec1f0e8e87d5ff4bbf49177de055ab2ddd64042eaf8d5ca79"
+  },
+  "sources_unchanged": true
+}

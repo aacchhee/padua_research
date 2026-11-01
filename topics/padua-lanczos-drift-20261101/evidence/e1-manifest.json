@@ -1,0 +1,126 @@
+{
+  "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+  "status": "MEASURED exact aggregate-source-map sweep; scalar-operation full map remains OPEN",
+  "developer": "Codex gpt-6.1-sol medium requested; runtime model/effort unexposed",
+  "scope": {
+    "full_runs": 88,
+    "degrees": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "sets": [
+      "triangle",
+      "rotated"
+    ],
+    "rules": [
+      "bj",
+      "mirror",
+      "alt",
+      "pivot"
+    ],
+    "all_sources_per_run": "N-1",
+    "restricted_screen_runs": 24,
+    "fp_comparison_runs": 24
+  },
+  "commands": [
+    "PYTHONPATH=/workspace/padua-drift-runs/python-deps python tracks/bivariate-lanczos/code/drift/e1_batch.py --output-dir /workspace/padua-drift-runs/e1/screen --summary /workspace/padua-drift-runs/e1/screen.json --degrees 2,8,12 --sources degree2 --workers 2",
+    "PYTHONPATH=/workspace/padua-drift-runs/python-deps python tracks/bivariate-lanczos/code/drift/e1_batch.py --output-dir /workspace/padua-drift-runs/e1/full --summary /workspace/padua-drift-runs/e1/full.json --workers 4",
+    "PYTHONPATH=/workspace/padua-drift-runs/python-deps python tracks/bivariate-lanczos/code/drift/e1_verify.py --output topics/padua-lanczos-drift-20261101/evidence/e1-derivative-verification.json",
+    "python tracks/bivariate-lanczos/code/drift/e1_check.py --evidence /workspace/padua-drift-runs/e1/full.json --output topics/padua-lanczos-drift-20261101/evidence/e1-exact-check.json",
+    "OPENBLAS_NUM_THREADS=1 python tracks/bivariate-lanczos/code/drift/e1_fp.py --exact-dir /workspace/padua-drift-runs/e1/full --output topics/padua-lanczos-drift-20261101/evidence/e1-fp-comparison.json"
+  ],
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "python_flint": "0.9.0",
+    "numpy": "2.3.5",
+    "external_dependencies": "/workspace/padua-drift-runs/python-deps; python-flint installed from package wheel, not vendored",
+    "seeds": "none; deterministic rational inputs"
+  },
+  "resources": {
+    "per_run_timeout_seconds": 240,
+    "full_workers": 4,
+    "full_max_run_seconds": 150.510323804,
+    "peak_RSS": "not profiled; no hard byte cap was set",
+    "working_array_bound": "O(MN) rational entries; M<=625,N<=91; basis plus current-source propagator<=113750 rational entries; rational bit sizes variable"
+  },
+  "files": [
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_exact.py",
+      "bytes": 6167,
+      "sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_verify.py",
+      "bytes": 2563,
+      "sha256": "f60c49e08ba51c9c4647d3ed346ec4681c48c9ee869bc6248b6fc861c2d456cd"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_check.py",
+      "bytes": 3032,
+      "sha256": "b6b3e9ec0498f0e7f5e9ccecb524f7410f13acd9ecd26f0fb42d34e9ff17a821"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_fp.py",
+      "bytes": 2913,
+      "sha256": "494810567de117cfeabe9eed9e49f98e55798f33ae2e80adfc5f2c47275650e4"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_scalar.py",
+      "bytes": 4411,
+      "sha256": "c14cc7f05acdef82a6f4a1b67ad5e1c7d6299c480391c19ce691aad3542545c1"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_batch.py",
+      "bytes": 1985,
+      "sha256": "3c2e2c438737775137f33a2b8e985064fa1ace862436344830f1df5af20830dd"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-exact-check.json",
+      "bytes": 20868,
+      "sha256": "d8488e9637210ae2e513eb4b99259ad37d617b24e2026e3743ac0e664e2caaba"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-fp-comparison.json",
+      "bytes": 12280,
+      "sha256": "dcbef8541df4f8f5503172e7e6044247039d5c08bc0f63554641f6330cc74c99"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-full-sweep.json",
+      "bytes": 616693,
+      "sha256": "0d9c236fe879879b7f546596c554d213b7b8c408d31dec08dd79146c7d629344"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-n12-directional-snapshot.json",
+      "bytes": 103002,
+      "sha256": "385b96c2b710f53332133bfcd0575b29631351ea28ad73523213492847347f1f"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-source-degree2-screen.json",
+      "bytes": 93265,
+      "sha256": "9f5c354ab2b73ece1aff4540d26256ee6d03cc39963ca493e863fa8502d34191"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-derivative-verification.json",
+      "bytes": 2087,
+      "sha256": "97306679c87ac26c6983effe396e3eb1b3d8105d8919bf965d67f2eea77026e5"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-freeze.json",
+      "bytes": 3344,
+      "sha256": "66313783ccb499b2aafe333e03bc5b809a2064e882eac2d61f4ddf5a7924668d"
+    }
+  ],
+  "working_output": "/workspace/padua-drift-runs/e1",
+  "retention": "local working outputs and logs retained; external archival location pending AC",
+  "independent_rerun": "Developer verification is not independent; orchestrator is coordinating separate reruns",
+  "interpretation": "Original KHS-only frozen survival certificate INCONCLUSIVE. Added mathematically derived Urow certifies aggregate-map factor10 separation on both sets at n12; no full implementation/per-scalar-operation claim."
+}

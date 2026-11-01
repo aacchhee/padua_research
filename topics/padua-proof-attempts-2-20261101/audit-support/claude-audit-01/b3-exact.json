@@ -1,0 +1,322 @@
+{
+  "format": "b3-four-atom-exact-v1",
+  "metadata": {
+    "arithmetic": "exact rational symbolic polynomial identities and coefficient bounds; no float signs",
+    "python": "3.13.18",
+    "seconds": 0.37175024100000087,
+    "source_sha256_after": "b33647b8cff4c1b23e9b9089f9822fe307e1f8980786eec043b8bfc9ad3f9b7b",
+    "source_sha256_before": "b33647b8cff4c1b23e9b9089f9822fe307e1f8980786eec043b8bfc9ad3f9b7b",
+    "source_unchanged": true,
+    "sympy": "1.14.0"
+  },
+  "proof": {
+    "Hx_nonzero_eigenvalue_squared": "(11*t + 1)/(2*(25*t + 2))",
+    "Hy_block_determinant": "-6*t/(25*t + 2)",
+    "Hy_block_trace": "-(5*t - 2)/(2*(25*t + 2))",
+    "Tx": [
+      [
+        "0",
+        "0",
+        "-(t - 1)/6"
+      ],
+      [
+        "0",
+        "0",
+        "(5*t + 1)/(25*t + 2)"
+      ],
+      [
+        "1",
+        "(5*t + 1)/6",
+        "0"
+      ]
+    ],
+    "Ty": [
+      [
+        "-(5*t - 2)/6",
+        "-(t - 1)*(25*t + 2)/36",
+        "0"
+      ],
+      [
+        "1",
+        "(5*t - 2)*(25*t - 1)/(6*(25*t + 2))",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1/2"
+      ]
+    ],
+    "auxiliary_sign_certificates": {
+      "Hx_nonzero_eigenvalue_squared_above_one_fifth": {
+        "certified_for_every_t": "0 < t <= 1/1000000",
+        "denominator": {
+          "absolute_tail": "1/4000",
+          "coefficients_ascending": [
+            "20",
+            "250"
+          ],
+          "constant": "20",
+          "lower": "79999/4000",
+          "upper": "80001/4000"
+        },
+        "expression": "(5*t + 1)/(10*(25*t + 2))",
+        "numerator": {
+          "absolute_tail": "1/200000",
+          "coefficients_ascending": [
+            "1",
+            "5"
+          ],
+          "constant": "1",
+          "lower": "199999/200000",
+          "upper": "200001/200000"
+        },
+        "removed_positive_t_power": 0,
+        "sign": 1
+      },
+      "Hy_block_trace_above_two_fifths": {
+        "certified_for_every_t": "0 < t <= 1/1000000",
+        "denominator": {
+          "absolute_tail": "1/4000",
+          "coefficients_ascending": [
+            "20",
+            "250"
+          ],
+          "constant": "20",
+          "lower": "79999/4000",
+          "upper": "80001/4000"
+        },
+        "expression": "-(125*t - 2)/(10*(25*t + 2))",
+        "numerator": {
+          "absolute_tail": "1/8000",
+          "coefficients_ascending": [
+            "2",
+            "-125"
+          ],
+          "constant": "2",
+          "lower": "15999/8000",
+          "upper": "16001/8000"
+        },
+        "removed_positive_t_power": 0,
+        "sign": 1
+      },
+      "delta_squared_below_4t_squared": {
+        "certified_for_every_t": "0 < t <= 1/1000000",
+        "denominator": {
+          "absolute_tail": "19200240001/32000000000000",
+          "coefficients_ascending": [
+            "16",
+            "600",
+            "7500",
+            "31250"
+          ],
+          "constant": "16",
+          "lower": "511980799759999/32000000000000",
+          "upper": "512019200240001/32000000000000"
+        },
+        "expression": "(50*t + 1)*(2500*t**2 + 550*t + 37)/(2*(25*t + 2)**3)",
+        "numerator": {
+          "absolute_tail": "19200240001/8000000000000",
+          "coefficients_ascending": [
+            "37",
+            "2400",
+            "30000",
+            "125000"
+          ],
+          "constant": "37",
+          "lower": "295980799759999/8000000000000",
+          "upper": "296019200240001/8000000000000"
+        },
+        "removed_positive_t_power": 0,
+        "sign": 1
+      },
+      "r2_minus_p2": {
+        "certified_for_every_t": "0 < t <= 1/1000000",
+        "denominator": {
+          "absolute_tail": "0",
+          "coefficients_ascending": [
+            "1"
+          ],
+          "constant": "1",
+          "lower": "1",
+          "upper": "1"
+        },
+        "expression": "-(50*t - 47)/300",
+        "numerator": {
+          "absolute_tail": "1/6000000",
+          "coefficients_ascending": [
+            "47/300",
+            "-1/6"
+          ],
+          "constant": "47/300",
+          "lower": "313333/2000000",
+          "upper": "940001/6000000"
+        },
+        "removed_positive_t_power": 0,
+        "sign": 1
+      },
+      "v_minus_p2": {
+        "certified_for_every_t": "0 < t <= 1/1000000",
+        "denominator": {
+          "absolute_tail": "0",
+          "coefficients_ascending": [
+            "1"
+          ],
+          "constant": "1",
+          "lower": "1",
+          "upper": "1"
+        },
+        "expression": "-(625*t**2 - 575*t - 41)/900",
+        "numerator": {
+          "absolute_tail": "306667/480000000000",
+          "coefficients_ascending": [
+            "41/900",
+            "23/36",
+            "-25/36"
+          ],
+          "constant": "41/900",
+          "lower": "65599079999/1440000000000",
+          "upper": "65600920001/1440000000000"
+        },
+        "removed_positive_t_power": 0,
+        "sign": 1
+      }
+    },
+    "basis": [
+      "1",
+      "(5*t + 6*y - 2)/6",
+      "x"
+    ],
+    "box_halfwidth_squared": "t/10",
+    "commutator": [
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "9*t/(25*t + 2)**2"
+      ],
+      [
+        "0",
+        "-3*t/(2*(25*t + 2))",
+        "0"
+      ]
+    ],
+    "degree": 1,
+    "delta_squared": "27*t**2/(2*(25*t + 2)**3)",
+    "det_S_leading_coefficient": "-217/204800",
+    "det_S_negative": {
+      "certified_for_every_t": "0 < t <= 1/1000000",
+      "denominator": {
+        "absolute_tail": "19661414410240096000480001/512000000000000000000",
+        "coefficients_ascending": [
+          "512000000",
+          "38400000000",
+          "1200000000000",
+          "20000000000000",
+          "187500000000000",
+          "937500000000000",
+          "1953125000000000"
+        ],
+        "constant": "512000000",
+        "lower": "262124338585589759903999519999/512000000000000000000",
+        "upper": "262163661414410240096000480001/512000000000000000000"
+      },
+      "expression": "t**2*(2*t - 5)*(25*t**2 - 53*t - 5)*(39062500*t**7 - 261718750*t**6 + 555468750*t**5 - 321968750*t**4 - 103933375*t**3 - 9406197*t**2 - 109640*t - 21700)/(8000000*(25*t + 2)**6)",
+      "numerator": {
+        "absolute_tail": "4236676149963625039321367151106501208850274011320001/512000000000000000000000000000000000000000000000000",
+        "coefficients_ascending": [
+          "-542500",
+          "-8274500",
+          "-258100425",
+          "-4972672770",
+          "-32384879868",
+          "-44677012725",
+          "204279675000",
+          "-210173437500",
+          "98191406250",
+          "-22109375000",
+          "1953125000"
+        ],
+        "constant": "-542500",
+        "lower": "-277764236676149963625039321367151106501208850274011320001/512000000000000000000000000000000000000000000000000",
+        "upper": "-277755763323850036374960678632848893498791149725988679999/512000000000000000000000000000000000000000000000000"
+      },
+      "removed_positive_t_power": 2,
+      "sign": -1
+    },
+    "determining_minor": "-1/2",
+    "dimension": 3,
+    "gram_diagonal": [
+      "1",
+      "-(t - 1)*(25*t + 2)/36",
+      "-(t - 1)/6"
+    ],
+    "nodes": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "-1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "-1/2"
+      ]
+    ],
+    "parameter_upper": "1/1000000",
+    "positive_measure_moment_section_identities": true,
+    "squared_gap_and_reference_inequalities": true,
+    "support_size": 4,
+    "trace_S_positive": {
+      "certified_for_every_t": "0 < t <= 1/1000000",
+      "denominator": {
+        "absolute_tail": "19200240001/640000000000",
+        "coefficients_ascending": [
+          "800",
+          "30000",
+          "375000",
+          "1562500"
+        ],
+        "constant": "800",
+        "lower": "511980799759999/640000000000",
+        "upper": "512019200240001/640000000000"
+      },
+      "expression": "(46875*t**5 - 173125*t**4 + 116525*t**3 + 36429*t**2 + 3220*t + 100)/(100*(25*t + 2)**3)",
+      "numerator": {
+        "absolute_tail": "206082331463457611080003/64000000000000000000000000",
+        "coefficients_ascending": [
+          "100",
+          "3220",
+          "36429",
+          "116525",
+          "-173125",
+          "46875"
+        ],
+        "constant": "100",
+        "lower": "6399793917668536542388919997/64000000000000000000000000",
+        "upper": "6400206082331463457611080003/64000000000000000000000000"
+      },
+      "removed_positive_t_power": 0,
+      "sign": 1
+    },
+    "weighted_selfadjoint_identities": true,
+    "weights": [
+      "-(t - 1)/3",
+      "-(t - 1)/3",
+      "-(t - 1)/3",
+      "t"
+    ]
+  },
+  "proof_payload_sha256": "8fe7d5937ae698c255823bed941376e3f0338d972114ca93f333127564df2bc7",
+  "scope": "exact moment identities and rational polynomial signs on the entire stated interval; theorem interpretation is written separately"
+}

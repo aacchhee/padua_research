@@ -1,0 +1,32 @@
+{"verified_node": 0, "status": "accepted"}
+{"verified_node": 1, "status": "accepted"}
+{"verified_node": 2, "status": "accepted"}
+{"verified_node": 3, "status": "accepted"}
+{"verified_node": 4, "status": "accepted"}
+{"verified_node": 5, "status": "accepted"}
+{"verified_node": 6, "status": "accepted"}
+{"verified_node": 7, "status": "accepted"}
+{"verified_node": 8, "status": "accepted"}
+{"verified_node": 9, "status": "accepted"}
+{"verified_node": 10, "status": "accepted"}
+{"verified_node": 11, "status": "accepted"}
+{"verified_node": 12, "status": "accepted"}
+{"verified_node": 13, "status": "accepted"}
+{"verified_node": 14, "status": "accepted"}
+{"verified_node": 15, "status": "accepted"}
+{"verified_node": 16, "status": "accepted"}
+{"verified_node": 17, "status": "accepted"}
+{"verified_node": 18, "status": "accepted"}
+{"verified_node": 19, "status": "accepted"}
+{"verified_node": 20, "status": "accepted"}
+{"verified_node": 21, "status": "accepted"}
+{"verified_node": 22, "status": "accepted"}
+{"verified_node": 23, "status": "accepted"}
+{"verified_node": 24, "status": "accepted"}
+{"verified_node": 25, "status": "accepted"}
+{"verified_node": 26, "status": "accepted"}
+{"verified_node": 27, "status": "accepted"}
+{"verified_edge": [0, -1], "patterns": 49, "accepted_edge_roots": 3}
+{"verified_edge": [0, 1], "patterns": 49, "accepted_edge_roots": 6}
+{"verified_edge": [1, -1], "patterns": 75, "accepted_edge_roots": 10}
+{"verified_edge": [1, 1], "patterns": 55, "accepted_edge_roots": 14}

@@ -1,0 +1,56 @@
+{
+  "absent_positive_receipts": [
+    "a5_checker_n8_cached_interior.json",
+    "a5_independent_n8_cached_interior.json"
+  ],
+  "actual_failure_receipts": [
+    {
+      "accepted": false,
+      "bytes": 2052,
+      "count_certified": false,
+      "error": "staged execution interrupted or deadline reached",
+      "execution_entry_source_unchanged": true,
+      "interior_sha256": "a3b4f278a322338fb65f60922b4251265288148e1a09fd22882215004e81c324",
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_checker_n8_cached_full.json",
+      "seconds": 1864.083075458002,
+      "sha256": "55b2a328238f18e550783a0e827d85b3daf9b6efc8fd6b034f047c287bfeea9d",
+      "source_after_hashes_match": true,
+      "stage": "failed"
+    },
+    {
+      "accepted": false,
+      "bytes": 2065,
+      "count_certified": false,
+      "error": "staged execution interrupted or deadline reached",
+      "execution_entry_source_unchanged": true,
+      "interior_sha256": "2992e3fad6df217e76f0c345c8b38109d233358c94d98715b90545105e49feb9",
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_cached_full.json",
+      "seconds": 1849.1825140999972,
+      "sha256": "f9b0da570c3112e85f4d86f5c60a69a1b119f0f021365430b383ee45f1d61dee",
+      "source_after_hashes_match": true,
+      "stage": "failed"
+    }
+  ],
+  "both_required_positive_interior_receipts_exist": false,
+  "boundary_v1_exit": 124,
+  "boundary_v2_exit": 124,
+  "collected_utc": "2026-11-01T15:20:34.455483+00:00",
+  "format": "a5-n8-deadline-stop-v1",
+  "join_global_repack_READY_performed": false,
+  "mathematical_work_stopped": true,
+  "next_step": "NEW honestly versioned native-ANP corner evaluator and atomic edge persistence, fresh own boundary executions; fully replay retained interior with original predicates and two actual complete receipts; then whole occurrence value/global proof on an actual complete pair; required Claude audit remains",
+  "open_scope": [
+    "65 exactly44 strict interior maxima",
+    "61 complete closed-square strict count",
+    "62 global maximum/argmax"
+  ],
+  "proved_scope": [
+    "60 exact principal degree12 field/cardinal representation",
+    "63 analytic x-reflection and conditional witness transport",
+    "64 at least44 distinct strict interior maxima, two actual root-only executions and standalone replay"
+  ],
+  "retained_boundary_artifact_exists": false,
+  "retained_interior_proposal_sha256": "a3b4f278a322338fb65f60922b4251265288148e1a09fd22882215004e81c324",
+  "scope": "failure/runtime outcome only; no certification from progress prefixes or printed boundary counts",
+  "shared_deadline_utc": "2026-11-01T15:19:00Z"
+}

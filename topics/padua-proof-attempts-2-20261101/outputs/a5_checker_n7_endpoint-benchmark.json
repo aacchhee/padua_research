@@ -1,0 +1,21 @@
+{
+  "all_exact_values_equal": true,
+  "checker_sha256_before_change": "dd106871554bbf437699e3ac615121bd38d5bbd6d5d41bf29a6cf51cac7ed323",
+  "exact_values_compared": 438,
+  "fixture_sha256": "89c7a16379e461ddf83e2afd823c1947bf2a209b60c9a784ea57b06e1ad9e9f8",
+  "flint_seconds": 0.04212803399968834,
+  "mask": 62737136190,
+  "norm_degree": 72,
+  "rational_points": [
+    "-1",
+    "0",
+    "1",
+    "1/10",
+    "-1/100",
+    "123456789012345678901/1208925819614629174706176"
+  ],
+  "scope": "exact finite-endpoint backend benchmark; no root isolation or count",
+  "speedup": 2.363980289217544,
+  "sturm_rows": 73,
+  "sympy_seconds": 0.09958984199874976
+}

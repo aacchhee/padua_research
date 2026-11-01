@@ -1,0 +1,86 @@
+{
+  "status": "MEASURED verification; developer execution, not independent rerun",
+  "checks": [
+    {
+      "set": "triangle",
+      "rule": "bj",
+      "degree": 3,
+      "sources": 9,
+      "normal_vector_equalities": 45,
+      "basis_pairwise_equalities": 100,
+      "arithmetic": "exact rational",
+      "result": "PASS"
+    },
+    {
+      "set": "triangle",
+      "rule": "mirror",
+      "degree": 3,
+      "sources": 9,
+      "normal_vector_equalities": 45,
+      "basis_pairwise_equalities": 100,
+      "arithmetic": "exact rational",
+      "result": "PASS"
+    },
+    {
+      "set": "triangle",
+      "rule": "alt",
+      "degree": 3,
+      "sources": 9,
+      "normal_vector_equalities": 45,
+      "basis_pairwise_equalities": 100,
+      "arithmetic": "exact rational",
+      "result": "PASS"
+    },
+    {
+      "set": "triangle",
+      "rule": "pivot",
+      "degree": 3,
+      "sources": 9,
+      "normal_vector_equalities": 45,
+      "basis_pairwise_equalities": 100,
+      "arithmetic": "exact rational",
+      "result": "PASS"
+    },
+    {
+      "set": "rotated",
+      "rule": "bj",
+      "degree": 3,
+      "sources": 9,
+      "normal_vector_equalities": 45,
+      "basis_pairwise_equalities": 100,
+      "arithmetic": "exact rational",
+      "result": "PASS"
+    },
+    {
+      "set": "rotated",
+      "rule": "mirror",
+      "degree": 3,
+      "sources": 9,
+      "normal_vector_equalities": 45,
+      "basis_pairwise_equalities": 100,
+      "arithmetic": "exact rational",
+      "result": "PASS"
+    },
+    {
+      "set": "rotated",
+      "rule": "alt",
+      "degree": 3,
+      "sources": 9,
+      "normal_vector_equalities": 45,
+      "basis_pairwise_equalities": 100,
+      "arithmetic": "exact rational",
+      "result": "PASS"
+    },
+    {
+      "set": "rotated",
+      "rule": "pivot",
+      "degree": 3,
+      "sources": 9,
+      "normal_vector_equalities": 45,
+      "basis_pairwise_equalities": 100,
+      "arithmetic": "exact rational",
+      "result": "PASS"
+    }
+  ],
+  "code_sha256": "f60c49e08ba51c9c4647d3ed346ec4681c48c9ee869bc6248b6fc861c2d456cd"
+}

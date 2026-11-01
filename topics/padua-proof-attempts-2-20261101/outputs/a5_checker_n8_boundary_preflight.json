@@ -1,0 +1,54 @@
+{
+  "checker_sha256": "ae564ff72e220808c1998b473a37cf4b2a2f15714eca82765b6f4de682c1ad55",
+  "checker_sha256_after": "ae564ff72e220808c1998b473a37cf4b2a2f15714eca82765b6f4de682c1ad55",
+  "field_input_sha256": "3324c12e62b11fe28014db625faa3ce33161c70a51aff28b327269b40b939ea3",
+  "rows": [
+    {
+      "E_degree": 125,
+      "all_real_norm_roots": 107,
+      "axis": 0,
+      "nonzero_cardinals": 45,
+      "norm_degree": 125,
+      "norm_rational_factors": 17,
+      "regular_crease_cover": true,
+      "seconds": 7.016181622999284,
+      "side": -1
+    },
+    {
+      "E_degree": 125,
+      "all_real_norm_roots": 107,
+      "axis": 0,
+      "nonzero_cardinals": 45,
+      "norm_degree": 125,
+      "norm_rational_factors": 17,
+      "regular_crease_cover": true,
+      "seconds": 6.324391891999767,
+      "side": 1
+    },
+    {
+      "E_degree": 171,
+      "all_real_norm_roots": 155,
+      "axis": 1,
+      "nonzero_cardinals": 45,
+      "norm_degree": 171,
+      "norm_rational_factors": 16,
+      "regular_crease_cover": true,
+      "seconds": 10.648286489000384,
+      "side": -1
+    },
+    {
+      "E_degree": 131,
+      "all_real_norm_roots": 123,
+      "axis": 1,
+      "nonzero_cardinals": 45,
+      "norm_degree": 131,
+      "norm_rational_factors": 18,
+      "regular_crease_cover": true,
+      "seconds": 6.9008895019997,
+      "side": 1
+    }
+  ],
+  "scope": "exact boundary-algebra preflight; no edge or maxima count certificate",
+  "seconds": 36.09221783000066,
+  "source_unchanged": true
+}

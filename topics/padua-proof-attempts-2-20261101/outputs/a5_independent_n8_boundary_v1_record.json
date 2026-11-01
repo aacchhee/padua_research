@@ -1,0 +1,69 @@
+{
+  "actual_exit": 124,
+  "count_certified": false,
+  "format": "a5-n8-boundary-v1-timeout-record-v1",
+  "output_artifact_exists": false,
+  "printed_data_reused": false,
+  "printed_progress_only": [
+    {
+      "Enormdegree": 125,
+      "edge": [
+        0,
+        -1
+      ],
+      "edgecount": 4,
+      "patterns": 107,
+      "seconds": 578.9473400115967,
+      "stats": {
+        "derivative": 5750,
+        "minimum": 331,
+        "outside": 1072,
+        "root": 4,
+        "sign": 312
+      },
+      "unresolved": 0
+    },
+    {
+      "Enormdegree": 125,
+      "edge": [
+        0,
+        1
+      ],
+      "edgecount": 8,
+      "patterns": 107,
+      "seconds": 658.4957783222198,
+      "stats": {
+        "derivative": 11500,
+        "minimum": 662,
+        "outside": 2144,
+        "root": 8,
+        "sign": 624
+      },
+      "unresolved": 0
+    },
+    {
+      "Enormdegree": 171,
+      "edge": [
+        1,
+        -1
+      ],
+      "edgecount": 12,
+      "patterns": 155,
+      "seconds": 1448.6538166999817,
+      "stats": {
+        "derivative": 20064,
+        "minimum": 1104,
+        "outside": 3468,
+        "root": 12,
+        "sign": 1078
+      },
+      "unresolved": 0
+    }
+  ],
+  "registered_outer_seconds": 1800,
+  "scope": "timeout/progress diagnostics only; no complete boundary artifact",
+  "source_sha256": "6088db34cce2952332bd22e560c8b02e90446236f994dc2bac79b33717e769cb",
+  "stderr_bytes": 624,
+  "stderr_path": "/tmp/a5-independent-n8-boundary-final-v1.log",
+  "stderr_sha256": "dffefb50f4a6e4047ff4a7dc9b94cd39cf9b66a52a0c18a81468cda48c2651f0"
+}

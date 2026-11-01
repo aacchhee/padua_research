@@ -1,0 +1,229 @@
+{
+  "all_controls_passed": true,
+  "checker_sha256": "a9cff5748d6c40ee41ac76e4e8a0035e0d5dab95f4de1233dfcc26902cb085a2",
+  "controls": [
+    {
+      "accepted": true,
+      "name": "unchanged_typed_interior_with_only_allowed_join_changes"
+    },
+    {
+      "name": "changed_interior_field_embedding",
+      "reason": "interior field changed: field_embedding",
+      "rejected": true
+    },
+    {
+      "name": "changed_interior_interior_roots",
+      "reason": "interior field changed: interior_roots",
+      "rejected": true
+    },
+    {
+      "name": "changed_interior_leaves",
+      "reason": "interior field changed: leaves",
+      "rejected": true
+    },
+    {
+      "name": "changed_interior_node_cones",
+      "reason": "interior field changed: node_cones",
+      "rejected": true
+    },
+    {
+      "name": "changed_interior_pending_paths",
+      "reason": "interior field changed: pending_paths",
+      "rejected": true
+    },
+    {
+      "name": "changed_interior_unresolved",
+      "reason": "interior field changed: unresolved",
+      "rejected": true
+    },
+    {
+      "name": "changed_interior_format",
+      "reason": "interior field changed: format",
+      "rejected": true
+    },
+    {
+      "name": "changed_interior_pattern_order",
+      "reason": "interior field changed: pattern_order",
+      "rejected": true
+    },
+    {
+      "name": "changed_interior_precision",
+      "reason": "interior field changed: precision",
+      "rejected": true
+    },
+    {
+      "name": "integer_to_equal_float_is_not_identity",
+      "reason": "interior field changed: n",
+      "rejected": true
+    },
+    {
+      "name": "root_ID_integer_to_boolean_is_not_identity",
+      "reason": "interior field changed: interior_roots",
+      "rejected": true
+    },
+    {
+      "name": "unknown_final_top_field",
+      "reason": "final top-level fields changed",
+      "rejected": true
+    },
+    {
+      "name": "missing_final_boundary_field",
+      "reason": "final top-level fields changed",
+      "rejected": true
+    },
+    {
+      "name": "changed_forbidden_summary_interior",
+      "reason": "interior summary changed: interior",
+      "rejected": true
+    },
+    {
+      "name": "changed_forbidden_summary_seconds",
+      "reason": "interior summary changed: seconds",
+      "rejected": true
+    },
+    {
+      "name": "changed_forbidden_summary_leaf_counts",
+      "reason": "interior summary changed: leaf_counts",
+      "rejected": true
+    },
+    {
+      "name": "changed_forbidden_summary_interior_complete",
+      "reason": "interior summary changed: interior_complete",
+      "rejected": true
+    },
+    {
+      "name": "final_complete_flag_still_false",
+      "reason": "final complete flag absent",
+      "rejected": true
+    },
+    {
+      "name": "changed_original_metadata",
+      "reason": "interior metadata changed: scope",
+      "rejected": true
+    },
+    {
+      "name": "unknown_metadata_key",
+      "reason": "metadata keys changed beyond join provenance",
+      "rejected": true
+    },
+    {
+      "name": "wrong_join_interior_binding",
+      "reason": "join interior binding failed",
+      "rejected": true
+    },
+    {
+      "name": "unknown_join_provenance_key",
+      "reason": "unsupported join provenance fields",
+      "rejected": true
+    },
+    {
+      "name": "pending_original_interior",
+      "reason": "stage1 has pending or unresolved regions",
+      "rejected": true
+    },
+    {
+      "name": "stage1_already_contains_boundary",
+      "reason": "stage1 already contains boundary data",
+      "rejected": true
+    },
+    {
+      "name": "expired_deadline",
+      "reason": "staged deadline reached",
+      "rejected": true
+    },
+    {
+      "accepted": true,
+      "name": "exact_frozen_source_and_original_tail_AST_extracted",
+      "tail_ast_sha256": "14ec9c77c3afef4d585b3017a0d3b2f32f6cf0b705ff73c188fea92f4c2be7a5"
+    },
+    {
+      "name": "modified_frozen_tail_source_bytes",
+      "reason": "tail source is not the frozen main",
+      "rejected": true
+    },
+    {
+      "accepted": true,
+      "name": "unchanged_tail_guard_flow_on_nonmathematical_stub",
+      "scope": "structural only; no N8 count"
+    },
+    {
+      "name": "pending_tail_final",
+      "reason": "incomplete certificate: partition, unresolved regions, or boundary obligations",
+      "rejected": true
+    },
+    {
+      "name": "false_tail_complete",
+      "reason": "complete count summary mismatch",
+      "rejected": true
+    },
+    {
+      "name": "wrong_tail_count",
+      "reason": "complete count summary mismatch",
+      "rejected": true
+    },
+    {
+      "name": "wrong_tail_boundary_summary",
+      "reason": "boundary summary mismatch",
+      "rejected": true
+    },
+    {
+      "accepted": true,
+      "name": "READY_binds_exact_raw_pair_and_original_interior"
+    },
+    {
+      "name": "missing_READY",
+      "reason": "READY marker missing",
+      "rejected": true
+    },
+    {
+      "name": "wrong_READY_format",
+      "reason": "invalid READY schema",
+      "rejected": true
+    },
+    {
+      "name": "wrong_READY_interior_sha256",
+      "reason": "READY binds a different interior",
+      "rejected": true
+    },
+    {
+      "name": "wrong_READY_certificate_sha256",
+      "reason": "READY raw pair hash mismatch",
+      "rejected": true
+    },
+    {
+      "name": "wrong_READY_global_sha256",
+      "reason": "READY raw pair hash mismatch",
+      "rejected": true
+    },
+    {
+      "name": "duplicate_READY_JSON_key",
+      "reason": "duplicate JSON object key",
+      "rejected": true
+    },
+    {
+      "name": "global_file_changed_after_READY",
+      "reason": "READY raw pair hash mismatch",
+      "rejected": true
+    },
+    {
+      "name": "count_file_changed_after_READY",
+      "reason": "READY raw pair hash mismatch",
+      "rejected": true
+    },
+    {
+      "name": "different_atomic_receipt_cannot_overwrite_history",
+      "reason": "refusing to replace an existing different receipt",
+      "rejected": true
+    }
+  ],
+  "controls_sha256": "cff61e955854b4f07fb652593acefc5093a0b0c84177bad885bdc7cdb58dda8a",
+  "controls_sha256_after": "cff61e955854b4f07fb652593acefc5093a0b0c84177bad885bdc7cdb58dda8a",
+  "count_certified": false,
+  "driver_sha256": "82385dd392513c476e83ed7c5a59c63e602e77d50279fb51a3976ac5857021ef",
+  "driver_sha256_after": "82385dd392513c476e83ed7c5a59c63e602e77d50279fb51a3976ac5857021ef",
+  "format": "a5-n8-staged-structural-controls-v1",
+  "frozen_controls_sha256": "7f57ed9ba5ad864391aa2e309834d9b61c33f673a6854247d44594cb10ec71d2",
+  "scope": "structural scheduling/identity/AST/READY controls only; no mathematical N8 acceptance",
+  "seconds": 0.02229708899903926,
+  "sources_unchanged": true
+}

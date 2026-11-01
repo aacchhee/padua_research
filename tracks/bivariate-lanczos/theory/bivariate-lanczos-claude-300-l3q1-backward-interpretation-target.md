@@ -60,6 +60,10 @@ In the split-off files.
 
 Cubature link (recorded as required by plan.md): by PD-T?…-302(a), reading (E) is exactly the existence of a positive cubature formula of degree 2n+1 for the perturbed functional L̂ with all nodes in K_δ. Exactly commuting square data (κ = 0) ⟺ L̂ has an N_n-node positive cubature of degree 2n+1 (odd-degree "Gaussian" type, the Mysovskikh situation: degree-(n+1) orthogonal polynomials with N_n common zeros), and then the nodes are the joint eigenvalues (304(b)), the discrete analogue of Xu's joint-eigenvalue characterisation (xu-siam-1994 Thm 3.1/4.1, which concerns even degree 2n−2 with dim Π_{n−1} nodes and a modified last block). The obstruction p* of PD-N?…-301 is a classical dual certificate for non-existence of a localized positive cubature (a polynomial nonnegative on the node region whose functional value is negative).
 
+## Independent residual-aware square-case example
+
+PD-T145 gives an explicit n=1 square family with moment-infinity perturbation epsilon, exact positive noncommuting sections, support upper sqrt(6epsilon), and residual-aware lower sqrt((1-3gamma)epsilon/3) for unit-mass fits with gamma<1/3. This is reading (E): no recurrence realization with local error u=o(epsilon) is proved. Reading (G), including Padua n=3/4, remains OPEN. The original measure fits at residual epsilon and radius zero.
+
 ## Open items
 
 (1) Reading (G): characterize the reconstructed functional L̂ of a long finite-precision run and decide L̂ ∈ C(K_δ) + B(0, O(u)). (2) Dependence on n of the Padua obstruction radius (319, OPEN; exact certificates for all n ≥ 4 are done, 313/N303). (3) Structural reason for the n = 2 → 3 transition. (4) Degenerate subcase of 303. (5) Constants. (6) First-order isomorphism of the last-block commutator (316, OPEN; reduced by 318 to the 309 conjunct).

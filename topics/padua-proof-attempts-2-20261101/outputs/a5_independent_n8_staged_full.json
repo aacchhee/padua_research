@@ -1,0 +1,30 @@
+{
+  "FLINT": "3.6.0",
+  "accepted": false,
+  "checker_sha256": "a9cff5748d6c40ee41ac76e4e8a0035e0d5dab95f4de1233dfcc26902cb085a2",
+  "checker_sha256_after": "a9cff5748d6c40ee41ac76e4e8a0035e0d5dab95f4de1233dfcc26902cb085a2",
+  "controls_sha256": "7f57ed9ba5ad864391aa2e309834d9b61c33f673a6854247d44594cb10ec71d2",
+  "controls_sha256_after": "7f57ed9ba5ad864391aa2e309834d9b61c33f673a6854247d44594cb10ec71d2",
+  "count_certified": false,
+  "driver_sha256": "82385dd392513c476e83ed7c5a59c63e602e77d50279fb51a3976ac5857021ef",
+  "driver_sha256_after": "82385dd392513c476e83ed7c5a59c63e602e77d50279fb51a3976ac5857021ef",
+  "error": "staged execution interrupted or deadline reached",
+  "format": "a5-n8-staged-result-v1",
+  "interior_bytes": 637165,
+  "interior_path": "/tmp/a5-independent-n8-interior-reflected-v1.json.gz",
+  "interior_sha256": "2992e3fad6df217e76f0c345c8b38109d233358c94d98715b90545105e49feb9",
+  "precision": 160,
+  "python": "3.12.14",
+  "python_flint": "0.9.0",
+  "scope": "no complete count/global acceptance",
+  "seconds": 1220.2455119490005,
+  "stage": "failed",
+  "sympy": "1.14.0",
+  "tail_ast_sha256": "14ec9c77c3afef4d585b3017a0d3b2f32f6cf0b705ff73c188fea92f4c2be7a5",
+  "trusted_dependencies": [
+    "frozen independent N8 Verifier",
+    "CPython exact integers/Fraction",
+    "SymPy exact algebra",
+    "python-flint exact arithmetic"
+  ]
+}

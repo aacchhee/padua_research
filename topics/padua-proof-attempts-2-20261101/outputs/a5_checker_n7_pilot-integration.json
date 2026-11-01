@@ -1,0 +1,42 @@
+{
+  "accepted": false,
+  "accepted_node_cones": 36,
+  "boundary_complete": false,
+  "certificate_bytes": 85956,
+  "certificate_sha256": "dcf39c460d104eea74f2d37deaffe6ebff1449ca9814cd86a5c9dce62dd9f523",
+  "checker_sha256": "d9c4f262fbc853cd99e0d0efb1a0c355b2523523fdf1404a0f0089b92483d070",
+  "complete_prefix_partition": false,
+  "count_certified": false,
+  "dispositions": {
+    "gradient": 26179,
+    "hessian": 2,
+    "node_cone": 18
+  },
+  "field_embedding_verified": true,
+  "formal_field_helper_sha256": "76f9ba3de6d4fa4a3bd403ec2c049997de5acb75dd474ac8e05e9e324d6cd106",
+  "formal_minpoly_degree": 12,
+  "ground_types": "flint",
+  "interior_complete": false,
+  "native_tensor_inverse_verified": true,
+  "node_status_counts": {
+    "accepted": 36
+  },
+  "precision": 128,
+  "principal_embedding_verified": true,
+  "python": "3.12.14",
+  "root_values": {},
+  "seconds": 360.8646182049997,
+  "sympy": "1.14.0",
+  "total_maxima": null,
+  "trusted_dependencies": [
+    "CPython integers/Fraction",
+    "SymPy exact field, linear and polynomial algebra"
+  ],
+  "verified_direction_breakpoints": 2220,
+  "verified_interior_maxima_enclosures": 0,
+  "verified_leaves": 5264,
+  "verified_node_leaves": 18,
+  "verified_node_records": 36,
+  "verified_patterns": 26181,
+  "verified_supplied_witnesses": true
+}

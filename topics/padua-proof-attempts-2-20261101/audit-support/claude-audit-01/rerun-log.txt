@@ -1,0 +1,14 @@
+start 2026-11-01T18:20:31Z Python 3.13.18
+a2_exact rc=0 secs=.764811481
+a2_sanity rc=0 secs=.412411341
+a4reg_exact rc=0 secs=3.239604192
+a4reg_compl rc=0 secs=2.099177525
+a4g_series rc=0 secs=.052212548
+b3_exact rc=0 secs=.929689343
+n8_witness_standalone rc=0 secs=3.970881675
+n3_checker rc=0 secs=273.571029449
+n4_checker rc=0 secs=200.746215499
+n5_checker rc=0 secs=635.066405911
+n6_checker rc=0 secs=789.117478565
+n7_checker rc=0 secs=1518.584717932
+end 2026-11-01T19:17:40Z

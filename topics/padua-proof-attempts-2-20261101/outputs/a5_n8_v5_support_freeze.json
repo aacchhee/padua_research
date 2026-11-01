@@ -1,0 +1,46 @@
+{
+  "files": [
+    {
+      "bytes": 27644,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_continue_v5.py",
+      "sha256": "e1ad5f540ee67f785b79ba333d2bbf221f0f4f8956c93ce6ad9ad5d3b4140993"
+    },
+    {
+      "bytes": 10989,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_continue_v5_controls.py",
+      "sha256": "8e079f4a9befe14139f690d41d95dc48fde658d17ab4023821b30f42a9afe7bf"
+    },
+    {
+      "bytes": 11041,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_v5.py",
+      "sha256": "a98e9eaccf64a736619e68781e3037aa90d9014c04e8b532ec85a20cf43978b5"
+    },
+    {
+      "bytes": 5846,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_v5_controls.py",
+      "sha256": "9fb0bfca0dcd19eec1f0e8e87d5ff4bbf49177de055ab2ddd64042eaf8d5ca79"
+    },
+    {
+      "bytes": 3874,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_v5_controls.json",
+      "sha256": "816e7cde2c46207ed40bee9b2d01a02ecff7f4eed7b6dcaf6aacfa7a31e2cd85"
+    },
+    {
+      "bytes": 2639,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_reflection_v5_controls.json",
+      "sha256": "593b94ed794b375b53da80903cbc5007bbcf4195b603e971fd937ecad9ca587d"
+    },
+    {
+      "bytes": 39720,
+      "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n8.md",
+      "sha256": "e99a6f001e2f501ccb685081613bf1650bc32139d259b06bd2b347aa80752f9a"
+    },
+    {
+      "bytes": 6737,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_v3_run_record.json",
+      "sha256": "267afc7da33dc8d0b192d9af3201449106ed1d381ca81a247a7dab54ab6a1740"
+    }
+  ],
+  "format": "a5-n8-v5-preparation-freeze-v1",
+  "status": "PREPARATION ONLY; no real V5 search; V4 active unchanged"
+}

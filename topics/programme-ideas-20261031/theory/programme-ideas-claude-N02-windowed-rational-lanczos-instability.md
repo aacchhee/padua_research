@@ -5,7 +5,7 @@ Final ID: **PD-N040** (allocated 2026-11-01 under AC's authorisation; the provis
 ID kind: PD-N.
 Aliases: gen1-3 K3; "three-block orthogonalisation window" (refuted form); L3, L3c ("project two, constrain one"), L4c; windowed pencil-pair IEP solver; Finding 0.
 Split from: `checks/decisive-gen1-3.md` Finding 0, T3 and Verdict at `614709d` ("the O(MN^{3/2}) solver does not exist; only full reorthogonalisation works").
-Split into: none.
+Split into: PD-T194, PD-T195, PD-T196, PD-T197 (PR12, exact scoped splits; original status/history retained).
 
 ## Statement
 
@@ -72,3 +72,6 @@ Registered (provisional ID) in `PROOF_STATUS.md` and `state/IDEAS.md` by the res
 - 2026-11-01, gen1-3 decisive agent (claude-fable-5-1, xhigh): Finding 0 and K3; Verdict wording "the O(MN^{3/2}) solver does not exist", "only O(MN²) rational Arnoldi works".
 - 2026-11-01, Codex audit-01 A5 / rejections-review "scope caution": negative is about the tested implementations.
 - 2026-11-01, response-01 (claude-opus-5-5, effort not exposed): this record; broad wording qualified in the sources.
+
+
+Dated structural split, 2026-11-01: PD-T194, PD-T195, PD-T196, PD-T197 prove the constrained-window identity for exterior real diagonal poles under their fixed-sample/finite-degree hypotheses. The historical “not proved” observation for all five classes is superseded only in that class. This record remains MEASURED for its tested implementation instability; no stability claim follows.

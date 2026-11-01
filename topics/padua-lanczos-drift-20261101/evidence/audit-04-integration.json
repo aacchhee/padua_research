@@ -1,0 +1,250 @@
+{
+ "generated_utc": "2026-11-01T19:30:08+00:00",
+ "code_sha256": "b3399f31237f4a950ea6cb7f89ee618005dbb212ac451ea1211d1635c8fe35a8",
+ "head": "39b3c5d8690566ce461e6e3a0a628e772a695dbc",
+ "main": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+ "checks": {
+  "main_is_ancestor_of_head": true,
+  "ledger_tokens_present": {
+   "PD-T136–PD-T155": true,
+   "PD-N062–PD-N071": true,
+   "IDEA-246–IDEA-285": true,
+   "LIT-445–LIT-459": true,
+   "6920ba632843597c37e1493d077c1df2e89f54cb": true,
+   "PD-T106–PD-T135": true,
+   "PD-N044–PD-N061": true,
+   "IDEA-210–IDEA-245": true,
+   "LIT-427–LIT-444": true,
+   "PD-T118–135, PD-N054–061, IDEA-228–245, LIT-429–444": true,
+   "**Integration order (AC, 2026-11-01):**": true
+  },
+  "crosswalk_tokens_present": {
+   "| PD-N?mz2d-codex-41 | PD-N045 |": true,
+   "Administrative reciprocal mapping": true,
+   "PD-T110": true,
+   "## Lanczos drift reservation (no final assignment)": true
+  },
+  "crosswalk_main_lines_all_retained": true,
+  "ledger_lines_removed_vs_main": [
+   "[Complete scan and file identities](https://github.com/aacchhee/padua_research/blob/2d20672f62e0130d2adbe104af6e5ee9d05d20af/topics/padua-lanczos-drift-20261101/allocation-scan.json)."
+  ],
+  "ledger_lines_added_vs_main": [
+   "[Complete scan and file identities](../padua-lanczos-drift-20261101/allocation-scan.json); reservation first published in `6920ba632843597c37e1493d077c1df2e89f54cb`; copy pinned at [2d20672](https://github.com/aacchhee/padua_research/blob/2d20672f62e0130d2adbe104af6e5ee9d05d20af/topics/padua-lanczos-drift-20261101/allocation-scan.json)."
+  ],
+  "ledger_change_limited_to_pr15_scan_link": true,
+  "protected_paths_diff_vs_main": [],
+  "theory_changes_vs_main": [
+   "A\ttracks/bivariate-lanczos/theory/drift-codex-e1-01-span-derivative.md",
+   "A\ttracks/bivariate-lanczos/theory/drift-codex-e1-02-rational-span-bounds.md",
+   "A\ttracks/bivariate-lanczos/theory/drift-codex-e1-03-scalar-operation-bridge.md",
+   "A\ttracks/bivariate-lanczos/theory/drift-codex-e1-04-finite-aggregate-separation.md",
+   "A\ttracks/bivariate-lanczos/theory/drift-codex-e1-05-finite-scalar-cgs2-capacities.md",
+   "A\ttracks/bivariate-lanczos/theory/drift-codex-e1-06-finite-scalar-cgs2-separation.md",
+   "A\ttracks/bivariate-lanczos/theory/drift-codex-e3-10-polynomial-span-certificate.md",
+   "A\ttracks/bivariate-lanczos/theory/drift-codex-e3-11-selection-criterion.md",
+   "A\ttracks/bivariate-lanczos/theory/drift-codex-e4-14-noiseless-quantifier-refutation.md",
+   "A\ttracks/bivariate-lanczos/theory/drift-codex-e4-15-projection-only-closure-obstruction.md",
+   "A\ttracks/bivariate-lanczos/theory/drift-codex-e5-30-padua-positivity-radius-upper-bound.md",
+   "A\ttracks/bivariate-lanczos/theory/drift-codex-e5-31-explicit-square-root-spread-family.md",
+   "A\ttracks/bivariate-lanczos/theory/drift-codex-e5-32-failed-negative-witness-paths.md",
+   "A\ttracks/bivariate-lanczos/theory/drift-codex-e6-50-public-va-drift-measured.md"
+  ],
+  "only_drift_codex_theory_files_changed": true,
+  "old_theory_files_count": 77,
+  "old_theory_files_byte_identical": true,
+  "reserved_range_usage": {
+   "main": {
+    "ref": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+    "final_assignments_of_reserved_ids": {},
+    "other_mentions_outside_own_topic_and_ledger": {
+     "topics/padua-mz-2d-20261101/protocol/final-assign.py": [
+      "IDEA-246",
+      "LIT-445",
+      "PD-N062",
+      "PD-T136"
+     ],
+     "topics/padua-mz-2d-20261101/protocol/final-github-refresh-frozen.json": [
+      "IDEA-246",
+      "LIT-445",
+      "PD-N062",
+      "PD-T136"
+     ],
+     "topics/padua-mz-2d-20261101/protocol/final-github-refresh.json": [
+      "IDEA-246",
+      "LIT-445",
+      "PD-N062",
+      "PD-T136"
+     ],
+     "topics/padua-mz-2d-20261101/protocol/final-validate.py": [
+      "IDEA-246",
+      "IDEA-285",
+      "LIT-445",
+      "LIT-459",
+      "PD-N062",
+      "PD-N071",
+      "PD-T136",
+      "PD-T155"
+     ],
+     "topics/padua-mz-2d-20261101/protocol/integration-pr14-first-20261101-check.py": [
+      "IDEA-246",
+      "IDEA-285",
+      "LIT-445",
+      "LIT-459",
+      "PD-N062",
+      "PD-N071",
+      "PD-T136",
+      "PD-T155"
+     ],
+     "topics/padua-mz-2d-20261101/protocol/response-01-20261101-validate.py": [
+      "IDEA-246",
+      "IDEA-285",
+      "LIT-445",
+      "LIT-459",
+      "PD-N062",
+      "PD-N071",
+      "PD-T136",
+      "PD-T155"
+     ]
+    }
+   },
+   "head": {
+    "ref": "39b3c5d8690566ce461e6e3a0a628e772a695dbc",
+    "final_assignments_of_reserved_ids": {},
+    "other_mentions_outside_own_topic_and_ledger": {
+     "results/padua-lanczos-drift-20261101.md": [
+      "IDEA-246",
+      "LIT-445",
+      "PD-N062",
+      "PD-T136"
+     ],
+     "topics/padua-mz-2d-20261101/protocol/final-assign.py": [
+      "IDEA-246",
+      "LIT-445",
+      "PD-N062",
+      "PD-T136"
+     ],
+     "topics/padua-mz-2d-20261101/protocol/final-github-refresh-frozen.json": [
+      "IDEA-246",
+      "LIT-445",
+      "PD-N062",
+      "PD-T136"
+     ],
+     "topics/padua-mz-2d-20261101/protocol/final-github-refresh.json": [
+      "IDEA-246",
+      "LIT-445",
+      "PD-N062",
+      "PD-T136"
+     ],
+     "topics/padua-mz-2d-20261101/protocol/final-validate.py": [
+      "IDEA-246",
+      "IDEA-285",
+      "LIT-445",
+      "LIT-459",
+      "PD-N062",
+      "PD-N071",
+      "PD-T136",
+      "PD-T155"
+     ],
+     "topics/padua-mz-2d-20261101/protocol/integration-pr14-first-20261101-check.py": [
+      "IDEA-246",
+      "IDEA-285",
+      "LIT-445",
+      "LIT-459",
+      "PD-N062",
+      "PD-N071",
+      "PD-T136",
+      "PD-T155"
+     ],
+     "topics/padua-mz-2d-20261101/protocol/response-01-20261101-validate.py": [
+      "IDEA-246",
+      "IDEA-285",
+      "LIT-445",
+      "LIT-459",
+      "PD-N062",
+      "PD-N071",
+      "PD-T136",
+      "PD-T155"
+     ],
+     "tracks/bivariate-lanczos/code/drift/integration_check.py": [
+      "IDEA-246",
+      "IDEA-285",
+      "LIT-445",
+      "LIT-459",
+      "PD-N062",
+      "PD-N071",
+      "PD-T136",
+      "PD-T155"
+     ]
+    }
+   },
+   "PR12": {
+    "ref": "0dd4a6df2db4a2019541604bb97c05926ab3c22b",
+    "final_assignments_of_reserved_ids": {},
+    "other_mentions_outside_own_topic_and_ledger": {
+     "topics/padua-mz-2d-20261101/protocol/final-assign.py": [
+      "IDEA-246",
+      "LIT-445",
+      "PD-N062",
+      "PD-T136"
+     ],
+     "topics/padua-mz-2d-20261101/protocol/final-github-refresh-frozen.json": [
+      "IDEA-246",
+      "LIT-445",
+      "PD-N062",
+      "PD-T136"
+     ],
+     "topics/padua-mz-2d-20261101/protocol/final-github-refresh.json": [
+      "IDEA-246",
+      "LIT-445",
+      "PD-N062",
+      "PD-T136"
+     ],
+     "topics/padua-mz-2d-20261101/protocol/final-validate.py": [
+      "IDEA-246",
+      "IDEA-285",
+      "LIT-445",
+      "LIT-459",
+      "PD-N062",
+      "PD-N071",
+      "PD-T136",
+      "PD-T155"
+     ],
+     "topics/padua-mz-2d-20261101/protocol/integration-pr14-first-20261101-check.py": [
+      "IDEA-246",
+      "IDEA-285",
+      "LIT-445",
+      "LIT-459",
+      "PD-N062",
+      "PD-N071",
+      "PD-T136",
+      "PD-T155"
+     ],
+     "topics/padua-mz-2d-20261101/protocol/response-01-20261101-validate.py": [
+      "IDEA-246",
+      "IDEA-285",
+      "LIT-445",
+      "LIT-459",
+      "PD-N062",
+      "PD-N071",
+      "PD-T136",
+      "PD-T155"
+     ]
+    }
+   }
+  },
+  "merge_tree_vs_open_prs": {
+   "PR12": {
+    "clean": true,
+    "conflicted_files": []
+   }
+  },
+  "squash_rehearsal": {
+   "merge_squash_rc": 0,
+   "unmerged_entries": [],
+   "squashed_tree": "d2dd751d6bd8985e82cfb4d0d2f19289ec0cb7e9",
+   "head_tree": "d2dd751d6bd8985e82cfb4d0d2f19289ec0cb7e9",
+   "tree_equals_head_tree": true
+  }
+ },
+ "result": "PASS"
+}

@@ -1,0 +1,99 @@
+{
+  "actual_axis_box_ids": [
+    9,
+    10,
+    21
+  ],
+  "axis_checks": [
+    {
+      "contraction_upper": "36755569969410999959174941434267262946529/365375409332725729550921208179070754913983135744",
+      "full_stored_and_reflected_root_predicates": true,
+      "hull": [
+        [
+          "-1/1073741824",
+          "1/1073741824"
+        ],
+        [
+          "-1095380523956897605103134696613811200121655614117/1461501637330902918203684832716283019655932542976",
+          "-1095380521234638669735626988906814340667509922469/1461501637330902918203684832716283019655932542976"
+        ]
+      ],
+      "original_id": 9,
+      "same_mask": true
+    },
+    {
+      "contraction_upper": "395951703987727536951741228583463831773/45671926166590716193865151022383844364247891968",
+      "full_stored_and_reflected_root_predicates": true,
+      "hull": [
+        [
+          "-1361129467683753853853498429727072845827/1461501637330902918203684832716283019655932542976",
+          "1361129467683753853853498429727072845827/1461501637330902918203684832716283019655932542976"
+        ],
+        [
+          "-67708771981256429599523269332612356163347695519/365375409332725729550921208179070754913983135744",
+          "-67708771300691695757646342405863141299811272607/365375409332725729550921208179070754913983135744"
+        ]
+      ],
+      "original_id": 10,
+      "same_mask": true
+    },
+    {
+      "contraction_upper": "6905029749379531537728999285347326840885/182687704666362864775460604089535377456991567872",
+      "full_stored_and_reflected_root_predicates": true,
+      "hull": [
+        [
+          "-680564733841876926926749214863536422913/730750818665451459101842416358141509827966271488",
+          "680564733841876926926749214863536422913/730750818665451459101842416358141509827966271488"
+        ],
+        [
+          "717452136293028608506728191789938026888305308977/1461501637330902918203684832716283019655932542976",
+          "717452139015287543874235899496934886342451000625/1461501637330902918203684832716283019655932542976"
+        ]
+      ],
+      "original_id": 21,
+      "same_mask": true
+    }
+  ],
+  "count_certified": false,
+  "fixture_bytes": 146970,
+  "fixture_path": "/tmp/a5-n8-axis-controls-fixture.json.gz",
+  "fixture_sha256": "501fd435b8078fc6391bb120f3dce56a3455cbdd50dc560c7959c62abb0e298f",
+  "format": "a5-n8-actual-axis-controls-v1",
+  "input_sha256": "4d0884a64cf6b41c7e9b6fadb7da56bed61a4c44e816b215a8e7ce37fdc0647c",
+  "negative_control_count": 6,
+  "negative_controls": [
+    "actual-left-prefix-incomplete",
+    "wrong-exact-field",
+    "wrong-input-source",
+    "invalid-stored-preconditioner",
+    "failed-same-mask-hull-injectivity",
+    "failed-enlarged-reflected-reference"
+  ],
+  "passed": true,
+  "proposal_receipt": {
+    "acceptance_predicate_added": false,
+    "enlarged_reference_hulls": 1,
+    "exact_cardinal_identities": 45,
+    "fixture_only": true,
+    "left_complete": false,
+    "mirrored_leaves": 7,
+    "mirrored_ordinary_records": 261,
+    "proposed_roots": 43,
+    "reference_rechecks": 5,
+    "retained_axis_roots": 3,
+    "retained_left_roots": 20,
+    "source_left_leaves": 7
+  },
+  "scope": "actual incomplete axis witness fixture; all original root/reference predicates; no count acceptance",
+  "search_advanced": false,
+  "seconds": 18.574190401999658,
+  "source_sha256_after": {
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_axis.py": "f77056651bb1bbf8eb3b154190eadad47ce33cbb3b793b4f32ae31f0834497e5",
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_axis_controls.py": "dd2839f8b85161049b8327b201625694edd2d2cf5b62feb8d87819866e40e2fc"
+  },
+  "source_sha256_before": {
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_axis.py": "f77056651bb1bbf8eb3b154190eadad47ce33cbb3b793b4f32ae31f0834497e5",
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_axis_controls.py": "dd2839f8b85161049b8327b201625694edd2d2cf5b62feb8d87819866e40e2fc"
+  },
+  "sources_unchanged": true
+}

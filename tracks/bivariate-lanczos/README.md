@@ -17,3 +17,7 @@ Theory files live in [theory/](theory/) with final IDs PD-T029–080 / PD-N007�
 ## Code
 
 `code/inputs/` holds unchanged copies of the AC-supplied scripts that this track re-runs (see its MANIFEST); `code/` holds the track's own scripts.
+
+## Padua Lanczos drift campaign — PR15 final registration
+
+Span-drift development (topic padua-lanczos-drift-20261101) is registered as PD-T136–146 and PD-N062–063 with individual statuses; IDEA-246–267 retain all candidates. Code: `code/drift/` ([README](code/drift/README.md)). PD-T075 is now PARTIAL ((U1) PROVED in PD-T144).

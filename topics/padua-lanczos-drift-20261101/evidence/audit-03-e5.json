@@ -1,0 +1,324 @@
+{
+  "all_exit_codes": [
+    0,
+    0,
+    0
+  ],
+  "auditor": "Codex independent E5 worker",
+  "candidate_sha": "ea829d92d509f79326a1cc037844a1bac3b4de13",
+  "checker_files": {
+    "independent.py": {
+      "bytes": 4841,
+      "sha256": "fd35391132abb874dc92b28466bb9b03604e4ccdbdd40aee44c4e050dfcfa06b"
+    },
+    "manifest.py": {
+      "bytes": 3794,
+      "sha256": "28fe20a832b52e6b030fd1396d13eedb2dbf03e78c67cb732cea817d7d8cdbca"
+    }
+  },
+  "comparison_to_committed": {
+    "all_scientific_fields_equal": true,
+    "differences": {
+      "elapsed_seconds": {
+        "committed": 0.49,
+        "rerun": 0.27
+      },
+      "python": {
+        "committed": "3.13.18",
+        "rerun": "3.12.14"
+      }
+    }
+  },
+  "configured_effort": "xhigh",
+  "configured_model": "gpt-6-astra",
+  "cwd": "/workspace/padua_research",
+  "dispositions": {
+    "A02-L3": "RESOLVED",
+    "A02-L4": "RESOLVED"
+  },
+  "executed_commands": [
+    "PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 -B tracks/bivariate-lanczos/code/drift/e5_response02_check.py > /tmp/padua-audit03-e5/developer-rerun.json",
+    "PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 -B topics/padua-lanczos-drift-20261101/checks/audit-03/E5/independent.py > /tmp/padua-audit03-e5/independent.json",
+    "python3 -B topics/padua-lanczos-drift-20261101/checks/audit-03/E5/manifest.py > topics/padua-lanczos-drift-20261101/evidence/audit-03-e5.json"
+  ],
+  "findings": [],
+  "inputs": {
+    "AGENTS.md": {
+      "bytes": 3572,
+      "candidate_blob": "07cd8c8920fabccc16dce4a63fe853a2f3a26f3d",
+      "equals_candidate": true,
+      "sha256": "c44a76f138fce01f02c06753b22fbc83fd5c1ee701785d49ba17cef5f8eee05b"
+    },
+    "agents/WORKFLOW.md": {
+      "bytes": 26615,
+      "candidate_blob": "52ca0630b69a8759e2e418c669bc35855bc9ea66",
+      "equals_candidate": true,
+      "sha256": "a8927be27a1fe8166e5bcf59c7da8e70618ae0a5f17d56131724baffdad49353"
+    },
+    "agents/codex/CODEX.md": {
+      "bytes": 4969,
+      "candidate_blob": "16a4ecfea89acd5b1d9cd09c9213094bce144caf",
+      "equals_candidate": true,
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b"
+    },
+    "topics/padua-lanczos-drift-20261101/checks/response-02/E5-developer-report.md": {
+      "bytes": 8719,
+      "candidate_blob": "f35d583ab349f00e64c4f06a30573c11fcc94ade",
+      "equals_candidate": true,
+      "sha256": "4de98a5baeac02e13590bf134ec2f488ac1d8979e64824caa42a181ab2533f91"
+    },
+    "topics/padua-lanczos-drift-20261101/directions/E5.md": {
+      "bytes": 11743,
+      "candidate_blob": "4a5443476ec5714ef0c4c0ca5c0d7b0897f50caa",
+      "equals_candidate": true,
+      "sha256": "72e54ee2349888d2026a38fe74c9484c056ec9fbf1e3385212fd0dcb5f923f35"
+    },
+    "topics/padua-lanczos-drift-20261101/evidence/response-02-e5-checks.json": {
+      "bytes": 4364,
+      "candidate_blob": "819f0b81c5e5766ca67c53c080445627287938fe",
+      "equals_candidate": true,
+      "sha256": "955b36da510c92e3bf144cde8e0c59700e46c0f57cc03762079993450f823377"
+    },
+    "tracks/bivariate-lanczos/code/drift/e5_response02_check.py": {
+      "bytes": 10509,
+      "candidate_blob": "8c77f89f644a9e1835085f83caf18a8a3966584c",
+      "equals_candidate": true,
+      "sha256": "983d9d9342c41f33c5cdcc11bc850bf0bc8042e6178435803ee063cd2163bd04"
+    },
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-313-padua-turan-certificate-all-n.md": {
+      "bytes": 9940,
+      "candidate_blob": "512f05b3b8f6c0984b3b018ec27797c864fd74f6",
+      "equals_candidate": true,
+      "sha256": "edaa5e2246eefeb11d244aec9443e236e900c3a3466090986f55836e3b2edb23"
+    },
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-319-padua-obstruction-radius-uniformity.md": {
+      "bytes": 5950,
+      "candidate_blob": "f19211d506ab354a3eaac046df68ef26fc945b14",
+      "equals_candidate": true,
+      "sha256": "f7c1f4f9caf00f28395a5ff95ac0358d8b80059fb00c432676b0fb4086181f36"
+    },
+    "tracks/bivariate-lanczos/theory/drift-codex-e5-30-padua-positivity-radius-upper-bound.md": {
+      "bytes": 18268,
+      "candidate_blob": "03f70f909763430c8049283e8a31107d99ff93ee",
+      "equals_candidate": true,
+      "sha256": "2d16144db9996ed7ed2d9e9a60c02e188b91c81e2ece2b79df6e31d25a71705b"
+    }
+  },
+  "outputs": {
+    "/tmp/padua-audit03-e5/developer-rerun.json": {
+      "bytes": 4364,
+      "payload": {
+        "D_definition_pin": {
+          "PD-T069_P_n": true,
+          "PD-T069_final_id_line": true,
+          "PD-T069_g_m": true,
+          "PD-T069_path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-313-padua-turan-certificate-all-n.md",
+          "PD-T069_sha256": "edaa5e2246eefeb11d244aec9443e236e900c3a3466090986f55836e3b2edb23",
+          "ok": true,
+          "record30_P_n": true,
+          "record30_g_m": true,
+          "record30_path": "tracks/bivariate-lanczos/theory/drift-codex-e5-30-padua-positivity-radius-upper-bound.md",
+          "record30_sha256": "2d16144db9996ed7ed2d9e9a60c02e188b91c81e2ece2b79df6e31d25a71705b"
+        },
+        "L3_endpoint_labels": {
+          "Q_a_minus_zero": true,
+          "Q_a_plus_zero": true,
+          "Q_factorisation": true,
+          "Q_vertex_20pi3_9": "-6400*pi**12/729",
+          "Q_vertex_matches_-6400pi^12/729": true,
+          "a_minus": "4*pi**3*(5 - sqrt(2))/9",
+          "a_minus_equals_(2pi^3/3)*r_lo": true,
+          "a_minus_lt_a_plus": true,
+          "a_plus": "4*pi**3*(sqrt(2) + 5)/9",
+          "a_plus_equals_(2pi^3/3)*r_hi": true,
+          "arb_a_minus": "[49.414171734011763843 +/- 4.97e-19]",
+          "arb_a_minus_in_(49.41,49.42)": true,
+          "arb_a_plus": "[88.391502400654103603 +/- 6.53e-20]",
+          "arb_a_plus_in_(88.39,88.40)": true,
+          "arb_sharp_constant": "[219.5413805002682767984686 +/- 1.14e-23]",
+          "arb_sharp_constant_prefix_219.5413805": true,
+          "ok": true,
+          "sharp_constant_alt_form": true,
+          "sharp_constant_identity": true,
+          "superseded_formula_reverses_order": true
+        },
+        "L4_finite_counterexample_n4": {
+          "P4_matches_audit_prefix_-0.10421866": true,
+          "P4_poly_ball_strictly_negative": true,
+          "P4_poly_radius": 4.5793304950257865e-113,
+          "P4_poly_upper_endpoint": "[-0.1042186626401180416335900 +/- 4.34e-26]",
+          "P4_representations_overlap": true,
+          "P4_trig_ball_strictly_negative": true,
+          "P4_zeta4_a_poly": "[-0.1042186626401180416335899566856822703075 +/- 1.64e-42]",
+          "P4_zeta4_astar_poly": "[-0.1042186626401180416335899566856822703075 +/- 1.64e-42]",
+          "P4_zeta4_astar_trig": "[-0.1042186626401180416335899566856822703075 +/- 1.64e-42]",
+          "arb_astar": "[-1539.59260157064120436959271209 +/- 9.0e-30]",
+          "arb_astar_negative": true,
+          "arb_coord_diff_below_1e-100": true,
+          "arb_coord_diff_radius_max": 8.65973515900042e-115,
+          "arb_points_overlap": true,
+          "arb_zeta4_a": [
+            "[0.493619247816445360465023687479 +/- 2.90e-33]",
+            "[0.623589607740736540972143778721 +/- 4.78e-31]"
+          ],
+          "arb_zeta4_astar": [
+            "[0.493619247816445360465023687479 +/- 2.90e-33]",
+            "[0.623589607740736540972143778721 +/- 4.78e-31]"
+          ],
+          "arb_zeta4_in_open_square": true,
+          "exact_astar_over_256_minus_(a/256-2pi)": "0",
+          "exact_identity_astar/4^4=a/4^4-2pi": true,
+          "exact_pi_lt_4_implies_astar_neg": true,
+          "exact_reason_astar_negative": "a*<0 iff pi^2<230.4; pi<4 gives pi^2<16",
+          "exact_zeta4_x_coincide": true,
+          "exact_zeta4_y_coincide": true,
+          "illustration_signs_P_n_zeta_n_astar_n4_12_not_used": {
+            "10": {
+              "sign": "+",
+              "value": "[0.0770323821068 +/- 4.54e-14]"
+            },
+            "11": {
+              "sign": "+",
+              "value": "[0.0336931464369 +/- 1.77e-14]"
+            },
+            "12": {
+              "sign": "+",
+              "value": "[0.0129880359181 +/- 6.33e-16]"
+            },
+            "4": {
+              "sign": "-",
+              "value": "[-0.104218662640 +/- 1.19e-13]"
+            },
+            "5": {
+              "sign": "-",
+              "value": "[-1.89355029462 +/- 4.44e-13]"
+            },
+            "6": {
+              "sign": "+",
+              "value": "[2.89889185688 +/- 4.26e-12]"
+            },
+            "7": {
+              "sign": "+",
+              "value": "[1.62095311336 +/- 3.93e-12]"
+            },
+            "8": {
+              "sign": "+",
+              "value": "[0.00121612511760 +/- 6.84e-17]"
+            },
+            "9": {
+              "sign": "+",
+              "value": "[0.104179962295 +/- 4.73e-13]"
+            }
+          },
+          "leading_limit_Q(astar)": "[27593071933630.760422 +/- 4.79e-7]",
+          "leading_limit_Q(astar)_positive": true,
+          "ok": true,
+          "prec_bits": 384
+        },
+        "code_path": "tracks/bivariate-lanczos/code/drift/e5_response02_check.py",
+        "code_sha256": "983d9d9342c41f33c5cdcc11bc850bf0bc8042e6178435803ee063cd2163bd04",
+        "command": "PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 -B tracks/bivariate-lanczos/code/drift/e5_response02_check.py > topics/padua-lanczos-drift-20261101/evidence/response-02-e5-checks.json",
+        "elapsed_seconds": 0.27,
+        "producer": "Claude response-02 E5 (Opus 5.5 high); audit-02 A02-L3/A02-L4",
+        "python": "3.12.14",
+        "python_flint": "0.9.0",
+        "result": "PASS",
+        "sympy": "1.14.0",
+        "trusted": "SymPy exact simplification; Arb ball arithmetic (python-flint) soundness"
+      },
+      "sha256": "56ed4d5595982b7abf909f9e1a824161d7627531d68532a519b58317fc5cbee4"
+    },
+    "/tmp/padua-audit03-e5/independent.json": {
+      "bytes": 2549,
+      "payload": {
+        "code_sha256": "fd35391132abb874dc92b28466bb9b03604e4ccdbdd40aee44c4e050dfcfa06b",
+        "finite": {
+          "P4_degree": 9,
+          "P4_exact_polynomial": "320*x**6*y**3 - 232*x**6*y + 72*x**6 - 640*x**4*y**5 + 176*x**4*y**3 - 8*x**4*y**2 + 252*x**4*y - 100*x**4 + 320*x**2*y**7 - 16*x**2*y**6 - 64*x**2*y**5 + 20*x**2*y**4 - 16*x**2*y**3 - 17*x**2*y**2 - 114*x**2*y + 47*x**2 + 288*y**8 - 144*y**7 - 560*y**6 + 236*y**5 + 340*y**4 - 133*y**3 - 107*y**2/2 + 30*y - 7/2",
+          "P4_expanded_polynomial": "[-0.104218662640118041633589956685682270307501638 +/- 4.36e-46]",
+          "P4_expanded_polynomial_radius": "[8.820055995848695078422056654048496501220107412431011651588395784736532234383398029989162887140752415321158286063447e-112 +/- 4.58e-228]",
+          "P4_product_to_sum": "[-0.104218662640118041633589956685682270307501638 +/- 4.36e-46]",
+          "P4_term_count": 25,
+          "Q_astar_positive": "[27593071933630.7604215211034801483137261895755477231800388778477032652603854930777859500362929031294375149583412124 +/- 4.29e-101]",
+          "a_star": "[-1539.59260157064120436959271208999126514845009 +/- 1.23e-42]",
+          "certified_rational_bounds": "-104219/1000000 < P4 < -104218/1000000 < 0",
+          "pass": true,
+          "precision_bits": 384
+        },
+        "producer": "Codex audit-03 E5; configured gpt-6-astra xhigh",
+        "python": "3.12.14",
+        "python_flint": "0.9.0",
+        "resolved_runtime_metadata": "not independently exposed",
+        "result": "PASS",
+        "series": {
+          "Q": "a**2*(81*a**2 - 360*a*p**3 + 368*p**6)/18",
+          "a_minus": "4*p**3*(5 - sqrt(2))/9",
+          "a_plus": "4*p**3*(sqrt(2) + 5)/9",
+          "both_distance_h5_coefficients": "-a*p",
+          "pass": true,
+          "raw_generators": [
+            {
+              "coefficients_h0_through_h7": [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "-a**2"
+              ],
+              "m": 0
+            },
+            {
+              "coefficients_h0_through_h7": [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "-a**2 - 2*a*p**3/3"
+              ],
+              "m": 1
+            },
+            {
+              "coefficients_h0_through_h7": [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "-a**2 - 16*a*p**3/3"
+              ],
+              "m": 2
+            },
+            {
+              "coefficients_h0_through_h7": [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "-a**2 - 18*a*p**3"
+              ],
+              "m": 3
+            }
+          ]
+        },
+        "sympy": "1.14.0"
+      },
+      "sha256": "6a4cd29744c23ea44f09758bb77aec9b169a0adfbf284f5ab5c927d1301e5712"
+    }
+  },
+  "read_head": "c8849a89a601e0a56342d3d568086ab8abdbc4c0",
+  "resolved_runtime_metadata": "not independently exposed",
+  "result": "PASS",
+  "retention": "Temporary local outputs embedded here; reproducible from committed checkers. No cold-storage transfer claimed.",
+  "rules_sha": "c8849a89a601e0a56342d3d568086ab8abdbc4c0"
+}

@@ -1,0 +1,18 @@
+{
+  "bytes": 637163,
+  "closed_count_certified": false,
+  "contains_boundary": false,
+  "copied_utc": "2026-11-01T15:05:20.619652+00:00",
+  "decoded_payload_changed": false,
+  "destination": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_interior_candidate.json.gz",
+  "destination_sha256": "a3b4f278a322338fb65f60922b4251265288148e1a09fd22882215004e81c324",
+  "format": "a5-n8-interior-candidate-retention-v1",
+  "global_certified": false,
+  "interior_proposal_complete": true,
+  "proposed_leaves": 153520,
+  "proposed_roots": 44,
+  "raw_bytes_identical": true,
+  "scope": "expensive retained INTERIOR PROPOSAL for future full allow-partial replay; closed count/global NOT verified; no edges/corners or repacking/global additions",
+  "source": "/tmp/a5-n8-interior-reflected-v1.json.gz",
+  "source_sha256": "a3b4f278a322338fb65f60922b4251265288148e1a09fd22882215004e81c324"
+}
