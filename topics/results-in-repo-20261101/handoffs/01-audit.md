@@ -5,14 +5,14 @@
 - Next agent / model / effort: Codex, gpt-6-astra medium (protocol audit).
 - Role: auditor
 - Branch: `claude/results-in-repo-20261101`
-- Input head SHA: `RULE_SHA` (the commit that publishes this file comes later).
+- Input head SHA: `f19bd03aa6edf1cc00b271cc1de39dc4787614e2` (the commit that publishes this file comes later).
 - Main / base: `e0d9e3d08ee26c3b82a295f33b6ff99d928f22b9`
 - Stage: AUDIT
 - Written by / date: Claude, Opus 5.5 xhigh · 2026-11-01
 
 ## Task
 
-Audit the rules change requested by AC. Compare `agents/WORKFLOW.md` at `RULE_SHA` against base. Check four things:
+Audit the rules change requested by AC. Compare `agents/WORKFLOW.md` at `f19bd03aa6edf1cc00b271cc1de39dc4787614e2` against base. Check four things:
 
 1. It implements AC's instruction literally: per-topic `results/<topic-slug>.md` in the repository.
 2. It leaves no remaining rule text that requires writing results to AC's computer, and no contradiction with AGENTS.md, CLAUDE_ROLES.md, CODEX.md or the cold-storage rules.
