@@ -33,7 +33,7 @@
 
 Flagged by the L1 prior-art check (reviews/L1-prior-art-01.md) as a potential kill for mechanisms (b)/(c); fulltext supplied by AC. Verdict after reading the pages above: mechanism (b)'s triangular-selection/propagator framing and the existence of selection freedom are **known** in the monic-evaluation setting; the link to exponential loss of orthogonality on non-product supports was not found in the pages read.
 
-PR-preparation consolidation 2026-11-01 (audit-01 protocol finding P2): the additions marked 'PR-preparation' above come from the L1 prior-art review 2026-10-31 (topics/bivariate-lanczos-20261031/reviews/), which read the source through WebFetch digests and make no novelty claim; the consolidator did not re-read the source. Any web check made at consolidation is logged in `topics/bivariate-lanczos-20261031/lit/search-log.md`, section 'PR-preparation consolidation 2026-11-01'. Unsupported assertions remain UNVERIFIED.
+PR-preparation consolidation 2026-11-01 (audit-01 protocol finding P2): the L1 prior-art review of 2026-10-31 saw metadata only and did not read this paper because ScienceDirect was blocked. The statement-level page coverage above comes from the orchestrator's later reading of AC's local copy, as recorded in the History below. The consolidator did not re-read the source. Any web check made at consolidation is logged in `topics/bivariate-lanczos-20261031/lit/search-log.md`, section 'PR-preparation consolidation 2026-11-01'.
 
 ## History
 

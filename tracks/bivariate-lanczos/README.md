@@ -1,6 +1,6 @@
 # Track: bivariate Lanczos (truncated recurrence in two commuting variables)
 
-Opened by topic [bivariate-lanczos-20261031](../../topics/bivariate-lanczos-20261031/LOG.md) (Claude development, Codex audit pending).
+Opened by topic [bivariate-lanczos-20261031](../../topics/bivariate-lanczos-20261031/LOG.md) (Claude scientific development; corrected scientific scopes verified by Codex audits 01–03; integration corrections and verification recorded in the topic log).
 
 ## Question
 
@@ -12,7 +12,7 @@ Real distinct nodes, positive weights, total-degree graded order; exact-arithmet
 
 ## Results
 
-Theory files live in [theory/](theory/) with provisional IDs `PD-T?bivariate-lanczos-claude-nnn` / `PD-N?…` until PR preparation (77 files after the response to Codex audit-01; direction digits 1/4 = L1/L4, 2 = L2, 3 = L3, 5 = L5). Ranked survivors, statuses and development briefs: [report.md](../../topics/bivariate-lanczos-20261031/report.md); per-direction summaries in `topics/bivariate-lanczos-20261031/directions/L*/SUMMARY.md`. See [NEGATIVE_RESULTS.md](NEGATIVE_RESULTS.md) (filled at PR preparation) and [AUDIT_LOG.md](AUDIT_LOG.md). All results are developer results; Codex audit pending.
+Theory files live in [theory/](theory/) with final IDs PD-T029–080 / PD-N007–031 and retained provisional IDs `PD-T?bivariate-lanczos-claude-nnn` / `PD-N?…` as provenance (77 files after the response to Codex audit-01; direction digits 1/4 = L1/L4, 2 = L2, 3 = L3, 5 = L5). Ranked survivors, statuses and development briefs: [report.md](../../topics/bivariate-lanczos-20261031/report.md); per-direction summaries in `topics/bivariate-lanczos-20261031/directions/L*/SUMMARY.md`. See [NEGATIVE_RESULTS.md](NEGATIVE_RESULTS.md) (registered at PR preparation) and [AUDIT_LOG.md](AUDIT_LOG.md). Codex audits 01–03 verify the corrected scientific scopes; audit-04 records preparation findings. AC authorized Codex to correct those integration findings directly, without another Claude handoff; the topic log records the independent verification and remaining readiness gates.
 
 ## Code
 

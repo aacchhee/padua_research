@@ -5,7 +5,9 @@ Checks: (1) final IDs unique across PROOF_STATUS rows, IDEAS final tables and IN
 and no collision with main's reserved ranges; (2) every theory file of the track carries
 exactly one Final ID line matching the map; (3) every map entry appears in ID_CROSSWALK;
 (4) statuses in PROOF_STATUS equal the theory files' Overall status; (5) relative links in
-the new registry rows resolve; (6) committed generated outputs of the topic within limits.
+the new registry rows resolve; (6) topic output size inventory. The repository-wide
+aggregate-output gate is recorded separately in response-04; this topic inventory is
+not evidence that the complete repository is below its aggregate cap.
 """
 import glob, json, os, re, sys
 
@@ -13,6 +15,18 @@ T = 'topics/bivariate-lanczos-20261031'
 m = json.load(open(T + '/pr-prep/id-map.json'))
 M, files = m['map'], m['theory_files']
 fail, rep = [], {}
+
+# Check the entire reserved envelope, not only lower bounds or duplicate table rows.
+expected = {'PD-T': (29, 80), 'PD-N': (7, 31), 'IDEA': (77, 176), 'LIT': (66, 292)}
+map_bad = []
+if len(M) != 404 or len(set(M.values())) != 404:
+    map_bad.append('map is not a 404-entry bijection')
+for ns, (lo, hi) in expected.items():
+    actual = {v for p, v in M.items() if p.startswith(ns + '?')}
+    wanted = {f'{ns}{"-" if ns in ("IDEA", "LIT") else ""}{n:03d}' for n in range(lo, hi + 1)}
+    if actual != wanted: map_bad.append(f'{ns} range mismatch')
+rep['allocation_envelope_errors'] = map_bad
+if map_bad: fail.append('allocation envelope mismatch')
 
 ps = open('PROOF_STATUS.md').read()
 ps_ids = re.findall(r'^\| (PD-[TN]\d{3}) \|', ps, re.M)
@@ -78,8 +92,18 @@ for path, mark in (('PROOF_STATUS.md', '## Bivariate Lanczos track'), ('ID_CROSS
 rep['broken_links'] = bl
 if bl: fail.append('broken links')
 
+# The same arXiv source owns both retained TNF statements; the legacy key may
+# remain a redirect, but it must not own a second source record or numbered block.
+tnf = open('literature/records/mourrain-telen-vanbarel.md').read()
+alias = open('literature/records/telen-mourrain-vanbarel-2018.md').read()
+tnf_ok = all(re.search(r'^### LIT-' + n + r'\b', tnf, re.M) for n in ('023', '259'))
+tnf_ok = bool(tnf_ok and not re.search(r'^### LIT-\d', alias, re.M))
+rep['canonical_tnf_statements_preserved'] = tnf_ok
+if not tnf_ok: fail.append('TNF canonical source mismatch')
+
 gen = [f for f in glob.glob(T + '/**/*', recursive=True) if os.path.isfile(f) and re.search(r'/(logs|logs_[^/]*|analysis|audit-0\d)/', f)]
 big = [f for f in gen if os.path.getsize(f) > 1_000_000]
+rep['generated_inventory_scope'] = 'topic filesystem run/audit folders; not the repository aggregate'
 rep['generated_files'] = len(gen); rep['generated_bytes'] = sum(os.path.getsize(f) for f in gen); rep['files_over_1MB'] = big
 if big or rep['generated_bytes'] > 5_000_000: fail.append('size limits')
 
