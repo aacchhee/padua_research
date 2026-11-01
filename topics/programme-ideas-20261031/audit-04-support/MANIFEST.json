@@ -1,0 +1,144 @@
+{
+  "source": "37820a528c863e5cfe2dc2f1f8879b4fd40cf210",
+  "repair": "60e8ecf7bf5a171af02fec589583fa135dee2709",
+  "completed_documentation": "6a42b7f38163770f57a0e298a67e04dd42ab4525",
+  "files": [
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/README.md",
+      "bytes": 3704,
+      "sha256": "642b00374a26003d248729c5860f20fb74a83f7f09de1366e88b654923654583"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/allocation-check.py",
+      "bytes": 13097,
+      "sha256": "1a8ec3246d646b865ab7695ab5506a0241acc2da3582914f74398741b4f6e3ab"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/allocation-final.json",
+      "bytes": 35180,
+      "sha256": "4e70bc1489764eb2b7de1462e520a8126198e492e9c0e85407c4f7e779f47354"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/allocation-repair-check.py",
+      "bytes": 8363,
+      "sha256": "a26564c632942e311234243575ae6718d9c882476a411b881e2552fed5b2ee2a"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/allocation-repair-report.md",
+      "bytes": 5713,
+      "sha256": "8e2ab4bb7c3e51e83f9c523ac126513cc60700e837c2d8a7b2c57eec9e17603b"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/allocation-repair-results.json",
+      "bytes": 35180,
+      "sha256": "0d88bc3cca5481353e4f96c9e71d56a64794496f7c80b1115464df706ed57e9f"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/allocation-report.md",
+      "bytes": 7493,
+      "sha256": "9e2b72eca82f62d0ca73281deb32aced0c96752247950e7b04a3feda9020cbe1"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/allocation-results.json",
+      "bytes": 33936,
+      "sha256": "3220fa681db981d799d7f1f501887f3cad46d7bdf82fef6d3de7ede444f849fd"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/integration-final.json",
+      "bytes": 111292,
+      "sha256": "d81a73024562d37dc9e702966bf112a9d12d59cd2d7554b70ec0008673a5f164"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/integration-repair-check.json",
+      "bytes": 111241,
+      "sha256": "192194bbbf009792b08ec2124f87b143535dddb61a0f4513ca1608d6c5e64796"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/integration-repair-check.py",
+      "bytes": 3887,
+      "sha256": "d7c201aa0bfe473ab9732241ad5730c2b6a0260218f1e09d074dd52a26138de7"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/literature-check.json",
+      "bytes": 16158,
+      "sha256": "a26b8fed0dcf392dcdf0c4556d35acd47855546afadf6954ad44718a950f8ed3"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/literature-check.py",
+      "bytes": 6672,
+      "sha256": "6e5a19ce8774791ace443242cb104a09eb9ed72ffdbd5684400b8873c425f479"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/literature-final.json",
+      "bytes": 12347,
+      "sha256": "073a8ec5be4b5bc7a8e045665ed1d47247db19fad4a356462d4d13da47d71153"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/literature-repair-check.json",
+      "bytes": 11707,
+      "sha256": "44ab08899f5b26654f7185402a147c2d954a9d90255ba34aa410065ea97c7d31"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/literature-repair-check.py",
+      "bytes": 10294,
+      "sha256": "572468fb8753fc57df2c5198e46f8ef359eb16429ff1a9142dde9cf9916e540c"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/literature-repair-committed.json",
+      "bytes": 12347,
+      "sha256": "36f32a38e47af9b7b4f8f59882a2262a2856f27708c0cd643df46a00d996d2f1"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/literature-repair-review.md",
+      "bytes": 4920,
+      "sha256": "592a8c460d1744406f93dd0530764faf93802c78ff4cddee8922c1f2b62828a8"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/literature-review.md",
+      "bytes": 9595,
+      "sha256": "f7927ee09d941f3ce6fe85622594b5e6af3d9667e6b43d65fc3a0fcef172e9e0"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/pr-body-before.md",
+      "bytes": 6296,
+      "sha256": "2fa693fc6f108356aa17ffd026a9c07cbc0d6f60272c111ab918611c5f8665a7"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/preservation-check.json",
+      "bytes": 100655,
+      "sha256": "37330862df27c534fcadd75ec4b40869c8f7e534d594b807ca8ae71b3c83e7f0"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/preservation-check.py",
+      "bytes": 6188,
+      "sha256": "80135b099706a7b02ea5f48379036c9642020e1ee7ddfb1f2370089e18ea67af"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/preservation-review.md",
+      "bytes": 6432,
+      "sha256": "0b1705f84cc02c5c3a92c6ca50692fcefcd1b02b6150149bb1c94838f3a89934"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/rehearsal-check.json",
+      "bytes": 171971,
+      "sha256": "4f3de49da183a014b776ecf0ea31134de0a975db6b65ce085447b6696c36d072"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/rehearsal-check.py",
+      "bytes": 7937,
+      "sha256": "3c53c2f0adee6af0b561c97295c9359109ba47f2bd2f38c8983f36d9a61ef6e6"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/rehearsal-final.json",
+      "bytes": 209721,
+      "sha256": "b13850532d869cef613aca13b078cfb37ba513109c9f655b9185d0ec9b307501"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-04-support/rehearsal-repaired.json",
+      "bytes": 209379,
+      "sha256": "2d64960f2057b706a601d904350ffc70b0c12fb5867197ae773e1ff175b43399"
+    }
+  ],
+  "support_total_bytes": 1171705,
+  "retention": "Committed small necessary integration evidence; prior audit artifacts/history are retained. No bulk numerical output or new external cold storage."
+}
