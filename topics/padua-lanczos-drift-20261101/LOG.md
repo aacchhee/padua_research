@@ -115,3 +115,27 @@
 
   Not duplicated as results files:
   - `Downloads\padua\results\bivariate-lanczos-20261031.md`, `mz-prior-art-20261101.md` and `programme-ideas-20261031.md`, and the programme-ideas section of `Downloads\padua\RESULTS.md`. Their content is covered only by the topic reports on main (`topics/bivariate-lanczos-20261031/report.md`, `topics/mz-prior-art-20261101/report.md`, `topics/programme-ideas-20261031/report.md`).
+
+## Codex re-audit start and PR16 main update — 2026-11-01
+
+- Request: Codex (gpt-6-astra xhigh), Continue this branch. Fetched current topic
+  2fd5456066de08094a35542f2ff6443c27d8c149; open handoff06 re-audits Claude
+  response-01, candidatecef79d66321a93d93d53e53efcb7e6744c387481.
+- Rules initially re-read at2fd5456. AC then reported PR16 merged. Refreshed
+  main28aaa20861d08074b77efc74eaef75cdcb36234d and merged it without rewriting
+  history at7a6dd1f7f8f10d0f9c2568e89d693b7d04cd571b. Read the changed WORKFLOW
+  at that head: results are repository-only; root RESULTS sections change only
+  at PR preparation. No Windows results write will be made. Code/theory bytes
+  are identical to the response candidate; this integration changes rules and
+  results/topic documentation only.
+- Current audit scope: response01 against audit01 (all42 dispositions), material
+  mathematical/measurement changes, original-artifact verification, current
+  union scan and disposable integration rehearsal. No final IDs or scientific
+  registry/proof edits are authorized in this audit.
+- Separate requested Astraxhigh reviewers: reaudit_e1, reaudit_e34, reaudit_e5,
+  reaudit_e6, reaudit_protocol. Only the root changes Git and writes audit-02,
+  LOG, PR metadata and the numbered handoff. Exact serving metadata is not
+  independently exposed; requested allocation is recorded without substituting
+  it for a verified runtime identity.
+- PR15 remains draft, stageAUDIT while review is in progress. New findings are
+  returned to development; the reviewer does not silently fix and approve them.
