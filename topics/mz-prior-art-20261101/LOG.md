@@ -1,7 +1,7 @@
 # MZ prior-art and fulltext closure (CC / Padua MZ manuscript)
 
 - Branch: `claude/mz-prior-art-20261101` · Base: main `9739a0c56b7a3976422ce60a8441bfbbfd6554df` · Developer: Claude (orchestrator) · Auditor: Codex `gpt-6-astra`, high (audit-01: CHANGES REQUIRED)
-- Stage: AUDIT (focused re-audit of response-01) · Next: `Codex gpt-6-astra, high: focused re-audit of response-01 on claude/mz-prior-art-20261101 (PR #11)`.
+- Stage: WORK · Next: `Claude Opus 5.5, high: correct audit-02 R1 and the minor wording notes; request a narrow Codex re-audit`.
 - Claims: none new. Literature topic only; no PD-T/PD-N status changes (literature verdicts never change a PD status).
 - For the PR: record updates for LIT-045–065; new LIT-293–299 (after the bivariate-Lanczos block LIT-066–292) reserved in the shared ledger; manuscript §1/§4/Prop. 5.1 wording and refs.bib; literature INDEX/CORPUS; topics/mz-constants/literature-search.md.
 - Open for AC: missing fulltexts (see local working track `Downloads\padua\results\mz-prior-art-20261101.md`).
@@ -75,3 +75,15 @@ Developer must answer all findings in response-01.md and submit material correct
 - No PD status change. Build: 17 pp., clean. Build products are outside Git.
 - Sources read in this step: Sloan–Smith 1980 (AC's NTNU access, built-in browser) and the MMN 2012 author PDF (text layer plus p. 164 page image).
 - Focused Codex re-audit requested (response-01, last section). Audit-01's note on AC's local results file: this developer session writes it via the device link (updated after this commit).
+
+## 2026-11-01 — Codex audit-02, focused response-01 re-audit
+
+Candidate/rules `41bbc231be4b5ccc7c3f92e5818a53b950ccc25f`; prior audit delivery `64c3c79b8fe2fac27645b181aab79e3206886d16`. Requested allocation Codex gpt-6-astra high; resolved runtime model/effort not independently exposed. Complete candidate state/IDEAS.md reread, including every obstruction/disposition table. Two bounded independent checks supplement the root audit.
+
+**CHANGES REQUIRED; stage WORK.** [Audit-02](audit-02.md) accepts the T2/T4/T5 fixes, source-specific coverage wording, corrected König–Nielsen exponent, and the conditional T6 deduction. One new P2, R1: translation.md T6's scope and response-01 F4 item 3 incorrectly attribute the squared-log order to the single U witness. That witness gives an O(1/log N) upper bound and every-N vanishing; the harmonic witness and PD-T017/018 give the squared-log order. Minor precision notes remain. The manuscript's harmonic proof and all PD statuses are untouched.
+
+Independent rebuild: 17 A4 pages, no final-pass warnings, and both source hashes match response-01. Selected source statements rechecked; source necessity proof and inaccessible historical pages remain explicitly unaudited. Support checks, input identities, commands and limits are in audit-support/response-01-*.
+
+**Reservation confirmation requested by AC:** LIT-293–299 is reserved to this topic; next unreserved LIT-300, with PD-T081, PD-N032 and IDEA-177 unchanged. Main `21e620ba8b5f0e0706f3a8c6613517df04d9d469` has merged PR #10 and holds exactly LIT-001–292. No numbered collision with active PR #6 `3e0100f` or PR #12 `95ca473`; their old LIT-293 planning advice must be superseded before later allocation. No extra ID is allocated by this confirmation. Reconcile the merged main and preserve both ledger blocks before merge readiness; no main merge or full integration rehearsal was performed by this focused audit.
+
+Next: Claude responds in response-02 and requests a narrow re-audit. AC's desktop local-results file remains unavailable here; audit delivery there is not claimed. No external contact or merge.

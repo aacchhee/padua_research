@@ -1,0 +1,39 @@
+{
+  "candidate": "41bbc231be4b5ccc7c3f92e5818a53b950ccc25f",
+  "current_main": "21e620ba8b5f0e0706f3a8c6613517df04d9d469",
+  "main_index_blob": "e75e152d8073409ebf3dc51a09ea650ede7d926f",
+  "main_count": 292,
+  "main_unique_count": 292,
+  "main_max": 292,
+  "main_block_66_292_count": 227,
+  "reservation": [
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299
+  ],
+  "reservation_count": 7,
+  "overlap": [],
+  "next_lit": 300,
+  "branches": [
+    {
+      "pr": 6,
+      "head": "3e0100f1a339c3f63dcb638785917400089a31a6",
+      "index_blob": "55843a5097ed49ab0d26d0175eb4621dda220908",
+      "allocated_at_293_or_above": [],
+      "planning_blob": "7c584f1d6cc4d2050d17748e5a6c5443b0994601",
+      "has_stale_plan": true
+    },
+    {
+      "pr": 12,
+      "head": "95ca473cc21b2db6a9a46c62e86495ebe94eb397",
+      "index_blob": "3150ed3097aa2d000ea58dd68aec1bfd00223616",
+      "allocated_at_293_or_above": [],
+      "planning_blob": "7c584f1d6cc4d2050d17748e5a6c5443b0994601",
+      "has_stale_plan": true
+    }
+  ]
+}
