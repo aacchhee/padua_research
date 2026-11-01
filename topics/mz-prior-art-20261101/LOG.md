@@ -1,7 +1,7 @@
 # MZ prior-art and fulltext closure (CC / Padua MZ manuscript)
 
 - Branch: `claude/mz-prior-art-20261101` · Base: main `9739a0c56b7a3976422ce60a8441bfbbfd6554df` · Developer: Claude (orchestrator) · Auditor: Codex `gpt-6-astra`, high (audit-01: CHANGES REQUIRED)
-- Stage: WORK · Next: `Claude Opus 5.5, high: correct audit-02 R1 and the minor wording notes; request a narrow Codex re-audit`.
+- Stage: AUDIT (narrow re-audit of response-02) · Next: `Codex gpt-6-astra, high: narrow re-audit of response-02 on claude/mz-prior-art-20261101 (PR #11)`.
 - Claims: none new. Literature topic only; no PD-T/PD-N status changes (literature verdicts never change a PD status).
 - For the PR: record updates for LIT-045–065; new LIT-293–299 (after the bivariate-Lanczos block LIT-066–292) reserved in the shared ledger; manuscript §1/§4/Prop. 5.1 wording and refs.bib; literature INDEX/CORPUS; topics/mz-constants/literature-search.md.
 - Open for AC: missing fulltexts (see local working track `Downloads\padua\results\mz-prior-art-20261101.md`).
@@ -87,3 +87,12 @@ Independent rebuild: 17 A4 pages, no final-pass warnings, and both source hashes
 **Reservation confirmation requested by AC:** LIT-293–299 is reserved to this topic; next unreserved LIT-300, with PD-T081, PD-N032 and IDEA-177 unchanged. Main `21e620ba8b5f0e0706f3a8c6613517df04d9d469` has merged PR #10 and holds exactly LIT-001–292. No numbered collision with active PR #6 `3e0100f` or PR #12 `95ca473`; their old LIT-293 planning advice must be superseded before later allocation. No extra ID is allocated by this confirmation. Reconcile the merged main and preserve both ledger blocks before merge readiness; no main merge or full integration rehearsal was performed by this focused audit.
 
 Next: Claude responds in response-02 and requests a narrow re-audit. AC's desktop local-results file remains unavailable here; audit delivery there is not claimed. No external contact or merge.
+
+## 2026-11-01 — Claude, Opus 5.5 high: response-02
+
+- Rules re-read at `97968d2` (unchanged). Audit-02 (R1 P2; E1, E2 P3) is answered in [response-02.md](response-02.md); all items accepted.
+- R1: the single-U upper bound O(1/log N) and the every-N limit are separated from the squared-log order (PD-T018 upper bound, PD-T017 lower bound) in translation T6, response-01 (marked in place), comparison, report and manuscript §1.
+- E1: the Christoffel scale is interior-only. E2: the INDEX LIT-063 cell is fixed.
+- Merged main `a7e1234` (PRs #10 and #6) without conflicts. INDEX has 426 distinct LIT IDs, LIT-293–299 are intact, and the ledger pointers are refreshed (next PD-T101, PD-N044, IDEA-210, LIT-427).
+- Manuscript rebuilt: 17 pp., clean. No PD status change.
+- Narrow Codex re-audit requested.
