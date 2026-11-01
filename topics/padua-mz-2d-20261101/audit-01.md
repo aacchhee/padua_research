@@ -210,3 +210,18 @@ All are **P3 (record/registry)**. None affects a claim's truth, status or eviden
 ## Auditor evidence
 
 Committed under `topics/padua-mz-2d-20261101/audit/claude-audit-01/`: the auditor scripts, receipts and logs, with a manifest (`MANIFEST.md`) of SHA-256 and byte sizes. Total size is well under the evidence limits.
+
+## Addendum A1 — R3 at m = 40 (2026-11-01, same auditor)
+
+- **What stopped.** The Sylvester-minor run for m = 40 (`claude_mz2d_audit_check.py`, four unpivoted FFLUs of dimensions 420/400) hit the session's background time limit after m = 10, 20, 30 had passed. It produced no m40 verdict.
+- **Replacement method.** I certified m = 40 instead with the auditor-written `claude_mz2d_m40_cholesky.py`. It reuses the auditor's own pencil construction, not the developer's code. For each parity block and endpoint, A is the exact integer matrix d(Q − lo·H) (minimum) or d(hi·H − Q) (maximum). A float Cholesky factor proposes an integer lower-triangular Z ≈ 2⁴⁰L⁻¹. FLINT then computes B = ZAZᵀ exactly, and the script checks B for symmetry, a positive diagonal and strict row dominance. These make B positive definite, so B is nonsingular, so Z is invertible, so A is positive definite by Sylvester's law. The other two bracket sides use exact Rayleigh quotients of rounded eigenvectors.
+- **Command.**
+
+  ```sh
+  PYTHONPATH=/tmp/padua-flint OPENBLAS_NUM_THREADS=1 python3 claude_mz2d_m40_cholesky.py claude-m40-cholesky.json
+  ```
+
+  It printed PASS in 13.9 s.
+- **Result.** The m = 40 brackets are reproduced: λ_min ∈ (0.214817, 0.214818) and λ_max ∈ (1.778088, 1.778089). Block dimensions are 420/400, and the minimum relative dominance margins are 1 − 2.6e-10 or better in all four checks.
+- **Caveat.** This route shares the generic congruence-plus-dominance principle with the developer's checker. Its transform, its acceptance condition (positive definiteness, not inertia counting) and its code are different and independent, but it is less methodologically distinct than the Sylvester route used for m = 10–30.
+- **Conclusion.** All eight PD-T107 brackets are now independently reproduced by auditor code. The decision above is unchanged. Receipts: `audit/claude-audit-01/claude-m40-cholesky.{json,log}` and the script.
