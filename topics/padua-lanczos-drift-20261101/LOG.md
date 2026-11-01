@@ -277,3 +277,13 @@
   assigns IDs and applies approved proposals; readiness has not been declared.
   Next: [11-pr-preparation.md](handoffs/11-pr-preparation.md), Claude Opus5.5
   high. Preserve the approved scope; only AC merges.
+
+## PR preparation (Claude, 2026-11-01)
+
+- Handoff: [11-pr-preparation](handoffs/11-pr-preparation.md). Rules read at `918f41ce719e9fe8c5336a338692f1fac14a2018`. Configured model `claude-opus-5-5`, effort high; no subagents. Record: [preparation/README.md](preparation/README.md).
+- Union scan: PASS against main `28aaa20` (unchanged, so no merge), PR12 `f4c5c9e` (draft; registry bytes equal main) and PR15 `918f41c`. All closed PRs were merged.
+- Final IDs, first reserved in `6920ba6`: PD-T136–146, PD-N062–063, IDEA-246–267; no LIT. Permanent gaps: PD-T147–155, PD-N064–071, IDEA-268–285, LIT-445–459. Map: `preparation/final-id-map.json`.
+- Applied: 15 approved literal blocks plus one History anchor (PD-T075 now PARTIAL, with (U1) → PD-T144); final IDs in current prose; the record-14 tombstone removed (IDEA-253 only); registry sections; PD-T075 and IDEA-151 rows; and this topic's root RESULTS section. Commits `d032f46`…`4bc3c7a`; receipt `preparation/prepare-receipt.json`.
+- `preparation/validate.py` at `4bc3c7a`: **PASS** (`preparation/validation.json`). It covers the map; records; literal targets recomputed from base; the 69 other inherited theory files identical to main; ID-only prose with 5 declared administrative files; registry preservation and counts 14/22/36; protected files; links; a squash tree equal to head; and a clean merge-tree with PR12.
+- No scientific claim, proof, code or evidence changed. Tracked campaign bytes are 4,744,471 (< 5 MB; largest file 616,693).
+- Stage **PR**, ready for AC's decision. Next handoff: [12-merge](handoffs/12-merge.md).
