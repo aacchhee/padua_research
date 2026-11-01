@@ -1,8 +1,8 @@
 # Lanczos in two commuting variables — finite-precision theory, joint Ritz values and commuting extensions
 
-- Branch: `claude/bivariate-lanczos-20261031` · Base: `d36722823441dc40c6e19d69a174459348dd309c` (origin/main) · Developer/orchestrator: Claude · Auditor: Codex (`gpt-6-astra`), PENDING
-- Stage: **AUDIT** · Next: `Codex (gpt-6-astra xhigh): Continue claude/bivariate-lanczos-20261031.`
-- Claims: none accepted; 64 theory files (developer statuses) ranked in [report.md](report.md); audit request [audit-handoff.md](audit-handoff.md); round ledger in [plan.md](plan.md); [progress.md](progress.md).
+- Branch: `claude/bivariate-lanczos-20261031` · Base: `d36722823441dc40c6e19d69a174459348dd309c` (original main) · Developer/orchestrator: Claude · Auditor: Codex (`gpt-6-astra xhigh` launch configuration), [audit-01 completed: changes required](audit-01.md)
+- Stage: **WORK** · Next: `Claude (Opus 5.5 xhigh): Continue claude/bivariate-lanczos-20261031; address audit-01.md and linked findings in response-01.md, then return material corrections to AUDIT.`
+- Claims: no overall acceptance; 67 theory files (developer statuses), with scoped verification and outstanding corrections in [audit-01.md](audit-01.md); development ranking [report.md](report.md); frozen request [audit-handoff.md](audit-handoff.md); round ledger [plan.md](plan.md); [progress.md](progress.md).
 - For the PR: one charter paragraph for this track in `state/CURRENT.md` (PR preparation only); final PD-T/PD-N/IDEA/LIT IDs via a shared ledger `topics/padua-batch-20261031/ALLOCATIONS.md` with `codex/charter-unisolvence-20261031`; merge `origin/main` first if the charter PR has merged.
 - Open for AC: see bottom section.
 
@@ -173,14 +173,18 @@ Subagent effort is set from the agent definition and is not independently expose
 
 ## Runs needed
 
-### 2026-11-01 — Codex audit-01 in progress
+### 2026-11-01 — Codex audit-01 completed
 
 - Role: Codex audit orchestrator, independent of the Claude developers. AC requested `gpt-6-astra xhigh`; six bounded audit workers explicitly use that model/effort. The root runtime does not expose a separate model identifier.
 - Rules read at `3a9063b84d14ca0a5998378371e27643fde50a29`: `AGENTS.md`, `agents/WORKFLOW.md`, `agents/codex/CODEX.md`; identical to fetched main's rules. Candidate remains `5ccfac223f466a9105450365d8c6c3781ff7d922`; the sole subsequent change is one LOG line.
 - Fetched main `07c5f5465d6de306aa81dbe8ca1f615295163864` and topic `3a9063b84d14ca0a5998378371e27643fde50a29`. Main reconciliation is inspected read-only for the frozen audit; the previously recorded AC instruction defers merging main to PR preparation. No published science is changed during review.
 - Disjoint audit scopes: L1 foundations/L4, L1 later claims/measurements, L2, L3 framework, L3 certificates, L5. Reports/checkers go under `audit-01/`; only the root controls Git and the final `audit-01.md` report. Root checks protocol, provenance, generated-output limits, shared-state integration obligations and coverage.
 - Novelty scope: review existing ideas/mechanisms/negatives, including the full idea registry and relevant obstruction/disposition tables. No new research candidate or novelty claim is introduced. Existing literature gaps remain explicit.
-- Status: audit in progress; no acceptance or completed rerun is implied by this entry.
+- Completed review: [audit-01.md](audit-01.md), six disjoint direction reports, [protocol](audit-01/protocol.md), checkers and hashed rerun evidence. All 67 frozen theory hashes, 12 input-copy identities and 16 reproduction-log hashes match. Developer science remains unchanged.
+- Actual independent work includes exact T24/Q24/Q40 propagator reruns, an independent rational Padua-n2 dual and n3 certificate/radius reconstruction, all-n symbolic Padua boundary/interior checks, exact equispaced certificates n=1..7, recurrence/section identities, new stable-reference full-CGS2 span drift, and Givens/prefix/failed-trigger reruns. Commands, actual environments and limits are in the scope reports; historical log review is distinguished from fresh execution. Original Windows cold-storage inputs were not retrieved.
+- Verdict: **CHANGES REQUIRED; WORK**. Material findings: T302 normalized residual threshold has an exact counterexample; T201 extended-step normalization drops beta factors and its polynomial-only paraphrase omits chi; unrestricted parent selection, universal reorthogonalization, broad Ritz range and uniform-radius conclusions overreach their proofs/evidence; numerical prefix certification/statistical interpretation and substantive status splits require repair. Core proved claims survive within the precise scopes recorded in the audit. No developer correction was silently performed or self-approved.
+- Root separately inspected and executed the final framework checker; output retained as `audit-01/root-framework-rerun.log`. Root checkpoints `f4594c0328b222b624346eacd5f9baa96e3cc085` and `51a43da` preserve initial provenance and four completed scope reports. Final artifact identities and bounded evidence sizes are in `audit-01/artifact-manifest.json`.
+- PR preparation is not reached: no final-ID reservation, main integration or readiness assertion is made. Claude must disposition every linked finding in response-01, preserve frozen audit records, and return material fixes for focused Codex re-audit. The next exact prompt is at the top of this log.
 
 Consolidated list (exact commands in the cited records): L1 SUMMARY §6; L2 above; L3 SUMMARY §5; L5 R01 §7 and R03 §7 and response-recon-01; repro/REPRO.md §5. None executed by this session; all require AC's servers (syvert0/1/2) or more time.
 

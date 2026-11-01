@@ -1,0 +1,82 @@
+equi_H_cert.py nmin=1 nmax=7 dps=40 (mpmath 1.3.0)
+equi n=1: M=3 dim Pi_2n+1=10 rank J=9 (3M=9) dim S1=1 (expected 1) rank Hess|S1=1 (injective True)  [0.0s exact setup]
+      barrier t=1e0: s = -5.8344852 (gap bound 6.0)
+      barrier t=1e2: s = 0.048206227 (gap bound 0.06)
+      barrier t=1e4: s = 0.08534223 (gap bound 0.0006)
+      barrier t=1e6: s = 0.085736359 (gap bound 6.0e-6)
+      barrier t=1e8: s = 0.085740318 (gap bound 6.0e-8)
+   DUAL high-precision optimum t_D = 0.08574031842  (normalisation sum tr A_i = 1)  [0.3s]
+   DUAL exact check PASS: G v = 0 exactly, all 3 blocks PD exactly; exact min det/tr (normalised) = 4.2870e-02 => (H) CERTIFIED
+   verdict n=1: (H) CERTIFIED  [0.3s]
+equi n=2: M=6 dim Pi_2n+1=21 rank J=18 (3M=18) dim S1=3 (expected 3) rank Hess|S1=3 (injective True)  [0.0s exact setup]
+      barrier t=1e0: s = -11.916866 (gap bound 12.0)
+      barrier t=1e2: s = -0.062108886 (gap bound 0.12)
+      barrier t=1e4: s = 0.019157045 (gap bound 0.0012)
+      barrier t=1e6: s = 0.02003989 (gap bound 1.2e-5)
+      barrier t=1e8: s = 0.0200488 (gap bound 1.2e-7)
+      barrier t=1e10: s = 0.020048889 (gap bound 1.2e-9)
+   DUAL high-precision optimum t_D = 0.02004888867  (normalisation sum tr A_i = 1)  [1.9s]
+   DUAL exact check PASS: G v = 0 exactly, all 6 blocks PD exactly; exact min det/tr (normalised) = 1.0024e-02 => (H) CERTIFIED
+   verdict n=2: (H) CERTIFIED  [1.9s]
+equi n=3: M=10 dim Pi_2n+1=36 rank J=30 (3M=30) dim S1=6 (expected 6) rank Hess|S1=6 (injective True)  [0.2s exact setup]
+      barrier t=1e0: s = -19.950047 (gap bound 20.0)
+      barrier t=1e2: s = -0.15601821 (gap bound 0.2)
+      barrier t=1e4: s = 0.00066144852 (gap bound 0.002)
+      barrier t=1e6: s = 0.0018142951 (gap bound 2.0e-5)
+      barrier t=1e8: s = 0.0018281066 (gap bound 2.0e-7)
+      barrier t=1e10: s = 0.0018282452 (gap bound 2.0e-9)
+      barrier t=1e12: s = 0.0018282466 (gap bound 2.0e-11)
+   DUAL high-precision optimum t_D = 0.001828246589  (normalisation sum tr A_i = 1)  [8.2s]
+   DUAL exact check PASS: G v = 0 exactly, all 10 blocks PD exactly; exact min det/tr (normalised) = 9.1412e-04 => (H) CERTIFIED
+   verdict n=3: (H) CERTIFIED  [8.2s]
+equi n=4: M=15 dim Pi_2n+1=55 rank J=45 (3M=45) dim S1=10 (expected 10) rank Hess|S1=10 (injective True)  [0.5s exact setup]
+      barrier t=1e0: s = -29.966681 (gap bound 30.0)
+      barrier t=1e2: s = -0.26820155 (gap bound 0.3)
+      barrier t=1e4: s = -0.0013011643 (gap bound 0.003)
+      barrier t=1e6: s = 0.00011390497 (gap bound 3.0e-5)
+      barrier t=1e8: s = 0.00013245802 (gap bound 3.0e-7)
+      barrier t=1e10: s = 0.00013264609 (gap bound 3.0e-9)
+      barrier t=1e12: s = 0.00013264797 (gap bound 3.0e-11)
+   DUAL high-precision optimum t_D = 0.0001326479725  (normalisation sum tr A_i = 1)  [15.8s]
+   DUAL exact check PASS: G v = 0 exactly, all 15 blocks PD exactly; exact min det/tr (normalised) = 6.6324e-05 => (H) CERTIFIED
+   verdict n=4: (H) CERTIFIED  [15.8s]
+equi n=5: M=21 dim Pi_2n+1=78 rank J=63 (3M=63) dim S1=15 (expected 15) rank Hess|S1=15 (injective True)  [0.8s exact setup]
+      barrier t=1e0: s = -41.976197 (gap bound 42.0)
+      barrier t=1e2: s = -0.39689347 (gap bound 0.42)
+      barrier t=1e4: s = -0.0020826072 (gap bound 0.0042)
+      barrier t=1e6: s = -1.7023825e-5 (gap bound 4.2e-5)
+      barrier t=1e8: s = 4.5785292e-6 (gap bound 4.2e-7)
+      barrier t=1e10: s = 4.8442576e-6 (gap bound 4.2e-9)
+      barrier t=1e12: s = 4.8469304e-6 (gap bound 4.2e-11)
+      barrier t=1e14: s = 4.8469572e-6 (gap bound 4.2e-13)
+   DUAL high-precision optimum t_D = 4.846957176e-6  (normalisation sum tr A_i = 1)  [56.8s]
+   DUAL exact check PASS: G v = 0 exactly, all 21 blocks PD exactly; exact min det/tr (normalised) = 2.4235e-06 => (H) CERTIFIED
+   verdict n=5: (H) CERTIFIED  [56.8s]
+equi n=6: M=28 dim Pi_2n+1=105 rank J=84 (3M=84) dim S1=21 (expected 21) rank Hess|S1=21 (injective True)  [4.5s exact setup]
+      barrier t=1e0: s = -55.982146 (gap bound 56.0)
+      barrier t=1e2: s = -0.54243409 (gap bound 0.56)
+      barrier t=1e4: s = -0.0023756992 (gap bound 0.0056)
+      barrier t=1e6: s = -2.8784251e-5 (gap bound 5.6e-5)
+      barrier t=1e8: s = -2.6695472e-7 (gap bound 5.6e-7)
+      barrier t=1e10: s = 4.2770921e-8 (gap bound 5.6e-9)
+      barrier t=1e12: s = 4.6117141e-8 (gap bound 5.6e-11)
+      barrier t=1e14: s = 4.6150799e-8 (gap bound 5.6e-13)
+      barrier t=1e16: s = 4.6151136e-8 (gap bound 5.6e-15)
+   DUAL high-precision optimum t_D = 4.615113567e-8  (normalisation sum tr A_i = 1)  [76.1s]
+   DUAL exact check PASS: G v = 0 exactly, all 28 blocks PD exactly; exact min det/tr (normalised) = 2.3076e-08 => (H) CERTIFIED
+   verdict n=6: (H) CERTIFIED  [76.1s]
+equi n=7: M=36 dim Pi_2n+1=136 rank J=108 (3M=108) dim S1=28 (expected 28) rank Hess|S1=28 (injective True)  [3.4s exact setup]
+      barrier t=1e0: s = -71.986113 (gap bound 72.0)
+      barrier t=1e2: s = -0.70625226 (gap bound 0.72)
+      barrier t=1e4: s = -0.0032341473 (gap bound 0.0072)
+      barrier t=1e6: s = -3.9298756e-5 (gap bound 7.2e-5)
+      barrier t=1e8: s = -4.3346837e-7 (gap bound 7.2e-7)
+      barrier t=1e10: s = -4.2921169e-9 (gap bound 7.2e-9)
+      barrier t=1e12: s = 2.2899895e-11 (gap bound 7.2e-11)
+      barrier t=1e14: s = 6.7393453e-11 (gap bound 7.2e-13)
+      barrier t=1e16: s = 6.7829489e-11 (gap bound 7.2e-15)
+      barrier t=1e18: s = 6.7833845e-11 (gap bound 7.2e-17)
+      barrier t=1e20: s = 6.7833889e-11 (gap bound 7.2e-19)
+   DUAL high-precision optimum t_D = 6.78338889e-11  (normalisation sum tr A_i = 1)  [172.9s]
+   DUAL exact check PASS: G v = 0 exactly, all 36 blocks PD exactly; exact min det/tr (normalised) = 3.3917e-11 => (H) CERTIFIED
+   verdict n=7: (H) CERTIFIED  [173.0s]

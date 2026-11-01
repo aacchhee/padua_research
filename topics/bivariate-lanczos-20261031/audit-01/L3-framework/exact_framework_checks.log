@@ -1,0 +1,12 @@
+PADUA2 PASS rank jet=18 dim S1=3 rank Hessian=3; all six dual blocks PD; all annihilations zero; Pi2 determinant= -27/2
+S1 basis= [-(2*x**2 + 2*y**2 - y - 3)*(2*x**2 - 4*y**3 + 3*y - 1)/8, (y - 1)*(x**2 - 2*x*y - x + 2*y**2 + y - 1)*(x**2 + 2*x*y + x + 2*y**2 + y - 1), x*(x**2 - 2*y**2 + y)*(2*x**2 + 2*y**2 - y - 3)/2]
+certificate source sha256= 287e8dd0bdaa60d93d728045fcd47c5c75832813657f4849081fe4b1e0629e8b
+NORMALIZATION COUNTEREXAMPLE: n=1 M=10, determining Pi3 Vandermonde determinant= 576
+weights min= 1/1000 epsilon= 1999/1000000 theta= 1/2 r(0)= 1/1000 (1-theta)epsilon= 1999/2000000
+M1(Lmu+E) Sylvester minors= [998001/1000000, 110778111/100000000, 36889110963/40000000000]
+normalized Lhat mass=1; exact distance to C(K0)= 1/999 > 1999/2000000 =theta epsilon
+Unnormalized distance= 999/1000000 satisfies full-cone claim; normalized residual version does not.
+COMPLETION PASS n= 1 all commutator columns degree<n exactly zero; input pair asymmetric (nonvacuous)
+COMPLETION PASS n= 2 all commutator columns degree<n exactly zero; input pair asymmetric (nonvacuous)
+COMPLETION PASS n= 3 all commutator columns degree<n exactly zero; input pair asymmetric (nonvacuous)
+COMPLETION PASS n= 4 all commutator columns degree<n exactly zero; input pair asymmetric (nonvacuous)
