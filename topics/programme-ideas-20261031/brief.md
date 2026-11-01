@@ -2,7 +2,7 @@
 
 Model: claude-fable-5-1, effort xhigh (as requested by the orchestrator). Date: 2026-10-31. Step 1; no candidates are proposed here.
 
-Sources (under `/home/claude/inputs/`): **R1** `padua/reports/Padua points research since 2010.md`; **R2** `…/Open problems verification.md`; **R3** `…/Round 3 open problems 2023 2026.md`; **RES** `padua/RESULTS.md`; **NOTES** `padua/research_notes/`; **LZ**, **CH**, **MZ** = `branches/claude_bivariate-lanczos-…`, `codex_charter-unisolvence-…`, `codex_mz-constants-…` (plan.md, baseline-candidates.md, state/IDEAS.md, state/CURRENT.md); **CTX** `CAMPAIGN_CONTEXT.md`. MEASURED = finite computation in its recorded scope; LITERATURE = cited, not proved; UNVERIFIED = not traced to an input.
+[response-01, 2026-11-01, audit-01 A8: the exact bytes of every input named here are identified in `sources/campaign-inputs/README.md` (prompt files committed there; branch snapshots pinned per file to repository blobs in `provenance.json`; RESULTS.md and research_notes in cold storage, `COLD_STORAGE.md`).] Sources (under `/home/claude/inputs/`): **R1** `padua/reports/Padua points research since 2010.md`; **R2** `…/Open problems verification.md`; **R3** `…/Round 3 open problems 2023 2026.md`; **RES** `padua/RESULTS.md`; **NOTES** `padua/research_notes/`; **LZ**, **CH**, **MZ** = `branches/claude_bivariate-lanczos-…`, `codex_charter-unisolvence-…`, `codex_mz-constants-…` (plan.md, baseline-candidates.md, state/IDEAS.md, state/CURRENT.md); **CTX** `CAMPAIGN_CONTEXT.md`. MEASURED = finite computation in its recorded scope; LITERATURE = cited, not proved; UNVERIFIED = not traced to an input.
 
 ## 1. State
 

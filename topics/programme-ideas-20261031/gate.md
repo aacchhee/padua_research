@@ -2,7 +2,7 @@
 
 Model: claude-fable-5-1, effort xhigh · Gate · 2026-11-01
 
-Step 3 of the programme-ideas campaign. Inputs: `brief.md`, `CAMPAIGN_CONTEXT.md`, `BRANCH_SNAPSHOT_NOTE.md`, the 20 drafts in `checks/state/gen{1,2,3,4}-draft-*.md` (not edited). Verdict vocabulary: PASS (to adversarial check) / MERGE / REJECT / DEFER. Every statement about a draft's measurements is the generator's MEASURED claim in its recorded scope; nothing here is rerun. "LZ-nnn" = `IDEA?bivariate-lanczos-claude-nnn`; "CH IDEA-nnn" = the merged registry `state/IDEAS.md` (IDEA-001..051); "MZ IDEA-nnn" = `codex_mz-constants` registry (IDEA-052..076).
+Step 3 of the programme-ideas campaign. [response-01, 2026-11-01, audit-01 A8: the exact bytes of every input named here are identified in `sources/campaign-inputs/README.md` (prompt files committed there; branch snapshots pinned per file to repository blobs in `provenance.json`; RESULTS.md and research_notes in cold storage, `COLD_STORAGE.md`).] Inputs: `brief.md`, `CAMPAIGN_CONTEXT.md`, `BRANCH_SNAPSHOT_NOTE.md`, the 20 drafts in `checks/state/gen{1,2,3,4}-draft-*.md` (not edited). Verdict vocabulary: PASS (to adversarial check) / MERGE / REJECT / DEFER. Every statement about a draft's measurements is the generator's MEASURED claim in its recorded scope; nothing here is rerun. "LZ-nnn" = `IDEA?bivariate-lanczos-claude-nnn`; "CH IDEA-nnn" = the merged registry `state/IDEAS.md` (IDEA-001..051); "MZ IDEA-nnn" = `codex_mz-constants` registry (IDEA-052..076).
 
 ## 0. Novelty-gate log (scope, terms, shortlist, differences)
 
@@ -109,7 +109,7 @@ Hard exclusions: (a) touched by none of the passing drafts beyond dictionary-lev
 
 ## 5. (i) Candidates passing to the adversarial check
 
-Seven candidates (five single, two merged). For each: what an adversary should try hardest to show.
+~~Seven candidates (five single, two merged).~~ [response-01, 2026-11-01, audit-01 A9.1: nine distinct adversarial candidates — two merged (M1, M2) and seven singles — formed from eleven original drafts.] For each: what an adversary should try hardest to show.
 
 1. **M1 = gen1-draft-1 ⊕ gen4-draft-3** (Gauss–Christoffel / Golub–Meurant theory of a commuting pair). Adversary: show that on product measures every pair rule is a tensor of univariate rules and off product measures the anti-Gauss sign flip or the bracketing fails generically; that positivity adds nothing to Möller for every weight at n ≤ 6; and that DST 2005 §5.3 already contains the dimension counts of the extension set.
 2. **M2 = gen2-draft-2 ⊕ gen2-draft-4** (structure theory of commuting generalized-Hessenberg pairs; comrade pencils). Adversary: show that Xu TAMS 342/343 or Dunkl–Xu Ch. 3 already count the free parameters; that no O(N) recurrence-compatible chart of H_x exists (greedy shrink of chart test 2); that the pencil's node sensitivity exceeds the pair's by ≥ 10³ on Padua n = 8; and that Humet's unpublished implicit-Q covers the zero-pivot case.
@@ -121,7 +121,7 @@ Seven candidates (five single, two merged). For each: what an adversary should t
 8. **gen4-draft-1** (constrained equilibrium: grids saturate, Padua does not). Adversary: show the corner-first saturated set on the grid is a tensor artefact and C₂ = C₁ a one-line row/column argument, leaving only the Padua Uvarov boundary layer (a note).
 9. **gen4-draft-2** (Lebesgue theory of checkerboard interpolation). Adversary: show the corner expansion is a routine 2D Euler–Maclaurin note, that Briani–Sommariva–Vianello 2012 already identify the Padua–Jacobi parameters, and that the maxima count cannot be certified cheaply (mesh sensitivity).
 
-Counting merged candidates once: 9 pass items, 7 distinct programmes after merges — within the expected band without padding; items 8–9 carry explicit criterion-5 flags for AC's ranking.
+Counting merged candidates once: 9 pass items, ~~7 distinct programmes after merges~~ [response-01, 2026-11-01, A9.1: which already count each merged group once — 9 distinct candidates, not 7] — within the expected band without padding; items 8–9 carry explicit criterion-5 flags for AC's ranking.
 
 ## 6. (ii) Merged, rejected, deferred
 
