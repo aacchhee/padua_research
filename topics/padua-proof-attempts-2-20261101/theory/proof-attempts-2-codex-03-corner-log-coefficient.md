@@ -1,5 +1,7 @@
 # PD-T?proof-attempts-2-codex-03 — The corner logarithmic coefficient with explicit remainder
 
+Current audit note, 2026-11-01: Claude audit-01 accepted this record at its stated scope. Historical audit-pending statements below describe development checkpoints.
+
 ID kind: PD-T.
 Aliases: A2(iii); Padua corner b-term; bounded square comparison asymptotic.
 Split from: `PD-T?programme-ideas-claude-04`, first asymptotic part, precisely OPEN_TARGETS A2 at programme SHA `9bd14a6d2c4da69139a10107d8a787f2be0c5c9e`.
@@ -47,9 +49,11 @@ Candidate disposition: completion of a registered target. No historical novelty/
 
 ## Checks
 
-The proof has no computational dependency. Independent route agent `/root/a2_independent_route` reconstructed the same-mesh square, the deformation bound, and the harmonic/quadrature expansion by hand; see `../independent-checks-a2.md`. Developer exact regression passed n=1,…,6 (details in -04 and the attempt record). Developer also actually ran `python topics/padua-proof-attempts-2-20261101/code/a2_sanity.py > topics/padua-proof-attempts-2-20261101/outputs/a2_sanity.json`, NumPy2.3.5/64-bit-mantissa longdouble, n=2,…,64 and128,256,512,1024. Maximum measured b-remainder≈1.955813; at n=1024 it is≈1.848524867410685. Pinned T2 longdouble values at64,128,256 agree within3e−16; the pinned mpmath values agree within7e−16. These are MEASURED sanity checks, not fits or proof. A different agent actually reran both scripts, exit0 and byte-identical; its separate receipt is `../independent-execution-a2.md`. Required Claude audit remains pending.
+The proof has no computational dependency. Route agent `/root/a2_independent_route` independently reconstructed theory04's comparison and supplied the one-dimensional harmonic/quadrature derivation used here; that contribution was not an independent check of its own derivation or of theory01/02/03. Claude audit-01 subsequently re-derived all four A2 proofs independently; see `../independent-checks-a2.md` and `../audit-01.md`. Developer exact regression passed n=1,…,6 (details in -04 and the attempt record). Developer also actually ran `python topics/padua-proof-attempts-2-20261101/code/a2_sanity.py > topics/padua-proof-attempts-2-20261101/outputs/a2_sanity.json`, NumPy2.3.5/64-bit-mantissa longdouble, n=2,…,64 and128,256,512,1024. Maximum measured b-remainder≈1.955813; at n=1024 it is≈1.848524867410685. Pinned T2 longdouble values at64,128,256 agree within3e−16; the pinned mpmath values agree within7e−16. These are MEASURED sanity checks, not fits or proof. A different agent actually reran both scripts, exit0 and byte-identical; its separate receipt is `../independent-execution-a2.md`. Required Claude audit remains pending.
 
 ## Sources
+
+Page-locator qualification (audit-01 F6): printed page numbers below are per developer reading; the auditor confirmed theorem/equation content through page-less text, without confirming PDF pagination. LIT-379 identifies KL2021 and LIT-312 identifies Bos2006.
 
 LITERATURE: Kolomoitsev–Lomako, arXiv:2009.07114v1 (2020 preprint; Appl. Math. Comput.403,2021), introductory one-dimensional expansion printed p.1 and Theorem2.1 printed p.4; discretization Lemma3.5(3.20), printed pp.10–11, and parity Lemma3.6(3.29), printed pp.11–12. Full16-page paper read before method use. It reports the same one-dimensional c₁ and proves the global Padua leading term with O(log n), without a corner b-term. Bos et al.2006 Theorem3, author preprint printed pp.10–12, gives global O(log² n). Exact reading scope and URLs: `../attempts/T-A2.md`. No claim that the present target was historically open follows from this bounded literature check.
 

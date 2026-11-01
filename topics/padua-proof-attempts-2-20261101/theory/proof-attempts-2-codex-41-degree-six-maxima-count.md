@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-41 — Degree-six strict local maxima count
 
+Current audit note, 2026-11-01: Claude audit-01 accepted this record at its stated scope. Historical audit-pending statements below describe development checkpoints.
+
+LITERATURE attribution (audit-01 F8): arXiv 2605.23299v1, §3.3 Table 3, LIT-388. Its reported counts are source statements; the local certificate/proof and candidate-correction scope are separate.
+
 ID kind: PD-T.
 Aliases: A5 n6 certificate;25interior/14edge/2corner;41closed-square maxima.
 Split from: n6 case of programme A5 / `PD-T?programme-ideas-claude-06` (current registry IDEA206, historical programme IDEA17).
@@ -66,7 +70,7 @@ All boundary arrangement and residual derivative roots receive exact disposition
 
 ## Scope
 
-Exactly n6. No n7/n8 count, general count formula, global argmax, paper correction, priority or novelty is inferred. The separate n6 global-value target is42.
+Exactly n6. No n7/n8 count, general count formula, global argmax, accepted erratum, priority or novelty is inferred. The separate n6 global-value target is42.
 
 ## Open items
 

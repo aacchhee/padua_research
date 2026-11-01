@@ -1,5 +1,7 @@
 # PD-T?proof-attempts-2-codex-04 — A bounded comparison with a squared Chebyshev sum
 
+Current audit note, 2026-11-01: Claude audit-01 accepted this record at its stated scope. Historical audit-pending statements below describe development checkpoints.
+
 ID kind: PD-T.
 Aliases: A2 positive Cauchy sum; node-angle simplification; same-mesh square comparison.
 Split from: supporting comparison for OPEN_TARGETS A2; it is not itself a conjunct of the original asymptotic statement.
@@ -53,9 +55,11 @@ Candidate disposition: retained algebraic/analytic proof route for the registere
 
 ## Checks
 
-The proof is analytic and does not depend on finite computations. Developer actually executed `python topics/padua-proof-attempts-2-20261101/code/a2_exact_check.py > topics/padua-proof-attempts-2-20261101/outputs/a2_exact_check.json`: Python3.12.14, SymPy1.14.0, exact QQ(ζ) quotients; every83 odd-board kernel terms, all6 coincident endpoints, and all6 same-mesh square identities passed for n=1,…,6. Code SHA256 `94438117d4510b248beaac3e22afb23c159c21d107e17d300206b73751be4101`; receipt SHA256 `91db451c362d59c8bd1d155b10e0e5da275d62cced0e165b82cff7242fcc3d0e`,2067bytes. Initial ANP/integer equality-coercion plumbing was fixed before the full successful run; no identity mismatch. A different agent `/root/input_manifest` actually reran both exact and sanity scripts, exit0 and byte-identical; see `../independent-execution-a2.md`. The independent route agent also reconstructed, without executing code, the exact square and pointwise deformation bound; see `../independent-checks-a2.md`. These supplement the required Claude audit.
+The proof is analytic and does not depend on finite computations. Developer actually executed `python topics/padua-proof-attempts-2-20261101/code/a2_exact_check.py > topics/padua-proof-attempts-2-20261101/outputs/a2_exact_check.json`: Python3.12.14, SymPy1.14.0, exact QQ(ζ) quotients; every83 odd-board kernel terms, all6 coincident endpoints, and all6 same-mesh square identities passed for n=1,…,6. The positive-sum rewrite uses a hard-coded sign rule in an abstract cyclotomic field, without a certified real embedding; that sign step is proved analytically, not independently tested by this regression. Code SHA256 `94438117d4510b248beaac3e22afb23c159c21d107e17d300206b73751be4101`; receipt SHA256 `91db451c362d59c8bd1d155b10e0e5da275d62cced0e165b82cff7242fcc3d0e`,2067bytes. Initial ANP/integer equality-coercion plumbing was fixed before the full successful run; no identity mismatch. A different agent `/root/input_manifest` actually reran both exact and sanity scripts, exit0 and byte-identical; see `../independent-execution-a2.md`. The independent route agent also reconstructed, without executing code, the exact square and pointwise deformation bound; see `../independent-checks-a2.md`. These supplement the required Claude audit.
 
 ## Sources
+
+Page-locator qualification (audit-01 F6): printed page numbers below are per developer reading; the auditor confirmed theorem/equation content through page-less text, without confirming PDF pagination. LIT-379 identifies KL2021 and LIT-312 identifies Bos2006.
 
 LITERATURE background: Kolomoitsev–Lomako2021, arXiv:2009.07114v1, Theorem2.1 printed p.4; Lemma3.5, especially(3.20), printed pp.10–11; parity-subgrid Lemma3.6(3.29), printed pp.11–12. Full16-page paper read before method use; no source theorem supplies(1). Bos–Caliari–De Marchi–Vianello–Xu2006, author preprint `PaduaCurve3.pdf`, Theorem3 printed pp.10–12, gives the background global O(log² n) order. Primary links and reading record: `../attempts/T-A2.md`.
 

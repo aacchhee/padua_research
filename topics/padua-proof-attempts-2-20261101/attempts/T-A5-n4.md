@@ -1,5 +1,7 @@
 # A5 n=4 extension attempt
 
+Dated superseding status, 2026-11-01 (audit-01 F8): The degree-four count10/global11 and supporting08/09 are PROVED and accepted by Claude audit-01. Candidate n4-01 is retained as the completed finite-reduction contribution08; its exhaustive-resultant implementation subroute was abandoned for measured cost, as recorded below. Candidate n4-02 is retained as the completed spatial/edge certificate route09/10/11. Their earlier OPEN/active entries are historical, not current dispositions.
+
 Rules read: `95ca473cc21b2db6a9a46c62e86495ebe94eb397` on 2026-11-01. Developer: Codex `/root/a5_n4`, inherited gpt-6.1-sol xhigh. Parent owns Git and the existing A5 six-hour box, 09:19–15:19 UTC. This is an extension of A5, not a new target box. Owns new theory08–14, code/a5_n4*, outputs/a5_n4*, and this attempt only.
 
 ## Gate, before mathematical executions

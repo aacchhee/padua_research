@@ -1,5 +1,7 @@
 # PD-T?proof-attempts-2-codex-61 — Degree-eight strict-local-maxima count
 
+Current audit note, 2026-11-01: Claude audit-01 accepted this record at its stated scope (including its OPEN status). Historical audit-pending statements below describe development checkpoints.
+
 ID kind: PD-T.
 Aliases: A5 n=8; exact45-cardinal spatial/node/edge certificate; registered reference44 interior/16edge/2corner/62total.
 Split from: the n=8 case of programme A5 / PD-T100 (provisional alias programme-ideas-claude-06).
@@ -55,7 +57,7 @@ Every edge must independently satisfy nonzero restrictions and multiplicity-one 
 
 ## Scope
 
-Only degree8. A count disagreement with the published56 is not established by current evidence. Finite strict counts alone do not imply a global argmax; see62.
+Only degree8. A count disagreement with the reported 56 is not established by current evidence. Finite strict counts alone do not imply a global argmax; see62.
 
 ## Open items
 

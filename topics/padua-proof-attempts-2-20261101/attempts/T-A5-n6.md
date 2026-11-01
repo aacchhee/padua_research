@@ -1,5 +1,7 @@
 # A5 n6 exact-field extension attempt
 
+Dated superseding status, 2026-11-01 (audit-01 F8): The degree-six count41/global42 and supporting40 are PROVED and accepted by Claude audit-01. The exact-field and spatial/edge candidates completed their stated roles; earlier OPEN/active entries and Runs needed are historical. No new mathematical work is needed for these accepted cases.
+
 Start2026-11-01 approximately10:25UTC; rules readat fullSHA `38db12bc1cee57902c67f62e022af83e0880f699`. AGENTS/WORKFLOW/CODEX unchanged from the preceding checked rules; read at the current head. Codex `/root/a5_n4`, inherited gpt-6.1-sol xhigh, now assigned n6. Parent owns Git. Own only this new attempt, theory40–49, code/a5_n6*, outputs/a5_n6*. All n3/n4/n5 files remain frozen/read-only. The existing A5 ceiling is15:19UTC; this is not a new time box or A4(a)/B3/B1 start.
 
 ## Gate completed before mathematical execution

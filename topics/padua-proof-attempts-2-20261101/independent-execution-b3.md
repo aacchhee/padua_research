@@ -77,3 +77,6 @@ Developer time is 0.28936160000012023 s; independent time is recorded above.
 Comparison is separately identified from my actual fresh execution; neither
 reading the developer output nor matching its payload is counted as a run.
 No extra unchanged mathematical execution was performed.
+
+
+Audit-01 F7 field-scope clarification: the frozen driver's `squared_gap_and_reference_inequalities: true` reports only its two scalar endpoint inequalities. It does not machine-check eigenvalue localization, `g>=h/2` or `d<=10t` on the whole interval; those are supplied by the written proof. Claude's separate `audit-support/claude-audit-01/b3/b3_audit_independent.py` and its certificate verify the whole-interval spectral/reference claims independently. The developer driver, hash and outputs are unchanged; its boolean is not promoted into a broader certificate.

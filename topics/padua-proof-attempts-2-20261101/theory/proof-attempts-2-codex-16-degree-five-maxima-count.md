@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-16 — Degree-five Padua maxima-count certification
 
+Current audit note, 2026-11-01: Claude audit-01 accepted this record at its stated scope. Historical audit-pending statements below describe development checkpoints.
+
+LITERATURE attribution (audit-01 F8): arXiv 2605.23299v1, §3.3 Table 3, LIT-388. Its reported counts are source statements; the local certificate/proof and candidate-correction scope are separate.
+
 ID kind: PD-T.
 Aliases: A5 n=5; exact node-cone spatial certificate; registered reference14 interior /9 edge /2 corner /25 total.
 Split from: the n=5 case of `PD-T?programme-ideas-claude-06` and programme A5.

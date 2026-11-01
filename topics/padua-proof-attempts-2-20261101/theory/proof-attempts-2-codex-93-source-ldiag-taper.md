@@ -1,5 +1,7 @@
 # PD-T?proof-attempts-2-codex-93 — The source Ldiag taper has only finitely many exceptional parameters
 
+Current audit note, 2026-11-01: Claude audit-01 accepted this record at its stated scope. Historical audit-pending statements below describe development checkpoints.
+
 ID kind: PD-T.
 Aliases: B1 exact Ldiag taper; far/near ordering; real exponential-polynomial specialization.
 Split from: specialization question left explicit in record 92.
@@ -11,6 +13,8 @@ Fix an **even** number of pole factors `m>=4` and put `T=m-1`. Fix any real node
 
 `epsilon_j(sigma)=exp(-sigma*(sqrt(m)-sqrt(j)))`, `j=1,...,m`,
 `a_j(sigma)=2+sqrt(2)*epsilon_j(sigma)`.
+
+Normalization clarification (audit-01 F4): the prose source uses `a_j=2+epsilon_j`, whereas `orf2d.py` uses `a_j=2+sqrt(2)*epsilon_j`; the same proof holds for `a_j=2+kappa*epsilon_j` for each fixed `kappa>0`, with coalescent witness `c=2+kappa>2`.
 
 Use either the displayed order (source `near`) or its reversal (source `far`) for the poles `ell_j=x+y-a_j`. There is a **finite** set `Z` of positive real `sigma`, depending on the fixed sampled measure and `m`, such that for every `sigma>0` outside `Z`, both source orders satisfy B1's equality simultaneously for all `2<=t<=T`:
 

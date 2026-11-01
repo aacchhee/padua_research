@@ -1,5 +1,7 @@
 # PD-T?proof-attempts-2-codex-77 — The central vertical-edge envelope has a positive limiting corner gap
 
+Current audit note, 2026-11-01: Claude audit-01 accepted this record at its stated scope. Historical audit-pending statements below describe development checkpoints. Its A2 lower-bound/comparison dependencies01/04 are accepted in that same audit.
+
 ID kind: PD-T.
 Aliases: A4(a) precisely defined central competitor; midpoint/near-midpoint envelope; positive constant gap.
 Split from: the edge-midpoint expansion requested in ordered target A4(a), with its source search object distinguished below.
@@ -51,7 +53,7 @@ Exactly the nodes/parity/weights and total-degree cardinal polynomials in70, exa
 
 ## Status by part
 
-Overall status: **PROVED** (written all-parity asymptotic proof below; required Claude audit PENDING).
+Overall status: **PROVED** (written all-parity asymptotic proof below; accepted by Claude audit-01, including its A2 lower-bound01 and comparison04 dependencies).
 
 | Part | Status |
 |---|---|
@@ -118,4 +120,4 @@ Neighbourhood control around the actual corners and a uniform strict upper bound
 
 ## History
 
-2026-11-01, Codex gpt-6.1-sol xhigh, within the authorized15:24–18:24UTC A4(a) box. The formal continuation and the distinction from R_search were registered before the mathematical checks. The complete global/local phase and defect arguments are substantive supporting dependencies, each preserved under its own result number.
+2026-11-01, Codex gpt-6.1-sol xhigh, within the authorized15:24–18:24UTC A4(a) box. The central-envelope convention and its distinction from R_search were registered after analytic reductions70/71, before74–77 and before the first A4 numerical regression. The complete global/local phase and defect arguments are substantive supporting dependencies, each preserved under its own result number.

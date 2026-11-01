@@ -1,10 +1,10 @@
 # Second proof attempts on programme-ideas open targets
 
 - Branch: `codex/padua-proof-attempts-2-20261101` · Base: `a09d910ae7d5526b1e216066421a0bee7fc20da4` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh): audit-01 ACCEPTED for the stated scope with minor findings F1–F8 (see audit-01.md).
-- Stage: WORK (response to audit-01) · Next: `Codex (gpt-6.1-sol medium): Continue codex/padua-proof-attempts-2-20261101.`
-- Claims: A2(i)–(iii) PROVED in theory01–03, support04. A5 n=3,4,5,6,7 counts PROVED in06/10/16/41/51, global argmax07/11/17/42/52, supporting05/08/09/15/18/19/40/50/53; n=8 exact closed count/global OPEN, supporting60/63 and PROVED standalone lower bound64 (at least44strict interior maxima); whole-interior65 OPEN after deadline failures. A4(a) stoppedDONE16:13:22UTC for the exact central-envelope formulation: all-edge70, point/constant71–73, phase/defect74–76 and envelope77PROVED. Historical/global runner-up identification and full-square A4 remainOPEN. B3 stoppedDONE16:34:25UTC: computed-section count robustness REFUTED by scopednegativeN01, support80/C1routefailureN02PROVED. B1stoppedDONE16:57:37UTC:90–93PROVED for generic exteriorLdiag offsets and source taper outside finiteexceptions. All five ordered targets are at stops; final audit publication preparation remains.
+- Stage: PR (minor audit dispositions complete; preparation within topic-only scope) · Next: `Codex (gpt-6.1-sol medium): Continue codex/padua-proof-attempts-2-20261101.`
+- Claims: A2(i)–(iii) PROVED in theory01–03, support04. A5 n=3,4,5,6,7 counts PROVED in06/10/16/41/51, global argmax07/11/17/42/52, supporting05/08/09/15/18/19/40/50/53; n=8 exact closed count/global OPEN, supporting60/63 and PROVED standalone lower bound64 (at least44strict interior maxima); whole-interior65 OPEN after deadline failures. A4(a) stoppedDONE16:13:22UTC for the exact central-envelope formulation: all-edge70, point/constant71–73, phase/defect74–76 and envelope77PROVED. Historical/global runner-up identification and full-square A4 remainOPEN. B3 stoppedDONE16:34:25UTC: computed-section count robustness REFUTED by scopednegativeN01, support80/C1routefailureN02PROVED. B1stoppedDONE16:57:37UTC:90–93PROVED for generic exteriorLdiag offsets and source taper outside finiteexceptions. All five ordered targets are at stops; Claude audit-01 accepted the stated scope and response-01 records the minor dispositions. PR preparation remains.
 - PR: draft12, originally against `codex/padua-proof-attempts-20261101`, automatically based on main after AC merged Part1; additions authored under this topic only. Local IDs only; proposed upstream edits remain literal proposals.
-- Open for AC: no development approval needed; Claude audit is a later handoff.
+- Current authority: response and topic-local PR preparation are authorized; original no-shared-write/no-final-ID/no-RESULTS limits remain in force. The Claude audit is accepted, not pending.
 
 ## 2026-11-01 — Codex orchestration
 
@@ -21,8 +21,8 @@
 
 ## Runs needed
 
-- Required independent Claude audit at final development head: `Claude (Opus 5.5 xhigh): Audit codex/padua-proof-attempts-2-20261101.`
-- No bridge to AC's computer is exposed. Intended local working-track file: `C:\Users\andreyac\Downloads\padua\results\padua-proof-attempts-2-20261101.md`. The concrete final entry is recorded in the section "Concrete intended entry for the explicitly requested Windows file" below, with pinned heads, statuses, proof paths, commands and audit prompt. It is not a performed write. Never write RESULTS.md or another topic's file.
+- Claude audit-01 is complete and accepted for its stated scope. Next: topic-local PR preparation from the corrected proposals and response-01; no scientific run is required for these editorial dispositions.
+- Results tracking is repository-only. The original intended Windows entry is retained below as superseded task history, removed from active Runs needed, and must not be written. The repository summary remains a literal topic-local proposal; no RESULTS.md/root-results/other-topic write is authorized.
 - Required large evidence, if any, stays in local working storage until AC's Padua cold-storage destination is available; manifest SHA-256, size, command and checker output. Committed outputs ≤1 MB each and ≤5 MB total.
 
 ### Input-change trigger and integration impact (before merge)
@@ -49,7 +49,7 @@
 ### A2(i) durable checkpoint — matching corner leading lower bound
 
 - First ordered deliverable PROVED: `PD-T?proof-attempts-2-codex-01`, Λ_c(n)≥(4/π²)log²n−54 for every n≥2 (hence the requested −O(log n)). Supporting separate result -04 proves |Λ_c(n)−L_n²|≤54 by exact node-angle simplification, same-mesh square and a uniform mesh-deformation sum. Both statements have written elementary proofs, not a fit dependency. No global corner-argmax assumption.
-- `/root/a2_independent_route` independently reconstructed the full comparison, including the coincident endpoint and actual-vs-reference endpoint weights; its hash-pinned hand receipt is independent-checks-a2.md. This is proof reconstruction, not a claimed numerical replay or Claude audit. No consequential mathematical computation has run yet.
+- `/root/a2_independent_route` independently reconstructed the full comparison, including the coincident endpoint and actual-vs-reference endpoint weights; its hash-pinned hand receipt is independent-checks-a2.md. This is proof reconstruction, not a claimed numerical replay or Claude audit. No consequential mathematical computation has run yet. Response-01 F6 clarification: that hash-pinned independent check covers comparison04; the same agent supplied the harmonic/quadrature expansion as a proof contribution, not an independent check of its own work or theory01/02/03. Claude audit-01 subsequently re-derived all four A2 proofs.
 - A2 continues toward its stronger done criterion; (ii)/(iii) get their own files/checkpoints. Root read all saved supporting and lower-bound proof sections.
 - Environment preparation only: installed python-flint0.9.0 / FLINT3.6.0 into `/tmp/padua2-deps` after the default user install failed on the read-only home directory. Future Arb commands must use `PYTHONPATH=/tmp/padua2-deps`. SymPy1.14.0, Python3.12.14 remain available. This setup is not an A5 mathematical run; A5 has not started.
 
@@ -381,9 +381,9 @@ Five REDUNDANTUNTRACKEDdevelopment artifacts (oldn3interiorpilot and n7raw/gzipd
 Manifest publication detail: exclude numbered handoff files from the SCIENTIFICOUTPUTindexmanifest, because the mandatory followingpublicationcommit changes01status/adds02AFTER the auditedoutputcandidate is committed. Handoffinstructionbodies/statuses remain Git-pinned and are read at the exactcandidate/publicationSHAs; scientificproofs/code/evidence/otherauthoreddocsremainfullyhashcovered. This avoids a misleading stale output hash after the required handoff-status-only update. Historicalmanifests are preserved in publishedhistory; no artifact isdeleted. The finalmanifest explicitly names this exclusion; its other output identities still use the staged INDEXbytes.
 
 
-### Concrete intended entry for the explicitly requested Windows file
+### Historical intended Windows entry — superseded, do not execute
 
-Destination: `C:\Users\andreyac\Downloads\padua\results\padua-proof-attempts-2-20261101.md`. No bridge is exposed; **no write was performed**. The new repository-only rule replaces the generic old procedure; this is the concrete intended entry explicitly requested in this task. Its repository counterpart is proposed inside this topic, without writing RESULTS.md or a root results file.
+Historical destination: `C:\Users\andreyac\Downloads\padua\results\padua-proof-attempts-2-20261101.md`. **No write was performed.** The originally requested intended entry is retained below only as task history. It is removed from active Runs needed and must not be written: current results tracking is repository-only, with a topic-local literal proposal until shared writes are authorized.
 
 ```markdown
 # Padua second proof campaign — 2026-11-01
@@ -424,3 +424,15 @@ The remote main and draft PR12 head were checked again before final publication:
 - Actual reruns of developer commands (n3–n7 checkers, A2, A4, B3, n8 witnesses) all exit 0 and match the developer outputs apart from version/timing fields; auditor-owned independent checks include a separate arb verifier confirming 44/44 n8 witnesses, a census reproducing every n3–n7 count, and whole-interval exact B3 certificates. Details: [audit-01.md](audit-01.md); evidence `audit-support/claude-audit-01/` (MANIFEST.json, COLD_STORAGE.md; archive delivered to `Downloads\padua\cold_storage\padua-proof-attempts-2-20261101\claude-audit-01\`).
 - Stage returns to WORK for a documented Codex `response-01.md` (handoff 03). PR preparation may follow without re-audit unless a response materially changes a claim, proof, checker or evidence. PR12 stays draft. Only AC merges.
 
+
+## 2026-11-01 — Codex response to accepted Claude audit-01
+
+Rules re-read in full at `0dd4a6df2db4a2019541604bb97c05926ab3c22b`: AGENTS.md, agents/WORKFLOW.md and agents/codex/CODEX.md; rule files are byte-identical to the prior publication. Requested Codex gpt-6.1-sol medium for this editorial/mechanical response; root serving-model metadata remains unexposed. Role: developer/orchestrator, not auditor. Fetched main and topic, then fast-forwarded only the two delivered audit/handoff commits to0dd4a6d. Main remains28aaa20861d08074b77efc74eaef75cdcb36234d; no upstream merge or history rewrite. No new mechanism or novelty claim, so a fresh generation gate does not apply.
+
+Read audit-01, all seven sub-audit reports, handoff03, the cited theory/attempt/receipt passages and the accepted Part1 response format. Response-01 disposes F1–F8. The proposals now use clean dated additions and existing final IDs, preserve PD-T100 as MEASURED, complete split/crosswalk/literature/candidate checklists, restore the B1 node domain, and keep exact OPEN boundaries. Windows delivery is removed from active work; its originally requested intended text remains explicitly superseded history. The auditor record/support is immutable and attributed to Claude; this session does not claim its executions or bridge delivery as its own.
+
+Only the audit-authorized one-sentence normalization/edge-sign clarifications and the explicit B3 arithmetic chain touch mathematical exposition. All Proof sections remain byte-identical to the accepted candidate except that exact arithmetic-chain clarification in negative01. No checker/driver/certificate/generated scientific result changes; no n8 completeness work or new mathematical execution. The frozen B3 boolean is footnoted instead of renamed. A2 attribution now distinguishes the comparison reconstruction from the route agent's own one-dimensional contribution and from Claude's independent audit.
+
+Stage PR means minor dispositions complete and preparation pending, not merge readiness. PR12 stays draft. No range, final IDs or shared/results writes are made. The original user scope still governs the next step; a generic integration checklist is not authority to expand it. Exactly one open successor04 will be published after the final response output commit, closing03 by status only. Full next instruction: `handoffs/04-pr-preparation.md` (published in the following commit).
+
+Actual mechanical response guard: `PYTHONDONTWRITEBYTECODE=1 python -B topics/padua-proof-attempts-2-20261101/response-support/check_response.py`, exit0. It verifies271frozen code/scientific outputs,111immutable auditor files, all44Proof sections except the exact authorized negative01 arithmetic-chain expansion, ten literal proposals against their pins/current main, local Markdown links, topic-only scope and size limits. Receipt: `response-support/verification.json`. The first invocation reported only the future receipt's missing link; the fresh run passed after the receipt existed. No scientific execution is implied. Final staging/manifest regeneration and independent identity/budget checks cover the complete response before publication; publication changes only03status and adds04 after that output commit.

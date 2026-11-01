@@ -1,5 +1,7 @@
 # PD-N?proof-attempts-2-codex-01 — The symmetrised-product count fails inside positive-pivot computed sections
 
+Current audit note, 2026-11-01: Claude audit-01 accepted this record at its stated scope. Historical audit-pending statements below describe development checkpoints.
+
 ID kind: PD-N.
 Aliases: B3 four-atom family; shrinking square at an isolated joint node; half-integer computed-section count; fixed-n fixed-p counterexample.
 Split from: registered OPEN_TARGETS B3, symmetrised-product count S(alpha).
@@ -108,7 +110,7 @@ The third H_y eigenvalue is1/2. For our T, `8t<=h/2` (equivalently2560t<=1) and 
 
 `g>=h/2=sqrt(t)/(2sqrt(10))>=sqrt(delta_t)/10>0`,
 
-where the last inequality follows from delta_t<2t and1/80>1/100. This is a spectral boundary-gap estimate, not a statement about support-node spacing or pair distance.
+where `(h/2)^2=t/40=2t*(1/80)>2t/100>delta_t/100`, using `delta_t<2t`. This is a spectral boundary-gap estimate, not a statement about support-node spacing or pair distance.
 
 It also proves n_+(M_x)=n_+(M_y)=1: exactly one marginal eigenvalue is inside(-h,h), the others are outside, and no boundary eigenvalue occurs.
 
@@ -179,3 +181,6 @@ Required Claude audit and root integration/registry proposals under their origin
 ## History
 
 2026-11-01, Codex `/root/a2_develop`, requested gpt-6.1-sol xhigh; rules b5bba7cf1328b1f207aea001a439c3fe4af0146f. Registered C3 before code, froze source before first run, then wrote this full scoped negative after two actual exact executions. Root and another analytic reader independently reconstructed the section matrices/leading Schur mechanism; these supplement, not replace, required Claude audit. No novelty or priority claim.
+
+
+Audit-01 F7 field-scope clarification: the frozen driver's `squared_gap_and_reference_inequalities: true` reports only its two scalar endpoint inequalities. It does not machine-check eigenvalue localization, `g>=h/2` or `d<=10t` on the whole interval; those are supplied by the written proof. Claude's separate `audit-support/claude-audit-01/b3/b3_audit_independent.py` and its certificate verify the whole-interval spectral/reference claims independently. The developer driver, hash and outputs are unchanged; its boolean is not promoted into a broader certificate.

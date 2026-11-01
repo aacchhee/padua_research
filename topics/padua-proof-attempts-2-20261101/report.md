@@ -1,8 +1,8 @@
 # Second proof campaign — development report
 
-Stage: **AUDIT**. Required Claude Opus5.5 xhigh audit: **PENDING**. Supplementary Codex reconstruction and executions do not replace it.
+Stage: **PR (preparation)**. Claude Opus 5.5 xhigh [audit-01](audit-01.md) **accepted the stated scope**, with minor findings F1–F8 answered in [response-01](response-01.md). The PR stays draft until preparation is complete. Supplementary Codex checks are separate from that audit.
 
-Branch: `codex/padua-proof-attempts-2-20261101`; [draft PR12](https://github.com/aacchhee/padua_research/pull/12). The exact scientific output candidate is named in the following numbered `handoffs/02-audit.md` publication.
+Branch: `codex/padua-proof-attempts-2-20261101`; [draft PR12](https://github.com/aacchhee/padua_research/pull/12). The accepted scientific candidate is `4265bb94f987ce77d89cd5e15a8c435cbd1411d0`; the audit output is `62fc6d816f2407c445d58d47a7c997791cab9045`. The response preserves claims, proof steps, checkers and certificates, with only the audit-requested clarifications.
 
 ## Outcomes
 
@@ -11,7 +11,7 @@ Branch: `codex/padua-proof-attempts-2-20261101`; [draft PR12](https://github.com
 | A2 | PROVED for all n≥2: requested b coefficient, absolute remainder≤68 | [03](theory/proof-attempts-2-codex-03-corner-log-coefficient.md); support01/02/04 |
 | A5 | PARTIAL by degree: complete counts/global theorems n3–7; n8 has at least44interior maxima | [attempt](attempts/T-A5.md); [lower bound64](theory/proof-attempts-2-codex-64-degree-eight-interior-lower-bound.md) |
 | A4(a) | PROVED for the precise central-edge envelope: R_cen=Λ_c−g+o(1), both parities,0.548504986190<g<0.548525055355 | [all-edge70](theory/proof-attempts-2-codex-70-all-edge-kernel-formula.md); [envelope77](theory/proof-attempts-2-codex-77-central-edge-envelope-expansion.md) |
-| B3 | REFUTED specified S(α): genuine positive sections at fixed n1,p1/10,M4 give n_box1/2 versus valid referencecount1 | [negative01](theory/proof-attempts-2-codex-N01-computed-section-box-count.md); support80/negative02 |
+| B3 | Negative01 PROVED; specified S(α) REJECTED: refuted: genuine positive sections at fixed n1,p1/10,M4 give n_box1/2 versus valid referencecount1 | [negative01](theory/proof-attempts-2-codex-N01-computed-section-box-count.md); support80/negative02 |
 | B1 | PROVED generic exterior Ldiag offsets for every fixed admissible sample/finiteT; literal source taper except finitely many parameters | [detector90](theory/proof-attempts-2-codex-90-pole-topform-detection.md); [class92](theory/proof-attempts-2-codex-92-generic-ldiag-constrained-window.md); [taper93](theory/proof-attempts-2-codex-93-source-ldiag-taper.md) |
 
 The central envelope maximizes on both vertical edges with free angle satisfying `|t−π/2|≤π/(n+1)`. A globally selected competitor or the historical finite search is not identified with it. Full-square A4(b)/(c) remain open.
@@ -28,7 +28,7 @@ The central envelope maximizes on both vertical edges with free angle satisfying
 
 At n=8, **at least44 distinct strict interior maxima** are proved; exact interior65, closed-square61 and global62 remain **OPEN**. Both complete interior checks reached the A5 deadline without a successful full receipt; boundary retries produced no final certificate. Retained progress and the complete interior proposal are not accepted completeness evidence.
 
-Direct arXiv2605.23299v1 Table3 readings give candidate corrections23/39→25/41 at n6 and27/42→33/50 at n7. At n8 only interior38 is contradicted by the lower bound44; its total56 is not replaced with an exact count. Audit is pending; no author contact or accepted-erratum claim.
+Direct arXiv2605.23299v1 Table3 readings give candidate corrections23/39→25/41 at n6 and27/42→33/50 at n7. At n8 only interior38 is contradicted by the lower bound44; its total56 is not replaced with an exact count. Claude audit-01 accepted the comparison scope; no author contact or accepted-erratum claim.
 
 ## Verification and limits
 
@@ -38,8 +38,10 @@ All essential accepted certificates/global pairs and degree-eight lower-bound wi
 
 Remaining scope: exact n8 completeness/global; all-n full-square A4 and historical/global runner-up identification; B1's other pole classes, individual stored taper parameters and numerical stability. B3 refutes its specified count, not other F or reference existence. Optional B4/B7 were not developed.
 
-Original pins: Part1 `a09d910ae7d5526b1e216066421a0bee7fc20da4`; programme `9bd14a6d2c4da69139a10107d8a787f2be0c5c9e`; current main `28aaa20861d08074b77efc74eaef75cdcb36234d`; rules adopted at `d8b878b348a94575e7753e5a756d969d41d5bca8`. The required Part1 dependency label “audit pending” is historical: Part1 audit accepted, dispositions completed and PR9 merged; Part2 audit is pending.
+Original pins: Part1 `a09d910ae7d5526b1e216066421a0bee7fc20da4`; programme `9bd14a6d2c4da69139a10107d8a787f2be0c5c9e`; current main `28aaa20861d08074b77efc74eaef75cdcb36234d`; rules adopted at `d8b878b348a94575e7753e5a756d969d41d5bca8`. The required Part1 dependency label “audit pending” is historical: Part1 audit accepted, dispositions completed and PR9 merged; Part2 audit-01 is accepted; response-01 records the minor dispositions.
 
-All authored changes stay in this topic; no final IDs/shared edits/RESULTS.md write. The repository-results summary is a literal proposal in [proposed-record-changes.md](proposed-record-changes.md), honoring the user's narrower scope. [LOG](LOG.md) contains the concrete intended Windows entry; no local write is claimed.
+All authored changes stay in this topic; no final IDs/shared edits/RESULTS.md write. The repository-results summary is a literal proposal in [proposed-record-changes.md](proposed-record-changes.md), honoring the user's narrower scope. [LOG](LOG.md) preserves the original intended Windows entry as superseded history; it has been removed from active work and must not be written.
 
-Next: `Claude (Opus 5.5 xhigh): Audit codex/padua-proof-attempts-2-20261101.`
+Next: topic-local PR preparation under handoff04. `Codex (gpt-6.1-sol medium): Continue codex/padua-proof-attempts-2-20261101.`
+
+Audit residual risk: n4–n7 verifiers share a code lineage, so same-code reruns do not eliminate common-mode defects. Claude reviewed the reduction/core and later diffs, ran mutation probes and used an independent degree-eight witness verifier; no defect was found. The declared exact-arithmetic trusted base and all stated scope limits remain. No new scientific execution occurred in the editorial response.

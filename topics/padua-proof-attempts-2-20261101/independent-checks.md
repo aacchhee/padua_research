@@ -1,6 +1,6 @@
 # Supplementary independent checks
 
-Required Claude audit: **PENDING**. Independent Codex subagent checks supplement it.
+Claude [audit-01](audit-01.md): **ACCEPTED for the stated scope**, with minor findings answered in [response-01](response-01.md). Independent Codex checks below are supplementary; their pending-audit references describe historical checkpoints.
 
 This index retains chronological checkpoints. The final A5/A4/B3/B1 sections below and [report.md](report.md) state the current completed scope; earlier planning/running statements are historical.
 

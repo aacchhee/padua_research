@@ -1,5 +1,7 @@
 # Degree-five primary count comparison
 
+LITERATURE attribution (audit-01 F8): arXiv 2605.23299v1, §3.3 Table 3, LIT-388. Its reported counts are source statements; the local certificate/proof and candidate-correction scope are separate.
+
 Verification record, not a priority claim. After reading literature/INDEX.md,
 inspected the primary [arXiv2605.23299v1 PDF](https://arxiv.org/pdf/2605.23299v1),
 Białas-Cież–De Marchi–Suder, *Geometric properties of the Lebesgue function*,

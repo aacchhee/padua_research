@@ -51,6 +51,8 @@ corner-minus-square value is 1, and the largest observed absolute remainder
 after the leading and proposed b terms is approximately 1.9558125216092106.
 These observations are **MEASURED**, with no interval enclosure or proof status.
 
+Audit-01 F6 scope clarification: the exact regression's positive-sum flag uses the analytic sign rule as a hard-coded input in an abstract cyclotomic field. The actual executed checks establish the kernel identity and same-mesh square identity; they do not independently certify that sign rule through a real embedding. The sign step is analytic. This note changes no script, output or claimed execution.
+
 After both executions, parsed JSON equality and byte identity were checked
 against the developer outputs. Both are exactly equal, including environment
 and source-identity fields.

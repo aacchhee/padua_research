@@ -16,6 +16,8 @@ Read the FULL file `theory/proof-attempts-2-codex-04-corner-product-comparison.m
 
 `80272d3451a2a90663ce53c785399c122b2625ffb03f35c2dd4742f07c2034f8`.
 
+Post-pin provenance note (audit-01 F6): the pin above identifies the comparison read at commit `ba5ff75`; later edits through `24b3f74` changed only Checks and Open items, not its Statement or Proof. The one-dimensional derivation below was supplied as a proof contribution, not independently checked by its own author; Claude audit-01 subsequently re-derived theory01–04.
+
 The checked version states `|Lambda_c(n)-L_n²| <= 54` for every integer n>=2. Every proof section A–D was independently reconstructed. No mathematical correction remains within this declared scope.
 
 1. **Summand and exceptional point.** For s=(-1)^j, a=j*pi/n, b=k*pi/(n+1), and j+k odd, the two product-to-sum numerators are s(1+cos a)/2 and s(1+cos b)/2. Their denominator is (cos a-cos b)/2. Hence D_n=s(2+cos a+cos b)/(cos a-cos b) and `|D_n-s|=2(1+cos b)/|cos a-cos b|`. Coprimality of n,n+1 leaves only endpoint coincidences. The odd board excludes (0,0). At (pi,pi), the finite rhombus sum is s(2n+1), so the corrected absolute value is 2n and its weighted contribution is exactly 1/(n+1). All other b=pi terms vanish.

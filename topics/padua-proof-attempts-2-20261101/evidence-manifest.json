@@ -2427,8 +2427,8 @@
   "outputs": [
     {
       "path": "topics/padua-proof-attempts-2-20261101/LOG.md",
-      "sha256": "75d90389faa78e9421712b8b32192b8aa3134553a66bbba1bc03f61f46357675",
-      "bytes": 102350
+      "sha256": "2dbc5145515726059aabc0cdea7e470c702f3930782a0148509048e342083516",
+      "bytes": 107988
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/a4-input-preparation.md",
@@ -2437,8 +2437,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A2.md",
-      "sha256": "1717b073cd7c298b804e14856b018754707a9e5fcb5ea6e32bd0b4762ec3b6ed",
-      "bytes": 10773
+      "sha256": "b46e5748ea60f853a7b0a8372fe1432245fb459bb212ee179a02ec40e2271a4f",
+      "bytes": 11398
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A4a.md",
@@ -2447,8 +2447,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n4.md",
-      "sha256": "b81fe0f7e20c09a79a655014c761d832dec33460d2effaea872716a51732b07d",
-      "bytes": 12663
+      "sha256": "f9330ccbb1bf443f69b9d06a42a05c275fb568a022c197e8170a45a3d8f339eb",
+      "bytes": 13153
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n5.md",
@@ -2457,8 +2457,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n6.md",
-      "sha256": "4cb5f1a89d7d619fd4a5c8716da0eab1c44911fe192294322113aff68b536a0d",
-      "bytes": 17133
+      "sha256": "b1b136ea564fe98bedd62ca83b243ec666fdee18021a79262d3220c19a2c0d97",
+      "bytes": 17474
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n7.md",
@@ -2484,6 +2484,561 @@
       "path": "topics/padua-proof-attempts-2-20261101/attempts/T-B3.md",
       "sha256": "a389d58154eab60e56fdcb2e967f1c954de0e129a5acd33650db538d2d5bf6cd",
       "bytes": 18566
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-01.md",
+      "sha256": "f2b9db54b302bb6900967cfbf3bb433ae0a5df362757d85bbd41f4fdb6c7d5fe",
+      "bytes": 35298
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/COLD_STORAGE.md",
+      "sha256": "c102dea93eb8c6e8a19717612d17d7e2744586f0cb3e8cfdb42805ba72350089",
+      "bytes": 2378
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/MANIFEST.json",
+      "sha256": "92d1492f77955aff1f304a29c6026488bd68387c004158d1a6cba1d5a72d1709",
+      "bytes": 23511
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a2/audit_a2_compare.json",
+      "sha256": "a8d8a46ef38d9ecb184dc3e1b7ae2a5a805d242d36fd6d132de43ba6e8e648fc",
+      "bytes": 2205
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a2/audit_a2_compare.py",
+      "sha256": "b49df3641f2ca35e5c62ebdca1fca21e1d5f7838c5043ef65d0c95ea1bc687c2",
+      "bytes": 1343
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a2/audit_a2_compare.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a2/audit_a2_direct.py",
+      "sha256": "b05991260e2e2408042c9ae7f95e1d1859875a6a70b506954d4078d277bc81ba",
+      "bytes": 6833
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a2/audit_a2_direct_n2-28.stderr",
+      "sha256": "fbfa40fb2786351b8764c047465b7c88ea580e274ce2fba75792c850d00252e1",
+      "bytes": 1482
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a2/audit_a2_formula.py",
+      "sha256": "a02cca215660eca33c24820d59a18aeef338fa8bdd7c31e21c67774afae94edb",
+      "bytes": 11638
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a2/run_record.txt",
+      "sha256": "aa7b24d693fa2e66a1a45b777aec182dc686739dcbb97b3325c34d9033d69cae",
+      "bytes": 151
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a2_exact.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a2_exact.stdout",
+      "sha256": "e13d5c51e4db3fa2ddfa6c499b0ee6a38a5c2196a07a093af15e066194820bcb",
+      "bytes": 2067
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a2_sanity.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a4/audit_a4_edges_scope.py",
+      "sha256": "3e5a999a0cf8a8974ede0be0f505c2f3e51e06c93dacd6f0d2b446946cfbb180",
+      "bytes": 2976
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a4/audit_a4_edges_scope.stderr",
+      "sha256": "a6bd0942eda22631ddd73937f55867b8db8431aaebdd53df643f98ba13a98654",
+      "bytes": 1163
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a4/audit_a4_g.json",
+      "sha256": "c1f3c00adedd361428ba053681356bb59cc102f1594a4fb203da85b9de9cf179",
+      "bytes": 1277
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a4/audit_a4_g.py",
+      "sha256": "958e9940c7c4245c5ea73770fa1cda8e387ef60ab5dab48293d425823b5d2703",
+      "bytes": 6158
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a4/audit_a4_g.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a4/audit_a4_identity.json",
+      "sha256": "ffafeb05a4f1a9dd2e088508621dfb9a042b7433ce219372218b02cde957a457",
+      "bytes": 8909
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a4/audit_a4_identity.py",
+      "sha256": "d1030a3671a16f930e3973fcad46995a928f3c46060176f5b6e7bd3850160c59",
+      "bytes": 9739
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a4/audit_a4_identity.stderr",
+      "sha256": "0f18cd1e062b0a1a637c9eef2624632423877b0e8b9ffc04aa76b46f3b0a0475",
+      "bytes": 129
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a4/audit_a4_n3.json",
+      "sha256": "42028213065350cf91972c1f8d8d057222428c736a2c3473de956188112d6534",
+      "bytes": 1297
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a4/audit_a4_n3.py",
+      "sha256": "b69c64b80235e3eb6729522d94777f4aa727eda4d8eba9fafa09afce79f701d4",
+      "bytes": 2709
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a4/audit_a4_n3.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a4/audit_a4_rcen.exit",
+      "sha256": "490ed9504e322568794829275c4c2b76c593d0f8a49b1ed3e792b6fca528965f",
+      "bytes": 26
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a4/audit_a4_rcen.py",
+      "sha256": "a276b887959c72d41ed46759f99cebd8f63509195212f6ab866a939bf50d2b3d",
+      "bytes": 10021
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a4/audit_a4_rcen.stderr",
+      "sha256": "23b8ed0d075bffe9773183c287935280dcc075d094a779a57e79d594dc016774",
+      "bytes": 2733
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a4g_series.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a4g_series.stdout",
+      "sha256": "d0521334f0192727975bdd51d4fb92144a4d52b9ff25b15ade76ae4224bbae6a",
+      "bytes": 1754
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a4reg_compl.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a4reg_compl.stdout",
+      "sha256": "8376aea7769194f2518d6eefa330bfc89f5e94d0b57529c8999a61690223dc15",
+      "bytes": 3073
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a4reg_exact.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a4reg_exact.stdout",
+      "sha256": "9ed1c2d8c3c085447981023f2e2b7c8bc4dfcd7dc4847e4ebf962f5e09d75c37",
+      "bytes": 4561
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-checker/embed_n4.json",
+      "sha256": "378ca2e02def5c78b630bb240c158165336c3241685b2b3fcf0220e9e2d42a84",
+      "bytes": 399
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-checker/embed_n4.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-checker/embed_n5.json",
+      "sha256": "947d872fcbffb2944938358b37dc2383f413a5d0db2763cb024969d7ee2b9b76",
+      "bytes": 399
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-checker/embed_n5.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-checker/embed_n6.json",
+      "sha256": "45e6c20024a4b3c49de3171f9b88708ddb353898b7697b7896a9bd53072b60af",
+      "bytes": 399
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-checker/embed_n6.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-checker/embed_n7.json",
+      "sha256": "054078aef244884a12ac1ecc83460d4988cf8419815456c32eb6dbf471a7d606",
+      "bytes": 398
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-checker/embed_n7.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-checker/embed_numeric_check.py",
+      "sha256": "2804dfa31865215e83ddbcbf44f53537bb84b383a11f22f380beb9aa6d8dfc56",
+      "bytes": 4704
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-checker/n3_primitive_probe.json",
+      "sha256": "6241f19833633d27ab8c500f1f1dc292e5b7ea32f666ff7116aaa9fc7c8e56c0",
+      "bytes": 1032
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-checker/n3_primitive_probe.py",
+      "sha256": "fa2b01420524209d5bc257798ef63f6e1baf91e1467345e7c0b6099f4d43dd99",
+      "bytes": 2477
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-checker/n3_primitive_probe.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-checker/n4_mutation_probe.json",
+      "sha256": "1efc4c800efee3fdd35ce789e49ceca2ae58f1dd26904d92c699f6a398b72f3f",
+      "bytes": 4512
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-checker/n4_mutation_probe.py",
+      "sha256": "e8d1be8a9daa42715ecd2d364fa48aee6ab647dc3e538d75cfdbd2acd244f2a7",
+      "bytes": 10020
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-checker/n4_mutation_probe.stderr",
+      "sha256": "27c8fb8fd532d2f77966aa9b0615e4611eaaa1f6b3a0d84c9c3c4f9867f2e42a",
+      "bytes": 1315
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-n8/census_main.exit",
+      "sha256": "a1f356d3c08ffb39c6b1b3b5df823badb7822a9cd1a864089cd7ae320d5905c5",
+      "bytes": 26
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-n8/census_main.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-n8/census_main.stdout",
+      "sha256": "8232ff0bd6db62ec4cfe5aca72ec9a5819a26d86d6924dc5f3cce75fcbe39228",
+      "bytes": 9170
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-n8/census_n8_3200.exit",
+      "sha256": "5113b250b86be9bf0f19f5810850d248e88ef56dec3a915cd81ca7c4b7fc61a2",
+      "bytes": 25
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-n8/census_n8_3200.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-n8/census_n8_3200.stdout",
+      "sha256": "c54c2a8290ae6bcd91d39b296c6945aa31f3531d2b298735130cce2d9b92cf7c",
+      "bytes": 744
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-n8/census_padua_maxima.py",
+      "sha256": "47fccfe137f14abb9069d85a4efb54e5b3fcc849de0bb88400bd55c3e85fc210",
+      "bytes": 13936
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-n8/controls.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-n8/controls.stdout",
+      "sha256": "149ebb8dabeb6b031f319ec41d204f02a3598477b55e9cc20268787c1708c188",
+      "bytes": 2731
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-n8/controls_n8_witnesses.py",
+      "sha256": "dfcb3ef3146a4d956c4f5b56ae648ce02a970aa45c013761dda13e4275c5f0d6",
+      "bytes": 6564
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-n8/n8_witness_verify_primary.json",
+      "sha256": "1d9f09a62515bc6ad3407e43959ef8e5097fd1b0c39d7d42bd7a2c6b1109dea7",
+      "bytes": 30898
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-n8/naive.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-n8/naive.stdout",
+      "sha256": "512bc4b2b6b16d95801f343271dff34147447698db6384bdc0fffc79e7ca6323",
+      "bytes": 1486
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-n8/naive_grid_maxima.json",
+      "sha256": "cbf690dc7fa82c74b8f6b051c8f0ef0ce3ab7c82c6c510689e06ad26f647ef26",
+      "bytes": 2040
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-n8/naive_grid_maxima.py",
+      "sha256": "a8087ba56b09bbd06645f0ecf730825f8800f2379d35aa4e9ce9fe4da07b32ea",
+      "bytes": 1650
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-n8/run_independent.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-n8/run_independent.stdout",
+      "sha256": "8aa1d91f1006cccb5a3ddc929c488ea8e32364b90a94c6f9d829bd92a4867219",
+      "bytes": 1326
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-n8/run_primary.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-n8/run_primary.stdout",
+      "sha256": "b17f71a388829622f6c98cbad5ab50b5c4e5084973c8850bfc6c35832395b103",
+      "bytes": 1314
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-n8/verify_n8_witnesses.py",
+      "sha256": "b90eb55934ceb3703f3080797c857c443a85ce157375df63f7996468c0d9fb51",
+      "bytes": 13941
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/b1/b1_exact_check.py",
+      "sha256": "5fed955f3acb3ddf1996102edb3ce1763d6aa9d15fc4c88c277141f41883b96a",
+      "bytes": 17615
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/b1/b1_exact_check.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/b1/b1_exact_check.stdout",
+      "sha256": "16e7c482ed070b2819280428d72d3f3180bbd7d0ab1eaae82d9726352940040a",
+      "bytes": 9733
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/b1/b1_exact_check.time",
+      "sha256": "dc6a606fb6a49878528a861041d4777b8538c955205379f351f32f148d4dc962",
+      "bytes": 44
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/b1/b1_taper_scan.py",
+      "sha256": "916bfecd5e926295a5a5493fde66ed3fb36290099706f2fa607f712c9e14f885",
+      "bytes": 6181
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/b1/b1_taper_scan.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/b1/b1_taper_scan.stdout",
+      "sha256": "910660a11aa66e2f8e337941a5c7ccab88adffed820b88eab12f78881bb9a373",
+      "bytes": 3197
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/b1/b1_taper_scan.time",
+      "sha256": "f1a575b70acaef2cf7995c9ff2831007385c56529ddb60496eaf2ee8396fd61b",
+      "bytes": 43
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/b3-exact.json",
+      "sha256": "f79bfa8a2e313df5b003c80fa58c87580f8e057ef15ae3e021db8f5f168620f7",
+      "bytes": 8975
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/b3/b3_audit_independent.json",
+      "sha256": "c6e2b03131b9dcbdc1c952e8eab9d64b4a444f0c6e828bb90e58c65b60f2a0ba",
+      "bytes": 24778
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/b3/b3_audit_independent.py",
+      "sha256": "4cf1b20ff37e13c8671187461c5b02ba6277cb4c233da6096e5d0890eee28ff8",
+      "bytes": 20802
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/b3/b3_audit_independent.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/b3/b3_audit_independent.stdout",
+      "sha256": "3c09bb8a1fe2326d0f02182866dc9743b48e9317cb14512213052ba29e6d8b7d",
+      "bytes": 1094
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/b3_exact.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/b3_exact.stdout",
+      "sha256": "0f389de51836a73c92ba097557735de7a347249a868bdeccbcf188e666473360",
+      "bytes": 265
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/cmp.py",
+      "sha256": "1fe05f778f8d491a7c0d342164eaba68a2e1ea3ad6ad4db84264fe3e5471bbac",
+      "bytes": 628
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/manifest_check.out",
+      "sha256": "42ddb6400ba086605f16746cc9d9e5300864e3ffc5b57f2ee4a783af721e66a2",
+      "bytes": 3312
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/manifest_check.py",
+      "sha256": "6c37caf8471c69dd281c1d9cf3e4acfc555a103a1747546218ff01842eafe157",
+      "bytes": 1891
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/n3_checker.stderr",
+      "sha256": "117c517c20ea71041b7fc5e0f3613bdadea4c0ee5e0469b3bf6c67a7300fb034",
+      "bytes": 276
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/n3_checker.stdout",
+      "sha256": "cc429084aa710eec29d6008900d4753293c78de2cd545dd3f7f6af4f292dfe37",
+      "bytes": 15207
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/n4-checker.json",
+      "sha256": "3b6e8a55b3d2d959b541b07f1fe86b91fefb03ea9299e0f474f074aebf8cdd30",
+      "bytes": 9353
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/n4_checker.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/n4_checker.stdout",
+      "sha256": "c292b6524063368c6935647a0bbd9db8ebbd1dd488efb12e26ff7eebb8fcae88",
+      "bytes": 7689
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/n5-checker.json",
+      "sha256": "2c1fc5cf39b1b96d35c6a44824a1105e4505b07619298e5a2e1e1a9e65277fe5",
+      "bytes": 8358
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/n5_checker.stderr",
+      "sha256": "7195de312a032eabeb1cb2056a9a30b771676feacfbc616484afff15bbb75ac2",
+      "bytes": 914
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/n5_checker.stdout",
+      "sha256": "aef7f13bef6cb890e5cda7df39e824696fd110851db94daef361a8ddc0b81b70",
+      "bytes": 7366
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/n6-checker.json",
+      "sha256": "88d83601cb6096e9bb3b930e580ba6ae43f9617ce7af809fd7124d0ec92f3119",
+      "bytes": 13396
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/n6_checker.stderr",
+      "sha256": "74c86965b69ad4ae2d53a5b0e79bbbbed55d50a92f92cc27fdd4d4db53091ed2",
+      "bytes": 1498
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/n7-checker.json",
+      "sha256": "72c4bdbf3f9027c3172563c0fe76ac8390de2e6dd1cd3459bff7283c38107acc",
+      "bytes": 16255
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/n7_checker.stderr",
+      "sha256": "9f1c5c31bbb3474fe2feb9052e90e27144a659bf4a19b8e6bd94b197618fd5d7",
+      "bytes": 1850
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/n8_witness_standalone.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/n8_witness_standalone.stdout",
+      "sha256": "9fbf4ddfd37a67ea6d338183a9b42f7fae09b785c367b70df295a99382e65379",
+      "bytes": 208
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/proposals_check.out",
+      "sha256": "922e8f548a70367cf6c37611c2db39914577f8d72abdc6c52935df12d6fe67a6",
+      "bytes": 2059
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/proposals_check.py",
+      "sha256": "38929b57a5ba2f99d7e1a2a3b341e5fb2e5bfeaf1a4a954180506e53cebc5ce0",
+      "bytes": 1042
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/rerun-log.txt",
+      "sha256": "1948709f2f237741088632e1f183418fd820478942fe6d4bba682fdc693dcc7a",
+      "bytes": 478
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/reruns.sh",
+      "sha256": "1fd674761095968a61a48bf08e414d4cc059337c22900c2640473fbd0c64f74c",
+      "bytes": 2227
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/subaudit-reports/a2.md",
+      "sha256": "7f7b549c390c49bf298b8266eed33caf646f79de0102e1551d8966567b666b81",
+      "bytes": 3497
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/subaudit-reports/a4.md",
+      "sha256": "172f51fd740ff4bf1ce229035fa455fbd0bf2115ddf971e3c7323b0cae1d119d",
+      "bytes": 3313
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/subaudit-reports/a5-checker.md",
+      "sha256": "f4b1e6294ef6d854cfaf70a1fbff1a30ca81e76d56ab9dbb796a75b8a3c53cc8",
+      "bytes": 5308
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/subaudit-reports/a5-n8.md",
+      "sha256": "40f75489ff97097a7ee2ad63d12223867ce19c3e7a90e951fdd2acc72d7570d8",
+      "bytes": 3741
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/subaudit-reports/b1.md",
+      "sha256": "0e8f0f0fae11a31fd1767543c0dd2bf74c160c77c0b043fc4c2e09cd8dcb7010",
+      "bytes": 3473
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/subaudit-reports/b3.md",
+      "sha256": "e09043c3bac0741b1181223bf317b24e89dc636cab4a0b8b9a5bed353405f4ee",
+      "bytes": 3259
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/subaudit-reports/registry.md",
+      "sha256": "69a40fb9d7462b22ee5a9928ade1f38ff66268ff7c20d05a9ce2914b26a19dfa",
+      "bytes": 4242
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/b1-input-preparation.md",
@@ -2877,8 +3432,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a2.md",
-      "sha256": "78158b6b53fe659161dea99e2abd2451d6a3ab1ed8c486496f25742fdfafed3d",
-      "bytes": 7112
+      "sha256": "999c686d937edf164614a771400a62f11e9fcd67f4dd54c88e44f71de4822598",
+      "bytes": 7488
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a4-central.md",
@@ -2987,18 +3542,18 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-checks-b3.md",
-      "sha256": "72b85a3956aa8a61c3f724a24f7708e65e74bcb6b1cd29eb96a3c55b200bf2e1",
-      "bytes": 19913
+      "sha256": "a5b0dee791d7e7754db1b87fb13e4fa3c3860e9429833dfaf37e94683b71705e",
+      "bytes": 20482
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-checks.md",
-      "sha256": "cf48151acd9152350a56ed21f2906c9bb9c56931396d8ffb4570314243841842",
-      "bytes": 15917
+      "sha256": "533c72885b33fef758d6233a64b9a833b4007a844cb9904f589ca2096a7cd35b",
+      "bytes": 16076
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-execution-a2.md",
-      "sha256": "135f8d5c515511ed8680864c1378b12baf81aa938664b4c27335b4331dee73bd",
-      "bytes": 3934
+      "sha256": "4bec2268dda97929d52360aa30b3d4bd04adf24c8bd7ac5cd18b18407f65db1e",
+      "bytes": 4340
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-execution-a4-g.md",
@@ -3057,8 +3612,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-execution-b3.md",
-      "sha256": "e9f52c1448d0cb265179390674bb7e60ea59df4e0f4f8674e9727078e72d216c",
-      "bytes": 4584
+      "sha256": "0fb0db302bef1d7d49ad8da3b304792cbc7210b26a74dfcc783be2d1e19a056c",
+      "bytes": 5153
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/inputs-review.md",
@@ -3682,8 +4237,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n3_literature-comparison.md",
-      "sha256": "b4b18fe104e77130048bc972538a0ed131cb0ae791716135292e61a0d4de56d7",
-      "bytes": 1151
+      "sha256": "81cfd75e72f8fc132b86f751bcb169354c093f5adabc50d0ffef376541a61878",
+      "bytes": 1350
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n3_producer.json",
@@ -3702,8 +4257,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n4_literature-comparison.md",
-      "sha256": "aa274580ddd7fcec660f1078071859ef7244996db1684851004e90f492e89307",
-      "bytes": 1338
+      "sha256": "0d7fcc5acdc5198ba57cf7c8391e486b913bf6dc1406f95f96c96ceaf8bbf156",
+      "bytes": 1537
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n4_run_record.json",
@@ -3727,8 +4282,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n5_literature-comparison.md",
-      "sha256": "9531174a0207016db3e9630cb1938bd1481d33996626c5eb55a70229fda3192a",
-      "bytes": 726
+      "sha256": "8308c283811e5c434b73450e888d4ccd9402fd549454138eb0215f6ab64b3472",
+      "bytes": 925
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n5_producer.jsonl",
@@ -3747,8 +4302,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n6_literature-comparison.md",
-      "sha256": "7a13b48afc8471f22e6cb50d05789d47bf3b988b7c07f7727cd007c70642f62d",
-      "bytes": 3680
+      "sha256": "6df6848277fb01fe0637be70fc8c2b8fb539234b6367b5c49b38cdad2cd9351e",
+      "bytes": 3879
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n6_pilot_record.json",
@@ -4082,18 +4637,33 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/plan.md",
-      "sha256": "b1a54cafe85896a17f80120215720118269413b4d14a8e879c19ead369cd45ff",
-      "bytes": 4361
+      "sha256": "2cd2647ef5ed3dbb18a24bc74feccb22f415a36f8bdc451b4086c1b1522cc92f",
+      "bytes": 4285
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/proposed-record-changes.md",
-      "sha256": "078e34b93f582680135c14f9616e8e738b8fd47f01a284847f26d8b858357f04",
-      "bytes": 31945
+      "sha256": "6fa72cd276741193fb1ae99f50cd40a911a349aeb1fc4aa514433335bd278869",
+      "bytes": 34098
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/report.md",
-      "sha256": "11af48ff6bb633a288c4188257c1d49e8bbbe982df969c11dfb90138d2000639",
-      "bytes": 5507
+      "sha256": "0bdcce43e7330b75c8ea7e148aadcce6675f9d723dc4f04a33a964539b881e34",
+      "bytes": 6432
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/response-01.md",
+      "sha256": "51f4405b65a98f2719a5048b6869e31bb55e38fdc22dc1566f4bfaf3d9affa4a",
+      "bytes": 9664
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/response-support/check_response.py",
+      "sha256": "3e677a732e6eb7ac1828393061fec5ba20d8c3d6c40171adff0b644717f6c82b",
+      "bytes": 6542
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/response-support/verification.json",
+      "sha256": "70e8e29bffb4f973903a493eea971662e38f41fae1a560aa94a591469fae9e7c",
+      "bytes": 842
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-01-corner-leading-lower.md",
@@ -4107,13 +4677,13 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-03-corner-log-coefficient.md",
-      "sha256": "9f8667eeb1da848fd8a20e62d4fb4c5845bae938045182e0f4e8f21058c01696",
-      "bytes": 8017
+      "sha256": "83a00ace73264bda7638fa397c374445e9b3c41a90bc782849d09bcc6db3949d",
+      "bytes": 8638
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-04-corner-product-comparison.md",
-      "sha256": "afab6eb482c4df0ab19e149f4a990d3e41b73ef54665b6426d44243359e2f265",
-      "bytes": 9927
+      "sha256": "d4b15a29321164c6c30796179f7324ae25899c2168ac4445ae6c3dda348f8591",
+      "bytes": 10561
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-05-cubic-finite-reduction.md",
@@ -4122,8 +4692,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-06-degree-three-maxima-count.md",
-      "sha256": "9a5588ef0cdeea29e79d1848fbbfa915f1a1e913230adbc3cbaaea65f75bf89e",
-      "bytes": 14457
+      "sha256": "e078158e22f38807d43efafc16eae96ebead3f3519766e58c211a15b680d582d",
+      "bytes": 14823
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-07-degree-three-global-argmax.md",
@@ -4132,18 +4702,18 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-08-quartic-finite-reduction.md",
-      "sha256": "2a9778d2c6f7fb279488670bc7b2e0caa170d1928d83871e8616216e264f3b40",
-      "bytes": 11831
+      "sha256": "a39f5f9b4e4d0290f68f66871821e3877f0f606500191160055c39927fbbe79d",
+      "bytes": 12317
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-09-spatial-certificate-correctness.md",
-      "sha256": "c57750f73956ccbecaae1e5902d2592f829f0ef77e6c27412ec3db81406bbe93",
-      "bytes": 11365
+      "sha256": "5ac77b0ac2e8e3365bd13933b4bb6141044f42052c0b25f1480536639e5d2c6b",
+      "bytes": 11851
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-10-degree-four-maxima-count.md",
-      "sha256": "4a56c80089bc5b9c09dca38d993b060a8be44fdc266a9e543ad8ae0443a23112",
-      "bytes": 9453
+      "sha256": "a05f14328dde4b88b00aa7f25df1595ed9c39c259c4592420e4158f483c2c26c",
+      "bytes": 9819
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-11-degree-four-global-argmax.md",
@@ -4157,8 +4727,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-16-degree-five-maxima-count.md",
-      "sha256": "54f2e1289c66a3cda74f3a8eaf2af145ce2b4da2ee95c4490d3f92a8a0978f92",
-      "bytes": 11118
+      "sha256": "cfa7f565525fd7506df71f62c4dded7f6eac51dbb6d2340a6cd4d531f2bf6f4a",
+      "bytes": 11484
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-17-degree-five-global-argmax.md",
@@ -4177,13 +4747,13 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-40-degree-six-principal-field.md",
-      "sha256": "aa3d4d40c14de231285b5fee3648566d2e8b9606f337aaeadf841e7aba32027e",
-      "bytes": 7128
+      "sha256": "d4db089c2b425fc0c56581d6fe84b7e59289b0aa509b71708ff21052761349f3",
+      "bytes": 7614
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-41-degree-six-maxima-count.md",
-      "sha256": "64daab76318c8c816cbd9c89952f7c0d18cda242e377468a33f1a472da251a48",
-      "bytes": 9762
+      "sha256": "17b87c2ad425cac9f08ef0ff0bd6fb6986ce6b0a5d2787154a420ffec7f60a8d",
+      "bytes": 10128
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-42-degree-six-global-argmax.md",
@@ -4197,8 +4767,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-51-degree-seven-maxima-count.md",
-      "sha256": "692b7ef50496ffa20250c1b3ae5a766898472146ea21211fb4d0820a35fa5776",
-      "bytes": 11016
+      "sha256": "a095a97e495b7020be7eff4caf29d5909f3afb6c213898df82ef35d460589f0f",
+      "bytes": 11382
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-52-degree-seven-global-argmax.md",
@@ -4217,8 +4787,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-61-degree-eight-maxima-count.md",
-      "sha256": "69721562bed4c93242bb2eacdadfbaeaf825862bb10d153538255731e3100246",
-      "bytes": 8963
+      "sha256": "c3f51566cf12998ec8db233b7bf68fdcaddf12e5a9ddb8a8f788eedb1ec1f00b",
+      "bytes": 9158
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-62-degree-eight-global-argmax.md",
@@ -4272,13 +4842,13 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-76-central-triangle-defect-stability.md",
-      "sha256": "349efba80c37a660fca108064cbf53a2a7512a24e737b1f949274646a9bdc499",
-      "bytes": 7266
+      "sha256": "991449fb74a2d655ab495fde0276ce214f853b2f78416034b75ba171a3761ce8",
+      "bytes": 7553
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-77-central-edge-envelope-expansion.md",
-      "sha256": "cadcfbdead5b1e69ab703edafef3c895f43de44f7503b292ee855dac0e4e74a3",
-      "bytes": 8769
+      "sha256": "89e58da91a0e73818f1e454cb5263bc4ba7ee923a33516a7b478388f30599bea",
+      "bytes": 9145
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-80-uniform-pivot-common-cluster.md",
@@ -4302,13 +4872,13 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-93-source-ldiag-taper.md",
-      "sha256": "563fae640d26f49d88cc773aa339f3fc472abceed7d61def120d42337ff2c614",
-      "bytes": 6698
+      "sha256": "baa2f7c6bba6f691589d8227135f838d64fdb1d459c98871f84ab70c159e84df",
+      "bytes": 7115
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-N01-computed-section-box-count.md",
-      "sha256": "c0cbcc79ea1d2c806edd64dd04d613164cec8b0c530882fcfd297a2615b2881d",
-      "bytes": 15557
+      "sha256": "e5eb7da08bba91d6d190784d324f845fc81e7ac24caf768a4a5d99ca88b02c4e",
+      "bytes": 16299
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-N02-common-cluster-route-obstruction.md",

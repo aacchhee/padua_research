@@ -1,5 +1,7 @@
 # PD-T?proof-attempts-2-codex-76 — Joint stability of the central triangle defect
 
+Current audit note, 2026-11-01: Claude audit-01 accepted this record at its stated scope. Historical audit-pending statements below describe development checkpoints.
+
 ID kind: PD-T.
 Aliases: A4(a) phase-dependent defect; moving central grid; exact crease stability.
 Split from: exact phase decomposition and the central-envelope comparison.
@@ -22,7 +24,7 @@ Then exactly, for every real s,
 
 `lambda_n(epsilon,cos phi)=S_n(s)−Delta_n(beta,s)`, `Delta_n>=0`. (2)
 
-For every sequence of complementary phases beta_n->pi/2 and every real sequence s_n->0,
+For every sequence `(epsilon_n, beta_n, s_n)` with `epsilon_n in {−1,1}`, complementary phases `epsilon_n^n (−1)^q_n=−1`, `beta_n=q_n*pi/(n+1)->pi/2`, and real `s_n->0` (the edge sign may vary with n),
 
 \[
  \Delta_n(\beta_n,s_n)\longrightarrow g,                    \tag{3}

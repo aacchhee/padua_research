@@ -1,5 +1,7 @@
 # Degree-six Padua maxima: certified finite count and primary Table3 comparison
 
+LITERATURE attribution (audit-01 F8): arXiv 2605.23299v1, §3.3 Table 3, LIT-388. Its reported counts are source statements; the local certificate/proof and candidate-correction scope are separate.
+
 Literature comparison/verification record, not a new theorem, novelty claim or author notification. Codex `/root/a5_n4`, inherited gpt-6.1-sol xhigh; rules842dfaaeff524b4db4141d314afff6ad4a5b7721. Per the parent instruction, this primary source was revisited only after the completed different-agent controls and promotion of the n6 results. Required Part2 Claude audit remains PENDING.
 
 ## Primary source and exact row
