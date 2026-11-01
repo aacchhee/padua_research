@@ -1,6 +1,6 @@
 # Report — Lanczos in two commuting variables (bivariate-lanczos-20261031)
 
-Orchestrator: Claude (configured `claude-opus-5-5`). Rules `d36722823441dc40c6e19d69a174459348dd309c`. Date 2026-11-01. **Every result below is a developer result; none is accepted.** Statuses are those in the theory files after the independent Claude reconstructions listed; the Codex (`gpt-6-astra`) audit is pending. No novelty is claimed: each survivor names its closest prior work and the separation that remains after the documented prior-art checks. Floating-point experiments are MEASURED only.
+Orchestrator: Claude (configured `claude-opus-5-5`). Rules `d36722823441dc40c6e19d69a174459348dd309c`. Date 2026-11-01. **Every result below is a developer result; none is accepted.** Rank 4's span drift deserves AC's attention first: if the identification with published multivariate V+A holds, full reorthogonalization keeps orthogonality at 1e-15 yet computes a basis of a space ~1e-3 away from the graded polynomial space on rotated squares. Statuses are those in the theory files after the independent Claude reconstructions listed; the Codex (`gpt-6-astra`) audit is pending. No novelty is claimed: each survivor names its closest prior work and the separation that remains after the documented prior-art checks. Floating-point experiments are MEASURED only.
 
 ## 0. What the campaign asked and what it found
 
@@ -39,8 +39,8 @@ Ranking criterion: strength of the established statement × independence of veri
 ### Rank 4 — Section accuracy under reorthogonalization: x-part theorem, y-part obstruction (L2: PD-T?…-201, -202, -205; PD-N?…-201)
 
 - Statement: under semi-orthogonality plus local orthogonality (two-pass window), the x-multiplication section is accurate to O(u) (201); the commutator residual of the injected y-part follows the Gram recursion with clamped columns and is not reset by reorthogonalization, giving a reference-free lower bound θ ≥ δ_J/(2‖J‖) on the distance of the computed spaces from S_n (202); coupled residuals for general selections (205). MEASURED: even CGS2 against all previous vectors leaves y-section errors up to 1.3e-2 and spans drifting from S_n (PD-N?…-201).
-- Status: 201, 202, 205 PROVED (developer); PD-N 201 MEASURED with post-smoke-test kill criteria (disclosed). **Independent reconstruction: see §4 (L2 reconstruction 01).**
-- Prior art: Simon 1984 (single operator); Larsen PROPACK; Jia–Li 2021 (two-matrix process). Separation: two operators with an injected column and a commutator residual.
+- Status: 201, 202 PROVED and confirmed by L2 reconstruction 01 (35 stress instances for 201; exact rational and 80-digit checks for 202, whose bound controls max_{s≤n} θ_s); 205 PROVED only under condition (C) + acyclicity after a high finding ((C) ⇒ acyclic OPEN, checked n ≤ 5, proved for BJ; the adaptive rule fails (C)). PD-N 201 MEASURED and **confirmed with independent well-conditioned references** (κ ≤ 7.8e2): own BJ + CGS2-against-all (loss 4e-16) drifts 3.6e-3 (rotπ/4, n = 24) and 1.3e-2 (triangle, n = 20); 7.7e-6 in long double, so the drift scales with working precision; it does not decay with M up to 1e5. The developer's original kill criterion was added after a smoke test (disclosed).
+- Prior art (reviews/L2-prior-art-01.md; all four mechanisms partially known, nothing read contradicts or subsumes the drift): Zhu–Nakatsukasa 2026, Brubeck–Nakatsukasa–Trefethen 2021 and Hokanson 2020 prove nothing about the computed span or Hessenberg matrices in 2D (ZN's rounding content is the CGS2 orthogonality bound feeding a fit bound; ZN §5.2's 'unaffected by ill-conditioning' rests on 1D basis comparisons and 2D fit errors); Zhang–Su–Li 2024 is a 1D fitted-value bound. Span accuracy and fit accuracy can differ — the drift finding concerns the span. 1D analogue: Krylov backward stability plus subspace conditioning (Drkošová et al. 1995; Carpraux–Godunov–Kuznetsov 1996; Kuznetsov 1997; Paige 2010 — not read). Simon 1984 / Jia–Li 2021 templates for 201. Hokanson's 'smallest k' rule appears to match the dev (BJ) selection (to verify), so the CGS2 + dev runs would be Hokanson-type V+A. Not read and could limit novelty: ZN Appendix B, Simon LAA 61 Thm 5, Kreuzer–Poulisse–Robbiano 2009, Stetter 2004, Braconier–Langlois–Rioual 2000.
 - Brief: online criterion to switch from one relation to two; explain PRO-2D-J's last-degree failure on the cubic checkerboard; M = 10⁶ runs on syvert (commands in LOG).
 
 ### Rank 5 — Product-type factorisation and the coefficient channel (L1: PD-T?…-105, -111, -114, -115)
@@ -79,7 +79,8 @@ Ritz governance off product supports; single-section falsification by tensor gri
 | L3 R04–R06 + response | Opus 5.5 xhigh (recon 02) | No high findings; 313/N303 confirmed n = 4..16 |
 | L3 prior art | Opus 5.5 high | Partially known; Greenbaum width conflict |
 | L5 R01–R03 | Opus 5.5 high (recon 01) | Five medium corrections applied |
-| L2 R01–R03 | Opus 5.5 xhigh (recon 01) | **pending at the time of writing — see LOG** |
+| L2 R01–R03 | Opus 5.5 xhigh (recon 01) | Span drift confirmed; 201, 202 confirmed; high finding on 205 applied |
+| L2 prior art | Opus 5.5 high | All four mechanisms partially known; drift in 2D under full CGS2 not found |
 
 These Claude reconstructions supplement, and do not replace, the required Codex audit.
 
