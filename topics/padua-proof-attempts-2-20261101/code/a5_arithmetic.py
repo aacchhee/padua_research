@@ -65,7 +65,12 @@ def cmatrix(H,c):
  if hc.det()==0:return None
  inv=hc.inv();C=[]
  for row in inv.tolist():
-  C.append([F(str(sp.N(q,45))).limit_denominator(10**12)for q in row])
+  values=[]
+  for q in row:
+   normal=K.to_sympy(K.convert(q))
+   a,b=coeffpair(normal);bound=iv(a)+iv(b)*RI
+   values.append(((bound.lo+bound.hi)/2).limit_denominator(10**12))
+  C.append(values)
  return C
 def contraction(Hterms,C,X,Y):
  H=[[evalpoly(Hterms[i][j],X,Y)for j in range(2)]for i in range(2)]

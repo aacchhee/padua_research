@@ -10,6 +10,7 @@ or priority claim is made here. Rules were read at
 |---|---|
 | Part 1 head and initial rules | `a09d910ae7d5526b1e216066421a0bee7fc20da4` |
 | Part 1 Claude audit that arrived during this run | `95279b833bca5967fcf47c1b71a56ff622185b4e` |
+| Part 1 response and completed minor dispositions | `7b8884a2f98518784ff3698dd2f3f9c49c9cdd62` |
 | Main observed by orchestrator | `9739a0c56b7a3976422ce60a8441bfbbfd6554df` |
 | Programme PR #6 head | `9bd14a6d2c4da69139a10107d8a787f2be0c5c9e` |
 | Part 1's pinned programme | `cadb35066160e466cb1704b9791ad6f374446422` |
@@ -39,19 +40,53 @@ at the Lanczos pin. Cite the requested local ID
 `PD-T?bivariate-lanczos-claude-304(a)`; its allocated upstream ID does not change
 the task's citation convention.
 
-Part 1 dependencies must be named `PD-T?proof-attempts-codex-0N (audit pending)`.
-Hashing or reading a Part 1 proof does not supply its pending Claude audit.
+Part 1 dependencies retain the literal label
+`PD-T?proof-attempts-codex-0N (audit pending)` as required by the user's original
+instruction. That label now records the historical requested wording; current
+audit acceptance and completed dispositions are qualified below. Hashing or
+reading a Part 1 proof alone does not constitute its Claude audit.
 
 Update during this run: the Part 1 Claude audit arrived at `95279b833bca5967fcf47c1b71a56ff622185b4e`.
 The orchestrator stopped dependent work, read the audit, recorded the impact and
 merged it at `818ca4ad0942eb4743860f913a299ff30d959dae` before resuming. The
 manifest separately pins its `audit-01.md` and all nine-file audit/support scope
 (the report plus eight support files), while retaining every original scientific
-input at `a09d910…`. The report accepts the three proofs with minor findings;
-their disposition remains an explicit dependency condition, not an audit of
-Part 2. In particular F2 requires rigorous corner handler (D) and edge-node
+input at `a09d910…`. At that delivery the report accepted the three proofs with
+minor findings awaiting disposition; that historical qualification was not an
+audit of Part 2. In particular F2 requires rigorous corner handler (D) and edge-node
 handler (E) coverage for A5: Part 1 theorem 03 does not make its separate
 MEASURED decision trace a proof of those handlers.
+
+Subsequent update during the same run: the Part 1 response arrived at
+`7b8884a2f98518784ff3698dd2f3f9c49c9cdd62`. The orchestrator reports reading it,
+recording the impact and merging it at `95ca473cc21b2db6a9a46c62e86495ebe94eb397`.
+All minor findings F1–F6 now have accepted documented dispositions. The three
+Part 1 mathematical proofs remain accepted; no proof body, developer code or
+scientific output changed. Result 03 moved its explicitly MEASURED execution
+paragraph from Statement to Checks; result 02 clarified the source of its
+dimension claim. The original `a09d910…` scientific pin and `95279b8…` audit pin
+remain in the manifest. A distinct `part1_response_arrived` source pins all 12
+paths changed between the audit and response commits, derived with read-only
+`git diff --name-only`, so editorial changes do not overwrite earlier provenance:
+
+- `LOG.md`
+- `attempts/T-A1.md`
+- `attempts/T-A5-partial.md`
+- `attempts/T-B5.md`
+- `evidence-manifest.json`
+- `pr-prep.md`
+- `preparation-checks.json`
+- `proposed-record-changes.md`
+- `response-01.md`
+- `theory/proof-attempts-codex-01-padua-corner.md`
+- `theory/proof-attempts-codex-02-generic-commutant.md`
+- `theory/proof-attempts-codex-03-degenerate-maxima.md`
+
+These paths are relative to `topics/padua-proof-attempts-20261101/`.
+The F2 disposition preserves the additional rigorous (D)/(E) handler obligations;
+accepting the Part 1 local theorem does not discharge them. This update records
+the actual sequence rather than retroactively calling the initial audit pending
+state accepted. It supplies no Part 2 audit or new mathematical execution.
 
 ## Actual upstream changes and integration
 

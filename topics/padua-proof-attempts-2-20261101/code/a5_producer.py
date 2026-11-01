@@ -84,6 +84,12 @@ def produce(limit=1024):
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--limit',type=int,default=1024);ap.add_argument('--output',required=True);ap.add_argument('--unresolved',required=True);args=ap.parse_args()
  cert,unresolved=produce(args.limit)
+ if args.limit==1024:
+  from a5_boundary import boundaries
+  from a5_global import global_certificate
+  e,c,bs,bu=boundaries();cert['edges']=e;cert['corners']=c;unresolved.extend(bu)
+  cert['summary'].update(edge=bs['edge'],corner=bs['corner'],total=cert['summary']['interior']+bs['edge']+bs['corner'],boundary_counts=bs['counts'],unresolved=len(unresolved),complete=not unresolved)
+  cert['global']=global_certificate(cert)
  path=Path(args.output);path.parent.mkdir(parents=True,exist_ok=True)
  data=json.dumps(cert,separators=(',',':'),sort_keys=True).encode()
  if path.suffix=='.gz':

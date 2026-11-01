@@ -14,6 +14,7 @@ TOPIC = "topics/padua-proof-attempts-2-20261101"
 PINS = {
     "part1_and_rules": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
     "part1_audit_arrived": "95279b833bca5967fcf47c1b71a56ff622185b4e",
+    "part1_response_arrived": "7b8884a2f98518784ff3698dd2f3f9c49c9cdd62",
     "main_observed": "9739a0c56b7a3976422ce60a8441bfbbfd6554df",
     "programme": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
     "part1_programme": "cadb35066160e466cb1704b9791ad6f374446422",
@@ -46,6 +47,10 @@ def main():
     add("part1_and_rules", RULES + [p for p in tree(PINS["part1_and_rules"]) if p.startswith(P1)])
     add("part1_audit_arrived", [p for p in tree(PINS["part1_audit_arrived"])
         if p == P1 + "audit-01.md" or p.startswith(P1 + "audit-support/claude-audit-01/")])
+    response_paths = git("diff", "--name-only", "--diff-filter=ACMRT",
+                         PINS["part1_audit_arrived"], PINS["part1_response_arrived"],
+                         "--", P1).decode().splitlines()
+    add("part1_response_arrived", response_paths)
     pg_paths = tree(PINS["programme"])
     add("programme", [p for p in pg_paths if
         p in [PG + x for x in ["OPEN_TARGETS.md", "checks/decisive-gen4-2.md",
