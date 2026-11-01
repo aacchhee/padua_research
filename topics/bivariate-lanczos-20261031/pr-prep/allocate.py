@@ -162,7 +162,7 @@ for prov, path in sorted(theory.items(), key=lambda kv: M[kv[0]]):
     cw_rows.append(f'| {prov} | {fid} | claude/bivariate-lanczos-20261031; PR preparation 2026-11-01 | [{path}]({path}) | bivariate-lanczos PR (Claude-allocated block, AC 2026-11-01) |')
     if prov.startswith('PD-N?'):
         scope = section(s, 'Negative-result scope (PD-N only)') or section(s, 'Scope')
-        neg_rows.append(f'| {fid} ({prov}) | {cell(title, 140)} | {cell(scope, 220)} | {st[1]} | [{Path(path).name}](theory/{Path(path).name}) |')
+        neg_rows.append(f'| {fid} ({prov}) | {cell(title)} | {cell(scope)} | {st[1]} | [{Path(path).name}](theory/{Path(path).name}) |')
 
 idea_rows = []
 for n, (title, path) in sorted(idea.items()):
