@@ -1,5 +1,29 @@
 # Shared allocation ledger — padua-batch-20261031
 
+## PR #9 permanent reservation (2026-11-01)
+
+AC requested finalization of [PR #9](https://github.com/aacchhee/padua_research/pull/9).
+The current fresh-range procedure supersedes historical owner-confirmation prose
+below; every earlier reservation and accepted ID remains unchanged.
+
+| Namespace | Range | Count | Owner branch | Date |
+|---|---|---|---|---|
+| PD-T | **PD-T101–PD-T105** | **5** | `codex/padua-proof-attempts-20261101` | 2026-11-01 |
+| PD-N / IDEA / LIT | no range | 0 | same | 2026-11-01 |
+
+Heads checked: main `cf89b140530d5838bdb208a8c28f3e7aa676ace3`,
+PR #9 `93da3be26dbddf9ec2446af578fe8015bb4eeada`, and draft PR #12
+`0d9ad5b803b3fff43080586f5255bfdfcba602e8`. Both complete ledgers and all four
+final-ID registries were inspected at each head; their bytes agree. All closed
+PRs returned by the scan are merged; no closed-unmerged or retired reservation
+is missing. [Scan receipt](../padua-proof-attempts-20261101/finalization/reservation-scan.json).
+
+This reservation is published before any final-ID assignment; its priority is
+the pushed commit adding this section, linked in PR #9's body. Intended use:
+three accepted results, with two IDs of headroom. Unused IDs remain permanent
+gaps. Subsequent boundaries: **PD-T106, PD-N044, IDEA-210, LIT-427**, subject to
+a fresh union scan. This commit makes no scientific registry change.
+
 ## Current transition and PR #11 reservation import (2026-11-01)
 
 Main `e24b21fe43cdd090f6dfac269147e75185f04c5b` contains PRs #10, #6 and #13 and is merged into PR #11 at `f62272c525dcb8bb802306d1010c37d93fcbf4b0`. AC directs PR #11 next. **The fresh-range procedure in agents/WORKFLOW.md, adopted 2026-11-01, supersedes every older single-allocation-owner and owner-confirmation instruction below.** Those paragraphs and their dated boundaries remain historical provenance; all existing reservations remain in force.

@@ -125,3 +125,15 @@ Next: Codex (gpt-6.1-sol medium): Continue codex/padua-proof-attempts-20261101 �
 - `python -I topics/programme-ideas-20261031/pr-prep/allocate.py` was actually run without `--apply`; the installed-allocation read-only check passed, validating 192 allocated map entries and 16 merged-alias crosswalks. Output boundaries match the installed id-map.json. No allocator write was invoked.
 - Global PROOF_STATUS primary-ID scan: 143 records, no duplicate primary proof IDs. Checked 2,388 local link targets across the seven global files: no missing targets. The branch diff outside this topic directory is empty relative to fresh main.
 - Evidence: registry-integrity.json; source check output retained during execution in `/tmp/padua-main-sync-installed-allocation.json`. No registry, source record or allocation ledger was modified by these checks. This establishes preservation relative to fresh main, not a new mathematical or literature audit.
+
+## Finalization authorized by AC (2026-11-01)
+
+Rules read at `2c192c7` (full SHA recorded by the finalization receipt). AC's
+“Finalize it” supersedes the earlier deferred integration restriction. Handoff
+[02](handoffs/02-finalize.md) controls this step. Codex gpt-6.1-sol medium
+(allocation; runtime-resolved metadata unexposed) is the sole Git/registry writer.
+No new mathematical or novelty content is introduced, so a renewed novelty
+generation gate is inapplicable. The independent bounded inventory read every
+ledger and final-ID registry at fresh main and both open PRs; no collision was
+found. Reserve PD-T101–105 before assigning the three accepted results, keeping
+104–105 as permanent unused headroom; other namespaces need no range.
