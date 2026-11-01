@@ -235,3 +235,35 @@ Dated restricted class split proposed after the Part2Claudeaudit: PD-T?proof-att
 ```
 
 Validation: entireOldstatement/measurement/route retained; unique at pinnedcurrentmain. Proposedrows/mappingsforlocal90–93closeONLYthisspecifiedclasspart of B1, preservingtheoriginalbroaderother-classOPENtarget and numericalsolvernegative. No finalID/range/sharedwrite.
+
+
+## Repository-only results summary — proposed new file
+
+Target: `results/padua-proof-attempts-2-20261101.md`
+
+Pinned commit: `28aaa20861d08074b77efc74eaef75cdcb36234d`
+
+Old:
+
+```text
+
+```
+
+New:
+
+```text
+# padua-proof-attempts-2-20261101 — second proof campaign
+
+Stage AUDIT; Claude Opus5.5 xhigh audit PENDING. [Draft PR12](https://github.com/aacchhee/padua_research/pull/12).
+
+- A2 PROVED: requested corner b coefficient, explicit remainder68.
+- A5 PARTIAL: closed-square counts15,27,25,41,50 for n3–7, separate corner-only globals. N8at least44interior proved; exact counts/global OPEN.
+- A4(a) PROVED for precise central envelope: R_cen=Lambda_c−g+o(1), both parities,0.548504986190<g<0.548525055355; all-four-edge formula. Global A4/runner-up OPEN.
+- B3 specified S(alpha) REFUTED on positive n1,p1/10,M4sections: count1/2 versus valid referencecount1 at the required square-root gap. Other counts/reference existence not refuted.
+- B1 PROVED for generic exterior parallel real poles, every fixed admissible sample/finiteT; literal even-count Ldiag taper except finitely many parameters. Other classes/fixed parameters/stability OPEN.
+
+[Full report, proofs and evidence](../topics/padua-proof-attempts-2-20261101/report.md).
+Next: Claude (Opus 5.5 xhigh): Audit codex/padua-proof-attempts-2-20261101. Only AC merges.
+```
+
+Validation: target ABSENT in the pinned tree; Old is literal empty new-file content. This is a proposal inside the topic, not an outside-topic write. No root RESULTS.md section is applied; later application belongs to authorized integration.

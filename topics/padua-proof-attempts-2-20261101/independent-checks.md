@@ -2,15 +2,17 @@
 
 Required Claude audit: **PENDING**. Independent Codex subagent checks supplement it.
 
+This index retains chronological checkpoints. The final A5/A4/B3/B1 sections below and [report.md](report.md) state the current completed scope; earlier planning/running statements are historical.
+
 ## A2
 
 - Independent mathematical reconstruction: `/root/a2_independent_route`, requested gpt-6.1-sol xhigh. Read/reconstructed every section of comparison theory04 and independently supplied the elementary one-dimensional asymptotic. Hash-pinned scope and limitations: [independent-checks-a2.md](independent-checks-a2.md). No executed mathematical computation is claimed by that agent.
 - Actual independent executions: `/root/input_manifest`, requested gpt-6.1-sol medium, independently ran code/a2_exact_check.py and code/a2_sanity.py into outputs/a2_exact_independent.json and outputs/a2_sanity_independent.json. Both exit0 and are byte-identical to developer outputs. Exact regression:83 kernel terms across n1…6, endpoint/positive-sum/square identities. Diagnostic:67 degrees2…64 plus128,256,512,1024; MEASURED only. Exact commands, code/output identities, versions and scope: [independent-execution-a2.md](independent-execution-a2.md).
 - Root inspected the complete analytic proof files and both scripts/receipts. No numerical fit supplies the proof. The theoretical claims have written all-n proofs; these finite diagnostics do not certify unrelated targets.
 
-## Future A4(a) / B3 / B1
+## Historical planning checkpoint: A4(a) / B3 / B1
 
-These ordered targets have not started or been submitted for independent execution. Every consequential exact/interval computation needs a different subagent's actual replay and own output. A5 also requires a separate checker that verifies the produced certificate without rerunning the search.
+At this earlier checkpoint these ordered targets had not started or been submitted for independent execution. Every consequential exact/interval computation needs a different subagent's actual replay and own output. A5 also requires a separate checker that verifies the produced certificate without rerunning the search.
 
 ## A5 n=3 complete
 
@@ -40,7 +42,7 @@ These ordered targets have not started or been submitted for independent executi
 - /root/input_manifest (gpt-6.1-sol medium) actually regenerated all cones/count/global data, checked its own matching pair, then sequentially ran38controls on the developer pair; their positive invokes full count/global verification. Both143resource interruptions are explicitly not passes. All8source hashes unchanged; mathematical payloads agree after only documented timings/raw binding. Completed commands/results/identities: independent-execution-a5-n6.md.
 - Root reconstructed global42's non-strict cases, inspected actual coverage/value flags and evidence sizes. Count41/global42 are PROVED; n7/n8 remain OPEN pending full evidence. Required Claude audit PENDING.
 
-## A5 n7/n8 ongoing verification and degree-eight supporting reflection
+## Historical checkpoint: A5 n7/n8 ongoing verification and degree-eight supporting reflection
 
 - N7 complete producer payloads agree after only phase timers; all final full checks are still RUNNING at this checkpoint. No count/global status upgrade is inferred from leaf progress.
 - N8 original V3 caps are incomplete. Actual different-agent continuation controls passed40negative+7positive cases, byte-identically; each continuation runs only on its OWN capped producer data. Full count/global checks remain pending.

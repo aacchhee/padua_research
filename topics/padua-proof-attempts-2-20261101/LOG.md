@@ -1,7 +1,7 @@
 # Second proof attempts on programme-ideas open targets
 
 - Branch: `codex/padua-proof-attempts-2-20261101` · Base: `a09d910ae7d5526b1e216066421a0bee7fc20da4` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh), PENDING.
-- Stage: WORK · Next: `Codex (gpt-6.1-sol xhigh): Continue codex/padua-proof-attempts-2-20261101.`
+- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Audit codex/padua-proof-attempts-2-20261101.`
 - Claims: A2(i)–(iii) PROVED in theory01–03, support04. A5 n=3,4,5,6,7 counts PROVED in06/10/16/41/51, global argmax07/11/17/42/52, supporting05/08/09/15/18/19/40/50/53; n=8 exact closed count/global OPEN, supporting60/63 and PROVED standalone lower bound64 (at least44strict interior maxima); whole-interior65 OPEN after deadline failures. A4(a) stoppedDONE16:13:22UTC for the exact central-envelope formulation: all-edge70, point/constant71–73, phase/defect74–76 and envelope77PROVED. Historical/global runner-up identification and full-square A4 remainOPEN. B3 stoppedDONE16:34:25UTC: computed-section count robustness REFUTED by scopednegativeN01, support80/C1routefailureN02PROVED. B1stoppedDONE16:57:37UTC:90–93PROVED for generic exteriorLdiag offsets and source taper outside finiteexceptions. All five ordered targets are at stops; final audit publication preparation remains.
 - PR: draft12, originally against `codex/padua-proof-attempts-20261101`, automatically based on main after AC merged Part1; additions authored under this topic only. Local IDs only; proposed upstream edits remain literal proposals.
 - Open for AC: no development approval needed; Claude audit is a later handoff.
@@ -22,7 +22,7 @@
 ## Runs needed
 
 - Required independent Claude audit at final development head: `Claude (Opus 5.5 xhigh): Audit codex/padua-proof-attempts-2-20261101.`
-- No bridge to AC's computer is exposed. Intended local working-track file: `C:\Users\andreyac\Downloads\padua\results\padua-proof-attempts-2-20261101.md`. Intended entry will contain pinned rules/heads, each final target status, proof/evidence paths, draft PR link, commands and audit prompt. This is an intended entry, not a performed write. Never write RESULTS.md or another topic's file.
+- No bridge to AC's computer is exposed. Intended local working-track file: `C:\Users\andreyac\Downloads\padua\results\padua-proof-attempts-2-20261101.md`. The concrete final entry is recorded in the section "Concrete intended entry for the explicitly requested Windows file" below, with pinned heads, statuses, proof paths, commands and audit prompt. It is not a performed write. Never write RESULTS.md or another topic's file.
 - Required large evidence, if any, stays in local working storage until AC's Padua cold-storage destination is available; manifest SHA-256, size, command and checker output. Committed outputs ≤1 MB each and ≤5 MB total.
 
 ### Input-change trigger and integration impact (before merge)
@@ -379,3 +379,39 @@ No additionalmathematics/runsareplannedafterthefiveorderedstops. Rootis finalizi
 Five REDUNDANTUNTRACKEDdevelopment artifacts (oldn3interiorpilot and n7raw/gzipduplicates) were MOVEDwithoutoverwrite to temporarylocalworkingdirectory /tmp/padua-proof-attempts-2-local-duplicates. outputs/local_untracked_retention.json recordsoriginalpaths,temporarypaths,SHA256/sizeandverifiedmovement. No trackedartifactwasdeletedorchanged; completeacceptedcertificates/globalpairsandN8standalonewitnessesremaininGit. This is NOTdesignatedcoldstorageorclaimedarchival; AC's actualPadua destination remainsunspecified/unreachable. These duplicates are not essential to verify anyacceptedclaim.
 
 Manifest publication detail: exclude numbered handoff files from the SCIENTIFICOUTPUTindexmanifest, because the mandatory followingpublicationcommit changes01status/adds02AFTER the auditedoutputcandidate is committed. Handoffinstructionbodies/statuses remain Git-pinned and are read at the exactcandidate/publicationSHAs; scientificproofs/code/evidence/otherauthoreddocsremainfullyhashcovered. This avoids a misleading stale output hash after the required handoff-status-only update. Historicalmanifests are preserved in publishedhistory; no artifact isdeleted. The finalmanifest explicitly names this exclusion; its other output identities still use the staged INDEXbytes.
+
+
+### Concrete intended entry for the explicitly requested Windows file
+
+Destination: `C:\Users\andreyac\Downloads\padua\results\padua-proof-attempts-2-20261101.md`. No bridge is exposed; **no write was performed**. The new repository-only rule replaces the generic old procedure; this is the concrete intended entry explicitly requested in this task. Its repository counterpart is proposed inside this topic, without writing RESULTS.md or a root results file.
+
+```markdown
+# Padua second proof campaign — 2026-11-01
+
+Branch: codex/padua-proof-attempts-2-20261101. Stage AUDIT; Claude Opus5.5 xhigh audit PENDING.
+PR: https://github.com/aacchhee/padua_research/pull/12
+Rules:d8b878b348a94575e7753e5a756d969d41d5bca8; main:28aaa20861d08074b77efc74eaef75cdcb36234d.
+Original Part1:a09d910ae7d5526b1e216066421a0bee7fc20da4; programme:9bd14a6d2c4da69139a10107d8a787f2be0c5c9e.
+Exact scientific candidate: Input head SHA in this topic's handoffs/02-audit.md.
+
+- A2 PROVED: requested b coefficient and absolute remainder<=68; theory03/support01/02/04.
+- A5 PARTIAL: n3–7 closed counts15,27,25,41,50; proofs06/10/16/41/51 and globals07/11/17/42/52. N8lower64proves>=44interior; exact65/closed61/global62OPEN after deadline.
+- A4(a) PROVED central-envelope expansion, both parities,0.548504986190<g<0.548525055355;70–77. Full-square A4/global runner-up OPEN.
+- B3 REFUTED specified S(alpha): negative01positive n1p1/10M4sections give n_box1/2 versus valid referencecount1, gap>=sqrt(delta)/10 for ALL0<t<=1e−6. Positive80/scopedclusterfailure negative02 retained.
+- B1 PROVED generic exterior parallel poles for every fixed admissible sample/finiteT:90–92. Literal even-count source taper except finitely many parameters:93. Other classes/fixed parameters/stability OPEN.
+
+All records are under topics/padua-proof-attempts-2-20261101/. Full index:report.md; provenance:evidence-manifest.json; actual independent executions:independent-checks.md and case receipts.
+Provenance command: python -B topics/padua-proof-attempts-2-20261101/code/evidence_manifest.py (stage durable files first; see index-snapshot convention).
+No unfinished N8 process is a pass. No final IDs/shared edits/RESULTS.md write/tag/force push/PR merge. Only AC merges.
+Next: Claude (Opus 5.5 xhigh): Audit codex/padua-proof-attempts-2-20261101.
+```
+
+### Final development publication
+
+All mathematics is at its recorded stop. Stage **AUDIT**; required Claude audit **PENDING**. [report.md](report.md) indexes exact claims, proof paths and limits. Literal proposals preserve original text/routes, including the absent-file results proposal. Optional B4/B7 were not developed.
+
+The audit input is the exact final output commit. In a FOLLOWING commit root changes only01's status to `done in OUTPUT_SHA` and adds `handoffs/02-audit.md` with that exact candidate, scope and commands. Instruction body01 is never rewritten. This publication metadata is excluded from the scientific output manifest; every candidate proof/code/evidence/report/proposal identity remains covered.
+
+Final mechanical preflight actually passed: all 294 pinned input blob/SHA256/size identities and 378 indexed output SHA256/size identities; complete declared output coverage; ten literal proposals checked against their exact pins (including the absent-file proposal); no broken local Markdown links. All 40 authored first-parent non-merge commits through77298f8 have the required author and Agent/Model trailers and modify only this topic. Outside-topic blobs equal current main28aaa20. Handoff01 remains open with its original instruction body byte-for-byte intact. Generated evidence is below5,000,000 bytes total and1,000,000 bytes per file; largest637163 bytes. This is a provenance/scope check, not another scientific execution or Claude audit.
+
+The remote main and draft PR12 head were checked again before final publication: main28aaa20861d08074b77efc74eaef75cdcb36234d, topic77298f8abfc322434036d887dec05554c7a056e0, PR open/draft/unmerged and base main. No new input/rule change requires integration. Root will regenerate the staged-index manifest after this administrative entry, commit outputs, then publish02 in the following commit. The sole next step is `handoffs/02-audit.md`, whose input SHA identifies that scientific candidate; it is published immediately after the candidate, not part of its output hash coverage.
