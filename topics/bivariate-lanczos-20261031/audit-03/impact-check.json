@@ -1,0 +1,127 @@
+{
+  "base": "4470ab4857050b3acab114ddcbffc8996d4f2d88",
+  "candidate": "aea01283ad49d9a4527df727ad386c5f671933ee",
+  "published_response": "63ffc67f8bc60bd30abcd94769b6aa1d1e783d88",
+  "main_at_verification": "9739a0c56b7a3976422ce60a8441bfbbfd6554df",
+  "map_entries": 6,
+  "changed_paths": [
+    "topics/bivariate-lanczos-20261031/LOG.md",
+    "topics/bivariate-lanczos-20261031/progress.md",
+    "topics/bivariate-lanczos-20261031/report.md",
+    "topics/bivariate-lanczos-20261031/response-02.md",
+    "tracks/bivariate-lanczos/code/L5/analyze_r01d.py",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-302-backward-reduction-moment-cone.md",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-318-first-order-commutator-formula.md",
+    "tracks/bivariate-lanczos/theory/product-measure-computed-propagator-transfer-conditional.md",
+    "tracks/bivariate-lanczos/theory/reference-free-span-drift-lower-bound.md"
+  ],
+  "map": [
+    {
+      "path": "tracks/bivariate-lanczos/theory/product-measure-computed-propagator-transfer-conditional.md",
+      "finding": "A2-L1",
+      "sha256": "4dcbb80b2d4dc5db52b9797f800b8cd5456235747fefe31a84f88ec998f7c8ed",
+      "declared_matches": true,
+      "worktree_matches_candidate": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/reference-free-span-drift-lower-bound.md",
+      "finding": "A2-L2, A2-L3",
+      "sha256": "f340d34b6218999ce2e79d09486a5b0dc003bd8c9a7b3dfd502042d1e0387c22",
+      "declared_matches": true,
+      "worktree_matches_candidate": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-318-first-order-commutator-formula.md",
+      "finding": "A2-L4",
+      "sha256": "5536df5102e140e357c4d8a5eb65c2569bd1473ad8d0e2a9440816745ab29944",
+      "declared_matches": true,
+      "worktree_matches_candidate": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-302-backward-reduction-moment-cone.md",
+      "finding": "editorial (L3-conventions)",
+      "sha256": "2ced66143693b295a8ffd0a6de718866ee6c0cafd36ea82841cdcd5fbb490e69",
+      "declared_matches": true,
+      "worktree_matches_candidate": true
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/report.md",
+      "finding": "editorial (L2)",
+      "sha256": "274311771d0635dd7e2265d851b0b99c41ec4e0415e028434872c4ab955f5d5e",
+      "declared_matches": true,
+      "worktree_matches_candidate": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L5/analyze_r01d.py",
+      "finding": "editorial (L5), output unchanged",
+      "sha256": "7ae447d2520f6626d0b4aa20128e4a66787c5736e72b1357595ccc185b8c614c",
+      "declared_matches": true,
+      "worktree_matches_candidate": true
+    }
+  ],
+  "unlisted_changes": [],
+  "listed_but_unchanged": [],
+  "publication_delta": [
+    "topics/bivariate-lanczos-20261031/LOG.md",
+    "topics/bivariate-lanczos-20261031/response-02.md"
+  ],
+  "publication_delta_interpretation": "Only LOG and the explicit response candidate-SHA pin; inspected metadata-only diff.",
+  "theory_files": 77,
+  "changed_theory_files": 4,
+  "unchanged_theory_files": 73,
+  "status_checks": [
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-302-backward-reduction-moment-cone.md",
+      "before": "Overall status: PROVED.",
+      "after": "Overall status: PROVED.",
+      "unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-318-first-order-commutator-formula.md",
+      "before": "Overall status: PROVED.",
+      "after": "Overall status: PROVED.",
+      "unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/product-measure-computed-propagator-transfer-conditional.md",
+      "before": "Overall status: CONDITIONAL.",
+      "after": "Overall status: CONDITIONAL.",
+      "unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/reference-free-span-drift-lower-bound.md",
+      "before": "Overall status: PROVED.",
+      "after": "Overall status: PROVED.",
+      "unchanged": true
+    }
+  ],
+  "frozen_audit_changes": [],
+  "prior_artifacts": [
+    {
+      "audit": "audit-01",
+      "artifacts": 80,
+      "all_match": true
+    },
+    {
+      "audit": "audit-02",
+      "artifacts": 50,
+      "all_match": true
+    }
+  ],
+  "code_changes": [
+    "tracks/bivariate-lanczos/code/L5/analyze_r01d.py"
+  ],
+  "l5_ast_unchanged_except_module_docstring": true,
+  "l5_rerun_matches_committed_output": true,
+  "l5_output_sha256": "d295f49b523ea0d81f8cee017186ce7e615d66bbf38fa917bce1aa1a36ff8604",
+  "reused_rules_registry_and_splits_unchanged": {
+    "AGENTS.md": true,
+    "agents/WORKFLOW.md": true,
+    "agents/codex/CODEX.md": true,
+    "state/IDEAS.md": true,
+    "literature/INDEX.md": true,
+    "literature/CORPUS.md": true,
+    "topics/bivariate-lanczos-20261031/SPLITS.md": true
+  },
+  "pass": true
+}
