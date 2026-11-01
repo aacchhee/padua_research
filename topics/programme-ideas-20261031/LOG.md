@@ -1,7 +1,7 @@
 # Programme-scale research directions (ideas campaign)
 
 - Branch: `claude/programme-ideas-20261031` · Base: `d36722823441dc40c6e19d69a174459348dd309c` (= `origin/main` at start) · Developer: Claude · Auditor: Codex (`gpt-6-astra`)
-- Stage: WORK — Codex audit-02 accepts the restricted mathematical registrations but requires canonical-record and proof-target corrections (B1–B4). Next: `Claude (Opus 5.5 xhigh): Continue claude/programme-ideas-20261031 — answer audit-02 B1–B4 in response-02.md.`
+- Stage: AUDIT — response-02 to Codex audit-02 (B1–B4) submitted for focused review. Next: `Codex (gpt-6-astra high): Focused review of claude/programme-ideas-20261031 response-02 (audit-02 B1–B4) at the recorded head.`
 - Submitted claims at `614709d`: no PD-T; 0 programmes, 1 project proposal (`proposal-1.md`, gen4-2), 19 candidates refuted/equivalent/abandoned/deferred (`gate-rejected.md`); 20 IDEA records (`ideas/candidates.md`); by-products in `report.md` §3. Audit-01 preserves finite measured evidence but rejects certification, several universal/negative claims and status/provenance overreach. The project is provisional; no certified replacement table or final PD-N is accepted.
 - For the PR: the rule amendment below (material rule change, to be audited by Codex); provisional `LIT?programme-ideas-claude-NN` and `IDEA?programme-ideas-claude-NN` records; allocations through the shared ledger `topics/padua-batch-20261031/ALLOCATIONS.md`.
 - Response-01 (2026-11-01, claude-opus-5-5): all of A1–A9 accepted; eight THEORY records added in `theory/` (PD-T?programme-ideas-claude-01…06, PD-N?programme-ideas-claude-01, 02); scope corrections inline in the evidence files and in the summaries; campaign inputs pinned in `sources/campaign-inputs/`. See `response-01.md`.
@@ -132,6 +132,12 @@ Subagents are launched as background `general-purpose` agents on `claude-fable-5
 - Provenance/registration repair: all 159 history-backed sources and five context rows verify; six context checksums, eleven theory records with registry links/statuses, twenty IDEA rows and 111 LIT rows verify. Root fetched the recorded Lanczos input head to check its immutable histories. Private Windows ZIP/PDF bytes were not re-retrieved here; the audited manifest and developer-reported readback retain that explicit access limit. A9.8 is disposed by the logged AC acceptance, without another permission request or rule/history rewrite.
 - New support reports, commands, output/content identities and source pins are in `audit-02-support/`. Root structural receipt and `git diff --check` pass. Original audits/checkers, developer sources and shared registries remain intact. Draft PR #6 is updated for this handoff; no final-ID allocation, readiness or merge is claimed.
 - Next: Claude answers B1–B4 in `response-02.md`, preserves accepted scopes and both audit records, and returns an exact SHA for focused review. B1/B2 need record corrections, not new numerical campaigns. Only AC merges.
+
+## 2026-11-01 — Claude, developer response-02 (claude-opus-5-5; effort not exposed); Stage AUDIT
+
+- Rules read at `39c5ae6` (unchanged rule files plus the merged local-results rule); main `9739a0c` already an ancestor.
+- `response-02.md`: B1–B4 accepted. B1/B2 canonical remnants in IDEA-17, IDEA-10 and `checks/decisive-gen4-2.md` struck or labelled historical; B3 rewritten with explicit classes, metric, gap, reference neighbourhood and constant dependence; B4.1–B4.7 scope, definition and done-criterion fixes in N03, N05, PD-T01, `OPEN_TARGETS.md` and the registry rows. No status changed; no expensive rerun.
+- New exact check: `checks/code/response-02/ritz_saturated_centre.py/.out` (saturated centre, s = 1, residuals 0; SymPy 1.14.0).
 
 ## Runs needed
 
