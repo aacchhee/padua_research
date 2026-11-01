@@ -1,0 +1,31 @@
+{
+ "verifier": "claude-audit-01 independent n8 witness verifier (no repo imports)",
+ "input": "/home/claude/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_n8_interior_witnesses.json",
+ "input_sha256": "ca5648106a89982995232c5555e2bfab62e0a395a743d76aa7e07835e74c30d1",
+ "python": "3.13.18",
+ "python_flint": "0.9.0",
+ "prec_bits": 320,
+ "convention": "nodes (cos(j pi/8), cos(k pi/9)), j+k even, lexicographic (j,k); mask bit i set <=> s_i=+1",
+ "vandermonde_inverse_contains_identity": true,
+ "formula_vs_vandermonde_all_coefficients_overlap": true,
+ "partition_of_unity_coefficients": true,
+ "max_cardinal_coefficient_radius": 5.77354419267722e-91,
+ "supplied_embedding_check": {
+  "a_interval_contains_2cos(pi/8)": true,
+  "b_interval_contains_2cos(pi/9)": true
+ },
+ "n_records": 44,
+ "ids_unique": true,
+ "v_pairwise_disjoint": true,
+ "overlapping_pairs": [],
+ "n_records_all_predicates_ok": 44,
+ "independently_confirmed_lower_bound": 44,
+ "supplied_metadata_ignored": {
+  "observed_lower_bound": 44,
+  "lower_bound_certified": true,
+  "completeness_certified": false,
+  "global_maximum_certified": false,
+  "scope": "at least the observed number of distinct strict local maxima in the OPEN physical square; no completeness, edge/corner or global claim"
+ },
+ "seconds": 0.8917088508605957
+}

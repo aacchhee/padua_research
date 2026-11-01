@@ -1,0 +1,87 @@
+{
+  "FLINT": "3.6.0",
+  "elapsed_seconds": 1.71192,
+  "ground_types": "flint",
+  "imported_source_sha256_after": "13e8c524c4c21701bdee2a009cda2245d8f289d6a6cca0dba19afec1842f872e",
+  "imported_source_sha256_before": "13e8c524c4c21701bdee2a009cda2245d8f289d6a6cca0dba19afec1842f872e",
+  "python": "3.13.18",
+  "python_flint": "0.9.0",
+  "results": [
+    {
+      "all_equalities_exact": true,
+      "complementary_points": 1,
+      "endpoint_actual_n_minus_1_formal_1": true,
+      "n": 1,
+      "nodes": 3,
+      "rational_plus_2_over_N_normalization_exact": true,
+      "regular_cardinal_identities": 2,
+      "unique_endpoint_checks": 1,
+      "weighted_raw_E_multiset_distinct_entries": 3,
+      "weighted_raw_E_multisets_exact": true
+    },
+    {
+      "all_equalities_exact": true,
+      "complementary_points": 2,
+      "endpoint_actual_n_minus_1_formal_1": true,
+      "n": 2,
+      "nodes": 6,
+      "rational_plus_2_over_N_normalization_exact": true,
+      "regular_cardinal_identities": 10,
+      "unique_endpoint_checks": 2,
+      "weighted_raw_E_multiset_distinct_entries": 10,
+      "weighted_raw_E_multisets_exact": true
+    },
+    {
+      "all_equalities_exact": true,
+      "complementary_points": 3,
+      "endpoint_actual_n_minus_1_formal_1": true,
+      "n": 3,
+      "nodes": 10,
+      "rational_plus_2_over_N_normalization_exact": true,
+      "regular_cardinal_identities": 27,
+      "unique_endpoint_checks": 3,
+      "weighted_raw_E_multiset_distinct_entries": 24,
+      "weighted_raw_E_multisets_exact": true
+    },
+    {
+      "all_equalities_exact": true,
+      "complementary_points": 4,
+      "endpoint_actual_n_minus_1_formal_1": true,
+      "n": 4,
+      "nodes": 15,
+      "rational_plus_2_over_N_normalization_exact": true,
+      "regular_cardinal_identities": 56,
+      "unique_endpoint_checks": 4,
+      "weighted_raw_E_multiset_distinct_entries": 48,
+      "weighted_raw_E_multisets_exact": true
+    },
+    {
+      "all_equalities_exact": true,
+      "complementary_points": 5,
+      "endpoint_actual_n_minus_1_formal_1": true,
+      "n": 5,
+      "nodes": 21,
+      "rational_plus_2_over_N_normalization_exact": true,
+      "regular_cardinal_identities": 100,
+      "unique_endpoint_checks": 5,
+      "weighted_raw_E_multiset_distinct_entries": 85,
+      "weighted_raw_E_multisets_exact": true
+    },
+    {
+      "all_equalities_exact": true,
+      "complementary_points": 6,
+      "endpoint_actual_n_minus_1_formal_1": true,
+      "n": 6,
+      "nodes": 28,
+      "rational_plus_2_over_N_normalization_exact": true,
+      "regular_cardinal_identities": 162,
+      "unique_endpoint_checks": 6,
+      "weighted_raw_E_multiset_distinct_entries": 138,
+      "weighted_raw_E_multisets_exact": true
+    }
+  ],
+  "scope": "finite n=1,...,6 complementary vertical-edge points; no absolute-value gap sum or asymptotic/global assertion",
+  "source_sha256_after": "978bf8e00e09f4671d36d9de0e3c8dae531d34491ed7cdec1741aa6542032fca",
+  "source_sha256_before": "978bf8e00e09f4671d36d9de0e3c8dae531d34491ed7cdec1741aa6542032fca",
+  "sympy": "1.14.0"
+}

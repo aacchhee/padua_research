@@ -1,0 +1,192 @@
+{
+ "all_probes_passed": true,
+ "probes": [
+  {
+   "name": "partition_missing_subtree",
+   "rejected": true,
+   "reason": "incomplete"
+  },
+  {
+   "name": "partition_prefix_overlap",
+   "rejected": true,
+   "reason": "leaf paths are not prefix-free"
+  },
+  {
+   "name": "partition_duplicate",
+   "rejected": true,
+   "reason": "duplicate leaf path"
+  },
+  {
+   "name": "partition_complete_uneven",
+   "accepted": true
+  },
+  {
+   "name": "sturm_good_partition",
+   "accepted": true
+  },
+  {
+   "name": "sturm_omitted_root",
+   "rejected": true,
+   "reason": "root partition omits real roots"
+  },
+  {
+   "name": "sturm_two_roots_one_interval",
+   "rejected": true,
+   "reason": "root interval does not contain exactly one root"
+  },
+  {
+   "name": "sturm_touching_intervals",
+   "rejected": true,
+   "reason": "root intervals not strictly disjoint/ordered"
+  },
+  {
+   "name": "sturm_root_endpoint",
+   "rejected": true,
+   "reason": "non-singleton root interval has root endpoint"
+  },
+  {
+   "name": "sturm_false_singleton",
+   "rejected": true,
+   "reason": "singleton is not an exact rational root"
+  },
+  {
+   "name": "outward_interval_rounding_random",
+   "accepted": true,
+   "cases": 4000
+  },
+  {
+   "name": "all_13_root_records_verified",
+   "accepted": true,
+   "roots": 13
+  },
+  {
+   "name": "sample_leaves_verified",
+   "accepted": true,
+   "leaves": 33
+  },
+  {
+   "name": "root_record_relabelled_gradient",
+   "rejected": true,
+   "reason": "gradient not separated from zero"
+  },
+  {
+   "name": "root_record_relabelled_hessian",
+   "rejected": true,
+   "reason": "no strict positive-curvature/negative-determinant exclusion"
+  },
+  {
+   "name": "root_record_relabelled_flat",
+   "rejected": true,
+   "reason": "false flat witness"
+  },
+  {
+   "name": "root_reference_to_other_root",
+   "rejected": true,
+   "reason": "root mask mismatch"
+  },
+  {
+   "name": "root_hull_not_covering_root_box",
+   "rejected": true,
+   "reason": "root U containment failed"
+  },
+  {
+   "name": "root_hull_enlarged_but_valid",
+   "accepted": true
+  },
+  {
+   "name": "root_hull_whole_square_injectivity_fails",
+   "rejected": true,
+   "reason": "injectivity norm is not strictly below one"
+  },
+  {
+   "name": "unknown_disposition_code",
+   "rejected": true,
+   "reason": "unknown or unresolved disposition: unresolved"
+  },
+  {
+   "name": "leaf_one_compatible_mask_missing",
+   "rejected": true,
+   "reason": "compatible sign patterns missing, duplicated, reordered, or extraneous at 00000000011"
+  },
+  {
+   "name": "leaf_extraneous_mask_record",
+   "rejected": true,
+   "reason": "compatible sign patterns missing, duplicated, reordered, or extraneous at 00000000011"
+  },
+  {
+   "name": "leaf_patterns_moved_to_parent_box",
+   "rejected": true,
+   "reason": "compatible sign patterns missing, duplicated, reordered, or extraneous at 0000000001"
+  },
+  {
+   "name": "actual_partition_complete",
+   "accepted": true
+  },
+  {
+   "name": "actual_partition_minus_one_leaf",
+   "rejected": true,
+   "reason": "incomplete"
+  },
+  {
+   "name": "root_box_shifted_off_root",
+   "rejected": true,
+   "reason": "Krawczyk inclusion failed"
+  },
+  {
+   "name": "root_box_wrong_mask",
+   "rejected": true,
+   "reason": "Krawczyk inclusion failed"
+  },
+  {
+   "name": "root_identity_preconditioner",
+   "rejected": true,
+   "reason": "injectivity norm is not strictly below one"
+  },
+  {
+   "name": "root_box_shrunk_to_miss_root",
+   "rejected": true,
+   "reason": "Krawczyk inclusion failed"
+  },
+  {
+   "name": "duplicate_root_overlapping_box",
+   "rejected": true,
+   "reason": "root boxes are not disjoint"
+  },
+  {
+   "name": "edge_sample_moved_into_norm_root_interval",
+   "rejected": true,
+   "reason": "missing exterior gap sample"
+  },
+  {
+   "name": "edge_one_sign_pattern_omitted",
+   "rejected": true,
+   "reason": "edge sign-pattern coverage mismatch"
+  },
+  {
+   "name": "edge_accepted_root_relabelled_minimum",
+   "rejected": true,
+   "reason": "edge positive-curvature witness not strict"
+  },
+  {
+   "name": "edge_accepted_root_relabelled_sign",
+   "rejected": true,
+   "reason": "false edge sign exclusion"
+  },
+  {
+   "name": "edge_accepted_root_relabelled_normal",
+   "rejected": true,
+   "reason": "edge inward ascent not proved"
+  },
+  {
+   "name": "edge_root_id_noncanonical",
+   "rejected": true,
+   "reason": "edge root id not canonical/unique"
+  },
+  {
+   "name": "edge_derivative_root_interval_omitted",
+   "rejected": true,
+   "reason": "root partition omits real roots"
+  }
+ ],
+ "seconds": 198.84
+}

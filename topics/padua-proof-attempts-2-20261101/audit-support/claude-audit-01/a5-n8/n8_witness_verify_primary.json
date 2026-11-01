@@ -1,0 +1,1133 @@
+{
+ "verifier": "claude-audit-01 independent n8 witness verifier (no repo imports)",
+ "input": "/home/claude/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_n8_interior_witnesses.json",
+ "input_sha256": "ca5648106a89982995232c5555e2bfab62e0a395a743d76aa7e07835e74c30d1",
+ "python": "3.13.18",
+ "python_flint": "0.9.0",
+ "prec_bits": 320,
+ "convention": "nodes (cos(j pi/8), cos(k pi/9)), j+k even, lexicographic (j,k); mask bit i set <=> s_i=+1",
+ "vandermonde_inverse_contains_identity": true,
+ "formula_vs_vandermonde_all_coefficients_overlap": true,
+ "partition_of_unity_coefficients": true,
+ "max_cardinal_coefficient_radius": 5.77354419267722e-91,
+ "supplied_embedding_check": {
+  "a_interval_contains_2cos(pi/8)": true,
+  "b_interval_contains_2cos(pi/9)": true
+ },
+ "n_records": 44,
+ "ids_unique": true,
+ "v_pairwise_disjoint": true,
+ "overlapping_pairs": [],
+ "n_records_all_predicates_ok": 44,
+ "independently_confirmed_lower_bound": 44,
+ "supplied_metadata_ignored": {
+  "observed_lower_bound": 44,
+  "lower_bound_certified": true,
+  "completeness_certified": false,
+  "global_maximum_certified": false,
+  "scope": "at least the observed number of distinct strict local maxima in the OPEN physical square; no completeness, edge/corner or global claim"
+ },
+ "records": [
+  {
+   "id": 0,
+   "mask": "19740971102332",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 1.977355247595458e-08,
+   "ii_K_rel_margin": 0.9999999802264474,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -413.2294259905042,
+   "iii_det_lower": 261219.66165422808,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.00014077515057126175,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.241441219834216,
+    4.2414412198342175
+   ],
+   "centre": [
+    -0.9026071811062837,
+    -0.921099719743745
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 1,
+   "mask": "19740971102268",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 2.1080780426840917e-08,
+   "ii_K_rel_margin": 0.9999999789192195,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -405.2997745426733,
+   "iii_det_lower": 251994.56947575032,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 1.058239223498814e-05,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.2413099413641495,
+    4.24130994136415
+   ],
+   "centre": [
+    -0.9017431592510664,
+    -0.9211299774291374
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 2,
+   "mask": "8005019904901",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 3.3901336165403917e-09,
+   "ii_K_rel_margin": 0.9999999966098664,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -123.39545916690275,
+   "iii_det_lower": 22920.788092988558,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.000454320063690494,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.187050511286221,
+    4.187050511286221
+   ],
+   "centre": [
+    -0.6861697395311712,
+    -0.743217987006269
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 3,
+   "mask": "25597205949317",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 3.799276758215814e-09,
+   "ii_K_rel_margin": 0.9999999962007232,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -129.88599865198674,
+   "iii_det_lower": 23391.77665762613,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 2.7174646873342768e-05,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.180269624776955,
+    4.180269624776955
+   ],
+   "centre": [
+    -0.6728661283033266,
+    -0.7503578854008524
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 4,
+   "mask": "25597273058181",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 3.94282683021871e-09,
+   "ii_K_rel_margin": 0.9999999960571732,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -126.86147919372547,
+   "iii_det_lower": 22438.740832731524,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.00030321023846771497,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.180541170411584,
+    4.180541170411584
+   ],
+   "centre": [
+    -0.6735281163993742,
+    -0.7521879427994069
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 5,
+   "mask": "9870501921017",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 1.2482408554481336e-08,
+   "ii_K_rel_margin": 0.9999999875175914,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -394.66056179444723,
+   "iii_det_lower": 39331.392020593164,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.0015872063683809376,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.058207623029515,
+    4.058207623029516
+   ],
+   "centre": [
+    -0.8999303667264126,
+    -0.47470385944036125
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 6,
+   "mask": "21062136305450",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 2.452135824688312e-09,
+   "ii_K_rel_margin": 0.9999999975478642,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -125.04542118275991,
+   "iii_det_lower": 9699.510815697795,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.0019146702190641154,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.266409758671793,
+    4.266409758671794
+   ],
+   "centre": [
+    -0.6749093501588838,
+    -0.16395350480667284
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 7,
+   "mask": "18917171060856",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 1.4994729476743712e-08,
+   "ii_K_rel_margin": 0.9999999850052704,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -71.90100699517923,
+   "iii_det_lower": 42380.81314798757,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.001720150388452497,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.036264925546877,
+    4.036264925546877
+   ],
+   "centre": [
+    -0.3491331235217688,
+    -0.9183879126180982
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 8,
+   "mask": "13858762224822",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 1.7252520174201175e-09,
+   "ii_K_rel_margin": 0.999999998274748,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -73.93380668747679,
+   "iii_det_lower": 7555.756681951332,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.004934169344984155,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.322861721724429,
+    4.322861721724429
+   ],
+   "centre": [
+    -0.3598850336409809,
+    -0.4930954803436411
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 9,
+   "mask": "13062369449867",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 3.5028529729043932e-09,
+   "ii_K_rel_margin": 0.999999996497147,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -62.02331093131775,
+   "iii_det_lower": 11663.820213372172,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.003193355562045875,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.243432276018911,
+    4.243432276018911
+   ],
+   "centre": [
+    0.0,
+    -0.7494897676585769
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 10,
+   "mask": "19192260774353",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 1.2267928812571827e-09,
+   "ii_K_rel_margin": 0.9999999987732071,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -59.952264216037676,
+   "iii_det_lower": 4635.532726587754,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.004609425669373706,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.217590235405026,
+    4.217590235405026
+   ],
+   "centre": [
+    -2.0526832973508063e-48,
+    -0.1853128861754232
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 11,
+   "mask": "5468347762131",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 1.242519449937314e-08,
+   "ii_K_rel_margin": 0.9999999875748055,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -406.5066895528074,
+   "iii_det_lower": 31459.269475647965,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.00011582386033596534,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.150732512358874,
+    4.150732512358875
+   ],
+   "centre": [
+    -0.8994897768030925,
+    0.15563888947992702
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 12,
+   "mask": "5468347516371",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 1.1626475733550468e-08,
+   "ii_K_rel_margin": 0.9999999883735242,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -398.3532877202876,
+   "iii_det_lower": 30235.086971208206,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.006059940068196436,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.163799895125505,
+    4.163799895125506
+   ],
+   "centre": [
+    -0.8973216355662768,
+    0.17418650770319508
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 13,
+   "mask": "27589084962932",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 3.5880396076146126e-09,
+   "ii_K_rel_margin": 0.9999999964119604,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -117.63704622295944,
+   "iii_det_lower": 12021.326096639783,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.0006087941636862309,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.11411209872681,
+    4.11411209872681
+   ],
+   "centre": [
+    -0.6876042394708356,
+    0.464415435216962
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 14,
+   "mask": "27590158704756",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 3.4530129385153263e-09,
+   "ii_K_rel_margin": 0.999999996546987,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -121.39173257471913,
+   "iii_det_lower": 12412.644214374286,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.0009338644264707034,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.1144708305400135,
+    4.114470830540014
+   ],
+   "centre": [
+    -0.6833973109616431,
+    0.46728929305217587
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 15,
+   "mask": "2716977729415",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 1.374597783472195e-08,
+   "ii_K_rel_margin": 0.9999999862540221,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -375.71187874461333,
+   "iii_det_lower": 67345.64579269088,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 1.548539976713101e-05,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    3.8725619507646263,
+    3.8725619507646267
+   ],
+   "centre": [
+    -0.9028728903238737,
+    0.7309600461964467
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 16,
+   "mask": "3266733543303",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 1.3841730789332374e-08,
+   "ii_K_rel_margin": 0.9999999861582691,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -379.52040435521354,
+   "iii_det_lower": 68331.19498803656,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 7.330035392758383e-05,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    3.8726387471349915,
+    3.8726387471349923
+   ],
+   "centre": [
+    -0.903364324445639,
+    0.7317971156160095
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 17,
+   "mask": "3267270414215",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 1.3940314227186418e-08,
+   "ii_K_rel_margin": 0.9999999860596858,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -386.74427307805985,
+   "iii_det_lower": 70284.14122986303,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.0002367338344249315,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    3.8728042321832503,
+    3.8728042321832508
+   ],
+   "centre": [
+    -0.9042116660952583,
+    0.7331860300952375
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 18,
+   "mask": "15993984377080",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 1.7028452791931215e-08,
+   "ii_K_rel_margin": 0.9999999829715471,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -134.4144028619413,
+   "iii_det_lower": 79353.66701125792,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.0013566700928709452,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.078541082685142,
+    4.078541082685143
+   ],
+   "centre": [
+    -0.6594780343309863,
+    0.9219420805698869
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 19,
+   "mask": "4268975841520",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 3.081170009411327e-08,
+   "ii_K_rel_margin": 0.9999999691882998,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -149.01268203617857,
+   "iii_det_lower": 28774.815251395106,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.0010389777638266403,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    3.125135976314583,
+    3.1251359763145836
+   ],
+   "centre": [
+    -0.5578335958474371,
+    0.9826269308066167
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 20,
+   "mask": "16258049555277",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 1.7727537701683893e-09,
+   "ii_K_rel_margin": 0.9999999982272463,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -70.58161004759597,
+   "iii_det_lower": 5388.987333222439,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.0003153472213491258,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.177679519012,
+    4.177679519012
+   ],
+   "centre": [
+    -0.38078967688395027,
+    0.15956027092136127
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 21,
+   "mask": "19990471861426",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 1.321275981914984e-09,
+   "ii_K_rel_margin": 0.999999998678724,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -65.54634721272286,
+   "iii_det_lower": 7006.856579787063,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.0015953154462700488,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.418776978976095,
+    4.418776978976095
+   ],
+   "centre": [
+    1.3684555315672042e-48,
+    0.4909006732037739
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 22,
+   "mask": "6471142481803",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 3.5304008861279657e-09,
+   "ii_K_rel_margin": 0.9999999964695991,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -74.09069646643508,
+   "iii_det_lower": 13937.443629767553,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.0019003509102016208,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.2528950034618935,
+    4.252895003461894
+   ],
+   "centre": [
+    -0.3637407427564451,
+    0.7476101620248613
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 23,
+   "mask": "31469417460348",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 1.4134350140499775e-08,
+   "ii_K_rel_margin": 0.9999999858656499,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -58.582940040191765,
+   "iii_det_lower": 34730.24058671001,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.0009660686363311639,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.030684787024403,
+    4.030684787024404
+   ],
+   "centre": [
+    6.842277657836021e-49,
+    0.9173084148514858
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 24,
+   "mask": "30919596656593",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 1.977355247595458e-08,
+   "ii_K_rel_margin": 0.9999999802264474,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -413.2294259905042,
+   "iii_det_lower": 261219.66165422808,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.00014077515057126175,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.241441219834216,
+    4.2414412198342175
+   ],
+   "centre": [
+    0.9026071811062837,
+    -0.921099719743745
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 25,
+   "mask": "30850877179857",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 2.1080780426840917e-08,
+   "ii_K_rel_margin": 0.9999999789192195,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -405.2997745426733,
+   "iii_det_lower": 251994.56947575032,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 1.058239223498814e-05,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.2413099413641495,
+    4.24130994136415
+   ],
+   "centre": [
+    0.9017431592510664,
+    -0.9211299774291374
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 26,
+   "mask": "6471313292551",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 3.3901336165403917e-09,
+   "ii_K_rel_margin": 0.9999999966098664,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -123.39545916690275,
+   "iii_det_lower": 22920.788092988558,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.000454320063690494,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.187050511286221,
+    4.187050511286221
+   ],
+   "centre": [
+    0.6861697395311712,
+    -0.743217987006269
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 27,
+   "mask": "6471313292567",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 3.799276758215814e-09,
+   "ii_K_rel_margin": 0.9999999962007232,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -129.88599865198674,
+   "iii_det_lower": 23391.77665762613,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 2.7174646873342768e-05,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.180269624776955,
+    4.180269624776955
+   ],
+   "centre": [
+    0.6728661283033266,
+    -0.7503578854008524
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 28,
+   "mask": "6471313358103",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 3.94282683021871e-09,
+   "ii_K_rel_margin": 0.9999999960571732,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -126.86147919372547,
+   "iii_det_lower": 22438.740832731524,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.00030321023846771497,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.180541170411584,
+    4.180541170411584
+   ],
+   "centre": [
+    0.6735281163993742,
+    -0.7521879427994069
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 29,
+   "mask": "27745686496232",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 1.2482408554481336e-08,
+   "ii_K_rel_margin": 0.9999999875175914,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -394.66056179444723,
+   "iii_det_lower": 39331.392020593164,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.0015872063683809376,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.058207623029515,
+    4.058207623029516
+   ],
+   "centre": [
+    0.8999303667264126,
+    -0.47470385944036125
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 30,
+   "mask": "11859967769747",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 2.452135824688312e-09,
+   "ii_K_rel_margin": 0.9999999975478642,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -125.04542118275991,
+   "iii_det_lower": 9699.510815697795,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.0019146702190641154,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.266409758671793,
+    4.266409758671794
+   ],
+   "centre": [
+    0.6749093501588838,
+    -0.16395350480667284
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 31,
+   "mask": "26517317862609",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 1.4994729476743712e-08,
+   "ii_K_rel_margin": 0.9999999850052704,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -71.90100699517923,
+   "iii_det_lower": 42380.81314798757,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.001720150388452497,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.036264925546877,
+    4.036264925546877
+   ],
+   "centre": [
+    0.3491331235217688,
+    -0.9183879126180982
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 32,
+   "mask": "24392807459436",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 1.7252520174201175e-09,
+   "ii_K_rel_margin": 0.999999998274748,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -73.93380668747679,
+   "iii_det_lower": 7555.756681951332,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.004934169344984155,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.322861721724429,
+    4.322861721724429
+   ],
+   "centre": [
+    0.3598850336409809,
+    -0.4930954803436411
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 33,
+   "mask": "21373718926308",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 1.242519449937314e-08,
+   "ii_K_rel_margin": 0.9999999875748055,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -406.5066895528074,
+   "iii_det_lower": 31459.269475647965,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.00011582386033596534,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.150732512358874,
+    4.150732512358875
+   ],
+   "centre": [
+    0.8994897768030925,
+    0.15563888947992702
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 34,
+   "mask": "21390630360036",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 1.1626475733550468e-08,
+   "ii_K_rel_margin": 0.9999999883735242,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -398.3532877202876,
+   "iii_det_lower": 30235.086971208206,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.006059940068196436,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.163799895125505,
+    4.163799895125506
+   ],
+   "centre": [
+    0.8973216355662768,
+    0.17418650770319508
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 35,
+   "mask": "22119879899225",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 3.5880396076146126e-09,
+   "ii_K_rel_margin": 0.9999999964119604,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -117.63704622295944,
+   "iii_det_lower": 12021.326096639783,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.0006087941636862309,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.11411209872681,
+    4.11411209872681
+   ],
+   "centre": [
+    0.6876042394708356,
+    0.464415435216962
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 36,
+   "mask": "22119879900249",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 3.4530129385153263e-09,
+   "ii_K_rel_margin": 0.999999996546987,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -121.39173257471913,
+   "iii_det_lower": 12412.644214374286,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.0009338644264707034,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.1144708305400135,
+    4.114470830540014
+   ],
+   "centre": [
+    0.6833973109616431,
+    0.46728929305217587
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 37,
+   "mask": "8662822554082",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 1.374597783472195e-08,
+   "ii_K_rel_margin": 0.9999999862540221,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -375.71187874461333,
+   "iii_det_lower": 67345.64579269088,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 1.548539976713101e-05,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    3.8725619507646263,
+    3.8725619507646267
+   ],
+   "centre": [
+    0.9028728903238737,
+    0.7309600461964467
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 38,
+   "mask": "8662822554594",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 1.3841730789332374e-08,
+   "ii_K_rel_margin": 0.9999999861582691,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -379.52040435521354,
+   "iii_det_lower": 68331.19498803656,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 7.330035392758383e-05,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    3.8726387471349915,
+    3.8726387471349923
+   ],
+   "centre": [
+    0.903364324445639,
+    0.7317971156160095
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 39,
+   "mask": "8662823078882",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 1.3940314227186418e-08,
+   "ii_K_rel_margin": 0.9999999860596858,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -386.74427307805985,
+   "iii_det_lower": 70284.14122986303,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.0002367338344249315,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    3.8728042321832503,
+    3.8728042321832508
+   ],
+   "centre": [
+    0.9042116660952583,
+    0.7331860300952375
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 40,
+   "mask": "26654697635374",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 1.7028452791931215e-08,
+   "ii_K_rel_margin": 0.9999999829715471,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -134.4144028619413,
+   "iii_det_lower": 79353.66701125792,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.0013566700928709452,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.078541082685142,
+    4.078541082685143
+   ],
+   "centre": [
+    0.6594780343309863,
+    0.9219420805698869
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 41,
+   "mask": "17859124961155",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 3.081170009411327e-08,
+   "ii_K_rel_margin": 0.9999999691882998,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -149.01268203617857,
+   "iii_det_lower": 28774.815251395106,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.0010389777638266403,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    3.125135976314583,
+    3.1251359763145836
+   ],
+   "centre": [
+    0.5578335958474371,
+    0.9826269308066167
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 42,
+   "mask": "15202360203054",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 1.7727537701683893e-09,
+   "ii_K_rel_margin": 0.9999999982272463,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -70.58161004759597,
+   "iii_det_lower": 5388.987333222439,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.0003153472213491258,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.177679519012,
+    4.177679519012
+   ],
+   "centre": [
+    0.38078967688395027,
+    0.15956027092136127
+   ],
+   "all_ok": true
+  },
+  {
+   "id": 43,
+   "mask": "13064622287749",
+   "iv_inside_open_square": true,
+   "ii_krawczyk_inclusion": true,
+   "ii_contraction_norm_lt_1": true,
+   "ii_contraction_norm_upper": 3.5304008861279657e-09,
+   "ii_K_rel_margin": 0.9999999964695991,
+   "iii_Hxx_neg": true,
+   "iii_det_pos": true,
+   "iii_Hxx_upper": -74.09069646643508,
+   "iii_det_lower": 13937.443629767553,
+   "i_all_signed_cardinals_positive": true,
+   "i_min_signed_cardinal_lower": 0.0019003509102016208,
+   "i_bisections": 0,
+   "lambda_on_R_enclosure": [
+    4.2528950034618935,
+    4.252895003461894
+   ],
+   "centre": [
+    0.3637407427564451,
+    0.7476101620248613
+   ],
+   "all_ok": true
+  }
+ ],
+ "seconds": 0.8917088508605957
+}

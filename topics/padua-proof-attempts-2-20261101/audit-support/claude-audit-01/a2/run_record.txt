@@ -1,0 +1,3 @@
+audit_a2_formula.py exit=0 elapsed_s=134.530219765
+audit_a2_direct.py 28 exit=0 elapsed_s=51.803760537
+audit_a2_compare.py exit=0 elapsed_s=.278356276

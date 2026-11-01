@@ -1,0 +1,10 @@
+{'i': 1, 'path': 'topics/programme-ideas-20261031/OPEN_TARGETS.md', 'pin': '9bd14a6', 'old_len': 1028, 'at_pin': 1, 'at_main': 1, 'at_head': 1, 'old_in_new': True, 'new_minus_old': 731}
+{'i': 2, 'path': 'topics/programme-ideas-20261031/theory/programme-ideas-claude-04-padua-corner-expansion.md', 'pin': '9bd14a6', 'old_len': 99, 'at_pin': 1, 'at_main': 1, 'at_head': 1, 'old_in_new': True, 'new_minus_old': 304}
+{'i': 3, 'path': 'topics/programme-ideas-20261031/OPEN_TARGETS.md', 'pin': '9bd14a6', 'old_len': 1104, 'at_pin': 1, 'at_main': 1, 'at_head': 1, 'old_in_new': True, 'new_minus_old': 1782}
+{'i': 4, 'path': 'topics/programme-ideas-20261031/theory/programme-ideas-claude-06-padua-lebesgue-maxima-counts.md', 'pin': '806cc7b', 'old_len': 1236, 'at_pin': 1, 'at_main': 1, 'at_head': 1, 'old_in_new': True, 'new_minus_old': 1344}
+{'i': 5, 'path': 'topics/programme-ideas-20261031/theory/programme-ideas-claude-05-padua-corner-argmax.md', 'pin': '9bd14a6', 'old_len': 105, 'at_pin': 1, 'at_main': 1, 'at_head': 1, 'old_in_new': True, 'new_minus_old': 1038}
+{'i': 6, 'path': 'topics/programme-ideas-20261031/OPEN_TARGETS.md', 'pin': 'e0d9e3d', 'old_len': 1012, 'at_pin': 1, 'at_main': 1, 'at_head': 1, 'old_in_new': True, 'new_minus_old': 1758}
+{'i': 7, 'path': 'topics/programme-ideas-20261031/OPEN_TARGETS.md', 'pin': '28aaa20', 'old_len': 805, 'at_pin': 1, 'at_main': 1, 'at_head': 1, 'old_in_new': True, 'new_minus_old': 1003}
+{'i': 8, 'path': 'topics/programme-ideas-20261031/theory/programme-ideas-claude-N01-symmetrised-product-inertia-count.md', 'pin': '28aaa20', 'old_len': 230, 'at_pin': 1, 'at_main': 1, 'at_head': 1, 'old_in_new': True, 'new_minus_old': 723}
+{'i': 9, 'path': 'topics/programme-ideas-20261031/OPEN_TARGETS.md', 'pin': '28aaa20', 'old_len': 598, 'at_pin': 1, 'at_main': 1, 'at_head': 1, 'old_in_new': True, 'new_minus_old': 1362}
+{'i': 10, 'path': 'results/padua-proof-attempts-2-20261101.md', 'pin': '28aaa20', 'old_len': 0, 'at_pin': 'file absent', 'at_main': None, 'at_head': None, 'old_in_new': True, 'new_minus_old': 1118}
