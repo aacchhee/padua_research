@@ -18,6 +18,8 @@ Spaces of real dimension N = (n+1)(n+2)/2:
   Mcone    Pi_n/pi_m, m = n//2, cone directions                          [draft class, mixed]
   Mpar     Pi_n/pi_m, m = n//2, parallel                                  [BHH-type, mixed]
   Mprod    Pi_n/pi_m, m = n//2, alternating x/y                           [product, mixed]
+  L1pt     Pi_n / prod_{j<=n/2} |z - zeta_j|^2  (conjugate pairs of complex lines = point poles)
+  Mpt      Pi_n / prod_{j<=m/2} |z - zeta_j|^2,  m = n//2
   Zc       analytic rational in z: 1, z, .., z^{N-1-p} and 1/(z - zeta_k), k <= p = N//2,
            zeta_k clustered at the corner along the outward diagonal; complex dim N
   Zr       Re/Im parts of the first ceil(N/2) such functions: real dim N
@@ -76,6 +78,8 @@ def lines_den(thetas, eps, p0):
 
 
 def best_rel_err(A, f):
+    nrm = np.linalg.norm(A, axis=0)
+    A = A[:, nrm > 1e-14 * nrm.max()]          # drop zero columns (Im of the constant 1)
     A = A / np.linalg.norm(A, axis=0)
     U, S, _ = np.linalg.svd(A, full_matrices=False)
     rk = int(np.sum(S > 1e-12 * S[0]))
@@ -91,7 +95,19 @@ def analytic_space(N, zetas):
 
 
 print(f"grid {m1}x{m1}, M = {M}, sigma = {SIG}; rel. best-LS error (rank deficiency marked *)")
-hdr = "  n   N |     P     L1cone    L1par   L1prod |   Mcone    Mpar     Mprod  |   Zc(N)    Zr(N)"
+hdr = "  n   N |     P     L1cone    L1par   L1prod |   Mcone    Mpar     Mprod  |  L1pt     Mpt    |   Zc(N)    Zr(N)"
+
+
+def point_den(k, zetas_fn):
+    """product of k/2 conjugate complex-line pairs = prod |z - zeta_j|^2 (real, no real zeros);
+    k odd: one extra real line far away (l = x - 3)."""
+    e = taper(k // 2)
+    d = np.ones(M)
+    for zt in zetas_fn(e):
+        d *= np.abs(z - zt) ** 2
+    if k % 2 == 1:
+        d *= (x - 3.0)
+    return d
 for name, f in targets.items():
     print(f"\n--- {name} ---")
     print(hdr)
@@ -102,12 +118,21 @@ for name, f in targets.items():
         if name.startswith('f5'):
             def den(k, rot):
                 e = taper(k); sg = rng.choice([-1, 1], k)
-                th = np.pi / 4 + (rng.uniform(-0.17, 0.17, k) if rot else 0)
+                th = np.pi / 4 + (rng.uniform(-0.17, 0.17, k) if rot else np.zeros(k))
                 return np.prod([np.cos(t) * x - np.sin(t) * y - s * ee for t, s, ee in zip(th, sg, e)], axis=0)
             spaces = [Pn, Pn / den(n, True)[:, None], Pn / den(n, False)[:, None], Pn / den(n, False)[:, None],
                       Pn / den(m, True)[:, None], Pn / den(m, False)[:, None], Pn / den(m, False)[:, None]]
             p = N // 2; e = taper(p)
             zetas = np.concatenate([(1 + 1j) + e[: p // 2] * (1 + 1j) / np.sqrt(2), (-1 - 1j) - e[p // 2:] * (1 + 1j) / np.sqrt(2)])
+            # conjugate pairs of complex lines x - y = +- i eps (BHH imaginary shifts)
+            def pden(k):
+                e2 = taper(k // 2); d = np.ones(M)
+                for ee in e2:
+                    d *= ((x - y) / np.sqrt(2)) ** 2 + ee ** 2
+                if k % 2 == 1:
+                    d *= (x - 3.0)
+                return d
+            spaces += [Pn / pden(n)[:, None], Pn / pden(m)[:, None]]
         elif name.startswith('f6'):
             p0 = (1.01, 0.0)
             def den(k, kind):
@@ -121,6 +146,7 @@ for name, f in targets.items():
                    + [Pn / den(k, kind)[:, None] for k in (m,) for kind in ('cone', 'par', 'prod')]
             p = N // 2
             zetas = 1.01 + 0j + taper(p)
+            spaces += [Pn / point_den(k, lambda e: 1.01 + e)[:, None] for k in (n, m)]
         else:
             def den(k, kind):
                 e = taper(k)
@@ -131,12 +157,14 @@ for name, f in targets.items():
                    + [Pn / den(m, kind)[:, None] for kind in ('cone', 'par', 'prod')]
             p = N // 2
             zetas = (1 + 1j) + taper(p) * (1 + 1j) / np.sqrt(2)
+            spaces += [Pn / point_den(k, lambda e: (1 + 1j) + e * (1 + 1j) / np.sqrt(2))[:, None] for k in (n, m)]
         Zc = analytic_space(N, zetas)
         kc = (N + 1) // 2
-        Zh = analytic_space(kc, zetas[: max(1, kc // 2)])
-        Zr = np.column_stack([Zh.real, Zh.imag])[:, :N]
+        Zh = analytic_space(kc + 1, zetas[: max(1, (kc + 1) // 2)])
+        Zr = np.column_stack([Zh.real, Zh.imag])
+        Zr = Zr[:, np.linalg.norm(Zr, axis=0) > 1e-14][:, :N]      # real dimension N
         cells = []
         for A in spaces + [Zc, Zr]:
             err, rk, nc = best_rel_err(A, f.astype(complex) if np.iscomplexobj(A) else f)
             cells.append(f"{err:7.1e}{'*' if rk < nc else ' '}")
-        print(f"{n:3d} {N:3d} | " + " ".join(cells[:4]) + "| " + " ".join(cells[4:7]) + "| " + " ".join(cells[7:]))
+        print(f"{n:3d} {N:3d} | " + " ".join(cells[:4]) + "| " + " ".join(cells[4:7]) + "| " + " ".join(cells[7:9]) + "| " + " ".join(cells[9:]))
