@@ -1,0 +1,266 @@
+{
+  "status": "PASS",
+  "audit": "E6 audit-03",
+  "candidate": "ea829d92d509f79326a1cc037844a1bac3b4de13",
+  "rules_head": "c8849a89a601e0a56342d3d568086ab8abdbc4c0",
+  "executed_at_utc": "2026-11-01T18:25:48.560140+00:00",
+  "checker_python": "3.12.14",
+  "comparisons": [
+    {
+      "left": "/workspace/padua_research/topics/padua-lanczos-drift-20261101/evidence/response-01-e6-offsample.json",
+      "left_pin": {
+        "sha256": "12a5e7c713ec53b0a26fede8f2250a9ae8d02578df672ec11271ac450339b31d",
+        "bytes": 22147
+      },
+      "right": "/workspace/padua_research/topics/padua-lanczos-drift-20261101/evidence/response-02-e6-offsample-rerun.json",
+      "right_pin": {
+        "sha256": "0d981dd1816b40833aed6d62d5f61e1d885f62104f125c6df2a7fed337f7a5fc",
+        "bytes": 23663
+      },
+      "leaf_count": 391,
+      "compared_leaves": 387,
+      "numeric_leaves": 370,
+      "masked": {
+        "/command": [
+          "PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 tracks/bivariate-lanczos/code/drift/e6_offsample.py --output topics/padua-lanczos-drift-20261101/evidence/response-01-e6-offsample.json",
+          "PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 tracks/bivariate-lanczos/code/drift/e6_offsample.py --output topics/padua-lanczos-drift-20261101/evidence/response-02-e6-offsample-rerun.json"
+        ],
+        "/python": [
+          "3.13.18",
+          "3.13.18"
+        ],
+        "/elapsed_seconds": [
+          2.52,
+          3.05
+        ],
+        "/code_sha256/e6_offsample.py": [
+          "e2876dfb421e6880271122ef15ca3b039b65ea4f8d14dfa88012c6f58224f7ee",
+          "3db70d2a13516e1e0b5448c8c98e88ac8463b40a9513538cdc372330624c076b"
+        ]
+      },
+      "unequal": [],
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "left": "/workspace/padua_research/topics/padua-lanczos-drift-20261101/evidence/response-02-e6-offsample-rerun.json",
+      "left_pin": {
+        "sha256": "0d981dd1816b40833aed6d62d5f61e1d885f62104f125c6df2a7fed337f7a5fc",
+        "bytes": 23663
+      },
+      "right": "/tmp/audit-03-e6-offsample-rerun.json",
+      "right_pin": {
+        "sha256": "5d891bafa0dc6d24505ad48519d5748b85f7a29a9b70a1da40d044d0465647a1",
+        "bytes": 22110
+      },
+      "leaf_count": 391,
+      "compared_leaves": 388,
+      "numeric_leaves": 370,
+      "masked": {
+        "/command": [
+          "PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 tracks/bivariate-lanczos/code/drift/e6_offsample.py --output topics/padua-lanczos-drift-20261101/evidence/response-02-e6-offsample-rerun.json",
+          "PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 tracks/bivariate-lanczos/code/drift/e6_offsample.py --output /tmp/audit-03-e6-offsample-rerun.json"
+        ],
+        "/python": [
+          "3.13.18",
+          "3.12.14"
+        ],
+        "/elapsed_seconds": [
+          3.05,
+          1.19
+        ]
+      },
+      "unequal": [],
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "left": "/workspace/padua_research/topics/padua-lanczos-drift-20261101/evidence/response-01-e6-offsample.json",
+      "left_pin": {
+        "sha256": "12a5e7c713ec53b0a26fede8f2250a9ae8d02578df672ec11271ac450339b31d",
+        "bytes": 22147
+      },
+      "right": "/tmp/audit-03-e6-offsample-rerun.json",
+      "right_pin": {
+        "sha256": "5d891bafa0dc6d24505ad48519d5748b85f7a29a9b70a1da40d044d0465647a1",
+        "bytes": 22110
+      },
+      "leaf_count": 391,
+      "compared_leaves": 387,
+      "numeric_leaves": 370,
+      "masked": {
+        "/command": [
+          "PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 tracks/bivariate-lanczos/code/drift/e6_offsample.py --output topics/padua-lanczos-drift-20261101/evidence/response-01-e6-offsample.json",
+          "PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 tracks/bivariate-lanczos/code/drift/e6_offsample.py --output /tmp/audit-03-e6-offsample-rerun.json"
+        ],
+        "/python": [
+          "3.13.18",
+          "3.12.14"
+        ],
+        "/elapsed_seconds": [
+          2.52,
+          1.19
+        ],
+        "/code_sha256/e6_offsample.py": [
+          "e2876dfb421e6880271122ef15ca3b039b65ea4f8d14dfa88012c6f58224f7ee",
+          "3db70d2a13516e1e0b5448c8c98e88ac8463b40a9513538cdc372330624c076b"
+        ]
+      },
+      "unequal": [],
+      "tolerance": 0,
+      "pass": true
+    }
+  ],
+  "offsample_executable_ast_unchanged": true,
+  "numpy_probes": [
+    {
+      "numpy": "2.3.5",
+      "python": "3.12.14",
+      "numpy_path": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy/__init__.py",
+      "upstream_path": "/workspace/padua-drift-external/polyrat/polyrat/arnoldi.py",
+      "upstream_sha256": "e51f356170dc5e1403f1065daf5bc331e7ce470cac1b9161f5ecb9efccf68d86",
+      "probe": "vandermonde_arnoldi_CGS(default_rng(21).uniform(-1,1,(20,2)),2)",
+      "result": "PASS"
+    },
+    {
+      "numpy": "2.4.1",
+      "python": "3.12.14",
+      "numpy_path": "/workspace/padua-drift-runs/reaudit-02/E6/numpy241/numpy/__init__.py",
+      "upstream_path": "/workspace/padua-drift-external/polyrat/polyrat/arnoldi.py",
+      "upstream_sha256": "e51f356170dc5e1403f1065daf5bc331e7ce470cac1b9161f5ecb9efccf68d86",
+      "probe": "vandermonde_arnoldi_CGS(default_rng(21).uniform(-1,1,(20,2)),2)",
+      "result": "FAIL",
+      "exception_type": "TypeError",
+      "message": "only 0-dimensional arrays can be converted to Python scalars",
+      "traceback": "Traceback (most recent call last):\n  File \"/workspace/padua_research/topics/padua-lanczos-drift-20261101/checks/audit-02/E6/check.py\", line 288, in main\n    up.vandermonde_arnoldi_CGS(np.random.default_rng(21).uniform(-1,1,(20,2)),2)\n  File \"/workspace/padua-drift-external/polyrat/polyrat/arnoldi.py\", line 100, in vandermonde_arnoldi_CGS\n    i, j = _update_rule(indices, idx)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/padua-drift-external/polyrat/polyrat/arnoldi.py\", line 12, in _update_rule\n    i = int(np.argwhere(diff[j] == -1))\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: only 0-dimensional arrays can be converted to Python scalars\n"
+    }
+  ],
+  "midpoint_exact_geometry": [
+    {
+      "t": "1/16",
+      "area": "1/64",
+      "pass": true
+    },
+    {
+      "t": "1/8",
+      "area": "1/16",
+      "pass": true
+    },
+    {
+      "t": "1/4",
+      "area": "1/4",
+      "pass": true
+    },
+    {
+      "t": "1/3",
+      "area": "4/9",
+      "pass": true
+    },
+    {
+      "t": "1/2",
+      "area": "1",
+      "pass": true
+    }
+  ],
+  "upstream_head": "6903d7af9995c9d88e661fb229626696e00fdfba",
+  "upstream_status": "",
+  "upstream_pins": {
+    "arnoldi.py": {
+      "sha256": "e51f356170dc5e1403f1065daf5bc331e7ce470cac1b9161f5ecb9efccf68d86",
+      "bytes": 7615
+    },
+    "index.py": {
+      "sha256": "84df400c73a2aacf922ff38c0a591b525c2ac1f9b7a9f958f4111d4ceb88d10d",
+      "bytes": 1339
+    },
+    "basis.py": {
+      "sha256": "9ce50feba7cfaa706db3bb94bbe2b34f065d9dbde28a18a3eee021d11e8ec478",
+      "bytes": 14876
+    },
+    "version.py": {
+      "sha256": "1d13b63cb7af46b37f80ac0d695be5f795c2db5ce6e66dea34143da4cb434439",
+      "bytes": 23
+    }
+  },
+  "candidate_pins": {
+    "AGENTS.md": {
+      "sha256": "c44a76f138fce01f02c06753b22fbc83fd5c1ee701785d49ba17cef5f8eee05b",
+      "bytes": 3572,
+      "candidate_sha256": "c44a76f138fce01f02c06753b22fbc83fd5c1ee701785d49ba17cef5f8eee05b"
+    },
+    "agents/WORKFLOW.md": {
+      "sha256": "a8927be27a1fe8166e5bcf59c7da8e70618ae0a5f17d56131724baffdad49353",
+      "bytes": 26615,
+      "candidate_sha256": "a8927be27a1fe8166e5bcf59c7da8e70618ae0a5f17d56131724baffdad49353"
+    },
+    "agents/codex/CODEX.md": {
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+      "bytes": 4969,
+      "candidate_sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b"
+    },
+    "state/IDEAS.md": {
+      "sha256": "4a7f365d0932048d4e861a817e758077f9c715c936d2191b1c2a5da63d14d0bb",
+      "bytes": 170639,
+      "candidate_sha256": "4a7f365d0932048d4e861a817e758077f9c715c936d2191b1c2a5da63d14d0bb"
+    },
+    "literature/INDEX.md": {
+      "sha256": "3cd4a057587459b117e555f1cae615e9985b770206c9b96d199a7161cc1a975e",
+      "bytes": 268372,
+      "candidate_sha256": "3cd4a057587459b117e555f1cae615e9985b770206c9b96d199a7161cc1a975e"
+    },
+    "tracks/bivariate-lanczos/code/drift/e6_offsample.py": {
+      "sha256": "3db70d2a13516e1e0b5448c8c98e88ac8463b40a9513538cdc372330624c076b",
+      "bytes": 12454,
+      "candidate_sha256": "3db70d2a13516e1e0b5448c8c98e88ac8463b40a9513538cdc372330624c076b"
+    },
+    "tracks/bivariate-lanczos/code/drift/e6_offsample_compare.py": {
+      "sha256": "feec93e2e3dd8cc1838a252711796c57bad4364d125eeb0e7c0523960f3faacb",
+      "bytes": 2707,
+      "candidate_sha256": "feec93e2e3dd8cc1838a252711796c57bad4364d125eeb0e7c0523960f3faacb"
+    },
+    "tracks/bivariate-lanczos/code/drift/e6_benchmark.py": {
+      "sha256": "e328b7d5d965637e986285cafe596ac15cdd9320c195d6f02162d883267baafe",
+      "bytes": 7322,
+      "candidate_sha256": "e328b7d5d965637e986285cafe596ac15cdd9320c195d6f02162d883267baafe"
+    },
+    "tracks/bivariate-lanczos/code/drift/e6_smooth.py": {
+      "sha256": "de624205e6909a114521a6e166b212ce05dc84343956e2cbae93a1e515189a1e",
+      "bytes": 1356,
+      "candidate_sha256": "de624205e6909a114521a6e166b212ce05dc84343956e2cbae93a1e515189a1e"
+    },
+    "tracks/bivariate-lanczos/code/drift/README.md": {
+      "sha256": "883d0d9af5f92aecde7b48d7b28c397f2d473f5bf4c3a70170d4f0c4eda0d987",
+      "bytes": 12897,
+      "candidate_sha256": "883d0d9af5f92aecde7b48d7b28c397f2d473f5bf4c3a70170d4f0c4eda0d987"
+    },
+    "tracks/bivariate-lanczos/theory/drift-codex-e6-50-public-va-drift-measured.md": {
+      "sha256": "492e06ec50bacd49a63ae48f9b2e083d85e7839e188495d3c5786b8de2d4032f",
+      "bytes": 24159,
+      "candidate_sha256": "492e06ec50bacd49a63ae48f9b2e083d85e7839e188495d3c5786b8de2d4032f"
+    },
+    "topics/padua-lanczos-drift-20261101/ideas-e6.md": {
+      "sha256": "948630294ed986f6f668f03fc594aded7d026ec701722eeed43fa351cc1433af",
+      "bytes": 19790,
+      "candidate_sha256": "948630294ed986f6f668f03fc594aded7d026ec701722eeed43fa351cc1433af"
+    },
+    "topics/padua-lanczos-drift-20261101/directions/E6.md": {
+      "sha256": "5d6c6976656877a8be290b10575dd8210d074532420b24af2cf4d06a92a5b497",
+      "bytes": 19979,
+      "candidate_sha256": "5d6c6976656877a8be290b10575dd8210d074532420b24af2cf4d06a92a5b497"
+    },
+    "topics/padua-lanczos-drift-20261101/external-code.md": {
+      "sha256": "c743dec4d3711ef5d318dd859b7b5ab76b4cb89f0f9247300e0500c2733ae7f4",
+      "bytes": 8310,
+      "candidate_sha256": "c743dec4d3711ef5d318dd859b7b5ab76b4cb89f0f9247300e0500c2733ae7f4"
+    },
+    "topics/padua-lanczos-drift-20261101/checks/audit-02/E6/check.py": {
+      "sha256": "fac25edb44fbc859af9f6187506457206b4fa9ce70478cdd0762e31036c63235",
+      "bytes": 18887,
+      "candidate_sha256": "fac25edb44fbc859af9f6187506457206b4fa9ce70478cdd0762e31036c63235"
+    }
+  },
+  "checker_pin": {
+    "sha256": "12af408d380e26ff93a9971a54df563815b870e555c04e94ffc90361af35219d",
+    "bytes": 7081
+  }
+}

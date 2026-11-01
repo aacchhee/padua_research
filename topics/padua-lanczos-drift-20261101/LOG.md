@@ -207,3 +207,31 @@
   squash tree equality, protected paths and all77 original theory files.
   Remote inventory: evidence/audit-03-remote-state.json; integration receipt:
   evidence/audit-03-integration.json. Audit verdict pending separate reruns.
+
+## Audit-03 complete — Codex, 2026-11-01
+
+- [audit-03.md](audit-03.md): CHANGES REQUIRED, 0 high, 0 medium, 3 low;
+  stage WORK. All ten audit02 findings are resolved in their original scope.
+  New A03-L1 is a false regeneration PASS with missing requested files; A03-L2
+  is an alternating-only reversal offered for a minimum-comparator target;
+  A03-L3 is the unqualified outside-span assertion in deferred IDEA17.
+- Mathematics confirmed: record15's corrected general limit, record06's finite
+  formal scalar proof, record05 target PARTIAL (T24 proved, rotQ24 open), and
+  record30's endpoint/eventual-scope corrections. Independent E1 reconstruction
+  gives the same950 signs and exact/rigorous endpoints; actual n3/n4 scalar
+  replay passes. Independent E4 full-operator checks cover9 configurations and
+  54 source settings; producer regression25 cases matches. E5 independent
+  series/Arb384 and E6 actual-source370numeric-leaf rerun pass; NumPy2.4.1 fails
+  as documented while pinned2.3.5 passes.
+- New reports/checkers/compact receipts are in checks/audit-03 and
+  evidence/audit-03-*.json; manifest pins candidate changes and audit outputs.
+  89 frozen historical files and77 original theory files remain unchanged.
+  Conservative whole-campaign inventory remains below decimal5MB, largest
+  file616693bytes; no old artifact was deleted. External response02 raw files
+  absent here are historical/regenerable outputs, not hidden essential inputs.
+- Updated only this topic's repository results summary. No developer fixes,
+  final IDs, scientific registry changes, root RESULTS edit or Windows write.
+  Main remains28aaa, PR12 integration clean at7f226c1; readiness not declared.
+- Next: [09-response-03.md](handoffs/09-response-03.md), Claude Opus5.5 high,
+  narrow response to the three lows. Preserve accepted proofs/classification;
+  a bounded independent recheck follows material checker edits. Only AC merges.

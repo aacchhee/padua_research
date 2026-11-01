@@ -1,0 +1,1009 @@
+{
+  "audit": "03 E34",
+  "scientific_candidate": "ea829d92d509f79326a1cc037844a1bac3b4de13",
+  "rules_head": "c8849a89a601e0a56342d3d568086ab8abdbc4c0",
+  "previous_scientific_candidate": "cef79d66321a93d93d53e53efcb7e6744c387481",
+  "auditor": "Codex independent subagent, configured gpt-6-astra xhigh; resolved serving runtime metadata unexposed",
+  "verdict": "CHANGES REQUIRED: one low wording finding only; record15 correction accepted",
+  "dispositions": {
+    "A02-M1": "RESOLVED",
+    "A02-L2": "recipe RESOLVED; one new low separation-wording finding"
+  },
+  "findings": [
+    {
+      "severity": "low",
+      "file": "topics/padua-lanczos-drift-20261101/ideas-e3-e4.md",
+      "line": 194,
+      "title": "External reference use does not guarantee an outside-span correction",
+      "evidence": {
+        "ambient": "orthonormal exact reference r0,r1,r2,r3,r4",
+        "p": 1,
+        "stored": [
+          "r0",
+          "(3r1+4r2)/5",
+          "(4r1-3r2)/5"
+        ],
+        "gamma": "3/5",
+        "discarded": "-4r2/5",
+        "repaired": "r1",
+        "nonzero_change": true,
+        "correction_and_repaired_parent_in_stored_span": true,
+        "no_claim_of_realization_by_specific_IEEE_run": true
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 3572,
+      "sha256": "c44a76f138fce01f02c06753b22fbc83fd5c1ee701785d49ba17cef5f8eee05b",
+      "candidate_sha256": "c44a76f138fce01f02c06753b22fbc83fd5c1ee701785d49ba17cef5f8eee05b",
+      "candidate_equal": true
+    },
+    {
+      "path": "agents/WORKFLOW.md",
+      "bytes": 26615,
+      "sha256": "a8927be27a1fe8166e5bcf59c7da8e70618ae0a5f17d56131724baffdad49353",
+      "candidate_sha256": "a8927be27a1fe8166e5bcf59c7da8e70618ae0a5f17d56131724baffdad49353",
+      "candidate_equal": true
+    },
+    {
+      "path": "agents/codex/CODEX.md",
+      "bytes": 4969,
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+      "candidate_sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+      "candidate_equal": true
+    },
+    {
+      "path": "state/IDEAS.md",
+      "bytes": 170639,
+      "sha256": "4a7f365d0932048d4e861a817e758077f9c715c936d2191b1c2a5da63d14d0bb",
+      "candidate_sha256": "4a7f365d0932048d4e861a817e758077f9c715c936d2191b1c2a5da63d14d0bb",
+      "candidate_equal": true
+    },
+    {
+      "path": "literature/INDEX.md",
+      "bytes": 268372,
+      "sha256": "3cd4a057587459b117e555f1cae615e9985b770206c9b96d199a7161cc1a975e",
+      "candidate_sha256": "3cd4a057587459b117e555f1cae615e9985b770206c9b96d199a7161cc1a975e",
+      "candidate_equal": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bj-universal-reorthogonalization-obstruction-open.md",
+      "bytes": 6328,
+      "sha256": "37574ea58dcb9e82897f42cb6f3565546e78dc965af80e429141dcfa54d0de1d",
+      "candidate_sha256": "37574ea58dcb9e82897f42cb6f3565546e78dc965af80e429141dcfa54d0de1d",
+      "candidate_equal": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/closed-loop-dot-product-rounding-carries-coefficient-channel.md",
+      "bytes": 12172,
+      "sha256": "601dc1155db375ac8cb4458a309a016ef18c0ca2d1a0133b1fdf268f1182d707",
+      "candidate_sha256": "601dc1155db375ac8cb4458a309a016ef18c0ca2d1a0133b1fdf268f1182d707",
+      "candidate_equal": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/reorthogonalization-does-not-restore-graded-spaces.md",
+      "bytes": 12479,
+      "sha256": "1124ffb00dd6844136219ef4328094fff43b4f9269c8e99467fd0e8a8839aa6b",
+      "candidate_sha256": "1124ffb00dd6844136219ef4328094fff43b4f9269c8e99467fd0e8a8839aa6b",
+      "candidate_equal": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/reference-free-span-drift-lower-bound.md",
+      "bytes": 9375,
+      "sha256": "c6f7db6a7114d3c16844866583964971533b51a681accdada03b22864488ac18",
+      "candidate_sha256": "c6f7db6a7114d3c16844866583964971533b51a681accdada03b22864488ac18",
+      "candidate_equal": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e4-15-projection-only-closure-obstruction.md",
+      "bytes": 33501,
+      "sha256": "e9aabc1119e1c2f55a2789e3d7a175edf8db3a96a6070df6819e4e85b5ae718d",
+      "candidate_sha256": "e9aabc1119e1c2f55a2789e3d7a175edf8db3a96a6070df6819e4e85b5ae718d",
+      "candidate_equal": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e4_response02_check.py",
+      "bytes": 20881,
+      "sha256": "6b2c0f8737b1755795d1afd2a8c59449043146ab8315682a3b28293f2f144fdf",
+      "candidate_sha256": "6b2c0f8737b1755795d1afd2a8c59449043146ab8315682a3b28293f2f144fdf",
+      "candidate_equal": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e4_closure_check.py",
+      "bytes": 18454,
+      "sha256": "b22949c61d98207f950a5b8e1a8974e0eb1545f85dc5b639872bf09a987d6dac",
+      "candidate_sha256": "b22949c61d98207f950a5b8e1a8974e0eb1545f85dc5b639872bf09a987d6dac",
+      "candidate_equal": true
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L2/candidates.md",
+      "bytes": 28954,
+      "sha256": "bda0de68d9e094bab19fef0b8183d27e0f06f507cb6d34b36ef3268f1e69085a",
+      "candidate_sha256": "bda0de68d9e094bab19fef0b8183d27e0f06f507cb6d34b36ef3268f1e69085a",
+      "candidate_equal": true
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/L2-prior-art-01.md",
+      "bytes": 22384,
+      "sha256": "66d259d1e708a07c6f920491dc14f586c4381b4c7fe7c04d97f0b5b191c06d29",
+      "candidate_sha256": "66d259d1e708a07c6f920491dc14f586c4381b4c7fe7c04d97f0b5b191c06d29",
+      "candidate_equal": true
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/audit-02.md",
+      "bytes": 21875,
+      "sha256": "f3a1cea0010bbd457316602e881c1684e15ef48f8d44ece79952e9fef02c9ae9",
+      "candidate_sha256": "f3a1cea0010bbd457316602e881c1684e15ef48f8d44ece79952e9fef02c9ae9",
+      "candidate_equal": true
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/response-02.md",
+      "bytes": 10588,
+      "sha256": "ab8c627c38ad8aba2cc922138bce20b517e570e684eda66c68f61a2a727b2ede",
+      "candidate_sha256": "ab8c627c38ad8aba2cc922138bce20b517e570e684eda66c68f61a2a727b2ede",
+      "candidate_equal": true
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/handoffs/08-reaudit.md",
+      "bytes": 4350,
+      "sha256": "745d2e2f5146fff2b139c30684815978c17a95c46e9737474e012dae85c70387",
+      "candidate_sha256": null,
+      "candidate_equal": null
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/checks/audit-02/E34.md",
+      "bytes": 18553,
+      "sha256": "cfbcd87c280b7de08bf3d0f66a4e77945c285ccb5991d96b56b73515425d9b89",
+      "candidate_sha256": "cfbcd87c280b7de08bf3d0f66a4e77945c285ccb5991d96b56b73515425d9b89",
+      "candidate_equal": true
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/checks/response-02/E34-developer-report.md",
+      "bytes": 14303,
+      "sha256": "03683b8944c1009d941282a25a6497fa87a1184b0517fbf8c1aab4c3e1004be1",
+      "candidate_sha256": "03683b8944c1009d941282a25a6497fa87a1184b0517fbf8c1aab4c3e1004be1",
+      "candidate_equal": true
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/ideas-e3-e4.md",
+      "bytes": 47363,
+      "sha256": "66137b9562d250f4b6b6e607cb804689994725b63e0284afbcc60416999f53f8",
+      "candidate_sha256": "66137b9562d250f4b6b6e607cb804689994725b63e0284afbcc60416999f53f8",
+      "candidate_equal": true
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/directions/E4.md",
+      "bytes": 10173,
+      "sha256": "0337492c0138a6f1bf6ff955962eb7fc930819f4b0d5946f836e86d614eddf52",
+      "candidate_sha256": "0337492c0138a6f1bf6ff955962eb7fc930819f4b0d5946f836e86d614eddf52",
+      "candidate_equal": true
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/proposed-record-changes.md",
+      "bytes": 16994,
+      "sha256": "202de9bbf82fdeff985a7aafc1f4e597bf86c7af970eda58fce245c5f88f6c60",
+      "candidate_sha256": "202de9bbf82fdeff985a7aafc1f4e597bf86c7af970eda58fce245c5f88f6c60",
+      "candidate_equal": true
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/response-01-e4-closure.json",
+      "bytes": 30826,
+      "sha256": "956dfe71e8b6958f54e19f2d7fb30f04c5788351b7942bf8be21b41977d3599c",
+      "candidate_sha256": "956dfe71e8b6958f54e19f2d7fb30f04c5788351b7942bf8be21b41977d3599c",
+      "candidate_equal": true
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/response-02-e4-creator-limit.json",
+      "bytes": 86816,
+      "sha256": "a6faea9967747b9fe962ce58f5af55fe776bf4b5201f54cc364d738aa2da4526",
+      "candidate_sha256": "a6faea9967747b9fe962ce58f5af55fe776bf4b5201f54cc364d738aa2da4526",
+      "candidate_equal": true
+    }
+  ],
+  "unchanged_from_audit02_inherited_acceptance": [
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e3-10-polynomial-span-certificate.md",
+      "bytes": 7820,
+      "sha256": "f0e1d506593bd51395bd37bfbf1284a87237c8de84035ea747fa64f1864fe837",
+      "candidate_sha256": "f0e1d506593bd51395bd37bfbf1284a87237c8de84035ea747fa64f1864fe837",
+      "candidate_equal": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e3-11-selection-criterion.md",
+      "bytes": 14087,
+      "sha256": "23628b98ecde23e7a7a5e5f4506a89d89c58d4638c1635b4371f1b565a59a96f",
+      "candidate_sha256": "23628b98ecde23e7a7a5e5f4506a89d89c58d4638c1635b4371f1b565a59a96f",
+      "candidate_equal": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e4-14-noiseless-quantifier-refutation.md",
+      "bytes": 7332,
+      "sha256": "820e43cd2a00238b16193831bd46ffa23bfabee0766000de082a03f3ff677c83",
+      "candidate_sha256": "820e43cd2a00238b16193831bd46ffa23bfabee0766000de082a03f3ff677c83",
+      "candidate_equal": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e4_closure_check.py",
+      "bytes": 18454,
+      "sha256": "b22949c61d98207f950a5b8e1a8974e0eb1545f85dc5b639872bf09a987d6dac",
+      "candidate_sha256": "b22949c61d98207f950a5b8e1a8974e0eb1545f85dc5b639872bf09a987d6dac",
+      "candidate_equal": true
+    }
+  ],
+  "executions": [
+    {
+      "kind": "fresh rerun of developer checker",
+      "command": "PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 -B tracks/bivariate-lanczos/code/drift/e4_response02_check.py --output /workspace/padua-drift-runs/reaudit-03/E34/creator-limit-rerun.json",
+      "output": {
+        "path": "/workspace/padua-drift-runs/reaudit-03/E34/creator-limit-rerun.json",
+        "bytes": 86797,
+        "sha256": "f46d950596af4825d6840cdb2752cc07a932134769efb9c62914b53d05c34706"
+      },
+      "all_scientific_fields_equal": true,
+      "masked_keys": [
+        "command",
+        "python",
+        "platform",
+        "elapsed_seconds"
+      ],
+      "actually_changed": [
+        "command",
+        "python",
+        "platform",
+        "elapsed_seconds"
+      ],
+      "python": "3.12.14",
+      "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+      "elapsed_seconds": 1.65,
+      "summary": {
+        "instances": 25,
+        "creator_ratio_kappa_sq_over_b_sq_ge_1_all": true,
+        "instances_with_kappa_creator_gt_b": [
+          "T3_uniform_BJ_source_(2,0)",
+          "T3_uniform_BJ_source_(2,0)_normal_x2y",
+          "T4_uniform_t2_XYYY_source_(3,0)",
+          "T4_uniform_t2_XYXY_source_(3,0)",
+          "T4_uniform_t2_XYXY_source_(3,1)"
+        ],
+        "instances_with_kappa_creator_eq_b": [
+          "T3_uniform_BJ_source_(2,1)",
+          "T3_uniform_BJ_source_(2,2)",
+          "T3_uniform_BJ_source_(2,1)_normal_x3",
+          "T3_uniform_mirror_source_(2,1)",
+          "Q3_product_grid_uniform_BJ_source_(2,0)",
+          "Q3_product_grid_uniform_BJ_source_(2,1)",
+          "Q3_product_grid_uniform_BJ_source_(2,2)",
+          "T3_nonuniform_weights_BJ_source_(2,1)",
+          "T4_uniform_t2_XYYY_source_(3,1)",
+          "T4_uniform_t2_XYYY_source_(3,2)",
+          "T4_uniform_t2_XYYY_source_(3,3)",
+          "T4_uniform_t2_XXXY_source_(3,0)",
+          "T4_uniform_t2_XXXY_source_(3,1)",
+          "T4_uniform_t2_XXXY_source_(3,2)",
+          "T4_uniform_t2_XXXY_source_(3,3)",
+          "T4_uniform_t2_XYXY_source_(3,2)",
+          "T4_uniform_t2_XYXY_source_(3,3)",
+          "random12_t0_source_(1,0)",
+          "random12_t0_source_(1,1)",
+          "random12_t1_BJ_source_(2,1)"
+        ],
+        "max_creator_ratio": "9/5"
+      }
+    },
+    {
+      "kind": "new independent SymPy reconstruction; no campaign or prior-audit imports",
+      "command": "PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 -B /workspace/padua_research/topics/padua-lanczos-drift-20261101/checks/audit-03/E34/independent_limits.py --output /workspace/padua-drift-runs/reaudit-03/E34/independent-limits.json",
+      "output": {
+        "path": "/workspace/padua-drift-runs/reaudit-03/E34/independent-limits.json",
+        "bytes": 14493,
+        "sha256": "10c965179ce4c90ec5ce32a60b3059f408bf83a4d7ab597555cfa02071ec035c"
+      },
+      "essential_result": {
+        "purpose": "Audit-03 exact E34 reconstruction; imports no campaign or prior-audit code.\n\nFinite corroboration of the analytic proof, not a universal computer proof.\nWeighted node coordinates avoid square roots; all matrix tests are exact.\n",
+        "command": "PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 -B /workspace/padua_research/topics/padua-lanczos-drift-20261101/checks/audit-03/E34/independent_limits.py --output /workspace/padua-drift-runs/reaudit-03/E34/independent-limits.json",
+        "code_sha256": "7fa20f13578ffb1330aa2b59b55d19eac070df83d7458255990bbebb2d42760c",
+        "python": "3.12.14",
+        "sympy": "1.14.0",
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "cases": [
+          {
+            "name": "minimal_nonuniform_t0_0",
+            "t": 0,
+            "selection": "XY",
+            "source": 0,
+            "v2": "3/5",
+            "b2": "5/21",
+            "kappa2": [
+              "5/21",
+              "0"
+            ],
+            "limit_sq": [
+              "3/5",
+              "0"
+            ],
+            "tests": [
+              {
+                "eta": "-2",
+                "alpha": "0",
+                "delta_sq": [
+                  "120/529",
+                  "0"
+                ],
+                "source_projected_rank": 3
+              },
+              {
+                "eta": "-1/10",
+                "alpha": "0",
+                "delta_sq": [
+                  "15/1313",
+                  "0"
+                ],
+                "source_projected_rank": 3
+              },
+              {
+                "eta": "1/7",
+                "alpha": "0",
+                "delta_sq": [
+                  "30/1351",
+                  "0"
+                ],
+                "source_projected_rank": 3
+              },
+              {
+                "eta": "1/100000000",
+                "alpha": "0",
+                "delta_sq": [
+                  "15/125000000000000063",
+                  "0"
+                ],
+                "source_projected_rank": 3
+              },
+              {
+                "eta": "1/7",
+                "alpha": "-1",
+                "delta_sq": [
+                  "5/21",
+                  "0"
+                ],
+                "source_projected_rank": 2
+              },
+              {
+                "eta": "1/7",
+                "alpha": "-3/2",
+                "delta_sq": [
+                  "120/1729",
+                  "0"
+                ],
+                "source_projected_rank": 3
+              }
+            ]
+          },
+          {
+            "name": "minimal_nonuniform_t0_1",
+            "t": 0,
+            "selection": "XY",
+            "source": 1,
+            "v2": "7/10",
+            "b2": "5/24",
+            "kappa2": [
+              "0",
+              "5/24"
+            ],
+            "limit_sq": [
+              "0",
+              "7/10"
+            ],
+            "tests": [
+              {
+                "eta": "-2",
+                "alpha": "0",
+                "delta_sq": [
+                  "0",
+                  "120/601"
+                ],
+                "source_projected_rank": 3
+              },
+              {
+                "eta": "-1/10",
+                "alpha": "0",
+                "delta_sq": [
+                  "0",
+                  "15/1322"
+                ],
+                "source_projected_rank": 3
+              },
+              {
+                "eta": "1/7",
+                "alpha": "0",
+                "delta_sq": [
+                  "0",
+                  "30/1369"
+                ],
+                "source_projected_rank": 3
+              },
+              {
+                "eta": "1/100000000",
+                "alpha": "0",
+                "delta_sq": [
+                  "0",
+                  "15/125000000000000072"
+                ],
+                "source_projected_rank": 3
+              },
+              {
+                "eta": "1/7",
+                "alpha": "-1",
+                "delta_sq": [
+                  "0",
+                  "5/24"
+                ],
+                "source_projected_rank": 2
+              },
+              {
+                "eta": "1/7",
+                "alpha": "-3/2",
+                "delta_sq": [
+                  "0",
+                  "120/1801"
+                ],
+                "source_projected_rank": 3
+              }
+            ]
+          },
+          {
+            "name": "T3_XYY_0",
+            "t": 1,
+            "selection": "XYY",
+            "source": 0,
+            "v2": "22/5",
+            "b2": "7/15",
+            "kappa2": [
+              "28/45",
+              "0"
+            ],
+            "limit_sq": [
+              "88/15",
+              "0"
+            ],
+            "tests": [
+              {
+                "eta": "-2",
+                "alpha": "0",
+                "delta_sq": [
+                  "13664/25635",
+                  "0"
+                ],
+                "source_projected_rank": 6
+              },
+              {
+                "eta": "-1/10",
+                "alpha": "0",
+                "delta_sq": [
+                  "1708/186495",
+                  "0"
+                ],
+                "source_projected_rank": 6
+              },
+              {
+                "eta": "1/7",
+                "alpha": "0",
+                "delta_sq": [
+                  "3416/185565",
+                  "0"
+                ],
+                "source_projected_rank": 6
+              },
+              {
+                "eta": "1/100000000",
+                "alpha": "0",
+                "delta_sq": [
+                  "1708/18375000000000002745",
+                  "0"
+                ],
+                "source_projected_rank": 6
+              },
+              {
+                "eta": "1/7",
+                "alpha": "-1",
+                "delta_sq": [
+                  "28/45",
+                  "0"
+                ],
+                "source_projected_rank": 5
+              },
+              {
+                "eta": "1/7",
+                "alpha": "-3/2",
+                "delta_sq": [
+                  "13664/202035",
+                  "0"
+                ],
+                "source_projected_rank": 6
+              }
+            ]
+          },
+          {
+            "name": "T3_XYY_1",
+            "t": 1,
+            "selection": "XYY",
+            "source": 1,
+            "v2": "3/2",
+            "b2": "28/115",
+            "kappa2": [
+              "112/345",
+              "28/115"
+            ],
+            "limit_sq": [
+              "2",
+              "3/2"
+            ],
+            "tests": [
+              {
+                "eta": "-2",
+                "alpha": "0",
+                "delta_sq": [
+                  "13664/45765",
+                  "3416/15255"
+                ],
+                "source_projected_rank": 6
+              },
+              {
+                "eta": "-1/10",
+                "alpha": "0",
+                "delta_sq": [
+                  "6832/756045",
+                  "1708/252015"
+                ],
+                "source_projected_rank": 6
+              },
+              {
+                "eta": "1/7",
+                "alpha": "0",
+                "delta_sq": [
+                  "6832/381195",
+                  "1708/127065"
+                ],
+                "source_projected_rank": 6
+              },
+              {
+                "eta": "1/100000000",
+                "alpha": "0",
+                "delta_sq": [
+                  "6832/73500000000000021045",
+                  "1708/24500000000000007015"
+                ],
+                "source_projected_rank": 6
+              },
+              {
+                "eta": "1/7",
+                "alpha": "-1",
+                "delta_sq": [
+                  "112/345",
+                  "28/115"
+                ],
+                "source_projected_rank": 5
+              },
+              {
+                "eta": "1/7",
+                "alpha": "-3/2",
+                "delta_sq": [
+                  "13664/222165",
+                  "3416/74055"
+                ],
+                "source_projected_rank": 6
+              }
+            ]
+          },
+          {
+            "name": "T3_XYY_2",
+            "t": 1,
+            "selection": "XYY",
+            "source": 2,
+            "v2": "103/30",
+            "b2": "28/45",
+            "kappa2": [
+              "0",
+              "28/45"
+            ],
+            "limit_sq": [
+              "0",
+              "103/30"
+            ],
+            "tests": [
+              {
+                "eta": "-2",
+                "alpha": "0",
+                "delta_sq": [
+                  "0",
+                  "13664/25635"
+                ],
+                "source_projected_rank": 6
+              },
+              {
+                "eta": "-1/10",
+                "alpha": "0",
+                "delta_sq": [
+                  "0",
+                  "1708/186495"
+                ],
+                "source_projected_rank": 6
+              },
+              {
+                "eta": "1/7",
+                "alpha": "0",
+                "delta_sq": [
+                  "0",
+                  "3416/185565"
+                ],
+                "source_projected_rank": 6
+              },
+              {
+                "eta": "1/100000000",
+                "alpha": "0",
+                "delta_sq": [
+                  "0",
+                  "1708/18375000000000002745"
+                ],
+                "source_projected_rank": 6
+              },
+              {
+                "eta": "1/7",
+                "alpha": "-1",
+                "delta_sq": [
+                  "0",
+                  "28/45"
+                ],
+                "source_projected_rank": 5
+              },
+              {
+                "eta": "1/7",
+                "alpha": "-3/2",
+                "delta_sq": [
+                  "0",
+                  "13664/202035"
+                ],
+                "source_projected_rank": 6
+              }
+            ]
+          },
+          {
+            "name": "T3_XXY_0",
+            "t": 1,
+            "selection": "XXY",
+            "source": 0,
+            "v2": "22/5",
+            "b2": "112/135",
+            "kappa2": [
+              "112/135",
+              "28/135"
+            ],
+            "limit_sq": [
+              "22/5",
+              "11/10"
+            ],
+            "tests": [
+              {
+                "eta": "-2",
+                "alpha": "0",
+                "delta_sq": [
+                  "6832/10685",
+                  "1708/10685"
+                ],
+                "source_projected_rank": 6
+              },
+              {
+                "eta": "-1/10",
+                "alpha": "0",
+                "delta_sq": [
+                  "6832/988235",
+                  "1708/988235"
+                ],
+                "source_projected_rank": 6
+              },
+              {
+                "eta": "1/7",
+                "alpha": "0",
+                "delta_sq": [
+                  "6832/488435",
+                  "1708/488435"
+                ],
+                "source_projected_rank": 6
+              },
+              {
+                "eta": "1/100000000",
+                "alpha": "0",
+                "delta_sq": [
+                  "6832/98000000000000008235",
+                  "1708/98000000000000008235"
+                ],
+                "source_projected_rank": 6
+              },
+              {
+                "eta": "1/7",
+                "alpha": "-1",
+                "delta_sq": [
+                  "112/135",
+                  "28/135"
+                ],
+                "source_projected_rank": 5
+              },
+              {
+                "eta": "1/7",
+                "alpha": "-3/2",
+                "delta_sq": [
+                  "6832/128285",
+                  "1708/128285"
+                ],
+                "source_projected_rank": 6
+              }
+            ]
+          },
+          {
+            "name": "T3_XXY_1",
+            "t": 1,
+            "selection": "XXY",
+            "source": 1,
+            "v2": "8/15",
+            "b2": "112/345",
+            "kappa2": [
+              "112/345",
+              "28/115"
+            ],
+            "limit_sq": [
+              "8/15",
+              "2/5"
+            ],
+            "tests": [
+              {
+                "eta": "-2",
+                "alpha": "0",
+                "delta_sq": [
+                  "13664/45765",
+                  "3416/15255"
+                ],
+                "source_projected_rank": 6
+              },
+              {
+                "eta": "-1/10",
+                "alpha": "0",
+                "delta_sq": [
+                  "6832/756045",
+                  "1708/252015"
+                ],
+                "source_projected_rank": 6
+              },
+              {
+                "eta": "1/7",
+                "alpha": "0",
+                "delta_sq": [
+                  "6832/381195",
+                  "1708/127065"
+                ],
+                "source_projected_rank": 6
+              },
+              {
+                "eta": "1/100000000",
+                "alpha": "0",
+                "delta_sq": [
+                  "6832/73500000000000021045",
+                  "1708/24500000000000007015"
+                ],
+                "source_projected_rank": 6
+              },
+              {
+                "eta": "1/7",
+                "alpha": "-1",
+                "delta_sq": [
+                  "112/345",
+                  "28/115"
+                ],
+                "source_projected_rank": 5
+              },
+              {
+                "eta": "1/7",
+                "alpha": "-3/2",
+                "delta_sq": [
+                  "13664/222165",
+                  "3416/74055"
+                ],
+                "source_projected_rank": 6
+              }
+            ]
+          },
+          {
+            "name": "T3_XXY_2",
+            "t": 1,
+            "selection": "XXY",
+            "source": 2,
+            "v2": "103/30",
+            "b2": "28/45",
+            "kappa2": [
+              "0",
+              "28/45"
+            ],
+            "limit_sq": [
+              "0",
+              "103/30"
+            ],
+            "tests": [
+              {
+                "eta": "-2",
+                "alpha": "0",
+                "delta_sq": [
+                  "0",
+                  "13664/25635"
+                ],
+                "source_projected_rank": 6
+              },
+              {
+                "eta": "-1/10",
+                "alpha": "0",
+                "delta_sq": [
+                  "0",
+                  "1708/186495"
+                ],
+                "source_projected_rank": 6
+              },
+              {
+                "eta": "1/7",
+                "alpha": "0",
+                "delta_sq": [
+                  "0",
+                  "3416/185565"
+                ],
+                "source_projected_rank": 6
+              },
+              {
+                "eta": "1/100000000",
+                "alpha": "0",
+                "delta_sq": [
+                  "0",
+                  "1708/18375000000000002745"
+                ],
+                "source_projected_rank": 6
+              },
+              {
+                "eta": "1/7",
+                "alpha": "-1",
+                "delta_sq": [
+                  "0",
+                  "28/45"
+                ],
+                "source_projected_rank": 5
+              },
+              {
+                "eta": "1/7",
+                "alpha": "-3/2",
+                "delta_sq": [
+                  "0",
+                  "13664/202035"
+                ],
+                "source_projected_rank": 6
+              }
+            ]
+          },
+          {
+            "name": "T4_XYXY_1",
+            "t": 2,
+            "selection": "XYXY",
+            "source": 1,
+            "v2": "34/15",
+            "b2": "1215/4774",
+            "kappa2": [
+              "3645/4774",
+              "1215/2728"
+            ],
+            "limit_sq": [
+              "34/5",
+              "119/30"
+            ],
+            "tests": [
+              {
+                "eta": "-2",
+                "alpha": "0",
+                "delta_sq": [
+                  "236925/494018",
+                  "78975/282296"
+                ],
+                "source_projected_rank": 10
+              },
+              {
+                "eta": "-1/10",
+                "alpha": "0",
+                "delta_sq": [
+                  "47385/14758702",
+                  "15795/8433544"
+                ],
+                "source_projected_rank": 10
+              },
+              {
+                "eta": "1/7",
+                "alpha": "0",
+                "delta_sq": [
+                  "236925/36317078",
+                  "78975/20752616"
+                ],
+                "source_projected_rank": 10
+              },
+              {
+                "eta": "1/100000000",
+                "alpha": "0",
+                "delta_sq": [
+                  "47385/1469664000000000062062",
+                  "15795/839808000000000035464"
+                ],
+                "source_projected_rank": 10
+              },
+              {
+                "eta": "1/7",
+                "alpha": "-1",
+                "delta_sq": [
+                  "3645/4774",
+                  "1215/2728"
+                ],
+                "source_projected_rank": 9
+              },
+              {
+                "eta": "1/7",
+                "alpha": "-3/2",
+                "delta_sq": [
+                  "236925/9312002",
+                  "78975/5321144"
+                ],
+                "source_projected_rank": 10
+              }
+            ]
+          }
+        ],
+        "repairs": {
+          "exact_parent_identity": true,
+          "positive_and_negative_gamma": true,
+          "gamma_zero_projection_nonzero": true,
+          "dependent_parent_zero": true,
+          "outside_stored_span_assertion_counterexample": {
+            "ambient": "orthonormal exact reference r0,r1,r2,r3,r4",
+            "p": 1,
+            "stored": [
+              "r0",
+              "(3r1+4r2)/5",
+              "(4r1-3r2)/5"
+            ],
+            "gamma": "3/5",
+            "discarded": "-4r2/5",
+            "repaired": "r1",
+            "nonzero_change": true,
+            "correction_and_repaired_parent_in_stored_span": true,
+            "no_claim_of_realization_by_specific_IEEE_run": true
+          }
+        },
+        "all_assertions_passed": true,
+        "elapsed_seconds": 0.779
+      }
+    }
+  ],
+  "audit_code": [
+    {
+      "path": "topics/padua-lanczos-drift-20261101/checks/audit-03/E34/independent_limits.py",
+      "bytes": 7420,
+      "sha256": "7fa20f13578ffb1330aa2b59b55d19eac070df83d7458255990bbebb2d42760c",
+      "candidate_sha256": null,
+      "candidate_equal": null
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/checks/audit-03/E34/make_evidence.py",
+      "bytes": 5750,
+      "sha256": "a95411aae6fa678a637272cdd9df744127a4e89d0ee97f1c553dbb3c07b8c2c1",
+      "candidate_sha256": null,
+      "candidate_equal": null
+    }
+  ],
+  "limits": [
+    "Finite checks corroborate analytic proof, not universal computer proof",
+    "No parent-repair benchmark or deterministic IEEE witness run",
+    "No external fulltexts newly inspected; repository literature-digest coverage only",
+    "Local Padua scratch outputs; Windows cold-storage delivery not performed",
+    "No developer fixes, final IDs, registry mutation or Git mutation by this reviewer"
+  ]
+}
