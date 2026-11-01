@@ -1,0 +1,926 @@
+[
+  {
+    "path": "AGENTS.md",
+    "bytes": 3159,
+    "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "agents/WORKFLOW.md",
+    "bytes": 18978,
+    "sha256": "ed7322e091202e880c3d9a68a7ed52ddfdff16f522a1daaaf98864ede9419fad",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "agents/codex/CODEX.md",
+    "bytes": 4969,
+    "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/CORPUS.md",
+    "bytes": 76131,
+    "sha256": "37937a48e89cfee4e9b47f9799252792f2850f1ca1f681f08fd268b8bbd4a878",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/INDEX.md",
+    "bytes": 187537,
+    "sha256": "f7af5cea1ded7afafc9383531949078499223479700453359b86bf839c5928e2",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/README.md",
+    "bytes": 227,
+    "sha256": "eb4b953efcbf3027e10d021354b3a2d52c8fd53ef251b2ea194352a1809b8d23",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/aliaga-boley-freund-hernandez-2000.md",
+    "bytes": 2514,
+    "sha256": "c360bea7f1de8ab61f22cd58fdfa900d0ffe2bb7f57bdbc8372ef59cceb420cf",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/ammar-gragg-reichel-1992.md",
+    "bytes": 2338,
+    "sha256": "ced2fd61ab087ca6f8ae9641daa4ed5019b6a2ae797dbec939d25f85af5884af",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/amsel-et-al-2026.md",
+    "bytes": 6651,
+    "sha256": "90f274358fb2e462393a873d56a51f3444b8ebc5f88577780757e4680608806d",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/austin-et-al-2021.md",
+    "bytes": 3359,
+    "sha256": "c89d4eb02b9f6d4d8abd237624f61e516f06471e4f0f8ae4d9a24a0643d367b3",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/bai-day-ye-1999.md",
+    "bytes": 2673,
+    "sha256": "354f0f81c4308feff92d0f18ddc78647bf720f39a4cb513ae75c0d851ca9de53",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/ball-2012.md",
+    "bytes": 1484,
+    "sha256": "ef2dc3c86fb42b1e30a8a5bf7785a0d82d2dc1a1e91a882b500e521baaedc736",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/barrio-pena-sauer-2010.md",
+    "bytes": 6255,
+    "sha256": "aa93474508e5559b557d59c7a913c1b6251fd063a9e1d7cd7532e96fd2431d37",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/bartels-jezioranski-1985.md",
+    "bytes": 14526,
+    "sha256": "c5886c6de3e2f1cac7f70592758f02652d9c041c5942a4de7125b4aff0a7b7fa",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/bayer-teichmann-2006.md",
+    "bytes": 2424,
+    "sha256": "30bf86a47d63cc606a5717b157aec407a5072d35b958039d651ff42327efa6bf",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/bjs-2008.md",
+    "bytes": 1679,
+    "sha256": "0824d2622e7839f792057ca8b2eda59d45c9ea18a68097eff3e1533c89a6f222",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/blekherman-2012.md",
+    "bytes": 3376,
+    "sha256": "c039b6ce5a04ceb1d49effde61a0df58bd2e396f3c85b34a3e4a8ae6c7fc1664",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/bojanczyk-et-al-1987.md",
+    "bytes": 2325,
+    "sha256": "f1c261c491682402b72a88424a1ca176ba6330abeb18548b06b93903541129d6",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/bos-dm-waldron-2009.md",
+    "bytes": 1660,
+    "sha256": "23596b59834c27ee63ce4606c502b2cc6a85eebef0fff7789637d8119442d809",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/bos-dmv-xu-2007.md",
+    "bytes": 5058,
+    "sha256": "01c0d51e40355c00bf813b28d5164601b7d688cf47a9eb2138e687a67ae5fd45",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/brubeck-nakatsukasa-trefethen-2021.md",
+    "bytes": 5001,
+    "sha256": "a1df44a77a3d34c4c066f4c1923d987d727ea42dc2be65a7953dd1cd3bbe018d",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/caliari-dmv-2008.md",
+    "bytes": 5010,
+    "sha256": "7b103bf5f533df91ea53582984b6527a6ff07f6d302a2099303fdb0a345e6efc",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/camargo-demarchi-2015.md",
+    "bytes": 2330,
+    "sha256": "d82827c3ddc53ca7934fe7fbed617e9a14f4a66f99890fe8ce37bf52eddb0e64",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/cao-ghimire-wang-2022.md",
+    "bytes": 1796,
+    "sha256": "96fff78e2545d1ebe0030ec4440a790fc86073e8d16e07409188f0163e47964d",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/carpraux-godunov-kuznetsov-1996.md",
+    "bytes": 2952,
+    "sha256": "dd9085ae8f475fca851a94514b31f3fc4840b99d24bdfec81feb6f4d0edf06f0",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/carson-et-al-2025.md",
+    "bytes": 3747,
+    "sha256": "fa309b0afca2c85ea06317d022d18c3a027338d1fbea670e9a36aa5f68e2a7d7",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/chang-paige-1998.md",
+    "bytes": 2377,
+    "sha256": "cc121bdb8b495a5afbfccab0b45f65b5d1d0caabd0b6f01504927dd828c06177",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/chen-2026.md",
+    "bytes": 5675,
+    "sha256": "f52b5d74aaae29f3a89f5f1143a4f6c2dc21ed1465a4f2eebf8eb8477955de00",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/chen-trogdon-2024.md",
+    "bytes": 3785,
+    "sha256": "af4a67fd88147d3325a0f819bb7e64e80e8fc2306fe9631471ef8762352520a8",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/cichon-stochel-szafraniec-2005.md",
+    "bytes": 2646,
+    "sha256": "70a16322de3f05bf4df8eb0aff0948e087fc1780af8bc6ce2f28d6c1818172be",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/collowald-hubert-2018.md",
+    "bytes": 2322,
+    "sha256": "6ddbaa72a6678a4627a30768e1599a8cbaa94d23b395986abff56086a5216960",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/cools-poppe-2011.md",
+    "bytes": 1996,
+    "sha256": "8d2e1df883ed61d843cb5629a65a3018e137dc7521315262afa35f8fff250eca",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/curto-fialkow-1996.md",
+    "bytes": 5562,
+    "sha256": "2663cb203f7030572ba0027d805ad76e48a6701bb593ea9bc0fac43505e17193",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/daniel-gragg-kaufman-stewart-1976.md",
+    "bytes": 2822,
+    "sha256": "0e82e763f8aad09913ad1afb8e9effcf4f435d462b3b86a807d628d8835477fb",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/davidson-doron-shalit-solel-2017.md",
+    "bytes": 2940,
+    "sha256": "ea60dd11eb0d05953ceff06c66a0518b310bf7979f38596fe0a98388724ac441",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/degani-schiff-tannor-2005.md",
+    "bytes": 17472,
+    "sha256": "58f60b9e0785a9e33cf98d7c2bcb07f9460d4d9a0f9e5182d7d8dcde0debb291",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/delgado-et-al-2010.md",
+    "bytes": 1839,
+    "sha256": "ee7c482ee819667d322592f1e4a91a4fb5b920e35a60b34a9421b3606ff2dcbf",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/delgado-geronimo-iliev-marcellan-2006.md",
+    "bytes": 3026,
+    "sha256": "64f9251341e6c1a34651ee2f6ecfb0649c346aa1bf459dc460e6154c9dceaccc",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/demarchi-usevich-2014.md",
+    "bytes": 1966,
+    "sha256": "9e2d30e452aa9577f81986b4ee682d56e7de17aa1f302563885dc9ef5a3f41cb",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/dencker-erb-2017.md",
+    "bytes": 1795,
+    "sha256": "97f8316f7f916ba2fa0184e3066d20f5dd661835ecb1fd2f30521d139be96307",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/di-dio-schmudgen-2018.md",
+    "bytes": 6603,
+    "sha256": "03a55dc3a1c0c575751c43b85acaf22deee94ea3856b6723d97662fd36552795",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/drkosova-et-al-1995.md",
+    "bytes": 2673,
+    "sha256": "91fa1525c435ca9dce24da4a7b3b41a8bc8418c4fb51daabd8f6e9e31df90c34",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/dunkl-xu-2014.md",
+    "bytes": 2681,
+    "sha256": "e56340765f75609b6443be4d253e85d74e291b572899b2cd9baa744309b7b371",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/eftekhari-et-al-2021.md",
+    "bytes": 3108,
+    "sha256": "d514e168be3dda38072cb99f613a00c71d576ad7e9bc55ac73218417c1ff4a8b",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/egk-1991.md",
+    "bytes": 18029,
+    "sha256": "69b2932803313b6702b5b1aac36cb42d1c0997945692df67d82abdcb3d026e49",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/elsner-ikramov-1997.md",
+    "bytes": 2479,
+    "sha256": "3ea7d661b7c51efde45fffa7f2f4242bc62d185a7198ffaa8a5e48c7f10d9a74",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/faghih-et-al-2025.md",
+    "bytes": 2462,
+    "sha256": "e504421b5b01082a5d494e25c8aedf0e12965b90a69791a3e550c29adaef93a6",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/faghih-vanbarel-vandebril-2026.md",
+    "bytes": 3592,
+    "sha256": "a25de5cf5349bed280f7908450986f817271262e29b4c0618dba12ad31357385",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/fasondini-olver-xu-2023.md",
+    "bytes": 4940,
+    "sha256": "a2c24f5669dc07dad37f9c246bb13ae8ee2e1dd027f095247fdb7c4f3b0333f5",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/fischer-1996.md",
+    "bytes": 2139,
+    "sha256": "5ab530ce6992c856290454fb0743b06a390fc016ea3d815712526b569103cc19",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/fischer-1998.md",
+    "bytes": 2703,
+    "sha256": "ee4a4dd1a7fd4f5145bde26806bfc3e81ed2a00e186d1feb12aba79c4bafabe7",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/fitzgerald-lax-1998.md",
+    "bytes": 1475,
+    "sha256": "7b599fd5d4949ab65766ad62fc693d0dcad2794b8cc6fdc5b921333617454b66",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/floater-2017.md",
+    "bytes": 1883,
+    "sha256": "f1ab7c9b18a415ab2894f2c86bb43419d43db043f84f3cbf70e4ff06684b623f",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/freund-2000.md",
+    "bytes": 3111,
+    "sha256": "6340a90809f813c3687ea8a0037d754bcdd97de249cb81076cb50a8e493b9a53",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/gautschi-1982.md",
+    "bytes": 2327,
+    "sha256": "2c4782c4a97b6d1febf60ff999bbf47ecba42082e252d6cbf31947c19aee926e",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/gill-golub-murray-saunders-1974.md",
+    "bytes": 2486,
+    "sha256": "0ae3cf58ee8f9926689e61be477c1c6435d715e9981a1cae5f9f7428947d3de0",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/greenbaum-1979.md",
+    "bytes": 2922,
+    "sha256": "3f733c0e86f59e927dd668309ddf2e2ba323848145061fd774323a2b09c448d9",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/greenbaum-1989.md",
+    "bytes": 13535,
+    "sha256": "2f79433effc466c4dd0c1c031d9d9e2d4745ed34a012123d51b7f8dfd9667e5e",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/greenbaum-strakos-1992.md",
+    "bytes": 2608,
+    "sha256": "a00c7a0ebdecf6a39d91c76c22360c26c784d32b122fca27c2c6aff46b10d245",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/hankel-op-background.md",
+    "bytes": 1547,
+    "sha256": "c1c26bb3481c674da2b52e67de84eb43e19f0901cc726f155d7e7bab9728cbc0",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/harris-2023.md",
+    "bytes": 1628,
+    "sha256": "666a2c653a3f0b1f09063e9483007d2c494c6006309b8ee3ea5a6eaeb8fd4f6e",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/harris-simanek-2021.md",
+    "bytes": 8115,
+    "sha256": "f8180df288f6bad8966dd28452931abe4c21244f9962f25b6443466c325dbbd1",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/he-kressner-plestenjak-2025.md",
+    "bytes": 2635,
+    "sha256": "d2854f438f11bc376f1b05e7fff4330360c964f28382a06078c6b1c548f18bea",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/heldt-kreuzer-pokutta-poulisse.md",
+    "bytes": 3389,
+    "sha256": "aca1ff8e6d7953121c5bdf1dab37e792823ff6c4f06c29072dcedf2008204b44",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/higham-2002.md",
+    "bytes": 2724,
+    "sha256": "7cdcd68e8b8d6af59a4005d1ef610ac15d801899901c4dedd73a6b39d808e8e7",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/hoeven-schost-2013.md",
+    "bytes": 1813,
+    "sha256": "615d87341db7cab6a8a17912a4b90612613b80117ca283b3f266eda1b3eb1365",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/hoeven-tft-2004.md",
+    "bytes": 1782,
+    "sha256": "826f4aa495e4fc6e0f4f1f7f91607aa5db12ab78ad668fe8787e63aed436daf1",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/hokanson-2020.md",
+    "bytes": 7518,
+    "sha256": "3d457d78bda54c38f5249d5bba79fda84c8bed73a5200d5f2cf1039f2b54c649",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/hubert-singer-2022.md",
+    "bytes": 1748,
+    "sha256": "9471745759dd9e0bc8f01565ae2fdaf41bb4f2430e471f2e28b754463e05a90c",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/huhtanen-2003.md",
+    "bytes": 2361,
+    "sha256": "dc0c43b57ebe83bab8687a78e33d11ac9f30ce26761e2a11eee46b1bd9894767",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/huhtanen-larsen-bit-2002.md",
+    "bytes": 22288,
+    "sha256": "beb8a0e6a36c43c58a54c7a86b73cff0a303d571929c3a0333e73f6bf30748e5",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/huhtanen-larsen-simax-2002.md",
+    "bytes": 14941,
+    "sha256": "65ead53651bdb071f826a760e90837233b22dd52698aac3430fd8347174d4114",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/huhtanen-simax-2002.md",
+    "bytes": 8420,
+    "sha256": "4eb0a6202d698d8ac37d999c84844077302c95e0d38ca63f93bdfa653016c23c",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/humet-2019.md",
+    "bytes": 5611,
+    "sha256": "94c60d4fc8d87b07f8955f760ebcd4c61df745c9d549f688575f6d982b64c8e2",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/jia-li-2021.md",
+    "bytes": 7385,
+    "sha256": "b81013560e124fd4f546b323d2be4d9af02cc3b330fc2d788919a40ba7ec8395",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/kachkovskiy-safarov-2016.md",
+    "bytes": 11625,
+    "sha256": "a367134c45e7ddd3305ff53b15054a548bd2adebfb6f929e8bbb8aa0c1941b7b",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/koiran-2024.md",
+    "bytes": 9032,
+    "sha256": "5e927fc3d0aa0d8f6de646eed983a69a9828dced7ecc4fc2ec9cf2ec9d165cac",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/kressner-2018.md",
+    "bytes": 2392,
+    "sha256": "dd3ada171c7c78ffb78f217013c426008d9ff80dc0a5447562375669612f9db0",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/kressner-oehme-2026.md",
+    "bytes": 2326,
+    "sha256": "5d6f90943bf45b1b4a4d2183cfaf8df1f84aeff5cd4224249850bffd2526293a",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/kuznetsov-1997.md",
+    "bytes": 2732,
+    "sha256": "200c7771131d575ddcaea6cbb7b6e7cc7732be620aa2fe51c95e4c12755a6102",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/larsen-1998.md",
+    "bytes": 2531,
+    "sha256": "be19bfc1fe12da8dbc5b4eb31f36f593ce1c531ab1c40fab2ed3fc708958181d",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/lasserre-gaussian-cubature.md",
+    "bytes": 2987,
+    "sha256": "79dcbf2676d05b77d8e7cb713007120a53a20f2e4bd51cbbd6838dc1e95b9201",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/li-bai-su-zeng-2007.md",
+    "bytes": 3160,
+    "sha256": "a3a92746a2fbc3f311c4e6765b5d1b074e6f757579fcbbd708df244eb07d7a2d",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/li-sun-xu-2009.md",
+    "bytes": 1833,
+    "sha256": "f384d5b0ba6e15edaf20842c1d166f89432b3492b0a5878a7d7e7b23b73b7b53",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/lima-souza-2011.md",
+    "bytes": 2227,
+    "sha256": "5c79216d7d9cfd0ac324c1880dd2a2b9c4f4f4d5935fa1b0b44a892c45d016b8",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/lin-1997.md",
+    "bytes": 7971,
+    "sha256": "5c8fbb3d5a5f7c1e95334adeec96ac69c26e14fabddc535b30439219258787ff",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/liu-narayan-2023.md",
+    "bytes": 8486,
+    "sha256": "418402497965da512930dee5984a9d12baf7d32a806cb0457c94988b80f5c17a",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/lopez-renteria-villarreal-2014.md",
+    "bytes": 1434,
+    "sha256": "9cb5f38ebfa7ceae3b4465f6feb456e1253180a464c6ac0ca3556fdffc95a278",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/lower-set-background.md",
+    "bytes": 1502,
+    "sha256": "a480da3299bd28848f4e6a5ab5c1049bf10ecc61a0147d033e1d75703bfe3a09",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/meurant-2014-slides.md",
+    "bytes": 3050,
+    "sha256": "419faea881578b6299d84351a1cfa13a30e58853644e2ce4d29ad633a76c45ef",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/meurant-sommariva-2019.md",
+    "bytes": 2565,
+    "sha256": "965b3cee0f5b80dff6a1e1166caeb2dbf17ca7b6af68af04c4ae17837b3a94ba",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/meurant-strakos-2006.md",
+    "bytes": 3459,
+    "sha256": "adf991d7dc886fdb211f079616ca01f7cfe4af2e8bee13a93b4789932249a4d9",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/mourrain-2017.md",
+    "bytes": 5184,
+    "sha256": "073b61a83d5e31499649ecff29cb764925cce009d9936c0177852e8534d17fc5",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/mourrain-telen-vanbarel.md",
+    "bytes": 1673,
+    "sha256": "e6fb860307d8484bd0109961e69483561cc744fd4650dbb8d86260c535df407d",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/mz-an-sommariva-vianello-2026.md",
+    "bytes": 2883,
+    "sha256": "0ab57a7f40d6319690455c2e4974f466e24e045249679d0536472876af79a4a4",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/mz-an-wu-2022.md",
+    "bytes": 2038,
+    "sha256": "78c03e8569a4dc64ebef571e6ce2baea72cca875cbc072d4f881ba9479fc2c5d",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/mz-classical-mz-screen.md",
+    "bytes": 2985,
+    "sha256": "07b8b13565170c3e85a5368977c54ea2125e75e0bea0fea7639f8187dccce17c",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/mz-don-gottlieb-1994.md",
+    "bytes": 1383,
+    "sha256": "e971462160001ca066c38969c31b230ac1a0eebda7ec2fe55323ff0c40856540",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/mz-input-reports.md",
+    "bytes": 2480,
+    "sha256": "e105a2f6c1d1139fbb5d7af2da5f537c1df7959653bfe0a3802911a659961bea",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/mz-mastroianni-milovanovic-2008.md",
+    "bytes": 1521,
+    "sha256": "51d22129385c8f4ddfa563fac804a3e6176939af2470557064362645d5c284ee",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/mz-mean-convergence-screen.md",
+    "bytes": 11206,
+    "sha256": "58270d1eec08635db5fb1538de93a697b0e052805a1ccd9294fc3761bc93bb27",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/mz-passi-cv-2026.md",
+    "bytes": 2146,
+    "sha256": "bcdf0db38572b370486888616409f707f30ac834e5d038836899fdda801f46cc",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/mz-quadrature-aliasing-screen.md",
+    "bytes": 4157,
+    "sha256": "1321793123ef83890fa7dfbc1cecc14c754a350c6cb809d47017d1e87d3ccbf2",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/mz-sloan-smith-1978-1980.md",
+    "bytes": 2203,
+    "sha256": "00c4b09510f3a40d284edc2374b88e49558df728ebdf7cf305dcc84b76211994",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/mz-widom-1966-screen.md",
+    "bytes": 1732,
+    "sha256": "232ec883e16b52de73081ff10baa4356971ec6549bd87a1a948ad3c4a31c680e",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/olver-townsend-vasil-2019.md",
+    "bytes": 3853,
+    "sha256": "c25fd7dc515deaf21aa6c496e1b36ae85d4bad71a76b51a7361f00c933a3ef0a",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/paige-1971.md",
+    "bytes": 7616,
+    "sha256": "928f9a5d50f105b6fa3aeb3341e51369b14f0974f357929dfa350fbf4d7c6284",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/paige-1976.md",
+    "bytes": 8044,
+    "sha256": "595c5e2042bfebd9ab0838a89a69db4d16ad2e4a50228572ba9beea30eeee8ee",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/paige-1980-lanczos.md",
+    "bytes": 8397,
+    "sha256": "dbf16acc2862878f3ac28e2fb3581eb0d3f280bea1fee7e922ad1d7db4a746ea",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/paige-1980-updating.md",
+    "bytes": 2843,
+    "sha256": "d837b187adaa6ba996023f2d2a17f2f2121e16ec5ca0557fa674799fe30ebaca",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/paige-2010-augmented.md",
+    "bytes": 3271,
+    "sha256": "721eb91167e12c76940e4490660019d7f8b520d277082be72624af048a977a95",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/paige-rozloznik-strakos-2006.md",
+    "bytes": 2784,
+    "sha256": "a74850ba678c51ccca4afd4e221afa1f5992d1076b058545753c6c4a1b5a3c82",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/paige-vandooren-1999.md",
+    "bytes": 2305,
+    "sha256": "6dec257eba56933888fdf555245462f93dcbfea272f58e20224795d5ce7e0261",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/passer-shalit-solel-2018.md",
+    "bytes": 3551,
+    "sha256": "60aadd6b9603baedc354b15a99c4b11ce97f07bd569e136da017b3b634c46112",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/putinar-1997.md",
+    "bytes": 2694,
+    "sha256": "2c5a8378d2c47f4a865aca13a1ca2fca7a2e052642681f6620235543f5e4c970",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/sauer-2007.md",
+    "bytes": 6176,
+    "sha256": "d6dfdd85757cee65546f1e084f84262e9807716a3faa40807801c7ca397a81f9",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/simon-1984-laa.md",
+    "bytes": 5898,
+    "sha256": "43668415890b1b730293cd37438aad1a751543b623377d9bd7a6f3bf6554892d",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/simon-1984-mathcomp.md",
+    "bytes": 14356,
+    "sha256": "416b06b4093dbe30b597c95a289d7e2a4411730e3415a101a7a19205c29a185c",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/simonova-tichy-2025.md",
+    "bytes": 11314,
+    "sha256": "e9f036a3b733eca421e4845683d8c8f83c8183887e94480fcc9b10d0bc42833a",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/sinha-2026.md",
+    "bytes": 6671,
+    "sha256": "8d05c7ff04254154e84da84cb69a58aae49bf500d499f47f650c03df64b10e8e",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/sommariva-vianello-2015.md",
+    "bytes": 5288,
+    "sha256": "68c7385f6b7bcd2aba95528a1ed8ecb7ad6ad5cef8ab0d8b8e029928ca27ad29",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/stewart-1979.md",
+    "bytes": 2399,
+    "sha256": "9298d5fb2bb271c5c0b83c8c1bc39d04975bd2691dc7090aa8fe2efc9f25b208",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/stewart-1992.md",
+    "bytes": 2215,
+    "sha256": "298c3526492385153e47d7b0c421f9f7f80bda161040eb67544291b543dd88b8",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/stewart-1995.md",
+    "bytes": 2655,
+    "sha256": "ec0f65c144570839ae4838b54c80dd5890604f4cc34d065c8f2fb4be0e5bd5da",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/stewart-2001-krylov-backward.md",
+    "bytes": 3232,
+    "sha256": "b9d6b46bcd45b0918fbc137d9fc6b4b0d64e5c2ceb4982bf9ff76e42693a051c",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/sun-1995.md",
+    "bytes": 2421,
+    "sha256": "3e2ddbe253790ea0cf04b7e235a3bb519da812cacc52416ac4ce4f621245a636",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/supplied-01.md",
+    "bytes": 1865,
+    "sha256": "98a216b6938817cf564789ff28d8b3d7bd58009863d1a05f5975217069be63a6",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/supplied-02.md",
+    "bytes": 1871,
+    "sha256": "535871912cf50bf4cad0a29126f8e56fcb00e2d56e8cb21c0e12ce00dbd70aef",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/supplied-03.md",
+    "bytes": 1885,
+    "sha256": "0b67fdd5f469d9d43058deb92e2c0821c019f4df5c13578013ae0dc7a94ea576",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/supplied-04.md",
+    "bytes": 1883,
+    "sha256": "1b1d760ba8a950bed7b5ac8fbd8a15c64b5227007327a77355f25408aff6fe19",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/supplied-05.md",
+    "bytes": 1893,
+    "sha256": "a9e3e463b2adf473a76f4669afd247b9913a111aeb57cd1e51f52e6326e91b87",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/telen-mourrain-vanbarel-2018.md",
+    "bytes": 2889,
+    "sha256": "39030b16138fa420503906ecf5692ccdf2b09a639485689bbb71e9c4c74ba841",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/vanbarel-chesnokov-2010.md",
+    "bytes": 24384,
+    "sha256": "9f46971a012fd9918dbac94d7af53e20c7a10910026dfa37a1a8735eadaeb8a5",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/vanbarel-humet-sorber-2014.md",
+    "bytes": 5573,
+    "sha256": "5d3be8378e0ef4ef7b67ff865732090a11357a59c3283555ac5f4245236b8516",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/waldron-2011.md",
+    "bytes": 2764,
+    "sha256": "d551a0a3320fcb3e32d9dbbca9c399ae9c2c77d331b3595332832c1bea2a72f4",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/weisfeld-1959.md",
+    "bytes": 5460,
+    "sha256": "19b0c206fed34514a8b7639ee3780dc885fa1e2ad152b831f4b018f7113797c6",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/xu-2017-survey.md",
+    "bytes": 3610,
+    "sha256": "08066bfbffea12eda7173420d86d72c202fef26934954b6918ddd23c72728598",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/xu-2025.md",
+    "bytes": 1643,
+    "sha256": "c99d6b308bf86eb1b5edbfdd5084925c304fd903a8c022a85bc892fcc6289c69",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/xu-lecture-notes.md",
+    "bytes": 4761,
+    "sha256": "f30b7b3e649820ab66b99a0263b9009e95c21ab3168034b1502911e5f57fae69",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/xu-pitman-1994.md",
+    "bytes": 12650,
+    "sha256": "ec05c1151be4568aaa8e787b2af82625cdb170d5375eccfc562ae4bcd771db0d",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/xu-siam-1994.md",
+    "bytes": 19869,
+    "sha256": "d41f13f605a310a9f7218047fddc2f4f61e24c166d919f2df937e0266577bace",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/xu-tams-1994-blockjacobi.md",
+    "bytes": 7748,
+    "sha256": "fb5d64493dcf85c4842d185a3443455443f70eea7ffa2e14769a9ff264868c25",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/xu-tams-1994-operator.md",
+    "bytes": 9520,
+    "sha256": "65ee5d1d8e32bf8827cd95bdf9c35b1706eb74ec812a7238b28e7fd0d4fb2e1d",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/zaccaron-2014.md",
+    "bytes": 10497,
+    "sha256": "1acfcf975e7c603651a16c1d4c47de7cbce4162ea94182620d3bd14810762ff4",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/zhang-su-li-2024.md",
+    "bytes": 3257,
+    "sha256": "e2b39e1c23e4b5f761bf37cb4ddcc25965d490b1c0f212e28a11edf1882aaf80",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/zhang-zhang-yang-wu-2024.md",
+    "bytes": 2970,
+    "sha256": "00150cd20060d0598a6f83cd498b7d9496d97e43a0e68a6e937096fd1e3e5345",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "literature/records/zhu-nakatsukasa-2026.md",
+    "bytes": 10163,
+    "sha256": "1d5e34605cad80052bb94e2bd07c3ba4489f468d7941cc6bc9eb20225330051c",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "state/IDEAS.md",
+    "bytes": 134669,
+    "sha256": "8a9c3f5e5cedb9211218b884eabce7fdefbbf1f2bd3bab32d3abd082f3998839",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "topics/bivariate-lanczos-20261031/audit-01/protocol.md",
+    "bytes": 7275,
+    "sha256": "151207c887eaf764f8266d20e4df4ec3b98f787926058c647eb15df6845e633b",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "topics/bivariate-lanczos-20261031/lit/search-log.md",
+    "bytes": 28325,
+    "sha256": "d818ba5679ca3f4e97dd338d4cd1c2662fec4593437a4394eb4661946beb7b4f",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "topics/bivariate-lanczos-20261031/pr-prep/id-map.json",
+    "bytes": 30234,
+    "sha256": "e5f4974b878b509b896cd2f69aae3220fa789d5c9347dbcb40baa77a419b1948",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "topics/bivariate-lanczos-20261031/reviews/L1-prior-art-01.md",
+    "bytes": 22810,
+    "sha256": "3a5b769bdc7fc23e1237f67a967da6ace6b92cf155c629d88e0434e404f431b1",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "topics/bivariate-lanczos-20261031/reviews/L2-prior-art-01.md",
+    "bytes": 22384,
+    "sha256": "66d259d1e708a07c6f920491dc14f586c4381b4c7fe7c04d97f0b5b191c06d29",
+    "worktree_matches_head": true
+  },
+  {
+    "path": "topics/bivariate-lanczos-20261031/reviews/L3-prior-art-01.md",
+    "bytes": 22881,
+    "sha256": "d88d5aec7e16e338a092b0541d411cf3e8bb3f5827b57f58aad9e07611929463",
+    "worktree_matches_head": true
+  }
+]
