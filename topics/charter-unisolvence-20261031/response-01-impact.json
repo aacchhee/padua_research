@@ -1,0 +1,253 @@
+{
+  "source_audit_delivery_commit": "3bd9d4e8e7817eaf0abd5b7a750ea77eb8101342",
+  "audited_scientific_commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+  "scope": "A2 reference and completed-handoff/acceptance metadata edits only; all protected mathematical sections and all 13 epistemic statuses compared byte-for-byte/label-for-label",
+  "protected_math_sections_unchanged": true,
+  "epistemic_statuses_unchanged": true,
+  "theory_files_checked": 13,
+  "changes": [
+    {
+      "path": "tracks/unisolvence/theory/u0/code-distances.md",
+      "before_sha256": "641178876ac5a6a398ed87c835af94dc767668c59859f18002d81ad1c8c43377",
+      "after_sha256": "795d20b1201ab9b3355ad2467c1cc4ccb6e2c4fbd66eb3917e2d9dc3bfcd0476",
+      "editorial_replacements_added": [
+        {
+          "old": "The independent adversary separately reports `q=7`, `k=1,2` enumeration returning `7,4`, with `57,19608` projective messages. Integration of its report/hashes is the orchestrator's audit step. Its suggested elementary proof excluding a linear `[10,6,5]_7` code is a bound for all codes, separate from this record's measured attainment. U0 does not inherit a proof merely from that message. The complete bound proof is handed off for a separate durable result.",
+          "new": "The integrated [independent U0 report](../../../../topics/charter-unisolvence-20261031/independent/u0/audit.md) and its frozen hashes record `q=7`, `k=1,2` enumeration returning `7,4`, with `57,19608` projective messages. The elementary universal linear-code bounds are separately integrated as [PD-T012](code-optimality-bounds.md); this record's attained distances remain MEASURED. [AUDIT_LOG](../../AUDIT_LOG.md) links Claude audit-01, which independently reproduced all eight rows and accepted this status separation."
+        },
+        {
+          "old": "Independent adversarial acceptance pending.",
+          "new": "Claude audit-01 accepted the stated scope and MEASURED classification; administrative dispositions are in response-01.md."
+        },
+        {
+          "old": "2026-10-31, Codex U0, assigned `gpt-6.1-sol xhigh`; rules/base `d36722823441dc40c6e19d69a174459348dd309c`. Split the finite table from proved general structure and from all-code optimality bounds.\n",
+          "new": "2026-10-31, Codex U0, assigned `gpt-6.1-sol xhigh`; rules/base `d36722823441dc40c6e19d69a174459348dd309c`. Split the finite table from proved general structure and from all-code optimality bounds.\n\n2026-10-31, Codex response-01 A2: updated completed handoff references and Claude audit-01 acceptance metadata only; mathematical statements, proofs and epistemic statuses unchanged.\n"
+        }
+      ]
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/code-structure.md",
+      "before_sha256": "a6188a5097201aee46d4a2407efbdcf96b2ef69ebe1dcbde87e67f9a60dacf91",
+      "after_sha256": "dbb68fc3319b983efda66cf02459fc9d1410461cac4ed61c826ffe772b39b65c",
+      "editorial_replacements_added": [
+        {
+          "old": "The independent adversary has supplied a separate self-contained all-code bound, `PD-T012`, in `independent/u0/code-optimality-bounds.md`; integrating and accepting that bound is the orchestrator's handoff. The finite attainment observations stay in `PD-T010`. Independent acceptance pending.",
+          "new": "The integrated universal linear-code bound is [PD-T012](code-optimality-bounds.md). The finite attainment observations remain MEASURED in [PD-T010](code-distances.md). [AUDIT_LOG](../../AUDIT_LOG.md) links the independent reports and Claude audit-01, which accepted the stated mathematics; response-01 records the administrative dispositions."
+        },
+        {
+          "old": "required Claude audit PENDING",
+          "new": "Claude audit-01 accepted the mathematics"
+        },
+        {
+          "old": "2026-10-31, Codex U0; rules/base `d36722823441dc40c6e19d69a174459348dd309c`; assigned `gpt-6.1-sol xhigh`. Split general structure (written proof) from finite distance observations; obtained the lower bound directly from unisolvence.\n",
+          "new": "2026-10-31, Codex U0; rules/base `d36722823441dc40c6e19d69a174459348dd309c`; assigned `gpt-6.1-sol xhigh`. Split general structure (written proof) from finite distance observations; obtained the lower bound directly from unisolvence.\n\n2026-10-31, Codex response-01 A2: updated completed handoff references and Claude audit-01 acceptance metadata only; mathematical statements, proofs and epistemic statuses unchanged.\n"
+        }
+      ]
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/discriminant.md",
+      "before_sha256": "1975f3cab8a337b3e65e4d00df9c24b779e9ddfa35d9d3ee9525bc0b695bbd84",
+      "after_sha256": "04da2efb173a8565686c6aec04892911779a009ef60b87e4cacbab8a1e15a551",
+      "editorial_replacements_added": [
+        {
+          "old": "required Claude audit PENDING",
+          "new": "Claude audit-01 accepted the mathematics"
+        },
+        {
+          "old": "required Claude audit pending",
+          "new": "Claude audit-01 accepted the mathematics"
+        },
+        {
+          "old": "2026-10-31, Codex U0; rules/base `d36722823441dc40c6e19d69a174459348dd309c`; assigned `gpt-6.1-sol xhigh`. Recomputed both determinant exponents and the `n=1` boundary count; scoped the bad-characteristic corollary to integral canonical reduction.\n",
+          "new": "2026-10-31, Codex U0; rules/base `d36722823441dc40c6e19d69a174459348dd309c`; assigned `gpt-6.1-sol xhigh`. Recomputed both determinant exponents and the `n=1` boundary count; scoped the bad-characteristic corollary to integral canonical reduction.\n\n2026-10-31, Codex response-01 A2: updated completed handoff references and Claude audit-01 acceptance metadata only; mathematical statements, proofs and epistemic statuses unchanged.\n"
+        }
+      ]
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/gram-unisolvence.md",
+      "before_sha256": "24e39132b79a56c215f0e823a90a1909b82c64e01373a266047c2fafb1c5888c",
+      "after_sha256": "732f61a4f6fbd85b63be2c587867016d7a50a3c99c6496ffec7583cde4d4df3f",
+      "editorial_replacements_added": [
+        {
+          "old": "required Claude audit PENDING",
+          "new": "Claude audit-01 accepted the mathematics"
+        },
+        {
+          "old": "required Claude audit remains pending",
+          "new": "Claude audit-01 accepted the mathematics"
+        },
+        {
+          "old": "2026-10-31, Codex U0 developer, rules/base `d36722823441dc40c6e19d69a174459348dd309c`; assigned `gpt-6.1-sol xhigh`. Independently reconstructed the character-sum proof after source reproduction. Replaced ambiguous source `Pad_n(F_q)` quantification with its explicit coordinate field.\n",
+          "new": "2026-10-31, Codex U0 developer, rules/base `d36722823441dc40c6e19d69a174459348dd309c`; assigned `gpt-6.1-sol xhigh`. Independently reconstructed the character-sum proof after source reproduction. Replaced ambiguous source `Pad_n(F_q)` quantification with its explicit coordinate field.\n\n2026-10-31, Codex response-01 A2: updated completed handoff references and Claude audit-01 acceptance metadata only; mathematical statements, proofs and epistemic statuses unchanged.\n"
+        }
+      ]
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/measurements.md",
+      "before_sha256": "bd42c34e2328facd5686a4bf8962977efa7237e496408dc368936e046aac4fbe",
+      "after_sha256": "11e77e67b5dae3135ee029b774b0f15dd752741867659ebe49e8b1fdbfa9e7b4",
+      "editorial_replacements_added": [
+        {
+          "old": "Independent adversary has reported separate reruns to the orchestrator; its exact report and hashes must be integrated before acceptance.",
+          "new": "The separate reruns, exact report and frozen hashes are integrated in the [independent U0 record](../../../../topics/charter-unisolvence-20261031/independent/u0/audit.md). [AUDIT_LOG](../../AUDIT_LOG.md) also links Claude audit-01, which accepted the mathematical statuses and independently reproduced the finite observations; those observations remain MEASURED."
+        },
+        {
+          "old": "independent acceptance pending",
+          "new": "Claude audit-01 accepted the mathematical classification"
+        },
+        {
+          "old": "2026-10-31, Codex U0, assigned `gpt-6.1-sol xhigh`; rules/base `d36722823441dc40c6e19d69a174459348dd309c`. Reproduced unchanged sources, preserved all logs outside Git and separated their scope from proofs.\n",
+          "new": "2026-10-31, Codex U0, assigned `gpt-6.1-sol xhigh`; rules/base `d36722823441dc40c6e19d69a174459348dd309c`. Reproduced unchanged sources, preserved all logs outside Git and separated their scope from proofs.\n\n2026-10-31, Codex response-01 A2: updated completed handoff references and Claude audit-01 acceptance metadata only; mathematical statements, proofs and epistemic statuses unchanged.\n"
+        }
+      ]
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/open-targets.md",
+      "before_sha256": "75e993977e9d1cd5a0c4437b003bafed181475c0ec36906e8b974653df86562c",
+      "after_sha256": "65f6a21cc84767082006e4679f75de05c89846ffe8a2219bc22dfd98ca18db4f",
+      "editorial_replacements_added": [
+        {
+          "old": "The independent adversary's `q=7` all-code optimality bound is handed separately to the orchestrator; it is not included in these OPEN targets or silently inherited as proved.",
+          "new": "The independent `q=7` universal linear-code bounds are integrated separately as [PD-T012](code-optimality-bounds.md), with acceptance recorded in [AUDIT_LOG](../../AUDIT_LOG.md). They are not included in these OPEN targets or inherited as proofs of either extension."
+        },
+        {
+          "old": "2026-10-31, Codex U0, assigned `gpt-6.1-sol xhigh`; rules/base `d36722823441dc40c6e19d69a174459348dd309c`. Preserved exact unverified source extensions without letting them weaken the separate proved core or pretending that finite measurements settle them.\n",
+          "new": "2026-10-31, Codex U0, assigned `gpt-6.1-sol xhigh`; rules/base `d36722823441dc40c6e19d69a174459348dd309c`. Preserved exact unverified source extensions without letting them weaken the separate proved core or pretending that finite measurements settle them.\n\n2026-10-31, Codex response-01 A2: updated completed handoff references and Claude audit-01 acceptance metadata only; mathematical statements, proofs and epistemic statuses unchanged.\n"
+        }
+      ]
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/quadratic-character.md",
+      "before_sha256": "82b265d4fa94464e7700b24dffaca3690a647d62a9b6f132b353463cb02dbde7",
+      "after_sha256": "ac470e09c945ed8bb4503505b54f768192612c988ee2093a1c57ab9cadebd754",
+      "editorial_replacements_added": [
+        {
+          "old": "required Claude audit PENDING",
+          "new": "Claude audit-01 accepted the mathematics"
+        },
+        {
+          "old": "required Claude audit pending",
+          "new": "Claude audit-01 accepted the mathematics"
+        },
+        {
+          "old": "2026-10-31, Codex U0; rules/base `d36722823441dc40c6e19d69a174459348dd309c`; assigned `gpt-6.1-sol xhigh`. Derived the nonsplit Frobenius identity and both endpoint parities explicitly, rather than relying on the supplied sketch.\n",
+          "new": "2026-10-31, Codex U0; rules/base `d36722823441dc40c6e19d69a174459348dd309c`; assigned `gpt-6.1-sol xhigh`. Derived the nonsplit Frobenius identity and both endpoint parities explicitly, rather than relying on the supplied sketch.\n\n2026-10-31, Codex response-01 A2: updated completed handoff references and Claude audit-01 acceptance metadata only; mathematical statements, proofs and epistemic statuses unchanged.\n"
+        }
+      ]
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/rationality.md",
+      "before_sha256": "3e0765a861d9d8b1a0efa27cd1c6576a698ca9c28b1ea1d532943e3244b09858",
+      "after_sha256": "9da40f47a2b1ce12204fa49508570ef4bb1bdc6929f2c361eeb14745790b6faf",
+      "editorial_replacements_added": [
+        {
+          "old": "required Claude audit PENDING",
+          "new": "Claude audit-01 accepted the mathematics"
+        },
+        {
+          "old": "required Claude audit pending",
+          "new": "Claude audit-01 accepted the mathematics"
+        },
+        {
+          "old": "2026-10-31, Codex U0; rules/base `d36722823441dc40c6e19d69a174459348dd309c`; assigned `gpt-6.1-sol xhigh`. Explicitly separated algebraic-closure existence from `F_q`-rationality and prime-only code coverage.\n",
+          "new": "2026-10-31, Codex U0; rules/base `d36722823441dc40c6e19d69a174459348dd309c`; assigned `gpt-6.1-sol xhigh`. Explicitly separated algebraic-closure existence from `F_q`-rationality and prime-only code coverage.\n\n2026-10-31, Codex response-01 A2: updated completed handoff references and Claude audit-01 acceptance metadata only; mathematical statements, proofs and epistemic statuses unchanged.\n"
+        }
+      ]
+    },
+    {
+      "path": "tracks/unisolvence/theory/u1/all-characteristic-criterion.md",
+      "before_sha256": "4a89fd08c7b654ccd63abcec30076ab738dbe79e96880bb79163bf36cfd75b5f",
+      "after_sha256": "099899717228b3924d543266f51efddaf1734cce2fb98022707c2bdaee44a39b",
+      "editorial_replacements_added": [
+        {
+          "old": "required Claude audit pending",
+          "new": "Claude audit-01 accepted the mathematics"
+        },
+        {
+          "old": "required Claude audit remains pending",
+          "new": "Claude audit-01 accepted the mathematics"
+        },
+        {
+          "old": "2026-10-31, Codex `gpt-6.1-sol` xhigh, rules/base d36722823441dc40c6e19d69a174459348dd309c. Changed functional B_H explicitly replaces the refuted characteristic-2 alternation functional; original claim remains preserved in its negative file.\n",
+          "new": "2026-10-31, Codex `gpt-6.1-sol` xhigh, rules/base d36722823441dc40c6e19d69a174459348dd309c. Changed functional B_H explicitly replaces the refuted characteristic-2 alternation functional; original claim remains preserved in its negative file.\n\n2026-10-31, Codex response-01 A2: updated completed handoff references and Claude audit-01 acceptance metadata only; mathematical statements, proofs and epistemic statuses unchanged.\n"
+        }
+      ]
+    },
+    {
+      "path": "tracks/unisolvence/theory/u1/char2-refutation.md",
+      "before_sha256": "3e911cb10049c2d29cdefa67fac3f0f706d90124f03951bb9d199f3b6167d4c9",
+      "after_sha256": "85ad8c614fdcba0d730828dc3f3d3c5cf04fe0b687a7dac433f97fa9f3939c6c",
+      "editorial_replacements_added": [
+        {
+          "old": "required Claude audit pending",
+          "new": "Claude audit-01 accepted the mathematics"
+        },
+        {
+          "old": "2026-10-31, Codex `gpt-6.1-sol` xhigh, rules/base d36722823441dc40c6e19d69a174459348dd309c. Original field scope preserved explicitly on refutation.\n",
+          "new": "2026-10-31, Codex `gpt-6.1-sol` xhigh, rules/base d36722823441dc40c6e19d69a174459348dd309c. Original field scope preserved explicitly on refutation.\n\n2026-10-31, Codex response-01 A2: updated completed handoff references and Claude audit-01 acceptance metadata only; mathematical statements, proofs and epistemic statuses unchanged.\n"
+        }
+      ]
+    },
+    {
+      "path": "tracks/unisolvence/theory/u1/kernel-cubature-corollary.md",
+      "before_sha256": "ee42277b64b1267938fe147511a6b1759fe75efb35cdc958508b52e244bd42d2",
+      "after_sha256": "497d25f37232be3baa83eaa77ab89d6025fa9470e63ee50613495aa0f055b641",
+      "editorial_replacements_added": [
+        {
+          "old": "required Claude audit pending",
+          "new": "Claude audit-01 accepted the mathematics"
+        },
+        {
+          "old": "An independent mathematical reconstruction is required before acceptance.",
+          "new": "Independent reconstructions and Claude audit-01 acceptance are recorded in the track AUDIT_LOG."
+        },
+        {
+          "old": "2026-10-31, Codex `gpt-6.1-sol` xhigh, rules/base d36722823441dc40c6e19d69a174459348dd309c. Round5 retained before derivation, as a direct U1 consequence without activating another direction.\n",
+          "new": "2026-10-31, Codex `gpt-6.1-sol` xhigh, rules/base d36722823441dc40c6e19d69a174459348dd309c. Round5 retained before derivation, as a direct U1 consequence without activating another direction.\n\n2026-10-31, Codex response-01 A2: updated completed handoff references and Claude audit-01 acceptance metadata only; mathematical statements, proofs and epistemic statuses unchanged.\n"
+        }
+      ]
+    },
+    {
+      "path": "tracks/unisolvence/theory/u1/odd-characteristic-criterion.md",
+      "before_sha256": "5c16ad8d54f9f9c7058501afc2b7d0c5a14ec1a647811162a268ab7fcae6dca7",
+      "after_sha256": "7b2338ea9b97812e53f44208b6070c4308e1f4359cd4e558c9af5b23325e5e06",
+      "editorial_replacements_added": [
+        {
+          "old": "required Claude audit pending",
+          "new": "Claude audit-01 accepted the mathematics"
+        },
+        {
+          "old": "required Claude audit remains pending",
+          "new": "Claude audit-01 accepted the mathematics"
+        },
+        {
+          "old": "2026-10-31, Codex `gpt-6.1-sol` xhigh, rules/base d36722823441dc40c6e19d69a174459348dd309c. Original arbitrary-field wording retained in negative record; restriction stated explicitly after characteristic-2 refutation.\n",
+          "new": "2026-10-31, Codex `gpt-6.1-sol` xhigh, rules/base d36722823441dc40c6e19d69a174459348dd309c. Original arbitrary-field wording retained in negative record; restriction stated explicitly after characteristic-2 refutation.\n\n2026-10-31, Codex response-01 A2: updated completed handoff references and Claude audit-01 acceptance metadata only; mathematical statements, proofs and epistemic statuses unchanged.\n"
+        }
+      ]
+    },
+    {
+      "path": "tracks/unisolvence/theory/u0/code-optimality-bounds.md",
+      "before_sha256": "327690212b7968c336d5c9e5371fdc119d334be8efd96d16d4f27d7a9c770388",
+      "after_sha256": "9ed1764211026cf119618d39a1ab69f4b6cae8f0281719f5d04635e87cf69831",
+      "editorial_replacements_added": [
+        {
+          "old": "The provisional result ID is assigned here at the orchestrator\u2019s explicit request; final allocation and integration belong to the orchestrator.",
+          "new": "Final ID PD-T012 and this canonical theory record are integrated; the original independent note is retained as provenance. [AUDIT_LOG](../../AUDIT_LOG.md) records Claude audit-01's acceptance of the mathematical scope."
+        },
+        {
+          "old": "required Claude cross-agent audit remains pending",
+          "new": "Claude audit-01 accepted the mathematics"
+        },
+        {
+          "old": "final Claude cross-agent audit remains pending",
+          "new": "Claude audit-01 accepted the mathematics"
+        },
+        {
+          "old": "2026-10-31: independent Codex U0 checker, requested gpt-6-astra high; actual runtime model/effort metadata not otherwise exposed. Rules/base d36722823441dc40c6e19d69a174459348dd309c. Wrote both elementary arguments independently; root subsequently read the full proof and confirmed its logic. Added the provisional PD-T ID and template fields on root\u2019s explicit request. Original source optimality assertions were split into universal upper bounds here and measured Padua attainment in the producer record; no attainment status was silently upgraded.\n",
+          "new": "2026-10-31: independent Codex U0 checker, requested gpt-6-astra high; actual runtime model/effort metadata not otherwise exposed. Rules/base d36722823441dc40c6e19d69a174459348dd309c. Wrote both elementary arguments independently; root subsequently read the full proof and confirmed its logic. Added the provisional PD-T ID and template fields on root\u2019s explicit request. Original source optimality assertions were split into universal upper bounds here and measured Padua attainment in the producer record; no attainment status was silently upgraded.\n\n2026-10-31, Codex response-01 A2: updated completed handoff references and Claude audit-01 acceptance metadata only; mathematical statements, proofs and epistemic statuses unchanged.\n"
+        }
+      ]
+    }
+  ]
+}

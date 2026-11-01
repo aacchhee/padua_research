@@ -1,0 +1,627 @@
+{
+  "scope": "Final MZ AUDIT handoff, before the manifest-containing commit. Hashes define exact files; read final Git HEAD for the package commit.",
+  "rules_and_base_sha": "d36722823441dc40c6e19d69a174459348dd309c",
+  "scientific_checkpoint": "2dc9264333cdf8372947448f4b9bdd3bb577d0e1",
+  "pre_manifest_head": "39f4785d48de7e77ff99e209bda954d632c61956",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 3159,
+      "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60"
+    },
+    {
+      "path": "ID_CROSSWALK.md",
+      "bytes": 16283,
+      "sha256": "4fc131038f0d7823fe766e15343741a5e51fb311359a6f95bf40d8a9c415506d"
+    },
+    {
+      "path": "PAPER_MAP.md",
+      "bytes": 888,
+      "sha256": "a83da4544567a4f6f976a559fbfbeb9b5ad2158a824b989fc3d8d01ce773b5ef"
+    },
+    {
+      "path": "PROOF_STATUS.md",
+      "bytes": 8155,
+      "sha256": "e2ed4cdaadb60abf058ba4213c3276bbf2a470bf9d4f6dd04235653578d1aebb"
+    },
+    {
+      "path": "agents/WORKFLOW.md",
+      "bytes": 18116,
+      "sha256": "b1c1c14c83e02bf38283159f81ec278ae336ab56c95d0c026b9ada3314d1ffaa"
+    },
+    {
+      "path": "agents/claude/CLAUDE_ROLES.md",
+      "bytes": 5172,
+      "sha256": "91d0967330529646602644e37e43abe2579284045600d310ff634ec68145dcb4"
+    },
+    {
+      "path": "agents/codex/CODEX.md",
+      "bytes": 4969,
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b"
+    },
+    {
+      "path": "literature/CORPUS.md",
+      "bytes": 3609,
+      "sha256": "b23fcd2f0ae564f8fc7950532eada9dc42d06355175deb4f8556fc1c56a5e90c"
+    },
+    {
+      "path": "literature/INDEX.md",
+      "bytes": 7231,
+      "sha256": "3808438bf32ada22e341c962da11949ea5360ad3bf161167698bac3e4ad8c391"
+    },
+    {
+      "path": "literature/records/mz-an-sommariva-vianello-2026.md",
+      "bytes": 2883,
+      "sha256": "0ab57a7f40d6319690455c2e4974f466e24e045249679d0536472876af79a4a4"
+    },
+    {
+      "path": "literature/records/mz-an-wu-2022.md",
+      "bytes": 2038,
+      "sha256": "78c03e8569a4dc64ebef571e6ce2baea72cca875cbc072d4f881ba9479fc2c5d"
+    },
+    {
+      "path": "literature/records/mz-classical-mz-screen.md",
+      "bytes": 2985,
+      "sha256": "07b8b13565170c3e85a5368977c54ea2125e75e0bea0fea7639f8187dccce17c"
+    },
+    {
+      "path": "literature/records/mz-don-gottlieb-1994.md",
+      "bytes": 1383,
+      "sha256": "e971462160001ca066c38969c31b230ac1a0eebda7ec2fe55323ff0c40856540"
+    },
+    {
+      "path": "literature/records/mz-input-reports.md",
+      "bytes": 2480,
+      "sha256": "e105a2f6c1d1139fbb5d7af2da5f537c1df7959653bfe0a3802911a659961bea"
+    },
+    {
+      "path": "literature/records/mz-mastroianni-milovanovic-2008.md",
+      "bytes": 1521,
+      "sha256": "51d22129385c8f4ddfa563fac804a3e6176939af2470557064362645d5c284ee"
+    },
+    {
+      "path": "literature/records/mz-passi-cv-2026.md",
+      "bytes": 2146,
+      "sha256": "bcdf0db38572b370486888616409f707f30ac834e5d038836899fdda801f46cc"
+    },
+    {
+      "path": "literature/records/mz-quadrature-aliasing-screen.md",
+      "bytes": 4157,
+      "sha256": "1321793123ef83890fa7dfbc1cecc14c754a350c6cb809d47017d1e87d3ccbf2"
+    },
+    {
+      "path": "literature/records/mz-sloan-smith-1978-1980.md",
+      "bytes": 2203,
+      "sha256": "00c4b09510f3a40d284edc2374b88e49558df728ebdf7cf305dcc84b76211994"
+    },
+    {
+      "path": "literature/records/mz-widom-1966-screen.md",
+      "bytes": 1732,
+      "sha256": "232ec883e16b52de73081ff10baa4356971ec6549bd87a1a948ad3c4a31c680e"
+    },
+    {
+      "path": "state/CURRENT.md",
+      "bytes": 1997,
+      "sha256": "0fbf3264cc1083c09f9c666f95abd6e648291c2f218043761f463c9b1f3e3db5"
+    },
+    {
+      "path": "state/IDEAS.md",
+      "bytes": 22461,
+      "sha256": "ea709a469fbc771adf422811c2a586101c983c95158c2fd4a17297b45a0fa4a1"
+    },
+    {
+      "path": "topics/README.md",
+      "bytes": 660,
+      "sha256": "ce338ae2490f7a3aefc13298d28b81b058646c431f26a138cb592f1eaa363ce0"
+    },
+    {
+      "path": "topics/mz-constants/AUDIT_HANDOFF.md",
+      "bytes": 5432,
+      "sha256": "13b26b34a8dbf2dfa2f4afe618cdafabcaf2269eb67414800f863492f04acfe1"
+    },
+    {
+      "path": "topics/mz-constants/LOG.md",
+      "bytes": 6640,
+      "sha256": "6f940d809e6301194a5c713c2b657feabc0e129462d931275a94ccb5bd5d661b"
+    },
+    {
+      "path": "topics/mz-constants/allocation-impact.json",
+      "bytes": 12244,
+      "sha256": "b09f89d2c0e386dc12ba2ce272c9bc2855823aa11d1772be2279846f0d1df1b0"
+    },
+    {
+      "path": "topics/mz-constants/batch-registry-resolution.patch",
+      "bytes": 67983,
+      "sha256": "654f052af0e54aa08392afe90bf9785ae802c6f35c56365b6143463e9d5c039e"
+    },
+    {
+      "path": "topics/mz-constants/batch-rehearsal.json",
+      "bytes": 1460,
+      "sha256": "54ae3e9ff248981cdc010b8732eb6d16603532a1d7489cfce74bc4688593e9b4"
+    },
+    {
+      "path": "topics/mz-constants/cold-storage.md",
+      "bytes": 6259,
+      "sha256": "56d04d6adb3a742c42f1063d5ab83f1cb72361e28046d2ab52958c829b0b0c01"
+    },
+    {
+      "path": "topics/mz-constants/directions/M0/rounds.md",
+      "bytes": 707,
+      "sha256": "4a454d77b9c6ce3e5d6c00d8488e910e88b341b432b901c117e03816c1b81baa"
+    },
+    {
+      "path": "topics/mz-constants/directions/M1/IDEAS.md",
+      "bytes": 10319,
+      "sha256": "524fa0f422318da86bc64f415d28ad5d8574c1be75021039cddf89048a0c06e6"
+    },
+    {
+      "path": "topics/mz-constants/directions/M1/RUNS.md",
+      "bytes": 4142,
+      "sha256": "fad2948041068361ba209969ee3dae6f926b4e250bd9dee8b9626d0117351f69"
+    },
+    {
+      "path": "topics/mz-constants/directions/M2/LOG.md",
+      "bytes": 4454,
+      "sha256": "b2e2dfd3963406a803cbca3a3216338e68ddb87eb59fd9df2516edd4e99cdd28"
+    },
+    {
+      "path": "topics/mz-constants/directions/M2/candidates.md",
+      "bytes": 12106,
+      "sha256": "691c9dd15362f1d71cbbeac86c69ff9c07ac1bd8642dfc377502d59881dc9d30"
+    },
+    {
+      "path": "topics/mz-constants/directions/M2/developer-run.jsonl",
+      "bytes": 3701,
+      "sha256": "df076812f88c19e8e6a71b58ac1eb46cacb506541cccd09a92441fd9356ae6a8"
+    },
+    {
+      "path": "topics/mz-constants/directions/M2/padua-foundation-record.md",
+      "bytes": 3516,
+      "sha256": "97340dcb4f478c3286276a1c1e4e8e35fe48f29288f0ec798dadf23211ae2efa"
+    },
+    {
+      "path": "topics/mz-constants/directions/M3/IDEAS.md",
+      "bytes": 10718,
+      "sha256": "032a443bf5b2bb4dbbb6d751820f2255e5d3d0238d584b61d2848f1a1bd8a378"
+    },
+    {
+      "path": "topics/mz-constants/directions/M3/RUNS.md",
+      "bytes": 3710,
+      "sha256": "11ef2d68a6a7a8f0ca6e82f9530b4dccdf2a8250c8256b69bf3a61249d09b712"
+    },
+    {
+      "path": "topics/mz-constants/directions/M4/rounds.md",
+      "bytes": 1101,
+      "sha256": "a76bc78163b631ff819a860226e9bf1553f219b7477c6f4fae3aa70b6cdba07b"
+    },
+    {
+      "path": "topics/mz-constants/directions/M5/rounds.md",
+      "bytes": 591,
+      "sha256": "67873a78a342a7d1ee7fe026a7fd319e5cf2aa576e7917665ad05424d15e9b28"
+    },
+    {
+      "path": "topics/mz-constants/directions/M6/rounds.md",
+      "bytes": 935,
+      "sha256": "2b5b70734566c48286f639dcd54bb9dadbdf9f3d1ece22514b3f56049706a680"
+    },
+    {
+      "path": "topics/mz-constants/directions/M7/manuscript-record.md",
+      "bytes": 9205,
+      "sha256": "68b15a5ed49e5c06bfdb3b5d6367a9ff5ac458de1cbe55736010aa0cf61d048b"
+    },
+    {
+      "path": "topics/mz-constants/directions/M7/rounds.md",
+      "bytes": 742,
+      "sha256": "f151824451ef45f3b23d4636ced9ee00a96da508fabc0f8c8984191cfa3e06a1"
+    },
+    {
+      "path": "topics/mz-constants/final-id-map.json",
+      "bytes": 15352,
+      "sha256": "0175b632f6d82f8053ff91f25893a92b688c005d1b00ef25f3e8e031c2f9d39e"
+    },
+    {
+      "path": "topics/mz-constants/independent-astra-01.md",
+      "bytes": 39499,
+      "sha256": "5ce5f2f9ca58a9b484bbeb829157285da4979551413435000ca54294f8fcadc7"
+    },
+    {
+      "path": "topics/mz-constants/independent-protocol-01.md",
+      "bytes": 11179,
+      "sha256": "de492e09252c669783a13a00c8844cd5982760931434b5bd3e82f69cc1be5316"
+    },
+    {
+      "path": "topics/mz-constants/input-manifest.md",
+      "bytes": 1668,
+      "sha256": "7710b7f061b0ab804333b243833c2ae4dec3331814c59f636968dc7acb230b22"
+    },
+    {
+      "path": "topics/mz-constants/integration-impact.md",
+      "bytes": 4300,
+      "sha256": "c7c276d20dbe550b43748e6f65f6d29ef81339c2dfcf06dedebb2f1cf9f343f3"
+    },
+    {
+      "path": "topics/mz-constants/literature-search.md",
+      "bytes": 13847,
+      "sha256": "d14b5845fad257162f9cae04d7a49a26c7b25a1dc6c0d563ece196bb33d149c7"
+    },
+    {
+      "path": "topics/mz-constants/plan.md",
+      "bytes": 4268,
+      "sha256": "d7587d6a007d47b8a50a189951c2025d4e533a1a3a35ababffad8fa05a5694d7"
+    },
+    {
+      "path": "topics/mz-constants/preallocation-hashes.json",
+      "bytes": 5244,
+      "sha256": "98fbf54f6b20ed280368e0d2264a97f0c87540bd54498c52728d00c80740ccbf"
+    },
+    {
+      "path": "topics/mz-constants/progress.md",
+      "bytes": 2053,
+      "sha256": "4a1f0753804b86735d884f32f0f863580e02ef17aaac6e0037db72e012cd1378"
+    },
+    {
+      "path": "topics/mz-constants/report.md",
+      "bytes": 8689,
+      "sha256": "17a1df80045089d0357eb1a28cdb37b8eefc1ea1d6d3308023f57ff23c7b0bab"
+    },
+    {
+      "path": "topics/mz-constants/reproduction.md",
+      "bytes": 6171,
+      "sha256": "40ff90ddac2a096168713b27e1d835eaf8815a6c2ae9122272bc386b64c06d5c"
+    },
+    {
+      "path": "topics/mz-constants/sources/.gitignore",
+      "bytes": 127,
+      "sha256": "1dc82301dcf98602da743e79f410efd0a736177476f71abcefd31a7478c9c28e"
+    },
+    {
+      "path": "topics/mz-constants/sources/padua_mz_inputs/SHA256SUMS.txt",
+      "bytes": 1958,
+      "sha256": "c12ee67df3efc0a17791930da47332e6f7e8532f2006938a3608a6fd93ada19b"
+    },
+    {
+      "path": "topics/mz-constants/sources/padua_mz_inputs/code/bttbmap_b2_cc_schur.py",
+      "bytes": 1791,
+      "sha256": "0f9f602c351cd4b8cc816042d529a3c665f6dda4f0884d2d017283ac52231e23"
+    },
+    {
+      "path": "topics/mz-constants/sources/padua_mz_inputs/code/bttbmap_b2b_cc_testvec.py",
+      "bytes": 975,
+      "sha256": "34b1dbc0a08a2a7095241ae35407196b4510bf996cd0eb2716b1803374341d0c"
+    },
+    {
+      "path": "topics/mz-constants/sources/padua_mz_inputs/code/bttbmap_p_cc_hss_legendre.py",
+      "bytes": 1101,
+      "sha256": "9276e90c03335f6d5d1a629997c608f6dd0703cd6b09f2a6d7fa74679e1473ad"
+    },
+    {
+      "path": "topics/mz-constants/sources/padua_mz_inputs/code/bttbmap_p_cc_hss_nodes.py",
+      "bytes": 851,
+      "sha256": "e68511d50cb83f9b8db43ba6a71d3ebab0e86b908f9b1e2fb146ee53343a926f"
+    },
+    {
+      "path": "topics/mz-constants/sources/padua_mz_inputs/code/cc_asym.py",
+      "bytes": 1415,
+      "sha256": "b5eff88ad5f1896fdab996e9e32f384d7cad8e9178d996d27ad5e173d081eaee"
+    },
+    {
+      "path": "topics/mz-constants/sources/padua_mz_inputs/code/cc_fit.py",
+      "bytes": 801,
+      "sha256": "440107213db63c062d0b1da9b8ae40f4e85f3d84cc46a9a37243fcc625515f56"
+    },
+    {
+      "path": "topics/mz-constants/sources/padua_mz_inputs/code/cc_mz_large.out",
+      "bytes": 1052,
+      "sha256": "218394be04bc5bae972cdad18f640069b9fb4726bd1d23613968798731f4e5d4"
+    },
+    {
+      "path": "topics/mz-constants/sources/padua_mz_inputs/code/cc_mz_large.py",
+      "bytes": 2225,
+      "sha256": "df392b043fad81395ce6e07258a438bbd5fc609fc83fc51fa03314b885ac5af9"
+    },
+    {
+      "path": "topics/mz-constants/sources/padua_mz_inputs/code/cc_mz_lean.py",
+      "bytes": 995,
+      "sha256": "136505d34ecb1961b210da1bde84a111d7e4af138e86ca5f66bcff7ef073e557"
+    },
+    {
+      "path": "topics/mz-constants/sources/padua_mz_inputs/code/cc_nN.py",
+      "bytes": 500,
+      "sha256": "0dd345a0e27aae1685b308396fcc5f4eb88bfcdaf2ccd4a83abbb930e02558d4"
+    },
+    {
+      "path": "topics/mz-constants/sources/padua_mz_inputs/code/cc_theta.py",
+      "bytes": 726,
+      "sha256": "d812c427a37a2463ffc90fbf411df2d7530aa622f6ef27fd388e097bf393be56"
+    },
+    {
+      "path": "topics/mz-constants/sources/padua_mz_inputs/code/hankel_check.py",
+      "bytes": 981,
+      "sha256": "83bdfa49b4149f79fa6752ac91674ff8f48560c7d7ebc08776d14090f73bf838"
+    },
+    {
+      "path": "topics/mz-constants/sources/padua_mz_inputs/code/mz_padua_cc_check.py",
+      "bytes": 4033,
+      "sha256": "56dc28b37ace1e09e5f169385b7cd46ec67cfd68c966e975bc8be86504928686"
+    },
+    {
+      "path": "topics/mz-constants/sources/padua_mz_inputs/code/pad_split.py",
+      "bytes": 833,
+      "sha256": "3b22cc1c30fcb7bdebf4193aa01c6b82d0509d3436451fb163d8a39fbae1c99a"
+    },
+    {
+      "path": "topics/mz-constants/sources/padua_mz_inputs/code/padua_marginal_cc.py",
+      "bytes": 1460,
+      "sha256": "2e1974eb3e925fa98724d0667ed9eb913606b92962db2d4fe9e159084d8ca3ec"
+    },
+    {
+      "path": "topics/mz-constants/sources/padua_mz_inputs/code/padua_mz_large.out",
+      "bytes": 369,
+      "sha256": "bc874e9a64fdfc36e8a801549fadca94791273a91b5a632adfdb21972342074e"
+    },
+    {
+      "path": "topics/mz-constants/sources/padua_mz_inputs/code/padua_mz_large.py",
+      "bytes": 1735,
+      "sha256": "0bd89997cebe3e6a5f0fcb0830667e89455f9307bc55fce6bf7e7122fb740c25"
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "bytes": 3275,
+      "sha256": "d797442980d524346846dc4bebdf46483f022e0fcd53d0bf7fd5a63134de2312"
+    },
+    {
+      "path": "tracks/README.md",
+      "bytes": 1617,
+      "sha256": "68855373e4870cae12b877600b150139bc473cf197f8c7b70e23f84521f7c294"
+    },
+    {
+      "path": "tracks/mz-constants/AUDIT_LOG.md",
+      "bytes": 1095,
+      "sha256": "c8049fefe2c7cc11917409aef2b8a35851fe91b6903fe909916f2addba911f55"
+    },
+    {
+      "path": "tracks/mz-constants/NEGATIVE_RESULTS.md",
+      "bytes": 1091,
+      "sha256": "15efbb41b4836d1159a429bdf4c714c57e4e47db2d4736e4fca4bcf6394b665c"
+    },
+    {
+      "path": "tracks/mz-constants/README.md",
+      "bytes": 1664,
+      "sha256": "019ff617b7ade2c8aa109792b44c693b5097bc475a964d41ece5748539db27cb"
+    },
+    {
+      "path": "tracks/mz-constants/code/m1_exact_check.py",
+      "bytes": 3709,
+      "sha256": "7a9b32260a90684e16fcd023e031fd3b91d5ea21ecce2ff351bbc034d68552e3"
+    },
+    {
+      "path": "tracks/mz-constants/code/m2_endpoint.py",
+      "bytes": 2962,
+      "sha256": "71f516a44e4d1e46731b0e596b36ba8796577f823c11a267efaf6b71746142c0"
+    },
+    {
+      "path": "tracks/mz-constants/code/m3_exact_check.py",
+      "bytes": 3003,
+      "sha256": "246bd4b95226182b0231730d7ad6ae6d7716623d31b28193c0e44d932825d2dd"
+    },
+    {
+      "path": "tracks/mz-constants/code/reproduce.py",
+      "bytes": 6216,
+      "sha256": "fe88a16d2ac08df96dc5e18a224ac1b0d46d5cec4310cc86fff0f7fda1aa44ac"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-allocation-check.json",
+      "bytes": 17094,
+      "sha256": "cba0804375a9d5703ccc64a757d23b9d4bda3e96835dfaf41c16ef847238e63c"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-final-check.py",
+      "bytes": 6297,
+      "sha256": "5668347cefd98bf1949cacc5eb8dc3ae30ef113f5cd83a51e79ad05234b37544"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-independent-check.json",
+      "bytes": 6518,
+      "sha256": "aead888fedd990bfadaceea6e62e9e9469497d7ad88f7a8b07471669065fd49b"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-independent-check.py",
+      "bytes": 5907,
+      "sha256": "496420f9da6cb39715b61519c87b8dfbf4a0f6ae1140ff2fdd88c96eda592b11"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-m1-replay.txt",
+      "bytes": 1304,
+      "sha256": "4d76e359b9f8b5007f1bca30ea73895237195d5d8f5edeea9c822c8df1f87636"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-m2-comparison.json",
+      "bytes": 370,
+      "sha256": "6fcd622e26421f664fc9a0424768672fb56c3b22e6b6ca32152a08c714ce6ea1"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-m2-replay.jsonl",
+      "bytes": 3701,
+      "sha256": "df076812f88c19e8e6a71b58ac1eb46cacb506541cccd09a92441fd9356ae6a8"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-m3-comparison.json",
+      "bytes": 430,
+      "sha256": "e41fd17534a9dee20532350490ba5e2fc53ba9bc33d42795dfe2a866244d1e3c"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-m3-replay.txt",
+      "bytes": 1959,
+      "sha256": "b4d40043ff747f83ed12a1b6e9d625913bde3f8835e662f057cdf012ee19ce08"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-manifest.json",
+      "bytes": 29075,
+      "sha256": "623c181d19a29b24a35e9d88f20fb65f4964ae20b081716e7df836bdb80c01d1"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-manuscript-check.json",
+      "bytes": 3306,
+      "sha256": "d3e6d0f99394c6d13804cd27b5921e32acaabb27863b0fe91ca678f57d96fbd8"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-registry-check.json",
+      "bytes": 3520,
+      "sha256": "a57e29df1002970c8d866c69f46463004b7e01c754d8a6679395eced2ec0e34b"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-replay-comparison.json",
+      "bytes": 728,
+      "sha256": "b1eb9599f035694d691880ef77945da4955668a607471f1c63ea5d9d85f000de"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-reproduction.json",
+      "bytes": 29187,
+      "sha256": "1511bfeb982f3e12b904acf151d9a586e6a65ee776dc464a12789a955ead4976"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/protocol-check.json",
+      "bytes": 37195,
+      "sha256": "90d28fcedab0582ea76fee993be44834fe428775ca2b4247c83b50719fbe672d"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/protocol-check.py",
+      "bytes": 4899,
+      "sha256": "49cf5662b4bcc1c428eef9dc1d11a8f0aa28484966d484cd7db2849a84fc43cb"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/reproduction-manifest.json",
+      "bytes": 2084,
+      "sha256": "f07b2502444313da2e2180412e5a4c244a6e750e96973a25a090d914fff80be5"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/reproduction.json",
+      "bytes": 29202,
+      "sha256": "b85b06fa9b3317d6ce84f9d354626b74edad4e8f9885341ecad39166d4fd6d40"
+    },
+    {
+      "path": "tracks/mz-constants/paper/README.md",
+      "bytes": 6491,
+      "sha256": "f433fc6f10b3e0da3bdfec1da80e6e5a177b0967cf6802ec7e1b8217de2512d7"
+    },
+    {
+      "path": "tracks/mz-constants/paper/manuscript.tex",
+      "bytes": 39310,
+      "sha256": "072ae4e52c2cea78f2ec13f6e48a3d9529234af6c99d7b747a40c44c31f08c7c"
+    },
+    {
+      "path": "tracks/mz-constants/paper/refs.bib",
+      "bytes": 4433,
+      "sha256": "f2f4eb04dec45003a107deac7c91b2f0d4737e2707289d359fd3d0194aeb9bf8"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m1-cc-foundation.md",
+      "bytes": 5180,
+      "sha256": "ce2731b5c585714b1e4011850ffd021b120dbec3d50f4fc2eff7eded0ab46d8e"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m1-coefficient-floor.md",
+      "bytes": 3563,
+      "sha256": "9ffdbb1ffc2ca4337f7daa76c41ca8391ae8b18fa8b8f3630e63299597d68a5d"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m1-failed-diagonal-dominance.md",
+      "bytes": 2245,
+      "sha256": "67c844c63bdc32b0648238c3bbb352c333bb59360bf59e480fb7eab5000ffea5"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m1-failed-psd.md",
+      "bytes": 2707,
+      "sha256": "f4ceee54f7f6b7c033e7dec70a312583a794836c4a72c4abc6252064860650ae"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m1-full-degree-obstruction.md",
+      "bytes": 2341,
+      "sha256": "e6767fec1e2ddbd1ab27e621393fb0e714b469a35a0f13465924e16d7d79467c"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m1-upper-bound.md",
+      "bytes": 4975,
+      "sha256": "e7421bfcec83b89673142887f66befdb6ddd4c439bdcffb277e8df71e59272cd"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-cardinal-lower.md",
+      "bytes": 6486,
+      "sha256": "fbf8846a40c94115defd5db4f3d05121669b9b3f323511f2321ff84229c68dc1"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-eta-counterexample.md",
+      "bytes": 3889,
+      "sha256": "2f5ec4c600d5913d2a0f6664a39928b737e1286bb79f270c0144dbc40162e70f"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-l1-obstruction.md",
+      "bytes": 2669,
+      "sha256": "49e90b2d0918b9bb4d10cba7332c4ed234cbffdcb43773ab30eedc9c82ea34be"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-padua-marginal.md",
+      "bytes": 6414,
+      "sha256": "4fcf5cee66a389341d2d55e830df66ad07554d9ccef6abdc1ce9b33895334850"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-parity-obstruction.md",
+      "bytes": 3135,
+      "sha256": "92a25fa5e9ee2336bef5da4b1f241a20f40c800825ee39e1bf1c8bdc9690d6f2"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-parity-upper.md",
+      "bytes": 6257,
+      "sha256": "790e8fedff639c11f979a743356d1d8617ef3bbed367a2ec42bc740c85a6b3e9"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-sharp-constant-open.md",
+      "bytes": 2752,
+      "sha256": "1a0310059d03746be25de5114c8ddb87fd113c400c12db2e9d7140ad56cabe41"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-u-witness.md",
+      "bytes": 3370,
+      "sha256": "6333fb24fb4a3c7738684bd40d969e3be069b6c32126fa4691dfb758b11021c8"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m3-hyperinterpolation.md",
+      "bytes": 5132,
+      "sha256": "65e251fe977dec67dbe5582d75666e086445ad0dd364ba857902bc360f0f012d"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m3-lower-ratio.md",
+      "bytes": 6811,
+      "sha256": "4aa51f3d66cb3a443cdb9990c4114c5560d4d28949849d08a60a0190ffb0d083"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m3-uniform-eta.md",
+      "bytes": 3341,
+      "sha256": "9d774f48e914c4c96f7270a95d2f1ea0d48c02b813308d504b647be25af71ea3"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m3-upper-ratio.md",
+      "bytes": 3769,
+      "sha256": "3934f775aae3f7b962d1acce59b71cf1fb80e3edff1742b5073e5988d45281f5"
+    },
+    {
+      "path": "tracks/mz-constants/theory/open-padua-target.md",
+      "bytes": 2992,
+      "sha256": "5e488f604a14aab9e30c52b8cb7ce6fc5e0d68f34ad71454620c5461c9996b81"
+    },
+    {
+      "path": "tracks/mz-constants/theory/open-upper-limit.md",
+      "bytes": 2750,
+      "sha256": "43e3e91c498eb60f60d04dc23d67b08f67a41f7594c3129837d3267067ca51e7"
+    },
+    {
+      "path": "tracks/mz-constants/theory/reproduced-spectra.md",
+      "bytes": 5504,
+      "sha256": "4f5d7452aa65f4f15f8eb0d773ec4469d3a003d1b1e3660f6ac6d8c7eae7a4a4"
+    }
+  ],
+  "excluded": "This manifest excludes itself; ignored local PDF/build artifacts and quotation-bearing input notes/reports stay outside Git. PDF hash is in manuscript-record.md. Complete archive checksum replay requires original upload; public numerical runner needs committed code only.",
+  "source_zip_sha256": "d55a843c36face1c35fa53e2f5664501e3ae8e7832e45b0a5171e981074bcaa8",
+  "stage": "AUDIT",
+  "next": "Claude (Opus 5.5 xhigh): Continue codex/mz-constants-20261031."
+}

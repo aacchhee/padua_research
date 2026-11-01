@@ -1,8 +1,9 @@
 # Shared allocation ledger — padua-batch-20261031
 
-This is the single authoritative batch ledger. **Allocation owner: the root Codex MZ orchestrator.** AC explicitly confirmed the integration order for shared registries: charter first, MZ second. PR #2 was merged by AC into main at `08fafe62d9798385dfafaacc9a41344272737e68`; PR #3 is next. Programme-ideas and bivariate-Lanczos follow in AC's chosen order and must obtain a disjoint reservation from this owner before assigning final IDs. The previous programme rule that the next branch reaching PR preparation becomes owner is superseded. No parallel allocation or accepted-ID renumbering is authorized.
+This is the single authoritative batch ledger. **Allocation owner: the root Codex MZ orchestrator.** AC merged charter PR #2 and MZ PR #3. AC's 2026-11-01 instruction sets **PR #4 next, then PR #5 stacked on PR #4**. The remaining programme-ideas and bivariate-Lanczos integrations follow AC's choice and must obtain any final ranges from the same owner. No parallel allocation or accepted-ID renumbering is authorized. Lattice keeps topic-scoped provisional IDs under AC's explicit original instruction; this response allocates no final ID.
 
 ## Reconciled sources and provenance
+
 
 - Merged charter source: branch head `317a26597dedc9adc9cfc6a26fa00078df7d29e4`, integrated by main commit `08fafe62d9798385dfafaacc9a41344272737e68`. Its ledger already reconciled the programme snapshot with the MZ overlay and acknowledged this owner. Its original reservations and charter content have first priority.
 - MZ audit delivery: `6d10a82cf6fd6f7ef6fbe76e68133ccbcbe51994`; merge of charter-bearing main into MZ: `bc85509adc303126c6d8276a4457393e81d7f394`. Original scientific checkpoint: `2dc9264333cdf8372947448f4b9bdd3bb577d0e1`; original final-ID package: `fdf0648cbaa9fb722c611d709e638de7dfe86368`.
@@ -10,6 +11,8 @@ This is the single authoritative batch ledger. **Allocation owner: the root Code
 - Bivariate-Lanczos source before ledger propagation: `1127f9c73903e11b56cbfe3e8c667bfcbe810beb`. Its records are provisional and it had no batch ledger at that snapshot. No scientific result from that branch is imported into MZ.
 
 Historical source heads above remain provenance, not assertions that remote tips cannot advance. Propagation commits, exact ledger-byte identity and refreshed heads are recorded in the MZ response's reconciliation receipt. The charter's standalone member ledger is an immutable reservation/provenance record, not a competing batch allocation authority.
+
+Current integration source: main `07c5f5465d6de306aa81dbe8ca1f615295163864`, containing both accepted blocks. Lattice audit delivery `3f369611f364c8bab41b8a48f1414f88b21937ec` was merged with that main without rebasing, preserving both sets of rows. PR #5 audit delivery is `ac61532fdbf40d50647476d87ed4e3f0b4b53802`; it will merge the completed PR #4 branch and target that branch. Exact source hashes and conflict dispositions: [PR #4 response base](../lattice-unisolvence-20261031/response-01-base.json). Earlier complete lattice-ledger prose remains retrievable at its [pinned source](https://github.com/aacchhee/padua_research/blob/3f369611f364c8bab41b8a48f1414f88b21937ec/topics/padua-batch-20261031/ALLOCATIONS.md).
 
 ## Final reservations
 
@@ -24,17 +27,31 @@ The five new LIT entries record the targeted audit-M2 screen: Erdős–Feldheim,
 
 ## Members and integration responsibilities
 
-| Order | Member | State and required next action |
+| Order | Member | Current integration state / next action |
 |---|---|---|
-| 1 — complete | `codex/charter-unisolvence-20261031`, [PR #2](https://github.com/aacchhee/padua_research/pull/2) | AC merged the charter and first registry block. Historical audited branch is retained; later topics preserve its accepted IDs and scientific files. |
-| 2 — next | `codex/mz-constants-20261031`, [PR #3](https://github.com/aacchhee/padua_research/pull/3) | Charter main merged with additive registry reconciliation. Answer audit-01 and request focused re-audit of the changed corollary, literature and metadata; update the rehearsal against current main before readiness. |
-| 3–4 — AC decides | `claude/programme-ideas-20261031` | Adopt these exact ledger bytes. Merge charter/MZ-bearing main before final allocation and PR preparation. Its proposed Fable rule amendment remains on its own branch for its own audit; it is not imported by this reconciliation. |
-| 3–4 — AC decides | `claude/bivariate-lanczos-20261031` | Adopt these exact ledger bytes. Merge charter/MZ-bearing main, then reconcile final reservations with this owner and rehearse integration before readiness. |
+| 1 — complete | charter-unisolvence, [PR #2](https://github.com/aacchhee/padua_research/pull/2) | AC merged at08fafe62d9798385dfafaacc9a41344272737e68. Preserve its accepted IDs and scientific files. |
+| 2 — complete | mz-constants, [PR #3](https://github.com/aacchhee/padua_research/pull/3) | AC merged at07c5f5465d6de306aa81dbe8ca1f615295163864. Preserve PD-T013–028, PD-N002–006, LIT042–065 and IDEA052–076, including audit-response additions. |
+| 3 — next, AC instructed | lattice-unisolvence, [PR #4](https://github.com/aacchhee/padua_research/pull/4) | Target main; accepted existing mathematics, unchanged-status response and focused registry reconciliation. Provisional table below is retained; no final range allocated. |
+| 4 — stacked on PR #4 | mz-postmerge-frontier, [PR #5](https://github.com/aacchhee/padua_research/pull/5) | Merge the PR #4 branch without rebasing, target that branch, answer audit L1–L4 and preserve its full registry/ledger contents. After PR #4 lands, refresh main and retarget as appropriate. No IDs are allocated by this administrative follow-up. |
+| Later — AC chooses | programme-ideas | Its earlier copy has the same accepted reservation table, not necessarily identical status prose. On integrating current main, preserve reservations and take main's current integration prose, then reconcile any new allocation with the owner. |
+| Later — AC chooses | bivariate-Lanczos | Its earlier copy has the same accepted reservation table, not necessarily identical status prose. On integrating current main, preserve reservations and take main's current integration prose, then reconcile any new allocation with the owner. |
 
-Only the ledger is propagated to the two active Claude member branches; their proofs, source records, rules and other working files remain untouched. The already merged charter branch needs no retroactive rewrite. Until MZ merges, main retains the charter's earlier reconciled ledger, and this updated version is the proposed successor on the next-priority PR.
+No byte-identical propagation to the later member branches is claimed by this response. Their copies can legitimately lag in integration-status prose; this does not authorize overwriting accepted reservations or reverting audit dispositions. Their historical source pins above remain provenance, not current-head assertions.
+
+## Lattice provisional reservations (unchanged)
+
+
+AC explicitly requested provisional theory IDs; no new final global range is reserved. The named MZ allocation owner remains responsible for any later coordinated final allocation. AC explicitly authorized provisional lattice IDs, so a new final allocation is not a readiness prerequisite for PR #4. These topic-scoped IDs cannot collide with another topic’s provisional namespace. Exact map: [provisional-id-map.json](../lattice-unisolvence-20261031/provisional-id-map.json).
+
+| Namespace | Reserved provisional identifiers | Owner / status |
+|---|---|---|
+| PD-T | PD-T?lattice-c0-codex-01; PD-T?lattice-c0-codex-02; PD-T?lattice-c0-codex-03; PD-T?lattice-c1-codex-01; PD-T?lattice-c1-codex-02; PD-T?lattice-c1-codex-03; PD-T?lattice-c1-codex-04; PD-T?lattice-c1-codex-05; PD-T?lattice-c1-codex-06; PD-T?lattice-c3-codex-01; PD-T?lattice-c3-codex-02; PD-T?lattice-c3-codex-03; PD-T?lattice-c3-codex-04; PD-T?lattice-c3-codex-05 | lattice root; PR #4 response, final allocation deferred |
+| PD-N | PD-N?lattice-c0-codex-01; PD-N?lattice-c1-codex-01; PD-N?lattice-c1-codex-02; PD-N?lattice-c3-codex-01; PD-N?lattice-c3-codex-02; PD-N?lattice-c3-codex-03; PD-N?lattice-c3-codex-04 | lattice root; PR #4 response, final allocation deferred |
+| IDEA | IDEA?lattice-c0-codex-01; IDEA?lattice-c0-codex-02; IDEA?lattice-c0-codex-03; IDEA?lattice-c0-codex-04; IDEA?lattice-c0-codex-05; IDEA?lattice-c1-codex-01; IDEA?lattice-c1-codex-02; IDEA?lattice-c1-codex-03; IDEA?lattice-c3-codex-01; IDEA?lattice-c3-codex-02; IDEA?lattice-c3-codex-03; IDEA?lattice-c3-codex-04; IDEA?lattice-c3-codex-05 | lattice root; PR #4 response, final allocation deferred |
+| LIT | LIT?lattice-codex-01; LIT?lattice-codex-02; LIT?lattice-codex-03; LIT?lattice-codex-04; LIT?lattice-codex-05; LIT?lattice-codex-06; LIT?lattice-codex-07; LIT?lattice-codex-08; LIT?lattice-codex-09; LIT?lattice-codex-10; LIT?lattice-codex-11; LIT?lattice-codex-12; LIT?lattice-codex-13; LIT?lattice-codex-14; LIT?lattice-codex-15; LIT?lattice-codex-16; LIT?lattice-codex-17; LIT?lattice-codex-18; LIT?lattice-codex-19; LIT?lattice-codex-20; LIT?lattice-codex-21; LIT?lattice-codex-22; LIT?lattice-codex-23; LIT?lattice-codex-24; LIT?lattice-codex-25; LIT?lattice-codex-26; LIT?lattice-codex-27; LIT?lattice-codex-28; LIT?lattice-codex-29; LIT?lattice-codex-30; LIT?lattice-codex-31; LIT?lattice-codex-32 | lattice root; PR #4 response, final allocation deferred |
 
 ## Readiness and history
 
-Before requesting any later merge, refresh main and all active heads, verify ledger identity and reservations, and rehearse the relevant sequential squash integration in a disposable local branch. Preserve registry instructions, actual dependencies, dispositions and reciprocal split links. A passed local rehearsal does not authorize a main mutation or a PR merge; only AC merges.
+Before AC's requested sequence, refresh the relevant heads and rehearse **current main → PR #4 → PR #5** in a disposable local branch. Record exact source/tree identities, conflict resolutions and preservation checks in the response receipts. A rehearsal authorizes no live merge, main push, force-push or tag. Only AC merges. Later member branches merge the integrated registry state and repeat their own checks before readiness.
 
-The initial programme ledger, MZ overlay and charter response remain inspectable at their pinned source commits. This response replaces the split-owner/add-add ambiguity with one named owner, one reservation table and AC's explicit priority. The MZ response receipt records the actual propagation and semantic checks; no unexecuted propagation is counted as completed.
+2026-11-01 registry reconciliation preserves the canonical owner, the complete final reservation table (including LIT-061–065) and all66 lattice provisional IDs. No charter entry was found overwritten in the MZ main; the PR #4 branch was missing the newer merged MZ additions until this merge. The previous unrelated-branch ledger-copy requirement is replaced by explicit reservation preservation and current-main prose reconciliation, as PR #5 audit L3 requested.

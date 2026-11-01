@@ -1,0 +1,495 @@
+{
+  "seed": 20261031,
+  "samples_per_setting": 20,
+  "random_labellings": 1100,
+  "parity_checks": 2200,
+  "settings": [
+    {
+      "field": "F2",
+      "m": 0,
+      "labellings": 20,
+      "unisolvent": 20,
+      "original_iff_mismatches": 20,
+      "cross_axis_overlap": 20
+    },
+    {
+      "field": "F3",
+      "m": 0,
+      "labellings": 20,
+      "unisolvent": 20,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 14
+    },
+    {
+      "field": "F3",
+      "m": 1,
+      "labellings": 20,
+      "unisolvent": 20,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 20
+    },
+    {
+      "field": "F5",
+      "m": 0,
+      "labellings": 20,
+      "unisolvent": 20,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 8
+    },
+    {
+      "field": "F5",
+      "m": 1,
+      "labellings": 20,
+      "unisolvent": 20,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 19
+    },
+    {
+      "field": "F5",
+      "m": 2,
+      "labellings": 20,
+      "unisolvent": 15,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 20
+    },
+    {
+      "field": "F5",
+      "m": 3,
+      "labellings": 20,
+      "unisolvent": 15,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 20
+    },
+    {
+      "field": "F7",
+      "m": 0,
+      "labellings": 20,
+      "unisolvent": 20,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 7
+    },
+    {
+      "field": "F7",
+      "m": 1,
+      "labellings": 20,
+      "unisolvent": 20,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 11
+    },
+    {
+      "field": "F7",
+      "m": 2,
+      "labellings": 20,
+      "unisolvent": 14,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 19
+    },
+    {
+      "field": "F7",
+      "m": 3,
+      "labellings": 20,
+      "unisolvent": 14,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 20
+    },
+    {
+      "field": "F7",
+      "m": 4,
+      "labellings": 20,
+      "unisolvent": 16,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 20
+    },
+    {
+      "field": "F7",
+      "m": 5,
+      "labellings": 20,
+      "unisolvent": 10,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 20
+    },
+    {
+      "field": "F11",
+      "m": 0,
+      "labellings": 20,
+      "unisolvent": 20,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 4
+    },
+    {
+      "field": "F11",
+      "m": 1,
+      "labellings": 20,
+      "unisolvent": 20,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 10
+    },
+    {
+      "field": "F11",
+      "m": 2,
+      "labellings": 20,
+      "unisolvent": 17,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 18
+    },
+    {
+      "field": "F11",
+      "m": 3,
+      "labellings": 20,
+      "unisolvent": 17,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 19
+    },
+    {
+      "field": "F11",
+      "m": 4,
+      "labellings": 20,
+      "unisolvent": 18,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 20
+    },
+    {
+      "field": "F11",
+      "m": 5,
+      "labellings": 20,
+      "unisolvent": 12,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 20
+    },
+    {
+      "field": "F11",
+      "m": 6,
+      "labellings": 20,
+      "unisolvent": 13,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 20
+    },
+    {
+      "field": "F11",
+      "m": 7,
+      "labellings": 20,
+      "unisolvent": 10,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 20
+    },
+    {
+      "field": "F13",
+      "m": 0,
+      "labellings": 20,
+      "unisolvent": 20,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 3
+    },
+    {
+      "field": "F13",
+      "m": 1,
+      "labellings": 20,
+      "unisolvent": 20,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 10
+    },
+    {
+      "field": "F13",
+      "m": 2,
+      "labellings": 20,
+      "unisolvent": 17,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 16
+    },
+    {
+      "field": "F13",
+      "m": 3,
+      "labellings": 20,
+      "unisolvent": 16,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 16
+    },
+    {
+      "field": "F13",
+      "m": 4,
+      "labellings": 20,
+      "unisolvent": 17,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 20
+    },
+    {
+      "field": "F13",
+      "m": 5,
+      "labellings": 20,
+      "unisolvent": 13,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 20
+    },
+    {
+      "field": "F13",
+      "m": 6,
+      "labellings": 20,
+      "unisolvent": 13,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 20
+    },
+    {
+      "field": "F13",
+      "m": 7,
+      "labellings": 20,
+      "unisolvent": 13,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 20
+    },
+    {
+      "field": "F31",
+      "m": 0,
+      "labellings": 20,
+      "unisolvent": 20,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 1
+    },
+    {
+      "field": "F31",
+      "m": 1,
+      "labellings": 20,
+      "unisolvent": 20,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 3
+    },
+    {
+      "field": "F31",
+      "m": 2,
+      "labellings": 20,
+      "unisolvent": 16,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 7
+    },
+    {
+      "field": "F31",
+      "m": 3,
+      "labellings": 20,
+      "unisolvent": 19,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 11
+    },
+    {
+      "field": "F31",
+      "m": 4,
+      "labellings": 20,
+      "unisolvent": 18,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 13
+    },
+    {
+      "field": "F31",
+      "m": 5,
+      "labellings": 20,
+      "unisolvent": 16,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 18
+    },
+    {
+      "field": "F31",
+      "m": 6,
+      "labellings": 20,
+      "unisolvent": 16,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 16
+    },
+    {
+      "field": "F31",
+      "m": 7,
+      "labellings": 20,
+      "unisolvent": 16,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 20
+    },
+    {
+      "field": "F4[mod=0b111]",
+      "m": 0,
+      "labellings": 20,
+      "unisolvent": 20,
+      "original_iff_mismatches": 20,
+      "cross_axis_overlap": 9
+    },
+    {
+      "field": "F4[mod=0b111]",
+      "m": 1,
+      "labellings": 20,
+      "unisolvent": 20,
+      "original_iff_mismatches": 20,
+      "cross_axis_overlap": 20
+    },
+    {
+      "field": "F4[mod=0b111]",
+      "m": 2,
+      "labellings": 20,
+      "unisolvent": 0,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 20
+    },
+    {
+      "field": "F8[mod=0b1011]",
+      "m": 0,
+      "labellings": 20,
+      "unisolvent": 20,
+      "original_iff_mismatches": 20,
+      "cross_axis_overlap": 5
+    },
+    {
+      "field": "F8[mod=0b1011]",
+      "m": 1,
+      "labellings": 20,
+      "unisolvent": 20,
+      "original_iff_mismatches": 20,
+      "cross_axis_overlap": 12
+    },
+    {
+      "field": "F8[mod=0b1011]",
+      "m": 2,
+      "labellings": 20,
+      "unisolvent": 16,
+      "original_iff_mismatches": 16,
+      "cross_axis_overlap": 18
+    },
+    {
+      "field": "F8[mod=0b1011]",
+      "m": 3,
+      "labellings": 20,
+      "unisolvent": 15,
+      "original_iff_mismatches": 15,
+      "cross_axis_overlap": 20
+    },
+    {
+      "field": "F8[mod=0b1011]",
+      "m": 4,
+      "labellings": 20,
+      "unisolvent": 9,
+      "original_iff_mismatches": 9,
+      "cross_axis_overlap": 20
+    },
+    {
+      "field": "F8[mod=0b1011]",
+      "m": 5,
+      "labellings": 20,
+      "unisolvent": 10,
+      "original_iff_mismatches": 10,
+      "cross_axis_overlap": 20
+    },
+    {
+      "field": "F8[mod=0b1011]",
+      "m": 6,
+      "labellings": 20,
+      "unisolvent": 0,
+      "original_iff_mismatches": 0,
+      "cross_axis_overlap": 20
+    },
+    {
+      "field": "F16[mod=0b10011]",
+      "m": 0,
+      "labellings": 20,
+      "unisolvent": 20,
+      "original_iff_mismatches": 20,
+      "cross_axis_overlap": 2
+    },
+    {
+      "field": "F16[mod=0b10011]",
+      "m": 1,
+      "labellings": 20,
+      "unisolvent": 20,
+      "original_iff_mismatches": 20,
+      "cross_axis_overlap": 4
+    },
+    {
+      "field": "F16[mod=0b10011]",
+      "m": 2,
+      "labellings": 20,
+      "unisolvent": 18,
+      "original_iff_mismatches": 18,
+      "cross_axis_overlap": 10
+    },
+    {
+      "field": "F16[mod=0b10011]",
+      "m": 3,
+      "labellings": 20,
+      "unisolvent": 17,
+      "original_iff_mismatches": 17,
+      "cross_axis_overlap": 18
+    },
+    {
+      "field": "F16[mod=0b10011]",
+      "m": 4,
+      "labellings": 20,
+      "unisolvent": 17,
+      "original_iff_mismatches": 17,
+      "cross_axis_overlap": 20
+    },
+    {
+      "field": "F16[mod=0b10011]",
+      "m": 5,
+      "labellings": 20,
+      "unisolvent": 13,
+      "original_iff_mismatches": 13,
+      "cross_axis_overlap": 20
+    },
+    {
+      "field": "F16[mod=0b10011]",
+      "m": 6,
+      "labellings": 20,
+      "unisolvent": 17,
+      "original_iff_mismatches": 17,
+      "cross_axis_overlap": 20
+    },
+    {
+      "field": "F16[mod=0b10011]",
+      "m": 7,
+      "labellings": 20,
+      "unisolvent": 14,
+      "original_iff_mismatches": 14,
+      "cross_axis_overlap": 20
+    }
+  ],
+  "exhaustive_F4_m1_labellings": 288,
+  "exhaustive_F4_m1_parity_checks": 576,
+  "explicit_examples": [
+    {
+      "field": "F4[mod=0b111]",
+      "m": 1,
+      "X": [
+        0,
+        1
+      ],
+      "Y": [
+        0,
+        1,
+        2
+      ],
+      "determinants": [
+        2,
+        2
+      ],
+      "original_qd": false,
+      "corrected": true
+    },
+    {
+      "field": "F8[mod=0b1011]",
+      "m": 2,
+      "X": [
+        0,
+        1,
+        2
+      ],
+      "Y": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "determinants": [
+        6,
+        4
+      ],
+      "original_qd": false,
+      "corrected": true
+    }
+  ],
+  "all_assertions": "PASS",
+  "checker_sha256": "4216b9944c45345709ba11ffbb59b70799432329b646c0c44446da9be2cff56b",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+}

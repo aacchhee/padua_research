@@ -1,0 +1,555 @@
+{
+  "status": "MEASURED",
+  "exit_code": 0,
+  "independent_checker": {
+    "path": "/workspace/padua_research/topics/charter-unisolvence-20261031/independent/u0/exact_check.py",
+    "bytes": 6115,
+    "sha256": "5fb0374da08d36823ebea3e488df60e94584645c98c2eb61057d82b757b415e1"
+  },
+  "output": {
+    "path": "/workspace/padua-cold/charter-unisolvence-20261031/independent-U0/exact-check.json",
+    "bytes": 26225,
+    "sha256": "d8b23552b19c03c88c11c56648dd6a1182e651e26733d9e4eebd99b64c37a0c9"
+  },
+  "determinant_cases": 112,
+  "field_sizes": [
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31,
+    37,
+    41,
+    43,
+    47
+  ],
+  "max_n": 6,
+  "parities": [
+    0,
+    1
+  ],
+  "character_field_sizes": [
+    3,
+    5,
+    7,
+    9,
+    11,
+    13
+  ],
+  "code_results": [
+    {
+      "q": 7,
+      "n": 3,
+      "degree": 1,
+      "N": 10,
+      "dimension": 3,
+      "minimum_distance": 7,
+      "projective_messages": 57,
+      "witness": [
+        1,
+        0,
+        2
+      ],
+      "basis": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "q": 7,
+      "n": 3,
+      "degree": 2,
+      "N": 10,
+      "dimension": 6,
+      "minimum_distance": 4,
+      "projective_messages": 19608,
+      "witness": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        5
+      ],
+      "basis": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    }
+  ],
+  "small_character_sets": [
+    {
+      "q": 3,
+      "N": 3,
+      "matches": true,
+      "omitted_by_endpoint_free_shorthand": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "points": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "q": 9,
+      "N": 15,
+      "matches": true,
+      "omitted_by_endpoint_free_shorthand": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          44
+        ],
+        [
+          2,
+          77
+        ],
+        [
+          42,
+          2
+        ],
+        [
+          75,
+          2
+        ]
+      ],
+      "points": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          44
+        ],
+        [
+          0,
+          77
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          44
+        ],
+        [
+          1,
+          77
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          44
+        ],
+        [
+          2,
+          77
+        ],
+        [
+          42,
+          2
+        ],
+        [
+          42,
+          43
+        ],
+        [
+          42,
+          76
+        ],
+        [
+          75,
+          2
+        ],
+        [
+          75,
+          43
+        ],
+        [
+          75,
+          76
+        ]
+      ]
+    }
+  ],
+  "producer_checker_replay": {
+    "exit_code": 0,
+    "rows": [
+      {
+        "q": 3,
+        "characteristic": 3,
+        "n": 1,
+        "N": 3,
+        "field_modulus": [
+          2,
+          1,
+          0,
+          0,
+          1
+        ],
+        "generator": 3,
+        "character_description": true,
+        "determinant_nonzero": true,
+        "determinant_squared": 1,
+        "predicted": 1
+      },
+      {
+        "q": 9,
+        "characteristic": 3,
+        "n": 4,
+        "N": 15,
+        "field_modulus": [
+          2,
+          1,
+          0,
+          0,
+          1
+        ],
+        "generator": 3,
+        "character_description": true,
+        "determinant_nonzero": true,
+        "determinant_squared": 1,
+        "predicted": 1
+      },
+      {
+        "q": 7,
+        "degree": 1,
+        "N": 10,
+        "K": 3,
+        "distance": 7,
+        "projective_messages": 57,
+        "monomial_basis": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "minimum_witness": [
+          4,
+          1,
+          0
+        ]
+      },
+      {
+        "q": 7,
+        "degree": 2,
+        "N": 10,
+        "K": 6,
+        "distance": 4,
+        "projective_messages": 19608,
+        "monomial_basis": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "minimum_witness": [
+          3,
+          3,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "q": 11,
+        "degree": 1,
+        "N": 21,
+        "K": 3,
+        "distance": 17,
+        "projective_messages": 133,
+        "monomial_basis": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "minimum_witness": [
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "q": 11,
+        "degree": 2,
+        "N": 21,
+        "K": 6,
+        "distance": 13,
+        "projective_messages": 177156,
+        "monomial_basis": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "minimum_witness": [
+          9,
+          1,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "q": 13,
+        "degree": 1,
+        "N": 28,
+        "K": 3,
+        "distance": 23,
+        "projective_messages": 183,
+        "monomial_basis": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "minimum_witness": [
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "q": 13,
+        "degree": 2,
+        "N": 28,
+        "K": 6,
+        "distance": 18,
+        "projective_messages": 402234,
+        "monomial_basis": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "minimum_witness": [
+          4,
+          10,
+          5,
+          3,
+          3,
+          1
+        ]
+      },
+      {
+        "q": 17,
+        "degree": 1,
+        "N": 45,
+        "K": 3,
+        "distance": 39,
+        "projective_messages": 307,
+        "monomial_basis": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "minimum_witness": [
+          2,
+          3,
+          1
+        ]
+      },
+      {
+        "q": 17,
+        "degree": 2,
+        "N": 45,
+        "K": 6,
+        "distance": 33,
+        "projective_messages": 1508598,
+        "monomial_basis": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "minimum_witness": [
+          16,
+          0,
+          9,
+          8,
+          0,
+          1
+        ]
+      }
+    ]
+  }
+}

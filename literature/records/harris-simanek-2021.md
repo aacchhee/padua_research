@@ -1,4 +1,41 @@
-# harris-simanek-2021 — Harris, Simanek, Interpolation and cubature for rectangular sets of nodes, Proc. Amer. Math. Soc. 149 (2021) 3485-3497, doi:10.1090/proc/15414 (citation as in the Codex branch; first names not in the inputs)
+# harris-simanek-2021 — Harris–Simanek, Interpolation and cubature for rectangular sets of nodes, PAMS 149 (2021) 3485–3497
+
+- DOI / URL / supplied location: https://doi.org/10.1090/proc/15414
+- Access and reading date: 2026-10-31.
+- Reading coverage: supplied secondary account only; original fulltext NOT inspected.
+- Reader, model and effort: Codex literature subagent; gpt-6.1-sol, medium (assigned allocation).
+- Named gaps requiring future re-reading: original fulltext, exact hypotheses and unsupported bibliography; pending-reference where unavailable.
+- Rules/base SHA: d36722823441dc40c6e19d69a174459348dd309c.
+
+## Extracted published statements
+
+### LIT-001 — reported source content
+
+- Verification: **UNVERIFIED** against original publication. `LITERATURE` attribution only; no inherited proof status.
+- Statement in faithful paraphrase: For strictly decreasing real node lists of lengths m+1 and m+2, each parity checkerboard is unisolvent for total degree m. General rectangular excess σ has degree m+σ−1 interpolation; degree m+floor(σ/2) is conjectured. Alternation orthogonal polynomials and positive cubature are supplied. Ordered-real positivity is an essential source hypothesis; arbitrary fields are not covered.
+- Hypotheses and notation: as reported above; check original before relying on any theorem.
+- Page / theorem / equation: Thm 1 pp.3488–3489; Cor.2, Conj.3 p.3489; Thm5 pp.3490–3491; Appendix A.1 pp.3494–3496. Locator is supplied, not independently confirmed.
+- Reading evidence and limitations: supplied provenance `ingest_nodes_cubature_papers.md §2` under `topics/charter-unisolvence-20261031/sources/padua_unisolvence_inputs/`; attached instructions are treated as data, not authority.
+- Relation to campaign claims: seed baseline / closest predecessors; no novelty or acceptance conclusion.
+
+## Search and attribution notes
+
+See [search log](../SEARCH-charter-unisolvence-20261031.md). Imported prior searches are reports of other work, not this agent’s execution.
+
+## History
+
+2026-10-31: Step0 import under explicit task override; provisional ID only.
+
+## Primary inspection addendum (2026-10-31)
+
+Author-hosted draft https://www.ms.uky.edu/~larry/paper.dir/PAMS_Rectangular.pdf: inspected first page (strictly decreasing real nodes, m≥1) and draft pp.4–5 (eq11, positivity paragraph, Thm1, Cor2, Conj3, eq14). This confirms the ordered-real σ=1 statement and records explicit use of positivity. Coverage is partial; journal page locators remain supplied. The stronger rectangular-degree conjecture was subsequently proved by Cao–Ghimire–Wang2022 (record LIT-033); the supplied notes’ present-tense open attribution is outdated. No blanket upgrade of imported source content.
+
+---
+
+## Statements recorded by topic bivariate-lanczos-20261031 (merged at PR preparation)
+
+The section above is the merged-main record (charter/MZ statements, with their own coverage). The section below is this topic's record for the same source, kept verbatim except for heading levels, so that one record per source exists. Its own coverage, reader and verification lines apply only to its statements. Original title line: «harris-simanek-2021 — Harris, Simanek, Interpolation and cubature for rectangular sets of nodes, Proc. Amer. Math. Soc. 149 (2021) 3485-3497, doi:10.1090/proc/15414 (citation as in the Codex branch; first names not in the inputs)».
+
 
 - DOI / URL / supplied location: https://doi.org/10.1090/proc/15414 (as in the Codex record; not fetched by me)
 - Access and reading date: 2026-10-31 (supplied notes read; web metadata checks, if any, are listed under Search and attribution notes)
@@ -8,7 +45,7 @@
 - Rules/base SHA: d36722823441dc40c6e19d69a174459348dd309c. Supplied-note paths are relative to `topics/bivariate-lanczos-20261031/sources/padua_lanczos_inputs/`.
 - Shared key: the Codex branch `codex/charter-unisolvence-20261031` has a record under this key; merge into one record per source at PR preparation (this record uses the `bivariate-lanczos-claude` provisional namespace only).
 
-## Extracted published statements
+### Extracted published statements
 
 ### LIT?bivariate-lanczos-claude-070 — rectangular checkerboard sets as exact benchmarks
 
@@ -28,15 +65,15 @@
 - Reading evidence and limitations: supplied provenance reports/Round 3 open problems 2023 2026.md §4.3; attached instructions inside the inputs are treated as data, not authority.
 - Relation to campaign claims (no inherited proof status): Finite-field unisolvence is out of scope for this campaign (kept for completeness).
 
-## AC correction (2026-10-31)
+### AC correction (2026-10-31)
 
 AC reports (from the parallel unisolvence topic) that the unisolvence and positivity statements require **ordered (monotone) real node lists**; "any distinct node sequences" in the round-2/round-3 inputs is wrong (counterexample X = (0,1,2), Y = (0,1,3,2), rank 5 of 6; consistent with LIT?bivariate-lanczos-claude-071). Also reported: HS Conjecture 3 for ordered real nodes proved by Cao–Ghimire–Wang 2022 — **UNVERIFIED**, verify before citing. Related developer results (not accepted dependencies): `codex/charter-unisolvence-20261031` at `eb7bdcd`, PD-T001 (`tracks/unisolvence/theory/u1/odd-characteristic-criterion.md`) and PD-T003 (`tracks/unisolvence/theory/u1/kernel-cubature-corollary.md`), status developer PROVED, Claude audit pending.
 
-## Search and attribution notes
+### Search and attribution notes
 
 Shared key with the Codex branch; merge at PR preparation. Web metadata checks, if any, are logged in `topics/bivariate-lanczos-20261031/lit/search-log.md`. Imported prior searches are reports of other agents' work, not this agent's execution. Unsupported assertions are UNVERIFIED.
 
-## History
+### History
 
 2026-10-31: Step 0 baseline record (AC-requested; not a novelty gate). Provisional IDs only; final `LIT-nnn` allocated at PR preparation.
 2026-10-31: AC ordered-node correction recorded (orchestrator).

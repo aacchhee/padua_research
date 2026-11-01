@@ -1,0 +1,15 @@
++ echo 'DIFFCHECK 0'
+DIFFCHECK 0
+EXIT 0 0s :: /home/claude/venv312/bin/python tracks/lattice-unisolvence/code/verify_artifacts.py topics/lattice-unisolvence-20261031/audit-targets.json
+EXIT 0 12s :: /home/claude/venv312/bin/python tracks/lattice-unisolvence/code/c3_rank.py topics/lattice-unisolvence-20261031/directions/C0/catalogue.json --output /tmp/lattice-claude/ranks.json
+EXIT 0 1s :: /home/claude/venv312/bin/python tracks/lattice-unisolvence/code/c1_extension.py --output /tmp/lattice-claude/extension.json
+EXIT 0 1s :: /home/claude/venv312/bin/python tracks/lattice-unisolvence/code/c1_gram.py --output /tmp/lattice-claude/gram.json
+EXIT 0 1s :: /home/claude/venv312/bin/python tracks/lattice-unisolvence/code/c1_symbolic.py --output /tmp/lattice-claude/symbolic.json
+EXIT 0 1s :: /home/claude/venv312/bin/python tracks/lattice-unisolvence/code/c3_lebesgue.py topics/lattice-unisolvence-20261031/directions/C3/ranks.json topics/lattice-unisolvence-20261031/directions/C0/catalogue.json --output /tmp/lattice-claude/lebesgue.json
+EXIT 0 1s :: /home/claude/venv312/bin/python tracks/lattice-unisolvence/code/c3_structure.py topics/lattice-unisolvence-20261031/directions/C3/ranks.json --output /tmp/lattice-claude/structure.json
+EXIT 0 2s :: /home/claude/venv312/bin/python tracks/lattice-unisolvence/code/c1_mod4.py --output /tmp/lattice-claude/mod4.json
+EXIT 0 2s :: /home/claude/venv312/bin/python tracks/lattice-unisolvence/code/c1_stability.py --output /tmp/lattice-claude/stability.json
+EXIT 0 3s :: /home/claude/venv312/bin/python tracks/lattice-unisolvence/code/c0_catalogue.py --output-dir /tmp/lattice-claude/c0
+EXIT 0 5s :: /home/claude/venv312/bin/python tracks/lattice-unisolvence/code/c3_obstructions.py topics/lattice-unisolvence-20261031/directions/C3/ranks.json topics/lattice-unisolvence-20261031/directions/C3/structure.json --output /tmp/lattice-claude/obstructions.json
+EXIT 0 6s :: /home/claude/venv312/bin/python tracks/lattice-unisolvence/code/c3_lowdegree.py topics/lattice-unisolvence-20261031/directions/C3/ranks.json topics/lattice-unisolvence-20261031/directions/C3/obstructions.json --output /tmp/lattice-claude/lowdegree.json
+{"checked": 168, "failures": []}

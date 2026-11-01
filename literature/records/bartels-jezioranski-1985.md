@@ -1,4 +1,37 @@
-# bartels-jezioranski-1985 — R. H. Bartels and J. J. Jezioranski, "Least-squares fitting using orthogonal multinomials", ACM Trans. Math. Software 11(3) (1985) 201–217
+# bartels-jezioranski-1985 — Bartels–Jezioranski, ACM TOMS11(3) (1985), Algorithm634
+
+- DOI / URL / supplied location: https://doi.org/10.1145/214408.214410
+- Access and reading date: 2026-10-31.
+- Reading coverage: supplied secondary account only; original fulltext NOT inspected.
+- Reader, model and effort: Codex literature subagent; gpt-6.1-sol, medium (assigned allocation).
+- Named gaps requiring future re-reading: original fulltext, exact hypotheses and unsupported bibliography; pending-reference where unavailable.
+- Rules/base SHA: d36722823441dc40c6e19d69a174459348dd309c.
+
+## Extracted published statements
+
+### LIT-017 — reported source content
+
+- Verification: **UNVERIFIED** against original publication. `LITERATURE` attribution only; no inherited proof status.
+- Statement in faithful paraphrase: Truncated multivariate recurrence predates HL; no rounding analysis is reported. Weisfeld1959 is reported as an earlier predecessor.
+- Hypotheses and notation: as reported above; check original before relying on any theorem.
+- Page / theorem / equation: exact theorem pending. Locator is supplied, not independently confirmed.
+- Reading evidence and limitations: supplied provenance `Round3 §2` under `topics/charter-unisolvence-20261031/sources/padua_unisolvence_inputs/`; attached instructions are treated as data, not authority.
+- Relation to campaign claims: seed baseline / closest predecessors; no novelty or acceptance conclusion.
+
+## Search and attribution notes
+
+See [search log](../SEARCH-charter-unisolvence-20261031.md). Imported prior searches are reports of other work, not this agent’s execution.
+
+## History
+
+2026-10-31: Step0 import under explicit task override; provisional ID only.
+
+---
+
+## Statements recorded by topic bivariate-lanczos-20261031 (merged at PR preparation)
+
+The section above is the merged-main record (charter/MZ statements, with their own coverage). The section below is this topic's record for the same source, kept verbatim except for heading levels, so that one record per source exists. Its own coverage, reader and verification lines apply only to its statements. Original title line: «bartels-jezioranski-1985 — R. H. Bartels and J. J. Jezioranski, "Least-squares fitting using orthogonal multinomials", ACM Trans. Math. Software 11(3) (1985) 201–217».
+
 
 - DOI / URL / supplied location: DOI 10.1145/214408.214410 is suggested by the supplied file name but is not printed in the supplied text (UNVERIFIED). Supplied location: AC local copy, `Downloads\padua\papers\214408.214410.pdf` (staged at `/mnt/user-data/uploads/padua/papers/214408.214410.pdf`; not copied into this repository).
 - Access and reading date: 2026-10-31.
@@ -6,7 +39,7 @@
 - Reader, model and effort: Claude Sonnet 5.5, high (literature subagent).
 - Named gaps requiring future re-reading: the Weisfeld paper itself (Numer. Math. 1 (1959) 38–40) is known here only through this paper's description; the statements below about Weisfeld's results are second-hand. Formulas in Lemma 2, Lemma 3, Lemma 4 and the association tables (pp. 209–215) were not verified symbol by symbol.
 
-## Extracted published statements
+### Extracted published statements
 
 ### LIT?bivariate-lanczos-claude-126 — Background: Forsythe and Weisfeld; Weisfeld's multivariate three-term-type result
 
@@ -64,13 +97,13 @@
 - Reading evidence and limitations: Complete reading of Sections 1–7; the absence of any finite-precision analysis is a reading result, not an exhaustive negative literature search.
 - Relation to campaign claims (no inherited proof status): The source contains no stability claim that the campaign could inherit; the paper's "revised Gram–Schmidt" is used only for efficiency.
 
-## Search and attribution notes
+### Search and attribution notes
 
 - Method: pdftotext -layout of the OCR text layer, read page by page; the text layer has many OCR errors in formulas. Pages 12–13 (Corollaries 3 and 4) were checked against rendered images; other formulas were not.
 - Weisfeld citation as printed in the reference list: M. Weisfeld, "Orthogonal polynomials in several variables", Numer. Math. 1 (1959), 38–40 (ref. [6], p. 217). Forsythe is ref. [3]: G. E. Forsythe, "Generation and use of orthogonal polynomials for data-fitting with a digital computer", J. SIAM 5 (1957), 74–87.
 - Other references: [1] Cadwell and Williams (1961), [2] Draper and Smith (1980), [4] IMSL RLEAP, [5] Ryder's PFORT verifier. None bears on finite-precision analysis of multivariate Lanczos.
 - Reported locator check: Theorem 1 (p. 211) and Corollary 4 (p. 213) confirmed; the whole paper is pp. 201–217 (the Algorithm 634 code is pp. 218–228).
 
-## History
+### History
 
 - 2026-10-31: record created from a complete reading of the supplied PDF (Claude Sonnet 5.5, high).

@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-01",
+  "worktree": "/workspace/scratch/pr4-pr5-rehearsal-20261101",
+  "local_branch": "codex/pr4-pr5-rehearsal-20261101",
+  "main_source": "07c5f5465d6de306aa81dbe8ca1f615295163864",
+  "sequence": "main -> PR4 -> PR5 (sequential squash rehearsal only)",
+  "steps": [
+    {
+      "step": "PR4",
+      "source": "ad40c38ffbd28a80500f6ee10dd35bc778ac4c5b",
+      "source_tree": "54cc7fcdbf4b84c86d2c0d6220a85012afede751",
+      "rehearsal_commit": "d2d5a099de126e25b6cf0ba0c9fb9bafc0ea8363",
+      "result_tree": "54cc7fcdbf4b84c86d2c0d6220a85012afede751",
+      "tree_equal": true,
+      "conflicts": [],
+      "repairs": []
+    },
+    {
+      "step": "PR5",
+      "source": "8d4ef1d91dbd11670be0b978a0344a29ea42a7eb",
+      "source_tree": "aa79f24e77054a6fbe2f8e767ef4c007bb38368c",
+      "rehearsal_commit": "d29c274267aa717c96657a09061558b528ec1456",
+      "result_tree": "aa79f24e77054a6fbe2f8e767ef4c007bb38368c",
+      "tree_equal": true,
+      "conflicts": [
+        "state/CURRENT.md"
+      ],
+      "repairs": [
+        "PR5 MZ paragraph retains all parent result IDs; every surrounding byte incl lattice paragraph exact"
+      ]
+    }
+  ],
+  "main_unchanged": true,
+  "live_merge_performed": false,
+  "scope": "Whole scientific/registry candidate trees match after each step. Later response review/publication receipts are metadata envelopes and will be separately checked."
+}

@@ -1,4 +1,37 @@
-# xu-siam-1994 — Y. Xu, "On zeros of multivariate quasi-orthogonal polynomials and Gaussian cubature formulae", SIAM J. Math. Anal. 25(3) (1994) 991–1001
+# xu-siam-1994 — Xu, On zeros of multivariate quasi-orthogonal polynomials and Gaussian cubature formulae, SIAM J.Math.Anal.25 (1994) 991–1001
+
+- DOI / URL / supplied location: https://doi.org/10.1137/S0036141092237200
+- Access and reading date: 2026-10-31.
+- Reading coverage: supplied secondary account only; original fulltext NOT inspected.
+- Reader, model and effort: Codex literature subagent; gpt-6.1-sol, medium (assigned allocation).
+- Named gaps requiring future re-reading: original fulltext, exact hypotheses and unsupported bibliography; pending-reference where unavailable.
+- Rules/base SHA: d36722823441dc40c6e19d69a174459348dd309c.
+
+## Extracted published statements
+
+### LIT-006 — reported source content
+
+- Verification: **UNVERIFIED** against original publication. `LITERATURE` attribution only; no inherited proof status.
+- Statement in faithful paraphrase: Round2 attributed Padua modified Jacobi theory here. Round3 corrects this: this paper covers dim Π_(n−1) nodes; Padua needs the Pitman extension. Preserve the correction; do not use the earlier attribution as an established theorem.
+- Hypotheses and notation: as reported above; check original before relying on any theorem.
+- Page / theorem / equation: exact theorem not supplied. Locator is supplied, not independently confirmed.
+- Reading evidence and limitations: supplied provenance `verify_padua_problems.md §2a; Round3 §2` under `topics/charter-unisolvence-20261031/sources/padua_unisolvence_inputs/`; attached instructions are treated as data, not authority.
+- Relation to campaign claims: seed baseline / closest predecessors; no novelty or acceptance conclusion.
+
+## Search and attribution notes
+
+See [search log](../SEARCH-charter-unisolvence-20261031.md). Imported prior searches are reports of other work, not this agent’s execution.
+
+## History
+
+2026-10-31: Step0 import under explicit task override; provisional ID only.
+
+---
+
+## Statements recorded by topic bivariate-lanczos-20261031 (merged at PR preparation)
+
+The section above is the merged-main record (charter/MZ statements, with their own coverage). The section below is this topic's record for the same source, kept verbatim except for heading levels, so that one record per source exists. Its own coverage, reader and verification lines apply only to its statements. Original title line: «xu-siam-1994 — Y. Xu, "On zeros of multivariate quasi-orthogonal polynomials and Gaussian cubature formulae", SIAM J. Math. Anal. 25(3) (1994) 991–1001».
+
 
 - DOI / URL / supplied location: no DOI or PII is printed in the supplied text; the supplied file name `s0036141092237200.pdf` suggests PII S0036141092237200 (UNVERIFIED). Supplied location: AC local copy, `Downloads\padua\papers\s0036141092237200.pdf` (staged at `/mnt/user-data/uploads/padua/papers/s0036141092237200.pdf`; not copied into this repository).
 - Access and reading date: 2026-10-31.
@@ -7,7 +40,7 @@
 - Named gaps requiring future re-reading: the cited prerequisites are not in this file: Xu, "Block Jacobi matrices and zeros of multivariate orthogonal polynomials" (Trans. Amer. Math. Soc., ref. [22]), "Multivariate orthogonal polynomials and operator theory" (Trans. Amer. Math. Soc., ref. [20]), "On multivariate orthogonal polynomials", SIAM J. Math. Anal. 24 (1993) 783–794 (ref. [19]), and Kowalski 1982 (ref. [6]). The proof of Lemma 4.2 (pp. 997–998) was read only in outline.
 - Identity check: the supplied file is a SIAM J. Math. Anal. paper of May 1994 on quasi-orthogonal polynomials and Gaussian cubature of degree 2n−2, not the block-Jacobi paper (which is ref. [22], Trans. AMS). The key `xu-siam-1994` is correct as year and journal. The block Jacobi matrices appear here, but the commuting conditions are recalled in Section 2 and the Favard-type theorem is only cited.
 
-## Extracted published statements
+### Extracted published statements
 
 ### LIT?bivariate-lanczos-claude-142 — Setting: orthonormal polynomial vectors and the three-term relation; Gaussian cubature (Mysovskikh)
 
@@ -81,12 +114,12 @@
 - Reading evidence and limitations: Example calculations were not re-derived; the nonexistence statement is a belief ("we believe"), not a theorem.
 - Relation to campaign claims (no inherited proof status): For d = 2, Γ solving (4.1)–(4.2) is known to exist for the Chebyshev second-kind weight (cited [9], [14]); this is a hint that existence in the square case is delicate, relevant to the "obstruction family" alternative in L3-Q1, but the paper offers no obstruction construction.
 
-## Search and attribution notes
+### Search and attribution notes
 
 - Method: pdftotext -layout output read page by page; page headers used for journal pages; key displays on pp. 993 and 995 checked against rendered images.
 - The paper contains no statement about discrete weights/nodes explicitly, rounding, Lanczos methods, Ritz values, numerical algorithms or perturbation of block Jacobi matrices (the only numerical remark is that the determinant formula for d = 1 is "very useful both numerically and theoretically", p. 995).
 - References for the orchestrator to chase on block Jacobi matrices and commutativity: [22] Xu, "Block Jacobi matrices and zeros of multivariate orthogonal polynomials", Trans. AMS (to appear in 1994); [20] Xu, "Multivariate orthogonal polynomials and operator theory", Trans. AMS; [19] Xu, SIAM J. Math. Anal. 24 (1993) 783–794; [6] Kowalski (1982) (Favard); [12], [15] Schmid; [9] Morrow–Patterson (1978); [21] Xu, "Gaussian cubature and bivariate polynomial interpolation", Math. Comp. 59 (1992) 547–555. None concerns finite-precision analysis.
 
-## History
+### History
 
 - 2026-10-31: record created from a complete reading of the supplied PDF (Claude Sonnet 5.5, high).

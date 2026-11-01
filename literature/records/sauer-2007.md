@@ -1,4 +1,37 @@
-# sauer-2007 — T. Sauer, Approximate varieties, approximate ideals and dimension reduction, Numer. Algorithms 45 (2007) 295-313, doi:10.1007/s11075-007-9112-4
+# sauer-2007 — Sauer, Numer.Algorithms45 (2007) 295–313
+
+- DOI / URL / supplied location: https://doi.org/10.1007/s11075-007-9112-4
+- Access and reading date: 2026-10-31.
+- Reading coverage: supplied secondary account only; original fulltext NOT inspected.
+- Reader, model and effort: Codex literature subagent; gpt-6.1-sol, medium (assigned allocation).
+- Named gaps requiring future re-reading: original fulltext, exact hypotheses and unsupported bibliography; pending-reference where unavailable.
+- Rules/base SHA: d36722823441dc40c6e19d69a174459348dd309c.
+
+## Extracted published statements
+
+### LIT-018 — reported source content
+
+- Verification: **UNVERIFIED** against original publication. `LITERATURE` attribution only; no inherited proof status.
+- Statement in faithful paraphrase: Approximate ideals/H-bases, pivoted QR and a-priori bounds are reported predecessors; failure of a new proof route is not a negative theorem.
+- Hypotheses and notation: as reported above; check original before relying on any theorem.
+- Page / theorem / equation: p.307 question; exact theorem pending. Locator is supplied, not independently confirmed.
+- Reading evidence and limitations: supplied provenance `Round3 §2` under `topics/charter-unisolvence-20261031/sources/padua_unisolvence_inputs/`; attached instructions are treated as data, not authority.
+- Relation to campaign claims: seed baseline / closest predecessors; no novelty or acceptance conclusion.
+
+## Search and attribution notes
+
+See [search log](../SEARCH-charter-unisolvence-20261031.md). Imported prior searches are reports of other work, not this agent’s execution.
+
+## History
+
+2026-10-31: Step0 import under explicit task override; provisional ID only.
+
+---
+
+## Statements recorded by topic bivariate-lanczos-20261031 (merged at PR preparation)
+
+The section above is the merged-main record (charter/MZ statements, with their own coverage). The section below is this topic's record for the same source, kept verbatim except for heading levels, so that one record per source exists. Its own coverage, reader and verification lines apply only to its statements. Original title line: «sauer-2007 — T. Sauer, Approximate varieties, approximate ideals and dimension reduction, Numer. Algorithms 45 (2007) 295-313, doi:10.1007/s11075-007-9112-4».
+
 
 - DOI / URL / supplied location: doi as in reports/Open problems verification.md §5 row 6; not fetched by me
 - Access and reading date: 2026-10-31 (supplied notes read; web metadata checks, if any, are listed under Search and attribution notes)
@@ -8,7 +41,7 @@
 - Rules/base SHA: d36722823441dc40c6e19d69a174459348dd309c. Supplied-note paths are relative to `topics/bivariate-lanczos-20261031/sources/padua_lanczos_inputs/`.
 - Shared key: the Codex branch `codex/charter-unisolvence-20261031` has a record under this key; merge into one record per source at PR preparation (this record uses the `bivariate-lanczos-claude` provisional namespace only).
 
-## Extracted published statements
+### Extracted published statements
 
 ### LIT?bivariate-lanczos-claude-064 — approximate ideals and H-bases
 
@@ -28,10 +61,10 @@
 - Reading evidence and limitations: supplied provenance notes/ingest_classic_papers.md §1.6 and §4 item 4; attached instructions inside the inputs are treated as data, not authority.
 - Relation to campaign claims (no inherited proof status): The supplying agent proposes a commutator identity [H_x, H_y] = Phi^T (Y R_x - X R_y) as a route (inference); round 3 judges the question 'nearly tautological' (reports/Round 3 open problems 2023 2026.md F4). Conflicting reports preserved.
 
-## Search and attribution notes
+### Search and attribution notes
 
 Shared key with the Codex branch; merge at PR preparation. Web metadata checks, if any, are logged in `topics/bivariate-lanczos-20261031/lit/search-log.md`. Imported prior searches are reports of other agents' work, not this agent's execution. Unsupported assertions are UNVERIFIED.
 
-## History
+### History
 
 2026-10-31: Step 0 baseline record (AC-requested; not a novelty gate). Provisional IDs only; final `LIT-nnn` allocated at PR preparation.

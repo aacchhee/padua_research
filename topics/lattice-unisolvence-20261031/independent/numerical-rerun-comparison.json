@@ -1,0 +1,81 @@
+{
+  "c1_mod4": {
+    "all_nonfloating_payload_equal": true,
+    "floating_comparison_passed": true,
+    "tolerance_rel_abs": 1e-11,
+    "maximum_absolute_difference": [
+      7.105427357601002e-15,
+      5.51447196204625e-16,
+      "/shifted/4/chebyshev/sampled_lebesgue_max"
+    ],
+    "maximum_scaled_difference": [
+      5.51447196204625e-16,
+      7.105427357601002e-15,
+      "/shifted/4/chebyshev/sampled_lebesgue_max"
+    ],
+    "ignored_fields": [],
+    "developer_sha256": "e2576de67528fefae7c04d3f1dfe8f7d0626bb0cd0518a6295d9223bb27d00c9",
+    "rerun_sha256": "0275afeb6d6f4def48200911b58fc17e2d8331f6686c37684966abd264a42247"
+  },
+  "c1_stability": {
+    "all_nonfloating_payload_equal": true,
+    "floating_comparison_passed": true,
+    "tolerance_rel_abs": 1e-11,
+    "maximum_absolute_difference": [
+      0.0,
+      0.0,
+      "/rows/9/svd_tolerance"
+    ],
+    "maximum_scaled_difference": [
+      0.0,
+      0.0,
+      "/rows/9/svd_tolerance"
+    ],
+    "ignored_fields": [
+      "/rows/0/wall_seconds",
+      "/rows/1/wall_seconds",
+      "/rows/2/wall_seconds",
+      "/rows/3/wall_seconds",
+      "/rows/4/wall_seconds",
+      "/rows/5/wall_seconds",
+      "/rows/6/wall_seconds",
+      "/rows/7/wall_seconds",
+      "/rows/8/wall_seconds",
+      "/rows/9/wall_seconds",
+      "/rows/10/wall_seconds",
+      "/rows/11/wall_seconds",
+      "/rows/12/wall_seconds",
+      "/rows/13/wall_seconds",
+      "/rows/14/wall_seconds",
+      "/rows/15/wall_seconds",
+      "/rows/16/wall_seconds",
+      "/rows/17/wall_seconds",
+      "/rows/18/wall_seconds",
+      "/rows/19/wall_seconds",
+      "/rows/20/wall_seconds",
+      "/rows/21/wall_seconds",
+      "/rows/22/wall_seconds",
+      "/rows/23/wall_seconds",
+      "/rows/24/wall_seconds",
+      "/rows/25/wall_seconds",
+      "/rows/26/wall_seconds",
+      "/rows/27/wall_seconds",
+      "/rows/28/wall_seconds",
+      "/rows/29/wall_seconds",
+      "/rows/30/wall_seconds",
+      "/rows/31/wall_seconds",
+      "/rows/32/wall_seconds",
+      "/rows/33/wall_seconds",
+      "/rows/34/wall_seconds",
+      "/rows/35/wall_seconds",
+      "/rows/36/wall_seconds",
+      "/rows/37/wall_seconds",
+      "/rows/38/wall_seconds",
+      "/rows/39/wall_seconds",
+      "/rows/40/wall_seconds",
+      "/rows/41/wall_seconds"
+    ],
+    "developer_sha256": "35b3ce51f4671be608fe898733987ede2e103ab5740f10d919143be64e5969fb",
+    "rerun_sha256": "b0ec03829631a2da48d8e09b4625c183281019156e19d7afe6aa8db140a90fcf"
+  }
+}

@@ -1,4 +1,37 @@
-# degani-schiff-tannor-2005 — I. Degani, J. Schiff, D. J. Tannor, Commuting extensions and cubature formulae, Numer. Math. 101 (2005) 479-500
+# degani-schiff-tannor-2005 — Degani–Schiff–Tannor, Commuting extensions and cubature formulae, Numer.Math.101 (2005) 479–500
+
+- DOI / URL / supplied location: https://arxiv.org/abs/math/0408076
+- Access and reading date: 2026-10-31.
+- Reading coverage: supplied secondary account only; original fulltext NOT inspected.
+- Reader, model and effort: Codex literature subagent; gpt-6.1-sol, medium (assigned allocation).
+- Named gaps requiring future re-reading: original fulltext, exact hypotheses and unsupported bibliography; pending-reference where unavailable.
+- Rules/base SHA: d36722823441dc40c6e19d69a174459348dd309c.
+
+## Extracted published statements
+
+### LIT-009 — reported source content
+
+- Verification: **UNVERIFIED** against original publication. `LITERATURE` attribution only; no inherited proof status.
+- Statement in faithful paraphrase: Cubature nodes as joint eigenvalues of commuting extensions are prior art. Supplied ingestion inspected abstract only; exact theorem and dimensions remain to check.
+- Hypotheses and notation: as reported above; check original before relying on any theorem.
+- Page / theorem / equation: Thm2 reported in Round3 §6b T2. Locator is supplied, not independently confirmed.
+- Reading evidence and limitations: supplied provenance `verify_padua_problems.md §10; Round3 §6b` under `topics/charter-unisolvence-20261031/sources/padua_unisolvence_inputs/`; attached instructions are treated as data, not authority.
+- Relation to campaign claims: seed baseline / closest predecessors; no novelty or acceptance conclusion.
+
+## Search and attribution notes
+
+See [search log](../SEARCH-charter-unisolvence-20261031.md). Imported prior searches are reports of other work, not this agent’s execution.
+
+## History
+
+2026-10-31: Step0 import under explicit task override; provisional ID only.
+
+---
+
+## Statements recorded by topic bivariate-lanczos-20261031 (merged at PR preparation)
+
+The section above is the merged-main record (charter/MZ statements, with their own coverage). The section below is this topic's record for the same source, kept verbatim except for heading levels, so that one record per source exists. Its own coverage, reader and verification lines apply only to its statements. Original title line: «degani-schiff-tannor-2005 — I. Degani, J. Schiff, D. J. Tannor, Commuting extensions and cubature formulae, Numer. Math. 101 (2005) 479-500».
+
 
 - DOI / URL / supplied location: https://arxiv.org/abs/math/0408076 (PDF read via tool digest 2026-10-31, July 2004 preprint); journal doi:10.1007/s00211-005-0628-z (Numer. Math. 101(3) (2005) 479-500, confirmed by Crossref). Earlier (Step 0): https://arxiv.org/abs/math/0408076 (URL as in the Codex branch record; not fetched by me)
 - Access and reading date: 2026-10-31 (supplied notes read; web metadata checks, if any, are listed under Search and attribution notes)
@@ -8,7 +41,7 @@
 - Rules/base SHA: d36722823441dc40c6e19d69a174459348dd309c. Supplied-note paths are relative to `topics/bivariate-lanczos-20261031/sources/padua_lanczos_inputs/`.
 - Shared key: the Codex branch `codex/charter-unisolvence-20261031` has a record under this key; merge into one record per source at PR preparation (this record uses the `bivariate-lanczos-claude` provisional namespace only).
 
-## Extracted published statements
+### Extracted published statements
 
 ### LIT?bivariate-lanczos-claude-058 — commuting extensions and cubature (reported)
 
@@ -55,13 +88,13 @@
 - Reading evidence and limitations: Digest of the preprint.  Reader: Claude literature developer (Sonnet 5.5, high; online resolution pass), 2026-10-31. Read through WebFetch: the tool extracts the page text and returns a model-written digest, so locators and displayed formulas are as digested (garbled glyphs possible) and were NOT checked against page images.
 - Relation to campaign claims (no inherited proof status): L3-Q1: the positive-weight/compatible extension is the correct representing-measure notion for the square (M = N) case; Theorem 12 links extension size to the commutator rank of the degree-q sections.
 
-## Search and attribution notes
+### Search and attribution notes
 
 Shared key with codex/charter-unisolvence-20261031 (record degani-schiff-tannor-2005); merge at PR preparation. Koiran's later commuting-extension paper is recorded as koiran-2024. Web metadata checks, if any, are logged in `topics/bivariate-lanczos-20261031/lit/search-log.md`. Imported prior searches are reports of other agents' work, not this agent's execution. Unsupported assertions are UNVERIFIED.
 
 Online resolution pass 2026-10-31: the arXiv PDF is the 2004 preprint; the digest says it has no Gorenstein, colength or multi-Hankel content. Koiran (2024) confirms the journal reference as [2] and credits the paper with coining 'commuting extension'. Web checks are logged in `topics/bivariate-lanczos-20261031/lit/search-log.md`, section 'Online resolution pass 2026-10-31'. Unsupported assertions remain UNVERIFIED.
 
-## History
+### History
 
 2026-10-31: Step 0 baseline record (AC-requested; not a novelty gate). Provisional IDs only; final `LIT-nnn` allocated at PR preparation.
 

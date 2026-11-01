@@ -1,4 +1,37 @@
-# huhtanen-larsen-bit-2002 — M. Huhtanen and R. M. Larsen, "On generating discrete orthogonal bivariate polynomials", BIT Numerical Mathematics 42(2) (2002) 393–407
+# huhtanen-larsen-bit-2002 — Huhtanen–Larsen, BIT42 (2002) 393–407
+
+- DOI / URL / supplied location: AC-supplied bibliography
+- Access and reading date: 2026-10-31.
+- Reading coverage: supplied secondary account only; original fulltext NOT inspected.
+- Reader, model and effort: Codex literature subagent; gpt-6.1-sol, medium (assigned allocation).
+- Named gaps requiring future re-reading: original fulltext, exact hypotheses and unsupported bibliography; pending-reference where unavailable.
+- Rules/base SHA: d36722823441dc40c6e19d69a174459348dd309c.
+
+## Extracted published statements
+
+### LIT-016 — reported source content
+
+- Verification: **UNVERIFIED** against original publication. `LITERATURE` attribution only; no inherited proof status.
+- Statement in faithful paraphrase: Truncated short multivariate recurrences, vanishing-polynomial detection and curve fitting predate the proposed mechanisms. Source numerical claims remain separately unverified.
+- Hypotheses and notation: as reported above; check original before relying on any theorem.
+- Page / theorem / equation: Thm2.3 p.397; Cor2.2 p.396; §2.3; §4.1; p.401. Locator is supplied, not independently confirmed.
+- Reading evidence and limitations: supplied provenance `Open problems verification.md §§1–4; Round3 §§1–2` under `topics/charter-unisolvence-20261031/sources/padua_unisolvence_inputs/`; attached instructions are treated as data, not authority.
+- Relation to campaign claims: seed baseline / closest predecessors; no novelty or acceptance conclusion.
+
+## Search and attribution notes
+
+See [search log](../SEARCH-charter-unisolvence-20261031.md). Imported prior searches are reports of other work, not this agent’s execution.
+
+## History
+
+2026-10-31: Step0 import under explicit task override; provisional ID only.
+
+---
+
+## Statements recorded by topic bivariate-lanczos-20261031 (merged at PR preparation)
+
+The section above is the merged-main record (charter/MZ statements, with their own coverage). The section below is this topic's record for the same source, kept verbatim except for heading levels, so that one record per source exists. Its own coverage, reader and verification lines apply only to its statements. Original title line: «huhtanen-larsen-bit-2002 — M. Huhtanen and R. M. Larsen, "On generating discrete orthogonal bivariate polynomials", BIT Numerical Mathematics 42(2) (2002) 393–407».
+
 
 - DOI / URL / supplied location: DOI 10.1023/A:1021907210628 (inferred from the supplied file name; no DOI is printed in the supplied text; UNVERIFIED). Supplied location: AC local copy, `Downloads\padua\papers\A_1021907210628.pdf` (staged in the session at `/mnt/user-data/uploads/padua/papers/A_1021907210628.pdf`; not copied into this repository).
 - Access and reading date: 2026-10-31.
@@ -6,7 +39,7 @@
 - Reader, model and effort: Claude Sonnet 5.5, high (literature subagent).
 - Named gaps requiring future re-reading: reference [14] (Huhtanen, Math. Comp., polyanalytic polynomials) and [15] (the companion SIMAX paper, record `huhtanen-larsen-simax-2002`) are cited for the proof of Theorem 2.1 and for the 2k variant; they were not read here beyond the companion record. The proof of Theorem 2.3 was read but not independently re-derived.
 
-## Extracted published statements
+### Extracted published statements
 
 ### LIT?bivariate-lanczos-claude-101 — Algorithm: two-matrix Lanczos-type orthogonalization with a fixed multiplication order
 
@@ -112,7 +145,7 @@
 - Reading evidence and limitations: Figures were not inspected; the numbers are as printed in the text. No condition numbers or orthogonality diagnostics are reported.
 - Relation to campaign claims (no inherited proof status): A MEASURED-type report in the source on small unstructured node sets only (n ≤ 91); it gives no floating-point evidence at the scale M up to 10⁴ of the plan.
 
-## Search and attribution notes
+### Search and attribution notes
 
 - Method: the PDF text was extracted with pdftotext -layout into the session scratchpad (outside the repository), every page was read, and the printed page headers were used for journal page numbers.
 - Search for finite-precision content: Section 3 (pp. 399–401) and the two remarks on pp. 401–402 are the only places that discuss rounding; there is no analysis of loss of orthogonality, no reorthogonalization beyond the window-local ORTH, and no Ritz-value discussion in this paper.
@@ -120,6 +153,6 @@
 - References bearing on finite-precision analysis of multivariate Lanczos, for the orchestrator to chase: [6] Daniel–Gragg–Kaufman–Stewart, Math. Comp. 30 (1976) 772–795; [19] Reichel–Gragg, ACM TOMS 16 (1990) 369–377 (Algorithm 686); [18] Parlett, The Symmetric Eigenvalue Problem (1980), p. 113 (twice is enough); [14] Huhtanen, "Orthogonal polyanalytic polynomials and normal matrices", Math. Comp. (to appear in 2001; published later); [15] the companion SIMAX paper.
 - Not checked: whether the orthogonality-loss remarks in the two HL papers (this one, p. 401; SIMAX, p. 1088) rest on independent observations or on one observation repeated.
 
-## History
+### History
 
 - 2026-10-31: record created from a complete reading of the supplied PDF (Claude Sonnet 5.5, high).

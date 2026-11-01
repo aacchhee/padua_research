@@ -1,0 +1,46 @@
+{
+  "parent_tree": "7967cdd46923f46c259e29d6aefc2905c379da3e",
+  "parent_merge": "08fafe62d9798385dfafaacc9a41344272737e68",
+  "topic_merge": "a9e519ac3e0ff65f4ede8954d4630f2160600301",
+  "topic_merge_file_changes": 0,
+  "developer_manifest_entries_unchanged": 59,
+  "astra_targets_unchanged": 84,
+  "independent_evidence_unchanged": 42,
+  "frozen_archive_unchanged": true,
+  "metadata_links_stage_next": "PASS",
+  "metadata_targets": [
+    {
+      "path": "topics/lattice-unisolvence-20261031/AUDIT_HANDOFF.md",
+      "sha256": "6b36b27425c750288c5d2467426ce63d65d99cfddcb6b8c1751766bc3ccaffc5"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/COLD_STORAGE.md",
+      "sha256": "45846988d1ce1204acfafcbb19caa0f11ef482a9e423625c6d7a6ea4496b114f"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/LOG.md",
+      "sha256": "58ffb0973ad7fba7f26f0c8d41c6046413c87d2ed3a782b4572685efffe3d78a"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/plan.md",
+      "sha256": "9b2c1257aca9e1017fc49c0abedef4268816a009975993662647f957fbdca3e3"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/progress.md",
+      "sha256": "449219bf4ef533f3a71a3d39ead35cbb5813495cac4a04f530959162f1bb3c23"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/provenance.json",
+      "sha256": "e659fdfca2b78f1b7f54c23d58e10e64cd843d5896b9bcfeea5ccc432faf62a1"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/report.md",
+      "sha256": "6bf7508d96884d0268f3626ccb42c6cb8b298222958f8683c54c7dbe138ad245"
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "sha256": "3b5621458e28bac8560cc1166a157b416d14f7b21e11966965984f338c7c081d"
+    }
+  ],
+  "review_scope": "bounded integration metadata supplement; no mathematical rerun"
+}

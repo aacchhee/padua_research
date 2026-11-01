@@ -1,0 +1,228 @@
+{
+  "scientific_checkpoint": "2dc9264333cdf8372947448f4b9bdd3bb577d0e1",
+  "changes": [
+    {
+      "path": "state/IDEAS.md",
+      "before_sha256": "8faa713969b420b0fd1136e87af0086715a01435df52a8e17322a6cc5fdac912",
+      "after_sha256": "5072b1a827a5d11f7f542d75a1d6324a26e5570f2420565acb224715f52c65c0",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "literature/records/mz-quadrature-aliasing-screen.md",
+      "before_sha256": "658b4839cc2e041e13e95e3d085f16cbde24e93b2bfcc3c17b09a9931de588f9",
+      "after_sha256": "1321793123ef83890fa7dfbc1cecc14c754a350c6cb809d47017d1e87d3ccbf2",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "literature/records/mz-an-sommariva-vianello-2026.md",
+      "before_sha256": "48c3fc36116c824b11c8224be72a589227e74443c95ce7ce492146ca6138fa5b",
+      "after_sha256": "881cf6476599eb69d635344b9c23216ef3e2182e3b165219e3f1fa8eb282c22b",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "literature/records/mz-widom-1966-screen.md",
+      "before_sha256": "30e44f35a1fbad8ca49dde9a5d292906c9cd871099334157e620648a6d8d1bf5",
+      "after_sha256": "232ec883e16b52de73081ff10baa4356971ec6549bd87a1a948ad3c4a31c680e",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "literature/records/mz-passi-cv-2026.md",
+      "before_sha256": "fa073d0921ecf3d147b9a3af8eafc3066606c3597bd226a71faa91493732c45f",
+      "after_sha256": "bcdf0db38572b370486888616409f707f30ac834e5d038836899fdda801f46cc",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "literature/records/mz-don-gottlieb-1994.md",
+      "before_sha256": "67ad88c625428dc5fb88d43ef3b19df72007c8043f0f53b245c358c797c174fd",
+      "after_sha256": "e971462160001ca066c38969c31b230ac1a0eebda7ec2fe55323ff0c40856540",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "literature/records/mz-sloan-smith-1978-1980.md",
+      "before_sha256": "2b3427b9ae2d74df98341d44286776ed1a284bb26cf9e9a218dcded66099869d",
+      "after_sha256": "00c4b09510f3a40d284edc2374b88e49558df728ebdf7cf305dcc84b76211994",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "literature/records/mz-an-wu-2022.md",
+      "before_sha256": "99139ad39c3c4f0d9f7d5a1223960877c5d49a76e4653e51cbc4f51c77de6781",
+      "after_sha256": "78c03e8569a4dc64ebef571e6ce2baea72cca875cbc072d4f881ba9479fc2c5d",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "literature/records/mz-mastroianni-milovanovic-2008.md",
+      "before_sha256": "1342d052a1cc8c8e333c542a469e30c9a5f3e81feec77e6555fa935929c10005",
+      "after_sha256": "51d22129385c8f4ddfa563fac804a3e6176939af2470557064362645d5c284ee",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "literature/records/mz-input-reports.md",
+      "before_sha256": "11052578969d1b2478e451bdfe3902c03ba82df5013d279b7a7e759f985803e3",
+      "after_sha256": "e105a2f6c1d1139fbb5d7af2da5f537c1df7959653bfe0a3802911a659961bea",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "literature/records/mz-classical-mz-screen.md",
+      "before_sha256": "3f90cf4c7845b738845edc3da64bff9f62175a9842af166b31f95081b7cb9d53",
+      "after_sha256": "07b8b13565170c3e85a5368977c54ea2125e75e0bea0fea7639f8187dccce17c",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-sharp-constant-open.md",
+      "before_sha256": "9d6c7a2c674c351c04f0fec7325fcdd2dbbc676aefd47997a69e36e1701e606c",
+      "after_sha256": "e4d0ce341da68c68f22ba3d10e73841cabfd4a51a63b6d4427bfb566951b6947",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "tracks/mz-constants/theory/open-upper-limit.md",
+      "before_sha256": "e4e404c0bc48299c2828adcec4d2ff26b180e5828cccc0f64f6917b9dbdbbdc9",
+      "after_sha256": "eefe2f9f25fdad321364d417f2a6433c6d847e4e53243225f721217f4a2483d9",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-l1-obstruction.md",
+      "before_sha256": "47c6a3339168d7fb5d67ed03b49f8cc196e572c0fbe2175a0fb1f59e9a87e285",
+      "after_sha256": "50014f177a3a4bad4d3e7862820dd6269223351bc95b018e0558cc0044b4c53c",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-parity-upper.md",
+      "before_sha256": "6513c1d598fd8adb4cc33e40fc9f7f31502c3981e7bed8a70fb66115e815605c",
+      "after_sha256": "2f2bf232424558383ec6f0759850543a2c94619c382e16c8e4cdd39296898349",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-parity-obstruction.md",
+      "before_sha256": "0beac81ecf6c6db5f82bc5be8e48d56e0babb44b15263f4dcb647f55f0e1682b",
+      "after_sha256": "11d4af01b1b860c9858c90090a806df81b02ba728f402e4b4c1edb2fe1248b46",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m1-failed-diagonal-dominance.md",
+      "before_sha256": "ed5d6e475ec2ea6ffd55e53f6f5ebe5ee8ec9ae28eb4f712074bfd74697896c1",
+      "after_sha256": "e8fc0e597b9cd831d85f3d3e9c594d1c606ba5c97115546ef7177c248a9747d2",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m3-hyperinterpolation.md",
+      "before_sha256": "4d19ba82d096aa316c4801887740dd0ad537c6a0293eeed6075128c92e2a81d2",
+      "after_sha256": "9c38350befe852b24062a53ae84e1922296ff7f3bb3ea1692ccf635d1ba61b23",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m1-cc-foundation.md",
+      "before_sha256": "77e58ff93b916d169c6013ebf5085dc55d406ebdce277a09385efdce5804abf3",
+      "after_sha256": "761307947cb82a05411bf6c858d81da3384c2f44964e8a84bf29dd61bde9e29b",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "tracks/mz-constants/theory/reproduced-spectra.md",
+      "before_sha256": "cc0dea3c09c8ff3aea539388c573594cce4cb1c53d64e04cf0c41657487d62f5",
+      "after_sha256": "d7c2510abe145e48fe6ad641eec6692cd0c6e56e6ec9e51d28c8d93bc2d8e507",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-u-witness.md",
+      "before_sha256": "4413095f8d9bb0c86426fc7fba17f9d6e6824b00393af5ec93dea8f14625b024",
+      "after_sha256": "50ff9c2f3d1fdf263dbda25be0c5d95a2b1d8880414af897db74c7e1161a56b0",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m1-full-degree-obstruction.md",
+      "before_sha256": "628e0f0a10df9e9f6f253d6d31f3a689f84eb9dcefe59847e6dc26c34744efd6",
+      "after_sha256": "ecaf09c46a5ee5d2a09b11f5d8b1ecd427cea709b3182865011231e22a7ecebf",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m1-failed-psd.md",
+      "before_sha256": "71fe71fe4ad49b059538897b1e2d77688bae132b00e683ac09db2360b8a7534d",
+      "after_sha256": "1f7bcd4493b6043057c39a3a55a4b5bfa1d2170b4820efa5ae93a8f52760123f",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m1-coefficient-floor.md",
+      "before_sha256": "60d780befe615321e3a249550c32e7e1e644b258b45933afd24fbfce0ca42893",
+      "after_sha256": "c9e7c60c2f7d7d6f850c6de48deb1c0e85ed196e066ee6aed0ea99922ad91634",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m1-upper-bound.md",
+      "before_sha256": "ef798918a10befc52fb72c64443942b87a97d59bc1b85424db88f09099122514",
+      "after_sha256": "f86030dc8ed188e9538aca54eaea338f271617251320cfc6c4880440ed38b2dc",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m3-uniform-eta.md",
+      "before_sha256": "7dc112e74bbf992383b43e8f92f26c94aca27d745b7ce8c165738be55bcab44c",
+      "after_sha256": "38386da3c36149f97497dd7853af550a58bda1c1d5e29ecf75ec55f3a9dd9d0f",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "tracks/mz-constants/theory/open-padua-target.md",
+      "before_sha256": "2ca00c885d5e181555381137fbb4d3e17d3e34220a4a28445bf90ee1a5dcd2bd",
+      "after_sha256": "92668ca5e1fc5f12763172ca3a289a2074a2f695cc54a0c54cb767c60017ba9c",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-eta-counterexample.md",
+      "before_sha256": "0814bf8bad091de72398051fb0e67674f6a59cc1cc62bb830225dda0e6ebd1dc",
+      "after_sha256": "0ca2a1a962ee2a9b719cc0580ad26df771363ec9d6e9aa3bdea37166054445bc",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m3-lower-ratio.md",
+      "before_sha256": "2f99dac17bf276a5741ccf034fe353b6bd44a7555ee1a5192caa04281b795503",
+      "after_sha256": "4adf7597303dafb322518e2aebdd6ed32548b747e851b67e25e94d11ee867659",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-cardinal-lower.md",
+      "before_sha256": "76da1cbc0c88867eaf837f2ae2a9d3bc2112d376af4effaba5b5af18f3259f45",
+      "after_sha256": "353b886b685671d21c63d49c7ef9ac8a7c3b6a01a1d517097a7a136b55791660",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-padua-marginal.md",
+      "before_sha256": "df4e67df2b3bcf0929375d6d2216d3ea04490a309b93dab356810120e70a0f90",
+      "after_sha256": "2836bfe6e82fbfe9f45db994a927cf0cd872562d78510431c1eeb098a6b01c30",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m3-upper-ratio.md",
+      "before_sha256": "95139656c243842cb4a23807e7b63123b7e560420af2408356b40774fe4fcda7",
+      "after_sha256": "d405034cb8ebeed598c193614b6d189bd400483a3ca1c5644458f70ba7a97329",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "topics/mz-constants/directions/M3/IDEAS.md",
+      "before_sha256": "e7f019c7e50458db05302e1b023b7ef3b13b239523734e6e2c8e31a8fb7fa1b5",
+      "after_sha256": "032a443bf5b2bb4dbbb6d751820f2255e5d3d0238d584b61d2848f1a1bd8a378",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "topics/mz-constants/directions/M3/RUNS.md",
+      "before_sha256": "102d80a21a72b191cc3d20cc7c02728d77f2e928d14e555502712e6dc29e90c5",
+      "after_sha256": "11ef2d68a6a7a8f0ca6e82f9530b4dccdf2a8250c8256b69bf3a61249d09b712",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "topics/mz-constants/directions/M1/IDEAS.md",
+      "before_sha256": "25a97da1e9398e308c701fa27f8f84090b054bad08542c513aabda3acdebf69f",
+      "after_sha256": "524fa0f422318da86bc64f415d28ad5d8574c1be75021039cddf89048a0c06e6",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "topics/mz-constants/directions/M2/candidates.md",
+      "before_sha256": "f5bb1210b058616ccaccc702c6f3f6074e935831bc8232150cc6c7ff7ff39dcc",
+      "after_sha256": "691c9dd15362f1d71cbbeac86c69ff9c07ac1bd8642dfc377502d59881dc9d30",
+      "change": "exact full provisional-ID token substitution only"
+    },
+    {
+      "path": "topics/mz-constants/directions/M2/padua-foundation-record.md",
+      "before_sha256": "42ec2b845673b4da29e1ddeba61ff9d5bb16150d0ab7cced4a7043d17ae84ca6",
+      "after_sha256": "97340dcb4f478c3286276a1c1e4e8e35fe48f29288f0ec798dadf23211ae2efa",
+      "change": "exact full provisional-ID token substitution only"
+    }
+  ],
+  "excluded": "Source inputs, checker code, numerical evidence and auditor report were not changed."
+}

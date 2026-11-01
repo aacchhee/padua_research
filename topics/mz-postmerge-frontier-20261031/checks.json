@@ -1,0 +1,57 @@
+{
+  "kind": "administrative verification, not mathematical audit",
+  "base": "07c5f5465d6de306aa81dbe8ca1f615295163864",
+  "ready_head": "8ee04f4e5db46dd25fe5752ce605dde27098aae6",
+  "commands_executed": [
+    "git fetch origin main",
+    "GitHub get_pr_info for aacchhee/padua_research PR 3",
+    "git rev-parse origin/main and both trees",
+    "git merge-base --is-ancestor READY BASE",
+    "git ls-tree -r --name-only BASE; git show BASE:PATH vs local bytes for every protected tracked file",
+    "git diff --name-only BASE",
+    "git diff --check",
+    "Python exact CURRENT charter-prefix and ledger reservation-table comparisons; local Markdown link resolution"
+  ],
+  "protected_tracked_files_unchanged": 308,
+  "modified_tracked_paths": [
+    "state/CURRENT.md",
+    "topics/mz-constants/LOG.md",
+    "topics/padua-batch-20261031/ALLOCATIONS.md"
+  ],
+  "current_charter_prefix_unchanged": true,
+  "ledger_owner_and_reservation_table_unchanged": true,
+  "relative_links_resolved": 24,
+  "base_parents": [
+    "08fafe62d9798385dfafaacc9a41344272737e68",
+    "8ee04f4e5db46dd25fe5752ce605dde27098aae6"
+  ],
+  "ready_tree_equals_merged_tree": true,
+  "ready_is_ancestor": true,
+  "files": {
+    "state/CURRENT.md": {
+      "sha256": "e46dbae3742565acb7c96148b632cec998b5e4ebf98c40878f26365c68e6cf31",
+      "bytes": 7825
+    },
+    "topics/mz-constants/LOG.md": {
+      "sha256": "f3d77c3148a3d184455fb4dee4e17616cf1978e53b35154aafa34f3619ec795e",
+      "bytes": 15608
+    },
+    "topics/mz-constants/POST_MERGE.md": {
+      "sha256": "7e5b652904d453648340c463e7bc88a80f36216c7186a3e462ffabcec6388714",
+      "bytes": 3832
+    },
+    "topics/mz-postmerge-frontier-20261031/LOG.md": {
+      "sha256": "f7ce435539b433bb565d81eae44ce75fcbda5b310054e53072db93c91ffac976",
+      "bytes": 2814
+    },
+    "topics/mz-postmerge-frontier-20261031/merge-verification.json": {
+      "sha256": "0343bc6ed387eb74235a2708b3574c67e1c087ce6c804cebd3b15ff2f622f560",
+      "bytes": 1185
+    },
+    "topics/padua-batch-20261031/ALLOCATIONS.md": {
+      "sha256": "4e7f0d145143af96061d566f7f593d04318ec3b1ec3e342becdaeed31d94248f",
+      "bytes": 5981
+    }
+  },
+  "not_run": "No new numerical, manuscript or mathematical check; accepted evidence is byte-identical. Claude handoff remains PENDING."
+}

@@ -1,4 +1,36 @@
-# vanbarel-chesnokov-2010 — M. Van Barel and A. Chesnokov, "A method to compute recurrence relation coefficients for bivariate orthogonal polynomials by unitary matrix transformations", Numerical Algorithms 55 (2010) 383–402
+# vanbarel-chesnokov-2010 — Van Barel–Chesnokov, A method to compute recurrence relation coefficients for bivariate orthogonal polynomials by unitary matrix transformations, Numerical Algorithms55(2010)383–402
+
+- DOI / URL: https://doi.org/10.1007/s11075-010-9392-y
+- Access date:2026-10-31.
+- Reading coverage:publisher metadata/abstract only; subscription fulltext pending-reference.
+- Reader/model/effort:Codex literature developer, gpt-6.1-sol medium.
+- Named gaps: original theorem/proof and precise campaign overlap.
+- Rules/base:d36722823441dc40c6e19d69a174459348dd309c.
+
+## Extracted published statements
+
+### LIT-037 — active-campaign predecessor
+
+- Statement in faithful paraphrase:Publisher abstract describes a Givens-based inverse-eigenvalue algorithm for discrete orthonormal bivariate recurrences and extension to more variables. Campaign background asks to examine its zero-pivot/unisolvence claim; that exact claim and its field/order/positive-inner-product hypotheses are UNVERIFIED here.
+- Hypotheses/notation:retain the precise field/dimension/source scope above.
+- Page/theorem:abstract; zero-pivot locator pending.
+- Reading evidence/limitations:publisher metadata/abstract only; subscription fulltext pending-reference. LITERATURE attribution only; all theorem-level content beyond the abstract is UNVERIFIED.
+- Relation to campaign:U1/U3 zero-pivot questions must distinguish geometric unisolvence from isotropy and the chosen recurrence/pivot path. Do not attribute an arbitrary-field iff to this source.
+
+## Search and attribution notes
+
+See [search log](../SEARCH-charter-unisolvence-20261031.md). No novelty claim.
+
+## History
+
+2026-10-31: added active U1/U0 background; provisional ID.
+
+---
+
+## Statements recorded by topic bivariate-lanczos-20261031 (merged at PR preparation)
+
+The section above is the merged-main record (charter/MZ statements, with their own coverage). The section below is this topic's record for the same source, kept verbatim except for heading levels, so that one record per source exists. Its own coverage, reader and verification lines apply only to its statements. Original title line: «vanbarel-chesnokov-2010 — M. Van Barel and A. Chesnokov, "A method to compute recurrence relation coefficients for bivariate orthogonal polynomials by unitary matrix transformations", Numerical Algorithms 55 (2010) 383–402».
+
 
 - DOI / URL / supplied location: DOI 10.1007/s11075-010-9392-y (printed on the first page). Supplied location: AC local copy, `Downloads\padua\papers\s11075-010-9392-y.pdf` (staged at `/mnt/user-data/uploads/padua/papers/s11075-010-9392-y.pdf`; not copied into this repository). Received 9 December 2009, accepted 23 April 2010, published online 16 May 2010.
 - Access and reading date: 2026-10-31.
@@ -6,7 +38,7 @@
 - Reader, model and effort: Claude Sonnet 5.5, high (literature subagent).
 - Named gaps requiring future re-reading: Figures 3–7 (coefficient decay and least-squares error surfaces) were not inspected; the graphical matrices of the 6 × 6 example (pp. 391–395) lost their markers in the text layer and were not reproduced.
 
-## Extracted published statements
+### Extracted published statements
 
 ### LIT?bivariate-lanczos-claude-151 — The inverse eigenvalue problem (13)
 
@@ -104,13 +136,13 @@
 - Reading evidence and limitations: Statements are citations of other works; not checked here (the HL part is covered by record `huhtanen-larsen-bit-2002`).
 - Relation to campaign claims (no inherited proof status): Links the 2010 paper to Xu 2004 (block-tridiagonal structure for discrete measures), a source to read for the L3 block-Jacobi conditions in the discrete case (not read).
 
-## Search and attribution notes
+### Search and attribution notes
 
 - Method: pdftotext -layout output read page by page; page headers used for journal pages; Fig. 2 and Table 1 checked against rendered images.
 - Reported locator check: the pivot remark is on p. 395 (not p. 392); Tables 1 and 2 are on pp. 400 and 401; the sentence on the "numerical stability" claim is in the abstract and conclusions.
 - References bearing on finite-precision or accuracy analysis for this approach, for the orchestrator to chase: [12] Elhay–Golub–Kautsky (record `egk-1991`); [16] Huhtanen–Larsen (record `huhtanen-larsen-bit-2002`); [20] Van Barel–Bultheel, "Updating and downdating of orthonormal polynomial vectors and some applications" (Contemp. Math. 281 (2001) 145–162); [19] Van Barel–Bultheel, ETNA 3 (1995) 1–23; [2] Ammar–Gragg–Reichel, LAA 172 (1992) 315–336 (downdating Szegő polynomials); [1] Ammar–Gragg–Reichel (1991) (inverse unitary QR algorithm); [21] Xu, Adv. Appl. Math. 33 (2004) 615–632; [10] Chu–Golub, Inverse Eigenvalue Problems (2005) (survey). None of these was read.
 - Not in the paper: any rotation-count or operation-count of Algorithm 1, any condition number or error bound, any comparison against Householder or CGS2.
 
-## History
+### History
 
 - 2026-10-31: record created from a complete reading of the supplied PDF (Claude Sonnet 5.5, high).

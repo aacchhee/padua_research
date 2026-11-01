@@ -1,0 +1,766 @@
+{
+  "auditor": "gpt-6-astra xhigh",
+  "date": "2026-10-31",
+  "rules_sha": "d36722823441dc40c6e19d69a174459348dd309c",
+  "source_revision": "Final reviewed working-tree byte hashes after scoped allocation and manuscript impact review; rules commit is not represented as containing the later scientific files.",
+  "scientific_preallocation_checkpoint": "2dc9264333cdf8372947448f4b9bdd3bb577d0e1",
+  "audit_status": "Scientific reconstruction and final allocation/registry/manuscript impact review complete within report scope; Claude handoff PENDING; novelty unresolved; no publication-readiness approval.",
+  "historical_snapshot": {
+    "original_manifest_sha256": "bbf7c00413a4ec11f1efb32ef878e2ccadb3d1d04e84df72d453d05b20124beb",
+    "original_label": "preallocation working-tree file hashes; no claim that new scientific files existed in the rules commit",
+    "label_correction": "The 55-input snapshot collection overlapped allocation; some inputs already contained final IDs. These are historical mixed-time identities, not uniformly preallocation bytes. Explicit original proof pins remain in the report; allocation-check.json establishes the normalization chain.",
+    "audited_inputs": [
+      {
+        "path": "AGENTS.md",
+        "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60",
+        "bytes": 3159
+      },
+      {
+        "path": "agents/WORKFLOW.md",
+        "sha256": "b1c1c14c83e02bf38283159f81ec278ae336ab56c95d0c026b9ada3314d1ffaa",
+        "bytes": 18116
+      },
+      {
+        "path": "agents/codex/CODEX.md",
+        "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+        "bytes": 4969
+      },
+      {
+        "path": "state/IDEAS.md",
+        "sha256": "5072b1a827a5d11f7f542d75a1d6324a26e5570f2420565acb224715f52c65c0",
+        "bytes": 12122
+      },
+      {
+        "path": "literature/INDEX.md",
+        "sha256": "a2851b335cbff66ad4002a1ff9f0655dbf2dd8a75ffd8806300f3ae4fa25ae03",
+        "bytes": 927
+      },
+      {
+        "path": "topics/mz-constants/plan.md",
+        "sha256": "77583846cd02abdc78383312f566a5551f3f6b9e11e0e152c58c22cce94d4de9",
+        "bytes": 3859
+      },
+      {
+        "path": "topics/mz-constants/literature-search.md",
+        "sha256": "d14b5845fad257162f9cae04d7a49a26c7b25a1dc6c0d563ece196bb33d149c7",
+        "bytes": 13847
+      },
+      {
+        "path": "topics/mz-constants/reproduction.md",
+        "sha256": "40ff90ddac2a096168713b27e1d835eaf8815a6c2ae9122272bc386b64c06d5c",
+        "bytes": 6171
+      },
+      {
+        "path": "tracks/mz-constants/theory/m1-cc-foundation.md",
+        "sha256": "761307947cb82a05411bf6c858d81da3384c2f44964e8a84bf29dd61bde9e29b",
+        "bytes": 4790
+      },
+      {
+        "path": "tracks/mz-constants/theory/m1-coefficient-floor.md",
+        "sha256": "c9e7c60c2f7d7d6f850c6de48deb1c0e85ed196e066ee6aed0ea99922ad91634",
+        "bytes": 3173
+      },
+      {
+        "path": "tracks/mz-constants/theory/m1-failed-diagonal-dominance.md",
+        "sha256": "e8fc0e597b9cd831d85f3d3e9c594d1c606ba5c97115546ef7177c248a9747d2",
+        "bytes": 1855
+      },
+      {
+        "path": "tracks/mz-constants/theory/m1-failed-psd.md",
+        "sha256": "1f7bcd4493b6043057c39a3a55a4b5bfa1d2170b4820efa5ae93a8f52760123f",
+        "bytes": 2317
+      },
+      {
+        "path": "tracks/mz-constants/theory/m1-full-degree-obstruction.md",
+        "sha256": "ecaf09c46a5ee5d2a09b11f5d8b1ecd427cea709b3182865011231e22a7ecebf",
+        "bytes": 1951
+      },
+      {
+        "path": "tracks/mz-constants/theory/m1-upper-bound.md",
+        "sha256": "f86030dc8ed188e9538aca54eaea338f271617251320cfc6c4880440ed38b2dc",
+        "bytes": 4585
+      },
+      {
+        "path": "tracks/mz-constants/theory/m2-cardinal-lower.md",
+        "sha256": "353b886b685671d21c63d49c7ef9ac8a7c3b6a01a1d517097a7a136b55791660",
+        "bytes": 6096
+      },
+      {
+        "path": "tracks/mz-constants/theory/m2-eta-counterexample.md",
+        "sha256": "0ca2a1a962ee2a9b719cc0580ad26df771363ec9d6e9aa3bdea37166054445bc",
+        "bytes": 3499
+      },
+      {
+        "path": "tracks/mz-constants/theory/m2-l1-obstruction.md",
+        "sha256": "50014f177a3a4bad4d3e7862820dd6269223351bc95b018e0558cc0044b4c53c",
+        "bytes": 2279
+      },
+      {
+        "path": "tracks/mz-constants/theory/m2-padua-marginal.md",
+        "sha256": "2836bfe6e82fbfe9f45db994a927cf0cd872562d78510431c1eeb098a6b01c30",
+        "bytes": 6024
+      },
+      {
+        "path": "tracks/mz-constants/theory/m2-parity-obstruction.md",
+        "sha256": "11d4af01b1b860c9858c90090a806df81b02ba728f402e4b4c1edb2fe1248b46",
+        "bytes": 2745
+      },
+      {
+        "path": "tracks/mz-constants/theory/m2-parity-upper.md",
+        "sha256": "2f2bf232424558383ec6f0759850543a2c94619c382e16c8e4cdd39296898349",
+        "bytes": 5867
+      },
+      {
+        "path": "tracks/mz-constants/theory/m2-sharp-constant-open.md",
+        "sha256": "e4d0ce341da68c68f22ba3d10e73841cabfd4a51a63b6d4427bfb566951b6947",
+        "bytes": 2358
+      },
+      {
+        "path": "tracks/mz-constants/theory/m2-u-witness.md",
+        "sha256": "50ff9c2f3d1fdf263dbda25be0c5d95a2b1d8880414af897db74c7e1161a56b0",
+        "bytes": 2980
+      },
+      {
+        "path": "tracks/mz-constants/theory/m3-hyperinterpolation.md",
+        "sha256": "9c38350befe852b24062a53ae84e1922296ff7f3bb3ea1692ccf635d1ba61b23",
+        "bytes": 4734
+      },
+      {
+        "path": "tracks/mz-constants/theory/m3-lower-ratio.md",
+        "sha256": "4adf7597303dafb322518e2aebdd6ed32548b747e851b67e25e94d11ee867659",
+        "bytes": 6421
+      },
+      {
+        "path": "tracks/mz-constants/theory/m3-uniform-eta.md",
+        "sha256": "38386da3c36149f97497dd7853af550a58bda1c1d5e29ecf75ec55f3a9dd9d0f",
+        "bytes": 2943
+      },
+      {
+        "path": "tracks/mz-constants/theory/m3-upper-ratio.md",
+        "sha256": "d405034cb8ebeed598c193614b6d189bd400483a3ca1c5644458f70ba7a97329",
+        "bytes": 3379
+      },
+      {
+        "path": "tracks/mz-constants/theory/open-padua-target.md",
+        "sha256": "92668ca5e1fc5f12763172ca3a289a2074a2f695cc54a0c54cb767c60017ba9c",
+        "bytes": 2602
+      },
+      {
+        "path": "tracks/mz-constants/theory/open-upper-limit.md",
+        "sha256": "eefe2f9f25fdad321364d417f2a6433c6d847e4e53243225f721217f4a2483d9",
+        "bytes": 2360
+      },
+      {
+        "path": "tracks/mz-constants/theory/reproduced-spectra.md",
+        "sha256": "d7c2510abe145e48fe6ad641eec6692cd0c6e56e6ec9e51d28c8d93bc2d8e507",
+        "bytes": 5114
+      },
+      {
+        "path": "literature/records/mz-an-sommariva-vianello-2026.md",
+        "sha256": "881cf6476599eb69d635344b9c23216ef3e2182e3b165219e3f1fa8eb282c22b",
+        "bytes": 2152
+      },
+      {
+        "path": "literature/records/mz-an-wu-2022.md",
+        "sha256": "78c03e8569a4dc64ebef571e6ce2baea72cca875cbc072d4f881ba9479fc2c5d",
+        "bytes": 2038
+      },
+      {
+        "path": "literature/records/mz-classical-mz-screen.md",
+        "sha256": "07b8b13565170c3e85a5368977c54ea2125e75e0bea0fea7639f8187dccce17c",
+        "bytes": 2985
+      },
+      {
+        "path": "literature/records/mz-don-gottlieb-1994.md",
+        "sha256": "e971462160001ca066c38969c31b230ac1a0eebda7ec2fe55323ff0c40856540",
+        "bytes": 1383
+      },
+      {
+        "path": "literature/records/mz-input-reports.md",
+        "sha256": "e105a2f6c1d1139fbb5d7af2da5f537c1df7959653bfe0a3802911a659961bea",
+        "bytes": 2480
+      },
+      {
+        "path": "literature/records/mz-mastroianni-milovanovic-2008.md",
+        "sha256": "51d22129385c8f4ddfa563fac804a3e6176939af2470557064362645d5c284ee",
+        "bytes": 1521
+      },
+      {
+        "path": "literature/records/mz-passi-cv-2026.md",
+        "sha256": "bcdf0db38572b370486888616409f707f30ac834e5d038836899fdda801f46cc",
+        "bytes": 2146
+      },
+      {
+        "path": "literature/records/mz-quadrature-aliasing-screen.md",
+        "sha256": "1321793123ef83890fa7dfbc1cecc14c754a350c6cb809d47017d1e87d3ccbf2",
+        "bytes": 4157
+      },
+      {
+        "path": "literature/records/mz-sloan-smith-1978-1980.md",
+        "sha256": "00c4b09510f3a40d284edc2374b88e49558df728ebdf7cf305dcc84b76211994",
+        "bytes": 2203
+      },
+      {
+        "path": "literature/records/mz-widom-1966-screen.md",
+        "sha256": "232ec883e16b52de73081ff10baa4356971ec6549bd87a1a948ad3c4a31c680e",
+        "bytes": 1732
+      },
+      {
+        "path": "topics/mz-constants/directions/M0/rounds.md",
+        "sha256": "4a454d77b9c6ce3e5d6c00d8488e910e88b341b432b901c117e03816c1b81baa",
+        "bytes": 707
+      },
+      {
+        "path": "topics/mz-constants/directions/M1/IDEAS.md",
+        "sha256": "524fa0f422318da86bc64f415d28ad5d8574c1be75021039cddf89048a0c06e6",
+        "bytes": 10319
+      },
+      {
+        "path": "topics/mz-constants/directions/M1/RUNS.md",
+        "sha256": "fad2948041068361ba209969ee3dae6f926b4e250bd9dee8b9626d0117351f69",
+        "bytes": 4142
+      },
+      {
+        "path": "topics/mz-constants/directions/M2/LOG.md",
+        "sha256": "b2e2dfd3963406a803cbca3a3216338e68ddb87eb59fd9df2516edd4e99cdd28",
+        "bytes": 4454
+      },
+      {
+        "path": "topics/mz-constants/directions/M2/candidates.md",
+        "sha256": "691c9dd15362f1d71cbbeac86c69ff9c07ac1bd8642dfc377502d59881dc9d30",
+        "bytes": 12106
+      },
+      {
+        "path": "topics/mz-constants/directions/M2/padua-foundation-record.md",
+        "sha256": "97340dcb4f478c3286276a1c1e4e8e35fe48f29288f0ec798dadf23211ae2efa",
+        "bytes": 3516
+      },
+      {
+        "path": "topics/mz-constants/directions/M3/IDEAS.md",
+        "sha256": "032a443bf5b2bb4dbbb6d751820f2255e5d3d0238d584b61d2848f1a1bd8a378",
+        "bytes": 10718
+      },
+      {
+        "path": "topics/mz-constants/directions/M3/RUNS.md",
+        "sha256": "11ef2d68a6a7a8f0ca6e82f9530b4dccdf2a8250c8256b69bf3a61249d09b712",
+        "bytes": 3710
+      },
+      {
+        "path": "topics/mz-constants/directions/M4/rounds.md",
+        "sha256": "a76bc78163b631ff819a860226e9bf1553f219b7477c6f4fae3aa70b6cdba07b",
+        "bytes": 1101
+      },
+      {
+        "path": "topics/mz-constants/directions/M5/rounds.md",
+        "sha256": "67873a78a342a7d1ee7fe026a7fd319e5cf2aa576e7917665ad05424d15e9b28",
+        "bytes": 591
+      },
+      {
+        "path": "topics/mz-constants/directions/M6/rounds.md",
+        "sha256": "2b5b70734566c48286f639dcd54bb9dadbdf9f3d1ece22514b3f56049706a680",
+        "bytes": 935
+      },
+      {
+        "path": "topics/mz-constants/directions/M7/rounds.md",
+        "sha256": "f151824451ef45f3b23d4636ced9ee00a96da508fabc0f8c8984191cfa3e06a1",
+        "bytes": 742
+      },
+      {
+        "path": "tracks/mz-constants/code/m1_exact_check.py",
+        "sha256": "7a9b32260a90684e16fcd023e031fd3b91d5ea21ecce2ff351bbc034d68552e3",
+        "bytes": 3709
+      },
+      {
+        "path": "tracks/mz-constants/code/m2_endpoint.py",
+        "sha256": "71f516a44e4d1e46731b0e596b36ba8796577f823c11a267efaf6b71746142c0",
+        "bytes": 2962
+      },
+      {
+        "path": "tracks/mz-constants/code/m3_exact_check.py",
+        "sha256": "246bd4b95226182b0231730d7ad6ae6d7716623d31b28193c0e44d932825d2dd",
+        "bytes": 3003
+      },
+      {
+        "path": "tracks/mz-constants/code/reproduce.py",
+        "sha256": "fe88a16d2ac08df96dc5e18a224ac1b0d46d5cec4310cc86fff0f7fda1aa44ac",
+        "bytes": 6216
+      }
+    ],
+    "auditor_artifacts": [
+      {
+        "path": "tracks/mz-constants/evidence/astra-independent-check.json",
+        "sha256": "aead888fedd990bfadaceea6e62e9e9469497d7ad88f7a8b07471669065fd49b",
+        "bytes": 6518
+      },
+      {
+        "path": "tracks/mz-constants/evidence/astra-independent-check.py",
+        "sha256": "496420f9da6cb39715b61519c87b8dfbf4a0f6ae1140ff2fdd88c96eda592b11",
+        "bytes": 5907
+      },
+      {
+        "path": "tracks/mz-constants/evidence/astra-m1-replay.txt",
+        "sha256": "4d76e359b9f8b5007f1bca30ea73895237195d5d8f5edeea9c822c8df1f87636",
+        "bytes": 1304
+      },
+      {
+        "path": "tracks/mz-constants/evidence/astra-m2-comparison.json",
+        "sha256": "6fcd622e26421f664fc9a0424768672fb56c3b22e6b6ca32152a08c714ce6ea1",
+        "bytes": 370
+      },
+      {
+        "path": "tracks/mz-constants/evidence/astra-m2-replay.jsonl",
+        "sha256": "df076812f88c19e8e6a71b58ac1eb46cacb506541cccd09a92441fd9356ae6a8",
+        "bytes": 3701
+      },
+      {
+        "path": "tracks/mz-constants/evidence/astra-m3-comparison.json",
+        "sha256": "e41fd17534a9dee20532350490ba5e2fc53ba9bc33d42795dfe2a866244d1e3c",
+        "bytes": 430
+      },
+      {
+        "path": "tracks/mz-constants/evidence/astra-m3-replay.txt",
+        "sha256": "b4d40043ff747f83ed12a1b6e9d625913bde3f8835e662f057cdf012ee19ce08",
+        "bytes": 1959
+      },
+      {
+        "path": "tracks/mz-constants/evidence/astra-replay-comparison.json",
+        "sha256": "b1eb9599f035694d691880ef77945da4955668a607471f1c63ea5d9d85f000de",
+        "bytes": 728
+      },
+      {
+        "path": "tracks/mz-constants/evidence/astra-reproduction.json",
+        "sha256": "1511bfeb982f3e12b904acf151d9a586e6a65ee776dc464a12789a955ead4976",
+        "bytes": 29187
+      },
+      {
+        "path": "topics/mz-constants/independent-astra-01.md",
+        "sha256": "dd5b28f12b240180e38dc7e8d8ec113901a312bf9f8fab8c4855066ef20719dd",
+        "bytes": 31200
+      }
+    ]
+  },
+  "audited_inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60",
+      "bytes": 3159
+    },
+    {
+      "path": "agents/WORKFLOW.md",
+      "sha256": "b1c1c14c83e02bf38283159f81ec278ae336ab56c95d0c026b9ada3314d1ffaa",
+      "bytes": 18116
+    },
+    {
+      "path": "agents/codex/CODEX.md",
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+      "bytes": 4969
+    },
+    {
+      "path": "state/IDEAS.md",
+      "sha256": "ea709a469fbc771adf422811c2a586101c983c95158c2fd4a17297b45a0fa4a1",
+      "bytes": 22461
+    },
+    {
+      "path": "literature/INDEX.md",
+      "sha256": "3808438bf32ada22e341c962da11949ea5360ad3bf161167698bac3e4ad8c391",
+      "bytes": 7231
+    },
+    {
+      "path": "topics/mz-constants/plan.md",
+      "sha256": "d7587d6a007d47b8a50a189951c2025d4e533a1a3a35ababffad8fa05a5694d7",
+      "bytes": 4268
+    },
+    {
+      "path": "topics/mz-constants/literature-search.md",
+      "sha256": "d14b5845fad257162f9cae04d7a49a26c7b25a1dc6c0d563ece196bb33d149c7",
+      "bytes": 13847
+    },
+    {
+      "path": "topics/mz-constants/reproduction.md",
+      "sha256": "40ff90ddac2a096168713b27e1d835eaf8815a6c2ae9122272bc386b64c06d5c",
+      "bytes": 6171
+    },
+    {
+      "path": "tracks/mz-constants/theory/m1-cc-foundation.md",
+      "sha256": "ce2731b5c585714b1e4011850ffd021b120dbec3d50f4fc2eff7eded0ab46d8e",
+      "bytes": 5180
+    },
+    {
+      "path": "tracks/mz-constants/theory/m1-coefficient-floor.md",
+      "sha256": "9ffdbb1ffc2ca4337f7daa76c41ca8391ae8b18fa8b8f3630e63299597d68a5d",
+      "bytes": 3563
+    },
+    {
+      "path": "tracks/mz-constants/theory/m1-failed-diagonal-dominance.md",
+      "sha256": "67c844c63bdc32b0648238c3bbb352c333bb59360bf59e480fb7eab5000ffea5",
+      "bytes": 2245
+    },
+    {
+      "path": "tracks/mz-constants/theory/m1-failed-psd.md",
+      "sha256": "f4ceee54f7f6b7c033e7dec70a312583a794836c4a72c4abc6252064860650ae",
+      "bytes": 2707
+    },
+    {
+      "path": "tracks/mz-constants/theory/m1-full-degree-obstruction.md",
+      "sha256": "e6767fec1e2ddbd1ab27e621393fb0e714b469a35a0f13465924e16d7d79467c",
+      "bytes": 2341
+    },
+    {
+      "path": "tracks/mz-constants/theory/m1-upper-bound.md",
+      "sha256": "e7421bfcec83b89673142887f66befdb6ddd4c439bdcffb277e8df71e59272cd",
+      "bytes": 4975
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-cardinal-lower.md",
+      "sha256": "fbf8846a40c94115defd5db4f3d05121669b9b3f323511f2321ff84229c68dc1",
+      "bytes": 6486
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-eta-counterexample.md",
+      "sha256": "2f5ec4c600d5913d2a0f6664a39928b737e1286bb79f270c0144dbc40162e70f",
+      "bytes": 3889
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-l1-obstruction.md",
+      "sha256": "49e90b2d0918b9bb4d10cba7332c4ed234cbffdcb43773ab30eedc9c82ea34be",
+      "bytes": 2669
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-padua-marginal.md",
+      "sha256": "4fcf5cee66a389341d2d55e830df66ad07554d9ccef6abdc1ce9b33895334850",
+      "bytes": 6414
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-parity-obstruction.md",
+      "sha256": "92a25fa5e9ee2336bef5da4b1f241a20f40c800825ee39e1bf1c8bdc9690d6f2",
+      "bytes": 3135
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-parity-upper.md",
+      "sha256": "790e8fedff639c11f979a743356d1d8617ef3bbed367a2ec42bc740c85a6b3e9",
+      "bytes": 6257
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-sharp-constant-open.md",
+      "sha256": "1a0310059d03746be25de5114c8ddb87fd113c400c12db2e9d7140ad56cabe41",
+      "bytes": 2752
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-u-witness.md",
+      "sha256": "6333fb24fb4a3c7738684bd40d969e3be069b6c32126fa4691dfb758b11021c8",
+      "bytes": 3370
+    },
+    {
+      "path": "tracks/mz-constants/theory/m3-hyperinterpolation.md",
+      "sha256": "65e251fe977dec67dbe5582d75666e086445ad0dd364ba857902bc360f0f012d",
+      "bytes": 5132
+    },
+    {
+      "path": "tracks/mz-constants/theory/m3-lower-ratio.md",
+      "sha256": "4aa51f3d66cb3a443cdb9990c4114c5560d4d28949849d08a60a0190ffb0d083",
+      "bytes": 6811
+    },
+    {
+      "path": "tracks/mz-constants/theory/m3-uniform-eta.md",
+      "sha256": "9d774f48e914c4c96f7270a95d2f1ea0d48c02b813308d504b647be25af71ea3",
+      "bytes": 3341
+    },
+    {
+      "path": "tracks/mz-constants/theory/m3-upper-ratio.md",
+      "sha256": "3934f775aae3f7b962d1acce59b71cf1fb80e3edff1742b5073e5988d45281f5",
+      "bytes": 3769
+    },
+    {
+      "path": "tracks/mz-constants/theory/open-padua-target.md",
+      "sha256": "5e488f604a14aab9e30c52b8cb7ce6fc5e0d68f34ad71454620c5461c9996b81",
+      "bytes": 2992
+    },
+    {
+      "path": "tracks/mz-constants/theory/open-upper-limit.md",
+      "sha256": "43e3e91c498eb60f60d04dc23d67b08f67a41f7594c3129837d3267067ca51e7",
+      "bytes": 2750
+    },
+    {
+      "path": "tracks/mz-constants/theory/reproduced-spectra.md",
+      "sha256": "4f5d7452aa65f4f15f8eb0d773ec4469d3a003d1b1e3660f6ac6d8c7eae7a4a4",
+      "bytes": 5504
+    },
+    {
+      "path": "literature/records/mz-an-sommariva-vianello-2026.md",
+      "sha256": "0ab57a7f40d6319690455c2e4974f466e24e045249679d0536472876af79a4a4",
+      "bytes": 2883
+    },
+    {
+      "path": "literature/records/mz-an-wu-2022.md",
+      "sha256": "78c03e8569a4dc64ebef571e6ce2baea72cca875cbc072d4f881ba9479fc2c5d",
+      "bytes": 2038
+    },
+    {
+      "path": "literature/records/mz-classical-mz-screen.md",
+      "sha256": "07b8b13565170c3e85a5368977c54ea2125e75e0bea0fea7639f8187dccce17c",
+      "bytes": 2985
+    },
+    {
+      "path": "literature/records/mz-don-gottlieb-1994.md",
+      "sha256": "e971462160001ca066c38969c31b230ac1a0eebda7ec2fe55323ff0c40856540",
+      "bytes": 1383
+    },
+    {
+      "path": "literature/records/mz-input-reports.md",
+      "sha256": "e105a2f6c1d1139fbb5d7af2da5f537c1df7959653bfe0a3802911a659961bea",
+      "bytes": 2480
+    },
+    {
+      "path": "literature/records/mz-mastroianni-milovanovic-2008.md",
+      "sha256": "51d22129385c8f4ddfa563fac804a3e6176939af2470557064362645d5c284ee",
+      "bytes": 1521
+    },
+    {
+      "path": "literature/records/mz-passi-cv-2026.md",
+      "sha256": "bcdf0db38572b370486888616409f707f30ac834e5d038836899fdda801f46cc",
+      "bytes": 2146
+    },
+    {
+      "path": "literature/records/mz-quadrature-aliasing-screen.md",
+      "sha256": "1321793123ef83890fa7dfbc1cecc14c754a350c6cb809d47017d1e87d3ccbf2",
+      "bytes": 4157
+    },
+    {
+      "path": "literature/records/mz-sloan-smith-1978-1980.md",
+      "sha256": "00c4b09510f3a40d284edc2374b88e49558df728ebdf7cf305dcc84b76211994",
+      "bytes": 2203
+    },
+    {
+      "path": "literature/records/mz-widom-1966-screen.md",
+      "sha256": "232ec883e16b52de73081ff10baa4356971ec6549bd87a1a948ad3c4a31c680e",
+      "bytes": 1732
+    },
+    {
+      "path": "topics/mz-constants/directions/M0/rounds.md",
+      "sha256": "4a454d77b9c6ce3e5d6c00d8488e910e88b341b432b901c117e03816c1b81baa",
+      "bytes": 707
+    },
+    {
+      "path": "topics/mz-constants/directions/M1/IDEAS.md",
+      "sha256": "524fa0f422318da86bc64f415d28ad5d8574c1be75021039cddf89048a0c06e6",
+      "bytes": 10319
+    },
+    {
+      "path": "topics/mz-constants/directions/M1/RUNS.md",
+      "sha256": "fad2948041068361ba209969ee3dae6f926b4e250bd9dee8b9626d0117351f69",
+      "bytes": 4142
+    },
+    {
+      "path": "topics/mz-constants/directions/M2/LOG.md",
+      "sha256": "b2e2dfd3963406a803cbca3a3216338e68ddb87eb59fd9df2516edd4e99cdd28",
+      "bytes": 4454
+    },
+    {
+      "path": "topics/mz-constants/directions/M2/candidates.md",
+      "sha256": "691c9dd15362f1d71cbbeac86c69ff9c07ac1bd8642dfc377502d59881dc9d30",
+      "bytes": 12106
+    },
+    {
+      "path": "topics/mz-constants/directions/M2/padua-foundation-record.md",
+      "sha256": "97340dcb4f478c3286276a1c1e4e8e35fe48f29288f0ec798dadf23211ae2efa",
+      "bytes": 3516
+    },
+    {
+      "path": "topics/mz-constants/directions/M3/IDEAS.md",
+      "sha256": "032a443bf5b2bb4dbbb6d751820f2255e5d3d0238d584b61d2848f1a1bd8a378",
+      "bytes": 10718
+    },
+    {
+      "path": "topics/mz-constants/directions/M3/RUNS.md",
+      "sha256": "11ef2d68a6a7a8f0ca6e82f9530b4dccdf2a8250c8256b69bf3a61249d09b712",
+      "bytes": 3710
+    },
+    {
+      "path": "topics/mz-constants/directions/M4/rounds.md",
+      "sha256": "a76bc78163b631ff819a860226e9bf1553f219b7477c6f4fae3aa70b6cdba07b",
+      "bytes": 1101
+    },
+    {
+      "path": "topics/mz-constants/directions/M5/rounds.md",
+      "sha256": "67873a78a342a7d1ee7fe026a7fd319e5cf2aa576e7917665ad05424d15e9b28",
+      "bytes": 591
+    },
+    {
+      "path": "topics/mz-constants/directions/M6/rounds.md",
+      "sha256": "2b5b70734566c48286f639dcd54bb9dadbdf9f3d1ece22514b3f56049706a680",
+      "bytes": 935
+    },
+    {
+      "path": "topics/mz-constants/directions/M7/rounds.md",
+      "sha256": "f151824451ef45f3b23d4636ced9ee00a96da508fabc0f8c8984191cfa3e06a1",
+      "bytes": 742
+    },
+    {
+      "path": "tracks/mz-constants/code/m1_exact_check.py",
+      "sha256": "7a9b32260a90684e16fcd023e031fd3b91d5ea21ecce2ff351bbc034d68552e3",
+      "bytes": 3709
+    },
+    {
+      "path": "tracks/mz-constants/code/m2_endpoint.py",
+      "sha256": "71f516a44e4d1e46731b0e596b36ba8796577f823c11a267efaf6b71746142c0",
+      "bytes": 2962
+    },
+    {
+      "path": "tracks/mz-constants/code/m3_exact_check.py",
+      "sha256": "246bd4b95226182b0231730d7ad6ae6d7716623d31b28193c0e44d932825d2dd",
+      "bytes": 3003
+    },
+    {
+      "path": "tracks/mz-constants/code/reproduce.py",
+      "sha256": "fe88a16d2ac08df96dc5e18a224ac1b0d46d5cec4310cc86fff0f7fda1aa44ac",
+      "bytes": 6216
+    },
+    {
+      "path": "ID_CROSSWALK.md",
+      "sha256": "4fc131038f0d7823fe766e15343741a5e51fb311359a6f95bf40d8a9c415506d",
+      "bytes": 16283
+    },
+    {
+      "path": "PROOF_STATUS.md",
+      "sha256": "e2ed4cdaadb60abf058ba4213c3276bbf2a470bf9d4f6dd04235653578d1aebb",
+      "bytes": 8155
+    },
+    {
+      "path": "README.md",
+      "sha256": "723c770c46348522f37bac0f97dc9b608db75af6ebd154f8bc557b84cfc8e8e2",
+      "bytes": 2246
+    },
+    {
+      "path": "tracks/mz-constants/NEGATIVE_RESULTS.md",
+      "sha256": "15efbb41b4836d1159a429bdf4c714c57e4e47db2d4736e4fca4bcf6394b665c",
+      "bytes": 1091
+    },
+    {
+      "path": "tracks/mz-constants/AUDIT_LOG.md",
+      "sha256": "c8049fefe2c7cc11917409aef2b8a35851fe91b6903fe909916f2addba911f55",
+      "bytes": 1095
+    },
+    {
+      "path": "state/CURRENT.md",
+      "sha256": "0fbf3264cc1083c09f9c666f95abd6e648291c2f218043761f463c9b1f3e3db5",
+      "bytes": 1997
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "sha256": "d797442980d524346846dc4bebdf46483f022e0fcd53d0bf7fd5a63134de2312",
+      "bytes": 3275
+    },
+    {
+      "path": "topics/mz-constants/final-id-map.json",
+      "sha256": "0175b632f6d82f8053ff91f25893a92b688c005d1b00ef25f3e8e031c2f9d39e",
+      "bytes": 15352
+    },
+    {
+      "path": "topics/mz-constants/allocation-impact.json",
+      "sha256": "b09f89d2c0e386dc12ba2ce272c9bc2855823aa11d1772be2279846f0d1df1b0",
+      "bytes": 12244
+    },
+    {
+      "path": "tracks/mz-constants/paper/manuscript.tex",
+      "sha256": "072ae4e52c2cea78f2ec13f6e48a3d9529234af6c99d7b747a40c44c31f08c7c",
+      "bytes": 39310
+    },
+    {
+      "path": "tracks/mz-constants/paper/refs.bib",
+      "sha256": "f2f4eb04dec45003a107deac7c91b2f0d4737e2707289d359fd3d0194aeb9bf8",
+      "bytes": 4433
+    },
+    {
+      "path": "tracks/mz-constants/paper/README.md",
+      "sha256": "f433fc6f10b3e0da3bdfec1da80e6e5a177b0967cf6802ec7e1b8217de2512d7",
+      "bytes": 6491
+    },
+    {
+      "path": "topics/mz-constants/directions/M7/manuscript-record.md",
+      "sha256": "68b15a5ed49e5c06bfdb3b5d6367a9ff5ac458de1cbe55736010aa0cf61d048b",
+      "bytes": 9205
+    }
+  ],
+  "auditor_artifacts": [
+    {
+      "path": "tracks/mz-constants/evidence/astra-allocation-check.json",
+      "sha256": "cba0804375a9d5703ccc64a757d23b9d4bda3e96835dfaf41c16ef847238e63c",
+      "bytes": 17094
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-final-check.py",
+      "sha256": "5668347cefd98bf1949cacc5eb8dc3ae30ef113f5cd83a51e79ad05234b37544",
+      "bytes": 6297
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-independent-check.json",
+      "sha256": "aead888fedd990bfadaceea6e62e9e9469497d7ad88f7a8b07471669065fd49b",
+      "bytes": 6518
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-independent-check.py",
+      "sha256": "496420f9da6cb39715b61519c87b8dfbf4a0f6ae1140ff2fdd88c96eda592b11",
+      "bytes": 5907
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-m1-replay.txt",
+      "sha256": "4d76e359b9f8b5007f1bca30ea73895237195d5d8f5edeea9c822c8df1f87636",
+      "bytes": 1304
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-m2-comparison.json",
+      "sha256": "6fcd622e26421f664fc9a0424768672fb56c3b22e6b6ca32152a08c714ce6ea1",
+      "bytes": 370
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-m2-replay.jsonl",
+      "sha256": "df076812f88c19e8e6a71b58ac1eb46cacb506541cccd09a92441fd9356ae6a8",
+      "bytes": 3701
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-m3-comparison.json",
+      "sha256": "e41fd17534a9dee20532350490ba5e2fc53ba9bc33d42795dfe2a866244d1e3c",
+      "bytes": 430
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-m3-replay.txt",
+      "sha256": "b4d40043ff747f83ed12a1b6e9d625913bde3f8835e662f057cdf012ee19ce08",
+      "bytes": 1959
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-manuscript-check.json",
+      "sha256": "d3e6d0f99394c6d13804cd27b5921e32acaabb27863b0fe91ca678f57d96fbd8",
+      "bytes": 3306
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-registry-check.json",
+      "sha256": "a57e29df1002970c8d866c69f46463004b7e01c754d8a6679395eced2ec0e34b",
+      "bytes": 3520
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-replay-comparison.json",
+      "sha256": "b1eb9599f035694d691880ef77945da4955668a607471f1c63ea5d9d85f000de",
+      "bytes": 728
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-reproduction.json",
+      "sha256": "1511bfeb982f3e12b904acf151d9a586e6a65ee776dc464a12789a955ead4976",
+      "bytes": 29187
+    },
+    {
+      "path": "topics/mz-constants/independent-astra-01.md",
+      "sha256": "5ce5f2f9ca58a9b484bbeb829157285da4979551413435000ca54294f8fcadc7",
+      "bytes": 39499
+    }
+  ],
+  "generated_evidence_bytes": 80321,
+  "total_auditor_artifact_bytes": 119820,
+  "retention": "small necessary local evidence; orchestrator decides commitment, external archival pending",
+  "retrieval": "local repository paths; verify SHA256 against manifest; replay commands in audit report",
+  "trusted_dependencies": "Python3.12.14 Fraction for rational checks; NumPy2.3.5/SciPy1.17.0 for MEASURED checks; analytic all-N proofs do not depend on floating execution",
+  "seeds": null,
+  "execution_note": "Earlier independent mathematical and spectral executions are recorded in the report. Final allocation and manuscript checks did not rerun unchanged spectral code. Manuscript compilation and PDF visual review were not performed by this auditor.",
+  "final_check_command": "python tracks/mz-constants/evidence/astra-final-check.py",
+  "report_path": "topics/mz-constants/independent-astra-01.md",
+  "manifest_self_hash": "Excluded to avoid a circular identity; obtain with sha256sum."
+}
