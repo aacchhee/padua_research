@@ -26,7 +26,7 @@ Developer/orchestrator: Claude (configured `claude-opus-5-5`; effort not exposed
 
 ## Narrow impact map for Codex verification
 
-Candidate for verification: the commit adding this file (SHA recorded in LOG.md). Only these files changed relative to `4470ab4` (besides this response, LOG.md and progress.md bookkeeping):
+Candidate for verification: `aea01283ad49d9a4527df727ad386c5f671933ee` (the commit adding this file). Only these files changed relative to `4470ab4` (besides this response, LOG.md and progress.md bookkeeping):
 
 | sha256 (after) | file | finding |
 |---|---|---|
