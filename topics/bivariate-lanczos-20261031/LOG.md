@@ -1,8 +1,8 @@
 # Lanczos in two commuting variables — finite-precision theory, joint Ritz values and commuting extensions
 
 - Branch: `claude/bivariate-lanczos-20261031` · Base: `d36722823441dc40c6e19d69a174459348dd309c` (origin/main) · Developer/orchestrator: Claude · Auditor: Codex (`gpt-6-astra`), PENDING
-- Stage: WORK · Next: `Claude (Opus 5.5 xhigh): Continue claude/bivariate-lanczos-20261031.`
-- Claims: none accepted; see [plan.md](plan.md) round ledger and [progress.md](progress.md).
+- Stage: **AUDIT** · Next: `Codex (gpt-6-astra xhigh): Continue claude/bivariate-lanczos-20261031.`
+- Claims: none accepted; 64 theory files (developer statuses) ranked in [report.md](report.md); audit request [audit-handoff.md](audit-handoff.md); round ledger in [plan.md](plan.md); [progress.md](progress.md).
 - For the PR: one charter paragraph for this track in `state/CURRENT.md` (PR preparation only); final PD-T/PD-N/IDEA/LIT IDs via a shared ledger `topics/padua-batch-20261031/ALLOCATIONS.md` with `codex/charter-unisolvence-20261031`; merge `origin/main` first if the charter PR has merged.
 - Open for AC: see bottom section.
 
@@ -162,6 +162,13 @@ Subagent effort is set from the agent definition and is not independently expose
 - PD-T?…-201 CONFIRMED (35 stress instances, worst LHS/RHS 0.16; Frobenius semi-orthogonality; local orthogonality an explicit hypothesis, Jia–Li form). -202 CONFIRMED (θ_LB bounds max_{s≤n} θ_s, not θ_n). **High finding on -205:** the defining recursion is self-referential when an unformed A-product belongs to a column created by A; well-defined iff every unformed product's column was created by the other operator (dev, mirror, alt satisfy it; adapt fails from degree 3 on 4/5 sets) — statement must be restricted. ω-estimate, PRO-2D-J and cubic-checkerboard kill reproduced digit-for-digit; four developer commands rerun verbatim.
 - Protocol: plan ledger R01 row corrected by orchestrator (clause (ii) fired); three evidenced failures (IDEA?…-205, one-pass part of -203, -209) lack PD-N files; several titles disagree with their tables.
 - Actions: L2 developer resumed for response-recon-01; a prior-art check of the span-drift claim (it concerns multivariate V+A as published) launched.
+
+### Stage AUDIT (2026-11-01)
+
+- Directions closed for this campaign pass: L1+L4 7/10 rounds (paused), L2 3/10, L3 6/10 (paused), L5 3/10 (side note, paused); all openings and next questions recorded in the SUMMARY files and report.md (resumable within the round budgets).
+- Deliverables: literature baseline (literature/), seeded state/IDEAS.md, plan.md with frozen questions and round ledger, progress.md, direction folders with all candidates and round records, tracks/bivariate-lanczos/ theory files with provisional IDs, report.md, audit-handoff.md, cold-storage manifest. Committed generated output ≈ 2.2 MB total, no file > 1 MB.
+- Not done (PR preparation, after audit): merge `origin/main` (charter merged), reconcile shared literature records with the charter's, obtain a disjoint reservation from the batch allocation owner (`topics/padua-batch-20261031/ALLOCATIONS.md`, owner Codex MZ orchestrator), register IDEA/PD-T/PD-N/LIT finals, write NEGATIVE_RESULTS.md and the one-paragraph track charter in state/CURRENT.md, open the PR. No draft PR opened yet.
+- RESULTS.md on AC's machine updated with the final ranked summary.
 
 ## Runs needed
 
