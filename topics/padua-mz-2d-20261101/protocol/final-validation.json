@@ -68,6 +68,7 @@
   },
   "mapping_membership": "All assignments in own reserved ranges; five reused LIT IDs already accepted; historicalN41 aliasesN045",
   "local_markdown_links_checked": 2404,
+  "entire_topic_new_theory_links_checked": 97,
   "broken_local_markdown_links": [],
   "protected_frozen_files": 20,
   "old_MZ_code_evidence_manuscript_sources_unchanged": 73,
@@ -366,8 +367,8 @@
     }
   ],
   "generated_plus_manifest_size_check": {
-    "file_count": 18,
-    "total_bytes": 1176660,
+    "file_count": 19,
+    "total_bytes": 1178120,
     "largest_bytes": 837344
   },
   "stage": "AUDIT",

@@ -65,6 +65,7 @@ Their work supplies the numerical question and weak/strong distinction. This cam
 ## Runs needed / missing fulltexts / delivery
 
 - Required next step: Claude Opus 5.5 xhigh audit of the final candidate, complete new proofs/code/evidence and full state/IDEAS.md, via the next numbered handoff. PR stays draft.
+- Integration rehearsal: this campaign squashes cleanly onto pinned main; prospective PR15 integration conflicts in the crosswalk and allocation ledger. Reconcile those reservation texts at readiness, after audit and AC's merge-order decision; no live merge was performed.
 - Missing independent final-version comparisons: SVZ DOI10.1007/s11075-008-9203-x; Dencker–Erb DOI10.1016/j.jat.2017.03.003; Kolomoitsev–Lomako DOI10.1016/j.amc.2021.126192; Xu1996 DOI10.1006/jath.1996.0102; ASV published body DOI10.1016/j.matcom.2026.10.001. KLP2018 body DOI10.1016/j.jat.2018.02.005 was unreachable. [Source review](literature.md) supplies journal links, inspected versions and locators; unread bodies are not theorem dependencies.
 - No Windows bridge: copy this report and the audit handoff to `C:\Users\andreyac\Downloads\padua\results\padua-mz-2d-20261101.md`. No local delivery is claimed. All essential evidence fits Git limits; no large artifact requires cold-storage export.
 - No separate2D manuscript section was added because the signed D2/D3 spectral targets did not reach their success criterion. The merged manuscript is unchanged.

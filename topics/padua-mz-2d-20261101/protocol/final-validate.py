@@ -31,12 +31,25 @@ for row in D['changed_files']:
  for line in text.splitlines():
   if re.match(r'^\s*(```|~~~)',line):fenced=not fenced;continue
   if not fenced:lines.append(line)
- for raw in re.findall(r'\[[^\]]*\]\(([^)]+)\)','\n'.join(lines)):
+ for raw in re.findall(r'\[[^\]]*\]\(([^)]+)\)',re.sub(r'`[^`]*`','', '\n'.join(lines))):
   target=raw.split('#',1)[0].split(' ',1)[0].strip('<>')
   if not target or re.match(r'[a-z]+:',target):continue
   links+=1
   if not (path.parent/urllib.parse.unquote(target)).exists():bad.append({'file':str(path),'target':target})
 assert not bad,bad
+# Include the entire topic, frozen reports/archive and every new theory file;
+# literal code expressions inside backticks are not Markdown hyperlinks.
+topic_links=0
+for path in list(T.rglob('*.md'))+list((R/'tracks/mz-constants/theory').glob('mz2d*.md')):
+ text=[];fenced=False
+ for line in path.read_text().splitlines():
+  if re.match(r'^\s*(```|~~~)',line):fenced=not fenced;continue
+  if not fenced:text.append(line)
+ content=re.sub(r'`[^`]*`','', '\n'.join(text))
+ for raw in re.findall(r'\[[^\]]*\]\(([^)]+)\)',content):
+  target=raw.split('#',1)[0].split(' ',1)[0].strip('<>')
+  if not target or re.match(r'[a-z]+:',target):continue
+  topic_links+=1;assert (path.parent/urllib.parse.unquote(target)).exists(),(str(path),target)
 # All earlier tracked MZ code/evidence/manuscript/source objects and A1 pins retained.
 objects=json.loads((P/'final-input-manifest.json').read_text());protected_prior=[]
 for item in objects['local_MZ_objects']:
@@ -66,5 +79,5 @@ assert sum(x['bytes'] for x in files)<5000000
 # These are conservative counts including manifests, not only generated evidence.
 ledger=pathlib.Path('topics/padua-batch-20261031/ALLOCATIONS.md').read_text()
 for a in ['PD-T136–PD-T155','PD-N062–PD-N071','IDEA-246–IDEA-285','LIT-445–LIT-459','6920ba632843597c37e1493d077c1df2e89f54cb','PD-T118–135','PD-N054–061','IDEA-228–245','LIT-429–444']:assert a in ledger,a
-result={'status':'PASS','mechanical_scope':'ID-only assignment/registration checks; no new scientific audit','registry_counts':results,'mapping_membership':'All assignments in own reserved ranges; five reused LIT IDs already accepted; historicalN41 aliasesN045','local_markdown_links_checked':links,'broken_local_markdown_links':bad,'protected_frozen_files':len(D['protected_inputs']),'old_MZ_code_evidence_manuscript_sources_unchanged':len(protected_prior),'archive_body_start':2255,'archive_body_sha256':bodyhash,'peer_review_impact':peer,'source_ID_only_checks':D['source_ID_only_impact'],'generated_plus_manifest_size_check':{'file_count':len(files),'total_bytes':sum(x['bytes'] for x in files),'largest_bytes':max(x['bytes'] for x in files)},'stage':'AUDIT','Claude':'PENDING','limitations':'External links identified by pinned source provenance; no network fetch of every URL. Source status unchanged. Root-owned final summaries may be edited after this run.'}
+result={'status':'PASS','mechanical_scope':'ID-only assignment/registration checks; no new scientific audit','registry_counts':results,'mapping_membership':'All assignments in own reserved ranges; five reused LIT IDs already accepted; historicalN41 aliasesN045','local_markdown_links_checked':links,'entire_topic_new_theory_links_checked':topic_links,'broken_local_markdown_links':bad,'protected_frozen_files':len(D['protected_inputs']),'old_MZ_code_evidence_manuscript_sources_unchanged':len(protected_prior),'archive_body_start':2255,'archive_body_sha256':bodyhash,'peer_review_impact':peer,'source_ID_only_checks':D['source_ID_only_impact'],'generated_plus_manifest_size_check':{'file_count':len(files),'total_bytes':sum(x['bytes'] for x in files),'largest_bytes':max(x['bytes'] for x in files)},'stage':'AUDIT','Claude':'PENDING','limitations':'External links identified by pinned source provenance; no network fetch of every URL. Source status unchanged. Root-owned final summaries may be edited after this run.'}
 (P/'final-validation.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps({k:v for k,v in result.items() if k not in ['peer_review_impact','source_ID_only_checks']}))

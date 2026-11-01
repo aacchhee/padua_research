@@ -1,0 +1,36 @@
+{
+  "purpose": "Disposable squash rehearsal only; no live main/PR branch update and no merge order requested",
+  "base": "806cc7b4509fd93bae652f9545d32d95529f8281",
+  "campaign_candidate": "54d60706b840f570faf1a7466d418f7894515470",
+  "disposable_branch": "codex/padua-mz-2d-rehearsal-20261101",
+  "disposable_campaign_squash": "040d4ad7ec933935d6b8b82369f0ac5ff0f5f6d3",
+  "campaign_tree_matches": true,
+  "prospective_followers": [
+    {
+      "head": "7ec02d0fa4a06cf9ab7ede5db0b60a5eddf887d1",
+      "command": [
+        "git",
+        "merge",
+        "--squash",
+        "7ec02d0fa4a06cf9ab7ede5db0b60a5eddf887d1"
+      ],
+      "exit_code": 0,
+      "conflicted_paths": []
+    },
+    {
+      "head": "2d20672f62e0130d2adbe104af6e5ee9d05d20af",
+      "command": [
+        "git",
+        "merge",
+        "--squash",
+        "2d20672f62e0130d2adbe104af6e5ee9d05d20af"
+      ],
+      "exit_code": 1,
+      "conflicted_paths": [
+        "ID_CROSSWALK.md",
+        "topics/padua-batch-20261031/ALLOCATIONS.md"
+      ]
+    }
+  ],
+  "interpretation": "Campaign squashes cleanly onto pinned main. Other draft integration conflicts, if listed, remain future readiness work after Claude audit and AC order; this rehearsal does not import foreign science into campaign or authorize merge."
+}
