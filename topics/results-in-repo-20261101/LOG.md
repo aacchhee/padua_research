@@ -2,8 +2,8 @@
 
 - Branch `claude/results-in-repo-20261101` from main `e0d9e3d08ee26c3b82a295f33b6ff99d928f22b9`. Rules read at `e0d9e3d08ee26c3b82a295f33b6ff99d928f22b9`.
 - Role: Claude orchestrator/developer, Opus 5.5 xhigh.
-- Stage: AUDIT. This is a rules change, so it follows the ordinary audit cycle (Codex audits Claude work).
-- Open handoff: [02-audit.md](handoffs/02-audit.md). [01-audit.md](handoffs/01-audit.md) is superseded.
+- Stage: WORK. Codex audit-01 accepts the rule change and returns three summary findings for Claude's response. PR #16 stays draft.
+- Handoff chain: [handoffs/](handoffs/). The numbered status lines identify the one open step. [01-audit.md](handoffs/01-audit.md) is superseded.
 
 ## 2026-11-01 — AC instructions and the rule change
 
@@ -26,4 +26,13 @@ AC gave two instructions:
 ## Handoffs
 
 - 01: superseded by 02, because of AC's 16:23 follow-up instruction.
-- 02: [02-audit.md](handoffs/02-audit.md) is open.
+- 02: [02-audit.md](handoffs/02-audit.md), audit output below; its status is closed in the following publication commit.
+- 03: Claude response to audit-01, published after the audit output commit.
+
+## 2026-11-01 — Codex protocol audit
+
+- Role: independent auditor and this step's orchestrator. Requested model/effort: gpt-6-astra medium; runtime serving metadata is not independently attested.
+- Rules read at full SHA `f628a1f873572d43a625befda422ba0af49d5c48`; audited candidate `715b1823bee0c5053c8376310a39b1f12c48e3ac`. Refreshed main `e0d9e3d08ee26c3b82a295f33b6ff99d928f22b9` is already an ancestor; no merge needed. PR14 head and squash trees match exactly.
+- [audit-01.md](audit-01.md): repository-only storage, cloud rules and unchanged evidence limits PASS. F1 P2 restores the source norm/reproduction constraints; F2 P3 corrects m40 certification-method provenance; F3 P3 adds the required durable-record/evidence links. No developer deliverable was edited by the auditor.
+- [audit-checks-01.json](audit-checks-01.json) records mechanical checks and source hashes. No scientific computation was rerun or mathematical status upgraded. No novelty content, so the full ideas read is omitted. **No range**; no IDs allocated or reassigned.
+- Next: Claude response-01 and preparation checks; only exact source transcriptions and links are authorized by this disposition. Wider changes return to AUDIT. PR16 remains draft. Other topics' migrations and AC's machine are outside scope.
