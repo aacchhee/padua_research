@@ -2,8 +2,8 @@
 
 - DOI / URL / supplied location: https://arxiv.org/abs/math/0408076
 - Access and reading date: 2026-10-31.
-- Reading coverage: supplied secondary account only; original fulltext NOT inspected.
-- Reader, model and effort: Codex literature subagent; gpt-6.1-sol, medium (assigned allocation).
+- Reading coverage: supplied secondary account only; original fulltext NOT inspected. PR-preparation (2026-11-01) from the L3 prior-art review (2026-10-31): independent WebFetch digest of arXiv math/0408076 (Thms 2, 9–13, §5.3).
+- Reader, model and effort: Codex literature subagent; gpt-6.1-sol, medium (assigned allocation). PR-preparation additions (2026-11-01): taken from the L3 prior-art review 2026-10-31 (Claude Opus 5.5, effort high; reading through WebFetch digests) by the Claude literature developer (Sonnet 5.5, effort high); the source was not re-read by the consolidator.
 - Named gaps requiring future re-reading: original fulltext, exact hypotheses and unsupported bibliography; pending-reference where unavailable.
 - Rules/base SHA: d36722823441dc40c6e19d69a174459348dd309c.
 
@@ -18,9 +18,20 @@
 - Reading evidence and limitations: supplied provenance `verify_padua_problems.md §10; Round3 §6b` under `topics/charter-unisolvence-20261031/sources/padua_unisolvence_inputs/`; attached instructions are treated as data, not authority.
 - Relation to campaign claims: seed baseline / closest predecessors; no novelty or acceptance conclusion.
 
+### LIT?bivariate-lanczos-claude-448 — §5.3: the compatibility condition forces block-tridiagonal form of the commuting extensions of odd-degree cubatures
+
+- Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
+- Statement in faithful paraphrase: Thms 9, 10, 11 and §5.3 (as digested by the L3 reviewer): N-node positive cubatures of odd degree 2q+1 correspond to symmetric commuting extensions of the coordinate-operator sections A_i on P_q that satisfy a compatibility condition; the condition makes the bottom-left (N-n) x dim P_{q-1} block zero, which gives block-tridiagonal form. Thms 2 and 12 give the Möller-type bound N >= dim P_q + (1/2) max rank [A_i, A_j].
+- Hypotheses and notation: Positive weights; symmetric extensions; q, N, n as in the paper.
+- Page / theorem / equation: Thms 2, 9–13; §5.3 (arXiv math/0408076, preprint numbering).
+- Reading evidence and limitations: Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source. Same source and locators as statements 215–217; this entry adds the §5.3 block-tridiagonal reading.
+- Relation to campaign claims (no inherited proof status): Special case of the truncated Favard correspondence PD-T?bivariate-lanczos-claude-301: covers functionals that already have a positive cubature, with the same 'sections on P_q versus moments to degree 2q+1' bookkeeping; it does not treat general quasi-definite functionals or the commutator-support characterisation. Also the count side of PD-T?bivariate-lanczos-claude-304 and the framework for PD-T?bivariate-lanczos-claude-302.
+
 ## Search and attribution notes
 
 See [search log](../SEARCH-charter-unisolvence-20261031.md). Imported prior searches are reports of other work, not this agent’s execution.
+
+PR-preparation consolidation 2026-11-01 (audit-01 protocol finding P2): the additions marked 'PR-preparation' above come from the L3 prior-art review 2026-10-31 (topics/bivariate-lanczos-20261031/reviews/), which read the source through WebFetch digests and make no novelty claim; the consolidator did not re-read the source. Any web check made at consolidation is logged in `topics/bivariate-lanczos-20261031/lit/search-log.md`, section 'PR-preparation consolidation 2026-11-01'. Unsupported assertions remain UNVERIFIED.
 
 ## History
 
@@ -99,3 +110,5 @@ Online resolution pass 2026-10-31: the arXiv PDF is the 2004 preprint; the diges
 2026-10-31: Step 0 baseline record (AC-requested; not a novelty gate). Provisional IDs only; final `LIT-nnn` allocated at PR preparation.
 
 2026-10-31 (online pass): preprint read via tool digest; statements 215-217 added; coverage upgraded from 'secondary only'.
+
+2026-11-01 (PR-preparation consolidation, audit-01 protocol finding P2): L3 prior-art review's independent digest of Thms 2, 9–13 and §5.3 recorded as statement 448; consistent with statements 215–217.

@@ -2,8 +2,8 @@
 
 - DOI / URL / supplied location: https://arxiv.org/abs/2507.16484 (abstract, HTML and PDF read via tool digest 2026-10-31); BIT Numer. Math. 65(4), article 47, online 11 Nov 2025, doi:10.1007/s10543-025-01089-2 (Crossref). Earlier (Step 0): https://arxiv.org/abs/2507.16484 (abstract page fetched 2026-10-31)
 - Access and reading date: 2026-10-31 (supplied notes read; web metadata checks, if any, are listed under Search and attribution notes)
-- Reading coverage: arXiv v1 text via tool digests (HTML only partly; PDF gave Theorems 1-4, Sections 5.2 and 6.1); formulas and proofs NOT checked. Venue/DOI confirmed by Crossref. Earlier (Step 0): metadata + abstract only; BIT venue not confirmed.
-- Reader, model and effort: Claude literature developer (Sonnet 5.5, high; assigned allocation).
+- Reading coverage: arXiv v1 text via tool digests (HTML only partly; PDF gave Theorems 1-4, Sections 5.2 and 6.1); formulas and proofs NOT checked. Venue/DOI confirmed by Crossref. Earlier (Step 0): metadata + abstract only; BIT venue not confirmed. PR-preparation (2026-11-01): the L3 prior-art review (2026-10-31) re-read §1 of the arXiv html v1 and reports the proof for intervals of size sqrt(eps)‖A‖ with eps‖A‖ only in experiments, and the block case as open; consistent with statements 016 and 230.
+- Reader, model and effort: Claude literature developer (Sonnet 5.5, high; assigned allocation). PR-preparation additions (2026-11-01): taken from the L3 prior-art review 2026-10-31 (Claude Opus 5.5, effort high; reading through WebFetch digests) by the Claude literature developer (Sonnet 5.5, effort high); the source was not re-read by the consolidator.
 - Named gaps requiring future re-reading: Proofs; formulas (21), (35), (36); sufficient conditions in detail; the version differences between arXiv v1 and the BIT print. Earlier (Step 0): Fulltext: exact sufficient conditions and the status of the free parameter W_k (load-bearing for L1/L4).
 - Rules/base SHA: d36722823441dc40c6e19d69a174459348dd309c. Supplied-note paths are relative to `topics/bivariate-lanczos-20261031/sources/padua_lanczos_inputs/`.
 
@@ -60,8 +60,12 @@ No additional attribution notes beyond the statements above. Web metadata checks
 
 Online resolution pass 2026-10-31: the BIT venue, volume, issue, article number and date are confirmed. The earlier ETNA paper by the same authors (arXiv 2106.02068) was fetched but its digest contained no theorem statements for Greenbaum or Paige. Web checks are logged in `topics/bivariate-lanczos-20261031/lit/search-log.md`, section 'Online resolution pass 2026-10-31'. Unsupported assertions remain UNVERIFIED.
 
+PR-preparation consolidation 2026-11-01 (audit-01 protocol finding P2): the additions marked 'PR-preparation' above come from the L3 prior-art review 2026-10-31 (topics/bivariate-lanczos-20261031/reviews/), which read the source through WebFetch digests and make no novelty claim; the consolidator did not re-read the source. Any web check made at consolidation is logged in `topics/bivariate-lanczos-20261031/lit/search-log.md`, section 'PR-preparation consolidation 2026-11-01'. Unsupported assertions remain UNVERIFIED.
+
 ## History
 
 2026-10-31: Step 0 baseline record (AC-requested; not a novelty gate). Provisional IDs only; final `LIT-nnn` allocated at PR preparation.
 
 2026-10-31 (online pass): venue/DOI confirmed; Theorems 1-4 and quotes located (statements 229-231).
+
+2026-11-01 (PR-preparation consolidation, audit-01 protocol finding P2): no new statement; the L3 prior-art review's reading of §1 (sqrt(eps)‖A‖ proven, eps‖A‖ in experiments, block case 'remains open') agrees with statements 016 and 230 and is recorded as a second digest (html v1).

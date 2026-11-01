@@ -166,3 +166,48 @@ Wrong DOI caught: 10.1016/0024-3795(80)90169-X (guessed) is Saad's Arnoldi paper
 ### Limits of this pass
 
 Digests are produced by a model reading extracted page text: statements and numbers can contain digest errors (one suspected, the Xu TAMS 342 "Theorem 3.1"). The 1976 and 1980 Paige papers, Greenbaum's theorem, Lin, Friis-Rordam, the Curto-Fialkow Memoir, Weisfeld, the Pitman book and the Simon LAA paper were not read in the original. Nothing here is a novelty gate or a proof.
+
+## PR-preparation consolidation 2026-11-01
+
+Agent: Claude literature developer (Sonnet 5.5, high), PR-preparation literature consolidation for audit-01 protocol finding P2. Task: give canonical records, with honest reading limits, to the source statements and closest-predecessor comparisons introduced in `reviews/L1-prior-art-01.md`, `reviews/L2-prior-art-01.md` and `reviews/L3-prior-art-01.md`. The records were written from the review text and the existing records only. **No source was re-read.** The only web access was ten WebFetch calls to the Crossref works API to confirm missing DOIs, venues and titles (budget: at most 10); they confirm bibliographic metadata only and read no paper. One earlier attempt to use `curl` from the shell to api.crossref.org was refused by the proxy (403) and returned nothing; it is not counted among the ten.
+
+| # | Tool | Query (Crossref `query.bibliographic`, abridged) | Result |
+|---|---|---|---|
+| 1 | WebFetch | Paige, augmented stability result for the Lanczos Hermitian tridiagonalization | doi:10.1137/090761343, SIMAX 31(5) (2010) 2347-2359; confirms the L2 citation |
+| 2 | WebFetch | Carpraux, Godunov, Kuznetsov, Condition number of the Krylov bases and subspaces | doi:10.1016/0024-3795(95)00164-6, LAA 248 (1996) pp. 137-160 (the L2 review wrote 136-160) |
+| 3 | WebFetch | Kuznetsov, Perturbation bounds of the Krylov bases and associated Hessenberg forms | failed at the site (client_error), nothing retrieved |
+| 4 | WebFetch | Passer, Shalit, Solel, Minimal and maximal matrix convex sets | doi:10.1016/j.jfa.2017.11.011, J. Funct. Anal. 274(11) (2018) 3197-3253; second result is DDSS, doi:10.1093/imrn/rnw140, IMRN (online 2016, article rnw140). The match of arXiv 1706.05654 to this title rests on authors only |
+| 5 | WebFetch | Davidson, Dor-On, Shalit, Solel, Dilations, inclusions of matrix convex sets... | unrelated items returned (DDSS data came from #4) |
+| 6 | WebFetch | Di Dio, Schmudgen, The multidimensional truncated moment problem: atoms, determinacy, and core variety | doi:10.1016/j.jfa.2017.11.013, J. Funct. Anal. 274(11) (2018) 3124-3148 |
+| 7 | WebFetch | Kuznetsov 1997 (second query with journal and year) | two Crossref records for LAA 265 (1997) 1-28: doi:10.1016/S0024-3795(96)00299-6 (issue 1-3) and doi:10.1016/S0024-3795(97)90001-X; which is canonical is UNVERIFIED |
+| 8 | WebFetch | Heldt, Kreuzer, Pokutta, Poulisse, Approximate computation of zero-dimensional polynomial ideals | doi:10.1016/j.jsc.2008.11.010, J. Symbolic Comput. 44(11) (2009) 1566-1591; confirms the L2 'J. Symb. Comput. 2009' guess |
+| 9 | WebFetch | Eftekhari, Tanner, Thompson, Toader, Tyagi, Sparse non-negative super-resolution | unrelated items returned; journal data NOT confirmed |
+| 10 | WebFetch | Lasserre, Existence of Gaussian cubature formulas | doi:10.1016/j.jat.2012.01.004, J. Approx. Theory 164(5) (2012) 572-585; the journal title reads 'The existence of Gaussian cubature formulas' |
+
+### Records created (29) and updated (15)
+
+New keys: olver-townsend-vasil-2019, xu-2017-survey, dunkl-xu-2014, li-bai-su-zeng-2007, meurant-2014-slides, austin-et-al-2021, waldron-2011 (L1 table); zhang-su-li-2024, zhang-zhang-yang-wu-2024, stewart-2001-krylov-backward, paige-2010-augmented, carpraux-godunov-kuznetsov-1996, kuznetsov-1997, drkosova-et-al-1995, heldt-kreuzer-pokutta-poulisse, telen-mourrain-vanbarel-2018 (L2 table); di-dio-schmudgen-2018, blekherman-2012, xu-lecture-notes, lasserre-gaussian-cubature, passer-shalit-solel-2018, davidson-doron-shalit-solel-2017, putinar-1997, bayer-teichmann-2006, greenbaum-strakos-1992, meurant-strakos-2006, eftekhari-et-al-2021, delgado-geronimo-iliev-marcellan-2006, cichon-stochel-szafraniec-2005 (L3 table). Statements `LIT?bivariate-lanczos-claude-401` to `-449` (49 in all; new records 401-432, updated records 433-449).
+
+Updated keys: zaccaron-2014, liu-narayan-2023, hokanson-2020, fasondini-olver-xu-2023, zhu-nakatsukasa-2026, brubeck-nakatsukasa-trefethen-2021, sinha-2026, jia-li-2021, chen-2026, greenbaum-1989, degani-schiff-tannor-2005, xu-tams-1994-blockjacobi (new statements); simon-1984-mathcomp, simonova-tichy-2025, barrio-pena-sauer-2010 (history and coverage notes only, because the existing statements already cover the reviews' readings or supersede them).
+
+### Identifications left open (not resolved by the checks above)
+
+- putinar-1997 and bayer-teichmann-2006: titles are not given by the L3 review (the review's query was 'Putinar Tchakaloff note'); authors of the second are inferred from its key; neither paper was read.
+- meurant-strakos-2006, greenbaum-strakos-1992, xu-lecture-notes, delgado-geronimo-iliev-marcellan-2006, cichon-stochel-szafraniec-2005: titles and some details are not in the reviews and are marked from memory or UNVERIFIED in the records.
+- eftekhari-et-al-2021: journal volume and pages unconfirmed (fetch 9 failed to identify the paper).
+- zhang-zhang-yang-wu-2024: author initials as listed in the L2 review, UNVERIFIED; telen-mourrain-vanbarel-2018: published version not verified.
+- passer-shalit-solel-2018: the link between arXiv 1706.05654 and the Crossref title is by authors only.
+- kuznetsov-1997: two Crossref DOIs; canonical one not determined.
+- Not made into records, because the L2 review lists them as 'pending reads' without a key: Kreuzer-Poulisse-Robbiano 2009, Stetter 2004, Braconier-Langlois-Rioual 2000, Reichel 1991 (Simon LAA 61 Thm 5 belongs to the existing simon-1984-laa).
+
+### Conflicts preserved, not resolved
+
+- Zhu-Nakatsukasa: the L1 review places the loss-of-orthogonality sentence in Remark 3; the 2026-11-01 orchestrator annotation in the record says it was not found in arXiv v2 (statement 441).
+- Xu, Trans. AMS 342: the L3 review's digest places a Favard-type statement and Thm 4.2 in this paper; the existing record says the Favard theorem is in the other Trans. AMS paper and SIAM 1993 (statement 449).
+- Greenbaum 1989 interval width: three secondary accounts disagree, and the L3 development statement 'width sqrt(eps) (proven)' is unsupported until the paper is read (statement 447).
+- Liu-Narayan: equation numbers in the L1 review differ from those in the Step 0 statement 031; version difference not resolved.
+- L1 review's 'Barrio-Pena-Sauer 2010 not read' is superseded by the existing record (statements 301-303); unread pages remain named gaps.
+
+### Limits
+
+Every statement from the reviews' WebFetch digests is UNVERIFIED against a verbatim text, as the reviews themselves state. Nothing here is a novelty gate, a proof or an inherited result.

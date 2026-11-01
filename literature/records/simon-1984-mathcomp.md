@@ -2,8 +2,8 @@
 
 - DOI / URL / supplied location: https://www.ams.org/journals/mcom/1984-42-165/S0025-5718-1984-0725988-X/S0025-5718-1984-0725988-X.pdf (PDF read via tool digest 2026-10-31); abstract page https://www.ams.org/mcom/1984-42-165/S0025-5718-1984-0725988-X/ ; doi:10.1090/S0025-5718-1984-0725988-X. Earlier (Step 0): https://www.ams.org/mcom/1984-42-165/S0025-5718-1984-0725988-X/ (abstract page fetched 2026-10-31)
 - Access and reading date: 2026-10-31 (supplied notes read; web metadata checks, if any, are listed under Search and attribution notes)
-- Reading coverage: complete paper (pp. 115-142) read via AMS PDF as a tool digest (equations and page locators as digested, some displays garbled); proofs not checked. Earlier (Step 0): metadata + abstract only.
-- Reader, model and effort: Claude literature developer (Sonnet 5.5, high; assigned allocation).
+- Reading coverage: complete paper (pp. 115-142) read via AMS PDF as a tool digest (equations and page locators as digested, some displays garbled); proofs not checked. Earlier (Step 0): metadata + abstract only. PR-preparation (2026-11-01): the L1 prior-art review (2026-10-31) independently digested Thm 1 eq. (3.2) p. 117, eq. (5.1) p. 121 and Thm 2 p. 119 (proof deferred to ref. [20]); consistent with statements 210–212. The L2 prior-art review re-cites the ~20% cost of Table 10.3.
+- Reader, model and effort: Claude literature developer (Sonnet 5.5, high; assigned allocation). PR-preparation additions (2026-11-01): taken from the L1 prior-art review 2026-10-31 (Claude Opus 5.5, effort high; reading through WebFetch digests) by the Claude literature developer (Sonnet 5.5, effort high); the source was not re-read by the consolidator.
 - Named gaps requiring future re-reading: Proof of Theorem 2 is not in this paper (Report PAM-74, Theorem 2.5; see also LAA 61). The numerical constants and page numbers need confirmation against page images before being used in a proof dependency. Earlier (Step 0): Fulltext: exact hypotheses and proof of the semi-orthogonality theorem (load-bearing for L2).
 - Rules/base SHA: d36722823441dc40c6e19d69a174459348dd309c. Supplied-note paths are relative to `topics/bivariate-lanczos-20261031/sources/padua_lanczos_inputs/`.
 
@@ -69,8 +69,12 @@ The LAA companion paper is recorded separately as simon-1984-laa. Web metadata c
 
 Online resolution pass 2026-10-31: the AMS PDF is open and was read via the tool. Its Theorems 1 and 2 are the only numbered theorems (there is no Theorem 3 or 4). Theorem 1 is attributed in the paper to Paige and to Takahasi-Natori. Web checks are logged in `topics/bivariate-lanczos-20261031/lit/search-log.md`, section 'Online resolution pass 2026-10-31'. Unsupported assertions remain UNVERIFIED.
 
+PR-preparation consolidation 2026-11-01 (audit-01 protocol finding P2): the additions marked 'PR-preparation' above come from the L1 prior-art review 2026-10-31 (topics/bivariate-lanczos-20261031/reviews/), which read the source through WebFetch digests and make no novelty claim; the consolidator did not re-read the source. Any web check made at consolidation is logged in `topics/bivariate-lanczos-20261031/lit/search-log.md`, section 'PR-preparation consolidation 2026-11-01'. Unsupported assertions remain UNVERIFIED.
+
 ## History
 
 2026-10-31: Step 0 baseline record (AC-requested; not a novelty gate). Provisional IDs only; final `LIT-nnn` allocated at PR preparation.
 
 2026-10-31 (online pass): full text read via tool digest; statements 210-213 added; annotation of 009; coverage upgraded.
+
+2026-11-01 (PR-preparation consolidation, audit-01 protocol finding P2): no new statement; the L1 and L2 prior-art reviews' readings of Thm 1 (3.2), eq. (5.1), Thm 2 and Table 10.3 are consistent with statements 210–212 and are recorded here as a second digest; Simon LAA 61 Thm 5 (see simon-1984-laa) remains unread.

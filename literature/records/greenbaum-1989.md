@@ -2,8 +2,8 @@
 
 - DOI / URL / supplied location: https://www.sciencedirect.com/science/article/pii/0024379589902851 (landing page read 2026-10-31; labelled open archive, PDF behind 'View PDF' not reachable by the tool); doi:10.1016/0024-3795(89)90285-1. Earlier (Step 0): doi:10.1016/0024-3795(89)90285-1 (from memory; the DOI resolver redirected to the Elsevier linking hub and the follow-up fetch returned empty content on 2026-10-31, so even the DOI-to-paper identification is UNVERIFIED)
 - Access and reading date: 2026-10-31 (supplied notes read; web metadata checks, if any, are listed under Search and attribution notes)
-- Reading coverage: metadata + abstract confirmed on the ScienceDirect page; theorem content only via secondary accounts (Meurant-Strakos, Simonova-Tichy, Chen); the paper's text is NOT read. Earlier (Step 0): not read; metadata NOT confirmed.
-- Reader, model and effort: Claude literature developer (Sonnet 5.5, high; assigned allocation).
+- Reading coverage: metadata + abstract confirmed on the ScienceDirect page; theorem content only via secondary accounts (Meurant-Strakos, Simonova-Tichy, Chen); the paper's text is NOT read. Earlier (Step 0): not read; metadata NOT confirmed. PR-preparation (2026-11-01) from the L3 prior-art review (2026-10-31): metadata additionally confirmed by Greenbaum's own talk abstract (Prague); the paper itself was not reached (paywalled; eq. (7.10) not seen).
+- Reader, model and effort: Claude literature developer (Sonnet 5.5, high; assigned allocation). PR-preparation additions (2026-11-01): taken from the L3 prior-art review 2026-10-31 (Claude Opus 5.5, effort high; reading through WebFetch digests) by the Claude literature developer (Sonnet 5.5, effort high); the source was not re-read by the consolidator.
 - Named gaps requiring future re-reading: Full text (open archive, 57 pages): the exact theorem(s) with hypotheses, dimension of the larger matrix, interval width in terms of u, the 'Lemma (Paige)' at p. 32. Load-bearing for L3. Earlier (Step 0): Whole source. PENDING-REFERENCE (load-bearing for L3; paywalled).
 - Rules/base SHA: d36722823441dc40c6e19d69a174459348dd309c. Supplied-note paths are relative to `topics/bivariate-lanczos-20261031/sources/padua_lanczos_inputs/`.
 
@@ -45,14 +45,27 @@
 - Reading evidence and limitations: The L3 kill test needs delta(eps); until the original (LAA 113, open archive) is read, any delta(eps) quoted from the literature must carry this uncertainty. Chen's Theorem 4.6 is a recent simplified model of the same type; its record belongs to chen-2026 (not edited here).  Reader: Claude literature developer (Sonnet 5.5, high; online resolution pass), 2026-10-31. Read through WebFetch: the tool extracts the page text and returns a model-written digest, so locators and displayed formulas are as digested (garbled glyphs possible) and were NOT checked against page images.
 - Relation to campaign claims (no inherited proof status): L3-Q1: quantifies what 'Greenbaum-type delta = O(eps)' would have to match.
 
+### LIT?bivariate-lanczos-claude-447 — author's talk abstract: the old interval bound is not as small as one might hope; width of order eps‖A‖ argued
+
+- Verification: **Secondary report only** (the source itself NOT read). UNVERIFIED. `LITERATURE` attribution only, no inherited proof status.
+- Statement in faithful paraphrase: Greenbaum's own talk abstract (Prague, undated; seminar-nm.karlin.mff.cuni.cz, praguetalk1abs.pdf) confirms LAA 113 (1989) 7–63 and says the interval bound of the 1989 paper was not as small as one might hope, and sets out to argue that the widths are of order eps‖A‖. The L3 review lists the secondary accounts of the proven width as in conflict: sqrt(eps)‖A‖ (Šimonová–Tichý), the fourth root of the accuracy parameter (Chen, citing eq. (7.10)), and a max-form with unquantified f_j (Meurant–Strakoš).
+- Hypotheses and notation: Perturbed Lanczos/CG recurrences.
+- Page / theorem / equation: LAA 113 (1989) 7–63 (talk abstract); eq. (7.10) cited by Chen.
+- Reading evidence and limitations: Talk abstract only; the 1989 paper was not read. Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.
+- Relation to campaign claims (no inherited proof status): The L3 reviewer concludes that the L3 development statement '1D Greenbaum width sqrt(eps) (proven)' (R03 §3 and lit_reading.md) is NOT supported until the paper is read, and that the R03 remark that the sqrt(eps) rate of PD-T?bivariate-lanczos-claude-303(d) matches the 1D Greenbaum width should be withdrawn or marked as conflicting. This sharpens statement 209.
+
 ## Search and attribution notes
 
 Year 1989 is supported by the Simonova-Tichy abstract; journal/volume/pages are from memory. See greenbaum-1979 for the repository mix-up. Web metadata checks, if any, are logged in `topics/bivariate-lanczos-20261031/lit/search-log.md`. Imported prior searches are reports of other agents' work, not this agent's execution. Unsupported assertions are UNVERIFIED.
 
 Online resolution pass 2026-10-31: the DOI resolved (the earlier redirect failure was a tool limit). The three secondary accounts of the width of the eigenvalue intervals disagree (statement 209), so no delta(eps) is taken from the literature here. Web checks are logged in `topics/bivariate-lanczos-20261031/lit/search-log.md`, section 'Online resolution pass 2026-10-31'. Unsupported assertions remain UNVERIFIED.
 
+PR-preparation consolidation 2026-11-01 (audit-01 protocol finding P2): the additions marked 'PR-preparation' above come from the L3 prior-art review 2026-10-31 (topics/bivariate-lanczos-20261031/reviews/), which read the source through WebFetch digests and make no novelty claim; the consolidator did not re-read the source. Any web check made at consolidation is logged in `topics/bivariate-lanczos-20261031/lit/search-log.md`, section 'PR-preparation consolidation 2026-11-01'. Unsupported assertions remain UNVERIFIED.
+
 ## History
 
 2026-10-31: Step 0 baseline record (AC-requested; not a novelty gate). Provisional IDs only; final `LIT-nnn` allocated at PR preparation.
 
 2026-10-31 (online pass): metadata and abstract confirmed; statements 207-209 added; coverage upgraded from 'not read; metadata NOT confirmed' to 'metadata + abstract'.
+
+2026-11-01 (PR-preparation consolidation, audit-01 protocol finding P2): L3 prior-art review's confirmation of the citation by Greenbaum's talk abstract and the withdrawal requirement for the '1D width sqrt(eps) (proven)' statement recorded as statement 447; the paper itself is still unread (pending-reference).
