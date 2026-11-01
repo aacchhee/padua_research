@@ -1,0 +1,97 @@
+{
+  "scope": "Independent read-only reservation recheck after PR12 advanced; no new reservation or assignment made by this receipt.",
+  "date_utc": "2026-11-01",
+  "rules_read_at": "2c192c7575a5688d84a5869072c5918d7405ef03",
+  "requested_allocation": "gpt-6.1-sol medium; resolved runtime model/effort metadata unexposed",
+  "main": "cf89b140530d5838bdb208a8c28f3e7aa676ace3",
+  "previous_pr12": "0d9ad5b803b3fff43080586f5255bfdfcba602e8",
+  "rechecked_pr12": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+  "published_pr9_reservation_commit": "020dcddd36fa1e3254cbf288701d5ab02d27c580",
+  "pr9_publication_status_source": "Parent orchestrator reports commit pushed and linked from PR9 body; local commit content independently verified.",
+  "all_ledgers_discovered": [
+    "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+    "topics/padua-batch-20261031/ALLOCATIONS.md"
+  ],
+  "files": {
+    "topics/charter-unisolvence-20261031/ALLOCATIONS.md": {
+      "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+      "git_blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+      "bytes": 2271,
+      "byte_identical_to_previous_pr12": true,
+      "byte_identical_to_main": true
+    },
+    "topics/padua-batch-20261031/ALLOCATIONS.md": {
+      "sha256": "d95ea644838d39dc4370ab8ce6c21b16d39f18d6a6dfdae7e912664807d573c3",
+      "git_blob": "4c55ac54bde0f8c901f34d1b73202fa606a467ab",
+      "bytes": 18382,
+      "byte_identical_to_previous_pr12": true,
+      "byte_identical_to_main": true
+    },
+    "PROOF_STATUS.md": {
+      "sha256": "ab3cbc4f09578571828a28773a9a527f0c22dba49270c92b652645c1420b35c2",
+      "git_blob": "8a42699a04ee0d555453f4e2ac10a597dc9e276a",
+      "bytes": 96640,
+      "byte_identical_to_previous_pr12": true,
+      "byte_identical_to_main": true
+    },
+    "state/IDEAS.md": {
+      "sha256": "f70650460c7b140021a084a2b9ddd56efc73f7e92ce8ef7b2f717db3ae677898",
+      "git_blob": "d6570b2b20a9f882b02ca4e79cd737a5fa13179e",
+      "bytes": 158605,
+      "byte_identical_to_previous_pr12": true,
+      "byte_identical_to_main": true
+    },
+    "literature/INDEX.md": {
+      "sha256": "f90355c5b77a638d1a49980330eff1bda7d0e7610771a3bdae465f384b03f056",
+      "git_blob": "f9348537234c798a3fa738970513891f0dd8c956",
+      "bytes": 265014,
+      "byte_identical_to_previous_pr12": true,
+      "byte_identical_to_main": true
+    },
+    "ID_CROSSWALK.md": {
+      "sha256": "543b970b311bb49cc7147db637734f37e6cdb7c48e91d67c3c9e79d55812844c",
+      "git_blob": "15637d098d5e88e354f16948ad3c5bf4b103fe2c",
+      "bytes": 249483,
+      "byte_identical_to_previous_pr12": true,
+      "byte_identical_to_main": true
+    }
+  },
+  "complete_pr12_diff_review": {
+    "changed_paths": [
+      "topics/padua-proof-attempts-2-20261101/LOG.md",
+      "topics/padua-proof-attempts-2-20261101/code/evidence_manifest.py",
+      "topics/padua-proof-attempts-2-20261101/evidence-manifest.json",
+      "topics/padua-proof-attempts-2-20261101/inputs-review.md",
+      "topics/padua-proof-attempts-20261101/LOG.md",
+      "topics/padua-proof-attempts-20261101/handoffs/01-integration-preparation.md",
+      "topics/padua-proof-attempts-20261101/main-sync.json",
+      "topics/padua-proof-attempts-20261101/pr-prep.md",
+      "topics/padua-proof-attempts-20261101/proposed-record-changes.md",
+      "topics/padua-proof-attempts-20261101/registry-integrity.json"
+    ],
+    "sha256": "7e3b2d1700b147d5136f98757a5fe0d81b8dc0e4c1eeac674d79503066852cd7",
+    "reviewed_entire_diff": true,
+    "new_reservations_found": [],
+    "new_final_assignments_found": [],
+    "scope": "Part1 administrative synchronization inherited and PR12 separate input provenance pins/manifest updates; no ledger or shared registry content changed."
+  },
+  "pr12_max_used_or_reserved": {
+    "PD-T": 100,
+    "PD-N": 43,
+    "IDEA": 209,
+    "LIT": 426
+  },
+  "union_max_used_or_reserved_including_published_pr9_reservation": {
+    "PD-T": 105,
+    "PD-N": 43,
+    "IDEA": 209,
+    "LIT": 426
+  },
+  "collisions": [],
+  "priority_conclusion": "PR12 declares no competing reservation. PR9 is sole known owner of PD-T101\u2013PD-T105, first published at 020dcddd36fa1e3254cbf288701d5ab02d27c580 per parent GitHub publication record. No renumbering or priority repair needed.",
+  "boundary_exclusions": [
+    "Inherited registry-integrity.json next.PD-T=PD-T101, next.PD-N=PD-N044, next.IDEA=IDEA-210 and next.LIT=LIT-427 are historical future suggestions, not reservations."
+  ],
+  "recommendation": "Proceed with already published PD-T101\u2013PD-T105 reservation; assign the three results to PD-T101\u2013PD-T103. Keep PD-T104\u2013PD-T105 as permanent unused headroom. Other namespaces no range.",
+  "limitations": "Only the pinned commits were checked. Parent owns remote refresh and publication; recheck if any remote allocation authority advances again."
+}

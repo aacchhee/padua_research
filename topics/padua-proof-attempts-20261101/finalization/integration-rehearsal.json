@@ -1,0 +1,18 @@
+{
+  "base": "cf89b140530d5838bdb208a8c28f3e7aa676ace3",
+  "pr9_tested_tree": "9ac0c6e045fd0ab62bc4b977e22a1142201c59e1",
+  "pr9_squash_patch_sha256": "acb35fc2ed3d3ca5ca0cc13fece40df99e5b80a112f462ade15201c78cadf30a",
+  "main_to_pr9": {
+    "exit": 0,
+    "tree_matches_candidate": true
+  },
+  "later_pr12_head": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+  "pr9_to_pr12": {
+    "exit": 1,
+    "merge_tree_output": "f7ba7c65a2e0892e28790395709e50d370a08ea0\ntopics/padua-proof-attempts-20261101/LOG.md\ntopics/padua-proof-attempts-20261101/handoffs/01-integration-preparation.md\ntopics/padua-proof-attempts-20261101/proposed-record-changes.md\ntopics/padua-proof-attempts-20261101/theory/proof-attempts-codex-01-padua-corner.md\ntopics/padua-proof-attempts-20261101/theory/proof-attempts-codex-02-generic-commutant.md\ntopics/padua-proof-attempts-20261101/theory/proof-attempts-codex-03-degenerate-maxima.md\n\nAuto-merging topics/padua-proof-attempts-20261101/LOG.md\nCONFLICT (add/add): Merge conflict in topics/padua-proof-attempts-20261101/LOG.md\nAuto-merging topics/padua-proof-attempts-20261101/handoffs/01-integration-preparation.md\nCONFLICT (add/add): Merge conflict in topics/padua-proof-attempts-20261101/handoffs/01-integration-preparation.md\nAuto-merging topics/padua-proof-attempts-20261101/proposed-record-changes.md\nCONFLICT (add/add): Merge conflict in topics/padua-proof-attempts-20261101/proposed-record-changes.md\nAuto-merging topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-01-padua-corner.md\nCONFLICT (add/add): Merge conflict in topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-01-padua-corner.md\nAuto-merging topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-02-generic-commutant.md\nCONFLICT (add/add): Merge conflict in topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-02-generic-commutant.md\nAuto-merging topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-03-degenerate-maxima.md\nCONFLICT (add/add): Merge conflict in topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-03-degenerate-maxima.md\n",
+    "all_nine_shared_registry_state_ledger_blobs_preserved": true,
+    "disposition": "PR12 is a later draft carrying an older copy of PR9. Refresh/reconcile PR12 after AC merges PR9; its topic-copy conflicts do not block PR9 readiness. No merge sequence including PR12 is requested here."
+  },
+  "mutates_branches_or_main": false,
+  "scope_note": "Completion receipts/status documentation added after this snapshot are administrative only. Initial direct patch rehearsal of stacked additions was unsuitable; this receipt uses a real three-way tree simulation with explicit squash base."
+}

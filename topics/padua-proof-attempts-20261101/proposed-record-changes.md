@@ -1,3 +1,7 @@
+# Application status — 2026-11-01
+
+The twelve reviewed replacements below were applied during AC-authorized finalization, translating aliases through the current crosswalk and [final ID map](finalization/id-map.json). The historical proposal text is preserved below; its old deferral statements describe its original preparation stage. [Applied bytes](finalization/applied-replacements.json) record the exact current changes.
+
 # Proposed changes to the programme-ideas records
 
 Sync note (2026-11-01): all twelve Old blocks were rechecked and still match

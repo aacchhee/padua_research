@@ -1,3 +1,15 @@
+# Current preparation status — finalized 2026-11-01
+
+AC's “Finalize it” superseded the historical deferral below. Final IDs PD-T101–103
+are assigned from the previously published permanent PD-T101–105 reservation.
+All twelve audited source changes and the F5 registry checklist are applied.
+[Integration checks](finalization/integration-checks.json) and the independent
+[mechanical review](finalization/integration-review.md) pass. Proofs, scientific
+code/outputs and auditor files remain unchanged. Main→PR9 squash rehearsal passes;
+PR12 must refresh its older topic copies after PR9 lands. PR9 is prepared for
+ready-for-review status. Only AC merges. Earlier sections retain their dated
+preparation history, rather than describing the current readiness state.
+
 # PR #9 preparation — accepted proof attempts
 
 Current synchronization: main `cf89b140530d5838bdb208a8c28f3e7aa676ace3`

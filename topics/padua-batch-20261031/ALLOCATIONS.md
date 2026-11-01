@@ -137,3 +137,7 @@ The boundary was the column "Next unreserved after this block" of the bivariate-
 - **Map and generator:** `topics/programme-ideas-20261031/pr-prep/id-map.json` and `allocate.py`.
 - **Retained reservations:** the lattice provisional-reservation table above and `topics/lattice-unisolvence-20261031/provisional-id-map.json` are kept as provenance. No accepted ID is renumbered.
 - **Members merging after PR #6** start from the last column above, after reconciling any later reservations. PR #11's LIT-293–299 reservation is unchanged.
+
+## PR #9 assignments after reservation publication (2026-11-01)
+
+Reservation priority: `020dcddd36fa1e3254cbf288701d5ab02d27c580`, published and linked in PR #9 before assignment. Fresh recheck of PR #12 at `12e9cf4539d0977773cad75fc74f93d1664cb429` found unchanged ledgers/registries and no collision. PD-T101 = exact corner identity; PD-T102 = generic distinct-x commutant; PD-T103 = degree-3 local certificates. PD-T104–105 remain permanent unused headroom. No other namespace reserved or assigned. [Exact map](../padua-proof-attempts-20261101/finalization/id-map.json). Earlier ledger text and all earlier ranges are preserved.

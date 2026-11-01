@@ -1,9 +1,11 @@
 # PD-T?proof-attempts-codex-03 — Exact local certificates for the two degree-three degenerate maxima
 
+Final ID: **PD-T103** (2026-11-01; provisional heading retained as alias; reservation published at `020dcddd36fa1e3254cbf288701d5ab02d27c580`).
+
 ID kind: PD-T.
 Aliases: T-A5-partial; degree-three edge degeneracies; cardinal index 6; background critical-point and Hessian certificates.
 Split from: the degenerate-point obligation of `PD-T?programme-ideas-claude-06`, OPEN_TARGETS A5-partial at `cadb35066160e466cb1704b9791ad6f374446422`.
-Split into: none. Source-record edits and crosswalk changes are proposed separately and are not applied here.
+Split into: none. Source and crosswalk integration applied during authorized PR finalization; see `../finalization/id-map.json`.
 
 ## Statement
 

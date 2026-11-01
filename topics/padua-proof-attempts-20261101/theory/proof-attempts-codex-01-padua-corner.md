@@ -1,9 +1,11 @@
 # PD-T?proof-attempts-codex-01 — Exact Padua corner formula
 
+Final ID: **PD-T101** (2026-11-01; provisional heading retained as alias; reservation published at `020dcddd36fa1e3254cbf288701d5ab02d27c580`).
+
 ID kind: PD-T.
 Aliases: T-A1; corner rhombus kernel; product-U formula; O(N) corner sum.
 Split from: `PD-T?programme-ideas-claude-04`, the row “exact finite-sum form of Λ_c(n)”; precise target A1 in `topics/programme-ideas-20261031/OPEN_TARGETS.md` at `cadb35066160e466cb1704b9791ad6f374446422`.
-Split into: none. Proposed source-record edits are deferred to `../proposed-record-changes.md`; existing files and shared crosswalks are untouched.
+Split into: none. Source and crosswalk integration applied during authorized PR finalization; see `../finalization/id-map.json`.
 
 ## Statement
 

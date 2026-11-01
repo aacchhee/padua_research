@@ -1,0 +1,152 @@
+{
+  "base": "cf89b140530d5838bdb208a8c28f3e7aa676ace3",
+  "accepted_response_input": "93da3be26dbddf9ec2446af578fe8015bb4eeada",
+  "rules_read_at": "2c192c7575a5688d84a5869072c5918d7405ef03",
+  "checks": {
+    "unrelated_main_files_byte_identical": 1626,
+    "registry_rows": {
+      "PROOF_STATUS.md": {
+        "untouched_rows": 150,
+        "updated_rows": [
+          "PD-N042",
+          "PD-T098",
+          "PD-T100"
+        ]
+      },
+      "ID_CROSSWALK.md": {
+        "untouched_rows": 842,
+        "updated_rows": [
+          "PD-N?programme-ideas-claude-04",
+          "PD-T?programme-ideas-claude-04",
+          "PD-T?programme-ideas-claude-06"
+        ]
+      },
+      "state/IDEAS.md": {
+        "untouched_rows": 396,
+        "updated_rows": [
+          "IDEA-197",
+          "IDEA-206",
+          "[PD-N042]"
+        ]
+      }
+    },
+    "primary_proof_ids": {
+      "count": 146,
+      "duplicates": 0,
+      "prior_ids_preserved": 143,
+      "new": [
+        "PD-T101",
+        "PD-T102",
+        "PD-T103"
+      ]
+    },
+    "audited_replacements_applied": 12,
+    "original_target_routes_preserved": 3,
+    "scientific_and_auditor_files_byte_identical": 22,
+    "local_registry_links": {
+      "checked": 2431,
+      "missing": []
+    },
+    "current_hashes": [
+      {
+        "path": "ID_CROSSWALK.md",
+        "sha256": "a65c2e715cbb6fd01f75ae7de900ccf85509e81c34ed0354bd21c2e2289d8229",
+        "bytes": 252010
+      },
+      {
+        "path": "PAPER_MAP.md",
+        "sha256": "bca6b29bbd5c0e6b357cb9904dfe0df682f4c80518829a823e9fac28b3b2e701",
+        "bytes": 3581
+      },
+      {
+        "path": "PROOF_STATUS.md",
+        "sha256": "a916cda87c9f7ad1950f62e32d254f5c276d386b63f5e84a32cb08a3298f8b0f",
+        "bytes": 99924
+      },
+      {
+        "path": "state/CURRENT.md",
+        "sha256": "bfa11a51cd5e03d614756638818674644a830dbd92372ce98e719ed9f7972afc",
+        "bytes": 14194
+      },
+      {
+        "path": "state/IDEAS.md",
+        "sha256": "de45820ecb33f8694b0ed4a13177fc2d91094729dc2f164e3d26034fada4d4a0",
+        "bytes": 159295
+      },
+      {
+        "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+        "sha256": "26918056d06e8fed622e07e512c062fb8bfce9762e211ffe5bf78aedd0225d36",
+        "bytes": 20377
+      },
+      {
+        "path": "topics/programme-ideas-20261031/OPEN_TARGETS.md",
+        "sha256": "c181d688edc8927b23e273f2a5f6542e950652b9bd892e5a96c89d2e3e199157",
+        "bytes": 19652
+      },
+      {
+        "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-01-finite-favard-pattern-pairs.md",
+        "sha256": "9e25301b14086106d623c5d5e44cc2a751eea17d5f58b6c412b75a3ebfdf89aa",
+        "bytes": 12360
+      },
+      {
+        "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-04-padua-corner-expansion.md",
+        "sha256": "3cedf9b5f79f7b2ca24ce5b4b5e71327a90bf8951be780b54d021132c12bd30b",
+        "bytes": 6438
+      },
+      {
+        "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-06-padua-lebesgue-maxima-counts.md",
+        "sha256": "cf96d30ce806aee7915fa47593b22a5b6873e5110b54be8e83b7ab2301cdb355",
+        "bytes": 8189
+      },
+      {
+        "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N04-pattern-commutant-not-three-dimensional.md",
+        "sha256": "c3f1a222d295ade530a5b682b4d76ad4fe02b2a6c1791391f979ca6ff0ffab01",
+        "bytes": 5360
+      }
+    ]
+  },
+  "pass": true,
+  "commands_executed": [
+    "python topics/padua-proof-attempts-20261101/finalization/check_integration.py",
+    "python -I topics/programme-ideas-20261031/pr-prep/allocate.py",
+    "git diff --check",
+    "disposable-index squash application and git merge-tree rehearsal"
+  ],
+  "exact_reruns": [
+    {
+      "command": "python topics/padua-proof-attempts-20261101/code/a1_exact_check.py > /tmp/pr9-a1_exact_check.json",
+      "output_matches_committed_receipt_byte_for_byte": true,
+      "sha256": "f8cd6cfd027989bf4bb59ebaebd9040824b0763ef660db51b5046078f33e8f94",
+      "bytes": 1875
+    },
+    {
+      "command": "python topics/padua-proof-attempts-20261101/code/b5_exact_instances.py > /tmp/pr9-b5_exact_instances.json",
+      "output_matches_committed_receipt_byte_for_byte": true,
+      "sha256": "251496a1a117054608dd55d32c7dfa5441c5af34cf7cb00d1f99ec0e9e80da02",
+      "bytes": 5327
+    },
+    {
+      "command": "python topics/padua-proof-attempts-20261101/code/a5_exact_certificate.py > /tmp/pr9-a5_exact_certificate.json",
+      "output_matches_committed_receipt_byte_for_byte": true,
+      "sha256": "279c8e7ca9c4781bb3c528a21f870162aab8402ea219e3ec339c4b9d676d25f3",
+      "bytes": 7011
+    }
+  ],
+  "readiness_heads": {
+    "main": "cf89b140530d5838bdb208a8c28f3e7aa676ace3",
+    "published_pr9_reservation": "020dcddd36fa1e3254cbf288701d5ab02d27c580",
+    "pr12": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+    "closed_unmerged": []
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "sympy": "1.14.0"
+  },
+  "evidence_note": "Necessary small integration evidence. Historical manifests remain pinned to their original revisions; no scientific output or auditor record regenerated. No full floating trace rerun; its inputs/code are unchanged.",
+  "output_limits": {
+    "topic_bytes_before_this_receipt": 327978,
+    "largest_topic_file_bytes": 26881,
+    "limit": "all topic files combined below 5 MB; every generated output below 1 MB"
+  }
+}

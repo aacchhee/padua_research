@@ -25,3 +25,7 @@ No manuscript has been drafted or accepted. The following is a development brief
 | Short note: backward obstruction for Padua recurrences (reading (E)) | When are perturbed bivariate OP sections exactly sections of a positive measure near the nodes? | bivariate-lanczos; [report](topics/bivariate-lanczos-20261031/report.md) Ranks 1–2 | PD-T058, PD-T059, PD-T061, PD-T062, PD-T066, PD-T069, PD-N020–PD-N022, PD-N028 | radius dependence on n (PD-T075 OPEN); Greenbaum reading (G) OPEN (PD-T056); prior-art reading of Delgado–Geronimo–Iliev–Marcellán and Cichoń–Stochel–Szafraniec | brief only |
 | Loss of orthogonality and span drift in two-variable Lanczos / V+A | What governs orthogonality loss and span accuracy of the truncated recurrence and of full reorthogonalization? | bivariate-lanczos; report Ranks 3–4 | PD-T036, PD-T041, PD-T046, PD-T053, PD-T055, PD-N007, PD-N011–PD-N013 | identification with published V+A code unverified; M = 10⁵–10⁶ runs pending; universal obstruction OPEN | brief only |
 
+
+## Accepted proof-attempt support
+
+[PD-T101–103](topics/padua-proof-attempts-20261101/LOG.md), accepted by Claude audit-01, supply the exact Padua corner identity, generic distinct-x pattern commutant and two degree-3 local certificates. They do not complete the asymptotic, argmax or counting projects: expansion/argmax remain OPEN and counts MEASURED. No manuscript, novelty or submission claim is added.
