@@ -28,7 +28,7 @@ Exact arithmetic; degree n=1, so the original measure has the square count `M=N_
 
 ## Status by part
 
-Overall status: PROVED (explicit analytic construction and inequalities; independent reconstruction completed; external Claude audit pending).
+Overall status: PROVED (explicit analytic construction and inequalities; independent reconstruction completed; external Claude audit-01 CONFIRMED, `topics/padua-lanczos-drift-20261101/checks/audit-01/E5-records-30-32.md`; editorial items E5-F3/F7 handled in response-01, Codex re-audit pending).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -36,7 +36,7 @@ Overall status: PROVED (explicit analytic construction and inequalities; indepen
 | Noncommuting consistent sections | PROVED | Explicit Gram/multiplication matrices below |
 | Lower spread under residual gamma*epsilon, gamma<1/3 | PROVED | Double-zero cubic and uniform local bound |
 
-IDEA?drift-codex-31: retained concrete variant of the known square-root mechanism. The general finite-precision (G) target remains OPEN; no novelty claim.
+IDEA?drift-codex-31: retained explicit reading-(E) instance of the known square-root mechanism. Closest predecessor PD-T061 (IDEA-157); PD-N021 (IDEA-161) is the related δ=O(ε) refutation. The deferred (G) realization is the separate candidate IDEA?drift-codex-35 (deferred, `topics/padua-lanczos-drift-20261101/ideas-e5.md`). The general finite-precision (G) target remains OPEN; no novelty claim.
 
 ## Depends on
 
@@ -86,13 +86,13 @@ Positivity and unit mass imply `|L_nu(p)|<=3delta^2`. Combining the two inequali
 
 ## Checks
 
-Developer exact symbolic multiplication of the displayed rational matrices confirms `det M=(1+18e)/27` and the displayed commutator entry. This is an elementary identity displayed for direct checking, not a finite computer-assisted proof. `python3 -I -B tracks/bivariate-lanczos/code/drift/e5_exact_checks.py` verifies the moments, Gram determinant, commutator entry, and the corner derivative identities of PD-T?drift-codex-30: PASS (Python 3.12.14, SymPy 1.14.0). Evidence and hashes are in `topics/padua-lanczos-drift-20261101/evidence/e5-exact-checks.json` and `e5-manifest.json`.
+Developer exact symbolic multiplication of the displayed rational matrices confirms `det M=(1+18e)/27` and the displayed commutator entry. This is an elementary identity displayed for direct checking, not a finite computer-assisted proof. `python3 -I -B tracks/bivariate-lanczos/code/drift/e5_exact_checks.py`: PASS (Python 3.12.14, SymPy 1.14.0). Exact coverage for this record: M, X, Y are typed into the script as the displayed rational matrices, not built from the atoms. The script checks `det M=(1+18e)/27` and `[A,B]_(0,1)=3e(12e-1)/(1+18e)^2` for those typed-in matrices. Its "moment" check covers only the origin split: at a formal displacement t, the moment differences between the two split atoms and the original origin atom are `t^2/3` in degree two and 0 otherwise. It does **not** check that the displayed M, X, Y are the moment matrices of mu_epsilon, the cubic jets of p on Z, `L_(mu_epsilon)(p)=epsilon`, or the local bound. Those rest on the written proof. They were checked by the independent checker (it built M, X, Y from the four atoms; receipt `moment_matrices_built_from_four_atoms: True`, paragraph below) and by audit-01 (E5 cmd 6, `topics/padua-lanczos-drift-20261101/checks/audit-01/scripts/E5/c_square.py`, which found float grid sup|p|/δ²≈1.8≤3). Evidence and hashes are in `topics/padua-lanczos-drift-20261101/evidence/e5-exact-checks.json` and `e5-manifest.json`.
 
-The parent's distinct independent mathematical checker constructed all moments afresh from the atoms, formed M,X,Y from their monomial exponents, and separately verified the determinant, commutator entry, double-zero cubic jets, and `L_(mu_epsilon)(p)=epsilon`: PASS. It reconstructed the local bound and residual argument with no gap. Its code/output/input hashes belong to the parent-owned independent-check record. External Claude audit remains pending.
+The parent's distinct independent mathematical checker constructed all moments afresh from the atoms, formed M,X,Y from their monomial exponents, and separately verified the determinant, commutator entry, double-zero cubic jets, and `L_(mu_epsilon)(p)=epsilon`: PASS. It reconstructed the local bound and residual argument with no gap. Its code/output/input hashes belong to the parent-owned independent-check record. External Claude audit-01 reconstructed the construction and bounds and CONFIRMED them.
 
 ## Sources
 
-Internal predecessors PD-T059/PD-T061 (square-root rate) and PD-T058 (residual conventions). No external theorem is imported. Literature comparisons make no historical novelty claim.
+Internal predecessors PD-T059/PD-T061 (square-root rate; PD-T061 is the closest, with abstract constants and Open item "Explicit constants") and PD-T058 (residual conventions). PD-N021 (IDEA-161) refutes δ=O(ε) in reading (E) for every square unisolvent set. This record is one explicit instance consistent with it, not a new refutation. No external theorem is imported. Literature comparisons make no historical novelty claim.
 
 ## Scope: what this says about (E) and (G)
 
@@ -100,8 +100,10 @@ This is a specified consistent data family in reading (E), with an explicit posi
 
 ## Open items
 
-Required external Claude mathematical audit. A genuine (G) construction or obstruction must specify actual computed/formed data, their consistency or correction residual, the local roundoff parameter u, and a nontrivial residual constant. PD-T056 reading (G), including Padua n=3/4, remains OPEN.
+External Claude audit-01 completed (CONFIRMED). This instance supplies explicit constants for one family only. It does not give the universal constants c, C of PD-T061. A genuine (G) construction or obstruction must specify actual computed/formed data, their consistency or correction residual, the local roundoff parameter u, and a nontrivial residual constant. PD-T056 reading (G), including Padua n=3/4, remains OPEN.
 
 ## History
 
 2026-11-01, Codex E5 developer, requested gpt-6.1-sol xhigh; rules/base `806cc7b4509fd93bae652f9545d32d95529f8281`. New explicit family and residual-aware proof, within assigned square sqrt(epsilon) alternative. No Git/shared-registry change.
+- 2026-11-01 (Claude response-01, Opus 5.5 high): audit-01 E5-F3. Checks state the developer checker's exact coverage, with what it does not check, and cite the independent checker and audit-01 for the rest. Audit status metadata updated. Original wording: «`python3 -I -B tracks/bivariate-lanczos/code/drift/e5_exact_checks.py` verifies the moments, Gram determinant, commutator entry, and the corner derivative identities of PD-T?drift-codex-30: PASS …»; «… external Claude audit pending).»; «External Claude audit remains pending.»; «Required external Claude mathematical audit.».
+- 2026-11-01 (Claude response-01, Opus 5.5 high): audit-01 E5-F7/P-F7. Named PD-T061/IDEA-157 as closest predecessor and PD-N021/IDEA-161 as related. The deferred (G) candidate is split off as IDEA?drift-codex-35. Mathematics unchanged. Original wording: «IDEA?drift-codex-31: retained concrete variant of the known square-root mechanism. The general finite-precision (G) target remains OPEN; no novelty claim.»; «Internal predecessors PD-T059/PD-T061 (square-root rate) and PD-T058 (residual conventions).».
