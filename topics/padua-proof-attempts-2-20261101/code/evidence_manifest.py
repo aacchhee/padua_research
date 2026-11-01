@@ -99,20 +99,22 @@ def main():
     # Untracked prototypes may change during parallel development; stage each
     # durable artifact before regenerating this manifest.
     indexed_paths = set(git("ls-files", "--", TOPIC).decode().splitlines())
-    for path in sorted((ROOT / TOPIC).rglob("*")):
-        relative = str(path.relative_to(ROOT))
-        if (path.is_file() and relative in indexed_paths
-                and path.name != "evidence-manifest.json" and "__pycache__" not in path.parts):
-            outputs.append({"path": str(path.relative_to(ROOT)), **identity(path.read_bytes())})
+    for relative in sorted(indexed_paths):
+        path = Path(relative)
+        if path.name != "evidence-manifest.json" and "__pycache__" not in path.parts:
+            # Hash the index bytes that this checkpoint will commit. Parallel
+            # workers may be editing tracked working files not yet staged.
+            data = git("show", f":{relative}")
+            outputs.append({"path": relative, **identity(data)})
     result = {"schema": 1, "purpose": "mechanical provenance; no scientific execution or verification",
               "pins": PINS, "python": platform.python_version(),
               "command": f"python {TOPIC}/code/evidence_manifest.py",
               "input_source": "local immutable Git objects via git show COMMIT:PATH; no files fetched remotely by this script",
               "inputs": inputs, "changed_compared_inputs": changes,
-              "output_source": "tracked and staged topic files; stage new durable artifacts before generation",
+              "output_source": "Git index snapshot via git show :PATH; stage durable changes before generation; unstaged edits are excluded",
               "outputs": outputs,
               "exclusions": ["evidence-manifest.json excludes itself to avoid a recursive hash",
-                             "untracked working prototypes are excluded until staged for a checkpoint",
+                             "untracked prototypes and unstaged tracked edits are excluded until staged for a checkpoint",
                              "__pycache__ files are interpreter cache, not evidence"]}
     dest = ROOT / TOPIC / "evidence-manifest.json"
     dest.write_text(json.dumps(result, indent=2) + "\n")
