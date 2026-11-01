@@ -1,0 +1,268 @@
+{
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "script_sha256": "ffcc1508176aa0b60a0a709d41a6e736ca0a4b38ec8aa436d5d706f800431c84",
+  "arithmetic": "exact SymPy polynomials and Fraction intervals; alternating rational cosine Taylor sums",
+  "certificates": [
+    {
+      "sigma": 1,
+      "degree": 3,
+      "Z_indices": [
+        6
+      ],
+      "Z_nodes_jk": [
+        [
+          2,
+          2
+        ]
+      ],
+      "exact_center": "(theta,phi)=(0,acos(1/sqrt(3)))",
+      "phi_rational_enclosure": [
+        "477658309062254639/500000000000000000",
+        "955316618124509279/1000000000000000000"
+      ],
+      "phi_enclosure_width": "1/1000000000000000000",
+      "proved_angle_l1_radius": "21/10000",
+      "frozen_requested_radius": "1/500",
+      "zero_cardinal_factorization": "(x - 1)*(2*x**2 + x + 2*y**2 - 2)/3",
+      "zero_value_and_angle_gradient_exact": true,
+      "background": "2*x**3/3 + 2*x**2*y/3 + 2*x**2/3 + x*y/3 - x/6 - 2*sqrt(2)*y**3 - 4*y**3/3 + y/3 + 2*sqrt(2)*y - 1/6",
+      "background_signs": [
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        0,
+        1,
+        1,
+        -1
+      ],
+      "background_angle_gradient_exact": true,
+      "exact_Lebesgue_value": "8*sqrt(3)/27 + 1 + 4*sqrt(6)/9",
+      "background_center_Htt": "-19/6 - 5*sqrt(3)/9",
+      "background_center_Hpp": "-8*sqrt(6)/3 - 16*sqrt(3)/9",
+      "zero_center_Htt": "-5/9",
+      "exact_center_mu0": "5*sqrt(3)/9 + 47/18",
+      "exact_center_mu0_enclosure": [
+        "3573361/1000000",
+        "1786681/500000"
+      ],
+      "nonzero_cardinal_sign_lower_bounds": [
+        [
+          0,
+          "16169/50000"
+        ],
+        [
+          1,
+          "664233/1000000"
+        ],
+        [
+          2,
+          "1313/500000"
+        ],
+        [
+          3,
+          "178469/500000"
+        ],
+        [
+          4,
+          "178467/500000"
+        ],
+        [
+          5,
+          "15761/62500"
+        ],
+        [
+          7,
+          "10087/40000"
+        ],
+        [
+          8,
+          "178467/1000000"
+        ],
+        [
+          9,
+          "89233/500000"
+        ]
+      ],
+      "zero_factor_bracket_lower_bound": "830907/500000",
+      "background_Htt_enclosure": [
+        "-4138027/1000000",
+        "-2059879/500000"
+      ],
+      "background_Hpp_enclosure": [
+        "-2437681/250000",
+        "-189421/20000"
+      ],
+      "background_Htp_absolute_upper": "7/2000",
+      "background_negative_Hessian_margin_lower": "2058129/500000",
+      "zero_Hessian_operator_norm_upper": "111763/200000",
+      "background_minus_zero_Hessian_margin_lower": "889361/250000",
+      "lambda_negative_Hessian_margin_lower": "1780363/500000",
+      "strict_unique_local_maximum_on_angle_disc": true
+    },
+    {
+      "sigma": -1,
+      "degree": 3,
+      "Z_indices": [
+        6
+      ],
+      "Z_nodes_jk": [
+        [
+          2,
+          2
+        ]
+      ],
+      "exact_center": "(theta,phi)=(0,acos(-1/sqrt(3)))",
+      "phi_rational_enclosure": [
+        "54656900886632099/25000000000000000",
+        "2186276035465283961/1000000000000000000"
+      ],
+      "phi_enclosure_width": "1/1000000000000000000",
+      "proved_angle_l1_radius": "21/10000",
+      "frozen_requested_radius": "1/500",
+      "zero_cardinal_factorization": "(x - 1)*(2*x**2 + x + 2*y**2 - 2)/3",
+      "zero_value_and_angle_gradient_exact": true,
+      "background": "2*x**3/3 - 2*x**2*y/3 + 2*x**2/3 - x*y/3 - x/6 + 4*y**3/3 + 2*sqrt(2)*y**3 - 2*sqrt(2)*y - y/3 - 1/6",
+      "background_signs": [
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        0,
+        -1,
+        -1,
+        1
+      ],
+      "background_angle_gradient_exact": true,
+      "exact_Lebesgue_value": "8*sqrt(3)/27 + 1 + 4*sqrt(6)/9",
+      "background_center_Htt": "-19/6 - 5*sqrt(3)/9",
+      "background_center_Hpp": "-8*sqrt(6)/3 - 16*sqrt(3)/9",
+      "zero_center_Htt": "-5/9",
+      "exact_center_mu0": "5*sqrt(3)/9 + 47/18",
+      "exact_center_mu0_enclosure": [
+        "3573361/1000000",
+        "1786681/500000"
+      ],
+      "nonzero_cardinal_sign_lower_bounds": [
+        [
+          0,
+          "1313/500000"
+        ],
+        [
+          1,
+          "664233/1000000"
+        ],
+        [
+          2,
+          "16169/50000"
+        ],
+        [
+          3,
+          "178467/500000"
+        ],
+        [
+          4,
+          "178469/500000"
+        ],
+        [
+          5,
+          "10087/40000"
+        ],
+        [
+          7,
+          "15761/62500"
+        ],
+        [
+          8,
+          "89233/500000"
+        ],
+        [
+          9,
+          "178467/1000000"
+        ]
+      ],
+      "zero_factor_bracket_lower_bound": "830907/500000",
+      "background_Htt_enclosure": [
+        "-4138027/1000000",
+        "-2059879/500000"
+      ],
+      "background_Hpp_enclosure": [
+        "-2437681/250000",
+        "-189421/20000"
+      ],
+      "background_Htp_absolute_upper": "7/2000",
+      "background_negative_Hessian_margin_lower": "2058129/500000",
+      "zero_Hessian_operator_norm_upper": "111763/200000",
+      "background_minus_zero_Hessian_margin_lower": "889361/250000",
+      "lambda_negative_Hessian_margin_lower": "1780363/500000",
+      "strict_unique_local_maximum_on_angle_disc": true
+    }
+  ],
+  "scope": "two exact degree-three representatives; local degeneracy only; counts not certified",
+  "trace_coverage": {
+    "trace_sha256": "093fe1d4171f4416e28ba5e269f30378f4e32165f03bc5969a5d94919e92d468",
+    "coverage": [
+      {
+        "n": 3,
+        "all_calls": 2,
+        "accepted_calls": 2
+      },
+      {
+        "n": 4,
+        "all_calls": 0,
+        "accepted_calls": 0
+      },
+      {
+        "n": 5,
+        "all_calls": 0,
+        "accepted_calls": 0
+      },
+      {
+        "n": 6,
+        "all_calls": 0,
+        "accepted_calls": 0
+      },
+      {
+        "n": 7,
+        "all_calls": 0,
+        "accepted_calls": 0
+      },
+      {
+        "n": 8,
+        "all_calls": 0,
+        "accepted_calls": 0
+      }
+    ],
+    "matched_accepted_decisions": [
+      {
+        "n": 3,
+        "call": 1,
+        "exact_representative": "(theta,phi)=(0,acos(1/sqrt(3)))",
+        "trace_to_representative_l1_distance_upper": "47/500000000000000000",
+        "entire_frozen_radius_disc_contained_in_proved_disc": true,
+        "Z_zero_based": [
+          6
+        ],
+        "all_local_conditions_proved": true
+      },
+      {
+        "n": 3,
+        "call": 2,
+        "exact_representative": "(theta,phi)=(0,acos(-1/sqrt(3)))",
+        "trace_to_representative_l1_distance_upper": "9/250000000000000000",
+        "entire_frozen_radius_disc_contained_in_proved_disc": true,
+        "Z_zero_based": [
+          6
+        ],
+        "all_local_conditions_proved": true
+      }
+    ],
+    "unsuccessful_calls_without_proof_claim": [],
+    "limitation": "Trace is MEASURED execution evidence; proof concerns exact representatives, not literal floating iterates or global search completeness"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "reservation_commit": "020dcddd36fa1e3254cbf288701d5ab02d27c580",
+  "range": "PD-T101–PD-T105",
+  "unused_permanent_headroom": [
+    "PD-T104",
+    "PD-T105"
+  ],
+  "mappings": {
+    "PD-T?proof-attempts-codex-01": "PD-T101",
+    "PD-T?proof-attempts-codex-02": "PD-T102",
+    "PD-T?proof-attempts-codex-03": "PD-T103"
+  },
+  "records": {
+    "PD-T101": "topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-01-padua-corner.md",
+    "PD-T102": "topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-02-generic-commutant.md",
+    "PD-T103": "topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-03-degenerate-maxima.md"
+  }
+}

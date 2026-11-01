@@ -1,0 +1,65 @@
+{
+ "check": "A1 auditor independent (monomial Vandermonde, mpmath 80 dps)",
+ "results": [
+  {
+   "n": 1,
+   "N": 3,
+   "max_cardinal_diff": "3.16e-81",
+   "max_corner_sum_diff": "4.22e-81"
+  },
+  {
+   "n": 2,
+   "N": 6,
+   "max_cardinal_diff": "3.34e-81",
+   "max_corner_sum_diff": "8.43e-81"
+  },
+  {
+   "n": 3,
+   "N": 10,
+   "max_cardinal_diff": "1.58e-80",
+   "max_corner_sum_diff": "1.48e-80"
+  },
+  {
+   "n": 4,
+   "N": 15,
+   "max_cardinal_diff": "1.79e-80",
+   "max_corner_sum_diff": "2.53e-80"
+  },
+  {
+   "n": 5,
+   "N": 21,
+   "max_cardinal_diff": "2.0e-80",
+   "max_corner_sum_diff": "2.53e-80"
+  },
+  {
+   "n": 6,
+   "N": 28,
+   "max_cardinal_diff": "1.42e-80",
+   "max_corner_sum_diff": "3.37e-80"
+  },
+  {
+   "n": 7,
+   "N": 36,
+   "max_cardinal_diff": "2.0e-80",
+   "max_corner_sum_diff": "1.35e-79"
+  },
+  {
+   "n": 8,
+   "N": 45,
+   "max_cardinal_diff": "3.9e-80",
+   "max_corner_sum_diff": "2.87e-79"
+  },
+  {
+   "n": 9,
+   "N": 55,
+   "max_cardinal_diff": "7.83e-80",
+   "max_corner_sum_diff": "7.76e-79"
+  },
+  {
+   "n": 10,
+   "N": 66,
+   "max_cardinal_diff": "1.35e-79",
+   "max_corner_sum_diff": "1.94e-78"
+  }
+ ]
+}

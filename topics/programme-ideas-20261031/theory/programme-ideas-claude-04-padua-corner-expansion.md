@@ -5,7 +5,7 @@ Final ID: **PD-T098** (allocated 2026-11-01 under AC's authorisation; the provis
 ID kind: PD-T.
 Aliases: corner expansion; Λ_c(n); b = (8/π²)(γ + log(8/π)); c = 1.84616…; κ = c − c₁²; N = n + ½ structure; proposal-1 Paper A (analytic part).
 Split from: the combined T2 claim of `checks/decisive-gen4-2.md` and its summaries in `proposal-1.md`/`report.md` at `614709d` ("b to 12 digits, c = 1.846160310424 ± 2e-12, κ a genuinely two-dimensional constant"). The argmax statement is split to `PD-T?programme-ideas-claude-05`.
-Split into: none.
+Split into: PD-T101 — exact finite-sum form of the corner value, for every n≥1 and all four corners. The asymptotic expansion remains in this record with OPEN status.
 
 ## Statement
 
@@ -29,7 +29,7 @@ Overall status: OPEN (supported by MEASURED finite evaluations; no proof, no rem
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
-| exact finite-sum form of Λ_c(n) (N closed-form kernel terms) | MEASURED | agreement with the O(Nn) formula to 2.1e-13, n = 3…64, all four corners (`t2_onepage.py/.out`); identity not written as a proof |
+| exact finite-sum form of Λ_c(n) (N closed-form kernel terms) | PROVED | Split-off PD-T101, `../../padua-proof-attempts-20261101/theory/proof-attempts-codex-01-padua-corner.md`: written proof for every n≥1 and all four corners, including continuous singular limits; exact SymPy checks n=1,…,6 and a separate rerun. The expansion itself remains OPEN. |
 | finite high-precision values of Λ_c(n) | MEASURED | 80-bit long double with exact mod-4 argument reduction, 28 even n in [64, 8192] and 22 odd n in [65, 4097]; mpmath (30 digits) agreement ≤ 7e-16 at n = 64, 128, 256 |
 | fitted constants, **pre-registered fit family** (unshifted variable, K = 3, 4, 5, n_min ∈ {64, 128, 256, 512}, b free and fixed) | MEASURED | c ∈ [1.846095095877555, 1.846161206769239], half-spread 3.3055e-5 (developer disclosure in `decisive-gen4-2.md` T2(c); independent 18-fit replay `audit-support/proposal-fit.py/.json`). The pre-registered target "≥ 9 digits of c" is **not met**: T2's precision/separation target is inconclusive. |
 | fitted constants, **post-registration, model-conditioned** (refit in N = n + ½ with the −1/N term) | MEASURED (post-registration) | b = 1.2255221257453, c = 1.846160310424, κ = 0.9197101183886, stable to ±2e-12 across the selected model's fits; 1/N coefficient −1.000000002. This is fit stability inside a model chosen after seeing the data, not an error bound on the asymptotic remainder. |
@@ -38,7 +38,7 @@ Overall status: OPEN (supported by MEASURED finite evaluations; no proof, no rem
 
 ## Depends on
 
-None (finite evaluations only).
+PD-T101 (`../../padua-proof-attempts-20261101/theory/proof-attempts-codex-01-padua-corner.md`) proves the exact finite corner identity only. The conjectured asymptotic expansion, its remainder and identification of κ remain OPEN; the existing finite evaluations and fitted constants retain MEASURED status.
 
 ## Checks
 
@@ -67,3 +67,5 @@ Proof of the expansion (or of the b-term alone); rigorous evaluation of Λ_c(n) 
 - 2026-11-01, gen4-2 adversary and decisive agents (claude-fable-5-1, xhigh): finite evaluations and fits; summaries reported "12 digits" and "±2e-12" as if pre-registered.
 - 2026-11-01, Codex audit-01 A6: pre-registered and post-registration uncertainties must be reported separately; T2 target inconclusive.
 - 2026-11-01, response-01 (claude-opus-5-5, effort not exposed): this record; summaries in `proposal-1.md`, `report.md` and the decisive file's verdict corrected (originals struck, not deleted).
+
+- 2026-11-01, Codex PR #9 finalization (gpt-6.1-sol medium), Claude audit-01 ACCEPTED: A1 is closed by the separate exact identity PD-T101; A2/A3 (the asymptotic expansion and constants) remain OPEN. The original expansion statement is unchanged.
