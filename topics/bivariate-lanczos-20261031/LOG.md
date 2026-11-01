@@ -1,8 +1,8 @@
 # Lanczos in two commuting variables — finite-precision theory, joint Ritz values and commuting extensions
 
 - Branch: `claude/bivariate-lanczos-20261031` · Base: `d36722823441dc40c6e19d69a174459348dd309c` (original main) · Developer/orchestrator: Claude · Auditor: Codex (`gpt-6-astra xhigh` launch configuration), [audit-01 completed: changes required](audit-01.md)
-- Stage: **WORK** · Next: `Claude (Opus 5.5 xhigh): Continue claude/bivariate-lanczos-20261031; address audit-01.md and linked findings in response-01.md, then return material corrections to AUDIT.`
-- Claims: no overall acceptance; 67 theory files (developer statuses), with scoped verification and outstanding corrections in [audit-01.md](audit-01.md); development ranking [report.md](report.md); frozen request [audit-handoff.md](audit-handoff.md); round ledger [plan.md](plan.md); [progress.md](progress.md).
+- Stage: **AUDIT** (re-audit of material corrections) · Next: `Codex (gpt-6-astra xhigh): Continue claude/bivariate-lanczos-20261031; focused re-audit of response-01.md and its impact map.`
+- Claims: no overall acceptance; 77 theory files after [response-01](response-01.md) (67 audited + 10 split/correction files; developer statuses), with scoped verification and outstanding corrections in [audit-01.md](audit-01.md); development ranking [report.md](report.md); frozen request [audit-handoff.md](audit-handoff.md); round ledger [plan.md](plan.md); [progress.md](progress.md).
 - For the PR: one charter paragraph for this track in `state/CURRENT.md` (PR preparation only); final PD-T/PD-N/IDEA/LIT IDs via a shared ledger `topics/padua-batch-20261031/ALLOCATIONS.md` with `codex/charter-unisolvence-20261031`; merge `origin/main` first if the charter PR has merged.
 - Open for AC: see bottom section.
 
@@ -185,6 +185,14 @@ Subagent effort is set from the agent definition and is not independently expose
 - Verdict: **CHANGES REQUIRED; WORK**. Material findings: T302 normalized residual threshold has an exact counterexample; T201 extended-step normalization drops beta factors and its polynomial-only paraphrase omits chi; unrestricted parent selection, universal reorthogonalization, broad Ritz range and uniform-radius conclusions overreach their proofs/evidence; numerical prefix certification/statistical interpretation and substantive status splits require repair. Core proved claims survive within the precise scopes recorded in the audit. No developer correction was silently performed or self-approved.
 - Root separately inspected and executed the final framework checker; output retained as `audit-01/root-framework-rerun.log`. Root checkpoints `f4594c0328b222b624346eacd5f9baa96e3cc085` and `51a43da` preserve initial provenance and four completed scope reports. Final artifact identities and bounded evidence sizes are in `audit-01/artifact-manifest.json`.
 - PR preparation is not reached: no final-ID reservation, main integration or readiness assertion is made. Claude must disposition every linked finding in response-01, preserve frozen audit records, and return material fixes for focused Codex re-audit. The next exact prompt is at the top of this log.
+
+### 2026-11-01 — Response to Codex audit-01 (Claude orchestrator, `claude-opus-5-5`)
+
+- Rules read at `5f523313b7b388cb114103734028f0a850dfeaad` (identical to `d367228`); fast-forwarded to the audit head `5f52331`. Frozen audit records untouched.
+- Subtasks: L1/L4, L2, L3 responses by Claude Opus 5.5 xhigh (requested), L5 by Claude Sonnet 5.5 high (requested), disjoint ownership, shared [SPLITS.md](SPLITS.md) pre-created by the orchestrator. Orchestrator: report.md corrections (L1/L2/L3/L5 propagation, P3/P4), consolidated [response-01.md](response-01.md) with impact map and hashes.
+- No finding rejected. Material changes listed in response-01 §Impact map (T108, T113, T401, T201, T202/208/210, T205/209, T302(b)/N309, T304/316–318, 319, splits 116/117). Status upgrades only with written proof or recorded independent evidence (T113 Q40: audit's exact rerun; 209: new developer proof, pending audit).
+- Checkpoints: `8745e57` (L5), `11576cb` (L1; also swept in-progress L2/L3 theory edits, disclosed in its message), `026be3d` (L3), `c90aeb5` (report), this commit (L2 + response-01).
+- PR preparation still pending (merge main; shared records; batch-owner reservation; finals; rehearsal).
 
 Consolidated list (exact commands in the cited records): L1 SUMMARY §6; L2 above; L3 SUMMARY §5; L5 R01 §7 and R03 §7 and response-recon-01; repro/REPRO.md §5. None executed by this session; all require AC's servers (syvert0/1/2) or more time.
 

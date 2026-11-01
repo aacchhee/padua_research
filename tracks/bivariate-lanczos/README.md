@@ -12,7 +12,7 @@ Real distinct nodes, positive weights, total-degree graded order; exact-arithmet
 
 ## Results
 
-Theory files live in [theory/](theory/) with provisional IDs `PD-T?bivariate-lanczos-claude-nnn` / `PD-N?…` until PR preparation (64 files; direction digits 1/4 = L1/L4, 2 = L2, 3 = L3, 5 = L5). Ranked survivors, statuses and development briefs: [report.md](../../topics/bivariate-lanczos-20261031/report.md); per-direction summaries in `topics/bivariate-lanczos-20261031/directions/L*/SUMMARY.md`. See [NEGATIVE_RESULTS.md](NEGATIVE_RESULTS.md) (filled at PR preparation) and [AUDIT_LOG.md](AUDIT_LOG.md). All results are developer results; Codex audit pending.
+Theory files live in [theory/](theory/) with provisional IDs `PD-T?bivariate-lanczos-claude-nnn` / `PD-N?…` until PR preparation (77 files after the response to Codex audit-01; direction digits 1/4 = L1/L4, 2 = L2, 3 = L3, 5 = L5). Ranked survivors, statuses and development briefs: [report.md](../../topics/bivariate-lanczos-20261031/report.md); per-direction summaries in `topics/bivariate-lanczos-20261031/directions/L*/SUMMARY.md`. See [NEGATIVE_RESULTS.md](NEGATIVE_RESULTS.md) (filled at PR preparation) and [AUDIT_LOG.md](AUDIT_LOG.md). All results are developer results; Codex audit pending.
 
 ## Code
 
