@@ -25,3 +25,10 @@ Queries and limits are in `topics/mz-constants/literature-search.md`. Bibliograp
 ## History
 
 2026-10-31: selected primary-text reading recorded, provisional ID only.
+
+## 2026-11-01 published-version metadata (topic mz-prior-art-20261101; group-C access worker, Sonnet 5.5 high)
+
+- Published: Math. Comput. Simul. 252 (Feb. 2027) 733–745, DOI 10.1016/j.matcom.2026.10.001, PII S0378475426004416 (Crossref). The published title includes "weak", identical to arXiv; the CV omitted it.
+- Access: Elsevier TDM licence only, not open access (Crossref, OpenAlex). ScienceDirect is blocked for the tools and the automated browser. Body text is **FULLTEXT UNVERIFIED** (on AC's missing list).
+- arXiv: only v1 visible (v2 neither confirmed nor refuted, rate-limited). A 16-page "Preprint" PDF is linked from Vianello's homepage, https://www.math.unipd.it/~marcov/pdf/MZ.pdf (same title/abstract; version relative to v1 undetermined; not read here).
+- Forward citations: 0 in Crossref/OpenAlex/Semantic Scholar on 2026-11-01.

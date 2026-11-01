@@ -162,3 +162,18 @@ Exact titles, DOIs/URLs, node/weight/norm mismatches and reading limits are in [
 **Named unresolved threat added to M0:** weighted mean convergence at Jacobi/Chebyshev nodes and converse quadrature-sum inequalities may subsume PD-T017 and the endpoint order behind PD-T018. Nevai III/addendum, corrected Askey, Lubinsky's full-interpolation-space hypotheses, and Mastroianni–Russo/Xu require further reading. The screen found relevant primary statements but no verified matching CC-weighted `l²→L²(dx)` quantitative borderline theorem in the inspected portions. No exclusion, exhaustive novelty search, or mathematical status change follows. Keep the description at **self-contained proof; novelty unresolved**. No third-party PDF/fulltext extract was copied into the public tree.
 
 Allocation update: the root MZ owner reserved LIT-061–065 in the shared ledger after merging charter-bearing main. The worker's no-allocation statement above describes its development phase; final mapping and ledger-propagation receipt are part of response-01.
+
+## 2026-11-01 fulltext closure — topic mz-prior-art-20261101
+
+Claude, Opus 5.5 (orchestrator), rules `9739a0c`. The verdicts, translations and coverage are in [comparison.md](../mz-prior-art-20261101/comparison.md), [translation.md](../mz-prior-art-20261101/translation.md) and the dated record sections. Access route: AC's NTNU institutional access in AC's built-in browser for Springer/Cambridge; free AMS PDFs, arXiv, NTRS and MDPI through the fetch tool. No fulltext enters Git. Three Sonnet 5.5 high workers verified citations, legal access and forward citations; their literal query lists are summarized in the topic LOG.
+
+Updated dispositions (superseding the "Completed primary-access screen" gaps where stated):
+
+| Target / mechanism | Disposition after fulltext reading |
+|---|---|
+| M1 (PD-T014/PD-T022): upper ratio <2 | No matching result found in the documented search. Sloan–Smith 1978/80 read: no quadratic form. Mastroianni–Totik gives only an unspecified converse constant. |
+| M2 (PD-T017/PD-T018): endpoint log order | Qualitative failure of a uniform converse MZ inequality at this borderline is classical: Mastroianni–Russo 1999 Thm 2.7 (LIT-293) at the U_{N−1} zeros, König–Nielsen (LIT-294); the U-polynomial √log mechanism (PD-T019) is classical. Lubinsky 1999 excludes the borderline exponent. Nevai III, Askey, Smith and Erdős–Feldheim are uniform-input. **No two-sided order with CC weights found.** Pending: Xu I/II, Nevai 1990, LMN 1987, Mastroianni–Russo 2000. |
+| M3 (PD-T023/PD-T024): fixed ratio | **Mastroianni–Totik 2000 IMPLIES PART** (positive lower bound for n≤θ₀N, unspecified θ₀ and constant; translation.md T4). Explicit constants for every θ<1 not found. LMN 1987 pending. |
+| PD-T025 | Unchanged: generic mechanism known from ASV eq. (7). |
+| PD-N004 / An–Wu | Published Corollary 4.1 matches arXiv v3; no correction found (not proof of absence). |
+| ASV / An–Sommariva–Xue | Published ASV: DOI 10.1016/j.matcom.2026.10.001, not open access, body unread. An–Sommariva–Xue not public. |

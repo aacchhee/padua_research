@@ -1,0 +1,37 @@
+# Topic report — MZ prior-art and fulltext closure
+
+Claude Opus 5.5 (orchestrator), 2026-11-01, rules `9739a0c`. Codex audit (gpt-6-astra, high): **PENDING**. Literature topic: no PD status changes.
+
+## What is now verified
+
+- **Read in full or in the relevant parts**:
+  - fulltext via AC's NTNU access: Askey 1972 (journal), Sloan–Smith 1978 (and 1980 opening), Lubinsky 1999 (published), Mastroianni–Totik 2000, Lubinsky 1998 survey, Mastroianni–Milovanović ch. 2/4/5, Mastroianni–Russo 1999, An–Wu (published);
+  - open texts: Smith 1986, Nevai III, Widom, Widom–Wilf, König–Nielsen (arXiv), Don–Gottlieb (ICASE), Niu et al.
+- **Translations written as proofs** ([translation.md](translation.md)): λ_− = 1/‖L_N‖² for the CC-weighted nodal ℓ²→L²(dx) norm; CC weights ≍ √(1−x²)/N + 1/N² (factors ½ and 5); the Mastroianni–Totik consequence; why Lubinsky's theorem stops at the CC borderline.
+- **Per-claim verdicts**: [comparison.md](comparison.md).
+
+## What each fulltext changed
+
+| Source | Change |
+|---|---|
+| Mastroianni–Totik 2000 | Upgraded from "risk" to **IMPLIES PART** of PD-T023/PD-T024 (small-ratio lower bound, unspecified constants). The manuscript now says so in §1 and at the opening of §4. |
+| Mastroianni–Russo 1999 (new, LIT-293), König–Nielsen (new, LIT-294) | Qualitative borderline failure and the U-polynomial √log mechanism are **classical**. The manuscript now attributes them and restricts PD-T019's novelty to the exact CC evaluation. |
+| Lubinsky 1999 | The "right form" concern is resolved: the CC/Lebesgue case is exactly the excluded endpoint σ=1/2. |
+| Nevai III, Askey, Smith, Erdős–Feldheim | Uniform-input theorems: RELATED, DIFFERENT SETTING. Nevai's quasi-Lagrange theorem does include the CC nodes. |
+| Sloan–Smith, Widom, Widom–Wilf, Don–Gottlieb, the Mastroianni–Milovanović book | Threat removed: different norms or matrix problems. |
+| An–Wu published | PD-N004 reading confirmed against the published Corollary 4.1. |
+
+## Is the endpoint log-rate result classical?
+
+**In part.** Unboundedness at this borderline is classical (Mastroianni–Russo Thm 2.7, König–Nielsen, through ‖U_m‖_{L²(dx)} ≍ √(log m)). The **two-sided order** λ_−(N,N−1) ≍ (1+log N)^{−2} with CC weights, and the PD-T018 log² witness inside Π_{N−1}, were not found in the documented search. That search is not exhaustive. Xu I/II and Mastroianni–Russo 2000 are the most likely remaining places for a quantitative borderline statement.
+
+## What remains missing
+
+Xu I/II, Nevai 1990, Lubinsky–Máté–Nevai 1987, Mastroianni–Russo 2000 (Hadronic Press), the published ASV, Wu (Appl. Math. Lett. 2026), and lower-priority SIAM items. The list for AC is in the local working track `Downloads\padua\results\mz-prior-art-20261101.md`. Bot checks at ScienceDirect and SIAM block the automated browser.
+
+## What to tell ASV (no contact made)
+
+- **Theirs**: the question, the weak/strong MZ distinction, the finite CC/Padua experiments beyond half-exactness, and the generic upper-Gram hyperinterpolation estimate (their eq. (7)).
+- **New relative to them** (proved here, self-contained): the all-N CC upper constant 2−4/N+4/N² below 2 on Π_{N−1}; the endpoint order (1+log N)^{−2} for λ_min, both sides; explicit strong constants for every fixed ratio θ<1; the exact Padua marginal compression; and the N=512 certificate that η≤3/4 fails at the endpoint (relevant to An–Wu's assumed η).
+- **Classical context to acknowledge**: Mastroianni–Totik for small ratios; Mastroianni–Russo / König–Nielsen for qualitative borderline failure.
+- **Questions for them**: whether the An–Sommariva–Xue manuscript ("MZ stability under relaxed quadrature exactness") already contains any all-N CC bound; whether they know of a quantitative borderline converse-MZ result (Xu, Mastroianni–Russo 2000); and how their published version differs from arXiv v1.

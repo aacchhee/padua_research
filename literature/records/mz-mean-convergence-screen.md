@@ -94,3 +94,23 @@ Reader: Claude, Opus 5.5 (orchestrator). Access: publisher PDF via AC's NTNU ins
 ### Secondary pointer from the Lubinsky 1998 survey (LIT-052), p. 231
 
 Survey Theorem 3.3, attributed to Y. Xu [J. Approx. Theory 76 (1994), p. 82] and described as extending earlier results of Nevai: a converse quadrature-sum inequality for generalized Jacobi distributions u, v and generalized Jacobi weight w, at the **Gauss** points and weights for u, under four integrability conditions. Nodes are Gauss, not Lobatto. Whether a Lobatto/CC version with the borderline exponent appears in Xu II or Nevai III remains to be read (both on AC's missing list). No theorem is imported from the survey's paraphrase.
+
+### LIT-063 — Nevai III fulltext reached (2026-11-01)
+
+Reader: Claude, Opus 5.5. Access: free publisher/open PDF read through the WebFetch tool, which extracts the text layer and answers through a summarizing model. Coverage is therefore paraphrase-level; OCR formulas are partly garbled. Any formula-level use needs a page-image check. Rules `9739a0c`, 2026-11-01.
+
+- URL: https://www.ams.org/journals/tran/1984-282-02/S0002-9947-1984-0732113-4/S0002-9947-1984-0732113-4.pdf (AMS free back archive; the group-A access worker and this reader both obtained the text layer on 2026-11-01).
+- Coverage: sections 1–3, all numbered theorems (pp. 680–697), definitions (pp. 671–673) and properties (g)–(i) (p. 675), via extraction.
+- Statements (paraphrase):
+  - Theorem 1 (p. 680) is sufficiency for sup_n‖L_n(w,vf)u‖_p≤C‖f‖_∞, with w∈GSJ, a Jacobi weight v and conditions on u, v, w.
+  - Theorem 2 (p. 686) is the matching necessity.
+  - Theorems 3–5 (pp. 690–694) give convergence.
+  - Theorem 6 (p. 695) is an if-and-only-if for mean convergence of quasi-Lagrange interpolation L_n^{(r,s)}(w,f) with added endpoints ±1 (vanishing derivatives of orders up to r−1, s−1).
+  - Theorem 7 (p. 696) gives divergence via a lower bound ≳ log n·|p_n(w,x)| for uniform data.
+  - Property (g), eq. (24) (p. 675): forward quadrature-sum inequality Σλ_kn|R(x_kn)|^p v(x_kn)≤C∫|R|^p vw for deg R≤cn.
+  - The extraction found no theorem with discrete weighted ℓ^p nodal data as input.
+- Relation: with w=(1−x²)^{1/2}, r=s=1, Theorem 6 concerns exactly CC/Lobatto interpolation, but with uniform input ‖f‖_∞. **Verdict for PD-T017/018: RELATED, DIFFERENT SETTING.** The 1990 addendum remains unread (on AC's list). Group-A note: Crossref/zbMATH title "Hilbert transforms and Lagrange interpolation" has no "Addendum" subtitle; Nevai's list calls it a letter to the editor.
+
+### LIT-061 — preceding note identified (2026-11-01, group-A access worker, Sonnet 5.5 high)
+
+The "Note précédente" cited on p. 913 is by **E. Feldheim alone**: *Sur l'orthogonalité des fonctions fondamentales de l'interpolation de Lagrange*, C. R. Acad. Sci. Paris 203 (1936) 650–652 (Zbl 0015.06302; JFM 62.0302.03). Its scan was not reached (Gallica URLs failed in the tools). Feldheim's expanded treatment, Bull. Soc. Math. France 65 (1937) 1–40, DOI 10.24033/bsmf.1260, is free on Numdam; not read for theorem content here. Low priority: it concerns node convention for a uniform-input result.

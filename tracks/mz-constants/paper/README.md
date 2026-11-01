@@ -2,7 +2,7 @@
 
 Title: *Marcinkiewicz–Zygmund constants of Clenshaw–Curtis and Padua rules beyond half-exactness*.
 
-This is a complete 15-page revised development draft with proofs and bibliography, not a submission-ready paper. The independent Astra audit accepted the analytic M1/M2/M3 claims within its recorded scope. Claude audit-01 accepted the original mathematical statements. Focused Claude re-audit of the response, including its explicit endpoint corollary, is **PENDING**. Historical novelty remains unresolved because the named interpolation/MZ full texts have not been checked. The draft makes no first-proof claim. Authorship and venue remain AC's decisions.
+This is a complete revised development draft (15 pages at response-01; 16 pages after the 2026-11-01 prior-art revision) with proofs and bibliography, not a submission-ready paper. The independent Astra audit accepted the analytic M1/M2/M3 claims within its recorded scope. Claude audit-01 accepted the original mathematical statements. Focused Claude re-audit of the response, including its explicit endpoint corollary, is **PENDING**. Historical priority was screened in topic `mz-prior-art-20261101` (2026-11-01): §1's related-work paragraph now records fulltext-based verdicts (classical qualitative borderline failure and a small-ratio lower bound; no prior two-sided log order or explicit constants found in a documented, non-exhaustive search). Several fulltexts remain pending; see that topic's comparison.md. The draft makes no first-proof claim. Authorship and venue remain AC's decisions.
 
 - [LaTeX source](manuscript.tex)
 - [Bibliography](refs.bib)
@@ -77,3 +77,7 @@ The root executed the four commands above after integrating M1, M2 and L1–L3. 
 | local-output/mz-constants/paper-response-01/manuscript.pdf | 430932 | a34288ce1a0093c06299ba13ef06d023d11bfd80ace4bbe20535e0200a3a6c83 |
 
 These hashes identify the actual response build; timestamps may change PDF bytes on regeneration. Focused independent review remains separate from compilation.
+
+## 2026-11-01 prior-art revision (topic mz-prior-art-20261101)
+
+Claude Opus 5.5 revised the status line, the last abstract sentence, the §1 related-work paragraph, a remark after Proposition 5.1 (PD-T019/PD-N004), and the opening of §4. It also updated bibliography notes and added LIT-058 and LIT-293–295. No theorem, proof or status changed. Build: `pdflatex; bibtex; pdflatex; pdflatex` on manuscript.tex: no errors and no warnings in the log, 16 A4 pages. Page 3 was rendered with pdftoppm and inspected. Build products are not committed. Codex audit of this revision: PENDING.

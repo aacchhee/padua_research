@@ -76,11 +76,21 @@ These five entries name the directly relevant prior-art family. Exact Lobatto/CC
 
 | LIT ID | Claim type / keywords | Published statement and hypotheses | Source key | Page / theorem | Record | Reading coverage |
 |---|---|---|---|---|---|---|
-| LIT-061 | mean convergence / converse MZ | Erdős–Feldheim 1936; scope and exact mismatch in record | mz-mean-convergence-screen | individual locator in record | [source record](records/mz-mean-convergence-screen.md) | Original scan pp.913–914; predecessor node convention unresolved |
-| LIT-062 | mean convergence / converse MZ | Askey 1972 and its 1969 report; scope and exact mismatch in record | mz-mean-convergence-screen | individual locator in record | [source record](records/mz-mean-convergence-screen.md) | Selected1969report; corrected1972journal body pending |
-| LIT-063 | mean convergence / converse MZ | Nevai 1984, with 1990 addendum pending; scope and exact mismatch in record | mz-mean-convergence-screen | individual locator in record | [source record](records/mz-mean-convergence-screen.md) | Primary bibliography/metadata only; theorem and1990addendum pending |
-| LIT-064 | mean convergence / converse MZ | Lubinsky converse MZ paper 147; scope and exact mismatch in record | mz-mean-convergence-screen | individual locator in record | [source record](records/mz-mean-convergence-screen.md) | Preprint pp.1–7 selected general converse theorems; CC coefficient/log translation pending |
-| LIT-065 | mean convergence / converse MZ | Smith's explicit Lobatto comparison; scope and exact mismatch in record | mz-mean-convergence-screen | individual locator in record | [source record](records/mz-mean-convergence-screen.md) | Selected Lobatto theorem/corollary; continuous weight/input norm differ |
+| LIT-061 | mean convergence / converse MZ | Erdős–Feldheim 1936; scope and exact mismatch in record | mz-mean-convergence-screen | individual locator in record | [source record](records/mz-mean-convergence-screen.md) | Original scan pp.913–914; preceding note identified (Feldheim alone, C.R. 203, 650–652), unread |
+| LIT-062 | mean convergence / converse MZ | Askey 1972 and its 1969 report; scope and exact mismatch in record | mz-mean-convergence-screen | individual locator in record | [source record](records/mz-mean-convergence-screen.md) | Complete 1972 journal article (pp.71–78 read, 79–85 keyword screen), 2026-11-01; RELATED, DIFFERENT SETTING |
+| LIT-063 | mean convergence / converse MZ | Nevai 1984, with 1990 addendum pending; scope and exact mismatch in record | mz-mean-convergence-screen | individual locator in record | [source record](records/mz-mean-convergence-screen.md) | Fulltext via free AMS PDF (extraction-level, formulas partly garbled), all theorems; 1990 addendum still unread; RELATED, DIFFERENT SETTING |
+| LIT-064 | mean convergence / converse MZ | Lubinsky converse MZ paper 147; scope and exact mismatch in record | mz-mean-convergence-screen | individual locator in record | [source record](records/mz-mean-convergence-screen.md) | Published version pp.577–584 read, rest keyword-screened; CC case is the excluded borderline σ=1/2 (topics/mz-prior-art-20261101/translation.md T5) |
+| LIT-065 | mean convergence / converse MZ | Smith's explicit Lobatto comparison; scope and exact mismatch in record | mz-mean-convergence-screen | individual locator in record | [source record](records/mz-mean-convergence-screen.md) | Complete article incl. p.379; uniform input, Chebyshev measure; RELATED, DIFFERENT SETTING |
+
+## MZ prior-art closure (topic mz-prior-art-20261101, 2026-11-01)
+
+Fulltext coverage of LIT-045–065 was upgraded per record (see each record's dated 2026-11-01 section and [the comparison](../topics/mz-prior-art-20261101/comparison.md)). Three new statements are added. No novelty clearance follows; verdicts are scoped to the documented search.
+
+| LIT ID | Claim type / keywords | Published statement and hypotheses | Source key | Page / theorem | Record | Reading coverage |
+|---|---|---|---|---|---|---|
+| LIT-293 | inverse Marcinkiewicz / converse MZ | Mastroianni–Russo 1999: iff-conditions for converse MZ at zeros of p_m(w), GDT weights; fails at the CC/Lebesgue borderline | mz-prior-art-2026-additions | Constr. Approx. 15, Thm 2.7, p.263 | [record](records/mz-prior-art-2026-additions.md) | pp.257–264 read; rest keyword-screened |
+| LIT-294 | converse MZ, Jacobi nodes | König–Nielsen: same-weight Jacobi node/Christoffel/measure characterization, p in (μ,M); log growth of test norms at p=M | mz-prior-art-2026-additions | Thm 1 (arXiv math/9208201) | [record](records/mz-prior-art-2026-additions.md) | arXiv v1 via extraction; journal version not compared |
+| LIT-295 | CGL interpolation, Legendre norm | Niu–Liao–Ma–Wu 2021: Sobolev-input CGL interpolation bounds in unweighted L², no log factors | mz-prior-art-2026-additions | Lemma 1 eqs.(2)–(3) | [record](records/mz-prior-art-2026-additions.md) | article page via extraction |
 
 ## Lattice campaign — provisional registrations
 

@@ -20,3 +20,19 @@
 ## History
 
 2026-10-31: honest inaccessible-source records, exact theorem checks pending.
+
+## 2026-11-01 fulltext reading (topic mz-prior-art-20261101)
+
+Reader: Claude, Opus 5.5. Access: free publisher/open PDF read through the WebFetch tool, which extracts the text layer and answers through a summarizing model. Coverage is therefore paraphrase-level; OCR formulas are partly garbled. Any formula-level use needs a page-image check. Rules `9739a0c`, 2026-11-01.
+
+### LIT-053 — Widom, Hankel matrices
+
+- Coverage: all sections via extraction (§1 Introduction; §2 numerical range, Lemmas 2.1–2.4, Thm 2.1; §3 positive Hankel matrices, Thms 3.1–3.4; §4 finite Hankel matrices, Thms 4.1–4.5, pp. 1–35).
+- Statements: boundedness/compactness criteria for H=(c_{j+k}) with c_j=∫x^j dμ (Thms 3.1–3.2); eigenvalue-counting asymptotics (Thms 3.3–3.4); finite-section norm convergence, top-eigenvalue/eigenvector asymptotics (Thms 4.1–4.5). Smallest eigenvalues of finite sections, quadrature, Chebyshev nodes and CC weights are not addressed.
+- **Verdict: RELATED, DIFFERENT SETTING.**
+
+### LIT-054 — Widom–Wilf, small eigenvalues
+
+- Coverage: whole note via extraction (page markers absent in extraction). Erratum Proc. AMS 19 (1968) not read (group B).
+- Statement: for H_N=(c_{m+n}) with moments of α on [a,b] and Szegő-type condition ∫log w/√((x−a)(b−x))>−∞, the smallest eigenvalue satisfies λ_N∼const·(2N)^{1/2}σ^{−2(N+1)} (three cases; exponent 1/4 in a boundary case), σ depending only on [a,b].
+- Relation: a standard eigenproblem for monomial moments, exponentially small. It is not a congruence-invariant pencil (discrete vs continuous Gram). **Verdict: RELATED, DIFFERENT SETTING**, as the earlier record anticipated.
