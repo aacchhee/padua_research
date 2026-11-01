@@ -23,9 +23,9 @@ denotes the exact terminating rational number.
 | 30 | 29 | 465 | (0.236705, 0.236706) | (1.757929, 1.757930) |
 | 40 | 39 | 820 | (0.214817, 0.214818) | (1.778088, 1.778089) |
 
-The mathematical reduction and exact producer acceptance checks are
-complete. This computer-assisted conclusion is presently conditional
-on the independently executed replay identified below.
+The mathematical reduction, exact producer acceptance checks and actual
+different-agent replay are complete. Required Claude mathematical audit
+remains pending and is not replaced by the replay.
 
 ## Definitions
 
@@ -48,16 +48,15 @@ conditions are implemented as assertions.
 
 ## Status by part
 
-Overall status: **CONDITIONAL**, on the named obligation of an actual
-different-agent replay of the exact checker. This is a finite
-computer-assisted claim, not MEASURED floating evidence. The written
-reduction below is complete, and the producer's exact checks passed.
-The result may be marked PROVED only when the replay receipt is
-integrated and its inputs and successful exact checks are verified.
+Overall status: **PROVED** (computer-assisted development, independent
+exact execution complete; required Claude mathematical audit pending).
+The written finite reduction, exact arithmetic checker, essential
+evidence and actual different-agent replay are all present. This is a
+finite computer-assisted claim, not MEASURED floating evidence.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
-| All eight finite open eigenvalue intervals | CONDITIONAL | Exact producer checks passed; different-agent replay pending |
+| All eight finite open eigenvalue intervals | PROVED | Exact producer checks and separately executed replay passed |
 
 Candidate / claim disposition: retained verification of a known
 rational-pencil mechanism; no novelty claim. General positivity,
@@ -101,9 +100,43 @@ checking those matrices is performed by the committed code. Small
 essential evidence is retained within the repository limits; external
 archival export remains the orchestrator's task.
 
-The mathematical writer inspected the complete checker, D6 reduction
-and receipt metadata, but has **not** executed a separate rerun. That
-inspection does not satisfy the replay obligation.
+The mathematical writer inspected the complete checker, D6 reduction,
+producer metadata and the separately executed replay records. The
+writer did not claim the replay as their own execution; the replay was
+actually performed by Codex `/root/protocol`, requested `gpt-6.1-sol`
+medium technical effort, and committed by the orchestrator at `df44db4`.
+The dated receipt is
+`topics/padua-mz-2d-20261101/independent-checks.md`.
+
+Independent producer command, exit 0:
+
+```sh
+PYTHONPATH=/tmp/padua-flint OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python tracks/mz-constants/code/mz2d_exact.py --m 10 20 30 40 --output topics/padua-mz-2d-20261101/evidence/independent-exact-spectra.json
+PYTHONPATH=/tmp/padua-flint OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python tracks/mz-constants/code/mz2d_independent_check.py
+```
+
+The actual independent producer receipt has SHA-256
+`18c8623442664aa119d3581b701d200315d454071d6b8f6c89cbaf540fe34d9c`.
+The independently written additional checker has SHA-256
+`5e455d747dc5dca84c883ed900095ff4a2bb40767f4ebcb3261d7d583df7bdfc`,
+and its receipt `evidence/independent-additional-checks.json` has
+SHA-256 `2da16fa5c8f2f480ab7c12270b8c9b95ec49028f9df6b1cf4062af4f11897717`.
+The mathematical writer verified these source/receipt hashes after the
+worker reported completion. All producer result fields match after
+removing **only** nested runtime `seconds`; command/output paths remain
+explicit. Exact counts, denominators, signed diagonals, strict margins,
+intervals and the stored m=30 polynomial agree.
+
+The additional checker independently constructs exact signed nodal
+weights over cyclotomic fields at m=1,...,5: 245 moments and 371
+nodal-Gram/symbolic-integral pairs agree with the pencil. Every alias
+region is tested in 1,221 moment comparisons for m=2,...,12. All six
+recorded malformed-certificate/input controls reject. The stored m=30
+coefficient list is evaluated directly with separate Fraction sums.
+Those regressions supplement, rather than replace, the all-degree
+analytic reduction. Trusted additional arithmetic includes SymPy
+1.14.0 cyclotomic quotients and polynomial integration; other versions
+match the producer environment.
 
 ## Sources
 
@@ -194,12 +227,12 @@ For each upper-eigenvalue bracket `(c,d)`, with full dimension `N`,
 it requires negative counts `N-1` at `c` and `N` at `d`. This proves
 `c<lambda_max<d`. The producer receipt records exactly these accepted
 counts at every listed endpoint. The table follows from the exact
-checks, subject to the independent execution obligation above. ∎
+checks, which the independent worker separately executed successfully. ∎
 
 ## Scope
 
 These certificates establish only the four explicit finite cases.
-They show positivity and `eta<1` in those cases after replay, but give
+They show positivity and `eta<1` in those cases, but give
 no all-`m` bound, rate, limit, signed-weight positivity claim or sharp
 constant. Floating spectra at larger `m` remain separate MEASURED
 evidence. The exact m=30 witness is separated into its own PD-N record
@@ -207,9 +240,8 @@ because a threshold refutation is a different substantive conclusion.
 
 ## Open items
 
-- Actual independent replay of the committed exact checker, with
-  source/input hashes and its own receipt; update status only after
-  integration of that evidence.
+- Independent exact replay is complete and its evidence is integrated
+  above. Required mathematical audit is still pending.
 - The general signed Padua upper/lower and endpoint questions remain
   OPEN under PD-T028 and campaign D2/D3 records.
 - Required Claude mathematical audit remains separate from the
@@ -223,3 +255,9 @@ Only the final signed-dominance checker is a proof dependency. Codex
 mathematical developer `/root/d1_aliasing` wrote this reduction at the
 orchestrator's explicit request, while leaving independent rerun
 PENDING. No Git mutation or shared-registry edit.
+
+2026-11-01, after independent replay was actually executed, the writer
+verified the frozen checker and all cited receipt hashes. Updated
+CONDITIONAL to PROVED with explicit computational trust and finite
+scope. The separate required Claude audit remains PENDING; supplementary
+Codex execution and peer checks do not replace it.

@@ -140,18 +140,19 @@ Aliases: signed-Padua eta<=3/4 transfer; m30 integer Rayleigh witness.
   polynomial has 225 nonzero integer coefficients and exact
   `b-4a>0` in `evidence/exact-spectra.json`, with hash and rational
   values in PD-N?mz2d-codex-01. Different-agent replay, including the
-  stored coefficient list, is PENDING. The mathematical writer did
+  stored coefficient list, actually passed and is recorded in the
+  dated `independent-checks.md` append. The mathematical writer did
   not execute the producer computation.
 - Disposition and precise rejected scope, if any: **REJECTED:
-  refuted**, conditional on the named computer-proof replay, for
+  refuted**, with actual independent exact replay, for
   uniform `eta(m,m-1)<=3/4`, refuted at `m=30,n=29`.
 - Disposition reason: refuted within the exact stated finite witness
-  scope after replay; no rejection of positivity, `eta<1`, endpoint
+  scope; no rejection of positivity, `eta<1`, endpoint
   rates or conditional source theorems.
 - Canonical theory / negative-result ID: PD-N?mz2d-codex-01,
   `tracks/mz-constants/theory/mz2d-eta-counterexample.md`.
 - Topic / audit / history: 2026-11-01, exact producer
   `/root/exact_engine` medium technical effort; mathematical record
-  `/root/d1_aliasing` xhigh; independent replay and Claude audit
+  `/root/d1_aliasing` xhigh; independent replay complete, required Claude audit
   pending. Final IDs and shared registries are the orchestrator's
   responsibility.

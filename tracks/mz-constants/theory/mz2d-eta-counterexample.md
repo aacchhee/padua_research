@@ -52,9 +52,10 @@ Consequently
  \qquad \eta(30,29)>\frac34.                       \tag{2}
 \]
 
-The exact producer check passed. This computer-assisted statement is
-presently conditional on an independent exact replay, including direct
-evaluation of the **stored** coefficient list, as specified below.
+The exact producer check and actual different-agent replay passed,
+including direct evaluation of the **stored** coefficient list. This is
+a proved finite computer-assisted statement; required Claude
+mathematical audit remains pending.
 
 ## Definitions
 
@@ -76,23 +77,23 @@ positivity of weights or all-degree spectral hypothesis is assumed.
 
 ## Status by part
 
-Overall status: **CONDITIONAL**, pending a different-agent exact replay
-and direct stored-vector check. The exact producer checked (1);
-the analytic implication (1) -> (2) is fully written below. A finite
+Overall status: **PROVED** (computer-assisted development, actual
+independent exact execution complete; Claude mathematical audit pending).
+The exact producer and different-agent stored-vector checks establish
+(1); the analytic Rayleigh implication establishes (2). A finite
 floating observation alone is not the basis of this claim.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
-| Explicit m=30 polynomial has exact forms (1) and therefore eta>3/4 | CONDITIONAL | Producer exact check passed; independent stored-vector replay pending |
+| Explicit m=30 polynomial has exact forms (1) and therefore eta>3/4 | PROVED | Exact producer and independent stored-vector evaluations passed |
 
 Candidate / claim disposition: **REJECTED: refuted** for the proposed
-uniform `eta(m,m-1)<=3/4` transfer, conditional on completing the named
-computer-proof replay obligation. This disposition concerns that
+uniform `eta(m,m-1)<=3/4` transfer. This disposition concerns that
 specific threshold claim; `eta<1` and universal positivity are not
 refuted.
 Rejection reason: refuted at the single admissible parameter `m=30`,
-using an explicit polynomial of total degree at most 29. Until replay
-the exact refutation retains CONDITIONAL status.
+using an explicit polynomial of total degree at most 29, with actual
+different-agent exact verification.
 
 ## Negative-result scope (PD-N only)
 
@@ -140,14 +141,44 @@ integer coefficients and the two quadratic forms are evaluated with
 exact rational arithmetic by `exact_witness`. `b>0` and `4a<b` are
 exact acceptance assertions. Python optimization `-O` must not be
 used. This mathematical writer inspected the checker and producer
-receipt but has not independently executed that exact calculation.
+receipt; the separate exact execution below belongs to its named worker.
 
 An independent rerun may select a slightly different rounded vector
 if numerical eigensolvers differ; that still proves existence if its
 own exact test succeeds, but does not by itself verify the particular
-stored-polynomial equalities in (1). Therefore the named replay
-obligation also reads these stored triples and directly evaluates
-`z^TQz`, `z^THz`, matching all stored rational forms.
+stored-polynomial equalities in (1). The actual independent replay did read these stored triples and directly
+evaluated `z^TQz`, `z^THz`, matching all stored rational forms.
+
+Independent worker: Codex `/root/protocol`, requested `gpt-6.1-sol`
+medium technical effort; the producer code was frozen at the hash
+above, committed at `e59f57c`, and execution began from input head
+`0b526915eed8fba9a5d5509d6ec62e763a9a7983`. The orchestrator committed
+completed replay artifacts at `df44db4`. The dated receipt is
+`topics/padua-mz-2d-20261101/independent-checks.md`.
+
+Actually executed, exit 0:
+
+```sh
+PYTHONPATH=/tmp/padua-flint OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python tracks/mz-constants/code/mz2d_exact.py --m 10 20 30 40 --output topics/padua-mz-2d-20261101/evidence/independent-exact-spectra.json
+PYTHONPATH=/tmp/padua-flint OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python tracks/mz-constants/code/mz2d_independent_check.py
+```
+
+Independent source/receipt hashes verified by this mathematical writer:
+
+- `mz2d_independent_check.py`:
+  `5e455d747dc5dca84c883ed900095ff4a2bb40767f4ebcb3261d7d583df7bdfc`.
+- `evidence/independent-exact-spectra.json`:
+  `18c8623442664aa119d3581b701d200315d454071d6b8f6c89cbaf540fe34d9c`.
+- `evidence/independent-additional-checks.json`:
+  `2da16fa5c8f2f480ab7c12270b8c9b95ec49028f9df6b1cf4062af4f11897717`.
+
+The additional checker uses a separately written mode-reflection
+implementation and explicit Fraction double sums over the stored 225
+triples; exact `a,b,b-4a,a/b` all match (1)--(2). It checks the list has
+225 unique admissible integer terms and rejects a one-integer
+coefficient corruption with unchanged advertised forms. SymPy 1.14.0
+supports the separate small-degree nodal regressions; the stored
+witness verification itself uses Python integers/Fraction.
 
 ## Sources
 
@@ -180,22 +211,21 @@ matrix therefore gives `lambda_min<=a/b`. The exact inequality
 \]
 
 No positivity assumption on the quadrature form is used in these
-inequalities. The claimed finite refutation follows once the
-independent exact evaluation obligation is completed. ∎
+inequalities. The claimed finite refutation follows from this analytic implication
+and the completed producer and independent exact evaluations. ∎
 
 ## Scope
 
 This is an explicit finite negative result about the threshold
 `eta<=3/4`. It supplies neither a sign failure nor a counterexample
 to `eta<1`. The separate finite enclosure record places both extreme
-eigenvalues in `(0,2)` at m=30 after its replay, consistently with
+eigenvalues in `(0,2)` at m=30, consistently with
 the present threshold refutation.
 
 ## Open items
 
-- Different-agent exact replay, including direct evaluation of the
-  stored polynomial and equality with (1); record source, artifact
-  hashes, environment, command and actual result.
+- Different-agent exact replay and stored-vector evaluation are complete;
+  their commands, hashes and actual outcomes are integrated above.
 - Required Claude mathematical audit remains pending independently
   of computational replay.
 - All general endpoint/upper/lower claims retain their own OPEN
@@ -211,3 +241,9 @@ orchestrator's request `/root/d1_aliasing`, Codex requested
 analytic Rayleigh reduction. Resolved runtime model/effort metadata
 not exposed. Independent replay remains explicitly PENDING at
 creation; this record does not claim a run by its mathematical writer.
+
+2026-11-01, actual independent producer and stored-vector replays
+completed. Writer verified the code/evidence hashes and updated the
+finite negative statement from CONDITIONAL to PROVED. The scoped
+uniform `eta<=3/4` applicability claim is REJECTED: refuted; required
+Claude mathematical audit remains PENDING.
