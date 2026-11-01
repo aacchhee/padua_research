@@ -1,0 +1,45 @@
+=== A/B: degree bandwidths and block density at n = 8 ===
+case                                           b      orth     pi*dx     pi*dy  pi^2*Lap  plain dx |    nnzHx nnz pidx        N   dens
+pentagon b=5 Lebesgue                          5   3.8e-15    (4, 4)    (4, 4)    (6, 8)   (-1, 8) |      525     1660       45   0.99
+pentagon b=5 weight pi^1                       5   4.0e-15    (4, 4)    (4, 4)    (6, 8)   (-1, 8) |      525     1660       45   0.99
+pentagon b=5 weight pi^2                       5   4.2e-15    (4, 4)    (4, 4)    (6, 8)   (-1, 8) |      525     1660       45   0.99
+heptagon b=7 Lebesgue                          7   4.0e-15    (6, 6)    (6, 6)    (6, 8)   (-1, 8) |      525     1925       45   1.00
+quartic curved b=4 Lebesgue                    4   3.7e-15    (3, 3)    (3, 3)    (6, 6)   (-1, 8) |      280      700       45   0.47
+quartic curved b=4 weight pi^1                 4   3.9e-15    (3, 3)    (3, 3)    (6, 6)   (-1, 8) |      280      700       45   0.47
+L-shape (non-convex) b=6 Lebesgue              6   4.0e-15    (5, 5)    (5, 5)    (6, 8)   (-1, 8) |      525     1773       45   0.95
+square b=4 Lebesgue (Koornwinder control)      4   4.1e-15    (3, 3)    (3, 3)    (6, 6)   (-1, 7) |       72      149       45   0.24
+
+=== C: Dirichlet formulations with trial space pi*Pi_n on the pentagon (Lebesgue), b = 5 ===
+Green check (test pi*Pi_n equals -S): 5.62e-15
+n = 8: degree band of S (test pi*Pi_n) = (8, 8)  expected (2b-2, 2b-2) = (8, 8)
+n = 8: degree band of M (draft PG, test Pi_n) = (3, 8)  (lower band = n means NOT banded below)
+
+   n     N     kappa(S)  kappa(S) bp     kappa(M)  kappa(M) bp lambda_min(S)
+   4    15    2.960e+01    1.887e+01    1.261e+01    1.036e+01    9.305e-01   (0.0s)
+   6    28    1.216e+02    7.449e+01    2.807e+01    2.158e+01    4.564e-01   (0.0s)
+   8    45    4.266e+02    2.404e+02    4.810e+01    3.473e+01    2.381e-01   (0.0s)
+  10    66    1.219e+03    6.482e+02    7.492e+01    5.840e+01    1.340e-01   (0.0s)
+  12    91    3.000e+03    1.519e+03    1.088e+02    9.188e+01    8.040e-02   (0.0s)
+  14   120    6.642e+03    3.176e+03    1.489e+02    1.368e+02    5.091e-02   (0.1s)
+  16   153    1.356e+04    6.090e+03    1.960e+02    1.950e+02    3.370e-02   (0.1s)
+
+LS growth exponents in n (all n / n>=8): kappa(S) 4.46 / 4.99 ; kappa(S) block-precond 4.21 / 4.67 ; kappa(M) 1.97 / 2.03 ; kappa(M) block-precond 2.11 / 2.49 ; lambda_min(S) -2.42 / -2.82
+
+=== D: nnz(H_x)+nnz(H_y) (= flops per evaluation point of the graded recurrence) versus N and N^(3/2) ===
+n= 4 N=  15 nnz(Hx)+nnz(Hy)=   210  ratio to N=14.00  ratio to N^1.5=3.615
+n= 6 N=  28 nnz(Hx)+nnz(Hy)=   546  ratio to N=19.50  ratio to N^1.5=3.685
+n= 8 N=  45 nnz(Hx)+nnz(Hy)=  1122  ratio to N=24.93  ratio to N^1.5=3.717
+n=10 N=  66 nnz(Hx)+nnz(Hy)=  2002  ratio to N=30.33  ratio to N^1.5=3.734
+n=12 N=  91 nnz(Hx)+nnz(Hy)=  3250  ratio to N=35.71  ratio to N^1.5=3.744
+
+=== E: trial basis pi * (OPs of pi*dmu) on the pentagon: band of weighted differentiation and kappa ===
+   n     N       band Dx~        band S~    kappa(S~) kappa(S~) bp
+   4    15        (4, -1)         (3, 3)    1.056e+01    3.984e+00   |S~ - S_exact|/|S| = 2.5e-15
+   6    28        (4, -1)         (3, 3)    2.004e+01    6.550e+00   |S~ - S_exact|/|S| = 1.2e-14
+   8    45        (4, -1)         (3, 3)    3.287e+01    1.003e+01   |S~ - S_exact|/|S| = 7.4e-14
+  10    66        (4, -1)         (3, 3)    4.904e+01    1.440e+01   |S~ - S_exact|/|S| = 4.3e-13
+  12    91        (4, -1)         (3, 3)    6.877e+01    1.970e+01   |S~ - S_exact|/|S| = 2.6e-12
+  14   120        (4, -1)         (3, 3)    9.212e+01    2.588e+01   |S~ - S_exact|/|S| = 2.1e-11
+  16   153       (20, -1)         (3, 3)    1.191e+02    3.294e+01   |S~ - S_exact|/|S| = 2.3e-10
+LS growth exponents (all / n>=8): kappa(S~) 1.75 / 1.86 ; block-precond 1.54 / 1.72
+(expected band of Dx~: (b-1, -1) = (4, -1): d_x(pi ptilde_j) lives in dmu-degrees deg_j+1 .. deg_j+b-1)
