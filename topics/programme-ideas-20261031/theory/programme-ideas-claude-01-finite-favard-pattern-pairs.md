@@ -63,7 +63,7 @@ Exact arithmetic, real symmetric pairs, the generalized-Hessenberg pattern of a 
 
 ## Open items
 
-Related open target: genericity of the three-dimensional pattern commutant, `../OPEN_TARGETS.md` B5.
+Related target B5 is closed separately by PD-T102 (`../../padua-proof-attempts-20261101/theory/proof-attempts-codex-02-generic-commutant.md`): for every n≥2 the pattern commutant is span{I,H_x,H_y} whenever the x coordinates are distinct, hence generically. The universal assertion remains false by PD-N042. This comparison adds no dependency to the finite Favard proof.
 
 None for the statement. Not claimed: any stability statement for recovering the pair from the top-layer chart (the M2 record's "seed for (b)"), which remains a MEASURED observation in IDEA?programme-ideas-claude-08.
 
@@ -71,3 +71,5 @@ None for the statement. Not claimed: any stability statement for recovering the 
 
 - 2026-11-01, M2 adversarial agent (claude-fable-5-1, max), `checks/adversarial-M2.md` (ii)(1)–(2): proof steps (a)–(g) written; the commutant observation of (ii)(2) was placed in the same `report.md` row under a P label (`614709d`).
 - 2026-11-01, response-01 (claude-opus-5-5, orchestrator/developer, effort not exposed), this file: statement and hypotheses made explicit; the commutant clause split off and relabelled MEASURED on random instances (audit-01 A3); overlap with `PD-T?bivariate-lanczos-claude-304`(b) recorded by pinned reference. Original combined wording preserved at `614709d:topics/programme-ideas-20261031/report.md` line 41.
+
+- 2026-11-01, Codex PR #9 finalization (gpt-6.1-sol medium), Claude audit-01 ACCEPTED: PD-T102 closes the related generic commutant target B5. This adds no dependency to the finite Favard proof and changes no statement here.

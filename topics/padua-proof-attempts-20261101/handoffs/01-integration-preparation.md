@@ -1,6 +1,6 @@
 # Handoff 01 — padua-proof-attempts-20261101 — remaining integration preparation
 
-- Status: open
+- Status: superseded by 02: AC requested finalization, authorizing the deferred source/registry integration and PR readiness step
 - Previous handoff: none (bootstrap after the numbered-handoff rule merged)
 
 - Next agent / model / effort: Codex, gpt-6.1-sol medium

@@ -1,9 +1,11 @@
 # PD-T?proof-attempts-codex-02 — The generic pattern commutant is three-dimensional in every degree
 
+Final ID: **PD-T102** (2026-11-01; provisional heading retained as alias; reservation published at `020dcddd36fa1e3254cbf288701d5ab02d27c580`).
+
 ID kind: PD-T.
 Aliases: T-B5; cyclic-first-column argument; simple x-spectrum pattern commutant; generic affine span.
 Split from: the genericity question B5 in `topics/programme-ideas-20261031/OPEN_TARGETS.md` at `cadb35066160e466cb1704b9791ad6f374446422`; positive complement to `PD-N?programme-ideas-claude-04`, not a weakening of that counterexample.
-Split into: none. Source/crosswalk edits are proposed separately and are not applied on this branch.
+Split into: none. Source and crosswalk integration applied during authorized PR finalization; see `../finalization/id-map.json`.
 
 ## Statement
 
@@ -156,7 +158,7 @@ B5 is closed for every n≥2, with a sufficient pointwise condition stronger and
 
 ## Open items
 
-Claude audit-01 ACCEPTED; the completed independent exact-run record is in independent-checks.md. No all-n stretch remains for B5. No stability, coordinate-collision classification or different-pattern theorem is claimed. Source changes and final IDs remain deferred under the user's ownership restriction.
+Claude audit-01 ACCEPTED; the completed independent exact-run record is in independent-checks.md. No all-n stretch remains for B5. No stability, coordinate-collision classification or different-pattern theorem is claimed. The earlier source/ID deferral was superseded by AC’s finalization request; the source changes and final-ID mapping are now applied.
 
 ## History
 

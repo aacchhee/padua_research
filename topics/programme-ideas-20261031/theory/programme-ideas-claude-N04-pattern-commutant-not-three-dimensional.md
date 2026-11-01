@@ -35,11 +35,11 @@ Rejection reason: refuted (an explicit positive-pivot commuting pattern pair wit
 ## Negative-result scope (PD-N only)
 
 Attempted mechanism: identifying the pattern commutant with the affine substitutions y ↦ a + bx + cy as a structural theorem for all commuting positive-pivot pattern pairs (IDEA?programme-ideas-claude-08).
-Parameter range: the stated pattern convention; the counterexample is Padua n = 2. **Not covered:** generic node sets (where dimension 3 was measured; a genericity theorem is OPEN, `OPEN_TARGETS.md` B5); other orders or patterns.
+Parameter range: the stated pattern convention; the counterexample is Padua n = 2. The universal claim remains refuted. Generic node sets are covered separately by PD-T102 (`../../padua-proof-attempts-20261101/theory/proof-attempts-codex-02-generic-commutant.md`): for every n≥2, distinct x coordinates imply the three-dimensional commutant, and this condition holds outside a proper real-algebraic subset. The structure on repeated-x strata is not classified.
 
 ## Depends on
 
-PD-T?programme-ideas-claude-01 (definitions only).
+PD-T?programme-ideas-claude-01 (definitions only). Complementary comparison, not a dependency of this negative proof: PD-T102 (`../../padua-proof-attempts-20261101/theory/proof-attempts-codex-02-generic-commutant.md`) proves the all-degree generic equality under distinct x coordinates.
 
 ## Checks
 
@@ -59,7 +59,7 @@ A single explicit counterexample suffices for the refutation. The extra commutan
 
 ## Open items
 
-Genericity of dimension 3 (B5 in `OPEN_TARGETS.md`); description of the commutant for Padua sets.
+Genericity of dimension 3 is PROVED for every n≥2 by the split-off PD-T102. Description of the commutant on repeated-x strata, including Padua sets, remains OPEN. The exact Padua n=2 counterexample in this record is unchanged.
 
 ## History
 
@@ -67,3 +67,5 @@ Genericity of dimension 3 (B5 in `OPEN_TARGETS.md`); description of the commutan
 - 2026-11-01, Codex audit-01 A3 / O1: exact Padua n = 2 counterexample.
 - 2026-11-01, response-01 (claude-opus-5-5): relabelled MEASURED on random instances.
 - 2026-11-01, response-01 addendum (claude-opus-5-5), at AC's instruction "register negative results": registered as this PD-N with an independent developer script.
+
+- 2026-11-01, Codex PR #9 finalization (gpt-6.1-sol medium), Claude audit-01 ACCEPTED: PD-T102 closes B5 under its distinct-x hypothesis, as a positive generic complement only. The universal counterexample and its proof are unchanged.

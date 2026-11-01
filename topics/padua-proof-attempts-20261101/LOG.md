@@ -1,7 +1,7 @@
 # First proof attempts on programme-ideas open targets
 
 - Branch: `codex/padua-proof-attempts-20261101` · Base: `cadb35066160e466cb1704b9791ad6f374446422` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh), audit-01 ACCEPTED
-- Stage: PR · Next: `Codex (gpt-6.1-sol medium): Continue codex/padua-proof-attempts-20261101.`
+- Stage: PR · Assigned finalization complete; ready for AC review. Only AC merges.
 - Claims: A1 PROVED for every n≥1; B5 PROVED generically for every n≥2; A5 exact-local replacement certificates PROVED for both recorded degree-three cases. Durable files: `theory/proof-attempts-codex-01-padua-corner.md`, `-02-generic-commutant.md`, `-03-degenerate-maxima.md`. The global counts remain MEASURED, completeness OPEN. Local theory IDs only.
 - For the PR: draft against `claude/programme-ideas-20261031`; no final IDs, shared registry edits, base-file edits, main merge or PR merge.
 - Open for AC: no proof dispute. PR #6 is merged and fresh main is integrated. The remaining source/registry preparation is described in handoffs/01-integration-preparation.md; this sync retains the topic's provisional IDs and deferred shared edits.
@@ -125,3 +125,62 @@ Next: Codex (gpt-6.1-sol medium): Continue codex/padua-proof-attempts-20261101 �
 - `python -I topics/programme-ideas-20261031/pr-prep/allocate.py` was actually run without `--apply`; the installed-allocation read-only check passed, validating 192 allocated map entries and 16 merged-alias crosswalks. Output boundaries match the installed id-map.json. No allocator write was invoked.
 - Global PROOF_STATUS primary-ID scan: 143 records, no duplicate primary proof IDs. Checked 2,388 local link targets across the seven global files: no missing targets. The branch diff outside this topic directory is empty relative to fresh main.
 - Evidence: registry-integrity.json; source check output retained during execution in `/tmp/padua-main-sync-installed-allocation.json`. No registry, source record or allocation ledger was modified by these checks. This establishes preservation relative to fresh main, not a new mathematical or literature audit.
+
+## Finalization authorized by AC (2026-11-01)
+
+Rules read at `2c192c7` (full SHA recorded by the finalization receipt). AC's
+“Finalize it” supersedes the earlier deferred integration restriction. Handoff
+[02](handoffs/02-finalize.md) controls this step. Codex gpt-6.1-sol medium
+(allocation; runtime-resolved metadata unexposed) is the sole Git/registry writer.
+No new mathematical or novelty content is introduced, so a renewed novelty
+generation gate is inapplicable. The independent bounded inventory read every
+ledger and final-ID registry at fresh main and both open PRs; no collision was
+found. Reserve PD-T101–105 before assigning the three accepted results, keeping
+104–105 as permanent unused headroom; other namespaces need no range.
+
+## PR finalization completed (2026-11-01)
+
+Rules read at `2c192c7575a5688d84a5869072c5918d7405ef03`. Codex gpt-6.1-sol medium
+(allocation; runtime-resolved metadata unexposed) completed handoff 02. The
+published reservation `020dcddd36fa1e3254cbf288701d5ab02d27c580` and PR body
+preceded assignments PD-T101–103; PD-T104–105 remain permanent unused headroom.
+Fresh main remains `cf89b140530d5838bdb208a8c28f3e7aa676ace3`; PR12's refreshed
+head `12e9cf4539d0977773cad75fc74f93d1664cb429` has no competing reservation.
+All returned closed PRs were merged.
+
+Applied all twelve accepted source replacements, retaining the full original
+target statements and routes. Added the three PROVED registry rows and exact
+provisional/final/split mappings, source IDEA comparisons, CURRENT/PAPER_MAP
+links, and ledger assignments. Existing IDs, mappings, reservations, status
+claims and history remain intact. The 143 prior primary proof IDs survive;
+146 unique primary proof rows now exist. All unrelated registry rows and 1,626
+other main files remain byte-identical. All 2,431 registry links resolve.
+The read-only installed allocator passed; its printed PD-T101 boundary is the
+historical programme allocation receipt, not authority over the newer ledger.
+
+A1/B5/A5 exact checkers actually reran, with outputs byte-identical to their
+committed receipts. All three scientific Statement-through-Scope bodies and
+all 22 protected code/output/auditor files are unchanged from published 93da3be.
+The independent mechanical integration review passed after fixing dependency
+cells to separate source provenance from actual proof dependencies. Claude's
+accepted mathematical audit and F1–F6 responses remain unchanged. These edits
+change no claim, proof, scientific checker or evidence; under audit-01's explicit
+provision no mathematical re-audit is required. No new novelty claim or idea
+is introduced.
+
+The disposable-index rehearsal applies PR9 cleanly to main. A later PR12 squash
+simulation preserves all nine shared registry/state/ledger blobs but finds six
+add/add conflicts in PR12's inherited older PR9 topic copies. PR12 remains a
+later draft and must refresh after AC merges PR9; this does not block PR9. No
+merge sequence including PR12 is requested. No branch/main was changed by the
+rehearsal. Receipts: [integration checks](finalization/integration-checks.json),
+[independent review](finalization/integration-review.md), [rehearsal](finalization/integration-rehearsal.json),
+[applied replacements](finalization/applied-replacements.json).
+
+Preparation is complete; publish the output and handoff-status commits and mark
+PR9 ready for review. No agent work remains for this assignment. Only AC merges.
+Windows topic-result delivery remains pending because this cloud session has no
+Windows bridge; the topic-specific entry prepared earlier in this log remains
+available for delivery. It is not a readiness blocker. Counts remain MEASURED;
+asymptotics, argmax, completeness, corner/edge-node handlers, four other counting
+obligations and optional B1 remain unresolved at their recorded scopes.
