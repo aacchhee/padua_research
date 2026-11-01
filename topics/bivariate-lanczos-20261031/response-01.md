@@ -67,7 +67,7 @@ Unresolved (preserved): PD-T?…-210 (precise statement and proof); no a-priori 
 
 ## Hashes
 
-Scientific candidate for re-audit: the commit adding this file (recorded in LOG.md). Theory files new or changed since `5ccfac2` (sha256 at that commit; the remaining 12 audited theory files are byte-identical to the hashes in the frozen audit-handoff.md):
+Scientific candidate for re-audit: `075d4074017445a0fd4d7443ffac97cd7f8c106b` (the commit adding this file). Later commits change only LOG bookkeeping unless an impact check says otherwise. Theory files new or changed since `5ccfac2` (sha256 at that commit; the remaining 12 audited theory files are byte-identical to the hashes in the frozen audit-handoff.md):
 
 | sha256 | file | change |
 |---|---|---|

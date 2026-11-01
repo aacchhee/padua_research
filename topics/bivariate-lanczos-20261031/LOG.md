@@ -191,7 +191,7 @@ Subagent effort is set from the agent definition and is not independently expose
 - Rules read at `5f523313b7b388cb114103734028f0a850dfeaad` (identical to `d367228`); fast-forwarded to the audit head `5f52331`. Frozen audit records untouched.
 - Subtasks: L1/L4, L2, L3 responses by Claude Opus 5.5 xhigh (requested), L5 by Claude Sonnet 5.5 high (requested), disjoint ownership, shared [SPLITS.md](SPLITS.md) pre-created by the orchestrator. Orchestrator: report.md corrections (L1/L2/L3/L5 propagation, P3/P4), consolidated [response-01.md](response-01.md) with impact map and hashes.
 - No finding rejected. Material changes listed in response-01 §Impact map (T108, T113, T401, T201, T202/208/210, T205/209, T302(b)/N309, T304/316–318, 319, splits 116/117). Status upgrades only with written proof or recorded independent evidence (T113 Q40: audit's exact rerun; 209: new developer proof, pending audit).
-- Checkpoints: `8745e57` (L5), `11576cb` (L1; also swept in-progress L2/L3 theory edits, disclosed in its message), `026be3d` (L3), `c90aeb5` (report), this commit (L2 + response-01).
+- Checkpoints: `8745e57` (L5), `11576cb` (L1; also swept in-progress L2/L3 theory edits, disclosed in its message), `026be3d` (L3), `c90aeb5` (report), `075d4074017445a0fd4d7443ffac97cd7f8c106b` (L2 + response-01) = **re-audit candidate**.
 - PR preparation still pending (merge main; shared records; batch-owner reservation; finals; rehearsal).
 
 Consolidated list (exact commands in the cited records): L1 SUMMARY §6; L2 above; L3 SUMMARY §5; L5 R01 §7 and R03 §7 and response-recon-01; repro/REPRO.md §5. None executed by this session; all require AC's servers (syvert0/1/2) or more time.
