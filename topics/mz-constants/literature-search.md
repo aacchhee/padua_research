@@ -177,3 +177,10 @@ Updated dispositions (superseding the "Completed primary-access screen" gaps whe
 | PD-T025 | Unchanged: generic mechanism known from ASV eq. (7). |
 | PD-N004 / An–Wu | Published Corollary 4.1 matches arXiv v3; no correction found (not proof of absence). |
 | ASV / An–Sommariva–Xue | Published ASV: DOI 10.1016/j.matcom.2026.10.001, not open access, body unread. An–Sommariva–Xue not public. |
+
+Later on 2026-11-01, AC supplied Xu I/II, Nevai 1990, Lubinsky–Máté–Nevai 1987, Sloan–Smith 1982, Smith–Sloan 1980 and published ASV. None changes the dispositions above.
+- Lubinsky–Máté–Nevai Theorem 5 gives forward boundedness λ_+≤C at CC (unspecified C, not <2).
+- Xu II has the Mastroianni–Russo borderline (sufficient conditions, Gauss nodes).
+- Nevai 1990 justifies a step of Nevai III.
+- Published ASV calls the CC behaviour theoretically "not known".
+New LIT-296–298. Still unread: Mastroianni–Russo 2000 (Hadronic), Della Vecchia–Mastroianni–Vértesi 1995, Wu AML 2026.

@@ -32,3 +32,12 @@ Queries and limits are in `topics/mz-constants/literature-search.md`. Bibliograp
 - Access: Elsevier TDM licence only, not open access (Crossref, OpenAlex). ScienceDirect is blocked for the tools and the automated browser. Body text is **FULLTEXT UNVERIFIED** (on AC's missing list).
 - arXiv: only v1 visible (v2 neither confirmed nor refuted, rate-limited). A 16-page "Preprint" PDF is linked from Vianello's homepage, https://www.math.unipd.it/~marcov/pdf/MZ.pdf (same title/abstract; version relative to v1 undetermined; not read here).
 - Forward citations: 0 in Crossref/OpenAlex/Semantic Scholar on 2026-11-01.
+
+## 2026-11-01 published-version reading (topic mz-prior-art-20261101)
+
+Reader: Claude, Opus 5.5. PDF supplied by AC (NTNU access), text via pdftotext; read in the session only.
+
+- Published MCS 252 (2027) 733–745. Received 28 Feb 2026, revised 29 Sep 2026, accepted 2 Oct 2026, online 16 Oct 2026; special issue MATCOM_ATMA2026. Coverage: complete article, keyword-screened, with §§1–2 and §3.1, §3.6 read.
+- Differences in theoretical content: Proposition 2.1 (eigenvalue characterization of the weak MZ constants A=λ_min(G), B=λ_max(G)). Theorem 2.1 (pp. 736–737): for a k-point Gaussian rule and n≥k, η≥1, with worst-case polynomial ±ψ_n; Remark 2.5 covers the tensor-product extension. Whether these were already in arXiv v1 was not checked line by line; the earlier record does not list them.
+- CC (§3.1, p. 738): experiments m≤20, n≤30 show η<1 for ⌊m/2⌋<n≤m−1. The authors write that this behaviour is, to their knowledge, "not known" and "could deserve further study". §3.6 (p. 742) guesses the cause lies in special properties of Chebyshev polynomials, "beyond the scope of the present paper". Padua: η<1 up to n=m−1 observed.
+- Relation: still the numerical predecessor. No all-N CC or Padua theorem; the authors explicitly flag the CC behaviour as theoretically open as of October 2026. **Verdict: RELATED** (numerical predecessor; PD-T014/017/018/022/024 not anticipated). Reference [4] is Lubinsky's survey.

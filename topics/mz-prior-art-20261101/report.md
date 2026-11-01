@@ -20,18 +20,24 @@ Claude Opus 5.5 (orchestrator), 2026-11-01, rules `9739a0c`. Codex audit (gpt-6-
 | Nevai III, Askey, Smith, Erdős–Feldheim | Uniform-input theorems: RELATED, DIFFERENT SETTING. Nevai's quasi-Lagrange theorem does include the CC nodes. |
 | Sloan–Smith, Widom, Widom–Wilf, Don–Gottlieb, the Mastroianni–Milovanović book | Threat removed: different norms or matrix problems. |
 | An–Wu published | PD-N004 reading confirmed against the published Corollary 4.1. |
+| Lubinsky–Máté–Nevai 1987 (AC-supplied) | Forward inequality: at CC it gives λ_+≤C (unspecified) for all degrees ≤lN. Uniform boundedness of the upper constant is classical; our <2 threshold and explicit constants are not implied. Manuscript §1 now says so. |
+| Xu I/II (AC-supplied, OCR) | Sufficient conditions at Gauss nodes; the same borderline obstruction as Mastroianni–Russo; sharpness open (Xu's Remark 3.1). |
+| Nevai 1990 | Justifies one step of Nevai III; no change. |
+| Sloan–Smith 1982, Smith–Sloan 1980 | Uniform-input / weight-sum results: RELATED. |
+| Published ASV | Numerical. It adds an eigenvalue characterization and a Gaussian-rule η≥1 theorem, and states that the CC behaviour beyond half-exactness is, to the authors' knowledge, not known theoretically (p. 738). |
 
 ## Is the endpoint log-rate result classical?
 
-**In part.** Unboundedness at this borderline is classical (Mastroianni–Russo Thm 2.7, König–Nielsen, through ‖U_m‖_{L²(dx)} ≍ √(log m)). The **two-sided order** λ_−(N,N−1) ≍ (1+log N)^{−2} with CC weights, and the PD-T018 log² witness inside Π_{N−1}, were not found in the documented search. That search is not exhaustive. Xu I/II and Mastroianni–Russo 2000 are the most likely remaining places for a quantitative borderline statement.
+**In part.** Unboundedness at this borderline is classical (Mastroianni–Russo Thm 2.7, König–Nielsen, through ‖U_m‖_{L²(dx)} ≍ √(log m)). The **two-sided order** λ_−(N,N−1) ≍ (1+log N)^{−2} with CC weights, and the PD-T018 log² witness inside Π_{N−1}, were not found in the documented search. That search is not exhaustive. Xu I/II have now been read (no quantitative borderline). Mastroianni–Russo 2000 is the most likely remaining place.
 
 ## What remains missing
 
-Xu I/II, Nevai 1990, Lubinsky–Máté–Nevai 1987, Mastroianni–Russo 2000 (Hadronic Press), the published ASV, Wu (Appl. Math. Lett. 2026), and lower-priority SIAM items. The list for AC is in the local working track `Downloads\padua\results\mz-prior-art-20261101.md`. Bot checks at ScienceDirect and SIAM block the automated browser.
+Mastroianni–Russo 2000 (Hadronic Press, no online copy), Della Vecchia–Mastroianni–Vértesi 1995 (IDOMAT proceedings), Wu (Appl. Math. Lett. 182, 2026), the journal versions of König–Nielsen and Don–Gottlieb, and Feldheim C. R. 203 p. 650. AC supplied the other SIAM/ScienceDirect items the same morning; they are read and recorded. The list for AC is in the local working track `Downloads\padua\results\mz-prior-art-20261101.md`. Bot checks at ScienceDirect and SIAM block the automated browser.
 
 ## What to tell ASV (no contact made)
 
 - **Theirs**: the question, the weak/strong MZ distinction, the finite CC/Padua experiments beyond half-exactness, and the generic upper-Gram hyperinterpolation estimate (their eq. (7)).
+- **Their own published assessment**: the CC behaviour beyond half-exactness is "not known" theoretically (MCS 252, p. 738).
 - **New relative to them** (proved here, self-contained): the all-N CC upper constant 2−4/N+4/N² below 2 on Π_{N−1}; the endpoint order (1+log N)^{−2} for λ_min, both sides; explicit strong constants for every fixed ratio θ<1; the exact Padua marginal compression; and the N=512 certificate that η≤3/4 fails at the endpoint (relevant to An–Wu's assumed η).
 - **Classical context to acknowledge**: Mastroianni–Totik for small ratios; Mastroianni–Russo / König–Nielsen for qualitative borderline failure.
 - **Questions for them**: whether the An–Sommariva–Xue manuscript ("MZ stability under relaxed quadrature exactness") already contains any all-N CC bound; whether they know of a quantitative borderline converse-MZ result (Xu, Mastroianni–Russo 2000); and how their published version differs from arXiv v1.

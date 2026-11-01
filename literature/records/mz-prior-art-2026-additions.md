@@ -41,4 +41,13 @@
 
 ## History
 
-2026-11-01: created for topic mz-prior-art-20261101; LIT-293–295 allocated through the batch ledger.
+2026-11-01: created for topic mz-prior-art-20261101; LIT-293–295 allocated through the batch ledger; LIT-296 added after AC supplied Xu I/II (LIT-297–298 live in the Sloan–Smith record).
+
+### LIT-296 — Xu 1994 (Part II), converse MZ inequality at generalized Jacobi zeros; with Part I context
+
+Reader: Claude, Opus 5.5. Access: PDF supplied by AC in Downloads\\padua\\papers (2026-11-01, NTNU access), staged to the session; text via pdftotext, or tesseract OCR for image-only scans (Xu I/II). Read in the session only; nothing stored in Git. Rules `9739a0c`.
+
+- Citations: Y. Xu, *Mean convergence of generalized Jacobi series and interpolating polynomials, II*, J. Approx. Theory 76 (1994) 77–92, DOI 10.1006/jath.1994.1006; Part I, J. Approx. Theory 72 (1993) 237–251, DOI 10.1006/jath.1993.1019.
+- Coverage: Part II pp. 77–87 read via OCR (§§1–3 complete, start of §4), §4 theorem statements screened. Part I keyword-screened via OCR (Theorem 4.1, Remark 4.1, Lemma 3.6).
+- Statement (Part II, Theorem 3.2, p. 82): for P∈Π_{n−1}, 1<p<∞, generalized Jacobi distributions dα, dβ and u∈GJ with (3.2a)–(3.2c), ‖P‖_{dβ,p}≤c(Σ_k|P(x_kn(dα))|^p u_n(x_kn)λ_kn(dα))^{1/p} at the **Gauss** zeros of p_n(dα). The decisive condition (3.2c) is (α′√(1−x²))^{−p/2}β′∈L¹. Theorem 3.4 (pp. 85–86) reduces the conditions to (3.12) by choosing u. Remark 3.1 (p. 87): sharpness of the conditions is not clear. Part I Theorem 4.1: weighted partial-sum bounds (necessity of (4.4) from Máté–Nevai–Totik). Part I Lemma 3.6 contains a log T factor in an auxiliary Hardy-type estimate, not an interpolation-norm rate.
+- Relation: with α′=(1−x²)^{1/2} (interior CC nodes), β′≡1 and p=2, (3.2c) requires (1−x²)^{−1}∈L¹, which fails. These are sufficient conditions at Gauss nodes; the same borderline as LIT-293. **Verdict: RELATED, DIFFERENT SETTING** for PD-T017/018.

@@ -114,3 +114,10 @@ Reader: Claude, Opus 5.5. Access: free publisher/open PDF read through the WebFe
 ### LIT-061 — preceding note identified (2026-11-01, group-A access worker, Sonnet 5.5 high)
 
 The "Note précédente" cited on p. 913 is by **E. Feldheim alone**: *Sur l'orthogonalité des fonctions fondamentales de l'interpolation de Lagrange*, C. R. Acad. Sci. Paris 203 (1936) 650–652 (Zbl 0015.06302; JFM 62.0302.03). Its scan was not reached (Gallica URLs failed in the tools). Feldheim's expanded treatment, Bull. Soc. Math. France 65 (1937) 1–40, DOI 10.24033/bsmf.1260, is free on Numdam; not read for theorem content here. Low priority: it concerns node convention for a uniform-input result.
+
+### LIT-063 addendum — Nevai 1990 read (2026-11-01)
+
+Reader: Claude, Opus 5.5. Access: PDF supplied by AC in Downloads\\padua\\papers (2026-11-01, NTNU access), staged to the session; text via pdftotext, or tesseract OCR for image-only scans (Xu I/II). Read in the session only; nothing stored in Git. Rules `9739a0c`.
+
+- Citation: P. Nevai, *Hilbert transforms and Lagrange interpolation*, J. Approx. Theory 60 (1990) 360–363 ("Letter to the Editor"), DOI 10.1016/0021-9045(90)90065-X. Complete, 4 pp.
+- Content: Mastroianni noticed (Sept. 1989) that the proof of Theorem 1 of Nevai III (p. 682) uses the duality ∫H(F)G=−∫H(G)F without justification for F∈L log⁺L, G∈L^∞ of compact support. The letter proves that case (proof due to H. Widom) and corrects misprints on p. 682. No theorem of Nevai III changes. **Verdict: RELATED; Nevai III statements stand as read.**

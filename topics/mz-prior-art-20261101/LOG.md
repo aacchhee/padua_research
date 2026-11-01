@@ -41,6 +41,12 @@ Missing-fulltexts table sent by message and written to `Downloads\padua\results\
 - Ledger: bivariate-Lanczos branch `a2dd845` already holds an AC-authorized block LIT-066–292 (plus PD-T029–080, PD-N007–031, IDEA-077–176) in its ledger copy. This branch therefore reserves LIT-293–295, with the reconciliation recorded in ALLOCATIONS.md. The provisional numbers LIT-066–068 used earlier on this branch were renumbered before any push of those files.
 - No contact with ASV or other authors.
 
+### Step 4b — AC-supplied fulltexts (10:00–10:20)
+
+- Papers folder re-listed at the step boundary: AC added 0518041 (LMN 1987), 0717001 (Smith–Sloan 1980), 0719027 (Sloan–Smith 1982), 1-s2.0-002190459090065X (Nevai 1990), 1-s2.0-S0021904583710191 / -S0021904584710069 (Xu I / II, image-only scans), and 1-s2.0-S0378475426004416 (published ASV). Each was identified by its first page. They were staged to the session only and read with pdftotext; Xu I/II were OCR'd with tesseract at 300 dpi.
+- Records updated; LIT-296–298 reserved (ledger: next LIT-299). Comparison, report, manuscript (§1 list: LMN forward bound, Xu borderline, later Sloan–Smith, published-ASV assessment) and refs.bib updated. Build: 17 pp., no warnings.
+- Verdicts unchanged: no source gives the two-sided endpoint order, an all-N upper constant <2, or explicit fixed-ratio constants. LMN adds a classical *unspecified* uniform upper bound.
+
 ## Runs needed
 
 None (literature topic; no computation planned).

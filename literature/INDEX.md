@@ -90,6 +90,9 @@ Fulltext coverage of LIT-045–065 was upgraded per record (see each record's da
 |---|---|---|---|---|---|---|
 | LIT-293 | inverse Marcinkiewicz / converse MZ | Mastroianni–Russo 1999: iff-conditions for converse MZ at zeros of p_m(w), GDT weights; fails at the CC/Lebesgue borderline | mz-prior-art-2026-additions | Constr. Approx. 15, Thm 2.7, p.263 | [record](records/mz-prior-art-2026-additions.md) | pp.257–264 read; rest keyword-screened |
 | LIT-294 | converse MZ, Jacobi nodes | König–Nielsen: same-weight Jacobi node/Christoffel/measure characterization, p in (μ,M); log growth of test norms at p=M | mz-prior-art-2026-additions | Thm 1 (arXiv math/9208201) | [record](records/mz-prior-art-2026-additions.md) | arXiv v1 via extraction; journal version not compared |
+| LIT-296 | converse MZ, generalized Jacobi | Xu 1994 II: sufficient conditions at Gauss zeros; (3.2c) fails at the CC/Lebesgue borderline | mz-prior-art-2026-additions | JAT 76, Thm 3.2 p.82, Thm 3.4, Remark 3.1 | [record](records/mz-prior-art-2026-additions.md) | Part II pp.77–87 via OCR; Part I keyword-screened |
+| LIT-297 | product integration ↔ mean convergence | Sloan–Smith 1982: convergence for all f∈C, k∈weighted L^{q′} iff uniform-input mean convergence | mz-sloan-smith-1978-1980 | SINUM 19, Thm 5 p.432 | [record](records/mz-sloan-smith-1978-1980.md) | pp.427–434 read |
+| LIT-298 | product integration, Jacobi zeros | Smith–Sloan 1980: weight-sum and convergence results at Jacobi zeros | mz-sloan-smith-1978-1980 | SINUM 17, Thms 1–3 | [record](records/mz-sloan-smith-1978-1980.md) | statements read |
 | LIT-295 | CGL interpolation, Legendre norm | Niu–Liao–Ma–Wu 2021: Sobolev-input CGL interpolation bounds in unweighted L², no log factors | mz-prior-art-2026-additions | Lemma 1 eqs.(2)–(3) | [record](records/mz-prior-art-2026-additions.md) | article page via extraction |
 
 ## Lattice campaign — provisional registrations

@@ -20,7 +20,7 @@ Current integration source: main `07c5f5465d6de306aa81dbe8ca1f615295163864`, con
 |---|---|---|---|---|
 | PD-T | PD-T001–PD-T012 | PD-T013–PD-T028 | none | PD-T029 |
 | PD-N | PD-N001 | PD-N002–PD-N006 | none | PD-N007 |
-| LIT | LIT-001–LIT-041 | LIT-042–LIT-060 | LIT-061–LIT-065 | see below (bivariate-Lanczos LIT-066–LIT-292; mz-prior-art LIT-293–LIT-295; next LIT-296) |
+| LIT | LIT-001–LIT-041 | LIT-042–LIT-060 | LIT-061–LIT-065 | see below (bivariate-Lanczos LIT-066–LIT-292; mz-prior-art LIT-293–LIT-298; next LIT-299) |
 | IDEA | IDEA-001–IDEA-051 | IDEA-052–IDEA-076 | none | IDEA-077 |
 
 The five new LIT entries record the targeted audit-M2 screen: Erdős–Feldheim, Askey, Nevai III, Lubinsky's converse-MZ paper, and Smith's Lobatto result. Reading coverage and unresolved weight/node/norm translations stay explicit; these reservations confer no novelty clearance. The previously next free LIT-061 is consumed openly by this response, not silently skipped. No PD-T, PD-N or IDEA is added by the response.
@@ -54,9 +54,9 @@ AC explicitly requested provisional theory IDs; no new final global range is res
 
 AC's task instruction for `claude/mz-prior-art-20261101` authorizes LIT allocation through this ledger after reconciling open branches. The reconciliation was done on 2026-11-01 at about 10:00. Main was `9739a0c56b7a3976422ce60a8441bfbbfd6554df`. Open PR #6 is programme-ideas. Remote heads checked: claude/bivariate-lanczos-20261031 `a2dd845`, claude/programme-ideas-20261031 `c93c912`, codex/padua-proof-attempts-20261101 `a09d910`, claude/results-track-rule-20261101 `6eeec5b`.
 
-The bivariate-Lanczos branch already records an AC-authorized final block in its copy of this ledger: PD-T029–080, PD-N007–031, IDEA-077–176, LIT-066–292. This branch therefore reserves **LIT-293–LIT-295** (Mastroianni–Russo 1999, König–Nielsen, Niu–Liao–Ma–Wu), after that block. No PD-T, PD-N or IDEA is reserved here.
+The bivariate-Lanczos branch already records an AC-authorized final block in its copy of this ledger: PD-T029–080, PD-N007–031, IDEA-077–176, LIT-066–292. This branch therefore reserves **LIT-293–LIT-298**, after that block: Mastroianni–Russo 1999, König–Nielsen, Niu–Liao–Ma–Wu, Xu 1994 II, Sloan–Smith 1982, Smith–Sloan 1980. LIT-296–298 were added later the same day, after AC supplied fulltexts. No PD-T, PD-N or IDEA is reserved here.
 
-Next unreserved after both blocks: PD-T081, PD-N032, LIT-296, IDEA-177. Whichever of the two PRs merges second must merge this ledger section with the Lanczos block rather than overwrite it. The named allocation owner (root Codex MZ orchestrator) should confirm during the Codex audit.
+Next unreserved after both blocks: PD-T081, PD-N032, LIT-299, IDEA-177. Whichever of the two PRs merges second must merge this ledger section with the Lanczos block rather than overwrite it. The named allocation owner (root Codex MZ orchestrator) should confirm during the Codex audit.
 
 ## Readiness and history
 
