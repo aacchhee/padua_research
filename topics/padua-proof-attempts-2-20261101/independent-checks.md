@@ -18,3 +18,10 @@ Not yet submitted for independent execution. Every consequential exact/interval 
 - Separate certificate checker implemented by `/root/a5_checker` (gpt-6.1-sol xhigh), without importing producer/search/root-isolation code. Its full final verification accepted15=7+6+2 and the separate global fields;14 negative controls rejected. Own command/hash/predicate proof receipt: independent-checks-a5-checker.md.
 - Different executor `/root/input_manifest` (gpt-6.1-sol medium) actually regenerated the producer certificate, then executed the frozen checker on both independent and developer artifacts plus14 negative controls. Producer artifacts are byte-identical; exact commands,6before/after source hashes, own artifact identities and limitations: independent-execution-a5.md. Both final checker receipts verify full closed-square scope and global value/equality set.
 - Root inspected final positive flags, scope, values and evidence sizes. Required Claude Part2 audit remains PENDING. No new count at n4…8 or all-n argmax follows from these checks.
+
+## A5 n=4 complete
+
+- `/root/a2_independent_route` (gpt-6.1-sol xhigh) inspected full reductions08/09, count reduction10, global argument11 and schema; supporting/conditional mathematical scope and hashes are in independent-checks-a5-n4-reduction.md. No computation is claimed by that reader.
+- `/root/a5_n4_checker` (gpt-6.1-sol xhigh) implemented a separate verifier without producer imports/search/isolation, passed the full final count/global certificate and meaningful counterfeit/coverage controls. Predicate proofs and actual commands are in independent-checks-a5-n4-checker.md.
+- `/root/input_manifest` (gpt-6.1-sol medium) actually regenerated count and global certificates in a fresh process, checked both matching pairs with the frozen final verifier, and replayed11controls. Every required flag passed; all source pins remained unchanged. Own outputs and exact scope/versions/backend/timing differences: independent-execution-a5-n4.md.
+- N4 statuses are supported by complete evidence; n5…8 remain OPEN until their own checks finish. Required Claude Part2 audit remains PENDING.

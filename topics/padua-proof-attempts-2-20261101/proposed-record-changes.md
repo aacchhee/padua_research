@@ -60,7 +60,7 @@ After audit and at the authorized integration step, update the programme IDEA-17
 
 Further target proposals will be appended only when their actual results are known. No A5 count or published-table correction is proposed yet.
 
-## A5 n3 status
+## A5 n3 and n4 status
 
 Target: `topics/programme-ideas-20261031/OPEN_TARGETS.md`
 
@@ -77,12 +77,12 @@ New:
 ```text
 Known: MEASURED candidate counts; all 220 listed points independently validated as numerical strict local maxima; completeness not certified. Obligations (audit-01 A1): (1) a proved finite reduction (λ_n is piecewise polynomial on the arrangement of the zero curves of the L_B; every local maximum lies in a cell interior, on a crease, or at a crease crossing, and the search must cover each type); (2) exact identities at the degenerate points (A5-partial above); (3) rigorous root enclosures replacing the per-pattern Newton step, with the injectivity bound applying to the region actually discarded (lines 233–234); (4) a complete box-discard argument for every sign pattern consistent with a box, without the early return at line 249; (5) exact treatment of critical points near crease crossings instead of the 1e-10 coincidence rule (lines 241, 253–257); then rigorous arithmetic and an independent checker. Done when: all five, with the certificate and checker committed (or in cold storage with a manifest). A disagreement with arXiv 2605.23299 at n = 6, 7, 8 would then be a certified correction.
 
-Status update proposed after the Part2 Claude audit: the n=3 case is PROVED by `PD-T?proof-attempts-2-codex-06` (15 strict maxima:7interior,6edge,2corner), with finite reduction -05, a single exact certificate, a separate certificate checker and actual independent producer/checker executions. All five obligations are discharged for this new n3 procedure; its physical boundary coverage replaces the old(D)/(E) disc decisions, and `PD-T?proof-attempts-codex-03 (audit pending)` is explicitly reused with its accepted-audit/completed-response qualification. The n=4,…,8 exact-count cases remain OPEN until separately certified. The whole A5 mathematical target is PARTIAL by these degree cases; the source execution table remains MEASURED history. The n3 primary Table3 row agrees, so no published correction is proposed from this case.
+Status update proposed after the Part2 Claude audit: n=3 and n=4 are PROVED by `PD-T?proof-attempts-2-codex-06` and `-10`: respectively15=7interior+6edge+2corner and27=13interior+12edge+2corner. Separate exact certificates, independent verifiers and actual different-agent producer/global/checker executions discharge all five obligations for these new procedures. Their direct physical boundary coverage replaces the old(D)/(E) disc decisions; Part1 theorem03 is explicitly reused at n3, with the requested literal audit-pending label qualified by accepted audit/completed dispositions. N=5,…,8 remain OPEN until separately certified; the combined A5 mathematical target is PARTIAL by degree cases. Preserve the original MEASURED search history. Primary Table3 agrees at n3 and n4; no n6/7/8 published correction is certified from these cases.
 ```
 
 Validation: original block occurs exactly once at the pinned programme head; original statement, route and history retained.
 
-## A5 n3 split record
+## A5 n3 and n4 split records
 
 Target: `topics/programme-ideas-20261031/theory/programme-ideas-claude-06-padua-lebesgue-maxima-counts.md`
 
@@ -99,12 +99,12 @@ New:
 ```text
 **Runs needed (certification):** a proved finite reduction of the counting problem; valid identities (not tolerance tests) at the degenerate points, including the n = 3 edge case where a cardinal function was observed to vanish along the edge x = +1 (UNVERIFIED as an identity); rigorous root enclosures replacing the per-pattern Newton step; complete box-discard arguments; rigorous arithmetic; committed essential evidence; an independent rerun by a second checker.
 
-Dated split update proposed after the Part2 Claude audit: the preceding obligations remain needed for n=4,…,8. For n=3, their complete exact replacement is PROVED separately in `PD-T?proof-attempts-2-codex-06`, supported by -05 and its certificate/checker/independent-execution records. Preserve this record's original measured search history and Table3 comparison; do not relabel the frozen floating search as a certified algorithm. Exact n3 count:15total=7interior+6edge+2corner. The all-degree n=3,…,8 target is PARTIAL by the proved n3 case and OPEN remaining degree cases. No n6/7/8 correction is certified.
+Dated split update proposed after the Part2 Claude audit: the preceding certification obligations remain needed for n=5,…,8. Complete exact replacements for n3 and n4 are PROVED separately in `PD-T?proof-attempts-2-codex-06` (15total=7interior+6edge+2corner) and `-10` (27total=13interior+12edge+2corner), with supporting reductions, committed certificates, separate verifiers and actual independent executions. Preserve this record's original measured search history; do not relabel the frozen floating search as certified. The whole A5 mathematical target is PARTIAL by proved degree cases3,4 and OPEN cases5,…,8. No n6/7/8 correction is certified.
 ```
 
 Validation: original block occurs exactly once at the pinned programme head; original statement, route and history retained.
 
-## A4 n3 finite case
+## A4 n3 and n4 finite cases
 
 Target: `topics/programme-ideas-20261031/theory/programme-ideas-claude-05-padua-corner-argmax.md`
 
@@ -121,11 +121,11 @@ New:
 ```text
 Proof for all n; rigorous verification for small n (e.g. by a certified sup bound away from the corners).
 
-Dated finite-case update proposed after the Part2 Claude audit: n=3 is PROVED separately by `PD-T?proof-attempts-2-codex-07`: max λ_3=17/6+(2/3)sqrt2, equality exactly at(−1,±1). The proof includes the exact strict-maxima certificate plus bounds/classification of non-strict global maxima, and actual independent executions. The all-n conjecture remains OPEN, as do its other uncertified finite degrees and asymptotic neighbourhood/global obligations. The original no-continuum-verification statement above is historical at the pinned source head, not a claim about this new split result.
+Dated finite-case update proposed after the Part2 Claude audit: n3 is PROVED in `PD-T?proof-attempts-2-codex-07`, max λ_3=17/6+(2/3)sqrt2 attained exactly at(−1,±1). N4 is PROVED in `-11`, max λ_4=(13+sqrt2+2sqrt5+sqrt10)/5 attained exactly at(±1,−1). Both proofs include the strict-count certificate, explicit exclusion/value bounds for non-strict global maxima, and actual independent executions. The all-n conjecture and every uncertified finite/asymptotic case remain OPEN. The original lack-of-continuum-verification statement is historical at the pinned source head.
 ```
 
 Validation: original block occurs exactly once at the pinned programme head; original statement, route and history retained.
 
-## Additional registry preparation checklist for certified n3
+## Additional registry preparation checklist for certified n3 and n4
 
-Propose local result rows05–07 and mappings programme06→result06 (n3 count), programme05→result07 (n3 global case). Preserve all original measured-search rows, programme06's uncertified n4…8 cases and programme05's all-n OPEN conjecture. Apply only in the authorized integration pass after the Part2 Claude audit. No shared registry or final ID is edited in this branch.
+Propose local result rows05–11 and mappings programme06→results06/10 (n3/n4 counts), programme05→results07/11 (n3/n4 global cases). Preserve all original measured-search rows, programme06's uncertified n5…8 cases and programme05's all-n OPEN conjecture. Apply only in the authorized integration pass after the Part2 Claude audit. No shared registry or final ID is edited in this branch.

@@ -90,3 +90,8 @@ The complete separate checker exited0 in217.540s, verifying15 total =7 interior 
 Results05,06,07 are now PROVED within their stated degree-three scopes; required Part2Claude audit remains PENDING. Result06 certifies15/7/6/2. Result07 proves exact global maximum17/6+(2/3)sqrt2, attained only at(−1,±1), after explicitly excluding non-strict global plateaus. Primary Table3 comparison agrees at the only certified degree n=3; no correction is made for n=6,7,8.
 
 The n=3 computation is at its done criterion; no further n=3 search is needed. A5's same timebox continues for n=4 in the separately owned T-A5-n4.md and code/a5_n4* paths. Cases n=4,…,8 remain OPEN until their own complete evidence and independent checks exist.
+
+
+## Orchestrator case update — n4 independently certified
+
+N3 and n4 are now PROVED under results06/10, with separate global results07/11. A5 remains PARTIAL by degree cases:3,4PROVED;5,…,8OPEN. N5 extension is active in T-A5-n5.md within the original15:19UTC ceiling. No other ordered target has started. Exact n4 count27=13interior+12edge+2corner; developer and actual independent producer/global/checker executions passed, with raw artifact identities and timing/backend differences recorded in independent-execution-a5-n4.md.

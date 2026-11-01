@@ -2,7 +2,7 @@
 
 - Branch: `codex/padua-proof-attempts-2-20261101` · Base: `a09d910ae7d5526b1e216066421a0bee7fc20da4` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh), PENDING.
 - Stage: WORK · Next: `Codex (gpt-6.1-sol xhigh): Continue codex/padua-proof-attempts-2-20261101.`
-- Claims: A2(i)–(iii) PROVED in theory01–03, support04. A5 n=3 count PROVED in06, with global argmax07 and finite reduction05; n=4 active. A4(a)/B3/B1 not started.
+- Claims: A2(i)–(iii) PROVED in theory01–03, support04. A5 n=3,4 counts PROVED in06/10, global argmax07/11, reductions05/08/09; n=5 active. A4(a)/B3/B1 not started.
 - PR: draft against `codex/padua-proof-attempts-20261101`; additions under this topic only. Local IDs only; proposed upstream edits remain literal proposals.
 - Open for AC: no development approval needed; Claude audit is a later handoff.
 
@@ -118,3 +118,13 @@
 - Separate `/root/input_manifest` generated its own n4 artifact64371bytes, SHA774910755f7213c5e7bb8392c6d0d93e120145e5c896772ec9814516ac6b6032. Decoded mathematical payload equals the developer's after removing only interior/boundary timing fields. Its own global producer and11controls passed; two full final checker processes are still executing. Its backend is exact pure Python, while the developer exposed the installed FLINT path; this runtime difference is recorded, never a reason to infer success before completion.
 - N5 extension: `/root/a5_develop` owns only new attempts/T-A5-n5.md, theory15–19, code/outputs a5_n5_*, with no n3/n4 mutation. `/root/a5_checker` owns only new checker_n5 prefixes and its own check receipt. New node-cone implication15 and pre-run criteria were written before exact n5 gap runs; source-specific registry gate repeated. It remains within A5's original15:19UTC ceiling. No n5 count is claimed.
 - Draft PR12 body now reports the completed A2/n3 results and current verification limits. New scoped proposals remain unapplied. No A4(a), B3 or B1 development has started before A5's stop.
+
+### A5 n=4 complete — certified count and separate A4(d) corollary
+
+- Result10 is PROVED:27strict relative maxima=13interior+12open-edge+2non-node-corner. All five obligations have an exact replacement; no zero-eigenvalue quartic candidate is discarded merely for singularity. Supporting reductions08/09 and their independent mathematical receipts remain separate.
+- Result11 is PROVED: global value(13+sqrt2+2sqrt5+sqrt10)/5, equality exactly at(±1,−1). Every used flat leaf and all accepted noncorner roots are bounded below the exact corner value using cut4; every other actual disposition excludes ordinary as well as strict maxima. The verifier explicitly restricts its global proof to these supported witness types, closing the non-strict-plateau gap.
+- Different executor actually regenerated n4 count/global artifacts, checked both matching certificate/global pairs with the final frozen checker, and replayed11controls. Full final checker flags accepted/count_certified/boundary_complete/global_argmax_verified/global_no_nonstrict_plateau_above_cut all true. Own and developer checker times469.407148s/466.305698s reflect exact pure-Python backend; source hashes were unchanged before/after. Complete commands/artifact identities/backend/normalization details: independent-execution-a5-n4.md.
+- Coverage:2732complete spatial leaves,490672compatible-mask dispositions,86edge patterns,842edge norm-root dispositions,714flat leaf bounds,25noncorner-root value bounds and8active corner patterns. No unresolved or pending case. Developer and independent compressed certificates are64360/64371bytes; decoded mathematical content is identical after removing only the recorded interior/boundary timing fields. The global payloads differ only by raw-certificate SHA binding. No artifact is split.
+- The executor's raw producer progress/final stdout is JSONL, so its new topic output was renamed .json→.jsonl preserving bytes; exact initial command and rename are documented. The Git rename changes no scientific evidence.
+- Primary arXiv2605.23299v1 §3.3 Table3 p9 also agrees at n4(13interior/27total); own reading receipt is outputs/a5_n4_literature-comparison.md. No published correction or author contact.
+- A5 remains PARTIAL by cases3,4PROVED and5,…,8OPEN, with n5 active. Part2 Claude audit remains PENDING for all new results. A4(a), B3 and B1 remain ordered future work.
