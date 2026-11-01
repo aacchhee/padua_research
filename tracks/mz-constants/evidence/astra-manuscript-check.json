@@ -1,0 +1,117 @@
+{
+  "auditor": "gpt-6-astra xhigh",
+  "date": "2026-10-31",
+  "command": "python tracks/mz-constants/evidence/astra-final-check.py",
+  "inputs": [
+    {
+      "path": "tracks/mz-constants/paper/manuscript.tex",
+      "sha256": "072ae4e52c2cea78f2ec13f6e48a3d9529234af6c99d7b747a40c44c31f08c7c",
+      "bytes": 39310
+    },
+    {
+      "path": "tracks/mz-constants/paper/refs.bib",
+      "sha256": "f2f4eb04dec45003a107deac7c91b2f0d4737e2707289d359fd3d0194aeb9bf8",
+      "bytes": 4433
+    },
+    {
+      "path": "tracks/mz-constants/paper/README.md",
+      "sha256": "f433fc6f10b3e0da3bdfec1da80e6e5a177b0967cf6802ec7e1b8217de2512d7",
+      "bytes": 6491
+    },
+    {
+      "path": "topics/mz-constants/directions/M7/manuscript-record.md",
+      "sha256": "68b15a5ed49e5c06bfdb3b5d6367a9ff5ac458de1cbe55736010aa0cf61d048b",
+      "bytes": 9205
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-reproduction.json",
+      "sha256": "1511bfeb982f3e12b904acf151d9a586e6a65ee776dc464a12789a955ead4976",
+      "bytes": 29187
+    },
+    {
+      "path": "topics/mz-constants/final-id-map.json",
+      "sha256": "0175b632f6d82f8053ff91f25893a92b688c005d1b00ef25f3e8e031c2f9d39e",
+      "bytes": 15352
+    }
+  ],
+  "scope": "Full TeX and bibliography read; analytic translation and source limits reviewed separately in independent-astra-01.md. This check uses the auditor's actual earlier spectral replay, not the developer table check.",
+  "table_rows": [
+    {
+      "rule": "CC",
+      "N": 40,
+      "max_rounding_error": 2.7792856904795826e-10
+    },
+    {
+      "rule": "CC",
+      "N": 80,
+      "max_rounding_error": 2.707523094613862e-10
+    },
+    {
+      "rule": "CC",
+      "N": 160,
+      "max_rounding_error": 4.3405448679756375e-10
+    },
+    {
+      "rule": "CC",
+      "N": 320,
+      "max_rounding_error": 3.5787742214132834e-10
+    },
+    {
+      "rule": "CC",
+      "N": 640,
+      "max_rounding_error": 4.2144998602111627e-10
+    },
+    {
+      "rule": "CC",
+      "N": 1280,
+      "max_rounding_error": 6.584932599196236e-11
+    },
+    {
+      "rule": "Padua",
+      "N": 10,
+      "max_rounding_error": 3.701734474503837e-10,
+      "degree_and_negative_weight_count_match": true
+    },
+    {
+      "rule": "Padua",
+      "N": 20,
+      "max_rounding_error": 3.3023161982725924e-10,
+      "degree_and_negative_weight_count_match": true
+    },
+    {
+      "rule": "Padua",
+      "N": 30,
+      "max_rounding_error": 3.700512674065237e-10,
+      "degree_and_negative_weight_count_match": true
+    },
+    {
+      "rule": "Padua",
+      "N": 40,
+      "max_rounding_error": 4.673308962033218e-10,
+      "degree_and_negative_weight_count_match": true
+    }
+  ],
+  "float_entries_compared": 30,
+  "maximum_rounding_error": 4.673308962033218e-10,
+  "citations": [
+    "LIT-045",
+    "LIT-046",
+    "LIT-047",
+    "LIT-048",
+    "LIT-049",
+    "LIT-050",
+    "LIT-051",
+    "LIT-052",
+    "LIT-053",
+    "LIT-054",
+    "LIT-055",
+    "LIT-056"
+  ],
+  "all_citation_keys_match_bibliography": true,
+  "all_final_ids_allocated": true,
+  "provisional_ids_present": false,
+  "outcome": "PASS",
+  "own_TeX_compilation": false,
+  "own_PDF_visual_review": false,
+  "limits": "No new spectral execution in this check; no novelty clearance, Claude completion, submission or publication approval."
+}

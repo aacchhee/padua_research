@@ -1,0 +1,57 @@
+{
+  "phase": "response-01 after actual AC charter merge",
+  "base": "08fafe62d9798385dfafaacc9a41344272737e68",
+  "charter_source": "317a26597dedc9adc9cfc6a26fa00078df7d29e4",
+  "mz_source": "2cc1918b39d191ce233d44d9a33dbe83d697dbb0",
+  "resolved_local_squash": "16d90aaf0e9206ed5b1ff52e47426d834f710635",
+  "disposable_worktree": "/tmp/mz-response-rehearsal-01",
+  "disposable_local_branch": "codex/mz-response-rehearsal-01",
+  "conflicts": [],
+  "live_main_merge_conflicts_resolved": 10,
+  "live_main_merge_commit": "bc85509adc303126c6d8276a4457393e81d7f394",
+  "semantic_checks": {
+    "result": "PASS",
+    "head": "08fafe62d9798385dfafaacc9a41344272737e68",
+    "checker_sha256": "fcae74f4242ffcc9cf4f114760b6915e6e83e9655baebcc4fd002003e5d8f824",
+    "unchanged_original_mappings": 65,
+    "current_mz_mappings": 70,
+    "combined_result_rows": 34,
+    "combined_literature_rows": 65,
+    "current_mz_idea_dispositions": 25,
+    "preserved_charter_files": 105,
+    "preserved_charter_registry_rows": 54,
+    "historical_audit_targets_verified": 123,
+    "current_response_targets_verified": 0,
+    "unchanged_producer_source_files": 23,
+    "verified_source_payloads": 17,
+    "original_upload_payloads_unavailable": [
+      "./notes/adv_F7_F8_F11_F12_F4.md",
+      "./notes/bttb_repo_numeric_mapping.md",
+      "./notes/recent_padua_cubature_theory.md",
+      "./reports/Round 3 open problems 2023 2026.md"
+    ],
+    "ledger_blob": "43c581fb242fd28ebe4d89ee4a42e3bbd660a159",
+    "propagated_member_heads": [
+      "c989031bacb3d35c711f4ace40a10e8909802106",
+      "48f7a02697d7753279e27d3ad462a4817c67ade0"
+    ],
+    "public_bytes_conservative": 1927301,
+    "limit": "Identity, metadata and integration checks only; no numerical extrapolation or novelty proof."
+  },
+  "whitespace_scope": "Source inputs preserved verbatim; historical unified-diff artifact has three syntax-required blank context lines. All other staged authored files pass. Current replacement shared delta uses zero context to avoid those whitespace diagnostics.",
+  "repair_patch": {
+    "path": "topics/mz-constants/batch-registry-resolution.patch",
+    "bytes": 86795,
+    "sha256": "ae7a38b0e8942033d10de9e244d8dc1bc95a9a59ba360f3edd7a83ee52e61735",
+    "format": "git unified diff with zero context; use git apply --unidiff-zero if replaying against the pinned base",
+    "meaning": "Exact proposed shared-file delta from actual merged charter main to response checkpoint; no conflict repair needed in this squash."
+  },
+  "historical_v1_rehearsal": {
+    "charter_source": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+    "mz_source": "39f4785d48de7e77ff99e209bda954d632c61956",
+    "resolved_local_squash": "be1665d7ba6b0de3478f07dcce6a8870921d3c6f",
+    "conflict_count": 9,
+    "retrieval": "git show fdf0648:topics/mz-constants/batch-rehearsal.json"
+  },
+  "limit": "Local rehearsal only. No main mutation, remote rehearsal push or PR merge. Later members prepare their own future integration."
+}

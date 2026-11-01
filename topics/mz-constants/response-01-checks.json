@@ -1,0 +1,24 @@
+{
+  "result": "PASS",
+  "head": "2cc1918b39d191ce233d44d9a33dbe83d697dbb0",
+  "checker_sha256": "fcae74f4242ffcc9cf4f114760b6915e6e83e9655baebcc4fd002003e5d8f824",
+  "unchanged_original_mappings": 65,
+  "current_mz_mappings": 70,
+  "combined_result_rows": 34,
+  "combined_literature_rows": 65,
+  "current_mz_idea_dispositions": 25,
+  "preserved_charter_files": 105,
+  "preserved_charter_registry_rows": 54,
+  "historical_audit_targets_verified": 123,
+  "current_response_targets_verified": 140,
+  "unchanged_producer_source_files": 23,
+  "verified_source_payloads": 21,
+  "original_upload_payloads_unavailable": [],
+  "ledger_blob": "43c581fb242fd28ebe4d89ee4a42e3bbd660a159",
+  "propagated_member_heads": [
+    "c989031bacb3d35c711f4ace40a10e8909802106",
+    "48f7a02697d7753279e27d3ad462a4817c67ade0"
+  ],
+  "public_bytes_conservative": 2015146,
+  "limit": "Identity, metadata and integration checks only; no numerical extrapolation or novelty proof."
+}

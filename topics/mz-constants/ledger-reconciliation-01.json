@@ -1,0 +1,40 @@
+{
+  "authorization": "AC requested audit-01 response and ledger reconciliation; charter first, MZ second. P1 requests propagation to every member.",
+  "owner_mz_ledger_commit": "b56c7d65520b4c9a1311342de19fb47c9ba1d8f1",
+  "ledger_sha256": "39dfc9a9abcffcc7e8d28caf0c537a9dcf4536b42186cc00991ee67b33516f56",
+  "ledger_git_blob": "43c581fb242fd28ebe4d89ee4a42e3bbd660a159",
+  "merged_charter_main": "08fafe62d9798385dfafaacc9a41344272737e68",
+  "charter_disposition": "Already merged first; its accepted reservation block is preserved. Closed/deleted historical branch is not rewritten. Updated ledger reaches main only through AC merging MZ next.",
+  "members": [
+    {
+      "branch": "claude/programme-ideas-20261031",
+      "source_head": "a02bc357e5f0eed479f7020b85fecc57fda9b47f",
+      "published_ledger_commit": "c989031bacb3d35c711f4ace40a10e8909802106",
+      "changed_paths": [
+        "topics/padua-batch-20261031/ALLOCATIONS.md"
+      ],
+      "rules_read_at_source": {
+        "AGENTS.md": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60",
+        "agents/WORKFLOW.md": "17ee68fed1c8f3cd646c283587199e1f5a47c4a577fc40aeb8d24d6ab883195d",
+        "agents/codex/CODEX.md": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b"
+      },
+      "worktree": "/tmp/padua-ledger-programme-response-01"
+    },
+    {
+      "branch": "claude/bivariate-lanczos-20261031",
+      "source_head": "1127f9c73903e11b56cbfe3e8c667bfcbe810beb",
+      "published_ledger_commit": "48f7a02697d7753279e27d3ad462a4817c67ade0",
+      "changed_paths": [
+        "topics/padua-batch-20261031/ALLOCATIONS.md"
+      ],
+      "rules_read_at_source": {
+        "AGENTS.md": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60",
+        "agents/WORKFLOW.md": "b1c1c14c83e02bf38283159f81ec278ae336ab56c95d0c026b9ada3314d1ffaa",
+        "agents/codex/CODEX.md": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b"
+      },
+      "worktree": "/tmp/padua-ledger-lanczos-response-01"
+    }
+  ],
+  "no_other_paths_changed": true,
+  "no_main_push_force_push_or_pr_merge": true
+}

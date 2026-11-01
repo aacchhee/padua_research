@@ -1,0 +1,62 @@
+{
+  "basis": "8f4f7b0dcbcde8d37bfa759834375e88155c28fc",
+  "kind": "Post-acceptance administrative update explicitly requested by AC; no scientific or rule change.",
+  "changes": [
+    {
+      "path": "PROOF_STATUS.md",
+      "before_sha256": "1b1041f42b03c687b8bd86d0f121db062f24a937ac6a46810ebf5b609f0d7b83",
+      "after_sha256": "0eea82422118259e2d90c826466f2b6511cfe2d659552697ea98e7dc6672f3da",
+      "replacements": [
+        {
+          "before": "[Claude audit-01](topics/mz-constants/audit-01.md): original validity accepted; response focused review PENDING",
+          "after": "[Claude audit-01](topics/mz-constants/audit-01.md): original validity accepted; [audit-02](topics/mz-constants/audit-02.md): response ACCEPTED"
+        }
+      ]
+    },
+    {
+      "path": "state/IDEAS.md",
+      "before_sha256": "eeb673d99cce8ed3342fcf145aa711b536673239e82be5acaf6fc60a0db9d4af",
+      "after_sha256": "1686b5060fe185e1def687368e92b3b9c4bb929ead113cbc6f6c73e33798aea4",
+      "replacements": [
+        {
+          "before": "Mathematical validity of the original claims was accepted in Claude audit-01; the response's endpoint specialization and editorial/source updates await focused re-audit.",
+          "after": "Mathematical validity of the original claims was accepted in Claude audit-01; audit-02 accepted the response's endpoint specialization and editorial/source updates. This readiness update changes no candidate disposition or mathematical status."
+        }
+      ]
+    },
+    {
+      "path": "PAPER_MAP.md",
+      "before_sha256": "db92c95b6d27f1f1f79c94c1ac168213959526052d4eebabdab15dc50cafc61d",
+      "after_sha256": "ce2403c4eb12f179f28822f184fc52dd15ce17b7816b547a09a5117453729f40",
+      "replacements": [
+        {
+          "before": "complete 15-page revised draft; original statements accepted in Claude audit-01; response focused re-audit PENDING; not for submission",
+          "after": "complete 15-page revised draft; original statements accepted in Claude audit-01 and response accepted in audit-02; development PR ready for AC decision; historical novelty unresolved, not for submission"
+        }
+      ]
+    },
+    {
+      "path": "state/CURRENT.md",
+      "before_sha256": "ac06139816503440df088658f1cc6246c5a6781e8be2b5a0188ab1603b2b17cd",
+      "after_sha256": "f516f9c282ec8e7c90e31c7a8300e396bc221fd5cf037c981fbbe4abaf2b23bc",
+      "replacements": [
+        {
+          "before": "Original mathematical statements passed Claude audit-01; the revised 15-page manuscript and response-01 await focused re-audit (Stage AUDIT).",
+          "after": "Original mathematical statements passed Claude audit-01, and audit-02 accepted response-01 and the revised manuscript scope (Stage PR). The current-main squash rehearsal is clean; AC decides whether to squash-merge PR #3 next. After merge, this track continues on its named OPEN targets and pending-reference/novelty work, rather than the completed preparation/re-audit task."
+        }
+      ]
+    },
+    {
+      "path": "tracks/mz-constants/AUDIT_LOG.md",
+      "before_sha256": "c8049fefe2c7cc11917409aef2b8a35851fe91b6903fe909916f2addba911f55",
+      "after_sha256": "d82093f7a129d441a7700791d4caedeb014cdf76e0a6b84810996c586c2456df",
+      "change": "Append acceptance receipt; preserve historical rows"
+    },
+    {
+      "path": "topics/mz-constants/LOG.md",
+      "before_sha256": "490dbba60b74f7aad97acb54c3ef7185d1d6015b18377dcc73ff7b70e4f4a3d6",
+      "after_sha256": "71275f27ece4cd168b6d27ce57fcc46bc26f4fcd669936ca4f481959ad878b42",
+      "change": "Current next step and acceptance/readiness record only"
+    }
+  ]
+}
