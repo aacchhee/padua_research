@@ -1,10 +1,10 @@
 # First proof attempts on programme-ideas open targets
 
 - Branch: `codex/padua-proof-attempts-20261101` · Base: `cadb35066160e466cb1704b9791ad6f374446422` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh), audit-01 ACCEPTED
-- Stage: PR · Next: `Codex (gpt-6.1-sol medium): Continue codex/padua-proof-attempts-20261101 — reconcile PR #9 after PR #6 integration.`
+- Stage: PR · Next: `Codex (gpt-6.1-sol medium): Continue codex/padua-proof-attempts-20261101.`
 - Claims: A1 PROVED for every n≥1; B5 PROVED generically for every n≥2; A5 exact-local replacement certificates PROVED for both recorded degree-three cases. Durable files: `theory/proof-attempts-codex-01-padua-corner.md`, `-02-generic-commutant.md`, `-03-degenerate-maxima.md`. The global counts remain MEASURED, completeness OPEN. Local theory IDs only.
 - For the PR: draft against `claude/programme-ideas-20261031`; no final IDs, shared registry edits, base-file edits, main merge or PR merge.
-- Open for AC: no proof dispute; PR #6 integration and any final-ID decision remain under the existing batch process. This topic retains provisional IDs and deferred shared edits.
+- Open for AC: no proof dispute. PR #6 is merged and fresh main is integrated. The remaining source/registry preparation is described in handoffs/01-integration-preparation.md; this sync retains the topic's provisional IDs and deferred shared edits.
 
 ## 2026-11-01 — Codex, requested gpt-6.1-sol xhigh
 
@@ -102,3 +102,17 @@ Next: Codex (gpt-6.1-sol medium): Continue codex/padua-proof-attempts-20261101 �
 ```
 
 - Completed preparation rehearsal: disposable index, main → PR #6 `9bd14a6…` → staged PR #9 squash diff; zero conflicts, 38 added topic paths matching the staged snapshot and zero additional outside-topic changes. See preparation-checks.json for tree/patch hashes. PR #6 inherited whitespace warnings were retained without edits; this topic passes git diff --check. Only administrative receipt/manifest documentation changed afterward.
+
+
+## 2026-11-01 — update PR #9 with fresh main
+
+- User instruction: “update pr9 with fresh main and all what has been merged in.” This authorizes integrating main into this published topic branch, not merging PR #9 or allocating IDs.
+- Starting head: `7b8884a2f98518784ff3698dd2f3f9c49c9cdd62`. Fetched main and the published topic head. Fresh main and rules SHA: `cf89b140530d5838bdb208a8c28f3e7aa676ace3`. Read AGENTS.md, agents/WORKFLOW.md, agents/codex/CODEX.md and the new HANDOFF template. Allocation for this routine integration: Codex gpt-6.1-sol medium; runtime-resolved metadata unexposed. No subagents.
+- Confirmed PR #6 and PR #10 merged; PR #9 is open/draft and already targets main. Main's new first-parent integrations since the prior base include PR #10 (`21e620b…`), PR #6 (`a7e1234…`), PR #13 reservation/handoff rules (`e24b21f…`) and PR #11 MZ prior-art (`cf89b14…`). All are inherited through the main merge, including accepted source final-ID crosswalks; none is recreated manually.
+- Merged `origin/main` with `--no-ff` into this branch, preserving published history. Merge commit `b9ba9b7bf11ac8601f76659a38bb205ee6dad111`, parents are the previous topic head and fresh main. Zero conflicts. No rebase, force-push, live PR merge or push to main.
+- Verified all 39 existing topic files were byte-identical before/after the merge. Scientific proofs, developer/auditor code and retained outputs are untouched. The frozen gen4/T3 scientific source files also match the original pinned inputs. The original 31-input provenance manifest remains historical: its inputs are verified against Git objects at its recorded base, rather than requiring today's evolved rules/registries to equal that old snapshot.
+- Actually reran A1, B5 and A5 exact checkers after the merge, writing only `/tmp/padua-main-sync-a1.json`, `-b5.json`, `-a5.json`. All three outputs are byte-identical to the retained receipts. Full floating T3 trace was not repeated because its source code/inputs are unchanged and the exact A5 checker validates their hashes. Main ancestry, topic-only diff and `git diff --check` pass. Evidence: main-sync.json.
+- All twelve proposed old-text blocks still occur exactly once on fresh main. The source aliases now map to accepted canonical IDs: programme-ideas -01 → PD-T095, -04 → PD-T098, -06 → PD-T100, -N04 → PD-N042. The reviewed proposal package is retained; no source edits, shared registry writes or topic final-ID assignments are performed as part of this synchronization.
+- Adopted the new handoff/reservation procedure. No range for this synchronization: it makes no new reservation, final-ID assignment or merge-readiness decision. Existing accepted IDs and reservations are inherited unchanged. Any future allocation must refresh all open/retired reservations under the new rule and respect AC's specific instructions.
+- Stage remains PR; accepted Claude audit and F1–F6 response remain valid for the unchanged scientific content. PR #9 remains draft with the prior source/registry work pending; its obsolete dependency on an unmerged PR #6 is removed from the current PR description.
+- Handoff: [01-integration-preparation.md](handoffs/01-integration-preparation.md) — next remaining topic step, bootstrap under the newly merged numbered-handoff rule. There was no earlier numbered handoff to alter. This continuation's outputs are committed before that new handoff is published.
