@@ -1,6 +1,9 @@
-# Handoff — <topic slug>
+# Handoff NN — <topic slug> — <step>
 
-Overwritten at the end of every step; history is in Git and `LOG.md`. AC starts the next step with `<Agent> (<model, effort>): Continue <branch>.`
+A new numbered file for each step. Never overwrite an earlier handoff; update only its status line. AC starts the step with `<Agent> (<model, effort>): Continue <branch>.`
+
+- Status: open  <!-- then: done in <sha> | superseded by NN | withdrawn: <reason> -->
+- Previous handoff: <NN-<step>.md, or none>
 
 - Next agent / model / effort: <e.g. Codex, gpt-6-astra high>
 - Role: <developer | auditor | orchestrator>
@@ -22,4 +25,4 @@ Overwritten at the end of every step; history is in Git and `LOG.md`. AC starts 
 
 ## Acceptance and outputs
 
-<Criteria for done; files to write (e.g. audit-NN.md, response-NN.md); PR body and log updates; the next handoff to write.>
+<Criteria for done; files to write (e.g. audit-NN.md, response-NN.md); PR body and log updates. When done: set this handoff's status to `done in <sha>` and open the next numbered handoff.>

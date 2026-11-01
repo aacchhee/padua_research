@@ -18,16 +18,16 @@ Use agentic orchestration: delegate bounded development, independent checks, or 
 
 ## Work cycle
 
-One topic is one branch (`codex/<slug>` or `claude/<slug>`) and one PR, with a log at `topics/<slug>/LOG.md`. `New topic: <objective>.` starts WORK; `Continue <branch>.` means: read the rules, the log and `topics/<slug>/HANDOFF.md` at the branch head, and carry out the handoff. A small job explicitly requested with `no audit` may omit the audit and log, while retaining branch and PR rules. This exemption must not add or upgrade any `PD-T`, `PD-N`, `IDEA`, or `LIT` entry, or change rules, templates or registry schemas; such work follows the ordinary audit cycle.
+One topic is one branch (`codex/<slug>` or `claude/<slug>`) and one PR, with a log at `topics/<slug>/LOG.md`. `New topic: <objective>.` starts WORK; `Continue <branch>.` means: read the rules, the log and the latest open handoff in `topics/<slug>/handoffs/` at the branch head, and carry out that handoff. A small job explicitly requested with `no audit` may omit the audit and log, while retaining branch and PR rules. This exemption must not add or upgrade any `PD-T`, `PD-N`, `IDEA`, or `LIT` entry, or change rules, templates or registry schemas; such work follows the ordinary audit cycle.
 
-**Handoff file.** Each topic keeps `topics/<slug>/HANDOFF.md`, following `templates/HANDOFF.md`. Whoever ends a step (developer, auditor or orchestrator) overwrites it with the complete instruction for the next step:
+**Handoff files.** Each topic keeps numbered handoffs in `topics/<slug>/handoffs/NN-<step>.md` (`01-audit.md`, `02-response.md`, …), following `templates/HANDOFF.md`. Whoever ends a step (developer, auditor or orchestrator) opens a **new** handoff with the next number. It contains the complete instruction for the next step:
 - the next agent, model and effort;
 - the branch and exact head SHA;
 - the stage, scope and inputs to read;
 - what to do and what not to reopen;
 - the acceptance criteria and expected outputs.
 
-Commit and push this file before replying to AC. The reply then ends only with the short `Continue <branch>.` prompt. Earlier handoffs stay in Git history, and the log records each one with a single line. The next agent reads the handoff after the rules and the log. If AC's message adds or changes instructions, AC's message takes precedence and the agent records the difference in the log.
+Never overwrite or delete an earlier handoff. The agent who takes up a handoff and the one who opens the next handoff update only its status line: `open` until taken; then `done in <sha>`, `superseded by NN` or `withdrawn: <reason>`. Exactly one handoff is open at a time. Commit and push the new handoff before replying to AC; the reply then ends only with the short `Continue <branch>.` prompt. The log links each handoff with one line. If AC's message adds or changes instructions, AC's message takes precedence, and the agent records the difference in the log and in the handoff's status line.
 
 Record the stage in the topic log: WORK → AUDIT → PR. The developer sets AUDIT when development is complete; the other agent (Claude for Codex development, Codex for Claude development) writes `audit-NN.md`. An accepted audit sets PR; findings set WORK. The developer answers every finding in `response-NN.md`; material changes return to AUDIT, while an unchanged claim with a documented resolution may proceed to PR. Preserve disagreements for AC. Never edit the auditor's report to resolve it. An independent subagent check supplements this handoff. A draft PR may preserve work before the handoff is complete, with audit marked PENDING.
 

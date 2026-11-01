@@ -1,6 +1,9 @@
-# Handoff — handoff-id-rules-20261101
+# Handoff 01 — handoff-id-rules-20261101 — audit
 
-Overwritten at the end of every step; history is in Git and `LOG.md`. AC starts the next step with `Codex (gpt-6-astra medium): Continue claude/handoff-id-rules-20261101.`
+AC starts this step with `Codex (gpt-6-astra medium): Continue claude/handoff-id-rules-20261101.`
+
+- Status: open
+- Previous handoff: none
 
 - Next agent / model / effort: Codex, gpt-6-astra medium (protocol audit)
 - Role: independent auditor
@@ -12,15 +15,16 @@ Overwritten at the end of every step; history is in Git and `LOG.md`. AC starts 
 
 Audit this rule change, which AC requested. In `audit-01.md` in this directory, check the following.
 
-1. The new text in `AGENTS.md`, `agents/WORKFLOW.md` (Work cycle; Audit and PR records), `templates/HANDOFF.md` and `templates/TOPIC_LOG.md` implements AC's two requests:
+1. The new text in `AGENTS.md`, `agents/WORKFLOW.md` (Work cycle; Audit and PR records), `templates/HANDOFF.md` and `templates/TOPIC_LOG.md`, as amended in the second commit (numbered handoffs that are never overwritten, at AC's 2026-11-01 request), implements AC's two requests:
    - fresh, non-overlapping ID ranges, checked against main and all open PRs including drafts, recorded at once, never reallocated;
-   - a handoff file carrying the full next-step instruction, with a short `Continue <branch>.` prompt.
+   - numbered handoff files carrying the full next-step instruction, never overwritten, with a short `Continue <branch>.` prompt.
 2. It contradicts no other rule: the single ledger, provisional IDs, PR-preparation assignment, `state/IDEAS.md` timing, the rehearsal, and the AC-precedence clause.
 3. The wording is unambiguous about:
    - who owns a range;
    - what happens on a collision;
    - when reservation is required;
-   - whether a `no audit` small job needs a handoff file.
+   - whether a `no audit` small job needs a handoff file;
+   - how "exactly one open handoff" and the status line work when AC redirects mid-step or when two agents work in parallel.
 4. Transition: say how the open drafts (#9, #11 and #12, and #6 if not yet merged) should comply, and whether their existing reservations (PR #11's LIT-293–299; PR #6's allocated blocks, if merged) are already consistent with the new rule.
 
 Propose exact wording fixes for anything you find. Do not edit the developer's rule files yourself.
@@ -37,5 +41,6 @@ Rules and templates only. No registry, ID or scientific change. Only AC merges.
 
 - Write `audit-01.md` (ACCEPTED or CHANGES REQUIRED, with findings).
 - Add a LOG entry.
-- Overwrite this `HANDOFF.md` for the next step: Claude's response if changes are required, or PR preparation if accepted.
+- Set this handoff's status to `done in <sha>`.
+- Open `handoffs/02-<step>.md` for the next step: Claude's response if changes are required, or PR preparation if accepted.
 - Update the PR body's AUDIT section.
