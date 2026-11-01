@@ -1,6 +1,6 @@
 # Shared allocation ledger — padua-batch-20261031
 
-**Current integration snapshot (2026-11-01, audit-04):** main `21e620b` already contains PR #10. PR #6 allocates lattice PD-T081–094, PD-N032–038, IDEA-177–189, LIT-300–331 and programme-ideas PD-T095–100, PD-N039–043, IDEA-190–209, LIT-332–426 under AC's member-specific authorization to Claude (section below). PR #11 head `97968d2c2d039cb0910e0ea50747fb2d9e01a262` reserves LIT-293–299; it has no collision with this block. Next unreserved: PD-T101, PD-N044, IDEA-210, LIT-427. Only AC merges.
+**Current integration snapshot (2026-11-01, audit-04):** main `21e620b` already contains PR #10. PR #6 allocates lattice PD-T081–094, PD-N032–038, IDEA-177–189, LIT-300–331 and programme-ideas PD-T095–100, PD-N039–043, IDEA-190–209, LIT-332–426 under AC's member-specific authorization to Claude (section below). PR #11 head `97968d2c2d039cb0910e0ea50747fb2d9e01a262` reserves LIT-293–299; it has no collision with this block. Next unreserved: PD-T101, PD-N044, IDEA-210, LIT-427. AC’s current merge order is #6 → #13 (rules update) → #11 → #9 → #12; refresh the later drafts against each preceding merge and preserve these ranges. PR #13’s rules are not imported into PR #6. Only AC merges.
 
 ## Earlier instructions and integration snapshots (historical)
 
