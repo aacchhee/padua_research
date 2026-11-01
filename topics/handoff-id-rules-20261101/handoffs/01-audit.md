@@ -2,7 +2,7 @@
 
 AC starts this step with `Codex (gpt-6-astra medium): Continue claude/handoff-id-rules-20261101.`
 
-- Status: open
+- Status: done in 19526f248554821652e517613944408c83fd19b4
 - Previous handoff: none
 
 - Next agent / model / effort: Codex, gpt-6-astra medium (protocol audit)
