@@ -1,0 +1,107 @@
+{
+  "command": [
+    "tracks/mz-constants/code/mz2d_independent_check.py"
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "sympy": "1.14.0",
+  "python_flint": "0.9.0",
+  "script_sha256": "5e455d747dc5dca84c883ed900095ff4a2bb40767f4ebcb3261d7d583df7bdfc",
+  "producer_sha256": "5d1f005e2307d3a26badc9c1a44ce313dc9126625a49fba5d59430c151cf9c70",
+  "source_receipt_sha256": "5456917afe8fea69b0a776270ef3ae79fdc33deb02d27f89648fc342f78b93de",
+  "independent_receipt_sha256": "18c8623442664aa119d3581b701d200315d454071d6b8f6c89cbaf540fe34d9c",
+  "definitions_sha256": "4ac0e391859a14e4d6f752f1244df0701e99d9b3d8ab8570bd632520f517c7db",
+  "results_match_after_removing_only_seconds": true,
+  "five_inexact_region_regression": {
+    "m_range": [
+      2,
+      12
+    ],
+    "all_a_plus_b_at_most_2m_minus_2": true,
+    "moment_checks": 1221,
+    "region_counts": {
+      "L": 451,
+      "C": 385,
+      "X0": 150,
+      "X1": 70,
+      "Y0": 95,
+      "Y1": 70
+    }
+  },
+  "nodal_regressions": [
+    {
+      "m": 1,
+      "nodes": 3,
+      "cyclotomic_order": 4,
+      "field_degree": 2,
+      "exact_nodal_moment_checks": 15,
+      "direct_nodal_Gram_and_polynomial_integral_pairs": 1
+    },
+    {
+      "m": 2,
+      "nodes": 6,
+      "cyclotomic_order": 12,
+      "field_degree": 4,
+      "exact_nodal_moment_checks": 28,
+      "direct_nodal_Gram_and_polynomial_integral_pairs": 9
+    },
+    {
+      "m": 3,
+      "nodes": 10,
+      "cyclotomic_order": 24,
+      "field_degree": 8,
+      "exact_nodal_moment_checks": 45,
+      "direct_nodal_Gram_and_polynomial_integral_pairs": 36
+    },
+    {
+      "m": 4,
+      "nodes": 15,
+      "cyclotomic_order": 40,
+      "field_degree": 16,
+      "exact_nodal_moment_checks": 66,
+      "direct_nodal_Gram_and_polynomial_integral_pairs": 100
+    },
+    {
+      "m": 5,
+      "nodes": 21,
+      "cyclotomic_order": 60,
+      "field_degree": 16,
+      "exact_nodal_moment_checks": 91,
+      "direct_nodal_Gram_and_polynomial_integral_pairs": 225
+    }
+  ],
+  "stored_m30_witness": {
+    "nonzero_coefficients": 225,
+    "Q_p_squared": "21630961033257675132463/120778706923875",
+    "integral_p_squared": "3706008529790577774590124820358984174828596/4898119912995148468245072420339375",
+    "strict_b_minus_4a": "197077405333321381064181772316715549492616/4898119912995148468245072420339375",
+    "rayleigh_quotient": "877232781114314098381485762010567156333995/3706008529790577774590124820358984174828596"
+  },
+  "rejection_controls": [
+    {
+      "name": "zero congruence",
+      "rejected": true
+    },
+    {
+      "name": "singular congruence",
+      "rejected": true
+    },
+    {
+      "name": "singular exact endpoint t=1 at m2",
+      "rejected": true
+    },
+    {
+      "name": "zero enclosure width",
+      "rejected": true
+    },
+    {
+      "name": "negative enclosure width",
+      "rejected": true
+    },
+    {
+      "name": "corrupted stored coefficient",
+      "rejected": true
+    }
+  ],
+  "scope": "Technical execution and finite exact regressions supplement mathematical audit; required Claude audit remains pending."
+}

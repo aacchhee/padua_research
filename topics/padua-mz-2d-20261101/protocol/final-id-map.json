@@ -1,0 +1,871 @@
+{
+  "status": "ASSIGNED after explicit root approval; scientific statuses unchanged; Claude audit PENDING",
+  "captured_at": "2026-11-01T11:21:01.504950+00:00",
+  "working_head": "43233bd3fe90d798067ce0ce5ba3a60e82bde72d",
+  "counts_declared": {
+    "PD-T": 12,
+    "PD-N": 10,
+    "IDEA": 18
+  },
+  "new_LIT_count": 2,
+  "reuse_LIT_count": 5,
+  "mapping": {
+    "PD-T?mz2d-codex-01": "PD-T106",
+    "PD-T?mz2d-codex-02": "PD-T107",
+    "PD-T?mz2d-codex-03": "PD-T108",
+    "PD-T?mz2d-codex-04": "PD-T109",
+    "PD-T?mz2d-codex-10": "PD-T110",
+    "PD-T?mz2d-codex-20": "PD-T111",
+    "PD-T?mz2d-codex-30": "PD-T112",
+    "PD-T?mz2d-codex-31": "PD-T113",
+    "PD-T?mz2d-codex-32": "PD-T114",
+    "PD-T?mz2d-codex-40": "PD-T115",
+    "PD-T?mz2d-codex-41": "PD-T116",
+    "PD-T?mz2d-codex-50": "PD-T117",
+    "PD-N?mz2d-codex-01": "PD-N044",
+    "PD-N?mz2d-codex-10": "PD-N045",
+    "PD-N?mz2d-codex-11": "PD-N046",
+    "PD-N?mz2d-codex-20": "PD-N047",
+    "PD-N?mz2d-codex-21": "PD-N048",
+    "PD-N?mz2d-codex-22": "PD-N049",
+    "PD-N?mz2d-codex-30": "PD-N050",
+    "PD-N?mz2d-codex-31": "PD-N051",
+    "PD-N?mz2d-codex-32": "PD-N052",
+    "PD-N?mz2d-codex-40": "PD-N053",
+    "IDEA?mz2d-codex-01": "IDEA-210",
+    "IDEA?mz2d-codex-02": "IDEA-211",
+    "IDEA?mz2d-codex-10": "IDEA-212",
+    "IDEA?mz2d-codex-11": "IDEA-213",
+    "IDEA?mz2d-codex-12": "IDEA-214",
+    "IDEA?mz2d-codex-20": "IDEA-215",
+    "IDEA?mz2d-codex-21": "IDEA-216",
+    "IDEA?mz2d-codex-22": "IDEA-217",
+    "IDEA?mz2d-codex-23": "IDEA-218",
+    "IDEA?mz2d-codex-30": "IDEA-219",
+    "IDEA?mz2d-codex-31": "IDEA-220",
+    "IDEA?mz2d-codex-32": "IDEA-221",
+    "IDEA?mz2d-codex-33": "IDEA-222",
+    "IDEA?mz2d-codex-34": "IDEA-223",
+    "IDEA?mz2d-codex-40": "IDEA-224",
+    "IDEA?mz2d-codex-41": "IDEA-225",
+    "IDEA?mz2d-codex-42": "IDEA-226",
+    "IDEA?mz2d-codex-50": "IDEA-227",
+    "LIT?mz2d-codex-01": "LIT-312",
+    "LIT?mz2d-codex-02": "LIT-427",
+    "LIT?mz2d-codex-03": "LIT-428",
+    "LIT?mz2d-codex-04": "LIT-014",
+    "LIT?mz2d-codex-05": "LIT-379",
+    "LIT?mz2d-codex-06": "LIT-314",
+    "LIT?mz2d-codex-07": "LIT-045",
+    "PD-N?mz2d-codex-41": "PD-N045"
+  },
+  "literature_decisions": {
+    "LIT?mz2d-codex-01": {
+      "proposed": "LIT-312",
+      "kind": "reuse same generating-curve2006 source",
+      "authoritative_source_title": "Bos\u2013Caliari\u2013De Marchi\u2013Vianello\u2013Xu, Bivariate Lagrange interpolation at the Padua points: the generating curve approach, JAT143 (2006),15\u201325"
+    },
+    "LIT?mz2d-codex-02": {
+      "proposed": "LIT-427",
+      "kind": "new SVZ2008 source, no same-source row in complete INDEX",
+      "authoritative_source_title": "Sommariva\u2013Vianello\u2013Zanovello, Nontensorial Clenshaw\u2013Curtis cubature, Numer.Algorithms49 (2008),409\u2013427"
+    },
+    "LIT?mz2d-codex-03": {
+      "proposed": "LIT-428",
+      "kind": "new CDMV2007 Hyperinterpolation on the square, not existing CDMV2008 Computational aspects",
+      "authoritative_source_title": "Caliari\u2013De Marchi\u2013Vianello, Hyperinterpolation on the square, JCAM210 (2007),78\u201383"
+    },
+    "LIT?mz2d-codex-04": {
+      "proposed": "LIT-014",
+      "kind": "reuse earliest same Dencker-Erb2017 source; existing duplicates304/319/380 remain intact",
+      "authoritative_source_title": "Dencker\u2013Erb, Multivariate polynomial interpolation on Lissajous\u2013Chebyshev nodes, JAT219 (2017),15\u201345"
+    },
+    "LIT?mz2d-codex-05": {
+      "proposed": "LIT-379",
+      "kind": "reuse same KL2021 source; add new direct reading coverage separately",
+      "authoritative_source_title": "Kolomoitsev\u2013Lomako, Asymptotics of the Lebesgue constants for bivariate approximation processes, AMC403 (2021),126192"
+    },
+    "LIT?mz2d-codex-06": {
+      "proposed": "LIT-314",
+      "kind": "reuse same Xu1996 source",
+      "authoritative_source_title": "Xu, Lagrange interpolation on Chebyshev points of two variables, JAT87 (1996),220\u2013238"
+    },
+    "LIT?mz2d-codex-07": {
+      "proposed": "LIT-045",
+      "kind": "reuse same ASV source;415 is retained historic duplicate",
+      "authoritative_source_title": "An\u2013Sommariva\u2013Vianello, On the role of weak Marcinkiewicz\u2013Zygmund constants in polynomial approximation by orthogonal bases, arXiv2601.04708v1; MCS252 (2027),733\u2013745 metadata"
+    }
+  },
+  "declarations": {
+    "PD-T?mz2d-codex-32": {
+      "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-uniform-open.md",
+      "line": 1,
+      "title": "uniform signed Padua hyperinterpolation norm target"
+    },
+    "PD-T?mz2d-codex-31": {
+      "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-reproduction.md",
+      "line": 1,
+      "title": "signed Padua hyperinterpolation at the correct reproduced degree"
+    },
+    "PD-N?mz2d-codex-21": {
+      "path": "tracks/mz-constants/theory/mz2d-lower-corner-subtraction-obstruction.md",
+      "line": 1,
+      "title": "A crude continuous corner-subtraction bound diverges"
+    },
+    "PD-N?mz2d-codex-40": {
+      "path": "tracks/mz-constants/theory/mz2d-fixed-ratio-rectangular-obstruction.md",
+      "line": 1,
+      "title": "direct rectangular Fej\u00e9r reconstruction aliases"
+    },
+    "PD-N?mz2d-codex-10": {
+      "path": "tracks/mz-constants/theory/mz2d-upper-sign-obstruction.md",
+      "line": 1,
+      "title": "coefficient sign comparison fails for Padua"
+    },
+    "PD-T?mz2d-codex-30": {
+      "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-absolute.md",
+      "line": 1,
+      "title": "signed hyperinterpolation norm from absolute weights"
+    },
+    "PD-N?mz2d-codex-32": {
+      "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-absolute-obstruction.md",
+      "line": 1,
+      "title": "uniform absolute-Gram and negative-leverage majorants fail"
+    },
+    "PD-N?mz2d-codex-30": {
+      "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-signed-obstruction.md",
+      "line": 1,
+      "title": "a signed upper Gram bound does not control continuous data"
+    },
+    "PD-T?mz2d-codex-02": {
+      "path": "tracks/mz-constants/theory/mz2d-certified-spectra.md",
+      "line": 1,
+      "title": "Exact finite Padua spectrum enclosures"
+    },
+    "PD-T?mz2d-codex-10": {
+      "path": "tracks/mz-constants/theory/mz2d-upper-open.md",
+      "line": 1,
+      "title": "endpoint Padua upper spectrum remains open"
+    },
+    "PD-N?mz2d-codex-20": {
+      "path": "tracks/mz-constants/theory/mz2d-endpoint-tensor-obstruction.md",
+      "line": 1,
+      "title": "Two critical coordinate packets do not tensorize at total degree m-1"
+    },
+    "PD-N?mz2d-codex-22": {
+      "path": "tracks/mz-constants/theory/mz2d-endpoint-rhombus-packet.md",
+      "line": 1,
+      "title": "A bounded rotated harmonic-packet test does not improve the endpoint witness"
+    },
+    "PD-T?mz2d-codex-41": {
+      "path": "tracks/mz-constants/theory/mz2d-fixed-ratio.md",
+      "line": 1,
+      "title": "signed Padua MZ at every fixed degree ratio"
+    },
+    "PD-T?mz2d-codex-20": {
+      "path": "tracks/mz-constants/theory/mz2d-lower-corner-weights.md",
+      "line": 1,
+      "title": "Exact signed Lebesgue weights at the Padua node corners"
+    },
+    "PD-N?mz2d-codex-01": {
+      "path": "tracks/mz-constants/theory/mz2d-eta-counterexample.md",
+      "line": 1,
+      "title": "A finite signed-Padua eta greater than three quarters"
+    },
+    "PD-T?mz2d-codex-04": {
+      "path": "tracks/mz-constants/theory/mz2d-defect-structure.md",
+      "line": 1,
+      "title": "Finite masked-tensor Padua defect architecture"
+    },
+    "PD-T?mz2d-codex-01": {
+      "path": "tracks/mz-constants/theory/mz2d-aliasing.md",
+      "line": 1,
+      "title": "Exact signed Padua aliases and rational Gram pencil"
+    },
+    "PD-T?mz2d-codex-50": {
+      "path": "tracks/mz-constants/theory/mz2d-tensor-control.md",
+      "line": 1,
+      "title": "Exact tensor-CC extrema on a total-degree space"
+    },
+    "PD-T?mz2d-codex-03": {
+      "path": "tracks/mz-constants/theory/mz2d-measured-spectra.md",
+      "line": 1,
+      "title": "Finite two-dimensional Padua spectral measurements"
+    },
+    "PD-N?mz2d-codex-11": {
+      "path": "tracks/mz-constants/theory/mz2d-upper-tensor-obstruction.md",
+      "line": 1,
+      "title": "doubled tensor weights do not majorize Padua"
+    },
+    "PD-T?mz2d-codex-40": {
+      "path": "tracks/mz-constants/theory/mz2d-fixed-ratio-diamond-reconstruction.md",
+      "line": 1,
+      "title": "exact diamond-filter reconstruction on the checkerboard"
+    },
+    "PD-N?mz2d-codex-31": {
+      "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-reproduction-obstruction.md",
+      "line": 1,
+      "title": "endpoint Padua hyperinterpolation does not reproduce quadratics"
+    },
+    "IDEA?mz2d-codex-30": {
+      "path": "topics/padua-mz-2d-20261101/ideas-d5.md",
+      "line": 28,
+      "title": "transfer the signed upper Gram bound alone"
+    },
+    "IDEA?mz2d-codex-31": {
+      "path": "topics/padua-mz-2d-20261101/ideas-d5.md",
+      "line": 58,
+      "title": "absolute-weight duality and negative leverage"
+    },
+    "IDEA?mz2d-codex-32": {
+      "path": "topics/padua-mz-2d-20261101/ideas-d5.md",
+      "line": 84,
+      "title": "reproduce only the degree permitted by exactness"
+    },
+    "IDEA?mz2d-codex-33": {
+      "path": "topics/padua-mz-2d-20261101/ideas-d5.md",
+      "line": 108,
+      "title": "uniform signed Padua bounds: target and failed majorants"
+    },
+    "IDEA?mz2d-codex-34": {
+      "path": "topics/padua-mz-2d-20261101/ideas-d5.md",
+      "line": 142,
+      "title": "promote endpoint reproduction beyond degree one"
+    },
+    "IDEA?mz2d-codex-40": {
+      "path": "topics/padua-mz-2d-20261101/ideas-d4.md",
+      "line": 37,
+      "title": "rectangular Fej\u00e9r reconstruction on the checkerboard"
+    },
+    "IDEA?mz2d-codex-41": {
+      "path": "topics/padua-mz-2d-20261101/ideas-d4.md",
+      "line": 72,
+      "title": "direct positive-energy conversion after Schur"
+    },
+    "IDEA?mz2d-codex-42": {
+      "path": "topics/padua-mz-2d-20261101/ideas-d4.md",
+      "line": 115,
+      "title": "diamond plateau filter in diagonal angles"
+    },
+    "IDEA?mz2d-codex-10": {
+      "path": "topics/padua-mz-2d-20261101/ideas-d2.md",
+      "line": 11,
+      "title": "transfer the one-dimensional coefficient sign proof"
+    },
+    "IDEA?mz2d-codex-11": {
+      "path": "topics/padua-mz-2d-20261101/ideas-d2.md",
+      "line": 31,
+      "title": "direct nodal domination by doubled tensor CC"
+    },
+    "IDEA?mz2d-codex-12": {
+      "path": "topics/padua-mz-2d-20261101/ideas-d2.md",
+      "line": 51,
+      "title": "parity-block Schur control with tensor diagonal blocks"
+    },
+    "IDEA?mz2d-codex-01": {
+      "path": "topics/padua-mz-2d-20261101/ideas-d1.md",
+      "line": 9,
+      "title": "Complement aliases and a finite masked-tensor defect"
+    },
+    "IDEA?mz2d-codex-02": {
+      "path": "topics/padua-mz-2d-20261101/ideas-d1.md",
+      "line": 97,
+      "title": "Finite test of a Padua three-quarter eta threshold"
+    },
+    "IDEA?mz2d-codex-20": {
+      "path": "topics/padua-mz-2d-20261101/directions/ideas-d3.md",
+      "line": 6,
+      "title": "Marginal harmonic witness"
+    },
+    "IDEA?mz2d-codex-21": {
+      "path": "topics/padua-mz-2d-20261101/directions/ideas-d3.md",
+      "line": 24,
+      "title": "Multiply two critical coordinate packets"
+    },
+    "IDEA?mz2d-codex-22": {
+      "path": "topics/padua-mz-2d-20261101/directions/ideas-d3.md",
+      "line": 43,
+      "title": "Control signed corners by leverage"
+    },
+    "IDEA?mz2d-codex-23": {
+      "path": "topics/padua-mz-2d-20261101/directions/ideas-d3.md",
+      "line": 62,
+      "title": "Symmetrized rotated harmonic packet"
+    },
+    "IDEA?mz2d-codex-50": {
+      "path": "topics/padua-mz-2d-20261101/directions/ideas-d7.md",
+      "line": 1,
+      "title": "Disjoint coordinate defects on the total-degree tensor control"
+    }
+  },
+  "occurrences": {
+    "PD-T?mz2d-codex-01": [
+      {
+        "path": "topics/padua-mz-2d-20261101/directions/D1.md",
+        "line": 50
+      },
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d1.md",
+        "line": 69
+      },
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d1.md",
+        "line": 78
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-aliasing.md",
+        "line": 1
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-certified-spectra.md",
+        "line": 34
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-certified-spectra.md",
+        "line": 42
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-certified-spectra.md",
+        "line": 68
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-certified-spectra.md",
+        "line": 157
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-defect-structure.md",
+        "line": 6
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-defect-structure.md",
+        "line": 32
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-defect-structure.md",
+        "line": 72
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-defect-structure.md",
+        "line": 88
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-defect-structure.md",
+        "line": 234
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-eta-counterexample.md",
+        "line": 114
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-eta-counterexample.md",
+        "line": 194
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-upper-open.md",
+        "line": 56
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-upper-sign-obstruction.md",
+        "line": 61
+      }
+    ],
+    "PD-T?mz2d-codex-04": [
+      {
+        "path": "topics/padua-mz-2d-20261101/directions/D1.md",
+        "line": 52
+      },
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d1.md",
+        "line": 81
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-aliasing.md",
+        "line": 10
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-aliasing.md",
+        "line": 75
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-aliasing.md",
+        "line": 87
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-aliasing.md",
+        "line": 230
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-aliasing.md",
+        "line": 263
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-defect-structure.md",
+        "line": 1
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-upper-open.md",
+        "line": 57
+      }
+    ],
+    "PD-N?mz2d-codex-10": [
+      {
+        "path": "topics/padua-mz-2d-20261101/directions/D2.md",
+        "line": 21
+      },
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d2.md",
+        "line": 28
+      },
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d2.md",
+        "line": 73
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-upper-open.md",
+        "line": 8
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-upper-open.md",
+        "line": 142
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-upper-sign-obstruction.md",
+        "line": 1
+      }
+    ],
+    "PD-N?mz2d-codex-11": [
+      {
+        "path": "topics/padua-mz-2d-20261101/directions/D2.md",
+        "line": 22
+      },
+      {
+        "path": "topics/padua-mz-2d-20261101/directions/D2.md",
+        "line": 85
+      },
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d2.md",
+        "line": 48
+      },
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d2.md",
+        "line": 74
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-upper-open.md",
+        "line": 9
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-upper-tensor-obstruction.md",
+        "line": 1
+      }
+    ],
+    "PD-T?mz2d-codex-10": [
+      {
+        "path": "topics/padua-mz-2d-20261101/directions/D2.md",
+        "line": 23
+      },
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d2.md",
+        "line": 68
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-upper-open.md",
+        "line": 1
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-upper-sign-obstruction.md",
+        "line": 9
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-upper-tensor-obstruction.md",
+        "line": 7
+      }
+    ],
+    "IDEA?mz2d-codex-20": [
+      {
+        "path": "topics/padua-mz-2d-20261101/directions/ideas-d3.md",
+        "line": 6
+      }
+    ],
+    "IDEA?mz2d-codex-21": [
+      {
+        "path": "topics/padua-mz-2d-20261101/directions/ideas-d3.md",
+        "line": 24
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-endpoint-tensor-obstruction.md",
+        "line": 5
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-endpoint-tensor-obstruction.md",
+        "line": 51
+      }
+    ],
+    "IDEA?mz2d-codex-22": [
+      {
+        "path": "topics/padua-mz-2d-20261101/directions/ideas-d3.md",
+        "line": 43
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-lower-corner-subtraction-obstruction.md",
+        "line": 5
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-lower-corner-weights.md",
+        "line": 69
+      }
+    ],
+    "IDEA?mz2d-codex-23": [
+      {
+        "path": "topics/padua-mz-2d-20261101/directions/ideas-d3.md",
+        "line": 62
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-endpoint-rhombus-packet.md",
+        "line": 5
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-endpoint-rhombus-packet.md",
+        "line": 54
+      }
+    ],
+    "IDEA?mz2d-codex-01": [
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d1.md",
+        "line": 9
+      }
+    ],
+    "IDEA?mz2d-codex-02": [
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d1.md",
+        "line": 97
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-eta-counterexample.md",
+        "line": 6
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-eta-counterexample.md",
+        "line": 100
+      }
+    ],
+    "PD-N?mz2d-codex-01": [
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d1.md",
+        "line": 142
+      },
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d1.md",
+        "line": 152
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-certified-spectra.md",
+        "line": 9
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-eta-counterexample.md",
+        "line": 1
+      }
+    ],
+    "IDEA?mz2d-codex-10": [
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d2.md",
+        "line": 11
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-upper-sign-obstruction.md",
+        "line": 6
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-upper-sign-obstruction.md",
+        "line": 52
+      }
+    ],
+    "IDEA?mz2d-codex-11": [
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d2.md",
+        "line": 31
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-upper-tensor-obstruction.md",
+        "line": 5
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-upper-tensor-obstruction.md",
+        "line": 44
+      }
+    ],
+    "IDEA?mz2d-codex-12": [
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d2.md",
+        "line": 51
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-upper-open.md",
+        "line": 52
+      }
+    ],
+    "IDEA?mz2d-codex-40": [
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d4.md",
+        "line": 37
+      }
+    ],
+    "PD-N?mz2d-codex-40": [
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d4.md",
+        "line": 66
+      }
+    ],
+    "IDEA?mz2d-codex-41": [
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d4.md",
+        "line": 68
+      }
+    ],
+    "PD-N?mz2d-codex-41": [
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d4.md",
+        "line": 95
+      }
+    ],
+    "IDEA?mz2d-codex-42": [
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d4.md",
+        "line": 97
+      }
+    ],
+    "PD-T?mz2d-codex-40": [
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d4.md",
+        "line": 125
+      }
+    ],
+    "IDEA?mz2d-codex-30": [
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d5.md",
+        "line": 28
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-signed-obstruction.md",
+        "line": 4
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-signed-obstruction.md",
+        "line": 30
+      }
+    ],
+    "PD-N?mz2d-codex-30": [
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d5.md",
+        "line": 52
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-signed-obstruction.md",
+        "line": 1
+      }
+    ],
+    "IDEA?mz2d-codex-31": [
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d5.md",
+        "line": 58
+      }
+    ],
+    "PD-T?mz2d-codex-30": [
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d5.md",
+        "line": 80
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-absolute.md",
+        "line": 1
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-signed-obstruction.md",
+        "line": 55
+      }
+    ],
+    "IDEA?mz2d-codex-32": [
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d5.md",
+        "line": 84
+      }
+    ],
+    "PD-T?mz2d-codex-31": [
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d5.md",
+        "line": 104
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-absolute.md",
+        "line": 6
+      }
+    ],
+    "IDEA?mz2d-codex-33": [
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d5.md",
+        "line": 108
+      }
+    ],
+    "PD-T?mz2d-codex-32": [
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d5.md",
+        "line": 128
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-absolute.md",
+        "line": 6
+      }
+    ],
+    "IDEA?mz2d-codex-34": [
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d5.md",
+        "line": 130
+      }
+    ],
+    "PD-N?mz2d-codex-31": [
+      {
+        "path": "topics/padua-mz-2d-20261101/ideas-d5.md",
+        "line": 149
+      }
+    ],
+    "PD-T?mz2d-codex-20": [
+      {
+        "path": "topics/padua-mz-2d-20261101/independent-math-d1.md",
+        "line": 18
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-lower-corner-subtraction-obstruction.md",
+        "line": 8
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-lower-corner-subtraction-obstruction.md",
+        "line": 62
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-lower-corner-weights.md",
+        "line": 1
+      }
+    ],
+    "PD-N?mz2d-codex-21": [
+      {
+        "path": "topics/padua-mz-2d-20261101/independent-math-d1.md",
+        "line": 19
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-lower-corner-subtraction-obstruction.md",
+        "line": 1
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-lower-corner-weights.md",
+        "line": 9
+      }
+    ],
+    "LIT?mz2d-codex-01": [
+      {
+        "path": "topics/padua-mz-2d-20261101/literature.md",
+        "line": 97
+      }
+    ],
+    "LIT?mz2d-codex-02": [
+      {
+        "path": "topics/padua-mz-2d-20261101/literature.md",
+        "line": 115
+      }
+    ],
+    "LIT?mz2d-codex-03": [
+      {
+        "path": "topics/padua-mz-2d-20261101/literature.md",
+        "line": 136
+      }
+    ],
+    "LIT?mz2d-codex-04": [
+      {
+        "path": "topics/padua-mz-2d-20261101/literature.md",
+        "line": 155
+      }
+    ],
+    "LIT?mz2d-codex-05": [
+      {
+        "path": "topics/padua-mz-2d-20261101/literature.md",
+        "line": 175
+      }
+    ],
+    "LIT?mz2d-codex-06": [
+      {
+        "path": "topics/padua-mz-2d-20261101/literature.md",
+        "line": 195
+      }
+    ],
+    "LIT?mz2d-codex-07": [
+      {
+        "path": "topics/padua-mz-2d-20261101/literature.md",
+        "line": 214
+      }
+    ],
+    "PD-T?mz2d-codex-02": [
+      {
+        "path": "tracks/mz-constants/theory/mz2d-certified-spectra.md",
+        "line": 1
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-eta-counterexample.md",
+        "line": 7
+      },
+      {
+        "path": "tracks/mz-constants/theory/mz2d-eta-counterexample.md",
+        "line": 116
+      }
+    ],
+    "PD-N?mz2d-codex-22": [
+      {
+        "path": "tracks/mz-constants/theory/mz2d-endpoint-rhombus-packet.md",
+        "line": 1
+      }
+    ],
+    "PD-N?mz2d-codex-20": [
+      {
+        "path": "tracks/mz-constants/theory/mz2d-endpoint-tensor-obstruction.md",
+        "line": 1
+      }
+    ],
+    "PD-T?mz2d-codex-03": [
+      {
+        "path": "tracks/mz-constants/theory/mz2d-measured-spectra.md",
+        "line": 1
+      }
+    ]
+  },
+  "referenced_without_declaration": [
+    "PD-N?mz2d-codex-31",
+    "PD-N?mz2d-codex-40",
+    "PD-N?mz2d-codex-41",
+    "PD-T?mz2d-codex-31",
+    "PD-T?mz2d-codex-32",
+    "PD-T?mz2d-codex-40"
+  ],
+  "unfrozen": false,
+  "literature_index_identity": {
+    "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+    "path": "literature/INDEX.md",
+    "bytes": 265014,
+    "sha256": "f90355c5b77a638d1a49980330eff1bda7d0e7610771a3bdae465f384b03f056",
+    "git_blob": "f9348537234c798a3fa738970513891f0dd8c956"
+  },
+  "source_coverage_policy": "Reuse source ID only; retain all topic primary reading scopes/normalization warnings and dated attribution. Do not replace historical UNVERIFIED records or silently promote source claims to local PROVED.",
+  "historical_aliases": {
+    "PD-N?mz2d-codex-41": "PD-N?mz2d-codex-10"
+  },
+  "whole_file_ID_replacement_exclusions": [
+    "topics/padua-mz-2d-20261101/directions/d4-positive-floor-verification.md",
+    "all frozen peer/audit/independent reports",
+    "all code",
+    "all evidence",
+    "topics/padua-mz-2d-20261101/handoffs/01-work.md",
+    "all protocol historical/provenance receipts"
+  ],
+  "pending_declarations": [],
+  "root_approval": "Explicit mapping approval in parent instruction, 2026-11-01",
+  "input_head": "c68216442c41980d215fa541dbc5eafa3bbe697a",
+  "assigned_at": "2026-11-01T11:34:30.751450+00:00"
+}

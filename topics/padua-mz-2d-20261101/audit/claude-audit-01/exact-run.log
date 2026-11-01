@@ -1,0 +1,12 @@
+start m 10
+done m 10
+start m 20
+done m 20
+start m 30
+done m 30
+start m 40
+done m 40
+
+real	0m31.705s
+user	0m28.664s
+sys	0m2.634s
