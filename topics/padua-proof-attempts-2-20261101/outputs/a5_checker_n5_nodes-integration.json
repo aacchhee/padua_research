@@ -1,0 +1,23 @@
+{
+  "accepted": false,
+  "accepted_node_cones": 21,
+  "certificate_bytes": 62895,
+  "certificate_sha256": "d70d297aaf727d0d6b13ba690fb0768a7f5465aeb2d23b04a2fd0b7d5bb55eb8",
+  "checker_sha256": "6390d465a0e4c83f5cb75673834da4bfbda98c507266c9a81c60c85baceb7bab",
+  "count_certified": false,
+  "node_status_counts": {
+    "accepted": 21
+  },
+  "precision": 96,
+  "python": "3.12.14",
+  "scope": "local exact node predicates only; no maxima count",
+  "seconds": 13.400348694000058,
+  "sympy": "1.14.0",
+  "trusted_dependencies": [
+    "CPython integers/Fraction",
+    "SymPy exact field, linear and polynomial algebra"
+  ],
+  "verified_direction_breakpoints": 738,
+  "verified_node_records": 21,
+  "verified_supplied_node_witnesses": true
+}

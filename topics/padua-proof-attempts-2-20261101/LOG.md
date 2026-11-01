@@ -2,7 +2,7 @@
 
 - Branch: `codex/padua-proof-attempts-2-20261101` · Base: `a09d910ae7d5526b1e216066421a0bee7fc20da4` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh), PENDING.
 - Stage: WORK · Next: `Codex (gpt-6.1-sol xhigh): Continue codex/padua-proof-attempts-2-20261101.`
-- Claims: A2(i)–(iii) PROVED in theory01–03, support04. A5 n=3,4 counts PROVED in06/10, global argmax07/11, reductions05/08/09; n=5 active. A4(a)/B3/B1 not started.
+- Claims: A2(i)–(iii) PROVED in theory01–03, support04. A5 n=3,4,5 counts PROVED in06/10/16, global argmax07/11/17, reductions05/08/09/15/18; n=6 active. A4(a)/B3/B1 not started.
 - PR: draft against `codex/padua-proof-attempts-20261101`; additions under this topic only. Local IDs only; proposed upstream edits remain literal proposals.
 - Open for AC: no development approval needed; Claude audit is a later handoff.
 
@@ -139,3 +139,18 @@
 - The new generic final-reply Continue form is overridden only by AC's explicit exact final audit prompt in this task. The full audit instruction will still be in a numbered handoff. No clarification/approval is needed because AGENTS expressly gives AC's instructions precedence. Source/publication changes remain imported, with all new authored work still inside this topic.
 
 - Handoff adoption: [01-work.md](handoffs/01-work.md) is the single open WORK handoff, input842dfaa; no prior numbered handoff existed. Current rules were re-read after the clean main integration; all3 rule blobs match pinned e24b21f. No range.
+
+### A5 n=5 complete — node-cone coverage and separate global result
+
+- Result16 is PROVED:25strict relative maxima=14interior+9open-edge+2corner. Node-cone result15 and generic certificate correctness18 cover the new local and complete-partition predicates. Every actual node gap/cube is separately verified; analytic result19 additionally proves positive physical node gaps from quadratic reproduction and is not substituted into frozen code. Independent review fixed its positive-epsilon qualification, then accepted19/40/schema at pinned hashes.
+- Result17 is PROVED separately: global value(38+8sqrt3+10sqrt5)/15, equality exactly(−1,±1). Every actual flat/factor occurrence and every accepted noncorner root is bounded below cut19/4; exact corner values exceed the cut. Node leaves exclude all other weak maxima by radial ascent, while node value1 is smaller. The separate checker verifies these additional predicates rather than inferring a global theorem from a strict list.
+- Developer certificate125245bytes SHAa1238d59781733cc0d380dc513a0a642d0e24b985aeb9b90bb7233756273386e; different executor's125252bytes SHAd22c9b1e32728e511ca4ac20506df614b501669a37bc287ed1cde802b6c7f4b3. Decoded mathematical content is identical after removing only summary.seconds/boundary_summary.seconds. Global objects differ only in raw-certificate SHA binding. No artifact split; all individual files remain below1MB.
+- Complete coverage10182leaves,225656ordinary compatible-mask dispositions,150node leaves,21accepted cones/738direction breakpoints,139edge patterns/1815root dispositions,8corner active cases. No pending/unresolved region. Actual independent executor regenerated count/global data, checked both matching pairs (299.016661s/257.679985s) and31controls (27negative,4positive). Own verifier implementer separately passed full data/global and31controls (298.948013s/292.772945s). All6source hashes unchanged before/after. Commands/artifact identities/backend: independent-execution-a5-n5.md; separately implemented checker receipt: independent-checks-a5-n5-checker.md.
+- Root read15/18/19/16/17 and the node, full-mask and global checker paths. Independent mathematical reconstruction in independent-checks-a5-n5-reduction.md and independent-checks-a5-node-gap-n6.md supplements, and does not replace, the required Claude audit. Part2 audit remains PENDING.
+- A5 remains PARTIAL by cases3,4,5PROVED;6,7,8OPEN. N6 full runs/separate verifier and N7/N8 exact-field pilots continue within the original15:19UTC ceiling. None of A4(a),B3,B1 has started.
+
+### Refreshed main literature index — impact before integration
+
+- Boundary fetch found main `cf89b140530d5838bdb208a8c28f3e7aa676ace3` (AC merged MZ prior-art PR11). Part1 remains7b8884a. Read the complete literature/INDEX.md and CORPUS diff: corrected MZ/converse/mean-convergence source coverage and new MZ entries only; no Padua source, target, rule, template or mathematical implementation changed. No .github change. The required literature index is a depended-on input, so integrate this pinned main under AC's exception after this impact checkpoint; never rebase.
+- No arithmetic/proof run restarts: A2 and finite A5 statements use unchanged Padua-specific sources, while N7/N8 gates incorporate the added MZ rows as unrelated context. Original pins and current e24b21f rule provenance remain preserved; add a separate cf89b14 literature-input pin after integration. All additional paths are inherited upstream changes, not authored writes outside this topic.
+- N6 frozen producer modules/schema, analytic field40, pilot receipt and OPEN attempt are checkpointed alongside completed N5; its full run is still pending in/tmp and is not represented as complete evidence. N7/N8 prototypes remain untracked until their own durable checkpoints.

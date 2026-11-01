@@ -1,0 +1,170 @@
+{
+  "all_controls_passed": true,
+  "checker_sha256": "6390d465a0e4c83f5cb75673834da4bfbda98c507266c9a81c60c85baceb7bab",
+  "controls": [
+    {
+      "accepted": true,
+      "accepted_node_cones": 21,
+      "name": "all_supplied_exact_node_cones",
+      "node_status_counts": {
+        "accepted": 21
+      },
+      "verified_direction_breakpoints": 738,
+      "verified_node_records": 21
+    },
+    {
+      "name": "one_node_record_omitted",
+      "reason": "all 21 ordered node-cone records are required",
+      "rejected": true
+    },
+    {
+      "name": "one_feasible_direction_side_omitted",
+      "reason": "feasible direction-side segments are incomplete",
+      "rejected": true
+    },
+    {
+      "name": "one_internal_directional_zero_breakpoint_omitted",
+      "reason": "a cardinal directional zero breakpoint was omitted",
+      "rejected": true
+    },
+    {
+      "name": "false_positive_gap_lower_bound",
+      "reason": "claimed node gap lower bound exceeds a breakpoint value",
+      "rejected": true
+    },
+    {
+      "name": "cone_rectangle_hits_inactive_square_face",
+      "reason": "node cone meets an inactive opposite square face",
+      "rejected": true
+    },
+    {
+      "name": "radius_underestimates_whole_cone_rectangle",
+      "reason": "node cone R does not bound the entire supplied rectangle",
+      "rejected": true
+    },
+    {
+      "name": "false_whole_cone_node_cardinal_positivity_bound",
+      "reason": "node cardinal is not certified positive on entire B",
+      "rejected": true
+    },
+    {
+      "name": "one_cardinal_hessian_bound_underestimated",
+      "reason": "node Hessian quadratic-form bound failed",
+      "rejected": true
+    },
+    {
+      "name": "radial_remainder_exceeds_exact_gap",
+      "reason": "node radial remainder inequality R*H < m failed",
+      "rejected": true
+    },
+    {
+      "name": "whole_leaf_not_inside_referenced_cone",
+      "reason": "whole node leaf is not strictly inside its verified cone",
+      "rejected": true
+    },
+    {
+      "name": "non_strict_leaf_cone_containment",
+      "reason": "whole node leaf is not strictly inside its verified cone",
+      "rejected": true
+    },
+    {
+      "name": "zero_gap_or_missing_cone_has_no_discard_authority",
+      "reason": "node leaf references a missing, zero-gap, or unaccepted cone",
+      "rejected": true
+    },
+    {
+      "name": "node_leaf_cannot_hide_ordinary_pattern_list",
+      "reason": "node-cone leaf also contains ordinary patterns",
+      "rejected": true
+    },
+    {
+      "name": "overlapping_prefix_partition",
+      "reason": "leaf paths are not prefix-free",
+      "rejected": true
+    },
+    {
+      "accepted": true,
+      "name": "complete_vs_missing_prefix_subtree"
+    },
+    {
+      "name": "singular_zero_hessian_is_not_an_exclusion",
+      "reason": "no strict positive-curvature/negative-determinant exclusion",
+      "rejected": true
+    },
+    {
+      "name": "one_sturm_projected_root_omitted",
+      "reason": "root partition omits real roots",
+      "rejected": true
+    },
+    {
+      "accepted": true,
+      "masks": 10,
+      "name": "84_component_integer_vectors_vs_symbolic_masks"
+    },
+    {
+      "name": "ordinary_compatible_mask_omitted",
+      "reason": "compatible sign patterns missing, duplicated, reordered, or extraneous at 0000000000000",
+      "rejected": true
+    },
+    {
+      "name": "counterfeit_root_singular_preconditioner",
+      "reason": "singular preconditioner",
+      "rejected": true
+    },
+    {
+      "accepted": true,
+      "name": "complete_count_and_global_value_certificate"
+    },
+    {
+      "name": "global_certificate_bound_to_wrong_count_input",
+      "reason": "global format/completeness/count-certificate binding failed",
+      "rejected": true
+    },
+    {
+      "name": "global_exception_code_coverage_omitted",
+      "reason": "global exceptional disposition coverage changed",
+      "rejected": true
+    },
+    {
+      "name": "global_flat_factor_occurrence_count_changed",
+      "reason": "global flat/factor occurrence count or cut failed",
+      "rejected": true
+    },
+    {
+      "name": "global_exception_upper_bound_counterfeit",
+      "reason": "global exceptional flat/factor value bound failed",
+      "rejected": true
+    },
+    {
+      "name": "global_exact_node_value_changed",
+      "reason": "global cut or exact node value changed",
+      "rejected": true
+    },
+    {
+      "name": "global_interior_value_row_omitted",
+      "reason": "interior global value IDs incomplete or reordered",
+      "rejected": true
+    },
+    {
+      "name": "global_edge_value_row_omitted",
+      "reason": "edge global value IDs incomplete or reordered",
+      "rejected": true
+    },
+    {
+      "name": "global_interior_value_enclosure_counterfeit",
+      "reason": "interior global value enclosure or strict cut failed",
+      "rejected": true
+    },
+    {
+      "name": "global_exact_corner_value_counterfeit",
+      "reason": "exact common nonnode corner value failed",
+      "rejected": true
+    }
+  ],
+  "controls_sha256": "0508b79bd96f3a3b12c6f907992c5e179910f869d2fdabe3e669e8286164ef91",
+  "node_certificate_sha256": "d22c9b1e32728e511ca4ac20506df614b501669a37bc287ed1cde802b6c7f4b3",
+  "python": "3.12.14",
+  "scope": "independent verifier controls; no degree-five count",
+  "seconds": 292.7729445269997,
+  "sympy": "1.14.0"
+}

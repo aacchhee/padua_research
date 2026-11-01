@@ -11,7 +11,7 @@
 
 ## Status
 
-A5 PARTIAL by explicit degree cases: n=3 is PROVED under separate result06; n=4,…,8 remain OPEN. The same six-hour A5 box continues with the independently assigned n=4 developer. Result07 proves A4(d) for n=3. Required Claude audit of Part2 remains PENDING.
+A5 PARTIAL by explicit degree cases: n=3,4,5 are PROVED under separate results06/10/16; n=6,…,8 remain OPEN until their final evidence passes. Results07/11/17 prove A4(d) for n=3,4,5. The original15:19UTC deadline is unchanged. Required Claude audit of Part2 remains PENDING.
 
 ## Runs needed
 
@@ -95,3 +95,8 @@ The n=3 computation is at its done criterion; no further n=3 search is needed. A
 ## Orchestrator case update — n4 independently certified
 
 N3 and n4 are now PROVED under results06/10, with separate global results07/11. A5 remains PARTIAL by degree cases:3,4PROVED;5,…,8OPEN. N5 extension is active in T-A5-n5.md within the original15:19UTC ceiling. No other ordered target has started. Exact n4 count27=13interior+12edge+2corner; developer and actual independent producer/global/checker executions passed, with raw artifact identities and timing/backend differences recorded in independent-execution-a5-n4.md.
+
+
+## Orchestrator case update — n5 independently certified
+
+N5 is PROVED under16:25total=14interior+9edge+2corner, with separate exact global result17. All actual node cones, complete spatial/mask partition, edge/corner obligations and additional weak-max/value predicates passed both separate matching artifact checks and31controls. Actual different-agent producer/global/checker evidence: independent-execution-a5-n5.md. A5cases3,4,5PROVED;6,7,8OPEN. N6 full candidate and fresh independent execution plus N7/N8 field/node extensions continue within the unchanged15:19UTC ceiling. No later ordered target has started.

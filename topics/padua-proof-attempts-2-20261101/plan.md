@@ -17,3 +17,6 @@ Optional B4/B7 notes only when all five targets are at a stop. Every target gets
 Consequential exact/interval runs require an actual separate execution by a different subagent, with its own output. A5 additionally requires certificate verification by a separate checker, not another search run. Code reading is not a rerun; supplementary checks are not Claude audit.
 
 At each target boundary and every ~10 minutes with changes: commit/push add-only topic scope using AC author and Agent/Model trailers; recheck upstream audits and input drift. Do not merge unchanged main/upstream, allocate final IDs, alter shared registries, touch .github/, tag, force-push or merge PRs. Final Stage AUDIT; draft PR WORK / AUDIT(PENDING) / PR.
+
+
+Current checkpoint: A2 done; A5cases3/4/5certified under06/10/16, separate global07/11/17. Cases6/7/8continue within15:19UTC ceiling. A4(a),B3,B1remain ordered future work. Numbered WORK handoff01 adopts current e24b21f rules; no range/local IDs per AC. Future statuses require the same complete evidence criteria.
