@@ -1,0 +1,51 @@
+{
+  "format": "a5-n8-axis-join-structural-controls-v1",
+  "mathematical_certificate_accepted": false,
+  "mathematical_search_executed": false,
+  "negative_control_count": 24,
+  "negative_controls": [
+    "incomplete-interior-flag",
+    "already-complete-interior",
+    "pending-interior",
+    "unresolved-interior",
+    "existing-boundary-fields",
+    "wrong-source",
+    "incomplete-prefix",
+    "mixed-leaf-keys",
+    "wrong-leaf-accounting",
+    "wrong-root-count",
+    "missing-node-record",
+    "partial-edge-set",
+    "duplicate-edge",
+    "boolean-edge-coordinate",
+    "missing-corner",
+    "unresolved-corner",
+    "unresolved-boundary-list",
+    "incomplete-boundary-flag",
+    "wrong-boundary-count",
+    "wrong-disposition-count",
+    "wrong-raw-input-sha",
+    "different-existing-output-preserved",
+    "duplicate-json-key",
+    "wrong-frozen-base-joiner-pin"
+  ],
+  "passed": true,
+  "positive_controls": [
+    "literal-edge-corner-summary-copy",
+    "all-inputs-unmodified",
+    "root-disposition-count-accounting",
+    "deterministic-gzip-roundtrip",
+    "idempotence",
+    "source-pins-guarded"
+  ],
+  "scope": "synthetic STRUCTURAL data only; fixtures intentionally do not satisfy mathematical predicates",
+  "source_sha256_after": {
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n8_join_axis.py": "bee99288a67fd7fd007bf587ea62cb5e4a91cbf000c60d2fe0eb81d465179581",
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n8_join_axis_controls.py": "338bc9ee9d7ea8827f2530b15e54471cff6b3664add08e5e5988d4c97d965b4d"
+  },
+  "source_sha256_before": {
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n8_join_axis.py": "bee99288a67fd7fd007bf587ea62cb5e4a91cbf000c60d2fe0eb81d465179581",
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n8_join_axis_controls.py": "338bc9ee9d7ea8827f2530b15e54471cff6b3664add08e5e5988d4c97d965b4d"
+  },
+  "sources_unchanged": true
+}

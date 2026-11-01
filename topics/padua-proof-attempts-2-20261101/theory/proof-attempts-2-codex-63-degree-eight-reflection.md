@@ -74,7 +74,13 @@ so u=v. This proves exact reuse under the stated hypotheses. Each new reference 
 
 ## Scope
 
-Degree8 and x-reflection only. Complete counts and all global values still require61/62 and their full finite evidence. Current helper implementation takes the simpler fail-closed route for any axis-crossing root or unsupported non-left reference; the optional analytic reuse lemma is not silently treated as an executed implementation.
+Degree8 and x-reflection only. Complete counts and all global values still require61/62 and their full finite evidence. Frozen helpers84/a98 fail closed on axis-crossing boxes. NEW helperf770 implements the exact axis lemma already proved above: same-mask identity, all original stored/reflected root predicates, injectivity on hull(R,TR), and a fresh original-predicate check of every stored/enlarged/reflected reference hull. Unsupported cases still fail closed. The analytic statement and proof have not changed.
+
+## Application to the actual axis fixture
+
+The separate formal-field/Vandermonde verifier ACTUALLY rechecked all23 original V4 root records and IDs9,10,21 under the exact axis conditions, with same-original-C hull norms<=1/1000000. R9 is reflection-equal; R10/R21 are not. Evidence `../outputs/a5_checker_n8_axis_preflight.json`,24615bytes SHA256 `04b514dd497b870c7fedc038b462d2656a8f78fecdf750306addb6004f206f11`; receipt `../independent-checks-a5-n8-axis.md`. A DIFFERENT executor, requested gpt-6.1-sol medium, freshly ran its exact literal command: output `../outputs/a5_independent_n8_axis_preflight.json`,24613bytes SHA256 `a1b210518708eeec30c06b1a214e9da201298d7e4ea5b53aed167c9dfbe859f3`; receipt `../independent-execution-a5-n8-axis.md`. Removing ONLY elapsed seconds, the two parsed results are equal. This is actual independent execution, not the required Claude audit.
+
+The NEW f770 proposer then produced a clearly incomplete actual-axis fixture with43 supplied root records and14leaves. Frozen independent checker a9cff574… literally replayed it without importing the proposer, EXIT0 in62.5465s:45cones/3474breakpoints,43disjoint roots, all522compatible ordinary records including10stored-C root-reference hull checks,2centered universal leaves and2node leaves. Output `../outputs/a5_checker_n8_axis_fixture.json`,11690bytes SHA256 `2df5494bd96ead2e7d23c62a5616079476942c5e2d38cabd3edced84cf11cb74`. One reflected hull was actually enlarged; all reference predicates passed. Count/partition/boundary/acceptance flags remain FALSE. The sixth developer fault injection tests reflected-reference fail-closed behavior; it need not target the particular positively enlarged hull. No complete count or global conclusion is inferred from these fixtures.
 
 ## Open items
 

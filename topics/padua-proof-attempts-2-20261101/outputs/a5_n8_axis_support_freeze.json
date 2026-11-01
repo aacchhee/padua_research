@@ -1,0 +1,76 @@
+{
+  "files": [
+    {
+      "bytes": 9090,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_join.py",
+      "sha256": "a004f80c96ba75d78e6fff012c125e306c0d10bf9e625c859a177f17bd92e03e"
+    },
+    {
+      "bytes": 6240,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_join_controls.py",
+      "sha256": "55871ddc0b6ccb492eba9e98e4cddbf321de0a9c528b8bd0cf10873c74cd4e38"
+    },
+    {
+      "bytes": 13652,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_axis.py",
+      "sha256": "f77056651bb1bbf8eb3b154190eadad47ce33cbb3b793b4f32ae31f0834497e5"
+    },
+    {
+      "bytes": 4235,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_axis_controls.py",
+      "sha256": "dd2839f8b85161049b8327b201625694edd2d2cf5b62feb8d87819866e40e2fc"
+    },
+    {
+      "bytes": 9890,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_join_axis.py",
+      "sha256": "bee99288a67fd7fd007bf587ea62cb5e4a91cbf000c60d2fe0eb81d465179581"
+    },
+    {
+      "bytes": 6813,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_join_axis_controls.py",
+      "sha256": "338bc9ee9d7ea8827f2530b15e54471cff6b3664add08e5e5988d4c97d965b4d"
+    },
+    {
+      "bytes": 11692,
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-63-degree-eight-reflection.md",
+      "sha256": "1405301c91c01ed88992e639c92551957dffd13ac1a4930b304336da3f8c4d85"
+    },
+    {
+      "bytes": 51720,
+      "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n8.md",
+      "sha256": "04a66a77b2564a05a0cd738f293e2a0c9883a908e9ccf0ce30e0c8b11306e89b"
+    },
+    {
+      "bytes": 10995,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_v3_run_record.json",
+      "sha256": "77465d7cbd5f06cf9213f1310b2245de6f47ccac7439ebf81f0057d6e1bfbab9"
+    },
+    {
+      "bytes": 17333,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_v4_cap_inventory.json",
+      "sha256": "6e4ca5ad19f0fc0fbd27882060ec5b7156baff0e31b5b683db612936d6a60df8"
+    },
+    {
+      "bytes": 15558,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_v5_inventory.json",
+      "sha256": "0f5e2c41bc3f59b9ccc3ef4cdfc969b6493c91d36df546ef7ac1457386804366"
+    },
+    {
+      "bytes": 1932,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_join_controls.json",
+      "sha256": "2400ed6b0b5445bf33fd45d81dc69fc0020071bde76fb46cb5950cc31841d54f"
+    },
+    {
+      "bytes": 4108,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_axis_controls.json",
+      "sha256": "95024e1bcf1275caa54b2032805607c8b4bb5606009b862fa3540a1c294d9167"
+    },
+    {
+      "bytes": 1993,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_join_axis_controls.json",
+      "sha256": "3afc7ce9df4dc217ee5882f1babd968e3cdf00a92c7ff420d01b586eb95713e8"
+    }
+  ],
+  "format": "a5-n8-axis-support-freeze-v1",
+  "scope": "progress checkpoint; no count/global acceptance; active logs excluded"
+}

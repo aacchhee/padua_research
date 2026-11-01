@@ -47,6 +47,125 @@
     }
   },
   "actual_v3_exit_code": 0,
+  "actual_v4": {
+    "bytes": 370875,
+    "path": "/tmp/a5-n8-candidate-v4.json.gz",
+    "pending_paths": [
+      "1",
+      "01111",
+      "011101",
+      "0111001111111",
+      "01110011111101",
+      "0111001111110011",
+      "0111001111110010"
+    ],
+    "sha256": "4d0884a64cf6b41c7e9b6fadb7da56bed61a4c44e816b215a8e7ce37fdc0647c",
+    "summary": {
+      "Pcache": 8000,
+      "all_gradient_leaves": 66652,
+      "complete": false,
+      "depth": 34,
+      "interior": 23,
+      "interior_complete": false,
+      "leaf_counts": {
+        "all_gradient": 66652,
+        "gradient": 240795,
+        "hessian": 3490,
+        "node_cone": 159,
+        "root": 259
+      },
+      "leaf_pattern_records": 244544,
+      "maximum_ambiguity": 45,
+      "node_leaves": 159,
+      "pending": 7,
+      "seconds": 3601.4505321979523,
+      "stats": {
+        "all_gradient": 66652,
+        "discard": 70648,
+        "failedmask": 19646,
+        "gradient": 306257,
+        "hessian": 5416,
+        "mask_checks": 312344,
+        "node_cone": 159,
+        "root": 671,
+        "visited": 141302
+      },
+      "unresolved": 0
+    },
+    "validate_only_exit": 0,
+    "validate_only_stdout": "{\"structurally_valid\": true, \"lineage_valid\": true, \"active_left_pending\": 6, \"parked_right_pending\": 1, \"search_advanced\": false, \"input_sha256\": \"4d0884a64cf6b41c7e9b6fadb7da56bed61a4c44e816b215a8e7ce37fdc0647c\", \"input_bytes\": 370875, \"pending\": 7, \"disposed_leaves\": 70648, \"restored_roots\": 23, \"mathematical_certificate_accepted\": false}"
+  },
+  "actual_v5": {
+    "bytes": 390861,
+    "frozen_source_guards_valid": true,
+    "full_frontier_partition": true,
+    "honest_lineage_valid": true,
+    "left_prefix_complete": true,
+    "path": "/tmp/a5-n8-candidate-v5.json.gz",
+    "pending_paths": [
+      "1"
+    ],
+    "sha256": "6eeed0de98794f18379a656fc7d3c6ef13485fe3eee3f43b9f382cd308d21f56",
+    "summary": {
+      "Pcache": 6409,
+      "all_gradient_leaves": 72451,
+      "complete": false,
+      "depth": 34,
+      "interior": 24,
+      "interior_complete": false,
+      "leaf_counts": {
+        "all_gradient": 72451,
+        "gradient": 267179,
+        "hessian": 3501,
+        "node_cone": 173,
+        "root": 261
+      },
+      "leaf_pattern_records": 270941,
+      "maximum_ambiguity": 45,
+      "negative_half_complete": true,
+      "node_leaves": 173,
+      "pending": 1,
+      "seconds": 671.1041657924652,
+      "stats": {
+        "all_gradient": 72451,
+        "discard": 76760,
+        "failedmask": 21206,
+        "gradient": 345149,
+        "hessian": 5495,
+        "mask_checks": 351319,
+        "node_cone": 173,
+        "root": 675,
+        "visited": 153520
+      },
+      "unresolved": 0
+    }
+  },
+  "axis_aware": {
+    "actual_independent_negative_controls": 6,
+    "controls_sha256": "dd2839f8b85161049b8327b201625694edd2d2cf5b62feb8d87819866e40e2fc",
+    "developer_negative_controls": 6,
+    "input_sha256": "6eeed0de98794f18379a656fc7d3c6ef13485fe3eee3f43b9f382cd308d21f56",
+    "literal_fixed43root_fixture_checker_output_sha256": "2df5494bd96ead2e7d23c62a5616079476942c5e2d38cabd3edced84cf11cb74",
+    "log": "/tmp/a5-n8-interior-reflected-v1.log",
+    "output": "/tmp/a5-n8-interior-reflected-v1.json.gz",
+    "proposer_sha256": "f77056651bb1bbf8eb3b154190eadad47ce33cbb3b793b4f32ae31f0834497e5",
+    "status": "full static proposal actually launched; final result not yet collected",
+    "stderr": "/tmp/a5-n8-interior-reflected-v1.progress"
+  },
+  "axis_joiner": {
+    "actual_developer_and_independent_structural_controls": 24,
+    "controls_sha256": "338bc9ee9d7ea8827f2530b15e54471cff6b3664add08e5e5988d4c97d965b4d",
+    "source_sha256": "bee99288a67fd7fd007bf587ea62cb5e4a91cbf000c60d2fe0eb81d465179581",
+    "status": "PREPARED ONLY; real join not yet executed"
+  },
+  "boundary_execution": {
+    "outer_timeout_seconds": 1800,
+    "output": "/tmp/a5-n8-boundary-final-v1.json",
+    "source_sha256": "6088db34cce2952332bd22e560c8b02e90446236f994dc2bac79b33717e769cb",
+    "status": "RUNNING; fresh own full four-edge command",
+    "stderr": "/tmp/a5-n8-boundary-final-v1.progress",
+    "stdout": "/tmp/a5-n8-boundary-final-v1.log"
+  },
   "continuation": {
     "both_actual_structural_controls_sha256": "ed0b5af2766d7f6198753e08b7ea2bfb80b23ffc6b13767d7dc30743a1deaa03",
     "command": "PYTHONPATH=/tmp/padua2-deps timeout 5400 python -B topics/padua-proof-attempts-2-20261101/code/a5_n8_continue.py --resume /tmp/a5-n8-candidate-v3.json.gz --boxes 200000 --seconds 3600 --depth 44 --ambiguity 8 --full-depth 44 --root-depth 12 --cache-masks 8000 --certificate --boundary --output /tmp/a5-n8-candidate-v4.json.gz",
@@ -54,7 +173,7 @@
     "independent_executor": "/root/a5_n4 actual own-input continuation active; separate receipt",
     "scope": "own input only; self-contained old/new evidence; all original mathematical helpers/traversal AST unchanged",
     "source_sha256": "96ce015c9d3d161030be8d8d0de7e2c20f8e21d31b718948734703f3667476ad",
-    "status": "RUNNING",
+    "status": "ACTUAL EXIT0 at V4 cap; incomplete",
     "stderr": "/tmp/a5-n8-candidate-v4.progress",
     "stdout": "/tmp/a5-n8-candidate-v4.log"
   },
@@ -63,7 +182,7 @@
   "independent_executor": "/root/a5_n4; fresh nodes, no node-file; separate receipt",
   "interrupted_v1_developer_exit": 130,
   "interrupted_v1_independent_exit": 143,
-  "last_updated_utc": "2026-11-01T13:00:08.125635+00:00",
+  "last_updated_utc": "2026-11-01T14:02:38.802676+00:00",
   "node_input_sha256": "574a47af6a7d84a5f4b27dd3adce9797350860d6e40242869c58a90673e5b23c",
   "prepared_v5": {
     "actual_synthetic_controls_passed_by_both_executors": true,
@@ -92,7 +211,7 @@
       }
     ],
     "stage_upper_seconds": 2400,
-    "status": "PREPARATION COMPLETE; NO REAL SEARCH; actual V4 cap/root review required"
+    "status": "ACTUALLY EXECUTED; EXIT0 at complete negative-half frontier"
   },
   "producer_command": "PYTHONPATH=/tmp/padua2-deps timeout 5400 python -B topics/padua-proof-attempts-2-20261101/code/a5_n8_boxes.py --node-file /tmp/a5-n8-node-pilot.json --boxes 200000 --seconds 3600 --depth 44 --ambiguity 8 --full-depth 44 --root-depth 12 --cache-masks 8000 --certificate --boundary --output /tmp/a5-n8-candidate-v3.json.gz",
   "proof_claim": "none until complete artifact and independent acceptance/executions",
@@ -141,7 +260,7 @@
       "sha256": "1ca5289329359833859960d216b103284457495d6326d35463e18a761d43ed24"
     }
   ],
-  "status": "V3 COMPLETED INCOMPLETE at registered cap; V4 RUNNING; count/global targets OPEN",
+  "status": "V3/V4 capped incomplete; V5 actual left traversal complete; full static proposal and fresh boundary launched; count/global targets OPEN",
   "stderr": "/tmp/a5-n8-candidate-v3.progress",
   "stdout": "/tmp/a5-n8-candidate-v3.log",
   "v3_features": [

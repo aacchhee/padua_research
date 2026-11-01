@@ -143,3 +143,69 @@ Both V5 preparation commands ACTUALLY exited0 in session29191. Synthetic continu
 `outputs/a5_independent_n8_reflection_v5_controls.json`:2651bytes,SHA256 `a032752f72092eb7e8330a690a1fd4cd1356cb326b53c4430062219a6c614adb`.
 
 At the parent's further instruction, ACTUALLY decoded and compared this executor's old/new static fixtures after removing ONLY metadata. Every remaining mathematical AND summary field is exactly equal: old141026bytes/SHA256 `3c7b42e4e24ce42b5280579764a962a57cf5390efca7694d50d34b91d180d69e`; new141028bytes/SHA256 `c5fd359112bdb9db4ccfabc98d2288466d56f27a16364432355d4dba6dcaeb37`. This is decoded JSON-object equality, not identical gzip bytes. Both remain explicitly incomplete18-root/8-leaf fixtures; it establishes provenance-only versioning, not a count or a previously unperformed own-base-fixture checker replay. Active v4 is unchanged and future v5 search remains blocked until its actual cap and parent decision.
+
+## Mechanical joiner preparation controls only
+
+Parent explicitly authorized bounded synthetic controls while v4 remains untouched. Read both files in full: joiner `a004f80c96ba75d78e6fff012c125e306c0d10bf9e625c859a177f17bd92e03e`, controls `55871ddc0b6ccb492eba9e98e4cddbf321de0a9c528b8bd0cf10873c74cd4e38`. No finding within the mechanical scope: input raw digests are bound, complete flags/partitions/accounting are structural checks, boundary components are copied literally and serialization is checked. None of this accepts mathematical predicates. All19 source pins matched before use (prior16, both new files, and the frozen repacker additionally). This stdlib-only command uses synthetic inputs only; no real boundary or search is launched.
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps python -B topics/padua-proof-attempts-2-20261101/code/a5_n8_join_controls.py --output topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_join_controls.json
+```
+
+The joiner-controls command ACTUALLY exited0:23negative structural cases rejected and all6listed positive copy/accounting/roundtrip/idempotence controls passed. Output `outputs/a5_independent_n8_join_controls.json`:1932bytes,SHA256 `2400ed6b0b5445bf33fd45d81dc69fc0020071bde76fb46cb5950cc31841d54f`. All19 source pins matched AFTER exit. These fixtures intentionally do not satisfy mathematical predicates; no search or mathematical certificate was accepted. Active v4 remains unchanged. A real own-boundary/own-interior join still requires both complete components and the parent's later decision.
+
+## Actual v4 cap and pre-decision inventory
+
+Session23300 ACTUALLY exited0. Own raw `/tmp/a5-independent-n8-candidate-v4.json.gz`:363974bytes,SHA256 `66af01f5624c01d2c751d11684bb22e9152ca368b30addbaa52764a889e23dfe`. It reports3600.0101549625397new-phase seconds,137758cumulative visited boxes,68875disposed leaves,9pending and0unresolved; no full count is claimed. Exact frontier, summary and root R-box inventory are `outputs/a5_independent_n8_v4_cap_record.json`. Full disposed+pending+unresolved prefix partition:True; disposed left-half prefix complete:False. Axis-crossing boxes are enclosure diagnostics only, not an inferred equality or merge. All19 recorded source pins match after exit:True; source96/original-own-V3 node/root/leaf-prefix lineage preserved:True. No new search has yet been started after this cap.
+
+## Conditionally authorized final own left stage and parallel boundary
+
+The parent's explicit conditional authorization is now satisfied: own v4 exited0 with zero unresolved, source96/original-own-V3 lineage preserved and all frozen pins unchanged. Actual V5 validate-only exited0 in session88197, output `outputs/a5_independent_n8_validate_v4.json`: structurally_valid=true,lineage_valid=true,8active-left and1parked-right path,68875disposed leaves,21restored roots,search_advanced=false,mathematical_certificate_accepted=false. Exact actual validation command:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps python -B topics/padua-proof-attempts-2-20261101/code/a5_n8_continue_v5.py --resume /tmp/a5-independent-n8-candidate-v4.json.gz --original-v3 /tmp/a5-independent-n8-candidate-v3.json.gz --input-sha256 66af01f5624c01d2c751d11684bb22e9152ca368b30addbaa52764a889e23dfe --certificate --validate-only --output /tmp/a5-independent-n8-v5-validate-unused.json.gz > topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_validate_v4.json
+```
+
+All19 before-run source pins matched again. No other executor's data is used. AtUTC 2026-11-01T13:43:23.942518+00:00 the following exact commands are launched in parallel: final own-sourceE1 left-only continuation(max2400s,cumulative200000boxes,hard3000s) and fresh own-source6088 all-four-edge boundary(hard1800s). Every parked right path remains in the serialized full frontier; no full count is inferred from left completion. Both remain inside the parent15:19UTC ceiling.
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps timeout 3000 python -B topics/padua-proof-attempts-2-20261101/code/a5_n8_continue_v5.py --resume /tmp/a5-independent-n8-candidate-v4.json.gz --original-v3 /tmp/a5-independent-n8-candidate-v3.json.gz --input-sha256 66af01f5624c01d2c751d11684bb22e9152ca368b30addbaa52764a889e23dfe --boxes 200000 --seconds 2400 --depth 44 --ambiguity 8 --full-depth 44 --root-depth 12 --cache-masks 8000 --certificate --output /tmp/a5-independent-n8-candidate-v5.json.gz > topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_producer_v5.jsonl 2>/tmp/a5-independent-n8-v5.log
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps timeout 1800 python -B topics/padua-proof-attempts-2-20261101/code/a5_n8_boundary.py --edge-limit 4 --output /tmp/a5-independent-n8-boundary-final-v1.json > topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_boundary_final_v1.jsonl 2>/tmp/a5-independent-n8-boundary-final-v1.log
+```
+
+Both completion results, after-run guards and any full axis-aware proposal/join/global/repack/control acceptance remain pending. No new proposer is run without its separate explicit freeze and parent authorization.
+
+The authorized parallel commands were ACTUALLY launched: final own V5 in session29922 and fresh own all-four-edge boundary in session56173. Both initial tool results report running processes, not acceptance or completion. No axis-aware proposer, literal join, global producer, repacker or final full-controls invocation has yet been executed on real final data.
+
+## Axis-aware proposer and literal joiner bounded controls
+
+Read all four new sources in full, with no finding within the stated local63/mechanical scope: axis proposer `f77056651bb1bbf8eb3b154190eadad47ce33cbb3b793b4f32ae31f0834497e5`, controls `dd2839f8b85161049b8327b201625694edd2d2cf5b62feb8d87819866e40e2fc`; axis-allowlisted literal joiner `bee99288a67fd7fd007bf587ea62cb5e4a91cbf000c60d2fe0eb81d465179581`, controls `338bc9ee9d7ea8827f2530b15e54471cff6b3664add08e5e5988d4c97d965b4d`. All23 old/new pins matched before use. Axis reuse requires the EXACT same mask, full stored/reflected Krawczyk/cardinal/Hessian root checks and same-C injectivity on hull(R,TR); every target reference hull is rechecked. No overlap/proximity merge is used. The sixth injected-fault case exercises the FIRST reflected-reference injectivity call, not necessarily a genuinely enlarged axis reference; do not read its name as stronger coverage. The new joiner changes only the source allowlist/provenance guard and checks literal-copy AST equality with its frozen base.
+
+Parent-authorized commands below use the OWN immutable v4 cap and synthetic join fixtures; no complete count is accepted. Active V5/boundary runs remain unchanged.
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps python -B topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_axis_controls.py /tmp/a5-independent-n8-candidate-v4.json.gz --input-sha256 66af01f5624c01d2c751d11684bb22e9152ca368b30addbaa52764a889e23dfe --fixture /tmp/a5-independent-n8-axis-controls-fixture.json.gz --output topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_axis_controls.json
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps python -B topics/padua-proof-attempts-2-20261101/code/a5_n8_join_axis_controls.py --output topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_join_axis_controls.json
+```
+
+Both bounded axis/join-control commands ACTUALLY exited0 in session77846:6axis fault cases and24synthetic join faults rejected. All23 source pins matched AFTER exit. Own actual axis boxes9/10 satisfy the recorded exact same-mask stored/reflected-root and full-root-hull contraction checks; no complete count is accepted. Positive proposal receipt:{"acceptance_predicate_added": false, "enlarged_reference_hulls": 1, "exact_cardinal_identities": 45, "fixture_only": true, "left_complete": false, "mirrored_leaves": 6, "mirrored_ordinary_records": 260, "proposed_roots": 40, "reference_rechecks": 4, "retained_axis_roots": 2, "retained_left_roots": 19, "source_left_leaves": 6}. The sixth fault remains scoped to the FIRST reflected-reference call, not necessarily a genuinely enlarged reference.
+
+`outputs/a5_independent_n8_axis_controls.json`:3380bytes,SHA256 `fcce6dcaac37bf57fbea03b80cb1e8906ef65e7f31582f6a0221bbf3b2c8f822`.
+
+`outputs/a5_independent_n8_join_axis_controls.json`:1993bytes,SHA256 `3afc7ce9df4dc217ee5882f1babd968e3cdf00a92c7ff420d01b586eb95713e8`.
+
+Own incomplete axis fixture `/tmp/a5-independent-n8-axis-controls-fixture.json.gz`:145971bytes,SHA256 `87cf2aeb9dc02756b6e2cc752abac725dc38615d5de83eedeb9007754f2ebc06`. No full proposal or real join has yet been run; count_certified=false.
+
+## Actual complete own left prefix and authorized full ordinary proposal
+
+Own V5 session29922 ACTUALLY exited0 early after828.5748775005341seconds. Raw own gzip:390863bytes,SHA256 `cd6827318e4dcd8065b2fda82c9a869591d8519ef44a64df94e1e83ade350ba9`. The independently rebuilt stripped-left trie is COMPLETE, zero unresolved, and every parked right path remains serialized:["1"]. This is not yet a closed-square count. Actual root-record inventory:20negative R boxes and4axis-crossing R boxes (IDs[9, 10, 21, 23]); equality/axis reuse still needs the exact f770 checks. All23source pins match after V5 exit and again before this proposal. Own lineage raw bindings match v4 and originalv3. Record `outputs/a5_independent_n8_v5_record.json` supplies full summary/identity.
+
+The parent's full-proposal release conditions now hold: ACTUAL6/24controls passed, unchanged pins, zeroU and complete own-left prefix; parent reports the required literal fixture replay passed. Exact command, launched after this preflight atUTC 2026-11-01T14:01:00.987248+00:00:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps timeout 900 python -B topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_axis.py /tmp/a5-independent-n8-candidate-v5.json.gz --input-sha256 cd6827318e4dcd8065b2fda82c9a869591d8519ef44a64df94e1e83ade350ba9 --output /tmp/a5-independent-n8-interior-reflected-v1.json.gz > topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_proposal_v1.jsonl 2>/tmp/a5-independent-n8-proposal-v1.log
+```
+
+No fixture-only or boundary flag is used. The proposer must check every actual root/axis hull/reference and emits ordinary witnesses for the unchanged final checker. Own boundary is still a separate live computation. No count/global acceptance is claimed before its completion, literal join/value/repack and the required full matching-pair controls.
+
+The conditionally authorized full f770 ordinary proposer was ACTUALLY launched in session64025 after all preflight conditions and23source pins matched. Its live stdout is `outputs/a5_independent_n8_proposal_v1.jsonl`; no successful proposal completion is inferred from launch. Boundary session56173 remains separate/live.
