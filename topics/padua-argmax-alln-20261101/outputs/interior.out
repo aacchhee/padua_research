@@ -1,0 +1,6 @@
+8 Lc 6.2135 central [pi/4,3pi/4]^2 max 4.4188 gap 1.7947 | [pi/8,pi/2]^2 max 4.4188 gap 1.7947 gap/log n 0.863
+12 Lc 7.4494 central [pi/4,3pi/4]^2 max 5.5770 gap 1.8724 | [pi/8,pi/2]^2 max 5.5942 gap 1.8552 gap/log n 0.754
+16 Lc 8.4074 central [pi/4,3pi/4]^2 max 6.5638 gap 1.8436 | [pi/8,pi/2]^2 max 6.5638 gap 1.8436 gap/log n 0.665
+24 Lc 9.8725 central [pi/4,3pi/4]^2 max 8.0853 gap 1.7873 | [pi/8,pi/2]^2 max 8.0931 gap 1.7794 gap/log n 0.562
+32 Lc 10.9936 central [pi/4,3pi/4]^2 max 9.2449 gap 1.7487 | [pi/8,pi/2]^2 max 9.2333 gap 1.7603 gap/log n 0.505
+48 Lc 12.6888 central [pi/4,3pi/4]^2 max 10.9409 gap 1.7479 | [pi/8,pi/2]^2 max 10.9633 gap 1.7255 gap/log n 0.452
