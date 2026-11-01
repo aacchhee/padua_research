@@ -42,7 +42,7 @@ Overall status: **PROVED** (written proof; Claude audit pending).
 
 ## Checks
 
-Analytic proof, with no finite computational dependency. Independent hand-check of the -04 comparison is supplementary to the required Claude audit.
+Analytic proof, with no finite computational dependency. Independent hand-check of the -04 comparison and actual independent byte-identical exact/sanity reruns (separate receipt `../independent-execution-a2.md`) supplement the required Claude audit.
 
 ## Sources
 

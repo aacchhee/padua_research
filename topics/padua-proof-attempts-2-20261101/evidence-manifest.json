@@ -1320,13 +1320,18 @@
   "outputs": [
     {
       "path": "topics/padua-proof-attempts-2-20261101/LOG.md",
-      "sha256": "02dd7266789f614bc8f52bd4aff21ba671a7213b1014b205ffe5d0f7d773711d",
-      "bytes": 11916
+      "sha256": "b557c719a3a4d67e6da5737a22e567b73700f294433afeb5c9617b78680d8c5a",
+      "bytes": 15022
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A2.md",
       "sha256": "1717b073cd7c298b804e14856b018754707a9e5fcb5ea6e32bd0b4762ec3b6ed",
       "bytes": 10773
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A5.md",
+      "sha256": "86cb2a0cf4e2eb3208265515a88c69e4eb9129853b1ad11cc89af7f2826c59de",
+      "bytes": 6903
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/code/a2_exact_check.py",
@@ -1339,6 +1344,36 @@
       "bytes": 2121
     },
     {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_arithmetic.py",
+      "sha256": "6a3ed627b08fb963549b82c130740b534cc1fe5edef5d1473ca5af71270984a1",
+      "bytes": 3487
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_boundary.py",
+      "sha256": "d91d50a9bec8331e92aa764bfd053be857e11e1a26a218a902f1fa1ded55f353",
+      "bytes": 4554
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_checker.py",
+      "sha256": "5568b761197e9184fcb8a5f6bce6c5faedf64d71083e7edf29e01d9e22d79418",
+      "bytes": 28238
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_explore.py",
+      "sha256": "62f82ce82cfa415293951f52dd3bf7f4317f7a7277aca19c33698ba39adc75e7",
+      "bytes": 1319
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_producer.py",
+      "sha256": "7139e52fa939de712f306c7efd9025d1279140be9894b24c19f1f19eb34f1455",
+      "bytes": 5257
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_schema.md",
+      "sha256": "990a36ad9cf1a04ada064726b775edeba45888b2fa8508a884684e498e035a52",
+      "bytes": 8260
+    },
+    {
       "path": "topics/padua-proof-attempts-2-20261101/code/evidence_manifest.py",
       "sha256": "a145cfb819ed0f366932c8abdc72309183d1a2ee3060e09c9a7d5939a8b79b5b",
       "bytes": 4655
@@ -1347,6 +1382,11 @@
       "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a2.md",
       "sha256": "78158b6b53fe659161dea99e2abd2451d6a3ab1ed8c486496f25742fdfafed3d",
       "bytes": 7112
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a5-reduction.md",
+      "sha256": "537c2dc2c0c0b41d556c7978c9b3dad7e069557b486378d295a754e576d912c5",
+      "bytes": 13253
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-checks.md",
@@ -1389,24 +1429,29 @@
       "bytes": 3417
     },
     {
+      "path": "topics/padua-proof-attempts-2-20261101/proposed-record-changes.md",
+      "sha256": "9896dd80b620deaddcbf9756ef730b7a58085f96aae61f945e98025c0270a38e",
+      "bytes": 5473
+    },
+    {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-01-corner-leading-lower.md",
       "sha256": "6d99f737fab76931e5c26850f3e95e23d3df3c8f3f22cfb85238b5e9168e8032",
       "bytes": 3975
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-02-corner-explicit-leading.md",
-      "sha256": "85d6d5a95b559fd248d8aace9a7d1fe524817cfd927c4e80d7c4bfaf9afda8f2",
-      "bytes": 2994
+      "sha256": "275a947ac91291f5fddbd5291b5438bf37abe765113012936e59f8992242b441",
+      "bytes": 3095
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-03-corner-log-coefficient.md",
-      "sha256": "a1575c0eb1f60808c45d6b29220602ed8e1e4c7779fe945bfe1f7bd4b48e38ec",
-      "bytes": 7867
+      "sha256": "9f8667eeb1da848fd8a20e62d4fb4c5845bae938045182e0f4e8f21058c01696",
+      "bytes": 8017
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-04-corner-product-comparison.md",
-      "sha256": "649c836e719e8526c2efa585a5acdd7f07dc86fe153ebdbb356c43d1ea33bdda",
-      "bytes": 9851
+      "sha256": "afab6eb482c4df0ab19e149f4a990d3e41b73ef54665b6426d44243359e2f265",
+      "bytes": 9927
     }
   ],
   "exclusions": [

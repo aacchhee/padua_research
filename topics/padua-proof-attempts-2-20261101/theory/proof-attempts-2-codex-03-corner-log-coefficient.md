@@ -47,7 +47,7 @@ Candidate disposition: completion of a registered target. No historical novelty/
 
 ## Checks
 
-The proof has no computational dependency. Independent route agent `/root/a2_independent_route` reconstructed the same-mesh square, the deformation bound, and the harmonic/quadrature expansion by hand; see `../independent-checks-a2.md`. Developer exact regression passed n=1,…,6 (details in -04 and the attempt record). Developer also actually ran `python topics/padua-proof-attempts-2-20261101/code/a2_sanity.py > topics/padua-proof-attempts-2-20261101/outputs/a2_sanity.json`, NumPy2.3.5/64-bit-mantissa longdouble, n=2,…,64 and128,256,512,1024. Maximum measured b-remainder≈1.955813; at n=1024 it is≈1.848524867410685. Pinned T2 values at64,128,256 agree within3e−16. These are MEASURED sanity checks, not fits or proof. Actual independent rerun receipts are separate; required Claude audit remains pending.
+The proof has no computational dependency. Independent route agent `/root/a2_independent_route` reconstructed the same-mesh square, the deformation bound, and the harmonic/quadrature expansion by hand; see `../independent-checks-a2.md`. Developer exact regression passed n=1,…,6 (details in -04 and the attempt record). Developer also actually ran `python topics/padua-proof-attempts-2-20261101/code/a2_sanity.py > topics/padua-proof-attempts-2-20261101/outputs/a2_sanity.json`, NumPy2.3.5/64-bit-mantissa longdouble, n=2,…,64 and128,256,512,1024. Maximum measured b-remainder≈1.955813; at n=1024 it is≈1.848524867410685. Pinned T2 longdouble values at64,128,256 agree within3e−16; the pinned mpmath values agree within7e−16. These are MEASURED sanity checks, not fits or proof. A different agent actually reran both scripts, exit0 and byte-identical; its separate receipt is `../independent-execution-a2.md`. Required Claude audit remains pending.
 
 ## Sources
 
@@ -127,7 +127,7 @@ All-n corner b-term with an explicit loose remainder. No conclusion about where 
 
 ## Open items
 
-Required Claude audit and supplementary actual independent check receipts. Full A3 and global A4 remain OPEN. The next analytic refinement, if separately authorized, would analyze the bounded difference Λ_c−L_n² rather than infer its limit from fits.
+Required Claude audit. Supplementary actual independent check receipts are complete. Full A3 and global A4 remain OPEN. The next analytic refinement, if separately authorized, would analyze the bounded difference Λ_c−L_n² rather than infer its limit from fits.
 
 ## History
 

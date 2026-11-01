@@ -2,7 +2,7 @@
 
 - Branch: `codex/padua-proof-attempts-2-20261101` · Base: `a09d910ae7d5526b1e216066421a0bee7fc20da4` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh), PENDING.
 - Stage: WORK · Next: `Codex (gpt-6.1-sol xhigh): Continue codex/padua-proof-attempts-2-20261101.`
-- Claims: no new result yet; A2 active, A5/A4(a)/B3/B1 not started.
+- Claims: A2(i)–(iii) PROVED in theory01–03, support04; A5 active, A4(a)/B3/B1 not started.
 - PR: draft against `codex/padua-proof-attempts-20261101`; additions under this topic only. Local IDs only; proposed upstream edits remain literal proposals.
 - Open for AC: no development approval needed; Claude audit is a later handoff.
 
@@ -66,3 +66,18 @@
 - Pinned source sanity agrees with t2_onepage.out's mpmath corner values at64/128/256 to <7e-16; fitted b was not used as proof. New outputs remain small. No new parameter fit or full A3 expansion is claimed.
 - Refreshed main/part1/programme: unchanged at9739a0c/95279b8/9bd14a6. No further merge needed.
 - Next ordered target A5 now starts with its own pre-run gate/kill record. Rigorous corner(D), edge-node(E), and all five coverage obligations are required; theorem03 of part1 covers only its stated local degenerate-max discs.
+
+### A5 start and disjoint ownership
+
+- `/root/a5_develop`, gpt-6.1-sol xhigh, began09:19UTC after A2 completion; six-hour ceiling15:19UTC. Its pre-run record attempts/T-A5.md contains the target-specific gate and kill criteria before mathematical runs.
+- Owns only new attempts/T-A5.md, theory local numbers05–19, code/a5_* (excluding a5_checker* reserved for a separate checker), outputs/a5_* (excluding a5_independent* reserved for separate execution). Root owns Git and shared records. `/root/a2_independent_route` remains solxhigh but is now assigned bounded supplementary A5 finite-reduction/crease/boundary reasoning, read-only initially. It is not the Claude auditor.
+- Required A5 sequence:3,4 first, then extension if practical; all five obligations, exact/outward arithmetic, new certifier, separate certificate verifier and actual different-agent executions. Frozen t3 counts are only seed/context, not inherited certification. Old modules must be imported with bytecode disabled to avoid incidental writes outside this topic.
+- A2 status proposals saved as two literal old→new blocks in proposed-record-changes.md, each old block checked unique at programme9bd14a6. They retain original routes and full A3 OPEN status; no upstream edit is applied.
+
+### A5 certifier construction checkpoint — no certified count yet
+
+- New n3 certificate schema is code/a5_schema.md. It enumerates all1024 sign masks, supplies complete resultant-coordinate root lists with Sturm counts, and requires a checked disposition for every Cartesian root-box pair. Boundary schema follows separately. New certifier/arithmetic code is under code/a5_*, never a patch to frozen t3_certify.py.
+- `/root/a5_checker`, gpt-6.1-sol xhigh, independently implements code/a5_checker* and owns outputs/a5_checker* plus independent-checks-a5-checker.md. It verifies supplied certificate identities/coverage/predicates, not another search. A different executor will later rerun producer and checker. No checker acceptance/count is claimed yet.
+- Exact exploratory shape and pilot outputs stay in local /tmp and are diagnostic, not proof dependencies; final producer/checker must independently verify all essential predicates. The developer reports a128-mask pilot without unresolved pairs; that is not a count or completeness claim. Actual commands and outputs are retained in the A5 attempt as work proceeds.
+- Supplementary checker flagged that enumerating strict local maxima alone does not automatically exclude a non-strict global plateau/ridge. A4(d) remains OPEN until a separate argument and rigorous values cover all possible global maxima, including discarded flat/degenerate loci. Root sent a cubic classification route for independent assessment; no corollary is inferred silently.
+- A2 final edits after its scientific checkpoint add only actual-rerun references and clarify original longdouble vs mpmath agreement; proof/code/data unchanged. Root first-parent author/trailer/topic-scope check passed through3db1eee; imported upstream changes are exactly the two recorded input merges.
