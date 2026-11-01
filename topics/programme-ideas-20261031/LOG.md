@@ -172,6 +172,14 @@ Subagents are launched as background `general-purpose` agents on `claude-fable-5
 - Rehearsal from `21e620b` with #6, #11, #9 and #12 is clean in sequence, and #11-first auto-merges. Details are in [pr-prep.md](pr-prep.md).
 - Next free IDs: PD-T081, PD-N032, IDEA-177 and LIT-300 (draft #11 reserves LIT-293–299). AC still has to choose between provisional IDs at merge and final allocation. No ledger edit, no final ID. Only AC merges.
 
+## 2026-11-01 — Claude, final-ID allocation at AC's instruction (claude-opus-5-5; requested effort high); Stage PR
+
+- AC's instructions: "allocate this block now", then "are the lattice ids allocated now? if not, do that as well". The lattice IDs were still provisional on main (66 of them, deferred), so both blocks were allocated in `6954664`:
+  - lattice: PD-T081–094, PD-N032–038, IDEA-177–189 and LIT-300–331;
+  - programme-ideas: PD-T095–100, PD-N039–043, IDEA-190–209 and LIT-332–426;
+  - next unreserved: PD-T101, PD-N044, IDEA-210 and LIT-427.
+- Generator and map: `pr-prep/allocate.py` and `id-map.json`. Registry blocks, crosswalk, records and the ledger are updated, and provisional IDs are kept as provenance. No status change. The rehearsal with #11, #9 and #12 is clean. Details are in [pr-prep.md](pr-prep.md).
+
 ## Runs needed
 
-Response-02 focused review is complete, and PR preparation is done ([pr-prep.md](pr-prep.md)). What remains is AC's final-ID decision (PR #10 has merged and been re-integrated) and a focused Codex check of the integration. Certification of maxima and proofs of corner expansion/argmax stay OPEN; unimplemented rational and computed-section alternatives are unexcluded. Source identities verified in audit-02 remain pinned; Windows archive retention was not independently rechecked. No full n≤200/n=8192/80-bit replay is claimed. Completed commands/evidence are in the three audit-support directories with separate source revisions.
+Response-02 focused review is complete, and PR preparation is done ([pr-prep.md](pr-prep.md)). Final IDs are allocated. What remains is a focused Codex integration check, then AC's merge. Certification of maxima and proofs of corner expansion/argmax stay OPEN; unimplemented rational and computed-section alternatives are unexcluded. Source identities verified in audit-02 remain pinned; Windows archive retention was not independently rechecked. No full n≤200/n=8192/80-bit replay is claimed. Completed commands/evidence are in the three audit-support directories with separate source revisions.

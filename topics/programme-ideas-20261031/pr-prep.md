@@ -81,3 +81,24 @@ PR #10 merged into main as `21e620b`. That makes the PR #10 section above histor
   - → #12 (`c26a6ad`) is clean. Its files outside its own topic are byte-identical to `9bd14a6` or to #9;
   - the other order, main → #11 → #6, auto-merges.
 - **Final-ID boundary now:** PD-T081, PD-N032, IDEA-177 and LIT-300, because draft PR #11 reserves LIT-293–299 in its ledger copy. A final allocation for this PR would be PD-T081–086, PD-N032–036, IDEA-177–196 and LIT-300–394 (95). It still needs AC's choice: provisional at merge, or final allocation by the ledger owner or by explicit AC authorisation.
+
+## Final-ID allocation (2026-11-01, AC-authorised)
+
+AC's instructions were "allocate this block now" and, for the still-provisional lattice IDs, "if not, do that as well". Both blocks were allocated in `6954664` by `pr-prep/allocate.py`, which produced `pr-prep/id-map.json`. Lattice went first because it merged first, and the start points sit after the bivariate-Lanczos block and after draft #11's LIT-293–299 reservation.
+
+| Namespace | Lattice-unisolvence | Programme-ideas | Next unreserved |
+|---|---|---|---|
+| PD-T | PD-T081–094 (14) | PD-T095–100 (6) | PD-T101 |
+| PD-N | PD-N032–038 (7) | PD-N039–043 (5) | PD-N044 |
+| IDEA | IDEA-177–189 (13) | IDEA-190–209 (20) | IDEA-210 |
+| LIT | LIT-300–331 (32) | LIT-332–426 (95) | LIT-427 |
+
+- **Shared registries.** The four campaign blocks in PROOF_STATUS.md, state/IDEAS.md and literature/INDEX.md are renamed "final allocation (2026-11-01)". Each block starts with an allocation note, and its rows use the final ID with the provisional ID in parentheses or as an alias. References inside the blocks are resolved to final IDs, including the bivariate-Lanczos ones. Prose that described the provisional state is rewritten. The ID_CROSSWALK.md Final ID column is filled; the 16 merged LIT rows keep "Merged into …".
+- **Canonical records.** Each PD and IDEA record gets a "Final ID:" line under its heading: 21 lattice and 11 programme-ideas theory records, and the IDEA records in the three lattice `candidates.md` files and in `ideas/candidates.md`. Both literature baselines and the lattice track README get a header note. Statements, statuses, audit records and code are unchanged.
+- **Ledger.** One section is appended. The lattice provisional table and `provisional-id-map.json` are kept as provenance. This makes Claude the allocator for these two members only, under AC's authorisation.
+- **Checks.**
+  - Each new ID appears exactly once as a primary registry row (32 PD, 33 IDEA, 127 LIT).
+  - No new ID collides with an existing one.
+  - Every link in the renamed blocks resolves, and `git diff --check` is clean.
+  - The rehearsal main `21e620b` → #6 (`6954664`) → #11 (`97968d2`) → #9 (`7b8884a`) → #12 (`c26a6ad`) is clean, including the ledger.
+- **Expected effect:** the lattice audit-time checkers (`topics/lattice-unisolvence-20261031/check-response-01.py`, `response-review/check_response.py`) assert the earlier "Unallocated" state. They remain valid as receipts at their pinned revisions, but will not pass at this head.
