@@ -1,0 +1,69 @@
+{
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "arithmetic": "QQ(zeta), cyclotomic polynomial quotient; integer Laurent coefficients",
+  "script_sha256": "e7ea17bc56e44214fdf4206c654fb1710e7a8d3ca194dcdc15390a066a7920b0",
+  "scope": "n=1,...,6; all nodes; all four corners; no numerical tolerances",
+  "results": [
+    {
+      "n": 1,
+      "nodes": 3,
+      "cyclotomic_order": 4,
+      "field_degree": 2,
+      "vandermonde_inverse_exact": true,
+      "corner_cardinal_equalities": 12,
+      "rhombus_laurent_coefficients": 5,
+      "all_equalities_exact": true
+    },
+    {
+      "n": 2,
+      "nodes": 6,
+      "cyclotomic_order": 12,
+      "field_degree": 4,
+      "vandermonde_inverse_exact": true,
+      "corner_cardinal_equalities": 24,
+      "rhombus_laurent_coefficients": 13,
+      "all_equalities_exact": true
+    },
+    {
+      "n": 3,
+      "nodes": 10,
+      "cyclotomic_order": 24,
+      "field_degree": 8,
+      "vandermonde_inverse_exact": true,
+      "corner_cardinal_equalities": 40,
+      "rhombus_laurent_coefficients": 25,
+      "all_equalities_exact": true
+    },
+    {
+      "n": 4,
+      "nodes": 15,
+      "cyclotomic_order": 40,
+      "field_degree": 16,
+      "vandermonde_inverse_exact": true,
+      "corner_cardinal_equalities": 60,
+      "rhombus_laurent_coefficients": 41,
+      "all_equalities_exact": true
+    },
+    {
+      "n": 5,
+      "nodes": 21,
+      "cyclotomic_order": 60,
+      "field_degree": 16,
+      "vandermonde_inverse_exact": true,
+      "corner_cardinal_equalities": 84,
+      "rhombus_laurent_coefficients": 61,
+      "all_equalities_exact": true
+    },
+    {
+      "n": 6,
+      "nodes": 28,
+      "cyclotomic_order": 84,
+      "field_degree": 24,
+      "vandermonde_inverse_exact": true,
+      "corner_cardinal_equalities": 112,
+      "rhombus_laurent_coefficients": 85,
+      "all_equalities_exact": true
+    }
+  ]
+}
