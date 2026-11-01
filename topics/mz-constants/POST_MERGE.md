@@ -4,6 +4,8 @@ AC merged [PR #3](https://github.com/aacchhee/padua_research/pull/3) on 31 Octob
 
 The development, response and acceptance cycle is complete. [Audit-01](audit-01.md) accepted the original mathematical statements and [audit-02](audit-02.md) accepted response-01. Earlier requests to prepare, re-audit or merge PR #3 are historical. The accepted theorems, source coverage, result/idea IDs, statuses, dispositions, numerical evidence and shared ID reservations remain unchanged.
 
+The original theory headers retain pre-acceptance wording about a required audit pending; that audit wording is superseded by audit-01 and audit-02 above. At the old audited PR #5 head, the PD-T014/PD-T022 rows in [PROOF_STATUS.md](../../PROOF_STATUS.md) also carried focused-audit-pending wording; the PR #4 parent corrects those two administrative cells under AC’s registry-cleanup instruction. The separate literature/novelty coverage marked PENDING remains unresolved; acceptance of the mathematics does not clear those gaps.
+
 ## Remaining scientific and literature frontier
 
 These are already registered targets and named gaps, not new proposals or newly activated directions:
@@ -19,6 +21,6 @@ Other rule classification and certified/fast-spectrum routes remain deferred in 
 
 ## Coordination and evidence
 
-The [shared batch ledger](../padua-batch-20261031/ALLOCATIONS.md) retains its accepted owner and reservations: next free IDs are PD-T029, PD-N007, LIT-066 and IDEA-077. Its integration-status prose now records MZ completion; the reservation table is unchanged. Earlier preparation/next-merge instructions remain historical in the original logs. No new allocation or owner change is made here. Programme-ideas and bivariate-Lanczos prepare their later integration from the MZ-bearing main in AC's chosen order, reconciling current reservations before allocation.
+The [shared batch ledger](../padua-batch-20261031/ALLOCATIONS.md) retains its accepted owner and reservations: next free IDs are PD-T029, PD-N007, LIT-066 and IDEA-077. Its integration-status prose records MZ completion; the reservation table is unchanged. Earlier preparation/next-merge instructions remain historical in the original logs. No new allocation or owner change is made here. Programme-ideas and bivariate-Lanczos will prepare their later integration from the MZ-bearing main in AC's chosen order, reconciling current reservations before allocation. This states their required next action, not completed propagation. The PR #4 parent carries the reconciled six-member ledger, including PR #5; PR #5 inherits that ledger rather than creating a second allocation authority. See the [administrative audit response](../mz-postmerge-frontier-20261031/response-01.md) for the stack receipt and its pending checks.
 
 No new numerical run is required to verify this administrative closure. GitHub status, merge ancestry, parents and exact tree identity are recorded in [merge-verification.json](../mz-postmerge-frontier-20261031/merge-verification.json). Existing floating-point observations stay MEASURED, the three target records above stay OPEN, and Windows archival delivery remains unconfirmed. The charter's scoped waiver is not silently extended to this track.

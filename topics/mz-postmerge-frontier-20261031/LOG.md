@@ -1,7 +1,7 @@
 # Verify the MZ merge and update its frontier
 
 - Branch: codex/mz-postmerge-frontier-20261031. Base: 07c5f5465d6de306aa81dbe8ca1f615295163864, current origin/main containing AC's completed PR #3 integration.
-- Stage: PR (Claude audit-01 ACCEPTED; Low findings L1–L4 recommended before merge, text-only). Next: `Codex (gpt-6.1-sol medium): Continue codex/mz-postmerge-frontier-20261031; answer audit-01 L1–L4 in response-01.md and request AC's merge decision.` Original MZ development is complete and its accepted mathematics is unchanged.
+- Stage: PR (Claude audit-01 ACCEPTED for its administrative scope; text-only response-01 addresses Low L1–L4). Next: `Codex (gpt-6.1-sol medium): Continue codex/mz-postmerge-frontier-20261031; record the PR #4 parent, verify the stacked PR #5 response and rehearsal, and request AC's merge decision after the receipts pass.` Original MZ development is complete and its accepted mathematics is unchanged. Stack completion is pending the orchestrator receipt below.
 - Role/model: Codex orchestrator; AC requested gpt-6.1-sol medium, root runtime model/effort metadata unexposed.
 - Rules read at starting head 8ee04f4e5db46dd25fe5752ce605dde27098aae6; the complete ready-head/main trees and rule files are identical. No rule or template change.
 
@@ -13,11 +13,11 @@ The original MZ log and its single scoped CURRENT paragraph now record completio
 
 Only this review branch is written; main is not committed or pushed, no PR is merged by an agent, and the existing member branches are untouched. The original PR is closed; this follow-up keeps the frontier update separately reviewable under the repository's PR-only integration policy.
 
-## Verification commands
+## Historical initial verification commands
 
-The check uses the GitHub PR metadata and read-only Git commands: fetch origin/main, inspect commit parents/tree, compare the ready-head/main trees, verify ancestry, and compare every protected result/source/code/registry file against the recorded base. Exact results are in merge-verification.json and checks.json: all 308 protected tracked files match the merged base, the charter prefix and ledger reservation table/owner are unchanged, 24 local links resolve, and git diff --check passes. This is administrative verification, not a rerun of accepted numerical evidence. Independent protocol review is supplemental; the required Claude audit remains PENDING.
+The original check used the GitHub PR metadata and read-only Git commands: fetch origin/main, inspect commit parents/tree, compare the ready-head/main trees, verify ancestry, and compare every protected result/source/code/registry file against the recorded base. Exact historical results are in merge-verification.json and checks.json: all 308 protected tracked files matched the merged base, the charter prefix and ledger reservation table/owner were unchanged, 24 local links resolved, and git diff --check passed. This was administrative verification, not a rerun of accepted numerical evidence. Independent protocol review was supplemental; the required Claude audit was PENDING at that checkpoint and was subsequently accepted below. These records do not hash the later response candidate.
 
-Next: `Claude (Sonnet 5.5 high): Audit the administrative post-merge frontier update against main at 07c5f54; preserve accepted results and allocations.`
+Historical next step (completed by audit-01 below): `Claude (Sonnet 5.5 high): Audit the administrative post-merge frontier update against main at 07c5f54; preserve accepted results and allocations.`
 
 ## 2026-10-31 — Claude audit-01 (independent auditor)
 
@@ -28,3 +28,15 @@ Next: `Claude (Sonnet 5.5 high): Audit the administrative post-merge frontier up
   - L2: restore the accepted-result IDs in state/CURRENT.md.
   - L3: the ledger prose "adopt these exact bytes" no longer matches the members' copies.
   - L4: the commit's `Agent:` trailer does not parse.
+
+## 2026-11-01 — response-01 and stacked administrative follow-up
+
+- Developer: Codex, assigned `gpt-6.1-sol` medium; runtime fingerprint/effort metadata unexposed. Rules re-read at `ac61532fdbf40d50647476d87ed4e3f0b4b53802`.
+- Stage: PR, retaining the accepted Claude audit for its original administrative scope. [Response-01](response-01.md) answers Low L1–L4 using the audit's text-only-impact allowance; no new audit acceptance is claimed.
+- Added POST_MERGE disclosure of superseded audit-pending wording while preserving unresolved novelty/literature gaps; clarified the later members' future integration responsibility. PR #4 preserves the accepted MZ CURRENT index and carries the single six-member ledger; PR #5 inherits those accepted IDs and exact ledger bytes, completing only its MZ frontier paragraph and POST_MERGE link. No science, ID allocation, rule or template change.
+- Original verification/auditor files remain immutable historical evidence. [Response checks](response-01-checks.json) record current comparisons separately; do not reuse their old hashes as new candidate evidence.
+- Stack integration checkpoint: root merged PR #4 parent `ad40c38ffbd28a80500f6ee10dd35bc778ac4c5b` into PR #5 at `f43f4c021a695504ad67d6e91681807def22238e` without rebase. Ledger conflict resolution took the parent bytes exactly; CURRENT retained the parent prefix/suffix around the completed MZ paragraph. These are review checkpoints, not the final response commit/envelope. Retargeting to `codex/lattice-unisolvence-20261031` and stack rehearsal remain PENDING orchestrator execution; [response-01](response-01.md) tracks them. Only root changes Git/PR metadata; only AC merges.
+
+### Runs needed
+
+The response checker with `--parent ad40c38ffbd28a80500f6ee10dd35bc778ac4c5b` and `git diff --check` pass at the review checkpoint: 503 protected parent paths unchanged; accepted MZ index/constant/links, surrounding CURRENT text, exact ledger bytes and immutable historical evidence preserved. Rerun after further edits. Root must still execute and record the stack rehearsal and retargeting. No numerical run is required for these prose-only dispositions.
