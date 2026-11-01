@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-07 — The global Padua argmax for degree three
 
+Final ID: **PD-T162**. Provisional ID `PD-T?proof-attempts-2-codex-07` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-T099 (finite global or exact edge/central-scope split; full-square all-n statement remains OPEN).
+
 ID kind: PD-T.
 Aliases: A4(d) n=3; exact corner argmax; exclusion of non-strict cubic plateaus.
 Split from: the n=3 finite verification case of A4(d), `PD-T?programme-ideas-claude-05`.

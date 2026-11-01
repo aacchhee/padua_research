@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-76 — Joint stability of the central triangle defect
 
+Final ID: **PD-T191**. Provisional ID `PD-T?proof-attempts-2-codex-76` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-T099 (finite global or exact edge/central-scope split; full-square all-n statement remains OPEN).
+
 Current audit note, 2026-11-01: Claude audit-01 accepted this record at its stated scope. Historical audit-pending statements below describe development checkpoints.
 
 ID kind: PD-T.

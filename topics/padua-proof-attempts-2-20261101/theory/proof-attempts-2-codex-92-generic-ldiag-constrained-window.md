@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-92 — B1 for generic real exterior parallel diagonal poles
 
+Final ID: **PD-T196**. Provisional ID `PD-T?proof-attempts-2-codex-92` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-N040 / OPEN_TARGETS B1 (structural class split; measured implementation instability retained).
+
 ID kind: PD-T.
 Aliases: B1 project two/constrain one; finite-degree generic Ldiag theorem; pole-only generic exact extraction.
 Split from: programme `OPEN_TARGETS.md` B1, completed for the class and quantifiers below.

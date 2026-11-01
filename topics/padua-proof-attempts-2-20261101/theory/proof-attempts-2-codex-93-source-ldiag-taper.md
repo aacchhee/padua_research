@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-93 — The source Ldiag taper has only finitely many exceptional parameters
 
+Final ID: **PD-T197**. Provisional ID `PD-T?proof-attempts-2-codex-93` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-N040 / OPEN_TARGETS B1 (structural class split; measured implementation instability retained).
+
 Current audit note, 2026-11-01: Claude audit-01 accepted this record at its stated scope. Historical audit-pending statements below describe development checkpoints.
 
 ID kind: PD-T.

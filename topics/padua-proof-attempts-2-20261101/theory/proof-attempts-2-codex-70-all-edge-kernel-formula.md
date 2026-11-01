@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-70 — Exact Padua formula on all four edges
 
+Final ID: **PD-T185**. Provisional ID `PD-T?proof-attempts-2-codex-70` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-T099 (finite global or exact edge/central-scope split; full-square all-n statement remains OPEN).
+
 ID kind: PD-T.
 Aliases: A4(a) all-edge closed form; symmetrized rhombus edge kernel.
 Split from: the exact-edge-identity part of ordered target A4(a), programme source05 / OPEN_TARGETS A4.

@@ -1,5 +1,9 @@
 # PD-N?proof-attempts-2-codex-01 — The symmetrised-product count fails inside positive-pivot computed sections
 
+Final ID: **PD-N072**. Provisional ID `PD-N?proof-attempts-2-codex-01` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-N039 / OPEN_TARGETS B3 (computed-section extension or separate supporting route obstruction; original scope retained).
+
 Current audit note, 2026-11-01: Claude audit-01 accepted this record at its stated scope. Historical audit-pending statements below describe development checkpoints.
 
 ID kind: PD-N.

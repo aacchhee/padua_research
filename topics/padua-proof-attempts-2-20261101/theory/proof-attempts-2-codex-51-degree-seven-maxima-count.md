@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-51 — Degree-seven Padua maxima-count certification
 
+Final ID: **PD-T176**. Provisional ID `PD-T?proof-attempts-2-codex-51` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-T100 / OPEN_TARGETS A5 (exact finite case, supporting result or separately OPEN obligation; source measurement retained).
+
 Current audit note, 2026-11-01: Claude audit-01 accepted this record at its stated scope. Historical audit-pending statements below describe development checkpoints.
 
 LITERATURE attribution (audit-01 F8): arXiv 2605.23299v1, §3.3 Table 3, LIT-388. Its reported counts are source statements; the local certificate/proof and candidate-correction scope are separate.

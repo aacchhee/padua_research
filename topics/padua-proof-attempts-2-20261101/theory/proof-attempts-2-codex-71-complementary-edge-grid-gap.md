@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-71 — Positive corner gap on complementary edge-grid points
 
+Final ID: **PD-T186**. Provisional ID `PD-T?proof-attempts-2-codex-71` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-T099 (finite global or exact edge/central-scope split; full-square all-n statement remains OPEN).
+
 ID kind: PD-T.
 Aliases: A4(a) complementary ordinate; exact triangle defect; singular endpoint correction.
 Split from: the point-value part of A4(a), after the all-edge identity70.

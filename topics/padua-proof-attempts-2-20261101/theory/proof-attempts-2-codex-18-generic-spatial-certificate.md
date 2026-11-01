@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-18 — Degree-independent spatial certificate with exact node cones
 
+Final ID: **PD-T170**. Provisional ID `PD-T?proof-attempts-2-codex-18` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-T100 / OPEN_TARGETS A5 (exact finite case, supporting result or separately OPEN obligation; source measurement retained).
+
 ID kind: PD-T.
 Aliases: A5 complete compatible-sign trees; algebraic edge arrangements; node-cone certificate extension.
 Split from: verification obligations(1),(3)–(5) of programme A5 for the degree-five extension.

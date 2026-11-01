@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-60 — Degree-eight Padua tensor field and specified real embedding
 
+Final ID: **PD-T179**. Provisional ID `PD-T?proof-attempts-2-codex-60` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-T100 / OPEN_TARGETS A5 (exact finite case, supporting result or separately OPEN obligation; source measurement retained).
+
 ID kind: PD-T.
 Aliases: A5 n8 coefficient field; quartic/cubic tensor basis; native-to-tensor embedding conversion.
 Split from: exact arithmetic and real-embedding obligation for the n8 case of A5.

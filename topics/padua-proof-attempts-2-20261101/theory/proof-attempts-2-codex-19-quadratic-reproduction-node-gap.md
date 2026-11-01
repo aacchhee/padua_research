@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-19 — Quadratic reproduction forces a positive physical node gap
 
+Final ID: **PD-T171**. Provisional ID `PD-T?proof-attempts-2-codex-19` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-T100 / OPEN_TARGETS A5 (exact finite case, supporting result or separately OPEN obligation; source measurement retained).
+
 ID kind: PD-T.
 Aliases: uniform radial node-gap positivity; squared-distance reproduction; explicit node-separation lower bound.
 Split from: the positive-gap hypothesis of the supporting node-cone result15.

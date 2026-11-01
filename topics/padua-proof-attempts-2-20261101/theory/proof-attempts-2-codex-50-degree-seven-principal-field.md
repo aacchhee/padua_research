@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-50 — Degree-seven tensor field and its principal real embedding
 
+Final ID: **PD-T175**. Provisional ID `PD-T?proof-attempts-2-codex-50` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-T100 / OPEN_TARGETS A5 (exact finite case, supporting result or separately OPEN obligation; source measurement retained).
+
 ID kind: PD-T.
 Aliases: A5 n7 arithmetic; cos(pi/7),cos(pi/8); degree12 native-to-tensor conversion.
 Split from: real-embedding obligation for the degree-seven finite certificate.

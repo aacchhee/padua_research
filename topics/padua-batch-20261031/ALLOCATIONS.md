@@ -213,3 +213,7 @@ Fresh union: main `67bd07c0867d8d49eb104942237d7f51a7d9f77d`, sole open PR12 `f4
 | LIT | no range | 0 | existing LIT-312, LIT-379 and LIT-388 reused |
 
 Reservation priority is the pushed commit introducing this section, published in PR12 before assignment. No final IDs are assigned in this reservation checkpoint. Unused IDs remain permanent gaps. PR15's registrations and headroom through155/071/285/459 remain intact. Integration order: PR15 is merged; PR12 follows on new main without rebasing. Only AC merges.
+
+## PR12 assignments after reservation publication
+
+Priority: published103ee71e101265ca4133c7ffea8c0e48fa840109 before assignment. Assigned PD-T156–197 (42), PD-N072–073 (2), IDEA-286–311 (26). Permanent unused headroom PD-T198–205, PD-N074–077, IDEA-312–315. No LIT assignment/range; source IDs312/379/388 reused. [Map](../padua-proof-attempts-2-20261101/preparation/final-id-map.json). All earlier reservations and gaps, especially merged PR15's, remain unchanged. PR15 is merged as67bd07c; PR12 follows on that base. Only AC merges.

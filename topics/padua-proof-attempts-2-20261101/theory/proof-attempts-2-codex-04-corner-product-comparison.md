@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-04 — A bounded comparison with a squared Chebyshev sum
 
+Final ID: **PD-T159**. Provisional ID `PD-T?proof-attempts-2-codex-04` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-T098 (A2 split; full A3 remains OPEN).
+
 Current audit note, 2026-11-01: Claude audit-01 accepted this record at its stated scope. Historical audit-pending statements below describe development checkpoints.
 
 ID kind: PD-T.

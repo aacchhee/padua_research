@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-91 — A coalescent structural witness for pole-only generic rank
 
+Final ID: **PD-T195**. Provisional ID `PD-T?proof-attempts-2-codex-91` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-N040 / OPEN_TARGETS B1 (structural class split; measured implementation instability retained).
+
 ID kind: PD-T.
 Aliases: B1 generic generation; coalescent projective polynomial flag; fixed-data offset discriminant.
 Split from: programme `OPEN_TARGETS.md` B1, reverse-inclusion/generic-rank obligation.

@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-73 — Positive one-dimensional and alternating-series formulas for g
 
+Final ID: **PD-T188**. Provisional ID `PD-T?proof-attempts-2-codex-73` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-T099 (finite global or exact edge/central-scope split; full-square all-n statement remains OPEN).
+
 ID kind: PD-T.
 Aliases: A4(a) central-grid gap constant; exact rational series; integrated triangle defect.
 Split from: the constant g in72.

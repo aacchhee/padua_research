@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-02 — An explicit two-sided corner leading term
 
+Final ID: **PD-T157**. Provisional ID `PD-T?proof-attempts-2-codex-02` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-T098 (A2 split; full A3 remains OPEN).
+
 ID kind: PD-T.
 Aliases: A2(ii); explicit O(log n) corner remainder.
 Split from: OPEN_TARGETS A2 at programme SHA `9bd14a6d2c4da69139a10107d8a787f2be0c5c9e`, the two-sided leading-term part.

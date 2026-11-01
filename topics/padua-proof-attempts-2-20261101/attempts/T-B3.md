@@ -87,3 +87,5 @@ Achieved scope: PROVED PD-N?proof-attempts-2-codex-01 gives a fixed n=1,p=1/10,M
 All mathematical sources/proof bodies are now frozen: driver b33647b8…, negative01 c0cbcc79…, negative02 7c2066c2…, positive80 374e2187…. Actual independent execution receipt and supplementary full-proof receipt remain separate from the required Claude audit, which is PENDING. The independent analytic final receipt SHA256 is `72b85a3956aa8a61c3f724a24f7708e65e74bcb6b1cd29eb96a3c55b200bf2e1`. No consequential computation remains unexecuted for this claim.
 
 Current Runs needed: root-owned integration/registry proposal and eventual Claude audit; B1 is the next ordered mathematical target under root control. No local/shared results file is written by this subagent and no Git/handoff action is taken.
+
+Final registration: original B3-C1 → IDEA-306 (REJECTED: failed); C2 → IDEA-307 (consolidated into C3); C3 → IDEA-308 (retained counterexample). Proved negatives PD-N072/073 remain scoped.

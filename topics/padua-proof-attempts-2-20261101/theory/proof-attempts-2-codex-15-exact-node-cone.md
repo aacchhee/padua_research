@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-15 — Exact physical node-cone exclusion
 
+Final ID: **PD-T167**. Provisional ID `PD-T?proof-attempts-2-codex-15` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-T100 / OPEN_TARGETS A5 (exact finite case, supporting result or separately OPEN obligation; source measurement retained).
+
 ID kind: PD-T.
 Aliases: A5 degree-five node gap; radial absolute-cardinal derivative; exact unit-square breakpoint minimum.
 Split from: node-neighbourhood coverage in the degree-five case of programme A5.

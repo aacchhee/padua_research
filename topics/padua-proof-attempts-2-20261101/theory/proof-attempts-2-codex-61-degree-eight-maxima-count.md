@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-61 — Degree-eight strict-local-maxima count
 
+Final ID: **PD-T180**. Provisional ID `PD-T?proof-attempts-2-codex-61` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-T100 / OPEN_TARGETS A5 (exact finite case, supporting result or separately OPEN obligation; source measurement retained).
+
 Current audit note, 2026-11-01: Claude audit-01 accepted this record at its stated scope (including its OPEN status). Historical audit-pending statements below describe development checkpoints.
 
 ID kind: PD-T.

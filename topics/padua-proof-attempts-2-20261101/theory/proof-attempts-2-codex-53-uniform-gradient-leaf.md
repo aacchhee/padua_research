@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-53 — Uniform compatible-pattern gradient exclusion
 
+Final ID: **PD-T178**. Provisional ID `PD-T?proof-attempts-2-codex-53` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-T100 / OPEN_TARGETS A5 (exact finite case, supporting result or separately OPEN obligation; source measurement retained).
+
 ID kind: PD-T.
 Aliases: A5 all_gradient leaf; exact background plus ambiguous derivative majorant.
 Split from: degree-seven spatial coverage performance obstacle.

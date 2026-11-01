@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-72 — A positive limiting gap at central complementary edge points
 
+Final ID: **PD-T187**. Provisional ID `PD-T?proof-attempts-2-codex-72` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-T099 (finite global or exact edge/central-scope split; full-square all-n statement remains OPEN).
+
 ID kind: PD-T.
 Aliases: A4(a) central-grid auxiliary sequence; positive cancellation integral.
 Split from: complementary-grid identity71 and the point-value portion of A4(a).

@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-42 — Degree-six global Lebesgue maximum at the non-node corners
 
+Final ID: **PD-T174**. Provisional ID `PD-T?proof-attempts-2-codex-42` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-T099 (finite global or exact edge/central-scope split; full-square all-n statement remains OPEN).
+
 ID kind: PD-T.
 Aliases: A4(d) n6; exact degree-six corner value; node/plateau value exclusion.
 Split from: n6 finite-degree case of programme A4(d) / corner-argmax target.

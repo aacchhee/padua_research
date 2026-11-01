@@ -1,5 +1,9 @@
 # PD-N?proof-attempts-2-codex-02 — A common collapsing cluster cannot retain uniform parent pivots
 
+Final ID: **PD-N073**. Provisional ID `PD-N?proof-attempts-2-codex-02` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-N039 / OPEN_TARGETS B3 (computed-section extension or separate supporting route obstruction; original scope retained).
+
 ID kind: PD-N.
 Aliases: B3-C1 literal cluster implantation failure; shared two-dimensional full-residual obstruction; fixed-degree uniform-pivot limitation.
 Split from: attempted mechanism B3-C1 in attempts/T-B3.md.

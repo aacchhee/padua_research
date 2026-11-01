@@ -5,7 +5,7 @@ Final ID: **PD-T098** (allocated 2026-11-01 under AC's authorisation; the provis
 ID kind: PD-T.
 Aliases: corner expansion; Λ_c(n); b = (8/π²)(γ + log(8/π)); c = 1.84616…; κ = c − c₁²; N = n + ½ structure; proposal-1 Paper A (analytic part).
 Split from: the combined T2 claim of `checks/decisive-gen4-2.md` and its summaries in `proposal-1.md`/`report.md` at `614709d` ("b to 12 digits, c = 1.846160310424 ± 2e-12, κ a genuinely two-dimensional constant"). The argmax statement is split to `PD-T?programme-ideas-claude-05`.
-Split into: PD-T101 — exact finite-sum form of the corner value, for every n≥1 and all four corners. The asymptotic expansion remains in this record with OPEN status.
+Split into: PD-T101 — exact finite-sum form of the corner value, for every n≥1 and all four corners. The asymptotic expansion remains in this record with OPEN status; PD-T156, PD-T157, PD-T158, PD-T159 (PR12, exact scoped splits; original status/history retained).
 
 ## Statement
 
@@ -33,6 +33,7 @@ Overall status: OPEN (supported by MEASURED finite evaluations; no proof, no rem
 | finite high-precision values of Λ_c(n) | MEASURED | 80-bit long double with exact mod-4 argument reduction, 28 even n in [64, 8192] and 22 odd n in [65, 4097]; mpmath (30 digits) agreement ≤ 7e-16 at n = 64, 128, 256 |
 | fitted constants, **pre-registered fit family** (unshifted variable, K = 3, 4, 5, n_min ∈ {64, 128, 256, 512}, b free and fixed) | MEASURED | c ∈ [1.846095095877555, 1.846161206769239], half-spread 3.3055e-5 (developer disclosure in `decisive-gen4-2.md` T2(c); independent 18-fit replay `audit-support/proposal-fit.py/.json`). The pre-registered target "≥ 9 digits of c" is **not met**: T2's precision/separation target is inconclusive. |
 | fitted constants, **post-registration, model-conditioned** (refit in N = n + ½ with the −1/N term) | MEASURED (post-registration) | b = 1.2255221257453, c = 1.846160310424, κ = 0.9197101183886, stable to ±2e-12 across the selected model's fits; 1/N coefficient −1.000000002. This is fit stability inside a model chosen after seeing the data, not an error bound on the asymptotic remainder. |
+| A2 substatement: (4/π²) log² n + b log n + O(1), with b as stated | PROVED | PD-T158 gives absolute remainder ≤ 68 for every n ≥ 2; supporting PD-T159 and weaker ordered results PD-T156/PD-T157 are separate records. Claude audit-01 accepted this scope. The full PD-T098 A3 expansion remains OPEN. |
 | the conjectured expansion itself | OPEN | needs an analytic proof or rigorous remainder control |
 | identification of κ | OPEN | PSLQ/small-height searches at the post-registration tolerance found no relation; at the pre-registered 3.3e-5 tolerance every search is at chance level. Neither result shows that κ is a genuinely two-dimensional or new constant. |
 

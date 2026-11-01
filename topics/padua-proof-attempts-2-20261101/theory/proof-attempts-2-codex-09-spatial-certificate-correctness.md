@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-09 — Correctness of the spatial and edge-arrangement certificate
 
+Final ID: **PD-T164**. Provisional ID `PD-T?proof-attempts-2-codex-09` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-T100 / OPEN_TARGETS A5 (exact finite case, supporting result or separately OPEN obligation; source measurement retained).
+
 Current audit note, 2026-11-01: Claude audit-01 accepted this record at its stated scope. Historical audit-pending statements below describe development checkpoints.
 
 Dated status supersession, 2026-11-01 (response to audit-01 F8): Count10 and global11 are PROVED for n=4. Claude audit-01 accepted these cases and this supporting result. Later OPEN/checks-needed lines retain the earlier development checkpoint and are superseded by this note; no mathematical status or proof changes.

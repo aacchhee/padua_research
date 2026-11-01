@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-90 — Pole top form and detection of all lower-block leakage
 
+Final ID: **PD-T194**. Provisional ID `PD-T?proof-attempts-2-codex-90` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-N040 / OPEN_TARGETS B1 (structural class split; measured implementation instability retained).
+
 ID kind: PD-T.
 Aliases: B1 project-two/constrain-one detection; next-pole top form; parallel diagonal rational flag.
 Split from: programme `OPEN_TARGETS.md` B1, lower-leakage/detection obligation.

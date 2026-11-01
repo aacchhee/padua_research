@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-75 — Vanishing gain of the primitive at small phase
 
+Final ID: **PD-T190**. Provisional ID `PD-T?proof-attempts-2-codex-75` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-T099 (finite global or exact edge/central-scope split; full-square all-n statement remains OPEN).
+
 ID kind: PD-T.
 Aliases: A4(a) local even phase profile; paired Taylor bound with exact cusps.
 Split from: central-envelope comparison after74's phase localization.

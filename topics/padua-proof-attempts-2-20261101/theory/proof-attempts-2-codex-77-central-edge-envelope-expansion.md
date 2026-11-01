@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-77 — The central vertical-edge envelope has a positive limiting corner gap
 
+Final ID: **PD-T192**. Provisional ID `PD-T?proof-attempts-2-codex-77` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-T099 (finite global or exact edge/central-scope split; full-square all-n statement remains OPEN).
+
 Current audit note, 2026-11-01: Claude audit-01 accepted this record at its stated scope. Historical audit-pending statements below describe development checkpoints. Its A2 lower-bound/comparison dependencies01/04 are accepted in that same audit.
 
 ID kind: PD-T.

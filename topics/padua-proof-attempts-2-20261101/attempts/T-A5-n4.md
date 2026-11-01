@@ -87,3 +87,5 @@ Only after these actual checks, theory10 and11 were upgraded OPEN→PROVED with 
 Primary comparison completed after consulting literature/INDEX.md: directly read arXiv2605.23299v1 printedpage9 §3.3 Table3 and rendered table, version22May2026. The n4 row reports13interior/27whole-square, agreeing with the certified result. `../outputs/a5_n4_literature-comparison.md` records this bounded primary reading. No n4 correction, novelty claim, author contact, PDF/fulltext/screenshot repository artifact, or inference about n6–8 is made.
 
 All n4 count/global code is frozen. Essential developer count artifact64360bytes and global artifact4148bytes are within limits; the separate executor's analogous artifacts are64371bytes and4148bytes. Nonessential earlier oversized diagnostics remain in/tmp with pending AC cold-storage destination as manifested; no final proof depends on those transient diagnostics.
+
+Final registration: original n4-01 → IDEA-291; n4-02 → IDEA-292. Historical pre-run labels and dispositions retained.

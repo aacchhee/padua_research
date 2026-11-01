@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-05 — Finite signed-cubic reduction for strict maxima on a square
 
+Final ID: **PD-T160**. Provisional ID `PD-T?proof-attempts-2-codex-05` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-T100 / OPEN_TARGETS A5 (exact finite case, supporting result or separately OPEN obligation; source measurement retained).
+
 ID kind: PD-T.
 Aliases: A5 finite reduction; every-active-polynomial principle; physical-coordinate crease exclusion; cubic stationary-resultant reduction.
 Split from: obligation(1) and exact crease / crossing coverage in programme A5, `PD-T?programme-ideas-claude-06`.

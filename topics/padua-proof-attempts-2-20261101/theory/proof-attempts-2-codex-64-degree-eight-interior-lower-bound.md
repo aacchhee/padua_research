@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-64 — At least44 strict interior maxima at degree8
 
+Final ID: **PD-T183**. Provisional ID `PD-T?proof-attempts-2-codex-64` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-T100 / OPEN_TARGETS A5 (exact finite case, supporting result or separately OPEN obligation; source measurement retained).
+
 ID kind: PD-T.
 Aliases: n8 existential root witnesses; lower bound only; no regional completeness.
 Split from: the registered degree-eight A5 attempt61.

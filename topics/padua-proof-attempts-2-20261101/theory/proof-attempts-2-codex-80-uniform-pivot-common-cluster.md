@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-80 — Uniform parent pivots exclude a collapsing common joint cluster
 
+Final ID: **PD-T193**. Provisional ID `PD-T?proof-attempts-2-codex-80` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-N039 / OPEN_TARGETS B3 (computed-section extension or separate supporting route obstruction; original scope retained).
+
 ID kind: PD-T.
 Aliases: quantitative parent cyclicity; C1 common-cluster obstruction; full-residual cluster bound.
 Split from: the first kill test in B3 attempt C1.

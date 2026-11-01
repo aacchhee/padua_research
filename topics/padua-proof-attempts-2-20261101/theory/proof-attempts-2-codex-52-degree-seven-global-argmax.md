@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-52 — Degree-seven global Padua argmax
 
+Final ID: **PD-T177**. Provisional ID `PD-T?proof-attempts-2-codex-52` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-T099 (finite global or exact edge/central-scope split; full-square all-n statement remains OPEN).
+
 ID kind: PD-T.
 Aliases: A4(d) n=7; value certificate with node leaves; plateau exclusion.
 Split from: finite-degree corollary of programme corner-argmax target.

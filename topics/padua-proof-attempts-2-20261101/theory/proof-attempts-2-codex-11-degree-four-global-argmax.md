@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-11 — Degree-four global Lebesgue maximum at the non-node corners
 
+Final ID: **PD-T166**. Provisional ID `PD-T?proof-attempts-2-codex-11` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-T099 (finite global or exact edge/central-scope split; full-square all-n statement remains OPEN).
+
 ID kind: PD-T.
 Aliases: A4(d) n4; degree-four corner argmax; quartic plateau exclusion by value bounds.
 Split from: n4 case of `PD-T?programme-ideas-claude-05` / OPEN_TARGETS A4(d).

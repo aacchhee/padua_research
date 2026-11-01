@@ -22,3 +22,7 @@ Active MZ campaign: [log](mz-constants/LOG.md), [report](mz-constants/report.md)
 ## Padua Lanczos drift campaign — PR15 final registration
 
 [padua-lanczos-drift-20261101](padua-lanczos-drift-20261101/LOG.md): finite-precision bivariate Lanczos span drift; PD-T136–146, PD-N062–063, IDEA-246–267. Stage PR; Codex audit-04 accepted; draft PR15, AC merge decision pending.
+
+## Second proof campaign — PR12 final registration
+
+[padua-proof-attempts-2-20261101](padua-proof-attempts-2-20261101/LOG.md): accepted second proof campaign; PD-T156–197, PD-N072–073, IDEA-286–311. Proved and OPEN scopes are separate. Claude audit-01 accepted, minor response complete, PR12 prepared after merged PR15. Only AC merges.

@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-74 — Uniform leading phase bound and central phase localization
 
+Final ID: **PD-T189**. Provisional ID `PD-T?proof-attempts-2-codex-74` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-T099 (finite global or exact edge/central-scope split; full-square all-n statement remains OPEN).
+
 ID kind: PD-T.
 Aliases: A4(a) primitive phase; shifted odd-checkerboard bound; central maximizing phase tends to zero.
 Split from: the remaining central-envelope comparison after70–73.

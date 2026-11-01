@@ -1,5 +1,9 @@
 # PD-T?proof-attempts-2-codex-62 — Degree-eight global corner maximum
 
+Final ID: **PD-T181**. Provisional ID `PD-T?proof-attempts-2-codex-62` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
+
+Canonical Split from (registration): PD-T099 and PD-T100 (OPEN degree-eight global obligation, without a completeness claim).
+
 ID kind: PD-T.
 Aliases: A4(d) n=8; non-strict stationary-plateau value coverage.
 Split from: finite-degree corollary of the n8 A5 certificate.

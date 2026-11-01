@@ -5,7 +5,7 @@ Final ID: **PD-T100** (allocated 2026-11-01 under AC's authorisation; the provis
 ID kind: PD-T.
 Aliases: T3 counts; "certified maxima" (withdrawn wording); 15, 27, 25, 41, 50, 62; proposed correction to Białas-Cież–De Marchi–Suder arXiv 2605.23299 Table 3; proposal-1 Paper B data.
 Split from: `checks/decisive-gen4-2.md` T3 and Verdict at `614709d` ("complete certification", "settles", "corrects the published table").
-Split into: none.
+Split into: PD-T160, PD-T161, PD-T163, PD-T164, PD-T165, PD-T167, PD-T168, PD-T170, PD-T171, PD-T172, PD-T173, PD-T175, PD-T176, PD-T178, PD-T179, PD-T180, PD-T181, PD-T182, PD-T183, PD-T184 (PR12, exact scoped splits; original status/history retained).
 
 ## Statement
 
@@ -50,6 +50,10 @@ The existing numerical candidate-count claim retains MEASURED status. Supporting
 `checks/code/decisive/gen4-2/t3_certify.py`, `t3_degenerate.py`, `t3_validate.py` with `t3_certify.out/.log`, `t3_maxima.json`, `t3_validate.out` (frozen at `614709d`). Audit replays and counterchecks: `audit-support/proposal-rerun.*`, `proposal-independent.*`, `proposal-degenerate-counterexample.*`.
 
 **Runs needed (certification):** a proved finite reduction of the counting problem; rigorous versions of the (D) corner and (E) edge-node certificates in `t3_degenerate.py`; rigorous root enclosures/exclusions replacing the per-pattern Newton steps over every discarded region; complete sign-pattern box-discard arguments without the early return; exact treatment near regular crease crossings; rigorous arithmetic throughout and an independent checker. The separate `degenerate_max` local obligations have replacement certificates in PD-T103 for the two degree-3 exact representatives, with Z={L_(2,2)}, background critical points at (theta,phi)=(0,acos(±1/sqrt(3))), rational angle enclosures of width 1e-18 and uniform Hessian margin greater than 3.5 on angle l1 discs of radius 0.0021. These discs rigorously contain the recorded radius-0.002 decision neighborhoods. The stored floating iterates themselves are not exact zeros. A fresh trace of every call for n=3,…,8 found two calls at n=3 and none at n=4,…,8; this trace remains MEASURED execution evidence. Obligation (2) is discharged for the `degenerate_max` path only; the (D) corner and (E) edge-node handlers remain explicit certification work. No maxima count is certified.
+
+Dated split update after accepted Part2 Claude audit-01: the preceding certification obligations are historical for n = 3–7 and remain unresolved for n = 8. PD-T100 and its frozen floating search keep their MEASURED registry status. Complete replacements are separate PROVED count records PD-T161, PD-T165, PD-T168, PD-T173 and PD-T176, with closed totals 15, 27, 25, 41 and 50 and interior totals 7, 13, 14, 25 and 33. Their supporting reductions, complete certificates, independent verifiers and actual different-agent executions are retained.
+
+Only the OPEN_TARGETS A5 certification item is PARTIAL by these five proved degree cases and the OPEN degree-eight case. The degree-eight lower bound PD-T183 proves at least 44 strict interior maxima; exact interior PD-T184, closed count PD-T180 and global PD-T181 remain OPEN after deadline failures. The measured 44/62 reference is preserved as measurement, not promoted by the lower bound. LITERATURE: LIT-388 Table 3 has candidate corrections 23/39 → 25/41 at n = 6 and 27/42 → 33/50 at n = 7; at n = 8 only interior 38 is contradicted by ≥ 44. No exact replacement total or accepted erratum is asserted.
 
 ## Sources
 
