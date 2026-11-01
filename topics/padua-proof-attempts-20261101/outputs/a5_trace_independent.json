@@ -1,0 +1,138 @@
+{
+  "status": "MEASURED execution trace; counts are not certified",
+  "source_commit": "cadb35066160e466cb1704b9791ad6f374446422",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "script_sha256": "bb9b8be765064de888691635333260635799a73c29d2f149fa3c31e9214f0304",
+  "input_sha256": {
+    "topics/programme-ideas-20261031/checks/code/gen4/gen4_tests.py": "9ec69777c75f9ffe8b784b083d6684d47b279091d341c53e9e3b0287078bfb6c",
+    "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_certify.py": "1a1fb00ced54bb3083dce2ff12c56cd10c28499b7e0353ba23e8a6afd5a9d78b",
+    "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_degenerate.py": "cdf8cd3273c9ecffa35542bb572a0dde141bf5d068b77ddda548a9a5bdaee5b4",
+    "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/leb_common.py": "419970972ae69efcc5e4a1c965fbd49982b67100376d3ff0c46e8629dcb382d0",
+    "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_maxima.json": "bf1890f4d23f871f16d2dda41b800e0d70d2025299221296081a925518d48de0",
+    "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_certify.log": "4eeb37aa8848202988ebd660b0a332e8812f2adb616d0dacc56cfa1140e7f3a8"
+  },
+  "scope": "all calls to degenerate_max; separate corner/edge-node handlers excluded",
+  "results": [
+    {
+      "n": 3,
+      "all_degenerate_max_calls": [
+        {
+          "call": 1,
+          "zs_angles_IEEE_double": [
+            1.0373742372379587e-18,
+            0.9553166181245092
+          ],
+          "Z_zero_based": [
+            6
+          ],
+          "Z_grid_labels": [
+            [
+              2,
+              2
+            ]
+          ],
+          "accepted_by_frozen_code": true,
+          "rho0_float": 0.002,
+          "mu0_float": 3.573361559760489,
+          "eps1_float": 7.12427743031901e-16
+        },
+        {
+          "call": 2,
+          "zs_angles_IEEE_double": [
+            3.8340212234672264e-18,
+            2.186276035465284
+          ],
+          "Z_zero_based": [
+            6
+          ],
+          "Z_grid_labels": [
+            [
+              2,
+              2
+            ]
+          ],
+          "accepted_by_frozen_code": true,
+          "rho0_float": 0.002,
+          "mu0_float": 3.5733615597604897,
+          "eps1_float": 1.5359355618050947e-15
+        }
+      ],
+      "accepted_degenerate_count": 2,
+      "floating_candidate_counts": {
+        "interior": 7,
+        "edge": 6,
+        "corner": 2
+      },
+      "matches_stored_candidate_counts": true,
+      "boxes": 9345,
+      "elapsed_seconds": 0.853165864944458
+    },
+    {
+      "n": 4,
+      "all_degenerate_max_calls": [],
+      "accepted_degenerate_count": 0,
+      "floating_candidate_counts": {
+        "interior": 13,
+        "edge": 12,
+        "corner": 2
+      },
+      "matches_stored_candidate_counts": true,
+      "boxes": 14197,
+      "elapsed_seconds": 5.902320384979248
+    },
+    {
+      "n": 5,
+      "all_degenerate_max_calls": [],
+      "accepted_degenerate_count": 0,
+      "floating_candidate_counts": {
+        "interior": 14,
+        "edge": 9,
+        "corner": 2
+      },
+      "matches_stored_candidate_counts": true,
+      "boxes": 31441,
+      "elapsed_seconds": 8.596981287002563
+    },
+    {
+      "n": 6,
+      "all_degenerate_max_calls": [],
+      "accepted_degenerate_count": 0,
+      "floating_candidate_counts": {
+        "interior": 25,
+        "edge": 14,
+        "corner": 2
+      },
+      "matches_stored_candidate_counts": true,
+      "boxes": 67141,
+      "elapsed_seconds": 18.920448064804077
+    },
+    {
+      "n": 7,
+      "all_degenerate_max_calls": [],
+      "accepted_degenerate_count": 0,
+      "floating_candidate_counts": {
+        "interior": 33,
+        "edge": 15,
+        "corner": 2
+      },
+      "matches_stored_candidate_counts": true,
+      "boxes": 136077,
+      "elapsed_seconds": 37.905375719070435
+    },
+    {
+      "n": 8,
+      "all_degenerate_max_calls": [],
+      "accepted_degenerate_count": 0,
+      "floating_candidate_counts": {
+        "interior": 44,
+        "edge": 16,
+        "corner": 2
+      },
+      "matches_stored_candidate_counts": true,
+      "boxes": 261861,
+      "elapsed_seconds": 86.16504669189453
+    }
+  ]
+}
