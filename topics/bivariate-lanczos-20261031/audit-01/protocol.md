@@ -36,6 +36,14 @@ L2 and L3 prior-art reports introduce source statements and closest-predecessor 
 
 LOG and handoff/report describe 64 theory files; the frozen manifest and actual tree contain **67**, all matching. L5's direction audit also identifies report references to nonexistent N503. Refresh counts and references when answering the audit; retain the frozen audit target hashes.
 
+### P4 — Keep the reported backward obstruction restricted to reading (E)
+
+`report.md:23` proposes the standalone conclusion that interpolatory Padua recurrences have no Greenbaum-type backward model. The actual negative result excludes **exact** representation (or a sufficiently smaller residual) for specified consistent perturbations given as data. `theory/bivariate-lanczos-claude-300-l3q1-backward-interpretation-target.md:14` and N303's negative scope explicitly leave the actual floating-point, loss-of-orthogonality reading (G) OPEN. Preserve that qualification in the paper brief and any headline; no general negative answer to the original Greenbaum question has been proved. The report's opening already states this distinction correctly.
+
+## Root follow-up of the exact normalization finding
+
+The root read and separately executed the L3-framework auditor's `exact_framework_checks.py` after inspecting T302(b), Definitions and proof. It passed the independent Padua-n2 dual-certificate reconstruction and produced the rational normalization counterexample exactly: ten integer triangle-grid nodes, Vandermonde determinant 576; all three moment-matrix Sylvester minors positive; `r(0)=1/1000 > (1-theta)*epsilon=1999/2000000` but normalized cone distance `1/999 > theta*epsilon=1999/2000000`. Command: `OPENBLAS_NUM_THREADS=1 python topics/bivariate-lanczos-20261031/audit-01/L3-framework/exact_framework_checks.py`. This root execution is a rerun of the auditor's checker, not a separately implemented checker or a developer correction. See L3-framework finding for the complete hypotheses and remedy. The full-space unnormalized conic statement is sound; its translation into the declared normalized residual threshold needs repair.
+
 ## Integration boundary
 
 Fetched main `07c5f5465d6de306aa81dbe8ca1f615295163864` contains charter PR #2 and MZ PR #3. The frozen topic still bases on `d36722823441dc40c6e19d69a174459348dd309c`. The existing LOG records AC's instruction to defer main integration to PR preparation, so the audit preserves the science and examines the candidate read-only. No final namespace is allocated; the current batch ledger's fixed owner and accepted main IDs remain authoritative. Merge main, reconcile shared records/registries and obtain a disjoint reservation before final registration, then rehearse the relevant integration and audit material changes. No permission to merge a GitHub PR is inferred.

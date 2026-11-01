@@ -1,0 +1,131 @@
+{
+  "candidate_sha": "5ccfac223f466a9105450365d8c6c3781ff7d922",
+  "rules_sha": "3a9063b84d14ca0a5998378371e27643fde50a29",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "network_used": false
+  },
+  "commands": [
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 -I -u tracks/bivariate-lanczos/code/review_L1/rv_exact_checks.py > topics/bivariate-lanczos-20261031/audit-01/L1-foundations/reviewer_exact_rerun.log 2>&1",
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 -I topics/bivariate-lanczos-20261031/audit-01/L1-foundations/check_foundations.py > topics/bivariate-lanczos-20261031/audit-01/L1-foundations/independent_exact.log 2>&1"
+  ],
+  "sources": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60",
+      "bytes": 3159,
+      "git_blob": "8c94c718629649c3f5c89d05e5b674ae5ad3a99c",
+      "matches_candidate": true
+    },
+    {
+      "path": "agents/WORKFLOW.md",
+      "sha256": "b1c1c14c83e02bf38283159f81ec278ae336ab56c95d0c026b9ada3314d1ffaa",
+      "bytes": 18116,
+      "git_blob": "1e3399cc4089c3784f017cf9ec0927bc695ef99c",
+      "matches_candidate": true
+    },
+    {
+      "path": "agents/codex/CODEX.md",
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+      "bytes": 4969,
+      "git_blob": "16a4ecfea89acd5b1d9cd09c9213094bce144caf",
+      "matches_candidate": true
+    },
+    {
+      "path": "state/IDEAS.md",
+      "sha256": "12ba5f8eccfc943faebee07b83ea37b995f0b89244fa3b9b81a6f88051ad931d",
+      "bytes": 46988,
+      "git_blob": "061524dc4dd7bd0ab79775bb058fe8e0247570d9",
+      "matches_candidate": true
+    },
+    {
+      "path": "literature/INDEX.md",
+      "sha256": "a9fdbfeb7d0a5b485c84e3e9763739e8f8597f118a6e76bf1dcf76ea8aa28a15",
+      "bytes": 111148,
+      "git_blob": "a376a9cfaf929ac0ece7a2bae1ed17f4b0abe789",
+      "matches_candidate": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/window-coefficient-pattern-exact.md",
+      "sha256": "f5110d68c4894fcbfef3718ecf677eafcc2a41ebe79cb3ef35c19b14a1be8f99",
+      "bytes": 9531,
+      "git_blob": "32f11795324d2d2765d8aed928e485d711dac43b",
+      "matches_candidate": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/fp-local-relations-window-recurrence.md",
+      "sha256": "13fd2f50b813b8cbad43d26df95cebd473992dd76c83da07cd4ad31271f68735",
+      "bytes": 9244,
+      "git_blob": "9e612d4042e10f184693e89b859c1e107b4805b4",
+      "matches_candidate": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/full-operator-paige-identity-growing-blocks.md",
+      "sha256": "a2707434f266388b8d69310b71ef1921d083b8e2e11051bc8a2653bba9ae589e",
+      "bytes": 9605,
+      "git_blob": "be9a6f966545da6cc2951c4edfb3dc18ded01148",
+      "matches_candidate": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/node-row-representation-and-commutator-residual.md",
+      "sha256": "0c618867a1e2679e495e133a7326594e3cf9bb8208afad730e1bea94b1816023",
+      "bytes": 6154,
+      "git_blob": "7c1a4682b54ebffad79d1e194fa6aa57ace70248",
+      "matches_candidate": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/product-measure-propagator-factorization.md",
+      "sha256": "b304e439b9aa069af3865c7efe4e4ee6209cf03227ff1dbd74f16bf39e72a2f3",
+      "bytes": 10409,
+      "git_blob": "94f31646dd6794958177fd5698cb190f7ba620c6",
+      "matches_candidate": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/exact-omega-recurrence-window.md",
+      "sha256": "b9b984deee3dfa44ba27ab6e7c39ef7c43b98b2b5e678d20c4b6d4d2dd90eaa9",
+      "bytes": 3967,
+      "git_blob": "097a7f9de6a96f1e49d01f1c420f363fab0c1838",
+      "matches_candidate": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/window-recurrence-row-selection-of-jacobi-pencil.md",
+      "sha256": "75c3ea0e34de612cfb17362c603a56ea4419323742538d7275a6c33026c77ecd",
+      "bytes": 6917,
+      "git_blob": "9195a2f491abfac56b6447f4fd7a8e350aa23119",
+      "matches_candidate": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/l4-band-krylov-obstruction.md",
+      "sha256": "54bf537b5178823af4dbea7ca546999588bc6124404a4d7f3ac269358014749d",
+      "bytes": 12227,
+      "git_blob": "404ff2a597ec83ace04e0ed1dd8b36537212bf73",
+      "matches_candidate": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L1/rv_exact_checks.py",
+      "sha256": "be0cbd8a95771f25235c8247a3452ff6d4465662ca56c1b098d9632326cfa63f",
+      "bytes": 22203,
+      "git_blob": "1598ac3ae9e2c28d885de49c110f96481b4e589d",
+      "matches_candidate": true
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-foundations/check_foundations.py",
+      "sha256": "6a0a7e8e6bffd1f6cec7c0e4fdb65d131e3434d6205aef7bdabde58df9f1037d",
+      "bytes": 9463
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-foundations/independent_exact.log",
+      "sha256": "679164554b7018a1f6a0e4f874669b90c6584ca08003a510bf5033eb804e95ad",
+      "bytes": 1086
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-foundations/reviewer_exact_rerun.log",
+      "sha256": "01b6a329bd09f4ed329ac3a99716e3366e84e2417a72b5d9a21698c2f730e1e0",
+      "bytes": 4550
+    }
+  ],
+  "retention": "Small necessary audit evidence; local until root orchestrator commits. No external cold-storage destination selected; archival pending."
+}
