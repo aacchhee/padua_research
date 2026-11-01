@@ -1,0 +1,48 @@
+{
+ "m": 40,
+ "method": "exact inverse-Cholesky congruence + positive Gershgorin (PD sides); exact Rayleigh (other sides)",
+ "python": "3.13.18 (main, Oct 26 2026, 14:08:19) [Clang 23.1.3 ]",
+ "numpy": "2.5.3",
+ "scipy": "1.18.1",
+ "platform": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+ "script_sha256": "4f422e4ca977a3374c165957a7845d74b6450381aa8930281cebea7a2670a17d",
+ "checks": [
+  {
+   "extremum": "minimum",
+   "open_interval": [
+    "214817/1000000",
+    "107409/500000"
+   ],
+   "pd_blocks": [
+    {
+     "dimension": 420,
+     "min_relative_margin": 0.9999999997387051
+    },
+    {
+     "dimension": 400,
+     "min_relative_margin": 0.9999999999180313
+    }
+   ],
+   "rayleigh_float": 0.2148170294673118
+  },
+  {
+   "extremum": "maximum",
+   "open_interval": [
+    "222261/125000",
+    "1778089/1000000"
+   ],
+   "pd_blocks": [
+    {
+     "dimension": 420,
+     "min_relative_margin": 0.9999999999106641
+    },
+    {
+     "dimension": 400,
+     "min_relative_margin": 0.9999999998700694
+    }
+   ],
+   "rayleigh_float": 1.7780886238837588
+  }
+ ],
+ "seconds": 13.58499789237976
+}

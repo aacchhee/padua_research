@@ -1,0 +1,53 @@
+{
+ "executed_at_utc": "2026-11-01T15:13:35.038334+00:00",
+ "head": "4893abbb98e94fe8a038ffe71800298aebc5b5fe",
+ "main": "806cc7b4509fd93bae652f9545d32d95529f8281",
+ "other_open_prs": {
+  "PR12": "6c6e484818b8b949ab0a6b2a4b9086b6a46528c3",
+  "PR15": "fa5835f6fd2c1f62cd9e34e14e90d492ac387242"
+ },
+ "audited_candidate": "e847601c6c1f1261d4862d63360fdfdb0df8a15b",
+ "main_is_ancestor": true,
+ "code_evidence_paper_changed_since_candidate": [],
+ "theory_files_changed_since_candidate": [
+  "tracks/mz-constants/theory/mz2d-fixed-ratio-diamond-reconstruction.md",
+  "tracks/mz-constants/theory/mz2d-fixed-ratio.md",
+  "tracks/mz-constants/theory/mz2d-upper-sign-obstruction.md"
+ ],
+ "F1_proof_to_EOF_identical_to_candidate": true,
+ "proof_status_cells_unchanged": true,
+ "campaign_status_counts": {
+  "PROVED": 17,
+  "MEASURED": 2,
+  "OPEN": 3
+ },
+ "audit01_original_is_prefix": true,
+ "collisions": [],
+ "PR15_ledger_tokens": true,
+ "A2_pins_unchanged_at_PR12": "13/13",
+ "links_checked": 2467,
+ "broken_links": [],
+ "generated_json_total_bytes": 1650692,
+ "largest_json_bytes": 837344,
+ "open_handoffs": [
+  "04-readiness.md"
+ ],
+ "status": "PASS",
+ "decision": {
+  "source": "AC chat message 2026-11-01 16:12 Europe/Oslo",
+  "text": "pr14 first",
+  "interpretation": "AC integration order: PR14 before PR15. Not a draft-to-ready or merge instruction."
+ },
+ "rehearsal": {
+  "worktree": "disposable /home/claude/rehearsal on local branch claude/rehearsal-pr14-first-20261101 from main 806cc7b, removed afterwards",
+  "pr14_head_squashed": "4893abbb98e94fe8a038ffe71800298aebc5b5fe",
+  "pr14_squash": "clean, no conflicts",
+  "squash_tree": "f850c3bf0f7710451eafc017d6b26b5526612216",
+  "topic_tree": "f850c3bf0f7710451eafc017d6b26b5526612216",
+  "trees_identical": true,
+  "follower_PR15_fa5835f": "conflicts only in ID_CROSSWALK.md and topics/padua-batch-20261031/ALLOCATIONS.md (reservation/mapping text); to be reconciled by the PR15 orchestrator after PR14 merges, per readiness-plan-01.md",
+  "follower_PR12_6c6e484": "applies cleanly"
+ },
+ "checker": "integration-pr14-first-20261101-check.py (copied verbatim from the auditor/orchestrator scratch); scientific producers not run",
+ "agent": "Claude Opus 5.5 xhigh (topic orchestrator for handoff 04)"
+}

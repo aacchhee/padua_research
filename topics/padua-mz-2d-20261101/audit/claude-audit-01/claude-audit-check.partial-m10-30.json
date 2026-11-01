@@ -1,0 +1,370 @@
+{
+ "auditor": "Claude Opus 5.5 xhigh (audit-01)",
+ "script_sha256": "6a3d00d9233ba45a68987ccc3e225851a93ae7f0928e76cd7632131ec9a86a94",
+ "stored_receipt_sha256": "5456917afe8fea69b0a776270ef3ae79fdc33deb02d27f89648fc342f78b93de",
+ "python": "3.13.18 (main, Oct 26 2026, 14:08:19) [Clang 23.1.3 ]",
+ "platform": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+ "python_flint": "0.9.0",
+ "numpy": "2.5.3",
+ "scipy": "1.18.1",
+ "mpmath": "1.3.0",
+ "moment_formula_vs_mp_weights": {
+  "m_range": [
+   1,
+   10
+  ],
+  "modes_checked": 1365,
+  "max_abs_error": "4.6032e-60",
+  "precision_dps": 60
+ },
+ "stored_witness": {
+  "terms": 225,
+  "max_total_degree": 29,
+  "squared_expansion_terms": 898,
+  "exact_match": true,
+  "a_over_b": "877232781114314098381485762010567156333995/3706008529790577774590124820358984174828596",
+  "a_over_b_float": 0.23670554831774376,
+  "nodal_float_Q_p2_rel_err": 4.709243040499955e-14,
+  "negative_weights_m30": 2
+ },
+ "corner_weights_mp": [
+  {
+   "m": 2,
+   "w00": "7.086480652246397636e-52",
+   "wm0": "3.3931583233592327539e-53",
+   "neg_nodes": []
+  },
+  {
+   "m": 3,
+   "w00": "-0.055555555555555555556",
+   "wm0": null,
+   "neg_nodes": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     4
+    ]
+   ]
+  },
+  {
+   "m": 4,
+   "w00": "-0.0088888888888888888889",
+   "wm0": "-0.0088888888888888888889",
+   "neg_nodes": [
+    [
+     0,
+     0
+    ],
+    [
+     4,
+     0
+    ]
+   ]
+  },
+  {
+   "m": 5,
+   "w00": "-0.01037037037037037037",
+   "wm0": null,
+   "neg_nodes": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     6
+    ]
+   ]
+  },
+  {
+   "m": 6,
+   "w00": "-0.0030234315948601662887",
+   "wm0": "-0.0030234315948601662887",
+   "neg_nodes": [
+    [
+     0,
+     0
+    ],
+    [
+     6,
+     0
+    ]
+   ]
+  },
+  {
+   "m": 7,
+   "w00": "-0.003287981859410430839",
+   "wm0": null,
+   "neg_nodes": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     8
+    ]
+   ]
+  },
+  {
+   "m": 8,
+   "w00": "-0.0012698412698412698413",
+   "wm0": "-0.0012698412698412698413",
+   "neg_nodes": [
+    [
+     0,
+     0
+    ],
+    [
+     8,
+     0
+    ]
+   ]
+  },
+  {
+   "m": 9,
+   "w00": "-0.0013686067019400352734",
+   "wm0": null,
+   "neg_nodes": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     10
+    ]
+   ]
+  },
+  {
+   "m": 10,
+   "w00": "-0.00062407626043989680353",
+   "wm0": "-0.00062407626043989680353",
+   "neg_nodes": [
+    [
+     0,
+     0
+    ],
+    [
+     10,
+     0
+    ]
+   ]
+  },
+  {
+   "m": 11,
+   "w00": "-0.00067310915795764280613",
+   "wm0": null,
+   "neg_nodes": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     12
+    ]
+   ]
+  },
+  {
+   "m": 12,
+   "w00": "-0.00034278569077103875639",
+   "wm0": "-0.00034278569077103875639",
+   "neg_nodes": [
+    [
+     0,
+     0
+    ],
+    [
+     12,
+     0
+    ]
+   ]
+  },
+  {
+   "m": 13,
+   "w00": "-0.00037066253706756061544",
+   "wm0": null,
+   "neg_nodes": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     14
+    ]
+   ]
+  },
+  {
+   "m": 14,
+   "w00": "-0.00020430061246387777",
+   "wm0": "-0.00020430061246387777",
+   "neg_nodes": [
+    [
+     0,
+     0
+    ],
+    [
+     14,
+     0
+    ]
+   ]
+  }
+ ],
+ "spectra": [
+  {
+   "m": 10,
+   "n": 9,
+   "dimension": 55,
+   "float_extrema": [
+    0.3561913826298238,
+    1.63485661478379
+   ],
+   "checks": [
+    {
+     "extremum": "minimum",
+     "open_interval": [
+      "356191/1000000",
+      "11131/31250"
+     ],
+     "pd_side": "Q-lo*H PD on both blocks",
+     "pd_blocks": [
+      {
+       "dimension": 30,
+       "min_leading_minor_bits": 52
+      },
+      {
+       "dimension": 25,
+       "min_leading_minor_bits": 50
+      }
+     ],
+     "rayleigh_quotient_float": 0.3561913826298237
+    },
+    {
+     "extremum": "maximum",
+     "open_interval": [
+      "204357/125000",
+      "1634857/1000000"
+     ],
+     "pd_side": "hi*H-Q PD on both blocks",
+     "pd_blocks": [
+      {
+       "dimension": 30,
+       "min_leading_minor_bits": 49
+      },
+      {
+       "dimension": 25,
+       "min_leading_minor_bits": 47
+      }
+     ],
+     "rayleigh_quotient_float": 1.6348566147837904
+    }
+   ],
+   "seconds": null
+  },
+  {
+   "m": 20,
+   "n": 19,
+   "dimension": 210,
+   "float_extrema": [
+    0.2722330049580584,
+    1.723313731669768
+   ],
+   "checks": [
+    {
+     "extremum": "minimum",
+     "open_interval": [
+      "272233/1000000",
+      "136117/500000"
+     ],
+     "pd_side": "Q-lo*H PD on both blocks",
+     "pd_blocks": [
+      {
+       "dimension": 110,
+       "min_leading_minor_bits": 87
+      },
+      {
+       "dimension": 100,
+       "min_leading_minor_bits": 86
+      }
+     ],
+     "rayleigh_quotient_float": 0.2722330049580585
+    },
+    {
+     "extremum": "maximum",
+     "open_interval": [
+      "1723313/1000000",
+      "861657/500000"
+     ],
+     "pd_side": "hi*H-Q PD on both blocks",
+     "pd_blocks": [
+      {
+       "dimension": 110,
+       "min_leading_minor_bits": 88
+      },
+      {
+       "dimension": 100,
+       "min_leading_minor_bits": 87
+      }
+     ],
+     "rayleigh_quotient_float": 1.7233137316697675
+    }
+   ],
+   "seconds": null
+  },
+  {
+   "m": 30,
+   "n": 29,
+   "dimension": 465,
+   "float_extrema": [
+    0.23670553037004333,
+    1.7579298559464742
+   ],
+   "checks": [
+    {
+     "extremum": "minimum",
+     "open_interval": [
+      "47341/200000",
+      "118353/500000"
+     ],
+     "pd_side": "Q-lo*H PD on both blocks",
+     "pd_blocks": [
+      {
+       "dimension": 240,
+       "min_leading_minor_bits": 130
+      },
+      {
+       "dimension": 225,
+       "min_leading_minor_bits": 128
+      }
+     ],
+     "rayleigh_quotient_float": 0.2367055303700436
+    },
+    {
+     "extremum": "maximum",
+     "open_interval": [
+      "1757929/1000000",
+      "175793/100000"
+     ],
+     "pd_side": "hi*H-Q PD on both blocks",
+     "pd_blocks": [
+      {
+       "dimension": 240,
+       "min_leading_minor_bits": 132
+      },
+      {
+       "dimension": 225,
+       "min_leading_minor_bits": 130
+      }
+     ],
+     "rayleigh_quotient_float": 1.7579298559464736
+    }
+   ],
+   "seconds": null
+  }
+ ]
+}

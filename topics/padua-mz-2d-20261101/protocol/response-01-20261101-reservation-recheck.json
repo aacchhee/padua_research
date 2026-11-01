@@ -1,0 +1,425 @@
+{
+  "status": "PASS",
+  "executed_at_utc": "2026-11-01T14:13:58.330841+00:00",
+  "rules_sha": "d04a39bb8481fa3320ea98b9d70cfb3bbf4b3878",
+  "source": {
+    "path": "topics/padua-mz-2d-20261101/protocol/response-01-20261101-connector.json",
+    "bytes": 3435,
+    "sha256": "7525d29a95bfeba2e89f8f2242a684a5fed956cf1cd18a60a24c308156f615e7"
+  },
+  "heads": [
+    {
+      "label": "main",
+      "sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "files": [
+        {
+          "path": "PROOF_STATUS.md",
+          "bytes": 99924,
+          "sha256": "a916cda87c9f7ad1950f62e32d254f5c276d386b63f5e84a32cb08a3298f8b0f",
+          "git_blob": "eedee5e38a2469ddb81980f10944b0e08f87c78c",
+          "complete_byte_read": true
+        },
+        {
+          "path": "state/IDEAS.md",
+          "bytes": 159295,
+          "sha256": "de45820ecb33f8694b0ed4a13177fc2d91094729dc2f164e3d26034fada4d4a0",
+          "git_blob": "51d0d9cf79507b0b92e930a19882b942ecb94486",
+          "complete_byte_read": true
+        },
+        {
+          "path": "literature/INDEX.md",
+          "bytes": 265014,
+          "sha256": "f90355c5b77a638d1a49980330eff1bda7d0e7610771a3bdae465f384b03f056",
+          "git_blob": "f9348537234c798a3fa738970513891f0dd8c956",
+          "complete_byte_read": true
+        },
+        {
+          "path": "ID_CROSSWALK.md",
+          "bytes": 252010,
+          "sha256": "a65c2e715cbb6fd01f75ae7de900ccf85509e81c34ed0354bd21c2e2289d8229",
+          "git_blob": "631cc65a86c1b39a38a13c257064a39b42d2df4b",
+          "complete_byte_read": true
+        },
+        {
+          "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+          "bytes": 2271,
+          "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+          "git_blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+          "complete_byte_read": true
+        },
+        {
+          "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+          "bytes": 20377,
+          "sha256": "26918056d06e8fed622e07e512c062fb8bfce9762e211ffe5bf78aedd0225d36",
+          "git_blob": "625b7ca0d12bd1ac1e3501f05adc573fbdf2aead",
+          "complete_byte_read": true
+        }
+      ],
+      "namespace_maximum_mentions": {
+        "PD-T": 106,
+        "PD-N": 44,
+        "IDEA": 210,
+        "LIT": 1750
+      },
+      "retired_reservation_lines": [
+        {
+          "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+          "line": 18,
+          "text": "PRs returned by the scan are merged; no closed-unmerged or retired reservation"
+        }
+      ]
+    },
+    {
+      "label": "PR15",
+      "sha": "fa5835f6fd2c1f62cd9e34e14e90d492ac387242",
+      "files": [
+        {
+          "path": "PROOF_STATUS.md",
+          "bytes": 99924,
+          "sha256": "a916cda87c9f7ad1950f62e32d254f5c276d386b63f5e84a32cb08a3298f8b0f",
+          "git_blob": "eedee5e38a2469ddb81980f10944b0e08f87c78c",
+          "complete_byte_read": true
+        },
+        {
+          "path": "state/IDEAS.md",
+          "bytes": 159295,
+          "sha256": "de45820ecb33f8694b0ed4a13177fc2d91094729dc2f164e3d26034fada4d4a0",
+          "git_blob": "51d0d9cf79507b0b92e930a19882b942ecb94486",
+          "complete_byte_read": true
+        },
+        {
+          "path": "literature/INDEX.md",
+          "bytes": 265014,
+          "sha256": "f90355c5b77a638d1a49980330eff1bda7d0e7610771a3bdae465f384b03f056",
+          "git_blob": "f9348537234c798a3fa738970513891f0dd8c956",
+          "complete_byte_read": true
+        },
+        {
+          "path": "ID_CROSSWALK.md",
+          "bytes": 252348,
+          "sha256": "ae2691ba4011ab6b0610c4b49ae615ecc336475eebff805076f081afd6a1f54f",
+          "git_blob": "f3fd5d48b5a1b606c345f59e28a6bb956884dd37",
+          "complete_byte_read": true
+        },
+        {
+          "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+          "bytes": 2271,
+          "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+          "git_blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+          "complete_byte_read": true
+        },
+        {
+          "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+          "bytes": 23649,
+          "sha256": "d1508c1cde963b32044985d7b6bd5bb24ea462186167d1f891f7445637f22945",
+          "git_blob": "b251b89ef30e139d84c0e434ea523e945ccb1fd3",
+          "complete_byte_read": true
+        }
+      ],
+      "namespace_maximum_mentions": {
+        "PD-T": 156,
+        "PD-N": 72,
+        "IDEA": 286,
+        "LIT": 1750
+      },
+      "retired_reservation_lines": [
+        {
+          "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+          "line": 14,
+          "text": "no missing retired reservation was found. The MZ topic appeared between the"
+        },
+        {
+          "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+          "line": 32,
+          "text": "Owner branch: `codex/padua-mz-2d-20261101`. This is a reservation for the early draft, not a final-ID assignment. The fresh-range procedure supersedes historical single-owner prose below. All previous allocations, permanent headroom and retired reservations remain in force."
+        },
+        {
+          "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+          "line": 60,
+          "text": "PRs returned by the scan are merged; no closed-unmerged or retired reservation"
+        }
+      ]
+    },
+    {
+      "label": "PR14",
+      "sha": "d04a39bb8481fa3320ea98b9d70cfb3bbf4b3878",
+      "files": [
+        {
+          "path": "PROOF_STATUS.md",
+          "bytes": 108774,
+          "sha256": "a3e60caad856ffd994b2d3c8a8dae4a09cfc7f066762bc0ecbe064874d59d9ae",
+          "git_blob": "05481336cee7a4f7df130267bdb4915b1399c3e6",
+          "complete_byte_read": true
+        },
+        {
+          "path": "state/IDEAS.md",
+          "bytes": 165050,
+          "sha256": "6a0a773c28d594561c828e92668571628fd42fa30ad8ae3e4216d7aa67a87f28",
+          "git_blob": "7d1a3e03fc4906e12b15d1f9de2abad87f44620a",
+          "complete_byte_read": true
+        },
+        {
+          "path": "literature/INDEX.md",
+          "bytes": 268372,
+          "sha256": "3cd4a057587459b117e555f1cae615e9985b770206c9b96d199a7161cc1a975e",
+          "git_blob": "b6fad245a44916d958b0d810653522a1036c5281",
+          "complete_byte_read": true
+        },
+        {
+          "path": "ID_CROSSWALK.md",
+          "bytes": 261926,
+          "sha256": "eb6c038fe9e3e85dfa04faa49ef09806b3b4c28f78ca292c587e8024d48ea98f",
+          "git_blob": "5530797fdebd13dc172240eb9cd8e28db4067e54",
+          "complete_byte_read": true
+        },
+        {
+          "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+          "bytes": 2271,
+          "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+          "git_blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+          "complete_byte_read": true
+        },
+        {
+          "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+          "bytes": 24551,
+          "sha256": "36e4767795576c9a5b9cfc06380a59b322022afbeeb7dc94732d9ca2b4054c52",
+          "git_blob": "c560cbf1f7e82c40e2e220134d534adc2cf8512d",
+          "complete_byte_read": true
+        }
+      ],
+      "namespace_maximum_mentions": {
+        "PD-T": 156,
+        "PD-N": 72,
+        "IDEA": 286,
+        "LIT": 1750
+      },
+      "retired_reservation_lines": [
+        {
+          "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+          "line": 14,
+          "text": "no missing retired reservation was found. The MZ topic appeared between the"
+        },
+        {
+          "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+          "line": 32,
+          "text": "Owner branch: `codex/padua-mz-2d-20261101`. This is a reservation for the early draft, not a final-ID assignment. The fresh-range procedure supersedes historical single-owner prose below. All previous allocations, permanent headroom and retired reservations remain in force."
+        },
+        {
+          "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+          "line": 60,
+          "text": "PRs returned by the scan are merged; no closed-unmerged or retired reservation"
+        }
+      ]
+    },
+    {
+      "label": "PR12",
+      "sha": "6c6e484818b8b949ab0a6b2a4b9086b6a46528c3",
+      "files": [
+        {
+          "path": "PROOF_STATUS.md",
+          "bytes": 99924,
+          "sha256": "a916cda87c9f7ad1950f62e32d254f5c276d386b63f5e84a32cb08a3298f8b0f",
+          "git_blob": "eedee5e38a2469ddb81980f10944b0e08f87c78c",
+          "complete_byte_read": true
+        },
+        {
+          "path": "state/IDEAS.md",
+          "bytes": 159295,
+          "sha256": "de45820ecb33f8694b0ed4a13177fc2d91094729dc2f164e3d26034fada4d4a0",
+          "git_blob": "51d0d9cf79507b0b92e930a19882b942ecb94486",
+          "complete_byte_read": true
+        },
+        {
+          "path": "literature/INDEX.md",
+          "bytes": 265014,
+          "sha256": "f90355c5b77a638d1a49980330eff1bda7d0e7610771a3bdae465f384b03f056",
+          "git_blob": "f9348537234c798a3fa738970513891f0dd8c956",
+          "complete_byte_read": true
+        },
+        {
+          "path": "ID_CROSSWALK.md",
+          "bytes": 252010,
+          "sha256": "a65c2e715cbb6fd01f75ae7de900ccf85509e81c34ed0354bd21c2e2289d8229",
+          "git_blob": "631cc65a86c1b39a38a13c257064a39b42d2df4b",
+          "complete_byte_read": true
+        },
+        {
+          "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+          "bytes": 2271,
+          "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+          "git_blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+          "complete_byte_read": true
+        },
+        {
+          "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+          "bytes": 20377,
+          "sha256": "26918056d06e8fed622e07e512c062fb8bfce9762e211ffe5bf78aedd0225d36",
+          "git_blob": "625b7ca0d12bd1ac1e3501f05adc573fbdf2aead",
+          "complete_byte_read": true
+        }
+      ],
+      "namespace_maximum_mentions": {
+        "PD-T": 106,
+        "PD-N": 44,
+        "IDEA": 210,
+        "LIT": 1750
+      },
+      "retired_reservation_lines": [
+        {
+          "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+          "line": 18,
+          "text": "PRs returned by the scan are merged; no closed-unmerged or retired reservation"
+        }
+      ]
+    }
+  ],
+  "closed_unmerged_prs": [],
+  "closed_prs_examined": 11,
+  "campaign_ranges_unchanged": {
+    "PD-T": [
+      106,
+      135
+    ],
+    "PD-N": [
+      44,
+      61
+    ],
+    "IDEA": [
+      210,
+      245
+    ],
+    "LIT": [
+      427,
+      444
+    ]
+  },
+  "union_reserved_maxima": {
+    "PD-T": 155,
+    "PD-N": 71,
+    "IDEA": 285,
+    "LIT": 459
+  },
+  "mention_maxima_note": "Raw mention maxima include historical NEXT labels and are not allocation boundaries. No allocation occurs.",
+  "retired_reservations": "No closed-unmerged PR returned; all ledger retired-reservation references read completely; existing ledger unchanged byte for byte, including historical reservation/headroom records.",
+  "allocation_performed": false,
+  "A2_pins": [
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-01-corner-leading-lower.md",
+      "bytes": 3975,
+      "sha256": "6d99f737fab76931e5c26850f3e95e23d3df3c8f3f22cfb85238b5e9168e8032",
+      "frozen_commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+      "latest_commit": "6c6e484818b8b949ab0a6b2a4b9086b6a46528c3",
+      "latest_git_blob": "490947559d11f9074180692cace60f2a9918370c",
+      "unchanged": true
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-02-corner-explicit-leading.md",
+      "bytes": 3095,
+      "sha256": "275a947ac91291f5fddbd5291b5438bf37abe765113012936e59f8992242b441",
+      "frozen_commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+      "latest_commit": "6c6e484818b8b949ab0a6b2a4b9086b6a46528c3",
+      "latest_git_blob": "e02e301f54ff1197651b765e7ad077a29b6cece2",
+      "unchanged": true
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-03-corner-log-coefficient.md",
+      "bytes": 8017,
+      "sha256": "9f8667eeb1da848fd8a20e62d4fb4c5845bae938045182e0f4e8f21058c01696",
+      "frozen_commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+      "latest_commit": "6c6e484818b8b949ab0a6b2a4b9086b6a46528c3",
+      "latest_git_blob": "1cde37029e20b7d55790ea10307e91d0a6b410db",
+      "unchanged": true
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-04-corner-product-comparison.md",
+      "bytes": 9927,
+      "sha256": "afab6eb482c4df0ab19e149f4a990d3e41b73ef54665b6426d44243359e2f265",
+      "frozen_commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+      "latest_commit": "6c6e484818b8b949ab0a6b2a4b9086b6a46528c3",
+      "latest_git_blob": "ed0e438ec29665f54eebf6ba581a533220871f62",
+      "unchanged": true
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A2.md",
+      "bytes": 10773,
+      "sha256": "1717b073cd7c298b804e14856b018754707a9e5fcb5ea6e32bd0b4762ec3b6ed",
+      "frozen_commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+      "latest_commit": "6c6e484818b8b949ab0a6b2a4b9086b6a46528c3",
+      "latest_git_blob": "8db4d4ca04d2ea2d9f7ddb66d61abbbf40675c91",
+      "unchanged": true
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a2.md",
+      "bytes": 7112,
+      "sha256": "78158b6b53fe659161dea99e2abd2451d6a3ab1ed8c486496f25742fdfafed3d",
+      "frozen_commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+      "latest_commit": "6c6e484818b8b949ab0a6b2a4b9086b6a46528c3",
+      "latest_git_blob": "5026354373dfa3ce880d176caadc851c8d800541",
+      "unchanged": true
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-execution-a2.md",
+      "bytes": 3934,
+      "sha256": "135f8d5c515511ed8680864c1378b12baf81aa938664b4c27335b4331dee73bd",
+      "frozen_commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+      "latest_commit": "6c6e484818b8b949ab0a6b2a4b9086b6a46528c3",
+      "latest_git_blob": "ee2a54e07171276feb2e755777125ab3090f6f65",
+      "unchanged": true
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a2_exact_check.py",
+      "bytes": 3915,
+      "sha256": "94438117d4510b248beaac3e22afb23c159c21d107e17d300206b73751be4101",
+      "frozen_commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+      "latest_commit": "6c6e484818b8b949ab0a6b2a4b9086b6a46528c3",
+      "latest_git_blob": "e3da746300cda7233eaf762e6edb3c8091e77d96",
+      "unchanged": true
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a2_sanity.py",
+      "bytes": 2121,
+      "sha256": "8ca20d9690664430fe596ebdda881183034ef6e1ea81ca3bd841d9c2bfbb0649",
+      "frozen_commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+      "latest_commit": "6c6e484818b8b949ab0a6b2a4b9086b6a46528c3",
+      "latest_git_blob": "bb818f42e8e927f8d16fd7fe19719c97f3c681b3",
+      "unchanged": true
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a2_exact_check.json",
+      "bytes": 2067,
+      "sha256": "91db451c362d59c8bd1d155b10e0e5da275d62cced0e165b82cff7242fcc3d0e",
+      "frozen_commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+      "latest_commit": "6c6e484818b8b949ab0a6b2a4b9086b6a46528c3",
+      "latest_git_blob": "9d15ca5470261b5a2d2d969ae0867ca9b7f8e867",
+      "unchanged": true
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a2_exact_independent.json",
+      "bytes": 2067,
+      "sha256": "91db451c362d59c8bd1d155b10e0e5da275d62cced0e165b82cff7242fcc3d0e",
+      "frozen_commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+      "latest_commit": "6c6e484818b8b949ab0a6b2a4b9086b6a46528c3",
+      "latest_git_blob": "9d15ca5470261b5a2d2d969ae0867ca9b7f8e867",
+      "unchanged": true
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a2_sanity.json",
+      "bytes": 19691,
+      "sha256": "caf52a027f271f0f47ab07ed4289ca2115618aa2970290d2d10d89b90da59b4f",
+      "frozen_commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+      "latest_commit": "6c6e484818b8b949ab0a6b2a4b9086b6a46528c3",
+      "latest_git_blob": "8f93449076c2e4915eb5edea48905a5b61bf67f8",
+      "unchanged": true
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a2_sanity_independent.json",
+      "bytes": 19691,
+      "sha256": "caf52a027f271f0f47ab07ed4289ca2115618aa2970290d2d10d89b90da59b4f",
+      "frozen_commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+      "latest_commit": "6c6e484818b8b949ab0a6b2a4b9086b6a46528c3",
+      "latest_git_blob": "8f93449076c2e4915eb5edea48905a5b61bf67f8",
+      "unchanged": true
+    }
+  ],
+  "verdict": "Own permanent reservations unchanged and disjoint; PR12 no-range; PR15 higher ranges unchanged. No new ID or range."
+}

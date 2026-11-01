@@ -1,0 +1,127 @@
+{
+  "repository": "aacchhee/padua_research",
+  "retrieved_at": "2026-11-01T11:07:22.856Z",
+  "method": "github_search_prs all/open/closed-unmerged topn100 plus github_get_pr_info for every returned PR; returned total below100, branch enumeration cursor Mw exhausted with second empty page cursor null",
+  "all_prs": [
+    {
+      "number": 1,
+      "state": "closed",
+      "merged": true,
+      "head": "codex/initialize-padua",
+      "head_sha": "5a5f09f9768f4c2b28a82eb85ed5be8bd3c797e5",
+      "merge_commit_sha": "d36722823441dc40c6e19d69a174459348dd309c"
+    },
+    {
+      "number": 2,
+      "state": "closed",
+      "merged": true,
+      "head": "codex/charter-unisolvence-20261031",
+      "head_sha": "317a26597dedc9adc9cfc6a26fa00078df7d29e4",
+      "merge_commit_sha": "08fafe62d9798385dfafaacc9a41344272737e68"
+    },
+    {
+      "number": 3,
+      "state": "closed",
+      "merged": true,
+      "head": "codex/mz-constants-20261031",
+      "head_sha": "8ee04f4e5db46dd25fe5752ce605dde27098aae6",
+      "merge_commit_sha": "07c5f5465d6de306aa81dbe8ca1f615295163864"
+    },
+    {
+      "number": 4,
+      "state": "closed",
+      "merged": true,
+      "head": "codex/lattice-unisolvence-20261031",
+      "head_sha": "a4331a13301ee4a9905c8204c26bff5f9fdf246e",
+      "merge_commit_sha": "0d058fb410166bd97b178be57910f2d256d0b529"
+    },
+    {
+      "number": 5,
+      "state": "closed",
+      "merged": true,
+      "head": "codex/mz-postmerge-frontier-20261031",
+      "head_sha": "da679224b50d2210689c92e5a69d5a4d181afe3c",
+      "merge_commit_sha": "0d058fb410166bd97b178be57910f2d256d0b529"
+    },
+    {
+      "number": 6,
+      "state": "closed",
+      "merged": true,
+      "head": "claude/programme-ideas-20261031",
+      "head_sha": "b46b4dea18ce2c933489a211b0b6819dfd32ca70",
+      "merge_commit_sha": "a7e123476cef761807c69e5d0af1a094c7ac3df0"
+    },
+    {
+      "number": 11,
+      "state": "closed",
+      "merged": true,
+      "head": "claude/mz-prior-art-20261101",
+      "head_sha": "1406ef74a76d9160324596447a831470b93c398b",
+      "merge_commit_sha": "cf89b140530d5838bdb208a8c28f3e7aa676ace3"
+    },
+    {
+      "number": 12,
+      "state": "open",
+      "merged": false,
+      "head": "codex/padua-proof-attempts-2-20261101",
+      "head_sha": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+      "merge_commit_sha": "55e00dc7752bde11fb1514409d90938482365cdb"
+    },
+    {
+      "number": 8,
+      "state": "closed",
+      "merged": true,
+      "head": "claude/results-track-rule-20261101",
+      "head_sha": "6eeec5b3a3d48c4bde198d9cc6c170dd92674bdb",
+      "merge_commit_sha": "9739a0c56b7a3976422ce60a8441bfbbfd6554df"
+    },
+    {
+      "number": 9,
+      "state": "closed",
+      "merged": true,
+      "head": "codex/padua-proof-attempts-20261101",
+      "head_sha": "752ba068589683afe644b505d673f8da1529cbf0",
+      "merge_commit_sha": "806cc7b4509fd93bae652f9545d32d95529f8281"
+    },
+    {
+      "number": 10,
+      "state": "closed",
+      "merged": true,
+      "head": "claude/bivariate-lanczos-20261031",
+      "head_sha": "9fa30122fec9796ca718af210a2a13c7525038a2",
+      "merge_commit_sha": "21e620ba8b5f0e0706f3a8c6613517df04d9d469"
+    },
+    {
+      "number": 13,
+      "state": "closed",
+      "merged": true,
+      "head": "claude/handoff-id-rules-20261101",
+      "head_sha": "7ce4c36fb1494fee2dd3bdc1bf39fc241c5b9e21",
+      "merge_commit_sha": "e24b21fe43cdd090f6dfac269147e75185f04c5b"
+    }
+  ],
+  "closed_unmerged": [],
+  "open_prs": [
+    12
+  ],
+  "branches_pages": [
+    {
+      "branches": [
+        {
+          "branch": "claude/results-track-rule-20261101"
+        },
+        {
+          "branch": "codex/padua-proof-attempts-2-20261101"
+        },
+        {
+          "branch": "main"
+        }
+      ],
+      "cursor": "Mw"
+    },
+    {
+      "branches": [],
+      "cursor": null
+    }
+  ]
+}

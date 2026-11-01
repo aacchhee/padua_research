@@ -1,0 +1,9 @@
+exact ok
+sweep ok
+tensor ok
+rhombus ok
+PASS
+
+real	0m3.280s
+user	0m2.202s
+sys	0m0.967s
