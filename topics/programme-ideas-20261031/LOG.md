@@ -120,6 +120,7 @@ Subagents are launched as background `general-purpose` agents on `claude-fable-5
 - Registered provisionally in `PROOF_STATUS.md`, `state/IDEAS.md`, `ID_CROSSWALK.md`: PD-T?programme-ideas-claude-01…06, PD-N?programme-ideas-claude-01…05 (N03–N05 new: joint-Ritz converse refuted in general; Padua n = 2 pattern commutant of dimension 6; Fourier-basis commutation refuted on the tested instances), all 20 IDEA rows and an obstruction/disposition table. Final IDs remain for PR preparation through the batch-ledger owner.
 - New exact developer scripts: `checks/code/response-02/{ritz_converse_parity,padua_pattern_commutant,padua_n3_edge_identity}.py` with outputs (SymPy 1.14.0).
 - `OPEN_TARGETS.md`: precise statements of everything that still needs proof, with known evidence, done-criteria and first routes.
+- Addendum committed at `c8c8eec23c16601fbf02086de4623a445fc5f1bc`; the next commit only records this SHA. Re-audit target: the branch head containing this line.
 
 ## Runs needed
 
