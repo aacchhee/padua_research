@@ -1,0 +1,382 @@
+{
+  "rules_and_base": "cadb35066160e466cb1704b9791ad6f374446422",
+  "python": "3.12.14",
+  "input_identity_check": "all current bytes match pinned base",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 3159,
+      "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60",
+      "base_git_blob": "8c94c718629649c3f5c89d05e5b674ae5ad3a99c"
+    },
+    {
+      "path": "agents/WORKFLOW.md",
+      "bytes": 19609,
+      "sha256": "64253ae526179be3ce8303987e3f38b9d7a43f825d1a6e310c99c022ba728554",
+      "base_git_blob": "38a6fc1d630aa1a6716c7e7c808dd21a674dc27b"
+    },
+    {
+      "path": "agents/codex/CODEX.md",
+      "bytes": 4969,
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+      "base_git_blob": "16a4ecfea89acd5b1d9cd09c9213094bce144caf"
+    },
+    {
+      "path": "state/IDEAS.md",
+      "bytes": 64471,
+      "sha256": "183a4a13481aec97b4a7673b36d87f7ec799009ca68d859e299b24f80d804992",
+      "base_git_blob": "60580dbe8be3e373837a0a6a04ec8810af0e87e8"
+    },
+    {
+      "path": "literature/INDEX.md",
+      "bytes": 38040,
+      "sha256": "7fc98e2472a01ac964d22b47deb5a07cb3b6e368623116b961e249ecaf8927ed",
+      "base_git_blob": "279327ef4471e174abf2c4e4a344847babca6fa9"
+    },
+    {
+      "path": "templates/TOPIC_LOG.md",
+      "bytes": 733,
+      "sha256": "93e3049437473a97b1df600bd281907c32408ed6fdb1df56767d1d738896124a",
+      "base_git_blob": "37e276cc4a1cd6af3f1d84e284fa3e930d6a0818"
+    },
+    {
+      "path": "templates/THEORY.md",
+      "bytes": 3655,
+      "sha256": "eadbf9f53237abe0977b3593a7852561f61fc1dc04f9778babeaeaf237792dc8",
+      "base_git_blob": "078deb26c229c8f715f6238ba92fa48432f0dd5a"
+    },
+    {
+      "path": "templates/COLD_STORAGE.md",
+      "bytes": 868,
+      "sha256": "26d1b3f820dc6e97fc9e5ffced7ace84cb50b2a9a8c172f1b99e81c6272438a0",
+      "base_git_blob": "2d1541485f5f0bb1ede3b2dfb70aeac89b347f1c"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/OPEN_TARGETS.md",
+      "bytes": 12184,
+      "sha256": "24135cbdca62c1f1bb37893b5701fd6152ee9390f296d2d90acb9c9d99a8df84",
+      "base_git_blob": "7d19248df1d6897b370035a122b8104bb48c724f"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-01.md",
+      "bytes": 20419,
+      "sha256": "d577b69eec5d84626de84628bbfcb20f127d9daee4f29465f97d0ee442a7f35e",
+      "base_git_blob": "a14f9abda25112ba5757ab684496d123d534388c"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-review.md",
+      "bytes": 8940,
+      "sha256": "fa041d6751a277971f3b585dbef2282824c05072ef04b25be5f0736c6c256aae",
+      "base_git_blob": "64e96bad261f7a11a091c8d42f7c9b047c92eff7"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/decisive-gen4-2.md",
+      "bytes": 27880,
+      "sha256": "ca43e4bc5b9e8c4910dc64a06ea93fe33d1d33fb40505d63b16a032d4e68435f",
+      "base_git_blob": "0b6d226c97dda328cc571c8ea4a591ddba780537"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-01-finite-favard-pattern-pairs.md",
+      "bytes": 11046,
+      "sha256": "31e4de97c465f6a09b8114ed5090b3996155dc9072999311fccde5733f4e42ff",
+      "base_git_blob": "640eec26cec8a891f04ce444e68ba5760be97486"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-04-padua-corner-expansion.md",
+      "bytes": 5448,
+      "sha256": "35abb6bd74b427bf4c8bc258476e6a506d11150a78abeca2735e0e94569abac2",
+      "base_git_blob": "427d6c3dae2a2f2b97e146036a839ce3da4e8e21"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-06-padua-lebesgue-maxima-counts.md",
+      "bytes": 6445,
+      "sha256": "ff53d00c2ec0f00e2716cd47a7f57ce53c27a7b51484b3473e9d5742c60d8650",
+      "base_git_blob": "d35d82a4ab55355062918f7297a9da3ad3227386"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N04-pattern-commutant-not-three-dimensional.md",
+      "bytes": 4360,
+      "sha256": "5755fa21b7336917b4bf7bde66147bf0750ed41e65d3c037a90f103a10511b9f",
+      "base_git_blob": "0ea8848d9cf69f216fe5d684e866ff5577b85711"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_onepage.py",
+      "bytes": 12943,
+      "sha256": "e7c062a90c883de783d041503dbba77f7fe03070a0f796a28cf66b78b4a5262a",
+      "base_git_blob": "486ac1e33a246bcef97c4a3cb49ab2b5520411d5"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/leb_common.py",
+      "bytes": 14491,
+      "sha256": "419970972ae69efcc5e4a1c965fbd49982b67100376d3ff0c46e8629dcb382d0",
+      "base_git_blob": "da8135e4d6a3deac23efbfe0faf705f2405d00ef"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_certify.py",
+      "bytes": 30348,
+      "sha256": "1a1fb00ced54bb3083dce2ff12c56cd10c28499b7e0353ba23e8a6afd5a9d78b",
+      "base_git_blob": "6bf5ce1c7839cbd32583974bc84e0ffbc4c72a4d"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_degenerate.py",
+      "bytes": 10557,
+      "sha256": "cdf8cd3273c9ecffa35542bb572a0dde141bf5d068b77ddda548a9a5bdaee5b4",
+      "base_git_blob": "caa24d80a683c80094203d311e7047e8313a0a16"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_maxima.json",
+      "bytes": 13560,
+      "sha256": "bf1890f4d23f871f16d2dda41b800e0d70d2025299221296081a925518d48de0",
+      "base_git_blob": "0f8310571d595011af287f26536bf43d0d868dff"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_certify.log",
+      "bytes": 14474,
+      "sha256": "4eeb37aa8848202988ebd660b0a332e8812f2adb616d0dacc56cfa1140e7f3a8",
+      "base_git_blob": "47ccf67917685160d463d18a954dfa241793da47"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/gen4/gen4_tests.py",
+      "bytes": 4775,
+      "sha256": "9ec69777c75f9ffe8b784b083d6684d47b279091d341c53e9e3b0287078bfb6c",
+      "base_git_blob": "45cb38929068cc47d6e4c9a120acd2b776788f56"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/adv/M2/m2_common.py",
+      "bytes": 4277,
+      "sha256": "8b2591383912f086652c6b2524f824d41cda4d7fe387120ddec1953c95f91a65",
+      "base_git_blob": "51430487080e032f62605a4bbf3b1e5f0a0ec89c"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/adv/M2/m2_favard_commutant.py",
+      "bytes": 4335,
+      "sha256": "2d262a4ffbf7469cf16318169dcdeb0517f948400185bba43d271673a4ddbf43",
+      "base_git_blob": "f289e85f7a0fc136c380cd70a9a8cf596b787ecb"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/response-02/padua_pattern_commutant.py",
+      "bytes": 3208,
+      "sha256": "abb786981421ffeb4a81f7eb175fb2fb1fa70cef7e71f7649d43bf4c2aa4a87b",
+      "base_git_blob": "651de429a439a75aab0d8ab3bcf9e47a6e33c3d0"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/response-02/padua_n3_edge_identity.py",
+      "bytes": 1203,
+      "sha256": "b051f2d9ce76af5e7bd1af600d104928b57563ceec19b7487b1faca63c17160d",
+      "base_git_blob": "cf12a6704ecc1141f906ddb431c94e9330ab9173"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/ideas/candidates.md",
+      "bytes": 121144,
+      "sha256": "d079d870350603d63ebae2fbfc9c98ecccb91f54e8b6d5df4cac2a37c7e2286e",
+      "base_git_blob": "5ff6097e49451c4119719faf47399dd5768abaa1"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N02-windowed-rational-lanczos-instability.md",
+      "bytes": 5696,
+      "sha256": "777beb22f8364b21e7ecf03e930e586f563e11b361e9fecaacb1b67e956f395b",
+      "base_git_blob": "ddfc7c06ca2c73891bb8f5b231f04215410a5f0a"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/adversarial-gen1-3.md",
+      "bytes": 32289,
+      "sha256": "33e335c9ebb2b7a0d7951b07973654dc68ba323a0412b5d4e6a251b83fefa277",
+      "base_git_blob": "9a8dfd4caf930a6805b043432847f3f5725efaa5"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-l1-obstruction.md",
+      "bytes": 2669,
+      "sha256": "49e90b2d0918b9bb4d10cba7332c4ed234cbffdcb43773ab30eedc9c82ea34be",
+      "base_git_blob": "63ddc078af618eb722b6765bd8e1095483b453c5"
+    }
+  ],
+  "topic_artifacts": [
+    {
+      "path": "topics/padua-proof-attempts-20261101/attempts/T-A1.md",
+      "bytes": 3442,
+      "sha256": "81e598bfd9e6c3bd7988a19f035da9fa383e52407aa6426c515187c5f9db2cd3"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/attempts/T-A5-partial.md",
+      "bytes": 6920,
+      "sha256": "73a6d623ceddd56d0026ec942232240cb7f259b3a5ad6c34751139bf0465cf1e"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/attempts/T-B1-optional.md",
+      "bytes": 3229,
+      "sha256": "8caa5f79534c9ae3381dd9d91a70dc6168ec409722c658c446f477af60c502e7"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/attempts/T-B5.md",
+      "bytes": 4241,
+      "sha256": "a774ef53cdc85e0a6dd7b1c43096cf23112e7d72af4c8895506f20e6825706a0"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/audit-01.md",
+      "bytes": 14965,
+      "sha256": "f651c118d8693c046ce09bbd332fa74cfe287c733fc3bb8aa78fac25e3ea0e50"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/audit-support/claude-audit-01/README.md",
+      "bytes": 686,
+      "sha256": "d65538afc95ded078cfe90fd095e1f1604f569b173154e55e8e5eef11e651e75"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/audit-support/claude-audit-01/SHA256SUMS.txt",
+      "bytes": 561,
+      "sha256": "dfbfc4f88f56c3f27f61467400414141d7ef4444c06c7ee37b572c996430a5ca"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/audit-support/claude-audit-01/aud_a1.py",
+      "bytes": 2579,
+      "sha256": "d0309e9727ed541cf7ccbcf9b4e4ae6c5a41d15009aa0a1823b1f288c3f42b22"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/audit-support/claude-audit-01/aud_a5.py",
+      "bytes": 5431,
+      "sha256": "5e84761bb5ba87922bf8f36b72112c9ac1004decf79f3fce691c5acf361d8aea"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/audit-support/claude-audit-01/aud_b5.py",
+      "bytes": 5033,
+      "sha256": "f2cb2be9166fc8e358075af5080adad037817edbec50708f4c311ddc0e1ac5c8"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/audit-support/claude-audit-01/outputs/aud_a1.json",
+      "bytes": 1140,
+      "sha256": "c51f80e93819bf08c8b23ca4cf3247116bdb62730b82c03d5c4712e83d8fe9e5"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/audit-support/claude-audit-01/outputs/aud_a5.json",
+      "bytes": 1167,
+      "sha256": "da6ae77a4bb6fc3c0714d43b9ab4b094dbc06a7d4adb6656e61432539edf3aff"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/audit-support/claude-audit-01/outputs/aud_b5.out",
+      "bytes": 2270,
+      "sha256": "31c903beeb461ed0aad5b607b4c1887bb3203e905b78b20e6499678eddaa7671"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/code/a1_exact_check.py",
+      "bytes": 3736,
+      "sha256": "e7ea17bc56e44214fdf4206c654fb1710e7a8d3ca194dcdc15390a066a7920b0"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/code/a5_exact_certificate.py",
+      "bytes": 14588,
+      "sha256": "ffcc1508176aa0b60a0a709d41a6e736ca0a4b38ec8aa436d5d706f800431c84"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/code/a5_trace.py",
+      "bytes": 3362,
+      "sha256": "bb9b8be765064de888691635333260635799a73c29d2f149fa3c31e9214f0304"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/code/b5_exact_instances.py",
+      "bytes": 4144,
+      "sha256": "fb56be6166ce10ecae213cd1c4e169594a52b0a922058e52934b88ccd0edf18b"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/code/evidence_manifest.py",
+      "bytes": 3581,
+      "sha256": "f950c74d523daba97478e7ad56e3ea1bc6605d51f71a34ed1591600846633f48"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/independent-checks-a5.md",
+      "bytes": 7331,
+      "sha256": "756d585cda80f55c19e28116a68cfc4baeaecbe33fbf7db9bea1bcc09192b89c"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/independent-checks.md",
+      "bytes": 7918,
+      "sha256": "c0cfb02c8d69090f6eb6732e1d48153e55ddc10806da35fe715b63a6293c3f07"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/inputs-review.md",
+      "bytes": 6485,
+      "sha256": "3a75bb2db7c9f56aacb6636e40d385c2bc40dcd1084e8a807dac9548caa844af"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/outputs/a1_exact_check.json",
+      "bytes": 1875,
+      "sha256": "f8cd6cfd027989bf4bb59ebaebd9040824b0763ef660db51b5046078f33e8f94"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/outputs/a1_independent.json",
+      "bytes": 1875,
+      "sha256": "f8cd6cfd027989bf4bb59ebaebd9040824b0763ef660db51b5046078f33e8f94"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/outputs/a5_exact_certificate.json",
+      "bytes": 7011,
+      "sha256": "279c8e7ca9c4781bb3c528a21f870162aab8402ea219e3ec339c4b9d676d25f3"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/outputs/a5_exact_independent.json",
+      "bytes": 7011,
+      "sha256": "279c8e7ca9c4781bb3c528a21f870162aab8402ea219e3ec339c4b9d676d25f3"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/outputs/a5_trace.json",
+      "bytes": 4215,
+      "sha256": "093fe1d4171f4416e28ba5e269f30378f4e32165f03bc5969a5d94919e92d468"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/outputs/a5_trace_independent.json",
+      "bytes": 4215,
+      "sha256": "d573437f99e12da7a02849029b5d08842fed0d98958576330cb10342d1ffaf7e"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/outputs/b5_exact_instances.json",
+      "bytes": 5327,
+      "sha256": "251496a1a117054608dd55d32c7dfa5441c5af34cf7cb00d1f99ec0e9e80da02"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/outputs/b5_independent.json",
+      "bytes": 5327,
+      "sha256": "251496a1a117054608dd55d32c7dfa5441c5af34cf7cb00d1f99ec0e9e80da02"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/plan.md",
+      "bytes": 2811,
+      "sha256": "bf1c8b13b4fc18a4a9a9f046825610188cce19c6cd317340da54c34673385fdf"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/pr-prep.md",
+      "bytes": 3980,
+      "sha256": "9bceffd5799b515cb2bc10fed3e44c0b12848c70b237f4eb0766f8d4e0690582"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/preparation-checks.json",
+      "bytes": 1280,
+      "sha256": "97713206bfdc4a1009a689b42fad0578e303a31dca0929516c8ad47a7da11861"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/proposed-record-changes.md",
+      "bytes": 18971,
+      "sha256": "29e2133dd2a2983de929f8da48340f89880b96aa3d9000ae926834b7e47b9c62"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/response-01.md",
+      "bytes": 5250,
+      "sha256": "2c19ca7a7a0491b5160c96d36df19eb7623bdaba0053a6ea176c432aab3383f7"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-01-padua-corner.md",
+      "bytes": 10381,
+      "sha256": "d32db014897175b6c14954af7a6ab601d193535e2c9fdeb15730db1420b6f24f"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-02-generic-commutant.md",
+      "bytes": 14833,
+      "sha256": "99c0aee57ec17cc125c182346710a1894094b673f0ae0719ecd61da0e400b0b0"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-03-degenerate-maxima.md",
+      "bytes": 16526,
+      "sha256": "c5a30a0922604ec2545233bc91d7a05efcac55ff424d236a8a9eed4907ecf466"
+    }
+  ],
+  "generated_output_bytes": 41433,
+  "limitations": "No external Windows delivery or Claude audit attested."
+}

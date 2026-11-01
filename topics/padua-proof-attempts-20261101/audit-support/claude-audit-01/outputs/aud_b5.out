@@ -1,0 +1,83 @@
+{'instance': 'moment-curve', 'n': 2, 'N': 6, 'mask_vars': 28, 'commutant_dim': 3, 'distinct_x': True}
+{'instance': 'moment-curve', 'n': 3, 'N': 10, 'mask_vars': 62, 'commutant_dim': 3, 'distinct_x': True}
+{'instance': 'moment-curve', 'n': 4, 'N': 15, 'mask_vars': 115, 'commutant_dim': 3, 'distinct_x': True}
+{'instance': 'moment-curve', 'n': 5, 'N': 21, 'mask_vars': 191, 'commutant_dim': 3, 'distinct_x': True}
+{'instance': 'random-rational distinct x (seed 20261101)', 'n': 2, 'N': 6, 'mask_vars': 28, 'commutant_dim': 3, 'distinct_x': True}
+{'instance': 'random-rational distinct x (seed 20261101)', 'n': 3, 'N': 10, 'mask_vars': 62, 'commutant_dim': 3, 'distinct_x': True}
+{'instance': 'random-rational distinct x (seed 20261101)', 'n': 4, 'N': 15, 'mask_vars': 115, 'commutant_dim': 3, 'distinct_x': True}
+{'instance': 'Padua n=2 (control, PD-N04)', 'n': 2, 'N': 6, 'mask_vars': 28, 'commutant_dim': 6, 'distinct_x': False}
+{'instance': 'repeated-x diagnostic (two equal x)', 'n': 3, 'N': 10, 'mask_vars': 62, 'commutant_dim': 3, 'distinct_x': False}
+[
+ {
+  "instance": "moment-curve",
+  "n": 2,
+  "N": 6,
+  "mask_vars": 28,
+  "commutant_dim": 3,
+  "distinct_x": true
+ },
+ {
+  "instance": "moment-curve",
+  "n": 3,
+  "N": 10,
+  "mask_vars": 62,
+  "commutant_dim": 3,
+  "distinct_x": true
+ },
+ {
+  "instance": "moment-curve",
+  "n": 4,
+  "N": 15,
+  "mask_vars": 115,
+  "commutant_dim": 3,
+  "distinct_x": true
+ },
+ {
+  "instance": "moment-curve",
+  "n": 5,
+  "N": 21,
+  "mask_vars": 191,
+  "commutant_dim": 3,
+  "distinct_x": true
+ },
+ {
+  "instance": "random-rational distinct x (seed 20261101)",
+  "n": 2,
+  "N": 6,
+  "mask_vars": 28,
+  "commutant_dim": 3,
+  "distinct_x": true
+ },
+ {
+  "instance": "random-rational distinct x (seed 20261101)",
+  "n": 3,
+  "N": 10,
+  "mask_vars": 62,
+  "commutant_dim": 3,
+  "distinct_x": true
+ },
+ {
+  "instance": "random-rational distinct x (seed 20261101)",
+  "n": 4,
+  "N": 15,
+  "mask_vars": 115,
+  "commutant_dim": 3,
+  "distinct_x": true
+ },
+ {
+  "instance": "Padua n=2 (control, PD-N04)",
+  "n": 2,
+  "N": 6,
+  "mask_vars": 28,
+  "commutant_dim": 6,
+  "distinct_x": false
+ },
+ {
+  "instance": "repeated-x diagnostic (two equal x)",
+  "n": 3,
+  "N": 10,
+  "mask_vars": 62,
+  "commutant_dim": 3,
+  "distinct_x": false
+ }
+]

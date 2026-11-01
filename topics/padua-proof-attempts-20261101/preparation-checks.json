@@ -1,0 +1,24 @@
+{
+  "rules_sha": "95279b833bca5967fcf47c1b71a56ff622185b4e",
+  "audited_candidate": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+  "refreshed_main": "9739a0c56b7a3976422ce60a8441bfbbfd6554df",
+  "refreshed_pr6": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+  "staged_candidate_tree_before_this_receipt": "91792754adc2b917b6d3bd078086db55d874a6c9",
+  "literal_originals_checked": 12,
+  "target_routes_preserved": 3,
+  "proof_bodies_unchanged": true,
+  "scientific_code_and_outputs_unchanged": true,
+  "auditor_files_unchanged": true,
+  "rehearsal": {
+    "method": "disposable Git index; main then PR6 squash diff then topic-only PR9 squash diff from cadb350",
+    "pr6_patch_sha256": "665b2b8ac2e48d98ceea2003b822235f3f287f0a4ceb03e1dc473b3db605f857",
+    "pr9_patch_sha256": "4e3ff0111611576c20a9a0b5e13d4f189b7d884f7ae0c0f41486c2c13dc6f309",
+    "tree_after_pr6": "90794ee651b8ad71e54da06d9b95b21b6ecc436e",
+    "tree_after_pr9": "af618e222bb2053875ae7cd52a4b085ea166c8ea",
+    "topic_additions": 38,
+    "topic_blobs_equal_staged_candidate": true,
+    "outside_topic_changes": 0,
+    "conflicts": 0
+  },
+  "limitations": "Receipt/manifest and documentation updated afterward only; no scientific content changes. Windows delivery unavailable; no shared edits or ID allocation."
+}

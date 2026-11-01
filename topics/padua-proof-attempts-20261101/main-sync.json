@@ -1,0 +1,93 @@
+{
+  "main": "cf89b140530d5838bdb208a8c28f3e7aa676ace3",
+  "pre_sync_head": "7b8884a2f98518784ff3698dd2f3f9c49c9cdd62",
+  "main_merge_commit": "b9ba9b7bf11ac8601f76659a38bb205ee6dad111",
+  "rules_sha": "cf89b140530d5838bdb208a8c28f3e7aa676ace3",
+  "merge_conflicts": 0,
+  "all_39_original_topic_files_unchanged_by_merge": true,
+  "post_merge_exact_checks": {
+    "a1": {
+      "passed": true,
+      "matches_existing_receipt": true,
+      "sha256": "f8cd6cfd027989bf4bb59ebaebd9040824b0763ef660db51b5046078f33e8f94"
+    },
+    "b5": {
+      "passed": true,
+      "matches_existing_receipt": true,
+      "sha256": "251496a1a117054608dd55d32c7dfa5441c5af34cf7cb00d1f99ec0e9e80da02"
+    },
+    "a5": {
+      "passed": true,
+      "matches_existing_receipt": true,
+      "sha256": "279c8e7ca9c4781bb3c528a21f870162aab8402ea219e3ec339c4b9d676d25f3"
+    }
+  },
+  "historical_manifest_pinned_inputs_verified": 31,
+  "current_main_input_differences": [
+    "AGENTS.md",
+    "agents/WORKFLOW.md",
+    "state/IDEAS.md",
+    "literature/INDEX.md",
+    "templates/TOPIC_LOG.md",
+    "topics/programme-ideas-20261031/OPEN_TARGETS.md",
+    "topics/programme-ideas-20261031/checks/decisive-gen4-2.md",
+    "topics/programme-ideas-20261031/theory/programme-ideas-claude-01-finite-favard-pattern-pairs.md",
+    "topics/programme-ideas-20261031/theory/programme-ideas-claude-04-padua-corner-expansion.md",
+    "topics/programme-ideas-20261031/theory/programme-ideas-claude-06-padua-lebesgue-maxima-counts.md",
+    "topics/programme-ideas-20261031/theory/programme-ideas-claude-N04-pattern-commutant-not-three-dimensional.md",
+    "topics/programme-ideas-20261031/ideas/candidates.md",
+    "topics/programme-ideas-20261031/theory/programme-ideas-claude-N02-windowed-rational-lanczos-instability.md"
+  ],
+  "historical_proposal_old_block_matches_on_current_main": [
+    {
+      "file": "topics/programme-ideas-20261031/theory/programme-ideas-claude-04-padua-corner-expansion.md",
+      "matches": 1
+    },
+    {
+      "file": "topics/programme-ideas-20261031/theory/programme-ideas-claude-04-padua-corner-expansion.md",
+      "matches": 1
+    },
+    {
+      "file": "topics/programme-ideas-20261031/theory/programme-ideas-claude-04-padua-corner-expansion.md",
+      "matches": 1
+    },
+    {
+      "file": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N04-pattern-commutant-not-three-dimensional.md",
+      "matches": 1
+    },
+    {
+      "file": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N04-pattern-commutant-not-three-dimensional.md",
+      "matches": 1
+    },
+    {
+      "file": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N04-pattern-commutant-not-three-dimensional.md",
+      "matches": 1
+    },
+    {
+      "file": "topics/programme-ideas-20261031/theory/programme-ideas-claude-01-finite-favard-pattern-pairs.md",
+      "matches": 1
+    },
+    {
+      "file": "topics/programme-ideas-20261031/OPEN_TARGETS.md",
+      "matches": 1
+    },
+    {
+      "file": "topics/programme-ideas-20261031/OPEN_TARGETS.md",
+      "matches": 1
+    },
+    {
+      "file": "topics/programme-ideas-20261031/theory/programme-ideas-claude-06-padua-lebesgue-maxima-counts.md",
+      "matches": 1
+    },
+    {
+      "file": "topics/programme-ideas-20261031/theory/programme-ideas-claude-06-padua-lebesgue-maxima-counts.md",
+      "matches": 1
+    },
+    {
+      "file": "topics/programme-ideas-20261031/OPEN_TARGETS.md",
+      "matches": 1
+    }
+  ],
+  "source_proposal_count": 12,
+  "limitations": "Historical proposals and provenance remain pinned to their recorded revisions. No source-record application, new reservation, final ID assignment, or scientific claim change in this sync."
+}

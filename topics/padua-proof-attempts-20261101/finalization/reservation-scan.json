@@ -1,0 +1,567 @@
+{
+  "scope": "Read-only independent reservation inventory; not a reservation or final-ID assignment.",
+  "date_utc": "2026-11-01",
+  "rules_read_at": "2c192c7575a5688d84a5869072c5918d7405ef03",
+  "role": "Codex subagent reservation_inventory; requested allocation gpt-6.1-sol medium; resolved runtime model/effort metadata unexposed.",
+  "closed_pr_inventory": {
+    "source": "Parent orchestrator GitHub full-list result supplied with task; not independently refetched here",
+    "merged": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      10,
+      11,
+      13
+    ],
+    "closed_unmerged": []
+  },
+  "snapshots": {
+    "main": {
+      "head": "cf89b140530d5838bdb208a8c28f3e7aa676ace3",
+      "files": {
+        "topics/charter-unisolvence-20261031/ALLOCATIONS.md": {
+          "git_blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+          "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+          "bytes": 2271,
+          "lines": 16
+        },
+        "topics/padua-batch-20261031/ALLOCATIONS.md": {
+          "git_blob": "4c55ac54bde0f8c901f34d1b73202fa606a467ab",
+          "sha256": "d95ea644838d39dc4370ab8ce6c21b16d39f18d6a6dfdae7e912664807d573c3",
+          "bytes": 18382,
+          "lines": 115
+        },
+        "PROOF_STATUS.md": {
+          "git_blob": "8a42699a04ee0d555453f4e2ac10a597dc9e276a",
+          "sha256": "ab3cbc4f09578571828a28773a9a527f0c22dba49270c92b652645c1420b35c2",
+          "bytes": 96640,
+          "lines": 191
+        },
+        "state/IDEAS.md": {
+          "git_blob": "d6570b2b20a9f882b02ca4e79cd737a5fa13179e",
+          "sha256": "f70650460c7b140021a084a2b9ddd56efc73f7e92ce8ef7b2f717db3ae677898",
+          "bytes": 158605,
+          "lines": 736
+        },
+        "literature/INDEX.md": {
+          "git_blob": "f9348537234c798a3fa738970513891f0dd8c956",
+          "sha256": "f90355c5b77a638d1a49980330eff1bda7d0e7610771a3bdae465f384b03f056",
+          "bytes": 265014,
+          "lines": 491
+        },
+        "ID_CROSSWALK.md": {
+          "git_blob": "15637d098d5e88e354f16948ad3c5bf4b103fe2c",
+          "sha256": "543b970b311bb49cc7147db637734f37e6cdb7c48e91d67c3c9e79d55812844c",
+          "bytes": 249483,
+          "lines": 893
+        }
+      },
+      "primary_registry_inventory": {
+        "PROOF_STATUS.md": {
+          "primary_column_occurrences": 143,
+          "unique_ids": 143,
+          "min_max_by_namespace": {
+            "PD-T": {
+              "min": 1,
+              "max": 100,
+              "unique_count": 100
+            },
+            "PD-N": {
+              "min": 1,
+              "max": 43,
+              "unique_count": 43
+            }
+          },
+          "repeated_mentions": {}
+        },
+        "literature/INDEX.md": {
+          "primary_column_occurrences": 426,
+          "unique_ids": 426,
+          "min_max_by_namespace": {
+            "LIT": {
+              "min": 1,
+              "max": 426,
+              "unique_count": 426
+            }
+          },
+          "repeated_mentions": {}
+        },
+        "state/IDEAS.md": {
+          "primary_column_occurrences": 231,
+          "unique_ids": 209,
+          "min_max_by_namespace": {
+            "IDEA": {
+              "min": 1,
+              "max": 209,
+              "unique_count": 209
+            }
+          },
+          "repeated_mentions": {
+            "IDEA-001": 2,
+            "IDEA-002": 3,
+            "IDEA-005": 2,
+            "IDEA-006": 2,
+            "IDEA-007": 2,
+            "IDEA-008": 2,
+            "IDEA-009": 2,
+            "IDEA-010": 2,
+            "IDEA-011": 2,
+            "IDEA-012": 2,
+            "IDEA-013": 2,
+            "IDEA-014": 2,
+            "IDEA-015": 2,
+            "IDEA-052": 2,
+            "IDEA-053": 2,
+            "IDEA-054": 2,
+            "IDEA-055": 2,
+            "IDEA-056": 2,
+            "IDEA-057": 2,
+            "IDEA-058": 2,
+            "IDEA-059": 2
+          }
+        }
+      },
+      "external_bttb_lit_references": {
+        "state/IDEAS.md": [
+          "LIT-1729"
+        ],
+        "literature/INDEX.md": [
+          "LIT-1160",
+          "LIT-1185",
+          "LIT-1317",
+          "LIT-1325",
+          "LIT-1586",
+          "LIT-1658",
+          "LIT-1729",
+          "LIT-1750"
+        ]
+      }
+    },
+    "PR9": {
+      "head": "93da3be26dbddf9ec2446af578fe8015bb4eeada",
+      "files": {
+        "topics/charter-unisolvence-20261031/ALLOCATIONS.md": {
+          "git_blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+          "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+          "bytes": 2271,
+          "lines": 16
+        },
+        "topics/padua-batch-20261031/ALLOCATIONS.md": {
+          "git_blob": "4c55ac54bde0f8c901f34d1b73202fa606a467ab",
+          "sha256": "d95ea644838d39dc4370ab8ce6c21b16d39f18d6a6dfdae7e912664807d573c3",
+          "bytes": 18382,
+          "lines": 115
+        },
+        "PROOF_STATUS.md": {
+          "git_blob": "8a42699a04ee0d555453f4e2ac10a597dc9e276a",
+          "sha256": "ab3cbc4f09578571828a28773a9a527f0c22dba49270c92b652645c1420b35c2",
+          "bytes": 96640,
+          "lines": 191
+        },
+        "state/IDEAS.md": {
+          "git_blob": "d6570b2b20a9f882b02ca4e79cd737a5fa13179e",
+          "sha256": "f70650460c7b140021a084a2b9ddd56efc73f7e92ce8ef7b2f717db3ae677898",
+          "bytes": 158605,
+          "lines": 736
+        },
+        "literature/INDEX.md": {
+          "git_blob": "f9348537234c798a3fa738970513891f0dd8c956",
+          "sha256": "f90355c5b77a638d1a49980330eff1bda7d0e7610771a3bdae465f384b03f056",
+          "bytes": 265014,
+          "lines": 491
+        },
+        "ID_CROSSWALK.md": {
+          "git_blob": "15637d098d5e88e354f16948ad3c5bf4b103fe2c",
+          "sha256": "543b970b311bb49cc7147db637734f37e6cdb7c48e91d67c3c9e79d55812844c",
+          "bytes": 249483,
+          "lines": 893
+        }
+      },
+      "primary_registry_inventory": {
+        "PROOF_STATUS.md": {
+          "primary_column_occurrences": 143,
+          "unique_ids": 143,
+          "min_max_by_namespace": {
+            "PD-T": {
+              "min": 1,
+              "max": 100,
+              "unique_count": 100
+            },
+            "PD-N": {
+              "min": 1,
+              "max": 43,
+              "unique_count": 43
+            }
+          },
+          "repeated_mentions": {}
+        },
+        "literature/INDEX.md": {
+          "primary_column_occurrences": 426,
+          "unique_ids": 426,
+          "min_max_by_namespace": {
+            "LIT": {
+              "min": 1,
+              "max": 426,
+              "unique_count": 426
+            }
+          },
+          "repeated_mentions": {}
+        },
+        "state/IDEAS.md": {
+          "primary_column_occurrences": 231,
+          "unique_ids": 209,
+          "min_max_by_namespace": {
+            "IDEA": {
+              "min": 1,
+              "max": 209,
+              "unique_count": 209
+            }
+          },
+          "repeated_mentions": {
+            "IDEA-001": 2,
+            "IDEA-002": 3,
+            "IDEA-005": 2,
+            "IDEA-006": 2,
+            "IDEA-007": 2,
+            "IDEA-008": 2,
+            "IDEA-009": 2,
+            "IDEA-010": 2,
+            "IDEA-011": 2,
+            "IDEA-012": 2,
+            "IDEA-013": 2,
+            "IDEA-014": 2,
+            "IDEA-015": 2,
+            "IDEA-052": 2,
+            "IDEA-053": 2,
+            "IDEA-054": 2,
+            "IDEA-055": 2,
+            "IDEA-056": 2,
+            "IDEA-057": 2,
+            "IDEA-058": 2,
+            "IDEA-059": 2
+          }
+        }
+      },
+      "external_bttb_lit_references": {
+        "state/IDEAS.md": [
+          "LIT-1729"
+        ],
+        "literature/INDEX.md": [
+          "LIT-1160",
+          "LIT-1185",
+          "LIT-1317",
+          "LIT-1325",
+          "LIT-1586",
+          "LIT-1658",
+          "LIT-1729",
+          "LIT-1750"
+        ]
+      }
+    },
+    "PR12": {
+      "head": "0d9ad5b803b3fff43080586f5255bfdfcba602e8",
+      "files": {
+        "topics/charter-unisolvence-20261031/ALLOCATIONS.md": {
+          "git_blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+          "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+          "bytes": 2271,
+          "lines": 16
+        },
+        "topics/padua-batch-20261031/ALLOCATIONS.md": {
+          "git_blob": "4c55ac54bde0f8c901f34d1b73202fa606a467ab",
+          "sha256": "d95ea644838d39dc4370ab8ce6c21b16d39f18d6a6dfdae7e912664807d573c3",
+          "bytes": 18382,
+          "lines": 115
+        },
+        "PROOF_STATUS.md": {
+          "git_blob": "8a42699a04ee0d555453f4e2ac10a597dc9e276a",
+          "sha256": "ab3cbc4f09578571828a28773a9a527f0c22dba49270c92b652645c1420b35c2",
+          "bytes": 96640,
+          "lines": 191
+        },
+        "state/IDEAS.md": {
+          "git_blob": "d6570b2b20a9f882b02ca4e79cd737a5fa13179e",
+          "sha256": "f70650460c7b140021a084a2b9ddd56efc73f7e92ce8ef7b2f717db3ae677898",
+          "bytes": 158605,
+          "lines": 736
+        },
+        "literature/INDEX.md": {
+          "git_blob": "f9348537234c798a3fa738970513891f0dd8c956",
+          "sha256": "f90355c5b77a638d1a49980330eff1bda7d0e7610771a3bdae465f384b03f056",
+          "bytes": 265014,
+          "lines": 491
+        },
+        "ID_CROSSWALK.md": {
+          "git_blob": "15637d098d5e88e354f16948ad3c5bf4b103fe2c",
+          "sha256": "543b970b311bb49cc7147db637734f37e6cdb7c48e91d67c3c9e79d55812844c",
+          "bytes": 249483,
+          "lines": 893
+        }
+      },
+      "primary_registry_inventory": {
+        "PROOF_STATUS.md": {
+          "primary_column_occurrences": 143,
+          "unique_ids": 143,
+          "min_max_by_namespace": {
+            "PD-T": {
+              "min": 1,
+              "max": 100,
+              "unique_count": 100
+            },
+            "PD-N": {
+              "min": 1,
+              "max": 43,
+              "unique_count": 43
+            }
+          },
+          "repeated_mentions": {}
+        },
+        "literature/INDEX.md": {
+          "primary_column_occurrences": 426,
+          "unique_ids": 426,
+          "min_max_by_namespace": {
+            "LIT": {
+              "min": 1,
+              "max": 426,
+              "unique_count": 426
+            }
+          },
+          "repeated_mentions": {}
+        },
+        "state/IDEAS.md": {
+          "primary_column_occurrences": 231,
+          "unique_ids": 209,
+          "min_max_by_namespace": {
+            "IDEA": {
+              "min": 1,
+              "max": 209,
+              "unique_count": 209
+            }
+          },
+          "repeated_mentions": {
+            "IDEA-001": 2,
+            "IDEA-002": 3,
+            "IDEA-005": 2,
+            "IDEA-006": 2,
+            "IDEA-007": 2,
+            "IDEA-008": 2,
+            "IDEA-009": 2,
+            "IDEA-010": 2,
+            "IDEA-011": 2,
+            "IDEA-012": 2,
+            "IDEA-013": 2,
+            "IDEA-014": 2,
+            "IDEA-015": 2,
+            "IDEA-052": 2,
+            "IDEA-053": 2,
+            "IDEA-054": 2,
+            "IDEA-055": 2,
+            "IDEA-056": 2,
+            "IDEA-057": 2,
+            "IDEA-058": 2,
+            "IDEA-059": 2
+          }
+        }
+      },
+      "external_bttb_lit_references": {
+        "state/IDEAS.md": [
+          "LIT-1729"
+        ],
+        "literature/INDEX.md": [
+          "LIT-1160",
+          "LIT-1185",
+          "LIT-1317",
+          "LIT-1325",
+          "LIT-1586",
+          "LIT-1658",
+          "LIT-1729",
+          "LIT-1750"
+        ]
+      }
+    }
+  },
+  "existing_distinct_reservation_blocks": {
+    "PD-T": [
+      {
+        "topic": "charter",
+        "first": 1,
+        "last": 12,
+        "count": 12
+      },
+      {
+        "topic": "mz-constants",
+        "first": 13,
+        "last": 28,
+        "count": 16
+      },
+      {
+        "topic": "bivariate-lanczos",
+        "first": 29,
+        "last": 80,
+        "count": 52
+      },
+      {
+        "topic": "lattice-unisolvence",
+        "first": 81,
+        "last": 94,
+        "count": 14
+      },
+      {
+        "topic": "programme-ideas",
+        "first": 95,
+        "last": 100,
+        "count": 6
+      }
+    ],
+    "PD-N": [
+      {
+        "topic": "charter",
+        "first": 1,
+        "last": 1,
+        "count": 1
+      },
+      {
+        "topic": "mz-constants",
+        "first": 2,
+        "last": 6,
+        "count": 5
+      },
+      {
+        "topic": "bivariate-lanczos",
+        "first": 7,
+        "last": 31,
+        "count": 25
+      },
+      {
+        "topic": "lattice-unisolvence",
+        "first": 32,
+        "last": 38,
+        "count": 7
+      },
+      {
+        "topic": "programme-ideas",
+        "first": 39,
+        "last": 43,
+        "count": 5
+      }
+    ],
+    "IDEA": [
+      {
+        "topic": "charter",
+        "first": 1,
+        "last": 51,
+        "count": 51
+      },
+      {
+        "topic": "mz-constants",
+        "first": 52,
+        "last": 76,
+        "count": 25
+      },
+      {
+        "topic": "bivariate-lanczos",
+        "first": 77,
+        "last": 176,
+        "count": 100
+      },
+      {
+        "topic": "lattice-unisolvence",
+        "first": 177,
+        "last": 189,
+        "count": 13
+      },
+      {
+        "topic": "programme-ideas",
+        "first": 190,
+        "last": 209,
+        "count": 20
+      }
+    ],
+    "LIT": [
+      {
+        "topic": "charter",
+        "first": 1,
+        "last": 41,
+        "count": 41
+      },
+      {
+        "topic": "mz-constants-original",
+        "first": 42,
+        "last": 60,
+        "count": 19
+      },
+      {
+        "topic": "mz-constants-audit-additions",
+        "first": 61,
+        "last": 65,
+        "count": 5
+      },
+      {
+        "topic": "bivariate-lanczos",
+        "first": 66,
+        "last": 292,
+        "count": 227
+      },
+      {
+        "topic": "mz-prior-art",
+        "first": 293,
+        "last": 299,
+        "count": 7
+      },
+      {
+        "topic": "lattice-unisolvence",
+        "first": 300,
+        "last": 331,
+        "count": 32
+      },
+      {
+        "topic": "programme-ideas",
+        "first": 332,
+        "last": 426,
+        "count": 95
+      }
+    ]
+  },
+  "retired_reservations_found": [],
+  "max_used_or_reserved": {
+    "PD-T": 100,
+    "PD-N": 43,
+    "IDEA": 209,
+    "LIT": 426
+  },
+  "recommendation": {
+    "PD-T": {
+      "first": "PD-T101",
+      "last": "PD-T105",
+      "count": 5,
+      "required_results": 3,
+      "suggested_assignments": [
+        "PD-T101",
+        "PD-T102",
+        "PD-T103"
+      ],
+      "unused_permanent_headroom": [
+        "PD-T104",
+        "PD-T105"
+      ]
+    },
+    "PD-N": "no range",
+    "IDEA": "no range",
+    "LIT": "no range"
+  },
+  "collisions": [],
+  "interpretation_notes": [
+    "Read every line of every ALLOCATIONS.md ledger at all three heads. The two distinct ledger bodies are byte-identical across the heads.",
+    "Read and scan every final-ID occurrence in all four requested registries at each head; all four registry bodies are also byte-identical across the heads.",
+    "Repeated charter ranges in its member ledger and the shared batch ledger are the same historical reservation, not distinct competing reservations.",
+    "Historical next-unreserved columns and future boundary prose are not reservations; PD-T101, PD-N044, IDEA-210, and LIT-427 are not counted as already used.",
+    "The ledgers contain no retired final reservation blocks. Closed-unmerged inventory was supplied by the parent orchestrator.",
+    "The literal higher-numbered LIT identifiers listed below are explicitly references to the external bttb-research repository and do not allocate Padua final IDs.",
+    "Repeated IDEA primary-column mentions belong to retained historical/obstruction tables; 209 distinct canonical final IDEA IDs exist, with no new competing reservation.",
+    "Fresh remote heads must be rechecked before final assignment/readiness; this receipt covers exactly the pinned snapshots."
+  ]
+}

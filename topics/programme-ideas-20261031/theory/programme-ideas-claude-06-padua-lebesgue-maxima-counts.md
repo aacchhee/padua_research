@@ -43,13 +43,13 @@ Overall status: MEASURED.
 
 ## Depends on
 
-None.
+The existing numerical candidate-count claim retains MEASURED status. Supporting local theorem: PD-T103 (`../../padua-proof-attempts-20261101/theory/proof-attempts-codex-03-degenerate-maxima.md`) proves exact identities, critical-point enclosures and rigorous local Hessian bounds for the two degree-3 exact representatives reconstructed from the recorded `degenerate_max` decisions. It does not prove search completeness or upgrade any count.
 
 ## Checks
 
 `checks/code/decisive/gen4-2/t3_certify.py`, `t3_degenerate.py`, `t3_validate.py` with `t3_certify.out/.log`, `t3_maxima.json`, `t3_validate.out` (frozen at `614709d`). Audit replays and counterchecks: `audit-support/proposal-rerun.*`, `proposal-independent.*`, `proposal-degenerate-counterexample.*`.
 
-**Runs needed (certification):** a proved finite reduction of the counting problem; valid identities (not tolerance tests) at the degenerate points, including the n = 3 edge case where a cardinal function was observed to vanish along the edge x = +1 (UNVERIFIED as an identity); rigorous root enclosures replacing the per-pattern Newton step; complete box-discard arguments; rigorous arithmetic; committed essential evidence; an independent rerun by a second checker.
+**Runs needed (certification):** a proved finite reduction of the counting problem; rigorous versions of the (D) corner and (E) edge-node certificates in `t3_degenerate.py`; rigorous root enclosures/exclusions replacing the per-pattern Newton steps over every discarded region; complete sign-pattern box-discard arguments without the early return; exact treatment near regular crease crossings; rigorous arithmetic throughout and an independent checker. The separate `degenerate_max` local obligations have replacement certificates in PD-T103 for the two degree-3 exact representatives, with Z={L_(2,2)}, background critical points at (theta,phi)=(0,acos(±1/sqrt(3))), rational angle enclosures of width 1e-18 and uniform Hessian margin greater than 3.5 on angle l1 discs of radius 0.0021. These discs rigorously contain the recorded radius-0.002 decision neighborhoods. The stored floating iterates themselves are not exact zeros. A fresh trace of every call for n=3,…,8 found two calls at n=3 and none at n=4,…,8; this trace remains MEASURED execution evidence. Obligation (2) is discharged for the `degenerate_max` path only; the (D) corner and (E) edge-node handlers remain explicit certification work. No maxima count is certified.
 
 ## Sources
 
@@ -79,3 +79,5 @@ Certification (Runs needed above). The code is Padua-specific (`LebDense` uses P
 - 2026-11-01, decisive agent (claude-fable-5-1, xhigh): counts produced and described as "complete certification", "settles the factual dispute", "corrects the published table".
 - 2026-11-01, Codex audit-01 A1, A9.4: certification not established; margin and generality corrections.
 - 2026-11-01, response-01 (claude-opus-5-5, effort not exposed): counts kept as MEASURED candidate counts; certification moved to Runs needed; certification/correction wording struck in the sources (originals kept).
+
+- 2026-11-01, Codex PR #9 finalization (gpt-6.1-sol medium), Claude audit-01 ACCEPTED: PD-T103 supplies supporting exact local replacement certificates for degenerate_max only. Historical completeness/strictness caveats describe the search and remain in force globally; counts remain MEASURED. Corner/edge-node handlers and the other four A5 obligations remain OPEN.

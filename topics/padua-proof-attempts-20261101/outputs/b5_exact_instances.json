@@ -1,0 +1,149 @@
+{
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "arithmetic": "integer and rational, with rational LDL diagonal scaling",
+  "script_sha256": "fb56be6166ce10ecae213cd1c4e169594a52b0a922058e52934b88ccd0edf18b",
+  "rank_method": "direct rank of last N-3 rows of V^-1; full map rank deduced from written equivalence",
+  "results": [
+    {
+      "n": 2,
+      "N": 6,
+      "nodes": "(t,t^(n+1)), t=1,...,N",
+      "weight": "1/6",
+      "det_V": "-725760",
+      "distinct_x": true,
+      "positive_LDL_norms": true,
+      "exact_commutation": true,
+      "exact_self_adjointness_for_D": true,
+      "pattern_violations": 0,
+      "positive_orthonormal_pivots": true,
+      "first_column_pattern_y": [
+        0,
+        1,
+        2
+      ],
+      "symmetric_pattern_y_variables": 17,
+      "computed_reduced_constraint_shape": [
+        3,
+        6
+      ],
+      "computed_reduced_constraint_rank": 3,
+      "reduced_nullspace_equals_affine_values": true,
+      "full_commutant_dimension_by_proved_reduction": 3,
+      "full_commutator_rank_by_proved_reduction": 14,
+      "rational_pair_sha256": "3be354bfdfc911aa6c50f380a41f1aa89f317d6e7238f5e34505a3b70edd94e6"
+    },
+    {
+      "n": 3,
+      "N": 10,
+      "nodes": "(t,t^(n+1)), t=1,...,N",
+      "weight": "1/10",
+      "det_V": "-42515940682764587630592000000",
+      "distinct_x": true,
+      "positive_LDL_norms": true,
+      "exact_commutation": true,
+      "exact_self_adjointness_for_D": true,
+      "pattern_violations": 0,
+      "positive_orthonormal_pivots": true,
+      "first_column_pattern_y": [
+        0,
+        1,
+        2
+      ],
+      "symmetric_pattern_y_variables": 36,
+      "computed_reduced_constraint_shape": [
+        7,
+        10
+      ],
+      "computed_reduced_constraint_rank": 7,
+      "reduced_nullspace_equals_affine_values": true,
+      "full_commutant_dimension_by_proved_reduction": 3,
+      "full_commutator_rank_by_proved_reduction": 33,
+      "rational_pair_sha256": "a8e34ed295c54cbb833cc9d4d87e4b1bbb5054e3f1eb5a86ce58b93d9c027c63"
+    },
+    {
+      "n": 4,
+      "N": 15,
+      "nodes": "(t,t^(n+1)), t=1,...,N",
+      "weight": "1/15",
+      "det_V": "-83106536250583863597142743733722197216931596737647636118721997570048000000000000000000000",
+      "distinct_x": true,
+      "positive_LDL_norms": true,
+      "exact_commutation": true,
+      "exact_self_adjointness_for_D": true,
+      "pattern_violations": 0,
+      "positive_orthonormal_pivots": true,
+      "first_column_pattern_y": [
+        0,
+        1,
+        2
+      ],
+      "symmetric_pattern_y_variables": 65,
+      "computed_reduced_constraint_shape": [
+        12,
+        15
+      ],
+      "computed_reduced_constraint_rank": 12,
+      "reduced_nullspace_equals_affine_values": true,
+      "full_commutant_dimension_by_proved_reduction": 3,
+      "full_commutator_rank_by_proved_reduction": 62,
+      "rational_pair_sha256": "941dfad4b4779e5bcec3a5daccca808b9540db24917fb63a23ccab4969c7c3e4"
+    },
+    {
+      "n": 5,
+      "N": 21,
+      "nodes": "(t,t^(n+1)), t=1,...,N",
+      "weight": "1/21",
+      "det_V": "-2396949894753726166982969601244929313325735753658902461394083359308553686317572700566525373896965425126190522850303424045565858669336684620456846770177951335663490955033103774515200000000000000000000000000000000000000",
+      "distinct_x": true,
+      "positive_LDL_norms": true,
+      "exact_commutation": true,
+      "exact_self_adjointness_for_D": true,
+      "pattern_violations": 0,
+      "positive_orthonormal_pivots": true,
+      "first_column_pattern_y": [
+        0,
+        1,
+        2
+      ],
+      "symmetric_pattern_y_variables": 106,
+      "computed_reduced_constraint_shape": [
+        18,
+        21
+      ],
+      "computed_reduced_constraint_rank": 18,
+      "reduced_nullspace_equals_affine_values": true,
+      "full_commutant_dimension_by_proved_reduction": 3,
+      "full_commutator_rank_by_proved_reduction": 103,
+      "rational_pair_sha256": "97fe4c3b00be1e96ab0cbd0cf8f808fd9dddbb5883c4252c4ebd7f57962f1c98"
+    },
+    {
+      "n": 6,
+      "N": 28,
+      "nodes": "(t,t^(n+1)), t=1,...,N",
+      "weight": "1/28",
+      "det_V": "5389225254515004854275464761860206743401114557582644295350291814168476108432481313289511893579609394546045095732463545797243911232317780787975055715975071223651437911569591269109344500767702534374783829342522500713903921017148459739751427049298818551122430857903409029511827946845268964843241972303051796127144001882868211656768105388637727856926188887434522488443966281903767552000000000000000000000000000000000000000000000000000000000000000000000000",
+      "distinct_x": true,
+      "positive_LDL_norms": true,
+      "exact_commutation": true,
+      "exact_self_adjointness_for_D": true,
+      "pattern_violations": 0,
+      "positive_orthonormal_pivots": true,
+      "first_column_pattern_y": [
+        0,
+        1,
+        2
+      ],
+      "symmetric_pattern_y_variables": 161,
+      "computed_reduced_constraint_shape": [
+        25,
+        28
+      ],
+      "computed_reduced_constraint_rank": 25,
+      "reduced_nullspace_equals_affine_values": true,
+      "full_commutant_dimension_by_proved_reduction": 3,
+      "full_commutator_rank_by_proved_reduction": 158,
+      "rational_pair_sha256": "07d6755dac875cf7ed41088491f82d9661893dbdea0035808f114de5db6afc5c"
+    }
+  ]
+}
