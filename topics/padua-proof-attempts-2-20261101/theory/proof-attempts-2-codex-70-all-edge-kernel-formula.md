@@ -109,7 +109,7 @@ Only exact edge point values for the stated Padua interpolation problem. No infe
 
 ## Open items
 
-The asymptotic/branch portion of A4(a) and required Claude audit. Supplementary exact regression/reconstruction are complete for the stated finite scope. Parts(b)/(c) remain route-note scope only.
+Required Claude audit. The precise central-envelope asymptotic is now PROVED separately in77; identification with the historical searched/global runner-up remains OPEN. Supplementary exact regression/reconstruction are complete for the stated finite scope. Parts(b)/(c) remain route-note scope only.
 
 ## History
 

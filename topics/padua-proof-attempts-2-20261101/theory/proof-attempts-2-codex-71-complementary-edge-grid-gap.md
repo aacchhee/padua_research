@@ -108,7 +108,7 @@ Every specified complementary point on either vertical edge, all n>=1. This is n
 
 ## Open items
 
-Connection to a central maximizing branch/envelope and required Claude audit. The point-sequence asymptotics72 and supplementary finite regression are complete. No result about all-n A4(b)/(c) follows.
+Required Claude audit. The central-envelope value comparison is now PROVED in77, and the point-sequence asymptotics72 and supplementary finite regression are complete. Critical-branch uniqueness and identification with a globally selected runner-up remain OPEN. No result about all-n A4(b)/(c) follows.
 
 ## History
 

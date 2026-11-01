@@ -468,3 +468,44 @@ The A2 lower bound is `Lambda_c(n)>=(4/pi²)log²n-54`. Also `1-a(s)=sin²(s/2)>
 `S_n(s)-Lambda_c(n) <= -c*s²log²n+C|s|`
 
 with absolute c>0, after absorbing the lower-order quadratic logarithm. Completing the square bounds its supremum by `C²/[4c log²n]`. This proves(10) and the requested all-sequence small-phase upper bound. No assertion about a phase bounded away from0 or about the central defect's limit is included in this local module.
+
+## Rule impact refresh and FULL74 inspection
+
+Root integrated `d8b878b348a94575e7753e5a756d969d41d5bca8` after prior impact70e86bc. Reread the changed WORKFLOW results paragraph at16:02:03UTC. Its repository-only tracking changes administrative results destinations, not mathematics/models/evidence/registry rules; the user's topic-only write override still applies. AGENTS and CODEX hashes remain as pinned above; current WORKFLOW SHA256 is `a8927be27a1fe8166e5bcf59c7da8e70618ae0a5f17d56131724baffdad49353`. No Git state or out-of-topic file was changed by this reviewer.
+
+Read FULL theory/proof-attempts-2-codex-74-global-edge-phase-localization.md, SHA256 `fe43fcd7b435d2a7df3eef8d9ac8c74ce19a394ce63762af5af8c3930d40357a`. Independently reconstructed its global coarse estimate, with no mathematical blocker in the written proof. Its full-periodic normalization and H definition agree exactly with the local module, including H_(n,m)(0)=n and S_n(0)=Lambda_c.
+
+In particular the phase endpoints s=±pi do not require a uniform rational-pole gap. On its fixed-width near-diagonal strip, every H is bounded by the original polynomial divided difference: `|T_l'(cos theta)|<=min(l²,l/|sin theta|)`. Every intervening angle is within a fixed O(1/n) of u, giving `|H|<=C_L*n/(sin u+1/n)`. There are O_L(1) strip points per first index; normalized summation is O(log n), even if an angle or numerator/denominator coincides exactly. Thus no separate E/G expression is used at a removable pole near s=±pi.
+
+Off the strip, both half-angle sines are bounded below by a constant times the original angle gap and change by at mostpi/(2m). This gives uniform denominator comparability for all |s|<=pi, not only a fixed distance from its endpoints. Exact E subtraction and the cotangent/reciprocal-square row sums give O(log n) deformation; the written G bound gives O(log n) as well (equivalently, in[0,pi], sin V<=2sin((u+V)/2) directly bounds G by the reciprocal gap sine). The two single periodic endpoint rows have O(1) normalized mass: fixed many near-endpoint indices use the polynomial O(n²) bound, and the others use reciprocal-square endpoint-distance sums. These checks preserve the coefficient1 multiplying `cos²(s/2)*Lambda_c`; finite factors enter only the error constant.
+
+The assembly in74 needs only lambda<=S and72's complementary-grid lower value. Its nearest complementary phase can be chosen for every central maximizing point and is strictly interior for sufficiently large n; all asymptotic statements explicitly allow this. A2's lower coefficient then forces its phase to0 at the stated O(log^(-1/2)n) rate. This remains a phase-localization result; neither local-module optimization nor defect convergence is silently inferred by74. No finite execution was performed for this inspection.
+
+## FULL75 source inspection
+
+Read FULL theory/proof-attempts-2-codex-75-local-edge-phase-bound.md, SHA256 `c454669be85a1e7a1eeb9c891cd289bce364dfdd91d280f7d7f3c3ff6da94571`. It faithfully records the local supporting module derived above, including the exact full-periodic normalization, all difference/d counts, derivative summations, signed Taylor pairing, zero-numerator cost, U_n cancellation family and both endpoint rows. No source-consistency or mathematical finding. The lead and central reviewer independently reconstructed this module before adoption; this inspection is not represented as a developer-independent Claude audit of my own contribution. No finite computation is a premise.
+
+Also read the central reviewer's complete current periodic decomposition and written triangle-defect stability argument in independent-checks-a4-central.md. Returned no blocking finding: the separated OTHER denominator bounds the minimum uniformly on compact b strips even when one term uses its finite removable value; the endpoint numerator lower bound47/128 ensures both signs stay positive and forces support into the short between-pole angular band; endpoint row constants and the harmonic-tail estimate check. Compact pole tubes have vanishing weighted mass, and off-tube absolute values are Lipschitz under the uniform rational convergence, so exact zero-cardinal events need no additional discarded set. The full physical checkerboard weights have density1/pi²; its limiting defect is twice h on the full b interval, exactly matching72's folded g. This is review of the written supporting argument, not yet an assertion about an unsaved final76/77 source hash.
+
+## Final FULL76/77 inspection and central-envelope conclusion
+
+Read FULL saved76 and77, in addition to the preceding FULL74/75 inspections. Final inspected content pins:
+
+| Theory file | SHA256 |
+|---|---|
+| proof-attempts-2-codex-74-global-edge-phase-localization.md | fe43fcd7b435d2a7df3eef8d9ac8c74ce19a394ce63762af5af8c3930d40357a |
+| proof-attempts-2-codex-75-local-edge-phase-bound.md | c454669be85a1e7a1eeb9c891cd289bce364dfdd91d280f7d7f3c3ff6da94571 |
+| proof-attempts-2-codex-76-central-triangle-defect-stability.md | 184ace3ff97b22d80b900c2f97b6c9aeb973a17ee4485c51f45c4a59d5026104 |
+| proof-attempts-2-codex-77-central-edge-envelope-expansion.md | 38a4aa041ff0cf1cfbd3a9befc63bd70fca3d5d8ecb6baa80687867238e5ee27 |
+
+**No blocking mathematical finding within the stated analytic central-envelope scope.**76 faithfully retains the original polynomial half kernels at every coincidence. The separated-denominator minimum bound, positive endpoint numerators, explicit row/tail arithmetic, moving pole tubes, uniform convergence off those tubes and full physical checkerboard density check as described in the previous inspection. Its joint quantifiers cover every beta_n->pi/2 and s_n->0; no branch-separation or stationary-point hypothesis is smuggled into that limit.
+
+77's lower comparison uses an actual complementary point inside the specified central cell for each n. For any central maximizer, a nearest complementary phase on the same edge may lie just outside that cell; its distance frompi/2 is still at most2pi/m, which is exactly what74/76 require. The exact lambda=S−Delta identity applies to this same moving point. First74 and the A2 lower coefficient force s_n->0. Then75 gives S_n(s_n)<=Lambda_c+o(1), and76 gives Delta_n->g. Their combination with the lower comparison proves `R_cen=Lambda_c−g+o(1)` and `R_cen−C_n=o(1)` over both parities. This order is necessary: local control alone would not exclude a larger fixed-phase branch. No differentiability, uniqueness or interior location of a maximizing point is used, so ties, angular cell endpoints and exact cusps remain covered.
+
+The result preserves the requested distinctions: R_cen is the explicit compact central-edge envelope, the historical searched R_search remains a finite MEASURED object, and a whole-square runner-up location/global A4 theorem is not inferred. A4(b)/(c) and effective global n0 remain open. The current proof establishes the parent-authorized central-envelope interpretation of A4(a), not an unqualified identification with the source's searched list.
+
+This reviewer performed no A4 mathematical computation, numerical g enclosure, regression, producer run or checker run. The decimal bounds in77 and finite execution evidence belong to the separate developer/different-agent receipts; this analytic inspection does not independently validate those executions. The asymptotic assembly uses only the analytic integral/series characterization of g and does not depend on those decimal values. Required Claude audit remains pending and is not replaced by any of the supplementary reconstructions recorded here.
+
+### Final77 scope-sentence refresh
+
+After the full review, reread77's final Scope paragraph at its updated SHA256 `5ff0c62db1cc30720c5c3c97560d3e8c86afaf51f305d26fec79ea3ca72775d9`. It now explicitly says that the n=3 discrepancy disproves an all-degree identification of **C_n with R_search**, while identification of **R_cen with a globally selected noncorner competitor** remains OPEN. This is a correct and useful clarification of the previously inspected scope; no new mathematical claim or proof obligation is introduced. The earlier full-read hash remains the historical proof-inspection pin, and this sentence/hash update records the final clarified text.

@@ -49,7 +49,7 @@ This is a point-sequence component of the requested work, not completion of the 
 
 ## Checks
 
-The odd-sequence limit and its positive integral were reconstructed independently in independent-checks-a4.md. The same independent agent also verified the all-parity endpoint and translation argument underlying71. No numerical approximation of g or exact regression has run at this initial writing. The proof is analytic; subsequent executed checks will be labelled separately and independently replayed.
+The odd-sequence limit, its positive integral and the complete all-parity extension were reconstructed independently in independent-checks-a4.md. The same independent agent verified71's endpoint and translation argument. Subsequently the supplementary finite regression in71 and the small exact rational g evaluation in73 were actually executed and replayed by different agents, at their stated scopes. The proof here is analytic and does not depend on numerical convergence or those finite checks. The central-envelope link is now proved separately in77.
 
 ## Sources
 
@@ -111,7 +111,7 @@ Only the explicitly specified complementary central point sequence. Odd-degree n
 
 ## Open items
 
-Prove or disprove `R_cen(n)−C_n=o(1)` or obtain rigorous two-sided envelope bounds; identify any selected stationary branch only under explicit hypotheses. Required Claude audit and supplementary independent finite checks remain separate. Full A4(b)/(c) are not attempted here.
+Required Claude audit. The split-off result77 now proves `R_cen(n)−C_n=o(1)`; stationary-branch uniqueness and identification with a globally selected runner-up remain OPEN. Supplementary independent finite checks are complete at the scopes in71/73. Full A4(b)/(c) are not attempted here.
 
 ## History
 

@@ -2330,8 +2330,8 @@
   "outputs": [
     {
       "path": "topics/padua-proof-attempts-2-20261101/LOG.md",
-      "sha256": "3b3611234095df69ee9a3bc436e5303a79091e9b8d120d2621723a6ac7edc7af",
-      "bytes": 85863
+      "sha256": "1c7c9b1adb12c7c3df382e1b4566baf226c645f3464e5288697f54c68ceee1a3",
+      "bytes": 89509
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/a4-input-preparation.md",
@@ -2345,8 +2345,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A4a.md",
-      "sha256": "2cca59ffd17b63b2805cafb44fa98ba4f61c84b42823fff0b0f7daf91784b7c3",
-      "bytes": 11634
+      "sha256": "48c915364f3c4ba09c47125bcecc7d33599cc78dfa7921b359795c427b36ec79",
+      "bytes": 19926
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n4.md",
@@ -2769,9 +2769,14 @@
       "bytes": 7112
     },
     {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a4-central.md",
+      "sha256": "4f10b5b1a9378e8a055b379fd12b1954deed0594977160513626c8ff9bd5f89a",
+      "bytes": 19434
+    },
+    {
       "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a4.md",
-      "sha256": "c112b51635c66413d6ee571e774ff0313ef23dd87f90d7162524fb0504963923",
-      "bytes": 34917
+      "sha256": "04ab1609691239caae07eeb52a1b084baf2f6c14d2d877f78289c0854ebbbcdf",
+      "bytes": 43181
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a5-checker.md",
@@ -2860,8 +2865,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-checks.md",
-      "sha256": "06511de502818b22672601e7a4ea9c4f0f83d37b34be4438e7c3fc8df9941fc1",
-      "bytes": 12720
+      "sha256": "09e991c5efb9e49a2ce3a54e2084fcaed1909972f12067c7a4d881fd907e337d",
+      "bytes": 13834
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-execution-a2.md",
@@ -3910,13 +3915,13 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/plan.md",
-      "sha256": "bf4cdf8d6022c7ab75616dd6fab5d3913aa4a7f5ab490c21be19764b19a84f71",
-      "bytes": 4087
+      "sha256": "70e87df90f1f69304b09d4cafbf593c3f34d00232b340a5d866c4e80ff3eccb1",
+      "bytes": 4179
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/proposed-record-changes.md",
-      "sha256": "2b72aa30035327003c35696bf0bd8bd35cd0ed18b333690c649bf6a3d58f5a0f",
-      "bytes": 22063
+      "sha256": "9f719bff9eaaf2dc3d63b2bf21a8d9eb916aca0c61caaebac3f17ece0ed53497",
+      "bytes": 22545
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-01-corner-leading-lower.md",
@@ -4065,23 +4070,43 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-70-all-edge-kernel-formula.md",
-      "sha256": "53d4478687d0e10737c95597cdbe69ef48fb8479154bbb930ffd7c9de069d519",
-      "bytes": 7362
+      "sha256": "ba395fa16d315f7f8bcfdaeafe27d39b70b5a3f3c1b4e28554f64731d10b95a5",
+      "bytes": 7465
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-71-complementary-edge-grid-gap.md",
-      "sha256": "502c3f72720bacaf163fc926ef635b184c9c1932fa046d35ab8075ea91e68a56",
-      "bytes": 8334
+      "sha256": "8fbf067c4b950980de3db9b18e18b203c408bc5a7286f30b6b54643eff1ae92d",
+      "bytes": 8435
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-72-central-grid-positive-gap.md",
-      "sha256": "82a742be149b634df03f56f625242f4da3e347f2cbf795777dd37b2e9e91175b",
-      "bytes": 8423
+      "sha256": "4de839827d53a598c426c9fb53b7edd064618d8448a7a702a0cd014441c8131c",
+      "bytes": 8584
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-73-gap-constant-series.md",
       "sha256": "8adbd4a97b13950c9ad7d704a607fc3356c41dbee0c6448d89224600f855db49",
       "bytes": 8447
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-74-global-edge-phase-localization.md",
+      "sha256": "e77c0fc3d9370fdd946d82463fa2c566e5b5c8367e3109dd41f99963d9952a1c",
+      "bytes": 9459
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-75-local-edge-phase-bound.md",
+      "sha256": "4d7fb4dab757d33c8378ae4bba4b67fad50b3bd1d36b861da0ab217377198cb6",
+      "bytes": 9347
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-76-central-triangle-defect-stability.md",
+      "sha256": "349efba80c37a660fca108064cbf53a2a7512a24e737b1f949274646a9bdc499",
+      "bytes": 7266
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-77-central-edge-envelope-expansion.md",
+      "sha256": "cadcfbdead5b1e69ab703edafef3c895f43de44f7503b292ee855dac0e4e74a3",
+      "bytes": 8769
     }
   ],
   "exclusions": [
