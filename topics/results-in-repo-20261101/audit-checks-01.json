@@ -1,0 +1,52 @@
+{
+  "auditor": "Codex, gpt-6-astra, medium (requested; serving identity/effort not separately attested by runtime)",
+  "python": "3.12.14",
+  "candidate_sha": "715b1823bee0c5053c8376310a39b1f12c48e3ac",
+  "rules_and_publication_sha": "f628a1f873572d43a625befda422ba0af49d5c48",
+  "base_sha": "e0d9e3d08ee26c3b82a295f33b6ff99d928f22b9",
+  "pr14_head_sha": "635ba4fd537be9a4dbc060617fbc0535db4d72ad",
+  "checks": {
+    "base_is_ancestor": true,
+    "pr14_head_tree_equals_squash_tree": true,
+    "only_changed_workflow_line": [
+      105
+    ],
+    "protected_paths_byte_identical": [
+      "AGENTS.md",
+      "agents/codex/CODEX.md",
+      "agents/claude/CLAUDE_ROLES.md",
+      "templates",
+      "tracks",
+      "PROOF_STATUS.md",
+      "state",
+      "ID_CROSSWALK.md",
+      "literature",
+      ".github"
+    ],
+    "candidate_content_equals_handoff_publication_content": [
+      "agents/WORKFLOW.md",
+      "results/README.md",
+      "RESULTS.md",
+      "results/padua-mz-2d-20261101.md"
+    ],
+    "whitespace": "PASS",
+    "existing_markdown_links_resolve": true,
+    "topic_results_markdown_link_count": 0
+  },
+  "changed_paths": [
+    "RESULTS.md",
+    "agents/WORKFLOW.md",
+    "results/README.md",
+    "results/padua-mz-2d-20261101.md",
+    "topics/results-in-repo-20261101/LOG.md",
+    "topics/results-in-repo-20261101/handoffs/01-audit.md",
+    "topics/results-in-repo-20261101/handoffs/02-audit.md"
+  ],
+  "sha256": {
+    "agents/WORKFLOW.md": "a8927be27a1fe8166e5bcf59c7da8e70618ae0a5f17d56131724baffdad49353",
+    "results/README.md": "98e3407ddf7cd245ecc30e0f79cbf2de9ee64ff524c9a82829f2f7296f226470",
+    "RESULTS.md": "935f88ba806adba17500ee6cd46fe278e3512d88188c33ea10fe46878d452e9b",
+    "results/padua-mz-2d-20261101.md": "041068949ea136a41d1ed736194f7ed0191811fcea1f439f33fc3c098df41338"
+  },
+  "scope": "Protocol and summary fidelity only; no scientific producer rerun or independent proof approval."
+}
