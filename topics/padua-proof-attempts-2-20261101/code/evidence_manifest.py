@@ -12,6 +12,7 @@ import subprocess
 ROOT = Path(__file__).resolve().parents[3]
 TOPIC = "topics/padua-proof-attempts-2-20261101"
 PINS = {
+    "main_mz_registry_update": "e0d9e3d08ee26c3b82a295f33b6ff99d928f22b9",
     "part1_and_rules": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
     "part1_audit_arrived": "95279b833bca5967fcf47c1b71a56ff622185b4e",
     "main_part1_merged": "806cc7b4509fd93bae652f9545d32d95529f8281",
@@ -50,6 +51,10 @@ def main():
         for path in paths:
             requested[(PINS[label], path)] = label
 
+    add("main_mz_registry_update", RULES + ["state/IDEAS.md", "literature/INDEX.md",
+        "PROOF_STATUS.md", "ID_CROSSWALK.md", "PAPER_MAP.md", "state/CURRENT.md"] +
+        [p for p in tree(PINS["main_mz_registry_update"]) if
+         p.startswith("tracks/mz-constants/theory/") and p.endswith(".md")])
     add("part1_and_rules", RULES + [p for p in tree(PINS["part1_and_rules"]) if p.startswith(P1)])
     add("part1_audit_arrived", [p for p in tree(PINS["part1_audit_arrived"])
         if p == P1 + "audit-01.md" or p.startswith(P1 + "audit-support/claude-audit-01/")])

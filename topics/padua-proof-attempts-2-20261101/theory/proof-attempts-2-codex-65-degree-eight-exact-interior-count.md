@@ -23,7 +23,7 @@ Specified physical embedding60; exact independently reconstructed cardinal polyn
 
 ## Status by part
 
-Overall status: **OPEN**. Complete written implication is below, but the two full interior-stage receipts are not yet accepted at draft creation. The lower-bound result64 remains PROVED independently. Required Claude audit PENDING.
+Overall status: **OPEN**. Complete written implication is below, but BOTH required full interior-stage receipts were absent at the15:19UTC hard stop. Both actual jobs failed at their deadline alarm, so the upper bound was not promoted. The lower-bound result64 remains PROVED independently. Required Claude audit PENDING.
 
 | Part | Status | Obligation |
 |---|---|---|
@@ -47,7 +47,7 @@ Original independently owned checker `a5_checker_n8.py` SHA256 `a9cff5748d6c40ee
 
 PROMOTION GATE: BOTH atomic Stage1 receipts must actually exist before the shared15:19UTC deadline, each with `stage='interior_verified'`, `interior_complete=true`, `complete_prefix_partition=true`, `verified_supplied_witnesses=true`,44 observed verified root enclosures,153520 verified leaves, all541882 ordinary records, the full expected direct-leaf counts, and unchanged original/staged/cache/control source-chain guards. Developer receipt path is `../outputs/a5_checker_n8_cached_interior.json`; DIFFERENT executor receipt is `../outputs/a5_independent_n8_cached_interior.json`. Actual raw input hashes must match the two own artifacts above. A progress-log prefix, producer count, missing receipt or incomplete run does NOT satisfy this gate.
 
-The Stage1 receipts intentionally retain `accepted=false` and `count_certified=false`: these ORIGINAL fields denote complete CLOSED-SQUARE/boundary acceptance, which is absent. They do not undo the explicitly completed interior predicates. A later staged CLI timeout while waiting for nonexistent boundary READY does not invalidate an already atomically persisted and source-guarded successful Stage1 receipt. Conversely a final CLI error with NO successful Stage1 receipt supplies no interior proof. Actual receipt hashes, final counts and timings will be inserted only if both positive stages finish; until then this result is OPEN.
+The Stage1 receipts intentionally retain `accepted=false` and `count_certified=false`: these ORIGINAL fields denote complete CLOSED-SQUARE/boundary acceptance, which is absent. They do not undo the explicitly completed interior predicates. A later staged CLI timeout while waiting for nonexistent boundary READY does not invalidate an already atomically persisted and source-guarded successful Stage1 receipt. Conversely a final CLI error with NO successful Stage1 receipt supplies no interior proof. ACTUAL stop outcome: both required successful atomic interior receipts were absent at15:19UTC. Primary failure `../outputs/a5_checker_n8_cached_full.json`, SHA256 `55b2a328238f18e550783a0e827d85b3daf9b6efc8fd6b034f047c287bfeea9d`,1864.083075s; different-executor failure `../outputs/a5_independent_n8_cached_full.json`, SHA256 `f9b0da570c3112e85f4d86f5c60a69a1b119f0f021365430b383ee45f1d61dee`,1849.182514s. Both report `stage=failed`, deadline interruption and false acceptance/count flags; source after-hashes/cache guards match. Neither failure supplies a completed Stage1, regardless of its progress prefix. Exact stop record `../outputs/a5_n8_deadline_stop.json`. This result remains OPEN.
 
 ## Sources and gate
 
@@ -71,8 +71,8 @@ Degree8 and strict maxima in the OPEN physical square only, including x=0 as ord
 
 ## Open items
 
-BOTH actual complete Stage1 receipts before15:19UTC, source-chain/count reconciliation and durable receipt identities; then required Claude audit. If either job remains unfinished at the deadline, this result stays OPEN and64 remains the proved lower bound. No new optimization, continuation or coverage shortcut is authorized by this draft.
+The registered15:19UTC box ended without EITHER positive Stage1 receipt, so65 remains OPEN and64 is the proved lower bound. A future authorized iteration must completely replay the retained self-contained proposal in both actual executors, with unchanged original mathematical predicates and every source/count guard; then required Claude audit. No partial progress prefix substitutes for that missing work, and no new optimization, continuation or coverage shortcut was started after the stop.
 
 ## History
 
-2026-11-01 after15:09UTC, Codex `/root/a2_develop`, requested gpt-6.1-sol xhigh; rules7ec02d0f contents unchanged through current metadata merges. Draft requested/written OPEN while both already-running cached Stage1 executions continue. No claimed success from partial log counts.
+2026-11-01 after15:09UTC, Codex `/root/a2_develop`, requested gpt-6.1-sol xhigh; rules7ec02d0f contents unchanged through current metadata merges. Draft requested/written OPEN while both already-running cached Stage1 executions continue. No claimed success from partial log counts. At15:19UTC both jobs were interrupted without a positive Stage1 receipt; final status stayed OPEN.

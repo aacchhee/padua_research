@@ -144,3 +144,48 @@ artifact checkpoint: sources, completed controls, old failure and current
 receipt snapshots are ready; active cached stdout and future cached_interior/
 full receipts are explicitly excluded. Source code remains immutable and no
 further optimization is being attempted.
+
+## Final actual outcome at the hard15:19UTC alarm
+
+The cached execution ACTUALLY returned exit1 at the registered alarm after
+1864.083075458seconds. The last emitted complete checkpoint was152,000 of
+153,520 proposed leaves and538,131 ordinary records. This is NOT complete
+coverage: no `outputs/a5_checker_n8_cached_interior.json` exists, no successful
+Stage1 receipt was published, and the remaining cases are not inferred from
+the producer or almost-complete progress. The separately reported executor
+also ended incomplete (150,000 checkpoint), so theory65's BOTH-receipt gate
+is unmet. Exact-interior65, closed-count61 and global62 remain OPEN. The
+separate root-witness lower bound64 is unaffected.
+
+Preserved actual failed result:
+`outputs/a5_checker_n8_cached_full.json`,2052bytes, SHA256
+`55b2a328238f18e550783a0e827d85b3daf9b6efc8fd6b034f047c287bfeea9d`.
+It records stage=failed, accepted=false, count_certified=false, the explicit
+deadline/interruption error, and no complete count/global acceptance.
+Actual entry996c8f4d…/base82385dd3…/maina9cff574…/old-controls7f57ed9b…
+identities are recorded before/after, and cache-controlse0baeaf3… is checked
+by the entry guard. The runtime replacement is explicitly declared. A fresh
+external after-hash additionally confirmed every one of those files AND
+staged structural-controlscff61e95… unchanged. No source was edited.
+
+Retained temporary stdout `/tmp/a5_checker_n8_cached.stdout`,10460bytes,
+SHA256 `36d64f3e2b19cb646ac2d53a95f16dcd7f5dae0a9f25e49a04801646a7c7bd1c`;
+stderr `/tmp/a5_checker_n8_cached.stderr`,1970bytes,
+SHA256 `0642275b84d832bde0ac3da8207856d660b5566a4e448dd5db5a40cb8a152e7e`.
+The stdout contains the conservative progress milestones and final explicit
+nonacceptance JSON; neither log substitutes for the absent complete receipt.
+Archival/manifest handling remains with root. No extra repository log copy
+was made, preserving the remaining generated-evidence budget.
+
+Boundary retries were separately reported to time out without final JSON;
+there is no READY/final matching boundary/global pair. That obstacle is
+independent of the incomplete Stage1 check. No boundary diagnostic or
+candidate count is promoted into a certified result here. The required
+Claude audit also remains separate/pending.
+
+After collecting actual exit/flags and source hashes, only documentation and
+administrative evidence handling continue. There is no extension, restart,
+further optimization or new mathematical run. Future complete verification
+requires fresh authorized runs long enough to finish ALL original predicates,
+an atomic boundary artifact, both actual complete receipts and retained
+essential evidence. This attempt's precise stopping outcome remains recorded.

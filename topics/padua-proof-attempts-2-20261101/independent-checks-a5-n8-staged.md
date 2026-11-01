@@ -169,3 +169,18 @@ control output remains retained and unchanged. This original attempt is
 closed as interrupted/nonaccepting; its replacement is documented separately,
 with honest new runtime evaluator identity. Active replacement logs and future
 cached_interior/full outputs are not part of this completed checkpoint.
+
+## Final replacement outcome, administrative addendum
+
+The separately documented bit-identical cached replacement ended ACTUAL
+exit1 at the original15:19UTC alarm. It had not completed Stage1: the last
+progress milestone was152,000/153,520 leaves and538,131 ordinary records,
+and NO atomic complete-interior receipt exists. Its failed2052-byte result
+`outputs/a5_checker_n8_cached_full.json` has SHA256
+`55b2a328238f18e550783a0e827d85b3daf9b6efc8fd6b034f047c287bfeea9d`,
+accepted=false/count_certified=false, with the actual cached runtime entry
+declared and every source identity unchanged. Full details/log identities
+are in independent-checks-a5-n8-staged-cache.md. No complete count or global
+verification followed; no extension or restart was performed. The separately
+proved lower bound does not supply missing regional completeness. Theory65
+therefore remains OPEN alongside61/62; required Claude audit is pending.

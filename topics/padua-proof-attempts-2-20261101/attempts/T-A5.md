@@ -11,7 +11,7 @@
 
 ## Status
 
-A5 PARTIAL by explicit degree cases: n=3,4,5,6 are PROVED under separate results06/10/16/41; n=7,8 remain OPEN until their final evidence passes. Results07/11/17/42 prove A4(d) for n=3,4,5,6. The original15:19UTC deadline is unchanged. Required Claude audit of Part2 remains PENDING.
+A5 PARTIAL by explicit degree cases: n=3,4,5,6,7 are PROVED under separate results06/10/16/41/51; n=8 closed count remains OPEN. Results07/11/17/42/52 prove A4(d) for n=3,4,5,6,7. A5 stopped at its original15:19UTC deadline. Degree8 result64 separately proves at least44strict interior maxima;65exact interior count and62global remainOPEN. Required Claude audit of Part2 remains PENDING.
 
 ## Runs needed
 
@@ -105,3 +105,8 @@ N5 is PROVED under16:25total=14interior+9edge+2corner, with separate exact globa
 ## Orchestrator case update — n6 independently certified
 
 N6 is PROVED under41:41total=25interior+14edge+2corner, with separate global42 and field40. Complete independent producer/global/checker execution plus all38controls passed, with the source-pinned developer pair also fully verified inside the positive controls. Exact commands/artifact identities and documented memory interruptions: independent-execution-a5-n6.md. Primary v1 Table3 row6|23|39 was directly rechecked AFTER certification:25/41 is a scoped candidate correction, while programme's MEASURED25/41 agrees (no PDN). Part2Claudeaudit PENDING. Cases3–6PROVED;7,8OPEN. Two frozen producer runs per remaining degree and independent verifier work continue within15:19UTC. No later ordered target has started.
+
+
+## Final stop — 2026-11-01 15:19 UTC
+
+N7 completed with50=33+15+2, separate global52, all independently implemented and separately executed full checks/controls passed (independent-execution-a5-n7.md). N8 witness-only64 proves at least44strict interior maxima with two actual exact runs and standalone replay. Full interior65, closed61 and global62 remainOPEN: both cached staged verifiers hit the harddeadline with actualexit1 and NO positive atomic Stage1 receipt; both boundary-v2 runs exited124 with NO final JSON. Last progress152000/153520 and150000/153520 is diagnostic only. No join/global/repack/READY was executed. See T-A5-n8.md, independent-execution-a5-n8.md, independent-checks-a5-n8-staged-cache.md and outputs/a5_n8_deadline_stop.json for actual commands/pins/failure details. The retained complete interior proposal is not accepted coverage. Primary v1Table3 n8 interior38 is contradicted by the certified lower bound44, a candidate interior-only correction; total56 is not replaced with an exact value. Next repair: new native exact corner evaluation with atomic edge persistence before corners, fresh actual boundary runs and enough time for both full interior replays, followed by complete global checks. No continuation is performed in this campaign. All mathematical A5 work stopped; A4(a) begins after this stop.

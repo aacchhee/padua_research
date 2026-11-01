@@ -188,12 +188,22 @@
     "stderr": "/tmp/a5-n8-candidate-v4.progress",
     "stdout": "/tmp/a5-n8-candidate-v4.log"
   },
+  "deadline_stop_receipt": "a5_n8_deadline_stop.json",
+  "exact_interior_stage_gate": {
+    "both_positive_receipts_absent": true,
+    "failure_receipts": [
+      "55b2a328238f18e550783a0e827d85b3daf9b6efc8fd6b034f047c287bfeea9d",
+      "f9b0da570c3112e85f4d86f5c60a69a1b119f0f021365430b383ee45f1d61dee"
+    ],
+    "no_progress_prefix_promotion": true,
+    "satisfied": false
+  },
   "format": "a5-n8-v3-run-record-v1",
   "independent_checker": "/root/a5_n4_checker; formal quotient/Vandermonde/independent Sturm implementation",
   "independent_executor": "/root/a5_n4; fresh nodes, no node-file; separate receipt",
   "interrupted_v1_developer_exit": 130,
   "interrupted_v1_independent_exit": 143,
-  "last_updated_utc": "2026-11-01T14:59:16.950458+00:00",
+  "last_updated_utc": "2026-11-01T15:20:34.455483+00:00",
   "node_input_sha256": "574a47af6a7d84a5f4b27dd3adce9797350860d6e40242869c58a90673e5b23c",
   "prepared_v5": {
     "actual_synthetic_controls_passed_by_both_executors": true,
@@ -271,7 +281,7 @@
       "sha256": "1ca5289329359833859960d216b103284457495d6326d35463e18a761d43ed24"
     }
   ],
-  "status": "64 PROVED at least44 strict interior maxima; full interior materialized; boundary missing after two timeouts;61/62 OPEN",
+  "status": "A5 STOPPED15:19UTC;64 PROVED lower bound44;65 exact interior,61 closed count,62 global OPEN",
   "stderr": "/tmp/a5-n8-candidate-v3.progress",
   "stdout": "/tmp/a5-n8-candidate-v3.log",
   "v3_features": [

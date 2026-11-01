@@ -51,7 +51,7 @@ Degree8 only. No all-degree neighbourhood/global estimate and no conclusion from
 
 ## Open items
 
-Complete61; its missing final boundary/corner artifact blocks the prepared value producer. Both fresh boundary attempts timed out without a serialized result, so no literal join, value certificate, XZ pair or READY publication was made. Run all whole-occurrence value bounds and the independent checker on an actual complete pair; actual different-agent execution and required Claude audit remain. The separately proved44interior lower bound64 does not settle any global-value obligation.
+Complete61; its missing final boundary/corner artifact blocks the prepared value producer. Both fresh boundary attempts timed out without a serialized result, so no literal join, value certificate, XZ pair or READY publication was made. Run all whole-occurrence value bounds and the independent checker on an actual complete pair; actual different-agent execution and required Claude audit remain. The15:19UTC box ended with both full interior Stage1 receipts absent as well; exact-interior65 remains OPEN. Future boundary repair requires NEW native-ANP corners plus atomic edge persistence and fresh own full executions before any joined value run. The separately proved44interior lower bound64 does not settle any global-value obligation.
 
 ## History
 
