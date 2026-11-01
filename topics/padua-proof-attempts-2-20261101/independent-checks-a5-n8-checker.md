@@ -337,3 +337,54 @@ No heavy full N8 verification is launched before both a complete artifact and
 the parent's RAM criterion; N6 executions took priority. A complete N8 count,
 complete boundary/global verification, frozen full outputs, actual
 different-agent regeneration/replay and required Claude audit remain OPEN.
+
+## Pre-run review of the proposed final execution plan
+
+At13:23UTC, input head `c56f3bc317c61fca4efe97d0002502ef906e22ad`, parent
+requested only a bounded source review, with no complete artifact or full run
+authorized yet. Frozen main/control hashes remain a9cff574…/7f57ed9b….
+The three rule files are unchanged from the preceding read.
+
+The proposed plan is one full-controls invocation on the developer's matching
+final pair and an actual different executor's full-controls invocation on its
+own independently regenerated pair. This is sufficient for the independent
+verifier/control execution component without a duplicate standalone main run.
+At controls lines195–201, a fresh independent Verifier calls `run(spatial)`
+with the default `allow_partial=False` (main line1113), then `global_values`
+with the exact raw spatial SHA256, and only afterward appends the accepted
+`complete_count_and_global_value_certificate` entry. The run requires complete
+prefix coverage, no unresolved/pending paths, every leaf/root/node/edge/corner
+predicate and exact final count/boundary summaries. Global verification first
+requires `count_certified` and the matching count SHA, then all value/weak-max
+obligations. Thus incomplete data cannot supply this positive entry.
+
+Every unexpected tamper acceptance raises before output. Final source guards
+cover checker before/import/after bytes and controls before/after bytes;
+successful completion additionally requires actual exit0 and a fresh output.
+The top-level `all_controls_passed` boolean alone is not a substitute for the
+completed command and its complete-positive entry.
+
+Planned developer command shape, **not executed**:
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps python -B topics/padua-proof-attempts-2-20261101/code/a5_checker_n8_controls.py DEVELOPER_XZ --spatial-certificate DEVELOPER_XZ --global-file DEVELOPER_GLOBAL --output OWN_CONTROLS_FULL
+```
+
+The identical first/spatial path in this plan binds the reported node-input
+SHA to the count input. The final receipt must also explicitly record both
+raw count/global input SHA256 values and sizes, exact actual command/exit,
+output hash, unchanged-source guards, complete-positive entry and the resulting
+verified count/global scope. The frozen generic controls `scope` text says
+"no degree-eight count" and the output does not print the complete count
+result; it must be quoted honestly and supplemented by this explicit account
+of the actual completed positive. Counts may be taken from the input summary
+only after that positive, because `run` verifies them against its own computed
+counts. No source edit is needed or made to relabel the output.
+
+The different executor must actually regenerate and verify its own complete
+producer/continuation/reflection/boundary/global/repack pipeline as applicable;
+copying a developer artifact is not a producer rerun. Written reductions,
+retained essential evidence/size limits, actual input/output identities and
+the separate required Claude audit remain necessary. This pre-run review
+asserts no execution, count or global acceptance. Actual full execution awaits
+a complete matching final pair and the parent's explicit instruction.

@@ -1872,8 +1872,8 @@
   "outputs": [
     {
       "path": "topics/padua-proof-attempts-2-20261101/LOG.md",
-      "sha256": "dddd0869419f8ac7d3e7598b619b1e3e538494941ba79c4876857c89bd99327b",
-      "bytes": 60112
+      "sha256": "94d8211a41c82c22b865b5878da30262387bcee5593a4849757643530a2f43e7",
+      "bytes": 63090
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A2.md",
@@ -1897,8 +1897,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n7.md",
-      "sha256": "c3b501f183cbcaef952a1b9dafadd6280380ec23c21a0163830e46e98868b5d1",
-      "bytes": 16204
+      "sha256": "cfc2c0b4ea7789afc145101312a284c600ed1c1f084d1c1c622105a5716bb839",
+      "bytes": 28102
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n8.md",
@@ -2207,8 +2207,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/evidence-packaging.md",
-      "sha256": "0cb7d978fc27de2d253c1f7003a5dec71367a178ec21ea9f7e353ed8275b48a2",
-      "bytes": 4838
+      "sha256": "1f2ca90a5a9aa36e4386466cd62fa8071d8386875dac9b66e21df911922e8643",
+      "bytes": 7481
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/handoffs/01-work.md",
@@ -2262,8 +2262,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a5-n8-checker.md",
-      "sha256": "401083f49d08d68ecdc690306d1b88183959216183dca85af1550bf6c9af35b4",
-      "bytes": 20351
+      "sha256": "b454316cb6102e5aac93e8c6c678dfeadb4b2664de05ec374e9a2e5ae5c5fe79",
+      "bytes": 23562
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a5-n8-continuation-route.md",
@@ -2287,8 +2287,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-checks.md",
-      "sha256": "5afa8f940ecb803537afaede67083a5e583c1fa2f88fce26960ab18c21bcd16e",
-      "bytes": 7802
+      "sha256": "96e492637eb5679685a88b482122790d17dc36b05b38a551968adfaec93d27aa",
+      "bytes": 8975
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-execution-a2.md",
@@ -2312,8 +2312,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-execution-a5-n7.md",
-      "sha256": "12b63cbc8174330091b3d994484eb94b4d9a2772282b70f15713a63621f9083b",
-      "bytes": 11043
+      "sha256": "e2b40c77d4ec2b0e1195a41845ffecbf95b4761284a01e8dc762a6e361ad461a",
+      "bytes": 15434
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-execution-a5-n8-field.md",
@@ -2681,6 +2681,11 @@
       "bytes": 16259
     },
     {
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n7_controls.json",
+      "sha256": "7be9800f105be4f200db006982a4f8b22298302254b0bb01796326a275d01e95",
+      "bytes": 8436
+    },
+    {
       "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n7_global.json",
       "sha256": "2d8daa141812f2ef483227a802968f2c4e26dcf4702e8b376cb0dfa40d892258",
       "bytes": 9493
@@ -2881,6 +2886,11 @@
       "bytes": 9493
     },
     {
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n7_literature-comparison.md",
+      "sha256": "6e2768f3ac686cfe4177a80ec925ac9ae6a7b9dea1929f358fbf787d18d5d28c",
+      "bytes": 1713
+    },
+    {
       "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n7_nodes-producer.jsonl",
       "sha256": "8ebd0fc5a351f95472c1f2f4551a8bb83e367c594049a8e12dcf6f5d196f8665",
       "bytes": 5249
@@ -3017,13 +3027,13 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/plan.md",
-      "sha256": "47915e75a87cd7643368f2fc2a8451b07e089503bf37cb5c7a259d6c12b40f45",
-      "bytes": 3740
+      "sha256": "13cd69596dfe2af147a15087336aa620cb75479cd772b7f3a0eab872e1b45e84",
+      "bytes": 3746
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/proposed-record-changes.md",
-      "sha256": "91e096e3c80ee3bb3d32c6adb8ba2d705f739cfe193947da8b0e8ec0c9c7d710",
-      "bytes": 15507
+      "sha256": "360fdd4da417ac3398534c1bedfb74f3fe31b88751b07109ee0aa53586b5428f",
+      "bytes": 16047
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-01-corner-leading-lower.md",
@@ -3122,23 +3132,23 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-50-degree-seven-principal-field.md",
-      "sha256": "8936c2d3b5c034dcf5ede4a1b829869d691924979072c9e52456dd716f9db447",
-      "bytes": 6448
+      "sha256": "088bb8467e5dcc93807cf856e1d2ecb094fcc775f6688c48b12de9bbd44413ed",
+      "bytes": 6749
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-51-degree-seven-maxima-count.md",
-      "sha256": "c34d909d5229796a9119a770a254fbca65ec733a4a7d3fef07ae8247387e8b40",
-      "bytes": 5127
+      "sha256": "692b7ef50496ffa20250c1b3ae5a766898472146ea21211fb4d0820a35fa5776",
+      "bytes": 11016
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-52-degree-seven-global-argmax.md",
-      "sha256": "4cb0fd4041d3dd39969e84f4a7db2cc276c2dc737b9873b4309a6c442b5b1b39",
-      "bytes": 5267
+      "sha256": "93c0bc2401fe4d42dc2b489f22822d89f30d55475b129a2578341fa0a9302e37",
+      "bytes": 7768
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-53-uniform-gradient-leaf.md",
-      "sha256": "c402a828a7cff08687ca73766353a7d3712173af5ae2e087cddc43a009f488ab",
-      "bytes": 4078
+      "sha256": "e59d4ec0fb3760ecfb1c2b7763f47805d060a1cf2dc001a5b9e20038dedd15ed",
+      "bytes": 4727
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-60-degree-eight-principal-field.md",

@@ -23,7 +23,7 @@ Exact coefficient identities, inclusion-preserving intervals, rigorous derivativ
 
 ## Status by part
 
-Overall status: **PROVED** (written supporting implication; required Claude audit PENDING). Actual finite uses need independent verifier acceptance. No count is asserted by this lemma.
+Overall status: **PROVED** (written supporting implication; required Claude audit PENDING). The degree-seven finite use has independently passed in51/52. No count is asserted by this lemma alone.
 
 ## Depends on
 
@@ -31,7 +31,7 @@ The every-active-polynomial comparison proved in18 and elementary interval inclu
 
 ## Checks
 
-NewN7 implementation only. Each direct leaf records its coordinate and is independently verified by reconstructing P_F and all ambiguous derivative intervals. G may be the intersection of natural and centered mean-value intervals using exact first/second derivatives of P_F; the ambiguous derivative majorant remains natural. Existing cardinal bounds and compatible-mask order are unchanged. Counters distinguish direct all_gradient leaves from ordinary mask records. A tree with this new leaf type is accepted only after the independent verifier implements this exact predicate.
+NewN7 implementation only. Each direct leaf records its coordinate and is independently verified by reconstructing P_F and all ambiguous derivative intervals. G may be the intersection of natural and centered mean-value intervals using exact first/second derivatives of P_F; the ambiguous derivative majorant remains natural. Existing cardinal bounds and compatible-mask order are unchanged. Counters distinguish direct all_gradient leaves from ordinary mask records. The separately implemented checker accepted all50412 such leaves in the complete degree-seven certificate, including their weak-global-maximum exclusion. Both the implementer's full verification and the different executor's fresh own full verification and developer-pair controls actually passed, with frozen source guards; exact receipts and commands are in51/52, independent-checks-a5-n7-checker.md and independent-execution-a5-n7.md.
 
 ## Sources
 
@@ -51,8 +51,10 @@ Interior local maxima only. Boundary feasibility and maxima are still covered by
 
 ## Open items
 
-Actual complete finite certificate, independent implementation and execution, required Claude audit.
+Required Claude audit of Part2. Complete degree-seven finite use, independent implementation and actual independent executions are recorded in51/52. Success for other instances is not guaranteed by this implication.
 
 ## History
 
 2026-11-01, Codex /root/a5_develop, allocated gpt-6.1-sol xhigh, rules4bd1d65. New N7 supporting predicate; all earlier-degree sources remain frozen.
+
+2026-11-01 after13:33UTC: application checks synchronized after complete degree-seven independent acceptance, without changing this proof or any frozen code. Required Claude audit remains PENDING.

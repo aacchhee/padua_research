@@ -1,4 +1,4 @@
-# Independent n=7 fresh execution — in progress
+# Independent n=7 fresh producer and completed exact verification
 
 Date: 2026-11-01. Executor: Codex subagent `/root/input_manifest`, independent
 of the producer developer and checker implementer. Requested mechanical
@@ -54,7 +54,8 @@ The first full own verification starts only after those new pins are supplied
 and verified. Together with the unchanged six producer/schema dependencies,
 all ten current-stage hashes matched before repack and full verification. The
 helper hash is carried forward unchanged; the main and controls changed only
-before their first use here. Final post-verification confirmation remains pending.
+before their first use here. All ten current-stage pins were checked again
+after the actual full controls exit and matched unchanged.
 
 Actual environment was checked: Python 3.12.14, SymPy 1.14.0, ground backend
 `flint`, python-flint 0.9.0, FLINT 3.6.0, with the explicitly requested
@@ -90,8 +91,9 @@ The producer exited 0 with `complete: true`, zero pending paths and zero
 unresolved records. It visited 109795 boxes and supplied 54898 leaves:
 50412 direct universal-gradient leaves, 204 node-cone leaves and ordinary leaves
 with 96438 explicit compatible-mask records. It found a candidate list of
-33 interior, 15 edge and 2 corner points (50 total); this is not promoted to a
-certified count before verifier acceptance. The interior phase timer is
+33 interior, 15 edge and 2 corner points (50 total); they were candidates at
+that stage and were subsequently accepted by the full verifier below.
+The interior phase timer is
 2948.8162989616394 seconds and boundary/corner timer is 623.7980008125305 seconds.
 Maximum depth is 38 and maximum observed ambiguity 36.
 
@@ -121,8 +123,8 @@ Developer raw gzip SHA-256 is
 removing only `summary.seconds` and `boundary_summary.seconds`. Developer phase
 timers are 2852.822651386261 and 670.5874254703522 seconds. The nonbinding global
 contents also match exactly. All other mathematical and metadata fields remain
-in these comparisons. Actual own full verification is complete; developer-pair
-controls and the orchestrator's final evidence promotion remain pending.
+in these comparisons. Actual own full verification and separate developer-pair
+full verification inside controls both subsequently completed.
 
 ## Actual own full verifier acceptance
 
@@ -153,10 +155,70 @@ All ten current-stage source hashes matched on the post-checker check. These
 are recorded machine-verification results supporting the separate written
 proofs, not a Claude audit or a unilateral theory-status edit by this executor.
 
-## Remaining verification and limits
+## Completed sequential developer-pair controls
 
-Pending: actual developer-pair verification/controls,
-final post-run source hashes, final artifact table and acceptance flags.
-Mathematical
-reduction/field/node/boundary/global proofs and required Claude audit remain
-separate dependencies. No n=8 or all-degree conclusion is inferred.
+After the own full checker exited and released its cache, the following single
+heavy helper process actually ran and exited 0:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps python -B topics/padua-proof-attempts-2-20261101/code/a5_checker_n7_controls.py topics/padua-proof-attempts-2-20261101/outputs/a5_n7_certificate.json.xz --spatial-certificate topics/padua-proof-attempts-2-20261101/outputs/a5_n7_certificate.json.xz --global-file topics/padua-proof-attempts-2-20261101/outputs/a5_n7_global.json --output topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n7_controls.json > /tmp/a5-independent-n7-controls.log
+```
+
+It recorded 1481.9313189490003 seconds, `all_controls_passed: true` and
+`source_hashes_unchanged: true`: 52 controls, consisting of 42 deliberate defects
+rejected and 10 positive controls accepted. The positive
+`complete_count_and_global_value_certificate` actually calls the full count
+verifier and global-value verification on the developer pair. Its receipt binds
+the developer XZ SHA-256
+`9338e01c89482acd4e3e948812a62b5511ca6d9afcf87672fad053ee28cfaa85`
+(436960 bytes), with matching global SHA-256
+`b309483ba2b1c7dc5c83bc23d9cfcb0dfb68191fb8b3677f0d0124e0655a17cb`
+(9493 bytes). This is a completed separate developer-pair full verification;
+no additional standalone developer CLI copy is run or claimed.
+
+Other positive controls verify all exact node cones, raw/gzip/XZ decoded-byte
+identity, tensor-tower versus native degree-twelve norms on two polynomials,
+complete versus missing prefix subtrees, 35 exact FLINT endpoint values/signs
+against SymPy including zeros and scaling, 432-component integer polynomial
+vectors for 10 masks, universal-gradient background reconstruction, a supplied
+universal-gradient leaf, and coverage loss after deleting a real tree leaf.
+The 35 endpoint comparisons are this executor's actual controls run, not a claim
+to have rerun the orchestrator's distinct earlier 510-sign performance benchmark.
+All 42 rejection cases and their reasons remain in the JSON receipt, including
+malformed field/embedding/cone/mask/root/global evidence. These controls are
+finite tests, not an exhaustive proof of checker correctness.
+
+## Final artifact identities and limits
+
+| Canonical independent output under `outputs/` | Bytes | SHA-256 |
+|---|---:|---|
+| `a5_independent_n7_certificate.json.xz` | 436504 | `a8a78bc7d206507103710d52e5279842b70d5bc1f38dd6c3fe2eca6a5e4fc00a` |
+| `a5_independent_n7_producer.jsonl` | 13919 | `b318739616d89e7ffd5a4d9121478d50e84260854c7e1a6be05d1135dc67be67` |
+| `a5_independent_n7_global.json` | 9493 | `2d8daa141812f2ef483227a802968f2c4e26dcf4702e8b376cb0dfa40d892258` |
+| `a5_independent_n7_repack.json` | 2487 | `85870dbed2702cdd1cbe7bc21b7d7b7577331d7a78a1255d4de09bc8f35b1956` |
+| `a5_independent_n7_checker.json` | 16259 | `e48eae6e269d9d127f92f01f758a39517334d847492e9e1982bf8009be650ec3` |
+| `a5_independent_n7_controls.json` | 8436 | `7be9800f105be4f200db006982a4f8b22298302254b0bb01796326a275d01e95` |
+
+Raw local intermediates are the gzip identified above and
+`a5_independent_n7_global.raw.json` (9493 bytes, SHA-256
+`bb90f4f7c120a3e036c7d37751268e61120824e8651646b2e81e8ca448a656f8`).
+They are retained locally; no historical deletion or archival transfer is
+claimed. The essential proof artifact is the single losslessly packed XZ, with
+no splitting and every individual canonical output below 1 MB. The repack
+receipt records both original and new raw identities and exact decoded identity.
+
+All six producer/schema pins remained fixed throughout their execution. The
+later codec and three final verifier pins remained fixed through their own
+execution stages. Both verifier processes guard their own source identities;
+this executor additionally checked all ten current-stage pins after the actual
+final process exit. The own full CLI and the developer-pair full-positive
+controls execution are distinct actual runs and are not double-counted.
+
+The kernel prerequisite is identified in the schema with the user-required
+literal label `PD-T?proof-attempts-codex-01 (audit pending)`; its dated historical
+qualification is that the Part 1 Claude audit was accepted and minor
+dispositions completed in the pinned audit/response already integrated by the
+orchestrator. This execution does not replace the separate written finite
+reduction, exact field embedding, node-cone, boundary or global proof. Required
+Claude audit of Part 2 remains pending. No n=8, all-degree theorem or historical
+novelty claim follows, and this executor edits no mathematical theory status.
