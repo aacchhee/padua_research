@@ -8,4 +8,8 @@
 | L3 310–315, N303–N306 + response 01 | ae991c1 | Claude Opus 5.5 xhigh (reconstruction 02; supplementary) | no high findings; 313/N303 confirmed n = 4..16 | reviews/L3-reconstruction-02.md |
 | L5 501–506 | dd919d2 | Claude Opus 5.5 high (reconstruction 01; supplementary) | five medium corrections applied | reviews/L5-reconstruction-01.md |
 | L2 201–207, N201–N204 | 9378b68 | Claude Opus 5.5 xhigh (reconstruction 01; supplementary) | span drift confirmed; high finding on 205 applied | reviews/L2-reconstruction-01.md |
-| all | (Stage AUDIT commit) | Codex gpt-6-astra xhigh | PENDING | topics/bivariate-lanczos-20261031/audit-handoff.md |
+| all 67 theory files | 5ccfac2 | Codex gpt-6-astra xhigh (audit-01) | CHANGES REQUIRED; core exact certificates and foundational proofs survive; findings answered in response-01 | topics/bivariate-lanczos-20261031/audit-01.md |
+| response-01 impact map (65 changed/new files) | 075d407 | Codex gpt-6-astra xhigh (audit-02) | original findings resolved; T209, T318 confirmed; four low qualifications A2-L1–L4 | topics/bivariate-lanczos-20261031/audit-02.md |
+| response-02 (6 files) | aea0128 | Codex gpt-6-astra xhigh (audit-03) | CLEAN within scope; proceed to PR preparation | topics/bivariate-lanczos-20261031/audit-03.md |
+
+Final IDs (PR preparation 2026-11-01): see [ID_CROSSWALK.md](../../ID_CROSSWALK.md); the result IDs above are provisional labels of the time of each audit.
