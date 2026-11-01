@@ -60,3 +60,7 @@ Reader: Claude, Opus 5.5. Access: PDF supplied by AC in Downloads\\padua\\papers
 - Citation: SIAM J. Numer. Anal. 17(1) (1980) 1–13, DOI 10.1137/0717001. Coverage: abstract, introduction and the statements of Theorems 1–3; proofs not audited.
 - Statement: for nodes at Jacobi zeros and k satisfying a weighted L^p condition, p>1, the rule converges for all continuous f and Σ|w_ni|→∫|k| (Theorem 1); individual-weight limits (Theorem 2). The introduction names the CC set as the most important related case.
 - Relation: **RELATED, DIFFERENT SETTING** (Gauss–Jacobi nodes, weight sums).
+
+### LIT-048 — coverage completed (2026-11-01, response-01 to audit-01 F2)
+
+The complete article (15 pp., pp. 387–401) was loaded in AC's built-in browser (NTNU access) and section- and keyword-screened (Theorem/Lemma/Corollary/L2/quadratic/norm/log/Lobatto/interpolation/Marcinkiewicz). Structure: §1 Introduction, §2 Formulas for I_n(f), §3 Practical implementation, §4 Error estimates (explicitly "rather than rigorous error bounds"), §5 Numerical examples (Tables 1–2), references. The article contains no theorem, lemma or corollary statement and no quadratic-form or nodal ℓ² estimate. **RELATED, DIFFERENT SETTING**, now with complete-text screening coverage rather than pp. 387–388 only.

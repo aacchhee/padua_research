@@ -1,9 +1,9 @@
 # MZ prior-art and fulltext closure (CC / Padua MZ manuscript)
 
 - Branch: `claude/mz-prior-art-20261101` · Base: main `9739a0c56b7a3976422ce60a8441bfbbfd6554df` · Developer: Claude (orchestrator) · Auditor: Codex `gpt-6-astra`, high (audit-01: CHANGES REQUIRED)
-- Stage: WORK · Next: `Claude Opus 5.5, high: address audit-01 for claude/mz-prior-art-20261101 and request a focused Codex re-audit`.
+- Stage: AUDIT (focused re-audit of response-01) · Next: `Codex gpt-6-astra, high: focused re-audit of response-01 on claude/mz-prior-art-20261101 (PR #11)`.
 - Claims: none new. Literature topic only; no PD-T/PD-N status changes (literature verdicts never change a PD status).
-- For the PR: record updates for LIT-045–065; new LIT-293–295 (after the bivariate-Lanczos block LIT-066–292) reserved in the shared ledger; manuscript §1/§4/Prop. 5.1 wording and refs.bib; literature INDEX/CORPUS; topics/mz-constants/literature-search.md.
+- For the PR: record updates for LIT-045–065; new LIT-293–299 (after the bivariate-Lanczos block LIT-066–292) reserved in the shared ledger; manuscript §1/§4/Prop. 5.1 wording and refs.bib; literature INDEX/CORPUS; topics/mz-constants/literature-search.md.
 - Open for AC: missing fulltexts (see local working track `Downloads\padua\results\mz-prior-art-20261101.md`).
 
 ## 2026-11-01 — Claude, Opus 5.5 (orchestrator)
@@ -60,3 +60,18 @@ Audited candidate/rules `4f937137f9baac5e51814964e6a83aeb2df38815`; main/base `9
 Independent manuscript build: pdflatex/bibtex/pdflatex/pdflatex, 17 A4 pages, no final-pass warnings. LIT-293–298 is disjoint from PR #10's LIT-066–292 at `a2dd845b8a231e1b00733e1361e2a9ad3bad222f`; next LIT-299 after both reservations. Three shared-file text merges against base pass; this is not a full squash rehearsal. [Input manifest](audit-support/input-manifest.json) and three source checks preserve commands, identities, coverage and limits. No external author contact or merge.
 
 Developer must answer all findings in response-01.md and submit material corrections for focused re-audit. AC's desktop working-results file was unavailable in this environment; delivery there remains pending, with this audit/log as the durable handoff. No shared local RESULTS.md write was attempted.
+
+## 2026-11-01 — Claude, Opus 5.5 high: response-01
+
+- Rules re-read at branch head `64c3c79` (identical to `9739a0c`). Audit-01 (Codex, CHANGES REQUIRED) is answered in [response-01.md](response-01.md); all of F1–F4 and N1–N4 are accepted.
+- Material changes:
+  - translation.md T2/T4/T5 corrected and **T6** added.
+  - Mastroianni–Totik verdict downgraded to RELATED: its window lies inside half-exactness.
+  - Sloan–Smith 1980 screened in full.
+  - König–Nielsen exponent uses max(α,β).
+  - F4 rescoped: the Gauss-node and same-weight sources are analogues only.
+  - The audit lead Mastroianni–Milovanović–Notarangelo 2012 was read (LIT-299). Its Cor. 2.2 necessity part gives inf_N λ_−(N,N)=0 at the CC nodes on Π_N (qualitative, conditional).
+  - Manuscript abstract/§1/§4/Prop. 5.1 remark revised; INDEX/CORPUS/refs/ledger updated (next LIT-300).
+- No PD status change. Build: 17 pp., clean. Build products are outside Git.
+- Sources read in this step: Sloan–Smith 1980 (AC's NTNU access, built-in browser) and the MMN 2012 author PDF (text layer plus p. 164 page image).
+- Focused Codex re-audit requested (response-01, last section). Audit-01's note on AC's local results file: this developer session writes it via the device link (updated after this commit).

@@ -56,11 +56,12 @@ covering that endpoint case, without contradicting a conditional theorem
 of An and Wu. For signed Lebesgue Padua rules, we prove the exact
 factor-two Clenshaw--Curtis marginal and its spectral compression consequence;
 the two-dimensional upper bounds and endpoint asymptotics remain open.
-All proofs are self-contained. Qualitative failure of uniform converse
-Marcinkiewicz--Zygmund inequalities at this borderline, and a positive lower
-bound for small degree ratios, follow from classical weighted results. In a
+All proofs are self-contained. That the minimum eigenvalue on the full
+interpolation space is not bounded below, and that the maximum eigenvalue is
+bounded, follow from classical weighted Marcinkiewicz--Zygmund results. In a
 documented but non-exhaustive search we found no prior statement of the
-two-sided logarithmic order or of the explicit constants.
+two-sided logarithmic order, of a threshold below two, or of the explicit
+constants.
 \end{abstract}
 
 \section{Problem, conventions, and relation to the literature}\label{sec:context}
@@ -158,12 +159,15 @@ $\Delta_N(x)=\sqrt{1-x^2}/N+N^{-2}$ (from Lemma~\ref{lem:weight-comparison} and 
 below), so CC weights may be exchanged with Christoffel-type weights at a
 cost of absolute constants. In this language our endpoint result concerns
 a borderline converse Marcinkiewicz--Zygmund inequality.
-We have inspected the full texts of the following sources; the precise
-reading coverage is recorded with the source identifiers.
+We have inspected the following sources. Their coverage differs
+(complete text, selected sections, or a keyword screen) and is recorded per
+source with the source identifiers.
 \begin{itemize}
-\item Sloan--Smith's CC product-integration papers \citep{LIT-047,LIT-048}
-control the sum of absolute product weights, i.e.\ a $C[-1,1]$ functional
-norm, and contain no quadratic-form or nodal $\ell^2$ estimate.
+\item Sloan--Smith's 1978 CC product-integration paper \citep{LIT-047}
+controls the sum of absolute product weights, i.e.\ a $C[-1,1]$ functional
+norm. Its companion \citep{LIT-048} develops heuristic error estimates and
+numerical tests and states no theorem. In the portions inspected we found
+no quadratic-form or nodal $\ell^2$ estimate in either paper.
 \item The weighted mean-convergence results of Erd\H{o}s--Feldheim,
 Askey, Nevai, and Smith's Lobatto theorem
 \citep{LIT-061,LIT-062,LIT-063,LIT-065} bound interpolation from
@@ -175,36 +179,50 @@ imply, logarithmic growth of the $\ell^2\to L^2$ norm.
 \citep{LIT-064} require an exponent in an open range. For CC nodes,
 Lebesgue measure and $p=2$, the nodal polynomial
 $\sin\theta\sin N\theta$ sits exactly at the excluded endpoint.
-\item Mastroianni--Russo \citep{LIT-293} characterize converse inequalities
-at Gauss nodes for generalized Jacobi and Ditzian--Totik weights.
-König--Nielsen \citep{LIT-294} do so for same-weight Jacobi nodes.
-Xu's sufficient conditions \citep{LIT-296} meet the same obstruction.
-At the zeros of $U_{N-1}$ (the interior CC nodes) with Lebesgue measure,
-the Mastroianni--Russo condition requires $(1-x^2)^{-1/2}\in L^2$, which
-fails logarithmically. Thus the \emph{qualitative} unboundedness behind
-$\lambda_-(N,N-1)\to0$ is classical; so is the growth
-$\int U_m^2\dd x\asymp\log m$ used in its necessity proofs (compare
-Proposition~\ref{prop:counterexample}).
+\item Mastroianni, Milovanovi\'c and Notarangelo \citep{LIT-299}
+characterize, for interpolation at the zeros of $p_m((1-x^2)^\alpha)$
+together with $\pm1$, when the weighted $L^p$ norm of $P\in\Pn_{m+1}$ is
+equivalent to a nodal sum plus an endpoint term. With $\alpha=1/2$ these
+are the CC nodes ($N=m+1$). For Lebesgue measure and $p=2$ their strict
+condition fails at its endpoint. Since the nodal side of their equivalence
+is comparable to $Q_N(p^2)$ by the weight comparison above, the necessity
+part of their criterion yields $\inf_N\lambda_-(N,N)=0$ on the full space
+$\Pn_N$. This is classical, but it is only a statement about a
+subsequence on $\Pn_N$, with no rate.
+\item Mastroianni--Russo \citep{LIT-293} and Xu \citep{LIT-296} treat
+converse inequalities at Gauss nodes without endpoint terms, and
+K\"onig--Nielsen \citep{LIT-294} treat same-weight Jacobi nodes. At the
+zeros of $U_{N-1}$ with Lebesgue measure and $p=2$, the Mastroianni--Russo
+condition requires $(1-x^2)^{-1/2}\in L^2$, which fails logarithmically.
+These are analogous borderline phenomena; we do not derive the CC
+statements from them.
+\item For every $N$, the limit $\lambda_-(N,N-1)\to0$, its $1/\log N$
+rate and the order $(1+\log N)^{-2}$ come from the exact CC evaluation in
+Proposition~\ref{prop:counterexample} and Theorem~\ref{thm:harmonic}. In
+particular $Q_N(U_{N-1}^2)=O(1)$ while $\int U_{N-1}^2\asymp\log N$; the
+latter growth is an elementary computation.
 \item The algebraic Marcinkiewicz inequality of Mastroianni--Totik
-\citep{LIT-051} applies at CC nodes when $n\le N/(\pi M)$ for their
-unspecified constant $M$. Through the weight comparison above it yields
-$\lambda_-(N,n)\ge c>0$ for $n\le\theta_0N$, with unspecified $\theta_0$
-and $c$. Section~\ref{sec:ratio} adds explicit constants for every fixed
-$\theta<1$ and an upper constant below two.
+\citep{LIT-051} applies at CC nodes only when $n\le N/(\pi M)$ for their
+unspecified constant $M$. For every admissible $M\ge2/\pi$ this lies within
+the half-exactness range $n\le N/2$, where exactness already gives
+$\lambda_\pm(N,n)=1$. In its documented form it therefore adds nothing
+beyond exactness for the questions of Section~\ref{sec:ratio}.
 \item The forward quadrature-sum theorem of Lubinsky--M\'at\'e--Nevai
-\citep{LIT-050} applies at CC nodes for every degree $\le lN$. It gives
-$\lambda_+(N,n)\le C$ with an unspecified absolute constant. The threshold
+\citep{LIT-050} applies at CC nodes, for each fixed $l$, to every degree
+$\le lN$. It gives $\lambda_+(N,n)\le C_l$ with an unspecified constant
+depending on $l$. The threshold
 $2$ and the explicit constants of Theorem~\ref{thm:ratio-upper} and its
 endpoint corollary are not implied.
 \item The later Sloan--Smith papers \citep{LIT-297,LIT-298} relate
 product-integration convergence to mean convergence with uniform data.
 \item The interpolation book of Mastroianni--Milovanovi\'c
-\citep{LIT-049} (chapters 2, 4 and 5), Lubinsky's survey \citep{LIT-052},
+\citep{LIT-049} (chapters 2, 4 and 5),
 Widom's and Widom--Wilf's Hankel asymptotics \citep{LIT-053,LIT-054},
 the Chebyshev--Legendre method \citep{LIT-058} and recent
 Chebyshev--Lobatto interpolation estimates in the Legendre norm
 \citep{LIT-295} concern uniform norms, Sobolev inputs or different matrix
-problems.
+problems. Lubinsky's survey \citep{LIT-052} records genuine converse
+quadrature-sum (nodal-norm) theorems, but at Gauss nodes and weights.
 \end{itemize}
 We found no statement of the two-sided order
 $\lambda_-(N,N-1)\asymp(1+\log N)^{-2}$, of the parity-compatible witness
@@ -628,11 +646,12 @@ endpoint upper gap would be additional information.
 
 \section{Explicit bounds at each fixed degree ratio}\label{sec:ratio}
 
-For sufficiently small ratios $n/N$, a positive lower bound with
-unspecified constants already follows from the classical algebraic
-Marcinkiewicz inequality of Mastroianni--Totik \citep{LIT-051}
-(Section~\ref{sec:context}). The point of this section is explicit
-constants for every ratio below one, with an upper constant below two.
+For $n\le N/2$, exactness gives $\lambda_\pm(N,n)=1$; the classical
+algebraic Marcinkiewicz inequality of Mastroianni--Totik \citep{LIT-051}
+yields nothing beyond this in its documented form
+(Section~\ref{sec:context}). The point of this section is the range
+$N/2<n<N$: explicit constants for every ratio below one, with an upper
+constant below two.
 
 \begin{theorem}[Degree-sensitive upper estimate; \id{PD-T022}]\label{thm:ratio-upper}
 For $0\le n<N$, put $\rho=\max\{2n/N-1,0\}^2$. Then
@@ -842,10 +861,13 @@ Since $4\cdot512^2/(512^2-1)<401/100$, \eqref{eq:Uexact} yields
 Thus $\lambda_-(512,511)<1/4$ and the defect exceeds $3/4$.
 \end{proof}
 
-The growth $\int_{-1}^1U_m^2\asymp\log m$ behind this witness is
-classical; it drives the necessity part of the converse
-Marcinkiewicz--Zygmund characterizations \citep{LIT-293,LIT-294}. The
-new content here is only the exact CC evaluation.
+The growth $\int_{-1}^1U_m^2\asymp\log m$ behind this witness is an
+elementary computation. Analogous borderline mechanisms appear in classical
+converse Marcinkiewicz--Zygmund characterizations \citep{LIT-293,LIT-294},
+and a full-space, subsequence version of $\lambda_-(N,N)\to0$ at the CC
+nodes follows from \citep{LIT-299} (Section~\ref{sec:context}). The
+proposition supplies the exact CC evaluation, valid for every $N$ and on
+$\Pn_{N-1}$.
 This simple witness gives only an $O(1/\log N)$ quotient asymptotically;
 the harmonic combination in Theorem~\ref{thm:harmonic} is needed for
 the squared logarithm. The finite certificate uses no floating spectrum.

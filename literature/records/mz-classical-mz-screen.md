@@ -57,3 +57,10 @@ Reader: Claude, Opus 5.5. Access: PDF supplied by AC in Downloads\\padua\\papers
 - Coverage: pp. 531–538 read (introduction, Definition 3, Theorems 4–5, Corollary 6, Definition 7, Theorem 8, Corollary 9, start of §2). The rest is proofs, not audited.
 - Statement (Theorem 5, p. 534): for w∈GJ, 0<p<∞, a fixed positive integer l, convex nondecreasing ψ≥0, and arbitrary points −1≤y_m<…<y_1≤1 with θ_j=arccos y_j and δ=min(θ_{j+1}−θ_j)>0: for all P of degree ≤ln, Σ_jλ_n(w,y_j)ψ(|P(y_j)|^p)≤C_3{1+(nδ)^{−1}}∫ψ(C_2|P|^p)w (1.20); a companion (1.19) has weights w_n-type. Constants are independent of m, {y_j}, n and P. Corollary 6 (p. 535) is the Gauss-node case. This solves Askey's problem (1.11) on **forward** quadrature sums.
 - Relation: at CC nodes (δ=π/N, w≡1, p=2, ψ(t)=t, λ_N(1,x_j)≍Δ_N(x_j)≍w_j by translation.md T3) it gives λ_+(N,n)≤C for all n≤lN with an absolute, unspecified C. This is uniform boundedness of the upper Gram constant, which is not itself one of our claims. It does not give the threshold 2 (PD-T014), 1+ρ (PD-T022) or 2−4/N+4/N². It is consistent with PD-T016 (λ_+>2 at full degree). **Verdict: RELATED** (implies only a weaker, unregistered boundedness statement); for PD-T017/018/023: RELATED (forward direction only).
+
+### LIT-051 — correction (2026-11-01, response-01 to audit-01 F1/N1)
+
+- The gap hypothesis in the summary above is to be read with **absolute** angular gaps |ξ_{j+1}−ξ_j|, since ξ_j=arccos x_j decreases as x_j increases.
+- For w≡1 the smoothed weight w_n(x)=Δ_n(x)^{−1}∫_{x−Δ_n}^{x+Δ_n}w lies between 1 and 2, not ≡1, so the specialized constant is 2C_src.
+- With an admissible M≥1 the CC window n≤N/(πM) lies inside the half-exactness range n≤N/2, where CC exactness already gives λ_±=1. The documented consequence is therefore **no stronger than exactness**.
+- **Verdict for PD-T023/PD-T024 revised to RELATED** (was IMPLIES PART). See topics/mz-prior-art-20261101/translation.md T4.

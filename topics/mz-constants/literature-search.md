@@ -184,3 +184,10 @@ Later on 2026-11-01, AC supplied Xu I/II, Nevai 1990, Lubinsky–Máté–Nevai 
 - Nevai 1990 justifies a step of Nevai III.
 - Published ASV calls the CC behaviour theoretically "not known".
 New LIT-296–298. Still unread: Mastroianni–Russo 2000 (Hadronic), Della Vecchia–Mastroianni–Vértesi 1995, Wu AML 2026.
+
+Response-01 to audit-01 (2026-11-01):
+- Mastroianni–Totik's CC consequence lies inside half-exactness, so it is **RELATED**, not IMPLIES PART.
+- Sloan–Smith 1980 was screened in full: no theorem statements.
+- The König–Nielsen critical exponent now uses max(α,β).
+- The classical attribution of borderline failure was rescoped. Mastroianni–Milovanović–Notarangelo 2012 (LIT-299) gives inf_N λ_−(N,N)=0 at the CC nodes on Π_N (qualitative). Mastroianni–Russo, Xu and König–Nielsen are analogous settings only.
+See topics/mz-prior-art-20261101/response-01.md.
