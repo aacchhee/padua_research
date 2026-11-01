@@ -6,7 +6,8 @@ ID kind: PD-N.
 Aliases: signed-Padua Z-matrix obstruction; frustrated coefficient triangle;
 two-dimensional absolute-coefficient transfer.
 Split from: IDEA-212, the direct transfer of the one-dimensional
-proof of PD-T014/022 to the signed Padua endpoint space.
+proof of PD-T014/022 to the signed Padua endpoint space; and IDEA-225,
+the strictly positive pointwise nodal-floor transfer.
 Split into: none. The upper target is retained OPEN in
 [PD-T110](mz2d-upper-open.md).
 
@@ -22,6 +23,14 @@ in `{−1,1}` such that all off-diagonal entries of `S A S` are nonpositive.
 Moreover, at `m=4` the defect `H-R` has entries of both signs. Thus
 neither of the two entrywise sign hypotheses used in the one-dimensional
 absolute-coefficient proof transfers in the stated basis.
+
+At `m=3`, the weight at `(1,1)` is `w_(1,1)=−1/18`, so there is no
+strictly positive pointwise nodal floor. For bounded nodal data equal to
+one at that node and zero elsewhere, `Q_3(f²)=−1/18`. The expression
+`Q(f²)^(1/2)` in positive-weight Cauchy–Schwarz therefore cannot be used
+on arbitrary nodal data. This elementary witness checks the missing
+hypothesis; it does not decide the restricted signed polynomial form on
+`Pi_(m-1)`.
 
 ## Definitions
 
@@ -56,6 +65,15 @@ Z-matrix after diagonal sign switching, and a nonnegative entrywise
 defect as in IDEA-062/073.
 Parameter range: switchability fails for all `m>=3`; both defect signs
 are exhibited at `m=4`.
+
+Second attempted mechanism: IDEA-225, requiring a strictly positive
+pointwise nodal floor and the positive-weight Cauchy–Schwarz step on
+arbitrary nodal data. Parameter range: `m=3`, where `w_(1,1)=−1/18`.
+For bounded nodal data equal to one at that node and zero elsewhere,
+`Q_3(f²)=−1/18`. The expression `Q(f²)^(1/2)` in positive-weight
+Cauchy–Schwarz therefore cannot be used on arbitrary nodal data.
+This elementary witness checks the missing hypothesis; it does not
+decide the restricted signed polynomial form on `Pi_(m-1)`.
 
 ## Depends on
 
