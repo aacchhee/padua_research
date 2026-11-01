@@ -165,6 +165,7 @@ Subagent effort is set from the agent definition and is not independently expose
 
 ### Stage AUDIT (2026-11-01)
 
+- Audit candidate: `5ccfac223f466a9105450365d8c6c3781ff7d922` (commit adding audit-handoff.md; theory-file hashes there). Later commits on this branch touch only LOG/RESULTS bookkeeping unless an impact check says otherwise.
 - Directions closed for this campaign pass: L1+L4 7/10 rounds (paused), L2 3/10, L3 6/10 (paused), L5 3/10 (side note, paused); all openings and next questions recorded in the SUMMARY files and report.md (resumable within the round budgets).
 - Deliverables: literature baseline (literature/), seeded state/IDEAS.md, plan.md with frozen questions and round ledger, progress.md, direction folders with all candidates and round records, tracks/bivariate-lanczos/ theory files with provisional IDs, report.md, audit-handoff.md, cold-storage manifest. Committed generated output ≈ 2.2 MB total, no file > 1 MB.
 - Not done (PR preparation, after audit): merge `origin/main` (charter merged), reconcile shared literature records with the charter's, obtain a disjoint reservation from the batch allocation owner (`topics/padua-batch-20261031/ALLOCATIONS.md`, owner Codex MZ orchestrator), register IDEA/PD-T/PD-N/LIT finals, write NEGATIVE_RESULTS.md and the one-paragraph track charter in state/CURRENT.md, open the PR. No draft PR opened yet.
