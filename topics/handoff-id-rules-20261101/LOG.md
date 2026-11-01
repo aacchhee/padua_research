@@ -1,7 +1,7 @@
 # Handoff file and fresh-range ID reservation rules
 
 - Branch: claude/handoff-id-rules-20261101 · Base: main `a7e123476cef761807c69e5d0af1a094c7ac3df0` · Developer: Claude · Auditor: Codex
-- Stage: PR · Next: AC's merge decision after final publication · Active finalization: [handoffs/04-finalize.md](handoffs/04-finalize.md)
+- Stage: PR · Assigned agent work complete; next: AC's merge decision · Open handoff: none
 - Reserved final-ID ranges: none (rule change only; no PD-T, PD-N, IDEA or LIT entry).
 - Open for AC: merge decision on PR #13; transition is next continuation before allocation/readiness, preserving all existing ranges.
 
@@ -49,3 +49,4 @@
 - Novelty gate not applicable: protocol audit and administrative integration only. No subagents or scientific reruns. No range is needed or reserved.
 - [Audit-02](audit-02.md): **ACCEPTED**, F1–F4 closed independently against Claude's response and the integrated candidate. No material rule/template edit by Codex. [PR preparation](pr-prep.md) records preservation, transition and rehearsal; this supersedes the older unmerged-#6 snapshot for current decisions without changing historical reports.
 - Actual checks: all PR #6/other-topic/registry/ledger/scientific files match main; response rules match exactly after removing only main's exact Fable addition; prior report and handoff bodies preserved; one active handoff; `git diff --check`; disposable main → #13 squash tree equality at `c544dfb` / `2e79950f1190a40d28d6575fca3553932f2f42bb`. An initial checker newline-normalization error was corrected and checks rerun, with no source change.
+- Final audit/preparation outputs: `49da38c4287f132a3db3bf936f8f194954eb0ec3`. Handoff 04 closes against that existing commit in this later closure commit. No successor is needed: audit, integration and assigned PR preparation are complete; no open handoff remains. Final branch/head and repeated squash-tree identity are published in PR #13. Only AC merges.

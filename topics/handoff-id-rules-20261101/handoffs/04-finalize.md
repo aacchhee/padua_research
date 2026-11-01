@@ -1,6 +1,6 @@
 # Handoff 04 — handoff-id-rules-20261101 — final audit and PR preparation
 
-- Status: open
+- Status: done in 49da38c4287f132a3db3bf936f8f194954eb0ec3
 - Previous handoff: [03-audit.md](03-audit.md)
 - Next agent / model / effort: Codex, gpt-6-astra medium (AC-requested; resolved runtime metadata unexposed)
 - Role: independent protocol auditor and integration orchestrator
