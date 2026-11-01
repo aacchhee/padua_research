@@ -1,6 +1,6 @@
 # Handoff 05 — padua-lanczos-drift-20261101 — AC correction: integrate PR14, move results into the repository
 
-- Status: open
+- Status: done in cef79d66321a93d93d53e53efcb7e6744c387481
 - Previous handoff: 04-response.md (superseded by this file: AC correction)
 
 - Next agent / model / effort: Claude, Sonnet 5.5 medium as named by AC, with Opus 5.5 high wherever a mathematical record must be judged. In this session the orchestrator runs on the configured `claude-opus-5-5`, and the commit trailers record that.
