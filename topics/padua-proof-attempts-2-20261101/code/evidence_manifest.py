@@ -130,7 +130,8 @@ def main():
     indexed_paths = set(git("ls-files", "--", TOPIC).decode().splitlines())
     for relative in sorted(indexed_paths):
         path = Path(relative)
-        if path.name != "evidence-manifest.json" and "__pycache__" not in path.parts:
+        if (path.name != "evidence-manifest.json" and "__pycache__" not in path.parts
+                and not relative.startswith(TOPIC + "/handoffs/")):
             # Hash the index bytes that this checkpoint will commit. Parallel
             # workers may be editing tracked working files not yet staged.
             data = git("show", f":{relative}")
@@ -143,6 +144,7 @@ def main():
               "output_source": "Git index snapshot via git show :PATH; stage durable changes before generation; unstaged edits are excluded",
               "outputs": outputs,
               "exclusions": ["evidence-manifest.json excludes itself to avoid a recursive hash",
+                             "numbered handoffs are Git-pinned publication metadata, excluded because required post-candidate status closure/addition occurs in the following commit",
                              "untracked prototypes and unstaged tracked edits are excluded until staged for a checkpoint",
                              "__pycache__ files are interpreter cache, not evidence"]}
     dest = ROOT / TOPIC / "evidence-manifest.json"

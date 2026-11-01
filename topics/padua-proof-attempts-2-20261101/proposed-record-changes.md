@@ -212,3 +212,26 @@ Dated separate extension proposed after the Part2 Claude audit: PD-N?proof-attem
 ```
 
 Validation: entire Old preserved; unique at pinned current main. At authorized post-auditintegration, addlocalnegative01/02andpositive80rows/mappings andupdateIDEA198dispositionforTHEspecifiedS(alpha), preservingoriginalN01scope/historyandotherF/referencequestions. No finalID/range/sharedwrite here.
+
+
+## B1 exact real exterior parallel class and literal taper splits
+
+Target: `topics/programme-ideas-20261031/OPEN_TARGETS.md`
+
+Pinned commit: `28aaa20861d08074b77efc74eaef75cdcb36234d`
+
+Old:
+
+```text
+Known: MEASURED with exact blocks for five pole classes, t ≤ 9, M = 120 (`checks/code/decisive/gen1-3/window_exact.py/.out`); the three-block projection without the constraint is false (PD-N?…-02 (i)). Done when: a proof, or a counterexample with general-position poles. Route: the 1-D orthogonal-rational-function three-term recurrence (Bultheel et al.) is the template; express the degree-(t+1) block through a "top-form" functional, as in the adversary's window-parity sketch (`checks/adversarial-gen1-3.md` (ii)(1)), and identify the single linear constraint per direction that W_{t−2} imposes.
+```
+
+New:
+
+```text
+Known: MEASURED with exact blocks for five pole classes, t ≤ 9, M = 120 (`checks/code/decisive/gen1-3/window_exact.py/.out`); the three-block projection without the constraint is false (PD-N?…-02 (i)). Done when: a proof, or a counterexample with general-position poles. Route: the 1-D orthogonal-rational-function three-term recurrence (Bultheel et al.) is the template; express the degree-(t+1) block through a "top-form" functional, as in the adversary's window-parity sketch (`checks/adversarial-gen1-3.md` (ii)(1)), and identify the single linear constraint per direction that W_{t−2} imposes.
+
+Dated restricted class split proposed after the Part2Claudeaudit: PD-T?proof-attempts-2-codex-90–93 are PROVED for real exterior parallel diagonal poles ell_j=x+y−a_j,a_j>2. For EVERYfixedpositive Pi_(T+1)-determining sample and EVERYfixedfiniteT>=3,90expresses all lower leakage by a next-pole homogeneous top-formfunctional and provesWt−2detectsEVERYleakage direction forALLoutwardoffsets.91constructs a NONZEROPOLE-ONLYsum-of-squared-minors polynomial using a coalescent projective structural witness for THESEfixeddata;92proves the stated extraction equality for2<=t<=T simultaneously outside itsproperrealalgebraicexception, including distinct ordered offsets. No generic-node/weight substitution or floatingrank premise isused.93proves the literalsourceEVENpolecountLdiagtaper, BOTHsourceorders, has onlyFINITELYmanypotentiallyexceptionalpositiveσ/epsilon_min. No individualstoredparameter iscertified and noexceptionlocationcomputed. The full nonvanishing/injective-evaluation/M/dimension/fixedT hypotheses above are retained. These are analyticproofs with completeindependentfull-file reconstruction, not upgradedversions of the floating 'exact blocks' experiments. The source's numericalimplementationfailure PD-N040 remainsunchanged; otherpoleclasses and numericalstabilityremainOPEN. Preserve the original measurement, route and broaderscope above.
+```
+
+Validation: entireOldstatement/measurement/route retained; unique at pinnedcurrentmain. Proposedrows/mappingsforlocal90–93closeONLYthisspecifiedclasspart of B1, preservingtheoriginalbroaderother-classOPENtarget and numericalsolvernegative. No finalID/range/sharedwrite.

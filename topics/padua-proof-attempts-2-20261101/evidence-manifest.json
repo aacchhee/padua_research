@@ -2427,8 +2427,8 @@
   "outputs": [
     {
       "path": "topics/padua-proof-attempts-2-20261101/LOG.md",
-      "sha256": "0cc3341b762038294888471532600cdbedcd4177146e96583a918f37d07f9169",
-      "bytes": 93471
+      "sha256": "c87adc2d5b1b65dcfc155ffab84199199c08da5d9c1ca46f56c5ce0d65494fa5",
+      "bytes": 97939
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/a4-input-preparation.md",
@@ -2476,6 +2476,11 @@
       "bytes": 15871
     },
     {
+      "path": "topics/padua-proof-attempts-2-20261101/attempts/T-B1.md",
+      "sha256": "b6c1f395ae3a340033b45c4d7952bb99b26477feec2c0050b51d1f6f0ab1f845",
+      "bytes": 10833
+    },
+    {
       "path": "topics/padua-proof-attempts-2-20261101/attempts/T-B3.md",
       "sha256": "a389d58154eab60e56fdcb2e967f1c954de0e129a5acd33650db538d2d5bf6cd",
       "bytes": 18566
@@ -2484,6 +2489,11 @@
       "path": "topics/padua-proof-attempts-2-20261101/b1-input-preparation.md",
       "sha256": "cbe39dc9939ac4cc201eab29b0e072d2b376874c77afdc8deac18c70e869b6a1",
       "bytes": 17674
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/b1-lead-receipt.md",
+      "sha256": "d88276b9a9ec873aea3354c2be6892e2e6df467b14bd8a0c5ba6a7f5c05a5729",
+      "bytes": 6280
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/b3-input-preparation.md",
@@ -2857,18 +2867,13 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/code/evidence_manifest.py",
-      "sha256": "436e71992ff295bd6dab2ff400f92be409c8816de7b8423ab1adbb9b20b4cd29",
-      "bytes": 8944
+      "sha256": "b62f8b371eff7abb62562252894e961d0100a52509270e3ce45767690c35b199",
+      "bytes": 9195
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/evidence-packaging.md",
       "sha256": "1f2ca90a5a9aa36e4386466cd62fa8071d8386875dac9b66e21df911922e8643",
       "bytes": 7481
-    },
-    {
-      "path": "topics/padua-proof-attempts-2-20261101/handoffs/01-work.md",
-      "sha256": "50bdc0f27aee5b62378d56f337f5a33ff7c98579266446edc50c79e682a76cb5",
-      "bytes": 5931
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a2.md",
@@ -2971,14 +2976,24 @@
       "bytes": 29537
     },
     {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-b1-topform.md",
+      "sha256": "bf3518a6f6f9877fecd78b1bcf0df087ec8db0e4c26f28ba0499ee1166c37560",
+      "bytes": 22786
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-b1.md",
+      "sha256": "539e3fc673b689a9f81bdd63e9cdce27945b84a6a04c110a24bb5850511dc871",
+      "bytes": 28523
+    },
+    {
       "path": "topics/padua-proof-attempts-2-20261101/independent-checks-b3.md",
       "sha256": "72b85a3956aa8a61c3f724a24f7708e65e74bcb6b1cd29eb96a3c55b200bf2e1",
       "bytes": 19913
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-checks.md",
-      "sha256": "cec01408f05f6fc664a03ce52123b8ddda8c70bf310d88f2375786432da2e399",
-      "bytes": 14752
+      "sha256": "f04959ffb062c7acaeb6daab9696efb94f53b708574651e27d89e876ebe2c758",
+      "bytes": 15645
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-execution-a2.md",
@@ -4031,6 +4046,11 @@
       "bytes": 2183
     },
     {
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/b1_status_metadata.json",
+      "sha256": "05005e5fe5f3ead035e97741c5102155bf60906a8167bde8c52742ac8892da4a",
+      "bytes": 2847
+    },
+    {
       "path": "topics/padua-proof-attempts-2-20261101/outputs/b3_completion.json",
       "sha256": "96c013b0722926937f44230d38925c9eeb7b110cc74213057039a49502d1c989",
       "bytes": 1973
@@ -4056,14 +4076,19 @@
       "bytes": 8974
     },
     {
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/local_untracked_retention.json",
+      "sha256": "3b2f3fe8336e449c180b072fbb71bf09796dd129b1377e8baff0ab15df75434f",
+      "bytes": 2152
+    },
+    {
       "path": "topics/padua-proof-attempts-2-20261101/plan.md",
-      "sha256": "5a9653420ddaba2b6abcf9076e7e5835c057aa331dbdc7b69c665cb3193476bd",
-      "bytes": 4310
+      "sha256": "03fd072dd26a1b85146db72a73e36b6bdd59562547c9ca485af0a75063542fe8",
+      "bytes": 4321
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/proposed-record-changes.md",
-      "sha256": "2bcbe84e1350c8a1a263ecc9fa1d27bb022fbebcd8f28469d3734466143662fd",
-      "bytes": 27292
+      "sha256": "fabbbc47d2cb4215ac5b3a382f7d2b1909cb36e3e6b9de77795df6d70156bd9d",
+      "bytes": 30367
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-01-corner-leading-lower.md",
@@ -4256,6 +4281,26 @@
       "bytes": 5418
     },
     {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-90-pole-topform-detection.md",
+      "sha256": "fc18d4e83e23607783d3968c387b5dd0b5101faa82c92f2a44365d1ee396f972",
+      "bytes": 9520
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-91-pole-only-generic-rank.md",
+      "sha256": "732c5bd93aa751514fc61fed5322e4062e96e4090cad0ad82588a847a2484eb9",
+      "bytes": 10381
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-92-generic-ldiag-constrained-window.md",
+      "sha256": "8261bd243e633c2d9532c17aadb3137820dfbd7f66583d28010152a9ecf59229",
+      "bytes": 6705
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-93-source-ldiag-taper.md",
+      "sha256": "563fae640d26f49d88cc773aa339f3fc472abceed7d61def120d42337ff2c614",
+      "bytes": 6698
+    },
+    {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-N01-computed-section-box-count.md",
       "sha256": "c0cbcc79ea1d2c806edd64dd04d613164cec8b0c530882fcfd297a2615b2881d",
       "bytes": 15557
@@ -4268,6 +4313,7 @@
   ],
   "exclusions": [
     "evidence-manifest.json excludes itself to avoid a recursive hash",
+    "numbered handoffs are Git-pinned publication metadata, excluded because required post-candidate status closure/addition occurs in the following commit",
     "untracked prototypes and unstaged tracked edits are excluded until staged for a checkpoint",
     "__pycache__ files are interpreter cache, not evidence"
   ]
