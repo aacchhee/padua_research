@@ -1,0 +1,26 @@
+# l1_r07_termwise_predictor.py numpy=2.5.3
+== quadratic clustering s|s|, m=30 (M=496, weights 1.3e-43..4.0e-01)
+   BJ loss L(n)   n8:6.66e-16 n12:1.89e-14 n16:6.59e-13 n20:1.83e-11 n24:2.14e-10
+   estimate E(n)  n8:7.19e-16 n12:2.68e-14 n16:7.12e-13 n20:1.75e-11 n24:2.90e-10
+   D(c*) floor    n8:3.52e-17 n12:3.60e-17 n16:4.25e-15 n20:4.27e-15 n24:4.28e-15
+   ratio E/L     n8:1.08 n12:1.41 n16:1.08 n20:0.95 n24:1.36
+== quartic clustering s|s|^3, m=30 (M=496, weights 8.6e-91..4.9e-01)
+   BJ loss L(n)   n8:4.44e-16 n12:1.14e-13 n16:3.18e-10 n20:1.80e-06 n24:3.00e-03
+   estimate E(n)  n8:1.44e-14 n12:1.66e-11 n16:3.80e-08 n20:3.99e-05 n24:1.33e-02
+   D(c*) floor    n8:5.77e-17 n12:5.77e-17 n16:7.41e-15 n20:1.02e-14 n24:1.02e-14
+   ratio E/L     n8:32.38 n12:146.26 n16:119.45 n20:22.22 n24:4.44
+== cubic clustering s|s|^2, m=36 (M=703, weights 4.4e-82..4.7e-01)
+   BJ loss L(n)   n8:8.88e-16 n12:9.48e-14 n16:3.95e-11 n20:7.46e-09 n24:2.44e-06
+   estimate E(n)  n8:4.33e-15 n12:1.21e-12 n16:4.16e-10 n20:9.56e-08 n24:1.46e-05
+   D(c*) floor    n8:8.60e-17 n12:9.66e-17 n16:9.66e-17 n20:6.84e-15 n24:8.60e-15
+   ratio E/L     n8:4.87 n12:12.78 n16:10.51 n20:12.82 n24:6.00
+== Chebyshev-Lobatto, m=30 (M=496, weights 5.4e-04..2.2e-03)
+   BJ loss L(n)   n8:2.48e-15 n12:2.92e-15 n16:2.92e-15 n20:3.05e-15 n24:3.21e-15
+   estimate E(n)  n8:1.21e-16 n12:1.91e-16 n16:5.93e-16 n20:1.22e-15 n24:1.22e-15
+   D(c*) floor    n8:2.20e-17 n12:2.20e-17 n16:5.93e-16 n20:1.22e-15 n24:1.22e-15
+   ratio E/L     n8:0.05 n12:0.07 n16:0.20 n20:0.40 n24:0.38
+   verdict on quadratic clustering s|s|, m=30: survives
+   verdict on quartic clustering s|s|^3, m=30: killed
+   verdict on cubic clustering s|s|^2, m=36: inconclusive
+   verdict on Chebyshev-Lobatto, m=30: survives
+# overall (worst over sets): killed

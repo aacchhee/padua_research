@@ -1,0 +1,127 @@
+# R02 verdicts (u = 2^-53)
+
+## IDEA-207: per selection, fullcgs2 runs; kill: thetaLB > sqrt(u) or (drift > sqrt(u) with ref < 1e-11) on a non-product set; survive: thetaLB <= 1e3 u sqrt(N) and drift <= 1e3 max(ref, u sqrt(N)) everywhere
+-- selection dev (fullcgs2): max over degrees of (loss, thetaLB, drift [ref]) per benchmark
+   rot0.3    n<= 24: maxL=6.9e-15 max thetaLB=4.4e-07 (first > sqrt u at n=24) drift(nmax)=5.2e-06 [ref 4e-13] KILL
+   rotpi4    n<= 24: maxL=6.9e-15 max thetaLB=2.8e-04 (first > sqrt u at n=20) drift(nmax)=4.1e-03 [ref 4e-13] KILL
+   disk      n<= 24: maxL=6.9e-15 max thetaLB=3.8e-10 (first > sqrt u at n=None) drift(nmax)=7.8e-08 [ref 6e-08] 
+   triangle  n<= 20: maxL=6.9e-15 max thetaLB=7.8e-04 (first > sqrt u at n=16) drift(nmax)=1.0e-02 [ref 1e-14] KILL
+   lshape    n<= 30: maxL=5.3e-15 max thetaLB=8.7e-03 (first > sqrt u at n=24) drift(nmax)=1.3e-01 [ref 1e-01] KILL
+   annulus   n<= 30: maxL=5.3e-15 max thetaLB=1.3e-02 (first > sqrt u at n=24) drift(nmax)=1.8e-01 [ref 2e-04] KILL
+   square    n<= 32: maxL=6.9e-15 max thetaLB=1.2e-13 (first > sqrt u at n=None) drift(nmax)=5.4e-11 [ref 5e-11] 
+   tensor41  n<= 39: maxL=6.9e-15 max thetaLB=8.3e-15 (first > sqrt u at n=None) drift(nmax)=1.0e-14 [ref 2e-16] 
+   cb_cubic  n<= 29: maxL=8.9e-16 max thetaLB=4.9e-14 (first > sqrt u at n=None) drift(nmax)=1.0e+00 [ref 2e+10] 
+   => IDEA-207 for selection dev: KILLED on rot0.3,rotpi4,triangle,lshape,annulus
+-- selection mirror (fullcgs2): max over degrees of (loss, thetaLB, drift [ref]) per benchmark
+   rot0.3    n<= 24: maxL=6.9e-15 max thetaLB=2.2e-09 (first > sqrt u at n=None) drift(nmax)=1.6e-08 [ref 4e-13] KILL
+   rotpi4    n<= 24: maxL=6.9e-15 max thetaLB=1.6e-01 (first > sqrt u at n=16) drift(nmax)=9.4e-01 [ref 4e-13] KILL
+   disk      n<= 24: maxL=6.9e-15 max thetaLB=2.4e-12 (first > sqrt u at n=None) drift(nmax)=7.8e-08 [ref 6e-08] 
+   triangle  n<= 20: maxL=6.9e-15 max thetaLB=2.8e-08 (first > sqrt u at n=20) drift(nmax)=1.7e-07 [ref 1e-14] KILL
+   lshape    n<= 30: maxL=5.3e-15 max thetaLB=1.3e-01 (first > sqrt u at n=20) drift(nmax)=8.1e-01 [ref 1e-01] KILL
+   annulus   n<= 30: maxL=5.3e-15 max thetaLB=1.8e-09 (first > sqrt u at n=None) drift(nmax)=1.7e-04 [ref 2e-04] 
+   square    n<= 32: maxL=6.9e-15 max thetaLB=3.8e-13 (first > sqrt u at n=None) drift(nmax)=5.4e-11 [ref 5e-11] 
+   tensor41  n<= 39: maxL=6.9e-15 max thetaLB=8.3e-15 (first > sqrt u at n=None) drift(nmax)=1.0e-14 [ref 2e-16] 
+   cb_cubic  n<= 29: maxL=1.1e-15 max thetaLB=3.6e-12 (first > sqrt u at n=None) drift(nmax)=1.0e+00 [ref 2e+10] 
+   => IDEA-207 for selection mirror: KILLED on rot0.3,rotpi4,triangle,lshape
+-- selection alt (fullcgs2): max over degrees of (loss, thetaLB, drift [ref]) per benchmark
+   rot0.3    n<= 24: maxL=6.9e-15 max thetaLB=3.4e-10 (first > sqrt u at n=None) drift(nmax)=2.1e-09 [ref 4e-13] 
+   rotpi4    n<= 24: maxL=6.9e-15 max thetaLB=1.5e-09 (first > sqrt u at n=None) drift(nmax)=2.1e-08 [ref 4e-13] KILL
+   disk      n<= 24: maxL=6.9e-15 max thetaLB=1.2e-12 (first > sqrt u at n=None) drift(nmax)=7.8e-08 [ref 6e-08] 
+   triangle  n<= 20: maxL=6.9e-15 max thetaLB=5.5e-09 (first > sqrt u at n=None) drift(nmax)=7.6e-08 [ref 1e-14] KILL
+   lshape    n<= 30: maxL=5.3e-15 max thetaLB=1.1e-05 (first > sqrt u at n=28) drift(nmax)=1.2e-01 [ref 1e-01] KILL
+   annulus   n<= 30: maxL=5.3e-15 max thetaLB=1.3e-07 (first > sqrt u at n=28) drift(nmax)=1.7e-04 [ref 2e-04] KILL
+   square    n<= 32: maxL=6.9e-15 max thetaLB=3.9e-14 (first > sqrt u at n=None) drift(nmax)=5.4e-11 [ref 5e-11] 
+   tensor41  n<= 39: maxL=6.9e-15 max thetaLB=8.3e-15 (first > sqrt u at n=None) drift(nmax)=6.6e-14 [ref 2e-16] 
+   cb_cubic  n<= 29: maxL=9.4e-16 max thetaLB=5.0e-12 (first > sqrt u at n=None) drift(nmax)=1.0e+00 [ref 2e+10] 
+   => IDEA-207 for selection alt: KILLED on rotpi4,triangle,lshape,annulus
+-- selection adapt (fullcgs2): max over degrees of (loss, thetaLB, drift [ref]) per benchmark
+   rot0.3    n<= 24: maxL=6.9e-15 max thetaLB=1.6e-13 (first > sqrt u at n=None) drift(nmax)=1.2e-12 [ref 4e-13] 
+   rotpi4    n<= 24: maxL=6.9e-15 max thetaLB=2.1e-07 (first > sqrt u at n=22) drift(nmax)=1.9e-06 [ref 4e-13] KILL
+   disk      n<= 24: maxL=6.9e-15 max thetaLB=1.5e-12 (first > sqrt u at n=None) drift(nmax)=7.8e-08 [ref 6e-08] 
+   triangle  n<= 20: maxL=6.9e-15 max thetaLB=6.4e-11 (first > sqrt u at n=None) drift(nmax)=9.5e-10 [ref 1e-14] 
+   lshape    n<= 30: maxL=5.3e-15 max thetaLB=8.7e-13 (first > sqrt u at n=None) drift(nmax)=1.2e-01 [ref 1e-01] 
+   annulus   n<= 30: maxL=5.3e-15 max thetaLB=2.2e-10 (first > sqrt u at n=None) drift(nmax)=1.7e-04 [ref 2e-04] 
+   square    n<= 32: maxL=6.9e-15 max thetaLB=4.5e-14 (first > sqrt u at n=None) drift(nmax)=5.4e-11 [ref 5e-11] 
+   tensor41  n<= 39: maxL=6.9e-15 max thetaLB=1.6e-11 (first > sqrt u at n=None) drift(nmax)=7.2e-11 [ref 2e-16] 
+   cb_cubic  n<= 29: maxL=1.1e-15 max thetaLB=6.2e-16 (first > sqrt u at n=None) drift(nmax)=1.0e+00 [ref 2e+10] 
+   => IDEA-207 for selection adapt: KILLED on rotpi4
+-- selection dev (w2): max over degrees of (loss, thetaLB, drift [ref]) per benchmark
+   rot0.3    n<= 24: maxL=8.6e-07 max thetaLB=4.1e-07 (first > sqrt u at n=24) drift(nmax)=4.8e-06 [ref 4e-13] KILL
+   rotpi4    n<= 24: maxL=2.5e-04 max thetaLB=3.8e-04 (first > sqrt u at n=20) drift(nmax)=5.5e-03 [ref 4e-13] KILL
+   disk      n<= 24: maxL=6.1e-10 max thetaLB=5.2e-10 (first > sqrt u at n=None) drift(nmax)=7.8e-08 [ref 6e-08] 
+   triangle  n<= 20: maxL=7.4e-05 max thetaLB=8.7e-04 (first > sqrt u at n=16) drift(nmax)=1.1e-02 [ref 1e-14] KILL
+   lshape    n<= 30: maxL=6.9e-03 max thetaLB=8.7e-03 (first > sqrt u at n=24) drift(nmax)=1.3e-01 [ref 1e-01] KILL
+   annulus   n<= 30: maxL=5.0e-03 max thetaLB=1.5e-02 (first > sqrt u at n=24) drift(nmax)=2.0e-01 [ref 2e-04] KILL
+   square    n<= 32: maxL=4.5e-13 max thetaLB=1.9e-13 (first > sqrt u at n=None) drift(nmax)=5.4e-11 [ref 5e-11] 
+   tensor41  n<= 39: maxL=6.9e-15 max thetaLB=8.3e-15 (first > sqrt u at n=None) drift(nmax)=9.6e-15 [ref 2e-16] 
+   cb_cubic  n<= 29: maxL=8.4e-04 max thetaLB=2.0e-13 (first > sqrt u at n=None) drift(nmax)=1.0e+00 [ref 2e+10] 
+-- selection mirror (w2): max over degrees of (loss, thetaLB, drift [ref]) per benchmark
+   rot0.3    n<= 24: maxL=7.3e-09 max thetaLB=3.2e-09 (first > sqrt u at n=None) drift(nmax)=2.0e-08 [ref 4e-13] KILL
+   rotpi4    n<= 24: maxL=2.7e-01 max thetaLB=1.5e-01 (first > sqrt u at n=18) drift(nmax)=9.3e-01 [ref 4e-13] KILL
+   disk      n<= 24: maxL=6.7e-12 max thetaLB=2.4e-12 (first > sqrt u at n=None) drift(nmax)=7.8e-08 [ref 6e-08] 
+   triangle  n<= 20: maxL=1.3e-07 max thetaLB=2.8e-08 (first > sqrt u at n=20) drift(nmax)=1.7e-07 [ref 1e-14] KILL
+   lshape    n<= 30: maxL=1.3e-01 max thetaLB=1.4e-01 (first > sqrt u at n=20) drift(nmax)=8.5e-01 [ref 1e-01] KILL
+   annulus   n<= 30: maxL=3.4e-09 max thetaLB=2.4e-09 (first > sqrt u at n=None) drift(nmax)=1.7e-04 [ref 2e-04] 
+   square    n<= 32: maxL=9.2e-13 max thetaLB=3.9e-13 (first > sqrt u at n=None) drift(nmax)=5.4e-11 [ref 5e-11] 
+   tensor41  n<= 39: maxL=6.9e-15 max thetaLB=8.3e-15 (first > sqrt u at n=None) drift(nmax)=9.1e-15 [ref 2e-16] 
+   cb_cubic  n<= 29: maxL=1.6e-04 max thetaLB=8.4e-13 (first > sqrt u at n=None) drift(nmax)=1.0e+00 [ref 2e+10] 
+-- selection alt (w2): max over degrees of (loss, thetaLB, drift [ref]) per benchmark
+   rot0.3    n<= 24: maxL=4.1e-10 max thetaLB=1.1e-09 (first > sqrt u at n=None) drift(nmax)=7.2e-09 [ref 4e-13] 
+   rotpi4    n<= 24: maxL=2.2e-09 max thetaLB=1.2e-09 (first > sqrt u at n=None) drift(nmax)=1.5e-08 [ref 4e-13] KILL
+   disk      n<= 24: maxL=2.1e-12 max thetaLB=1.3e-12 (first > sqrt u at n=None) drift(nmax)=7.8e-08 [ref 6e-08] 
+   triangle  n<= 20: maxL=1.4e-09 max thetaLB=1.0e-08 (first > sqrt u at n=None) drift(nmax)=1.4e-07 [ref 1e-14] KILL
+   lshape    n<= 30: maxL=5.8e-06 max thetaLB=9.6e-06 (first > sqrt u at n=28) drift(nmax)=1.2e-01 [ref 1e-01] KILL
+   annulus   n<= 30: maxL=5.9e-08 max thetaLB=1.5e-07 (first > sqrt u at n=28) drift(nmax)=1.7e-04 [ref 2e-04] KILL
+   square    n<= 32: maxL=6.9e-13 max thetaLB=2.5e-14 (first > sqrt u at n=None) drift(nmax)=5.4e-11 [ref 5e-11] 
+   tensor41  n<= 39: maxL=6.9e-15 max thetaLB=8.3e-15 (first > sqrt u at n=None) drift(nmax)=4.9e-14 [ref 2e-16] 
+   cb_cubic  n<= 29: maxL=7.0e-05 max thetaLB=2.4e-12 (first > sqrt u at n=None) drift(nmax)=1.0e+00 [ref 2e+10] 
+-- selection adapt (w2): max over degrees of (loss, thetaLB, drift [ref]) per benchmark
+   rot0.3    n<= 24: maxL=3.9e-13 max thetaLB=1.3e-13 (first > sqrt u at n=None) drift(nmax)=1.7e-12 [ref 4e-13] 
+   rotpi4    n<= 24: maxL=2.9e-07 max thetaLB=2.3e-07 (first > sqrt u at n=22) drift(nmax)=2.0e-06 [ref 4e-13] KILL
+   disk      n<= 24: maxL=7.9e-12 max thetaLB=1.9e-12 (first > sqrt u at n=None) drift(nmax)=7.8e-08 [ref 6e-08] 
+   triangle  n<= 20: maxL=1.6e-11 max thetaLB=2.9e-11 (first > sqrt u at n=None) drift(nmax)=4.3e-10 [ref 1e-14] 
+   lshape    n<= 30: maxL=1.5e-12 max thetaLB=9.9e-13 (first > sqrt u at n=None) drift(nmax)=1.2e-01 [ref 1e-01] 
+   annulus   n<= 30: maxL=1.2e-10 max thetaLB=1.6e-10 (first > sqrt u at n=None) drift(nmax)=1.7e-04 [ref 2e-04] 
+   square    n<= 32: maxL=1.5e-12 max thetaLB=2.9e-14 (first > sqrt u at n=None) drift(nmax)=5.4e-11 [ref 5e-11] 
+   tensor41  n<= 39: maxL=6.6e-11 max thetaLB=3.4e-11 (first > sqrt u at n=None) drift(nmax)=1.4e-10 [ref 2e-16] 
+   cb_cubic  n<= 29: maxL=7.4e-04 max thetaLB=6.2e-16 (first > sqrt u at n=None) drift(nmax)=1.0e+00 [ref 2e+10] 
+-- selection tworel2 (tworel): max over degrees of (loss, thetaLB, drift [ref]) per benchmark
+   rot0.3    n<= 24: maxL=1.8e-14 max thetaLB=1.1e-15 (first > sqrt u at n=None) drift(nmax)=6.1e-13 [ref 4e-13] 
+   rotpi4    n<= 24: maxL=7.1e-15 max thetaLB=1.2e-15 (first > sqrt u at n=None) drift(nmax)=6.2e-13 [ref 4e-13] 
+   disk      n<= 24: maxL=6.9e-15 max thetaLB=1.2e-15 (first > sqrt u at n=None) drift(nmax)=7.8e-08 [ref 6e-08] 
+   triangle  n<= 20: maxL=1.3e-12 max thetaLB=1.1e-13 (first > sqrt u at n=None) drift(nmax)=3.7e-12 [ref 1e-14] 
+   lshape    n<= 30: maxL=5.7e-13 max thetaLB=4.6e-13 (first > sqrt u at n=None) drift(nmax)=1.2e-01 [ref 1e-01] 
+   annulus   n<= 30: maxL=5.3e-15 max thetaLB=1.7e-15 (first > sqrt u at n=None) drift(nmax)=1.7e-04 [ref 2e-04] 
+   square    n<= 32: maxL=4.2e-13 max thetaLB=4.0e-15 (first > sqrt u at n=None) drift(nmax)=5.4e-11 [ref 5e-11] 
+   tensor41  n<= 39: maxL=1.5e-11 max thetaLB=2.1e-12 (first > sqrt u at n=None) drift(nmax)=4.3e-11 [ref 2e-16] 
+   cb_cubic  n<= 29: maxL=5.3e-01 max thetaLB=1.3e-03 (first > sqrt u at n=8) drift(nmax)=1.0e+00 [ref 2e+10] 
+
+## IDEA-208 PRO-2D (E1D trigger): kill if L(n) > 10 sqrt(u) at some degree, or eF > u^(3/4) at a degree with L <= sqrt(u)
+   square    maxL=4.5e-13 max eF(SO)=1.9e-15 max eH=5.8e-13 max defJ=3.7e-13 reorth cols=  0 (reorth+measure)/full=0.000 total/full=0.187 
+   rot0.3    maxL=4.1e-10 max eF(SO)=1.6e-15 max eH=3.7e-07 max defJ=1.0e-06 reorth cols= 53 (reorth+measure)/full=0.236 total/full=0.477 
+   rotpi4    maxL=5.0e-07 max eF(SO)=1.7e-15 max eH=1.2e-03 max defJ=1.1e-03 reorth cols= 88 (reorth+measure)/full=0.282 total/full=0.523 KILL [24][]
+   disk      maxL=1.9e-10 max eF(SO)=1.7e-15 max eH=5.8e-10 max defJ=1.0e-09 reorth cols=  8 (reorth+measure)/full=0.038 total/full=0.279 
+   triangle  maxL=2.4e-06 max eF(SO)=2.2e-15 max eH=6.6e-04 max defJ=1.7e-03 reorth cols= 63 (reorth+measure)/full=0.323 total/full=0.604 KILL [19, 20][]
+   lshape    maxL=6.5e-06 max eF(SO)=1.6e-15 max eH=4.6e-03 max defJ=1.7e-02 reorth cols=140 (reorth+measure)/full=0.272 total/full=0.470 KILL [27, 28, 29, 30][]
+   annulus   maxL=1.3e-04 max eF(SO)=1.6e-15 max eH=5.2e-03 max defJ=3.0e-02 reorth cols=148 (reorth+measure)/full=0.326 total/full=0.524 KILL [25, 26, 27, 28, 29, 30][]
+   tensor41  maxL=6.9e-15 max eF(SO)=7.7e-15 max eH=1.9e-14 max defJ=1.7e-14 reorth cols=  0 (reorth+measure)/full=0.000 total/full=0.156 
+   padua48   maxL=3.8e-15 max eF(SO)=4.3e-15 max eH=2.6e-15 max defJ=3.9e-15 reorth cols=  0 (reorth+measure)/full=0.000 total/full=0.132 
+   cb_cheb   maxL=1.9e-15 max eF(SO)=1.6e-15 max eH=1.4e-15 max defJ=2.8e-15 reorth cols=  0 (reorth+measure)/full=0.000 total/full=0.204 
+   cb_equi   maxL=4.9e-14 max eF(SO)=6.7e-16 max eH=2.1e-14 max defJ=1.4e-15 reorth cols=  0 (reorth+measure)/full=0.000 total/full=0.204 
+   cb_cubic  maxL=1.5e-07 max eF(SO)=5.1e-16 max eH=9.1e-08 max defJ=6.2e-14 reorth cols= 88 (reorth+measure)/full=0.098 total/full=0.302 KILL [29][]
+   => KILLED on rotpi4,triangle,lshape,annulus,cb_cubic
+
+## IDEA-209 PRO-2D-J (J-rows measured): kill if L(n) > 10 sqrt(u) at some degree, or eF > u^(3/4) at a degree with L <= sqrt(u)
+   square    maxL=4.5e-13 max eF(SO)=1.9e-15 max eH=5.8e-13 max defJ=3.7e-13 reorth cols=  0 (reorth+measure)/full=0.035 total/full=0.222 
+   rot0.3    maxL=6.8e-10 max eF(SO)=1.6e-15 max eH=3.7e-07 max defJ=1.0e-06 reorth cols= 47 (reorth+measure)/full=0.258 total/full=0.499 
+   rotpi4    maxL=7.6e-09 max eF(SO)=1.7e-15 max eH=1.2e-03 max defJ=1.1e-03 reorth cols= 81 (reorth+measure)/full=0.327 total/full=0.568 
+   disk      maxL=6.1e-10 max eF(SO)=1.7e-15 max eH=3.4e-10 max defJ=1.0e-09 reorth cols=  0 (reorth+measure)/full=0.044 total/full=0.285 
+   triangle  maxL=4.3e-09 max eF(SO)=2.2e-15 max eH=6.6e-04 max defJ=1.7e-03 reorth cols= 73 (reorth+measure)/full=0.424 total/full=0.705 
+   lshape    maxL=1.5e-08 max eF(SO)=1.6e-15 max eH=4.6e-03 max defJ=1.7e-02 reorth cols=128 (reorth+measure)/full=0.352 total/full=0.550 
+   annulus   maxL=9.8e-09 max eF(SO)=1.6e-15 max eH=5.2e-03 max defJ=3.0e-02 reorth cols=142 (reorth+measure)/full=0.370 total/full=0.568 
+   tensor41  maxL=6.9e-15 max eF(SO)=7.7e-15 max eH=1.9e-14 max defJ=1.7e-14 reorth cols=  0 (reorth+measure)/full=0.029 total/full=0.186 
+   padua48   maxL=3.8e-15 max eF(SO)=4.3e-15 max eH=2.6e-15 max defJ=3.9e-15 reorth cols=  0 (reorth+measure)/full=0.025 total/full=0.157 
+   cb_cheb   maxL=1.9e-15 max eF(SO)=1.6e-15 max eH=1.4e-15 max defJ=2.8e-15 reorth cols=  0 (reorth+measure)/full=0.038 total/full=0.242 
+   cb_equi   maxL=4.9e-14 max eF(SO)=6.7e-16 max eH=2.1e-14 max defJ=1.4e-15 reorth cols=  0 (reorth+measure)/full=0.038 total/full=0.242 
+   cb_cubic  maxL=2.0e-07 max eF(SO)=6.7e-16 max eH=3.1e-09 max defJ=4.1e-13 reorth cols= 61 (reorth+measure)/full=0.109 total/full=0.313 KILL [29][]
+   => KILLED on cb_cubic

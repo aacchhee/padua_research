@@ -1,0 +1,71 @@
+{
+  "audited_head": "3a9063b84d14ca0a5998378371e27643fde50a29",
+  "candidate": "5ccfac223f466a9105450365d8c6c3781ff7d922",
+  "files": [
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/audited_manifest.json",
+      "bytes": 16873,
+      "sha256": "831f3e6e1bcf7ac360da7163d4684c24af0e58058e35d5af4e99e5a3f1af68bb"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/check_l5.py",
+      "bytes": 13373,
+      "sha256": "632ef74fae89b5e18124cd84dab6e87c3c9e59c3a5f179ca23fe47492cce0145"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/diagnostics.jsonl",
+      "bytes": 4843,
+      "sha256": "bf4923d64e41d32b5cb10a5222d50d342e3655ed480a1e1d474276db3b196d1f"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/dual.jsonl",
+      "bytes": 5860,
+      "sha256": "7beac82e5a37e7d8d9f00814b3cb0af38a6b3073510a10ce36c3a750f7288776"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/kill-rerun.jsonl",
+      "bytes": 1956,
+      "sha256": "5457b948e2ed1dcc4e6ab43f3b1b9113b8145f689d1ed4910d4a05dc5a78110b"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/random-fit.jsonl",
+      "bytes": 2145,
+      "sha256": "a94650083d2fca2d878000892f63e7c2e53f434235efc8163991bd053ad4a56f"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/random-rerun.jsonl",
+      "bytes": 18424,
+      "sha256": "49339cc43d1ab9b08ddc1cf9b9f695431d2c2e45ed5ba3ffb2664eed09b50e69"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/random-rerun.log",
+      "bytes": 3785,
+      "sha256": "d3f899ece79cfa595b600625c460e2a1a5f44e2c1714d9028d2067c34d35e4d3"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/rules-rerun.jsonl",
+      "bytes": 4980,
+      "sha256": "5078ac7808b054a23461d2ad085a5c06f5a813f2de8fa1896cf5208df32c56cd"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/slopes-reanalysis.txt",
+      "bytes": 12452,
+      "sha256": "aea83efe51cca3d5b2213f4e8e57edd283304a8a18ebe9ae13050c0254242e98"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/small-rerun.log",
+      "bytes": 2663,
+      "sha256": "d00344ad3c0e35ee3c00e981150872eab0c5ced9c6b905368dee2a3bbd3510ba"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/source_manifest.json",
+      "bytes": 7924,
+      "sha256": "c1c0644f4227d6a6a86259a3a1ccc8e3f6ade09706021238f452bc3a49b682f3"
+    }
+  ],
+  "total_bytes": 95278,
+  "retention": "Small necessary audit evidence intended for Git; copied sources and binaries remain ephemeral in /tmp. No cold-storage destination selected or invented.",
+  "commands": "Exact producer commands, seeds and observed results are recorded in ../L5.md and source_manifest.json. check_l5.py setup reconstructs the /tmp workspace from tracked sources.",
+  "checker": "Recompute SHA-256 and byte length for each path; fresh_analysis asserts all 35 size/seed rows are present.",
+  "classification": "All numerical calculations are MEASURED; no computer-assisted proof claimed."
+}

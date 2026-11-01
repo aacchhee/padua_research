@@ -1,0 +1,21 @@
+Padua n=2 D=21 dimS1=3 grid R=8 nth=24; z*=[1.01620907 1.02524413] (r=0.03); mode=resid
+  eps=1e-03 delta=0.0   : status=0 min l1 resid = 2.702e-03  resid/eps = 2.702e+00
+  eps=1e-03 delta=0.001 : status=0 min l1 resid = 1.205e-05  resid/eps = 1.205e-02
+  eps=1e-03 delta=0.003 : status=0 min l1 resid = 0.000e+00  resid/eps = 0.000e+00
+  eps=1e-03 delta=0.01  : status=0 min l1 resid = 0.000e+00  resid/eps = 0.000e+00
+  eps=1e-03 delta=0.02  : status=0 min l1 resid = 0.000e+00  resid/eps = 0.000e+00
+  eps=1e-03 delta=0.04  : status=0 min l1 resid = 0.000e+00  resid/eps = 0.000e+00
+  eps=1e-03 delta=0.06  : status=0 min l1 resid = 0.000e+00  resid/eps = 0.000e+00
+  eps=1e-03 delta=0.08  : status=0 min l1 resid = 0.000e+00  resid/eps = 0.000e+00
+  eps=1e-03 delta=0.1   : status=0 min l1 resid = 0.000e+00  resid/eps = 0.000e+00
+  eps=1e-03 delta=0.2   : status=0 min l1 resid = 0.000e+00  resid/eps = 0.000e+00
+  eps=1e-05 delta=0.0   : status=0 min l1 resid = 2.702e-05  resid/eps = 2.702e+00
+  eps=1e-05 delta=0.001 : status=0 min l1 resid = 0.000e+00  resid/eps = 0.000e+00
+  eps=1e-05 delta=0.003 : status=0 min l1 resid = 0.000e+00  resid/eps = 0.000e+00
+  eps=1e-05 delta=0.01  : status=0 min l1 resid = 0.000e+00  resid/eps = 0.000e+00
+  eps=1e-05 delta=0.02  : status=0 min l1 resid = 0.000e+00  resid/eps = 0.000e+00
+  eps=1e-05 delta=0.04  : status=0 min l1 resid = 0.000e+00  resid/eps = 0.000e+00
+  eps=1e-05 delta=0.06  : status=0 min l1 resid = 0.000e+00  resid/eps = 0.000e+00
+  eps=1e-05 delta=0.08  : status=0 min l1 resid = 0.000e+00  resid/eps = 0.000e+00
+  eps=1e-05 delta=0.1   : status=0 min l1 resid = 0.000e+00  resid/eps = 0.000e+00
+  eps=1e-05 delta=0.2   : status=0 min l1 resid = 0.000e+00  resid/eps = 0.000e+00

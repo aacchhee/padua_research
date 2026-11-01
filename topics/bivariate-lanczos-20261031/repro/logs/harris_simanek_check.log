@@ -1,0 +1,15 @@
+random   m=6 k=0 N=28: alternation err 1.1e-15; sum lam=1.000000000000000; max|Gram-I|=5.4e-16; exactness(deg<=2m-1) err 1.5e-16; Hx maxnnz/col=3 (nnz 76), Hy maxnnz/col=3 (nnz 76); max| |Q_QR|-|Q_explicit| |=3.5e-14
+random   m=6 k=1 N=28: alternation err 1.1e-15; sum lam=1.000000000000000; max|Gram-I|=6.4e-16; exactness(deg<=2m-1) err 1.1e-16; Hx maxnnz/col=3 (nnz 76), Hy maxnnz/col=3 (nnz 76); max| |Q_QR|-|Q_explicit| |=5.1e-14
+warped   m=6 k=0 N=28: alternation err 8.9e-16; sum lam=1.000000000000000; max|Gram-I|=4.4e-16; exactness(deg<=2m-1) err 2.2e-16; Hx maxnnz/col=3 (nnz 76), Hy maxnnz/col=2 (nnz 49); max| |Q_QR|-|Q_explicit| |=5.6e-16
+Padua    m=6 k=0 N=28: alternation err 6.7e-16; sum lam=1.000000000000000; max|Gram-I|=5.6e-16; exactness(deg<=2m-1) err 1.4e-16; Hx maxnnz/col=2 (nnz 48), Hy maxnnz/col=2 (nnz 49); max| |Q_QR|-|Q_explicit| |=3.1e-16
+          Padua cubature weights reproduced: max|lam - w_Padua| = 6.2e-17
+random   m=15 k=0 N=136: alternation err 1.5e-11; sum lam=1.000000000000000; max|Gram-I|=4.7e-15; exactness(deg<=2m-1) err 7.8e-16; Hx maxnnz/col=3 (nnz 390), Hy maxnnz/col=3 (nnz 392); max| |Q_QR|-|Q_explicit| |=5.8e-10
+random   m=15 k=1 N=136: alternation err 1.5e-11; sum lam=1.000000000000000; max|Gram-I|=4.7e-15; exactness(deg<=2m-1) err 7.8e-16; Hx maxnnz/col=3 (nnz 390), Hy maxnnz/col=3 (nnz 392); max| |Q_QR|-|Q_explicit| |=6.0e-10
+warped   m=15 k=0 N=136: alternation err 2.0e-13; sum lam=1.000000000000000; max|Gram-I|=1.1e-15; exactness(deg<=2m-1) err 2.7e-16; Hx maxnnz/col=3 (nnz 390), Hy maxnnz/col=2 (nnz 256); max| |Q_QR|-|Q_explicit| |=1.5e-14
+Padua    m=15 k=0 N=136: alternation err 1.6e-15; sum lam=1.000000000000000; max|Gram-I|=1.4e-15; exactness(deg<=2m-1) err 1.1e-15; Hx maxnnz/col=2 (nnz 255), Hy maxnnz/col=2 (nnz 256); max| |Q_QR|-|Q_explicit| |=4.4e-16
+          Padua cubature weights reproduced: max|lam - w_Padua| = 6.6e-17
+random   m=30 k=0 N=496: alternation err 3.6e-12; sum lam=1.000000000000000; max|Gram-I|=6.4e-15; exactness(deg<=2m-1) err 2.2e-15; Hx maxnnz/col=3 (nnz 1456), Hy maxnnz/col=3 (nnz 1456); max| |Q_QR|-|Q_explicit| |=6.7e-05
+random   m=30 k=1 N=496: alternation err 3.6e-12; sum lam=1.000000000000000; max|Gram-I|=5.9e-15; exactness(deg<=2m-1) err 2.2e-15; Hx maxnnz/col=3 (nnz 1456), Hy maxnnz/col=3 (nnz 1456); max| |Q_QR|-|Q_explicit| |=8.0e-05
+warped   m=30 k=0 N=496: alternation err 1.0e-10; sum lam=1.000000000000000; max|Gram-I|=1.3e-15; exactness(deg<=2m-1) err 1.4e-15; Hx maxnnz/col=3 (nnz 1456), Hy maxnnz/col=2 (nnz 961); max| |Q_QR|-|Q_explicit| |=5.1e-10
+Padua    m=30 k=0 N=496: alternation err 6.4e-15; sum lam=1.000000000000000; max|Gram-I|=2.2e-15; exactness(deg<=2m-1) err 2.7e-15; Hx maxnnz/col=2 (nnz 960), Hy maxnnz/col=2 (nnz 961); max| |Q_QR|-|Q_explicit| |=6.2e-16
+          Padua cubature weights reproduced: max|lam - w_Padua| = 4.2e-17

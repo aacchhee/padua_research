@@ -1,0 +1,31 @@
+HS checkerboards e=0, nmax=6, seed=7
+  cheb   n=1: dimS1=1 (exp 1) kerHess=0 tD=8.574e-02 lP=-1.351e-13 -> (H) holds
+  cheb   n=2: dimS1=3 (exp 3) kerHess=0 tD=1.520e-02 lP=-3.650e-12 -> (H) holds
+  cheb   n=3: dimS1=6 (exp 6) kerHess=0 tD=-3.724e-03 lP=2.871e+00 -> robust failure
+  cheb   n=4: dimS1=10 (exp 10) kerHess=0 tD=-1.277e-03 lP=3.294e+00 -> robust failure
+  cheb   n=5: dimS1=15 (exp 15) kerHess=0 tD=-1.786e-03 lP=1.218e+01 -> robust failure
+  cheb   n=6: dimS1=21 (exp 21) kerHess=0 tD=-6.876e-04 lP=2.040e+01 -> robust failure
+  equi   n=1: dimS1=1 (exp 1) kerHess=0 tD=8.574e-02 lP=-1.351e-13 -> (H) holds
+  equi   n=2: dimS1=3 (exp 3) kerHess=0 tD=2.005e-02 lP=-1.609e-13 -> (H) holds
+  equi   n=3: dimS1=6 (exp 6) kerHess=0 tD=1.828e-03 lP=-2.174e-13 -> (H) holds
+  equi   n=4: dimS1=10 (exp 10) kerHess=0 tD=1.326e-04 lP=-1.585e-13 -> (H) holds
+  equi   n=5: dimS1=15 (exp 15) kerHess=0 tD=4.847e-06 lP=-4.835e-14 -> (H) holds
+  equi   n=6: dimS1=21 (exp 21) kerHess=0 tD=4.611e-08 lP=-1.591e-13 -> unresolved
+  graded n=1: dimS1=1 (exp 1) kerHess=0 tD=9.396e-02 lP=-8.480e-11 -> (H) holds
+  graded n=2: dimS1=3 (exp 3) kerHess=0 tD=3.934e-02 lP=-4.666e-12 -> (H) holds
+  graded n=3: dimS1=6 (exp 6) kerHess=0 tD=4.768e-03 lP=-6.359e-12 -> (H) holds
+  graded n=4: dimS1=10 (exp 10) kerHess=0 tD=4.271e-06 lP=-1.157e-11 -> (H) holds
+  graded n=5: dimS1=15 (exp 15) kerHess=0 tD=-8.158e-11 lP=-1.098e-11 -> unresolved
+  graded n=6: dimS1=21 (exp 21) kerHess=0 tD=-9.082e-11 lP=-1.865e-12 -> unresolved
+  rand   n=1: dimS1=1 (exp 1) kerHess=0 tD=8.421e-02 lP=-9.474e-11 -> (H) holds
+  rand   n=2: dimS1=3 (exp 3) kerHess=0 tD=3.768e-02 lP=-8.573e-12 -> (H) holds
+  rand   n=3: dimS1=6 (exp 6) kerHess=0 tD=6.959e-04 lP=-6.455e-12 -> (H) holds
+  rand   n=4: dimS1=10 (exp 10) kerHess=0 tD=3.412e-04 lP=-5.543e-13 -> (H) holds
+  rand   n=5: dimS1=15 (exp 15) kerHess=0 tD=-3.745e-06 lP=3.605e-05 -> robust failure
+  rand   n=6: dimS1=21 (exp 21) kerHess=0 tD=-2.629e-08 lP=2.079e-06 -> robust failure
+  rand   n=1: dimS1=1 (exp 1) kerHess=0 tD=1.104e-01 lP=-3.602e-11 -> (H) holds
+  rand   n=2: dimS1=3 (exp 3) kerHess=0 tD=1.838e-02 lP=-4.236e-12 -> (H) holds
+  rand   n=3: dimS1=6 (exp 6) kerHess=0 tD=-1.392e-03 lP=1.742e-01 -> robust failure
+  rand   n=4: dimS1=10 (exp 10) kerHess=0 tD=1.366e-04 lP=-3.290e-10 -> (H) holds
+  rand   n=5: dimS1=15 (exp 15) kerHess=0 tD=-5.953e-05 lP=1.091e-02 -> robust failure
+  rand   n=6: dimS1=21 (exp 21) kerHess=0 tD=-1.522e-05 lP=1.212e-04 -> robust failure

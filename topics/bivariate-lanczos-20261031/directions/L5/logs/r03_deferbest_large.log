@@ -1,0 +1,1 @@
+n=50 cub rand1  W=8 scheme:1.5e-13 deferbest:2.7e-13 min-of-min-pivots=1.1e-02 (286.2s)

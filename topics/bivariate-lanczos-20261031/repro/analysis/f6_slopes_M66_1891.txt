@@ -1,0 +1,41 @@
+f6_givens_vs_hl_defici Padua n=10 N=M=66 given {'givens-scheme': 3.3e-15, 'givens-largest': 3.5e-15, 'hl': 8.2e-16, 'bj': 5e-15, 'cgs2': 5.2e-16, 'hh': 8.3e-16}
+f6_givens_vs_hl_defici Padua n=10 N=M=66 random {'givens-scheme': 6.4e-15, 'givens-largest': 5.5e-15, 'hl': 8.7e-16, 'bj': 4.7e-15, 'cgs2': 5.1e-16, 'hh': 8.7e-16}
+f6_givens_vs_hl_defici Padua n=10 N=M=66 random {'givens-scheme': 5.4e-15, 'givens-largest': 4.4e-15, 'hl': 7.8e-16, 'bj': 5.3e-15, 'cgs2': 4.9e-16, 'hh': 8.2e-16}
+f6_givens_vs_hl_defici Padua n=10 N=M=66 sortx {'givens-scheme': 4.5e-15, 'givens-largest': 4.4e-15, 'hl': 9.1e-16, 'bj': 4.2e-15, 'cgs2': 5.1e-16, 'hh': 8.5e-16}
+f6_givens_vs_hl_defici Padua n=20 N=M=231 given {'givens-scheme': 1e-14, 'givens-largest': 1.1e-14, 'hl': 2.6e-15, 'bj': 6e-14, 'cgs2': 1e-15, 'hh': 1.4e-15}
+f6_givens_vs_hl_defici Padua n=20 N=M=231 random {'givens-scheme': 2.2e-14, 'givens-largest': 8.9e-14, 'hl': 2.4e-15, 'bj': 1.9e-14, 'cgs2': 1e-15, 'hh': 1.4e-15}
+f6_givens_vs_hl_defici Padua n=20 N=M=231 random {'givens-scheme': 1.6e-14, 'givens-largest': 9.2e-14, 'hl': 2.4e-15, 'bj': 1.4e-14, 'cgs2': 1e-15, 'hh': 1.4e-15}
+f6_givens_vs_hl_defici Padua n=20 N=M=231 sortx {'givens-scheme': 1.1e-14, 'givens-largest': 1.2e-14, 'hl': 2.4e-15, 'bj': 5.7e-14, 'cgs2': 1e-15, 'hh': 1.4e-15}
+f6_givens_vs_hl_defici Padua n=30 N=M=496 given {'givens-scheme': 2.3e-14, 'givens-largest': 2e-09, 'hl': 4.2e-15, 'bj': 4.6e-14, 'cgs2': 1.5e-15, 'hh': 1.8e-15}
+f6_givens_vs_hl_defici Padua n=30 N=M=496 random {'givens-scheme': 6.5e-14, 'givens-largest': 2.1e-12, 'hl': 4e-15, 'bj': 1.4e-14, 'cgs2': 1.5e-15, 'hh': 1.8e-15}
+f6_givens_vs_hl_defici Padua n=30 N=M=496 random {'givens-scheme': 4.3e-14, 'givens-largest': 4e-12, 'hl': 4e-15, 'bj': 1.4e-14, 'cgs2': 1.5e-15, 'hh': 1.8e-15}
+f6_givens_vs_hl_defici Padua n=30 N=M=496 sortx {'givens-scheme': 2.4e-14, 'givens-largest': 6.6e-08, 'hl': 4.2e-15, 'bj': 4.3e-14, 'cgs2': 1.5e-15, 'hh': 1.8e-15}
+f6_givens_vs_hl_defici random M=105 n=6 N=28 given {'givens-scheme': 2e-15, 'givens-largest': 2.2e-15, 'hl': 4.8e-16, 'bj': 1.3e-15, 'cgs2': 4e-16, 'hh': 7.4e-16}
+f6_givens_vs_hl_defici random M=105 n=6 N=28 random {'givens-scheme': 2.3e-15, 'givens-largest': 2e-15, 'hl': 4.8e-16, 'bj': 9e-16, 'cgs2': 4e-16, 'hh': 6.6e-16}
+f6_givens_vs_hl_defici random M=105 n=6 N=28 random {'givens-scheme': 3.1e-15, 'givens-largest': 2.8e-15, 'hl': 5.2e-16, 'bj': 1.1e-15, 'cgs2': 4e-16, 'hh': 7.4e-16}
+f6_givens_vs_hl_defici random M=300 n=12 N=91 given {'givens-scheme': 1.5e-14, 'givens-largest': 9.7e-15, 'hl': 5.2e-15, 'bj': 1.3e-14, 'cgs2': 1.4e-15, 'hh': 8.1e-15}
+f6_givens_vs_hl_defici random M=300 n=12 N=91 random {'givens-scheme': 2e-14, 'givens-largest': 6.4e-15, 'hl': 2.8e-15, 'bj': 1.3e-14, 'cgs2': 1.3e-15, 'hh': 6.8e-15}
+f6_givens_vs_hl_defici random M=300 n=12 N=91 random {'givens-scheme': 1.4e-14, 'givens-largest': 1.1e-14, 'hl': 3e-15, 'bj': 2.8e-14, 'cgs2': 1.3e-15, 'hh': 6.4e-15}
+f6_givens_vs_hl_defici random M=496 n=20 N=231 given {'givens-scheme': 7.8e-14, 'givens-largest': 3.7e-14, 'hl': 3.8e-14, 'bj': 1.1e-13, 'cgs2': 3.6e-15, 'hh': 2.8e-14}
+f6_givens_vs_hl_defici random M=496 n=20 N=231 random {'givens-scheme': 9.6e-14, 'givens-largest': 4.3e-14, 'hl': 4.3e-14, 'bj': 2.9e-13, 'cgs2': 3.4e-15, 'hh': 2.8e-14}
+f6_givens_vs_hl_defici random M=496 n=20 N=231 random {'givens-scheme': 5.9e-14, 'givens-largest': 3.8e-14, 'hl': 3.8e-14, 'bj': 1.5e-13, 'cgs2': 3.4e-15, 'hh': 2.8e-14}
+f6_run_padua_large_40. Padua n=40 N=M=861 given {'givens-scheme': 3.8e-14, 'givens-largest': 6.5e-05, 'hl': 6e-15, 'bj': 3.7e-14, 'cgs2': 2.1e-15, 'hh': 2.3e-15}
+f6_run_padua_large_40. Padua n=40 N=M=861 random {'givens-scheme': 1.6e-13, 'givens-largest': 6.7e-11, 'hl': 5.8e-15, 'bj': 2e-14, 'cgs2': 2e-15, 'hh': 2.3e-15}
+f6_run_padua_large_50. Padua n=50 N=M=1326 given {'givens-scheme': 5.5e-14, 'givens-largest': 3.9e-05, 'hl': 8.4e-15, 'bj': 3.5e-14, 'cgs2': 2.5e-15, 'hh': 2.6e-15}
+f6_run_padua_large_50. Padua n=50 N=M=1326 random {'givens-scheme': 1.9e-13, 'givens-largest': 2.8e-08, 'hl': 8.6e-15, 'bj': 1.6e-13, 'cgs2': 2.6e-15, 'hh': 2.6e-15}
+f6_run_padua_large_60. Padua n=60 N=M=1891 given {'givens-scheme': 8.4e-14, 'givens-largest': 0.00025, 'hl': 1.2e-14, 'bj': 1.6e-13, 'cgs2': 3.4e-15, 'hh': 3e-15}
+f6_run_padua_large_60. Padua n=60 N=M=1891 random {'givens-scheme': 2e-12, 'givens-largest': 0.00021, 'hl': 1.1e-14, 'bj': 2.4e-13, 'cgs2': 3.2e-15, 'hh': 2.9e-15}
+slope selection: given
+  givens-scheme   M=[66, 231, 496, 861, 1326, 1891] err=['3.3e-15', '1.0e-14', '2.3e-14', '3.8e-14', '5.5e-14', '8.4e-14'] slope(all pts)=0.96 slope(last two)=1.19
+  givens-largest  M=[66, 231, 496, 861, 1326, 1891] err=['3.5e-15', '1.1e-14', '2.0e-09', '6.5e-05', '3.9e-05', '2.5e-04'] slope(all pts)=8.69 slope(last two)=5.23
+  hl              M=[66, 231, 496, 861, 1326, 1891] err=['8.2e-16', '2.6e-15', '4.2e-15', '6.0e-15', '8.4e-15', '1.2e-14'] slope(all pts)=0.77 slope(last two)=1.00
+  bj              M=[66, 231, 496, 861, 1326, 1891] err=['5.0e-15', '6.0e-14', '4.6e-14', '3.7e-14', '3.5e-14', '1.6e-13'] slope(all pts)=0.72 slope(last two)=4.28
+  cgs2            M=[66, 231, 496, 861, 1326, 1891] err=['5.2e-16', '1.0e-15', '1.5e-15', '2.1e-15', '2.5e-15', '3.4e-15'] slope(all pts)=0.55 slope(last two)=0.87
+  hh              M=[66, 231, 496, 861, 1326, 1891] err=['8.3e-16', '1.4e-15', '1.8e-15', '2.3e-15', '2.6e-15', '3.0e-15'] slope(all pts)=0.38 slope(last two)=0.40
+slope selection: mean-all-orders
+  givens-scheme   M=[66, 231, 496, 861, 1326, 1891] err=['4.8e-15', '1.4e-14', '3.5e-14', '7.8e-14', '1.0e-13', '4.1e-13'] slope(all pts)=1.23 slope(last two)=3.91
+  givens-largest  M=[66, 231, 496, 861, 1326, 1891] err=['4.4e-15', '3.2e-14', '1.8e-10', '6.6e-08', '1.0e-06', '2.3e-04'] slope(all pts)=7.58 slope(last two)=15.19
+  hl              M=[66, 231, 496, 861, 1326, 1891] err=['8.4e-16', '2.4e-15', '4.1e-15', '5.9e-15', '8.5e-15', '1.1e-14'] slope(all pts)=0.76 slope(last two)=0.85
+  bj              M=[66, 231, 496, 861, 1326, 1891] err=['4.8e-15', '3.1e-14', '2.5e-14', '2.7e-14', '7.5e-14', '2.0e-13'] slope(all pts)=0.91 slope(last two)=2.71
+  cgs2            M=[66, 231, 496, 861, 1326, 1891] err=['5.1e-16', '1.0e-15', '1.5e-15', '2.0e-15', '2.5e-15', '3.3e-15'] slope(all pts)=0.55 slope(last two)=0.73
+  hh              M=[66, 231, 496, 861, 1326, 1891] err=['8.4e-16', '1.4e-15', '1.8e-15', '2.3e-15', '2.6e-15', '2.9e-15'] slope(all pts)=0.37 slope(last two)=0.36

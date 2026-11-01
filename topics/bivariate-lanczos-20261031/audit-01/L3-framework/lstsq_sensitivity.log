@@ -1,0 +1,12 @@
+consistency_recheck set=rot03 M=1681 BJ block window CGS (own implementation); nmin=18 nmax=18
+ n    N  loss      asymF     asymF_noX asymJ     comm/u   fwdF_A    fwdJ_A    refAB     |  rho_all  frac_extra rho_noextra  max|eta|/wmin(all,noX)  E
+AUDIT lstsq 1 shape= (6403, 1681) rank= 762 smax= 342.0754019270747 smin= 2.337331526383484e-13 last retained relative= 1.4353344938669532e-12
+AUDIT lstsq 2 shape= (5434, 1681) rank= 763 smax= 342.07540192707506 smin= 1.283881279630156e-13 last retained relative= 1.278599226261462e-12
+AUDIT lstsq 3 shape= (6403, 1681) rank= 739 smax= 342.0754019270657 smin= 4.641187835297686e-15 last retained relative= 1.407888115807578e-06
+AUDIT longdouble-reference fit cutoff= 1e-14 rank= 741 rho= 0.6300941561552819 max_eta_over_w= 3561.79495436328
+AUDIT longdouble-reference fit cutoff= 1e-15 rank= 761 rho= 0.1590213642211558 max_eta_over_w= 14085.35928508885
+AUDIT longdouble-reference fit cutoff= 1e-16 rank= 802 rho= 0.38547458277262514 max_eta_over_w= 44379.57917932661
+AUDIT longdouble-reference fit cutoff= 1e-17 rank= 1681 rho= 0.39844300419057543 max_eta_over_w= 49674.62156680702
+AUDIT lstsq 4 shape= (5434, 1681) rank= 739 smax= 342.0754019270657 smin= 4.187203889809512e-15 last retained relative= 1.407888115804393e-06
+18  190  1.38e-09  3.15e-12  3.15e-12  5.52e-09     4.1  3.29e-11  5.52e-09  5.1e-11   |  0.582    0.033     0.569      2.7e+01, 3.1e+01   6403
+   long-double reference C: |A-C| = 1.6e-12; fwdF_C = 3.38e-11, fwdJ_C = 5.52e-09; |e_C|_2/|e_A|_2 = 1.009; rho_all(C) = 0.652, frac_extra(C) = 0.020, rho_noextra(C) = 0.652, max|eta|/wmin = 4.4e-06

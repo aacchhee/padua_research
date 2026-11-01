@@ -1,0 +1,39 @@
+{
+  "created_utc": "2026-11-01T09:11:41.337846+00:00",
+  "source_head": "a2dd845b8a231e1b00733e1361e2a9ad3bad222f",
+  "rules_head": "a2dd845b8a231e1b00733e1361e2a9ad3bad222f",
+  "retention": "small independent checker, report and execution evidence; no external artifact required",
+  "retrieval": "repository paths below; read JSON evidence directly; rerun final checker from repository root",
+  "artifacts": [
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-04/registries.md",
+      "bytes": 12127,
+      "sha256": "89af19ba569c38bdcb5e94973db7d21583e24df86d27e265ce1edf2a44201905",
+      "generating_command": "written by independent Codex registry audit; no scientific computation claimed"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-04/registries/check_registries.py",
+      "bytes": 7844,
+      "sha256": "48c2eec17a4b67365f4a7c14266d7288bc94525d39f2164656ba3b2c9a58717d",
+      "generating_command": "written by independent Codex registry audit; no scientific computation claimed"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-04/registries/check_integration.json",
+      "bytes": 421,
+      "sha256": "215d644fdb438218055ce868642d2821a48b480843331dfaa10378f8179b98a0",
+      "generating_command": "python topics/bivariate-lanczos-20261031/pr-prep/check_integration.py > topics/bivariate-lanczos-20261031/audit-04/registries/check_integration.json; observed exit 0"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-04/registries/independent-results.json",
+      "bytes": 17300,
+      "sha256": "2b6cbe445d00ba5bd5251dc6e8136fb3d38fdab101bb498dd7a684f81be1f8c4",
+      "generating_command": "python topics/bivariate-lanczos-20261031/audit-04/registries/check_registries.py > topics/bivariate-lanczos-20261031/audit-04/registries/independent-results.json; observed exit 0 (structural checks); isolated generator cases reported separately"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-04/registries/initial-checker-results.json",
+      "bytes": 50915,
+      "sha256": "e2245f6cfbedfdc23702c27d03b9bac7df2a594baeb842345af6759f38dd48dd",
+      "generating_command": "first development invocation of check_registries.py; exit 1 from auditor inventory assumption (178 baseline LIT vs 227 current); subsequently renamed before final rerun; see report"
+    }
+  ]
+}

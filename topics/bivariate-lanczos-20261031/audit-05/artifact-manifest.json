@@ -1,0 +1,30 @@
+{
+  "candidate": "98945cbcf10c4f8eb53f77c996db358392d42391",
+  "baseline": "183d33760e8d6c3ecdeb588576bd65ba312f65fe",
+  "created_utc": "2026-11-01T09:31:30.356545+00:00",
+  "artifacts": [
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-05.md",
+      "bytes": 10918,
+      "sha256": "04dfdea3e01de360187637feaac9b338ec16c5c1947037d8d9bdcf3a764a2825"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-05/check-results.json",
+      "bytes": 5115,
+      "sha256": "c8273fca79c8e4ed90ef94713a68ae8ab3c0d3ece64af3c5e905ce2fbdd9e521"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-05/check_integration_independent.py",
+      "bytes": 13701,
+      "sha256": "a00d9dad46b501bc8925335438e05ed704976d232e3ddc48d0b5918417b58a15"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-05/initial-candidate-check.json",
+      "bytes": 2007,
+      "sha256": "e0536e92dd52e4ac19bbe15b7f4fc3e679717c0469c8cf6cc28da8f7b275e75c"
+    }
+  ],
+  "bytes_excluding_this_manifest": 31741,
+  "retention": "Small audit report, independent checker and compact receipts; no duplicated frozen manifest. Repository aggregate-output gate remains pending.",
+  "manifest_self_hash": "Excluded to avoid self-reference."
+}

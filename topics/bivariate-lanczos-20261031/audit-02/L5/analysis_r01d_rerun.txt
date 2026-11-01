@@ -1,0 +1,117 @@
+PAIRED SLOPE DIFFERENCES slope(A) - slope(B) = OLS slope of the size-mean of log10(err_A/err_B) vs log10 M;
+95% t-interval, df = sizes - 2 (descriptive, size level; NOT a significance test, no causal reading).
+check = slope(A) - slope(B) from the marginal fits (must equal the paired slope to rounding).
+
+== padua_cub / all5: sizes [66, 136, 231, 496, 861, 1326, 2016]
+      G - HL    0.668 [ 0.275,  1.060] (df 5)  check  0.668  interval excludes 0
+      G - CGS2  0.914 [ 0.552,  1.276] (df 5)  check  0.914  interval excludes 0
+      G - HH    1.019 [ 0.622,  1.416] (df 5)  check  1.019  interval excludes 0
+     HL - HH    0.351 [ 0.303,  0.400] (df 5)  check  0.351  interval excludes 0
+   CGS2 - HH    0.105 [ 0.057,  0.153] (df 5)  check  0.105  interval excludes 0
+     HL - CGS2  0.246 [ 0.199,  0.294] (df 5)  check  0.246  interval excludes 0
+
+== padua_cub / structured: sizes [66, 136, 231, 496, 861, 1326, 2016]
+      G - HL    0.137 [ 0.031,  0.242] (df 5)  check  0.137  interval excludes 0
+      G - CGS2  0.435 [ 0.382,  0.488] (df 5)  check  0.435  interval excludes 0
+      G - HH    0.559 [ 0.502,  0.617] (df 5)  check  0.559  interval excludes 0
+     HL - HH    0.423 [ 0.331,  0.515] (df 5)  check  0.423  interval excludes 0
+   CGS2 - HH    0.125 [ 0.083,  0.167] (df 5)  check  0.125  interval excludes 0
+     HL - CGS2  0.298 [ 0.213,  0.383] (df 5)  check  0.298  interval excludes 0
+
+== padua_cub / random: sizes [66, 136, 231, 496, 861, 1326, 2016]
+      G - HL    1.022 [ 0.389,  1.654] (df 5)  check  1.022  interval excludes 0
+      G - CGS2  1.233 [ 0.633,  1.834] (df 5)  check  1.233  interval excludes 0
+      G - HH    1.325 [ 0.676,  1.975] (df 5)  check  1.325  interval excludes 0
+     HL - HH    0.304 [ 0.270,  0.338] (df 5)  check  0.304  interval excludes 0
+   CGS2 - HH    0.092 [ 0.033,  0.150] (df 5)  check  0.092  interval excludes 0
+     HL - CGS2  0.212 [ 0.172,  0.252] (df 5)  check  0.212  interval excludes 0
+
+== padua_rand / all5: sizes [66, 136, 231, 496, 861, 1326, 2016]
+      G - HL    0.756 [ 0.260,  1.251] (df 5)  check  0.756  interval excludes 0
+      G - CGS2  1.015 [ 0.521,  1.509] (df 5)  check  1.015  interval excludes 0
+      G - HH    1.168 [ 0.649,  1.686] (df 5)  check  1.168  interval excludes 0
+     HL - HH    0.412 [ 0.370,  0.454] (df 5)  check  0.412  interval excludes 0
+   CGS2 - HH    0.153 [ 0.120,  0.185] (df 5)  check  0.153  interval excludes 0
+     HL - CGS2  0.259 [ 0.242,  0.277] (df 5)  check  0.259  interval excludes 0
+
+== padua_rand / structured: sizes [66, 136, 231, 496, 861, 1326, 2016]
+      G - HL    0.116 [ 0.066,  0.165] (df 5)  check  0.116  interval excludes 0
+      G - CGS2  0.386 [ 0.358,  0.413] (df 5)  check  0.386  interval excludes 0
+      G - HH    0.543 [ 0.492,  0.593] (df 5)  check  0.543  interval excludes 0
+     HL - HH    0.427 [ 0.389,  0.466] (df 5)  check  0.427  interval excludes 0
+   CGS2 - HH    0.157 [ 0.123,  0.191] (df 5)  check  0.157  interval excludes 0
+     HL - CGS2  0.270 [ 0.244,  0.296] (df 5)  check  0.270  interval excludes 0
+
+== padua_rand / random: sizes [66, 136, 231, 496, 861, 1326, 2016]
+      G - HL    1.183 [ 0.376,  1.990] (df 5)  check  1.183  interval excludes 0
+      G - CGS2  1.435 [ 0.624,  2.245] (df 5)  check  1.435  interval excludes 0
+      G - HH    1.584 [ 0.747,  2.421] (df 5)  check  1.584  interval excludes 0
+     HL - HH    0.402 [ 0.356,  0.448] (df 5)  check  0.402  interval excludes 0
+   CGS2 - HH    0.150 [ 0.115,  0.185] (df 5)  check  0.150  interval excludes 0
+     HL - CGS2  0.252 [ 0.230,  0.274] (df 5)  check  0.252  interval excludes 0
+
+== padua_unif / all5: sizes [66, 231, 496, 861]
+      G - HL    0.312 [-0.006,  0.631] (df 2)  check  0.312  interval contains 0
+      G - CGS2  0.556 [ 0.291,  0.821] (df 2)  check  0.556  interval excludes 0
+      G - HH    0.696 [ 0.390,  1.002] (df 2)  check  0.696  interval excludes 0
+     HL - HH    0.384 [ 0.307,  0.460] (df 2)  check  0.384  interval excludes 0
+   CGS2 - HH    0.140 [ 0.070,  0.210] (df 2)  check  0.140  interval excludes 0
+     HL - CGS2  0.244 [ 0.105,  0.382] (df 2)  check  0.244  interval excludes 0
+
+== padua_unif / structured: sizes [66, 231, 496, 861]
+      G - HL    0.145 [-0.140,  0.429] (df 2)  check  0.145  interval contains 0
+      G - CGS2  0.368 [ 0.192,  0.543] (df 2)  check  0.368  interval excludes 0
+      G - HH    0.521 [ 0.321,  0.721] (df 2)  check  0.521  interval excludes 0
+     HL - HH    0.377 [ 0.282,  0.472] (df 2)  check  0.377  interval excludes 0
+   CGS2 - HH    0.154 [ 0.122,  0.185] (df 2)  check  0.154  interval excludes 0
+     HL - CGS2  0.223 [ 0.096,  0.350] (df 2)  check  0.223  interval excludes 0
+
+== padua_unif / random: sizes [66, 231, 496, 861]
+      G - HL    0.424 [ 0.009,  0.840] (df 2)  check  0.424  interval excludes 0
+      G - CGS2  0.682 [ 0.300,  1.064] (df 2)  check  0.682  interval excludes 0
+      G - HH    0.813 [ 0.381,  1.244] (df 2)  check  0.813  interval excludes 0
+     HL - HH    0.388 [ 0.323,  0.453] (df 2)  check  0.388  interval excludes 0
+   CGS2 - HH    0.131 [ 0.030,  0.231] (df 2)  check  0.131  interval excludes 0
+     HL - CGS2  0.257 [ 0.108,  0.406] (df 2)  check  0.257  interval excludes 0
+
+== random / all: sizes [66, 136, 231, 496, 861, 1326, 2016]
+      G - HL    0.595 [-0.111,  1.301] (df 5)  check  0.595  interval contains 0
+      G - CGS2  1.302 [ 0.620,  1.984] (df 5)  check  1.302  interval excludes 0
+      G - HH    0.758 [ 0.057,  1.459] (df 5)  check  0.758  interval excludes 0
+     HL - HH    0.163 [-0.041,  0.367] (df 5)  check  0.163  interval contains 0
+   CGS2 - HH   -0.544 [-0.724, -0.364] (df 5)  check -0.544  interval excludes 0
+     HL - CGS2  0.707 [ 0.618,  0.795] (df 5)  check  0.707  interval excludes 0
+
+== random_cheb / all: sizes [66, 136, 231, 496, 861, 1326]
+      G - HL    0.568 [ 0.245,  0.891] (df 4)  check  0.568  interval excludes 0
+      G - CGS2  0.900 [ 0.566,  1.235] (df 4)  check  0.900  interval excludes 0
+      G - HH    1.002 [ 0.664,  1.341] (df 4)  check  1.002  interval excludes 0
+     HL - HH    0.434 [ 0.391,  0.477] (df 4)  check  0.434  interval excludes 0
+   CGS2 - HH    0.102 [ 0.065,  0.139] (df 4)  check  0.102  interval excludes 0
+     HL - CGS2  0.332 [ 0.290,  0.375] (df 4)  check  0.332  interval excludes 0
+
+
+LOCKSTEP (r02_dual.jsonl): consecutive-checkpoint decreases of the relative Frobenius difference, double vs long double
+n=15 given  checkpoints 10  local decreases 8  producer slope_in_i -13.082
+n=15 rand1  checkpoints 10  local decreases 4  producer slope_in_i +0.072
+n=15 rand2  checkpoints 10  local decreases 4  producer slope_in_i +0.693
+n=15 gepp   checkpoints 10  local decreases 3  producer slope_in_i +0.702
+      i 46 -> 53: 5.7983643e-15 -> 5.5196705e-15
+      i 90 -> 104: 9.5771966e-15 -> 9.1318508e-15
+      i 119 -> 136: 1.1813048e-14 -> 1.0013970e-14
+n=20 given  checkpoints 10  local decreases 7  producer slope_in_i -9.053
+n=20 rand1  checkpoints 10  local decreases 4  producer slope_in_i -0.629
+n=20 rand2  checkpoints 10  local decreases 4  producer slope_in_i +0.362
+n=20 gepp   checkpoints 10  local decreases 3  producer slope_in_i +0.646
+      i 59 -> 72: 1.5330152e-14 -> 1.4028355e-14
+      i 72 -> 87: 1.4028355e-14 -> 1.3300900e-14
+      i 156 -> 190: 1.9212282e-14 -> 1.7316426e-14
+n=30 given  checkpoints 10  local decreases 7  producer slope_in_i -6.101
+n=30 rand1  checkpoints 10  local decreases 2  producer slope_in_i +0.909
+n=30 rand2  checkpoints 10  local decreases 3  producer slope_in_i +1.036
+n=30 gepp   checkpoints 10  local decreases 1  producer slope_in_i +0.871
+      i 162 -> 214: 2.5685960e-14 -> 2.3156126e-14
+n=40 given  checkpoints 10  local decreases 5  producer slope_in_i -4.888
+n=40 rand1  checkpoints 10  local decreases 4  producer slope_in_i +1.049
+n=40 rand2  checkpoints 10  local decreases 3  producer slope_in_i +1.271
+n=40 gepp   checkpoints 10  local decreases 0  producer slope_in_i +0.834

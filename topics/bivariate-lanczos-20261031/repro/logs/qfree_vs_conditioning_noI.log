@@ -1,0 +1,4 @@
+W=400 N=91: final err 2.5e-13; ref sensitivity to 1e-14 node noise 1.3e-13; min(1-lev)=3.3e-03; sum log10(1/(1-lev))=64.8
+W=150 N=91: final err 8.9e-10; ref sensitivity to 1e-14 node noise 2.2e-13; min(1-lev)=2.7e-06; sum log10(1/(1-lev))=299.1
+W=100 N=91: final err 1.8e-05; ref sensitivity to 1e-14 node noise 1.2e-12; min(1-lev)=9.3e-10; sum log10(1/(1-lev))=988.3
+W=95 N=91: final err 1.2e-03; ref sensitivity to 1e-14 node noise 1.1e-11; min(1-lev)=1.3e-11; sum log10(1/(1-lev))=704.0

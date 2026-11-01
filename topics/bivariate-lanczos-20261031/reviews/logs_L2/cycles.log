@@ -1,0 +1,18 @@
+# rl2_cycles.py: (C) = every unformed A-product of m has creator(m) != A
+  n=2 exhaustive (2 selections): (C) and well defined 2; (C) and cycle 0; not (C) and well defined 0; not (C) and cycle 0
+  n=3 exhaustive (8 selections): (C) and well defined 4; (C) and cycle 0; not (C) and well defined 0; not (C) and cycle 4
+  n=4 exhaustive (64 selections): (C) and well defined 8; (C) and cycle 0; not (C) and well defined 0; not (C) and cycle 56
+  n=5 exhaustive (1024 selections): (C) and well defined 16; (C) and cycle 0; not (C) and well defined 0; not (C) and cycle 1008
+  n=6 random (3000): (C)&ok 5, (C)&cycle 0, not(C)&ok 0, not(C)&cycle 2995
+  n=7 random (3000): (C)&ok 0, (C)&cycle 0, not(C)&ok 0, not(C)&cycle 3000
+  n=8 random (3000): (C)&ok 0, (C)&cycle 0, not(C)&ok 0, not(C)&cycle 3000
+  n=9 random (3000): (C)&ok 0, (C)&cycle 0, not(C)&ok 0, not(C)&cycle 3000
+  rule bj n=6: (C) = True, well defined = True
+  rule bj n=12: (C) = True, well defined = True
+  rule bj n=20: (C) = True, well defined = True
+  rule mirror n=6: (C) = True, well defined = True
+  rule mirror n=12: (C) = True, well defined = True
+  rule mirror n=20: (C) = True, well defined = True
+  rule alt n=6: (C) = True, well defined = True
+  rule alt n=12: (C) = True, well defined = True
+  rule alt n=20: (C) = True, well defined = True

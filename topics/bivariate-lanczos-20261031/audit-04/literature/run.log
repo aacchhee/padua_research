@@ -1,0 +1,44 @@
+{
+  "pins": {
+    "head": "a2dd845b8a231e1b00733e1361e2a9ad3bad222f",
+    "baseline": "cf01449fc96233c9074ce25efcb056535414aa1d",
+    "main": "9739a0c56b7a3976422ce60a8441bfbbfd6554df",
+    "consolidation": "ae36ec013630c939fb1b2c1cdddb2cf12cc80cf0",
+    "pre_consolidation": "9a77f2b10d42bb43aea01cacfcea86469c87c5dc",
+    "merge": "1167c33e71e2b0677e569f5fbae7ed97160fa8e9",
+    "allocation": "896afd6c6befee3bc05f74d178cab9400baab31a"
+  },
+  "head_matches_pin": true,
+  "consolidation_record_changes": {
+    "A": 29,
+    "M": 15
+  },
+  "shared_source_count": 14,
+  "accepted_main_record_file_count_including_readme": 53,
+  "all_main_records_preserved_nonblank_lines": [],
+  "missing_main_index_nonblank_lines": [],
+  "main_corpus_field_preservation_failures": [],
+  "final_mapping_count": 227,
+  "final_mapping_range": [
+    66,
+    292
+  ],
+  "final_mapping_failures": [],
+  "new_statement_field_failures": [],
+  "baseline_statement_field_changes": [],
+  "baseline_statement_count": 178,
+  "duplicate_arxiv_sources": {
+    "arxiv:1803.07974": [
+      "literature/records/mourrain-telen-vanbarel.md",
+      "literature/records/telen-mourrain-vanbarel-2018.md"
+    ]
+  },
+  "input_worktree_mismatches": [],
+  "new_statement_count": 49,
+  "new_statements_missing_explicit_unverified_label": [],
+  "frozen_prior_reviews_unchanged_from_baseline": {
+    "topics/bivariate-lanczos-20261031/reviews/L1-prior-art-01.md": true,
+    "topics/bivariate-lanczos-20261031/reviews/L2-prior-art-01.md": true,
+    "topics/bivariate-lanczos-20261031/reviews/L3-prior-art-01.md": true
+  }
+}

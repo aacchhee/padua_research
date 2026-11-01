@@ -1,0 +1,4 @@
+A	topics/bivariate-lanczos-20261031/directions/L3/logs/t302b_conventions_check.log
+A	topics/bivariate-lanczos-20261031/directions/L3/logs/t318_dkappa_formula_check.log
+A	tracks/bivariate-lanczos/code/L3/t302b_conventions_check.py
+A	tracks/bivariate-lanczos/code/L3/t318_dkappa_formula_check.py

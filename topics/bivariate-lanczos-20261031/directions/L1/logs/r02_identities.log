@@ -1,0 +1,97 @@
+# l1_r02_main.py numpy=2.5.3 python=3.13.18
+== random1681_s0 (product-like support) M=1681 win=exact orth=cgs; max |Hhat_J| outside exact J-support: 7.9e-13
+  n=24: loss=3.0e-14  max|c_k| (commutator residual, deg<=n-1)=3.7e-14  defect_x=2.0e-14
+  n=32: loss=1.6e-12  max|c_k| (commutator residual, deg<=n-1)=2.2e-12  defect_x=4.0e-13
+  commutator-residual recursion (long-double evaluation): max relative residual 1.2e-03
+  [F=Y] n=24: identity(*) resid 3.9e-15; |Omega|=6.1e-15 (local 6.0e-15, up(Phi) 6.9e-16); |E|=2.7e-16 |K|=3.6e-16 |R|=1.8e-13
+     F-Ritz #0              |s^T cB s|=3.6e-18 (identity err 1.5e-17) |rho|=1.7e-15 |Bs|=3.8e-03 |Qnew^T y|=1.2e-13 |<Qnew^T y, Bs/|Bs|>|=9.7e-16 frac=0.01 bound (|Om|+2|R||rho|)/|Bs|=1.6e-12
+     F-Ritz #1              |s^T cB s|=4.0e-18 (identity err 1.8e-17) |rho|=1.4e-15 |Bs|=4.6e-03 |Qnew^T y|=9.3e-14 |<Qnew^T y, Bs/|Bs|>|=8.4e-16 frac=0.01 bound (|Om|+2|R||rho|)/|Bs|=1.3e-12
+     joint-min (phase-fixed Re) |s^T cB s|=3.6e-17 (identity err 1.9e-17) |rho|=1.0e-03 |Bs|=4.0e-03 |Qnew^T y|=9.3e-14 |<Qnew^T y, Bs/|Bs|>|=8.9e-15 frac=0.09 bound (|Om|+2|R||rho|)/|Bs|=1.6e-12
+  [N=J+iF] n=24: identity(*) resid 8.9e-16; |Omega|=1.1e-13 (local 8.9e-15, up(Phi) 1.1e-13); |E|=1.3e-13 |K|=6.7e-15 |R|=1.8e-13
+     Z-Ritz #0              |s^T cB s|=1.1e-16 (identity err 6.3e-18) |rho|=1.0e-14 |Bs|=6.2e-03 |Qnew^T y|=9.4e-14 |<Qnew^T y, Bs/|Bs|>|=1.7e-14 frac=0.18 bound (|Om|+2|R||rho|)/|Bs|=1.8e-11
+     Z-Ritz #1              |s^T cB s|=1.8e-16 (identity err 9.2e-18) |rho|=1.1e-14 |Bs|=7.0e-03 |Qnew^T y|=1.2e-13 |<Qnew^T y, Bs/|Bs|>|=2.6e-14 frac=0.22 bound (|Om|+2|R||rho|)/|Bs|=1.6e-11
+  [F=Y] n=32: identity(*) resid 3.9e-15; |Omega|=2.0e-14 (local 2.0e-14, up(Phi) 1.7e-15); |E|=3.2e-16 |K|=8.5e-16 |R|=1.0e-11
+     F-Ritz #0              |s^T cB s|=3.6e-18 (identity err 1.4e-17) |rho|=1.9e-15 |Bs|=2.0e-04 |Qnew^T y|=2.3e-12 |<Qnew^T y, Bs/|Bs|>|=1.8e-14 frac=0.01 bound (|Om|+2|R||rho|)/|Bs|=1.0e-10
+     F-Ritz #1              |s^T cB s|=4.3e-18 (identity err 1.9e-17) |rho|=1.8e-15 |Bs|=2.2e-04 |Qnew^T y|=1.1e-11 |<Qnew^T y, Bs/|Bs|>|=2.0e-14 frac=0.00 bound (|Om|+2|R||rho|)/|Bs|=9.1e-11
+     joint-min (phase-fixed Re) |s^T cB s|=4.4e-17 (identity err 1.9e-17) |rho|=3.6e-05 |Bs|=1.3e-04 |Qnew^T y|=1.1e-11 |<Qnew^T y, Bs/|Bs|>|=3.4e-13 frac=0.03 bound (|Om|+2|R||rho|)/|Bs|=1.6e-10
+  [N=J+iF] n=32: identity(*) resid 8.9e-16; |Omega|=6.8e-12 (local 2.5e-14, up(Phi) 6.8e-12); |E|=7.1e-12 |K|=4.6e-13 |R|=1.0e-11
+     Z-Ritz #0              |s^T cB s|=1.1e-16 (identity err 6.0e-18) |rho|=1.1e-14 |Bs|=2.0e-04 |Qnew^T y|=1.1e-11 |<Qnew^T y, Bs/|Bs|>|=5.2e-13 frac=0.05 bound (|Om|+2|R||rho|)/|Bs|=3.4e-08
+     Z-Ritz #1              |s^T cB s|=2.1e-16 (identity err 9.3e-18) |rho|=1.1e-14 |Bs|=3.1e-04 |Qnew^T y|=2.3e-12 |<Qnew^T y, Bs/|Bs|>|=6.7e-13 frac=0.28 bound (|Om|+2|R||rho|)/|Bs|=2.2e-08
+== random1681_s0 rotated 0.3 (non-product support) M=1681 win=exact orth=cgs; max |Hhat_J| outside exact J-support: 4.7e-08
+  n=12: loss=1.8e-13  max|c_k| (commutator residual, deg<=n-1)=1.3e-13  defect_x=1.1e-13
+  n=16: loss=2.4e-11  max|c_k| (commutator residual, deg<=n-1)=1.1e-11  defect_x=8.1e-12
+  n=20: loss=1.3e-08  max|c_k| (commutator residual, deg<=n-1)=8.4e-09  defect_x=4.8e-09
+  commutator-residual recursion (long-double evaluation): max relative residual 8.5e-04
+  [F=Y] n=12: identity(*) resid 3.9e-15; |Omega|=3.8e-15 (local 4.0e-15, up(Phi) 1.5e-15); |E|=1.8e-16 |K|=1.0e-15 |R|=2.1e-13
+     F-Ritz #0              |s^T cB s|=1.2e-17 (identity err 7.4e-18) |rho|=1.1e-15 |Bs|=4.8e-02 |Qnew^T y|=1.4e-13 |<Qnew^T y, Bs/|Bs|>|=2.7e-16 frac=0.00 bound (|Om|+2|R||rho|)/|Bs|=8.1e-14
+     F-Ritz #1              |s^T cB s|=5.7e-18 (identity err 4.7e-17) |rho|=2.1e-15 |Bs|=5.4e-02 |Qnew^T y|=2.7e-13 |<Qnew^T y, Bs/|Bs|>|=5.1e-17 frac=0.00 bound (|Om|+2|R||rho|)/|Bs|=7.2e-14
+     joint-min (phase-fixed Re) |s^T cB s|=2.8e-17 (identity err 1.6e-17) |rho|=2.4e-02 |Bs|=3.5e-02 |Qnew^T y|=2.6e-14 |<Qnew^T y, Bs/|Bs|>|=7.8e-16 frac=0.03 bound (|Om|+2|R||rho|)/|Bs|=4.0e-13
+  [N=J+iF] n=12: identity(*) resid 1.0e-15; |Omega|=2.4e-13 (local 6.7e-15, up(Phi) 2.4e-13); |E|=2.5e-13 |K|=1.1e-14 |R|=2.1e-13
+     Z-Ritz #0              |s^T cB s|=9.4e-17 (identity err 1.3e-17) |rho|=5.6e-15 |Bs|=9.2e-02 |Qnew^T y|=2.5e-14 |<Qnew^T y, Bs/|Bs|>|=1.1e-15 frac=0.04 bound (|Om|+2|R||rho|)/|Bs|=2.6e-12
+     Z-Ritz #1              |s^T cB s|=8.6e-16 (identity err 1.3e-17) |rho|=7.0e-15 |Bs|=9.9e-02 |Qnew^T y|=1.2e-13 |<Qnew^T y, Bs/|Bs|>|=8.8e-15 frac=0.08 bound (|Om|+2|R||rho|)/|Bs|=2.5e-12
+  [F=Y] n=16: identity(*) resid 3.9e-15; |Omega|=1.7e-13 (local 1.7e-13, up(Phi) 1.2e-14); |E|=2.5e-16 |K|=5.9e-15 |R|=2.5e-11
+     F-Ritz #0              |s^T cB s|=1.4e-17 (identity err 4.3e-19) |rho|=1.1e-15 |Bs|=3.0e-02 |Qnew^T y|=2.0e-11 |<Qnew^T y, Bs/|Bs|>|=4.0e-16 frac=0.00 bound (|Om|+2|R||rho|)/|Bs|=5.7e-12
+     F-Ritz #1              |s^T cB s|=2.6e-18 (identity err 3.1e-17) |rho|=1.2e-15 |Bs|=3.3e-02 |Qnew^T y|=1.6e-11 |<Qnew^T y, Bs/|Bs|>|=9.9e-17 frac=0.00 bound (|Om|+2|R||rho|)/|Bs|=5.0e-12
+     joint-min (phase-fixed Re) |s^T cB s|=4.9e-17 (identity err 3.3e-18) |rho|=1.4e-02 |Bs|=2.2e-02 |Qnew^T y|=2.4e-13 |<Qnew^T y, Bs/|Bs|>|=2.3e-15 frac=0.01 bound (|Om|+2|R||rho|)/|Bs|=3.9e-11
+  [N=J+iF] n=16: identity(*) resid 1.0e-15; |Omega|=4.2e-11 (local 7.6e-13, up(Phi) 4.2e-11); |E|=4.5e-11 |K|=1.3e-12 |R|=2.5e-11
+     Z-Ritz #0              |s^T cB s|=1.5e-16 (identity err 5.4e-18) |rho|=7.1e-15 |Bs|=5.5e-02 |Qnew^T y|=2.4e-13 |<Qnew^T y, Bs/|Bs|>|=2.8e-15 frac=0.01 bound (|Om|+2|R||rho|)/|Bs|=7.7e-10
+     Z-Ritz #1              |s^T cB s|=4.4e-14 (identity err 2.0e-17) |rho|=6.2e-15 |Bs|=6.2e-02 |Qnew^T y|=1.2e-11 |<Qnew^T y, Bs/|Bs|>|=7.1e-13 frac=0.06 bound (|Om|+2|R||rho|)/|Bs|=6.8e-10
+  [F=Y] n=20: identity(*) resid 3.9e-15; |Omega|=1.4e-10 (local 1.3e-10, up(Phi) 2.8e-11); |E|=2.8e-16 |K|=1.4e-11 |R|=1.2e-08
+     F-Ritz #0              |s^T cB s|=1.4e-16 (identity err 4.4e-18) |rho|=1.4e-15 |Bs|=1.3e-02 |Qnew^T y|=1.5e-08 |<Qnew^T y, Bs/|Bs|>|=1.1e-14 frac=0.00 bound (|Om|+2|R||rho|)/|Bs|=1.1e-08
+     F-Ritz #1              |s^T cB s|=6.8e-16 (identity err 7.7e-18) |rho|=1.4e-15 |Bs|=2.3e-02 |Qnew^T y|=3.4e-10 |<Qnew^T y, Bs/|Bs|>|=3.0e-14 frac=0.00 bound (|Om|+2|R||rho|)/|Bs|=6.1e-09
+     joint-min (phase-fixed Re) |s^T cB s|=1.1e-13 (identity err 9.9e-18) |rho|=3.2e-03 |Bs|=1.9e-02 |Qnew^T y|=1.0e-08 |<Qnew^T y, Bs/|Bs|>|=5.7e-12 frac=0.00 bound (|Om|+2|R||rho|)/|Bs|=1.1e-08
+  [N=J+iF] n=20: identity(*) resid 1.0e-15; |Omega|=3.2e-08 (local 7.5e-10, up(Phi) 3.2e-08); |E|=3.4e-08 |K|=3.0e-09 |R|=1.2e-08
+     Z-Ritz #0              |s^T cB s|=9.4e-12 (identity err 6.6e-18) |rho|=4.6e-15 |Bs|=2.4e-02 |Qnew^T y|=1.0e-08 |<Qnew^T y, Bs/|Bs|>|=3.9e-10 frac=0.04 bound (|Om|+2|R||rho|)/|Bs|=1.3e-06
+     Z-Ritz #1              |s^T cB s|=1.1e-14 (identity err 1.2e-17) |rho|=1.0e-14 |Bs|=2.7e-02 |Qnew^T y|=7.1e-12 |<Qnew^T y, Bs/|Bs|>|=4.0e-13 frac=0.06 bound (|Om|+2|R||rho|)/|Bs|=1.2e-06
+== tensorcheb41 M=1681 win=exact orth=cgs; max |Hhat_J| outside exact J-support: 9.0e-15
+  n=24: loss=1.8e-14  max|c_k| (commutator residual, deg<=n-1)=3.9e-15  defect_x=3.5e-15
+  n=32: loss=1.8e-14  max|c_k| (commutator residual, deg<=n-1)=5.9e-15  defect_x=3.7e-15
+  commutator-residual recursion (long-double evaluation): max relative residual 1.1e-03
+  [F=Y] n=24: identity(*) resid 4.3e-15; |Omega|=1.6e-14 (local 1.6e-14, up(Phi) 2.3e-15); |E|=2.4e-16 |K|=1.3e-15 |R|=1.8e-13
+     F-Ritz #0              |s^T cB s|=6.8e-17 (identity err 2.9e-16) |rho|=8.6e-16 |Bs|=9.4e-03 |Qnew^T y|=2.9e-14 |<Qnew^T y, Bs/|Bs|>|=7.2e-15 frac=0.25 bound (|Om|+2|R||rho|)/|Bs|=1.7e-12
+     F-Ritz #1              |s^T cB s|=6.6e-17 (identity err 3.0e-16) |rho|=1.8e-15 |Bs|=9.4e-03 |Qnew^T y|=2.8e-14 |<Qnew^T y, Bs/|Bs|>|=7.0e-15 frac=0.25 bound (|Om|+2|R||rho|)/|Bs|=1.7e-12
+     joint-min (phase-fixed Re) |s^T cB s|=5.4e-16 (identity err 2.1e-17) |rho|=5.4e-03 |Bs|=1.8e-02 |Qnew^T y|=7.2e-14 |<Qnew^T y, Bs/|Bs|>|=3.1e-14 frac=0.43 bound (|Om|+2|R||rho|)/|Bs|=1.0e-12
+  [N=J+iF] n=24: identity(*) resid 1.0e-15; |Omega|=1.2e-13 (local 3.3e-14, up(Phi) 1.1e-13); |E|=1.1e-13 |K|=1.5e-14 |R|=1.8e-13
+     Z-Ritz #0              |s^T cB s|=9.5e-16 (identity err 8.0e-18) |rho|=6.4e-15 |Bs|=3.0e-02 |Qnew^T y|=6.7e-14 |<Qnew^T y, Bs/|Bs|>|=3.1e-14 frac=0.47 bound (|Om|+2|R||rho|)/|Bs|=3.9e-12
+     Z-Ritz #1              |s^T cB s|=1.0e-15 (identity err 9.7e-18) |rho|=1.4e-14 |Bs|=3.0e-02 |Qnew^T y|=7.1e-14 |<Qnew^T y, Bs/|Bs|>|=3.3e-14 frac=0.47 bound (|Om|+2|R||rho|)/|Bs|=3.9e-12
+  [F=Y] n=32: identity(*) resid 4.3e-15; |Omega|=2.0e-14 (local 2.0e-14, up(Phi) 2.3e-15); |E|=3.0e-16 |K|=1.3e-15 |R|=3.0e-13
+     F-Ritz #0              |s^T cB s|=4.4e-17 (identity err 2.2e-16) |rho|=7.4e-16 |Bs|=6.1e-03 |Qnew^T y|=3.6e-14 |<Qnew^T y, Bs/|Bs|>|=7.2e-15 frac=0.20 bound (|Om|+2|R||rho|)/|Bs|=3.2e-12
+     F-Ritz #1              |s^T cB s|=4.7e-17 (identity err 2.1e-16) |rho|=9.6e-16 |Bs|=6.1e-03 |Qnew^T y|=3.6e-14 |<Qnew^T y, Bs/|Bs|>|=7.6e-15 frac=0.21 bound (|Om|+2|R||rho|)/|Bs|=3.2e-12
+     joint-min (phase-fixed Re) |s^T cB s|=5.5e-16 (identity err 1.3e-17) |rho|=3.1e-03 |Bs|=1.2e-02 |Qnew^T y|=1.1e-13 |<Qnew^T y, Bs/|Bs|>|=4.8e-14 frac=0.44 bound (|Om|+2|R||rho|)/|Bs|=1.9e-12
+  [N=J+iF] n=32: identity(*) resid 1.0e-15; |Omega|=1.9e-13 (local 3.8e-14, up(Phi) 1.8e-13); |E|=1.8e-13 |K|=1.8e-14 |R|=3.0e-13
+     Z-Ritz #0              |s^T cB s|=9.4e-16 (identity err 1.7e-18) |rho|=7.5e-15 |Bs|=2.0e-02 |Qnew^T y|=1.0e-13 |<Qnew^T y, Bs/|Bs|>|=4.8e-14 frac=0.46 bound (|Om|+2|R||rho|)/|Bs|=9.5e-12
+     Z-Ritz #1              |s^T cB s|=9.9e-16 (identity err 5.8e-18) |rho|=7.7e-15 |Bs|=2.0e-02 |Qnew^T y|=1.1e-13 |<Qnew^T y, Bs/|Bs|>|=5.0e-14 frac=0.47 bound (|Om|+2|R||rho|)/|Bs|=9.5e-12
+== omega-recurrence sources: random1681_s0 M=1681 win=exact orth=cgs
+   deg  3: loss(l outside window) F-cols 3.5e-17 J-col 4.1e-17 | propagation term/beta F 3.6e-17 J 3.2e-18 | source F 2.1e-18 J(commutator) 2.1e-17 | identity residual 2.7e-20
+   deg  4: loss(l outside window) F-cols 6.4e-16 J-col 6.4e-16 | propagation term/beta F 6.5e-16 J 6.5e-16 | source F 2.8e-18 J(commutator) 2.5e-18 | identity residual 4.4e-20
+   deg  5: loss(l outside window) F-cols 2.1e-16 J-col 1.1e-15 | propagation term/beta F 2.1e-16 J 1.1e-15 | source F 4.9e-18 J(commutator) 6.0e-18 | identity residual 5.5e-20
+   deg  6: loss(l outside window) F-cols 1.2e-15 J-col 7.2e-16 | propagation term/beta F 1.3e-15 J 7.1e-16 | source F 7.0e-18 J(commutator) 7.4e-18 | identity residual 3.9e-20
+   deg  7: loss(l outside window) F-cols 1.3e-15 J-col 1.4e-15 | propagation term/beta F 1.3e-15 J 1.4e-15 | source F 6.4e-18 J(commutator) 1.8e-17 | identity residual 4.3e-20
+   deg  8: loss(l outside window) F-cols 1.6e-15 J-col 8.9e-16 | propagation term/beta F 1.6e-15 J 8.9e-16 | source F 7.1e-18 J(commutator) 2.3e-17 | identity residual 4.8e-20
+   deg  9: loss(l outside window) F-cols 1.5e-15 J-col 1.5e-15 | propagation term/beta F 1.5e-15 J 1.5e-15 | source F 9.1e-18 J(commutator) 2.5e-17 | identity residual 6.7e-20
+   deg 10: loss(l outside window) F-cols 1.8e-15 J-col 1.2e-15 | propagation term/beta F 1.8e-15 J 1.2e-15 | source F 9.8e-18 J(commutator) 2.4e-17 | identity residual 6.5e-20
+   deg 11: loss(l outside window) F-cols 2.0e-15 J-col 1.6e-15 | propagation term/beta F 2.0e-15 J 1.5e-15 | source F 9.0e-18 J(commutator) 5.3e-17 | identity residual 4.9e-20
+   deg 12: loss(l outside window) F-cols 2.3e-15 J-col 1.3e-15 | propagation term/beta F 2.3e-15 J 1.3e-15 | source F 1.1e-17 J(commutator) 7.1e-17 | identity residual 4.9e-20
+   deg 13: loss(l outside window) F-cols 2.2e-15 J-col 1.6e-15 | propagation term/beta F 2.2e-15 J 1.6e-15 | source F 1.2e-17 J(commutator) 4.5e-17 | identity residual 5.6e-20
+   deg 14: loss(l outside window) F-cols 2.3e-15 J-col 1.7e-15 | propagation term/beta F 2.3e-15 J 1.7e-15 | source F 1.0e-17 J(commutator) 5.7e-17 | identity residual 6.7e-20
+   deg 15: loss(l outside window) F-cols 2.4e-15 J-col 2.0e-15 | propagation term/beta F 2.4e-15 J 2.0e-15 | source F 1.4e-17 J(commutator) 5.7e-17 | identity residual 7.9e-20
+   deg 16: loss(l outside window) F-cols 3.0e-15 J-col 1.7e-15 | propagation term/beta F 3.0e-15 J 1.7e-15 | source F 1.3e-17 J(commutator) 6.1e-17 | identity residual 7.5e-20
+   deg 17: loss(l outside window) F-cols 2.8e-15 J-col 2.1e-15 | propagation term/beta F 2.8e-15 J 2.1e-15 | source F 1.3e-17 J(commutator) 4.3e-17 | identity residual 6.3e-20
+   deg 18: loss(l outside window) F-cols 3.7e-15 J-col 1.7e-15 | propagation term/beta F 3.7e-15 J 1.8e-15 | source F 1.1e-17 J(commutator) 5.3e-17 | identity residual 6.8e-20
+== omega-recurrence sources: random1681_s0 rotated 0.3 M=1681 win=exact orth=cgs
+   deg  3: loss(l outside window) F-cols 9.2e-17 J-col 7.2e-17 | propagation term/beta F 8.8e-17 J 5.3e-17 | source F 1.6e-18 J(commutator) 1.1e-17 | identity residual 2.2e-20
+   deg  4: loss(l outside window) F-cols 6.7e-16 J-col 6.0e-16 | propagation term/beta F 6.7e-16 J 6.0e-16 | source F 3.3e-18 J(commutator) 6.1e-18 | identity residual 2.5e-20
+   deg  5: loss(l outside window) F-cols 7.0e-16 J-col 5.5e-16 | propagation term/beta F 7.0e-16 J 5.4e-16 | source F 6.4e-18 J(commutator) 7.9e-18 | identity residual 3.3e-20
+   deg  6: loss(l outside window) F-cols 1.6e-15 J-col 5.1e-16 | propagation term/beta F 1.6e-15 J 5.2e-16 | source F 6.2e-18 J(commutator) 1.0e-17 | identity residual 3.9e-20
+   deg  7: loss(l outside window) F-cols 2.3e-15 J-col 1.1e-15 | propagation term/beta F 2.3e-15 J 1.1e-15 | source F 1.2e-17 J(commutator) 2.6e-17 | identity residual 5.8e-20
+   deg  8: loss(l outside window) F-cols 6.2e-15 J-col 1.0e-15 | propagation term/beta F 6.2e-15 J 1.0e-15 | source F 1.1e-17 J(commutator) 3.4e-17 | identity residual 5.6e-20
+   deg  9: loss(l outside window) F-cols 1.2e-14 J-col 1.0e-15 | propagation term/beta F 1.2e-14 J 1.0e-15 | source F 9.8e-18 J(commutator) 6.6e-17 | identity residual 5.8e-20
+   deg 10: loss(l outside window) F-cols 2.7e-14 J-col 1.2e-15 | propagation term/beta F 2.7e-14 J 1.2e-15 | source F 9.1e-18 J(commutator) 1.4e-16 | identity residual 7.8e-20
+   deg 11: loss(l outside window) F-cols 7.6e-14 J-col 1.5e-15 | propagation term/beta F 7.6e-14 J 1.5e-15 | source F 1.1e-17 J(commutator) 2.3e-16 | identity residual 9.7e-20
+   deg 12: loss(l outside window) F-cols 1.8e-13 J-col 2.2e-15 | propagation term/beta F 1.8e-13 J 2.2e-15 | source F 1.1e-17 J(commutator) 2.1e-16 | identity residual 6.2e-20
+   deg 13: loss(l outside window) F-cols 5.8e-13 J-col 6.8e-15 | propagation term/beta F 5.8e-13 J 6.8e-15 | source F 1.2e-17 J(commutator) 4.9e-16 | identity residual 6.1e-20
+   deg 14: loss(l outside window) F-cols 1.8e-12 J-col 1.4e-14 | propagation term/beta F 1.8e-12 J 1.4e-14 | source F 1.1e-17 J(commutator) 2.0e-15 | identity residual 5.9e-20
+   deg 15: loss(l outside window) F-cols 7.2e-12 J-col 3.4e-14 | propagation term/beta F 7.2e-12 J 3.4e-14 | source F 1.2e-17 J(commutator) 1.9e-15 | identity residual 9.0e-20
+   deg 16: loss(l outside window) F-cols 2.4e-11 J-col 2.9e-13 | propagation term/beta F 2.4e-11 J 2.9e-13 | source F 1.1e-17 J(commutator) 1.0e-14 | identity residual 6.1e-20
+   deg 17: loss(l outside window) F-cols 1.1e-10 J-col 6.7e-13 | propagation term/beta F 1.1e-10 J 6.7e-13 | source F 2.1e-17 J(commutator) 5.8e-14 | identity residual 7.8e-20
+   deg 18: loss(l outside window) F-cols 4.4e-10 J-col 4.5e-12 | propagation term/beta F 4.4e-10 J 4.5e-12 | source F 1.2e-17 J(commutator) 2.6e-13 | identity residual 7.2e-20

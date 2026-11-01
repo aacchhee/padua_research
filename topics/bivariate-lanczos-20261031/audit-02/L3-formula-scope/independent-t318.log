@@ -1,0 +1,13 @@
+Python 3.12.14 SymPy 1.14.0
+n=1: N=3, mass=6, derivative 1x10; exact sign/all directions/basis cancellation/normalization/general-L identity PASS; rank dF=dim F=1, dim S1=1
+n=2: N=6, mass=21, derivative 3x21; exact sign/all directions/basis cancellation/normalization/general-L identity PASS; rank dF=dim F=3, dim S1=3
+n=3: N=10, mass=55, derivative 6x36; exact sign/all directions/basis cancellation/normalization/general-L identity PASS; rank dF=dim F=6, dim S1=6
+n=1: C(e_i,e_j) exact independent Hankel-orthogonal basis rank=1 PASS
+n=2: C(e_i,e_j) exact independent Hankel-orthogonal basis rank=3 PASS
+n=3: C(e_i,e_j) exact independent Hankel-orthogonal basis rank=6 PASS
+n=4: C(e_i,e_j) exact independent Hankel-orthogonal basis rank=10 PASS
+n=5: C(e_i,e_j) exact independent Hankel-orthogonal basis rank=15 PASS
+n=6: C(e_i,e_j) exact independent Hankel-orthogonal basis rank=21 PASS
+n=7: C(e_i,e_j) exact independent Hankel-orthogonal basis rank=28 PASS
+n=8: C(e_i,e_j) exact independent Hankel-orthogonal basis rank=36 PASS
+ALL EXACT ASSERTIONS PASS

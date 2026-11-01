@@ -1,0 +1,21 @@
+{
+  "base": "9739a0c56b7a3976422ce60a8441bfbbfd6554df",
+  "candidate": "98945cbcf10c4f8eb53f77c996db358392d42391",
+  "worktree": "/tmp/padua-pr10-fixed",
+  "commands": [
+    "git worktree add --detach /tmp/padua-pr10-fixed 9739a0c56b7a3976422ce60a8441bfbbfd6554df",
+    "git -C /tmp/padua-pr10-fixed merge --squash --no-commit --no-stat 98945cbcf10c4f8eb53f77c996db358392d42391",
+    "python3 -B -I topics/bivariate-lanczos-20261031/pr-prep/allocate.py --check",
+    "python3 -B -I topics/bivariate-lanczos-20261031/pr-prep/check_integration.py",
+    "git -C /tmp/padua-pr10-fixed write-tree"
+  ],
+  "note": "The disposable worktree was first used for the earlier d55504e rehearsal, then reset to the same pinned main before the final candidate rehearsal. Only the isolated worktree was reset; main was never changed.",
+  "conflicts": [],
+  "candidate_tree": "d3447f63f656f3fe3eb6f6f14b7aa6eda092582b",
+  "squash_tree": "d3447f63f656f3fe3eb6f6f14b7aa6eda092582b",
+  "identical": true,
+  "allocator_check_exit": 0,
+  "integration_check_exit": 0,
+  "merge_order": "AC confirmed PR10 next; all other drafts adjust after it merges",
+  "actual_merge_performed": false
+}

@@ -1,0 +1,8 @@
+numpy 2.5.3 scipy 1.18.1 cvxpy 1.6.0
+301 numerical checks (Legendre graded basis, Cholesky of the moment matrix)
+  n=1: measure: max|[Hx,Hy]| rows deg<n = 6.9e-18, last block = 2.8e-01, words rel err 1.1e-16, echelon+pivots True | signed functional: max|[Hx,Hy]| rows deg<n = 5.6e-17, last block = 3.3e-01, words rel err 2.2e-16, echelon+pivots True
+  n=2: measure: max|[Hx,Hy]| rows deg<n = 8.3e-17, last block = 2.6e-01, words rel err 2.8e-17, echelon+pivots True | signed functional: max|[Hx,Hy]| rows deg<n = 3.3e-16, last block = 2.2e-01, words rel err 3.3e-16, echelon+pivots True
+  n=3: measure: max|[Hx,Hy]| rows deg<n = 3.9e-16, last block = 2.3e-01, words rel err 1.1e-16, echelon+pivots True | signed functional: max|[Hx,Hy]| rows deg<n = 4.3e-16, last block = 1.6e-01, words rel err 2.2e-16, echelon+pivots True
+  n=4: measure: max|[Hx,Hy]| rows deg<n = 3.9e-16, last block = 2.2e-01, words rel err 5.6e-17, echelon+pivots True | signed functional: max|[Hx,Hy]| rows deg<n = 9.3e-16, last block = 2.6e-01, words rel err 3.3e-16, echelon+pivots True
+301(d) counts e_n = #H_x structured + (n+1)^2 - (dim Pi_{2n+1} - 1):
+   [1, 6, 17, 36, 65, 106, 161, 232, 321, 430]

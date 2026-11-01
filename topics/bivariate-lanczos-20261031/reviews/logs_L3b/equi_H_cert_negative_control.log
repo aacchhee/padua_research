@@ -1,0 +1,39 @@
+equi_H_cert.py nmin=3 nmax=4 dps=30 (mpmath 1.3.0)
+randrat seed=1 n=3: M=10 dim Pi_2n+1=36 rank J=30 (3M=30) dim S1=6 (expected 6) rank Hess|S1=6 (injective True)  [0.5s exact setup]
+   DUAL high-precision optimum t_D = 0.0007114308401  (normalisation sum tr A_i = 1)  [6.2s]
+   DUAL exact check PASS: G v = 0 exactly, all 10 blocks PD exactly; exact min det/tr (normalised) = 3.5572e-04 => (H) CERTIFIED
+   verdict n=3: (H) CERTIFIED  [6.2s]
+randrat seed=2 n=3: M=10 dim Pi_2n+1=36 rank J=30 (3M=30) dim S1=6 (expected 6) rank Hess|S1=6 (injective True)  [0.4s exact setup]
+   DUAL high-precision optimum t_D = 0.005315478572  (normalisation sum tr A_i = 1)  [6.1s]
+   DUAL exact check PASS: G v = 0 exactly, all 10 blocks PD exactly; exact min det/tr (normalised) = 2.6577e-03 => (H) CERTIFIED
+   verdict n=3: (H) CERTIFIED  [6.1s]
+randrat seed=3 n=3: M=10 dim Pi_2n+1=36 rank J=30 (3M=30) dim S1=6 (expected 6) rank Hess|S1=6 (injective True)  [0.5s exact setup]
+   DUAL high-precision optimum t_D = 0.01090731191  (normalisation sum tr A_i = 1)  [5.5s]
+   DUAL exact check PASS: G v = 0 exactly, all 10 blocks PD exactly; exact min det/tr (normalised) = 5.4537e-03 => (H) CERTIFIED
+   verdict n=3: (H) CERTIFIED  [5.5s]
+randrat seed=4 n=3: M=10 dim Pi_2n+1=36 rank J=30 (3M=30) dim S1=6 (expected 6) rank Hess|S1=6 (injective True)  [0.4s exact setup]
+   DUAL high-precision optimum t_D = 0.001332066286  (normalisation sum tr A_i = 1)  [6.8s]
+   DUAL exact check PASS: G v = 0 exactly, all 10 blocks PD exactly; exact min det/tr (normalised) = 6.6603e-04 => (H) CERTIFIED
+   verdict n=3: (H) CERTIFIED  [6.8s]
+randrat seed=1 n=4: M=15 dim Pi_2n+1=55 rank J=45 (3M=45) dim S1=10 (expected 10) rank Hess|S1=10 (injective True)  [3.6s exact setup]
+   DUAL high-precision optimum t_D = 0.000216555051  (normalisation sum tr A_i = 1)  [22.2s]
+   DUAL exact check PASS: G v = 0 exactly, all 15 blocks PD exactly; exact min det/tr (normalised) = 1.0828e-04 => (H) CERTIFIED
+   verdict n=4: (H) CERTIFIED  [22.2s]
+randrat seed=2 n=4: M=15 dim Pi_2n+1=55 rank J=45 (3M=45) dim S1=10 (expected 10) rank Hess|S1=10 (injective True)  [3.4s exact setup]
+   DUAL high-precision optimum t_D = -5.803627089e-6  (normalisation sum tr A_i = 1)  [23.2s]
+   PRIMAL high-precision optimum lambda_P = 5.802616502e-6  (normalisation sum tr Hess p(z_i) = 1)
+   PRIMAL exact check PASS => ROBUST FAILURE OF (H) CERTIFIED (p in S_1 exactly, PD Hessians at all nodes)
+   verdict n=4: ROBUST FAILURE OF (H) CERTIFIED (p in S_1 exactly, PD Hessians at all nodes)  [25.5s]
+randrat seed=3 n=4: M=15 dim Pi_2n+1=55 rank J=45 (3M=45) dim S1=10 (expected 10) rank Hess|S1=10 (injective True)  [3.5s exact setup]
+   DUAL high-precision optimum t_D = -3.060637256e-9  (normalisation sum tr A_i = 1)  [29.1s]
+   PRIMAL high-precision optimum lambda_P = 3.060633975e-9  (normalisation sum tr Hess p(z_i) = 1)
+   PRIMAL exact check PASS => ROBUST FAILURE OF (H) CERTIFIED (p in S_1 exactly, PD Hessians at all nodes)
+   verdict n=4: ROBUST FAILURE OF (H) CERTIFIED (p in S_1 exactly, PD Hessians at all nodes)  [32.0s]
+randrat seed=4 n=4: M=15 dim Pi_2n+1=55 rank J=45 (3M=45) dim S1=10 (expected 10) rank Hess|S1=10 (injective True)  [3.4s exact setup]
+   DUAL high-precision optimum t_D = 2.455975414e-5  (normalisation sum tr A_i = 1)  [19.5s]
+   DUAL exact check PASS: G v = 0 exactly, all 15 blocks PD exactly; exact min det/tr (normalised) = 1.2280e-05 => (H) CERTIFIED
+   verdict n=4: (H) CERTIFIED  [19.6s]
+
+real	2m4.156s
+user	1m23.351s
+sys	0m0.125s

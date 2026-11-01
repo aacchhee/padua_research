@@ -1,0 +1,21 @@
+r02_structure family=padua nmax=7 seed=0
+n=1: dimC=1 rank(F)=1 dimS1=1 top-form residual=1.1e-16 min cos(angle F,S1)=0.9999999999999998 lam_P(C-param)=-1.375e-13
+n=2: dimC=3 rank(F)=3 dimS1=3 top-form residual=4.4e-16 min cos(angle F,S1)=1.0 lam_P(C-param)=-1.901e-11
+n=3: dimC=6 rank(F)=6 dimS1=6 top-form residual=5.6e-16 min cos(angle F,S1)=0.9999999999999997 lam_P(C-param)=0.1261
+   optimal C (normalised):
+ [[ 0.     0.    -0.5   -0.    -0.212]
+ [ 0.     1.     0.     0.025  0.   ]
+ [-0.5    0.     0.374 -0.    -0.098]
+ [-0.     0.025 -0.     0.197  0.   ]
+ [-0.212  0.    -0.098  0.     0.   ]]
+n=4: dimC=10 rank(F)=10 dimS1=10 top-form residual=7.2e-16 min cos(angle F,S1)=0.9999999999999997 lam_P(C-param)=0.05531
+   optimal C (normalised):
+ [[ 0.     0.    -0.5   -0.    -0.914 -0.   ]
+ [ 0.     1.     0.     0.54   0.     0.076]
+ [-0.5    0.     0.748  0.    -0.477 -0.   ]
+ [-0.     0.54   0.     0.803  0.    -0.413]
+ [-0.914  0.    -0.477  0.     0.825  0.   ]
+ [-0.     0.076 -0.    -0.413  0.     0.   ]]
+n=5: dimC=15 rank(F)=15 dimS1=15 top-form residual=8.7e-16 min cos(angle F,S1)=1.0 lam_P(C-param)=0.06025
+n=6: dimC=21 rank(F)=21 dimS1=21 top-form residual=6.7e-16 min cos(angle F,S1)=0.9999999999999993 lam_P(C-param)=0.01593
+n=7: dimC=28 rank(F)=28 dimS1=28 top-form residual=7.8e-16 min cos(angle F,S1)=0.9999999999999996 lam_P(C-param)=0.01089

@@ -1,0 +1,87 @@
+# l1_audit01_exact_checks.py  python 3.13.18
+## sheared 4x4 grid (audit F1 example) n = 2 M = 16 U(n+1): True
+    relations_last_unknown_is_A*lm(l)_with_pivot : True
+    relations_hold_as_polynomials : True
+    selection dev                    triangular, nonzero pivots, solution = p(z) : True
+    selection mirror(fixed order)    triangular, nonzero pivots, solution = p(z) : True
+    selection per-degree switch      triangular, nonzero pivots, solution = p(z) : True
+    selection random admissible 0    triangular, nonzero pivots, solution = p(z) : True
+    selection random admissible 1    triangular, nonzero pivots, solution = p(z) : True
+    selection random admissible 2    triangular, nonzero pivots, solution = p(z) : True
+    shape C(z) = 6 x 6; normalised 7 x 6 (overdetermined) : True
+    rank C(z) = N_n - 1 = 5 at all 4 points : True
+    rank [e0; C(z)] = N_n = 6 at all points : True
+    p(z) in kernel of C(z) at all points : True
+    number of degree-only but non-admissible (target, relation) pairs : 10
+   degree-only assignment (2,0) <- X*(1,1): monic coefficient at later unknown (2,1) = 1 ; orthonormal coefficient^2 = 5/9 (audit: sqrt(5)/3 -> 5/9): True
+   that selected system is lower triangular: False ; rank with pi_0 = 1: 6 of 6
+   same degree-only assignment on the 4x4 product grid {-1,-1/3,1/3,1}^2 (U(3) holds: True): ranks with pi_0 = 1 at 5 points = [5, 5, 5, 5, 5] (singular: solution not unique)
+   x-first vs y-first first degree-1 columns: overlap^2 = 1/5 (audit: 1/sqrt(5) -> 1/5): True
+## random rational set (seed 31102026) n = 1 M = 40 U(n+1): True
+    relations_last_unknown_is_A*lm(l)_with_pivot : True
+    relations_hold_as_polynomials : True
+    selection dev                    triangular, nonzero pivots, solution = p(z) : True
+    selection mirror(fixed order)    triangular, nonzero pivots, solution = p(z) : True
+    selection per-degree switch      triangular, nonzero pivots, solution = p(z) : True
+    selection random admissible 0    triangular, nonzero pivots, solution = p(z) : True
+    selection random admissible 1    triangular, nonzero pivots, solution = p(z) : True
+    selection random admissible 2    triangular, nonzero pivots, solution = p(z) : True
+    shape C(z) = 2 x 3; normalised 3 x 3 (square) : True
+    rank C(z) = N_n - 1 = 2 at all 3 points : True
+    rank [e0; C(z)] = N_n = 3 at all points : True
+    p(z) in kernel of C(z) at all points : True
+    number of degree-only but non-admissible (target, relation) pairs : 2
+## random rational set (seed 31102026) n = 2 M = 40 U(n+1): True
+    relations_last_unknown_is_A*lm(l)_with_pivot : True
+    relations_hold_as_polynomials : True
+    selection dev                    triangular, nonzero pivots, solution = p(z) : True
+    selection mirror(fixed order)    triangular, nonzero pivots, solution = p(z) : True
+    selection per-degree switch      triangular, nonzero pivots, solution = p(z) : True
+    selection random admissible 0    triangular, nonzero pivots, solution = p(z) : True
+    selection random admissible 1    triangular, nonzero pivots, solution = p(z) : True
+    selection random admissible 2    triangular, nonzero pivots, solution = p(z) : True
+    shape C(z) = 6 x 6; normalised 7 x 6 (overdetermined) : True
+    rank C(z) = N_n - 1 = 5 at all 3 points : True
+    rank [e0; C(z)] = N_n = 6 at all points : True
+    p(z) in kernel of C(z) at all points : True
+    number of degree-only but non-admissible (target, relation) pairs : 10
+## random rational set (seed 31102026) n = 3 M = 40 U(n+1): True
+    relations_last_unknown_is_A*lm(l)_with_pivot : True
+    relations_hold_as_polynomials : True
+    selection dev                    triangular, nonzero pivots, solution = p(z) : True
+    selection mirror(fixed order)    triangular, nonzero pivots, solution = p(z) : True
+    selection per-degree switch      triangular, nonzero pivots, solution = p(z) : True
+    selection random admissible 0    triangular, nonzero pivots, solution = p(z) : True
+    selection random admissible 1    triangular, nonzero pivots, solution = p(z) : True
+    selection random admissible 2    triangular, nonzero pivots, solution = p(z) : True
+    shape C(z) = 12 x 10; normalised 13 x 10 (overdetermined) : True
+    rank C(z) = N_n - 1 = 9 at all 3 points : True
+    rank [e0; C(z)] = N_n = 10 at all points : True
+    p(z) in kernel of C(z) at all points : True
+    number of degree-only but non-admissible (target, relation) pairs : 28
+## random rational set (seed 31102026) n = 4 M = 40 U(n+1): True
+    relations_last_unknown_is_A*lm(l)_with_pivot : True
+    relations_hold_as_polynomials : True
+    selection dev                    triangular, nonzero pivots, solution = p(z) : True
+    selection mirror(fixed order)    triangular, nonzero pivots, solution = p(z) : True
+    selection per-degree switch      triangular, nonzero pivots, solution = p(z) : True
+    selection random admissible 0    triangular, nonzero pivots, solution = p(z) : True
+    selection random admissible 1    triangular, nonzero pivots, solution = p(z) : True
+    selection random admissible 2    triangular, nonzero pivots, solution = p(z) : True
+    shape C(z) = 20 x 15; normalised 21 x 15 (overdetermined) : True
+    rank C(z) = N_n - 1 = 14 at all 3 points : True
+    rank [e0; C(z)] = N_n = 15 at all points : True
+    p(z) in kernel of C(z) at all points : True
+    number of degree-only but non-admissible (target, relation) pairs : 60
+## T113 affine scaling check: triangle T_6 (M = 28), weights 1..3, impulses s of degree 1..2, n <= 4
+   c = -2, d = (1, -2): norms D_k' = c^(2 deg k) D_k: True; squared entries scale by c^-2: True; signs sign(c)^(deg k - deg s): True  (1680 entries)
+     mpmath 50 digits, node 3, all s >= 1, k >= s: max rel. deviation of signed entries from sign(c)^(deg k - deg s)|c|^-1 * entry: 0.0
+   c = -1/3, d = (0, 5): norms D_k' = c^(2 deg k) D_k: True; squared entries scale by c^-2: True; signs sign(c)^(deg k - deg s): True  (1680 entries)
+     mpmath 50 digits, node 3, all s >= 1, k >= s: max rel. deviation of signed entries from sign(c)^(deg k - deg s)|c|^-1 * entry: 1.25e-49
+   c = 3/2, d = (-1, 0): norms D_k' = c^(2 deg k) D_k: True; squared entries scale by c^-2: True; signs sign(c)^(deg k - deg s): True  (1680 entries)
+     mpmath 50 digits, node 3, all s >= 1, k >= s: max rel. deviation of signed entries from sign(c)^(deg k - deg s)|c|^-1 * entry: 7.55e-50
+# ALL CHECKS PASSED: True
+
+real	0m15.547s
+user	0m15.385s
+sys	0m0.005s
