@@ -1,6 +1,6 @@
 # Handoff 01 — mz-prior-art-20261101 — final audit and preparation
 
-- Status: open
+- Status: done in 5315d4611b893a5bbf7811c3b3f5d9a19f214261
 - Previous handoff: none (adopting the merged PR #13 procedure on this continuation)
 - Next agent / model / effort: Codex, gpt-6-astra high
 - Role: auditor and finalization orchestrator

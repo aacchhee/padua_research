@@ -34,3 +34,7 @@ Small audit/check records are committed under audit-support; generated PDF/logs 
 Publish the accepted audit/preparation outputs, then close handoff 01 in a following commit naming the real output SHA, without a successor. Update the PR body/title to the final state and mark ready for review. Final publication hashes go in the PR description/receipts rather than self-referential source text. No continuation prompt or further Claude round is needed; the only pending action is AC's merge decision.
 
 Independent finalization review is [CLEAN](audit-support/final-independent-review.md); [check receipt](audit-support/final-independent-checks.json). It implemented none of these edits. No agent preparation remains after publication and handoff closure.
+
+## Completed publication
+
+Outputs are published at `5315d4611b893a5bbf7811c3b3f5d9a19f214261` (tree `d6a72376d1527624bbc2a45bf394b2d3f24b6d2a`). The following metadata-only commit closes handoff 01 with that real output SHA and no successor. The whole-PR whitespace check passes and the final tree exactly equals the disposable squash rehearsal; the final closure tree is checked again before publication. All assigned agent work is complete. PR #11 is ready for AC’s merge decision; no agent continuation remains.
