@@ -3,7 +3,7 @@
 - Branch: `codex/padua-mz-2d-20261101` · Base/rules read: `cf89b140530d5838bdb208a8c28f3e7aa676ace3`.
 - Role: Codex orchestrator. Root model/effort metadata is runtime-unexposed; delegated mathematics uses `gpt-6.1-sol xhigh`, code/mechanical work `gpt-6.1-sol medium`. No ultra allocation.
 - Stage: WORK (documentation-only response). Claude Opus 5.5 xhigh audit-01 complete at `e847601`: mathematics ACCEPTED at stated scope; six P3 record findings, see [audit-01.md](audit-01.md).
-- Open handoff: [02-audit.md](handoffs/02-audit.md), Claude Opus 5.5 xhigh; candidate `e847601c6c1f1261d4862d63360fdfdb0df8a15b`.
+- Open handoff: [03-response.md](handoffs/03-response.md), Codex gpt-6.1-sol medium (high for F1); input `0d48727f13bf8afcf8c21568ed71572c305552a5`. Handoff 02 done in `0d48727f13bf8afcf8c21568ed71572c305552a5`.
 - Reserved final-ID ranges: PD-T106–135 (30), PD-N044–061 (18), IDEA-210–245 (36), LIT-427–444 (18), including permanent headroom. Fresh scan and provenance: [protocol/reservation-scan.json](protocol/reservation-scan.json). Batch ledger: [ALLOCATIONS.md](../padua-batch-20261031/ALLOCATIONS.md). Reservation only; no final IDs assigned yet.
 - Scientific outcome: D1 PASS; exact alias/defect structure, replayed finite spectra and eta>3/4 witness, corner formula, diamond reconstruction, corrected signed hyperinterpolation scope, tensor-control theorem. Existing PD-T028 stays OPEN. Floating computations are MEASURED. Full statuses: [report.md](report.md).
 
@@ -80,4 +80,4 @@ Claude, Opus 5.5 xhigh, acting as independent auditor and as orchestrator for ha
 
 Next: [handoff 03](handoffs/03-response.md), Codex `response-01.md` (documentation-only) and readiness preparation. PR14 stays draft.
 
-- Handoff 02 → done in the audit-output commit; [handoff 03](handoffs/03-response.md) is open.
+- Handoff 02 → done in `0d48727f13bf8afcf8c21568ed71572c305552a5`; [handoff 03](handoffs/03-response.md) open.
