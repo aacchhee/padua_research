@@ -1,0 +1,92 @@
+{
+  "status": "INDEPENDENT EXECUTION; numerical measurements only",
+  "executor": "Codex orchestrator; exact runtime model/effort unexposed; no E6 development",
+  "command": "OPENBLAS_NUM_THREADS=1 python tracks/bivariate-lanczos/code/drift/e6_benchmark.py --sets rotpi4 triangle --output /workspace/padua-drift-runs/root-independent-e6.json",
+  "python": "3.12.14",
+  "output_path": "/workspace/padua-drift-runs/root-independent-e6.json",
+  "output_sha256": "3cc34860ead3b2bc4d07441e9e10a8adc7e0acc0be1c643c6a9287e2a18056c4",
+  "output_bytes": 25154,
+  "code_sha256": "e328b7d5d965637e986285cafe596ac15cdd9320c195d6f02162d883267baafe",
+  "cases": [
+    {
+      "name": "rotpi4",
+      "exact_json_case_equal": true,
+      "input_sha256": "a356501243b1fc883f795ee0908966b1fbeac4be09312e7eb8ee75f602229d42",
+      "reference": {
+        "kind": "frame Chebyshev",
+        "kappa": 3777.9297140008975,
+        "u_kappa": 4.194344553899329e-13,
+        "smin": 0.0005090632898280409,
+        "rank_tolerance_rule": "s0*max(M,N)*eps",
+        "numerical_rank": 325,
+        "full_rank": true,
+        "trusted": true
+      },
+      "upstream_yx": {
+        "gap": 0.004105469352253462,
+        "orth_max": 6.8833827526759706e-15,
+        "adversarial_fit_relative_residual": 0.004105469352253459,
+        "projection_using_Q_relative_residual": 0.0041054693522534465,
+        "terminal_defect_0": 0.002074502562803565,
+        "terminal_defect_1": 1.1351871027015083e-15,
+        "adversarial_test_relative_error": 0.0010138608616164946
+      },
+      "alt": {
+        "gap": 2.122043754569406e-08,
+        "orth_max": 6.8833827526759706e-15,
+        "adversarial_fit_relative_residual": 8.21542414409055e-09,
+        "projection_using_Q_relative_residual": 8.215424106574877e-09,
+        "terminal_defect_0": 7.845909310383602e-09,
+        "terminal_defect_1": 2.1403834678636755e-10
+      },
+      "adapt": {
+        "gap": 1.8592487265547192e-06,
+        "orth_max": 6.8833827526759706e-15,
+        "adversarial_fit_relative_residual": 1.016247056441297e-06,
+        "projection_using_Q_relative_residual": 1.0162470564061645e-06,
+        "terminal_defect_0": 1.3642582732219345e-07,
+        "terminal_defect_1": 7.300375082734273e-07
+      }
+    },
+    {
+      "name": "triangle",
+      "exact_json_case_equal": true,
+      "input_sha256": "806ae0a1e54e9301955c9f7ddc52924922b3a8c51a7198174a0d476b291f0379",
+      "reference": {
+        "kind": "Dubiner",
+        "kappa": 100.63237448746257,
+        "u_kappa": 1.1172437917868213e-14,
+        "smin": 0.02437512163543486,
+        "rank_tolerance_rule": "s0*max(M,N)*eps",
+        "numerical_rank": 231,
+        "full_rank": true,
+        "trusted": true
+      },
+      "upstream_yx": {
+        "gap": 0.010163571396223751,
+        "orth_max": 6.8833827526759706e-15,
+        "adversarial_fit_relative_residual": 0.010163571396223751,
+        "projection_using_Q_relative_residual": 0.010163571396223781,
+        "terminal_defect_0": 0.003933817316984301,
+        "terminal_defect_1": 8.296927483962137e-16,
+        "adversarial_test_relative_error": 0.0015694263047789933
+      },
+      "alt": {
+        "gap": 7.602150159701751e-08,
+        "orth_max": 6.8833827526759706e-15,
+        "adversarial_fit_relative_residual": 1.9117783687684457e-08,
+        "projection_using_Q_relative_residual": 1.9117783690747805e-08,
+        "terminal_defect_0": 1.7400072027937704e-08,
+        "terminal_defect_1": 3.6308083010714427e-10
+      },
+      "adapt": {
+        "gap": 9.519397852923627e-10,
+        "orth_max": 6.8833827526759706e-15,
+        "adversarial_fit_relative_residual": 1.9816714219719305e-10,
+        "projection_using_Q_relative_residual": 1.9816710888644744e-10,
+        "terminal_defect_0": 2.0079962869312523e-10,
+        "terminal_defect_1": 6.438910765724359e-12
+      }
+    }
+  ]
+}

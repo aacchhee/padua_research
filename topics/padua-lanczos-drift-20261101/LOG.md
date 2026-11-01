@@ -45,3 +45,12 @@
 - E5 analytic draft PD-T?drift-codex-30 gives an explicit common-angle corner witness with n^14 P_n tending to -6400*pi^12/729 and limsup n^5 rho_n <=20*sqrt(2)*pi^4/9. A separate Astra xhigh reconstruction reports no gap so far; final check record and Claude audit remain pending. No conclusion on the optimal obstruction radius delta_obs.
 - Root authorized a bounded E2 attempt after aggregate-map survival; per-operation realization and any all-degree exponential/matching theorem remain separate OPEN obligations.
 - Public upstream polyrat runs have completed on all12 frozen L2 benchmarks; E6 developer is recording ordering, reference conditioning and fit-target limits. Root independently reran the two hard cases (actual command/results to enter independent-checks after comparison).
+
+## E3–E6 direction boundary and independent evidence
+
+- E3: analytic computed-polynomial span certificate and normalized filtered minimax criterion (PD-T?drift-codex-10/11). This is a fixed-degree implication; a priori polynomial safety remains OPEN.
+- E4: explicit distinction among error quantifiers (PD-N?drift-codex-14) and ten-node fixed-prefix, projection-only obstruction (PD-N?drift-codex-15). The original055/exponential target remains OPEN.
+- E5: named Padua positivity radius O(n^-5) and explicit residual-aware square-root family (PD-T?drift-codex-30/31). Uniformity over all certificates and reading(G) remain OPEN. Failed witness paths are retained separately.
+- E6: actual public polyrat source,12 frozen benchmarks plus2grids at2degrees; durable MEASURED home PD-T?drift-codex-50. Root independently reran rotated-square and triangle, comparing both complete case objects equal; receipt evidence/independent-e6-root.json.
+- Independent Astra xhigh checker published checks/independent-math-01.md and essential exact evidence/independent-math-01.json: own1800 coordinate derivative checks, exact decisive n12 reruns, E3/E4/E5 analytic reconstruction and rational tables/moments. Supplementary only, Claude audit PENDING.
+- All88 aggregate exact runs completed without fallback. Original sufficient KHS test INCONCLUSIVE, tightened certificate passes. Full scalarCGS2 graph is now declared and tested separately; no fullgraph rotated verdict is claimed yet.

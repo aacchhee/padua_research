@@ -1,0 +1,35 @@
+{
+  "base_rules_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+  "developer": "Codex E5; requested gpt-6.1-sol xhigh; resolved variant/effort not independently exposed",
+  "working_directory": "/workspace/padua_research",
+  "command": "python3 -I -B tracks/bivariate-lanczos/code/drift/e5_exact_checks.py > topics/padua-lanczos-drift-20261101/evidence/e5-exact-checks.json",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "randomness": "none",
+  "result": "PASS",
+  "interpretation": "Exact symbolic corroboration. Universal claims have written analytic proofs; no computer-assisted proof or finite negativity threshold claimed.",
+  "independent_execution": "Distinct independent mathematical checker constructed derivatives and square moments afresh; code/output/hash pin parent-owned; /workspace/padua-drift-runs/independent/independent-math-check.json reported PASS. External Claude audit pending.",
+  "retention": "Small necessary repository evidence; cold-storage transfer not claimed",
+  "artifacts": [
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e5_exact_checks.py",
+      "sha256": "4c0a4b5bc7cf70adbb25098c6e0c4d9d26cd86548508f288ab511b6ad7a02c5c",
+      "bytes": 3179
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e5-30-padua-positivity-radius-upper-bound.md",
+      "sha256": "54f90362a5d85a37447a4589fd735fabc966e25c7fa4665968a4ff144b7adc00",
+      "bytes": 7578
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e5-31-explicit-square-root-spread-family.md",
+      "sha256": "50ddbc5d914431a245a84c59832a460b7f0f969db3c9ff37821bf47ee557d7d8",
+      "bytes": 7691
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e5-exact-checks.json",
+      "sha256": "daf14ff20d44713cc1bd103341781b35a66d4b956a8d0c2cc826e25b38627396",
+      "bytes": 724
+    }
+  ]
+}

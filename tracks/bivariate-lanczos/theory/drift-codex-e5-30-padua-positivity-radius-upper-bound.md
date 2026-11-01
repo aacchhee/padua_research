@@ -45,7 +45,7 @@ Exact real arithmetic. No assumption about weights, Padua unisolvence, floating-
 
 ## Status by part
 
-Overall status: PROVED (written analytic proof; independent reconstruction pending).
+Overall status: PROVED (written analytic proof; independent reconstruction completed; external Claude audit pending).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -60,7 +60,9 @@ Only the definitions of P_n and rho_n from PD-T069/PD-T075. The positive node-He
 
 ## Checks
 
-The proof below is analytic and does not depend on a finite computer check. A developer SymPy expansion first suggested the scaling; its role was discovery only. A small symbolic/measurement corroboration script and separate independent reconstruction are requested in the E5 direction record. No computer-assisted proof is claimed.
+The proof below is analytic and does not depend on a finite computer check. A developer SymPy expansion first suggested the scaling; its role was discovery only. `python3 -I -B tracks/bivariate-lanczos/code/drift/e5_exact_checks.py` exactly checks the derivative identities and limiting quadratic: PASS (Python 3.12.14, SymPy 1.14.0), output `topics/padua-lanczos-drift-20261101/evidence/e5-exact-checks.json`; hashes/provenance in `e5-manifest.json` beside it. No computer-assisted proof is claimed.
+
+The parent's distinct `independent_math_check` agent independently reconstructed both derivative identities, the n^-7 generator limit, the negative quadratic coefficient, and the distance/radius implication with no gap reported. It separately executed 100-digit numerical corroboration for n=10..3000, recorded with its own code/input hashes in the parent-owned independent-check record; those finite values are corroboration, not a finite threshold or the universal proof. External Claude audit remains pending.
 
 ## Sources
 
@@ -136,7 +138,7 @@ This settles only PD-T075(U1), for its named certificate P_n. It does not bound 
 
 ## Open items
 
-- Independent reconstruction of the two derivative identities, limiting coefficient, and distance bound.
+- Required external Claude mathematical audit; the supplementary independent reconstruction found no gap.
 - Optional explicit finite threshold N for negativity at every n>=N; existence of N is proved by the strictly negative limit and no numerical threshold is assumed.
 - A matching lower rate for rho_n, or sharper upper witnesses.
 - PD-T075(U2), uniformity for all possible obstruction certificates.

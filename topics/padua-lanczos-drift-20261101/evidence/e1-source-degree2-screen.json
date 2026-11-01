@@ -1,0 +1,2798 @@
+{
+  "status": "MEASURED",
+  "scope": "exact rational finite sensitivity bounds; independent rerun pending",
+  "runs": [
+    {
+      "degree": 2,
+      "rule": "bj",
+      "sources": "degree2",
+      "source_count": 3,
+      "point_count": 325,
+      "basis_count": 6,
+      "Knode_squared": {
+        "exact": "820783/127400",
+        "float": 6.44256671899529,
+        "sqrt_rational_interval": [
+          "1269110586099/500000000000",
+          "2538221172199/1000000000000"
+        ]
+      },
+      "KHS_squared": {
+        "exact": "5168119/1288",
+        "float": 4012.514751552795,
+        "sqrt_rational_interval": [
+          "31672206867981/500000000000",
+          "63344413735963/1000000000000"
+        ]
+      },
+      "Urow_squared": {
+        "exact": "16201/1288",
+        "float": 12.578416149068323,
+        "sqrt_rational_interval": [
+          "709321257233/200000000000",
+          "1773303143083/500000000000"
+        ]
+      },
+      "upper_squared": {
+        "exact": "16201/1288",
+        "float": 12.578416149068323,
+        "sqrt_rational_interval": [
+          "709321257233/200000000000",
+          "1773303143083/500000000000"
+        ]
+      },
+      "witness": {
+        "source": 4,
+        "source_degree_index": [
+          2,
+          1
+        ],
+        "node": 120,
+        "point": [
+          "-7/12",
+          "-7/12"
+        ]
+      },
+      "elapsed_seconds": 0.004791540999974586,
+      "normal_trace_exact": "319",
+      "expected_normal_trace": 319,
+      "pivot_choices": [
+        "X",
+        "Y",
+        "X",
+        "Y",
+        "Y"
+      ],
+      "basis_orthogonality": "exact full projection by construction; projector diagonal nonnegative checked",
+      "set": "triangle",
+      "status": "MEASURED exact rational finite bounds; no automatic spectral verdict",
+      "python": "3.12.14",
+      "python_flint": "0.9.0",
+      "code_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+      "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "command": "/workspace/padua_research/tracks/bivariate-lanczos/code/drift/e1_exact.py --set triangle --degree 2 --rule bj --sources degree2 --output /workspace/padua-drift-runs/e1/screen/triangle-n2-bj-degree2.json",
+      "artifact": {
+        "path": "/workspace/padua-drift-runs/e1/screen/triangle-n2-bj-degree2.json",
+        "bytes": 1864,
+        "sha256": "9b07d294555a5598c6ebc609135b7995bc7b326fc91304e5ae736d20d991f50a"
+      }
+    },
+    {
+      "degree": 2,
+      "rule": "mirror",
+      "sources": "degree2",
+      "source_count": 3,
+      "point_count": 325,
+      "basis_count": 6,
+      "Knode_squared": {
+        "exact": "93707/19600",
+        "float": 4.780969387755102,
+        "sqrt_rational_interval": [
+          "136658924593/62500000000",
+          "2186542793489/1000000000000"
+        ]
+      },
+      "KHS_squared": {
+        "exact": "963061/322",
+        "float": 2990.8726708074532,
+        "sqrt_rational_interval": [
+          "54688871544469/1000000000000",
+          "5468887154447/100000000000"
+        ]
+      },
+      "Urow_squared": {
+        "exact": "3019/322",
+        "float": 9.375776397515528,
+        "sqrt_rational_interval": [
+          "3061988961037/1000000000000",
+          "1530994480519/500000000000"
+        ]
+      },
+      "upper_squared": {
+        "exact": "3019/322",
+        "float": 9.375776397515528,
+        "sqrt_rational_interval": [
+          "3061988961037/1000000000000",
+          "1530994480519/500000000000"
+        ]
+      },
+      "witness": {
+        "source": 4,
+        "source_degree_index": [
+          2,
+          1
+        ],
+        "node": 120,
+        "point": [
+          "-7/12",
+          "-7/12"
+        ]
+      },
+      "elapsed_seconds": 0.004791570999998385,
+      "normal_trace_exact": "319",
+      "expected_normal_trace": 319,
+      "pivot_choices": [
+        "X",
+        "Y",
+        "X",
+        "X",
+        "Y"
+      ],
+      "basis_orthogonality": "exact full projection by construction; projector diagonal nonnegative checked",
+      "set": "triangle",
+      "status": "MEASURED exact rational finite bounds; no automatic spectral verdict",
+      "python": "3.12.14",
+      "python_flint": "0.9.0",
+      "code_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+      "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "command": "/workspace/padua_research/tracks/bivariate-lanczos/code/drift/e1_exact.py --set triangle --degree 2 --rule mirror --sources degree2 --output /workspace/padua-drift-runs/e1/screen/triangle-n2-mirror-degree2.json",
+      "artifact": {
+        "path": "/workspace/padua-drift-runs/e1/screen/triangle-n2-mirror-degree2.json",
+        "bytes": 1869,
+        "sha256": "6bbb3385a3e8849ecb3872381029ac750af3e5ad385671ad49bf526317e3c056"
+      }
+    },
+    {
+      "degree": 2,
+      "rule": "alt",
+      "sources": "degree2",
+      "source_count": 3,
+      "point_count": 325,
+      "basis_count": 6,
+      "Knode_squared": {
+        "exact": "820783/127400",
+        "float": 6.44256671899529,
+        "sqrt_rational_interval": [
+          "1269110586099/500000000000",
+          "2538221172199/1000000000000"
+        ]
+      },
+      "KHS_squared": {
+        "exact": "5168119/1288",
+        "float": 4012.514751552795,
+        "sqrt_rational_interval": [
+          "31672206867981/500000000000",
+          "63344413735963/1000000000000"
+        ]
+      },
+      "Urow_squared": {
+        "exact": "16201/1288",
+        "float": 12.578416149068323,
+        "sqrt_rational_interval": [
+          "709321257233/200000000000",
+          "1773303143083/500000000000"
+        ]
+      },
+      "upper_squared": {
+        "exact": "16201/1288",
+        "float": 12.578416149068323,
+        "sqrt_rational_interval": [
+          "709321257233/200000000000",
+          "1773303143083/500000000000"
+        ]
+      },
+      "witness": {
+        "source": 4,
+        "source_degree_index": [
+          2,
+          1
+        ],
+        "node": 120,
+        "point": [
+          "-7/12",
+          "-7/12"
+        ]
+      },
+      "elapsed_seconds": 0.004647766999994474,
+      "normal_trace_exact": "319",
+      "expected_normal_trace": 319,
+      "pivot_choices": [
+        "X",
+        "Y",
+        "X",
+        "Y",
+        "Y"
+      ],
+      "basis_orthogonality": "exact full projection by construction; projector diagonal nonnegative checked",
+      "set": "triangle",
+      "status": "MEASURED exact rational finite bounds; no automatic spectral verdict",
+      "python": "3.12.14",
+      "python_flint": "0.9.0",
+      "code_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+      "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "command": "/workspace/padua_research/tracks/bivariate-lanczos/code/drift/e1_exact.py --set triangle --degree 2 --rule alt --sources degree2 --output /workspace/padua-drift-runs/e1/screen/triangle-n2-alt-degree2.json",
+      "artifact": {
+        "path": "/workspace/padua-drift-runs/e1/screen/triangle-n2-alt-degree2.json",
+        "bytes": 1867,
+        "sha256": "10c0a1925aa61a59e564cd68d4d756420740bbe24711972272bf6967af820f7d"
+      }
+    },
+    {
+      "degree": 2,
+      "rule": "pivot",
+      "sources": "degree2",
+      "source_count": 3,
+      "point_count": 325,
+      "basis_count": 6,
+      "Knode_squared": {
+        "exact": "93707/19600",
+        "float": 4.780969387755102,
+        "sqrt_rational_interval": [
+          "136658924593/62500000000",
+          "2186542793489/1000000000000"
+        ]
+      },
+      "KHS_squared": {
+        "exact": "963061/322",
+        "float": 2990.8726708074532,
+        "sqrt_rational_interval": [
+          "54688871544469/1000000000000",
+          "5468887154447/100000000000"
+        ]
+      },
+      "Urow_squared": {
+        "exact": "3019/322",
+        "float": 9.375776397515528,
+        "sqrt_rational_interval": [
+          "3061988961037/1000000000000",
+          "1530994480519/500000000000"
+        ]
+      },
+      "upper_squared": {
+        "exact": "3019/322",
+        "float": 9.375776397515528,
+        "sqrt_rational_interval": [
+          "3061988961037/1000000000000",
+          "1530994480519/500000000000"
+        ]
+      },
+      "witness": {
+        "source": 4,
+        "source_degree_index": [
+          2,
+          1
+        ],
+        "node": 120,
+        "point": [
+          "-7/12",
+          "-7/12"
+        ]
+      },
+      "elapsed_seconds": 0.0047264039999959095,
+      "normal_trace_exact": "319",
+      "expected_normal_trace": 319,
+      "pivot_choices": [
+        "X",
+        "Y",
+        "X",
+        "X",
+        "Y"
+      ],
+      "basis_orthogonality": "exact full projection by construction; projector diagonal nonnegative checked",
+      "set": "triangle",
+      "status": "MEASURED exact rational finite bounds; no automatic spectral verdict",
+      "python": "3.12.14",
+      "python_flint": "0.9.0",
+      "code_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+      "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "command": "/workspace/padua_research/tracks/bivariate-lanczos/code/drift/e1_exact.py --set triangle --degree 2 --rule pivot --sources degree2 --output /workspace/padua-drift-runs/e1/screen/triangle-n2-pivot-degree2.json",
+      "artifact": {
+        "path": "/workspace/padua-drift-runs/e1/screen/triangle-n2-pivot-degree2.json",
+        "bytes": 1867,
+        "sha256": "098d340f53212e8c7e7d34bc56ae3b191ebd58077cde62c314b24485c031c606"
+      }
+    },
+    {
+      "degree": 8,
+      "rule": "bj",
+      "sources": "degree2",
+      "source_count": 3,
+      "point_count": 325,
+      "basis_count": 45,
+      "Knode_squared": {
+        "exact": "764864548740990252317/884131483950",
+        "float": 865102716.7631612,
+        "sqrt_rational_interval": [
+          "29412628525229791/1000000000000",
+          "919144641413431/31250000000"
+        ]
+      },
+      "KHS_squared": {
+        "exact": "12828722648230383946999818656531/756888167801262420000",
+        "float": 16949297391.578259,
+        "sqrt_rational_interval": [
+          "26037893456712859/200000000000",
+          "16273683410445537/125000000000"
+        ]
+      },
+      "Urow_squared": {
+        "exact": "33237805199741579116761539/7157064203730000",
+        "float": 4644055754.371919,
+        "sqrt_rational_interval": [
+          "13629461844653909/200000000000",
+          "34073654611634773/500000000000"
+        ]
+      },
+      "upper_squared": {
+        "exact": "33237805199741579116761539/7157064203730000",
+        "float": 4644055754.371919,
+        "sqrt_rational_interval": [
+          "13629461844653909/200000000000",
+          "34073654611634773/500000000000"
+        ]
+      },
+      "witness": {
+        "source": 3,
+        "source_degree_index": [
+          2,
+          0
+        ],
+        "node": 48,
+        "point": [
+          "-11/12",
+          "11/12"
+        ]
+      },
+      "elapsed_seconds": 0.08685665699999845,
+      "normal_trace_exact": "280",
+      "expected_normal_trace": 280,
+      "pivot_choices": [
+        "X",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "basis_orthogonality": "exact full projection by construction; projector diagonal nonnegative checked",
+      "set": "triangle",
+      "status": "MEASURED exact rational finite bounds; no automatic spectral verdict",
+      "python": "3.12.14",
+      "python_flint": "0.9.0",
+      "code_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+      "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "command": "/workspace/padua_research/tracks/bivariate-lanczos/code/drift/e1_exact.py --set triangle --degree 8 --rule bj --sources degree2 --output /workspace/padua-drift-runs/e1/screen/triangle-n8-bj-degree2.json",
+      "artifact": {
+        "path": "/workspace/padua-drift-runs/e1/screen/triangle-n8-bj-degree2.json",
+        "bytes": 2372,
+        "sha256": "8f92628a802982a0152c8cd6204346f8b65789a509686070c4d8af9acc2e630c"
+      }
+    },
+    {
+      "degree": 8,
+      "rule": "mirror",
+      "sources": "degree2",
+      "source_count": 3,
+      "point_count": 325,
+      "basis_count": 45,
+      "Knode_squared": {
+        "exact": "40707274362418159033/149782274928000",
+        "float": 271776.31253087893,
+        "sqrt_rational_interval": [
+          "521321697736511/1000000000000",
+          "8145651527133/15625000000"
+        ]
+      },
+      "KHS_squared": {
+        "exact": "6890877847534961642904811442599/2781564016669639393500000",
+        "float": 2477339.2976895766,
+        "sqrt_rational_interval": [
+          "786978287135289/500000000000",
+          "1573956574270579/1000000000000"
+        ]
+      },
+      "Urow_squared": {
+        "exact": "82717465656965849948167/42942385222380000",
+        "float": 1926242.923596534,
+        "sqrt_rational_interval": [
+          "346972884711159/250000000000",
+          "1387891538844637/1000000000000"
+        ]
+      },
+      "upper_squared": {
+        "exact": "82717465656965849948167/42942385222380000",
+        "float": 1926242.923596534,
+        "sqrt_rational_interval": [
+          "346972884711159/250000000000",
+          "1387891538844637/1000000000000"
+        ]
+      },
+      "witness": {
+        "source": 5,
+        "source_degree_index": [
+          2,
+          2
+        ],
+        "node": 322,
+        "point": [
+          "11/12",
+          "-1"
+        ]
+      },
+      "elapsed_seconds": 0.07726776700002347,
+      "normal_trace_exact": "280",
+      "expected_normal_trace": 280,
+      "pivot_choices": [
+        "X",
+        "Y",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y"
+      ],
+      "basis_orthogonality": "exact full projection by construction; projector diagonal nonnegative checked",
+      "set": "triangle",
+      "status": "MEASURED exact rational finite bounds; no automatic spectral verdict",
+      "python": "3.12.14",
+      "python_flint": "0.9.0",
+      "code_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+      "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "command": "/workspace/padua_research/tracks/bivariate-lanczos/code/drift/e1_exact.py --set triangle --degree 8 --rule mirror --sources degree2 --output /workspace/padua-drift-runs/e1/screen/triangle-n8-mirror-degree2.json",
+      "artifact": {
+        "path": "/workspace/padua-drift-runs/e1/screen/triangle-n8-mirror-degree2.json",
+        "bytes": 2373,
+        "sha256": "41795a5ca21aeb2293d9ec6fcfe6a88a34153f7c1a532baf5380829d5898f705"
+      }
+    },
+    {
+      "degree": 8,
+      "rule": "alt",
+      "sources": "degree2",
+      "source_count": 3,
+      "point_count": 325,
+      "basis_count": 45,
+      "Knode_squared": {
+        "exact": "3887093194337207732423772167927802107147/3517659442455494514436177920000000",
+        "float": 1105022.6032181873,
+        "sqrt_rational_interval": [
+          "210240110656191/200000000000",
+          "262800138320239/250000000000"
+        ]
+      },
+      "KHS_squared": {
+        "exact": "7695776103518794348130291561385201700561/718494808404940673320101888000000",
+        "float": 10710969.673675759,
+        "sqrt_rational_interval": [
+          "3272761780771059/1000000000000",
+          "163638089038553/50000000000"
+        ]
+      },
+      "Urow_squared": {
+        "exact": "987863834134561454148801148574063/178402005169832157714000000",
+        "float": 5537291.092631786,
+        "sqrt_rational_interval": [
+          "2353144936596933/1000000000000",
+          "1176572468298467/500000000000"
+        ]
+      },
+      "upper_squared": {
+        "exact": "987863834134561454148801148574063/178402005169832157714000000",
+        "float": 5537291.092631786,
+        "sqrt_rational_interval": [
+          "2353144936596933/1000000000000",
+          "1176572468298467/500000000000"
+        ]
+      },
+      "witness": {
+        "source": 4,
+        "source_degree_index": [
+          2,
+          1
+        ],
+        "node": 48,
+        "point": [
+          "-11/12",
+          "11/12"
+        ]
+      },
+      "elapsed_seconds": 0.09580955399997038,
+      "normal_trace_exact": "280",
+      "expected_normal_trace": 280,
+      "pivot_choices": [
+        "X",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "basis_orthogonality": "exact full projection by construction; projector diagonal nonnegative checked",
+      "set": "triangle",
+      "status": "MEASURED exact rational finite bounds; no automatic spectral verdict",
+      "python": "3.12.14",
+      "python_flint": "0.9.0",
+      "code_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+      "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "command": "/workspace/padua_research/tracks/bivariate-lanczos/code/drift/e1_exact.py --set triangle --degree 8 --rule alt --sources degree2 --output /workspace/padua-drift-runs/e1/screen/triangle-n8-alt-degree2.json",
+      "artifact": {
+        "path": "/workspace/padua-drift-runs/e1/screen/triangle-n8-alt-degree2.json",
+        "bytes": 2466,
+        "sha256": "a9b95289ba0a40f9d005840a6e1eda5b28ef90bc95ffb291f86a234fadab0c82"
+      }
+    },
+    {
+      "degree": 8,
+      "rule": "pivot",
+      "sources": "degree2",
+      "source_count": 3,
+      "point_count": 325,
+      "basis_count": 45,
+      "Knode_squared": {
+        "exact": "23314876696110327568385963756707349533/338898588757696438718607360000000",
+        "float": 68796.02768950994,
+        "sqrt_rational_interval": [
+          "52457993743379/200000000000",
+          "8196561522403/31250000000"
+        ]
+      },
+      "KHS_squared": {
+        "exact": "24611883118116643463067063658029976782919339/53155497497399248650813372690432000000",
+        "float": 463016.7015052551,
+        "sqrt_rational_interval": [
+          "680453305896337/1000000000000",
+          "340226652948169/500000000000"
+        ]
+      },
+      "Urow_squared": {
+        "exact": "21079121581386194210870983155538813379/56829577335666567302078208000000",
+        "float": 370918.1480777408,
+        "sqrt_rational_interval": [
+          "152257624619783/250000000000",
+          "609030498479133/1000000000000"
+        ]
+      },
+      "upper_squared": {
+        "exact": "21079121581386194210870983155538813379/56829577335666567302078208000000",
+        "float": 370918.1480777408,
+        "sqrt_rational_interval": [
+          "152257624619783/250000000000",
+          "609030498479133/1000000000000"
+        ]
+      },
+      "witness": {
+        "source": 4,
+        "source_degree_index": [
+          2,
+          1
+        ],
+        "node": 48,
+        "point": [
+          "-11/12",
+          "11/12"
+        ]
+      },
+      "elapsed_seconds": 0.11512934199998881,
+      "normal_trace_exact": "280",
+      "expected_normal_trace": 280,
+      "pivot_choices": [
+        "X",
+        "Y",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "basis_orthogonality": "exact full projection by construction; projector diagonal nonnegative checked",
+      "set": "triangle",
+      "status": "MEASURED exact rational finite bounds; no automatic spectral verdict",
+      "python": "3.12.14",
+      "python_flint": "0.9.0",
+      "code_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+      "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "command": "/workspace/padua_research/tracks/bivariate-lanczos/code/drift/e1_exact.py --set triangle --degree 8 --rule pivot --sources degree2 --output /workspace/padua-drift-runs/e1/screen/triangle-n8-pivot-degree2.json",
+      "artifact": {
+        "path": "/workspace/padua-drift-runs/e1/screen/triangle-n8-pivot-degree2.json",
+        "bytes": 2488,
+        "sha256": "c8b93da9b35371d9ff22fdcdf7f4d917c790656faba290e139ae03ac8337f0a6"
+      }
+    },
+    {
+      "degree": 12,
+      "rule": "bj",
+      "sources": "degree2",
+      "source_count": 3,
+      "point_count": 325,
+      "basis_count": 91,
+      "Knode_squared": {
+        "exact": "486415581296356313461768743118778160151/2723759449257940056810000",
+        "float": 178582430041270.78,
+        "sqrt_rational_interval": [
+          "13363473726590357673/1000000000000",
+          "6681736863295178837/500000000000"
+        ]
+      },
+      "KHS_squared": {
+        "exact": "27337126600478572375220713499692304020880354872339/8535570279074272621268110260000000",
+        "float": 3202729953205121.5,
+        "sqrt_rational_interval": [
+          "7074083369513680387/125000000000",
+          "56592666956109443097/1000000000000"
+        ]
+      },
+      "Urow_squared": {
+        "exact": "213169005376639329715068288186495497/51425715274233300000",
+        "float": 4145183090597614.5,
+        "sqrt_rational_interval": [
+          "64383096311047469539/1000000000000",
+          "3219154815552373477/50000000000"
+        ]
+      },
+      "upper_squared": {
+        "exact": "27337126600478572375220713499692304020880354872339/8535570279074272621268110260000000",
+        "float": 3202729953205121.5,
+        "sqrt_rational_interval": [
+          "7074083369513680387/125000000000",
+          "56592666956109443097/1000000000000"
+        ]
+      },
+      "witness": {
+        "source": 3,
+        "source_degree_index": [
+          2,
+          0
+        ],
+        "node": 71,
+        "point": [
+          "-5/6",
+          "5/6"
+        ]
+      },
+      "elapsed_seconds": 0.28882816399999456,
+      "normal_trace_exact": "234",
+      "expected_normal_trace": 234,
+      "pivot_choices": [
+        "X",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "basis_orthogonality": "exact full projection by construction; projector diagonal nonnegative checked",
+      "set": "triangle",
+      "status": "MEASURED exact rational finite bounds; no automatic spectral verdict",
+      "python": "3.12.14",
+      "python_flint": "0.9.0",
+      "code_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+      "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "command": "/workspace/padua_research/tracks/bivariate-lanczos/code/drift/e1_exact.py --set triangle --degree 12 --rule bj --sources degree2 --output /workspace/padua-drift-runs/e1/screen/triangle-n12-bj-degree2.json",
+      "artifact": {
+        "path": "/workspace/padua-drift-runs/e1/screen/triangle-n12-bj-degree2.json",
+        "bytes": 2931,
+        "sha256": "1b1c2e096ab42c3bf985e6a76ce69069708b20996277c59f01e2ce2d119720bf"
+      }
+    },
+    {
+      "degree": 12,
+      "rule": "mirror",
+      "sources": "degree2",
+      "source_count": 3,
+      "point_count": 325,
+      "basis_count": 91,
+      "Knode_squared": {
+        "exact": "1300601412419790908034101130267476266429/430217805010291631973139500000000",
+        "float": 3023123.165227153,
+        "sqrt_rational_interval": [
+          "869356538657637/500000000000",
+          "69548523092611/40000000000"
+        ]
+      },
+      "KHS_squared": {
+        "exact": "989048260449502882457859241724539435177784285537/49342211280015578312211160088251500000000",
+        "float": 20044668.343635503,
+        "sqrt_rational_interval": [
+          "4477127242287793/1000000000000",
+          "2238563621143897/500000000000"
+        ]
+      },
+      "Urow_squared": {
+        "exact": "4525563618703136986644111068623/18050426061255888300000",
+        "float": 250717828.11913657,
+        "sqrt_rational_interval": [
+          "15834071747947101/1000000000000",
+          "7917035873973551/500000000000"
+        ]
+      },
+      "upper_squared": {
+        "exact": "989048260449502882457859241724539435177784285537/49342211280015578312211160088251500000000",
+        "float": 20044668.343635503,
+        "sqrt_rational_interval": [
+          "4477127242287793/1000000000000",
+          "2238563621143897/500000000000"
+        ]
+      },
+      "witness": {
+        "source": 4,
+        "source_degree_index": [
+          2,
+          1
+        ],
+        "node": 321,
+        "point": [
+          "5/6",
+          "-5/6"
+        ]
+      },
+      "elapsed_seconds": 0.21533629199996085,
+      "normal_trace_exact": "234",
+      "expected_normal_trace": 234,
+      "pivot_choices": [
+        "X",
+        "Y",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y"
+      ],
+      "basis_orthogonality": "exact full projection by construction; projector diagonal nonnegative checked",
+      "set": "triangle",
+      "status": "MEASURED exact rational finite bounds; no automatic spectral verdict",
+      "python": "3.12.14",
+      "python_flint": "0.9.0",
+      "code_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+      "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "command": "/workspace/padua_research/tracks/bivariate-lanczos/code/drift/e1_exact.py --set triangle --degree 12 --rule mirror --sources degree2 --output /workspace/padua-drift-runs/e1/screen/triangle-n12-mirror-degree2.json",
+      "artifact": {
+        "path": "/workspace/padua-drift-runs/e1/screen/triangle-n12-mirror-degree2.json",
+        "bytes": 2929,
+        "sha256": "72791cf0d61c8df253f250aceb9b113d76d1c4e616f61f336c5e0fed2ec1ed86"
+      }
+    },
+    {
+      "degree": 12,
+      "rule": "alt",
+      "sources": "degree2",
+      "source_count": 3,
+      "point_count": 325,
+      "basis_count": 91,
+      "Knode_squared": {
+        "exact": "15426095628661516057966625990091864533281136681674465400803752319/2336511427766508716539912643741499995443353600000000000",
+        "float": 6602191388.98347,
+        "sqrt_rational_interval": [
+          "81253869993886873/1000000000000",
+          "40626934996943437/500000000000"
+        ]
+      },
+      "KHS_squared": {
+        "exact": "2980356017969585415293903664952599674098255122196607531143308280848123649/49003393129821954088259119280053730354089136553984000000000000",
+        "float": 60819380610.520065,
+        "sqrt_rational_interval": [
+          "61653964091188037/250000000000",
+          "246615856364752149/1000000000000"
+        ]
+      },
+      "Urow_squared": {
+        "exact": "463477135206079448455661408654276695630064797812114703614739/2415308430026465430304570349257235404800000000000",
+        "float": 191891490728.16385,
+        "sqrt_rational_interval": [
+          "2190271049026603/5000000000",
+          "438054209805320601/1000000000000"
+        ]
+      },
+      "upper_squared": {
+        "exact": "2980356017969585415293903664952599674098255122196607531143308280848123649/49003393129821954088259119280053730354089136553984000000000000",
+        "float": 60819380610.520065,
+        "sqrt_rational_interval": [
+          "61653964091188037/250000000000",
+          "246615856364752149/1000000000000"
+        ]
+      },
+      "witness": {
+        "source": 4,
+        "source_degree_index": [
+          2,
+          1
+        ],
+        "node": 71,
+        "point": [
+          "-5/6",
+          "5/6"
+        ]
+      },
+      "elapsed_seconds": 0.3432151370000156,
+      "normal_trace_exact": "234",
+      "expected_normal_trace": 234,
+      "pivot_choices": [
+        "X",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "basis_orthogonality": "exact full projection by construction; projector diagonal nonnegative checked",
+      "set": "triangle",
+      "status": "MEASURED exact rational finite bounds; no automatic spectral verdict",
+      "python": "3.12.14",
+      "python_flint": "0.9.0",
+      "code_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+      "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "command": "/workspace/padua_research/tracks/bivariate-lanczos/code/drift/e1_exact.py --set triangle --degree 12 --rule alt --sources degree2 --output /workspace/padua-drift-runs/e1/screen/triangle-n12-alt-degree2.json",
+      "artifact": {
+        "path": "/workspace/padua-drift-runs/e1/screen/triangle-n12-alt-degree2.json",
+        "bytes": 3123,
+        "sha256": "ad0808c23aeb54a3b130cb7a9dd6a661f7a427c26f0925ec8405befbe019cd13"
+      }
+    },
+    {
+      "degree": 12,
+      "rule": "pivot",
+      "sources": "degree2",
+      "source_count": 3,
+      "point_count": 325,
+      "basis_count": 91,
+      "Knode_squared": {
+        "exact": "127309991631556729518794315003461704250254611972209575105299883066735643643/10201608485353510670074516456154345372583144295170048000000000000000",
+        "float": 12479403.793464156,
+        "sqrt_rational_interval": [
+          "88315499041307/25000000000",
+          "3532619961652281/1000000000000"
+        ]
+      },
+      "KHS_squared": {
+        "exact": "14824824643121009248464358351050487249935162799681408542571332235057533187/206350302248920089685439986646671809692346477468057600000000000000",
+        "float": 71842999.41193129,
+        "sqrt_rational_interval": [
+          "847602497707099/100000000000",
+          "8476024977070991/1000000000000"
+        ]
+      },
+      "Urow_squared": {
+        "exact": "2876592815093765979645701535954333504530222755896635593962475154629/3852212525228104887137039266766108077712985292800000000000",
+        "float": 746737828.262326,
+        "sqrt_rational_interval": [
+          "6831626033851339/250000000000",
+          "27326504135405357/1000000000000"
+        ]
+      },
+      "upper_squared": {
+        "exact": "14824824643121009248464358351050487249935162799681408542571332235057533187/206350302248920089685439986646671809692346477468057600000000000000",
+        "float": 71842999.41193129,
+        "sqrt_rational_interval": [
+          "847602497707099/100000000000",
+          "8476024977070991/1000000000000"
+        ]
+      },
+      "witness": {
+        "source": 4,
+        "source_degree_index": [
+          2,
+          1
+        ],
+        "node": 71,
+        "point": [
+          "-5/6",
+          "5/6"
+        ]
+      },
+      "elapsed_seconds": 0.421940372999984,
+      "normal_trace_exact": "234",
+      "expected_normal_trace": 234,
+      "pivot_choices": [
+        "X",
+        "Y",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "basis_orthogonality": "exact full projection by construction; projector diagonal nonnegative checked",
+      "set": "triangle",
+      "status": "MEASURED exact rational finite bounds; no automatic spectral verdict",
+      "python": "3.12.14",
+      "python_flint": "0.9.0",
+      "code_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+      "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "command": "/workspace/padua_research/tracks/bivariate-lanczos/code/drift/e1_exact.py --set triangle --degree 12 --rule pivot --sources degree2 --output /workspace/padua-drift-runs/e1/screen/triangle-n12-pivot-degree2.json",
+      "artifact": {
+        "path": "/workspace/padua-drift-runs/e1/screen/triangle-n12-pivot-degree2.json",
+        "bytes": 3163,
+        "sha256": "9b08afd4a4fb5b9eae029d37af3a3083f4b8a43da60fec82c5c15e613cdeb5a6"
+      }
+    },
+    {
+      "degree": 2,
+      "rule": "bj",
+      "sources": "degree2",
+      "source_count": 3,
+      "point_count": 625,
+      "basis_count": 6,
+      "Knode_squared": {
+        "exact": "48213630986228631/22699472656250000",
+        "float": 2.1239978441945717,
+        "sqrt_rational_interval": [
+          "1457394196569/1000000000000",
+          "145739419657/100000000000"
+        ]
+      },
+      "KHS_squared": {
+        "exact": "17351410337687/5255859375",
+        "float": 3301.346002562521,
+        "sqrt_rational_interval": [
+          "1149146814391/20000000000",
+          "57457340719551/1000000000000"
+        ]
+      },
+      "Urow_squared": {
+        "exact": "28031357573/5255859375",
+        "float": 5.333353800585656,
+        "sqrt_rational_interval": [
+          "577351377011/250000000000",
+          "461881101609/200000000000"
+        ]
+      },
+      "upper_squared": {
+        "exact": "28031357573/5255859375",
+        "float": 5.333353800585656,
+        "sqrt_rational_interval": [
+          "577351377011/250000000000",
+          "461881101609/200000000000"
+        ]
+      },
+      "witness": {
+        "source": 3,
+        "source_degree_index": [
+          2,
+          0
+        ],
+        "node": 182,
+        "point": [
+          "1/12",
+          "-7/12"
+        ]
+      },
+      "elapsed_seconds": 0.00899669100004985,
+      "normal_trace_exact": "619",
+      "expected_normal_trace": 619,
+      "pivot_choices": [
+        "X",
+        "Y",
+        "X",
+        "Y",
+        "Y"
+      ],
+      "basis_orthogonality": "exact full projection by construction; projector diagonal nonnegative checked",
+      "set": "rotated",
+      "status": "MEASURED exact rational finite bounds; no automatic spectral verdict",
+      "python": "3.12.14",
+      "python_flint": "0.9.0",
+      "code_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+      "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "command": "/workspace/padua_research/tracks/bivariate-lanczos/code/drift/e1_exact.py --set rotated --degree 2 --rule bj --sources degree2 --output /workspace/padua-drift-runs/e1/screen/rotated-n2-bj-degree2.json",
+      "artifact": {
+        "path": "/workspace/padua-drift-runs/e1/screen/rotated-n2-bj-degree2.json",
+        "bytes": 1913,
+        "sha256": "cda91f985695d7a27233932f880d42509d2b4fa7a3bed4aa0c183c298066f227"
+      }
+    },
+    {
+      "degree": 2,
+      "rule": "mirror",
+      "sources": "degree2",
+      "source_count": 3,
+      "point_count": 625,
+      "basis_count": 6,
+      "Knode_squared": {
+        "exact": "48213630986228631/22699472656250000",
+        "float": 2.1239978441945717,
+        "sqrt_rational_interval": [
+          "1457394196569/1000000000000",
+          "145739419657/100000000000"
+        ]
+      },
+      "KHS_squared": {
+        "exact": "17351410337687/5255859375",
+        "float": 3301.346002562521,
+        "sqrt_rational_interval": [
+          "1149146814391/20000000000",
+          "57457340719551/1000000000000"
+        ]
+      },
+      "Urow_squared": {
+        "exact": "28031357573/5255859375",
+        "float": 5.333353800585656,
+        "sqrt_rational_interval": [
+          "577351377011/250000000000",
+          "461881101609/200000000000"
+        ]
+      },
+      "upper_squared": {
+        "exact": "28031357573/5255859375",
+        "float": 5.333353800585656,
+        "sqrt_rational_interval": [
+          "577351377011/250000000000",
+          "461881101609/200000000000"
+        ]
+      },
+      "witness": {
+        "source": 3,
+        "source_degree_index": [
+          2,
+          0
+        ],
+        "node": 182,
+        "point": [
+          "1/12",
+          "-7/12"
+        ]
+      },
+      "elapsed_seconds": 0.00915701900004251,
+      "normal_trace_exact": "619",
+      "expected_normal_trace": 619,
+      "pivot_choices": [
+        "X",
+        "Y",
+        "X",
+        "X",
+        "Y"
+      ],
+      "basis_orthogonality": "exact full projection by construction; projector diagonal nonnegative checked",
+      "set": "rotated",
+      "status": "MEASURED exact rational finite bounds; no automatic spectral verdict",
+      "python": "3.12.14",
+      "python_flint": "0.9.0",
+      "code_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+      "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "command": "/workspace/padua_research/tracks/bivariate-lanczos/code/drift/e1_exact.py --set rotated --degree 2 --rule mirror --sources degree2 --output /workspace/padua-drift-runs/e1/screen/rotated-n2-mirror-degree2.json",
+      "artifact": {
+        "path": "/workspace/padua-drift-runs/e1/screen/rotated-n2-mirror-degree2.json",
+        "bytes": 1925,
+        "sha256": "6cd66b8f5c74c458e974b0ce45ffa17f3b875dd9eb8939a2e575e9159875f6b3"
+      }
+    },
+    {
+      "degree": 2,
+      "rule": "alt",
+      "sources": "degree2",
+      "source_count": 3,
+      "point_count": 625,
+      "basis_count": 6,
+      "Knode_squared": {
+        "exact": "48213630986228631/22699472656250000",
+        "float": 2.1239978441945717,
+        "sqrt_rational_interval": [
+          "1457394196569/1000000000000",
+          "145739419657/100000000000"
+        ]
+      },
+      "KHS_squared": {
+        "exact": "17351410337687/5255859375",
+        "float": 3301.346002562521,
+        "sqrt_rational_interval": [
+          "1149146814391/20000000000",
+          "57457340719551/1000000000000"
+        ]
+      },
+      "Urow_squared": {
+        "exact": "28031357573/5255859375",
+        "float": 5.333353800585656,
+        "sqrt_rational_interval": [
+          "577351377011/250000000000",
+          "461881101609/200000000000"
+        ]
+      },
+      "upper_squared": {
+        "exact": "28031357573/5255859375",
+        "float": 5.333353800585656,
+        "sqrt_rational_interval": [
+          "577351377011/250000000000",
+          "461881101609/200000000000"
+        ]
+      },
+      "witness": {
+        "source": 3,
+        "source_degree_index": [
+          2,
+          0
+        ],
+        "node": 182,
+        "point": [
+          "1/12",
+          "-7/12"
+        ]
+      },
+      "elapsed_seconds": 0.009251720000008845,
+      "normal_trace_exact": "619",
+      "expected_normal_trace": 619,
+      "pivot_choices": [
+        "X",
+        "Y",
+        "X",
+        "Y",
+        "Y"
+      ],
+      "basis_orthogonality": "exact full projection by construction; projector diagonal nonnegative checked",
+      "set": "rotated",
+      "status": "MEASURED exact rational finite bounds; no automatic spectral verdict",
+      "python": "3.12.14",
+      "python_flint": "0.9.0",
+      "code_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+      "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "command": "/workspace/padua_research/tracks/bivariate-lanczos/code/drift/e1_exact.py --set rotated --degree 2 --rule alt --sources degree2 --output /workspace/padua-drift-runs/e1/screen/rotated-n2-alt-degree2.json",
+      "artifact": {
+        "path": "/workspace/padua-drift-runs/e1/screen/rotated-n2-alt-degree2.json",
+        "bytes": 1917,
+        "sha256": "8227befe4a20785eda0048d56a7450bd07bffbc5ed790c29def830542e013259"
+      }
+    },
+    {
+      "degree": 2,
+      "rule": "pivot",
+      "sources": "degree2",
+      "source_count": 3,
+      "point_count": 625,
+      "basis_count": 6,
+      "Knode_squared": {
+        "exact": "48213630986228631/22699472656250000",
+        "float": 2.1239978441945717,
+        "sqrt_rational_interval": [
+          "1457394196569/1000000000000",
+          "145739419657/100000000000"
+        ]
+      },
+      "KHS_squared": {
+        "exact": "17351410337687/5255859375",
+        "float": 3301.346002562521,
+        "sqrt_rational_interval": [
+          "1149146814391/20000000000",
+          "57457340719551/1000000000000"
+        ]
+      },
+      "Urow_squared": {
+        "exact": "28031357573/5255859375",
+        "float": 5.333353800585656,
+        "sqrt_rational_interval": [
+          "577351377011/250000000000",
+          "461881101609/200000000000"
+        ]
+      },
+      "upper_squared": {
+        "exact": "28031357573/5255859375",
+        "float": 5.333353800585656,
+        "sqrt_rational_interval": [
+          "577351377011/250000000000",
+          "461881101609/200000000000"
+        ]
+      },
+      "witness": {
+        "source": 3,
+        "source_degree_index": [
+          2,
+          0
+        ],
+        "node": 182,
+        "point": [
+          "1/12",
+          "-7/12"
+        ]
+      },
+      "elapsed_seconds": 0.009251509999955942,
+      "normal_trace_exact": "619",
+      "expected_normal_trace": 619,
+      "pivot_choices": [
+        "X",
+        "Y",
+        "X",
+        "X",
+        "Y"
+      ],
+      "basis_orthogonality": "exact full projection by construction; projector diagonal nonnegative checked",
+      "set": "rotated",
+      "status": "MEASURED exact rational finite bounds; no automatic spectral verdict",
+      "python": "3.12.14",
+      "python_flint": "0.9.0",
+      "code_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+      "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "command": "/workspace/padua_research/tracks/bivariate-lanczos/code/drift/e1_exact.py --set rotated --degree 2 --rule pivot --sources degree2 --output /workspace/padua-drift-runs/e1/screen/rotated-n2-pivot-degree2.json",
+      "artifact": {
+        "path": "/workspace/padua-drift-runs/e1/screen/rotated-n2-pivot-degree2.json",
+        "bytes": 1923,
+        "sha256": "421044669600abd468cbd7cb251af94374f812af57d4a8cbc1045227b80d5b74"
+      }
+    },
+    {
+      "degree": 8,
+      "rule": "bj",
+      "sources": "degree2",
+      "source_count": 3,
+      "point_count": 625,
+      "basis_count": 45,
+      "Knode_squared": {
+        "exact": "193400539931819260472592989609289400410125283964117051434855323376774416716687225815431/85147882210461154492166055581230804660819444507069420069456100463867187500000000",
+        "float": 2271348.7982447827,
+        "sqrt_rational_interval": [
+          "1507099465279177/1000000000000",
+          "753549732639589/500000000000"
+        ]
+      },
+      "KHS_squared": {
+        "exact": "3954303065621277044757219496148694608421894427381357772229966029075735632808309017661/67225562046125513464073292148760058184464583064254838973283767700195312500000",
+        "float": 58821420.680843234,
+        "sqrt_rational_interval": [
+          "7669512414804687/1000000000000",
+          "479344525925293/62500000000"
+        ]
+      },
+      "Urow_squared": {
+        "exact": "47514909224817229557677604919097034989782930635883054483488527619198828430531/8718982412422657334271887744070461678802530514076352119445800781250000",
+        "float": 5449593.424700432,
+        "sqrt_rational_interval": [
+          "291804553187479/125000000000",
+          "2334436425499833/1000000000000"
+        ]
+      },
+      "upper_squared": {
+        "exact": "47514909224817229557677604919097034989782930635883054483488527619198828430531/8718982412422657334271887744070461678802530514076352119445800781250000",
+        "float": 5449593.424700432,
+        "sqrt_rational_interval": [
+          "291804553187479/125000000000",
+          "2334436425499833/1000000000000"
+        ]
+      },
+      "witness": {
+        "source": 3,
+        "source_degree_index": [
+          2,
+          0
+        ],
+        "node": 1,
+        "point": [
+          "2/15",
+          "-27/20"
+        ]
+      },
+      "elapsed_seconds": 1.1196221900000296,
+      "normal_trace_exact": "580",
+      "expected_normal_trace": 580,
+      "pivot_choices": [
+        "X",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "basis_orthogonality": "exact full projection by construction; projector diagonal nonnegative checked",
+      "set": "rotated",
+      "status": "MEASURED exact rational finite bounds; no automatic spectral verdict",
+      "python": "3.12.14",
+      "python_flint": "0.9.0",
+      "code_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+      "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "command": "/workspace/padua_research/tracks/bivariate-lanczos/code/drift/e1_exact.py --set rotated --degree 8 --rule bj --sources degree2 --output /workspace/padua-drift-runs/e1/screen/rotated-n8-bj-degree2.json",
+      "artifact": {
+        "path": "/workspace/padua-drift-runs/e1/screen/rotated-n8-bj-degree2.json",
+        "bytes": 2813,
+        "sha256": "8f34139c3b31ecf65d89785140478f4eeee592f2c52d69265389a207fea00d56"
+      }
+    },
+    {
+      "degree": 8,
+      "rule": "mirror",
+      "sources": "degree2",
+      "source_count": 3,
+      "point_count": 625,
+      "basis_count": 45,
+      "Knode_squared": {
+        "exact": "8573388682623125713773834382392801580537282369655993644567510368163083307815840353156840003108411716596125361005636184766875257375776954765850559791/7282691056834288811889894967320790386577222937289437958447829965633643982047412344573925948193931689467288074024262405241394042968750000000000",
+        "float": 1177228.1174247544,
+        "sqrt_rational_interval": [
+          "542500718300159/500000000000",
+          "1085001436600319/1000000000000"
+        ]
+      },
+      "KHS_squared": {
+        "exact": "43783215266854203141907855037854436493900704782731641376557881284702830928479593712544012704516745908023297856664941015430629756931749721568998640199/2360114567586985178499382325443334425045670598200914405974491501883855128227227544915786861871105460451016847906944953619856207275390625000000",
+        "float": 18551309.27462508,
+        "sqrt_rational_interval": [
+          "4307123085613537/1000000000000",
+          "2153561542806769/500000000000"
+        ]
+      },
+      "Urow_squared": {
+        "exact": "17335853244928672138604593097207788887753537007074812112724269411262940985864864752341431637010873708258414790360020177067114436934648191303/6324396412483191750764971194469838303034717990202995538392042029820198961495155741608494224435916393939177119347119789123535156250000",
+        "float": 2741107.943630936,
+        "sqrt_rational_interval": [
+          "827814584256483/500000000000",
+          "1655629168512967/1000000000000"
+        ]
+      },
+      "upper_squared": {
+        "exact": "17335853244928672138604593097207788887753537007074812112724269411262940985864864752341431637010873708258414790360020177067114436934648191303/6324396412483191750764971194469838303034717990202995538392042029820198961495155741608494224435916393939177119347119789123535156250000",
+        "float": 2741107.943630936,
+        "sqrt_rational_interval": [
+          "827814584256483/500000000000",
+          "1655629168512967/1000000000000"
+        ]
+      },
+      "witness": {
+        "source": 5,
+        "source_degree_index": [
+          2,
+          2
+        ],
+        "node": 49,
+        "point": [
+          "-27/20",
+          "-2/15"
+        ]
+      },
+      "elapsed_seconds": 1.1313195330000099,
+      "normal_trace_exact": "580",
+      "expected_normal_trace": 580,
+      "pivot_choices": [
+        "X",
+        "Y",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y"
+      ],
+      "basis_orthogonality": "exact full projection by construction; projector diagonal nonnegative checked",
+      "set": "rotated",
+      "status": "MEASURED exact rational finite bounds; no automatic spectral verdict",
+      "python": "3.12.14",
+      "python_flint": "0.9.0",
+      "code_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+      "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "command": "/workspace/padua_research/tracks/bivariate-lanczos/code/drift/e1_exact.py --set rotated --degree 8 --rule mirror --sources degree2 --output /workspace/padua-drift-runs/e1/screen/rotated-n8-mirror-degree2.json",
+      "artifact": {
+        "path": "/workspace/padua-drift-runs/e1/screen/rotated-n8-mirror-degree2.json",
+        "bytes": 3332,
+        "sha256": "a167b1475202bdbedd7a46ba3c5b52043c3dd7890d4f15bb57bb68dd352f04e3"
+      }
+    },
+    {
+      "degree": 8,
+      "rule": "alt",
+      "sources": "degree2",
+      "source_count": 3,
+      "point_count": 625,
+      "basis_count": 45,
+      "Knode_squared": {
+        "exact": "28307145110735633189535462373885278521527485361228625577589392246995778344588783533732108613757527285333562854160365802873916011182168124110550803751342974489203205345666853682046384933061685200625602835485596513397255518448605843234705346501273231386546462267327111574806738621/3791985765791922183761334013135788403406350435428241424542915128111897993079065725775015140169320827436712435710647228739027889998502911528433672381385967787403188678639405991566751024668721252474841696904279694279799495005415263193526698159985244274139404296875000000000000",
+        "float": 7464.992449628549,
+        "sqrt_rational_interval": [
+          "43200093893499/500000000000",
+          "86400187786999/1000000000000"
+        ]
+      },
+      "KHS_squared": {
+        "exact": "74430792078525134997551709717089693335818604902659710011015517137101767784252819812373612316801101292430916302149596910925499300837091875097686024064025606637694946397931577637276396754291056223943031241157515210120667364876570312580021438413619770222953058696795823631135205007282645133/215808239208892175553173973373550316027418137314980721557832009047969745175436528170799153548724903127263910376589408680633191228292751508469595249922248856173592133825197313582630062931036988278390824175720114849439355062978524824131400299318528368530678562819957733154296875000000",
+        "float": 344893.19013663626,
+        "sqrt_rational_interval": [
+          "587276076591441/1000000000000",
+          "293638038295721/500000000000"
+        ]
+      },
+      "Urow_squared": {
+        "exact": "15908430079511995221112533209397829387229193981847333257550217784482402359649792389485572071994625727230055071707222174818513907983616043547889729370286903127027699766521138815920421013758913134068325595567431994645637092473227280254955225326810065077798193990601545740503259/454333076286740614842622025939770639112428601509502685551323020234030645819350597730892626857980536702829858652977778832224612109118843332800232211893360338539907231451528017537956156269138142601673311352419771016878386998432764654065607601296505890786647796630859375000",
+        "float": 35014.90626553414,
+        "sqrt_rational_interval": [
+          "187122703768233/1000000000000",
+          "93561351884117/500000000000"
+        ]
+      },
+      "upper_squared": {
+        "exact": "15908430079511995221112533209397829387229193981847333257550217784482402359649792389485572071994625727230055071707222174818513907983616043547889729370286903127027699766521138815920421013758913134068325595567431994645637092473227280254955225326810065077798193990601545740503259/454333076286740614842622025939770639112428601509502685551323020234030645819350597730892626857980536702829858652977778832224612109118843332800232211893360338539907231451528017537956156269138142601673311352419771016878386998432764654065607601296505890786647796630859375000",
+        "float": 35014.90626553414,
+        "sqrt_rational_interval": [
+          "187122703768233/1000000000000",
+          "93561351884117/500000000000"
+        ]
+      },
+      "witness": {
+        "source": 5,
+        "source_degree_index": [
+          2,
+          2
+        ],
+        "node": 1,
+        "point": [
+          "2/15",
+          "-27/20"
+        ]
+      },
+      "elapsed_seconds": 1.519472962000009,
+      "normal_trace_exact": "580",
+      "expected_normal_trace": 580,
+      "pivot_choices": [
+        "X",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "basis_orthogonality": "exact full projection by construction; projector diagonal nonnegative checked",
+      "set": "rotated",
+      "status": "MEASURED exact rational finite bounds; no automatic spectral verdict",
+      "python": "3.12.14",
+      "python_flint": "0.9.0",
+      "code_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+      "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "command": "/workspace/padua_research/tracks/bivariate-lanczos/code/drift/e1_exact.py --set rotated --degree 8 --rule alt --sources degree2 --output /workspace/padua-drift-runs/e1/screen/rotated-n8-alt-degree2.json",
+      "artifact": {
+        "path": "/workspace/padua-drift-runs/e1/screen/rotated-n8-alt-degree2.json",
+        "bytes": 4395,
+        "sha256": "b79fd6f0a0022c7d73209e2fb168f9a08e4a29eafb1aede73b0d64d7004fb4c3"
+      }
+    },
+    {
+      "degree": 8,
+      "rule": "pivot",
+      "sources": "degree2",
+      "source_count": 3,
+      "point_count": 625,
+      "basis_count": 45,
+      "Knode_squared": {
+        "exact": "852077219035020017297392615605840769880947563031306976554609163179517519541124182353010529223148229147045107705921910643799916454315778168772249546246618279465587871521446337515585630075398495805853290016795917203/3650883811872628705117944366077172767926744179737125422725071633087033643518763162143186157696348691570338508026104763439246877692056308936964533010678915994078307789400814428852576125144958496093750000000000",
+        "float": 233389.30049323276,
+        "sqrt_rational_interval": [
+          "483103819580463/1000000000000",
+          "30193988723779/62500000000"
+        ]
+      },
+      "KHS_squared": {
+        "exact": "825717946560793381298931656148321104018810233982139871881756107037414457338315775050570809849740306220955871104473585756461850480856065739637928607721127233845626383699869842041729471990859566972846534301972649584509979/213377522399029557995354354003202827816945532376276092613476701106686719121330312350132228167216115088292659492684646765216960628175060417376050889101231231774130663153296431070596331444104578495025634765625000000",
+        "float": 3869751.3087467956,
+        "sqrt_rational_interval": [
+          "1967168347840823/1000000000000",
+          "245896043480103/125000000000"
+        ]
+      },
+      "Urow_squared": {
+        "exact": "16131723389274184312157854208455096625422279510297180922662340139152488730668601732478118376186059785290729428873945941793600088125668989317960039852572332180214429140218364290994661790213195633039292516737/29511613534159226400736156216226965496287051210558242104385887557386492300042859589695111102238564441593917469289524295758622361825329294122209252525354047014500851825860233645700621604919433593750000",
+        "float": 546622.8869730206,
+        "sqrt_rational_interval": [
+          "369669746859619/500000000000",
+          "739339493719239/1000000000000"
+        ]
+      },
+      "upper_squared": {
+        "exact": "16131723389274184312157854208455096625422279510297180922662340139152488730668601732478118376186059785290729428873945941793600088125668989317960039852572332180214429140218364290994661790213195633039292516737/29511613534159226400736156216226965496287051210558242104385887557386492300042859589695111102238564441593917469289524295758622361825329294122209252525354047014500851825860233645700621604919433593750000",
+        "float": 546622.8869730206,
+        "sqrt_rational_interval": [
+          "369669746859619/500000000000",
+          "739339493719239/1000000000000"
+        ]
+      },
+      "witness": {
+        "source": 5,
+        "source_degree_index": [
+          2,
+          2
+        ],
+        "node": 49,
+        "point": [
+          "-27/20",
+          "-2/15"
+        ]
+      },
+      "elapsed_seconds": 1.5007752340000025,
+      "normal_trace_exact": "580",
+      "expected_normal_trace": 580,
+      "pivot_choices": [
+        "X",
+        "Y",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y"
+      ],
+      "basis_orthogonality": "exact full projection by construction; projector diagonal nonnegative checked",
+      "set": "rotated",
+      "status": "MEASURED exact rational finite bounds; no automatic spectral verdict",
+      "python": "3.12.14",
+      "python_flint": "0.9.0",
+      "code_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+      "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "command": "/workspace/padua_research/tracks/bivariate-lanczos/code/drift/e1_exact.py --set rotated --degree 8 --rule pivot --sources degree2 --output /workspace/padua-drift-runs/e1/screen/rotated-n8-pivot-degree2.json",
+      "artifact": {
+        "path": "/workspace/padua-drift-runs/e1/screen/rotated-n8-pivot-degree2.json",
+        "bytes": 3862,
+        "sha256": "c0253e5b4993fe96890be277e7b4b99490a8019b570c4fab9f88b45fc72c0088"
+      }
+    },
+    {
+      "degree": 12,
+      "rule": "bj",
+      "sources": "degree2",
+      "source_count": 3,
+      "point_count": 625,
+      "basis_count": 91,
+      "Knode_squared": {
+        "exact": "13697953898563796204605979270576069697282857209144259719463826380906125973376617867444939483582178200183945890200518454301614261226051406750460499923563978579709131/159661677413413742021750803261202167963374807640977727102673114252755856199072712175707875126677689272018320632007259973761392757296562194824218750000000",
+        "float": 85793623870.65202,
+        "sqrt_rational_interval": [
+          "292905486241982199/1000000000000",
+          "1464527431209911/5000000000"
+        ]
+      },
+      "KHS_squared": {
+        "exact": "117360175376269046902477733359004385000157266272788061508815592656157992628740417846860615968224153399728397075775448685165505474084947226117767887810747518278118275564101949/60641536937609725666930953789377930091959435306205170256481287483887234105744702346442290006171952334353153100596212077277868957025930285453796386718750000000000",
+        "float": 1935310041647.0903,
+        "sqrt_rational_interval": [
+          "347788553007345467/250000000000",
+          "1391154212029381869/1000000000000"
+        ]
+      },
+      "Urow_squared": {
+        "exact": "3761665872570561313579554177431581532352341420212347486549894889961566731337752794034394376681465804847711397746744905498903349841658653132757822012236829/8641661545170878501172401591501604090971684643314148104492587991047255941527758810341376531196700729042792232803549268282949924468994140625000",
+        "float": 435294283733.277,
+        "sqrt_rational_interval": [
+          "329884178058480473/500000000000",
+          "659768356116960947/1000000000000"
+        ]
+      },
+      "upper_squared": {
+        "exact": "3761665872570561313579554177431581532352341420212347486549894889961566731337752794034394376681465804847711397746744905498903349841658653132757822012236829/8641661545170878501172401591501604090971684643314148104492587991047255941527758810341376531196700729042792232803549268282949924468994140625000",
+        "float": 435294283733.277,
+        "sqrt_rational_interval": [
+          "329884178058480473/500000000000",
+          "659768356116960947/1000000000000"
+        ]
+      },
+      "witness": {
+        "source": 3,
+        "source_degree_index": [
+          2,
+          0
+        ],
+        "node": 1,
+        "point": [
+          "2/15",
+          "-27/20"
+        ]
+      },
+      "elapsed_seconds": 8.329855867999981,
+      "normal_trace_exact": "534",
+      "expected_normal_trace": 534,
+      "pivot_choices": [
+        "X",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "basis_orthogonality": "exact full projection by construction; projector diagonal nonnegative checked",
+      "set": "rotated",
+      "status": "MEASURED exact rational finite bounds; no automatic spectral verdict",
+      "python": "3.12.14",
+      "python_flint": "0.9.0",
+      "code_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+      "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "command": "/workspace/padua_research/tracks/bivariate-lanczos/code/drift/e1_exact.py --set rotated --degree 12 --rule bj --sources degree2 --output /workspace/padua-drift-runs/e1/screen/rotated-n12-bj-degree2.json",
+      "artifact": {
+        "path": "/workspace/padua-drift-runs/e1/screen/rotated-n12-bj-degree2.json",
+        "bytes": 3865,
+        "sha256": "c9427e81412e1615b93e14dec1fcba07e376905974fca996830e5c072f59a8cb"
+      }
+    },
+    {
+      "degree": 12,
+      "rule": "mirror",
+      "sources": "degree2",
+      "source_count": 3,
+      "point_count": 625,
+      "basis_count": 91,
+      "Knode_squared": {
+        "exact": "7519433565759419326437672636594717997579943982092071753408214446755743164882824667768504343385280145511300530018416760814956924728710261138051162417631797047151987313612228943485129256837036580852814842327939395990714606727587478975512236628439366512127038577285437650708123823198652951372261302609297376200528069876207/20549552631061259390256807717703429774994325657432169367603399343186582285940909210393215270391032734894656031228485213763168768462910410258324312030667887294168767121541332416126474676533682403955012673030595159933590853400102779893780581898101940002396911800411448724812013433119654655456542968750000000000",
+        "float": 365917141884.32367,
+        "sqrt_rational_interval": [
+          "604910854493720963/1000000000000",
+          "151227713623430241/250000000000"
+        ]
+      },
+      "KHS_squared": {
+        "exact": "537230261671054040005722325675702397103262801282546471817533789093159253178390653048993604630590090778351267907289291636793583351709272148084102756831652399013031500050259176147136479997534505909376949326841591194949232500759837935138170822288641002736944437781792217610999484722213075777887792308315148836390030651013836705094529/138630148665735949844280095226596783932208445615442619569638365811875025082623369213651042344392099941423558081778793414345494130229424464004143433051581609295994852878272336663064063063917054737632290205143766030983351250515790592738517281866576604962494313307115432402590058318316759629766345024108886718750000000000",
+        "float": 3875277252759.931,
+        "sqrt_rational_interval": [
+          "1968572389514780099/1000000000000",
+          "19685723895147801/10000000000"
+        ]
+      },
+      "Urow_squared": {
+        "exact": "7543484907753955624816508875790879596852951687400696665079287010740406919397190208231826230718668073420015663737900285280819363873479925286305120825330060112586922009819846075380344752745808457082499821999047476935293570550737840466418798282250813102003004167923536321494106231422656575833629398110099585310513/3458642017033841508660238435127309861573163126749097328880814457220257083064029240015111546835054262113843963053514274110857052922652012056637476774347890032202848551007076931192274002768337094462876143609284575763492918935497930384487984231326817000648253668613691996718989677727222442626953125000",
+        "float": 2181053971646.1628,
+        "sqrt_rational_interval": [
+          "184604897841230893/125000000000",
+          "295367836545969429/200000000000"
+        ]
+      },
+      "upper_squared": {
+        "exact": "7543484907753955624816508875790879596852951687400696665079287010740406919397190208231826230718668073420015663737900285280819363873479925286305120825330060112586922009819846075380344752745808457082499821999047476935293570550737840466418798282250813102003004167923536321494106231422656575833629398110099585310513/3458642017033841508660238435127309861573163126749097328880814457220257083064029240015111546835054262113843963053514274110857052922652012056637476774347890032202848551007076931192274002768337094462876143609284575763492918935497930384487984231326817000648253668613691996718989677727222442626953125000",
+        "float": 2181053971646.1628,
+        "sqrt_rational_interval": [
+          "184604897841230893/125000000000",
+          "295367836545969429/200000000000"
+        ]
+      },
+      "witness": {
+        "source": 5,
+        "source_degree_index": [
+          2,
+          2
+        ],
+        "node": 49,
+        "point": [
+          "-27/20",
+          "-2/15"
+        ]
+      },
+      "elapsed_seconds": 9.05664361199996,
+      "normal_trace_exact": "534",
+      "expected_normal_trace": 534,
+      "pivot_choices": [
+        "X",
+        "Y",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y"
+      ],
+      "basis_orthogonality": "exact full projection by construction; projector diagonal nonnegative checked",
+      "set": "rotated",
+      "status": "MEASURED exact rational finite bounds; no automatic spectral verdict",
+      "python": "3.12.14",
+      "python_flint": "0.9.0",
+      "code_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+      "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "command": "/workspace/padua_research/tracks/bivariate-lanczos/code/drift/e1_exact.py --set rotated --degree 12 --rule mirror --sources degree2 --output /workspace/padua-drift-runs/e1/screen/rotated-n12-mirror-degree2.json",
+      "artifact": {
+        "path": "/workspace/padua-drift-runs/e1/screen/rotated-n12-mirror-degree2.json",
+        "bytes": 5129,
+        "sha256": "a9bc3beaba1d2da24abb83026f00e9988911c509c4a1643b029aabecb0de76d9"
+      }
+    },
+    {
+      "degree": 12,
+      "rule": "alt",
+      "sources": "degree2",
+      "source_count": 3,
+      "point_count": 625,
+      "basis_count": 91,
+      "Knode_squared": {
+        "exact": "225166170766610983786309418553391246026012370361311018031831217240161281366050664138451961687674377533115783646012786871802945610986837175020665732715477281909292697259776593956647565347539135661450222582264254383810385036758164239917203214396966489273403496628767537411006613211188680614098493148052451764607783710461233885199487984150022113892187017597578036040443120826112891363093501442518999587386117791232281399261855559196635028386610344278716488801311060417765845295522057751377008565718282588832876020717608425851183544177904330928195472823754097960303024307106627973653720565991023388621257553545173962601620256336074495885113394242160764371284752196703026840704625057492954651341548781094289689766819768729584664547462258514188196118728184187152377236949/22822095078811505225930588558840220171829015255402740597993477300403127495939377327883164905549289813448835813593169366611306256416899311642812442859252835680545120005850409917181947847087500603513835591398949061582847913816911525354249622198317284076188439915596517639017586530400691671795913946760754135097749908545083957310974423172918658453346953111475604118138090792471274487276405806983318541769696955057677539694583338554427502915235475027840698783149173288580077029556118762866281615536266142714003384861101479480711087382856063812102647308769479303818126797915390987910691562249191590577319040580864001857643812973941320064417485182077150771209274236544514260136274435039800743359900791849538504926786508519853668985888361930847167968750000000000000",
+        "float": 9866148.133597946,
+        "sqrt_rational_interval": [
+          "628208504673343/200000000000",
+          "785260630841679/250000000000"
+        ]
+      },
+      "KHS_squared": {
+        "exact": "3743290202232814220231819842955485829973953036696305958599433411355711872405462663686955301706990386247192816749354433365365806448311092339221233994864412186959097160936951624145657763433532216304887004696435596616939863617298295295983528218290008212996763055047158147280525586856956407845420118146699684821939240025921268359386887359014694810238740795822569819367957208919664101717400616847710861184040371157040945756462450897795758901979685629513327537495684924215811114617923120923286973463222678277351599597607836117946157680588969751798841424942982235873021401088274689414183280986254239930989198362756614269104042228299835236819720688586665147620704717903096464271682621003823989399371325891372749960985808262629588207537536807637584737099587014292085725492716464135038473500129/13778450212598515430277619936609297569222209046247935766714214236979052317171821420418960517728702983761078352542749303060889280471701577384712238007985023541139394291177397227582935087225569585599425105443561957769125435165036117896805330587973614221820535810168109827397283723901159707814111712116507952847322333311097872730834918992419276542647440118906721357385727569953264097047579388473029178764727014016524134910184797338458447708288539014757719655350607096812085629645522845398618990730041948099389751747940565748905622072906791531901002108312000877053425870177188578659796305469520103226808345573787513626864959906457021374844666426786254193012562019406329743647869477919591691528840428351145911689957535776002514474672389077625211939448490738868713378906250000000000",
+        "float": 271677158.49566925,
+        "sqrt_rational_interval": [
+          "3296526405146297/200000000000",
+          "8241316012865743/500000000000"
+        ]
+      },
+      "Urow_squared": {
+        "exact": "43124817243682701182788990401096496454514692345560888608947870594564703040828978541131700470457425788232675355813655495663859919041897499017726575281331916950204777320129803571825599676395081463461672395326893833739844890998160545121010804226275857596599356959370874355678011151663632863838840094648475670307011096671275115473137749519679731055994193774487047034842064713172068543782036985227785921702176139166906316134569189628105174370293662931670078270656351901616679503811117145045426187577856182439545259800020516282300950588131820689015150202267250517438656015585637900841145294615714564531395262815562199760883901406420443792423636088226816133273719681296606608367510622807947779480471011162639813694901963978238189209098402785829779059431525131587177954487/378918015326582523503055539825792526040781916559687667733841652166193551365463841000329694401290826720433733738516242816244619751300196812523720684125101751676715394633938987697532071873562011096404181819492854912882301347613779050454545247258175065573942001751122311243988156994473133087992049065411972536246882810137023184108327059363515142307926979572041205594733620362545565090942160006486165385610591093253936096188694224824385804060542345205593537982393562723594084227542184530712227480010796735634418213262058530600676164292482610691292801167141168628223023621991426924302689779038434962235858495859235052333319089628191515575844461292946927296351557023154998980149701371937614449624709188022795929877612787495255730618737288750708103179931640625000",
+        "float": 113810416.76393826,
+        "sqrt_rational_interval": [
+          "10668196509435803/1000000000000",
+          "2667049127358951/250000000000"
+        ]
+      },
+      "upper_squared": {
+        "exact": "43124817243682701182788990401096496454514692345560888608947870594564703040828978541131700470457425788232675355813655495663859919041897499017726575281331916950204777320129803571825599676395081463461672395326893833739844890998160545121010804226275857596599356959370874355678011151663632863838840094648475670307011096671275115473137749519679731055994193774487047034842064713172068543782036985227785921702176139166906316134569189628105174370293662931670078270656351901616679503811117145045426187577856182439545259800020516282300950588131820689015150202267250517438656015585637900841145294615714564531395262815562199760883901406420443792423636088226816133273719681296606608367510622807947779480471011162639813694901963978238189209098402785829779059431525131587177954487/378918015326582523503055539825792526040781916559687667733841652166193551365463841000329694401290826720433733738516242816244619751300196812523720684125101751676715394633938987697532071873562011096404181819492854912882301347613779050454545247258175065573942001751122311243988156994473133087992049065411972536246882810137023184108327059363515142307926979572041205594733620362545565090942160006486165385610591093253936096188694224824385804060542345205593537982393562723594084227542184530712227480010796735634418213262058530600676164292482610691292801167141168628223023621991426924302689779038434962235858495859235052333319089628191515575844461292946927296351557023154998980149701371937614449624709188022795929877612787495255730618737288750708103179931640625000",
+        "float": 113810416.76393826,
+        "sqrt_rational_interval": [
+          "10668196509435803/1000000000000",
+          "2667049127358951/250000000000"
+        ]
+      },
+      "witness": {
+        "source": 5,
+        "source_degree_index": [
+          2,
+          2
+        ],
+        "node": 1,
+        "point": [
+          "2/15",
+          "-27/20"
+        ]
+      },
+      "elapsed_seconds": 16.34100356700003,
+      "normal_trace_exact": "534",
+      "expected_normal_trace": 534,
+      "pivot_choices": [
+        "X",
+        "Y",
+        "X",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "basis_orthogonality": "exact full projection by construction; projector diagonal nonnegative checked",
+      "set": "rotated",
+      "status": "MEASURED exact rational finite bounds; no automatic spectral verdict",
+      "python": "3.12.14",
+      "python_flint": "0.9.0",
+      "code_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+      "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "command": "/workspace/padua_research/tracks/bivariate-lanczos/code/drift/e1_exact.py --set rotated --degree 12 --rule alt --sources degree2 --output /workspace/padua-drift-runs/e1/screen/rotated-n12-alt-degree2.json",
+      "artifact": {
+        "path": "/workspace/padua-drift-runs/e1/screen/rotated-n12-alt-degree2.json",
+        "bytes": 8736,
+        "sha256": "691dc396f3e6007a75834b428d618f2b0aa76e6a9cc31e5f9c263c42ebb1dff2"
+      }
+    },
+    {
+      "degree": 12,
+      "rule": "pivot",
+      "sources": "degree2",
+      "source_count": 3,
+      "point_count": 625,
+      "basis_count": 91,
+      "Knode_squared": {
+        "exact": "22025508952285006906354017720496253863811783160287065185110834328444065196341046215135907018065894173435328256064974558103279869716007896345437378265488863478384988578273711970548419756509468422747039955782101539286143146179114532116582311064451783497444976291677486389818102059853604733755970777005056193581321766496456836721443804426012494264744727762347003884037188940010942772722076926684281702482299665795750895861349071539508960083386718194553810012466194906638002067542616370840001429079683413982467762043361086233939617016804602363613319299152980204359968219234922297942505771084792546310251565788702792704339454673110691965850079155872763417930722887989989857/28835856632240091397616112759396467336303726907900639911120389435072425273482510250800488772843535249865758357735895432485645698253536851902652402862742927740293470248763107709283077562534513403091515009432663672811448257548324209539977708024485159410841501970799896786289523851626448087526842701961902638704814379658833893495112664358215098356725689754549444526599835643273731190339230533547177662174586581429047408259780706530547768609837357430292208246006869022036551844107308204218515661601191371235486660250647641543703267852543955394755266256563588985844592491723255517287781221471984685643540270160278621880145522027305560186505317687988281250000000000",
+        "float": 763823639.199928,
+        "sqrt_rational_interval": [
+          "6909339870783279/250000000000",
+          "27637359483133117/1000000000000"
+        ]
+      },
+      "KHS_squared": {
+        "exact": "23813484284691869928923156929732619971844837398246599512236096788924750441194446204580623892434297847753801599502926813023825881220725333197078074316228591164851958235984276748777495544886457305257449422830530136799938998664769989821517409524056493943020847823727844294465758260823713604527365871552377223645254131209158395926213837895422963007697407684929995737643692596817596595179755822479162214331066233540434978527711060119720263398593590283632341855732970511551821796122260722842502933864508401890625834512325281538598729007810728602758479924648433462366760126663861884133720325717813740624157910263677551820558734385406994952396116302800187552438209497983727856661331342968091/3174157617563793381887892541061302255643015579361756628366454156016776585193028524344531372657269280731305047366428072223410727178999096668056843666654358383523946469618527870461698373598426503103877232747578767089323361066863936875819568582266244615877589192251044951541028593917749270966560308766679508937899170245558407494797914664004242336905187914132268990469474910811626930976117308908746385052538902009028710673808898386821053778345871106359054216883268232480640554454991735418669540996219949071881306374031919556683504944308061923277265544635557223506864192618838451028997511349788539127897511620249945469074511399491308942799605574691668152809143066406250000000000",
+        "float": 7502300501.059876,
+        "sqrt_rational_interval": [
+          "21653955327289337/250000000000",
+          "86615821309157349/1000000000000"
+        ]
+      },
+      "Urow_squared": {
+        "exact": "1026755927456544636876327954823761416176637392282127924252512835375971843832997159341944394438562686497844700302875839077047427247350338338863785678833967208057230886502728034012269718012667614824253810103914492403873565332456271081988058476894835126076311150445104612787168661373290139321639992619460640032793683936058687196478099062605038675111328049200858103455025034750623218567359437448481117539840560719910491157451895073701934524597060374977496642384482636515322067430239736960955582250903115520540293840165861823222011039684223359733017516138854315649746134986404361683238040111827509370956622128711840771914848101906092393519862382039401211485996977751/202742208837457395187076541356102426579708631265267477272026400480665977670253435778979766142150185735854663373584605522528980656761365500944940387652349709229245628305693732799598753818857725654938286112692668779088712415556321788343191104028979745727467376407533519514329390881720059088264167742055629368766629386254200324934298735940345399272866259189893030480604422928552497806847702932237939166735627885398334908232105428254461545817839190720857538481363028450501166120131949049577424758414944572833295652627076787065381384984190425525554645665600037891110855682913249485590198683835409447665109506147779512286177805435727350413799285888671875000",
+        "float": 5064342217.360945,
+        "sqrt_rational_interval": [
+          "71164191960289581/1000000000000",
+          "35582095980144791/500000000000"
+        ]
+      },
+      "upper_squared": {
+        "exact": "1026755927456544636876327954823761416176637392282127924252512835375971843832997159341944394438562686497844700302875839077047427247350338338863785678833967208057230886502728034012269718012667614824253810103914492403873565332456271081988058476894835126076311150445104612787168661373290139321639992619460640032793683936058687196478099062605038675111328049200858103455025034750623218567359437448481117539840560719910491157451895073701934524597060374977496642384482636515322067430239736960955582250903115520540293840165861823222011039684223359733017516138854315649746134986404361683238040111827509370956622128711840771914848101906092393519862382039401211485996977751/202742208837457395187076541356102426579708631265267477272026400480665977670253435778979766142150185735854663373584605522528980656761365500944940387652349709229245628305693732799598753818857725654938286112692668779088712415556321788343191104028979745727467376407533519514329390881720059088264167742055629368766629386254200324934298735940345399272866259189893030480604422928552497806847702932237939166735627885398334908232105428254461545817839190720857538481363028450501166120131949049577424758414944572833295652627076787065381384984190425525554645665600037891110855682913249485590198683835409447665109506147779512286177805435727350413799285888671875000",
+        "float": 5064342217.360945,
+        "sqrt_rational_interval": [
+          "71164191960289581/1000000000000",
+          "35582095980144791/500000000000"
+        ]
+      },
+      "witness": {
+        "source": 5,
+        "source_degree_index": [
+          2,
+          2
+        ],
+        "node": 49,
+        "point": [
+          "-27/20",
+          "-2/15"
+        ]
+      },
+      "elapsed_seconds": 15.193095056000004,
+      "normal_trace_exact": "534",
+      "expected_normal_trace": 534,
+      "pivot_choices": [
+        "X",
+        "Y",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "Y",
+        "Y",
+        "Y",
+        "Y"
+      ],
+      "basis_orthogonality": "exact full projection by construction; projector diagonal nonnegative checked",
+      "set": "rotated",
+      "status": "MEASURED exact rational finite bounds; no automatic spectral verdict",
+      "python": "3.12.14",
+      "python_flint": "0.9.0",
+      "code_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+      "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "command": "/workspace/padua_research/tracks/bivariate-lanczos/code/drift/e1_exact.py --set rotated --degree 12 --rule pivot --sources degree2 --output /workspace/padua-drift-runs/e1/screen/rotated-n12-pivot-degree2.json",
+      "artifact": {
+        "path": "/workspace/padua-drift-runs/e1/screen/rotated-n12-pivot-degree2.json",
+        "bytes": 7934,
+        "sha256": "10bd80b4e318f92c4991cb23c68039a65b260140e310b0718ffa73b4b6b130f7"
+      }
+    }
+  ]
+}
