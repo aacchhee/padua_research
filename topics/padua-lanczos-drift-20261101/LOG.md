@@ -3,7 +3,7 @@
 - Branch: `codex/padua-lanczos-drift-20261101`.
 - Initial base and rules SHA: `cf89b140530d5838bdb208a8c28f3e7aa676ace3`. Current synchronized base: `806cc7b4509fd93bae652f9545d32d95529f8281`; rules unchanged.
 - Developer/orchestrator: Codex; root runtime does not expose the actual model variant or effort independently.
-- Stage: **WORK**. External Claude audit: **PENDING**. Open handoff: [01-work.md](handoffs/01-work.md).
+- Stage: **AUDIT**. Required Claude Opus 5.5 xhigh audit: **PENDING**. Handoff chain: [handoffs/](handoffs/); the numbered status lines identify the one open handoff.
 - Final IDs: none allocated; provisional records only. Allocation and all Git mutations belong to the orchestrator.
 - Current claims/outcomes: see [report.md](report.md) and the direction ledger in [plan.md](plan.md). Initial all-OPEN wording below is historical setup provenance.
 - For the PR: reconcile candidate records, durable theory, global IDs and shared registries only at PR preparation; show WORK / AUDIT / PR sections.
@@ -74,3 +74,10 @@
 - All scientific workers released their files; no developer experiment remains
   running. No full normalized trajectory replay, actualIEEE activation theorem,
   original-paper rereading or Claude audit is represented as executed.
+
+## Development frozen — AUDIT handoff
+
+- Scientific source snapshot: `b09e1dbe0baafd666cf0d779a671a40f55de2d75`. Stage AUDIT, Claude Opus5.5 xhigh audit PENDING. All development and supplementary checking completed within their declared scopes; required external audit has not occurred.
+- Exact independent scalar supplement is committed. No scientific claim or endpoint changed after the final independent reconstruction except explicitly attributed record05 receipt metadata. Scalar05 remainsMEASURED.
+- Own ZIP staged at `/workspace/exports/padua-lanczos-drift-b09e1db.zip` (799968 bytes); CRC PASS. Actual content hash/source identity and nonessential raw artifact are in COLD_STORAGE.md. Windows delivery and topic-local results write remain Runs needed.
+- Next numbered handoff02 is the full Claude audit instruction; handoff01 closes at this step's output commit. The publication commit changes only the prior status and adds the new handoff. Only AC merges.

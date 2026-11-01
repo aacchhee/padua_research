@@ -3,7 +3,7 @@
 Rules SHA `cf89b140530d5838bdb208a8c28f3e7aa676ace3`; synchronized main
 `806cc7b4509fd93bae652f9545d32d95529f8281`, with unchanged Lanczos inputs and
 rules. Draft [PR #15](https://github.com/aacchhee/padua_research/pull/15).
-Identifiers below remain provisional. Claude Opus 5.5 xhigh audit is PENDING;
+Stage AUDIT. Identifiers below remain provisional. Claude Opus 5.5 xhigh audit is PENDING;
 supplementary independent Codex checking does not replace it.
 
 ## E1 verdict and E2 drift theorem
@@ -150,3 +150,5 @@ radius and reading (G) remain OPEN. Claude audit, final-ID assignment/registry
 integration and Windows archival/results delivery remain separate acceptance
 steps. Literal proposed changes are in `proposed-record-changes.md`; existing
 theory files remain unchanged.
+
+The scientific snapshot is `b09e1dbe0baafd666cf0d779a671a40f55de2d75`. A workspace handoff ZIP and its checksum are recorded in COLD_STORAGE.md. The scalar endpoints/capacities have now been independently regenerated; record05 remains MEASURED and its factor10 comparison remains INCONCLUSIVE.

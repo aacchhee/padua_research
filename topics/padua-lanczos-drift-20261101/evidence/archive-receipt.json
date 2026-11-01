@@ -1,0 +1,10 @@
+{
+  "source_commit": "b09e1dbe0baafd666cf0d779a671a40f55de2d75",
+  "archive_path": "/workspace/exports/padua-lanczos-drift-b09e1db.zip",
+  "archive_bytes": 799968,
+  "archive_sha256": "27476b624d424f082a71779618b9e1f9b06d6fba7db6b662755cf886637dd3a4",
+  "files": 82,
+  "crc_check": "PASS",
+  "third_party_sources_included": false,
+  "windows_delivery": "PENDING; no bridge"
+}

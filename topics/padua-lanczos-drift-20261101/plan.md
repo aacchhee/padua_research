@@ -2,7 +2,7 @@
 
 - Branch: `codex/padua-lanczos-drift-20261101`.
 - Initial base/rules: `cf89b140530d5838bdb208a8c28f3e7aa676ace3`; current synchronized base `806cc7b4509fd93bae652f9545d32d95529f8281` (rules unchanged).
-- Stage: WORK pending the last scalar-model check; Claude audit PENDING. Direction outcomes below are scoped by report.md and their durable theory files.
+- Stage: AUDIT. Development and supplementary independent checks complete; required Claude audit PENDING. Direction outcomes below are scoped by report.md and their durable theory files.
 
 ## Order and gates
 

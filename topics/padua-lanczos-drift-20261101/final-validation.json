@@ -1,0 +1,436 @@
+{
+  "scope": "Final development working-byte snapshot; handoff status publication and this self-referential receipt excluded; no external audit approval",
+  "parent_commit": "b09e1dbe0baafd666cf0d779a671a40f55de2d75",
+  "main_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+  "python": "3.12.14",
+  "checks": {
+    "own_python_syntax": "PASS",
+    "own_json_parse": "PASS",
+    "markdown_local_links": 41,
+    "literal_proposal_blocks": 7,
+    "old_theory_byte_identical": 77,
+    "protected_and_scientific_registry_changes": [],
+    "whitespace": "PASS",
+    "archive_crc_and_sha256": "PASS",
+    "campaign_own_bytes_without_handoffs_or_this_receipt": 2416401,
+    "largest_file_bytes": 616693
+  },
+  "separate_root_executions": {
+    "aggregate_checker": "88 records PASS; original frozen INCONCLUSIVE",
+    "e5_symbolic": "PASS",
+    "e6": "two complete hard-case objects identical; evidence/independent-e6-root.json"
+  },
+  "independent_receipts": [
+    "checks/independent-math-01.md",
+    "evidence/independent-math-01.json",
+    "evidence/independent-scalar-01.json"
+  ],
+  "metadata_impact": "Record05 receipt/status-only addition after independent pinned snapshot; statement/proof/endpoints unchanged. Root metadata freezing and archive receipt followed scientific source commit.",
+  "files": [
+    {
+      "path": "topics/padua-lanczos-drift-20261101/COLD_STORAGE.md",
+      "bytes": 3357,
+      "sha256": "7019bb47b8c9d0aa027bc302e6415ed014074ca48943b84b3fffa26e3160b3d4"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/LOG.md",
+      "bytes": 11410,
+      "sha256": "3b6ca13c1d336175de4dbba6d5556f7686bbba67eeb8c34c3690223e404a8b92"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/allocation-scan.json",
+      "bytes": 24675,
+      "sha256": "47481c936bce23b195e7cccc9330aad0f9cb54f8b24b26f30e23c89977da2ebf"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/checks/independent-math-01.md",
+      "bytes": 22984,
+      "sha256": "36745466fd4684070b716d4f3f417de72a893fdd785509b3dffe784c1450f708"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/directions/E1.md",
+      "bytes": 13100,
+      "sha256": "84f11b2071d31bf041acf68de4968896f734620b9ed5eb45e54dbca93d0dc2c8"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/directions/E2.md",
+      "bytes": 3562,
+      "sha256": "bddb62c19aa1e4fc1181f5e93bdfeb22ac8d90161e367c8c885bbc0cf5accd32"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/directions/E3.md",
+      "bytes": 3947,
+      "sha256": "0c886da847a9b41455ce4e384d7c7af96ab7aaaae9ccb4a269b5af70d98f3b19"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/directions/E4.md",
+      "bytes": 3760,
+      "sha256": "dab7cf11414a29d7302950ede2919dc525166be4d1ad6df53297e8ca8b275e1c"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/directions/E5.md",
+      "bytes": 7252,
+      "sha256": "b8ecb7cc81d465db473073d7d9b77bba9bee36dad1dae1c7af0f0b25c02593ac"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/directions/E6.md",
+      "bytes": 8990,
+      "sha256": "d94e442d9109929ea2d969a177d011fff4b3b3f0c642c9cc5c291ca415fa3b0d"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/archive-receipt.json",
+      "bytes": 376,
+      "sha256": "f7651101d866f2cc004523cd2054e76f18e94540b55f444aa1f86f2f84efaff8"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-cgs2-graph-verification.json",
+      "bytes": 2098,
+      "sha256": "ffbfc2beb5fbc92c2d7db11a41bd2adb76f8590a518117d089e7d7aebc21bf71"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-derivative-verification.json",
+      "bytes": 2087,
+      "sha256": "97306679c87ac26c6983effe396e3eb1b3d8105d8919bf965d67f2eea77026e5"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-exact-check.json",
+      "bytes": 20868,
+      "sha256": "d8488e9637210ae2e513eb4b99259ad37d617b24e2026e3743ac0e664e2caaba"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-fp-comparison.json",
+      "bytes": 12280,
+      "sha256": "dcbef8541df4f8f5503172e7e6044247039d5c08bc0f63554641f6330cc74c99"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-freeze.json",
+      "bytes": 3344,
+      "sha256": "66313783ccb499b2aafe333e03bc5b809a2064e882eac2d61f4ddf5a7924668d"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-full-sweep.json",
+      "bytes": 616693,
+      "sha256": "0d9c236fe879879b7f546596c554d213b7b8c408d31dec08dd79146c7d629344"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-manifest.json",
+      "bytes": 5448,
+      "sha256": "4f6b2f2320b5d7ce2b47bdc1f2f2ced2adbbc386e09ff5bf6e179c22b8656526"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-multinode-certificates.json",
+      "bytes": 55328,
+      "sha256": "fae9c8743c78230ef0aa82c185d1efe0eee37be066982a37d39d920af95719f0"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-n12-directional-snapshot.json",
+      "bytes": 103002,
+      "sha256": "385b96c2b710f53332133bfcd0575b29631351ea28ad73523213492847347f1f"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-posthoc-scalar-ratios.json",
+      "bytes": 682,
+      "sha256": "599766011500b569d16c0faca974605495889575db12e715b420d87faeff739b"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-reproduction-triangle.json",
+      "bytes": 927,
+      "sha256": "aa6bef4edaf46cd1e0df5f115714ad0150332c583f62f1693d4fde1fcf237dd8"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-scalar-cgs2.json",
+      "bytes": 444008,
+      "sha256": "e215556a01f9e169163b228dfe1b984d28e0cebd7f78e0d858f9a61a0de878c8"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-scalar-manifest.json",
+      "bytes": 9136,
+      "sha256": "9c1ce7c0e1aeabe0d7fd4a2aa6059710836491cd1c290a2dfe174cfcbce288dc"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-sign-check-rotated.json",
+      "bytes": 472,
+      "sha256": "8ba0c9e84f01988cc10fd7fb2be930f8c4630a88ee1199c81e0536a82b287c06"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-sign-check-triangle.json",
+      "bytes": 473,
+      "sha256": "483b905fdd7cb3b6f0d0eb3299496765e29ddcd6a3da6bc2a0b7ced5115fef7f"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-source-degree2-screen.json",
+      "bytes": 93265,
+      "sha256": "9f5c354ab2b73ece1aff4540d26256ee6d03cc39963ca493e863fa8502d34191"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-summary.md",
+      "bytes": 6094,
+      "sha256": "2b34f994284ba40d597441fd99135567f4beba4cdfc10143087f3f2b0b6d6df5"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e5-exact-checks.json",
+      "bytes": 854,
+      "sha256": "ba6efdcd1dfd4f10c5b27cd1574689c1500f37abb834bf8a2910b76a448dacd3"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e5-manifest.json",
+      "bytes": 2249,
+      "sha256": "b31f414132010577278949256ff3b72a617c7c8b4f87013a41b3e2b6f1cd9c10"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e6-benchmarks.json",
+      "bytes": 239594,
+      "sha256": "e7a3f940c4bd79bbf84fbe4eeafca4186c9b969c92665fb972367becc23a3c58"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e6-frozen-grids.json",
+      "bytes": 16852,
+      "sha256": "8bb5ef149c5c6fa66e03b544f6588ff8e30c50e16490d9bf728f6447bf7b6f50"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e6-frozen-grids12.json",
+      "bytes": 12604,
+      "sha256": "3c6a5fc94ef5151e75bb4904ae3309426b3d0bb276cdf3c9a6cd6e37b987dc9a"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e6-provenance.json",
+      "bytes": 3675,
+      "sha256": "75d0c7d14a9fdda516571baaa32736fbd86ae34187c00b66903e21f5e0477de9"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e6-smooth.json",
+      "bytes": 4977,
+      "sha256": "0cc4627e178e7da9354a2dfdcb511a44162657787985d9a9a9f5388e85740fbe"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/independent-e6-root.json",
+      "bytes": 3848,
+      "sha256": "90478a21d06fc7af68a0c787820b602314fa64881ca23cbd9457715491a7f971"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/independent-math-01.json",
+      "bytes": 161274,
+      "sha256": "1f2c3361d2e4f19aadef7e44f093643915eb445e7da21914eccb330bedd4026a"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/independent-scalar-01.json",
+      "bytes": 186681,
+      "sha256": "2d06b3b4e04956f9c9e2f4127c3937543dc92ee071de2926589d0a40c9bf6a10"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/external-code.md",
+      "bytes": 6113,
+      "sha256": "5670ca679b111611d4f805c9413acd7b92144cb1c11f3bfbb26e606f1ec6d075"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/final-recheck-allocation.json",
+      "bytes": 11960,
+      "sha256": "1f9b57f0179413bef99fc49bdba3fff3024ed74748d7941a5446b6fa1dff5158"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/ideas-e1.md",
+      "bytes": 14747,
+      "sha256": "297e0595206d74e5b0c9ddb3209243c695b6ac27f2b27c7b5dc303549b62174b"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/ideas-e3-e4.md",
+      "bytes": 17861,
+      "sha256": "d0803b35669f35f28e365c6c6ce1d8ed5ecca1abcf855baeb12c54e888b68003"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/ideas-e5.md",
+      "bytes": 11378,
+      "sha256": "cbffb519f52cae824f13ff3c9d84bc83f61c17c57df07924fc74899699e1a9d3"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/ideas-e6.md",
+      "bytes": 2431,
+      "sha256": "883b485bcba620ed533fab2ba9049616558a419f9455c6dae2f38abdd98819c4"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/independent-checks.md",
+      "bytes": 4683,
+      "sha256": "94444b22a932481b08b9d0f5bd752f613a11e1849470d3d2779eb31a3ebf96b8"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/local-results-entry.md",
+      "bytes": 2526,
+      "sha256": "e74d80a4d677164a3c7454b9c42fc522892f8cb93e155e38cafa120112288fd1"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/plan.md",
+      "bytes": 3966,
+      "sha256": "f80093ed404a5a3c75ee697f17e96c44d0fe8ed1418ca2f328c7b9e9f07a9ed2"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/proposed-record-changes.md",
+      "bytes": 7060,
+      "sha256": "4c8788463588d98ebe267a156e9c4e1bc9260c28d86272c1c223eb80f4aa1f1c"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/protocol-check.json",
+      "bytes": 20255,
+      "sha256": "3ceb0af80d4bf25c7589051bf9721cd4da4674f3537e14e3ce98ab6d6b33b4b5"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/report.md",
+      "bytes": 9068,
+      "sha256": "1de50b623e74b18556611037c42f37a9d3b44f50c48c64528120108adfaadf63"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/README.md",
+      "bytes": 5639,
+      "sha256": "d0d1b9d1a710da8228249b0aec8265a10cd3cec9f8b990b6d4fc28d32d391912"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/check_independent_math.py",
+      "bytes": 9165,
+      "sha256": "b930c259f05cb80c15b22e607b6171b009cc66987804cc2eb78518e7183d88a4"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/check_independent_scalar.py",
+      "bytes": 10135,
+      "sha256": "b711a1035d0709232b1854b3fb9334fe4e4a11cde26810dda08505d97f7d9aa4"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_batch.py",
+      "bytes": 1985,
+      "sha256": "3c2e2c438737775137f33a2b8e985064fa1ace862436344830f1df5af20830dd"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_cgs2.py",
+      "bytes": 3710,
+      "sha256": "426630eb916e13bb14409f6f7b8ea310eaeb1bf7949de10866d163aad31c7b4b"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_cgs2_multinode.py",
+      "bytes": 3827,
+      "sha256": "32b9e82756a38387ce5a9f2d596d3f6d59282eeec30b5a25afe96f514abe5553"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_cgs2_verify.py",
+      "bytes": 3345,
+      "sha256": "90055da72bdbcb8b5915418e21193bd52238d6e761e696bb47b6c4aeec9b7023"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_cgs2_witness.py",
+      "bytes": 3558,
+      "sha256": "06dff7f4019cd6dc7a30be686bf5a7708704af7c2be0b2f251546529ecade5a4"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_check.py",
+      "bytes": 3032,
+      "sha256": "b6b3e9ec0498f0e7f5e9ccecb524f7410f13acd9ecd26f0fb42d34e9ff17a821"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_exact.py",
+      "bytes": 6167,
+      "sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_fp.py",
+      "bytes": 2913,
+      "sha256": "494810567de117cfeabe9eed9e49f98e55798f33ae2e80adfc5f2c47275650e4"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_reproduce.py",
+      "bytes": 2792,
+      "sha256": "4381f3367651bf69feaf801ef5cec94a704cbcc62e4d982bae6c7a2ef9dbbc02"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_scalar.py",
+      "bytes": 4411,
+      "sha256": "c14cc7f05acdef82a6f4a1b67ad5e1c7d6299c480391c19ce691aad3542545c1"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_sign_check.py",
+      "bytes": 1993,
+      "sha256": "0a3717f73e272ca926664c2dc06a0a91bbe4a1be8eaeff89a9b40cb184364a12"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_verify.py",
+      "bytes": 2563,
+      "sha256": "f60c49e08ba51c9c4647d3ed346ec4681c48c9ee869bc6248b6fc861c2d456cd"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e5_exact_checks.py",
+      "bytes": 4720,
+      "sha256": "548802feeb7be30bbf8a888be8aa95678534655e19c50746e24e697343a8bc8e"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e6_benchmark.py",
+      "bytes": 7322,
+      "sha256": "e328b7d5d965637e986285cafe596ac15cdd9320c195d6f02162d883267baafe"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e6_smooth.py",
+      "bytes": 1356,
+      "sha256": "de624205e6909a114521a6e166b212ce05dc84343956e2cbae93a1e515189a1e"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e1-01-span-derivative.md",
+      "bytes": 7782,
+      "sha256": "757cf4bacf497dcc6c582ac5096299c6ab19d3d643da4192f650ef0b3337fe8e"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e1-02-rational-span-bounds.md",
+      "bytes": 5138,
+      "sha256": "4651684a0dfce8d65b4ca09b13a298547e6d5a1252ea2dee844ed9bd97e393a6"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e1-03-scalar-operation-bridge.md",
+      "bytes": 14867,
+      "sha256": "38a58ef2070d8d64d57d695b58668071f9fb6b20ab9bd5895489ff03fd21479d"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e1-04-finite-aggregate-separation.md",
+      "bytes": 9343,
+      "sha256": "622e76b507e411867239238e4b407dfe5637d6c2dd7f95623348728fb7e4e930"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e1-05-finite-scalar-cgs2-capacities.md",
+      "bytes": 9348,
+      "sha256": "a2ea9a62243597c7be3e4ec0716fc65a54d7eb9e7a49b885fd532f20d256bf8a"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e3-10-polynomial-span-certificate.md",
+      "bytes": 6904,
+      "sha256": "611d40f116f02baca656eb2f8f50fee9c87a4b93a3cfa766afe79f87c0cbbdc5"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e3-11-selection-criterion.md",
+      "bytes": 9094,
+      "sha256": "30c3005063ee5e4ccb99279d2ac32d7e7d04a934fff11ab2620bd4e341a2c518"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e4-14-noiseless-quantifier-refutation.md",
+      "bytes": 6466,
+      "sha256": "5f58acc4c70046c1f9e25321044dfed89de07388851cae710f691b4f7efcf2c8"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e4-15-projection-only-closure-obstruction.md",
+      "bytes": 9768,
+      "sha256": "2b3f5c740e77b84c99477c6b82553312d7e2b8f57a96868c1a1c0ee1c377e3c4"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e5-30-padua-positivity-radius-upper-bound.md",
+      "bytes": 7578,
+      "sha256": "54f90362a5d85a37447a4589fd735fabc966e25c7fa4665968a4ff144b7adc00"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e5-31-explicit-square-root-spread-family.md",
+      "bytes": 7691,
+      "sha256": "50ddbc5d914431a245a84c59832a460b7f0f969db3c9ff37821bf47ee557d7d8"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e5-32-failed-negative-witness-paths.md",
+      "bytes": 7704,
+      "sha256": "12e8cbfb9c8cc5a114dacdd92fdb88c0c05de6bf8a050f42edff0a77dd8b41b7"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e6-50-public-va-drift-measured.md",
+      "bytes": 11811,
+      "sha256": "0c82b9656cd14fe5a5e8a2d06423e86910dd36f1d5b50afe137177bc2b7be021"
+    }
+  ]
+}
