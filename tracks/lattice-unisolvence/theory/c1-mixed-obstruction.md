@@ -36,3 +36,7 @@ c1_mod4.py computes all four6x6 determinants by exact Fraction elimination and a
 ## Open items and history
 
 General-degree nonvanishing/stability remains OPEN; the complete row-moment criterion PD-T?lattice-c1-codex-03 is available.2026-10-31, Codex assigned gpt-6.1-sol xhigh, rules/source e949ef06895acd5463cdf8df7e0e5f795218f70f. Original negative scope n2was explicitly extended to n3after round6's nonzero certificate; no claim of universal failure at other degrees.
+
+## Audit history addendum — 2026-11-01
+
+The pre-acceptance pending wording above is historical. Supplementary [Astra reconstruction](../../../topics/lattice-unisolvence-20261031/independent/report.md) completed, and [Claude audit-01](../../../topics/lattice-unisolvence-20261031/audit-01.md) accepted this exact existing statement and epistemic status. [Response-01](../../../topics/lattice-unisolvence-20261031/response-01.md) changes audit/integration metadata only; no proof, hypothesis, status or finite observation is upgraded. Literature/novelty gaps remain unresolved where stated. Codex administrative response, requested gpt-6.1-sol high; runtime metadata unexposed.

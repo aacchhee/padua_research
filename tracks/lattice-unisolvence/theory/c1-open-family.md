@@ -36,3 +36,7 @@ Twelve rounds used: original ten plus the written two-round extension that fille
 ## History
 
 2026-10-31, Codex assigned gpt-6.1-sol xhigh, rules/source e949ef06895acd5463cdf8df7e0e5f795218f70f. Initially investigated phase0, then phase1only at n≡2. Root's explicit rounds11–12extension added phase1at n≡0, producing this all-degree cardinality/transversal target. No earlier singular phase was silently erased.
+
+## Audit history addendum — 2026-11-01
+
+The pre-acceptance pending wording above is historical. Supplementary [Astra reconstruction](../../../topics/lattice-unisolvence-20261031/independent/report.md) completed, and [Claude audit-01](../../../topics/lattice-unisolvence-20261031/audit-01.md) accepted this exact existing statement and epistemic status. [Response-01](../../../topics/lattice-unisolvence-20261031/response-01.md) changes audit/integration metadata only; no proof, hypothesis, status or finite observation is upgraded. Literature/novelty gaps remain unresolved where stated. Codex administrative response, requested gpt-6.1-sol high; runtime metadata unexposed.

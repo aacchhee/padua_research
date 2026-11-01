@@ -1,6 +1,6 @@
 # Unisolvent lattice subsets beyond checkerboards
 
-Stage: AUDIT
+Stage: WORK
 Next: `Claude (Opus 5.5 xhigh): Continue codex/lattice-unisolvence-20261031.`
 
 ## Authority / provenance
@@ -48,3 +48,16 @@ Next: `Claude (Opus 5.5 xhigh): Continue codex/lattice-unisolvence-20261031.`
 
 Stage: WORK
 Next: `Codex (gpt-6.1-sol high): Continue codex/lattice-unisolvence-20261031.` (write response-01.md to audit-01 F1–F7)
+
+
+## 2026-11-01 — Codex response-01 / registry integration
+
+Rules read at3f369611f364c8bab41b8a48f1414f88b21937ec (unchanged from724269a and main07c5f54). Role: root orchestrator; AC requested gpt-6.1-sol high, runtime metadata unexposed. Claude audit-01 accepted all existing mathematical scopes and labels. AC now explicitly orders PR#4next and PR#5stacked on it.
+
+Merged main07c5f5465d6de306aa81dbe8ca1f615295163864 at718d571acf140ffe5d82707d4abe93871a2ffd13 without rebasing; all nine shared conflicts were resolved additively. No charter entry was found overwritten on main; the topic branch lacked the merged MZ additions. Both sets of rows and all accepted dispositions/IDs are retained, including LIT061–065 and66 lattice provisional IDs. Registry current-status metadata, distinct IDEA summaries and the two stale MZ audit-progress cells are corrected. Theory files retain original wording and receive only dated acceptance-history appendices. Producer code/data and all scientific statuses remain unchanged.
+
+F2's proposed additive-separation result is retained in the immutable audit for subsequent development rather than introduced as new mathematics in this cleanup. F6 optional upgrades are declined; the six finite records remain MEASURED. F3 uses the producer's two BLAS threads. F5 is resolved by accepting the auditor-delivered retrieval copy as explicitly reported, without claiming direct Windows verification. Full dispositions and source identities: response-01.md and response-01-base.json.
+
+Original direction/checker hash manifests remain historical snapshots at the audited source; appended history changes their full-file hashes but not their mathematical prefixes. The response checker verifies those prefixes and unchanged producer payloads explicitly. The two pre-existing verbatim MZ input lines and generated SVG whitespace are retained rather than rewriting audited source/artifact bytes; the authored response patch is checked separately.
+
+Current stage remains WORK until the focused registry/ledger review and actual PR#4→PR#5 rehearsal pass. No PR is merged by this agent.

@@ -35,3 +35,7 @@ Elementary dimension counting and product polynomials; closest campaign entries 
 ## History
 
 2026-10-31, Codex C3 developer, assigned gpt-6.1-sol xhigh; rules/base e949ef06895acd5463cdf8df7e0e5f795218f70f.
+
+## Audit history addendum — 2026-11-01
+
+The pre-acceptance pending wording above is historical. Supplementary [Astra reconstruction](../../../topics/lattice-unisolvence-20261031/independent/report.md) completed, and [Claude audit-01](../../../topics/lattice-unisolvence-20261031/audit-01.md) accepted this exact existing statement and epistemic status. [Response-01](../../../topics/lattice-unisolvence-20261031/response-01.md) changes audit/integration metadata only; no proof, hypothesis, status or finite observation is upgraded. Literature/novelty gaps remain unresolved where stated. Codex administrative response, requested gpt-6.1-sol high; runtime metadata unexposed.

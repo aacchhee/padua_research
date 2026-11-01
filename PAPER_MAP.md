@@ -16,4 +16,4 @@ No manuscript has been drafted or accepted. The following is a development brief
 
 | Manuscript / brief | Question | Track | Support | Remaining gaps | Readiness |
 |---|---|---|---|---|---|
-| Exploratory lattice development brief | Periodic total-degree subsets beyond checkerboards; parity-adapted2D and scoped3D structure | [lattice report](topics/lattice-unisolvence-20261031/report.md) | Provisional theory records; direct proofs separated from finite measurements | Claude audit, all-degree strict contraction/kernel bound, exact literature overlap and batch preparation | No manuscript or priority claim; AUDIT |
+| Exploratory lattice development brief | Periodic total-degree subsets beyond checkerboards; parity-adapted2D and scoped3D structure | [lattice report](topics/lattice-unisolvence-20261031/report.md) | Provisional theory records; direct proofs separated from finite measurements | All-degree strict contraction/kernel bound, exact literature overlap and later batch preparation (Claude audit-01 accepted existing scopes) | No manuscript or priority claim; PR #4 response |

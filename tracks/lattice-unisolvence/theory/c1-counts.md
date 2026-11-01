@@ -37,3 +37,7 @@ C1/results.json preserves all actual phase0n1..8 counts, including failures at n
 ## Open items and history
 
 Independent reconstruction pending. General interpolation/stability of the parity-adapted phase0odd/phase1even family remains unresolved.2026-10-31, Codex assigned gpt-6.1-sol xhigh, rules/source e949ef06895acd5463cdf8df7e0e5f795218f70f. Original statement covered phase0counts and complete-block phaseequivalence only; root-authorized rounds11–12expanded the table to all four phases, preserving the original scope/results.
+
+## Audit history addendum — 2026-11-01
+
+The pre-acceptance pending wording above is historical. Supplementary [Astra reconstruction](../../../topics/lattice-unisolvence-20261031/independent/report.md) completed, and [Claude audit-01](../../../topics/lattice-unisolvence-20261031/audit-01.md) accepted this exact existing statement and epistemic status. [Response-01](../../../topics/lattice-unisolvence-20261031/response-01.md) changes audit/integration metadata only; no proof, hypothesis, status or finite observation is upgraded. Literature/novelty gaps remain unresolved where stated. Codex administrative response, requested gpt-6.1-sol high; runtime metadata unexposed.

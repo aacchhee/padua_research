@@ -34,3 +34,7 @@ Developer float64 diagnostics give ranks5/6at n2 and26/28at n6, consistent with 
 ## Open items and history
 
 Independent reconstruction pending. Shifted phases1/3 escape this specific invariant-subspace obstruction and require separate tests; no negative extension to them is made.2026-10-31, Codex assigned gpt-6.1-sol xhigh, rules/source e949ef06895acd5463cdf8df7e0e5f795218f70f.
+
+## Audit history addendum — 2026-11-01
+
+The pre-acceptance pending wording above is historical. Supplementary [Astra reconstruction](../../../topics/lattice-unisolvence-20261031/independent/report.md) completed, and [Claude audit-01](../../../topics/lattice-unisolvence-20261031/audit-01.md) accepted this exact existing statement and epistemic status. [Response-01](../../../topics/lattice-unisolvence-20261031/response-01.md) changes audit/integration metadata only; no proof, hypothesis, status or finite observation is upgraded. Literature/novelty gaps remain unresolved where stated. Codex administrative response, requested gpt-6.1-sol high; runtime metadata unexposed.

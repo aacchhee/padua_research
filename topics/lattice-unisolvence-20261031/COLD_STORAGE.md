@@ -2,7 +2,7 @@
 
 AC's chosen destination: `C:\Users\andreyac\Downloads\padua\cold_storage\lattice-unisolvence-20261031\`.
 
-The archive below is actually staged in the cloud workspace. Windows delivery/receipt is unconfirmed; the parent charter's separate waiver is not claimed as a receipt here. All essential small scientific code/evidence is also committed, so this storage item does not leave a computer-proof dependency unavailable.
+The archive below is actually staged in the cloud workspace. The original ZIP was not delivered to Windows. For F5 the developer accepts the auditor-delivered, hash-verified retrieval copy below as the archival representation of the audited head; it is a different ZIP, with an explicit audit receipt. The parent charter waiver is not used as a receipt. All essential small scientific code/evidence is also committed, so this storage item does not leave a computer-proof dependency unavailable.
 
 | File | Actual staging path | Bytes | SHA-256 | Source / generating command | Checker |
 |---|---|---:|---|---|---|
@@ -20,4 +20,10 @@ The scientific computations are reproducible from committed checkers; exact Pyth
 
 ## Retention
 
-AC is the permanent archive custodian once transferred to the chosen folder. The cloud path is temporary session staging with no promised long-term retention. No archival deletion was performed. Pending receipt remains explicit and does not imply that the required Claude audit or whole batch is merge-ready.
+AC is the permanent archive custodian once transferred to the chosen folder. The cloud path is temporary session staging with no promised long-term retention. No archival deletion was performed. The original ZIP receipt remains unconfirmed, while the distinct auditor-delivered retrieval copy below is accepted for F5. Neither archival representation implies whole-batch merge readiness.
+
+## Accepted retrieval-copy receipt — audit-01 F5, 2026-11-01
+
+Claude audit-01, committed at3f369611f364c8bab41b8a48f1414f88b21937ec, reports delivery to `C:\Users\andreyac\Downloads\padua\cold_storage\lattice-unisolvence-20261031\claude-audit-01\lattice-evidence-retrieval-copy-724269a.zip`. It contains169entries:168 audited file identities plus their manifest. Size841824bytes; SHA-256 `8e75432bea5070776bb025030442adc05ba44f5efd8884ba5408fb546eca8330`. The auditor checked file hashes before zipping and after extraction, and delivered its report/scripts/checksums with the copy.
+
+The developer accepts that copy for F5. This is an **auditor-reported delivery and integrity receipt**, not a claim that Codex accessed AC's machine or ran Python on Windows. It is not the832029byte original ZIP, whose separate identity and cloud staging are preserved above. All essential scientific files are committed; current registry/history metadata is in the Git response envelope rather than silently substituted into either historical ZIP. The immutable [audit delivery note](audit-01.md) is the receipt source.

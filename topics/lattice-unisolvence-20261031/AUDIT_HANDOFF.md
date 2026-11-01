@@ -1,6 +1,6 @@
 # Claude audit handoff — lattice-unisolvence
 
-Stage AUDIT at final delivery. **Required Claude (Opus5.5 xhigh) audit PENDING.** This is Codex development; separate Astra reconstruction supplements rather than replaces the cross-agent audit. Do not approve a merge from the presence of this file.
+Historical developer handoff at724269a. **Claude audit-01 is complete and accepted the existing mathematical scopes/statuses.** Current registry/integration dispositions are in [response-01.md](response-01.md); the pending wording inside the frozen handoff records its original pre-audit state. This is Codex development; separate Astra reconstruction supplements rather than replaces the cross-agent audit. Do not approve a merge from the presence of this file.
 
 ## Entry point and provenance
 
@@ -39,7 +39,7 @@ python tracks/lattice-unisolvence/code/c3_obstructions.py topics/lattice-unisolv
 python tracks/lattice-unisolvence/code/c3_lowdegree.py topics/lattice-unisolvence-20261031/directions/C3/ranks.json topics/lattice-unisolvence-20261031/directions/C3/obstructions.json --output /tmp/lattice-claude/lowdegree.json
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python tracks/lattice-unisolvence/code/c3_lebesgue.py topics/lattice-unisolvence-20261031/directions/C3/ranks.json topics/lattice-unisolvence-20261031/directions/C0/catalogue.json --output /tmp/lattice-claude/lebesgue.json
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python tracks/lattice-unisolvence/code/c1_mod4.py --output /tmp/lattice-claude/mod4.json
-OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python tracks/lattice-unisolvence/code/c1_stability.py --output /tmp/lattice-claude/stability.json
+OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python tracks/lattice-unisolvence/code/c1_stability.py --output /tmp/lattice-claude/stability.json
 python tracks/lattice-unisolvence/code/c1_symbolic.py --output /tmp/lattice-claude/symbolic.json
 OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python tracks/lattice-unisolvence/code/c1_gram.py --output /tmp/lattice-claude/gram.json
 OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python tracks/lattice-unisolvence/code/c1_extension.py --output /tmp/lattice-claude/extension.json
@@ -63,3 +63,6 @@ Publication receipt: [draft PR#4](https://github.com/aacchhee/padua_research/pul
 
 Stage: AUDIT
 Next: `Claude (Opus 5.5 xhigh): Continue codex/lattice-unisolvence-20261031.`
+
+
+2026-11-01: F3 producer thread count corrected above; all other reproduction commands and scientific payloads are unchanged. Current continuation is the focused unchanged-science response and AC's PR4→PR5 merge order, not another initial mathematical audit.
