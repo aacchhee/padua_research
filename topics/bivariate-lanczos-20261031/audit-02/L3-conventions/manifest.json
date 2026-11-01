@@ -1,0 +1,163 @@
+{
+  "audit": "L3-conventions",
+  "date_utc": "2026-11-01",
+  "verdict": "CLEAN in declared scope",
+  "assigned_model": "gpt-6-astra",
+  "assigned_effort": "xhigh",
+  "runtime_metadata_independently_exposed": false,
+  "supplied_head_rules_sha": "50b0d304001b48607527e5086a67045f534d9472",
+  "supplied_scientific_candidate": "075d4074017445a0fd4d7443ffac97cd7f8c106b",
+  "baseline_audit_commit": "5f523313b7b388cb114103734028f0a850dfeaad",
+  "git_operations_by_subauditor": false,
+  "rules_and_reused_prior_full_reads": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 3159,
+      "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60",
+      "prior_audit_sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60",
+      "unchanged": true
+    },
+    {
+      "path": "agents/WORKFLOW.md",
+      "bytes": 18116,
+      "sha256": "b1c1c14c83e02bf38283159f81ec278ae336ab56c95d0c026b9ada3314d1ffaa",
+      "prior_audit_sha256": "b1c1c14c83e02bf38283159f81ec278ae336ab56c95d0c026b9ada3314d1ffaa",
+      "unchanged": true
+    },
+    {
+      "path": "agents/codex/CODEX.md",
+      "bytes": 4969,
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+      "prior_audit_sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+      "unchanged": true
+    },
+    {
+      "path": "state/IDEAS.md",
+      "bytes": 46988,
+      "sha256": "12ba5f8eccfc943faebee07b83ea37b995f0b89244fa3b9b81a6f88051ad931d",
+      "prior_audit_sha256": "12ba5f8eccfc943faebee07b83ea37b995f0b89244fa3b9b81a6f88051ad931d",
+      "unchanged": true
+    },
+    {
+      "path": "literature/INDEX.md",
+      "bytes": 111148,
+      "sha256": "a9fdbfeb7d0a5b485c84e3e9763739e8f8597f118a6e76bf1dcf76ea8aa28a15",
+      "prior_audit_sha256": "a9fdbfeb7d0a5b485c84e3e9763739e8f8597f118a6e76bf1dcf76ea8aa28a15",
+      "unchanged": true
+    }
+  ],
+  "audited_theory": [
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-302-backward-reduction-moment-cone.md",
+      "bytes": 22202,
+      "sha256": "fd21c38c54355f9951dbc4281fb6cb79377d66541d6ffb272c2b895ba20a5d93",
+      "response_sha256": "fd21c38c54355f9951dbc4281fb6cb79377d66541d6ffb272c2b895ba20a5d93",
+      "matches_response": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-303-moment-cone-rate-theorem.md",
+      "bytes": 11143,
+      "sha256": "e2cebac0f5f6181d75a412ef815f8c11f2e788ce21d90cf3dff1c940c619c7f9",
+      "response_sha256": "e2cebac0f5f6181d75a412ef815f8c11f2e788ce21d90cf3dff1c940c619c7f9",
+      "matches_response": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N302-square-case-linear-rate-refuted.md",
+      "bytes": 5089,
+      "sha256": "7104f281107a413cea3b9509497561fd53b536f94152bce1e7629b2feec8dc26",
+      "response_sha256": "7104f281107a413cea3b9509497561fd53b536f94152bce1e7629b2feec8dc26",
+      "matches_response": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N309-normalized-residual-threshold-refuted.md",
+      "bytes": 8126,
+      "sha256": "67ccce2680cba0f303e4db8fd0a3d9762868422539cb4d16554a7116066ba7f2",
+      "response_sha256": "67ccce2680cba0f303e4db8fd0a3d9762868422539cb4d16554a7116066ba7f2",
+      "matches_response": true
+    }
+  ],
+  "other_inputs": [
+    {
+      "path": "topics/bivariate-lanczos-20261031/response-01.md",
+      "bytes": 22605,
+      "sha256": "d317c0883768741a2c0a90dca45fb9a13bb528af1ad38268f5aa464ade2b2b67"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/response-audit-01.md",
+      "bytes": 12553,
+      "sha256": "154e04b9d535b7b5d0baaf1ae53e68a4dd876e6f24d2b54c58d77b5e97903bbd"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/SPLITS.md",
+      "bytes": 6948,
+      "sha256": "9bb5b5b89837a5148ceda370dc133ac2f0dc39d501c8ab521d96a913f4842c4e"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/report.md",
+      "bytes": 22307,
+      "sha256": "8a86f5af2df7e8dba18a0cffba00dd40674a3b31cfe797a603929883018ded5d"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/SUMMARY.md",
+      "bytes": 9483,
+      "sha256": "87fad76aaf322d24591e4da929c2075e606bfa8809bddd2bbb93070d26f4c588"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/candidates.md",
+      "bytes": 23265,
+      "sha256": "55cfbf8ee57f4ce5d5f1e291ea681a8e942a30adb679ce28a540e691306018e0"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/t302b_conventions_check.log",
+      "bytes": 1394,
+      "sha256": "b829dd853361bf2af7c3bbb9d60b5f31c991bcd6a3fd161cba26eec5419c2039"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L3/t302b_conventions_check.py",
+      "bytes": 10867,
+      "sha256": "f8ad12db997a6c597bf3efd21bf4a1785e30ba29b63a582dbd01e9790f2c0d50"
+    }
+  ],
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "sympy": "1.14.0"
+  },
+  "working_directory": "/workspace/padua_research",
+  "executions": [
+    {
+      "command": "python3 -I tracks/bivariate-lanczos/code/L3/t302b_conventions_check.py > topics/bivariate-lanczos-20261031/audit-02/L3-conventions/developer-check-rerun.log 2>&1",
+      "exit_code": 0,
+      "kind": "fresh rerun of developer code"
+    },
+    {
+      "command": "python3 -I topics/bivariate-lanczos-20261031/audit-02/L3-conventions/independent_conventions.py > topics/bivariate-lanczos-20261031/audit-02/L3-conventions/independent-check.log 2>&1",
+      "exit_code": 0,
+      "kind": "independent auditor implementation"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L3-conventions/developer-check-rerun.log",
+      "bytes": 1394,
+      "sha256": "b829dd853361bf2af7c3bbb9d60b5f31c991bcd6a3fd161cba26eec5419c2039"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L3-conventions/independent-check.log",
+      "bytes": 858,
+      "sha256": "ae941a44bdec730c72fb614da2f81a894573b5b0a5dc40f1fcfc796284f623a7"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L3-conventions/independent_conventions.py",
+      "bytes": 3915,
+      "sha256": "1a26f7fef101c5f90995ac14353a50674220d8d49ae5eae8ba6c5b8a750af0aa"
+    }
+  ],
+  "artifact_bytes_excluding_manifest_and_report": 6167,
+  "report": {
+    "path": "topics/bivariate-lanczos-20261031/audit-02/L3-conventions.md",
+    "bytes": 13563,
+    "sha256": "78d29c7a799fb373672f36debcfc87ce04f50c0fbb71cfe8d764c2ad3bda8f13"
+  },
+  "retention": "Local owned audit artifacts, each below 1 MB. Parent coordinates staging, repository-wide generated-output budget and any archival requirement; no cold-storage location selected or claimed. No external artifacts needed for these reruns."
+}

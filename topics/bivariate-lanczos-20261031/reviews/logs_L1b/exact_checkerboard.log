@@ -1,0 +1,11 @@
+# rv2_exact_checkerboard.py (exact rationals)
+equispaced: m=4, e=0, |S_e|=15 (N_m=15); moment mismatches for a+b <= 2m: 0; mismatches at a+b = 2m+1: [(4, 5)]
+   graded basis up to degree m: nonzero coefficients outside the product (chain) pattern: 0
+equispaced: m=4, e=1, |S_e|=15 (N_m=15); moment mismatches for a+b <= 2m: 0; mismatches at a+b = 2m+1: [(4, 5)]
+   graded basis up to degree m: nonzero coefficients outside the product (chain) pattern: 0
+cubic-clustered s^3: m=4, e=0, |S_e|=15 (N_m=15); moment mismatches for a+b <= 2m: 0; mismatches at a+b = 2m+1: [(4, 5)]
+   graded basis up to degree m: nonzero coefficients outside the product (chain) pattern: 0
+irregular ordered: m=4, e=0, |S_e|=15 (N_m=15); moment mismatches for a+b <= 2m: 0; mismatches at a+b = 2m+1: [(4, 5)]
+   graded basis up to degree m: nonzero coefficients outside the product (chain) pattern: 0
+unordered Y = (0,1,3,2), m = 2: m=2, e=0, |S_e|=6 (N_m=6); moment mismatches for a+b <= 2m: 6; mismatches at a+b = 2m+1: [(3, 2), (4, 1), (5, 0)]
+   graded basis up to degree m: nonzero coefficients outside the product (chain) pattern: 1

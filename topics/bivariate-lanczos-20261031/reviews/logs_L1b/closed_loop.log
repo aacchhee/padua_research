@@ -1,0 +1,15 @@
+# rv2_closed_loop.py numpy 2.5.3; u = 2^-53; checkerboards m = 30
+## cubic
+   double BJ loss L(n), n=12,16,20,24:        3.0e-14 1.7e-11 5.3e-09 1.0e-06
+   dot64 (only dot products in double):       3.2e-14 1.1e-11 4.6e-09 7.3e-07   ratio to L: 1.05 0.63 0.87 0.70
+   noise model sigma=0.577u (median of 3):     8.4e-15 2.8e-12 8.2e-10 1.0e-07   ratio to L: 0.28 0.16 0.15 0.10
+   noise model sigma=1.000u (median of 3):     1.5e-14 4.9e-12 1.4e-09 1.8e-07   ratio to L: 0.48 0.28 0.27 0.17
+   noise model sigma=2.000u (median of 3):     2.9e-14 9.8e-12 2.8e-09 3.6e-07   ratio to L: 0.96 0.57 0.53 0.35
+   all long double:                           8.1e-18 5.3e-15 2.7e-12 4.8e-10
+## equi
+   double BJ loss L(n), n=12,16,20,24:        7.4e-16 2.8e-15 8.3e-15 2.8e-14
+   dot64 (only dot products in double):       5.5e-16 1.9e-15 8.2e-15 2.6e-14   ratio to L: 0.74 0.67 1.00 0.93
+   noise model sigma=0.577u (median of 3):     5.9e-17 2.8e-16 1.0e-15 3.3e-15   ratio to L: 0.08 0.10 0.12 0.12
+   noise model sigma=1.000u (median of 3):     1.0e-16 4.9e-16 1.8e-15 5.7e-15   ratio to L: 0.14 0.17 0.21 0.20
+   noise model sigma=2.000u (median of 3):     2.0e-16 9.9e-16 3.5e-15 1.1e-14   ratio to L: 0.27 0.35 0.42 0.40
+   all long double:                           1.3e-18 3.0e-18 1.2e-17 3.9e-17

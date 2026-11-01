@@ -1,5 +1,7 @@
 # Step 0 literature baseline — 2026-10-31
 
+> **Final IDs (2026-11-01).** The provisional LIT IDs in this file were allocated final IDs under AC's authorisation; see `topics/programme-ideas-20261031/pr-prep/id-map.json` and ID_CROSSWALK.md. Rows merged into an existing statement have no new ID.
+
 Recorded before exploration under AC's explicit exception. All statements below originate in the user's campaign request or base-branch coverage-qualified source records. **UNVERIFIED against fulltext in this campaign** until a named inspection addendum says otherwise. These are sourced research leads, not inherited proofs or accepted novelty claims. Source records and exact locators are to be added by the literature developer before acceptance.
 
 | Provisional statement | Source and reported statement | Relevance / gap |

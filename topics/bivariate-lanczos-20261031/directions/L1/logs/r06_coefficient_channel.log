@@ -1,0 +1,17 @@
+# l1_r06_coefficient_channel.py numpy=2.5.3
+== checkerboard cubic-clustered (s|s|^2, as R04/R05) (m=30, M=496): max |c_BJ off-pattern| = 2.1e-13, max |c_BJ - c*| on pattern = 1.6e-14
+   BJ loss L(n) (double run)                      n8:7e-16 n12:4e-14 n16:2e-11 n20:8e-09 n24:7e-07
+   D: exact c*                                    n8:4e-17 n12:7e-17 n16:7e-15 n20:9e-15 n24:9e-15
+   D: c_BJ                                        n8:4e-16 n12:4e-14 n16:2e-11 n20:8e-09 n24:7e-07
+   D: c_BJ on-pattern, off zeroed                 n8:4e-16 n12:6e-16 n16:3e-15 n20:9e-15 n24:1e-12
+   D: c* + c_BJ off-pattern                       n8:3e-16 n12:4e-14 n16:2e-11 n20:8e-09 n24:7e-07
+   D: c* + abs u-noise off-pattern (median)       n8:5e-10 n12:8e-07 n16:4e-04 n20:3e-02 n24:6e+00
+   D: c* + rel u-noise on pattern+beta (median)   n8:2e-15 n12:2e-15 n16:8e-15 n20:9e-15 n24:5e-13
+== checkerboard equispaced (m=30, M=496): max |c_BJ off-pattern| = 4.8e-16, max |c_BJ - c*| on pattern = 9.5e-16
+   BJ loss L(n) (double run)                      n8:9e-16 n12:1e-15 n16:4e-15 n20:1e-14 n24:4e-14
+   D: exact c*                                    n8:1e-17 n12:1e-17 n16:2e-15 n20:2e-15 n24:2e-15
+   D: c_BJ                                        n8:5e-16 n12:1e-15 n16:4e-15 n20:1e-14 n24:4e-14
+   D: c_BJ on-pattern, off zeroed                 n8:5e-16 n12:8e-16 n16:8e-16 n20:1e-15 n24:1e-15
+   D: c* + c_BJ off-pattern                       n8:5e-16 n12:2e-15 n16:4e-15 n20:1e-14 n24:4e-14
+   D: c* + abs u-noise off-pattern (median)       n8:1e-14 n12:4e-14 n16:2e-13 n20:7e-13 n24:2e-12
+   D: c* + rel u-noise on pattern+beta (median)   n8:2e-15 n12:2e-15 n16:3e-15 n20:3e-15 n24:4e-15

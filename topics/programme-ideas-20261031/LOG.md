@@ -1,11 +1,11 @@
 # Programme-scale research directions (ideas campaign)
 
 - Branch: `claude/programme-ideas-20261031` · Base: `d36722823441dc40c6e19d69a174459348dd309c` (= `origin/main` at start) · Developer: Claude · Auditor: Codex (`gpt-6-astra`)
-- Stage: AUDIT — developer response-01 (with addendum) to Codex audit-01 submitted for re-audit. Next: `Codex (gpt-6-astra xhigh): Re-audit claude/programme-ideas-20261031 response-01 (A1–A9) at the recorded response head.`
+- Stage: PR (preparation) — Codex audit-03 ACCEPTED response-02 for B1–B4, with nonblocking N1/N2 notes. PR #6 remains draft pending ordinary preparation. Next: `Claude (Opus 5.5 high): Continue claude/programme-ideas-20261031 — prepare PR #6 after accepted audit-03, address N1/N2 with an exact impact check, and reconcile registry/literature work.`
 - Submitted claims at `614709d`: no PD-T; 0 programmes, 1 project proposal (`proposal-1.md`, gen4-2), 19 candidates refuted/equivalent/abandoned/deferred (`gate-rejected.md`); 20 IDEA records (`ideas/candidates.md`); by-products in `report.md` §3. Audit-01 preserves finite measured evidence but rejects certification, several universal/negative claims and status/provenance overreach. The project is provisional; no certified replacement table or final PD-N is accepted.
 - For the PR: the rule amendment below (material rule change, to be audited by Codex); provisional `LIT?programme-ideas-claude-NN` and `IDEA?programme-ideas-claude-NN` records; allocations through the shared ledger `topics/padua-batch-20261031/ALLOCATIONS.md`.
 - Response-01 (2026-11-01, claude-opus-5-5): all of A1–A9 accepted; eight THEORY records added in `theory/` (PD-T?programme-ideas-claude-01…06, PD-N?programme-ideas-claude-01, 02); scope corrections inline in the evidence files and in the summaries; campaign inputs pinned in `sources/campaign-inputs/`. See `response-01.md`.
-- Open decisions after the developer response: whether to pursue the smaller project; whether to retain/register the restricted gen2-3 method failure; final-ID reservation and literature deduplication at coordinated PR preparation. The submitted certified-correction premise is not accepted (audit A1). The retained Sonnet-script allocation versus actual Fable execution needs a documented disposition (A9.8); no exception is invented by the auditor.
+- Current open decisions: whether to pursue the smaller project; final-ID reservation and literature deduplication at coordinated PR preparation. The five negatives retain the accepted scopes/statuses from audit-02; audit-03 accepts the B1–B4 correction response, with N1/N2 for preparation. The certified-correction premise remains unaccepted. A9.8 is disposed by AC's acceptance recorded in the addendum; the standing model-allocation rule is unchanged.
 
 ## Rule amendment (first commit on this branch)
 
@@ -122,6 +122,79 @@ Subagents are launched as background `general-purpose` agents on `claude-fable-5
 - `OPEN_TARGETS.md`: precise statements of everything that still needs proof, with known evidence, done-criteria and first routes.
 - Addendum committed at `c8c8eec23c16601fbf02086de4623a445fc5f1bc`; the next commit only records this SHA. Re-audit target: the branch head containing this line.
 
+## 2026-11-01 — Codex independent audit-02 of response-01 with addendum; Stage WORK
+
+- Candidate/rules read: `cadb35066160e466cb1704b9791ad6f374446422`; refreshed main: `9739a0c56b7a3976422ce60a8441bfbbfd6554df`, already an ancestor. The current local-results rule came from main; this audit makes no rule change. Working checkout was clean before fast-forwarding to the exact candidate.
+- Auditor allocation: AC-requested `gpt-6-astra xhigh`; four inherited supplementary agents with disjoint new `audit-02-support/` ownership. Resolved runtime model/effort metadata is not separately exposed. Root alone performs Git operations. Full current ideas/obstruction/disposition tables and relevant theory/source records read; no new mechanism or historical novelty clearance.
+- Decision: **CHANGES REQUIRED**, [audit-02.md](audit-02.md), B1–B4. Restricted N01/N03/N04 mathematical statements accepted as PROVED; N02/N05 accepted as MEASURED in their actual tested scopes. Positive T01–T03 accepted under their written hypotheses, subject to the minor finite-gauge terminology correction; T04/T05 remain OPEN and T06 MEASURED. These claim-level acceptances do not make the campaign ready.
+- Remaining major issue: live canonical IDEA-17 still asserts certified undercounts and twelve-digit second-order precision (B1), despite corrected proposal/report/theory. IDEA-10 retains an unqualified orbit-count conclusion (B2). The computed-section target's "nearby" needs a metric/radius/constant quantifiers (B3); B4 groups minor scope, finite-dimensional target and proof-completion clarifications. No developer claim was silently fixed by the auditor.
+- Actual independent executions: new exact inertia/Padua-commutant/parity/edge scripts reproduce; separate unequal-weight/non-product projector and exact nodal checks pass; commutator and M2 dimension diagnostics rerun. All 125 original campaign code/output files and 31 audit-01 files remain byte-identical to their pinned revisions. Expensive unchanged maxima/high-degree/80-bit sweeps were not repeated.
+- Provenance/registration repair: all 159 history-backed sources and five context rows verify; six context checksums, eleven theory records with registry links/statuses, twenty IDEA rows and 111 LIT rows verify. Root fetched the recorded Lanczos input head to check its immutable histories. Private Windows ZIP/PDF bytes were not re-retrieved here; the audited manifest and developer-reported readback retain that explicit access limit. A9.8 is disposed by the logged AC acceptance, without another permission request or rule/history rewrite.
+- New support reports, commands, output/content identities and source pins are in `audit-02-support/`. Root structural receipt and `git diff --check` pass. Original audits/checkers, developer sources and shared registries remain intact. Draft PR #6 is updated for this handoff; no final-ID allocation, readiness or merge is claimed.
+- Next: Claude answers B1–B4 in `response-02.md`, preserves accepted scopes and both audit records, and returns an exact SHA for focused review. B1/B2 need record corrections, not new numerical campaigns. Only AC merges.
+
+## 2026-11-01 — Claude, developer response-02 (claude-opus-5-5; effort not exposed); Stage AUDIT
+
+- Rules read at `39c5ae6` (unchanged rule files plus the merged local-results rule); main `9739a0c` already an ancestor.
+- `response-02.md`: B1–B4 accepted. B1/B2 canonical remnants in IDEA-17, IDEA-10 and `checks/decisive-gen4-2.md` struck or labelled historical; B3 rewritten with explicit classes, metric, gap, reference neighbourhood and constant dependence; B4.1–B4.7 scope, definition and done-criterion fixes in N03, N05, PD-T01, `OPEN_TARGETS.md` and the registry rows. No status changed; no expensive rerun.
+- New exact check: `checks/code/response-02/ritz_saturated_centre.py/.out` (saturated centre, s = 1, residuals 0; SymPy 1.14.0).
+- Response-02 content committed at `a8fc06cfb3c5a30cc5efe5569ed3cd5b32463aea`; the next commit only records this SHA. Focused-review target: the branch head containing this line.
+
+## 2026-11-01 — Codex audit-03 focused review of response-02; Stage PR (preparation)
+
+- Candidate/rules read: `0ef90edc5b4d5639474cca7fa8d6d688e684e505`; refreshed main `9739a0c56b7a3976422ce60a8441bfbbfd6554df`, already an ancestor. Rule files are unchanged from audit-02. Root fast-forwarded the clean topic checkout to the exact target; no history rewrite or new base merge.
+- Reviewer allocation: AC-requested `gpt-6-astra high`, plus one independent supplementary reviewer explicitly assigned the same model/effort for the target/gauge changes. Resolved runtime metadata remains unexposed. Root alone controls Git; supplementary ownership is confined to a new audit-support report.
+- Decision: **ACCEPTED for B1–B4**, [audit-03.md](audit-03.md). Canonical IDEA-17/10 remnants are superseded explicitly; the target class/metric/radius/constants and B4 refinements resolve the substantive findings. No result status or final ID changes. Expansion/argmax remain OPEN; counts/rational/Fourier observations remain MEASURED; accepted restricted proofs are preserved.
+- Nonblocking N1/N2: finish legacy certified/cheap-paper wording cleanup in the historical decisive record, and state positive-gap/constant/obstruction-sequence conventions in OPEN_TARGETS B3 before using it as a proof task. These are preparation notes, not new theorem refutations or requests for numerical campaigns. The independent target review is `audit-03-support/targets-review.md`.
+- Verification actually executed: new saturated-centre developer checker/output reproduced exactly; independent cardinal-polynomial/nodal and rank checks confirm s=1 and zero residuals; declared similarity/weighted-symmetry substitution checked symbolically. All 184 existing code/output and prior audit-support files compared are unchanged; both prior audit reports, rules/crosswalk and all eleven statuses are preserved. Root receipt, source hashes and commands: `audit-03-support/check-response-02.py/.json`. Python 3.12.14, SymPy 1.14.0; no expensive unchanged sweeps repeated.
+- Focused scientific correction cycle is complete. Stage PR authorizes preparation, not merge or a readiness claim. PR #6 remains draft for coordinated ID decisions, literature deduplication/integration, current audit metadata and the applicable integration check/rehearsal. The reviewer did not silently repair developer files or claim external archival verification. Only AC merges.
+
+## 2026-11-01 — Claude, PR preparation after accepted audit-03 (claude-opus-5-5; requested effort high); Stage PR
+
+- Rules were read at the branch head. They are unchanged from audit-03 (the local-results rule is on main). Main `9739a0c` is already an ancestor.
+- N1/N2 are accepted and fixed in `c93c912` (decisive record wording, OPEN_TARGETS B3 gap/constant/negative-form conventions, PD-T01 (d) stabiliser {±I}). Impact check: 3 prose files changed; statuses, registries, code, outputs, audit records, `agents/` and the ledger are byte-identical. Details are in [pr-prep.md](pr-prep.md).
+- Literature and registry integration is in `ad45de2`:
+  - the `literature/INDEX.md` provisional block has 109 rows (51 overlap, 58 new); rows 48 and 60 are merged into LIT-002 and LIT-010 with no new ID;
+  - the `literature/CORPUS.md` provisional key block has 112 keys;
+  - `ID_CROSSWALK.md` gains 20 IDEA rows and 111 LIT rows;
+  - the deduplication map is `lit/integration-map.json/.md` (Sonnet 5.5 helper; spot-checked).
+- Squash rehearsal from `9739a0c`:
+  - PR #6 `ad45de2` is clean;
+  - PR #9 `a09d910` adds 27 files under its own topic and is clean on top;
+  - PR #10 `a2dd845` (Lanczos) gives five end-of-file append conflicts in the shared registries, resolved as the union with all added lines preserved. Both orders were rehearsed; the trees differ only in block order.
+- PR #10 has allocated PD-T029–080, PD-N007–031, LIT-066–292 and IDEA-077–176. The next free IDs for this branch are PD-T081, PD-N032, LIT-293 and IDEA-177. If PR #10 lands first: drop the 34 duplicate CORPUS keys, and re-deduplicate the 54 INDEX rows whose sources PR #10 also registers.
+- Decision for AC: keep the provisional IDs at merge (lattice precedent), or allocate final IDs after PR #10 (ledger owner or explicit authorisation). Recommended order: PR #10 → PR #6 → PR #9. PR #6 stays draft until AC decides. No final ID is allocated. Only AC merges.
+
+## 2026-11-01 — Claude, re-integration after PR #10 merged (claude-opus-5-5; requested effort high); Stage PR
+
+- Main `21e620b` (PR #10) is merged in `3e0100f`. The five registry append conflicts are resolved as the union, and 34 duplicate CORPUS keys are dropped.
+- The second literature dedupe against PR #10's LIT-066–292 is in `af3881b`: 14 same (merged, no new ID), 38 overlap, 3 unrelated and 20 flags. The INDEX block is down to 95 rows. Row 58 was overridden to overlap. The helper was Sonnet 5.5; I reviewed all 15 of its "same" calls.
+- Rehearsal from `21e620b` with #6, #11, #9 and #12 is clean in sequence, and #11-first auto-merges. Details are in [pr-prep.md](pr-prep.md).
+- Next free IDs: PD-T081, PD-N032, IDEA-177 and LIT-300 (draft #11 reserves LIT-293–299). AC still has to choose between provisional IDs at merge and final allocation. No ledger edit, no final ID. Only AC merges.
+
+## 2026-11-01 — Claude, final-ID allocation at AC's instruction (claude-opus-5-5; requested effort high); Stage PR
+
+- AC's instructions: "allocate this block now", then "are the lattice ids allocated now? if not, do that as well". The lattice IDs were still provisional on main (66 of them, deferred), so both blocks were allocated in `6954664`:
+  - lattice: PD-T081–094, PD-N032–038, IDEA-177–189 and LIT-300–331;
+  - programme-ideas: PD-T095–100, PD-N039–043, IDEA-190–209 and LIT-332–426;
+  - next unreserved: PD-T101, PD-N044, IDEA-210 and LIT-427.
+- Generator and map: `pr-prep/allocate.py` and `id-map.json`. Registry blocks, crosswalk, records and the ledger are updated, and provisional IDs are kept as provenance. No status change. The rehearsal with #11, #9 and #12 is clean. Details are in [pr-prep.md](pr-prep.md).
+
+## 2026-11-01 — Codex audit-04 integration review and AC-authorized bookkeeping repair
+
+- Rules/candidate read: `37820a528c863e5cfe2dc2f1f8879b4fd40cf210`; main `21e620ba8b5f0e0706f3a8c6613517df04d9d469`. AC requested `gpt-6-astra high`; three disjoint supplementary reviewers used that explicit allocation. Runtime-resolved metadata is unavailable. Root alone controls Git and PR metadata. No new novelty-bearing work or accepted-mathematics review.
+- Allocation review passed: 192 unique final IDs, 208 provisional crosswalk records, 16 aliases, canonical Final ID lines and all scientific statuses preserved; exact #11 head `97968d2` reserves LIT-293–299. Main merge preserves every main registry line, and all 49 removed branch CORPUS rows have main replacements (15 rewritten, 34 duplicate). Original audit/code/rule files are unchanged.
+- Found three pipe-parsing registration defects and an incomplete description of the dependent squash rehearsal. AC then instructed: “you have to fix all bookkeeping without more claude rounds”. Root restored the baseline fields/coverage of LIT-342/369/389, removed three formula-derived CORPUS keys, repaired stale audit/allocation/frontier wording and made the allocation helper's default check work after installation. All allocated IDs/maps, mathematical statements/statuses and existing audits/checks/code/agents are preserved. The README edits affect administrative ID wording only.
+- Independent repair checks pass for literature retention and the allocator's read-only positive/negative cases. Current source-comparison flags remain recorded limits, not new mathematics or cleared source claims. Rehearsal documentation now requires own-topic-only dependent changes after upstream squashes; raw #12 whole-head conflicts are explicitly recorded. No other live branch is modified.
+- Detailed findings, dispositions and final integration verification will be retained in `audit-04.md` and the small new `audit-04-support/` artifacts. Only AC merges.
+
+## 2026-11-01 — Codex audit-04 completion; Stage PR
+
+- [Audit-04](audit-04.md): ACCEPTED after AC-authorized administrative repairs. The original finding receipts remain; independent literature/allocator repair reviews pass. `60e8ecf7bf5a171af02fec589583fa135dee2709` records the repairs. Subsequent delivery changes only current instructions, the audit, support evidence and this log. All accepted science, IDs/maps and old audits/checks/code/agents are preserved. No history rewrite or live merge.
+- AC's final sequence is **#6 → #13 (rules update) → #11 → #9 → #12**, with later drafts refreshed against the preceding merges. Rehearsal pins #13 `10f2d8592673866ed0aa5ca73cef88d7541183ed`, #11 `97968d2`, #9 `7b8884a`, #12 documented `c26a6ad` and refreshed `44be008`. The prepared sequence passes, retaining all192 allocations,7 reserved #11 rows and the Fable amendment. PR #13's separate protocol audit is not supplied by this compatibility check.
+- The raw whole-head #12 squash gives20conflicts, so PR preparation now explicitly requires refreshing/retargeting #9/#12 with their own-topic changes after preceding squashes. #11 refreshes against #6/#13-bearing main without moving its range. No later branch was rewritten here.
+- Prior protected197 files are byte-identical to `f4e2133`; canonical scientific records/statuses are unchanged. Three literature registrations are restored, bogus source keys removed, stale current metadata corrected, and default allocator validation is repeatable/read-only. Existing20source-comparison flags and all OPEN/MEASURED limits remain visible. Small evidence/manifests are in `audit-04-support/`. Root updates PR #6 and marks it ready for AC's decision after publishing the clean delivery. Only AC merges.
+
 ## Runs needed
 
-Response-01 submitted; Codex re-audit of the material changes is required. Certification of the maxima counts remains open (PD-T?programme-ideas-claude-06, Runs needed): if certified maxima are retained as a target, prove/repair the finite reduction, degeneracy/root and box-discard logic, implement rigorous checking and obtain an independent rerun; otherwise keep the existing finite observations MEASURED and list certification as OPEN. Asymptotic remainder/precision control, exact campaign input provenance and unexecuted alternatives remain explicit obligations under audit A1–A8. The audit did not rerun the full expensive n≤200/n=8192/80-bit sweeps; no full replay is claimed. Completed bounded commands and output identities are in `audit-support/`.
+No further PR #6 bookkeeping or Claude response round is required. AC decides whether to merge #6, then the separately audited #13. Refresh #11, #9 and #12 in that order against the preceding merges, preserving allocations and history. Scientific certification, OPEN targets and the recorded source-comparison gaps remain continuing research/source-reading work, not completed by this integration review. No unchanged expensive numerical replay or independent Windows-archive retrieval is claimed.

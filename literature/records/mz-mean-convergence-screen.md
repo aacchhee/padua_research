@@ -68,3 +68,56 @@ Next decisive reading: Nevai III plus its addendum; corrected Askey journal text
 ## History
 
 2026-10-31: added for audit-01 M2; five provisional statement/pointer groups plus unnumbered follow-up bibliography, source-specific coverage and unsuccessful access recorded. Orchestrator owns final allocations, shared registries, manuscript integration and Git.
+
+## 2026-11-01 fulltext reading (topic mz-prior-art-20261101)
+
+Reader: Claude, Opus 5.5 (orchestrator). Access: publisher PDF via AC's NTNU institutional access in AC's built-in browser, text extracted in-page with pdf.js and read in the session only; no PDF or fulltext extract stored anywhere in the repository. Rules `9739a0c`.
+
+### LIT-062 — Askey 1972 journal version read
+
+- Coverage: complete journal article pp. 71–85. Pp. 71–78 read in full; pp. 79–85 keyword-screened (theorem/Lobatto/endpoint/quadrature/log/Christoffel/Chebyshev/conjecture).
+- Statements: interpolation at the zeros x_{k,n} of p_n for dα (p. 71). Theorem 1 (p. 75): for α=β≥−1/2, or α+β=0 with 0<α<1/2, and continuous f, ∫|L_n f−f|^p(1−x)^α(1+x)^β dx→0 for 0<p<4(α+1)/(2α+1). The proof uses Gaussian quadrature and Christoffel numbers (p. 74), and pp. 76–77 show sharpness via a Nikolskii-type inequality. Conjecture 1 (pp. 72–73) remains a conjecture in the journal version. Theorems 2–3 (in the keyword-screened pp. 79–85; exact pages not recorded) concern mean convergence of orthogonal series (Pollard/Muckenhoupt). The "added in proof" note (p. 84) points to Askey, Summability of Jacobi series.
+- Relation: Gauss nodes (no endpoints), uniform-norm input, L^p convergence. **Verdict for PD-T017/PD-T018: RELATED, DIFFERENT SETTING** (no Lobatto nodes, no nodal ℓ² norm, no rate). The journal-version gap is closed.
+
+### LIT-064 — Lubinsky 1999 published version read
+
+- Coverage: published Constr. Approx. 15 (1999) 577–610 (34 pp.). Pp. 577–584 read in full, covering Theorems 1.1–1.3, Corollaries 1.4–1.5, Example 1.6, Theorem 1.7 and Definition 1.8. Pp. 585–610 keyword-screened (log/Lobatto/Jacobi/sharp/borderline/endpoint/Chebyshev/Remark); no Lobatto, Jacobi-borderline or logarithmic interpolation-norm statement found.
+- Statement (Theorem 1.7, p. 583): for b∈[1/2,1], c∈[0,1/2], −1/p<σ<1−1/p and ω(t)=(|1−|t/b||+c)^σ, under spacing condition (1.7), (1.31) and |π_nν|≤ω, one has for P∈Π_{n−1}: ∫|Pν|^p ≤ C Σ_j|P(t_j)|^p{∫_{t_{j−K}}^{t_{j+K+1}}|ℓ_jν|^p + δ_jω(t_j)^p/[δ_j|π_n′(t_j)|]^p}. C depends on L, α, σ, τ, p only. Endpoints t_1=−1, t_n=1 are allowed by (1.1). Remark (b), p. 579, verifies (1.7) for Chebyshev-type points cos θ_j with θ_j−θ_{j+1}≍1/n.
+- Relation: theorem-level match in **form** for the full interpolation space, but at CC/Lobatto nodes with p=2, ν≡1 the natural exponent is σ=1/2=1−1/p, the excluded endpoint of (1.29). Admissible σ<1/2 gives nodal weights exceeding CC weights by up to ≍N^{2−4σ} near ±1, with untracked C(σ). See topics/mz-prior-art-20261101/translation.md §T5, which is our analysis and not a source claim. **Verdict for PD-T017: RELATED, DIFFERENT SETTING (borderline excluded); for PD-T018: RELATED, DIFFERENT SETTING (only an upper-type inequality).**
+
+### LIT-065 — Smith 1986 complete
+
+- Coverage: complete article pp. 375–381 (Cambridge PDF, text layer), including p. 379.
+- Statements: Theorem 1 (p. 377): if w=ρ/(1−x²) is integrable and the nodes are the zeros of Q_n (orthogonal for ρ) plus ±1, then ∫w(L_{n+1}f−f)²→0 for f∈C[−1,1]. The proof bounds the C→L²(w) operator norm uniformly (pp. 377–378) using the Lobatto rule of precision 2n+1 and an Aitken splitting. Corollary 1 (p. 379): Jacobi (α,β>0) zeros plus endpoints, with weight (1−x)^{α−1}(1+x)^{β−1}. The CC case α=β=1/2 gives the Chebyshev weight (1−x²)^{−1/2}. Corollary 2 (pp. 379–380) is a product-integration consequence.
+- Relation: uniform-norm data (‖f‖_∞) and Chebyshev weight. Uniform C→L²(dx) boundedness at CC nodes follows, since dx≤(1−x²)^{−1/2}dx, and is consistent with an unbounded ℓ²(w)→L²(dx) norm (nodal ℓ²(w) is weaker than sup on nodes). **Verdict for PD-T017/PD-T018: RELATED, DIFFERENT SETTING.** Gap closed.
+
+### Secondary pointer from the Lubinsky 1998 survey (LIT-052), p. 231
+
+Survey Theorem 3.3, attributed to Y. Xu [J. Approx. Theory 76 (1994), p. 82] and described as extending earlier results of Nevai: a converse quadrature-sum inequality for generalized Jacobi distributions u, v and generalized Jacobi weight w, at the **Gauss** points and weights for u, under four integrability conditions. Nodes are Gauss, not Lobatto. Whether a Lobatto/CC version with the borderline exponent appears in Xu II or Nevai III remains to be read (both on AC's missing list). No theorem is imported from the survey's paraphrase.
+
+### LIT-063 — Nevai III fulltext reached (2026-11-01)
+
+Reader: Claude, Opus 5.5. Access: free publisher/open PDF read through the WebFetch tool, which extracts the text layer and answers through a summarizing model. Coverage is therefore paraphrase-level; OCR formulas are partly garbled. Any formula-level use needs a page-image check. Rules `9739a0c`, 2026-11-01.
+
+- URL: https://www.ams.org/journals/tran/1984-282-02/S0002-9947-1984-0732113-4/S0002-9947-1984-0732113-4.pdf (AMS free back archive; the group-A access worker and this reader both obtained the text layer on 2026-11-01).
+- Coverage: sections 1–3, all numbered theorems (pp. 680–697), definitions (pp. 671–673) and properties (g)–(i) (p. 675), via extraction.
+- Statements (paraphrase):
+  - Theorem 1 (p. 680) is sufficiency for sup_n‖L_n(w,vf)u‖_p≤C‖f‖_∞, with w∈GSJ, a Jacobi weight v and conditions on u, v, w.
+  - Theorem 2 (p. 686) is the matching necessity.
+  - Theorems 3–5 (pp. 690–694) give convergence.
+  - Theorem 6 (p. 695) is an if-and-only-if for mean convergence of quasi-Lagrange interpolation L_n^{(r,s)}(w,f) with added endpoints ±1 (vanishing derivatives of orders up to r−1, s−1).
+  - Theorem 7 (p. 696) gives divergence via a lower bound ≳ log n·|p_n(w,x)| for uniform data.
+  - Property (g), eq. (24) (p. 675): forward quadrature-sum inequality Σλ_kn|R(x_kn)|^p v(x_kn)≤C∫|R|^p vw for deg R≤cn.
+  - The extraction found no theorem with discrete weighted ℓ^p nodal data as input.
+- Relation: with w=(1−x²)^{1/2}, r=s=1, Theorem 6 concerns exactly CC/Lobatto interpolation, but with uniform input ‖f‖_∞. **Verdict for PD-T017/018: RELATED, DIFFERENT SETTING.** The 1990 addendum remains unread (on AC's list). Group-A note: Crossref/zbMATH title "Hilbert transforms and Lagrange interpolation" has no "Addendum" subtitle; Nevai's list calls it a letter to the editor.
+
+### LIT-061 — preceding note identified (2026-11-01, group-A access worker, Sonnet 5.5 high)
+
+The "Note précédente" cited on p. 913 is by **E. Feldheim alone**: *Sur l'orthogonalité des fonctions fondamentales de l'interpolation de Lagrange*, C. R. Acad. Sci. Paris 203 (1936) 650–652 (Zbl 0015.06302; JFM 62.0302.03). Its scan was not reached (Gallica URLs failed in the tools). Feldheim's expanded treatment, Bull. Soc. Math. France 65 (1937) 1–40, DOI 10.24033/bsmf.1260, is free on Numdam; not read for theorem content here. Low priority: it concerns node convention for a uniform-input result.
+
+### LIT-063 addendum — Nevai 1990 read (2026-11-01)
+
+Reader: Claude, Opus 5.5. Access: PDF supplied by AC in Downloads\\padua\\papers (2026-11-01, NTNU access), staged to the session; text via pdftotext, or tesseract OCR for image-only scans (Xu I/II). Read in the session only; nothing stored in Git. Rules `9739a0c`.
+
+- Citation: P. Nevai, *Hilbert transforms and Lagrange interpolation*, J. Approx. Theory 60 (1990) 360–363 ("Letter to the Editor"), DOI 10.1016/0021-9045(90)90065-X. Complete, 4 pp.
+- Content: Mastroianni noticed (Sept. 1989) that the proof of Theorem 1 of Nevai III (p. 682) uses the duality ∫H(F)G=−∫H(G)F without justification for F∈L log⁺L, G∈L^∞ of compact support. The letter proves that case (proof due to H. Widom) and corrects misprints on p. 682. No theorem of Nevai III changes. **Verdict: RELATED; Nevai III statements stand as read.**

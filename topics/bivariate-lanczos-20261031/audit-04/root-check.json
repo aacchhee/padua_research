@@ -1,0 +1,45 @@
+{
+  "base": "9739a0c56b7a3976422ce60a8441bfbbfd6554df",
+  "head": "a2dd845b8a231e1b00733e1361e2a9ad3bad222f",
+  "commands": [
+    "git worktree add --detach /tmp/padua-pr10-audit04 9739a0c56b7a3976422ce60a8441bfbbfd6554df",
+    "git -C /tmp/padua-pr10-audit04 merge --squash --no-commit --no-stat a2dd845b8a231e1b00733e1361e2a9ad3bad222f",
+    "git -C /tmp/padua-pr10-audit04 write-tree",
+    "git -C /tmp/padua-pr10-audit04 diff --name-only --diff-filter=U"
+  ],
+  "rehearsal_conflicts": [],
+  "head_tree": "d9209d88668415a5c2ecda22b6809edd786cfc63",
+  "squash_tree": "d9209d88668415a5c2ecda22b6809edd786cfc63",
+  "identical_squash_tree": true,
+  "changed_paths": 776,
+  "unexpected_scope_paths": [],
+  "changed_shared_state_paths": [
+    "state/CURRENT.md",
+    "state/IDEAS.md"
+  ],
+  "main_table_preservation": {
+    "PROOF_STATUS.md": {
+      "base_rows": 61,
+      "missing_verbatim_rows": []
+    },
+    "ID_CROSSWALK.md": {
+      "base_rows": 274,
+      "missing_verbatim_rows": []
+    },
+    "state/IDEAS.md": {
+      "base_rows": 153,
+      "missing_verbatim_rows": []
+    },
+    "literature/INDEX.md": {
+      "base_rows": 105,
+      "missing_verbatim_rows": []
+    }
+  },
+  "rule_hashes_at_head": {
+    "AGENTS.md": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60",
+    "agents/WORKFLOW.md": "ed7322e091202e880c3d9a68a7ed52ddfdff16f522a1daaaf98864ede9419fad",
+    "agents/codex/CODEX.md": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b"
+  },
+  "rules_equal_main": true,
+  "failures": []
+}

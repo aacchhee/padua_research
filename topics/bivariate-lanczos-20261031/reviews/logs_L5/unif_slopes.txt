@@ -1,0 +1,6 @@
+scheme slope 1.51  ratio-to-HH slope +0.07
+largest slope 1.35  ratio-to-HH slope -0.09
+hl slope 1.49  ratio-to-HH slope +0.05
+cgs2 slope 0.90  ratio-to-HH slope -0.54
+hh slope 1.44  ratio-to-HH slope +0.00
+cond slope 2.72  ratio-to-HH slope +1.28

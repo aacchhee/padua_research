@@ -1,0 +1,113 @@
+{
+  "technical_candidate": "98945cbcf10c4f8eb53f77c996db358392d42391",
+  "verdict": "READY for AC merge decision; independent technical audit clean and A4-P1 resolved by explicit scoped AC exception",
+  "unchanged_candidate_files_in_worktree": 1302,
+  "publication_existing_metadata_paths": [
+    "PROOF_STATUS.md",
+    "state/CURRENT.md",
+    "topics/bivariate-lanczos-20261031/LOG.md",
+    "tracks/bivariate-lanczos/AUDIT_LOG.md"
+  ],
+  "proof_status_table_rows_unchanged": true,
+  "artifact_count": 18,
+  "conservative_prior_repository_inventory_bytes": 7475905,
+  "publication_artifact_bytes_excluding_manifest": 213988,
+  "inventory_limit": "Conservative inventory includes code/prose/metadata; not an exact output-only total. The existing output lower bound is independently verified in audit-05. Publication inventory additionally counts some existing metadata again.",
+  "aggregate_exception_authority": "topics/bivariate-lanczos-20261031/response-04/AC-EXCEPTION.md",
+  "individual_artifacts_under_1MB": true,
+  "future_experiment_outputs_authorized": false,
+  "manifest_excludes_itself": true,
+  "regeneration_command": "python3 topics/bivariate-lanczos-20261031/response-04/record_completion.py",
+  "artifacts": [
+    {
+      "path": "PROOF_STATUS.md",
+      "bytes": 85863,
+      "sha256": "5e37ec10081e6244226b37b4f218c5f53fcf200a047d88d6aa4a73d303aad3a1"
+    },
+    {
+      "path": "state/CURRENT.md",
+      "bytes": 12039,
+      "sha256": "c1febc1386c1af6e73bf91d676cca49b4cabfa91db8161fc918015b0c8e7f3d6"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/LOG.md",
+      "bytes": 52583,
+      "sha256": "daaac899c87048b8d2c55109bd06f05c9bff342643727cf0c593046905955633"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-05/artifact-manifest.json",
+      "bytes": 1252,
+      "sha256": "01ee9bc8fe1a36b83c27a8c9b3f3f21025f485e6c357bf60d9bfbbc2246cd056"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-05/check-results.json",
+      "bytes": 5115,
+      "sha256": "c8273fca79c8e4ed90ef94713a68ae8ab3c0d3ece64af3c5e905ce2fbdd9e521"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-05/check_integration_independent.py",
+      "bytes": 13701,
+      "sha256": "a00d9dad46b501bc8925335438e05ed704976d232e3ddc48d0b5918417b58a15"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-05/initial-candidate-check.json",
+      "bytes": 2007,
+      "sha256": "e0536e92dd52e4ac19bbe15b7f4fc3e679717c0469c8cf6cc28da8f7b275e75c"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-05.md",
+      "bytes": 10918,
+      "sha256": "04dfdea3e01de360187637feaac9b338ec16c5c1947037d8d9bdcf3a764a2825"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/pr-prep/PR.md",
+      "bytes": 4506,
+      "sha256": "5f836c0cb6c5df276ce2aee623ce34b9ab44c2aa0157eb2c99bcf5631536c008"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/response-04/AC-EXCEPTION.md",
+      "bytes": 1275,
+      "sha256": "f48fb1b07a3aed80bbf43ad90e54486127523497644a3dcc64711c4258ffd672"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/response-04/allocator-check.json",
+      "bytes": 202,
+      "sha256": "42fcedad4383e7836e7318641d90123411116f37d5dafd5e17eaa5e6bacb7570"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/response-04/check_impact.py",
+      "bytes": 3199,
+      "sha256": "8cd82543910a36b97c3d0d4ef1e730eb4657d9df6f7b242cf898b6c1725895f4"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/response-04/impact-check.json",
+      "bytes": 4367,
+      "sha256": "7d80cafbd501740db7395e8247fb48c9e6587e3fcdaa766bf1ff233ce5f0638e"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/response-04/integration-check.json",
+      "bytes": 599,
+      "sha256": "dd53fbc31e90212b42269077197092ee62c9e8d0384c8a6c2277d6e44d6303d1"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/response-04/record_completion.py",
+      "bytes": 3646,
+      "sha256": "97c1a6506563a4f3af6ecc89f544735ae77f02639c62710577b2451b94d560e3"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/response-04/rehearsal.json",
+      "bytes": 1165,
+      "sha256": "56ec5e99d012f0524b1a9ac62984348c20c0d53a0a30917720c61da4ea446a5a"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/response-04.md",
+      "bytes": 8640,
+      "sha256": "f9cf86db7f74262aa0b87334c9089b85f2639ac271927f83fd7d99046740a6bf"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/AUDIT_LOG.md",
+      "bytes": 2911,
+      "sha256": "9493053e9199c33a771048d265eeec3e024d19475a8962ef54e1cb247e05ff0b"
+    }
+  ]
+}

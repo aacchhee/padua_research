@@ -1,0 +1,6 @@
+Padua n=20 N=M=231 given givens-scheme:H1.0e-14/Q1.9e-14  givens-largest:H1.1e-14/Q1.8e-14  hl:H2.6e-15/Q1.8e-15  bj:H6.0e-14/Q3.4e-14  cgs2:H1.0e-15/Q9.9e-16  hh:H1.4e-15/Q1.1e-15
+Padua n=20 N=M=231 random givens-scheme:H2.4e-14/Q3.2e-14  givens-largest:H6.7e-14/Q9.0e-14  hl:H2.2e-15/Q1.7e-15  bj:H1.4e-14/Q8.3e-15  cgs2:H1.0e-15/Q1.1e-15  hh:H1.4e-15/Q1.1e-15
+Padua n=20 randW given givens-scheme:H1.3e-14/Q2.1e-14  givens-largest:H7.2e-04/Q1.8e-03  hl:H3.1e-15/Q2.4e-15  bj:H1.4e-14/Q8.4e-15  cgs2:H1.2e-15/Q1.3e-15  hh:H1.5e-15/Q1.2e-15
+Padua n=30 N=M=496 given givens-scheme:H2.3e-14/Q4.6e-14  givens-largest:H2.0e-09/Q1.0e-08  hl:H4.2e-15/Q3.1e-15  bj:H4.6e-14/Q2.6e-14  cgs2:H1.5e-15/Q1.7e-15  hh:H1.8e-15/Q1.5e-15
+Padua n=30 N=M=496 random givens-scheme:H4.6e-14/Q8.2e-14  givens-largest:H3.3e-12/Q3.9e-12  hl:H3.9e-15/Q2.9e-15  bj:H1.7e-14/Q9.6e-15  cgs2:H1.6e-15/Q1.7e-15  hh:H1.8e-15/Q1.5e-15
+Padua n=30 randW given givens-scheme:H2.5e-14/Q4.7e-14  givens-largest:H6.9e-05/Q1.8e-04  hl:H6.0e-15/Q4.3e-15  bj:H2.2e-14/Q2.2e-14  cgs2:H1.8e-15/Q2.2e-15  hh:H1.9e-15/Q1.5e-15

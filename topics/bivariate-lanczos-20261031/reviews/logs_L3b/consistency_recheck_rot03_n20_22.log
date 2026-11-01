@@ -1,0 +1,12 @@
+consistency_recheck set=rot03 M=1681 BJ block window CGS (own implementation); nmin=20 nmax=22
+ n    N  loss      asymF     asymF_noX asymJ     comm/u   fwdF_A    fwdJ_A    refAB     |  rho_all  frac_extra rho_noextra  max|eta|/wmin(all,noX)  E
+20  231  4.55e-08  1.45e-10  1.45e-10  2.30e-07     4.1  1.02e-09  2.30e-07  1.5e-09   |  0.548    0.033     0.488      5.0e+02, 5.9e+02   8561
+   long-double reference C: |A-C| = 1.6e-11; fwdF_C = 1.00e-09, fwdJ_C = 2.30e-07; |e_C|_2/|e_A|_2 = 0.998; rho_all(C) = 0.740, frac_extra(C) = 0.032, rho_noextra(C) = 0.740, max|eta|/wmin = 3.9e-03
+21  253  3.28e-07  1.11e-09  1.11e-09  1.95e-06     4.1  6.87e-09  1.95e-06  7.3e-09   |  0.418    0.041     0.345      2.1e+03, 2.0e+03   9801
+   long-double reference C: |A-C| = 3.2e-11; fwdF_C = 6.88e-09, fwdJ_C = 1.95e-06; |e_C|_2/|e_A|_2 = 1.000; rho_all(C) = 0.595, frac_extra(C) = 0.041, rho_noextra(C) = 0.594, max|eta|/wmin = 1.0e+04
+22  276  2.47e-06  1.03e-08  1.03e-08  1.68e-05     5.4  5.12e-08  1.68e-05  4.0e-08   |  0.373    0.056     0.314      1.5e+04, 1.3e+04   11155
+   long-double reference C: |A-C| = 6.6e-11; fwdF_C = 5.12e-08, fwdJ_C = 1.68e-05; |e_C|_2/|e_A|_2 = 1.000; rho_all(C) = 0.424, frac_extra(C) = 0.056, rho_noextra(C) = 0.421, max|eta|/wmin = 4.5e+04
+
+real	2m19.992s
+user	1m36.548s
+sys	0m1.386s

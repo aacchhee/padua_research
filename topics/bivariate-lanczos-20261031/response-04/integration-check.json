@@ -1,0 +1,21 @@
+{
+ "allocation_envelope_errors": [],
+ "proof_status_rows": 111,
+ "proof_status_duplicates": [],
+ "idea_rows_final_block": 100,
+ "idea_duplicates_in_block": [],
+ "index_lit_rows": 292,
+ "index_duplicates": [],
+ "theory_files": 77,
+ "bad_final_id_headers": [],
+ "crosswalk_missing": [],
+ "crosswalk_missing_count": 0,
+ "status_mismatch": [],
+ "broken_links": {},
+ "canonical_tnf_statements_preserved": true,
+ "generated_inventory_scope": "topic filesystem run/audit folders; not the repository aggregate",
+ "generated_files": 386,
+ "generated_bytes": 3687079,
+ "files_over_1MB": [],
+ "failures": []
+}

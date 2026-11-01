@@ -1,0 +1,10 @@
+  rotpi4   adapt/cgs2all: first degree n at which (C) fails / recursion undefined: 3
+  rotpi4   adapt/cgs2win: first degree n at which (C) fails / recursion undefined: 3
+  rot0.3   adapt/cgs2all: first degree n at which (C) fails / recursion undefined: 3
+  rot0.3   adapt/cgs2win: first degree n at which (C) fails / recursion undefined: 3
+  triangle adapt/cgs2all: first degree n at which (C) fails / recursion undefined: none (<= 20)
+  triangle adapt/cgs2win: first degree n at which (C) fails / recursion undefined: none (<= 20)
+  disk     adapt/cgs2all: first degree n at which (C) fails / recursion undefined: 3
+  disk     adapt/cgs2win: first degree n at which (C) fails / recursion undefined: 3
+  square   adapt/cgs2all: first degree n at which (C) fails / recursion undefined: 3
+  square   adapt/cgs2win: first degree n at which (C) fails / recursion undefined: 3

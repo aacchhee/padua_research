@@ -1,0 +1,8 @@
+square               all-double     loss n=8,12,16,20: 1.6e-15 1.9e-15 3.1e-15 1.2e-14
+square               F-double only  loss n=8,12,16,20: 1.1e-15 1.2e-15 1.6e-15 3.2e-15
+square               J-double only  loss n=8,12,16,20: 1.8e-15 2.6e-15 6.3e-15 2.4e-14
+square               all-long       loss n=8,12,16,20: 2.0e-17 2.0e-17 2.0e-17 3.4e-17
+square rotated 0.3   all-double     loss n=8,12,16,20: 3.6e-15 1.6e-13 3.8e-11 1.2e-08
+square rotated 0.3   F-double only  loss n=8,12,16,20: 1.7e-15 1.0e-13 2.4e-11 7.8e-09
+square rotated 0.3   J-double only  loss n=8,12,16,20: 3.8e-15 1.8e-13 3.8e-11 1.2e-08
+square rotated 0.3   all-long       loss n=8,12,16,20: 2.0e-17 3.7e-16 6.8e-14 2.0e-11

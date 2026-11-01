@@ -1,5 +1,7 @@
 # PD-N?programme-ideas-claude-01 — The symmetrised-product inertia box count can fail at square-root commutator scale for symmetric pairs
 
+Final ID: **PD-N039** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: √δ cluster counterexample (gen2-3 adversary); half-integer box count; "n_box = ½(n₊(S) − N + n₊(M_x) + n₊(M_y))" failure.
 Split from: `checks/adversarial-gen2-3.md` (iii) and its salvage bullet at `614709d` ("no δ-only certificate for computed sections beyond √δ"). The broad computed-section claim is withdrawn (audit-01 A5); this record holds only the restricted method failure.

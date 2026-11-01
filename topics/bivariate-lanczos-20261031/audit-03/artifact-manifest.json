@@ -1,0 +1,53 @@
+{
+  "candidate": "aea01283ad49d9a4527df727ad386c5f671933ee",
+  "published_response": "63ffc67f8bc60bd30abcd94769b6aa1d1e783d88",
+  "prior_audit": "4470ab4857050b3acab114ddcbffc8996d4f2d88",
+  "main_at_verification": "9739a0c56b7a3976422ce60a8441bfbbfd6554df",
+  "verdict": "CLEAN; A2-L1-A2-L4 resolved; PR preparation pending.",
+  "impact_map_pass": true,
+  "links_valid": true,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "artifact_count": 6,
+  "verification_bytes": 38190,
+  "conservative_prior_output_bytes": 3146090,
+  "conservative_output_plus_verification_bytes": 3184280,
+  "manifest_excludes_itself": true,
+  "regeneration_command": "python3 topics/bivariate-lanczos-20261031/audit-03/record_completion.py",
+  "retention": "Small necessary committed verification evidence; no external archive created.",
+  "artifacts": [
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-03/analysis-rerun.txt",
+      "bytes": 7992,
+      "sha256": "d295f49b523ea0d81f8cee017186ce7e615d66bbf38fa917bce1aa1a36ff8604"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-03/check_response.py",
+      "bytes": 6042,
+      "sha256": "35a095711c2d4564a2c33db4bf9a63197fabe45ef38beb7af68d97760bcb187d"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-03/impact-check.json",
+      "bytes": 4904,
+      "sha256": "5f607281c9d00b500ac46ae937399f20285e421f0444681686d179dd485186ff"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-03/independent-verification.md",
+      "bytes": 9700,
+      "sha256": "cac18103265d23baf92519164fd35598ebf48cae819cd99ec04b79ab4546cbc2"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-03/record_completion.py",
+      "bytes": 3456,
+      "sha256": "8341f831fa659932fb5dbfe4bc6ed9919f38710ce0f4ba9a29f9345f52a8c635"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-03.md",
+      "bytes": 6096,
+      "sha256": "921b9aed366021a0ab137d741ae1481a0f523a8a4c2abe0d18843a9fc6179f12"
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # PD-T?programme-ideas-claude-04 — Second-order expansion of the Padua Lebesgue function at the non-node corner (conjecture with finite evaluations)
 
+Final ID: **PD-T098** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: corner expansion; Λ_c(n); b = (8/π²)(γ + log(8/π)); c = 1.84616…; κ = c − c₁²; N = n + ½ structure; proposal-1 Paper A (analytic part).
 Split from: the combined T2 claim of `checks/decisive-gen4-2.md` and its summaries in `proposal-1.md`/`report.md` at `614709d` ("b to 12 digits, c = 1.846160310424 ± 2e-12, κ a genuinely two-dimensional constant"). The argmax statement is split to `PD-T?programme-ideas-claude-05`.

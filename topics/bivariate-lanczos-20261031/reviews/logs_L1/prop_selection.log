@@ -1,0 +1,14 @@
+# rv_prop_selection.py numpy 2.5.3
+   square_rotpi4  dev    loss: 1.5e-14 3.9e-12 1.2e-09 2.1e-06 | u*med: 9.4e-15 2.3e-13 9.8e-12 1.1e-09 | u*max: 4.7e-13 1.3e-10 7.1e-08 1.9e-04
+   square_rotpi4  mirror loss: 4.1e-14 4.2e-11 2.9e-07 6.0e-03 | u*med: 4.1e-15 1.9e-14 6.3e-13 1.0e-10 | u*max: 3.3e-13 6.2e-10 5.8e-06 1.9e-01
+   square_rotpi4  alt    loss: 6.9e-15 3.1e-14 1.4e-12 1.3e-10 | u*med: 2.5e-15 5.3e-15 1.2e-14 3.2e-14 | u*max: 6.8e-14 1.6e-12 8.5e-11 9.1e-09
+   square_rotpi4  adapt  loss: 6.9e-15 1.1e-13 6.1e-12 1.6e-10 | u*med: 3.6e-15 6.9e-15 1.2e-14 2.8e-14 | u*max: 1.1e-13 1.5e-11 1.9e-09 6.8e-08
+   square_rot0.3  dev    loss: 6.9e-15 6.0e-14 8.6e-12 6.0e-09 | u*med: 4.0e-15 8.8e-14 6.1e-12 7.0e-10 | u*max: 1.1e-13 5.0e-12 6.3e-10 8.5e-07
+   square_rot0.3  mirror loss: 6.9e-15 4.9e-14 2.9e-12 2.0e-10 | u*med: 2.0e-15 3.2e-15 4.8e-15 7.5e-15 | u*max: 1.0e-13 5.9e-12 3.9e-10 2.7e-08
+   square_rot0.3  alt    loss: 6.9e-15 6.1e-14 2.0e-12 8.1e-11 | u*med: 2.1e-15 3.6e-15 5.8e-15 9.5e-15 | u*max: 5.5e-14 1.6e-12 6.1e-11 2.9e-09
+   square_rot0.3  adapt  loss: 6.9e-15 6.9e-15 1.2e-14 5.7e-14 | u*med: 2.3e-15 3.7e-15 6.2e-15 1.0e-14 | u*max: 2.6e-14 8.5e-14 4.1e-13 4.5e-12
+   triangle       dev    loss: 7.4e-12 3.2e-08 3.7e-03 1.0e+00 | u*med: 1.0e-13 7.1e-12 4.0e-10 1.3e-07 | u*max: 1.8e-11 2.4e-08 6.9e-05 1.2e+00
+   triangle       mirror loss: 1.4e-13 2.3e-11 1.7e-08 5.5e-04 | u*med: 4.6e-15 1.2e-14 3.9e-14 2.9e-13 | u*max: 3.6e-13 4.1e-11 4.2e-08 1.5e-04
+   triangle       alt    loss: 3.8e-14 4.1e-12 6.8e-10 1.7e-07 | u*med: 4.0e-15 8.3e-15 1.4e-14 2.8e-14 | u*max: 1.4e-12 2.3e-10 6.6e-08 2.5e-05
+   triangle       adapt  loss: 1.6e-14 2.9e-13 7.3e-12 5.3e-10 | u*med: 3.4e-15 5.9e-15 9.0e-15 1.3e-14 | u*max: 1.4e-13 4.5e-12 2.9e-10 3.4e-08
+# run stopped by the reconstructor after the triangle rows (disk rows not computed)

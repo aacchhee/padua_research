@@ -1,0 +1,5 @@
+P = 2*sqrt(S)*sqrt(T)*sqrt(1 - S)*sqrt(1 - T) - 2*S*T + S + T   [= sin^2 a]
+R = -2*sqrt(S)*sqrt(T)*sqrt(1 - S)*sqrt(1 - T) - 2*S*T + S + T   [= sin^2 b]
+W = -(S - T)*(8*S*T*c - 1)
+PR - W^2 = -16*S*T*c*(S - T)**2*(4*S*T*c - 1)
+max deviation over random theta,phi in (0,pi) (all cos signs): 6.661338147750939e-16

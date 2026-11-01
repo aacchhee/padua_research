@@ -1,0 +1,26 @@
+{"mode": "port", "n": 6, "order": "given", "rule": "scheme", "max_diff": 0.0}
+{"mode": "port", "n": 6, "order": "given", "rule": "largest", "max_diff": 0.0}
+{"mode": "port", "n": 6, "order": "gepp", "rule": "scheme", "max_diff": 0.0}
+{"mode": "port", "n": 6, "order": "gepp", "rule": "largest", "max_diff": 0.0}
+{"mode": "prefix_svd", "n": 6, "order": "given", "min_sigma": 8.507621791489606e-33, "singular_prefixes": 22, "mismatch": 0}
+{"mode": "prefix_svd", "n": 6, "order": "gepp", "min_sigma": 0.1804930725672064, "singular_prefixes": 0, "mismatch": 0}
+{"mode": "port", "n": 10, "order": "given", "rule": "scheme", "max_diff": 0.0}
+{"mode": "port", "n": 10, "order": "given", "rule": "largest", "max_diff": 0.0}
+{"mode": "port", "n": 10, "order": "gepp", "rule": "scheme", "max_diff": 0.0}
+{"mode": "port", "n": 10, "order": "gepp", "rule": "largest", "max_diff": 0.0}
+{"mode": "prefix_svd", "n": 10, "order": "given", "min_sigma": 5.452048304485267e-20, "singular_prefixes": 58, "mismatch": 0}
+{"mode": "prefix_svd", "n": 10, "order": "gepp", "min_sigma": 0.10662488723065146, "singular_prefixes": 0, "mismatch": 0}
+{"mode": "port", "n": 14, "order": "given", "rule": "scheme", "max_diff": 0.0}
+{"mode": "port", "n": 14, "order": "given", "rule": "largest", "max_diff": 0.0}
+{"mode": "port", "n": 14, "order": "gepp", "rule": "scheme", "max_diff": 0.0}
+{"mode": "port", "n": 14, "order": "gepp", "rule": "largest", "max_diff": 0.0}
+{"mode": "prefix_svd", "n": 14, "order": "given", "min_sigma": 1.5686114708876492e-34, "singular_prefixes": 110, "mismatch": 0}
+{"mode": "prefix_svd", "n": 14, "order": "gepp", "min_sigma": 0.0571381385963659, "singular_prefixes": 0, "mismatch": 0}
+padua_cub 15 given relfro 5.8e-01 5.1e-01 5.0e-01 5.5e-01 5.1e-01 4.5e-01 4.2e-01 3.5e-01 3.4e-01 7.9e-15 slope -13.08 0.1s
+padua_cub 15 rand1 relfro 7.7e-15 1.8e-14 1.5e-14 2.5e-14 3.2e-14 4.6e-14 1.8e-14 1.3e-14 1.8e-14 1.0e-14 slope 0.07 0.1s
+padua_cub 15 rand2 relfro 9.7e-15 9.2e-15 1.3e-14 2.5e-14 6.5e-14 9.0e-14 1.6e-13 2.4e-14 2.1e-14 1.1e-14 slope 0.69 0.1s
+padua_cub 15 gepp relfro 4.8e-15 5.8e-15 5.5e-15 6.1e-15 6.8e-15 9.1e-15 9.6e-15 9.1e-15 1.2e-14 1.0e-14 slope 0.7 0.0s
+padua_cub 20 given relfro 5.1e-01 5.0e-01 4.6e-01 5.0e-01 5.2e-01 5.0e-01 4.9e-01 4.1e-01 2.4e-01 9.9e-15 slope -9.05 0.3s
+padua_cub 20 rand1 relfro 3.1e-14 9.3e-14 6.6e-13 6.5e-14 2.1e-13 4.2e-14 4.3e-14 8.9e-14 5.7e-14 2.0e-14 slope -0.63 0.3s
+padua_cub 20 rand2 relfro 1.5e-14 2.1e-14 2.4e-14 2.1e-14 4.4e-14 2.8e-14 3.6e-14 4.7e-14 4.1e-14 2.0e-14 slope 0.36 0.4s
+padua_cub 20 gepp relfro 4.8e-15 6.7e-15 1.5e-14 1.4e-14 1.3e-14 1.5e-14 1.6e-14 1.9e-14 1.7e-14 1.9e-14 slope 0.65 0.3s

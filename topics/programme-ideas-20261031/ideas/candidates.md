@@ -35,6 +35,8 @@ Durable THEORY records (response-01, audit-01 A7; `../theory/`): PD-T?programme-
 
 # IDEA?programme-ideas-claude-01 — Bivariate Golub–Meurant quadrature from truncated bivariate sections
 
+Final ID: **IDEA-190** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 Aliases: Bivariate Golub–Meurant: Gauss-type rules for bilinear forms of commuting pairs and normal matrices from the truncated bivariate recurrence (working title); IDEA?programme-ideas-claude-1-1; M1 = gen1-draft-1 ⊕ gen4-draft-3 (host); matrix cubature from sections; bivariate anti-Gauss; polyanalytic Gauss rules; quadrature for normal matrices via short recurrence; bivariate Gauss–Radau/Lobatto bordering; block Laurie/Kronrod for pairs.
 
 - Question / scope: which bilinear forms uᵀf(X,Y)u, u*f(N,N*)u (N normal) or ∫f dμ (discrete 2D measure) are reproduced, bracketed or bounded by e₁ᵀf(H_x^{(k)},H_y^{(k)})e₁ from the k-th truncated sections, and whether Golub–Meurant bordering (Radau/Lobatto, anti-Gauss, averaged, Kronrod) transfers to the non-commuting pair; as M1 host it also carries the extension half (IDEA-18).
@@ -55,6 +57,8 @@ Aliases: Bivariate Golub–Meurant: Gauss-type rules for bilinear forms of commu
 - Topic / audit / history: programme-ideas-20261031; gen1-draft-1 (angle A, 2026-10-31); gate PASS / M1 host (gate.md §1, §2, §3, §5.1, §8); adversarial-M1.md KILLED (ii) with (iv) decisive (2026-11-01); Step 6a record (gate-rejected.md).
 
 # IDEA?programme-ideas-claude-02 — Discrete bivariate Sobolev OPs via non-normal commuting node operators
+
+Final ID: **IDEA-191** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
 
 Aliases: Discrete bivariate Sobolev (Hermite-data) orthogonal polynomials: non-normal commuting node operators, band-plus-low-rank recurrences, and the Alexander–Hirschowitz breakdown (working title); IDEA?programme-ideas-claude-1-2; Hermite-data bivariate OPs; confluent bivariate IEP; Jordan node blocks; band-plus-low-rank bivariate recurrence; Alexander–Hirschowitz breakdown; bivariate coherent pairs; NOTES P7.
 
@@ -77,6 +81,8 @@ Aliases: Discrete bivariate Sobolev (Hermite-data) orthogonal polynomials: non-n
 
 # IDEA?programme-ideas-claude-04 — Toda/qd flows on bivariate block Jacobi pairs
 
+Final ID: **IDEA-193** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 Aliases: Isospectral flows on block Jacobi pairs: Toda/qd dynamics of bivariate recurrence matrices under Christoffel/Geronimus steps (working title); IDEA?programme-ideas-claude-1-4; bivariate Toda; block LR Christoffel step; multispectral Toda discrete; bivariate dqds.
 
 - Question / scope: a Toda/qd-type isospectral flow on (H_x, H_y) of a discrete bivariate measure whose discrete-time steps are the LR/QR steps induced by Christoffel and Geronimus transformations, with dqds-type relative accuracy for block-bidiagonal factors.
@@ -97,6 +103,8 @@ Aliases: Isospectral flows on block Jacobi pairs: Toda/qd dynamics of bivariate 
 - Topic / audit / history: programme-ideas-20261031; gen1-draft-4 (angle A, 2026-10-31, not returned); gate REJECT (2026-11-01); Step 6a record.
 
 # IDEA?programme-ideas-claude-05 — Bivariate modified Chebyshev algorithm
+
+Final ID: **IDEA-194** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
 
 Aliases: Bivariate modified Chebyshev algorithm: block Jacobi pairs from Chebyshev-modified moments with Gautschi-type conditioning (working title); IDEA?programme-ideas-claude-1-5; block modified-moment algorithm; bivariate Gautschi conditioning; NOTES P11; F9 remainder.
 
@@ -119,6 +127,8 @@ Aliases: Bivariate modified Chebyshev algorithm: block Jacobi pairs from Chebysh
 
 # IDEA?programme-ideas-claude-06 — RH/Szegő method transfer for discrete bivariate measures
 
+Final ID: **IDEA-195** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 Aliases: Riemann–Hilbert / Szegő method transfer for discrete bivariate measures (Padua, Lissajous): method-transfer question only (working title); IDEA?programme-ideas-claude-1-6; bivariate Riemann–Hilbert; polyanalytic RH; Padua recurrence asymptotics.
 
 - Question / scope: whether a Riemann–Hilbert or Szegő/CMV formulation can be set up for the discrete product-Chebyshev measure on Padua points so that strong asymptotics of the recurrence blocks follow by a method rather than from the closed form.
@@ -139,6 +149,8 @@ Aliases: Riemann–Hilbert / Szegő method transfer for discrete bivariate measu
 - Topic / audit / history: programme-ideas-20261031; gen1-draft-6 (angle A, 2026-10-31, not returned); gate REJECT (2026-11-01); Step 6a record.
 
 # IDEA?programme-ideas-claude-07 — Two-index divide-and-conquer for commuting banded pairs
+
+Final ID: **IDEA-196** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
 
 Aliases: Two-index divide-and-conquer: product-structured joint eigenvectors of commuting banded pairs and the merge-based bivariate IEP (working title); IDEA?programme-ideas-claude-2-1; two-index SuperDC; bivariate Laurie/Gragg–Harrod merge; product-structured Q; joint secular equation; rank-√N tear; D&C bivariate IEP; node-set merge.
 
@@ -161,6 +173,8 @@ Aliases: Two-index divide-and-conquer: product-structured joint eigenvectors of 
 
 # IDEA?programme-ideas-claude-08 — Structure theory of commuting generalized-Hessenberg pairs (parameters, implicit-Q, cores)
 
+Final ID: **IDEA-197** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 Aliases: Structure theory of commuting generalized-Hessenberg pairs: minimal parametrizations, implicit-Q with order-ideal transitions, and core-transformation forms (working title); IDEA?programme-ideas-claude-2-2; M2 = gen2-draft-2 ⊕ gen2-draft-4 (host); bivariate Jacobi parameters; bivariate Schur parameters; commuting pattern variety; implicit-Q for pairs; order-ideal transition; generalised implicit Q theorem (Humet); Elsner–Ikramov layered form; two-index core chasing.
 
 - Question / scope: minimal recurrence-compatible parametrization of commuting symmetric generalized-Hessenberg pairs of a graded order (≈ 3N−1 parameters inside a Θ(N^{3/2}) pattern), an implicit-Q theorem across zero-pivot order-ideal transitions, and a core-transformation normal form for the condensed pair (normal / torus nodes); as M2 host also the comrade pencil (IDEA-10).
@@ -181,6 +195,8 @@ Aliases: Structure theory of commuting generalized-Hessenberg pairs: minimal par
 - Topic / audit / history: programme-ideas-20261031; gen2-draft-2 (angle B, 2026-10-31); gate PASS / M2 host (gate.md §1, §2, §3, §5.2); adversarial-M2.md KILLED (ii) (2026-11-01); Step 6a record. Name hazard: "Hessenberg pairs" is Godjali's term for a different object (LAA 2009).
 
 # IDEA?programme-ideas-claude-09 — Two-index Sturm counts, bisection and relative perturbation for commuting banded pairs
+
+Final ID: **IDEA-198** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
 
 Aliases: Joint spectral theory of banded commuting pairs: two-index Sturm counts, bisection, relative perturbation, and certified joint spectra of nearly commuting sections (working title); IDEA?programme-ideas-claude-2-3; joint inertia count; two-index Sylvester law; 2-D bisection for commuting pairs; bivariate Demmel–Kahan; certified joint spectra of nearly commuting sections; Sturm object for pairs.
 
@@ -203,6 +219,8 @@ Aliases: Joint spectral theory of banded commuting pairs: two-index Sturm counts
 
 # IDEA?programme-ideas-claude-10 — Bivariate comrade pencils: rectangular two-parameter pencils from recurrence blocks
 
+Final ID: **IDEA-199** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 Aliases: The √N-size inverse problem: rectangular two-parameter pencils from the top recurrence blocks, their conditioning, normal forms and stable node extraction (working title); IDEA?programme-ideas-claude-2-4; merged into M2 (gate §3 Cluster B); Hilbert–Burch pencil from recurrences; inverse rectangular MEP; bivariate colleague/comrade pencil; √N-size IEP; staircase normal form of rectangular pencils; X3(ii) developed.
 
 - Question / scope: whether the N×N pair of a unisolvent node set can be replaced, for node recovery, updating and conditioning, by an (n+2)×(n+1) linear rectangular two-parameter pencil built from the top recurrence blocks, with a two-sided unitary staircase normal form, a conditioning theory of its rank-drop points, and stable extraction; d = 2, N = dim Π_n first.
@@ -211,10 +229,10 @@ Aliases: The √N-size inverse problem: rectangular two-parameter pencils from t
 - Separation criterion vs closest entry (and observation that falsifies it): numerical object (conditioning, normal form, stable extraction, numerical inverse problem) vs (a)'s exact complexity and (c)'s field algebra; falsified if node sensitivity ≥ 10³× the pair's AND no 2N-parameter staircase form exists. Outcome: sensitivity 10–30× (Padua) / 10²–3.5·10³× (random) worse than the pair's (which is 1) — the pre-registered ≥ 10³ Padua threshold is not reached; the orbit count excludes a 2N-parameter unitary normal form only for the unrestricted GL-gauged class, not for the normalised family tested (open; audit-01 A4); the pencil is weight-independent — so it is not an object of the IEP.
 - Literature baseline and search limitations: generator: HKP NLA 31 (2024) and Plestenjak's publication list 2026-10-31; Gaeta/Eisenbud/Conca–Valla/Schmid not read; adversary (shared with IDEA-08): Conca–Valla arXiv 0708.3576 (abstract), MacaulayLab arXiv 2605.20884 (fulltext), Vermeersch talk, Graf's publication page; "comrade/colleague pencil bivariate" search negative.
 - Applicable obstructions and exact hypotheses broken: Graf–Townsend instability (monomial hypothesis) — escape clause used, but irrelevant because the comparison object (symmetric pair) has condition number 1; "not a compression" (6N vs 2N numbers) accepted; "not flat at colength N" irrelevant (inputs are nodes). None broken.
-- Novelty gate verdict: variant-with-difference of an already-named item (X3(ii)); MERGE into gen2-draft-2 (gate.md §1 row, §2, §3 Cluster B, §6, §8). After Step 4: equivalent + refuted sub-claims.
+- Novelty gate verdict: variant-with-difference of an already-named item (X3(ii)); MERGE into gen2-draft-2 (gate.md §1 row, §2, §3 Cluster B, §6, §8). After Step 4: ~~equivalent + refuted sub-claims~~ [response-02, 2026-11-01, audit-02 B2: historical Step-4 verdict, superseded; final disposition after response-01: equivalent (construction, extraction) and abandoned (investment) — no sub-claim is refuted; the normalised-family staircase question is OPEN (`OPEN_TARGETS.md` B6)].
 - Cheapest decisive test: syzygy-from-recurrence probe at n = 5; explicit pencil rank-drop at n = 10; conditioning probe n ≤ 8 (Padua, random); staircase probe n ≤ 6.
 - Kill criterion written before testing: explicit pencil fails rank-drop to O(uκ) at n = 10; node sensitivity ratio > 10³ at Padua n = 8; no pattern with exactly 2N free parameters reachable by two-sided unitary reductions at n = 6.
-- Test discriminability: rank-drop and sensitivity ratios measure the two claims directly; the orbit count settles the normal-form question without a search.
+- Test discriminability: rank-drop and sensitivity ratios measure the two claims directly; ~~the orbit count settles the normal-form question without a search.~~ [response-02, 2026-11-01, audit-02 B2: the GL×GL orbit count settles the normal-form question only for the unrestricted GL-gauged class of pencils (arbitrary invertible changes of generators and syzygies), under its generic-stabiliser assumption; it does not apply to the normalised family actually tested, whose question stays OPEN (B6).]
 - Resources / cost ledger: laptop; seconds.
 - Actual test results and committed evidence: generator `checks/code/gen2/hb_from_recurrence.py` (MEASURED n = 5: residual span dimension n+2; n+1 genuine linear syzygies; commutator-type syzygies in span{xR, yR, R} to 1e-13); adversary `checks/code/adv/M2/m2_pencil_conditioning.py` (MEASURED: σ_min(L) at nodes ≤ 5e-15, next singular value ≥ 2.5e-2 Padua / 4.5e-3 random; first-order node sensitivity κ_max 16/23/29 (Padua n = 4/6/8), 3.5e3/2.6e3/1.3e3 (random), Newton-validated to 4 digits; orthogonal-gauge invariant; O×O invariants change ≤ 2e-15 under random reweighting).
 - Disposition and precise rejected scope, if any: merged into M2 by the gate, killed with it 2026-11-01. Abandoned as an investment (audit-01 A4: not refuted): the pencil was never better conditioned than the pair in the runs (n ≤ 8, Padua and random, MEASURED) but the draft's own kill threshold did not fire; the 2N-parameter unitary staircase is excluded only for the unrestricted GL-gauged class (orbit count, adversarial-M2.md (ii)(6)) and is open for the normalised family. Rejected: the "√N-size inverse problem nodes → pencil" as an IEP of the pair (the pencil is a weight-independent object of the ideal, MEASURED). Residue: a measured note. (Text at `614709d` called both conditioning and the normal form "rejected/impossible".)
@@ -223,6 +241,8 @@ Aliases: The √N-size inverse problem: rectangular two-parameter pencils from t
 - Topic / audit / history: programme-ideas-20261031; gen2-draft-4 (angle B, 2026-10-31, note-size flagged by the generator); gate MERGE → M2 (2026-11-01); adversarial-M2.md (ii)(6) (2026-11-01); Step 6a record.
 
 # IDEA?programme-ideas-claude-11 — Discrete OPs of sampled trajectory measures and reconstruction from spectral data along non-Lissajous curves
+
+Final ID: **IDEA-200** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
 
 Aliases: Discrete orthogonal polynomials of sampled trajectory measures: recovering bivariate polynomial information from data along a closed curve (working title); IDEA?programme-ideas-claude-3-1; curve-supported discrete measures; trajectory measures; non-Lissajous scanning trajectories; Fourier-along-a-curve reconstruction; restriction operator Π_n → L²(γ, dt); Hilbert function of a sampled trigonometric curve; pulled-back Szegő/Laurent problem; MPI beyond Lissajous.
 
@@ -245,6 +265,8 @@ Aliases: Discrete orthogonal polynomials of sampled trajectory measures: recover
 
 # IDEA?programme-ideas-claude-12 — Phase-space design theory for CV tomography in the Gaussian-weighted bivariate polynomial model
 
+Final ID: **IDEA-201** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 Aliases: Phase-space design theory for continuous-variable quantum tomography: Padua points versus structured designs in the Gaussian-weighted bivariate polynomial model (working title); IDEA?programme-ideas-claude-3-2; Padua-point tomography; Husimi-Q / Wigner interpolation; Landon-Cardinal–Govia–Clerk 2018; Gaussian-weighted bivariate Vandermonde; truncated-Fock sensing matrix; phase-space sampling design; Gauss–Laguerre ring designs; optimal displacement amplitudes; Fock-cutoff conditioning.
 
 - Question / scope: conditioning and optimality of finite phase-space designs for the linear map ρ ↦ Q(α_i) (and Wigner, Q_n) in the truncated Fock model with cutoff N; single mode first, multimode as escalation; the role of the Padua design of the 2018 PRL.
@@ -265,6 +287,8 @@ Aliases: Phase-space design theory for continuous-variable quantum tomography: P
 - Topic / audit / history: programme-ideas-20261031; gen3-draft-2 (angle C, 2026-10-31, returned); gate DEFER (2026-11-01); Step 6a record.
 
 # IDEA?programme-ideas-claude-13 — Boundary-polynomial operator calculus and spectral methods on arbitrary algebraic domains with numerically generated OPs
+
+Final ID: **IDEA-202** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
 
 Aliases: Total-degree spectral methods on arbitrary planar algebraic domains with numerically generated orthogonal polynomials: the boundary-polynomial operator calculus (working title); IDEA?programme-ideas-claude-3-3; π-weighted differentiation; boundary-polynomial calculus; semiclassical structure relation for numerically generated bivariate OPs; weighted trial spaces π·Π_n; spectral methods on polygons / non-Koornwinder domains; conversion operators between dμ and π²dμ; fast transforms for discrete bivariate OPs.
 
@@ -287,6 +311,8 @@ Aliases: Total-degree spectral methods on arbitrary planar algebraic domains wit
 
 # IDEA?programme-ideas-claude-14 — Stochastic Galerkin spectral bounds for dependent inputs via bivariate recurrence sections
 
+Final ID: **IDEA-203** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 Aliases: Stochastic Galerkin with dependent inputs: spectral bounds of Galerkin matrices built from truncated bivariate recurrence matrices (working title); IDEA?programme-ideas-claude-3-4; data-driven PCE on dependent/discrete measures; aPC in several variables; stochastic Galerkin matrices for non-product measures; Ernst–Ullmann bounds in two parameters; Kronecker sums of non-commuting recurrence sections.
 
 - Question / scope: eigenvalue bounds for I⊗A₀ + H_x⊗A₁ + H_y⊗A₂ with (H_x, H_y) truncated bivariate recurrence sections of a dependent (possibly sample-based) measure; preconditioning; sample-generated bases.
@@ -307,6 +333,8 @@ Aliases: Stochastic Galerkin with dependent inputs: spectral bounds of Galerkin 
 - Topic / audit / history: programme-ideas-20261031; gen3-draft-4 (angle C, 2026-10-31, not returned, handed to angle B); gate DEFER (2026-11-01); Step 6a record.
 
 # IDEA?programme-ideas-claude-15 — Christoffel functions and certified approximate border bases from one recurrence
+
+Final ID: **IDEA-204** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
 
 Aliases: Vanishing-ideal learning with a backward-certified ideal: Christoffel functions and approximate border bases as one object (working title); IDEA?programme-ideas-claude-3-5; approximate vanishing ideals (AVI/ABM/OAVI/VCA); Christoffel outlier detection; gradient-weighted border bases; streaming Christoffel; whole-ideal certificate; Buchberger–Möller residual ratios.
 
@@ -329,6 +357,8 @@ Aliases: Vanishing-ideal learning with a backward-certified ideal: Christoffel f
 
 # IDEA?programme-ideas-claude-16 — Constrained equilibrium for discrete bivariate OPs (grids saturate, Padua does not)
 
+Final ID: **IDEA-205** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 Aliases: Constrained equilibrium for discrete bivariate OPs: saturation on grids, no saturation on Padua (working title); IDEA?programme-ideas-claude-4-1; saturation layer; constrained equilibrium on Padua; discrete bivariate OP asymptotics; Uvarov boundary layer; multivariate Coppersmith–Rivlin; joint Ritz limit law; equal-vs-cubature weights at degree ≈ n.
 
 - Question / scope: asymptotics (Christoffel function, block-Jacobi sections, joint Ritz values, sup-norm growth) of total-degree discrete OPs at degree k = θn on planar equal-weight node sets; equispaced (n+1)² grids as the saturating case, Padua / Chebyshev lattices as the non-saturating reference; 2D, real nodes.
@@ -349,6 +379,8 @@ Aliases: Constrained equilibrium for discrete bivariate OPs: saturation on grids
 - Topic / audit / history: programme-ideas-20261031; gen4-draft-1 (angle D, 2026-10-31, re-centred 2026-11-01); gate PASS (gate.md §1, §2, §3, §5.8); adversarial-gen4-1.md KILLED (ii)/(iii) (2026-11-01); Step 6a record. Correction: Kuijlaars's Ritz-value paper is SIMAX 22 (2000), not Numer. Math.
 
 # IDEA?programme-ideas-claude-18 — Symmetric commuting extensions as bivariate Gauss–Christoffel theory
+
+Final ID: **IDEA-207** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
 
 Aliases: Symmetric commuting extensions as the Gauss–Christoffel theory of bivariate cubature: lower bounds, uniqueness, Christoffel numbers (working title); IDEA?programme-ideas-claude-4-3; merged into M1 (gate §3 Cluster A); commuting extensions; Möller lower bound via commutator rank; Christoffel numbers of minimal cubature; near-minimal cubature IEP; block-Jacobi completion; Padua as sparse extension; cubature node lower bounds d = 2, 3.
 
@@ -371,6 +403,8 @@ Aliases: Symmetric commuting extensions as the Gauss–Christoffel theory of biv
 
 # IDEA?programme-ideas-claude-19 — Explicit stable least-squares designs from Padua arrays (uniform measure)
 
+Final ID: **IDEA-208** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 Aliases: Explicit O(dim) stable least-squares designs on the square: Chebyshev-lattice arrays as a deterministic sampling theory (working title); IDEA?programme-ideas-claude-4-4; deterministic Christoffel sampling; Padua arrays as designs; density-reweighted Padua; linear oversampling; weighted MZ for Padua vs Legendre.
 
 - Question / scope: an explicit closed-form family of M = O(dim Π_n) points with weights on [−1,1]² for which weighted least squares in Π_n is provably stable (Gram spectrum in [1−η, 1+η]) for the uniform (Legendre) measure — the deterministic counterpart of the Dolbeault–Krieg–Ullrich O(n) sampling bound.
@@ -391,6 +425,8 @@ Aliases: Explicit O(dim) stable least-squares designs on the square: Chebyshev-l
 - Topic / audit / history: programme-ideas-20261031; gen4-draft-4 (angle D, 2026-11-01, not returned); gate REJECT (2026-11-01); Step 6a record.
 
 # IDEA?programme-ideas-claude-20 — Padua asymptotically Fekete / weighted-Fekete stationarity
+
+Final ID: **IDEA-209** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
 
 Aliases: Padua points are asymptotically Fekete, Dubiner-equidistributed and weighted-Fekete-stationary: closing the deduction gap (working title); IDEA?programme-ideas-claude-4-5; absorbed into gen4-draft-2 sub-problem 4 (IDEA-17; gate §3 Cluster F); asymptotically Fekete Padua; Dubiner equidistribution conjecture; weighted Fekete stationarity; Padua gradient of log det.
 
@@ -413,6 +449,8 @@ Aliases: Padua points are asymptotically Fekete, Dubiner-equidistributed and wei
 
 # IDEA?programme-ideas-claude-03 — Bivariate orthogonal rational functions with pencil-pair recurrences
 
+Final ID: **IDEA-192** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 Aliases: Bivariate orthogonal rational functions: which nested pole structures admit short recurrences, their pencil IEPs, and rational least squares/Krylov in two variables (working title); IDEA?programme-ideas-claude-1-3; bivariate ORFs; linear-pole-per-degree spaces Π_n/π_n; pencil-pair IEP (H_x,K_x), (H_y,K_y); windowed rational Lanczos; bivariate lightning least squares; rational Krylov for commuting pairs; three-block window (refuted form); "project two, constrain one" step. Record appended by Step 6b (Model: claude-fable-5-1, effort xhigh, 2026-11-01).
 
 - Question / scope: for a discrete inner product on nodes in ℝ²/ℂ² and nested rational spaces with one prescribed linear pole per degree (product poles and pole curves excluded by the gate), which pole structures give a graded short recurrence encoded by a generalized-Hessenberg pencil pair sharing one unitary Q, how to compute it by a unitary IEP or a windowed two-operator rational Lanczos at O(MN^{3/2}), and what rational least squares (BHH-type corner/curve singularities) and rational Krylov for commuting pairs gain.
@@ -434,12 +472,14 @@ Aliases: Bivariate orthogonal rational functions: which nested pole structures a
 
 # IDEA?programme-ideas-claude-17 — Lebesgue theory of checkerboard (Padua-type) interpolation
 
+Final ID: **IDEA-206** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 Aliases: Lebesgue theory of checkerboard (Padua-type) interpolation: second-order term, maxima geometry, and Fekete nodes within the family (working title); IDEA?programme-ideas-claude-4-2; Padua second-order term; corner argmax; corner expansion constants b, c, κ; certified crease-aware maxima counting; Lissajous-cell count (refuted mechanism); square lower bound (4/π²) log² n (refuted route); rhombus Dirichlet kernel; Padua–Jacobi / checkerboard Fekete (absorbs IDEA-20's negative note); proposal-1. Record appended by Step 6b (Model: claude-fable-5-1, effort xhigh, 2026-11-01).
 
 - Question / scope: Lebesgue constants and functions of total-degree interpolation on [−1,1]² at Padua and Harris–Simanek checkerboard sets with real ordered nodes: second-order asymptotics of Λ(Pad_n), location of the maximum, count of local maxima, extremal nodes within the family; a universal square lower bound was the escalation.
 - Mechanism and hypotheses: the corner is the argmax and reduces Λ to an explicit kernel sum with an Euler–Maclaurin expansion; one maximum per Lissajous cell by convexity (refuted); the Chebyshev projection constant on the square gives Λ ≥ (4/π²) log² n − C log n (refuted at the constant); separated Vandermonde turns Fekete-within-family into univariate Stieltjes electrostatics with GLJ(α) nodes (reduced).
 - Closest registry entries (read in full): CH IDEA-047 (MP O(n²) proved; lower bound open), IDEA-048 (maxima ≥ n(n−1)/2, author-stated), IDEA-027 (Fekete extraction), LIT-030/031/041 (Vandermonde separation); NOTES padua_lissajous_theory Q1; (c) PD-T001 (factorisation would make sub-problem 4 univariate); (d) M4/M5 (different object: sup-norm operator vs L² equivalence); IDEA-20 (absorbed negative note).
-- Separation criterion vs closest entry (and observation that falsifies it): vs IDEA-048: a cell mechanism and a second-order term — the cell mechanism is falsified (extra maxima are crease pairs straddling zero curves of fundamental polynomials, BDS 2026 Remark 2), the second-order term stands and is now MEASURED to 12 digits; vs LIT-030/031: optimise and identify rather than factor — falsified as a programme item by BSV 2012 (family and degree-dependent Λ-optimal parameters, Table 5) and DU 2014 Prop. 1 (separability is a theorem); vs Kolomoitsev–Lomako 2021: exact second term and argmax — a sharpening, not a renaming (adversarial-gen4-2.md (iv)).
+- Separation criterion vs closest entry (and observation that falsifies it): vs IDEA-048: a cell mechanism and a second-order term — the cell mechanism is falsified (extra maxima are crease pairs straddling zero curves of fundamental polynomials, BDS 2026 Remark 2), ~~the second-order term stands and is now MEASURED to 12 digits;~~ [response-02, 2026-11-01, audit-02 B1: the second-order term is an OPEN conjecture (PD-T?programme-ideas-claude-04): the corner values are MEASURED finite evaluations, the pre-registered fits fix c only to ±3.3e-5 (T2's precision target not met), and the twelve-digit stability holds only inside the post-registration N = n + ½ model, which is not a remainder bound;] vs LIT-030/031: optimise and identify rather than factor — falsified as a programme item by BSV 2012 (family and degree-dependent Λ-optimal parameters, Table 5) and DU 2014 Prop. 1 (separability is a theorem); vs Kolomoitsev–Lomako 2021: exact second term and argmax — a sharpening, not a renaming (adversarial-gen4-2.md (iv)).
 - Literature baseline and search limitations: generator web checks 2026-10-31 (KL 2021 Thm 2.1; BDS arXiv 2605.23299; Tao arXiv 2603.21453; SQUARE_SETS page); adversary 43 search/fetch actions 2026-11-01 (KL 2021 fulltext summary; BDS 2026 fulltext summary — no counting method stated; BSV 2012 Padova preprint fulltext summary, JCAM DOI UNVERIFIED; DU 2014 and dCDM 2015 fulltext summaries; De Marchi CMA 2022; BCDMVX/BDMV 2006; Smith 2006; ETNA 2024 brackets; Ibrahimoglu and Semantic Scholar blocked; "Harris, Lebesgue constants of Xu points" not found); decisive: no web.
 - Applicable obstructions and exact hypotheses broken: none in the brief's table applies ("Morrow–Patterson O(n²) proved" is an upper bound); new blocking fact recorded by the adversary: the minimal projection constant onto Π_n in C([−1,1]²) is ≤ (16/π⁴) log² n (1+o(1)) (LITERATURE KL Thm 2.2; MEASURED ratio to n = 2560), so no projection-constant argument reaches (4/π²) log² n.
 - Novelty gate verdict: sub-problems 1–2 new within documented search, 3 variant with new mechanism, 4 variant-with-difference; PASS, fit flagged (gate.md §1, §2, §3 Cluster F, §5 item 9, §8). After Step 4: WOUNDED (sub-problem 2 dropped, 3's mechanism removed, 4 reduced). After Step 5: RESIDUE CONFIRMED as a 2–3-paper project.
@@ -447,8 +487,8 @@ Aliases: Lebesgue theory of checkerboard (Padua-type) interpolation: second-orde
 - Kill criterion written before testing: generator: a ≠ 4/π² by > 2 % or residual > 0.05; cells with ≥ 2 maxima ∝ n²; rhombus ratio not approaching 4/π² (fired, with a code bug); decisive: any non-corner value > Λ_c(n) + 1e-9 (T1); b to ≥ 10 digits AND κ reproduced by a tier-1/2 relation or a 10-digit tier-3 relation (T2); n = 8 not certified in 300 s, undecided boxes near crease pairs, or a certificate margin < 1e-8 (T3).
 - Test discriminability: mesh values are exact lower bounds for the sup (T1 needs no tolerance in the kill direction); the N = n + ½ Euler–Maclaurin fit reaches the 1e-15 noise floor with K = 3, so b and c are stable to 12 digits within that post-registration model (the pre-registered fit spread is ±3.3e-5, at which the κ identification test is at chance level — T2 inconclusive, audit-01 A6); T3's local certificates decide every box with margins ≥ 4.34e-7 (n = 6) against a 1e-8 rounding threshold, but several decisions are tolerance-based and some discard steps are unproved, so completeness is not certified (audit-01 A1); a brute-force 1201² mesh misses 2–12 of the candidate maxima per n. (Text at `614709d`: "resolved to 12 digits … decide every box with margins ≥ 1.5e-6".)
 - Resources / cost ledger: corner value O(Nn) (n = 640 in 55 s; n = 2048 in 277 s); long double to n = 8192 in 105 s; T1 ≈ 14 min (over the 5-min budget; n = 192, 193 dropped; n = 200 rerun chunked after an out-of-memory); T3 1.2 s (n = 3) to 129 s (n = 8); n = 12 estimated ≈ 20 min.
-- Actual test results and committed evidence: generator `checks/code/gen4/gen4_tests3/5/8/9/10/11/12/15/16/17/20.py` (MEASURED: corner values to n = 640; fixed-a fit b = 1.2121, c = 1.929; mesh-sensitive counts; Fekete separability 4e-8, GLJ α drift −0.26 → −0.38; `gen4_tests16.py` BUGGED: wrong kernel index and wrong constant); adversary `checks/code/adv/gen4-2/adv_corner_{parity,fit,const}.py` (b = 1.22552205 vs 1.22552213, c = 1.846161, κ = 0.919711, no mod-4 dependence), `adv_rhombus_L1.py`, `adv_rhombus_crosscheck.py` (‖D_n^{rh}‖₁/log² n 0.885 → 0.320, n ≤ 2560; gen4_tests16 overestimates by 16–27 %), `adv_maxima_count{,2}.py` (crease pairs at n = 8; refined 29 at n = 7, 38 at n = 8 as a union — later shown to be undercounts); decisive `checks/code/decisive/gen4-2/t1_argmax.py`, `t1_tail.py` (+ `.out`, `.json`: no counterexample to the corner argmax at 75 tested degrees to n = 200, finite meshes; runner-up edge maximum; G(n) ≈ 0.5483 + 0.839/n), `t2_onepage.py`, `t2_identify.py`, `t2_odd.py`, `t2_halfshift.py` (exact kernel sum to 2.1e-13; pre-registered fits c ∈ [1.846095, 1.846161]; post-registration N = n + ½ refit b = 1.2255221257453, c = 1.846160310424, κ = 0.9197101183886, stable to ±2e-12 within that model; −1/N term, no log N/N term; no 1-D identification), `t3_certify.py`, `t3_degenerate.py`, `t3_validate.py` (+ `.out`, `.log`, `t3_maxima.json`: candidate counts 15/27/25/41/50/62 total, 7/13/14/25/33/44 interior, n = 3…8, not certified; zero undecided boxes; smallest margin 4.34e-7 (n = 6); ring and valley validation; independent audit validation of all 220 listed points as numerical local maxima). All MEASURED in the stated scopes.
-- Disposition and precise rejected scope, if any: retained as project proposal-1 (2–3 papers, not a programme), 2026-11-01. Rejected: sub-problem 2 as stated (universal lower bound Λ ≥ (4/π²) log² n − C log n via the projection constant — capped at (16/π⁴) log² n; the generator's entry-point-4 reading rested on a bug and a wrong target constant); sub-problem 3's mechanism ("unique critical point per Lissajous cell"); sub-problem 4 as a paper (BSV 2012 family and parameters; DU 2014 separability; dCDM 2015 explicit energy; determinant-optimal sets have Λ = 6.60 vs 5.92 at n = 10); the published n = 6, 7, 8 counts 39/42/56 and the adversary's 29/38 as undercounts (certified 41/50/62). Retained: Paper A (corner expansion + corner-argmax theorem), Paper B (certified counting tool + corrected table), Paper C (counting theorem with BDS, optional); the absorbed IDEA-20 negative stays a remark.
+- Actual test results and committed evidence: generator `checks/code/gen4/gen4_tests3/5/8/9/10/11/12/15/16/17/20.py` (MEASURED: corner values to n = 640; fixed-a fit b = 1.2121, c = 1.929; mesh-sensitive counts; Fekete separability 4e-8, GLJ α drift −0.26 → −0.38; `gen4_tests16.py` BUGGED: wrong kernel index and wrong constant); adversary `checks/code/adv/gen4-2/adv_corner_{parity,fit,const}.py` (b = 1.22552205 vs 1.22552213, c = 1.846161, κ = 0.919711, no mod-4 dependence), `adv_rhombus_L1.py`, `adv_rhombus_crosscheck.py` (‖D_n^{rh}‖₁/log² n 0.885 → 0.320, n ≤ 2560; gen4_tests16 overestimates by 16–27 %), `adv_maxima_count{,2}.py` (crease pairs at n = 8; refined 29 at n = 7, 38 at n = 8 as a union — ~~later shown to be undercounts~~ [response-02, 2026-11-01, audit-02 B1: below the later decisive candidate interior counts 33 and 44, which are not certified, so neither list is shown complete]); decisive `checks/code/decisive/gen4-2/t1_argmax.py`, `t1_tail.py` (+ `.out`, `.json`: no counterexample to the corner argmax at 75 tested degrees to n = 200, finite meshes; runner-up edge maximum; G(n) ≈ 0.5483 + 0.839/n), `t2_onepage.py`, `t2_identify.py`, `t2_odd.py`, `t2_halfshift.py` (exact kernel sum to 2.1e-13; pre-registered fits c ∈ [1.846095, 1.846161]; post-registration N = n + ½ refit b = 1.2255221257453, c = 1.846160310424, κ = 0.9197101183886, stable to ±2e-12 within that model; −1/N term, no log N/N term; no 1-D identification), `t3_certify.py`, `t3_degenerate.py`, `t3_validate.py` (+ `.out`, `.log`, `t3_maxima.json`: candidate counts 15/27/25/41/50/62 total, 7/13/14/25/33/44 interior, n = 3…8, not certified; zero undecided boxes; smallest margin 4.34e-7 (n = 6); ring and valley validation; independent audit validation of all 220 listed points as numerical local maxima). All MEASURED in the stated scopes.
+- Disposition and precise rejected scope, if any: retained as project proposal-1 (2–3 papers, not a programme), 2026-11-01. Rejected: sub-problem 2 as stated (universal lower bound Λ ≥ (4/π²) log² n − C log n via the projection constant — capped at (16/π⁴) log² n; the generator's entry-point-4 reading rested on a bug and a wrong target constant); sub-problem 3's mechanism ("unique critical point per Lissajous cell"); sub-problem 4 as a paper (BSV 2012 family and parameters; DU 2014 separability; dCDM 2015 explicit energy; determinant-optimal sets have Λ = 6.60 vs 5.92 at n = 10); ~~the published n = 6, 7, 8 counts 39/42/56 and the adversary's 29/38 as undercounts (certified 41/50/62).~~ [response-02, 2026-11-01, audit-02 B1: not rejected — the published n = 6, 7, 8 totals 39/42/56 and the adversary's interior 29/38 disagree with the decisive candidate counts (totals 41/50/62, interior 33/44), which are MEASURED and not certified (PD-T?programme-ideas-claude-06); no list is rejected until a certified count exists.] Retained: ~~Paper A (corner expansion + corner-argmax theorem), Paper B (certified counting tool + corrected table)~~ [response-02, 2026-11-01, audit-02 B1: Paper A (corner expansion and corner argmax, both OPEN conjectures, PD-T?programme-ideas-claude-04, -05), Paper B (certification of the counting search, PD-T?programme-ideas-claude-06 MEASURED; a corrected table only after certification)], Paper C (counting theorem with BDS, optional); the absorbed IDEA-20 negative stays a remark.
 - Disposition reason: retained provisionally — none of the three pre-registered decisive kills fired (MEASURED T1–T3), but T2 is inconclusive under its precision target and T3's certification is not established (audit-01 A1, A6), so criteria 2–4 hold at project scale only provisionally; not a programme — criterion 5 fails (classical approximation theory plus certified numerics; flagged by gate, adversary and decisive test) and criterion 1's escalation is gone once sub-problem 2 is refuted (LITERATURE KL 2021 Thm 2.2 cap; MEASURED own-bug correction) and sub-problem 4 is equivalent (LITERATURE BSV 2012; DU 2014 Prop. 1).
 - Canonical theory / negative-result ID: PD-T?programme-ideas-claude-04 (corner expansion, OPEN with MEASURED evaluations), -05 (corner argmax, OPEN), -06 (maxima candidate counts, MEASURED, certification under Runs needed). The (16/π⁴) log² n cap is LITERATURE (Kolomoitsev–Lomako 2021) plus a MEASURED check. (Text at `614709d`: "none registered … the corner-expansion constants, the certified counts …".) IDEA-20's weak PD-N candidate (Padua not weighted-Fekete-stationary for separable weights, n ≤ 32) is carried here as a remark for the orchestrator to decide.
 - Topic / audit / history: programme-ideas-20261031; gen4-draft-2 (angle D, 2026-10-31/11-01, returned); gate PASS, fit flagged (gate.md §1, §2, §3 Cluster F, §5.9, §8); adversarial-gen4-2.md WOUNDED (2026-11-01); decisive-gen4-2.md RESIDUE CONFIRMED (2026-11-01); Step 6b record; `proposal-1.md`; report.md §1 row 1, §5 (i). Absorbs gen4-draft-5 (IDEA-20). Corrections carried: non-node corners are (±1, −1) for even n and (−1, ±1) for odd n (the draft mixed parities).

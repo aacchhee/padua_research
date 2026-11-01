@@ -1,0 +1,7 @@
+r02_structure family=random nmax=6 seed=1
+n=1: dimC=1 rank(F)=1 dimS1=1 top-form residual=1.1e-16 min cos(angle F,S1)=1.0000000000000002 lam_P(C-param)=-7.588e-10
+n=2: dimC=3 rank(F)=3 dimS1=3 top-form residual=2.5e-16 min cos(angle F,S1)=0.9999999999999998 lam_P(C-param)=-1.109e-10
+n=3: dimC=6 rank(F)=6 dimS1=6 top-form residual=6.7e-16 min cos(angle F,S1)=0.9999999999999999 lam_P(C-param)=0.003275
+n=4: dimC=10 rank(F)=10 dimS1=10 top-form residual=7.8e-16 min cos(angle F,S1)=1.0 lam_P(C-param)=0.002445
+n=5: dimC=15 rank(F)=15 dimS1=15 top-form residual=1.1e-15 min cos(angle F,S1)=0.9999999999999999 lam_P(C-param)=0.0001304
+n=6: dimC=21 rank(F)=21 dimS1=21 top-form residual=3.8e-15 min cos(angle F,S1)=0.9999999999999998 lam_P(C-param)=3.811e-05

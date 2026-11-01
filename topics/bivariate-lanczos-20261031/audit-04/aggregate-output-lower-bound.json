@@ -1,0 +1,1749 @@
+{
+  "source": "a2dd845b8a231e1b00733e1361e2a9ad3bad222f",
+  "description": "Selected existing experiment/checker data files under run/evidence/audit directories; metadata filenames, code, prose and this new audit excluded. Lower bound, not exhaustive.",
+  "files": 348,
+  "bytes": 5078141,
+  "limit": 5000000,
+  "artifacts": [
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-foundations/independent_exact.log",
+      "bytes": 1086,
+      "git_blob": "66ab1ef79279271ddb94dbf2e14e6d4c8f84d190"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-foundations/reviewer_exact_rerun.log",
+      "bytes": 4550,
+      "git_blob": "a010d828fc658fe9e81d01fb6aafc1e843a226ae"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/cert_square40_rerun.log",
+      "bytes": 1823,
+      "git_blob": "d5ee284459a4b00b87a8118d6c3f44bc0741370b"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/cert_square_rerun.log",
+      "bytes": 1566,
+      "git_blob": "3d31816531e4701107b8a3608e92de8b4a04cfcd"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/cert_triangle_rerun.log",
+      "bytes": 1665,
+      "git_blob": "604f1c1144205b6d5d89283fbcc86f50bcd797f3"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/closed_loop_rerun.log",
+      "bytes": 821,
+      "git_blob": "f5159b3fc11dc649d97cd60315a675bcf91c2b8d"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/gain_producer_rerun.log",
+      "bytes": 1577,
+      "git_blob": "e2fa585e2770105af9d76255ec5c3946283efea4"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/independent_checks.log",
+      "bytes": 1687,
+      "git_blob": "d651d1146eca4e027f3c766adf4f843be4b9849a"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/near_product_producer_rerun.log",
+      "bytes": 1654,
+      "git_blob": "72d80acd8e71865b2ee7b6549ca8bedb57bbd139"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/open_loop_rerun.log",
+      "bytes": 1662,
+      "git_blob": "68ac6a6cde433f12152750c702104c0a800f5df3"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/rule_reanalysis.log",
+      "bytes": 419,
+      "git_blob": "37d47772bbbed884ade4e3609e0696dbfef51be9"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/simax_producer_rerun.log",
+      "bytes": 306,
+      "git_blob": "cb9580785addb1a22cc72ec55a03530d7d826b5e"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/commands.txt",
+      "bytes": 2987,
+      "git_blob": "6ed663833fb10fa1073a1608fb338a5b26811551"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/cycles-rerun.log",
+      "bytes": 1314,
+      "git_blob": "cb3c2750a46fa104ab25f52b9329dfcdef215bbb"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/dots-rerun.log",
+      "bytes": 56550,
+      "git_blob": "b8724102909987c9a55ae5529fcfc52fdecb2ce4"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/e3-rerun.log",
+      "bytes": 9610,
+      "git_blob": "63c0427e071cb742796ecbedb0291ee8adb9ef86"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/exact-rerun.log",
+      "bytes": 3540,
+      "git_blob": "17689d4aa2fbe15a2551acb6e97f690d51520f49"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/independent-drift.log",
+      "bytes": 2507,
+      "git_blob": "8072c73904221ba5d5aa813646c49238a84d52c4"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/local-beta.log",
+      "bytes": 721,
+      "git_blob": "89bd5f3dd3c190a2e8bf473558b8931507f073c5"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/novelty-search-paths.txt",
+      "bytes": 8761,
+      "git_blob": "daf19733b13bbea6f1cd1fb42368c877801038db"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/omega-rerun.log",
+      "bytes": 20366,
+      "git_blob": "d3140f436061f4d19b5f72d26d27b880a0f21900"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/pro-rerun.log",
+      "bytes": 5800,
+      "git_blob": "9c9ab8d9297651115e245f95be1f142b4fb6fb21"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/proJ-rerun.log",
+      "bytes": 13458,
+      "git_blob": "3e935993dddf3822186af850d2e95f1f719181fc"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/selection-rerun.log",
+      "bytes": 79426,
+      "git_blob": "418264e5f6f398f6e6c48cfb9c2f34a21e021a4a"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/summary.json",
+      "bytes": 10375,
+      "git_blob": "d47c6917cd9ffa79fabc5400410839312c9a1bc8"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/theorem-A-rerun.log",
+      "bytes": 27705,
+      "git_blob": "21b8fc2c2333f38a3e3f226c06adade240cd9079"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates/independent_certificate_check.log",
+      "bytes": 1645,
+      "git_blob": "c4979f74806cc69e4bbb34e8484053af4b9dd1af"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates/rerun_delta0.log",
+      "bytes": 2125,
+      "git_blob": "ea24fd2cbdfbed2c21ec340eba1463edb89fe102"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates/rerun_family_n3.log",
+      "bytes": 286,
+      "git_blob": "22c60a52142d86308c7742950b29eaac0774b805"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates/rerun_n3_exact.log",
+      "bytes": 3259,
+      "git_blob": "0447e32822865dba3854fdb96d2c318aaed23610"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates/rerun_symbolic.log",
+      "bytes": 1130,
+      "git_blob": "b207bd4550dcff512aa040f34b59ea75e8253331"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates/rerun_turan.log",
+      "bytes": 8082,
+      "git_blob": "0cdeaa5c872163c8a255d3baa96b7af84de51aae"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates/rerun_unisolvence.log",
+      "bytes": 318,
+      "git_blob": "f4de059552c1c1dac99584dfc11011ae098f8025"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework/closed_form_C1.log",
+      "bytes": 850,
+      "git_blob": "b975badfcaf24711577d1552049626244f81d745"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework/consistency_random_n40.log",
+      "bytes": 3168,
+      "git_blob": "f7e033500013398ae31e0c613937e587d600b382"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework/consistency_rot03_n18_20.log",
+      "bytes": 1274,
+      "git_blob": "9f5e6533fa942804e4b43f960abb0754f1fcffee"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework/equi_H_cert_n1_7.log",
+      "bytes": 5744,
+      "git_blob": "80eadc05cd86fce27b27c8ff7a757e6e703d03ee"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework/exact_framework_checks.log",
+      "bytes": 1279,
+      "git_blob": "d4bb744c6bf1bd803a57ef629f7ae3b9b128cef2"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework/favard_n1_4_seed0.log",
+      "bytes": 1005,
+      "git_blob": "b22fe17d168fe2292809bbbbcc2e6fc687acb186"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework/lstsq_sensitivity.log",
+      "bytes": 1612,
+      "git_blob": "da958806e44bba5054e74083ba06fd11e8b4ba1e"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/random-rerun.log",
+      "bytes": 3785,
+      "git_blob": "9981cc2e89ef39de731316ba03dc9b6ee04af854"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/slopes-reanalysis.txt",
+      "bytes": 12452,
+      "git_blob": "b6398939cd939a84eedb4e729cc74583567acbfe"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/small-rerun.log",
+      "bytes": 2663,
+      "git_blob": "8924815d6777c2f056b10224b37e443adb2deda7"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/root-framework-rerun.log",
+      "bytes": 1279,
+      "git_blob": "d4bb744c6bf1bd803a57ef629f7ae3b9b128cef2"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L1/developer-exact-rerun.log",
+      "bytes": 6445,
+      "git_blob": "8c369f43a2d8e407fc0fabf57d8e1e06513257c3"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L1/developer-n101-reanalysis-rerun.log",
+      "bytes": 13436,
+      "git_blob": "fe22a2ce2ffa26fd8c4c4b0481cf3ce4cbc5113c"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L1/independent-response-checks.log",
+      "bytes": 1721,
+      "git_blob": "2e009bb9adcc68668acf04f6950b1d2d79408cf7"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L1/provenance.log",
+      "bytes": 1214,
+      "git_blob": "20d7040ebdc2f22e348859b14874a503414e0691"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L2/chi-rerun.log",
+      "bytes": 350451,
+      "git_blob": "a2e3677b0f2fb26cc1f055112255a9f6b26db1a9"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L2/commands.txt",
+      "bytes": 2723,
+      "git_blob": "d3c1ab7340445895785d5a40759df48a8a371da3"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L2/independent-staircase.log",
+      "bytes": 1551,
+      "git_blob": "8c5a2475a671e6b8f42a18208e5b652fe142fd00"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L2/ldnorm-rerun.log",
+      "bytes": 57215,
+      "git_blob": "741d726fd613b7f8bf36b17c5a58386301a36406"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L2/qualification-checks.log",
+      "bytes": 366,
+      "git_blob": "3e2eca6be95d7c092f9019a01c12c697c872fb3b"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L2/staircase-rerun.log",
+      "bytes": 3096,
+      "git_blob": "41f47fcf6c946470100731ee5699cf3da374a657"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L2/summary.json",
+      "bytes": 7246,
+      "git_blob": "d9f09f879c7e72e01d44a4426b7823ea07fbcaf3"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L3-conventions/developer-check-rerun.log",
+      "bytes": 1394,
+      "git_blob": "198ab1b9c465ba11d67dc9a4096de5d9bc9b4623"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L3-conventions/independent-check.log",
+      "bytes": 858,
+      "git_blob": "dccf4df60d7f67dcfad39a59df607f58962aac93"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/code-log-diff.txt",
+      "bytes": 294,
+      "git_blob": "8bdfc192c52176d3d643676c11a2e4c787fc2f2c"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/developer-t318-rerun.log",
+      "bytes": 2605,
+      "git_blob": "e529f6bad21024cad7e9e51562e543d4964538c2"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/independent-t318-initial-status.txt",
+      "bytes": 759,
+      "git_blob": "9d79e567ec834e9ae2ab2bf7577892ee2c0c3d29"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/independent-t318-initial.log",
+      "bytes": 319,
+      "git_blob": "aea24c9fefdd1a39af813b88820034ff54bdd20c"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/independent-t318.log",
+      "bytes": 1057,
+      "git_blob": "91f0ee853f511c91bd42e0eb076623e18654607a"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/sampling-scope.log",
+      "bytes": 921,
+      "git_blob": "b9e73993199b5c0293c061d6308d835a437ab371"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L5/analysis_r01d_rerun.txt",
+      "bytes": 7992,
+      "git_blob": "ab7e04e1e6d5030dd4845149989f1d865f64945f"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L5/check_response.log",
+      "bytes": 848,
+      "git_blob": "4397a43f22efee9d41499fa58d79c23dff6dda2d"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L5/paired_checks.json",
+      "bytes": 44383,
+      "git_blob": "7a0febe9cfd642b689db36635928c59c0d3f082c"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/impact-check.json",
+      "bytes": 21445,
+      "git_blob": "28c3049f2bc57c68f454256d89361595bb2dd5b8"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-03/analysis-rerun.txt",
+      "bytes": 7992,
+      "git_blob": "ab7e04e1e6d5030dd4845149989f1d865f64945f"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-03/impact-check.json",
+      "bytes": 4904,
+      "git_blob": "9ef962c6be8689791043593baaf84f2fee18d6f1"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/a01_exact_checks.log",
+      "bytes": 6489,
+      "git_blob": "3a2f0e2f76d2d1154c126904c0712f14d0eb342f"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/a01_n101_reanalysis.log",
+      "bytes": 13436,
+      "git_blob": "fe22a2ce2ffa26fd8c4c4b0481cf3ce4cbc5113c"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/c01_recon_runs.log",
+      "bytes": 3628,
+      "git_blob": "1bfc1222a532a44c51cd1f08f517f13da750b2da"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/c01_rule_sensitivity.log",
+      "bytes": 2244,
+      "git_blob": "5f591e62a2316125e5e68a6878702674ff5bdd94"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/c01_u53_rerun.log",
+      "bytes": 5502,
+      "git_blob": "8b3b888034307a11b184144ea8d440b43a8164d6"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_defect_probe.log",
+      "bytes": 2303,
+      "git_blob": "5c1033c126538e4747a4393337390917ebd10711"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_irregular.raw",
+      "bytes": 88199,
+      "git_blob": "c49c8d43f314ce6787d06490216862b7d99117f2"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_l4_codim_check.log",
+      "bytes": 1612,
+      "git_blob": "e2c149dc910c2fcc87951ec0ba77790015f1117c"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_padua.raw",
+      "bytes": 71835,
+      "git_blob": "51184b24f9fb66d60376679c603c6c83859c5064"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_precision_scaling.log",
+      "bytes": 157,
+      "git_blob": "576d30ed063ad48a5be6e429d8e86a726e8dec06"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_rotation.raw",
+      "bytes": 88036,
+      "git_blob": "1149be5a0cb25d4a098f5c39f83d21c95a635970"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_simax_variants.log",
+      "bytes": 306,
+      "git_blob": "cb9580785addb1a22cc72ec55a03530d7d826b5e"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_swap.raw",
+      "bytes": 19696,
+      "git_blob": "f48dfffb855a7c43d35f4dabb072fa2c5216d610"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_timing.txt",
+      "bytes": 86,
+      "git_blob": "c52351cd0e7ba3abf2b94c4af29e290fc74f7f60"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_verdict.txt",
+      "bytes": 11808,
+      "git_blob": "e46f80537215a766d21fb4608b8127806d024640"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r02_block_solve_growth.log",
+      "bytes": 2123,
+      "git_blob": "69390809c3a34789133789c6ffae7c9851855b8e"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r02_identities.log",
+      "bytes": 15586,
+      "git_blob": "d775f1825e90906ced6f535352e7cfedf0fa15a4"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r02_mixed_precision.log",
+      "bytes": 696,
+      "git_blob": "391ebdbaac5698a53776a3ab8bcb078993d92b30"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r02_node_propagator.log",
+      "bytes": 2292,
+      "git_blob": "e6f28aa2e62fcbb2eb77c11ea9d588f8eafa9a91"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r03_both_relations.log",
+      "bytes": 765,
+      "git_blob": "13c9ba8a35e6890eb32cac57e752cc604509afd6"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r03_exact_propagator.log",
+      "bytes": 1443,
+      "git_blob": "6367c5a88a0cbf2ba12699efcf70ca3e747e68cb"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r04_actual_forcing.log",
+      "bytes": 987,
+      "git_blob": "5ac3bfd9173a9f62b0f7a8dba3fc07c52731ece7"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r04_checkerboard.log",
+      "bytes": 1566,
+      "git_blob": "92aa93a35bdf8d29fe1b343217f556d464c74b80"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r04_checkerboard_diag.log",
+      "bytes": 634,
+      "git_blob": "296181350e38c0ac8135741fef7728ee309b2eae"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r04_checkerboard_local.log",
+      "bytes": 949,
+      "git_blob": "1b08dd94b4cb3b57e423eba91b5cbe7f19be4b53"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r04_checkerboard_more.log",
+      "bytes": 1096,
+      "git_blob": "cbaa9f07aa9de41318f022b34e8dd617346d0efb"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r04_checkerboard_ritz.log",
+      "bytes": 2027,
+      "git_blob": "9d485bb7926716d9465f373bddfa6f9144e0e50a"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r04_coef_forcing.log",
+      "bytes": 1302,
+      "git_blob": "5e1e60eb2d651fa56ad5fe2af360183ebcde9804"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r04_near_product.log",
+      "bytes": 1654,
+      "git_blob": "b94d97775edf2afc9698fae0263f8a2dfd34fba5"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r04_scaled_predictor.log",
+      "bytes": 1754,
+      "git_blob": "cf53d3fc4da16183385961a605cff1baa762e93e"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r05_certificate_more.log",
+      "bytes": 648,
+      "git_blob": "d442015143226a356e015f02bdf2e29728b8c893"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r05_certificate_square.log",
+      "bytes": 1412,
+      "git_blob": "772e06425252be2131e95e248b98aa1d96d03864"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r05_certificate_triangle.log",
+      "bytes": 1421,
+      "git_blob": "c53e946062f48666968fa5d358159f47c6e88747"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r05_grid_double.log",
+      "bytes": 392,
+      "git_blob": "aee276bc14a858cf6760c033cda0272dec7ac673"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r06_coefficient_channel.log",
+      "bytes": 1682,
+      "git_blob": "bc4484e6f419dd667881a3ffe0cb93d6d66437d5"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r06_gain_identity.log",
+      "bytes": 1577,
+      "git_blob": "af74ce1df5493ecf90e8923ea6fd85f1ada54de7"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r07_closed_loop.log",
+      "bytes": 2446,
+      "git_blob": "063f0da15e889f85912763cc08567da369cc571a"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r07_offpattern_anatomy.log",
+      "bytes": 2577,
+      "git_blob": "d78f8a604b20e7be2250d4ced20b6ade6fb6dc24"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r07_offpattern_anatomy_1digit.log",
+      "bytes": 2397,
+      "git_blob": "2e2332c0552ba56a72c8588d2a587a09a8167d89"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r07_termwise_predictor.log",
+      "bytes": 1798,
+      "git_blob": "6b94e83451a50d44f8ffafcc010b47af1380c1e6"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/audit01_chi.raw.gz",
+      "bytes": 49827,
+      "git_blob": "98a62b46c01cf89573e23515784c14ee9632d6c8"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/audit01_ldnorm.raw",
+      "bytes": 57210,
+      "git_blob": "e090e465935bfc35b5eca3659908ac09e6cbe0d9"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/audit01_staircase.raw",
+      "bytes": 3096,
+      "git_blob": "c3144a66af19f9a8a2965df0695f01cc4f4ee74d"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/r01_omega.raw.gz",
+      "bytes": 22641,
+      "git_blob": "59ac20784b5422b7667cad6314dbcd18cddd1742"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/r01_omega_e3.raw.gz",
+      "bytes": 12410,
+      "git_blob": "24f6973084d4a44bd370fbc71fff5e82932d0cd6"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/r01_sections.raw.gz",
+      "bytes": 35601,
+      "git_blob": "7a48e8546811d3175e7170b4b14d3210402cdb65"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/r01_sections_w2.raw.gz",
+      "bytes": 16262,
+      "git_blob": "9c800bee33bdb88db9aaa16a759b9a825ccdeb02"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/r01_verdicts.txt",
+      "bytes": 21600,
+      "git_blob": "712d6734da77578a5c8b12ca4cf9a94c5a90471e"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/r02_pro.raw.gz",
+      "bytes": 10315,
+      "git_blob": "969977a6e016437e0d41aa774683368b0effaa1f"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/r02_proJ.raw.gz",
+      "bytes": 9961,
+      "git_blob": "20ddb01c1f652f047db7a0414bb7c923d882b154"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/r02_selection.raw.gz",
+      "bytes": 42736,
+      "git_blob": "7988a44a9c9d82ba44da2f84d86b7a2ee13183fc"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/r02_verdicts.txt",
+      "bytes": 14410,
+      "git_blob": "aca583a4a4d30daf60026de40124891aa7533518"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/r03_dots.raw.gz",
+      "bytes": 12650,
+      "git_blob": "843253852c4e8af5cdbb3b680e46be220cd5d781"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/code_sha256.txt",
+      "bytes": 852,
+      "git_blob": "be1ea7f831b867c0fb5ecbf3ba8e5331f017e401"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/code_sha256_r04.txt",
+      "bytes": 940,
+      "git_blob": "c087cab9bce5989cc986c5d2264bd229bdca1636"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/code_sha256_r05.txt",
+      "bytes": 1291,
+      "git_blob": "5b9816f0ee894c1b8c2ee97ecf27fa9e094fb82c"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/code_sha256_r06.txt",
+      "bytes": 1549,
+      "git_blob": "68f18c97825ee762c132540c83fb971917528cb2"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/exact_certificates.log",
+      "bytes": 3963,
+      "git_blob": "c88017135d020db69ecf438794f0710dc5a09fda"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/exact_checkerboard_equi.log",
+      "bytes": 1039,
+      "git_blob": "48c7bbf5e0ed50dbfcfd5f009a1798b741e1ba5b"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/exact_checkerboard_equi_n7_8.log",
+      "bytes": 687,
+      "git_blob": "ae3873b48465b53a0d5975df0dc434877ff7e65c"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/favard_check.log",
+      "bytes": 1005,
+      "git_blob": "b22fe17d168fe2292809bbbbcc2e6fc687acb186"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/hess_condition_padua.log",
+      "bytes": 907,
+      "git_blob": "773bd17a2b03754dec20ac1ac6c0591e33c4e1df"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/hess_condition_random_seed1.log",
+      "bytes": 795,
+      "git_blob": "0a845e46a635fe1a16f1568532509625842f18ef"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/hess_condition_random_seed2.log",
+      "bytes": 794,
+      "git_blob": "31148d712a56fee04d094e84303ef077f6d6110e"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/hess_condition_random_seed3.log",
+      "bytes": 795,
+      "git_blob": "76090bfbf49d20f2ad23356f6348734df0dad904"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/hs_checkerboard_condition.log",
+      "bytes": 2517,
+      "git_blob": "1a498c23204e4b7dd5f37c27d3490f805a4a069a"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/inspect_certificate_n3.log",
+      "bytes": 1682,
+      "git_blob": "00b1fee17ce2343ffb051fa1b880bb1ac461942a"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/inspect_certificate_n4.log",
+      "bytes": 2317,
+      "git_blob": "3643581fe4900bf576ad15f12d5fba4131a4e137"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/inspect_certificate_n5.log",
+      "bytes": 3058,
+      "git_blob": "77cf2b3f212b926fa20ee31e092dd01a07cc0610"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/lp_rate_n1_r0.03.log",
+      "bytes": 592,
+      "git_blob": "a661c50e3614c3dff771638e4783b33d31b39d5b"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/lp_rate_n1_r0.3.log",
+      "bytes": 571,
+      "git_blob": "ecd607fbac4bd8e5120437588b8acd28457f81c8"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/lp_rate_n2_r0.03.log",
+      "bytes": 574,
+      "git_blob": "0c415edf24d21b0479d764d41604ebfc759ff4d7"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/lp_rate_n3_scan.log",
+      "bytes": 879,
+      "git_blob": "9974ae98cb5895966f3a8310308337a06865730d"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/lp_resid_n2.log",
+      "bytes": 1748,
+      "git_blob": "aa2bd7b293e3d39642310269c7f2fb0a998436d8"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/lp_resid_n3.log",
+      "bytes": 2649,
+      "git_blob": "788ad47b58c7b81d777a6361eed1eb6efee2d8d1"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/padua_generators_check.log",
+      "bytes": 722,
+      "git_blob": "d19969b59d50d06bbc2b2a2642d45ad4b42fc7cf"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/r02_closed_form_C.log",
+      "bytes": 850,
+      "git_blob": "b975badfcaf24711577d1552049626244f81d745"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/r02_structure_padua.log",
+      "bytes": 1372,
+      "git_blob": "738dc7a772817a84ddc7d81a073ed1d74334dfee"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/r02_structure_random_seed1.log",
+      "bytes": 756,
+      "git_blob": "3439897880aa55c47f7535a2bccea4c7665e4fcd"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/r05_boundary_proof.log",
+      "bytes": 1406,
+      "git_blob": "0c62d22544bcbea64399baec209170877710b7a6"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/r05_direct_check.log",
+      "bytes": 2019,
+      "git_blob": "2836542f41a08b684c374b28ee7d55b60a854171"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/r05_interior_identity.log",
+      "bytes": 311,
+      "git_blob": "4f1b8b483203f4bbf2822e545c4aeea38b0eb60d"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/r05_kappa_family.log",
+      "bytes": 2128,
+      "git_blob": "de61d918e4058912b5faea648d003079acfd061b"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/r06_consistency_random.log",
+      "bytes": 3168,
+      "git_blob": "f85fc1166d96fb68562905ed58e034131474a336"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/r06_consistency_rot03.log",
+      "bytes": 2075,
+      "git_blob": "5fa9275fef80101ba6ee6fa5934d8b8b9e050bea"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/r06_consistency_tensor.log",
+      "bytes": 3168,
+      "git_blob": "865e7d41794aa3b678d9058eb3e9373c7a202c9e"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/r06_weight_fit_random.log",
+      "bytes": 647,
+      "git_blob": "8932840a63031879587c12882a7ea212be231751"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/r06_weight_fit_rot03.log",
+      "bytes": 1212,
+      "git_blob": "05799f556b8e3307980e690d651b52681bcab35b"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/t302b_conventions_check.log",
+      "bytes": 1394,
+      "git_blob": "198ab1b9c465ba11d67dc9a4096de5d9bc9b4623"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/t318_dkappa_formula_check.log",
+      "bytes": 2605,
+      "git_blob": "8ca4c90f97d8dd070d01c552a86c83262421e418"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/analysis_r01.txt",
+      "bytes": 15375,
+      "git_blob": "b0ca45575ecf698c9878b9b3cc3b5e784da2dc3a"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/analysis_r01b.txt",
+      "bytes": 10094,
+      "git_blob": "0f0f754c2b6bb781c12ab539dcc4e2e8e913574c"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/analysis_r01c.txt",
+      "bytes": 12452,
+      "git_blob": "b6398939cd939a84eedb4e729cc74583567acbfe"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/analysis_r01d.txt",
+      "bytes": 7992,
+      "git_blob": "ab7e04e1e6d5030dd4845149989f1d865f64945f"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_padua_cub.log",
+      "bytes": 3997,
+      "git_blob": "c4f88f9ab8f0f8d8d52e8ef396e8248c4b1f05ad"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_padua_rand.log",
+      "bytes": 4032,
+      "git_blob": "5a5f3c4e04dfab458e3860688b78f3e8819fce6b"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_padua_unif.log",
+      "bytes": 2300,
+      "git_blob": "23d81fca8440a6da947c37e818cf8f145779646b"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_prefix_a.log",
+      "bytes": 7744,
+      "git_blob": "08500442c22d1c550ea5c72dff1c847dd8dba2eb"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_prefix_b.log",
+      "bytes": 1566,
+      "git_blob": "b094b9effbbe42da89b371924bb5b6d042f2a5fd"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_random.log",
+      "bytes": 3785,
+      "git_blob": "0dd898ba562b9f75b7dbedf8bc3dfa43ee0a9954"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_random_cheb.log",
+      "bytes": 3390,
+      "git_blob": "c6d2ebf86092667266fb40145670418e4153ff4e"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r02_dual.log",
+      "bytes": 1956,
+      "git_blob": "5af6446598c3c31d39274ee4c1e45e66f92d5be4"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_defer3.log",
+      "bytes": 4394,
+      "git_blob": "b67686398caca6c33f9535d25190c485f7f87333"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_deferbest.log",
+      "bytes": 2092,
+      "git_blob": "aeb5570ae0234c592d500e7759113c221a8bf8af"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_deferbest_large.log",
+      "bytes": 88,
+      "git_blob": "b4706c10f2caa28cc3cb1d3de0f14409f1cd052d"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_deferbest_large2.log",
+      "bytes": 0,
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_detector.log",
+      "bytes": 4080,
+      "git_blob": "0b93f43ee4fdc2c2110ccda7a9172c8f2af12876"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_rules.log",
+      "bytes": 4314,
+      "git_blob": "9e669a2883c13c8427ebced28039c695ab583731"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_x60.json",
+      "bytes": 245,
+      "git_blob": "f6e045f2ff19033008a340df4967675e503409b9"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_x60.log",
+      "bytes": 249,
+      "git_blob": "5e3841b8a6fbba943b53d2c9a428ea9a11ce03b9"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_x60_controls.log",
+      "bytes": 454,
+      "git_blob": "a8b6772f67bdecca67302e9dbcfdc2b1e603a326"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/analysis/f1_ratio_table_eps.txt",
+      "bytes": 5983,
+      "git_blob": "60368da2cec096e484bd81d1a747c1d1de64dafd"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/analysis/f1_ratio_table_halfeps.txt",
+      "bytes": 5994,
+      "git_blob": "7cdd22a9bb1e4b084e8f118da19dd79c6823c23b"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/analysis/f6_deficit_factors.txt",
+      "bytes": 5072,
+      "git_blob": "9657707f6dd78685c70886803039775f769a1856"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/analysis/f6_slopes_M66_1891.txt",
+      "bytes": 6456,
+      "git_blob": "2fcd64c55f82745493d3e28dd102cf7e742b6b78"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/analysis/f6_slopes_M66_496.txt",
+      "bytes": 4878,
+      "git_blob": "bb5e8aca3c837288f8966b0d45ce1d3067816b63"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/bj_window.log",
+      "bytes": 284,
+      "git_blob": "39bfaee7cf6309545de09c61634276c7a0a60f60"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/closed_form_H.log",
+      "bytes": 2112,
+      "git_blob": "8d2fd82bb26d2654f200a17e51c03faa27a7dd07"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f1_loss_vs_ritz.log",
+      "bytes": 5178,
+      "git_blob": "abd10d0fa2da44c017611d7fbba6cb4895a0de15"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f3_qfree_vs_R_downdate.log",
+      "bytes": 1325,
+      "git_blob": "10cb0f261a38909a4972635563d6e2bce2507e61"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f6_diag_redundant_pivot.log",
+      "bytes": 3677,
+      "git_blob": "54dc4873593465adda9aa89579ae6240bbb3fde6"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f6_givens_vs_hl_deficit.log",
+      "bytes": 4016,
+      "git_blob": "038794c6ff0becbdf6bb5d1657ef7fcc180d09d2"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f6_pivot_threshold_test.log",
+      "bytes": 766,
+      "git_blob": "cba9c4be441645ffa8dd300d727ed3b6625f775e"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f6_run_padua_large_20_30.log",
+      "bytes": 1084,
+      "git_blob": "a67d76c08b4cc63772a0e1841101d4cd35168644"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f6_run_padua_large_40.log",
+      "bytes": 542,
+      "git_blob": "63f4924090777a2a89114fea4315c97c03ca0159"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f6_run_padua_large_50.log",
+      "bytes": 544,
+      "git_blob": "8037a134cfdc99432faea1a1a048c43949fc0d0b"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f6_run_padua_large_60.log",
+      "bytes": 544,
+      "git_blob": "ce994df179d2920ba5028a5833b5ce5e91f6eacc"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/harris_simanek_check.log",
+      "bytes": 2863,
+      "git_blob": "9a02b0cc914199ae8877c133541288b59fd52955"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/padua_weights_check.log",
+      "bytes": 1292,
+      "git_blob": "12a682e483d997322f5fc2cccbdfc881e17132b9"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/qfree_bivariate_downdate.log",
+      "bytes": 803,
+      "git_blob": "7a0f25d51b48f83e0a5c74df5102dff98496ce15"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/qfree_vs_conditioning_I_fail.log",
+      "bytes": 274,
+      "git_blob": "2e5d8d1febda8b6e78f58b41f5e2ec2fd42216db"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/qfree_vs_conditioning_noI.log",
+      "bytes": 490,
+      "git_blob": "e31320a1632080640f700b9e6a5a3a21d869076d"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1/exact_checks.log",
+      "bytes": 4550,
+      "git_blob": "3c9d388946355653358bc67ab12e0a5c7d5c4e87"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1/extra.log",
+      "bytes": 2796,
+      "git_blob": "9a2a89ffcec54db4ceeb957e2a15c612178faae9"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1/prop.log",
+      "bytes": 5160,
+      "git_blob": "456748dff83b2f2a9877cf39ea71b81eb11c454e"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1/prop_selection.log",
+      "bytes": 1859,
+      "git_blob": "7f645724129c7a33325b62a105e9727d1dd0d9d2"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1/rule_sensitivity.log",
+      "bytes": 7962,
+      "git_blob": "4af66e36df4e35ca8b69c565278417948339749f"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1/sweep_M.log",
+      "bytes": 1162,
+      "git_blob": "cda54d57be06a99692f74a63478c089d834172bb"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1/sweep_alt.log",
+      "bytes": 5170,
+      "git_blob": "1136281e5df3baf476af47dd996983dfbe039618"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1/sweep_loss.json",
+      "bytes": 50104,
+      "git_blob": "69f59daf6b90fdea7a2c0e3f1231b76aa728011e"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1/sweep_loss.log",
+      "bytes": 23143,
+      "git_blob": "cab50e31d44277aba30ee394580c344ea7dd669d"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1/sweep_ritz.log",
+      "bytes": 5585,
+      "git_blob": "5bca409729836762dd4768e5e905bc282800807a"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1b/cert_Q24.log",
+      "bytes": 1512,
+      "git_blob": "09ba59da7fae1162b7946e2f710fa94c4661d84a"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1b/cert_Q24_exactcmp.log",
+      "bytes": 1566,
+      "git_blob": "540f892918a403be8024e0425bd862d268b10d02"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1b/cert_T24.log",
+      "bytes": 1516,
+      "git_blob": "8a76dcdeb7d791efa512f23d4b3c02bfff4fdbf0"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1b/cert_T24_exactcmp.log",
+      "bytes": 1569,
+      "git_blob": "d98de25ee30355ded68fde7df8aa9e6100cdffda"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1b/cert_T24_rescaled.log",
+      "bytes": 1415,
+      "git_blob": "f0ed8d94434b46093882fec41b6c78ebeef8320f"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1b/cert_T40.log",
+      "bytes": 1684,
+      "git_blob": "6b000c0c813cff37928bbaf310c4ddd7bbf0b744"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1b/cert_rotQ24.log",
+      "bytes": 1724,
+      "git_blob": "2df7033049b220af206df8ca37bc6782cb90901d"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1b/checkerboard.log",
+      "bytes": 4126,
+      "git_blob": "11940e4b14cc903fe55ec7b1a25b08f12dad52d8"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1b/checkerboard_ritz.log",
+      "bytes": 417,
+      "git_blob": "3cfd0cd196853e49f98dd38d271206c1fce6f1ff"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1b/closed_loop.log",
+      "bytes": 1297,
+      "git_blob": "465f9c2cbfbfee87159619c811882cd75c13fe45"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1b/closed_loop_sets.log",
+      "bytes": 821,
+      "git_blob": "f5159b3fc11dc649d97cd60315a675bcf91c2b8d"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1b/exact_checkerboard.log",
+      "bytes": 1116,
+      "git_blob": "6dd685ac94d71b80d78fc736b1c6202f6e29ce08"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1b/open_loop.log",
+      "bytes": 1662,
+      "git_blob": "f8ac5423e3873a195f2fbcbbe7289b11011eb093"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/adapt_C.log",
+      "bytes": 872,
+      "git_blob": "1eb2f8b8b1d72b4706179d643993179d1442bd0a"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/cycles.log",
+      "bytes": 1314,
+      "git_blob": "cb3c2750a46fa104ab25f52b9329dfcdef215bbb"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/dev_r01_omega_rerun.raw",
+      "bytes": 12460,
+      "git_blob": "fb9f2ed99be2752fec7f0123a763c881ebaacfae"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/dev_r02_proJ_rerun.raw",
+      "bytes": 9620,
+      "git_blob": "52ad71493bfe9ba5b0f3e7ccb573831bcc59e590"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/dev_r02_pro_rerun.raw",
+      "bytes": 5801,
+      "git_blob": "11b6ead2a24a27d31af3a0604d563163c0ebcc6a"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/dev_r03_dots_rerun.raw",
+      "bytes": 14441,
+      "git_blob": "703bf4d36f4020c82b34e6e2c94ab819a275cd1e"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/drift_AB.log",
+      "bytes": 21378,
+      "git_blob": "ef7671f9eb4086b374d45e56e36774f9bf9311fd"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/drift_C.log",
+      "bytes": 3547,
+      "git_blob": "567822276e4ff4ac0ef9e4bd1f4755d94af12120"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/drift_D.log",
+      "bytes": 845,
+      "git_blob": "7918e6279f9369b778364420e2a53f0cec2e67a8"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/exact.log",
+      "bytes": 3540,
+      "git_blob": "6309890186e325e25337325b865ca4ec925487e8"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/omega.log",
+      "bytes": 13178,
+      "git_blob": "e4a2bef5b27fd815c16ee642337725e417d90928"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/sections.log",
+      "bytes": 1106,
+      "git_blob": "59fc6462da8ffe623722bdc9eb2a620273d5d469"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/thmA.log",
+      "bytes": 27727,
+      "git_blob": "d41f7cacd5b9c4296294efeddfdad4f20a29c8e6"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3/dev_exact_certificates_rerun.log",
+      "bytes": 3963,
+      "git_blob": "c88017135d020db69ecf438794f0710dc5a09fda"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3/hankel_crosscheck.log",
+      "bytes": 727,
+      "git_blob": "654d2e5406cc83f02b2933c62d9009aa8404488c"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3/indep_H.log",
+      "bytes": 3622,
+      "git_blob": "abf7f115c3d91082e2e19584ee2b5e300b8c8fec"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3/indep_dkappa.log",
+      "bytes": 374,
+      "git_blob": "be7dae0bdbd599c34bd76ecfe16832585d471684"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3/indep_exact_check.log",
+      "bytes": 3259,
+      "git_blob": "0447e32822865dba3854fdb96d2c318aaed23610"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3/indep_favard.log",
+      "bytes": 1177,
+      "git_blob": "9314af67ab5cae17ed1a82377bce6d672685282c"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3/indep_generator_cert.log",
+      "bytes": 1875,
+      "git_blob": "2cbd82a28a014ffb05504c289678460c3040cfbe"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3/indep_lp.log",
+      "bytes": 1136,
+      "git_blob": "32f0b7811558a2f0d07ca2cf4ee7538569b42649"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3/padua_n4_generator_cert.log",
+      "bytes": 726,
+      "git_blob": "a41d44a62bd0321d03c018cf358b41423bb73e61"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3/unisolvence_check.log",
+      "bytes": 318,
+      "git_blob": "f4de059552c1c1dac99584dfc11011ae098f8025"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3b/consistency_recheck_rot03.log",
+      "bytes": 3033,
+      "git_blob": "17d0d6c7bfd3eb689b715314296919f973064f0c"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3b/consistency_recheck_rot03_n20_22.log",
+      "bytes": 1319,
+      "git_blob": "cfa245e853b341ac0f09522a757f309df004350e"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3b/dev_r06_consistency_rot03_rerun.log",
+      "bytes": 2117,
+      "git_blob": "39c794e41b214f92171a5912e50f3dda30f3ec27"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3b/equi_H_cert_n1_7.log",
+      "bytes": 5791,
+      "git_blob": "e18dd48e81efd0b5b5eaa07c652c0fc88b468aaf"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3b/equi_H_cert_n8.log",
+      "bytes": 1248,
+      "git_blob": "abd23287a5a09feef198ec662426497052aacf66"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3b/equi_H_cert_negative_control.log",
+      "bytes": 3524,
+      "git_blob": "b7ea903c5692cfea845408f0e58f2a9598fdba3d"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3b/kappa_family_n3.log",
+      "bytes": 286,
+      "git_blob": "22c60a52142d86308c7742950b29eaac0774b805"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3b/padua_delta0.log",
+      "bytes": 2168,
+      "git_blob": "4414e39eaca556ad82c3b8f39012f513a0173e64"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3b/padua_turan_check.log",
+      "bytes": 8126,
+      "git_blob": "4002980ba88ccc86c9195befa7dad4c3a545ae7a"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3b/turan_symbolic.log",
+      "bytes": 1172,
+      "git_blob": "f87461e8dd3fda6232c7098e946d7d864f011323"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L5/a_slopes.log",
+      "bytes": 21429,
+      "git_blob": "86195134ba104de17b8eb7b1611e9745c92aeb05"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L5/analysis_review.txt",
+      "bytes": 13420,
+      "git_blob": "d4ace38d91d56ce78e1e26970ca43823c367f122"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L5/b_kill.log",
+      "bytes": 6200,
+      "git_blob": "a41890b9db4e54a070ed4447286256396b41d487"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L5/c_repro60.log",
+      "bytes": 1090,
+      "git_blob": "de12ed44dcfb11d9216a101362ad62e49eb24cdd"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L5/checks.log",
+      "bytes": 2658,
+      "git_blob": "a0173b233da9ad69f20bc1045dc62e830a4c7bb3"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L5/d_unif.log",
+      "bytes": 4153,
+      "git_blob": "fd58d38da163b3ebdca497355e41617f888b04d3"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L5/reanalysis_dev_r01.txt",
+      "bytes": 10593,
+      "git_blob": "c03c2bc918a8df1abbd2861ef8ec3757932fab72"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L5/stage_check.log",
+      "bytes": 76,
+      "git_blob": "4a41a784db1028ca6470ebe60715b433c462022d"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L5/unif_slopes.txt",
+      "bytes": 247,
+      "git_blob": "33cc6645864d9b2327572d98fc9169baca687649"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/claude-audit/outputs/checkerboard.json",
+      "bytes": 9288,
+      "git_blob": "4736543af60fe1fab6a1cf2afa50cc5e160d4e21"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/claude-audit/outputs/padua.json",
+      "bytes": 23494,
+      "git_blob": "2ae2cc1f9ad33d6f12b0c9caa8eb091a41c4d7cd"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/claude-audit/outputs/source-replay-execution.json",
+      "bytes": 3434,
+      "git_blob": "953fb8c5537f6f95267b0b8336df9e4450c613ce"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/directions/U0/evidence-check.txt",
+      "bytes": 214,
+      "git_blob": "bd0f6d72425c30f659c86dc414ddd744bbafbbbe"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/directions/U0/frozen-hashes.json",
+      "bytes": 3206,
+      "git_blob": "01e8e7217b43d84d599d98a0b1689f8b7716b832"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/directions/U1/frozen-hashes.json",
+      "bytes": 1894,
+      "git_blob": "eeb04ca86f21280cfcffe93412e6d3673beb5511"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/protocol/check-output.json",
+      "bytes": 4892,
+      "git_blob": "8f3308b924fbbee8ad462899fad40b9818faa1bd"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u0/check-summary.json",
+      "bytes": 8238,
+      "git_blob": "f7627e7560119be5dd4123cb2611db688347c9be"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u0/evidence-check.json",
+      "bytes": 186,
+      "git_blob": "a2bfe10a5eb2ee00f4b1c4dc5bb0723b583de82f"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u0/reviewed-hashes.json",
+      "bytes": 2172,
+      "git_blob": "77910b7d8d1076e24af4e81ce4f0b5883743723d"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u1/check-output.txt",
+      "bytes": 11439,
+      "git_blob": "0e4ae812a4d454e763abdc9c8ea004a1bff09daa"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u1/integration-check.txt",
+      "bytes": 747,
+      "git_blob": "503ce3b45cb58aa80bb2079a94a089432e8a7324"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u1/producer-final-finite.json",
+      "bytes": 10186,
+      "git_blob": "e8637d4c3afd84e590bc2225034d772b340552f8"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u1/producer-final-symbolic.json",
+      "bytes": 18648,
+      "git_blob": "a500d4d58c88943087f4cbae6d0f82e3e86ab59b"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u1/producer-rerun-finite.json",
+      "bytes": 10194,
+      "git_blob": "d231515b2926afab370bd31af5b87436e800d94b"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u1/symbolic-summary-output.txt",
+      "bytes": 642,
+      "git_blob": "b5c4fa64e4eccb4dc5530f24b063ae5ca75dfb00"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/claude-audit/outputs/certD.json",
+      "bytes": 4846,
+      "git_blob": "de921e0141d9b37daabbce12b9a3354bd04e84b2"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/claude-audit/outputs/indep_gram.json",
+      "bytes": 14725,
+      "git_blob": "9d00956d4088928729be791d6bab6cf820d30e52"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/claude-audit/outputs/indep_ranks.json",
+      "bytes": 142972,
+      "git_blob": "6e5a7ed8e7020ab12a3ba2714d4633b5346b8fdd"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/directions/C0/catalogue.json",
+      "bytes": 203368,
+      "git_blob": "9f8490412f76976866c692bb02b0f77b8976a865"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/directions/C0/count-result.json",
+      "bytes": 1260,
+      "git_blob": "a38a0b29555af99e0def45edf6feb2672978a85a"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/directions/C0/count-trials.json",
+      "bytes": 168359,
+      "git_blob": "10fa9a834300a568800e864a6894e7cbe1d355a6"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/directions/C0/hashes.txt",
+      "bytes": 1367,
+      "git_blob": "5570e507d1d98181bf958679eb082e63afda6db5"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/directions/C1/extension.json",
+      "bytes": 18244,
+      "git_blob": "618c27ebd6d533598b36dfbc8045181dc3793c99"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/directions/C1/gram.json",
+      "bytes": 4917,
+      "git_blob": "ee345551f154b207c29011d4b0f9e8fa3e8b0cec"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/directions/C1/hashes.txt",
+      "bytes": 2809,
+      "git_blob": "9577387518ee9d9d10e62c703d169a8ac1502294"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/directions/C1/results.json",
+      "bytes": 44013,
+      "git_blob": "4bedfa256576b4628d730f020fca2cab7ce24bbf"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/directions/C1/stability.json",
+      "bytes": 29012,
+      "git_blob": "8ce07103e5d549a19fb9886cef4ad51cef46de25"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/directions/C1/symbolic.json",
+      "bytes": 2179,
+      "git_blob": "e1b0bc1e142667ab300d5438e9b0a00b2ad12b51"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/directions/C3/lebesgue.json",
+      "bytes": 69136,
+      "git_blob": "57515e9a384589099dd4139280b67da9df2e9730"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/directions/C3/lowdegree.json",
+      "bytes": 2933,
+      "git_blob": "20a837d4e34c73ba96d1251c818569b8bbaf00d7"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/directions/C3/obstructions.json",
+      "bytes": 139840,
+      "git_blob": "2367f1e1e7cb9119594c453cab8c2da157bb6c0e"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/directions/C3/ranks.json",
+      "bytes": 535224,
+      "git_blob": "5408f15dd2970392485456bf40a2e2d7f35a8fdb"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/directions/C3/structure.json",
+      "bytes": 39828,
+      "git_blob": "68f47e579a4a169b4053f8dddb441387b017df2b"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/c0-rerun/catalogue.json",
+      "bytes": 203368,
+      "git_blob": "9f8490412f76976866c692bb02b0f77b8976a865"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/c0-rerun/count-result.json",
+      "bytes": 1260,
+      "git_blob": "a38a0b29555af99e0def45edf6feb2672978a85a"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/c0-rerun/count-trials.json",
+      "bytes": 168359,
+      "git_blob": "10fa9a834300a568800e864a6894e7cbe1d355a6"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/c1-extension-comparison.json",
+      "bytes": 320,
+      "git_blob": "7ea6caf5914f466f72e3e25018c655041ad68718"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/c1-extension-rerun.json",
+      "bytes": 18243,
+      "git_blob": "42cd3375cd154309297043fb34676be0365f973c"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/c1-extension-rerun.log",
+      "bytes": 9355,
+      "git_blob": "cfa2fdb96f3fb0ba988439a5b7273c2791a3c4d6"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/c1-gram-rerun.json",
+      "bytes": 4917,
+      "git_blob": "ee345551f154b207c29011d4b0f9e8fa3e8b0cec"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/c1-gram-rerun.log",
+      "bytes": 4147,
+      "git_blob": "16c570a583d0d4474ad1781d0fc86c8b13d025be"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/c1-later-rerun-comparison.json",
+      "bytes": 553,
+      "git_blob": "6a1f0990287c331bb3282daa25942d8eeb92fa6f"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/c1-reconstruction.json",
+      "bytes": 929,
+      "git_blob": "8c3cb94236b42c96bc4dbe5b0fbfdd15dc426c06"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/c1-rectangle-check.json",
+      "bytes": 203,
+      "git_blob": "cf314aa2da891ff6a56c920575ed7e22940568b3"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/c1-rerun.json",
+      "bytes": 44015,
+      "git_blob": "cb8e00fd0a1310e0842b2727406361c49f614d62"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/c1-rerun.log",
+      "bytes": 5077,
+      "git_blob": "076c734f89b2c23777849e598807f48966a35570"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/c1-stability-rerun.json",
+      "bytes": 29003,
+      "git_blob": "269b21b89b0ee11bb817e553d8f085042d7bfcc0"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/c1-stability-rerun.log",
+      "bytes": 20377,
+      "git_blob": "baaec160459c64c79619e0c32186a25883a7bc82"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/c1-symbolic-rerun.json",
+      "bytes": 2179,
+      "git_blob": "e1b0bc1e142667ab300d5438e9b0a00b2ad12b51"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/c1-symbolic-rerun.log",
+      "bytes": 1479,
+      "git_blob": "30773b78f2a176fc73488ec0f77e5556de0b9288"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/c3-lebesgue-rerun.json",
+      "bytes": 69143,
+      "git_blob": "f28d42612ad7b9e16256c20834c30dcad755618d"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/c3-lowdegree-rerun.json",
+      "bytes": 2940,
+      "git_blob": "04bd2c0c424ec885a445dea7b997528f390d30d9"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/c3-obstructions-rerun.json",
+      "bytes": 139847,
+      "git_blob": "4279cd910982d8212146621cf8c79ffb334458e7"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/c3-records-check.json",
+      "bytes": 274,
+      "git_blob": "8c0252042dc500a00904421d287ce8bc6537f83b"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/c3-rerun.json",
+      "bytes": 535225,
+      "git_blob": "dbdb6cd0c96b7ee4c001aa012069d67a084ae9fe"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/c3-structure-rerun.json",
+      "bytes": 39835,
+      "git_blob": "5c5d13a15f83a6a193cfa3185ad701ea749cd7ab"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/count-reconstruction.json",
+      "bytes": 1097,
+      "git_blob": "b5a41126541eb710b9ea8a2a678aa742689137cb"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/gram-reconstruction.json",
+      "bytes": 2652,
+      "git_blob": "900b94d85a3e33425143cd522daaa31a161ba474"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/lowdegree-reconstruction.json",
+      "bytes": 679,
+      "git_blob": "fcd5e7f8a6dae95f0bf36b67c18a15cae484e529"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/numerical-rerun-comparison.json",
+      "bytes": 2474,
+      "git_blob": "4ec330598f680f704ef7dbfbaffb4d3326c5ec89"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/obstruction-reconstruction.json",
+      "bytes": 703,
+      "git_blob": "6d8e8d9343f8606015864be6158da0dbaf9a68c2"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/rank-reconstruction.json",
+      "bytes": 657,
+      "git_blob": "529cea54be671ba17c0913afd1973be9753a6445"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/row-moments-reconstruction.json",
+      "bytes": 936,
+      "git_blob": "860122d0e189b8f0b8264f611da473084e689265"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/independent/structure-reconstruction.json",
+      "bytes": 3099,
+      "git_blob": "310d09e42eca501e95e3a7b66589b0833fff5135"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-allocation-check.json",
+      "bytes": 17094,
+      "git_blob": "6ec9dbcb6e95ebcf406ebf4935dbab543d93823b"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-independent-check.json",
+      "bytes": 6518,
+      "git_blob": "199a261e79be951e5816b23fe055af82be536176"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-m1-replay.txt",
+      "bytes": 1304,
+      "git_blob": "a48aa8ebaefe76bb4fa6267e792b3018827604f2"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-m2-comparison.json",
+      "bytes": 370,
+      "git_blob": "3adfa1888b42875d60605524f681bed4a7296a21"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-m3-comparison.json",
+      "bytes": 430,
+      "git_blob": "ede3414b74fd41ec83a684194ecae74bcdaa9b9a"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-m3-replay.txt",
+      "bytes": 1959,
+      "git_blob": "f2d735f45ffe9f86d7a722beaa00a7c2efdcccf8"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-manuscript-check.json",
+      "bytes": 3306,
+      "git_blob": "2cf3c6cbbea7f30b0b54000afc83c4db7bedb07e"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-registry-check.json",
+      "bytes": 3520,
+      "git_blob": "f68b8636eb18012849175d6a0f3c1d82bc20b72e"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-replay-comparison.json",
+      "bytes": 728,
+      "git_blob": "3d8edaaec8c06c04bd0ad1b7e73565bee59c3150"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-reproduction.json",
+      "bytes": 29187,
+      "git_blob": "e9be9ac7a3f7ac22f14397de58ca9b2d34f434a3"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-response-01-check.json",
+      "bytes": 8866,
+      "git_blob": "b2d470349a2239bcc0e88e69b956ff3af72c36d4"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-response-01-completion.json",
+      "bytes": 2486,
+      "git_blob": "b298963019851acf44ae3f34dc3d32ce4011f6e2"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-response-01-m3-replay.txt",
+      "bytes": 212,
+      "git_blob": "0d3159e18ed3dda952a5becee3ed0bfc4e91ff47"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/astra-response-01-protocol-replay.json",
+      "bytes": 954,
+      "git_blob": "a6fab4f2ce11a125098f1ff13df9da4c53e2aea3"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/claude-audit-01-check.json",
+      "bytes": 7767,
+      "git_blob": "115a75f96aa57c850b33429948b61d4b7c075d32"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/protocol-check.json",
+      "bytes": 37195,
+      "git_blob": "9364041f476dbdae6d639bea9e414bae591864cf"
+    },
+    {
+      "path": "tracks/mz-constants/evidence/reproduction.json",
+      "bytes": 29202,
+      "git_blob": "a6c19e29ced5fb66f6310628114646d83ebc59a9"
+    }
+  ]
+}

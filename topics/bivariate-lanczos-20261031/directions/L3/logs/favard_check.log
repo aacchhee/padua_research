@@ -1,0 +1,5 @@
+favard_check nmax=4 seed=0
+n=1: exact commutator support (low rows/cols zero, top block nonzero): [('measure', (True, True)), ('functional', (True, True))]; words-formula max rel err (FP) = 1.95e-16; counts full=11 computed=10 D-1=9 excess full=2 computed=1 n(n+1)/2=1
+n=2: exact commutator support (low rows/cols zero, top block nonzero): [('measure', (True, True)), ('functional', (True, True))]; words-formula max rel err (FP) = 7.40e-16; counts full=31 computed=26 D-1=20 excess full=11 computed=6 n(n+1)/2=3
+n=3: exact commutator support (low rows/cols zero, top block nonzero): [('measure', (True, True)), ('functional', (True, True))]; words-formula max rel err (FP) = 1.35e-15; counts full=66 computed=52 D-1=35 excess full=31 computed=17 n(n+1)/2=6
+n=4: exact commutator support (low rows/cols zero, top block nonzero): [('measure', (True, True)), ('functional', (True, True))]; words-formula max rel err (FP) = 5.33e-15; counts full=120 computed=90 D-1=54 excess full=66 computed=36 n(n+1)/2=10

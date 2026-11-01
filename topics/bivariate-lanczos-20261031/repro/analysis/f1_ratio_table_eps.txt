@@ -1,0 +1,58 @@
+tensor Chebyshev 25^2 plain-CGS        deg  4 N=  15 loss=1.2e-14 res=3.0e-01 u/res=7.4e-16 ratio=16.21
+tensor Chebyshev 25^2 plain-CGS        deg  8 N=  45 loss=1.6e-14 res=1.3e-01 u/res=1.7e-15 ratio=9.37
+tensor Chebyshev 25^2 plain-CGS        deg 12 N=  91 loss=1.8e-14 res=7.5e-02 u/res=3.0e-15 ratio=6.08
+tensor Chebyshev 25^2 plain-CGS        deg 16 N= 153 loss=1.9e-14 res=5.1e-02 u/res=4.4e-15 ratio=4.36
+tensor Chebyshev 25^2 plain-CGS        deg 20 N= 231 loss=1.9e-14 res=3.7e-02 u/res=6.0e-15 ratio=3.17
+tensor Chebyshev 25^2 plain-CGS        deg 24 N= 325 loss=1.9e-14 res=2.9e-02 u/res=7.7e-15 ratio=2.48
+random M=625 plain-CGS                 deg  4 N=  15 loss=4.2e-15 res=3.6e-01 u/res=6.2e-16 ratio=6.81
+random M=625 plain-CGS                 deg  8 N=  45 loss=4.2e-15 res=1.2e-01 u/res=1.9e-15 ratio=2.27
+random M=625 plain-CGS                 deg 12 N=  91 loss=4.2e-15 res=2.1e-02 u/res=1.1e-14 ratio=0.40
+random M=625 plain-CGS                 deg 16 N= 153 loss=8.2e-15 res=8.9e-03 u/res=2.5e-14 ratio=0.33
+random M=625 plain-CGS                 deg 20 N= 231 loss=7.7e-14 res=1.6e-03 u/res=1.4e-13 ratio=0.55
+random M=625 plain-CGS                 deg 24 N= 325 loss=2.0e-12 res=1.5e-04 u/res=1.5e-12 ratio=1.35
+random M=2500 plain-CGS                deg  4 N=  15 loss=2.1e-15 res=3.7e-01 u/res=6.0e-16 ratio=3.50
+random M=2500 plain-CGS                deg  8 N=  45 loss=3.6e-15 res=1.6e-01 u/res=1.4e-15 ratio=2.59
+random M=2500 plain-CGS                deg 12 N=  91 loss=4.7e-15 res=8.8e-02 u/res=2.5e-15 ratio=1.86
+random M=2500 plain-CGS                deg 16 N= 153 loss=6.1e-15 res=4.1e-02 u/res=5.4e-15 ratio=1.13
+random M=2500 plain-CGS                deg 20 N= 231 loss=1.3e-14 res=2.4e-02 u/res=9.3e-15 ratio=1.41
+random M=2500 plain-CGS                deg 24 N= 325 loss=4.7e-14 res=1.2e-02 u/res=1.9e-14 ratio=2.54
+tensor Chebyshev 41^2 plain-CGS        deg  4 N=  15 loss=6.5e-14 res=3.0e-01 u/res=7.4e-16 ratio=87.82
+tensor Chebyshev 41^2 plain-CGS        deg  8 N=  45 loss=8.8e-14 res=1.3e-01 u/res=1.7e-15 ratio=51.52
+tensor Chebyshev 41^2 plain-CGS        deg 12 N=  91 loss=9.2e-14 res=7.5e-02 u/res=3.0e-15 ratio=31.07
+tensor Chebyshev 41^2 plain-CGS        deg 16 N= 153 loss=9.3e-14 res=5.1e-02 u/res=4.4e-15 ratio=21.36
+tensor Chebyshev 41^2 plain-CGS        deg 20 N= 231 loss=9.5e-14 res=3.7e-02 u/res=6.0e-15 ratio=15.83
+tensor Chebyshev 41^2 plain-CGS        deg 24 N= 325 loss=9.5e-14 res=2.9e-02 u/res=7.7e-15 ratio=12.41
+tensor Chebyshev 41^2 plain-CGS        deg 28 N= 435 loss=9.6e-14 res=2.3e-02 u/res=9.7e-15 ratio=9.94
+tensor Chebyshev 41^2 plain-CGS        deg 32 N= 561 loss=9.6e-14 res=1.9e-02 u/res=1.2e-14 ratio=8.21
+tensor Chebyshev 41^2 plain-CGS        deg 36 N= 703 loss=9.6e-14 res=1.6e-02 u/res=1.4e-14 ratio=6.92
+tensor Chebyshev 41^2 plain-CGS        deg 40 N= 861 loss=9.6e-14 res=1.4e-02 u/res=1.6e-14 ratio=6.05
+random M=1681 plain-CGS                deg  4 N=  15 loss=6.9e-15 res=3.7e-01 u/res=6.0e-16 ratio=11.50
+random M=1681 plain-CGS                deg  8 N=  45 loss=6.9e-15 res=1.3e-01 u/res=1.7e-15 ratio=4.04
+random M=1681 plain-CGS                deg 12 N=  91 loss=6.9e-15 res=6.1e-02 u/res=3.6e-15 ratio=1.90
+random M=1681 plain-CGS                deg 16 N= 153 loss=7.8e-15 res=5.4e-02 u/res=4.1e-15 ratio=1.90
+random M=1681 plain-CGS                deg 20 N= 231 loss=2.7e-14 res=1.2e-02 u/res=1.9e-14 ratio=1.46
+random M=1681 plain-CGS                deg 24 N= 325 loss=1.8e-13 res=1.7e-03 u/res=1.3e-13 ratio=1.38
+random M=1681 plain-CGS                deg 28 N= 435 loss=1.3e-12 res=2.7e-04 u/res=8.2e-13 ratio=1.58
+random M=1681 plain-CGS                deg 32 N= 561 loss=1.8e-11 res=2.4e-05 u/res=9.3e-12 ratio=1.95
+random M=1681 plain-CGS                deg 36 N= 703 loss=2.9e-10 res=1.8e-06 u/res=1.2e-10 ratio=2.35
+random M=1681 plain-CGS                deg 40 N= 861 loss=8.4e-09 res=7.7e-08 u/res=2.9e-09 ratio=2.91
+random M=6724 plain-CGS                deg  4 N=  15 loss=8.9e-15 res=3.8e-01 u/res=5.8e-16 ratio=15.23
+random M=6724 plain-CGS                deg  8 N=  45 loss=8.9e-15 res=1.8e-01 u/res=1.2e-15 ratio=7.21
+random M=6724 plain-CGS                deg 12 N=  91 loss=8.9e-15 res=9.7e-02 u/res=2.3e-15 ratio=3.89
+random M=6724 plain-CGS                deg 16 N= 153 loss=8.9e-15 res=6.2e-02 u/res=3.6e-15 ratio=2.49
+random M=6724 plain-CGS                deg 20 N= 231 loss=8.9e-15 res=3.1e-02 u/res=7.2e-15 ratio=1.24
+random M=6724 plain-CGS                deg 24 N= 325 loss=1.3e-14 res=1.6e-02 u/res=1.4e-14 ratio=0.94
+random M=6724 plain-CGS                deg 28 N= 435 loss=2.6e-14 res=6.6e-03 u/res=3.4e-14 ratio=0.77
+random M=6724 plain-CGS                deg 32 N= 561 loss=7.2e-14 res=2.9e-03 u/res=7.7e-14 ratio=0.94
+random M=6724 plain-CGS                deg 36 N= 703 loss=1.9e-13 res=1.1e-03 u/res=2.0e-13 ratio=0.94
+random M=6724 plain-CGS                deg 40 N= 861 loss=8.8e-13 res=3.5e-04 u/res=6.3e-13 ratio=1.39
+tensor 41^2 (HL reorth) reorth         deg  4 N=  15 loss=6.9e-15 res=3.0e-01 u/res=7.4e-16 ratio=9.32
+tensor 41^2 (HL reorth) reorth         deg  8 N=  45 loss=6.9e-15 res=1.3e-01 u/res=1.7e-15 ratio=4.04
+tensor 41^2 (HL reorth) reorth         deg 12 N=  91 loss=6.9e-15 res=7.5e-02 u/res=3.0e-15 ratio=2.33
+tensor 41^2 (HL reorth) reorth         deg 16 N= 153 loss=6.9e-15 res=5.1e-02 u/res=4.4e-15 ratio=1.58
+tensor 41^2 (HL reorth) reorth         deg 20 N= 231 loss=6.9e-15 res=3.7e-02 u/res=6.0e-15 ratio=1.15
+tensor 41^2 (HL reorth) reorth         deg 24 N= 325 loss=6.9e-15 res=2.9e-02 u/res=7.7e-15 ratio=0.90
+tensor 41^2 (HL reorth) reorth         deg 28 N= 435 loss=6.9e-15 res=2.3e-02 u/res=9.7e-15 ratio=0.71
+tensor 41^2 (HL reorth) reorth         deg 32 N= 561 loss=6.9e-15 res=1.9e-02 u/res=1.2e-14 ratio=0.59
+tensor 41^2 (HL reorth) reorth         deg 36 N= 703 loss=6.9e-15 res=1.6e-02 u/res=1.4e-14 ratio=0.50
+tensor 41^2 (HL reorth) reorth         deg 40 N= 861 loss=6.9e-15 res=1.4e-02 u/res=1.6e-14 ratio=0.44

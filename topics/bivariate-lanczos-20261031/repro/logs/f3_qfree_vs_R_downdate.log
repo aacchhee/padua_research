@@ -1,0 +1,15 @@
+n=12, N=91. columns: min(1-leverage) seen | final window size | err Q-free H (EGK-2D) | err R/C LINPACK | cond(R_final, Chebyshev basis)
+W=400 steps=400                  seed=0  2.8e-03 | 400 | 3.7e-13 | 1.9e-14 | 8.1e+01
+W=400 steps=400                  seed=1  9.4e-03 | 400 | 6.3e-13 | 3.2e-14 | 7.9e+01
+W=150 steps=400                  seed=0  1.4e-07 | 150 | 2.1e-09 | 3.9e-11 | 2.1e+03
+W=150 steps=400                  seed=1  2.9e-06 | 150 | 1.9e-08 | 3.4e-10 | 1.3e+04
+W=100 steps=300                  seed=0  5.2e-10 | 100 | 1.7e-04 | 8.6e-08 | 1.0e+05
+W=100 steps=300                  seed=1  2.7e-09 | 100 | 1.8e-06 | 1.1e-09 | 8.6e+03
+W=95 steps=200                   seed=0  3.3e-11 | 95 | 7.4e-03 | 1.6e-06 | 3.4e+05
+W=95 steps=200                   seed=1  7.9e-10 | 95 | 5.0e-05 | 1.6e-07 | 9.1e+04
+W=100 steps=300 then grow to 400 seed=0  8.0e-10 | 400 | 5.3e-08 | 3.3e-14 | 2.2e+02
+W=100 steps=300 then grow to 400 seed=1  8.6e-09 | 400 | 4.6e-09 | 4.9e-14 | 5.1e+02
+W=95 steps=200 then grow to 400  seed=0  2.8e-11 | 400 | 6.9e-09 | 4.3e-14 | 1.9e+02
+W=95 steps=200 then grow to 400  seed=1  8.6e-10 | 400 | 3.4e-09 | 5.6e-14 | 5.0e+02
+W=93 steps=200 then grow to 400  seed=0  2.1e-11 | 400 | 1.2e-08 | 2.6e-14 | 1.8e+02
+W=93 steps=200 then grow to 400  seed=1  1.7e-10 | 400 | 7.3e-09 | 5.6e-14 | 5.2e+02

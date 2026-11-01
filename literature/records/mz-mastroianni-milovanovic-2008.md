@@ -17,3 +17,11 @@ Chapter 4 is *Algebraic Interpolation in Uniform Norm*, pp. 235–318. Its abstr
 ## History
 
 2026-10-31: primary metadata correction; no mathematical theorem imported.
+
+## 2026-11-01 fulltext reading (topic mz-prior-art-20261101)
+
+Reader: Claude, Opus 5.5 (orchestrator). Access: publisher PDF via AC's NTNU institutional access in AC's built-in browser, text extracted in-page with pdf.js and read in the session only; no PDF or fulltext extract stored anywhere in the repository. Rules `9739a0c`.
+
+- Coverage: chapters 2 (pp. 75–192), 4 (pp. 235–318) and 5 (95 pp.) indexed by section headings and keyword-screened (Lobatto, Clenshaw, extrema, log n, converse, Marcinkiewicz, L², mean convergence). Chapters 1 and 3 (trigonometric approximation) not screened.
+- Findings: chapter 4 is uniform-norm interpolation. §4.1.1 is interpolation at zeros, §4.2 optimal nodes (Definition 4.1.1: ‖L_n(X)‖_∞≤C log n, p. 238), §4.2.2 additional-nodes method with Jacobi zeros, §4.3 weighted interpolation (Jacobi, Sobolev, Laguerre, Hermite, isolated singularities). The log n statements (e.g. (4.1.9), (4.1.10), p. 239) are uniform-norm Lebesgue-type sums. Chapter 5 contains Gauss–Lobatto quadrature (§5.1.4) and L²-moment-preserving approximation, with no interpolation-norm theorem.
+- Relation: no weighted ℓ²→L² Lagrange interpolation norm theorem in the screened chapters. **Verdict for PD-T017/018: RELATED, DIFFERENT SETTING** (uniform Lebesgue constant is a different operator norm). Chapters 1 and 3 remain unscreened (named gap, low priority).

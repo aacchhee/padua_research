@@ -1,0 +1,68 @@
+[
+  {
+    "path": "main/AGENTS.md",
+    "bytes": 3572,
+    "sha256": "c44a76f138fce01f02c06753b22fbc83fd5c1ee701785d49ba17cef5f8eee05b",
+    "git_blob_sha1": "07cd8c8920fabccc16dce4a63fe853a2f3a26f3d"
+  },
+  {
+    "path": "main/agents/WORKFLOW.md",
+    "bytes": 25921,
+    "sha256": "3ac67448c6d0bd98c057262d60a01cf46fd0ae9df2643e4d8f20ef163f998d5e",
+    "git_blob_sha1": "cca18dccfbc9c56754920d2905919e6bb69498e9"
+  },
+  {
+    "path": "main/agents/codex/CODEX.md",
+    "bytes": 4969,
+    "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+    "git_blob_sha1": "16a4ecfea89acd5b1d9cd09c9213094bce144caf"
+  },
+  {
+    "path": "target/topics/mz-prior-art-20261101/translation.md",
+    "bytes": 12920,
+    "sha256": "eb160c72c91d0e5c5d68be67bbde95c4b536a562b9214eac56c0487483f4c8a5",
+    "git_blob_sha1": "59d0ae9370e930ddb0b409072692f01f16d4572c"
+  },
+  {
+    "path": "target/topics/mz-prior-art-20261101/comparison.md",
+    "bytes": 14769,
+    "sha256": "64c07addfae7d76b1c280d7e20222cf4a70c7963088d8328350bea0ed86657db",
+    "git_blob_sha1": "fbdc6e2f9e71e8bec27dc05f9b4a2f93a3c3d7d0"
+  },
+  {
+    "path": "target/topics/mz-prior-art-20261101/response-01.md",
+    "bytes": 10322,
+    "sha256": "ba4fdf2127671659a4636ad13d6616ecb75ac22081745b556ff4364a8b8733e2",
+    "git_blob_sha1": "6eb427f41051e7e117208d3df00a850be19eb841"
+  },
+  {
+    "path": "target/topics/mz-prior-art-20261101/response-02.md",
+    "bytes": 5155,
+    "sha256": "13fbbd1227e95ddbbaccf96735785e5be62c14dcd527cac0f710fc851d276676",
+    "git_blob_sha1": "629695d96c656a8bcaafbaf4d59a3e6f381c94d4"
+  },
+  {
+    "path": "target/topics/mz-prior-art-20261101/report.md",
+    "bytes": 6172,
+    "sha256": "27703ea6eead66b4e87bce6c3f2ca806a44aa9f1232c98b53a272d6996d0a204",
+    "git_blob_sha1": "2c259c525a9d227ed8e6d4da04a4fb27e4b64309"
+  },
+  {
+    "path": "target/literature/records/mz-prior-art-2026-additions.md",
+    "bytes": 10046,
+    "sha256": "4f7d38c9b49ad4623c3d98c247d94454197d1516c9a69308fd776de68b3e1238",
+    "git_blob_sha1": "c99f9fccdbfec8876f06f0b9d260326cba352b7e"
+  },
+  {
+    "path": "target/literature/INDEX.md",
+    "bytes": 265014,
+    "sha256": "f90355c5b77a638d1a49980330eff1bda7d0e7610771a3bdae465f384b03f056",
+    "git_blob_sha1": "f9348537234c798a3fa738970513891f0dd8c956"
+  },
+  {
+    "path": "target/tracks/mz-constants/paper/manuscript.tex",
+    "bytes": 47694,
+    "sha256": "aa152cc6d76659934f49b6ecea43bc3cd79676c2ddd2801023937140958888f1",
+    "git_blob_sha1": "90406e650d9ae7f1ac4fdf275d740b1189efcef8"
+  }
+]

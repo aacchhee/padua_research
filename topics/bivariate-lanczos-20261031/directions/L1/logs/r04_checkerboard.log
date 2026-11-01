@@ -1,0 +1,19 @@
+# l1_r04_checkerboard.py numpy=2.5.3
+== Chebyshev-Lobatto (Padua-type): m=30 M=496 min wx=1.7e-02 min wy=1.6e-02
+   (C1) max |window coef - product-reference coef| (deg <= 29) = 8.9e-16;  max within-degree coupling ratio = 1.3e-15
+   2D BJ loss t=4,8,..: 4:2e-15 8:2e-15 12:3e-15 16:3e-15 20:3e-15 24:3e-15 28:3e-15 | t=30: 3e-15
+   1D Lanczos loss X  : 4:6e-16 8:8e-16 12:9e-16 16:9e-16 20:9e-16 24:9e-16 28:1e-15
+   1D Lanczos loss Y  : 4:4e-16 8:4e-16 12:4e-16 16:4e-16 20:4e-16 24:6e-16 28:6e-16
+   (C2) max_t<=m-2 loss2D / max(1e3u, Lx, Ly) = 1.5e-02
+== equispaced: m=30 M=496 min wx=9.3e-10 min wy=4.7e-10
+   (C1) max |window coef - product-reference coef| (deg <= 29) = 5.3e-15;  max within-degree coupling ratio = 3.7e-15
+   2D BJ loss t=4,8,..: 4:9e-16 8:9e-16 12:1e-15 16:4e-15 20:1e-14 24:4e-14 28:1e-13 | t=30: 2e-13
+   1D Lanczos loss X  : 4:2e-16 8:3e-16 12:4e-16 16:5e-16 20:6e-16 24:1e-15 28:2e-14
+   1D Lanczos loss Y  : 4:2e-16 8:2e-16 12:2e-16 16:2e-16 20:3e-16 24:7e-16 28:8e-15
+   (C2) max_t<=m-2 loss2D / max(1e3u, Lx, Ly) = 5.0e-01
+== clustered (cubic at 0): m=30 M=496 min wx=1.7e-33 min wy=5.3e-35
+   (C1) max |window coef - product-reference coef| (deg <= 29) = 1.0e-06;  max within-degree coupling ratio = 1.3e-08
+   2D BJ loss t=4,8,..: 4:4e-16 8:7e-16 12:4e-14 16:2e-11 20:8e-09 24:7e-07 28:4e-05 | t=30: 2e-01
+   1D Lanczos loss X  : 4:4e-16 8:4e-16 12:4e-16 16:4e-16 20:5e-16 24:3e-13 28:4e-07
+   1D Lanczos loss Y  : 4:2e-16 8:2e-16 12:4e-16 16:4e-16 20:5e-16 24:3e-14 28:4e-09
+   (C2) max_t<=m-2 loss2D / max(1e3u, Lx, Ly) = 2.6e+06

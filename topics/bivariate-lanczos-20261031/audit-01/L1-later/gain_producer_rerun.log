@@ -1,0 +1,17 @@
+# l1_r06_gain_identity.py numpy=2.3.5
+== cubic-clustered checkerboard m=30: M=496, univariate orthonormality defects 7.1e-16 (x), 1.7e-16 (y)
+   identity check: 91 entries, max_(e,d) |A_direct - A_formula| / ||R_d|| = 1.1e-14 (criterion <= 1e-8: PASS)
+   gains n=16: on-pattern max 5.0e+03 (median 3.6e+00); off-pattern max 9.9e+11 (median 1.9e+00, #>1e6: 296/7031)
+   gains n=20: on-pattern max 5.0e+03 (median 9.3e+00); off-pattern max 1.3e+14 (median 6.4e+00, #>1e6: 709/7031)
+   first-order D predicted, BJ off-pattern values       : n16 1.8e-11  n20 7.8e-09
+   first-order D predicted, abs u-noise off, seed 0     : n16 2.3e-04  n20 5.8e-02
+   first-order D predicted, abs u-noise off, seed 1     : n16 3.8e-04  n20 2.7e-02
+   first-order D predicted, abs u-noise off, seed 2     : n16 4.8e-04  n20 2.9e-02
+== equispaced checkerboard m=30: M=496, univariate orthonormality defects 3.4e-17 (x), 6.9e-17 (y)
+   identity check: 91 entries, max_(e,d) |A_direct - A_formula| / ||R_d|| = 1.6e-15 (criterion <= 1e-8: PASS)
+   gains n=16: on-pattern max 5.6e+00 (median 2.1e+00); off-pattern max 4.2e+02 (median 1.9e+00, #>1e6: 0/7031)
+   gains n=20: on-pattern max 5.6e+00 (median 2.3e+00); off-pattern max 1.4e+03 (median 2.2e+00, #>1e6: 0/7031)
+   first-order D predicted, BJ off-pattern values       : n16 4.2e-15  n20 1.5e-14
+   first-order D predicted, abs u-noise off, seed 0     : n16 1.4e-13  n20 6.7e-13
+   first-order D predicted, abs u-noise off, seed 1     : n16 2.2e-13  n20 7.6e-13
+   first-order D predicted, abs u-noise off, seed 2     : n16 1.7e-13  n20 5.3e-13

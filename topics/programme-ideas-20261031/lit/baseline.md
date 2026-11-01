@@ -1,5 +1,7 @@
 # Literature baseline — programme-scale research directions (Step 0)
 
+> **Final IDs (2026-11-01).** The provisional LIT IDs in this file were allocated final IDs under AC's authorisation; see `topics/programme-ideas-20261031/pr-prep/id-map.json` and ID_CROSSWALK.md. Rows merged into an existing statement have no new ID.
+
 Model: claude-fable-5-1, effort xhigh (as requested by the orchestrator)
 
 - Topic: `programme-ideas-20261031`; branch `claude/programme-ideas-20261031`; base `d36722823441dc40c6e19d69a174459348dd309c`.

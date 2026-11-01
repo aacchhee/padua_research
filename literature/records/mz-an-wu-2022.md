@@ -18,3 +18,11 @@ For positive rules exact through n+k (0<k<=n), the main theorem assumes an MZ re
 ## History
 
 2026-10-31: conditionality and point-count scope verified against arXiv v3; provisional ID only.
+
+## 2026-11-01 published-version comparison (topic mz-prior-art-20261101)
+
+Reader: Claude, Opus 5.5 (orchestrator). Access: publisher PDF via AC's NTNU institutional access in AC's built-in browser, text extracted in-page with pdf.js and read in the session only; no PDF or fulltext extract stored anywhere in the repository. Rules `9739a0c`.
+
+- Coverage: published BIT 62 (2022) 1899–1919, keyword-screened in full; Assumption 2.1 (p. 1902), Theorem 2.2 (p. 1905), §4 opening (p. 1910) and Corollary 4.1 (p. 1911) read.
+- Finding: matches arXiv v3 on all inspected points. Section 4 opens by assuming the MZ property with η=3/4, "a quite loose assumption". Corollary 4.1 covers m-point CC with n+2≤m≤2n+1 "under the conditions of Theorem 2.2 with η=3/4", with error ≤3V^{1/2}E_{m−1−n}(f). PD-N004's case (m=513, n=511) is m=n+2, inside the stated range. The conditional reading is unchanged.
+- Correction search: see topics/mz-prior-art-20261101/LOG.md (Crossref/publisher check by the group-C worker).
