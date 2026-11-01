@@ -61,3 +61,23 @@ Either:
 2. **Final allocation now**: after PR #10 merges and the re-deduplication above, allocate from PD-T081 (6), PD-N032 (5), IDEA-177 (20) and LIT-293 (at most 109, fewer after merges). This needs the ledger owner, or an explicit AC authorisation like PR #10's.
 
 Recommended order: PR #10 → PR #6 (after re-integration) → PR #9 (retargeted to main).
+
+## Re-integration after PR #10 merged (2026-11-01)
+
+PR #10 merged into main as `21e620b`. That makes the PR #10 section above historical, and its plan is now carried out.
+
+- **Main merge** (`3e0100f`). The same five end-of-file append conflicts appeared and were resolved as the union. Every main line is kept. The only branch lines not kept are 15 old `CORPUS.md` rows that PR #10 rewrote. In the same commit, the provisional CORPUS block drops the 34 keys that PR #10 registers with full citations; they are listed in the block header.
+- **Second literature dedupe** (`af3881b`; [integration-map-pr10](lit/integration-map-pr10.md), Sonnet 5.5 helper, developer-reviewed). The 55 rows citing a PR #10 source were compared with LIT-066–292:
+  - **14 same.** These are merged without a new ID and marked in the crosswalk: 01 → LIT-193, 03 → 195, 04 → 197, 06 → 198, 09 → 199, 17 → 183, 30 → 174, 32 → 148, 33 → 149, 35 → 152, 36 → 153, 37 → 161, 44 → 099, 78 → 130.
+  - **38 overlap.** Their PR #10 IDs are added to the coverage column.
+  - **3 unrelated:** rows 40, 53 and 84.
+  - **Row 58** stays an overlap (developer override of the helper's "same") because it carries an unsupported Pitman RN 312 attribution.
+  - **20 comparison flags** are recorded for final allocation. Examples: the row 06 "4 corners" wording versus the printed "4 edges"; impossible ETNA page locators in LIT-131/132; the row 86 JAMS pages; the row 29 missing hypothesis σ(j) ≥ 2.
+- **INDEX block:** 95 rows, so 16 of the 111 baseline rows are merged in total (2 into main rows, 14 into PR #10 rows).
+- **Rehearsal from `21e620b`:**
+  - main → #6 (`af3881b`) is clean;
+  - → #11 (`97968d2`) is clean;
+  - → #9 (`7b8884a`, own topic only) is clean;
+  - → #12 (`c26a6ad`) is clean. Its files outside its own topic are byte-identical to `9bd14a6` or to #9;
+  - the other order, main → #11 → #6, auto-merges.
+- **Final-ID boundary now:** PD-T081, PD-N032, IDEA-177 and LIT-300, because draft PR #11 reserves LIT-293–299 in its ledger copy. A final allocation for this PR would be PD-T081–086, PD-N032–036, IDEA-177–196 and LIT-300–394 (95). It still needs AC's choice: provisional at merge, or final allocation by the ledger owner or by explicit AC authorisation.

@@ -165,6 +165,13 @@ Subagents are launched as background `general-purpose` agents on `claude-fable-5
 - PR #10 has allocated PD-T029–080, PD-N007–031, LIT-066–292 and IDEA-077–176. The next free IDs for this branch are PD-T081, PD-N032, LIT-293 and IDEA-177. If PR #10 lands first: drop the 34 duplicate CORPUS keys, and re-deduplicate the 54 INDEX rows whose sources PR #10 also registers.
 - Decision for AC: keep the provisional IDs at merge (lattice precedent), or allocate final IDs after PR #10 (ledger owner or explicit authorisation). Recommended order: PR #10 → PR #6 → PR #9. PR #6 stays draft until AC decides. No final ID is allocated. Only AC merges.
 
+## 2026-11-01 — Claude, re-integration after PR #10 merged (claude-opus-5-5; requested effort high); Stage PR
+
+- Main `21e620b` (PR #10) is merged in `3e0100f`. The five registry append conflicts are resolved as the union, and 34 duplicate CORPUS keys are dropped.
+- The second literature dedupe against PR #10's LIT-066–292 is in `af3881b`: 14 same (merged, no new ID), 38 overlap, 3 unrelated and 20 flags. The INDEX block is down to 95 rows. Row 58 was overridden to overlap. The helper was Sonnet 5.5; I reviewed all 15 of its "same" calls.
+- Rehearsal from `21e620b` with #6, #11, #9 and #12 is clean in sequence, and #11-first auto-merges. Details are in [pr-prep.md](pr-prep.md).
+- Next free IDs: PD-T081, PD-N032, IDEA-177 and LIT-300 (draft #11 reserves LIT-293–299). AC still has to choose between provisional IDs at merge and final allocation. No ledger edit, no final ID. Only AC merges.
+
 ## Runs needed
 
-Response-02 focused review is complete, and PR preparation is done ([pr-prep.md](pr-prep.md)). What remains is AC's final-ID and merge-order decision, plus re-integration with PR #10 if it lands first. Certification of maxima and proofs of corner expansion/argmax stay OPEN; unimplemented rational and computed-section alternatives are unexcluded. Source identities verified in audit-02 remain pinned; Windows archive retention was not independently rechecked. No full n≤200/n=8192/80-bit replay is claimed. Completed commands/evidence are in the three audit-support directories with separate source revisions.
+Response-02 focused review is complete, and PR preparation is done ([pr-prep.md](pr-prep.md)). What remains is AC's final-ID decision (PR #10 has merged and been re-integrated) and a focused Codex check of the integration. Certification of maxima and proofs of corner expansion/argmax stay OPEN; unimplemented rational and computed-section alternatives are unexcluded. Source identities verified in audit-02 remain pinned; Windows archive retention was not independently rechecked. No full n≤200/n=8192/80-bit replay is claimed. Completed commands/evidence are in the three audit-support directories with separate source revisions.
