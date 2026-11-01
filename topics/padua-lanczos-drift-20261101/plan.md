@@ -32,4 +32,4 @@ Every scientific return needs exact claims and assumptions, closest predecessors
 
 ## Storage and scope
 
-Keep third-party code, PDFs/fulltext and private material outside the public repository. Do not edit `.github/`. Generated evidence limits are 1 MB per file and 5 MB total; do not split to evade limits. Windows delivery and topic-local results writes are pending, as recorded in [COLD_STORAGE.md](COLD_STORAGE.md) and [LOG.md](LOG.md).
+Keep third-party code, PDFs/fulltext and private material outside the public repository. Do not edit `.github/`. Generated evidence limits are 1 MB per file and 5 MB total; do not split to evade limits. Results are repository-only (merged PR16 rule): `results/padua-lanczos-drift-20261101.md`, plus this topic's own root `RESULTS.md` section, added only at PR preparation. No Windows results writes are made. Windows cold-storage delivery of Codex's original ZIP and raw artifacts remains a separate pending item ([COLD_STORAGE.md](COLD_STORAGE.md)); the audit-01 outputs were delivered with readback.

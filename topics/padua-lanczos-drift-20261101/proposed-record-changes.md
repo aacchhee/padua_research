@@ -142,7 +142,7 @@ PD-T?drift-codex-50 executes actual polyrat 0.2.2 numerical source at commit6903
 
 At preparation also update the corresponding PROOF_STATUS rows, split crosswalk, IDEA dispositions and topic indexes, after checking the exact audited source snapshot. Final-ID assignment is still pending. PD-T075 needs a recorded original-to-split mapping for its solved U1; retain original wording/history. The other original target statuses remain unchanged.
 
-Intended local results file: C:\Users\andreyac\Downloads\padua\results\padua-lanczos-drift-20261101.md. No bridge/write is claimed; the intended entry is in LOG Runs needed. Shared RESULTS.md must preserve other topic sections and use the required modification-time guard when actual access exists.
+Results (superseded 2026-11-01 by the merged PR16 rule, response-02 A02-L8): this topic's results file is the in-repository `results/padua-lanczos-drift-20261101.md`. At PR preparation, add only this topic's section to the root `RESULTS.md`, appended or replaced from that file and preserving every other topic's section. No results are written to AC's machine. The earlier intended local file `C:\Users\andreyac\Downloads\padua\results\padua-lanczos-drift-20261101.md` is a historical copy and AC's to delete. Windows cold-storage delivery of large artifacts is a separate pending item (COLD_STORAGE.md).
 
 
 ## Response-01 additions (Claude developer, 2026-11-01; audit-01 E5-F5)

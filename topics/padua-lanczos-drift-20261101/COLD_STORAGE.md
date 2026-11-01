@@ -1,8 +1,15 @@
 # Cold-storage manifest — padua-lanczos-drift-20261101
 
 Intended AC destination: `C:\Users\andreyac\Downloads\padua\cold_storage\padua-lanczos-drift-20261101\`.
-**Windows delivery remains pending:** no bridge exists. The rows below describe
-actual workspace staging, not a receipt from that destination.
+**Windows delivery of the rows below remains pending.** The rows describe actual
+Codex-workspace staging, not a receipt from that destination. Update 2026-11-01
+(Claude, response-02): Claude sessions linked to AC's computer can reach the
+destination, but these files live only in the Codex workspace, where audit-02
+verified them locally. They must be delivered from there (or by AC). Delivered
+so far, with readback: the audit-01 outputs in `audit-01\` (zip sha256
+`29c177218d0d08dcfb1299c1cdc2cc333c40f6da3208abd6f12f1e089150f9ff`, 269978
+bytes; manifest `checks/audit-01/manifest.json`). Cold storage holds large
+artifacts only; results tracking is repository-only (merged PR16 rule).
 
 | File | Actual storage path | Bytes | SHA-256 | Source commit | Frozen generating command | Script blob IDs | Checker command / result |
 |---|---|---:|---|---|---|---|---|

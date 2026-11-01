@@ -160,9 +160,10 @@ those missing runs. No new paper fulltext was retrieved or represented as read.
 Tighten the declared full scalar-operation comparison if pursuing that route;
 its factor-10 result remains inconclusive. The all-degree drift theorem, unconditional selection
 theorem, original universal reorthogonalization target, optimal uniform Padua
-radius and reading (G) remain OPEN. Claude audit, final-ID assignment/registry
-integration and Windows archival/results delivery remain separate acceptance
-steps. Literal proposed changes are in `proposed-record-changes.md`; existing
+radius and reading (G) remain OPEN. Re-audit acceptance, final-ID assignment, registry
+integration, this topic's root RESULTS.md section (repository-only results,
+merged PR16 rule) and Windows cold-storage archival of the original ZIP remain
+separate steps; no results are written to AC's machine. Literal proposed changes are in `proposed-record-changes.md`; existing
 theory files remain unchanged.
 
 The scientific snapshot is `b09e1dbe0baafd666cf0d779a671a40f55de2d75`. A workspace handoff ZIP and its checksum are recorded in COLD_STORAGE.md. The scalar endpoints/capacities have now been independently regenerated; record05 remains MEASURED and its factor10 comparison remains INCONCLUSIVE.
