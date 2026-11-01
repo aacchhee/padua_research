@@ -44,13 +44,19 @@ Only AC chooses whether/how to merge. A local stack rehearsal does not authorize
 
 Original [checks.json](checks.json), [merge-verification.json](merge-verification.json), [audit-01.md](audit-01.md) and [independent-protocol-01.md](independent-protocol-01.md) retain their original bytes and provenance. In particular checks.json describes the earlier administrative snapshot; its old hashes and pending-handoff wording are historical, not current candidate hashes. Current response checks are separately recorded in [response-01-checks.json](response-01-checks.json), produced by [check-response-01.py](check-response-01.py). This is an administrative comparison, not a numerical rerun, new proof or independent audit.
 
-- PR #4 parent at this review checkpoint: `ad40c38ffbd28a80500f6ee10dd35bc778ac4c5b`.
+- Final published PR #4 parent: `a4331a13301ee4a9905c8204c26bff5f9fdf246e`, inherited at stack merge `6678d38c7a79cf8c5f4dd105c170327675fa3043`.
+- Earlier registry/rehearsal checkpoint: PR #4 `ad40c38ffbd28a80500f6ee10dd35bc778ac4c5b`.
 - PR #5 stack-merge review checkpoint: `f43f4c021a695504ad67d6e91681807def22238e`; root merged that PR #4 parent into the published PR #5 history without rebasing. These identify the integration checkpoint, not the final response commit or final delivery envelope.
 - Root resolved the two stack-merge conflicts by taking the PR #4 ledger bytes exactly and retaining CURRENT’s PR #4 prefix/suffix around the completed MZ paragraph. The response checker independently confirms that scope.
-- PR #5 target base: `codex/lattice-unisolvence-20261031`; retargeting is PENDING orchestrator receipt.
-- Stack rehearsal: PENDING orchestrator execution and recorded command/result. No unexecuted rehearsal is counted complete.
+- PR #5 target base: `codex/lattice-unisolvence-20261031`; GitHub retargeting completed, then the final-parent merge was pushed. PR #5 is not based directly on main.
+- Stack rehearsal completed: [stack-rehearsal.json](stack-rehearsal.json) records main→PR4ad40c38→PR5 8d4ef1d with whole-tree equality after each step. The final PR4 envelope was subsequently inherited without conflicts; the parent-preservation checker verifies it separately. No live PR merge was performed.
 - Text-only impact: compare all protected MZ science against merged main `07c5f5465d6de306aa81dbe8ca1f615295163864`, then compare the complete PR #4 parent outside the explicit PR #5 administrative paths, permitting only the original MZ LOG delta and the single CURRENT MZ paragraph; preserve every other CURRENT paragraph, all accepted IDs and the endpoint constant. Verify the CURRENT index, OPEN statuses, immutable historical evidence, and local links.
 
-## Runs needed
+## Executed response checks and next action
 
-Executed at the review checkpoint: `python3 topics/mz-postmerge-frontier-20261031/check-response-01.py --parent ad40c38ffbd28a80500f6ee10dd35bc778ac4c5b` and `git diff --check` pass. The checker compares 503 protected parent paths without differences and confirms the accepted-result index, endpoint constant, original links, OPEN frontier, exact ledger bytes and immutable historical evidence. Rerun after any further edit. Record actual stack-rehearsal evidence and final head/base identities before readiness. Supplemental Astra review cannot replace the accepted Claude handoff and does not clear pending novelty/literature work.
+`python topics/mz-postmerge-frontier-20261031/check-response-01.py --parent a4331a13301ee4a9905c8204c26bff5f9fdf246e` passed after the final parent merge:509protected parent files unchanged, the entire ledger identical, CURRENT outside its MZ paragraph identical, all accepted MZ IDs/constant/links retained, and all protected MZ science and historical audit evidence unchanged. An independent reviewer may pass `--output <own-receipt>` to avoid changing the developer receipt. The local squash rehearsal is separately recorded; more science/numerical reruns are unnecessary for this metadata-only response.
+
+The inherited lattice audit-target manifest is the frozen PR4 snapshot. This PR's deliberate CURRENT paragraph delta is covered by its own versioned response check rather than overwriting the parent's manifest. Original checks.json and original audits remain immutable historical evidence. Focused current-response review is in response-review/.
+
+Stage: PR. Ready for AC in the requested order, PR #4 then PR #5. Only AC merges; after PR #4 lands, refresh/merge main into this published branch and retarget as appropriate without rebasing.
+Next: `Codex (gpt-6.1-sol medium): Check PR #4 then stacked PR #5 before AC’s merge decisions.`

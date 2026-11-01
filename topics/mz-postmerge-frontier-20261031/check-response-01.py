@@ -27,6 +27,7 @@ def same(ref, path):
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--parent', help='final PR #4 SHA after root integration')
+parser.add_argument('--output', type=Path, help='optional independent receipt destination')
 args = parser.parse_args()
 base_paths = paths(MAIN)
 protected = [p for p in base_paths if p.startswith('tracks/mz-constants/')
@@ -132,7 +133,8 @@ record = {
                   'bytes': (ROOT / p).stat().st_size}
               for p in link_paths + [TOPIC + 'check-response-01.py']},
 }
-output = ROOT / TOPIC / 'response-01-checks.json'
+output = args.output if args.output else ROOT / TOPIC / 'response-01-checks.json'
+output.parent.mkdir(parents=True, exist_ok=True)
 output.write_text(json.dumps(record, indent=2) + '\n')
 print(json.dumps({k: record[k] for k in ['checks_pass', 'science_changed',
       'mz_registry_rows_changed', 'historical_evidence_changed', 'current_index_checks',

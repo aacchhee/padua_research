@@ -40,3 +40,13 @@ Historical next step (completed by audit-01 below): `Claude (Sonnet 5.5 high): A
 ### Runs needed
 
 The response checker with `--parent ad40c38ffbd28a80500f6ee10dd35bc778ac4c5b` and `git diff --check` pass at the review checkpoint: 503 protected parent paths unchanged; accepted MZ index/constant/links, surrounding CURRENT text, exact ledger bytes and immutable historical evidence preserved. Rerun after further edits. Root must still execute and record the stack rehearsal and retargeting. No numerical run is required for these prose-only dispositions.
+
+
+## Final stack response — 2026-11-01
+
+Root merged the final PR4 parent `a4331a13301ee4a9905c8204c26bff5f9fdf246e` at `6678d38c7a79cf8c5f4dd105c170327675fa3043` without rebasing or conflicts. PR5 was retargeted to `codex/lattice-unisolvence-20261031` and the stacked history pushed. The ledger and every parent registry are inherited byte-identically; only the MZ CURRENT paragraph is extended, preserving every accepted-result ID and the exact surrounding lattice paragraph. All L1–L4 dispositions are in response-01.md; the old audit and original checks remain unchanged.
+
+The actual local sequential squash rehearsal and its whole-tree equality checks are recorded in stack-rehearsal.json. The later parent-review envelope changes metadata only and passes the full parent-preservation check separately. No live PR was merged. The final focused review is in response-review/.
+
+Stage: PR
+Next: `Codex (gpt-6.1-sol medium): Check PR #4 then stacked PR #5 before AC’s merge decisions.`
