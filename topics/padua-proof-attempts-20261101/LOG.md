@@ -116,3 +116,12 @@ Next: Codex (gpt-6.1-sol medium): Continue codex/padua-proof-attempts-20261101 �
 - Adopted the new handoff/reservation procedure. No range for this synchronization: it makes no new reservation, final-ID assignment or merge-readiness decision. Existing accepted IDs and reservations are inherited unchanged. Any future allocation must refresh all open/retired reservations under the new rule and respect AC's specific instructions.
 - Stage remains PR; accepted Claude audit and F1–F6 response remain valid for the unchanged scientific content. PR #9 remains draft with the prior source/registry work pending; its obsolete dependency on an unmerged PR #6 is removed from the current PR description.
 - Handoff: [01-integration-preparation.md](handoffs/01-integration-preparation.md) — next remaining topic step, bootstrap under the newly merged numbered-handoff rule. There was no earlier numbered handoff to alter. This continuation's outputs are committed before that new handoff is published.
+
+
+### Registry-preservation check requested by AC
+
+- AC added: “important to check that there is no damage to registries.” Checked before publication; no numbered handoff existed yet, so no prior instruction/status was overwritten.
+- Nine files (seven global registry/state/index files plus both ALLOCATIONS.md ledgers) are byte-for-byte identical to fresh main `cf89b140530d5838bdb208a8c28f3e7aa676ace3`; SHA-256, Git blobs and byte counts are in registry-integrity.json. Consequently every upstream row, alias, reservation and mapping in those files is preserved without additions, edits or deletions by this topic update.
+- `python -I topics/programme-ideas-20261031/pr-prep/allocate.py` was actually run without `--apply`; the installed-allocation read-only check passed, validating 192 allocated map entries and 16 merged-alias crosswalks. Output boundaries match the installed id-map.json. No allocator write was invoked.
+- Global PROOF_STATUS primary-ID scan: 143 records, no duplicate primary proof IDs. Checked 2,388 local link targets across the seven global files: no missing targets. The branch diff outside this topic directory is empty relative to fresh main.
+- Evidence: registry-integrity.json; source check output retained during execution in `/tmp/padua-main-sync-installed-allocation.json`. No registry, source record or allocation ledger was modified by these checks. This establishes preservation relative to fresh main, not a new mathematical or literature audit.

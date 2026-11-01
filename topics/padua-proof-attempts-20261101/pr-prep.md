@@ -100,3 +100,12 @@ scientific output or audit record is rewritten.
 Next remaining step is in handoffs/01-integration-preparation.md, published
 under the new rules after the sync outputs are committed. No PR is merged and
 no readiness elevation is inferred from a clean main merge.
+
+
+### Registry preservation after the live main merge
+
+AC specifically requested a damage check. registry-integrity.json records nine
+registry/ledger files byte-identical to main, 143 unique primary proof IDs,
+2,388 existing local registry link targets with none missing, and the successful
+read-only installed-allocation check (192 allocations and 16 merged aliases).
+There is no outside-topic diff against fresh main and no allocation write.
