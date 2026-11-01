@@ -1,5 +1,7 @@
 # PD-T?lattice-c1-codex-01 — Complete six-node quadratic criterion with a mixed-axis residual
 
+Final ID: **PD-T084** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T. Aliases: rowwise two-root sums; adjacent-mod4 n2 criterion.
 Split from: none. Split into: pure-axis-product failure PD-N?lattice-c1-codex-01 is a separate negative statement.
 

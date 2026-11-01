@@ -1,0 +1,1944 @@
+{
+  "source": "37820a528c863e5cfe2dc2f1f8879b4fd40cf210",
+  "baseline": "f4e213390f66a8c9f0c6bd65131b97b78db873c8",
+  "repair": "6a42b7f38163770f57a0e298a67e04dd42ab4525",
+  "scope": "Administrative impact only; accepted mathematics not reopened",
+  "protected_count": 197,
+  "protected_changed": [],
+  "canonical_paths_checked": 33,
+  "canonical_changed": [],
+  "changed_paths": [
+    "ID_CROSSWALK.md",
+    "PROOF_STATUS.md",
+    "literature/CORPUS.md",
+    "literature/INDEX.md",
+    "state/CURRENT.md",
+    "state/IDEAS.md",
+    "topics/padua-batch-20261031/ALLOCATIONS.md",
+    "topics/programme-ideas-20261031/LOG.md",
+    "topics/programme-ideas-20261031/audit-04.md",
+    "topics/programme-ideas-20261031/pr-prep.md",
+    "topics/programme-ideas-20261031/pr-prep/allocate.py",
+    "tracks/lattice-unisolvence/README.md"
+  ],
+  "unexpected_changed_paths": [],
+  "fixed_allocation_and_literature_input_changes": [],
+  "stale_current_campaign_audit_metadata": {
+    "PROOF_STATUS.md": [],
+    "ID_CROSSWALK.md": [],
+    "state/IDEAS.md": []
+  },
+  "diff_check_exit": 0,
+  "diff_check_output": "",
+  "inputs": {
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:AGENTS.md": {
+      "bytes": 3159,
+      "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:AGENTS.md": {
+      "bytes": 3159,
+      "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:agents/WORKFLOW.md": {
+      "bytes": 19609,
+      "sha256": "64253ae526179be3ce8303987e3f38b9d7a43f825d1a6e310c99c022ba728554"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:agents/WORKFLOW.md": {
+      "bytes": 19609,
+      "sha256": "64253ae526179be3ce8303987e3f38b9d7a43f825d1a6e310c99c022ba728554"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:agents/claude/CLAUDE_ROLES.md": {
+      "bytes": 5578,
+      "sha256": "7d7fd30a5f6b0fa421e957e8b8959d1a7e0cf2f1c643d5e2488eb6d4e038232d"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:agents/claude/CLAUDE_ROLES.md": {
+      "bytes": 5578,
+      "sha256": "7d7fd30a5f6b0fa421e957e8b8959d1a7e0cf2f1c643d5e2488eb6d4e038232d"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:agents/codex/CODEX.md": {
+      "bytes": 4969,
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:agents/codex/CODEX.md": {
+      "bytes": 4969,
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-01.md": {
+      "bytes": 20419,
+      "sha256": "d577b69eec5d84626de84628bbfcb20f127d9daee4f29465f97d0ee442a7f35e"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-01.md": {
+      "bytes": 20419,
+      "sha256": "d577b69eec5d84626de84628bbfcb20f127d9daee4f29465f97d0ee442a7f35e"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-02-support/delivery-manifest.json": {
+      "bytes": 4762,
+      "sha256": "2a0cac6b5a2634686517844b3b50d01216870f037732ad6f04872ffa9fd191cc"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-02-support/delivery-manifest.json": {
+      "bytes": 4762,
+      "sha256": "2a0cac6b5a2634686517844b3b50d01216870f037732ad6f04872ffa9fd191cc"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-02-support/literature-check.json": {
+      "bytes": 76260,
+      "sha256": "20a651b7adfd26d8c7035e0fed76118286c459a5b3c0ce62b483cbfff78b8f02"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-02-support/literature-check.json": {
+      "bytes": 76260,
+      "sha256": "20a651b7adfd26d8c7035e0fed76118286c459a5b3c0ce62b483cbfff78b8f02"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-02-support/literature-check.py": {
+      "bytes": 4305,
+      "sha256": "4adb39edf06f03e3379e4587abef9b9494da6087e28f00208dc3787e5845ca4a"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-02-support/literature-check.py": {
+      "bytes": 4305,
+      "sha256": "4adb39edf06f03e3379e4587abef9b9494da6087e28f00208dc3787e5845ca4a"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-02-support/literature-review.md": {
+      "bytes": 8939,
+      "sha256": "8ff2d4afe8b66902925fcb636cda3ae898ed40a472477868be3f65ef41a04d99"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-02-support/literature-review.md": {
+      "bytes": 8939,
+      "sha256": "8ff2d4afe8b66902925fcb636cda3ae898ed40a472477868be3f65ef41a04d99"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-02-support/obstructions-check.json": {
+      "bytes": 39115,
+      "sha256": "938ad64d70fdccf70ea06bddc1bfffa14e1457f817518102e4b76fac03ae65ed"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-02-support/obstructions-check.json": {
+      "bytes": 39115,
+      "sha256": "938ad64d70fdccf70ea06bddc1bfffa14e1457f817518102e4b76fac03ae65ed"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-02-support/obstructions-check.py": {
+      "bytes": 6138,
+      "sha256": "25b19d22fb6df15e5aed5f551c0cf751a92bd0917512a4655cd8bcb9bb641bda"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-02-support/obstructions-check.py": {
+      "bytes": 6138,
+      "sha256": "25b19d22fb6df15e5aed5f551c0cf751a92bd0917512a4655cd8bcb9bb641bda"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-02-support/obstructions-report.md": {
+      "bytes": 10632,
+      "sha256": "ace40021e5915e0c390add3cf0427cbc2ed5817a68dbe50609e69dff567918d7"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-02-support/obstructions-report.md": {
+      "bytes": 10632,
+      "sha256": "ace40021e5915e0c390add3cf0427cbc2ed5817a68dbe50609e69dff567918d7"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-02-support/proposal-edge-independent.json": {
+      "bytes": 549,
+      "sha256": "738adeb12658fd9be567234da267e7a830f7dde8774cbe69694604971d6db79e"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-02-support/proposal-edge-independent.json": {
+      "bytes": 549,
+      "sha256": "738adeb12658fd9be567234da267e7a830f7dde8774cbe69694604971d6db79e"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-02-support/proposal-edge-independent.py": {
+      "bytes": 1883,
+      "sha256": "26df387fd5b882d2c5bd458729a27886c2c9e3bbadf975889facf110cbfbb5ab"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-02-support/proposal-edge-independent.py": {
+      "bytes": 1883,
+      "sha256": "26df387fd5b882d2c5bd458729a27886c2c9e3bbadf975889facf110cbfbb5ab"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-02-support/proposal-edge-independent.txt": {
+      "bytes": 549,
+      "sha256": "738adeb12658fd9be567234da267e7a830f7dde8774cbe69694604971d6db79e"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-02-support/proposal-edge-independent.txt": {
+      "bytes": 549,
+      "sha256": "738adeb12658fd9be567234da267e7a830f7dde8774cbe69694604971d6db79e"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-02-support/proposal-edge-rerun.txt": {
+      "bytes": 92,
+      "sha256": "edcf466f534d6d568d22e1e9b78effa74f238b0963da23a2e7a93b367f2370ff"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-02-support/proposal-edge-rerun.txt": {
+      "bytes": 92,
+      "sha256": "edcf466f534d6d568d22e1e9b78effa74f238b0963da23a2e7a93b367f2370ff"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-02-support/proposal-identity.json": {
+      "bytes": 3710,
+      "sha256": "afff25578cae63fa049322d732bc485de5d80368e49a19c681447421d7a0edb3"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-02-support/proposal-identity.json": {
+      "bytes": 3710,
+      "sha256": "afff25578cae63fa049322d732bc485de5d80368e49a19c681447421d7a0edb3"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-02-support/proposal-manifest.json": {
+      "bytes": 4148,
+      "sha256": "afa035016c9346d9536fc44a2499761c0e63d16ccea3d4a2e8c3bbb7ac1a0f55"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-02-support/proposal-manifest.json": {
+      "bytes": 4148,
+      "sha256": "afa035016c9346d9536fc44a2499761c0e63d16ccea3d4a2e8c3bbb7ac1a0f55"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-02-support/proposal-review.md": {
+      "bytes": 7269,
+      "sha256": "bf0db47f0236420a6d60aa6142c0e70f252b58a82fc5ae19e297c32d4f539268"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-02-support/proposal-review.md": {
+      "bytes": 7269,
+      "sha256": "bf0db47f0236420a6d60aa6142c0e70f252b58a82fc5ae19e297c32d4f539268"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-02-support/protocol-check.json": {
+      "bytes": 20844,
+      "sha256": "95a626ca078e92ee5c1d6b2ced75daa242d886086ed3347b9cad52e253fbbe29"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-02-support/protocol-check.json": {
+      "bytes": 20844,
+      "sha256": "95a626ca078e92ee5c1d6b2ced75daa242d886086ed3347b9cad52e253fbbe29"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-02-support/protocol-check.py": {
+      "bytes": 4656,
+      "sha256": "a0c42844cc27511c59c2adb2cca8053ad834ea1113826abc439085b0617a252c"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-02-support/protocol-check.py": {
+      "bytes": 4656,
+      "sha256": "a0c42844cc27511c59c2adb2cca8053ad834ea1113826abc439085b0617a252c"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-02-support/rejections-developer-parity-replay.json": {
+      "bytes": 631,
+      "sha256": "1c41cc733035b5470f6ea62912c6849657b732c125c1e8fbcac95cefae589894"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-02-support/rejections-developer-parity-replay.json": {
+      "bytes": 631,
+      "sha256": "1c41cc733035b5470f6ea62912c6849657b732c125c1e8fbcac95cefae589894"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-02-support/rejections-exact-check.json": {
+      "bytes": 1648,
+      "sha256": "a32b1d7f2072dacb0145c429816dfe5349400e26d46050494451390f5ed13982"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-02-support/rejections-exact-check.json": {
+      "bytes": 1648,
+      "sha256": "a32b1d7f2072dacb0145c429816dfe5349400e26d46050494451390f5ed13982"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-02-support/rejections-exact-check.py": {
+      "bytes": 2959,
+      "sha256": "85f562e9aa40db22b455eddd7a27e56223371923d1a85c33198d4490f04a9a0d"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-02-support/rejections-exact-check.py": {
+      "bytes": 2959,
+      "sha256": "85f562e9aa40db22b455eddd7a27e56223371923d1a85c33198d4490f04a9a0d"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-02-support/rejections-manifest.json": {
+      "bytes": 5591,
+      "sha256": "ff074ee7f689546d84172b2eccbdeeb73677a95cb9951d88516fad0f2fbf17e1"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-02-support/rejections-manifest.json": {
+      "bytes": 5591,
+      "sha256": "ff074ee7f689546d84172b2eccbdeeb73677a95cb9951d88516fad0f2fbf17e1"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-02-support/rejections-review.md": {
+      "bytes": 8400,
+      "sha256": "f4545e7e8f566585c567c727ba1f9b67387aa3b37da81daf7a54f0e918d35977"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-02-support/rejections-review.md": {
+      "bytes": 8400,
+      "sha256": "f4545e7e8f566585c567c727ba1f9b67387aa3b37da81daf7a54f0e918d35977"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-02.md": {
+      "bytes": 18821,
+      "sha256": "bde7f59ec66d1467541835b7a08d869ecd720ffa81a2e5a99e7f6ba258ffd60d"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-02.md": {
+      "bytes": 18821,
+      "sha256": "bde7f59ec66d1467541835b7a08d869ecd720ffa81a2e5a99e7f6ba258ffd60d"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-03-support/check-response-02.json": {
+      "bytes": 7724,
+      "sha256": "cecd9420e3d33c6489a7e4be68b00b819fe5b0b5f0d746e556c976eeb3a5e8bf"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-03-support/check-response-02.json": {
+      "bytes": 7724,
+      "sha256": "cecd9420e3d33c6489a7e4be68b00b819fe5b0b5f0d746e556c976eeb3a5e8bf"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-03-support/check-response-02.py": {
+      "bytes": 3839,
+      "sha256": "05f7b7852ff802c30b48abde9a9b658a4a65dc56815b838f582c7bbde6f55913"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-03-support/check-response-02.py": {
+      "bytes": 3839,
+      "sha256": "05f7b7852ff802c30b48abde9a9b658a4a65dc56815b838f582c7bbde6f55913"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-03-support/delivery-manifest.json": {
+      "bytes": 1173,
+      "sha256": "0d0cc63924d12bf2c4efeafa63b7220b75a786eab32c5b57667815d090fd8f8a"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-03-support/delivery-manifest.json": {
+      "bytes": 1173,
+      "sha256": "0d0cc63924d12bf2c4efeafa63b7220b75a786eab32c5b57667815d090fd8f8a"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-03-support/targets-review.md": {
+      "bytes": 9397,
+      "sha256": "032fefa89bab04dc6c4f75e5f3e90a6d0c6282d14a48690df12104151ac2a7ec"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-03-support/targets-review.md": {
+      "bytes": 9397,
+      "sha256": "032fefa89bab04dc6c4f75e5f3e90a6d0c6282d14a48690df12104151ac2a7ec"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-03.md": {
+      "bytes": 10566,
+      "sha256": "6bcca66674feca82e7c5e35d35c02b6fb0fc75b495d3bf4e031e193bfa811d8a"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-03.md": {
+      "bytes": 10566,
+      "sha256": "6bcca66674feca82e7c5e35d35c02b6fb0fc75b495d3bf4e031e193bfa811d8a"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/delivery-manifest.json": {
+      "bytes": 6517,
+      "sha256": "6ad8366f25e7d4813a7af71dd03327986fb827fc77c52dfe328c1918bd8c642d"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/delivery-manifest.json": {
+      "bytes": 6517,
+      "sha256": "6ad8366f25e7d4813a7af71dd03327986fb827fc77c52dfe328c1918bd8c642d"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/literature-check.json": {
+      "bytes": 10597,
+      "sha256": "72c075e607d8f7720409539d8fba3700e93a90f2cba446cde9fac10b4d483ed4"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/literature-check.json": {
+      "bytes": 10597,
+      "sha256": "72c075e607d8f7720409539d8fba3700e93a90f2cba446cde9fac10b4d483ed4"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/literature-check.py": {
+      "bytes": 3805,
+      "sha256": "6a8b065f5a89d6e787f32cdde6d0f372440440f9f46ba357b34c30f26c2997eb"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/literature-check.py": {
+      "bytes": 3805,
+      "sha256": "6a8b065f5a89d6e787f32cdde6d0f372440440f9f46ba357b34c30f26c2997eb"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/literature-review.md": {
+      "bytes": 8873,
+      "sha256": "1b749835a9eefa43dac29dd2100ff53b1c225f3733e6a1eb6ad61611a95b0bef"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/literature-review.md": {
+      "bytes": 8873,
+      "sha256": "1b749835a9eefa43dac29dd2100ff53b1c225f3733e6a1eb6ad61611a95b0bef"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/obstructions-check.json": {
+      "bytes": 15934,
+      "sha256": "9d17ead9628a4892a782c070ff70457b1aaf3fa49c0d9e363c92ee67e31a4ac0"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/obstructions-check.json": {
+      "bytes": 15934,
+      "sha256": "9d17ead9628a4892a782c070ff70457b1aaf3fa49c0d9e363c92ee67e31a4ac0"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/obstructions-check.py": {
+      "bytes": 5246,
+      "sha256": "e6ba7ff620a5dab581079670721927c93918b436767e955ec73035df12846684"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/obstructions-check.py": {
+      "bytes": 5246,
+      "sha256": "e6ba7ff620a5dab581079670721927c93918b436767e955ec73035df12846684"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/obstructions-report.md": {
+      "bytes": 12512,
+      "sha256": "bf94391e3272d14dfc365f1610af9f5c8c917314cee65f9372ab37a9981e7310"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/obstructions-report.md": {
+      "bytes": 12512,
+      "sha256": "bf94391e3272d14dfc365f1610af9f5c8c917314cee65f9372ab37a9981e7310"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/proposal-degenerate-counterexample.json": {
+      "bytes": 254,
+      "sha256": "7e8a1bcd68fa10385ea5cace9a6313506e5fd0485a638a21b8d33d7b5bc59827"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/proposal-degenerate-counterexample.json": {
+      "bytes": 254,
+      "sha256": "7e8a1bcd68fa10385ea5cace9a6313506e5fd0485a638a21b8d33d7b5bc59827"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/proposal-degenerate-counterexample.py": {
+      "bytes": 1204,
+      "sha256": "7aaf01780b6963cb7f0671ebf735065e81ce7dd925145ab60cae7fe57c8eafb7"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/proposal-degenerate-counterexample.py": {
+      "bytes": 1204,
+      "sha256": "7aaf01780b6963cb7f0671ebf735065e81ce7dd925145ab60cae7fe57c8eafb7"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/proposal-degenerate-counterexample.txt": {
+      "bytes": 235,
+      "sha256": "c97b778afd604dcfa9c36b5fef3d2468ff565595380fdc70e51c8cad71221603"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/proposal-degenerate-counterexample.txt": {
+      "bytes": 235,
+      "sha256": "c97b778afd604dcfa9c36b5fef3d2468ff565595380fdc70e51c8cad71221603"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/proposal-fit.json": {
+      "bytes": 5415,
+      "sha256": "3360ade2daa323c7261463104e4e4bb80f8c810b32c2e51feefacb44d20e34bc"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/proposal-fit.json": {
+      "bytes": 5415,
+      "sha256": "3360ade2daa323c7261463104e4e4bb80f8c810b32c2e51feefacb44d20e34bc"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/proposal-fit.py": {
+      "bytes": 1659,
+      "sha256": "b1e1c11b56fd36ccc570b4cc7a8b4be1a4237fe868b4d157e8194356ccd6b3a5"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/proposal-fit.py": {
+      "bytes": 1659,
+      "sha256": "b1e1c11b56fd36ccc570b4cc7a8b4be1a4237fe868b4d157e8194356ccd6b3a5"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/proposal-fit.txt": {
+      "bytes": 280,
+      "sha256": "c28726c220dd8fbde4c54fd5d66ec97e35c77f592d90f70c69bfb83018dc8153"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/proposal-fit.txt": {
+      "bytes": 280,
+      "sha256": "c28726c220dd8fbde4c54fd5d66ec97e35c77f592d90f70c69bfb83018dc8153"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/proposal-independent.json": {
+      "bytes": 4038,
+      "sha256": "c0ca5182da1a231f009348888d44654acc08c5293d261521bf9e4fbee846fcec"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/proposal-independent.json": {
+      "bytes": 4038,
+      "sha256": "c0ca5182da1a231f009348888d44654acc08c5293d261521bf9e4fbee846fcec"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/proposal-independent.py": {
+      "bytes": 2303,
+      "sha256": "f5e841726c732595ad33474da8f85f0f9aec2ad104361c388a87177bd5f3658a"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/proposal-independent.py": {
+      "bytes": 2303,
+      "sha256": "f5e841726c732595ad33474da8f85f0f9aec2ad104361c388a87177bd5f3658a"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/proposal-independent.txt": {
+      "bytes": 2588,
+      "sha256": "7bab37be91d9458a9d3fcfae11c54cdc760801bc9aaba80c41017aa169071663"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/proposal-independent.txt": {
+      "bytes": 2588,
+      "sha256": "7bab37be91d9458a9d3fcfae11c54cdc760801bc9aaba80c41017aa169071663"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/proposal-manifest.json": {
+      "bytes": 8702,
+      "sha256": "0e40ea919d9964c98930b4769e6c1e53c555c8ad379367fcc2993a158b4b6814"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/proposal-manifest.json": {
+      "bytes": 8702,
+      "sha256": "0e40ea919d9964c98930b4769e6c1e53c555c8ad379367fcc2993a158b4b6814"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/proposal-rerun.json": {
+      "bytes": 60960,
+      "sha256": "66d06e5a5669fa71cc74deddaf4bb0c5c15c12c5d796e9c8271db16ac91613eb"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/proposal-rerun.json": {
+      "bytes": 60960,
+      "sha256": "66d06e5a5669fa71cc74deddaf4bb0c5c15c12c5d796e9c8271db16ac91613eb"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/proposal-rerun.py": {
+      "bytes": 778,
+      "sha256": "9c32ab6d530ad4b4bc097a6dd300ce7361ba7eaca43ab489e5556e388e35cb70"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/proposal-rerun.py": {
+      "bytes": 778,
+      "sha256": "9c32ab6d530ad4b4bc097a6dd300ce7361ba7eaca43ab489e5556e388e35cb70"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/proposal-rerun.txt": {
+      "bytes": 1659,
+      "sha256": "58a82d314ffd24471ca1210553d2c8e3277cda099f2809c3e1b4da50f6785564"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/proposal-rerun.txt": {
+      "bytes": 1659,
+      "sha256": "58a82d314ffd24471ca1210553d2c8e3277cda099f2809c3e1b4da50f6785564"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/proposal-review.md": {
+      "bytes": 8940,
+      "sha256": "fa041d6751a277971f3b585dbef2282824c05072ef04b25be5f0736c6c256aae"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/proposal-review.md": {
+      "bytes": 8940,
+      "sha256": "fa041d6751a277971f3b585dbef2282824c05072ef04b25be5f0736c6c256aae"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/protocol-check.json": {
+      "bytes": 47051,
+      "sha256": "63074776a1b26cf60aae0a55214b1e8fc12ac5b82c890b2d1a80f0c0b58c17c2"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/protocol-check.json": {
+      "bytes": 47051,
+      "sha256": "63074776a1b26cf60aae0a55214b1e8fc12ac5b82c890b2d1a80f0c0b58c17c2"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/protocol-check.py": {
+      "bytes": 5087,
+      "sha256": "b85311ffc0b4e4cead79fca3ff019e22c72b9f1b1784fe0a57ac7b0b2149c9d3"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/protocol-check.py": {
+      "bytes": 5087,
+      "sha256": "b85311ffc0b4e4cead79fca3ff019e22c72b9f1b1784fe0a57ac7b0b2149c9d3"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/rejections-ah-replay.txt": {
+      "bytes": 4575,
+      "sha256": "4e9283e8fd4a767a92a7da4191ee898a6ac5b61a678f8cb3e6cd0a63fcdd60ca"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/rejections-ah-replay.txt": {
+      "bytes": 4575,
+      "sha256": "4e9283e8fd4a767a92a7da4191ee898a6ac5b61a678f8cb3e6cd0a63fcdd60ca"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/rejections-check.json": {
+      "bytes": 2338,
+      "sha256": "1b567a455dfd9396f65f114a292babc78f16fa7cbfc014ca0b4d9d96e0e8478c"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/rejections-check.json": {
+      "bytes": 2338,
+      "sha256": "1b567a455dfd9396f65f114a292babc78f16fa7cbfc014ca0b4d9d96e0e8478c"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/rejections-check.py": {
+      "bytes": 3581,
+      "sha256": "25b5c597d1253ea4bc71c75ee58357834546a64b902d086d507b4427f2f5095f"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/rejections-check.py": {
+      "bytes": 3581,
+      "sha256": "25b5c597d1253ea4bc71c75ee58357834546a64b902d086d507b4427f2f5095f"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/rejections-manifest.json": {
+      "bytes": 5811,
+      "sha256": "bcbfccb01c7cfd660d9a85356883441ce025653895847ebc99a7e07133d0d0f7"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/rejections-manifest.json": {
+      "bytes": 5811,
+      "sha256": "bcbfccb01c7cfd660d9a85356883441ce025653895847ebc99a7e07133d0d0f7"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/rejections-pg-replay.txt": {
+      "bytes": 4315,
+      "sha256": "64176da6912b426c9924317b706e10d9a2436c6618fe6043d058db7b4c890b68"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/rejections-pg-replay.txt": {
+      "bytes": 4315,
+      "sha256": "64176da6912b426c9924317b706e10d9a2436c6618fe6043d058db7b4c890b68"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/rejections-review.md": {
+      "bytes": 9349,
+      "sha256": "6a020aa5fa651a0c4dcaf9605c5fd7f97d0eb6e7a5bef0f0fbb817387ca2d370"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/rejections-review.md": {
+      "bytes": 9349,
+      "sha256": "6a020aa5fa651a0c4dcaf9605c5fd7f97d0eb6e7a5bef0f0fbb817387ca2d370"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/audit-support/source-manifest.json": {
+      "bytes": 45906,
+      "sha256": "fcb6cdd505ac1db97491c97785cc1baf80fb98a7cefc96682e4126e3573560c9"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/audit-support/source-manifest.json": {
+      "bytes": 45906,
+      "sha256": "fcb6cdd505ac1db97491c97785cc1baf80fb98a7cefc96682e4126e3573560c9"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/M1/m1_moller_extension.log": {
+      "bytes": 3338,
+      "sha256": "73fc765b411d60a1abc4a065d81fe818057e1cd9fb82f91ac37c91379189eed5"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/M1/m1_moller_extension.log": {
+      "bytes": 3338,
+      "sha256": "73fc765b411d60a1abc4a065d81fe818057e1cd9fb82f91ac37c91379189eed5"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/M1/m1_moller_extension.py": {
+      "bytes": 8358,
+      "sha256": "c230a1f330cd548b819a434ae8b1f14b4504186b89111bffe7547f2a90b27300"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/M1/m1_moller_extension.py": {
+      "bytes": 8358,
+      "sha256": "c230a1f330cd548b819a434ae8b1f14b4504186b89111bffe7547f2a90b27300"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/M1/m1_word_rule.log": {
+      "bytes": 6396,
+      "sha256": "f86de302ce84b5d2bcaad62128fbcbf2d7e7855f239acea7514f707f02d39c3a"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/M1/m1_word_rule.log": {
+      "bytes": 6396,
+      "sha256": "f86de302ce84b5d2bcaad62128fbcbf2d7e7855f239acea7514f707f02d39c3a"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/M1/m1_word_rule.py": {
+      "bytes": 11574,
+      "sha256": "0b84f6268e01a53f53f4626f935449a2fcc54c16deaf93cef97f979bb81f1cf1"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/M1/m1_word_rule.py": {
+      "bytes": 11574,
+      "sha256": "0b84f6268e01a53f53f4626f935449a2fcc54c16deaf93cef97f979bb81f1cf1"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/M2/m2_chart_tests.py": {
+      "bytes": 7217,
+      "sha256": "93df2863363ff922572f4bfb85ec77fd9705ce1287d2b716074e5207886d801a"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/M2/m2_chart_tests.py": {
+      "bytes": 7217,
+      "sha256": "93df2863363ff922572f4bfb85ec77fd9705ce1287d2b716074e5207886d801a"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/M2/m2_common.py": {
+      "bytes": 4277,
+      "sha256": "8b2591383912f086652c6b2524f824d41cda4d7fe387120ddec1953c95f91a65"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/M2/m2_common.py": {
+      "bytes": 4277,
+      "sha256": "8b2591383912f086652c6b2524f824d41cda4d7fe387120ddec1953c95f91a65"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/M2/m2_favard_commutant.py": {
+      "bytes": 4335,
+      "sha256": "2d262a4ffbf7469cf16318169dcdeb0517f948400185bba43d271673a4ddbf43"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/M2/m2_favard_commutant.py": {
+      "bytes": 4335,
+      "sha256": "2d262a4ffbf7469cf16318169dcdeb0517f948400185bba43d271673a4ddbf43"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/M2/m2_pencil_conditioning.py": {
+      "bytes": 11819,
+      "sha256": "c8a412355a724514bcbce6352925ad7298d7a0d063d735f13bcc4cd9918489cc"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/M2/m2_pencil_conditioning.py": {
+      "bytes": 11819,
+      "sha256": "c8a412355a724514bcbce6352925ad7298d7a0d063d735f13bcc4cd9918489cc"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/M2/m2_rim_chart_check.py": {
+      "bytes": 2724,
+      "sha256": "f4250ced1c8aad5ad4c1348e2856af53efe44f4ddc33e338aed51a4f70aad6fa"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/M2/m2_rim_chart_check.py": {
+      "bytes": 2724,
+      "sha256": "f4250ced1c8aad5ad4c1348e2856af53efe44f4ddc33e338aed51a4f70aad6fa"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen1-2/ah_breakdown_exact.out": {
+      "bytes": 4575,
+      "sha256": "4e9283e8fd4a767a92a7da4191ee898a6ac5b61a678f8cb3e6cd0a63fcdd60ca"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen1-2/ah_breakdown_exact.out": {
+      "bytes": 4575,
+      "sha256": "4e9283e8fd4a767a92a7da4191ee898a6ac5b61a678f8cb3e6cd0a63fcdd60ca"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen1-2/ah_breakdown_exact.py": {
+      "bytes": 5219,
+      "sha256": "07e2e1b94a9d5de700396af0f7b20cdc285c05eaaa30a61e7758024e263a7ecc"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen1-2/ah_breakdown_exact.py": {
+      "bytes": 5219,
+      "sha256": "07e2e1b94a9d5de700396af0f7b20cdc285c05eaaa30a61e7758024e263a7ecc"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen1-2/qs_rank.out": {
+      "bytes": 1128,
+      "sha256": "47cbf5523a7c8db7cf489d5bd725707da832666b1517fdbf99a07122bb6f72f7"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen1-2/qs_rank.out": {
+      "bytes": 1128,
+      "sha256": "47cbf5523a7c8db7cf489d5bd725707da832666b1517fdbf99a07122bb6f72f7"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen1-2/qs_rank.py": {
+      "bytes": 1287,
+      "sha256": "1b9fbae76a5e80d51c1220a5fe9986aba27c5781060ee4441a00bccc0c54ad18"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen1-2/qs_rank.py": {
+      "bytes": 1287,
+      "sha256": "1b9fbae76a5e80d51c1220a5fe9986aba27c5781060ee4441a00bccc0c54ad18"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen1-2/sobolev_adv.out": {
+      "bytes": 4359,
+      "sha256": "fcfb5b3634d6747fa30b5d50fc71ef1aad83018d88dc79bd468b0f3fa5a454bf"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen1-2/sobolev_adv.out": {
+      "bytes": 4359,
+      "sha256": "fcfb5b3634d6747fa30b5d50fc71ef1aad83018d88dc79bd468b0f3fa5a454bf"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen1-2/sobolev_adv.py": {
+      "bytes": 9871,
+      "sha256": "2a8f955e252e741d8bbece63bce65b0fda1aefb13aae86087ae68128694950c0"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen1-2/sobolev_adv.py": {
+      "bytes": 9871,
+      "sha256": "2a8f955e252e741d8bbece63bce65b0fda1aefb13aae86087ae68128694950c0"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen1-3/approx_baseline.py": {
+      "bytes": 8310,
+      "sha256": "f25649537b6d1c7ae5df758366a0195a12bdb8c9ebc8ce63baa4d818fb09ff77"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen1-3/approx_baseline.py": {
+      "bytes": 8310,
+      "sha256": "f25649537b6d1c7ae5df758366a0195a12bdb8c9ebc8ce63baa4d818fb09ff77"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen1-3/approx_baseline2.py": {
+      "bytes": 8075,
+      "sha256": "7cdf66fe0ded82aa55660bcc104b0021d58524d1b4c9c64fd4e63085f4a59cc9"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen1-3/approx_baseline2.py": {
+      "bytes": 8075,
+      "sha256": "7cdf66fe0ded82aa55660bcc104b0021d58524d1b4c9c64fd4e63085f4a59cc9"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen1-3/window_complex.py": {
+      "bytes": 3674,
+      "sha256": "7fef756ca25e9a762b912929756668ab0eb5944d2d9f24a5487bac0a888f6619"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen1-3/window_complex.py": {
+      "bytes": 3674,
+      "sha256": "7fef756ca25e9a762b912929756668ab0eb5944d2d9f24a5487bac0a888f6619"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen1-3/window_test.py": {
+      "bytes": 9507,
+      "sha256": "9f3d0a48d120647add35fa85eb4d6abf2f7b7f9128dad5962a2233679e351bf8"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen1-3/window_test.py": {
+      "bytes": 9507,
+      "sha256": "9f3d0a48d120647add35fa85eb4d6abf2f7b7f9128dad5962a2233679e351bf8"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen2-3/pairs.py": {
+      "bytes": 4824,
+      "sha256": "9067edf38f5c7a7565fb99245caa25453bf936ba3a0fe1342377a535b606a015"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen2-3/pairs.py": {
+      "bytes": 4824,
+      "sha256": "9067edf38f5c7a7565fb99245caa25453bf936ba3a0fe1342377a535b606a015"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen2-3/t1_replicate_n8.py": {
+      "bytes": 2618,
+      "sha256": "b447f8945a2c5d45c432558d777576a60af00a8f9d5235445934ef5cf5f4ec38"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen2-3/t1_replicate_n8.py": {
+      "bytes": 2618,
+      "sha256": "b447f8945a2c5d45c432558d777576a60af00a8f9d5235445934ef5cf5f4ec38"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen2-3/t2_ldl_N231.py": {
+      "bytes": 4421,
+      "sha256": "6b725b3968ba2e06b9a4cd973f68568b7e363f79ae0aee1b941decb59756e6bc"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen2-3/t2_ldl_N231.py": {
+      "bytes": 4421,
+      "sha256": "6b725b3968ba2e06b9a4cd973f68568b7e363f79ae0aee1b941decb59756e6bc"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen2-3/t3_delta_exponent.py": {
+      "bytes": 9144,
+      "sha256": "a9a804a7ceae44e630d11df40e590d739807a20d056f7cf6d6ce839cc55f0b0a"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen2-3/t3_delta_exponent.py": {
+      "bytes": 9144,
+      "sha256": "a9a804a7ceae44e630d11df40e590d739807a20d056f7cf6d6ce839cc55f0b0a"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen2-3/t3b_diagnose.py": {
+      "bytes": 7418,
+      "sha256": "afaf1229469acc31a2dd1e231df07591bfe684e70db16949cc6fec9eebc76138"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen2-3/t3b_diagnose.py": {
+      "bytes": 7418,
+      "sha256": "afaf1229469acc31a2dd1e231df07591bfe684e70db16949cc6fec9eebc76138"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen2-3/t4_univariate_route.py": {
+      "bytes": 3166,
+      "sha256": "ffbc3b91f8758418777d1abfc9a6dba44f57ea90c13dc28f5f169815a2b71104"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen2-3/t4_univariate_route.py": {
+      "bytes": 3166,
+      "sha256": "ffbc3b91f8758418777d1abfc9a6dba44f57ea90c13dc28f5f169815a2b71104"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen2-3/t5_relative_padua.py": {
+      "bytes": 5070,
+      "sha256": "815de0fc0cf8088529c45cabecef643fdfd48aa0b912b9e6495d85f38c476173"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen2-3/t5_relative_padua.py": {
+      "bytes": 5070,
+      "sha256": "815de0fc0cf8088529c45cabecef643fdfd48aa0b912b9e6495d85f38c476173"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen3-1/commutator_out.txt": {
+      "bytes": 10701,
+      "sha256": "e3f317f6fe6189c72efa11308244211d6337afb66e0f2a025aad194e08ebff26"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen3-1/commutator_out.txt": {
+      "bytes": 10701,
+      "sha256": "e3f317f6fe6189c72efa11308244211d6337afb66e0f2a025aad194e08ebff26"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen3-1/commutator_sections.py": {
+      "bytes": 4796,
+      "sha256": "7c1cfda5c61b9ad2736d6261aa01b6135287dce296945fe4b3bb0bc765ccb220"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen3-1/commutator_sections.py": {
+      "bytes": 4796,
+      "sha256": "7c1cfda5c61b9ad2736d6261aa01b6135287dce296945fe4b3bb0bc765ccb220"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen3-1/curve_kappa_adv.py": {
+      "bytes": 10045,
+      "sha256": "ae95a5a429504291f7e1fec9b10ef087a8f780ce5274156a65b3555a578bcecf"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen3-1/curve_kappa_adv.py": {
+      "bytes": 10045,
+      "sha256": "ae95a5a429504291f7e1fec9b10ef087a8f780ce5274156a65b3555a578bcecf"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen3-1/kappa_extremes.py": {
+      "bytes": 2314,
+      "sha256": "d83f1c5745a193e6b409a025ce460805159f3d7dccce80963d3c34433e8ffd29"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen3-1/kappa_extremes.py": {
+      "bytes": 2314,
+      "sha256": "d83f1c5745a193e6b409a025ce460805159f3d7dccce80963d3c34433e8ffd29"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen3-1/kappa_extremes_out.txt": {
+      "bytes": 3003,
+      "sha256": "9d6af8eb0559147a4eb46e674d413ea079d75fe31f83a3938afabed1ac39a4a6"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen3-1/kappa_extremes_out.txt": {
+      "bytes": 3003,
+      "sha256": "9d6af8eb0559147a4eb46e674d413ea079d75fe31f83a3938afabed1ac39a4a6"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen3-1/kappa_out.txt": {
+      "bytes": 19235,
+      "sha256": "7a79244ede202917ba9ed6d230c69bc43cfbc802309d117c7ea4cf422fffe287"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen3-1/kappa_out.txt": {
+      "bytes": 19235,
+      "sha256": "7a79244ede202917ba9ed6d230c69bc43cfbc802309d117c7ea4cf422fffe287"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen3-3/bandwidth_pg_probe.out": {
+      "bytes": 4315,
+      "sha256": "da8d787b347800074d0a6db757f3098bf7ccfccb418f98e197e59f005022c3fb"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen3-3/bandwidth_pg_probe.out": {
+      "bytes": 4315,
+      "sha256": "da8d787b347800074d0a6db757f3098bf7ccfccb418f98e197e59f005022c3fb"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen3-3/bandwidth_pg_probe.py": {
+      "bytes": 19848,
+      "sha256": "17c778e9a866c3b44ff81a8d8cf784c35f3276c48a0b281d7d6e2c67ec0b11ee"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen3-3/bandwidth_pg_probe.py": {
+      "bytes": 19848,
+      "sha256": "17c778e9a866c3b44ff81a8d8cf784c35f3276c48a0b281d7d6e2c67ec0b11ee"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen4-1/adv_gen4_1_product_structure.out": {
+      "bytes": 6051,
+      "sha256": "87dc47eac8f85468589c3a23239187294a0af71949a0f299497f78fc141b7f8e"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen4-1/adv_gen4_1_product_structure.out": {
+      "bytes": 6051,
+      "sha256": "87dc47eac8f85468589c3a23239187294a0af71949a0f299497f78fc141b7f8e"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen4-1/adv_gen4_1_product_structure.py": {
+      "bytes": 11000,
+      "sha256": "9d7435ee50b9fca4a6141fe83abe38b299750be90d4baeec33648853a834f1fb"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen4-1/adv_gen4_1_product_structure.py": {
+      "bytes": 11000,
+      "sha256": "9d7435ee50b9fca4a6141fe83abe38b299750be90d4baeec33648853a834f1fb"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen4-1/adv_gen4_1_scope_extension.out": {
+      "bytes": 3363,
+      "sha256": "d12b86f372947511115d957d07eb079d9d9ef9cdb864e6b3f5ae83e1e8465075"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen4-1/adv_gen4_1_scope_extension.out": {
+      "bytes": 3363,
+      "sha256": "d12b86f372947511115d957d07eb079d9d9ef9cdb864e6b3f5ae83e1e8465075"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen4-1/adv_gen4_1_scope_extension.py": {
+      "bytes": 3376,
+      "sha256": "287d998bdcfa082d3eab8e4a6a4412ecf338117029cc79f1778f56ecb11d7cca"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen4-1/adv_gen4_1_scope_extension.py": {
+      "bytes": 3376,
+      "sha256": "287d998bdcfa082d3eab8e4a6a4412ecf338117029cc79f1778f56ecb11d7cca"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen4-1/rerun_gen4_saturation_n_le_8.out": {
+      "bytes": 6064,
+      "sha256": "a8942edca476f7b3c64e0aa52bf0a0c94c6f7c1c3453c3a3ec0df8736a965f59"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen4-1/rerun_gen4_saturation_n_le_8.out": {
+      "bytes": 6064,
+      "sha256": "a8942edca476f7b3c64e0aa52bf0a0c94c6f7c1c3453c3a3ec0df8736a965f59"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen4-1/rerun_gen4_saturation_n_le_8.py": {
+      "bytes": 2288,
+      "sha256": "977be09454682a16fd02b4783f290e246894819097c10bb48f0c25fe164b0746"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen4-1/rerun_gen4_saturation_n_le_8.py": {
+      "bytes": 2288,
+      "sha256": "977be09454682a16fd02b4783f290e246894819097c10bb48f0c25fe164b0746"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_corner_const.out": {
+      "bytes": 1390,
+      "sha256": "94b1f94f71f505a494df9633b0f456c6915902d1753dee7199da28f0bd3cdb37"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_corner_const.out": {
+      "bytes": 1390,
+      "sha256": "94b1f94f71f505a494df9633b0f456c6915902d1753dee7199da28f0bd3cdb37"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_corner_const.py": {
+      "bytes": 2638,
+      "sha256": "6beb523399846c5d9361882e11f8426aaaaa8ec10cbb1699ef232c12fb6cf0ea"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_corner_const.py": {
+      "bytes": 2638,
+      "sha256": "6beb523399846c5d9361882e11f8426aaaaa8ec10cbb1699ef232c12fb6cf0ea"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_corner_fit.out": {
+      "bytes": 1391,
+      "sha256": "9284946029f218fb94ebf61bcbfa2863dc4ed68982030aa50848bc7081d9d1c5"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_corner_fit.out": {
+      "bytes": 1391,
+      "sha256": "9284946029f218fb94ebf61bcbfa2863dc4ed68982030aa50848bc7081d9d1c5"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_corner_fit.py": {
+      "bytes": 3049,
+      "sha256": "38b54882f77d06e6fa3265a9b3326193e20957b0023fadf7b35c0d2382245c6d"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_corner_fit.py": {
+      "bytes": 3049,
+      "sha256": "38b54882f77d06e6fa3265a9b3326193e20957b0023fadf7b35c0d2382245c6d"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_corner_parity.out": {
+      "bytes": 1828,
+      "sha256": "2cc01cf191b6b7724f8d6969bb1c3f560edf87597de0d8530749dc87b365a3bf"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_corner_parity.out": {
+      "bytes": 1828,
+      "sha256": "2cc01cf191b6b7724f8d6969bb1c3f560edf87597de0d8530749dc87b365a3bf"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_corner_parity.py": {
+      "bytes": 2880,
+      "sha256": "2d0e98cd5ec3900bcf84423044ef433f87dacedcce8824f040ca0c10b95be0ad"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_corner_parity.py": {
+      "bytes": 2880,
+      "sha256": "2d0e98cd5ec3900bcf84423044ef433f87dacedcce8824f040ca0c10b95be0ad"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_maxima_count.out": {
+      "bytes": 5595,
+      "sha256": "ccce6d0704549549a929d4014ef5189a3ec0cfd9b7ce436e3d8359c41c33b14d"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_maxima_count.out": {
+      "bytes": 5595,
+      "sha256": "ccce6d0704549549a929d4014ef5189a3ec0cfd9b7ce436e3d8359c41c33b14d"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_maxima_count.py": {
+      "bytes": 7867,
+      "sha256": "02ee8d81241dd60f83c19e348635a8b4ddecdb09efae51c3f8b2886fb83d0cda"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_maxima_count.py": {
+      "bytes": 7867,
+      "sha256": "02ee8d81241dd60f83c19e348635a8b4ddecdb09efae51c3f8b2886fb83d0cda"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_maxima_count2.out": {
+      "bytes": 4343,
+      "sha256": "471d961cadbc15ec619fde42077449f1db4a4f129a5f27be80e4c2c152d57791"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_maxima_count2.out": {
+      "bytes": 4343,
+      "sha256": "471d961cadbc15ec619fde42077449f1db4a4f129a5f27be80e4c2c152d57791"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_maxima_count2.py": {
+      "bytes": 4558,
+      "sha256": "aec000754b8349e558b484d5a9455f88aa9f67e524e86ad254dd0f5cbb17defd"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_maxima_count2.py": {
+      "bytes": 4558,
+      "sha256": "aec000754b8349e558b484d5a9455f88aa9f67e524e86ad254dd0f5cbb17defd"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_rhombus_L1.out": {
+      "bytes": 845,
+      "sha256": "43ba2b973aec550a0cd1dc6ed100cfd8f22bed5fdbad08450512f6260e18c764"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_rhombus_L1.out": {
+      "bytes": 845,
+      "sha256": "43ba2b973aec550a0cd1dc6ed100cfd8f22bed5fdbad08450512f6260e18c764"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_rhombus_L1.py": {
+      "bytes": 3226,
+      "sha256": "39f8a69713ed2202a90562534a233e74d7c2cebdb8b8e1b3834ccec4132b4aa9"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_rhombus_L1.py": {
+      "bytes": 3226,
+      "sha256": "39f8a69713ed2202a90562534a233e74d7c2cebdb8b8e1b3834ccec4132b4aa9"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_rhombus_crosscheck.py": {
+      "bytes": 1176,
+      "sha256": "9c13ba130e1a83eb67e782b8133602c71291288e44642fad5173b1e4d30e8ba4"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_rhombus_crosscheck.py": {
+      "bytes": 1176,
+      "sha256": "9c13ba130e1a83eb67e782b8133602c71291288e44642fad5173b1e4d30e8ba4"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen1-3/T1_T3.out": {
+      "bytes": 29935,
+      "sha256": "853414ed9fb65eef13e7bb94948112db63571d452b037387f2db4f310a8184e0"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen1-3/T1_T3.out": {
+      "bytes": 29935,
+      "sha256": "853414ed9fb65eef13e7bb94948112db63571d452b037387f2db4f310a8184e0"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen1-3/T1b.out": {
+      "bytes": 4786,
+      "sha256": "8c77635738262d8946727d46e781223815ceb9f9c8c10cac02937e66528b7da3"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen1-3/T1b.out": {
+      "bytes": 4786,
+      "sha256": "8c77635738262d8946727d46e781223815ceb9f9c8c10cac02937e66528b7da3"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen1-3/T2.out": {
+      "bytes": 15041,
+      "sha256": "a60324a7d4f684bb777b2e37e9130986b2a0a9c63b58f2c268b7c33b56e555fe"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen1-3/T2.out": {
+      "bytes": 15041,
+      "sha256": "a60324a7d4f684bb777b2e37e9130986b2a0a9c63b58f2c268b7c33b56e555fe"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen1-3/T2c.out": {
+      "bytes": 7312,
+      "sha256": "67bf0363656ed7af8b6be82bbecc85b1e7c6c4994ef2430bca11792df8df9a78"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen1-3/T2c.out": {
+      "bytes": 7312,
+      "sha256": "67bf0363656ed7af8b6be82bbecc85b1e7c6c4994ef2430bca11792df8df9a78"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen1-3/orf2d.py": {
+      "bytes": 19958,
+      "sha256": "9e2197347a9125cc9f75178021c59d835bc3c85b7b63ef47d5e0213dc2287525"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen1-3/orf2d.py": {
+      "bytes": 19958,
+      "sha256": "9e2197347a9125cc9f75178021c59d835bc3c85b7b63ef47d5e0213dc2287525"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen1-3/run_T1_T3.py": {
+      "bytes": 7125,
+      "sha256": "561d16b96cbc69d7bd59cda7c44be6a09850e6839c06fdbbf718d410128d2439"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen1-3/run_T1_T3.py": {
+      "bytes": 7125,
+      "sha256": "561d16b96cbc69d7bd59cda7c44be6a09850e6839c06fdbbf718d410128d2439"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen1-3/run_T1b.py": {
+      "bytes": 5483,
+      "sha256": "b3b98ad02006dc8ad1ed6a267fe38bb49914b7cef529df52c38f0eb85f070c0b"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen1-3/run_T1b.py": {
+      "bytes": 5483,
+      "sha256": "b3b98ad02006dc8ad1ed6a267fe38bb49914b7cef529df52c38f0eb85f070c0b"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen1-3/run_T2.py": {
+      "bytes": 7379,
+      "sha256": "7127d077f6a3b7cb0b469bfe6dcc8d3c1e1c4f9cd19ff32efcc20a095dca1369"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen1-3/run_T2.py": {
+      "bytes": 7379,
+      "sha256": "7127d077f6a3b7cb0b469bfe6dcc8d3c1e1c4f9cd19ff32efcc20a095dca1369"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen1-3/run_T2c.py": {
+      "bytes": 4789,
+      "sha256": "4275b823cb294a5269ea7448bc4217d65b74db316e0cae9c2b0504ac2bc1bbee"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen1-3/run_T2c.py": {
+      "bytes": 4789,
+      "sha256": "4275b823cb294a5269ea7448bc4217d65b74db316e0cae9c2b0504ac2bc1bbee"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen1-3/window_exact.out": {
+      "bytes": 15138,
+      "sha256": "8354313abf496f9d62550daade12d5b148ff653b20ad1266c4e48d62cbc6a1e4"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen1-3/window_exact.out": {
+      "bytes": 15138,
+      "sha256": "8354313abf496f9d62550daade12d5b148ff653b20ad1266c4e48d62cbc6a1e4"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen1-3/window_exact.py": {
+      "bytes": 4546,
+      "sha256": "abf066a0fe35355703586ad02701e3f3cfd55690e16a1f3da5b6749d292524c0"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen1-3/window_exact.py": {
+      "bytes": 4546,
+      "sha256": "abf066a0fe35355703586ad02701e3f3cfd55690e16a1f3da5b6749d292524c0"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/leb_common.py": {
+      "bytes": 14491,
+      "sha256": "419970972ae69efcc5e4a1c965fbd49982b67100376d3ff0c46e8629dcb382d0"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/leb_common.py": {
+      "bytes": 14491,
+      "sha256": "419970972ae69efcc5e4a1c965fbd49982b67100376d3ff0c46e8629dcb382d0"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_argmax.json": {
+      "bytes": 13387,
+      "sha256": "00002366be4f5a47a9fbcfb2d4b61dd5080bb1e81774db8b6021477d539c7a8c"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_argmax.json": {
+      "bytes": 13387,
+      "sha256": "00002366be4f5a47a9fbcfb2d4b61dd5080bb1e81774db8b6021477d539c7a8c"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_argmax.out": {
+      "bytes": 8918,
+      "sha256": "9d500032d8d53583c4644fd2d554bf487c3fd5472bb21bd892ec4f70a9c6f548"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_argmax.out": {
+      "bytes": 8918,
+      "sha256": "9d500032d8d53583c4644fd2d554bf487c3fd5472bb21bd892ec4f70a9c6f548"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_argmax.py": {
+      "bytes": 7012,
+      "sha256": "02fa14792afa2c72032d4a91998d4da273d83200067437bd2573bb8430bae216"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_argmax.py": {
+      "bytes": 7012,
+      "sha256": "02fa14792afa2c72032d4a91998d4da273d83200067437bd2573bb8430bae216"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_tail.out": {
+      "bytes": 1463,
+      "sha256": "d863e8f2861503702831c4ab1eac0a629b4b4a39b05dc9cb9fdd204188d36492"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_tail.out": {
+      "bytes": 1463,
+      "sha256": "d863e8f2861503702831c4ab1eac0a629b4b4a39b05dc9cb9fdd204188d36492"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_tail.py": {
+      "bytes": 4088,
+      "sha256": "552fdb4233bf6ee9d3f4d893dcf38f34b04a759e924711f43927d9a5703769fe"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_tail.py": {
+      "bytes": 4088,
+      "sha256": "552fdb4233bf6ee9d3f4d893dcf38f34b04a759e924711f43927d9a5703769fe"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_halfshift.out": {
+      "bytes": 3534,
+      "sha256": "0f65bd19274fe11b84045061c30b0243eed5fd1b1402c5acd82612e83c99b186"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_halfshift.out": {
+      "bytes": 3534,
+      "sha256": "0f65bd19274fe11b84045061c30b0243eed5fd1b1402c5acd82612e83c99b186"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_halfshift.py": {
+      "bytes": 2837,
+      "sha256": "d4cdc2102f3f6885f86ec2a6e9a4ad64b81a36de8b7878e6d6be8c950deb4d4a"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_halfshift.py": {
+      "bytes": 2837,
+      "sha256": "d4cdc2102f3f6885f86ec2a6e9a4ad64b81a36de8b7878e6d6be8c950deb4d4a"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_identify.out": {
+      "bytes": 7379,
+      "sha256": "7dfe7db98f26fef0ab68da6b5afb1857c3cefd0efc182bed50e9a426d8b150ed"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_identify.out": {
+      "bytes": 7379,
+      "sha256": "7dfe7db98f26fef0ab68da6b5afb1857c3cefd0efc182bed50e9a426d8b150ed"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_identify.py": {
+      "bytes": 7403,
+      "sha256": "55936d19d737e67c0145a9e3ab125643b949e7f62a289f9a138060bd7fdd6aa7"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_identify.py": {
+      "bytes": 7403,
+      "sha256": "55936d19d737e67c0145a9e3ab125643b949e7f62a289f9a138060bd7fdd6aa7"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_identify2.out": {
+      "bytes": 1956,
+      "sha256": "e8ba834388e9e0b29a5a46d2f5f853c83f42eae3fb18b8ad1517db675032f1a2"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_identify2.out": {
+      "bytes": 1956,
+      "sha256": "e8ba834388e9e0b29a5a46d2f5f853c83f42eae3fb18b8ad1517db675032f1a2"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_odd.out": {
+      "bytes": 4475,
+      "sha256": "fc809dada19f75e3cea51ae6a3c6ec0f0d2c7b76281f6afa06d9da77e7a4c444"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_odd.out": {
+      "bytes": 4475,
+      "sha256": "fc809dada19f75e3cea51ae6a3c6ec0f0d2c7b76281f6afa06d9da77e7a4c444"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_odd.py": {
+      "bytes": 2859,
+      "sha256": "269f37e6a350bf4f04ea1123bb4d3f88629f00123383433892eb02fd75c938cf"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_odd.py": {
+      "bytes": 2859,
+      "sha256": "269f37e6a350bf4f04ea1123bb4d3f88629f00123383433892eb02fd75c938cf"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_onepage.out": {
+      "bytes": 7028,
+      "sha256": "4b0c81bd0dcc5f87447769b91404637ec5c4b9a815bcdd90a07be1b5ee9d5df6"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_onepage.out": {
+      "bytes": 7028,
+      "sha256": "4b0c81bd0dcc5f87447769b91404637ec5c4b9a815bcdd90a07be1b5ee9d5df6"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_onepage.py": {
+      "bytes": 12943,
+      "sha256": "e7c062a90c883de783d041503dbba77f7fe03070a0f796a28cf66b78b4a5262a"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_onepage.py": {
+      "bytes": 12943,
+      "sha256": "e7c062a90c883de783d041503dbba77f7fe03070a0f796a28cf66b78b4a5262a"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_certify.log": {
+      "bytes": 14474,
+      "sha256": "4eeb37aa8848202988ebd660b0a332e8812f2adb616d0dacc56cfa1140e7f3a8"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_certify.log": {
+      "bytes": 14474,
+      "sha256": "4eeb37aa8848202988ebd660b0a332e8812f2adb616d0dacc56cfa1140e7f3a8"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_certify.out": {
+      "bytes": 12480,
+      "sha256": "637303c5defbaac0fa105c80d79b9f69c8e34922af39f1607924aa2468516b06"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_certify.out": {
+      "bytes": 12480,
+      "sha256": "637303c5defbaac0fa105c80d79b9f69c8e34922af39f1607924aa2468516b06"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_certify.py": {
+      "bytes": 30348,
+      "sha256": "1a1fb00ced54bb3083dce2ff12c56cd10c28499b7e0353ba23e8a6afd5a9d78b"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_certify.py": {
+      "bytes": 30348,
+      "sha256": "1a1fb00ced54bb3083dce2ff12c56cd10c28499b7e0353ba23e8a6afd5a9d78b"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_degenerate.py": {
+      "bytes": 10557,
+      "sha256": "cdf8cd3273c9ecffa35542bb572a0dde141bf5d068b77ddda548a9a5bdaee5b4"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_degenerate.py": {
+      "bytes": 10557,
+      "sha256": "cdf8cd3273c9ecffa35542bb572a0dde141bf5d068b77ddda548a9a5bdaee5b4"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_maxima.json": {
+      "bytes": 13560,
+      "sha256": "bf1890f4d23f871f16d2dda41b800e0d70d2025299221296081a925518d48de0"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_maxima.json": {
+      "bytes": 13560,
+      "sha256": "bf1890f4d23f871f16d2dda41b800e0d70d2025299221296081a925518d48de0"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_validate.out": {
+      "bytes": 7903,
+      "sha256": "1da3aa3b434eb93cfb8041e87218401fa785c245ac40f84b096ad1a65b042e1e"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_validate.out": {
+      "bytes": 7903,
+      "sha256": "1da3aa3b434eb93cfb8041e87218401fa785c245ac40f84b096ad1a65b042e1e"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_validate.py": {
+      "bytes": 5783,
+      "sha256": "3fb63a3b3dcd2e50b585728fc0f7323a78ddb3952267072d3a37f65fe1c5874b"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_validate.py": {
+      "bytes": 5783,
+      "sha256": "3fb63a3b3dcd2e50b585728fc0f7323a78ddb3952267072d3a37f65fe1c5874b"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen1/sobolev.py": {
+      "bytes": 1572,
+      "sha256": "2ff3d432443e581cd0b391ddbf0ecd746cb02fc8c3b0527d550de2d8f8800f51"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen1/sobolev.py": {
+      "bytes": 1572,
+      "sha256": "2ff3d432443e581cd0b391ddbf0ecd746cb02fc8c3b0527d550de2d8f8800f51"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen1/wordcensus.py": {
+      "bytes": 1635,
+      "sha256": "3dc6ecc3e299c9fef8dfc07ba7451cc6179dc2a0b37d7e05ae55769725666ccf"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen1/wordcensus.py": {
+      "bytes": 1635,
+      "sha256": "3dc6ecc3e299c9fef8dfc07ba7451cc6179dc2a0b37d7e05ae55769725666ccf"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen2/chart_test.py": {
+      "bytes": 1729,
+      "sha256": "ed9388cb63dbd9fd678a1f1056ec6736d204f2217cb894fb9f94382b1ad44de1"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen2/chart_test.py": {
+      "bytes": 1729,
+      "sha256": "ed9388cb63dbd9fd678a1f1056ec6736d204f2217cb894fb9f94382b1ad44de1"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen2/hb_from_recurrence.py": {
+      "bytes": 3895,
+      "sha256": "e70b4830eebba4e93f5ef45856ea8b2b37f7290e35167bf7d079232ec60aa84d"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen2/hb_from_recurrence.py": {
+      "bytes": 3895,
+      "sha256": "e70b4830eebba4e93f5ef45856ea8b2b37f7290e35167bf7d079232ec60aa84d"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen2/nearly_commuting_probe.py": {
+      "bytes": 1128,
+      "sha256": "939ff92e9cc2bed2f79b9d6a48ee70e03b6bc712fade4a7c73c930d20ac36991"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen2/nearly_commuting_probe.py": {
+      "bytes": 1128,
+      "sha256": "939ff92e9cc2bed2f79b9d6a48ee70e03b6bc712fade4a7c73c930d20ac36991"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen2/sturm_pair_check.py": {
+      "bytes": 2455,
+      "sha256": "5ec4caa963b0028c957dd635662ad578448cbfeeaa5f8a71a751918cf3e42c14"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen2/sturm_pair_check.py": {
+      "bytes": 2455,
+      "sha256": "5ec4caa963b0028c957dd635662ad578448cbfeeaa5f8a71a751918cf3e42c14"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen2/tangent_dim.py": {
+      "bytes": 2078,
+      "sha256": "41a56f135f24df45da00d85f6dbafd8a363b6ea35238e156bd71fbb7343b7974"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen2/tangent_dim.py": {
+      "bytes": 2078,
+      "sha256": "41a56f135f24df45da00d85f6dbafd8a363b6ea35238e156bd71fbb7343b7974"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen2/tangent_dim2.py": {
+      "bytes": 941,
+      "sha256": "2b131f97b1ffdec0589943809317b31de5c6f2067ae0f9d10ee476c32de65214"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen2/tangent_dim2.py": {
+      "bytes": 941,
+      "sha256": "2b131f97b1ffdec0589943809317b31de5c6f2067ae0f9d10ee476c32de65214"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen2/tear_factor_ranks.py": {
+      "bytes": 3452,
+      "sha256": "43cba3e9cb2455698a8dcf97a672ce30025828b104f51072602163e8b6a311a2"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen2/tear_factor_ranks.py": {
+      "bytes": 3452,
+      "sha256": "43cba3e9cb2455698a8dcf97a672ce30025828b104f51072602163e8b6a311a2"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen2/tear_level_rank.py": {
+      "bytes": 1919,
+      "sha256": "4ea5aff57c25dd26540def3e8709eb6a0ed1b194fe813b11163ce71a327a502c"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen2/tear_level_rank.py": {
+      "bytes": 1919,
+      "sha256": "4ea5aff57c25dd26540def3e8709eb6a0ed1b194fe813b11163ce71a327a502c"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen3/butterfly_probe.py": {
+      "bytes": 2650,
+      "sha256": "639b0db2ebb940937f5e39c60955f7e84f3da469e57354e58f910f62d8b4facd"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen3/butterfly_probe.py": {
+      "bytes": 2650,
+      "sha256": "639b0db2ebb940937f5e39c60955f7e84f3da469e57354e58f910f62d8b4facd"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen3/butterfly_probe2.py": {
+      "bytes": 710,
+      "sha256": "28b1afe4fc46bf9a44b001fba0e112b97b94e93603c79739e81cd2fd65cc62e4"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen3/butterfly_probe2.py": {
+      "bytes": 710,
+      "sha256": "28b1afe4fc46bf9a44b001fba0e112b97b94e93603c79739e81cd2fd65cc62e4"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen3/curve_measure_probe.py": {
+      "bytes": 3578,
+      "sha256": "b7e9f62873c99f80fa958ad818dd68738c6030053bfb222520eada221cceeff0"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen3/curve_measure_probe.py": {
+      "bytes": 3578,
+      "sha256": "b7e9f62873c99f80fa958ad818dd68738c6030053bfb222520eada221cceeff0"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen3/polygon_sparse_ops_probe.py": {
+      "bytes": 5201,
+      "sha256": "edc469d486a21eac110c0d5a9a002fb6775ece8448fa9d6bfade8ca409120b7f"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen3/polygon_sparse_ops_probe.py": {
+      "bytes": 5201,
+      "sha256": "edc469d486a21eac110c0d5a9a002fb6775ece8448fa9d6bfade8ca409120b7f"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen3/tomography_design_probe.py": {
+      "bytes": 2818,
+      "sha256": "9e969bbd7f20e3749123948e08f3b0c778dd737e4d2a21f22ba4beaad6abc87f"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen3/tomography_design_probe.py": {
+      "bytes": 2818,
+      "sha256": "9e969bbd7f20e3749123948e08f3b0c778dd737e4d2a21f22ba4beaad6abc87f"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests.py": {
+      "bytes": 4775,
+      "sha256": "9ec69777c75f9ffe8b784b083d6684d47b279091d341c53e9e3b0287078bfb6c"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests.py": {
+      "bytes": 4775,
+      "sha256": "9ec69777c75f9ffe8b784b083d6684d47b279091d341c53e9e3b0287078bfb6c"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests10.py": {
+      "bytes": 2048,
+      "sha256": "e9b0835fc9d628a8a6aa7ed68c585710c306c72b83eba592f44f7b20a552aeb8"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests10.py": {
+      "bytes": 2048,
+      "sha256": "e9b0835fc9d628a8a6aa7ed68c585710c306c72b83eba592f44f7b20a552aeb8"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests11.py": {
+      "bytes": 1211,
+      "sha256": "e81a7e55f791ce984ced4d0866b63203d5edf51c08f3d6251943501ddf2b5b34"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests11.py": {
+      "bytes": 1211,
+      "sha256": "e81a7e55f791ce984ced4d0866b63203d5edf51c08f3d6251943501ddf2b5b34"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests12.py": {
+      "bytes": 2085,
+      "sha256": "2e5a4fd3cdaa182e25cdaf3258c20a6cea347156e8b4b5a7613df19832f90b9c"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests12.py": {
+      "bytes": 2085,
+      "sha256": "2e5a4fd3cdaa182e25cdaf3258c20a6cea347156e8b4b5a7613df19832f90b9c"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests13.py": {
+      "bytes": 1612,
+      "sha256": "370257559c49d731034966efd8c6af19f66832c2f6e362aa3b8701fce7d62ef0"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests13.py": {
+      "bytes": 1612,
+      "sha256": "370257559c49d731034966efd8c6af19f66832c2f6e362aa3b8701fce7d62ef0"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests14.py": {
+      "bytes": 1634,
+      "sha256": "8fbcf97896ae049a2a5cd65a6d3c5e1f8ee1e3c3d35ff8ddde7a08da8edd6556"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests14.py": {
+      "bytes": 1634,
+      "sha256": "8fbcf97896ae049a2a5cd65a6d3c5e1f8ee1e3c3d35ff8ddde7a08da8edd6556"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests15.py": {
+      "bytes": 1701,
+      "sha256": "38047f06d57c5c37ba544e5e751a854494c0123ae5bbbadd78d540f2550b931a"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests15.py": {
+      "bytes": 1701,
+      "sha256": "38047f06d57c5c37ba544e5e751a854494c0123ae5bbbadd78d540f2550b931a"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests16.py": {
+      "bytes": 1495,
+      "sha256": "b1cd5a0ed0383d288ffb4dcaf9ab6093f56d11986f149144b562516c294d2e61"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests16.py": {
+      "bytes": 1495,
+      "sha256": "b1cd5a0ed0383d288ffb4dcaf9ab6093f56d11986f149144b562516c294d2e61"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests17.py": {
+      "bytes": 1189,
+      "sha256": "dba703bef5b9316dcbc88c05b15554145479c54dbeabb6a336cbf57d947c02cb"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests17.py": {
+      "bytes": 1189,
+      "sha256": "dba703bef5b9316dcbc88c05b15554145479c54dbeabb6a336cbf57d947c02cb"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests18.py": {
+      "bytes": 2179,
+      "sha256": "46127e59bd408dba17b823cfa3bdcb62290ce025cb362e76ebba8c45c3eef5d7"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests18.py": {
+      "bytes": 2179,
+      "sha256": "46127e59bd408dba17b823cfa3bdcb62290ce025cb362e76ebba8c45c3eef5d7"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests19.py": {
+      "bytes": 2353,
+      "sha256": "db03ac3b8986b981778bee2d160302468158602fb34284cb6f69c642b951bb7a"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests19.py": {
+      "bytes": 2353,
+      "sha256": "db03ac3b8986b981778bee2d160302468158602fb34284cb6f69c642b951bb7a"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests2.py": {
+      "bytes": 2559,
+      "sha256": "3e4d5931509d795784ef0357e269ea34782aa117ec371741153ac975ac8532a6"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests2.py": {
+      "bytes": 2559,
+      "sha256": "3e4d5931509d795784ef0357e269ea34782aa117ec371741153ac975ac8532a6"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests20.py": {
+      "bytes": 1058,
+      "sha256": "7a0f42db33d249d1b79a7b35775c7851824682dcdf3dbd50c74ef2888d3647ee"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests20.py": {
+      "bytes": 1058,
+      "sha256": "7a0f42db33d249d1b79a7b35775c7851824682dcdf3dbd50c74ef2888d3647ee"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests21.py": {
+      "bytes": 1936,
+      "sha256": "67e83b6b4b93f7368292953e33ac1505b102ad79f0b01a25e28d30d5230768fb"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests21.py": {
+      "bytes": 1936,
+      "sha256": "67e83b6b4b93f7368292953e33ac1505b102ad79f0b01a25e28d30d5230768fb"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests22.py": {
+      "bytes": 2360,
+      "sha256": "87558368b311196d1977b8e7eb1742bc8a85b7b3dc676c85ce070ea54f142891"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests22.py": {
+      "bytes": 2360,
+      "sha256": "87558368b311196d1977b8e7eb1742bc8a85b7b3dc676c85ce070ea54f142891"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests23.py": {
+      "bytes": 1868,
+      "sha256": "aa66ae21bb33e3b4b8d9fea71b18a4f17c79f59431bfd7d8a013da88cc1ea6aa"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests23.py": {
+      "bytes": 1868,
+      "sha256": "aa66ae21bb33e3b4b8d9fea71b18a4f17c79f59431bfd7d8a013da88cc1ea6aa"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests24.py": {
+      "bytes": 662,
+      "sha256": "4c261f7fae12a7aaad615b5b2f774e84a5c7a0fcbe88344bf42b3d613b539547"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests24.py": {
+      "bytes": 662,
+      "sha256": "4c261f7fae12a7aaad615b5b2f774e84a5c7a0fcbe88344bf42b3d613b539547"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests3.py": {
+      "bytes": 1572,
+      "sha256": "21078c5c9a5c90a6045a4c9fa40e4fc80ca22f6d98cb76b8ec1241dd06b0adb4"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests3.py": {
+      "bytes": 1572,
+      "sha256": "21078c5c9a5c90a6045a4c9fa40e4fc80ca22f6d98cb76b8ec1241dd06b0adb4"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests4.py": {
+      "bytes": 1011,
+      "sha256": "8babab1bbbab89e4e86b542c1195400486356e7ceb64787d6d1b9d28b7cb5d33"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests4.py": {
+      "bytes": 1011,
+      "sha256": "8babab1bbbab89e4e86b542c1195400486356e7ceb64787d6d1b9d28b7cb5d33"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests5.py": {
+      "bytes": 2031,
+      "sha256": "78c2151289d57758b55c1d35f57b9c51e19ba5b13907d9bc84c67cea612feb41"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests5.py": {
+      "bytes": 2031,
+      "sha256": "78c2151289d57758b55c1d35f57b9c51e19ba5b13907d9bc84c67cea612feb41"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests6.py": {
+      "bytes": 1377,
+      "sha256": "f88087453d6a8d8af8d3d633793025a24341e93aedbdf60a6ad7d27eefc31ca6"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests6.py": {
+      "bytes": 1377,
+      "sha256": "f88087453d6a8d8af8d3d633793025a24341e93aedbdf60a6ad7d27eefc31ca6"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests7.py": {
+      "bytes": 1682,
+      "sha256": "2d89ad4debc881b8460a5ffa176b71240824bf8333840c7e4d066c7418c9a6a8"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests7.py": {
+      "bytes": 1682,
+      "sha256": "2d89ad4debc881b8460a5ffa176b71240824bf8333840c7e4d066c7418c9a6a8"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests8.py": {
+      "bytes": 2134,
+      "sha256": "6d2419697d74cc5e00c597d63460791014f6244cb170398ae8237ded66d00178"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests8.py": {
+      "bytes": 2134,
+      "sha256": "6d2419697d74cc5e00c597d63460791014f6244cb170398ae8237ded66d00178"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests9.py": {
+      "bytes": 1632,
+      "sha256": "fe12cbf992ea76c7c34fa246a479499a987c7258589e659b2bcdfdd84856de42"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/gen4/gen4_tests9.py": {
+      "bytes": 1632,
+      "sha256": "fe12cbf992ea76c7c34fa246a479499a987c7258589e659b2bcdfdd84856de42"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/response-01/inertia_two_node_family.out": {
+      "bytes": 1783,
+      "sha256": "24a338251566b8acfccc5cbb5a485b3e38f710851735ab6c84e18347e98f68d2"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/response-01/inertia_two_node_family.out": {
+      "bytes": 1783,
+      "sha256": "24a338251566b8acfccc5cbb5a485b3e38f710851735ab6c84e18347e98f68d2"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/response-01/inertia_two_node_family.py": {
+      "bytes": 2529,
+      "sha256": "30803cf7207c81b39a911ea4242b6246f7a2f5d4daab1750846e9358cc7f9288"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/response-01/inertia_two_node_family.py": {
+      "bytes": 2529,
+      "sha256": "30803cf7207c81b39a911ea4242b6246f7a2f5d4daab1750846e9358cc7f9288"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/response-02/padua_n3_edge_identity.out": {
+      "bytes": 92,
+      "sha256": "edcf466f534d6d568d22e1e9b78effa74f238b0963da23a2e7a93b367f2370ff"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/response-02/padua_n3_edge_identity.out": {
+      "bytes": 92,
+      "sha256": "edcf466f534d6d568d22e1e9b78effa74f238b0963da23a2e7a93b367f2370ff"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/response-02/padua_n3_edge_identity.py": {
+      "bytes": 1203,
+      "sha256": "b051f2d9ce76af5e7bd1af600d104928b57563ceec19b7487b1faca63c17160d"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/response-02/padua_n3_edge_identity.py": {
+      "bytes": 1203,
+      "sha256": "b051f2d9ce76af5e7bd1af600d104928b57563ceec19b7487b1faca63c17160d"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/response-02/padua_pattern_commutant.out": {
+      "bytes": 356,
+      "sha256": "99d3f79c13a815e393b8fd4c68b7ac6c638ca0a61dea035a0713be0d152dd046"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/response-02/padua_pattern_commutant.out": {
+      "bytes": 356,
+      "sha256": "99d3f79c13a815e393b8fd4c68b7ac6c638ca0a61dea035a0713be0d152dd046"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/response-02/padua_pattern_commutant.py": {
+      "bytes": 3208,
+      "sha256": "abb786981421ffeb4a81f7eb175fb2fb1fa70cef7e71f7649d43bf4c2aa4a87b"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/response-02/padua_pattern_commutant.py": {
+      "bytes": 3208,
+      "sha256": "abb786981421ffeb4a81f7eb175fb2fb1fa70cef7e71f7649d43bf4c2aa4a87b"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/response-02/ritz_converse_parity.out": {
+      "bytes": 631,
+      "sha256": "1c41cc733035b5470f6ea62912c6849657b732c125c1e8fbcac95cefae589894"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/response-02/ritz_converse_parity.out": {
+      "bytes": 631,
+      "sha256": "1c41cc733035b5470f6ea62912c6849657b732c125c1e8fbcac95cefae589894"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/response-02/ritz_converse_parity.py": {
+      "bytes": 1701,
+      "sha256": "7dfd5b570132971e2ea41bda71bf412535533d0d75714e7950995c4cc25f82da"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/response-02/ritz_converse_parity.py": {
+      "bytes": 1701,
+      "sha256": "7dfd5b570132971e2ea41bda71bf412535533d0d75714e7950995c4cc25f82da"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/response-02/ritz_saturated_centre.out": {
+      "bytes": 85,
+      "sha256": "9bfc5e3caf193f9fadf01d3d5b1dce9823b3d2bb4bf67a35a6a530ab78f33ede"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/response-02/ritz_saturated_centre.out": {
+      "bytes": 85,
+      "sha256": "9bfc5e3caf193f9fadf01d3d5b1dce9823b3d2bb4bf67a35a6a530ab78f33ede"
+    },
+    "f4e213390f66a8c9f0c6bd65131b97b78db873c8:topics/programme-ideas-20261031/checks/code/response-02/ritz_saturated_centre.py": {
+      "bytes": 1099,
+      "sha256": "7d9d76e6ccc3417577f324186d7a032e4a1682f8bd41c51a53f3986346e43eee"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/checks/code/response-02/ritz_saturated_centre.py": {
+      "bytes": 1099,
+      "sha256": "7d9d76e6ccc3417577f324186d7a032e4a1682f8bd41c51a53f3986346e43eee"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/ideas/candidates.md": {
+      "bytes": 126236,
+      "sha256": "2658ac851dcb2d5f3da0212c0ec827f377e15d4170e6718995a20b9d70311a99"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/ideas/candidates.md": {
+      "bytes": 126236,
+      "sha256": "2658ac851dcb2d5f3da0212c0ec827f377e15d4170e6718995a20b9d70311a99"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/theory/programme-ideas-claude-01-finite-favard-pattern-pairs.md": {
+      "bytes": 11862,
+      "sha256": "4b0d8996fad1b5c21be244bca0df7cb2a39fc5ae70a651d75ce2f69cc5d38f2e"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/theory/programme-ideas-claude-01-finite-favard-pattern-pairs.md": {
+      "bytes": 11862,
+      "sha256": "4b0d8996fad1b5c21be244bca0df7cb2a39fc5ae70a651d75ce2f69cc5d38f2e"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/theory/programme-ideas-claude-02-joint-ritz-saturation-bound.md": {
+      "bytes": 5652,
+      "sha256": "8401eb0b1efd9bd2c57f70632131a77c75d5a9368a6235de7b47e1139aa833d6"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/theory/programme-ideas-claude-02-joint-ritz-saturation-bound.md": {
+      "bytes": 5652,
+      "sha256": "8401eb0b1efd9bd2c57f70632131a77c75d5a9368a6235de7b47e1139aa833d6"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/theory/programme-ideas-claude-03-compressed-commutator-identity.md": {
+      "bytes": 4474,
+      "sha256": "f603da3a21a3711eb6a1279d2f000861bcefe500a1dcb13cf82dbacd38125f86"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/theory/programme-ideas-claude-03-compressed-commutator-identity.md": {
+      "bytes": 4474,
+      "sha256": "f603da3a21a3711eb6a1279d2f000861bcefe500a1dcb13cf82dbacd38125f86"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/theory/programme-ideas-claude-04-padua-corner-expansion.md": {
+      "bytes": 5612,
+      "sha256": "5b383a3915e20191121d1167b33f35fd2c79a7a87f536aa6f332fe4a100bf4bd"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/theory/programme-ideas-claude-04-padua-corner-expansion.md": {
+      "bytes": 5612,
+      "sha256": "5b383a3915e20191121d1167b33f35fd2c79a7a87f536aa6f332fe4a100bf4bd"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/theory/programme-ideas-claude-05-padua-corner-argmax.md": {
+      "bytes": 3165,
+      "sha256": "292eb99703eb11b0c6f55d2b9806c1abe39191167f84ac5caf66372e4fd2cf5b"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/theory/programme-ideas-claude-05-padua-corner-argmax.md": {
+      "bytes": 3165,
+      "sha256": "292eb99703eb11b0c6f55d2b9806c1abe39191167f84ac5caf66372e4fd2cf5b"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/theory/programme-ideas-claude-06-padua-lebesgue-maxima-counts.md": {
+      "bytes": 6609,
+      "sha256": "2b682962dc7dbf102ce44916370a7e7906e83e17bc812a37271e80af974fa626"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/theory/programme-ideas-claude-06-padua-lebesgue-maxima-counts.md": {
+      "bytes": 6609,
+      "sha256": "2b682962dc7dbf102ce44916370a7e7906e83e17bc812a37271e80af974fa626"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/theory/programme-ideas-claude-N01-symmetrised-product-inertia-count.md": {
+      "bytes": 7379,
+      "sha256": "c9cb48f5a0b21cf6bf76e2251c3f91f02320675156f702f00198a81dd3189d32"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/theory/programme-ideas-claude-N01-symmetrised-product-inertia-count.md": {
+      "bytes": 7379,
+      "sha256": "c9cb48f5a0b21cf6bf76e2251c3f91f02320675156f702f00198a81dd3189d32"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/theory/programme-ideas-claude-N02-windowed-rational-lanczos-instability.md": {
+      "bytes": 5860,
+      "sha256": "3c96bff3b0827f343932f22b3c629fd7e367a7d19a0d16ccae0ed339d0ccd8ed"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/theory/programme-ideas-claude-N02-windowed-rational-lanczos-instability.md": {
+      "bytes": 5860,
+      "sha256": "3c96bff3b0827f343932f22b3c629fd7e367a7d19a0d16ccae0ed339d0ccd8ed"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/theory/programme-ideas-claude-N03-joint-ritz-converse-refuted.md": {
+      "bytes": 5807,
+      "sha256": "052b76c378870587da0464bddcc43c0b1596af4d739c6e65a2baf10e03e9da39"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/theory/programme-ideas-claude-N03-joint-ritz-converse-refuted.md": {
+      "bytes": 5807,
+      "sha256": "052b76c378870587da0464bddcc43c0b1596af4d739c6e65a2baf10e03e9da39"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/theory/programme-ideas-claude-N04-pattern-commutant-not-three-dimensional.md": {
+      "bytes": 4524,
+      "sha256": "7e6a9532bb45ff22360f332f37aef3ff8af06a17aec58a7f3b237aa4861177c3"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/theory/programme-ideas-claude-N04-pattern-commutant-not-three-dimensional.md": {
+      "bytes": 4524,
+      "sha256": "7e6a9532bb45ff22360f332f37aef3ff8af06a17aec58a7f3b237aa4861177c3"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/theory/programme-ideas-claude-N05-fourier-basis-commutation-fails.md": {
+      "bytes": 4056,
+      "sha256": "c262776ff94f60d00bf4c30ab52292c9f822e5cf0cb5bd5edbff92f6a9f7ecf2"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/theory/programme-ideas-claude-N05-fourier-basis-commutation-fails.md": {
+      "bytes": 4056,
+      "sha256": "c262776ff94f60d00bf4c30ab52292c9f822e5cf0cb5bd5edbff92f6a9f7ecf2"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c0-catalogue.md": {
+      "bytes": 5822,
+      "sha256": "a850819a72ab57119026e2b82c3a038ea6c4a816d1ba801ae7e43dc0c3ec5346"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:tracks/lattice-unisolvence/theory/c0-catalogue.md": {
+      "bytes": 5822,
+      "sha256": "a850819a72ab57119026e2b82c3a038ea6c4a816d1ba801ae7e43dc0c3ec5346"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c0-density.md": {
+      "bytes": 4884,
+      "sha256": "8aee1047fc725c129550f2a34d6f57185811fd930f704de9555a02611b659db2"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:tracks/lattice-unisolvence/theory/c0-density.md": {
+      "bytes": 4884,
+      "sha256": "8aee1047fc725c129550f2a34d6f57185811fd930f704de9555a02611b659db2"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c0-infinite-six.md": {
+      "bytes": 5095,
+      "sha256": "68ea1e5f5043f067ba9d1aa156c2440a761b4992a04600ec7bde93fd73ae68ba"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:tracks/lattice-unisolvence/theory/c0-infinite-six.md": {
+      "bytes": 5095,
+      "sha256": "68ea1e5f5043f067ba9d1aa156c2440a761b4992a04600ec7bde93fd73ae68ba"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c0-short-axis.md": {
+      "bytes": 3445,
+      "sha256": "2ef243bd1837f18914f3572e84e4c837d3b474cf8755aff208d98347c7318691"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:tracks/lattice-unisolvence/theory/c0-short-axis.md": {
+      "bytes": 3445,
+      "sha256": "2ef243bd1837f18914f3572e84e4c837d3b474cf8755aff208d98347c7318691"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c1-chebyshev-obstruction.md": {
+      "bytes": 4343,
+      "sha256": "46b1fd2ef9b0fec9729b0d23424279e6d48853e78fb007a4127bce71aaa073db"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:tracks/lattice-unisolvence/theory/c1-chebyshev-obstruction.md": {
+      "bytes": 4343,
+      "sha256": "46b1fd2ef9b0fec9729b0d23424279e6d48853e78fb007a4127bce71aaa073db"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c1-counts.md": {
+      "bytes": 3932,
+      "sha256": "461060ec45742d3c827a86f8958d0853a22af6582905f36d703a3c9d61923895"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:tracks/lattice-unisolvence/theory/c1-counts.md": {
+      "bytes": 3932,
+      "sha256": "461060ec45742d3c827a86f8958d0853a22af6582905f36d703a3c9d61923895"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c1-finite-evidence.md": {
+      "bytes": 5076,
+      "sha256": "c7ba630064d72b5f522a7a2b432796dabfe6332fb3e2fcdfbc932581c0dc8ab8"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:tracks/lattice-unisolvence/theory/c1-finite-evidence.md": {
+      "bytes": 5076,
+      "sha256": "c7ba630064d72b5f522a7a2b432796dabfe6332fb3e2fcdfbc932581c0dc8ab8"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c1-gram-reduction.md": {
+      "bytes": 8084,
+      "sha256": "209e9a39524a7838bd90737facdec030b84e7023148ce8d48a20fdc77e59ec5f"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:tracks/lattice-unisolvence/theory/c1-gram-reduction.md": {
+      "bytes": 8084,
+      "sha256": "209e9a39524a7838bd90737facdec030b84e7023148ce8d48a20fdc77e59ec5f"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c1-mixed-obstruction.md": {
+      "bytes": 5056,
+      "sha256": "4b4a20b322c3b02b0bfedd9398b405ee9abc1f6f47f8b9e0c83dba9ee2684360"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:tracks/lattice-unisolvence/theory/c1-mixed-obstruction.md": {
+      "bytes": 5056,
+      "sha256": "4b4a20b322c3b02b0bfedd9398b405ee9abc1f6f47f8b9e0c83dba9ee2684360"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c1-open-family.md": {
+      "bytes": 5016,
+      "sha256": "374f472102c8974576f60538caf569b7f1149b6bc6ab6cbaa198387b8cdbf714"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:tracks/lattice-unisolvence/theory/c1-open-family.md": {
+      "bytes": 5016,
+      "sha256": "374f472102c8974576f60538caf569b7f1149b6bc6ab6cbaa198387b8cdbf714"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c1-quadratic.md": {
+      "bytes": 6278,
+      "sha256": "fbe2318059be4643e3973c8a9eae511c74d7ecab48d7c64f605f172cdbaae0ff"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:tracks/lattice-unisolvence/theory/c1-quadratic.md": {
+      "bytes": 6278,
+      "sha256": "fbe2318059be4643e3973c8a9eae511c74d7ecab48d7c64f605f172cdbaae0ff"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c1-row-moments.md": {
+      "bytes": 5224,
+      "sha256": "bd80d719e481b47ef54a11bde4529912fd821b47c90140a967863ab407560f23"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:tracks/lattice-unisolvence/theory/c1-row-moments.md": {
+      "bytes": 5224,
+      "sha256": "bd80d719e481b47ef54a11bde4529912fd821b47c90140a967863ab407560f23"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c3-annihilator-certificates.md": {
+      "bytes": 3987,
+      "sha256": "a6f9bd8b776f2ee42a23a920ecde5ef68ce687fa66e0c75a10b9bbe5788340fe"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:tracks/lattice-unisolvence/theory/c3-annihilator-certificates.md": {
+      "bytes": 3987,
+      "sha256": "a6f9bd8b776f2ee42a23a920ecde5ef68ce687fa66e0c75a10b9bbe5788340fe"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c3-chebyshev-observations.md": {
+      "bytes": 5435,
+      "sha256": "45d8cc9379555fe4110478a1040ff091a580280f3d5d7e978d40c857d8035a0c"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:tracks/lattice-unisolvence/theory/c3-chebyshev-observations.md": {
+      "bytes": 5435,
+      "sha256": "45d8cc9379555fe4110478a1040ff091a580280f3d5d7e978d40c857d8035a0c"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c3-deficiency-observations.md": {
+      "bytes": 4294,
+      "sha256": "27e60ef3a47e0624036827a7ae0d73bbac66de1ec5835e4d61dc376400a7af6a"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:tracks/lattice-unisolvence/theory/c3-deficiency-observations.md": {
+      "bytes": 4294,
+      "sha256": "27e60ef3a47e0624036827a7ae0d73bbac66de1ec5835e4d61dc376400a7af6a"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c3-generic-witness-reduction.md": {
+      "bytes": 6959,
+      "sha256": "62874093640e08a72f2b8afa797bb7c854ce1b14e197be6dc916ee62b0351280"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:tracks/lattice-unisolvence/theory/c3-generic-witness-reduction.md": {
+      "bytes": 6959,
+      "sha256": "62874093640e08a72f2b8afa797bb7c854ce1b14e197be6dc916ee62b0351280"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c3-n1-mixed-axis-obstruction.md": {
+      "bytes": 5309,
+      "sha256": "29a048d3266f348084cf6fa49d11cca64945ec8bc335223d14674d05e6675f32"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:tracks/lattice-unisolvence/theory/c3-n1-mixed-axis-obstruction.md": {
+      "bytes": 5309,
+      "sha256": "29a048d3266f348084cf6fa49d11cca64945ec8bc335223d14674d05e6675f32"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c3-n2-axis-factorization.md": {
+      "bytes": 6268,
+      "sha256": "2be27391682866bb98a96baa21f3b568b366cd069f334b0bdeb7d5f36f3f70ed"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:tracks/lattice-unisolvence/theory/c3-n2-axis-factorization.md": {
+      "bytes": 6268,
+      "sha256": "2be27391682866bb98a96baa21f3b568b366cd069f334b0bdeb7d5f36f3f70ed"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c3-open-target.md": {
+      "bytes": 4577,
+      "sha256": "4a2d4a60c8b347be85d348db7c6457f00ba6b6e56e0ba363d2c28ffacb27a061"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:tracks/lattice-unisolvence/theory/c3-open-target.md": {
+      "bytes": 4577,
+      "sha256": "4a2d4a60c8b347be85d348db7c6457f00ba6b6e56e0ba363d2c28ffacb27a061"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c3-rank-observations.md": {
+      "bytes": 5242,
+      "sha256": "6d2e757970574458d44d4546915c4bc149faa398e144efb1b537690e6099e8be"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:tracks/lattice-unisolvence/theory/c3-rank-observations.md": {
+      "bytes": 5242,
+      "sha256": "6d2e757970574458d44d4546915c4bc149faa398e144efb1b537690e6099e8be"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c3-rectangle-observations.md": {
+      "bytes": 3831,
+      "sha256": "d04cd49ed68b0a8dfe815e3bb6301740dbbc931eca3b8d8ab2315a7e659ffb51"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:tracks/lattice-unisolvence/theory/c3-rectangle-observations.md": {
+      "bytes": 3831,
+      "sha256": "d04cd49ed68b0a8dfe815e3bb6301740dbbc931eca3b8d8ab2315a7e659ffb51"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/pr-prep/id-map.json": {
+      "bytes": 10143,
+      "sha256": "1b4b6145235ad1b2e1d8f08b7aee65ec52881711e0ca855186ba2afdab503b44"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/pr-prep/id-map.json": {
+      "bytes": 10143,
+      "sha256": "1b4b6145235ad1b2e1d8f08b7aee65ec52881711e0ca855186ba2afdab503b44"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/lit/baseline.md": {
+      "bytes": 81109,
+      "sha256": "26385cb01c301d0f92f685df1c46f5b03ce55b3b935f9e5d1f8389f268d6debd"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/lit/baseline.md": {
+      "bytes": 81109,
+      "sha256": "26385cb01c301d0f92f685df1c46f5b03ce55b3b935f9e5d1f8389f268d6debd"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/lit/integration-map.json": {
+      "bytes": 47336,
+      "sha256": "7073797a7b9e1cb5f4ff82c3655b73f7b78e4258132ff86c5aa31d3fa0b5e533"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/lit/integration-map.json": {
+      "bytes": 47336,
+      "sha256": "7073797a7b9e1cb5f4ff82c3655b73f7b78e4258132ff86c5aa31d3fa0b5e533"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/lit/integration-map-pr10.json": {
+      "bytes": 23111,
+      "sha256": "cad0485ab96ffa9ff64445e57ad42cd5e7f88690b35d45f481a921d4a37b8b98"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/lit/integration-map-pr10.json": {
+      "bytes": 23111,
+      "sha256": "cad0485ab96ffa9ff64445e57ad42cd5e7f88690b35d45f481a921d4a37b8b98"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/lit/integration-map.md": {
+      "bytes": 40540,
+      "sha256": "a0f068830bbbab4433967a634c7862b3c48dde0a6a6347fb43ca206206c3beed"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/lit/integration-map.md": {
+      "bytes": 40540,
+      "sha256": "a0f068830bbbab4433967a634c7862b3c48dde0a6a6347fb43ca206206c3beed"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/lit/integration-map-pr10.md": {
+      "bytes": 19433,
+      "sha256": "50ef42383ab5668b9cf97112b3ae4eb1451c634e2295c5d87479abd8dd4ebf20"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/programme-ideas-20261031/lit/integration-map-pr10.md": {
+      "bytes": 19433,
+      "sha256": "50ef42383ab5668b9cf97112b3ae4eb1451c634e2295c5d87479abd8dd4ebf20"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/lattice-unisolvence-20261031/provisional-id-map.json": {
+      "bytes": 19769,
+      "sha256": "3b04ce988f1e90f1b84aae1c91097e309aa4dbe982c71f8317b13efd8aac60c4"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:topics/lattice-unisolvence-20261031/provisional-id-map.json": {
+      "bytes": 19769,
+      "sha256": "3b04ce988f1e90f1b84aae1c91097e309aa4dbe982c71f8317b13efd8aac60c4"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:PROOF_STATUS.md": {
+      "bytes": 96640,
+      "sha256": "ab3cbc4f09578571828a28773a9a527f0c22dba49270c92b652645c1420b35c2"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:ID_CROSSWALK.md": {
+      "bytes": 249483,
+      "sha256": "543b970b311bb49cc7147db637734f37e6cdb7c48e91d67c3c9e79d55812844c"
+    },
+    "6a42b7f38163770f57a0e298a67e04dd42ab4525:state/IDEAS.md": {
+      "bytes": 158605,
+      "sha256": "f70650460c7b140021a084a2b9ddd56efc73f7e92ce8ef7b2f717db3ae677898"
+    }
+  },
+  "passed": true
+}

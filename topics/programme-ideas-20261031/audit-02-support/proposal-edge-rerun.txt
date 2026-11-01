@@ -1,0 +1,1 @@
+index 6 (j,k)=(2,2) node (-1/2, 0) vanishes on x=1: L = (x - 1)*(2*x**2 + x + 2*y**2 - 2)/3

@@ -1,0 +1,19 @@
+T2 (d) at 12-digit precision (inline run of mpmath.pslq; parameters as printed). Model: claude-fable-5-1, effort xhigh (as requested by the orchestrator) · 2026-11-01
+c = 1.846160310424  kappa = c - c1^2 = 0.9197101183886  (pi^2/4) kappa = 2.269293758044  pi^2 kappa = 9.077175032174  tol = 2.0e-11
+tier 1 (pi^2/4)kappa vs {1, L, L^2}; pre-registered: denominator (kappa-coefficient) <= 16, numerators <= 64
+  tier1: NO relation (|coeff|<=1024)
+tier 2 vs {1, gamma, log2, logpi}
+  tier2 (pi^2/4)kappa: pslq [-78, -281, 646, 501, -229] residual 1.31e-11 kappa-coeff -78 -> not a hit (coefficient bound or residual)
+  tier2 kappa: pslq [-149, 149, 83, 54, -85] residual -3.11e-11 kappa-coeff -149 -> not a hit (coefficient bound or residual)
+  tier2 pi^2 kappa: pslq [-120, 455, 227, 437, 175] residual 8.38e-11 kappa-coeff -120 -> not a hit (coefficient bound or residual)
+tier 3 (pi^2/4)kappa vs 10-element quadratic basis, |coeff| <= 6
+  tier3: NO relation (|coeff|<=6)
+tier 3 variants: kappa and pi^2 kappa vs the same basis
+  tier3 kappa: pslq [-2, -4, -1, 2, 0, -2, 0, 2, 2, 1, 2] residual 4.14e-11 kappa-coeff -2 -> not a hit (coefficient bound or residual)
+  tier3 pi^2kappa: NO relation (|coeff|<=6)
+chance levels at tol 2.0e-11: tier1 ~ 3.4e-03, tier2 ~ 7.1e+00, tier3 ~ 2.8e-01
+informational (not 1-D): (pi^2/4)kappa vs {1, gamma, log2, logpi, pi^2, G, zeta(3), gamma^2, log^2 2, gamma log2, log^2 pi, pi}, |coeff| <= 12
+  info: pslq [-2, -1, -7, -4, 2, 1, -2, 1, 4, 0, 2, -1, 0] residual 3.29e-11 kappa-coeff -2 -> not a hit (coefficient bound or residual)
+informational: c itself vs {1, gamma, log2, logpi, gamma^2, gamma log2, gamma logpi, log^2 2, log2 logpi, log^2 pi} scaled by pi^2/4, |coeff| <= 8
+  info c: NO relation (|coeff|<=8) [basis-only [0, -3, -3, 0, -4, -4, 1, 4, -5, 6, 4]]
+identify (informational): (1 + (83/149)*euler + (54/149)*log(2) + (-85/149)*log(pi)) | ((-281/78) + (323/39)*euler + (167/26)*log(2) + (-229/78)*log(pi))

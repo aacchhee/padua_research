@@ -1,0 +1,41 @@
+--- gen4_tests4 logic (Padua), n <= 8
+equal n 4 theta 0.5 k 2 N_k/N 0.400 mean s 0.400 frac s>0.9 0.000 frac s>0.99 0.000 mean s boundary 0.476 mean s interior 0.286 min s 0.253 max s 0.599
+equal n 4 theta 0.7 k 3 N_k/N 0.667 mean s 0.667 frac s>0.9 0.000 frac s>0.99 0.000 mean s boundary 0.758 mean s interior 0.529 min s 0.438 max s 0.860
+equal n 4 theta 0.8 k 3 N_k/N 0.667 mean s 0.667 frac s>0.9 0.000 frac s>0.99 0.000 mean s boundary 0.758 mean s interior 0.529 min s 0.438 max s 0.860
+equal n 4 theta 0.9 k 4 N_k/N 1.000 mean s 1.000 frac s>0.9 1.000 frac s>0.99 1.000 mean s boundary 1.000 mean s interior 1.000 min s 1.000 max s 1.000
+equal n 4 theta 0.95 k 4 N_k/N 1.000 mean s 1.000 frac s>0.9 1.000 frac s>0.99 1.000 mean s boundary 1.000 mean s interior 1.000 min s 1.000 max s 1.000
+equal n 6 theta 0.5 k 3 N_k/N 0.357 mean s 0.357 frac s>0.9 0.000 frac s>0.99 0.000 mean s boundary 0.446 mean s interior 0.280 min s 0.226 max s 0.578
+equal n 6 theta 0.7 k 4 N_k/N 0.536 mean s 0.536 frac s>0.9 0.000 frac s>0.99 0.000 mean s boundary 0.646 mean s interior 0.440 min s 0.317 max s 0.776
+equal n 6 theta 0.8 k 5 N_k/N 0.750 mean s 0.750 frac s>0.9 0.071 frac s>0.99 0.000 mean s boundary 0.838 mean s interior 0.674 min s 0.589 max s 0.911
+equal n 6 theta 0.9 k 5 N_k/N 0.750 mean s 0.750 frac s>0.9 0.071 frac s>0.99 0.000 mean s boundary 0.838 mean s interior 0.674 min s 0.589 max s 0.911
+equal n 6 theta 0.95 k 6 N_k/N 1.000 mean s 1.000 frac s>0.9 1.000 frac s>0.99 1.000 mean s boundary 1.000 mean s interior 1.000 min s 1.000 max s 1.000
+equal n 8 theta 0.5 k 4 N_k/N 0.333 mean s 0.333 frac s>0.9 0.000 frac s>0.99 0.000 mean s boundary 0.430 mean s interior 0.275 min s 0.245 max s 0.566
+equal n 8 theta 0.7 k 6 N_k/N 0.622 mean s 0.622 frac s>0.9 0.000 frac s>0.99 0.000 mean s boundary 0.737 mean s interior 0.553 min s 0.402 max s 0.846
+equal n 8 theta 0.8 k 6 N_k/N 0.622 mean s 0.622 frac s>0.9 0.000 frac s>0.99 0.000 mean s boundary 0.737 mean s interior 0.553 min s 0.402 max s 0.846
+equal n 8 theta 0.9 k 7 N_k/N 0.800 mean s 0.800 frac s>0.9 0.044 frac s>0.99 0.000 mean s boundary 0.878 mean s interior 0.753 min s 0.674 max s 0.935
+equal n 8 theta 0.95 k 8 N_k/N 1.000 mean s 1.000 frac s>0.9 1.000 frac s>0.99 1.000 mean s boundary 1.000 mean s interior 1.000 min s 1.000 max s 1.000
+cubature n 4 theta 0.5 k 2 N_k/N 0.400 mean s 0.400 frac s>0.9 0.000 frac s>0.99 0.000 mean s boundary 0.378 mean s interior 0.433 min s 0.325 max s 0.481
+cubature n 4 theta 0.7 k 3 N_k/N 0.667 mean s 0.667 frac s>0.9 0.000 frac s>0.99 0.000 mean s boundary 0.661 mean s interior 0.675 min s 0.619 max s 0.731
+cubature n 4 theta 0.8 k 3 N_k/N 0.667 mean s 0.667 frac s>0.9 0.000 frac s>0.99 0.000 mean s boundary 0.661 mean s interior 0.675 min s 0.619 max s 0.731
+cubature n 4 theta 0.9 k 4 N_k/N 1.000 mean s 1.000 frac s>0.9 1.000 frac s>0.99 1.000 mean s boundary 1.000 mean s interior 1.000 min s 1.000 max s 1.000
+cubature n 4 theta 0.95 k 4 N_k/N 1.000 mean s 1.000 frac s>0.9 1.000 frac s>0.99 1.000 mean s boundary 1.000 mean s interior 1.000 min s 1.000 max s 1.000
+cubature n 6 theta 0.5 k 3 N_k/N 0.357 mean s 0.357 frac s>0.9 0.000 frac s>0.99 0.000 mean s boundary 0.335 mean s interior 0.376 min s 0.271 max s 0.472
+cubature n 6 theta 0.7 k 4 N_k/N 0.536 mean s 0.536 frac s>0.9 0.000 frac s>0.99 0.000 mean s boundary 0.520 mean s interior 0.549 min s 0.480 max s 0.609
+cubature n 6 theta 0.8 k 5 N_k/N 0.750 mean s 0.750 frac s>0.9 0.000 frac s>0.99 0.000 mean s boundary 0.745 mean s interior 0.754 min s 0.683 max s 0.812
+cubature n 6 theta 0.9 k 5 N_k/N 0.750 mean s 0.750 frac s>0.9 0.000 frac s>0.99 0.000 mean s boundary 0.745 mean s interior 0.754 min s 0.683 max s 0.812
+cubature n 6 theta 0.95 k 6 N_k/N 1.000 mean s 1.000 frac s>0.9 1.000 frac s>0.99 1.000 mean s boundary 1.000 mean s interior 1.000 min s 1.000 max s 1.000
+cubature n 8 theta 0.5 k 4 N_k/N 0.333 mean s 0.333 frac s>0.9 0.000 frac s>0.99 0.000 mean s boundary 0.314 mean s interior 0.345 min s 0.281 max s 0.467
+cubature n 8 theta 0.7 k 6 N_k/N 0.622 mean s 0.622 frac s>0.9 0.000 frac s>0.99 0.000 mean s boundary 0.611 mean s interior 0.629 min s 0.568 max s 0.686
+cubature n 8 theta 0.8 k 6 N_k/N 0.622 mean s 0.622 frac s>0.9 0.000 frac s>0.99 0.000 mean s boundary 0.611 mean s interior 0.629 min s 0.568 max s 0.686
+cubature n 8 theta 0.9 k 7 N_k/N 0.800 mean s 0.800 frac s>0.9 0.000 frac s>0.99 0.000 mean s boundary 0.797 mean s interior 0.802 min s 0.733 max s 0.847
+cubature n 8 theta 0.95 k 8 N_k/N 1.000 mean s 1.000 frac s>0.9 1.000 frac s>0.99 1.000 mean s boundary 1.000 mean s interior 1.000 min s 1.000 max s 1.000
+--- gen4_tests19 (A) logic (equispaced grid), n <= 8
+eq2D n 4 theta 0.5 k 2 N_k/M 0.240 frac s>1-1e-6: 0.000 frac s>0.99: 0.000 min maxnorm of saturated: -1.000 | s at (1,1) 0.474 (1,0) 0.234 (0,0) 0.154
+eq2D n 4 theta 0.75 k 3 N_k/M 0.400 frac s>1-1e-6: 0.000 frac s>0.99: 0.000 min maxnorm of saturated: -1.000 | s at (1,1) 0.743 (1,0) 0.369 (0,0) 0.154
+eq2D n 4 theta 0.9 k 4 N_k/M 0.600 frac s>1-1e-6: 0.000 frac s>0.99: 0.000 min maxnorm of saturated: -1.000 | s at (1,1) 0.910 (1,0) 0.556 (0,0) 0.442
+eq2D n 6 theta 0.5 k 3 N_k/M 0.204 frac s>1-1e-6: 0.000 frac s>0.99: 0.000 min maxnorm of saturated: -1.000 | s at (1,1) 0.540 (1,0) 0.221 (0,0) 0.075
+eq2D n 6 theta 0.75 k 4 N_k/M 0.306 frac s>1-1e-6: 0.000 frac s>0.99: 0.000 min maxnorm of saturated: -1.000 | s at (1,1) 0.752 (1,0) 0.320 (0,0) 0.178
+eq2D n 6 theta 0.9 k 5 N_k/M 0.429 frac s>1-1e-6: 0.000 frac s>0.99: 0.000 min maxnorm of saturated: -1.000 | s at (1,1) 0.892 (1,0) 0.428 (0,0) 0.178
+eq2D n 8 theta 0.5 k 4 N_k/M 0.185 frac s>1-1e-6: 0.000 frac s>0.99: 0.000 min maxnorm of saturated: -1.000 | s at (1,1) 0.608 (1,0) 0.220 (0,0) 0.101
+eq2D n 8 theta 0.75 k 6 N_k/M 0.346 frac s>1-1e-6: 0.000 frac s>0.99: 0.000 min maxnorm of saturated: -1.000 | s at (1,1) 0.894 (1,0) 0.378 (0,0) 0.193
+eq2D n 8 theta 0.9 k 7 N_k/M 0.444 frac s>1-1e-6: 0.000 frac s>0.99: 0.000 min maxnorm of saturated: -1.000 | s at (1,1) 0.957 (1,0) 0.469 (0,0) 0.193

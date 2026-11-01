@@ -1,0 +1,32 @@
+{
+  "audited_sha": "0ef90edc5b4d5639474cca7fa8d6d688e684e505",
+  "main_sha": "9739a0c56b7a3976422ce60a8441bfbbfd6554df",
+  "scope": "focused accepted review and current-stage metadata only",
+  "files": [
+    {
+      "path": "topics/programme-ideas-20261031/LOG.md",
+      "bytes": 29520,
+      "sha256": "8ed3228ab36b5650cee7195f101bbc19bd55c9c72a4ca9c68a86c20f88ba420c"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-03-support/check-response-02.json",
+      "bytes": 7724,
+      "sha256": "cecd9420e3d33c6489a7e4be68b00b819fe5b0b5f0d746e556c976eeb3a5e8bf"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-03-support/check-response-02.py",
+      "bytes": 3839,
+      "sha256": "05f7b7852ff802c30b48abde9a9b658a4a65dc56815b838f582c7bbde6f55913"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-03-support/targets-review.md",
+      "bytes": 9397,
+      "sha256": "032fefa89bab04dc6c4f75e5f3e90a6d0c6282d14a48690df12104151ac2a7ec"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-03.md",
+      "bytes": 10566,
+      "sha256": "6bcca66674feca82e7c5e35d35c02b6fb0fc75b495d3bf4e031e193bfa811d8a"
+    }
+  ]
+}

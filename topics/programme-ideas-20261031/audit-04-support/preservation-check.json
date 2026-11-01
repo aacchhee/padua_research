@@ -1,0 +1,1238 @@
+{
+  "scope": "Integration preservation only; accepted mathematics not reopened; no full mathematical tests executed. Novelty gate not applicable: no novelty-bearing content is proposed or assessed.",
+  "source": "37820a528c863e5cfe2dc2f1f8879b4fd40cf210",
+  "rules_read": "37820a528c863e5cfe2dc2f1f8879b4fd40cf210",
+  "baseline": "f4e213390f66a8c9f0c6bd65131b97b78db873c8",
+  "main": "21e620ba8b5f0e0706f3a8c6613517df04d9d469",
+  "allocation": "6954664fc0906b7e5c8ff0f1804b077bd3b5861f",
+  "merge": "3e0100f1a339c3f63dcb638785917400089a31a6",
+  "checks": {
+    "canonical_allocation": [
+      {
+        "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-01-finite-favard-pattern-pairs.md",
+        "final_ids": [
+          "PD-T095"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "527759ed82ddbc3681ad5e8f0df45c0a8e4bf760",
+          "sha256": "2076b031c26f5d33fdd79e13fcfe06d49b093349de40ffcc34a04f707cbef1fd",
+          "bytes": 11698
+        },
+        "after": {
+          "git_blob": "e84fea46809be6220dc28f1dcaca51dbc09900c6",
+          "sha256": "4b0d8996fad1b5c21be244bca0df7cb2a39fc5ae70a651d75ce2f69cc5d38f2e",
+          "bytes": 11862
+        }
+      },
+      {
+        "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-02-joint-ritz-saturation-bound.md",
+        "final_ids": [
+          "PD-T096"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "32d56f801ec298423484bf811aeeb91ed2559ae5",
+          "sha256": "0ed649103e3de3f1c22875ebb4bed26e1d4c252ba14d1ac971581fd084c8c193",
+          "bytes": 5488
+        },
+        "after": {
+          "git_blob": "8d8a2cd8752459709f9e6920c86bf07b0bfe04a1",
+          "sha256": "8401eb0b1efd9bd2c57f70632131a77c75d5a9368a6235de7b47e1139aa833d6",
+          "bytes": 5652
+        }
+      },
+      {
+        "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-03-compressed-commutator-identity.md",
+        "final_ids": [
+          "PD-T097"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "809f81d6f02b62927038c1d881165ef39087c6fd",
+          "sha256": "4c9156af4f1cb5117d961bc756fbab2bb42eebf2f6180317b657635912f9e83e",
+          "bytes": 4310
+        },
+        "after": {
+          "git_blob": "c715bb221882778c20aaa159fa091fd5cec9b613",
+          "sha256": "f603da3a21a3711eb6a1279d2f000861bcefe500a1dcb13cf82dbacd38125f86",
+          "bytes": 4474
+        }
+      },
+      {
+        "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-04-padua-corner-expansion.md",
+        "final_ids": [
+          "PD-T098"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "427d6c3dae2a2f2b97e146036a839ce3da4e8e21",
+          "sha256": "35abb6bd74b427bf4c8bc258476e6a506d11150a78abeca2735e0e94569abac2",
+          "bytes": 5448
+        },
+        "after": {
+          "git_blob": "c1618ed94f5aa68be6183807d5c417630a291b0c",
+          "sha256": "5b383a3915e20191121d1167b33f35fd2c79a7a87f536aa6f332fe4a100bf4bd",
+          "bytes": 5612
+        }
+      },
+      {
+        "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-05-padua-corner-argmax.md",
+        "final_ids": [
+          "PD-T099"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "2f2e60792cc35a0b0cc6e94a5e0eb631a8f3eed5",
+          "sha256": "47fbbf90a9a985e600519602f13c4b4fd277f6d8c7c9d3da738dac2509711185",
+          "bytes": 3001
+        },
+        "after": {
+          "git_blob": "e05cbcee66ebf307d53a540979dd413ab5c54aeb",
+          "sha256": "292eb99703eb11b0c6f55d2b9806c1abe39191167f84ac5caf66372e4fd2cf5b",
+          "bytes": 3165
+        }
+      },
+      {
+        "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-06-padua-lebesgue-maxima-counts.md",
+        "final_ids": [
+          "PD-T100"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "d35d82a4ab55355062918f7297a9da3ad3227386",
+          "sha256": "ff53d00c2ec0f00e2716cd47a7f57ce53c27a7b51484b3473e9d5742c60d8650",
+          "bytes": 6445
+        },
+        "after": {
+          "git_blob": "ed353743e673d70100a7fd4c937d94c88498f4ac",
+          "sha256": "2b682962dc7dbf102ce44916370a7e7906e83e17bc812a37271e80af974fa626",
+          "bytes": 6609
+        }
+      },
+      {
+        "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N01-symmetrised-product-inertia-count.md",
+        "final_ids": [
+          "PD-N039"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "ab8eecdf50fd23b58c6e61924c17a2ef4c9554b7",
+          "sha256": "a244fd7531ae09b6f69ea00b44b90225a0eeb1e4eddcdba6725eb24b03af0d1e",
+          "bytes": 7215
+        },
+        "after": {
+          "git_blob": "0310faa2c757e13333c731b3fd286a6345a59400",
+          "sha256": "c9cb48f5a0b21cf6bf76e2251c3f91f02320675156f702f00198a81dd3189d32",
+          "bytes": 7379
+        }
+      },
+      {
+        "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N02-windowed-rational-lanczos-instability.md",
+        "final_ids": [
+          "PD-N040"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "ddfc7c06ca2c73891bb8f5b231f04215410a5f0a",
+          "sha256": "777beb22f8364b21e7ecf03e930e586f563e11b361e9fecaacb1b67e956f395b",
+          "bytes": 5696
+        },
+        "after": {
+          "git_blob": "601b7d4be7d9ac272f231b0b49f7570a172f671c",
+          "sha256": "3c96bff3b0827f343932f22b3c629fd7e367a7d19a0d16ccae0ed339d0ccd8ed",
+          "bytes": 5860
+        }
+      },
+      {
+        "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N03-joint-ritz-converse-refuted.md",
+        "final_ids": [
+          "PD-N041"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "9f0f7d5229c63053d20378a9789e2ace7d7858e5",
+          "sha256": "500179a0cb18edd304dc0beb3682662e7134eae35cd03a65286b98a1f00dce5a",
+          "bytes": 5643
+        },
+        "after": {
+          "git_blob": "00cc49ac021be5ad24e67bb03571863fd2ee5855",
+          "sha256": "052b76c378870587da0464bddcc43c0b1596af4d739c6e65a2baf10e03e9da39",
+          "bytes": 5807
+        }
+      },
+      {
+        "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N04-pattern-commutant-not-three-dimensional.md",
+        "final_ids": [
+          "PD-N042"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "0ea8848d9cf69f216fe5d684e866ff5577b85711",
+          "sha256": "5755fa21b7336917b4bf7bde66147bf0750ed41e65d3c037a90f103a10511b9f",
+          "bytes": 4360
+        },
+        "after": {
+          "git_blob": "9b413447048fbeeb39a66003b2361b55b3bb9b12",
+          "sha256": "7e6a9532bb45ff22360f332f37aef3ff8af06a17aec58a7f3b237aa4861177c3",
+          "bytes": 4524
+        }
+      },
+      {
+        "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N05-fourier-basis-commutation-fails.md",
+        "final_ids": [
+          "PD-N043"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "931c1833820b9889bbf86890fd5c6f36ae8c987d",
+          "sha256": "59ef3e48bc689d9345bdaec5d2af3b99f6a2d264a2fbf4ade519967004e4fb92",
+          "bytes": 3892
+        },
+        "after": {
+          "git_blob": "1da3319fba27c842720c0463fd1700a8e368cc4a",
+          "sha256": "c262776ff94f60d00bf4c30ab52292c9f822e5cf0cb5bd5edbff92f6a9f7ecf2",
+          "bytes": 4056
+        }
+      },
+      {
+        "path": "tracks/lattice-unisolvence/theory/c0-catalogue.md",
+        "final_ids": [
+          "PD-T083"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "af91ce38af4b3df2be018668391becbff12ee512",
+          "sha256": "0ce76ca315a58293892cfbc18a06b6a8c1eb3d7ff4ecee7d54014aecabfefe72",
+          "bytes": 5658
+        },
+        "after": {
+          "git_blob": "d02300061c97677eb21a4b72aa1a450c56867b30",
+          "sha256": "a850819a72ab57119026e2b82c3a038ea6c4a816d1ba801ae7e43dc0c3ec5346",
+          "bytes": 5822
+        }
+      },
+      {
+        "path": "tracks/lattice-unisolvence/theory/c0-density.md",
+        "final_ids": [
+          "PD-T081"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "42b843aa4e47c244923f90f96ecfa60c0b318063",
+          "sha256": "059b40e69f37bdc902f6bc1a44b200fc9591afb9f8c36653b72556dba9c0bc90",
+          "bytes": 4720
+        },
+        "after": {
+          "git_blob": "3d925d0453b1c9ef0fa1029e878741c726c73ff3",
+          "sha256": "8aee1047fc725c129550f2a34d6f57185811fd930f704de9555a02611b659db2",
+          "bytes": 4884
+        }
+      },
+      {
+        "path": "tracks/lattice-unisolvence/theory/c0-infinite-six.md",
+        "final_ids": [
+          "PD-T082"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "5d5727a307d7fe1520bd8b7ca8c25ff1b2cf52d3",
+          "sha256": "6e2b884f4860e816b56126326119c7f11fe367b91d5ed0f7f473a7da1eb46727",
+          "bytes": 4931
+        },
+        "after": {
+          "git_blob": "91ef6abfc7cf65954fdc3a37dc7d2f8f4b519564",
+          "sha256": "68ea1e5f5043f067ba9d1aa156c2440a761b4992a04600ec7bde93fd73ae68ba",
+          "bytes": 5095
+        }
+      },
+      {
+        "path": "tracks/lattice-unisolvence/theory/c0-short-axis.md",
+        "final_ids": [
+          "PD-N032"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "580421f2598bab3b031ea27d38cd6ea46fc05ae2",
+          "sha256": "96d90bd71efc853163c332a0e38851d4ef6a4771d4e5c5598d036c5a6631e63b",
+          "bytes": 3281
+        },
+        "after": {
+          "git_blob": "6fd2287182a6431a0d201d6558d1d97eebb45a77",
+          "sha256": "2ef243bd1837f18914f3572e84e4c837d3b474cf8755aff208d98347c7318691",
+          "bytes": 3445
+        }
+      },
+      {
+        "path": "tracks/lattice-unisolvence/theory/c1-chebyshev-obstruction.md",
+        "final_ids": [
+          "PD-N034"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "ad16417748d9562a2bb40047017cdfb86ee1e2b1",
+          "sha256": "6fd42c8a388f9e2d68e367700a06e4956501f3137f02910f4063f24bfc6b4a40",
+          "bytes": 4179
+        },
+        "after": {
+          "git_blob": "0f8b81354f12a1daa32fe17810866b44a36b78b6",
+          "sha256": "46b1fd2ef9b0fec9729b0d23424279e6d48853e78fb007a4127bce71aaa073db",
+          "bytes": 4343
+        }
+      },
+      {
+        "path": "tracks/lattice-unisolvence/theory/c1-counts.md",
+        "final_ids": [
+          "PD-T085"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "1ea56d39b1e3571cd5c5d6f708b7b566fe9af6cd",
+          "sha256": "884f4892e2e016e6fdc3b2fe892e9fe49954711ef5721670860940418d316157",
+          "bytes": 3768
+        },
+        "after": {
+          "git_blob": "1920bdc86ed1d052f4827ed75c7e1573b0a7f8eb",
+          "sha256": "461060ec45742d3c827a86f8958d0853a22af6582905f36d703a3c9d61923895",
+          "bytes": 3932
+        }
+      },
+      {
+        "path": "tracks/lattice-unisolvence/theory/c1-finite-evidence.md",
+        "final_ids": [
+          "PD-T089"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "084ee0e39e6f082ece7c4ff6df119bd33114a86e",
+          "sha256": "90b72ef657c3ee3bd59a31c0f4b51904cff3966a4fe408ecc7768ada7424cd8c",
+          "bytes": 4912
+        },
+        "after": {
+          "git_blob": "5fabdaf70eb4e0b3149470bfa368edf194f107be",
+          "sha256": "c7ba630064d72b5f522a7a2b432796dabfe6332fb3e2fcdfbc932581c0dc8ab8",
+          "bytes": 5076
+        }
+      },
+      {
+        "path": "tracks/lattice-unisolvence/theory/c1-gram-reduction.md",
+        "final_ids": [
+          "PD-T087"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "94a6a60683647fb6c2fbe72d3b6bae71e043ba8b",
+          "sha256": "7bef7debf9c48ea5b18687ac685210a24a2628650b51ba30c593c02e23e42e22",
+          "bytes": 7920
+        },
+        "after": {
+          "git_blob": "aee950ed5c09c0a288e994bf8b31de41bbf01aa4",
+          "sha256": "209e9a39524a7838bd90737facdec030b84e7023148ce8d48a20fdc77e59ec5f",
+          "bytes": 8084
+        }
+      },
+      {
+        "path": "tracks/lattice-unisolvence/theory/c1-mixed-obstruction.md",
+        "final_ids": [
+          "PD-N033"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "83fe4abcba55192f73465b3369cb82ea17bd964c",
+          "sha256": "c86e08054263148c209b09da0e29ea9c5cd934e7cbaace1b2144c1373ade519a",
+          "bytes": 4892
+        },
+        "after": {
+          "git_blob": "00b3b1c9c3d4c5fc64382c80507f1a3ce99aa2b0",
+          "sha256": "4b4a20b322c3b02b0bfedd9398b405ee9abc1f6f47f8b9e0c83dba9ee2684360",
+          "bytes": 5056
+        }
+      },
+      {
+        "path": "tracks/lattice-unisolvence/theory/c1-open-family.md",
+        "final_ids": [
+          "PD-T088"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "5feb06fe4294aaf0faab9837a7901d8fd43f641a",
+          "sha256": "33e493d79d0c608cf4be8538d6e3f628a5f2fdcec4cd26a11ce48e110f8c0dab",
+          "bytes": 4852
+        },
+        "after": {
+          "git_blob": "d6c0ff07348a1742989262504c392c381341cb1a",
+          "sha256": "374f472102c8974576f60538caf569b7f1149b6bc6ab6cbaa198387b8cdbf714",
+          "bytes": 5016
+        }
+      },
+      {
+        "path": "tracks/lattice-unisolvence/theory/c1-quadratic.md",
+        "final_ids": [
+          "PD-T084"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "aacff2cab9d6f488fe7f77355fdff5d1c0d4db8e",
+          "sha256": "18cbae1ab09cd8e4764cd6f071277ec6cbf7831e98639599d6fd9371363250a6",
+          "bytes": 6114
+        },
+        "after": {
+          "git_blob": "7cf06ec02c601cac9049b87295cbb620b2344870",
+          "sha256": "fbe2318059be4643e3973c8a9eae511c74d7ecab48d7c64f605f172cdbaae0ff",
+          "bytes": 6278
+        }
+      },
+      {
+        "path": "tracks/lattice-unisolvence/theory/c1-row-moments.md",
+        "final_ids": [
+          "PD-T086"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "84e10d71bbf739a32b3963a36c64e4753b54b50f",
+          "sha256": "4608bb60694c97e06588f6367fa8831eedc82768903af36c40b6da7010a95876",
+          "bytes": 5060
+        },
+        "after": {
+          "git_blob": "1d505baf199e6853e52bfeb10a46769deef81d1f",
+          "sha256": "bd80d719e481b47ef54a11bde4529912fd821b47c90140a967863ab407560f23",
+          "bytes": 5224
+        }
+      },
+      {
+        "path": "tracks/lattice-unisolvence/theory/c3-annihilator-certificates.md",
+        "final_ids": [
+          "PD-T091"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "19883630574aa054d9607fe083b4a30fbfa03e79",
+          "sha256": "a9d2308a8061c5b369331f58cf8a19651c59f15bd294316daff8de05d70bf59f",
+          "bytes": 3823
+        },
+        "after": {
+          "git_blob": "9084c36e08005b5fdcc40b7132a2313bb736c068",
+          "sha256": "a6f9bd8b776f2ee42a23a920ecde5ef68ce687fa66e0c75a10b9bbe5788340fe",
+          "bytes": 3987
+        }
+      },
+      {
+        "path": "tracks/lattice-unisolvence/theory/c3-chebyshev-observations.md",
+        "final_ids": [
+          "PD-N037"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "37fb49051b4949886e7425d8c27da9595a7fcbca",
+          "sha256": "430aff80b82b563ff7d84f9fde646de6277db40ddd67badc792adcfee52ec1ad",
+          "bytes": 5271
+        },
+        "after": {
+          "git_blob": "fab72f2159c60ade463d72d78f46a536dccd6184",
+          "sha256": "45d8cc9379555fe4110478a1040ff091a580280f3d5d7e978d40c857d8035a0c",
+          "bytes": 5435
+        }
+      },
+      {
+        "path": "tracks/lattice-unisolvence/theory/c3-deficiency-observations.md",
+        "final_ids": [
+          "PD-N035"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "3e5151d88b069b45c4e3b6cd732c1e093c98282f",
+          "sha256": "eb4d4433cfb19700d7063c5ae018516555e2f2c74907d51533d6ec568e64edfd",
+          "bytes": 4130
+        },
+        "after": {
+          "git_blob": "f3192e78727c420c19f7c90d3631602a799ef3ed",
+          "sha256": "27e60ef3a47e0624036827a7ae0d73bbac66de1ec5835e4d61dc376400a7af6a",
+          "bytes": 4294
+        }
+      },
+      {
+        "path": "tracks/lattice-unisolvence/theory/c3-generic-witness-reduction.md",
+        "final_ids": [
+          "PD-T090"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "7eefbc0aebea5af729602c971653baaa44929b04",
+          "sha256": "da860515af4bbdabafb5b5086f876b43e9a73b36ff7093fced5dde2204f19cdb",
+          "bytes": 6795
+        },
+        "after": {
+          "git_blob": "b00269793e3a24463ffef1d57731009d49c8da98",
+          "sha256": "62874093640e08a72f2b8afa797bb7c854ce1b14e197be6dc916ee62b0351280",
+          "bytes": 6959
+        }
+      },
+      {
+        "path": "tracks/lattice-unisolvence/theory/c3-n1-mixed-axis-obstruction.md",
+        "final_ids": [
+          "PD-N036"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "47a1e7b863e01621ceb3523a96ee4bdd7658611d",
+          "sha256": "a2e3ec6943c8e89cc10f5084817cafbf60f9b41906b6c071433fab65a9f05a23",
+          "bytes": 5145
+        },
+        "after": {
+          "git_blob": "c117d4ad94208d65f3225bbd661ca6b3f5441556",
+          "sha256": "29a048d3266f348084cf6fa49d11cca64945ec8bc335223d14674d05e6675f32",
+          "bytes": 5309
+        }
+      },
+      {
+        "path": "tracks/lattice-unisolvence/theory/c3-n2-axis-factorization.md",
+        "final_ids": [
+          "PD-T093"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "a4b66cc7d50094b4800bd20eedc5736bc4a03b43",
+          "sha256": "c8193eac26d3f92bd5ca527b4418c3a4a6dd674f86260849ded81e6495ed5beb",
+          "bytes": 6104
+        },
+        "after": {
+          "git_blob": "19acaf8ba9922c32d87737b663f3b5702fd95f9d",
+          "sha256": "2be27391682866bb98a96baa21f3b568b366cd069f334b0bdeb7d5f36f3f70ed",
+          "bytes": 6268
+        }
+      },
+      {
+        "path": "tracks/lattice-unisolvence/theory/c3-open-target.md",
+        "final_ids": [
+          "PD-T094"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "96861732c4477828e40166e79a62e9050c7b83c5",
+          "sha256": "9393c2c8af807a0ac664ef718537d48cb2bfb497dcb16e06a57384d463d9e34f",
+          "bytes": 4413
+        },
+        "after": {
+          "git_blob": "86685802ca05a8e1b8018af8963cbad6e968ca5e",
+          "sha256": "4a2d4a60c8b347be85d348db7c6457f00ba6b6e56e0ba363d2c28ffacb27a061",
+          "bytes": 4577
+        }
+      },
+      {
+        "path": "tracks/lattice-unisolvence/theory/c3-rank-observations.md",
+        "final_ids": [
+          "PD-T092"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "fb2256503e4eb034466091b414c4bc0c1e6a2b5d",
+          "sha256": "caa1246e820d3ee59909e80d06e03c722a6ad6c3d6bac1e538efb47719f2f639",
+          "bytes": 5078
+        },
+        "after": {
+          "git_blob": "a18f166b62a04ada3ed15b33003ab1af2a63484d",
+          "sha256": "6d2e757970574458d44d4546915c4bc149faa398e144efb1b537690e6099e8be",
+          "bytes": 5242
+        }
+      },
+      {
+        "path": "tracks/lattice-unisolvence/theory/c3-rectangle-observations.md",
+        "final_ids": [
+          "PD-N038"
+        ],
+        "count": 1,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "4ae07676784f851559464babc40c985f53ebd586",
+          "sha256": "32c7e4aacf58736eb10b88b70783609976adc7a17f62698dcb9fe3c4912d0570",
+          "bytes": 3667
+        },
+        "after": {
+          "git_blob": "a41e3ee97ee0ae7a3c5c9320bcbf4d5ed7cbab17",
+          "sha256": "d04cd49ed68b0a8dfe815e3bb6301740dbbc931eca3b8d8ab2315a7e659ffb51",
+          "bytes": 3831
+        }
+      },
+      {
+        "path": "topics/lattice-unisolvence-20261031/directions/C0/candidates.md",
+        "final_ids": [
+          "IDEA-177",
+          "IDEA-178",
+          "IDEA-179",
+          "IDEA-180",
+          "IDEA-181"
+        ],
+        "count": 5,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "cd0faf3dbc6e9b4a6e3a1c410b542f7c896e9d10",
+          "sha256": "9f8c4dd6d27a571c2f4c237312102d3cd6fec6b29946cb89dd4fca843a799638",
+          "bytes": 9085
+        },
+        "after": {
+          "git_blob": "2f82c408cfd0e5083f439a56d2a4c4c533411c23",
+          "sha256": "74def09b09180e2176a6fd96814a363cd8623abbdfd6b4e5a8946c41989e0dfd",
+          "bytes": 9910
+        }
+      },
+      {
+        "path": "topics/lattice-unisolvence-20261031/directions/C1/candidates.md",
+        "final_ids": [
+          "IDEA-182",
+          "IDEA-183",
+          "IDEA-184"
+        ],
+        "count": 3,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "38366ad5104cd90cb2062057e4bf8128ede479a3",
+          "sha256": "0e200b0f4cc8dc7093f5b92c74140c8978615c303c6d99a5bdbb0e8f96a53f09",
+          "bytes": 10402
+        },
+        "after": {
+          "git_blob": "feab7e6d04ce1f17cb34cb2bf288be44d21890d4",
+          "sha256": "369d166965c145a4efe880e43556b00e7cc6013c8b55a4d824605d8532a2622b",
+          "bytes": 10897
+        }
+      },
+      {
+        "path": "topics/lattice-unisolvence-20261031/directions/C3/candidates.md",
+        "final_ids": [
+          "IDEA-185",
+          "IDEA-186",
+          "IDEA-187",
+          "IDEA-188",
+          "IDEA-189"
+        ],
+        "count": 5,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "454dbd7b327be7d45711bc4240772e30afdf9c74",
+          "sha256": "21f07e0ba3ff9b3ce84b82dbf7a29edf689844c080687a66ccd986679e2b4b51",
+          "bytes": 7910
+        },
+        "after": {
+          "git_blob": "f7d37a379ddc7175f207e6cc71d479bb02e99176",
+          "sha256": "767baca475a2781f1a830738bf54d6712bd5e96677e0ddd6110553bd82dd6e61",
+          "bytes": 8735
+        }
+      },
+      {
+        "path": "topics/programme-ideas-20261031/ideas/candidates.md",
+        "final_ids": [
+          "IDEA-190",
+          "IDEA-191",
+          "IDEA-193",
+          "IDEA-194",
+          "IDEA-195",
+          "IDEA-196",
+          "IDEA-197",
+          "IDEA-198",
+          "IDEA-199",
+          "IDEA-200",
+          "IDEA-201",
+          "IDEA-202",
+          "IDEA-203",
+          "IDEA-204",
+          "IDEA-205",
+          "IDEA-207",
+          "IDEA-208",
+          "IDEA-209",
+          "IDEA-192",
+          "IDEA-206"
+        ],
+        "count": 20,
+        "existing_bytes_preserved": true,
+        "before": {
+          "git_blob": "00bee144e38d13540a4936c3afb99eadd6012b43",
+          "sha256": "eca1c969cf845e4f0180066ec4c7264e7e7acea44c015132920a3cf31caa7bf7",
+          "bytes": 122936
+        },
+        "after": {
+          "git_blob": "7d17cbf648921701c2e3bd9d1ae4d3eb7b461367",
+          "sha256": "2658ac851dcb2d5f3da0212c0ec827f377e15d4170e6718995a20b9d70311a99",
+          "bytes": 126236
+        }
+      }
+    ],
+    "baseline_protected": {
+      "count": 197,
+      "differences": [],
+      "paths": [
+        "AGENTS.md",
+        "agents/WORKFLOW.md",
+        "agents/claude/CLAUDE_ROLES.md",
+        "agents/codex/CODEX.md",
+        "topics/programme-ideas-20261031/audit-01.md",
+        "topics/programme-ideas-20261031/audit-02-support/delivery-manifest.json",
+        "topics/programme-ideas-20261031/audit-02-support/literature-check.json",
+        "topics/programme-ideas-20261031/audit-02-support/literature-check.py",
+        "topics/programme-ideas-20261031/audit-02-support/literature-review.md",
+        "topics/programme-ideas-20261031/audit-02-support/obstructions-check.json",
+        "topics/programme-ideas-20261031/audit-02-support/obstructions-check.py",
+        "topics/programme-ideas-20261031/audit-02-support/obstructions-report.md",
+        "topics/programme-ideas-20261031/audit-02-support/proposal-edge-independent.json",
+        "topics/programme-ideas-20261031/audit-02-support/proposal-edge-independent.py",
+        "topics/programme-ideas-20261031/audit-02-support/proposal-edge-independent.txt",
+        "topics/programme-ideas-20261031/audit-02-support/proposal-edge-rerun.txt",
+        "topics/programme-ideas-20261031/audit-02-support/proposal-identity.json",
+        "topics/programme-ideas-20261031/audit-02-support/proposal-manifest.json",
+        "topics/programme-ideas-20261031/audit-02-support/proposal-review.md",
+        "topics/programme-ideas-20261031/audit-02-support/protocol-check.json",
+        "topics/programme-ideas-20261031/audit-02-support/protocol-check.py",
+        "topics/programme-ideas-20261031/audit-02-support/rejections-developer-parity-replay.json",
+        "topics/programme-ideas-20261031/audit-02-support/rejections-exact-check.json",
+        "topics/programme-ideas-20261031/audit-02-support/rejections-exact-check.py",
+        "topics/programme-ideas-20261031/audit-02-support/rejections-manifest.json",
+        "topics/programme-ideas-20261031/audit-02-support/rejections-review.md",
+        "topics/programme-ideas-20261031/audit-02.md",
+        "topics/programme-ideas-20261031/audit-03-support/check-response-02.json",
+        "topics/programme-ideas-20261031/audit-03-support/check-response-02.py",
+        "topics/programme-ideas-20261031/audit-03-support/delivery-manifest.json",
+        "topics/programme-ideas-20261031/audit-03-support/targets-review.md",
+        "topics/programme-ideas-20261031/audit-03.md",
+        "topics/programme-ideas-20261031/audit-support/delivery-manifest.json",
+        "topics/programme-ideas-20261031/audit-support/literature-check.json",
+        "topics/programme-ideas-20261031/audit-support/literature-check.py",
+        "topics/programme-ideas-20261031/audit-support/literature-review.md",
+        "topics/programme-ideas-20261031/audit-support/obstructions-check.json",
+        "topics/programme-ideas-20261031/audit-support/obstructions-check.py",
+        "topics/programme-ideas-20261031/audit-support/obstructions-report.md",
+        "topics/programme-ideas-20261031/audit-support/proposal-degenerate-counterexample.json",
+        "topics/programme-ideas-20261031/audit-support/proposal-degenerate-counterexample.py",
+        "topics/programme-ideas-20261031/audit-support/proposal-degenerate-counterexample.txt",
+        "topics/programme-ideas-20261031/audit-support/proposal-fit.json",
+        "topics/programme-ideas-20261031/audit-support/proposal-fit.py",
+        "topics/programme-ideas-20261031/audit-support/proposal-fit.txt",
+        "topics/programme-ideas-20261031/audit-support/proposal-independent.json",
+        "topics/programme-ideas-20261031/audit-support/proposal-independent.py",
+        "topics/programme-ideas-20261031/audit-support/proposal-independent.txt",
+        "topics/programme-ideas-20261031/audit-support/proposal-manifest.json",
+        "topics/programme-ideas-20261031/audit-support/proposal-rerun.json",
+        "topics/programme-ideas-20261031/audit-support/proposal-rerun.py",
+        "topics/programme-ideas-20261031/audit-support/proposal-rerun.txt",
+        "topics/programme-ideas-20261031/audit-support/proposal-review.md",
+        "topics/programme-ideas-20261031/audit-support/protocol-check.json",
+        "topics/programme-ideas-20261031/audit-support/protocol-check.py",
+        "topics/programme-ideas-20261031/audit-support/rejections-ah-replay.txt",
+        "topics/programme-ideas-20261031/audit-support/rejections-check.json",
+        "topics/programme-ideas-20261031/audit-support/rejections-check.py",
+        "topics/programme-ideas-20261031/audit-support/rejections-manifest.json",
+        "topics/programme-ideas-20261031/audit-support/rejections-pg-replay.txt",
+        "topics/programme-ideas-20261031/audit-support/rejections-review.md",
+        "topics/programme-ideas-20261031/audit-support/source-manifest.json",
+        "topics/programme-ideas-20261031/checks/code/adv/M1/m1_moller_extension.log",
+        "topics/programme-ideas-20261031/checks/code/adv/M1/m1_moller_extension.py",
+        "topics/programme-ideas-20261031/checks/code/adv/M1/m1_word_rule.log",
+        "topics/programme-ideas-20261031/checks/code/adv/M1/m1_word_rule.py",
+        "topics/programme-ideas-20261031/checks/code/adv/M2/m2_chart_tests.py",
+        "topics/programme-ideas-20261031/checks/code/adv/M2/m2_common.py",
+        "topics/programme-ideas-20261031/checks/code/adv/M2/m2_favard_commutant.py",
+        "topics/programme-ideas-20261031/checks/code/adv/M2/m2_pencil_conditioning.py",
+        "topics/programme-ideas-20261031/checks/code/adv/M2/m2_rim_chart_check.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen1-2/ah_breakdown_exact.out",
+        "topics/programme-ideas-20261031/checks/code/adv/gen1-2/ah_breakdown_exact.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen1-2/qs_rank.out",
+        "topics/programme-ideas-20261031/checks/code/adv/gen1-2/qs_rank.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen1-2/sobolev_adv.out",
+        "topics/programme-ideas-20261031/checks/code/adv/gen1-2/sobolev_adv.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen1-3/approx_baseline.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen1-3/approx_baseline2.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen1-3/window_complex.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen1-3/window_test.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen2-3/pairs.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen2-3/t1_replicate_n8.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen2-3/t2_ldl_N231.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen2-3/t3_delta_exponent.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen2-3/t3b_diagnose.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen2-3/t4_univariate_route.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen2-3/t5_relative_padua.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen3-1/commutator_out.txt",
+        "topics/programme-ideas-20261031/checks/code/adv/gen3-1/commutator_sections.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen3-1/curve_kappa_adv.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen3-1/kappa_extremes.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen3-1/kappa_extremes_out.txt",
+        "topics/programme-ideas-20261031/checks/code/adv/gen3-1/kappa_out.txt",
+        "topics/programme-ideas-20261031/checks/code/adv/gen3-3/bandwidth_pg_probe.out",
+        "topics/programme-ideas-20261031/checks/code/adv/gen3-3/bandwidth_pg_probe.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen4-1/adv_gen4_1_product_structure.out",
+        "topics/programme-ideas-20261031/checks/code/adv/gen4-1/adv_gen4_1_product_structure.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen4-1/adv_gen4_1_scope_extension.out",
+        "topics/programme-ideas-20261031/checks/code/adv/gen4-1/adv_gen4_1_scope_extension.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen4-1/rerun_gen4_saturation_n_le_8.out",
+        "topics/programme-ideas-20261031/checks/code/adv/gen4-1/rerun_gen4_saturation_n_le_8.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_corner_const.out",
+        "topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_corner_const.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_corner_fit.out",
+        "topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_corner_fit.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_corner_parity.out",
+        "topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_corner_parity.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_maxima_count.out",
+        "topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_maxima_count.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_maxima_count2.out",
+        "topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_maxima_count2.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_rhombus_L1.out",
+        "topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_rhombus_L1.py",
+        "topics/programme-ideas-20261031/checks/code/adv/gen4-2/adv_rhombus_crosscheck.py",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/T1_T3.out",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/T1b.out",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/T2.out",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/T2c.out",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/orf2d.py",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/run_T1_T3.py",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/run_T1b.py",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/run_T2.py",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/run_T2c.py",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/window_exact.out",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/window_exact.py",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/leb_common.py",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_argmax.json",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_argmax.out",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_argmax.py",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_tail.out",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_tail.py",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_halfshift.out",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_halfshift.py",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_identify.out",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_identify.py",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_identify2.out",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_odd.out",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_odd.py",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_onepage.out",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_onepage.py",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_certify.log",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_certify.out",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_certify.py",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_degenerate.py",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_maxima.json",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_validate.out",
+        "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_validate.py",
+        "topics/programme-ideas-20261031/checks/code/gen1/sobolev.py",
+        "topics/programme-ideas-20261031/checks/code/gen1/wordcensus.py",
+        "topics/programme-ideas-20261031/checks/code/gen2/chart_test.py",
+        "topics/programme-ideas-20261031/checks/code/gen2/hb_from_recurrence.py",
+        "topics/programme-ideas-20261031/checks/code/gen2/nearly_commuting_probe.py",
+        "topics/programme-ideas-20261031/checks/code/gen2/sturm_pair_check.py",
+        "topics/programme-ideas-20261031/checks/code/gen2/tangent_dim.py",
+        "topics/programme-ideas-20261031/checks/code/gen2/tangent_dim2.py",
+        "topics/programme-ideas-20261031/checks/code/gen2/tear_factor_ranks.py",
+        "topics/programme-ideas-20261031/checks/code/gen2/tear_level_rank.py",
+        "topics/programme-ideas-20261031/checks/code/gen3/butterfly_probe.py",
+        "topics/programme-ideas-20261031/checks/code/gen3/butterfly_probe2.py",
+        "topics/programme-ideas-20261031/checks/code/gen3/curve_measure_probe.py",
+        "topics/programme-ideas-20261031/checks/code/gen3/polygon_sparse_ops_probe.py",
+        "topics/programme-ideas-20261031/checks/code/gen3/tomography_design_probe.py",
+        "topics/programme-ideas-20261031/checks/code/gen4/gen4_tests.py",
+        "topics/programme-ideas-20261031/checks/code/gen4/gen4_tests10.py",
+        "topics/programme-ideas-20261031/checks/code/gen4/gen4_tests11.py",
+        "topics/programme-ideas-20261031/checks/code/gen4/gen4_tests12.py",
+        "topics/programme-ideas-20261031/checks/code/gen4/gen4_tests13.py",
+        "topics/programme-ideas-20261031/checks/code/gen4/gen4_tests14.py",
+        "topics/programme-ideas-20261031/checks/code/gen4/gen4_tests15.py",
+        "topics/programme-ideas-20261031/checks/code/gen4/gen4_tests16.py",
+        "topics/programme-ideas-20261031/checks/code/gen4/gen4_tests17.py",
+        "topics/programme-ideas-20261031/checks/code/gen4/gen4_tests18.py",
+        "topics/programme-ideas-20261031/checks/code/gen4/gen4_tests19.py",
+        "topics/programme-ideas-20261031/checks/code/gen4/gen4_tests2.py",
+        "topics/programme-ideas-20261031/checks/code/gen4/gen4_tests20.py",
+        "topics/programme-ideas-20261031/checks/code/gen4/gen4_tests21.py",
+        "topics/programme-ideas-20261031/checks/code/gen4/gen4_tests22.py",
+        "topics/programme-ideas-20261031/checks/code/gen4/gen4_tests23.py",
+        "topics/programme-ideas-20261031/checks/code/gen4/gen4_tests24.py",
+        "topics/programme-ideas-20261031/checks/code/gen4/gen4_tests3.py",
+        "topics/programme-ideas-20261031/checks/code/gen4/gen4_tests4.py",
+        "topics/programme-ideas-20261031/checks/code/gen4/gen4_tests5.py",
+        "topics/programme-ideas-20261031/checks/code/gen4/gen4_tests6.py",
+        "topics/programme-ideas-20261031/checks/code/gen4/gen4_tests7.py",
+        "topics/programme-ideas-20261031/checks/code/gen4/gen4_tests8.py",
+        "topics/programme-ideas-20261031/checks/code/gen4/gen4_tests9.py",
+        "topics/programme-ideas-20261031/checks/code/response-01/inertia_two_node_family.out",
+        "topics/programme-ideas-20261031/checks/code/response-01/inertia_two_node_family.py",
+        "topics/programme-ideas-20261031/checks/code/response-02/padua_n3_edge_identity.out",
+        "topics/programme-ideas-20261031/checks/code/response-02/padua_n3_edge_identity.py",
+        "topics/programme-ideas-20261031/checks/code/response-02/padua_pattern_commutant.out",
+        "topics/programme-ideas-20261031/checks/code/response-02/padua_pattern_commutant.py",
+        "topics/programme-ideas-20261031/checks/code/response-02/ritz_converse_parity.out",
+        "topics/programme-ideas-20261031/checks/code/response-02/ritz_converse_parity.py",
+        "topics/programme-ideas-20261031/checks/code/response-02/ritz_saturated_centre.out",
+        "topics/programme-ideas-20261031/checks/code/response-02/ritz_saturated_centre.py"
+      ]
+    },
+    "rules_diff_from_main": [
+      "agents/WORKFLOW.md",
+      "agents/claude/CLAUDE_ROLES.md"
+    ],
+    "baseline_nonallocation_theory_diffs": [
+      {
+        "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-01-finite-favard-pattern-pairs.md",
+        "diff": "--- \n+++ \n@@ -53,7 +53,7 @@\n (a) Commuting real symmetric matrices are simultaneously orthogonally diagonalisable: H_x = QΛ_xQᵀ, H_y = QΛ_yQᵀ. Define polynomials p_1 = 1 and, for m_k = x·m_j, p_k := (x p_j − Σ_{i<k} H_x[i, j] p_i)/H_x[k, j] (the sum runs over the rows allowed by the pattern in column j; similarly with y for m_k = y·m_j). Let v be any joint eigenvector with eigenvalue λ = (ξ, η). Row j of H_x v = ξ v, read through symmetry as the column-j equation Σ_{i ≤ π_x(j)} H_x[i, j] v_i = ξ v_j, gives v_k = v_1 p_k(λ) by induction on k (the pivot H_x[k, j] ≠ 0 allows solving for v_k). Hence v_1 ≠ 0 (otherwise v = 0), every joint eigenspace is one-dimensional, and the N joint eigenvalues are distinct, with q_k = ±P(λ_k)/‖P(λ_k)‖, P = (p_1, …, p_N)ᵀ, and w_k = (e_1ᵀq_k)² = ‖P(λ_k)‖^{−2} > 0, Σ w_k = ‖e_1‖² = 1. QᵀQ = I reads Σ_k w_k p_i(λ_k) p_l(λ_k) = δ_{il}: the p_i are orthonormal in L²(μ). By construction p_k has leading monomial m_k with nonzero leading coefficient, so {p_i} spans Π_n, the N × N evaluation matrix [p_i(λ_k)] is invertible, and {λ_k} is Π_n-unisolvent. Up to the signs of the p_i (fixed by requiring positive leading coefficients, equivalently positive pivots after the diagonal sign gauge) {p_i} is the graded orthonormal basis of μ, and H_x = QΛ_xQᵀ has entries Σ_k w_k ξ_k p_i(λ_k) p_l(λ_k) = ⟨x p_l, p_i⟩_μ; likewise H_y.\n (b) Given unisolvent points and positive weights, the weighted graded Vandermonde V_w = [√w_k m_i(λ_k)] is invertible; its QR factorisation with positive diagonal is unique, Q's columns give the graded orthonormal basis, and the section pair built from it is a commuting pattern pair with positive pivots (the pattern holds because x·p_j has leading monomial x·m_j and p_i ⊥ span{m_1, …, m_{i−1}}). Uniqueness of the pair from the data follows from uniqueness of the positive-diagonal QR, and (a) shows every commuting positive-pivot pattern pair arises this way.\n (c) The map (points, weights) ↦ pair is real-analytic (QR with positive diagonal is analytic on invertible matrices); its inverse (pair ↦ joint spectral data) is real-analytic on 𝒫_n because the joint spectrum is simple by (a). The parameter space has dimension 2N (points) + N − 1 (normalised weights).\n-(d) For the block-tridiagonal class the sections in any orthonormal basis that is graded by degree blocks (not by monomials) are block-tridiagonal; two such bases differ by an element of ∏_{k=0}^n O(k+1) acting blockwise. On the nondegenerate class, LQ-factoring the off-diagonal blocks A_{k,x} = [L_k 0] degree by degree fixes this gauge up to signs and returns the pattern representative of (a)–(c) (induction on the leading forms). Hence, locally, ℬ_n is a product of 𝒫_n with an orbit of G = ∏ O(k+1); the stabiliser Z of a pair is finite on the nondegenerate class (the LQ normalisation leaves only sign choices, and Z contains ±I because −I stabilises every pair), so the effective group G/Z acts freely and ℬ_n has dimension dim 𝒫_n + dim G = 3N − 1 + Σ_k k(k+1)/2 = 3N − 1 + C(n+2, 3). [response-02, audit-02 B4.3: earlier wording \"a principal bundle over 𝒫_n/{signs} with fibre ∏ O(k+1)\"; −I acts trivially, so the free action is that of the quotient by the finite stabiliser; the dimension is unchanged.]\n+(d) For the block-tridiagonal class the sections in any orthonormal basis that is graded by degree blocks (not by monomials) are block-tridiagonal; two such bases differ by an element of ∏_{k=0}^n O(k+1) acting blockwise. On the nondegenerate class, LQ-factoring the off-diagonal blocks A_{k,x} = [L_k 0] degree by degree fixes this gauge up to signs and returns the pattern representative of (a)–(c) (induction on the leading forms). Hence, locally, ℬ_n is a product of 𝒫_n with an orbit of G = ∏ O(k+1); the stabiliser of a pair is exactly Z = {±I}: a block-orthogonal U preserves the one-dimensional degree-0 block, so Ue_1 = εe_1 with ε = ±1; if U stabilises both matrices it commutes with every polynomial in them, and cyclicity of e_1 (part (a)) gives U = εI [PR preparation, audit-03 support T3]. Z is central and the same for every pair, so G/{±I} acts freely and ℬ_n has dimension dim 𝒫_n + dim G = 3N − 1 + Σ_k k(k+1)/2 = 3N − 1 + C(n+2, 3). [response-02, audit-02 B4.3: earlier wording \"a principal bundle over 𝒫_n/{signs} with fibre ∏ O(k+1)\"; −I acts trivially, so the free action is that of the quotient by the finite stabiliser; the dimension is unchanged.]\n \n ## Scope\n \n"
+      }
+    ],
+    "main_merge_registry_preservation": {
+      "ID_CROSSWALK.md": {
+        "original_lines": 729,
+        "missing_lines": [],
+        "original_order_preserved": true
+      },
+      "PROOF_STATUS.md": {
+        "original_lines": 169,
+        "missing_lines": [],
+        "original_order_preserved": true
+      },
+      "literature/CORPUS.md": {
+        "original_lines": 164,
+        "missing_lines": [],
+        "original_order_preserved": true
+      },
+      "literature/INDEX.md": {
+        "original_lines": 360,
+        "missing_lines": [],
+        "original_order_preserved": true
+      },
+      "state/IDEAS.md": {
+        "original_lines": 693,
+        "missing_lines": [],
+        "original_order_preserved": true
+      }
+    },
+    "corpus_removed_branch_rows": [
+      {
+        "key": "harris-simanek-2021",
+        "old": "| harris-simanek-2021 | Harris–Simanek, Interpolation and cubature for rectangular sets of nodes, PAMS 149 (2021) 3485–3497 | https://doi.org/10.1090/proc/15414 | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected | [record](records/harris-simanek-2021.md) | original fulltext/hypotheses |",
+        "replacement_from_main": "| harris-simanek-2021 | Harris–Simanek, Interpolation and cubature for rectangular sets of nodes, PAMS 149 (2021) 3485–3497 | https://doi.org/10.1090/proc/15414 | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected · Lanczos topic: supplied secondary account only (see code/RESULTS.md 2026-10-31 'Ingestion'; reports/Open problems verification.md §4; reports/Round 3 open problems 2023 2026.md §4.3); original fulltext NOT inspected | [record](records/harris-simanek-2021.md) | original fulltext/hypotheses · Lanczos topic: Fulltext. Shared key with Codex branch. |"
+      },
+      {
+        "key": "bos-dmv-xu-2007",
+        "old": "| bos-dmv-xu-2007 | Bos–De Marchi–Vianello–Xu, Bivariate Lagrange interpolation at the Padua points: the ideal theory approach, Numer. Math.108 (2007) 43–57 | https://arxiv.org/abs/math/0604604 | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected | [record](records/bos-dmv-xu-2007.md) | original fulltext/hypotheses |",
+        "replacement_from_main": "| bos-dmv-xu-2007 | Bos–De Marchi–Vianello–Xu, Bivariate Lagrange interpolation at the Padua points: the ideal theory approach, Numer. Math.108 (2007) 43–57 | https://arxiv.org/abs/math/0604604 | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected · Lanczos topic: supplied secondary account only (see code/RESULTS.md 'Adversarial novelty check' 2a; reports/Open problems verification.md §1); original fulltext NOT inspected | [record](records/bos-dmv-xu-2007.md) | original fulltext/hypotheses · Lanczos topic: Fulltext. Shared key with Codex branch. |"
+      },
+      {
+        "key": "caliari-dmv-2008",
+        "old": "| caliari-dmv-2008 | Caliari–De Marchi–Vianello, Bivariate Lagrange interpolation at the Padua points: computational aspects, JCAM221 (2008) 284–292 | https://profs.scienze.univr.it/caliari/pdf/CDMV08JCAM.pdf | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected | [record](records/caliari-dmv-2008.md) | original fulltext/hypotheses |",
+        "replacement_from_main": "| caliari-dmv-2008 | Caliari–De Marchi–Vianello, Bivariate Lagrange interpolation at the Padua points: computational aspects, JCAM221 (2008) 284–292 | https://profs.scienze.univr.it/caliari/pdf/CDMV08JCAM.pdf | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected · Lanczos topic: supplied secondary account only (see code/RESULTS.md 2a; reports/Open problems verification.md §1); original fulltext NOT inspected | [record](records/caliari-dmv-2008.md) | original fulltext/hypotheses · Lanczos topic: Fulltext. Shared key with Codex branch. |"
+      },
+      {
+        "key": "sommariva-vianello-2015",
+        "old": "| sommariva-vianello-2015 | Sommariva–Vianello, Compression of multivariate discrete measures and applications, NFAO36(9) (2015) 1198–1223 | https://doi.org/10.1080/01630563.2015.1062394 | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected | [record](records/sommariva-vianello-2015.md) | original fulltext/hypotheses |",
+        "replacement_from_main": "| sommariva-vianello-2015 | Sommariva–Vianello, Compression of multivariate discrete measures and applications, NFAO36(9) (2015) 1198–1223 | https://doi.org/10.1080/01630563.2015.1062394 | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected · Lanczos topic: supplied secondary account only (see reports/Open problems verification.md §3 A; notes/ingest_OP_computation_papers.md side note; reports/Padua points research since 2010.md); original fulltext NOT inspected | [record](records/sommariva-vianello-2015.md) | original fulltext/hypotheses · Lanczos topic: Fulltext (page 1201 context). Shared key with Codex branch. |"
+      },
+      {
+        "key": "xu-siam-1994",
+        "old": "| xu-siam-1994 | Xu, On zeros of multivariate quasi-orthogonal polynomials and Gaussian cubature formulae, SIAM J.Math.Anal.25 (1994) 991–1001 | https://doi.org/10.1137/S0036141092237200 | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected | [record](records/xu-siam-1994.md) | original fulltext/hypotheses |",
+        "replacement_from_main": "| xu-siam-1994 | Xu, On zeros of multivariate quasi-orthogonal polynomials and Gaussian cubature formulae, SIAM J.Math.Anal.25 (1994) 991–1001 | https://doi.org/10.1137/S0036141092237200 | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected · Lanczos topic: complete full text (11 PDF pages; journal page = PDF page + 990; pp. 993 and 995 checked against images) | [record](records/xu-siam-1994.md) | original fulltext/hypotheses · Lanczos topic: Not the block-Jacobi paper (that is Trans. AMS, ref. [22]); Favard theorem and commuting conditions only cited ([19],[20]); Lemma 4.2 proof read in outline |"
+      },
+      {
+        "key": "xu-pitman-1994",
+        "old": "| xu-pitman-1994 | Xu, Common zeros of polynomials in several variables and higher dimensional quadrature, Pitman RNM312 (1994) | AC-supplied bibliography | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected | [record](records/xu-pitman-1994.md) | original fulltext/hypotheses |",
+        "replacement_from_main": "| xu-pitman-1994 | Xu, Common zeros of polynomials in several variables and higher dimensional quadrature, Pitman RNM312 (1994) | AC-supplied bibliography | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected · Lanczos topic: metadata + publisher description + one secondary check (BDMX); book NOT read (earlier: supplied secondary account only (see notes/ingest_classic_papers.md §1.3, §2.4, §5; reports/Round 3 open problems 2023 2026.md §2); original fulltext NOT inspected) | [record](records/xu-pitman-1994.md) | original fulltext/hypotheses · Lanczos topic: Fulltext. PENDING-REFERENCE. Shared key with Codex branch. Online pass: Book; 'Fields survey Thm 6.1' unresolved. |"
+      },
+      {
+        "key": "degani-schiff-tannor-2005",
+        "old": "| degani-schiff-tannor-2005 | Degani–Schiff–Tannor, Commuting extensions and cubature formulae, Numer.Math.101 (2005) 479–500 | https://arxiv.org/abs/math/0408076 | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected | [record](records/degani-schiff-tannor-2005.md) | original fulltext/hypotheses |",
+        "replacement_from_main": "| degani-schiff-tannor-2005 | Degani–Schiff–Tannor, Commuting extensions and cubature formulae, Numer.Math.101 (2005) 479–500 | https://arxiv.org/abs/math/0408076 | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected · Lanczos topic: arXiv preprint (July 2004) via tool digest; journal version not read (earlier: supplied secondary account only (see notes/adv_F1_F6_F3.md §1.3, §4; notes/verify_algorithmic_problems.md; reports/Open problems verification.md §2 row 10, §5; reports/Round 3 open problems 2023 2026.md §6b T2); original fulltext NOT inspected; earlier agents saw only the abstract) | [record](records/degani-schiff-tannor-2005.md) | original fulltext/hypotheses · Lanczos topic: Fulltext: exact theorem, dimensions and hypotheses of the commuting-extension construction (load-bearing for L3). PENDING-REFERENCE for the theorem. Shared key with Codex branch. Online pass: Journal numbering; Gorenstein/colength content of the BTTB mapping not in the preprint. |"
+      },
+      {
+        "key": "huhtanen-larsen-bit-2002",
+        "old": "| huhtanen-larsen-bit-2002 | Huhtanen–Larsen, BIT42 (2002) 393–407 | AC-supplied bibliography | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected | [record](records/huhtanen-larsen-bit-2002.md) | original fulltext/hypotheses |",
+        "replacement_from_main": "| huhtanen-larsen-bit-2002 | Huhtanen–Larsen, BIT42 (2002) 393–407 | AC-supplied bibliography | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected · Lanczos topic: complete full text (15 PDF pages; journal page = PDF page + 392) | [record](records/huhtanen-larsen-bit-2002.md) | original fulltext/hypotheses · Lanczos topic: Refs. [14], [15] (proof of Thm 2.1; 2k variant) not read; proof of Thm 2.3 not re-derived; figures not inspected |"
+      },
+      {
+        "key": "bartels-jezioranski-1985",
+        "old": "| bartels-jezioranski-1985 | Bartels–Jezioranski, ACM TOMS11(3) (1985), Algorithm634 | https://doi.org/10.1145/214408.214410 | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected | [record](records/bartels-jezioranski-1985.md) | original fulltext/hypotheses |",
+        "replacement_from_main": "| bartels-jezioranski-1985 | Bartels–Jezioranski, ACM TOMS11(3) (1985), Algorithm634 | https://doi.org/10.1145/214408.214410 | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected · Lanczos topic: complete full text (17 PDF pages, OCR text layer; journal page = PDF page + 200; formulas checked against images only on pp. 212-213) | [record](records/bartels-jezioranski-1985.md) | original fulltext/hypotheses · Lanczos topic: Weisfeld 1959 known second-hand only; Algorithm 634 code (pp. 218-228) not supplied; formulas on pp. 209-215 not verified symbol by symbol |"
+      },
+      {
+        "key": "sauer-2007",
+        "old": "| sauer-2007 | Sauer, Numer.Algorithms45 (2007) 295–313 | https://doi.org/10.1007/s11075-007-9112-4 | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected | [record](records/sauer-2007.md) | original fulltext/hypotheses |",
+        "replacement_from_main": "| sauer-2007 | Sauer, Numer.Algorithms45 (2007) 295–313 | https://doi.org/10.1007/s11075-007-9112-4 | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected · Lanczos topic: supplied secondary account only (see notes/ingest_classic_papers.md §1.6, §2.5; reports/Round 3 open problems 2023 2026.md §2 and F4); original fulltext NOT inspected; earlier agents reported reading the born-digital text | [record](records/sauer-2007.md) | original fulltext/hypotheses · Lanczos topic: Fulltext. Shared key with Codex branch. |"
+      },
+      {
+        "key": "mourrain-2017",
+        "old": "| mourrain-2017 | Mourrain, orthogonal border bases, ISSAC2017 | AC-supplied bibliography | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected | [record](records/mourrain-2017.md) | original fulltext/hypotheses |",
+        "replacement_from_main": "| mourrain-2017 | Mourrain, orthogonal border bases, ISSAC2017 | AC-supplied bibliography | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected · Lanczos topic: supplied secondary account only (see reports/Round 3 open problems 2023 2026.md §2, §4.2 X1, §6b; reports/Open problems verification.md §3 D; code/RESULTS.md); original fulltext NOT inspected; locator pp. 338-339 via bttb-research LIT-1658 as reported in reports/Round 3 open problems 2023 2026.md | [record](records/mourrain-2017.md) | original fulltext/hypotheses · Lanczos topic: Fulltext. Shared key with Codex branch. |"
+      },
+      {
+        "key": "humet-2019",
+        "old": "| humet-2019 | Humet, Orthogonal polynomials and matrix computations: Applications of recurrence relations, PhD KU Leuven2019 | AC-supplied bibliography | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected | [record](records/humet-2019.md) | original fulltext/hypotheses |",
+        "replacement_from_main": "| humet-2019 | Humet, Orthogonal polynomials and matrix computations: Applications of recurrence relations, PhD KU Leuven2019 | AC-supplied bibliography | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected · Lanczos topic: supplied secondary account only (see notes/ingest_humet_thesis.md (full ingest of 10,889 lines; slides checked against PDF by the supplying agent)); original fulltext NOT inspected | [record](records/humet-2019.md) | original fulltext/hypotheses · Lanczos topic: Fulltext of Ch. 5 slides (statements only announced; proofs not included). Shared key with Codex branch. |"
+      },
+      {
+        "key": "egk-1991",
+        "old": "| egk-1991 | Elhay–Golub–Kautsky, SIMAX12 (1991) 327–353 | https://doi.org/10.1137/0612024 | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected | [record](records/egk-1991.md) | original fulltext/hypotheses |",
+        "replacement_from_main": "| egk-1991 | Elhay–Golub–Kautsky, SIMAX12 (1991) 327–353 | https://doi.org/10.1137/0612024 | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected · Lanczos topic: complete full text (27 PDF pages; journal page = PDF page + 326; pp. 348 and 352 checked against images) | [record](records/egk-1991.md) | original fulltext/hypotheses · Lanczos topic: Figures 1-5 not inspected; algorithm pseudocode not verified; univariate only |"
+      },
+      {
+        "key": "mourrain-telen-vanbarel",
+        "old": "| mourrain-telen-vanbarel | Mourrain–Telen–Van Barel, truncated normal forms, JSC | https://arxiv.org/abs/1803.07974 | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected | [record](records/mourrain-telen-vanbarel.md) | original fulltext/hypotheses |",
+        "replacement_from_main": "| mourrain-telen-vanbarel | Mourrain–Telen–Van Barel, truncated normal forms, JSC · Later L2 review: S. Telen, B. Mourrain, M. Van Barel, Solving polynomial systems via truncated normal forms (same arXiv source; published venue unverified) | https://arxiv.org/abs/1803.07974 | supplied account; fulltext pending · Later review: arXiv digest available | supplied secondary account only; original fulltext NOT inspected · Additional reading 2026-11-01: WebFetch digest by the L2 prior-art reviewer; consolidators did not re-read the paper | [record](records/mourrain-telen-vanbarel.md) | original fulltext/hypotheses · Published venue; exact locators; remaining sections; legacy key telen-mourrain-vanbarel-2018 is an alias |"
+      },
+      {
+        "key": "vanbarel-chesnokov-2010",
+        "old": "| vanbarel-chesnokov-2010 | Van Barel–Chesnokov, A method to compute recurrence relation coefficients for bivariate orthogonal polynomials by unitary matrix transformations, Numerical Algorithms55(2010)383–402 | https://doi.org/10.1007/s11075-010-9392-y | original fulltext pending | publisher metadata/abstract only; subscription fulltext pending-reference | [record](records/vanbarel-chesnokov-2010.md) | theorem/proof |",
+        "replacement_from_main": "| vanbarel-chesnokov-2010 | Van Barel–Chesnokov, A method to compute recurrence relation coefficients for bivariate orthogonal polynomials by unitary matrix transformations, Numerical Algorithms55(2010)383–402 | https://doi.org/10.1007/s11075-010-9392-y | original fulltext pending | publisher metadata/abstract only; subscription fulltext pending-reference · Lanczos topic: complete full text (20 PDF pages; journal page = PDF page + 382; Fig. 2, Tables 1-2 checked against images) | [record](records/vanbarel-chesnokov-2010.md) | theorem/proof · Lanczos topic: Figures 3-7 not inspected; pivot remark is on p. 395 (not p. 392); no operation count or error bound in the paper |"
+      },
+      {
+        "key": "vanbarel-humet-sorber-2014",
+        "old": "| vanbarel-humet-sorber-2014 | as cited in programme-ideas baseline row(s) 10 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| vanbarel-humet-sorber-2014 | M. Van Barel, M. Humet, L. Sorber, Approximating optimal point configurations for multivariate polynomial interpolation, ETNA 42 (2014) 41-63 (title as given in notes/ingest_humet_thesis.md chapter 6, which writes 'multivariate interpolation'; chapter 6 of Humet 2019) | https://etna.ricam.oeaw.ac.at/vol.42.2014/pp41-63.dir/pp41-63.pdf (URL as in reports/Padua points research since 2010.md; not fetched by me) | supplied account; fulltext pending | supplied secondary account only (see notes/ingest_humet_thesis.md Ch. 6 and §2-§3; reports/Padua points research since 2010.md; notes/verify_algorithmic_problems.md Problem 1(h)); original fulltext NOT inspected | [record](records/vanbarel-humet-sorber-2014.md) | Fulltext (pivot rule and cost statements). |"
+      },
+      {
+        "key": "gill-golub-murray-saunders-1974",
+        "old": "| gill-golub-murray-saunders-1974 | as cited in programme-ideas baseline row(s) 19 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| gill-golub-murray-saunders-1974 | P. E. Gill, G. H. Golub, W. Murray, M. A. Saunders, Methods for modifying matrix factorizations, Math. Comp. 28 (1974) 505-535, doi:10.1090/s0025-5718-1974-0343558-6 | doi as listed in notes/verify_algorithmic_problems.md (marked Crossref-verified there; not re-checked by me) | supplied account; fulltext pending | supplied secondary account only (see notes/verify_algorithmic_problems.md Problem 1(a)); original fulltext NOT inspected | [record](records/gill-golub-murray-saunders-1974.md) | Fulltext. |"
+      },
+      {
+        "key": "paige-1980-updating",
+        "old": "| paige-1980-updating | as cited in programme-ideas baseline row(s) 19 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| paige-1980-updating | C. C. Paige, Error analysis of some techniques for updating orthogonal decompositions, Math. Comp. 34 (1980) 465-471 | AMS abstract page was read by the supplying agent (notes/verify_algorithmic_problems.md Problem 1(c)); not re-fetched by me | supplied account; fulltext pending | supplied secondary account only (see notes/verify_algorithmic_problems.md Problem 1(c); reports/Open problems verification.md §2 row 1); original fulltext NOT inspected; the supplying agent saw the abstract page only | [record](records/paige-1980-updating.md) | Fulltext: precise statement of the two-sided result. |"
+      },
+      {
+        "key": "stewart-1979",
+        "old": "| stewart-1979 | as cited in programme-ideas baseline row(s) 20 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| stewart-1979 | G. W. Stewart, J. Inst. Math. Appl. 23 (1979) 203-213 (downdating of Cholesky factorization; title from memory) | no URL in inputs | supplied account; fulltext pending | supplied secondary account only (see notes/adv_F1_F6_F3.md §3.1, §4; notes/ingest_classic_papers.md §2.2, §6 item 4); original fulltext NOT inspected | [record](records/stewart-1979.md) | Fulltext. |"
+      },
+      {
+        "key": "bojanczyk-et-al-1987",
+        "old": "| bojanczyk-et-al-1987 | as cited in programme-ideas baseline row(s) 20 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| bojanczyk-et-al-1987 | A. W. Bojanczyk, R. P. Brent, P. Van Dooren, F. R. de Hoog, A note on downdating the Cholesky factorization, SIAM J. Sci. Statist. Comput. 8 (1987) 210-221 (title from memory) | https://maths-people.anu.edu.au/~brent/pd/rpb095a.pdf (URL as given in notes/adv_F1_F6_F3.md; not fetched by me) | supplied account; fulltext pending | supplied secondary account only (see notes/adv_F1_F6_F3.md §3.1; notes/ingest_classic_papers.md §2.2, §6 item 4); original fulltext NOT inspected | [record](records/bojanczyk-et-al-1987.md) | Fulltext. |"
+      },
+      {
+        "key": "stewart-1995",
+        "old": "| stewart-1995 | as cited in programme-ideas baseline row(s) 20 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| stewart-1995 | G. W. Stewart, On the stability of sequential updates and downdates, IEEE Trans. Signal Process. 43(11) (1995) 2642-2648, doi:10.1109/78.482114 | https://doi.org/10.1109/78.482114 (as listed in notes/adv_F1_F6_F3.md; not fetched by me) | supplied account; fulltext pending | supplied secondary account only (see notes/adv_F1_F6_F3.md §3.1, §4); original fulltext NOT inspected | [record](records/stewart-1995.md) | Fulltext (requested by notes/adv_F1_F6_F3.md §4): exact relational-stability theorem. |"
+      },
+      {
+        "key": "chang-paige-1998",
+        "old": "| chang-paige-1998 | as cited in programme-ideas baseline row(s) 20 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| chang-paige-1998 | X.-W. Chang, C. C. Paige, Perturbation analyses for the Cholesky downdating problem, SIAM J. Matrix Anal. Appl. 19 (1998), doi:10.1137/S0895479896304113 (authors/volume marked unverified in notes/adv_F1_F6_F3.md) | https://epubs.siam.org/doi/10.1137/S0895479896304113 (as given in notes/adv_F1_F6_F3.md) | supplied account; fulltext pending | supplied secondary account only (see notes/adv_F1_F6_F3.md §3.1, §4; notes/ingest_classic_papers.md §6); original fulltext NOT inspected | [record](records/chang-paige-1998.md) | Fulltext. |"
+      },
+      {
+        "key": "faghih-et-al-2025",
+        "old": "| faghih-et-al-2025 | as cited in programme-ideas baseline row(s) 22 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| faghih-et-al-2025 | Faghih, Rinelli, Van Barel, Vandebril, Vermeiren, Krylov vs core-transformation IEPs for MOPs, arXiv:2506.19796; title not given in inputs | https://arxiv.org/pdf/2506.19796 (as cited in reports/Padua points research since 2010.md) | supplied account; fulltext pending | supplied secondary account only (see reports/Padua points research since 2010.md Leuven section; notes/recent_multivariate_NLA.md §1 item 6); original fulltext NOT inspected | [record](records/faghih-et-al-2025.md) | Fulltext. |"
+      },
+      {
+        "key": "faghih-vanbarel-vandebril-2026",
+        "old": "| faghih-vanbarel-vandebril-2026 | as cited in programme-ideas baseline row(s) 23 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| faghih-vanbarel-vandebril-2026 | Faghih, Van Barel, Vandebril, MOP updating/downdating by deflation, arXiv:2608.25758 (27 Aug 2026); title not given in inputs | arXiv 2608.25758 (not fetched by me) | supplied account; fulltext pending | supplied secondary account only (see notes/verify_algorithmic_problems.md Problem 1(g); notes/recent_multivariate_NLA.md §1 item 6, R3, R4; reports/Open problems verification.md §3 C); original fulltext NOT inspected | [record](records/faghih-vanbarel-vandebril-2026.md) | Fulltext. |"
+      },
+      {
+        "key": "zaccaron-2014",
+        "old": "| zaccaron-2014 | as cited in programme-ideas baseline row(s) 24 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| zaccaron-2014 | M. Zaccaron, Discrete orthogonal polynomials and hyperinterpolation over planar regions, M.Sc. thesis, Universita di Padova, 25 July 2014 | https://www.math.unipd.it/~alvise/TESI_STUDENTI/ZACCARON/ZACCARON_prefinale.pdf (URL from the inputs; not fetched by me) | supplied account; fulltext pending | supplied secondary account only (see notes/adv_F1_F6_F3.md §1.1(b); notes/verify_algorithmic_problems.md Problem 3; reports/Padua points research since 2010.md; reports/Open problems verification.md §3 A; code/RESULTS.md); original fulltext NOT inspected; the supplying agents report reading it via WebFetch · PR-prep 2026-11-01: prior-art review L1 (2026-10-31): fulltext via WebFetch digests (Ch. 1-2, Tables 2.1-2.2, §§2.3-2.6); the two 'inconsistent reports' are rows of one table; WAM construction not seen | [record](records/zaccaron-2014.md) | Fulltext: reconcile the two reported tables/figures below. |"
+      },
+      {
+        "key": "meurant-sommariva-2019",
+        "old": "| meurant-sommariva-2019 | as cited in programme-ideas baseline row(s) 26 | see baseline row | local PDF or campaign input note per row | VERIFIED-fulltext for the HL use and the linear-growth conjecture (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| meurant-sommariva-2019 | G. Meurant, A. Sommariva, On the computation of sets of points with low Lebesgue constant on the unit disk, J. Comput. Appl. Math. 345 (2019) 388-404 | no URL in inputs | supplied account; fulltext pending | supplied secondary account only (see notes/ingest_OP_computation_papers.md §A3, §B5, §B19); original fulltext NOT inspected | [record](records/meurant-sommariva-2019.md) | Fulltext: which runs actually used HL. |"
+      },
+      {
+        "key": "huhtanen-larsen-simax-2002",
+        "old": "| huhtanen-larsen-simax-2002 | as cited in programme-ideas baseline row(s) 37, 38 | see baseline row | local PDF or campaign input note per row | VERIFIED-fulltext (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| huhtanen-larsen-simax-2002 | M. Huhtanen and R. M. Larsen, Exclusion and inclusion regions for the eigenvalues of a normal matrix, SIAM J. Matrix Anal. Appl. 23(4) (2002) 1070-1091 | PII S0895479801384561 (printed; DOI 10.1137/S0895479801384561 inferred); AC local copy, Downloads\\padua\\papers\\s0895479801384561.pdf | AC-supplied PDF; not committed | complete full text (22 PDF pages; journal page = PDF page + 1069) | records/huhtanen-larsen-simax-2002.md | Refs. [18], [10], [19] not read; Sections 5-6 read but not extracted |"
+      },
+      {
+        "key": "huhtanen-simax-2002",
+        "old": "| huhtanen-simax-2002 | as cited in programme-ideas baseline row(s) 39 | see baseline row | local PDF or campaign input note per row | VERIFIED-fulltext (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| huhtanen-simax-2002 | M. Huhtanen, A Hermitian Lanczos method for normal matrices, SIAM J. Matrix Anal. Appl. 23(4) (2002) 1092-1108 | PII S0895479800398468 (printed; DOI 10.1137/S0895479800398468 inferred); AC local copy, Downloads\\padua\\papers\\s0895479800398468.pdf | AC-supplied PDF; not committed | complete full text (17 PDF pages; journal page = PDF page + 1091) | records/huhtanen-simax-2002.md | Ref. [27] Rozlozník-Strakos (Remark 3) not read; solver paper, not a bivariate recurrence |"
+      },
+      {
+        "key": "hokanson-2020",
+        "old": "| hokanson-2020 | as cited in programme-ideas baseline row(s) 41 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| hokanson-2020 | J. M. Hokanson, Multivariate rational approximation using a stabilized Sanathanan-Koerner iteration, arXiv:2009.10803 (22 Sep 2020) | https://arxiv.org/pdf/2009.10803 (as cited in reports/Padua points research since 2010.md) | supplied account; fulltext pending | supplied secondary account only (see reports/Padua points research since 2010.md §'What the V+A papers omit'); original fulltext NOT inspected; Algorithm 2.1 locator from the inputs · PR-prep 2026-11-01: prior-art reviews L1/L2 (2026-10-31/11-01): fulltext via WebFetch digests (§2, Alg. 2.1); title corrected | [record](records/hokanson-2020.md) | Fulltext. |"
+      },
+      {
+        "key": "zhu-nakatsukasa-2026",
+        "old": "| zhu-nakatsukasa-2026 | as cited in programme-ideas baseline row(s) 42 | see baseline row | local PDF or campaign input note per row | UNVERIFIED beyond abstract (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| zhu-nakatsukasa-2026 | W. Zhu, Y. Nakatsukasa, Convergence and near-optimal sampling for multivariate function approximations in irregular domains via Vandermonde with Arnoldi, IMA J. Numer. Anal. 46(4) (2026) 2072-2106, doi:10.1093/imanum/draf055 | https://doi.org/10.1093/imanum/draf055 -> https://academic.oup.com/imajna/article/46/4/2072/8210327 (landing page fetched 2026-10-31); preprint arXiv 2301.12241 (as cited in reports/Padua points research since 2010.md) | abstract/metadata page checked 2026-10-31; fulltext pending | metadata (title, authors, venue, volume/issue, pages, DOI) + abstract confirmed by me on the OUP page; fulltext NOT inspected · PR-prep 2026-11-01: prior-art reviews L1/L2 (2026-10-31/11-01): fulltext via WebFetch digests of arXiv 2301.12241 (§§2-3, 5, Remark 3); Appendix B (Alg. 4-5) not seen | [record](records/zhu-nakatsukasa-2026.md) | Fulltext: loss-of-orthogonality remarks and the near-optimality bound constants. |"
+      },
+      {
+        "key": "liu-narayan-2023",
+        "old": "| liu-narayan-2023 | as cited in programme-ideas baseline row(s) 43 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| liu-narayan-2023 | Zexin Liu, A. Narayan, A Stieltjes algorithm for generating multivariate orthogonal polynomials, SIAM J. Sci. Comput. 45(3) (2023) A1125-A1147, doi:10.1137/22M1477131; arXiv 2202.04843 | doi:10.1137/22M1477131; arXiv 2202.04843 (as cited in notes/verify_algorithmic_problems.md); not fetched by me | supplied account; fulltext pending | supplied secondary account only (see notes/verify_algorithmic_problems.md Problems 3 and 4); original fulltext NOT inspected · PR-prep 2026-11-01: prior-art reviews L1/L2 (2026-10-31/11-01): fulltext via WebFetch digests (§§1-3, 5.2, 6 text; figures not inspected); author corrected to Zexin Liu | [record](records/liu-narayan-2023.md) | Fulltext. |"
+      },
+      {
+        "key": "brubeck-nakatsukasa-trefethen-2021",
+        "old": "| brubeck-nakatsukasa-trefethen-2021 | as cited in programme-ideas baseline row(s) 44 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| brubeck-nakatsukasa-trefethen-2021 | P. D. Brubeck, Y. Nakatsukasa, L. N. Trefethen, Vandermonde with Arnoldi, SIAM Rev. 63 (2021), arXiv:1911.09988 | https://arxiv.org/pdf/1911.09988 (as cited in reports/Padua points research since 2010.md) | supplied account; fulltext pending | supplied secondary account only (see notes/verify_algorithmic_problems.md Problem 3; reports/Padua points research since 2010.md); original fulltext NOT inspected · PR-prep 2026-11-01: prior-art reviews L1/L2 (2026-10-31/11-01): fulltext via WebFetch digest (§4 quote confirmed; no multivariate section) | [record](records/brubeck-nakatsukasa-trefethen-2021.md) | Fulltext. |"
+      },
+      {
+        "key": "paige-1976",
+        "old": "| paige-1976 | as cited in programme-ideas baseline row(s) 46 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| paige-1976 | C. C. Paige, Error analysis of the Lanczos algorithm for tridiagonalizing a symmetric matrix, J. Inst. Math. Appl. 18 (1976) 341-349 (title/venue from memory; inputs cite only the label [Pai76]) | no URL in inputs ; online pass: doi:10.1093/imamat/18.3.341; author scan https://www.cs.mcgill.ca/~chris/pubClassic/76JIMA001.pdf (no text layer) | metadata confirmed 2026-10-31; scan not machine-readable (earlier: supplied account; fulltext pending) | metadata + secondary accounts; original NOT read (earlier: supplied secondary account only (see notes/recent_multivariate_NLA.md §1 item 2, R1; notes/adv_F1_F6_F3.md §1.2); original fulltext NOT inspected) | [record](records/paige-1976.md) | Whole source; pending-reference. Online pass: Whole source (scan). |"
+      },
+      {
+        "key": "paige-1980-lanczos",
+        "old": "| paige-1980-lanczos | as cited in programme-ideas baseline row(s) 46 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| paige-1980-lanczos | C. C. Paige, Accuracy and effectiveness of the Lanczos algorithm for the symmetric eigenproblem, Linear Algebra Appl. 34 (1980) 235-258 (title/venue from memory; inputs cite only [Pai80] in the Simons report) | no URL in inputs ; online pass: doi:10.1016/0024-3795(80)90167-6; author scan https://www.cs.mcgill.ca/~chris/pubClassic/80LAIA001.pdf (no text layer) | metadata confirmed 2026-10-31; scan not machine-readable (earlier: supplied account; fulltext pending) | metadata + secondary accounts; original NOT read (earlier: supplied secondary account only (see notes/adv_F1_F6_F3.md §1.2, §1.4; notes/recent_multivariate_NLA.md §1 item 2); original fulltext NOT inspected) | [record](records/paige-1980-lanczos.md) | Whole source; pending-reference. Online pass: Whole source (scan). |"
+      },
+      {
+        "key": "simon-1984-mathcomp",
+        "old": "| simon-1984-mathcomp | as cited in programme-ideas baseline row(s) 46 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| simon-1984-mathcomp | H. D. Simon, The Lanczos algorithm with partial reorthogonalization, Math. Comp. 42 (1984) 115-142 | https://www.ams.org/mcom/1984-42-165/S0025-5718-1984-0725988-X/ (abstract page fetched 2026-10-31) | open AMS PDF; read 2026-10-31 (earlier: abstract/metadata page checked 2026-10-31; fulltext pending) | complete paper via tool digest (pp. 115-142) (earlier: metadata + abstract confirmed by me (AMS page); fulltext NOT inspected; further account from notes notes/adv_F1_F6_F3.md §1.1(c)) | [record](records/simon-1984-mathcomp.md) | Fulltext: exact hypotheses and proof of the semi-orthogonality theorem (load-bearing for L2). Online pass: Page-image check; proof of Thm 2 is in Report PAM-74/LAA 61. |"
+      },
+      {
+        "key": "greenbaum-1989",
+        "old": "| greenbaum-1989 | as cited in programme-ideas baseline row(s) 46 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| greenbaum-1989 | A. Greenbaum, Behavior of slightly perturbed Lanczos and conjugate-gradient recurrences, Linear Algebra Appl. 113 (1989) 7-63 (title/venue from memory; the inputs give only 'Greenbaum 1989') | doi:10.1016/0024-3795(89)90285-1 (from memory; the DOI resolver redirected to the Elsevier linking hub and the follow-up fetch returned empty content on 2026-10-31, so even the DOI-to-paper identification is UNVERIFIED) ; online pass: doi:10.1016/0024-3795(89)90285-1 (CONFIRMED); https://www.sciencedirect.com/science/article/pii/0024379589902851 (open archive landing page) | open archive; landing page read 2026-10-31, PDF not reachable by the tool (earlier: pending-reference) | metadata + abstract; theorem via secondary accounts (earlier: not read; metadata NOT confirmed; indirect description only (abstract of Simonova-Tichy arXiv 2507.16484, fetched 2026-10-31)) | [record](records/greenbaum-1989.md) | Whole source. PENDING-REFERENCE (load-bearing for L3; paywalled). Online pass: Full text (theorem, width of intervals). |"
+      },
+      {
+        "key": "jia-li-2021",
+        "old": "| jia-li-2021 | as cited in programme-ideas baseline row(s) 46 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| jia-li-2021 | Z. Jia, H. Li, The joint bidiagonalization process with partial reorthogonalization, Numer. Algorithms (2021), doi:10.1007/s11075-020-01064-8, arXiv:2001.04402 | https://arxiv.org/abs/2001.04402 (abstract page fetched 2026-10-31); doi:10.1007/s11075-020-01064-8 | abstract/metadata page checked 2026-10-31; fulltext pending | metadata (title, authors, DOI) + abstract confirmed on the arXiv page; journal volume/pages not shown on that page; fulltext NOT inspected · PR-prep 2026-11-01: prior-art review L2 (2026-11-01): fulltext via WebFetch digest of arXiv 2001.04402 (Def. 3.1, Thms 3.1/3.3/3.4, JBDPRO) | [record](records/jia-li-2021.md) | Fulltext, as requested by notes/adv_F1_F6_F3.md §4: how much of the semi-orthogonality proof transfers to two operators. |"
+      },
+      {
+        "key": "simonova-tichy-2025",
+        "old": "| simonova-tichy-2025 | as cited in programme-ideas baseline row(s) 46 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| simonova-tichy-2025 | D. Simonova, P. Tichy, On finite precision block Lanczos computations, BIT (2025), doi:10.1007/s10543-025-01089-2 (DOI from notes/recent_multivariate_NLA.md), arXiv:2507.16484 | https://arxiv.org/abs/2507.16484 (abstract page fetched 2026-10-31) ; online pass: BIT Numer. Math. 65(4), art. 47 (online 11 Nov 2025), doi:10.1007/s10543-025-01089-2 (CONFIRMED by Crossref); arXiv 2507.16484 PDF read via tool digest | arXiv open; read 2026-10-31 (earlier: abstract/metadata page checked 2026-10-31; fulltext pending) | arXiv v1 via tool digests (Thms 1-4, Sections 5.2, 6.1); proofs/formulas not checked (earlier: metadata (title, authors, arXiv id, v1 date 22 Jul 2025) + abstract confirmed on the arXiv page; BIT venue/DOI NOT shown on that page; fulltext NOT inspected) | [record](records/simonova-tichy-2025.md) | Fulltext: exact sufficient conditions and the status of the free parameter W_k (load-bearing for L1/L4). Online pass: Proofs; formulas (21), (35), (36). |"
+      },
+      {
+        "key": "chen-2026",
+        "old": "| chen-2026 | as cited in programme-ideas baseline row(s) 46 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| chen-2026 | T. Chen, A simple stability analysis of the Lanczos algorithm in finite precision arithmetic, arXiv:2608.21268 (21 Aug 2026) | https://arxiv.org/abs/2608.21268 (abstract page fetched 2026-10-31) | abstract/metadata page checked 2026-10-31; fulltext pending | metadata + abstract confirmed; fulltext NOT inspected · PR-prep 2026-11-01: prior-art review L3 (2026-10-31): PDF via WebFetch digest (§4, Thm 4.6; fourth-root remark on Gre89 eq. (7.10)) | [record](records/chen-2026.md) | Fulltext: which Paige identities and Greenbaum-type steps are reproved and with what polynomial factors. |"
+      },
+      {
+        "key": "sinha-2026",
+        "old": "| sinha-2026 | as cited in programme-ideas baseline row(s) 46 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| sinha-2026 | M. Sinha, Finite-Precision Symmetric Krylov Methods: Exact Rounding Examples, Block Paige Identities, and a Variable-Block Lanczos Model, arXiv:2609.08066 (8 Sep 2026) | https://arxiv.org/abs/2609.08066 (abstract page fetched 2026-10-31) | abstract/metadata page checked 2026-10-31; fulltext pending | metadata (title, author, date) + abstract confirmed; fulltext NOT inspected · PR-prep 2026-11-01: prior-art review L1 (2026-10-31): fulltext via WebFetch digest up to §7.1; Theorem 7 not seen | [record](records/sinha-2026.md) | Fulltext: block Paige identity statement and the variable-block model (load-bearing for L1/L4). |"
+      },
+      {
+        "key": "amsel-et-al-2026",
+        "old": "| amsel-et-al-2026 | as cited in programme-ideas baseline row(s) 46 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| amsel-et-al-2026 | N. Amsel et al. (35 authors), Linear Systems and Eigenvalue Problems: Open Questions from a Simons Workshop, arXiv:2602.05394 (v1 5 Feb 2026; v3 21 Aug 2026) | https://arxiv.org/abs/2602.05394 (abstract page fetched 2026-10-31); html route noted as fetchable in bttb-research record LIT-350 (notes/bttb_repo_numeric_mapping.md §3) | arXiv open; section 2.6 read 2026-10-31 (earlier: abstract/metadata page checked 2026-10-31; fulltext pending) | metadata + abstract + section 2.6 (Problems 2.15-2.19) via tool digest (earlier: metadata + abstract confirmed; the PROBLEM TEXT (Problem 2.19, section 2.6) was NOT visible and NOT inspected) | [record](records/amsel-et-al-2026.md) | Exact wording of Problems 2.19 and 4.3 (requested in reports/Round 3 open problems 2023 2026.md §7 item 2). Online pass: Problem 4.3; version pin. |"
+      },
+      {
+        "key": "fischer-1998",
+        "old": "| fischer-1998 | as cited in programme-ideas baseline row(s) 47 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| fischer-1998 | H.-J. Fischer, On generating orthogonal polynomials for discrete measures, Z. Anal. Anwend. 17 (1998) 183-205 | https://ems.press/content/serial-article-files/34971 (URL as given in notes/adv_F1_F6_F3.md; extraction reported garbled) | supplied account; fulltext pending | supplied secondary account only (see notes/adv_F1_F6_F3.md §2.1, §4); original fulltext NOT inspected; exponents in Cor. 1-2 unchecked by the supplying agent | [record](records/fischer-1998.md) | Fulltext: exponents in Cor. 1-2. |"
+      },
+      {
+        "key": "gautschi-1982",
+        "old": "| gautschi-1982 | as cited in programme-ideas baseline row(s) 47 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| gautschi-1982 | W. Gautschi, On generating orthogonal polynomials, SIAM J. Sci. Statist. Comput. 3 (1982) 289-317 (from memory in notes/verify_algorithmic_problems.md) | no URL in inputs | supplied account; fulltext pending | supplied secondary account only (see notes/verify_algorithmic_problems.md Problem 3; notes/adv_F1_F6_F3.md §2.1); original fulltext NOT inspected | [record](records/gautschi-1982.md) | Fulltext. |"
+      },
+      {
+        "key": "kachkovskiy-safarov-2016",
+        "old": "| kachkovskiy-safarov-2016 | as cited in programme-ideas baseline row(s) 86 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| kachkovskiy-safarov-2016 | I. Kachkovskiy, Yu. Safarov, Distance to normal elements in C*-algebras of real rank zero, J. Amer. Math. Soc. (2016; journal suggested by the DOI 10.1090/S0894-0347-2015-00823-2 and an AMS URL in search results, not stated on the arXiv page), arXiv:1403.2021 | https://arxiv.org/abs/1403.2021 (abstract page fetched 2026-10-31) ; online pass: https://arxiv.org/abs/1403.2021 (v3 PDF read via tool digest); J. Amer. Math. Soc. 29(1) (2016) 61-80, doi:10.1090/S0894-0347-2015-00823-2 (CONFIRMED) | arXiv open; read 2026-10-31 (earlier: abstract/metadata page checked 2026-10-31; fulltext pending) | introduction, Thm 1.1, eq. (1.3), Section 3 via tool digest; proofs not read (earlier: metadata (title, authors, arXiv id, DOI) + abstract confirmed; journal name NOT shown on that page; fulltext NOT inspected) | [record](records/kachkovskiy-safarov-2016.md) | Fulltext: whether it contains the almost-commuting self-adjoint pair bound with the square-root dependence attributed to it by the inputs. Online pass: Proofs; explicit constant (none given). |"
+      },
+      {
+        "key": "lin-1997",
+        "old": "| lin-1997 | as cited in programme-ideas baseline row(s) 86 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| lin-1997 | H. Lin, Almost commuting selfadjoint matrices and applications, Fields Inst. Commun. 13 (1997) 193-233 (from memory), with Friis-Rordam's short proof (J. reine angew. Math. 479 (1996) 121-131, from memory) | no URL ; online pass: Fields Inst. Commun. 13 (1997) 193-233 (from K-S refs); Friis-Rordam doi:10.1515/crll.1996.479.121 | no fulltext; statement via secondary sources (earlier: pending-reference) | metadata + secondary statements; neither paper read (earlier: not read; the inputs name 'Lin's theorem' only (notes/verify_algorithmic_problems.md Problem 1(f), reports/Round 3 open problems 2023 2026.md F4); plan.md L3 names Lin 1997 / Friis-Rordam) | [record](records/lin-1997.md) | Whole source; pending-reference. All bibliographic details are from memory. Online pass: Both papers. |"
+      },
+      {
+        "key": "collowald-hubert-2018",
+        "old": "| collowald-hubert-2018 | as cited in programme-ideas baseline row(s) 99 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| collowald-hubert-2018 | M. Collowald, E. Hubert, (cubature / commuting-extension examples), Stud. Appl. Math. (2018), HAL 01873077; title not given in inputs | HAL 01873077 (as listed in reports/Open problems verification.md §5 row 10) | supplied account; fulltext pending | supplied secondary account only (see reports/Open problems verification.md §2 row 10, §5 item 10; reports/Round 3 open problems 2023 2026.md F9); original fulltext NOT inspected | [record](records/collowald-hubert-2018.md) | Fulltext. |"
+      },
+      {
+        "key": "kressner-2018",
+        "old": "| kressner-2018 | as cited in programme-ideas baseline row(s) 106 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| kressner-2018 | D. Kressner, bivariate matrix functions (arXiv:1802.05759); title not given in inputs | https://arxiv.org/abs/1802.05759 (as cited in reports/Padua points research since 2010.md) | supplied account; fulltext pending | supplied secondary account only (see reports/Padua points research since 2010.md problem 9); original fulltext NOT inspected | [record](records/kressner-2018.md) | Whole source. |"
+      },
+      {
+        "key": "kressner-oehme-2026",
+        "old": "| kressner-oehme-2026 | as cited in programme-ideas baseline row(s) 106 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| kressner-oehme-2026 | D. Kressner, (Oehme), bivariate/tensorized Krylov work (arXiv:2601.21799); title/authors beyond 'Kressner-Oehme 2026' not given in inputs | https://arxiv.org/html/2601.21799v1 (as cited in reports/Padua points research since 2010.md) | supplied account; fulltext pending | supplied secondary account only (see reports/Padua points research since 2010.md problem 9); original fulltext NOT inspected | [record](records/kressner-oehme-2026.md) | Whole source; identification unverified. |"
+      },
+      {
+        "key": "huhtanen-2003",
+        "old": "| huhtanen-2003 | as cited in programme-ideas baseline row(s) 106 | see baseline row | local PDF or campaign input note per row | UNVERIFIED (statement-level) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | full citation to be completed at final allocation |",
+        "replacement_from_main": "| huhtanen-2003 | M. Huhtanen, Orthogonal polyanalytic polynomials and normal matrices, Math. Comp. 72 (2003) 355-373 | no URL in inputs | pending-reference | supplied secondary account only (see notes/ingest_classic_papers.md §1.5, §6 item 2); original fulltext NOT inspected; never obtained | [record](records/huhtanen-2003.md) | Whole source. Pending-reference. |"
+      }
+    ],
+    "corpus_removed_branch_nonrows": [],
+    "inherited_main_changes": {
+      "topics/bivariate-lanczos-20261031/": {
+        "baseline_to_source_count": 485,
+        "main_to_source_changes": []
+      },
+      "tracks/bivariate-lanczos/": {
+        "baseline_to_source_count": 219,
+        "main_to_source_changes": []
+      }
+    },
+    "historical_checker_receipts": [
+      {
+        "path": "topics/lattice-unisolvence-20261031/check-response-01.py",
+        "unchanged_from_baseline": true,
+        "identity": {
+          "git_blob": "50561d6980caec2f652edb4a2292a80551e87ad2",
+          "sha256": "36aa900daa09be048bdac5be3df4c1e7d39aba5b9317b0913f30a48481f0c71f",
+          "bytes": 6564
+        }
+      },
+      {
+        "path": "topics/lattice-unisolvence-20261031/response-review/check_response.py",
+        "unchanged_from_baseline": true,
+        "identity": {
+          "git_blob": "5cc9c02edd2fff6373913c7d0738c0c20a6ab4cd",
+          "sha256": "5267869a8e9887ceedd4e72121c23a77a75ff3ec173cbd4312c3b8bd634ca1dc",
+          "bytes": 2790
+        }
+      },
+      {
+        "path": "topics/lattice-unisolvence-20261031/response-01-checks.json",
+        "unchanged_from_baseline": true,
+        "identity": {
+          "git_blob": "c2893079720d78c48b03eb8d14b8715a20768462",
+          "sha256": "f2ebc2f6a015ccb40533445a79f1bad1d5cfa9dfc119860975901b319e1cd1cd",
+          "bytes": 526
+        }
+      },
+      {
+        "path": "topics/lattice-unisolvence-20261031/response-review/final-snapshot.json",
+        "unchanged_from_baseline": true,
+        "identity": {
+          "git_blob": "040975bbd5fb02dc17b9476f9c9f2cbeda587960",
+          "sha256": "70fc6c04920857193f9cb4507e43f43a38a101fefd575a0ed9f766ef5840e07e",
+          "bytes": 33606
+        }
+      },
+      {
+        "path": "topics/lattice-unisolvence-20261031/response-review/report.md",
+        "unchanged_from_baseline": true,
+        "identity": {
+          "git_blob": "2942c0f0c69aba5b6c07d846bba8ec7d74f2ed61",
+          "sha256": "9050e738912bf481450490534d93c32896997aaacb21b058811ae6ec71e0de74",
+          "bytes": 7152
+        }
+      }
+    ],
+    "historical_checker_current_head_caveat": "- **Expected effect:** the lattice audit-time checkers (`topics/lattice-unisolvence-20261031/check-response-01.py`, `response-review/check_response.py`) assert the earlier \"Unallocated\" state. They remain valid as receipts at their pinned revisions, but will not pass at this head."
+  },
+  "failures": [],
+  "passed": true
+}

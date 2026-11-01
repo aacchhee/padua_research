@@ -1,0 +1,30 @@
+n=24 Lambda_corner=9.872513  [0s]
+n=32 Lambda_corner=10.993595  [0s]
+n=48 Lambda_corner=12.688784  [0s]
+n=64 Lambda_corner=13.973208  [0s]
+n=96 Lambda_corner=15.898514  [0s]
+n=128 Lambda_corner=17.346057  [0s]
+n=192 Lambda_corner=19.500993  [1s]
+n=256 Lambda_corner=21.111257  [1s]
+n=384 Lambda_corner=23.495266  [3s]
+n=512 Lambda_corner=25.267887  [7s]
+n=768 Lambda_corner=27.880517  [17s]
+n=1024 Lambda_corner=29.815224  [42s]
+
+model | b | c | other coefs | max |resid| | rms resid
+b log n + c | 1.21639 | 1.90681 | [] | 6.55e-03 | 3.47e-03
+b log n + c + d/n | 1.22226 | 1.86977 | [0.6189] | 8.47e-04 | 5.69e-04
+b log n + c + d log n/n + e/n | 1.22539 | 1.84715 | [ 0.3755 -0.2909] | 2.41e-05 | 1.19e-05
+b log n + c + d log n/n + e/n + f/n^2 | 1.22554 | 1.84603 | [ 0.4148 -0.4339  0.8146] | 5.86e-07 | 3.59e-07
+b log n + c + d/sqrt(n) | 1.22772 | 1.82526 | [0.2559] | 1.55e-04 | 7.94e-05
+b log n + c + d/log n | 1.22959 | 1.77634 | [0.3035] | 4.15e-04 | 2.25e-04
+
+candidates: 2(2/pi)c1 = 1.22552 ; 12/pi^2 = 1.21585 ; (4/pi^2)(2 gamma + 2 log(8/pi)) = 1.22552
+c1^2 = 0.92645 ; c1 = 0.96252
+
+Tail n >= 96:
+b log n + c | b=1.22021 c=1.88403 | max resid 1.61e-03
+b log n + c + d/n | b=1.22409 c=1.85733 | max resid 9.14e-05
+b log n + c + d log n/n + e/n | b=1.22551 c=1.84627 | max resid 4.53e-07
+b log n + c + d log n/n + e/n + f/n^2 | b=1.22553 c=1.84613 | max resid 1.62e-08
+elapsed 42 s

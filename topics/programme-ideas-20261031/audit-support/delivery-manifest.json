@@ -1,0 +1,163 @@
+{
+  "source_commit": "614709d4a60fb0c2593b05764e8d5aceda1be381",
+  "base_commit": "07c5f5465d6de306aa81dbe8ca1f615295163864",
+  "scope": "audit delivery and current-stage metadata only; source claims not repaired",
+  "component_manifest_checks": 228,
+  "entries": [
+    {
+      "path": "topics/programme-ideas-20261031/LOG.md",
+      "sha256": "ce639906ae21edd592e5e0655409ae7ae13c250cdb5ceb23b821d99d219ec7c9",
+      "bytes": 18998
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-01.md",
+      "sha256": "d577b69eec5d84626de84628bbfcb20f127d9daee4f29465f97d0ee442a7f35e",
+      "bytes": 20419
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/literature-check.json",
+      "sha256": "72c075e607d8f7720409539d8fba3700e93a90f2cba446cde9fac10b4d483ed4",
+      "bytes": 10597
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/literature-check.py",
+      "sha256": "6a8b065f5a89d6e787f32cdde6d0f372440440f9f46ba357b34c30f26c2997eb",
+      "bytes": 3805
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/literature-review.md",
+      "sha256": "1b749835a9eefa43dac29dd2100ff53b1c225f3733e6a1eb6ad61611a95b0bef",
+      "bytes": 8873
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/obstructions-check.json",
+      "sha256": "9d17ead9628a4892a782c070ff70457b1aaf3fa49c0d9e363c92ee67e31a4ac0",
+      "bytes": 15934
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/obstructions-check.py",
+      "sha256": "e6ba7ff620a5dab581079670721927c93918b436767e955ec73035df12846684",
+      "bytes": 5246
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/obstructions-report.md",
+      "sha256": "bf94391e3272d14dfc365f1610af9f5c8c917314cee65f9372ab37a9981e7310",
+      "bytes": 12512
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-degenerate-counterexample.json",
+      "sha256": "7e8a1bcd68fa10385ea5cace9a6313506e5fd0485a638a21b8d33d7b5bc59827",
+      "bytes": 254
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-degenerate-counterexample.py",
+      "sha256": "7aaf01780b6963cb7f0671ebf735065e81ce7dd925145ab60cae7fe57c8eafb7",
+      "bytes": 1204
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-degenerate-counterexample.txt",
+      "sha256": "c97b778afd604dcfa9c36b5fef3d2468ff565595380fdc70e51c8cad71221603",
+      "bytes": 235
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-fit.json",
+      "sha256": "3360ade2daa323c7261463104e4e4bb80f8c810b32c2e51feefacb44d20e34bc",
+      "bytes": 5415
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-fit.py",
+      "sha256": "b1e1c11b56fd36ccc570b4cc7a8b4be1a4237fe868b4d157e8194356ccd6b3a5",
+      "bytes": 1659
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-fit.txt",
+      "sha256": "c28726c220dd8fbde4c54fd5d66ec97e35c77f592d90f70c69bfb83018dc8153",
+      "bytes": 280
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-independent.json",
+      "sha256": "c0ca5182da1a231f009348888d44654acc08c5293d261521bf9e4fbee846fcec",
+      "bytes": 4038
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-independent.py",
+      "sha256": "f5e841726c732595ad33474da8f85f0f9aec2ad104361c388a87177bd5f3658a",
+      "bytes": 2303
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-independent.txt",
+      "sha256": "7bab37be91d9458a9d3fcfae11c54cdc760801bc9aaba80c41017aa169071663",
+      "bytes": 2588
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-manifest.json",
+      "sha256": "0e40ea919d9964c98930b4769e6c1e53c555c8ad379367fcc2993a158b4b6814",
+      "bytes": 8702
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-rerun.json",
+      "sha256": "66d06e5a5669fa71cc74deddaf4bb0c5c15c12c5d796e9c8271db16ac91613eb",
+      "bytes": 60960
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-rerun.py",
+      "sha256": "9c32ab6d530ad4b4bc097a6dd300ce7361ba7eaca43ab489e5556e388e35cb70",
+      "bytes": 778
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-rerun.txt",
+      "sha256": "58a82d314ffd24471ca1210553d2c8e3277cda099f2809c3e1b4da50f6785564",
+      "bytes": 1659
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-review.md",
+      "sha256": "fa041d6751a277971f3b585dbef2282824c05072ef04b25be5f0736c6c256aae",
+      "bytes": 8940
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/protocol-check.json",
+      "sha256": "63074776a1b26cf60aae0a55214b1e8fc12ac5b82c890b2d1a80f0c0b58c17c2",
+      "bytes": 47051
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/protocol-check.py",
+      "sha256": "b85311ffc0b4e4cead79fca3ff019e22c72b9f1b1784fe0a57ac7b0b2149c9d3",
+      "bytes": 5087
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/rejections-ah-replay.txt",
+      "sha256": "4e9283e8fd4a767a92a7da4191ee898a6ac5b61a678f8cb3e6cd0a63fcdd60ca",
+      "bytes": 4575
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/rejections-check.json",
+      "sha256": "1b567a455dfd9396f65f114a292babc78f16fa7cbfc014ca0b4d9d96e0e8478c",
+      "bytes": 2338
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/rejections-check.py",
+      "sha256": "25b5c597d1253ea4bc71c75ee58357834546a64b902d086d507b4427f2f5095f",
+      "bytes": 3581
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/rejections-manifest.json",
+      "sha256": "bcbfccb01c7cfd660d9a85356883441ce025653895847ebc99a7e07133d0d0f7",
+      "bytes": 5811
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/rejections-pg-replay.txt",
+      "sha256": "64176da6912b426c9924317b706e10d9a2436c6618fe6043d058db7b4c890b68",
+      "bytes": 4315
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/rejections-review.md",
+      "sha256": "6a020aa5fa651a0c4dcaf9605c5fd7f97d0eb6e7a5bef0f0fbb817387ca2d370",
+      "bytes": 9349
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/source-manifest.json",
+      "sha256": "fcb6cdd505ac1db97491c97785cc1baf80fb98a7cefc96682e4126e3573560c9",
+      "bytes": 45906
+    }
+  ]
+}

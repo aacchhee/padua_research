@@ -1,5 +1,7 @@
 # PD-T?lattice-c3-codex-05 — An unbounded-degree periodic 3D total-degree interpolation family
 
+Final ID: **PD-T094** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T. Aliases: C3 original main target; 3D character interpolation beyond isolated toys. Split from: none. Split into: supporting results PD-T?lattice-c3-codex-01/02/04 and scoped observations PD-T?lattice-c3-codex-03, PD-N?lattice-c3-codex-01..04. These supporting results are not solved conjuncts of the unbounded-degree target.
 
 ## Statement

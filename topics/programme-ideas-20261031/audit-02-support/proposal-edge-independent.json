@@ -1,0 +1,22 @@
+{
+  "source_sha": "cadb35066160e466cb1704b9791ad6f374446422",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "degree": 3,
+  "vandermonde_determinant": "243/16",
+  "factor": "(x - 1)*(2*x**2 + x + 2*y**2 - 2)/3",
+  "nodal_values": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0",
+    "0",
+    "0"
+  ],
+  "result": "Exact cardinal identity and vanishing of angle value/first derivatives/tangential derivatives at theta=0 verified.",
+  "limitation": "Does not enclose the background critical points or certify maxima counts."
+}

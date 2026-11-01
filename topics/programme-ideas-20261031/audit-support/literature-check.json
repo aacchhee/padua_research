@@ -1,0 +1,212 @@
+{
+  "candidate_sha": "614709d4a60fb0c2593b05764e8d5aceda1be381",
+  "draft_sha": "25161235fe430ec05723796afe0f20a923a69ebd",
+  "commands": [
+    "python topics/programme-ideas-20261031/audit-support/literature-check.py /workspace/programme-integration",
+    "git ls-tree -r --name-only 25161235fe430ec05723796afe0f20a923a69ebd topics/programme-ideas-20261031/checks/state",
+    "git show <draft-sha>:<each-of-the-20-draft-paths>",
+    "git ls-tree -r --name-only 614709d4a60fb0c2593b05764e8d5aceda1be381"
+  ],
+  "literature_rows": 111,
+  "unique_lit_ids": 111,
+  "missing_lit_ids": [],
+  "verified_row_labels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    14,
+    15,
+    16,
+    17,
+    18,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    52,
+    53,
+    55,
+    56,
+    57,
+    65,
+    77,
+    78,
+    79
+  ],
+  "verified_count": 41,
+  "unverified_count": 70,
+  "idea_headings": 20,
+  "unique_idea_ids": 20,
+  "missing_idea_ids": [],
+  "draft_count": 20,
+  "draft_status_counts": {
+    "returned": 12,
+    "not returned": 8
+  },
+  "drafts": [
+    {
+      "path": "topics/programme-ideas-20261031/checks/state/gen1-draft-1.md",
+      "title": "Bivariate Golub–Meurant: Gauss-type rules for bilinear forms of commuting pairs and normal matrices from the truncated bivariate recurrence",
+      "status": "returned",
+      "sha256": "49d8f099d775c9340691ecf330920e490edc7805eb3ae182ee277658124a3a7d"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/state/gen1-draft-2.md",
+      "title": "Discrete bivariate Sobolev (Hermite-data) orthogonal polynomials: non-normal commuting node operators, band-plus-low-rank recurrences, and the Alexander–Hirschowitz breakdown",
+      "status": "returned",
+      "sha256": "597ae237db793ce6eabd6a4a8148e91d130129e64af397dc8f3c4f5d92aed55d"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/state/gen1-draft-3.md",
+      "title": "Bivariate orthogonal rational functions: which nested pole structures admit short recurrences, their pencil IEPs, and rational least squares/Krylov in two variables",
+      "status": "returned",
+      "sha256": "cb2a8a8ca6a06805aa67252da5a04859813662a047d332965e3ded2b23298442"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/state/gen1-draft-4.md",
+      "title": "Isospectral flows on block Jacobi pairs: Toda/qd dynamics of bivariate recurrence matrices under Christoffel/Geronimus steps",
+      "status": "not returned (overlaps the \"measure modification\" judged item and the (a) exclusion's moment side; the genuinely new part is note-sized)",
+      "sha256": "ef6e5fcdcf37ee4e28a2b190200f6957d0ce3a78bb255a896ba6451d86ff573c"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/state/gen1-draft-5.md",
+      "title": "Bivariate modified Chebyshev algorithm: block Jacobi pairs from Chebyshev-modified moments with Gautschi-type conditioning",
+      "status": "not returned (note-sized after R3 F9; its exact-arithmetic side is exclusion (a))",
+      "sha256": "5a86f5bbd9a262fade0d9b1c834f8fcadab549287f614d12496c0381964cbce9"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/state/gen1-draft-6.md",
+      "title": "Riemann–Hilbert / Szegő method transfer for discrete bivariate measures (Padua, Lissajous): method-transfer question only",
+      "status": "not returned (the asymptotic results belong to angle D; the method-transfer core has no cheap entry point and no NLA payoff)",
+      "sha256": "788f2a8ee04b64146850b0f156af6ce981c19d716834ba77a14d579e6585b8bc"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/state/gen2-draft-1.md",
+      "title": "Two-index divide-and-conquer: product-structured joint eigenvectors of commuting banded pairs and the merge-based bivariate IEP",
+      "status": "not returned (entry-point 1 kill criterion fired at N = 1035 in the tested ordering; see \"Test outcome\" at the bottom; survives only as an asymptotic claim plus an untested inverse-merge count, which together are note-sized until a new mechanism appears)",
+      "sha256": "5dd4ea2f1d69503dc039e4f051d9494403dfb9cbc5201c02d4721a71fe9663a4"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/state/gen2-draft-2.md",
+      "title": "Structure theory of commuting generalized-Hessenberg pairs: minimal parametrizations, implicit-Q with order-ideal transitions, and core-transformation forms",
+      "status": "returned",
+      "sha256": "6b447ba9888508556988955aa8fa3d28adc5a276df058ee1893a30594a298bc7"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/state/gen2-draft-3.md",
+      "title": "Joint spectral theory of banded commuting pairs: two-index Sturm counts, bisection, relative perturbation, and certified joint spectra of nearly commuting sections",
+      "status": "returned",
+      "sha256": "86ef6edf3c9681a4852a97eadc53556a8e08054dc0f14168c4627ef9c9a67a64"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/state/gen2-draft-4.md",
+      "title": "The √N-size inverse problem: rectangular two-parameter pencils from the top recurrence blocks, their conditioning, normal forms and stable node extraction",
+      "status": "returned (with a flagged note-size risk)",
+      "sha256": "f5fc0acc93644dd6d9fb3bb64111717ae2c2987ee5daa530955e4beb245d974f"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/state/gen3-draft-1.md",
+      "title": "Discrete orthogonal polynomials of sampled trajectory measures: recovering bivariate polynomial information from data along a closed curve",
+      "status": "returned",
+      "sha256": "92bfa27da227e1028e8b87dec582f0d2a5e9557189b0e4be5963e3f48079fb0a"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/state/gen3-draft-2.md",
+      "title": "Phase-space design theory for continuous-variable quantum tomography: Padua points versus structured designs in the Gaussian-weighted bivariate polynomial model",
+      "status": "returned",
+      "sha256": "dbbb20b2d6bcc2eaf71730485e97d42c0dd73069b76f6c15774148b32b10a167"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/state/gen3-draft-3.md",
+      "title": "Total-degree spectral methods on arbitrary planar algebraic domains with numerically generated orthogonal polynomials: the boundary-polynomial operator calculus",
+      "status": "returned (with a flagged overlap of one sub-problem with R3 rank 5 / T4)",
+      "sha256": "a198c71808668f2bbbde98d25de638b98f88cf5256caada089ce8c13adc7ac22"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/state/gen3-draft-4.md",
+      "title": "Stochastic Galerkin with dependent inputs: spectral bounds of Galerkin matrices built from truncated bivariate recurrence matrices",
+      "status": "not returned (central question is a joint-spectrum / nearly-commuting-pair question: handed to angle B; also adjacent to (b)'s deferred R10, candidate 034)",
+      "sha256": "9dbd234b084725b70fda1a54a160f3713d4947c1ab58a127f9198dbf9eb1ebd6"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/state/gen3-draft-5.md",
+      "title": "Vanishing-ideal learning with a backward-certified ideal: Christoffel functions and approximate border bases as one object",
+      "status": "not returned (collides with the already-judged items \"empirical Christoffel via QR\" and \"approximate border bases via tolerance-truncated recurrences\"; the only residue is the whole-ideal backward certificate already listed as R3 rank 8 and deferred in (b) as candidates 028/029)",
+      "sha256": "5199eb309cde6cdd604da56e0e9d8466d5ce7091a4516807ff44991e78b00767"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/state/gen4-draft-1.md",
+      "title": "Constrained equilibrium for discrete bivariate OPs: saturation on grids, no saturation on Padua",
+      "status": "returned (re-centred after the entry tests; see \"Actual test results\")",
+      "sha256": "755c78ec0c9f2231c4183b7a437d17863a53751258c7340c848562c44b87de4c"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/state/gen4-draft-2.md",
+      "title": "Lebesgue theory of checkerboard (Padua-type) interpolation: second-order term, maxima geometry, and Fekete nodes within the family",
+      "status": "returned",
+      "sha256": "39b4e6f48e2a844920f86bc55fb39558ffcc5240a075a09e7a2b51f75ee42d62"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/state/gen4-draft-3.md",
+      "title": "Symmetric commuting extensions as the Gauss–Christoffel theory of bivariate cubature: lower bounds, uniqueness, Christoffel numbers",
+      "status": "returned (with an ownership flag: Xu owns 2D constructions; the lower-bound/uniqueness/IEP side is not claimed by anyone found)",
+      "sha256": "500cf94a7853cc67dfa803f8c2beccf18dfb576d24ede9db158d4c2171f74035"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/state/gen4-draft-4.md",
+      "title": "Explicit O(dim) stable least-squares designs on the square: Chebyshev-lattice arrays as a deterministic sampling theory",
+      "status": "not returned (straddles angle C/(d); core question partly collapses — see bottom)",
+      "sha256": "c03af56067ce56383f3f7120eb03108249d52f41ba8a79141dd1db03c1d2ec6c"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/state/gen4-draft-5.md",
+      "title": "Padua points are asymptotically Fekete, Dubiner-equidistributed and weighted-Fekete-stationary: closing the deduction gap",
+      "status": "not returned (note-sized; folded into gen4-draft-2 sub-problem 4)",
+      "sha256": "d8b6293058d71df16545b92ff0675c81c1c3ec610c5c2ca521dbdfbd169d0c24"
+    }
+  ],
+  "source_hash_checks": [
+    {
+      "path": "Open problems verification.md",
+      "sha256": "7bac11699758377feeb37f89863c25b975cbe700c7ea413d0785d7d281808f89",
+      "manifest_matches": true
+    },
+    {
+      "path": "Padua points research since 2010.md",
+      "sha256": "3e84cabffb9f72ca43d088b5720c5ec776c681e607433f55d363a651b209d830",
+      "manifest_matches": true
+    },
+    {
+      "path": "Round 3 open problems 2023 2026.md",
+      "sha256": "21992d6abe6f094473d7fd87d80462d750b82d16685136b11ae5de16c4570e10",
+      "manifest_matches": true
+    }
+  ],
+  "unrecorded_input_paths_at_candidate": {
+    "CAMPAIGN_CONTEXT.md": [],
+    "BRANCH_SNAPSHOT_NOTE.md": [],
+    "RESULTS.md": [],
+    "MAP.txt": []
+  },
+  "scope": "Record-count and byte-identity checks only; no independent mathematical result or exhaustive novelty review."
+}

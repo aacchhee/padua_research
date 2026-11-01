@@ -1,0 +1,20 @@
+{
+ "det_V": "-27/2",
+ "commutator_zero": true,
+ "pivots_x": [
+  "sqrt(2)/2",
+  "sqrt(2)/2",
+  "sqrt(2)/2"
+ ],
+ "pivots_y": [
+  "sqrt(2)/2",
+  "sqrt(2)/2",
+  "1/2"
+ ],
+ "all_pivots_positive": true,
+ "pattern_violations": [],
+ "n_symmetric_variables_in_pattern_y": 17,
+ "rank_of_commutator_map": 11,
+ "commutant_dimension": 6,
+ "span_I_Hx_Hy_dimension": 3
+}

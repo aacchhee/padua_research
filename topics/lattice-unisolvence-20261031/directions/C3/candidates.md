@@ -4,6 +4,8 @@ Rules/base e949ef06895acd5463cdf8df7e0e5f795218f70f; Codex mathematical develope
 
 ## IDEA?lattice-c3-codex-01 — Generic feasibility of 3D small-index fibres
 
+Final ID: **IDEA-185** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 - Aliases: C3 catalogue; primitive character fibres; generic grid total-degree interpolation.
 - Question/scope: frozen n1..6, k2..6, nonzero primitive coefficients, sorted lengths in{n+1,n+2,n+3}, single fibres only.
 - Mechanism: exact total-degree determinant on arbitrary distinct labelled axes.
@@ -16,6 +18,8 @@ Rules/base e949ef06895acd5463cdf8df7e0e5f795218f70f; Codex mathematical develope
 
 ## IDEA?lattice-c3-codex-02 — Extend independent-axis checkerboard criteria to 3D
 
+Final ID: **IDEA-186** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 - Aliases: axis-only factorization; independent per-axis iff; multiplicative rectangle test.
 - Question/scope: does every admissible 3D fibre's determinant separate into axis-only rational factors, analogous to PD-T001/T002?
 - Closest predecessor: established 2D axis-factor mechanism, De Marchi–Usevich/Camargo–De Marchi (LITERATURE). Difference would be the genuinely 3D selected lattice, not a renamed known factor.
@@ -25,6 +29,8 @@ Rules/base e949ef06895acd5463cdf8df7e0e5f795218f70f; Codex mathematical develope
 - Canonical theory: PD-N?lattice-c3-codex-02/04. No implication to cubature, different patterns, or all-degree impossibility.
 
 ## IDEA?lattice-c3-codex-03 — Direct Lobatto specialization as a competitive family
+
+Final ID: **IDEA-187** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
 
 - Aliases: small-index 3D Chebyshev fibres; polylogarithmic hope; finite Lebesgue screen.
 - Hypotheses/scope: the142 generic-rank survivors in degrees1..6, fixed Lobatto axes, sampled21³ cube mesh.
@@ -36,6 +42,8 @@ Rules/base e949ef06895acd5463cdf8df7e0e5f795218f70f; Codex mathematical develope
 
 ## IDEA?lattice-c3-codex-04 — The isolated n2 axis-factorable fibre and its naive continuation
 
+Final ID: **IDEA-188** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 - Aliases: C0-d3-n2-050; k6,a312,c0; C3-8ea9e9f33e3d.
 - Mechanism/scope: ten points on3x4x5 axes, primitive3i+j+2k=0 mod6, total degree2. Per-axis additive gaps arise in a direct factorization.
 - Closest predecessors: PD-T001/T002 axis factors, product-grid/lower-set determinant operations; literature comparison remains coverage-qualified. No novelty claim.
@@ -46,6 +54,8 @@ Rules/base e949ef06895acd5463cdf8df7e0e5f795218f70f; Codex mathematical develope
 - Canonical theory: PD-T?lattice-c3-codex-04, OPEN parent PD-T?lattice-c3-codex-05; extension failures retained in the finite negative record.
 
 ## IDEA?lattice-c3-codex-05 — Explain deficient fibres by elementary annihilator certificates
+
+Final ID: **IDEA-189** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
 
 - Aliases: coordinate-layer cover; slice-removal projected count; subbox dimension obstruction.
 - Scope/mechanism: dimension/product-polynomial sufficient certificates for the222 always-deficient representatives. Applicable over every field when a finite certificate checks.
