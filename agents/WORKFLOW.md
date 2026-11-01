@@ -18,7 +18,16 @@ Use agentic orchestration: delegate bounded development, independent checks, or 
 
 ## Work cycle
 
-One topic is one branch (`codex/<slug>` or `claude/<slug>`) and one PR, with a log at `topics/<slug>/LOG.md`. `New topic: <objective>.` starts WORK; `Continue <branch>.` follows the log's next step. A small job explicitly requested with `no audit` may omit the audit and log, while retaining branch and PR rules. This exemption must not add or upgrade any `PD-T`, `PD-N`, `IDEA`, or `LIT` entry, or change rules, templates or registry schemas; such work follows the ordinary audit cycle.
+One topic is one branch (`codex/<slug>` or `claude/<slug>`) and one PR, with a log at `topics/<slug>/LOG.md`. `New topic: <objective>.` starts WORK; `Continue <branch>.` means: read the rules, the log and `topics/<slug>/HANDOFF.md` at the branch head, and carry out the handoff. A small job explicitly requested with `no audit` may omit the audit and log, while retaining branch and PR rules. This exemption must not add or upgrade any `PD-T`, `PD-N`, `IDEA`, or `LIT` entry, or change rules, templates or registry schemas; such work follows the ordinary audit cycle.
+
+**Handoff file.** Each topic keeps `topics/<slug>/HANDOFF.md`, following `templates/HANDOFF.md`. Whoever ends a step (developer, auditor or orchestrator) overwrites it with the complete instruction for the next step:
+- the next agent, model and effort;
+- the branch and exact head SHA;
+- the stage, scope and inputs to read;
+- what to do and what not to reopen;
+- the acceptance criteria and expected outputs.
+
+Commit and push this file before replying to AC. The reply then ends only with the short `Continue <branch>.` prompt. Earlier handoffs stay in Git history, and the log records each one with a single line. The next agent reads the handoff after the rules and the log. If AC's message adds or changes instructions, AC's message takes precedence and the agent records the difference in the log.
 
 Record the stage in the topic log: WORK → AUDIT → PR. The developer sets AUDIT when development is complete; the other agent (Claude for Codex development, Codex for Claude development) writes `audit-NN.md`. An accepted audit sets PR; findings set WORK. The developer answers every finding in `response-NN.md`; material changes return to AUDIT, while an unchanged claim with a documented resolution may proceed to PR. Preserve disagreements for AC. Never edit the auditor's report to resolve it. An independent subagent check supplements this handoff. A draft PR may preserve work before the handoff is complete, with audit marked PENDING.
 
@@ -96,8 +105,16 @@ Use three visible PR sections:
 
 Update `state/IDEAS.md`, shared state, global IDs, topic indexes, and allocation records at PR preparation after checking current `main` and active PRs. During exploration keep local records without repeatedly mutating shared registries. Do not let concurrent writers allocate the same ID or overwrite state. Material divergence from the audited SHA requires a recorded impact check and, where needed, a fresh audit.
 
-Use provisional IDs `<namespace>?<topic-slug>-<agent>-<local-number>` for all four namespaces: `PD-T?charter-codex-01`, `PD-N?charter-codex-01`, `IDEA?charter-codex-01`, and `LIT?charter-codex-01`. Final IDs are allocated only during PR preparation; retain every provisional-to-final mapping.
+Use provisional IDs `<namespace>?<topic-slug>-<agent>-<local-number>` for all four namespaces: `PD-T?charter-codex-01`, `PD-N?charter-codex-01`, `IDEA?charter-codex-01`, and `LIT?charter-codex-01`. Final IDs are assigned during PR preparation from the topic's reserved ranges (below). Retain every provisional-to-final mapping.
 
-When several PRs share registries or allocations, use a single ledger at `topics/<batch-slug>/ALLOCATIONS.md`, linked from `ID_CROSSWALK.md` and every member PR/log. The ledger records reserved IDs, owners, pinned bases/heads, dependencies and integration order. Before allocating, refresh main and active PRs, choose one allocation owner, and reconcile all reservations with that owner; parallel writers must not independently reserve IDs. Conflicting reservations are resolved and propagated before any affected PR becomes ready. With no batch, record reservations at `topics/<topic-slug>/ALLOCATIONS.md` and link them from `ID_CROSSWALK.md` as soon as allocations exist. No ledger is needed while no IDs are reserved.
+**Reserve fresh ranges; never reallocate.** Reserve the final-ID ranges a topic needs whenever it reaches an allocation stage: when its draft PR is opened, when it first needs final IDs, and whenever it needs more.
+1. Refresh `main` and every open PR, drafts included.
+2. Read the ledger copy on each of those branches, plus every final ID they already use in `PROOF_STATUS.md`, `state/IDEAS.md`, `literature/INDEX.md` and `ID_CROSSWALK.md`.
+3. Start each new range above the highest ID that `main` or any open PR uses or reserves. Never reuse, overlap or renumber an ID that another branch has reserved or allocated, even if that branch is unmerged.
+4. Record the reservation at once in the ledger on the reserving branch and in its PR body: namespace, range, count, branch, date, and the heads checked. Size each range with headroom; unused IDs remain permanent gaps.
+5. If a topic needs more IDs later, it reserves a new range by the same procedure; it never shifts existing ranges.
+6. After a merge, other branches merge `main` and keep their own reservations. They re-allocate only on a genuine collision, which this rule exists to prevent; any collision is resolved against the earlier recorded reservation.
+
+When several PRs share registries or allocations, use a single ledger at `topics/<batch-slug>/ALLOCATIONS.md`, linked from `ID_CROSSWALK.md` and every member PR/log. The ledger records reserved IDs, owners, pinned bases/heads, dependencies and integration order. Reserve ranges by the procedure above: each reserving branch is the owner of its own ranges, and the ledger's union of all branches' reservations is the authority. Writers on different branches never share or split a range. A collision that occurs anyway is resolved before any affected PR becomes ready, by moving the later reservation. With no batch, record reservations at `topics/<topic-slug>/ALLOCATIONS.md` and link them from `ID_CROSSWALK.md` as soon as allocations exist. No ledger is needed while no IDs are reserved.
 
 Rehearse the intended sequential squash integration in a disposable local branch without touching `main`, record resulting conflicts and semantic checks, and repair the topic branches before requesting AC's merge sequence. This batch rehearsal is required only for relevant multi-PR work and never authorizes merging, force-pushing, or rewriting published history. AC integrates ready PRs by squash merge; agents never perform that merge.

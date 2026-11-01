@@ -1,7 +1,8 @@
 # <title>
 
 - Branch: <branch> · Base: <commit> · Developer: <agent> · Auditor: <other agent>
-- Stage: <WORK | AUDIT | PR> · Next: `<Agent (model and effort)>: Continue <branch>.`
+- Stage: <WORK | AUDIT | PR> · Next: `<Agent (model and effort)>: Continue <branch>.` · Handoff: [HANDOFF.md](HANDOFF.md)
+- Reserved final-ID ranges: <namespace range (count), ledger link; none yet>
 - Claims: <provisional ID — statement — status — durable theory file>
 - For the PR: <shared registries, IDs, negative entries, audits>
 - Open for AC: <decisions and disputes>

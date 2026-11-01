@@ -6,7 +6,7 @@ This is the independent research repository `aacchhee/padua_research`. AC is the
 
 Before work, read this file, `agents/WORKFLOW.md`, and your role file at the branch head: `agents/codex/CODEX.md` for Codex or `agents/claude/CLAUDE_ROLES.md` for Claude. Record the full commit SHA in the work log. Re-read changed rules when switching branches. AC's explicit task instructions take precedence; otherwise these files are binding. Resolve an actual conflict with AC before the conflicting action, while continuing independent work.
 
-The first line of every user-facing reply is `Rules <short-sha>`, using the commit at which the rules were read. The second line states how you interpret the request. End with an exact suggested next prompt for AC, naming the agent and model. Give a useful progress update about every five minutes during sustained work and checkpoint substantial results in durable files.
+The first line of every user-facing reply is `Rules <short-sha>`, using the commit at which the rules were read. The second line states how you interpret the request. End with a short next prompt for AC, naming the agent and model, of the form `<Agent> (<model, effort>): Continue <branch>.`. The full instruction for that next step goes in the topic's handoff file `topics/<slug>/HANDOFF.md` (see `agents/WORKFLOW.md`, Work cycle), committed and pushed before the reply; never put a long instruction in the reply instead of the file. Give a useful progress update about every five minutes during sustained work and checkpoint substantial results in durable files.
 
 ## Repository permissions
 
