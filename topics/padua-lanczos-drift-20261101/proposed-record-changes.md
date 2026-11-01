@@ -142,6 +142,14 @@ PD-T?drift-codex-50 executes actual polyrat 0.2.2 numerical source at commit6903
 
 At preparation also update the corresponding PROOF_STATUS rows, split crosswalk, IDEA dispositions and topic indexes, after checking the exact audited source snapshot. Final-ID assignment is still pending. PD-T075 needs a recorded original-to-split mapping for its solved U1; retain original wording/history. The other original target statuses remain unchanged.
 
+### E1 scalar finite split (response-02, audit-02 A02-M2)
+
+At preparation, record the split PD-T?drift-codex-05 → PD-T?drift-codex-06 in ID_CROSSWALK.md with original-to-split mappings:
+- PD-T?drift-codex-05 statement table (full-graph comparator uppers, explicit BJ multinode witnesses, squared ratio lower bounds) and its post-hoc consequences K_inf,BJ > 800 K_inf,pivot (T24) and K_inf,BJ > 7 K_inf,alt (rotQ24) → PD-T?drift-codex-06, PROVED (finite computer-assisted, formal scalar-CGS2 model).
+- PD-T?drift-codex-05 keeps the exploratory experiment, MEASURED, with the both-grid factor-ten test outcome INCONCLUSIVE.
+
+Its factor-ten target, "factor ten on both sets", i.e. K_inf,BJ > 10 min(K_inf,alt, K_inf,pivot) on T24 and on rotQ24, is registered as PARTIAL: T24 conjunct PROVED under PD-T?drift-codex-06 (c), rotQ24 conjunct OPEN. Give both records PROOF_STATUS rows. If the registry needs the target as its own row, use the PARTIAL status with a dependency on PD-T?drift-codex-06. No final IDs are assigned during the response.
+
 Results (superseded 2026-11-01 by the merged PR16 rule, response-02 A02-L8): this topic's results file is the in-repository `results/padua-lanczos-drift-20261101.md`. At PR preparation, add only this topic's section to the root `RESULTS.md`, appended or replaced from that file and preserving every other topic's section. No results are written to AC's machine. The earlier intended local file `C:\Users\andreyac\Downloads\padua\results\padua-lanczos-drift-20261101.md` is a historical copy and AC's to delete. Windows cold-storage delivery of large artifacts is a separate pending item (COLD_STORAGE.md).
 
 

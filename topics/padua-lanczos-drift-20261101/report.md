@@ -40,14 +40,19 @@ the polynomial quotient kernel, while vector products, updates and divisions
 supply the stated local sources. This is a formal upper-bound rounding model;
 admissible errors need not be attained by actual IEEE arithmetic.
 
-Exploratory exact finite bounds for that full graph give a triangle squared
-BJ/pivot ratio lower bound about 657000 and a rotated-square BJ/alt ratio
-lower bound about 62.09. The latter proves a factor greater than 7, but its
-intervals do not settle the factor-10 comparison. It is neither a pass at 10
-nor a kill of the mechanism. Subset-map upper bounds are not substituted for
-full implementation bounds. Record05 labels this finite follow-up MEASURED;
-the large raw capacity output remains outside Git, with compact signs/gains,
-hashes and a deterministic regeneration/check path.
+Exact finite bounds for that full graph, found during post-E1 exploration, are
+now a separate finite computer-assisted result, PD-T?drift-codex-06 (PROVED in
+the formal model; split from record05 in response-02). They give a triangle
+squared BJ/pivot certificate ratio of about 657331 (K_inf,BJ > 800
+K_inf,pivot) and a rotated-square BJ/alt ratio of about 62.09 (K_inf,BJ > 7
+K_inf,alt). These thresholds were chosen post hoc. The rotated ratio is below
+100, so the certificate neither passes nor kills factor 10 there. Record05
+keeps the MEASURED exploratory experiment and the INCONCLUSIVE both-grid
+factor-10 test. Its factor-10 target is PARTIAL: the T24 conjunct is PROVED in
+-06, the rotQ24 conjunct OPEN. Subset-map upper bounds are not substituted for
+full implementation bounds. The large raw capacity output remains outside Git,
+with compact signs/gains, hashes, a deterministic regeneration path and the
+exact checker e1_scalar_finite_check.py.
 
 Analytic **PD-T?drift-codex-01/02** prove the normal-quotient derivative and
 rational certificates. The finite certificate and scalar-operation extension
@@ -166,4 +171,4 @@ merged PR16 rule) and Windows cold-storage archival of the original ZIP remain
 separate steps; no results are written to AC's machine. Literal proposed changes are in `proposed-record-changes.md`; existing
 theory files remain unchanged.
 
-The scientific snapshot is `b09e1dbe0baafd666cf0d779a671a40f55de2d75`. A workspace handoff ZIP and its checksum are recorded in COLD_STORAGE.md. The scalar endpoints/capacities have now been independently regenerated; record05 remains MEASURED and its factor10 comparison remains INCONCLUSIVE.
+The scientific snapshot is `b09e1dbe0baafd666cf0d779a671a40f55de2d75`. A workspace handoff ZIP and its checksum are recorded in COLD_STORAGE.md. The scalar endpoints/capacities have been independently regenerated. Their finite inequalities are PD-T?drift-codex-06 (PROVED, computer-assisted, response-02). Record05 remains the MEASURED experiment, and its both-grid factor10 test remains INCONCLUSIVE.

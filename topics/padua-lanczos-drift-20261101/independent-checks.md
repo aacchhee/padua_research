@@ -52,3 +52,8 @@ underlying producers with independently regenerated priors; it did not run the
 wrapper or a complete normalized-trajectory derivative checker. Its report
 also reconstructs new scoped negative32 and confirms finite04's status-only
 update. Root's later receipt addition to record05 changes metadata only.
+
+Response-02 note (A02-M2): these executions are now cited as the independent
+execution references of PD-T?drift-codex-06, which holds the finite
+inequalities split from record05. Record05 remains the MEASURED experiment.
+"record05 remains MEASURED" above describes the file before that split.

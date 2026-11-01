@@ -60,7 +60,7 @@ python tracks/bivariate-lanczos/code/drift/e1_cgs2.py --set triangle --degree 12
 python tracks/bivariate-lanczos/code/drift/e1_cgs2.py --set rotated --degree 12 --rule alt --output /workspace/padua-drift-runs/e1/cgs2-rotated-n12-alt.json
 ```
 
-`upper_squared.exact` of each output is the comparator upper of PD-T?drift-codex-05.
+`upper_squared.exact` of each output is the comparator upper U_T or U_R of PD-T?drift-codex-06 (a); these inequalities were stated in PD-T?drift-codex-05 until the response-02 split.
 The field `input_sha256` inside the `explicit_projection_check` block of
 `e1_reproduce.py`'s output hashes a temporary JSON file (it contains timings and
 paths), so it is not reproducible and should not be used as an identity; use
@@ -72,6 +72,17 @@ minutes by
 `PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 tracks/bivariate-lanczos/code/drift/e1_response_checks.py --output <out>.json`
 (`--skip-tie-break-bounds` omits the 3.5-minute Y-tie bounds run). It imports the
 committed producer and is not an independent reimplementation.
+
+## E1 finite scalar checker and degree-4 replay (response-02)
+
+```bash
+PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 tracks/bivariate-lanczos/code/drift/e1_scalar_finite_check.py --output topics/padua-lanczos-drift-20261101/evidence/response-02-e1-scalar-finite.json [--regenerated DIR [--regeneration-notes FILE]]
+PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 tracks/bivariate-lanczos/code/drift/e1_replay_n4.py --output topics/padua-lanczos-drift-20261101/evidence/response-02-e1-replay-n4.json
+```
+
+`e1_scalar_finite_check.py` (audit-02 A02-M2) uses the standard library only (exact `fractions.Fraction`) and runs in under a second. From the SHA-256-pinned committed evidence it checks every inequality of PD-T?drift-codex-06: the full-graph comparator uppers, the BJ node-sign lower witnesses, K_inf,BJ > 800 K_inf,pivot on T24, K_inf,BJ > 7 K_inf,alt on rotQ24 and the rotQ24 certificate ratio < 100. It also checks exact agreement with the reused independent evidence (`independent-scalar-01.json`, `audit-02-e1-checks.json`). It does not recompute capacities. With `--regenerated DIR` it also compares, exactly, outputs that the `e1_cgs2.py` commands above and `e1_reproduce.py --set triangle|rotated` wrote to DIR as `cgs2-<set>-n12-<rule>.json` and `reproduce-<set>.json`. The response-02 regeneration of all four took about 7 minutes, the rotated upper about 250 s.
+
+`e1_replay_n4.py` (audit-02 A02-L1) needs mpmath and runs in about 75 seconds. It loads the unchanged audit-01 `checks/audit-01/scripts/E1/first_principles.py` by path, after checking its pinned hash and without writing bytecode there. It then runs that script's record-03 full-trajectory replay `partC` at degree 4, which the script's own loop skips (`if n == 3`), and reruns degree 3 as a harness control against the audit-02 receipt. This is a developer execution, not an independent rerun.
 
 ## E4 exact closure check (response-01)
 
