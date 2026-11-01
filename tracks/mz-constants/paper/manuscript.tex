@@ -7,7 +7,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{microtype}
 \hypersetup{pdftitle={Marcinkiewicz--Zygmund constants of Clenshaw--Curtis and Padua rules beyond half-exactness},
- pdfauthor={Research development draft},pdfsubject={Complete proof draft; Claude audit and historical novelty checks pending}}
+ pdfauthor={Research development draft},pdfsubject={Audited development draft; historical priority screened, not cleared}}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{proposition}[theorem]{Proposition}
@@ -31,9 +31,10 @@
 \maketitle
 \begin{center}\small
 \textbf{Development status.} Independent Astra reconstruction accepted the analytic
-M1--M3 results within its stated scope. Claude audit~01 accepted the original mathematical statements; focused
-re-audit of this response: \textbf{PENDING}.
-Historical priority and novelty: \textbf{unresolved}; see Section~\ref{sec:context}.
+M1--M3 results within its stated scope. Claude audits~01--02 accepted the scientific
+statements and response within their recorded scopes. The prior-art corrections
+are closed by Codex audit~03; no historical novelty clearance is claimed.
+Historical priority: \textbf{screened, not cleared} (documented, non-exhaustive search; some fulltexts pending); see Section~\ref{sec:context}.
 \end{center}
 
 \begin{abstract}
@@ -56,7 +57,12 @@ covering that endpoint case, without contradicting a conditional theorem
 of An and Wu. For signed Lebesgue Padua rules, we prove the exact
 factor-two Clenshaw--Curtis marginal and its spectral compression consequence;
 the two-dimensional upper bounds and endpoint asymptotics remain open.
-These are self-contained proof statements; historical novelty has not been cleared.
+All proofs are self-contained. That the minimum eigenvalue on the full
+interpolation space is not bounded below, and that the maximum eigenvalue is
+bounded, follow from classical weighted Marcinkiewicz--Zygmund results. In a
+documented but non-exhaustive search we found no prior statement of the
+two-sided logarithmic order, of a threshold below two, or of the explicit
+constants.
 \end{abstract}
 
 \section{Problem, conventions, and relation to the literature}\label{sec:context}
@@ -141,33 +147,96 @@ equation~(8) separates the inverse-Gram least-squares construction
 in Section~\ref{sec:hyper} is consequently known context; its proof is
 included to identify precisely the CC input and the required reproduction.
 
-Historical CC product-integration papers of Sloan--Smith
-\citep{LIT-047,LIT-048}, the interpolation book of
-Mastroianni--Milovanovi\'c \citep{LIT-049}, and classical weighted MZ
-sources \citep{LIT-050,LIT-051,LIT-052} are substantial prior-art threats.
-Only their recorded summaries, abstracts, metadata, or bibliographies have
-been inspected; their relevant full-text norm theorems are
-\emph{pending-reference}. The same restriction applies to the
-Widom and Widom--Wilf matrix-asymptotic pointers \citep{LIT-053,LIT-054}.
-Weighted mean convergence of Lagrange interpolation and converse
-quadrature-sum inequalities are a further unresolved source of possible
-overlap: Erd\H{o}s--Feldheim, Askey, Nevai~III (with its later addendum),
-Lubinsky's converse-MZ work, and Smith's explicit Lobatto theorem
-\citep{LIT-061,LIT-062,LIT-063,LIT-064,LIT-065}.
-Mastroianni--Russo and Xu follow-ups are also named in the source screen.
-Selected primary text was reached for the first, second, fourth and fifth
-records; Nevai's precise theorem remains \emph{pending-reference}.
-Lubinsky gives converse inequalities in the relevant general form, but
-its critical CC nodal-coefficient specialization was not verified.
-Smith's inspected Lobatto result uses a different continuous weight and
-continuous-function input norm. The exact Lobatto nodes, endpoint weights,
-Lebesgue $L^2$ versus CC-weighted nodal $\ell^2$ norm, and critical logarithmic
-growth must be matched before any equivalence or novelty verdict.
-In particular, a weighted nodal $\ell^2$ to Lebesgue $L^2$ Lobatto
-interpolation theorem could be equivalent to part of
-\eqref{eq:main-endpoint}. No claim of a first proof, exhaustive openness,
-or historical exclusion is made here. The analytic arguments below do
-not depend on any uninspected theorem or private proof.
+\paragraph{Historical sources inspected.}
+Writing $L_N$ for Lagrange interpolation at the $N+1$ nodes, positivity of
+the weights and uniqueness of interpolation give
+\[
+ \sup_{0\ne p\in\Pn_n}\frac{\int_{-1}^1p^2}{Q_N(p^2)}=\frac1{\lambda_-(N,n)},
+\]
+i.e.\ $\lambda_-(N,n)^{-1/2}$ is the norm of $L_N$ from nodal data of
+degree $\le n$ with the CC-weighted $\ell^2$ norm to $L^2(\dd x)$.
+Moreover, $\tfrac12\Delta_N(x_j)\le w_j\le5\Delta_N(x_j)$ with
+$\Delta_N(x)=\sqrt{1-x^2}/N+N^{-2}$ (from Lemma~\ref{lem:weight-comparison} and the endpoint weights $w_0=w_N\in\{N^{-2},(N^2-1)^{-1}\}$
+below), so CC weights may be exchanged with Christoffel-type weights at a
+cost of absolute constants. In this language our endpoint result concerns
+a borderline converse Marcinkiewicz--Zygmund inequality.
+We have inspected the following sources. Their coverage differs
+(complete text, selected sections, or a keyword screen) and is recorded per
+source with the source identifiers.
+\begin{itemize}
+\item Sloan--Smith's 1978 CC product-integration paper \citep{LIT-047}
+controls the sum of absolute product weights, i.e.\ a $C[-1,1]$ functional
+norm. Its companion \citep{LIT-048} develops heuristic error estimates and
+numerical tests and states no theorem. In the portions inspected we found
+no quadratic-form or nodal $\ell^2$ estimate in either paper.
+\item The weighted mean-convergence results of Erd\H{o}s--Feldheim,
+Askey, Nevai, and Smith's Lobatto theorem
+\citep{LIT-061,LIT-062,LIT-063,LIT-065} bound interpolation from
+\emph{uniform} data into weighted $L^p$. Nevai's quasi-Lagrange theorem
+includes the CC nodes. Uniform data form a stronger input norm than
+weighted nodal $\ell^2$, so these results are consistent with, and do not
+imply, logarithmic growth of the $\ell^2\to L^2$ norm.
+\item Lubinsky's converse inequalities on the full interpolation space
+\citep{LIT-064} require an exponent in an open range. For CC nodes,
+Lebesgue measure and $p=2$, the nodal polynomial
+$\sin\theta\sin N\theta$ sits exactly at the excluded endpoint.
+\item Mastroianni, Milovanovi\'c and Notarangelo \citep{LIT-299}
+characterize, for interpolation at the zeros of $p_m((1-x^2)^\alpha)$
+together with $\pm1$, when the weighted $L^p$ norm of $P\in\Pn_{m+1}$ is
+equivalent to a nodal sum plus an endpoint term. With $\alpha=1/2$ these
+are the CC nodes ($N=m+1$). For Lebesgue measure and $p=2$ their strict
+condition fails at its endpoint. Since the nodal side of their equivalence
+is comparable to $Q_N(p^2)$ by the weight comparison above, the necessity
+part of their criterion yields $\inf_N\lambda_-(N,N)=0$ on the full space
+$\Pn_N$. This is classical, but it is only a statement about a
+subsequence on $\Pn_N$, with no rate.
+\item Mastroianni--Russo \citep{LIT-293} and Xu \citep{LIT-296} treat
+converse inequalities at Gauss nodes without endpoint terms, and
+K\"onig--Nielsen \citep{LIT-294} treat same-weight Jacobi nodes. At the
+zeros of $U_{N-1}$ with Lebesgue measure and $p=2$, the Mastroianni--Russo
+condition requires $(1-x^2)^{-1/2}\in L^2$, which fails logarithmically.
+These are analogous borderline phenomena; we do not derive the CC
+statements from them.
+\item The exact CC evaluation in Proposition~\ref{prop:counterexample},
+$Q_N(U_{N-1}^2)=O(1)$ while $\int U_{N-1}^2\asymp\log N$ (an elementary
+computation), gives the single-$U$ upper bound
+$\lambda_-(N,N-1)=O(1/\log N)$ and hence vanishing for every $N$. The order
+$(1+\log N)^{-2}$ requires the separate harmonic witness of
+Theorem~\ref{thm:harmonic} for the upper bound and Theorem~\ref{thm:cardinal}
+for the lower bound.
+\item The algebraic Marcinkiewicz inequality of Mastroianni--Totik
+\citep{LIT-051} applies at CC nodes only when $n\le N/(\pi M)$ for their
+unspecified constant $M$. For every admissible $M\ge2/\pi$ this lies within
+the half-exactness range $n\le N/2$, where exactness already gives
+$\lambda_\pm(N,n)=1$. In its documented form it therefore adds nothing
+beyond exactness for the questions of Section~\ref{sec:ratio}.
+\item The forward quadrature-sum theorem of Lubinsky--M\'at\'e--Nevai
+\citep{LIT-050} applies at CC nodes, for each fixed $l$, to every degree
+$\le lN$. It gives $\lambda_+(N,n)\le C_l$ with an unspecified constant
+depending on $l$. The threshold
+$2$ and the explicit constants of Theorem~\ref{thm:ratio-upper} and its
+endpoint corollary are not implied.
+\item The later Sloan--Smith papers \citep{LIT-297,LIT-298} relate
+product-integration convergence to mean convergence with uniform data.
+\item The interpolation book of Mastroianni--Milovanovi\'c
+\citep{LIT-049} (chapters 2, 4 and 5),
+Widom's and Widom--Wilf's Hankel asymptotics \citep{LIT-053,LIT-054},
+the Chebyshev--Legendre method \citep{LIT-058} and recent
+Chebyshev--Lobatto interpolation estimates in the Legendre norm
+\citep{LIT-295} concern uniform norms, Sobolev inputs or different matrix
+problems. Lubinsky's survey \citep{LIT-052} records genuine converse
+quadrature-sum (nodal-norm) theorems, but at Gauss nodes and weights.
+\end{itemize}
+We found no statement of the two-sided order
+$\lambda_-(N,N-1)\asymp(1+\log N)^{-2}$, of the parity-compatible witness
+in $\Pn_{N-1}$, of an all-$N$ upper constant below two, or of explicit
+fixed-ratio constants. The search is documented but not exhaustive.
+The published version of \citep{LIT-045} states that the CC behaviour
+beyond half-exactness is, to its authors' knowledge, not known
+theoretically. Still unread is a 2000 paper of Mastroianni--Russo on
+weighted Marcinkiewicz inequalities. No claim of a first proof is made.
+The analytic arguments below do not depend on any of these sources or on
+any private proof.
 
 \section{Exact CC identities and an upper bound below two}\label{sec:upper}
 
@@ -580,6 +649,13 @@ endpoint upper gap would be additional information.
 
 \section{Explicit bounds at each fixed degree ratio}\label{sec:ratio}
 
+For $n\le N/2$, exactness gives $\lambda_\pm(N,n)=1$; the classical
+algebraic Marcinkiewicz inequality of Mastroianni--Totik \citep{LIT-051}
+yields nothing beyond this in its documented form
+(Section~\ref{sec:context}). The point of this section is the range
+$N/2<n<N$: explicit constants for every ratio below one, with an upper
+constant below two.
+
 \begin{theorem}[Degree-sensitive upper estimate; \id{PD-T022}]\label{thm:ratio-upper}
 For $0\le n<N$, put $\rho=\max\{2n/N-1,0\}^2$. Then
 \[
@@ -788,12 +864,20 @@ Since $4\cdot512^2/(512^2-1)<401/100$, \eqref{eq:Uexact} yields
 Thus $\lambda_-(512,511)<1/4$ and the defect exceeds $3/4$.
 \end{proof}
 
+The growth $\int_{-1}^1U_m^2\asymp\log m$ behind this witness is an
+elementary computation. Analogous borderline mechanisms appear in classical
+converse Marcinkiewicz--Zygmund characterizations \citep{LIT-293,LIT-294},
+and a full-space, subsequence version of $\lambda_-(N,N)\to0$ at the CC
+nodes follows from \citep{LIT-299} (Section~\ref{sec:context}). The
+proposition supplies the exact CC evaluation, valid for every $N$ and on
+$\Pn_{N-1}$.
 This simple witness gives only an $O(1/\log N)$ quotient asymptotically;
 the harmonic combination in Theorem~\ref{thm:harmonic} is needed for
 the squared logarithm. The finite certificate uses no floating spectrum.
-Comparison with the published An--Wu body and comprehensive correction
-checking remain pending-reference; the statement here concerns the
-explicitly inspected conditional arXiv formulation.
+The published An--Wu Corollary~4.1 coincides with the inspected arXiv
+formulation: it assumes $\eta=3/4$ for $m$-point CC with $n+2\le m\le2n+1$
+\citep{LIT-046}, and $m=513$, $n=511$ lies in that range. No correction
+was found in a documented search; this is not proof of absence.
 
 \begin{proposition}[Upper-Gram hyperinterpolation estimate; \id{PD-T025}]\label{prop:hyper}
 Let $\mu$ be a finite positive measure of mass $V>0$ on a compact domain.

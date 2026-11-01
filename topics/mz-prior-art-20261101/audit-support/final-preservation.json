@@ -1,0 +1,40 @@
+{
+  "lit_count": 426,
+  "main_rows": 419,
+  "new_ids": [
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299
+  ],
+  "intentional_updated_main_rows": [
+    61,
+    62,
+    63,
+    64,
+    65
+  ],
+  "updated_rows_equal_premerge_word_fix": true,
+  "registry_nonlit_preserved": true,
+  "shared_file_merges": [
+    {
+      "path": "literature/INDEX.md",
+      "exit": 0,
+      "exact_match": true
+    },
+    {
+      "path": "literature/CORPUS.md",
+      "exit": 0,
+      "exact_match": true
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "exit": 0,
+      "exact_match": false
+    }
+  ],
+  "corpus_duplicate_first_cells": {}
+}

@@ -22,3 +22,7 @@
 ## History
 
 2026-10-31: thesis metadata corrected using title page and author CV; no private or third-party fulltext copied into repository.
+
+## 2026-11-01 update (topic mz-prior-art-20261101; group-C access worker, Sonnet 5.5 high)
+
+LIT-060 An–Sommariva–Xue, *Compound Hyperinterpolation …*: **NOT PUBLIC**. Searched arXiv, C. An's recent Semantic Scholar list, Sommariva's homepage and 2026 CV PDF, Dolomites Research Week 2026, and the SUSTech seminar page (An's 15 Apr 2025 talk is on the sphere and is a different topic). No homepage for L. Xue was found. The only trace remains the CV "in preparation" line.
