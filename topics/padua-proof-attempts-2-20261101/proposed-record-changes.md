@@ -86,23 +86,25 @@ Validation: original block occurs exactly once at the pinned programme head; ori
 
 Target: `topics/programme-ideas-20261031/theory/programme-ideas-claude-06-padua-lebesgue-maxima-counts.md`
 
-Pinned commit: `9bd14a6d2c4da69139a10107d8a787f2be0c5c9e`
+Pinned commit: `806cc7b4509fd93bae652f9545d32d95529f8281`
 
 Old:
 
 ```text
-**Runs needed (certification):** a proved finite reduction of the counting problem; valid identities (not tolerance tests) at the degenerate points, including the n = 3 edge case where a cardinal function was observed to vanish along the edge x = +1 (UNVERIFIED as an identity); rigorous root enclosures replacing the per-pattern Newton step; complete box-discard arguments; rigorous arithmetic; committed essential evidence; an independent rerun by a second checker.
+**Runs needed (certification):** a proved finite reduction of the counting problem; rigorous versions of the (D) corner and (E) edge-node certificates in `t3_degenerate.py`; rigorous root enclosures/exclusions replacing the per-pattern Newton steps over every discarded region; complete sign-pattern box-discard arguments without the early return; exact treatment near regular crease crossings; rigorous arithmetic throughout and an independent checker. The separate `degenerate_max` local obligations have replacement certificates in PD-T103 for the two degree-3 exact representatives, with Z={L_(2,2)}, background critical points at (theta,phi)=(0,acos(±1/sqrt(3))), rational angle enclosures of width 1e-18 and uniform Hessian margin greater than 3.5 on angle l1 discs of radius 0.0021. These discs rigorously contain the recorded radius-0.002 decision neighborhoods. The stored floating iterates themselves are not exact zeros. A fresh trace of every call for n=3,…,8 found two calls at n=3 and none at n=4,…,8; this trace remains MEASURED execution evidence. Obligation (2) is discharged for the `degenerate_max` path only; the (D) corner and (E) edge-node handlers remain explicit certification work. No maxima count is certified.
 ```
 
 New:
 
 ```text
-**Runs needed (certification):** a proved finite reduction of the counting problem; valid identities (not tolerance tests) at the degenerate points, including the n = 3 edge case where a cardinal function was observed to vanish along the edge x = +1 (UNVERIFIED as an identity); rigorous root enclosures replacing the per-pattern Newton step; complete box-discard arguments; rigorous arithmetic; committed essential evidence; an independent rerun by a second checker.
+**Runs needed (certification):** a proved finite reduction of the counting problem; rigorous versions of the (D) corner and (E) edge-node certificates in `t3_degenerate.py`; rigorous root enclosures/exclusions replacing the per-pattern Newton steps over every discarded region; complete sign-pattern box-discard arguments without the early return; exact treatment near regular crease crossings; rigorous arithmetic throughout and an independent checker. The separate `degenerate_max` local obligations have replacement certificates in PD-T103 for the two degree-3 exact representatives, with Z={L_(2,2)}, background critical points at (theta,phi)=(0,acos(±1/sqrt(3))), rational angle enclosures of width 1e-18 and uniform Hessian margin greater than 3.5 on angle l1 discs of radius 0.0021. These discs rigorously contain the recorded radius-0.002 decision neighborhoods. The stored floating iterates themselves are not exact zeros. A fresh trace of every call for n=3,…,8 found two calls at n=3 and none at n=4,…,8; this trace remains MEASURED execution evidence. Obligation (2) is discharged for the `degenerate_max` path only; the (D) corner and (E) edge-node handlers remain explicit certification work. No maxima count is certified.
 
 Dated split update proposed after the Part2 Claude audit: the preceding certification obligations remain needed for n=6,…,8. Complete exact replacements for n3,n4,n5 are PROVED separately in `PD-T?proof-attempts-2-codex-06` (15total=7interior+6edge+2corner) `-10` (27total=13interior+12edge+2corner), and `-16` (25total=14interior+9edge+2corner), with supporting reductions, committed certificates, separate verifiers and actual independent executions. Preserve this record's original measured search history; do not relabel the frozen floating search as certified. The whole A5 mathematical target is PARTIAL by proved degree cases3,4,5 and OPEN cases6,…,8. No n6/7/8 correction is certified.
 ```
 
 Validation: original block occurs exactly once at the pinned programme head; original statement, route and history retained.
+
+History2026-11-01: supersedes the earlier source06 proposal at9bd14a6 (retained in commitf5f074e). AC merged Part1 at806cc7b, replacing its old Runs-needed paragraph with the audited local03 qualification. The current literal block preserves that entire accepted paragraph and appends only Part2 finite-case updates; all original routes and remaining obligations remain.
 
 ## A4 n3, n4 and n5 finite cases
 
@@ -129,3 +131,6 @@ Validation: original block occurs exactly once at the pinned programme head; ori
 ## Additional registry preparation checklist for certified n3, n4 and n5
 
 Propose local result rows05–11 and15–19 and mappings programme06→results06/10/16 (n3/n4/n5 counts), programme05→results07/11/17 (n3/n4/n5 global cases). Preserve all original measured-search rows, programme06's uncertified n6…8 cases and programme05's all-n OPEN conjecture. Apply only in the authorized integration pass after the Part2 Claude audit. No shared registry or final ID is edited in this branch.
+
+
+Current upstream refresh: Part1 is merged at main806cc7b. Existing original pins remain historical. Every current Old block was also checked unique against806cc7b; source06 alone was repinned because its accepted Part1 update changed the literal paragraph. Part2 remains local IDs/no range; inherited final IDs are source provenance.

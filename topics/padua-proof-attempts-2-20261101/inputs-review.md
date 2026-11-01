@@ -196,3 +196,7 @@ Main cf89b140530d5838bdb208a8c28f3e7aa676ace3 changed required INDEX/CORPUS only
 ## Part1 administrative synchronization
 
 Part1 advanced93da3be26dbddf9ec2446af578fe8015bb4eeada. Six administrative paths changed; no theory/code/scientific output/audit/response changed versus7b8884a (direct Git comparison). Its same-main import matches current rules/state/INDEX. Read relevant full diffs/receipts/handoff and logged impact before clean merge. Preserve scientific initial/audit/response provenance; separately pin the six sync administrative inputs. No arithmetic rerun follows from these unchanged scientific dependencies.
+
+## Merged Part1 accepted source updates
+
+AC merged PR9 at main806cc7b4509fd93bae652f9545d32d95529f8281 (final source head752ba068589683afe644b505d673f8da1529cbf0). Full relevant source/metadata diff and mechanical integration review read. Only final-ID/provenance/Open-items metadata changes in the3Part1theorems; Statement-through-Scope/code/output/audit bytes unchanged. Programme source04/06 and OPEN_TARGETS now incorporate the accepted split local results, while A2/A4/highercount obligations stay unchanged. New provenance includes changed Part1/source/registry blobs. Imported IDs101–105 belong to Part1; Part2 has no range.

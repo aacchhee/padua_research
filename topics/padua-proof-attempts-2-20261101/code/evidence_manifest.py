@@ -14,6 +14,8 @@ TOPIC = "topics/padua-proof-attempts-2-20261101"
 PINS = {
     "part1_and_rules": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
     "part1_audit_arrived": "95279b833bca5967fcf47c1b71a56ff622185b4e",
+    "main_part1_merged": "806cc7b4509fd93bae652f9545d32d95529f8281",
+    "part1_final_branch": "752ba068589683afe644b505d673f8da1529cbf0",
     "part1_main_sync_arrived": "93da3be26dbddf9ec2446af578fe8015bb4eeada",
     "part1_response_arrived": "7b8884a2f98518784ff3698dd2f3f9c49c9cdd62",
     "literature_index_update": "cf89b140530d5838bdb208a8c28f3e7aa676ace3",
@@ -59,6 +61,15 @@ def main():
                      PINS["part1_response_arrived"], PINS["part1_main_sync_arrived"],
                      "--", P1).decode().splitlines()
     add("part1_main_sync_arrived", sync_paths)
+    merged_p1_paths = git("diff", "--name-only", "--diff-filter=ACMRT",
+                         PINS["part1_main_sync_arrived"], PINS["main_part1_merged"],
+                         "--", P1).decode().splitlines()
+    merged_pg_paths = git("diff", "--name-only", "--diff-filter=ACMRT",
+                         PINS["literature_index_update"], PINS["main_part1_merged"],
+                         "--", PG).decode().splitlines()
+    add("main_part1_merged", merged_p1_paths + merged_pg_paths +
+        ["PROOF_STATUS.md", "ID_CROSSWALK.md", "state/IDEAS.md", "state/CURRENT.md",
+         "PAPER_MAP.md", "topics/padua-batch-20261031/ALLOCATIONS.md"])
     pg_paths = tree(PINS["programme"])
     add("programme", [p for p in pg_paths if
         p in [PG + x for x in ["OPEN_TARGETS.md", "checks/decisive-gen4-2.md",

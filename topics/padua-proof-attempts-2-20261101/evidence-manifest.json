@@ -4,6 +4,8 @@
   "pins": {
     "part1_and_rules": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
     "part1_audit_arrived": "95279b833bca5967fcf47c1b71a56ff622185b4e",
+    "main_part1_merged": "806cc7b4509fd93bae652f9545d32d95529f8281",
+    "part1_final_branch": "752ba068589683afe644b505d673f8da1529cbf0",
     "part1_main_sync_arrived": "93da3be26dbddf9ec2446af578fe8015bb4eeada",
     "part1_response_arrived": "7b8884a2f98518784ff3698dd2f3f9c49c9cdd62",
     "literature_index_update": "cf89b140530d5838bdb208a8c28f3e7aa676ace3",
@@ -113,6 +115,222 @@
       "git_blob": "876b91938a629286df68e3c7daa2ea1151ab73f6",
       "sha256": "c5a30a0922604ec2545233bc91d7a05efcac55ff424d236a8a9eed4907ecf466",
       "bytes": 16526
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "ID_CROSSWALK.md",
+      "git_blob": "631cc65a86c1b39a38a13c257064a39b42d2df4b",
+      "sha256": "a65c2e715cbb6fd01f75ae7de900ccf85509e81c34ed0354bd21c2e2289d8229",
+      "bytes": 252010
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "PAPER_MAP.md",
+      "git_blob": "ac3ca6704af59868b3bf1e2515e6cd5eba3a1ae7",
+      "sha256": "bca6b29bbd5c0e6b357cb9904dfe0df682f4c80518829a823e9fac28b3b2e701",
+      "bytes": 3581
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "PROOF_STATUS.md",
+      "git_blob": "eedee5e38a2469ddb81980f10944b0e08f87c78c",
+      "sha256": "a916cda87c9f7ad1950f62e32d254f5c276d386b63f5e84a32cb08a3298f8b0f",
+      "bytes": 99924
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "state/CURRENT.md",
+      "git_blob": "c82846992c02231344d5172d6bb0fe8540bd4307",
+      "sha256": "bfa11a51cd5e03d614756638818674644a830dbd92372ce98e719ed9f7972afc",
+      "bytes": 14194
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "state/IDEAS.md",
+      "git_blob": "51d0d9cf79507b0b92e930a19882b942ecb94486",
+      "sha256": "de45820ecb33f8694b0ed4a13177fc2d91094729dc2f164e3d26034fada4d4a0",
+      "bytes": 159295
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "git_blob": "625b7ca0d12bd1ac1e3501f05adc573fbdf2aead",
+      "sha256": "26918056d06e8fed622e07e512c062fb8bfce9762e211ffe5bf78aedd0225d36",
+      "bytes": 20377
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "topics/padua-proof-attempts-20261101/LOG.md",
+      "git_blob": "73463cf2e2b222ab795006b65476875f418850d6",
+      "sha256": "ca621145a7aacab7fca100ce9f3d6d10f9a4581461a60b66e046a3990eeee55f",
+      "bytes": 29965
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "topics/padua-proof-attempts-20261101/finalization/applied-replacements.json",
+      "git_blob": "ca4e2fad39a78ed76489af256bc51a5e67460757",
+      "sha256": "69e89d38f1a514418ed20c1cc25c20ef99356647bec07f1065a2bf07259c263b",
+      "bytes": 14807
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "topics/padua-proof-attempts-20261101/finalization/check_integration.py",
+      "git_blob": "43f2c82f134ce8d33bfcd600514773260c694123",
+      "sha256": "3ef9896031895252e505441e62c0053340d8b1effccf8672617b8809d42aa4fb",
+      "bytes": 7054
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "topics/padua-proof-attempts-20261101/finalization/id-map.json",
+      "git_blob": "a552c3fbb3d31e9690658f11ad05f4342b034745",
+      "sha256": "ea982701c0936ada133335d0e2721b39c93c45148df3ac9f53bacb1f768d6b66",
+      "bytes": 666
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "topics/padua-proof-attempts-20261101/finalization/integration-checks.json",
+      "git_blob": "bbaab4248b507047cb653b9f51fc20f68f1a9416",
+      "sha256": "77d0c30592d988ca5d4876c93397718ffa5f52db46c0d924b4ef49d421b36730",
+      "bytes": 5482
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "topics/padua-proof-attempts-20261101/finalization/integration-rehearsal.json",
+      "git_blob": "d598baae4c4e3bf152c8ba41f2b5f063b882e21d",
+      "sha256": "a9f10e8d2d574567a4398446a089b4ca163cf26cc9bb4cc2bec47aee86b41640",
+      "bytes": 2716
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "topics/padua-proof-attempts-20261101/finalization/integration-review.md",
+      "git_blob": "f193a7a457616231f30e74a819d73365a6f70f0a",
+      "sha256": "a12d13874d33c8be990bc45d049146fd7017f031ef3e3fcd15ae55492f8d5001",
+      "bytes": 7414
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "topics/padua-proof-attempts-20261101/finalization/reservation-recheck.json",
+      "git_blob": "be9ddd9b7b03f6bf58516082eda0c95a98cff1e7",
+      "sha256": "a7e199a4ec6f9cc437e50fc4c350685153cebd11324be04c7351d094ffa0a25e",
+      "bytes": 4859
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "topics/padua-proof-attempts-20261101/finalization/reservation-scan.json",
+      "git_blob": "c24190aa71884b0b7d56bd1e78de5f9614bc9f4f",
+      "sha256": "bab7ad98b03a093f700a72360ac9cd3b01f8ccc6c0f763a6ddfb8d89a358a3bd",
+      "bytes": 16030
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "topics/padua-proof-attempts-20261101/handoffs/01-integration-preparation.md",
+      "git_blob": "510009b21d7a82c4bfe628949502e8faba5e0e42",
+      "sha256": "70f8ca221af52c707dc45704df032c49f8f7ced285fee9d466f658e09bcd234a",
+      "bytes": 3891
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "topics/padua-proof-attempts-20261101/handoffs/02-finalize.md",
+      "git_blob": "b5ba348e6ecc868039d6e609225e52d32a9d967c",
+      "sha256": "6f070946a16a29d6d5278d057740f9ae4096a7f232191e93d02bc9e861450937",
+      "bytes": 2641
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "topics/padua-proof-attempts-20261101/pr-prep.md",
+      "git_blob": "03f5c29f16d6185e918cbbbc3d83e6abbef51efa",
+      "sha256": "7c025173e5e2155ef136f428f6c838c87e7a34f49a31ce0f3c21b5704864af76",
+      "bytes": 7089
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "topics/padua-proof-attempts-20261101/proposed-record-changes.md",
+      "git_blob": "20836cd4b07bf7cd7a5608697fb9d1789be3d224",
+      "sha256": "c58ae82187d450051a931b70550e387c7e0b9be72c9769debab0238f65471fe3",
+      "bytes": 19878
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-01-padua-corner.md",
+      "git_blob": "e08dc5c427b57ec944135776aac8a87dde804ccf",
+      "sha256": "ea59aa077a4d021fc69354383f69340f21d17d87d3a28c6ecaaf302cc763612c",
+      "bytes": 10507
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-02-generic-commutant.md",
+      "git_blob": "5d4dcd55854ef6a9b8637a4790914abcfcc8f4ba",
+      "sha256": "3a167aa4b81edeb12452a3da01de67ae64f10290f628a0b680762e43852350a7",
+      "bytes": 15056
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-03-degenerate-maxima.md",
+      "git_blob": "b0555cc0815324a2bb0f9b5f6bd0faf06c48a05c",
+      "sha256": "e46beb621139cf531c855ad2574430045193a740685605e4556cb5c6960e6067",
+      "bytes": 16690
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "topics/programme-ideas-20261031/OPEN_TARGETS.md",
+      "git_blob": "98f83956714b002e229cd9ad9b3c9072f19c4591",
+      "sha256": "c181d688edc8927b23e273f2a5f6542e950652b9bd892e5a96c89d2e3e199157",
+      "bytes": 19652
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-01-finite-favard-pattern-pairs.md",
+      "git_blob": "1a7760ef3cd93135837ef1e2acb49a566bb6ed27",
+      "sha256": "9e25301b14086106d623c5d5e44cc2a751eea17d5f58b6c412b75a3ebfdf89aa",
+      "bytes": 12360
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-04-padua-corner-expansion.md",
+      "git_blob": "7d44062ac48f73926c15999a7ce6a33bc0f4eb0c",
+      "sha256": "3cedf9b5f79f7b2ca24ce5b4b5e71327a90bf8951be780b54d021132c12bd30b",
+      "bytes": 6438
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-06-padua-lebesgue-maxima-counts.md",
+      "git_blob": "21f1268d1f3b7fb4eb1d423dfcd7ecb354a3b89c",
+      "sha256": "cf96d30ce806aee7915fa47593b22a5b6873e5110b54be8e83b7ab2301cdb355",
+      "bytes": 8189
+    },
+    {
+      "source": "main_part1_merged",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N04-pattern-commutant-not-three-dimensional.md",
+      "git_blob": "c68f10064c9339587e3656c34b921eb8fd11d491",
+      "sha256": "c3f1a222d295ade530a5b682b4d76ad4fe02b2a6c1791391f979ca6ff0ffab01",
+      "bytes": 5360
     },
     {
       "source": "part1_main_sync_arrived",
@@ -1654,8 +1872,8 @@
   "outputs": [
     {
       "path": "topics/padua-proof-attempts-2-20261101/LOG.md",
-      "sha256": "2e5a797b90e76740f6f505c8674ef4e3965ae59c65364da2716c282c07057bfc",
-      "bytes": 42043
+      "sha256": "1a728789bac006a018618983c80ff670db88ec68fcf7f64abe6d08ce0d89f4e5",
+      "bytes": 44625
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A2.md",
@@ -1879,8 +2097,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/code/evidence_manifest.py",
-      "sha256": "a9f28de1a82fbcb02043cf0fb89540998ea97c07d0659d6829d8a2a5d7bed126",
-      "bytes": 6659
+      "sha256": "9d220edbef008082810b3f6983a3da1d9876a9ee032f8ceefa7bbca860309154",
+      "bytes": 7448
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/handoffs/01-work.md",
@@ -1959,8 +2177,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/inputs-review.md",
-      "sha256": "597430e51e948af71d47a73f2b7dce47c7355ea2a9bc41f1da18d5a9fe085682",
-      "bytes": 13922
+      "sha256": "64b064c47c5a93f8baf879066d818025f0f03cb4e3c5a5c6fe19a6413674b355",
+      "bytes": 14557
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/outputs/a2_exact_check.json",
@@ -2234,8 +2452,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/proposed-record-changes.md",
-      "sha256": "eb002cbe65a1995ae2765f2c0df014ed8af3c6d0e27dd454aea595b864423129",
-      "bytes": 12628
+      "sha256": "63661397c94b262d967845f0b4efe43f1eed61104b13b4ac6a0fdd79a94c366f",
+      "bytes": 14884
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-01-corner-leading-lower.md",
