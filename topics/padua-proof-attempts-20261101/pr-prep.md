@@ -1,5 +1,10 @@
 # PR #9 preparation — accepted proof attempts
 
+Current synchronization: main `cf89b140530d5838bdb208a8c28f3e7aa676ace3`
+is now merged into this branch. PR #6 and PR #10 are merged, and PR #9 targets
+main. The earlier preparation below is retained as historical provenance; see
+the final “Fresh-main update” section for current state.
+
 - Rules/head on resume: `95279b833bca5967fcf47c1b71a56ff622185b4e`.
 - Developer/orchestrator: Codex, requested gpt-6.1-sol medium; resolved runtime metadata unexposed.
 - Scientific candidate accepted by Claude Opus 5.5 xhigh: `a09d910ae7d5526b1e216066421a0bee7fc20da4`; audit delivery `95279b8`.
@@ -67,3 +72,40 @@ Git apply reported nine existing trailing-whitespace lines in the PR #6 patch;
 it applied successfully without rewriting them. This topic's own diff passes
 `git diff --check`. The inherited warnings do not justify editing another
 branch's files in this preparation.
+
+
+## Fresh-main update (2026-11-01)
+
+Integrated all current main changes via merge `b9ba9b7bf11ac8601f76659a38bb205ee6dad111`.
+Main `cf89b140530d5838bdb208a8c28f3e7aa676ace3` includes merged PRs #6, #10,
+#11 and #13. No conflicts; no topic science changed. Exact A1/B5/A5 reruns all
+match their existing receipts. Main ancestry, topic-only diff and whitespace
+checks pass; main-sync.json records inputs, provenance and results.
+
+All twelve source-proposal originals still match once on current main. The
+merged final-ID crosswalk is now authoritative for existing programme records
+(PD-T095/098/100 and PD-N042 for the aliases relevant here). The topic's three
+result IDs remain provisional; no new range or assignment is made by this sync.
+Source/registry application remains a separate preparation step within AC's
+ownership instructions. PR #9 remains draft and its base is main.
+
+The evidence-manifest.json and preparation-checks.json are historical receipts
+for their recorded candidates. Fresh main intentionally changes rules,
+registries and allocated source-record text. The sync validates their pinned
+inputs through Git objects, not by asserting current main equals the old base;
+replay the old provenance generator in its recorded checkout. Scientific
+checkers run successfully in the current merged checkout. No historical
+scientific output or audit record is rewritten.
+
+Next remaining step is in handoffs/01-integration-preparation.md, published
+under the new rules after the sync outputs are committed. No PR is merged and
+no readiness elevation is inferred from a clean main merge.
+
+
+### Registry preservation after the live main merge
+
+AC specifically requested a damage check. registry-integrity.json records nine
+registry/ledger files byte-identical to main, 143 unique primary proof IDs,
+2,388 existing local registry link targets with none missing, and the successful
+read-only installed-allocation check (192 allocations and 16 merged aliases).
+There is no outside-topic diff against fresh main and no allocation write.

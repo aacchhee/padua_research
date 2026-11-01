@@ -1,5 +1,13 @@
 # Proposed changes to the programme-ideas records
 
+Sync note (2026-11-01): all twelve Old blocks were rechecked and still match
+exactly once on main `cf89b140530d5838bdb208a8c28f3e7aa676ace3`. The existing
+programme aliases now resolve through ID_CROSSWALK.md to PD-T095, PD-T098,
+PD-T100 and PD-N042 where relevant. The reviewed replacement package below
+retains its historical aliases and provenance; it is not applied by the main
+synchronization. Use the current crosswalk and reservation rules in the next
+preparation pass.
+
 These are exact literal replacements checked against refreshed upstream
 `9bd14a6d2c4da69139a10107d8a787f2be0c5c9e`. **They have not been applied.**
 The proof/input base remains `cadb35066160e466cb1704b9791ad6f374446422`;

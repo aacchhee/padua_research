@@ -1,0 +1,134 @@
+{
+  "main": "cf89b140530d5838bdb208a8c28f3e7aa676ace3",
+  "checked_head": "5e2f7a93bde61f187c4659716bcc5bfe8ada6b77",
+  "registries_and_ledgers": [
+    {
+      "path": "ID_CROSSWALK.md",
+      "bytes": 249483,
+      "sha256": "543b970b311bb49cc7147db637734f37e6cdb7c48e91d67c3c9e79d55812844c",
+      "git_blob": "15637d098d5e88e354f16948ad3c5bf4b103fe2c",
+      "byte_identical_to_main": true
+    },
+    {
+      "path": "PROOF_STATUS.md",
+      "bytes": 96640,
+      "sha256": "ab3cbc4f09578571828a28773a9a527f0c22dba49270c92b652645c1420b35c2",
+      "git_blob": "8a42699a04ee0d555453f4e2ac10a597dc9e276a",
+      "byte_identical_to_main": true
+    },
+    {
+      "path": "state/IDEAS.md",
+      "bytes": 158605,
+      "sha256": "f70650460c7b140021a084a2b9ddd56efc73f7e92ce8ef7b2f717db3ae677898",
+      "git_blob": "d6570b2b20a9f882b02ca4e79cd737a5fa13179e",
+      "byte_identical_to_main": true
+    },
+    {
+      "path": "literature/INDEX.md",
+      "bytes": 265014,
+      "sha256": "f90355c5b77a638d1a49980330eff1bda7d0e7610771a3bdae465f384b03f056",
+      "git_blob": "f9348537234c798a3fa738970513891f0dd8c956",
+      "byte_identical_to_main": true
+    },
+    {
+      "path": "literature/CORPUS.md",
+      "bytes": 103418,
+      "sha256": "82df9616acc8ac408d729881b90f9d1d5d5f5a022a5d5dd064b6f9973b980305",
+      "git_blob": "aeca8b272b50d70e9a6232e6bec878f1d06f82ba",
+      "byte_identical_to_main": true
+    },
+    {
+      "path": "PAPER_MAP.md",
+      "bytes": 3171,
+      "sha256": "da8939029d9ae812922c465e36bd6b712f719cf6a78cdf8487d3400f44ee00f0",
+      "git_blob": "66e5af74b8cdea218a519b8b2d72d600d907786b",
+      "byte_identical_to_main": true
+    },
+    {
+      "path": "state/CURRENT.md",
+      "bytes": 13272,
+      "sha256": "585b316cf1e1ce06ed053bac2b3ac717a832da4badb2a24c06c64e8fc50fbd5a",
+      "git_blob": "59ed39819ea6e46975bae8fad7f2fbff534bf28a",
+      "byte_identical_to_main": true
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+      "bytes": 2271,
+      "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+      "git_blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+      "byte_identical_to_main": true
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "bytes": 18382,
+      "sha256": "d95ea644838d39dc4370ab8ce6c21b16d39f18d6a6dfdae7e912664807d573c3",
+      "git_blob": "4c55ac54bde0f8c901f34d1b73202fa606a467ab",
+      "byte_identical_to_main": true
+    }
+  ],
+  "all_byte_identical_to_fresh_main": true,
+  "proof_primary_IDs": 143,
+  "duplicate_proof_primary_IDs": {},
+  "local_registry_links_checked": 2388,
+  "missing_local_registry_targets": [],
+  "installed_allocation_command": "python -I topics/programme-ideas-20261031/pr-prep/allocate.py (without --apply)",
+  "installed_allocation_validation": "PASS",
+  "allocated_map_entries_checked": 192,
+  "merged_alias_crosswalks_checked": 16,
+  "installed_allocation_output": {
+    "blocks": {
+      "lattice-unisolvence": {
+        "PD-T": [
+          "PD-T081",
+          "PD-T094",
+          14
+        ],
+        "PD-N": [
+          "PD-N032",
+          "PD-N038",
+          7
+        ],
+        "IDEA": [
+          "IDEA-177",
+          "IDEA-189",
+          13
+        ],
+        "LIT": [
+          "LIT-300",
+          "LIT-331",
+          32
+        ]
+      },
+      "programme-ideas": {
+        "PD-T": [
+          "PD-T095",
+          "PD-T100",
+          6
+        ],
+        "PD-N": [
+          "PD-N039",
+          "PD-N043",
+          5
+        ],
+        "IDEA": [
+          "IDEA-190",
+          "IDEA-209",
+          20
+        ],
+        "LIT": [
+          "LIT-332",
+          "LIT-426",
+          95
+        ]
+      }
+    },
+    "next": {
+      "PD-T": "PD-T101",
+      "PD-N": "PD-N044",
+      "IDEA": "IDEA-210",
+      "LIT": "LIT-427"
+    }
+  },
+  "outside_topic_diff": [],
+  "scope": "Verifies no registry/ledger content loss or changes relative to fresh main; validates installed allocation and local link targets. No allocation or registry write performed."
+}
