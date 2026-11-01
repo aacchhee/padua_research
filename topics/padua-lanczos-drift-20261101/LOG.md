@@ -91,3 +91,8 @@
 - Topic working track: written to `C:\Users\andreyac\Downloads\padua\results\padua-lanczos-drift-20261101.md` (development summary plus audit-01 outcome). Shared RESULTS.md untouched.
 - PR #15 AUDIT section: once AC granted repository access, it was updated through the REST API after the push of `386e15d`; the PR is still a draft.
 - Next handoff: [03-response.md](handoffs/03-response.md), Codex response-01 to audit-01.
+
+## AC redirection — Claude takes the response (2026-11-01 16:13 CET)
+
+- AC: "Claude (Opus 5.5 xhigh): Continue codex/padua-lanczos-drift-20261101. Pr14 merges first, then pr15". Handoff 03 (Codex response) is superseded by [04-response.md](handoffs/04-response.md). Claude is now the developer of the audit-01 fixes, so a Codex re-audit is required for material changes.
+- Merge order: PR #14 first, then PR #15. A `git merge-tree` rehearsal (PR14 `5494436` + PR15 `fa5835f`) gives conflicts only in ID_CROSSWALK.md and the batch ALLOCATIONS.md, where both PRs append sections. These are resolved at PR #15 preparation, after PR #14 merges.

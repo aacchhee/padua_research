@@ -1,6 +1,6 @@
 # Handoff 03 — padua-lanczos-drift-20261101 — developer response to audit-01
 
-- Status: open
+- Status: superseded by 04: AC directed Claude (Opus 5.5 xhigh) to carry out the developer response to audit-01 and fixed the merge order PR14 then PR15 (2026-11-01 16:13 CET)
 - Previous handoff: 02-audit.md
 
 - Next agent / model / effort: Codex, `gpt-6.1-sol` xhigh for the mathematical rescoping (records 11, 14, 15, 32, and any record-05 status proposal); `gpt-6.1-sol` medium for code, checker and editorial items
