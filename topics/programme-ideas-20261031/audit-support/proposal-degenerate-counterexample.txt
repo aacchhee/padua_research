@@ -1,0 +1,1 @@
+{'returned': (True, 0.002, np.float64(2.0), np.float64(1e-12)), 'epsilon': 1e-12, 'exact_number_of_maxima_in_returned_disc': 2, 'exact_maxima_x': [-5e-13, 5e-13], 'scope': 'local certificate implication, not a Padua count refutation'}

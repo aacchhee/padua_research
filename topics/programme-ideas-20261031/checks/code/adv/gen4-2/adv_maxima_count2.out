@@ -1,0 +1,61 @@
+--- n = 5: published interior/total (14, 25)
+  coarse 801^2 cheb: coarse 12, refined distinct 12, ring-verified 12   [1s]
+  coarse 801^2 uniform: coarse 12, refined distinct 14, ring-verified 14   [1s]
+  coarse 1601^2 cheb: coarse 12, refined distinct 12, ring-verified 12   [7s]
+  coarse 1601^2 uniform: coarse 12, refined distinct 12, ring-verified 12   [8s]
+  coarse 3201^2 cheb: coarse 14, refined distinct 14, ring-verified 14   [47s]
+--- n = 7: published interior/total (27, 42)
+  coarse 801^2 cheb: coarse 30, refined distinct 28, ring-verified 28   [48s]
+  coarse 801^2 uniform: coarse 27, refined distinct 27, ring-verified 27   [49s]
+  coarse 1601^2 cheb: coarse 27, refined distinct 27, ring-verified 27   [56s]
+  coarse 1601^2 uniform: coarse 27, refined distinct 26, ring-verified 26   [58s]
+  coarse 3201^2 cheb: coarse 29, refined distinct 29, ring-verified 29   [150s]
+--- n = 8: published interior/total (38, 56)
+  coarse 801^2 cheb: coarse 30, refined distinct 34, ring-verified 34   [152s]
+  coarse 801^2 uniform: coarse 30, refined distinct 32, ring-verified 32   [153s]
+  coarse 1601^2 cheb: coarse 32, refined distinct 36, ring-verified 36   [169s]
+  coarse 1601^2 uniform: coarse 32, refined distinct 34, ring-verified 34   [172s]
+  coarse 3201^2 cheb: coarse 34, refined distinct 34, ring-verified 34   [315s]
+  n=8 maxima from the 3201^2 start: theta, phi, lambda, dist to nearest other max, crease distance |l_B|/|grad l_B| (min over B), B index
+   2.323202 1.084574 4.11447  pair 6.63e-03  crease 4.06e-03  B=30
+   2.328981 1.087822 4.11411  pair 6.63e-03  crease 2.54e-03  B=30
+   0.818390 1.084574 4.11447  pair 6.63e-03  crease 4.06e-03  B=10
+   0.812612 1.087822 4.11411  pair 6.63e-03  crease 2.54e-03  B=10
+   2.327007 2.408664 4.18705  pair 2.19e-02  crease 4.06e-03  B=26
+   2.309768 2.422172 4.18054  pair 2.19e-02  crease 2.64e-03  B=26
+   0.814586 2.408664 4.18705  pair 2.19e-02  crease 4.06e-03  B=16
+   0.831825 2.422172 4.18054  pair 2.19e-02  crease 2.64e-03  B=16
+   0.850672 0.397731 4.07854  pair 2.47e-01  crease 7.29e-03  B=8
+   0.979023 0.186674 3.12514  pair 2.47e-01  crease 1.73e-03  B=38
+   2.290921 0.397731 4.07854  pair 2.47e-01  crease 7.29e-03  B=38
+   2.162570 0.186674 3.12514  pair 2.47e-01  crease 1.73e-03  B=8
+   0.457133 1.395717 4.16380  pair 4.70e-01  crease 1.80e-02  B=28
+   2.684460 1.395717 4.16380  pair 4.70e-01  crease 1.80e-02  B=18
+   1.570796 2.418087 4.24343  pair 4.77e-01  crease 3.84e-02  B=40
+   1.214150 2.734783 4.03626  pair 4.77e-01  crease 1.84e-02  B=1
+   1.927442 2.734783 4.03626  pair 4.77e-01  crease 1.84e-02  B=41
+   2.311638 1.735493 4.26641  pair 4.78e-01  crease 1.07e-02  B=8
+   1.961446 1.410551 4.17768  pair 4.78e-01  crease 6.76e-03  B=19
+   0.829954 1.735493 4.26641  pair 4.78e-01  crease 1.07e-02  B=38
+   1.180146 1.410551 4.17768  pair 4.78e-01  crease 6.76e-03  B=29
+   1.943077 0.726340 4.25290  pair 4.79e-01  crease 1.07e-02  B=7
+   1.198516 0.726340 4.25290  pair 4.79e-01  crease 1.07e-02  B=37
+   1.570796 0.409529 4.03068  pair 4.89e-01  crease 6.48e-03  B=9
+   1.202652 2.086441 4.32286  pair 4.94e-01  crease 2.51e-02  B=38
+   1.570796 1.757187 4.21759  pair 4.94e-01  crease 3.57e-02  B=38
+   1.938941 2.086441 4.32286  pair 4.94e-01  crease 2.51e-02  B=8
+   0.445008 2.741692 4.24144  pair 4.97e-01  crease 1.86e-03  B=36
+   2.696585 2.741692 4.24144  pair 4.97e-01  crease 1.86e-03  B=6
+   1.570796 1.057673 4.41878  pair 4.98e-01  crease 9.10e-03  B=36
+   0.451187 2.065424 4.05821  pair 5.00e-01  crease 1.93e-02  B=23
+   2.690406 2.065424 4.05821  pair 5.00e-01  crease 1.93e-02  B=23
+   0.441266 0.747801 3.87280  pair 5.03e-01  crease 2.18e-03  B=19
+   2.700327 0.747801 3.87280  pair 5.03e-01  crease 2.18e-03  B=29
+  union of verified maxima over all five starts (dedupe 2e-6):
+   union count 38
+--- n = 7 edge maxima (1D grid 40001 per edge, must also decrease into the interior):
+   x=+1 [(0.45899, 4.30724, True), (1.17299, 4.97624, True), (1.9686, 4.97624, True), (2.68261, 4.30724, True)]
+   x=-1 [(0.80456, 4.6921, True), (1.5708, 5.07213, True), (2.33703, 4.6921, True)]
+   y=+1 [(0.51773, 4.84525, True), (1.34617, 4.92622, True), (1.35866, 4.93071, True), (2.20485, 4.8628, True)]
+   y=-1 [(0.51773, 4.84525, True), (1.34617, 4.92622, True), (1.35866, 4.93071, True), (2.20485, 4.8628, True)]
+elapsed 481 s

@@ -1,5 +1,7 @@
 # PD-N?lattice-c3-codex-01 — Scoped deficiencies and annihilator certificates in the finite 3D catalogue
 
+Final ID: **PD-N035** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N. Aliases: failed finite rank scopes; layer-cover and projected-count cases. Split from: c3-rank-observations.md. Split into: the general certificate theorem c3-annihilator-certificates.md.
 
 ## Statement and negative-result scope

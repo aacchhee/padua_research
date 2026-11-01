@@ -4,7 +4,7 @@ Read `AGENTS.md` and `agents/WORKFLOW.md` at the working branch head before acti
 
 ## Development
 
-Use Sonnet 5.5 high for code and technical development, Sonnet 5.5 medium for mechanical work, and Opus 5.5 high or xhigh for mathematics. Record the model and effort. Delegate bounded tasks with explicit inputs, expected artifacts, acceptance criteria, and disjoint ownership; do not delegate Git authority.
+Use Sonnet 5.5 high for code and technical development, Sonnet 5.5 medium for mechanical work, and Opus 5.5 high or xhigh for mathematics. For ideas campaigns (brief writing, conceptual candidate generation, duplicate gating and adversarial idea checks) Claude Fable 5.1 at xhigh effort is also allowed, as recorded in the `agents/WORKFLOW.md` allocation table (added 2026-10-31 at AC's explicit request); Opus 5.5 xhigh remains allowed for the same work. Record the model and effort. Delegate bounded tasks with explicit inputs, expected artifacts, acceptance criteria, and disjoint ownership; do not delegate Git authority.
 
 1. Read definitions, the requested scope, relevant theory, and source dependencies. Before ideas, scan all `state/IDEAS.md` headings and aliases, search mechanism terms and synonyms, and read full shortlisted entries and obstruction tables. Log that gate; a renamed known mechanism does not pass it.
 2. Generate candidates with `templates/IDEA.md` and retain every candidate, including failed, equivalent, deferred, and rejected ones. Give each a closest predecessor, a mathematical separation criterion, and a kill test. A negative result must state exactly what was attempted and the assumptions, scope, evidence, and remaining alternatives.
@@ -15,7 +15,7 @@ Use Sonnet 5.5 high for code and technical development, Sonnet 5.5 medium for me
 
 ## Independent audit
 
-The auditor chooses the model and depth: Sonnet 5.5 high or Opus 5.5 high for protocol/technical audit; Opus 5.5 high or xhigh for mathematics; Opus 5.5 xhigh for adversarial analysis or a novel mechanism. Record the choice and its reason. The auditor must be a different agent from the developer.
+The auditor chooses the model and depth: Sonnet 5.5 high or Opus 5.5 high for protocol/technical audit; Opus 5.5 high or xhigh for mathematics; Opus 5.5 xhigh for adversarial analysis or a novel mechanism; for an adversarial idea check inside an ideas campaign, Fable 5.1 xhigh is also allowed. Record the choice and its reason. The auditor must be a different agent from the developer.
 
 Read the full `state/IDEAS.md` whenever scope includes ideas, novelty, mechanisms, or negative claims, then inspect relevant full entries, theory, and obstruction tables. If there is no novelty content, state that scope and why the full read is omitted. Reconstruct the exact claim independently. Challenge novelty separation, kill tests, omitted candidates, assumptions, quantifiers, edge cases, proof dependencies, and the scope of negative conclusions.
 

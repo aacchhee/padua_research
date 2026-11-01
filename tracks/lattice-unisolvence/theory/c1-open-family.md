@@ -1,5 +1,7 @@
 # PD-T?lattice-c1-codex-05 — Parity-adapted adjacent-mod4 Chebyshev interpolation target
 
+Final ID: **PD-T088** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T. Aliases: phase0odd/phase1even; antipodal-transversal half-grid.
 Split from: IDEA?lattice-c1-codex-01's broad family question; the proved structural reductions retain their own IDs. Split into: none.
 

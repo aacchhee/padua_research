@@ -1,5 +1,7 @@
 # PD-N?lattice-c3-codex-04 — Exact axis-separation rectangle obstructions in finite degrees
 
+Final ID: **PD-N038** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N. Aliases: cross-determinant test; axis-block multiplicative rank1 test. Split from: n1 example c3-n1-mixed-axis-obstruction.md. Split into: none.
 
 ## Statement

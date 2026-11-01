@@ -1,0 +1,221 @@
+{
+  "source_sha": "614709d4a60fb0c2593b05764e8d5aceda1be381",
+  "scope": "supplementary proposal audit source/output identities; not an exhaustive read receipt",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 3159,
+      "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60"
+    },
+    {
+      "path": "agents/WORKFLOW.md",
+      "bytes": 18747,
+      "sha256": "17ee68fed1c8f3cd646c283587199e1f5a47c4a577fc40aeb8d24d6ab883195d"
+    },
+    {
+      "path": "agents/codex/CODEX.md",
+      "bytes": 4969,
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b"
+    },
+    {
+      "path": "state/IDEAS.md",
+      "bytes": 49117,
+      "sha256": "1686b5060fe185e1def687368e92b3b9c4bb929ead113cbc6f6c73e33798aea4"
+    },
+    {
+      "path": "literature/INDEX.md",
+      "bytes": 24874,
+      "sha256": "d3015682fc3ca7d225db40f71dba400eca248ef47fd44b2127b5b18a8f532cae"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/report.md",
+      "bytes": 48451,
+      "sha256": "233faea0990439e132290d55e45d6cb3510533e62d4e60696f455ff5dd6df5a1"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/proposal-1.md",
+      "bytes": 8175,
+      "sha256": "233e47a307ae9ec49c37b2301bf71a36189d4d385a44a4bd9878c6a1a6818593"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/ideas/candidates.md",
+      "bytes": 116687,
+      "sha256": "bac7911168fc2de75c4b2e732bd8fad7bd682ebe442f10c8a696ea2057eda7c7"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/adversarial-gen4-2.md",
+      "bytes": 32096,
+      "sha256": "594fe48ea01360a50f681eb63cedd7dac67a6ff3682fbf0ef6b625278f6545ad"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/decisive-gen4-2.md",
+      "bytes": 23362,
+      "sha256": "b559038336b2dbabe38066a16b7216d6ac89452751152adf33f9ead4184787c8"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/leb_common.py",
+      "bytes": 14491,
+      "sha256": "419970972ae69efcc5e4a1c965fbd49982b67100376d3ff0c46e8629dcb382d0"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_argmax.py",
+      "bytes": 7012,
+      "sha256": "02fa14792afa2c72032d4a91998d4da273d83200067437bd2573bb8430bae216"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_tail.py",
+      "bytes": 4088,
+      "sha256": "552fdb4233bf6ee9d3f4d893dcf38f34b04a759e924711f43927d9a5703769fe"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_halfshift.py",
+      "bytes": 2837,
+      "sha256": "d4cdc2102f3f6885f86ec2a6e9a4ad64b81a36de8b7878e6d6be8c950deb4d4a"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_identify.py",
+      "bytes": 7403,
+      "sha256": "55936d19d737e67c0145a9e3ab125643b949e7f62a289f9a138060bd7fdd6aa7"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_odd.py",
+      "bytes": 2859,
+      "sha256": "269f37e6a350bf4f04ea1123bb4d3f88629f00123383433892eb02fd75c938cf"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_onepage.py",
+      "bytes": 12943,
+      "sha256": "e7c062a90c883de783d041503dbba77f7fe03070a0f796a28cf66b78b4a5262a"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_certify.py",
+      "bytes": 30348,
+      "sha256": "1a1fb00ced54bb3083dce2ff12c56cd10c28499b7e0353ba23e8a6afd5a9d78b"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_degenerate.py",
+      "bytes": 10557,
+      "sha256": "cdf8cd3273c9ecffa35542bb572a0dde141bf5d068b77ddda548a9a5bdaee5b4"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_validate.py",
+      "bytes": 5783,
+      "sha256": "3fb63a3b3dcd2e50b585728fc0f7323a78ddb3952267072d3a37f65fe1c5874b"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_argmax.out",
+      "bytes": 8918,
+      "sha256": "9d500032d8d53583c4644fd2d554bf487c3fd5472bb21bd892ec4f70a9c6f548"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_tail.out",
+      "bytes": 1463,
+      "sha256": "d863e8f2861503702831c4ab1eac0a629b4b4a39b05dc9cb9fdd204188d36492"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_halfshift.out",
+      "bytes": 3534,
+      "sha256": "0f65bd19274fe11b84045061c30b0243eed5fd1b1402c5acd82612e83c99b186"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_identify.out",
+      "bytes": 7379,
+      "sha256": "7dfe7db98f26fef0ab68da6b5afb1857c3cefd0efc182bed50e9a426d8b150ed"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_identify2.out",
+      "bytes": 1956,
+      "sha256": "e8ba834388e9e0b29a5a46d2f5f853c83f42eae3fb18b8ad1517db675032f1a2"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_odd.out",
+      "bytes": 4475,
+      "sha256": "fc809dada19f75e3cea51ae6a3c6ec0f0d2c7b76281f6afa06d9da77e7a4c444"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_onepage.out",
+      "bytes": 7028,
+      "sha256": "4b0c81bd0dcc5f87447769b91404637ec5c4b9a815bcdd90a07be1b5ee9d5df6"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_certify.out",
+      "bytes": 12480,
+      "sha256": "637303c5defbaac0fa105c80d79b9f69c8e34922af39f1607924aa2468516b06"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_validate.out",
+      "bytes": 7903,
+      "sha256": "1da3aa3b434eb93cfb8041e87218401fa785c245ac40f84b096ad1a65b042e1e"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_maxima.json",
+      "bytes": 13560,
+      "sha256": "bf1890f4d23f871f16d2dda41b800e0d70d2025299221296081a925518d48de0"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-degenerate-counterexample.json",
+      "bytes": 254,
+      "sha256": "7e8a1bcd68fa10385ea5cace9a6313506e5fd0485a638a21b8d33d7b5bc59827"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-degenerate-counterexample.py",
+      "bytes": 1204,
+      "sha256": "7aaf01780b6963cb7f0671ebf735065e81ce7dd925145ab60cae7fe57c8eafb7"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-degenerate-counterexample.txt",
+      "bytes": 235,
+      "sha256": "c97b778afd604dcfa9c36b5fef3d2468ff565595380fdc70e51c8cad71221603"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-fit.json",
+      "bytes": 5415,
+      "sha256": "3360ade2daa323c7261463104e4e4bb80f8c810b32c2e51feefacb44d20e34bc"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-fit.py",
+      "bytes": 1659,
+      "sha256": "b1e1c11b56fd36ccc570b4cc7a8b4be1a4237fe868b4d157e8194356ccd6b3a5"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-fit.txt",
+      "bytes": 280,
+      "sha256": "c28726c220dd8fbde4c54fd5d66ec97e35c77f592d90f70c69bfb83018dc8153"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-independent.json",
+      "bytes": 4038,
+      "sha256": "c0ca5182da1a231f009348888d44654acc08c5293d261521bf9e4fbee846fcec"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-independent.py",
+      "bytes": 2303,
+      "sha256": "f5e841726c732595ad33474da8f85f0f9aec2ad104361c388a87177bd5f3658a"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-independent.txt",
+      "bytes": 2588,
+      "sha256": "7bab37be91d9458a9d3fcfae11c54cdc760801bc9aaba80c41017aa169071663"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-rerun.json",
+      "bytes": 60960,
+      "sha256": "66d06e5a5669fa71cc74deddaf4bb0c5c15c12c5d796e9c8271db16ac91613eb"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-rerun.py",
+      "bytes": 778,
+      "sha256": "9c32ab6d530ad4b4bc097a6dd300ce7361ba7eaca43ab489e5556e388e35cb70"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-rerun.txt",
+      "bytes": 1659,
+      "sha256": "58a82d314ffd24471ca1210553d2c8e3277cda099f2809c3e1b4da50f6785564"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/proposal-review.md",
+      "bytes": 8940,
+      "sha256": "fa041d6751a277971f3b585dbef2282824c05072ef04b25be5f0736c6c256aae"
+    }
+  ]
+}

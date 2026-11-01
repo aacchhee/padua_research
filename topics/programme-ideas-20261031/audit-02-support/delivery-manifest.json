@@ -1,0 +1,118 @@
+{
+  "source_sha": "cadb35066160e466cb1704b9791ad6f374446422",
+  "main_sha": "9739a0c56b7a3976422ce60a8441bfbbfd6554df",
+  "scope": "audit-02 and current-stage metadata; no developer correction",
+  "component_manifest_identities_verified": 43,
+  "files": [
+    {
+      "path": "topics/programme-ideas-20261031/LOG.md",
+      "bytes": 26153,
+      "sha256": "184d96cb471cd381874063d26f23b9d7ec11420403e80ab92fd51bb3b0f46da5"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-02-support/literature-check.json",
+      "bytes": 76260,
+      "sha256": "20a651b7adfd26d8c7035e0fed76118286c459a5b3c0ce62b483cbfff78b8f02"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-02-support/literature-check.py",
+      "bytes": 4305,
+      "sha256": "4adb39edf06f03e3379e4587abef9b9494da6087e28f00208dc3787e5845ca4a"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-02-support/literature-review.md",
+      "bytes": 8939,
+      "sha256": "8ff2d4afe8b66902925fcb636cda3ae898ed40a472477868be3f65ef41a04d99"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-02-support/obstructions-check.json",
+      "bytes": 39115,
+      "sha256": "938ad64d70fdccf70ea06bddc1bfffa14e1457f817518102e4b76fac03ae65ed"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-02-support/obstructions-check.py",
+      "bytes": 6138,
+      "sha256": "25b19d22fb6df15e5aed5f551c0cf751a92bd0917512a4655cd8bcb9bb641bda"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-02-support/obstructions-report.md",
+      "bytes": 10632,
+      "sha256": "ace40021e5915e0c390add3cf0427cbc2ed5817a68dbe50609e69dff567918d7"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-02-support/proposal-edge-independent.json",
+      "bytes": 549,
+      "sha256": "738adeb12658fd9be567234da267e7a830f7dde8774cbe69694604971d6db79e"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-02-support/proposal-edge-independent.py",
+      "bytes": 1883,
+      "sha256": "26df387fd5b882d2c5bd458729a27886c2c9e3bbadf975889facf110cbfbb5ab"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-02-support/proposal-edge-independent.txt",
+      "bytes": 549,
+      "sha256": "738adeb12658fd9be567234da267e7a830f7dde8774cbe69694604971d6db79e"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-02-support/proposal-edge-rerun.txt",
+      "bytes": 92,
+      "sha256": "edcf466f534d6d568d22e1e9b78effa74f238b0963da23a2e7a93b367f2370ff"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-02-support/proposal-identity.json",
+      "bytes": 3710,
+      "sha256": "afff25578cae63fa049322d732bc485de5d80368e49a19c681447421d7a0edb3"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-02-support/proposal-manifest.json",
+      "bytes": 4148,
+      "sha256": "afa035016c9346d9536fc44a2499761c0e63d16ccea3d4a2e8c3bbb7ac1a0f55"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-02-support/proposal-review.md",
+      "bytes": 7269,
+      "sha256": "bf0db47f0236420a6d60aa6142c0e70f252b58a82fc5ae19e297c32d4f539268"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-02-support/protocol-check.json",
+      "bytes": 20844,
+      "sha256": "95a626ca078e92ee5c1d6b2ced75daa242d886086ed3347b9cad52e253fbbe29"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-02-support/protocol-check.py",
+      "bytes": 4656,
+      "sha256": "a0c42844cc27511c59c2adb2cca8053ad834ea1113826abc439085b0617a252c"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-02-support/rejections-developer-parity-replay.json",
+      "bytes": 631,
+      "sha256": "1c41cc733035b5470f6ea62912c6849657b732c125c1e8fbcac95cefae589894"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-02-support/rejections-exact-check.json",
+      "bytes": 1648,
+      "sha256": "a32b1d7f2072dacb0145c429816dfe5349400e26d46050494451390f5ed13982"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-02-support/rejections-exact-check.py",
+      "bytes": 2959,
+      "sha256": "85f562e9aa40db22b455eddd7a27e56223371923d1a85c33198d4490f04a9a0d"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-02-support/rejections-manifest.json",
+      "bytes": 5591,
+      "sha256": "ff074ee7f689546d84172b2eccbdeeb73677a95cb9951d88516fad0f2fbf17e1"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-02-support/rejections-review.md",
+      "bytes": 8400,
+      "sha256": "f4545e7e8f566585c567c727ba1f9b67387aa3b37da81daf7a54f0e918d35977"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-02.md",
+      "bytes": 18821,
+      "sha256": "bde7f59ec66d1467541835b7a08d869ecd720ffa81a2e5a99e7f6ba258ffd60d"
+    }
+  ]
+}

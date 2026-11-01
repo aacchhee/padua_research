@@ -1,0 +1,2284 @@
+{
+ "mirror_root": "/home/claude/inputs",
+ "files": 164,
+ "retrievable_from_repo": 159,
+ "rows": [
+  {
+   "snapshot": "ADVERSARIAL_COMMON.md",
+   "bytes": 4710,
+   "sha256": "a98b7ed31fe2962668c0238eb3cfa601619f31440059c71304c9830a804dd9da",
+   "git_blob": "a7dd7ee159c191103b51174c55c91932e2d771f2",
+   "repo_history": []
+  },
+  {
+   "snapshot": "BRANCH_SNAPSHOT_NOTE.md",
+   "bytes": 661,
+   "sha256": "9a016489c346b0d625274cd7d415afbf11d7fba7c4bfaf5045cb84081f8ceb00",
+   "git_blob": "58cd031bfd168c5896b4f7e98bc51c1aa660a385",
+   "repo_history": []
+  },
+  {
+   "snapshot": "CAMPAIGN_CONTEXT.md",
+   "bytes": 6509,
+   "sha256": "8887e3dcca13643ee8a50c2f193bab783e318e468a1d7f8355fd5bcf1c7f1146",
+   "git_blob": "638f3f5ba85d81856944f3bcec090b7bb8c22848",
+   "repo_history": []
+  },
+  {
+   "snapshot": "DECISIVE_COMMON.md",
+   "bytes": 2500,
+   "sha256": "21bd3d2fcc8c8c5d74f4ed6c7c8de83e9e8934a7c46c7270adb19c8006a9f8d6",
+   "git_blob": "69fc6a409bb6acdbf689f6a2ca43483f4d687bb7",
+   "repo_history": []
+  },
+  {
+   "snapshot": "GENERATOR_COMMON.md",
+   "bytes": 4297,
+   "sha256": "dae7d67f521e0f0fd8ea803e696a00994c5ad93ec3ae43b52fb9868c95844d81",
+   "git_blob": "58f835e4682f71a2b4e40a6ed3ecc04cf2198ec2",
+   "repo_history": []
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/LOG.md",
+   "bytes": 26012,
+   "sha256": "5898d40bf4f21c30983e9181c4bd511f45c655b08b5c3d0b0905188517642491",
+   "git_blob": "bd367c94473f7a6e6f1224e2e2ee1a4460bd89e6",
+   "repo_history": [
+    {
+     "commit": "413e4a6c279adf53f2f4b9adec98824e5949a8bc",
+     "date": "2026-11-01T00:44:12+01:00",
+     "path": "topics/bivariate-lanczos-20261031/LOG.md"
+    },
+    {
+     "commit": "ea06882c608c1702c6ba0098589f5ef5ac80028d",
+     "date": "2026-11-01T00:35:43+01:00",
+     "path": "topics/bivariate-lanczos-20261031/LOG.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/baseline-candidates.md",
+   "bytes": 40445,
+   "sha256": "cdb2f6f6f0de575af168c557c0351721f9ee3053f97b07e5fbff47e7587c5dad",
+   "git_blob": "2a595f8ab6e04fd3aba7e1e97d336240bb93ae63",
+   "repo_history": [
+    {
+     "commit": "6f62c9388cf63eb6fb52338a497cb74404c426ed",
+     "date": "2026-10-31T22:13:52+01:00",
+     "path": "topics/bivariate-lanczos-20261031/baseline-candidates.md"
+    },
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "topics/bivariate-lanczos-20261031/baseline-candidates.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/directions/L1/R01.md",
+   "bytes": 20057,
+   "sha256": "db0cf3aa9d01e788158c65317248f4106771d9953cd59cf473f3e72576660fe6",
+   "git_blob": "d07a16294012f140691aa1ec9c0e48e63aa295fc",
+   "repo_history": [
+    {
+     "commit": "c8ccce05baf2fa0c127b499b27fb646eef651ab6",
+     "date": "2026-11-01T00:15:46+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L1/R01.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/directions/L1/R02.md",
+   "bytes": 10543,
+   "sha256": "72acc598f090e5ddb209c47eb5bb65ad726fc94e2e1e7e44c81ee08f6df30037",
+   "git_blob": "1e021f11b749ad2d972c85b80579b1a5a4995ac2",
+   "repo_history": [
+    {
+     "commit": "c8ccce05baf2fa0c127b499b27fb646eef651ab6",
+     "date": "2026-11-01T00:15:46+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L1/R02.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/directions/L1/R03.md",
+   "bytes": 7949,
+   "sha256": "324e9621e498a10f70a7af78b507f888aeec693100c97a33008fdc9ae67404d5",
+   "git_blob": "ba2e4ce4feea2fe421c3852430b617482b143aa7",
+   "repo_history": [
+    {
+     "commit": "c8ccce05baf2fa0c127b499b27fb646eef651ab6",
+     "date": "2026-11-01T00:15:46+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L1/R03.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/directions/L1/R04.md",
+   "bytes": 13386,
+   "sha256": "1ad5abbc71a3c6dce1db1c877fbea60af0106a1a4e129045c2600d9ae37ab352",
+   "git_blob": "5726717bd4b22c3eb81c7b29fd89e95569be0324",
+   "repo_history": [
+    {
+     "commit": "c8ccce05baf2fa0c127b499b27fb646eef651ab6",
+     "date": "2026-11-01T00:15:46+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L1/R04.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/directions/L1/R05.md",
+   "bytes": 8006,
+   "sha256": "354ce60ca86d8d5b6ac15684a05fac06ac65ba9e8e7c473dd36bd4533385a514",
+   "git_blob": "22452a0a7bf0075ee68e7546e3d064a36f7308b4",
+   "repo_history": [
+    {
+     "commit": "c325fd6c6419b7dfc4021385b771ebabcba1e9e3",
+     "date": "2026-11-01T00:39:39+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L1/R05.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/directions/L1/R06.md",
+   "bytes": 7702,
+   "sha256": "864e1b0001daec74fb8c1527a768f803b908122d383858bb12ebf29946c57ef7",
+   "git_blob": "12dce09c5ba70d500c9dcaefa746739e30515f7a",
+   "repo_history": [
+    {
+     "commit": "c325fd6c6419b7dfc4021385b771ebabcba1e9e3",
+     "date": "2026-11-01T00:39:39+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L1/R06.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/directions/L1/R07.md",
+   "bytes": 7732,
+   "sha256": "58c89cb633b52f5a6d280fa169e677ef7cf20a64ba52c0d6f6e58f3dfc14c483",
+   "git_blob": "2454c10d2fe465bd09958747e7cccf23a9a4cc79",
+   "repo_history": [
+    {
+     "commit": "c325fd6c6419b7dfc4021385b771ebabcba1e9e3",
+     "date": "2026-11-01T00:39:39+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L1/R07.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/directions/L1/candidates.md",
+   "bytes": 54951,
+   "sha256": "d633dbbe32465ec81f6a49d82e5a553cf0dfa0a8adb09b5588072f6a382d4a0d",
+   "git_blob": "a21975f1cd31a19650901ec1039a68a4aa48fb2b",
+   "repo_history": [
+    {
+     "commit": "c325fd6c6419b7dfc4021385b771ebabcba1e9e3",
+     "date": "2026-11-01T00:39:39+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L1/candidates.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/directions/L2/R01.md",
+   "bytes": 7970,
+   "sha256": "67b70cc5b2ce3dbd17bd43dc4e10cc949d7f8817fb2201195c3918a536b25ec3",
+   "git_blob": "63fa89927d172dd3cec7160ed8a3c63ac0e9fe34",
+   "repo_history": [
+    {
+     "commit": "9378b68b5381dfd76e0571946847c29ffb4a2367",
+     "date": "2026-11-01T00:48:13+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L2/R01.md"
+    },
+    {
+     "commit": "ea06882c608c1702c6ba0098589f5ef5ac80028d",
+     "date": "2026-11-01T00:35:43+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L2/R01.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/directions/L2/candidates.md",
+   "bytes": 22113,
+   "sha256": "07441129317e83d1443f0bb1a425edf50968b39718f77cb58c825136bec19be2",
+   "git_blob": "069a70d135ba0d747b55d38a8f8103a76cd48986",
+   "repo_history": [
+    {
+     "commit": "413e4a6c279adf53f2f4b9adec98824e5949a8bc",
+     "date": "2026-11-01T00:44:12+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L2/candidates.md"
+    },
+    {
+     "commit": "ea06882c608c1702c6ba0098589f5ef5ac80028d",
+     "date": "2026-11-01T00:35:43+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L2/candidates.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/directions/L3/R01.md",
+   "bytes": 15741,
+   "sha256": "5710c6293ce1f88898d5149bb7c8214c35df2546b313bea81d17eb5b5824279c",
+   "git_blob": "daff51ae31d9bbe7cbb7de26b456535b9e014a90",
+   "repo_history": [
+    {
+     "commit": "246d494e511c2733d4004d2430f737cba0f75d17",
+     "date": "2026-10-31T23:57:24+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L3/R01.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/directions/L3/R02.md",
+   "bytes": 3935,
+   "sha256": "4e2983fb2798a09b15ed2d269304c3686ba05504e31a24b67c64c4965cf6b689",
+   "git_blob": "ceb2124b0ef2da04ac2b0996e6415140e6033a87",
+   "repo_history": [
+    {
+     "commit": "246d494e511c2733d4004d2430f737cba0f75d17",
+     "date": "2026-10-31T23:57:24+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L3/R02.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/directions/L3/R03.md",
+   "bytes": 4380,
+   "sha256": "aca2dc65d3ca22c2316af2ab92f26c9c737dcdd6b4c148e9474d0071b42139e4",
+   "git_blob": "d72c61b97ddf2e2e2a437dbfb40bd155ac8c6869",
+   "repo_history": [
+    {
+     "commit": "246d494e511c2733d4004d2430f737cba0f75d17",
+     "date": "2026-10-31T23:57:24+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L3/R03.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/directions/L3/R04.md",
+   "bytes": 4447,
+   "sha256": "df404f42900026181eacf0af2dd6fd8fd6db328f873bfe12c31e7e59d1955eb4",
+   "git_blob": "b6131ed75a2118f29475c2e88db6b5686ac5b2d7",
+   "repo_history": [
+    {
+     "commit": "9378b68b5381dfd76e0571946847c29ffb4a2367",
+     "date": "2026-11-01T00:48:13+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L3/R04.md"
+    },
+    {
+     "commit": "d1e8150c79a2e7457b30b8ae150e468f250f7862",
+     "date": "2026-10-31T23:15:45+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L3/R04.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/directions/L3/R05.md",
+   "bytes": 6851,
+   "sha256": "43ab136214214e910d520d1eaeb0a7876af88c398c1059419f5790b10c73e3d9",
+   "git_blob": "0b834f2280ef21a696d474941ff2983425865ac2",
+   "repo_history": [
+    {
+     "commit": "9378b68b5381dfd76e0571946847c29ffb4a2367",
+     "date": "2026-11-01T00:48:13+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L3/R05.md"
+    },
+    {
+     "commit": "60021bf998f97fd492c68b26d29b7bbe2a2fab83",
+     "date": "2026-10-31T23:24:07+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L3/R05.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/directions/L3/R06.md",
+   "bytes": 8509,
+   "sha256": "a7ba225256ea0ad936ecc0d0b8b3772cf9ecee21bd3544d482f44f2f876ff6fa",
+   "git_blob": "99c1d9764fd6590aafcd6ea4826bbb9ee5831809",
+   "repo_history": [
+    {
+     "commit": "9378b68b5381dfd76e0571946847c29ffb4a2367",
+     "date": "2026-11-01T00:48:13+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L3/R06.md"
+    },
+    {
+     "commit": "246d494e511c2733d4004d2430f737cba0f75d17",
+     "date": "2026-10-31T23:57:24+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L3/R06.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/directions/L3/candidates.md",
+   "bytes": 18229,
+   "sha256": "f18aa9c682743b1648904528a1ecea13feb7ae913243c36cc743074714e888f0",
+   "git_blob": "b3ac905298a5637266ab7406cafa7d2b0a0e3384",
+   "repo_history": [
+    {
+     "commit": "9378b68b5381dfd76e0571946847c29ffb4a2367",
+     "date": "2026-11-01T00:48:13+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L3/candidates.md"
+    },
+    {
+     "commit": "246d494e511c2733d4004d2430f737cba0f75d17",
+     "date": "2026-10-31T23:57:24+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L3/candidates.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/directions/L5/R01.md",
+   "bytes": 13731,
+   "sha256": "63c46fb8a65fc55813ee12488a03ff41cfb7df417214d7b30f056de975f7f8aa",
+   "git_blob": "ea74f28d2669afdc77631bb2202e73c39561e517",
+   "repo_history": [
+    {
+     "commit": "51821510070bfbbee18fd59f756e78d110314e8f",
+     "date": "2026-11-01T00:03:04+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L5/R01.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/directions/L5/R02.md",
+   "bytes": 10207,
+   "sha256": "c0e57c80c4ea03423f4e72c2a3229d69bd6f0ae946fcdb18c5510726ad7a5da6",
+   "git_blob": "12a888b530a3a6586a328866d72cc7568aa548f7",
+   "repo_history": [
+    {
+     "commit": "51821510070bfbbee18fd59f756e78d110314e8f",
+     "date": "2026-11-01T00:03:04+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L5/R02.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/directions/L5/R03.md",
+   "bytes": 13627,
+   "sha256": "48fcdc69f0bb1e85ea3359b77ce5400799ac5d94a842044aea6d9c4b433acfd2",
+   "git_blob": "23f364da50677d53e5b5aecd69570c5f2ec4a526",
+   "repo_history": [
+    {
+     "commit": "51821510070bfbbee18fd59f756e78d110314e8f",
+     "date": "2026-11-01T00:03:04+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L5/R03.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/directions/L5/candidates.md",
+   "bytes": 20873,
+   "sha256": "f0f1cda541dfdbb2b04cfcc37f777dca5a8d91f55ae1dc92f22c2e8581cd150c",
+   "git_blob": "db71041c421dcbe96614cbca170877f1dc30a7c3",
+   "repo_history": [
+    {
+     "commit": "51821510070bfbbee18fd59f756e78d110314e8f",
+     "date": "2026-11-01T00:03:04+01:00",
+     "path": "topics/bivariate-lanczos-20261031/directions/L5/candidates.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/literature/CORPUS.md",
+   "bytes": 46482,
+   "sha256": "23c395dc42b8f07a221dd0e7eaae2aac5e69d441a84cb43147040a900e01fd6f",
+   "git_blob": "c5155b1fb0df3fcc6570616525d7ecf66f34e9f1",
+   "repo_history": [
+    {
+     "commit": "d2dba0966a47cbc79e629819398dda5f9250c066",
+     "date": "2026-10-31T23:23:44+01:00",
+     "path": "literature/CORPUS.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/literature/INDEX.md",
+   "bytes": 111148,
+   "sha256": "a9fdbfeb7d0a5b485c84e3e9763739e8f8597f118a6e76bf1dcf76ea8aa28a15",
+   "git_blob": "a376a9cfaf929ac0ece7a2bae1ed17f4b0abe789",
+   "repo_history": [
+    {
+     "commit": "d2dba0966a47cbc79e629819398dda5f9250c066",
+     "date": "2026-10-31T23:23:44+01:00",
+     "path": "literature/INDEX.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/plan.md",
+   "bytes": 16289,
+   "sha256": "e88d2396c6b09a5f62d27b9056433b5eb4184e9349c33579125d2f16c306576f",
+   "git_blob": "01e78daf8bb92296ae1e56e9c7990e068c81b0fe",
+   "repo_history": [
+    {
+     "commit": "9378b68b5381dfd76e0571946847c29ffb4a2367",
+     "date": "2026-11-01T00:48:13+01:00",
+     "path": "topics/bivariate-lanczos-20261031/plan.md"
+    },
+    {
+     "commit": "ea06882c608c1702c6ba0098589f5ef5ac80028d",
+     "date": "2026-11-01T00:35:43+01:00",
+     "path": "topics/bivariate-lanczos-20261031/plan.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/state/CURRENT.md",
+   "bytes": 1003,
+   "sha256": "6f63e6a7c0b8ea20c6ef6d81eb2e8e6338be8a60a69029c6d7d4b2ea474714e7",
+   "git_blob": "e586de44df81d785fa17252b99fed54e33c183be",
+   "repo_history": [
+    {
+     "commit": "556927a107b4b5994d0428993343dcb476255bef",
+     "date": "2026-10-31T21:10:19+00:00",
+     "path": "state/CURRENT.md"
+    },
+    {
+     "commit": "59468bd52666b9cdc2749eccffaef194f26ead1b",
+     "date": "2026-10-31T20:27:24+00:00",
+     "path": "state/CURRENT.md"
+    },
+    {
+     "commit": "73ec2bace241cb31b6c2ca9d155d736e86bd1b56",
+     "date": "2026-10-31T10:20:16+01:00",
+     "path": "state/CURRENT.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/claude_bivariate-lanczos-20261031/state/IDEAS.md",
+   "bytes": 46988,
+   "sha256": "12ba5f8eccfc943faebee07b83ea37b995f0b89244fa3b9b81a6f88051ad931d",
+   "git_blob": "061524dc4dd7bd0ab79775bb058fe8e0247570d9",
+   "repo_history": [
+    {
+     "commit": "6f62c9388cf63eb6fb52338a497cb74404c426ed",
+     "date": "2026-10-31T22:13:52+01:00",
+     "path": "state/IDEAS.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/codex_charter-unisolvence-20261031/LOG.md",
+   "bytes": 8623,
+   "sha256": "a0d27994d805d20abd6bcf5928aef5edda79dcfa8112ed2ecd8c120795c6cb8a",
+   "git_blob": "5d1f1365d6b2259dfb0dfa106c7e138265017489",
+   "repo_history": [
+    {
+     "commit": "3bd9d4e8e7817eaf0abd5b7a750ea77eb8101342",
+     "date": "2026-10-31T22:18:08+01:00",
+     "path": "topics/charter-unisolvence-20261031/LOG.md"
+    },
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "topics/charter-unisolvence-20261031/LOG.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/codex_charter-unisolvence-20261031/baseline-candidates.md",
+   "bytes": 16395,
+   "sha256": "20e5be222ed0644a863a43c3812a843a3623d081f4984764e53ead6533e13179",
+   "git_blob": "9914dd0a1fb6a56734db022a5cbffbd7363a2003",
+   "repo_history": [
+    {
+     "commit": "b74fd808910fb38f52b3619ea658cd1d8ae3a806",
+     "date": "2026-10-31T20:33:15+00:00",
+     "path": "topics/charter-unisolvence-20261031/baseline-candidates.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/codex_charter-unisolvence-20261031/literature/CORPUS.md",
+   "bytes": 15485,
+   "sha256": "7fff8f9fa805686c8096888a01fa2f3a7fea00b59c4819cd605efaa78c15af72",
+   "git_blob": "3137a099cff02b543b6eeabf9902c49128e5b265",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/CORPUS.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/codex_charter-unisolvence-20261031/literature/INDEX.md",
+   "bytes": 16243,
+   "sha256": "eec92d273fba4704fb459851faad38d2ad968caf285f839cd67860fa58dcff71",
+   "git_blob": "7caa63d0bcec4e797349cda0cccdf9cbcb653434",
+   "repo_history": [
+    {
+     "commit": "c2bc5a6e91e5c35b8a702dbbdb3b8609e8ec1061",
+     "date": "2026-10-31T21:58:13+00:00",
+     "path": "literature/INDEX.md"
+    },
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/INDEX.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/codex_charter-unisolvence-20261031/state/CURRENT.md",
+   "bytes": 5615,
+   "sha256": "176ffdafcccada7091e481b8033a8b247c5c5a2fa87b32f8d3a181a829bd7200",
+   "git_blob": "e64cc9d9aa427f6132bb6cbab00840952f1d277d",
+   "repo_history": [
+    {
+     "commit": "317a26597dedc9adc9cfc6a26fa00078df7d29e4",
+     "date": "2026-10-31T21:40:05+00:00",
+     "path": "state/CURRENT.md"
+    },
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "state/CURRENT.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/codex_charter-unisolvence-20261031/state/IDEAS.md",
+   "bytes": 23246,
+   "sha256": "a4b7a1d6271d4a6267e4744434c8a9506b92437ffa04f13ee061890771fffdee",
+   "git_blob": "ec63d2c98618cdfac0f09ae82f1733567568ee3b",
+   "repo_history": [
+    {
+     "commit": "317a26597dedc9adc9cfc6a26fa00078df7d29e4",
+     "date": "2026-10-31T21:40:05+00:00",
+     "path": "state/IDEAS.md"
+    },
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "state/IDEAS.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/codex_mz-constants-20261031/LOG.md",
+   "bytes": 3432,
+   "sha256": "699dc3fbcbdc7370e762a058c6b5dac741eae1beeb2be2bba9fc958960460342",
+   "git_blob": "a425786133bbb4e1f9e5ee750e31b4f17ea36588",
+   "repo_history": [
+    {
+     "commit": "33bf9e68f725dff732d7b10d2b3d11f9790a2c02",
+     "date": "2026-10-31T21:00:03+00:00",
+     "path": "topics/mz-constants/LOG.md"
+    },
+    {
+     "commit": "e9761aa16ca40be2f47738d8c2dba05070dbb914",
+     "date": "2026-10-31T20:51:33+00:00",
+     "path": "topics/mz-constants/LOG.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/codex_mz-constants-20261031/directions/LOG.md",
+   "bytes": 14841,
+   "sha256": "71275f27ece4cd168b6d27ce57fcc46bc26f4fcd669936ca4f481959ad878b42",
+   "git_blob": "c65850a6bb74dc832f55066222418a6837fd399e",
+   "repo_history": [
+    {
+     "commit": "dc2694aa046d91ddefeb99687fabf80d3d80bc58",
+     "date": "2026-10-31T22:27:47+00:00",
+     "path": "topics/mz-constants/LOG.md"
+    },
+    {
+     "commit": "8ee04f4e5db46dd25fe5752ce605dde27098aae6",
+     "date": "2026-10-31T22:18:57+00:00",
+     "path": "topics/mz-constants/LOG.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/codex_mz-constants-20261031/directions/directions_M2_LOG.md",
+   "bytes": 4454,
+   "sha256": "b2e2dfd3963406a803cbca3a3216338e68ddb87eb59fd9df2516edd4e99cdd28",
+   "git_blob": "4b73a10dea8446eb219dd245c898bd20a427fd99",
+   "repo_history": [
+    {
+     "commit": "33bf9e68f725dff732d7b10d2b3d11f9790a2c02",
+     "date": "2026-10-31T21:00:03+00:00",
+     "path": "topics/mz-constants/directions/M2/LOG.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/codex_mz-constants-20261031/directions/directions_M2_candidates.md",
+   "bytes": 12106,
+   "sha256": "691c9dd15362f1d71cbbeac86c69ff9c07ac1bd8642dfc377502d59881dc9d30",
+   "git_blob": "08364e3abda41c528348c6d4644306bc8daf5dfa",
+   "repo_history": [
+    {
+     "commit": "556927a107b4b5994d0428993343dcb476255bef",
+     "date": "2026-10-31T21:10:19+00:00",
+     "path": "topics/mz-constants/directions/M2/candidates.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/codex_mz-constants-20261031/directions/plan.md",
+   "bytes": 4268,
+   "sha256": "d7587d6a007d47b8a50a189951c2025d4e533a1a3a35ababffad8fa05a5694d7",
+   "git_blob": "7615bc8f1c52ddd10d6cf4d2fd76c10dc1eb519e",
+   "repo_history": [
+    {
+     "commit": "39f4785d48de7e77ff99e209bda954d632c61956",
+     "date": "2026-10-31T21:12:44+00:00",
+     "path": "topics/mz-constants/plan.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/codex_mz-constants-20261031/directions/progress.md",
+   "bytes": 2053,
+   "sha256": "4a1f0753804b86735d884f32f0f863580e02ef17aaac6e0037db72e012cd1378",
+   "git_blob": "b9731fbbad3e3bde4521533c0e4bdad4fd80a718",
+   "repo_history": [
+    {
+     "commit": "39f4785d48de7e77ff99e209bda954d632c61956",
+     "date": "2026-10-31T21:12:44+00:00",
+     "path": "topics/mz-constants/progress.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/codex_mz-constants-20261031/literature/CORPUS.md",
+   "bytes": 19209,
+   "sha256": "8c2bc2669d1e9466777da0b785ebef424f341bbbe6a3d67a2f5e8899c1f10e63",
+   "git_blob": "f334e7ab59eed0471aaae2520ad7787c55e14f03",
+   "repo_history": [
+    {
+     "commit": "2cc1918b39d191ce233d44d9a33dbe83d697dbb0",
+     "date": "2026-10-31T21:59:29+00:00",
+     "path": "literature/CORPUS.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/codex_mz-constants-20261031/literature/INDEX.md",
+   "bytes": 24874,
+   "sha256": "d3015682fc3ca7d225db40f71dba400eca248ef47fd44b2127b5b18a8f532cae",
+   "git_blob": "e3824addaa875d2de16c351ef971f95463d3c71a",
+   "repo_history": [
+    {
+     "commit": "2cc1918b39d191ce233d44d9a33dbe83d697dbb0",
+     "date": "2026-10-31T21:59:29+00:00",
+     "path": "literature/INDEX.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/codex_mz-constants-20261031/plan.md",
+   "bytes": 4268,
+   "sha256": "d7587d6a007d47b8a50a189951c2025d4e533a1a3a35ababffad8fa05a5694d7",
+   "git_blob": "7615bc8f1c52ddd10d6cf4d2fd76c10dc1eb519e",
+   "repo_history": [
+    {
+     "commit": "39f4785d48de7e77ff99e209bda954d632c61956",
+     "date": "2026-10-31T21:12:44+00:00",
+     "path": "topics/mz-constants/plan.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/codex_mz-constants-20261031/state/CURRENT.md",
+   "bytes": 7989,
+   "sha256": "f516f9c282ec8e7c90e31c7a8300e396bc221fd5cf037c981fbbe4abaf2b23bc",
+   "git_blob": "2b37de23d8c1aaee4cb9ab4ec570d01a613363da",
+   "repo_history": [
+    {
+     "commit": "dc2694aa046d91ddefeb99687fabf80d3d80bc58",
+     "date": "2026-10-31T22:27:47+00:00",
+     "path": "state/CURRENT.md"
+    },
+    {
+     "commit": "8ee04f4e5db46dd25fe5752ce605dde27098aae6",
+     "date": "2026-10-31T22:18:57+00:00",
+     "path": "state/CURRENT.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/codex_mz-constants-20261031/state/IDEAS.md",
+   "bytes": 49117,
+   "sha256": "1686b5060fe185e1def687368e92b3b9c4bb929ead113cbc6f6c73e33798aea4",
+   "git_blob": "e51ac0ade5e9619a5b29d782b4efbafd2234ea69",
+   "repo_history": [
+    {
+     "commit": "8ee04f4e5db46dd25fe5752ce605dde27098aae6",
+     "date": "2026-10-31T22:18:57+00:00",
+     "path": "state/IDEAS.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/README.md",
+   "bytes": 227,
+   "sha256": "eb4b953efcbf3027e10d021354b3a2d52c8fd53ef251b2ea194352a1809b8d23",
+   "git_blob": "0fb89c2d838d656e0d59e154b41b9acaf38bd72a",
+   "repo_history": [
+    {
+     "commit": "c74c70c09f13e9ade48e30ca7a1a3a36d17e3df8",
+     "date": "2026-10-31T09:59:33+01:00",
+     "path": "literature/records/README.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/ball-2012.md",
+   "bytes": 1484,
+   "sha256": "ef2dc3c86fb42b1e30a8a5bf7785a0d82d2dc1a1e91a882b500e521baaedc736",
+   "git_blob": "a210520bd8e5f2eb75ad35eeaeaac53e3b1b43de",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/ball-2012.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/bartels-jezioranski-1985.md",
+   "bytes": 1725,
+   "sha256": "c1d1fd0b7f45953692fc62ba07d9939d87d386b3b178c1dce14afc9b488fb18b",
+   "git_blob": "4bfa0c0ca5d4d8f905a0fb694d570db55ec2faca",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/bartels-jezioranski-1985.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/bjs-2008.md",
+   "bytes": 1679,
+   "sha256": "0824d2622e7839f792057ca8b2eda59d45c9ea18a68097eff3e1533c89a6f222",
+   "git_blob": "d241c0567fa7c2d1ad5313e3990327cc9b9d6b76",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/bjs-2008.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/bos-dm-waldron-2009.md",
+   "bytes": 1660,
+   "sha256": "23596b59834c27ee63ce4606c502b2cc6a85eebef0fff7789637d8119442d809",
+   "git_blob": "e45cb76c5436effa415395488a93217e47d7e637",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/bos-dm-waldron-2009.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/bos-dmv-xu-2007.md",
+   "bytes": 1860,
+   "sha256": "adb842f1cd512540d2438b57315b1cbb0c221e5aeb54d695d46779e14b627fe2",
+   "git_blob": "9a01516cad7eac3fe07cb36ebc7160d0fcb0c624",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/bos-dmv-xu-2007.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/caliari-dmv-2008.md",
+   "bytes": 1831,
+   "sha256": "65a54369193885383fb90c96ca1d9c5a7a9cca2dacf7fab3272a45b633799cdd",
+   "git_blob": "397665c6894b3c0498f4050b4268e0b48f868f75",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/caliari-dmv-2008.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/camargo-demarchi-2015.md",
+   "bytes": 2330,
+   "sha256": "d82827c3ddc53ca7934fe7fbed617e9a14f4a66f99890fe8ce37bf52eddb0e64",
+   "git_blob": "e8ccf79d6eae7ad65e8c9ca0f99b506247f713d9",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/camargo-demarchi-2015.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/cao-ghimire-wang-2022.md",
+   "bytes": 1796,
+   "sha256": "96fff78e2545d1ebe0030ec4440a790fc86073e8d16e07409188f0163e47964d",
+   "git_blob": "5508d0c1149cffa2a68795dfdfb21a4981ea33ea",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/cao-ghimire-wang-2022.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/cools-poppe-2011.md",
+   "bytes": 1996,
+   "sha256": "8d2e1df883ed61d843cb5629a65a3018e137dc7521315262afa35f8fff250eca",
+   "git_blob": "115621b0e128f4ee9bd44cfca87fa86da4598135",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/cools-poppe-2011.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/degani-schiff-tannor-2005.md",
+   "bytes": 1841,
+   "sha256": "42b954cf2699fefeffe6c36b6c23502bc9b2b3dc8bb2d5233a473b5d0e609271",
+   "git_blob": "d8334a7917aa79df504b9ef9e28107d1eb58878a",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/degani-schiff-tannor-2005.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/delgado-et-al-2010.md",
+   "bytes": 1839,
+   "sha256": "ee7c482ee819667d322592f1e4a91a4fb5b920e35a60b34a9421b3606ff2dcbf",
+   "git_blob": "d15de57dda339b25edd47479bd6a321f4a16e6c4",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/delgado-et-al-2010.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/demarchi-usevich-2014.md",
+   "bytes": 1966,
+   "sha256": "9e2d30e452aa9577f81986b4ee682d56e7de17aa1f302563885dc9ef5a3f41cb",
+   "git_blob": "f8469540e7e74825f390f2d0618c9fcde3f9a457",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/demarchi-usevich-2014.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/dencker-erb-2017.md",
+   "bytes": 1795,
+   "sha256": "97f8316f7f916ba2fa0184e3066d20f5dd661835ecb1fd2f30521d139be96307",
+   "git_blob": "08c7c57745d2ff90cada852fdda920f6a79d0317",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/dencker-erb-2017.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/egk-1991.md",
+   "bytes": 1704,
+   "sha256": "8395f0e18b7c9dc990e283a5953c3444ae644ad60ba4ed0e58b2827b493bb060",
+   "git_blob": "3af152a876688ebe5abb2e1766715f8a98bb272e",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/egk-1991.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/fitzgerald-lax-1998.md",
+   "bytes": 1475,
+   "sha256": "7b599fd5d4949ab65766ad62fc693d0dcad2794b8cc6fdc5b921333617454b66",
+   "git_blob": "91c893b5db321f3d0ab384aec7658f54cb90c278",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/fitzgerald-lax-1998.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/floater-2017.md",
+   "bytes": 1883,
+   "sha256": "f1ab7c9b18a415ab2894f2c86bb43419d43db043f84f3cbf70e4ff06684b623f",
+   "git_blob": "78ffd0650c5e21851f583acf2037374734426ba1",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/floater-2017.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/hankel-op-background.md",
+   "bytes": 1547,
+   "sha256": "c1c26bb3481c674da2b52e67de84eb43e19f0901cc726f155d7e7bab9728cbc0",
+   "git_blob": "d98aa7fbd6af71e3e6b61251010921b3cfd5e6c9",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/hankel-op-background.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/harris-2023.md",
+   "bytes": 1628,
+   "sha256": "666a2c653a3f0b1f09063e9483007d2c494c6006309b8ee3ea5a6eaeb8fd4f6e",
+   "git_blob": "371c6465b40a4be8ed9746fc93d4bc4e4ad485e4",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/harris-2023.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/harris-simanek-2021.md",
+   "bytes": 2750,
+   "sha256": "09e6afc538d0e0fd88d40a1c21b88927e33f84317a2857d2691f0f4e891f6241",
+   "git_blob": "8164b99a0ff2f6a450fe9e4cc5701ebf9bed4899",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/harris-simanek-2021.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/hoeven-schost-2013.md",
+   "bytes": 1813,
+   "sha256": "615d87341db7cab6a8a17912a4b90612613b80117ca283b3f266eda1b3eb1365",
+   "git_blob": "c2e2fc4d5773f497fbff8c99359813257d33fdba",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/hoeven-schost-2013.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/hoeven-tft-2004.md",
+   "bytes": 1782,
+   "sha256": "826f4aa495e4fc6e0f4f1f7f91607aa5db12ab78ad668fe8787e63aed436daf1",
+   "git_blob": "d2e07e463d0b09bf96ac5ee35cef7e8652e49572",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/hoeven-tft-2004.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/hubert-singer-2022.md",
+   "bytes": 1748,
+   "sha256": "9471745759dd9e0bc8f01565ae2fdaf41bb4f2430e471f2e28b754463e05a90c",
+   "git_blob": "5c2fa5f5a5a3088c924df4e9d06957d85883af29",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/hubert-singer-2022.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/huhtanen-larsen-bit-2002.md",
+   "bytes": 1814,
+   "sha256": "e9daf5ab7520f4e25b276ac6b48334999ed51f0b4f93baf19fe2c23b7497023d",
+   "git_blob": "2d0910b8cdfc683808d9ac38f916eefc10416adc",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/huhtanen-larsen-bit-2002.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/humet-2019.md",
+   "bytes": 1836,
+   "sha256": "b7d2ee21ca7859815285271876f282d6d3c47256ac1f5b23608cd3fffc4bf545",
+   "git_blob": "e9f5a2ce7da2464b05e76ed7c3149f7d96c8bfee",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/humet-2019.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/li-sun-xu-2009.md",
+   "bytes": 1833,
+   "sha256": "f384d5b0ba6e15edaf20842c1d166f89432b3492b0a5878a7d7e7b23b73b7b53",
+   "git_blob": "460dc35b5b27fa6f5def2477780a2a19ca4d0384",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/li-sun-xu-2009.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/lima-souza-2011.md",
+   "bytes": 2227,
+   "sha256": "5c79216d7d9cfd0ac324c1880dd2a2b9c4f4f4d5935fa1b0b44a892c45d016b8",
+   "git_blob": "4bb1b53bd9fc3b2006be047d718d7a2a8971e5aa",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/lima-souza-2011.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/lopez-renteria-villarreal-2014.md",
+   "bytes": 1434,
+   "sha256": "9cb5f38ebfa7ceae3b4465f6feb456e1253180a464c6ac0ca3556fdffc95a278",
+   "git_blob": "c0cc9849c2f9949996745b37515614abb3f1eb9e",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/lopez-renteria-villarreal-2014.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/lower-set-background.md",
+   "bytes": 1502,
+   "sha256": "a480da3299bd28848f4e6a5ab5c1049bf10ecc61a0147d033e1d75703bfe3a09",
+   "git_blob": "e66b47d71de4390ab2138734426c348d1b5142f5",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/lower-set-background.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/mourrain-2017.md",
+   "bytes": 1713,
+   "sha256": "8f46514eca712de7cb0354fb0c78fe52d8c88ac04a53dd5f065f07e5c1391741",
+   "git_blob": "57bbeafacd806ebf03b52ba62dc89e6ba5471032",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/mourrain-2017.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/mourrain-telen-vanbarel.md",
+   "bytes": 1673,
+   "sha256": "e6fb860307d8484bd0109961e69483561cc744fd4650dbb8d86260c535df407d",
+   "git_blob": "368d5e5d9b26c50bce044d56a8e53edabaa7165f",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/mourrain-telen-vanbarel.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/sauer-2007.md",
+   "bytes": 1725,
+   "sha256": "cd4c07854a6fdb5b6d7b3649b6c3e380883bdc85fd70560cd5eb3be8b18f68ed",
+   "git_blob": "d4860a7219a833641c794b4705a58d573febc655",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/sauer-2007.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/sommariva-vianello-2015.md",
+   "bytes": 1917,
+   "sha256": "38e5758dfe39b44bf17e0881ead2c59e92c996cbe9163838c20d4557c1a6a5a1",
+   "git_blob": "50c1256068f05ce1c7235730822ea022573490e7",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/sommariva-vianello-2015.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/supplied-01.md",
+   "bytes": 1865,
+   "sha256": "98a216b6938817cf564789ff28d8b3d7bd58009863d1a05f5975217069be63a6",
+   "git_blob": "01956b079c11a1706b9d48aa566978a4f820b01e",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/supplied-01.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/supplied-02.md",
+   "bytes": 1871,
+   "sha256": "535871912cf50bf4cad0a29126f8e56fcb00e2d56e8cb21c0e12ce00dbd70aef",
+   "git_blob": "6009c495ce087531c01d456aed25ee7aff2cea4e",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/supplied-02.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/supplied-03.md",
+   "bytes": 1885,
+   "sha256": "0b67fdd5f469d9d43058deb92e2c0821c019f4df5c13578013ae0dc7a94ea576",
+   "git_blob": "335445bcc73c493ac45d9e092c4ea73aca7ee5db",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/supplied-03.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/supplied-04.md",
+   "bytes": 1883,
+   "sha256": "1b1d760ba8a950bed7b5ac8fbd8a15c64b5227007327a77355f25408aff6fe19",
+   "git_blob": "62f1e8766259d7d14d9ebb09b694c12d746f71d5",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/supplied-04.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/supplied-05.md",
+   "bytes": 1893,
+   "sha256": "a9e3e463b2adf473a76f4669afd247b9913a111aeb57cd1e51f52e6326e91b87",
+   "git_blob": "41aecc15d796ce08b092b9c7f793f99ac72b32c3",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/supplied-05.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/vanbarel-chesnokov-2010.md",
+   "bytes": 1723,
+   "sha256": "2ac7c12841433f3c4dd2da40102514075cb2588b5c863271ff52e279f3094442",
+   "git_blob": "9e19e1438ce4923e7644e150ec08b8a3e15d9abd",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/vanbarel-chesnokov-2010.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/xu-2025.md",
+   "bytes": 1643,
+   "sha256": "c99d6b308bf86eb1b5edbfdd5084925c304fd903a8c022a85bc892fcc6289c69",
+   "git_blob": "08fb36595c5d4d05634e99f4b62b390aa3f0dfd6",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/xu-2025.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/xu-pitman-1994.md",
+   "bytes": 1803,
+   "sha256": "8e0c2fbb19c63715a12b771fe98c2bd5654e73e5f8f994c19e9ee7ebf029a94e",
+   "git_blob": "a017702027d34521ad56d17f394174e01b496892",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/xu-pitman-1994.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_charter/xu-siam-1994.md",
+   "bytes": 1926,
+   "sha256": "c1d4eb660d2b94ea4610e03ef6a5dee0950a006b97bbd1381e570e9d1b3c0468",
+   "git_blob": "e2b0efa71fe2b318cf3546f1a1d6effc37ba4553",
+   "repo_history": [
+    {
+     "commit": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+     "date": "2026-10-31T20:50:35+00:00",
+     "path": "literature/records/xu-siam-1994.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/README.md",
+   "bytes": 227,
+   "sha256": "eb4b953efcbf3027e10d021354b3a2d52c8fd53ef251b2ea194352a1809b8d23",
+   "git_blob": "0fb89c2d838d656e0d59e154b41b9acaf38bd72a",
+   "repo_history": [
+    {
+     "commit": "c74c70c09f13e9ade48e30ca7a1a3a36d17e3df8",
+     "date": "2026-10-31T09:59:33+01:00",
+     "path": "literature/records/README.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/aliaga-boley-freund-hernandez-2000.md",
+   "bytes": 2504,
+   "sha256": "cc944fd6678c9c87130d2a50ff99425b7f963c2f87f7dd2cdb3ef818c041eb57",
+   "git_blob": "8fb9f27f68db0674abed6bc46c9e28c795cef4ca",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/aliaga-boley-freund-hernandez-2000.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/ammar-gragg-reichel-1992.md",
+   "bytes": 2328,
+   "sha256": "a9abf313e16b8718e8e7cb1538759a3e79d745c7b68117c4517a1fc1d5a96124",
+   "git_blob": "7d888d7738a6a8e9414358c3b150bc0ad711f954",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/ammar-gragg-reichel-1992.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/amsel-et-al-2026.md",
+   "bytes": 2888,
+   "sha256": "c76ac9dc6877194a37e1bb44e9b48f5565f1e99d7dc410605b67ceae358afd3b",
+   "git_blob": "aa84bbd02f853644d10e9ef4229b13b7cf34bb47",
+   "repo_history": [
+    {
+     "commit": "20397cedafcc3a2e98225711df709e8fe72eb80f",
+     "date": "2026-10-31T23:23:31+01:00",
+     "path": "literature/records/amsel-et-al-2026.md"
+    },
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/amsel-et-al-2026.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/bai-day-ye-1999.md",
+   "bytes": 2663,
+   "sha256": "1ee88551a764834b95ade7ee48c2d6dbb5426361151fb7ccbe2cb00ca5abe26b",
+   "git_blob": "e2511b63f641b9e09ffeeb9a711296a97cf213e9",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/bai-day-ye-1999.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/bartels-jezioranski-1985.md",
+   "bytes": 12297,
+   "sha256": "216d0897ec957db7af3b917c75ebf10e1630152d8224b0307360489adc5359ad",
+   "git_blob": "ec66a5e2b3db50140b3180c39935e1fd242072a4",
+   "repo_history": [
+    {
+     "commit": "bef4490f46c358efdb00fc882303efddfca6dd20",
+     "date": "2026-10-31T21:51:10+01:00",
+     "path": "literature/records/bartels-jezioranski-1985.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/bojanczyk-et-al-1987.md",
+   "bytes": 2315,
+   "sha256": "b17f051b946f35613394f728b4bd33d61aa36ab8bcd3107242fdc2f5d009318e",
+   "git_blob": "00300386cd4ae4757acc22c28a58533538162323",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/bojanczyk-et-al-1987.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/bos-dmv-xu-2007.md",
+   "bytes": 2754,
+   "sha256": "629b0530f5ce02d24c6750017103254869f1b39ecd72829028c942a06d56b301",
+   "git_blob": "ca16b1aa3d40482dd9155d30ca788b6f64ae4ff0",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/bos-dmv-xu-2007.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/brubeck-nakatsukasa-trefethen-2021.md",
+   "bytes": 2462,
+   "sha256": "1c6a169a7f745449444bc32b7ee1644488bf8f439b2e9c7000014dbf9a873f5d",
+   "git_blob": "702163a4843c6ec8932a83fc3326fe782bee5d46",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/brubeck-nakatsukasa-trefethen-2021.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/caliari-dmv-2008.md",
+   "bytes": 2735,
+   "sha256": "bc9d38b075891a08740518c10023caad406df958cc4fa5af7e02feacb0afcbe8",
+   "git_blob": "f398cf607c63d357ebd0942d1007f0916ed43411",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/caliari-dmv-2008.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/carson-et-al-2025.md",
+   "bytes": 3727,
+   "sha256": "f103d0ea0b103ae67ecae829b135be20aae16cf8d5d0a181e143b26d3739bda0",
+   "git_blob": "b3a7a3da489d8df15819cdbdf23dc6c41e636135",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/carson-et-al-2025.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/chang-paige-1998.md",
+   "bytes": 2367,
+   "sha256": "a5c36e7868008bd2d53fe44d42704d5f668d8861dc7ef077ecdd3cfafc2a6618",
+   "git_blob": "8a64acfed9494cc228f902fb34b709fd4669368e",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/chang-paige-1998.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/chen-2026.md",
+   "bytes": 2686,
+   "sha256": "66105b00faa5524c9d33b7750002f1e750fedfc17d9ba6f57f32cd588f386caf",
+   "git_blob": "07dc8926e4c077c61ec08e11b5a6ee7c6ad79402",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/chen-2026.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/chen-trogdon-2024.md",
+   "bytes": 3765,
+   "sha256": "9f5257ca14f52d2e1e3e5838f8c2e259c04c60d0f19d06a58f671561d97614b7",
+   "git_blob": "20a12cf549eab25d182afd51738a8fed6b6f381c",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/chen-trogdon-2024.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/collowald-hubert-2018.md",
+   "bytes": 2312,
+   "sha256": "6a619ff0c151476e82e63631b0052cf2d14921b944e29603a593543a4b3e51bf",
+   "git_blob": "a4de415736d617521e45b14c6a003ffbd3998c65",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/collowald-hubert-2018.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/curto-fialkow-1996.md",
+   "bytes": 1785,
+   "sha256": "c937fa99b521604e70fab7c0d4c03dcad2b1ed4eea6cb31ffa3d06c5f461db9f",
+   "git_blob": "26f62061c467bf2cc0bf5a1c9c66fd251349a56d",
+   "repo_history": [
+    {
+     "commit": "20397cedafcc3a2e98225711df709e8fe72eb80f",
+     "date": "2026-10-31T23:23:31+01:00",
+     "path": "literature/records/curto-fialkow-1996.md"
+    },
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/curto-fialkow-1996.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/daniel-gragg-kaufman-stewart-1976.md",
+   "bytes": 2812,
+   "sha256": "02ef9b813bbe8168e7873a885430eb99fd845f65efc3a8c0b7d631ae4906098b",
+   "git_blob": "38630d0ae02bd68f77993e13ef2c5b5c17ce11bd",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/daniel-gragg-kaufman-stewart-1976.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/degani-schiff-tannor-2005.md",
+   "bytes": 4533,
+   "sha256": "f6252bcae8c6552dbd5885cdbf035b8cb5e866684ad351d14635e882cad41697",
+   "git_blob": "fc4bd2647871e5f9285c38c9bf7fadd2d3a6eb37",
+   "repo_history": [
+    {
+     "commit": "20397cedafcc3a2e98225711df709e8fe72eb80f",
+     "date": "2026-10-31T23:23:31+01:00",
+     "path": "literature/records/degani-schiff-tannor-2005.md"
+    },
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/degani-schiff-tannor-2005.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/egk-1991.md",
+   "bytes": 15801,
+   "sha256": "2ade5f9c04664005f2b0afa3a7b53905e1f0f20e31d7f630804a331470dc4cd2",
+   "git_blob": "efe0f66b7b0ca721d7788ce944f97f547f3b64bb",
+   "repo_history": [
+    {
+     "commit": "bef4490f46c358efdb00fc882303efddfca6dd20",
+     "date": "2026-10-31T21:51:10+01:00",
+     "path": "literature/records/egk-1991.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/elsner-ikramov-1997.md",
+   "bytes": 2469,
+   "sha256": "a217bff2b28ee9aca759d0f496a789e647093aff20f1543019ba3811fa66ff4b",
+   "git_blob": "b4851c1de310e36769af9fc8f1b169b026a4f26c",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/elsner-ikramov-1997.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/faghih-et-al-2025.md",
+   "bytes": 2452,
+   "sha256": "86686db42f61cdb3e9108819fa9116475c3ff4af30ca3ed7b1c56916e72fa90c",
+   "git_blob": "de4998255c325d214b859a051fc44e215f1ab657",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/faghih-et-al-2025.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/faghih-vanbarel-vandebril-2026.md",
+   "bytes": 3572,
+   "sha256": "3277dbfc5f46f5494eb8ad88a00d97797dee62adb456239bca98844109093b11",
+   "git_blob": "3bdae27786dfb710dbb0439a49fb8647cdf2a891",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/faghih-vanbarel-vandebril-2026.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/fasondini-olver-xu-2023.md",
+   "bytes": 2348,
+   "sha256": "a7cb10ff8be31a06b477668528abfd8daa8e776595a8e88d3fdeee1485b2537e",
+   "git_blob": "4de0221532b84e58affe1d480a7759ae77d91428",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/fasondini-olver-xu-2023.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/fischer-1996.md",
+   "bytes": 2129,
+   "sha256": "728f08026e197dd92e5d2145ca1ca4f3eecca4ce17e84f1a50af742005f3a98b",
+   "git_blob": "72706b1d0d37f91bd225093a025216db4d0a56a9",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/fischer-1996.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/fischer-1998.md",
+   "bytes": 2693,
+   "sha256": "24d1114c754177e580186172d349cb691af0139e3dcd99e53ed721cff77d594d",
+   "git_blob": "83fc26ee44b8c09ed334011b8e756e259094752e",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/fischer-1998.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/freund-2000.md",
+   "bytes": 3101,
+   "sha256": "e507454fd2e6384850548f48b7f4ef3647cc09486387f660eae27149b0e99df6",
+   "git_blob": "fbfbcc2a61a89fc2df4240ce9745ba3d89f9ec86",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/freund-2000.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/gautschi-1982.md",
+   "bytes": 2317,
+   "sha256": "d9ebb0fea7edb89db479ccc27cec7756da102aadc986d5daa618a8d2d4a8e98c",
+   "git_blob": "ba0dd45520dd38989d00e55fbc27dd1f960ba957",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/gautschi-1982.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/gill-golub-murray-saunders-1974.md",
+   "bytes": 2476,
+   "sha256": "e2dbaca0ca0adb771e666c1948a6a6e99dc5b27df30a47158b4f5af00d85a17f",
+   "git_blob": "ac0098595192b935bfb706d66e59a6198dee447a",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/gill-golub-murray-saunders-1974.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/greenbaum-1979.md",
+   "bytes": 2912,
+   "sha256": "3bc233099a235566e34ffdfc520c7e0f7e309aa651d870e3995f432c0fee30dc",
+   "git_blob": "afa7b83be33d7a6a0f693164a4ba2deaf7244eb5",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/greenbaum-1979.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/greenbaum-1989.md",
+   "bytes": 2937,
+   "sha256": "85f6c7b30802ee88d7393b50c0282ecfa93f77739f73ae2f59349d62e27b3b79",
+   "git_blob": "0a7994ee7e5e99c2b0584d158426c32928452ed3",
+   "repo_history": [
+    {
+     "commit": "20397cedafcc3a2e98225711df709e8fe72eb80f",
+     "date": "2026-10-31T23:23:31+01:00",
+     "path": "literature/records/greenbaum-1989.md"
+    },
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/greenbaum-1989.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/harris-simanek-2021.md",
+   "bytes": 4060,
+   "sha256": "10e5d329e135526d10135cd5ac53d2f2d330f835c236134791d37727f6a1e654",
+   "git_blob": "6ed770ffe7bc58ffe8bde628694183fd66f49ac6",
+   "repo_history": [
+    {
+     "commit": "6f62c9388cf63eb6fb52338a497cb74404c426ed",
+     "date": "2026-10-31T22:13:52+01:00",
+     "path": "literature/records/harris-simanek-2021.md"
+    },
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/harris-simanek-2021.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/he-kressner-plestenjak-2025.md",
+   "bytes": 2625,
+   "sha256": "8d3aad369fe0b81c213236e97d9db8e2e75c29c94b9e7e2702ecd44ab2ef1f46",
+   "git_blob": "61e162e4382e90da984ecd16997712d495223397",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/he-kressner-plestenjak-2025.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/higham-2002.md",
+   "bytes": 2714,
+   "sha256": "6de465799b22e45d03c528365ef1c092a09abad584e640b8b482c8228bce3111",
+   "git_blob": "444baf20d972aa0f2a0d4e4299a80301fb313c1c",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/higham-2002.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/hokanson-2020.md",
+   "bytes": 2553,
+   "sha256": "18f8398a2054240a46a72fb4bd9d3a0f4803a65412ce39f85b843e3ad23a8141",
+   "git_blob": "7594e36e585d5872112af013efba20776b6192d3",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/hokanson-2020.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/huhtanen-2003.md",
+   "bytes": 2351,
+   "sha256": "41a70c4add699703f21909337c3a9ed7a26a92a58ab1c53f1a09df8c53c1aa26",
+   "git_blob": "042e8a2eaaa1b792946b74a09f1123457d5e4b7b",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/huhtanen-2003.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/huhtanen-larsen-bit-2002.md",
+   "bytes": 19910,
+   "sha256": "cbf56842b06869eeea2db8dee1d8262c752938d3b90053a39ff1faddf5c36c17",
+   "git_blob": "426223888e4000e9662c64a726431a923773a417",
+   "repo_history": [
+    {
+     "commit": "bef4490f46c358efdb00fc882303efddfca6dd20",
+     "date": "2026-10-31T21:51:10+01:00",
+     "path": "literature/records/huhtanen-larsen-bit-2002.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/huhtanen-larsen-simax-2002.md",
+   "bytes": 14861,
+   "sha256": "fc13b39b7fee063f8a96bc6676f2d664e7c55012b976f75c0dbe616b92328096",
+   "git_blob": "325a5a15cafe1ce1572d5bf507df52e52cf74de4",
+   "repo_history": [
+    {
+     "commit": "bef4490f46c358efdb00fc882303efddfca6dd20",
+     "date": "2026-10-31T21:51:10+01:00",
+     "path": "literature/records/huhtanen-larsen-simax-2002.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/huhtanen-simax-2002.md",
+   "bytes": 8380,
+   "sha256": "61bcd7b330ca82ce9f3cfbe42b199f74a5ffb0048e69801b8bb75d3e944ef09f",
+   "git_blob": "5ec95041384d40280689e3fb63f7d2b918b4fc4e",
+   "repo_history": [
+    {
+     "commit": "bef4490f46c358efdb00fc882303efddfca6dd20",
+     "date": "2026-10-31T21:51:10+01:00",
+     "path": "literature/records/huhtanen-simax-2002.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/humet-2019.md",
+   "bytes": 3331,
+   "sha256": "a3ff3a7d3cb165b4c599fb38f815f5615f6b42cf401eff54d7cbc0f2d0660a37",
+   "git_blob": "b48c88576f025937199edc0d813fe62168ecbb59",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/humet-2019.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/jia-li-2021.md",
+   "bytes": 2990,
+   "sha256": "80eeecde3d20acf1eb33a41647aa7e4ccbee07c592eabd60e57c805d6cdf37c0",
+   "git_blob": "3d1542f22f11f50d4d5ce19c364a2956852b9c11",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/jia-li-2021.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/kachkovskiy-safarov-2016.md",
+   "bytes": 4079,
+   "sha256": "c086bad873ca7c9b01ce69d83a4e958b011b3ed53826d857ce23a284730f5fef",
+   "git_blob": "41191044b319c57180fc20517579fcc6e11a4baa",
+   "repo_history": [
+    {
+     "commit": "20397cedafcc3a2e98225711df709e8fe72eb80f",
+     "date": "2026-10-31T23:23:31+01:00",
+     "path": "literature/records/kachkovskiy-safarov-2016.md"
+    },
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/kachkovskiy-safarov-2016.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/koiran-2024.md",
+   "bytes": 3115,
+   "sha256": "ecbdc35efb2295867c9200190335ca65abe03b9902eab03146b123bd9e019ee5",
+   "git_blob": "100a01d0f6375e6a522dcb535ec14e55166e98f1",
+   "repo_history": [
+    {
+     "commit": "20397cedafcc3a2e98225711df709e8fe72eb80f",
+     "date": "2026-10-31T23:23:31+01:00",
+     "path": "literature/records/koiran-2024.md"
+    },
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/koiran-2024.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/kressner-2018.md",
+   "bytes": 2382,
+   "sha256": "2f110ccf0b390c863d291ed1ee77c954ba3c67faa137730909ce9f26b7229b4a",
+   "git_blob": "f32a42d7120aa908891b0f5b84821060b083b4a9",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/kressner-2018.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/kressner-oehme-2026.md",
+   "bytes": 2316,
+   "sha256": "2f8c3f55d61f1bdd5b413d8e355f79b3ee1cdf0af3620f04811bc52c904e7f2d",
+   "git_blob": "c5380d6772c8c5f83add2c74459b246e36e41de5",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/kressner-oehme-2026.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/larsen-1998.md",
+   "bytes": 2521,
+   "sha256": "2ebbe50dc8cd54efca642a4f0cb3ff7f2641af5f07d2a3f4068301dbc97818a2",
+   "git_blob": "e99f6d7cc0543034f6bb063c8afa4ef6833c6591",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/larsen-1998.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/lin-1997.md",
+   "bytes": 2917,
+   "sha256": "e78b6d8edcc67c96d5f042ba4898dc7cc7b445b6e2fcf8f38dab2fd17d0c27af",
+   "git_blob": "f1b87f7eb41b460398b52a067a4b628049d0f4b0",
+   "repo_history": [
+    {
+     "commit": "20397cedafcc3a2e98225711df709e8fe72eb80f",
+     "date": "2026-10-31T23:23:31+01:00",
+     "path": "literature/records/lin-1997.md"
+    },
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/lin-1997.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/liu-narayan-2023.md",
+   "bytes": 2734,
+   "sha256": "c1dbed1083132ff86fcef4e2be4d75873056c00e4e0345370b7d8d0c5507c408",
+   "git_blob": "b25945f273de485993a29f26c874a4f7c73f94e9",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/liu-narayan-2023.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/meurant-sommariva-2019.md",
+   "bytes": 2555,
+   "sha256": "57184ad6eab29f70706f71c6033f73212a5f5ca54fc6437d469379a7804d040b",
+   "git_blob": "89fd42e09800e785ba2a89681f67c0a5877e894d",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/meurant-sommariva-2019.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/mourrain-2017.md",
+   "bytes": 3027,
+   "sha256": "c67793ca7221d78c24a2d05e77a504136f6a8091c604afd9cc835c0aaea856e1",
+   "git_blob": "3b56823378daebd6631609cec81940c55492d42e",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/mourrain-2017.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/paige-1971.md",
+   "bytes": 1629,
+   "sha256": "6978b2f96f14d103b5554643d84234db6805ae10e3afeae78f6dbf774f3432c0",
+   "git_blob": "66a4acb0cc453746917715dcb8b1f21e8e31d4b8",
+   "repo_history": [
+    {
+     "commit": "20397cedafcc3a2e98225711df709e8fe72eb80f",
+     "date": "2026-10-31T23:23:31+01:00",
+     "path": "literature/records/paige-1971.md"
+    },
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/paige-1971.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/paige-1976.md",
+   "bytes": 2762,
+   "sha256": "8a8447334af3ad41e79638b134395609f657468cdba238881c85daf09690a454",
+   "git_blob": "f7e3b1fb573fd08f4348593d3642e32056a80f54",
+   "repo_history": [
+    {
+     "commit": "20397cedafcc3a2e98225711df709e8fe72eb80f",
+     "date": "2026-10-31T23:23:31+01:00",
+     "path": "literature/records/paige-1976.md"
+    },
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/paige-1976.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/paige-1980-lanczos.md",
+   "bytes": 2854,
+   "sha256": "0739a0a91f63c044d3d712f1c49ece099d2b739aafac36c32836b8b493db800b",
+   "git_blob": "2ae77c5ee38cdeb2219a9f46093c42a231b6ccdc",
+   "repo_history": [
+    {
+     "commit": "20397cedafcc3a2e98225711df709e8fe72eb80f",
+     "date": "2026-10-31T23:23:31+01:00",
+     "path": "literature/records/paige-1980-lanczos.md"
+    },
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/paige-1980-lanczos.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/paige-1980-updating.md",
+   "bytes": 2833,
+   "sha256": "d29e3da2a3c6a44c22853f738954ffd54e8903f18ec26b04d754d6ca8d72c722",
+   "git_blob": "a9a44fc9bae1f4df3f72d39865fb2ecef5d8495e",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/paige-1980-updating.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/paige-rozloznik-strakos-2006.md",
+   "bytes": 2774,
+   "sha256": "0e884561dcf9d445a7f6efcd71fa1b5e56540540712331bc1c58c4f9f3262c05",
+   "git_blob": "83fec78f32b8b00d8587e0e18b1c9738f5a5a174",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/paige-rozloznik-strakos-2006.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/paige-vandooren-1999.md",
+   "bytes": 2295,
+   "sha256": "af6b19b5925879b2d127abea42c9f2910e4ea002d0f5a3c63fb67db4b29ba837",
+   "git_blob": "264ab6c03437e6ecb553a0e391072ad8d5aee6be",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/paige-vandooren-1999.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/sauer-2007.md",
+   "bytes": 3997,
+   "sha256": "1cf19cb5932066feeb98a46ac7b0c18025345d178af18277a6fd2dabeec1b63b",
+   "git_blob": "bdad6c0b451cb21ea3cb6fe80bbc416f85b82046",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/sauer-2007.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/simon-1984-laa.md",
+   "bytes": 2544,
+   "sha256": "71e74b8296d3d59e4866b98ba0f62f0e1cfe66088fcf447ec4a5ce952b4746ce",
+   "git_blob": "7b9f733a35218ff4cf778b0ebf244c5c135023f2",
+   "repo_history": [
+    {
+     "commit": "20397cedafcc3a2e98225711df709e8fe72eb80f",
+     "date": "2026-10-31T23:23:31+01:00",
+     "path": "literature/records/simon-1984-laa.md"
+    },
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/simon-1984-laa.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/simon-1984-mathcomp.md",
+   "bytes": 3818,
+   "sha256": "249dc5ecfaa916990290fcc3ffd9663fcb05033f5a1325eced3dd2a406d55069",
+   "git_blob": "6d0d9197f3e0a261c17469db117a1c6231de18a1",
+   "repo_history": [
+    {
+     "commit": "20397cedafcc3a2e98225711df709e8fe72eb80f",
+     "date": "2026-10-31T23:23:31+01:00",
+     "path": "literature/records/simon-1984-mathcomp.md"
+    },
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/simon-1984-mathcomp.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/simonova-tichy-2025.md",
+   "bytes": 3992,
+   "sha256": "f367b836ac55c2579fd1b5d73c85e69a42977db8ed4c072dc6f44c2a91a70114",
+   "git_blob": "7ac6c3f47aa5092d4abcb59e5dc01e4ee802995b",
+   "repo_history": [
+    {
+     "commit": "20397cedafcc3a2e98225711df709e8fe72eb80f",
+     "date": "2026-10-31T23:23:31+01:00",
+     "path": "literature/records/simonova-tichy-2025.md"
+    },
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/simonova-tichy-2025.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/sinha-2026.md",
+   "bytes": 3718,
+   "sha256": "23a9529243234a0c50c828de9bd530ba9744ef4d6a4c67f56dbd09dce87f03aa",
+   "git_blob": "d0185ac368a386d28e0b740be4a427291175aa10",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/sinha-2026.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/sommariva-vianello-2015.md",
+   "bytes": 2927,
+   "sha256": "cb7e6bcf584d9007aea6d0bdd2a8e77439d251c9fd093e293f7b75460d9eb8b2",
+   "git_blob": "7cf17221bee11eb6c20b929aebb3aa32f66b4268",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/sommariva-vianello-2015.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/stewart-1979.md",
+   "bytes": 2389,
+   "sha256": "a7420ff5ee0f9a4b7b08ccaeb0b09dffd43449323203ee4a2d43c122ded36e2b",
+   "git_blob": "9cc79b69e35ad107503fd1b504b2743f23cbeb0c",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/stewart-1979.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/stewart-1992.md",
+   "bytes": 2205,
+   "sha256": "bbf7d47a1daf2864e28eb736ef9bbe5dea2c5dd12e43aa64a68782aaf6167ce0",
+   "git_blob": "0a8fe48dc24e05c384334c422e7a10807c127e8a",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/stewart-1992.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/stewart-1995.md",
+   "bytes": 2645,
+   "sha256": "a84cc2a68410e8d1449284d47ec792b99e7a52e9330e9e2594de2225497d625f",
+   "git_blob": "06cd6905c5f8b2757b4606560dd8bec33ff52477",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/stewart-1995.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/sun-1995.md",
+   "bytes": 2411,
+   "sha256": "00b9b035bd66022103c126ecffa4b0f0ad14d9acb5073c5346f1f94c9a5efbd7",
+   "git_blob": "e5a71b93714be3a8918c2b239c466e8e4caec0e0",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/sun-1995.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/vanbarel-chesnokov-2010.md",
+   "bytes": 22107,
+   "sha256": "5982cf9568ed2e901b0f2a02f51daec0492a38c34492c963c16be19aaadf9c75",
+   "git_blob": "a89cf63e45deb7b8a1f669db52855ac349ebd50c",
+   "repo_history": [
+    {
+     "commit": "bef4490f46c358efdb00fc882303efddfca6dd20",
+     "date": "2026-10-31T21:51:10+01:00",
+     "path": "literature/records/vanbarel-chesnokov-2010.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/vanbarel-humet-sorber-2014.md",
+   "bytes": 5543,
+   "sha256": "2e26681ba1f08dfefaf2183d0f179fc7f1ebd72f56ba64e59c0722078491c6af",
+   "git_blob": "98699dd6cd738c10cd2a19b2c6c109ced5f478c8",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/vanbarel-humet-sorber-2014.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/weisfeld-1959.md",
+   "bytes": 3202,
+   "sha256": "cdf68769b37ecf3e7d45984e804ea5133164e031fc1ef72ab8c91d60a3f6010c",
+   "git_blob": "ee3487a9fe682cc6549bbbde6a2062cf79761a01",
+   "repo_history": [
+    {
+     "commit": "20397cedafcc3a2e98225711df709e8fe72eb80f",
+     "date": "2026-10-31T23:23:31+01:00",
+     "path": "literature/records/weisfeld-1959.md"
+    },
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/weisfeld-1959.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/xu-pitman-1994.md",
+   "bytes": 4623,
+   "sha256": "1930d27dfa4c38e2ffdc3f823fdac1f9c280ba99412c7497e7bcd34f78dccb94",
+   "git_blob": "be4de77409dda572ce6ac1e7b31717dfc5ff3903",
+   "repo_history": [
+    {
+     "commit": "20397cedafcc3a2e98225711df709e8fe72eb80f",
+     "date": "2026-10-31T23:23:31+01:00",
+     "path": "literature/records/xu-pitman-1994.md"
+    },
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/xu-pitman-1994.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/xu-siam-1994.md",
+   "bytes": 17419,
+   "sha256": "d8adc85be3cb531dc32f146cb6667eba9ae1af8fe8f84374f9e0a5ea68a4975d",
+   "git_blob": "4a8e5501765bf04ffbe097f2019c94a31439e886",
+   "repo_history": [
+    {
+     "commit": "bef4490f46c358efdb00fc882303efddfca6dd20",
+     "date": "2026-10-31T21:51:10+01:00",
+     "path": "literature/records/xu-siam-1994.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/zaccaron-2014.md",
+   "bytes": 4212,
+   "sha256": "79ff6f9258e6d319495b69c6a7a2669104d80294d9f1cb7ba2552af3c60f8ae1",
+   "git_blob": "bd3395f9bcd8a33357058983ad0c7ff13fce023a",
+   "repo_history": [
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/zaccaron-2014.md"
+    }
+   ]
+  },
+  {
+   "snapshot": "branches/records_lanczos/zhu-nakatsukasa-2026.md",
+   "bytes": 4293,
+   "sha256": "9158b9bcdf401c65430c294f8f18cda50db5c0ed8b8f48e9b9e35faaffcfe768",
+   "git_blob": "4f0305e142a112e800364fddb66b543d592ad461",
+   "repo_history": [
+    {
+     "commit": "18c5bef79d0a3bca4a6233d58fe285257fbe477d",
+     "date": "2026-11-01T01:31:07+01:00",
+     "path": "literature/records/zhu-nakatsukasa-2026.md"
+    },
+    {
+     "commit": "8edbc695183579656ffb5a1d61744b2da613c8c8",
+     "date": "2026-10-31T21:50:24+01:00",
+     "path": "literature/records/zhu-nakatsukasa-2026.md"
+    }
+   ]
+  }
+ ]
+}

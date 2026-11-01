@@ -1,0 +1,137 @@
+{
+  "source_sha": "cadb35066160e466cb1704b9791ad6f374446422",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60",
+      "bytes": 3159,
+      "source_blob": "8c94c718629649c3f5c89d05e5b674ae5ad3a99c"
+    },
+    {
+      "path": "agents/WORKFLOW.md",
+      "sha256": "64253ae526179be3ce8303987e3f38b9d7a43f825d1a6e310c99c022ba728554",
+      "bytes": 19609,
+      "source_blob": "38a6fc1d630aa1a6716c7e7c808dd21a674dc27b"
+    },
+    {
+      "path": "agents/codex/CODEX.md",
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+      "bytes": 4969,
+      "source_blob": "16a4ecfea89acd5b1d9cd09c9213094bce144caf"
+    },
+    {
+      "path": "state/IDEAS.md",
+      "sha256": "183a4a13481aec97b4a7673b36d87f7ec799009ca68d859e299b24f80d804992",
+      "bytes": 64471,
+      "source_blob": "60580dbe8be3e373837a0a6a04ec8810af0e87e8"
+    },
+    {
+      "path": "templates/THEORY.md",
+      "sha256": "eadbf9f53237abe0977b3593a7852561f61fc1dc04f9778babeaeaf237792dc8",
+      "bytes": 3655,
+      "source_blob": "078deb26c229c8f715f6238ba92fa48432f0dd5a"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/OPEN_TARGETS.md",
+      "sha256": "24135cbdca62c1f1bb37893b5701fd6152ee9390f296d2d90acb9c9d99a8df84",
+      "bytes": 12184,
+      "source_blob": "7d19248df1d6897b370035a122b8104bb48c724f"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-02-support/rejections-developer-parity-replay.json",
+      "sha256": "1c41cc733035b5470f6ea62912c6849657b732c125c1e8fbcac95cefae589894",
+      "bytes": 631,
+      "source_blob": null
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-02-support/rejections-exact-check.json",
+      "sha256": "a32b1d7f2072dacb0145c429816dfe5349400e26d46050494451390f5ed13982",
+      "bytes": 1648,
+      "source_blob": null
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-02-support/rejections-exact-check.py",
+      "sha256": "85f562e9aa40db22b455eddd7a27e56223371923d1a85c33198d4490f04a9a0d",
+      "bytes": 2959,
+      "source_blob": null
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-02-support/rejections-review.md",
+      "sha256": "f4545e7e8f566585c567c727ba1f9b67387aa3b37da81daf7a54f0e918d35977",
+      "bytes": 8400,
+      "source_blob": null
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/adversarial-gen3-1.md",
+      "sha256": "30cf095069309443ac1c133266b60864d8978fadb4c63dca0a31a6447aae7875",
+      "bytes": 31508,
+      "source_blob": "12fb80f359b57aa754afb4d79572ede61d57d207"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/adversarial-gen4-1.md",
+      "sha256": "1cd707128699fbf05f0bad2191ec0f9d1936414647ef132cdf66b98126ae61ca",
+      "bytes": 30984,
+      "source_blob": "2dd0b3317fc3e17d1e5861ce11f66a208578b0aa"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/response-02/ritz_converse_parity.out",
+      "sha256": "1c41cc733035b5470f6ea62912c6849657b732c125c1e8fbcac95cefae589894",
+      "bytes": 631,
+      "source_blob": "6c542c869a1cb9baeda35d2e69625d5cc6e08592"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/response-02/ritz_converse_parity.py",
+      "sha256": "7dfd5b570132971e2ea41bda71bf412535533d0d75714e7950995c4cc25f82da",
+      "bytes": 1701,
+      "source_blob": "8248aff12149152813860f24b8073c45457b71b7"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/decisive-gen1-3.md",
+      "sha256": "3e950d1b47b8ec87ffd9ebeed91f8fd27f22f4716d23507918f98dd86eb7825e",
+      "bytes": 30028,
+      "source_blob": "363e03e2c7a9af8cce4d9c23c558a79cfb699eef"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/gate-rejected.md",
+      "sha256": "67e2a51ed1eb523362751a6ae30e2c61680c80cb41c2095836568b4558ca0fcb",
+      "bytes": 47974,
+      "source_blob": "5f2a5af08ee6188a8c93d314bf522d8870f14ff2"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/ideas/candidates.md",
+      "sha256": "d079d870350603d63ebae2fbfc9c98ecccb91f54e8b6d5df4cac2a37c7e2286e",
+      "bytes": 121144,
+      "source_blob": "5ff6097e49451c4119719faf47399dd5768abaa1"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/report.md",
+      "sha256": "71ef9f0e620f60a58f36b37255c1d917e086a64981bb94fa0e4b578c31c0dadc",
+      "bytes": 50847,
+      "source_blob": "b7e959241f2404b0f79b0b914cc4386a23a16886"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/response-01.md",
+      "sha256": "8f080f2fe1239e2eb4e70ab404607737a978402f00c0362a753aa1e75ac64605",
+      "bytes": 22713,
+      "source_blob": "bce1777403c768981d1f5c2494f1e651885c6ba1"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-02-joint-ritz-saturation-bound.md",
+      "sha256": "0ed649103e3de3f1c22875ebb4bed26e1d4c252ba14d1ac971581fd084c8c193",
+      "bytes": 5488,
+      "source_blob": "32d56f801ec298423484bf811aeeb91ed2559ae5"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N02-windowed-rational-lanczos-instability.md",
+      "sha256": "777beb22f8364b21e7ecf03e930e586f563e11b361e9fecaacb1b67e956f395b",
+      "bytes": 5696,
+      "source_blob": "ddfc7c06ca2c73891bb8f5b231f04215410a5f0a"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N03-joint-ritz-converse-refuted.md",
+      "sha256": "2debf8b26405be9f10eb9fb8827f1a8f01df1757f280c0fdac8ffbde9a19e75a",
+      "bytes": 4950,
+      "source_blob": "1e2be11ea7ae99f5d39512569b06af8a15d60aee"
+    }
+  ]
+}

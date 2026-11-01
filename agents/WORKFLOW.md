@@ -13,6 +13,9 @@ The orchestrator owns scope, task allocation, integration, Git, and the PR. Deve
 | Protocol and ordinary technical audit | `gpt-6-astra`, medium | Auditor chooses Sonnet 5.5 high or Opus 5.5 high |
 | Mathematical audit | `gpt-6-astra`, high | Opus 5.5, high or xhigh |
 | Adversarial audit, novel mechanism, or a stalled proof | `gpt-6-astra`, xhigh; ultra only with written justification | Opus 5.5, xhigh |
+| Ideas campaigns: conceptual generation, gating and adversarial idea checks | unchanged (rows above apply) | Fable 5.1, xhigh (added 2026-10-31 at AC's explicit request); Opus 5.5 xhigh remains allowed |
+
+The Fable 5.1 row is restricted to ideas campaigns: brief writing, candidate generation, duplicate gating and adversarial idea checks. It does not change the developer/auditor separation, the evidence rules, the status words or the Codex column. Where an ideas campaign runs a tiny sanity script, Sonnet 5.5 high remains the development model for it. Record the actual model and effort in every commit trailer and log entry.
 
 Use agentic orchestration: delegate bounded development, independent checks, or audits when useful. Give each subagent its inputs, expected artifacts, model, scope, and acceptance criteria. Only the orchestrator changes Git state. Batch independent file reads and searches. Do not request unavailable models silently: report the limitation and any proposed substitute to AC before work whose required model is unavailable.
 

@@ -1,5 +1,7 @@
 # PD-T?lattice-c1-codex-02 — Exact cardinality of the adjacent-mod4 union
 
+Final ID: **PD-T085** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T. Aliases: mod4 adjacent half-density counts.
 Split from: none. Split into: none.
 

@@ -1,5 +1,7 @@
 # PD-T?lattice-c1-codex-04 — Antipodal-transversal Gram reduction and explicit character moments
 
+Final ID: **PD-T087** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T. Aliases: quarter-character cross block; strict-contraction reduction.
 Split from: none. Split into: unresolved family theorem PD-T?lattice-c1-codex-05; measured block diagnostics PD-T?lattice-c1-codex-06.
 

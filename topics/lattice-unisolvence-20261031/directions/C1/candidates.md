@@ -4,6 +4,8 @@ Rules/source e949ef06895acd5463cdf8df7e0e5f795218f70f; Codex assigned gpt-6.1-so
 
 ## IDEA?lattice-c1-codex-01 — Adjacent-mod4 unions and parity-adapted Chebyshev labels
 
+Final ID: **IDEA-182** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 Aliases: phasep=`{p,p+1}mod4`; phase0unshifted; phase1shifted; phase2/3complements; phase0odd/phase1even all-degree target; quarter-character half-grid.
 
 - Question/scope: which degrees/phases give exactly dim Pi_npoints, a usable complete structural criterion, and stable Lobatto interpolation? Initial frozen finite scope phase0n1..8, then explicitly frozen shifted/large/extension scopes in frozen-scope.md and extension.md. Broad Chebyshev target uses phase0at odd n and phase1at even n, every n>=1.
@@ -28,6 +30,8 @@ Baseline control rows are also retained individually: Padua parity(a=yes,b=known
 
 ## IDEA?lattice-c1-codex-02 — Row-root/moment kernel reduction
 
+Final ID: **IDEA-183** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 - Question/scope: replace full Cartesian-subset Vandermonde by a smaller complete mixed matrix, for arbitrary field and n+1distinct xrows with row-root counts summing to dim Pi_n.
 - Mechanism/hypotheses: divide each row restriction by its monic root polynomial; interpolate its coefficients in x; weighted leading-coefficient moments enforce total degree. Exact q_i0/n+1edges allowed. Closest predecessors multiline interpolation, lower-set/divided-difference and Floater; verdict variant with explicit reduction, no novelty claim.
 - Separation/kill test: the explicit Bmatrix and kernel bijection must hold; a single allowed configuration with differing kernel dimensions kills it. A predecessor giving the same reduction removes possible novelty, not its validity.
@@ -35,6 +39,8 @@ Baseline control rows are also retained individually: Padua parity(a=yes,b=known
 - Properties: periodicity supplied only by family01application; complete mixed structural criterion yes; no stability theorem. Next: prove specific Bnonvanishing or extract an inverse estimate. Audit pending; template dependencies/evidence are in the theory file.
 
 ## IDEA?lattice-c1-codex-03 — Antipodal cross-block and quarter-character inverse route
+
+Final ID: **IDEA-184** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
 
 - Question/scope: in the parity-adapted Chebyshev family, exploit central inversion selecting one member of each antipodal pair to derive an operator criterion and useful kernel bound.
 - Mechanism/hypotheses: normalized full-grid DCTGram; character mask; even/odd mode split. Closest predecessors Fourier non-aliasing/Gram compression and classical Chebyshev interpolation; bounded variant, no novelty claim.

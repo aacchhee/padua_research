@@ -1,0 +1,256 @@
+{
+  "candidate": "614709d4a60fb0c2593b05764e8d5aceda1be381",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+  },
+  "inputs": {
+    "checks/adversarial-M1.md": "64be1dd590edae8dc5c567a5310accb0d6cf7892b4513d08fc1f6db5f2fef741",
+    "checks/adversarial-M2.md": "85289685cac6c6ab6700760d664536abf9d7a05e01787b535180aa4f3865d839",
+    "checks/adversarial-gen2-3.md": "2d5cbe7639ebaac9f16c8324ac53a51cd9ef4032e1e7e7cdefb9c0db862caab0",
+    "report.md": "233faea0990439e132290d55e45d6cb3510533e62d4e60696f455ff5dd6df5a1",
+    "ideas/candidates.md": "bac7911168fc2de75c4b2e732bd8fad7bd682ebe442f10c8a696ea2057eda7c7",
+    "checks/code/adv/M2/m2_favard_commutant.py": "2d262a4ffbf7469cf16318169dcdeb0517f948400185bba43d271673a4ddbf43",
+    "checks/code/adv/M2/m2_common.py": "8b2591383912f086652c6b2524f824d41cda4d7fe387120ddec1953c95f91a65",
+    "checks/code/adv/M1/m1_word_rule.py": "0b84f6268e01a53f53f4626f935449a2fcc54c16deaf93cef97f979bb81f1cf1",
+    "checks/code/adv/gen2-3/t3_delta_exponent.py": "a9a804a7ceae44e630d11df40e590d739807a20d056f7cf6d6ce839cc55f0b0a",
+    "checks/code/adv/gen2-3/pairs.py": "9067edf38f5c7a7565fb99245caa25453bf936ba3a0fe1342377a535b606a015"
+  },
+  "runs": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/programme-audit-614709d/topics/programme-ideas-20261031/checks/code/adv/M2/m2_favard_commutant.py"
+      ],
+      "returncode": 0,
+      "stdout": "n  N  | jointEV err | dim comm(Hx) in patt(Hy) / patt(Hx) / blocktri | I,Hx,Hy in patt(Hy)? | tangent GH / blocktri | 3N-1, +C(n+2,3)\n3  10 |  6.4e-16    | 3 / 2 / 3  | ['I', 'Hx', 'Hy'] | 29 / 39 | 29, 39\n4  15 |  7.6e-16    | 3 / 2 / 3  | ['I', 'Hx', 'Hy'] | 44 / 64 | 44, 64\n5  21 |  1.4e-15    | 3 / 2 / 3  | ['I', 'Hx', 'Hy'] | 62 / 97 | 62, 97\n6  28 |  1.7e-15    | 3 / 2 / 3  | ['I', 'Hx', 'Hy'] | 83 / 139 | 83, 139\npattern(Hy) subset of pattern(Hx)? False ; pattern(Hx) subset of pattern(Hy)? True\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/programme-audit-614709d/topics/programme-ideas-20261031/checks/code/adv/M1/m1_word_rule.py"
+      ],
+      "returncode": 0,
+      "stdout": "# M1 adversarial script: word rules of non-commuting sections (M = 30 random nodes)\n\n== measure 0 ==\nk=1 n= 3 | T1 max err words<=2k+1: 2.2e-16 | T2 values of x^2y^2 by order: 0.081540, 0.003858, 0.003858 (moment 0.063073)\n        | T3 error(x..xy..y)=-1.847e-02  <(I-P)m1,(I-P)m2>=-1.847e-02 | palindrome x^4 error=+7.582e-02 (= +|.|^2)\n        | T4 max|eGauss+eAnti| len 2k+2: 7.1e-16 ; len 2k+3: 2.5e-16 (eA/eG range [-1.000, -1.000])\nk=2 n= 6 | T1 max err words<=2k+1: 3.3e-16 | T2 values of x^3y^3 by order: 0.000678, 0.002156, 0.002156 (moment 0.000463)\n        | T3 error(x..xy..y)=-2.154e-04  <(I-P)m1,(I-P)m2>=-2.154e-04 | palindrome x^6 error=+2.091e-02 (= +|.|^2)\n        | T4 max|eGauss+eAnti| len 2k+2: 8.3e-16 ; len 2k+3: 3.3e-16 (eA/eG range [-1.000, -1.000])\nk=3 n=10 | T1 max err words<=2k+1: 3.9e-16 | T2 values of x^4y^4 by order: 0.014054, 0.010605, 0.014908 (moment 0.014364)\n        | T3 error(x..xy..y)=+3.102e-04  <(I-P)m1,(I-P)m2>=+3.102e-04 | palindrome x^8 error=+5.540e-03 (= +|.|^2)\n        | T4 max|eGauss+eAnti| len 2k+2: 8.0e-16 ; len 2k+3: 3.5e-16 (eA/eG range [-1.000, -1.000])\nk=4 n=15 | T1 max err words<=2k+1: 3.9e-16 | T2 values of x^5y^5 by order: 0.000216, 0.000496, 0.000475 (moment 0.000394)\n        | T3 error(x..xy..y)=+1.784e-04  <(I-P)m1,(I-P)m2>=+1.784e-04 | palindrome x^10 error=+9.510e-04 (= +|.|^2)\n        | T4 max|eGauss+eAnti| len 2k+2: 8.5e-16 ; len 2k+3: 3.7e-16 (eA/eG range [-1.000, -1.000])\n\n== measure 1 ==\nk=1 n= 3 | T1 max err words<=2k+1: 1.7e-16 | T2 values of x^2y^2 by order: 0.148520, 0.001016, 0.001016 (moment 0.168268)\n        | T3 error(x..xy..y)=+1.975e-02  <(I-P)m1,(I-P)m2>=+1.975e-02 | palindrome x^4 error=+9.859e-02 (= +|.|^2)\n        | T4 max|eGauss+eAnti| len 2k+2: 2.8e-16 ; len 2k+3: 2.3e-16 (eA/eG range [-1.000, -1.000])\nk=2 n= 6 | T1 max err words<=2k+1: 2.2e-16 | T2 values of x^3y^3 by order: -0.006897, -0.000401, -0.000401 (moment -0.011986)\n        | T3 error(x..xy..y)=-5.089e-03  <(I-P)m1,(I-P)m2>=-5.089e-03 | palindrome x^6 error=+2.468e-02 (= +|.|^2)\n        | T4 max|eGauss+eAnti| len 2k+2: 3.6e-16 ; len 2k+3: 1.6e-16 (eA/eG range [-1.000, -1.000])\nk=3 n=10 | T1 max err words<=2k+1: 1.9e-16 | T2 values of x^4y^4 by order: 0.088407, 0.083581, 0.087642 (moment 0.088582)\n        | T3 error(x..xy..y)=+1.746e-04  <(I-P)m1,(I-P)m2>=+1.746e-04 | palindrome x^8 error=+3.420e-03 (= +|.|^2)\n        | T4 max|eGauss+eAnti| len 2k+2: 4.2e-16 ; len 2k+3: 1.7e-16 (eA/eG range [-1.000, -1.000])\nk=4 n=15 | T1 max err words<=2k+1: 2.2e-16 | T2 values of x^5y^5 by order: -0.020437, -0.020138, -0.020407 (moment -0.020397)\n        | T3 error(x..xy..y)=+3.999e-05  <(I-P)m1,(I-P)m2>=+3.999e-05 | palindrome x^10 error=+7.338e-04 (= +|.|^2)\n        | T4 max|eGauss+eAnti| len 2k+2: 5.0e-16 ; len 2k+3: 1.9e-16 (eA/eG range [-1.000, -1.000])\n\n== measure 2 ==\nk=1 n= 3 | T1 max err words<=2k+1: 1.1e-16 | T2 values of x^2y^2 by order: 0.106291, 0.005203, 0.005203 (moment 0.111458)\n        | T3 error(x..xy..y)=+5.167e-03  <(I-P)m1,(I-P)m2>=+5.167e-03 | palindrome x^4 error=+7.338e-02 (= +|.|^2)\n        | T4 max|eGauss+eAnti| len 2k+2: 3.6e-16 ; len 2k+3: 2.2e-16 (eA/eG range [-1.000, -1.000])\nk=2 n= 6 | T1 max err words<=2k+1: 1.9e-16 | T2 values of x^3y^3 by order: -0.018973, -0.011309, -0.011309 (moment -0.020709)\n        | T3 error(x..xy..y)=-1.736e-03  <(I-P)m1,(I-P)m2>=-1.736e-03 | palindrome x^6 error=+1.123e-02 (= +|.|^2)\n        | T4 max|eGauss+eAnti| len 2k+2: 3.3e-16 ; len 2k+3: 2.4e-16 (eA/eG range [-1.000, -1.000])\nk=3 n=10 | T1 max err words<=2k+1: 1.9e-16 | T2 values of x^4y^4 by order: 0.031654, 0.028800, 0.030511 (moment 0.031181)\n        | T3 error(x..xy..y)=-4.722e-04  <(I-P)m1,(I-P)m2>=-4.722e-04 | palindrome x^8 error=+1.782e-03 (= +|.|^2)\n        | T4 max|eGauss+eAnti| len 2k+2: 3.1e-16 ; len 2k+3: 2.4e-16 (eA/eG range [-1.000, -1.000])\nk=4 n=15 | T1 max err words<=2k+1: 1.9e-16 | T2 values of x^5y^5 by order: -0.012353, -0.012251, -0.012203 (moment -0.012339)\n        | T3 error(x..xy..y)=+1.321e-05  <(I-P)m1,(I-P)m2>=+1.321e-05 | palindrome x^10 error=+2.461e-04 (= +|.|^2)\n        | T4 max|eGauss+eAnti| len 2k+2: 3.6e-16 ; len 2k+3: 2.4e-16 (eA/eG range [-1.000, -1.000])\n\n== T5: f = 1/((x-a)^2+(y-b)^2), pole outside [-1,1]^2 ; 200 random instances per k ==\nk=1 (section size  3): Gauss/anti-Gauss bracket the exact value in 200/200 instances; median rel.err: pair-Gauss 1.6e-02, pair-anti 1.3e-02, univariate Lanczos on g(X,Y) with m=2 steps (size 2) 3.4e-02\nk=2 (section size  6): Gauss/anti-Gauss bracket the exact value in 199/200 instances; median rel.err: pair-Gauss 9.8e-04, pair-anti 8.3e-04, univariate Lanczos on g(X,Y) with m=3 steps (size 3) 5.2e-03\nk=3 (section size 10): Gauss/anti-Gauss bracket the exact value in 196/200 instances; median rel.err: pair-Gauss 9.2e-05, pair-anti 8.0e-05, univariate Lanczos on g(X,Y) with m=4 steps (size 4) 1.1e-03\nk=4 (section size 15): Gauss/anti-Gauss bracket the exact value in 198/200 instances; median rel.err: pair-Gauss 3.1e-06, pair-anti 2.9e-06, univariate Lanczos on g(X,Y) with m=5 steps (size 5) 1.2e-04\n\n== T5b: equal X/Y-product count: pair k-section (dim Pi_k products) vs Lanczos on g(X,Y) with m = dim Pi_k // 2 steps ==\nk=1 size  3: pair-Gauss median rel.err 1.5e-02 | Lanczos on g with m=1 steps 1.7e-01 (exact to g-degree 1 vs 1 for the pair)\nk=2 size  6: pair-Gauss median rel.err 1.2e-03 | Lanczos on g with m=3 steps 5.7e-03 (exact to g-degree 5 vs 2 for the pair)\nk=3 size 10: pair-Gauss median rel.err 9.2e-05 | Lanczos on g with m=5 steps 2.0e-04 (exact to g-degree 9 vs 3 for the pair)\nk=4 size 15: pair-Gauss median rel.err 3.7e-06 | Lanczos on g with m=7 steps 3.8e-06 (exact to g-degree 13 vs 4 for the pair)\n\n== T6: f = 1/(c - x y), c = 1.5: three lifts of the SAME f give different 'rules' ; 200 instances per k ==\nk=1: median relative spread between lifts AB, BA, sym: 3.8e-05 | median rel.err per lift: 4.4e-02 4.4e-02 4.4e-02 | brackets: 200 200 200 /200\nk=2: median relative spread between lifts AB, BA, sym: 5.0e-04 | median rel.err per lift: 4.0e-03 4.0e-03 3.3e-03 | brackets: 177 177 192 /200\nk=3: median relative spread between lifts AB, BA, sym: 2.8e-06 | median rel.err per lift: 7.9e-04 7.9e-04 7.8e-04 | brackets: 200 200 200 /200\nk=4: median relative spread between lifts AB, BA, sym: 2.5e-06 | median rel.err per lift: 5.0e-05 5.0e-05 4.6e-05 | brackets: 192 192 197 /200\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/programme-audit-614709d/topics/programme-ideas-20261031/checks/code/adv/gen2-3/t3_delta_exponent.py"
+      ],
+      "returncode": 0,
+      "stdout": "(A) node i0: x=-0.5931, y=0.4398; nearest other x-coordinate at 0.086\nd      delta_max(spectral)  commutator at delta_max   ratio delta_max/d\n3e-02  7.94e-02            8.14e-02              2.65\n1e-02  5.01e-02            5.13e-02              5.01\n3e-03  3.16e-02            3.23e-02              10.54\n1e-03  1.58e-02            1.62e-02              15.85\n3e-04  7.94e-03            8.11e-03              26.48\n1e-04  5.01e-03            5.12e-03              50.12\n3e-05  3.16e-03            3.23e-03              105.41\n1e-05  2.51e-03            2.56e-03              251.19\n(A) log-log slope of delta_max vs d = 0.458  (alpha = 1/slope = 2.18); generic almost-commuting would give slope 2)\n\n(B) cluster rotation: nodes 0,1 at (x0,y0) and (x0+eps, y0+eps); H_y rotated by 45 deg in the cluster eigenspace\ncluster at (0.2080,0.7808), other nodes >= 0.086 from the near lines; box corner at distance d from node 0 in x AND y\neps      delta=||[Hx,Hy']||_2  dist-to-commuting  d/eps at which count first fails   d_fail   d_fail/sqrt(delta)  restricted  disc\n1e-01  1.9e-02            2.8e-01          0.923 (numerator 7 vs 2*true=8)      9.2e-02   0.67     4/4      3/3\n3e-02  4.5e-04            2.1e-02          0.173 (numerator 7 vs 2*true=8)      5.2e-03   0.24     4/4      2/2\n1e-02  5.0e-05            7.1e-03          0.173 (numerator 7 vs 2*true=8)      1.7e-03   0.24     4/4      2/2\n3e-03  4.5e-06            2.1e-03          0.197 (numerator 7 vs 2*true=8)      5.9e-04   0.28     4/4      2/2\n1e-03  5.0e-07            7.1e-04          0.197 (numerator 7 vs 2*true=8)      2.0e-04   0.28     4/4      2/2\n3e-04  4.5e-08            2.1e-04          0.197 (numerator 7 vs 2*true=8)      5.9e-05   0.28     4/4      2/2\n(B) log-log slope of d_fail vs delta = 0.550  (alpha; generic prediction 0.5)\n\n(C) block-tridiagonal pair: 2x2 rotated cluster on indices {0,1} + commuting rest (n = 7 rest, N = 2 + 36)\neps=1e-02 d=5.0e-03 (d/eps=0.5): delta=5.0e-05  line-dist=5.0e-03  true=4  numerator=8 -> OK\neps=1e-02 d=2.0e-03 (d/eps=0.2): delta=5.0e-05  line-dist=2.0e-03  true=4  numerator=8 -> OK\neps=1e-02 d=1.0e-03 (d/eps=0.1): delta=5.0e-05  line-dist=1.0e-03  true=4  numerator=7 -> WRONG\neps=1e-02 d=5.0e-04 (d/eps=0.05): delta=5.0e-05  line-dist=5.0e-04  true=4  numerator=7 -> WRONG\neps=1e-03 d=5.0e-04 (d/eps=0.5): delta=5.0e-07  line-dist=5.0e-04  true=4  numerator=8 -> OK\neps=1e-03 d=2.0e-04 (d/eps=0.2): delta=5.0e-07  line-dist=2.0e-04  true=4  numerator=7 -> WRONG\neps=1e-03 d=1.0e-04 (d/eps=0.1): delta=5.0e-07  line-dist=1.0e-04  true=4  numerator=7 -> WRONG\neps=1e-03 d=5.0e-05 (d/eps=0.05): delta=5.0e-07  line-dist=5.0e-05  true=4  numerator=7 -> WRONG\nPattern: entries (0,1),(1,0) sit in the degree-0/degree-1 coupling block; the pair is block tridiagonal and symmetric.\n",
+      "stderr": ""
+    }
+  ],
+  "independent_exact_cluster": [
+    {
+      "eps": "1/10",
+      "delta": "1/200",
+      "line_distance": "1/100",
+      "determinant": "-47060641/16000000000000",
+      "product_positive_inertia": 1,
+      "Mx_positive_inertia": 2,
+      "My_positive_inertia": 2,
+      "count_formula": "3/2",
+      "reference_count": 2
+    },
+    {
+      "eps": "1/100",
+      "delta": "1/20000",
+      "line_distance": "1/1000",
+      "determinant": "-766973330641/1600000000000000000000",
+      "product_positive_inertia": 1,
+      "Mx_positive_inertia": 2,
+      "My_positive_inertia": 2,
+      "count_formula": "3/2",
+      "reference_count": 2
+    },
+    {
+      "eps": "1/1000",
+      "delta": "1/2000000",
+      "line_distance": "1/10000",
+      "determinant": "-8023942610774641/160000000000000000000000000000",
+      "product_positive_inertia": 1,
+      "Mx_positive_inertia": 2,
+      "My_positive_inertia": 2,
+      "count_formula": "3/2",
+      "reference_count": 2
+    },
+    {
+      "eps": "1/10000",
+      "delta": "1/200000000",
+      "line_distance": "1/100000",
+      "determinant": "-80599879065867614641/16000000000000000000000000000000000000",
+      "product_positive_inertia": 1,
+      "Mx_positive_inertia": 2,
+      "My_positive_inertia": 2,
+      "count_formula": "3/2",
+      "reference_count": 2
+    },
+    {
+      "eps": "1/100000000",
+      "delta": "1/20000000000000000",
+      "line_distance": "1/1000000000",
+      "determinant": "-806399959872000706639994676000014641/1600000000000000000000000000000000000000000000000000000000000000000000",
+      "product_positive_inertia": 1,
+      "Mx_positive_inertia": 2,
+      "My_positive_inertia": 2,
+      "count_formula": "3/2",
+      "reference_count": 2
+    }
+  ],
+  "exact_padua_pattern_commutant": {
+    "n": 2,
+    "N": 6,
+    "x": [
+      "1",
+      "1",
+      "0",
+      "0",
+      "-1",
+      "-1"
+    ],
+    "y": [
+      "1",
+      "-1/2",
+      "1/2",
+      "-1",
+      "1",
+      "-1/2"
+    ],
+    "w": [
+      "1/12",
+      "1/6",
+      "1/3",
+      "1/6",
+      "1/12",
+      "1/6"
+    ],
+    "monomial_order": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "det_V": "-27/2",
+    "Hx": "Matrix([[0, sqrt(2)/2, 0, 0, 0, 0], [sqrt(2)/2, 0, 0, sqrt(2)/2, 0, 0], [0, 0, 0, 0, sqrt(2)/2, 0], [0, sqrt(2)/2, 0, 0, 0, 0], [0, 0, sqrt(2)/2, 0, 0, sqrt(2)/2], [0, 0, 0, 0, sqrt(2)/2, 0]])",
+    "Hy": "Matrix([[0, 0, sqrt(2)/2, 0, 0, 0], [0, 0, 0, 0, sqrt(2)/2, 0], [sqrt(2)/2, 0, 0, 0, 0, 1/2], [0, 0, 0, 0, 0, sqrt(2)/2], [0, sqrt(2)/2, 0, 0, 1/2, 0], [0, 0, 1/2, sqrt(2)/2, 0, 0]])",
+    "pattern_Hy_symmetric_variables": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        5
+      ]
+    ],
+    "commutator_map_rank": 11,
+    "commutant_dimension": 6,
+    "observation": "Dimension 6, exceeding span{I,Hx,Hy} dimension 3."
+  },
+  "nonnegative_not_strictly_positive": {
+    "Hx_diagonal": [
+      0.0,
+      1.0,
+      2.0
+    ],
+    "Hy_diagonal": [
+      0.0,
+      1.0,
+      -1.0
+    ],
+    "first_component_squared_weights": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "observation": "Commuting real symmetric pairs can have dark zero-weight modes."
+  }
+}

@@ -1,0 +1,84 @@
+n | certified int/edge/corner/total | published | ring-test failures (1e-3,1e-4,1e-5) | close pairs (<0.05): count, min valley depth | brute-force maxima found | brute-force maxima NOT in certified list | certified maxima NOT found by brute force
+3 | 7/6/2/15 | 7/15 | [0, 0, 0] | 0, nan | 15 | 0 | 0   [1s]
+4 | 13/12/2/27 | 13/27 | [0, 0, 0] | 5, 1.10e-04 | 27 | 0 | 0   [2s]
+    pair dist 1.481e-02 valley depth 1.096e-04: (2.248143,-0.000000) - (2.233328,0.000000)
+    pair dist 1.481e-02 valley depth 1.096e-04: (0.893450,0.000000) - (0.908264,0.000000)
+    pair dist 3.037e-02 valley depth 1.519e-03: (1.555611,3.141593) - (1.585982,3.141593)
+    pair dist 4.275e-02 valley depth 1.453e-03: (1.528722,0.745568) - (1.570796,0.753138)
+    pair dist 4.275e-02 valley depth 1.453e-03: (1.612871,0.745568) - (1.570796,0.753138)
+5 | 14/9/2/25 | 14/25 | [0, 0, 0] | 4, 3.52e-05 | 23 | 0 | 2   [4s]
+    pair dist 9.985e-03 valley depth 3.522e-05: (2.425896,2.528765) - (2.417014,2.524204)
+    pair dist 9.985e-03 valley depth 3.522e-05: (2.425896,0.612827) - (2.417014,0.617389)
+    pair dist 4.926e-02 valley depth 1.782e-03: (1.817560,2.075120) - (1.859868,2.049890)
+    pair dist 4.926e-02 valley depth 1.782e-03: (1.817560,1.066472) - (1.859868,1.091703)
+    certified maximum not found by brute force (mesh resolution): (2.417014,0.617389) lambda 3.309118
+    certified maximum not found by brute force (mesh resolution): (2.417014,2.524204) lambda 3.309118
+6 | 25/14/2/41 | 23/39 | [2, 2, 0] | 12, 2.25e-08 | 37 | 0 | 4   [6s]
+    pair dist 4.157e-03 valley depth 2.252e-08: (2.059959,2.200948) - (2.057191,2.204050)
+    pair dist 4.157e-03 valley depth 2.252e-08: (1.081634,2.200948) - (1.084401,2.204050)
+    pair dist 6.312e-03 valley depth 8.624e-05: (1.570796,2.609517) - (1.576848,2.611312)
+    pair dist 6.312e-03 valley depth 8.624e-05: (1.570796,2.609517) - (1.564745,2.611312)
+    pair dist 1.038e-02 valley depth 9.327e-05: (1.094326,3.141593) - (1.083950,3.141593)
+    pair dist 1.038e-02 valley depth 9.327e-05: (2.047267,3.141593) - (2.057643,3.141593)
+    pair dist 1.210e-02 valley depth 9.904e-05: (1.564745,2.611312) - (1.576848,2.611312)
+    pair dist 1.682e-02 valley depth 1.387e-03: (1.562387,0.000000) - (1.579205,-0.000000)
+    pair dist 3.656e-02 valley depth 5.238e-04: (1.115607,2.223103) - (1.084401,2.204050)
+    pair dist 3.656e-02 valley depth 5.238e-04: (2.025986,2.223103) - (2.057191,2.204050)
+    pair dist 4.056e-02 valley depth 8.073e-04: (2.025986,2.223103) - (2.059959,2.200948)
+    pair dist 4.056e-02 valley depth 8.073e-04: (1.115607,2.223103) - (1.081634,2.200948)
+    certified maximum not found by brute force (mesh resolution): (2.057191,2.204050) lambda 3.594215
+    certified maximum not found by brute force (mesh resolution): (1.084401,2.204050) lambda 3.594215
+    certified maximum not found by brute force (mesh resolution): (1.564745,2.611312) lambda 3.483811
+    certified maximum not found by brute force (mesh resolution): (1.576848,2.611312) lambda 3.483811
+7 | 33/15/2/50 | 27/42 | [6, 2, 0] | 11, 2.57e-07 | 42 | 0 | 8   [8s]
+    pair dist 4.470e-03 valley depth 2.573e-07: (0.514917,2.298304) - (0.518134,2.295201)
+    pair dist 4.470e-03 valley depth 2.573e-07: (0.514917,0.843288) - (0.518134,0.846392)
+    pair dist 1.104e-02 valley depth 2.344e-04: (0.525423,1.560085) - (0.528093,1.570796)
+    pair dist 1.104e-02 valley depth 2.344e-04: (0.525423,1.581507) - (0.528093,1.570796)
+    pair dist 1.248e-02 valley depth 1.772e-06: (1.358636,3.141593) - (1.346152,3.141593)
+    pair dist 1.248e-02 valley depth 1.772e-06: (1.358636,-0.000000) - (1.346152,0.000000)
+    pair dist 2.142e-02 valley depth 1.745e-03: (0.525423,1.560085) - (0.525423,1.581507)
+    pair dist 2.605e-02 valley depth 4.133e-03: (2.187292,0.814425) - (2.209809,0.827514)
+    pair dist 2.605e-02 valley depth 4.133e-03: (2.187292,2.327167) - (2.209809,2.314078)
+    pair dist 3.049e-02 valley depth 1.466e-03: (2.624468,1.917741) - (2.614176,1.946439)
+    pair dist 3.049e-02 valley depth 1.466e-03: (2.624468,1.223851) - (2.614176,1.195154)
+    certified maximum not found by brute force (mesh resolution): (0.518134,2.295201) lambda 3.650868
+    certified maximum not found by brute force (mesh resolution): (0.518134,0.846392) lambda 3.650868
+    certified maximum not found by brute force (mesh resolution): (2.009093,0.999398) lambda 2.906758
+    certified maximum not found by brute force (mesh resolution): (2.009093,2.142195) lambda 2.906758
+    certified maximum not found by brute force (mesh resolution): (0.701408,0.278984) lambda 2.551834
+    certified maximum not found by brute force (mesh resolution): (0.701408,2.862609) lambda 2.551834
+    certified maximum not found by brute force (mesh resolution): (1.346152,0.000000) lambda 4.926223
+    certified maximum not found by brute force (mesh resolution): (1.346152,3.141593) lambda 4.926223
+8 | 44/16/2/62 | 38/56 | [10, 0, 0] | 19, 7.16e-07 | 50 | 0 | 12   [11s]
+    pair dist 1.678e-03 valley depth 2.208e-06: (0.443246,0.749841) - (0.444390,0.751069)
+    pair dist 1.678e-03 valley depth 2.208e-06: (2.698347,0.749841) - (2.697202,0.751069)
+    pair dist 2.004e-03 valley depth 7.159e-07: (0.445008,2.741692) - (0.447011,2.741770)
+    pair dist 2.004e-03 valley depth 7.159e-07: (2.696585,2.741692) - (2.694582,2.741770)
+    pair dist 2.843e-03 valley depth 1.701e-05: (2.700327,0.747801) - (2.698347,0.749841)
+    pair dist 2.843e-03 valley depth 1.701e-05: (0.441266,0.747801) - (0.443246,0.749841)
+    pair dist 2.914e-03 valley depth 2.309e-06: (2.309768,2.422172) - (2.308873,2.419400)
+    pair dist 2.914e-03 valley depth 2.309e-06: (0.831825,2.422172) - (0.832720,2.419400)
+    pair dist 4.521e-03 valley depth 2.180e-06: (0.441266,0.747801) - (0.444390,0.751069)
+    pair dist 4.521e-03 valley depth 2.180e-06: (2.700327,0.747801) - (2.697202,0.751069)
+    pair dist 6.628e-03 valley depth 2.288e-04: (2.323202,1.084574) - (2.328981,1.087822)
+    pair dist 6.628e-03 valley depth 2.288e-04: (0.818390,1.084574) - (0.812612,1.087822)
+    pair dist 9.907e-03 valley depth 1.054e-03: (1.565843,3.141593) - (1.575750,3.141593)
+    pair dist 1.944e-02 valley depth 3.480e-06: (2.684460,1.395717) - (2.689397,1.414522)
+    pair dist 1.944e-02 valley depth 3.480e-06: (0.457133,1.395717) - (0.452196,1.414522)
+    pair dist 2.107e-02 valley depth 1.211e-03: (2.327007,2.408664) - (2.308873,2.419400)
+    pair dist 2.107e-02 valley depth 1.211e-03: (0.814586,2.408664) - (0.832720,2.419400)
+    pair dist 2.190e-02 valley depth 1.587e-03: (0.814586,2.408664) - (0.831825,2.422172)
+    pair dist 2.190e-02 valley depth 1.587e-03: (2.327007,2.408664) - (2.309768,2.422172)
+    certified maximum not found by brute force (mesh resolution): (0.447011,2.741770) lambda 4.241310
+    certified maximum not found by brute force (mesh resolution): (2.694582,2.741770) lambda 4.241310
+    certified maximum not found by brute force (mesh resolution): (0.832720,2.419400) lambda 4.180270
+    certified maximum not found by brute force (mesh resolution): (2.308873,2.419400) lambda 4.180270
+    certified maximum not found by brute force (mesh resolution): (0.452196,1.414522) lambda 4.150733
+    certified maximum not found by brute force (mesh resolution): (2.689397,1.414522) lambda 4.150733
+    certified maximum not found by brute force (mesh resolution): (0.443246,0.749841) lambda 3.872639
+    certified maximum not found by brute force (mesh resolution): (2.698347,0.749841) lambda 3.872639
+    certified maximum not found by brute force (mesh resolution): (0.444390,0.751069) lambda 3.872562
+    certified maximum not found by brute force (mesh resolution): (2.697202,0.751069) lambda 3.872562
+    certified maximum not found by brute force (mesh resolution): (0.979023,0.186674) lambda 3.125136
+    certified maximum not found by brute force (mesh resolution): (2.162570,0.186674) lambda 3.125136

@@ -1,0 +1,96 @@
+=== (a) closed form (O(N) rhombus-kernel sum) vs O(Nn) formula, n = 3..64, both corners of each parity ===
+max |closed - O(Nn)| over n = 3..64 and all four corners: 2.06e-13   [1s]
+=== (b) long-double closed form vs mpmath (30 digits) at n = 64, 128, 256 (corner (1,-1)) ===
+n=64: mp = 13.9732078053511737742592  longdouble = 13.973207805351173141  diff = 6.3e-16  (mp 0.2s)
+n=128: mp = 17.34605680007002712086961  longdouble = 17.346056800070027395  diff = 2.7e-16  (mp 0.9s)
+n=256: mp = 21.11125723338624111958047  longdouble = 21.11125723338624105  diff = 7.0e-17  (mp 3.4s)
+=== (b) long-double corner values ===
+n=64 corner (1, -1) Lambda_c = 13.973207805351173141  [0.0s]
+n=80 corner (1, -1) Lambda_c = 15.016139790461232801  [0.0s]
+n=96 corner (1, -1) Lambda_c = 15.898513997081441683  [0.0s]
+n=112 corner (1, -1) Lambda_c = 16.665751865184316432  [0.0s]
+n=128 corner (1, -1) Lambda_c = 17.346056800070027395  [0.0s]
+n=160 corner (1, -1) Lambda_c = 18.515404434088458914  [0.0s]
+n=192 corner (1, -1) Lambda_c = 19.500992539058841896  [0.1s]
+n=224 corner (1, -1) Lambda_c = 20.355443492033825288  [0.1s]
+n=256 corner (1, -1) Lambda_c = 21.11125723338624105  [0.1s]
+n=320 corner (1, -1) Lambda_c = 22.406710068199674837  [0.2s]
+n=384 corner (1, -1) Lambda_c = 23.495265687284257194  [0.2s]
+n=448 corner (1, -1) Lambda_c = 24.436729910125039823  [0.3s]
+n=512 corner (1, -1) Lambda_c = 25.267887116947299194  [0.4s]
+n=640 corner (1, -1) Lambda_c = 26.689186973118095347  [0.6s]
+n=768 corner (1, -1) Lambda_c = 27.880517091906670357  [0.9s]
+n=896 corner (1, -1) Lambda_c = 28.908844253424722026  [1.2s]
+n=1024 corner (1, -1) Lambda_c = 29.815224151018050236  [1.6s]
+n=1280 corner (1, -1) Lambda_c = 31.362188204014527178  [2.5s]
+n=1536 corner (1, -1) Lambda_c = 32.656160256856450345  [3.8s]
+n=1792 corner (1, -1) Lambda_c = 33.77124932933852494  [5.0s]
+n=2048 corner (1, -1) Lambda_c = 34.75277208003829168  [6.5s]
+n=2560 corner (1, -1) Lambda_c = 36.425281616451510372  [10.3s]
+n=3072 corner (1, -1) Lambda_c = 37.82181107858920117  [14.7s]
+n=3584 corner (1, -1) Lambda_c = 39.02359850053602151  [19.7s]
+n=4096 corner (1, -1) Lambda_c = 40.080214391246982084  [25.8s]
+n=5120 corner (1, -1) Lambda_c = 41.878196331874720158  [40.5s]
+n=6144 corner (1, -1) Lambda_c = 43.377231786986601564  [58.8s]
+n=8192 corner (1, -1) Lambda_c = 45.797358504845917693  [105.0s]
+n=65 corner (-1, -1) Lambda_c = 14.044354229234580806  [0.0s]
+n=127 corner (-1, -1) Lambda_c = 17.305695431847230536  [0.0s]
+n=129 corner (-1, -1) Lambda_c = 17.38615371901350938  [0.0s]
+n=255 corner (-1, -1) Lambda_c = 21.088897124537589292  [0.1s]
+n=257 corner (-1, -1) Lambda_c = 21.133542574824017598  [0.1s]
+n=511 corner (-1, -1) Lambda_c = 25.255613535087353783  [0.4s]
+n=513 corner (-1, -1) Lambda_c = 25.280139849297129257  [0.4s]
+n=1023 corner (-1, -1) Lambda_c = 29.808539640075051635  [1.6s]
+n=1025 corner (-1, -1) Lambda_c = 29.821902911444061133  [1.6s]
+n=2049 corner (-1, -1) Lambda_c = 34.75638686264970768  [6.4s]
+n=4097 corner (-1, -1) Lambda_c = 40.08215925126352988  [26.1s]
+=== (c) Euler-Maclaurin fits: y = Lambda_c - (4/pi^2) log^2 n = b log n + c + sum_{k<=K, m<=k} d_km log^m n / n^k ===
+1-D constants: c1 = (2/pi)(gamma + log(8/pi)) = 0.962522826760713 ; b_theory = (8/pi^2)(gamma+log(8/pi)) = 1.22552212574201 ; c1^2 = 0.926450192035434
+parity | K | n_min | #pts | b | c | max resid
+even | 3 | 64 | 28 | 1.225522125754 | 1.846160310287 | 6.6e-15
+even | 3 | 64 | 28 | fixed 1.225522125742 | 1.84616031042 | 1.69e-14
+even | 3 | 128 | 24 | 1.225522125744 | 1.846160310404 | 9.45e-16
+even | 3 | 128 | 24 | fixed 1.225522125742 | 1.846160310423 | 1.28e-15
+even | 3 | 256 | 20 | 1.225522125747 | 1.846160310363 | 8.52e-16
+even | 3 | 256 | 20 | fixed 1.225522125742 | 1.846160310424 | 9.64e-16
+even | 3 | 512 | 16 | 1.225522125845 | 1.84616030914 | 3.79e-16
+even | 3 | 512 | 16 | fixed 1.225522125742 | 1.84616031043 | 6.38e-16
+even | 4 | 64 | 28 | 1.225522125822 | 1.846160309408 | 5.54e-16
+even | 4 | 64 | 28 | fixed 1.225522125742 | 1.846160310425 | 9.48e-16
+even | 4 | 128 | 24 | 1.225522126312 | 1.846160303025 | 3.8e-16
+even | 4 | 128 | 24 | fixed 1.225522125742 | 1.846160310488 | 4.84e-16
+even | 4 | 256 | 20 | 1.225522128062 | 1.84616027955 | 3.29e-16
+even | 4 | 256 | 20 | fixed 1.225522125742 | 1.846160310728 | 3.09e-16
+even | 5 | 64 | 28 | 1.225522061963 | 1.846161206769 | 3.03e-16
+even | 5 | 64 | 28 | fixed 1.225522125742 | 1.84616031308 | 3.4e-16
+even | 5 | 128 | 24 | 1.225526658731 | 1.846095095878 | 3.05e-16
+even | 5 | 128 | 24 | fixed 1.225522125742 | 1.846160145628 | 3.3e-16
+
+CONSENSUS (even n, 6 fits): b = 1.2255243925214 ± 2.3e-6  (b_theory = 1.225522125742, |b - b_theory| = 2.3e-6)
+                                     c = 1.8461277033028 ± 3.3e-5 ;  kappa = c - c1^2 = 0.91967751126736 ± 3.3e-5
+=== (d) identification of kappa against 1-D constants ===
+(pi^2/4) kappa = 2.2692133031968 ; pi^2 kappa = 9.0768532127872 ; kappa = 0.91967751126736 ; tolerance for a hit = 0.00033
+tier 1: (pi^2/4) kappa vs {1, L, L^2}, L = gamma + log(8/pi); rational coefficients (denominator <= 16, numerators <= 64)
+  tier1: relation [5, 3, -11, 1]  residual 0.00079  (kappa-coefficient 5)
+tier 2: {(pi^2/4) kappa, kappa, pi^2 kappa} vs {1, gamma, log 2, log pi}, same coefficient bounds
+  tier2 (pi^2/4)kappa: relation [0, -4, 5, -5, 4]  residual -0.000738  (kappa-coefficient 0)
+  tier2 kappa: relation [0, -1, -5, -1, 4]  residual -0.000306  (kappa-coefficient 0)
+  tier2 pi^2 kappa: relation [0, -4, 5, -5, 4]  residual -0.000738  (kappa-coefficient 0)
+tier 3: (pi^2/4) kappa vs the 10-element quadratic basis, integer coefficients <= 6 (hit only if it holds to >= 10 digits)
+  tier3: relation [0, 1, 0, 0, 1, -2, 0, 0, -2, 1, -1]  residual 0.000528  (kappa-coefficient 0)
+natural candidates for kappa (value, kappa - value):
+  c1^2                                            0.926450192035   kappa - value = -0.006773
+  (4/pi^2) L                                      0.612761062871   kappa - value = 0.3069
+  (4/pi^2)(L^2 - 1/4)                             0.825129008393   kappa - value = 0.09455
+  (4/pi^2)(L^2 + log 2 ... ) [L^2 only]           0.926450192035   kappa - value = -0.006773
+  c1^2 - (4/pi^2) log 2 / 8                       0.891334945649   kappa - value = 0.02834
+  (4/pi^2)*2                                      0.810569469139   kappa - value = 0.1091
+  (4/pi^2)(2 + gamma)                              1.04450616668   kappa - value = -0.1248
+  (2/pi) c1                                       0.612761062871   kappa - value = 0.3069
+  1 - (4/pi^2) log 2 ...                          0.929769507227   kappa - value = -0.01009
+  pi^2/12                                         0.822467033424   kappa - value = 0.09721
+  (4/pi^2)(gamma + log 8)                          1.07670261081   kappa - value = -0.157
+  (4/pi^2)(L^2 + 1/4)                              1.02777137568   kappa - value = -0.1081
+  (4/pi^2) (pi^2/4 - ... ) [=1]                              1.0   kappa - value = -0.08032
+
+elapsed 341 s

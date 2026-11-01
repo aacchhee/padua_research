@@ -1,5 +1,7 @@
 # PD-T?lattice-c0-codex-03 — Finite cardinality catalogue for potentially unisolvent single fibers
 
+Final ID: **PD-T083** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T. Aliases: C0 finite exact-count screen; small modulus catalogue.
 Split from: none. Split into: analytic density PD-T?lattice-c0-codex-01 and infinite diagonal counts PD-T?lattice-c0-codex-02 are separate statements, not parts of this finite computation.
 

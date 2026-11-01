@@ -1,0 +1,194 @@
+{
+  "candidate": "0ef90edc5b4d5639474cca7fa8d6d688e684e505",
+  "main": "9739a0c56b7a3976422ce60a8441bfbbfd6554df",
+  "previous_audit_delivery": "39c5ae616111e47798c06229eca6d366bbcd9583",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "changed_paths": [
+    "PROOF_STATUS.md",
+    "state/IDEAS.md",
+    "topics/programme-ideas-20261031/LOG.md",
+    "topics/programme-ideas-20261031/OPEN_TARGETS.md",
+    "topics/programme-ideas-20261031/checks/code/response-02/ritz_saturated_centre.out",
+    "topics/programme-ideas-20261031/checks/code/response-02/ritz_saturated_centre.py",
+    "topics/programme-ideas-20261031/checks/decisive-gen4-2.md",
+    "topics/programme-ideas-20261031/ideas/candidates.md",
+    "topics/programme-ideas-20261031/response-01.md",
+    "topics/programme-ideas-20261031/response-02.md",
+    "topics/programme-ideas-20261031/theory/programme-ideas-claude-01-finite-favard-pattern-pairs.md",
+    "topics/programme-ideas-20261031/theory/programme-ideas-claude-N03-joint-ritz-converse-refuted.md",
+    "topics/programme-ideas-20261031/theory/programme-ideas-claude-N05-fourier-basis-commutation-fails.md"
+  ],
+  "previous_code_and_audit_support_files_unchanged": 184,
+  "protected_files_unchanged": [
+    "AGENTS.md",
+    "agents/WORKFLOW.md",
+    "agents/codex/CODEX.md",
+    "agents/claude/CLAUDE_ROLES.md",
+    "ID_CROSSWALK.md",
+    "topics/programme-ideas-20261031/audit-01.md",
+    "topics/programme-ideas-20261031/audit-02.md"
+  ],
+  "developer_checker": {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-I",
+      "topics/programme-ideas-20261031/checks/code/response-02/ritz_saturated_centre.py"
+    ],
+    "result": {
+      "rank_V": 6,
+      "s_2(0)": "1",
+      "residual_x_zero": true,
+      "residual_y_zero": true
+    },
+    "matches_committed_output": true
+  },
+  "independent_cardinal": "-x**2 + x*y - y**2 + 1",
+  "independent_nodal_values": [
+    "1",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "independent_rank": 6,
+  "weighted_symmetry_similarity_check": true,
+  "statuses_unchanged": {
+    "PD-T?programme-ideas-claude-01": "PROVED",
+    "PD-T?programme-ideas-claude-02": "PROVED",
+    "PD-T?programme-ideas-claude-03": "PROVED",
+    "PD-T?programme-ideas-claude-04": "OPEN",
+    "PD-T?programme-ideas-claude-05": "OPEN",
+    "PD-T?programme-ideas-claude-06": "MEASURED",
+    "PD-N?programme-ideas-claude-01": "PROVED",
+    "PD-N?programme-ideas-claude-02": "MEASURED",
+    "PD-N?programme-ideas-claude-03": "PROVED",
+    "PD-N?programme-ideas-claude-04": "PROVED",
+    "PD-N?programme-ideas-claude-05": "MEASURED"
+  },
+  "source_identities": [
+    {
+      "path": "AGENTS.md",
+      "git_blob_sha": "8c94c718629649c3f5c89d05e5b674ae5ad3a99c",
+      "bytes": 3159,
+      "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60"
+    },
+    {
+      "path": "ID_CROSSWALK.md",
+      "git_blob_sha": "78118069953c38c22dc6aa2e60ccda6e67390cb3",
+      "bytes": 74882,
+      "sha256": "03555775b2b8706669d73cd77ea7cf685e82877d6bbbc7bd31c8e51e30553e31"
+    },
+    {
+      "path": "PROOF_STATUS.md",
+      "git_blob_sha": "4177c282b15516e45e129a53817da05fe618a962",
+      "bytes": 36540,
+      "sha256": "f93cbadffeb52948b420673e1cc176aa6a0a48c60db6bf721f543600325ccd0f"
+    },
+    {
+      "path": "agents/WORKFLOW.md",
+      "git_blob_sha": "38a6fc1d630aa1a6716c7e7c808dd21a674dc27b",
+      "bytes": 19609,
+      "sha256": "64253ae526179be3ce8303987e3f38b9d7a43f825d1a6e310c99c022ba728554"
+    },
+    {
+      "path": "agents/claude/CLAUDE_ROLES.md",
+      "git_blob_sha": "c9538b5daf0d90e6b7e0d0f29eb34363a9ca95b5",
+      "bytes": 5578,
+      "sha256": "7d7fd30a5f6b0fa421e957e8b8959d1a7e0cf2f1c643d5e2488eb6d4e038232d"
+    },
+    {
+      "path": "agents/codex/CODEX.md",
+      "git_blob_sha": "16a4ecfea89acd5b1d9cd09c9213094bce144caf",
+      "bytes": 4969,
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b"
+    },
+    {
+      "path": "state/IDEAS.md",
+      "git_blob_sha": "3bc9f45599e3bd3b29ef08dd8673793732b79055",
+      "bytes": 64529,
+      "sha256": "900c50f66cb2b6ab48cf2f40490c2aaed4d093cc8f1ef2f2eba412dd4fddcbef"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/LOG.md",
+      "git_blob_sha": "3b6f100605e903193e17f774888bc6e15358bcb1",
+      "bytes": 27035,
+      "sha256": "994aa0a99dcf6d9a4d52a91621687e45744ca6898f35e1fd41451fc0470e5b0d"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/OPEN_TARGETS.md",
+      "git_blob_sha": "afcbce9d542dd137b7a5ff4d035ef2a9c3a8deed",
+      "bytes": 16523,
+      "sha256": "7592309df263e136abbb6cf8491e059d15ac5f9364359520cda9cdcd5eecab79"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-01.md",
+      "git_blob_sha": "a14f9abda25112ba5757ab684496d123d534388c",
+      "bytes": 20419,
+      "sha256": "d577b69eec5d84626de84628bbfcb20f127d9daee4f29465f97d0ee442a7f35e"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-02.md",
+      "git_blob_sha": "d6d9de504749a1ff5d66b2173e35d0357aa7d3f1",
+      "bytes": 18821,
+      "sha256": "bde7f59ec66d1467541835b7a08d869ecd720ffa81a2e5a99e7f6ba258ffd60d"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/response-02/ritz_saturated_centre.out",
+      "git_blob_sha": "77491b603f38a04ff678e3b0750dfc8337bb60f2",
+      "bytes": 85,
+      "sha256": "9bfc5e3caf193f9fadf01d3d5b1dce9823b3d2bb4bf67a35a6a530ab78f33ede"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/response-02/ritz_saturated_centre.py",
+      "git_blob_sha": "497c26203d063191a5dc0a1cde8d7dede1d397a2",
+      "bytes": 1099,
+      "sha256": "7d9d76e6ccc3417577f324186d7a032e4a1682f8bd41c51a53f3986346e43eee"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/decisive-gen4-2.md",
+      "git_blob_sha": "89bf04c1f8415647f9ae103d4e532348a9bc0ff5",
+      "bytes": 29095,
+      "sha256": "c9076921c47dbc7ce44f6694574d6490392277bae9c42ec41498cee006727b8f"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/ideas/candidates.md",
+      "git_blob_sha": "00bee144e38d13540a4936c3afb99eadd6012b43",
+      "bytes": 122936,
+      "sha256": "eca1c969cf845e4f0180066ec4c7264e7e7acea44c015132920a3cf31caa7bf7"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/response-01.md",
+      "git_blob_sha": "446936124a1d81afc71f6d680eeaedcfdd6bd783",
+      "bytes": 22906,
+      "sha256": "808d92206f19995b5bc503e5c730bcba5eca1ed3a360ba4296588fb7cd6b3662"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/response-02.md",
+      "git_blob_sha": "f0b56384cca330fc6dad8c676da833801624abc4",
+      "bytes": 6418,
+      "sha256": "7da78e0fc01e408edcfcb2b2bf9cf4ba89af4efb0064fa86570da5306322a473"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-01-finite-favard-pattern-pairs.md",
+      "git_blob_sha": "0cb3aea977d94b2c4679a14719dcc2b832d2700b",
+      "bytes": 11537,
+      "sha256": "7d69a3b93c90557a206734c882eed86cc42ab80d1f93430a6d3238b3e3f43479"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N03-joint-ritz-converse-refuted.md",
+      "git_blob_sha": "9f0f7d5229c63053d20378a9789e2ace7d7858e5",
+      "bytes": 5643,
+      "sha256": "500179a0cb18edd304dc0beb3682662e7134eae35cd03a65286b98a1f00dce5a"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N05-fourier-basis-commutation-fails.md",
+      "git_blob_sha": "931c1833820b9889bbf86890fd5c6f36ae8c987d",
+      "bytes": 3892,
+      "sha256": "59ef3e48bc689d9345bdaec5d2af3b99f6a2d264a2fbf4ade519967004e4fb92"
+    }
+  ],
+  "result": "PASS; open formulations are reviewed as targets, not proved results"
+}
