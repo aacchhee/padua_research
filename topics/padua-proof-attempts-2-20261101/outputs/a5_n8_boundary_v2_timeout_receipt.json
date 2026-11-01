@@ -1,0 +1,91 @@
+{
+  "actual_exit_code": 124,
+  "collected_utc": "2026-11-01T14:59:16.950458+00:00",
+  "command": "PYTHONPATH=/tmp/padua2-deps timeout 2400 python -B topics/padua-proof-attempts-2-20261101/code/a5_n8_boundary.py --edge-limit 4 --output /tmp/a5-n8-boundary-final-v2.json",
+  "completed_edge_log_rows": [
+    {
+      "Enormdegree": 125,
+      "edge": [
+        0,
+        -1
+      ],
+      "edgecount": 4,
+      "patterns": 107,
+      "seconds": 565.9469175338745,
+      "stats": {
+        "derivative": 5750,
+        "minimum": 331,
+        "outside": 1072,
+        "root": 4,
+        "sign": 312
+      },
+      "unresolved": 0
+    },
+    {
+      "Enormdegree": 125,
+      "edge": [
+        0,
+        1
+      ],
+      "edgecount": 8,
+      "patterns": 107,
+      "seconds": 654.0440964698792,
+      "stats": {
+        "derivative": 11500,
+        "minimum": 662,
+        "outside": 2144,
+        "root": 8,
+        "sign": 624
+      },
+      "unresolved": 0
+    },
+    {
+      "Enormdegree": 171,
+      "edge": [
+        1,
+        -1
+      ],
+      "edgecount": 12,
+      "patterns": 155,
+      "seconds": 1544.8705673217773,
+      "stats": {
+        "derivative": 20064,
+        "minimum": 1104,
+        "outside": 3468,
+        "root": 12,
+        "sign": 1078
+      },
+      "unresolved": 0
+    },
+    {
+      "Enormdegree": 131,
+      "edge": [
+        1,
+        1
+      ],
+      "edgecount": 16,
+      "patterns": 123,
+      "seconds": 2160.286135196686,
+      "stats": {
+        "derivative": 27142,
+        "minimum": 1472,
+        "outside": 4454,
+        "root": 16,
+        "sign": 1404
+      },
+      "unresolved": 0
+    }
+  ],
+  "count_certified": false,
+  "format": "a5-n8-boundary-v2-timeout-receipt-v1",
+  "global_certified": false,
+  "outer_timeout_seconds": 2400,
+  "output_exists": false,
+  "output_expected": "/tmp/a5-n8-boundary-final-v2.json",
+  "scope": "operational timeout: all edge-stage rows printed but no final corner/composite JSON; printed counts are not accepted evidence",
+  "source_sha256_after": "6088db34cce2952332bd22e560c8b02e90446236f994dc2bac79b33717e769cb",
+  "source_unchanged": true,
+  "stderr_bytes": 834,
+  "stderr_path": "/tmp/a5-n8-boundary-final-v2.progress",
+  "stderr_sha256": "9150f5503ea0cabed6aef6caa8592bf354530933be11343acb3ceb607c1c94b5"
+}

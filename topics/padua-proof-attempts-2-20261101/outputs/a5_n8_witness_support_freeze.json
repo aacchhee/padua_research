@@ -1,0 +1,62 @@
+{
+  "files": [
+    {
+      "bytes": 7308,
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-64-degree-eight-interior-lower-bound.md",
+      "sha256": "41729a3c99d8949ebc7af63c0f86291e98726dda10fe762c98c2cbf35532b2e2"
+    },
+    {
+      "bytes": 4106,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_witness.py",
+      "sha256": "bc8ed34a355d585b0cd465d1c07deea76174f399dc27b6174f5eaa319a035b60"
+    },
+    {
+      "bytes": 69163,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_interior_witnesses.json",
+      "sha256": "ca5648106a89982995232c5555e2bfab62e0a395a743d76aa7e07835e74c30d1"
+    },
+    {
+      "bytes": 69175,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_interior_witnesses_independent.json",
+      "sha256": "af8d9efe8478b4b7fff46643ad431a63b9782992e307160c4a105ba59b51fa96"
+    },
+    {
+      "bytes": 1009,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_witness_comparison.json",
+      "sha256": "b7eb7664e504ecaa78ce755d3784529f26d266170f15d17f7d2f4f6b64eac814"
+    },
+    {
+      "bytes": 1837,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_boundary_v1_timeout_receipt.json",
+      "sha256": "1d4b556e4d06f6933cdd937ab680fec75e683ea42afaaa4090f98fa927b0ae7d"
+    },
+    {
+      "bytes": 986,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_boundary_v2_prerun.json",
+      "sha256": "c8d8ceb8941d037214b7e60716105b3a93172e86dcbe166959b783c27647795b"
+    },
+    {
+      "bytes": 2296,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_boundary_v2_timeout_receipt.json",
+      "sha256": "6421b304cdbd20abeb34aa9f9b0de1c147f0ac127a1b725a3cefa7ac99bbe556"
+    },
+    {
+      "bytes": 1054,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_full_interior_comparison.json",
+      "sha256": "34268634788fc9d2ffebbddc8d69a34f799ab112f8efb50664441fbc5f078a22"
+    },
+    {
+      "bytes": 58360,
+      "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n8.md",
+      "sha256": "aae06d8e2d5f918a71fee47d42d0c0cff5f839dd466091c77c08f6b7b0a24e86"
+    },
+    {
+      "bytes": 11875,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_v3_run_record.json",
+      "sha256": "7a90910f21f7b485d027b83d5f3ee1b252078b5bf22e44b63f1829c549f27f4c"
+    }
+  ],
+  "format": "a5-n8-witness-support-freeze-v1",
+  "frozen_utc": "2026-11-01T14:59:16.950458+00:00",
+  "scope": "small standalone lower-bound evidence64; exact61/global62 OPEN; no full interior/archive staged"
+}

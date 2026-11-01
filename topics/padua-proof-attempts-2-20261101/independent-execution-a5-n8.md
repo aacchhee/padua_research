@@ -209,3 +209,78 @@ PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps timeout 900 python -B topi
 No fixture-only or boundary flag is used. The proposer must check every actual root/axis hull/reference and emits ordinary witnesses for the unchanged final checker. Own boundary is still a separate live computation. No count/global acceptance is claimed before its completion, literal join/value/repack and the required full matching-pair controls.
 
 The conditionally authorized full f770 ordinary proposer was ACTUALLY launched in session64025 after all preflight conditions and23source pins matched. Its live stdout is `outputs/a5_independent_n8_proposal_v1.jsonl`; no successful proposal completion is inferred from launch. Boundary session56173 remains separate/live.
+
+## Completed ordinary full-interior proposal; boundary still running
+
+Full f770 proposer session64025 ACTUALLY exited0. Output `/tmp/a5-independent-n8-interior-reflected-v1.json.gz`:637165bytes,SHA256 `2992e3fad6df217e76f0c345c8b38109d233358c94d98715b90545105e49feb9`;153520total tree leaves,44root records,zero pending/unresolved and interior_complete=true, but complete=false until the separate boundary is joined and the unchanged verifier accepts. All23 source pins matched after exit. The native proposer checked4same-mask actual axis cases,261original/reflected reference pairs and1enlarged target hull. It emitted every ordinary record for full independent replay; this is not an independent count acceptance. Complete metadata/summary are `outputs/a5_independent_n8_proposal_record.json`. Own boundary progress has completed3edges with zero unresolved,12edge candidates; fourth edge and corners remain pending.
+
+## Actual boundary-v1 timeout and authorized fresh-v2 retry
+
+Own boundary-v1 session56173 ACTUALLY exited124 at its registered1800s outer timeout. No final JSON exists. Its stderr retained three completed-edge progress messages (12candidates/zero unresolved in that printed scope); these are NOT a boundary artifact or certified coverage and are not reused. Stderr `/tmp/a5-independent-n8-boundary-final-v1.log` is624bytes,SHA256 `dffefb50f4a6e4047ff4a7dc9b94cd39cf9b66a52a0c18a81468cda48c2651f0`.
+
+The parent explicitly authorizes a FRESH source6088 all-four-edge retry after this actual outcome. All23 recorded source pins match before launch; original mathematical sources remain unchanged. StartUTC 2026-11-01T14:17:54.665661+00:00; external cap2400seconds, the minimum of2400and time remaining to15:19UTC. Kill criteria: any timeout, missing final raw, unresolved case or incomplete edge/corner set leaves count/global OPEN. No printed data or other executor's data is inherited. Exact command launched after this preflight:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps timeout 2400 python -B topics/padua-proof-attempts-2-20261101/code/a5_n8_boundary.py --edge-limit 4 --output /tmp/a5-independent-n8-boundary-final-v2.json > topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_boundary_final_v2.jsonl 2>/tmp/a5-independent-n8-boundary-final-v2.log
+```
+
+No join or count/global acceptance is claimed. The separately approved staged verifier driver still awaits its exact frozen source/commands; no full verification has been started here.
+
+The fresh own boundary-v2 command was ACTUALLY launched in session44378 after its guards/start/criteria were recorded. No original printed edge data was reused. Its completion and all final closed-square verification remain pending.
+
+## Original-verifier staged-driver structural controls
+
+Read the full new driver and controls before use: driver `82385dd392513c476e83ed7c5a59c63e602e77d50279fb51a3976ac5857021ef`, controls `cff61e955854b4f07fb652593acefc5093a0b0c84177bad885bdc7cdb58dda8a`. No mathematical finding within this scheduling scope: unchanged original run(allow_partial=True) verifies the whole interior; its in-process Verifier state is retained, never loaded from an unverified success receipt. The joined interior must be typed-JSON-identical except explicit join metadata/closed-summary fields. The original run tail AST is extracted under a fixed source/AST hash, executes full boundary/summary checks, then unchanged global_values. READY binds the exact raw pair and original interior. Deadline/source guards remain active. The driver guards but does NOT execute the old full-controls CLI; do not describe a driver execution as an old-controls execution.
+
+All25 old/new source pins matched before the bounded STRUCTURAL controls below. No real verifier driver or search is launched by this test; its scheduling stub is explicitly nonmathematical.
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps python -B topics/padua-proof-attempts-2-20261101/code/a5_checker_n8_staged_controls.py --output topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_staged_controls.json
+```
+
+The staged structural-controls command ACTUALLY exited0: all43cases passed (4positive/39negative). Output `outputs/a5_independent_n8_staged_controls.json`:6683bytes,SHA256 `e0e512642f7e37f019d0eba8400c670d63da24114b504a25872c55c55564ed43`. All25 source pins matched AFTER exit. These are structural/identity/AST/READY tests only; no mathematical N8 acceptance or real staged execution is claimed.
+
+## Actual released staged verification and separate local controls
+
+The parent explicitly released this run after the ACTUAL43structural-control exit0 and unchanged25source guards. Before launch all25pins match and own full-interior rawSHA is2992e3fad6df217e76f0c345c8b38109d233358c94d98715b90545105e49feb9. StartUTC 2026-11-01T14:26:59.831926+00:00; absolute deadline15:19UTC is enforced inside the frozen driver. READY does not yet exist and must only be atomically published after actual complete own-boundary/literal-join/global/repack, with the prescribed exact6keys/raw hashes. No earlier count/global acceptance is implied.
+
+Exact staged command and separate OLD local-controls command, launched in parallel:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps python -B topics/padua-proof-attempts-2-20261101/code/a5_checker_n8_staged.py --interior /tmp/a5-independent-n8-interior-reflected-v1.json.gz --interior-sha256 2992e3fad6df217e76f0c345c8b38109d233358c94d98715b90545105e49feb9 --ready-file /workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_staged_ready.json --interior-output /workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_staged_interior.json --output /workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_staged_full.json --deadline-utc 2026-11-01T15:19:00Z > topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_staged_driver.jsonl 2>/tmp/a5-independent-n8-staged-driver.log
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps python -B topics/padua-proof-attempts-2-20261101/code/a5_checker_n8_controls.py /tmp/a5-independent-n8-interior-reflected-v1.json.gz --spatial-certificate /tmp/a5-independent-n8-interior-reflected-v1.json.gz --output topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_final_local-controls.json > /tmp/a5-independent-n8-final-local-controls.log
+```
+
+The second command has NOglobal-file and therefore cannot assert the old full count/global positive. It independently reruns the old local controls. Only the staged original mathematical predicates can later accept the complete joined matching pair. No full result has yet been observed.
+
+Actual releases launched the own staged verifier in session90588 and separate old local controls in session37056. Preflight startUTC2026-11-01T14:26:59.831926+00:00 is in `outputs/a5_independent_n8_staged_start.json`. A read-only1second progress observer records arrival upper bounds for1000/5000verified leaves; these timings are diagnostics, not mathematical proof dependencies. READY remains absent.
+
+The separate OLD local-controls command in session37056 ACTUALLY exited0: all37cases passed (7positive/30negative), with NOglobal-file and NOcomplete_count_and_global_value_certificate marker. Output `outputs/a5_independent_n8_final_local-controls.json`:6498bytes,SHA256 `3065871185bed11ae15651b25ac286ded17c2f3550f7057ce2514aefebf7c997`. All25source pins still match after exit. The progress observer session7155 also exited0 after observing1000leaves by134.085s and5000by257.134s; these are polling upper bounds only. Full staged verification remains in progress and unaccepted.
+
+## Preparation-only bit-identical evaluator cache controls
+
+Read the full new entry `996c8f4dede1a3d8efed79b982dc53a7c12136c7c9e6e7e3872c67f8007168e9` and controls `e0baeaf38c69261cd20ede3c0d5df00ad78311ee4af5f844ee6f2f0ba6859ad4`. The cache memoizes the SAME original Interval.power and endpoint product for each exact4-coordinate/precision key, keeps a bounded512immutable9×9table, and retains the ordered PER-TERM integer products/floor/ceiling sums. It changes no bound, mask or acceptance predicate. Actual new entry/base/main/control identities and runtime replacement are explicitly tagged in every later receipt. All27source pins match before controls. Old staged session90588 remains untouched until an actual successful control result and the parent's conditional swap release.
+
+Exact preparation-only command:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps python -B topics/padua-proof-attempts-2-20261101/code/a5_checker_n8_staged_cached_controls.py --interior /tmp/a5-independent-n8-interior-reflected-v1.json.gz --interior-sha256 2992e3fad6df217e76f0c345c8b38109d233358c94d98715b90545105e49feb9 --output topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_cached_controls.json
+```
+
+This compares exact old/new endpoints and100actual supplied universal leaves; it is no full count acceptance.
+
+The new cache-controls command ACTUALLY exited0 in session29769:4926old/new endpoint pairs BIT-IDENTICAL,44actualroot boxes/4axis hulls covered, immutable512entry cache and wrong-precision rejection passed,100actual leaves benchmarked. Actual old4.0442470609996235s/cached1.2975575999989815s, gain3.1168150539157553×. Output `outputs/a5_independent_n8_cached_controls.json`:1552bytes,SHA256 `3857d3232d61fca9b45cdc8816875b3817478eac0c41274918f932d5cc2f8dc1`. All27source pins matched AFTER exit. This is not full count acceptance. Parent's conditional swap release now authorizes terminating ONLY own old staged PythonPID59848 and preserving its non-success receipt/logs, then a fresh cached driver from scratch with fresh receipt paths, SAME own interior/READY/deadline. No old verified state is borrowed.
+
+## Authorized operational swap to fresh bit-identical cached execution
+
+Only own old staged PID59848 was sent SIGTERM. Its session90588 ACTUALLY exited1 and saved `outputs/a5_independent_n8_staged_full.json`:1368bytes,SHA256 `59151306200db8be8e665feb8f23694d2e0c2728f1f4972d491cc1e257b97733`, with stage=failed,accepted=false,count_certified=false,error=staged execution interrupted or deadline reached. Its old progress/logs/receipt are retained; no old success or state reuse is claimed.
+
+After ACTUAL4926endpoint/100leaf-control PASS and the parent's conditional swap release, all27source pins match again. New execution startsUTC 2026-11-01T14:48:10.272227+00:00 with fresh Verifier/cache state from the SAME immutable own full-interior raw. No checkpoint state is borrowed. The actual entry is996, which explicitly replaces evaluate by the proven bit-identical cached evaluator; it records entry996,base823,maina9,oldcontrol7andcache-controlE0 identities/runtime replacement in every receipt. SAME READY path and15:19UTCdeadline, fresh output paths. Exact authorized command, launched after this preflight:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps python -B topics/padua-proof-attempts-2-20261101/code/a5_checker_n8_staged_cached.py --interior /tmp/a5-independent-n8-interior-reflected-v1.json.gz --interior-sha256 2992e3fad6df217e76f0c345c8b38109d233358c94d98715b90545105e49feb9 --ready-file /workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_staged_ready.json --interior-output /workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_cached_interior.json --output /workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_cached_full.json --deadline-utc 2026-11-01T15:19:00Z > topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_cached_driver.jsonl 2>/tmp/a5-independent-n8-cached-driver.log
+```
+
+Old local37-control PASS remains separately recorded; the parent explicitly requires no redundant repeat because every evaluator endpoint is bit-identical. Count/global remain OPEN until both actual complete staged passes.
+
+The fresh cached entry was ACTUALLY launched in session29749 at the recorded14:48:10.272227UTC start, from scratch with no old state reuse. Its active JSONL and future cached-interior/full receipts are excluded from the parent's imminent checkpoint. Boundary-v2 session44378 continues; `outputs/a5_independent_n8_boundary_v1_record.json` preserves the completed first-boundary timeout/progress diagnostics without promoting or reusing them. No further optimization is authorized or performed.
