@@ -89,5 +89,5 @@
 - Executed: every handoff command (E1 check and exact degree-12 runs, verify, both scalar reproductions, E5, and E6 suite/grids12/smooth). Decisive rationals are exactly equal; E5 and E6 are identical. Independent recomputations are as listed in audit-01.
 - Cold storage: audit outputs were delivered to `C:\Users\andreyac\Downloads\padua\cold_storage\padua-lanczos-drift-20261101\audit-01\` (audit-01-outputs.zip, 269978 bytes, sha256 `29c177218d0d08dcfb1299c1cdc2cc333c40f6da3208abd6f12f1e089150f9ff`; manifest.json sha256 `8d8d3306…`). Both were read back with matching hashes. Codex's own ZIP and off-repo artifacts are still not delivered or verified (audit P-F1).
 - Topic working track: written to `C:\Users\andreyac\Downloads\padua\results\padua-lanczos-drift-20261101.md` (development summary plus audit-01 outcome). Shared RESULTS.md untouched.
-- PR #15 AUDIT section: not updated by this session, which has no GitHub write credentials. The text to paste is at the end of audit-01.md.
+- PR #15 AUDIT section: once AC granted repository access, it was updated through the REST API after the push of `386e15d`; the PR is still a draft.
 - Next handoff: [03-response.md](handoffs/03-response.md), Codex response-01 to audit-01.
