@@ -1,0 +1,13 @@
+setting: n=1, V=Pi_3, 10 nodes, |det Vandermonde| = 576 ; m = 1
+A  M_1(L_mu+E) leading minors (basis 1,x,y): [Fraction(998001, 1000000), Fraction(110778111, 100000000), Fraction(36889110963, 40000000000)]
+A  r(0) = 1/1000 > (1-theta)eps = 1999/2000000
+A  (b1) unnormalised dist(L_mu+E, C(K_0)) = 999/1000000 <= theta eps = 1999/2000000 : consistent with (b1)
+A  mass-normalised dist(Lhat, C(K_0)) = 1/999 > 1999/2000000 : old normalised c=1 threshold FAILS
+B  Lagrange q at (1,1): ||q||_* = 1; gradient bound G on [-1,4]^2 = 120
+B  explicit radius delta' = 1/100000000 : for every delta in [0, delta'], dist(Lhat, C(K_delta)) > theta eps
+C  s_E = m/(m+E(1)) = 1000000/998001 ; dist(Lhat) = s_E dist(L_mu+E) exactly; (b3) bound theta eps m/(m - eps||1||_*) holds
+D(i)  r(0)^2 = 1/1000000  r_0(0)^2 = 1/900000 : mass-preserving ball of radius r_0 inside C(K_0) (boundary attained, 500 random H_0 directions exact-checked); r_0 is not a threshold for general E
+D(ii) r_0 = (1-theta)||E2||: fixed-mass dist^2 = 1/900000 <= (theta||E2||)^2 = 1/900000
+D(ii) r_0 < (1-theta)||E3||: fixed-mass dist^2 = 289/250000000 > (theta||E3||)^2 = 10201/9000000000 ; M_1 minors [Fraction(1, 1), Fraction(50051, 45000), Fraction(2505102601, 2700000000)]
+D(ii) same E3 with FREE-mass approximants: dist^2 = 2601/2500000000 <= (theta||E3||)^2 -- mixing conventions loses the exact threshold
+ALL CHECKS PASS: A,B,C,D

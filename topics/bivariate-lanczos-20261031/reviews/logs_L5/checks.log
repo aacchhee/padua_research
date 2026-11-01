@@ -1,0 +1,24 @@
+padua n=4 N=15 sum w=1.0000000000000000 max offdiag Gram 7.5e-20 diag values [np.float64(1.0), np.float64(2.0), np.float64(4.0)] (x1/4)
+padua n=7 N=36 sum w=1.0000000000000000 max offdiag Gram 2.6e-19 diag values [np.float64(1.0), np.float64(2.0), np.float64(4.0)] (x1/4)
+padua n=10 N=66 sum w=1.0000000000000000 max offdiag Gram 2.0e-19 diag values [np.float64(1.0), np.float64(2.0), np.float64(4.0)] (x1/4)
+padua n=20 N=231 sum w=1.0000000000000000 max offdiag Gram 6.3e-19 diag values [np.float64(1.0), np.float64(2.0), np.float64(4.0)] (x1/4)
+n=3 ld=False scheme   relerr 8.36e-16  |w - |v|e1| 8.3e-17  backward ||QtXQ - X||+.. 1.4e-15  orth 6.7e-16  rot [44.  1.  0.]
+n=3 ld=False largest  relerr 7.41e-16  |w - |v|e1| 8.3e-17  backward ||QtXQ - X||+.. 1.5e-15  orth 6.7e-16  rot [44.  1.  2.]
+n=3 ld=True scheme   relerr 3.28e-17  |w - |v|e1| 3.0e-20  backward ||QtXQ - X||+.. 4.4e-16  orth 2.2e-16  rot [45.  0.  0.]
+n=3 ld=True largest  relerr 3.28e-17  |w - |v|e1| 3.0e-20  backward ||QtXQ - X||+.. 4.4e-16  orth 2.2e-16  rot [45.  0.  1.]
+n=6 ld=False scheme   relerr 1.92e-15  |w - |v|e1| 2.3e-16  backward ||QtXQ - X||+.. 3.9e-15  orth 7.8e-16  rot [378.   0.   0.]
+n=6 ld=False largest  relerr 1.89e-15  |w - |v|e1| 2.3e-16  backward ||QtXQ - X||+.. 3.9e-15  orth 1.1e-15  rot [378.   0.  37.]
+n=6 ld=True scheme   relerr 5.09e-17  |w - |v|e1| 1.1e-16  backward ||QtXQ - X||+.. 1.1e-15  orth 3.3e-16  rot [375.   3.   0.]
+n=6 ld=True largest  relerr 5.45e-17  |w - |v|e1| 1.1e-16  backward ||QtXQ - X||+.. 1.1e-15  orth 3.3e-16  rot [375.   3.  38.]
+n=10 ld=False scheme   relerr 4.38e-15  |w - |v|e1| 4.5e-16  backward ||QtXQ - X||+.. 8.8e-15  orth 1.1e-15  rot [2133.   12.    0.]
+n=10 ld=False largest  relerr 3.95e-15  |w - |v|e1| 4.5e-16  backward ||QtXQ - X||+.. 8.7e-15  orth 1.3e-15  rot [2135.   10.  242.]
+n=10 ld=True scheme   relerr 4.44e-17  |w - |v|e1| 4.7e-20  backward ||QtXQ - X||+.. 2.3e-15  orth 4.4e-16  rot [2141.    4.    0.]
+n=10 ld=True largest  relerr 4.73e-17  |w - |v|e1| 4.7e-20  backward ||QtXQ - X||+.. 2.3e-15  orth 4.4e-16  rot [2142.    3.  249.]
+hl: relerr 7.09e-16
+cgs2: relerr 5.34e-16
+hh: relerr 7.75e-16
+n=6 gepp: lo<=sigma<=up holds: True  min sigma 1.80e-01 min lo 7.00e-03 min up 2.18e-01 growth 27.8 resid 1.0e-15
+n=6 rand: lo<=sigma<=up holds: True  min sigma 1.87e-03 min lo 1.80e-05 min up 3.07e-02 growth 893.2 resid 2.1e-14
+n=10 gepp: lo<=sigma<=up holds: True  min sigma 9.53e-02 min lo 1.74e-03 min up 1.35e-01 growth 97.8 resid 1.8e-15
+n=10 rand: lo<=sigma<=up holds: True  min sigma 3.77e-05 min lo 1.97e-07 min up 1.62e-02 growth 43883.0 resid 1.2e-12
+n=6 given: #prefix sigma<1e-11: 22 of 28

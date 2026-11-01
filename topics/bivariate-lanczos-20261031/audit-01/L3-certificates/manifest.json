@@ -1,0 +1,191 @@
+{
+  "recorded_utc": "2026-11-01T06:38:40.612450+00:00",
+  "candidate_sha": "5ccfac223f466a9105450365d8c6c3781ff7d922",
+  "rules_read_head_sha": "3a9063b84d14ca0a5998378371e27643fde50a29",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "sympy": "1.14.0",
+    "numpy": "2.3.5",
+    "mpmath": "1.3.0"
+  },
+  "source_files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 3159,
+      "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60"
+    },
+    {
+      "path": "agents/WORKFLOW.md",
+      "bytes": 18116,
+      "sha256": "b1c1c14c83e02bf38283159f81ec278ae336ab56c95d0c026b9ada3314d1ffaa"
+    },
+    {
+      "path": "agents/codex/CODEX.md",
+      "bytes": 4969,
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L3/exact_certificates.py",
+      "bytes": 12486,
+      "sha256": "752188b6f537f38b7dfba2fb4f5cf37cf39661b7fbc4fc924c3968347fcee6c5"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/exact_certificates.log",
+      "bytes": 3963,
+      "sha256": "287e8dd0bdaa60d93d728045fcd47c5c75832813657f4849081fe4b1e0629e8b"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L3/indep_exact_check.py",
+      "bytes": 15054,
+      "sha256": "989ed4e1353559cf30542d62b2583e7c461edf54636c7bb268a59d7be8dcba53"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L3/unisolvence_check.py",
+      "bytes": 758,
+      "sha256": "6b31e106a519eda30f0b6218a73c3033d063c642867eaa1a103e23f378fc7d4d"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L3b/rigorous.py",
+      "bytes": 3965,
+      "sha256": "de764cc6b955aa7e68bf6838f5c4e715bfbe1d8a5cf384879ecf3a321ae2085a"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L3b/padua_turan_check.py",
+      "bytes": 15491,
+      "sha256": "c1896577dcf9683b75e1ffa6ea481f1c498107ce482df97381e8462c0fe108ff"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L3b/padua_delta0.py",
+      "bytes": 4817,
+      "sha256": "f096ea84d13475b6389628fca7880132e391ad5f6a31f0a393e6e93486ec215b"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L3b/turan_symbolic.py",
+      "bytes": 4605,
+      "sha256": "495ae2f488daf835d9f24f18aabcd7671dd5c01dc743b83d5adac200db89fd5d"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L3b/kappa_family_n3.py",
+      "bytes": 1400,
+      "sha256": "30826747a3085c9965aed90009368333f2116e710e5180581c8cfb3f3d1e4aa1"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-301-truncated-favard-sections.md",
+      "bytes": 10561,
+      "sha256": "c0f84c2dab322e8f5c61a10bf8a0df45c291781f623bc0238f58f6366e52af2d"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-302-backward-reduction-moment-cone.md",
+      "bytes": 8347,
+      "sha256": "b2ba05315a0c3f5afab9cae52fa422f0163cb292a5dc7d2abbb63766e0b7f6cd"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-303-moment-cone-rate-theorem.md",
+      "bytes": 9595,
+      "sha256": "8207b3b87625bb692aa9da2da0efc0a14cee5cd1fe3ef02444cf798b28768a5a"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-309-square-case-quadratic-generator-form.md",
+      "bytes": 7170,
+      "sha256": "373d7d198a7d02d2ea119bc1d09080c53e085a1f88804dbb093ce5bcb4360696"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-311-equispaced-certificate-margins.md",
+      "bytes": 2815,
+      "sha256": "0eeeea78604fbf201cc40c33bac1d0011b76e1e5edf9e96afd3c77c0e5dbcd47"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-312-padua-interior-turan-lemma.md",
+      "bytes": 3825,
+      "sha256": "80f59ddd11542339832392bd331ae0c5ec57811ae337e2b12303a81dcfdc394d"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-313-padua-turan-certificate-all-n.md",
+      "bytes": 7036,
+      "sha256": "730b06228c9eff676f1d462a29a4b39de0169b5fb3790196d4e42b461b51842e"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N301-padua-n3-exact-backward-obstruction.md",
+      "bytes": 7549,
+      "sha256": "50e455fcdcf88601d68537fe95da4da8666fcb00200692fa3053f52334509a21"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N303-padua-all-n-exact-backward-obstruction.md",
+      "bytes": 4400,
+      "sha256": "ed0e9a9d9dbfb5570427f46717481b4e9c40f68481d589e56a7415fe2bedbbab"
+    }
+  ],
+  "audit_checker_files": [
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates/independent_certificate_check.py",
+      "bytes": 6704,
+      "sha256": "53050e4d0e4e2978d8b9fd4b81676cb213c3344170ffde1441a39de93c068626"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates/record_evidence.py",
+      "bytes": 4022,
+      "sha256": "65e27f347dd6697ade4c7f9ea9dc0fad0c7e9d5d8ee4717fc0ec305705c9022a"
+    }
+  ],
+  "executed_runs": [
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates/independent_certificate_check.log",
+      "bytes": 1645,
+      "sha256": "b61807769d4d74e0ff0708accc8e0121dabb177f06c216742fea7419211735b9",
+      "cwd": "/workspace/padua_research",
+      "command": "python3 -I -B topics/bivariate-lanczos-20261031/audit-01/L3-certificates/independent_certificate_check.py topics/bivariate-lanczos-20261031/directions/L3/logs/exact_certificates.log > topics/bivariate-lanczos-20261031/audit-01/L3-certificates/independent_certificate_check.log",
+      "exit_code": 0
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates/rerun_n3_exact.log",
+      "bytes": 3259,
+      "sha256": "2c2aded478ad891181e9a35272974ae0ea0099d0318941501e97fcf09d9d61d6",
+      "cwd": "/workspace/padua_research",
+      "command": "python3 -I -B tracks/bivariate-lanczos/code/review_L3/indep_exact_check.py topics/bivariate-lanczos-20261031/directions/L3/logs/exact_certificates.log > topics/bivariate-lanczos-20261031/audit-01/L3-certificates/rerun_n3_exact.log",
+      "exit_code": 0
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates/rerun_turan.log",
+      "bytes": 8082,
+      "sha256": "e4086821e7d944e963a981e98244278861cd07ae011e38c321119f503fdee08d",
+      "cwd": "/workspace/padua_research",
+      "command": "python3 -I -B tracks/bivariate-lanczos/code/review_L3b/padua_turan_check.py 3 16 > topics/bivariate-lanczos-20261031/audit-01/L3-certificates/rerun_turan.log",
+      "exit_code": 0
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates/rerun_delta0.log",
+      "bytes": 2125,
+      "sha256": "4dea16e4b48d6d2eaf8c0e689db28843c8276c5b88ee2ba30ede9704e5702282",
+      "cwd": "/workspace/padua_research",
+      "command": "python3 -I -B tracks/bivariate-lanczos/code/review_L3b/padua_delta0.py 4 12 > topics/bivariate-lanczos-20261031/audit-01/L3-certificates/rerun_delta0.log",
+      "exit_code": 0
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates/rerun_symbolic.log",
+      "bytes": 1130,
+      "sha256": "8b6a3b64dc6c992c61a0c8b87248901b734b10aeb878296241191436f5e63886",
+      "cwd": "/workspace/padua_research",
+      "command": "python3 -I -B tracks/bivariate-lanczos/code/review_L3b/turan_symbolic.py > topics/bivariate-lanczos-20261031/audit-01/L3-certificates/rerun_symbolic.log",
+      "exit_code": 0
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates/rerun_family_n3.log",
+      "bytes": 286,
+      "sha256": "14f6dbedd7b86ec94444d1a1e6a8c2eddf08d19e496d3a5216a99cfcd03a14aa",
+      "cwd": "/workspace/padua_research",
+      "command": "python3 -I -B tracks/bivariate-lanczos/code/review_L3b/kappa_family_n3.py > topics/bivariate-lanczos-20261031/audit-01/L3-certificates/rerun_family_n3.log",
+      "exit_code": 0
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates/rerun_unisolvence.log",
+      "bytes": 318,
+      "sha256": "a1e21ecb647ce34b747d87e456a7839acb28974cb987c57edc0734e1c9093188",
+      "cwd": "/workspace/padua_research",
+      "command": "python3 -I -B tracks/bivariate-lanczos/code/review_L3/unisolvence_check.py > topics/bivariate-lanczos-20261031/audit-01/L3-certificates/rerun_unisolvence.log",
+      "exit_code": 0
+    }
+  ],
+  "retention": "Small necessary audit evidence staged in the assigned audit directory for root integration. No remote cold-storage destination configured or used; preserve with the audit. Retrieve at repository paths and verify SHA-256.",
+  "caveat": "Exit zero alone is not the verdict: rerun_turan.log intentionally reports n=3 FAIL; n=4..16 PASS and negative controls were inspected. Floating eigenvalue labels and sampled negative radii are MEASURED only."
+}

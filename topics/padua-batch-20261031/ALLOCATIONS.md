@@ -1,5 +1,7 @@
 # Shared allocation ledger — padua-batch-20261031
 
+**Current AC instruction (2026-11-01): PR #10 merges next into current main. All other drafts will be adjusted after PR #10 is merged.** The earlier sequence and source snapshots below retain their historical provenance. This update changes no accepted reservation or allocation owner.
+
 This is the single authoritative batch ledger. **Allocation owner: the root Codex MZ orchestrator.** AC merged charter PR #2 and MZ PR #3. AC's 2026-11-01 instruction sets **PR #4 next, then PR #5 stacked on PR #4**. The remaining programme-ideas and bivariate-Lanczos integrations follow AC's choice and must obtain any final ranges from the same owner. No parallel allocation or accepted-ID renumbering is authorized. Lattice keeps topic-scoped provisional IDs under AC's explicit original instruction; this response allocates no final ID.
 
 ## Reconciled sources and provenance
@@ -34,7 +36,7 @@ The five new LIT entries record the targeted audit-M2 screen: Erdős–Feldheim,
 | 3 — next, AC instructed | lattice-unisolvence, [PR #4](https://github.com/aacchhee/padua_research/pull/4) | Target main; accepted existing mathematics, unchanged-status response and focused registry reconciliation. Provisional table below is retained; no final range allocated. |
 | 4 — stacked on PR #4 | mz-postmerge-frontier, [PR #5](https://github.com/aacchhee/padua_research/pull/5) | Merge the PR #4 branch without rebasing, target that branch, answer audit L1–L4 and preserve its full registry/ledger contents. After PR #4 lands, refresh main and retarget as appropriate. No IDs are allocated by this administrative follow-up. |
 | Later — AC chooses | programme-ideas | Its earlier copy has the same accepted reservation table, not necessarily identical status prose. On integrating current main, preserve reservations and take main's current integration prose, then reconcile any new allocation with the owner. |
-| Later — AC chooses | bivariate-Lanczos | Its earlier copy has the same accepted reservation table, not necessarily identical status prose. On integrating current main, preserve reservations and take main's current integration prose, then reconcile any new allocation with the owner. |
+| Next — AC confirmed 2026-11-01 | bivariate-Lanczos, [PR #10](https://github.com/aacchhee/padua_research/pull/10), `claude/bivariate-lanczos-20261031` | Main `9739a0c` merged into the branch (`1167c33`); accepted reservations preserved. **Final block allocated by Claude under AC's explicit 2026-11-01 authorisation** (see "Bivariate-Lanczos block" below). Other drafts adjust after this PR merges. |
 
 No byte-identical propagation to the later member branches is claimed by this response. Their copies can legitimately lag in integration-status prose; this does not authorize overwriting accepted reservations or reverting audit dispositions. Their historical source pins above remain provenance, not current-head assertions.
 
@@ -55,3 +57,16 @@ AC explicitly requested provisional theory IDs; no new final global range is res
 Before AC's requested sequence, refresh the relevant heads and rehearse **current main → PR #4 → PR #5** in a disposable local branch. Record exact source/tree identities, conflict resolutions and preservation checks in the response receipts. A rehearsal authorizes no live merge, main push, force-push or tag. Only AC merges. Later member branches merge the integrated registry state and repeat their own checks before readiness.
 
 2026-11-01 registry reconciliation preserves the canonical owner, the complete final reservation table (including LIT-061–065) and all66 lattice provisional IDs. No charter entry was found overwritten in the MZ main; the PR #4 branch was missing the newer merged MZ additions until this merge. The previous unrelated-branch ledger-copy requirement is replaced by explicit reservation preservation and current-main prose reconciliation, as PR #5 audit L3 requested.
+
+## Bivariate-Lanczos block (allocated 2026-11-01)
+
+AC's explicit instruction of 2026-11-01 (recorded in `topics/bivariate-lanczos-20261031/LOG.md`): for the bivariate-Lanczos PR, Claude allocates the final IDs now as the next free ranges, and records the owner change for this PR in this ledger. The Codex MZ orchestrator remains the allocation owner for every other member; this block was taken from the "Next unreserved" column above on main `9739a0c56b7a3976422ce60a8441bfbbfd6554df` after checking PROOF_STATUS.md, IDEAS.md and literature/INDEX.md there (highest used: PD-T028, PD-N006, IDEA-076, LIT-065) and the open programme-ideas PR #6 (no final reservation recorded). Lattice provisional IDs are unaffected.
+
+| Namespace | Bivariate-Lanczos block (Claude, AC-authorised) | Count | Next unreserved after this block |
+|---|---|---|---|
+| PD-T | PD-T029–PD-T080 | 52 | PD-T081 |
+| PD-N | PD-N007–PD-N031 | 25 | PD-N032 |
+| LIT | LIT-066–LIT-292 | 227 | LIT-293 |
+| IDEA | IDEA-077–IDEA-176 | 100 | IDEA-177 |
+
+Map and generator: `topics/bivariate-lanczos-20261031/pr-prep/id-map.json`, `allocate.py`. The last column records the boundary immediately after this block at allocation time. Members integrating after PR #10 refresh main and active draft reservations and reconcile with the owner before allocating; the boundary is not permission to ignore later reservations. The 2026-11-01 review snapshot of draft PR #11 (`4f937137f9baac5e51814964e6a83aeb2df38815`) records LIT-293–298, disjoint from this PR. AC confirmed that every other draft adjusts after PR #10 merges. No accepted ID is renumbered, and no propagation to other drafts is claimed here.

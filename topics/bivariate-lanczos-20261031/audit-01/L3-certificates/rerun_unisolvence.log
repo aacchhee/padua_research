@@ -1,0 +1,4 @@
+Padua n=1: 3 points, dim Pi_n=3, exact Vandermonde rank=3 -> unisolvent: True
+Padua n=2: 6 points, dim Pi_n=6, exact Vandermonde rank=6 -> unisolvent: True
+Padua n=3: 10 points, dim Pi_n=10, exact Vandermonde rank=10 -> unisolvent: True
+Padua n=4: 15 points, dim Pi_n=15, exact Vandermonde rank=15 -> unisolvent: True

@@ -1,0 +1,42 @@
+## f6_givens_vs_hl_deficit.log
+sanity15                     given   G/HL=  0.3 (-0.48 dig)  G/CGS2=  2.2  G/HH=  0.3  HL/HH= 0.9  BJ/HL=11.0  largest/scheme=8.6e-01
+Padua n=10 N=M=66            given   G/HL=  4.0 (0.60 dig)  G/CGS2=  6.3  G/HH=  4.0  HL/HH= 1.0  BJ/HL= 6.1  largest/scheme=1.1e+00
+Padua n=10 N=M=66            random  G/HL=  7.4 (0.87 dig)  G/CGS2= 12.5  G/HH=  7.4  HL/HH= 1.0  BJ/HL= 5.4  largest/scheme=8.6e-01
+Padua n=10 N=M=66            random  G/HL=  6.9 (0.84 dig)  G/CGS2= 11.0  G/HH=  6.6  HL/HH= 1.0  BJ/HL= 6.8  largest/scheme=8.1e-01
+Padua n=10 N=M=66            sortx   G/HL=  4.9 (0.69 dig)  G/CGS2=  8.8  G/HH=  5.3  HL/HH= 1.1  BJ/HL= 4.6  largest/scheme=9.8e-01
+Padua n=20 N=M=231           given   G/HL=  3.8 (0.59 dig)  G/CGS2= 10.0  G/HH=  7.1  HL/HH= 1.9  BJ/HL=23.1  largest/scheme=1.1e+00
+Padua n=20 N=M=231           random  G/HL=  9.2 (0.96 dig)  G/CGS2= 22.0  G/HH= 15.7  HL/HH= 1.7  BJ/HL= 7.9  largest/scheme=4.0e+00
+Padua n=20 N=M=231           random  G/HL=  6.7 (0.82 dig)  G/CGS2= 16.0  G/HH= 11.4  HL/HH= 1.7  BJ/HL= 5.8  largest/scheme=5.7e+00
+Padua n=20 N=M=231           sortx   G/HL=  4.6 (0.66 dig)  G/CGS2= 11.0  G/HH=  7.9  HL/HH= 1.7  BJ/HL=23.8  largest/scheme=1.1e+00
+Padua n=30 N=M=496           given   G/HL=  5.5 (0.74 dig)  G/CGS2= 15.3  G/HH= 12.8  HL/HH= 2.3  BJ/HL=11.0  largest/scheme=8.7e+04
+Padua n=30 N=M=496           random  G/HL= 16.2 (1.21 dig)  G/CGS2= 43.3  G/HH= 36.1  HL/HH= 2.2  BJ/HL= 3.5  largest/scheme=3.2e+01
+Padua n=30 N=M=496           random  G/HL= 10.8 (1.03 dig)  G/CGS2= 28.7  G/HH= 23.9  HL/HH= 2.2  BJ/HL= 3.5  largest/scheme=9.3e+01
+Padua n=30 N=M=496           sortx   G/HL=  5.7 (0.76 dig)  G/CGS2= 16.0  G/HH= 13.3  HL/HH= 2.3  BJ/HL=10.2  largest/scheme=2.8e+06
+random M=105 n=6 N=28        given   G/HL=  4.2 (0.62 dig)  G/CGS2=  5.0  G/HH=  2.7  HL/HH= 0.6  BJ/HL= 2.7  largest/scheme=1.1e+00
+random M=105 n=6 N=28        random  G/HL=  4.8 (0.68 dig)  G/CGS2=  5.8  G/HH=  3.5  HL/HH= 0.7  BJ/HL= 1.9  largest/scheme=8.7e-01
+random M=105 n=6 N=28        random  G/HL=  6.0 (0.78 dig)  G/CGS2=  7.8  G/HH=  4.2  HL/HH= 0.7  BJ/HL= 2.1  largest/scheme=9.0e-01
+random M=300 n=12 N=91       given   G/HL=  2.9 (0.46 dig)  G/CGS2= 10.7  G/HH=  1.9  HL/HH= 0.6  BJ/HL= 2.5  largest/scheme=6.5e-01
+random M=300 n=12 N=91       random  G/HL=  7.1 (0.85 dig)  G/CGS2= 15.4  G/HH=  2.9  HL/HH= 0.4  BJ/HL= 4.6  largest/scheme=3.2e-01
+random M=300 n=12 N=91       random  G/HL=  4.7 (0.67 dig)  G/CGS2= 10.8  G/HH=  2.2  HL/HH= 0.5  BJ/HL= 9.3  largest/scheme=7.9e-01
+random M=496 n=20 N=231      given   G/HL=  2.1 (0.31 dig)  G/CGS2= 21.7  G/HH=  2.8  HL/HH= 1.4  BJ/HL= 2.9  largest/scheme=4.7e-01
+random M=496 n=20 N=231      random  G/HL=  2.2 (0.35 dig)  G/CGS2= 28.2  G/HH=  3.4  HL/HH= 1.5  BJ/HL= 6.7  largest/scheme=4.5e-01
+random M=496 n=20 N=231      random  G/HL=  1.6 (0.19 dig)  G/CGS2= 17.4  G/HH=  2.1  HL/HH= 1.4  BJ/HL= 3.9  largest/scheme=6.4e-01
+## f6_run_padua_large_20_30.log
+Padua n=20 N=M=231           given   G/HL=  3.8 (0.59 dig)  G/CGS2= 10.0  G/HH=  7.1  HL/HH= 1.9  BJ/HL=23.1  largest/scheme=1.1e+00
+Padua n=20 N=M=231           random  G/HL= 10.9 (1.04 dig)  G/CGS2= 24.0  G/HH= 17.1  HL/HH= 1.6  BJ/HL= 6.4  largest/scheme=2.8e+00
+Padua n=20 randW             given   G/HL=  4.2 (0.62 dig)  G/CGS2= 10.8  G/HH=  8.7  HL/HH= 2.1  BJ/HL= 4.5  largest/scheme=5.5e+10
+Padua n=30 N=M=496           given   G/HL=  5.5 (0.74 dig)  G/CGS2= 15.3  G/HH= 12.8  HL/HH= 2.3  BJ/HL=11.0  largest/scheme=8.7e+04
+Padua n=30 N=M=496           random  G/HL= 11.8 (1.07 dig)  G/CGS2= 28.8  G/HH= 25.6  HL/HH= 2.2  BJ/HL= 4.4  largest/scheme=7.2e+01
+Padua n=30 randW             given   G/HL=  4.2 (0.62 dig)  G/CGS2= 13.9  G/HH= 13.2  HL/HH= 3.2  BJ/HL= 3.7  largest/scheme=2.8e+09
+## f6_run_padua_large_40.log
+Padua n=40 N=M=861           given   G/HL=  6.3 (0.80 dig)  G/CGS2= 18.1  G/HH= 16.5  HL/HH= 2.6  BJ/HL= 6.2  largest/scheme=1.7e+09
+Padua n=40 N=M=861           random  G/HL= 27.6 (1.44 dig)  G/CGS2= 80.0  G/HH= 69.6  HL/HH= 2.5  BJ/HL= 3.4  largest/scheme=4.2e+02
+Padua n=40 randW             given   G/HL=  5.3 (0.73 dig)  G/CGS2= 20.0  G/HH= 19.2  HL/HH= 3.6  BJ/HL= 2.2  largest/scheme=4.3e+08
+## f6_run_padua_large_50.log
+Padua n=50 N=M=1326          given   G/HL=  6.5 (0.82 dig)  G/CGS2= 22.0  G/HH= 21.2  HL/HH= 3.2  BJ/HL= 4.2  largest/scheme=7.1e+08
+Padua n=50 N=M=1326          random  G/HL= 22.1 (1.34 dig)  G/CGS2= 73.1  G/HH= 73.1  HL/HH= 3.3  BJ/HL=18.6  largest/scheme=1.5e+05
+Padua n=50 randW             given   G/HL=  5.0 (0.70 dig)  G/CGS2= 20.0  G/HH= 22.2  HL/HH= 4.4  BJ/HL= 3.0  largest/scheme=3.0e+09
+## f6_run_padua_large_60.log
+Padua n=60 N=M=1891          given   G/HL=  7.0 (0.85 dig)  G/CGS2= 24.7  G/HH= 28.0  HL/HH= 4.0  BJ/HL=13.3  largest/scheme=3.0e+09
+Padua n=60 N=M=1891          random  G/HL=181.8 (2.26 dig)  G/CGS2=625.0  G/HH=689.7  HL/HH= 3.8  BJ/HL=21.8  largest/scheme=1.0e+08
+Padua n=60 randW             given   G/HL=  5.3 (0.73 dig)  G/CGS2= 26.7  G/HH= 31.0  HL/HH= 5.8  BJ/HL= 3.5  largest/scheme=1.4e+11

@@ -1,0 +1,398 @@
+{
+  "head": "3a9063b84d14ca0a5998378371e27643fde50a29",
+  "candidate": "5ccfac223f466a9105450365d8c6c3781ff7d922",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60",
+      "bytes": 3159,
+      "identical_at_candidate": true,
+      "head_blob": "8c94c718629649c3f5c89d05e5b674ae5ad3a99c"
+    },
+    {
+      "path": "agents/WORKFLOW.md",
+      "sha256": "b1c1c14c83e02bf38283159f81ec278ae336ab56c95d0c026b9ada3314d1ffaa",
+      "bytes": 18116,
+      "identical_at_candidate": true,
+      "head_blob": "1e3399cc4089c3784f017cf9ec0927bc695ef99c"
+    },
+    {
+      "path": "agents/codex/CODEX.md",
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+      "bytes": 4969,
+      "identical_at_candidate": true,
+      "head_blob": "16a4ecfea89acd5b1d9cd09c9213094bce144caf"
+    },
+    {
+      "path": "literature/INDEX.md",
+      "sha256": "a9fdbfeb7d0a5b485c84e3e9763739e8f8597f118a6e76bf1dcf76ea8aa28a15",
+      "bytes": 111148,
+      "identical_at_candidate": true,
+      "head_blob": "a376a9cfaf929ac0ece7a2bae1ed17f4b0abe789"
+    },
+    {
+      "path": "state/IDEAS.md",
+      "sha256": "12ba5f8eccfc943faebee07b83ea37b995f0b89244fa3b9b81a6f88051ad931d",
+      "bytes": 46988,
+      "identical_at_candidate": true,
+      "head_blob": "061524dc4dd7bd0ab79775bb058fe8e0247570d9"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-handoff.md",
+      "sha256": "3ad150ace51e9a6e4d9c2276b3aa20bb8a80b51d1c169611cf2cba22313ed79c",
+      "bytes": 16243,
+      "identical_at_candidate": true,
+      "head_blob": "ff7fd70c741a61c0b57eaebb983211e225b105a6"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/BRIEF.md",
+      "sha256": "602027365a6557fd3c65d0250757410b9f785d958d955da48dd434c747651fdb",
+      "bytes": 891,
+      "identical_at_candidate": true,
+      "head_blob": "d10032ba69f6c35bc336b27c255a4635629b33e0"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/R01.md",
+      "sha256": "63c46fb8a65fc55813ee12488a03ff41cfb7df417214d7b30f056de975f7f8aa",
+      "bytes": 13731,
+      "identical_at_candidate": true,
+      "head_blob": "ea74f28d2669afdc77631bb2202e73c39561e517"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/R02.md",
+      "sha256": "c0e57c80c4ea03423f4e72c2a3229d69bd6f0ae946fcdb18c5510726ad7a5da6",
+      "bytes": 10207,
+      "identical_at_candidate": true,
+      "head_blob": "12a888b530a3a6586a328866d72cc7568aa548f7"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/R03.md",
+      "sha256": "48fcdc69f0bb1e85ea3359b77ce5400799ac5d94a842044aea6d9c4b433acfd2",
+      "bytes": 13627,
+      "identical_at_candidate": true,
+      "head_blob": "23f364da50677d53e5b5aecd69570c5f2ec4a526"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/STATUS.md",
+      "sha256": "4297652a2b3884777bf15b146cc28cfb60762337e9d4958eb7309bd3b7059a02",
+      "bytes": 1787,
+      "identical_at_candidate": true,
+      "head_blob": "0cdca3333ac0eb4716f5575d64c334ccc3c3164f"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/candidates.md",
+      "sha256": "f0f1cda541dfdbb2b04cfcc37f777dca5a8d91f55ae1dc92f22c2e8581cd150c",
+      "bytes": 20873,
+      "identical_at_candidate": true,
+      "head_blob": "db71041c421dcbe96614cbca170877f1dc30a7c3"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/analysis_r01.txt",
+      "sha256": "379a5201b729e22df8a2cc9be755ca4be5f7eb73cfdfc1ed1956fedd143e3f83",
+      "bytes": 15375,
+      "identical_at_candidate": true,
+      "head_blob": "b0ca45575ecf698c9878b9b3cc3b5e784da2dc3a"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/analysis_r01b.txt",
+      "sha256": "4a4fa0f028c4c1271f7ad84fbe739b570fc635d94721be4c4a0f93e376de7e18",
+      "bytes": 10094,
+      "identical_at_candidate": true,
+      "head_blob": "0f0f754c2b6bb781c12ab539dcc4e2e8e913574c"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/analysis_r01c.txt",
+      "sha256": "aea83efe51cca3d5b2213f4e8e57edd283304a8a18ebe9ae13050c0254242e98",
+      "bytes": 12452,
+      "identical_at_candidate": true,
+      "head_blob": "b6398939cd939a84eedb4e729cc74583567acbfe"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_padua_cub.jsonl",
+      "sha256": "9cc28bb6403f28c55a01bce3708ad3715982b46a029a5bbd2177ee5aacb4f19d",
+      "bytes": 17588,
+      "identical_at_candidate": true,
+      "head_blob": "5854b9ba6e6f830e98b2157aa71cb269fe657df5"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_padua_cub.log",
+      "sha256": "3f4db78633c0d7f910ac4d35726c3ccd01eceb1bbe8383621874724f47042a9f",
+      "bytes": 3997,
+      "identical_at_candidate": true,
+      "head_blob": "c4f88f9ab8f0f8d8d52e8ef396e8248c4b1f05ad"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_padua_rand.jsonl",
+      "sha256": "48201553fc443bfbf592224f120498fbe98defb009546b4fb7aae317efea45ce",
+      "bytes": 17625,
+      "identical_at_candidate": true,
+      "head_blob": "8227c33d400d59c4f9baa06820c3bef2e3edd4e4"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_padua_rand.log",
+      "sha256": "8afdeafc67a0ac99309f653f2bc5907c0aca3bf0053d940f6e01967257169baf",
+      "bytes": 4032,
+      "identical_at_candidate": true,
+      "head_blob": "5a5f3c4e04dfab458e3860688b78f3e8819fce6b"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_padua_unif.jsonl",
+      "sha256": "2ddee7bdfd483547774fd384a646d3beb9a2703575114622bb14a80ef852921b",
+      "bytes": 10241,
+      "identical_at_candidate": true,
+      "head_blob": "9a2da5d5f7cbaa27523c3269d92ff8d76a726bb9"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_padua_unif.log",
+      "sha256": "7427923226cfff6d65b6467bf2d414926f42f8d408d97d336e2a615f189a9e7b",
+      "bytes": 2300,
+      "identical_at_candidate": true,
+      "head_blob": "23d81fca8440a6da947c37e818cf8f145779646b"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_prefix_a.jsonl",
+      "sha256": "e22dae610b813817c5e06ea3871e092880340b46107bdf24e028cc59ea4d0f5b",
+      "bytes": 33151,
+      "identical_at_candidate": true,
+      "head_blob": "41b5a9a3972fd4d25d53439a7cc4e4f442032884"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_prefix_a.log",
+      "sha256": "99708fc144ddbea163c4a8ba38bb9991ac7c7ed3cc4e20bd0325784d3c81a2c1",
+      "bytes": 7744,
+      "identical_at_candidate": true,
+      "head_blob": "08500442c22d1c550ea5c72dff1c847dd8dba2eb"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_prefix_b.jsonl",
+      "sha256": "97f8c9d186328c91ed9041532cdc3eb2b20ece613e9df6f8dcc35d470ed9cc5c",
+      "bytes": 6960,
+      "identical_at_candidate": true,
+      "head_blob": "9e020646f19d404f1b8a608d374f0493602ae20d"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_prefix_b.log",
+      "sha256": "752675fde7483ebbf4b8c32972a32533c36988d7436b30cb6a16760e2c7f2fc6",
+      "bytes": 1566,
+      "identical_at_candidate": true,
+      "head_blob": "b094b9effbbe42da89b371924bb5b6d042f2a5fd"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_random.jsonl",
+      "sha256": "a88f05444ac9de33d692d1a02824b3baacfa8f2f779970ebf2f3f732dc9e5a78",
+      "bytes": 18361,
+      "identical_at_candidate": true,
+      "head_blob": "57a9cfc523f81f1c697a88f07a2c8b61c8b8158f"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_random.log",
+      "sha256": "279bf1fa56e174ea30bf7e589ba9064d261c7b18874e9e496906ef25a62ca663",
+      "bytes": 3785,
+      "identical_at_candidate": true,
+      "head_blob": "0dd898ba562b9f75b7dbedf8bc3dfa43ee0a9954"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_random_cheb.jsonl",
+      "sha256": "a79953302fb3571f807514314737136bd7d182f664eef6aa821d9b4c03bba821",
+      "bytes": 15995,
+      "identical_at_candidate": true,
+      "head_blob": "9c48781a85cf49d4cfa6ab88f660fa17e9bdb98e"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_random_cheb.log",
+      "sha256": "164a8588baeda3cfd273679c87c990de9e99777dac8507e9e34e67e64947c3f8",
+      "bytes": 3390,
+      "identical_at_candidate": true,
+      "head_blob": "c6d2ebf86092667266fb40145670418e4153ff4e"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r02_dual.jsonl",
+      "sha256": "95924388fd94d0b94bc21c428298fc01238c2ca68d6af3c79b62c2853e6e32a6",
+      "bytes": 11772,
+      "identical_at_candidate": true,
+      "head_blob": "347d0ee2ea029db32be7f1a8eb83fcffd9b72e6f"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r02_dual.log",
+      "sha256": "ae10c370874a252f55d6cf8f8ea471e8d0f8ae7473c9252a37595d969379cec1",
+      "bytes": 1956,
+      "identical_at_candidate": true,
+      "head_blob": "5af6446598c3c31d39274ee4c1e45e66f92d5be4"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_defer3.jsonl",
+      "sha256": "ba732b129d85947ebf411819edc64633f6fb7c0b9f4e6aba050858497d175f3c",
+      "bytes": 16544,
+      "identical_at_candidate": true,
+      "head_blob": "a03221e584b9b15735d03dae436e924b08558c45"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_defer3.log",
+      "sha256": "904174c35f67958d9e1ed74e6a9fb22c4f9e406bc56a011a3d5b3f5535202437",
+      "bytes": 4394,
+      "identical_at_candidate": true,
+      "head_blob": "b67686398caca6c33f9535d25190c485f7f87333"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_deferbest.jsonl",
+      "sha256": "ef17e547909274b768190ad3a699cdebb3e76bba38e73a39c6299ee6f713df0b",
+      "bytes": 4446,
+      "identical_at_candidate": true,
+      "head_blob": "5bc798a87a8bc38169f800828e0b2027179a8ed2"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_deferbest.log",
+      "sha256": "bf795005c51b698a45bd38d7ea9d5669d8f07064009e76f5b7fc5726c9afc84c",
+      "bytes": 2092,
+      "identical_at_candidate": true,
+      "head_blob": "aeb5570ae0234c592d500e7759113c221a8bf8af"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_deferbest_large.jsonl",
+      "sha256": "cefb0819b7b85e2ba1303a83416340db63eab1d4b376c8f8951ff333edd35ec3",
+      "bytes": 190,
+      "identical_at_candidate": true,
+      "head_blob": "55a229bad6ba9e95809d9cf4dca7c5b1f4f965ff"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_deferbest_large.log",
+      "sha256": "5ccb72073cd0a07b36731b5d7781771bd3a57e917fa612c34e4aa4c5282e15ed",
+      "bytes": 88,
+      "identical_at_candidate": true,
+      "head_blob": "b4706c10f2caa28cc3cb1d3de0f14409f1cd052d"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_deferbest_large2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "identical_at_candidate": true,
+      "head_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_detector.log",
+      "sha256": "6bdb376279b5b022e4accd1f1761895d126f9d4b6b07fdb64b5e256a81bfaf05",
+      "bytes": 4080,
+      "identical_at_candidate": true,
+      "head_blob": "0b93f43ee4fdc2c2110ccda7a9172c8f2af12876"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_rules.jsonl",
+      "sha256": "a24f36d4cb691f5b26fb10e29c94381373713c40cfdce9a1a354b616f9688622",
+      "bytes": 15892,
+      "identical_at_candidate": true,
+      "head_blob": "0f7674ca7a62cc3c3523827be085a1af61be6ef9"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_rules.log",
+      "sha256": "f220edf4ba2688730c73e8dd0a92673f2399bee520c9cfeeaa24e40e0385f396",
+      "bytes": 4314,
+      "identical_at_candidate": true,
+      "head_blob": "9e669a2883c13c8427ebced28039c695ab583731"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_x60.json",
+      "sha256": "a6f9661f32bfcace78575ae557ccc590eb73fa86b44712921a84b9088e15dc67",
+      "bytes": 245,
+      "identical_at_candidate": true,
+      "head_blob": "f6e045f2ff19033008a340df4967675e503409b9"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_x60.log",
+      "sha256": "fe7b30c6715efa252e0cc3e0f7ec18c1c8ea7c1fa8d0a71cb2cfccf9d0eb2cb4",
+      "bytes": 249,
+      "identical_at_candidate": true,
+      "head_blob": "5e3841b8a6fbba943b53d2c9a428ea9a11ce03b9"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_x60_controls.jsonl",
+      "sha256": "44340106d42814d290b539ddc6e5749374e66d2ede88e34e89b97b7b691e3c14",
+      "bytes": 454,
+      "identical_at_candidate": true,
+      "head_blob": "a8b6772f67bdecca67302e9dbcfdc2b1e603a326"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_x60_controls.log",
+      "sha256": "44340106d42814d290b539ddc6e5749374e66d2ede88e34e89b97b7b691e3c14",
+      "bytes": 454,
+      "identical_at_candidate": true,
+      "head_blob": "a8b6772f67bdecca67302e9dbcfdc2b1e603a326"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/response-recon-01.md",
+      "sha256": "294eb46be9f53100024249752995d92014ca4a12efbdd88ebb7f5f21e08391d0",
+      "bytes": 8968,
+      "identical_at_candidate": true,
+      "head_blob": "7ef39fe6cbe26834007f98a549c4094a74ec7fd9"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/plan.md",
+      "sha256": "a4dbc973b79b3b16fc6c8ec31adc8e0c8bc18a5a6136b2983ea6125e7337e69a",
+      "bytes": 17069,
+      "identical_at_candidate": true,
+      "head_blob": "7fae0a77bfe34ea292ac49fbeb9d1ad8b9abd1b6"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/report.md",
+      "sha256": "784b11c7fc235c9e8bcfcff915fe3dc3657f33976fbbc8d2d3d4f3f725becc19",
+      "bytes": 15087,
+      "identical_at_candidate": true,
+      "head_blob": "a33eddd68fad287f86baf178046e60cbb6fdb005"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/L5-reconstruction-01.md",
+      "sha256": "9da27e6f12a20bfa37f7eeb2b8b7865f1164ef7cc3d9b4eebf56353f102324df",
+      "bytes": 28143,
+      "identical_at_candidate": true,
+      "head_blob": "5a8dad674f92d4b742668c31fdaafdd4aa20c773"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/fifo-threshold-deferral-failure.md",
+      "sha256": "d47d7de4e9ef3ec0afbb37a6e6ac888296a0d5f4aa4d4b2368591232cfc248b0",
+      "bytes": 4084,
+      "identical_at_candidate": true,
+      "head_blob": "d0e011e516340f2c827fec7b0e611d45dd6d043d"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/givens-deficit-slopes-measured.md",
+      "sha256": "174b5c238b45f3f1e6b48ead39f7fdffdfd08c72be0ed0c1f61d74d04f761a6d",
+      "bytes": 11342,
+      "identical_at_candidate": true,
+      "head_blob": "0a8d3072876f49fa0d88de8a4dcc5b6952e43fb7"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/givens-updating-rotation-count-backward-bound.md",
+      "sha256": "99808ffefad8a8dfa346b9f9dbcdb99a3de0448e4f18e0a87acdfcd08395d295",
+      "bytes": 13869,
+      "identical_at_candidate": true,
+      "head_blob": "fc273d7a47bbc61b75b61d78004330fcc72d4146"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/largest-redundant-pivot-degradation.md",
+      "sha256": "2b1842e1c364957d45225b29754b2b3a9895b4eafe6a85b5ecb8c541693eb955",
+      "bytes": 11887,
+      "identical_at_candidate": true,
+      "head_blob": "07a7013094847413cf9bb91e3101a1038e5a29a2"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/magnitude-threshold-pivot-rules-failure.md",
+      "sha256": "255db03e39e3c3a53e571ce3af841605804ffab56b88c618ec2462b836f754fc",
+      "bytes": 4791,
+      "identical_at_candidate": true,
+      "head_blob": "2d44f72c025ef08651c0eeadfacacbdf23d1d9f4"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/prefix-unisolvence-order-statistics-measured.md",
+      "sha256": "7fa040e8a025cb714e7ff79389b44b0f0cdd33e9568908e85a4679dd9af22b3d",
+      "bytes": 8889,
+      "identical_at_candidate": true,
+      "head_blob": "00a93f29c7e761ed5883d332aef84eb81a6610a8"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/unisolvent-prefix-extension-lemma.md",
+      "sha256": "74e3779774bd193314501e58724a4e608001038e067ef873a519bddbfc11aa44",
+      "bytes": 5689,
+      "identical_at_candidate": true,
+      "head_blob": "205d749c92918665b7632fea8f56385fb14f55f3"
+    }
+  ]
+}

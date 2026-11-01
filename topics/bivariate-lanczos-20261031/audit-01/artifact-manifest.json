@@ -1,0 +1,424 @@
+{
+  "candidate": "5ccfac223f466a9105450365d8c6c3781ff7d922",
+  "rules_read_at": "3a9063b84d14ca0a5998378371e27643fde50a29",
+  "main_at_audit": "07c5f5465d6de306aa81dbe8ca1f615295163864",
+  "theory_files_unchanged": 67,
+  "scope_reports": [
+    "L1-foundations",
+    "L1-later",
+    "L2",
+    "L3-framework",
+    "L3-certificates",
+    "L5",
+    "protocol"
+  ],
+  "local_report_links_valid": true,
+  "artifact_count": 80,
+  "audit_bytes": 701155,
+  "candidate_output_plus_inventoried_audit_bytes": 2062519,
+  "manifest_excludes_itself": true,
+  "regeneration_command": "python3 topics/bivariate-lanczos-20261031/audit-01/record_completion.py",
+  "retention": "Small necessary committed audit evidence; no external archive created.",
+  "artifacts": [
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-foundations/check_foundations.py",
+      "bytes": 9463,
+      "sha256": "6a0a7e8e6bffd1f6cec7c0e4fdb65d131e3434d6205aef7bdabde58df9f1037d"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-foundations/independent_exact.log",
+      "bytes": 1086,
+      "sha256": "679164554b7018a1f6a0e4f874669b90c6584ca08003a510bf5033eb804e95ad"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-foundations/manifest.json",
+      "bytes": 5496,
+      "sha256": "410e2821057205ee3da64540f9cef8c7ad03b1489e2f9326cdf6127a78b95646"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-foundations/reviewer_exact_rerun.log",
+      "bytes": 4550,
+      "sha256": "01b6a329bd09f4ed329ac3a99716e3366e84e2417a72b5d9a21698c2f730e1e0"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-foundations.md",
+      "bytes": 17330,
+      "sha256": "34dc75151a8cc5269c5bfbabd491f902a02d4e32b3eedd0895078be6489a34b6"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/cert_square40_rerun.log",
+      "bytes": 1823,
+      "sha256": "4375ae13eae79f3011c3455c09c85798bff7d810aae17ce9111afd17073005f2"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/cert_square_rerun.log",
+      "bytes": 1566,
+      "sha256": "8606323c1890a4eea9d8c3528f9b40adada016130e3729e1fa4be367ed374f5a"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/cert_triangle_rerun.log",
+      "bytes": 1665,
+      "sha256": "b328c93fccdccf009a3c48d07c5df0a19adc4f60eeb97a4db0085f774b65c95d"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/closed_loop_rerun.log",
+      "bytes": 821,
+      "sha256": "77b844281db536a8101a22faee5d41037ac2799a5d2a1de5604f386fc7394ebe"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/environment.log",
+      "bytes": 2051,
+      "sha256": "bc81f3b0f70737a14a85e70a2f477eeacc056486575f89223038582901aade2f"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/gain_producer_rerun.log",
+      "bytes": 1577,
+      "sha256": "583ca75e1338abcb7d8d193b71d865fd861f5f774a5be666d7e3af495f37169e"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/independent_checks.log",
+      "bytes": 1687,
+      "sha256": "dd49d6a0bbd2ec832b5d3274f7ff06bc6404bf2e6f404d35ca6f33190efab0ad"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/independent_checks.py",
+      "bytes": 5754,
+      "sha256": "6c4f32509bc8d52650e2d5447f275afa498042c274a48387cdcbf4facab91da5"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/manifest.json",
+      "bytes": 26850,
+      "sha256": "ec92a4f0ecb0f83f75e1c1088b8f818105c258b27af24f089625ebc0f7666a81"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/near_product_producer_rerun.log",
+      "bytes": 1654,
+      "sha256": "6dd7cce88660e9a303ac2f10051c321abd95b89955e56d7460acf697451de16a"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/open_loop_rerun.log",
+      "bytes": 1662,
+      "sha256": "38855fabb74083ad40842f65bc9b4e264382e2afd7062bbcf6302c082118eab2"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/rule_reanalysis.log",
+      "bytes": 419,
+      "sha256": "611e9d0aa5ce7e292be59a035238601527dd576b3d1772b65a9affd5ecc71e55"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/simax_producer_rerun.log",
+      "bytes": 306,
+      "sha256": "7ff6cb74f7a020e21c8ecf09cf1a8ee83f923465e75f7fbb137b90171d386923"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later.md",
+      "bytes": 20727,
+      "sha256": "767333dac06f489893e83b5d1850eec9414be5aa31624d941481d4a06369826a"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/check_local_beta.py",
+      "bytes": 1560,
+      "sha256": "ec235e6711bde56c4af19436fbaa39ae4fb3cb69e3054fbd0957241a1c89466c"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/commands.txt",
+      "bytes": 2987,
+      "sha256": "1747ebf56f57ed9a5a287cd3c74ea82645ed2c05e8eccaa4bfeb891f9dbf8833"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/cycles-rerun.log",
+      "bytes": 1314,
+      "sha256": "72d3aa36b45910b850c907d7872f6bce20a0a330df3519c923dfb50607c2c588"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/dots-rerun.log",
+      "bytes": 56550,
+      "sha256": "6b7076dbdbb97cda44a75bfea7ccb90723996297128714d629de4d0772a202eb"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/e3-rerun.log",
+      "bytes": 9610,
+      "sha256": "7bf9beb6cd869ef22b55a28ca9eebe786ff03fa0856b9f1a13a25d9089f38323"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/exact-rerun.log",
+      "bytes": 3540,
+      "sha256": "673062185efce28f0ba3243bfc463184349a868dd754fec91f950378de40c3be"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/independent-drift.log",
+      "bytes": 2507,
+      "sha256": "654744a99b77d924de01460dddda4208158d6031677077235d7131737d395cb2"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/independent_drift.py",
+      "bytes": 4384,
+      "sha256": "3a1b1d12eaae685550280b9f3b9e19ce44a05473ee8064344ab3cf456a2dc3fb"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/local-beta.log",
+      "bytes": 721,
+      "sha256": "cb5eadbf2aaa5a658c548395228877d92ef7153c9e2859b683bf903015ae104b"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/make_manifest.py",
+      "bytes": 5125,
+      "sha256": "79050a9ccaf18c1b7f63d25221c6b64776197256483eda49910e9bf414132b87"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/manifest.json",
+      "bytes": 16763,
+      "sha256": "4faf92c733b7fc3ddd0d591ad9ad64ee6e3a1a3ac8d2f1ab124ff5ea67ae7c1b"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/novelty-search-paths.txt",
+      "bytes": 8761,
+      "sha256": "a110397fc326155af5c708eb2773fa6993cc4e5629855498ef8fba6fa00e973f"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/omega-rerun.log",
+      "bytes": 20366,
+      "sha256": "ed93cd2cdee64f2af3fb724abd47aa7fcb3206e83a58198982882a263222f480"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/pro-rerun.log",
+      "bytes": 5800,
+      "sha256": "9daaaf8cb073827c29267de283962ed9072457a31423304216616c97a27769f4"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/proJ-rerun.log",
+      "bytes": 13458,
+      "sha256": "4040b3006364d7041e56dd8d80d30ffea425c480b42615d09d8516881230577c"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/selection-rerun.log",
+      "bytes": 79426,
+      "sha256": "ab0a85b8d6094b722ad462d5d54d7ed1a7d613790014b7f273cc60a3bb108e5b"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/summary.json",
+      "bytes": 10375,
+      "sha256": "0d8e2407b1515995341d02c652947960999645fea7b8cc4a7bcc6cebedc5722f"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2/theorem-A-rerun.log",
+      "bytes": 27705,
+      "sha256": "664613338df228d2ce16cffb04a3c404a6ef48e8b41ceaa545928b8247556300"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L2.md",
+      "bytes": 19681,
+      "sha256": "1a5c1bb35bd9d76c3f32a9e2a4704ada0087922207805a75bd0708d6bf8ab168"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates/independent_certificate_check.log",
+      "bytes": 1645,
+      "sha256": "b61807769d4d74e0ff0708accc8e0121dabb177f06c216742fea7419211735b9"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates/independent_certificate_check.py",
+      "bytes": 6704,
+      "sha256": "53050e4d0e4e2978d8b9fd4b81676cb213c3344170ffde1441a39de93c068626"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates/manifest.json",
+      "bytes": 9029,
+      "sha256": "8cc0f6373a58de064ade22e96df12d13fe35a56b7122e883cbb79ce82dd91b7b"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates/record_evidence.py",
+      "bytes": 4022,
+      "sha256": "65e27f347dd6697ade4c7f9ea9dc0fad0c7e9d5d8ee4717fc0ec305705c9022a"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates/rerun_delta0.log",
+      "bytes": 2125,
+      "sha256": "4dea16e4b48d6d2eaf8c0e689db28843c8276c5b88ee2ba30ede9704e5702282"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates/rerun_family_n3.log",
+      "bytes": 286,
+      "sha256": "14f6dbedd7b86ec94444d1a1e6a8c2eddf08d19e496d3a5216a99cfcd03a14aa"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates/rerun_n3_exact.log",
+      "bytes": 3259,
+      "sha256": "2c2aded478ad891181e9a35272974ae0ea0099d0318941501e97fcf09d9d61d6"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates/rerun_symbolic.log",
+      "bytes": 1130,
+      "sha256": "8b6a3b64dc6c992c61a0c8b87248901b734b10aeb878296241191436f5e63886"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates/rerun_turan.log",
+      "bytes": 8082,
+      "sha256": "e4086821e7d944e963a981e98244278861cd07ae011e38c321119f503fdee08d"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates/rerun_unisolvence.log",
+      "bytes": 318,
+      "sha256": "a1e21ecb647ce34b747d87e456a7839acb28974cb987c57edc0734e1c9093188"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-certificates.md",
+      "bytes": 19771,
+      "sha256": "0375560cce8bdcacbbd32bb39795eb37af7bdb094d4dd7d61f99b5dec60a99cd"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework/closed_form_C1.log",
+      "bytes": 850,
+      "sha256": "660b29be0170525f2832f3b0db65620f62a42415835cf21bb6cdea1380ebe762"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework/consistency_random_n40.log",
+      "bytes": 3168,
+      "sha256": "344a2181bdd2cc039a399f177f82d230bc072f5ff0e76651ed3c3708ca248951"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework/consistency_rot03_n18_20.log",
+      "bytes": 1274,
+      "sha256": "9507d8516b731b35bccff1a83920826a3f418dbff4edc9b2668822d8628456c6"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework/equi_H_cert_n1_7.log",
+      "bytes": 5744,
+      "sha256": "a8255a9c428bae43128aa0cdf9ded2942825ef601b7d8d37dc1ca185a9b37be9"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework/exact_framework_checks.log",
+      "bytes": 1279,
+      "sha256": "d52783c4c28612740baba4a1163027f56a7cd9ad1c97aab3d4ea97ccf2ba7ee6"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework/exact_framework_checks.py",
+      "bytes": 4923,
+      "sha256": "ae484a0e5d1f53f41bc4c3a628dc4a83a4dee60b3103e0bbfb2482dfe0575968"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework/favard_n1_4_seed0.log",
+      "bytes": 1005,
+      "sha256": "8f58b0c8165e142cb829607ca0e695e696ae2cca657e7bda1a7c2d4e3d0180f9"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework/lstsq_sensitivity.log",
+      "bytes": 1612,
+      "sha256": "2b358febc8157ae1199363bde21d09ddc9e2d32bd4c293e16ca7b5c17a651012"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework/lstsq_sensitivity.py",
+      "bytes": 1060,
+      "sha256": "6c6901b695d58460843a408af59061b3f5c3140557aaee0ab8423d6be5d1ff89"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework/manifest.json",
+      "bytes": 16192,
+      "sha256": "94586580eb8cb7e7e28028134ac90e2417aa55f8fcfb49b0270ed703ba779734"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework.md",
+      "bytes": 19730,
+      "sha256": "f1116405e53a952d9f1c142c84c1d92262e5c23ded06072eeac6bc6b5dcbaa74"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/audited_manifest.json",
+      "bytes": 16873,
+      "sha256": "831f3e6e1bcf7ac360da7163d4684c24af0e58058e35d5af4e99e5a3f1af68bb"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/check_l5.py",
+      "bytes": 13373,
+      "sha256": "632ef74fae89b5e18124cd84dab6e87c3c9e59c3a5f179ca23fe47492cce0145"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/diagnostics.jsonl",
+      "bytes": 4843,
+      "sha256": "bf4923d64e41d32b5cb10a5222d50d342e3655ed480a1e1d474276db3b196d1f"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/dual.jsonl",
+      "bytes": 5860,
+      "sha256": "7beac82e5a37e7d8d9f00814b3cb0af38a6b3073510a10ce36c3a750f7288776"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/evidence_manifest.json",
+      "bytes": 3125,
+      "sha256": "b1a5df7a729e9f1b4aedc5832d09d64a72488a9ab1a0f140b7beb152fa4498dd"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/kill-rerun.jsonl",
+      "bytes": 1956,
+      "sha256": "5457b948e2ed1dcc4e6ab43f3b1b9113b8145f689d1ed4910d4a05dc5a78110b"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/random-fit.jsonl",
+      "bytes": 2145,
+      "sha256": "a94650083d2fca2d878000892f63e7c2e53f434235efc8163991bd053ad4a56f"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/random-rerun.jsonl",
+      "bytes": 18424,
+      "sha256": "49339cc43d1ab9b08ddc1cf9b9f695431d2c2e45ed5ba3ffb2664eed09b50e69"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/random-rerun.log",
+      "bytes": 3785,
+      "sha256": "d3f899ece79cfa595b600625c460e2a1a5f44e2c1714d9028d2067c34d35e4d3"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/rules-rerun.jsonl",
+      "bytes": 4980,
+      "sha256": "5078ac7808b054a23461d2ad085a5c06f5a813f2de8fa1896cf5208df32c56cd"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/slopes-reanalysis.txt",
+      "bytes": 12452,
+      "sha256": "aea83efe51cca3d5b2213f4e8e57edd283304a8a18ebe9ae13050c0254242e98"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/small-rerun.log",
+      "bytes": 2663,
+      "sha256": "d00344ad3c0e35ee3c00e981150872eab0c5ced9c6b905368dee2a3bbd3510ba"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5/source_manifest.json",
+      "bytes": 7924,
+      "sha256": "c1c0644f4227d6a6a86259a3a1ccc8e3f6ade09706021238f452bc3a49b682f3"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L5.md",
+      "bytes": 18236,
+      "sha256": "45d7388843671163a5587f2d4ef7acf85589add755c0537786d310b5bc631bd4"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/check_inventory.py",
+      "bytes": 4088,
+      "sha256": "9e5aa56b25486ffc7f3a8630143ad9410c0a70a0a008d781b2ce3844b5ba6951"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/inventory.json",
+      "bytes": 48770,
+      "sha256": "09abbd3d35d8c98f602cb4143b5def6e6345ee1e7b6f462b82d83f26e932a6b7"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/protocol.md",
+      "bytes": 7275,
+      "sha256": "151207c887eaf764f8266d20e4df4ec3b98f787926058c647eb15df6845e633b"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/record_completion.py",
+      "bytes": 3036,
+      "sha256": "d3819fcc7d75ff6401db9328d308548eb54e0ecd05d0132dfce4c64d5c48b5fe"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/root-framework-rerun.log",
+      "bytes": 1279,
+      "sha256": "d52783c4c28612740baba4a1163027f56a7cd9ad1c97aab3d4ea97ccf2ba7ee6"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01.md",
+      "bytes": 9740,
+      "sha256": "7dc182896a05d9c3b8d987ce4d3e47b88d88762f419d2620e650562cd1956676"
+    }
+  ]
+}

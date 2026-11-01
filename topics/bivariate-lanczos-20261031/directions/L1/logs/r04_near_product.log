@@ -1,0 +1,14 @@
+# l1_r04_near_product.py numpy=2.5.3
+## (A) perturbed-product bound vs actual transfer products (reference = product of marginals)
+square rot 0.0             nodes=28 violations=0  median K=7.1e+00 (max 6.9e+01)  median max_t eps_t=9.5e-01  median ||T_20..T_1||=5.4e+00  median log10(bound/actual) at (0,20)=10.4
+square rot 0.05            nodes=28 violations=0  median K=6.3e+00 (max 1.2e+02)  median max_t eps_t=1.5e+00  median ||T_20..T_1||=5.3e+00  median log10(bound/actual) at (0,20)=13.6
+square rot 0.3             nodes=28 violations=0  median K=5.3e+00 (max 6.2e+01)  median max_t eps_t=2.0e+01  median ||T_20..T_1||=5.1e+00  median log10(bound/actual) at (0,20)=27.8
+tensor 41^2 (exact product) nodes=27 violations=0  median K=1.6e+01 (max 1.5e+02)  median max_t eps_t=8.8e-15  median ||T_20..T_1||=6.3e+00  median log10(bound/actual) at (0,20)=0.4
+## (B) excess growth rate of the exact-coefficient propagator response vs rotation angle
+   theta=0.0     P*(12)=2.2e-15 P*(24)=7.1e-14  rate g=0.290/degree  excess=0.000  excess/theta=nan
+   theta=0.0125  P*(12)=2.3e-15 P*(24)=8.3e-14  rate g=0.300/degree  excess=0.010  excess/theta=0.80
+   theta=0.025   P*(12)=2.6e-15 P*(24)=1.1e-13  rate g=0.315/degree  excess=0.026  excess/theta=1.02
+   theta=0.05    P*(12)=4.2e-15 P*(24)=6.2e-13  rate g=0.416/degree  excess=0.126  excess/theta=2.52
+   theta=0.1     P*(12)=1.4e-14 P*(24)=1.9e-11  rate g=0.598/degree  excess=0.308  excess/theta=3.08
+   theta=0.2     P*(12)=1.1e-13 P*(24)=1.4e-07  rate g=1.169/degree  excess=0.879  excess/theta=4.39
+   theta=0.4     P*(12)=2.6e-12 P*(24)=2.6e-04  rate g=1.534/degree  excess=1.245  excess/theta=3.11

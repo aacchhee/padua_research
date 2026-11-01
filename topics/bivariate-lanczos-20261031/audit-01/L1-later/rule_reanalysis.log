@@ -1,0 +1,3 @@
+python 3.12.14 numpy 2.3.5 float64_eps 2.220446049250313e-16 longdouble_eps 1.084202172485504434e-19
+stored_data_reanalysis u 2.220446049250313e-16 K1 True Z_predicts [('random1681_s0', 'bj'), ('random1681_s0_swapxy', 'bj'), ('random1681_s7', 'bj'), ('random6724_s0', 'bj')]
+stored_data_reanalysis u 1.1102230246251565e-16 K1 False Z_predicts [('random1681_s0', 'hl'), ('random1681_s7', 'hl'), ('random6724_s0', 'bj')]

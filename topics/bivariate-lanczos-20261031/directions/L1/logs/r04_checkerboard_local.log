@@ -1,0 +1,8 @@
+== checkerboard clustered (cubic), m=30
+   BJ (CGS once)          loss t=4,8,..: 4:3e-16 8:7e-16 12:3e-14 16:1e-11 20:4e-09 24:9e-07 28:7e-05 | max local (in-window) |q_l^T q_k| = 4e-14
+   block window CGS2      loss t=4,8,..: 4:3e-16 8:6e-16 12:5e-13 16:3e-10 20:8e-08 24:1e-05 28:6e-04 | max local (in-window) |q_l^T q_k| = 7e-16
+   HL (exact, ORTH)       loss t=4,8,..: 4:4e-16 8:7e-16 12:7e-13 16:2e-10 20:1e-07 24:2e-05 28:2e-04 | max local (in-window) |q_l^T q_k| = 7e-11
+== checkerboard equispaced, m=30
+   BJ (CGS once)          loss t=4,8,..: 4:9e-16 8:9e-16 12:1e-15 16:4e-15 20:1e-14 24:4e-14 28:1e-13 | max local (in-window) |q_l^T q_k| = 1e-15
+   block window CGS2      loss t=4,8,..: 4:6e-16 8:9e-16 12:9e-16 16:1e-15 20:4e-15 24:2e-14 28:4e-14 | max local (in-window) |q_l^T q_k| = 7e-16
+   HL (exact, ORTH)       loss t=4,8,..: 4:9e-16 8:9e-16 12:9e-16 16:1e-15 20:3e-15 24:1e-14 28:5e-14 | max local (in-window) |q_l^T q_k| = 8e-16

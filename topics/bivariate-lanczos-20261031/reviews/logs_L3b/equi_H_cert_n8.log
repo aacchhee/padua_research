@@ -1,0 +1,22 @@
+equi_H_cert.py nmin=8 nmax=8 dps=60 (mpmath 1.3.0)
+equi n=8: M=45 dim Pi_2n+1=171 rank J=135 (3M=135) dim S1=36 (expected 36) rank Hess|S1=36 (injective True)  [9.3s exact setup]
+      barrier t=1e0: s = -89.98889 (gap bound 90.0)
+      barrier t=1e2: s = -0.88895576 (gap bound 0.9)
+      barrier t=1e4: s = -0.0042377138 (gap bound 0.009)
+      barrier t=1e6: s = -5.0911632e-5 (gap bound 9.0e-5)
+      barrier t=1e8: s = -5.4372452e-7 (gap bound 9.0e-7)
+      barrier t=1e10: s = -5.9118824e-9 (gap bound 9.0e-9)
+      barrier t=1e12: s = -5.8552037e-11 (gap bound 9.0e-11)
+      barrier t=1e14: s = -5.6748663e-13 (gap bound 9.0e-13)
+      barrier t=1e16: s = -1.4665979e-15 (gap bound 9.0e-15)
+      barrier t=1e18: s = 4.0705108e-15 (gap bound 9.0e-17)
+      barrier t=1e20: s = 4.1240615e-15 (gap bound 9.0e-19)
+      barrier t=1e22: s = 4.1245865e-15 (gap bound 9.0e-21)
+      barrier t=1e24: s = 4.1245918e-15 (gap bound 9.0e-23)
+   DUAL high-precision optimum t_D = 4.124591777e-15  (normalisation sum tr A_i = 1)  [933.1s]
+   DUAL exact check PASS: G v = 0 exactly, all 45 blocks PD exactly; exact min det/tr (normalised) = 2.0623e-15 => (H) CERTIFIED
+   verdict n=8: (H) CERTIFIED  [933.2s]
+
+real	15m33.330s
+user	9m26.055s
+sys	0m0.703s

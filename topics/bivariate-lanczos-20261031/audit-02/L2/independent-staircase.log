@@ -1,0 +1,14 @@
+{"mode": "all_selections_maximal_windows", "n": 1, "selections": 1, "satisfying_C": 1, "dependencies_verified": 0}
+{"mode": "all_selections_maximal_windows", "n": 2, "selections": 2, "satisfying_C": 2, "dependencies_verified": 10}
+{"mode": "all_selections_maximal_windows", "n": 3, "selections": 8, "satisfying_C": 4, "dependencies_verified": 100}
+{"mode": "all_selections_maximal_windows", "n": 4, "selections": 64, "satisfying_C": 8, "dependencies_verified": 608}
+{"mode": "all_selections_maximal_windows", "n": 5, "selections": 1024, "satisfying_C": 16, "dependencies_verified": 2880}
+{"mode": "all_selections_maximal_windows", "n": 6, "selections": 32768, "satisfying_C": 32, "dependencies_verified": 11680}
+{"mode": "all_staircases_maximal_windows", "n": 7, "selections": 64, "dependencies_verified": 42560}
+{"mode": "all_staircases_maximal_windows", "n": 8, "selections": 128, "dependencies_verified": 143360}
+{"mode": "all_staircases_maximal_windows", "n": 9, "selections": 256, "dependencies_verified": 454656}
+{"mode": "all_staircases_maximal_windows", "n": 10, "selections": 512, "dependencies_verified": 1374720}
+{"mode": "all_staircases_maximal_windows", "n": 11, "selections": 1024, "dependencies_verified": 3998720}
+{"mode": "all_staircases_maximal_windows", "n": 12, "selections": 2048, "dependencies_verified": 11264000}
+{"mode": "all_staircases_maximal_windows", "n": 13, "selections": 4096, "dependencies_verified": 30883840}
+{"mode": "all_staircases_maximal_windows", "n": 14, "selections": 8192, "dependencies_verified": 82747392}

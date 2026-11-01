@@ -1,0 +1,12 @@
+{"mode": "fresh_size_fit", "family": "random", "method": "givens-scheme", "min_M": 0, "rows": 35, "slope": 2.871520110218275, "ci95": [1.7857756610447357, 3.957264559391814], "df": 5}
+{"mode": "fresh_size_fit", "family": "random", "method": "givens-scheme", "min_M": 496, "rows": 20, "slope": 5.062389781568158, "ci95": [2.4208817363851813, 7.703897826751135], "df": 2}
+{"mode": "fresh_size_fit", "family": "random", "method": "givens-largest", "min_M": 0, "rows": 35, "slope": 1.8414122635460366, "ci95": [1.331724357556572, 2.351100169535501], "df": 5}
+{"mode": "fresh_size_fit", "family": "random", "method": "givens-largest", "min_M": 496, "rows": 20, "slope": 2.729981007076059, "ci95": [0.7010778826575619, 4.758884131494556], "df": 2}
+{"mode": "fresh_size_fit", "family": "random", "method": "hl", "min_M": 0, "rows": 35, "slope": 2.276194520508458, "ci95": [1.6605506301833097, 2.891838410833606], "df": 5}
+{"mode": "fresh_size_fit", "family": "random", "method": "hl", "min_M": 496, "rows": 20, "slope": 3.5181692870949437, "ci95": [1.9520923183957644, 5.084246255794123], "df": 2}
+{"mode": "fresh_size_fit", "family": "random", "method": "bj", "min_M": 0, "rows": 35, "slope": 2.760665045485297, "ci95": [2.143810081150156, 3.3775200098204374], "df": 5}
+{"mode": "fresh_size_fit", "family": "random", "method": "bj", "min_M": 496, "rows": 20, "slope": 3.7302442044321413, "ci95": [3.2851148097551004, 4.175373599109182], "df": 2}
+{"mode": "fresh_size_fit", "family": "random", "method": "cgs2", "min_M": 0, "rows": 35, "slope": 1.569517455911446, "ci95": [1.0127359516802774, 2.1262989601426145], "df": 5}
+{"mode": "fresh_size_fit", "family": "random", "method": "cgs2", "min_M": 496, "rows": 20, "slope": 2.7320581312693326, "ci95": [1.6746767594608192, 3.789439503077846], "df": 2}
+{"mode": "fresh_size_fit", "family": "random", "method": "hh", "min_M": 0, "rows": 35, "slope": 2.1137409435323806, "ci95": [1.6025651094002376, 2.6249167776645237], "df": 5}
+{"mode": "fresh_size_fit", "family": "random", "method": "hh", "min_M": 496, "rows": 20, "slope": 3.011085612446623, "ci95": [2.4206020541092417, 3.6015691707840047], "df": 2}

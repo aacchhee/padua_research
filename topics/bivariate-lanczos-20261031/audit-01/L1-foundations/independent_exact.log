@@ -1,0 +1,32 @@
+{
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "numpy": "2.3.5",
+  "seed": "none; deterministic inputs",
+  "results": {
+    "101_exact_structural_zeros": 55,
+    "401_n1_affine_codimension": 2,
+    "401_n1_orthogonalized_staggered_starts_rank": 3,
+    "401_n2_affine_codimension": 3,
+    "401_n2_orthogonalized_staggered_starts_rank": 6,
+    "108_pencil_shape_rank": [
+      6,
+      6,
+      5
+    ],
+    "108_normalized_pencil_shape_rank": [
+      7,
+      6,
+      6
+    ],
+    "108_degree_only_parent_counterexample_later_coefficient": "sqrt(5)/3",
+    "108_variable_swap_first_degree_overlap": "sqrt(5)/5",
+    "103_matrix_identity_complex_dense_skew": "exact zero",
+    "104_residual_and_node_identities": "exact zero",
+    "106_exact_omega_pairs": 39,
+    "102_shear_cgs_max_residual_over_first_order_bound": 0.04154676124887051,
+    "102_shear_orth_max_residual_over_first_order_bound": 0.024836974531365904,
+    "102_triangle_cgs_max_residual_over_first_order_bound": 0.06623355670748965,
+    "102_triangle_orth_max_residual_over_first_order_bound": 0.03504357784681721
+  }
+}

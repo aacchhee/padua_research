@@ -1,0 +1,143 @@
+fam          n order  nsing    minsig    scheme   largest     ratio cat
+padua_cub   10 gepp       0   1.3e-01   4.5e-15   5.7e-15   1.3e+00 
+padua_cub   10 given     58   0.0e+00   4.4e-15   4.0e-15   9.0e-01 
+padua_cub   10 rand1      0   1.4e-03   6.0e-15   5.1e-15   8.6e-01 
+padua_cub   10 rand2      0   7.2e-04   5.3e-15   5.1e-15   9.5e-01 
+padua_cub   10 rand3      0   1.3e-03   5.0e-15   5.4e-15   1.1e+00 
+padua_cub   10 rpiv1      0   3.5e-02   5.4e-15   4.6e-15   8.5e-01 
+padua_cub   10 rpiv2      0   2.2e-02   4.5e-15   4.3e-15   9.5e-01 
+padua_cub   10 rpiv3      0   2.6e-02   5.9e-15   4.9e-15   8.3e-01 
+padua_cub   10 sortx     58   0.0e+00   3.4e-15   3.7e-15   1.1e+00 
+padua_cub   15 gepp       0   7.8e-02   1.0e-14   1.3e-14   1.3e+00 
+padua_cub   15 given    126   0.0e+00   7.9e-15   8.5e-15   1.1e+00 
+padua_cub   15 rand1      0   4.6e-04   1.0e-14   1.1e-14   1.1e+00 
+padua_cub   15 rand2      4   4.8e-17   1.1e-14   1.4e-14   1.3e+00 
+padua_cub   15 rand3      0   2.2e-05   1.1e-14   1.5e-14   1.4e+00 
+padua_cub   15 rpiv1      0   3.0e-03   1.0e-14   1.6e-14   1.6e+00 
+padua_cub   15 rpiv2      0   1.1e-02   1.1e-14   1.3e-14   1.2e+00 
+padua_cub   15 rpiv3      0   4.8e-03   1.1e-14   1.5e-14   1.4e+00 
+padua_cub   15 sortx    125   0.0e+00   7.2e-15   8.5e-15   1.2e+00 
+padua_cub   20 gepp       0   6.2e-02   1.9e-14   2.8e-14   1.5e+00 
+padua_cub   20 given    218   0.0e+00   9.9e-15   1.4e-14   1.4e+00 
+padua_cub   20 rand1      0   8.0e-07   2.0e-14   8.9e-14   4.4e+00 
+padua_cub   20 rand2      0   3.0e-05   2.0e-14   9.3e-14   4.7e+00 
+padua_cub   20 rand3      0   2.6e-07   1.9e-14   6.1e-14   3.3e+00 
+padua_cub   20 rpiv1      0   4.0e-03   1.8e-14   7.1e-14   4.0e+00 
+padua_cub   20 rpiv2      0   6.4e-03   2.0e-14   3.4e-14   1.7e+00 
+padua_cub   20 rpiv3      0   7.6e-03   1.8e-14   3.0e-14   1.7e+00 
+padua_cub   20 sortx    218   0.0e+00   1.1e-14   1.3e-14   1.1e+00 
+padua_cub   30 gepp       0   2.9e-02   3.8e-14   4.2e-13   1.1e+01 
+padua_cub   30 given    478   0.0e+00   2.3e-14   8.7e-09   3.9e+05 CAT
+padua_cub   30 rand1      0   1.9e-07   4.7e-14   2.0e-12   4.2e+01 
+padua_cub   30 rand2      0   2.4e-07   4.4e-14   1.5e-12   3.3e+01 
+padua_cub   30 rand3      0   5.7e-07   7.4e-14   9.7e-13   1.3e+01 
+padua_cub   30 rpiv1      0   4.1e-03   4.0e-14   1.1e-12   2.7e+01 
+padua_cub   30 rpiv2      0   8.9e-04   3.9e-14   8.7e-13   2.2e+01 
+padua_cub   30 rpiv3      0   2.3e-03   4.5e-14   1.5e-12   3.3e+01 
+padua_cub   30 sortx    478   0.0e+00   2.3e-14   3.0e-11   1.3e+03 
+padua_cub   40 gepp       0   1.5e-02   7.2e-14   1.8e-11   2.5e+02 
+padua_cub   40 given    838   0.0e+00   4.1e-14   1.5e-07   3.7e+06 CAT
+padua_cub   40 rand1      0   3.8e-07   1.8e-13   1.5e-10   8.4e+02 
+padua_cub   40 rand2      1   0.0e+00   9.0e-14   8.7e-11   9.6e+02 
+padua_cub   40 rand3      0   7.1e-08   6.9e-14   1.1e-10   1.7e+03 CAT
+padua_cub   40 rpiv1      0   5.9e-04   7.1e-14   1.8e-11   2.5e+02 
+padua_cub   40 rpiv2      0   6.3e-04   6.0e-14   2.8e-11   4.6e+02 
+padua_cub   40 rpiv3      0   1.0e-03   7.8e-14   5.7e-11   7.2e+02 
+padua_cub   40 sortx    838   0.0e+00   4.4e-14   3.5e-07   8.1e+06 CAT
+padua_cub   50 gepp       0   7.5e-03   1.2e-13   9.3e-10   7.6e+03 CAT
+padua_cub   50 given   1298   0.0e+00   6.0e-14   3.4e-04   5.6e+09 CAT
+padua_cub   50 rand1      0   2.3e-08   1.5e-13   7.1e-09   4.7e+04 CAT
+padua_cub   50 rand2      0   3.5e-08   3.2e-13   5.0e-08   1.6e+05 CAT
+padua_cub   50 rand3      0   3.0e-09   1.6e-12   5.9e-07   3.6e+05 CAT
+padua_cub   50 rpiv1      0   8.1e-04   1.1e-13   3.1e-09   2.8e+04 CAT
+padua_cub   50 rpiv2      0   4.7e-04   1.1e-13   1.6e-09   1.5e+04 CAT
+padua_cub   50 rpiv3      0   8.0e-04   1.1e-13   9.2e-10   8.6e+03 CAT
+padua_cub   50 sortx   1298   0.0e+00   6.0e-14   1.9e-06   3.1e+07 CAT
+padua_rand  10 gepp       0   1.3e-01   4.8e-15   5.7e-15   1.2e+00 
+padua_rand  10 given     58   0.0e+00   4.0e-15   3.6e-15   9.0e-01 
+padua_rand  10 rand1      0   1.4e-03   5.9e-15   5.2e-15   8.9e-01 
+padua_rand  10 rand2      0   7.2e-04   5.4e-15   4.1e-15   7.7e-01 
+padua_rand  10 rand3      0   1.3e-03   5.7e-15   4.8e-15   8.5e-01 
+padua_rand  10 rpiv1      0   3.5e-02   4.8e-15   5.1e-15   1.1e+00 
+padua_rand  10 rpiv2      0   2.2e-02   5.4e-15   5.8e-15   1.1e+00 
+padua_rand  10 rpiv3      0   2.6e-02   4.8e-15   4.1e-15   8.6e-01 
+padua_rand  10 sortx     58   0.0e+00   4.3e-15   3.4e-15   8.0e-01 
+padua_rand  15 gepp       0   7.8e-02   1.1e-14   1.3e-14   1.2e+00 
+padua_rand  15 given    126   0.0e+00   7.1e-15   1.1e-02   1.6e+12 CAT
+padua_rand  15 rand1      0   4.6e-04   1.1e-14   1.5e-14   1.3e+00 
+padua_rand  15 rand2      4   4.8e-17   1.1e-14   1.3e-14   1.1e+00 
+padua_rand  15 rand3      0   2.2e-05   1.0e-14   1.5e-14   1.5e+00 
+padua_rand  15 rpiv1      0   3.0e-03   1.1e-14   2.0e-14   1.9e+00 
+padua_rand  15 rpiv2      0   1.1e-02   1.0e-14   1.2e-14   1.2e+00 
+padua_rand  15 rpiv3      0   4.8e-03   9.7e-15   1.6e-14   1.6e+00 
+padua_rand  15 sortx    125   0.0e+00   9.1e-15   9.4e-15   1.0e+00 
+padua_rand  20 gepp       0   6.2e-02   1.9e-14   3.7e-14   2.0e+00 
+padua_rand  20 given    218   0.0e+00   1.4e-14   1.4e-03   9.9e+10 CAT
+padua_rand  20 rand1      0   8.0e-07   2.2e-14   1.1e-13   5.1e+00 
+padua_rand  20 rand2      0   3.0e-05   2.0e-14   4.0e-14   2.0e+00 
+padua_rand  20 rand3      0   2.6e-07   1.8e-14   5.2e-14   2.9e+00 
+padua_rand  20 rpiv1      0   4.0e-03   2.3e-14   5.2e-14   2.3e+00 
+padua_rand  20 rpiv2      0   6.4e-03   2.0e-14   5.2e-14   2.7e+00 
+padua_rand  20 rpiv3      0   7.6e-03   2.0e-14   7.6e-14   3.7e+00 
+padua_rand  20 sortx    218   0.0e+00   1.4e-14   3.6e-14   2.7e+00 
+padua_rand  30 gepp       0   2.9e-02   4.2e-14   5.2e-13   1.2e+01 
+padua_rand  30 given    478   0.0e+00   2.4e-14   6.1e-03   2.5e+11 CAT
+padua_rand  30 rand1      0   1.9e-07   5.2e-14   1.6e-12   3.2e+01 
+padua_rand  30 rand2      0   2.4e-07   8.2e-14   2.8e-12   3.4e+01 
+padua_rand  30 rand3      0   5.7e-07   7.5e-14   1.1e-12   1.4e+01 
+padua_rand  30 rpiv1      0   4.1e-03   4.7e-14   2.0e-12   4.3e+01 
+padua_rand  30 rpiv2      0   8.9e-04   4.4e-14   1.5e-12   3.5e+01 
+padua_rand  30 rpiv3      0   2.3e-03   4.5e-14   2.0e-12   4.4e+01 
+padua_rand  30 sortx    478   0.0e+00   2.6e-14   2.4e-09   9.2e+04 CAT
+padua_rand  40 gepp       0   1.5e-02   9.1e-14   3.6e-11   3.9e+02 
+padua_rand  40 given    838   0.0e+00   4.1e-14   1.1e-04   2.7e+09 CAT
+padua_rand  40 rand1      0   3.8e-07   2.3e-13   1.9e-10   8.4e+02 
+padua_rand  40 rand2      1   0.0e+00   1.3e-13   1.8e-10   1.5e+03 CAT
+padua_rand  40 rand3      0   7.1e-08   8.1e-14   1.6e-10   1.9e+03 CAT
+padua_rand  40 rpiv1      0   5.9e-04   6.9e-14   4.4e-11   6.4e+02 
+padua_rand  40 rpiv2      0   6.3e-04   8.0e-14   7.3e-11   9.1e+02 
+padua_rand  40 rpiv3      0   1.0e-03   8.2e-14   3.7e-11   4.6e+02 
+padua_rand  40 sortx    838   0.0e+00   4.0e-14   1.0e-06   2.5e+07 CAT
+padua_rand  50 gepp       0   7.5e-03   1.2e-13   3.6e-10   2.9e+03 CAT
+padua_rand  50 given   1298   0.0e+00   6.6e-14   2.1e-04   3.1e+09 CAT
+padua_rand  50 rand1      0   2.3e-08   3.1e-13   5.2e-09   1.7e+04 CAT
+padua_rand  50 rand2      0   3.5e-08   3.7e-13   6.4e-08   1.7e+05 CAT
+padua_rand  50 rand3      0   3.0e-09   3.4e-12   1.4e-07   4.2e+04 CAT
+padua_rand  50 rpiv1      0   8.1e-04   1.1e-13   2.3e-09   2.0e+04 CAT
+padua_rand  50 rpiv2      0   4.7e-04   1.2e-13   2.8e-09   2.4e+04 CAT
+padua_rand  50 rpiv3      0   8.0e-04   1.3e-13   9.8e-10   7.4e+03 CAT
+padua_rand  50 sortx   1298   0.0e+00   6.6e-14   8.9e-04   1.4e+10 CAT
+
+2x2 table over all joined (family, n, order) rows with n >= 20: rows = catastrophe, cols = non-unisolvent order (nsing > 0)
+  catastrophe=True : non-unisolvent  13   all-prefixes-unisolvent  16
+  catastrophe=False: non-unisolvent   5   all-prefixes-unisolvent  38
+
+KILL TEST (catastrophe on an all-unisolvent order, n>=20): FIRES 16 orders
+    padua_cub 40 rand3 min sigma 7.1e-08 ratio 1.7e+03 largest 1.1e-10
+    padua_cub 50 gepp min sigma 7.5e-03 ratio 7.6e+03 largest 9.3e-10
+    padua_cub 50 rand1 min sigma 2.3e-08 ratio 4.7e+04 largest 7.1e-09
+    padua_cub 50 rand2 min sigma 3.5e-08 ratio 1.6e+05 largest 5.0e-08
+    padua_cub 50 rand3 min sigma 3.0e-09 ratio 3.6e+05 largest 5.9e-07
+    padua_cub 50 rpiv1 min sigma 8.1e-04 ratio 2.8e+04 largest 3.1e-09
+    padua_cub 50 rpiv2 min sigma 4.7e-04 ratio 1.5e+04 largest 1.6e-09
+    padua_cub 50 rpiv3 min sigma 8.0e-04 ratio 8.6e+03 largest 9.2e-10
+    padua_rand 40 rand3 min sigma 7.1e-08 ratio 1.9e+03 largest 1.6e-10
+    padua_rand 50 gepp min sigma 7.5e-03 ratio 2.9e+03 largest 3.6e-10
+    padua_rand 50 rand1 min sigma 2.3e-08 ratio 1.7e+04 largest 5.2e-09
+    padua_rand 50 rand2 min sigma 3.5e-08 ratio 1.7e+05 largest 6.4e-08
+    padua_rand 50 rand3 min sigma 3.0e-09 ratio 4.2e+04 largest 1.4e-07
+    padua_rand 50 rpiv1 min sigma 8.1e-04 ratio 2.0e+04 largest 2.3e-09
+    padua_rand 50 rpiv2 min sigma 4.7e-04 ratio 2.4e+04 largest 2.8e-09
+    padua_rand 50 rpiv3 min sigma 8.0e-04 ratio 7.4e+03 largest 9.8e-10
+   of which with exact min sigma >= 1e-8 (pre-registered tolerance): 14
+
+Spearman(log10 min-sigma, log10 largest/scheme), all n>=20 rows: SignificanceResult(statistic=np.float64(-0.5403268497925023), pvalue=np.float64(9.633046815509766e-07))
+Spearman among all-unisolvent orders only: SignificanceResult(statistic=np.float64(-0.45580922464500784), pvalue=np.float64(0.0005329089612633731))
+
+per n: median log10(ratio) by order class
+  n= 10 gepp/rpiv: 1.0e+00(k=8)  given: 9.0e-01(k=2)  rand: 8.7e-01(k=6)  sortx: 9.5e-01(k=2)
+  n= 15 gepp/rpiv: 1.4e+00(k=8)  given: 7.9e+11(k=2)  rand: 1.3e+00(k=6)  sortx: 1.1e+00(k=2)
+  n= 20 gepp/rpiv: 2.1e+00(k=8)  given: 5.0e+10(k=2)  rand: 3.8e+00(k=6)  sortx: 1.9e+00(k=2)
+  n= 30 gepp/rpiv: 3.0e+01(k=8)  given: 1.3e+11(k=2)  rand: 3.3e+01(k=6)  sortx: 4.7e+04(k=2)
+  n= 40 gepp/rpiv: 4.6e+02(k=8)  given: 1.4e+09(k=2)  rand: 1.2e+03(k=6)  sortx: 1.6e+07(k=2)
+  n= 50 gepp/rpiv: 1.2e+04(k=8)  given: 4.4e+09(k=2)  rand: 1.0e+05(k=6)  sortx: 6.8e+09(k=2)

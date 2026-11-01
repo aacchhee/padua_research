@@ -1,0 +1,27 @@
+{
+  "candidate": "d55504eef364542a50b455b61fb6c48ed81996be",
+  "baseline": "183d33760e8d6c3ecdeb588576bd65ba312f65fe",
+  "check_command": "python3 -I topics/bivariate-lanczos-20261031/audit-05/check_integration_independent.py d55504eef364542a50b455b61fb6c48ed81996be",
+  "result": "STOPPED: default allocator changed a submitted generated row file in an isolated exact-candidate archive",
+  "allocator_command": "python3 -I topics/bivariate-lanczos-20261031/pr-prep/allocate.py",
+  "allocator_exit": 0,
+  "changed_file": "topics/bivariate-lanczos-20261031/pr-prep/negative.rows.md",
+  "changed_rows": {
+    "PD-N009": "Contextual IDEA-138, -115 converts to final IDs, but the 220-character scope cutoff clips the second ID.",
+    "PD-N018": "Norm bars change from slash replacement to properly escaped bars.",
+    "PD-N025": "Stale MEASURED title changes to the exact n=3 contrast title used in the new proof-status row."
+  },
+  "independent_diagnostic": "A second disposable git-archive run compared every file before/after and confirmed this was the sole changed path.",
+  "checks_completed_before_failure": [
+    "protected scientific/evidence and audit-01 through audit-04 blobs unchanged",
+    "77 exact theory files and statuses unchanged",
+    "404 frozen allocations unchanged",
+    "77 manually reconstructed dependency sets match",
+    "100 IDEA rows and generated/shared row synchronization pass at submitted bytes",
+    "292 numbered literature statement blocks preserved",
+    "227 topic literature paths match source keys and retained headings",
+    "developer integration checker exits 0"
+  ],
+  "auditor_helper_note": "An earlier helper invocation stopped because it expected Markdown links in every literature record cell. Some accepted cells contain plain paths. The independent helper was corrected to accept both; this was not a developer defect.",
+  "repository_mutations": "None by tested allocators; all executions used disposable archives. Auditor only writes audit-05 artifacts."
+}

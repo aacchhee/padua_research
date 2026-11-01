@@ -1,0 +1,4 @@
+[309(c) n=1] generators vanish at all nodes: True; top forms -lam_m x^m y^(n+1-m), 2^(n-1) x^(n+1): True; interior-gradient formula at 0 interior nodes: True
+Padua n=1: sum_i G_i A_i G_i^T is Hankel (exact): True; anti-diagonal values: ['66686011981/38000000000', '0', '6162146871/9500000000', '0', '3718546669/2375000000']
+[309(c) n=2] generators vanish at all nodes: True; top forms -lam_m x^m y^(n+1-m), 2^(n-1) x^(n+1): True; interior-gradient formula at 1 interior nodes: True
+Padua n=2: sum_i G_i A_i G_i^T is Hankel (exact): True; anti-diagonal values: ['110103009830167701/67654292000000000', '0', '167274617179173/211419662500000', '0', '3924717207715407/4228393250000000', '0', '27936693363482037/16913573000000000']

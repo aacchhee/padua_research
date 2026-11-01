@@ -1,0 +1,78 @@
+# l1_c01_u53_rerun.py numpy=2.5.3 noise scale u = 2^-53
+## IDEA-118 (H_term row is the criterion; other rows unchanged by the noise scale)
+== cubic s|s|^2, m=30 (M=496): max off-pattern |h_BJ| 2.1e-13, |phi| 2.1e-13, |rho| 1.1e-16
+   BJ loss L(n)                               n8:6.66e-16 n12:4.01e-14 n16:1.80e-11 n20:7.75e-09 n24:6.59e-07
+   D(c* + h_BJ off)                           n8:2.79e-16 n12:4.01e-14 n16:1.80e-11 n20:7.75e-09 n24:6.59e-07
+   D(c* + phi off)  [feedback part]           n8:8.16e-15 n12:2.67e-13 n16:3.02e-10 n20:2.79e-08 n24:1.77e-06
+   D(c* + rho off)  [rounding part]           n8:8.16e-15 n12:2.68e-13 n16:3.03e-10 n20:3.53e-08 n24:2.11e-06
+   D(c* + term-wise rounding model), median   n8:1.60e-15 n12:4.73e-13 n16:9.26e-11 n20:1.80e-08 n24:1.07e-06
+   D(c* + |h_BJ| random signs), median        n8:1.40e-13 n12:1.04e-10 n16:5.51e-08 n20:1.09e-05 n24:4.60e-04
+   top-100 gain entries (n<=20): median gain 4.7e+12; medians |h_BJ| 2.3e-20, |phi| 2.3e-20, |rho| 3.1e-23, u*s 2.2e-22, u*s2 6.9e-23
+   gain*|h_BJ| over all off-pattern entries: largest 5.7e-06, 10th 1.9e-06, 100th 2.0e-08
+   gain*|phi| over all off-pattern entries: largest 5.7e-06, 10th 1.9e-06, 100th 2.0e-08
+   gain*|rho| over all off-pattern entries: largest 3.4e-08, 10th 4.5e-09, 100th 9.6e-11
+   gain*u*s2 over all off-pattern entries:  largest 1.3e-08, 10th 5.5e-09, 100th 2.2e-10
+## IDEA-119
+== quadratic s|s|, m=30 (M=496, weights 1.3e-43..4.0e-01)
+   BJ loss L(n)   n8:6.66e-16 n12:1.89e-14 n16:6.59e-13 n20:1.83e-11 n24:2.14e-10
+   estimate E(n)  n8:3.61e-16 n12:1.34e-14 n16:3.56e-13 n20:8.73e-12 n24:1.45e-10
+   D(c*) floor    n8:3.52e-17 n12:3.60e-17 n16:4.25e-15 n20:4.27e-15 n24:4.28e-15
+   ratio E/L     n8:0.54 n12:0.71 n16:0.54 n20:0.48 n24:0.68
+   verdict on quadratic s|s|, m=30: survives
+== quartic s|s|^3, m=30 (M=496, weights 8.6e-91..4.9e-01)
+   BJ loss L(n)   n8:4.44e-16 n12:1.14e-13 n16:3.18e-10 n20:1.80e-06 n24:3.00e-03
+   estimate E(n)  n8:7.19e-15 n12:8.30e-12 n16:1.90e-08 n20:2.00e-05 n24:6.65e-03
+   D(c*) floor    n8:5.77e-17 n12:5.77e-17 n16:7.41e-15 n20:1.02e-14 n24:1.02e-14
+   ratio E/L     n8:16.19 n12:73.13 n16:59.73 n20:11.11 n24:2.22
+   verdict on quartic s|s|^3, m=30: inconclusive
+== cubic s|s|^2, m=36 (M=703, weights 4.4e-82..4.7e-01)
+   BJ loss L(n)   n8:8.88e-16 n12:9.48e-14 n16:3.95e-11 n20:7.46e-09 n24:2.44e-06
+   estimate E(n)  n8:2.16e-15 n12:6.06e-13 n16:2.08e-10 n20:4.78e-08 n24:7.31e-06
+   D(c*) floor    n8:8.60e-17 n12:9.66e-17 n16:9.66e-17 n20:6.84e-15 n24:8.60e-15
+   ratio E/L     n8:2.44 n12:6.39 n16:5.25 n20:6.41 n24:3.00
+   verdict on cubic s|s|^2, m=36: survives
+== Chebyshev-Lobatto, m=30 (M=496, weights 5.4e-04..2.2e-03)
+   BJ loss L(n)   n8:2.48e-15 n12:2.92e-15 n16:2.92e-15 n20:3.05e-15 n24:3.21e-15
+   estimate E(n)  n8:5.93e-17 n12:9.68e-17 n16:5.93e-16 n20:1.22e-15 n24:1.22e-15
+   D(c*) floor    n8:2.20e-17 n12:2.20e-17 n16:5.93e-16 n20:1.22e-15 n24:1.22e-15
+   ratio E/L     n8:0.02 n12:0.03 n16:0.20 n20:0.40 n24:0.38
+   verdict on Chebyshev-Lobatto, m=30: survives
+# IDEA-119 overall: inconclusive
+## IDEA-120
+== cubic s|s|^2, m=30 (M=496)
+   BJ double L(n)    n8:6.66e-16 n12:4.01e-14 n16:1.80e-11 n20:7.75e-09 n24:6.59e-07
+   closed loop C(n)  n8:9.13e-17 n12:9.87e-15 n16:5.21e-12 n20:2.02e-09 n24:2.68e-07
+   BJ long double    n8:4.88e-19 n12:2.24e-17 n16:5.94e-15 n20:1.61e-12 n24:4.45e-10
+   ratio C/L         n8:0.14 n12:0.25 n16:0.29 n20:0.26 n24:0.41
+   verdict on cubic s|s|^2, m=30: survives
+== equispaced, m=30 (M=496)
+   BJ double L(n)    n8:8.88e-16 n12:1.05e-15 n16:4.17e-15 n20:1.49e-14 n24:4.30e-14
+   closed loop C(n)  n8:6.94e-17 n12:1.34e-16 n16:4.84e-16 n20:1.86e-15 n24:7.01e-15
+   BJ long double    n8:5.59e-19 n12:1.03e-18 n16:2.83e-18 n20:1.10e-17 n24:3.51e-17
+   ratio C/L         n8:0.08 n12:0.13 n16:0.12 n20:0.12 n24:0.16
+   verdict on equispaced, m=30: survives
+== quadratic s|s|, m=30 (M=496)
+   BJ double L(n)    n8:6.66e-16 n12:1.89e-14 n16:6.59e-13 n20:1.83e-11 n24:2.14e-10
+   closed loop C(n)  n8:9.40e-17 n12:2.20e-15 n16:1.09e-13 n20:3.39e-12 n24:5.40e-11
+   BJ long double    n8:7.05e-19 n12:4.21e-18 n16:1.37e-16 n20:5.43e-15 n24:6.57e-14
+   ratio C/L         n8:0.14 n12:0.12 n16:0.17 n20:0.19 n24:0.25
+   verdict on quadratic s|s|, m=30: inconclusive
+== quartic s|s|^3, m=30 (M=496)
+   BJ double L(n)    n8:4.44e-16 n12:1.14e-13 n16:3.18e-10 n20:1.80e-06 n24:3.00e-03
+   closed loop C(n)  n8:9.31e-17 n12:5.13e-14 n16:1.68e-10 n20:7.41e-07 n24:7.12e-04
+   BJ long double    n8:5.96e-19 n12:7.11e-17 n16:1.70e-13 n20:3.48e-10 n24:5.38e-07
+   ratio C/L         n8:0.21 n12:0.45 n16:0.53 n20:0.41 n24:0.24
+   verdict on quartic s|s|^3, m=30: survives
+== cubic s|s|^2, m=36 (M=703)
+   BJ double L(n)    n8:8.88e-16 n12:9.48e-14 n16:3.95e-11 n20:7.46e-09 n24:2.44e-06
+   closed loop C(n)  n8:1.05e-16 n12:1.76e-14 n16:5.52e-12 n20:2.92e-09 n24:5.76e-07
+   BJ long double    n8:4.27e-19 n12:6.90e-18 n16:8.15e-15 n20:5.29e-12 n24:1.73e-09
+   ratio C/L         n8:0.12 n12:0.19 n16:0.14 n20:0.39 n24:0.24
+   verdict on cubic s|s|^2, m=36: inconclusive
+== Chebyshev-Lobatto, m=30 (M=496)
+   BJ double L(n)    n8:2.48e-15 n12:2.92e-15 n16:2.92e-15 n20:3.05e-15 n24:3.21e-15
+   closed loop C(n)  n8:8.06e-17 n12:9.92e-17 n16:1.13e-16 n20:1.27e-16 n24:1.55e-16
+   BJ long double    n8:2.95e-18 n12:4.69e-18 n16:4.78e-18 n20:5.15e-18 n24:5.15e-18
+   ratio C/L         n8:0.03 n12:0.03 n16:0.04 n20:0.04 n24:0.05
+   verdict on Chebyshev-Lobatto, m=30: survives
+# IDEA-120 overall: inconclusive

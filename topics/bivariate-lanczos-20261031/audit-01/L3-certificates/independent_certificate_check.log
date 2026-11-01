@@ -1,0 +1,18 @@
+certificate-data sha256 287e8dd0bdaa60d93d728045fcd47c5c75832813657f4849081fe4b1e0629e8b
+n3 node 0 exact double zero/PD PASS; Taylor margin at published radius 0.04632604664473638
+n3 node 1 exact double zero/PD PASS; Taylor margin at published radius 0.1346481101002742
+n3 node 2 exact double zero/PD PASS; Taylor margin at published radius 0.04632604664473638
+n3 node 3 exact double zero/PD PASS; Taylor margin at published radius 0.04884087946542301
+n3 node 4 exact double zero/PD PASS; Taylor margin at published radius 0.04884087946542301
+n3 node 5 exact double zero/PD PASS; Taylor margin at published radius 0.3115701947661128
+n3 node 6 exact double zero/PD PASS; Taylor margin at published radius 0.04615155158367547
+n3 node 7 exact double zero/PD PASS; Taylor margin at published radius 0.3115701947661128
+n3 node 8 exact double zero/PD PASS; Taylor margin at published radius 0.04980927994058042
+n3 node 9 exact double zero/PD PASS; Taylor margin at published radius 0.04980927994058042
+n3 certificate: PASS; radius 30117029139000/77370908310949543 minimum rigorous Taylor-bracket margin 0.04615155158367547
+interior determinant in (a,b): -4*c*(x - 1)*(x + 1)*(x - y)**2*(x + y)**2*(y - 1)*(y + 1)*(4*c*x**2*y**2 - 4*c*x**2 - 4*c*y**2 + 4*c - 1) PASS
+x=1 scaled discriminant 121*n**2*s/100 + 99*n**2/100 - 52*n*s/5 + 32*s**2/5 PASS
+n4 exceptional edges: exact radical values and positivity PASS
+y=1 scaled discriminant 121*n**2*s/100 + 99*n**2/100 - 399*n*s/50 + 99*n/50 + 32*s**2/5 - 919*s/100 + 99/100 PASS
+corners: exact discriminant and positive diagonal PASS
+all symbolic identities: PASS (integer/rational arithmetic; symbolic n)

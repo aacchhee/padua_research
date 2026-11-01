@@ -1,0 +1,19 @@
+# rv2_certificate triangle m=24 M=325 nmax=12 coordinates=integer python 3.13.18
+# A (full exact Gram-Schmidt, dev products): 4.2s; nonzero coefficients outside the exact window: 0
+# C exact orthogonality: nonzero inner products among 4095 pairs: 0
+# B (moment-matrix LDL^T) agrees exactly with A (node values and D_k): True (8.7s)
+# G(n) in rescaled coordinates: log10 G_int(n) + 2 log10(m/2)
+   n= 2: log10 G =    0.446   (s=(2, 0), k=(2, 1); exact rational with 5/11 bits)
+   n= 3: log10 G =    2.445   (s=(2, 1), k=(3, 2); exact rational with 21/20 bits)
+   n= 4: log10 G =    3.874   (s=(2, 0), k=(4, 3); exact rational with 28/22 bits)
+   n= 5: log10 G =    5.224   (s=(2, 0), k=(5, 4); exact rational with 35/25 bits)
+   n= 6: log10 G =    6.525   (s=(2, 0), k=(6, 5); exact rational with 49/35 bits)
+   n= 7: log10 G =    7.931   (s=(2, 0), k=(7, 5); exact rational with 59/40 bits)
+   n= 8: log10 G =    9.360   (s=(2, 0), k=(8, 6); exact rational with 63/39 bits)
+   n= 9: log10 G =   10.768   (s=(2, 0), k=(9, 7); exact rational with 80/51 bits)
+   n=10: log10 G =   12.172   (s=(2, 0), k=(10, 7); exact rational with 80/47 bits)
+   n=11: log10 G =   13.696   (s=(2, 0), k=(11, 8); exact rational with 99/61 bits)
+   n=12: log10 G =   15.211   (s=(2, 0), k=(12, 9); exact rational with 116/73 bits)
+# criterion: log10 G(12) - log10 G(6) = 8.686  (triangle: >= 6 required; square: <= 2 required)
+# exact rational comparisons (scale-free): G(12) >= 10^6 G(6): True;  G(12) <= 10^2 G(6): False;  G(12) >= 10^3 G(6): True;  G(12) > 10^4 G(6): True
+# total 18.2s

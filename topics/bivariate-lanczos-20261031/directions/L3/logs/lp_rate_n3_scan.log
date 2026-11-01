@@ -1,0 +1,23 @@
+Padua n=3 D=36 dimS1=6 grid R=8 nth=24; z*=[1.01620907 1.02524413] (r=0.03); mode=scan
+  eps=1e-03 delta=0.0  : infeasible
+  eps=1e-03 delta=0.01 : infeasible
+  eps=1e-03 delta=0.02 : infeasible
+  eps=1e-03 delta=0.04 : infeasible
+  eps=1e-03 delta=0.06 : infeasible
+  eps=1e-03 delta=0.08 : infeasible
+  eps=1e-03 delta=0.1  : infeasible
+  eps=1e-03 delta=0.15 : infeasible
+  eps=1e-03 delta=0.2  : infeasible
+  eps=1e-03 delta=0.3  : infeasible
+  eps=1e-03 delta=0.5  : infeasible
+  eps=1e-06 delta=0.0  : infeasible
+  eps=1e-06 delta=0.01 : infeasible
+  eps=1e-06 delta=0.02 : infeasible
+  eps=1e-06 delta=0.04 : infeasible
+  eps=1e-06 delta=0.06 : infeasible
+  eps=1e-06 delta=0.08 : infeasible
+  eps=1e-06 delta=0.1  : infeasible
+  eps=1e-06 delta=0.15 : infeasible
+  eps=1e-06 delta=0.2  : infeasible
+  eps=1e-06 delta=0.3  : infeasible
+  eps=1e-06 delta=0.5  : infeasible
