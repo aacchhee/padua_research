@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-117 — Measured on two Harris–Simanek checkerboards (m = 30, dev rule, degrees ≤ 20): off-pattern gains reach 10¹⁴ while on-pattern gains stay ≤ 5·10³, and the first-order off-pattern coefficient channel reproduces the clustered-checkerboard loss
 
+Final ID: **PD-T045** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: gain census; coefficient-channel measurement; first-order off-pattern prediction; former PD-T?…-114 part 5; "the clustered-checkerboard loss is this first-order channel" (former title clause of PD-T?…-114).
 Split from: PD-T?bivariate-lanczos-claude-114, part 5 ([FP, MEASURED]), its closing reading ("So on the clustered checkerboard …"), and the title clause "the clustered-checkerboard loss is this first-order channel". Split 2026-11-01T08:33:59+01:00, Codex audit-01, L1-later finding LL-M2. Two items stay in PD-T?…-114 as a verification record under Checks: part 5's first bullet (the formula check) and the univariate orthonormality numbers. The original wording of part 5 is preserved in PD-T?…-114's History.

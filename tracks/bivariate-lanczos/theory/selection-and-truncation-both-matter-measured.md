@@ -1,5 +1,7 @@
 # PD-N?bivariate-lanczos-claude-105 — The non-product growth is not caused by "one relation per column" as such, and the window truncation is a cause on some sets (refutes the PD-T?…-109 Consequence)
 
+Final ID: **PD-N011** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: selection-rule dependence; parent-rule dependence; truncation vs single-pass CGS; recon-01 B1.
 Split from: PD-T?bivariate-lanczos-claude-109 ("Consequence" sentence).

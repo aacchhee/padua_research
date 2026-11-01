@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-501 — Worst-case rotation-count bound for point-by-point Givens updating
 
+Final ID: **PD-T077** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: Higham-style rotation bound; Theorem A (L5 R02); IDEA?bivariate-lanczos-claude-503.
 Split from: none (new L5 result; routine instance of rotation error analysis).

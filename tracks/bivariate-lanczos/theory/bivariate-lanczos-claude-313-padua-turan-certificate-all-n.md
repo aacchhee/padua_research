@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-313 — Explicit certificate: for every n ≥ 4, P_n = 9(g_1² − ½g_0g_2) + (g_2² − g_1g_3) has double zeros and positive definite Hessians at all Padua nodes
 
+Final ID: **PD-T069** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: Padua Turán certificate; all-n robust failure of (H) for Padua; R05.
 Split from: none (supporting result for PD-N?…-303).

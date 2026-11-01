@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-115 — On clustered product-type checkerboards (dev rule) closed-loop dot-product rounding through the off-pattern gains reproduces the coefficient-channel loss (sufficiency within the tested models). The BJ off-pattern values are feedback-dominated and sign-structured, open-loop models over-estimate, and the closed loop with actual double dot products of the double-rounded vectors reproduces the loss (reviewer-measured); the term-wise noise model does so only up to a convention-dependent factor
 
+Final ID: **PD-T043** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: off-pattern error anatomy; closed-loop dot-product model; φ/ρ split; feedback cancellation.
 Split from: none (continues PD-T?…-114 and its measured companion PD-T?…-117).

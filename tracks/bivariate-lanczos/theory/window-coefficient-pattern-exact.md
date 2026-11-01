@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-101 — Exact coefficient pattern of the window recurrence: formed, structural-zero and implicit entries of H_F and H_J
 
+Final ID: **PD-T029** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: window lemma; exact-support window; "which entries of H_y (H_x) are formed"; HL BIT Thm 2.3 / BJ Thm 1 re-derived for the campaign ordering; implicit-column recursion; Z = N_k identification.
 Split from: none (answers part (a) of plan L1-Q1 in exact arithmetic; the [FP] part is PD-T?…-102).

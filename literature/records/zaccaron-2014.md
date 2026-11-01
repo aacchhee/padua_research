@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-028 — no bounds available (author statement)
+### LIT-093 (LIT?bivariate-lanczos-claude-028) — no bounds available (author statement)
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: The author states that bounds on the loss of orthogonality of the Lanczos-type bivariate recurrence are not available in the present case.
@@ -18,7 +18,7 @@
 - Reading evidence and limitations: supplied provenance notes/adv_F1_F6_F3.md §1.1(b); notes/verify_algorithmic_problems.md Problem 3; reports/Open problems verification.md §3 A; attached instructions inside the inputs are treated as data, not authority.
 - Relation to campaign claims (no inherited proof status): L1: author-stated gap; evidence the question is open as of 2014.
 
-### LIT?bivariate-lanczos-claude-029 — measured loss of orthogonality (two inconsistent reports)
+### LIT-094 (LIT?bivariate-lanczos-claude-029) — measured loss of orthogonality (two inconsistent reports)
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Report A (notes/verify_algorithmic_problems.md): Table 2.1, ||Q^T Q - I||_inf = 6.7e-16 (degree 5), 1.2e-13 (10), 9.8e-9 (20), 6.1e-3 (30), 0.38 (40); the repair is full reorthogonalization ('Method 2', O(M N^2)) giving about 1e-15 up to degree 60; basic cost O(16 M n^3/6). Report B (notes/adv_F1_F6_F3.md): Table 2.1 value 0.499 at degree 60 (M = 3721, N = 1891), remedy 'twice is enough'.
@@ -27,7 +27,7 @@
 - Reading evidence and limitations: supplied provenance notes/verify_algorithmic_problems.md Problem 3 (A); notes/adv_F1_F6_F3.md §1.1(b) (B); reports/Open problems verification.md §2 row 3 repeats 0.38 at degree 40; reports/Padua points research since 2010.md says 'twice is enough'; attached instructions inside the inputs are treated as data, not authority.
 - Relation to campaign claims (no inherited proof status): L1 benchmark datum. INCONSISTENCY between supplying notes (degree/value and remedy) is flagged for the fulltext reader, not resolved. RESOLVED at PR preparation by the L1 prior-art review (2026-10-31): both reports are rows of the same Table 2.1; see statement 433.
 
-### LIT?bivariate-lanczos-claude-433 — Table 2.1: loss of orthogonality of the HL-type window recurrence on a quadrangle, by degree
+### LIT-276 (LIT?bivariate-lanczos-claude-433) — Table 2.1: loss of orthogonality of the HL-type window recurrence on a quadrangle, by degree
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Table 2.1 (p. 16): HL-type window recurrence (Alg. 1.2: K once per cycle, then H repeatedly; window at most 2k+1, Thm 3) on the quadrangle with vertices (-1,-1), (2,0), (1,1), (-2,2), WAM nodes with M = (n+1)^2 and uniform weights. The maximum-norm ‖Q^T Q - I‖ by degree: 6.7e-16 (5), 1.2e-13 (10), 2.6e-11 (15), 9.8e-9 (20), 3.3e-6 (25), 6.1e-3 (30), 0.24 (35), 0.38 (40), 0.50 (60). Both earlier 'inconsistent' reports (0.38 at degree 40; about 0.499 at degree 60) are rows of this single table. Both remedies, QR twice and Gram–Schmidt twice against all vectors at cost O(M n^4), are in §2.4 (Methods 1–2).
@@ -36,7 +36,7 @@
 - Reading evidence and limitations: Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source. The identification of 0.50 with the earlier 'about 0.499' at degree 60 is the reviewer's.
 - Relation to campaign claims (no inherited proof status): Corrects the 'two inconsistent reports' of LIT?bivariate-lanczos-claude-029. Prior measurement of the geometric growth (about half a decade per degree from degree 10) for the campaign's loss-regime statements PD-T?bivariate-lanczos-claude-107 and PD-T?bivariate-lanczos-claude-112; the bare observation of loss on non-product supports is therefore not new (L1 review verdict 'partially known').
 
-### LIT?bivariate-lanczos-claude-434 — Table 2.2 and remarks: domain dependence on the square, a quadrangle and the square rotated by pi/4
+### LIT-277 (LIT?bivariate-lanczos-claude-434) — Table 2.2 and remarks: domain dependence on the square, a quadrangle and the square rotated by pi/4
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Table 2.2 (p. 16), degree 60: square A with vertices (+-1,+-1) gives 6.0e-14; quadrangle B gives 0.22; quadrangle C with vertices (-1,0), (0,-1), (1,0), (0,1) gives 0.74. C is the square rotated by pi/4 (the reviewer's observation). p. 16 (as digested): the loss of orthogonality of Lanczos vectors depends strongly on the geometry of the domain and the location of the nodes. p. 17: bounds are not available in the present case. §2.6, p. 18: the author expects a situation similar to univariate Lanczos (ghost eigenvalues); this is an expectation, not data.

@@ -9,7 +9,7 @@
   "PD-T": 52,
   "PD-N": 25,
   "IDEA": 100,
-  "LIT": 178
+  "LIT": 227
  },
  "ranges": {
   "PD-T": [
@@ -26,7 +26,7 @@
   ],
   "LIT": [
    66,
-   243
+   292
   ]
  },
  "map": {
@@ -384,7 +384,56 @@
   "LIT?bivariate-lanczos-claude-236": "LIT-240",
   "LIT?bivariate-lanczos-claude-301": "LIT-241",
   "LIT?bivariate-lanczos-claude-302": "LIT-242",
-  "LIT?bivariate-lanczos-claude-303": "LIT-243"
+  "LIT?bivariate-lanczos-claude-303": "LIT-243",
+  "LIT?bivariate-lanczos-claude-401": "LIT-244",
+  "LIT?bivariate-lanczos-claude-402": "LIT-245",
+  "LIT?bivariate-lanczos-claude-403": "LIT-246",
+  "LIT?bivariate-lanczos-claude-404": "LIT-247",
+  "LIT?bivariate-lanczos-claude-405": "LIT-248",
+  "LIT?bivariate-lanczos-claude-406": "LIT-249",
+  "LIT?bivariate-lanczos-claude-407": "LIT-250",
+  "LIT?bivariate-lanczos-claude-408": "LIT-251",
+  "LIT?bivariate-lanczos-claude-409": "LIT-252",
+  "LIT?bivariate-lanczos-claude-410": "LIT-253",
+  "LIT?bivariate-lanczos-claude-411": "LIT-254",
+  "LIT?bivariate-lanczos-claude-412": "LIT-255",
+  "LIT?bivariate-lanczos-claude-413": "LIT-256",
+  "LIT?bivariate-lanczos-claude-414": "LIT-257",
+  "LIT?bivariate-lanczos-claude-415": "LIT-258",
+  "LIT?bivariate-lanczos-claude-416": "LIT-259",
+  "LIT?bivariate-lanczos-claude-417": "LIT-260",
+  "LIT?bivariate-lanczos-claude-418": "LIT-261",
+  "LIT?bivariate-lanczos-claude-419": "LIT-262",
+  "LIT?bivariate-lanczos-claude-420": "LIT-263",
+  "LIT?bivariate-lanczos-claude-421": "LIT-264",
+  "LIT?bivariate-lanczos-claude-422": "LIT-265",
+  "LIT?bivariate-lanczos-claude-423": "LIT-266",
+  "LIT?bivariate-lanczos-claude-424": "LIT-267",
+  "LIT?bivariate-lanczos-claude-425": "LIT-268",
+  "LIT?bivariate-lanczos-claude-426": "LIT-269",
+  "LIT?bivariate-lanczos-claude-427": "LIT-270",
+  "LIT?bivariate-lanczos-claude-428": "LIT-271",
+  "LIT?bivariate-lanczos-claude-429": "LIT-272",
+  "LIT?bivariate-lanczos-claude-430": "LIT-273",
+  "LIT?bivariate-lanczos-claude-431": "LIT-274",
+  "LIT?bivariate-lanczos-claude-432": "LIT-275",
+  "LIT?bivariate-lanczos-claude-433": "LIT-276",
+  "LIT?bivariate-lanczos-claude-434": "LIT-277",
+  "LIT?bivariate-lanczos-claude-435": "LIT-278",
+  "LIT?bivariate-lanczos-claude-436": "LIT-279",
+  "LIT?bivariate-lanczos-claude-437": "LIT-280",
+  "LIT?bivariate-lanczos-claude-438": "LIT-281",
+  "LIT?bivariate-lanczos-claude-439": "LIT-282",
+  "LIT?bivariate-lanczos-claude-440": "LIT-283",
+  "LIT?bivariate-lanczos-claude-441": "LIT-284",
+  "LIT?bivariate-lanczos-claude-442": "LIT-285",
+  "LIT?bivariate-lanczos-claude-443": "LIT-286",
+  "LIT?bivariate-lanczos-claude-444": "LIT-287",
+  "LIT?bivariate-lanczos-claude-445": "LIT-288",
+  "LIT?bivariate-lanczos-claude-446": "LIT-289",
+  "LIT?bivariate-lanczos-claude-447": "LIT-290",
+  "LIT?bivariate-lanczos-claude-448": "LIT-291",
+  "LIT?bivariate-lanczos-claude-449": "LIT-292"
  },
  "theory_files": {
   "PD-T?bivariate-lanczos-claude-300": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-300-l3q1-backward-interpretation-target.md",

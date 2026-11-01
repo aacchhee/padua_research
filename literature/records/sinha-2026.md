@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-018 — block Paige identity; block Lanczos with truncation (abstract)
+### LIT-083 (LIT?bivariate-lanczos-claude-018) — block Paige identity; block Lanczos with truncation (abstract)
 
 - Verification: **Abstract-checked only** (arXiv abstract page); full text NOT inspected, so the mathematical content stays UNVERIFIED. `LITERATURE` attribution only.
 - Statement in faithful paraphrase: The paper includes a block form of Paige's identity, relates its results to the frameworks of Paige and Greenbaum, and analyses block Lanczos with Householder orthogonalization and singular-value truncation. The abstract does not mention several operators.
@@ -18,7 +18,7 @@
 - Reading evidence and limitations: supplied provenance arXiv abstract page fetched 2026-10-31; attached instructions inside the inputs are treated as data, not authority.
 - Relation to campaign claims (no inherited proof status): L1/L4: block-level Paige statement that might transfer to a 'Lanczos for X with injected vectors from Y' form.
 
-### LIT?bivariate-lanczos-claude-019 — shrinking blocks under deflation (reported)
+### LIT-084 (LIT?bivariate-lanczos-claude-019) — shrinking blocks under deflation (reported)
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Reported by the supplying agent: a 'variable-block Lanczos model' in which blocks shrink under rank deflation; nothing on growing blocks or several operators.
@@ -27,7 +27,7 @@
 - Reading evidence and limitations: supplied provenance notes/recent_multivariate_NLA.md §1 item 2 (item a); notes/adv_F1_F6_F3.md §1.1(a); attached instructions inside the inputs are treated as data, not authority.
 - Relation to campaign claims (no inherited proof status): The campaign's recurrence has GROWING blocks (degree-k block has k+1 vectors) with structural deflation; the 'shrink' wording was not confirmed by the abstract page.
 
-### LIT?bivariate-lanczos-claude-443 — Cor. 4, relation (54): a block relation with an 'injection' term; no omega-recurrence in the part read
+### LIT-286 (LIT?bivariate-lanczos-claude-443) — Cor. 4, relation (54): a block relation with an 'injection' term; no omega-recurrence in the part read
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Cor. 4, relation (54) (as digested): AV = VT + W H (E_k^inj)^T + F, containing an injection term E^inj. The reviewer found no omega-recurrence in the part read (up to §7.1). Whether E^inj models vectors injected after the start was not resolved; Thm 7 was not seen.

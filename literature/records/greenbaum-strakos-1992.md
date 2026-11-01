@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-428 — finite-precision CG matches exact CG on a blurred matrix with intervals of width comparable to eps‖A‖ (secondary)
+### LIT-271 (LIT?bivariate-lanczos-claude-428) — finite-precision CG matches exact CG on a blurred matrix with intervals of width comparable to eps‖A‖ (secondary)
 
 - Verification: **Secondary report only** (the source itself NOT read). UNVERIFIED. `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Reported through Šimonová–Tichý (§1): with eigenvalue intervals comparable to eps‖A‖, finite-precision CG behaves like exact CG on the 'blurred' matrix; the evidence mentioned is experimental.

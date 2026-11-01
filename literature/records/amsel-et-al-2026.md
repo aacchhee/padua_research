@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-021 — open problem: Paige's analysis for block Lanczos (reported)
+### LIT-086 (LIT?bivariate-lanczos-claude-021) — open problem: Paige's analysis for block Lanczos (reported)
 
 - Verification: **UNVERIFIED**: the abstract page confirms only the report's title/authors/scope (five problem categories); the wording is the supplying agent's account. **Update (online pass): the problem text was read and confirms the content of 021; see statement 232 for the exact paraphrase and for two small corrections.**
 - Statement in faithful paraphrase: Problem 2.19 (section 2.6, scribed by T. Chen and A. Greenbaum): extend Paige's analysis of the Lanczos algorithm to the block Lanczos algorithm (with block orthogonalization and deflation); Problem 2.18 asks for Lanczos under general inexact matvecs.
@@ -18,7 +18,7 @@
 - Reading evidence and limitations: supplied provenance notes/recent_multivariate_NLA.md §1 item 2 and R1; attached instructions inside the inputs are treated as data, not authority.
 - Relation to campaign claims (no inherited proof status): L1/L4: external statement that the block (single-operator) case is open.
 
-### LIT?bivariate-lanczos-claude-232 — Problem 2.19 text and context (section 2.6) read
+### LIT-236 (LIT?bivariate-lanczos-claude-232) — Problem 2.19 text and context (section 2.6) read
 
 - Verification: **arXiv 2602.05394 PDF text of section 2.6 read through two tool fetches that agree; page numbers not available in the extracted text. `LITERATURE` attribution only.**
 - Statement in faithful paraphrase: Section 2.6, Symmetric Krylov methods in finite precision arithmetic (scribes Tyler Chen and Anne Greenbaum), contains Problems 2.15-2.19: 2.15 conditions under which updated CG/steepest-descent residuals fall below machine precision (or counterexamples); 2.16 whether CG and Lanczos behave alike in finite precision for SPD systems with good implementations; 2.17 how many bits guarantee normwise backward error eps in n or fewer CG steps; 2.18 Lanczos under general inexact matvecs and/or preconditioning; 2.19 extend Paige's finite-precision analysis of Lanczos ([Pai76, Pai80]) to block Lanczos. For 2.19 the text notes that the within-block orthogonalization scheme influences the analysis, so one may either assume an accuracy for that scheme or analyze a standard good algorithm. The preceding discussion says no Paige-style analysis of block Lanczos exists yet, that block Krylov behaviour is complicated even in exact arithmetic (blocks may become rank deficient and need deflation), and hopes for an analysis that would justify block Krylov methods in finite precision. Greenbaum 1989 [Gre89] is cited in the section background; Simonova-Tichy is not cited in the extracted text; no partial results are listed after 2.19; the problem is not attributed to a single proposer and the word 'open' does not occur in it.

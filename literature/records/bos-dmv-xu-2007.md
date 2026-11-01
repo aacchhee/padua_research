@@ -43,7 +43,7 @@ The section above is the merged-main record (charter/MZ statements, with their o
 
 ### Extracted published statements
 
-### LIT?bivariate-lanczos-claude-072 — two-term ideal generators of the Padua points
+### LIT-137 (LIT?bivariate-lanczos-claude-072) — two-term ideal generators of the Padua points
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Thm 2.3: the ideal of Pad_n has generators with two terms (in the supplying agent's convention T_{n+1}(x) = T_{n-1}(x) and T_{n+1-k}(x) T_k(y) = T_{k-1}(x) T_{n+1-k}(y)), which with discrete orthonormality gives the closed-form sparse recurrence matrices (at most 2 nonzeros per column; checked by the supplying agent to 4e-15 for n <= 41).

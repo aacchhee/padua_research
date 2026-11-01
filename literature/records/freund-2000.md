@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-014 — band Lanczos scope and absence of finite-precision analysis
+### LIT-079 (LIT?bivariate-lanczos-claude-014) — band Lanczos scope and absence of finite-precision analysis
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Band Lanczos works with ONE square matrix and a block of starting vectors, using deflation and look-ahead. The inputs report that the Templates section has no loss-of-orthogonality or reorthogonalization analysis; the only roundoff remark is that the Lanczos matrix may become slightly indefinite (node 135).

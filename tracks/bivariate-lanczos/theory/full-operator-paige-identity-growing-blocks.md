@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-103 — Growing-block Paige identity for a (complex) symmetric diagonal operator with a computed Krylov-type relation; specialisations to F, J and N = J + iF
 
+Final ID: **PD-T031** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: block Paige identity with growing blocks; per-operator Paige identity for the full operator; bilinear (complex-symmetric) Paige identity for X + iY; "Paige identity with commutator term".
 Split from: none.

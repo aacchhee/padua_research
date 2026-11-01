@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-045 — perturbation of Cholesky downdating
+### LIT-110 (LIT?bivariate-lanczos-claude-045) — perturbation of Cholesky downdating
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Reported with Sun 1995 and Pan 1993 as classical perturbation analysis; with R = I, ||R~^-1||^2 = 1/(1 - leverage), matching the observed u/(1 - leverage) scaling.

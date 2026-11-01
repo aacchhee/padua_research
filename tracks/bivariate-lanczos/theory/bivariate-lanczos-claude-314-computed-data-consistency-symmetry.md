@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-314 — Computed coefficient data are consistent sections iff the completed pair is symmetric
 
+Final ID: **PD-T070** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: consistency ⟺ symmetry; asymmetry as consistency defect; reading (G) precondition; R06.
 Split from: none (supporting result for PD-T?bivariate-lanczos-claude-300, reading (G)).

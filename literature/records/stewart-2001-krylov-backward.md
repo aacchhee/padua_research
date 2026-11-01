@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-410 — minimal backward perturbation making a given subspace Krylov; forward angle bound called unsolved
+### LIT-253 (LIT?bivariate-lanczos-claude-410) — minimal backward perturbation making a given subspace Krylov; forward angle bound called unsolved
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: The residual S = (I - UU*)AU of a subspace spanned by U decides whether the subspace is a Krylov subspace (rank S at most 1, as digested). Thm 3.2 and Cor. 3.3 give the minimal backward perturbation, in terms of S, that makes the subspace Krylov. The report calls bounding the angle to the nearest Krylov subspace a seemingly difficult and currently unsolved problem (as digested).

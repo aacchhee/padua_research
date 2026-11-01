@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-109 — The non-product amplification is a property of the exact recurrence for a given selection rule, and its size depends on the selection rule (measured)
 
+Final ID: **PD-T037** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: P* = P; a priori propagator growth; two-relation control removes the instability; triangle orientation scan.
 Split from: none.

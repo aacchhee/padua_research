@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-420 — faces of the cone of nonnegative forms: double zeros, round zeros and local nonnegativity under perturbation
+### LIT-263 (LIT?bivariate-lanczos-claude-420) — faces of the cone of nonnegative forms: double zeros, round zeros and local nonnegativity under perturbation
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: §3.1 (as digested): a nonnegative form vanishing on a point set S lies in the space I_{2,2d}(S) of forms with double zeros there; Hessians at zeros are positive semidefinite; a zero is round if the Hessian is positive definite on the complement of the zero direction. If p is nonnegative with finite zero set and round at each zero, and q vanishes doubly there, then p + eps q is nonnegative for small eps. The dimension of I_{2,2d}(S) follows from the Alexander–Hirschowitz count.

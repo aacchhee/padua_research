@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-421 — Favard theorem and commuting conditions (3.9a–c) for the infinite sequence
+### LIT-264 (LIT?bivariate-lanczos-claude-421) — Favard theorem and commuting conditions (3.9a–c) for the infinite sequence
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Thm 3.1 (Favard) and Thm 3.2 (commuting conditions (3.9a–c)), as digested: a three-term relation with the rank condition gives a square-positive functional, and the coefficient matrices must satisfy the commuting conditions. Infinite sequences only; no truncation.
@@ -18,7 +18,7 @@
 - Reading evidence and limitations: Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.
 - Relation to campaign claims (no inherited proof status): Weaker than the truncated Favard correspondence PD-T?bivariate-lanczos-claude-301 (infinite, no truncation, no overdetermination count). Compare xu-siam-1994 and xu-tams-1994-operator.
 
-### LIT?bivariate-lanczos-claude-422 — Gaussian cubature iff commuting truncated block Jacobi matrices; Möller-type node count
+### LIT-265 (LIT?bivariate-lanczos-claude-422) — Gaussian cubature iff commuting truncated block Jacobi matrices; Möller-type node count
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Thms 5.1–5.3 (as digested): the Gaussian cubature of degree 2n-1 with dim Pi_{n-1} nodes exists iff P_n has that many common zeros iff the truncated block Jacobi matrices commute. Eq. (5.4) and Thm 5.4: the Möller-type lower bound N >= dim P_q + (1/2) max rank [A_i, A_j] on the node number of a degree 2q+1 positive cubature; the review attributes to Möller (1976) that the rank is floor(n/2) for centrally symmetric functionals (locators cited there: DST Thm 12 and Xu Fields (5.4), Thm 5.4).

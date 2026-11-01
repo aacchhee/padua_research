@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-209 — Condition (C) holds exactly for the 2^(n−1) "staircase" one-relation selections, and for them the implicit-section definitions of PD-T?…-205 are acyclic ((C) ⟹ (W)) whenever every window and reorthogonalization set lies in the preceding columns
 
+Final ID: **PD-T054** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: (C) ⟹ (W); acyclicity of the coupled implicit sections; staircase (monotone X/Y split) selections; former PD-T?…-205 status row "(C) ⟹ (W) | OPEN".
 Split from: PD-T?bivariate-lanczos-claude-205 — the OPEN target in its status row "| (C) ⟹ (W) | OPEN | checked exhaustively n ≤ 5, sampled n ≤ 9, named rules to n = 20 (reconstruction 01, `review_L2/rl2_cycles.py`); proved for BJ |", the statement-paragraph sentence "Under (C), (W) is **not proved**: reconstruction 01 checked it exhaustively for all selections with n ≤ 5 and by sampling (3000 each) for n = 6..9 (well-defined ⟺ (C) in all cases), and for dev, mirror, alt up to n = 20; for BJ it is proved (PD-T?…-104 part 2: the J-columns use only T_F)." and the Open item "A proof of (C) ⟹ (W)". Split after Codex audit-01 finding L2-F4 (an explicitly OPEN distinct target inside a file whose overall status is PROVED).

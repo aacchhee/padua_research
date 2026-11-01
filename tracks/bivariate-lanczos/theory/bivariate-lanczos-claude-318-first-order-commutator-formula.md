@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-318 — Square case: exact first-order formula for the last-block commutator, d(κ∘Φ)(E) = (E(s_ab)), and rank d(κ∘Φ) = dim{p_C : C ⊥ Hankel}
 
+Final ID: **PD-T074** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: derivative formula for κ; remainder polynomials R^x_a, R^y_a; s_ab = R^y_aR^x_b − R^x_aR^y_b; reduction of the 304(c) isomorphism to the quadratic-generator conjunct of 309; dκ image = Hankel family.
 Split from: none (new supporting result, created in response to finding LF-M2 of Codex audit-01; supports PD-T?bivariate-lanczos-claude-316).

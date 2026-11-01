@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-415 — approximate border bases from evaluation vectors on points via SVD; no commutator criterion
+### LIT-258 (LIT?bivariate-lanczos-claude-415) — approximate border bases from evaluation vectors on points via SVD; no commutator criterion
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: The preprint builds approximate border bases of zero-dimensional ideals from evaluation vectors on points using singular value decompositions (Thm 3.1, Cor. 3.3, as digested). It uses no commutator criterion for the accuracy of the computed multiplication matrices.

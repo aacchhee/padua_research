@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-015 — band Lanczos for multiple starts; no finite-precision content in the abstract
+### LIT-080 (LIT?bivariate-lanczos-claude-015) — band Lanczos for multiple starts; no finite-precision content in the abstract
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Treats one square matrix with a block of starting vectors, with deflation and look-ahead; the abstract (as seen by the supplying agent) contains nothing on finite precision.

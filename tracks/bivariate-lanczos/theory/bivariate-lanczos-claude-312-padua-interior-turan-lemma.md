@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-312 — Interior-node lemma for the two-term Turán certificate (Padua, all n ≥ 3)
 
+Final ID: **PD-T068** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: interior lemma; Turán-type certificate (q_1² − q_0q_2, q_2² − q_1q_3); sine-sequence representation of generator gradients; R05.
 Split from: none (supporting result for PD-T?…-313 and PD-N?…-303).

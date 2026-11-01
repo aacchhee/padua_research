@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-306 — Padua n = 2: condition (H) holds, δ*(ε) ≍ √ε (exact certificate)
 
+Final ID: **PD-T062** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: Padua n = 2 √ε law; dual PD certificate n = 2.
 Split from: none (case of the target PD-T?bivariate-lanczos-claude-300).

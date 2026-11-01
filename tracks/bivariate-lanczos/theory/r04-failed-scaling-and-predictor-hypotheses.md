@@ -1,5 +1,7 @@
 # PD-N?bivariate-lanczos-claude-103 — R04 failures: linear onset of the rotation-induced growth rate, universality of the node-propagator predictor, and unconditional stability of the two-relation control
 
+Final ID: **PD-N009** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: H_lin failure; predictor non-universality; two-relation failure on clustered checkerboards.
 Split from: none.

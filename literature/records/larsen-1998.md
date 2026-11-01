@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-011 — two-matrix template for partial reorthogonalization (reported)
+### LIT-076 (LIT?bivariate-lanczos-claude-011) — two-matrix template for partial reorthogonalization (reported)
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: The Simon-type partial-reorthogonalization template has already been carried over to the Golub-Kahan process of PROPACK (a coupled A, A^T process); the supplying agent notes the same R. M. Larsen is a coauthor of HL.

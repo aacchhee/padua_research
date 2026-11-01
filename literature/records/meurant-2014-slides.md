@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-405 — HL suffers more from rounding errors; Sommariva reorthogonalizes twice (qualitative)
+### LIT-248 (LIT?bivariate-lanczos-claude-405) — HL suffers more from rounding errors; Sommariva reorthogonalizes twice (qualitative)
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: On the slide 'Bivariate orthogonal polynomials' the Huhtanen–Larsen recurrence is said to suffer more from rounding errors, orthogonality is generally lost, and Sommariva's practice is to reorthogonalize twice.

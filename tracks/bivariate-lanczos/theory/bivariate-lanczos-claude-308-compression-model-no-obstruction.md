@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-308 — Dilation/compression backward model (no Krylov structure) has no obstruction in the square case
 
+Final ID: **PD-T064** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: route (ii) of L3-Q1; POVM / Naimark dilation; minimal matrix convex set over K_δ; degree-1 matrix moment cone; "compression of a commuting pair with joint spectrum in K_δ".
 Split from: none (supporting result for PD-T?bivariate-lanczos-claude-300).

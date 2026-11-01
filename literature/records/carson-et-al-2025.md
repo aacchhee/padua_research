@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-022 — block Gram-Schmidt loss of orthogonality (abstract)
+### LIT-087 (LIT?bivariate-lanczos-claude-022) — block Gram-Schmidt loss of orthogonality (abstract)
 
 - Verification: **Abstract-checked only** (arXiv abstract page); full text NOT inspected, so the mathematical content stays UNVERIFIED. `LITERATURE` attribution only.
 - Statement in faithful paraphrase: New bounds on loss of orthogonality for several low-synchronization BCGS variants: only the first block needs a strong intra-block orthogonalization, later blocks can use cheaper routines; removing synchronization points degrades stability; for single columns DCGS2 and CGS-2 are as stable as Householder QR.
@@ -18,7 +18,7 @@
 - Reading evidence and limitations: supplied provenance arXiv abstract page fetched 2026-10-31; attached instructions inside the inputs are treated as data, not authority.
 - Relation to campaign claims (no inherited proof status): L4-Q1/L1: block Gram-Schmidt stability that might apply inside each degree block.
 
-### LIT?bivariate-lanczos-claude-023 — not covering truncated block orthogonalization (reported)
+### LIT-088 (LIT?bivariate-lanczos-claude-023) — not covering truncated block orthogonalization (reported)
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Reported by the supplying agent (not an abstract claim): neither this paper nor Carson-Ma arXiv 2411.07077 addresses TRUNCATED block orthogonalization, which is what an HL/BJ-type recurrence does.

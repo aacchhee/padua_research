@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-030 — HL used as basis generator on the disk
+### LIT-095 (LIT?bivariate-lanczos-claude-030) — HL used as basis generator on the disk
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: The orthonormal basis for the discrete Christoffel-Darboux kernel (Table 2.1, N = 153, test meshes up to degree 800 with 640,801 points) is computed with the Huhtanen-Larsen algorithm; no orthogonality check or method comparison is reported; the authors do not cite the 2010 seed.

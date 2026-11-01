@@ -1,5 +1,7 @@
 # PD-N?bivariate-lanczos-claude-507 — Magnitude-threshold pivot rules (alternative pivot only if kappa times larger; pair-norm comparison) do not restore the robustness of the fixed 'scheme' rule in point-by-point Givens updating
 
+Final ID: **PD-N030** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: pivk-kappa rule; VB-C 2010 p. 395 pivot suggestion ('if two pivots differ in some orders of magnitude, ... choosing the larger one'); IDEA?bivariate-lanczos-claude-504 (b1), (b2); pairnorm.
 Split from: PD-N?bivariate-lanczos-claude-506 (finding L9 of reconstruction 01: this mechanism failure is a separate evidenced failure).

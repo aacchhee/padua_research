@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-207 — Measured behaviour of PRO-2D-J (two-pass window + ω-triggered partial reorthogonalization with measured J-rows; IDEA?…-209, REJECTED on the cubic checkerboard, PD-N?…-207): passes the registered loss criterion L ≤ 10√u on 11 of 12 benchmarks (strictly semi-orthogonal, L ≤ √u at every degree, on 10 of them; L-shape reaches 1.41√u), with O(u) F-sections at every strictly semi-orthogonal degree, at 16–71% of the dot products of CGS2-against-all; costs and M-scaling to M = 10⁵
 
+Final ID: **PD-T052** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: IDEA?…-209 results; L2 strategy; cost comparison vs full reorthogonalization / V+A-type CGS2; M-scaling.
 Split from: none.

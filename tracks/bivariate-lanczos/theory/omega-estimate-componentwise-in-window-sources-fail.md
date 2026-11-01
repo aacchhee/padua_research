@@ -1,5 +1,7 @@
 # PD-N?bivariate-lanczos-claude-205 — Componentwise in-window source scaling (E3) does not repair the ω-estimate's overestimate of the clustered-checkerboard coefficient channel
 
+Final ID: **PD-N017** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: IDEA?…-205 failed; E3; abs-dot source scale.
 Split from: PD-T?…-203 (b) (the failure was previously recorded only there; split out after reconstruction 01, finding F3).

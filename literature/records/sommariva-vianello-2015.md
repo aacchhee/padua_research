@@ -43,7 +43,7 @@ The section above is the merged-main record (charter/MZ statements, with their o
 
 ### Extracted published statements
 
-### LIT?bivariate-lanczos-claude-074 — dismissal of HL and the seed at high support cardinality (reported)
+### LIT-139 (LIT?bivariate-lanczos-claude-074) — dismissal of HL and the seed at high support cardinality (reported)
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Reported: the paper dismisses both the Huhtanen-Larsen method and the seed IEP method as slow at high support cardinality, and HL as losing orthogonality; 'their use should be probably reserved to situations where no alternative is possible'. It cites both HL ([23]) and the seed ([37]).

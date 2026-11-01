@@ -1,5 +1,7 @@
 # PD-N?bivariate-lanczos-claude-506 — The 'larger redundant pivot' rule degrades point-by-point Givens updating on Padua points, with and without non-unisolvent prefixes
 
+Final ID: **PD-N029** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: 'largest' pivot catastrophe; Humet/ETNA max-norm pivot as used in Algorithm 1; seed p. 395 pivot remark; OBST?bivariate-lanczos-claude-08; IDEA?bivariate-lanczos-claude-502 (prefix mechanism, refuted in the 'only' form), 013, 016.
 Split from: none.

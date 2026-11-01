@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-409 — multivariate confluent V+A with the smallest-index selection rule; no finite-precision result
+### LIT-252 (LIT?bivariate-lanczos-claude-409) — multivariate confluent V+A with the smallest-index selection rule; no finite-precision result
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: The multivariate confluent Vandermonde-with-G-Arnoldi algorithm uses the same smallest-index selection as Hokanson (eq. (2.2), as digested) and contains no finite-precision result.

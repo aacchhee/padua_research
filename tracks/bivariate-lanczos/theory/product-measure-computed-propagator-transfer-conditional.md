@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-116 — On product measures the computed propagator of a floating-point run inherits the univariate factorisation to first order in the coefficient deviation (CONDITIONAL on near-exact computed coefficients)
 
+Final ID: **PD-T044** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: FP transfer of the product factorisation; former part 2′ of PD-T?…-105; computed-propagator perturbation; hypothesis H_δ.
 Split from: PD-T?bivariate-lanczos-claude-105, part 2′. Original status row: "same for the computed propagator in FP | CONDITIONAL | named hypothesis: computed coefficients = exact ones + O(δ) with ‖L(z)⁻¹‖·δ ≪ 1 …; first order in δ". The split also takes the Assumptions sentence of PD-T?…-105 on floating point (quoted in History). Split 2026-11-01T08:33:59+01:00, Codex audit-01, L1-foundations finding S1.

@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-010 — semi-orthogonality analysis (reported)
+### LIT-075 (LIT?bivariate-lanczos-claude-010) — semi-orthogonality analysis (reported)
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status. **Update (online pass): metadata confirmed (statement 214); the semiorthogonality theorem is cited by Jia-Li as Theorem 5 of this paper, so the rigorous version is likely here rather than in the Math. Comp. paper (whose Theorem 2 defers its proof to a report).**
 - Statement in faithful paraphrase: Cited by the inputs, together with the Math. Comp. paper, as the source of the theorem that semi-orthogonality suffices for an accurate projected matrix; the inputs list it as a paper still needed.
@@ -18,7 +18,7 @@
 - Reading evidence and limitations: supplied provenance notes/adv_F1_F6_F3.md §1.1(c) ('[unverified]') and §4 NEED list; reports/Round 3 open problems 2023 2026.md §7 item 3; attached instructions inside the inputs are treated as data, not authority.
 - Relation to campaign claims (no inherited proof status): L2 background; exact location of the theorem (LAA vs Math. Comp.) unresolved.
 
-### LIT?bivariate-lanczos-claude-214 — Metadata confirmed; theorem content only via secondary citation
+### LIT-218 (LIT?bivariate-lanczos-claude-214) — Metadata confirmed; theorem content only via secondary citation
 
 - Verification: **Metadata: Crossref and OpenAlex (DOI 10.1016/0024-3795(84)90025-9). Full text NOT reached (ScienceDirect pages refused). Content: secondary only (Jia-Li). UNVERIFIED against the paper.**
 - Statement in faithful paraphrase: Title, volume, pages and year are now confirmed: H. D. Simon, Analysis of the symmetric Lanczos algorithm with reorthogonalization methods, Linear Algebra Appl. 61 (1984) 101-131 (OpenAlex: bronze open access, OA URL on ScienceDirect, 24 references). Jia and Li (Numer. Algorithms 2021, arXiv 2001.04402) cite this paper as [26] and, for the projected matrix under semiorthogonality, rely on its Theorem 5 (Rayleigh-Ritz projection accurate to rounding level, with a modestly growing function of the dimensions times u) and Lemma 4 (bounds on the semiorthogonalization error terms). Jia-Li define semiorthogonality by a level near sqrt(u) and keep the level below sqrt(u/(2k+1)) in their own method.

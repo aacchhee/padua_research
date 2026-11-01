@@ -1,5 +1,7 @@
 # PD-N?bivariate-lanczos-claude-206 — With a one-pass CGS window, semi-orthogonality (max|Q̂ᵀQ̂ − I| ≤ √u) does not give O(u) F-sections: the window cascade loses local orthogonality
 
+Final ID: **PD-N018** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: unconditional F-part of IDEA?…-203 failed; one-pass window counterexamples; local hypothesis of Theorem A is not supplied by semi-orthogonality.
 Split from: PD-T?…-204 (a) and candidates.md (R01 dispositions), after reconstruction 01 finding F3.

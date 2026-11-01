@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-051 — discretized Stieltjes procedure
+### LIT-116 (LIT?bivariate-lanczos-claude-051) — discretized Stieltjes procedure
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Reported: the univariate 'Vandermonde with Lanczos' is Gautschi's discretized Stieltjes procedure; Fischer 1998 reports that Gautschi's sensitivity estimates were partly erroneous.

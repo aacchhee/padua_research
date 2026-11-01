@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-102 — [FP] local relations of the BJ/HL window recurrence, with the computed coefficient pattern and the implicit-operator defect
 
+Final ID: **PD-T030** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: F-relations, J-relations; local rounding relations; "X Q = Q H_x + boundary + F_x" for the window recurrence; implicit defect G_J.
 Split from: none (answers the [FP] part of plan L1-Q1(a); the exact pattern is PD-T?…-101).

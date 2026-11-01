@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-406 — multivariate Stieltjes process with orthogonalization performed twice; no stability analysis
+### LIT-249 (LIT?bivariate-lanczos-claude-406) — multivariate Stieltjes process with orthogonalization performed twice; no stability analysis
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: §3.2 describes a multivariate Stieltjes process that uses the standard technique of performing the orthogonalization twice. No stability analysis is given, and the ordering of the monomials is chosen for convenience. Hokanson (hokanson-2020) credits this source for the multivariate Vandermonde-with-Arnoldi extension.

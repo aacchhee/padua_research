@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-033 — full-orthogonalization multivariate V+A
+### LIT-098 (LIT?bivariate-lanczos-claude-033) — full-orthogonalization multivariate V+A
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Builds each column by multiplying a previous column by one coordinate, orthogonalizes by two-pass classical Gram-Schmidt against ALL previous columns at cost O(M N^2), and notes that many orderings do not satisfy the required span property; reported to be one fixed instance of the seed's ordering scheme.
@@ -18,7 +18,7 @@
 - Reading evidence and limitations: supplied provenance reports/Padua points research since 2010.md (multivariate V+A paragraph and 'What the V+A papers omit'); attached instructions inside the inputs are treated as data, not authority.
 - Relation to campaign claims (no inherited proof status): L2 cost comparator.
 
-### LIT?bivariate-lanczos-claude-437 — §2: the multivariate monomial-ordered basis is not a Krylov subspace; Alg. 2.1 orthogonalizes twice against all previous columns
+### LIT-280 (LIT?bivariate-lanczos-claude-437) — §2: the multivariate monomial-ordered basis is not a Krylov subspace; Alg. 2.1 orthogonalizes twice against all previous columns
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: §2 (as digested): the basis no longer corresponds to a Krylov subspace in the multivariate case. Alg. 2.1 builds each column by multiplying a previous column by one coordinate and orthogonalizes by classical Gram–Schmidt twice against all previous columns.
@@ -27,7 +27,7 @@
 - Reading evidence and limitations: Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.
 - Relation to campaign claims (no inherited proof status): An informal statement weaker than the obstruction PD-T?bivariate-lanczos-claude-401 (no commuting-operator qualifier, no fixed number of starts, no proof). Confirms the full-orthogonalization cost comparator of statement 033.
 
-### LIT?bivariate-lanczos-claude-438 — §2.1 selection rule 'smallest k' for the parent column; no rounding-error claims
+### LIT-281 (LIT?bivariate-lanczos-claude-438) — §2.1 selection rule 'smallest k' for the parent column; no rounding-error claims
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: §2.1, Alg. 2.1 (as digested): the parent of the new column is chosen by the smallest-index rule, the smallest k such that I[k] + e_j = I[l+1]; the text and the algorithm differ (l versus l+1). The text remarks that many orderings do not satisfy this constraint, which concerns the exact-arithmetic span property. The paper makes no claim about rounding error, the accuracy of the recurrence matrices, or the span in floating point. The multivariate extension is credited to Austin et al. (see austin-et-al-2021).

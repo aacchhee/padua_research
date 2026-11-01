@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-035 — least squares / bivariate interpolation with the recurrence (reported)
+### LIT-100 (LIT?bivariate-lanczos-claude-035) — least squares / bivariate interpolation with the recurrence (reported)
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Reported (via HL SIMAX 2002 p. 1078, ref [18]) as the paper in which the polyanalytic recurrence was used for least-squares approximation and bivariate interpolation; HL SIMAX 'follows [18] closely'.

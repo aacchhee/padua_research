@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-039 — deleting a row via Givens rotations
+### LIT-104 (LIT?bivariate-lanczos-claude-039) — deleting a row via Givens rotations
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Row deletion from a QR factorization uses a bottom-up sequence of adjacent-column Givens rotations that reduces the row to a multiple of e_1; used by the supplying agent to show that downdating with Q stored is classical and needs no univariate shift.

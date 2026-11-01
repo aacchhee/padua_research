@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-007 — citation correction
+### LIT-072 (LIT?bivariate-lanczos-claude-007) — citation correction
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: The bttb-research repository record LIT-1729 is Greenbaum 1979 (conjugate-gradient splittings, exact arithmetic), NOT Greenbaum 1989 (finite-precision Lanczos/CG). It must not be cited for the finite-precision bivariate Lanczos question; the repository has no Paige-type result.

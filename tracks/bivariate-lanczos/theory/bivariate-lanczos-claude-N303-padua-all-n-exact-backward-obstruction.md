@@ -1,5 +1,7 @@
 # PD-N?bivariate-lanczos-claude-303 — Reading (E): exact-section backward representation of perturbations given as data, with δ(ε) → 0, fails for Padua points of every degree n ≥ 4 (reading (G) OPEN)
 
+Final ID: **PD-N022** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: Padua obstruction, all n; extends PD-N?…-301 (n = 3); R05.
 Split from: none (case of the target PD-T?bivariate-lanczos-claude-300).

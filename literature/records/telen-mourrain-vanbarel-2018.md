@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-416 — accuracy of computed multiplication matrices assessed by residual/backward error, not by the commutator
+### LIT-259 (LIT?bivariate-lanczos-claude-416) — accuracy of computed multiplication matrices assessed by residual/backward error, not by the commutator
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: The paper assesses the accuracy of solutions of polynomial systems through residual and backward error; it does not use the commutator of the computed multiplication matrices as an error indicator (as digested).

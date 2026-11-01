@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-403 — locator for the left-inverse three-term recursion (§3.3), reported
+### LIT-246 (LIT?bivariate-lanczos-claude-403) — locator for the left-inverse three-term recursion (§3.3), reported
 
 - Verification: **Not read, pending-reference.** The statement is the reviewer's pointer or characterisation, not a reading of the source. UNVERIFIED. `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Named by the L1 reviewer, together with Xu 1993/1994, among the original sources of the three-term recursion with a left inverse D_n of the stacked coefficient matrix (the survey xu-2017-survey states it); §3.3 is the locator given.

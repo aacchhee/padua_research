@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-031 — any-d truncated Stieltjes from moments; origin of the non-convex step
+### LIT-096 (LIT?bivariate-lanczos-claude-031) — any-d truncated Stieltjes from moments; origin of the non-convex step
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: The multivariate Stieltjes procedure is a truncated block three-term procedure in any dimension working from moments by quadrature, with no complexity analysis, citing neither HL nor the seed. The non-convex (weighted orthogonal Procrustes) step arises from fitting each direction separately (section 5.2.6), not from the canonical form imposed afterwards by one symmetric eigendecomposition (section 3.2).
@@ -18,7 +18,7 @@
 - Reading evidence and limitations: supplied provenance notes/verify_algorithmic_problems.md Problem 3 and Problem 4; attached instructions inside the inputs are treated as data, not authority.
 - Relation to campaign claims (no inherited proof status): P4 (deferred) and L1 background; the 'trivial' verdict for P4 is the supplying agent's, UNVERIFIED.
 
-### LIT?bivariate-lanczos-claude-435 — Thm 3.1: stacked d three-term relations are overdetermined but consistent
+### LIT-278 (LIT?bivariate-lanczos-claude-435) — Thm 3.1: stacked d three-term relations are overdetermined but consistent
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Thm 3.1, eq. (9): the next-degree polynomial vector p_{n+1} is obtained by stacking the d coordinate three-term relations. The proof states that, although the stacked system is overdetermined, it is consistent, and solves it by multiplying with B^T_{n+1}, with Lambda_{n+1} diagonal (notation as digested).
@@ -27,7 +27,7 @@
 - Reading evidence and limitations: Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.
 - Relation to campaign claims (no inherited proof status): Algebraic frame of PD-T?bivariate-lanczos-claude-108: a consistent overdetermined stacked system with a left inverse is published (together with xu-2017-survey eq. (2.14) and olver-townsend-vasil-2019). The reviewer found no comparison of left inverses and no statement that the choice decides floating-point stability.
 
-### LIT?bivariate-lanczos-claude-436 — multivariate Stieltjes procedure: all-coordinate block three-term truncation with SVD/eigen completion; qualitative tests on non-tensor domains
+### LIT-279 (LIT?bivariate-lanczos-claude-436) — multivariate Stieltjes procedure: all-coordinate block three-term truncation with SVD/eigen completion; qualitative tests on non-tensor domains
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: The multivariate Stieltjes (MS) procedure forms x_i p_n - A_{n+1,i} p_n - B^T_{n,i} p_{n-1} for every coordinate i (Eq. 24), with A from S_{n,i} (Eq. 25) and B from an eigendecomposition of T_{n,i,i} (Eq. 26), a truncated SVD (Eq. 20) and mixed moments (Eqs. 28–30, d = 2); p_{n+1} follows from all relations jointly (Eq. 9). It was run on empirical discrete measures (M = 10^8, §6.2) on non-tensor domains (annulus, region between spirals, torus, square with hole, Madagascar), with only qualitative comparison to moment methods: on the annulus MS performs better for large degrees; on the square with a hole the error is notably increased. No orthogonality numbers are given in the text and there is no comparison with a one-relation Lanczos/HL recurrence (HL and BJ are not cited). Per the L2 digest of v2 (par.nsf.gov 10435784), the commuting conditions (6a–6c) are imposed as algorithm constraints and checked only through orthogonality, not used as an error indicator.

@@ -43,7 +43,7 @@ The section above is the merged-main record (charter/MZ statements, with their o
 
 ### Extracted published statements
 
-### LIT?bivariate-lanczos-claude-076 — attribution correction: Padua-type theory is Pitman RN 312, not the SIAM J. Math. Anal. paper
+### LIT-141 (LIT?bivariate-lanczos-claude-076) — attribution correction: Padua-type theory is Pitman RN 312, not the SIAM J. Math. Anal. paper
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status. **Update (online pass): the Padua ideal-theory paper says the method of Xu's book covers only cubature with at most n points beyond dim Pi_{n-1}, and that the Padua case (n+1 extra points) is not directly covered; it derives Padua cubature from Xu's Adv. Comput. Math. 12 (2000) paper. The claim that Padua-type theory lives in Pitman RN 312 is therefore NOT supported by this check (statement 227); it is not refuted either.**
 - Statement in faithful paraphrase: Reported correction: the SIAM J. Math. Anal. 25 (1994) paper covers only cubature with dim Pi_{n-1} nodes, a single Gamma and degree 2n-2; Padua points (dim Pi_n nodes, cubature degree 2n-1, failing exactly on T_{2n}(x), checked by the supplying agent for n = 4, 7, 10) need Xu's extension with a Gamma_2 term (Pitman RN 312; Fields survey Thm 6.1). Round 2 cited the wrong source; the same fix applies to `verify_padua_problems.md` lines 31-34 of the earlier notes.
@@ -52,7 +52,7 @@ The section above is the merged-main record (charter/MZ statements, with their o
 - Reading evidence and limitations: supplied provenance notes/ingest_classic_papers.md §1.3 'Scope (important correction)', §2.4, §5; reports/Round 3 open problems 2023 2026.md §2 'Xu 1994' bullet; attached instructions inside the inputs are treated as data, not authority.
 - Relation to campaign claims (no inherited proof status): L3 cubature link: commuting modified truncated Jacobi matrices as the cubature-node mechanism is exactly Xu's Thm 3.1/4.1 for the Gaussian case (recorded in the fulltext agent's xu-siam-1994 record); Padua is not of that type. Xu reports failure for d = 3, n = 3 (p. 1000).
 
-### LIT?bivariate-lanczos-claude-077 — Xu 1994 (SIAM) vs Xu-Pitman: preserve the attribution distinction
+### LIT-142 (LIT?bivariate-lanczos-claude-077) — Xu 1994 (SIAM) vs Xu-Pitman: preserve the attribution distinction
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status. **Update (online pass): the block-Jacobi theory that statement 077 attributes to the SIAM paper is also in Xu's Trans. AMS 342 and 343 papers (records xu-tams-1994-blockjacobi, xu-tams-1994-operator).**
 - Statement in faithful paraphrase: The plan's 'Xu 1994 block Jacobi commutativity conditions' refers to the SIAM J. Math. Anal. 25 (1994) 991-1001 theorems (Thm 3.1: zeros of P_n + Gamma P_{n-1} are joint eigenvalues of S_{n-1,i}; Thm 4.1: dim Pi_{n-1} distinct zeros iff the symmetry and commutativity conditions hold). Those theorems are NOT the Padua theory; do not cite them for Padua.
@@ -61,7 +61,7 @@ The section above is the merged-main record (charter/MZ statements, with their o
 - Reading evidence and limitations: supplied provenance notes/ingest_classic_papers.md §1.3, §2.4; attached instructions inside the inputs are treated as data, not authority.
 - Relation to campaign claims (no inherited proof status): Citation hygiene for L3; the theorem content itself is the fulltext agent's record xu-siam-1994.
 
-### LIT?bivariate-lanczos-claude-226 — Book metadata and scope (Pitman Research Notes 312)
+### LIT-230 (LIT?bivariate-lanczos-claude-226) — Book metadata and scope (Pitman Research Notes 312)
 
 - Verification: **Bibliographic entry read on the NIST OPSF page; the book itself NOT reached. `LITERATURE` attribution only.**
 - Statement in faithful paraphrase: Y. Xu, Common Zeros of Polynomials in Several Variables and Higher Dimensional Quadrature, Pitman Research Notes in Mathematics Series 312, Longman, Essex, 1994. The listing describes it as a systematic study of common zeros, with emphasis on cubature of degree 2n-1 requiring at least N = dim of polynomials of degree <= n-1 nodes, and cubature with more nodes, especially the minimal number. Common zeros of orthogonal polynomials are characterized as joint eigenvalues of block Jacobi matrices; cubature is generally based on real, distinct common zeros of quasi-orthogonal polynomials, whose existence is decided by nonlinear matrix equations from modified block Jacobi matrices. The book follows the one-variable parallel and differs from ideal-theoretic approaches, and includes a section on the general structure of orthogonal polynomials in several variables.
@@ -70,7 +70,7 @@ The section above is the merged-main record (charter/MZ statements, with their o
 - Reading evidence and limitations: Listing text only.  Reader: Claude literature developer (Sonnet 5.5, high; online resolution pass), 2026-10-31. Read through WebFetch: the tool extracts the page text and returns a model-written digest, so locators and displayed formulas are as digested (garbled glyphs possible) and were NOT checked against page images.
 - Relation to campaign claims (no inherited proof status): L3: the block-Jacobi commuting-conditions theory is in this book (and in the Trans. AMS papers; see xu-tams-1994-operator and xu-tams-1994-blockjacobi).
 
-### LIT?bivariate-lanczos-claude-227 — Padua-type cubature is NOT derived from Pitman RN 312 in the Padua ideal-theory paper (contradicts statement 076)
+### LIT-231 (LIT?bivariate-lanczos-claude-227) — Padua-type cubature is NOT derived from Pitman RN 312 in the Padua ideal-theory paper (contradicts statement 076)
 
 - Verification: **Digest of arXiv math/0604604 (Bos, De Marchi, Vianello, Xu, Bivariate Lagrange interpolation at the Padua points: the ideal theory approach); that paper's Xu reference [8] is the Pitman book. UNVERIFIED against the book.**
 - Statement in faithful paraphrase: The Padua ideal-theory paper cites Xu's book [8] for the lower bound attained by Moller-type cubature and for the reproducing-kernel Christoffel-Darboux identity (3.2), and says it follows the strategy of [8, 10], but states that the method of [8] covers only the case where the number of points exceeds dim of degree <= n-1 polynomials by at most n; the Padua case has n+1 extra points, so that theory does not apply directly. The Padua cubature (their Proposition 3.4) is derived from Xu's Adv. Comput. Math. 12 (2000) paper 'Polynomial interpolation in several variables, cubature formulae, and ideals' (Propositions 2.1 and 2.2, with Corollary 2.4), and the matrix Gamma_2 is introduced in their Section 3 without citation.

@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-061 — 3D commuting-extension examples (reported)
+### LIT-126 (LIT?bivariate-lanczos-claude-061) — 3D commuting-extension examples (reported)
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Listed among sources for commutator minimization and commuting extensions in the 3D (P10) setting.

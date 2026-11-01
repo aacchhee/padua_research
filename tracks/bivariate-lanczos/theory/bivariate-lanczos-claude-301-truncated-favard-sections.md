@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-301 — Truncated Favard theorem for degree-n sections
 
+Final ID: **PD-T057** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: section–functional correspondence; consistent sections; interior commutativity conditions; "sections determine moments up to degree 2n+1"; words formula; route (iii) of L3-Q1 (Xu block-Jacobi commutativity with the last block free).
 Split from: none (supporting result for PD-T?bivariate-lanczos-claude-300, the L3-Q1 target).

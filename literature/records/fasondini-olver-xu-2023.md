@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-032 — block Lanczos on multiplication matrices in coefficient space
+### LIT-097 (LIT?bivariate-lanczos-claude-032) — block Lanczos on multiplication matrices in coefficient space
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: A block Lanczos on multiplication matrices in coefficient space, cost O(N d^4), for OPs on planar algebraic curves; reported to say nothing about loss of orthogonality.
@@ -18,7 +18,7 @@
 - Reading evidence and limitations: supplied provenance notes/verify_algorithmic_problems.md Problem 3; attached instructions inside the inputs are treated as data, not authority.
 - Relation to campaign claims (no inherited proof status): L1 context only (coefficient-space operators, not discrete samples).
 
-### LIT?bivariate-lanczos-claude-439 — §§5.2, 5.4: block Lanczos in coefficient space applying both X and Y; no stability discussion
+### LIT-282 (LIT?bivariate-lanczos-claude-439) — §§5.2, 5.4: block Lanczos in coefficient space applying both X and Y; no stability discussion
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: §§5.2 and 5.4 (as digested): a block Lanczos in coefficient space applies both multiplication operators X and Y; no stability discussion is found in the sections read.

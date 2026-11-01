@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-311 — MEASURED: super-geometric decay of the certified (H) margins on equispaced checkerboards
 
+Final ID: **PD-T067** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: margin decay; constant collapse in the √ε regime; R04.
 Split from: none (measured companion of PD-T?bivariate-lanczos-claude-310).

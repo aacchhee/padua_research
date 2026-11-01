@@ -18,7 +18,7 @@
 - Reading evidence and limitations: supplied provenance `verify_padua_problems.md §10; Round3 §6b` under `topics/charter-unisolvence-20261031/sources/padua_unisolvence_inputs/`; attached instructions are treated as data, not authority.
 - Relation to campaign claims: seed baseline / closest predecessors; no novelty or acceptance conclusion.
 
-### LIT?bivariate-lanczos-claude-448 — §5.3: the compatibility condition forces block-tridiagonal form of the commuting extensions of odd-degree cubatures
+### LIT-291 (LIT?bivariate-lanczos-claude-448) — §5.3: the compatibility condition forces block-tridiagonal form of the commuting extensions of odd-degree cubatures
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Thms 9, 10, 11 and §5.3 (as digested by the L3 reviewer): N-node positive cubatures of odd degree 2q+1 correspond to symmetric commuting extensions of the coordinate-operator sections A_i on P_q that satisfy a compatibility condition; the condition makes the bottom-left (N-n) x dim P_{q-1} block zero, which gives block-tridiagonal form. Thms 2 and 12 give the Möller-type bound N >= dim P_q + (1/2) max rank [A_i, A_j].
@@ -54,7 +54,7 @@ The section above is the merged-main record (charter/MZ statements, with their o
 
 ### Extracted published statements
 
-### LIT?bivariate-lanczos-claude-058 — commuting extensions and cubature (reported)
+### LIT-123 (LIT?bivariate-lanczos-claude-058) — commuting extensions and cubature (reported)
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status. **Update (online pass): the commuting-extension / cubature correspondence is now read in the preprint (statements 215-217): Theorems 9-13; and existence of a symmetric commuting extension of a symmetric pair is guaranteed (Theorem 1, size dn). The inference that a Greenbaum-type statement 'may have no solution' is not supported for exact extensions; the obstruction is about size, positivity and compatibility.**
 - Statement in faithful paraphrase: Reported as prior art for the commutator-minimization / commuting-extension route to cubature nodes as joint eigenvalues; the inputs add that for the bivariate recurrence a Greenbaum-type 'nearby larger node set' statement needs the computed non-commuting sections embedded in a larger commuting symmetric pair, which is a commuting-extension problem that may have no solution.
@@ -63,7 +63,7 @@ The section above is the merged-main record (charter/MZ statements, with their o
 - Reading evidence and limitations: supplied provenance notes/adv_F1_F6_F3.md §1.3; reports/Open problems verification.md §2 row 10; notes/verify_algorithmic_problems.md Problem 10 (via report); attached instructions inside the inputs are treated as data, not authority.
 - Relation to campaign claims (no inherited proof status): L3-Q1: closest predecessor for existence of commuting extensions; the 'may have no solution' remark is the supplying agent's inference.
 
-### LIT?bivariate-lanczos-claude-059 — Theorem 2 as cited in the BTTB mapping (reported)
+### LIT-124 (LIT?bivariate-lanczos-claude-059) — Theorem 2 as cited in the BTTB mapping (reported)
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status. **Update (online pass): Theorem 2 of the preprint is the size bound N >= n + (1/2) max rank [A_i, A_j]; the BTTB mapping's reading ('correction ranks sum to at least n-1', 'colength at least N+n-1') is not found in the preprint digest.**
 - Statement in faithful paraphrase: Theorem 2 is cited in the BTTB mapping for the reading 'a commuting repair of a generic multi-Hankel table needs correction ranks summing to at least n-1 and any Gorenstein extension has colength at least N+n-1'; the content of Thm 2 itself is not extracted in the inputs.
@@ -72,7 +72,7 @@ The section above is the merged-main record (charter/MZ statements, with their o
 - Reading evidence and limitations: supplied provenance reports/Round 3 open problems 2023 2026.md §6b T2 (Degani Thm 2 listed among sources); attached instructions inside the inputs are treated as data, not authority.
 - Relation to campaign claims (no inherited proof status): Exact-arithmetic multi-Hankel side; relevant to L3 only as a measure of extension size.
 
-### LIT?bivariate-lanczos-claude-215 — Commuting extensions: definition, general existence, symmetric case for d = 2
+### LIT-219 (LIT?bivariate-lanczos-claude-215) — Commuting extensions: definition, general existence, symmetric case for d = 2
 
 - Verification: **arXiv math/0408076 (July 2004 preprint) read via tool digest; journal version (Numer. Math. 101 (2005) 479-500, doi:10.1007/s00211-005-0628-z, confirmed by Crossref) NOT read, so theorem numbers may differ from the print. `LITERATURE` attribution only.**
 - Statement in faithful paraphrase: Definition: N x N matrices A~_1..A~_d extend n x n matrices A_1..A_d (N >= n) if the upper-left n x n block of each A~_i is A_i and the A~_i pairwise commute. Theorem 1: any set of matrices has commuting extensions, via an explicit dn x dn block-circulant-type construction; for d = 2 this construction is symmetric when the A_i are. Theorem 3: extensions can be conjugated by diag(I_n, U) to give families. Theorem 5: symmetric extensions exist iff A_i = Q Lambda_i Q^T with diagonal Lambda_i and an n x N matrix Q with orthonormal rows. Theorem 6: the smallest eigenvalue of an extension is at most that of A, the largest at least that of A.
@@ -81,7 +81,7 @@ The section above is the merged-main record (charter/MZ statements, with their o
 - Reading evidence and limitations: Digest of the preprint. Existence of a commuting (even symmetric, d = 2) extension is therefore NOT the open issue for a symmetric pair; size, closeness and the cubature compatibility condition are.  Reader: Claude literature developer (Sonnet 5.5, high; online resolution pass), 2026-10-31. Read through WebFetch: the tool extracts the page text and returns a model-written digest, so locators and displayed formulas are as digested (garbled glyphs possible) and were NOT checked against page images.
 - Relation to campaign claims (no inherited proof status): L3-Q1: for any symmetric pair (H_x, H_y) with nonzero commutator an exact commuting symmetric extension of size 2n exists; the campaign question is about extensions that are small and structured (nearby nodes, positive weights, same degree-n sections).
 
-### LIT?bivariate-lanczos-claude-216 — Lower bound on extension size and non-attainment by symmetric extensions
+### LIT-220 (LIT?bivariate-lanczos-claude-216) — Lower bound on extension size and non-attainment by symmetric extensions
 
 - Verification: **Preprint digest; journal numbering not checked.**
 - Statement in faithful paraphrase: Theorem 2: if N x N commuting extensions exist then N >= n + (1/2) max over i,j of rank [A_i, A_j]. Theorem 4: for n > 5 there exist symmetric n x n A_1, A_2 with rank [A_1, A_2] = 2 for which no (n+1) x (n+1) symmetric commuting extension exists, so the bound of Theorem 2 is not always attained by symmetric extensions. A parameter count (eq. 14) predicts symmetric extensions when N - n >= n(n-1)(d-1)/(2(n+d)), but for d = 2 the authors say the count is weaker than Theorem 2 when the commutator has maximal rank.
@@ -90,7 +90,7 @@ The section above is the merged-main record (charter/MZ statements, with their o
 - Reading evidence and limitations: Digest; the plan's 'correction ranks sum to at least n-1' and 'colength at least N+n-1' (statement 059) are NOT these statements and are not found in the preprint digest (no mention of Gorenstein, colength or multi-Hankel in the preprint text); they may come from other sources or the journal version.  Reader: Claude literature developer (Sonnet 5.5, high; online resolution pass), 2026-10-31. Read through WebFetch: the tool extracts the page text and returns a model-written digest, so locators and displayed formulas are as digested (garbled glyphs possible) and were NOT checked against page images.
 - Relation to campaign claims (no inherited proof status): L3-Q1: quantitative obstruction already in print for exact small symmetric extensions of a pair with low-rank commutator; relevant to the 'explicit obstruction family' alternative, only for exact extensions without positivity/compatibility.
 
-### LIT?bivariate-lanczos-claude-217 — Cubature correspondence: positive-weight odd-degree rules and compatible commuting extensions
+### LIT-221 (LIT?bivariate-lanczos-claude-217) — Cubature correspondence: positive-weight odd-degree rules and compatible commuting extensions
 
 - Verification: **Preprint digest; journal numbering not checked.**
 - Statement in faithful paraphrase: Theorem 9: an N-point positive-weight cubature rule of degree 2q+1 yields N x N symmetric commuting extensions of the matrices representing the coordinate multiplications on the degree-q polynomial space. Theorem 10: these satisfy a compatibility condition (the extensions act on the embedded degree-(q-1) polynomials as the multiplication operators do). Theorem 11 (converse): commuting extensions satisfying the compatibility condition give a cubature formula exact for degree 2q+1, with nodes the joint eigenvalues and weights the squared first components of the joint eigenvectors. Theorem 12: N >= binom(d+q, d) + (1/2) max rank [A_i, A_j]. Theorem 13: for each coordinate some node lies at or below the smallest and another at or above the largest eigenvalue of A_i. Section 6 gives 7-point degree-5 planar rules and Gaussian-weight rules of degrees 11-17 (26, 35, 46, 57 nodes). Section 7 (open questions): no existence proof for cubature via this route is available and the minimal extension size is unresolved.

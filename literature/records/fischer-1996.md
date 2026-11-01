@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-047 — conditioning for modified moments (univariate)
+### LIT-112 (LIT?bivariate-lanczos-claude-047) — conditioning for modified moments (univariate)
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Reported: does for modified moments what Fischer 1998 does for discrete measures (sensitivity of recurrence coefficients).

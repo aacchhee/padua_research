@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-414 — 1D Arnoldi with full reorthogonalization is backward stable (background claim, not read)
+### LIT-257 (LIT?bivariate-lanczos-claude-414) — 1D Arnoldi with full reorthogonalization is backward stable (background claim, not read)
 
 - Verification: **Metadata only**; the paper was NOT read, so no mathematical content is attested. UNVERIFIED. `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: The L2 review attributes to this paper, from background knowledge, the statement that Arnoldi with full reorthogonalization is backward stable in 1D: the computed basis is an exact Krylov basis of a nearby matrix. The reviewer did not read the paper, so the attribution is UNVERIFIED.

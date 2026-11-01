@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-408 — rounding-error theorem for univariate Vandermonde-with-Arnoldi fitting: bound on fitted/evaluated values only
+### LIT-251 (LIT?bivariate-lanczos-claude-408) — rounding-error theorem for univariate Vandermonde-with-Arnoldi fitting: bound on fitted/evaluated values only
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Univariate, real setting. Thm 3.1 bounds the forward error of the fitted and evaluated values. Lemma 3.1 is the Arnoldi residual relation with Frobenius norm of the residual F at most sqrt(n) times ‖X‖ times u. Remark 3.2 says only the 2-norm condition number of the computed Q-hat enters. The distance of the computed Q-hat or H-hat from the exact basis or recurrence is not bounded.

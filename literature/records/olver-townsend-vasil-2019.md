@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-401 — stacked x/y three-term relations are not lower triangular; pseudo-inverse B_n^+ used to recover the next degree
+### LIT-244 (LIT?bivariate-lanczos-claude-401) — stacked x/y three-term relations are not lower triangular; pseudo-inverse B_n^+ used to recover the next degree
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: For orthogonal polynomials on the triangle, the x- and y-recurrences stacked for the next degree form a system that, in the digest's quote, is not lower triangular and cannot be inverted immediately by forward recurrence; the authors therefore multiply by pseudo-inverses B_n^+ (eq. (2.10)) to obtain the next-degree polynomials.

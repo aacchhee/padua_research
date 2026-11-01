@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-049 — sensitivity of the Krylov-Hessenberg reduction
+### LIT-114 (LIT?bivariate-lanczos-claude-049) — sensitivity of the Krylov-Hessenberg reduction
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Reported as the sensitivity analysis of the Lanczos reduction (Kuznetsov LAA 1997 and Carpraux-Godunov-Kuznetsov LAA 1996 are listed, unverified, alongside).

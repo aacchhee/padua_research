@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-413 — cited as a source on perturbation bounds of Krylov bases and Hessenberg forms (not read)
+### LIT-256 (LIT?bivariate-lanczos-claude-413) — cited as a source on perturbation bounds of Krylov bases and Hessenberg forms (not read)
 
 - Verification: **Not read, pending-reference.** The statement is the reviewer's pointer or characterisation, not a reading of the source. UNVERIFIED. `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Cited via the Malyshev–Sadkane reference list as a paper on perturbation bounds of Krylov bases and the associated Hessenberg forms; no content was read.

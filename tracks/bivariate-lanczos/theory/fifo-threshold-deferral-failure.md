@@ -1,5 +1,7 @@
 # PD-N?bivariate-lanczos-claude-508 — First-admissible threshold deferral of nodes (online pivot detector, FIFO) does not give order-independent accuracy in point-by-point Givens updating
 
+Final ID: **PD-N031** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: prefix-aware deferral; FIFO deferral; IDEA?bivariate-lanczos-claude-504 (c) and 504c'.
 Split from: PD-N?bivariate-lanczos-claude-506 context (finding L9 of reconstruction 01).

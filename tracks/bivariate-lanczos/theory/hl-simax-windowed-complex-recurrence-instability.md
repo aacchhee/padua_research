@@ -1,5 +1,7 @@
 # PD-N?bivariate-lanczos-claude-102 — The windowed complex (N, N*) recurrence of HL SIMAX 2002 loses orthogonality exponentially from low degree
 
+Final ID: **PD-N008** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: HL SIMAX Algorithm 1 instability; (N, N*) window instability; N*-defect growth.
 Split from: none.

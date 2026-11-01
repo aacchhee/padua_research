@@ -1,5 +1,7 @@
 # PD-N?bivariate-lanczos-claude-101 — Ritz-residual governance of loss of orthogonality fails for the BJ/HL window recurrence on the listed non-product node sets (R01 main runs: all sections; seed-11 sets: Z only)
 
+Final ID: **PD-N007** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: "loss ≈ u / min Ritz residual" fails; joint-Ritz governance fails off product supports; single-section over-prediction on tensor grids; K1/K2 outcome of plan L1-Q1.
 Split from: none.

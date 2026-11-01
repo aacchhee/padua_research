@@ -1,5 +1,7 @@
 # PD-N?bivariate-lanczos-claude-203 — No tested one-relation selection rule keeps the computed spans within √u of S_n on all non-product benchmarks under full reorthogonalization (dev, mirror, alt, adapt)
 
+Final ID: **PD-N015** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: IDEA?…-207 killed for every rule; "adaptive selection is not uniformly safe"; rotπ/4 counterexample for adapt.
 Split from: none.

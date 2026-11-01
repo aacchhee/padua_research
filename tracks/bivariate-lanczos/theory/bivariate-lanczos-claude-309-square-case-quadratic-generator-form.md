@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-309 — Square case: singular polynomials as quadratic forms in the ideal generators; Hankel form of the obstruction test; explicit Padua generators
 
+Final ID: **PD-T065** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: quadratic-generator form; F = {qᵀCq : C ⊥ Hankel}; Hankel test; two-term Padua generators g_m, ω; R02 structure.
 Split from: none (supporting result for PD-T?…-300 and PD-N?…-301).

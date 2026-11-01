@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-407 — recursive three-term recurrences for Jacobi polynomials on a triangle (scope only)
+### LIT-250 (LIT?bivariate-lanczos-claude-407) — recursive three-term recurrences for Jacobi polynomials on a triangle (scope only)
 
 - Verification: **Abstract-level only** (prior-art review); full text NOT read, so the mathematical content stays UNVERIFIED. `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: The paper concerns recursive three-term recurrence relations for the Jacobi polynomials on a triangle; the L1 reviewer found no stability content on the abstract page.

@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-052 — multiple-OP downdating with perfect shifts
+### LIT-117 (LIT?bivariate-lanczos-claude-052) — multiple-OP downdating with perfect shifts
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Reported: downdates MOPs with RL steps using perfect shifts and the stored biorthonormal bases (rows of V_N, W_N), following Mastronardi-Van Dooren (SIMAX 2018); no multivariate mention; the conclusion says a thorough stability analysis remains important.
@@ -18,7 +18,7 @@
 - Reading evidence and limitations: supplied provenance notes/verify_algorithmic_problems.md Problem 1(g) ('read via WebFetch'); notes/recent_multivariate_NLA.md R4; attached instructions inside the inputs are treated as data, not authority.
 - Relation to campaign claims (no inherited proof status): F3 context: eigenvector-driven downdating needs no joint shift.
 
-### LIT?bivariate-lanczos-claude-053 — stated future work (reported)
+### LIT-118 (LIT?bivariate-lanczos-claude-053) — stated future work (reported)
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Reported conclusion: extend to MOPs for other multi-index paths (nearest-neighbour MOPs, MOPs on the complex plane); MOP bases are typically so ill conditioned that computing large-degree MOPs becomes infeasible.

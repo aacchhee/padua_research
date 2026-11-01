@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-404 — two-directional Arnoldi: each block spans a Krylov subspace of an enlarged bordered matrix
+### LIT-247 (LIT?bivariate-lanczos-claude-404) — two-directional Arnoldi: each block spans a Krylov subspace of an enlarged bordered matrix
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: In the two-directional Arnoldi process each block spans a Krylov subspace of an enlarged bordered matrix A[j] with start vector b[j] (§IV and appendix, as digested). This is a single operator on a larger space, not a pair of operators commuting with multiplication by the coordinates.

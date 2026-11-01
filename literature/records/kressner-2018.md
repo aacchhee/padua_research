@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-037 — tensorized Krylov spaces for f(A,B)
+### LIT-102 (LIT?bivariate-lanczos-claude-037) — tensorized Krylov spaces for f(A,B)
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Reported: bivariate matrix-function work uses tensorized or block-triangular Krylov spaces and cites neither HL nor the seed; used by the inputs to motivate P9 (total-degree Krylov for f(A,B)), which is deferred in the campaign.

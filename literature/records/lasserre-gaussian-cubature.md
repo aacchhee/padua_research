@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-423 — Gaussian cubature existence as an overdetermined linear system with severe restrictions
+### LIT-266 (LIT?bivariate-lanczos-claude-423) — Gaussian cubature existence as an overdetermined linear system with severe restrictions
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: The existence of a Gaussian cubature is equivalent to an overdetermined linear system; the paper remarks that existence imposes severe restrictions (as digested).

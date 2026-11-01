@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-203 — The online 2D ω-estimate (exact ω-recurrence with rounding-model sources) never underestimates the loss by more than 1.44× (E1, E2, E2D, E3) or 3.85× (sign-matched E1D) on the benchmark set; its E1 variant tracks it within 7.1× on the informative non-checkerboard benchmarks (E2 within 12×: triangle overestimate 11.7); it overestimates the clustered-checkerboard coefficient channel by ~10⁵
 
+Final ID: **PD-T048** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: L2-Q1(a) answer; E1/E1D/E2/E2D/E3; 2D Simon ω-estimate; source audit.
 Split from: none.

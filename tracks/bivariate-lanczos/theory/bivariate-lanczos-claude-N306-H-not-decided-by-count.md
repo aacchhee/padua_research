@@ -1,5 +1,7 @@
 # PD-N?bivariate-lanczos-claude-306 — MEASURED: condition (H) is not decided by the square count / checkerboard structure alone
 
+Final ID: **PD-N025** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: IDEA?bivariate-lanczos-claude-311; node-distribution dependence of (H).
 Split from: none (created per finding L10 of L3-reconstruction-01).

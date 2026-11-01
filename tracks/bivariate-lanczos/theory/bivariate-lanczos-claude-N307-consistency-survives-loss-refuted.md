@@ -1,5 +1,7 @@
 # PD-N?bivariate-lanczos-claude-307 — MEASURED: "the completed computed pair stays consistent until loss 1e-3 on product-aligned supports" is false
 
+Final ID: **PD-N026** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: R06 hypothesis A (kill criterion K13); IDEA?bivariate-lanczos-claude-314.
 Split from: none (created per finding L8 of L3-reconstruction-02).

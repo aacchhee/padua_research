@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-004 — mechanism of loss of orthogonality (as characterised by the inputs)
+### LIT-069 (LIT?bivariate-lanczos-claude-004) — mechanism of loss of orthogonality (as characterised by the inputs)
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status. **Update (online pass): the form 'component along a Ritz vector is of order u times the norm of A divided by (eta times the last Ritz-vector component)' is supported by three secondary accounts (statement 205); still not seen in the original.**
 - Statement in faithful paraphrase: As characterised by the supplying agent: in finite precision, loss of orthogonality of Lanczos vectors occurs in the direction of converged Ritz vectors; the component of q_k along a Ritz vector is bounded by roughly u*||A|| divided by the Ritz residual, via Paige's perturbed local relations and the identity relating the strictly upper part of Q^T Q to the section T.
@@ -18,7 +18,7 @@
 - Reading evidence and limitations: supplied provenance notes/adv_F1_F6_F3.md §1.1(c), §1.2 ('exactly Paige's mechanism'), §1.4 item 1 (a target statement, not a quotation of Paige); attached instructions inside the inputs are treated as data, not authority.
 - Relation to campaign claims (no inherited proof status): L1-Q1: the benchmark mechanism against which the 2D measurements (loss approx u / min joint Ritz residual, within 3x, MEASURED by the supplying agent) are compared.
 
-### LIT?bivariate-lanczos-claude-205 — Loss of orthogonality only along converged Ritz vectors (secondary account)
+### LIT-209 (LIT?bivariate-lanczos-claude-205) — Loss of orthogonality only along converged Ritz vectors (secondary account)
 
 - Verification: **Original NOT read (author's scan, 80LAIA001.pdf, has no text layer). Secondary: Meurant-Strakos Theorem 4.3; Paige (2019) Remark 3.2; Carson-Demmel eq. (5.11). UNVERIFIED against the 1980 paper.**
 - Statement in faithful paraphrase: With Ritz pair (theta_j, y_j = V_k s_j) of T_k and zeta_{kj} the last component of s_j: y_j^T v_{k+1} = -(eps_{jj}) / (eta_{k+1} |zeta_{kj}|), where |eps_{jj}| <= k eps2 ‖A‖ (a quantity of rounding size). Consequently orthogonality of v_{k+1} to the Krylov basis can be lost only in the directions of Ritz vectors whose last component is small (converged), and not before the first Ritz pair converges. The secondary text adds that loss is not proved to occur in every such direction because the numerator can vanish.
@@ -27,7 +27,7 @@
 - Reading evidence and limitations: Secondary accounts agree; Simons-report Problem 2.19 cites Paige 1976 and 1980 as the baseline (confirmed in the report text, see amsel-et-al-2026).  Reader: Claude literature developer (Sonnet 5.5, high; online resolution pass), 2026-10-31. Read through WebFetch: the tool extracts the page text and returns a model-written digest, so locators and displayed formulas are as digested (garbled glyphs possible) and were NOT checked against page images.
 - Relation to campaign claims (no inherited proof status): L1-Q1 benchmark mechanism (converged Ritz direction) against which the measured 2D relation 'loss ~ u / minimal joint Ritz residual' is compared; kill test K1 in plan.md concerns exactly this alternative.
 
-### LIT?bivariate-lanczos-claude-206 — Accuracy theorems for stabilized Ritz values and eigenvalues of T (secondary account)
+### LIT-210 (LIT?bivariate-lanczos-claude-206) — Accuracy theorems for stabilized Ritz values and eigenvalues of T (secondary account)
 
 - Verification: **Original NOT read. Numbering below is Carson-Demmel's mapping to 'Paige 1980' (UCB/EECS-2014-165, Section 5-6); constants are theirs, which they say differ slightly from Paige's. UNVERIFIED against Paige.**
 - Statement in faithful paraphrase: Paige 1980 Lemma 3.1: each eigenpair of T_m has an earlier 'stabilized' Ritz value nearby. Theorem 3.1: a stabilized Ritz value (delta <= sqrt(3) m^2 sigma^2 u in the report's notation) lies within (m+1)^3 sigma^2 u of an eigenvalue of A. Corollary 3.1: a stabilized Ritz pair is an exact eigenpair of a matrix within ~5 t^2 sigma^2 u of A (the report has 6 t^2). Theorem 4.1: at least one eigenvalue of T_n is within (n+1)^3 sigma^2 u of an eigenvalue of A. Theorems 4.2-4.3 concern the Krylov-space perturbation and eigenpair results (not detailed in the digest). Assumptions adopted from Paige: computed betas nonzero, m(30 + eps1) <= 1, eps0 < 1/12. Paige (2019, Section 1.1) cites section 8.7 of the 1971 thesis for the growth of Ritz-value error bounds (possibly like k^2 in bounds, proportional to k in practice for well separated eigenvalues).

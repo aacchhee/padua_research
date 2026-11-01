@@ -1,5 +1,7 @@
 # PD-N?bivariate-lanczos-claude-302 — In the square case no backward construction achieves δ = O(ε)
 
+Final ID: **PD-N021** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: kill-test alternative "construction always works with δ = O(ε)" refuted for M = N_n; √ε necessity in the square case.
 Split from: none (case of the target PD-T?bivariate-lanczos-claude-300).

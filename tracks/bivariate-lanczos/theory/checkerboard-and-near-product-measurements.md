@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-112 — Checkerboard control and near-product measurements (R04): two error channels, and a product-type measure with strong loss
 
+Final ID: **PD-T040** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: checkerboard control; coefficient channel vs vector channel; exact split Q̂ = Ξ̄ − Φ̃ measured; rotation-angle sweep.
 Split from: none.

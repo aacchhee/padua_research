@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-002 — reorthogonalization practice
+### LIT-067 (LIT?bivariate-lanczos-claude-002) — reorthogonalization practice
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Huhtanen-Larsen cite this work ([6] in HL) only as the source for the reorthogonalization and rank decision used in their ORTH routine (modified Gram-Schmidt with one conditional reorthogonalization pass; 'twice is enough').

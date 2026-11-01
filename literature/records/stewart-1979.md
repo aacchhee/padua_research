@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-040 — conditioning of downdating ~ 1/(1 - leverage)
+### LIT-105 (LIT?bivariate-lanczos-claude-040) — conditioning of downdating ~ 1/(1 - leverage)
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Reported as the classical source for the intrinsic conditioning of Cholesky downdating, proportional to 1/(1 - ||R^-T a||^2); with R = I in OP coordinates this is the 1/(1 - leverage) scaling observed in the supplying agent's runs.

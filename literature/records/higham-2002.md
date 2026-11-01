@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-046 — rotation/Householder error accumulation
+### LIT-111 (LIT?bivariate-lanczos-claude-046) — rotation/Householder error accumulation
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Reported: an orthogonal-similarity sequence of Givens rotations yields a computed result that is an exact unitary similarity of D + E with ||E|| growing with the number of rotations per entry times u; Householder/CGS2 accumulate roughly sqrt(M) statistically. The supplying agent uses this to explain the measured Givens-IEP deficit (error ~ M vs ~ sqrt(M)) as an inference.

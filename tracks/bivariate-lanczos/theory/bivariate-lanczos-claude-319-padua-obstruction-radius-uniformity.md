@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-319 — OPEN: dependence on n of the Padua obstruction radius (does the positivity radius of P_n tend to 0? is there an obstruction radius uniform in n?)
 
+Final ID: **PD-T075** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: δ_0(n) asymptotics; uniform obstruction radius; "no radius uniform in n" (withdrawn wording); positivity radius ρ_n of P_n; maximal obstruction radius δ_obs(n).
 Split from: PD-T?bivariate-lanczos-claude-313 (Open items) and PD-N?bivariate-lanczos-claude-303 (Statement), pre-audit wording: 313 «So δ_0(n) → 0 with n (roughly n⁻³ in the sampled column): the obstruction holds for each n, with no radius uniform in n.»; N303 «The radius δ_0(n) shrinks with n (rigorous reviewer bounds 5.63e-4 … 6.55e-8 for n = 4..12, PD-T?…-313 Open items), so the obstruction is per degree, not uniform in n.»

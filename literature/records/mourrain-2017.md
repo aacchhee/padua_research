@@ -43,7 +43,7 @@ The section above is the merged-main record (charter/MZ statements, with their o
 
 ### Extracted published statements
 
-### LIT?bivariate-lanczos-claude-063 — exact orthogonal bases, pivoting around isotropy; displacement-rank remark
+### LIT-128 (LIT?bivariate-lanczos-claude-063) — exact orthogonal bases, pivoting around isotropy; displacement-rank remark
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Reported: computes orthogonal bases and multiplication matrices exactly with pivoting around isotropy; each pivot equals the ratio of consecutive Buchberger-Moller residuals (supplying agents' observation); the remark that displacement rank does not help is a comparison remark in section 3.3, pp. 338-339, not a theorem.

@@ -1,5 +1,7 @@
 # PD-N?bivariate-lanczos-claude-304 — The compression (POVM/dilation) backward model does not imply exact sections
 
+Final ID: **PD-N023** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: route (ii) failure; compression ⇏ section; IDEA?bivariate-lanczos-claude-303.
 Split from: none (created per finding L10 of L3-reconstruction-01).

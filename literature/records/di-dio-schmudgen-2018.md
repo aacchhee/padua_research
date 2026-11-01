@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-417 — Richter–Tchakaloff: moment-cone functionals have finitely atomic representing measures
+### LIT-260 (LIT?bivariate-lanczos-claude-417) — Richter–Tchakaloff: moment-cone functionals have finitely atomic representing measures
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Prop. 4 (as digested): a functional in the moment cone has a finitely atomic representing measure (Richter–Tchakaloff form of the truncated moment problem).
@@ -18,7 +18,7 @@
 - Reading evidence and limitations: Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.
 - Relation to campaign claims (no inherited proof status): Known component of PD-T?bivariate-lanczos-claude-302 (moment-cone membership is equivalent to a positive cubature on the fattened node set).
 
-### LIT?bivariate-lanczos-claude-418 — boundary points of the moment cone: a nonzero nonnegative function is annihilated; supports lie in its zero set
+### LIT-261 (LIT?bivariate-lanczos-claude-418) — boundary points of the moment cone: a nonzero nonnegative function is annihilated; supports lie in its zero set
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Prop. 27(i), Cor. 41 and Lemma 3 (as digested): a moment vector is a boundary point of the moment cone iff a nonzero nonnegative function is annihilated by it, and then the supports of its representing measures lie in the zero set of that function. The one-variable analogue is Schmüdgen, Ten Lectures, Lecture 3, Thm 3.5 (read in 1D form only).
@@ -27,7 +27,7 @@
 - Reading evidence and limitations: Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source. Reading limitation noted by the reviewer: the digest flagged a possible transcription issue in Cor. 41 (iii)–(vii).
 - Relation to campaign claims (no inherited proof status): The duality behind the inradius r(δ) of PD-T?bivariate-lanczos-claude-302: known component.
 
-### LIT?bivariate-lanczos-claude-419 — inner points of the moment cone: zero-gradient space and full-rank derivative of the moment map
+### LIT-262 (LIT?bivariate-lanczos-claude-419) — inner points of the moment cone: zero-gradient space and full-rank derivative of the moment map
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Thm 40, Lemma 37(ii) and Prop. 43(iii)–(iv), with the proof step (vii) to (i) (as digested): for X = R^n and functions in C^1, a moment vector s is an inner point iff d(s) = codim Im(s) = 0, where Im(s) is the union of the ranges of the derivative DS of the moment map. The annihilator of Im(s) corresponds to functions vanishing together with their first partial derivatives on the atom set W(s). A full-rank DS gives an open neighbourhood map and hence an inner point. The digest reports no second-order vanishing criterion in the paper.

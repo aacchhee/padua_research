@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-114 — On product-type measures the first-order Gram sensitivity of the window coefficient map is given by univariate data: structurally permitted (on-pattern) entries have univariate gains, structural-zero (off-pattern) entries have cross-variable gains
 
+Final ID: **PD-T042** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: coefficient-channel gain identity; on/off-pattern split; first-order coefficient channel; structural-zero gains.
 Split from: none (explains PD-T?…-112 (a, b), "coefficient channel").

@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-315 — MEASURED: consistency defect of computed sections tracks the loss of orthogonality; no first-order Greenbaum regime in the tested runs
 
+Final ID: **PD-T071** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: asymmetry vs loss; first-order consistent (weight-only) fit; reading (G) measurements; R06.
 Split from: none (measured companion of PD-T?…-314 and of the target 300, reading (G)).

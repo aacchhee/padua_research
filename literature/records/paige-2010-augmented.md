@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-411 — finite-precision Lanczos computed vectors span a Krylov space of an augmented matrix
+### LIT-254 (LIT?bivariate-lanczos-claude-411) — finite-precision Lanczos computed vectors span a Krylov space of an augmented matrix
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Thm 3.1 and Cor. 3.2–3.4: the computed Lanczos vectors span a Krylov space of an augmented matrix built from A. The paper gives no distance from the computed vectors' span to the Krylov space of A itself (explicitly, as digested).

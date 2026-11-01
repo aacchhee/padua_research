@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-300 — L3-Q1 target: Greenbaum-type backward interpretation of computed degree-n sections
 
+Final ID: **PD-T056** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: L3-Q1; IDEA?bivariate-lanczos-claude-031 (seed); nearby representing measure; commuting backward model; backward interpretation.
 Split from: none.

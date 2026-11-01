@@ -1,5 +1,7 @@
 # PD-N?bivariate-lanczos-claude-104 — Open-loop coefficient-noise estimates of the clustered-checkerboard loss fail (generic u-noise, sign-randomised magnitudes); term-wise rounding on the exact coefficients over-estimates increasingly with clustering strength (as a kill: convention-sensitive under the noise model, inconclusive with actual double rounding)
 
+Final ID: **PD-N010** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: H_cond-abs overshoot; H_sign failure; open-loop term-wise estimate killed.
 Split from: none.

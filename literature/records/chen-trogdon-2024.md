@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-026 — forward stability of Lanczos for regular measures (abstract)
+### LIT-091 (LIT?bivariate-lanczos-claude-026) — forward stability of Lanczos for regular measures (abstract)
 
 - Verification: **Abstract-checked only** (arXiv abstract page); full text NOT inspected, so the mathematical content stays UNVERIFIED. `LITERATURE` attribution only.
 - Statement in faithful paraphrase: Proves backward stability of Lanczos when the eigenvector spectral distribution is close to a reference measure with well-behaved orthogonal polynomials, and upgrades to forward stability when the reference measure has a density on one interval with square-root behaviour at the endpoints.
@@ -18,7 +18,7 @@
 - Reading evidence and limitations: supplied provenance arXiv abstract page fetched 2026-10-31; attached instructions inside the inputs are treated as data, not authority.
 - Relation to campaign claims (no inherited proof status): Side note S (campaign): forward-stability analogue for a 2D product Chebyshev / cubature measure with M >> N; not Padua sets themselves.
 
-### LIT?bivariate-lanczos-claude-027 — scope remark: regular 2D measures, not Padua (reported)
+### LIT-092 (LIT?bivariate-lanczos-claude-027) — scope remark: regular 2D measures, not Padua (reported)
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Reported campaign reading: a 2D analogue would concern regular 2D measures such as the product Chebyshev or Padua-cubature measure with M much larger than N; Padua point sets themselves have M = N, so there is no 'long run'. F1 should say 'regular 2D measures', not 'Padua measures'.

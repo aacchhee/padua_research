@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-060 — commuting extensions: uniqueness and algorithms (abstract)
+### LIT-125 (LIT?bivariate-lanczos-claude-060) — commuting extensions: uniqueness and algorithms (abstract)
 
 - Verification: **Abstract-checked only** (arXiv abstract page); full text NOT inspected, so the mathematical content stays UNVERIFIED. `LITERATURE` attribution only. **Update (online pass): Section 1.4 says that the two-matrix analogue of the uniqueness and algorithm results is 'wide open'; the Step 0 sentence 'does not contain the phrase wide open' referred to the abstract only (statement 223).**
 - Statement in faithful paraphrase: Given a tuple of n x n matrices, asks for larger r x r pairwise commuting matrices containing the originals as upper-left corners; gives uniqueness theorems for tuples of three or more matrices, algorithms for extensions of minimal size (up to r = 4n/3) and a genericity theorem; the abstract says these are the first provably efficient algorithms beyond r = n+1. The abstract mentions neither symmetric/Hermitian matrices nor approximate commutation, and does not contain the phrase 'wide open'.
@@ -18,7 +18,7 @@
 - Reading evidence and limitations: supplied provenance arXiv abstract page fetched 2026-10-31; attached instructions inside the inputs are treated as data, not authority.
 - Relation to campaign claims (no inherited proof status): L3-Q1: exact commuting extensions of a TUPLE; for a symmetric pair with an O(eps) commutator the relevant quantitative question is separate. The plan's 'wide open two-matrix case' is not confirmed here.
 
-### LIT?bivariate-lanczos-claude-223 — Section 1.4: the two-matrix case is declared wide open (attribution SUPPORTED, scope narrow)
+### LIT-227 (LIT?bivariate-lanczos-claude-223) — Section 1.4: the two-matrix case is declared wide open (attribution SUPPORTED, scope narrow)
 
 - Verification: **arXiv 2401.01302v1 full text searched for the phrase through three fetches (PDF twice, HTML once) that agree. Proofs not read. `LITERATURE` attribution only.**
 - Statement in faithful paraphrase: In Section 1.4 (Further work), after remarking that it would be interesting to obtain results like those proved for three or more matrices (uniqueness and efficient algorithms for commuting extensions) in the case of TWO matrices, the author says that, at the moment, this problem is wide open. The same phrase occurs in Section 2, but there it refers to uniqueness of commuting extensions beyond r = 2n when only diagonalisable extensions are allowed. The paper contains no 'open problem' or 'open question' wording. It does not treat Hermitian or real symmetric pairs, approximate or almost commuting, or any quantitative closeness.
@@ -27,7 +27,7 @@
 - Reading evidence and limitations: Supersedes the Step 0 abstract-only conclusion that the attribution was unsupported. The Step 0 statement stays in the record as history. What 'wide open' covers is exact uniqueness and algorithms for general pairs, not symmetric or approximate pairs and not Degani-Schiff-Tannor's existence question.  Reader: Claude literature developer (Sonnet 5.5, high; online resolution pass), 2026-10-31. Read through WebFetch: the tool extracts the page text and returns a model-written digest, so locators and displayed formulas are as digested (garbled glyphs possible) and were NOT checked against page images.
 - Relation to campaign claims (no inherited proof status): L3-Q1: the plan's phrase 'Koiran 2024 (wide open two-matrix case, as reported)' is supported, but only in this narrow sense (uniqueness and efficient algorithms for exact commuting extensions of two general matrices); it should not be read as saying that approximate extensions of symmetric pairs are open.
 
-### LIT?bivariate-lanczos-claude-224 — Section 1.3 and Section 2: real symmetric pairs, size 2n-1 and cubature context
+### LIT-228 (LIT?bivariate-lanczos-claude-224) — Section 1.3 and Section 2: real symmetric pairs, size 2n-1 and cubature context
 
 - Verification: **Tool digest of Sections 1, 1.3, 2 and the reference list. `LITERATURE` attribution only.**
 - Statement in faithful paraphrase: Section 1: the term 'commuting extension' was apparently coined by Degani, Schiff and Tannor (Numer. Math. 101 (2005) 479-500, reference [2]) for constructing cubature formulas; [2] has a block-circulant extension of size pn. Section 1.3: Kaliuzhnyi-Verbovetskyi, Spitkovsky and Woerdeman, Matrices with normal defect one (arXiv 0903.0090), Theorem 4.2, study real symmetric pairs (p = 2) with r = n+1 in detail; that construction requires solving polynomial equations (eigenvalue computations), whereas Koiran's algorithms need only linear systems. Section 2: two invertible n x n matrices always have a commuting extension of size 2n-1 (Kimsey and Woerdeman, Minimal normal and commuting completions, 2008, reference [7]); that is efficient but not minimal; most pairs of n x n matrices have no commuting extension of size r for large n, and Example 2 (a 2 x 2 pair extended to 3 x 3, from [7]) shows that uniqueness fails. Section 5 contains genericity statements for one and two commutators.

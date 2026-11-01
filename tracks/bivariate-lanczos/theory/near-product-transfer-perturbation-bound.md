@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-110 — Near-product upper bound for the per-node propagator via block transfer matrices (perturbed-product lemma)
 
+Final ID: **PD-T038** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: discrete-Gronwall transfer bound; near-product upper bound; product-of-marginals reference bound.
 Split from: none.

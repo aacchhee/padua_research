@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-204 — Measured section accuracy on semi-orthogonal runs: the F-section is accurate exactly when the local level is small; one-pass windows lose local orthogonality on rot0.3, triangle and annulus; a two-pass window restores it everywhere and removes most of the plain-run loss there
 
+Final ID: **PD-T049** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: L2-Q1(b) measurements (F-part); IDEA?…-206 P1/P2; local channel vs propagated channel; "two-pass window".
 Split from: none.

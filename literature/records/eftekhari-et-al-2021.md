@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-430 — 1D non-negative super-resolution: uniqueness for T-systems and an O(delta^{1/7}) stability rate
+### LIT-273 (LIT?bivariate-lanczos-claude-430) — 1D non-negative super-resolution: uniqueness for T-systems and an O(delta^{1/7}) stability rate
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: In 1D, T-systems with m >= 2k+1 measurements give a unique non-negative measure; for noisy data the recovery error is O(delta^{1/7}) in a generalised Wasserstein distance (abstract and §1, as digested).

@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-424 — minimal matrix convex set of a compact set: compressions of normal tuples, equivalently POVM averages
+### LIT-267 (LIT?bivariate-lanczos-claude-424) — minimal matrix convex set of a compact set: compressions of normal tuples, equivalently POVM averages
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: X lies in the n-th level W_n^min(K) iff X is a compression of a normal tuple N with joint spectrum in K, iff X = sum_j x^{(j)} tensor P_j with P_j positive semidefinite and sum_j P_j = I (Naimark). The matrix range of a normal tuple is W^min of its spectrum.

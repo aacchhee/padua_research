@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-307 — MEASURED: condition (H) on Padua and random square node sets, and LP support-radius rates
 
+Final ID: **PD-T063** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: (H) survey; Padua n = 4..7 robust failure (numerical); random square sets; δ_min(ε) LP measurements.
 Split from: none (measured companion of PD-T?bivariate-lanczos-claude-300).

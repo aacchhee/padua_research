@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-054 — IEP variants for MOPs (reported)
+### LIT-119 (LIT?bivariate-lanczos-claude-054) — IEP variants for MOPs (reported)
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Reported table: IEP_KRYL (biorthogonal Lanczos, several starts) not backward stable; IEP_CORE (non-unitary eliminators) appears backward stable only for N < 25; authors not aware of an extension of Laurie's approach to MOPs.

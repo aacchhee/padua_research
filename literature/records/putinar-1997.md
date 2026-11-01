@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-426 — listed as a source of the Richter–Tchakaloff finite-atomic representation (abstract only)
+### LIT-269 (LIT?bivariate-lanczos-claude-426) — listed as a source of the Richter–Tchakaloff finite-atomic representation (abstract only)
 
 - Verification: **Abstract-level only** (prior-art review); full text NOT read, so the mathematical content stays UNVERIFIED. `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Listed in the L3 review, next to Bayer–Teichmann 2006 and Di Dio–Schmüdgen Prop. 4, as a source of the finite-atomic (Tchakaloff-type) representing measure; only the citation and abstract were seen.

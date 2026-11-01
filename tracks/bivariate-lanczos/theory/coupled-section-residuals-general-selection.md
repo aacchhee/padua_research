@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-205 — For one-relation selections satisfying condition (C) (every unformed product belongs to a column created by the other operator) with an acyclic implicit-section recursion, the residuals of the two sections obey a coupled clamped recursion; the BJ case is the decoupled special case (the selection-independent drift bound for both operators is PD-T?…-208; (C) ⟹ acyclicity is PD-T?…-209)
 
+Final ID: **PD-T050** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: coupled commutator residuals; general-selection shadow recursion; residual coupling C_A ← C_B Ĥ_A. Former alias "drift bound for both operators" now belongs to PD-T?…-208.
 Split from: none (generalises PD-T?…-202 parts 2, 4 from the BJ selection to (C)-selections).

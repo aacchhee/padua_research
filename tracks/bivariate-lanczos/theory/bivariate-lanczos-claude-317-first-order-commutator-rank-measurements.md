@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-317 — MEASURED: d(κ∘Φ) has rank n(n+1)/2 at the tested square node sets
 
+Final ID: **PD-T073** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: dkappa rank measurement; 304(c) MEASURED row; numerical first-order isomorphism.
 Split from: PD-T?bivariate-lanczos-claude-304(c), pre-audit status row: «| (c) the induced map V*/T → Skew_{n+1} is an isomorphism ("κ is, to first order, the S_1*-component") | MEASURED | reconstruction `indep_measured.py dkappa`: rank n(n+1)/2 for Padua n = 2, 3; not proved |».

@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-043 — mixed stability of downdating variants
+### LIT-108 (LIT?bivariate-lanczos-claude-043) — mixed stability of downdating variants
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Reported: LINPACK and Chambers-type Cholesky downdating are mixed stable, while a third variant is unstable.

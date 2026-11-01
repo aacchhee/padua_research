@@ -1,5 +1,7 @@
 # PD-N?bivariate-lanczos-claude-301 — Reading (E): exact-section backward representation of perturbations given as data, with δ(ε) → 0, fails for Padua n = 3 (reading (G) OPEN)
 
+Final ID: **PD-N020** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: Padua n = 3 obstruction; locally nonnegative singular septic p*; failure of the commuting (graded) backward model in the square case; kill test of L3-Q1 (square case) fires at n = 3.
 Split from: none (case of the target PD-T?bivariate-lanczos-claude-300).

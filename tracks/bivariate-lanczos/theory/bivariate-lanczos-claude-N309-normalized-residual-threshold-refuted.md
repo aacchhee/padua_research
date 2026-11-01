@@ -1,5 +1,7 @@
 # PD-N?bivariate-lanczos-claude-309 — The pre-audit normalised-residual threshold of PD-T?…-302(b) (factor 1) is false
 
+Final ID: **PD-N028** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: LF-M1 counterexample; normalisation counterexample; "c = 1 threshold with mass-normalised L̂"; mixing of the full-cone inradius with a mass-normalised residual.
 Split from: PD-T?bivariate-lanczos-claude-302(b), pre-audit wording (the clause «the same threshold, with ε replaced by (1−θ)ε, governs representation up to a residual θε, 0 ≤ θ < 1, in the functional norm» read with the Definitions «"Up to residual θε" = ‖L_{μ′} − L̂‖ ≤ θε with L̂ := Φ^{-1}(Ĥ) normalised by L̂(1) = L_μ(1)»).

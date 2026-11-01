@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-402 — three-term recursion with a non-unique left inverse D_n of the stacked coefficient matrix
+### LIT-245 (LIT?bivariate-lanczos-claude-402) — three-term recursion with a non-unique left inverse D_n of the stacked coefficient matrix
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: §2.2, eq. (2.14): P_{n+1} = sum_i x_i D_{n,i}^T P_n + E_n P_n + F_n P_{n-1} with D_n^T A_n = I, where A_n is the stacked matrix of three-term coefficients (notation as digested); the survey states that such a left inverse is not unique. Thm 2.11 gives the conditions under which this recursion yields orthonormal polynomials.

@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-105 — For product measures the per-node propagator of the window recurrence factorises into univariate Jacobi impulse responses
 
+Final ID: **PD-T033** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: product decoupling; tensor-grid stability mechanism; chain factorisation; "no bivariate amplification on product measures".
 Split from: none.

@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-505 — Unisolvent-prefix orders exist (greedy extension lemma)
 
+Final ID: **PD-T080** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: extension lemma; prefix-aware deferral completes; GEPP order; IDEA?bivariate-lanczos-claude-504 (support).
 Split from: none.

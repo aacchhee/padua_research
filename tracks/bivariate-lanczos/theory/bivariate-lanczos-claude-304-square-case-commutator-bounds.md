@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-304 — Square case M = N_n: commutator lower bound δ ≥ c√‖κ‖ and the fully commuting case δ = O(ε)
 
+Final ID: **PD-T060** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: square-case necessity; last-block commutator diagnostic; κ = [Ĥ_x, Ĥ_y]_{nn}; fully commuting square data; normal-matrix (Bauer–Fike) representation; dim S_1 = n(n+1)/2 = dim Skew_{n+1}.
 Split from: none (supporting result for PD-T?bivariate-lanczos-claude-300).

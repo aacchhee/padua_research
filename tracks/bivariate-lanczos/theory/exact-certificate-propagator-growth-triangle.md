@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-113 — Exact rational certificate: for the dev (BJ) rule the window-recurrence propagator grows exponentially on the triangle grid and stays polynomial on the square grid (degrees ≤ 12, computer-assisted; "exponentially" and "polynomial" describe the finite range only)
 
+Final ID: **PD-T041** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: exact certificate; monic/orthonormal impulse identity; triangle-grid lower bound; rational propagator entries.
 Split from: none.

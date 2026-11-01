@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-003 — reference point for block extension
+### LIT-068 (LIT?bivariate-lanczos-claude-003) — reference point for block extension
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status. **Update (online pass): the text of Problem 2.19 was read and confirms that it cites [Pai76, Pai80] as the baseline; see amsel-et-al-2026 (statement LIT?bivariate-lanczos-claude-232).**
 - Statement in faithful paraphrase: The Simons-workshop report's Problem 2.19 asks to extend 'Paige's analysis [Pai76, Pai80]' of the Lanczos algorithm to block Lanczos (with deflation); the 1D theory is described by the inputs as complete.
@@ -18,7 +18,7 @@
 - Reading evidence and limitations: supplied provenance notes/recent_multivariate_NLA.md §1 item 2 and R1 'What is known'; attached instructions inside the inputs are treated as data, not authority.
 - Relation to campaign claims (no inherited proof status): L1/L4: defines what 'a Paige-type theory' must generalise; the block case is itself reported open, hence two operators a fortiori.
 
-### LIT?bivariate-lanczos-claude-203 — Local perturbed Lanczos relations (secondary account of the standard form)
+### LIT-207 (LIT?bivariate-lanczos-claude-203) — Local perturbed Lanczos relations (secondary account of the standard form)
 
 - Verification: **NOT read in the original: the author's scan (cs.mcgill.ca/~chris/pubClassic/76JIMA001.pdf) has no text layer (WebFetch returned binary data). Statement is the form given by Meurant-Strakos (2006) as Paige's, corroborated by Paige (2019) and Carson-Demmel (2014). UNVERIFIED against the 1976 paper.**
 - Statement in faithful paraphrase: For the computed Lanczos quantities V_k, T_k (diagonal alpha, off-diagonal eta), the relation A V_k = V_k T_k + eta_{k+1} v_{k+1} e_k^T + dV_k holds, with: |v_{j+1}^T v_{j+1} - 1| <= eps0; ‖dv_j‖ <= eps1 ‖A‖; eta_{j+1} |v_j^T v_{j+1}| <= 2 eps0 ‖A‖; and a bound of the type 4j(3 eps0 + eps1)‖A‖^2 on the defect of eta_j^2 + alpha_j^2 + eta_{j+1}^2 versus ‖A v_j‖^2. Here eps0 = 2(n+4) u < 1/12 and eps1 = 2(7 + m_A beta) u, with m_A the maximal number of nonzeros per row of A (Meurant-Strakos; constants as digested).
@@ -27,7 +27,7 @@
 - Reading evidence and limitations: Three independent secondary accounts agree on the structure; none is the original. Constants are the secondary authors' and may differ from Paige's (Carson-Demmel say theirs differ).  Reader: Claude literature developer (Sonnet 5.5, high; online resolution pass), 2026-10-31. Read through WebFetch: the tool extracts the page text and returns a model-written digest, so locators and displayed formulas are as digested (garbled glyphs possible) and were NOT checked against page images.
 - Relation to campaign claims (no inherited proof status): L1-Q1: the 1D computed local relation against which the BJ/HL bivariate local relations (two relations, X Q and Y Q) are to be written; the statement says nothing about two operators.
 
-### LIT?bivariate-lanczos-claude-204 — Orthogonality identity for the strictly upper part of V^T V (secondary account)
+### LIT-208 (LIT?bivariate-lanczos-claude-204) — Orthogonality identity for the strictly upper part of V^T V (secondary account)
 
 - Verification: **Original NOT read. Secondary: Meurant-Strakos Theorem 4.2 (attributes it to Paige 1971, 1976); Carson-Demmel eqs. (4.6)-(4.8). UNVERIFIED against Paige.**
 - Statement in faithful paraphrase: Let R_k be the strictly upper triangular part of V_k^T V_k. Then T_k R_k - R_k T_k = eta_{k+1} V_k^T v_{k+1} e_k^T + dR_k, where dR_k is upper triangular and its entries are bounded in terms of eps0, eps1 (Frobenius norm of order k times u in the Carson-Demmel version, eq. (4.11)). Paige (2019, Remark 3.2) instead cites eq. (3.18) of the 1980 paper for the vector form of the relation, so which of the 1976 and 1980 papers contains which exact form is UNRESOLVED.

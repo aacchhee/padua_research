@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-502 — Measured growth of the Givens-updating error with M (Padua and random nodes, M = 66..2016)
 
+Final ID: **PD-T078** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: Givens deficit slopes; L5-Q1 first clause; IDEA?bivariate-lanczos-claude-501 (test of seed IDEA 015).
 Split from: none.

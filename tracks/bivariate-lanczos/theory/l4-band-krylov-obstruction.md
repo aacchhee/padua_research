@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-401 — L4: no operator commuting with X and Y has two consecutive graded spaces in a band Krylov sequence with a fixed number of starting vectors
 
+Final ID: **PD-T076** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: L4 obstruction; band-Krylov non-placement; codimension obstruction; "HL is not band Lanczos for one operator"; staggered-start band Lanczos (positive placement).
 Split from: none (answers plan L4-Q1).

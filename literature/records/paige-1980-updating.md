@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-005 — stability of updating with Q stored
+### LIT-070 (LIT?bivariate-lanczos-claude-005) — stability of updating with Q stored
 
 - Verification: **Abstract-level only** (supplying agent's reading of the AMS abstract page); UNVERIFIED against the paper.
 - Statement in faithful paraphrase: Adding or removing a row when Q is available amounts to extending the original orthogonal transformation, which makes such updates numerically stable; the result extends to two-sided transformations C = Z^T B Q, which is the form of the sections H_x = Q^T X Q.

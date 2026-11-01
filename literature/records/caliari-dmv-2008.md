@@ -43,7 +43,7 @@ The section above is the merged-main record (charter/MZ statements, with their o
 
 ### Extracted published statements
 
-### LIT?bivariate-lanczos-claude-073 — discrete orthonormality with cubature weights
+### LIT-138 (LIT?bivariate-lanczos-claude-073) — discrete orthonormality with cubature weights
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Eqs. 9-10: with the Padua cubature weights the normalized product-Chebyshev basis in graded order is discretely orthonormal (only T_n(x) has norm squared 2); only L-1 of L product Chebyshev polynomials are orthonormal on the L points (also stated in Van Barel-Humet DRNA 2015 p. 153).

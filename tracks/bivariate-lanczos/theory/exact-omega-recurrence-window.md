@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-106 — Exact ω-recurrence of the window recurrence, with local-rounding sources for F-products and commutator sources for J-products
 
+Final ID: **PD-T034** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: 2D ω-recurrence; Simon-type recurrence for the window recurrence; commutator-defect ω-recurrence (IDEA?…-008 made exact); loss-source identity.
 Split from: none.

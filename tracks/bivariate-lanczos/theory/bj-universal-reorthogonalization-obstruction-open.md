@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-210 — OPEN: with the BJ selection, no reorthogonalization rule makes the implicit J-section accurate or the computed spaces J-closed on (some) non-product measures — the universal reorthogonalization obstruction
 
+Final ID: **PD-T055** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: universal commutator obstruction; "no reorthogonalization rule can by itself make the implicit J-section accurate or the computed spaces J-closed"; rule-independence of the BJ span drift; former Scope claim of PD-T?…-202; the "proved obstruction" wording of report.md Rank 4 (an overclaim per audit-01 L2-F1).
 Split from: PD-T?bivariate-lanczos-claude-202, Scope, exact claim: "Hence no reorthogonalization rule can by itself make the implicit J-section accurate or the computed spaces J-closed; whether K stays small is a property of the propagator" (Codex audit-01 finding L2-F1: this universal deduction does not follow from the proved identities, whose coefficients do change under reorthogonalization and which give no lower bound on K).

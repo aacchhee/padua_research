@@ -1,5 +1,7 @@
 # PD-N?bivariate-lanczos-claude-201 — With the BJ selection, semi-orthogonality (and even full CGS2 reorthogonalization) does not give accurate J-sections or J-closed spans on non-product measures: the computed spaces drift from S_n
 
+Final ID: **PD-N013** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: "reorthogonalization does not cure the non-product instability"; H_drift killed; J-part of L2-Q1(b) killed; V+A-type CGS2 with the BJ selection drifts; commutator channel survives reorthogonalization.
 Split from: none (J-part of the L2-Q1(b) target; positive F-part is PD-T?…-201).

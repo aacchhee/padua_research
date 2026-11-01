@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-104 — Node-row representation of the computed basis and the commutator residual of the injecting operator
 
+Final ID: **PD-T032** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: node-row recurrence; per-node marching propagator L̂(z)⁻¹; computed-coefficient polynomials p̂; commutator residual C_res; implicit J-section Ĥ_J; "F-marching with clamped J-columns".
 Split from: none.

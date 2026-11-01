@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-301 — explicit one-variable-per-polynomial recurrence for monic multivariate OPs
+### LIT-241 (LIT?bivariate-lanczos-claude-301) — explicit one-variable-per-polynomial recurrence for monic multivariate OPs
 
 - Statement in faithful paraphrase: For monic orthogonal polynomials m_α (|α| = n+1) of a d-variate measure, from the matrix three-term relations x_j p_n = A_{n,j} p_{n+1} + B_{n,j} p_n + C_{n,j} p_{n−1}, each m_α can be computed explicitly from degree-n and n−1 vectors by multiplying by any one variable x_j with α_j > 0 (eq. (5)); averaging over all admissible j gives a symmetric form (6), assembled in Theorem 8 as m_{n+1} = A_n(x) m_n − B_n m_n − C_n m_{n−1} with shift matrices L_{n,j}.
 - Hypotheses and notation: quasi-definite/positive moment functional with monic OP vectors; implicit relations (3)–(4) cited from Dunkl–Xu [8].
@@ -17,13 +17,13 @@
 - Reading evidence and limitations: read in pdftotext layout; formulas checked against the layout text, not page images.
 - Relation to campaign claims (no inherited proof status): prior art for the "selection of one relation per new polynomial" view used in PD-T?bivariate-lanczos-claude-108 (row selection of the Jacobi pencil) and for an all-relations (averaged) alternative related to the two-relation remedy of IDEA?…-111; setting differs (monic OPs from moments, point evaluation, no discrete-measure Lanczos vectors, no window truncation, no loss-of-orthogonality analysis).
 
-### LIT?bivariate-lanczos-claude-302 — the choice of variable affects rounding error (Remark 9, §5 strategies)
+### LIT-242 (LIT?bivariate-lanczos-claude-302) — the choice of variable affects rounding error (Remark 9, §5 strategies)
 
 - Statement in faithful paraphrase: Remark 9 notes that using (5) componentwise with a suitably chosen j may give better numerical behaviour than the symmetric (7). §5 proposes two heuristic point-dependent strategies for choosing j (closest to the centre of the support's projection; or minimal norm of e_{α−j}ᵀ(x_j I − B_{n,j})), motivated by univariate Chebyshev evaluation error near endpoints. No analysis of growth with degree or of the effect of support geometry is given in the pages read.
 - Page / theorem / equation: p. 413 (Remark 9); pp. 415–416 (§5, strategies 1–2).
 - Relation to campaign claims: prior art that the selection is a numerical degree of freedom; does not state the exponential non-product amplification or link it to orthogonality loss (pages read).
 
-### LIT?bivariate-lanczos-claude-303 — multivariate Clenshaw as triangular substitution; backward/forward bounds
+### LIT-243 (LIT?bivariate-lanczos-claude-303) — multivariate Clenshaw as triangular substitution; backward/forward bounds
 
 - Statement in faithful paraphrase: The multivariate Clenshaw algorithm is equivalent to solving a block upper-triangular system M q̃ = c (eq. (18)) by substitution, so Higham's triangular-system results give a componentwise backward bound (19) (|ΔM| ≤ d_n u/(1 − d_n u)|M|) and a forward bound (20) in terms of the inverse of the comparison matrix M(M)^{-1}.
 - Page / theorem / equation: pp. 418–419, eqs. (18)–(20), citing Higham ASNA Thms 8.5 and 8.10.

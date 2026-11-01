@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-429 — Greenbaum's model as stated in the survey: extended matrix B with eigenvalues near those of A, width with unquantified f_j
+### LIT-272 (LIT?bivariate-lanczos-claude-429) — Greenbaum's model as stated in the survey: extended matrix B with eigenvalues near those of A, width with unquantified f_j
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: §4.3, Thm 4.9, p. 511 (as digested): the eigenvalues of the extended matrix B, of order n + m_k, lie within O((n + m_k)^3 max{eps‖A‖, f_k, ..., f_{n+m_k}}) of eigenvalues of A. The f_j are the smallest perturbations that make a recurrence coefficient eta_{j+1} vanish; their size is not quantified in the returned text. Block Lanczos is excluded (p. 476).

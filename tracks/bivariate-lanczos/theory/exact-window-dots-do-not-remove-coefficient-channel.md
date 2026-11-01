@@ -1,5 +1,7 @@
 # PD-N?bivariate-lanczos-claude-204 — Correctly rounded window dot products (and long-double window steps with double storage, normalised in double or in long double) do not remove the clustered-checkerboard coefficient channel; exact dots reduce the rotπ/4 loss 14–19× and make the triangle 10× worse at n = 16; the drift is unchanged
 
+Final ID: **PD-N016** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: IDEA?…-210 killed (P1, P2); L1 hand-off "compensated/extra-precision window dot products" tested; dot rounding is not the special driver.
 Split from: none.

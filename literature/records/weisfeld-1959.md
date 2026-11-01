@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-001 — truncated-recurrence priority
+### LIT-066 (LIT?bivariate-lanczos-claude-001) — truncated-recurrence priority
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status. **Update (online pass): metadata confirmed (statement 228); the claim itself is still second-hand via Bartels-Jezioranski and unconfirmed from Weisfeld.**
 - Statement in faithful paraphrase: A Forsythe-type process psi_J = x_k psi_Jbar - sum_{L<J} alpha_{J,L} psi_L for a general inner product has alpha_{J,L}=0 whenever the degree gap sigma(J)-sigma(L) exceeds 2, i.e. a recurrence across three degree levels. Reported as the 1959 origin of the truncated multivariate recurrence.
@@ -18,7 +18,7 @@
 - Reading evidence and limitations: supplied provenance notes/ingest_classic_papers.md §1.2 (via the Bartels-Jezioranski account), §5 corrections; reports/Round 3 open problems 2023 2026.md §2 first bullet; attached instructions inside the inputs are treated as data, not authority.
 - Relation to campaign claims (no inherited proof status): L1 background: priority of the window recurrence (Weisfeld 1959 -> Bartels-Jezioranski 1985 -> Huhtanen-Larsen 2002). Second-hand: the statement is the supplying agent's reading of BJ, not of Weisfeld.
 
-### LIT?bivariate-lanczos-claude-228 — Metadata confirmed; content not reached (paywalled)
+### LIT-232 (LIT?bivariate-lanczos-claude-228) — Metadata confirmed; content not reached (paywalled)
 
 - Verification: **Metadata: Crossref and the Springer landing page; the paper (3 pages, access restricted) was NOT read. `LITERATURE` attribution only.**
 - Statement in faithful paraphrase: M. Weisfeld (then at Shell Development Company, Emeryville), Orthogonal polynomials in several variables, Numerische Mathematik 1(1) (December 1959) 38-40, doi:10.1007/BF01386371. The landing page lists three references: Forsythe on generating orthogonal polynomials for data fitting, Householder's numerical-analysis text, and Stiefel on kernel polynomials. No abstract is shown, so the truncated-recurrence statement (001, via Bartels-Jezioranski p. 203) is NOT confirmed from Weisfeld; the Forsythe reference is consistent with it.

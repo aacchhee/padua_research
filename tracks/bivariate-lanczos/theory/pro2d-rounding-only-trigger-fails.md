@@ -1,5 +1,7 @@
 # PD-N?bivariate-lanczos-claude-202 — PRO-2D with the rounding-only ω-trigger does not maintain semi-orthogonality on non-product measures: after reorthogonalization the commutator J-sources dominate
 
+Final ID: **PD-N014** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: IDEA?…-208 killed; "rounding-only trigger fails under reorthogonalization"; commutator channel in the partial-reorthogonalization regime.
 Split from: none.

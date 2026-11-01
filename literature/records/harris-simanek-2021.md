@@ -47,7 +47,7 @@ The section above is the merged-main record (charter/MZ statements, with their o
 
 ### Extracted published statements
 
-### LIT?bivariate-lanczos-claude-070 — rectangular checkerboard sets as exact benchmarks
+### LIT-135 (LIT?bivariate-lanczos-claude-070) — rectangular checkerboard sets as exact benchmarks
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Reported: every rectangular checkerboard set of ordered real nodes gives explicit H_x, H_y with at most 3 nonzeros per column (at most 2 if one side is symmetric), checked numerically by the supplying agent (`harris_simanek_check.py`); these are better test cases than Padua alone because they can be badly conditioned.
@@ -56,7 +56,7 @@ The section above is the merged-main record (charter/MZ statements, with their o
 - Reading evidence and limitations: supplied provenance reports/Open problems verification.md §4 'Problem 2 -> benchmark only'; code/RESULTS.md; attached instructions inside the inputs are treated as data, not authority.
 - Relation to campaign claims (no inherited proof status): Benchmark family for L1/L5 (plan.md 'Benchmarks'); a reported check, not rerun here.
 
-### LIT?bivariate-lanczos-claude-071 — unisolvence is not field-independent (reported correction)
+### LIT-136 (LIT?bivariate-lanczos-claude-071) — unisolvence is not field-independent (reported correction)
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Reported correction: the unisolvence result needs ordered nodes even over Q; counterexample X = (0,1,2), Y = (0,1,3,2) gives rank 5/6 over Q and over F_101. Conjecture (open): unisolvent iff the two alternation functionals are quasi-definite.

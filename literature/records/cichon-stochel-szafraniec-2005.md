@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-432 — three-term recurrence modulo an ideal and orthogonality (title-level characterisation)
+### LIT-275 (LIT?bivariate-lanczos-claude-432) — three-term recurrence modulo an ideal and orthogonality (title-level characterisation)
 
 - Verification: **Metadata only**; the paper was NOT read, so no mathematical content is attested. UNVERIFIED. `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: The L3 reviewer characterises the paper, from its title, as treating a three-term recurrence modulo an ideal (finitely supported or zero-set case) and orthogonality; this is not a reading of the content.

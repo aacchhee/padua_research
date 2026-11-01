@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-034 — Arnoldi = Lanczos for real nodes; risk of orthogonality loss
+### LIT-099 (LIT?bivariate-lanczos-claude-034) — Arnoldi = Lanczos for real nodes; risk of orthogonality loss
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: For real nodes the recurrence reduces to three terms (H tridiagonal, Arnoldi equivalent to Lanczos) and there is 'a risk of reduced accuracy' since the columns may lose orthogonality; univariate; cites neither HL nor the seed.
@@ -18,7 +18,7 @@
 - Reading evidence and limitations: supplied provenance notes/verify_algorithmic_problems.md Problem 3; reports/Padua points research since 2010.md; attached instructions inside the inputs are treated as data, not authority.
 - Relation to campaign claims (no inherited proof status): L1 univariate precedent.
 
-### LIT?bivariate-lanczos-claude-442 — §4: two-pass variant called an 'extremely stable alternative' (asserted); Lanczos caveat; univariate only
+### LIT-285 (LIT?bivariate-lanczos-claude-442) — §4: two-pass variant called an 'extremely stable alternative' (asserted); Lanczos caveat; univariate only
 
 - Verification: **UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: §4 (as digested): the two-pass variant is called an extremely stable alternative, asserted without proof; the Lanczos caveat of the Step 0 statement 034 is confirmed. Accuracy is measured end to end (the fit only). There is no multivariate section; §6 is complex 1D.

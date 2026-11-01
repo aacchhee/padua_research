@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-425 — dilation results for matrix convex sets (Prop. 4.3, Cor. 4.4), reported through PSS
+### LIT-268 (LIT?bivariate-lanczos-claude-425) — dilation results for matrix convex sets (Prop. 4.3, Cor. 4.4), reported through PSS
 
 - Verification: **Secondary report only** (the source itself NOT read). UNVERIFIED. `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Prop. 4.3 and Cor. 4.4, as cited by Passer–Shalit–Solel, give the dilation/inclusion statements for matrix convex sets that underlie the identification of W^min with compressions of normal tuples; the content itself was not read.

@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-303 — Rate of the moment-cone inradius r(δ) at a discrete measure: interior / ε / √ε / obstruction
 
+Final ID: **PD-T059** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: inradius trichotomy; jet spaces S_0, S_1; Hessian condition (H); δ(ε) ≍ 1, ε, √ε, or no δ → 0; double-point (singular) polynomials at the nodes; route (i) refined.
 Split from: none (supporting result for PD-T?bivariate-lanczos-claude-300).

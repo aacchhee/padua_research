@@ -1,5 +1,7 @@
 # PD-N?bivariate-lanczos-claude-106 — The support shape does not classify the loss regime: product supports with non-product weights, and sampled product densities, lose orthogonality far above the Ritz level
 
+Final ID: **PD-N012** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: support-based classifier refuted; "product-aligned supports" reading withdrawn; recon-01 major finding on PD-T?…-107.
 Split from: PD-T?bivariate-lanczos-claude-107 ((a)/(b) read as a classifier by support), PD-N?…-101 (title wording).

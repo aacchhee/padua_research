@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-036 — condensed form of normal matrices (reported)
+### LIT-101 (LIT?bivariate-lanczos-claude-036) — condensed form of normal matrices (reported)
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Reported: the Huhtanen-Larsen ordering produces the Elsner-Ikramov condensed form of a normal matrix (banded form via finite sequences of elementary unitary similarities); likely precursor of the seed's Givens-IEP output structure. Neither HL nor the seed cites it.

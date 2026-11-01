@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-302 — Precise form of L3-Q1: reduction to a localized positive cubature / moment-cone inradius problem
 
+Final ID: **PD-T058** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: L3-Q1 precise form; exact-section backward model; localized positive cubature; moment-cone inradius r(δ); mass-slice inradius r_0(δ); residual conventions (R1)–(R3); route (i) of L3-Q1; literal-reading triviality.
 Split from: none (supporting result for the target PD-T?bivariate-lanczos-claude-300).

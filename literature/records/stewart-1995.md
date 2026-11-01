@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-042 — relational stability of sequences of updates and downdates
+### LIT-107 (LIT?bivariate-lanczos-claude-042) — relational stability of sequences of updates and downdates
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Reported: relational stability extends to a sequence of updates and downdates; if the final decomposition in the sequence is well conditioned it is accurately computed even if intermediate ones are inaccurate; also covers URV.

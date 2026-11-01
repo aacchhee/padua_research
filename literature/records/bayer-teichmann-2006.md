@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-427 — listed as a source of the Tchakaloff finite-atomic representation (metadata only)
+### LIT-270 (LIT?bivariate-lanczos-claude-427) — listed as a source of the Tchakaloff finite-atomic representation (metadata only)
 
 - Verification: **Metadata only**; the paper was NOT read, so no mathematical content is attested. UNVERIFIED. `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Listed in the L3 review as a source of the Tchakaloff/Richter finite-atomic representing measure for a functional in the moment cone; no content was seen.

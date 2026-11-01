@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-038 — tensorized Krylov spaces for f(A,B), 2026
+### LIT-103 (LIT?bivariate-lanczos-claude-038) — tensorized Krylov spaces for f(A,B), 2026
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Reported with the previous record: uses tensorized or block-triangular Krylov spaces, citing neither HL nor the seed.

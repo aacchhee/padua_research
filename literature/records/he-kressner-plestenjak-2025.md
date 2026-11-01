@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-062 — joint diagonalisation of nearly commuting matrices
+### LIT-127 (LIT?bivariate-lanczos-claude-062) — joint diagonalisation of nearly commuting matrices
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Reported: randomised joint diagonalisation with an O(R eps) robustness bound for nearly commuting matrices (the constant is described in Kressner's ICERM slides as proportional to n^3.5); generating multiplication matrices is significantly more expensive than computing joint eigenvalues; clusters are not covered.

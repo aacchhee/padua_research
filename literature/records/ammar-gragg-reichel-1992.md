@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-050 — unit-circle downdating analogue
+### LIT-115 (LIT?bivariate-lanczos-claude-050) — unit-circle downdating analogue
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Reported as the unit-circle analogue of OP downdating; the supplying agent had not checked whether it already notes the stability difference between OP-coordinate and R-coordinate downdating.

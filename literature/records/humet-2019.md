@@ -43,7 +43,7 @@ The section above is the merged-main record (charter/MZ statements, with their o
 
 ### Extracted published statements
 
-### LIT?bivariate-lanczos-claude-069 — Chapter 5: vector-weight bivariate IEP, scalar-type orders (unpublished slides)
+### LIT-134 (LIT?bivariate-lanczos-claude-069) — Chapter 5: vector-weight bivariate IEP, scalar-type orders (unpublished slides)
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Chapter 5 (17 Feb 2017 seminar slides, unpublished) extends the 2010 IEP to vector weights, introduces scalar-type monomial orders (a pivot in every row; GRMAX / VGRLEX / VGRMAX), and announces a 'generalised implicit Q theorem' and the scalar-type proofs without including them. The thesis has no downdating, no stability analysis, no truncated variant, no zero-pivot handling and never cites Huhtanen-Larsen.

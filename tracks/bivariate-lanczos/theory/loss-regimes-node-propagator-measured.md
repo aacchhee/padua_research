@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-107 — Two regimes of loss of orthogonality, and the per-node propagator as a predictor (measured)
 
+Final ID: **PD-T035** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: regime split (product-aligned vs non-product supports); node-propagator predictor P(n); shadow recurrence; amplification-not-source finding; controlled fraction of the block Paige identity.
 Split from: none.

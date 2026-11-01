@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-048 — sensitivity of the univariate discrete Stieltjes map
+### LIT-113 (LIT?bivariate-lanczos-claude-048) — sensitivity of the univariate discrete Stieltjes map
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Derives derivatives of alpha_j, beta_j with respect to nodes and weights (Lemmas 4-5), a condition number in terms of the OPs at the nodes (Thm 2), a polynomial bound under a Markov inequality (Cor. 1) and O(N^2) for regular discretizations (Cor. 2); examples 1, 3, 4 well conditioned. Reports that no correct sensitivity estimates existed earlier (Gautschi's partly erroneous).

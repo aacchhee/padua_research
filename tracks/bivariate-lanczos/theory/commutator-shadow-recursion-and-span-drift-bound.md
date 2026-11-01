@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-202 — J-part of the section theorem: the in-span commutator residual obeys the F-step ω-recursion with clamped J-columns, in which reorthogonalization coefficients enter only as further coefficients (no reset term; this bounds nothing from below — that the residual stays large under the tested schemes is measured, PD-N?…-201), and the J-defect equals the projected residual (the drift lower bound formerly part 5 is PD-T?…-208)
 
+Final ID: **PD-T047** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: commutator obstruction (identities only; see Scope); shadow ω-recursion; K-recursion; J-section decomposition; L2-Q1(b) J-part (identities). Former alias "drift lower bound θ ≥ δ_J/(2‖J‖)" now belongs to PD-T?…-208.
 Split from: none (the J-part of the L2-Q1(b) target; the measured failure is PD-N?…-201).

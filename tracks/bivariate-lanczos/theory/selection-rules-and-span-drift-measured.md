@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-206 — Selection rule vs the space channel (measured): under full reorthogonalization the pivot-adaptive selection keeps the reference-free drift bound below √u on five of six non-product benchmarks (7–10 decades below BJ), the two-relation block recurrence on all six; none of the four tested one-relation rules is uniformly safe
 
+Final ID: **PD-T051** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: IDEA?…-207 measurements; adaptive selection + reorthogonalization; drift by selection; two-relation control.
 Split from: none.

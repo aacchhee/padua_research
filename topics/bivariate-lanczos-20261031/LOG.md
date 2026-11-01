@@ -1,7 +1,7 @@
 # Lanczos in two commuting variables — finite-precision theory, joint Ritz values and commuting extensions
 
 - Branch: `claude/bivariate-lanczos-20261031` · Base: `d36722823441dc40c6e19d69a174459348dd309c` (original main) · Developer/orchestrator: Claude · Auditor: Codex (`gpt-6-astra xhigh` launch configuration), [audit-03: clean response-02 verification](audit-03.md)
-- Stage: **PR — preparation pending** · Next: `Claude (Opus 5.5 xhigh): Continue claude/bivariate-lanczos-20261031; complete the recorded PR-preparation obligations using audit-03's clean response-02 verification, preserve all audit records/statuses, and return material integration changes for Codex review.`
+- Stage: **PR** (preparation in progress) · Next: `Codex (gpt-6-astra xhigh): Continue claude/bivariate-lanczos-20261031; focused review of the PR-preparation integration changes before AC merges.`
 - Claims: 77 theory files with their existing claim-level statuses; audit-01/02 corrections resolved within the scopes recorded in [audit-03.md](audit-03.md). Integration, literature, allocation and readiness checks remain pending. Development ranking [report.md](report.md); frozen request [audit-handoff.md](audit-handoff.md); round ledger [plan.md](plan.md); [progress.md](progress.md).
 - For the PR: one charter paragraph for this track in `state/CURRENT.md` (PR preparation only); final PD-T/PD-N/IDEA/LIT IDs via a shared ledger `topics/padua-batch-20261031/ALLOCATIONS.md` with `codex/charter-unisolvence-20261031`; merge `origin/main` first if the charter PR has merged.
 - Open for AC: see bottom section.
@@ -197,6 +197,14 @@ Subagent effort is set from the agent definition and is not independently expose
 ### 2026-11-01 — Response to Codex audit-02 (Claude orchestrator, `claude-opus-5-5`)
 
 - Rules read at `4470ab4` (unchanged). Audit-02: four low findings A2-L1–A2-L4, all fixed by textual qualifications with History lines in T116, T208 (two), T318; three optional editorial notes applied (report θ notation, L5 docstring with byte-identical rerun, T302(b3) Φ domain). Verification candidate `aea01283ad49d9a4527df727ad386c5f671933ee`. No status, proof or evidence identity changed; checker code and logs untouched. [response-02.md](response-02.md) carries the narrow impact map (6 files).
+
+### 2026-11-01 — PR preparation (Claude orchestrator, `claude-opus-5-5`)
+
+- Audit-03 (Codex) CLEAN; Stage PR. Rules: main `9739a0c` adds the local working-track rule (WORKFLOW §Computation and evidence); re-read after merging main.
+- **AC instruction (2026-11-01, answer to the orchestrator's question on final IDs): "Claude allocates now"** — for this PR Claude allocates the final IDs as the next free ranges and records the owner change for this PR in the batch ledger.
+- Merged `origin/main` `9739a0c` into the branch (`1167c33`): 14 shared literature records kept as one record per source (main's content first, this topic's statements after); INDEX/CORPUS/IDEAS keep main's rows plus this topic's sections; ledger from main. No theory, direction or audit file changed by the merge.
+- Literature consolidation (audit-01 P2): 29 new records, 15 updated, 49 statements (Claude Sonnet 5.5 high, requested), commit before allocation.
+- Allocation (`pr-prep/allocate.py --apply`): PD-T029–080 (52), PD-N007–031 (25), IDEA-077–176 (100), LIT-066–292 (227); `Final ID:` line added to all 77 theory files (header only); literature headings and index rows show final IDs with provisional in parentheses; registry rows added to PROOF_STATUS.md, ID_CROSSWALK.md (incl. 11 split mappings from SPLITS.md), state/IDEAS.md; NEGATIVE_RESULTS.md and AUDIT_LOG.md filled; one charter paragraph in state/CURRENT.md; two briefs in PAPER_MAP.md; ledger block recorded. Scientific statements and statuses unchanged.
 
 Consolidated list (exact commands in the cited records): L1 SUMMARY §6; L2 above; L3 SUMMARY §5; L5 R01 §7 and R03 §7 and response-recon-01; repro/REPRO.md §5. None executed by this session; all require AC's servers (syvert0/1/2) or more time.
 

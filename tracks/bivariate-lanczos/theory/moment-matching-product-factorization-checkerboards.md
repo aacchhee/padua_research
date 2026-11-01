@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-111 — Measures that agree with a product measure up to degree 2n have product-type window coefficients up to degree n; Harris–Simanek checkerboards agree with half a product measure up to degree 2m
 
+Final ID: **PD-T039** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: moment-matching extension of the product factorisation; checkerboard lemma; divided-difference cancellation.
 Split from: none.

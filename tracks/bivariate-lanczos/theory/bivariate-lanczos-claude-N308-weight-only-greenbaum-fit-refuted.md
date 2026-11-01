@@ -1,5 +1,7 @@
 # PD-N?bivariate-lanczos-claude-308 — MEASURED: a first-order consistent (weight-only) fit does not remove ≥ 90% of the forward error on the rotated square
 
+Final ID: **PD-N027** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: R06 hypothesis C (kill criterion K15, written after K13/K14 and before its own test); IDEA?bivariate-lanczos-claude-316.
 Split from: none (created per finding L8 of L3-reconstruction-02).

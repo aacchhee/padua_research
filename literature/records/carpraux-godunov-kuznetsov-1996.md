@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-412 — cited as a source on the conditioning of Krylov bases and subspaces (not read)
+### LIT-255 (LIT?bivariate-lanczos-claude-412) — cited as a source on the conditioning of Krylov bases and subspaces (not read)
 
 - Verification: **Not read, pending-reference.** The statement is the reviewer's pointer or characterisation, not a reading of the source. UNVERIFIED. `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Cited via the reference list of Malyshev–Sadkane (ETNA 23) as a paper on the condition number of Krylov bases and subspaces; no content was read.

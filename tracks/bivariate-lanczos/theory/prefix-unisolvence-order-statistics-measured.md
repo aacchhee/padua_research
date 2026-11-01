@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-503 — Prefix unisolvence of Padua node orders: measured statistics, the online pivot detector, and the effect on the 'scheme' error
 
+Final ID: **PD-T079** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: prefix mechanism data; IDEA?bivariate-lanczos-claude-502 (test of seed IDEA 016); relational recovery of intermediate states.
 Split from: none.

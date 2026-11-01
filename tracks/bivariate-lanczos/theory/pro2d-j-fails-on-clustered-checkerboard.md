@@ -1,5 +1,7 @@
 # PD-N?bivariate-lanczos-claude-207 — PRO-2D-J does not keep semi-orthogonality on the cubic-clustered checkerboard at its last degree
 
+Final ID: **PD-N019** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: IDEA?…-209 killed; cubic-checkerboard last-degree failure.
 Split from: PD-T?…-207 (a) (failure previously recorded only there), after reconstruction 01 finding F3.

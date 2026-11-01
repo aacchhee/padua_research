@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-316 — OPEN: in the square case the last-block commutator is, to first order, an isomorphic image of the S_1*-component of the perturbation
 
+Final ID: **PD-T072** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: 304(c) isomorphism; first-order identification of κ; V*/T ≅ Skew_{n+1}; "κ is, to first order, the S_1*-component of the perturbation".
 Split from: PD-T?bivariate-lanczos-claude-304(c), second clause, pre-audit wording: «when the 3N_n jet conditions are independent (verified exactly for Padua n = 1, 2, 3 and numerically for n ≤ 7, PD-T?…-307) S_1 ≅ (V*/T)* and κ is, to first order, the S_1*-component of the perturbation.»

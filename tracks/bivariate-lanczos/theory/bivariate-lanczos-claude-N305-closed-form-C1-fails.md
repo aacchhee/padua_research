@@ -1,5 +1,7 @@
 # PD-N?bivariate-lanczos-claude-305 — MEASURED: the closed-form candidate C1 does not certify (H)-failure for Padua n = 2..12
 
+Final ID: **PD-N024** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: C1 = Σ_j (q_j² − q_{j−1}q_{j+1}); IDEA?bivariate-lanczos-claude-310.
 Split from: none (created per finding L10 of L3-reconstruction-01).

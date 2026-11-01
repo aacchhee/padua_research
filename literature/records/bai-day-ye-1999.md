@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-013 — loss of biorthogonality in block Lanczos (model, not theorem)
+### LIT-078 (LIT?bivariate-lanczos-claude-013) — loss of biorthogonality in block Lanczos (model, not theorem)
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Section 4.1 gives a first-order model recurrence for loss of biorthogonality in block Lanczos together with a sqrt(eps) semi-biorthogonality threshold; the authors present it as holding to first order in roundoff and justified by analogy, i.e. not as a theorem. Single operator only.

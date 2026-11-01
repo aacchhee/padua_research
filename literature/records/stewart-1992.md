@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-041 — exponential windowing is stable
+### LIT-106 (LIT?bivariate-lanczos-claude-041) — exponential windowing is stable
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: Reported: QR updating with exponential windowing is unconditionally stable.

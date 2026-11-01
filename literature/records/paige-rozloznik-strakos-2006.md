@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-075 — MGS-GMRES backward stability (tangential)
+### LIT-140 (LIT?bivariate-lanczos-claude-075) — MGS-GMRES backward stability (tangential)
 
 - Verification: **UNVERIFIED** against the original publication; `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: The bttb-research repository holds only this record as a loosely related finite-precision baseline (together with Axelsson-Lindskog 1986 and Beckermann-Kuijlaars 2001); the mapping judges it 'tangential' and not resolving the Paige/Simon/Jia-Li/ABFH needs.

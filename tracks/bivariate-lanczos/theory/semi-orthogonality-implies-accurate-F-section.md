@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-201 — 2D Simon theorem for the formed (full-operator) section: semi-orthogonality plus local orthogonality give W_nᵀFW_{n−1} = T_F + O(u)·(1 + χ), χ = max_k‖B_kq̂_{p(k)}‖/β_k the normalisation (near-breakdown) factor; a two-pass window supplies local orthogonality
 
+Final ID: **PD-T046** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: 2D Simon theorem (F-part); section theorem for the formed section; L2-Q1(b) positive part; Proposition L (local orthogonality of the two-pass window); IDEA?…-203 (F-part), -206.
 Split from: none. (The combined L2-Q1(b) target "semi-orthogonality ⇒ both sections O(u)" is answered by this file (F-part, PROVED) and PD-T?…-202 / PD-N?…-201 (J-part: obstruction).)

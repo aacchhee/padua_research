@@ -9,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?bivariate-lanczos-claude-431 — relations among bivariate recurrence coefficients as necessary and sufficient conditions for a positive functional (abstract level)
+### LIT-274 (LIT?bivariate-lanczos-claude-431) — relations among bivariate recurrence coefficients as necessary and sufficient conditions for a positive functional (abstract level)
 
 - Verification: **Abstract-level only** (prior-art review); full text NOT read, so the mathematical content stays UNVERIFIED. `LITERATURE` attribution only, no inherited proof status.
 - Statement in faithful paraphrase: At abstract level: relations among the coefficients of the bivariate three-term recurrence give necessary and sufficient conditions for a positive functional to exist (lexicographic orderings).

@@ -1,5 +1,7 @@
 # PD-T?bivariate-lanczos-claude-108 — The window recurrence at a point is forward substitution for a triangular row selection of the bivariate Jacobi pencil
 
+Final ID: **PD-T036** (allocated at PR preparation, 2026-11-01; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: row-selection lemma; one-relation-per-column left inverse; propagator = inverse of the selected pencil; two-relation (block) left inverse.
 Split from: none.
