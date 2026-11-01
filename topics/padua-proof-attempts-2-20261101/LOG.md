@@ -52,3 +52,8 @@
 - `/root/a2_independent_route` independently reconstructed the full comparison, including the coincident endpoint and actual-vs-reference endpoint weights; its hash-pinned hand receipt is independent-checks-a2.md. This is proof reconstruction, not a claimed numerical replay or Claude audit. No consequential mathematical computation has run yet.
 - A2 continues toward its stronger done criterion; (ii)/(iii) get their own files/checkpoints. Root read all saved supporting and lower-bound proof sections.
 - Environment preparation only: installed python-flint0.9.0 / FLINT3.6.0 into `/tmp/padua2-deps` after the default user install failed on the read-only home directory. Future Arb commands must use `PYTHONPATH=/tmp/padua2-deps`. SymPy1.14.0, Python3.12.14 remain available. This setup is not an A5 mathematical run; A5 has not started.
+
+### A2(ii) durable checkpoint — explicit two-sided leading term
+
+- Second ordered deliverable PROVED: `PD-T?proof-attempts-2-codex-02`. For n≥2, `(4/π²)log²n−54 ≤ Λ_c(n) ≤ (4/π²)log²n+(12/π)log n+63`, hence absolute leading-term error≤95log n. Root read the complete proof and the elementary monotone-cosecant estimate. These constants are local explicit bounds; no unspecified literature O-constant is silently made explicit.
+- A2 continues to its b-term done criterion. No A3 constant or global argmax claim.
