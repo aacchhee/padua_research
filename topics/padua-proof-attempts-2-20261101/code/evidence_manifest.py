@@ -15,6 +15,7 @@ PINS = {
     "part1_and_rules": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
     "part1_audit_arrived": "95279b833bca5967fcf47c1b71a56ff622185b4e",
     "part1_response_arrived": "7b8884a2f98518784ff3698dd2f3f9c49c9cdd62",
+    "literature_index_update": "cf89b140530d5838bdb208a8c28f3e7aa676ace3",
     "current_main_and_rules": "e24b21fe43cdd090f6dfac269147e75185f04c5b",
     "programme_final": "b46b4dea18ce2c933489a211b0b6819dfd32ca70",
     "main_observed": "9739a0c56b7a3976422ce60a8441bfbbfd6554df",
@@ -68,6 +69,7 @@ def main():
     add("lanczos", ["tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-304-square-case-commutator-bounds.md"])
     add("current_main_and_rules", RULES + ["templates/HANDOFF.md", "templates/THEORY.md",
         "state/IDEAS.md", "literature/INDEX.md", "PROOF_STATUS.md", "ID_CROSSWALK.md"])
+    add("literature_index_update", ["literature/INDEX.md", "literature/CORPUS.md"])
     add("programme_final", [p for p in pg_paths if p.startswith(PG + "theory/")
         or p == PG + "OPEN_TARGETS.md"])
     # Retain both versions of changed authoritative inputs and unchanged rules.

@@ -188,3 +188,7 @@ not an audit or a mathematical checker.
 ## Current rules and final programme provenance — 2026-11-01
 
 Main e24b21fe43cdd090f6dfac269147e75185f04c5b changed AGENTS/WORKFLOW handoff and allocation rules. Read all3 rules and HANDOFF before merging; scientific statements/computed inputs unchanged. Adopt numbered handoffs; no range under AC local-ID scope. Final programme PR6 head b46b4dea18ce2c933489a211b0b6819dfd32ca70 adds final-ID aliases, without changing depended-on proof bodies or OPEN_TARGETS. Initial scientific pins remain; manifest now includes both versions and current rule/template/registry provenance. Branch deletions after AC merges are handled with immutable SHA pins.
+
+## Literature-index boundary refresh
+
+Main cf89b140530d5838bdb208a8c28f3e7aa676ace3 changed required INDEX/CORPUS only in MZ source comparisons. Full index/corpus diff read: no Padua source/rule/computation change. Prior impact recorded in LOG before merge; source pins retain all original inputs plus this two-file update. No arithmetic rerun is required by these unrelated source-coverage edits.
