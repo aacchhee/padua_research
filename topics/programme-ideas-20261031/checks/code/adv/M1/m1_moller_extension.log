@@ -1,0 +1,21 @@
+# M1 adversarial script: graded symmetric commuting extensions of Möller size
+# columns: weight n | dimPi_{n-1} rank[Hx,Hy] Möller N | starts converged (res<1e-10) / 8 | best residual | for converged: #nodes inside support / N, min weight, local dim (mod O(s) gauge) [set of values]
+cheb     n=2 | r= 3 rank= 2 Möller N= 4 |  8/8  | best res 6.9e-17 | inside [2, 4] / 4, min weight 1.41e-02, local dim [2]
+cheb     n=3 | r= 6 rank= 2 Möller N= 7 |  8/8  | best res 4.2e-16 | inside [5] / 7, min weight 6.70e-02, local dim [1]
+cheb     n=4 | r=10 rank= 4 Möller N=12 |  8/8  | best res 1.8e-15 | inside [8, 10] / 12, min weight 8.16e-03, local dim [2]
+cheb     n=5 | r=15 rank= 4 Möller N=17 |  8/8  | best res 3.5e-15 | inside [13] / 17, min weight 2.22e-02, local dim [1]
+cheb     n=6 | r=21 rank= 6 Möller N=24 |  8/8  | best res 2.8e-15 | inside [20, 22, 24] / 24, min weight 3.49e-05, local dim [1]
+legendre n=2 | r= 3 rank= 2 Möller N= 4 |  8/8  | best res 1.5e-17 | inside [2, 4] / 4, min weight 9.07e-03, local dim [2]
+legendre n=3 | r= 6 rank= 2 Möller N= 7 |  8/8  | best res 1.2e-15 | inside [7] / 7, min weight 7.94e-02, local dim [1]
+legendre n=4 | r=10 rank= 4 Möller N=12 |  8/8  | best res 9.9e-16 | inside [8, 10, 12] / 12, min weight 6.83e-03, local dim [2]
+legendre n=5 | r=15 rank= 4 Möller N=17 |  8/8  | best res 1.8e-15 | inside [17] / 17, min weight 2.22e-02, local dim [0]
+legendre n=6 | r=21 rank= 6 Möller N=24 |  7/8  | best res 2.7e-15 | inside [24] / 24, min weight 6.43e-03, local dim [0]
+disk     n=2 | r= 3 rank= 2 Möller N= 4 |  8/8  | best res 1.3e-17 | inside [2, 4] / 4, min weight 1.79e-03, local dim [2]
+disk     n=3 | r= 6 rank= 2 Möller N= 7 |  8/8  | best res 2.6e-16 | inside [7] / 7, min weight 1.25e-01, local dim [1]
+disk     n=4 | r=10 rank= 4 Möller N=12 |  8/8  | best res 4.3e-16 | inside [10, 12] / 12, min weight 1.60e-04, local dim [2]
+disk     n=5 | r=15 rank= 4 Möller N=17 |  0/8  | best res 3.6e-02 | no converged solution (best residual 3.6e-02)
+disk     n=6 | r=21 rank= 6 Möller N=24 |  0/8  | best res 3.0e-02 | no converged solution (best residual 3.0e-02)
+triangle n=2 | r= 3 rank= 2 Möller N= 4 |  8/8  | best res 7.3e-17 | inside [2, 3, 4] / 4, min weight 4.06e-03, local dim [2]
+triangle n=3 | r= 6 rank= 2 Möller N= 7 |  7/8  | best res 9.8e-17 | inside [7] / 7, min weight 1.26e-01, local dim [0]
+triangle n=4 | r=10 rank= 4 Möller N=12 |  3/8  | best res 1.9e-16 | inside [12] / 12, min weight 5.30e-02, local dim [0]
+triangle n=5 | r=15 rank= 4 Möller N=17 |  0/8  | best res 1.4e-02 | no converged solution (best residual 1.4e-02)

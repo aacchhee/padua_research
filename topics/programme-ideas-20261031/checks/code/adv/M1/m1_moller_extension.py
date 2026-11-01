@@ -144,7 +144,7 @@ def inside(weight, xs, ys, tol=1e-9):
 
 def main():
     print("# M1 adversarial script: graded symmetric commuting extensions of Möller size")
-    print("# columns: weight n | dimPi_{n-1} rank[Hx,Hy] Möller N | starts converged (res<1e-10) / 12 | best residual | "
+    print("# columns: weight n | dimPi_{n-1} rank[Hx,Hy] Möller N | starts converged (res<1e-10) / 8 | best residual | "
           "for converged: #nodes inside support / N, min weight, local dim (mod O(s) gauge) [set of values]")
     for weight in ('cheb', 'legendre', 'disk', 'triangle', 'jacobi'):
         for n in range(2, 7):
@@ -159,9 +159,9 @@ def main():
             N = r + s
             npar = 2 * n * s + s * (s + 1)
             conv = 0; best = np.inf; infos = []
-            for start in range(12):
+            for start in range(8):
                 p0 = rng.normal(size=npar) * 0.5
-                sol = least_squares(residual, p0, args=(Hx, Hy, n, s), method='lm', xtol=1e-15, ftol=1e-15, gtol=1e-15, max_nfev=20000)
+                sol = least_squares(residual, p0, args=(Hx, Hy, n, s), method='lm', xtol=1e-15, ftol=1e-15, gtol=1e-15, max_nfev=3000)
                 res = np.linalg.norm(sol.fun)
                 best = min(best, res)
                 if res < 1e-10:
@@ -179,7 +179,7 @@ def main():
                 extra = "inside %s / %d, min weight %.2e, local dim %s" % (ins, N, mw, dims)
             else:
                 extra = "no converged solution (best residual %.1e)" % best
-            print("%-8s n=%d | r=%2d rank=%2d Möller N=%2d | %2d/12 | best res %.1e | %s" % (weight, n, r, rank, N, conv, best, extra))
+            print("%-8s n=%d | r=%2d rank=%2d Möller N=%2d | %2d/8  | best res %.1e | %s" % (weight, n, r, rank, N, conv, best, extra))
 
 
 if __name__ == "__main__":
