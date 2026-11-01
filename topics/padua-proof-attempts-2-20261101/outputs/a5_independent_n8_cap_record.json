@@ -1,0 +1,90 @@
+{
+  "actual_exit": 0,
+  "all6_original_pins_unchanged_after_exit": true,
+  "all8_pins_unchanged_before_continuation": {
+    "a5_n8_boundary.py": "6088db34cce2952332bd22e560c8b02e90446236f994dc2bac79b33717e769cb",
+    "a5_n8_boxes.py": "e9d763d409dab8568e4b6c3452ac51283e36b708d8aa733e3f4ac3dda923f958",
+    "a5_n8_continue.py": "96ce015c9d3d161030be8d8d0de7e2c20f8e21d31b718948734703f3667476ad",
+    "a5_n8_continue_controls.py": "2ac7e60d7f814eee58abfed8bd02b1a2581be79fb13a6d776f5cdab2761e16d0",
+    "a5_n8_field.py": "764a7d7e50718c04f076ab3bbc86270adad1c47bc902d0b8d4eecf32ebbd2ec2",
+    "a5_n8_global.py": "f730b4cc3db102e8615326c60c6a26f28ff4d4ab4815e28aca88c55e05c08c7a",
+    "a5_n8_nodes.py": "c59018d0f17e6d5b9c803e0344cc878e6b067fe8ba457cd4a623bc649b65056b",
+    "a5_n8_schema.md": "1ca5289329359833859960d216b103284457495d6326d35463e18a761d43ed24"
+  },
+  "artifacts": [
+    {
+      "bytes": 239214,
+      "path": "/tmp/a5-independent-n8-candidate-v3.json.gz",
+      "sha256": "cfe112e9d3a3a8ae34235daed72cb490079ebbc2a1c77a187b4ba2670ad204d3"
+    },
+    {
+      "bytes": 9193,
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_producer_v3.jsonl",
+      "sha256": "e97fcdeb2db1e5af961760c19e32793360c4df09ce5700e4d5d84705bab13c38"
+    },
+    {
+      "bytes": 7254,
+      "path": "/tmp/a5-independent-n8-v3.log",
+      "sha256": "cf159750860f098459394715dc2305d70bebbb74bccd1df3cfa79dc0084d8193"
+    },
+    {
+      "bytes": 268,
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_validate_v3.json",
+      "sha256": "81cff3bbe866ea8485fa8f38526fc7ad75b4c6080836a9bad32793c74c633580"
+    }
+  ],
+  "count_certified": false,
+  "format": "a5-n8-independent-v3-cap-v1",
+  "global_verified": false,
+  "observed_utc": "2026-11-01T12:39:51.139187+00:00",
+  "pending_paths": [
+    "1",
+    "01",
+    "0011",
+    "001011",
+    "0010101",
+    "00101001",
+    "001010001",
+    "0010100001",
+    "00101000001",
+    "001010000001",
+    "001010000000111",
+    "0010100000001101",
+    "00101000000011001",
+    "0010100000001100011",
+    "0010100000001100010"
+  ],
+  "raw_gzip_retention": "session-local/tmp; pending AC cold storage; future full continuation is self-contained",
+  "summary": {
+    "Pcache": 8000,
+    "all_gradient_leaves": 31505,
+    "complete": false,
+    "depth": 30,
+    "interior": 9,
+    "interior_complete": false,
+    "leaf_counts": {
+      "all_gradient": 31505,
+      "gradient": 65306,
+      "hessian": 840,
+      "node_cone": 62,
+      "root": 144
+    },
+    "leaf_pattern_records": 66290,
+    "maximum_ambiguity": 45,
+    "node_leaves": 62,
+    "pending": 15,
+    "seconds": 3600.4155242443085,
+    "stats": {
+      "all_gradient": 31505,
+      "discard": 32910,
+      "failedmask": 10181,
+      "gradient": 93656,
+      "hessian": 1913,
+      "mask_checks": 95861,
+      "node_cone": 62,
+      "root": 292,
+      "visited": 65834
+    },
+    "unresolved": 0
+  }
+}

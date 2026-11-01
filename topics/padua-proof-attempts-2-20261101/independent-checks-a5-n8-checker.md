@@ -285,6 +285,54 @@ producer/global sources remain unchanged. A complete N8 count/global replay
 and independent regeneration are still pending; these partial regressions do
 not certify a maxima count.
 
+## Actual supplied-root integration on the capped V3 artifact
+
+The lead's first3600-second V3 run wrote an incomplete spatial artifact:
+`/tmp/a5-n8-candidate-v3.json.gz`,243017bytes, SHA256
+`4d1210394d674f785c6a7d2647c6e97c7353cb071785ac38a68a42aa79e7032d`.
+It has8 pending paths and no boundary. A bounded independent integration
+execution checked its9 supplied interior-root records and all compatible
+records of every leaf referencing one of those roots. It performed no search,
+subdivision or isolation and deliberately did not accept a square partition.
+An additional exact sum of the34127 leaf prefix masses is5367/32768;
+the8 pending-path masses sum to27401/32768, and together they sum to1.
+This is a coverage diagnostic, not a runtime estimate or full-tree acceptance.
+
+The actual execution completed with exit0 in7.603372010seconds. All9 Krawczyk
+existence/strict-Hessian/root-disjointness records and82 root-referencing
+leaves passed; their complete174 ordinary records were144 root dispositions
+and30 gradient dispositions. Whole-hull uniqueness and strict cardinal signs
+were recomputed by the frozen checker. Before/import/after source hashes
+equaled `a9cff5748d6c40ee41ac76e4e8a0035e0d5dab95f4de1233dfcc26902cb085a2`.
+The output explicitly has `count_certified=false`; this is root-schema and
+witness integration evidence, not an exhaustive N8 count or boundary check.
+
+Output `outputs/a5_checker_n8_root_partial.json`,2998bytes, SHA256
+`baa39caca59d22e1fb304d231fde3c799929a3e6180e5153b9f320e88de0a55c`.
+The inline Python command used the same environment prefix and frozen source
+as the commands above. Its verification operations, with the metadata/output
+serialization omitted here, were exactly:
+
+```python
+sys.path.insert(0, str(base / "code"))
+import a5_checker_n8 as check
+raw = Path("/tmp/a5-n8-candidate-v3.json.gz").read_bytes()
+data = json.loads(check.decode_payload(raw), object_pairs_hook=check.unique_object)
+v = check.Verifier(data["field_embedding"])
+v.implicit_masks = True
+for root in data["interior_roots"]:
+    v.root(root)
+leaves = [leaf for leaf in data["leaves"] if "patterns" in leaf
+          and any(row["code"] == "root" for row in leaf["patterns"])]
+for leaf in leaves:
+    v.leaf(leaf)
+```
+
+Here base is the absolute topic path. No producer module is imported. The
+continuation helper being prepared by the lead does not change the checker:
+any resulting certificate must supply a complete independently checked
+partition, all root/edge/corner dispositions and matching global evidence.
+
 No heavy full N8 verification is launched before both a complete artifact and
 the parent's RAM criterion; N6 executions took priority. A complete N8 count,
 complete boundary/global verification, frozen full outputs, actual
