@@ -110,6 +110,7 @@ Subagents are launched as background `general-purpose` agents on `claude-fable-5
 - Response: `response-01.md` (all nine findings accepted). New THEORY records `theory/programme-ideas-claude-{01..06,N01,N02}-*.md`. Corrections inline in `checks/decisive-gen4-2.md`, `checks/decisive-gen1-3.md`, `checks/adversarial-{gen4-1,M2,gen2-3,M1,gen3-1}.md` with originals struck through; `proposal-1.md` rewritten; `report.md`, `gate-rejected.md`, `ideas/candidates.md`, `gate.md`, `brief.md`, `lit/baseline.md` revised with notes pointing to `614709d`.
 - Provenance (A8): `sources/campaign-inputs/` — five input files committed; `provenance.json` pins 159 snapshot files to repository blobs; cold-storage snapshot of RESULTS.md (13399-byte version) and research_notes delivered to `C:\Users\andreyac\Downloads\padua\cold_storage\programme-ideas-20261031\` and read back with matching SHA-256 (`COLD_STORAGE.md`).
 - A9.8 deviation: the amended rule text keeps Sonnet 5.5 high for tiny sanity scripts in ideas campaigns; the campaign's Fable agents wrote and ran their own scripts. No AC override is on record; deviation documented; disposition open for AC. Model history is not rewritten.
+- Response content committed at `6dc547b4216c8b1a98d6b8e78065bad4b695a671`; the following commit only records this SHA here. Re-audit target: the branch head containing this line.
 - Not claimed: certification of the maxima counts; proofs of the corner expansion or argmax; any final ID; any registry integration; any message to external authors.
 
 ## Runs needed
