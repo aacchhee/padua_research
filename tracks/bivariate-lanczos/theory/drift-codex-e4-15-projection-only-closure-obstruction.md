@@ -45,7 +45,11 @@ and, for A∈{X,Y},
 
 Moreover κ_A=0 if and only if A S_t⊆V_m, and the operator A_m that formed column m has κ_(A_m)≥b, so δ_(A_m)(t)≥bθ_(t+1)>0.
 
-**Negative statement.** Hence no rule in R makes the degree-(t+1) span exact or removes the closure defect. θ_(t+1) and both δ_A(t) take the same value for every rule in R, and max_A δ_A(t)≥δ_(A_m)(t)≥bθ_(t+1)>0. For a normal source f=εe (e⊥S_(t+1), ||e||=1, so α=0), θ_(t+1)=|ε|/sqrt(b²+ε²). With a relative size ε=u||v_m||, δ_(A_m)(t)/u→||v_m||>0 as u→0. So no o(u) closure guarantee holds in R for this source model.
+**Negative statement.** Hence no rule in R makes the degree-(t+1) span exact or removes the closure defect. θ_(t+1) and both δ_A(t) take the same value for every rule in R, and max_A δ_A(t)≥δ_(A_m)(t)≥bθ_(t+1)>0. For a normal source f=εe (e⊥S_(t+1), ||e||=1, so α=0), θ_(t+1)=|ε|/sqrt(b²+ε²). With a relative size ε=u||v_m||, u>0, for both A∈{X,Y}
+
+  δ_A(t)/u = κ_A||v_m|| / sqrt(b²+u²||v_m||²) → (κ_A/b)||v_m||   as u→0.          (13)
+
+For the forming operator the limit is (κ_(A_m)/b)||v_m|| ≥ ||v_m|| > 0, with equality if and only if κ_(A_m)=b. Equality holds in the T_3 instance below (source in v_21, κ_Y=b), but not in general: with the source in v_20=Xq_x of the same T_3/BJ setting, κ_X²/b²=4/3 and the squared limit is 88/15, not ||v_20||²=22/5. So no o(u) closure guarantee holds in R for this source model.
 
 **Instance (T_3, BJ).** Let μ be uniform on the ten nodes T_3={(i,j): i,j≥0, i+j≤3}, so [p]=(p(i,j)/sqrt(10)). Take t=1 and the prefix [1], q_x=[x−1], q_y=[(x+2y−3)/sqrt(3)]. The BJ products are v_20=Xq_x, v_21=Yq_x and v_22=Yq_y. Take m=(2,1), the column formed by Y, and f=εe with
 
@@ -91,12 +95,12 @@ This is a fixed-degree O(u) obstruction to exact or o(u) closure in R. It:
 
 ## Status by part
 
-Overall status: PROVED. This is an analytic fixed-degree lemma with an explicit T_3 instance. Claude audit-01 confirmed the original T_3 statement (CONFIRMED-WITH-CORRECTIONS, E34-F1/F2). The general lemma (a)–(d) was added in Claude response-01 and requires re-audit.
+Overall status: PROVED. This is an analytic fixed-degree lemma with an explicit T_3 instance. Claude audit-01 confirmed the original T_3 statement (CONFIRMED-WITH-CORRECTIONS, E34-F1/F2). The general lemma (a)–(d) was added in Claude response-01. Codex audit-02 confirmed (a)–(d), the T_3 instance and the qualitative no-exact/o(u) obstruction, and refuted the response-01 relative-source limit equality δ_(A_m)(t)/u→||v_m|| (finding A02-M1). Claude response-02 replaces it by (13); that correction requires re-audit.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
 | Lemma (a)–(d): full rank, rule-independent span (10), angle (11), defect identity (12), κ_(A_m)≥b | PROVED | Proof below |
-| Negative statement: no rule in R removes the drift or the closure defect; no o(u) closure guarantee | PROVED | Immediate from the lemma |
+| Negative statement: no rule in R removes the drift or the closure defect; no o(u) closure guarantee; relative-source limit (13) | PROVED | Immediate from the lemma; (13) corrected in response-02 (A02-M1), re-audit pending |
 | T_3/BJ instance: U(3), (7), (8) with equality, (8'), (9) | PROVED | Inline U(3) proof and ten-row arithmetic certificate below |
 | Further instances: other perturbed columns, mirror selection, product grid Q_3, non-uniform weights, degree 2→3 on T_4 with three selections, random rational nodes at t=0,1 | Exact finite computations; checks only, no separate claim | [response-01-e4-closure.json](../../../topics/padua-lanczos-drift-20261101/evidence/response-01-e4-closure.json); the lemma already proves their qualitative conclusions |
 
@@ -146,6 +150,13 @@ The result is an analytic proof; no computer proof is claimed.
   - for the record-15 instance, also w, r, b², ||[r]||², ||v_21||², V_m=V, the Jq_y identity, (7), (8) with equality and (8'), plus the exact (9) closed forms and thresholds.
 
   The sampled rules corroborate (b); they do not prove it.
+- **Codex audit-02** ([checks/audit-02/E34.md](../../../topics/padua-lanczos-drift-20261101/checks/audit-02/E34.md); [evidence/audit-02-e34-checks.json](../../../topics/padua-lanczos-drift-20261101/evidence/audit-02-e34-checks.json), script `checks/audit-02/E34/independent_exact.py`). An independent SymPy reconstruction (15 cases, 186 rule-and-order checks, complete spectral closure operators) confirmed (a)–(d), the T_3 instance and the qualitative obstruction. Its exact symbolic counterexample (T_3/BJ, source in v_20: δ_X(1)²=672η²/(5(216η²+245)) for the source η·[r]) refuted the response-01 limit equality, now corrected to (13).
+- **Response-02 regression checker** `tracks/bivariate-lanczos/code/drift/e4_response02_check.py` (sha256 6b2c0f87…; exact `fractions.Fraction`; standard library only; Python 3.13.18; 2.2 s). Command: `PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 -B tracks/bivariate-lanczos/code/drift/e4_response02_check.py --output topics/padua-lanczos-drift-20261101/evidence/response-02-e4-creator-limit.json`. Output: [response-02-e4-creator-limit.json](../../../topics/padua-lanczos-drift-20261101/evidence/response-02-e4-creator-limit.json) (sha256 a6faea99…). It checks (13) on 25 instances. Twenty-three are the distinct measure/selection/column configurations of response-01's 28 instances; its extra source sizes and two general-source variants repeat configurations, and (13) concerns normal sources. The other two are T_3 cases with another normal direction e. For each:
+  - δ_A(t)² is computed directly from the projector of the completed span, at five exact source sizes (the output of one non-orthogonal two-pass rule is checked to have that span);
+  - (δ_A(t)/u)² equals the closed form exactly, and 1/(δ_A(t)/u)² is affine in u²; its value at u²=0 gives the squared limit (κ_A²/b²)||v_m||²;
+  - κ_(A_m)²≥b² in every instance; κ_(A_m)>b in five of them.
+
+  The cases with κ_(A_m)>b include T_3/BJ with the source in v_20: squared limit 88/15 against ||v_20||²=22/5. This case also reproduces audit-02's symbolic formula at every sample size. In the T_3 instance (source in v_21) κ_Y=b; the squared limits are 3/2 for Y and 2 for X, the u→0 values of the closed forms in (9). The checker also confirms the response-01 values of κ_A²/b² and b² on the 23 shared configurations. Its checks corroborate, and do not prove, the lemma.
 - **Not evidence.** The original development mentions “a temporary SymPy calculation” of finite rational Gram matrices. It has no recorded command, script, output or hash, and it is **not evidence** for any claim here. The written proof and the recorded checks above replace it.
 
 ## Sources
@@ -195,11 +206,15 @@ a matrix of rank at most one with norm ||z||·||P_tAŵ||=θ_(t+1)κ_A. This prov
 
 κ_A=0 means ⟨As,w⟩=0 for all s∈S_t, which is equivalent to A S_t⊆V_m because A S_t⊆V_m⊕span{w}. Finally, ⟨A_m q_(p(m)),ŵ⟩=⟨v_m,w⟩/b=b, because v_m−w∈V_m⊥w. Since q_(p(m)) is a unit vector in S_t, κ_(A_m)≥b. ∎
 
-**Negative statement.** This follows from (b)–(d). For f=εe with e⊥S_(t+1) and ||e||=1: α=0 and ||f_⊥||=|ε|. With ε=u||v_m||,
+**Negative statement.** This follows from (b)–(d). For f=εe with e⊥S_(t+1) and ||e||=1: α=0 and ||f_⊥||=|ε|, so (11) gives θ_(t+1)=|ε|/sqrt(b²+ε²), and (12) gives δ_A(t)=κ_A|ε|/sqrt(b²+ε²). Put ε=u||v_m|| with u>0 and divide by u: this is (13), and its right side tends to (κ_A/b)||v_m|| as u→0.
 
-  δ_(A_m)(t)≥bθ_(t+1)=u||v_m||·b/sqrt(b²+u²||v_m||²),
+For A=A_m, (d) gives κ_(A_m)≥b, hence
 
-and the right side divided by u tends to ||v_m||. ∎
+  δ_(A_m)(t)/u ≥ ||v_m||·b/sqrt(b²+u²||v_m||²) → ||v_m||.
+
+The limit (κ_(A_m)/b)||v_m|| equals ||v_m|| exactly when κ_(A_m)=b. In every case it is positive, so δ_(A_m)(t) is not o(u). ∎
+
+The lower bound alone does not identify the limit. For the source in v_20=Xq_x of the T_3/BJ setting below, A_m=X, ||v_20||²=E[x²(x−1)²]=22/5, b²=7/15 and κ_X²=28/45, so the squared limit is (4/3)(22/5)=88/15.
 
 **T_3 instance: U(3).** (This proof is moved here from PD-N?drift-codex-14.) Let p∈Π_3 vanish on T_3.
 
@@ -263,6 +278,7 @@ These are at least 4, 1 and 1, respectively, if and only if u²≤121/1380, u²�
 - **T_3 with non-uniform weights ∝ 1+i+2j, BJ.** Source in (2,1): (800/447, 1).
 - **T_4, degree 2→3.** Selections XYYY (BJ), XXXY (mirror) and XYXY, with a source in every column: κ_(A_m)²/b²≥1 in all twelve cases. The other operator's ratio ranges from 0 (columns (3,0) and (3,3) in BJ; (3,3) in XXXY and XYXY) to 69/20.
 - **General sources and random nodes.** Sources with components along w and in V_m include the case 1+α=0, where θ=1. Twelve random rational nodes with random weights are checked at t=0 and t=1.
+- **Relative-source limits (13)** (from response-02-e4-creator-limit.json; ||v_m|| for a unit parent). The forming operator's squared limit exceeds ||v_m||² in the instances with κ_(A_m)>b: T_3/BJ (2,0), ratio 4/3; T_4 XYYY (3,0), ratio 9/5; T_4 XYXY (3,0) and (3,1), ratio 7/4 each. In the other listed instances κ_(A_m)=b, so the squared limit equals ||v_m||².
 
 ## Scope
 
@@ -287,7 +303,12 @@ Closure and implicit-section accuracy must remain separate. A normal component o
 - Simultaneous sources in several products.
 - A verified per-operation generator for an exhibited source.
 
-Parent-repair, reference-basis and extra-product rules lie outside R and may evade this obstruction. They are retained as the deferred candidate IDEA?drift-claude-17 in ideas-e3-e4.md, together with PD-T055's suggested extended-precision parent experiment.
+Parent-repair, reference-basis and extra-product rules lie outside R. They are retained as the deferred candidate IDEA?drift-claude-17 in ideas-e3-e4.md, together with PD-T055's suggested extended-precision parent experiment. In this lemma's setting the prefix is exact, and the two parent repairs defined there leave every exact parent unchanged:
+
+- R17a reorthogonalizes the parent against the stored columns strictly preceding its graded index;
+- R17b projects it onto a reference basis of the exact span of the monomials up to and including its index.
+
+So the products, the rule and the conclusions above are unchanged. Projecting the sourced input itself onto S_(t+1) is different: P_(t+1)(v_m+f)=P_(V_m)(v_m+f)+(1+α)w, so the completed span is S_(t+1) when 1+α≠0. That is reference-basis injection at the product, which supplies S_(t+1) itself. Whether a parent repair changes the drift across several degrees is the deferred question.
 
 ## History
 
@@ -298,3 +319,8 @@ Parent-repair, reference-basis and extra-product rules lie outside R and may eva
 - 2026-11-01 (Claude response-01, Claude Opus 5.5 xhigh): E34-F2. PD-T055's heuristic span identity is credited in Aliases, Depends on, Sources, Proof (b) and Scope. Original Depends on: «Elementary linear algebra and finite rational sums only. PD-T053 explains the general defect–drift context but is unnecessary for the direct angle calculation.» Original Sources entry: «PD-T055 (OPEN universal obstruction)».
 - 2026-11-01 (Claude response-01, Claude Opus 5.5 xhigh): E34-F3. U(3) for T_3 is proved inline; the dependence on PD-N?drift-codex-14, now withdrawn as a registry vehicle, is removed. Original wording: «Since U(3) holds by PD-N?drift-codex-14's row-factor proof, dim S_2=6<M=10.»
 - 2026-11-01 (Claude response-01, Claude Opus 5.5 xhigh): E34-F6. Checks now cite independent-math-01, audit-01 and the new exact checker; the SymPy calculation is marked as non-evidence. Original wording: «The exact expressions were developed using a temporary SymPy calculation of finite rational Gram matrices. … Its durable command/output/hash record is owned by the parent and pending integration; this report is not the required Claude audit.» The Open items now point to IDEA?drift-claude-17 (E34-F9). Original: «Parent repair or extra-product rules require another class and may evade this obstruction.»
+- 2026-11-01 (Claude response-02, Claude Opus 5.5 xhigh): audit-02 A02-M1. The Negative statement's relative-source limit is corrected to (13): δ_A(t)/u=κ_A||v_m||/sqrt(b²+u²||v_m||²)→(κ_A/b)||v_m||, with (κ_(A_m)/b)||v_m||≥||v_m|| and equality iff κ_(A_m)=b. It holds with equality in the T_3 instance (v_21, κ_Y=b), but not for the source in v_20 (squared limit 88/15, not 22/5). The no-exact/o(u) conclusion, (a)–(d) and the T_3 instance are unchanged. Original wording: «With a relative size ε=u||v_m||, δ_(A_m)(t)/u→||v_m||>0 as u→0. So no o(u) closure guarantee holds in R for this source model.»
+- 2026-11-01 (Claude response-02, Claude Opus 5.5 xhigh): A02-M1. The proof of the Negative statement now derives (13) from (11)–(12) and states the lower bound only as a bound, with the v_20 values. Original wording: «δ_(A_m)(t)≥bθ_(t+1)=u||v_m||·b/sqrt(b²+u²||v_m||²), and the right side divided by u tends to ||v_m||. ∎»
+- 2026-11-01 (Claude response-02, Claude Opus 5.5 xhigh): A02-M1. Status paragraph and Negative-statement status row updated for audit-02 and the correction (status PROVED unchanged). Original wording: «The general lemma (a)–(d) was added in Claude response-01 and requires re-audit.»; «| Negative statement: no rule in R removes the drift or the closure defect; no o(u) closure guarantee | PROVED | Immediate from the lemma |».
+- 2026-11-01 (Claude response-02, Claude Opus 5.5 xhigh): A02-M1. Checks add the Codex audit-02 reconstruction and the new exact regression checker `e4_response02_check.py` with its evidence; Further exact instances add the relative-source-limit bullet. Additions only; original wording: none replaced.
+- 2026-11-01 (Claude response-02, Claude Opus 5.5 xhigh): audit-02 A02-L2. Open items: the parent repairs now defined in IDEA?drift-claude-17 (R17a, R17b) act as the identity on this lemma's exact parents, so they do not evade it. Product-level projection onto S_(t+1) restores the span when 1+α≠0 and is recorded as reference-basis injection. Original wording: «Parent-repair, reference-basis and extra-product rules lie outside R and may evade this obstruction.»

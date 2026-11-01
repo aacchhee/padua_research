@@ -81,6 +81,14 @@ python3 tracks/bivariate-lanczos/code/drift/e4_closure_check.py --output topics/
 
 Standard library only (exact `fractions.Fraction`), about 3 seconds. The script evaluates the fixed-degree lemma of PD-N?drift-codex-15 on 28 instances: the rule-independent span, the angle closed form and δ_A=κ_Aθ. It also recomputes the record's T_3 constants. Sampled rules corroborate, and do not prove, the every-rule span identity.
 
+## E4 relative-source limit regression (response-02)
+
+```bash
+PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 -B tracks/bivariate-lanczos/code/drift/e4_response02_check.py --output topics/padua-lanczos-drift-20261101/evidence/response-02-e4-creator-limit.json
+```
+
+`e4_response02_check.py` (response-02, audit-02 A02-M1) uses the standard library only (exact `fractions.Fraction`) and runs in about 2 seconds. It checks record 15's corrected limit (13), lim δ_A(t)/u = (κ_A/b)‖v_m‖ with κ_(A_m) ≥ b, on 25 exact instances. δ_A is computed directly from projectors at five source sizes, the closed form is asserted exactly, and the limit is extrapolated from the direct values. It reads `response-01-e4-closure.json` (hash recorded) for a κ²/b² cross-check. It neither imports nor modifies `e4_closure_check.py`, whose hash is pinned in response-01 evidence.
+
 ## E5 symbolic checks
 
 ```bash
