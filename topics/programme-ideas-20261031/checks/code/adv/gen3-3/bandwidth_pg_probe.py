@@ -303,3 +303,28 @@ print("LS growth exponents (all / n>=8): kappa(S~) %.2f / %.2f ; block-precond %
     np.polyfit(np.log(rowsE[:, 0]), np.log(rowsE[:, 1]), 1)[0], np.polyfit(np.log(rowsE[sel, 0]), np.log(rowsE[sel, 1]), 1)[0],
     np.polyfit(np.log(rowsE[:, 0]), np.log(rowsE[:, 2]), 1)[0], np.polyfit(np.log(rowsE[sel, 0]), np.log(rowsE[sel, 2]), 1)[0]))
 print("(expected band of Dx~: (b-1, -1) = (4, -1): d_x(pi ptilde_j) lives in dmu-degrees deg_j+1 .. deg_j+b-1)")
+
+# ---------------------------------------------------------------- F: a matrix Pearson equation of LOWER degree for polygons
+# Phi(x) = sum_i m_i(x) tau_i tau_i^T with m_i = prod_{j != i} l_j (degree b-1), tau_i the edge tangent: Phi n_i = 0 on edge i,
+# so div(Phi u) = Psi^t u with deg Phi = b-1, deg Psi <= b-2, class s = b-3, and Thm 3.1 of Alvarez de Morales et al. (2008)
+# predicts band [n-b+2, n+b-2] = bandwidth (b-2, b-2) for the components of Phi grad p  (sharper than the scalar pi grad p).
+print("\n=== F: matrix Pearson operator (Phi grad p)_1,2 with deg Phi = b-1 on polygons: expected band (b-2, b-2) ===")
+def matrix_pearson_ops(V, X, W, bs):
+    m = len(V); x, y = X[:, 0], X[:, 1]
+    L, T = [], []
+    for i in range(m):
+        a, b = V[i], V[(i + 1) % m]
+        L.append((b[0] - a[0]) * (y - a[1]) - (b[1] - a[1]) * (x - a[0])); T.append(np.array([b[0] - a[0], b[1] - a[1]]))
+    L = np.array(L)
+    A1 = np.zeros_like(bs["Px"]); A2 = np.zeros_like(bs["Px"])
+    for i in range(m):
+        mi = np.prod(np.delete(L, i, axis=0), axis=0)
+        tdotgrad = T[i][0] * bs["Px"] + T[i][1] * bs["Py"]
+        A1 += (mi * T[i][0])[:, None] * tdotgrad; A2 += (mi * T[i][1])[:, None] * tdotgrad
+    return ip(W, bs["P"], A1), ip(W, bs["P"], A2)
+for name, V, X, W in [("pentagon b=5", V5, Xp, Wp), ("heptagon b=7", V7, X7, W7)]:
+    bs = graded_basis(X, W, 8)
+    A1, A2 = matrix_pearson_ops(V, X, W, bs)
+    print("%-14s band (Phi grad)_1 = %s, (Phi grad)_2 = %s, nnz = %d, %d (scalar pi*d_x had nnz %d)" % (
+        name, deg_band(A1, bs["deg"]), deg_band(A2, bs["deg"]), nnz(A1), nnz(A2),
+        nnz(operators(bs, W, poly_lines(V)[0](X[:, 0], X[:, 1]), poly_lines(V)[1](X[:, 0], X[:, 1]), poly_lines(V)[2](X[:, 0], X[:, 1]))["Dx_pi"])))
