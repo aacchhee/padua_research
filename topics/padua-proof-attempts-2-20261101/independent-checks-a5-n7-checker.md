@@ -1,11 +1,20 @@
-# Independent degree-seven A5 verifier preparation
+# Independent degree-seven A5 certificate verification
 
 Rules read at `4bd1d65ad36ddded9bf4799c0557d4a6bb83e764`.
 Role: independent verifier implementer, assigned Codex gpt-6.1-sol xhigh;
 runtime serving-model metadata is not separately exposed. This supplements the
 required Claude audit. Only NEW `code/a5_checker_n7*`, `outputs/a5_checker_n7*`
 and this record are owned by this worker. The completed n3/n5 work and all other
-degrees remain frozen and separately owned. No n7 count is asserted.
+degrees remain frozen and separately owned.
+
+Final own end-to-end execution and full controls both exited0. The checker
+certifies **50 strict relative local maxima:33 interior,15 open-edge and2
+corner**, with global argmax exactly **(-1,-1),(-1,1)** and the exact value
+recorded below. All52 controls passed and source guards stayed true. This is
+the verifier implementer's complete receipt; the actual different-executor
+evidence is maintained separately by root, and the required Claude audit
+remains PENDING. Final frozen source pins are41ab8dd… /76f9ba… /724a2f…,
+given in full in the backend-update table below.
 
 ## Refreshed rules and target gate
 
@@ -431,7 +440,86 @@ table). Runtime explicitly reports Python3.12.14, SymPy1.14.0,
 python-flint0.9.0 / FLINT3.6.0. Full count/global artifacts and different-agent
 execution remain separate obligations.
 
-Runs needed: complete count/global certificate and the required
-actual different-subagent producer/checker execution. The reference33 interior /
-15 edge /2 corner /50 total is MEASURED context only. No correction to a published
-count is authorized on that context alone and no author contact will be made.
+## Complete developer pair: actual completed own end-to-end verification
+
+Independently matched both supplied final inputs and all three frozen checker
+source hashes before launch. Count input
+`outputs/a5_n7_certificate.json.xz`,436,960 bytes,SHA-256
+`9338e01c89482acd4e3e948812a62b5511ca6d9afcf87672fad053ee28cfaa85`;
+global input `outputs/a5_n7_global.json`,9,493 bytes,SHA-256
+`b309483ba2b1c7dc5c83bc23d9cfcb0dfb68191fb8b3677f0d0124e0655a17cb`.
+The following independent executions confirmed the producer's complete
+50=33 interior+15 edge+2 corner result and every coverage/value obligation.
+
+Actual commands launched concurrently, using the same environment as above:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps python -B topics/padua-proof-attempts-2-20261101/code/a5_checker_n7.py topics/padua-proof-attempts-2-20261101/outputs/a5_n7_certificate.json.xz --global-file topics/padua-proof-attempts-2-20261101/outputs/a5_n7_global.json --output topics/padua-proof-attempts-2-20261101/outputs/a5_checker_n7_full-integration.json
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps python -B topics/padua-proof-attempts-2-20261101/code/a5_checker_n7_controls.py topics/padua-proof-attempts-2-20261101/outputs/a5_n7_certificate.json.xz --spatial-certificate topics/padua-proof-attempts-2-20261101/outputs/a5_n7_certificate.json.xz --global-file topics/padua-proof-attempts-2-20261101/outputs/a5_n7_global.json --output topics/padua-proof-attempts-2-20261101/outputs/a5_checker_n7_controls-full.json
+```
+
+**Both actual process exits were0.** The main completed in1840.064621 seconds;
+the full-control execution completed in1934.381991 seconds. Main flags
+`accepted`, `count_certified`, `interior_complete`, `boundary_complete`,
+`complete_prefix_partition`, `global_argmax_verified`,
+`global_no_nonstrict_plateau_above_cut`,
+`all_gradient_global_exclusion_verified`, `node_leaf_global_exclusion_verified`
+and `source_hashes_unchanged` are all TRUE. The control result has
+`all_controls_passed=true` and `source_hashes_unchanged=true`.
+
+| Independently verified coverage | Result |
+|---|---:|
+| complete finite prefix leaves |54,898|
+| universal-gradient whole leaves |50,412|
+| node-cone whole leaves |204|
+| ordinary compatible-mask dispositions |96,438|
+| ordinary gradient exclusions |96,094|
+| ordinary strict Hessian exclusions |146|
+| whole-leaf/root-hull references |198|
+| disjoint strict interior root boxes |33|
+| exact ordered node records |36|
+| complete feasible-direction breakpoints |2,220|
+| edge sign patterns |333|
+| exhaustive edge candidate dispositions |19,863|
+| strict open-edge maxima |15|
+| exact corners / active corner patterns |4 /16|
+| strict corner maxima |2|
+| total strict relative maxima on the square |50|
+
+There are zero flat/factor exceptional occurrences and zero unresolved or
+missing regions. All48 accepted interior/open-edge root values have verified
+enclosures below11/2. Both non-node corners have the independently reconstructed
+FIELD12 value
+`[83/28,-5/7,-4/7,2/7,-2/7,0,2/7,0,-2/7,1/7,2/7,0] > 11/2`;
+the other corners are nodes of value1. The global proof checks the complete
+non-strict-maximum reduction, including every universal-gradient and node leaf;
+it does not infer global completeness from a strict-root list alone.
+
+All52 full controls passed:42 negative and10 positive. Besides the local
+controls documented above, the actual complete-tree leaf deletion loses
+coverage; missing an entire edge and omitting the whole leaf from a root hull
+are rejected. Wrong count-artifact SHA binding, exceptional-code/occurrence
+coverage changes, altered node value, omitted interior/edge value rows,
+counterfeit value enclosures and changed exact corner values are rejected.
+The complete count plus value certificate is also independently rerun as a
+positive baseline inside the full controls.
+
+| Final own output | Bytes | SHA-256 |
+|---|---:|---|
+| `outputs/a5_checker_n7_full-integration.json` |16259|`0b57cac2ef910749c9bb11a2c442d22e5b8547a4391f511705e2fa2b0e7de951`|
+| `outputs/a5_checker_n7_controls-full.json` |8436|`3064d77d173fcc0f7843a66c26fc57f9b21c9afafae695154031b8ff20bf5071`|
+
+The verified count document's decoded SHA-256 is
+`f0adb38cdd13dd8b30a813a4143b567f1b564f343b5ebd792a6edd5f58f1f018`.
+Both final input hashes and all three source hashes were independently
+rechecked AFTER completion and match the prelaunch pins. Runtime:
+Python3.12.14, SymPy1.14.0, python-flint0.9.0 / FLINT3.6.0, ground type flint,
+128-bit outward dyadics and bytecode writes disabled.
+
+These two outputs, this completed own receipt and the final three checker
+sources are now FROZEN for root's checkpoint. No further code, receipt or output
+edits are planned. Actual different-agent producer/checker/control receipts are
+owned by root and supply the separate execution requirement; this implementer
+receipt does not replace them or the required Claude audit. Initial measured
+counts and literature comparisons were not acceptance premises, no novelty or
+priority claim is made, and no author contact was made.

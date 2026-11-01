@@ -1,0 +1,4 @@
+{"node_cones": 36, "node_gap_positive": 36, "seconds": 18.360476970672607}
+{"construction_seconds": 18.36060118675232, "precision": 128}
+{"seconds": 131.88172316551208, "stats": {"visited": 1000, "gradient": 29743, "mask_checks": 29765, "discard": 494, "failedmask": 204, "hessian": 22}, "pending": 13, "depth": 28, "unresolved": 0, "Pcache": 1890}
+{"seconds": 180.05536222457886, "stats": {"visited": 1392, "gradient": 50361, "mask_checks": 50383, "discard": 689, "failedmask": 204, "hessian": 22, "node_cone": 8}, "pending": 15, "depth": 28, "unresolved": 0, "Pcache": 4440, "interior": 0, "leaf_counts": {"gradient": 49432, "hessian": 3, "node_cone": 8}, "leaf_pattern_records": 49435, "node_leaves": 8, "maximum_ambiguity": 36, "interior_complete": false, "complete": false}

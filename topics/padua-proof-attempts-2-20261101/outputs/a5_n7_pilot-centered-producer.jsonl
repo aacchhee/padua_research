@@ -1,0 +1,4 @@
+{"node_cones": 36, "node_gap_positive": 36, "seconds": 12.748822212219238}
+{"construction_seconds": 12.748904943466187, "precision": 128}
+{"seconds": 53.368035554885864, "stats": {"visited": 1000, "discard": 493, "all_gradient": 388, "gradient": 3023, "mask_checks": 3042, "failedmask": 173, "hessian": 19, "node_cone": 3}, "pending": 15, "depth": 28, "unresolved": 0, "Pcache": 128}
+{"seconds": 120.05617165565491, "stats": {"visited": 3469, "discard": 1729, "all_gradient": 1581, "gradient": 3465, "mask_checks": 3551, "failedmask": 504, "hessian": 84, "node_cone": 6, "root": 2}, "pending": 12, "depth": 28, "unresolved": 0, "Pcache": 197, "interior": 1, "leaf_counts": {"all_gradient": 1581, "gradient": 2579, "hessian": 27, "node_cone": 6, "root": 2}, "leaf_pattern_records": 2608, "node_leaves": 6, "all_gradient_leaves": 1581, "maximum_ambiguity": 36, "interior_complete": false, "complete": false}

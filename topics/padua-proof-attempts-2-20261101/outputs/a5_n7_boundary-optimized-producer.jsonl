@@ -1,0 +1,7 @@
+{"edge_stage": "restrictions", "edge": [0, -1], "seconds": 1.2466142177581787}
+{"edge_stage": "squarefree", "edge": [0, -1], "degree": 96, "seconds": 3.6958353519439697}
+{"edge_stage": "arrangement", "edge": [0, -1], "normdegree": 96, "seconds": 11.929877042770386}
+{"edge": [0, -1], "patterns": 83, "Enormdegree": 96, "seconds": 665.6663196086884, "edgecount": 3, "unresolved": 0, "stats": {"outside": 886, "derivative": 3512, "minimum": 202, "sign": 212, "root": 3}}
+{"edge_stage": "restrictions", "edge": [0, 1], "seconds": 665.6721246242523}
+{"edge_stage": "squarefree", "edge": [0, 1], "degree": 57, "seconds": 666.5453956127167}
+{"edge_stage": "arrangement", "edge": [0, 1], "normdegree": 57, "seconds": 667.494279384613}

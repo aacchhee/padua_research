@@ -1,0 +1,17 @@
+{"edge_stage": "restrictions", "edge": [0, -1], "seconds": 0.7095165252685547}
+{"edge_stage": "squarefree", "edge": [0, -1], "degree": 96, "seconds": 2.0776655673980713}
+{"edge_stage": "arrangement", "edge": [0, -1], "normdegree": 96, "seconds": 3.8338959217071533}
+{"edge": [0, -1], "patterns": 83, "Enormdegree": 96, "seconds": 245.71216225624084, "edgecount": 3, "unresolved": 0, "stats": {"outside": 886, "derivative": 3512, "minimum": 202, "sign": 212, "root": 3}}
+{"edge_stage": "restrictions", "edge": [0, 1], "seconds": 245.71991443634033}
+{"edge_stage": "squarefree", "edge": [0, 1], "degree": 57, "seconds": 246.71668457984924}
+{"edge_stage": "arrangement", "edge": [0, 1], "normdegree": 57, "seconds": 247.44317531585693}
+{"edge": [0, 1], "patterns": 52, "Enormdegree": 57, "seconds": 395.61496782302856, "edgecount": 7, "unresolved": 0, "stats": {"outside": 1314, "derivative": 6078, "minimum": 342, "sign": 338, "root": 7}}
+{"edge_stage": "restrictions", "edge": [1, -1], "seconds": 395.62366223335266}
+{"edge_stage": "squarefree", "edge": [1, -1], "degree": 106, "seconds": 397.23189330101013}
+{"edge_stage": "arrangement", "edge": [1, -1], "normdegree": 106, "seconds": 400.24796056747437}
+{"edge": [1, -1], "patterns": 99, "Enormdegree": 106, "seconds": 729.7239124774933, "edgecount": 11, "unresolved": 0, "stats": {"outside": 2040, "derivative": 10775, "minimum": 589, "sign": 556, "root": 11}}
+{"edge_stage": "restrictions", "edge": [1, 1], "seconds": 729.7375438213348}
+{"edge_stage": "squarefree", "edge": [1, 1], "degree": 106, "seconds": 731.8084778785706}
+{"edge_stage": "arrangement", "edge": [1, 1], "normdegree": 106, "seconds": 733.2067184448242}
+{"edge": [1, 1], "patterns": 99, "Enormdegree": 106, "seconds": 771.2499649524689, "edgecount": 15, "unresolved": 0, "stats": {"outside": 2766, "derivative": 15472, "minimum": 836, "sign": 774, "root": 15}}
+{"edge": 15, "corner": 2, "counts": {"outside": 2766, "derivative": 15472, "minimum": 836, "sign": 774, "root": 15}, "unresolved": 0, "complete": true, "seconds": 771.6448211669922}
