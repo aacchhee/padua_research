@@ -1,7 +1,7 @@
 # Local working-track rule (RESULTS.md overwrites)
 
 - Branch: `claude/results-track-rule-20261101` · Base: `0d058fb410166bd97b178be57910f2d256d0b529` (= `origin/main`, 2026-11-01) · Developer: Claude · Auditor: Codex
-- Stage: AUDIT · Next: `Codex (gpt-6-astra medium): Audit claude/results-track-rule-20261101 (protocol rule amendment).`
+- Stage: PR · Next: AC reviews PR #8 and decides whether to squash-merge. After merge: `Codex (gpt-6-astra medium): After AC merges PR #8, verify the merged rule and record completion.`
 - Claims: none (protocol rule only).
 
 ## Rule amendment
@@ -26,6 +26,16 @@ Other rule files are unchanged. The rule governs files outside the repository; i
 
 - Rules read at `0d058fb` (AGENTS.md, agents/WORKFLOW.md, agents/claude/CLAUDE_ROLES.md). Separate small branch so that the rule can merge independently of the topics in audit.
 - Adoption on AC's computer by the programme-ideas topic: its entries are moved into `results/programme-ideas-20261031.md`; `RESULTS.md` keeps its current section until that topic's PR is prepared.
+
+## 2026-11-01 — Codex protocol audit
+
+- Rules and audited candidate: `9b651b42f2ff2c9db8fd5b12a526e981045e4d19`; current main/base confirmed as `0d058fb410166bd97b178be57910f2d256d0b529`.
+- Requested configuration: `gpt-6-astra`, medium; independent runtime model/effort telemetry is not exposed.
+- [audit-01](audit-01.md): ACCEPTED within the protocol scope, with no unresolved findings. Stage PR; no developer response required.
+- Novelty gate not applicable: no scientific claims, mechanisms, literature comparisons, or IDs.
+- GitHub connector reads and local byte/blob checks verified the exact two-file amendment and its quoted log. The stale cloud clone's fetch failed at its proxy; no audit conclusion uses that checkout.
+- No AC-local file or guard implementation was accessible or tested. Incident, migration, and rollout claims remain unverified operational history.
+- Audit delivery leaves the amended rule and its original quoted wording unchanged. The topic index gains an entry; PR description is normalized to WORK / AUDIT / PR; only AC merges.
 
 ## Runs needed
 
