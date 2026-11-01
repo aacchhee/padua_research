@@ -147,6 +147,7 @@ def main():
             u = m.group(1)
             if re.match(r'[a-z]+:', u): continue
             q = os.path.normpath(os.path.join(os.path.dirname(p), u))
+            if q == os.path.normpath(a.output): continue  # the receipt this run writes
             if q not in tree and q not in dirs and q.rstrip('/') not in dirs: broken.append((p, u))
     c['broken_links'] = broken[:50]; c['links_pass'] = not broken
     # 8. Squash rehearsal and merge-tree.
