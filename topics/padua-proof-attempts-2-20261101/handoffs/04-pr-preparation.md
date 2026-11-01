@@ -1,6 +1,6 @@
 # Handoff 04 — padua-proof-attempts-2-20261101 — PR preparation within the authorized scope
 
-- Status: open
+- Status: superseded by 05: AC explicitly authorized final IDs and shared updates for full PR12 preparation
 - Previous handoff: 03-response.md
 - Next agent / model / effort: Codex, gpt-6.1-sol medium
 - Role: orchestrator / PR preparation
