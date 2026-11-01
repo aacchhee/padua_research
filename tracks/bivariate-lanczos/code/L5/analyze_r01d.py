@@ -6,7 +6,7 @@ replicates, OLS of that size-mean series on log10(M); 95% t-interval with df = s
 the OLS slope is linear in the response and the size-mean of d equals mean(log10 err_A) - mean(log10 err_B), the fitted slope of d is
 exactly slope(A) - slope(B); the Householder-normalised slopes of analyze_r01c.py are the pairs (A, hh), and their difference
 (G/hh) - (HL/hh) is the unnormalised pair (G, HL). The intervals are DESCRIPTIVE size-level intervals: the sizes share nodes, the log-log
-curves are partly convex, and the number of sizes is 5-7; they are not a significance test and carry no causal reading.
+curves are partly convex, and the number of sizes is 4-7; they are not a significance test and carry no causal reading.
 
 Part 2 (L2). For every record of r02_dual.jsonl (double vs long-double Givens-scheme in lockstep) list the consecutive checkpoints at
 which the relative Frobenius difference decreases ('local decreases'), and the overall log-log slope in i recorded by the producer.

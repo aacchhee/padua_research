@@ -33,7 +33,7 @@ Overall status: PROVED.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
-| (a) κ_ab = L(s_ab) | PROVED | proof below; MEASURED sanity at non-measure L (rel. err ≤ 1.4e-10, `t318_dkappa_formula_check.py`) |
+| (a) κ_ab = L(s_ab) | PROVED | proof below; MEASURED sanity at an arbitrary perturbed functional L with M_n(L) ≻ 0, not constructed from an explicit measure (rel. err ≤ 1.4e-10, `t318_dkappa_formula_check.py`; no test of nonrepresentability is made or needed) |
 | (b) derivative formula | PROVED | proof below; MEASURED sanity: central differences agree to ≤ 2.7e-8 (relative) for Padua n = 1..4, equispaced n = 3, random n = 3 |
 | (c) image = F | PROVED | proof below; MEASURED: rank d(κ) = dim F in all six sets |
 | (d) rank and isomorphism criterion | PROVED (routine from (b), (c)) | — |
@@ -44,7 +44,7 @@ PD-T?…-301 (sections, words formula not needed), PD-T?…-304(c) (factorisatio
 
 ## Checks
 
-`OPENBLAS_NUM_THREADS=1 python3 -I tracks/bivariate-lanczos/code/L3/t318_dkappa_formula_check.py` (Python 3.13.18, numpy 2.5.3; sha256 8ade3424969a22c2aca1744ce5d8e612117a8c138ddeff9b2e17609d74ce0ea1) → `topics/bivariate-lanczos-20261031/directions/L3/logs/t318_dkappa_formula_check.log` (sha256 fcc4cc02799253d15a96c531bf93798725e46b3363befa91aaff30839c885e08), run 2026-11-01 ≈08:33 by the developer. Monomial basis; weights numpy default_rng(1) uniform [0.5, 1.5] normalised; random nodes default_rng(0); central differences on every moment coordinate with step h = min(1e-5, 2e-4 λ_min(M_n(L_μ))). Observed: jets of s_ab at the nodes ≤ 6.4e-12; FD vs formula max relative difference 1.9e-10, 2.5e-8, 2.7e-8, 2.2e-8 (Padua n = 1..4), 1.4e-8 (equispaced n = 3), 2.2e-8 (random n = 3; 1.7e-2 at h = 1e-5 because λ_min(M_3) = 5.7e-5 — pure O(h²) truncation, decreasing to 1.7e-8 at h = 1e-8 in an interactive check); rank d(κ) = dim F = dim S_1 = n(n+1)/2 in all six cases; identity (a) at a random non-measure functional with M_n ≻ 0: relative error ≤ 1.3e-10. This is a verification record (MEASURED), not the proof. Independent check: pending (Codex re-audit).
+`OPENBLAS_NUM_THREADS=1 python3 -I tracks/bivariate-lanczos/code/L3/t318_dkappa_formula_check.py` (Python 3.13.18, numpy 2.5.3; sha256 8ade3424969a22c2aca1744ce5d8e612117a8c138ddeff9b2e17609d74ce0ea1) → `topics/bivariate-lanczos-20261031/directions/L3/logs/t318_dkappa_formula_check.log` (sha256 fcc4cc02799253d15a96c531bf93798725e46b3363befa91aaff30839c885e08), run 2026-11-01 ≈08:33 by the developer. Monomial basis; weights numpy default_rng(1) uniform [0.5, 1.5] normalised; random nodes default_rng(0); central differences on every moment coordinate with step h = min(1e-5, 2e-4 λ_min(M_n(L_μ))). Observed: jets of s_ab at the nodes ≤ 6.4e-12; FD vs formula max relative difference 1.9e-10, 2.5e-8, 2.7e-8, 2.2e-8 (Padua n = 1..4), 1.4e-8 (equispaced n = 3), 2.2e-8 (random n = 3; 1.7e-2 at h = 1e-5 because λ_min(M_3) = 5.7e-5 — pure O(h²) truncation, decreasing to 1.7e-8 at h = 1e-8 in an interactive check); rank d(κ) = dim F = dim S_1 = n(n+1)/2 in all six cases; identity (a) at a random perturbed functional with M_n ≻ 0, not constructed from an explicit measure (the checker's printed label "non-measure" means only this; it does not test that no positive representing measure exists, and (a) is proved for the whole stated class regardless): relative error ≤ 1.3e-10. This is a verification record (MEASURED), not the proof. Independent check: pending (Codex re-audit).
 
 ## Sources
 
@@ -73,3 +73,4 @@ Whether dim F = dim S_1 = n(n+1)/2 for every Π_n-unisolvent square set (PD-T?�
 ## History
 
 - 2026-11-01T08:33:39+01:00, Claude Opus 5.5 (xhigh, requested), L3 developer: created in response to finding LF-M2 of Codex audit-01 (topics/bivariate-lanczos-20261031/audit-01/L3-framework.md; candidate 5ccfac2), which asked for a split of the unproved isomorphism of PD-T?…-304(c) or a complete proof. This file proves the derivative formula and reduces the isomorphism to the 309 conjunct; it does not prove the isomorphism.
+- 2026-11-01T09:24:53+01:00 (Claude orchestrator `claude-opus-5-5`, response to Codex audit-02 A2-L4 / LC2-L1): evidence label corrected; the checker and its log are unchanged (their "non-measure" label is explained here). Original wording: «MEASURED sanity at non-measure L (rel. err ≤ 1.4e-10, `t318_dkappa_formula_check.py`)»; «identity (a) at a random non-measure functional with M_n ≻ 0: relative error ≤ 1.3e-10.». Status (PROVED) unchanged.

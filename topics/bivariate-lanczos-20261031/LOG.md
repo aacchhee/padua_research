@@ -1,7 +1,7 @@
 # Lanczos in two commuting variables — finite-precision theory, joint Ritz values and commuting extensions
 
 - Branch: `claude/bivariate-lanczos-20261031` · Base: `d36722823441dc40c6e19d69a174459348dd309c` (original main) · Developer/orchestrator: Claude · Auditor: Codex (`gpt-6-astra xhigh` launch configuration), [audit-01 completed: changes required](audit-01.md)
-- Stage: **WORK** (audit-02: original findings resolved; four new low-severity qualifications) · Next: `Claude (Opus 5.5 xhigh): Continue claude/bivariate-lanczos-20261031; address audit-02.md A2-L1–A2-L4 in response-02.md and return the narrow impact map for Codex verification.`
+- Stage: **AUDIT** (narrow verification of response-02) · Next: `Codex (gpt-6-astra xhigh): Continue claude/bivariate-lanczos-20261031; verify response-02.md (A2-L1–A2-L4) against its narrow impact map.`
 - Claims: no overall acceptance; 77 theory files after [response-01](response-01.md) (67 audited + 10 split/correction files; developer statuses), with scoped verification and outstanding corrections in [audit-01.md](audit-01.md); development ranking [report.md](report.md); frozen request [audit-handoff.md](audit-handoff.md); round ledger [plan.md](plan.md); [progress.md](progress.md).
 - For the PR: one charter paragraph for this track in `state/CURRENT.md` (PR preparation only); final PD-T/PD-N/IDEA/LIT IDs via a shared ledger `topics/padua-batch-20261031/ALLOCATIONS.md` with `codex/charter-unisolvence-20261031`; merge `origin/main` first if the charter PR has merged.
 - Open for AC: see bottom section.
@@ -193,6 +193,10 @@ Subagent effort is set from the agent definition and is not independently expose
 - No finding rejected. Material changes listed in response-01 §Impact map (T108, T113, T401, T201, T202/208/210, T205/209, T302(b)/N309, T304/316–318, 319, splits 116/117). Status upgrades only with written proof or recorded independent evidence (T113 Q40: audit's exact rerun; 209: new developer proof, pending audit).
 - Checkpoints: `8745e57` (L5), `11576cb` (L1; also swept in-progress L2/L3 theory edits, disclosed in its message), `026be3d` (L3), `c90aeb5` (report), `075d4074017445a0fd4d7443ffac97cd7f8c106b` (L2 + response-01) = **re-audit candidate**.
 - PR preparation still pending (merge main; shared records; batch-owner reservation; finals; rehearsal).
+
+### 2026-11-01 — Response to Codex audit-02 (Claude orchestrator, `claude-opus-5-5`)
+
+- Rules read at `4470ab4` (unchanged). Audit-02: four low findings A2-L1–A2-L4, all fixed by textual qualifications with History lines in T116, T208 (two), T318; three optional editorial notes applied (report θ notation, L5 docstring with byte-identical rerun, T302(b3) Φ domain). No status, proof or evidence identity changed; checker code and logs untouched. [response-02.md](response-02.md) carries the narrow impact map (6 files).
 
 Consolidated list (exact commands in the cited records): L1 SUMMARY §6; L2 above; L3 SUMMARY §5; L5 R01 §7 and R03 §7 and response-recon-01; repro/REPRO.md §5. None executed by this session; all require AC's servers (syvert0/1/2) or more time.
 
