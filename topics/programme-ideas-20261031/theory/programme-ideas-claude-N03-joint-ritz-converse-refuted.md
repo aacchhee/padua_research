@@ -1,5 +1,7 @@
 # PD-N?programme-ideas-claude-03 — A joint Ritz residual can vanish at a non-saturated node: no lower bound by the saturation deficit
 
+Final ID: **PD-N041** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: refutation of "joint Ritz ⟺ saturation" / "residual ≍ √(1−s)"; parity cancellation at a symmetry centre; audit-01 A2 counterexample.
 Split from: the converse half of the combined claim in `checks/adversarial-gen4-1.md` (ii)(c) at `614709d`; the retained half is `PD-T?programme-ideas-claude-02`.

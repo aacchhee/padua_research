@@ -1,5 +1,7 @@
 # PD-N?programme-ideas-claude-04 — The commutant of H_x inside the generalized-Hessenberg pattern of H_y is not always span{I, H_x, H_y}
 
+Final ID: **PD-N042** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: refutation of "the 3-dimensional commutant is the affine-triangular group" (M2 adversary (ii)(2)); Padua n = 2 commutant of dimension 6; audit-01 A3 counterexample.
 Split from: the commutant clause of the combined `report.md` row on finite Favard at `614709d`; the retained Favard statement is `PD-T?programme-ideas-claude-01`.

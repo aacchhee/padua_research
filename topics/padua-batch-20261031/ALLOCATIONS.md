@@ -70,3 +70,22 @@ AC's explicit instruction of 2026-11-01 (recorded in `topics/bivariate-lanczos-2
 | IDEA | IDEA-077–IDEA-176 | 100 | IDEA-177 |
 
 Map and generator: `topics/bivariate-lanczos-20261031/pr-prep/id-map.json`, `allocate.py`. The last column records the boundary immediately after this block at allocation time. Members integrating after PR #10 refresh main and active draft reservations and reconcile with the owner before allocating; the boundary is not permission to ignore later reservations. The 2026-11-01 review snapshot of draft PR #11 (`4f937137f9baac5e51814964e6a83aeb2df38815`) records LIT-293–298, disjoint from this PR. AC confirmed that every other draft adjusts after PR #10 merges. No accepted ID is renumbered, and no propagation to other drafts is claimed here.
+
+## Lattice-unisolvence and programme-ideas blocks (allocated 2026-11-01)
+
+AC's explicit instructions of 2026-11-01 in the programme-ideas session were "allocate this block now" (for PR #6) and "are the lattice ids allocated now? if not, do that as well". Under that authorisation Claude allocated both blocks in PR #6, on top of main `21e620b`. The owner change applies to these two members only; the Codex MZ orchestrator remains the allocation owner for every other member.
+
+The boundary was the column "Next unreserved after this block" of the bivariate-Lanczos block (PD-T081, PD-N032, IDEA-177). For LIT it was LIT-300, because draft PR #11 (`claude/mz-prior-art-20261101`, head `97968d2`) reserves LIT-293–LIT-299 in its copy of this ledger. Before allocating, I checked the open PRs #9, #11 and #12: no other reservation was recorded. The script also checks that none of the new IDs already occurs in PROOF_STATUS.md, state/IDEAS.md, literature/INDEX.md or ID_CROSSWALK.md. The lattice block is allocated first, because lattice merged first (PR #4).
+
+| Namespace | Lattice-unisolvence (66 provisional IDs) | Programme-ideas | Next unreserved |
+|---|---|---|---|
+| PD-T | PD-T081–PD-T094 (14) | PD-T095–PD-T100 (6) | PD-T101 |
+| PD-N | PD-N032–PD-N038 (7) | PD-N039–PD-N043 (5) | PD-N044 |
+| IDEA | IDEA-177–IDEA-189 (13) | IDEA-190–IDEA-209 (20) | IDEA-210 |
+| LIT | LIT-300–LIT-331 (32) | LIT-332–LIT-426 (95) | LIT-427 |
+
+- **Lattice:** its IDs are taken in (direction, number) order, and all 32 lattice LIT rows receive IDs exactly as registered. Lattice rows that overlap older sources were not deduplicated here.
+- **Programme-ideas:** 16 of its 111 baseline LIT rows were merged without a new ID, into LIT-002, LIT-010 and 14 bivariate-Lanczos rows. This is recorded in ID_CROSSWALK.md.
+- **Map and generator:** `topics/programme-ideas-20261031/pr-prep/id-map.json` and `allocate.py`.
+- **Retained reservations:** the lattice provisional-reservation table above and `topics/lattice-unisolvence-20261031/provisional-id-map.json` are kept as provenance. No accepted ID is renumbered.
+- **Members merging after PR #6** start from the last column above, after reconciling any later reservations. PR #11's LIT-293–299 reservation is unchanged.

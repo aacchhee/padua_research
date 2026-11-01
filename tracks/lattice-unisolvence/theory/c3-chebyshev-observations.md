@@ -1,5 +1,7 @@
 # PD-N?lattice-c3-codex-03 — Finite Chebyshev tests do not support the small-index 3D fibres as a high-quality family
 
+Final ID: **PD-N037** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N. Aliases: sampled Lebesgue comparison; finite Lobatto screen. Split from: c3-rank-observations.md. Split into: none.
 
 ## Statement and negative-result scope

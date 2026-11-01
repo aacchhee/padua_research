@@ -1,5 +1,7 @@
 # PD-T?programme-ideas-claude-05 — The Padua Lebesgue function attains its maximum at a non-node corner (OPEN; finite search without counterexample)
 
+Final ID: **PD-T099** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: corner argmax; "Λ(Pad_n) = Λ_c(n)"; De Marchi 2022 corner observation; proposal-1 Paper A (argmax part); T1.
 Split from: `checks/decisive-gen4-2.md` T1 and Verdict at `614709d` ("true for all 75 degrees tested up to 200").

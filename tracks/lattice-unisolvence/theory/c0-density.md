@@ -1,5 +1,7 @@
 # PD-T?lattice-c0-codex-01 — Density requirement for fixed congruence fibers
 
+Final ID: **PD-T081** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T. Aliases: fixed-modulus cardinality screen; factorial density.
 Split from: none. Split into: none.
 

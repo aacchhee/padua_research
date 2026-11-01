@@ -1,5 +1,7 @@
 # PD-T?lattice-c1-codex-06 — Finite mod4-union ranks and Chebyshev diagnostics
 
+Final ID: **PD-T089** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T. Aliases: C1 sampled stability; finite gap diagnostics.
 Split from: none. Split into: all proved analytic reductions and OPEN infinite target have separate IDs.
 

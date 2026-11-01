@@ -1,5 +1,7 @@
 # PD-T?lattice-c3-codex-03 — Finite exact ranks of the C0 3D congruence catalogue
 
+Final ID: **PD-T092** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T. Aliases: C3 Round1; 412-pattern rank campaign. Split from: none. Split into: generic lifting in c3-generic-witness-reduction.md; negative scopes in c3-deficiency-observations.md and c3-rectangle-observations.md.
 
 ## Statement

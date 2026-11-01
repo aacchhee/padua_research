@@ -1,5 +1,7 @@
 # Unisolvent lattice subsets beyond checkerboards
 
+> **Final IDs (2026-11-01).** The provisional `?lattice-…-codex-NN` IDs in this track were allocated final IDs PD-T081–094, PD-N032–038, IDEA-177–189 and LIT-300–331 under AC's authorisation (PR #6). The map is `topics/programme-ideas-20261031/pr-prep/id-map.json`; see also ID_CROSSWALK.md. Each theory record states its final ID under its heading. The provisional IDs are kept below as provenance.
+
 This track develops AC's interpolation-only campaign in two and three dimensions. It began on the charter branch; charter PR #2 and MZ PR #3 are now merged. The charter itself is unchanged. See [topic log](../../topics/lattice-unisolvence-20261031/LOG.md), [frozen plan](../../topics/lattice-unisolvence-20261031/plan.md), [literature baseline](../../literature/lattice-unisolvence/baseline.md) and [shared ledger](../../topics/padua-batch-20261031/ALLOCATIONS.md).
 
 Every pattern is assessed for periodic/character definition, axis determinant factorization or a substantive analogous structural criterion, and Chebyshev Lebesgue behavior. Minimal-cardinality generic unisolvence alone is not the scientific target: lower-set interpolation is an established predecessor. Cube cubature constructions and their lower bounds are not imposed on interpolation sets.

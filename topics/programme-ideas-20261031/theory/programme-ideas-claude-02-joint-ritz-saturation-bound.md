@@ -1,5 +1,7 @@
 # PD-T?programme-ideas-claude-02 — Joint Ritz residual of a projected point mass is bounded by its saturation deficit (one-sided)
 
+Final ID: **PD-T096** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: joint-Ritz/saturation lemma (gen4-1 adversary, (ii)(c)); "residual ≤ 2√(1−s)"; projected point-mass residual bound.
 Split from: the combined claim of `checks/adversarial-gen4-1.md` (ii)(c) at `614709d`: the bound below **and** "joint Ritz convergence of a node is equivalent, up to constants, to its saturation … residual ≍ √(1−s)". Only the bound is retained; the converse is retracted (REJECTED: refuted, see Status and History).

@@ -21,21 +21,31 @@ Common fields applying to every row:
 
 ## IDEA?lattice-c0-codex-01 — Bivariate bounded single-fiber catalogue
 
+Final ID: **IDEA-177** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 Aliases: C0-d2; nonzero primitive characters in small rectangles. Inherit every field above with d2. Verdict: variant with difference (specified catalogue), no publication novelty. All1155 canonical tested tuples and all39 cardinality survivors are retained in the data; by n the survivor counts are23,8,4,1,2,1. Moduli2,...,6 survivors total6,8,10,6,9. The modulo2 infinite family is the standard checkerboard baseline, not a new result. Higher-modulus isolated counts do not evade the fixed-parameter density obstruction. Canonical result: PD-T?lattice-c0-codex-03 (MEASURED finite catalogue), supporting PD-T?lattice-c0-codex-01.
 
 ## IDEA?lattice-c0-codex-02 — Trivariate bounded single-fiber catalogue
+
+Final ID: **IDEA-178** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
 
 Aliases: C0-d3; sixth-density character fibers; diagonal modulo6. Inherit every field above with d3. Verdict: variant with difference (specified exact pattern and count), no publication novelty. All3906 canonical tested tuples and all412 cardinality survivors are retained in the data; by n the survivor counts are119,68,78,45,56,46. Moduli2,...,6 survivor totals1,2,33,40,336. The exact diagonal family a111,k6,L=n+(1,2,3) is retained with the complete correction table in PD-T?lattice-c0-codex-02; its additional n≡0,2 matching fibers correct the initial sufficient-only observation n≡3,4,5. All three properties remain as above. Canonical results: PD-T?lattice-c0-codex-02 (developer analytic proof), PD-T?lattice-c0-codex-03 (MEASURED finite catalogue). Generic unisolvence is OPEN pending C3.
 
 ## IDEA?lattice-c0-codex-03 — Boxes with a short coordinate axis
 
+Final ID: **IDEA-179** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 Aliases: positive lengths<=n; coordinate polynomial annihilator. Question: can a minimal-cardinality character subset of such a box interpolate Pi_n? Scope includes every field, d>=1, n>=0, any box subset, and at least one L_j<=n. Closest predecessor: standard Cartesian interpolation obstruction, IDEA-013 and lower-set baseline. Separation criterion: none claimed; standard variant. Kill test: exhibit the allowed-degree coordinate product polynomial. Result: complete written proof PD-N?lattice-c0-codex-01. Disposition REJECTED: failed, universally in the stated scope; cardinality matches, if any, do not help. Properties: periodic if congruence-defined; universal singularity criterion exists; Lebesgue interpolation constant unavailable for singular square sets. Independent reconstruction pending.
 
 ## IDEA?lattice-c0-codex-04 — Primitive characters with some zero coefficient
 
+Final ID: **IDEA-180** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 Aliases: cylinder fibers; omitted zero-coordinate characters. Question: can these density-compatible fibers provide a useful structural family? Hypotheses would otherwise match the frozen bounds. Closest predecessor: Cartesian/cylinder constructions and IDEA-012/013. Separation criterion: a new axis criterion or markedly better stability than standard tensor/lower-set constructions; none established. Cheapest test: exact count plus a coordinate-layer annihilator and C3 rank. No execution for this family. Disposition **deferred**, explicitly excluded before finite enumeration to keep this first catalogue manageable; resume if C3 suggests a tensor/cylinder mechanism worth testing. Properties: periodic yes; axis structure unknown; Lebesgue unknown. No PD-N is created by omission.
 
 ## IDEA?lattice-c0-codex-05 — Coset unions and boundary corrections
+
+Final ID: **IDEA-181** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
 
 Aliases: multiple character levels; density-half higher characters; boundary-adjusted periodic sets. Question: can non-single fibers escape single-fiber rank failures? Closest predecessor: IDEA-012/013, checkerboard and Cools–Poppe/Lissajous baseline. Precise separation would require an exact union/space and axis criterion or stability statement; density alone is not a distinction. Kill test: PD-T?lattice-c0-codex-01 forces q/k=1/d! for fixed residue unions and fixed offsets. No tuple from this family was enumerated. Disposition **deferred** from C0 round1; in d2 the concrete surviving density scope is unions of2 mod4 or3 mod6 fibers; d3 k<=6 reduces to the already-tested one mod6. Boundary corrections, growing offsets/moduli and unions beyond6 remain outside this screen. Properties: fixed coset union periodic yes; a boundary-corrected pattern is only periodic away from its stated correction; axis criterion and Lebesgue unknown. No PD-N for this deferral.
 

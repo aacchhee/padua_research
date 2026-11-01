@@ -1,5 +1,7 @@
 # PD-N?lattice-c1-codex-01 — The quadratic mod4 determinant is not a pure axis product
 
+Final ID: **PD-N033** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N. Aliases: crossed singularity obstruction; nonseparable n2 determinant.
 Split from: PD-T?lattice-c1-codex-01 criterion; this is its distinct negative consequence. Split into: none.
 
