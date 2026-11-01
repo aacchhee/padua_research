@@ -43,3 +43,33 @@ Read `theory/proof-attempts-codex-01-padua-corner.md` in full at SHA-256 `07f596
 The local proof does not depend on importing a published proof or extrapolating the finite run. The discrete cosine Gram derivation correctly includes the alternating checkerboard term: its nonzero condition would force x-mode sum n and y-mode sum n+1, impossible at combined degree at most 2n. Its unique exceptional squared norm is the `(n,0)` mode. The square Gram identity therefore gives the cardinal normalization with precisely one unnormalized x-mode subtraction. The corner step correctly removes sine cross terms, and the rhombus transformation partitions all exponent pairs into the two common-parity square grids. The quotient extension `m*(-1)^((m-1)*ell)` at `ell*pi` matches that finite exponential sum, including n=1 and node corners.
 
 This inspection covers the displayed mathematical reduction and its finite check. The developer reports primary inspection of CDMV 2008 §2, eqs. (1),(3), printed p.3 and third-family eqs. (6a–c), printed p.4, and Bos et al. 2006 Theorem 2/eqs. (6)–(9), printed pp.8–9. This checker reviewed the stated parity/orientation translation and its agreement with the proof's formulas, but did not fetch or independently read those primary sources. The source locators are therefore attributed to the developer's inspection rather than presented as this checker's verified reading. The required Claude audit remains pending.
+
+## B5 exact rational witnesses and all-degree proof
+
+Inspected `code/b5_exact_instances.py` and `theory/proof-attempts-codex-02-generic-commutant.md` in full, then independently executed:
+
+```text
+python topics/padua-proof-attempts-20261101/code/b5_exact_instances.py > topics/padua-proof-attempts-20261101/outputs/b5_independent.json
+```
+
+The command completed separately from the developer with exit code 0 under Python 3.12.14 and SymPy 1.14.0. Exact rational/integer arithmetic; deterministic nodes `(t,t^(n+1))`, `t=1,...,N`, equal weights `1/N`, no seed or tolerances. The run checks exact Vandermonde inversion, the rational monic LDL basis, positive squared norms, weighted self-adjointness, commutation, masks and unit monic multiplication pivots. Positive diagonal similarity yields the symmetric positive-pivot pair without representing radicals.
+
+| n | N | Computed reduced rank | Patterned symmetric variables | Full map rank deduced from proof |
+|---|---:|---:|---:|---:|
+| 2 | 6 | 3 | 17 | 14 |
+| 3 | 10 | 7 | 36 | 33 |
+| 4 | 15 | 12 | 65 | 62 |
+| 5 | 21 | 18 | 106 | 103 |
+| 6 | 28 | 25 | 161 | 158 |
+
+The directly computed rank is the rank `N-3` of the final `N-3` rows of `V^-1`. It is **not** a direct calculation of the full patterned commutator map. The proof identifies its nullspace with affine node-value vectors and hence with the full commutant; rank-nullity then deduces full rank `variables-3` and commutant dimension three. This distinction is correctly disclosed by the script and theory.
+
+The all-degree argument has no finite-computation dependency. Distinct x coordinates and positive weights make the constant vector cyclic for H_x. Its commuting matrices are determined by their first columns; the H_y mask restricts that column to three entries, while I,H_x,H_y supply three independent possibilities by their positive leading pivots. The containment P_x⊆P_y is correct for the stated order. The explicit collision polynomial supplies density throughout the open unisolvent positive domain, avoiding any connectedness assumption. The generalized Vandermonde witnesses follow from the stated Rolle induction; their exponent distinctness is correct. The LDL similarity correctly replaces ordinary symmetry with D-self-adjointness while preserving support and rank. No finding was identified in these arguments or the exact script within the declared scope.
+
+| Artifact | SHA-256 | Bytes |
+|---|---|---:|
+| `code/b5_exact_instances.py` | `fb56be6166ce10ecae213cd1c4e169594a52b0a922058e52934b88ccd0edf18b` | 4144 |
+| `outputs/b5_independent.json` | `251496a1a117054608dd55d32c7dfa5441c5af34cf7cb00d1f99ec0e9e80da02` | 5327 |
+| `theory/proof-attempts-codex-02-generic-commutant.md` | `f3137551edfe3230919e271d497ffb56ab49b3035c3165bb2455512e5264b7d3` | proof size in manifest |
+
+Trusted computation: Python exact integers and SymPy rational matrices, LDL factorization and `DomainMatrix` inversion/rank. This is a separate execution of the developer checker, not a separately implemented checker or the required Claude audit. Repeated-x collision strata, other patterns and approximate commuting pairs are outside the theorem. No existing Padua counterexample was changed or invalidated.

@@ -2,7 +2,7 @@
 
 - Branch: `codex/padua-proof-attempts-20261101` · Base: `cadb35066160e466cb1704b9791ad6f374446422` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh), pending
 - Stage: WORK · Next: `Claude (Opus 5.5 xhigh): Audit codex/padua-proof-attempts-20261101.`
-- Claims: A1 PROVED in `theory/proof-attempts-codex-01-padua-corner.md`; B5 active; A5-partial queued. Local theory IDs only.
+- Claims: A1 PROVED in `theory/proof-attempts-codex-01-padua-corner.md`; B5 PROVED all n≥2 in `theory/proof-attempts-codex-02-generic-commutant.md`; A5-partial active. Local theory IDs only.
 - For the PR: draft against `claude/programme-ideas-20261031`; no final IDs, shared registry edits, base-file edits, main merge or PR merge.
 - Open for AC: none needed for authorized development; independent Claude audit remains a handoff.
 
@@ -26,6 +26,14 @@
 - `/root/input_review` actually executed the same command separately to `outputs/a1_independent.json`, inspected the checker and written proof, and found no issue within its declared scope. This is a supplementary check, not the Claude audit; see independent-checks.md for hashes and source-reading limits.
 - Root read the complete A1 proof and code; normalization, parity split and singular limits checked. A1 stops on its done criterion; no PD-N or failed mathematical route.
 - B5 starts only after A1 written proof and checks were saved. `/root/a1_develop` now owns new `attempts/T-B5.md`, `theory/proof-attempts-codex-02-generic-commutant.md`, `code/b5_*`, `outputs/b5_*`. Root proposed the distinct-x/cyclic-constant-vector route, which gives an all-degree theorem and avoids disconnected-domain genericity problems. The supplementary reviewer checked that route read-only. The exact finite-witness code remains to be written/run. A5 has not started.
+
+### Ordered target checkpoint: B5 complete, A5 starts
+
+- B5 done for every n≥2: if all x coordinates are distinct, e_0 is cyclic for H_x, and the structural P_y mask permits just three entries in column zero. Commuting matrices are determined by that column. The three independent matrices I,H_x,H_y establish equality. The polynomial discriminant gives global genericity; Cholesky formulas prove the requested real-analytic dependence directly. The existing Padua counterexample remains intact.
+- Executed `python topics/padua-proof-attempts-20261101/code/b5_exact_instances.py > topics/padua-proof-attempts-20261101/outputs/b5_exact_instances.json`. Rational moment-curve witnesses n=2,…,6 pass unisolvence, LDL positivity, exact commutation, weighted symmetry, pattern and pivot checks. Reduced ranks are 3,7,12,18,25; full commutator ranks 14,33,62,103,158 are deduced through the written equivalence, not reported as directly computed full-map ranks.
+- `/root/input_review` actually reran that script separately to `outputs/b5_independent.json` and inspected the all-n proof, with no finding. Root read the complete proof and code; see independent-checks.md for details and limits. B5 stops on its done criterion.
+- A5 starts after B5's proof and successful exact check were saved. Root owns `code/a5_trace.py` and `outputs/a5_trace.json`: imports the frozen certifier, overrides only logging, and executes n=3,…,8 without calling its original output writers. Command: `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-proof-attempts-20261101/code/a5_trace.py > topics/padua-proof-attempts-20261101/outputs/a5_trace.json` (running at this checkpoint). `/root/input_review` now develops only new A5 exact code/output, local theory number 03 and attempt note. Its A5 development is not an independent A5 check.
+- First pushed checkpoint: `184b02a0129d12778bb9cf55af852393670c8db1` (A1). Both commits use AC's exact author email and Agent/Model trailers.
 
 ## Runs needed
 
