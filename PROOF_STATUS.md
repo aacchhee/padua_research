@@ -84,6 +84,8 @@ Supplementary Astra reconstruction: [report](topics/lattice-unisolvence-20261031
 
 ## Bivariate Lanczos track (topic bivariate-lanczos-20261031)
 
+Integration update 2026-11-01: [audit-05](topics/bivariate-lanczos-20261031/audit-05.md) independently verified the corrected registries at `98945cb`; [response-04](topics/bivariate-lanczos-20261031/response-04.md) records the final dispositions and AC’s later scoped output-budget exception. The rows’ evidence cells retain their rendering-time handoff note; the completed audit supplies the later verification. Scientific statuses and statements are unchanged.
+
 Final IDs PD-T029–PD-T080 and PD-N007–PD-N031, allocated by Claude at PR preparation (2026-11-01) under AC's authorisation recorded in the [batch ledger](topics/padua-batch-20261031/ALLOCATIONS.md). Statements summarize the linked theory records; exact statements, quantifiers and part tables are in those files. Current forward-dependency lists and source/exclusion notes are maintained in [registry-semantics.json](topics/bivariate-lanczos-20261031/pr-prep/registry-semantics.json). Statuses as accepted after Codex [audit-01](topics/bivariate-lanczos-20261031/audit-01.md), [audit-02](topics/bivariate-lanczos-20261031/audit-02.md) and [audit-03](topics/bivariate-lanczos-20261031/audit-03.md) (clean). Check the disposition column before relying on a row. Provisional IDs: [ID_CROSSWALK.md](ID_CROSSWALK.md).
 
 | ID | Statement and scope | Status | Status by mathematical part | Disposition / reason | Depends on | Theory file | Evidence / audit |

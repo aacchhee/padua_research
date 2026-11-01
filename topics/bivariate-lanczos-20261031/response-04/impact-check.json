@@ -1,0 +1,127 @@
+{
+  "base": "183d33760e8d6c3ecdeb588576bd65ba312f65fe",
+  "candidate": "98945cbcf10c4f8eb53f77c996db358392d42391",
+  "main": "9739a0c56b7a3976422ce60a8441bfbbfd6554df",
+  "protected_topic_track_files_byte_identical": 676,
+  "theory_files_byte_identical": 77,
+  "code_files_byte_identical": 139,
+  "rules_byte_identical": true,
+  "allocation_map_bytes_identical": true,
+  "crosswalk_id_pairs_identical": true,
+  "main_table_rows_preserved": true,
+  "negative_artifact_and_published_table_synchronized": true,
+  "status_counts": {
+    "OPEN": 4,
+    "PROVED": 38,
+    "MEASURED": 34,
+    "CONDITIONAL": 1
+  },
+  "changed_files": [
+    {
+      "path": "ID_CROSSWALK.md",
+      "bytes": 193186,
+      "sha256": "e80952fac93046583505077cda0d7884e47afad828b8801a762d904691f237e3"
+    },
+    {
+      "path": "PROOF_STATUS.md",
+      "bytes": 85395,
+      "sha256": "55e5d2c79f512fbe753bca29425a77363abf4bd43f1e43599a09fcfaa90312ac"
+    },
+    {
+      "path": "literature/CORPUS.md",
+      "bytes": 76748,
+      "sha256": "613cb145503e8fcdaacf8dbfb59cc8e1c4bdcb476a4fabb038d0d5f6ad996a5e"
+    },
+    {
+      "path": "literature/INDEX.md",
+      "bytes": 187591,
+      "sha256": "349c7fd4b493a26e660494e9dd4fde810fcc44b432f7a076287bab8190253c3b"
+    },
+    {
+      "path": "literature/records/barrio-pena-sauer-2010.md",
+      "bytes": 6261,
+      "sha256": "2dcd847c8a010bd48ebc17c815f9acba56109dde2d4bc8e7f2840eafd922bb05"
+    },
+    {
+      "path": "literature/records/mourrain-telen-vanbarel.md",
+      "bytes": 5180,
+      "sha256": "1c6816dfeba967a7eda662024d9d3133f258f8a7d449addfdc68c82ab1548e97"
+    },
+    {
+      "path": "literature/records/schmudgen-ten-lectures-2020.md",
+      "bytes": 2313,
+      "sha256": "ff39959f33ecb169b242a77fb6d9358f762890dd649379410218692b980c82d6"
+    },
+    {
+      "path": "literature/records/telen-mourrain-vanbarel-2018.md",
+      "bytes": 573,
+      "sha256": "de4548d5826fdca2ca10d7859a75039c67376102783cbda7e88be43cd94d2fbc"
+    },
+    {
+      "path": "state/CURRENT.md",
+      "bytes": 11958,
+      "sha256": "7b1273780c6d35d876259a3a6460ed18328fa2d901a80d896fc938e6aca199eb"
+    },
+    {
+      "path": "state/IDEAS.md",
+      "bytes": 150705,
+      "sha256": "25218798b9d34d060391311ebb8627b98c1b3dca1f05064f524624007549a2f0"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/pr-prep/allocate.py",
+      "bytes": 11589,
+      "sha256": "31b48f8216edfda67213733bb19e11a6048ace122cd75c9b8d1f108b042ea439"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/pr-prep/check_integration.py",
+      "bytes": 5703,
+      "sha256": "8b22caefc3c926f2798986f721e181d931d68446385cdeefc0d99cd2734ddc83"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/pr-prep/crosswalk.rows.md",
+      "bytes": 116199,
+      "sha256": "333252187d11bb3e81339ecd8e403776eb5b3fb320883ee2b2e39c68529ad238"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/pr-prep/ideas.rows.md",
+      "bytes": 46341,
+      "sha256": "783a1320a5a1ec47836f34ea45f665c0734a8bdd90dab8ff43830440f8b87a95"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/pr-prep/negative.rows.md",
+      "bytes": 19561,
+      "sha256": "5b97e4a9490d59a0e31ce0b08f2fa2d3d92222dbedfe91d7d2a4a045ed3a11dc"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/pr-prep/proof_status.rows.md",
+      "bytes": 55435,
+      "sha256": "14c35e346c369dba7759a1a09d261324631c1c7567ed90bf8cdbd7a6aa223523"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/pr-prep/registry-semantics.json",
+      "bytes": 49384,
+      "sha256": "cb9117ac9243101fbcddea8f8d5298067759327745eee60b076a251348f471ba"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/report.md",
+      "bytes": 23436,
+      "sha256": "b1a6d053333ec98c7908b4f215798f26ff8eae88a500462b2c76bc3aea2add44"
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "bytes": 11267,
+      "sha256": "5a84238e99a12eb21cb99b50049cf30ee1c51a3658d5c46c7c43bb91a8699398"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/NEGATIVE_RESULTS.md",
+      "bytes": 20148,
+      "sha256": "fd8df5d5dd7aa330d6209f342a88aac4a6317392fa3fdcc2776858d283fc5679"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/README.md",
+      "bytes": 2403,
+      "sha256": "4eb9200c4feafa3d51d475ee317b39f83fe33ae1e13fd86da226c169bc5a3860"
+    }
+  ],
+  "pass": true
+}

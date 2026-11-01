@@ -13,3 +13,7 @@
 | response-02 (6 files) | aea0128 | Codex gpt-6-astra xhigh (audit-03) | CLEAN within scope; proceed to PR preparation | topics/bivariate-lanczos-20261031/audit-03.md |
 
 Final IDs (PR preparation 2026-11-01): see [ID_CROSSWALK.md](../../ID_CROSSWALK.md); the result IDs above are provisional labels of the time of each audit.
+
+## Integration correction handoff (2026-11-01)
+
+Audit-04 at a2dd845 required preparation corrections; [response-04](../../topics/bivariate-lanczos-20261031/response-04.md) records direct Codex fixes under AC's explicit no-extra-Claude-loop instruction. A distinct reviewer independently verified candidate98945cbcf10c4f8eb53f77c996db358392d42391: [audit-05](../../topics/bivariate-lanczos-20261031/audit-05.md) is technically CLEAN. All77 complete theory files, scientific evidence and404 allocations are unchanged. AC subsequently resolved the remaining output-budget condition with the [PR#10-only exception](../../topics/bivariate-lanczos-20261031/response-04/AC-EXCEPTION.md). Original audit reports are preserved. Ready for AC’s merge decision; only AC merges.
