@@ -903,3 +903,10 @@ From the topic's [SPLITS.md](topics/bivariate-lanczos-20261031/SPLITS.md) (respo
 | PD-T?proof-attempts-codex-03 | PD-T103 | codex/padua-proof-attempts-20261101 | [record](topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-03-degenerate-maxima.md) | [Claude audit-01](topics/padua-proof-attempts-20261101/audit-01.md); [response-01](topics/padua-proof-attempts-20261101/response-01.md) |
 
 Original-to-split mapping: **PD-T098** (alias PD-T?programme-ideas-claude-04), exact finite corner-identity part → **PD-T101**. The original asymptotic expansion stays OPEN, its wording and measured fits preserved. B5 → PD-T102 is the positive generic complement to PD-N042; the negative proof has no dependency on it. A5-partial → PD-T103 is supporting local work for PD-T100, whose counts remain MEASURED and completeness OPEN.
+
+## Lanczos drift reservation (no final assignment)
+
+The `codex/padua-lanczos-drift-20261101` draft permanently reserves PD-T136–155,
+PD-N062–071, IDEA-246–285 and LIT-445–459 in the
+[shared batch ledger](topics/padua-batch-20261031/ALLOCATIONS.md).
+All development records still use provisional IDs; no mapping is assigned here.

@@ -29,3 +29,10 @@
 - Obtain genuinely separate independent checks and record their own commands and outputs; review of developer output is not an independent rerun.
 - Deliver generated artifacts to `C:\Users\andreyac\Downloads\padua\cold_storage\padua-lanczos-drift-20261101\` when the bridge is available, then complete [COLD_STORAGE.md](COLD_STORAGE.md) from actual delivered bytes.
 - Orchestrator to write this topic's local working track at `C:\Users\andreyac\Downloads\padua\results\padua-lanczos-drift-20261101.md` when access is available. No write is claimed. Shared `RESULTS.md` changes belong only to PR preparation or post-merge and require staging current bytes and the modification-time guard.
+
+## Reservation and parallel setup checkpoint
+
+- Open handoff: [01-work.md](handoffs/01-work.md). E1 setup frozen before full sensitivity runs in `evidence/e1-freeze.json`; residual-injection and per-operation models remain distinct.
+- Fresh union scan caught PR #14 appearing after the first inventory. Reserved PD-T136–155, PD-N062–071, IDEA-246–285, LIT-445–459 with permanent headroom; no final assignments. Shared batch ledger preserves the MZ reservation.
+- Workers: e1_mathematics (Sol xhigh; E1/E2, local IDs01–09); e1_code (Sol medium; exact checker); e3_e4_math (Sol xhigh; IDs10–29); e5_math (Sol xhigh; IDs30–49); e6_benchmarks (Sol medium; IDs50–59); setup_records (Sol medium; mechanical setup/allocation scan). Only the root changes Git and handoffs.
+- Claimed statuses are pending worker delivery, independent checking, and Claude audit. No computer proof is inferred from an exact-looking output alone.

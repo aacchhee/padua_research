@@ -1,5 +1,47 @@
 # Shared allocation ledger — padua-batch-20261031
 
+## Padua Lanczos drift reservation — 2026-11-01
+
+Owner branch: `codex/padua-lanczos-drift-20261101`. Reservation only for an early
+draft; no final IDs assigned. The current fresh-range procedure supersedes older
+single-owner prose. Preserve all earlier ranges and permanent gaps, including
+PR #14's imported section below.
+
+Full ledgers and four registries checked at main
+`806cc7b4509fd93bae652f9545d32d95529f8281`, PR #12
+`0a300db8041fc922483bb16b2f4239fde07cc134`, and PR #14
+`9f0c7710abd19ee5a0d61bce6384e7a399e838d2`. All closed PRs returned were merged;
+no missing retired reservation was found. The MZ topic appeared between the
+initial and final scan; the superseded recommendation was never reserved.
+[Complete scan and file identities](../padua-lanczos-drift-20261101/allocation-scan.json).
+
+| Namespace | Reserved range | Count | Estimated needs + permanent headroom |
+|---|---|---:|---|
+| PD-T | PD-T136–PD-T155 | 20 | 12 + 8 |
+| PD-N | PD-N062–PD-N071 | 10 | 6 + 4 |
+| IDEA | IDEA-246–IDEA-285 | 40 | 25 + 15 |
+| LIT | LIT-445–LIT-459 | 15 | 10 + 5 |
+
+Priority is the pushed commit introducing this reservation, linked in this
+topic's draft PR. Unused IDs remain permanent gaps. Next boundaries after these
+ranges: PD-T156, PD-N072, IDEA-286, LIT-460, subject to a fresh union scan.
+Scientific records retain provisional IDs through development and audit.
+
+## Padua MZ 2D reservation — 2026-11-01
+
+Owner branch: `codex/padua-mz-2d-20261101`. This is a reservation for the early draft, not a final-ID assignment. The fresh-range procedure supersedes historical single-owner prose below. All previous allocations, permanent headroom and retired reservations remain in force.
+
+Checked complete ledgers and final-ID uses at main `806cc7b4509fd93bae652f9545d32d95529f8281`, sole other open PR12 `12e9cf4539d0977773cad75fc74f93d1664cb429`, and retained merged PR9 head `752ba068589683afe644b505d673f8da1529cbf0`. All twelve returned repository PRs were individually classified: eleven merged, one open, none closed-unmerged. Main includes the prior PR9 reservation through PD-T105 (including permanent gaps104–105). Historical LIT provisional aliases in the1700s are not final IDs. Full scan with file identities: [reservation-scan.json](../padua-mz-2d-20261101/protocol/reservation-scan.json); [GitHub state receipt](../padua-mz-2d-20261101/protocol/github-scan.json).
+
+| Namespace | Reserved range | Count | Estimated needs + permanent headroom | Next unreserved |
+|---|---|---:|---|---|
+| PD-T | PD-T106–PD-T135 | 30 | 20 +10 | PD-T136 |
+| PD-N | PD-N044–PD-N061 | 18 | 12 +6 | PD-N062 |
+| IDEA | IDEA-210–IDEA-245 | 36 | 24 +12 | IDEA-246 |
+| LIT | LIT-427–LIT-444 | 18 | 12 +6 | LIT-445 |
+
+Publication priority is the pushed commit first adding this section, linked in the campaign PR body. No portion of these ranges may be reused even if unused. Assignment waits for PR preparation and another current-reservations check. The campaign PR will preserve a provisional-to-final map. It does not alter PR12's scientific records or audit-pending status.
+
 ## PR #9 permanent reservation (2026-11-01)
 
 AC requested finalization of [PR #9](https://github.com/aacchhee/padua_research/pull/9).

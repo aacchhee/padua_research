@@ -1,0 +1,19 @@
+{
+  "frozen_before_run": true,
+  "date_utc": "2026-11-01",
+  "rules_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+  "developer": "Codex gpt-6.1-sol medium (requested allocation; runtime metadata unexposed)",
+  "sets": ["T24: (2i/24-1,2j/24-1), i+j<=24", "rotQ24: ((3x-4y)/5,(4x+3y)/5), x,y in {2i/24-1:i=0..24}"],
+  "degrees": "2..12; explicit fallback 2..8 if bounded exact execution cost requires it",
+  "inner_product": "unweighted Euclidean; b0=ones; exact rational full projection",
+  "source_norm": "sum_j ||f_j||_2^2/sigma_j^2=1, sigma_j^2=||A_j b_parent||_2^2",
+  "output_norm": "spectral norm of normal derivative in orthonormal basis",
+  "bounds": "Knode^2=max_ji sigma_j^2(1-Pii)sum_k g_kj(zi)^2/dk <= kappa^2 <= KHS^2=sum_ji same",
+  "additional_upper_bound": "Urow^2=max_i sum_jk sigma_j^2*g_kj(zi)^2/dk. Final upper=min(KHS^2,Urow^2). Added after initial n2 restricted-source run and before full scope interpretation, from separate mathematical inequality; original KHS retained.",
+  "rules": {"bj":"X iff j=0; else Y", "mirror":"X except j=t", "alt":"X iff 2j<t; boundary force", "pivot":"max residual_norm_squared / candidate_norm_squared; ties X"},
+  "screen": "degree-2 sources only, separate screen-only result; cannot certify full-map dead verdict",
+  "survives": "At n=12 on BOTH sets, BJ full Knode^2 > 100 times min(alt full KHS^2,pivot full KHS^2)",
+  "dead": "On either set, BJ full KHS^2 <= one good rule full Knode^2, OR BJ full KHS^2 <100 alt full Knode^2 AND <100 pivot full Knode^2",
+  "otherwise": "INCONCLUSIVE; overlapping bounds cannot determine kappa comparison",
+  "fallback_interpretation": "degree-8 output remains scoped evidence; does not fulfill degree-12 survival condition"
+}
