@@ -86,11 +86,14 @@ Standard library only (exact `fractions.Fraction`), about 3 seconds. The script 
 ```bash
 python -B tracks/bivariate-lanczos/code/drift/e5_exact_checks.py > /workspace/padua-drift-runs/reproduce/e5-exact-checks.json
 python -B tracks/bivariate-lanczos/code/drift/response01_e5_checks.py > /workspace/padua-drift-runs/reproduce/response-01-e5-checks.json
+PYTHONPATH=/workspace/padua-drift-runs/python-deps python3 -B tracks/bivariate-lanczos/code/drift/e5_response02_check.py > /workspace/padua-drift-runs/reproduce/response-02-e5-checks.json
 ```
 
 SymPy corroborates finite identities; the written proofs supply the all-degree
 statements. The isolated command in `e5-manifest.json` assumes dependencies
 installed in the interpreter environment rather than through `PYTHONPATH`.
+
+`e5_response02_check.py` (response-02, audit-02 A02-L3/L4) needs python-flint (Arb). It checks the record-30 endpoint labels exactly and certifies with 384-bit Arb that the ball for P_4 at the fixed parameter a*=20π³/9−512π is strictly negative. It reads record 30 and PD-T069 to pin the P_n definition, so its recorded record-30 hash changes if record 30 is edited.
 
 ## E6 upstream code and numerical adapters
 
