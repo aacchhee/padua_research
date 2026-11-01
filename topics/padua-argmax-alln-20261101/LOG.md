@@ -1,8 +1,8 @@
 # All-degree Padua argmax (A4 / PD-T099): strategy topic
 
 - Branch: `claude/padua-argmax-alln-20261101` · Base: main `2b52b43` (merged in `280fea4`; initially `28aaa20`) · Developer: Claude (planning, MEASURED records); Codex (part 3 development, from handoff 02) · Auditor: Codex for Claude's records, Claude for Codex's
-- Stage: WORK · Next: `Codex (gpt-6.1-sol xhigh): Continue claude/padua-argmax-alln-20261101.` · Open handoff: [handoffs/02-part3-work.md](handoffs/02-part3-work.md)
-- Reserved final-ID ranges: none yet. No PR is open; reserve by the WORKFLOW fresh-range procedure when the draft PR opens.
+- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Continue claude/padua-argmax-alln-20261101.` · Next handoff: [handoffs/03-audit.md](handoffs/03-audit.md), published after the output commit.
+- Permanent reserved ranges (no final IDs assigned): PD-T206–225, PD-N078–083, IDEA-316–335, LIT-460–465; first published405febab, [draft PR17](https://github.com/aacchhee/padua_research/pull/17), [ledger](ALLOCATIONS.md).
 - Claims:
   - PD-T?argmax-alln-claude-01 — float64 majorant/gap observations — MEASURED — [theory](theory/argmax-alln-claude-01-measured-observations.md).
   - PD-T?argmax-alln-claude-02 — float64 edge/strip gap profiles and n = 2 scans — MEASURED — [theory](theory/argmax-alln-claude-02-measured-edge-profile.md).
@@ -10,6 +10,7 @@
   - IDEA?argmax-alln-claude-02 and -05 — active in part 3; -03 and -04 deferred. See [ideas.md](ideas.md).
 - For the PR: register the IDEA and PD-T rows, `results/padua-argmax-alln-20261101.md` → `RESULTS.md` section, Codex audit.
 - Open for AC: none.
+- Current part3 claims: PROVED codex-02/03/04/05/07/08 and scoped codex-N01; MEASURED codex-01/06. See [report.md](report.md) for exact scopes and provisional prefixes. Required Claude audit PENDING.
 
 ## 2026-11-01 — Claude, claude-opus-5-5 (configured; effort not exposed)
 
@@ -43,8 +44,6 @@
 - ideas.md and gate.md amended (append-only). New IDEA?argmax-alln-claude-05 (global-max-only finite certifier).
 - Handoff 01 closed. Handoff 02 opened: part 3 development by Codex on this branch.
 
-## Runs needed
-
 ## 2026-11-01 — Codex part 3 setup checkpoint
 
 - Role: orchestrator/developer; actual model gpt-6.1-sol xhigh, as AC requested. Mathematical and setup work in this turn retains that configured effort; bounded replay uses gpt-6.1-sol medium. Rules read at `328be35e55143013047ec03a70e9906e82b95353`.
@@ -55,5 +54,22 @@
 - Fresh-range transition adopted. [ALLOCATIONS.md](ALLOCATIONS.md) permanently reserves PD-T206–225, PD-N078–083, IDEA-316–335, LIT-460–465; no final IDs assigned. All 15 returned PRs are merged, none open or closed-unmerged. Main ledger and all four registries checked; [scan](allocation-scan.json). The local ledger respects handoff 02's topic-only write scope; proposed shared links wait for PR preparation.
 - Stage remains WORK; handoff 02 remains open while its step runs. Tests/proofs and any finite-range extension will be recorded in a subsequent checkpoint, without upgrading the all-degree target.
 
-- Independent rerun of `code/check.py`, `cell.py`, `interior.py`, `edgeprofile.py`, `strips.py` and `n2_edges.py` (commands in the two observations records), by an agent other than Claude, before any result here is used as evidence in a PR. Assigned to Codex as step 0 of handoff 02.
-- Plan v2 §6 tests T1–T5: not run. Assigned to handoff 02.
+## 2026-11-01 — Codex part3 output boundary
+
+- Rules/source pin remains `328be35e55143013047ec03a70e9906e82b95353`; main `2b52b432fe59c9a50aef9deebe5152c5d6874465` was already integrated. GitHub connector used for every remote read, commit/ref update and draft PR17.
+- Completed T1–T5 with original criteria preserved and separate dated interpretations. T1 noncorner profile retained at selected degrees through400; its requested general-beta series remains unfulfilled. T2 and T3 raw profile forms fail their numerical planning tests. T4 literal existing-bound projection is about1.33e14 using inferred constants, not a rigorous threshold. [Tests](attempts/T1-T5.md).
+- P0 exact rational proof and Bernstein correctness developed. Exact-field n8 certificate plus general rational-trigonometric n9–16 certificates complete; every new degree independently replayed. With inherited n3–7 the finite range is2–16. No degree>=17 run. [Finite attempt](attempts/P0-finite.md), theory02/03/07/08.
+- P1 compact positive-gap vertical envelope proved; horizontal supporting decomposition/defect theorem proved separately. P2 envelope and P3–P6 remain OPEN. The whole-square all-degree PD-T099 remains OPEN. [Edge attempt](attempts/P1-P2-edges.md), theory04/05.
+- After the T4 literal-architecture kill, tested precise pairing variants. Exact n4 O-Lt finite ordering is refuted (scoped PD-N?argmax-alln-codex-01); measured O-R/E-C screens retained separately in06. One displayed rational rounding unit was corrected and independently rechecked. Original ambiguous IDEA03 and other pairings are not refuted. [Fallback](attempts/P3-P5-and-pairing.md).
+- Sequence disclosure: P1/P2 and n8 discovery began after the decisive first-pass tests/T5 were available while the final high-degree T1 extension still ran; the complete T1 range was then recorded. No kill criterion was retroactively changed. No unread one-dimensional literature theorem was transferred into P3.
+- Supplementary checks: distinct Astra high worker reviewed and reran finite2,8–16, mutation controls, fullT2–T4 and T1n12; reviewed edge04/05. A separate Astra high worker verified pairing O-Lt with an independent rational reconstruction. [Part3 checks](independent-checks-part3.md), [pairing checks](independent-checks-pairing.md). These do not replace Claude's required topic audit.
+- A separate followup Astra high review of the original Claude measured records accepts the six-script-covered claims with minor C-01: cumulative-strip wording corrected to separate one-cell-thick offset bands. Old wording is preserved in record02 History. All six targeted central optimizer locations stayed in the stated box; standalone whole-square maj.py scans remain unrerun. [Original-observations audit](independent-checks-claude-observations-audit.md).
+- Actual models: Sol xhigh development/orchestration under AC's explicit request; Sol medium replay; Astra high supplementary mathematical checks. Runtime metadata was not independently exposed to subagents; requested/configured settings are recorded.
+- Connector commit identity is Andrey Chesnokov with the account noreply email, rather than the handoff's requested gmail email: the connector exposes no author-email selector. Published history is preserved; no force-push or main mutation.
+- [report.md](report.md), [results](../../results/padua-argmax-alln-20261101.md), [evidence-manifest.json](evidence-manifest.json) and [literal shared proposals](proposed-record-changes.md) record the boundary. No final IDs assigned or shared registry changed. Stage AUDIT; [handoff03](handoffs/03-audit.md) is published in the following status-only/handoff commit after the scientific output SHA is known.
+
+## Runs needed (updated during part 3)
+
+- Six prescribed independent replays: COMPLETE at the setup checkpoint; see independent-checks-claude-records.md. Standalone maj.py whole-square scans remain outside that replay's coverage.
+- Claude Opus5.5 xhigh topic audit under handoff03; complete state/IDEAS read required because the branch carries mechanisms and scoped negative content.
+- General-beta series, center-minimality, P2 primitive estimates, P3–P5 and a rigorous effective threshold remain unresolved. Further development follows audit/disposition; no additional finite discovery is implicitly claimed.

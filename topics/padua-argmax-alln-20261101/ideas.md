@@ -89,3 +89,15 @@ Aliases: majorant-discard branch and bound; A4(d) certifier.
 - Kill criterion written before testing: kill as the P6 tool if n = 12 needs more than 10× the run time of part 2's n = 7 full certificate.
 - Actual test results: not run.
 - Disposition: **active in part 3** (handoff 02).
+
+## Part3 execution boundary — 2026-11-01, Codex gpt-6.1-sol xhigh
+
+Earlier instructions, tests and candidate history above are preserved. These dated outcomes supersede their unrun/planning descriptions; no historical priority claim is added.
+
+- **Claude-01, majorant alone:** unchanged REJECTED: failed in the measured off-coset-maximality scope; retained only as a sub-tool. The exact finite certifier instead uses direct cardinal coefficient bounds.
+- **Claude-02, scaled-profile architecture:** T2/T3 fail the recorded raw degree-independent profile forms. The literal existing localization-plus-finite projection also fails the planning cutoff under inferred constants; a sharper global strategy remains inconclusive. These tests do not reject P3/P4 inequalities or every asymptotic proof. Compact vertical P1 is now proved by codex-04, and horizontal compact defect by codex-05; other regimes/effectivity remain OPEN.
+- **Claude-03, pairing:** precise variants, pre/post-inspection timing and scope are retained in [ideas-codex-fallback.md](ideas-codex-fallback.md). Tie-inclusive O-Lt has a scoped PROVED n4 obstruction (codex-N01); measured whole-diamond O-R has reversals, while centreward E-C has no measured reversal in76 comparisons. Original ambiguous wording and other pairings remain unresolved; they are not globally refuted.
+- **Claude-04, generating-curve factorization:** deferred and not tested in this part3 step. No result is inferred from its untested formula.
+- **Claude-05, global-max-only certifier:** retained. The sufficient tensor Bernstein correctness theorem codex-03 and independently replayed degree2/8–16 proofs codex-02/07/08 establish the finite goal in that range. Completed n12 discovery5.176281s, even including its two replay costs, is below10×the inherited fulln7 baseline3523.410076s. The timing kill is not triggered in the tested scope. No larger-degree runtime theorem or degree>=17 run is claimed.
+
+All new labels have provisional topic prefixes; the reservation is not a final-ID assignment. [Report](report.md) and [evidence](evidence-manifest.json) carry proof/measurement limits. Required Claude audit PENDING.

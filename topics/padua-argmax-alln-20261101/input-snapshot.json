@@ -1157,6 +1157,31 @@
       "path": "templates/THEORY.md",
       "git_blob_sha": "078deb26c229c8f715f6238ba92fa48432f0dd5a",
       "bytes": 3655
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n4_global.json",
+      "git_blob_sha": "708c5410b7e3f5538d30faa607f810eac1e715ce",
+      "bytes": 4148
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n7_global.json",
+      "git_blob_sha": "b8875f04ba6f73583ab01a11766fbca43dbcc473",
+      "bytes": 9493
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n3_checker.json",
+      "git_blob_sha": "53012620a8b214975373670a0285b4321bf8001a",
+      "bytes": 15207
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n4_certificate.json.gz",
+      "git_blob_sha": "d768d04857c580459547f090a1256fd4ed8bed58",
+      "bytes": 64360
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-01-padua-corner.md",
+      "git_blob_sha": "e08dc5c427b57ec944135776aac8a87dde804ccf",
+      "bytes": 10507
     }
   ]
 }

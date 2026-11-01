@@ -1,46 +1,21 @@
-# padua-argmax-alln-20261101 — strategy for the all-degree Padua argmax (A4 / PD-T099)
+# padua-argmax-alln-20261101 — part 3 results
 
-This file is written only by the topic orchestrator. Branch `claude/padua-argmax-alln-20261101`; no PR yet.
+Branch: `claude/padua-argmax-alln-20261101`; [draft PR17](https://github.com/aacchhee/padua_research/pull/17).
+2026-11-01. Codex gpt-6.1-sol xhigh. Required Claude audit PENDING.
+IDs remain provisional; [reservation](../topics/padua-argmax-alln-20261101/ALLOCATIONS.md).
 
-## Status (2026-11-01, evening): WORK
+- **PROVED, codex-02:** n2 maximum3, only at(±1,−1); rational proof and independent exact replay.
+- **PROVED, codex-03:** tensor Bernstein certificate correctness, strict corner leaves and outward integer arithmetic.
+- **PROVED, codex-07/08:** global argmax only at the two non-node corners for n8 and every n9–16. All new certificates independently replayed. With inherited n3–7, the certified finite range is **2≤n≤16**.
+- **PROVED, codex-04:** positive compact vertical-edge envelope gap, with continuous positive integral and explicit positive lower bound.
+- **PROVED, codex-05:** horizontal decomposition and compact positive defect limit. The P2 envelope remains OPEN.
+- **MEASURED, codex-01:** four-edge scans at selected degrees through400 retain the intended noncorner profile; raw interior/corner profile tests fail their planning criteria. Literal localization effectivity projection≈1.33×10^14 is inferred, not rigorous.
+- **PROVED, codex-N01:** a precise tie-inclusive finite pairing order fails at n4. This rejects only that formulation; the broader pairing suggestion remains unresolved. The separate geometric screens in codex-06 are MEASURED.
+- Claude observations01/02 remain MEASURED; all six prescribed independent replays match exactly.
 
-Plan v2 is written after PR #12 merged ([plan](../topics/padua-argmax-alln-20261101/plan.md)). Part 3 development is handed to Codex ([handoff 02](../topics/padua-argmax-alln-20261101/handoffs/02-part3-work.md)).
+All record IDs have prefix `PD-T?argmax-alln-`, except N01 with `PD-N?`.
+[Report](../topics/padua-argmax-alln-20261101/report.md) links every proof, attempt and independent check.
 
-## What part 2 already gives toward the all-n argmax
+PD-T099 remains **OPEN**. P0 and a positive-gap compact form of P1 are closed. P2 primitive bounds, P3 corner neighborhoods, P4 interior, P5 strips and P6 effective threshold remain OPEN. The general-β alternating series and center-minimality proof remain unfinished.
 
-- **Corner value and asymptotics:** PD-T101 and PD-T156–159.
-- **Global argmax certified** for n = 3…7: PD-T162/166/169/174/177. The n = 8 global maximum is OPEN (PD-T181).
-- **The runner-up is identified and its gap proved in the limit:** the central vertical-edge envelope satisfies R_cen = Λ_c − g + o(1), with g ≈ 0.5485 (PD-T192).
-  - The mechanism is λ = majorant − triangle defect, together with phase localization (PD-T189–191). It is the edge case of this topic's reflected-lattice identity.
-
-## Results of this topic
-
-- **PD-T?argmax-alln-claude-01 (MEASURED)**, [record](../topics/padua-argmax-alln-20261101/theory/argmax-alln-claude-01-measured-observations.md).
-  - The four-copy majorant S ≥ λ_n is not maximal at the coset point: excess 1.4e-3 at n = 3, down to 9.2e-5 at n = 40.
-  - Interior gap about 1.75 (n = 8…48).
-- **PD-T?argmax-alln-claude-02 (MEASURED)**, [record](../topics/padua-argmax-alln-20261101/theory/argmax-alln-claude-02-measured-edge-profile.md).
-  - Vertical-edge gap is smallest at the centre: 0.557 at n = 96, consistent with g.
-  - The vertical-edge gap rises toward both ends.
-  - Horizontal-edge gap is about 1.
-  - Near-edge strips are dominated by edge values.
-  - n = 2 has no competitor in the scans, but is uncertified.
-- **Ideas:**
-  - IDEA?argmax-alln-claude-01 (majorant alone): REJECTED: failed, MEASURED; retained as a sub-tool.
-  - IDEA-02 (S − Δ in all regimes, plus effective n₀; a variant of IDEA-305) and IDEA-05 (global-max-only certifier): active.
-  - IDEA-03 (monotonicity) and IDEA-04 (generating-curve factorization): deferred.
-
-## Remaining obligations (plan v2 §4)
-
-- P0: certify n = 2.
-- P1: whole vertical edges.
-- P2: horizontal edges.
-- P3: corner neighbourhoods.
-- P4: interior.
-- P5: strips between edges and interior.
-- P6: effective threshold n₀ and certification of 8 ≤ n < n₀.
-
-The main risk is effectivity: the proved gap is only 0.5485, against non-effective remainders.
-
-## Next step
-
-`Codex (gpt-6.1-sol xhigh): Continue claude/padua-argmax-alln-20261101.` This runs the pre-registered tests T1–T5, then P0, P1/P2, the P6 estimate, P3 and P4, following handoff 02.
+Next: Claude Opus5.5 xhigh audit, then dispositions/PR preparation. No final IDs or shared scientific registries changed.

@@ -1,0 +1,11 @@
+{
+  "accepted": true,
+  "manifest_sha256": "5e33c53302932c956db97e402806a4d9a8d252be24160addef233486f75ea677",
+  "files": 188,
+  "generated_bytes": 2127404,
+  "largest_generated_file": 269669,
+  "json_files_parsed": 66,
+  "complete_certificates": 10,
+  "accepted_finite_receipts": 19,
+  "limitations": "Integrity/packaging check only; mathematical predicates are replayed by separate finite checkers and independent workers."
+}

@@ -1,0 +1,31 @@
+T3 n 16 done
+T3 n 64 done
+T3 n 256 done
+{
+  "status": "MEASURED",
+  "arithmetic": "float64",
+  "validation": [
+    {
+      "n": 2,
+      "max_abs_error": 4.440892098500626e-16
+    },
+    {
+      "n": 3,
+      "max_abs_error": 8.881784197001252e-16
+    },
+    {
+      "n": 4,
+      "max_abs_error": 1.3322676295501878e-15
+    },
+    {
+      "n": 8,
+      "max_abs_error": 4.440892098500626e-15
+    },
+    {
+      "n": 16,
+      "max_abs_error": 7.771561172376096e-15
+    }
+  ],
+  "test": "T3",
+  "seconds": 5.87150031500002
+}

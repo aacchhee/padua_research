@@ -1,0 +1,15 @@
+{
+  "accepted": true,
+  "all_supplied_bounds_verified": true,
+  "certificate_sha256": "92528fc9575407cfbb6c097a814327ebc8666a15fe736bc387044f6f6ff54f22",
+  "checker_sha256": "096e60475252ebeff871efd3b87eab8029fef0971c0f3b94bfd1ad83a71f6fa1",
+  "complete_partition": true,
+  "counts": {
+    "bound": 32,
+    "corner": 2,
+    "splits": 33
+  },
+  "format": "padua-part3-bernstein-check-v1",
+  "seconds": 41.20714624100003,
+  "verified_claim": "lambda_8 maximum occurs only at the two non-node corners"
+}

@@ -1,0 +1,32 @@
+{
+  "certificate_sha256": "9c008ae3f0a2774312d1eda32ac1e12dc7df3410f7ecefb8cff936bf5a7355fc",
+  "format": "padua-part3-general-controls-v1",
+  "n": 8,
+  "negative_cases_rejected": [
+    "missing_leaf",
+    "duplicate_leaf",
+    "forged_bound",
+    "forged_corner",
+    "changed_threshold",
+    "changed_pi_bracket",
+    "changed_source",
+    "changed_dependency",
+    "false_complete_flag",
+    "producer_self_approval",
+    "pending_leaf_overlap",
+    "ancestor_overlap",
+    "invalid_path_character",
+    "wrong_counter"
+  ],
+  "negative_count": 14,
+  "positive_complete_accepted": true,
+  "positive_partial_not_accepted": true,
+  "seconds": 5.459965728000043,
+  "source_hashes_unchanged": true,
+  "source_sha256": {
+    "finite_bernstein.py": "a3133c6c22a365380f6c2ab14f6d31f60153d0df902b325cfcfbeeccc1bed74f",
+    "finite_general.py": "b20b7f88ddfc0bbc92e68096063ef626664028c2a379c34d16dc9f84e17aa74a",
+    "finite_general_check.py": "f9d33648eb05f9539f32c7d8f9003ed61410c7acfff9095bf7ea665989ac8281",
+    "finite_general_controls.py": "c850f635736882de65134465279744c9e4990f08361824c8b13498e0136c030b"
+  }
+}

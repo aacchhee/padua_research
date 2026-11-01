@@ -48,3 +48,11 @@ Cheapest decisive tests and kill criteria are in [plan.md](plan.md) §5 and [ide
 | IDEA?argmax-alln-claude-05 (new) | variant of IDEA-290…302 | global maximum only, no counting |
 
 - No literature claim. The 1-D Lebesgue-function literature (plan v1 §5.4) is still unread and is assigned to part 3 before P3.
+
+## Part3 scope refresh — 2026-11-01, Codex
+
+This step develops the already gated candidates, with no priority or new-programme claim. The edge worker scanned complete registry headings/aliases and obstruction/disposition tables and read full shortlists IDEA206/303–305 plus their linked PD-T185–192 proofs. Finite work read IDEA290–302 and the exact degree-specific field/certificate dependencies. The supplementary Astra mathematical reviewer read the complete state/IDEAS.md and the relevant source proofs.
+
+The tensor Bernstein bound/corner certificate is retained as a sufficient global-max-only variant under Claude-05, distinct from completeness/counting machinery. The newly precise O-L/O-Lt/O-R/E-C formulations are separately retained in ideas-codex-fallback.md; N01 refutes only O-Lt, with the post-inspection origin disclosed. No ambiguous pairing suggestion is declared refuted. T2/T3 planning failures remain measured and do not reject the original argmax target.
+
+No 1-D literature theorem was transferred, and the missing source reading remains a prerequisite for such a transfer. Exact finite algebra and extension of the already local edge proof use only explicitly cited accepted local dependencies. Final dispositions and scope are in report.md; required independent Claude audit remains pending.

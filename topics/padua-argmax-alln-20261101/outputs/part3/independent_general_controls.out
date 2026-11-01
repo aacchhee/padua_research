@@ -1,0 +1,47 @@
+{
+  "positive": {
+    "n": 12,
+    "accepted": true,
+    "complete_partition": true,
+    "all_supplied_bounds_verified": true,
+    "counts": {
+      "splits": 53,
+      "corner": 2,
+      "bound": 52
+    },
+    "verified_claim": "only the two non-node corners attain the global maximum"
+  },
+  "source_sha256": {
+    "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/code/part3/finite_bernstein.py": "a3133c6c22a365380f6c2ab14f6d31f60153d0df902b325cfcfbeeccc1bed74f",
+    "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/code/part3/finite_general.py": "b20b7f88ddfc0bbc92e68096063ef626664028c2a379c34d16dc9f84e17aa74a",
+    "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/code/part3/finite_general_check.py": "f9d33648eb05f9539f32c7d8f9003ed61410c7acfff9095bf7ea665989ac8281",
+    "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/code/part3/finite_general_run.py": "fe1647086b2db5c47d75e24d386cc6456782bb6ea36bc25acd39b75bd4752511",
+    "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/code/part3/finite_n2_exact.py": "a5f00e6039d6ec76660cac90fb5720e0d6721348ed34c9e62775e1125d3e87c2",
+    "/workspace/padua-argmax-alln/topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-01-padua-corner.md": "ea59aa077a4d021fc69354383f69340f21d17d87d3a28c6ecaaf302cc763612c",
+    "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/outputs/part3/finite_n12_pilot.json.gz": "f44e2897e5b9432720293bf0a9243d6a6bada6a4e33642bc7924a2f65d635a8e"
+  },
+  "controls": [
+    {
+      "mutation": "missing_leaf",
+      "rejected": true,
+      "assertion": "uncovered box"
+    },
+    {
+      "mutation": "wrong_corner",
+      "rejected": true,
+      "assertion": ""
+    },
+    {
+      "mutation": "altered_threshold",
+      "rejected": true,
+      "assertion": ""
+    },
+    {
+      "mutation": "altered_cosine_seed",
+      "rejected": true,
+      "assertion": ""
+    }
+  ],
+  "source_unchanged": true,
+  "seconds": 10.487494038000023
+}
