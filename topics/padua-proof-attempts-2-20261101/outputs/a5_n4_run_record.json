@@ -1,0 +1,100 @@
+{
+  "format": "a5-n4-development-evidence-v1",
+  "rules_sha": "95ca473cc21b2db6a9a46c62e86495ebe94eb397",
+  "programme_sha": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+  "created_utc": "2026-11-01T10:02:54.304865+00:00",
+  "agent": "/root/a5_n4",
+  "model": "gpt-6.1-sol xhigh (inherited; runtime exact internal metadata unexposed)",
+  "environment": {
+    "python": "3.12.14",
+    "sympy": "1.14.0",
+    "precision_bits": 96,
+    "seed": null,
+    "arithmetic": "exact integer/rational polynomial coefficients and outward fixed dyadics; SymPy exact field algebra and univariate norm root isolation"
+  },
+  "files": [
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n4_boxes.py",
+      "bytes": 12170,
+      "sha256": "1d389bedef41bc08cf9cd008012870d9dc25eb4960c029020d235324b0afa4c0"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n4_boundary.py",
+      "bytes": 4921,
+      "sha256": "4cba7f4c8acb97127cc6ffa12a53bce88a093acfcb36b9ba1aba3b19dd9b70cb"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n4_global.py",
+      "bytes": 3346,
+      "sha256": "4dbba47a21a47137ea417a015895aa8c08538215827315da6a5f24caf0c98af3"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n4_schema.md",
+      "bytes": 8413,
+      "sha256": "eb11ef7928c9c2fc81c6cca597646dfe0c65c88a13a388b28baad3932e8c7ad3"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-08-quartic-finite-reduction.md",
+      "bytes": 11831,
+      "sha256": "2a9778d2c6f7fb279488670bc7b2e0caa170d1928d83871e8616216e264f3b40"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-09-spatial-certificate-correctness.md",
+      "bytes": 11365,
+      "sha256": "c57750f73956ccbecaae1e5902d2592f829f0ef77e6c27412ec3db81406bbe93"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-10-degree-four-maxima-count.md",
+      "bytes": 6361,
+      "sha256": "9f829b3d71d1c774cbdefdf91873f6e2257b6475aed9fb0857c25f1c3c55ba45"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-11-degree-four-global-argmax.md",
+      "bytes": 6743,
+      "sha256": "dbf345f28e57742e2860a4ce3f1eba9c458e2910e00d30eda07a92f836a6540d"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_n4_certificate.json.gz",
+      "bytes": 64360,
+      "sha256": "14a69a131b3c20416fd5521bd971efdadd4e3741f70546d0fc5f0d9f25a2cf61"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_n4_global.json",
+      "bytes": 4148,
+      "sha256": "7bc43988a28848037f0b10b4e6c59cadb9dffa772e939175853e3769f7f6003a"
+    }
+  ],
+  "diagnostics_not_proof_dependencies": [
+    {
+      "path": "/tmp/a5-n4-box-diagnostic.json",
+      "bytes": 33774,
+      "sha256": "cd068ed7ea00764562a89694e884bbdc79e700cd5486202de7f6d1115a16943f"
+    },
+    {
+      "path": "/tmp/a5-n4-box-diagnostic-2.json",
+      "bytes": 12876,
+      "sha256": "84714b48ed6fe725ce7cdafde996153e1cc762e1fe4d601ace67e0eacee59efe"
+    },
+    {
+      "path": "/tmp/a5-n4-spatial-2.json.gz",
+      "bytes": 1079278,
+      "sha256": "a60e352d5e55b60e24be0a6f58392e41876f6a5c98bbff79491e431bfc884537"
+    },
+    {
+      "path": "/tmp/a5-n4-boundary-1.json",
+      "bytes": 87934,
+      "sha256": "f1014f1e8518b58196feecfbdb1198bc73dfef6901ec8795e75ec4c8b9824a30"
+    },
+    {
+      "path": "/tmp/a5-n4-spatial-1-producer.py",
+      "bytes": 10224,
+      "sha256": "c1a85366ce7e0850c3b058cc9a727e71d152c1bd9a592eed7897578d237a3771"
+    }
+  ],
+  "cold_storage": {
+    "status": "PENDING_AC_DESTINATION",
+    "retention": "Diagnostic tmp outputs retained locally only; no remote retrieval or Windows bridge. Final essential artifacts are within repository size limits.",
+    "retrieval_limit": "/tmp is session-local, not durable cold storage."
+  },
+  "independent_status": "Final checker plus different-agent producer/global/checker executions pending; no computer-assisted proof claim yet."
+}
