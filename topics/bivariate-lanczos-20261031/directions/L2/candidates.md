@@ -192,3 +192,14 @@ Aliases: narrowed PRO-2D-J.
 - Closest entries: IDEA?…-209 (killed on the cubic checkerboard only), PD-T?…-207.
 - Separation criterion: identical mechanism; differs only by the scope restriction — by itself not a new mechanism (variant).
 - Kill criterion: to be pre-registered before a fresh test on node sets not used in R01–R03 (the R01–R03 data cannot confirm it: the restriction was chosen after seeing them). Disposition: deferred (no new rounds in this cycle; resume with fresh sets and a written quantitative definition of "non-clustered").
+
+---
+
+## Response to Codex audit-01 (2026-11-01T08:32:22+01:00; all text above unchanged; `response-audit-01.md`)
+
+Novelty gate: not applicable — no new candidate, mechanism or IDEA record is proposed in this response; the new theory records are a split-off proved bound (PD-T?…-208), a proof of an already registered open target (PD-T?…-209) and the registration as OPEN of a previously asserted universal claim (PD-T?…-210).
+
+- IDEA?…-210, deviation of the implementation from the pre-registered description (finding L2-F5): the pre-registration says "variant 'ld': the whole step (product, dots, update, normalisation) in x87 long double, vectors stored in double", but the implemented 'ld' normalised in double. The 'ld' variant was "Reported, no kill", so no verdict depended on it. The variant as pre-registered was run after the audit as 'ldn' (PD-N?…-204 (e)); IDEA?…-210's disposition (REJECTED: failed on P1/P2; P3 survives) is unchanged.
+- IDEA?…-209 (finding L2-F3): its registered kill threshold is L > 10√u; the campaign's semi-orthogonality definition is L ≤ √u (Conventions; IDEA?…-203). "Survives on 11 of 12" in the R02 dispositions refers to the registered kill threshold; strict semi-orthogonality holds on 10 of 12 (L-shape 1.41√u). The cubic-checkerboard kill and the failed secondary cost criterion (≤ 30%) are preserved.
+- IDEA?…-203 J-part / IDEA?…-204 (finding L2-F1): dispositions unchanged (REJECTED: failed, measured scope of PD-N?…-201); the universal reading "no reorthogonalization rule can repair the J-part" is not a disposition of these candidates and is registered as the OPEN target PD-T?…-210.
+- IDEA?…-207: dev, mirror and alt are staircase (C)-selections (PD-T?…-209); adapt is not. Dispositions unchanged.
