@@ -1,0 +1,112 @@
+{
+  "source_sha": "614709d4a60fb0c2593b05764e8d5aceda1be381",
+  "requested_model": "gpt-6-astra xhigh; inherited runtime metadata unexposed",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "exact_ritz_counterexample": {
+    "grid": "5x5 equispaced [-1,1]^2",
+    "total_degree": 2,
+    "node": [
+      0,
+      0
+    ],
+    "leverage": "27/175",
+    "residual_x_squared": "0",
+    "residual_y_squared": "0",
+    "exact_arithmetic": "SymPy Rational"
+  },
+  "primary_K3_rerun": [
+    {
+      "cls": "P",
+      "order": "far",
+      "method": "L3",
+      "delta": 9.843696027431587e-15
+    },
+    {
+      "cls": "P",
+      "order": "far",
+      "method": "L3c",
+      "delta": 7.22881853880892e-15
+    },
+    {
+      "cls": "P",
+      "order": "far",
+      "method": "LF",
+      "delta": 2.4424906541753444e-15
+    },
+    {
+      "cls": "Ppt",
+      "order": "far",
+      "method": "L3",
+      "delta": 0.942503263047894
+    },
+    {
+      "cls": "Ppt",
+      "order": "far",
+      "method": "L3c",
+      "delta": 0.2882305425808501
+    },
+    {
+      "cls": "Ppt",
+      "order": "far",
+      "method": "L4c",
+      "delta": 0.3040976754013293
+    },
+    {
+      "cls": "Ppt",
+      "order": "far",
+      "method": "LF",
+      "delta": 2.9976021664879227e-15
+    },
+    {
+      "cls": "Ppt",
+      "order": "near",
+      "method": "L3",
+      "delta": 0.9844161422133514
+    },
+    {
+      "cls": "Ppt",
+      "order": "near",
+      "method": "L3c",
+      "delta": 0.39787478650680885
+    },
+    {
+      "cls": "Ppt",
+      "order": "near",
+      "method": "L4c",
+      "delta": 0.4524952991385961
+    },
+    {
+      "cls": "Ppt",
+      "order": "near",
+      "method": "LF",
+      "delta": 5.5128204471082864e-14
+    }
+  ],
+  "independent_curve_commutator": [
+    {
+      "degree": 1,
+      "commutator_norm": 0.24999999999999986,
+      "predicted_error": 1.6653345369377348e-16
+    },
+    {
+      "degree": 2,
+      "commutator_norm": 0.3750000000000001,
+      "predicted_error": 1.6653345369377348e-16
+    },
+    {
+      "degree": 3,
+      "commutator_norm": 0.08333333333333309,
+      "predicted_error": 1.6653345369377348e-16
+    },
+    {
+      "degree": 4,
+      "commutator_norm": 0.24145467785901095,
+      "predicted_error": 1.6653345369377348e-16
+    }
+  ]
+}

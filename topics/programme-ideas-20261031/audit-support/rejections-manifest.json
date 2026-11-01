@@ -1,0 +1,155 @@
+{
+  "source_sha": "614709d4a60fb0c2593b05764e8d5aceda1be381",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60",
+      "bytes": 3159
+    },
+    {
+      "path": "agents/WORKFLOW.md",
+      "sha256": "17ee68fed1c8f3cd646c283587199e1f5a47c4a577fc40aeb8d24d6ab883195d",
+      "bytes": 18747
+    },
+    {
+      "path": "agents/codex/CODEX.md",
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+      "bytes": 4969
+    },
+    {
+      "path": "literature/INDEX.md",
+      "sha256": "d3015682fc3ca7d225db40f71dba400eca248ef47fd44b2127b5b18a8f532cae",
+      "bytes": 24874
+    },
+    {
+      "path": "state/IDEAS.md",
+      "sha256": "1686b5060fe185e1def687368e92b3b9c4bb929ead113cbc6f6c73e33798aea4",
+      "bytes": 49117
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/rejections-ah-replay.txt",
+      "sha256": "4e9283e8fd4a767a92a7da4191ee898a6ac5b61a678f8cb3e6cd0a63fcdd60ca",
+      "bytes": 4575
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/rejections-check.json",
+      "sha256": "1b567a455dfd9396f65f114a292babc78f16fa7cbfc014ca0b4d9d96e0e8478c",
+      "bytes": 2338
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/rejections-check.py",
+      "sha256": "25b5c597d1253ea4bc71c75ee58357834546a64b902d086d507b4427f2f5095f",
+      "bytes": 3581
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/rejections-pg-replay.txt",
+      "sha256": "64176da6912b426c9924317b706e10d9a2436c6618fe6043d058db7b4c890b68",
+      "bytes": 4315
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/adversarial-gen1-2.md",
+      "sha256": "0c330c0e5e031b5c63aa0a3489de66402e7106a0175e44ff6d780bf2b3ca39bc",
+      "bytes": 38317
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/adversarial-gen1-3.md",
+      "sha256": "33e335c9ebb2b7a0d7951b07973654dc68ba323a0412b5d4e6a251b83fefa277",
+      "bytes": 32289
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/adversarial-gen3-1.md",
+      "sha256": "1593d3abe8884c97f5efeea6cc5c7cddf3982212e4d372fd439bedde6051c754",
+      "bytes": 31285
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/adversarial-gen3-3.md",
+      "sha256": "091c57a58f758dfcd0ed84a491291f391e219ff9b2dcab87650174dd04226e67",
+      "bytes": 31108
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/adversarial-gen4-1.md",
+      "sha256": "fd344b36e220555c3af24f4d1a62a5c5dfccffffb324acba19a708631e2537f1",
+      "bytes": 30261
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/adv/gen1-2/ah_breakdown_exact.py",
+      "sha256": "07e2e1b94a9d5de700396af0f7b20cdc285c05eaaa30a61e7758024e263a7ecc",
+      "bytes": 5219
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/adv/gen1-2/qs_rank.py",
+      "sha256": "1b9fbae76a5e80d51c1220a5fe9986aba27c5781060ee4441a00bccc0c54ad18",
+      "bytes": 1287
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/adv/gen1-2/sobolev_adv.py",
+      "sha256": "2a8f955e252e741d8bbece63bce65b0fda1aefb13aae86087ae68128694950c0",
+      "bytes": 9871
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/adv/gen3-3/bandwidth_pg_probe.py",
+      "sha256": "17c778e9a866c3b44ff81a8d8cf784c35f3276c48a0b281d7d6e2c67ec0b11ee",
+      "bytes": 19848
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/orf2d.py",
+      "sha256": "9e2197347a9125cc9f75178021c59d835bc3c85b7b63ef47d5e0213dc2287525",
+      "bytes": 19958
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/run_T1_T3.py",
+      "sha256": "561d16b96cbc69d7bd59cda7c44be6a09850e6839c06fdbbf718d410128d2439",
+      "bytes": 7125
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/run_T1b.py",
+      "sha256": "b3b98ad02006dc8ad1ed6a267fe38bb49914b7cef529df52c38f0eb85f070c0b",
+      "bytes": 5483
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/run_T2.py",
+      "sha256": "7127d077f6a3b7cb0b469bfe6dcc8d3c1e1c4f9cd19ff32efcc20a095dca1369",
+      "bytes": 7379
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/run_T2c.py",
+      "sha256": "4275b823cb294a5269ea7448bc4217d65b74db316e0cae9c2b0504ac2bc1bbee",
+      "bytes": 4789
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/window_exact.py",
+      "sha256": "abf066a0fe35355703586ad02701e3f3cfd55690e16a1f3da5b6749d292524c0",
+      "bytes": 4546
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/decisive-gen1-3.md",
+      "sha256": "35c6051b33ae0434614cadcc271af6451c2dcb1e332082cbe03068b69c504e1c",
+      "bytes": 29248
+    },
+    {
+      "path": "topics/programme-ideas-20261031/gate-rejected.md",
+      "sha256": "d96a65ca6cfde850711fc63cf22906a4f9bef8bdfee52406ecc006053a413142",
+      "bytes": 46154
+    },
+    {
+      "path": "topics/programme-ideas-20261031/gate.md",
+      "sha256": "17928720806d06734d068cd5d332d1d48bbcf8e66ee1328a422936bc6182aa24",
+      "bytes": 52827
+    },
+    {
+      "path": "topics/programme-ideas-20261031/ideas/candidates.md",
+      "sha256": "bac7911168fc2de75c4b2e732bd8fad7bd682ebe442f10c8a696ea2057eda7c7",
+      "bytes": 116687
+    },
+    {
+      "path": "topics/programme-ideas-20261031/report.md",
+      "sha256": "233faea0990439e132290d55e45d6cb3510533e62d4e60696f455ff5dd6df5a1",
+      "bytes": 48451
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-support/rejections-review.md",
+      "sha256": "6a020aa5fa651a0c4dcaf9605c5fd7f97d0eb6e7a5bef0f0fbb817387ca2d370",
+      "bytes": 9349
+    }
+  ]
+}
