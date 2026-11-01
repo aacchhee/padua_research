@@ -1,0 +1,28 @@
+{
+  "scope": "Read-only verification of the integration already performed by AC; no merge or history rewrite by this task.",
+  "github": {
+    "url": "https://github.com/aacchhee/padua_research/pull/3",
+    "state": "closed",
+    "merged": true,
+    "merged_at_utc": "2026-10-31T22:20:47Z",
+    "merged_at_client": "2026-10-31T23:20:47+01:00",
+    "merge_commit_sha": "07c5f5465d6de306aa81dbe8ca1f615295163864",
+    "ready_head_sha": "8ee04f4e5db46dd25fe5752ce605dde27098aae6"
+  },
+  "git": {
+    "main_at_verification": "07c5f5465d6de306aa81dbe8ca1f615295163864",
+    "parents": [
+      "08fafe62d9798385dfafaacc9a41344272737e68",
+      "8ee04f4e5db46dd25fe5752ce605dde27098aae6"
+    ],
+    "parent_count": 2,
+    "observed_integration": "two-parent merge commit",
+    "merge_tree": "88108c08d0e4cd0584b262b9ac088ca592757896",
+    "ready_head_tree": "88108c08d0e4cd0584b262b9ac088ca592757896",
+    "ready_head_is_ancestor_of_main": true,
+    "tree_matches_ready_head": true
+  },
+  "rules_read_at": "8ee04f4e5db46dd25fe5752ce605dde27098aae6",
+  "rules_same_on_main": true,
+  "scope_exclusion": "No new proof, source statement, status, candidate, allocation or numerical experiment."
+}

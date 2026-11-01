@@ -1,0 +1,1211 @@
+{
+  "metadata": {
+    "dependency_sha256": "3adecb8592f7a944a333431ff7f665ba440627469dc446944097664124c1fc70",
+    "independent_rerun": "pending",
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "rules_source_sha": "e949ef06895acd5463cdf8df7e0e5f795218f70f",
+    "source_sha256": "7f4b7107ce9023030b2091dc44b08672d405fc8f63d5b8876271bc7481e12952",
+    "status": "MEASURED float64/adaptive lower samples; no asymptotic fit",
+    "thread_env": {
+      "MKL_NUM_THREADS": "2",
+      "OMP_NUM_THREADS": "2",
+      "OPENBLAS_NUM_THREADS": "2"
+    }
+  },
+  "rectangle": {
+    "cross_residue": 544,
+    "determinants": [
+      [
+        469,
+        520
+      ],
+      [
+        14,
+        277
+      ]
+    ],
+    "n": 3,
+    "p": 1009,
+    "phase": 0,
+    "seed": 2026103103,
+    "x_lists": [
+      [
+        692,
+        619,
+        116,
+        299
+      ],
+      [
+        418,
+        202,
+        907,
+        646
+      ]
+    ],
+    "y_lists": [
+      [
+        683,
+        167,
+        402,
+        988,
+        776
+      ],
+      [
+        873,
+        563,
+        295,
+        641,
+        484
+      ]
+    ]
+  },
+  "rows": [
+    {
+      "condition_2": 4.106760831012492,
+      "family": "mod4",
+      "inverse_residual_inf": 3.3306690738754696e-16,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -1.0,
+        -1.0
+      ],
+      "maximizer_angles": [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "n": 1,
+      "numerical_rank": 3,
+      "phase": 0,
+      "sample_count": 6822,
+      "sampled_lebesgue_max": 5.000000000000001,
+      "svd_tolerance": 1.4750332577878846e-15,
+      "target": 3,
+      "wall_seconds": 0.026343320000023596
+    },
+    {
+      "condition_2": 1.414213562373095,
+      "family": "padua",
+      "inverse_residual_inf": 5.551115123125783e-17,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -1.0,
+        1.0
+      ],
+      "maximizer_angles": [
+        3.141592653589793,
+        0.0
+      ],
+      "n": 1,
+      "numerical_rank": 3,
+      "phase": null,
+      "sample_count": 6806,
+      "sampled_lebesgue_max": 2.0,
+      "svd_tolerance": 1.3322676295501877e-15,
+      "target": 3,
+      "wall_seconds": 0.0112423549999221
+    },
+    {
+      "condition_2": 2.0000000000000004,
+      "family": "lower_leja",
+      "inverse_residual_inf": 0.0,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "leja_candidate_indices": [
+        0,
+        4
+      ],
+      "maximizer": [
+        -1.0,
+        -1.0
+      ],
+      "maximizer_angles": [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "n": 1,
+      "numerical_rank": 3,
+      "phase": null,
+      "sample_count": 6827,
+      "sampled_lebesgue_max": 3.0,
+      "svd_tolerance": 1.3322676295501878e-15,
+      "target": 3,
+      "wall_seconds": 0.009312119000014718
+    },
+    {
+      "condition_2": 6.833658688542648,
+      "family": "mod4",
+      "inverse_residual_inf": 1.2559397966072083e-15,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -1.0,
+        -1.0
+      ],
+      "maximizer_angles": [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "n": 3,
+      "numerical_rank": 10,
+      "phase": 0,
+      "sample_count": 6827,
+      "sampled_lebesgue_max": 12.09802788821207,
+      "svd_tolerance": 9.077075667251571e-15,
+      "target": 10,
+      "wall_seconds": 0.006768621999981406
+    },
+    {
+      "condition_2": 2.716937046456898,
+      "family": "padua",
+      "inverse_residual_inf": 1.0894063429134349e-15,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -1.0,
+        -1.0
+      ],
+      "maximizer_angles": [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "n": 3,
+      "numerical_rank": 10,
+      "phase": null,
+      "sample_count": 6806,
+      "sampled_lebesgue_max": 3.7761423749153975,
+      "svd_tolerance": 8.531684734721092e-15,
+      "target": 10,
+      "wall_seconds": 0.006008658000155265
+    },
+    {
+      "condition_2": 6.015313830053838,
+      "family": "lower_leja",
+      "inverse_residual_inf": 5.187419758963281e-16,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "leja_candidate_indices": [
+        0,
+        12,
+        6,
+        8
+      ],
+      "maximizer": [
+        0.4992913173710471,
+        0.4992913173710471
+      ],
+      "maximizer_angles": [
+        1.0480156742834699,
+        1.0480156742834699
+      ],
+      "n": 3,
+      "numerical_rank": 10,
+      "phase": null,
+      "sample_count": 7013,
+      "sampled_lebesgue_max": 5.7499894574186285,
+      "svd_tolerance": 9.52582273266183e-15,
+      "target": 10,
+      "wall_seconds": 0.005944683000052464
+    },
+    {
+      "condition_2": 8.332169493312685,
+      "family": "mod4",
+      "inverse_residual_inf": 4.709774237277031e-15,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -1.0,
+        -1.0
+      ],
+      "maximizer_angles": [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "n": 5,
+      "numerical_rank": 21,
+      "phase": 0,
+      "sample_count": 6827,
+      "sampled_lebesgue_max": 18.57918277980238,
+      "svd_tolerance": 2.844310165425321e-14,
+      "target": 21,
+      "wall_seconds": 0.010710864999964542
+    },
+    {
+      "condition_2": 2.86721768814819,
+      "family": "padua",
+      "inverse_residual_inf": 3.2057689836051395e-15,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -1.0,
+        -1.0
+      ],
+      "maximizer_angles": [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "n": 5,
+      "numerical_rank": 21,
+      "phase": null,
+      "sample_count": 6806,
+      "sampled_lebesgue_max": 4.947805749036595,
+      "svd_tolerance": 2.5890224795059274e-14,
+      "target": 21,
+      "wall_seconds": 0.006862316999786344
+    },
+    {
+      "condition_2": 8.322394121912597,
+      "family": "lower_leja",
+      "inverse_residual_inf": 1.675624912867917e-15,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "leja_candidate_indices": [
+        0,
+        20,
+        10,
+        14,
+        5,
+        8
+      ],
+      "maximizer": [
+        0.3939920400610481,
+        0.3939920400610483
+      ],
+      "maximizer_angles": [
+        1.1658253987930873,
+        1.165825398793087
+      ],
+      "n": 5,
+      "numerical_rank": 21,
+      "phase": null,
+      "sample_count": 6947,
+      "sampled_lebesgue_max": 10.309844217755877,
+      "svd_tolerance": 3.024287256545628e-14,
+      "target": 21,
+      "wall_seconds": 0.007461977000048137
+    },
+    {
+      "condition_2": 9.08351520736185,
+      "family": "mod4",
+      "inverse_residual_inf": 6.761084747619606e-15,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -1.0,
+        -1.0
+      ],
+      "maximizer_angles": [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "n": 7,
+      "numerical_rank": 36,
+      "phase": 0,
+      "sample_count": 6827,
+      "sampled_lebesgue_max": 24.277409697121815,
+      "svd_tolerance": 6.266252373864917e-14,
+      "target": 36,
+      "wall_seconds": 0.008443749999969441
+    },
+    {
+      "condition_2": 2.7244101573840225,
+      "family": "padua",
+      "inverse_residual_inf": 5.257946855685702e-15,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -1.0,
+        1.0
+      ],
+      "maximizer_angles": [
+        3.141592653589793,
+        0.0
+      ],
+      "n": 7,
+      "numerical_rank": 36,
+      "phase": null,
+      "sample_count": 6806,
+      "sampled_lebesgue_max": 5.835657710636255,
+      "svd_tolerance": 5.761880369447081e-14,
+      "target": 36,
+      "wall_seconds": 0.00912039999980152
+    },
+    {
+      "condition_2": 12.302678802386424,
+      "family": "lower_leja",
+      "inverse_residual_inf": 4.331323080764524e-15,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "leja_candidate_indices": [
+        0,
+        28,
+        14,
+        19,
+        8,
+        23,
+        5,
+        11
+      ],
+      "maximizer": [
+        0.3113503051624322,
+        0.3113503051624322
+      ],
+      "maximizer_angles": [
+        1.2541826921753,
+        1.2541826921753
+      ],
+      "n": 7,
+      "numerical_rank": 36,
+      "phase": null,
+      "sample_count": 6903,
+      "sampled_lebesgue_max": 16.100777435238733,
+      "svd_tolerance": 6.71172658965343e-14,
+      "target": 36,
+      "wall_seconds": 0.00824918900002558
+    },
+    {
+      "condition_2": 10.127819872366832,
+      "family": "mod4",
+      "inverse_residual_inf": 2.2416530437441295e-14,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -1.0,
+        -1.0
+      ],
+      "maximizer_angles": [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "n": 11,
+      "numerical_rank": 78,
+      "phase": 0,
+      "sample_count": 6827,
+      "sampled_lebesgue_max": 34.27242918142881,
+      "svd_tolerance": 1.983484162470195e-13,
+      "target": 78,
+      "wall_seconds": 0.017181471999947462
+    },
+    {
+      "condition_2": 2.56866858879015,
+      "family": "padua",
+      "inverse_residual_inf": 2.176687649568798e-14,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -1.0,
+        -1.0
+      ],
+      "maximizer_angles": [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "n": 11,
+      "numerical_rank": 78,
+      "phase": null,
+      "sample_count": 6806,
+      "sampled_lebesgue_max": 7.172889209685113,
+      "svd_tolerance": 1.8071111902449374e-13,
+      "target": 78,
+      "wall_seconds": 0.02716964299997926
+    },
+    {
+      "condition_2": 18.24646867410489,
+      "family": "lower_leja",
+      "inverse_residual_inf": 1.605494623180465e-14,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "leja_candidate_indices": [
+        0,
+        44,
+        22,
+        31,
+        12,
+        36,
+        7,
+        18,
+        27,
+        39,
+        4,
+        15
+      ],
+      "maximizer": [
+        0.4757201610144368,
+        -0.2714404498650742
+      ],
+      "maximizer_angles": [
+        1.0750137361502574,
+        1.8456856839840035
+      ],
+      "n": 11,
+      "numerical_rank": 78,
+      "phase": null,
+      "sample_count": 7023,
+      "sampled_lebesgue_max": 33.669194911682084,
+      "svd_tolerance": 2.1759990741058405e-13,
+      "target": 78,
+      "wall_seconds": 0.01794436099999075
+    },
+    {
+      "condition_2": 10.801514744504829,
+      "family": "mod4",
+      "inverse_residual_inf": 5.045792517575823e-14,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -1.0,
+        -1.0
+      ],
+      "maximizer_angles": [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "n": 15,
+      "numerical_rank": 136,
+      "phase": 0,
+      "sample_count": 6827,
+      "sampled_lebesgue_max": 43.05197961115147,
+      "svd_tolerance": 4.52996262527295e-13,
+      "target": 136,
+      "wall_seconds": 0.03294579899989003
+    },
+    {
+      "condition_2": 2.481801495334549,
+      "family": "padua",
+      "inverse_residual_inf": 3.9930732331772134e-14,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -1.0,
+        1.0
+      ],
+      "maximizer_angles": [
+        3.141592653589793,
+        0.0
+      ],
+      "n": 15,
+      "numerical_rank": 136,
+      "phase": null,
+      "sample_count": 6795,
+      "sampled_lebesgue_max": 8.186632075912858,
+      "svd_tolerance": 4.104939900557501e-13,
+      "target": 136,
+      "wall_seconds": 0.03197510999984843
+    },
+    {
+      "condition_2": 25.503922694634294,
+      "family": "lower_leja",
+      "inverse_residual_inf": 4.337437562104656e-14,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "leja_candidate_indices": [
+        0,
+        60,
+        30,
+        42,
+        16,
+        49,
+        22,
+        9,
+        36,
+        54,
+        26,
+        5,
+        45,
+        13,
+        33,
+        52
+      ],
+      "maximizer": [
+        -0.39624669589146516,
+        -0.39624669589146516
+      ],
+      "maximizer_angles": [
+        1.9782216240573225,
+        1.9782216240573225
+      ],
+      "n": 15,
+      "numerical_rank": 136,
+      "phase": null,
+      "sample_count": 7060,
+      "sampled_lebesgue_max": 37.79453196945974,
+      "svd_tolerance": 5.123596126499749e-13,
+      "target": 136,
+      "wall_seconds": 0.03127492299995538
+    },
+    {
+      "condition_2": 11.715072770493125,
+      "family": "mod4",
+      "inverse_residual_inf": 1.8864844717825582e-13,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -1.0,
+        -1.0
+      ],
+      "maximizer_angles": [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "n": 23,
+      "numerical_rank": 300,
+      "phase": 0,
+      "sample_count": 6827,
+      "sampled_lebesgue_max": 58.29469665823755,
+      "svd_tolerance": 1.4649737444215932e-12,
+      "target": 300,
+      "wall_seconds": 0.0803341310001997
+    },
+    {
+      "condition_2": 2.3837794972508624,
+      "family": "padua",
+      "inverse_residual_inf": 1.683098733854736e-13,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -1.0,
+        -1.0
+      ],
+      "maximizer_angles": [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "n": 23,
+      "numerical_rank": 300,
+      "phase": null,
+      "sample_count": 6816,
+      "sampled_lebesgue_max": 9.712414144828962,
+      "svd_tolerance": 1.3190222018487925e-12,
+      "target": 300,
+      "wall_seconds": 0.07212786000013693
+    },
+    {
+      "condition_2": 28.27228613086458,
+      "family": "lower_leja",
+      "inverse_residual_inf": 2.2185921723099118e-13,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "leja_candidate_indices": [
+        0,
+        92,
+        46,
+        64,
+        25,
+        75,
+        15,
+        37,
+        56,
+        82,
+        9,
+        31,
+        69,
+        51,
+        20,
+        86,
+        41,
+        5,
+        60,
+        78,
+        28,
+        48,
+        12,
+        72
+      ],
+      "maximizer": [
+        0.5737998040863486,
+        0.5737998040863483
+      ],
+      "maximizer_angles": [
+        0.959658380901257,
+        0.9596583809012572
+      ],
+      "n": 23,
+      "numerical_rank": 300,
+      "phase": null,
+      "sample_count": 7095,
+      "sampled_lebesgue_max": 70.17581075387679,
+      "svd_tolerance": 1.6875793157565628e-12,
+      "target": 300,
+      "wall_seconds": 0.07796467999992274
+    },
+    {
+      "condition_2": 12.35407792682573,
+      "family": "mod4",
+      "inverse_residual_inf": 4.669453232820746e-13,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -1.0,
+        -1.0
+      ],
+      "maximizer_angles": [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "n": 31,
+      "numerical_rank": 528,
+      "phase": 0,
+      "sample_count": 6817,
+      "sampled_lebesgue_max": 71.50707037942783,
+      "svd_tolerance": 3.3884418105793233e-12,
+      "target": 528,
+      "wall_seconds": 0.17090094099989983
+    },
+    {
+      "condition_2": 2.3276945353609255,
+      "family": "padua",
+      "inverse_residual_inf": 4.0224344783289755e-13,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -1.0,
+        -1.0
+      ],
+      "maximizer_angles": [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "n": 31,
+      "numerical_rank": 528,
+      "phase": null,
+      "sample_count": 6816,
+      "sampled_lebesgue_max": 10.866543940950251,
+      "svd_tolerance": 3.038861993976447e-12,
+      "target": 528,
+      "wall_seconds": 0.14490236699998604
+    },
+    {
+      "condition_2": 39.93510942747799,
+      "family": "lower_leja",
+      "inverse_residual_inf": 6.839731443369977e-13,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "leja_candidate_indices": [
+        0,
+        124,
+        62,
+        86,
+        34,
+        101,
+        20,
+        50,
+        75,
+        110,
+        12,
+        42,
+        93,
+        68,
+        27,
+        116,
+        56,
+        7,
+        81,
+        105,
+        38,
+        71,
+        16,
+        97,
+        46,
+        119,
+        24,
+        59,
+        89,
+        31,
+        78,
+        4
+      ],
+      "maximizer": [
+        0.8231983057806959,
+        0.8231983057806959
+      ],
+      "maximizer_angles": [
+        0.6037748381117883,
+        0.6037748381117883
+      ],
+      "n": 31,
+      "numerical_rank": 528,
+      "phase": null,
+      "sample_count": 7117,
+      "sampled_lebesgue_max": 99.348609973861,
+      "svd_tolerance": 3.904993471447915e-12,
+      "target": 528,
+      "wall_seconds": 0.1560409480000544
+    },
+    {
+      "condition_2": 3.9138054269700153,
+      "family": "mod4",
+      "inverse_residual_inf": 8.708311849403572e-16,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        0.8328306810800937,
+        -1.0
+      ],
+      "maximizer_angles": [
+        0.5865942532874692,
+        3.141592653589793
+      ],
+      "n": 2,
+      "numerical_rank": 6,
+      "phase": 1,
+      "sample_count": 6816,
+      "sampled_lebesgue_max": 4.781249715758305,
+      "svd_tolerance": 3.939774784982262e-15,
+      "target": 6,
+      "wall_seconds": 0.010036924999894836
+    },
+    {
+      "condition_2": 2.1213203435596437,
+      "family": "padua",
+      "inverse_residual_inf": 6.661338147750939e-16,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        1.0,
+        -1.0
+      ],
+      "maximizer_angles": [
+        0.0,
+        3.141592653589793
+      ],
+      "n": 2,
+      "numerical_rank": 6,
+      "phase": null,
+      "sample_count": 6806,
+      "sampled_lebesgue_max": 3.000000000000001,
+      "svd_tolerance": 3.996802888650564e-15,
+      "target": 6,
+      "wall_seconds": 0.01095344300006218
+    },
+    {
+      "condition_2": 3.6593134776069474,
+      "family": "lower_leja",
+      "inverse_residual_inf": 1.1438545341260424e-16,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "leja_candidate_indices": [
+        0,
+        8,
+        4
+      ],
+      "maximizer": [
+        -0.1418731173322531,
+        -0.1418731173322531
+      ],
+      "maximizer_angles": [
+        1.713149743910684,
+        1.713149743910684
+      ],
+      "n": 2,
+      "numerical_rank": 6,
+      "phase": null,
+      "sample_count": 6903,
+      "sampled_lebesgue_max": 3.5714251823567538,
+      "svd_tolerance": 4.7759768891703516e-15,
+      "target": 6,
+      "wall_seconds": 0.010068208000120649
+    },
+    {
+      "condition_2": 6.715294740337839,
+      "family": "mod4",
+      "inverse_residual_inf": 5.162103383637984e-15,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -0.7761151985077275,
+        -1.0
+      ],
+      "maximizer_angles": [
+        2.4592779991382594,
+        3.141592653589793
+      ],
+      "n": 6,
+      "numerical_rank": 28,
+      "phase": 1,
+      "sample_count": 6893,
+      "sampled_lebesgue_max": 12.884997598872904,
+      "svd_tolerance": 4.060731316591947e-14,
+      "target": 28,
+      "wall_seconds": 0.011756214999877557
+    },
+    {
+      "condition_2": 2.7985902484977307,
+      "family": "padua",
+      "inverse_residual_inf": 3.958638972179074e-15,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        1.0,
+        -1.0
+      ],
+      "maximizer_angles": [
+        0.0,
+        3.141592653589793
+      ],
+      "n": 6,
+      "numerical_rank": 28,
+      "phase": null,
+      "sample_count": 6797,
+      "sampled_lebesgue_max": 5.417499430143906,
+      "svd_tolerance": 3.9867336796436556e-14,
+      "target": 28,
+      "wall_seconds": 0.010631065999859857
+    },
+    {
+      "condition_2": 11.632135151972268,
+      "family": "lower_leja",
+      "inverse_residual_inf": 4.431044929429159e-15,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "leja_candidate_indices": [
+        0,
+        24,
+        12,
+        17,
+        7,
+        20,
+        4
+      ],
+      "maximizer": [
+        -0.46706195401947637,
+        0.8118925199965048
+      ],
+      "maximizer_angles": [
+        2.0567614403970675,
+        0.6234097921967245
+      ],
+      "n": 6,
+      "numerical_rank": 28,
+      "phase": null,
+      "sample_count": 7003,
+      "sampled_lebesgue_max": 12.850102357083882,
+      "svd_tolerance": 4.878120745078102e-14,
+      "target": 28,
+      "wall_seconds": 0.011150606000001062
+    },
+    {
+      "condition_2": 7.994626150404811,
+      "family": "mod4",
+      "inverse_residual_inf": 2.0067010119556583e-14,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        0.03680722294135899,
+        -1.0
+      ],
+      "maximizer_angles": [
+        1.533980787885641,
+        3.1415926535897927
+      ],
+      "n": 10,
+      "numerical_rank": 66,
+      "phase": 1,
+      "sample_count": 6855,
+      "sampled_lebesgue_max": 19.485386681445934,
+      "svd_tolerance": 1.464453839175791e-13,
+      "target": 66,
+      "wall_seconds": 0.013754978999941159
+    },
+    {
+      "condition_2": 2.603896684603695,
+      "family": "padua",
+      "inverse_residual_inf": 1.2350363787216878e-14,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        1.0,
+        -1.0
+      ],
+      "maximizer_angles": [
+        0.0,
+        3.141592653589793
+      ],
+      "n": 10,
+      "numerical_rank": 66,
+      "phase": null,
+      "sample_count": 6806,
+      "sampled_lebesgue_max": 6.8771001625327886,
+      "svd_tolerance": 1.4150091843713709e-13,
+      "target": 66,
+      "wall_seconds": 0.013155131999837977
+    },
+    {
+      "condition_2": 18.062936023550904,
+      "family": "lower_leja",
+      "inverse_residual_inf": 1.2548487711079293e-14,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "leja_candidate_indices": [
+        0,
+        40,
+        20,
+        28,
+        11,
+        33,
+        7,
+        16,
+        24,
+        36,
+        4
+      ],
+      "maximizer": [
+        0.40299628736386,
+        0.40299628736386023
+      ],
+      "maximizer_angles": [
+        1.1560079217506192,
+        1.156007921750619
+      ],
+      "n": 10,
+      "numerical_rank": 66,
+      "phase": null,
+      "sample_count": 7023,
+      "sampled_lebesgue_max": 22.9377730580949,
+      "svd_tolerance": 1.7713799482948902e-13,
+      "target": 66,
+      "wall_seconds": 0.013313142000015432
+    },
+    {
+      "condition_2": 8.691896964703862,
+      "family": "mod4",
+      "inverse_residual_inf": 4.187147454931192e-14,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -0.4074838995026572,
+        -1.0
+      ],
+      "maximizer_angles": [
+        1.9904934703604076,
+        3.1415926535897927
+      ],
+      "n": 14,
+      "numerical_rank": 120,
+      "phase": 1,
+      "sample_count": 6890,
+      "sampled_lebesgue_max": 25.942365869539856,
+      "svd_tolerance": 3.5717221770731864e-13,
+      "target": 120,
+      "wall_seconds": 0.025243689000035374
+    },
+    {
+      "condition_2": 2.5031352147235886,
+      "family": "padua",
+      "inverse_residual_inf": 3.3841906624915416e-14,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        1.0,
+        -1.0
+      ],
+      "maximizer_angles": [
+        0.0,
+        3.141592653589793
+      ],
+      "n": 14,
+      "numerical_rank": 120,
+      "phase": null,
+      "sample_count": 6795,
+      "sampled_lebesgue_max": 7.954347399068546,
+      "svd_tolerance": 3.4172002968374194e-13,
+      "target": 120,
+      "wall_seconds": 0.01876320599990322
+    },
+    {
+      "condition_2": 19.738044964202967,
+      "family": "lower_leja",
+      "inverse_residual_inf": 3.0124337781486296e-14,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "leja_candidate_indices": [
+        0,
+        56,
+        28,
+        39,
+        15,
+        46,
+        21,
+        8,
+        34,
+        50,
+        12,
+        25,
+        42,
+        5,
+        31
+      ],
+      "maximizer": [
+        -0.2047096027093796,
+        -0.2047096027093796
+      ],
+      "maximizer_angles": [
+        1.7769633446867268,
+        1.7769633446867268
+      ],
+      "n": 14,
+      "numerical_rank": 120,
+      "phase": null,
+      "sample_count": 6998,
+      "sampled_lebesgue_max": 31.646423744593793,
+      "svd_tolerance": 4.3288768457090126e-13,
+      "target": 120,
+      "wall_seconds": 0.021681451999938872
+    },
+    {
+      "condition_2": 9.64483952404366,
+      "family": "mod4",
+      "inverse_residual_inf": 1.5129591627006165e-13,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        0.5245896826784691,
+        1.0
+      ],
+      "maximizer_angles": [
+        1.0185632431560656,
+        0.0
+      ],
+      "n": 22,
+      "numerical_rank": 276,
+      "phase": 1,
+      "sample_count": 6843,
+      "sampled_lebesgue_max": 35.74523179193332,
+      "svd_tolerance": 1.2347045942971469e-12,
+      "target": 276,
+      "wall_seconds": 0.050626275000013266
+    },
+    {
+      "condition_2": 2.3945636787900795,
+      "family": "padua",
+      "inverse_residual_inf": 1.4179167985353538e-13,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -1.0,
+        -1.0
+      ],
+      "maximizer_angles": [
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "n": 22,
+      "numerical_rank": 276,
+      "phase": null,
+      "sample_count": 6807,
+      "sampled_lebesgue_max": 9.546780762620472,
+      "svd_tolerance": 1.1670943408816286e-12,
+      "target": 276,
+      "wall_seconds": 0.04657681699995919
+    },
+    {
+      "condition_2": 31.665092746912745,
+      "family": "lower_leja",
+      "inverse_residual_inf": 1.1385597779763144e-13,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "leja_candidate_indices": [
+        0,
+        88,
+        44,
+        61,
+        24,
+        72,
+        14,
+        35,
+        53,
+        79,
+        8,
+        30,
+        66,
+        48,
+        19,
+        83,
+        39,
+        57,
+        5,
+        75,
+        27,
+        69,
+        11
+      ],
+      "maximizer": [
+        0.8259753325248732,
+        -0.8997482840522215
+      ],
+      "maximizer_angles": [
+        0.5988660995905544,
+        2.6899887096362605
+      ],
+      "n": 22,
+      "numerical_rank": 276,
+      "phase": null,
+      "sample_count": 7086,
+      "sampled_lebesgue_max": 54.37213746926031,
+      "svd_tolerance": 1.5056516164912762e-12,
+      "target": 276,
+      "wall_seconds": 0.05074426299984225
+    },
+    {
+      "condition_2": 10.30754319617444,
+      "family": "mod4",
+      "inverse_residual_inf": 3.7034965887213986e-13,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        -0.5758081914178453,
+        -1.0
+      ],
+      "maximizer_angles": [
+        2.184388641949153,
+        3.141592653589793
+      ],
+      "n": 30,
+      "numerical_rank": 496,
+      "phase": 1,
+      "sample_count": 6884,
+      "sampled_lebesgue_max": 44.00149185241785,
+      "svd_tolerance": 2.954468671967531e-12,
+      "target": 496,
+      "wall_seconds": 0.14023711400000138
+    },
+    {
+      "condition_2": 2.3344245723633934,
+      "family": "padua",
+      "inverse_residual_inf": 3.735527732544883e-13,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "maximizer": [
+        1.0,
+        -1.0
+      ],
+      "maximizer_angles": [
+        0.0,
+        3.141592653589793
+      ],
+      "n": 30,
+      "numerical_rank": 496,
+      "phase": null,
+      "sample_count": 6807,
+      "sampled_lebesgue_max": 10.736193780658436,
+      "svd_tolerance": 2.7720319318894118e-12,
+      "target": 496,
+      "wall_seconds": 0.13002646600011758
+    },
+    {
+      "condition_2": 41.253289188175465,
+      "family": "lower_leja",
+      "inverse_residual_inf": 5.321667314716477e-13,
+      "lebesgue_status": "MEASURED adaptive sample only",
+      "leja_candidate_indices": [
+        0,
+        120,
+        60,
+        84,
+        33,
+        98,
+        20,
+        48,
+        73,
+        107,
+        12,
+        41,
+        91,
+        66,
+        26,
+        112,
+        54,
+        7,
+        79,
+        37,
+        102,
+        69,
+        16,
+        88,
+        45,
+        115,
+        29,
+        57,
+        95,
+        4,
+        76
+      ],
+      "maximizer": [
+        -0.4253350843448809,
+        -0.4253350843448809
+      ],
+      "maximizer_angles": [
+        2.0101284244453437,
+        2.0101284244453437
+      ],
+      "n": 30,
+      "numerical_rank": 496,
+      "phase": null,
+      "sample_count": 6993,
+      "sampled_lebesgue_max": 89.89852437543533,
+      "svd_tolerance": 3.6029604471258023e-12,
+      "target": 496,
+      "wall_seconds": 0.1411823060000188
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+c3 n1 det: (x0 - x1)*(y0*z1 - y0*z2 - y1*z0 + y1*z2 + y2*z0 - y2*z1) True
+c3 n2 det == -FX FY FZ (exact, ZZ[12 vars]): True terms 4608
+c1 quadratic identity: True
+c1 n2 rectangle values [[0, 16], [-180, 0]]
+c1 n3 residues [[469, 520], [14, 277]] integer cross nonzero True cross mod 544
+n2 kernel poly vanishes: True
+c1 counts table n<=40: True
+{'c3_n1': True, 'c3_n2': True, 'c1_quad': True, 'c1_n2_rect': True, 'c1_n3_cert': True, 'c1_cheb_kernel': True, 'c1_counts': True}

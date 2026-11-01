@@ -1,0 +1,60 @@
+{
+  "kind": "versioned response-01 administrative impact check; no mathematical rerun or audit",
+  "command": "python3 topics/mz-postmerge-frontier-20261031/check-response-01.py --parent a4331a13301ee4a9905c8204c26bff5f9fdf246e",
+  "working_head_at_execution": "4076a2f4c73427164125870932192c2e38ab60c6",
+  "main_science_base": "07c5f5465d6de306aa81dbe8ca1f615295163864",
+  "historical_snapshot": "ac61532fdbf40d50647476d87ed4e3f0b4b53802",
+  "protected_science_paths": 176,
+  "science_changed": [],
+  "mz_registry_rows_changed": [],
+  "parent_authorized_audit_metadata_normalizations": [
+    "PD-T014",
+    "PD-T022"
+  ],
+  "historical_evidence_changed": [],
+  "current_index_checks": {
+    "missing_accepted_ids": [],
+    "endpoint_constant_retained": true,
+    "original_response_link_retained": true,
+    "original_report_link_retained": true,
+    "frontier_ids_named": true,
+    "frontier_registry_open": true
+  },
+  "relative_links_checked": 42,
+  "broken_links": [],
+  "pr4_parent": {
+    "status": "checked",
+    "sha": "a4331a13301ee4a9905c8204c26bff5f9fdf246e",
+    "protected_paths": 509,
+    "changed": [],
+    "unexpected_added_paths": [],
+    "current_outside_mz_paragraph_unchanged": true,
+    "parent_mz_ids_retained": true,
+    "parent_endpoint_constant_retained": true,
+    "ledger_byte_identical": true
+  },
+  "checks_pass": true,
+  "stack_rehearsal": "Not performed by this checker; requires separate orchestrator receipt",
+  "files": {
+    "topics/mz-constants/POST_MERGE.md": {
+      "sha256": "a54ba36e245ede1346b70f743738727238c1fc8021754bd4ab69094d2f78761c",
+      "bytes": 4724
+    },
+    "state/CURRENT.md": {
+      "sha256": "a6fc68dee01c39d5bb2869311b1e205eedd445a727769742b88359a1d3ddd3b5",
+      "bytes": 9429
+    },
+    "topics/mz-postmerge-frontier-20261031/LOG.md": {
+      "sha256": "fe682a9f5de95dfdfe0277c81e52b247c1dfc214ad4035948bfab25a79d286cb",
+      "bytes": 7680
+    },
+    "topics/mz-postmerge-frontier-20261031/response-01.md": {
+      "sha256": "518c67bffd43270ce42df534910182d1971d55e0cfd403c07510a6607bb0add2",
+      "bytes": 7639
+    },
+    "topics/mz-postmerge-frontier-20261031/check-response-01.py": {
+      "sha256": "a1d278128cca568b7de6daf5984e177e65098b5fef3a85eaf95c841888371f43",
+      "bytes": 7941
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "all_checks_passed": true,
+  "maximum_absolute_float_difference": 0.0,
+  "developer_sha256": "0b7dd941ebd269eef37daa98259e784872af08ceccce6522035b472691c04948",
+  "rerun_sha256": "487878fcb02aed7232847361a457fde0bb606b71de4d0077d4c0bc22e6abc75e",
+  "exact_rank_tests": 12,
+  "stability_rows": 15,
+  "gram_rows": 6
+}

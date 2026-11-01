@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-01",
+  "main_source": "07c5f5465d6de306aa81dbe8ca1f615295163864",
+  "sequence": "main -> PR4 -> PR5; sequential local squash rehearsal",
+  "worktree": "/workspace/scratch/pr4-pr5-rehearsal-20261101",
+  "branch": "codex/pr4-pr5-final-rehearsal-20261101",
+  "steps": [
+    {
+      "pr": "PR4",
+      "source": "a4331a13301ee4a9905c8204c26bff5f9fdf246e",
+      "source_tree": "490d9ebb50c63a8ea6fc5d1d60ace50eaf5ac4da",
+      "local_commit": "deab99ba4aff39577f197da87b07c433ef0247c5",
+      "result_tree": "490d9ebb50c63a8ea6fc5d1d60ace50eaf5ac4da",
+      "tree_equal": true,
+      "conflicts": [],
+      "verified_repairs": []
+    },
+    {
+      "pr": "PR5",
+      "source": "4076a2f4c73427164125870932192c2e38ab60c6",
+      "source_tree": "e7f1111cc356ddcb8939d092198cc26089f71d23",
+      "local_commit": "5a6ca74b8fb43e2e91c899cf77d10bea9201d296",
+      "result_tree": "e7f1111cc356ddcb8939d092198cc26089f71d23",
+      "tree_equal": true,
+      "conflicts": [
+        "state/CURRENT.md"
+      ],
+      "verified_repairs": [
+        "source PR5 MZ paragraph; every parent surrounding byte and accepted result ID preserved"
+      ]
+    }
+  ],
+  "origin_main_unchanged": true,
+  "live_merge": false,
+  "scope": "Exact complete response-candidate tree identity. Only this receipt and the subsequent focused review/publication metadata are outside the frozen candidate."
+}

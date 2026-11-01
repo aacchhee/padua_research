@@ -1,0 +1,72 @@
+{
+  "all_checks_passed": true,
+  "checker_sha256": "ad892176a2dcb62072a2985988fa4fb2515c88333358998fa9cf98aeb8857b5c",
+  "method": "Fresh direct full-grid normalized basis, direct finite complex sums, and two independent determinant identities.",
+  "numpy": "2.3.5",
+  "rows": [
+    {
+      "evaluation_logdet_identity_error": 8.881784197001252e-16,
+      "full_grid_orthogonality_residual": 1.1102230246251565e-16,
+      "gram_block_residual": 1.1102230246251565e-16,
+      "measured_sigma": 0.8660254037844385,
+      "n": 1,
+      "phase": 0,
+      "schur_logdet_identity_error": 4.440892098500626e-16
+    },
+    {
+      "evaluation_logdet_identity_error": 0.0,
+      "full_grid_orthogonality_residual": 3.3306690738754696e-16,
+      "gram_block_residual": 2.7755575615628914e-16,
+      "measured_sigma": 0.8084815821812942,
+      "n": 2,
+      "phase": 1,
+      "schur_logdet_identity_error": 2.6645352591003757e-15
+    },
+    {
+      "evaluation_logdet_identity_error": 1.7763568394002505e-15,
+      "full_grid_orthogonality_residual": 4.440892098500626e-16,
+      "gram_block_residual": 2.220446049250313e-16,
+      "measured_sigma": 0.9058663941398417,
+      "n": 3,
+      "phase": 0,
+      "schur_logdet_identity_error": 8.881784197001252e-15
+    },
+    {
+      "evaluation_logdet_identity_error": 7.105427357601002e-15,
+      "full_grid_orthogonality_residual": 4.440892098500626e-16,
+      "gram_block_residual": 1.1102230246251565e-16,
+      "measured_sigma": 0.8656261247567546,
+      "n": 4,
+      "phase": 1,
+      "schur_logdet_identity_error": 0.0
+    },
+    {
+      "evaluation_logdet_identity_error": 2.842170943040401e-14,
+      "full_grid_orthogonality_residual": 6.661338147750939e-16,
+      "gram_block_residual": 4.996003610813204e-16,
+      "measured_sigma": 0.8859741547302614,
+      "n": 6,
+      "phase": 1,
+      "schur_logdet_identity_error": 2.842170943040401e-14
+    },
+    {
+      "evaluation_logdet_identity_error": 7.105427357601002e-14,
+      "full_grid_orthogonality_residual": 1.1102230246251565e-15,
+      "gram_block_residual": 4.440892098500626e-16,
+      "measured_sigma": 0.9367353263408832,
+      "n": 7,
+      "phase": 0,
+      "schur_logdet_identity_error": 4.263256414560601e-14
+    },
+    {
+      "evaluation_logdet_identity_error": 1.4210854715202004e-14,
+      "full_grid_orthogonality_residual": 1.7763568394002505e-15,
+      "gram_block_residual": 5.551115123125783e-16,
+      "measured_sigma": 0.9030319297174892,
+      "n": 8,
+      "phase": 1,
+      "schur_logdet_identity_error": 4.263256414560601e-14
+    }
+  ],
+  "status": "MEASURED supplementary checks only; written proof separately audited"
+}

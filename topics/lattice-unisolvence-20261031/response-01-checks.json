@@ -1,0 +1,17 @@
+{
+  "scope": "unchanged mathematics; metadata/registry union",
+  "topic_source": "3f369611f364c8bab41b8a48f1414f88b21937ec",
+  "main_source": "07c5f5465d6de306aa81dbe8ca1f615295163864",
+  "protected_main_files": 302,
+  "result_rows": 55,
+  "accepted_final_results": 34,
+  "lattice_results": 21,
+  "theory_history_prefixes": 21,
+  "unchanged_science_auditor_files": 141,
+  "historical_developer_hashes": 59,
+  "provisional_ids": 66,
+  "distinct_idea_summaries": 13,
+  "links_checked": 702,
+  "failures": [],
+  "passed": true
+}
