@@ -1,0 +1,69 @@
+{
+ "L6": "(x - 1)*(2*x**2 + x + 2*y**2 - 2)/3",
+ "cases": [
+  {
+   "sigma": 1,
+   "signs": [
+    1,
+    1,
+    1,
+    1,
+    -1,
+    -1,
+    0,
+    1,
+    1,
+    -1
+   ],
+   "grad_lambda_center": [
+    "0",
+    "0"
+   ],
+   "grad_L6_center": [
+    "0",
+    "0"
+   ],
+   "lambda_center": "8*sqrt(3)/27 + 1 + 4*sqrt(6)/9",
+   "lambda_center_float": "2.6018623471833020565",
+   "box_halfwidth": "0.0022",
+   "subboxes": 144,
+   "min_gershgorin_neg_margin": "3.5696398",
+   "min_det_lower": "34.274938",
+   "min_signed_cardinal_lower": "0.0059018942",
+   "min_bracket_lower": "1.6625094",
+   "certified": true
+  },
+  {
+   "sigma": -1,
+   "signs": [
+    1,
+    1,
+    1,
+    -1,
+    1,
+    1,
+    0,
+    -1,
+    -1,
+    1
+   ],
+   "grad_lambda_center": [
+    "0",
+    "0"
+   ],
+   "grad_L6_center": [
+    "0",
+    "0"
+   ],
+   "lambda_center": "8*sqrt(3)/27 + 1 + 4*sqrt(6)/9",
+   "lambda_center_float": "2.6018623471833020565",
+   "box_halfwidth": "0.0022",
+   "subboxes": 144,
+   "min_gershgorin_neg_margin": "3.5696398",
+   "min_det_lower": "34.274938",
+   "min_signed_cardinal_lower": "0.0059018942",
+   "min_bracket_lower": "1.6625094",
+   "certified": true
+  }
+ ]
+}
