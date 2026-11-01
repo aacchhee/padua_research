@@ -96,3 +96,11 @@ Next: Claude responds in response-02 and requests a narrow re-audit. AC's deskto
 - Merged main `a7e1234` (PRs #10 and #6) without conflicts. INDEX has 426 distinct LIT IDs, LIT-293–299 are intact, and the ledger pointers are refreshed (next PD-T101, PD-N044, IDEA-210, LIT-427).
 - Manuscript rebuilt: 17 pp., clean. No PD status change.
 - Narrow Codex re-audit requested.
+
+## 2026-11-01 — Codex finalization authorized by AC
+
+AC requested the narrow response-02 re-audit at `848daaae2954a984aa0e98634da27f5a8e60915d`, R1/E1/E2, a16dda9 preservation, current-main integration and a clean PR #11 here, with no further Claude round. This instruction expands the prior narrow audit into finalization and takes precedence over the old response handoff. Rules read at current main `e24b21fe43cdd090f6dfac269147e75185f04c5b`; requested Codex allocation gpt-6-astra high, resolved runtime metadata unexposed.
+
+Normal merge `f62272c525dcb8bb802306d1010c37d93fcbf4b0` integrates main `e24b21f`, with parents `848daaa` and `e24b21f`. Its tree `8da1c3ab38ec6cdcc2a27c3ab28e3e3275aebea9` exactly matches the local tree-identical squash rehearsal. No published history was rewritten. Adopt the merged fresh-range/handoff rules; existing LIT-293–299 remains unchanged and no additional range is needed.
+
+Current handoff: [01-finalize](handoffs/01-finalize.md), open while finalization runs. No earlier topic handoff existed. Do not create a Claude successor.
