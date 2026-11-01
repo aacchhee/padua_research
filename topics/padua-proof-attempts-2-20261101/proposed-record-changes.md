@@ -137,3 +137,26 @@ Current upstream refresh: Part1 is merged at main806cc7b. Existing original pins
 
 
 Refresh2026-11-01 at e0d9e3d08ee26c3b82a295f33b6ff99d928f22b9: its MZ registry/literature additions change none of these five literal Old blocks. Each remains unique at its historical pin AND this current main. All five entire Old blocks remain within their New blocks. The additional n8lower64statement is a future literal append to the existing source history, not an upgrade of the frozen floating search or a complete-count correction. Apply only after the Part2 Claude audit and authorized integration.
+
+
+## A4(a) exact edge and central complementary-grid point splits
+
+Target: `topics/programme-ideas-20261031/OPEN_TARGETS.md`
+
+Pinned commit: `e0d9e3d08ee26c3b82a295f33b6ff99d928f22b9`
+
+Old:
+
+```text
+Known: no counterexample at 75 tested degrees up to n = 200 on finite meshes; the runner-up is an edge maximum near the midpoint of x = ±1 with fitted gap ≈ 0.548 + 0.84/n (MEASURED). Because the gap stays bounded, a proof needs: (a) an expansion of the edge-midpoint value to O(1) precision, R(n) = Λ_c(n) − g + o(1) with g > 0 (a corner-type closed form along the edge, as in A1, is the first step); (b) local upper bounds throughout neighbourhoods of the corners (λ_n ≤ Λ_c(n), with equality only at the non-node corners if "attained only" is to be proved) and of the two edge midpoints (λ_n ≤ Λ_c(n) − δ there); (c) a global bound λ_n ≤ Λ_c(n) − δ on the rest of the square; (d) a rigorous finite verification for n < n₀. Done when: (a)–(c) for n ≥ n₀ together with (d), or any other argument covering the whole square. Point expansions at the corner and the edge midpoint do not control the interiors of their neighbourhoods, and a small-n check does not cover them for large n (response-02, audit-02 B4.4).
+```
+
+New:
+
+```text
+Known: no counterexample at 75 tested degrees up to n = 200 on finite meshes; the runner-up is an edge maximum near the midpoint of x = ±1 with fitted gap ≈ 0.548 + 0.84/n (MEASURED). Because the gap stays bounded, a proof needs: (a) an expansion of the edge-midpoint value to O(1) precision, R(n) = Λ_c(n) − g + o(1) with g > 0 (a corner-type closed form along the edge, as in A1, is the first step); (b) local upper bounds throughout neighbourhoods of the corners (λ_n ≤ Λ_c(n), with equality only at the non-node corners if "attained only" is to be proved) and of the two edge midpoints (λ_n ≤ Λ_c(n) − δ there); (c) a global bound λ_n ≤ Λ_c(n) − δ on the rest of the square; (d) a rigorous finite verification for n < n₀. Done when: (a)–(c) for n ≥ n₀ together with (d), or any other argument covering the whole square. Point expansions at the corner and the edge midpoint do not control the interiors of their neighbourhoods, and a small-n check does not cover them for large n (response-02, audit-02 B4.4).
+
+Dated Part2 split update proposed after its Claude audit: PD-T?proof-attempts-2-codex-70 proves an exact formula on all four edges with polynomial removable limits. Separate71 proves strict corner dominance at every complementary vertical-edge Lobatto ordinate via a positive triangle-defect sum plus2/[n(n+1)]. Separate72 proves C_n=Lambda_c(n)−g+o(1) for an explicitly specified all-parity central complementary-grid sequence, with one explicit convergent integral g and1/45<g<=2. Odd degrees use the selected nonnode midpoint; even degrees use the nearest complementary ordinate at angular displacement pi/[2(n+1)]. The source's searched R(n), the central maximum R_cen and C_n remain distinct: R_cen−C_n=o(1) is OPEN, so these point-value theorems do not silently close the original runner-up expansion. The measured0.548fit remains a fit. Parts(b)/(c) and global all-n A4 remainOPEN; finite(d) cases3–7 are separately proved as recorded in the other proposal. Every original route, quantifier and measurement above is retained. The exact edge identity has two actual n1–6 cyclotomic Vandermonde/cardinal-polynomial regressions; finite regression is supplementary to the written proof, not the source of the asymptotic conclusion.
+```
+
+Validation: entire Old retained in New; old block unique at pinned current main. Root will refresh this proposed status if the remaining central-envelope obligation is resolved before the target stop. No shared source is edited.

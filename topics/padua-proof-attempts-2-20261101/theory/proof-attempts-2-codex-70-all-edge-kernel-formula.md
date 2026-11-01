@@ -62,7 +62,7 @@ This closes only the requested exact-edge-identity part. It proves no asymptotic
 
 ## Checks
 
-The proof below is analytic and does not depend on a finite regression. Exact regression and supplementary independent reconstruction, when completed, will be recorded here and in attempts/T-A4a.md. At initial writing no A4 mathematical script has run; no independent execution is claimed.
+The proof below is analytic and does not depend on a finite regression. The supplementary independent reconstruction in independent-checks-a4.md has read the complete all-edge and diagonal proof. The separately implemented code/a4reg_exact_check.py, frozen at SHA25613e8c524c4c21701bdee2a009cda2245d8f289d6a6cca0dba19afec1842f872e, was actually executed by its implementer and replayed by a different agent. Both exited0 under Python3.12.14, SymPy1.14, python-flint0.9/FLINT3.6; exact QQ(zeta) quotient arithmetic, no signs or tolerances. All n=1,…,6 checks passed:332 complete cardinal edge-polynomial identities for each formula,472 removable cardinal values,592 diagonal branch evaluations,6 full polynomial diagonal identities and24 edge partitions. The source guard remained unchanged. The developer elapsed2.408987s, separate replay2.415554s. Their outputs agree in every field except elapsed_seconds. The4561byte receipts are outputs/a4reg_exact_developer.json (SHA2561bfcfa3a08861911d2b6ec1cf857f797a0f14c3d22fd3acda1b43aa08a88cef1) and outputs/a4reg_exact_independent.json (SHA2567f21d8e033b260de220f578f2cf81fefd23101417a2fed8781bdd9285351b7a6); independent-execution-a4-regression.md records both actual commands and limitations. This finite regression supplements, and does not replace, the all-n proof or required Claude audit.
 
 ## Sources
 
@@ -109,7 +109,7 @@ Only exact edge point values for the stated Padua interpolation problem. No infe
 
 ## Open items
 
-The asymptotic/branch portion of A4(a), supplementary exact regression/reconstruction and the required Claude audit. Parts(b)/(c) remain route-note scope only.
+The asymptotic/branch portion of A4(a) and required Claude audit. Supplementary exact regression/reconstruction are complete for the stated finite scope. Parts(b)/(c) remain route-note scope only.
 
 ## History
 
