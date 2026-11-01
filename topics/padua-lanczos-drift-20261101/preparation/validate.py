@@ -142,6 +142,7 @@ def main():
         if not p.endswith('.md'): continue
         s = show(head, p)
         if s is None: continue
+        s = re.sub(r'«.*?»', '', s, flags=re.S)  # quoted original wording is history, not a live link
         for m in re.finditer(r'\]\(([^)#\s]+)(?:#[^)]*)?\)', s):
             u = m.group(1)
             if re.match(r'[a-z]+:', u): continue
