@@ -1,0 +1,52 @@
+{
+ "description": "Response-01 committed checkers and evidence (Claude developer). sha256 of committed bytes.",
+ "files": {
+  "topics/padua-lanczos-drift-20261101/evidence/response-01-e1-checks.json": {
+   "bytes": 76613,
+   "sha256": "0852581d7072cc81422fe5fded158c768a89ed838a882d3ac4c2dde71c49bb26"
+  },
+  "topics/padua-lanczos-drift-20261101/evidence/response-01-e4-closure.json": {
+   "bytes": 30826,
+   "sha256": "956dfe71e8b6958f54e19f2d7fb30f04c5788351b7942bf8be21b41977d3599c"
+  },
+  "topics/padua-lanczos-drift-20261101/evidence/response-01-e5-checks.json": {
+   "bytes": 2756,
+   "sha256": "b3702c46b84479fd5f2db076ef9726261de20d3f1dfadc651f4f39619490bae9"
+  },
+  "topics/padua-lanczos-drift-20261101/evidence/response-01-e6-offsample.json": {
+   "bytes": 22147,
+   "sha256": "12a5e7c713ec53b0a26fede8f2250a9ae8d02578df672ec11271ac450339b31d"
+  },
+  "topics/padua-lanczos-drift-20261101/evidence/response-01-integration-20261101.json": {
+   "bytes": 8974,
+   "sha256": "90c2269ec48b33466e82dc4ac2685e6737369aa997fd130361e2b582b87dac50"
+  },
+  "tracks/bivariate-lanczos/code/drift/e1_response_checks.py": {
+   "bytes": 22318,
+   "sha256": "6edcedabf21444ed8d84ce379c6396dac40dde179aac991e5299e68b7511c4dd"
+  },
+  "tracks/bivariate-lanczos/code/drift/e4_closure_check.py": {
+   "bytes": 18454,
+   "sha256": "b22949c61d98207f950a5b8e1a8974e0eb1545f85dc5b639872bf09a987d6dac"
+  },
+  "tracks/bivariate-lanczos/code/drift/response01_e5_checks.py": {
+   "bytes": 6790,
+   "sha256": "2efc1dd219d0e16d032921819fa11fe6fd3e5334722d15e9e3a0ba90ae4978ec"
+  },
+  "tracks/bivariate-lanczos/code/drift/e6_offsample.py": {
+   "bytes": 11634,
+   "sha256": "e2876dfb421e6880271122ef15ca3b039b65ea4f8d14dfa88012c6f58224f7ee"
+  },
+  "tracks/bivariate-lanczos/code/drift/integration_check.py": {
+   "bytes": 8327,
+   "sha256": "b3399f31237f4a950ea6cb7f89ee618005dbb212ac451ea1211d1635c8fe35a8"
+  }
+ },
+ "regeneration": {
+  "e1": "PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 tracks/bivariate-lanczos/code/drift/e1_response_checks.py --output <out>.json",
+  "e4": "python3 tracks/bivariate-lanczos/code/drift/e4_closure_check.py --output <out>.json",
+  "e5": "PYTHONPATH=/workspace/padua-drift-runs/python-deps python3 -B tracks/bivariate-lanczos/code/drift/response01_e5_checks.py > <out>.json",
+  "e6": "PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 tracks/bivariate-lanczos/code/drift/e6_offsample.py --output <out>.json",
+  "integration": "python3 tracks/bivariate-lanczos/code/drift/integration_check.py --head <sha> --main origin/main --pr PR12=<sha> --pr PR16=<sha> --output <out>.json (receipt computed for head fffda947, the commit before the receipt)"
+ }
+}

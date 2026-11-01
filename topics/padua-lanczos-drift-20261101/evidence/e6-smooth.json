@@ -1,0 +1,174 @@
+{
+  "status": "MEASURED",
+  "target": "exp(x+y), independently fixed analytic target",
+  "cases": [
+    {
+      "name": "square",
+      "n": 32,
+      "methods": {
+        "upstream_xy": {
+          "weighted_training_relative_residual": 1.6813858650308506e-15,
+          "test_relative_error": 1.6891874798353703e-15
+        },
+        "upstream_yx": {
+          "weighted_training_relative_residual": 1.9363375436460077e-15,
+          "test_relative_error": 1.8778634232814632e-15
+        }
+      }
+    },
+    {
+      "name": "rot0.3",
+      "n": 24,
+      "methods": {
+        "upstream_xy": {
+          "weighted_training_relative_residual": 1.07061302719816e-15,
+          "test_relative_error": 1.4164042023006258e-15
+        },
+        "upstream_yx": {
+          "weighted_training_relative_residual": 1.5426874418966463e-15,
+          "test_relative_error": 1.611248365241493e-15
+        }
+      }
+    },
+    {
+      "name": "rotpi4",
+      "n": 24,
+      "methods": {
+        "upstream_xy": {
+          "weighted_training_relative_residual": 1.6705025816694886e-15,
+          "test_relative_error": 1.4424486155285544e-15
+        },
+        "upstream_yx": {
+          "weighted_training_relative_residual": 2.111165031843247e-15,
+          "test_relative_error": 2.1940528902452392e-15
+        }
+      }
+    },
+    {
+      "name": "disk",
+      "n": 24,
+      "methods": {
+        "upstream_xy": {
+          "weighted_training_relative_residual": 1.0889678358255903e-15,
+          "test_relative_error": 9.437645997649947e-16
+        },
+        "upstream_yx": {
+          "weighted_training_relative_residual": 1.1907310654353466e-15,
+          "test_relative_error": 1.0798308576133892e-15
+        }
+      }
+    },
+    {
+      "name": "triangle",
+      "n": 20,
+      "methods": {
+        "upstream_xy": {
+          "weighted_training_relative_residual": 7.454161503177961e-16,
+          "test_relative_error": 5.437497577542004e-16
+        },
+        "upstream_yx": {
+          "weighted_training_relative_residual": 8.948932436060627e-16,
+          "test_relative_error": 6.837246836254788e-16
+        }
+      }
+    },
+    {
+      "name": "lshape",
+      "n": 30,
+      "methods": {
+        "upstream_xy": {
+          "weighted_training_relative_residual": 1.1334473987086234e-15,
+          "test_relative_error": 5.500794471553243e-13
+        },
+        "upstream_yx": {
+          "weighted_training_relative_residual": 1.145938157567006e-15,
+          "test_relative_error": 6.795856107564051e-14
+        }
+      }
+    },
+    {
+      "name": "annulus",
+      "n": 30,
+      "methods": {
+        "upstream_xy": {
+          "weighted_training_relative_residual": 1.0705993201606906e-15,
+          "test_relative_error": 1.3528140183842277e-10
+        },
+        "upstream_yx": {
+          "weighted_training_relative_residual": 1.4841727121939761e-15,
+          "test_relative_error": 1.7479641664245371e-10
+        }
+      }
+    },
+    {
+      "name": "tensor41",
+      "n": 39,
+      "methods": {
+        "upstream_xy": {
+          "weighted_training_relative_residual": 4.341203704031213e-15,
+          "test_relative_error": 5.794127084102908e-15
+        },
+        "upstream_yx": {
+          "weighted_training_relative_residual": 4.415353772534134e-15,
+          "test_relative_error": 6.066359253733815e-15
+        }
+      }
+    },
+    {
+      "name": "padua48",
+      "n": 47,
+      "methods": {
+        "upstream_xy": {
+          "weighted_training_relative_residual": 1.7472652475544761e-15,
+          "test_relative_error": 2.5960090173881328e-15
+        },
+        "upstream_yx": {
+          "weighted_training_relative_residual": 2.1996502639225987e-15,
+          "test_relative_error": 3.1827566109153156e-15
+        }
+      }
+    },
+    {
+      "name": "cb_cheb",
+      "n": 29,
+      "methods": {
+        "upstream_xy": {
+          "weighted_training_relative_residual": 1.811385558881505e-15,
+          "test_relative_error": 2.2733484105291013e-15
+        },
+        "upstream_yx": {
+          "weighted_training_relative_residual": 1.3636850858174648e-15,
+          "test_relative_error": 1.9305115469304756e-15
+        }
+      }
+    },
+    {
+      "name": "cb_equi",
+      "n": 29,
+      "methods": {
+        "upstream_xy": {
+          "weighted_training_relative_residual": 7.553245174051984e-16,
+          "test_relative_error": 3.731758284674283e-12
+        },
+        "upstream_yx": {
+          "weighted_training_relative_residual": 6.523786752783298e-16,
+          "test_relative_error": 4.5529311073448496e-12
+        }
+      }
+    },
+    {
+      "name": "cb_cubic",
+      "n": 29,
+      "methods": {
+        "upstream_xy": {
+          "weighted_training_relative_residual": 2.948335710869741e-16,
+          "test_relative_error": 9561309788.799984
+        },
+        "upstream_yx": {
+          "weighted_training_relative_residual": 2.743694971449307e-16,
+          "test_relative_error": 5072908294.708112
+        }
+      }
+    }
+  ]
+}

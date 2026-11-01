@@ -1,0 +1,14 @@
+{
+  "set": "rotated",
+  "degree": 12,
+  "rule": "bj",
+  "result": "PASS",
+  "checks": [
+    "explicit final normal projection squared norm",
+    "random-sign diagonal expectation",
+    "explicit>=expected",
+    "all node signs unit magnitude"
+  ],
+  "trust_limit": "Target capacities are trusted input to this checker; independent generator rerun needed to check source propagation.",
+  "input_sha256": "ffd035eef09d39be2ab862a6c12abbe58c455cd9131615ee89b4eefba14d1d8e"
+}

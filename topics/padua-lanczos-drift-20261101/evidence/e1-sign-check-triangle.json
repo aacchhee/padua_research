@@ -1,0 +1,14 @@
+{
+  "set": "triangle",
+  "degree": 12,
+  "rule": "bj",
+  "result": "PASS",
+  "checks": [
+    "explicit final normal projection squared norm",
+    "random-sign diagonal expectation",
+    "explicit>=expected",
+    "all node signs unit magnitude"
+  ],
+  "trust_limit": "Target capacities are trusted input to this checker; independent generator rerun needed to check source propagation.",
+  "input_sha256": "5e5897dc49fc9145add8abd22a5411f21839067c6b85674e694b491c5104fa55"
+}

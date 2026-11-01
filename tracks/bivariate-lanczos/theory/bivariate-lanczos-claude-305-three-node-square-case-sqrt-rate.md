@@ -46,8 +46,9 @@ All non-collinear triples, all positive weights, n = 1, perturbative exact-repre
 
 ## Open items
 
-Explicit constants.
+Explicit constants. One explicit instance, not the universal constants c, C: PD-T145 gives, for the triangle {(0,0),(1,0),(0,1)} with equal weights, a consistent ε-perturbation with an exact positive representation of spread √(6ε), and lower spread √((1−3γ)ε/3) for every unit-mass positive fit with functional residual γε, γ < 1/3 (maximum monomial-moment norm on Π_3, convention (R2)).
 
 ## History
 
 2026-10-31, Claude Opus 5.5 (xhigh, requested), L3 developer, base 2d8c3ab: created in round R01.
+- 2026-11-01, Claude PR preparation (configured claude-opus-5-5, high): Open item cross-referenced to the explicit instance PD-T145; statement and status unchanged. Original wording: «Explicit constants.».

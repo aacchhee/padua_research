@@ -35,3 +35,9 @@ No manuscript has been drafted or accepted. The following is a development brief
 | Brief | Question | Support | Remaining gaps | Readiness |
 |---|---|---|---|---|
 | [Signed Padua MZ campaign](topics/padua-mz-2d-20261101/report.md) | Beyond-half-exactness signed Lebesgue Padua spectra and reconstruction | PD-T106–117; PD-N044–053 at their individual written statuses | Universal endpoint/fixed-ratio spectral targets and uniform signed operator norm OPEN; historical attribution limits retained | Claude audit-01 accepted scoped mathematics; response-01 documentation fixes complete; stage PR, draft pending AC merge order; no manuscript/submission claim |
+
+## Padua Lanczos drift campaign — PR15 final registration
+
+| Brief | Question | Support | Remaining gaps | Readiness |
+|---|---|---|---|---|
+| [Lanczos drift campaign](topics/padua-lanczos-drift-20261101/report.md) | Span drift of computed bivariate Lanczos bases; Padua obstruction radius rate | PD-T136–146; PD-N062–063 at their individual statuses | All-degree drift, staircase safety, PD-T055, PD-T075(U2), PD-T056(G) OPEN; formal-model results imply no IEEE claim | PR prepared after Codex audit-04; draft PR15, AC decision pending; no manuscript claim |

@@ -1,0 +1,317 @@
+{
+ "topic": "padua-lanczos-drift-20261101",
+ "reservation_first_published": "6920ba632843597c37e1493d077c1df2e89f54cb",
+ "reserved": {
+  "PD-T": "PD-T136–155",
+  "PD-N": "PD-N062–071",
+  "IDEA": "IDEA-246–285",
+  "LIT": "LIT-445–459"
+ },
+ "assigned": {
+  "PD-T": "PD-T136–146",
+  "PD-N": "PD-N062–063",
+  "IDEA": "IDEA-246–267",
+  "LIT": "none"
+ },
+ "permanent_gaps": {
+  "PD-T": "PD-T147–155",
+  "PD-N": "PD-N064–071",
+  "IDEA": "IDEA-268–285",
+  "LIT": "LIT-445–459"
+ },
+ "withdrawn": {
+  "PD-N?drift-codex-14": "no PD-N; content is IDEA-253 (IDEA?drift-codex-14); tombstone removed at preparation"
+ },
+ "splits": {
+  "PD-T140 -> PD-T141": "finite inequalities of the scalar experiment",
+  "PD-T075(U1) -> PD-T144": "rho_n -> 0, rho_n = O(n^-5)"
+ },
+ "accepted_source": "02bd97b892ed409ec64e9b281130c71a85e914e9 (Codex audit-04 ACCEPT)",
+ "assigned_at": "2026-11-01",
+ "mapping": {
+  "PD-T?drift-codex-01": "PD-T136",
+  "PD-T?drift-codex-02": "PD-T137",
+  "PD-T?drift-codex-03": "PD-T138",
+  "PD-T?drift-codex-04": "PD-T139",
+  "PD-T?drift-codex-05": "PD-T140",
+  "PD-T?drift-codex-06": "PD-T141",
+  "PD-T?drift-codex-10": "PD-T142",
+  "PD-T?drift-codex-11": "PD-T143",
+  "PD-N?drift-codex-15": "PD-N062",
+  "PD-T?drift-codex-30": "PD-T144",
+  "PD-T?drift-codex-31": "PD-T145",
+  "PD-N?drift-codex-32": "PD-N063",
+  "PD-T?drift-codex-50": "PD-T146",
+  "IDEA?drift-codex-01": "IDEA-246",
+  "IDEA?drift-codex-02": "IDEA-247",
+  "IDEA?drift-codex-03": "IDEA-248",
+  "IDEA?drift-codex-04": "IDEA-249",
+  "IDEA?drift-codex-05": "IDEA-250",
+  "IDEA?drift-codex-10": "IDEA-251",
+  "IDEA?drift-codex-11": "IDEA-252",
+  "IDEA?drift-codex-14": "IDEA-253",
+  "IDEA?drift-codex-15": "IDEA-254",
+  "IDEA?drift-codex-16": "IDEA-255",
+  "IDEA?drift-claude-17": "IDEA-256",
+  "IDEA?drift-codex-30": "IDEA-257",
+  "IDEA?drift-codex-31": "IDEA-258",
+  "IDEA?drift-codex-32": "IDEA-259",
+  "IDEA?drift-codex-33": "IDEA-260",
+  "IDEA?drift-codex-34": "IDEA-261",
+  "IDEA?drift-codex-35": "IDEA-262",
+  "IDEA?drift-codex-55": "IDEA-263",
+  "IDEA?drift-codex-56": "IDEA-264",
+  "IDEA?drift-codex-57": "IDEA-265",
+  "IDEA?drift-codex-58": "IDEA-266",
+  "IDEA?drift-codex-59": "IDEA-267"
+ },
+ "declarations": {
+  "PD-T?drift-codex-01": {
+   "kind": "PD-T",
+   "path": "tracks/bivariate-lanczos/theory/drift-codex-e1-01-span-derivative.md",
+   "title": "First-order span derivative is the normal quotient of the frozen recurrence",
+   "evidence": "Written analytic proof; exact and finite-difference checks (audit-01)",
+   "disposition": "Retained at exact stated scope; no novelty claim",
+   "depends_on": []
+  },
+  "PD-T?drift-codex-02": {
+   "kind": "PD-T",
+   "path": "tracks/bivariate-lanczos/theory/drift-codex-e1-02-rational-span-bounds.md",
+   "title": "Rational lower and upper certificates for aggregate span sensitivity",
+   "evidence": "Written analytic proof; small-case numerical ordering checks",
+   "disposition": "Retained; spectral output, all-source and restricted bounds distinguished",
+   "depends_on": [
+    "PD-T136"
+   ]
+  },
+  "PD-T?drift-codex-03": {
+   "kind": "PD-T",
+   "path": "tracks/bivariate-lanczos/theory/drift-codex-e1-03-scalar-operation-bridge.md",
+   "title": "First-order normal-quotient map of the vector-operation errors of a scalar CGS2 graph in a formal relative-error model",
+   "evidence": "Written analytic proof; full trajectory replay at degree 3 (audits) and degree 4 (response-02, developer)",
+   "disposition": "Formal relative-error model only; no IEEE lower bound",
+   "depends_on": [
+    "PD-T136"
+   ]
+  },
+  "PD-T?drift-codex-04": {
+   "kind": "PD-T",
+   "path": "tracks/bivariate-lanczos/theory/drift-codex-e1-04-finite-aggregate-separation.md",
+   "title": "Certified finite aggregate span-sensitivity separation on a triangle and rational rotated square",
+   "evidence": "Finite exact computer-assisted certificate; committed producer/checkers; independent exact/Arb recomputation (audits 01–02)",
+   "disposition": "Original KHS-only frozen test INCONCLUSIVE; rotQ24 pivot tie disclosed",
+   "depends_on": [
+    "PD-T136",
+    "PD-T137"
+   ]
+  },
+  "PD-T?drift-codex-05": {
+   "kind": "PD-T",
+   "path": "tracks/bivariate-lanczos/theory/drift-codex-e1-05-finite-scalar-cgs2-capacities.md",
+   "title": "Exploratory formal scalar-CGS2 capacity experiment and the unresolved factor-ten comparison",
+   "evidence": "Exact exploratory experiment with independent reruns",
+   "disposition": "Experiment MEASURED; both-grid sufficient test INCONCLUSIVE; finite inequalities split to PD-T141; target row below",
+   "depends_on": [
+    "PD-T136",
+    "PD-T138"
+   ]
+  },
+  "PD-T?drift-codex-06": {
+   "kind": "PD-T",
+   "path": "tracks/bivariate-lanczos/theory/drift-codex-e1-06-finite-scalar-cgs2-separation.md",
+   "title": "Certified finite BJ/comparator separation of the formal scalar-CGS2 capacity on T24 and rotQ24 at degree twelve",
+   "evidence": "Finite exact computer-assisted certificate; e1_scalar_finite_check.py; reused independent executions",
+   "disposition": "Formal scalar-CGS2 model only; >800/>7 thresholds post hoc; rotQ24 factor ten undecided",
+   "depends_on": [
+    "PD-T136",
+    "PD-T138"
+   ]
+  },
+  "PD-T?drift-codex-10": {
+   "kind": "PD-T",
+   "path": "tracks/bivariate-lanczos/theory/drift-codex-e3-10-polynomial-span-certificate.md",
+   "title": "A computed polynomial recurrence gives a span-error certificate",
+   "evidence": "Written analytic proof; exact surrogate checks",
+   "disposition": "A posteriori certificate; no coefficient-accuracy assumption",
+   "depends_on": [
+    "PD-T032",
+    "PD-T053"
+   ]
+  },
+  "PD-T?drift-codex-11": {
+   "kind": "PD-T",
+   "path": "tracks/bivariate-lanczos/theory/drift-codex-e3-11-selection-criterion.md",
+   "title": "Exact-data inverse scores give a first-order selection guarantee",
+   "evidence": "Written analytic proof (routine corollary of PD-T142 for (6))",
+   "disposition": "Fixed degree and fixed perturbation family; uniform polynomial safety OPEN",
+   "depends_on": [
+    "PD-T142",
+    "PD-T050",
+    "PD-T054"
+   ]
+  },
+  "PD-N?drift-codex-15": {
+   "kind": "PD-N",
+   "path": "tracks/bivariate-lanczos/theory/drift-codex-e4-15-projection-only-closure-obstruction.md",
+   "title": "In a fixed degree, no prior-vector subtraction rule removes the span drift or closure defect of a raw-product source",
+   "evidence": "Written analytic proof; exact instance checks (e4_closure_check, e4_response02_check)",
+   "disposition": "Scoped negative: fixed-degree projection-only rules; exact instance of PD-T055 heuristic; PD-T055 stays OPEN",
+   "depends_on": [
+    "PD-T053",
+    "PD-T142"
+   ]
+  },
+  "PD-T?drift-codex-30": {
+   "kind": "PD-T",
+   "path": "tracks/bivariate-lanczos/theory/drift-codex-e5-30-padua-positivity-radius-upper-bound.md",
+   "title": "An explicit corner witness gives rho_n = O(n^-5)",
+   "evidence": "Written analytic proof; symbolic and Arb checks",
+   "disposition": "Named certificate only; splits PD-T075(U1); (U2) OPEN",
+   "depends_on": [
+    "PD-T069",
+    "PD-T075"
+   ]
+  },
+  "PD-T?drift-codex-31": {
+   "kind": "PD-T",
+   "path": "tracks/bivariate-lanczos/theory/drift-codex-e5-31-explicit-square-root-spread-family.md",
+   "title": "An explicit square-case family with square-root support spread and residual constants",
+   "evidence": "Explicit construction; exact symbolic checks",
+   "disposition": "Reading (E) instance; no reading (G) implication",
+   "depends_on": [
+    "PD-T057",
+    "PD-T058",
+    "PD-T061"
+   ]
+  },
+  "PD-N?drift-codex-32": {
+   "kind": "PD-N",
+   "path": "tracks/bivariate-lanczos/theory/drift-codex-e5-32-failed-negative-witness-paths.md",
+   "title": "Three scoped Padua negative-witness mechanisms fail: no negative point on the equal-phase path or on the edges x=1, y=1, and no eventual (all-large-n) negative witness on any fixed-A/n^3 path",
+   "evidence": "Analytic identities and limits",
+   "disposition": "Scoped negative: three witness mechanisms fail; case 3 eventual-only",
+   "depends_on": [
+    "PD-T069",
+    "PD-T144"
+   ]
+  },
+  "PD-T?drift-codex-50": {
+   "kind": "PD-T",
+   "path": "tracks/bivariate-lanczos/theory/drift-codex-e6-50-public-va-drift-measured.md",
+   "title": "Actual public polyrat V+A span and fitting measurements",
+   "evidence": "Actual pinned polyrat executions; independent long-double reference reruns",
+   "disposition": "MEASURED implementation/fit evidence; no general smooth-data failure",
+   "depends_on": []
+  },
+  "IDEA?drift-codex-01": {
+   "kind": "IDEA",
+   "path": "topics/padua-lanczos-drift-20261101/ideas-e1.md",
+   "title": "Projected exact recurrence as the span condition"
+  },
+  "IDEA?drift-codex-02": {
+   "kind": "IDEA",
+   "path": "topics/padua-lanczos-drift-20261101/ideas-e1.md",
+   "title": "Raw propagator growth as a span certificate"
+  },
+  "IDEA?drift-codex-03": {
+   "kind": "IDEA",
+   "path": "topics/padua-lanczos-drift-20261101/ideas-e1.md",
+   "title": "Explicit-family matching drift theorem"
+  },
+  "IDEA?drift-codex-04": {
+   "kind": "IDEA",
+   "path": "topics/padua-lanczos-drift-20261101/ideas-e1.md",
+   "title": "A scalar-operation normal-channel bridge"
+  },
+  "IDEA?drift-codex-05": {
+   "kind": "IDEA",
+   "path": "topics/padua-lanczos-drift-20261101/ideas-e1.md",
+   "title": "Formal scalar capacity from coherent and multinode error signs"
+  },
+  "IDEA?drift-codex-10": {
+   "kind": "IDEA",
+   "path": "topics/padua-lanczos-drift-20261101/ideas-e3-e4.md",
+   "title": "Polynomial-surrogate residual certificate and filtered minimax selection"
+  },
+  "IDEA?drift-codex-11": {
+   "kind": "IDEA",
+   "path": "topics/padua-lanczos-drift-20261101/ideas-e3-e4.md",
+   "title": "Minimize an unqualified inverse norm and omit χ"
+  },
+  "IDEA?drift-codex-14": {
+   "kind": "IDEA",
+   "path": "topics/padua-lanczos-drift-20261101/ideas-e3-e4.md",
+   "title": "Every-rule, every-error positive BJ drift lower bound (pathwise formalization of PD-T055's quantifier)"
+  },
+  "IDEA?drift-codex-15": {
+   "kind": "IDEA",
+   "path": "topics/padua-lanczos-drift-20261101/ideas-e3-e4.md",
+   "title": "Prior-vector subtraction repairs fixed-degree closure after an adverse raw-product source"
+  },
+  "IDEA?drift-codex-16": {
+   "kind": "IDEA",
+   "path": "topics/padua-lanczos-drift-20261101/ideas-e3-e4.md",
+   "title": "Extend the quotient invariant to exponential every-rule drift"
+  },
+  "IDEA?drift-claude-17": {
+   "kind": "IDEA",
+   "path": "topics/padua-lanczos-drift-20261101/ideas-e3-e4.md",
+   "title": "Parent-repair and reference-basis rules against the BJ span drift"
+  },
+  "IDEA?drift-codex-30": {
+   "kind": "IDEA",
+   "path": "topics/padua-lanczos-drift-20261101/ideas-e5.md",
+   "title": "explicit corner negative witness for P_n"
+  },
+  "IDEA?drift-codex-31": {
+   "kind": "IDEA",
+   "path": "topics/padua-lanczos-drift-20261101/ideas-e5.md",
+   "title": "explicit square-case reading-(E) family with residual constants"
+  },
+  "IDEA?drift-codex-32": {
+   "kind": "IDEA",
+   "path": "topics/padua-lanczos-drift-20261101/ideas-e5.md",
+   "title": "equal-phase negative-witness path"
+  },
+  "IDEA?drift-codex-33": {
+   "kind": "IDEA",
+   "path": "topics/padua-lanczos-drift-20261101/ideas-e5.md",
+   "title": "negative witness on either edge x=1 or y=1"
+  },
+  "IDEA?drift-codex-34": {
+   "kind": "IDEA",
+   "path": "topics/padua-lanczos-drift-20261101/ideas-e5.md",
+   "title": "fixed nonzero A/n^3 common-angle increment"
+  },
+  "IDEA?drift-codex-35": {
+   "kind": "IDEA",
+   "path": "topics/padua-lanczos-drift-20261101/ideas-e5.md",
+   "title": "residual-aware nonexact reading-(G) realization (deferred)"
+  },
+  "IDEA?drift-codex-55": {
+   "kind": "IDEA",
+   "path": "topics/padua-lanczos-drift-20261101/ideas-e6.md",
+   "title": "Upstream Hokanson benchmark (actual polyrat V+A)"
+  },
+  "IDEA?drift-codex-56": {
+   "kind": "IDEA",
+   "path": "topics/padua-lanczos-drift-20261101/ideas-e6.md",
+   "title": "Default coordinate orientation of upstream polyrat"
+  },
+  "IDEA?drift-codex-57": {
+   "kind": "IDEA",
+   "path": "topics/padua-lanczos-drift-20261101/ideas-e6.md",
+   "title": "Observed drift implies all fit problems fail"
+  },
+  "IDEA?drift-codex-58": {
+   "kind": "IDEA",
+   "path": "topics/padua-lanczos-drift-20261101/ideas-e6.md",
+   "title": "BNT as a multivariate upstream comparator"
+  },
+  "IDEA?drift-codex-59": {
+   "kind": "IDEA",
+   "path": "topics/padua-lanczos-drift-20261101/ideas-e6.md",
+   "title": "ZN actual implementation"
+  }
+ }
+}

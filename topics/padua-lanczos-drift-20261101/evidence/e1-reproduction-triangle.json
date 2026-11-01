@@ -1,0 +1,22 @@
+{
+  "set": "triangle",
+  "result": "PASS",
+  "regenerated_target_capacities_and_signs": "matched compact certificate",
+  "explicit_projection_check": {
+    "set": "triangle",
+    "degree": 12,
+    "rule": "bj",
+    "result": "PASS",
+    "checks": [
+      "explicit final normal projection squared norm",
+      "random-sign diagonal expectation",
+      "explicit>=expected",
+      "all node signs unit magnitude"
+    ],
+    "trust_limit": "Target capacities are trusted input to this checker; independent generator rerun needed to check source propagation.",
+    "input_sha256": "c0ad88ea90a79e53866a2b14c94b15e7725770c4193ba6d3db7659e0e3acb57f"
+  },
+  "generator_sha256": "32b9e82756a38387ce5a9f2d596d3f6d59282eeec30b5a25afe96f514abe5553",
+  "certificate_sha256": "fae9c8743c78230ef0aa82c185d1efe0eee37be066982a37d39d920af95719f0",
+  "source_record_sha256": "e215556a01f9e169163b228dfe1b984d28e0cebd7f78e0d858f9a61a0de878c8"
+}

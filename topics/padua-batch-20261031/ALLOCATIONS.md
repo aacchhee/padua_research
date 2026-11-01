@@ -13,7 +13,7 @@ Full ledgers and four registries checked at main
 `9f0c7710abd19ee5a0d61bce6384e7a399e838d2`. All closed PRs returned were merged;
 no missing retired reservation was found. The MZ topic appeared between the
 initial and final scan; the superseded recommendation was never reserved.
-[Complete scan and file identities](https://github.com/aacchhee/padua_research/blob/2d20672f62e0130d2adbe104af6e5ee9d05d20af/topics/padua-lanczos-drift-20261101/allocation-scan.json).
+[Complete scan and file identities](../padua-lanczos-drift-20261101/allocation-scan.json); reservation first published in `6920ba632843597c37e1493d077c1df2e89f54cb`; copy pinned at [2d20672](https://github.com/aacchhee/padua_research/blob/2d20672f62e0130d2adbe104af6e5ee9d05d20af/topics/padua-lanczos-drift-20261101/allocation-scan.json).
 
 | Namespace | Reserved range | Count | Estimated needs + permanent headroom |
 |---|---|---:|---|
@@ -191,3 +191,9 @@ Own reservation unchanged, first published `9f0c7710abd19ee5a0d61bce6384e7a399e8
 PR15 reservation data above is imported unchanged (its unavailable local evidence link is made a pinned remote link) from `2d20672f62e0130d2adbe104af6e5ee9d05d20af`; first published commit **6920ba632843597c37e1493d077c1df2e89f54cb**, [PR15](https://github.com/aacchhee/padua_research/pull/15). Its PD-T136–155, PD-N062–071, IDEA-246–285 and LIT-445–459 remain reserved to its branch. This campaign assigns none of them. Stage AUDIT, Claude PENDING.
 
 **Integration order (AC, 2026-11-01):** PR14 (`codex/padua-mz-2d-20261101`) before PR15 (`codex/padua-lanczos-drift-20261101`). After AC squash-merges PR14, the PR15 orchestrator merges the new main without rebasing and keeps both topics' complete reservation and mapping text and every permanent gap (see [readiness plan](../padua-mz-2d-20261101/readiness-plan-01.md)). No range changes. Receipt: [integration-pr14-first-20261101.json](../padua-mz-2d-20261101/protocol/integration-pr14-first-20261101.json).
+
+## Padua Lanczos drift campaign — PR15 final registration
+
+Own reservation unchanged (first published `6920ba632843597c37e1493d077c1df2e89f54cb`): assigned **PD-T136–146 (11), PD-N062–063 (2), IDEA-246–267 (22)**, no LIT. Permanent unused headroom: **PD-T147–155, PD-N064–071, IDEA-268–285, LIT-445–459**. No range shifts, shrinks or reuses another topic's IDs; PR14's assignments and gaps above are preserved. [Map](../padua-lanczos-drift-20261101/preparation/final-id-map.json); [fresh union scan](../padua-lanczos-drift-20261101/preparation/union-scan.json).
+
+**Integration order (AC, 2026-11-01 20:55 CET):** PR15 (`codex/padua-lanczos-drift-20261101`) merges before PR12 (`codex/padua-proof-attempts-2-20261101`). After AC squash-merges PR15, the PR12 orchestrator merges the new main into its branch without rebasing and keeps PR15's registrations (PD-T136–146, PD-N062–063, IDEA-246–267) and permanent gaps (PD-T147–155, PD-N064–071, IDEA-268–285, LIT-445–459) intact. A merge-tree of PR15 head `b6980b9` with PR12 head `f4c5c9e` is clean.
