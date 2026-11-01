@@ -5,7 +5,7 @@
 - Developer/orchestrator: Codex; root runtime does not expose the actual model variant or effort independently.
 - Stage: **WORK**. External Claude audit: **PENDING**. Open handoff: [01-work.md](handoffs/01-work.md).
 - Final IDs: none allocated; provisional records only. Allocation and all Git mutations belong to the orchestrator.
-- Claims: E1–E6 remain **OPEN**; no mathematical or experimental result is asserted by this initialization.
+- Current claims/outcomes: see [report.md](report.md) and the direction ledger in [plan.md](plan.md). Initial all-OPEN wording below is historical setup provenance.
 - For the PR: reconcile candidate records, durable theory, global IDs and shared registries only at PR preparation; show WORK / AUDIT / PR sections.
 - Open for AC: no new decision requested by initialization. Local delivery remains pending because the Windows bridge is unavailable.
 
@@ -54,3 +54,23 @@
 - E6: actual public polyrat source,12 frozen benchmarks plus2grids at2degrees; durable MEASURED home PD-T?drift-codex-50. Root independently reran rotated-square and triangle, comparing both complete case objects equal; receipt evidence/independent-e6-root.json.
 - Independent Astra xhigh checker published checks/independent-math-01.md and essential exact evidence/independent-math-01.json: own1800 coordinate derivative checks, exact decisive n12 reruns, E3/E4/E5 analytic reconstruction and rational tables/moments. Supplementary only, Claude audit PENDING.
 - All88 aggregate exact runs completed without fallback. Original sufficient KHS test INCONCLUSIVE, tightened certificate passes. Full scalarCGS2 graph is now declared and tested separately; no fullgraph rotated verdict is claimed yet.
+
+## Final scientific outcome and recovery
+
+- Full scalarCGS2 graph is now explicit. The factor10 comparison remains INCONCLUSIVE on rotatedQ24; an exact formal-model posthoc lower factor greater than7 is retained separately. Neither loose bounds nor a below-threshold endpoint ratio refute the actual condition comparison.
+- General E2 family/rates and actualIEEE activation, general E3 polynomial safety, originalPD-T055, PD-T075(U2) and PD-T056(G) remainOPEN. No model change is hidden in the aggregate comparison.
+- Failed Padua witness paths have separate IDEA32–34 and scoped PD-N?drift-codex-32 records. Existing theory files remain unchanged; all seven literal OLD proposal blocks were verified against the originals.
+- Protocol snapshot verifies reservation separation and file-size limits; imported MZ receipt links were repaired to pinned GitHub URLs because the target topic is not in this branch. Its reservation prose/ranges remain intact.
+- Intended Windows results content: [local-results-entry.md](local-results-entry.md). Append this entry to the topic-local destination when the bridge exists; no Windows/shared RESULTS write is claimed.
+
+## Completed independent scalar supplement
+
+- Separate Astra xhigh executions reproduced both fullgraph comparator uppers,
+  coherent witnesses, multinode witnesses, all950 capacities/signs, explicit
+  projections and localprimitive verifier. Essential output is committed at
+  evidence/independent-scalar-01.json; analytic negative32 also reconstructed.
+- Root added only receipt/status metadata to05 after the checker's pinned
+  snapshot. MEASURED, exact endpoints and INCONCLUSIVE conclusion unchanged.
+- All scientific workers released their files; no developer experiment remains
+  running. No full normalized trajectory replay, actualIEEE activation theorem,
+  original-paper rereading or Claude audit is represented as executed.

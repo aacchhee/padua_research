@@ -8,9 +8,10 @@ supplementary independent Codex checking does not replace it.
 
 ## E1 verdict and E2 drift theorem
 
-**The aggregate-residual span-sensitivity mechanism survives its finite
-comparison using a sharper rigorous certificate. The original KHS-only
-sufficient certificate is INCONCLUSIVE.** All 88 rational cases ran: degrees
+**E1's factor-10 comparison in the declared full scalar-rounding model is
+INCONCLUSIVE. The aggregate-residual comparison is PROVED with a sharper
+certificate; its original KHS-only sufficient test is also INCONCLUSIVE.**
+These outcomes remain distinct. All 88 aggregate rational cases ran: degrees
 2–12, two grids, four selections. Independent exact reruns confirm the decisive
 inequalities. The grids are the uniform 325-point T24 triangle and 625-point
 Q24 product grid rotated with rational cosine 3/5 and sine 4/5. Choices are
@@ -31,6 +32,22 @@ sufficient threshold 100; the sharper row bound gives 137.36. The extra
 certificate, final-degree clarification and corrected DEAD quantifier are
 disclosed in `evidence/e1-freeze.json` and `directions/E1.md`. An improved
 certificate is never represented as the original frozen test.
+
+An additional explicitly specified, left-to-right scalar CGS2 graph uses
+independent relative operation errors bounded by u. Its normal Jacobian is
+derived analytically in record03; dot/coefficient/norm scalar errors lie in
+the polynomial quotient kernel, while vector products, updates and divisions
+supply the stated local sources. This is a formal upper-bound rounding model;
+admissible errors need not be attained by actual IEEE arithmetic.
+
+Exploratory exact finite bounds for that full graph give a triangle squared
+BJ/pivot ratio lower bound about 657000 and a rotated-square BJ/alt ratio
+lower bound about 62.09. The latter proves a factor greater than 7, but its
+intervals do not settle the factor-10 comparison. It is neither a pass at 10
+nor a kill of the mechanism. Subset-map upper bounds are not substituted for
+full implementation bounds. Record05 labels this finite follow-up MEASURED;
+the large raw capacity output remains outside Git, with compact signs/gains,
+hashes and a deterministic regeneration/check path.
 
 Analytic **PD-T?drift-codex-01/02** prove the normal-quotient derivative and
 rational certificates. The finite certificate and scalar-operation extension
@@ -126,9 +143,8 @@ those missing runs. No new paper fulltext was retrieved or represented as read.
 
 ## Remaining obligations
 
-Finish and assess the declared full scalar-operation sensitivity graph;
-subset upper bounds do not upper-bound the full implementation. Preserve
-inconclusive outcomes. The all-degree drift theorem, unconditional selection
+Tighten the declared full scalar-operation comparison if pursuing that route;
+its factor-10 result remains inconclusive. The all-degree drift theorem, unconditional selection
 theorem, original universal reorthogonalization target, optimal uniform Padua
 radius and reading (G) remain OPEN. Claude audit, final-ID assignment/registry
 integration and Windows archival/results delivery remain separate acceptance

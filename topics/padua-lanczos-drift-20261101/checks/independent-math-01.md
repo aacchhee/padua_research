@@ -79,3 +79,51 @@ Results:
 ## Remaining limits
 
 The finite exact computations trust CPython integer arithmetic and python-flint. Independent small-scale Fraction reconstruction reduces implementation dependence but does not replace those trusted components at degree 12. No scalar-operation dual replay, actual-rounding realizability experiment, fresh original-paper verification, or complete new audit of historical dependencies was performed. E6 was assigned back to the parent and is outside this report. Changes to the pinned proof, code, input, or essential evidence require an impact check and potentially a new rerun; metadata-only status changes after recording these completed checks should be identified separately. Required Claude audit and final registry integration remain the parent's responsibilities.
+
+## Supplement 01 — formal scalar graph and later proof impact
+
+This supplement extends the original snapshot above; it does not overwrite its provenance. Its exact content identities and essential regenerated outputs are in [independent-scalar-01.json](../evidence/independent-scalar-01.json), 186681 bytes at this receipt, SHA-256 `2d06b3b4e04956f9c9e2f4127c3937543dc92ee071de2926589d0a40c9bf6a10`. The independently authored receipt checker is `tracks/bivariate-lanczos/code/drift/check_independent_scalar.py`, SHA-256 `b711a1035d0709232b1854b3fb9334fe4e4a11cde26810dda08505d97f7d9aa4`. It checks rational equality/enclosures and records provenance; it is not a second implementation of the degree-12 scalar graph.
+
+**Executed scalar checks.** Independently reran both full-graph comparator uppers, both coherent-node BJ lower witnesses, and both BJ multi-node capacity/greedy-sign generators at degree 12. The triangle target is 86 and the rotated target is 90. The prior scalar-source records only select candidate nodes; each run rebuilds the exact basis and relevant responses. The multi-node run uses the independently regenerated coherent-node output. Independently reran the explicit final-normal-projection checker on both regenerated multi-node artifacts. Thus the latter checks did not rely on unregenerated developer capacities.
+
+Every exact endpoint dictionary and each compared choice/target/sign field agrees identically with committed developer evidence. Every one of the 325 triangle and 625 rotated regenerated target capacities also agrees identically with the corresponding developer working artifact. All 12 included rational square-root enclosures passed a separate Fraction check. The compact receipt retains the essential exact endpoints and every node sign; it identifies the large fully regenerated capacities by canonical content hash, since the public generator reconstructs them from the explicit nodes, choices and retained target without hidden input. Local working paths are not asserted to be a permanent archive.
+
+| Independently regenerated full formal scalar model | Greedy lower squared / full upper squared, display only | Exact conclusions |
+|---|---:|---|
+| T24 BJ / pivot | 657331.0774535049 | >640000, hence >100 |
+| rotQ24 BJ / alternating | 62.08553668985878 | >49 and <100 |
+
+Both use the same l-infinity domain of **all** scalar-operation error parameters and spectral output. The upper includes all 90 source columns; it is not a coordinate/division-subset upper. The lower is an admissible sign choice in that full formal graph. The overall factor-ten scalar comparison remains **INCONCLUSIVE**. In particular the rotated endpoint ratio below 100 does not refute the actual capacity comparison. The weaker >7 on both sets and >800 on the triangle are post-hoc endpoint consequences, not replacement preregistered targets. These finite values agree with file 05's mathematical table; status integration is left to the parent, and no conclusion about actual IEEE activation follows.
+
+The producer commands, run separately with `PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1`, were:
+
+```sh
+python tracks/bivariate-lanczos/code/drift/e1_cgs2.py --set triangle --degree 12 --rule pivot --output /workspace/padua-drift-runs/independent/cgs2-triangle-n12-pivot.json
+python tracks/bivariate-lanczos/code/drift/e1_cgs2.py --set rotated --degree 12 --rule alt --output /workspace/padua-drift-runs/independent/cgs2-rotated-n12-alt.json
+python tracks/bivariate-lanczos/code/drift/e1_cgs2_witness.py --scalar-source /workspace/padua-drift-runs/e1/scalar-triangle-n12-bj.json --output /workspace/padua-drift-runs/independent/cgs2-witness-triangle-n12-bj.json
+python tracks/bivariate-lanczos/code/drift/e1_cgs2_witness.py --scalar-source /workspace/padua-drift-runs/e1/scalar-rotated-n12-bj.json --output /workspace/padua-drift-runs/independent/cgs2-witness-rotated-n12-bj.json
+python tracks/bivariate-lanczos/code/drift/e1_cgs2_multinode.py --witness /workspace/padua-drift-runs/independent/cgs2-witness-triangle-n12-bj.json --output /workspace/padua-drift-runs/independent/cgs2-multinode-triangle-n12-bj.json
+python tracks/bivariate-lanczos/code/drift/e1_cgs2_multinode.py --witness /workspace/padua-drift-runs/independent/cgs2-witness-rotated-n12-bj.json --output /workspace/padua-drift-runs/independent/cgs2-multinode-rotated-n12-bj.json
+```
+
+The two `e1_sign_check.py` commands and the local primitive checker command are recorded verbatim in the receipt. The independent receipt/check command was:
+
+```sh
+python tracks/bivariate-lanczos/code/drift/check_independent_scalar.py --independent-root /workspace/padua-drift-runs/independent --developer-root /workspace/padua-drift-runs/e1 --output topics/padua-lanczos-drift-20261101/evidence/independent-scalar-01.json
+```
+
+The independently executed `e1_cgs2_verify.py` checked 34200 exact local graph-gradient identities and 307800 zero-baseline second-pass operation contributions across both grids and all four rules at degree three. All passed and match the developer record. Its raw fixed status label says developer execution; this supplement corrects attribution for this separately executed artifact. It enumerates the local vector arithmetic primitives after the analytic quotient reduction. It **does not** replay every scalar operation of the complete normalized trajectory, including differentiated dot/norm coefficients; that stronger supplementary check remains unperformed. This is the only change to the original report's statement that no scalar-operation dual replay had been performed: local primitive replay is now completed, full trajectory replay is not.
+
+**Analytic reconstruction of added scalar witnesses.** For target t, writing `S_i=sum_h |g_th(i)|rho_hi`, a fixed row l of R gives the stated lower bound by testing the normal target column against the unit vector `R e_l/sqrt(R_ll)`. Independent node signs cancel the off-diagonal terms in expectation, yielding `sum_i R_ii S_i^2/d_t`. In the exact greedy construction, the new cross term is `-2 s_i S_i sum_l b_l(i)c_l/d_l`; the chosen sign makes it nonnegative. The final identity `||s*S||^2-sum_l c_l^2/d_l` is precisely its orthogonal-normal squared norm. These steps validate the coherent, projected-row, expectation and greedy additions in scalar file 03; the code implements their stated l-infinity amplitudes and the full upper, without switching source norms.
+
+**New E5 failed paths, file 32.** Reconstructed all three claims. Equal phase gives `g_m=sin(alpha)sin(m d)` and hence `P=10 sin^2(alpha)sin^2(d)`. On either stated edge, `g_m=b sin(C-m d)` and the consecutive sine Turan identities give `P=b^2[(9/2)sin^2(C-d)+(11/2)sin^2(d)]`. For a fixed nonzero A and increment `A/n^3`, the previously reconstructed Taylor formulas give a first term O(n^-6), second term asymptotic to `-A^2 n^-5`, and remainder O(n^-6). Thus all four `n^5 g_m` tend to `-A^2`, and `n^10 P` tends to `9A^4/2>0`. The threshold may depend on A. This excludes only the fixed-A path and does not exclude the successful n-dependent `A_n=a/n`. No mathematical finding remains in these identities or their stated scope; they do not imply a broader near-path obstruction.
+
+**Post-snapshot content impact.** Reread the changed direction record and proof metadata. Finite aggregate file 04 changes verification status and cites the already completed independent receipt; its mathematical statement, reduction and essential endpoints are unchanged. E3 files 10/11 and E4 files 14/15 retain the reviewed mathematical claims, with source/model/check attribution and the resolved represented-input computability qualification. E1.md preserves the original KHS-only INCONCLUSIVE result and the separate tightened aggregate certificate, and labels the full scalar comparison INCONCLUSIVE. Scalar file 03 adds the support/sign arguments reconstructed above plus local-check attribution; file 05 separately records the finite scalar evidence. No new unresolved finding was identified in this impact scope.
+
+| Current reviewed proof | SHA-256 |
+|---|---|
+| E1 scalar bridge 03 | `38a58ef2070d8d64d57d695b58668071f9fb6b20ab9bd5895489ff03fd21479d` |
+| E1 finite aggregate certificate 04 | `622e76b507e411867239238e4b407dfe5637d6c2dd7f95623348728fb7e4e930` |
+| E5 failed paths 32 | `12e8cbfb9c8cc5a114dacdd92fdb88c0c05de6bf8a050f42edff0a77dd8b41b7` |
+
+All other current proof/code identities are in the supplemental receipt. This supplementary check does not replace the required external Claude audit and does not authorize merge. No Git operations, registry changes or developer-proof edits were performed by this checker.

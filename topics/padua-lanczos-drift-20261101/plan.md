@@ -2,7 +2,7 @@
 
 - Branch: `codex/padua-lanczos-drift-20261101`.
 - Initial base/rules: `cf89b140530d5838bdb208a8c28f3e7aa676ace3`; current synchronized base `806cc7b4509fd93bae652f9545d32d95529f8281` (rules unchanged).
-- Stage: WORK. This is an initial execution ledger, not evidence that any direction has succeeded.
+- Stage: WORK pending the last scalar-model check; Claude audit PENDING. Direction outcomes below are scoped by report.md and their durable theory files.
 
 ## Order and gates
 
@@ -15,14 +15,14 @@
 
 ## Direction ledger
 
-| Direction | Initial status | Gate / next action | Evidence |
+| Direction | Target status | Outcome / remaining action | Evidence |
 |---|---|---|---|
-| E1 | OPEN | First decisive exact first-order sensitivity test | Pending developer return |
-| E2 | OPEN | Blocked on documented E1 survival | None yet |
-| E3 | OPEN | Selection criterion minimizing span sensitivity / inverse propagator; staircase C drift theorem or counterexample | None yet |
-| E4 | OPEN | Formal universal class of BJ reorthogonalization rules; prove/refute information-never-formed obstruction on one measure | None yet |
-| E5 | OPEN | Padua positivity-radius upper witness/rate; reading (G) for Padua n = 3 or 4, or a square case with the √ε theory | None yet |
-| E6 | OPEN | Run public V+A authors' code outside Git, hash inputs, map selection and measure drift / least-squares effects | None yet |
+| E1 | Exact aggregate comparison PROVED; full-model comparison separately scoped | Tightened exact certificate survives both grids; original KHS-only sufficient test inconclusive; finish scalar graph evidence | Theory01–04 and evidence/e1*.json |
+| E2 | OPEN | Standard scalar-operation bridge written; all-degree exponential/matching drift theorem not obtained | E2.md and theory03 |
+| E3 | OPEN general family safety | Analytic span certificate and filtered fixed-degree criterion proved; useful uniform score bounds open | Theory10/11, E3.md |
+| E4 | OPEN original PD-T055 | Quantifiers formalized and restricted projection-only adverse-source obstruction proved | Scoped negative theory14/15, E4.md |
+| E5 | U1 PROVED; U2 and G OPEN | Named certificate radius O(n^-5); concrete residual-aware square-root family; failed witness paths retained | Theory30/31 and negative32, E5.md |
+| E6 | MEASURED within acquired-source scope | Actual polyrat executed; source/order and fit effects measured, two hard cases independently rerun; BNT/ZN limits retained | Theory50, E6.md, external-code.md |
 
 ## Allocation and acceptance
 

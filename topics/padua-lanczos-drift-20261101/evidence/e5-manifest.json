@@ -7,14 +7,14 @@
   "sympy": "1.14.0",
   "randomness": "none",
   "result": "PASS",
-  "interpretation": "Exact symbolic corroboration. Universal claims have written analytic proofs; no computer-assisted proof or finite negativity threshold claimed.",
+  "interpretation": "Exact symbolic corroboration including scoped failed-path identities. Universal claims have written analytic proofs; no computer-assisted proof or finite negativity threshold claimed.",
   "independent_execution": "Distinct independent mathematical checker constructed derivatives and square moments afresh; code/output/hash pin parent-owned; /workspace/padua-drift-runs/independent/independent-math-check.json reported PASS. External Claude audit pending.",
   "retention": "Small necessary repository evidence; cold-storage transfer not claimed",
   "artifacts": [
     {
       "path": "tracks/bivariate-lanczos/code/drift/e5_exact_checks.py",
-      "sha256": "4c0a4b5bc7cf70adbb25098c6e0c4d9d26cd86548508f288ab511b6ad7a02c5c",
-      "bytes": 3179
+      "sha256": "548802feeb7be30bbf8a888be8aa95678534655e19c50746e24e697343a8bc8e",
+      "bytes": 4720
     },
     {
       "path": "tracks/bivariate-lanczos/theory/drift-codex-e5-30-padua-positivity-radius-upper-bound.md",
@@ -28,8 +28,14 @@
     },
     {
       "path": "topics/padua-lanczos-drift-20261101/evidence/e5-exact-checks.json",
-      "sha256": "daf14ff20d44713cc1bd103341781b35a66d4b956a8d0c2cc826e25b38627396",
-      "bytes": 724
+      "sha256": "ba6efdcd1dfd4f10c5b27cd1574689c1500f37abb834bf8a2910b76a448dacd3",
+      "bytes": 854
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e5-32-failed-negative-witness-paths.md",
+      "sha256": "12e8cbfb9c8cc5a114dacdd92fdb88c0c05de6bf8a050f42edff0a77dd8b41b7",
+      "bytes": 7704
     }
-  ]
+  ],
+  "new_negative_record_independent_execution": "Pending distinct reconstruction; prior independent PASS covers the two earlier PD-T records."
 }

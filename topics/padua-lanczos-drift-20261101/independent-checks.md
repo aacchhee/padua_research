@@ -41,3 +41,14 @@ report and exact essential evidence are under `checks/` and `evidence/`;
 the report pins read files by SHA-256 and distinguishes executed reruns from
 analytic review. New scalar-graph or failed-path additions after its first
 snapshot require an explicit follow-up, not inferred coverage.
+
+## Final scalar supplement
+
+`evidence/independent-scalar-01.json` preserves the independently regenerated
+formal-CGS2 upper/lower endpoints, all950 capacity/sign comparisons and explicit
+projections. All checks pass. The factor10 full-scalar comparison remains
+INCONCLUSIVE; record05 remains MEASURED. The separate checker directly reran the
+underlying producers with independently regenerated priors; it did not run the
+wrapper or a complete normalized-trajectory derivative checker. Its report
+also reconstructs new scoped negative32 and confirms finite04's status-only
+update. Root's later receipt addition to record05 changes metadata only.

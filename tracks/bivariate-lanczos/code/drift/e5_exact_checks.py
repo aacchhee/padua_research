@@ -38,7 +38,14 @@ def main():
               + sine_sequence[2]**2-sine_sequence[1]*sine_sequence[3])
     edge_expected = amplitude**2*(s.Rational(9, 2)*s.sin(angle-delta)**2
                                   + s.Rational(11, 2)*s.sin(delta)**2)
-    assert s.trigsimp(s.expand_trig(edge_p-edge_expected)) == 0
+    sc, cc, sd, cd = s.symbols("sc cc sd cd")
+    edge_difference = s.expand(s.expand_trig((edge_p-edge_expected)/amplitude**2))
+    edge_polynomial = edge_difference.subs(
+        {s.sin(angle): sc, s.cos(angle): cc,
+         s.sin(delta): sd, s.cos(delta): cd}, simultaneous=True)
+    circle_relations = s.groebner(
+        [sc**2+cc**2-1, sd**2+cd**2-1], sc, cc, sd, cd, domain=s.QQ)
+    assert circle_relations.reduce(edge_polynomial)[1] == 0
     equal_phase_p = (9*s.sin(delta)**2+s.sin(2*delta)**2
                      - s.sin(delta)*s.sin(3*delta))
     assert s.trigsimp(s.expand_trig(equal_phase_p-10*s.sin(delta)**2)) == 0
