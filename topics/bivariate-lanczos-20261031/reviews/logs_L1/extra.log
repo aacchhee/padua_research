@@ -1,0 +1,37 @@
+# rv_extra.py python 3.13.18 numpy 2.5.3
+# (i) complex windowed (N, N*) recurrence: loss at n = 4, 8, 12, 16, 20, 24
+   square         orth listing  1.6e-15 6.1e-15 4.0e-13 4.3e-11 1.0e-08 6.5e-06
+   square         cgs  listing  1.7e-15 1.7e-14 1.6e-12 3.0e-10 1.4e-07 5.9e-05
+   square         orth full     1.6e-15 1.6e-15 1.6e-15 1.6e-15 1.6e-15 1.6e-15
+   tensor_cheb    orth listing  2.0e-15 2.2e-14 2.8e-12 5.2e-10 1.2e-07 3.6e-05
+   tensor_cheb    cgs  listing  3.8e-15 1.3e-13 1.8e-11 7.1e-09 4.2e-06 2.9e-03
+   tensor_cheb    orth full     2.0e-15 2.0e-15 2.0e-15 2.0e-15 2.0e-15 2.0e-15
+   square_rot0.3  orth listing  1.6e-15 4.9e-15 4.3e-13 6.1e-11 1.5e-08 9.8e-06
+   square_rot0.3  cgs  listing  1.6e-15 4.5e-14 3.1e-12 5.5e-10 2.4e-07 1.2e-04
+   square_rot0.3  orth full     1.6e-15 1.6e-15 1.6e-15 1.6e-15 1.6e-15 1.6e-15
+   disk           orth listing  1.6e-15 3.9e-15 1.5e-13 2.4e-11 5.0e-09 4.5e-06
+   disk           cgs  listing  1.8e-15 5.8e-14 1.3e-12 7.1e-11 1.9e-08 1.9e-05
+   disk           orth full     1.6e-15 1.6e-15 1.6e-15 1.6e-15 1.6e-15 1.6e-15
+# (ii) loss vs u/rho (exact span) for BJ and two-relation; n, loss_bj, loss_two, u/rho_X, u/rho_Y, u/rho_Z
+   gauss      n= 8 bj=6.9e-15 two=6.9e-15 | 3.9e-15 4.8e-15 3.0e-15
+   gauss      n=12 bj=2.8e-13 two=1.2e-13 | 2.0e-13 3.9e-13 1.6e-13
+   gauss      n=16 bj=8.7e-11 two=6.7e-12 | 1.8e-11 2.9e-11 1.4e-11
+   gauss      n=20 bj=3.9e-08 two=1.2e-09 | 2.7e-09 4.4e-09 2.2e-09
+   gauss      n=24 bj=3.6e-05 two=3.3e-07 | 7.5e-07 1.1e-06 5.8e-07
+   gauss      n=28 bj=6.4e-02 two=2.0e-04 | 2.1e-04 3.1e-04 1.7e-04
+   square_w8  n= 8 bj=1.8e-12 two=2.6e-14 | 3.4e-15 3.0e-15 1.3e-15
+   square_w8  n=12 bj=3.8e-11 two=4.7e-14 | 7.1e-15 4.4e-15 2.6e-15
+   square_w8  n=16 bj=7.8e-10 two=6.7e-14 | 1.2e-14 1.8e-14 7.7e-15
+   square_w8  n=20 bj=1.7e-08 two=2.7e-13 | 5.0e-14 1.7e-14 3.1e-14
+   square_w8  n=24 bj=4.0e-07 two=1.1e-12 | 5.1e-13 3.3e-13 2.4e-13
+   square_w8  n=28 bj=1.1e-05 two=8.0e-12 | 4.8e-12 2.9e-12 2.2e-12
+   square_w4  n= 8 bj=1.2e-14 two=2.8e-15 | 2.4e-15 2.9e-15 1.2e-15
+   square_w4  n=12 bj=2.1e-14 two=4.1e-15 | 5.1e-15 4.2e-15 1.8e-15
+   square_w4  n=16 bj=3.1e-14 two=1.0e-14 | 1.1e-14 7.9e-15 4.3e-15
+   square_w4  n=20 bj=8.1e-14 two=7.8e-14 | 3.2e-14 1.3e-14 1.5e-14
+   square_w4  n=24 bj=4.3e-13 two=2.5e-13 | 2.0e-13 1.4e-13 9.4e-14
+   square_w4  n=28 bj=5.2e-12 two=1.4e-12 | 1.9e-12 1.1e-12 7.3e-13
+# (iii) T-102 part 1: max_k ||f_k|| / (u ||A|| mu) measured vs first-order constant (BJ, block window, CGS)
+   square         max ||f_k||/(u||A||mu) = 0.96;  max ||f_k|| / bound = 0.061 (must be <= 1)
+   square_rotpi4  max ||f_k||/(u||A||mu) = 1.00;  max ||f_k|| / bound = 0.039 (must be <= 1)
+   triangle       max ||f_k||/(u||A||mu) = 31.25;  max ||f_k|| / bound = 0.058 (must be <= 1)

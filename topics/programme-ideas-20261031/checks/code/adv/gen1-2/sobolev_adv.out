@@ -1,0 +1,45 @@
+T1 structure law, M=12, s=2, deg=3
+  seed 0: cons_err 2.2e-16 | H_x: rank(Q^T N Q)=2 skew=4 upper-offband=3 lower-offband=0 symS=5.6e-17 | H_y: 2 4 3 0
+  seed 1: cons_err 1.2e-16 | H_x: rank(Q^T N Q)=2 skew=4 upper-offband=3 lower-offband=0 symS=5.6e-17 | H_y: 2 4 3 0
+  seed 2: cons_err 1.1e-16 | H_x: rank(Q^T N Q)=2 skew=4 upper-offband=3 lower-offband=0 symS=1.1e-16 | H_y: 2 4 3 0
+  seed 3: cons_err 1.6e-16 | H_x: rank(Q^T N Q)=2 skew=4 upper-offband=3 lower-offband=0 symS=4.2e-17 | H_y: 2 4 3 0
+  seed 4: cons_err 1.8e-16 | H_x: rank(Q^T N Q)=2 skew=4 upper-offband=3 lower-offband=0 symS=5.6e-17 | H_y: 2 4 3 0
+  seed 5: cons_err 4.6e-16 | H_x: rank(Q^T N Q)=2 skew=4 upper-offband=3 lower-offband=0 symS=1.1e-16 | H_y: 2 4 3 0
+  seed 6: cons_err 4.6e-16 | H_x: rank(Q^T N Q)=2 skew=4 upper-offband=3 lower-offband=0 symS=3.5e-17 | H_y: 2 4 3 0
+  seed 7: cons_err 4.5e-16 | H_x: rank(Q^T N Q)=2 skew=4 upper-offband=3 lower-offband=0 symS=1.1e-16 | H_y: 2 4 3 0
+  seed 8: cons_err 2.6e-16 | H_x: rank(Q^T N Q)=2 skew=4 upper-offband=3 lower-offband=0 symS=5.6e-17 | H_y: 2 4 3 0
+  seed 9: cons_err 4.6e-16 | H_x: rank(Q^T N Q)=2 skew=4 upper-offband=3 lower-offband=0 symS=1.1e-16 | H_y: 2 4 3 0
+T1 structure law, M=40, s=3, deg=6
+  seed 0: cons_err 2.3e-16 | H_x: rank(Q^T N Q)=3 skew=6 upper-offband=15 lower-offband=0 symS=1.1e-16 | H_y: 3 6 15 0
+  seed 1: cons_err 9.0e-16 | H_x: rank(Q^T N Q)=3 skew=6 upper-offband=15 lower-offband=0 symS=1.1e-16 | H_y: 3 6 15 0
+  seed 2: cons_err 3.1e-16 | H_x: rank(Q^T N Q)=3 skew=6 upper-offband=15 lower-offband=0 symS=5.6e-17 | H_y: 3 6 15 0
+T2 rho-symmetry, M=12, s=2, deg=3, seed=0
+  ||rho(Xt,Yt) - rho(Xt,Yt)^T|| = 0.00e+00 (non-symmetric node op)
+  ||Q^T rho Q - (Q^T rho Q)^T|| = 2.22e-16 (symmetric compression)
+  ||H_x - H_x^T|| = 4.11e-01
+T3 commutator rank of sections, M=40, deg=6
+  s=0 seed=0: rank[Hx,Hy]=6 (n+1=7); max |C| outside the top-degree block rows = 1.1e-15
+  s=0 seed=1: rank[Hx,Hy]=6 (n+1=7); max |C| outside the top-degree block rows = 6.7e-16
+  s=0 seed=2: rank[Hx,Hy]=6 (n+1=7); max |C| outside the top-degree block rows = 4.6e-16
+  s=1 seed=0: rank[Hx,Hy]=7 (n+1=7); max |C| outside the top-degree block rows = 2.4e-02
+  s=1 seed=1: rank[Hx,Hy]=7 (n+1=7); max |C| outside the top-degree block rows = 2.9e-02
+  s=1 seed=2: rank[Hx,Hy]=7 (n+1=7); max |C| outside the top-degree block rows = 2.6e-02
+  s=2 seed=0: rank[Hx,Hy]=7 (n+1=7); max |C| outside the top-degree block rows = 3.6e-02
+  s=2 seed=1: rank[Hx,Hy]=7 (n+1=7); max |C| outside the top-degree block rows = 4.3e-02
+  s=2 seed=2: rank[Hx,Hy]=7 (n+1=7); max |C| outside the top-degree block rows = 4.1e-02
+  s=3 seed=0: rank[Hx,Hy]=7 (n+1=7); max |C| outside the top-degree block rows = 6.1e-02
+  s=3 seed=1: rank[Hx,Hy]=7 (n+1=7); max |C| outside the top-degree block rows = 6.1e-02
+  s=3 seed=2: rank[Hx,Hy]=7 (n+1=7); max |C| outside the top-degree block rows = 6.9e-02
+T4 similarity attack
+  (a) LS case M=12,s=2,deg=3 (N=10): instances with complex eigenvalues of H_x: 10/20
+  (a') LS case M=40,s=4,deg=6 (N=28): instances with complex eigenvalues of H_x: 19/20
+  (b) square case M=6,s=2,deg=3: Q is (10, 10), ||Q Q^T - I|| = 6.7e-16
+      node 0: x_j=+0.2739 double eigenvalue; rank(H_x - x_j I) = 8 (two smallest sv 5.8e-17, 4.0e-17) -> Jordan block of size 2
+      node 1: x_j=-0.4604 double eigenvalue; rank(H_x - x_j I) = 8 (two smallest sv 1.8e-16, 3.7e-17) -> Jordan block of size 2
+      eigenvector matrix condition number of H_x: 9.31e+07 (defective: inf in exact arithmetic)
+T5 coalescence of a block-weighted standard product to the Sobolev pair, M=12, s=2, deg=3
+  eps=1e-01: ||H_x(eps)-H_x^Sob|| = 2.21e-01, ||H_y(eps)-H_y^Sob|| = 1.28e-01, skew rank of H_x(eps) = 4, cond(eigvecs of node op) = 2.1e+01
+  eps=1e-02: ||H_x(eps)-H_x^Sob|| = 2.24e-02, ||H_y(eps)-H_y^Sob|| = 1.20e-02, skew rank of H_x(eps) = 4, cond(eigvecs of node op) = 2.0e+02
+  eps=1e-03: ||H_x(eps)-H_x^Sob|| = 2.23e-03, ||H_y(eps)-H_y^Sob|| = 1.20e-03, skew rank of H_x(eps) = 4, cond(eigvecs of node op) = 2.0e+03
+  eps=1e-04: ||H_x(eps)-H_x^Sob|| = 2.23e-04, ||H_y(eps)-H_y^Sob|| = 1.20e-04, skew rank of H_x(eps) = 4, cond(eigvecs of node op) = 2.0e+04
+  scalar-weight standard pair on the enlarged node set: ||H_x - H_x^T|| = 1.1e-16 (symmetric, so it can never equal or approach the Sobolev H_x, whose skew part has rank 4)

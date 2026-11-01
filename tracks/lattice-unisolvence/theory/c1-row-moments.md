@@ -1,5 +1,7 @@
 # PD-T?lattice-c1-codex-03 — Row-root moment criterion for total-degree interpolation
 
+Final ID: **PD-T086** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T. Aliases: smaller mixed-axis matrix; Cartesian-row kernel reduction.
 Split from: none. Split into: none.
 

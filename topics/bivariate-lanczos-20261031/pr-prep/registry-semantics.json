@@ -1,0 +1,780 @@
+{
+  "source_head": "a2dd845b8a231e1b00733e1361e2a9ad3bad222f",
+  "purpose": "Explicit current registry summaries for audit-04 A4-M1/M2; source scientific records remain unchanged. Dispositions are not extracted from historical first lines. Dependency lists distinguish forward uses, definitions, evidence and nondependencies in basis notes. No new scientific result or status upgrade.",
+  "source_hash_convention": "SHA-256 of UTF-8 text with the single Final ID allocation line removed. Current candidate amendments and theory sections are authoritative; report.md was contextual only.",
+  "source_sha256": {
+    "topics/bivariate-lanczos-20261031/baseline-candidates.md": "44d6a96e2d16de798b0a010556801447d317477e26d492a8a90be84547985f78",
+    "topics/bivariate-lanczos-20261031/directions/L1/candidates.md": "b54087ae1e68984fb0fa8bc02ecc4060ed04aae22c15200cad5e0d172c3b562e",
+    "topics/bivariate-lanczos-20261031/directions/L2/candidates.md": "bda0de68d9e094bab19fef0b8183d27e0f06f507cb6d34b36ef3268f1e69085a",
+    "topics/bivariate-lanczos-20261031/directions/L3/candidates.md": "55cfbf8ee57f4ce5d5f1e291ea681a8e942a30adb679ce28a540e691306018e0",
+    "topics/bivariate-lanczos-20261031/directions/L5/candidates.md": "0c8c6954905c98403f1e0c03a0adf45944905e0b3834b6484a2cc5b8ca07e90e",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-300-l3q1-backward-interpretation-target.md": "a1157022d0750fe6f64eb5bfc6a6c7f0182d8f68840f9069f73f8c96461e0143",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-301-truncated-favard-sections.md": "6362f6ff465ab4d8d93e2cdb0fd49989e0faed93430edbfccc9bcdc63b4a03c8",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-302-backward-reduction-moment-cone.md": "2ced66143693b295a8ffd0a6de718866ee6c0cafd36ea82841cdcd5fbb490e69",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-303-moment-cone-rate-theorem.md": "e2cebac0f5f6181d75a412ef815f8c11f2e788ce21d90cf3dff1c940c619c7f9",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-304-square-case-commutator-bounds.md": "efbf1ab4adb34eda1ad0006e30eb2a22ef387e5235986ac5498d2e539f35781b",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-305-three-node-square-case-sqrt-rate.md": "52f5ddda0bad49b102da6637a6b58428a881c0be2eb2863ca7cbf8682cd9ce48",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-306-padua-n2-sqrt-rate.md": "52af1c9ddced7a788f3dd27448e156d6b8a5df5d82768c7bb2c7494aca885beb",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-307-square-case-hessian-condition-measurements.md": "683ad23074cc20ae56126bed032efc9bcd77f211922a24f142617365b5b3691b",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-308-compression-model-no-obstruction.md": "88bc0093ab89d29be72e06fc8c66114b9a4eb86c2c9fb9eb8fb71dd80c8e990d",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-309-square-case-quadratic-generator-form.md": "373d7d198a7d02d2ea119bc1d09080c53e085a1f88804dbb093ce5bcb4360696",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-310-equispaced-checkerboard-condition-H.md": "c2848bc6f183718d9ffa02f12e1f7c6b91274495977edf20c9902640f72cbcea",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-311-equispaced-certificate-margins.md": "34a5c33ced7f222705a05df6b62dd42f7bc1624223d12caf329f920c9e876652",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-312-padua-interior-turan-lemma.md": "80f59ddd11542339832392bd331ae0c5ec57811ae337e2b12303a81dcfdc394d",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-313-padua-turan-certificate-all-n.md": "8c85a85617469b5b329a826482d78369c7bdff2447e86d4659129b1450299474",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-314-computed-data-consistency-symmetry.md": "5ba1c0bc7493f949cacfb8d76cf740876a249440ebd890611dc5a1ebc42b5557",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-315-consistency-defect-measurements.md": "c0bf408f1c0b36c98d34975122afea635b19cc89406333b6676942a968f82fd1",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-316-square-case-first-order-commutator-isomorphism.md": "8a149eaf2ac262824b82b31147042663420ebab68c79d38d0f447b291d2f7e55",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-317-first-order-commutator-rank-measurements.md": "49cf947440ca9e08f3422d563dc47eef836d3649f5dd798505956433f7888bdc",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-318-first-order-commutator-formula.md": "5536df5102e140e357c4d8a5eb65c2569bd1473ad8d0e2a9440816745ab29944",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-319-padua-obstruction-radius-uniformity.md": "955dbfa15ad4c29d963586ef254bbc75e20d2af6ab8a4cad200264c93d4aaad7",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N301-padua-n3-exact-backward-obstruction.md": "1c3ef581874c134d14c00b8a4aca1b3039bceadbb5a43728e25ef5d44ae817f1",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N302-square-case-linear-rate-refuted.md": "7104f281107a413cea3b9509497561fd53b536f94152bce1e7629b2feec8dc26",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N303-padua-all-n-exact-backward-obstruction.md": "6ef1bbfbcfa818d33626e4435c12e8d2a12d5297463795dccb4a400696b087ed",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N304-compression-model-insufficient.md": "1494e3bad7ddb6b4160c863353ac75f8cadc126162ffdba7f0058edebbde272b",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N305-closed-form-C1-fails.md": "37eb32350fbbe2ff30114d30c763a2c86f927f89697f36b220960a9af72e48b4",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N306-H-not-decided-by-count.md": "6f4eb65688d9cbf8123b37e54a9e47d4d33a8669385ef40eb848b49b623dc412",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N307-consistency-survives-loss-refuted.md": "c9ef44696d5820b9a48efc8dfa1c29ce2837a27aac271c9d0e5a05f9b8cc552a",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N308-weight-only-greenbaum-fit-refuted.md": "056f450111eece41d0cd6426570776c9ee564a77b319c807e016dd17b7d7de4f",
+    "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N309-normalized-residual-threshold-refuted.md": "67ccce2680cba0f303e4db8fd0a3d9762868422539cb4d16554a7116066ba7f2",
+    "tracks/bivariate-lanczos/theory/bj-universal-reorthogonalization-obstruction-open.md": "84a19ed6abefe138f7e113cf05ea4ece26cfcfc7ce386e75bc14ddb0fb786d99",
+    "tracks/bivariate-lanczos/theory/checkerboard-and-near-product-measurements.md": "39d261103e4b3fa3c8cffb5228f7201ef4bc0f3f6bb28c4796fe57855daa91ca",
+    "tracks/bivariate-lanczos/theory/closed-loop-dot-product-rounding-carries-coefficient-channel.md": "7090f6e9b60c1827d7ac101f5e244d80eba9b5653ccdfd1e9a7434a9457c8367",
+    "tracks/bivariate-lanczos/theory/coefficient-channel-gain-census-checkerboards-measured.md": "227c30458b4bac88182ba720541a8513201b18e3dc572b46b400f269c615e699",
+    "tracks/bivariate-lanczos/theory/commutator-shadow-recursion-and-span-drift-bound.md": "7bfa20b8b8a00709e741aa333ee9fe8a8347703da7f4ed2245b015537c0f5e73",
+    "tracks/bivariate-lanczos/theory/condition-C-staircase-selections-acyclic-sections.md": "714424aefda4abc55236a2492467ff222fd736b494ddae7afb08aeef74aa3660",
+    "tracks/bivariate-lanczos/theory/coupled-section-residuals-general-selection.md": "fb2998d446b8bd75492ccd5c97352b16cd39b26dd9d0160d2dab7d327d7e3f23",
+    "tracks/bivariate-lanczos/theory/exact-certificate-propagator-growth-triangle.md": "332a2e9643c28f31664c49d0858906a3606db2559ac3a8eab5ef2259ac748ab3",
+    "tracks/bivariate-lanczos/theory/exact-omega-recurrence-window.md": "26931230f9a9f97f46470a461f0cadcdc9fcb172d69fba50d028db416ebafa71",
+    "tracks/bivariate-lanczos/theory/exact-window-dots-do-not-remove-coefficient-channel.md": "d68024f372f011937fa2264b972e034d30ffa85d5d8ce42cde37de69c164f896",
+    "tracks/bivariate-lanczos/theory/fifo-threshold-deferral-failure.md": "e8722b140087cd787f2e17322c901527ed475020b9e6234ac3201493b7a378e2",
+    "tracks/bivariate-lanczos/theory/first-order-coefficient-channel-gains-product-type.md": "bc3912e13c7ee6b21fed8e9d3fa1a25427ab8c03b39c22dd7256de5e28d82b1c",
+    "tracks/bivariate-lanczos/theory/fp-local-relations-window-recurrence.md": "13fd2f50b813b8cbad43d26df95cebd473992dd76c83da07cd4ad31271f68735",
+    "tracks/bivariate-lanczos/theory/full-operator-paige-identity-growing-blocks.md": "904cd894c93d6a297a9570279652392432a85b8a41cdf55e34e3b0dbfa0809ad",
+    "tracks/bivariate-lanczos/theory/givens-deficit-slopes-measured.md": "7a34cca3b0fb0dabcbc52fb010c458cef8a5a5a52ca9a218a4d7724439404791",
+    "tracks/bivariate-lanczos/theory/givens-updating-rotation-count-backward-bound.md": "99808ffefad8a8dfa346b9f9dbcdb99a3de0448e4f18e0a87acdfcd08395d295",
+    "tracks/bivariate-lanczos/theory/hl-simax-windowed-complex-recurrence-instability.md": "6a323dd06ea3a80c46b8a679b40f7d254b283d0f5a25b8f41417df54cd4bfb97",
+    "tracks/bivariate-lanczos/theory/l4-band-krylov-obstruction.md": "a9334fead2767516abd30bf8967d18394af76c489bd9bb56a4e16c200c90ec9f",
+    "tracks/bivariate-lanczos/theory/largest-redundant-pivot-degradation.md": "f55631f90910931ff33bd7a3b9401e15b4cd5ffb89c60dd85de4c93bb66414f2",
+    "tracks/bivariate-lanczos/theory/loss-regimes-node-propagator-measured.md": "1b20334cd1d0ca3b15e7f5565d6a01b4cb0ea5e68206206e30bdf6b182887910",
+    "tracks/bivariate-lanczos/theory/magnitude-threshold-pivot-rules-failure.md": "155c981bf6f24c5112c02b51835f1973c6fdd8fee2d5367b91734986ec53feb5",
+    "tracks/bivariate-lanczos/theory/moment-matching-product-factorization-checkerboards.md": "8fefaafadafecfb42f7f9db960fc10543ea0d1bba40057670d4ab2a85f798030",
+    "tracks/bivariate-lanczos/theory/near-product-transfer-perturbation-bound.md": "398d73ed7b01bd986aaf4c4c78599b96cc3ea3077028d6c70bd1cc038e5a88e2",
+    "tracks/bivariate-lanczos/theory/node-row-representation-and-commutator-residual.md": "0c618867a1e2679e495e133a7326594e3cf9bb8208afad730e1bea94b1816023",
+    "tracks/bivariate-lanczos/theory/non-product-amplification-is-a-priori-measured.md": "4c48cb5b891a5e572576f761feba545ce5beeb52faf20bcb574ca064d2b8ffb7",
+    "tracks/bivariate-lanczos/theory/omega-estimate-componentwise-in-window-sources-fail.md": "f88a1b0ba065a146f42bc2e5f9c213cb3719ddf0b14340ada503e7b8a6e6b687",
+    "tracks/bivariate-lanczos/theory/omega-estimate-tracks-loss-measured.md": "2a0cb9af3855e304b359cce2089ad00dcb8363b9d1e49deda7005f3bc7fcb8c9",
+    "tracks/bivariate-lanczos/theory/one-pass-window-semi-orthogonality-insufficient-for-F-section.md": "67126ec06209f896247ee850b8beabbd5f73bafa146681e79bcdbf0361f37c05",
+    "tracks/bivariate-lanczos/theory/one-relation-selections-do-not-keep-spans-near-Sn.md": "8e1d0c614773e87237bd3ade3f44000167726fabc7ce558e8dd8163950df8d03",
+    "tracks/bivariate-lanczos/theory/open-loop-coefficient-noise-estimates-fail.md": "788dfdab19558b0b2367dbde6c38df93f0a2073e7b57300454a3068e30c1b2bd",
+    "tracks/bivariate-lanczos/theory/prefix-unisolvence-order-statistics-measured.md": "0e0a053c8329e442dd864904371ace02230f833bb7c9d7191e7e7b8a8b96bfb1",
+    "tracks/bivariate-lanczos/theory/pro2d-j-fails-on-clustered-checkerboard.md": "ef3595f73e1b53412c957c6761454402d1c6d757b8057c3a0e966741caf28f96",
+    "tracks/bivariate-lanczos/theory/pro2d-rounding-only-trigger-fails.md": "fdd451d4e8c37cb8418a53356efd1ddd5bf9dbb0e389b6f41f93f5a9299532b1",
+    "tracks/bivariate-lanczos/theory/pro2d-strategy-and-cost-measured.md": "1bc0f02b4c67153371f31da879bd478583cd77f9b50e1a24a3f0c121556b82eb",
+    "tracks/bivariate-lanczos/theory/product-measure-computed-propagator-transfer-conditional.md": "4dcbb80b2d4dc5db52b9797f800b8cd5456235747fefe31a84f88ec998f7c8ed",
+    "tracks/bivariate-lanczos/theory/product-measure-propagator-factorization.md": "f6561373d262f4b719bde7fe79dcace72782c3b1f8755fc618eeaec2eb7350e3",
+    "tracks/bivariate-lanczos/theory/r04-failed-scaling-and-predictor-hypotheses.md": "4956585b3509026815ca5117e4c9d1c7d4186220da026d4545eb1ae78dbc06f4",
+    "tracks/bivariate-lanczos/theory/reference-free-span-drift-lower-bound.md": "f340d34b6218999ce2e79d09486a5b0dc003bd8c9a7b3dfd502042d1e0387c22",
+    "tracks/bivariate-lanczos/theory/reorthogonalization-does-not-restore-graded-spaces.md": "a0cfb918d2344b24984688174e2f398d398d1c080713883dfced8904880b8f68",
+    "tracks/bivariate-lanczos/theory/ritz-residual-governance-fails-off-product-supports.md": "b1515811af69d77430dbeb6b73187f7c4771ac0df0f8b8ade5c80dcf42ef95f9",
+    "tracks/bivariate-lanczos/theory/section-accuracy-and-two-pass-window-measured.md": "abb87e8c7ce874d7595bf6585d087de1fe1af855ee9ebc5133d4d609d1d2830c",
+    "tracks/bivariate-lanczos/theory/selection-and-truncation-both-matter-measured.md": "eb2ec6db92211e1f95dd44ea17c35fde9514368bea0e991bc09da706472cd397",
+    "tracks/bivariate-lanczos/theory/selection-rules-and-span-drift-measured.md": "a9d2ca39cca1731cec0df61a974291fd78b5de41aa2026aac4171d2b12d4d957",
+    "tracks/bivariate-lanczos/theory/semi-orthogonality-implies-accurate-F-section.md": "db4812fb4318aad51e6130a0b1842f55098d927de3bab600db79adf2317853aa",
+    "tracks/bivariate-lanczos/theory/support-shape-does-not-classify-loss-regime.md": "d7bf176b192c746573d3c94cd93daf905b0cc83f85d578b89279201754b4bc02",
+    "tracks/bivariate-lanczos/theory/unisolvent-prefix-extension-lemma.md": "4dc283acc4ee5cc8bc550a1baf23f956307c66d8909f27a9242ca864edf6a8d9",
+    "tracks/bivariate-lanczos/theory/window-coefficient-pattern-exact.md": "f5110d68c4894fcbfef3718ecf677eafcc2a41ebe79cb3ef35c19b14a1be8f99",
+    "tracks/bivariate-lanczos/theory/window-recurrence-row-selection-of-jacobi-pencil.md": "81667e10def6423dd0deb139797d72734b1555aa9f126e4e22a8210ccc7c9e02"
+  },
+  "idea_dispositions": {
+    "001": "Developed in L1/L2: exact local, Paige and ω identities survive; general Ritz governance fails on the recorded non-product tests (PD-N007). A general finite-precision theory remains OPEN.",
+    "002": "Developed as IDEA-125/IDEA-126: REJECTED: failed as a general Ritz-governance mechanism on PD-N007(a1)–(a2); exact full-operator identity retained in PD-T031.",
+    "003": "Developed in L2: formed-section theorem PD-T046 survives with local orthogonality and χ explicit; tested J-section and trigger guarantees fail in PD-N013/PD-N014/PD-N019. Universal target PD-T055 OPEN.",
+    "004": "Developed in L3: reading (E) decided in specified cases by PD-T058/PD-T059 and PD-N020/PD-N021/PD-N022; finite-precision reading (G) remains OPEN in PD-T056.",
+    "005": "Developed in L3: compression and exact sections are distinct (PD-N023); exact-section reading (E) has scoped Padua obstructions PD-N020/PD-N022. Reading (G) remains OPEN.",
+    "006": "Retained as historical numerical motivation, not a general conjecture: product-type observations survive in scope; Ritz governance fails on the measured non-product sets (PD-N007).",
+    "007": "Settled background/scoping constraint: regular 2D measures and exact-recurrence benchmarks are distinguished; no new theorem or novelty claimed for this seed.",
+    "008": "Developed in L1/L2: exact commutator-source ω identities PD-T034/PD-T047 survive; rounding-only trigger fails in scope (PD-N014); drift is measured in PD-N013.",
+    "009": "Developed as IDEA-172: commuting-operator fixed-start band-Krylov obstruction PROVED under its stated hypotheses (PD-T076).",
+    "010": "Equivalent to established multivariate window recurrences; retained as priority background, not a new algorithm. No further work planned.",
+    "011": "Split seed: conditioning component remains settled background per AC; pivot and deficit components developed as IDEA-173–IDEA-176, with their scoped failures and retained positive results.",
+    "012": "Settled background per AC: routine Fischer-type conditioning extension; not re-derived or claimed as a new campaign result.",
+    "013": "Developed as IDEA-176: tested magnitude/FIFO remedies fail in scope (PD-N030/PD-N031); fixed scheme retained with order sensitivity. A general safe-rule proof remains OPEN.",
+    "014": "Deferred: univariate MOP conditioning, outside this campaign. Resume only on AC request and coordinate with the Leuven line.",
+    "015": "Developed as IDEA-173: rotation-count explanation REJECTED: failed by the frozen criterion in the uniform-density random family; measured slopes PD-T078 retained, mechanism OPEN.",
+    "016": "Developed as IDEA-174: the only-non-unisolvent-prefix explanation is REJECTED: refuted within measured scope (PD-N029); larger-pivot stabilisation fails.",
+    "017": "Settled background/ill-posed as originally stated; no new structured-IEP backward theorem claimed. The distinct commuting backward question is retained in PD-T056.",
+    "018": "Settled background: retained for context; not pursued as a new campaign claim.",
+    "019": "Equivalent to classical R-factor downdating per AC; settled background. No Q-free novelty claim or re-derivation.",
+    "020": "Settled background per AC: Q-free question closed; optional corrective note not pursued. Resume only if AC requests that note.",
+    "021": "Deferred: downdating extension untested. Resume if AC reopens downdating or a suitable stable windowed recurrence is established.",
+    "022": "Deferred with IDEA-097: untested downdating extension; resume under the same AC/stable-recurrence condition.",
+    "023": "Settled background: retained for context; no new campaign result.",
+    "024": "Deferred with IDEA-097: untested extension; resume if downdating is reopened or a suitable stable windowed recurrence is established.",
+    "025": "Settled background: retained for context; no new campaign result.",
+    "026": "Deferred: d ≥ 4 lies outside the bivariate scope. Resume only after an extension of the L1 framework to d ≥ 3.",
+    "027": "Deferred: noncommuting-projection/joint-section question untested here. Resume with an applicable joint-Ritz/section theory; L1 identities alone do not settle it.",
+    "028": "Deferred: nearby-commuting extension untested here. Resume with an applicable commutator theorem preserving the required section structure.",
+    "029": "Deferred with IDEA-104: shares the nearby-commuting mechanism; resume only with a structure-preserving result applicable to this question.",
+    "030": "Developed as a tool: finite truncated Favard/section correspondence PD-T057 PROVED; used in the L3 reduction. No inherited source proof or new priority claim.",
+    "031": "Developed in L3: PD-T056 remains OPEN for reading (G); reading (E) has rates PD-T059 and scoped obstructions PD-N020/PD-N021/PD-N022.",
+    "032": "Developed in L3: rate/commutator conclusions PD-T059/PD-T060 survive; square-case O(ε) construction refuted (PD-N021); finite-precision reading (G) OPEN.",
+    "033": "Literature/context task developed in PD-T058: exact-section reading (E) equals a localized positive-cubature problem. Source attribution remains separate from the local proof.",
+    "034": "Deferred: untested extension after L3; resume with an applicable commutator bound preserving the required structure.",
+    "035": "Deferred: unpublished implicit-Q uniqueness context retained; resume if a proof of the L5 fixed-scheme invariant requires it, with the stated coordination/attribution limits.",
+    "036": "Deferred: randomized alternative not tested in this cycle. Resume if L2 needs it, with a new separation criterion and preregistered test.",
+    "037": "Deferred: outside finite-precision recurrence theory; no run or further work planned in this cycle.",
+    "038": "Settled background: checkerboards/Padua retained as benchmark families, not newly claimed methods.",
+    "039": "Settled background: retained for context; no new campaign result.",
+    "040": "Settled benchmark background; thesis coverage remains as recorded in the literature records. No new campaign claim from the seed datum.",
+    "041": "Deferred: coordinate with Leuven; resume only on AC request.",
+    "042": "Out of scope per AC: finite-field unisolvence; retained without testing or rejection in this campaign.",
+    "043": "Out of scope per AC: bivariate moments-to-OP complexity; retained without testing or rejection here.",
+    "044": "Out of scope per AC: 3D Padua; retained without testing or rejection here.",
+    "045": "Out of scope per AC: MZ constants; retained without testing or rejection here.",
+    "046": "Out of scope: different problem from finite-precision recurrence behaviour; retained without testing or rejection.",
+    "047": "Out-of-scope pointer group: remaining source candidates retained; no tests or rejection by this campaign.",
+    "048": "Developed as L4 context: normality reduction alone gives no fixed-start graded reproduction; the stated commuting-operator obstruction is PD-T076 (PROVED).",
+    "101": "REJECTED: failed on PD-N007(a1)–(a2) only: 14 R01 non-product runs (all sections), and the named seed-11 sets (Z only). Tensor-overprediction rejection withdrawn; probe-only sets carry no Ritz claim.",
+    "102": "REJECTED: failed on the same finite non-product scope as IDEA-125 (PD-N007). Not separated from single sections on the listed product-type runs; support shape is not a classifier (PD-N012).",
+    "103": "Equivalent/duplicate re-derivation retained as a checked dependency: exact coefficient pattern PROVED in PD-T029; no independent novelty claim.",
+    "104": "Survives as the PROVED local relations and full-operator Paige identity (PD-T030/PD-T031); this identity alone is not a loss-of-orthogonality bound.",
+    "105": "Routine identification retained in PD-T029 part 6 (PROVED): the exact HL SIMAX section and Z coincide up to the stated unitary equivalence; no separate mechanism claimed.",
+    "106": "Survives in the stated measured non-product/selection-dependent scopes (PD-T035/PD-T037), with finite exact growth certificate PD-T041. An all-degree lower bound remains OPEN; geometry dependence is prior art.",
+    "107": "Restricted diagnostic for the vector channel; universal prediction fails on the triangle/clustered sets (PD-N009). Deferred continuation as a reorthogonalization diagnostic requires a criterion addressing that failure; not a bound.",
+    "108": "Survives: exact ω-recurrence with commutator sources PROVED (PD-T034), used in L2; source sizes remain separately measured.",
+    "109": "Survives: exact idealised product factorisation PROVED (PD-T033); transfer to computed coefficients is separately CONDITIONAL on H_δ (PD-T044).",
+    "110": "Survives for the tested dev selection, M = 1681, n ≤ 20 (PD-T037(a), MEASURED); selection rule is essential. A general a priori lower bound remains OPEN.",
+    "111": "REJECTED: refuted as titled (PD-N011, MEASURED). The two-relation control survives only on its stated sets (PD-T037(b)); it fails as an unconditional remedy on clustered checkerboards (PD-N009(c)).",
+    "112": "Survives as a PROVED perturbation bound (PD-T038); informativeness is a separate finite measurement (PD-T040). H_lin REJECTED: failed over the stated rotation/degree range (PD-N009(a)).",
+    "113": "Exact moment-matching/product-type statement survives (PD-T039, PROVED). Clustered-checkerboard FP control fails its stated test (PD-T040); computed transfer remains CONDITIONAL in PD-T044.",
+    "114": "REJECTED: failed as an improvement of the predictor under S1 on the stated R04 sets (PD-N009(b)); the channel decomposition/diagnostic observations remain measured in PD-T040.",
+    "115": "REJECTED: failed as a loss predictor in the R04 finite range: absolute coefficient-noise forcing overestimates (PD-N009(b)). This does not refute the separate closed-loop model.",
+    "116": "Survives as the exact finite dev-rule certificate (PD-T041, PROVED after independent reruns, including Q_40). No all-degree exponential theorem is asserted.",
+    "117": "Gain formulas survive as PROVED PD-T042; gain census/first-order channel is MEASURED PD-T045. Generic-noise H_cond-abs is inconclusive by its written rule and fails as a useful predictor (PD-N010(a)).",
+    "118": "H_sign REJECTED: failed (PD-N010(b)); H_fb/H_rd inconclusive. H_term survives with actual double dot products (reviewer-measured); its earlier noise-model verdict was convention-sensitive.",
+    "119": "Inconclusive with actual double rounding; not REJECTED (PD-N010(c)). The noise-model verdict is convention-sensitive; overestimation versus clustering remains a finite measurement.",
+    "120": "Survives with actual double dot products on the six tested sets (PD-T043(d), reviewer-measured): sufficiency within the tested model. The term-wise noise model remains convention-sensitive; no universal causal claim.",
+    "201": "Survives as a measured loss estimate, not a bound (PD-T048): frozen kill test did not fire; substantial clustered-checkerboard overestimation remains.",
+    "202": "Survives as a measured estimate but equivalent in effect to IDEA-145 within R01 tracking scope (PD-T048); no demonstrated separation in tracking quality.",
+    "203": "Corrected F theorem survives with semi-orthogonality, local orthogonality and explicit χ (PD-T046); plain O(u) corollary needs non-breakdown. Unconditional one-pass F and tested BJ J claims REJECTED: failed (PD-N018/PD-N013); universal J target PD-T055 OPEN.",
+    "204": "REJECTED: failed on the recorded five non-product sets (PD-N013). Original reference-based rule was inconclusive; kill uses the disclosed post-hoc reference-free/unrotated-reference criteria.",
+    "205": "REJECTED: failed to repair the coefficient-channel overestimate on R01 benchmarks (PD-N017); its underestimation kill test did not fire, but the separate improvement aim failed.",
+    "206": "Survives the finite P1/P2 two-pass-window tests; P3 fails as expected (PD-T049). Local theorem PD-T046 has χ explicit; no J-closure guarantee follows.",
+    "207": "Each tested rule REJECTED: failed to be uniformly safe in the stated benchmark scope (PD-N015). Adaptive selection retained as the best tested one-relation option, deferred until a rotπ/4 remedy or two-relation hybrid is specified.",
+    "208": "REJECTED: failed on the five recorded benchmarks (PD-N014): the rounding-only ω-trigger does not maintain the required semi-orthogonality.",
+    "209": "REJECTED: failed on the cubic checkerboard at the last degree (PD-N019); secondary ≤30% cost criterion also fails. PD-T052 records 11/12 below 10√u, only 10/12 below √u; drift is not repaired.",
+    "210": "REJECTED: failed as the coefficient-channel remedy (P1/P2, PD-N016); drift-insensitivity P3 survives. Proper long-double normalization was rerun after audit; no preregistered verdict is retroactively changed.",
+    "211": "Deferred and untested: restriction to non-clustered measures was chosen post hoc. Resume with fresh node sets, a quantitative definition of non-clustered, and a preregistered kill criterion.",
+    "301": "Survives as the moment-cone formulation and rate theorem (PD-T058/PD-T059). Residual thresholds use conventions (R1)–(R3); the old factor-1 normalized variant is refuted (PD-N028).",
+    "302": "Survives: (H) yields the square-case √ε rate (PD-T059(d)–(f), PD-T061/PD-T062); the Padua n = 3 obstruction is PD-N020. Degenerate PSD-singular cases remain OPEN.",
+    "303": "REJECTED: failed as a decision route for exact-section L3-Q1 (PD-N023, PROVED). Positive compression/dilation result PD-T064 retained; compression does not imply sections.",
+    "304": "Survives as the truncated-Favard/graded-extension tool (PD-T057/PD-T058). General ungraded commuting extensions do not preserve the required sections.",
+    "305": "REJECTED: failed for exact-section L3-Q1: a structure-free nearby commuting pair does not supply the sections. Potential large-N relevance to reading (G) deferred; no theorem of Lin is rejected.",
+    "306": "REJECTED: refuted in reading (E), worst-case exact representation, for every Π_n-unisolvent square set n ≥ 1 (PD-N021, PROVED). This does not decide finite-precision reading (G).",
+    "307": "REJECTED: refuted in reading (E) for Padua n = 3 (PD-N020) and n ≥ 4 under unisolvence (PD-N022). Reading (G) OPEN; √ε rate survives for n = 1 and Padua n = 2.",
+    "308": "Survives: weight-only model PROVED for Π_(2n+1)-determining nodes (S_0 = {0}), ε < r(0) ≥ w_min σ_1 (PD-T059(a)); cardinality alone is insufficient. No extension to the inaccurate finite-precision regime claimed.",
+    "309": "Proved quadratic-generator parts survive (PD-T065); equality/injectivity remains OPEN, equivalent to PD-T072 via PD-T074. Finite rank observations stay MEASURED in PD-T063/PD-T073.",
+    "310": "REJECTED: failed for the explicit C1 certificate on Padua n = 2..12 (PD-N024, MEASURED); the successful n ≥ 4 replacement is PD-T069.",
+    "311": "REJECTED: refuted by the exact n = 3 equispaced-versus-Padua contrast (PD-N025, PROVED). Graded/random survey evidence is MEASURED and outside that proved statement.",
+    "312": "All-degree target OPEN: exact certificates establish (H) for equispaced n ≤ 7 (PD-T066); n = 8 is a reviewer computation pending independent rerun, not an all-degree proof.",
+    "313": "Survives for all Padua n ≥ 4 (PD-T068/PD-T069, PROVED; obstruction PD-N022 under unisolvence). This trial fails for n ≤ 3; n = 3 has a different certificate PD-N020.",
+    "314": "REJECTED: refuted for the completed computed pair on the stated random-square runs (PD-N026, MEASURED). The raw formed data are a separate unresolved counter-indication.",
+    "315": "Survives within the rotated-square BJ/CGS scope, M = 1681 (PD-T071, MEASURED); no general consistency law claimed.",
+    "316": "REJECTED: refuted for the first-order fit on the rotated square in the linear regime, n ≤ 20 (PD-N027, MEASURED); does not rule out other nonlinear/backward models.",
+    "401": "Survives: fixed-start band-Krylov obstruction PROVED for an operator commuting with X,Y under the stated unisolvence hypotheses (PD-T076); no unrestricted noncommuting-operator obstruction.",
+    "501": "REJECTED: failed as preregistered in the uniform-density random family (PD-T078, MEASURED). Post-hoc exclusions/normalizations do not overturn the kill; rotation counting as an explanation remains OPEN.",
+    "502": "Only-non-unisolvent-prefix claim REJECTED: refuted within measured scope; larger-pivot stabilizer REJECTED: failed (PD-N029). Prefix singular values are numerical estimates; existence lemma PD-T080 is PROVED.",
+    "503": "REJECTED: failed as an explanation of the deficit, not by the preregistered exponent criterion. Positive worst-case theorem PD-T077 retained; no structured-IEP backward-stability claim or new PD-N.",
+    "504": "Magnitude/FIFO rules REJECTED: failed in scope (PD-N030/PD-N031); pairnorm100 equivalent to scheme. Windowed best-pivot not killed but no gain, with two n = 50 runs incomplete. Scheme retained with order sensitivity; invariant proof OPEN."
+  },
+  "dependencies": {
+    "PD-N007": {
+      "ids": [
+        "PD-T029"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-N008": {
+      "ids": [
+        "PD-T029"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-N009": {
+      "ids": [
+        "PD-T032",
+        "PD-T035",
+        "PD-T037",
+        "PD-T040"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-N010": {
+      "ids": [
+        "PD-T042",
+        "PD-T045",
+        "PD-T043"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-N011": {
+      "ids": [
+        "PD-T029",
+        "PD-T036",
+        "PD-T037"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-N012": {
+      "ids": [
+        "PD-T035"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-N013": {
+      "ids": [
+        "PD-T046",
+        "PD-T047",
+        "PD-T053",
+        "PD-T029",
+        "PD-T032"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-N014": {
+      "ids": [
+        "PD-T047",
+        "PD-T048"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-N015": {
+      "ids": [
+        "PD-T053",
+        "PD-T051"
+      ],
+      "basis": "Current drift bound and measured rule data only; the former PD-T050 location is historical."
+    },
+    "PD-N016": {
+      "ids": [
+        "PD-T043",
+        "PD-T053"
+      ],
+      "basis": "Current model reading and drift bound only; historical pre-split locations are not extra dependencies."
+    },
+    "PD-N017": {
+      "ids": [
+        "PD-T048"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-N018": {
+      "ids": [
+        "PD-T046",
+        "PD-T049"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-N019": {
+      "ids": [
+        "PD-T048",
+        "PD-T052"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-N020": {
+      "ids": [
+        "PD-T057",
+        "PD-T058",
+        "PD-T059"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-N021": {
+      "ids": [
+        "PD-T058",
+        "PD-T059",
+        "PD-T060"
+      ],
+      "basis": "PD-T060(a) is the explicitly stated alternative commutator route."
+    },
+    "PD-N022": {
+      "ids": [
+        "PD-T057",
+        "PD-T058",
+        "PD-T059",
+        "PD-T065",
+        "PD-T068",
+        "PD-T069"
+      ],
+      "basis": "Forward proof ingredients in the source. Padua Π_n-unisolvence is an explicit trusted literature assumption for sections; the elementary certificate does not independently establish it.",
+      "qualifier": "Padua Π_n-unisolvence is a trusted literature assumption"
+    },
+    "PD-N023": {
+      "ids": [
+        "PD-T064",
+        "PD-N020"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-N024": {
+      "ids": [
+        "PD-T065",
+        "PD-T062"
+      ],
+      "basis": "Statement uses PD-T065(c) generators and PD-T062 to explain the n = 2 control; numerical test is the named checker."
+    },
+    "PD-N025": {
+      "ids": [
+        "PD-T066",
+        "PD-N020"
+      ],
+      "basis": "Exact n = 3 contrast in Statement/Status by part; PD-T063 survey is explicitly outside this proved statement.",
+      "qualifier": "proved exact n = 3 contrast; survey excluded"
+    },
+    "PD-N026": {
+      "ids": [
+        "PD-T070"
+      ],
+      "basis": "Statement uses PD-T070 to interpret completed-pair asymmetry as inconsistency; measured logs supply the counterexample."
+    },
+    "PD-N027": {
+      "ids": [
+        "PD-T057",
+        "PD-T059",
+        "PD-T071"
+      ],
+      "basis": "Statement uses section/weight-fit meaning (PD-T057/PD-T059(a)); PD-T071 records the first-order numerical fit experiment. These are definitions/interpretation/evidence, not a general backward theorem.",
+      "qualifier": "section/fit definitions, interpretation and recorded experiment"
+    },
+    "PD-N028": {
+      "ids": [
+        "PD-T057",
+        "PD-T058"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-N029": {
+      "ids": [
+        "PD-T080",
+        "PD-T079"
+      ],
+      "basis": "Filename references in Depends on resolve to the existence lemma and prefix-test record; external reproduction is explicitly supporting evidence, not a dependency."
+    },
+    "PD-N030": {
+      "ids": [
+        "PD-N029"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-N031": {
+      "ids": [
+        "PD-T079"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T029": {
+      "ids": [],
+      "basis": "Self-contained; HL/BJ literature cross-checks are context, not dependencies."
+    },
+    "PD-T030": {
+      "ids": [
+        "PD-T029"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T031": {
+      "ids": [
+        "PD-T030",
+        "PD-T032"
+      ],
+      "basis": "Local relations for F, and definitions for J/N specializations. Paige/Sinha citations are context, not proof dependencies."
+    },
+    "PD-T032": {
+      "ids": [
+        "PD-T029",
+        "PD-T030"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T033": {
+      "ids": [
+        "PD-T029",
+        "PD-T032"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T034": {
+      "ids": [
+        "PD-T030",
+        "PD-T032"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T035": {
+      "ids": [
+        "PD-T031",
+        "PD-T032",
+        "PD-T034"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T036": {
+      "ids": [
+        "PD-T029",
+        "PD-T032"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T037": {
+      "ids": [
+        "PD-T032",
+        "PD-T033",
+        "PD-T035",
+        "PD-T036"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T038": {
+      "ids": [
+        "PD-T032",
+        "PD-T033"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T039": {
+      "ids": [
+        "PD-T033",
+        "PD-T029"
+      ],
+      "basis": "Independent checkerboard proof; the cited charter claims are explicitly not used."
+    },
+    "PD-T040": {
+      "ids": [
+        "PD-T032",
+        "PD-T038",
+        "PD-T039"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T041": {
+      "ids": [
+        "PD-T029",
+        "PD-T032"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T042": {
+      "ids": [
+        "PD-T029",
+        "PD-T033",
+        "PD-T039"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T043": {
+      "ids": [
+        "PD-T039",
+        "PD-T040",
+        "PD-T042",
+        "PD-T045"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T044": {
+      "ids": [
+        "PD-T033",
+        "PD-T032"
+      ],
+      "basis": "PD-T038 is a related alternative, explicitly not used by this theorem."
+    },
+    "PD-T045": {
+      "ids": [
+        "PD-T042",
+        "PD-T039",
+        "PD-T040"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T046": {
+      "ids": [
+        "PD-T029"
+      ],
+      "basis": "Simon is a template, not a proof dependency. Hypotheses and χ/non-breakdown distinction remain in the theory."
+    },
+    "PD-T047": {
+      "ids": [
+        "PD-T029",
+        "PD-T032",
+        "PD-T034",
+        "PD-T046"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T048": {
+      "ids": [
+        "PD-T034",
+        "PD-T032",
+        "PD-T029"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T049": {
+      "ids": [
+        "PD-T046",
+        "PD-T047"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T050": {
+      "ids": [
+        "PD-T047",
+        "PD-T029",
+        "PD-T032"
+      ],
+      "basis": "PD-T054 is an optional discharge of hypothesis (W), not a dependency of this theorem with (W) assumed. Includes the named underlying pattern/definition inputs."
+    },
+    "PD-T051": {
+      "ids": [
+        "PD-T053",
+        "PD-T047"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T052": {
+      "ids": [
+        "PD-T046",
+        "PD-T047",
+        "PD-T050",
+        "PD-T053",
+        "PD-T048"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T053": {
+      "ids": [],
+      "basis": "None (elementary linear algebra). The listed PD-N/PD-T consumers in the source are downstream uses, not dependencies."
+    },
+    "PD-T054": {
+      "ids": [
+        "PD-T050"
+      ],
+      "basis": "PD-T050 supplies definitions only; no circular reliance on its result.",
+      "qualifier": "definitions only"
+    },
+    "PD-T055": {
+      "ids": [
+        "PD-T047",
+        "PD-T053",
+        "PD-N013"
+      ],
+      "basis": "PD-N013 is finite measured motivation, not proof of the OPEN universal target.",
+      "qualifier": "identities, bound and measured motivation; target OPEN"
+    },
+    "PD-T056": {
+      "ids": [
+        "PD-T057",
+        "PD-T058",
+        "PD-T059",
+        "PD-T060",
+        "PD-T061",
+        "PD-T062",
+        "PD-T063",
+        "PD-T064",
+        "PD-T066",
+        "PD-T067",
+        "PD-T068",
+        "PD-T069",
+        "PD-T070",
+        "PD-T071",
+        "PD-T072",
+        "PD-T073",
+        "PD-T074",
+        "PD-T075",
+        "PD-N020",
+        "PD-N021",
+        "PD-N022",
+        "PD-N028"
+      ],
+      "basis": "Split-off results support the separate parts/readings of the OPEN target; measured/open parts are not promoted to proof.",
+      "qualifier": "split/supporting records with their own statuses; target OPEN"
+    },
+    "PD-T057": {
+      "ids": [],
+      "basis": "Self-contained finite proof; Xu/Favard citations are context, not dependencies."
+    },
+    "PD-T058": {
+      "ids": [
+        "PD-T057"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T059": {
+      "ids": [
+        "PD-T058"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T060": {
+      "ids": [
+        "PD-T057"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T061": {
+      "ids": [
+        "PD-T059"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T062": {
+      "ids": [
+        "PD-T059"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T063": {
+      "ids": [
+        "PD-T059"
+      ],
+      "basis": "PD-T059 supplies interpretation of the numerical evidence only.",
+      "qualifier": "interpretation only"
+    },
+    "PD-T064": {
+      "ids": [],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T065": {
+      "ids": [
+        "PD-T059"
+      ],
+      "basis": "PD-T059 supplies the obstruction/rate implication. Padua unisolvence is an explicit assumption for spanning in part (c); source reports are not imported as local proofs.",
+      "qualifier": "Padua unisolvence explicitly assumed for spanning in (c)"
+    },
+    "PD-T066": {
+      "ids": [
+        "PD-T059"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T067": {
+      "ids": [
+        "PD-T066"
+      ],
+      "basis": "PD-T066 supplies the same exact-certificate runs; reference to PD-T059(d) states a limit, not an extra dependency of the decay measurement."
+    },
+    "PD-T068": {
+      "ids": [
+        "PD-T065"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T069": {
+      "ids": [
+        "PD-T065",
+        "PD-T068"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T070": {
+      "ids": [
+        "PD-T057",
+        "PD-T032",
+        "PD-T030"
+      ],
+      "basis": "PD-T032/PD-T030 supply the definitions and pattern hypotheses of the completed computed pair.",
+      "qualifier": "includes definitions/pattern hypotheses"
+    },
+    "PD-T071": {
+      "ids": [
+        "PD-T070"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T072": {
+      "ids": [
+        "PD-T060",
+        "PD-T074",
+        "PD-T065"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T073": {
+      "ids": [
+        "PD-T074"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained.",
+      "qualifier": "rank interpretation"
+    },
+    "PD-T074": {
+      "ids": [
+        "PD-T057",
+        "PD-T060",
+        "PD-T065"
+      ],
+      "basis": "PD-T060(c) factorization is re-derived; the references distinguish section definitions and quadratic-generator ingredients."
+    },
+    "PD-T075": {
+      "ids": [
+        "PD-T058",
+        "PD-T059",
+        "PD-T069",
+        "PD-N020",
+        "PD-N022"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T076": {
+      "ids": [
+        "PD-T029"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T077": {
+      "ids": [],
+      "basis": "Self-contained; Higham is a reported analogue, explicitly not used in the proof."
+    },
+    "PD-T078": {
+      "ids": [],
+      "basis": "No registry dependency, as expressly stated in the source. PD-T077 is cited only for a worst-case comparison; the measured slopes come from the named input code."
+    },
+    "PD-T079": {
+      "ids": [
+        "PD-T080"
+      ],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    },
+    "PD-T080": {
+      "ids": [],
+      "basis": "Current Depends on section; contextual shorthand expanded; only forward uses retained."
+    }
+  },
+  "proof_status_overrides": {
+    "PD-T037": {
+      "disposition": "Original R03 “selection, not truncation” consequence REJECTED: refuted (see [PD-N011](tracks/bivariate-lanczos/theory/selection-and-truncation-both-matter-measured.md)); measured parts (a)–(c) stand."
+    },
+    "PD-T058": {
+      "disposition": "Pre-audit normalized residual variant of (b) REJECTED: refuted (see [PD-N028](tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N309-normalized-residual-threshold-refuted.md)); corrected (b1)–(b4) PROVED."
+    },
+    "PD-N010": {
+      "disposition": "IDEA-141 H_cond-abs inconclusive by its rule (failed as a useful predictor); IDEA-142 H_sign REJECTED: failed. IDEA-143 inconclusive with actual double rounding, not REJECTED; prior noise-model verdict convention-sensitive."
+    },
+    "PD-N025": {
+      "title": "Condition (H) is not decided by the square count / checkerboard structure alone (exact n = 3 contrast); survey is outside the proved statement."
+    },
+    "PD-T050": {
+      "parts": "1–2 under (C) and (W): PROVED; 3 interpretation and 4 first sentence: PROVED (routine); acyclicity under (P) is separate PROVED PD-T054; drift inequality is separate PROVED PD-T053."
+    },
+    "PD-T056": {
+      "parts": "Reading (G): OPEN. Readings (L0)/(L): routine exact conclusions; reading (E): separate PROVED rate/obstruction cases and MEASURED surveys, with OPEN degenerate/radius/isomorphism questions. See the full part table and split dependencies; not PARTIAL."
+    },
+    "PD-T065": {
+      "parts": "(a), (b): PROVED (routine; equivalence in (b) assumes injectivity and the stated dimension); (c): PROVED, with Padua unisolvence assumed for spanning. Equality/injectivity remains OPEN in PD-T072; finite rank evidence is MEASURED in PD-T063/PD-T073."
+    },
+    "PD-N011": {
+      "disposition": "PD-T037 original “selection, not truncation” consequence and IDEA-135 inference REJECTED: refuted (MEASURED, stated scope). R03 F8 rejection of truncation as a cause is withdrawn: truncation is not sufficient but is a cause on rotation π/4 and the disk."
+    }
+  },
+  "allocation_sha256": "e5f4974b878b509b896cd2f69aae3220fa789d5c9347dbcb40baa77a419b1948"
+}

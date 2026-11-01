@@ -1,0 +1,20 @@
+Focused L2 audit-02. Working directory: /workspace/padua_research.
+Rules/execution HEAD: 50b0d304001b48607527e5086a67045f534d9472.
+Scientific response candidate: 075d4074017445a0fd4d7443ffac97cd7f8c106b.
+Prior audit baseline: 5f523313b7b388cb114103734028f0a850dfeaad.
+
+Executed numerical commands (all completed, exit zero observed):
+OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python3 -I tracks/bivariate-lanczos/code/L2/l2_audit01_ldnorm.py > topics/bivariate-lanczos-20261031/audit-02/L2/ldnorm-rerun.log 2>&1
+OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python3 -I tracks/bivariate-lanczos/code/L2/l2_audit01_chi.py > topics/bivariate-lanczos-20261031/audit-02/L2/chi-rerun.log 2>&1
+OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python3 -I tracks/bivariate-lanczos/code/L2/l2_audit01_staircase.py > topics/bivariate-lanczos-20261031/audit-02/L2/staircase-rerun.log 2>&1
+python3 -I topics/bivariate-lanczos-20261031/audit-02/L2/independent_staircase.py > topics/bivariate-lanczos-20261031/audit-02/L2/independent-staircase.log 2>&1
+python3 -I topics/bivariate-lanczos-20261031/audit-02/L2/qualification_checks.py > topics/bivariate-lanczos-20261031/audit-02/L2/qualification-checks.log 2>&1
+OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python3 -I topics/bivariate-lanczos-20261031/audit-02/L2/evidence_manifest.py
+
+Read-only identity checks (also implemented with hashes in evidence_manifest.py):
+git diff --name-status 5f523313b7b388cb114103734028f0a850dfeaad 075d4074017445a0fd4d7443ffac97cd7f8c106b -- topics/bivariate-lanczos-20261031/audit-01.md topics/bivariate-lanczos-20261031/audit-01 topics/bivariate-lanczos-20261031/audit-handoff.md tracks/bivariate-lanczos/code/L2/l2_core.py state/IDEAS.md literature/INDEX.md
+Result: empty. The manifest checks all82 frozen audit files and22 old producer/catalog files byte-for-byte against the baseline.
+git diff 075d4074017445a0fd4d7443ffac97cd7f8c106b 50b0d304001b48607527e5086a67045f534d9472 -- topics/bivariate-lanczos-20261031/response-01.md
+Result: one bookkeeping line now spells out the scientific candidate SHA. All other49-input-manifest entries match the candidate exactly.
+
+Execution caveats: the first chi command's redirection raced output-directory creation and exited before executing Python; repeated after directory existed, completed exit0. Manifest initially stopped on the expected response-01.md bookkeeping difference and then a NumPy int64 JSON conversion; both checker-only issues were corrected and the final manifest run completed exit0. Scientific programs/inputs were not changed. Independent support check uses exact integer bitsets and no developer imports; numerical checks use the versions in manifest.json. No unaffected broad audit-01 suite was rerun.

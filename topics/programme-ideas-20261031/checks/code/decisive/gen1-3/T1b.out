@@ -1,0 +1,59 @@
+T1b: subspace distances, 80-bit graded Gram-Schmidt reference, residual orthogonality. S1, n = 24.
+
+--- Ppt, eps_min = 3e-04, far-first ---
+    (LF80 52 s, R3-80 15 s)
+    orthogonality defect: LF=2.9e-15  L3c=2.7e-01  R3=1.0e-15  LF80=4.4e-16  R3-80=1.0e+00  (R3-80 in 80-bit: 1.0e+00, LF80 in 80-bit: 3.3e-18)
+    dist(X,Y) = sin(max canonical angle):
+      LF    L3c: 2.0e+00  R3: 1.0e+00  LF80: 9.9e-01  R3-80: 7.3e+01
+      L3c   LF: 1.8e-01  R3: 1.2e+00  LF80: 3.3e-01  R3-80: 9.6e+01
+      R3    LF: 1.0e+00  L3c: 2.0e+00  LF80: 1.0e+00  R3-80: 7.1e+01
+      LF80  LF: 9.9e-01  L3c: 2.0e+00  R3: 1.0e+00  R3-80: 7.3e+01
+      R3-80 LF: 3.1e+00  L3c: 1.0e+01  R3: 3.7e+00  LF80: 3.1e+00
+    in-space tests span24 / span12:  LF: 2.8e-06/1.0e-14  L3c: 2.0e+00/2.0e+00  R3: 1.8e-15/1.9e-15  LF80: 5.4e-05/3.0e-15  R3-80: 3.2e+01/2.9e+01
+    fA: LF: 4.231e-07 (resorth 6.0e-07)  L3c: 1.811e-02 (resorth 8.0e-01)  R3: 1.369e-06 (resorth 3.9e-10)  LF80: 5.124e-07 (resorth 2.4e-05)  R3-80: 3.351e+00 (resorth 4.7e-01)  | union(LF,R3): 2.541e-07
+    fB: LF: 4.711e-07 (resorth 5.5e-07)  L3c: 1.665e-02 (resorth 7.7e-01)  R3: 1.498e-06 (resorth 3.6e-10)  LF80: 5.462e-07 (resorth 2.0e-05)  R3-80: 3.692e+00 (resorth 4.7e-01)  | union(LF,R3): 2.828e-07
+    wall 92 s
+
+--- Pbhh, eps_min = 3e-04, far-first ---
+    (LF80 47 s, R3-80 14 s)
+    orthogonality defect: LF=4.0e-15  L3c=3.5e-01  R3=1.3e-15  LF80=6.7e-16  R3-80=8.9e-16  (R3-80 in 80-bit: 4.5e-18, LF80 in 80-bit: 1.1e-17)
+    dist(X,Y) = sin(max canonical angle):
+      LF    L3c: 2.0e+00  R3: 1.0e+00  LF80: 2.6e-02  R3-80: 1.0e+00
+      L3c   LF: 1.0e+00  R3: 9.9e-01  LF80: 1.0e+00  R3-80: 9.8e-01
+      R3    LF: 1.0e+00  L3c: 2.0e+00  LF80: 1.0e+00  R3-80: 1.0e+00
+      LF80  LF: 2.6e-02  L3c: 2.0e+00  R3: 1.0e+00  R3-80: 1.0e+00
+      R3-80 LF: 1.0e+00  L3c: 2.0e+00  R3: 1.0e+00  LF80: 1.0e+00
+    in-space tests span24 / span12:  LF: 1.1e-10/3.9e-15  L3c: 1.6e+00/1.4e+00  R3: 1.7e-15/2.1e-15  LF80: 8.2e-08/2.1e-15  R3-80: 6.0e-16/1.8e-15
+    fA: LF: 1.577e-05 (resorth 4.7e-11)  L3c: 1.556e-01 (resorth 1.9e-01)  R3: 2.548e-05 (resorth 1.9e-11)  LF80: 1.577e-05 (resorth 4.8e-10)  R3-80: 1.990e-05 (resorth 3.7e-11)  | union(LF,R3): 1.488e-05
+    fB: LF: 4.299e-04 (resorth 1.3e-12)  L3c: 1.276e-01 (resorth 1.8e-01)  R3: 6.829e-04 (resorth 7.4e-13)  LF80: 4.299e-04 (resorth 1.1e-10)  R3-80: 4.502e-04 (resorth 9.9e-13)  | union(LF,R3): 4.131e-04
+    wall 90 s
+
+--- Ppt, eps_min = 3e-03, far-first ---
+    (LF80 49 s, R3-80 14 s)
+    orthogonality defect: LF=3.3e-15  L3c=2.4e-01  R3=8.9e-16  LF80=6.7e-16  R3-80=1.0e+00  (R3-80 in 80-bit: 1.0e+00, LF80 in 80-bit: 2.4e-18)
+    dist(X,Y) = sin(max canonical angle):
+      LF    L3c: 1.4e+00  R3: 1.0e+00  LF80: 1.0e+00  R3-80: 9.1e+00
+      L3c   LF: 5.4e-01  R3: 1.0e+00  LF80: 5.9e-01  R3-80: 1.1e+01
+      R3    LF: 1.0e+00  L3c: 1.4e+00  LF80: 1.0e+00  R3-80: 8.6e+00
+      LF80  LF: 1.0e+00  L3c: 1.4e+00  R3: 1.0e+00  R3-80: 9.1e+00
+      R3-80 LF: 2.1e+00  L3c: 3.0e+00  R3: 2.3e+00  LF80: 2.1e+00
+    in-space tests span24 / span12:  LF: 2.2e-05/8.5e-15  L3c: 1.2e+00/1.2e+00  R3: 1.3e-15/1.9e-15  LF80: 6.2e-05/4.8e-15  R3-80: 4.6e+00/2.6e+00
+    fA: LF: 1.028e-07 (resorth 5.4e-06)  L3c: 1.287e-02 (resorth 7.6e-01)  R3: 2.142e-07 (resorth 1.5e-09)  LF80: 1.112e-07 (resorth 1.5e-05)  R3-80: 2.457e-01 (resorth 4.3e-01)  | union(LF,R3): 5.587e-08
+    fB: LF: 1.881e-07 (resorth 1.4e-05)  L3c: 1.162e-02 (resorth 7.3e-01)  R3: 2.352e-07 (resorth 2.1e-09)  LF80: 1.800e-07 (resorth 5.3e-05)  R3-80: 1.532e-01 (resorth 4.3e-01)  | union(LF,R3): 6.195e-08
+    wall 90 s
+
+--- Pbhh, eps_min = 3e-03, far-first ---
+    (LF80 58 s, R3-80 13 s)
+    orthogonality defect: LF=2.9e-15  L3c=2.0e-01  R3=1.1e-15  LF80=6.7e-16  R3-80=6.7e-16  (R3-80 in 80-bit: 6.7e-18, LF80 in 80-bit: 2.4e-18)
+    dist(X,Y) = sin(max canonical angle):
+      LF    L3c: 1.0e+00  R3: 1.0e+00  LF80: 4.5e-04  R3-80: 4.2e-02
+      L3c   LF: 9.9e-01  R3: 9.9e-01  LF80: 9.9e-01  R3-80: 9.9e-01
+      R3    LF: 1.0e+00  L3c: 1.0e+00  LF80: 1.0e+00  R3-80: 1.0e+00
+      LF80  LF: 4.5e-04  L3c: 1.0e+00  R3: 1.0e+00  R3-80: 4.2e-02
+      R3-80 LF: 4.2e-02  L3c: 1.0e+00  R3: 1.0e+00  LF80: 4.2e-02
+    in-space tests span24 / span12:  LF: 9.5e-12/4.7e-15  L3c: 9.9e-01/8.4e-01  R3: 1.4e-15/1.8e-15  LF80: 1.4e-07/1.9e-15  R3-80: 8.4e-16/1.6e-15
+    fA: LF: 4.694e-06 (resorth 1.6e-10)  L3c: 1.048e-01 (resorth 1.4e-01)  R3: 4.979e-06 (resorth 8.5e-11)  LF80: 4.694e-06 (resorth 6.2e-09)  R3-80: 4.694e-06 (resorth 1.6e-10)  | union(LF,R3): 4.327e-06
+    fB: LF: 1.679e-04 (resorth 3.3e-12)  L3c: 1.021e-01 (resorth 1.4e-01)  R3: 1.731e-04 (resorth 2.9e-12)  LF80: 1.679e-04 (resorth 2.0e-10)  R3-80: 1.679e-04 (resorth 2.7e-12)  | union(LF,R3): 1.620e-04
+    wall 95 s
+
+total wall time 367.9 s

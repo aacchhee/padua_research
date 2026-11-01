@@ -1,0 +1,11 @@
+(1) 312 identity Q_c - [sin^2 al A^2 + sin^2 be B^2 + 2 W A B] = 0;  sin al sin be - (S - T) = 0
+(2) E1: A = n**2*(-2*n**2*t**2 + 11*n**2 + 16*n*t**2 - 52*n + 32*t**4 + 16*t**2 + 32)/20;  X = n*t*(n + 1)*(9*n - 40)/10;  B = (n + 1)**2
+    E1: (4AB - X^2)/(n^2(n+1)^2) = (32/5) s^2 + (n*(121*n - 1040)/100) s + 99*n**2/100
+    matches developer's closed form: True; value at s=1 (dropping s^2): n*(11*n - 52)/5
+(3) n=4, E1/E2 nodes k=2,4 (phi = k pi/5): [(2, 247/50 - 89*sqrt(5)/50, 0.95979900005037434039), (4, 89*sqrt(5)/50 + 247/50, 8.9202009999496256596)]
+(2) E3: A = n**2;  X = n*t*(n + 1)*(9*n - 31)/10;  B = (n + 1)**2*(-2*n**2*t**2 + 11*n**2 + 12*n*t**2 - 30*n + 32*t**4 + 30*t**2 - 9)/20
+    E3: (4AB - X^2)/(n^2(n+1)^2) = (32/5) s^2 + ((n + 1)*(121*n - 919)/100) s + 99*(n + 1)**2/100
+    matches developer's closed form: True; value at s=1 (dropping s^2): (n + 1)*(11*n - 41)/5
+(2) C11: A = n**2*(9*n**2 - 36*n + 80)/20;  X = -n*(n + 1)*(9*n**2 - 27*n + 62)/10;  B = (n + 1)**2*(9*n**2 - 18*n + 53)/20
+    C11: 4AB - X^2 = 99*n**2*(n + 1)**2/25  (dev: 99 n^2 (n+1)^2/25)
+RESULT: 312 identity PASS; 313 closed forms PASS

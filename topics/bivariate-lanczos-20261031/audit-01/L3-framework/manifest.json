@@ -1,0 +1,380 @@
+{
+  "audit": "L3-framework",
+  "date_utc": "2026-11-01",
+  "assigned_model": "gpt-6-astra",
+  "assigned_effort": "xhigh",
+  "runtime_effort_exposed": false,
+  "supplied_rules_head": "3a9063b84d14ca0a5998378371e27643fde50a29",
+  "supplied_candidate": "5ccfac223f466a9105450365d8c6c3781ff7d922",
+  "git_operations_by_subauditor": false,
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0"
+  },
+  "audited_theory_handoff_comparison": [
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-300-l3q1-backward-interpretation-target.md",
+      "bytes": 9777,
+      "sha256": "175aaad3fce7cfde64c7f9644482d8eb2a24c7500b17b6a3150e7bbfb61ad9aa",
+      "handoff_sha256": "175aaad3fce7cfde64c7f9644482d8eb2a24c7500b17b6a3150e7bbfb61ad9aa",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-301-truncated-favard-sections.md",
+      "bytes": 10561,
+      "sha256": "c0f84c2dab322e8f5c61a10bf8a0df45c291781f623bc0238f58f6366e52af2d",
+      "handoff_sha256": "c0f84c2dab322e8f5c61a10bf8a0df45c291781f623bc0238f58f6366e52af2d",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-302-backward-reduction-moment-cone.md",
+      "bytes": 8347,
+      "sha256": "b2ba05315a0c3f5afab9cae52fa422f0163cb292a5dc7d2abbb63766e0b7f6cd",
+      "handoff_sha256": "b2ba05315a0c3f5afab9cae52fa422f0163cb292a5dc7d2abbb63766e0b7f6cd",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-303-moment-cone-rate-theorem.md",
+      "bytes": 9595,
+      "sha256": "8207b3b87625bb692aa9da2da0efc0a14cee5cd1fe3ef02444cf798b28768a5a",
+      "handoff_sha256": "8207b3b87625bb692aa9da2da0efc0a14cee5cd1fe3ef02444cf798b28768a5a",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-304-square-case-commutator-bounds.md",
+      "bytes": 6698,
+      "sha256": "8bfa07da8fb255dbb4b4a89b85b3206518755d366a60b734abebb8cc9d2e4c82",
+      "handoff_sha256": "8bfa07da8fb255dbb4b4a89b85b3206518755d366a60b734abebb8cc9d2e4c82",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-305-three-node-square-case-sqrt-rate.md",
+      "bytes": 3176,
+      "sha256": "52f5ddda0bad49b102da6637a6b58428a881c0be2eb2863ca7cbf8682cd9ce48",
+      "handoff_sha256": "52f5ddda0bad49b102da6637a6b58428a881c0be2eb2863ca7cbf8682cd9ce48",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-306-padua-n2-sqrt-rate.md",
+      "bytes": 5407,
+      "sha256": "52af1c9ddced7a788f3dd27448e156d6b8a5df5d82768c7bb2c7494aca885beb",
+      "handoff_sha256": "52af1c9ddced7a788f3dd27448e156d6b8a5df5d82768c7bb2c7494aca885beb",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-307-square-case-hessian-condition-measurements.md",
+      "bytes": 7296,
+      "sha256": "e810d77b5f494b72ecb173d3607d9031d89bfe531623f047198cae6f35594f98",
+      "handoff_sha256": "e810d77b5f494b72ecb173d3607d9031d89bfe531623f047198cae6f35594f98",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-308-compression-model-no-obstruction.md",
+      "bytes": 3728,
+      "sha256": "59be05e16c06d18efd37475849449fa33e6999c976a9d5e3275329512ae5cc38",
+      "handoff_sha256": "59be05e16c06d18efd37475849449fa33e6999c976a9d5e3275329512ae5cc38",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-309-square-case-quadratic-generator-form.md",
+      "bytes": 7170,
+      "sha256": "373d7d198a7d02d2ea119bc1d09080c53e085a1f88804dbb093ce5bcb4360696",
+      "handoff_sha256": "373d7d198a7d02d2ea119bc1d09080c53e085a1f88804dbb093ce5bcb4360696",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-310-equispaced-checkerboard-condition-H.md",
+      "bytes": 4078,
+      "sha256": "0aad172c8b57c10901e16d08d3ba0b4bd5ff8eec4087fe10d269945bc7c350d9",
+      "handoff_sha256": "0aad172c8b57c10901e16d08d3ba0b4bd5ff8eec4087fe10d269945bc7c350d9",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-314-computed-data-consistency-symmetry.md",
+      "bytes": 6061,
+      "sha256": "3415a9ef3ea42a13881c8fabaf19e4af517bdfb97998c7788cc055280c9fb58f",
+      "handoff_sha256": "3415a9ef3ea42a13881c8fabaf19e4af517bdfb97998c7788cc055280c9fb58f",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-315-consistency-defect-measurements.md",
+      "bytes": 4526,
+      "sha256": "c6aaee7dd79d453944460bc918fac5addf7db3a641ab2bb4195979ad63117db5",
+      "handoff_sha256": "c6aaee7dd79d453944460bc918fac5addf7db3a641ab2bb4195979ad63117db5",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N302-square-case-linear-rate-refuted.md",
+      "bytes": 2719,
+      "sha256": "0785d7797707748bef7590af7eeb7b523a1112d9d1cd511c29e1996a70441597",
+      "handoff_sha256": "0785d7797707748bef7590af7eeb7b523a1112d9d1cd511c29e1996a70441597",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N304-compression-model-insufficient.md",
+      "bytes": 2429,
+      "sha256": "fd1e3d660fca62ae0b7eca8cffd46a3989a2ee2b0c3088b8e9324315a19bfe84",
+      "handoff_sha256": "fd1e3d660fca62ae0b7eca8cffd46a3989a2ee2b0c3088b8e9324315a19bfe84",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N305-closed-form-C1-fails.md",
+      "bytes": 1832,
+      "sha256": "37eb32350fbbe2ff30114d30c763a2c86f927f89697f36b220960a9af72e48b4",
+      "handoff_sha256": "37eb32350fbbe2ff30114d30c763a2c86f927f89697f36b220960a9af72e48b4",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N306-H-not-decided-by-count.md",
+      "bytes": 2598,
+      "sha256": "9228d8256b375becfea5e048971984c021114786f9b9f137f724582518addf6d",
+      "handoff_sha256": "9228d8256b375becfea5e048971984c021114786f9b9f137f724582518addf6d",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N307-consistency-survives-loss-refuted.md",
+      "bytes": 1537,
+      "sha256": "544d6515ca705860ed626ed619067d606fd6a5ad398b75d05a849b5a9ed1669b",
+      "handoff_sha256": "544d6515ca705860ed626ed619067d606fd6a5ad398b75d05a849b5a9ed1669b",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N308-weight-only-greenbaum-fit-refuted.md",
+      "bytes": 1995,
+      "sha256": "6f929ff78112f5304c73636fe3f876f7f42c4aef160f6e9a2fd86ddf38f855b8",
+      "handoff_sha256": "6f929ff78112f5304c73636fe3f876f7f42c4aef160f6e9a2fd86ddf38f855b8",
+      "matches_handoff": true
+    }
+  ],
+  "context_and_execution_inputs": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 3159,
+      "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60"
+    },
+    {
+      "path": "agents/WORKFLOW.md",
+      "bytes": 18116,
+      "sha256": "b1c1c14c83e02bf38283159f81ec278ae336ab56c95d0c026b9ada3314d1ffaa"
+    },
+    {
+      "path": "agents/codex/CODEX.md",
+      "bytes": 4969,
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b"
+    },
+    {
+      "path": "literature/INDEX.md",
+      "bytes": 111148,
+      "sha256": "a9fdbfeb7d0a5b485c84e3e9763739e8f8597f118a6e76bf1dcf76ea8aa28a15"
+    },
+    {
+      "path": "state/IDEAS.md",
+      "bytes": 46988,
+      "sha256": "12ba5f8eccfc943faebee07b83ea37b995f0b89244fa3b9b81a6f88051ad931d"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-handoff.md",
+      "bytes": 16243,
+      "sha256": "3ad150ace51e9a6e4d9c2276b3aa20bb8a80b51d1c169611cf2cba22313ed79c"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/BRIEF.md",
+      "bytes": 1070,
+      "sha256": "9ec776bb076eb2f43b4a763b697d8da0807b272908c57fab310e4a1627653167"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/R01.md",
+      "bytes": 15741,
+      "sha256": "5710c6293ce1f88898d5149bb7c8214c35df2546b313bea81d17eb5b5824279c"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/R02.md",
+      "bytes": 3935,
+      "sha256": "4e2983fb2798a09b15ed2d269304c3686ba05504e31a24b67c64c4965cf6b689"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/R03.md",
+      "bytes": 4380,
+      "sha256": "aca2dc65d3ca22c2316af2ab92f26c9c737dcdd6b4c148e9474d0071b42139e4"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/R04.md",
+      "bytes": 4876,
+      "sha256": "fe107fb7f4f46779905cc7e6da6c409ad5483006d44893756cebbec6f72df650"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/R05.md",
+      "bytes": 7559,
+      "sha256": "37d17e8418ece46acdf1cd04dcad8d61f89f1f6319b39eda37b5eda42e8099ea"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/R06.md",
+      "bytes": 10217,
+      "sha256": "8c01b616a938a9ae86bbac011a73dfa4b2ab3ca82c1aed805681c33657142c95"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/STATUS.md",
+      "bytes": 3410,
+      "sha256": "4711bbb202a6ca72a1e9d065a9f1fb9bd56ae8bb8cb2d001b77407710964915f"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/SUMMARY.md",
+      "bytes": 4936,
+      "sha256": "d03da9a14fe6c62b4996ea98ea3c159ab011aeb8b414e0fe251b53f8cc6d2613"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/candidates.md",
+      "bytes": 20278,
+      "sha256": "a51c93a1c683e90481b28fe237496f2efcc285da2f8e64fc02c0e4423012b6a6"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/lit_reading.md",
+      "bytes": 4687,
+      "sha256": "762ec5c35e5629fedc872edc15060a1b35d3efe58223ca057c7e38872f363b70"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/exact_certificates.log",
+      "bytes": 3963,
+      "sha256": "287e8dd0bdaa60d93d728045fcd47c5c75832813657f4849081fe4b1e0629e8b"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/response-recon-01.md",
+      "bytes": 5600,
+      "sha256": "85e60e478923e9739ed8b8e85fd6d6247729c485b0f1d09d901f857a96c9284a"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/response-recon-02.md",
+      "bytes": 4453,
+      "sha256": "8fb8f08d78f1a8b3fe328c0e5cf2e0e229e0e79665184110bd1070c2e0c3b3f6"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/plan.md",
+      "bytes": 17069,
+      "sha256": "a4dbc973b79b3b16fc6c8ec31adc8e0c8bc18a5a6136b2983ea6125e7337e69a"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/report.md",
+      "bytes": 15087,
+      "sha256": "784b11c7fc235c9e8bcfcff915fe3dc3657f33976fbbc8d2d3d4f3f725becc19"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/L3-prior-art-01.md",
+      "bytes": 22881,
+      "sha256": "d88d5aec7e16e338a092b0541d411cf3e8bb3f5827b57f58aad9e07611929463"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/L3-reconstruction-01.md",
+      "bytes": 32322,
+      "sha256": "f1586072e5faf422309aa3193f47e0cb59ecc654e217a6359a66f239202ee871"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/L3-reconstruction-02.md",
+      "bytes": 30698,
+      "sha256": "bc9cb1936520a9bff97654d5dcb7f76ac56d44c8c522a1a58a0af09627eee252"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L3/exact_certificates.py",
+      "bytes": 12486,
+      "sha256": "752188b6f537f38b7dfba2fb4f5cf37cf39661b7fbc4fc924c3968347fcee6c5"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L3/exact_checkerboard.py",
+      "bytes": 6424,
+      "sha256": "66e11ab7792ad3ad0a4f2109aeaa09db19bd0d3e6a7b430e2f68364bd145edf2"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L3/favard_check.py",
+      "bytes": 5935,
+      "sha256": "468464df52aeb3485b99809c6d532d445969a0307a78e00ac6cc4604746d2572"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L3/l3lib.py",
+      "bytes": 2927,
+      "sha256": "f8ee71f79cb863eda34b9bc037a3abd5fb5f5258cd2d2c93e7b9dbcb346ca1e0"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L3/r02_closed_form_C.py",
+      "bytes": 1675,
+      "sha256": "dd452d1218306293656183fb63d07f29da5b8b1c9a115077d00550cfecbde4ab"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L3/r06_consistency.py",
+      "bytes": 4335,
+      "sha256": "8925f05aa63079a286ccde2686daee314f6e81040d2659551eb33e3b5ae85f52"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L3/indep_exact_check.py",
+      "bytes": 15054,
+      "sha256": "989ed4e1353559cf30542d62b2583e7c461edf54636c7bb268a59d7be8dcba53"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L3b/consistency_recheck.py",
+      "bytes": 9368,
+      "sha256": "635766a9a1448ea9bb529b805144368fe09eef3055420d46cd08173cdcae4bbb"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L3b/equi_H_cert.py",
+      "bytes": 14615,
+      "sha256": "324ddfa83348f6ee90af8847e84587b4d654eff9977383b1a8c9cfcbda9f4d33"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework/closed_form_C1.log",
+      "bytes": 850,
+      "sha256": "660b29be0170525f2832f3b0db65620f62a42415835cf21bb6cdea1380ebe762"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework/consistency_random_n40.log",
+      "bytes": 3168,
+      "sha256": "344a2181bdd2cc039a399f177f82d230bc072f5ff0e76651ed3c3708ca248951"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework/consistency_rot03_n18_20.log",
+      "bytes": 1274,
+      "sha256": "9507d8516b731b35bccff1a83920826a3f418dbff4edc9b2668822d8628456c6"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework/equi_H_cert_n1_7.log",
+      "bytes": 5744,
+      "sha256": "a8255a9c428bae43128aa0cdf9ded2942825ef601b7d8d37dc1ca185a9b37be9"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework/exact_framework_checks.log",
+      "bytes": 1279,
+      "sha256": "d52783c4c28612740baba4a1163027f56a7cd9ad1c97aab3d4ea97ccf2ba7ee6"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework/exact_framework_checks.py",
+      "bytes": 4923,
+      "sha256": "ae484a0e5d1f53f41bc4c3a628dc4a83a4dee60b3103e0bbfb2482dfe0575968"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework/favard_n1_4_seed0.log",
+      "bytes": 1005,
+      "sha256": "8f58b0c8165e142cb829607ca0e695e696ae2cca657e7bda1a7c2d4e3d0180f9"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework/lstsq_sensitivity.log",
+      "bytes": 1612,
+      "sha256": "2b358febc8157ae1199363bde21d09ddc9e2d32bd4c293e16ca7b5c17a651012"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework/lstsq_sensitivity.py",
+      "bytes": 1060,
+      "sha256": "6c6901b695d58460843a408af59061b3f5c3140557aaee0ab8423d6be5d1ff89"
+    }
+  ],
+  "report": {
+    "path": "topics/bivariate-lanczos-20261031/audit-01/L3-framework.md",
+    "bytes": 19730,
+    "sha256": "f1116405e53a952d9f1c142c84c1d92262e5c23ded06072eeac6bc6b5dcbaa74"
+  },
+  "artifact_bytes_excluding_manifest_and_report": 20915,
+  "all_commands_exit_code": 0,
+  "limitations": "Commands and interpreted outputs are in L3-framework.md; source inclusion here denotes audit or execution input, not a claim that every source line received a full independent rewrite. No literature full-text verification, n8 checkerboard rerun, or full SDP/LP survey."
+}

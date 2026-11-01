@@ -1,0 +1,74 @@
+{
+ "Mx_eigs": [
+  "e/10",
+  "11*e*(1 - e)/10"
+ ],
+ "My_eigs": [
+  "e/10",
+  "11*e*(1 - e)/10"
+ ],
+ "commutator": "Matrix([[0, e**2/2], [-e**2/2, 0]])",
+ "commutator_2norm_squared_eigs": [
+  "e**4/4"
+ ],
+ "det_S": "-e**4*(11*e - 12)**2*(121*e**2 - 176*e + 56)/160000",
+ "det_S_equals_formula": true,
+ "trace_S": "e**2*(11*e - 12)**2/200",
+ "instances": [
+  {
+   "e": "1/10",
+   "det_S": "-47060641/16000000000000",
+   "trace_S": "11881/2000000",
+   "n_plus_S": 1,
+   "n_plus_Mx": 2,
+   "n_plus_My": 2,
+   "n_box_formula": "3/2",
+   "delta_commutator_2norm": "1/200",
+   "boundary_distance": "1/100"
+  },
+  {
+   "e": "1/20",
+   "det_S": "-996431441/4096000000000000",
+   "trace_S": "52441/32000000",
+   "n_plus_S": 1,
+   "n_plus_Mx": 2,
+   "n_plus_My": 2,
+   "n_box_formula": "3/2",
+   "delta_commutator_2norm": "1/800",
+   "boundary_distance": "1/200"
+  },
+  {
+   "e": "1/100",
+   "det_S": "-766973330641/1600000000000000000000",
+   "trace_S": "1413721/20000000000",
+   "n_plus_S": 1,
+   "n_plus_Mx": 2,
+   "n_plus_My": 2,
+   "n_box_formula": "3/2",
+   "delta_commutator_2norm": "1/20000",
+   "boundary_distance": "1/1000"
+  },
+  {
+   "e": "1/1000",
+   "det_S": "-8023942610774641/160000000000000000000000000000",
+   "trace_S": "143736121/200000000000000",
+   "n_plus_S": 1,
+   "n_plus_Mx": 2,
+   "n_plus_My": 2,
+   "n_box_formula": "3/2",
+   "delta_commutator_2norm": "1/2000000",
+   "boundary_distance": "1/10000"
+  },
+  {
+   "e": "1/1000000",
+   "det_S": "-8063959872070663946760014641/160000000000000000000000000000000000000000000000000000",
+   "trace_S": "143999736000121/200000000000000000000000000",
+   "n_plus_S": 1,
+   "n_plus_Mx": 2,
+   "n_plus_My": 2,
+   "n_box_formula": "3/2",
+   "delta_commutator_2norm": "1/2000000000000",
+   "boundary_distance": "1/10000000"
+  }
+ ]
+}

@@ -1,5 +1,7 @@
 # PD-T?lattice-c0-codex-02 — Infinite cardinality-admissible three-dimensional fibers
 
+Final ID: **PD-T082** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T. Aliases: six-periodic diagonal fibers; consecutive lengths modulo6.
 Split from: none. Split into: none.
 

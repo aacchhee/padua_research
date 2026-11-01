@@ -1,0 +1,133 @@
+{
+  "baseline": "183d33760e8d6c3ecdeb588576bd65ba312f65fe",
+  "candidate": "98945cbcf10c4f8eb53f77c996db358392d42391",
+  "protected_files_unchanged": 669,
+  "protected_path_blob_inventory_sha256": "df2d9bcb96205e4d76fc9875c08a762dc6c920fdb62718ca08b2a927f18a1a7a",
+  "theory_files_exactly_unchanged": 77,
+  "status_counts": {
+    "OPEN": 4,
+    "PROVED": 38,
+    "MEASURED": 34,
+    "CONDITIONAL": 1
+  },
+  "allocations_stable": 404,
+  "dependency_rows_independently_matched": 77,
+  "preserved_repository_output_lower_bound": {
+    "files": 348,
+    "bytes": 5078141,
+    "limit": 5000000,
+    "scope": "Selected historical outputs only; excludes audit-04/05 additions. Gate not discharged."
+  },
+  "idea_rows_checked": 100,
+  "literature_statement_blocks_preserved": 292,
+  "topic_literature_paths_validated": 227,
+  "developer_integration_checker_rerun": {
+    "allocation_envelope_errors": [],
+    "proof_status_rows": 111,
+    "proof_status_duplicates": [],
+    "idea_rows_final_block": 100,
+    "idea_duplicates_in_block": [],
+    "index_lit_rows": 292,
+    "index_duplicates": [],
+    "theory_files": 77,
+    "bad_final_id_headers": [],
+    "crosswalk_missing": [],
+    "crosswalk_missing_count": 0,
+    "status_mismatch": [],
+    "broken_links": {},
+    "canonical_tnf_statements_preserved": true,
+    "generated_inventory_scope": "topic filesystem run/audit folders; not the repository aggregate",
+    "generated_files": 386,
+    "generated_bytes": 3687079,
+    "files_over_1MB": [],
+    "failures": []
+  },
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "disposable_allocator_executions": [
+    {
+      "args": [],
+      "expected_exit": 0,
+      "exit": 0,
+      "stdout": "{\"crosswalk_rows\": 404, \"forward_dependency_rows\": 77, \"idea_dispositions\": 100, \"literature_aliases\": 227, \"map_entries\": 404, \"map_reassigned\": false, \"mode\": \"rows\", \"theory_headers_validated\": 77}",
+      "stderr": ""
+    },
+    {
+      "args": [],
+      "expected_exit": 0,
+      "exit": 0,
+      "stdout": "{\"crosswalk_rows\": 404, \"forward_dependency_rows\": 77, \"idea_dispositions\": 100, \"literature_aliases\": 227, \"map_entries\": 404, \"map_reassigned\": false, \"mode\": \"rows\", \"theory_headers_validated\": 77}",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "--check"
+      ],
+      "expected_exit": 0,
+      "exit": 0,
+      "stdout": "{\"crosswalk_rows\": 404, \"forward_dependency_rows\": 77, \"idea_dispositions\": 100, \"literature_aliases\": 227, \"map_entries\": 404, \"map_reassigned\": false, \"mode\": \"check\", \"theory_headers_validated\": 77}",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "--apply"
+      ],
+      "expected_exit": 0,
+      "exit": 0,
+      "stdout": "{\"crosswalk_rows\": 404, \"forward_dependency_rows\": 77, \"idea_dispositions\": 100, \"literature_aliases\": 227, \"map_entries\": 404, \"map_reassigned\": false, \"mode\": \"apply\", \"theory_headers_validated\": 77}",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "--apply"
+      ],
+      "expected_exit": 0,
+      "exit": 0,
+      "stdout": "{\"crosswalk_rows\": 404, \"forward_dependency_rows\": 77, \"idea_dispositions\": 100, \"literature_aliases\": 227, \"map_entries\": 404, \"map_reassigned\": false, \"mode\": \"apply\", \"theory_headers_validated\": 77}",
+      "stderr": ""
+    },
+    {
+      "args": [],
+      "expected_exit": 0,
+      "exit": 0,
+      "stdout": "{\"crosswalk_rows\": 404, \"forward_dependency_rows\": 77, \"idea_dispositions\": 100, \"literature_aliases\": 227, \"map_entries\": 404, \"map_reassigned\": false, \"mode\": \"rows\", \"theory_headers_validated\": 77}",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "--apply"
+      ],
+      "expected_exit": 0,
+      "exit": 0,
+      "stdout": "{\"crosswalk_rows\": 404, \"forward_dependency_rows\": 77, \"idea_dispositions\": 100, \"literature_aliases\": 227, \"map_entries\": 404, \"map_reassigned\": false, \"mode\": \"apply\", \"theory_headers_validated\": 77}",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "--apply"
+      ],
+      "expected_exit": 0,
+      "exit": 0,
+      "stdout": "{\"crosswalk_rows\": 404, \"forward_dependency_rows\": 77, \"idea_dispositions\": 100, \"literature_aliases\": 227, \"map_entries\": 404, \"map_reassigned\": false, \"mode\": \"apply\", \"theory_headers_validated\": 77}",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "--apply"
+      ],
+      "expected_exit": 1,
+      "exit": 1,
+      "stdout": "",
+      "stderr": "Refusing to write: duplicate or mismatched Final ID header: tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-300-l3q1-backward-interpretation-target.md"
+    },
+    {
+      "args": [
+        "--apply"
+      ],
+      "expected_exit": 1,
+      "exit": 1,
+      "stdout": "",
+      "stderr": "Refusing to write: allocation bytes differ from the reviewed immutable map"
+    }
+  ],
+  "scope": "Technical preservation, registry integrity, literature relocation and allocator execution; semantic source review is documented in audit-05.md. No mathematical producer reruns."
+}

@@ -1,0 +1,8 @@
+python 3.12.14 numpy 2.3.5 float64_eps 2.220446049250313e-16 longdouble_eps 1.084202172485504434e-19
+exact_checkerboard 0 moments_checked 45 mismatches 0 degree9_x4y5_difference -1/2
+exact_checkerboard 1 moments_checked 45 mismatches 0 degree9_x4y5_difference 1/2
+rotation 0.05 n24 (4.209653459152918e-13, {'x': {'rho': 0.001960994436089396, 'loss_over_eps_prediction': 3.71776968598292, 'loss_over_u_prediction': 7.43553937196584}, 'y': {'rho': 0.0020744620246954215, 'loss_over_eps_prediction': 3.9328882776002962, 'loss_over_u_prediction': 7.8657765552005925}, 'z': {'rho': 0.0037746616907015644, 'loss_over_eps_prediction': 7.156227753769911, 'loss_over_u_prediction': 14.312455507539822}})
+rotation 0.7853981633974483 n24 (0.0051883343130924645, {'x': {'rho': 0.0028486322301835183, 'loss_over_eps_prediction': 66561654809.09703, 'loss_over_u_prediction': 133123309618.19406}, 'y': {'rho': 0.003084912215627051, 'loss_over_eps_prediction': 72082615592.5737, 'loss_over_u_prediction': 144165231185.1474}, 'z': {'rho': 0.0037746661668050987, 'loss_over_eps_prediction': 88199530901.98387, 'loss_over_u_prediction': 176399061803.96774}})
+selection_control alt full False loss 1.8219702564367668e-08
+selection_control dev full True loss 2.9934388301455783e-14
+exp8xy_n24 (3.950353552909999e-08, {'x': {'rho': 0.0016373276553501162, 'loss_over_eps_prediction': 291293.86515713466, 'loss_over_u_prediction': 582587.7303142693}, 'y': {'rho': 0.00050701048343574, 'loss_over_eps_prediction': 90201.27578777332, 'loss_over_u_prediction': 180402.55157554665}, 'z': {'rho': 0.0009052473669277952, 'loss_over_eps_prediction': 161050.84622132633, 'loss_over_u_prediction': 322101.69244265265}})

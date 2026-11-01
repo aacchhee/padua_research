@@ -1,0 +1,10 @@
+# rv_sweep.py M  python 3.13.18 numpy 2.5.3  u64=1.110e-16 u32=5.960e-08
+   square_rotpi4  M=  1681 bj loss n=8..22 step 2: 1.5e-14 2.3e-13 3.9e-12 6.7e-11 1.2e-09 3.7e-08 2.1e-06 1.2e-04  (0s)
+   square_rotpi4  M=  6724 bj loss n=8..22 step 2: 3.3e-14 4.1e-13 5.6e-12 8.4e-11 1.3e-09 2.0e-08 2.5e-07 5.6e-06  (0s)
+   square_rotpi4  M= 26896 bj loss n=8..22 step 2: 2.8e-14 3.2e-13 4.1e-12 6.1e-11 1.0e-09 2.0e-08 4.5e-07 1.2e-05  (2s)
+   disk           M=  1681 bj loss n=8..22 step 2: 6.9e-15 2.1e-14 1.1e-13 5.4e-13 2.8e-12 1.7e-11 9.6e-11 9.0e-10  (0s)
+   disk           M=  6724 bj loss n=8..22 step 2: 8.9e-15 1.4e-14 7.6e-14 4.0e-13 2.1e-12 1.1e-11 6.0e-11 3.3e-10  (0s)
+   disk           M= 26896 bj loss n=8..22 step 2: 7.5e-15 1.0e-14 5.7e-14 3.0e-13 1.5e-12 7.7e-12 4.1e-11 2.1e-10  (2s)
+   square         M=  1681 bj loss n=8..22 step 2: 6.9e-15 6.9e-15 6.9e-15 6.9e-15 6.9e-15 6.9e-15 6.9e-15 1.1e-14  (0s)
+   square         M=  6724 bj loss n=8..22 step 2: 8.9e-15 8.9e-15 8.9e-15 8.9e-15 8.9e-15 8.9e-15 8.9e-15 8.9e-15  (0s)
+   square         M= 26896 bj loss n=8..22 step 2: 7.5e-15 7.5e-15 7.5e-15 7.5e-15 7.5e-15 7.5e-15 7.5e-15 7.5e-15  (2s)

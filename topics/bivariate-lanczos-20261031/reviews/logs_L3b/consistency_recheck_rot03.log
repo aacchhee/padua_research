@@ -1,0 +1,22 @@
+consistency_recheck set=rot03 M=1681 BJ block window CGS (own implementation); nmin=12 nmax=19
+ n    N  loss      asymF     asymF_noX asymJ     comm/u   fwdF_A    fwdJ_A    refAB     |  rho_all  frac_extra rho_noextra  max|eta|/wmin(all,noX)  E
+12   91  2.83e-13  4.85e-15  4.85e-15  6.57e-13     4.1  2.75e-14  6.57e-13  2.4e-14   |  0.786    0.303     0.761      1.1e-12, 1.1e-12   2145
+   long-double reference C: |A-C| = 1.3e-14; fwdF_C = 1.87e-14, fwdJ_C = 6.57e-13; |e_C|_2/|e_A|_2 = 0.440; rho_all(C) = 0.794, frac_extra(C) = 0.067, rho_noextra(C) = 0.793, max|eta|/wmin = 5.0e-13
+13  105  1.00e-12  1.04e-14  1.04e-14  2.48e-12     4.1  8.66e-14  2.48e-12  7.2e-14   |  0.741    0.264     0.718      4.5e-12, 4.5e-12   2653
+   long-double reference C: |A-C| = 5.9e-14; fwdF_C = 4.68e-14, fwdJ_C = 2.48e-12; |e_C|_2/|e_A|_2 = 0.572; rho_all(C) = 0.702, frac_extra(C) = 0.066, rho_noextra(C) = 0.700, max|eta|/wmin = 3.5e-12
+14  120  3.74e-12  1.04e-14  1.04e-14  9.92e-12     4.1  1.87e-13  9.92e-12  1.8e-13   |  0.684    0.219     0.664      3.0e-11, 3.0e-11   3235
+   long-double reference C: |A-C| = 8.4e-14; fwdF_C = 1.60e-13, fwdJ_C = 9.92e-12; |e_C|_2/|e_A|_2 = 0.726; rho_all(C) = 0.618, frac_extra(C) = 0.023, rho_noextra(C) = 0.618, max|eta|/wmin = 6.9e-11
+15  136  1.55e-11  3.97e-14  3.97e-14  4.31e-11     4.1  8.27e-13  4.31e-11  6.1e-13   |  0.610    0.172     0.594      6.8e-11, 6.8e-11   3896
+   long-double reference C: |A-C| = 3.0e-13; fwdF_C = 6.01e-13, fwdJ_C = 4.31e-11; |e_C|_2/|e_A|_2 = 0.779; rho_all(C) = 0.557, frac_extra(C) = 0.032, rho_noextra(C) = 0.556, max|eta|/wmin = 8.2e-10
+16  153  6.04e-11  7.95e-14  7.95e-14  1.86e-10     4.1  2.42e-12  1.86e-10  2.0e-12   |  0.499    0.149     0.486      2.7e+00, 2.9e+00   4641
+   long-double reference C: |A-C| = 5.6e-13; fwdF_C = 2.21e-12, fwdJ_C = 1.86e-10; |e_C|_2/|e_A|_2 = 0.881; rho_all(C) = 0.452, frac_extra(C) = 0.016, rho_noextra(C) = 0.452, max|eta|/wmin = 2.6e-09
+17  171  2.79e-10  2.66e-13  2.66e-13  9.53e-10     4.1  8.27e-12  9.53e-10  6.8e-12   |  0.527    0.065     0.508      1.1e+01, 1.3e+01   5475
+   long-double reference C: |A-C| = 1.2e-12; fwdF_C = 8.37e-12, fwdJ_C = 9.53e-10; |e_C|_2/|e_A|_2 = 0.971; rho_all(C) = 0.546, frac_extra(C) = 0.008, rho_noextra(C) = 0.546, max|eta|/wmin = 6.5e-08
+18  190  1.38e-09  3.15e-12  3.15e-12  5.52e-09     4.1  3.33e-11  5.52e-09  5.0e-11   |  0.595    0.035     0.577      2.3e+01, 2.9e+01   6403
+   long-double reference C: |A-C| = 3.3e-12; fwdF_C = 3.38e-11, fwdJ_C = 5.52e-09; |e_C|_2/|e_A|_2 = 1.006; rho_all(C) = 0.652, frac_extra(C) = 0.020, rho_noextra(C) = 0.652, max|eta|/wmin = 4.4e-06
+19  210  7.63e-09  2.14e-11  2.14e-11  3.32e-08     4.1  2.00e-10  3.32e-08  2.9e-10   |  0.622    0.030     0.596      9.6e+01, 1.2e+02   7430
+   long-double reference C: |A-C| = 6.6e-12; fwdF_C = 1.98e-10, fwdJ_C = 3.32e-08; |e_C|_2/|e_A|_2 = 0.994; rho_all(C) = 0.709, frac_extra(C) = 0.028, rho_noextra(C) = 0.708, max|eta|/wmin = 1.4e-04
+
+real	5m48.528s
+user	2m13.852s
+sys	0m0.482s

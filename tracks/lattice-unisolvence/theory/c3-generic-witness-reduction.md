@@ -1,5 +1,7 @@
 # PD-T?lattice-c3-codex-01 — Exact witnesses and a degree bound for generic grid interpolation
 
+Final ID: **PD-T090** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T. Aliases: determinant-polynomial lifting; without-replacement Schwartz–Zippel bound.
 Split from: none. Split into: finite measurements in c3-rank-observations.md; this supporting result does not prove an axis-separated criterion.
 

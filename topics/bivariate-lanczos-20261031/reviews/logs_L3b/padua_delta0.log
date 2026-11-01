@@ -1,0 +1,23 @@
+padua_delta0.py: rigorous positivity radius of P_n around Padua nodes
+n= 4: certified delta_0(n) >= 5.6302e-04 = 619045053/1099511627776 (binding node (j,k)=(1,1) [int])  (0.3s)
+       MEASURED (float sampling, 720 directions, radii geometric): first radius with min P_n < 0 on the circle: 3.372e-02
+n= 5: certified delta_0(n) >= 1.0225e-04 = 112424457/1099511627776 (binding node (j,k)=(1,1) [int])  (0.6s)
+       MEASURED (float sampling, 720 directions, radii geometric): first radius with min P_n < 0 on the circle: 1.433e-02
+n= 6: certified delta_0(n) >= 2.3627e-05 = 25977985/1099511627776 (binding node (j,k)=(1,1) [int])  (1.2s)
+       MEASURED (float sampling, 720 directions, radii geometric): first radius with min P_n < 0 on the circle: 6.631e-03
+n= 7: certified delta_0(n) >= 6.6062e-06 = 7263613/1099511627776 (binding node (j,k)=(1,1) [int])  (1.9s)
+       MEASURED (float sampling, 720 directions, radii geometric): first radius with min P_n < 0 on the circle: 3.490e-03
+n= 8: certified delta_0(n) >= 2.1471e-06 = 2360731/1099511627776 (binding node (j,k)=(1,1) [int])  (4.3s)
+       MEASURED (float sampling, 720 directions, radii geometric): first radius with min P_n < 0 on the circle: 2.088e-03
+n= 9: certified delta_0(n) >= 7.8710e-07 = 865431/1099511627776 (binding node (j,k)=(1,1) [int])  (6.0s)
+       MEASURED (float sampling, 720 directions, radii geometric): first radius with min P_n < 0 on the circle: 1.099e-03
+n=10: certified delta_0(n) >= 3.1825e-07 = 349925/1099511627776 (binding node (j,k)=(1,1) [int])  (11.4s)
+       MEASURED (float sampling, 720 directions, radii geometric): first radius with min P_n < 0 on the circle: 7.475e-04
+n=11: certified delta_0(n) >= 1.3955e-07 = 153433/1099511627776 (binding node (j,k)=(1,1) [int])  (14.6s)
+       MEASURED (float sampling, 720 directions, radii geometric): first radius with min P_n < 0 on the circle: 7.162e-04
+n=12: certified delta_0(n) >= 6.5495e-08 = 18003/274877906944 (binding node (j,k)=(1,1) [int])  (25.9s)
+       MEASURED (float sampling, 720 directions, radii geometric): first radius with min P_n < 0 on the circle: 3.460e-04
+
+real	1m15.098s
+user	1m13.997s
+sys	0m0.082s

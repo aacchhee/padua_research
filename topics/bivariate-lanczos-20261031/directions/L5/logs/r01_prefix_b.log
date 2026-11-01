@@ -1,0 +1,17 @@
+n=50 given  nsing= 1298 namb=0 min_exact=0.0e+00@K=None n<1e-8:1306 first_sing=2 (15.1s)
+n=50 sortx  nsing= 1298 namb=0 min_exact=0.0e+00@K=None n<1e-8:1309 first_sing=2 (20.2s)
+n=50 rand1  nsing=    0 namb=0 min_exact=2.3e-08@K=None n<1e-8:0 first_sing=None (363.9s)
+n=50 rand2  nsing=    0 namb=0 min_exact=3.5e-08@K=None n<1e-8:0 first_sing=None (291.1s)
+n=50 rand3  nsing=    0 namb=0 min_exact=3.0e-09@K=None n<1e-8:1 first_sing=None (272.7s)
+n=50 gepp   nsing=    0 namb=0 min_exact=7.5e-03@K=None n<1e-8:0 first_sing=None (24.9s)
+n=50 rpiv1  nsing=    0 namb=0 min_exact=8.1e-04@K=None n<1e-8:0 first_sing=None (25.7s)
+n=50 rpiv2  nsing=    0 namb=0 min_exact=4.7e-04@K=None n<1e-8:0 first_sing=None (25.9s)
+n=50 rpiv3  nsing=    0 namb=0 min_exact=8.0e-04@K=None n<1e-8:0 first_sing=None (25.7s)
+  err padua_cub n=50 gepp: givens-scheme:1.2e-13 givens-largest:9.3e-10 hl:6.2e-15 hh:2.6e-15
+  err padua_cub n=50 rpiv1: givens-scheme:1.1e-13 givens-largest:3.1e-09 hl:6.1e-15 hh:2.6e-15
+  err padua_cub n=50 rpiv2: givens-scheme:1.1e-13 givens-largest:1.6e-09 hl:6.0e-15 hh:2.6e-15
+  err padua_cub n=50 rpiv3: givens-scheme:1.1e-13 givens-largest:9.2e-10 hl:6.3e-15 hh:2.6e-15
+  err padua_rand n=50 gepp: givens-scheme:1.2e-13 givens-largest:3.6e-10 hl:1.2e-14 hh:2.7e-15
+  err padua_rand n=50 rpiv1: givens-scheme:1.1e-13 givens-largest:2.3e-09 hl:1.2e-14 hh:2.7e-15
+  err padua_rand n=50 rpiv2: givens-scheme:1.2e-13 givens-largest:2.8e-09 hl:1.3e-14 hh:2.7e-15
+  err padua_rand n=50 rpiv3: givens-scheme:1.3e-13 givens-largest:9.8e-10 hl:1.2e-14 hh:2.7e-15

@@ -1,0 +1,8 @@
+family=padua nmax=7 seed=0 numpy=2.5.3 cvxpy=1.6.0
+n=1 M=3 D=10 3M=9 expected_dimS1=1 dimS1=1 kerHess=0 tD=0.08574035796030763 lP=-1.3514543437794206e-13 [optimal,optimal]
+n=2 M=6 D=21 3M=18 expected_dimS1=3 dimS1=3 kerHess=0 tD=0.015199010755035432 lP=-3.650098416652272e-12 [optimal,optimal]
+n=3 M=10 D=36 3M=30 expected_dimS1=6 dimS1=6 kerHess=0 tD=-0.0037235832318748985 lP=2.871177069855694 [optimal,optimal]
+n=4 M=15 D=55 3M=45 expected_dimS1=10 dimS1=10 kerHess=0 tD=-0.0012768135288117877 lP=3.293847465857545 [optimal,optimal]
+n=5 M=21 D=78 3M=63 expected_dimS1=15 dimS1=15 kerHess=0 tD=-0.0017858466564848684 lP=12.183348221462044 [optimal,optimal]
+n=6 M=28 D=105 3M=84 expected_dimS1=21 dimS1=21 kerHess=0 tD=-0.0006875946980195995 lP=20.400072740003765 [optimal,optimal]
+n=7 M=36 D=136 3M=108 expected_dimS1=28 dimS1=28 kerHess=0 tD=-0.0009035389529291097 lP=40.74175280528692 [optimal,optimal]

@@ -1,0 +1,250 @@
+SIZE-LEVEL slopes (OLS on per-size mean log10 error vs log10 M; 95% t-interval with df = sizes-2; quad = curvature in log-log)
+
+== padua_cub / all5: sizes [66, 136, 231, 496, 861, 1326, 2016]
+  [full]
+    givens-scheme    1.40 [ 1.01, 1.79] (df 5) quad +0.73 (t=+3.7)
+    givens-largest   7.12 [ 4.69, 9.55] (df 5) quad +5.07 (t=+13.3)
+    hl               0.73 [ 0.69, 0.77] (df 5) quad -0.01 (t=-0.3)
+    bj               1.17 [ 0.87, 1.48] (df 5) quad -0.08 (t=-0.3)
+    cgs2             0.48 [ 0.44, 0.53] (df 5) quad +0.04 (t=+1.0)
+    hh               0.38 [ 0.36, 0.40] (df 5) quad -0.02 (t=-1.3)
+  [upper(M>=496)]
+    givens-scheme    2.15 [ 0.60, 3.71] (df 2) quad +2.76 (t=+44.4)
+    givens-largest  11.16 [ 8.77,13.55] (df 2) quad +3.23 (t=+1.2)
+    hl               0.75 [ 0.52, 0.98] (df 2) quad -0.04 (t=-0.1)
+    bj               1.57 [ 0.88, 2.26] (df 2) quad -1.06 (t=-1.7)
+    cgs2             0.57 [ 0.48, 0.66] (df 2) quad +0.12 (t=+1.1)
+    hh               0.38 [ 0.31, 0.44] (df 2) quad +0.02 (t=+0.2)
+
+== padua_cub / structured: sizes [66, 136, 231, 496, 861, 1326, 2016]
+  [full]
+    givens-scheme    0.93 [ 0.88, 0.99] (df 5) quad +0.07 (t=+1.5)
+    givens-largest   8.57 [ 5.88,11.27] (df 5) quad +4.68 (t=+2.9)
+    hl               0.80 [ 0.71, 0.88] (df 5) quad -0.01 (t=-0.1)
+    bj               1.31 [ 0.64, 1.97] (df 5) quad -0.28 (t=-0.4)
+    cgs2             0.50 [ 0.46, 0.54] (df 5) quad +0.01 (t=+0.3)
+    hh               0.37 [ 0.36, 0.38] (df 5) quad -0.00 (t=-0.3)
+  [upper(M>=496)]
+    givens-scheme    0.98 [ 0.77, 1.18] (df 2) quad -0.21 (t=-0.7)
+    givens-largest  10.52 [ 9.21,11.83] (df 2) quad -2.20 (t=-3.0)
+    hl               0.81 [ 0.20, 1.43] (df 2) quad -0.39 (t=-0.4)
+    bj               1.28 [-3.37, 5.93] (df 2) quad +3.32 (t=+0.4)
+    cgs2             0.55 [ 0.50, 0.59] (df 2) quad +0.05 (t=+0.8)
+    hh               0.38 [ 0.32, 0.44] (df 2) quad +0.00 (t=+0.0)
+
+== padua_cub / random: sizes [66, 136, 231, 496, 861, 1326, 2016]
+  [full]
+    givens-scheme    1.71 [ 1.07, 2.35] (df 5) quad +1.17 (t=+3.4)
+    givens-largest   6.16 [ 3.55, 8.76] (df 5) quad +5.33 (t=+7.6)
+    hl               0.69 [ 0.65, 0.72] (df 5) quad -0.01 (t=-0.3)
+    bj               1.09 [ 0.54, 1.63] (df 5) quad +0.05 (t=+0.1)
+    cgs2             0.47 [ 0.42, 0.53] (df 5) quad +0.06 (t=+1.4)
+    hh               0.38 [ 0.36, 0.41] (df 5) quad -0.03 (t=-1.7)
+  [upper(M>=496)]
+    givens-scheme    2.94 [ 0.27, 5.60] (df 2) quad +4.75 (t=+50.9)
+    givens-largest  11.59 [ 7.09,16.08] (df 2) quad +6.85 (t=+1.7)
+    hl               0.71 [ 0.60, 0.82] (df 2) quad +0.20 (t=+81.3)
+    bj               1.77 [-1.42, 4.95] (df 2) quad -3.99 (t=-1.0)
+    cgs2             0.59 [ 0.47, 0.71] (df 2) quad +0.17 (t=+1.2)
+    hh               0.37 [ 0.31, 0.44] (df 2) quad +0.03 (t=+0.3)
+
+== padua_rand / all5: sizes [66, 136, 231, 496, 861, 1326, 2016]
+  [full]
+    givens-scheme    1.55 [ 1.03, 2.06] (df 5) quad +0.93 (t=+3.4)
+    givens-largest   6.60 [ 5.19, 8.01] (df 5) quad +1.79 (t=+1.5)
+    hl               0.79 [ 0.74, 0.84] (df 5) quad +0.00 (t=+0.1)
+    bj               1.01 [ 0.82, 1.19] (df 5) quad -0.26 (t=-1.8)
+    cgs2             0.53 [ 0.50, 0.56] (df 5) quad +0.02 (t=+0.4)
+    hh               0.38 [ 0.35, 0.40] (df 5) quad -0.03 (t=-1.3)
+  [upper(M>=496)]
+    givens-scheme    2.50 [ 0.31, 4.70] (df 2) quad +3.90 (t=+43.5)
+    givens-largest   9.16 [ 4.64,13.67] (df 2) quad +7.79 (t=+3.9)
+    hl               0.80 [ 0.56, 1.05] (df 2) quad +0.43 (t=+49.5)
+    bj               0.78 [ 0.47, 1.09] (df 2) quad +0.12 (t=+0.2)
+    cgs2             0.55 [ 0.38, 0.73] (df 2) quad +0.31 (t=+11.0)
+    hh               0.37 [ 0.26, 0.47] (df 2) quad +0.03 (t=+0.2)
+
+== padua_rand / structured: sizes [66, 136, 231, 496, 861, 1326, 2016]
+  [full]
+    givens-scheme    0.92 [ 0.88, 0.97] (df 5) quad +0.04 (t=+0.8)
+    givens-largest   7.18 [ 4.44, 9.91] (df 5) quad -3.50 (t=-1.5)
+    hl               0.81 [ 0.76, 0.85] (df 5) quad -0.02 (t=-0.4)
+    bj               1.05 [ 0.80, 1.29] (df 5) quad +0.31 (t=+1.5)
+    cgs2             0.54 [ 0.50, 0.57] (df 5) quad -0.01 (t=-0.2)
+    hh               0.38 [ 0.35, 0.40] (df 5) quad -0.03 (t=-1.6)
+  [upper(M>=496)]
+    givens-scheme    1.00 [ 0.83, 1.18] (df 2) quad +0.27 (t=+1.6)
+    givens-largest   5.69 [ 0.87,10.51] (df 2) quad +7.56 (t=+1.9)
+    hl               0.79 [ 0.57, 1.02] (df 2) quad +0.40 (t=+10.4)
+    bj               1.33 [ 0.29, 2.37] (df 2) quad +1.65 (t=+1.9)
+    cgs2             0.56 [ 0.36, 0.76] (df 2) quad +0.35 (t=+4.5)
+    hh               0.36 [ 0.25, 0.48] (df 2) quad +0.03 (t=+0.2)
+
+== padua_rand / random: sizes [66, 136, 231, 496, 861, 1326, 2016]
+  [full]
+    givens-scheme    1.96 [ 1.13, 2.79] (df 5) quad +1.52 (t=+3.5)
+    givens-largest   6.21 [ 3.64, 8.78] (df 5) quad +5.31 (t=+9.3)
+    hl               0.78 [ 0.73, 0.83] (df 5) quad +0.02 (t=+0.4)
+    bj               0.98 [ 0.65, 1.30] (df 5) quad -0.64 (t=-5.5)
+    cgs2             0.53 [ 0.49, 0.56] (df 5) quad +0.03 (t=+0.9)
+    hh               0.38 [ 0.35, 0.40] (df 5) quad -0.02 (t=-1.1)
+  [upper(M>=496)]
+    givens-scheme    3.50 [-0.05, 7.06] (df 2) quad +6.32 (t=+174.8)
+    givens-largest  11.47 [ 7.00,15.94] (df 2) quad +7.94 (t=+13.6)
+    hl               0.81 [ 0.55, 1.07] (df 2) quad +0.46 (t=+11.4)
+    bj               0.41 [-0.13, 0.95] (df 2) quad -0.91 (t=-2.8)
+    cgs2             0.55 [ 0.39, 0.71] (df 2) quad +0.29 (t=+70.0)
+    hh               0.37 [ 0.26, 0.47] (df 2) quad +0.03 (t=+0.1)
+
+== padua_unif / all5: sizes [66, 231, 496, 861]
+  [full]
+    givens-scheme    1.08 [ 0.81, 1.34] (df 2) quad +0.02 (t=+0.1)
+    givens-largest   5.80 [-1.13,12.72] (df 2) quad +6.87 (t=+3.9)
+    hl               0.77 [ 0.65, 0.88] (df 2) quad -0.12 (t=-4.6)
+    bj               0.65 [-0.45, 1.75] (df 2) quad -1.08 (t=-3.5)
+    cgs2             0.52 [ 0.50, 0.55] (df 2) quad +0.02 (t=+19.1)
+    hh               0.38 [ 0.33, 0.43] (df 2) quad -0.04 (t=-1.0)
+  [upper(M>=496)]
+    givens-scheme   n/a
+    givens-largest  n/a
+    hl              n/a
+    bj              n/a
+    cgs2            n/a
+    hh              n/a
+
+== padua_unif / structured: sizes [66, 231, 496, 861]
+  [full]
+    givens-scheme    0.91 [ 0.76, 1.05] (df 2) quad +0.13 (t=+2.0)
+    givens-largest   8.84 [-3.80,21.48] (df 2) quad +11.96 (t=+2.4)
+    hl               0.76 [ 0.62, 0.90] (df 2) quad -0.14 (t=-3.9)
+    bj               0.86 [-1.03, 2.75] (df 2) quad -1.86 (t=-3.4)
+    cgs2             0.54 [ 0.50, 0.58] (df 2) quad -0.01 (t=-0.2)
+    hh               0.38 [ 0.33, 0.44] (df 2) quad -0.04 (t=-1.1)
+  [upper(M>=496)]
+    givens-scheme   n/a
+    givens-largest  n/a
+    hl              n/a
+    bj              n/a
+    cgs2            n/a
+    hh              n/a
+
+== padua_unif / random: sizes [66, 231, 496, 861]
+  [full]
+    givens-scheme    1.19 [ 0.80, 1.59] (df 2) quad -0.05 (t=-0.1)
+    givens-largest   3.76 [ 0.35, 7.17] (df 2) quad +3.47 (t=+9.9)
+    hl               0.77 [ 0.67, 0.87] (df 2) quad -0.10 (t=-5.6)
+    bj               0.51 [-0.07, 1.08] (df 2) quad -0.57 (t=-3.8)
+    cgs2             0.51 [ 0.46, 0.56] (df 2) quad +0.05 (t=+1.8)
+    hh               0.38 [ 0.33, 0.43] (df 2) quad -0.04 (t=-1.0)
+  [upper(M>=496)]
+    givens-scheme   n/a
+    givens-largest  n/a
+    hl              n/a
+    bj              n/a
+    cgs2            n/a
+    hh              n/a
+
+== random / all: sizes [66, 136, 231, 496, 861, 1326, 2016]
+  [full]
+    givens-scheme    2.87 [ 1.79, 3.96] (df 5) quad +2.16 (t=+5.6)
+    givens-largest   1.84 [ 1.33, 2.35] (df 5) quad +0.98 (t=+4.3)
+    hl               2.28 [ 1.66, 2.89] (df 5) quad +1.15 (t=+3.8)
+    bj               2.76 [ 2.14, 3.38] (df 5) quad +1.24 (t=+6.2)
+    cgs2             1.57 [ 1.01, 2.13] (df 5) quad +1.07 (t=+4.5)
+    hh               2.11 [ 1.58, 2.64] (df 5) quad +1.08 (t=+7.2)
+  [upper(M>=496)]
+    givens-scheme    5.06 [ 2.42, 7.70] (df 2) quad +3.12 (t=+0.9)
+    givens-largest   2.73 [ 0.70, 4.76] (df 2) quad +3.59 (t=+8.8)
+    hl               3.52 [ 1.95, 5.08] (df 2) quad -1.19 (t=-0.5)
+    bj               3.73 [ 3.29, 4.18] (df 2) quad -0.59 (t=-1.1)
+    cgs2             2.73 [ 1.67, 3.79] (df 2) quad -0.78 (t=-0.5)
+    hh               3.02 [ 2.36, 3.69] (df 2) quad -0.27 (t=-0.2)
+
+== random_cheb / all: sizes [66, 136, 231, 496, 861, 1326]
+  [full]
+    givens-scheme    1.28 [ 0.96, 1.60] (df 4) quad +0.45 (t=+1.7)
+    givens-largest   2.10 [ 1.22, 2.97] (df 4) quad +1.68 (t=+7.9)
+    hl               0.71 [ 0.69, 0.73] (df 4) quad +0.03 (t=+1.7)
+    bj               1.12 [ 0.94, 1.31] (df 4) quad +0.06 (t=+0.3)
+    cgs2             0.38 [ 0.35, 0.41] (df 4) quad -0.03 (t=-1.1)
+    hh               0.28 [ 0.23, 0.32] (df 4) quad -0.02 (t=-0.4)
+  [upper(M>=496)]
+    givens-scheme    1.69 [-5.21, 8.59] (df 1)
+    givens-largest   3.72 [-3.43,10.88] (df 1)
+    hl               0.73 [ 0.20, 1.27] (df 1)
+    bj               1.11 [-5.15, 7.36] (df 1)
+    cgs2             0.39 [ 0.29, 0.50] (df 1)
+    hh               0.26 [ 0.09, 0.43] (df 1)
+
+
+HOUSEHOLDER-NORMALISED (post-hoc, secondary): per instance log10(err/err_hh), then size-level fit
+
+== padua_cub / all5
+  [full]
+    givens-scheme    1.02 [ 0.62, 1.42] (df 5) quad +0.75 (t=+4.0)
+    givens-largest   6.74 [ 4.30, 9.18] (df 5) quad +5.09 (t=+12.8)
+    hl               0.35 [ 0.30, 0.40] (df 5) quad +0.01 (t=+0.2)
+    bj               0.80 [ 0.51, 1.09] (df 5) quad -0.06 (t=-0.2)
+    cgs2             0.11 [ 0.06, 0.15] (df 5) quad +0.07 (t=+1.7)
+  [upper(M>=496)]
+    givens-scheme    1.78 [ 0.23, 3.32] (df 2) quad +2.74 (t=+55.9)
+    givens-largest  10.78 [ 8.36,13.21] (df 2) quad +3.21 (t=+1.1)
+    hl               0.38 [ 0.08, 0.67] (df 2) quad -0.06 (t=-0.1)
+    bj               1.20 [ 0.52, 1.87] (df 2) quad -1.08 (t=-2.2)
+    cgs2             0.20 [ 0.14, 0.25] (df 2) quad +0.10 (t=+25.3)
+
+== padua_rand / all5
+  [full]
+    givens-scheme    1.17 [ 0.65, 1.69] (df 5) quad +0.96 (t=+3.6)
+    givens-largest   6.22 [ 4.80, 7.64] (df 5) quad +1.81 (t=+1.5)
+    hl               0.41 [ 0.37, 0.45] (df 5) quad +0.03 (t=+0.8)
+    bj               0.63 [ 0.45, 0.81] (df 5) quad -0.23 (t=-1.5)
+    cgs2             0.15 [ 0.12, 0.19] (df 5) quad +0.04 (t=+1.6)
+  [upper(M>=496)]
+    givens-scheme    2.14 [-0.05, 4.32] (df 2) quad +3.87 (t=+13.9)
+    givens-largest   8.79 [ 4.26,13.31] (df 2) quad +7.76 (t=+3.6)
+    hl               0.44 [ 0.18, 0.69] (df 2) quad +0.40 (t=+2.1)
+    bj               0.41 [ 0.21, 0.61] (df 2) quad +0.09 (t=+0.2)
+    cgs2             0.19 [-0.01, 0.39] (df 2) quad +0.28 (t=+1.3)
+
+== padua_unif / all5
+  [full]
+    givens-scheme    0.70 [ 0.39, 1.00] (df 2) quad +0.06 (t=+0.2)
+    givens-largest   5.41 [-1.56,12.38] (df 2) quad +6.91 (t=+3.8)
+    hl               0.38 [ 0.31, 0.46] (df 2) quad -0.08 (t=-6.3)
+    bj               0.27 [-0.79, 1.32] (df 2) quad -1.05 (t=-3.8)
+    cgs2             0.14 [ 0.07, 0.21] (df 2) quad +0.06 (t=+1.7)
+  [upper(M>=496)]
+    givens-scheme   n/a
+    givens-largest  n/a
+    hl              n/a
+    bj              n/a
+    cgs2            n/a
+
+== random / all
+  [full]
+    givens-scheme    0.76 [ 0.06, 1.46] (df 5) quad +1.08 (t=+2.1)
+    givens-largest  -0.27 [-0.62, 0.07] (df 5) quad -0.10 (t=-0.3)
+    hl               0.16 [-0.04, 0.37] (df 5) quad +0.08 (t=+0.4)
+    bj               0.65 [ 0.42, 0.87] (df 5) quad +0.16 (t=+0.7)
+    cgs2            -0.54 [-0.72,-0.36] (df 5) quad -0.00 (t=-0.0)
+  [upper(M>=496)]
+    givens-scheme    2.04 [-1.20, 5.28] (df 2) quad +3.38 (t=+0.7)
+    givens-largest  -0.29 [-2.63, 2.04] (df 2) quad +3.85 (t=+2.5)
+    hl               0.49 [-0.44, 1.42] (df 2) quad -0.92 (t=-0.7)
+    bj               0.71 [-0.25, 1.66] (df 2) quad -0.33 (t=-0.2)
+    cgs2            -0.29 [-0.72, 0.14] (df 2) quad -0.52 (t=-0.9)
+
+== random_cheb / all
+  [full]
+    givens-scheme    1.00 [ 0.66, 1.34] (df 4) quad +0.47 (t=+1.7)
+    givens-largest   1.82 [ 0.93, 2.71] (df 4) quad +1.70 (t=+7.5)
+    hl               0.43 [ 0.39, 0.48] (df 4) quad +0.05 (t=+1.3)
+    bj               0.85 [ 0.66, 1.04] (df 4) quad +0.08 (t=+0.4)
+    cgs2             0.10 [ 0.07, 0.14] (df 4) quad -0.01 (t=-0.3)
+  [upper(M>=496)]
+    givens-scheme    1.43 [-5.64, 8.50] (df 1)
+    givens-largest   3.47 [-3.51,10.44] (df 1)
+    hl               0.48 [ 0.11, 0.84] (df 1)
+    bj               0.85 [-5.23, 6.93] (df 1)
+    cgs2             0.14 [-0.14, 0.41] (df 1)

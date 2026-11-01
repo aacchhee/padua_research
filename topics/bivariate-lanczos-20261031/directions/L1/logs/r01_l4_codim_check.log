@@ -1,0 +1,24 @@
+n=1 N_n=  3 A=X                    codim(S_n cap A S_n in S_n) = 2
+n=1 N_n=  3 A=0.6X+0.8Y+0.3        codim(S_n cap A S_n in S_n) = 2
+n=1 N_n=  3 A=X^2+Y (non-affine)   codim(S_n cap A S_n in S_n) = 3
+n=2 N_n=  6 A=X                    codim(S_n cap A S_n in S_n) = 3
+n=2 N_n=  6 A=0.6X+0.8Y+0.3        codim(S_n cap A S_n in S_n) = 3
+n=2 N_n=  6 A=X^2+Y (non-affine)   codim(S_n cap A S_n in S_n) = 5
+n=3 N_n= 10 A=X                    codim(S_n cap A S_n in S_n) = 4
+n=3 N_n= 10 A=0.6X+0.8Y+0.3        codim(S_n cap A S_n in S_n) = 4
+n=3 N_n= 10 A=X^2+Y (non-affine)   codim(S_n cap A S_n in S_n) = 7
+n=4 N_n= 15 A=X                    codim(S_n cap A S_n in S_n) = 5
+n=4 N_n= 15 A=0.6X+0.8Y+0.3        codim(S_n cap A S_n in S_n) = 5
+n=4 N_n= 15 A=X^2+Y (non-affine)   codim(S_n cap A S_n in S_n) = 9
+n=5 N_n= 21 A=X                    codim(S_n cap A S_n in S_n) = 6
+n=5 N_n= 21 A=0.6X+0.8Y+0.3        codim(S_n cap A S_n in S_n) = 6
+n=5 N_n= 21 A=X^2+Y (non-affine)   codim(S_n cap A S_n in S_n) = 11
+n=6 N_n= 28 A=X                    codim(S_n cap A S_n in S_n) = 7
+n=6 N_n= 28 A=0.6X+0.8Y+0.3        codim(S_n cap A S_n in S_n) = 7
+n=6 N_n= 28 A=X^2+Y (non-affine)   codim(S_n cap A S_n in S_n) = 13
+n=7 N_n= 36 A=X                    codim(S_n cap A S_n in S_n) = 8
+n=7 N_n= 36 A=0.6X+0.8Y+0.3        codim(S_n cap A S_n in S_n) = 8
+n=7 N_n= 36 A=X^2+Y (non-affine)   codim(S_n cap A S_n in S_n) = 15
+n=8 N_n= 45 A=X                    codim(S_n cap A S_n in S_n) = 9
+n=8 N_n= 45 A=0.6X+0.8Y+0.3        codim(S_n cap A S_n in S_n) = 9
+n=8 N_n= 45 A=X^2+Y (non-affine)   codim(S_n cap A S_n in S_n) = 17

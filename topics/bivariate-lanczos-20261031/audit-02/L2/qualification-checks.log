@@ -1,0 +1,2 @@
+{"case": "zero_operator", "delta": 0.0, "operator_norm": 0.0, "normalized_quotient": "undefined 0/0; unnormalised inequality true"}
+{"case": "QR_backward_error_does_not_give_uniform_subspace_error", "relative_input_change": 4.906538933386797e-18, "unit_roundoff": 1.1102230246251565e-16, "condition": 2.882303761517118e+17, "projector_distance": 0.7071067811865477}

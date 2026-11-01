@@ -1,5 +1,7 @@
 # PD-T?lattice-c3-codex-04 — An isolated degree-two periodic 3D fibre has axis-only factors
 
+Final ID: **PD-T093** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T. Aliases: C0-d3-n2-050; C3-8ea9e9f33e3d; (3,1,2) mod6 fibre.
 Split from: rank-survivor family in c3-rank-observations.md. Split into: none. No n-dependent extension is claimed.
 

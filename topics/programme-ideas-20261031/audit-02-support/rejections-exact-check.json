@@ -1,0 +1,76 @@
+{
+  "source_sha": "cadb35066160e466cb1704b9791ad6f374446422",
+  "auditor": "Codex independent supplementary agent; requested gpt-6-astra xhigh; runtime metadata unexposed",
+  "environment": {
+    "python": "3.12.14",
+    "sympy": "1.14.0"
+  },
+  "equal_grid_k2": {
+    "node_count": 25,
+    "degree": 2,
+    "Pi_dimension": 6,
+    "all_nodes_upper_bound_exact": true,
+    "central_rows": [
+      {
+        "node": [
+          "0",
+          "0"
+        ],
+        "s": "27/175",
+        "residual_x_squared": "0",
+        "residual_y_squared": "0"
+      }
+    ]
+  },
+  "central_only_unequal_weights": {
+    "node_count": 9,
+    "degree": 2,
+    "Pi_dimension": 6,
+    "all_nodes_upper_bound_exact": true,
+    "central_rows": [
+      {
+        "node": [
+          "0",
+          "0"
+        ],
+        "s": "2153617/13312597",
+        "residual_x_squared": "0",
+        "residual_y_squared": "0"
+      }
+    ]
+  },
+  "saturated_central_case": {
+    "node_count": 7,
+    "degree": 2,
+    "Pi_dimension": 6,
+    "all_nodes_upper_bound_exact": true,
+    "central_rows": [
+      {
+        "node": [
+          "0",
+          "0"
+        ],
+        "s": "1",
+        "residual_x_squared": "0",
+        "residual_y_squared": "0"
+      }
+    ]
+  },
+  "asymmetric_bound": {
+    "node_count": 7,
+    "degree": 2,
+    "Pi_dimension": 6,
+    "all_nodes_upper_bound_exact": true,
+    "central_rows": [
+      {
+        "node": [
+          "0",
+          "0"
+        ],
+        "s": "175849/1215349",
+        "residual_x_squared": "384975638125470000/2857160280755154539",
+        "residual_y_squared": "426299149691730000/2857160280755154539"
+      }
+    ]
+  }
+}

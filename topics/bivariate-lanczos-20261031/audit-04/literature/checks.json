@@ -1,0 +1,558 @@
+{
+  "pins": {
+    "head": "a2dd845b8a231e1b00733e1361e2a9ad3bad222f",
+    "baseline": "cf01449fc96233c9074ce25efcb056535414aa1d",
+    "main": "9739a0c56b7a3976422ce60a8441bfbbfd6554df",
+    "consolidation": "ae36ec013630c939fb1b2c1cdddb2cf12cc80cf0",
+    "pre_consolidation": "9a77f2b10d42bb43aea01cacfcea86469c87c5dc",
+    "merge": "1167c33e71e2b0677e569f5fbae7ed97160fa8e9",
+    "allocation": "896afd6c6befee3bc05f74d178cab9400baab31a"
+  },
+  "head_matches_pin": true,
+  "consolidation_record_changes": {
+    "A": 29,
+    "M": 15
+  },
+  "consolidation_added": [
+    "literature/records/austin-et-al-2021.md",
+    "literature/records/bayer-teichmann-2006.md",
+    "literature/records/blekherman-2012.md",
+    "literature/records/carpraux-godunov-kuznetsov-1996.md",
+    "literature/records/cichon-stochel-szafraniec-2005.md",
+    "literature/records/davidson-doron-shalit-solel-2017.md",
+    "literature/records/delgado-geronimo-iliev-marcellan-2006.md",
+    "literature/records/di-dio-schmudgen-2018.md",
+    "literature/records/drkosova-et-al-1995.md",
+    "literature/records/dunkl-xu-2014.md",
+    "literature/records/eftekhari-et-al-2021.md",
+    "literature/records/greenbaum-strakos-1992.md",
+    "literature/records/heldt-kreuzer-pokutta-poulisse.md",
+    "literature/records/kuznetsov-1997.md",
+    "literature/records/lasserre-gaussian-cubature.md",
+    "literature/records/li-bai-su-zeng-2007.md",
+    "literature/records/meurant-2014-slides.md",
+    "literature/records/meurant-strakos-2006.md",
+    "literature/records/olver-townsend-vasil-2019.md",
+    "literature/records/paige-2010-augmented.md",
+    "literature/records/passer-shalit-solel-2018.md",
+    "literature/records/putinar-1997.md",
+    "literature/records/stewart-2001-krylov-backward.md",
+    "literature/records/telen-mourrain-vanbarel-2018.md",
+    "literature/records/waldron-2011.md",
+    "literature/records/xu-2017-survey.md",
+    "literature/records/xu-lecture-notes.md",
+    "literature/records/zhang-su-li-2024.md",
+    "literature/records/zhang-zhang-yang-wu-2024.md"
+  ],
+  "consolidation_updated": [
+    "literature/records/barrio-pena-sauer-2010.md",
+    "literature/records/brubeck-nakatsukasa-trefethen-2021.md",
+    "literature/records/chen-2026.md",
+    "literature/records/degani-schiff-tannor-2005.md",
+    "literature/records/fasondini-olver-xu-2023.md",
+    "literature/records/greenbaum-1989.md",
+    "literature/records/hokanson-2020.md",
+    "literature/records/jia-li-2021.md",
+    "literature/records/liu-narayan-2023.md",
+    "literature/records/simon-1984-mathcomp.md",
+    "literature/records/simonova-tichy-2025.md",
+    "literature/records/sinha-2026.md",
+    "literature/records/xu-tams-1994-blockjacobi.md",
+    "literature/records/zaccaron-2014.md",
+    "literature/records/zhu-nakatsukasa-2026.md"
+  ],
+  "shared_sources": {
+    "literature/records/bartels-jezioranski-1985.md": {
+      "whole_main_text_literal_substring": true,
+      "missing_nonblank_lines_even_as_extended_line": [],
+      "main_statement_headings_preserved": true
+    },
+    "literature/records/bos-dmv-xu-2007.md": {
+      "whole_main_text_literal_substring": true,
+      "missing_nonblank_lines_even_as_extended_line": [],
+      "main_statement_headings_preserved": true
+    },
+    "literature/records/caliari-dmv-2008.md": {
+      "whole_main_text_literal_substring": true,
+      "missing_nonblank_lines_even_as_extended_line": [],
+      "main_statement_headings_preserved": true
+    },
+    "literature/records/degani-schiff-tannor-2005.md": {
+      "whole_main_text_literal_substring": false,
+      "missing_nonblank_lines_even_as_extended_line": [],
+      "main_statement_headings_preserved": true
+    },
+    "literature/records/egk-1991.md": {
+      "whole_main_text_literal_substring": true,
+      "missing_nonblank_lines_even_as_extended_line": [],
+      "main_statement_headings_preserved": true
+    },
+    "literature/records/harris-simanek-2021.md": {
+      "whole_main_text_literal_substring": true,
+      "missing_nonblank_lines_even_as_extended_line": [],
+      "main_statement_headings_preserved": true
+    },
+    "literature/records/huhtanen-larsen-bit-2002.md": {
+      "whole_main_text_literal_substring": true,
+      "missing_nonblank_lines_even_as_extended_line": [],
+      "main_statement_headings_preserved": true
+    },
+    "literature/records/humet-2019.md": {
+      "whole_main_text_literal_substring": true,
+      "missing_nonblank_lines_even_as_extended_line": [],
+      "main_statement_headings_preserved": true
+    },
+    "literature/records/mourrain-2017.md": {
+      "whole_main_text_literal_substring": true,
+      "missing_nonblank_lines_even_as_extended_line": [],
+      "main_statement_headings_preserved": true
+    },
+    "literature/records/sauer-2007.md": {
+      "whole_main_text_literal_substring": true,
+      "missing_nonblank_lines_even_as_extended_line": [],
+      "main_statement_headings_preserved": true
+    },
+    "literature/records/sommariva-vianello-2015.md": {
+      "whole_main_text_literal_substring": true,
+      "missing_nonblank_lines_even_as_extended_line": [],
+      "main_statement_headings_preserved": true
+    },
+    "literature/records/vanbarel-chesnokov-2010.md": {
+      "whole_main_text_literal_substring": true,
+      "missing_nonblank_lines_even_as_extended_line": [],
+      "main_statement_headings_preserved": true
+    },
+    "literature/records/xu-pitman-1994.md": {
+      "whole_main_text_literal_substring": true,
+      "missing_nonblank_lines_even_as_extended_line": [],
+      "main_statement_headings_preserved": true
+    },
+    "literature/records/xu-siam-1994.md": {
+      "whole_main_text_literal_substring": true,
+      "missing_nonblank_lines_even_as_extended_line": [],
+      "main_statement_headings_preserved": true
+    }
+  },
+  "shared_source_count": 14,
+  "accepted_main_record_file_count_including_readme": 53,
+  "all_main_records_preserved_nonblank_lines": [],
+  "missing_main_index_nonblank_lines": [],
+  "main_corpus_field_preservation_failures": [],
+  "final_mapping_count": 227,
+  "final_mapping_range": [
+    66,
+    292
+  ],
+  "final_mapping_failures": [],
+  "new_statement_field_failures": [],
+  "new_statement_coverage": [
+    {
+      "id": "LIT-244",
+      "alias": "LIT?bivariate-lanczos-claude-401",
+      "record": "literature/records/olver-townsend-vasil-2019.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source. The reviewer reports that the choice of B_n^+ is made for cost and structure reasons and that no numerical comparison of different left inverses is given in the sections read.",
+      "index_coverage": "WebFetch digest of §2.3 (par.nsf.gov); UNVERIFIED"
+    },
+    {
+      "id": "LIT-245",
+      "alias": "LIT?bivariate-lanczos-claude-402",
+      "record": "literature/records/xu-2017-survey.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest of §2.2; UNVERIFIED"
+    },
+    {
+      "id": "LIT-246",
+      "alias": "LIT?bivariate-lanczos-claude-403",
+      "record": "literature/records/dunkl-xu-2014.md",
+      "verification": "**Not read, pending-reference.** The statement is the reviewer's pointer or characterisation, not a reading of the source. UNVERIFIED. `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "No part of the book was read. The L1 table lists this key as 'new, pending (not read)'.",
+      "index_coverage": "not read — pending-reference"
+    },
+    {
+      "id": "LIT-247",
+      "alias": "LIT?bivariate-lanczos-claude-404",
+      "record": "literature/records/li-bai-su-zeng-2007.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest of §IV and appendix; UNVERIFIED"
+    },
+    {
+      "id": "LIT-248",
+      "alias": "LIT?bivariate-lanczos-claude-405",
+      "record": "literature/records/meurant-2014-slides.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest of slides; UNVERIFIED"
+    },
+    {
+      "id": "LIT-249",
+      "alias": "LIT?bivariate-lanczos-claude-406",
+      "record": "literature/records/austin-et-al-2021.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest of §3.2; UNVERIFIED"
+    },
+    {
+      "id": "LIT-250",
+      "alias": "LIT?bivariate-lanczos-claude-407",
+      "record": "literature/records/waldron-2011.md",
+      "verification": "**Abstract-level only** (prior-art review); full text NOT read, so the mathematical content stays UNVERIFIED. `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Abstract page only; digest by the reviewer. Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "abstract page only; UNVERIFIED"
+    },
+    {
+      "id": "LIT-251",
+      "alias": "LIT?bivariate-lanczos-claude-408",
+      "record": "literature/records/zhang-su-li-2024.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest of Thm 3.1, Lemma 3.1, Remark 3.2; UNVERIFIED"
+    },
+    {
+      "id": "LIT-252",
+      "alias": "LIT?bivariate-lanczos-claude-409",
+      "record": "literature/records/zhang-zhang-yang-wu-2024.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest; UNVERIFIED"
+    },
+    {
+      "id": "LIT-253",
+      "alias": "LIT?bivariate-lanczos-claude-410",
+      "record": "literature/records/stewart-2001-krylov-backward.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest of Thm 3.2, Cor. 3.3; UNVERIFIED"
+    },
+    {
+      "id": "LIT-254",
+      "alias": "LIT?bivariate-lanczos-claude-411",
+      "record": "literature/records/paige-2010-augmented.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest of Thm 3.1, Cor. 3.2–3.4; UNVERIFIED"
+    },
+    {
+      "id": "LIT-255",
+      "alias": "LIT?bivariate-lanczos-claude-412",
+      "record": "literature/records/carpraux-godunov-kuznetsov-1996.md",
+      "verification": "**Not read, pending-reference.** The statement is the reviewer's pointer or characterisation, not a reading of the source. UNVERIFIED. `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Citation confirmed only through a reference list. The 1D background claim in the L2 review (the distance of the computed space from the exact one is a Krylov-subspace conditioning question) is the reviewer's reading of this literature, not a statement attested by this paper.",
+      "index_coverage": "not read — pending-reference"
+    },
+    {
+      "id": "LIT-256",
+      "alias": "LIT?bivariate-lanczos-claude-413",
+      "record": "literature/records/kuznetsov-1997.md",
+      "verification": "**Not read, pending-reference.** The statement is the reviewer's pointer or characterisation, not a reading of the source. UNVERIFIED. `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Citation confirmed only through a reference list.",
+      "index_coverage": "not read — pending-reference"
+    },
+    {
+      "id": "LIT-257",
+      "alias": "LIT?bivariate-lanczos-claude-414",
+      "record": "literature/records/drkosova-et-al-1995.md",
+      "verification": "**Metadata only**; the paper was NOT read, so no mathematical content is attested. UNVERIFIED. `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Metadata page only; the statement is the reviewer's background knowledge.",
+      "index_coverage": "metadata only; UNVERIFIED"
+    },
+    {
+      "id": "LIT-258",
+      "alias": "LIT?bivariate-lanczos-claude-415",
+      "record": "literature/records/heldt-kreuzer-pokutta-poulisse.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest of Thm 3.1, Cor. 3.3; UNVERIFIED"
+    },
+    {
+      "id": "LIT-259",
+      "alias": "LIT?bivariate-lanczos-claude-416",
+      "record": "literature/records/telen-mourrain-vanbarel-2018.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest; UNVERIFIED"
+    },
+    {
+      "id": "LIT-260",
+      "alias": "LIT?bivariate-lanczos-claude-417",
+      "record": "literature/records/di-dio-schmudgen-2018.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest of Prop. 4; UNVERIFIED"
+    },
+    {
+      "id": "LIT-261",
+      "alias": "LIT?bivariate-lanczos-claude-418",
+      "record": "literature/records/di-dio-schmudgen-2018.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source. Reading limitation noted by the reviewer: the digest flagged a possible transcription issue in Cor. 41 (iii)–(vii).",
+      "index_coverage": "WebFetch digest; UNVERIFIED"
+    },
+    {
+      "id": "LIT-262",
+      "alias": "LIT?bivariate-lanczos-claude-419",
+      "record": "literature/records/di-dio-schmudgen-2018.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest; UNVERIFIED"
+    },
+    {
+      "id": "LIT-263",
+      "alias": "LIT?bivariate-lanczos-claude-420",
+      "record": "literature/records/blekherman-2012.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest; UNVERIFIED"
+    },
+    {
+      "id": "LIT-264",
+      "alias": "LIT?bivariate-lanczos-claude-421",
+      "record": "literature/records/xu-lecture-notes.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest; UNVERIFIED"
+    },
+    {
+      "id": "LIT-265",
+      "alias": "LIT?bivariate-lanczos-claude-422",
+      "record": "literature/records/xu-lecture-notes.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest; UNVERIFIED"
+    },
+    {
+      "id": "LIT-266",
+      "alias": "LIT?bivariate-lanczos-claude-423",
+      "record": "literature/records/lasserre-gaussian-cubature.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest; UNVERIFIED"
+    },
+    {
+      "id": "LIT-267",
+      "alias": "LIT?bivariate-lanczos-claude-424",
+      "record": "literature/records/passer-shalit-solel-2018.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest; UNVERIFIED"
+    },
+    {
+      "id": "LIT-268",
+      "alias": "LIT?bivariate-lanczos-claude-425",
+      "record": "literature/records/davidson-doron-shalit-solel-2017.md",
+      "verification": "**Secondary report only** (the source itself NOT read). UNVERIFIED. `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Secondary report only: the reviewer saw these locators in PSS, not in the DDSS paper.",
+      "index_coverage": "secondary (cited through PSS); UNVERIFIED"
+    },
+    {
+      "id": "LIT-269",
+      "alias": "LIT?bivariate-lanczos-claude-426",
+      "record": "literature/records/putinar-1997.md",
+      "verification": "**Abstract-level only** (prior-art review); full text NOT read, so the mathematical content stays UNVERIFIED. `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Abstract page only. The match between this DOI and a Tchakaloff-type statement rests on the reviewer's listing.",
+      "index_coverage": "abstract only; UNVERIFIED"
+    },
+    {
+      "id": "LIT-270",
+      "alias": "LIT?bivariate-lanczos-claude-427",
+      "record": "literature/records/bayer-teichmann-2006.md",
+      "verification": "**Metadata only**; the paper was NOT read, so no mathematical content is attested. UNVERIFIED. `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Metadata only.",
+      "index_coverage": "metadata only; UNVERIFIED"
+    },
+    {
+      "id": "LIT-271",
+      "alias": "LIT?bivariate-lanczos-claude-428",
+      "record": "literature/records/greenbaum-strakos-1992.md",
+      "verification": "**Secondary report only** (the source itself NOT read). UNVERIFIED. `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Secondary report only; the paper itself was not seen.",
+      "index_coverage": "metadata plus secondary report; UNVERIFIED"
+    },
+    {
+      "id": "LIT-272",
+      "alias": "LIT?bivariate-lanczos-claude-429",
+      "record": "literature/records/meurant-strakos-2006.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest, text partly garbled; UNVERIFIED"
+    },
+    {
+      "id": "LIT-273",
+      "alias": "LIT?bivariate-lanczos-claude-430",
+      "record": "literature/records/eftekhari-et-al-2021.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source. Theorem bodies were not returned.",
+      "index_coverage": "WebFetch digest, abstract and §1; UNVERIFIED"
+    },
+    {
+      "id": "LIT-274",
+      "alias": "LIT?bivariate-lanczos-claude-431",
+      "record": "literature/records/delgado-geronimo-iliev-marcellan-2006.md",
+      "verification": "**Abstract-level only** (prior-art review); full text NOT read, so the mathematical content stays UNVERIFIED. `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Abstract only. The L3 reviewer lists this as possibly close to the truncated Favard statement and unread.",
+      "index_coverage": "abstract only; UNVERIFIED"
+    },
+    {
+      "id": "LIT-275",
+      "alias": "LIT?bivariate-lanczos-claude-432",
+      "record": "literature/records/cichon-stochel-szafraniec-2005.md",
+      "verification": "**Metadata only**; the paper was NOT read, so no mathematical content is attested. UNVERIFIED. `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Metadata only; the characterisation is UNVERIFIED.",
+      "index_coverage": "metadata only; UNVERIFIED"
+    },
+    {
+      "id": "LIT-276",
+      "alias": "LIT?bivariate-lanczos-claude-433",
+      "record": "literature/records/zaccaron-2014.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source. The identification of 0.50 with the earlier 'about 0.499' at degree 60 is the reviewer's.",
+      "index_coverage": "WebFetch digest of Table 2.1; UNVERIFIED"
+    },
+    {
+      "id": "LIT-277",
+      "alias": "LIT?bivariate-lanczos-claude-434",
+      "record": "literature/records/zaccaron-2014.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source. Whether square A is a product support is open (see Named gaps).",
+      "index_coverage": "WebFetch digest of Table 2.2 and pp. 16–18; UNVERIFIED"
+    },
+    {
+      "id": "LIT-278",
+      "alias": "LIT?bivariate-lanczos-claude-435",
+      "record": "literature/records/liu-narayan-2023.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest of Thm 3.1; UNVERIFIED"
+    },
+    {
+      "id": "LIT-279",
+      "alias": "LIT?bivariate-lanczos-claude-436",
+      "record": "literature/records/liu-narayan-2023.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest, figures not inspected; UNVERIFIED"
+    },
+    {
+      "id": "LIT-280",
+      "alias": "LIT?bivariate-lanczos-claude-437",
+      "record": "literature/records/hokanson-2020.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest; UNVERIFIED"
+    },
+    {
+      "id": "LIT-281",
+      "alias": "LIT?bivariate-lanczos-claude-438",
+      "record": "literature/records/hokanson-2020.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source. The L2 reviewer's mapping, that with the within-degree order x^{t-j} y^j this rule picks the campaign's 'dev' (BJ) selection so that 'fullcgs2 + dev' coincides with Alg. 2.1 and with ZN's V+A, is the reviewer's reading, to be checked by the developer, and is NOT verified.",
+      "index_coverage": "WebFetch digest; UNVERIFIED"
+    },
+    {
+      "id": "LIT-282",
+      "alias": "LIT?bivariate-lanczos-claude-439",
+      "record": "literature/records/fasondini-olver-xu-2023.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest; UNVERIFIED"
+    },
+    {
+      "id": "LIT-283",
+      "alias": "LIT?bivariate-lanczos-claude-440",
+      "record": "literature/records/zhu-nakatsukasa-2026.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest; UNVERIFIED"
+    },
+    {
+      "id": "LIT-284",
+      "alias": "LIT?bivariate-lanczos-claude-441",
+      "record": "literature/records/zhu-nakatsukasa-2026.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source. CONFLICT: the 2026-11-01 orchestrator annotation in this record's History reports that the sentence quoted for statement 025 was not found in arXiv v2; the L1 reviewer reports it in Remark 3. UNRESOLVED; the version read by the reviewers was not recorded.",
+      "index_coverage": "WebFetch digest, Appendix B not seen; UNVERIFIED"
+    },
+    {
+      "id": "LIT-285",
+      "alias": "LIT?bivariate-lanczos-claude-442",
+      "record": "literature/records/brubeck-nakatsukasa-trefethen-2021.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest; UNVERIFIED"
+    },
+    {
+      "id": "LIT-286",
+      "alias": "LIT?bivariate-lanczos-claude-443",
+      "record": "literature/records/sinha-2026.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest up to §7.1; UNVERIFIED"
+    },
+    {
+      "id": "LIT-287",
+      "alias": "LIT?bivariate-lanczos-claude-444",
+      "record": "literature/records/jia-li-2021.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest; UNVERIFIED"
+    },
+    {
+      "id": "LIT-288",
+      "alias": "LIT?bivariate-lanczos-claude-445",
+      "record": "literature/records/jia-li-2021.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest; UNVERIFIED"
+    },
+    {
+      "id": "LIT-289",
+      "alias": "LIT?bivariate-lanczos-claude-446",
+      "record": "literature/records/chen-2026.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "WebFetch digest of the PDF; UNVERIFIED"
+    },
+    {
+      "id": "LIT-290",
+      "alias": "LIT?bivariate-lanczos-claude-447",
+      "record": "literature/records/greenbaum-1989.md",
+      "verification": "**Secondary report only** (the source itself NOT read). UNVERIFIED. `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Talk abstract only; the 1989 paper was not read. Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source.",
+      "index_coverage": "talk abstract plus secondary reports; UNVERIFIED"
+    },
+    {
+      "id": "LIT-291",
+      "alias": "LIT?bivariate-lanczos-claude-448",
+      "record": "literature/records/degani-schiff-tannor-2005.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source. Same source and locators as statements 215–217; this entry adds the §5.3 block-tridiagonal reading.",
+      "index_coverage": "WebFetch digest of the preprint; UNVERIFIED"
+    },
+    {
+      "id": "LIT-292",
+      "alias": "LIT?bivariate-lanczos-claude-449",
+      "record": "literature/records/xu-tams-1994-blockjacobi.md",
+      "verification": "**UNVERIFIED** against the original publication; WebFetch digest only (prior-art review). `LITERATURE` attribution only, no inherited proof status.",
+      "reading": "Read through WebFetch by the prior-art reviewer: a summarising model answers a prompt against the fetched page, so locators, quotes and displayed formulas are as digested and were NOT checked against page images or verbatim text. The consolidator (2026-11-01) did not re-read the source. CONFLICT: the online-pass note below says the Favard theorem and rank condition are in the other Trans. AMS paper (xu-tams-1994-operator) and in SIAM J. Math. Anal. 24 (1993); the L3 reviewer's digest places a Favard statement in §2 of this paper. UNRESOLVED; the numbering is as digested.",
+      "index_coverage": "WebFetch digest; UNVERIFIED"
+    }
+  ],
+  "baseline_statement_field_changes": [],
+  "baseline_statement_count": 178,
+  "duplicate_arxiv_sources": {
+    "arxiv:1803.07974": [
+      "literature/records/mourrain-telen-vanbarel.md",
+      "literature/records/telen-mourrain-vanbarel-2018.md"
+    ]
+  },
+  "input_worktree_mismatches": [],
+  "new_statement_count": 49,
+  "new_statements_missing_explicit_unverified_label": [],
+  "frozen_prior_reviews_unchanged_from_baseline": {
+    "topics/bivariate-lanczos-20261031/reviews/L1-prior-art-01.md": true,
+    "topics/bivariate-lanczos-20261031/reviews/L2-prior-art-01.md": true,
+    "topics/bivariate-lanczos-20261031/reviews/L3-prior-art-01.md": true
+  }
+}

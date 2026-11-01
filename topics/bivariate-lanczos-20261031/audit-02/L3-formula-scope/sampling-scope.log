@@ -1,0 +1,12 @@
+NumPy 2.3.5 MEASURED only
+n=4: first r=0.0337240169916, first node(j,k)=(1, 1), min P=-7.22069268063e-05
+n=5: first r=0.0143279322778, first node(j,k)=(1, 1), min P=-5.63544134387e-06
+n=6: first r=0.00663137089313, first node(j,k)=(1, 1), min P=-3.85330249e-07
+n=7: first r=0.00348968706933, first node(j,k)=(1, 1), min P=-9.90569638389e-08
+n=8: first r=0.00208801212671, first node(j,k)=(1, 1), min P=-1.87161924419e-08
+n=9: first r=0.0010987937542, first node(j,k)=(1, 1), min P=-8.09690114549e-10
+n=10: first r=0.000747525619257, first node(j,k)=(1, 1), min P=-6.27419583023e-10
+n=11: first r=0.00071620655654, first node(j,k)=(1, 1), min P=-7.10920843943e-11
+n=12: first r=0.000345975925716, first node(j,k)=(1, 1), min P=-6.26980873359e-12
+Descriptive slopes from nine finite values: sampled -4.08809409683075 lower bounds -8.284897181015376
+PASS attribution (1,1); no asymptotic or certified-upper-bound conclusion

@@ -1,0 +1,55 @@
+== P1 EXACT (rational): grid nodes exactly saturated at degree k < n?  (expect none)
+  n=3 k=1 M=16 N_k=3 left-null dim=13 exactly saturated nodes: 0
+  n=3 k=2 M=16 N_k=6 left-null dim=10 exactly saturated nodes: 0
+  n=4 k=2 M=25 N_k=6 left-null dim=19 exactly saturated nodes: 0
+  n=4 k=3 M=25 N_k=10 left-null dim=15 exactly saturated nodes: 0
+  n=5 k=3 M=36 N_k=10 left-null dim=26 exactly saturated nodes: 0
+  n=5 k=4 M=36 N_k=15 left-null dim=21 exactly saturated nodes: 0
+  n=6 k=4 M=49 N_k=15 left-null dim=34 exactly saturated nodes: 0
+  n=6 k=5 M=49 N_k=21 left-null dim=28 exactly saturated nodes: 0
+  (PROVED for all n: restrict a Lagrange-type p in Pi_k to the row y = y_B; it vanishes at n grid abscissae, so k < n forces p(.,y_B) = 0.)
+  elapsed 0.3 s
+
+== P2/P3 grid: product identity s_total = sum_{i+j<=k} u_i v_j, and tensor sandwich
+  n=4 k=2 th=0.5: max|s - prod formula| = 4.4e-16; sandwich violations: lower 0, upper 0; s corner 0.474 [lo 0.360, up 0.784] edge-mid 0.234 [lo 0.177, up 0.430] centre 0.154 [lo 0.097, up 0.236]
+  n=4 k=3 th=0.75: max|s - prod formula| = 5.6e-16; sandwich violations: lower 0, upper 0; s corner 0.743 [lo 0.531, up 0.972] edge-mid 0.369 [lo 0.291, up 0.479] centre 0.154 [lo 0.097, up 0.236]
+  n=4 k=4 th=0.9: max|s - prod formula| = 6.7e-16; sandwich violations: lower 0, upper 0; s corner 0.910 [lo 0.784, up 1.000] edge-mid 0.556 [lo 0.430, up 1.000] centre 0.442 [lo 0.236, up 1.000]
+  n=6 k=3 th=0.5: max|s - prod formula| = 2.2e-16; sandwich violations: lower 0, upper 0; s corner 0.540 [lo 0.354, up 0.862] edge-mid 0.221 [lo 0.155, up 0.310] centre 0.075 [lo 0.048, up 0.111]
+  n=6 k=4 th=0.75: max|s - prod formula| = 2.8e-16; sandwich violations: lower 0, upper 0; s corner 0.752 [lo 0.580, up 0.974] edge-mid 0.320 [lo 0.254, up 0.560] centre 0.178 [lo 0.111, up 0.322]
+  n=6 k=5 th=0.9: max|s - prod formula| = 4.4e-16; sandwich violations: lower 0, upper 0; s corner 0.892 [lo 0.707, up 0.998] edge-mid 0.428 [lo 0.310, up 0.566] centre 0.178 [lo 0.111, up 0.322]
+  n=8 k=4 th=0.5: max|s - prod formula| = 4.4e-16; sandwich violations: lower 0, upper 0; s corner 0.608 [lo 0.436, up 0.915] edge-mid 0.220 [lo 0.169, up 0.399] centre 0.101 [lo 0.065, up 0.174]
+  n=8 k=6 th=0.75: max|s - prod formula| = 4.4e-16; sandwich violations: lower 0, upper 0; s corner 0.894 [lo 0.737, up 0.998] edge-mid 0.378 [lo 0.276, up 0.618] centre 0.193 [lo 0.107, up 0.383]
+  n=8 k=7 th=0.9: max|s - prod formula| = 5.6e-16; sandwich violations: lower 0, upper 0; s corner 0.957 [lo 0.821, up 1.000] edge-mid 0.469 [lo 0.358, up 0.619] centre 0.193 [lo 0.107, up 0.383]
+  elapsed 0.3 s
+
+== P4 joint-Ritz lemma: residuals of projected point masses vs 2 sqrt(1 - s)
+  grid n=6 k=3: violations of max(rx,ry) <= 2 sqrt(1-s): 0; max ratio r/sqrt(1-s) = 0.536; node with largest s: s=0.5395, r=3.617e-01
+  grid n=6 k=4: violations of max(rx,ry) <= 2 sqrt(1-s): 0; max ratio r/sqrt(1-s) = 0.518; node with largest s: s=0.7520, r=2.411e-01
+  grid n=6 k=5: violations of max(rx,ry) <= 2 sqrt(1-s): 0; max ratio r/sqrt(1-s) = 0.526; node with largest s: s=0.8921, r=1.503e-01
+  grid n=8 k=4: violations of max(rx,ry) <= 2 sqrt(1-s): 0; max ratio r/sqrt(1-s) = 0.475; node with largest s: s=0.6077, r=2.942e-01
+  grid n=8 k=6: violations of max(rx,ry) <= 2 sqrt(1-s): 0; max ratio r/sqrt(1-s) = 0.470; node with largest s: s=0.8941, r=1.385e-01
+  grid n=8 k=7: violations of max(rx,ry) <= 2 sqrt(1-s): 0; max ratio r/sqrt(1-s) = 0.461; node with largest s: s=0.9568, r=8.694e-02
+  padua n=6 k=3: violations of max(rx,ry) <= 2 sqrt(1-s): 0; max ratio r/sqrt(1-s) = 0.657; node with largest s: s=0.5779, r=3.263e-01
+  padua n=6 k=4: violations of max(rx,ry) <= 2 sqrt(1-s): 0; max ratio r/sqrt(1-s) = 0.698; node with largest s: s=0.7763, r=2.200e-01
+  padua n=6 k=5: violations of max(rx,ry) <= 2 sqrt(1-s): 0; max ratio r/sqrt(1-s) = 0.786; node with largest s: s=0.9113, r=1.627e-01
+  padua n=8 k=4: violations of max(rx,ry) <= 2 sqrt(1-s): 0; max ratio r/sqrt(1-s) = 0.543; node with largest s: s=0.5662, r=2.864e-01
+  padua n=8 k=6: violations of max(rx,ry) <= 2 sqrt(1-s): 0; max ratio r/sqrt(1-s) = 0.602; node with largest s: s=0.8462, r=1.664e-01
+  padua n=8 k=7: violations of max(rx,ry) <= 2 sqrt(1-s): 0; max ratio r/sqrt(1-s) = 0.724; node with largest s: s=0.9348, r=1.367e-01
+  elapsed 0.3 s
+
+== P5 Padua: cubature-weight s_k(B) formula (k <= n-1) and theta = 1 equal/cubature ratio = weight ratio
+  n=4 k=2: max|s_cub - K_k/(K_n - T_n(x)^2)| = 2.2e-16; max s_cub = 0.4809
+  n=4 k=3: max|s_cub - K_k/(K_n - T_n(x)^2)| = 3.3e-16; max s_cub = 0.7309
+  n=4 theta=1: all nodes saturated (min s) eq 1.000000000000 cub 1.000000000000; max|K_eq/K_cub - w_cub/w_eq| = 8.9e-16; corner ratio 0.3750 = (n+2)/(4n) = 0.3750
+  n=6 k=3: max|s_cub - K_k/(K_n - T_n(x)^2)| = 3.3e-16; max s_cub = 0.4721
+  n=6 k=5: max|s_cub - K_k/(K_n - T_n(x)^2)| = 6.7e-16; max s_cub = 0.8117
+  n=6 theta=1: all nodes saturated (min s) eq 1.000000000000 cub 1.000000000000; max|K_eq/K_cub - w_cub/w_eq| = 6.7e-16; corner ratio 0.3333 = (n+2)/(4n) = 0.3333
+  n=8 k=4: max|s_cub - K_k/(K_n - T_n(x)^2)| = 3.3e-16; max s_cub = 0.4675
+  n=8 k=7: max|s_cub - K_k/(K_n - T_n(x)^2)| = 4.4e-16; max s_cub = 0.8471
+  n=8 theta=1: all nodes saturated (min s) eq 1.000000000000 cub 1.000000000000; max|K_eq/K_cub - w_cub/w_eq| = 6.7e-16; corner ratio 0.3125 = (n+2)/(4n) = 0.3125
+  elapsed 0.3 s
+
+== P6 growth at n = 8: LP (generator test13 setup) vs Christoffel bound sqrt(K_k(z,z)) and split bound
+  theta=0.5 k=4: LP 1D 1.2215 at x=0.885; LP 2D total 1.2435 at (np.float64(0.875), np.float64(0.375)); ratio 2D/1D 1.018; Christoffel bound sqrt(K_k(z2,z2)) = 3.3884; split bound sqrt(N_k * max_split) = 9.8585; sup|phi_i| i=0..k: [1.   1.55 1.6  1.33 1.43]
+  theta=0.75 k=6: LP 1D 2.3360 at x=0.896; LP 2D total 2.3799 at (np.float64(0.906), np.float64(0.875)); ratio 2D/1D 1.019; Christoffel bound sqrt(K_k(z2,z2)) = 6.6713; split bound sqrt(N_k * max_split) = 14.4633; sup|phi_i| i=0..k: [1.   1.55 1.6  1.33 1.43 1.76 2.47]
+  elapsed 0.8 s

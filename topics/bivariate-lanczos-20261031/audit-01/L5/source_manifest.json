@@ -1,0 +1,240 @@
+{
+  "head": "3a9063b84d14ca0a5998378371e27643fde50a29",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "compiler": "gcc (Debian 14.2.0-19) 14.2.0",
+  "longdouble_mantissa": 63,
+  "threads": "1",
+  "sources": [
+    {
+      "path": "tracks/bivariate-lanczos/code/L5/analyze_r01.py",
+      "sha256": "1e68778eee98d620967b19a6b501df4f2444be08a98c41e3c45092296e2ca45b",
+      "bytes": 4988
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L5/analyze_r01b.py",
+      "sha256": "f0307e55d08700fedbc2b8a38b288cae350e0f44bda7b3e46f48151d31fa3e65",
+      "bytes": 3758
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L5/analyze_r01c.py",
+      "sha256": "c7552f8069c3efe4474c529ea61e195a9fb835c6c7e00e798462bb9abc78e59b",
+      "bytes": 3709
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L5/diag_pivot_vs_sigma.py",
+      "sha256": "e7da7f3b4772beee70b0c078cc1528ab7bdd56f07b790cff8d745b8784fbe65e",
+      "bytes": 3555
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L5/diag_repro_x60.py",
+      "sha256": "eba7fca0fccb8b4d4c2ebd14387aa703244f1f27f213b571921fe9bd9c51b176",
+      "bytes": 2098
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L5/diag_x60_controls.py",
+      "sha256": "99993ffa7896796cc1b36c93e4f2ae4e6b41cf7c799515746ac238c32633fff6",
+      "bytes": 1244
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L5/exp_r01.py",
+      "sha256": "e9675cba78ef37592e7b6d598c74e5652f8911af7ae12a58f565cce9f1c10ec3",
+      "bytes": 4446
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L5/exp_r01b.py",
+      "sha256": "10a27ba49b9b88e37933a64d138c8d3e903ea6f7d082b6b3b3b55d13aec46d15",
+      "bytes": 4935
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L5/exp_r02_dual.py",
+      "sha256": "cb54675c01fdded68196ac78a1611c9a7b6e997d2185447382c62c9a38b8a79b",
+      "bytes": 3028
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L5/exp_r03.py",
+      "sha256": "e74ab6177c5a46c4a47e5694e48072454b1f5c7f2d17ee08af3ed4da2d2eb6d4",
+      "bytes": 4893
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L5/exp_r03b.py",
+      "sha256": "a0d4fc4df8905178a00233880bb4454c8eb575d12051b621713cc65a9bf35c8e",
+      "bytes": 2692
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L5/givens_core.c",
+      "sha256": "1671d3c60c04c6b997f11e6c5772efe61cc65af245e5f685af2b522800d3f1d4",
+      "bytes": 7651
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L5/givens_dual.c",
+      "sha256": "d28a44d9490296ce4c7fb743613a1eb4c97fce44bc871160e04dfa81e798c45a",
+      "bytes": 3952
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L5/l5_lib.py",
+      "sha256": "8d9bc5064802c0f8ee57ec875329de7dd824b91c52e693d30542ce264c7105c6",
+      "bytes": 5844
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L5/prefix.py",
+      "sha256": "dc1a9b8af1a6e76237c949df88e1e17d7243b0b642ccaa2a134ca9f3baa99499",
+      "bytes": 7126
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/inputs/bj_window.py",
+      "sha256": "edd450bcf3352edfb5ff97c98a63b23c133a55f4cedcf80b0903d5ac64ad9d2a",
+      "bytes": 1408
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/inputs/closed_form_H.py",
+      "sha256": "a7deec42ad9558a26af4cf62e3fc9ef9ebd2261878ae327e5f23f85ae600f544",
+      "bytes": 2930
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/inputs/f1_loss_vs_ritz.py",
+      "sha256": "afbc5d10f3ddd36e50638783089970c34967af395a70590a88f77ffc05b5955b",
+      "bytes": 2240
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/inputs/f3_qfree_vs_R_downdate.py",
+      "sha256": "615d60137fe6fe1c4c9f70614e704cc2a0af3594cbebb3b02fea205e2c3d8e5c",
+      "bytes": 5223
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/inputs/f6_diag_redundant_pivot.py",
+      "sha256": "ceab6235a75168024f018e2a5b7d4ccab4c92a02c246ffa938bed87509e8b900",
+      "bytes": 2227
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/inputs/f6_givens_vs_hl_deficit.py",
+      "sha256": "97280c07add50b6b415711ccd604384202a6c382a3a0ed33f3d07d27299a1d0e",
+      "bytes": 8035
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/inputs/f6_pivot_threshold_test.py",
+      "sha256": "1f1e480c19e78e61d8f5e378e0f03736eb084aef806bfbcadb4d9c968b6cc128",
+      "bytes": 2376
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/inputs/f6_run_padua_large.py",
+      "sha256": "b52d45a5f46c2eb75654369e6647331e338f71a28ef08d1b73d566dccdcd0c44",
+      "bytes": 498
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/inputs/harris_simanek_check.py",
+      "sha256": "57e1efa4f6ff3bb2241dfebb2fcb50ef029de773c998cd7e4ca8701b6e21da60",
+      "bytes": 5174
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/inputs/padua_weights_check.py",
+      "sha256": "52100e733de24759a57c689e6f3dc4d1d97f3ff438c0e8392c92f1a2d6d2182b",
+      "bytes": 2819
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/inputs/qfree_bivariate_downdate.py",
+      "sha256": "4d35b1772a47377131afefdcf3bf09facc11fad121868fa157200c4a71a22145",
+      "bytes": 4014
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/inputs/qfree_vs_conditioning.py",
+      "sha256": "88c88fc2ac9f3e82c7dfe888f9daa3d1829604615c7eec40171ae0f37f6f658a",
+      "bytes": 1210
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L5/agivens.c",
+      "sha256": "fe12b714c7f06d48f42cd269e3fe5908d5669602ec9c34b2f8b270ffc2e75cee",
+      "bytes": 4145
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L5/alib.py",
+      "sha256": "01139ca2e7ceec3fe11d3c0a0950828d9e8a7d6d5a9d98433c8f55c72d6d9ea8",
+      "bytes": 8669
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L5/analyze_review.py",
+      "sha256": "b405be32e9de053462582d28e608f874532ad63eae2e877508b99a383b0e175a",
+      "bytes": 3816
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L5/checks.py",
+      "sha256": "bf7870215b81714f2838a43de93a84cffd772eee4a9f02c7f0af9348ae45c3d6",
+      "bytes": 3643
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L5/exp_review.py",
+      "sha256": "ccac2697dbc1675bc3c21b467e9c6b2d357d227bb9b1910e6f3c08846a03dce6",
+      "bytes": 8750
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L5/reanalyze_dev.py",
+      "sha256": "070afa08293851e87b1773aabb4bb951f85c4981e128655b41d691f159720c30",
+      "bytes": 3205
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L5/stage_check.py",
+      "sha256": "d476e5be37e8107e4ce8452ffa750f8b97d774e5a6d627fd9d6f0f88f3b85de5",
+      "bytes": 418
+    }
+  ],
+  "build_commands": [
+    [
+      "gcc",
+      "-O2",
+      "-ffp-contract=off",
+      "-shared",
+      "-fPIC",
+      "-o",
+      "/tmp/padua-l5-audit-3a9063b/L5/libgivens_core.so",
+      "/tmp/padua-l5-audit-3a9063b/L5/givens_core.c",
+      "-lm"
+    ],
+    [
+      "gcc",
+      "-O2",
+      "-ffp-contract=off",
+      "-shared",
+      "-fPIC",
+      "-o",
+      "/tmp/padua-l5-audit-3a9063b/L5/libgivens_core2.so",
+      "/tmp/padua-l5-audit-3a9063b/L5/givens_core.c",
+      "-lm"
+    ],
+    [
+      "gcc",
+      "-O2",
+      "-ffp-contract=off",
+      "-shared",
+      "-fPIC",
+      "-o",
+      "/tmp/padua-l5-audit-3a9063b/L5/libgivens_dual.so",
+      "/tmp/padua-l5-audit-3a9063b/L5/givens_dual.c",
+      "-lm"
+    ],
+    [
+      "gcc",
+      "-O2",
+      "-ffp-contract=off",
+      "-shared",
+      "-fPIC",
+      "-o",
+      "/tmp/padua-l5-audit-3a9063b/review_L5/libagivens.so",
+      "/tmp/padua-l5-audit-3a9063b/review_L5/agivens.c",
+      "-lm"
+    ],
+    [
+      "gcc",
+      "-O2",
+      "-ffp-contract=off",
+      "-DAG_LD",
+      "-shared",
+      "-fPIC",
+      "-o",
+      "/tmp/padua-l5-audit-3a9063b/review_L5/libagivens_ld.so",
+      "/tmp/padua-l5-audit-3a9063b/review_L5/agivens.c",
+      "-lm"
+    ]
+  ]
+}

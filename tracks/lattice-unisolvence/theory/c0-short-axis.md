@@ -1,5 +1,7 @@
 # PD-N?lattice-c0-codex-01 — A short coordinate axis prevents total-degree unisolvence
 
+Final ID: **PD-N032** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N. Aliases: coordinate annihilator; short-box exclusion.
 Split from: none. Split into: none.
 

@@ -1,0 +1,6 @@
+clustered checkerboard m=30: long-double |coef - product reference| max 9.4e-10, |beta - ref| max 1.9e-15
+   propagator response, BJ computed (double)    : n4:9e-05 n8:1e+03 n12:1e+08 n16:2e+11 n20:3e+13 n24:7e+14 n28:4e+15
+   propagator response, CGS2 double             : n4:9e-05 n8:1e+03 n12:1e+08 n16:2e+11 n20:3e+13 n24:7e+14 n28:4e+15
+   propagator response, product reference (ld)  : n4:9e-05 n8:1e+03 n12:1e+08 n16:2e+11 n20:3e+13 n24:7e+14 n28:4e+15
+   propagator response, exact 2D (ld)           : n4:9e-05 n8:1e+03 n12:1e+08 n16:2e+11 n20:3e+13 n24:7e+14 n28:4e+15
+   max |BJ computed coef - product reference| = 7.6e-07

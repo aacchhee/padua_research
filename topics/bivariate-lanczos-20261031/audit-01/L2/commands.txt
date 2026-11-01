@@ -1,0 +1,25 @@
+Working directory: /workspace/padua_research
+Numerical command environment: OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1
+All paths below are relative to the working directory. Output directory is topics/bivariate-lanczos-20261031/audit-01/L2/.
+
+python3 -I tracks/bivariate-lanczos/code/review_L2/rl2_exact.py > topics/bivariate-lanczos-20261031/audit-01/L2/exact-rerun.log 2>&1
+python3 -I tracks/bivariate-lanczos/code/review_L2/rl2_thmA.py > topics/bivariate-lanczos-20261031/audit-01/L2/theorem-A-rerun.log 2>&1
+python3 -I tracks/bivariate-lanczos/code/review_L2/rl2_cycles.py > topics/bivariate-lanczos-20261031/audit-01/L2/cycles-rerun.log 2>&1
+python3 -I tracks/bivariate-lanczos/code/L2/l2_r01_omega.py rotpi4 triangle cb_cubic > topics/bivariate-lanczos-20261031/audit-01/L2/omega-rerun.log 2>&1
+python3 -I tracks/bivariate-lanczos/code/L2/l2_r01_omega.py --e3 rotpi4 triangle cb_cubic > topics/bivariate-lanczos-20261031/audit-01/L2/e3-rerun.log 2>&1
+python3 -I tracks/bivariate-lanczos/code/L2/l2_r02_pro.py rotpi4 triangle > topics/bivariate-lanczos-20261031/audit-01/L2/pro-rerun.log 2>&1
+python3 -I tracks/bivariate-lanczos/code/L2/l2_r02_pro.py --jmeasure rotpi4 triangle cb_cubic lshape > topics/bivariate-lanczos-20261031/audit-01/L2/proJ-rerun.log 2>&1
+python3 -I tracks/bivariate-lanczos/code/L2/l2_r02_selection.py rotpi4 triangle cb_cubic > topics/bivariate-lanczos-20261031/audit-01/L2/selection-rerun.log 2>&1
+python3 -I tracks/bivariate-lanczos/code/L2/l2_r03_dots.py > topics/bivariate-lanczos-20261031/audit-01/L2/dots-rerun.log 2>&1
+python3 -I topics/bivariate-lanczos-20261031/audit-01/L2/independent_drift.py > topics/bivariate-lanczos-20261031/audit-01/L2/independent-drift.log 2>&1
+python3 -I topics/bivariate-lanczos-20261031/audit-01/L2/check_local_beta.py > topics/bivariate-lanczos-20261031/audit-01/L2/local-beta.log
+python3 -I topics/bivariate-lanczos-20261031/audit-01/L2/make_manifest.py
+
+Read-only scope comparison:
+git diff --stat 5ccfac223f466a9105450365d8c6c3781ff7d922 3a9063b84d14ca0a5998378371e27643fde50a29 -- tracks/bivariate-lanczos/code/L2 tracks/bivariate-lanczos/code/review_L2 tracks/bivariate-lanczos/theory topics/bivariate-lanczos-20261031/directions/L2
+Result: empty.
+
+Novelty/duplicate search:
+rg -l -i 'semi.?orthogonal|omega.?recurrence|span.?drift|implicit.?section|reorthogonal|CGS2' state/IDEAS.md tracks/bivariate-lanczos/theory topics/bivariate-lanczos-20261031 literature > topics/bivariate-lanczos-20261031/audit-01/L2/novelty-search-paths.txt
+
+All numerical jobs completed and their complete logs were inspected. Exit code zero was explicitly observed except the initial rl2_exact.py execution (the asynchronous session identifier was not retained; complete terminal summary is in its log). make_manifest.py initially stopped on an intentionally skipped eta>1/4 stress record; parser was corrected to distinguish the skipped record from actual theorem instances and rerun. This did not alter any experiment or source result.

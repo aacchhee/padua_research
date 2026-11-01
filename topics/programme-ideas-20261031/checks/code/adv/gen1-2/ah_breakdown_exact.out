@@ -1,0 +1,34 @@
+Case A: 5 points, 5 of them double, degree 4, dim Pi_deg = 15, functionals = 15
+  seed 0: rank = 14 / 15; dependent columns (monomials) = [(0, 4)]; first zero LDL^T pivot of the Sobolev Gram at column 14 = monomial (0, 4) (degree 4)
+      kernel polynomial factors as: (81286851240*x**2 - 30738495313*x*y + 134886563204*x + 3577000480*y**2 - 27142609804*y + 35852086912)**2/12794932433920230400
+  seed 1: rank = 14 / 15; dependent columns (monomials) = [(0, 4)]; first zero LDL^T pivot of the Sobolev Gram at column 14 = monomial (0, 4) (degree 4)
+      kernel polynomial factors as: (35294797300*x**2 - 56954396331*x*y - 229889408937*x - 27647821053*y**2 - 291813373167*y - 795927421132)**2/764402008978710028809
+  seed 2: rank = 14 / 15; dependent columns (monomials) = [(0, 4)]; first zero LDL^T pivot of the Sobolev Gram at column 14 = monomial (0, 4) (degree 4)
+      kernel polynomial factors as: (5551053*x**2 - 19693499*x*y - 15935605*x + 5327974*y**2 + 64881737*y - 10002852)**2/28387306944676
+  seed 3: rank = 14 / 15; dependent columns (monomials) = [(0, 4)]; first zero LDL^T pivot of the Sobolev Gram at column 14 = monomial (0, 4) (degree 4)
+      kernel polynomial factors as: (129130365*x**2 - 74314553*x*y + 323704961*x - 108130038*y**2 + 907271011*y - 1378152490)**2/11692105117881444
+  seed 4: rank = 14 / 15; dependent columns (monomials) = [(0, 4)]; first zero LDL^T pivot of the Sobolev Gram at column 14 = monomial (0, 4) (degree 4)
+      kernel polynomial factors as: (17928400*x**2 - 49051685*x*y + 289292245*x - 50446326*y**2 - 477940955*y - 217434159)**2/2544831806898276
+Case B: 7 points, 4 of them double, degree 4, dim Pi_deg = 15, functionals = 15
+  seed 0: rank = 15 / 15; dependent columns (monomials) = []; first zero LDL^T pivot of the Sobolev Gram at column None (none)
+  seed 1: rank = 15 / 15; dependent columns (monomials) = []; first zero LDL^T pivot of the Sobolev Gram at column None (none)
+  seed 2: rank = 15 / 15; dependent columns (monomials) = []; first zero LDL^T pivot of the Sobolev Gram at column None (none)
+  seed 3: rank = 15 / 15; dependent columns (monomials) = []; first zero LDL^T pivot of the Sobolev Gram at column None (none)
+  seed 4: rank = 15 / 15; dependent columns (monomials) = []; first zero LDL^T pivot of the Sobolev Gram at column None (none)
+Case C: 2 points, 2 of them double, degree 2, dim Pi_deg = 6, functionals = 6
+  seed 0: rank = 5 / 6; dependent columns (monomials) = [(0, 2)]; first zero LDL^T pivot of the Sobolev Gram at column 5 = monomial (0, 2) (degree 2)
+  seed 1: rank = 5 / 6; dependent columns (monomials) = [(0, 2)]; first zero LDL^T pivot of the Sobolev Gram at column 5 = monomial (0, 2) (degree 2)
+  seed 2: rank = 5 / 6; dependent columns (monomials) = [(0, 2)]; first zero LDL^T pivot of the Sobolev Gram at column 5 = monomial (0, 2) (degree 2)
+  seed 3: rank = 5 / 6; dependent columns (monomials) = [(0, 2)]; first zero LDL^T pivot of the Sobolev Gram at column 5 = monomial (0, 2) (degree 2)
+  seed 4: rank = 5 / 6; dependent columns (monomials) = [(0, 2)]; first zero LDL^T pivot of the Sobolev Gram at column 5 = monomial (0, 2) (degree 2)
+Case D: 3 points, 3 of them double, degree 3, dim Pi_deg = 10, functionals = 9
+  seed 0: rank = 9 / 9; dependent columns (monomials) = [(0, 3)]; first zero LDL^T pivot of the Sobolev Gram at column 9 = monomial (0, 3) (degree 3)
+  seed 1: rank = 9 / 9; dependent columns (monomials) = [(0, 3)]; first zero LDL^T pivot of the Sobolev Gram at column 9 = monomial (0, 3) (degree 3)
+  seed 2: rank = 9 / 9; dependent columns (monomials) = [(0, 3)]; first zero LDL^T pivot of the Sobolev Gram at column 9 = monomial (0, 3) (degree 3)
+  seed 3: rank = 9 / 9; dependent columns (monomials) = [(0, 3)]; first zero LDL^T pivot of the Sobolev Gram at column 9 = monomial (0, 3) (degree 3)
+  seed 4: rank = 9 / 9; dependent columns (monomials) = [(0, 3)]; first zero LDL^T pivot of the Sobolev Gram at column 9 = monomial (0, 3) (degree 3)
+Padua degree-2 points: [(1, 1), (1, -1/2), (0, 1/2), (0, -1), (-1, 1), (-1, -1/2)]
+Case E: 6 points, 6 of them double, degree 5, dim Pi_deg = 21, functionals = 18
+  seed 0: rank = 18 / 18; dependent columns (monomials) = [(2, 3), (1, 4), (0, 5)]; first zero LDL^T pivot of the Sobolev Gram at column 18 = monomial (2, 3) (degree 5)
+Case E2 (degree 4, Padua double points: 18 functionals vs 15 monomials): 6 points, 6 of them double, degree 4, dim Pi_deg = 15, functionals = 18
+  seed 0: rank = 15 / 15; dependent columns (monomials) = []; first zero LDL^T pivot of the Sobolev Gram at column None (none)

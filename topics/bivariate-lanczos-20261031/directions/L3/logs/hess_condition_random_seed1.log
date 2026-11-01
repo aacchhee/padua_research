@@ -1,0 +1,7 @@
+family=random nmax=6 seed=1 numpy=2.5.3 cvxpy=1.6.0
+n=1 M=3 D=10 3M=9 expected_dimS1=1 dimS1=1 kerHess=0 tD=0.08826121001636716 lP=-4.479805124118194e-10 [optimal,optimal]
+n=2 M=6 D=21 3M=18 expected_dimS1=3 dimS1=3 kerHess=0 tD=0.01496857041289221 lP=-4.480076608240199e-11 [optimal,optimal]
+n=3 M=10 D=36 3M=30 expected_dimS1=6 dimS1=6 kerHess=0 tD=-0.0001711997334020198 lP=0.007394900052701184 [optimal,optimal]
+n=4 M=15 D=55 3M=45 expected_dimS1=10 dimS1=10 kerHess=0 tD=-0.0005919799409575706 lP=0.014806727459084915 [optimal,optimal]
+n=5 M=21 D=78 3M=63 expected_dimS1=15 dimS1=15 kerHess=0 tD=-4.068124120163644e-05 lP=0.0008375805953967606 [optimal,optimal]
+n=6 M=28 D=105 3M=84 expected_dimS1=21 dimS1=21 kerHess=0 tD=-1.4798408681013306e-05 lP=0.0008763209440600285 [optimal,optimal]
