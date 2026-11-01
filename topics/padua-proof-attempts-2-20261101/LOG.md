@@ -38,3 +38,10 @@
 - Dependencies retain AC's requested literal `PD-T?proof-attempts-codex-0N (audit pending)` for consistency, with this dated qualification: audit-01 at `95279b8` has ACCEPTED the proofs, minor dispositions remain pending upstream. This label does not deny that the audit was performed.
 - The arrived audit is a changed authoritative part1 input; merge pinned `95279b8` under the same explicit integration exception. New topic files remain the only authored changes; no part1 file is edited here.
 - Draft PR [#12](https://github.com/aacchhee/padua_research/pull/12) opened against part1 and attached to this chat. Initial pushed head `b3c333b6519740c21953ed41501a66d37768c1f2`; pending audit integration resolves its temporary base divergence.
+
+### A2 source-reading checkpoint
+
+- The A2 developer completed its target-specific relaxed gate, full Kolomoitsev–Lomako paper reading and bounded Bos2006 primary theorem reading; exact locators and failed shell-download limitation are recorded in attempts/T-A2.md. A2 remains OPEN while deriving a positive node-angle sum and uniform comparison bounds.
+- Mechanical input support saved 157 immutable Git-object input identities: original part1 scientific files/rules, newly arrived audit/support, programme inputs and comparison versions, and the Lanczos prerequisite. See inputs-review.md and evidence-manifest.json. No scientific execution is implied by hashing sources.
+- `/root/a2_independent_route`: gpt-6.1-sol xhigh, supplementary read-only derivation/check of the node-angle sum and possible one-dimensional comparison; no Git authority, no other target work. May write only own code/output prefixes a2ind_ if a consequential run is needed, which then requires a separate actual rerun.
+- Latest pushed checkpoint: `818ca4ad0942eb4743860f913a299ff30d959dae`; draft PR12 remains WORK with AUDIT PENDING. New source-reading checkpoint follows. No counts, asymptotic coefficient or global argmax is claimed.

@@ -1,0 +1,1356 @@
+{
+  "schema": 1,
+  "purpose": "mechanical provenance; no scientific execution or verification",
+  "pins": {
+    "part1_and_rules": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+    "part1_audit_arrived": "95279b833bca5967fcf47c1b71a56ff622185b4e",
+    "main_observed": "9739a0c56b7a3976422ce60a8441bfbbfd6554df",
+    "programme": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+    "part1_programme": "cadb35066160e466cb1704b9791ad6f374446422",
+    "lanczos": "a2dd845b8a231e1b00733e1361e2a9ad3bad222f"
+  },
+  "python": "3.12.14",
+  "command": "python topics/padua-proof-attempts-2-20261101/code/evidence_manifest.py",
+  "input_source": "local immutable Git objects via git show COMMIT:PATH; no files fetched remotely by this script",
+  "inputs": [
+    {
+      "source": "part1_audit_arrived",
+      "commit": "95279b833bca5967fcf47c1b71a56ff622185b4e",
+      "path": "topics/padua-proof-attempts-20261101/audit-01.md",
+      "git_blob": "3e1ca9a8251b5c078ba57dca66d6f181580c5ff1",
+      "sha256": "f651c118d8693c046ce09bbd332fa74cfe287c733fc3bb8aa78fac25e3ea0e50",
+      "bytes": 14965
+    },
+    {
+      "source": "part1_audit_arrived",
+      "commit": "95279b833bca5967fcf47c1b71a56ff622185b4e",
+      "path": "topics/padua-proof-attempts-20261101/audit-support/claude-audit-01/README.md",
+      "git_blob": "6b7c547dfec8d6af44dc83c4b71786a2f229eb58",
+      "sha256": "d65538afc95ded078cfe90fd095e1f1604f569b173154e55e8e5eef11e651e75",
+      "bytes": 686
+    },
+    {
+      "source": "part1_audit_arrived",
+      "commit": "95279b833bca5967fcf47c1b71a56ff622185b4e",
+      "path": "topics/padua-proof-attempts-20261101/audit-support/claude-audit-01/SHA256SUMS.txt",
+      "git_blob": "2da5343c32ca984e27aa46efe81e61a1a9360b58",
+      "sha256": "dfbfc4f88f56c3f27f61467400414141d7ef4444c06c7ee37b572c996430a5ca",
+      "bytes": 561
+    },
+    {
+      "source": "part1_audit_arrived",
+      "commit": "95279b833bca5967fcf47c1b71a56ff622185b4e",
+      "path": "topics/padua-proof-attempts-20261101/audit-support/claude-audit-01/aud_a1.py",
+      "git_blob": "099b113be811b92892e9a1c36deef90d3026007d",
+      "sha256": "d0309e9727ed541cf7ccbcf9b4e4ae6c5a41d15009aa0a1823b1f288c3f42b22",
+      "bytes": 2579
+    },
+    {
+      "source": "part1_audit_arrived",
+      "commit": "95279b833bca5967fcf47c1b71a56ff622185b4e",
+      "path": "topics/padua-proof-attempts-20261101/audit-support/claude-audit-01/aud_a5.py",
+      "git_blob": "e4c3f4af23114f4beb111c60982fa3d99236ccea",
+      "sha256": "5e84761bb5ba87922bf8f36b72112c9ac1004decf79f3fce691c5acf361d8aea",
+      "bytes": 5431
+    },
+    {
+      "source": "part1_audit_arrived",
+      "commit": "95279b833bca5967fcf47c1b71a56ff622185b4e",
+      "path": "topics/padua-proof-attempts-20261101/audit-support/claude-audit-01/aud_b5.py",
+      "git_blob": "254a303a6f7cc0d2895871c0c642f0eaf15a1cda",
+      "sha256": "f2cb2be9166fc8e358075af5080adad037817edbec50708f4c311ddc0e1ac5c8",
+      "bytes": 5033
+    },
+    {
+      "source": "part1_audit_arrived",
+      "commit": "95279b833bca5967fcf47c1b71a56ff622185b4e",
+      "path": "topics/padua-proof-attempts-20261101/audit-support/claude-audit-01/outputs/aud_a1.json",
+      "git_blob": "8517cdbe8a5464c435e3c27754a3beb754ea1786",
+      "sha256": "c51f80e93819bf08c8b23ca4cf3247116bdb62730b82c03d5c4712e83d8fe9e5",
+      "bytes": 1140
+    },
+    {
+      "source": "part1_audit_arrived",
+      "commit": "95279b833bca5967fcf47c1b71a56ff622185b4e",
+      "path": "topics/padua-proof-attempts-20261101/audit-support/claude-audit-01/outputs/aud_a5.json",
+      "git_blob": "4bf45077f675ae8c1ce2e7da767b71dcf3ac1135",
+      "sha256": "da6ae77a4bb6fc3c0714d43b9ab4b094dbc06a7d4adb6656e61432539edf3aff",
+      "bytes": 1167
+    },
+    {
+      "source": "part1_audit_arrived",
+      "commit": "95279b833bca5967fcf47c1b71a56ff622185b4e",
+      "path": "topics/padua-proof-attempts-20261101/audit-support/claude-audit-01/outputs/aud_b5.out",
+      "git_blob": "4b57e927fab0efe5aac5021d87ea93310533f579",
+      "sha256": "31c903beeb461ed0aad5b607b4c1887bb3203e905b78b20e6499678eddaa7671",
+      "bytes": 2270
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "literature/CORPUS.md",
+      "git_blob": "66d1190c23e7a011840b06bdfbfcecf63f21ace3",
+      "sha256": "c57bb043c5e9edfda5ea8337d09fffc39aa536fd1942146b172dcdbd09cad5cc",
+      "bytes": 52291
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "literature/INDEX.md",
+      "git_blob": "3150ed3097aa2d000ea58dd68aec1bfd00223616",
+      "sha256": "0f2f2e26b2ba1eb2b3f3e6621c07e215bf2fa13c5cd626e2263d0ce32c17e70c",
+      "bytes": 115170
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "literature/lattice-unisolvence/baseline.md",
+      "git_blob": "4b3e0629fa4ebb0024cd23698a29fc4b5de471cc",
+      "sha256": "85e7fc4a7a9d5e5e5bd44607f0ddfbee5b469b3caf1efcce95bf3b95d289402a",
+      "bytes": 3613
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "literature/lattice-unisolvence/records/padua-2006.md",
+      "git_blob": "0b0c9bbc08bc267cc4fc1dd3be9774f77b37f2c3",
+      "sha256": "9a3cd98ce3807fced60bbac509139bbe756c0f9a5e2bff84ce8e8f29e20d31fc",
+      "bytes": 1774
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "state/IDEAS.md",
+      "git_blob": "3bc9f45599e3bd3b29ef08dd8673793732b79055",
+      "sha256": "900c50f66cb2b6ab48cf2f40490c2aaed4d093cc8f1ef2f2eba412dd4fddcbef",
+      "bytes": 64529
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/OPEN_TARGETS.md",
+      "git_blob": "61f53d6468166a1f4ecae4ed5c4c6ea7d8412446",
+      "sha256": "147501520020a9d718b6e90d413bd785694edf85e563d2e85582b4fb207d1f06",
+      "bytes": 17280
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/audit-03.md",
+      "git_blob": "1654a482dc5731ca3f338c3c465706ce47ff3390",
+      "sha256": "6bcca66674feca82e7c5e35d35c02b6fb0fc75b495d3bf4e031e193bfa811d8a",
+      "bytes": 10566
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/adversarial-gen1-3.md",
+      "git_blob": "9a8dfd4caf930a6805b043432847f3f5725efaa5",
+      "sha256": "33e335c9ebb2b7a0d7951b07973654dc68ba323a0412b5d4e6a251b83fefa277",
+      "bytes": 32289
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/T1_T3.out",
+      "git_blob": "45b4edf52a5a714f2781de0f6cfd6207d9c84871",
+      "sha256": "853414ed9fb65eef13e7bb94948112db63571d452b037387f2db4f310a8184e0",
+      "bytes": 29935
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/T1b.out",
+      "git_blob": "c11fafce3acd87aa014023e8606c2fb3fe0c3a69",
+      "sha256": "8c77635738262d8946727d46e781223815ceb9f9c8c10cac02937e66528b7da3",
+      "bytes": 4786
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/T2.out",
+      "git_blob": "3205061d27ab2eb9cd2f4a07a3100c7447395275",
+      "sha256": "a60324a7d4f684bb777b2e37e9130986b2a0a9c63b58f2c268b7c33b56e555fe",
+      "bytes": 15041
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/T2c.out",
+      "git_blob": "a5c9082f1ffe364c4da653b540fc8e9d966e7e66",
+      "sha256": "67bf0363656ed7af8b6be82bbecc85b1e7c6c4994ef2430bca11792df8df9a78",
+      "bytes": 7312
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/orf2d.py",
+      "git_blob": "d21e6779f568282c7e9438a883ba12b8bb4d815a",
+      "sha256": "9e2197347a9125cc9f75178021c59d835bc3c85b7b63ef47d5e0213dc2287525",
+      "bytes": 19958
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/run_T1_T3.py",
+      "git_blob": "0055c6457ef21e0b4b9a3edf0bf68a87d25fc679",
+      "sha256": "561d16b96cbc69d7bd59cda7c44be6a09850e6839c06fdbbf718d410128d2439",
+      "bytes": 7125
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/run_T1b.py",
+      "git_blob": "3cadbf2461e28b7e606c07315f0b90107b3e72b3",
+      "sha256": "b3b98ad02006dc8ad1ed6a267fe38bb49914b7cef529df52c38f0eb85f070c0b",
+      "bytes": 5483
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/run_T2.py",
+      "git_blob": "2444b5896525fa3465e1fb326a3f1eda4300b790",
+      "sha256": "7127d077f6a3b7cb0b469bfe6dcc8d3c1e1c4f9cd19ff32efcc20a095dca1369",
+      "bytes": 7379
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/run_T2c.py",
+      "git_blob": "59230dd8e2fb1e186166922b82ba94f2928161b5",
+      "sha256": "4275b823cb294a5269ea7448bc4217d65b74db316e0cae9c2b0504ac2bc1bbee",
+      "bytes": 4789
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/window_exact.out",
+      "git_blob": "e7b47cc6875fe7b018bc7131dde5eb0010305e2d",
+      "sha256": "8354313abf496f9d62550daade12d5b148ff653b20ad1266c4e48d62cbc6a1e4",
+      "bytes": 15138
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/window_exact.py",
+      "git_blob": "eaf15138f41bdfe3cbbf4a1f64d6ecf0d0827ea1",
+      "sha256": "abf066a0fe35355703586ad02701e3f3cfd55690e16a1f3da5b6749d292524c0",
+      "bytes": 4546
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/leb_common.py",
+      "git_blob": "da8135e4d6a3deac23efbfe0faf705f2405d00ef",
+      "sha256": "419970972ae69efcc5e4a1c965fbd49982b67100376d3ff0c46e8629dcb382d0",
+      "bytes": 14491
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_argmax.json",
+      "git_blob": "00453896e7eadf14c19c46a2198b6bd5b3ac756e",
+      "sha256": "00002366be4f5a47a9fbcfb2d4b61dd5080bb1e81774db8b6021477d539c7a8c",
+      "bytes": 13387
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_argmax.out",
+      "git_blob": "09f17d251ee4f06e2bb9ec02817a8bd1bbc323d2",
+      "sha256": "9d500032d8d53583c4644fd2d554bf487c3fd5472bb21bd892ec4f70a9c6f548",
+      "bytes": 8918
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_argmax.py",
+      "git_blob": "a4fad4f65483d15ef466d5ec5de672f835ea2184",
+      "sha256": "02fa14792afa2c72032d4a91998d4da273d83200067437bd2573bb8430bae216",
+      "bytes": 7012
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_tail.out",
+      "git_blob": "778c2328901f314591ea2bbe8819eb5ebbffe53b",
+      "sha256": "d863e8f2861503702831c4ab1eac0a629b4b4a39b05dc9cb9fdd204188d36492",
+      "bytes": 1463
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_tail.py",
+      "git_blob": "d3ec355c85e91f3fb0c69748bcc6c853f20ea89f",
+      "sha256": "552fdb4233bf6ee9d3f4d893dcf38f34b04a759e924711f43927d9a5703769fe",
+      "bytes": 4088
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_halfshift.out",
+      "git_blob": "04372783916f598de1255ce13d872bc0ec3666dc",
+      "sha256": "0f65bd19274fe11b84045061c30b0243eed5fd1b1402c5acd82612e83c99b186",
+      "bytes": 3534
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_halfshift.py",
+      "git_blob": "8c6db6a316adca6211244567afaf62a69f39317d",
+      "sha256": "d4cdc2102f3f6885f86ec2a6e9a4ad64b81a36de8b7878e6d6be8c950deb4d4a",
+      "bytes": 2837
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_identify.out",
+      "git_blob": "5f848691829db4c5e6a412d3dcb254d0d6a17f60",
+      "sha256": "7dfe7db98f26fef0ab68da6b5afb1857c3cefd0efc182bed50e9a426d8b150ed",
+      "bytes": 7379
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_identify.py",
+      "git_blob": "2d935903a9a396c14c318aeef80136449853f710",
+      "sha256": "55936d19d737e67c0145a9e3ab125643b949e7f62a289f9a138060bd7fdd6aa7",
+      "bytes": 7403
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_identify2.out",
+      "git_blob": "ba5d0a9e4b81390cab1af20bb2e040d1ed27f171",
+      "sha256": "e8ba834388e9e0b29a5a46d2f5f853c83f42eae3fb18b8ad1517db675032f1a2",
+      "bytes": 1956
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_odd.out",
+      "git_blob": "cad6e6cca28cddc57d0c78ee405493cb9233d66b",
+      "sha256": "fc809dada19f75e3cea51ae6a3c6ec0f0d2c7b76281f6afa06d9da77e7a4c444",
+      "bytes": 4475
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_odd.py",
+      "git_blob": "a57191eea539d1b4247665b45e23bd4741ec8b4f",
+      "sha256": "269f37e6a350bf4f04ea1123bb4d3f88629f00123383433892eb02fd75c938cf",
+      "bytes": 2859
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_onepage.out",
+      "git_blob": "382268c152cb51cfb549b2541b1179b590b106e5",
+      "sha256": "4b0c81bd0dcc5f87447769b91404637ec5c4b9a815bcdd90a07be1b5ee9d5df6",
+      "bytes": 7028
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_onepage.py",
+      "git_blob": "486ac1e33a246bcef97c4a3cb49ab2b5520411d5",
+      "sha256": "e7c062a90c883de783d041503dbba77f7fe03070a0f796a28cf66b78b4a5262a",
+      "bytes": 12943
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_certify.log",
+      "git_blob": "47ccf67917685160d463d18a954dfa241793da47",
+      "sha256": "4eeb37aa8848202988ebd660b0a332e8812f2adb616d0dacc56cfa1140e7f3a8",
+      "bytes": 14474
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_certify.out",
+      "git_blob": "073b957d1af058fad2793fff586f4b1f1fa2b31e",
+      "sha256": "637303c5defbaac0fa105c80d79b9f69c8e34922af39f1607924aa2468516b06",
+      "bytes": 12480
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_certify.py",
+      "git_blob": "6bf5ce1c7839cbd32583974bc84e0ffbc4c72a4d",
+      "sha256": "1a1fb00ced54bb3083dce2ff12c56cd10c28499b7e0353ba23e8a6afd5a9d78b",
+      "bytes": 30348
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_degenerate.py",
+      "git_blob": "caa24d80a683c80094203d311e7047e8313a0a16",
+      "sha256": "cdf8cd3273c9ecffa35542bb572a0dde141bf5d068b77ddda548a9a5bdaee5b4",
+      "bytes": 10557
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_maxima.json",
+      "git_blob": "0f8310571d595011af287f26536bf43d0d868dff",
+      "sha256": "bf1890f4d23f871f16d2dda41b800e0d70d2025299221296081a925518d48de0",
+      "bytes": 13560
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_validate.out",
+      "git_blob": "10a6eadaa8025a2a5d815067c81ac1f709530cb1",
+      "sha256": "1da3aa3b434eb93cfb8041e87218401fa785c245ac40f84b096ad1a65b042e1e",
+      "bytes": 7903
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_validate.py",
+      "git_blob": "ff06ef5fd9410478bd3895db872283ff35f93ef7",
+      "sha256": "3fb63a3b3dcd2e50b585728fc0f7323a78ddb3952267072d3a37f65fe1c5874b",
+      "bytes": 5783
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/decisive-gen1-3.md",
+      "git_blob": "363e03e2c7a9af8cce4d9c23c558a79cfb699eef",
+      "sha256": "3e950d1b47b8ec87ffd9ebeed91f8fd27f22f4716d23507918f98dd86eb7825e",
+      "bytes": 30028
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/checks/decisive-gen4-2.md",
+      "git_blob": "2a128194a6b6da260de123c0458079049b368766",
+      "sha256": "e895778f26bd6a4f3535e446a7cb0072a46febf5bdc24260a0ea808ec3051d3b",
+      "bytes": 30342
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/gate-rejected.md",
+      "git_blob": "5f2a5af08ee6188a8c93d314bf522d8870f14ff2",
+      "sha256": "67e2a51ed1eb523362751a6ae30e2c61680c80cb41c2095836568b4558ca0fcb",
+      "bytes": 47974
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/ideas/candidates.md",
+      "git_blob": "00bee144e38d13540a4936c3afb99eadd6012b43",
+      "sha256": "eca1c969cf845e4f0180066ec4c7264e7e7acea44c015132920a3cf31caa7bf7",
+      "bytes": 122936
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/lit/baseline.md",
+      "git_blob": "2d7f4c7d8356756b56acfafdbfcd3e6418d9fd82",
+      "sha256": "078631b7d618c22365634354edecfeb419eb0e71a9c7736d06c1bda82bd51f85",
+      "bytes": 80856
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/response-02.md",
+      "git_blob": "f0b56384cca330fc6dad8c676da833801624abc4",
+      "sha256": "7da78e0fc01e408edcfcb2b2bf9cf4ba89af4efb0064fa86570da5306322a473",
+      "bytes": 6418
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-01-finite-favard-pattern-pairs.md",
+      "git_blob": "527759ed82ddbc3681ad5e8f0df45c0a8e4bf760",
+      "sha256": "2076b031c26f5d33fdd79e13fcfe06d49b093349de40ffcc34a04f707cbef1fd",
+      "bytes": 11698
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-02-joint-ritz-saturation-bound.md",
+      "git_blob": "32d56f801ec298423484bf811aeeb91ed2559ae5",
+      "sha256": "0ed649103e3de3f1c22875ebb4bed26e1d4c252ba14d1ac971581fd084c8c193",
+      "bytes": 5488
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-03-compressed-commutator-identity.md",
+      "git_blob": "809f81d6f02b62927038c1d881165ef39087c6fd",
+      "sha256": "4c9156af4f1cb5117d961bc756fbab2bb42eebf2f6180317b657635912f9e83e",
+      "bytes": 4310
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-04-padua-corner-expansion.md",
+      "git_blob": "427d6c3dae2a2f2b97e146036a839ce3da4e8e21",
+      "sha256": "35abb6bd74b427bf4c8bc258476e6a506d11150a78abeca2735e0e94569abac2",
+      "bytes": 5448
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-05-padua-corner-argmax.md",
+      "git_blob": "2f2e60792cc35a0b0cc6e94a5e0eb631a8f3eed5",
+      "sha256": "47fbbf90a9a985e600519602f13c4b4fd277f6d8c7c9d3da738dac2509711185",
+      "bytes": 3001
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-06-padua-lebesgue-maxima-counts.md",
+      "git_blob": "d35d82a4ab55355062918f7297a9da3ad3227386",
+      "sha256": "ff53d00c2ec0f00e2716cd47a7f57ce53c27a7b51484b3473e9d5742c60d8650",
+      "bytes": 6445
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N01-symmetrised-product-inertia-count.md",
+      "git_blob": "ab8eecdf50fd23b58c6e61924c17a2ef4c9554b7",
+      "sha256": "a244fd7531ae09b6f69ea00b44b90225a0eeb1e4eddcdba6725eb24b03af0d1e",
+      "bytes": 7215
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N02-windowed-rational-lanczos-instability.md",
+      "git_blob": "ddfc7c06ca2c73891bb8f5b231f04215410a5f0a",
+      "sha256": "777beb22f8364b21e7ecf03e930e586f563e11b361e9fecaacb1b67e956f395b",
+      "bytes": 5696
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N03-joint-ritz-converse-refuted.md",
+      "git_blob": "9f0f7d5229c63053d20378a9789e2ace7d7858e5",
+      "sha256": "500179a0cb18edd304dc0beb3682662e7134eae35cd03a65286b98a1f00dce5a",
+      "bytes": 5643
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N04-pattern-commutant-not-three-dimensional.md",
+      "git_blob": "0ea8848d9cf69f216fe5d684e866ff5577b85711",
+      "sha256": "5755fa21b7336917b4bf7bde66147bf0750ed41e65d3c037a90f103a10511b9f",
+      "bytes": 4360
+    },
+    {
+      "source": "programme",
+      "commit": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N05-fourier-basis-commutation-fails.md",
+      "git_blob": "931c1833820b9889bbf86890fd5c6f36ae8c987d",
+      "sha256": "59ef3e48bc689d9345bdaec5d2af3b99f6a2d264a2fbf4ade519967004e4fb92",
+      "bytes": 3892
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "AGENTS.md",
+      "git_blob": "8c94c718629649c3f5c89d05e5b674ae5ad3a99c",
+      "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60",
+      "bytes": 3159
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "agents/WORKFLOW.md",
+      "git_blob": "38a6fc1d630aa1a6716c7e7c808dd21a674dc27b",
+      "sha256": "64253ae526179be3ce8303987e3f38b9d7a43f825d1a6e310c99c022ba728554",
+      "bytes": 19609
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "agents/codex/CODEX.md",
+      "git_blob": "16a4ecfea89acd5b1d9cd09c9213094bce144caf",
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+      "bytes": 4969
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/LOG.md",
+      "git_blob": "b7a125b609457e2d6eb77510eda25bbee75bdfa8",
+      "sha256": "70640b887717ec0a69e950a645523464cb36c4d773ea27004111c92c9b621da0",
+      "bytes": 15149
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/attempts/T-A1.md",
+      "git_blob": "ff67d7de9786bb5bac46100c00fd93be90e0611e",
+      "sha256": "110ed9c8ded82a9e65e2d243a22cfaddcaf457d81d70e37fe635745e3ae75ebd",
+      "bytes": 3399
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/attempts/T-A5-partial.md",
+      "git_blob": "520b0e119b2fc56152f03b1c986975c333145fb4",
+      "sha256": "61267de23956454a0855219f1c23b382362e46c89f4fba25b44c05eff5642db8",
+      "bytes": 6706
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/attempts/T-B1-optional.md",
+      "git_blob": "3b90563c75d258b388aa5b39c6ddc68c89803da3",
+      "sha256": "8caa5f79534c9ae3381dd9d91a70dc6168ec409722c658c446f477af60c502e7",
+      "bytes": 3229
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/attempts/T-B5.md",
+      "git_blob": "16e2a22558d0a876d53ebae3c0a93f7467b1d130",
+      "sha256": "38f115c2bdb806557cf0c1648aa814679036df4c70f63f374edd430252925cfc",
+      "bytes": 3903
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/code/a1_exact_check.py",
+      "git_blob": "23f314a03aa1c6941aaec44279e8f03db1c9133e",
+      "sha256": "e7ea17bc56e44214fdf4206c654fb1710e7a8d3ca194dcdc15390a066a7920b0",
+      "bytes": 3736
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/code/a5_exact_certificate.py",
+      "git_blob": "a295f7c32dd1b40ace62cc50ffefb64e44810cd6",
+      "sha256": "ffcc1508176aa0b60a0a709d41a6e736ca0a4b38ec8aa436d5d706f800431c84",
+      "bytes": 14588
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/code/a5_trace.py",
+      "git_blob": "c44d1e3fb8e5ae3c23a0eb0ca2b5626311921d7a",
+      "sha256": "bb9b8be765064de888691635333260635799a73c29d2f149fa3c31e9214f0304",
+      "bytes": 3362
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/code/b5_exact_instances.py",
+      "git_blob": "9615797d6ea066c014fe67397946f7a9b4775232",
+      "sha256": "fb56be6166ce10ecae213cd1c4e169594a52b0a922058e52934b88ccd0edf18b",
+      "bytes": 4144
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/code/evidence_manifest.py",
+      "git_blob": "8315249337429633ff7d8b50e146a7f98d679a96",
+      "sha256": "f950c74d523daba97478e7ad56e3ea1bc6605d51f71a34ed1591600846633f48",
+      "bytes": 3581
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/evidence-manifest.json",
+      "git_blob": "ecba6b06f359113815d8814d1473a1f5cafd0c2e",
+      "sha256": "af38c568084368514ae7d109078a237f1719e62b2542d457d3457bbc28684e55",
+      "bytes": 13378
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/independent-checks-a5.md",
+      "git_blob": "9babbbb8ff21f0a74309af60fdbb2bdbaeecab97",
+      "sha256": "756d585cda80f55c19e28116a68cfc4baeaecbe33fbf7db9bea1bcc09192b89c",
+      "bytes": 7331
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/independent-checks.md",
+      "git_blob": "c62c594d4d41dda9b5038d3898c6361871c100c0",
+      "sha256": "c0cfb02c8d69090f6eb6732e1d48153e55ddc10806da35fe715b63a6293c3f07",
+      "bytes": 7918
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/inputs-review.md",
+      "git_blob": "c6cfc01cc944d3a73796c7ede0e2a0b80cdaf373",
+      "sha256": "3a75bb2db7c9f56aacb6636e40d385c2bc40dcd1084e8a807dac9548caa844af",
+      "bytes": 6485
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/outputs/a1_exact_check.json",
+      "git_blob": "60c349d55127808d7544b401ea1ffb7846260106",
+      "sha256": "f8cd6cfd027989bf4bb59ebaebd9040824b0763ef660db51b5046078f33e8f94",
+      "bytes": 1875
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/outputs/a1_independent.json",
+      "git_blob": "60c349d55127808d7544b401ea1ffb7846260106",
+      "sha256": "f8cd6cfd027989bf4bb59ebaebd9040824b0763ef660db51b5046078f33e8f94",
+      "bytes": 1875
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/outputs/a5_exact_certificate.json",
+      "git_blob": "80f08232389a409944e42f10bfec2172d98e155f",
+      "sha256": "279c8e7ca9c4781bb3c528a21f870162aab8402ea219e3ec339c4b9d676d25f3",
+      "bytes": 7011
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/outputs/a5_exact_independent.json",
+      "git_blob": "80f08232389a409944e42f10bfec2172d98e155f",
+      "sha256": "279c8e7ca9c4781bb3c528a21f870162aab8402ea219e3ec339c4b9d676d25f3",
+      "bytes": 7011
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/outputs/a5_trace.json",
+      "git_blob": "e5704551894e978067a4d5908b4053a8aaed9b6d",
+      "sha256": "093fe1d4171f4416e28ba5e269f30378f4e32165f03bc5969a5d94919e92d468",
+      "bytes": 4215
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/outputs/a5_trace_independent.json",
+      "git_blob": "340b92b717e74e0e8d89b2e81936ce6bd9e5ffc6",
+      "sha256": "d573437f99e12da7a02849029b5d08842fed0d98958576330cb10342d1ffaf7e",
+      "bytes": 4215
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/outputs/b5_exact_instances.json",
+      "git_blob": "7be1f0fd82b26763a84912eac63ba07373c23d58",
+      "sha256": "251496a1a117054608dd55d32c7dfa5441c5af34cf7cb00d1f99ec0e9e80da02",
+      "bytes": 5327
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/outputs/b5_independent.json",
+      "git_blob": "7be1f0fd82b26763a84912eac63ba07373c23d58",
+      "sha256": "251496a1a117054608dd55d32c7dfa5441c5af34cf7cb00d1f99ec0e9e80da02",
+      "bytes": 5327
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/plan.md",
+      "git_blob": "3329d0f1f71de3ea309ed4934b1a225fbdbc5d17",
+      "sha256": "bf1c8b13b4fc18a4a9a9f046825610188cce19c6cd317340da54c34673385fdf",
+      "bytes": 2811
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/proposed-record-changes.md",
+      "git_blob": "a952ccb093abdaa5c76880bb1ee7328d50205787",
+      "sha256": "3a687a30a589bcc4120f96b3173b0562a55fa5f75fa04add0e81872bca964c5e",
+      "bytes": 13065
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-01-padua-corner.md",
+      "git_blob": "5be1eae2c74669c97d2e913c75114536aaab34f2",
+      "sha256": "07f596870c05388ea0219aac3309bd5b4c651e3c9d5390d9ae7b381b5c35af64",
+      "bytes": 10374
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-02-generic-commutant.md",
+      "git_blob": "ff72ed033c1c3ddeae058d723f435be138948860",
+      "sha256": "cd8afff1f61099974c2397045005a282848aa2441d186ebb0c78ca5a7666ff82",
+      "bytes": 14153
+    },
+    {
+      "source": "part1_and_rules",
+      "commit": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+      "path": "topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-03-degenerate-maxima.md",
+      "git_blob": "19783f6f5e781cb3c61a5d94217b08c6068421fa",
+      "sha256": "24bf84738f59ca3090e0179bac324f9b8f8644b5c747ba672ed79f68f04a81ad",
+      "bytes": 16372
+    },
+    {
+      "source": "lanczos",
+      "commit": "a2dd845b8a231e1b00733e1361e2a9ad3bad222f",
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-304-square-case-commutator-bounds.md",
+      "git_blob": "01465886e7abcf6d6fde86a15cee3b9164459432",
+      "sha256": "ee8f7f3b60ea434822cf1446d7c39d24a1450437a2e80d89aef45d1d9b059707",
+      "bytes": 8584
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "AGENTS.md",
+      "git_blob": "8c94c718629649c3f5c89d05e5b674ae5ad3a99c",
+      "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60",
+      "bytes": 3159
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "agents/WORKFLOW.md",
+      "git_blob": "38a6fc1d630aa1a6716c7e7c808dd21a674dc27b",
+      "sha256": "64253ae526179be3ce8303987e3f38b9d7a43f825d1a6e310c99c022ba728554",
+      "bytes": 19609
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "agents/codex/CODEX.md",
+      "git_blob": "16a4ecfea89acd5b1d9cd09c9213094bce144caf",
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+      "bytes": 4969
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "literature/CORPUS.md",
+      "git_blob": "f334e7ab59eed0471aaae2520ad7787c55e14f03",
+      "sha256": "8c2bc2669d1e9466777da0b785ebef424f341bbbe6a3d67a2f5e8899c1f10e63",
+      "bytes": 19209
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "literature/INDEX.md",
+      "git_blob": "279327ef4471e174abf2c4e4a344847babca6fa9",
+      "sha256": "7fc98e2472a01ac964d22b47deb5a07cb3b6e368623116b961e249ecaf8927ed",
+      "bytes": 38040
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "literature/lattice-unisolvence/baseline.md",
+      "git_blob": "4b3e0629fa4ebb0024cd23698a29fc4b5de471cc",
+      "sha256": "85e7fc4a7a9d5e5e5bd44607f0ddfbee5b469b3caf1efcce95bf3b95d289402a",
+      "bytes": 3613
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "literature/lattice-unisolvence/records/padua-2006.md",
+      "git_blob": "0b0c9bbc08bc267cc4fc1dd3be9774f77b37f2c3",
+      "sha256": "9a3cd98ce3807fced60bbac509139bbe756c0f9a5e2bff84ce8e8f29e20d31fc",
+      "bytes": 1774
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "state/IDEAS.md",
+      "git_blob": "60580dbe8be3e373837a0a6a04ec8810af0e87e8",
+      "sha256": "183a4a13481aec97b4a7673b36d87f7ec799009ca68d859e299b24f80d804992",
+      "bytes": 64471
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/OPEN_TARGETS.md",
+      "git_blob": "7d19248df1d6897b370035a122b8104bb48c724f",
+      "sha256": "24135cbdca62c1f1bb37893b5701fd6152ee9390f296d2d90acb9c9d99a8df84",
+      "bytes": 12184
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/adversarial-gen1-3.md",
+      "git_blob": "9a8dfd4caf930a6805b043432847f3f5725efaa5",
+      "sha256": "33e335c9ebb2b7a0d7951b07973654dc68ba323a0412b5d4e6a251b83fefa277",
+      "bytes": 32289
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/T1_T3.out",
+      "git_blob": "45b4edf52a5a714f2781de0f6cfd6207d9c84871",
+      "sha256": "853414ed9fb65eef13e7bb94948112db63571d452b037387f2db4f310a8184e0",
+      "bytes": 29935
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/T1b.out",
+      "git_blob": "c11fafce3acd87aa014023e8606c2fb3fe0c3a69",
+      "sha256": "8c77635738262d8946727d46e781223815ceb9f9c8c10cac02937e66528b7da3",
+      "bytes": 4786
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/T2.out",
+      "git_blob": "3205061d27ab2eb9cd2f4a07a3100c7447395275",
+      "sha256": "a60324a7d4f684bb777b2e37e9130986b2a0a9c63b58f2c268b7c33b56e555fe",
+      "bytes": 15041
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/T2c.out",
+      "git_blob": "a5c9082f1ffe364c4da653b540fc8e9d966e7e66",
+      "sha256": "67bf0363656ed7af8b6be82bbecc85b1e7c6c4994ef2430bca11792df8df9a78",
+      "bytes": 7312
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/orf2d.py",
+      "git_blob": "d21e6779f568282c7e9438a883ba12b8bb4d815a",
+      "sha256": "9e2197347a9125cc9f75178021c59d835bc3c85b7b63ef47d5e0213dc2287525",
+      "bytes": 19958
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/run_T1_T3.py",
+      "git_blob": "0055c6457ef21e0b4b9a3edf0bf68a87d25fc679",
+      "sha256": "561d16b96cbc69d7bd59cda7c44be6a09850e6839c06fdbbf718d410128d2439",
+      "bytes": 7125
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/run_T1b.py",
+      "git_blob": "3cadbf2461e28b7e606c07315f0b90107b3e72b3",
+      "sha256": "b3b98ad02006dc8ad1ed6a267fe38bb49914b7cef529df52c38f0eb85f070c0b",
+      "bytes": 5483
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/run_T2.py",
+      "git_blob": "2444b5896525fa3465e1fb326a3f1eda4300b790",
+      "sha256": "7127d077f6a3b7cb0b469bfe6dcc8d3c1e1c4f9cd19ff32efcc20a095dca1369",
+      "bytes": 7379
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/run_T2c.py",
+      "git_blob": "59230dd8e2fb1e186166922b82ba94f2928161b5",
+      "sha256": "4275b823cb294a5269ea7448bc4217d65b74db316e0cae9c2b0504ac2bc1bbee",
+      "bytes": 4789
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/window_exact.out",
+      "git_blob": "e7b47cc6875fe7b018bc7131dde5eb0010305e2d",
+      "sha256": "8354313abf496f9d62550daade12d5b148ff653b20ad1266c4e48d62cbc6a1e4",
+      "bytes": 15138
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/window_exact.py",
+      "git_blob": "eaf15138f41bdfe3cbbf4a1f64d6ecf0d0827ea1",
+      "sha256": "abf066a0fe35355703586ad02701e3f3cfd55690e16a1f3da5b6749d292524c0",
+      "bytes": 4546
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/leb_common.py",
+      "git_blob": "da8135e4d6a3deac23efbfe0faf705f2405d00ef",
+      "sha256": "419970972ae69efcc5e4a1c965fbd49982b67100376d3ff0c46e8629dcb382d0",
+      "bytes": 14491
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_argmax.json",
+      "git_blob": "00453896e7eadf14c19c46a2198b6bd5b3ac756e",
+      "sha256": "00002366be4f5a47a9fbcfb2d4b61dd5080bb1e81774db8b6021477d539c7a8c",
+      "bytes": 13387
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_argmax.out",
+      "git_blob": "09f17d251ee4f06e2bb9ec02817a8bd1bbc323d2",
+      "sha256": "9d500032d8d53583c4644fd2d554bf487c3fd5472bb21bd892ec4f70a9c6f548",
+      "bytes": 8918
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_argmax.py",
+      "git_blob": "a4fad4f65483d15ef466d5ec5de672f835ea2184",
+      "sha256": "02fa14792afa2c72032d4a91998d4da273d83200067437bd2573bb8430bae216",
+      "bytes": 7012
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_tail.out",
+      "git_blob": "778c2328901f314591ea2bbe8819eb5ebbffe53b",
+      "sha256": "d863e8f2861503702831c4ab1eac0a629b4b4a39b05dc9cb9fdd204188d36492",
+      "bytes": 1463
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t1_tail.py",
+      "git_blob": "d3ec355c85e91f3fb0c69748bcc6c853f20ea89f",
+      "sha256": "552fdb4233bf6ee9d3f4d893dcf38f34b04a759e924711f43927d9a5703769fe",
+      "bytes": 4088
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_halfshift.out",
+      "git_blob": "04372783916f598de1255ce13d872bc0ec3666dc",
+      "sha256": "0f65bd19274fe11b84045061c30b0243eed5fd1b1402c5acd82612e83c99b186",
+      "bytes": 3534
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_halfshift.py",
+      "git_blob": "8c6db6a316adca6211244567afaf62a69f39317d",
+      "sha256": "d4cdc2102f3f6885f86ec2a6e9a4ad64b81a36de8b7878e6d6be8c950deb4d4a",
+      "bytes": 2837
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_identify.out",
+      "git_blob": "5f848691829db4c5e6a412d3dcb254d0d6a17f60",
+      "sha256": "7dfe7db98f26fef0ab68da6b5afb1857c3cefd0efc182bed50e9a426d8b150ed",
+      "bytes": 7379
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_identify.py",
+      "git_blob": "2d935903a9a396c14c318aeef80136449853f710",
+      "sha256": "55936d19d737e67c0145a9e3ab125643b949e7f62a289f9a138060bd7fdd6aa7",
+      "bytes": 7403
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_identify2.out",
+      "git_blob": "ba5d0a9e4b81390cab1af20bb2e040d1ed27f171",
+      "sha256": "e8ba834388e9e0b29a5a46d2f5f853c83f42eae3fb18b8ad1517db675032f1a2",
+      "bytes": 1956
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_odd.out",
+      "git_blob": "cad6e6cca28cddc57d0c78ee405493cb9233d66b",
+      "sha256": "fc809dada19f75e3cea51ae6a3c6ec0f0d2c7b76281f6afa06d9da77e7a4c444",
+      "bytes": 4475
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_odd.py",
+      "git_blob": "a57191eea539d1b4247665b45e23bd4741ec8b4f",
+      "sha256": "269f37e6a350bf4f04ea1123bb4d3f88629f00123383433892eb02fd75c938cf",
+      "bytes": 2859
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_onepage.out",
+      "git_blob": "382268c152cb51cfb549b2541b1179b590b106e5",
+      "sha256": "4b0c81bd0dcc5f87447769b91404637ec5c4b9a815bcdd90a07be1b5ee9d5df6",
+      "bytes": 7028
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t2_onepage.py",
+      "git_blob": "486ac1e33a246bcef97c4a3cb49ab2b5520411d5",
+      "sha256": "e7c062a90c883de783d041503dbba77f7fe03070a0f796a28cf66b78b4a5262a",
+      "bytes": 12943
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_certify.log",
+      "git_blob": "47ccf67917685160d463d18a954dfa241793da47",
+      "sha256": "4eeb37aa8848202988ebd660b0a332e8812f2adb616d0dacc56cfa1140e7f3a8",
+      "bytes": 14474
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_certify.out",
+      "git_blob": "073b957d1af058fad2793fff586f4b1f1fa2b31e",
+      "sha256": "637303c5defbaac0fa105c80d79b9f69c8e34922af39f1607924aa2468516b06",
+      "bytes": 12480
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_certify.py",
+      "git_blob": "6bf5ce1c7839cbd32583974bc84e0ffbc4c72a4d",
+      "sha256": "1a1fb00ced54bb3083dce2ff12c56cd10c28499b7e0353ba23e8a6afd5a9d78b",
+      "bytes": 30348
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_degenerate.py",
+      "git_blob": "caa24d80a683c80094203d311e7047e8313a0a16",
+      "sha256": "cdf8cd3273c9ecffa35542bb572a0dde141bf5d068b77ddda548a9a5bdaee5b4",
+      "bytes": 10557
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_maxima.json",
+      "git_blob": "0f8310571d595011af287f26536bf43d0d868dff",
+      "sha256": "bf1890f4d23f871f16d2dda41b800e0d70d2025299221296081a925518d48de0",
+      "bytes": 13560
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_validate.out",
+      "git_blob": "10a6eadaa8025a2a5d815067c81ac1f709530cb1",
+      "sha256": "1da3aa3b434eb93cfb8041e87218401fa785c245ac40f84b096ad1a65b042e1e",
+      "bytes": 7903
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/code/decisive/gen4-2/t3_validate.py",
+      "git_blob": "ff06ef5fd9410478bd3895db872283ff35f93ef7",
+      "sha256": "3fb63a3b3dcd2e50b585728fc0f7323a78ddb3952267072d3a37f65fe1c5874b",
+      "bytes": 5783
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/decisive-gen1-3.md",
+      "git_blob": "363e03e2c7a9af8cce4d9c23c558a79cfb699eef",
+      "sha256": "3e950d1b47b8ec87ffd9ebeed91f8fd27f22f4716d23507918f98dd86eb7825e",
+      "bytes": 30028
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/checks/decisive-gen4-2.md",
+      "git_blob": "0b6d226c97dda328cc571c8ea4a591ddba780537",
+      "sha256": "ca43e4bc5b9e8c4910dc64a06ea93fe33d1d33fb40505d63b16a032d4e68435f",
+      "bytes": 27880
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/gate-rejected.md",
+      "git_blob": "5f2a5af08ee6188a8c93d314bf522d8870f14ff2",
+      "sha256": "67e2a51ed1eb523362751a6ae30e2c61680c80cb41c2095836568b4558ca0fcb",
+      "bytes": 47974
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/ideas/candidates.md",
+      "git_blob": "5ff6097e49451c4119719faf47399dd5768abaa1",
+      "sha256": "d079d870350603d63ebae2fbfc9c98ecccb91f54e8b6d5df4cac2a37c7e2286e",
+      "bytes": 121144
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/lit/baseline.md",
+      "git_blob": "2d7f4c7d8356756b56acfafdbfcd3e6418d9fd82",
+      "sha256": "078631b7d618c22365634354edecfeb419eb0e71a9c7736d06c1bda82bd51f85",
+      "bytes": 80856
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-01-finite-favard-pattern-pairs.md",
+      "git_blob": "640eec26cec8a891f04ce444e68ba5760be97486",
+      "sha256": "31e4de97c465f6a09b8114ed5090b3996155dc9072999311fccde5733f4e42ff",
+      "bytes": 11046
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-02-joint-ritz-saturation-bound.md",
+      "git_blob": "32d56f801ec298423484bf811aeeb91ed2559ae5",
+      "sha256": "0ed649103e3de3f1c22875ebb4bed26e1d4c252ba14d1ac971581fd084c8c193",
+      "bytes": 5488
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-03-compressed-commutator-identity.md",
+      "git_blob": "809f81d6f02b62927038c1d881165ef39087c6fd",
+      "sha256": "4c9156af4f1cb5117d961bc756fbab2bb42eebf2f6180317b657635912f9e83e",
+      "bytes": 4310
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-04-padua-corner-expansion.md",
+      "git_blob": "427d6c3dae2a2f2b97e146036a839ce3da4e8e21",
+      "sha256": "35abb6bd74b427bf4c8bc258476e6a506d11150a78abeca2735e0e94569abac2",
+      "bytes": 5448
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-05-padua-corner-argmax.md",
+      "git_blob": "2f2e60792cc35a0b0cc6e94a5e0eb631a8f3eed5",
+      "sha256": "47fbbf90a9a985e600519602f13c4b4fd277f6d8c7c9d3da738dac2509711185",
+      "bytes": 3001
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-06-padua-lebesgue-maxima-counts.md",
+      "git_blob": "d35d82a4ab55355062918f7297a9da3ad3227386",
+      "sha256": "ff53d00c2ec0f00e2716cd47a7f57ce53c27a7b51484b3473e9d5742c60d8650",
+      "bytes": 6445
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N01-symmetrised-product-inertia-count.md",
+      "git_blob": "ab8eecdf50fd23b58c6e61924c17a2ef4c9554b7",
+      "sha256": "a244fd7531ae09b6f69ea00b44b90225a0eeb1e4eddcdba6725eb24b03af0d1e",
+      "bytes": 7215
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N02-windowed-rational-lanczos-instability.md",
+      "git_blob": "ddfc7c06ca2c73891bb8f5b231f04215410a5f0a",
+      "sha256": "777beb22f8364b21e7ecf03e930e586f563e11b361e9fecaacb1b67e956f395b",
+      "bytes": 5696
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N03-joint-ritz-converse-refuted.md",
+      "git_blob": "1e2be11ea7ae99f5d39512569b06af8a15d60aee",
+      "sha256": "2debf8b26405be9f10eb9fb8827f1a8f01df1757f280c0fdac8ffbde9a19e75a",
+      "bytes": 4950
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N04-pattern-commutant-not-three-dimensional.md",
+      "git_blob": "0ea8848d9cf69f216fe5d684e866ff5577b85711",
+      "sha256": "5755fa21b7336917b4bf7bde66147bf0750ed41e65d3c037a90f103a10511b9f",
+      "bytes": 4360
+    },
+    {
+      "source": "part1_programme",
+      "commit": "cadb35066160e466cb1704b9791ad6f374446422",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N05-fourier-basis-commutation-fails.md",
+      "git_blob": "61150b5ad627a9352853445029b9256105ed82da",
+      "sha256": "3c37dd27b5ef0d051ec57850c05ba6eabadef03778337be57419aad8b786bde5",
+      "bytes": 3614
+    }
+  ],
+  "changed_compared_inputs": [
+    {
+      "path": "literature/CORPUS.md",
+      "old_git_blob": "f334e7ab59eed0471aaae2520ad7787c55e14f03",
+      "new_git_blob": "66d1190c23e7a011840b06bdfbfcecf63f21ace3"
+    },
+    {
+      "path": "literature/INDEX.md",
+      "old_git_blob": "279327ef4471e174abf2c4e4a344847babca6fa9",
+      "new_git_blob": "3150ed3097aa2d000ea58dd68aec1bfd00223616"
+    },
+    {
+      "path": "state/IDEAS.md",
+      "old_git_blob": "60580dbe8be3e373837a0a6a04ec8810af0e87e8",
+      "new_git_blob": "3bc9f45599e3bd3b29ef08dd8673793732b79055"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/OPEN_TARGETS.md",
+      "old_git_blob": "7d19248df1d6897b370035a122b8104bb48c724f",
+      "new_git_blob": "61f53d6468166a1f4ecae4ed5c4c6ea7d8412446"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/decisive-gen4-2.md",
+      "old_git_blob": "0b6d226c97dda328cc571c8ea4a591ddba780537",
+      "new_git_blob": "2a128194a6b6da260de123c0458079049b368766"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/ideas/candidates.md",
+      "old_git_blob": "5ff6097e49451c4119719faf47399dd5768abaa1",
+      "new_git_blob": "00bee144e38d13540a4936c3afb99eadd6012b43"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-01-finite-favard-pattern-pairs.md",
+      "old_git_blob": "640eec26cec8a891f04ce444e68ba5760be97486",
+      "new_git_blob": "527759ed82ddbc3681ad5e8f0df45c0a8e4bf760"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N03-joint-ritz-converse-refuted.md",
+      "old_git_blob": "1e2be11ea7ae99f5d39512569b06af8a15d60aee",
+      "new_git_blob": "9f0f7d5229c63053d20378a9789e2ace7d7858e5"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N05-fourier-basis-commutation-fails.md",
+      "old_git_blob": "61150b5ad627a9352853445029b9256105ed82da",
+      "new_git_blob": "931c1833820b9889bbf86890fd5c6f36ae8c987d"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/LOG.md",
+      "sha256": "25fd3ba60a98f335b3060d4705edbdae2b4240cab0df11f6c4b07ab4c888953b",
+      "bytes": 8112
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A2.md",
+      "sha256": "160c05e6a61a438d4dc89ad219486319da59fd4a3849b2dae46470a40366858c",
+      "bytes": 6320
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/evidence_manifest.py",
+      "sha256": "a145cfb819ed0f366932c8abdc72309183d1a2ee3060e09c9a7d5939a8b79b5b",
+      "bytes": 4655
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks.md",
+      "sha256": "12a3a560d7d5c48f58676adb544cc4bd912f1166bed6bd6d143bd1e0b02162f9",
+      "bytes": 448
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/inputs-review.md",
+      "sha256": "3471bc163fbfb26a9dcdbaf38d2f87f1a1322c0bf55b7feb0359f27cf37d7b31",
+      "bytes": 10410
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/plan.md",
+      "sha256": "6e34d65670e73e7d0db48906f597ec8ad0ffd829f0a3d324d349edc2dd776b21",
+      "bytes": 3417
+    }
+  ],
+  "exclusions": [
+    "evidence-manifest.json excludes itself to avoid a recursive hash",
+    "__pycache__ files are interpreter cache, not evidence"
+  ]
+}
