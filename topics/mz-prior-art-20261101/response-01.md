@@ -37,7 +37,7 @@ The previous text broadened Gauss-node evidence (Mastroianni–Russo) and same-w
    - New translation.md **T6** shows that the nodal side is comparable to Q_N(P²) (T3 plus the paper's Christoffel form). It concludes inf_N λ_−(N,N)=0 on Π_N, conditional on the source's necessity part, whose proof (§3) was not audited.
    - This is failure of a uniform bound, i.e. an unbounded subsequence. It gives no limit along every N, no rate and nothing on Π_{N−1}.
 2. **Analogous classical settings, not used to derive the CC statement.** Mastroianni–Russo Thm 2.7 and Xu (Gauss nodes, mixed weights, no endpoint terms); König–Nielsen (same-weight Jacobi).
-3. **Ours.** For every N, the limit λ_−(N,N−1)→0, the 1/log N rate (PD-T019) and the (log N)^{−2} order (PD-T017/018) come from the exact CC evaluation: Q_N(U_{N−1}²)=O(1) and ∫U_{N−1}²≍log N. The latter growth is now called "an elementary computation", not a classical theorem.
+3. **Ours.** [Corrected in response-02 per audit-02 R1; the original wording grouped these results under the single U evaluation.] PD-T019's exact U_{N−1} evaluation (Q_N(U_{N−1}²)=Θ(1), ∫U_{N−1}²=Θ(log N)) gives the upper bound λ_−(N,N−1)≤O(1/log N) and the every-N limit. PD-T018's separate harmonic witness gives the O(1/log² N) upper bound, and PD-T017 the matching lower bound. The latter growth is now called "an elementary computation", not a classical theorem.
 
 The abstract now says only that full-space unboundedness of 1/λ_− and boundedness of λ_+ follow from classical weighted MZ results. The PD-T019 remark cites LIT-299 for the subsequence, full-space version and claims the every-N, Π_{N−1} evaluation.
 

@@ -58,14 +58,14 @@ Separate assertions:
    - Mastroianni–Russo Thm 2.7 (LIT-293) and Xu (LIT-296): Gauss nodes without endpoint terms, mixed weights.
    - König–Nielsen (LIT-294): same-weight Jacobi; for U-nodes the borderline is p=3 with weight √(1−x²), giving (log n)^{1/3} test growth.
    These show the same kind of borderline failure but do not by themselves establish the CC statement.
-3. **Ours (exact CC evaluation).** PD-T019 evaluates U_{N−1} exactly. Its interior nodal values vanish, so Q_N(U_{N−1}²)=O(1) while ∫U_{N−1}²≍log N. This gives λ_−(N,N−1)≲1/log N for every N, and PD-T018 sharpens it to (log N)^{−2}.
+3. **Ours (exact CC evaluation).** PD-T019 evaluates U_{N−1} exactly. Its interior nodal values vanish, so Q_N(U_{N−1}²)=O(1) while ∫U_{N−1}²≍log N. Its Rayleigh quotient is Θ(1/log N), asymptotically 2/log N. This is an **upper bound** λ_−(N,N−1)≲1/log N for every N, not an eigenvalue asymptotic. PD-T018's separate harmonic-combination witness sharpens the upper bound to (log N)^{−2}, and PD-T017 supplies the matching lower bound (audit-02 R1).
    - The growth ∫U_m²dx≍log m is an elementary computation.
    - Its use as the CC witness and the degree-(N−1), every-N conclusions are attributed to the manuscript, not to the cited sources.
 
 ## Answer to the priority question: is the endpoint log rate classical?
 
 - **Qualitative full-space failure at CC nodes: classical** (assertion 1 above), conditional on the source's necessity part, which was not proof-audited.
-- **Every-N limit on Π_{N−1}, the 1/log N witness rate and the two-sided (1+log N)^{−2} order: no matching result found in the documented search.**
+- **Every-N limit on Π_{N−1}, the O(1/log N) single-U upper bound and the two-sided (1+log N)^{−2} order: no matching result found in the documented search.**
   - Read: Nevai III (+1990 letter), Askey, Lubinsky 1999, Mastroianni–Russo 1999, Mastroianni–Totik, König–Nielsen, Smith, Lubinsky survey, Mastroianni–Milovanović book (ch. 2/4/5), Xu I/II, Lubinsky–Máté–Nevai, Sloan–Smith 1978/80/82, Smith–Sloan 1980, Mastroianni–Milovanović–Notarangelo 2012, published ASV, and the forward-citation screen.
   - The published ASV states that the CC behaviour beyond half-exactness is not known theoretically.
 - **Fixed ratio:** Mastroianni–Totik gives nothing beyond exactness in its documented form (T4). No explicit beyond-half-exactness constants were found.

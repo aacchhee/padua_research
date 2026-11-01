@@ -29,7 +29,7 @@ Claude Opus 5.5 (orchestrator), 2026-11-01, rules `9739a0c` (unchanged at `64c3c
 
 ## Is the endpoint log-rate result classical?
 
-**In part.** That λ_−(N,N) is not bounded below at the CC nodes on the full space Π_N is classical: Mastroianni–Milovanović–Notarangelo 2012 Cor. 2.2, necessity part (translation.md T6). Analogous Gauss-node and same-weight borderlines are in Mastroianni–Russo, Xu and König–Nielsen. The every-N limit on Π_{N−1} and the 1/log N rate come from our exact U_{N−1} evaluation (PD-T019). The **two-sided order** λ_−(N,N−1) ≍ (1+log N)^{−2} with CC weights, and the PD-T018 log² witness inside Π_{N−1}, were not found in the documented search. That search is not exhaustive. Xu I/II have now been read (no quantitative borderline). Mastroianni–Russo 2000 is the most likely remaining place.
+**In part.** That λ_−(N,N) is not bounded below at the CC nodes on the full space Π_N is classical: Mastroianni–Milovanović–Notarangelo 2012 Cor. 2.2, necessity part (translation.md T6). Analogous Gauss-node and same-weight borderlines are in Mastroianni–Russo, Xu and König–Nielsen. The every-N limit on Π_{N−1} and the O(1/log N) upper bound come from our exact U_{N−1} evaluation (PD-T019). The order (1+log N)^{−2} needs PD-T018's separate harmonic witness and PD-T017's lower bound. The **two-sided order** λ_−(N,N−1) ≍ (1+log N)^{−2} with CC weights, and the PD-T018 log² witness inside Π_{N−1}, were not found in the documented search. That search is not exhaustive. Xu I/II have now been read (no quantitative borderline). Mastroianni–Russo 2000 is the most likely remaining place.
 
 ## What remains missing
 

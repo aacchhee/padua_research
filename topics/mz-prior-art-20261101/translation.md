@@ -69,7 +69,7 @@ Source statement (LITERATURE: G. Mastroianni, G. V. Milovanović, I. Notarangelo
 - **Corollary 2.2 (p. 167).** Let 1<p<∞, 1/p+1/q=1. For every P∈P_{m+2r−1},
   ‖Pv^γ‖_p ∼ (Σ_k Δx_k|Pv^γ|^p(x_k))^{1/p} + σ_m(P)/m^{2γ+2/p},
   with σ_m(P)=Σ_{j<r}(|P^{(j)}(−1)|+|P^{(j)}(1)|)/(j!m^{2j}) and constants independent of m and P, **if and only if** −1/p < r+γ−α/2−1/4 < 1/q.
-- **Supporting statements (p. 167).** The ≲ direction "nodal ≲ continuous" holds for arbitrary α>−1, γ≥0, r≥1 and 1≤p<∞, citing Nevai III p. 675 together with Markov, Schur and Nikol'skiĭ. The Δx_k-sum may be replaced by Σ_kλ_m(v^{γp},x_k)|P(x_k)|^p with λ_m(v^{γp},x)∼v^{γp}(x)√(1−x²)/m. Theorem 2.3 (p. 166) is the corresponding if-and-only-if for interpolation operators.
+- **Supporting statements (p. 167).** The ≲ direction "nodal ≲ continuous" holds for arbitrary α>−1, γ≥0, r≥1 and 1≤p<∞, citing Nevai III p. 675 together with Markov, Schur and Nikol'skiĭ. The Δx_k-sum may be replaced by Σ_kλ_m(v^{γp},x_k)|P(x_k)|^p with λ_m(v^{γp},x_k)∼v^{γp}(x_k)√(1−x_k²)/m **at the interior zeros x_k** (audit-02 E1). This is not a global formula: for example λ_m(1,±1)≍m^{−2} while √(1−x²)/m vanishes there. T6 treats the endpoint terms separately. Theorem 2.3 (p. 166) is the corresponding if-and-only-if for interpolation operators.
 
 **Proposition T6 (conditional on Corollary 2.2, including its necessity part, which was not proof-audited here; PROVED from it).** At the CC nodes, inf_{N≥2} λ_−(N,N)=0. That is, sup_N ‖L_N‖_N=∞: there is no N-uniform converse inequality ∫p²≤C Q_N(p²) on the full interpolation space Π_N.
 
@@ -83,5 +83,5 @@ Source statement (LITERATURE: G. Mastroianni, G. V. Milovanović, I. Notarangelo
 **Scope (answers audit-01 F4).**
 - T6 gives failure of a uniform bound, i.e. an unbounded subsequence. It gives neither a limit along every N nor a rate.
 - It is a statement on the full space Π_N. Since V_{N−1}⊂V_N (T2(c)), it says nothing about λ_−(N,N−1).
-- The CC full-sequence limit λ_−(N,N−1)→0, its 1/log N rate (PD-T019) and the (log N)^{−2} order (PD-T017/PD-T018) are not supplied by any source read. They come from the exact CC evaluation of U_{N−1}: interior values vanish, so Q_N(U_{N−1}²)=O(1), while ∫U_{N−1}²≍log N.
+- Three separate local results supply what no source read supplies (corrected in response-02, audit-02 R1). (i) PD-T019's single exact U_{N−1} evaluation: interior values vanish, so Q_N(U_{N−1}²)=Θ(1) while ∫U_{N−1}²=Θ(log N). Its Rayleigh quotient is Θ(1/log N), asymptotically 2/log N. This gives the **upper bound** λ_−(N,N−1)≤O(1/log N) and vanishing along every N; it is not an eigenvalue asymptotic. (ii) PD-T018's separate harmonic-combination witness gives the stronger upper bound λ_−(N,N−1)≤128000/(log N)². (iii) PD-T017 gives the matching lower bound. Together (ii) and (iii) give the order (1+log N)^{−2}.
 - The Gauss-node criteria of Mastroianni–Russo (LIT-293) and Xu (LIT-296), and the same-weight Jacobi theory of König–Nielsen (LIT-294), are analogous classical borderline phenomena. They do not establish the CC statement by themselves.
