@@ -33,3 +33,19 @@ These are source-discovery records, not a claim that historical MZ results fail 
 ## History
 
 2026-10-31: primary abstract/bibliography screen; exact theorems remain named gaps.
+
+## 2026-11-01 fulltext reading (topic mz-prior-art-20261101)
+
+Reader: Claude, Opus 5.5 (orchestrator). Access: publisher PDF via AC's NTNU institutional access in AC's built-in browser, text extracted in-page with pdf.js and read in the session only; no PDF or fulltext extract stored anywhere in the repository. Rules `9739a0c`.
+
+### LIT-051 — Mastroianni–Totik 2000 read
+
+- Coverage: complete article (35 pp.) keyword-indexed, with §4.2 (pp. 46–47, Theorem 4.2, weak Marcinkiewicz inequality) and §7 (pp. 63–66, translation to [−1,1] including the algebraic Marcinkiewicz inequality) read in full.
+- Statement (p. 65, algebraic Marcinkiewicz inequality, stated as the translation of Theorem 4.2 under x=cos t): for a doubling weight w on [−1,1] and 1≤p<∞ there are M, C such that ∫|p_n|^p w ≤ C Σ_j|p_n(x_j)|^pΔ_n(x_j)w_n(x_j) for all p_n∈Π_n whenever x_j=cos ξ_j, x_0=−1, x_S=1, with gaps ξ_{j+1}−ξ_j≤1/(Mn). For every M there is C_M with the converse inequality when gaps are ≥1/(Mn). Here Δ_n(x)=√(1−x²)/n+1/n² (p. 63) and (7.14) gives λ_n(1,p,x)∼√(1−x²)/n+1/n² for w≡1 (p. 66).
+- Relation: translated in topics/mz-prior-art-20261101/translation.md §T4 (with CC weight comparison §T3). It yields λ_−(N,n)≥c>0 for n≤θ₀N with unspecified absolute θ₀=1/(πM) and c. **Verdict: IMPLIES PART of PD-T023/PD-T024** (positive lower constant for small fixed ratio, non-explicit). It does not give every θ<1, explicit constants, an upper constant <2 (PD-T022) or the endpoint order (PD-T017/018): RELATED for those. Lubinsky 1999, p. 578, likewise describes Mastroianni–Totik as degree≤εn results.
+
+### LIT-052 — Lubinsky 1998 survey read
+
+- Coverage: published chapter, Springer DOI 10.1007/978-94-015-9086-0_12 (pp. 213–240, 28 PDF pages, text layer). Keyword-screened throughout; §3 (pp. 229–232, converse quadrature sums) read in full; open problems (p. 238) read.
+- Statements: the duality method (p. 229); Theorems 3.1–3.2 for Freud weights (p. 230); Theorem 3.3 (p. 231), Xu's converse quadrature-sum estimate at Gauss points of generalized Jacobi distributions, extending Nevai; König's method (pp. 231–233); open problem 3° (p. 238) notes gaps between necessary and sufficient conditions for converse estimates.
+- Relation: no Lobatto/CC-weighted ℓ²→L² theorem or logarithmic rate is stated. **Verdict: RELATED, DIFFERENT SETTING**; pointers to Xu II and Nevai III. The scanned author PDF gap is superseded by the publisher text.
