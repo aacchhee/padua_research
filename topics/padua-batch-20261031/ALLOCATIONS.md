@@ -1,5 +1,15 @@
 # Shared allocation ledger — padua-batch-20261031
 
+## Current transition and PR #11 reservation import (2026-11-01)
+
+Main `e24b21fe43cdd090f6dfac269147e75185f04c5b` contains PRs #10, #6 and #13 and is merged into PR #11 at `f62272c525dcb8bb802306d1010c37d93fcbf4b0`. AC directs PR #11 next. **The fresh-range procedure in agents/WORKFLOW.md, adopted 2026-11-01, supersedes every older single-allocation-owner and owner-confirmation instruction below.** Those paragraphs and their dated boundaries remain historical provenance; all existing reservations remain in force.
+
+PR #11 imports its existing reservation unchanged: namespace LIT, range **LIT-293–LIT-299**, count **7**, branch `claude/mz-prior-art-20261101`, date 2026-11-01, owner this topic. Published source commits: LIT-293–295 at `7a0878873b47135577b165df10217dd36bc035c9`, LIT-296–298 at `4f937137f9baac5e51814964e6a83aeb2df38815`, and LIT-299 at `41bbc231be4b5ccc7c3f92e5818a53b950ccc25f`; [PR #11](https://github.com/aacchhee/padua_research/pull/11) retains the publication trail. No range is reserved again, no retrospective headroom is added, and no new range is needed for finalization.
+
+Readiness scan: current main above; PR #11 input `848daaae2954a984aa0e98634da27f5a8e60915d`; PR #9 `7b8884a2f98518784ff3698dd2f3f9c49c9cdd62`; PR #12 `38db12bc1cee57902c67f62e022af83e0880f699`. Their ledgers and all four final-ID registries were checked; #9/#12 carry no newer final reservation. All returned closed PRs are merged, so no closed-unmerged reservation was omitted. Existing reservations across main and this branch remain authoritative.
+
+After the preserved blocks, the lowest unused boundaries remain **PD-T101, PD-N044, IDEA-210, LIT-427**, subject to the required fresh scan at any future allocation. LIT-293–299 belongs to PR #11; the merged lattice/programme block is LIT-300–426. The integrated INDEX has 426 distinct numbered LIT rows and no collision. No final ID is assigned or renumbered here.
+
 **Current integration snapshot (2026-11-01, audit-04):** main `21e620b` already contains PR #10. PR #6 allocates lattice PD-T081–094, PD-N032–038, IDEA-177–189, LIT-300–331 and programme-ideas PD-T095–100, PD-N039–043, IDEA-190–209, LIT-332–426 under AC's member-specific authorization to Claude (section below). PR #11 head `97968d2c2d039cb0910e0ea50747fb2d9e01a262` reserves LIT-293–299; it has no collision with this block. Next unreserved: PD-T101, PD-N044, IDEA-210, LIT-427. AC’s current merge order is #6 → #13 (rules update) → #11 → #9 → #12; refresh the later drafts against each preceding merge and preserve these ranges. PR #13’s rules are not imported into PR #6. Only AC merges.
 
 ## Earlier instructions and integration snapshots (historical)

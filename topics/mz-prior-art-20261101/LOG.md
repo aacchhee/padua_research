@@ -1,7 +1,7 @@
 # MZ prior-art and fulltext closure (CC / Padua MZ manuscript)
 
-- Branch: `claude/mz-prior-art-20261101` · Base: main `9739a0c56b7a3976422ce60a8441bfbbfd6554df` · Developer: Claude (orchestrator) · Auditor: Codex `gpt-6-astra`, high (audit-01: CHANGES REQUIRED)
-- Stage: AUDIT (narrow re-audit of response-02) · Next: `Codex gpt-6-astra, high: narrow re-audit of response-02 on claude/mz-prior-art-20261101 (PR #11)`.
+- Branch: `claude/mz-prior-art-20261101` · Base: main `9739a0c56b7a3976422ce60a8441bfbbfd6554df` · Developer: Claude (orchestrator) · Auditor: Codex `gpt-6-astra`, high (audit-03: accepted within scope)
+- Stage: PR · Assigned audit, integration and preparation complete; only AC’s PR #11 merge decision remains.
 - Claims: none new. Literature topic only; no PD-T/PD-N status changes (literature verdicts never change a PD status).
 - For the PR: record updates for LIT-045–065; new LIT-293–299 (after the bivariate-Lanczos block LIT-066–292) reserved in the shared ledger; manuscript §1/§4/Prop. 5.1 wording and refs.bib; literature INDEX/CORPUS; topics/mz-constants/literature-search.md.
 - Open for AC: missing fulltexts (see local working track `Downloads\padua\results\mz-prior-art-20261101.md`).
@@ -104,3 +104,13 @@ AC requested the narrow response-02 re-audit at `848daaae2954a984aa0e98634da27f5
 Normal merge `f62272c525dcb8bb802306d1010c37d93fcbf4b0` integrates main `e24b21f`, with parents `848daaa` and `e24b21f`. Its tree `8da1c3ab38ec6cdcc2a27c3ab28e3e3275aebea9` exactly matches the local tree-identical squash rehearsal. No published history was rewritten. Adopt the merged fresh-range/handoff rules; existing LIT-293–299 remains unchanged and no additional range is needed.
 
 Current handoff: [01-finalize](handoffs/01-finalize.md), open while finalization runs. No earlier topic handoff existed. Do not create a Claude successor.
+
+## 2026-11-01 — final narrow audit and preparation
+
+Audit-03 accepts response-02 R1/E1/E2 at `848daaa`; a distinct Codex gpt-6-astra high checker independently finds those edits clean. The original a16dda9 merge preserves all nonshared source blobs; INDEX/CORPUS exactly reproduce their conflict-free three-way merges. Its ledger differs only by the two documented pointer refreshes. Current-main merge f62272c preserves both branches and matches the local rehearsal tree. Finalization changes only current status text, this topic’s audit/preparation records and the ledger transition/provenance note; no source theorem, proof, scientific status or existing final ID is changed.
+
+The ledger now adopts the merged fresh-range procedure and imports this topic’s seven existing LIT IDs with count and publication provenance. No additional range is needed. Current next boundaries are PD-T101, PD-N044, IDEA-210, LIT-427. Actual independent build, tree-preservation and final-review receipts are linked from pr-prep.md. Source-access limitations remain; no novelty clearance or source-necessity-proof audit is added.
+
+Handoff 01 remains open until the output commit is recorded, then closes without a successor. No further Claude or other agent round is assigned. AC’s desktop working-results file is unavailable here; no delivery to that file is claimed. No main write or live PR merge is performed.
+
+Distinct Codex finalization review: CLEAN; see audit-support/final-independent-review.md and final-independent-checks.json. It independently checked the tree union, 426 literature IDs and administrative-only edits. Output and handoff closure are the remaining publication operations; no successor agent task is needed.

@@ -1,0 +1,141 @@
+{
+  "verdict": "CLEAN",
+  "old_merge_nonshared_preserved": true,
+  "old_merge_shared_paths": [
+    "literature/CORPUS.md",
+    "literature/INDEX.md",
+    "topics/padua-batch-20261031/ALLOCATIONS.md"
+  ],
+  "current_main_changed_paths": 13,
+  "topic_changed_paths": 33,
+  "overlap": [],
+  "independently_reconstructed_merged_tree": "8da1c3ab38ec6cdcc2a27c3ab28e3e3275aebea9",
+  "lit_rows": 426,
+  "main_lit_rows": 419,
+  "intentional_main_row_changes": [
+    61,
+    62,
+    63,
+    64,
+    65
+  ],
+  "literature_additions": [
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299
+  ],
+  "corpus_duplicate_keys": {},
+  "local_direct_changes": [
+    "state/CURRENT.md",
+    "topics/mz-prior-art-20261101/LOG.md",
+    "topics/mz-prior-art-20261101/report.md",
+    "topics/padua-batch-20261031/ALLOCATIONS.md",
+    "tracks/mz-constants/paper/README.md",
+    "tracks/mz-constants/paper/manuscript.tex"
+  ],
+  "local_added_files": [
+    "topics/mz-prior-art-20261101/audit-03.md",
+    "topics/mz-prior-art-20261101/audit-support/final-inputs.json",
+    "topics/mz-prior-art-20261101/audit-support/final-preservation.json",
+    "topics/mz-prior-art-20261101/audit-support/final-rehearsal.json",
+    "topics/mz-prior-art-20261101/audit-support/response-02-check-inputs.json",
+    "topics/mz-prior-art-20261101/audit-support/response-02-check.md",
+    "topics/mz-prior-art-20261101/handoffs/01-finalize.md",
+    "topics/mz-prior-art-20261101/pr-prep.md"
+  ],
+  "manuscript_abstract_to_end_unchanged": true,
+  "refs_unchanged": true,
+  "current_only_mz_paragraph": true,
+  "historical_ledger_unchanged": true,
+  "input_hashes": [
+    {
+      "path": "literature/CORPUS.md",
+      "sha256": "82df9616acc8ac408d729881b90f9d1d5d5f5a022a5d5dd064b6f9973b980305",
+      "git_blob_sha1": "aeca8b272b50d70e9a6232e6bec878f1d06f82ba"
+    },
+    {
+      "path": "literature/INDEX.md",
+      "sha256": "f90355c5b77a638d1a49980330eff1bda7d0e7610771a3bdae465f384b03f056",
+      "git_blob_sha1": "f9348537234c798a3fa738970513891f0dd8c956"
+    },
+    {
+      "path": "state/CURRENT.md",
+      "sha256": "585b316cf1e1ce06ed053bac2b3ac717a832da4badb2a24c06c64e8fc50fbd5a",
+      "git_blob_sha1": "59ed39819ea6e46975bae8fad7f2fbff534bf28a"
+    },
+    {
+      "path": "topics/mz-prior-art-20261101/LOG.md",
+      "sha256": "0e6b4d11094e260c465f2bf73de581ed97cb3b275753224b93d1c6900fe92975",
+      "git_blob_sha1": "6244143ed162b4b0ebb5da6e314c110cd625ffb8"
+    },
+    {
+      "path": "topics/mz-prior-art-20261101/audit-03.md",
+      "sha256": "aa530fe76767c7b108e5a6756e6225cb388de1675691fab0761ee36fe1b21b3f",
+      "git_blob_sha1": "cd2835a486040dbc9aaa41ae316b5a45a5c1c455"
+    },
+    {
+      "path": "topics/mz-prior-art-20261101/audit-support/final-inputs.json",
+      "sha256": "77459edbe2bf4deb11e0757edc99187b76046ed6c9915c817290b7d14e9665d3",
+      "git_blob_sha1": "c916331aab2cee2b5330cb6680f670ecc4289e1a"
+    },
+    {
+      "path": "topics/mz-prior-art-20261101/audit-support/final-preservation.json",
+      "sha256": "c341d5dab60c5637fcb529eefb24ac0c4605079a190622476d85b177106f02e2",
+      "git_blob_sha1": "a3c9e062b04bca76fefcdca60d6499e771da9dbd"
+    },
+    {
+      "path": "topics/mz-prior-art-20261101/audit-support/final-rehearsal.json",
+      "sha256": "0b047dbcf5467a6b93abffa03909dce2ad3bfb7c3b009c18233f0c57a502000e",
+      "git_blob_sha1": "b68f24c999f2e7ebb209ad38ff5d1a756c5dbbf7"
+    },
+    {
+      "path": "topics/mz-prior-art-20261101/audit-support/response-02-check-inputs.json",
+      "sha256": "a66db19cee4c46ab9305a143a6e1a0961813b512bf81a0e4576d474d8c6650ef",
+      "git_blob_sha1": "979640fbf65b348450854a5a35c98ea9c7b97eb8"
+    },
+    {
+      "path": "topics/mz-prior-art-20261101/audit-support/response-02-check.md",
+      "sha256": "e58e9320a019e8fd1e13c34aceb4edad9fed9ea7ae40b1c00f007af847a789c3",
+      "git_blob_sha1": "d106cb8cc74fee4ac62e281c386416e0005625fd"
+    },
+    {
+      "path": "topics/mz-prior-art-20261101/handoffs/01-finalize.md",
+      "sha256": "df586f008a575ec78d254c716076458fd486112d595142558e10981418cfd051",
+      "git_blob_sha1": "6da0b78cb2320d4ee20b592e157725b64193769d"
+    },
+    {
+      "path": "topics/mz-prior-art-20261101/pr-prep.md",
+      "sha256": "a2b49ead3109fcb7559be4d01c4a57fbbd49b71b459a59956c100c015a412fee",
+      "git_blob_sha1": "91019e4e9feb1ba0844a328724004cdd070a856e"
+    },
+    {
+      "path": "topics/mz-prior-art-20261101/report.md",
+      "sha256": "546bc839aa1b8c5cc5dddef23d26a2241445ba8af4f6af0174975d150cee489f",
+      "git_blob_sha1": "6779a9f42b687edfa234669189ad2542bc403151"
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "sha256": "d95ea644838d39dc4370ab8ce6c21b16d39f18d6a6dfdae7e912664807d573c3",
+      "git_blob_sha1": "4c55ac54bde0f8c901f34d1b73202fa606a467ab"
+    },
+    {
+      "path": "tracks/mz-constants/paper/README.md",
+      "sha256": "9f53df355a611b047a4157e79bc30100432c9aac32f22f30ed4d83e9ecd79cd4",
+      "git_blob_sha1": "ad41d15a07dcce874ce4ec42573fc29e9e7a7f21"
+    },
+    {
+      "path": "tracks/mz-constants/paper/manuscript.tex",
+      "sha256": "3c3e4bbccd4067b710e49c9bb3ec46ed460df7d7d2852d19b50cc30ef2d67e9c",
+      "git_blob_sha1": "2c2d707d867041f7bbedbab873cd6041775d5aa5"
+    },
+    {
+      "path": "tracks/mz-constants/paper/refs.bib",
+      "sha256": "9901ae3dba63af176a1ced7c066da559588bd762ee8fe7bf25602e0a48c7da63",
+      "git_blob_sha1": "c43c961903f6aebcd7bd63468392b95dcc66d35c"
+    }
+  ]
+}

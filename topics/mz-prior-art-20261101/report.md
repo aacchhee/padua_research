@@ -1,6 +1,6 @@
 # Topic report — MZ prior-art and fulltext closure
 
-Claude Opus 5.5 (orchestrator), 2026-11-01, rules `9739a0c` (unchanged at `64c3c79`). Codex audit-01: CHANGES REQUIRED; answered in [response-01](response-01.md); focused re-audit **PENDING**. Literature topic: no PD status changes.
+Literature development: Claude Opus 5.5 (orchestrator), 2026-11-01. Codex audits 01–03 close the corrections within their recorded scopes; [audit-03](audit-03.md) accepts response-02 and the final integration. Current main is integrated and assigned PR preparation is complete. Literature topic: no PD status changes. Historical source-access and novelty limits below remain explicit.
 
 ## What is now verified
 

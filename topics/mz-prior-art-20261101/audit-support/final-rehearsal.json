@@ -1,0 +1,27 @@
+{
+  "source_candidate": "848daaae2954a984aa0e98634da27f5a8e60915d",
+  "source_main": "e24b21fe43cdd090f6dfac269147e75185f04c5b",
+  "merge_base": "a7e123476cef761807c69e5d0af1a094c7ac3df0",
+  "source_tree_candidate": "3b978653e1bd7594b866370dbb8e9c01775ebeb7",
+  "source_tree_main": "e5b727899fc2e16013daaa8e3bbec00e75ec3c12",
+  "source_tree_base": "ba221138c7493f05d6c53c1370125a5ae432a432",
+  "synthetic_commits": {
+    "base": "bdeb9d64bb5a8976d7ec1013b4047242d39244e1",
+    "candidate": "3e93f3d86d111fc63a8689594265b9fdde1970c1",
+    "main": "af4204b419b4b996d81b3af352131d7ab60fc2c0"
+  },
+  "method": "Exact source tree objects and matching merge-base topology; synthetic local commits; empty sparse checkout; git merge --squash --no-commit; git write-tree --missing-ok because unchanged leaf blobs were not downloaded",
+  "topic_delta_paths": 33,
+  "main_delta_paths": 13,
+  "overlapping_delta_paths": [],
+  "git_merge_exit": 0,
+  "conflicts": 0,
+  "squash_tree": "8da1c3ab38ec6cdcc2a27c3ab28e3e3275aebea9",
+  "old_merge_a16_shared_paths": [
+    "literature/CORPUS.md",
+    "literature/INDEX.md",
+    "topics/padua-batch-20261031/ALLOCATIONS.md"
+  ],
+  "old_merge_a16_unexpected_nonshared_paths": [],
+  "tree_objects_imported": 177
+}
