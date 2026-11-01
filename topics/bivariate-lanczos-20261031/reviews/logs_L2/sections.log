@@ -1,0 +1,12 @@
+# rl2_sections.py numpy=2.5.3
+  rotpi4   BJ cgs2all n=12: loss=2.7e-16 e_F=1.7e-16 e_tau=1.8e-16 e_H=4.3e-13 max|K|=6.0e-13 max||c_l||=1.8e-12
+  rotpi4   BJ cgs2all n=16: loss=2.7e-16 e_F=1.7e-16 e_tau=1.8e-16 e_H=1.4e-10 max|K|=1.9e-10 max||c_l||=9.0e-10
+  rotpi4   BJ cgs2all n=20: loss=2.8e-16 e_F=1.7e-16 e_tau=1.8e-16 e_H=2.0e-07 max|K|=2.7e-07 max||c_l||=1.1e-06
+  rotpi4   BJ cgs2all n=24: loss=4.4e-16 e_F=1.7e-16 e_tau=1.8e-16 e_H=4.9e-04 max|K|=6.8e-04 max||c_l||=2.7e-03
+  rotpi4   F-defect max 1.3e-15, J-defect max 7.0e-04, thetaLB 2.5e-04 (14s)
+  triangle BJ cgs2all n=12: loss=3.8e-16 e_F=1.0e-16 e_tau=7.5e-17 e_H=4.4e-11 max|K|=4.4e-11 max||c_l||=2.2e-10
+  triangle BJ cgs2all n=16: loss=3.8e-16 e_F=1.2e-16 e_tau=8.3e-17 e_H=2.3e-07 max|K|=2.3e-07 max||c_l||=1.0e-06
+  triangle BJ cgs2all n=20: loss=3.8e-16 e_F=1.3e-16 e_tau=1.2e-16 e_H=9.5e-04 max|K|=9.5e-04 max||c_l||=4.3e-03
+  triangle F-defect max 1.4e-15, J-defect max 2.0e-03, thetaLB 9.8e-04 (4s)
+  tensor41 BJ cgs2all n=39: loss=6.9e-15 thetaLB=8.3e-15
+  tensor41 reference kappa(Cheb product, n=39) = 1.00e+00; drift = 1.1e-14

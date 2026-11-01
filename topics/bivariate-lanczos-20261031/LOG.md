@@ -155,6 +155,14 @@ Subagent effort is set from the agent definition and is not independently expose
 - Runs needed (syvert0/1/2), from `tracks/bivariate-lanczos/code/L2` with `OMP_NUM_THREADS=16 OPENBLAS_NUM_THREADS=16`: `python3 -I l2_r02_cost.py --sets rotpi4,triangle --M 1000000` (≈ 16 GB); same with `--nrot 32 --ntri 28 --methods bj2w,proJ,adapt2w,fullcgs2,tworel2` (≈ 27 GB).
 - Next: independent reconstruction of L2 (separate Opus 5.5 xhigh), with priority on the span-drift claim PD-N?…-201 (it would mean even full reorthogonalization does not compute the graded spaces S_n to better than ~1e-3 on rotated squares).
 
+### L2 reconstruction 01 returned (2026-11-01)
+
+- Separate Claude Opus 5.5 xhigh (requested) agent; L2 files identical to `9378b68`; report [reviews/L2-reconstruction-01.md](reviews/L2-reconstruction-01.md).
+- **PD-N?…-201 span drift CONFIRMED:** own references for S_n (Legendre and Chebyshev product bases, Householder QR in long double, κ ≤ 7.8e2, mutual agreement 2.7e-15); own BJ + CGS2-against-all (loss 4e-16) drifts 3.6e-3 (rotπ/4, n = 24; developer 4.1e-3) and 1.3e-2 (triangle, n = 20); long-double run 7.7e-6 — drift scales with working precision (rounding amplification, not a reference artefact). Developer's pre-registered box reference itself off by 9e-4 (κ 9e12), as disclosed. "M-independent" too strong (≈ 7e-4 at M = 10⁵, two seeds; 50× seed spread at M = 1681). BJ + CGS2-all coincides with Zhu–Nakatsukasa multivariate V+A in grevlex order by the paper's rule (their code not checked).
+- PD-T?…-201 CONFIRMED (35 stress instances, worst LHS/RHS 0.16; Frobenius semi-orthogonality; local orthogonality an explicit hypothesis, Jia–Li form). -202 CONFIRMED (θ_LB bounds max_{s≤n} θ_s, not θ_n). **High finding on -205:** the defining recursion is self-referential when an unformed A-product belongs to a column created by A; well-defined iff every unformed product's column was created by the other operator (dev, mirror, alt satisfy it; adapt fails from degree 3 on 4/5 sets) — statement must be restricted. ω-estimate, PRO-2D-J and cubic-checkerboard kill reproduced digit-for-digit; four developer commands rerun verbatim.
+- Protocol: plan ledger R01 row corrected by orchestrator (clause (ii) fired); three evidenced failures (IDEA?…-205, one-pass part of -203, -209) lack PD-N files; several titles disagree with their tables.
+- Actions: L2 developer resumed for response-recon-01; a prior-art check of the span-drift claim (it concerns multivariate V+A as published) launched.
+
 ## Runs needed
 
 Consolidated list (exact commands in the cited records): L1 SUMMARY §6; L2 above; L3 SUMMARY §5; L5 R01 §7 and R03 §7 and response-recon-01; repro/REPRO.md §5. None executed by this session; all require AC's servers (syvert0/1/2) or more time.
