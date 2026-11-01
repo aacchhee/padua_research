@@ -1,6 +1,6 @@
 # Handoff 05 — full PR12 preparation after PR15
 
-- Status: open
+- Status: done in ce98fcc807f2d14e3bff96b0815b82b28a1fca8f
 - Previous handoff: 04-pr-preparation.md (scope superseded by AC)
 - Next agent / model / effort: Codex, gpt-6.1-sol medium
 - Role: orchestrator / final PR preparation
