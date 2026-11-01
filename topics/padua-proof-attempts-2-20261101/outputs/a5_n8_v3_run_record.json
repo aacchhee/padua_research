@@ -65,6 +65,35 @@
   "interrupted_v1_independent_exit": 143,
   "last_updated_utc": "2026-11-01T13:00:08.125635+00:00",
   "node_input_sha256": "574a47af6a7d84a5f4b27dd3adce9797350860d6e40242869c58a90673e5b23c",
+  "prepared_v5": {
+    "actual_synthetic_controls_passed_by_both_executors": true,
+    "deadline_utc": "2026-11-01T15:19:00Z",
+    "negative_controls": {
+      "continuation": 53,
+      "static_proposer": 12
+    },
+    "original6_live96_old84_unchanged": true,
+    "source_files": [
+      {
+        "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_continue_v5.py",
+        "sha256": "e1ad5f540ee67f785b79ba333d2bbf221f0f4f8956c93ce6ad9ad5d3b4140993"
+      },
+      {
+        "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_continue_v5_controls.py",
+        "sha256": "8e079f4a9befe14139f690d41d95dc48fde658d17ab4023821b30f42a9afe7bf"
+      },
+      {
+        "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_v5.py",
+        "sha256": "a98e9eaccf64a736619e68781e3037aa90d9014c04e8b532ec85a20cf43978b5"
+      },
+      {
+        "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_v5_controls.py",
+        "sha256": "9fb0bfca0dcd19eec1f0e8e87d5ff4bbf49177de055ab2ddd64042eaf8d5ca79"
+      }
+    ],
+    "stage_upper_seconds": 2400,
+    "status": "PREPARATION COMPLETE; NO REAL SEARCH; actual V4 cap/root review required"
+  },
   "producer_command": "PYTHONPATH=/tmp/padua2-deps timeout 5400 python -B topics/padua-proof-attempts-2-20261101/code/a5_n8_boxes.py --node-file /tmp/a5-n8-node-pilot.json --boxes 200000 --seconds 3600 --depth 44 --ambiguity 8 --full-depth 44 --root-depth 12 --cache-masks 8000 --certificate --boundary --output /tmp/a5-n8-candidate-v3.json.gz",
   "proof_claim": "none until complete artifact and independent acceptance/executions",
   "record_created_utc": "2026-11-01T11:36:40.822485+00:00",

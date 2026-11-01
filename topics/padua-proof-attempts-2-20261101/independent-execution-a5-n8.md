@@ -122,3 +122,24 @@ PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps python -B topics/padua-pro
 ```
 
 The static reflection-controls command ACTUALLY exited0 (session94870): all45 exact cardinal coefficient identities, all recorded involutions/path geometry and six fail-closed cases passed. Output `outputs/a5_independent_n8_reflection_controls.json`:2427bytes,SHA256 `fceef45c3712e7e58a3b547b133c4922c2cbfc7aaf00750d59b1ded7d491c2ea`. Explicitly incomplete fixture `/tmp/a5-independent-n8-reflection-fixture.json.gz`:141026bytes,SHA256 `3c7b42e4e24ce42b5280579764a962a57cf5390efca7694d50d34b91d180d69e`; proposed18root records and8leaves. All ten source identities matched AFTER exit. This is static transformation evidence only, with count_certified=false and no search advanced; the unchanged independent checker has not yet replayed this fixture. Active v4 was not stopped or changed.
+
+Parent reports checkpoint6c1db85 pushed with the completed v1/v3/cap/control/validation/reflection records; the active v4 JSONL was explicitly excluded. The temporary prose freeze was then lifted. Active v4 progress at83000 cumulative boxes/1428.924291134 new-phase seconds reports0unresolved,9pending and maximumdepth30; no complete interior or boundary result exists yet. Continuation96 and the original six source/schema files remain frozen; no further search was started.
+
+## V5 preparation-only synthetic and static controls
+
+At the parent's explicit instruction, read all four NEW files in full: continue_v5 `e1ad5f540ee67f785b79ba333d2bbf221f0f4f8956c93ce6ad9ad5d3b4140993`; continue_v5_controls `8e079f4a9befe14139f690d41d95dc48fde658d17ab4023821b30f42a9afe7bf`; reflect_v5 `a98e9eaccf64a736619e68781e3037aa90d9014c04e8b532ec85a20cf43978b5`; reflect_v5_controls `9fb0bfca0dcd19eec1f0e8e87d5ff4bbf49177de055ab2ddd64042eaf8d5ca79`. No finding within the bounded operational/static scope: the mathematical helpers/while loop are unchanged, parked right paths are restored, lineage requires the exact own-original raw identity and unchanged old records, and reflection transformation AST differs only in provenance guards. This is not a mathematical audit or acceptance of real witnesses. All14 old/new source pins matched before use.
+
+The following two bounded commands are executed sequentially. The first uses synthetic fixtures ONLY; the second uses this executor's capped v3 only for static transformation controls and an explicitly incomplete fixture. Neither resumes any real search. Active v4 session23300 remains untouched; a future v5 search requires the actual v4 cap and a new parent decision.
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps python -B topics/padua-proof-attempts-2-20261101/code/a5_n8_continue_v5_controls.py --output topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_v5_controls.json
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps python -B topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_v5_controls.py /tmp/a5-independent-n8-candidate-v3.json.gz --fixture /tmp/a5-independent-n8-reflection-v5-fixture.json.gz --output topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_reflection_v5_controls.json
+```
+
+Both V5 preparation commands ACTUALLY exited0 in session29191. Synthetic continuation controls passed53negative cases and all12listed positive cases (lineage binding, original-prefix preservation, parked-right restoration, full-frontier accounting and unchanged helper/loop ASTs). Static reflection controls passed45exact cardinal identities/involutions and12negative cases. All14 source pins matched AFTER exit. No real resume/search advanced; no mathematical certificate was accepted.
+
+`outputs/a5_independent_n8_v5_controls.json`:3874bytes,SHA256 `816e7cde2c46207ed40bee9b2d01a02ecff7f4eed7b6dcaf6aacfa7a31e2cd85`.
+
+`outputs/a5_independent_n8_reflection_v5_controls.json`:2651bytes,SHA256 `a032752f72092eb7e8330a690a1fd4cd1356cb326b53c4430062219a6c614adb`.
+
+At the parent's further instruction, ACTUALLY decoded and compared this executor's old/new static fixtures after removing ONLY metadata. Every remaining mathematical AND summary field is exactly equal: old141026bytes/SHA256 `3c7b42e4e24ce42b5280579764a962a57cf5390efca7694d50d34b91d180d69e`; new141028bytes/SHA256 `c5fd359112bdb9db4ccfabc98d2288466d56f27a16364432355d4dba6dcaeb37`. This is decoded JSON-object equality, not identical gzip bytes. Both remain explicitly incomplete18-root/8-leaf fixtures; it establishes provenance-only versioning, not a count or a previously unperformed own-base-fixture checker replay. Active v4 is unchanged and future v5 search remains blocked until its actual cap and parent decision.
