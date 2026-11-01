@@ -10,8 +10,16 @@ is the pinned one used by the campaign. Run from the repository root:
       --output topics/padua-lanczos-drift-20261101/evidence/response-01-e6-offsample.json
 
 Test distributions (all in the support region of the case, in the case's own (x, y) coordinates):
-  midpoint          the original 128 campaign points (P[:128]+P[-128:])/2, reproduced as a control
-                    (density of a sum of two iid uniforms: triangular, centre-concentrated);
+  midpoint          the original 128 campaign points (P[:128]+P[-128:])/2, reproduced as a control.
+                    These are explicit deterministic midpoints of node pairs (P[i], P[-128+i]). For the
+                    two cases here the nodes are iid uniform in the support (rotpi4: the native square
+                    [-1,1]^2 rotated by pi/4; triangle {x,y>=-1, x+y<=0}); the midpoints are then
+                    centre-concentrated, but their law differs by geometry (response-02, A02-L5): for the
+                    iid native square (rotpi4) the native-coordinate midpoint has a PRODUCT of two
+                    triangular densities (the rotation is applied afterwards); for the iid triangle it has
+                    the overlap-area density area(T cap (2z-T)), piecewise quadratic, not triangular
+                    (e.g. 4t^2 at z=(-1+t,-1+t), 0<t<=1/2). The deterministic T24/Q24 and other grid or
+                    checkerboard benchmark midpoint sets have no iid sampling law at all;
   uniform_interior  4000 points uniform in the support (native square [-1,1]^2 rotated by pi/4 for
                     rotpi4; the triangle {x,y>=-1, x+y<=0} by rejection), rng seed 2026110101;
   boundary          1000 points on the boundary (uniform in arclength, rng seed 2026110102) + all
