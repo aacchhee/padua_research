@@ -1,9 +1,9 @@
 # Handoff file and fresh-range ID reservation rules
 
-- Branch: claude/handoff-id-rules-20261101 · Base: main `21e620ba8b5f0e0706f3a8c6613517df04d9d469` · Developer: Claude · Auditor: Codex
-- Stage: AUDIT · Next: Codex final audit and PR preparation in this session · Open handoff: [handoffs/04-finalize.md](handoffs/04-finalize.md)
+- Branch: claude/handoff-id-rules-20261101 · Base: main `a7e123476cef761807c69e5d0af1a094c7ac3df0` · Developer: Claude · Auditor: Codex
+- Stage: PR · Next: AC's merge decision after final publication · Active finalization: [handoffs/04-finalize.md](handoffs/04-finalize.md)
 - Reserved final-ID ranges: none (rule change only; no PD-T, PD-N, IDEA or LIT entry).
-- Open for AC: whether existing open drafts (#9, #11, #12) should record reservations under the new rule now or at their next step.
+- Open for AC: merge decision on PR #13; transition is next continuation before allocation/readiness, preserving all existing ranges.
 
 ## 2026-11-01 — Claude (claude-opus-5-5; requested effort high)
 
@@ -47,3 +47,5 @@
 - Rules read at published response head `ac4ff3fd32d73880048e38d096bbcfb58df8a724`; re-read the changed Fable allocation paragraph after main integration. Requested model/effort: gpt-6-astra medium; resolved runtime metadata is not independently exposed. Codex remains independent of Claude's rule development.
 - PR #6 was merged by AC at main `a7e123476cef761807c69e5d0af1a094c7ac3df0`. Merged that main into this already-published topic without rebasing, at `fcb334c7f0ef055695b8f2633692092865366ddb`, without conflicts. Main introduces only the already-accepted Fable row and its scope paragraph into the response's WORKFLOW text; the Claude response remains unchanged.
 - Novelty gate not applicable: protocol audit and administrative integration only. No subagents or scientific reruns. No range is needed or reserved.
+- [Audit-02](audit-02.md): **ACCEPTED**, F1–F4 closed independently against Claude's response and the integrated candidate. No material rule/template edit by Codex. [PR preparation](pr-prep.md) records preservation, transition and rehearsal; this supersedes the older unmerged-#6 snapshot for current decisions without changing historical reports.
+- Actual checks: all PR #6/other-topic/registry/ledger/scientific files match main; response rules match exactly after removing only main's exact Fable addition; prior report and handoff bodies preserved; one active handoff; `git diff --check`; disposable main → #13 squash tree equality at `c544dfb` / `2e79950f1190a40d28d6575fca3553932f2f42bb`. An initial checker newline-normalization error was corrected and checks rerun, with no source change.
