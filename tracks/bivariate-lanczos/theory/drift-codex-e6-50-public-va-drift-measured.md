@@ -1,7 +1,9 @@
-# PD-T?drift-codex-50 — Actual public polyrat V+A span and fitting measurements
+# PD-T146 — Actual public polyrat V+A span and fitting measurements
+
+Provisional alias: `PD-T?drift-codex-50`. Final ID assigned at PR preparation, 2026-11-01 (handoff 11, after Codex audit-04 acceptance).
 
 ID kind: PD-T (provisional).
-Aliases: E6-50 (former idea label, now IDEA?drift-codex-55 in `ideas-e6.md`); public V+A drift benchmark; actual upstream CGS2; upstream coordinate-order mapping; adversarial versus smooth polynomial fitting.
+Aliases: E6-50 (former idea label, now IDEA-263 in `ideas-e6.md`); public V+A drift benchmark; actual upstream CGS2; upstream coordinate-order mapping; adversarial versus smooth polynomial fitting.
 Split from: none; implementation confirmation and fit comparison extending the finite evidence of PD-N013 and PD-T051.
 Split into: none. No final global identifier allocated.
 

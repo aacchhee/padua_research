@@ -1,4 +1,6 @@
-# PD-T?drift-codex-10 — A computed polynomial recurrence gives a span-error certificate
+# PD-T142 — A computed polynomial recurrence gives a span-error certificate
+
+Provisional alias: `PD-T?drift-codex-10`. Final ID assigned at PR preparation, 2026-11-01 (handoff 11, after Codex audit-04 acceptance).
 
 ID kind: PD-T.
 Aliases: polynomial surrogate span certificate; normalized node inverse certificate; residual-to-span upper bound.
@@ -95,7 +97,7 @@ This converts the old node-row identity into an upper bound for distance to the 
 
 ## Open items
 
-An inexpensive rigorous Khat bound; useful sharp bounds for the projected inverse instead of the unprojected Khat; transfer of an exact-data score to a finite working precision with a usable radius. The first-order, exact-data selection criterion is treated separately in PD-T?drift-codex-11.
+An inexpensive rigorous Khat bound; useful sharp bounds for the projected inverse instead of the unprojected Khat; transfer of an exact-data score to a finite working precision with a usable radius. The first-order, exact-data selection criterion is treated separately in PD-T143.
 
 ## History
 

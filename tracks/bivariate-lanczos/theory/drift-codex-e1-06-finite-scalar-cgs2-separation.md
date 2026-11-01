@@ -1,19 +1,21 @@
-# PD-T?drift-codex-06 — Certified finite BJ/comparator separation of the formal scalar-CGS2 capacity on T24 and rotQ24 at degree twelve
+# PD-T141 — Certified finite BJ/comparator separation of the formal scalar-CGS2 capacity on T24 and rotQ24 at degree twelve
+
+Provisional alias: `PD-T?drift-codex-06`. Final ID assigned at PR preparation, 2026-11-01 (handoff 11, after Codex audit-04 acceptance).
 
 ID kind: PD-T.
 Aliases: finite formal scalar-CGS2 separation; full-graph comparator upper versus explicit BJ node-sign witness; K_inf,BJ > 800 K_inf,pivot on T24 and K_inf,BJ > 7 K_inf,alt on rotQ24; post-hoc scalar-capacity thresholds (computer-assisted finite proof).
-Split from: PD-T?drift-codex-05 — its exact finite bounds table (full-graph comparator uppers, explicit multinode BJ lower witnesses, squared ratio lower bounds about 657331.08 and 62.0855) and its post-hoc consequences K_inf,BJ > 800 K_inf,pivot on T24 and K_inf,BJ > 7 K_inf,alt on rotQ24, which that MEASURED file carried until response-02 (audit-02 A02-M2 / E1-R1). The measured exploratory experiment, its post-hoc history and the INCONCLUSIVE both-grid factor-ten test outcome stay in PD-T?drift-codex-05, which also keeps the factor-ten target.
+Split from: PD-T140 — its exact finite bounds table (full-graph comparator uppers, explicit multinode BJ lower witnesses, squared ratio lower bounds about 657331.08 and 62.0855) and its post-hoc consequences K_inf,BJ > 800 K_inf,pivot on T24 and K_inf,BJ > 7 K_inf,alt on rotQ24, which that MEASURED file carried until response-02 (audit-02 A02-M2 / E1-R1). The measured exploratory experiment, its post-hoc history and the INCONCLUSIVE both-grid factor-ten test outcome stay in PD-T140, which also keeps the factor-ten target.
 Split into: none.
 
 ## Statement
 
-**Model.** Exactly the formal scalar-CGS2 model of PD-T?drift-codex-03: the fixed-choice, left-to-right dense-matrix-vector classical Gram-Schmidt-twice implementation of its steps 1–5, with exact q_0, in which every scalar operation with exact value w is replaced by w(1+epsilon delta_o) with independent formal parameters |delta_o|<=1 (an **l-infinity** source condition). Let Phi(delta)=R_s V D_s^(-1/2) be the first-order normal-quotient map of record 03, so that theta_s(epsilon)=|epsilon| ||Phi(delta)||_2+O(epsilon^2) for each fixed delta, with **spectral** output norm, and let
+**Model.** Exactly the formal scalar-CGS2 model of PD-T138: the fixed-choice, left-to-right dense-matrix-vector classical Gram-Schmidt-twice implementation of its steps 1–5, with exact q_0, in which every scalar operation with exact value w is replaced by w(1+epsilon delta_o) with independent formal parameters |delta_o|<=1 (an **l-infinity** source condition). Let Phi(delta)=R_s V D_s^(-1/2) be the first-order normal-quotient map of record 03, so that theta_s(epsilon)=|epsilon| ||Phi(delta)||_2+O(epsilon^2) for each fixed delta, with **spectral** output norm, and let
 
     K_inf = sup_(max_o |delta_o| <= 1) ||Phi(delta)||_2
 
 for the stated node set, degree and parent rule. Write K_rule(set).
 
-**Data.** As in PD-T?drift-codex-04: T24={(i/12-1,j/12-1): i,j>=0, i+j<=24} (M=325) and rotQ24={((3x-4y)/5,(4x+3y)/5): x=i/12-1, y=j/12-1, 0<=i,j<=24} (M=625); Euclidean (uniform-weight) node inner product; graded monomials x^(t-j)y^j with j increasing; degree s=12, N_12=91 columns and all 90 source columns h=1,...,90. Rules: BJ (X iff j=0), alternating (X iff 2j<t) and exact pivot (larger d_k/||A_k b_parent||^2, ties X), choices frozen at the exact data. T24 pivot has no tie at any degree 2..12 (smallest relative margin 0.008426, column (8,5)); its frozen sequence is listed in `topics/padua-lanczos-drift-20261101/checks/audit-02/E1.md`. rotQ24 pivot is not used.
+**Data.** As in PD-T139: T24={(i/12-1,j/12-1): i,j>=0, i+j<=24} (M=325) and rotQ24={((3x-4y)/5,(4x+3y)/5): x=i/12-1, y=j/12-1, 0<=i,j<=24} (M=625); Euclidean (uniform-weight) node inner product; graded monomials x^(t-j)y^j with j increasing; degree s=12, N_12=91 columns and all 90 source columns h=1,...,90. Rules: BJ (X iff j=0), alternating (X iff 2j<t) and exact pivot (larger d_k/||A_k b_parent||^2, ties X), choices frozen at the exact data. T24 pivot has no tie at any degree 2..12 (smallest relative margin 0.008426, column (8,5)); its frozen sequence is listed in `topics/padua-lanczos-drift-20261101/checks/audit-02/E1.md`. rotQ24 pivot is not used.
 
 Let U_T, U_R, G_T and G_R be the exact rationals recorded in `evidence/e1-scalar-cgs2.json` (`full_graph_upper_runs[*].upper_squared.exact`, T24/pivot and rotQ24/alt) and `evidence/e1-multinode-certificates.json` (`witnesses[*].explicit_greedy_sign_lower_squared.exact`, T24 and rotQ24 BJ). Then:
 
@@ -54,11 +56,11 @@ with sign(0)=0. The recorded signs come from the deterministic greedy rule of re
 
 ## Assumptions
 
-All assumptions of PD-T?drift-codex-03: exact positive pivots, injectivity through degree 12, choices fixed under perturbation, no overflow, underflow or data perturbation, independent formal relative operation errors, exact q_0. Injectivity holds for both grids (they are injective through degree 24; see PD-T?drift-codex-04 Assumptions). The formal model also assigns a relative error to the second residual subtraction, whose right operand is exactly zero at the baseline; it is included in the upper bound (permissive). Actual IEEE arithmetic need not realize such errors.
+All assumptions of PD-T138: exact positive pivots, injectivity through degree 12, choices fixed under perturbation, no overflow, underflow or data perturbation, independent formal relative operation errors, exact q_0. Injectivity holds for both grids (they are injective through degree 24; see PD-T139 Assumptions). The formal model also assigns a relative error to the second residual subtraction, whose right operand is exactly zero at the baseline; it is included in the upper bound (permissive). Actual IEEE arithmetic need not realize such errors.
 
 ## Status by part
 
-Overall status: PROVED (finite exact computer-assisted statement in the formal model: written reduction to finite exact computations via PD-T?drift-codex-03, exact rational producer outputs in committed essential evidence, a committed exact checker with committed output, and independent executions referenced under Checks. Created by split from PD-T?drift-codex-05 in Claude response-02 for audit-02 A02-M2; Codex re-audit pending).
+Overall status: PROVED (finite exact computer-assisted statement in the formal model: written reduction to finite exact computations via PD-T138, exact rational producer outputs in committed essential evidence, a committed exact checker with committed output, and independent executions referenced under Checks. Created by split from PD-T140 in Claude response-02 for audit-02 A02-M2; Codex re-audit pending).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -67,15 +69,15 @@ Overall status: PROVED (finite exact computer-assisted statement in the formal m
 | (c) Squared ratio bounds and the >800 (T24) and >7 (rotQ24) consequences, T24 factor ten | PROVED | Exact Fraction comparisons in the committed checker; independent exact/Arb decisions agree |
 | (d) G_R/U_R < 100 (certificate limitation) | PROVED (minor routine exact fact about the endpoints; it is not a statement about K) | Committed checker; the audit-02 rotQ24 ratio enclosure alone also lies in (49, 100) |
 
-Candidate / claim disposition: retained finite result. It contains no target statement. The both-grid factor-ten target, its INCONCLUSIVE test outcome and the measured experiment are in PD-T?drift-codex-05.
+Candidate / claim disposition: retained finite result. It contains no target statement. The both-grid factor-ten target, its INCONCLUSIVE test outcome and the measured experiment are in PD-T140.
 
 ## Depends on
 
-PD-T?drift-codex-03 (PROVED, analytic): the first-order normal-quotient map of the declared scalar graph, K_inf<=U_inf, and the exact attained target-column gain of any admissible node-sign pattern. PD-T?drift-codex-01: exact frozen recurrence, responses g, projector R_s and the graph-angle argument. The grids and injectivity are those of PD-T?drift-codex-04, whose aggregate-model constants are **not** used. No dependence on the measured interpretation in PD-T?drift-codex-05.
+PD-T138 (PROVED, analytic): the first-order normal-quotient map of the declared scalar graph, K_inf<=U_inf, and the exact attained target-column gain of any admissible node-sign pattern. PD-T136: exact frozen recurrence, responses g, projector R_s and the graph-angle argument. The grids and injectivity are those of PD-T139, whose aggregate-model constants are **not** used. No dependence on the measured interpretation in PD-T140.
 
 ## Checks
 
-**Producers** (exact rationals, CPython + python-flint fmpq), unchanged since the scientific snapshot b09e1db and pinned in the evidence: `tracks/bivariate-lanczos/code/drift/e1_exact.py` (`19ce7b77…`, exact basis, recurrence, frozen choices), `e1_cgs2.py` (`426630eb…`, rho and U_inf^2), `e1_cgs2_witness.py` (`06dff7f4…`, one-node witnesses, used only to select t), `e1_cgs2_multinode.py` (`32b9e827…`, S_t, greedy signs, G and E), `e1_sign_check.py` (`0a3717f7…`, final norm by explicit normal projection, a separate formula), `e1_reproduce.py` (`4381f336…`, regeneration wrapper). The `e1_cgs2.py` commands are recorded in `e1-scalar-cgs2.json`, `full_graph_upper_runs[*].command`, and in PD-T?drift-codex-05, Regeneration path.
+**Producers** (exact rationals, CPython + python-flint fmpq), unchanged since the scientific snapshot b09e1db and pinned in the evidence: `tracks/bivariate-lanczos/code/drift/e1_exact.py` (`19ce7b77…`, exact basis, recurrence, frozen choices), `e1_cgs2.py` (`426630eb…`, rho and U_inf^2), `e1_cgs2_witness.py` (`06dff7f4…`, one-node witnesses, used only to select t), `e1_cgs2_multinode.py` (`32b9e827…`, S_t, greedy signs, G and E), `e1_sign_check.py` (`0a3717f7…`, final norm by explicit normal projection, a separate formula), `e1_reproduce.py` (`4381f336…`, regeneration wrapper). The `e1_cgs2.py` commands are recorded in `e1-scalar-cgs2.json`, `full_graph_upper_runs[*].command`, and in PD-T140, Regeneration path.
 
 **Essential committed evidence** (`topics/padua-lanczos-drift-20261101/evidence/`): `e1-scalar-cgs2.json` (444008 bytes, SHA-256 `e215556a01f9e169163b228dfe1b984d28e0cebd7f78e0d858f9a61a0de878c8`; exact U_T, U_R), `e1-multinode-certificates.json` (55328 bytes, `fae9c8743c78230ef0aa82c185d1efe0eee37be066982a37d39d920af95719f0`; exact G, E, node signs, targets, exact ratios), `e1-sign-check-triangle.json`, `e1-sign-check-rotated.json` (explicit projection PASS), `e1-posthoc-scalar-ratios.json` (post-hoc decision booleans), and the new checker output `response-02-e1-scalar-finite.json`.
 
@@ -99,11 +101,11 @@ Result: all 65 checks PASS (31 T24, 34 rotQ24), plus the regeneration comparison
 
 ## Sources
 
-Only PD-T?drift-codex-03's explicitly restated standard formal relative-error model. Context predecessors, not dependencies: PD-T?drift-codex-04 (same grids, aggregate Hilbert source model), PD-T041 (raw recurrence-entry growth), PD-T042/043 (coefficient-channel Gram outputs). No literature or historical novelty claim.
+Only PD-T138's explicitly restated standard formal relative-error model. Context predecessors, not dependencies: PD-T139 (same grids, aggregate Hilbert source model), PD-T041 (raw recurrence-entry growth), PD-T042/043 (coefficient-channel Gram outputs). No literature or historical novelty claim.
 
 ## Proof or evidence
 
-*Upper (a).* By PD-T?drift-codex-03, f_h(i)=sum_o m_hio delta_hio, so |f_h(i)|<=rho_hi whenever max|delta|<=1. Each entry of V_k=sum_(h<=k) diag(g_kh)f_h is bounded by sum_h|g_kh(z_i)|rho_hi. Projection by R_s does not increase the Frobenius norm, and the spectral norm is at most the Frobenius norm. Hence ||Phi(delta)||_2^2 <= U_inf^2 for every admissible delta, and K_inf^2 <= U_inf^2. For T24/pivot and rotQ24/alternating at degree 12, U_inf^2 is the exact rational U_T or U_R, computed by `e1_cgs2.py` from the exact basis, recurrence coefficients and responses.
+*Upper (a).* By PD-T138, f_h(i)=sum_o m_hio delta_hio, so |f_h(i)|<=rho_hi whenever max|delta|<=1. Each entry of V_k=sum_(h<=k) diag(g_kh)f_h is bounded by sum_h|g_kh(z_i)|rho_hi. Projection by R_s does not increase the Frobenius norm, and the spectral norm is at most the Frobenius norm. Hence ||Phi(delta)||_2^2 <= U_inf^2 for every admissible delta, and K_inf^2 <= U_inf^2. For T24/pivot and rotQ24/alternating at degree 12, U_inf^2 is the exact rational U_T or U_R, computed by `e1_cgs2.py` from the exact basis, recurrence coefficients and responses.
 
 *Lower (b).* Fix t and any s in {+1,-1}^M. Put delta*_hio=s_i sign(g_th(z_i)m_hio) for h<=t and every local operation o, and delta*=0 otherwise. This is admissible. Since m sign(g m)=sign(g)|m|, f_h(i)=s_i sign(g_th(z_i))rho_hi, and therefore g_th(z_i)f_h(i)=s_i|g_th(z_i)|rho_hi, also when g_th(z_i)=0. Summing over h<=t gives V_t=v with v_i=s_iS_ti. Column t of Phi(delta*) is R_s v/sqrt(d_t). Because the b_l are exactly orthogonal, R_s=I-sum_l b_l b_l^T/d_l, so ||R_s v||^2=||v||^2-sum_l c_l^2/d_l with c_l=b_l^T v and ||v||^2=sum_i S_ti^2. Thus the column has squared norm G_t^2. The spectral norm of a matrix is at least the norm of any column, so K_inf^2 >= G_t^2. This uses only s in {+1,-1}^M, not the greedy property. `e1_cgs2_multinode.py` computes S_t, s, c_l and G_t^2 exactly; `e1_sign_check.py` recomputes the final squared norm by an explicit normal projection of v and checks equality, and checks G>=E.
 
@@ -120,13 +122,13 @@ The quantities are formal **capacities**: bounds on the supremum of the first-or
 - no other node set, degree, rule, operation order or BLAS implementation;
 - no all-degree, asymptotic or explicit-family rate (E2 remains OPEN).
 
-Its source domain (l-infinity over scalar operations) differs from PD-T?drift-codex-04's aggregate Hilbert source norm; the two sets of constants are not interchangeable.
+Its source domain (l-infinity over scalar operations) differs from PD-T139's aggregate Hilbert source norm; the two sets of constants are not interchangeable.
 
 ## Open items
 
-The factor-ten comparison on rotQ24 in this model (the OPEN rotQ24 conjunct of PD-T?drift-codex-05's target); tighter lower certificates (other targets or sign patterns) or upper certificates; actual-rounding realizability; explicit-family all-degree rates (E2, OPEN).
+The factor-ten comparison on rotQ24 in this model (the OPEN rotQ24 conjunct of PD-T140's target); tighter lower certificates (other targets or sign patterns) or upper certificates; actual-rounding realizability; explicit-family all-degree rates (E2, OPEN).
 
 ## History
 
-- 2026-11-01 (Claude response-02, Opus 5.5 xhigh): created by splitting from PD-T?drift-codex-05 for audit-02 A02-M2 / E1-R1 (WORKFLOW split-by-default rule: substantive finite PROVED claims get their own file and PROVED status). The endpoints, model, comparators, targets, signs, thresholds and essential evidence are unchanged. New in this file are the written reduction, the integer-threshold chains, the exact checker `e1_scalar_finite_check.py` with output `response-02-e1-scalar-finite.json`, and a developer regeneration, step 4 under Checks. Wording moved from record 05: «These bounds certify a factor greater than 10 on T24, while the factor-ten comparison on **both** sets remains **INCONCLUSIVE**. …» and «As an explicitly **post-hoc exploratory consequence**, exact comparisons show K_inf,BJ >800 K_inf,pivot on T24 and K_inf,BJ >7 K_inf,alt on rotQ24. …». The post-hoc provenance is preserved above.
+- 2026-11-01 (Claude response-02, Opus 5.5 xhigh): created by splitting from PD-T140 for audit-02 A02-M2 / E1-R1 (WORKFLOW split-by-default rule: substantive finite PROVED claims get their own file and PROVED status). The endpoints, model, comparators, targets, signs, thresholds and essential evidence are unchanged. New in this file are the written reduction, the integer-threshold chains, the exact checker `e1_scalar_finite_check.py` with output `response-02-e1-scalar-finite.json`, and a developer regeneration, step 4 under Checks. Wording moved from record 05: «These bounds certify a factor greater than 10 on T24, while the factor-ten comparison on **both** sets remains **INCONCLUSIVE**. …» and «As an explicitly **post-hoc exploratory consequence**, exact comparisons show K_inf,BJ >800 K_inf,pivot on T24 and K_inf,BJ >7 K_inf,alt on rotQ24. …». The post-hoc provenance is preserved above.
 - 2026-11-01 (Claude response-03, Opus 5.5 high): A03-L1. The checker's `--regenerated` mode now fails when any required output is absent, with explicit `missing_required` and exit status 1. The four-case demonstration and the fresh 2026-11-01 regeneration (18:40–18:45 UTC) are in `response-03-e1-regeneration-check.json`. The theorem, reduction, evidence pins and response-02 receipt are unchanged. The response-02 receipt was produced by the earlier checker, whose `--regenerated` branch tolerated missing files; its recorded file entries show all four outputs present at that time.

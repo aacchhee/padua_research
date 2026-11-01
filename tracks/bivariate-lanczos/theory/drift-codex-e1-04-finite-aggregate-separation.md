@@ -1,4 +1,6 @@
-# PD-T?drift-codex-04 — Certified finite aggregate span-sensitivity separation on a triangle and rational rotated square
+# PD-T139 — Certified finite aggregate span-sensitivity separation on a triangle and rational rotated square
+
+Provisional alias: `PD-T?drift-codex-04`. Final ID assigned at PR preparation, 2026-11-01 (handoff 11, after Codex audit-04 acceptance).
 
 ID kind: PD-T.
 Aliases: E1 finite comparison; rational quotient certificate; BJ versus pivot/alternating at degree twelve.
@@ -7,7 +9,7 @@ Split into: none.
 
 ## Statement
 
-Use the **all-source aggregate residual norm** and spectral-output condition kappa_12 from PD-T?drift-codex-01/02. Uniform weights and graded monomials x^(t-j)y^j, j increasing, are fixed. Let
+Use the **all-source aggregate residual norm** and spectral-output condition kappa_12 from PD-T136/02. Uniform weights and graded monomials x^(t-j)y^j, j increasing, are fixed. Let
 
     T24={(i/12-1,j/12-1):i,j>=0,i+j<=24},
     rotQ24={((3x-4y)/5,(4x+3y)/5):x=i/12-1,y=j/12-1,0<=i,j<=24}.
@@ -30,7 +32,7 @@ In particular BJ exceeds the better of alternating and pivot by a factor greater
 
 ## Definitions
 
-Use Knode as a lower bound, KHS and Urow as upper bounds, with U=min(KHS,Urow), exactly as in PD-T?drift-codex-02. The final-stage raw endpoints (rounded here only for readability) are:
+Use Knode as a lower bound, KHS and Urow as upper bounds, with U=min(KHS,Urow), exactly as in PD-T137. The final-stage raw endpoints (rounded here only for readability) are:
 
 | Set/rule | Knode squared | U squared |
 |---|---:|---:|
@@ -43,7 +45,7 @@ The mathematical decisions use rational strings in the essential evidence, not t
 
 ## Assumptions
 
-Exactly the injection model and source scaling of PD-T?drift-codex-01/02; rational nodes above; fixed choices. These grids are injective for degree 12. For T24, the principal triangular lattice is injective through degree 24 (iterated row-factor argument); for Q24, a polynomial of degree at most 24 vanishing on all 25x25 grid nodes vanishes identically by univariate root counting in each coordinate; an invertible linear substitution preserves that property.
+Exactly the injection model and source scaling of PD-T136/02; rational nodes above; fixed choices. These grids are injective for degree 12. For T24, the principal triangular lattice is injective through degree 24 (iterated row-factor argument); for Q24, a polynomial of degree at most 24 vanishing on all 25x25 grid nodes vanishes identically by univariate root counting in each coordinate; an invertible linear substitution preserves that property.
 
 ## Status by part
 
@@ -60,7 +62,7 @@ Candidate / claim disposition: retained finite property certificate. The **origi
 
 ## Depends on
 
-PD-T?drift-codex-01 (normal derivative reduction) and -02 (rational bounds). No dependence on a measured asymptotic fit, an implicit-section completion, or a claimed equivalence with upstream V+A code.
+PD-T136 (normal derivative reduction) and -02 (rational bounds). No dependence on a measured asymptotic fit, an implicit-section completion, or a claimed equivalence with upstream V+A code.
 
 ## Checks
 
@@ -80,13 +82,13 @@ PD-T041 is the existing rational frozen-propagator predecessor; its raw-entry ce
 
 ## Proof or evidence
 
-The proved finite reduction is explicit: exact all-prior projection constructs rational b,d,alpha; exact impulse recursion constructs g; rational projector diagonals are 1-sum_k b_k(i)^2/d_k; PD-T?drift-codex-02 proves Knode^2<=kappa^2<=min(KHS^2,Urow^2). Exact comparisons of those bounds with the integer thresholds establish the first two inequalities for each set. For the ratio, 200000000000000 > 1000^2*170000000, and 88000000000 > 11^2*642000000. Strict inequalities therefore follow without relying on decimal logs or square roots. No uniform remainder is used because this is a derivative condition, not finite-epsilon drift.
+The proved finite reduction is explicit: exact all-prior projection constructs rational b,d,alpha; exact impulse recursion constructs g; rational projector diagonals are 1-sum_k b_k(i)^2/d_k; PD-T137 proves Knode^2<=kappa^2<=min(KHS^2,Urow^2). Exact comparisons of those bounds with the integer thresholds establish the first two inequalities for each set. For the ratio, 200000000000000 > 1000^2*170000000, and 88000000000 > 11^2*642000000. Strict inequalities therefore follow without relying on decimal logs or square roots. No uniform remainder is used because this is a derivative condition, not finite-epsilon drift.
 
 The producer constructs the exact orthogonal basis by full projection and checks positivity/nonzero pivots. The independent execution and own low-degree Fraction reconstruction discharge the stated checker obligations within this finite scope; they do not remove trust in CPython/python-flint or replace the final external Claude audit.
 
 ## Scope
 
-Only the specified rational grids, fixed rules and degree 12. The 88-run sweep and degree-two screen are broader descriptive evidence; the theorem above uses only four decisive full-source cases. The finite comparison supports E2 development, which root explicitly authorized, but proves no explicit-family all-degree rate. The scalar operation subset/full-model maps in PD-T?drift-codex-03 have different source domains and cannot inherit these aggregate numerical constants.
+Only the specified rational grids, fixed rules and degree 12. The 88-run sweep and degree-two screen are broader descriptive evidence; the theorem above uses only four decisive full-source cases. The finite comparison supports E2 development, which root explicitly authorized, but proves no explicit-family all-degree rate. The scalar operation subset/full-model maps in PD-T138 have different source domains and cannot inherit these aggregate numerical constants.
 
 ## Open items
 

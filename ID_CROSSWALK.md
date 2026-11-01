@@ -984,10 +984,47 @@ MZ inputs. This crosswalk supplies the reciprocal administrative relationship
 without changing that accepted record, its protected-object manifest, its
 statement, or its status; supporting results are not proved target parts.
 
-## Lanczos drift reservation (no final assignment)
+## Lanczos drift reservation and PR15 final registration
 
-The `codex/padua-lanczos-drift-20261101` draft permanently reserves PD-T136–155,
-PD-N062–071, IDEA-246–285 and LIT-445–459 in the
-[shared batch ledger](topics/padua-batch-20261031/ALLOCATIONS.md).
-All development records still use provisional IDs; no mapping is assigned here.
-Reservation first published in `6920ba632843597c37e1493d077c1df2e89f54cb`; kept unchanged through the PR14-first merge of main `e0d9e3d`.
+Reservation PD-T136–155, PD-N062–071, IDEA-246–285, LIT-445–459, first published `6920ba632843597c37e1493d077c1df2e89f54cb` in the [shared batch ledger](topics/padua-batch-20261031/ALLOCATIONS.md), kept unchanged through the PR14-first merge of main `e0d9e3d`. Final map: [final-id-map.json](topics/padua-lanczos-drift-20261101/preparation/final-id-map.json). Assigned at PR preparation, 2026-11-01, after Codex audit-04 acceptance. No accepted ID is renumbered.
+
+| Provisional ID | Final ID | Origin | Durable record | Audit / provenance |
+|---|---|---|---|---|
+| IDEA?drift-codex-01 | IDEA-246 | codex/padua-lanczos-drift-20261101 | [record](topics/padua-lanczos-drift-20261101/ideas-e1.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| IDEA?drift-codex-02 | IDEA-247 | codex/padua-lanczos-drift-20261101 | [record](topics/padua-lanczos-drift-20261101/ideas-e1.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| IDEA?drift-codex-03 | IDEA-248 | codex/padua-lanczos-drift-20261101 | [record](topics/padua-lanczos-drift-20261101/ideas-e1.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| IDEA?drift-codex-04 | IDEA-249 | codex/padua-lanczos-drift-20261101 | [record](topics/padua-lanczos-drift-20261101/ideas-e1.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| IDEA?drift-codex-05 | IDEA-250 | codex/padua-lanczos-drift-20261101 | [record](topics/padua-lanczos-drift-20261101/ideas-e1.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| IDEA?drift-codex-10 | IDEA-251 | codex/padua-lanczos-drift-20261101 | [record](topics/padua-lanczos-drift-20261101/ideas-e3-e4.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| IDEA?drift-codex-11 | IDEA-252 | codex/padua-lanczos-drift-20261101 | [record](topics/padua-lanczos-drift-20261101/ideas-e3-e4.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| IDEA?drift-codex-14 | IDEA-253 | codex/padua-lanczos-drift-20261101 | [record](topics/padua-lanczos-drift-20261101/ideas-e3-e4.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| IDEA?drift-codex-15 | IDEA-254 | codex/padua-lanczos-drift-20261101 | [record](topics/padua-lanczos-drift-20261101/ideas-e3-e4.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| IDEA?drift-codex-16 | IDEA-255 | codex/padua-lanczos-drift-20261101 | [record](topics/padua-lanczos-drift-20261101/ideas-e3-e4.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| IDEA?drift-claude-17 | IDEA-256 | codex/padua-lanczos-drift-20261101 | [record](topics/padua-lanczos-drift-20261101/ideas-e3-e4.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| IDEA?drift-codex-30 | IDEA-257 | codex/padua-lanczos-drift-20261101 | [record](topics/padua-lanczos-drift-20261101/ideas-e5.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| IDEA?drift-codex-31 | IDEA-258 | codex/padua-lanczos-drift-20261101 | [record](topics/padua-lanczos-drift-20261101/ideas-e5.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| IDEA?drift-codex-32 | IDEA-259 | codex/padua-lanczos-drift-20261101 | [record](topics/padua-lanczos-drift-20261101/ideas-e5.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| IDEA?drift-codex-33 | IDEA-260 | codex/padua-lanczos-drift-20261101 | [record](topics/padua-lanczos-drift-20261101/ideas-e5.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| IDEA?drift-codex-34 | IDEA-261 | codex/padua-lanczos-drift-20261101 | [record](topics/padua-lanczos-drift-20261101/ideas-e5.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| IDEA?drift-codex-35 | IDEA-262 | codex/padua-lanczos-drift-20261101 | [record](topics/padua-lanczos-drift-20261101/ideas-e5.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| IDEA?drift-codex-55 | IDEA-263 | codex/padua-lanczos-drift-20261101 | [record](topics/padua-lanczos-drift-20261101/ideas-e6.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| IDEA?drift-codex-56 | IDEA-264 | codex/padua-lanczos-drift-20261101 | [record](topics/padua-lanczos-drift-20261101/ideas-e6.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| IDEA?drift-codex-57 | IDEA-265 | codex/padua-lanczos-drift-20261101 | [record](topics/padua-lanczos-drift-20261101/ideas-e6.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| IDEA?drift-codex-58 | IDEA-266 | codex/padua-lanczos-drift-20261101 | [record](topics/padua-lanczos-drift-20261101/ideas-e6.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| IDEA?drift-codex-59 | IDEA-267 | codex/padua-lanczos-drift-20261101 | [record](topics/padua-lanczos-drift-20261101/ideas-e6.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| PD-N?drift-codex-15 | PD-N062 | codex/padua-lanczos-drift-20261101 | [record](tracks/bivariate-lanczos/theory/drift-codex-e4-15-projection-only-closure-obstruction.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| PD-N?drift-codex-32 | PD-N063 | codex/padua-lanczos-drift-20261101 | [record](tracks/bivariate-lanczos/theory/drift-codex-e5-32-failed-negative-witness-paths.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| PD-T?drift-codex-01 | PD-T136 | codex/padua-lanczos-drift-20261101 | [record](tracks/bivariate-lanczos/theory/drift-codex-e1-01-span-derivative.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| PD-T?drift-codex-02 | PD-T137 | codex/padua-lanczos-drift-20261101 | [record](tracks/bivariate-lanczos/theory/drift-codex-e1-02-rational-span-bounds.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| PD-T?drift-codex-03 | PD-T138 | codex/padua-lanczos-drift-20261101 | [record](tracks/bivariate-lanczos/theory/drift-codex-e1-03-scalar-operation-bridge.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| PD-T?drift-codex-04 | PD-T139 | codex/padua-lanczos-drift-20261101 | [record](tracks/bivariate-lanczos/theory/drift-codex-e1-04-finite-aggregate-separation.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| PD-T?drift-codex-05 | PD-T140 | codex/padua-lanczos-drift-20261101 | [record](tracks/bivariate-lanczos/theory/drift-codex-e1-05-finite-scalar-cgs2-capacities.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| PD-T?drift-codex-06 | PD-T141 | codex/padua-lanczos-drift-20261101 | [record](tracks/bivariate-lanczos/theory/drift-codex-e1-06-finite-scalar-cgs2-separation.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| PD-T?drift-codex-10 | PD-T142 | codex/padua-lanczos-drift-20261101 | [record](tracks/bivariate-lanczos/theory/drift-codex-e3-10-polynomial-span-certificate.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| PD-T?drift-codex-11 | PD-T143 | codex/padua-lanczos-drift-20261101 | [record](tracks/bivariate-lanczos/theory/drift-codex-e3-11-selection-criterion.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| PD-T?drift-codex-30 | PD-T144 | codex/padua-lanczos-drift-20261101 | [record](tracks/bivariate-lanczos/theory/drift-codex-e5-30-padua-positivity-radius-upper-bound.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| PD-T?drift-codex-31 | PD-T145 | codex/padua-lanczos-drift-20261101 | [record](tracks/bivariate-lanczos/theory/drift-codex-e5-31-explicit-square-root-spread-family.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| PD-T?drift-codex-50 | PD-T146 | codex/padua-lanczos-drift-20261101 | [record](tracks/bivariate-lanczos/theory/drift-codex-e6-50-public-va-drift-measured.md) | Claude audit-01; Codex audits 02–04; development by Codex, responses by Claude |
+| PD-N?drift-codex-14 | none (IDEA-253) | codex/padua-lanczos-drift-20261101 | withdrawn; content in [IDEA-253](topics/padua-lanczos-drift-20261101/ideas-e3-e4.md) | Converted in response-01 (audit-01 E34-F3); tombstone removed at preparation; no PD-N allocated |
+
+Original-to-split relations: PD-T140 (formerly carrying the finite inequalities) → **PD-T141** (finite computer-assisted PROVED, formal scalar model); PD-T140 keeps the MEASURED experiment, the INCONCLUSIVE both-grid sufficient test and its separately labelled factor-ten target, PARTIAL (T24 conjunct PROVED in PD-T141, rotQ24 conjunct OPEN). **PD-T075(U1) → PD-T144** (ρ_n = O(n^-5) for the named certificate); PD-T075 becomes PARTIAL with (U2) OPEN. PD-N062 is the generalized fixed-degree closure lemma and exact instance of PD-T055's recorded heuristic; PD-T055 stays OPEN. PD-N063 records three scoped failed negative-witness mechanisms. Permanent unused gaps: PD-T147–155, PD-N064–071, IDEA-268–285, LIT-445–459.

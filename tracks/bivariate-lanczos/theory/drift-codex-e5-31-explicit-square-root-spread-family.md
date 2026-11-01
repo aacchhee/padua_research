@@ -1,4 +1,6 @@
-# PD-T?drift-codex-31 — An explicit square-case family with square-root support spread and residual constants
+# PD-T145 — An explicit square-case family with square-root support spread and residual constants
+
+Provisional alias: `PD-T?drift-codex-31`. Final ID assigned at PR preparation, 2026-11-01 (handoff 11, after Codex audit-04 acceptance).
 
 ID kind: PD-T.
 Aliases: E5 square sqrt(epsilon) case; four-atom split of a three-node measure; residual-aware construction.
@@ -36,7 +38,7 @@ Overall status: PROVED (explicit analytic construction and inequalities; indepen
 | Noncommuting consistent sections | PROVED | Explicit Gram/multiplication matrices below |
 | Lower spread under residual gamma*epsilon, gamma<1/3 | PROVED | Double-zero cubic and uniform local bound |
 
-IDEA?drift-codex-31: retained explicit reading-(E) instance of the known square-root mechanism. Closest predecessor PD-T061 (IDEA-157); PD-N021 (IDEA-161) is the related δ=O(ε) refutation. The deferred (G) realization is the separate candidate IDEA?drift-codex-35 (deferred, `topics/padua-lanczos-drift-20261101/ideas-e5.md`). The general finite-precision (G) target remains OPEN; no novelty claim.
+IDEA-258: retained explicit reading-(E) instance of the known square-root mechanism. Closest predecessor PD-T061 (IDEA-157); PD-N021 (IDEA-161) is the related δ=O(ε) refutation. The deferred (G) realization is the separate candidate IDEA-262 (deferred, `topics/padua-lanczos-drift-20261101/ideas-e5.md`). The general finite-precision (G) target remains OPEN; no novelty claim.
 
 ## Depends on
 
@@ -106,4 +108,4 @@ External Claude audit-01 completed (CONFIRMED). This instance supplies explicit 
 
 2026-11-01, Codex E5 developer, requested gpt-6.1-sol xhigh; rules/base `806cc7b4509fd93bae652f9545d32d95529f8281`. New explicit family and residual-aware proof, within assigned square sqrt(epsilon) alternative. No Git/shared-registry change.
 - 2026-11-01 (Claude response-01, Opus 5.5 high): audit-01 E5-F3. Checks state the developer checker's exact coverage, with what it does not check, and cite the independent checker and audit-01 for the rest. Audit status metadata updated. Original wording: «`python3 -I -B tracks/bivariate-lanczos/code/drift/e5_exact_checks.py` verifies the moments, Gram determinant, commutator entry, and the corner derivative identities of PD-T?drift-codex-30: PASS …»; «… external Claude audit pending).»; «External Claude audit remains pending.»; «Required external Claude mathematical audit.».
-- 2026-11-01 (Claude response-01, Opus 5.5 high): audit-01 E5-F7/P-F7. Named PD-T061/IDEA-157 as closest predecessor and PD-N021/IDEA-161 as related. The deferred (G) candidate is split off as IDEA?drift-codex-35. Mathematics unchanged. Original wording: «IDEA?drift-codex-31: retained concrete variant of the known square-root mechanism. The general finite-precision (G) target remains OPEN; no novelty claim.»; «Internal predecessors PD-T059/PD-T061 (square-root rate) and PD-T058 (residual conventions).».
+- 2026-11-01 (Claude response-01, Opus 5.5 high): audit-01 E5-F7/P-F7. Named PD-T061/IDEA-157 as closest predecessor and PD-N021/IDEA-161 as related. The deferred (G) candidate is split off as IDEA-262. Mathematics unchanged. Original wording: «IDEA?drift-codex-31: retained concrete variant of the known square-root mechanism. The general finite-precision (G) target remains OPEN; no novelty claim.»; «Internal predecessors PD-T059/PD-T061 (square-root rate) and PD-T058 (residual conventions).».

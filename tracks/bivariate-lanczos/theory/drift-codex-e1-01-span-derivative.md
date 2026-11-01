@@ -1,4 +1,6 @@
-# PD-T?drift-codex-01 — First-order span derivative is the normal quotient of the frozen recurrence
+# PD-T136 — First-order span derivative is the normal quotient of the frozen recurrence
+
+Provisional alias: `PD-T?drift-codex-01`. Final ID assigned at PR preparation, 2026-11-01 (handoff 11, after Codex audit-04 acceptance).
 
 ID kind: PD-T.
 Aliases: residual-to-span derivative; polynomial coefficient errors vanish in the normal quotient; rational orthogonal gauge.
@@ -30,7 +32,7 @@ Then, for s <= n, the largest principal-angle sine theta_s(epsilon)=||(I-P_s)P_s
 
     theta_s(epsilon)=|epsilon| ||T_s(f)||_2 + O(epsilon^2).
 
-The remainder is for fixed nodes, fixed choices and fixed f as epsilon tends to zero. This is a derivative identity, with no uniform remainder claim in n or f. Every alpha, b, d, P and g value is rational when the nodes are rational. D_s^(-1/2) is used only to state the output norm; it need not be constructed for the rational certificates in PD-T?drift-codex-02.
+The remainder is for fixed nodes, fixed choices and fixed f as epsilon tends to zero. This is a derivative identity, with no uniform remainder claim in n or f. Every alpha, b, d, P and g value is rational when the nodes are rational. D_s^(-1/2) is used only to state the output norm; it need not be constructed for the rational certificates in PD-T137.
 
 ## Definitions
 

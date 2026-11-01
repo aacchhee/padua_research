@@ -2,19 +2,19 @@
 
 This direction implements the requested independent implementation benchmark. It introduces no new mathematical mechanism or priority claim; the novelty gate for generating new mechanisms is therefore inapplicable. Literature/INDEX, the Hokanson/ZN/BNT records, L2-prior-art review, and PD-N013, PD-N015, PD-T051 were read. Source-verification upgrades here concern code selection/order and actual execution only.
 
-Response-01 (2026-11-01, Claude response to audit-01 E6-F5 and P-F7): the five entries were reformatted to `templates/IDEA.md`, relabelled with provisional IDs `IDEA?drift-codex-55` to `-59` (the old `E6-5x` labels are kept as aliases; numbers 55-59 were chosen so the idea labels cannot be confused with the record `PD-T?drift-codex-50`), and given disposition words. The old labels are mapped as follows. A grep of the repository found no use of the old labels outside this file, `directions/E6.md` line 3 (the record's own alias `E6-50`) and the record alias line.
+Response-01 (2026-11-01, Claude response to audit-01 E6-F5 and P-F7): the five entries were reformatted to `templates/IDEA.md`, relabelled with provisional IDs `IDEA-263` to `-59` (the old `E6-5x` labels are kept as aliases; numbers 55-59 were chosen so the idea labels cannot be confused with the record `PD-T146`), and given disposition words. The old labels are mapped as follows. A grep of the repository found no use of the old labels outside this file, `directions/E6.md` line 3 (the record's own alias `E6-50`) and the record alias line.
 
 | Old label | New provisional ID | Title |
 |---|---|---|
-| E6-50 | IDEA?drift-codex-55 | Upstream Hokanson benchmark (actual polyrat V+A) |
-| E6-51 | IDEA?drift-codex-56 | Default coordinate orientation of upstream polyrat |
-| E6-52 | IDEA?drift-codex-57 | Observed drift implies all fit problems fail |
-| E6-53 | IDEA?drift-codex-58 | BNT as a multivariate upstream comparator |
-| E6-54 | IDEA?drift-codex-59 | ZN actual implementation |
+| E6-50 | IDEA-263 | Upstream Hokanson benchmark (actual polyrat V+A) |
+| E6-51 | IDEA-264 | Default coordinate orientation of upstream polyrat |
+| E6-52 | IDEA-265 | Observed drift implies all fit problems fail |
+| E6-53 | IDEA-266 | BNT as a multivariate upstream comparator |
+| E6-54 | IDEA-267 | ZN actual implementation |
 
 Registry note: the closest-entry lists name IDEA-086 and IDEA-116 (`state/IDEAS.md` rows 646 and 676; their linked rows in `topics/bivariate-lanczos-20261031/baseline-candidates.md`, candidates 010 and 040, were read) in addition to the original PD-N013/PD-T051 context (P-F7). I read the registry rows and those two baseline rows, not the full literature records behind them. The "read in full" marks for PD-N013, PD-T051, PD-N015 and the L2-prior-art review are inherited from the original Codex wording ("were read"); the Claude response-01 developer did not reread those records.
 
-## IDEA?drift-codex-55 — Upstream Hokanson benchmark (actual polyrat V+A)
+## IDEA-263 — Upstream Hokanson benchmark (actual polyrat V+A)
 
 Aliases: E6-50 (old label); public V+A drift benchmark; actual `vandermonde_arnoldi_CGS`; upstream `[y,x]` as campaign dev.
 
@@ -31,10 +31,10 @@ Aliases: E6-50 (old label); public V+A drift benchmark; actual `vandermonde_arno
 - Actual test results and committed evidence: `topics/padua-lanczos-drift-20261101/evidence/e6-benchmarks.json`, `e6-frozen-grids12.json`, `e6-frozen-grids.json`, `e6-provenance.json`; audit-01 reruns were case-identical and an independent long-double reference reproduced the rotpi4 n24 and triangle n20 gaps (n16 grids not independently rerun). Response-01 off-sample evidence: `evidence/response-01-e6-offsample.json`.
 - Disposition and precise rejected scope, if any: equivalent algorithm, retained as independently sourced implementation confirmation (MEASURED bitwise equality in the executed environment). Nothing is rejected.
 - Disposition reason: equivalent. Upstream `[y,x]` is the campaign dev rule with the same within-degree order and two classical Gram-Schmidt passes; scope is the pinned source and the executed environment (MEASURED, finite).
-- Canonical theory / negative-result ID: PD-T?drift-codex-50 (MEASURED). No PD-N: equivalence is an IDEA disposition.
+- Canonical theory / negative-result ID: PD-T146 (MEASURED). No PD-N: equivalence is an IDEA disposition.
 - Topic / audit / history: audit-01 E6-F5, P-F7 (IDEA-086, IDEA-116 added); see History below.
 
-## IDEA?drift-codex-56 — Default coordinate orientation of upstream polyrat
+## IDEA-264 — Default coordinate orientation of upstream polyrat
 
 Aliases: E6-51 (old label); upstream `[x,y]`; reversed within-degree order mirror.
 
@@ -51,10 +51,10 @@ Aliases: E6-51 (old label); upstream `[x,y]`; reversed within-degree order mirro
 - Actual test results and committed evidence: `evidence/e6-benchmarks.json`; the auditor's independent run reproduced the upstream `[x,y]` gaps `0.0136183` and `0.0028935` (rotpi4, triangle).
 - Disposition and precise rejected scope, if any: retained distinct ordering variant, MEASURED on the tested sets. Nothing is rejected.
 - Disposition reason: retained (not one of refuted, failed, equivalent, abandoned or deferred); a measured ordering variant of PD-T051, scope the sets in `e6-benchmarks.json`.
-- Canonical theory / negative-result ID: PD-T?drift-codex-50 (MEASURED); no PD-N.
+- Canonical theory / negative-result ID: PD-T146 (MEASURED); no PD-N.
 - Topic / audit / history: audit-01 E6-F5.
 
-## IDEA?drift-codex-57 — Observed drift implies all fit problems fail
+## IDEA-265 — Observed drift implies all fit problems fail
 
 Aliases: E6-52 (old label); drift implies inaccurate least-squares fits; worst-polynomial versus smooth-target contrast.
 
@@ -71,10 +71,10 @@ Aliases: E6-52 (old label); drift implies inaccurate least-squares fits; worst-p
 - Actual test results and committed evidence: `evidence/e6-smooth.json` (midpoint errors at most `2.2e-15`); `evidence/response-01-e6-offsample.json` (uniform interior at most `2.6e-14`, boundary-inclusive at most `1.3e-13` for `exp(x+y)`, against worst-polynomial errors `1.5e-2` and `2.5e-2` on the uniform sample).
 - Disposition and precise rejected scope, if any: **REJECTED: refuted**, within the scope of the counterexample: the inference "observed drift in the tested rule makes every fit problem on these node sets inaccurate" is refuted by `exp(x+y)` (and the generic target) on rotpi4 and triangle (and rot0.3 for `exp(x+y)`). Scoped adversarial fit failures are retained as MEASURED in the record. No claim about all smooth functions or other node sets.
 - Disposition reason: refuted (finite counterexample; MEASURED).
-- Canonical theory / negative-result ID: PD-T?drift-codex-50 (MEASURED) holds the numbers; PD-N013 already excludes the inference. No new PD-N.
+- Canonical theory / negative-result ID: PD-T146 (MEASURED) holds the numbers; PD-N013 already excludes the inference. No new PD-N.
 - Topic / audit / history: audit-01 E6-F1, E6-F4, E6-F5.
 
-## IDEA?drift-codex-58 — BNT as a multivariate upstream comparator
+## IDEA-266 — BNT as a multivariate upstream comparator
 
 Aliases: E6-53 (old label); Brubeck-Nakatsukasa-Trefethen Vandermonde-with-Arnoldi example.
 
@@ -94,7 +94,7 @@ Aliases: E6-53 (old label); Brubeck-Nakatsukasa-Trefethen Vandermonde-with-Arnol
 - Canonical theory / negative-result ID: none.
 - Topic / audit / history: audit-01 E6-F5 (the original wording "Equivalent univariate background only" was replaced).
 
-## IDEA?drift-codex-59 — ZN actual implementation
+## IDEA-267 — ZN actual implementation
 
 Aliases: E6-54 (old label); Zhu-Nakatsukasa code; arXiv:2301.12241 implementation.
 
@@ -118,7 +118,7 @@ The finite benchmarks do not reject every one-relation method, every orthogonali
 
 ## History
 
-- 2026-11-01 (Claude response-01, Claude Sonnet 5.5): reformatted all five entries to the IDEA template with provisional IDs `IDEA?drift-codex-55` to `-59` (E6-F5) and added IDEA-086 and IDEA-116 as closest entries (P-F7); original wording of the table rows (dispositions): E6-50 «Equivalent algorithm, retained as independently sourced implementation confirmation; MEASURED bitwise equality in current environment. No novelty.»; E6-51 «Retained distinct ordering variant; substantial measured difference on rotated square. No claim that renaming the coordinates is a new mechanism.»; E6-52 «REJECTED broad inference: exp(x+y) stays near machine precision on rotated square/triangle despite the worst-polynomial loss. Scoped adversarial fit failures retained MEASURED.»; E6-53 «Equivalent univariate background only; no multivariate classification. Runtime unavailable, run pending.»; E6-54 «DEFERRED: author code not located/accessed in documented bounded search. Runs needed retained.»
+- 2026-11-01 (Claude response-01, Claude Sonnet 5.5): reformatted all five entries to the IDEA template with provisional IDs `IDEA-263` to `-59` (E6-F5) and added IDEA-086 and IDEA-116 as closest entries (P-F7); original wording of the table rows (dispositions): E6-50 «Equivalent algorithm, retained as independently sourced implementation confirmation; MEASURED bitwise equality in current environment. No novelty.»; E6-51 «Retained distinct ordering variant; substantial measured difference on rotated square. No claim that renaming the coordinates is a new mechanism.»; E6-52 «REJECTED broad inference: exp(x+y) stays near machine precision on rotated square/triangle despite the worst-polynomial loss. Scoped adversarial fit failures retained MEASURED.»; E6-53 «Equivalent univariate background only; no multivariate classification. Runtime unavailable, run pending.»; E6-54 «DEFERRED: author code not located/accessed in documented bounded search. Runs needed retained.»
 - 2026-11-01 (Claude response-01, Claude Sonnet 5.5): original table columns «Provisional candidate | Closest predecessor | Separation / cheapest test | Disposition» preserved in the entries above as Closest registry entries, Separation criterion, Cheapest decisive test and Disposition; original separation wording, E6-50: «If actual upstream `[y,x]` construction has a different parent/order or materially different span, campaign identification fails. Inspect source and call it directly.»; E6-52: «Compare a post-hoc worst polynomial with an independently fixed smooth target on the same nodes and code.»
-- 2026-11-01 (Claude response-02, Claude Sonnet 5.5): A02-L7 (E6-R3): IDEA?drift-codex-57 kill criterion reversed in direction (an accurately fitted target falsifies the inference; a target losing accuracy supports it). Evidence, REJECTED: refuted disposition and the undocumented-chronology and post-hoc qualifications unchanged; no rerun. Original wording: «Kill criterion written before testing: as in the original table, a smooth target losing accuracy comparable to the worst-polynomial loss. Chronology of the choice of `exp(x+y)` is not documented in LOG or provenance.»
-- 2026-11-01 (Claude response-02, Claude Sonnet 5.5): A02-L6 (E6-R2): IDEA?drift-codex-55 mechanism sentence corrected to the tested pin `numpy==2.3.5` with NumPy ≥ 2.4 excluded; original wording: «Requires NumPy below 2.5 (upstream `_update_rule`).»
+- 2026-11-01 (Claude response-02, Claude Sonnet 5.5): A02-L7 (E6-R3): IDEA-265 kill criterion reversed in direction (an accurately fitted target falsifies the inference; a target losing accuracy supports it). Evidence, REJECTED: refuted disposition and the undocumented-chronology and post-hoc qualifications unchanged; no rerun. Original wording: «Kill criterion written before testing: as in the original table, a smooth target losing accuracy comparable to the worst-polynomial loss. Chronology of the choice of `exp(x+y)` is not documented in LOG or provenance.»
+- 2026-11-01 (Claude response-02, Claude Sonnet 5.5): A02-L6 (E6-R2): IDEA-263 mechanism sentence corrected to the tested pin `numpy==2.3.5` with NumPy ≥ 2.4 excluded; original wording: «Requires NumPy below 2.5 (upstream `_update_rule`).»

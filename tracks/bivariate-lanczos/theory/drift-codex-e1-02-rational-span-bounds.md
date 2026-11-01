@@ -1,4 +1,6 @@
-# PD-T?drift-codex-02 — Rational lower and upper certificates for aggregate span sensitivity
+# PD-T137 — Rational lower and upper certificates for aggregate span sensitivity
+
+Provisional alias: `PD-T?drift-codex-02`. Final ID assigned at PR preparation, 2026-11-01 (handoff 11, after Codex audit-04 acceptance).
 
 ID kind: PD-T.
 Aliases: node-impulse lower bound; trace upper bound; independent-node upper bound; quotient gain certificate.
@@ -7,7 +9,7 @@ Split into: none.
 
 ## Statement
 
-Use PD-T?drift-codex-01, fix a stage s, and let J be a nonempty subset of source columns 1,...,N_s-1. Put sigma_h^2=||A_h b_p(h)||_2^2>0. Restrict f_h=0 for h outside J and equip the remaining injections with
+Use PD-T136, fix a stage s, and let J be a nonempty subset of source columns 1,...,N_s-1. Put sigma_h^2=||A_h b_p(h)||_2^2>0. Restrict f_h=0 for h outside J and equip the remaining injections with
 
     ||f||_src^2=sum_(h in J) ||f_h||_2^2/sigma_h^2.
 
@@ -35,7 +37,7 @@ L_s is the maximum gain of a single node/source impulse. H_s is the Hilbert–Sc
 
 ## Assumptions
 
-Exactly those of PD-T?drift-codex-01. All-source sensitivity uses J={1,...,N_s-1}. Degree-two sources J={h:deg h=2} define a restricted screen; their lower bounds also bound the full condition, but their upper bounds do not upper-bound the full condition.
+Exactly those of PD-T136. All-source sensitivity uses J={1,...,N_s-1}. Degree-two sources J={h:deg h=2} define a restricted screen; their lower bounds also bound the full condition, but their upper bounds do not upper-bound the full condition.
 
 ## Status by part
 
@@ -49,7 +51,7 @@ Candidate / claim disposition: retained. Tightness and finite separation are sep
 
 ## Depends on
 
-PD-T?drift-codex-01, with its precise aggregate-injection model and fixed choices.
+PD-T136, with its precise aggregate-injection model and fixed choices.
 
 ## Checks
 

@@ -1,4 +1,6 @@
-# PD-N?drift-codex-15 — In a fixed degree, no prior-vector subtraction rule removes the span drift or closure defect of a raw-product source
+# PD-N062 — In a fixed degree, no prior-vector subtraction rule removes the span drift or closure defect of a raw-product source
+
+Provisional alias: `PD-N?drift-codex-15`. Final ID assigned at PR preparation, 2026-11-01 (handoff 11, after Codex audit-04 acceptance).
 
 ID kind: PD-N.
 Aliases: fixed-degree projection-only closure obstruction; fixed-degree quotient identity; exact fixed-prefix instance of PD-T055's heuristic span identity; projection-only adverse-source example (T_3 instance); degree-two quotient obstruction. Superseded title and alias, kept for search only: “A missing J-product cannot be repaired by prior-vector subtractions in a fixed degree”; “unformed-product closure failure”. Their formed/unformed-J interpretation is withdrawn (Claude audit-01, E34-F1; see History).
@@ -74,7 +76,7 @@ This is a fixed-degree O(u) obstruction to exact or o(u) closure in R. It:
 
 ## Definitions
 
-θ and δ use exact spectral projector norms. δ_A(t)=||(I−Phat_(t+1))A Phat_t||_2 is PD-T053's defect, with Phat_t=P_t because the prefix is exact. “Admissible” is as in PD-T054 and PD-T?drift-codex-10: monomial(j)=a_j·monomial(p(j)). A_m is the operator in column m's relation. In BJ for t≥1, X forms only (t+1,0) and Y forms the others.
+θ and δ use exact spectral projector norms. δ_A(t)=||(I−Phat_(t+1))A Phat_t||_2 is PD-T053's defect, with Phat_t=P_t because the prefix is exact. “Admissible” is as in PD-T054 and PD-T142: monomial(j)=a_j·monomial(p(j)). A_m is the operator in column m's relation. In BJ for t≥1, X forms only (t+1,0) and Y forms the others.
 
 “Projection-only” means the class R. It includes every number of exact reorthogonalization passes, and it allows arbitrary coefficients in place of orthogonal projection coefficients. It excludes:
 
@@ -120,7 +122,7 @@ Parameter range: the negative statement covers:
 
 It does not cover:
 
-- rules that change the prefix or its gauge, revise stored vectors, use extra products, restart from or inject a reference basis, or repair parents (see IDEA?drift-claude-17);
+- rules that change the prefix or its gauge, revise stored vectors, use extra products, restart from or inject a reference basis, or repair parents (see IDEA-256);
 - several simultaneous sources;
 - propagation across several degrees;
 - deterministic IEEE executions.
@@ -128,11 +130,11 @@ It does not cover:
 ## Depends on
 
 - **PD-T055's recorded heuristic** ([bj-universal-reorthogonalization-obstruction-open.md](bj-universal-reorthogonalization-obstruction-open.md), Proof or evidence, “Heuristic (not a proof)”): span Q̂_(≤k)=span(Q̂_(<k), B_kq̂_(p(k))−f_k), so the step-k coefficients change the computed spans only through f_k. Identity (10) is the exact, fixed-prefix, single-degree instance of that heuristic. Because the prefix is fixed, the heuristic's parent-change term B_kv vanishes, and no first-order caveat remains. The span step of the proof below is this identity; its credit belongs to PD-T055.
-- Triangularity of admissible products modulo Π_t. This is the induction in the proof of PD-T?drift-codex-10, restated in (a) below.
+- Triangularity of admissible products modulo Π_t. This is the induction in the proof of PD-T142, restated in (a) below.
 - PD-T053, for the definition of δ_A.
 - Elementary linear algebra and finite rational sums.
 
-U(3) for T_3 is proved inline. It was previously cited from PD-N?drift-codex-14, which is withdrawn as a registry vehicle (IDEA?drift-codex-14). PD-T047's implicit-section error is a different quantity and is not inferred from (12).
+U(3) for T_3 is proved inline. It was previously cited from PD-N?drift-codex-14, which is withdrawn as a registry vehicle (IDEA-253). PD-T047's implicit-section error is a different quantity and is not inferred from (12).
 
 ## Checks
 
@@ -298,12 +300,12 @@ Closure and implicit-section accuracy must remain separate. A normal component o
 
 ## Open items
 
-- An amplification theorem across degrees with controlled χ and well-conditioned references (IDEA?drift-codex-16).
+- An amplification theorem across degrees with controlled χ and well-conditioned references (IDEA-255).
 - An adverse-source theorem that allows arbitrary changes of the noiseless prefix gauge.
 - Simultaneous sources in several products.
 - A verified per-operation generator for an exhibited source.
 
-Parent-repair, reference-basis and extra-product rules lie outside R. They are retained as the deferred candidate IDEA?drift-claude-17 in ideas-e3-e4.md, together with PD-T055's suggested extended-precision parent experiment. In this lemma's setting the prefix is exact, and the two parent repairs defined there leave every exact parent unchanged:
+Parent-repair, reference-basis and extra-product rules lie outside R. They are retained as the deferred candidate IDEA-256 in ideas-e3-e4.md, together with PD-T055's suggested extended-precision parent experiment. In this lemma's setting the prefix is exact, and the two parent repairs defined there leave every exact parent unchanged:
 
 - R17a reorthogonalizes the parent against the stored columns strictly preceding its graded index;
 - R17b projects it onto a reference basis of the exact span of the monomials up to and including its index.
@@ -318,9 +320,9 @@ So the products, the rule and the conclusions above are unchanged. Projecting th
 - 2026-11-01 (Claude response-01, Claude Opus 5.5 xhigh): E34-F1. The “never formed”/“unformed J direction” interpretation and the non-product emphasis are deleted. Original Scope wording: «The result isolates what “the product was never formed” can rigorously mean: once parents and the current degree's raw products are fixed, changing projection coefficients cannot change…» and «A single source in an unformed J direction then creates a J-defect regardless of those coefficients.» Original negative-scope wording: «Attempted mechanism: repair the unformed J-product by choosing additional prior-vector projection coefficients…»; «Parameter range: this explicit non-product measure, degree two, any ε≠0, and every rule satisfying 1–3.»
 - 2026-11-01 (Claude response-01, Claude Opus 5.5 xhigh): E34-F2. PD-T055's heuristic span identity is credited in Aliases, Depends on, Sources, Proof (b) and Scope. Original Depends on: «Elementary linear algebra and finite rational sums only. PD-T053 explains the general defect–drift context but is unnecessary for the direct angle calculation.» Original Sources entry: «PD-T055 (OPEN universal obstruction)».
 - 2026-11-01 (Claude response-01, Claude Opus 5.5 xhigh): E34-F3. U(3) for T_3 is proved inline; the dependence on PD-N?drift-codex-14, now withdrawn as a registry vehicle, is removed. Original wording: «Since U(3) holds by PD-N?drift-codex-14's row-factor proof, dim S_2=6<M=10.»
-- 2026-11-01 (Claude response-01, Claude Opus 5.5 xhigh): E34-F6. Checks now cite independent-math-01, audit-01 and the new exact checker; the SymPy calculation is marked as non-evidence. Original wording: «The exact expressions were developed using a temporary SymPy calculation of finite rational Gram matrices. … Its durable command/output/hash record is owned by the parent and pending integration; this report is not the required Claude audit.» The Open items now point to IDEA?drift-claude-17 (E34-F9). Original: «Parent repair or extra-product rules require another class and may evade this obstruction.»
+- 2026-11-01 (Claude response-01, Claude Opus 5.5 xhigh): E34-F6. Checks now cite independent-math-01, audit-01 and the new exact checker; the SymPy calculation is marked as non-evidence. Original wording: «The exact expressions were developed using a temporary SymPy calculation of finite rational Gram matrices. … Its durable command/output/hash record is owned by the parent and pending integration; this report is not the required Claude audit.» The Open items now point to IDEA-256 (E34-F9). Original: «Parent repair or extra-product rules require another class and may evade this obstruction.»
 - 2026-11-01 (Claude response-02, Claude Opus 5.5 xhigh): audit-02 A02-M1. The Negative statement's relative-source limit is corrected to (13): δ_A(t)/u=κ_A||v_m||/sqrt(b²+u²||v_m||²)→(κ_A/b)||v_m||, with (κ_(A_m)/b)||v_m||≥||v_m|| and equality iff κ_(A_m)=b. It holds with equality in the T_3 instance (v_21, κ_Y=b), but not for the source in v_20 (squared limit 88/15, not 22/5). The no-exact/o(u) conclusion, (a)–(d) and the T_3 instance are unchanged. Original wording: «With a relative size ε=u||v_m||, δ_(A_m)(t)/u→||v_m||>0 as u→0. So no o(u) closure guarantee holds in R for this source model.»
 - 2026-11-01 (Claude response-02, Claude Opus 5.5 xhigh): A02-M1. The proof of the Negative statement now derives (13) from (11)–(12) and states the lower bound only as a bound, with the v_20 values. Original wording: «δ_(A_m)(t)≥bθ_(t+1)=u||v_m||·b/sqrt(b²+u²||v_m||²), and the right side divided by u tends to ||v_m||. ∎»
 - 2026-11-01 (Claude response-02, Claude Opus 5.5 xhigh): A02-M1. Status paragraph and Negative-statement status row updated for audit-02 and the correction (status PROVED unchanged). Original wording: «The general lemma (a)–(d) was added in Claude response-01 and requires re-audit.»; «| Negative statement: no rule in R removes the drift or the closure defect; no o(u) closure guarantee | PROVED | Immediate from the lemma |».
 - 2026-11-01 (Claude response-02, Claude Opus 5.5 xhigh): A02-M1. Checks add the Codex audit-02 reconstruction and the new exact regression checker `e4_response02_check.py` with its evidence; Further exact instances add the relative-source-limit bullet. Additions only; original wording: none replaced.
-- 2026-11-01 (Claude response-02, Claude Opus 5.5 xhigh): audit-02 A02-L2. Open items: the parent repairs now defined in IDEA?drift-claude-17 (R17a, R17b) act as the identity on this lemma's exact parents, so they do not evade it. Product-level projection onto S_(t+1) restores the span when 1+α≠0 and is recorded as reference-basis injection. Original wording: «Parent-repair, reference-basis and extra-product rules lie outside R and may evade this obstruction.»
+- 2026-11-01 (Claude response-02, Claude Opus 5.5 xhigh): audit-02 A02-L2. Open items: the parent repairs now defined in IDEA-256 (R17a, R17b) act as the identity on this lemma's exact parents, so they do not evade it. Product-level projection onto S_(t+1) restores the span when 1+α≠0 and is recorded as reference-basis injection. Original wording: «Parent-repair, reference-basis and extra-product rules lie outside R and may evade this obstruction.»
