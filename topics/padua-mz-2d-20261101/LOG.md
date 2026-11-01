@@ -2,7 +2,7 @@
 
 - Branch: `codex/padua-mz-2d-20261101` · Base/rules read: `cf89b140530d5838bdb208a8c28f3e7aa676ace3`.
 - Role: Codex orchestrator. Root model/effort metadata is runtime-unexposed; delegated mathematics uses `gpt-6.1-sol xhigh`, code/mechanical work `gpt-6.1-sol medium`. No ultra allocation.
-- Stage: AUDIT. Required final auditor: Claude, Opus 5.5 xhigh; AUDIT PENDING.
+- Stage: WORK (documentation-only response). Claude Opus 5.5 xhigh audit-01 complete at `e847601`: mathematics ACCEPTED at stated scope; six P3 record findings, see [audit-01.md](audit-01.md).
 - Open handoff: [02-audit.md](handoffs/02-audit.md), Claude Opus 5.5 xhigh; candidate `e847601c6c1f1261d4862d63360fdfdb0df8a15b`.
 - Reserved final-ID ranges: PD-T106–135 (30), PD-N044–061 (18), IDEA-210–245 (36), LIT-427–444 (18), including permanent headroom. Fresh scan and provenance: [protocol/reservation-scan.json](protocol/reservation-scan.json). Batch ledger: [ALLOCATIONS.md](../padua-batch-20261031/ALLOCATIONS.md). Reservation only; no final IDs assigned yet.
 - Scientific outcome: D1 PASS; exact alias/defect structure, replayed finite spectra and eta>3/4 witness, corner formula, diamond reconstruction, corrected signed hyperinterpolation scope, tensor-control theorem. Existing PD-T028 stays OPEN. Floating computations are MEASURED. Full statuses: [report.md](report.md).
@@ -62,3 +62,22 @@ Durable new claim statuses:17 PROVED,2 MEASURED,3 OPEN; acceptance for all is Cl
 Current unresolved scientific steps are the mass-normalized mixed-block contraction, positive-node-relative signed coercivity, a new admissible endpoint witness/lower bound, and direct weighted-L1 operator control. Repeating the recorded failed uniform majorants is not a next step. Fulltext/version gaps and local delivery are listed in report.md with DOI/journal locators. The next numbered handoff requests the complete required Claude audit at the final candidate SHA.
 
 Disposable squash rehearsal: candidate `54d60706b840f570faf1a7466d418f7894515470` squashes cleanly onto pinned main with identical tree, on local disposable branch `codex/padua-mz-2d-rehearsal-20261101`. Independently trying each prospective follower shows PR12 applies cleanly; PR15 conflicts only in ID_CROSSWALK.md and the batch ledger. The receipt is [integration-rehearsal.json](protocol/integration-rehearsal.json). No live PR branch or main was merged or modified; the temporary worktree was removed. Shared-reservation text must be reconciled after the required audit and AC's eventual merge order, before any request to merge those drafts. This is not a scientific conflict or a readiness claim.
+
+## 2026-11-01 — Claude audit-01 (required audit) and response handoff
+
+Claude, Opus 5.5 xhigh, acting as independent auditor and as orchestrator for handoff 02. Rules were read at branch head `14de1dfd69c415c052a9d5593c7e2aa67ffa71ec`; they are byte-identical to main `806cc7b`. The audited candidate is `e847601c6c1f1261d4862d63360fdfdb0df8a15b`; `14de1df` differs from it only in the log and handoffs.
+
+**Verdict.** The mathematics of all 22 new records is ACCEPTED at its stated scope: 17 PROVED, 2 MEASURED, 3 OPEN. Every candidate disposition is accepted, no status is upgraded, and PD-T028 stays OPEN. Audit-01 raises six P3 record/registry findings (F1–F6), so the stage is set to **WORK** for a documentation-only response. Record: [audit-01.md](audit-01.md).
+
+**Reruns actually executed** (Python 3.13.18, NumPy 2.5.3, SciPy 1.18.1, python-flint 0.9.0, mpmath 1.3.0, in a disposable worktree at the candidate). Receipts are in [audit/claude-audit-01](audit/claude-audit-01/MANIFEST.md).
+- The exact producer was rerun for m10/20/30/40. Its results equal the stored receipt after removing `seconds`, transform hashes included.
+- The developer's checker functions were rerun into a new receipt: 245 moments, 371 Gram pairs, 1,221 regions, 6/6 controls.
+- An independent auditor certificate (Sylvester leading minors plus exact Rayleigh quotients) reproduces all eight brackets.
+- 60-digit nodal checks of the alias formula; an exact re-expansion of the stored m30 witness; corner weights for m2–14.
+- A float sweep for m2–40, tensor-CC, rhombus and filter regressions, and exact checks of the PD-N045/N051/T110 entries.
+- `final-validate.py` in the disposable copy: PASS.
+- Reservation recheck against PR12 `b2804ac` and PR15 `36c9379`: disjoint, and all 13 A2 pins unchanged.
+
+Next: [handoff 03](handoffs/03-response.md), Codex `response-01.md` (documentation-only) and readiness preparation. PR14 stays draft.
+
+- Handoff 02 → done in the audit-output commit; [handoff 03](handoffs/03-response.md) is open.
