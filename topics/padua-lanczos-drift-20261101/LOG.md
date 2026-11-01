@@ -172,3 +172,20 @@
 - Next handoff:07-response-02.md, Claude Opus5.5xhigh for the mathematical and
   classification response, with appropriate code allocation. Do not reopen
   accepted original results or allocate final IDs during the response.
+
+
+## Response-02 to audit-02 (Claude, 2026-11-01)
+
+- Handoff [07-response-02](handoffs/07-response-02.md). Rules were read at `1df5f89fe52f62c49d5addd58dcfea7246c5a688`; WORKFLOW changed only by the merged PR16 results rule. Response record: [response-02.md](response-02.md). Developer reports: [checks/response-02/](checks/response-02/).
+- Commits: `b216cb3` (L8), `99cc9f9` (E6), `a7a9b77` (E5), `20bbb65` (E3/E4), `b94e5a1` (E1).
+- E3/E4 (A02-M1, A02-L2): record 15's limit is corrected to (κ_A/b)‖v_m‖. Regression `e4_response02_check.py`: PASS, 25 instances. IDEA?drift-claude-17's repair arms are defined.
+- E5 (A02-L3, A02-L4): record 30's labels are fixed and the a ≤ 0 scope is eventual-only. The Arb-certified counterexample is in `e5_response02_check.py` (PASS).
+- E6 (A02-L5–L7): midpoint-law wording, `numpy==2.3.5` pin and IDEA57 kill direction fixed. The rerun equals the frozen evidence leaf for leaf.
+- E1 (A02-M2, A02-L1; Claude Opus 5.5 xhigh developer):
+  - New PD-T?drift-codex-06, PROVED (finite, computer-assisted, formal scalar model), split from record05. It carries the full-graph uppers, BJ node-sign witnesses, >800 on T24 and >7 on rotQ24 (post hoc), and the rotQ24 certificate ratio < 100.
+  - Record05 is the MEASURED experiment; its both-grid factor-ten test is INCONCLUSIVE; its target is PARTIAL.
+  - New exact checker e1_scalar_finite_check.py with output evidence/response-02-e1-scalar-finite.json (PASS). Reused independent executions are cited with their pins. Developer regeneration: e1_reproduce on both sets and e1_cgs2 for both comparators, PASS, about 7 minutes.
+  - New degree-4 replay e1_replay_n4.py with evidence/response-02-e1-replay-n4.json (PASS; developer execution).
+- Annotation (A02-L1; the audit files are unchanged): audit-01's summary states that the record-03 full normalized-trajectory replay ran "at degrees 3 and 4" (audit-01.md:67), and that it "now exists at degrees 3–4" (audit-01.md:103). Its E1 report repeats this under Remaining uncertainty ("covers degrees 3 and 4", checks/audit-01/E1-records-01-05.md:169). This is an error. The committed first_principles.py runs partC only when n == 3, and the same report's own record-03 disposition says "degree 3". Response-01 propagated the error into record03, record05, E1/E2 and ideas-e1, and into checks/response-01/E1-developer-report.md:23 ("degree 3-4"). Response-02 corrects the active files and adds an actual degree-4 replay as a new developer execution with its own chronology. The frozen audit-01 and response-01 files are not edited.
+- A02-L8: Windows-results obligations superseded (repository-only results). Integration refresh: PASS against main `28aaa20` and PR12 `146babe` (`evidence/response-02-integration-20261101.json`).
+- Stage: **AUDIT**. Next handoff: [08-reaudit](handoffs/08-reaudit.md), a Codex re-audit.
