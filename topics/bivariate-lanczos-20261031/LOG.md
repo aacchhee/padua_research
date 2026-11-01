@@ -206,6 +206,10 @@ Subagent effort is set from the agent definition and is not independently expose
 - Literature consolidation (audit-01 P2): 29 new records, 15 updated, 49 statements (Claude Sonnet 5.5 high, requested), commit before allocation.
 - Allocation (`pr-prep/allocate.py --apply`): PD-T029–080 (52), PD-N007–031 (25), IDEA-077–176 (100), LIT-066–292 (227); `Final ID:` line added to all 77 theory files (header only); literature headings and index rows show final IDs with provisional in parentheses; registry rows added to PROOF_STATUS.md, ID_CROSSWALK.md (incl. 11 split mappings from SPLITS.md), state/IDEAS.md; NEGATIVE_RESULTS.md and AUDIT_LOG.md filled; one charter paragraph in state/CURRENT.md; two briefs in PAPER_MAP.md; ledger block recorded. Scientific statements and statuses unchanged.
 
+- Rehearsal ([pr-prep/REHEARSAL.md](pr-prep/REHEARSAL.md)): squash of `1edf4b9` onto main `9739a0c`, 0 conflicts, tree identical to the branch, checker exit 0, main registry rows preserved except documented intended edits.
+- Local working track (new WORKFLOW rule): wrote `C:\Users\andreyac\Downloads\padua\results\bivariate-lanczos-20261031.md`; replaced this topic's two older sections of the shared `RESULTS.md` by one section merged from it (staged current bytes, merged, mtime-guarded write; other topics' sections untouched).
+- **Draft PR [#10](https://github.com/aacchhee/padua_research/pull/10)** opened against main (WORK/AUDIT/PR sections; AUDIT marks the focused integration review PENDING). Only AC merges.
+
 Consolidated list (exact commands in the cited records): L1 SUMMARY §6; L2 above; L3 SUMMARY §5; L5 R01 §7 and R03 §7 and response-recon-01; repro/REPRO.md §5. None executed by this session; all require AC's servers (syvert0/1/2) or more time.
 
 ## Open for AC
