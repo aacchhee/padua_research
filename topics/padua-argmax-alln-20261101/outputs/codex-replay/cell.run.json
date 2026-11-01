@@ -1,0 +1,31 @@
+{
+  "command": [
+    "python3",
+    "cell.py",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "12",
+    "15",
+    "20",
+    "30",
+    "40"
+  ],
+  "cwd": "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/code",
+  "started_utc": "2026-11-01T21:17:38.634607+00:00",
+  "finished_utc": "2026-11-01T21:17:43.816790+00:00",
+  "wall_seconds": 5.182203689000005,
+  "returncode": 0,
+  "environment_overrides": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "output": "cell.out",
+  "output_sha256": "a80346a05a0ca535500d73d1d2b07d5601ea2e7e672a8453eaf365ef5be7a528"
+}

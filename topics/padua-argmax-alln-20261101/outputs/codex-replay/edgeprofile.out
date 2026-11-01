@@ -1,0 +1,20 @@
+n=12 Lc=7.44938
+    x=+1 min_inner_gap=0.6387 at cell 7/13; gaps at 10/25/50%: 1.057 1.061 0.639; first 3 cells: 1.924 1.744 1.057
+    x=-1 min_inner_gap=0.6387 at cell 7/13; gaps at 10/25/50%: 1.057 1.061 0.639; first 3 cells: 1.924 1.744 1.057
+    y=+1 min_inner_gap=0.9540 at cell 6/12; gaps at 10/25/50%: 1.261 1.073 0.954; first 3 cells: 1.436 1.261 1.085
+    y=-1 min_inner_gap=0.9379 at cell 5/12; gaps at 10/25/50%: 1.252 1.002 0.938; first 3 cells: -0.000 1.252 1.226
+n=24 Lc=9.87251
+    x=+1 min_inner_gap=0.5832 at cell 13/25; gaps at 10/25/50%: 1.436 0.844 0.583; first 3 cells: 2.273 2.086 1.436
+    x=-1 min_inner_gap=0.5832 at cell 13/25; gaps at 10/25/50%: 1.436 0.844 0.583; first 3 cells: 2.273 2.086 1.436
+    y=+1 min_inner_gap=0.9734 at cell 11/24; gaps at 10/25/50%: 1.389 1.074 0.973; first 3 cells: 1.884 1.700 1.405
+    y=-1 min_inner_gap=0.9689 at cell 12/24; gaps at 10/25/50%: 1.288 1.123 0.969; first 3 cells: -0.000 1.612 1.602
+n=48 Lc=12.68878
+    x=+1 min_inner_gap=0.5665 at cell 25/49; gaps at 10/25/50%: 1.531 0.856 0.567; first 3 cells: 2.682 2.494 1.843
+    x=-1 min_inner_gap=0.5665 at cell 25/49; gaps at 10/25/50%: 1.531 0.856 0.567; first 3 cells: 2.682 2.494 1.843
+    y=+1 min_inner_gap=0.9856 at cell 24/48; gaps at 10/25/50%: 1.529 1.117 0.986; first 3 cells: 2.386 2.198 1.772
+    y=-1 min_inner_gap=0.9844 at cell 24/48; gaps at 10/25/50%: 1.449 1.146 0.984; first 3 cells: -0.000 1.985 1.977
+n=96 Lc=15.89851
+    x=+1 min_inner_gap=0.5571 at cell 49/97; gaps at 10/25/50%: 1.438 0.867 0.557; first 3 cells: 3.135 2.946 2.234
+    x=-1 min_inner_gap=0.5571 at cell 49/97; gaps at 10/25/50%: 1.438 0.867 0.557; first 3 cells: 3.135 2.946 2.234
+    y=+1 min_inner_gap=0.9925 at cell 47/96; gaps at 10/25/50%: 1.509 1.141 0.993; first 3 cells: 2.917 2.729 2.162
+    y=-1 min_inner_gap=0.9922 at cell 47/96; gaps at 10/25/50%: 1.556 1.156 0.992; first 3 cells: -0.000 2.361 2.351

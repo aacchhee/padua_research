@@ -1,0 +1,1187 @@
+{
+  "source_commit": "328be35e55143013047ec03a70e9906e82b95353",
+  "main": "2b52b432fe59c9a50aef9deebe5152c5d6874465",
+  "method": "GitHub connector fetch_file at pinned SHA; selected-file snapshot, not a full clone",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "git_blob_sha": "07cd8c8920fabccc16dce4a63fe853a2f3a26f3d",
+      "bytes": 3572
+    },
+    {
+      "path": "PROOF_STATUS.md",
+      "git_blob_sha": "d85bd4ae56e115bb30872f777e0ca12c72193f64",
+      "bytes": 145504
+    },
+    {
+      "path": "agents/WORKFLOW.md",
+      "git_blob_sha": "52ca0630b69a8759e2e418c669bc35855bc9ea66",
+      "bytes": 26615
+    },
+    {
+      "path": "agents/codex/CODEX.md",
+      "git_blob_sha": "16a4ecfea89acd5b1d9cd09c9213094bce144caf",
+      "bytes": 4969
+    },
+    {
+      "path": "literature/INDEX.md",
+      "git_blob_sha": "d4176c1e98a1088500782d8123516c48a9a3eeda",
+      "bytes": 269974
+    },
+    {
+      "path": "results/padua-argmax-alln-20261101.md",
+      "git_blob_sha": "47b292275b0eceb8bc0f78bd27e92abac0599d5c",
+      "bytes": 2681
+    },
+    {
+      "path": "state/IDEAS.md",
+      "git_blob_sha": "ac0c4d133d412f32060e982b870850759f4352a6",
+      "bytes": 189069
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/LOG.md",
+      "git_blob_sha": "cf4504086436aa508f1196e1c95a922164f5e453",
+      "bytes": 5002
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/cell.py",
+      "git_blob_sha": "954c4f097f510d27d84241c46a0462412255cdd1",
+      "bytes": 916
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/check.py",
+      "git_blob_sha": "68a5804dfe14a82885efda87075058d22048b1d5",
+      "bytes": 1107
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/edgeprofile.py",
+      "git_blob_sha": "0276103724e3af4fb99cb929dcf8097d571f4a9b",
+      "bytes": 1580
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/interior.py",
+      "git_blob_sha": "3165a96065b50f297ea88da44cd67dc4157bdf6a",
+      "bytes": 959
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/maj.py",
+      "git_blob_sha": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4",
+      "bytes": 3064
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/n2_edges.py",
+      "git_blob_sha": "0bae7d5f3cbb01daad6db3ce055e1e1a91b5b89d",
+      "bytes": 407
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/strips.py",
+      "git_blob_sha": "bcc31980c15ea6a67d6ea642eb43848613c8a888",
+      "bytes": 1663
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gate.md",
+      "git_blob_sha": "0ec50fbf3c6dda6c1215950af80120cdc164609b",
+      "bytes": 4113
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/handoffs/01-update-after-part2.md",
+      "git_blob_sha": "1568a259adc9d4781834333df019864dd9c3f0bc",
+      "bytes": 2696
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/handoffs/02-part3-work.md",
+      "git_blob_sha": "b371e38cc90aaf4c048cc709dfb18e8dd55cde6c",
+      "bytes": 7270
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/ideas.md",
+      "git_blob_sha": "e9bcfcf7af277abc05d4eac0ec984c57bfe0335b",
+      "bytes": 8551
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/cell.out",
+      "git_blob_sha": "955877c099876c4e7fdf1041dc2735a56d6cec1f",
+      "bytes": 1429
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/check.out",
+      "git_blob_sha": "367e7c0abdefc6874604e718c6ba5c163d0d85ad",
+      "bytes": 622
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/edgeprofile.out",
+      "git_blob_sha": "116a98c6bd50b4954d81666b59627f94496972b3",
+      "bytes": 1922
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/environment.txt",
+      "git_blob_sha": "4062e64c252145b0f287c223874247e788888918",
+      "bytes": 40
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/interior.out",
+      "git_blob_sha": "65039d751da63601a22b76fc5ac7a36e86734b62",
+      "bytes": 675
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/maj.out",
+      "git_blob_sha": "12bcbb418e20eb88121b0a899237ce331d7ddc4c",
+      "bytes": 1099
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/maj_n2.out",
+      "git_blob_sha": "3f51d4cf6b20cadf663d5c9a678e59efb535bf4b",
+      "bytes": 137
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/n2_edges.out",
+      "git_blob_sha": "de2c617828deb300a595dd5d61c269780268ab15",
+      "bytes": 216
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/strips.out",
+      "git_blob_sha": "98369149144b61d81f3078707f14252ae0f8c752",
+      "bytes": 693
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/plan.md",
+      "git_blob_sha": "46df147ea315cad678dfea5085ccec1b7cde8a5a",
+      "bytes": 17121
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/theory/argmax-alln-claude-01-measured-observations.md",
+      "git_blob_sha": "2bcfe44ca4d190752184a22cae177fea8b45fed4",
+      "bytes": 4003
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/theory/argmax-alln-claude-02-measured-edge-profile.md",
+      "git_blob_sha": "1906d35cdf178925a3590ee338af3adcb57ef820",
+      "bytes": 3674
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "git_blob_sha": "21a699dc6d4e12693ca5e811cdd741503f9a8782",
+      "bytes": 28514
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/LOG.md",
+      "git_blob_sha": "aa0ccd72d9b695d3f8aa413ecad84d6c5e2ef414",
+      "bytes": 112085
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/a4-input-preparation.md",
+      "git_blob_sha": "41739a89da38d6c9d9659067464e667effb760bf",
+      "bytes": 18041
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A2.md",
+      "git_blob_sha": "ed9b2c64a4037dc7e58b7e0ca962fb091b710d7f",
+      "bytes": 11398
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A4a.md",
+      "git_blob_sha": "30613cf45083b7600f0c7775dc2751b956c1c871",
+      "bytes": 19926
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n4.md",
+      "git_blob_sha": "e50bd4fea7829ae21724f52bf2b18dba3e9958b3",
+      "bytes": 13276
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n5.md",
+      "git_blob_sha": "65cafc3643aed9b8df1ae3f0b148f0bc8acce6b5",
+      "bytes": 12598
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n6.md",
+      "git_blob_sha": "fd4a02a021f3db36241125f20b4bf23339615f53",
+      "bytes": 17474
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n7.md",
+      "git_blob_sha": "9b0b6a55a3b08f7487830c49e7655376d2394e17",
+      "bytes": 28102
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n8.md",
+      "git_blob_sha": "1553193a7e9135b3816b4f378877262efedca07e",
+      "bytes": 61517
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A5.md",
+      "git_blob_sha": "38b322c4c3b8e09a938d8967ed56c0a5a9fa2893",
+      "bytes": 15871
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/attempts/T-B1.md",
+      "git_blob_sha": "8c8460cb4e53fe7e7d449e4e95d9e78f43eca040",
+      "bytes": 10833
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/attempts/T-B3.md",
+      "git_blob_sha": "558dfa20bc4fb0b04ffc30a3ebf678bd9d4530d2",
+      "bytes": 18762
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/audit-01.md",
+      "git_blob_sha": "bea70abddb51ccf7eb1ec3c8bbabe58866312017",
+      "bytes": 35298
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/b1-input-preparation.md",
+      "git_blob_sha": "c1390e9ac9c985aa22ddb0d7d6a342514bd6d583",
+      "bytes": 17674
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/b1-lead-receipt.md",
+      "git_blob_sha": "265abfb78684cf581918564e83643d6e045825e1",
+      "bytes": 6280
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/b3-input-preparation.md",
+      "git_blob_sha": "50e119f8bc28f192a2dd87a91280c13630321dfe",
+      "bytes": 16357
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a2_exact_check.py",
+      "git_blob_sha": "e3da746300cda7233eaf762e6edb3c8091e77d96",
+      "bytes": 3915
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a2_sanity.py",
+      "git_blob_sha": "bb818f42e8e927f8d16fd7fe19719c97f3c681b3",
+      "bytes": 2121
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a4g_series.py",
+      "git_blob_sha": "4b6d32a9b54d2998397779b17e2130841431e54e",
+      "bytes": 2953
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a4reg_complementary_check.py",
+      "git_blob_sha": "86dbe194407ea43e1ed7eb3faa9b4c5001eb1a24",
+      "bytes": 6844
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a4reg_exact_check.py",
+      "git_blob_sha": "669f4975ae329ac2f368ca892b78db4586ad65fd",
+      "bytes": 11473
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_arithmetic.py",
+      "git_blob_sha": "cd012318f8867fc38a34c14ad93e1e4086eee48a",
+      "bytes": 3612
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_boundary.py",
+      "git_blob_sha": "2df56151866a90ac555d3ba9d84f73f0a45068f9",
+      "bytes": 4554
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_checker.py",
+      "git_blob_sha": "ee1c95a931a2fe4f2c35913421b4da363e3f4091",
+      "bytes": 33749
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_checker_adversarial.py",
+      "git_blob_sha": "167bb987132e3b17f95399f35b8f9d9edf3fb58e",
+      "bytes": 4414
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_checker_n4.py",
+      "git_blob_sha": "0f2c9446b6fbbcbc107cf829de7d0382bf36e569",
+      "bytes": 44335
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_checker_n4_controls.py",
+      "git_blob_sha": "afbec8c96c051a39af55b5a3685165ea251e4da3",
+      "bytes": 4210
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_checker_n5.py",
+      "git_blob_sha": "faaa6a74387763e4af033a6758b9e3e8d5841d38",
+      "bytes": 56710
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_checker_n5_controls.py",
+      "git_blob_sha": "c05514e0f8aed3e5229a1084c896035ec4de3b95",
+      "bytes": 8770
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_checker_n6.py",
+      "git_blob_sha": "a7c9ef9a78446e45b4fea6b081b9892f9b21a0e0",
+      "bytes": 60892
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_checker_n6_controls.py",
+      "git_blob_sha": "521a94effec36289720ec486c1588a5af37450ce",
+      "bytes": 10953
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_checker_n7.py",
+      "git_blob_sha": "11d07a8c9cfe1eea09d22521ecd2a73341ed4f87",
+      "bytes": 64632
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_checker_n7_controls.py",
+      "git_blob_sha": "855131bf24f11c466a8062ebd56bdb0f7235e732",
+      "bytes": 17115
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_checker_n7_field.py",
+      "git_blob_sha": "ab97f3c76407dbaf1003f054cd8af5d5d409747f",
+      "bytes": 4512
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_checker_n8.py",
+      "git_blob_sha": "0f0a565efc417a5663730f8aabfd1250b68848e8",
+      "bytes": 69248
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_checker_n8_controls.py",
+      "git_blob_sha": "c6906ada8deab168aad9a9bc4728adcf0bca9653",
+      "bytes": 14393
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_checker_n8_staged.py",
+      "git_blob_sha": "fa715cd51a2523bf39bb9c927862b06e5f11598c",
+      "bytes": 13914
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_checker_n8_staged_cached.py",
+      "git_blob_sha": "3f2a857e8ed51a30fe1d22aad595b71675b72cb6",
+      "bytes": 3231
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_checker_n8_staged_cached_controls.py",
+      "git_blob_sha": "b416462ffa4f775c4de388bed1a9ef1a5c503605",
+      "bytes": 5720
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_checker_n8_staged_controls.py",
+      "git_blob_sha": "1877eccae0013a8ec1106610ae56423b144d2c05",
+      "bytes": 9059
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_explore.py",
+      "git_blob_sha": "882211ffcc691677d5b4738023aa252edf71b4c8",
+      "bytes": 1319
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_global.py",
+      "git_blob_sha": "f29d19b09bed72b16a7934ee7722d850055f900c",
+      "bytes": 2114
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n4_boundary.py",
+      "git_blob_sha": "1aa616b57e69c02513ff822b795f03cfb5322d42",
+      "bytes": 4921
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n4_boxes.py",
+      "git_blob_sha": "41bd441ff1cec7163f054040bbb280a75825dfb2",
+      "bytes": 12170
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n4_explore.py",
+      "git_blob_sha": "ce177c8f9f384bc5f29976a9beabae1ee3068b24",
+      "bytes": 1958
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n4_global.py",
+      "git_blob_sha": "24be2b9ff661e874c8bc2540bf23f61174b4b48e",
+      "bytes": 3346
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n4_schema.md",
+      "git_blob_sha": "38dd40ba0d6fd44d26a559055e7748e4bcedb7bf",
+      "bytes": 8413
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n5_boundary.py",
+      "git_blob_sha": "7adc074a508451ecdec690eaf32f9e70229e7401",
+      "bytes": 5777
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n5_boxes.py",
+      "git_blob_sha": "e7837ffc49181b23b86147dde702b1181429f7e0",
+      "bytes": 13156
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n5_global.py",
+      "git_blob_sha": "54f521feec4b33e4da3708ecaee281402e5fac70",
+      "bytes": 3555
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n5_nodes.py",
+      "git_blob_sha": "24cebe831a9088aaae0e5877862caf21f37d9a7f",
+      "bytes": 5254
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n5_schema.md",
+      "git_blob_sha": "b03c20971f8cee7c01088678aebcc2e376d5d5c8",
+      "bytes": 7860
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n6_boundary.py",
+      "git_blob_sha": "5d5b8225e0903441542145532d71c5bdb0348cf2",
+      "bytes": 5753
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n6_boxes.py",
+      "git_blob_sha": "cce03e7ef3692fd7b798ba2f5f12cdd07899f0b6",
+      "bytes": 11008
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n6_field.py",
+      "git_blob_sha": "ca91fc0f4d1942efd833c88e6e7e5581ca393a2b",
+      "bytes": 6260
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n6_global.py",
+      "git_blob_sha": "78455df68319ec9c0a90e731bba9b4a4073db579",
+      "bytes": 3461
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n6_nodes.py",
+      "git_blob_sha": "33c16f4b5862406189689411088243bf2aedb088",
+      "bytes": 4848
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n6_schema.md",
+      "git_blob_sha": "9e3f1d6b000bc489c830cd04cfea3d40f4eaf753",
+      "bytes": 6794
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n7_boundary.py",
+      "git_blob_sha": "b06d6ce1a7316cccefcd0f1550d7b94750b81908",
+      "bytes": 10203
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n7_boxes.py",
+      "git_blob_sha": "defffefe84162170654c71a3dfa1264d56a32b53",
+      "bytes": 12119
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n7_field.py",
+      "git_blob_sha": "86a9f2308fedc7db377908ebe07670824d3e99f6",
+      "bytes": 6905
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n7_global.py",
+      "git_blob_sha": "7926cb32c37c1672f6542149763587492dfd0e68",
+      "bytes": 3569
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n7_nodes.py",
+      "git_blob_sha": "c125c70cc624dc6705268faee6e39ce3e29d78fc",
+      "bytes": 4848
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n7_schema.md",
+      "git_blob_sha": "0bc714faf4e6830c5231f46e61c390f994dec792",
+      "bytes": 7945
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_boundary.py",
+      "git_blob_sha": "d8c179933ed658f7e69510c8040a4c1aa685ca83",
+      "bytes": 10622
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_boxes.py",
+      "git_blob_sha": "3d5b066230b347c128a72afeec6d20e92fbde599",
+      "bytes": 13042
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_continue.py",
+      "git_blob_sha": "899a69145134f99bb77adc67cf61e316a245d4a2",
+      "bytes": 23249
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_continue_controls.py",
+      "git_blob_sha": "1edf560ac7c7cc5b482e3da7c2e3e839cbb4bb08",
+      "bytes": 7040
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_continue_v5.py",
+      "git_blob_sha": "9cf318a52cd2326485444336096453849954cf85",
+      "bytes": 27644
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_continue_v5_controls.py",
+      "git_blob_sha": "0c4da9e0a45a081c790858f249f77aabcef6a207",
+      "bytes": 10989
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_field.py",
+      "git_blob_sha": "f0288fde71e2efa22e25b0f86a71fe08cc4d7f2f",
+      "bytes": 6880
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_global.py",
+      "git_blob_sha": "2353a9085b9edb5b70db9c9a17e7b96c90d3df76",
+      "bytes": 3633
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_join.py",
+      "git_blob_sha": "793b9353054fe7a016dcd0df808562b2cdd6f005",
+      "bytes": 9090
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_join_axis.py",
+      "git_blob_sha": "096fa12b9834552ba52e9d5e6e98f9d6325f99a7",
+      "bytes": 9890
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_join_axis_controls.py",
+      "git_blob_sha": "cca617b6fd82200b33a14d7912bb5b07569c1810",
+      "bytes": 6813
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_join_controls.py",
+      "git_blob_sha": "2dc8fa880245bc516cc7c6f2da9424d35a9eccc7",
+      "bytes": 6240
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_nodes.py",
+      "git_blob_sha": "b36c8ec8bb9a7147ed7364333cbd7d908b1a90f2",
+      "bytes": 4848
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect.py",
+      "git_blob_sha": "86128a8a6ea8f13ff79a7bb3fcac3b9ced8a6668",
+      "bytes": 8311
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_axis.py",
+      "git_blob_sha": "c9408d0da4237a9007aa210d9581aa127dc42087",
+      "bytes": 13652
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_axis_controls.py",
+      "git_blob_sha": "15b4abea92d5f8338f893c70348f9816d780f28f",
+      "bytes": 4235
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_controls.py",
+      "git_blob_sha": "fbb734507664f1c80436fe9fcad6482f09a263ad",
+      "bytes": 4461
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_v5.py",
+      "git_blob_sha": "8b4b03fc30d37968cf28ba67c5e0a29fe68fdf8c",
+      "bytes": 11041
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_v5_controls.py",
+      "git_blob_sha": "13580cbd9c8fe2d540565e6929205aa52ff6f594",
+      "bytes": 5846
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_schema.md",
+      "git_blob_sha": "f320ad85653f07721978acf6c32bb9956e4fcc98",
+      "bytes": 8815
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_witness.py",
+      "git_blob_sha": "e7c103df273aca1cbcd43c2cacf2000287137633",
+      "bytes": 4106
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_producer.py",
+      "git_blob_sha": "985f24221a320101d1a39ec118cb0a5c93aabb38",
+      "bytes": 5682
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_repack_certificate.py",
+      "git_blob_sha": "d16bc7cc043e429dd1e60e8d6b2533b0d2433f83",
+      "bytes": 6378
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_schema.md",
+      "git_blob_sha": "2989fb8767dec8ea1c8f7b81a9fc1c6da3110a57",
+      "bytes": 10228
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/b3_four_atom_exact.py",
+      "git_blob_sha": "007b3c3ce646e8780db43875a5350b6c01ee9c7f",
+      "bytes": 6921
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/handoffs/01-work.md",
+      "git_blob_sha": "fc14b52dd9274bb20c13930ec7d8e50e7ce89a15",
+      "bytes": 5975
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/handoffs/02-audit.md",
+      "git_blob_sha": "2b714133aec6623648aea3a5f8a26428fe9666e0",
+      "bytes": 13385
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/handoffs/03-response.md",
+      "git_blob_sha": "c5ff4740b8df930e84374bd2122c0d1758edb72d",
+      "bytes": 4909
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/handoffs/04-pr-preparation.md",
+      "git_blob_sha": "41424c68451f38b5eb45f781136b7b29e9891031",
+      "bytes": 7395
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/handoffs/05-finalize-pr.md",
+      "git_blob_sha": "56c0d76e6e56ea511b51225cadbefb93f7089540",
+      "bytes": 3644
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/handoffs/06-merge.md",
+      "git_blob_sha": "5df5093a04d0e2250966659b20c32d45c03d4dbb",
+      "bytes": 4899
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a2.md",
+      "git_blob_sha": "5acd4ac6bbca70a7930355a15336a6150c4e0937",
+      "bytes": 7488
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a4-central.md",
+      "git_blob_sha": "6e56ee8504dad2d3c3958e4680a9f4763ff0e860",
+      "bytes": 19434
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a4.md",
+      "git_blob_sha": "750a537fd23b11f218bae5e4204ed218a98362d2",
+      "bytes": 43181
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a5-checker.md",
+      "git_blob_sha": "6bdc2b9dc671a290d9a0710e44a83c10f98ce8cf",
+      "bytes": 18755
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a5-n4-checker.md",
+      "git_blob_sha": "44715206d2b7550cc76c3602111bf75d62c5a596",
+      "bytes": 18370
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a5-n4-reduction.md",
+      "git_blob_sha": "d18f68e114a3d12d56b67e91a2e0dc9b424b6d8b",
+      "bytes": 21452
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a5-n5-checker.md",
+      "git_blob_sha": "135c3be1dfcdccfc4520247910629f3a13574f74",
+      "bytes": 17996
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a5-n5-reduction.md",
+      "git_blob_sha": "96d9ea6fe3d40f8d3925a30a19827f2025a61e59",
+      "bytes": 22659
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a5-n6-checker.md",
+      "git_blob_sha": "8e8a7ca605934cfb58a3adc0520930a932c2270e",
+      "bytes": 15027
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a5-n7-checker.md",
+      "git_blob_sha": "e35976906c78b089819b4d110ff422e1b273a59e",
+      "bytes": 32445
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a5-n7-n8-fields.md",
+      "git_blob_sha": "0943c4f3293931a4fc0d3cd814d2a9a29f27fdd0",
+      "bytes": 3722
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a5-n8-axis.md",
+      "git_blob_sha": "fe1bd2b0c4abe127f1b2f5871f1894aaa5ce2c89",
+      "bytes": 15196
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a5-n8-checker.md",
+      "git_blob_sha": "4dc81bb2b5a0226da96214b948589d4214ad7d90",
+      "bytes": 23562
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a5-n8-continuation-route.md",
+      "git_blob_sha": "7087b081142c5b877b194e958aafd413b2347e41",
+      "bytes": 9993
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a5-n8-reflection.md",
+      "git_blob_sha": "fc66ea51d8372d89aa7b36117c047820c507e14f",
+      "bytes": 11451
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a5-n8-staged-cache.md",
+      "git_blob_sha": "7d29512a829a9ee6795069939a7d0d4fd1caf484",
+      "bytes": 12221
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a5-n8-staged-route.md",
+      "git_blob_sha": "809d80617d9d8744b7c8156dc040548ce8a2e872",
+      "bytes": 14853
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a5-n8-staged.md",
+      "git_blob_sha": "13b3529b2092530115727bb506f6d232aad06fd6",
+      "bytes": 12373
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a5-node-gap-n6.md",
+      "git_blob_sha": "34007ddbee1a4698d16362204da31863bfbfd40b",
+      "bytes": 12102
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a5-reduction.md",
+      "git_blob_sha": "d113cb471c838de2b550eec26607b82f1c5b1309",
+      "bytes": 29537
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-b1-topform.md",
+      "git_blob_sha": "a01ba0fadc31895cc8bd22edac1df4ba9d120c9a",
+      "bytes": 22786
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-b1.md",
+      "git_blob_sha": "793abed3d02e8865c2a36139562c53603a154e88",
+      "bytes": 28523
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks-b3.md",
+      "git_blob_sha": "25140e663bb60356e8a0340db09885c43410889d",
+      "bytes": 20482
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-checks.md",
+      "git_blob_sha": "712479d325a9709453346b8d93ed40ea01aba614",
+      "bytes": 16076
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-execution-a2.md",
+      "git_blob_sha": "3160a173ded26a225ebc2ca30a1ce8ccdf83c3e4",
+      "bytes": 4340
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-execution-a4-g.md",
+      "git_blob_sha": "c240ae510ad5e73e501f2b1fc7e7aef5295cff97",
+      "bytes": 5383
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-execution-a4-regression.md",
+      "git_blob_sha": "49ec5d557518a95292a0d1f379a0b05ce0e531f3",
+      "bytes": 11097
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-execution-a5-n4.md",
+      "git_blob_sha": "f7d6990d538a319496c0507b254e264a184e3304",
+      "bytes": 10159
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-execution-a5-n5.md",
+      "git_blob_sha": "0a3a296cbdc8a9745dacfb8a9f2cc682054f02eb",
+      "bytes": 11014
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-execution-a5-n6.md",
+      "git_blob_sha": "c8ccfa6b668476657ee8b34cf2e521fb8018744f",
+      "bytes": 13359
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-execution-a5-n7.md",
+      "git_blob_sha": "d01ecfbd7df9876f8f6552c524dcdf591f45cad8",
+      "bytes": 15434
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-execution-a5-n8-axis.md",
+      "git_blob_sha": "086d5c205ca54b01aa093f4147f8377c4539abc5",
+      "bytes": 10148
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-execution-a5-n8-field.md",
+      "git_blob_sha": "bbc1e32f88ce15f7f0665be54e4b56017844abe0",
+      "bytes": 2857
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-execution-a5-n8-witnesses.md",
+      "git_blob_sha": "3defaace514e557910605ee1b9f303bed17c6e39",
+      "bytes": 5226
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-execution-a5-n8.md",
+      "git_blob_sha": "a19f07c8ff79b4a846b8ba5655c4394d62781eba",
+      "bytes": 49053
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-execution-a5.md",
+      "git_blob_sha": "4e70823b7ffc2b14a9d13b6485a20bd9a172c315",
+      "bytes": 7840
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-execution-b3.md",
+      "git_blob_sha": "93a942444f73d4570623ba5349a1a637663a3eb6",
+      "bytes": 5153
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/inputs-review.md",
+      "git_blob_sha": "30f42de3a85cde0266cd7fbe22825e50508d5178",
+      "bytes": 14557
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/plan.md",
+      "git_blob_sha": "fc9350adef2b8f14611b7f183a7ee5d42e76a5b3",
+      "bytes": 4303
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/pr-prep.md",
+      "git_blob_sha": "b2f6e4a8566c7f4aa4838c8d63b2878d6a8bd8ca",
+      "bytes": 7762
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/preparation/final-id-map.json",
+      "git_blob_sha": "377513878547c208cfdedabb67384b3deb739ce6",
+      "bytes": 24726
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/preparation/ideas-registration.md",
+      "git_blob_sha": "7202db3fb0f9930fc9c082bdca5e91275b5379d4",
+      "bytes": 22973
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/preparation/mechanical-review.md",
+      "git_blob_sha": "917932c876aeee8b228c90329161e5bad4e5fc28",
+      "bytes": 3315
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/preparation/pr-snapshot.json",
+      "git_blob_sha": "dd32efe175a29cb6baccb846f17c78277629efdf",
+      "bytes": 1714
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/preparation/prepare-receipt.json",
+      "git_blob_sha": "cb6e9cfdb01ac3ee75ae079c2c7bffe4294c149c",
+      "bytes": 3460
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/preparation/prepare.py",
+      "git_blob_sha": "109eaf68995779fc5244042ef207b8cd6e91fa18",
+      "bytes": 26496
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/preparation/rehearsal.json",
+      "git_blob_sha": "7a774aa05dcbb9b2fb9640a4d6e71238385d38d7",
+      "bytes": 453
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/preparation/rehearse.py",
+      "git_blob_sha": "0983dbfcc7608fb0e3bce95dfef5d3d033bbbb3f",
+      "bytes": 2417
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/preparation/reservation-scan.json",
+      "git_blob_sha": "525aa2ca828a63cc86a0aa0efbfc2f2e6c3dad73",
+      "bytes": 3518
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/preparation/union_scan.py",
+      "git_blob_sha": "de7561177fc5cfeb78719f297108bcf17ec6f8aa",
+      "bytes": 2448
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/preparation/validate.py",
+      "git_blob_sha": "a7bd832b4b4b178dae672251a9f33d10e23b12cc",
+      "bytes": 9441
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/preparation/validation.json",
+      "git_blob_sha": "2b592be351626dae4dd6cbb4a3bb1bf49694380c",
+      "bytes": 4086
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/proposed-record-changes.md",
+      "git_blob_sha": "b5817881622fe7038abd14d14dc2bd594de5e730",
+      "bytes": 34413
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/report.md",
+      "git_blob_sha": "6208d0599f0b42640d93561e28f90e02227ed4e4",
+      "bytes": 6933
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/response-01.md",
+      "git_blob_sha": "ee6cde89f0877d7e2d8ad68d336f0fed2adc3b26",
+      "bytes": 9664
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/response-support/check_response.py",
+      "git_blob_sha": "3ea5d383ec8f3e690202ae6742a2d88808e1369b",
+      "bytes": 6542
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/response-support/verification.json",
+      "git_blob_sha": "43af08a29d4beca0d58cf6eb928022a4a54b8ac9",
+      "bytes": 842
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-01-corner-leading-lower.md",
+      "git_blob_sha": "a803ee667826b69a95e2780069fca77257151f98",
+      "bytes": 4264
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-02-corner-explicit-leading.md",
+      "git_blob_sha": "567b56e45adaf261e9a05aa897aadd397f2dd5cf",
+      "bytes": 3384
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-03-corner-log-coefficient.md",
+      "git_blob_sha": "115822ca9182220e877ba476c7c6f5ffb7f87eb7",
+      "bytes": 8927
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-04-corner-product-comparison.md",
+      "git_blob_sha": "b041ae643e256f9b76fefd812d8d52ab04971a57",
+      "bytes": 10850
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-05-cubic-finite-reduction.md",
+      "git_blob_sha": "4fc27121d983603e3def1b508eb373c9dd378b31",
+      "bytes": 12104
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-06-degree-three-maxima-count.md",
+      "git_blob_sha": "4757ae5a72d8ddaa6f84d57ff7f2c1d304635355",
+      "bytes": 15195
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-07-degree-three-global-argmax.md",
+      "git_blob_sha": "7f5c167f67fe5eef01bfeefac5bd04827dc1cd53",
+      "bytes": 9712
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-08-quartic-finite-reduction.md",
+      "git_blob_sha": "1c7b3fc23de6cc0ef91d2c34cdfe15649b5a9bb4",
+      "bytes": 12689
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-09-spatial-certificate-correctness.md",
+      "git_blob_sha": "051b2d1ed4f7b6fdef45bfeeb69576d5be637d52",
+      "bytes": 12223
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-10-degree-four-maxima-count.md",
+      "git_blob_sha": "35bd6b5e0c92993964f5b3179ba863ba3279dea5",
+      "bytes": 10191
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-11-degree-four-global-argmax.md",
+      "git_blob_sha": "e50d8968b290531f8c62ccf1cb7484a39a7932f9",
+      "bytes": 8721
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-15-exact-node-cone.md",
+      "git_blob_sha": "1be4050a7eb4233910bcf4c193b0e0801e5ef6f9",
+      "bytes": 7289
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-16-degree-five-maxima-count.md",
+      "git_blob_sha": "15abb2574a38dc870400c479e6c3629dbd90a058",
+      "bytes": 11856
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-17-degree-five-global-argmax.md",
+      "git_blob_sha": "8b76503f193df5878bf14542878906ecf8e23405",
+      "bytes": 9072
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-18-generic-spatial-certificate.md",
+      "git_blob_sha": "5e9bc3433bac619f6c52d6dd35b1b349532a7bac",
+      "bytes": 13340
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-19-quadratic-reproduction-node-gap.md",
+      "git_blob_sha": "a3b22a3829771ccf77b96806fd28e0cf329c7da0",
+      "bytes": 6051
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-40-degree-six-principal-field.md",
+      "git_blob_sha": "c3ccaff25030e106f80745c4b2a4120225f52118",
+      "bytes": 7986
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-41-degree-six-maxima-count.md",
+      "git_blob_sha": "7833315ee91f1f749329a667c78450ac4fa534b1",
+      "bytes": 10500
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-42-degree-six-global-argmax.md",
+      "git_blob_sha": "203bef8e0dea3e3ef4d309397787884a7f12958a",
+      "bytes": 8311
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-50-degree-seven-principal-field.md",
+      "git_blob_sha": "5dc60f7c9de4f66c52c3890922e8b9f33968e7d5",
+      "bytes": 7121
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-51-degree-seven-maxima-count.md",
+      "git_blob_sha": "420040b11b7e593ce93b1924251b0b1b17af18d8",
+      "bytes": 11754
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-52-degree-seven-global-argmax.md",
+      "git_blob_sha": "ffcfe4f3901d2e9c71bbec04ff971872d9fdd4c5",
+      "bytes": 8116
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-53-uniform-gradient-leaf.md",
+      "git_blob_sha": "559843007c73def4a503e80d2463c828244f52e3",
+      "bytes": 5099
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-60-degree-eight-principal-field.md",
+      "git_blob_sha": "2c3e162e2ef3c67aa68d9035fb307045ada896c4",
+      "bytes": 7647
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-61-degree-eight-maxima-count.md",
+      "git_blob_sha": "ee030673b16136774544e2d060f6357dc856b288",
+      "bytes": 9530
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-62-degree-eight-global-argmax.md",
+      "git_blob_sha": "ec2506622bd1bb7b5a4bf4c594a4e5dd97f0c851",
+      "bytes": 5275
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-63-degree-eight-reflection.md",
+      "git_blob_sha": "195c8d00f35dac5cdcbca7754bcd3ae0f937da35",
+      "bytes": 12064
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-64-degree-eight-interior-lower-bound.md",
+      "git_blob_sha": "c4c2aef75d65308e876870169fcd97ec8553b017",
+      "bytes": 7680
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-65-degree-eight-exact-interior-count.md",
+      "git_blob_sha": "1c057f61473c070b9cbcc2cb56b20d18c0452dd9",
+      "bytes": 12285
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-70-all-edge-kernel-formula.md",
+      "git_blob_sha": "3cbbf0f8a1c66356247bd97317230d8a6fadd3ac",
+      "bytes": 7813
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-71-complementary-edge-grid-gap.md",
+      "git_blob_sha": "52f733c08e59dbbcf96950e0d64ce4b4fcd2e086",
+      "bytes": 8783
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-72-central-grid-positive-gap.md",
+      "git_blob_sha": "ef0098325fdeb2214f5d6ffa6c296b14fa832987",
+      "bytes": 8932
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-73-gap-constant-series.md",
+      "git_blob_sha": "caf2c25f9fea2e0de31b2a7ae3cf5b1794d6ce61",
+      "bytes": 8795
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-74-global-edge-phase-localization.md",
+      "git_blob_sha": "bd6f2945f18e56f4a315091bb0a53dc6118474d2",
+      "bytes": 9807
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-75-local-edge-phase-bound.md",
+      "git_blob_sha": "793585c7313657e69457716d6c6fb11d9a9233a2",
+      "bytes": 9695
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-76-central-triangle-defect-stability.md",
+      "git_blob_sha": "05b89433fcc772deb3ee81f17e9219c188b630ac",
+      "bytes": 7901
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-77-central-edge-envelope-expansion.md",
+      "git_blob_sha": "7213f33d86f3519c29c831a6efb8813ef62e40a1",
+      "bytes": 9493
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-80-uniform-pivot-common-cluster.md",
+      "git_blob_sha": "f6972b66aa6875f903fa8557dad3d0a75572db44",
+      "bytes": 5787
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-90-pole-topform-detection.md",
+      "git_blob_sha": "16cf567083b56ae293165312b3a9420b6ea9f161",
+      "bytes": 9865
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-91-pole-only-generic-rank.md",
+      "git_blob_sha": "23594414449ef2b48c9837f8faf58c8d2ade924f",
+      "bytes": 10726
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-92-generic-ldiag-constrained-window.md",
+      "git_blob_sha": "35abe9a24e65918a52931e7352af5893f66041b6",
+      "bytes": 7050
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-93-source-ldiag-taper.md",
+      "git_blob_sha": "ff6b9da43a1fe6254dfa507a79259e4fdd13c6f5",
+      "bytes": 7460
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-N01-computed-section-box-count.md",
+      "git_blob_sha": "3a002be40ffeecdee146e200eaf94d4cbec6fc13",
+      "bytes": 16668
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-N02-common-cluster-route-obstruction.md",
+      "git_blob_sha": "62a4038b8971f5f046fa7074b47e1793ac886975",
+      "bytes": 5935
+    },
+    {
+      "path": "templates/HANDOFF.md",
+      "git_blob_sha": "4bab329814648ff00bd3580b2ec211ac811cb5b1",
+      "bytes": 1555
+    },
+    {
+      "path": "templates/IDEA.md",
+      "git_blob_sha": "84936244e072696837f758deec5cdcc87e0563b5",
+      "bytes": 1465
+    },
+    {
+      "path": "templates/THEORY.md",
+      "git_blob_sha": "078deb26c229c8f715f6238ba92fa48432f0dd5a",
+      "bytes": 3655
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n4_global.json",
+      "git_blob_sha": "708c5410b7e3f5538d30faa607f810eac1e715ce",
+      "bytes": 4148
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n7_global.json",
+      "git_blob_sha": "b8875f04ba6f73583ab01a11766fbca43dbcc473",
+      "bytes": 9493
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n3_checker.json",
+      "git_blob_sha": "53012620a8b214975373670a0285b4321bf8001a",
+      "bytes": 15207
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n4_certificate.json.gz",
+      "git_blob_sha": "d768d04857c580459547f090a1256fd4ed8bed58",
+      "bytes": 64360
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-01-padua-corner.md",
+      "git_blob_sha": "e08dc5c427b57ec944135776aac8a87dde804ccf",
+      "bytes": 10507
+    }
+  ]
+}
