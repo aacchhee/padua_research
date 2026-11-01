@@ -17,7 +17,7 @@
 - Novelty gate: full state/IDEAS.md heading/alias/summary and obstruction/disposition review; literature/INDEX.md; searches `corner`, `rhombus`, `Dirichlet`, `commutant`, `degenerate`, `absolute.cardinal`, IDEA-047/048/069 across state, literature, theory and programme candidate records. Closest entries: programme IDEA-17 (same corner/geometry project), IDEA-08 (pattern structure); charter IDEA-047 (Morrow–Patterson bound, different node family), IDEA-048 (Padua maxima), MZ IDEA-069 / PD-N005 (failed L1 column domination, different norm mechanism). This work attempts exact proofs of supplied targets; no renamed mechanism or literature-priority claim. Detailed receipt pending inputs-review.md.
 - Kill criteria and ordering: [plan.md](plan.md). A1 currently active; B5 and A5 have not started.
 - Environment: Python 3.12.14, SymPy 1.14.0, NumPy 2.3.5, SciPy 1.17.0; managed Linux; no Windows bridge exposed.
-- Latest pushed checkpoint: first A1 checkpoint prepared below; commit identity is in Git history.
+- Latest scientific checkpoint: `8fb28d7f2a13aaeb71814a8a7c4c89a87c095bad`, pushed. Draft PR [#9](https://github.com/aacchhee/padua_research/pull/9); publication-receipt commit follows in Git history.
 
 ### Ordered target checkpoint: A1 complete, B5 starts
 
@@ -52,6 +52,13 @@
 - `proposed-record-changes.md` contains twelve literal old→new edits checked against refreshed upstream `0ef90ed…`. All old blocks occur exactly once. These edits are not applied. The original statements, universal Padua counterexample, measured histories and remaining obligations are preserved. No final IDs, shared registries, base files or `.github/` are modified.
 - Reproducible manifest command: `python topics/padua-proof-attempts-20261101/code/evidence_manifest.py > topics/padua-proof-attempts-20261101/evidence-manifest.json`. It verifies current input bytes against the pinned base and records source Git blobs, SHA-256 identities and sizes for code/proofs/outputs. Essential new outputs are well below 1 MB each and 5 MB total; exact sizes in the manifest. No cold-storage transfer is needed.
 - Verification before publication: exact producer/independent receipts, mathematical supplementary inspections, literal proposal matching, input identities, `git diff --check`, add-only topic scope, and author/trailer checks. Required Claude audit PENDING; Stage AUDIT. Draft PR publication details follow below.
+
+### Draft publication receipt
+
+- Pushed scientific/evidence head `8fb28d7f2a13aaeb71814a8a7c4c89a87c095bad` and opened draft [PR #9](https://github.com/aacchhee/padua_research/pull/9) against `claude/programme-ideas-20261031`. Attached the PR to this Codex chat. GitHub readback confirms draft/open/unmerged, correct head/base and a clean mergeable comparison. The generated GitHub comparison commit is not a performed merge.
+- Delivery scope verified: 27 changed paths, all additions under this new topic directory, zero deletions or existing-file edits relative to the pinned base. All three exact producer/independent pairs match bytewise and their current code hashes; both full traces agree after removing timing fields only. The input manifest verifies 31 pinned inputs and records 36,856 bytes of new generated scientific outputs.
+- All commits are authored as Andrey Chesnokov <aacchhee@gmail.com>, with Agent: Codex and the requested-model/effort disclosure in Model trailers. No final IDs, shared registry writes, main/upstream integration or PR merge. This final receipt changes LOG only; scientific code, proofs and evidence remain at the preceding head.
+- Stage **AUDIT**. Next exact prompt: `Claude (Opus 5.5 xhigh): Audit codex/padua-proof-attempts-20261101.`
 
 ## Runs needed
 
