@@ -45,3 +45,10 @@
 - Mechanical input support saved 157 immutable Git-object input identities: original part1 scientific files/rules, newly arrived audit/support, programme inputs and comparison versions, and the Lanczos prerequisite. See inputs-review.md and evidence-manifest.json. No scientific execution is implied by hashing sources.
 - `/root/a2_independent_route`: gpt-6.1-sol xhigh, supplementary read-only derivation/check of the node-angle sum and possible one-dimensional comparison; no Git authority, no other target work. May write only own code/output prefixes a2ind_ if a consequential run is needed, which then requires a separate actual rerun.
 - Latest pushed checkpoint: `818ca4ad0942eb4743860f913a299ff30d959dae`; draft PR12 remains WORK with AUDIT PENDING. New source-reading checkpoint follows. No counts, asymptotic coefficient or global argmax is claimed.
+
+### A2(i) durable checkpoint — matching corner leading lower bound
+
+- First ordered deliverable PROVED: `PD-T?proof-attempts-2-codex-01`, Λ_c(n)≥(4/π²)log²n−54 for every n≥2 (hence the requested −O(log n)). Supporting separate result -04 proves |Λ_c(n)−L_n²|≤54 by exact node-angle simplification, same-mesh square and a uniform mesh-deformation sum. Both statements have written elementary proofs, not a fit dependency. No global corner-argmax assumption.
+- `/root/a2_independent_route` independently reconstructed the full comparison, including the coincident endpoint and actual-vs-reference endpoint weights; its hash-pinned hand receipt is independent-checks-a2.md. This is proof reconstruction, not a claimed numerical replay or Claude audit. No consequential mathematical computation has run yet.
+- A2 continues toward its stronger done criterion; (ii)/(iii) get their own files/checkpoints. Root read all saved supporting and lower-bound proof sections.
+- Environment preparation only: installed python-flint0.9.0 / FLINT3.6.0 into `/tmp/padua2-deps` after the default user install failed on the read-only home directory. Future Arb commands must use `PYTHONPATH=/tmp/padua2-deps`. SymPy1.14.0, Python3.12.14 remain available. This setup is not an A5 mathematical run; A5 has not started.
