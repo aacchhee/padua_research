@@ -1,10 +1,10 @@
 # First proof attempts on programme-ideas open targets
 
-- Branch: `codex/padua-proof-attempts-20261101` · Base: `cadb35066160e466cb1704b9791ad6f374446422` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh), pending
-- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Audit codex/padua-proof-attempts-20261101.`
+- Branch: `codex/padua-proof-attempts-20261101` · Base: `cadb35066160e466cb1704b9791ad6f374446422` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh), audit-01 ACCEPTED
+- Stage: PR · Next: `Codex (gpt-6.1-sol medium): Continue codex/padua-proof-attempts-20261101 — reconcile PR #9 after PR #6 integration.`
 - Claims: A1 PROVED for every n≥1; B5 PROVED generically for every n≥2; A5 exact-local replacement certificates PROVED for both recorded degree-three cases. Durable files: `theory/proof-attempts-codex-01-padua-corner.md`, `-02-generic-commutant.md`, `-03-degenerate-maxima.md`. The global counts remain MEASURED, completeness OPEN. Local theory IDs only.
 - For the PR: draft against `claude/programme-ideas-20261031`; no final IDs, shared registry edits, base-file edits, main merge or PR merge.
-- Open for AC: none needed for authorized development; independent Claude audit remains a handoff.
+- Open for AC: no proof dispute; PR #6 integration and any final-ID decision remain under the existing batch process. This topic retains provisional IDs and deferred shared edits.
 
 ## 2026-11-01 — Codex, requested gpt-6.1-sol xhigh
 
@@ -62,7 +62,43 @@
 
 ## Runs needed
 
-- Required independent Claude audit, after development and draft PR: `Claude (Opus 5.5 xhigh): Audit codex/padua-proof-attempts-20261101.`
+- Claude audit-01 is complete and ACCEPTED. After PR #6 integration, reconcile the source proposals and registry checklist, refresh the shared ledger, and retarget PR #9 to main. Do not merge a PR or allocate final IDs under the current instruction.
 - AC's computer is not reachable through available tools. Intended local working-track entry: `C:\Users\andreyac\Downloads\padua\results\padua-proof-attempts-20261101.md`. Deliver this topic's final statuses, evidence commands and audit prompt there when a bridge is available. Do not touch RESULTS.md before PR preparation, and do not write another topic's section.
 - Intended entry content: `Rules cadb35066160e466cb1704b9791ad6f374446422. A1 PROVED all n≥1; B5 PROVED generically all n≥2 (distinct x suffices; exact witnesses n=2…6); A5 local identities/enclosures/Hessians PROVED for two exact representatives covering all recorded degenerate_max decisions; counts remain MEASURED and the other four obligations OPEN. Independent exact reruns passed. Stage AUDIT; Claude (Opus 5.5 xhigh): Audit codex/padua-proof-attempts-20261101.` Append the draft PR URL recorded below when delivering. This entry has not been written to AC's computer.
 - If an essential output exceeds the user limits, archive only to `C:\Users\andreyac\Downloads\padua\cold_storage\padua-proof-attempts-20261101\` with a COLD_STORAGE manifest when a bridge is available; otherwise record the specific run here. No large output currently planned.
+
+
+## 2026-11-01 — response-01 and PR preparation (Codex, requested gpt-6.1-sol medium)
+
+- Rules read at the starting local head `a09d910ae7d5526b1e216066421a0bee7fc20da4`, then verified unchanged after fast-forward to `95279b833bca5967fcf47c1b71a56ff622185b4e` (the rules SHA for this continuation). Read AGENTS.md, agents/WORKFLOW.md and agents/codex/CODEX.md. Re-read cloud runtime/networking guidance; current policy is enforced. Runtime-resolved model/effort metadata remains unexposed. No subagents used for this editorial/protocol response.
+- Fetched main, this topic and the upstream programme branch. Main remains `9739a0c56b7a3976422ce60a8441bfbbfd6554df`; upstream is `9bd14a6d2c4da69139a10107d8a787f2be0c5c9e`. PR #6 is open/draft/unmerged. Fast-forwarded this topic to Claude audit delivery `95279b8`; no main/upstream merge or history rewrite.
+- Claude audit-01 accepts all three PROVED statements and the optional B1 OPEN note at candidate `a09d910…`, with F1–F6 limited to records/wording/protocol. Read the full audit and retained its report, support scripts, checksums and receipts unchanged. The response in response-01.md accepts all findings and describes the current-session Windows delivery limitation.
+- F1: the B5 table says “3 (by the proof)”; the attempt and proposal explain the reduced rank is automatic for invertible V and does not independently test the commutant dimension. Witness checks remain unisolvence, positivity, pattern, pivots and commutation. The auditor's direct full-system checks retain their separate provenance.
+- F2: remaining work explicitly includes rigorous (D) corner and (E) edge-node certificates in t3_degenerate.py. Obligation (2) is discharged for degenerate_max only; no global counting obligation or handler is silently dropped.
+- F3: moved the MEASURED all-call execution paragraph from the PROVED Statement to Checks, keeping its text and status. No theorem was changed.
+- F4: all three proposed OPEN_TARGETS updates append dated status annotations after the original Known/Done/Route paragraphs, preserving those paragraphs verbatim, including response-02's B5 polynomial-minor route.
+- F5: added the exact registry row/split-mapping checklist in proposed-record-changes.md; no shared record, registry, allocation ledger or final ID is edited. The original no-shared-edits/no-final-IDs instructions persist during this stacked preparation.
+- F6: all twelve old blocks match once at current upstream `9bd14a6…`, including the auditor's reported check at `f4e2133…`. Available-tool discovery shows no computer/Windows bridge, mounted Windows folder or VPN in this cloud session. The auditor's different session had a bridge; that does not establish reachability here. AC's topic result file is still unwritten by this session; its exact current intended entry is below. No RESULTS.md write.
+- Novelty gate: not re-run; this continuation generates no idea, proof, negative claim or novelty/priority assertion. It only responds to an accepted audit and prepares the same claims for integration.
+- Impact check: the three complete Proof-or-evidence bodies, every developer Python file and every scientific output are byte-identical to the audited candidate. Statuses and mathematical Statements are unchanged except moving the already-labelled measured trace paragraph out of Statement. Auditor files remain unchanged. Only wording, classification, proposal preservation, administrative evidence identities and preparation records change. Audit-01 explicitly permits proceeding without re-audit for these changes.
+- Validation: twelve literal originals against refreshed upstream; preservation of all three target routes; measured/proved section separation; immutable proof/checker/receipt comparison; manifest regeneration and identity/size verification; git diff --check. Scientific reruns were not repeated because no scientific code, proof or input changed; Claude's actual independent runs remain the acceptance evidence.
+- Stage **PR**. PR #9 remains stacked and draft pending PR #6 integration and the existing registry/ID coordination. PR preparation, including the sequential squash-diff rehearsal, is recorded in pr-prep.md. No merge or new ID allocation is requested or performed.
+
+### Current intended local working-track entry (F6; not delivered)
+
+Destination: `C:\Users\andreyac\Downloads\padua\results\padua-proof-attempts-20261101.md`.
+When a bridge is available, write only this topic file, preserving any existing
+current bytes. No shared RESULTS.md mutation is included in this response.
+
+```text
+Rules 95279b833bca5967fcf47c1b71a56ff622185b4e
+Topic: padua-proof-attempts-20261101; PR https://github.com/aacchhee/padua_research/pull/9
+Claude audit-01 ACCEPTED at a09d910ae7d5526b1e216066421a0bee7fc20da4; F1–F6 answered in response-01.md.
+A1 PROVED for every n>=1; B5 PROVED generically for every n>=2.
+A5 local certificates PROVED for both exact representatives; counts remain MEASURED.
+Rigorous (D) corner/(E) edge-node certificates and the other four A5 obligations remain OPEN.
+Stage PR; preparation complete. Source edits, shared registry checklist and final IDs remain deferred; PR #6 is unmerged.
+Next: Codex (gpt-6.1-sol medium): Continue codex/padua-proof-attempts-20261101 — reconcile PR #9 after PR #6 integration.
+```
+
+- Completed preparation rehearsal: disposable index, main → PR #6 `9bd14a6…` → staged PR #9 squash diff; zero conflicts, 38 added topic paths matching the staged snapshot and zero additional outside-topic changes. See preparation-checks.json for tree/patch hashes. PR #6 inherited whitespace warnings were retained without edits; this topic passes git diff --check. Only administrative receipt/manifest documentation changed afterward.

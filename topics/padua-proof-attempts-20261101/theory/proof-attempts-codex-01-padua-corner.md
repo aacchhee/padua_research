@@ -42,7 +42,7 @@ Exact real arithmetic; precisely the even checkerboard and the weights above. No
 
 ## Status by part
 
-Overall status: **PROVED** (written all-n proof below; Claude audit pending).
+Overall status: **PROVED** (written all-n proof below; Claude audit-01 ACCEPTED).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -161,7 +161,7 @@ This closes A1 for the stated Padua nodes, every degree and corner. It supplies 
 
 ## Open items
 
-Required Claude audit; independent exact-check receipt recorded separately. The source's A2/A3 expansion and A4 argmax remain OPEN. Source edits remain proposed until the PR #6 audit is complete.
+Claude audit-01 ACCEPTED; independent exact-check receipt recorded separately. The source's A2/A3 expansion and A4 argmax remain OPEN. Source edits remain proposed until the PR #6 audit is complete.
 
 ## History
 

@@ -3,7 +3,7 @@
 - Rules/source base: `cadb35066160e466cb1704b9791ad6f374446422`.
 - Developer: Codex `/root/input_review`, assigned gpt-6.1-sol xhigh; resolved runtime metadata not separately exposed.
 - Scope: only the `degenerate_max` path of the n=3,…,8 frozen search. Development started after root declared A1 and B5 complete, respecting target order.
-- Durable result: **PROVED**, `PD-T?proof-attempts-codex-03`, [theory](../theory/proof-attempts-codex-03-degenerate-maxima.md). Its exact identities, root enclosures and uniform Hessian inequalities passed the developer and an actual separate independent rerun/proof inspection; required Claude audit remains pending.
+- Durable result: **PROVED**, `PD-T?proof-attempts-codex-03`, [theory](../theory/proof-attempts-codex-03-degenerate-maxima.md). Its exact identities, root enclosures and uniform Hessian inequalities passed the developer and an actual separate independent rerun/proof inspection; Claude audit-01 ACCEPTED; response-01.md records the minor dispositions.
 - Stop: the local done criterion is reached for every decision in the reconstructed trace; broader A5 counting is still unresolved. No failed proof route or counterexample is claimed.
 
 ## Gate and authoritative inputs
@@ -42,8 +42,8 @@ No new mathematical route failed. The old tolerance-based one-maximum inference 
 
 ## Remaining work and scope
 
-The independent exact rerun is complete; required Claude audit is still needed at the final candidate. For the broader A5 counting target the four other obligations remain: finite reduction/coverage, rigorous per-pattern root enclosures and exclusions over the discarded region, all consistent patterns without the early return, and exact crease-crossing treatment. Global rigorous arithmetic and an independent counting checker remain necessary. Counts 15/27/25/41/50/62 remain MEASURED and no correction to authors is authorized or made.
+The independent exact rerun is complete and Claude audit-01 is ACCEPTED. Obligation (2) is discharged for `degenerate_max` only; rigorous versions of the (D) corner and (E) edge-node certificates in `t3_degenerate.py` remain needed. For the broader A5 counting target the four other obligations remain: finite reduction/coverage, rigorous per-pattern root enclosures and exclusions over the discarded region, all consistent patterns without the early return, and exact crease-crossing treatment. Global rigorous arithmetic and an independent counting checker remain necessary. Counts 15/27/25/41/50/62 remain MEASURED and no correction to authors is authorized or made.
 
 Source records, OPEN_TARGETS, registries and shared crosswalks remain untouched; root owns proposed old-to-new edits and the log. User's local result-track entry is root's responsibility, with unavailable Windows delivery recorded under Runs needed.
 
-Next: `Claude (Opus 5.5 xhigh): Audit codex/padua-proof-attempts-20261101.`
+Next: `Codex (gpt-6.1-sol medium): Continue codex/padua-proof-attempts-20261101 — reconcile PR #9 after PR #6 integration.`

@@ -3,7 +3,7 @@
 - Rules/base: `cadb35066160e466cb1704b9791ad6f374446422`.
 - Developer: Codex `/root/a1_develop`, requested gpt-6.1-sol xhigh; resolved runtime metadata unexposed.
 - Result: **PROVED for every n≥2**, with sufficient pointwise condition that all x coordinates are distinct; [PD-T?proof-attempts-codex-02](../theory/proof-attempts-codex-02-generic-commutant.md).
-- Stop: all-n done criterion reached; exact rational instances n=2,…,6 also checked. Claude audit pending.
+- Stop: all-n done criterion reached; exact rational instances n=2,…,6 also checked. Claude audit-01 ACCEPTED; minor wording dispositions are in response-01.md.
 
 ## Gate and route
 
@@ -19,7 +19,7 @@ Use nodes (t,t^(n+1)), t=1,…,N, w=1/N. The written sparse-polynomial/Rolle arg
 python topics/padua-proof-attempts-20261101/code/b5_exact_instances.py > topics/padua-proof-attempts-20261101/outputs/b5_exact_instances.json
 ```
 
-Executed successfully with Python 3.12.14, SymPy 1.14.0. No random seed, tolerances or floating-point arithmetic. All pair assertions passed. At n=2,3,4,5,6, N=6,10,15,21,28; reduced ranks are 3,7,12,18,25. The proved reduction gives original map ranks 14,33,62,103,158 and commutant dimension three in each instance. The large full radical-valued commutator matrix was **not** formed. Rank invariance under diagonal similarity and the exact reduction to the last N−3 rows of V⁻¹ are proved in the theory file.
+Executed successfully with Python 3.12.14, SymPy 1.14.0. No random seed, tolerances or floating-point arithmetic. All pair assertions passed. At n=2,3,4,5,6, N=6,10,15,21,28; reduced ranks are 3,7,12,18,25. The all-n proof gives original map ranks 14,33,62,103,158 and commutant dimension three in each instance. The last N−3 rows of an invertible V⁻¹ always have rank N−3, so the reduced-rank calculation does not independently test that dimension. The witness checks establish unisolvence, positive norms/pivots, pattern and commutation. The large full radical-valued commutator matrix was **not** formed. Rank invariance under diagonal similarity and the exact reduction to the last N−3 rows of V⁻¹ are proved in the theory file.
 
 Receipt: [b5_exact_instances.json](../outputs/b5_exact_instances.json), 5,327 bytes, SHA-256 `251496a1a117054608dd55d32c7dfa5441c5af34cf7cb00d1f99ec0e9e80da02`. Script SHA-256 `fb56be6166ce10ecae213cd1c4e169594a52b0a922058e52934b88ccd0edf18b`. Pair hashes and exact Vandermonde determinants appear in the receipt.
 
@@ -29,7 +29,7 @@ No mathematical route failed. A full symbolic commutator rank with Cholesky squa
 
 ## Runs needed
 
-- Required Claude (Opus 5.5 xhigh) audit at the final candidate SHA.
-- Independent exact regression execution and written proof inspection, recorded by root separately if not yet present.
+- Claude audit-01 is ACCEPTED. Remaining PR integration is described in pr-prep.md.
+- Independent exact regression and proof inspection are complete; see independent-checks.md and audit-01.md.
 
-Next: `Claude (Opus 5.5 xhigh): Audit codex/padua-proof-attempts-20261101.`
+Next: `Codex (gpt-6.1-sol medium): Continue codex/padua-proof-attempts-20261101 — reconcile PR #9 after PR #6 integration.`
