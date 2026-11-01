@@ -4,7 +4,7 @@ This is the topic's results file; only the topic orchestrator writes it. Branch 
 
 All IDs are provisional (`PD-T?drift-codex-NN`, `PD-N?drift-codex-NN`, `IDEA?drift-codex-NN`). The permanent reservations are PD-T136–155, PD-N062–071, IDEA-246–285 and LIT-445–459. Theory records are in `tracks/bivariate-lanczos/theory/drift-codex-*.md`, code in `tracks/bivariate-lanczos/code/drift/`, and the topic files in `topics/padua-lanczos-drift-20261101/`.
 
-## Status (2026-11-01): WORK — audit-03 complete, three low findings
+## Status (2026-11-01): AUDIT — response-03 done, bounded Codex re-audit pending
 
 - **Development.** Codex developed the campaign (scientific source `b09e1db`).
 - **Audit-01.** The Claude audit (Opus 5.5 xhigh) of `36c93794` returned CHANGES REQUIRED: 0 high, 10 medium and 32 low findings, with no PROVED or MEASURED claim refuted. See [audit-01](../topics/padua-lanczos-drift-20261101/audit-01.md).
@@ -14,6 +14,8 @@ All IDs are provisional (`PD-T?drift-codex-NN`, `PD-N?drift-codex-NN`, `IDEA?dri
 - **Response-02.** Claude answered all 10 audit-02 findings ([response-02](../topics/padua-lanczos-drift-20261101/response-02.md)): record 15 limit factor corrected; record 05's finite inequalities split into the new PROVED record 06; record 30 labels and eventual-only scope; E6 wording and the numpy pin; a degree-4 trajectory replay; repository-only results wording. Codex re-audit completed in audit-03.
 
 - **Audit-03.** Independent Codex Astra xhigh re-audit resolves all ten audit-02 findings and confirms the scoped mathematical results, including record06 and the PARTIAL factor-ten target. Three new low findings concern missing-file handling in the regeneration checker, the minimum-comparator reversal criterion, and an outside-span assertion in deferred IDEA17. No high/medium findings; PR15 remains draft. [Audit record](../topics/padua-lanczos-drift-20261101/audit-03.md).
+
+- **Response-03.** Claude fixed all three audit-03 low findings ([response-03](../topics/padua-lanczos-drift-20261101/response-03.md)): the record-06 checker's `--regenerated` mode now requires all four outputs (missing ones fail with exit 1; four cases demonstrated with a fresh regeneration); record 05's rotQ24 refutation condition needs lower bounds on both comparators; IDEA-17's outside-span separation is conditional on a recorded normal component. A bounded Codex re-audit is pending (handoff 10).
 
 ## Meaningful results, at their stated scope
 
@@ -46,4 +48,4 @@ Still OPEN:
 
 ## Next step
 
-Claude response-03 addresses only A03-L1/L2/L3 (handoff 09), followed by a bounded independent check of material fixes. Preserve the accepted mathematical results and status split. PR16 is merged: results tracking is repository-only. After acceptance, PR preparation assigns final IDs from reserved ranges, applies approved registry proposals, and adds only this topic’s root `RESULTS.md` section. Only AC merges.
+A bounded Codex (gpt-6-astra high) re-audit of response-03 (handoff 10). If accepted, PR preparation: final IDs from the reserved ranges, the literal proposals, removal of the record-14 tombstone, registry rows, this topic's root RESULTS.md section, and a fresh union scan. Only AC merges.

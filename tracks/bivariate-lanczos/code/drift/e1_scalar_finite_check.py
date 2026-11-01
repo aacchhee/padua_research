@@ -172,8 +172,11 @@ def check_set(name, cfg, cgs2, multi, posthoc, indep, audit02):
 
 def check_regenerated(d, values):
     d = Path(d)
-    res = {'directory': str(d), 'files': {}}
-    ok = True
+    # When --regenerated is supplied, all four outputs (two comparator uppers, two
+    # reproductions) are mandatory: a missing directory or file is a failure
+    # (response-03, audit-03 A03-L1).
+    res = {'directory': str(d), 'directory_exists': d.is_dir(), 'files': {}, 'missing_required': []}
+    ok = d.is_dir()
     for name, cfg in SETS.items():
         U, G = values[name]
         up = d / f"cgs2-{name}-n12-{cfg['comparator']}.json"
@@ -184,7 +187,9 @@ def check_regenerated(d, values):
                  'python': r.get('python'), 'elapsed_seconds': r.get('elapsed_seconds'), 'command': r.get('command')}
             ok &= e['upper_equal_committed'] and e['producer_pinned']
         else:
-            e = {'exists': False}
+            e = {'exists': False, 'required': True}
+            ok = False
+            res['missing_required'].append(up.name)
         res['files'][up.name] = e
         rp = d / f'reproduce-{name}.json'
         if rp.exists():
@@ -197,7 +202,9 @@ def check_regenerated(d, values):
             ok &= e['result'] == 'PASS' and e['explicit_projection_check'] == 'PASS' and e['generator_pinned'] \
                 and e['certificate_pinned'] and e['source_record_pinned']
         else:
-            e = {'exists': False}
+            e = {'exists': False, 'required': True}
+            ok = False
+            res['missing_required'].append(rp.name)
         res['files'][rp.name] = e
     res['pass'] = bool(ok)
     return res
@@ -258,6 +265,8 @@ def main():
     Path(a.output).write_text(json.dumps(out, indent=1) + '\n')
     print(json.dumps({'all_pass': out['all_pass'], 'sets': {r['set']: r['pass'] for r in results},
                       'elapsed': out['elapsed_seconds']}))
+    if not out['all_pass']:
+        sys.exit(1)  # explicit failure status (response-03, A03-L1); the JSON is still written
 
 
 if __name__ == '__main__':
