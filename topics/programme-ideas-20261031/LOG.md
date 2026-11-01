@@ -138,6 +138,7 @@ Subagents are launched as background `general-purpose` agents on `claude-fable-5
 - Rules read at `39c5ae6` (unchanged rule files plus the merged local-results rule); main `9739a0c` already an ancestor.
 - `response-02.md`: B1–B4 accepted. B1/B2 canonical remnants in IDEA-17, IDEA-10 and `checks/decisive-gen4-2.md` struck or labelled historical; B3 rewritten with explicit classes, metric, gap, reference neighbourhood and constant dependence; B4.1–B4.7 scope, definition and done-criterion fixes in N03, N05, PD-T01, `OPEN_TARGETS.md` and the registry rows. No status changed; no expensive rerun.
 - New exact check: `checks/code/response-02/ritz_saturated_centre.py/.out` (saturated centre, s = 1, residuals 0; SymPy 1.14.0).
+- Response-02 content committed at `a8fc06cfb3c5a30cc5efe5569ed3cd5b32463aea`; the next commit only records this SHA. Focused-review target: the branch head containing this line.
 
 ## Runs needed
 
