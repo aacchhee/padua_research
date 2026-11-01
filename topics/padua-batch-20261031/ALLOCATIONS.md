@@ -1,6 +1,12 @@
 # Shared allocation ledger — padua-batch-20261031
 
-**Current AC instruction (2026-11-01): PR #10 merges next into current main. All other drafts will be adjusted after PR #10 is merged.** The earlier sequence and source snapshots below retain their historical provenance. This update changes no accepted reservation or allocation owner.
+**Current integration snapshot (2026-11-01, audit-04):** main `21e620b` already contains PR #10. PR #6 allocates lattice PD-T081–094, PD-N032–038, IDEA-177–189, LIT-300–331 and programme-ideas PD-T095–100, PD-N039–043, IDEA-190–209, LIT-332–426 under AC's member-specific authorization to Claude (section below). PR #11 head `97968d2c2d039cb0910e0ea50747fb2d9e01a262` reserves LIT-293–299; it has no collision with this block. Next unreserved: PD-T101, PD-N044, IDEA-210, LIT-427. Only AC merges.
+
+## Earlier instructions and integration snapshots (historical)
+
+The following instructions, status table and provisional reservations describe their dated source snapshots. They are retained as provenance; the current snapshot above and final allocation sections below supersede their “next”, “provisional” and owner wording for these authorized members.
+
+**Earlier AC instruction (2026-11-01): PR #10 merges next into current main. All other drafts will be adjusted after PR #10 is merged.** The earlier sequence and source snapshots below retain their historical provenance. This update changes no accepted reservation or allocation owner.
 
 This is the single authoritative batch ledger. **Allocation owner: the root Codex MZ orchestrator.** AC merged charter PR #2 and MZ PR #3. AC's 2026-11-01 instruction sets **PR #4 next, then PR #5 stacked on PR #4**. The remaining programme-ideas and bivariate-Lanczos integrations follow AC's choice and must obtain any final ranges from the same owner. No parallel allocation or accepted-ID renumbering is authorized. Lattice keeps topic-scoped provisional IDs under AC's explicit original instruction; this response allocates no final ID.
 

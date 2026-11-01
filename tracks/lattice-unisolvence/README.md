@@ -12,11 +12,11 @@ Random-axis exact rank samples remain MEASURED for generic claims unless a writt
 
 ## Development and audit
 
-The topic retains provisional candidates and result IDs until coordinated PR preparation. Developer proofs, measurements and unresolved targets live in separate theory files. Separate Astra reconstruction supplements the required Claude audit; it does not replace it. Stage PR after the unchanged-science response and focused registry check. Exact commands and actual outputs will be linked from the final report and handoff.
+The original provisional headings remain provenance; final IDs were allocated during PR #6 preparation as recorded above. Developer proofs, measurements and unresolved targets live in separate theory files. Separate Astra reconstruction supplements the required Claude audit; it does not replace it. Stage PR after the unchanged-science response and focused registry check. Exact commands and actual outputs will be linked from the final report and handoff.
 
 ## Canonical theory inventory
 
-All IDs remain provisional as AC requested. PROVED means the written proof at its exact scope; supplementary Astra reconstruction is recorded separately and the Claude audit-01 has ACCEPTED the existing scopes/statuses.
+The table below retains the originally requested provisional IDs as aliases; each canonical record now also states its allocated final ID. PROVED means the written proof at its exact scope; supplementary Astra reconstruction is recorded separately and the Claude audit-01 has ACCEPTED the existing scopes/statuses.
 
 | ID | Statement | Status |
 |---|---|---|

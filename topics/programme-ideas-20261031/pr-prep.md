@@ -1,5 +1,7 @@
 # PR #6 preparation — programme ideas campaign
 
+**Current status (audit-04):** the dated preparation stages below are historical. Final IDs are allocated. AC explicitly instructed Codex to fix all bookkeeping without another Claude round; the current repairs and exact squash-rehearsal scope are recorded in the final section. Scientific statuses are unchanged.
+
 - Date: 2026-11-01. Developer/orchestrator: Claude, `claude-opus-5-5` (requested effort high; the runtime effort is not exposed). A Sonnet 5.5 helper produced the literature deduplication map, `lit/integration-map.json/.md`. I spot-checked its two same-statement mappings and its conflict flags.
 - Starting point: audit-03 accepted B1–B4, with nonblocking notes N1/N2 and Stage PR (preparation), at `f4e2133`. Main is `9739a0c`, already an ancestor.
 - Scope: preparation only. No status, scope or provisional ID changes. No final ID is allocated, and the batch ledger is not edited.
@@ -78,7 +80,7 @@ PR #10 merged into main as `21e620b`. That makes the PR #10 section above histor
   - main → #6 (`af3881b`) is clean;
   - → #11 (`97968d2`) is clean;
   - → #9 (`7b8884a`, own topic only) is clean;
-  - → #12 (`c26a6ad`) is clean. Its files outside its own topic are byte-identical to `9bd14a6` or to #9;
+  - → #12 (`c26a6ad`), using only its own topic diff after refreshing the stack, is clean. Its files outside its own topic are byte-identical to `9bd14a6` or to #9; a raw whole-head squash is not clean after upstream squashes (audit-04);
   - the other order, main → #11 → #6, auto-merges.
 - **Final-ID boundary now:** PD-T081, PD-N032, IDEA-177 and LIT-300, because draft PR #11 reserves LIT-293–299 in its ledger copy. A final allocation for this PR would be PD-T081–086, PD-N032–036, IDEA-177–196 and LIT-300–394 (95). It still needs AC's choice: provisional at merge, or final allocation by the ledger owner or by explicit AC authorisation.
 
@@ -100,5 +102,26 @@ AC's instructions were "allocate this block now" and, for the still-provisional 
   - Each new ID appears exactly once as a primary registry row (32 PD, 33 IDEA, 127 LIT).
   - No new ID collides with an existing one.
   - Every link in the renamed blocks resolves, and `git diff --check` is clean.
-  - The rehearsal main `21e620b` → #6 (`6954664`) → #11 (`97968d2`) → #9 (`7b8884a`) → #12 (`c26a6ad`) is clean, including the ledger.
-- **Expected effect:** the lattice audit-time checkers (`topics/lattice-unisolvence-20261031/check-response-01.py`, `response-review/check_response.py`) assert the earlier "Unallocated" state. They remain valid as receipts at their pinned revisions, but will not pass at this head.
+  - The prepared-diff rehearsal main `21e620b` → #6 (`6954664`) → #11 (`97968d2`) → #9 (`7b8884a`, own topic only) → #12 (`c26a6ad`, own topic only) is clean, including the ledger. Refresh the dependent branches after upstream squashes before live integration; see audit-04 below.
+- **Expected effect:** the lattice audit-time checkers (`topics/lattice-unisolvence-20261031/check-response-01.py`, `response-review/check_response.py`) compare earlier provisional identities/counts with their pinned baseline. They remain historical receipts at their recorded revisions, not current final-allocation checks. The second may exit 0 while reporting differences; its exit code alone does not establish a current pass.
+
+## Audit-04 bookkeeping repairs and exact rehearsal scope
+
+AC instructed Codex: “you have to fix all bookkeeping without more claude rounds”. Codex (`gpt-6-astra high`, requested; resolved runtime metadata unexposed) repaired only administrative integration content. Supplementary independent reviewers checked the repaired allocation helper and literature rows. No accepted mathematics, status, source-comparison verdict, allocation or audit-time evidence was changed.
+
+- Restored the full baseline fields of LIT-342 / provisional row 16, LIT-369 / row 52, and LIT-389 / row 73. Internal formula pipes are escaped, so all seven Markdown columns survive. Source keys, locators, verification and coverage limits, overlap links and row 73's attribution warning are retained. Removed formula-derived CORPUS keys `c`, `Y`, `x±y`; the proper source entries/aliases already exist. Citation placeholders now say that source verification remains pending rather than promise completion at an already completed final allocation.
+- Updated stale “re-audit pending/no row accepted” metadata to audits 02/03, the lattice provisional-only README wording, the ledger's current/historical distinction and the shared post-merge frontier. Historical rule, audit, source and provisional-ID records remain intact.
+- The original allocator at `37820a5` rejects all 192 of its own installed IDs in a default dry run. A replay against preallocation inputs succeeds and reproduces the map. The repaired helper now validates the exact installed JSON, unique correctly aliased primary rows and crosswalk before returning the same blocks/next boundaries. Its default invocation is read-only; an installed allocation refuses `--apply`. No apply invocation was executed. Independent malformed-map/duplicate-ID/wrong-crosswalk checks reject bad inputs without writing.
+
+The root's reproducible rehearsal is `audit-04-support/rehearsal-check.py`; it creates only disposable local branches/worktrees and removes them. Inputs: main `21e620ba8b5f0e0706f3a8c6613517df04d9d469`, PR #11 `97968d2c2d039cb0910e0ea50747fb2d9e01a262`, PR #9 `7b8884a2f98518784ff3698dd2f3f9c49c9cdd62`, and PR #12 both documented `c26a6adf6ebf701368f5de73fc319b0e55cdfc13` and refreshed `44be0080c69495cc6959e3d4c2b602fa73678d76`. The final receipt records the exact repaired PR #6 candidate.
+
+| Local rehearsal | Result and live prerequisite |
+|---|---|
+| main → #6 → #11 | Clean whole-head squashes, including the reservation ledger. |
+| → #9 → #12, each dependent PR's own-topic diff only | Clean for both pinned #12 heads. All 192 allocated primary rows, the seven #11 reservations and #6 canonical/audit/code/rule content are preserved. |
+| main → #11 → #6 | Auto-merges. |
+| Raw #12 whole-head squash after the upstream squash sequence | Conflicts in five shared registries and fifteen programme-ideas files. The upstream commits are absent from squash ancestry, so stale inherited copies collide. This is not a clean live-head claim. |
+
+After #6 is squash-merged, refresh/retarget #9 to main with only `topics/padua-proof-attempts-20261101/` as its own change. After #9 lands, refresh/retarget #12 to main with only `topics/padua-proof-attempts-2-20261101/` as its own change. Preserve the merged final-ID registries and current audit records during both refreshes. This is a recorded prerequisite for those dependent PRs; this review does not change their branches, audit their newer mathematics or authorize their merges.
+
+Twenty second-pass comparison flags, row 58's overlap/Pitman limit, source-reading gaps and all scientific OPEN/MEASURED limits remain explicit. They are not silently cleared by the bookkeeping repairs. The original findings and corrected verification are both retained in [audit-04](audit-04.md) and its support directory. Only AC merges.

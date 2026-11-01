@@ -5,7 +5,9 @@ AC's explicit instruction of 2026-11-01 (session log in topics/programme-ideas-2
 
 Run from repository root:  python3 -I topics/programme-ideas-20261031/pr-prep/allocate.py [--apply]
 
-Without --apply it only builds and validates the map and prints it. With --apply it
+Without --apply it only builds and validates the map and prints its boundaries.
+An installed allocation is checked against its exact map, primary rows and
+crosswalk; it is never reapplied. With --apply before installation it
 writes the map, rewrites the two campaigns' rows in the shared registries and adds
 "Final ID" lines to the canonical records. Provisional IDs are kept as provenance.
 
@@ -79,17 +81,37 @@ for camp, inv in (('lattice-unisolvence', lat), ('programme-ideas', pi)):
 assert len(set(M.values())) == len(M) == 66 + 126
 nxt = {ns: fmt(ns, START[ns]) for ns in NS}
 
-# no collision with any ID already used in the shared registries
-used = set()
-for f in ['PROOF_STATUS.md', 'state/IDEAS.md', 'literature/INDEX.md', 'ID_CROSSWALK.md']:
-    used |= set(re.findall(r'\b(?:PD-[TN]\d{3}|IDEA-\d{3}|LIT-\d{3})\b', Path(f).read_text()))
-clash = sorted(set(M.values()) & used)
-assert not clash, clash
-
 out = {'authorisation': 'AC, 2026-11-01: "allocate this block now" (PR #6) and "are the lattice ids allocated now? if not, do that as well"',
        'boundary_used': {'PD-T': 'PD-T081', 'PD-N': 'PD-N032', 'IDEA': 'IDEA-177', 'LIT': 'LIT-300 (after draft PR #11 LIT-293-299)'},
        'blocks': blocks, 'next_unreserved': nxt, 'map': M,
        'merged_without_new_id': merged}
+# Before installation, any use is a collision. After installation, accept only
+# the exact persisted allocation with one correctly aliased primary row per ID
+# and one correct crosswalk mapping per provisional. Other uses as references
+# are expected; a duplicate primary registration is still an error.
+registries = {f: Path(f).read_text() for f in
+              ['PROOF_STATUS.md', 'state/IDEAS.md', 'literature/INDEX.md', 'ID_CROSSWALK.md']}
+used = set(re.findall(r'\b(?:PD-[TN]\d{3}|IDEA-\d{3}|LIT-\d{3})\b', '\n'.join(registries.values())))
+installed = TOPIC / 'pr-prep/id-map.json'
+if installed.exists():
+    assert json.loads(installed.read_text()) == out, 'installed allocation map differs'
+    assert not args.apply, 'allocation already installed; use the default read-only check'
+    primary = [line for f, text in registries.items() if f != 'ID_CROSSWALK.md'
+               for line in text.splitlines() if re.match(r'\| (?:PD-[TN]\d{3}|IDEA-\d{3}|LIT-\d{3})\b', line)]
+    for pid, final in M.items():
+        rows = [line for line in primary if re.match(r'\| ' + re.escape(final) + r'\b', line)]
+        assert len(rows) == 1 and pid in rows[0].split(' | ')[0], (pid, final, 'primary row')
+        cross = [line for line in registries['ID_CROSSWALK.md'].splitlines()
+                 if line.startswith('| ' + pid + ' | ')]
+        assert len(cross) == 1 and cross[0].split(' | ')[1].startswith(final + ' '), (pid, 'crosswalk')
+    for pid, final in merged.items():
+        cross = [line for line in registries['ID_CROSSWALK.md'].splitlines()
+                 if line.startswith('| ' + pid + ' | ')]
+        assert len(cross) == 1 and re.match(r'Merged into ' + re.escape(final) + r'\b',
+                                           cross[0].split(' | ')[1]), (pid, 'merged crosswalk')
+else:
+    clash = sorted(set(M.values()) & used)
+    assert not clash, clash
 print(json.dumps({'blocks': blocks, 'next': nxt}, indent=1))
 if not args.apply:
     raise SystemExit(0)
