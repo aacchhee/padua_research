@@ -1,0 +1,1136 @@
+[
+ {
+  "id": "LIT?programme-ideas-claude-01",
+  "source_key": "vanbarel-chesnokov-2010",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-037"
+  ],
+  "corpus_key": "vanbarel-chesnokov-2010",
+  "record_file": "literature/records/vanbarel-chesnokov-2010.md",
+  "note": "content overlap: IEP formulation of the seed; LIT-037 is abstract-level only, baseline pins eqs (6)-(9),(13). | baseline coverage is stronger than main record (publisher metadata/abstract only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-02",
+  "source_key": "vanbarel-chesnokov-2010",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-037"
+  ],
+  "corpus_key": "vanbarel-chesnokov-2010",
+  "record_file": "literature/records/vanbarel-chesnokov-2010.md",
+  "note": "content overlap: Givens-based algorithm of the seed; LIT-037 abstract-level, baseline pins Algorithm 1 and scheme (12). | baseline coverage is stronger than main record (publisher metadata/abstract only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-03",
+  "source_key": "vanbarel-chesnokov-2010",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-037"
+  ],
+  "corpus_key": "vanbarel-chesnokov-2010",
+  "record_file": "literature/records/vanbarel-chesnokov-2010.md",
+  "note": "source-level overlap only (same source, distinct statement): downdating as stated future work (p.385) not in LIT-037. | baseline coverage is stronger than main record (publisher metadata/abstract only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-04",
+  "source_key": "vanbarel-chesnokov-2010",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-037"
+  ],
+  "corpus_key": "vanbarel-chesnokov-2010",
+  "record_file": "literature/records/vanbarel-chesnokov-2010.md",
+  "note": "source-level overlap only (same source, distinct statement): pivot-choice remark p.395 not in LIT-037. | baseline coverage is stronger than main record (publisher metadata/abstract only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-05",
+  "source_key": "vanbarel-chesnokov-2010",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-037"
+  ],
+  "corpus_key": "vanbarel-chesnokov-2010",
+  "record_file": "literature/records/vanbarel-chesnokov-2010.md",
+  "note": "content overlap: LIT-037 (abstract) says extension to more variables; baseline pins body sentence p.390 (not same locator type). | baseline coverage is stronger than main record (publisher metadata/abstract only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-06",
+  "source_key": "vanbarel-chesnokov-2010",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-037"
+  ],
+  "corpus_key": "vanbarel-chesnokov-2010",
+  "record_file": "literature/records/vanbarel-chesnokov-2010.md",
+  "note": "content overlap: LIT-037 names the zero-pivot claim but leaves the locator pending and the claim UNVERIFIED; baseline supplies p.389 / Example 3 pp.399-400. Resolves a pending locator of LIT-037. | baseline coverage is stronger than main record (publisher metadata/abstract only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-07",
+  "source_key": "vanbarel-chesnokov-2010",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-037"
+  ],
+  "corpus_key": "vanbarel-chesnokov-2010",
+  "record_file": "literature/records/vanbarel-chesnokov-2010.md",
+  "note": "source-level overlap only (same source, distinct statement): numerical experiments section 5 not in LIT-037. | baseline coverage is stronger than main record (publisher metadata/abstract only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-08",
+  "source_key": "vanbarel-chesnokov-2010",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-037"
+  ],
+  "corpus_key": "vanbarel-chesnokov-2010",
+  "record_file": "literature/records/vanbarel-chesnokov-2010.md",
+  "note": "source-level overlap only (same source, distinct statement): absence of error analysis / Padua-weight remark not in LIT-037. | baseline coverage is stronger than main record (publisher metadata/abstract only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-09",
+  "source_key": "vanbarel-chesnokov-2010",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-037"
+  ],
+  "corpus_key": "vanbarel-chesnokov-2010",
+  "record_file": "literature/records/vanbarel-chesnokov-2010.md",
+  "note": "source-level overlap only (same source, distinct statement): efficiency comparison with HL (p.385) not in LIT-037. | baseline coverage is stronger than main record (publisher metadata/abstract only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-10",
+  "source_key": "vanbarel-humet-sorber-2014",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "Source vanbarel-humet-sorber-2014 (ETNA 42) has no index row, no CORPUS key, no record. Topic-related to LIT-021 (humet-2019 reprints it) but not the same source."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-11",
+  "source_key": "vanbarel-humet-sorber-2014 (reprinted in humet-2019)",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "ETNA 2014 sentence about low-rank updates of L (verified via the thesis reprint, ETNA p.53). No ETNA row/record in main; humet-2019 (LIT-021) is the thesis that reprints it, related but a different statement. Round-1/2 misreading corrected here."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-12",
+  "source_key": "vanbarel-humet-2015 (reprinted in humet-2019)",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "vanbarel-humet-2015 (DRNA 8 (2015) 37-50) has no index row or record; checked only via the humet-2019 thesis reprint (LIT-021 related). Baseline flags a DRNA 2015 DOI collision; journal pagination UNVERIFIED."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-13",
+  "source_key": "humet-2019",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-021"
+  ],
+  "corpus_key": "humet-2019",
+  "record_file": "literature/records/humet-2019.md",
+  "note": "content overlap: LIT-021 already reports: no downdating/stability/truncated variant; Ch5 vector weights and generalized implicit Q theorem in slides. Baseline row is broader (adds Greedy Update description, uniqueness slide locator, posthumous compilation) and is partly VERIFIED by PDF pp.111,153. | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-14",
+  "source_key": "mach-vanbarel-vandebril-2013",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "Mach-Van Barel-Vandebril TW629 (2013) has no index row. Baseline corrects the round-1 author order; JCAM 272 (2014) identification UNVERIFIED."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-15",
+  "source_key": "egk-1991",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-022"
+  ],
+  "corpus_key": "egk-1991",
+  "record_file": "literature/records/egk-1991.md",
+  "note": "source-level overlap only (same source, distinct statement): LIT-022 concerns EGK Q-free downdating; this row is EGK updating by rotations (Thm 4.1, Cor 4.1) - topic-adjacent. | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-16",
+  "source_key": "egk-1991",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-022"
+  ],
+  "corpus_key": "egk-1991",
+  "record_file": "literature/records/egk-1991.md",
+  "note": "content overlap: Q-free downdating of EGK: baseline pins sec 5.2 p.340 (hyper-rotations, instability) where LIT-022 had \"exact theorem pending\". | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-17",
+  "source_key": "egk-1991",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-022"
+  ],
+  "corpus_key": "egk-1991",
+  "record_file": "literature/records/egk-1991.md",
+  "note": "source-level overlap only (same source, distinct statement): EGK open questions p.352-353 not in LIT-022. | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-18",
+  "source_key": "egk-1991",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-022"
+  ],
+  "corpus_key": "egk-1991",
+  "record_file": "literature/records/egk-1991.md",
+  "note": "content overlap: both concern numerical tests of downdating accuracy, but LIT-022 refers to attached tests comparing with R-factor downdates (apparently the supplied report's own reruns), whereas this row reports EGK Table 1/p.352. Not the same fact. | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-19",
+  "source_key": "gill-golub-murray-saunders-1974; paige-1980-updating",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "GGMS 1974 / Paige 1980 (updating): no index rows. (Paige 1976/1980 Lanczos is a different paper in row 46.)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-20",
+  "source_key": "stewart-1979; bojanczyk-et-al-1987; stewart-1995; chang-paige-1998",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "Four classical downdating-stability sources (Stewart 1979, BBVdH 1987, Stewart 1995, Chang-Paige 1998); none in index or CORPUS. Baseline: titles partly from memory."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-21",
+  "source_key": "vanbarel-vanbuggenhout-vandebril-2023",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "vanbarel-vanbuggenhout-vandebril-2023; baseline flags unresolved author list (with/without Faghih)."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-22",
+  "source_key": "faghih-et-al-2025",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "faghih-et-al-2025 (SINUM 2026, arXiv 2506.19796): no index row."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-23",
+  "source_key": "faghih-vanbarel-vandebril-2026",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "faghih-vanbarel-vandebril-2026 (arXiv 2608.25758): no index row."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-24",
+  "source_key": "zaccaron-2014",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "zaccaron-2014: no index row. Baseline notes two inconsistent loss-of-orthogonality figures (0.38 vs 0.499)."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-25",
+  "source_key": "sommariva-vianello-2015",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-005"
+  ],
+  "corpus_key": "sommariva-vianello-2015",
+  "record_file": "literature/records/sommariva-vianello-2015.md",
+  "note": "content overlap: LIT-005 (bundled) says authors describe cost and orthogonality limitations of HL/seed algorithms, pp.1199-1202; baseline row pins the remark at p.1201 (narrower, verified in text layer). Compatible locator. | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-26",
+  "source_key": "meurant-sommariva-2019",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "meurant-sommariva-2019: no index row, no CORPUS key."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-27",
+  "source_key": "marco-martinez-viana-2019",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "marco-martinez-viana-2019: no index row, no CORPUS key."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-28",
+  "source_key": "weisfeld-1959 (via bartels-jezioranski-1985)",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-017"
+  ],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "content overlap: LIT-017 reports Weisfeld1959 as earlier predecessor of BJ. weisfeld-1959 has no own key/record; baseline row is BJ's description of Weisfeld (BJ pp.201-203). BJ itself is bartels-jezioranski-1985 (CORPUS and main record exist)."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-29",
+  "source_key": "bartels-jezioranski-1985",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-017"
+  ],
+  "corpus_key": "bartels-jezioranski-1985",
+  "record_file": "literature/records/bartels-jezioranski-1985.md",
+  "note": "content overlap: BJ multinomial Gram-Schmidt Thm 1 / Cor 3-4; LIT-017 locator \"exact theorem pending\" is resolved by pp.211-213. | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-30",
+  "source_key": "bartels-jezioranski-1985",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-017"
+  ],
+  "corpus_key": "bartels-jezioranski-1985",
+  "record_file": "literature/records/bartels-jezioranski-1985.md",
+  "note": "content overlap: LIT-017 states \"no rounding analysis is reported\" - same absence claim; baseline row adds ill-conditioning/Cadwell-Williams remarks. | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-31",
+  "source_key": "huhtanen-larsen-bit-2002",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-016"
+  ],
+  "corpus_key": "huhtanen-larsen-bit-2002",
+  "record_file": "literature/records/huhtanen-larsen-bit-2002.md",
+  "note": "content overlap: HL BIT Algorithm 1/Thm 2.1/Cor 2.2 (LIT-016 locator includes Cor2.2 p.396; LIT-016 text is only a prior-art summary). | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-32",
+  "source_key": "huhtanen-larsen-bit-2002",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-016"
+  ],
+  "corpus_key": "huhtanen-larsen-bit-2002",
+  "record_file": "literature/records/huhtanen-larsen-bit-2002.md",
+  "note": "content overlap: HL BIT Thm 2.3 p.397 (2k+1 window) - locator shared with LIT-016, whose text is only a prior-art summary. | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-33",
+  "source_key": "huhtanen-larsen-bit-2002",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-016"
+  ],
+  "corpus_key": "huhtanen-larsen-bit-2002",
+  "record_file": "literature/records/huhtanen-larsen-bit-2002.md",
+  "note": "source-level overlap only (same source, distinct statement): HL cost statement/Xu-based length >=3k-3 (p.398) not in LIT-016. | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-34",
+  "source_key": "huhtanen-larsen-bit-2002",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-016"
+  ],
+  "corpus_key": "huhtanen-larsen-bit-2002",
+  "record_file": "literature/records/huhtanen-larsen-bit-2002.md",
+  "note": "content overlap: vanishing-polynomial/curve-fitting recurrence saving (Cor 2.2+Thm 2.3, sec 2.3 p.398-399) - LIT-016 cites sec 2.3 and Cor 2.2. | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-35",
+  "source_key": "huhtanen-larsen-bit-2002",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-016"
+  ],
+  "corpus_key": "huhtanen-larsen-bit-2002",
+  "record_file": "literature/records/huhtanen-larsen-bit-2002.md",
+  "note": "source-level overlap only (same source, distinct statement): HL implementation with ORTH (sec 3) not in LIT-016. | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-36",
+  "source_key": "huhtanen-larsen-bit-2002",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-016"
+  ],
+  "corpus_key": "huhtanen-larsen-bit-2002",
+  "record_file": "literature/records/huhtanen-larsen-bit-2002.md",
+  "note": "content overlap: LIT-016 locator includes p.401; HL p.401 loss-of-orthogonality observation is the likely referent of \"source numerical claims remain separately unverified\". | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-37",
+  "source_key": "huhtanen-larsen-simax-2002",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "huhtanen-larsen-simax-2002 is a different paper from huhtanen-larsen-bit-2002 (LIT-016); no index row, no CORPUS key, no main record."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-38",
+  "source_key": "huhtanen-larsen-simax-2002",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "huhtanen-larsen-simax-2002: no index row."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-39",
+  "source_key": "huhtanen-simax-2002",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "huhtanen-simax-2002 (Huhtanen, Hermitian Lanczos for normal matrices): no index row. Distinct from huhtanen-larsen-*."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-40",
+  "source_key": "huhtanen-larsen-bit-2002",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-016",
+   "LIT-017"
+  ],
+  "corpus_key": "huhtanen-larsen-bit-2002",
+  "record_file": "literature/records/huhtanen-larsen-bit-2002.md",
+  "note": "content overlap: priority statement: HL BIT p.393 \"has not been considered\" vs Weisfeld/BJ predecessors (LIT-017 and LIT-016 already say BJ/HL-type recurrences predate the proposed mechanisms). | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-41",
+  "source_key": "hokanson-2020",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "hokanson-2020: no index row, no CORPUS key."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-42",
+  "source_key": "zhu-nakatsukasa-2026",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "zhu-nakatsukasa-2026: no index row, no CORPUS key."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-43",
+  "source_key": "liu-narayan-2023",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "liu-narayan-2023: no index row, no CORPUS key."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-44",
+  "source_key": "brubeck-nakatsukasa-trefethen-2021",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "brubeck-nakatsukasa-trefethen-2021: no index row, no CORPUS key."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-45",
+  "source_key": "zhang-et-al-2024",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "zhang-et-al-2024: no index row, no CORPUS key."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-46",
+  "source_key": "paige-1976; paige-1980-lanczos; simon-1984-mathcomp; greenbaum-1989; jia-li-2021; simonova-tichy-2025; chen-2026; sinha-2026; amsel-et-al-2026",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "Nine finite-precision Lanczos sources (Paige, Simon, Greenbaum, Jia-Li, Simonova-Tichy, Chen, Sinha, Amsel et al.); none in index/CORPUS. Key paige-1976 etc. only metadata/abstract in baseline."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-47",
+  "source_key": "fischer-1998; gautschi-1982",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "fischer-1998 and gautschi-1982: no index rows."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-48",
+  "source_key": "bos-dmv-xu-2007",
+  "relation": "same",
+  "existing_ids": [
+   "LIT-002",
+   "LIT?lattice-codex-14"
+  ],
+  "corpus_key": "bos-dmv-xu-2007",
+  "record_file": "literature/records/bos-dmv-xu-2007.md",
+  "note": "Same facts as LIT-002 (Thm2.3 ideal generators; Props3.1,3.4 kernel and weights; identical locator). Same paper is lattice record padua-ideal-2007 (codex-14, Numer. Math. 108) under another key. Baseline gives the explicit generator form and flags a convention difference (RESULTS.md). | also lattice record padua-ideal-2007 | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-49",
+  "source_key": "caliari-dmv-2008",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-003",
+   "LIT?lattice-codex-31"
+  ],
+  "corpus_key": "caliari-dmv-2008",
+  "record_file": "literature/records/caliari-dmv-2008.md",
+  "note": "content overlap: both give the factor 1/2 at the exceptional top mode (eqs 9-10). LIT-003 says \"highest x mode\"; baseline says \"highest-degree exceptional mode\"; lattice records (codex-31, codex-14) say the exceptional axis depends on the Padua family/orientation - so wording is not identical; chosen overlap, not same. | also lattice record caliari-demarchi-vianello-2008 | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-50",
+  "source_key": "delgado-et-al-2010; bos-dmv-xu-2007; caliari-dmv-2008",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-008",
+   "LIT-002",
+   "LIT-003"
+  ],
+  "corpus_key": "delgado-et-al-2010",
+  "record_file": "literature/records/delgado-et-al-2010.md",
+  "note": "content overlap: combined attribution row: LIT-008 (Uvarov modifications prior art, rank boundary correction not new) + LIT-002/LIT-003 (Padua ingredients). Delgado et al. theorem locator pending in both. | also lattice record padua-ideal-2007 | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-51",
+  "source_key": "caliari-dms-vianello-2011",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "caliari-dms-vianello-2011 (Padua2DM, Numer. Algorithms 56): no index row. LIT-004 mentions FFT implementations as future work (Cools-Poppe) but is another source."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-52",
+  "source_key": "harris-simanek-2021",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-001",
+   "LIT?lattice-codex-18"
+  ],
+  "corpus_key": "harris-simanek-2021",
+  "record_file": "literature/records/harris-simanek-2021.md",
+  "note": "content overlap: Thm1/Cor2/Thm5 of Harris-Simanek, pages compatible with LIT-001 (Thm1 pp.3488-3489, Cor2 p.3489, Thm5 pp.3490-3491). LIT-001 is broader (Conj3, alternation OPs, appendix); baseline adds hypotheses (distinct decreasing real nodes) verified in the PDF. | also lattice-unisolvence record of same key | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-53",
+  "source_key": "harris-simanek-2021; cao-ghimire-wang-2022",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-001",
+   "LIT-033",
+   "LIT?lattice-codex-18",
+   "LIT?lattice-codex-19"
+  ],
+  "corpus_key": "harris-simanek-2021",
+  "record_file": "literature/records/harris-simanek-2021.md",
+  "note": "content overlap: Conj 3 (LIT-001 p.3489) and its proof by Cao-Ghimire-Wang (LIT-033: Thm3.1 p.2160, Thm4.2 p.2162; locators identical). Baseline says CGW \"UNVERIFIED here\" while main LIT-033 / codex-19 record primary excerpts - main is stronger. | also lattice-unisolvence record of same key | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-54",
+  "source_key": "harris-simanek-2021 (correction in RESULTS.md)",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-001"
+  ],
+  "corpus_key": "harris-simanek-2021",
+  "record_file": "literature/records/harris-simanek-2021.md",
+  "note": "content overlap: LIT-001 states ordered-real positivity is essential and arbitrary fields are not covered; baseline adds the finite-field counterexample X=(0,1,2), Y=(0,1,3,2) (MEASURED, correction of earlier reading). | also lattice-unisolvence record of same key | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-55",
+  "source_key": "xu-siam-1994",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-006"
+  ],
+  "corpus_key": "xu-siam-1994",
+  "record_file": "literature/records/xu-siam-1994.md",
+  "note": "source-level overlap only (same source, distinct statement): block three-term relation and block Jacobi matrices of Xu 1994; LIT-006 only states the scope correction. | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-56",
+  "source_key": "xu-siam-1994",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-006"
+  ],
+  "corpus_key": "xu-siam-1994",
+  "record_file": "literature/records/xu-siam-1994.md",
+  "note": "content overlap: LIT-006: this paper covers dim Pi_(n-1) nodes, Padua needs the Pitman extension; baseline pins Thm3.1/4.1 and shows the paper has nothing on Padua. | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-57",
+  "source_key": "xu-siam-1994",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-006"
+  ],
+  "corpus_key": "xu-siam-1994",
+  "record_file": "literature/records/xu-siam-1994.md",
+  "note": "source-level overlap only (same source, distinct statement): d=3 example and Thm 5.1/5.2 of Xu 1994 not in LIT-006. | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-58",
+  "source_key": "xu-pitman-1994",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-006",
+   "LIT-007"
+  ],
+  "corpus_key": "xu-pitman-1994",
+  "record_file": "literature/records/xu-pitman-1994.md",
+  "note": "content overlap: baseline row = LIT-006 (scope correction) + LIT-007 (Pitman RN312 as correct source) jointly; adds Xu Fields survey Thm 6.1 and a MEASURED T_2n failure. Pitman RN312 locator pending in both. | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-59",
+  "source_key": "degani-schiff-tannor-2005",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-009"
+  ],
+  "corpus_key": "degani-schiff-tannor-2005",
+  "record_file": "literature/records/degani-schiff-tannor-2005.md",
+  "note": "content overlap: joint eigenvalues of commuting extensions (LIT-009); baseline adds Def.1/Thm2 p.481 on commutator rank of perturbed commuting pairs (reported via bttb-research). LIT-009 locator \"Thm2 reported in Round3 6b T2\". | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-60",
+  "source_key": "li-sun-xu-2009",
+  "relation": "same",
+  "existing_ids": [
+   "LIT-010",
+   "LIT?lattice-codex-08"
+  ],
+  "corpus_key": "li-sun-xu-2009",
+  "record_file": "literature/records/li-sun-xu-2009.md",
+  "note": "Same published conjecture (Li-Sun-Xu, ~n^3/4 nodes for degree 2n-1 cubature on the cube, sec 1; same locator and venue). Baseline adds only round-2 comparison with a ~n^3/6 3D-Padua count (an inference, not a published statement). | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-61",
+  "source_key": "demarchi-2022",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT?lattice-codex-10",
+   "LIT?lattice-codex-27"
+  ],
+  "corpus_key": null,
+  "record_file": "literature/lattice-unisolvence/records/demarchi-2022.md",
+  "note": "content overlap: De Marchi 2022: higher-dimensional Padua points unknown (sec 3.3(1) p.22). Baseline broader (also Morrow-Patterson O(n^2) conjecture, Dubiner equidistribution, fake nodes). Lattice record warns the sentence is not a nonexistence statement for 3D unisolvent sets."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-62",
+  "source_key": "beberok-bialas-ciez-demarchi-2026",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "beberok-bialas-ciez-demarchi-2026: no index row. Baseline says final sec 6 not read."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-63",
+  "source_key": "kolomoitsev-lomako-2021",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "kolomoitsev-lomako-2021: no index row (lattice-codex-02 mentions the 4/pi^2 Lebesgue leading constant but from Bos et al. 2006/2007, different source)."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-64",
+  "source_key": "dencker-erb-2017; dencker-erb-kolomoitsev-lomako-2017; erb-et-al-2015",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-014",
+   "LIT?lattice-codex-05",
+   "LIT?lattice-codex-20"
+  ],
+  "corpus_key": "dencker-erb-2017",
+  "record_file": "literature/records/dencker-erb-2017.md",
+  "note": "content overlap: Dencker-Erb JAT 2017 (LIT-014 characteristic-transfer caveat; codex-20 gives Gamma/Thm2.8 detail). Dencker-Erb-Kolomoitsev-Lomako (J. Complexity 2017, arXiv 1608.03451) and Erb et al. 2015 have no row. Do not confuse with lattice dencker-erb-unifying-2017 (codex-21, arXiv 1711.00557, a different paper). | other keys not in CORPUS: dencker-erb-kolomoitsev-lomako-2017, erb-et-al-2015 | also lattice-unisolvence record of same key | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-65",
+  "source_key": "cools-poppe-2011",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-004",
+   "LIT?lattice-codex-04",
+   "LIT?lattice-codex-24"
+  ],
+  "corpus_key": "cools-poppe-2011",
+  "record_file": "literature/records/cools-poppe-2011.md",
+  "note": "content overlap: Cools-Poppe: Padua = rank-1 Chebyshev lattice, lattices/blending give cubature, searches and FFT implementations as future work (sec 6 p.287) - same facts as LIT-004 except LIT-004 also says no minimal-cardinality interpolating family is proved. Baseline coverage (PDF text layer) is stronger than the lattice record (publisher abstract only). | also lattice-unisolvence record of same key | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-66",
+  "source_key": "bos-dmsv-2011; bos-et-al-sinum-2010",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "bos-dmsv-2011 / bos-et-al-sinum-2010: no index rows."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-67",
+  "source_key": "bloom-bos-calvi-levenberg-2012",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "bloom-bos-calvi-levenberg-2012: no index row."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-68",
+  "source_key": "dai-prymak-2023",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "dai-prymak-2023: no index row."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-69",
+  "source_key": "cohen-migliorati-2017; dolbeault-krieg-ullrich-2023; krieg-ullrich-2026",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "cohen-migliorati / dolbeault-krieg-ullrich / krieg-ullrich: no index rows."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-70",
+  "source_key": "piazzon-sommariva-vianello-2017",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "piazzon-sommariva-vianello-2017 (Caratheodory-Tchakaloff, DRNA 2017) is a different paper from sommariva-vianello-2015 (LIT-005, also compression via NNLS); no row."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-71",
+  "source_key": "an-ran-wu-2025",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "an-ran-wu-2025 survey: no index row (not mz-an-wu-2022)."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-72",
+  "source_key": "bialas-ciez-demarchi-suder-2026",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "bialas-ciez-demarchi-suder-2026: no index row."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-73",
+  "source_key": "xu-2024-minimal; xu-2025",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-024",
+   "LIT?lattice-codex-28",
+   "LIT?lattice-codex-10"
+  ],
+  "corpus_key": "xu-2025",
+  "record_file": "literature/records/xu-2025.md",
+  "note": "source-level overlap only (same source, distinct statement): baseline cites arXiv 2407.09903 (lattice key xu-2024, codex-28: Thm2.3/2.4 Gaussian cubature, 2D) and CUP 2025 Ch5,9,10 (xu-2025, LIT-024 pending-reference, same chapters requested). Baseline key xu-2024-minimal = lattice key xu-2024; conflates arXiv paper and CUP book under two keys. | key xu-2024-minimal = lattice record xu-2024 | other keys not in CORPUS: xu-2024-minimal | also lattice record xu-2024 | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-74",
+  "source_key": "bos-dm-waldron-2009; demarchi-usevich-2014; camargo-demarchi-2015",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-030",
+   "LIT-031",
+   "LIT-041",
+   "LIT?lattice-codex-09",
+   "LIT?lattice-codex-25",
+   "LIT?lattice-codex-26"
+  ],
+  "corpus_key": "bos-dm-waldron-2009",
+  "record_file": "literature/records/bos-dm-waldron-2009.md",
+  "note": "content overlap: baseline row bundles the three-paper chain (BDW 2009 conjecture with unproved lemma; De Marchi-Usevich 2014 separation; Camargo-De Marchi 2015 unisolvence). Each covered by LIT-030/031/041 with primary partial inspection (main is stronger). Baseline notes DRNA 2015 DOI collision. | also lattice record demarchi-usevich-2014"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-75",
+  "source_key": "wang-wang-wang-2014",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "wang-wang-wang-2014: no index row; DOI unverified."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-76",
+  "source_key": "bos-demarchi-vianello-2015",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT?lattice-codex-06",
+   "LIT?lattice-codex-22"
+  ],
+  "corpus_key": null,
+  "record_file": "literature/lattice-unisolvence/records/bos-demarchi-vianello-2017.md",
+  "note": "content overlap: Bos-De Marchi-Vianello trivariate Lissajous (arXiv 1502.04114 = IMA JNA 37 (2017) 519-541, lattice key bos-demarchi-vianello-2017). Baseline year 2015 (preprint) vs 2017 (journal). Scope: baseline says Chebyshev curves in 3D \"generically\" do not self-intersect so the mechanism fails; lattice record limits it to the paper's specific curve and says it is no universal obstruction. Treat the baseline wording as broader than the main record. | key bos-demarchi-vianello-2015 = lattice record bos-demarchi-vianello-2017"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-77",
+  "source_key": "sauer-2007",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-018"
+  ],
+  "corpus_key": "sauer-2007",
+  "record_file": "literature/records/sauer-2007.md",
+  "note": "content overlap: Sauer 2007 approximate ideals (Def.2, Thm3); LIT-018 is a bundled prior-art summary. | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-78",
+  "source_key": "sauer-2007",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-018"
+  ],
+  "corpus_key": "sauer-2007",
+  "record_file": "literature/records/sauer-2007.md",
+  "note": "content overlap: LIT-018 locator \"p.307 question\" is exactly this p.307 open question; baseline row states the question. | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-79",
+  "source_key": "sauer-2007",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-018"
+  ],
+  "corpus_key": "sauer-2007",
+  "record_file": "literature/records/sauer-2007.md",
+  "note": "content overlap: LIT-018 mentions pivoted QR and a-priori bounds; baseline pins Thm 5 p.312 with the 2^#F factor. | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-80",
+  "source_key": "kreuzer-poulisse-robbiano-2009; heldt-kreuzer-pokutta-poulisse-2009",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "KPR 2009 / HKPP 2009 (AVI): no index row."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-81",
+  "source_key": "fassino-2010; abbott-fassino-torrente-2008",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "fassino-2010 / abbott-fassino-torrente: no index row."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-82",
+  "source_key": "wirth-kera-pokutta-2022",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "wirth-kera-pokutta-2022: no index row."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-83",
+  "source_key": "mourrain-2017",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-019"
+  ],
+  "corpus_key": "mourrain-2017",
+  "record_file": "literature/records/mourrain-2017.md",
+  "note": "content overlap: same source, locator (sec 3.3 pp.338-339) and displacement-rank remark as LIT-019; kept overlap because baseline adds \"over any field\" and is a bttb-research LIT-1658 transfer. Practically a duplicate of LIT-019. | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-84",
+  "source_key": "mourrain-telen-vanbarel; graf-townsend-2026; bel-afia-meroni-telen-2026",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-023"
+  ],
+  "corpus_key": "mourrain-telen-vanbarel",
+  "record_file": "literature/records/mourrain-telen-vanbarel.md",
+  "note": "content overlap: LIT-023: Chebyshev TNF rootfinding implemented, stability reported open; baseline adds Graf-Townsend 2026 and Bel-Afia-Meroni-Telen 2026 (no rows) and SVD/QR quotient-basis detail. | other keys not in CORPUS: graf-townsend-2026, bel-afia-meroni-telen-2026 | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-85",
+  "source_key": "telen-vanbarel-2018; neiger-schost-2020",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "telen-vanbarel-2018 (arXiv 1708.07670) is not mourrain-telen-vanbarel (LIT-023); neiger-schost-2020: no rows."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-86",
+  "source_key": "kachkovskiy-safarov-2016; lin-1997",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "kachkovskiy-safarov-2016 / lin-1997: no index rows."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-87",
+  "source_key": "jnsv-2017; vdhoeven-lecerf-2021; vdhoeven-lecerf-2025",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "jnsv-2017, vdhoeven-lecerf-*: no index rows. Same exponent as LIT-020 (BJS 2008) but different sources."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-88",
+  "source_key": "berthomieu-neiger-safey-2022; neiger-rosenkilde-solomatov-2020",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "berthomieu-neiger-safey-2022 etc.: no index rows (exponent as LIT-020, different source)."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-89",
+  "source_key": "bjs-2008",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-020"
+  ],
+  "corpus_key": "bjs-2008",
+  "record_file": "literature/records/bjs-2008.md",
+  "note": "content overlap: BJS Cor.2 interpolation without precomputation O~(N^((w+1)/2)) and the second-hand block-Toeplitz attribution are the same as LIT-020; kept overlap only because the row also states BJMS Las Vegas variants (other source). The BJS part is effectively same. | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-90",
+  "source_key": "kedlaya-umans; nusken-ziegler; bhargava-et-al-2022",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "kedlaya-umans / nusken-ziegler / bhargava et al. 2022: no index rows."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-91",
+  "source_key": "berthomieu-faugere-2022; berthomieu-boyer-faugere-2017",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "berthomieu-faugere-2022 and berthomieu-boyer-faugere-2017: no index rows."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-92",
+  "source_key": "berthomieu-lebreton-tran-2025",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "berthomieu-lebreton-tran-2025: no index row; not obtained."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-93",
+  "source_key": "naldi-neiger-2020",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "naldi-neiger-2020: no index row."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-94",
+  "source_key": "mourrain-pan-2000",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "mourrain-pan-2000: no index row (not mourrain-2017)."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-95",
+  "source_key": "hoeven-tft-2004; hoeven-schost-2013",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-011",
+   "LIT-012"
+  ],
+  "corpus_key": "hoeven-tft-2004",
+  "record_file": "literature/records/hoeven-tft-2004.md",
+  "note": "content overlap: baseline row = LIT-011 (Hoeven-Schost sec 6.3 lower-set quasi-linear evaluation, same locator) + LIT-012 (TFT simplicial total-degree) jointly, with the same conclusion that fast-transform use of finite-field Padua is not new. | baseline coverage is stronger than main record (supplied secondary account only)"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-96",
+  "source_key": "hoeven-larrieu-2018; berthomieu-hdr-2023; neiger-2016",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "hoeven-larrieu-2018, berthomieu-hdr-2023, neiger-2016: no index rows."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-97",
+  "source_key": "gaeta-1951; eisenbud; fogarty-1968",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "gaeta-1951 / eisenbud / fogarty-1968: no index rows."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-98",
+  "source_key": "noskov-schmid; hirao-sawa-2009; schmid-1995",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "noskov-schmid / hirao-sawa-2009 / schmid-1995: no rows. Mentions Li-Sun-Xu asymptotics (LIT-010) but as context, not as the stated fact."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-99",
+  "source_key": "mourrain-2018; collowald-hubert-2018; sahnoun-usevich-comon-2017; pena-sauer-2024",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "mourrain-2018, collowald-hubert-2018, sahnoun-usevich-comon-2017, pena-sauer-2024: no index rows (mourrain-2018 is not mourrain-2017)."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-100",
+  "source_key": "an-sommariva-vianello-2026",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-045",
+   "LIT-042"
+  ],
+  "corpus_key": "mz-an-sommariva-vianello-2026",
+  "record_file": "literature/records/mz-an-sommariva-vianello-2026.md",
+  "note": "content overlap: same paper (arXiv 2601.04708) under key mz-an-sommariva-vianello-2026. LIT-045 records numerical eta<1 past half-exactness for CC and Padua (sec 3.1-3.2); baseline records the open-question wording of sec 3.1. Possible tension to check: record reports eta<1 observations, baseline quotes \"to our knowledge not known\" - presumably about all-degree/theoretical statement. Venue (Math. Comput. Simul. 252 (2027)) consistent with record. | key an-sommariva-vianello-2026 = CORPUS key mz-an-sommariva-vianello-2026"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-101",
+  "source_key": "an-wu-2022",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-046",
+   "LIT-043"
+  ],
+  "corpus_key": "mz-an-wu-2022",
+  "record_file": "literature/records/mz-an-wu-2022.md",
+  "note": "content overlap: An-Wu BIT 62 (2022) sec 4/Cor 4.1, eta=3/4 assumption for CC n+2<=m<=2n+1 (LIT-046), and the reported counterexample (LIT-043). Same paper under key mz-an-wu-2022. Record notes searches found no erratum; baseline says erratum \"not checked\". | key an-wu-2022 = CORPUS key mz-an-wu-2022"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-102",
+  "source_key": "lubinsky-mate-nevai-1987; mastroianni-totik-2000; lubinsky-1998; imhof-1963",
+  "relation": "overlap",
+  "existing_ids": [
+   "LIT-050",
+   "LIT-051",
+   "LIT-052"
+  ],
+  "corpus_key": "mz-classical-mz-screen",
+  "record_file": "literature/records/mz-classical-mz-screen.md",
+  "note": "content overlap: LMN 1987, Mastroianni-Totik 2000, Lubinsky 1998 survey: same three sources (all in mz-classical-mz-screen); records say exact constants not extracted, so the baseline claim \"unspecified constants, nothing below 2 for CC\" is not confirmed by them. Imhof 1963 has no row. | key lubinsky-mate-nevai-1987 = CORPUS key mz-classical-mz-screen | key mastroianni-totik-2000 = CORPUS key mz-classical-mz-screen | key lubinsky-1998 = CORPUS key mz-classical-mz-screen | other keys not in CORPUS: imhof-1963"
+ },
+ {
+  "id": "LIT?programme-ideas-claude-103",
+  "source_key": "gumerov-rigg-slevinsky-2025; gutleb-olver-slevinsky-2024",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "gumerov-rigg-slevinsky-2025; gutleb-olver-slevinsky-2024: no index row."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-104",
+  "source_key": "cdgs-2010; bttb-research C3 items",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "cdgs-2010: no index row."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-105",
+  "source_key": "filipuk-haneczok-vanassche-2015; aptekarev-denisov-yattselev-2020",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "filipuk-haneczok-vanassche-2015; aptekarev-denisov-yattselev-2020: no index row."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-106",
+  "source_key": "kressner-2018; kressner-oehme-2026; huhtanen-2003",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "kressner-2018; kressner-oehme-2026; huhtanen-2003: no index row."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-107",
+  "source_key": "lasserre-pauwels-putinar-2022; adcock-cardenas-2020",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "lasserre-pauwels-putinar-2022; adcock-cardenas-2020: no index row."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-108",
+  "source_key": "various (see round-1 reference list)",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "various application papers: no index row."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-109",
+  "source_key": "chebfun; fasttransforms-jl; erb-software",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "software (chebfun etc.): no index row."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-110",
+  "source_key": "(metadata)",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "metadata row (citation counts, HL DOI): no index row."
+ },
+ {
+  "id": "LIT?programme-ideas-claude-111",
+  "source_key": "zhou-narayan-xu-2014; guo-narayan-yan-zhou-2017",
+  "relation": "new",
+  "existing_ids": [],
+  "corpus_key": null,
+  "record_file": null,
+  "note": "zhou-narayan-xu-2014; guo-narayan-yan-zhou-2017: no index row."
+ }
+]

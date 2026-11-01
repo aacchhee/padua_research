@@ -31,7 +31,7 @@ Overall status: PROVED.
 | explicit instances | PROVED (exact arithmetic) | `checks/code/response-02/ritz_converse_parity.py/.out`: 5 × 5 grid k = 2 (s = 27/175) and k = 4 (s = 541/1225), 7 × 7 grid k = 2 (s = 11/147); both residuals exactly zero in every case. First found by the audit (`audit-support/rejections-check.py`). |
 
 Candidate / claim disposition: the side claim "joint Ritz convergence of a node is equivalent, up to constants, to its saturation; residual ≍ √(1−s)" (`checks/adversarial-gen4-1.md` (ii)(c); IDEA?programme-ideas-claude-16) is REJECTED.
-Rejection reason: refuted (its negation is established for every centrally symmetric node set with a central node and even k).
+Rejection reason: refuted (the cancellation holds at the centre of every centrally symmetric node set for even k, and contradicts the claimed lower bound at every such centre with s_k(0) < 1, e.g. the exact grid instances). [response-02, audit-02 B4.1: earlier wording "its negation is established for every centrally symmetric node set with a central node and even k" ignored saturated centres; at s_k(0) = 1 cancellation is consistent with the bound — exact example {0, ±(1,0), ±(0,1), ±(1,1)}, k = 2, `checks/code/response-02/ritz_saturated_centre.py/.out`.]
 
 ## Negative-result scope (PD-N only)
 
@@ -56,7 +56,7 @@ Write K = K_k(·, 0). Since μ and Π_k are invariant under z ↦ −z, so is th
 
 ## Scope
 
-Exactly as in the negative-result scope: the converse fails on a large structured class; the one-sided bound of PD-T?programme-ideas-claude-02 is unaffected.
+Exactly as in the negative-result scope: the converse fails at every unsaturated symmetry centre of a centrally symmetric measure (even k), a large structured class; the one-sided bound of PD-T?programme-ideas-claude-02 is unaffected.
 
 ## Open items
 
@@ -67,4 +67,5 @@ Whether a converse holds for generic (non-symmetric) measures or away from symme
 - 2026-11-01, gen4-1 adversarial agent (claude-fable-5-1, xhigh): converse asserted.
 - 2026-11-01, Codex audit-01 A2 / R1: exact counterexample and parity explanation.
 - 2026-11-01, response-01 (claude-opus-5-5): converse retracted; no PD-N proposed.
+- 2026-11-01, response-02 (claude-opus-5-5): rejection reason and summaries aligned with the formal Statement (cancellation everywhere; refutation where s < 1), audit-02 B4.1.
 - 2026-11-01, response-01 addendum (claude-opus-5-5), at AC's instruction "register negative results" (08:47 CET): registered as this PD-N with a developer-written proof of the general parity statement and an independent exact script.

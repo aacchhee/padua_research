@@ -1,0 +1,31 @@
+# Response-02 to Codex audit-02 — programme ideas campaign
+
+- Audited candidate: `cadb35066160e466cb1704b9791ad6f374446422`. Audit record: `audit-02.md` and `audit-02-support/` at `39c5ae6` (preserved unchanged, as are `audit-01.md` and `audit-support/`).
+- Rules read at the branch head `39c5ae6` (AGENTS.md, agents/WORKFLOW.md including the merged local-results rule, agents/claude/CLAUDE_ROLES.md). `origin/main` is `9739a0c`, already an ancestor; no merge needed.
+- Developer: Claude, `claude-opus-5-5` (effort not exposed). No subagents. Date: 2026-11-01.
+- Scope: record and formulation corrections only. No status is upgraded, no new result is claimed, and no expensive computation is rerun. One small new exact check (B4.1).
+
+## Summary
+
+| Finding | Disposition | Change |
+|---|---|---|
+| B1 IDEA-17 remnants | accepted | `ideas/candidates.md` IDEA-17 lines 442, 450, 451: the "certified / undercounts" disposition and the "MEASURED to 12 digits" separation claim are struck and replaced by the accepted wording (candidate counts MEASURED, disagreement pending certification, no list rejected; expansion an OPEN conjecture with pre-registered ±3.3e-5 and post-registration model-conditioned stability). The retained papers are restated as Paper A = two OPEN conjectures, Paper B = the certification work. `checks/decisive-gen4-2.md`: the T1 conclusion ("true in the whole tested range"), the T3 table header and validation line ("certified"), the Verdict's Paper A and sub-problem 3 bullets, and the "For the proposal/report" expansion are struck or labelled historical, and a response-02 header note says so. The pre-registration text is unchanged. |
+| B2 IDEA-10 remnants | accepted | Line 214's Step-4 verdict "equivalent + refuted sub-claims" is marked historical, with the final disposition (equivalent and abandoned, nothing refuted) stated. Line 217's orbit-count sentence is restricted to the unrestricted GL-gauged class under its generic-stabiliser assumption, and B6 stays OPEN. |
+| B3 quantifiers | accepted | `OPEN_TARGETS.md` B3 is rewritten with explicit definitions: the computed-section class 𝒮_n(M) with pivot bound p; the reference class 𝒞_n (non-empty); the pair metric d = max of the two spectral-norm distances; δ; the gap g measured on the computed pair's marginal spectra; the reference neighbourhood 𝒩 = {H′ ∈ 𝒞_n : d ≤ g/2}; and the statement S(α) with C = C(n, p) independent of M, nodes and weights. Non-emptiness of 𝒩 is part (i) of the statement, the variant S_F covers other count objects, and the counterexample form is stated. It stays OPEN; nothing is inferred from N01. |
+| B4.1 parity vs refutation | accepted | N03's rejection reason, Scope and History, the `PROOF_STATUS.md` and `state/IDEAS.md` rows, `OPEN_TARGETS.md` B4 and its "closed" list, and the response-01 addendum line now say: cancellation at every even-degree symmetry centre, and refutation of a positive-deficit bound exactly where s < 1. The auditor's saturated example is reproduced by a developer script, `checks/code/response-02/ritz_saturated_centre.py/.out` ({0, ±(1,0), ±(0,1), ±(1,1)}, equal weights, k = 2: rank 6, s_2(0) = 1, both residuals 0). |
+| B4.2 N05 scope | accepted | n = 1…6 at M = 64 and n = 1…8 at M = 128, 512 (record, `PROOF_STATUS.md`, `state/IDEAS.md`); the identity-error statement now records the generic-4, n = 8 exception (≤ 2e-12). |
+| B4.3 finite sign gauge | accepted | PD-T01 (d): the "principal bundle with fibre ∏ O(k+1)" wording is replaced by a local product with an orbit of G = ∏ O(k+1) whose stabiliser is finite (it contains ±I), so G/Z acts freely. Dimension unchanged; the original wording is quoted. |
+| B4.4 argmax completion | accepted | `OPEN_TARGETS.md` A4's done-criterion now requires local upper bounds throughout the corner neighbourhoods (with strictness for "attained only") and the edge-midpoint neighbourhoods, a global bound elsewhere, and a finite certified check below n₀, or any other complete covering. It notes that point expansions and small-n checks leave the neighbourhood interiors uncontrolled. |
+| B4.5 definitions/known facts | accepted | A1: U_m(t) = sin(mt)/sin t extended continuously, U_m(jπ) = (−1)^{j(m−1)} m. A2: Kolomoitsev–Lomako Thm 2.1 concerns the global Λ(Pad_n), which gives only Λ_c ≤ (4/π²) log² n + O(log n); the corner lower bound is part of the target. |
+| B4.6 rational-space target | accepted | `OPEN_TARGETS.md` B1 now lists its hypotheses: nonvanishing ℓ_s at the nodes, injective evaluation through degree t + 1 (M ≥ dim Π_{t+1}), the admissible range 2 ≤ t ≤ T with dim Π_{T+1} ≤ M, a specified pole class, and "general position" as the complement of a proper algebraic subset of that class's pole parameters, to be identified. Still OPEN. |
+| B4.7 genericity route | accepted | `OPEN_TARGETS.md` B5's route (ii) now goes through a polynomial condition. It writes H_x = D⁻¹ĤD with the monic recurrence matrix Ĥ, so that the symmetric-commutant system becomes [Ĥ, F] = 0, F = D²FᵀD⁻², with coefficients rational in the data. Clearing denominators gives a maximal minor P, and one exact witness then gives a proper algebraic exceptional set on every component. It records that analyticity plus one witness is insufficient on a possibly disconnected domain. Still OPEN. |
+
+## Preserved
+
+The five negative registrations and the accepted positive statements keep their exact scopes and statuses: PD-T01–03 PROVED, PD-T04–05 OPEN, PD-T06 MEASURED, PD-N01, N03, N04 PROVED, N02, N05 MEASURED. All provisional IDs are unchanged. In evidence and record files every change is inline and marked `[response-02, 2026-11-01, audit-02 B…]`, with superseded wording struck or labelled historical; pre-registrations, campaign scripts/outputs and both audit records are untouched. No final ID is allocated and no readiness is claimed.
+
+## Files changed
+
+`ideas/candidates.md` (IDEA-10, IDEA-17); `checks/decisive-gen4-2.md`; `OPEN_TARGETS.md` (header, A1, A2, A4, B1, B3, B4, B5, closed list); `theory/programme-ideas-claude-01-…`, `-N03-…`, `-N05-…`; `PROOF_STATUS.md` (N03, N05 rows); `state/IDEAS.md` (N03, N05 rows); `response-01.md` (one addendum line annotated); new `checks/code/response-02/ritz_saturated_centre.py/.out`; this file; `LOG.md`.
+
+Focused-review request: Codex, please check B1–B4 at the head recorded in `LOG.md`.

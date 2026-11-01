@@ -1,0 +1,428 @@
+{
+  "candidate_sha": "cadb35066160e466cb1704b9791ad6f374446422",
+  "current_main": "9739a0c56b7a3976422ce60a8441bfbbfd6554df",
+  "python": "3.12.14",
+  "main_is_ancestor": true,
+  "old_code_output_files_unchanged": 125,
+  "prior_audit_files_unchanged": 31,
+  "protected_against_main": [
+    "AGENTS.md",
+    "agents/codex/CODEX.md",
+    "topics/padua-batch-20261031/ALLOCATIONS.md",
+    "templates/COLD_STORAGE.md",
+    "templates/IDEA.md",
+    "templates/LITERATURE_RECORD.md",
+    "templates/THEORY.md",
+    "templates/TOPIC_LOG.md"
+  ],
+  "theory_statuses": {
+    "PD-T?programme-ideas-claude-01": "PROVED",
+    "PD-T?programme-ideas-claude-02": "PROVED",
+    "PD-T?programme-ideas-claude-03": "PROVED",
+    "PD-T?programme-ideas-claude-04": "OPEN",
+    "PD-T?programme-ideas-claude-05": "OPEN",
+    "PD-T?programme-ideas-claude-06": "MEASURED",
+    "PD-N?programme-ideas-claude-01": "PROVED",
+    "PD-N?programme-ideas-claude-02": "MEASURED",
+    "PD-N?programme-ideas-claude-03": "PROVED",
+    "PD-N?programme-ideas-claude-04": "PROVED",
+    "PD-N?programme-ideas-claude-05": "MEASURED"
+  },
+  "idea_records": 20,
+  "literature_rows": 111,
+  "generated_like_bytes_at_source": 4036814,
+  "largest_generated_like_file_bytes": 535225,
+  "canonical_remnants": [
+    {
+      "path": "topics/programme-ideas-20261031/ideas/candidates.md",
+      "line": 442,
+      "text": "- Separation criterion vs closest entry (and observation that falsifies it): vs IDEA-048: a cell mechanism and a second-order term \u2014 the cell mechanism is falsified (extra maxima are crease pairs straddling zero curves of fundamental polynomials, BDS 2026 Remark 2), the second-order term stands and is now MEASURED to 12 digits; vs LIT-030/031: optimise and identify rather than factor \u2014 falsified as a programme item by BSV 2012 (family and degree-dependent \u039b-optimal parameters, Table 5) and DU 2014 Prop. 1 (separability is a theorem); vs Kolomoitsev\u2013Lomako 2021: exact second term and argmax \u2014 a sharpening, not a renaming (adversarial-gen4-2.md (iv))."
+    },
+    {
+      "path": "topics/programme-ideas-20261031/ideas/candidates.md",
+      "line": 451,
+      "text": "- Disposition and precise rejected scope, if any: retained as project proposal-1 (2\u20133 papers, not a programme), 2026-11-01. Rejected: sub-problem 2 as stated (universal lower bound \u039b \u2265 (4/\u03c0\u00b2) log\u00b2 n \u2212 C log n via the projection constant \u2014 capped at (16/\u03c0\u2074) log\u00b2 n; the generator's entry-point-4 reading rested on a bug and a wrong target constant); sub-problem 3's mechanism (\"unique critical point per Lissajous cell\"); sub-problem 4 as a paper (BSV 2012 family and parameters; DU 2014 separability; dCDM 2015 explicit energy; determinant-optimal sets have \u039b = 6.60 vs 5.92 at n = 10); the published n = 6, 7, 8 counts 39/42/56 and the adversary's 29/38 as undercounts (certified 41/50/62). Retained: Paper A (corner expansion + corner-argmax theorem), Paper B (certified counting tool + corrected table), Paper C (counting theorem with BDS, optional); the absorbed IDEA-20 negative stays a remark."
+    }
+  ],
+  "source_identities": [
+    {
+      "path": "AGENTS.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "8c94c718629649c3f5c89d05e5b674ae5ad3a99c",
+      "bytes": 3159,
+      "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60"
+    },
+    {
+      "path": "ID_CROSSWALK.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "78118069953c38c22dc6aa2e60ccda6e67390cb3",
+      "bytes": 74882,
+      "sha256": "03555775b2b8706669d73cd77ea7cf685e82877d6bbbc7bd31c8e51e30553e31"
+    },
+    {
+      "path": "PROOF_STATUS.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "c711225957692a2f9829aa514f86b5b0ff580074",
+      "bytes": 36477,
+      "sha256": "a39ddf32b7d9388498b35e7a0aaf0f913977ace850179c34616c24a6c1f289dc"
+    },
+    {
+      "path": "agents/WORKFLOW.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "38a6fc1d630aa1a6716c7e7c808dd21a674dc27b",
+      "bytes": 19609,
+      "sha256": "64253ae526179be3ce8303987e3f38b9d7a43f825d1a6e310c99c022ba728554"
+    },
+    {
+      "path": "agents/codex/CODEX.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "16a4ecfea89acd5b1d9cd09c9213094bce144caf",
+      "bytes": 4969,
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b"
+    },
+    {
+      "path": "literature/INDEX.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "279327ef4471e174abf2c4e4a344847babca6fa9",
+      "bytes": 38040,
+      "sha256": "7fc98e2472a01ac964d22b47deb5a07cb3b6e368623116b961e249ecaf8927ed"
+    },
+    {
+      "path": "state/IDEAS.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "60580dbe8be3e373837a0a6a04ec8810af0e87e8",
+      "bytes": 64471,
+      "sha256": "183a4a13481aec97b4a7673b36d87f7ec799009ca68d859e299b24f80d804992"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/LOG.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "6c1ba188eb9cd4512642d331029c0ecc3ab1b871",
+      "bytes": 23122,
+      "sha256": "89e592a38290cec377c9995958eea2cc9f189195ce9f99cd5dbde20348eda5d4"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/OPEN_TARGETS.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "7d19248df1d6897b370035a122b8104bb48c724f",
+      "bytes": 12184,
+      "sha256": "24135cbdca62c1f1bb37893b5701fd6152ee9390f296d2d90acb9c9d99a8df84"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/audit-01.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "a14f9abda25112ba5757ab684496d123d534388c",
+      "bytes": 20419,
+      "sha256": "d577b69eec5d84626de84628bbfcb20f127d9daee4f29465f97d0ee442a7f35e"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/brief.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "4b1cdf155988d4d63e5a9bf2696568f1ed8c66d1",
+      "bytes": 16903,
+      "sha256": "385fe3a852974707aa3aafca971f7f4e8e734982f536972f631b80f5b559be22"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/adversarial-M1.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "6b735af2ef7bb225f4df32c16d095bb8d4ff71e0",
+      "bytes": 39534,
+      "sha256": "61a5b520fc75a65a061e954762c5567f7b9f8c6aab12fa6afb7a70753e00937a"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/adversarial-M2.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "428ab40a512946efc0e75e3d690c2608f48aa52c",
+      "bytes": 44811,
+      "sha256": "3dea8d6da569deccaf2ddaca9ab4b22d53d88852ba3b4e29a16b6e3ca6d43b9d"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/adversarial-gen2-3.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "9b835b7086d29b3f887cabbd2fa5eec57810c12a",
+      "bytes": 31750,
+      "sha256": "bb44182e676c00cf4ceff6cb6ef9775b5163ad87edfd45bbc3e4d101ab736cc4"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/adversarial-gen3-1.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "12fb80f359b57aa754afb4d79572ede61d57d207",
+      "bytes": 31508,
+      "sha256": "30cf095069309443ac1c133266b60864d8978fadb4c63dca0a31a6447aae7875"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/adversarial-gen4-1.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "2dd0b3317fc3e17d1e5861ce11f66a208578b0aa",
+      "bytes": 30984,
+      "sha256": "1cd707128699fbf05f0bad2191ec0f9d1936414647ef132cdf66b98126ae61ca"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/response-01/inertia_two_node_family.out",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "b42fd9a07ba35ea44db1964bb9944f97fcdb82ba",
+      "bytes": 1783,
+      "sha256": "24a338251566b8acfccc5cbb5a485b3e38f710851735ab6c84e18347e98f68d2"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/response-01/inertia_two_node_family.py",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "a003bbf38c83675e417cbea8778d2827d0ab3dde",
+      "bytes": 2529,
+      "sha256": "30803cf7207c81b39a911ea4242b6246f7a2f5d4daab1750846e9358cc7f9288"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/response-02/padua_n3_edge_identity.out",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "905ea21b275434dd251e4ab6de2e3b412a56dc8e",
+      "bytes": 92,
+      "sha256": "edcf466f534d6d568d22e1e9b78effa74f238b0963da23a2e7a93b367f2370ff"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/response-02/padua_n3_edge_identity.py",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "cf12a6704ecc1141f906ddb431c94e9330ab9173",
+      "bytes": 1203,
+      "sha256": "b051f2d9ce76af5e7bd1af600d104928b57563ceec19b7487b1faca63c17160d"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/response-02/padua_pattern_commutant.out",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "bf1f422b6ce3fb5cd7e184f13a6c5026c9a64a15",
+      "bytes": 356,
+      "sha256": "99d3f79c13a815e393b8fd4c68b7ac6c638ca0a61dea035a0713be0d152dd046"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/response-02/padua_pattern_commutant.py",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "651de429a439a75aab0d8ab3bcf9e47a6e33c3d0",
+      "bytes": 3208,
+      "sha256": "abb786981421ffeb4a81f7eb175fb2fb1fa70cef7e71f7649d43bf4c2aa4a87b"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/response-02/ritz_converse_parity.out",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "6c542c869a1cb9baeda35d2e69625d5cc6e08592",
+      "bytes": 631,
+      "sha256": "1c41cc733035b5470f6ea62912c6849657b732c125c1e8fbcac95cefae589894"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/code/response-02/ritz_converse_parity.py",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "8248aff12149152813860f24b8073c45457b71b7",
+      "bytes": 1701,
+      "sha256": "7dfd5b570132971e2ea41bda71bf412535533d0d75714e7950995c4cc25f82da"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/decisive-gen1-3.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "363e03e2c7a9af8cce4d9c23c558a79cfb699eef",
+      "bytes": 30028,
+      "sha256": "3e950d1b47b8ec87ffd9ebeed91f8fd27f22f4716d23507918f98dd86eb7825e"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/checks/decisive-gen4-2.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "0b6d226c97dda328cc571c8ea4a591ddba780537",
+      "bytes": 27880,
+      "sha256": "ca43e4bc5b9e8c4910dc64a06ea93fe33d1d33fb40505d63b16a032d4e68435f"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/gate-rejected.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "5f2a5af08ee6188a8c93d314bf522d8870f14ff2",
+      "bytes": 47974,
+      "sha256": "67e2a51ed1eb523362751a6ae30e2c61680c80cb41c2095836568b4558ca0fcb"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/gate.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "910bc1dd15f30df66a98faf214a8dbe5e250522e",
+      "bytes": 53414,
+      "sha256": "f5b967499803cec6e872af23c9560186e2296f3101f65a9e9429726ddee7e428"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/ideas/candidates.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "5ff6097e49451c4119719faf47399dd5768abaa1",
+      "bytes": 121144,
+      "sha256": "d079d870350603d63ebae2fbfc9c98ecccb91f54e8b6d5df4cac2a37c7e2286e"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/lit/baseline.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "2d7f4c7d8356756b56acfafdbfcd3e6418d9fd82",
+      "bytes": 80856,
+      "sha256": "078631b7d618c22365634354edecfeb419eb0e71a9c7736d06c1bda82bd51f85"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/proposal-1.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "0045fcd6d183abf7dcdd533c3cb2a1a52768579b",
+      "bytes": 10702,
+      "sha256": "d72383b919208ecfebd54e2d483d213020d7b7035813ad4ef242d57bc0beac9a"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/report.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "b7e959241f2404b0f79b0b914cc4386a23a16886",
+      "bytes": 50847,
+      "sha256": "71ef9f0e620f60a58f36b37255c1d917e086a64981bb94fa0e4b578c31c0dadc"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/response-01.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "bce1777403c768981d1f5c2494f1e651885c6ba1",
+      "bytes": 22713,
+      "sha256": "8f080f2fe1239e2eb4e70ab404607737a978402f00c0362a753aa1e75ac64605"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/sources/campaign-inputs/ADVERSARIAL_COMMON.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "a7dd7ee159c191103b51174c55c91932e2d771f2",
+      "bytes": 4710,
+      "sha256": "a98b7ed31fe2962668c0238eb3cfa601619f31440059c71304c9830a804dd9da"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/sources/campaign-inputs/BRANCH_SNAPSHOT_NOTE.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "58cd031bfd168c5896b4f7e98bc51c1aa660a385",
+      "bytes": 661,
+      "sha256": "9a016489c346b0d625274cd7d415afbf11d7fba7c4bfaf5045cb84081f8ceb00"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/sources/campaign-inputs/CAMPAIGN_CONTEXT.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "638f3f5ba85d81856944f3bcec090b7bb8c22848",
+      "bytes": 6509,
+      "sha256": "8887e3dcca13643ee8a50c2f193bab783e318e468a1d7f8355fd5bcf1c7f1146"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/sources/campaign-inputs/COLD_STORAGE.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "d93512479d6877eb56ac501d1bd5a56d22bc72f1",
+      "bytes": 9029,
+      "sha256": "2ea6d9849780ac04e29b5d521050410a77de10c73e3236bc5b8ac993e9b9a253"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/sources/campaign-inputs/DECISIVE_COMMON.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "69fc6a409bb6acdbf689f6a2ca43483f4d687bb7",
+      "bytes": 2500,
+      "sha256": "21bd3d2fcc8c8c5d74f4ed6c7c8de83e9e8934a7c46c7270adb19c8006a9f8d6"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/sources/campaign-inputs/GENERATOR_COMMON.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "58f835e4682f71a2b4e40a6ed3ecc04cf2198ec2",
+      "bytes": 4297,
+      "sha256": "dae7d67f521e0f0fd8ea803e696a00994c5ad93ec3ae43b52fb9868c95844d81"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/sources/campaign-inputs/README.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "750e0601a40312b45faf2efccd99ad5c3879f589",
+      "bytes": 2966,
+      "sha256": "d3314a6d51d1950fbb9ad9e0f6ca8cc0a44d01a7e05e757bd85d7564cc1277b3"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/sources/campaign-inputs/SHA256SUMS.txt",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "4435fa91f20ef1c020439fd4f3ad97babd802db0",
+      "bytes": 515,
+      "sha256": "932be76dfb482cc98087603016fd367174d8f9413c0f35826818d4b7a7e834ef"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/sources/campaign-inputs/provenance.json",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "9de4517747a0e63d82c004c99206c5f299faaa98",
+      "bytes": 75429,
+      "sha256": "6e711d8238923349904b7e99d802eefe17ddcd12fba45e549dad05b7b8263349"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/sources/campaign-inputs/provenance.py",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "97ee9d77771eac22f9b78425c53ade2058469363",
+      "bytes": 1859,
+      "sha256": "de203b7f870b3ba98e9391346b41d94d16a195e18906dd6ee486a740401ea65f"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-01-finite-favard-pattern-pairs.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "640eec26cec8a891f04ce444e68ba5760be97486",
+      "bytes": 11046,
+      "sha256": "31e4de97c465f6a09b8114ed5090b3996155dc9072999311fccde5733f4e42ff"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-02-joint-ritz-saturation-bound.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "32d56f801ec298423484bf811aeeb91ed2559ae5",
+      "bytes": 5488,
+      "sha256": "0ed649103e3de3f1c22875ebb4bed26e1d4c252ba14d1ac971581fd084c8c193"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-03-compressed-commutator-identity.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "809f81d6f02b62927038c1d881165ef39087c6fd",
+      "bytes": 4310,
+      "sha256": "4c9156af4f1cb5117d961bc756fbab2bb42eebf2f6180317b657635912f9e83e"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-04-padua-corner-expansion.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "427d6c3dae2a2f2b97e146036a839ce3da4e8e21",
+      "bytes": 5448,
+      "sha256": "35abb6bd74b427bf4c8bc258476e6a506d11150a78abeca2735e0e94569abac2"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-05-padua-corner-argmax.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "2f2e60792cc35a0b0cc6e94a5e0eb631a8f3eed5",
+      "bytes": 3001,
+      "sha256": "47fbbf90a9a985e600519602f13c4b4fd277f6d8c7c9d3da738dac2509711185"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-06-padua-lebesgue-maxima-counts.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "d35d82a4ab55355062918f7297a9da3ad3227386",
+      "bytes": 6445,
+      "sha256": "ff53d00c2ec0f00e2716cd47a7f57ce53c27a7b51484b3473e9d5742c60d8650"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N01-symmetrised-product-inertia-count.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "ab8eecdf50fd23b58c6e61924c17a2ef4c9554b7",
+      "bytes": 7215,
+      "sha256": "a244fd7531ae09b6f69ea00b44b90225a0eeb1e4eddcdba6725eb24b03af0d1e"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N02-windowed-rational-lanczos-instability.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "ddfc7c06ca2c73891bb8f5b231f04215410a5f0a",
+      "bytes": 5696,
+      "sha256": "777beb22f8364b21e7ecf03e930e586f563e11b361e9fecaacb1b67e956f395b"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N03-joint-ritz-converse-refuted.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "1e2be11ea7ae99f5d39512569b06af8a15d60aee",
+      "bytes": 4950,
+      "sha256": "2debf8b26405be9f10eb9fb8827f1a8f01df1757f280c0fdac8ffbde9a19e75a"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N04-pattern-commutant-not-three-dimensional.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "0ea8848d9cf69f216fe5d684e866ff5577b85711",
+      "bytes": 4360,
+      "sha256": "5755fa21b7336917b4bf7bde66147bf0750ed41e65d3c037a90f103a10511b9f"
+    },
+    {
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N05-fourier-basis-commutation-fails.md",
+      "source": "cadb35066160e466cb1704b9791ad6f374446422",
+      "git_blob_sha": "61150b5ad627a9352853445029b9256105ed82da",
+      "bytes": 3614,
+      "sha256": "3c37dd27b5ef0d051ec57850c05ba6eabadef03778337be57419aad8b786bde5"
+    }
+  ],
+  "result": "PASS for structural checks; canonical claim contradictions require developer response"
+}
