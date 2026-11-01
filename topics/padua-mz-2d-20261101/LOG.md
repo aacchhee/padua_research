@@ -3,7 +3,7 @@
 - Branch: `codex/padua-mz-2d-20261101` · Base/rules read: `cf89b140530d5838bdb208a8c28f3e7aa676ace3`.
 - Role: Codex orchestrator. Root model/effort metadata is runtime-unexposed; delegated mathematics uses `gpt-6.1-sol xhigh`, code/mechanical work `gpt-6.1-sol medium`. No ultra allocation.
 - Stage: PR (documentation-only response complete). Claude Opus 5.5 xhigh audit-01 ACCEPTED the scoped mathematics; six P3 record findings addressed in [response-01.md](response-01.md). PR14 stays draft pending AC's merge order and integration preparation.
-- Open handoff: [03-response.md](handoffs/03-response.md), Codex gpt-6.1-sol medium (high for F1); input `0d48727f13bf8afcf8c21568ed71572c305552a5`. Handoff 02 done in `0d48727f13bf8afcf8c21568ed71572c305552a5`.
+- Open handoff: [04-readiness.md](handoffs/04-readiness.md), Codex gpt-6.1-sol medium; response output `97a8e2ff0df9907536733b25ecd35ae74892d660`. Handoff 03 done in that output commit; handoff 02 done in `0d48727f13bf8afcf8c21568ed71572c305552a5`.
 - Reserved final-ID ranges: PD-T106–135 (30), PD-N044–061 (18), IDEA-210–245 (36), LIT-427–444 (18), including permanent headroom. Assigned PD-T106–117, PD-N044–053, IDEA-210–227 and LIT-427–428, with five source-ID reuses. Dated current recheck: [response-01 reservation receipt](protocol/response-01-20261101-reservation-recheck.json). Batch ledger: [ALLOCATIONS.md](../padua-batch-20261031/ALLOCATIONS.md). No new allocation in this response.
 - Scientific outcome: D1 PASS; exact alias/defect structure, replayed finite spectra and eta>3/4 witness, corner formula, diamond reconstruction, corrected signed hyperinterpolation scope, tensor-control theorem. Existing PD-T028 stays OPEN. Floating computations are MEASURED. Full statuses: [report.md](report.md).
 
