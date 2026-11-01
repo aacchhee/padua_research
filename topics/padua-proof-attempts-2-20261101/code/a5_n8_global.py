@@ -30,6 +30,8 @@ def produce(cert):
   return[fixed+sum(1<<i for j,i in enumerate(amb)if bits>>j&1)for bits in range(1<<len(amb))]
  flatmax=-10*S;flatn=0
  for leaf in cert['leaves']:
+  # Generic theorem53 excludes even a weak interior local maximum here.
+  if 'all_gradient'in leaf:continue
   indices=[i for i,v in enumerate(leaf.get('patterns',[]))if v['code']in('flat','factor')]
   if not indices:continue
   Q=pathbox(leaf['path']);masks=masklist(Q)

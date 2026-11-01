@@ -1,0 +1,47 @@
+{
+  "environment": {
+    "FLINT": "3.6.0",
+    "backend": "flint",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "python_flint": "0.9.0",
+    "sympy": "1.14.0"
+  },
+  "files": [
+    {
+      "bytes": 6905,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n7_field.py",
+      "sha256": "678a4fb4cb2e7a8d2a1b045b872d1fca2378ab5b7d929abfa5db04e8376961dd"
+    },
+    {
+      "bytes": 4848,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n7_nodes.py",
+      "sha256": "d3717492025c6f9bc1cf29861eabb2106f8792609bf8824eb3a3dd422be521c1"
+    },
+    {
+      "bytes": 12119,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n7_boxes.py",
+      "sha256": "d668e607df8f0b869887065816ef649468eca468a43b164ec2b913227f334e69"
+    },
+    {
+      "bytes": 10203,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n7_boundary.py",
+      "sha256": "fbf66bd14a76bab02d689a5ef7cdf56e6ca1a095c736f2ee21ad29fd354d66b0"
+    },
+    {
+      "bytes": 3569,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n7_global.py",
+      "sha256": "ca6c636dfd64ef00a5af2f9038524ff280223397415409aee2a4c7ac469a6418"
+    },
+    {
+      "bytes": 7945,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n7_schema.md",
+      "sha256": "10e37040d2e060c26934a67b34f95c00a172075a6876e2299c098f6ef6eb5b59"
+    }
+  ],
+  "format": "a5-n7-frozen-sources-v1",
+  "root_controls": {
+    "constant_no_roots": true,
+    "exact_rational_singletons": true
+  },
+  "scope": "producer frozen before final full run; no count claim"
+}

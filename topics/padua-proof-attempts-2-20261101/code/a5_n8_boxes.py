@@ -1,11 +1,23 @@
 """Exact n8 spatial certificate producer; all old degree sources are read-only."""
-import argparse,json,time,sys,gzip
+import argparse,json,time,sys,gzip,os,tempfile
 from collections import Counter
 from functools import lru_cache
 from math import lcm
 from a5_n8_field import *
 
 def encbox(Q):return[[str(F(v,S))for v in Z]for Z in Q]
+def write_artifact(out,path):
+ data=json.dumps(out,separators=(',',':'),sort_keys=True).encode()
+ payload=gzip.compress(data,mtime=0)if path.endswith('.gz')else data
+ directory=os.path.dirname(os.path.abspath(path));temporary=None
+ try:
+  with tempfile.NamedTemporaryFile(mode='wb',dir=directory,prefix=os.path.basename(path)+'.',suffix='.tmp',delete=False)as f:
+   temporary=f.name;f.write(payload);f.flush();os.fsync(f.fileno())
+  os.replace(temporary,path);temporary=None
+ finally:
+  if temporary is not None:
+   try:os.unlink(temporary)
+   except FileNotFoundError:pass
 def hull(Q,R):return[(min(Q[i][0],R[i][0]),max(Q[i][1],R[i][1]))for i in range(2)]
 def precondition(Hxx,Hxy,Hyy,Q):
  c=[(Z[0]+Z[1])//2 for Z in Q];X=(c[0],c[0]);Y=(c[1],c[1])
@@ -47,6 +59,12 @@ def solve(args):
   selected=[i for i in range(45)if mask>>i&1]
   pc=tuple(tuple(2*sum(LC[i][j][k]for i in selected)-(den if j==0 and k==0 else 0)for k in range(12))for j in range(45))
   return pc,dterms(pc,1,0),dterms(pc,0,1),dterms(pc,2,0),dterms(pc,1,1),dterms(pc,0,2)
+ @lru_cache(maxsize=args.cache_masks)
+ def fixed_gradient(fixed,ambiguous):
+  positive=[i for i in range(45)if fixed>>i&1];amb=[i for i in range(45)if ambiguous>>i&1]
+  # Partition of unity: forced background =2sum_positive Li+sum_amb Li−1.
+  pc=tuple(tuple(2*sum(LC[i][j][k]for i in positive)+sum(LC[i][j][k]for i in amb)-(den if j==0 and k==0 else 0)for k in range(12))for j in range(45))
+  return dterms(pc,1,0),dterms(pc,0,1),dterms(pc,2,0),dterms(pc,1,1),dterms(pc,0,2)
  roots=[];special_cache={};factor_cache={}
  special=[]
  Xlist=list(dict.fromkeys(z[0]for z in nodes));Ylist=list(dict.fromkeys(z[1]for z in nodes))
@@ -127,6 +145,18 @@ def solve(args):
    continue
   lv=[centered(p,LX[i],LY[i],X,Y)for i,p in enumerate(LT)];sg=[sign(v)for v in lv];amb=[i for i,z in enumerate(sg)if not z];maxamb=max(maxamb,len(amb))
   fixed=sum(1<<i for i,z in enumerate(sg)if z>0)
+  background=fixed_gradient(fixed,sum(1<<i for i in amb));all_axis=None
+  for axis,derivatives in enumerate((LX,LY)):
+   G=evaluate(background[axis],X,Y)
+   radius=sum(max(abs(z)for z in evaluate(derivatives[i],X,Y))for i in amb)
+   if not sign((G[0]-radius,G[1]+radius)):
+    G=centered(background[0],background[2],background[3],X,Y)if axis==0 else centered(background[1],background[3],background[4],X,Y)
+   if sign((G[0]-radius,G[1]+radius)):
+    all_axis=axis;break
+  if all_axis is not None:
+   stats['discard']+=1;stats['all_gradient']+=1;leafstats['all_gradient']+=1
+   if args.certificate:leaves.append({'path':path,'all_gradient':all_axis})
+   continue
   codes=[];ok=False
   if len(amb)<=args.ambiguity or d>=args.full_depth:
    ok=True
@@ -158,15 +188,18 @@ def solve(args):
   if m in Z:raise AssertionError('precision exhausted')
   q1=[X,Y];q2=[X,Y];q1[axis]=(Z[0],m);q2[axis]=(m,Z[1]);pending.extend([(*q2,d+1,path+'1'),(*q1,d+1,path+'0')])
   if stats['visited']%1000==0:print(json.dumps({'seconds':time.time()-t0,'stats':dict(stats),'pending':len(pending),'depth':deepest,'unresolved':len(unresolved),'Pcache':pdata.cache_info().currsize}),flush=True)
- summary={'seconds':time.time()-t0,'stats':dict(stats),'pending':len(pending),'depth':deepest,'unresolved':len(unresolved),'Pcache':pdata.cache_info().currsize,'interior':len(roots),'leaf_counts':dict(leafstats),'leaf_pattern_records':sum(v for k,v in leafstats.items()if k!='node_cone'),'node_leaves':leafstats['node_cone'],'maximum_ambiguity':maxamb,'interior_complete':not pending and not unresolved,'complete':False}
+ summary={'seconds':time.time()-t0,'stats':dict(stats),'pending':len(pending),'depth':deepest,'unresolved':len(unresolved),'Pcache':pdata.cache_info().currsize,'interior':len(roots),'leaf_counts':dict(leafstats),'leaf_pattern_records':sum(v for k,v in leafstats.items()if k not in('node_cone','all_gradient')),'node_leaves':leafstats['node_cone'],'all_gradient_leaves':leafstats['all_gradient'],'maximum_ambiguity':maxamb,'interior_complete':not pending and not unresolved,'complete':False}
  for rr in roots:rr.pop('_R');rr.pop('_C')
  out={'field_embedding':embedding_record(),'pattern_order':'compatible-mask','interior_roots':roots,'format':'a5-n8-spatial-v1','n':8,'precision':PREC,'node_cones':node_cones,'summary':summary,'unresolved':unresolved,'pending_paths':[v[-1]for v in pending],'leaves':leaves}
  out['metadata']={'python':sys.version,'sympy':s.__version__,'backend':str(s.external.gmpy.GROUND_TYPES),'source_sha256':__import__('hashlib').sha256(open(__file__,'rb').read()).hexdigest(),'seed':None,'mathematical_run_deterministic':True}
  if args.boundary and summary['interior_complete']:
+  # Persist the complete interior proof with closed-square complete still false.
+  # A boundary interruption must not erase the expensive tree and node evidence.
+  write_artifact(out,args.output)
+  print(json.dumps({'interior_checkpoint':args.output,'interior_complete':True,'complete':False}),flush=True)
   from a5_n8_boundary import boundaries
   e,c,bs,bu=boundaries(nodes,L);out['edges']=e;out['corners']=c;out['boundary_summary']=bs;out['unresolved'].extend(bu);out['summary'].update(edge=bs['edge'],corner=bs['corner'],total=len(roots)+bs['edge']+bs['corner'],complete=not bu)
- data=json.dumps(out,separators=(',',':'),sort_keys=True).encode();f=gzip.open(args.output,'wb')if args.output.endswith('.gz')else open(args.output,'wb')
- with f:f.write(data)
+ write_artifact(out,args.output)
  print(json.dumps(summary),flush=True)
 
 if __name__=='__main__':

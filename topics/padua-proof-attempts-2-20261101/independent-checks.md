@@ -24,11 +24,18 @@ These ordered targets have not started or been submitted for independent executi
 - `/root/a2_independent_route` (gpt-6.1-sol xhigh) inspected full reductions08/09, count reduction10, global argument11 and schema; supporting/conditional mathematical scope and hashes are in independent-checks-a5-n4-reduction.md. No computation is claimed by that reader.
 - `/root/a5_n4_checker` (gpt-6.1-sol xhigh) implemented a separate verifier without producer imports/search/isolation, passed the full final count/global certificate and meaningful counterfeit/coverage controls. Predicate proofs and actual commands are in independent-checks-a5-n4-checker.md.
 - `/root/input_manifest` (gpt-6.1-sol medium) actually regenerated count and global certificates in a fresh process, checked both matching pairs with the frozen final verifier, and replayed11controls. Every required flag passed; all source pins remained unchanged. Own outputs and exact scope/versions/backend/timing differences: independent-execution-a5-n4.md.
-- N4 statuses are supported by complete evidence; n5…8 remain OPEN until their own checks finish. Required Claude Part2 audit remains PENDING.
+- N4 statuses are supported by complete evidence; every other degree requires its own checks recorded below. Required Claude Part2 audit remains PENDING.
 
 ## A5 n=5 complete
 
 - Analytic15/18 and count/global16/17 were independently reconstructed by /root/a2_independent_route (gpt-6.1-sol xhigh); scope and draft-proof hashes in independent-checks-a5-n5-reduction.md. Its separate independent-checks-a5-node-gap-n6.md accepts structural19 and n6field40/schema after a positive-epsilon correction; these supporting proofs do not certify n6.
 - /root/a5_checker (gpt-6.1-sol xhigh) separately implemented a verifier, reconstructing all cardinals and exact node breakpoints without producer imports/search. Full count/global evidence and27negative+4positivecontrols passed; commands/hashes/predicates in independent-checks-a5-n5-checker.md.
 - /root/input_manifest (gpt-6.1-sol medium) actually regenerated complete count/global artifacts, checked both own and developer matching pairs, ran all31controls, compared decoded mathematics after only documented timings/raw bindings and rechecked all6source pins. Full evidence: independent-execution-a5-n5.md.
-- Root read all analytic arguments and actual full-mask/node/global checker code. N5 is closed within its stated finite scope; n6–8 remain OPEN. Required Claude Part2 audit remains PENDING.
+- Root read all analytic arguments and actual full-mask/node/global checker code. N5 is closed within its stated finite scope; higher-degree cases require their own evidence below. Required Claude Part2 audit remains PENDING.
+
+## A5 n=6 complete
+
+- Field40/schema and generic15/18 were independently mathematically reconstructed; see independent-checks-a5-node-gap-n6.md. No finite count is inferred from those supporting proofs.
+- /root/a5_n4_checker (gpt-6.1-sol xhigh) independently implemented formal field arithmetic, exact Vandermonde reconstruction, full prefix/mask/node/boundary/global verification. Actual full41/global and38controls passed on frozen34d8c0b7…/fd926f0d… sources. Full predicates, commands and identities: independent-checks-a5-n6-checker.md.
+- /root/input_manifest (gpt-6.1-sol medium) actually regenerated all cones/count/global data, checked its own matching pair, then sequentially ran38controls on the developer pair; their positive invokes full count/global verification. Both143resource interruptions are explicitly not passes. All8source hashes unchanged; mathematical payloads agree after only documented timings/raw binding. Completed commands/results/identities: independent-execution-a5-n6.md.
+- Root reconstructed global42's non-strict cases, inspected actual coverage/value flags and evidence sizes. Count41/global42 are PROVED; n7/n8 remain OPEN pending full evidence. Required Claude audit PENDING.

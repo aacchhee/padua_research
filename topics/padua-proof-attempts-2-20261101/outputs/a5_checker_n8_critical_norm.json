@@ -1,0 +1,15 @@
+{
+  "Dr_degree": 7,
+  "axis": 0,
+  "checker_sha256": "ae564ff72e220808c1998b473a37cf4b2a2f15714eca82765b6f4de682c1ad55",
+  "checker_sha256_after": "ae564ff72e220808c1998b473a37cf4b2a2f15714eca82765b6f4de682c1ad55",
+  "exact_norm_equality": true,
+  "mask": 30977923165959,
+  "native_norm_seconds": 1.4157678440005839,
+  "norm_degree": 84,
+  "rational_sample": "1/10",
+  "scope": "actual signed edge-derivative norm arithmetic control; no root isolation or maxima count",
+  "side": -1,
+  "source_unchanged": true,
+  "tensor_norm_seconds": 1.2724847410008806
+}

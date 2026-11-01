@@ -23,13 +23,13 @@ A complete accepted count certificate plus separate exact value bounds: every fl
 
 ## Status by part
 
-Overall status: **OPEN** pending final checker and actual different-agent execution of the complete count/value predicates.
+Overall status: **PROVED** by the accepted complete count/value certificates, separate exact checker and actual different-agent regeneration/replay. Required Claude audit remains PENDING.
 
 | Mathematical part | Status | Evidence / remaining obligation |
 |---|---|---|
-| exact global value and complete argmax set | OPEN | full developer count/value files produced; independent full verification and rerun pending |
+| exact global value and complete argmax set | PROVED | both matching count/value pairs accepted by the separate frozen checker; fresh regeneration and all38 controls actually passed |
 
-The analytic exclusion argument is written below, but the finite value predicates are not promoted before actual final checks. Required Claude audit remains pending.
+The analytic exclusion argument and every finite value predicate are complete. Required Claude audit remains pending.
 
 ## Depends on
 
@@ -49,7 +49,9 @@ Observed developer predicates: all54 flat leaf occurrences have signed-polynomia
 
 8526311743724763702119888371493549 / 5192296858534827628530496329220096 < 5;
 
-all25 interior root boxes and all14 edge root intervals have value upper endpoint below5; both non-node corners have exact FIELD valueC>5; node corners have value1. No factor or regular-point disposition occurs in this particular count certificate. Node-cone leaves require no mask-value enumeration:15 gives radial ascent away from their exact value1 nodes. Every bound must still be accepted by the separate checker and actually rerun by a different agent.
+all25 interior root boxes and all14 edge root intervals have value upper endpoint below5; both non-node corners have exact FIELD valueC>5; node corners have value1. No factor or regular-point disposition occurs in this particular count certificate. Node-cone leaves require no mask-value enumeration:15 gives radial ascent away from their exact value1 nodes. These finite bounds are checked separately from the supporting analytic implication.
+
+Completed verification update: the final separate checker actually accepted all these global predicates, including `global_no_nonstrict_plateau_above_cut=true`, on the developer pair; its all38-controls execution also passed. The different executor's fresh count/global pair was independently regenerated and its matching full checker accepted the same exact value and attaining set. Its global mathematical contents equal the developer contents after removing only the matching raw count-gzip binding. Exact final-source commands and identities are in the two N6 verification receipts linked from41. The sequential executor controls then completed with exit0 in564.364826564seconds, all38 cases passed, including another complete developer-pair count/global positive. Final post-exit hashes of all eight sources/schema/checker files matched their frozen inputs. The executor receipt is final; no finite value predicate remains pending.
 
 ## Sources
 
@@ -67,12 +69,14 @@ The other corners are exact interpolation nodes of value1. Therefore only the tw
 
 ## Scope
 
-Exactly n6, conditioned at development stage on the finite predicates actually passing. No all-degree corner theorem, neighbourhood expansion or n7/n8 global conclusion follows. The final status remains OPEN until those checks complete.
+Exactly n6. No all-degree corner theorem, neighbourhood expansion or n7/n8 global conclusion follows. The strict-count certificate alone is not the global proof: all exceptional values and non-strict cases above are separately covered.
 
 ## Open items
 
-Final separate full count/value checker, actual different-agent producer/global/checker execution and receipts; required Claude audit. Preserve every failed bound or unresolved candidate rather than inferring global maximality from the strict list alone.
+Required Claude audit of the Part2 branch. The complete count/value verification, fresh different-agent regeneration and all control executions are complete; there is no remaining unbounded exceptional leaf or unresolved value candidate in n6.
 
 ## History
 
 2026-11-01, Codex `/root/a5_n4` assignedn6, inherited gpt-6.1-sol xhigh; rules842dfaaeff524b4db4141d314afff6ad4a5b7721. Full developer values completed11:00UTC. Initial statusOPEN preserves the pending finite verification obligations; no source correction is claimed before certification.
+
+2026-11-01 final verification checkpoint: promoted the unchanged n6 global statement OPEN→PROVED after actual final acceptance of both matching count/value pairs, fresh regeneration, all38 controls and unchanged source identities. The original initial-OPEN history is retained; required Claude audit remains PENDING.

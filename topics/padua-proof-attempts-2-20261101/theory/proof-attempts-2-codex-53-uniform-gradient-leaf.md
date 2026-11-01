@@ -31,7 +31,7 @@ The every-active-polynomial comparison proved in18 and elementary interval inclu
 
 ## Checks
 
-NewN7 implementation only. Each direct leaf records its coordinate and is independently verified by reconstructing P_F and all ambiguous derivative intervals. Existing cardinal bounds and compatible-mask order are unchanged. Counters distinguish direct all_gradient leaves from ordinary mask records. A tree with this new leaf type is accepted only after the independent verifier implements this exact predicate.
+NewN7 implementation only. Each direct leaf records its coordinate and is independently verified by reconstructing P_F and all ambiguous derivative intervals. G may be the intersection of natural and centered mean-value intervals using exact first/second derivatives of P_F; the ambiguous derivative majorant remains natural. Existing cardinal bounds and compatible-mask order are unchanged. Counters distinguish direct all_gradient leaves from ordinary mask records. A tree with this new leaf type is accepted only after the independent verifier implements this exact predicate.
 
 ## Sources
 

@@ -19,11 +19,11 @@ Exact field arithmetic in Q(a,b),112-bit outward fixed dyadics, complete verifie
 
 ## Status by part
 
-Overall status: **OPEN** pending final complete checker and actual different-agent producer/global/checker execution.
+Overall status: **PROVED** by the complete exact certificate, separately implemented checker, and actual different-agent producer/global/checker execution. Required Claude audit remains PENDING.
 
 | Mathematical part | Status | Evidence / remaining obligation |
 |---|---|---|
-| exact25/14/2 strict counts | OPEN | full developer certificate completed with zero unresolved cases; final separate checker and independent execution pending |
+| exact25/14/2 strict counts | PROVED | complete finite coverage accepted by the frozen separate checker; fresh different-agent producer and matching full replay plus all38 controls passed |
 
 Supporting40,15 and18 are separately PROVED analytic implications and do not make this count PARTIAL. Required Claude audit of the Part2 branch remains pending.
 
@@ -50,17 +50,19 @@ Developer interior phase887.948428154s:55607visited boxes,27804final leaves,1504
 
 All28 exact node cones were constructed with complete feasible-side breakpoints and certified positive gaps/remainder cubes. Boundary phase142.734915733s:228actual sign masks(49,49,75,55) and all complete rational norm-root partitions; dispositions864outside,3890chosen-embedding derivative exclusions,470strict tangent minima,428incompatible signs and14accepted edge maxima. All restricted cardinals are nonzero, the multiplicity-one crease cover passed, and no zero-normal/tangent-degenerate case was left unresolved. Four corners yield two exact nodes and two all-active inward-descent maxima.
 
-New producer modules: `a5_n6_field.py`, `a5_n6_nodes.py`, `a5_n6_boxes.py`, `a5_n6_boundary.py`; schema `a5_n6_schema.md`. Separate independently owned verifier: `a5_checker_n6.py`, which imports none of these producer modules and reconstructs its own formal field/cardinals/intervals/norms. Actual full checker command/hash/output and actual different-agent completion remain Runs needed. Pilot verifications are not represented as final acceptance.
+New producer modules: `a5_n6_field.py`, `a5_n6_nodes.py`, `a5_n6_boxes.py`, `a5_n6_boundary.py`; schema `a5_n6_schema.md`. Separate independently owned verifier: `a5_checker_n6.py`, which imports none of these producer modules and reconstructs its own formal field/cardinals/intervals/norms. Pilot verifications are not represented as final acceptance.
+
+Completed verification update: the frozen separate checker `34d8c0b7afb261d5f082022f49a84ec6e741f50de31904da5f4221f02f9673c8` actually accepted the full count/global pair in952.450290653seconds, exit0. Its separate controls harness `fd926f0d390ab2336476d054bfcee89aba97c624487f8acd0e64491c664633e0` actually passed all38 controls in1093.837045029seconds, including another full positive count/global replay. The exact commands and output identities are in `../independent-checks-a5-n6-checker.md`. The different executor's fresh producer, with no node-file, also completed and its matching full checker actually accepted41 and the global predicates in590.993498943seconds. Its decoded count artifact equals the developer artifact after removing only the two phase timers. The executor's sequential full controls actually completed with exit0 in564.364826564seconds: all38 cases passed,33negative and5positive, including a full developer-pair count/global replay. All eight source/schema/checker identities matched after exit. The final frozen `../independent-execution-a5-n6.md` records every exact command, the interrupted resource-control attempts separately, decoded mathematical equality, artifact identities and final source closure. No finite verification obligation remains pending.
 
 ## Sources
 
-Pinned programme A5/source06 at9bd14a6d2c4da69139a10107d8a787f2be0c5c9e; original scientific part1a09d910. The relaxed gate, updated registry aliases and implementation diagnostics are recorded in `../attempts/T-A5-n6.md`. Source06's25interior/41total are MEASURED comparison data only. The primary Table3 row23interior/39total will be compared as a candidate correction only after certification; no author contact or current correction claim.
+Pinned programme A5/source06 at9bd14a6d2c4da69139a10107d8a787f2be0c5c9e; original scientific part1a09d910. The relaxed gate, updated registry aliases and implementation diagnostics are recorded in `../attempts/T-A5-n6.md`. Source06's25interior/41total are MEASURED comparison data only. The direct post-certification primary Table3 comparison is `../outputs/a5_n6_literature-comparison.md`: certified25/41 versus printed23/39 is a bounded candidate correction, with no author contact or novelty claim.
 
 ## Proof or evidence
 
 The exact field is interpreted in the specified principal embedding by40. The corrected kernel gives a concrete28-polynomial coefficient array; direct exact interpolation checks prove it is the cardinal family. The finite certificate supplies a complete rational partition of the square. Each node-cone leaf passes15 on its WHOLE rectangle; each ordinary leaf lists every compatible28-bit mask, with no first-root return or escaped-Newton discard. Every exclusion is a valid necessary-condition failure for a strict maximum, and every positive root is enclosed by exact Krawczyk/contraction, strict cardinal signs and negative definite Hessian. Whole-leaf/root-hull injectivity covers all possible stationary points in each referencing leaf. Pairwise disjoint root boxes count distinct maxima once.
 
-All boundary arrangement and residual derivative roots receive exact dispositions; regular crease/crossing exclusions follow verified multiplicity-one cover, not a proximity threshold. All corner active masks are explicitly checked. Theory18 proves that final acceptance of every one of these predicates gives exactly the stated counts, including possible singular-Hessian/cardinal-zero cases without silently discarding equality. The full developer producer has completed, but the final verification/execution obligations remain pending, so this result is OPEN here.
+All boundary arrangement and residual derivative roots receive exact dispositions; regular crease/crossing exclusions follow verified multiplicity-one cover, not a proximity threshold. All corner active masks are explicitly checked. Theory18 proves that final acceptance of every one of these predicates gives exactly the stated counts, including possible singular-Hessian/cardinal-zero cases without silently discarding equality. The complete developer artifact and the independently regenerated artifact both passed the final frozen checker. The executor also completed the full developer-pair positive replay and all counterfeit controls. Thus the written reduction and finite predicates establish the stated exact count.
 
 ## Scope
 
@@ -68,8 +70,10 @@ Exactly n6. No n7/n8 count, general count formula, global argmax, paper correcti
 
 ## Open items
 
-Final frozen checker/controls and actual different-agent producer/global/checker execution; exact artifact identities and receipts; required Claude audit. Any failed/unresolved final predicate blocks promotion.
+Required Claude audit of the Part2 branch. Exact finite verification, artifact identities and supplementary independent execution are complete; no n7/n8 case is inferred.
 
 ## History
 
 2026-11-01, Codex `/root/a5_n4` assignedn6, inherited gpt-6.1-sol xhigh; initial rules38db12b, refreshed fullSHA842dfaaeff524b4db4141d314afff6ad4a5b7721. Full candidate completed around10:59UTC with proposed41count; status deliberately OPEN until final independent checks. The original source MEASURED claim is preserved and is not a truth assumption.
+
+2026-11-01 final verification checkpoint: promoted the unchanged count statement OPEN→PROVED only after the actual different-agent fresh producer, matching full checker and sequential full controls all completed with exit0 and unchanged frozen sources. The separate required Claude audit remains PENDING.

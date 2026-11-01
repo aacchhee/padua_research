@@ -11,7 +11,7 @@
 
 ## Status
 
-A5 PARTIAL by explicit degree cases: n=3,4,5 are PROVED under separate results06/10/16; n=6,…,8 remain OPEN until their final evidence passes. Results07/11/17 prove A4(d) for n=3,4,5. The original15:19UTC deadline is unchanged. Required Claude audit of Part2 remains PENDING.
+A5 PARTIAL by explicit degree cases: n=3,4,5,6 are PROVED under separate results06/10/16/41; n=7,8 remain OPEN until their final evidence passes. Results07/11/17/42 prove A4(d) for n=3,4,5,6. The original15:19UTC deadline is unchanged. Required Claude audit of Part2 remains PENDING.
 
 ## Runs needed
 
@@ -100,3 +100,8 @@ N3 and n4 are now PROVED under results06/10, with separate global results07/11. 
 ## Orchestrator case update — n5 independently certified
 
 N5 is PROVED under16:25total=14interior+9edge+2corner, with separate exact global result17. All actual node cones, complete spatial/mask partition, edge/corner obligations and additional weak-max/value predicates passed both separate matching artifact checks and31controls. Actual different-agent producer/global/checker evidence: independent-execution-a5-n5.md. A5cases3,4,5PROVED;6,7,8OPEN. N6 full candidate and fresh independent execution plus N7/N8 field/node extensions continue within the unchanged15:19UTC ceiling. No later ordered target has started.
+
+
+## Orchestrator case update — n6 independently certified
+
+N6 is PROVED under41:41total=25interior+14edge+2corner, with separate global42 and field40. Complete independent producer/global/checker execution plus all38controls passed, with the source-pinned developer pair also fully verified inside the positive controls. Exact commands/artifact identities and documented memory interruptions: independent-execution-a5-n6.md. Primary v1 Table3 row6|23|39 was directly rechecked AFTER certification:25/41 is a scoped candidate correction, while programme's MEASURED25/41 agrees (no PDN). Part2Claudeaudit PENDING. Cases3–6PROVED;7,8OPEN. Two frozen producer runs per remaining degree and independent verifier work continue within15:19UTC. No later ordered target has started.

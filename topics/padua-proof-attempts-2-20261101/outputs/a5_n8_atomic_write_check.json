@@ -1,0 +1,10 @@
+{
+  "format": "a5-n8-atomic-write-check-v1",
+  "source_sha256": "efd335b452487353c1c72a2fbacfc5cdc09875cfac03f2aaf18612073caca96d",
+  "preboundary_complete_false": true,
+  "failed_replacement_preserves_prior_artifact": true,
+  "temporary_cleanup": true,
+  "deterministic_gzip": true,
+  "final_atomic_replacement": true,
+  "role": "operational persistence check only; no maxima count"
+}

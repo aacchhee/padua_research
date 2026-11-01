@@ -1,0 +1,205 @@
+{
+  "all_controls_passed": true,
+  "checker_sha256": "34d8c0b7afb261d5f082022f49a84ec6e741f50de31904da5f4221f02f9673c8",
+  "controls": [
+    {
+      "accepted": true,
+      "accepted_node_cones": 28,
+      "name": "all_supplied_exact_node_cones",
+      "node_status_counts": {
+        "accepted": 28
+      },
+      "verified_direction_breakpoints": 1316,
+      "verified_node_records": 28
+    },
+    {
+      "name": "wrong_native_minimal_polynomial",
+      "reason": "native minimal polynomial mismatch",
+      "rejected": true
+    },
+    {
+      "name": "counterfeit_tensor_conversion",
+      "reason": "native-to-tensor matrix mismatch",
+      "rejected": true
+    },
+    {
+      "name": "negative_square_root_embedding",
+      "reason": "positive square-root bracket failed",
+      "rejected": true
+    },
+    {
+      "name": "nonprincipal_cubic_root_embedding",
+      "reason": "principal b outer bracket failed",
+      "rejected": true
+    },
+    {
+      "name": "incorrect_principal_root_accounting",
+      "reason": "principal U6 root accounting mismatch",
+      "rejected": true
+    },
+    {
+      "name": "field_encoding_has_wrong_dimension",
+      "reason": "FIELD needs six rational coefficients",
+      "rejected": true
+    },
+    {
+      "accepted": true,
+      "name": "tensor_quadratic_cubic_norm_vs_native_degree_six_norm",
+      "polynomials": 2
+    },
+    {
+      "name": "one_node_record_omitted",
+      "reason": "all 28 ordered node-cone records are required",
+      "rejected": true
+    },
+    {
+      "name": "one_feasible_direction_side_omitted",
+      "reason": "feasible direction-side segments are incomplete",
+      "rejected": true
+    },
+    {
+      "name": "one_internal_directional_zero_breakpoint_omitted",
+      "reason": "a cardinal directional zero breakpoint was omitted",
+      "rejected": true
+    },
+    {
+      "name": "false_positive_gap_lower_bound",
+      "reason": "claimed node gap lower bound exceeds a breakpoint value",
+      "rejected": true
+    },
+    {
+      "name": "cone_rectangle_hits_inactive_square_face",
+      "reason": "node cone meets an inactive opposite square face",
+      "rejected": true
+    },
+    {
+      "name": "radius_underestimates_whole_cone_rectangle",
+      "reason": "node cone R does not bound the entire supplied rectangle",
+      "rejected": true
+    },
+    {
+      "name": "false_whole_cone_node_cardinal_positivity_bound",
+      "reason": "node cardinal is not certified positive on entire B",
+      "rejected": true
+    },
+    {
+      "name": "one_cardinal_hessian_bound_underestimated",
+      "reason": "node Hessian quadratic-form bound failed",
+      "rejected": true
+    },
+    {
+      "name": "radial_remainder_exceeds_exact_gap",
+      "reason": "node radial remainder inequality R*H < m failed",
+      "rejected": true
+    },
+    {
+      "name": "whole_leaf_not_inside_referenced_cone",
+      "reason": "whole node leaf is not strictly inside its verified cone",
+      "rejected": true
+    },
+    {
+      "name": "non_strict_leaf_cone_containment",
+      "reason": "whole node leaf is not strictly inside its verified cone",
+      "rejected": true
+    },
+    {
+      "name": "zero_gap_or_missing_cone_has_no_discard_authority",
+      "reason": "node leaf references a missing, zero-gap, or unaccepted cone",
+      "rejected": true
+    },
+    {
+      "name": "node_leaf_cannot_hide_ordinary_pattern_list",
+      "reason": "node-cone leaf also contains ordinary patterns",
+      "rejected": true
+    },
+    {
+      "name": "overlapping_prefix_partition",
+      "reason": "leaf paths are not prefix-free",
+      "rejected": true
+    },
+    {
+      "accepted": true,
+      "name": "complete_vs_missing_prefix_subtree"
+    },
+    {
+      "name": "singular_zero_hessian_is_not_an_exclusion",
+      "reason": "no strict positive-curvature/negative-determinant exclusion",
+      "rejected": true
+    },
+    {
+      "name": "one_sturm_projected_root_omitted",
+      "reason": "root partition omits real roots",
+      "rejected": true
+    },
+    {
+      "accepted": true,
+      "masks": 10,
+      "name": "168_component_integer_vectors_vs_symbolic_masks"
+    },
+    {
+      "name": "ordinary_compatible_mask_omitted",
+      "reason": "compatible sign patterns missing, duplicated, reordered, or extraneous at 00000000000000",
+      "rejected": true
+    },
+    {
+      "name": "counterfeit_root_singular_preconditioner",
+      "reason": "singular preconditioner",
+      "rejected": true
+    },
+    {
+      "accepted": true,
+      "name": "complete_count_and_global_value_certificate"
+    },
+    {
+      "name": "global_certificate_bound_to_wrong_count_input",
+      "reason": "global format/completeness/count-certificate binding failed",
+      "rejected": true
+    },
+    {
+      "name": "global_exception_code_coverage_omitted",
+      "reason": "global exceptional disposition coverage changed",
+      "rejected": true
+    },
+    {
+      "name": "global_flat_factor_occurrence_count_changed",
+      "reason": "global flat/factor occurrence count or cut failed",
+      "rejected": true
+    },
+    {
+      "name": "global_exception_upper_bound_counterfeit",
+      "reason": "global exceptional flat/factor value bound failed",
+      "rejected": true
+    },
+    {
+      "name": "global_exact_node_value_changed",
+      "reason": "global cut or exact node value changed",
+      "rejected": true
+    },
+    {
+      "name": "global_interior_value_row_omitted",
+      "reason": "interior global value IDs incomplete or reordered",
+      "rejected": true
+    },
+    {
+      "name": "global_edge_value_row_omitted",
+      "reason": "edge global value IDs incomplete or reordered",
+      "rejected": true
+    },
+    {
+      "name": "global_interior_value_enclosure_counterfeit",
+      "reason": "interior global value enclosure or strict cut failed",
+      "rejected": true
+    },
+    {
+      "name": "global_exact_corner_value_counterfeit",
+      "reason": "exact common nonnode corner value failed",
+      "rejected": true
+    }
+  ],
+  "controls_sha256": "fd926f0d390ab2336476d054bfcee89aba97c624487f8acd0e64491c664633e0",
+  "node_certificate_sha256": "c7a113b9b623c47309fd186c19ee2dddb2d5a0270c01b118bd11ee1ee069f0f5",
+  "python": "3.12.14",
+  "scope": "independent verifier controls; no degree-six count",
+  "seconds": 1093.8370450289995,
+  "sympy": "1.14.0"
+}

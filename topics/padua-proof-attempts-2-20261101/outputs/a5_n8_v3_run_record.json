@@ -1,0 +1,54 @@
+{
+  "format": "a5-n8-v3-run-record-v1",
+  "record_created_utc": "2026-11-01T11:36:40.822485+00:00",
+  "status": "RUNNING; count and global targets OPEN",
+  "rule_read_head": "7ec02d0fa4a06cf9ab7ede5db0b60a5eddf887d1",
+  "scientific_programme_pin": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+  "sources": [
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_field.py",
+      "bytes": 6880,
+      "sha256": "764a7d7e50718c04f076ab3bbc86270adad1c47bc902d0b8d4eecf32ebbd2ec2"
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_nodes.py",
+      "bytes": 4848,
+      "sha256": "c59018d0f17e6d5b9c803e0344cc878e6b067fe8ba457cd4a623bc649b65056b"
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_boxes.py",
+      "bytes": 13042,
+      "sha256": "e9d763d409dab8568e4b6c3452ac51283e36b708d8aa733e3f4ac3dda923f958"
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_boundary.py",
+      "bytes": 10622,
+      "sha256": "6088db34cce2952332bd22e560c8b02e90446236f994dc2bac79b33717e769cb"
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_global.py",
+      "bytes": 3633,
+      "sha256": "f730b4cc3db102e8615326c60c6a26f28ff4d4ab4815e28aca88c55e05c08c7a"
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_schema.md",
+      "bytes": 8815,
+      "sha256": "1ca5289329359833859960d216b103284457495d6326d35463e18a761d43ed24"
+    }
+  ],
+  "producer_command": "PYTHONPATH=/tmp/padua2-deps timeout 5400 python -B topics/padua-proof-attempts-2-20261101/code/a5_n8_boxes.py --node-file /tmp/a5-n8-node-pilot.json --boxes 200000 --seconds 3600 --depth 44 --ambiguity 8 --full-depth 44 --root-depth 12 --cache-masks 8000 --certificate --boundary --output /tmp/a5-n8-candidate-v3.json.gz",
+  "stdout": "/tmp/a5-n8-candidate-v3.log",
+  "stderr": "/tmp/a5-n8-candidate-v3.progress",
+  "node_input_sha256": "574a47af6a7d84a5f4b27dd3adce9797350860d6e40242869c58a90673e5b23c",
+  "independent_executor": "/root/a5_n4; fresh nodes, no node-file; separate receipt",
+  "independent_checker": "/root/a5_n4_checker; formal quotient/Vandermonde/independent Sturm implementation",
+  "interrupted_v1_developer_exit": 130,
+  "interrupted_v1_independent_exit": 143,
+  "v3_features": [
+    "atomic preboundary interior checkpoint with complete=false",
+    "theorem53 universal compatible-gradient leaf, natural/centered exact background",
+    "exact immutable norm/root-partition caches",
+    "certified Arb candidates with producer positively rescaled Sturm total/per-interval checks"
+  ],
+  "proof_claim": "none until complete artifact and independent acceptance/executions"
+}

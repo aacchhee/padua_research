@@ -60,7 +60,7 @@ After audit and at the authorized integration step, update the programme IDEA-17
 
 Finite A5/A4 case proposals below reflect actual certified results. No n6/7/8 published-table correction is proposed until its own certification.
 
-## A5 n3, n4 and n5 status
+## A5 n3 through n6 status
 
 Target: `topics/programme-ideas-20261031/OPEN_TARGETS.md`
 
@@ -77,12 +77,12 @@ New:
 ```text
 Known: MEASURED candidate counts; all 220 listed points independently validated as numerical strict local maxima; completeness not certified. Obligations (audit-01 A1): (1) a proved finite reduction (λ_n is piecewise polynomial on the arrangement of the zero curves of the L_B; every local maximum lies in a cell interior, on a crease, or at a crease crossing, and the search must cover each type); (2) exact identities at the degenerate points (A5-partial above); (3) rigorous root enclosures replacing the per-pattern Newton step, with the injectivity bound applying to the region actually discarded (lines 233–234); (4) a complete box-discard argument for every sign pattern consistent with a box, without the early return at line 249; (5) exact treatment of critical points near crease crossings instead of the 1e-10 coincidence rule (lines 241, 253–257); then rigorous arithmetic and an independent checker. Done when: all five, with the certificate and checker committed (or in cold storage with a manifest). A disagreement with arXiv 2605.23299 at n = 6, 7, 8 would then be a certified correction.
 
-Status update proposed after the Part2 Claude audit: n=3,4,5 are PROVED by `PD-T?proof-attempts-2-codex-06`, `-10`, `-16`: respectively15=7interior+6edge+2corner,27=13interior+12edge+2corner,25=14interior+9edge+2corner. Separate exact certificates, independent verifiers and actual different-agent producer/global/checker executions discharge all five obligations for these new procedures. Their direct physical boundary coverage replaces the old(D)/(E) disc decisions; Part1 theorem03 is explicitly reused at n3, with the requested literal audit-pending label qualified by accepted audit/completed dispositions. N=6,…,8 remain OPEN until separately certified; the combined A5 mathematical target is PARTIAL by degree cases. Preserve the original MEASURED search history. Primary Table3 agrees at n3 and n4; no n6/7/8 published correction is certified from these cases.
+Status update proposed after the Part2 Claude audit: n=3,4,5,6 are PROVED by `PD-T?proof-attempts-2-codex-06`, `-10`, `-16`, `-41`: respectively15=7interior+6edge+2corner,27=13interior+12edge+2corner,25=14interior+9edge+2corner,41=25interior+14edge+2corner. Separate exact certificates, independent verifiers and actual different-agent producer/global/checker executions discharge all five obligations for these new procedures. Their direct physical boundary coverage replaces the old(D)/(E) disc decisions; Part1 theorem03 is explicitly reused at n3, with the requested literal audit-pending label qualified by accepted audit/completed dispositions. N=7,8 remain OPEN until separately certified; the combined A5 mathematical target is PARTIAL by degree cases. Preserve the original MEASURED search history. Primary Table3 agrees at n3–5. Its v1 exact n6 row is6|23|39 under the headings “deg. n”, “number of inner local maxima”, “number of local maxima”; certified25/41 is a scoped candidate correction, with direct primary comparison in outputs/a5_n6_literature-comparison.md. No n7/n8 correction is certified yet; no author contact.
 ```
 
 Validation: original block occurs exactly once at the pinned programme head; original statement, route and history retained.
 
-## A5 n3, n4 and n5 split records
+## A5 n3 through n6 split records
 
 Target: `topics/programme-ideas-20261031/theory/programme-ideas-claude-06-padua-lebesgue-maxima-counts.md`
 
@@ -99,14 +99,14 @@ New:
 ```text
 **Runs needed (certification):** a proved finite reduction of the counting problem; rigorous versions of the (D) corner and (E) edge-node certificates in `t3_degenerate.py`; rigorous root enclosures/exclusions replacing the per-pattern Newton steps over every discarded region; complete sign-pattern box-discard arguments without the early return; exact treatment near regular crease crossings; rigorous arithmetic throughout and an independent checker. The separate `degenerate_max` local obligations have replacement certificates in PD-T103 for the two degree-3 exact representatives, with Z={L_(2,2)}, background critical points at (theta,phi)=(0,acos(±1/sqrt(3))), rational angle enclosures of width 1e-18 and uniform Hessian margin greater than 3.5 on angle l1 discs of radius 0.0021. These discs rigorously contain the recorded radius-0.002 decision neighborhoods. The stored floating iterates themselves are not exact zeros. A fresh trace of every call for n=3,…,8 found two calls at n=3 and none at n=4,…,8; this trace remains MEASURED execution evidence. Obligation (2) is discharged for the `degenerate_max` path only; the (D) corner and (E) edge-node handlers remain explicit certification work. No maxima count is certified.
 
-Dated split update proposed after the Part2 Claude audit: the preceding certification obligations remain needed for n=6,…,8. Complete exact replacements for n3,n4,n5 are PROVED separately in `PD-T?proof-attempts-2-codex-06` (15total=7interior+6edge+2corner) `-10` (27total=13interior+12edge+2corner), and `-16` (25total=14interior+9edge+2corner), with supporting reductions, committed certificates, separate verifiers and actual independent executions. Preserve this record's original measured search history; do not relabel the frozen floating search as certified. The whole A5 mathematical target is PARTIAL by proved degree cases3,4,5 and OPEN cases6,…,8. No n6/7/8 correction is certified.
+Dated split update proposed after the Part2 Claude audit: the preceding certification obligations remain needed for n=7,8. Complete exact replacements for n3,n4,n5,n6 are PROVED separately in `PD-T?proof-attempts-2-codex-06` (15total=7interior+6edge+2corner) `-10` (27total=13interior+12edge+2corner), `-16` (25total=14interior+9edge+2corner), and `-41` (41total=25interior+14edge+2corner), with supporting reductions, committed certificates, separate verifiers and actual independent executions. Preserve this record's original measured search history; do not relabel the frozen floating search as certified. The whole A5 mathematical target is PARTIAL by proved degree cases3,4,5,6 and OPEN cases7,8. Certified n6 pair25/41 supplies a scoped candidate correction to primary v1 Table3 row23/39; n7/n8 remain uncertified. Programme's measured41/25 agrees, so no negative record against it is needed.
 ```
 
 Validation: original block occurs exactly once at the pinned programme head; original statement, route and history retained.
 
 History2026-11-01: supersedes the earlier source06 proposal at9bd14a6 (retained in commitf5f074e). AC merged Part1 at806cc7b, replacing its old Runs-needed paragraph with the audited local03 qualification. The current literal block preserves that entire accepted paragraph and appends only Part2 finite-case updates; all original routes and remaining obligations remain.
 
-## A4 n3, n4 and n5 finite cases
+## A4 n3 through n6 finite cases
 
 Target: `topics/programme-ideas-20261031/theory/programme-ideas-claude-05-padua-corner-argmax.md`
 
@@ -123,14 +123,14 @@ New:
 ```text
 Proof for all n; rigorous verification for small n (e.g. by a certified sup bound away from the corners).
 
-Dated finite-case update proposed after the Part2 Claude audit: n3 is PROVED in `PD-T?proof-attempts-2-codex-07`, max λ_3=17/6+(2/3)sqrt2 attained exactly at(−1,±1). N4 is PROVED in `-11`, max λ_4=(13+sqrt2+2sqrt5+sqrt10)/5 attained exactly at(±1,−1). N5 is PROVED in `-17`, max λ_5=(38+8sqrt3+10sqrt5)/15 attained exactly at(−1,±1). All three proofs include the strict-count certificate, explicit exclusion/value bounds for non-strict global maxima, and actual independent executions. The all-n conjecture and every uncertified finite/asymptotic case remain OPEN. The original lack-of-continuum-verification statement is historical at the pinned source head.
+Dated finite-case update proposed after the Part2 Claude audit: n3 is PROVED in `PD-T?proof-attempts-2-codex-07`, max λ_3=17/6+(2/3)sqrt2 attained exactly at(−1,±1). N4 is PROVED in `-11`, max λ_4=(13+sqrt2+2sqrt5+sqrt10)/5 attained exactly at(±1,−1). N5 is PROVED in `-17`, max λ_5=(38+8sqrt3+10sqrt5)/15 attained exactly at(−1,±1). N6 is PROVED in `-42`: with beta=2cos(pi/7), max λ_6=(15+8beta+20beta²+4sqrt3+4sqrt3*beta)/21, equality exactly at(±1,−1). All four proofs include the strict-count certificate, explicit exclusion/value bounds for non-strict global maxima, and actual independent executions. The all-n conjecture and every uncertified finite/asymptotic case remain OPEN. The original lack-of-continuum-verification statement is historical at the pinned source head.
 ```
 
 Validation: original block occurs exactly once at the pinned programme head; original statement, route and history retained.
 
-## Additional registry preparation checklist for certified n3, n4 and n5
+## Additional registry preparation checklist for certified n3 through n6
 
-Propose local result rows05–11 and15–19 and mappings programme06→results06/10/16 (n3/n4/n5 counts), programme05→results07/11/17 (n3/n4/n5 global cases). Preserve all original measured-search rows, programme06's uncertified n6…8 cases and programme05's all-n OPEN conjecture. Apply only in the authorized integration pass after the Part2 Claude audit. No shared registry or final ID is edited in this branch.
+Propose local result rows05–11,15–19,40–42 and mappings programme06→results06/10/16/41 (n3/n4/n5/n6 counts), programme05→results07/11/17/42 (n3/n4/n5/n6 global cases). Preserve all original measured-search rows, programme06's uncertified n7/n8 cases and programme05's all-n OPEN conjecture. Apply only in the authorized integration pass after the Part2 Claude audit. No shared registry or final ID is edited in this branch.
 
 
 Current upstream refresh: Part1 is merged at main806cc7b. Existing original pins remain historical. Every current Old block was also checked unique against806cc7b; source06 alone was repinned because its accepted Part1 update changed the literal paragraph. Part2 remains local IDs/no range; inherited final IDs are source provenance.

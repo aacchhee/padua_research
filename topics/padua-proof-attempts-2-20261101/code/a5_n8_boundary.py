@@ -4,13 +4,95 @@ No old certifier imports. The independent checker must verify supplied partition
 """
 import json,time,sys,argparse
 from collections import Counter
+from functools import lru_cache
+from math import gcd
+from flint import fmpz_poly,ctx
 from a5_n8_boxes import *
 
+NORM_VAR=s.Symbol('_norm_variable')
+FIELD_MODULUS=tuple(F(str(c))for c in K.mod.to_list())
+@lru_cache(None)
+def cached_norm(field_modulus,coefficients):
+ assert field_modulus==FIELD_MODULUS
+ p=s.Poly.from_list([decode(row)for row in coefficients],NORM_VAR,domain=K)
+ q=p.norm().sqf_part().clear_denoms()[1].primitive()[1]
+ return tuple(F(str(c))for c in q.all_coeffs())
 def norm(p):
  assert p
- return p.norm().sqf_part().clear_denoms()[1].primitive()[1]
-def intervals(p):
- return[(F(str(a)),F(str(b)))for(a,b),m in p.intervals(eps=s.Rational(1,10**22))]
+ key=tuple(kparts(c)for c in p.rep.to_list())
+ coefficients=cached_norm(FIELD_MODULUS,key)
+ return s.Poly.from_list([s.Rational(c.numerator,c.denominator)for c in coefficients],p.gens[0],domain=s.QQ)
+def positive_primitive(p):
+ denominator,integral=p.clear_denoms();assert denominator>0
+ coefficients=[int(c)for c in integral.all_coeffs()];content=0
+ for c in coefficients:content=gcd(content,abs(c))
+ assert content>0
+ return s.Poly.from_list([c//content for c in coefficients],NORM_VAR,domain=s.QQ)
+@lru_cache(maxsize=16)
+def sturm_rows(coefficients):
+ # Positive rescaling of EVERY remainder preserves all Sturm signs while
+ # preventing the rational denominator explosion of a monic chain.
+ p=s.Poly.from_list([s.Rational(c.numerator,c.denominator)for c in coefficients],NORM_VAR,domain=s.QQ)
+ chain=[positive_primitive(p)]
+ if p.degree()>0:
+  chain.append(positive_primitive(p.diff()))
+  while True:
+   remainder=-chain[-2].rem(chain[-1])
+   if not remainder:break
+   chain.append(positive_primitive(remainder))
+ return tuple(tuple(int(c)for c in q.all_coeffs())for q in chain)
+def integer_value(row,point):
+ a,b=point.numerator,point.denominator;value=row[0];denominator_power=b
+ for c in row[1:]:value=value*a+c*denominator_power;denominator_power*=b
+ return value
+def variations(rows,point):
+ signs=[]
+ for row in rows:
+  value=row[0]if point is None else row[0]*(-1 if(len(row)-1)%2 else 1)if point=='-inf'else integer_value(row,point)
+  if value:signs.append(1 if value>0 else -1)
+ return sum(a!=b for a,b in zip(signs,signs[1:]))
+@lru_cache(None)
+def cached_intervals(coefficients,eps_numerator,eps_denominator):
+ p=s.Poly.from_list([s.Rational(c.numerator,c.denominator)for c in coefficients],NORM_VAR,domain=s.QQ)
+ epsilon=F(eps_numerator,eps_denominator);assert epsilon>0
+ if p.degree()==0:return()
+ integer=p.clear_denoms()[1].primitive()[1]
+ polynomial=fmpz_poly([int(c)for c in reversed(integer.all_coeffs())])
+ rows=sturm_rows(coefficients);total=variations(rows,'-inf')-variations(rows,None)
+ bits=80
+ while F(1,1<<bits)>epsilon/8:bits+=1
+ grid=1<<bits;precision=max(256,bits+64)
+ def exact_dyadic(z):
+  mantissa,exponent=z.man_exp();exponent=int(exponent)
+  return F(int(mantissa)*(1<<exponent),1)if exponent>=0 else F(int(mantissa),1<<-exponent)
+ while precision<=4096:
+  roots=[];uncertain=False
+  with ctx.workprec(precision):
+   balls=polynomial.complex_roots()
+   assert sum(int(multiplicity)for ball,multiplicity in balls)==p.degree()
+   for ball,multiplicity in balls:
+    if ball.imag.is_zero():
+     try:mid=exact_dyadic(ball.real.mid());radius=exact_dyadic(ball.real.rad())
+     except ValueError:uncertain=True;break
+     lo=mid-radius;hi=mid+radius
+     lo=F(lo.numerator*grid//lo.denominator,grid);hi=F(-((-hi.numerator*grid)//hi.denominator),grid)
+     # Exact dyadic endpoint roots are represented as singletons; otherwise
+     # the certified ball is rounded outward. No float/proximity selection.
+     if integer_value(rows[0],lo)==0:hi=lo
+     elif integer_value(rows[0],hi)==0:lo=hi
+     roots.append((lo,hi))
+    elif ball.imag.contains(0):uncertain=True;break
+  roots.sort()
+  if not uncertain and len(roots)==total and all(b-a<=epsilon for a,b in roots)and all(roots[i][1]<roots[i+1][0]for i in range(len(roots)-1)):
+   valid=all(integer_value(rows[0],a)==0 if a==b else integer_value(rows[0],a)!=0 and integer_value(rows[0],b)!=0 and variations(rows,a)-variations(rows,b)==1 for a,b in roots)
+   if valid:return tuple(roots)
+  precision*=2
+ raise ArithmeticError('certified complex balls did not give separated unambiguous real intervals')
+def intervals(p,eps=s.Rational(1,10**22)):
+ # Variable renaming does not change real roots. Coefficients/precision are
+ # exact canonical keys; cached immutable tuples are returned as a fresh list.
+ coefficients=tuple(F(str(c))for c in p.monic().all_coeffs());epsilon=F(str(eps))
+ return list(cached_intervals(coefficients,epsilon.numerator,epsilon.denominator))
 def squarefree_union(restricted):
  # Exact gcd splitting constructs pairwise-coprime squarefree components of
  # the union. All gcd inputs have degree at most8, avoiding the expanded
@@ -46,7 +128,7 @@ def arrangement_intervals(components):
  while True:
   roots=[]
   for p in polynomials:
-   roots.extend((F(str(a)),F(str(b)))for(a,b),m in p.intervals(eps=s.Rational(1,10**digits)))
+   roots.extend(intervals(p,eps=s.Rational(1,10**digits)))
   roots.sort()
   if all(roots[i][1]<roots[i+1][0]for i in range(len(roots)-1)):return roots,sum(p.degree()for p in polynomials)
   digits*=2

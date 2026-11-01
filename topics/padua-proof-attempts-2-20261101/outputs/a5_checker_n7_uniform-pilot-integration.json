@@ -1,0 +1,50 @@
+{
+  "accepted": false,
+  "accepted_node_cones": 36,
+  "boundary_complete": false,
+  "certificate_bytes": 80052,
+  "certificate_sha256": "e2ff79198d1a434b64830d592c1643fa94daa929af5cda8245df141ade9a688e",
+  "checker_sha256": "fe25d374b97cc6ce2b637445e84c892d98ccbcd0d90142c40def7bc1632b6593",
+  "complete_prefix_partition": false,
+  "count_certified": false,
+  "dispositions": {
+    "all_gradient": 1988,
+    "gradient": 12283,
+    "hessian": 83,
+    "node_cone": 6,
+    "root": 126
+  },
+  "field_embedding_verified": true,
+  "formal_field_helper_sha256": "76f9ba3de6d4fa4a3bd403ec2c049997de5acb75dd474ac8e05e9e324d6cd106",
+  "formal_minpoly_degree": 12,
+  "ground_types": "flint",
+  "interior_complete": false,
+  "native_tensor_inverse_verified": true,
+  "node_status_counts": {
+    "accepted": 36
+  },
+  "precision": 128,
+  "principal_embedding_verified": true,
+  "python": "3.12.14",
+  "root_values": {
+    "0": [
+      "1349190304214518632711332153073237202915/340282366920938463463374607431768211456",
+      "674595648376611078197769126897277224271/170141183460469231731687303715884105728"
+    ]
+  },
+  "seconds": 131.91381597100008,
+  "sympy": "1.14.0",
+  "total_maxima": null,
+  "trusted_dependencies": [
+    "CPython integers/Fraction",
+    "SymPy exact field, linear and polynomial algebra"
+  ],
+  "verified_all_gradient_leaves": 1988,
+  "verified_direction_breakpoints": 2220,
+  "verified_interior_maxima_enclosures": 1,
+  "verified_leaves": 2751,
+  "verified_node_leaves": 6,
+  "verified_node_records": 36,
+  "verified_patterns": 12492,
+  "verified_supplied_witnesses": true
+}

@@ -1,0 +1,1 @@
+{"QQdegree": 72, "all_exact_sturm_counts_passed": true, "format": "a5-n7-tensor-arb-generic-pilot-v1", "pattern": "sign+ iff(i*73+19)%11<5", "realroots": 56, "scope": "single arbitrary signed edge derivative; no count claim", "seconds_arb_plus_cached_primitive_sturm": 1.2066566944122314, "seconds_norm_plus_construction": 1.0108826160430908}
