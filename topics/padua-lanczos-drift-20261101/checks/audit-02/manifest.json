@@ -1,0 +1,739 @@
+{
+  "scope": "Codex audit-02 actual scientific inputs and auditor outputs; manifest itself and later handoff-status publication excluded",
+  "candidate": "cef79d66321a93d93d53e53efcb7e6744c387481",
+  "old_audited": "36c93794ce02f92c76c89e5a9ec8095eb238d91d",
+  "published_input": "2fd5456066de08094a35542f2ff6443c27d8c149",
+  "main": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+  "post_PR16_integration": "7a6dd1f7f8f10d0f9c2568e89d693b7d04cd571b",
+  "orchestrator_bookkeeping": "1776029bdd6613d186abf0aa149a4216ba45073a",
+  "requested_models": "gpt-6-astra xhigh; serving variant/effort independently unexposed",
+  "scientific_candidate_byte_equality": "PASS",
+  "audit01_and_response01_unchanged": "PASS",
+  "new_own_python_syntax_and_json": "PASS",
+  "audit_markdown_links": "PASS",
+  "whole_own_campaign_bytes_before_self": 3865776,
+  "largest_file_bytes": 616693,
+  "original_findings_count": 42,
+  "new_findings": {
+    "high": 0,
+    "medium": 2,
+    "low": 8
+  },
+  "verdict": "CHANGES REQUIRED",
+  "outputs": [
+    {
+      "path": "topics/padua-lanczos-drift-20261101/audit-02.md",
+      "bytes": 21875,
+      "sha256": "f3a1cea0010bbd457316602e881c1684e15ef48f8d44ece79952e9fef02c9ae9"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/checks/audit-02/E1/make_evidence.py",
+      "bytes": 6647,
+      "sha256": "76d30256ca64e65058584b7b21f6ee6a338705151dc0416a57993c71b24934db"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/checks/audit-02/E1/reaudit.py",
+      "bytes": 10315,
+      "sha256": "36fbd70da80263a76923d78480064b576fa8ea7a1422092245f3c22232895a05"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/checks/audit-02/E1.md",
+      "bytes": 20028,
+      "sha256": "e5eeb605124cf8a1dc2a7fb47dae9f6fa1dcf94c94f087cfa3c544e0eed58c51"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/checks/audit-02/E34/independent_exact.py",
+      "bytes": 7644,
+      "sha256": "e246694cd210fe6f3a05a38c02e47cd0eecdea10487eab0f0a21aa080453df1f"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/checks/audit-02/E34.md",
+      "bytes": 18553,
+      "sha256": "cfbcd87c280b7de08bf3d0f66a4e77945c285ccb5991d96b56b73515425d9b89"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/checks/audit-02/E5/independent_e5.py",
+      "bytes": 6482,
+      "sha256": "544a4b612e912ec068889626ad6b94933251a7defbf585dbd5745ce3a405e298"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/checks/audit-02/E5/manifest_e5.py",
+      "bytes": 8212,
+      "sha256": "9df10036c89e21deddbd3284f7da865816575bc493bc457b70f09bbdb55ca3f1"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/checks/audit-02/E5.md",
+      "bytes": 17739,
+      "sha256": "190353bedd0035cf79c7a645623e804ec046e140886209ed51680c599fd3c479"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/checks/audit-02/E6/check.py",
+      "bytes": 18887,
+      "sha256": "fac25edb44fbc859af9f6187506457206b4fa9ce70478cdd0762e31036c63235"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/checks/audit-02/E6.md",
+      "bytes": 20772,
+      "sha256": "cff66825d76b369564ff7d2d282bc4ea8ffd489700d6ce5e0d353640726f2857"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/checks/audit-02/Protocol/check_artifacts.py",
+      "bytes": 12094,
+      "sha256": "c762007e8c48a32b9166d99cf98498a3d9d013b8f6e6c476a5ec45dd8d4ff97b"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/checks/audit-02/Protocol/check_text.py",
+      "bytes": 5878,
+      "sha256": "dab0d889afd5dcbf5c643f771362b593db538aaeceb52152086584ac99257130"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/checks/audit-02/Protocol.md",
+      "bytes": 13410,
+      "sha256": "7a5108e4b5cb07ef303ce818bcb95cebd0a824113e23ca8dbe45d8735574d2f3"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/audit-02-e1-checks.json",
+      "bytes": 108115,
+      "sha256": "7bb3e3b566d7d25d369ee812c007b690b46bbdcc54b55ceb54f18fec9390d0ee"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/audit-02-e34-checks.json",
+      "bytes": 19752,
+      "sha256": "368c4e83d0e6ce13574d36b5a8bf283d6775142ee9ccff0b7693d8541058a12e"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/audit-02-e5.json",
+      "bytes": 25999,
+      "sha256": "476f05d272a85b438e6b0afcb136537c1cd1b90e3ce7b65b1c0489b66fdda10a"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/audit-02-e6-checks.json",
+      "bytes": 217139,
+      "sha256": "34ca7a1c29cd4fcaaea9b746a9408c97ad9b8070ee1fdc4d398d7faa98bdf1d9"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/audit-02-integration.json",
+      "bytes": 7620,
+      "sha256": "7149362fcb2b2c76a69da1dd5750ab3de1267daf6f316feb2803a3bd78b3807a"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/audit-02-protocol-artifacts.json",
+      "bytes": 152206,
+      "sha256": "6c91b3e29b92b1dfbab199283364bb93f01b525a128a092761e4f165677c9f24"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/audit-02-protocol-text.json",
+      "bytes": 11859,
+      "sha256": "a6b147b74d47bcdb2fd7670e26d7b8b76e82f5a363d558f2e5b59398900c6a6b"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/audit-02-remote-state.json",
+      "bytes": 2407,
+      "sha256": "cbe30ed44ad9eff007717d7afca6ca2c07d59b7dc58236a66d48001d0ca06f64"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/audit-02-union-scan.json",
+      "bytes": 7400,
+      "sha256": "975a64af2dde621f133ff0f6724551d58160319bc43fd0f262ead2ce193162d0"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 3572,
+      "sha256": "c44a76f138fce01f02c06753b22fbc83fd5c1ee701785d49ba17cef5f8eee05b"
+    },
+    {
+      "path": "agents/WORKFLOW.md",
+      "bytes": 26615,
+      "sha256": "a8927be27a1fe8166e5bcf59c7da8e70618ae0a5f17d56131724baffdad49353"
+    },
+    {
+      "path": "agents/codex/CODEX.md",
+      "bytes": 4969,
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b"
+    },
+    {
+      "path": "state/IDEAS.md",
+      "bytes": 170639,
+      "sha256": "4a7f365d0932048d4e861a817e758077f9c715c936d2191b1c2a5da63d14d0bb"
+    },
+    {
+      "path": "ID_CROSSWALK.md",
+      "bytes": 263726,
+      "sha256": "eca54a2e48932007d179f499de49fb82857d089d2622f7175a9429c3c4d4d0e8"
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "bytes": 25216,
+      "sha256": "f1b4f9477e625f88ffe2e4f5102e28f0745a05d1aa5bb094fc1f7104baffe268"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/README.md",
+      "bytes": 8623,
+      "sha256": "b98459ed1d0a3db4abf2bb45c435200162d22a3d6fad83fd48e14a5483f4bfd1"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/check_independent_math.py",
+      "bytes": 9165,
+      "sha256": "b930c259f05cb80c15b22e607b6171b009cc66987804cc2eb78518e7183d88a4"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/check_independent_scalar.py",
+      "bytes": 10135,
+      "sha256": "b711a1035d0709232b1854b3fb9334fe4e4a11cde26810dda08505d97f7d9aa4"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_batch.py",
+      "bytes": 1985,
+      "sha256": "3c2e2c438737775137f33a2b8e985064fa1ace862436344830f1df5af20830dd"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_cgs2.py",
+      "bytes": 3710,
+      "sha256": "426630eb916e13bb14409f6f7b8ea310eaeb1bf7949de10866d163aad31c7b4b"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_cgs2_multinode.py",
+      "bytes": 3827,
+      "sha256": "32b9e82756a38387ce5a9f2d596d3f6d59282eeec30b5a25afe96f514abe5553"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_cgs2_verify.py",
+      "bytes": 3345,
+      "sha256": "90055da72bdbcb8b5915418e21193bd52238d6e761e696bb47b6c4aeec9b7023"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_cgs2_witness.py",
+      "bytes": 3558,
+      "sha256": "06dff7f4019cd6dc7a30be686bf5a7708704af7c2be0b2f251546529ecade5a4"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_check.py",
+      "bytes": 3032,
+      "sha256": "b6b3e9ec0498f0e7f5e9ccecb524f7410f13acd9ecd26f0fb42d34e9ff17a821"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_exact.py",
+      "bytes": 6167,
+      "sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_fp.py",
+      "bytes": 2913,
+      "sha256": "494810567de117cfeabe9eed9e49f98e55798f33ae2e80adfc5f2c47275650e4"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_reproduce.py",
+      "bytes": 2792,
+      "sha256": "4381f3367651bf69feaf801ef5cec94a704cbcc62e4d982bae6c7a2ef9dbbc02"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_response_checks.py",
+      "bytes": 22318,
+      "sha256": "6edcedabf21444ed8d84ce379c6396dac40dde179aac991e5299e68b7511c4dd"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_scalar.py",
+      "bytes": 4411,
+      "sha256": "c14cc7f05acdef82a6f4a1b67ad5e1c7d6299c480391c19ce691aad3542545c1"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_sign_check.py",
+      "bytes": 1993,
+      "sha256": "0a3717f73e272ca926664c2dc06a0a91bbe4a1be8eaeff89a9b40cb184364a12"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_verify.py",
+      "bytes": 2563,
+      "sha256": "f60c49e08ba51c9c4647d3ed346ec4681c48c9ee869bc6248b6fc861c2d456cd"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e4_closure_check.py",
+      "bytes": 18454,
+      "sha256": "b22949c61d98207f950a5b8e1a8974e0eb1545f85dc5b639872bf09a987d6dac"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e5_exact_checks.py",
+      "bytes": 4720,
+      "sha256": "548802feeb7be30bbf8a888be8aa95678534655e19c50746e24e697343a8bc8e"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e6_benchmark.py",
+      "bytes": 7322,
+      "sha256": "e328b7d5d965637e986285cafe596ac15cdd9320c195d6f02162d883267baafe"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e6_offsample.py",
+      "bytes": 11634,
+      "sha256": "e2876dfb421e6880271122ef15ca3b039b65ea4f8d14dfa88012c6f58224f7ee"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e6_smooth.py",
+      "bytes": 1356,
+      "sha256": "de624205e6909a114521a6e166b212ce05dc84343956e2cbae93a1e515189a1e"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/integration_check.py",
+      "bytes": 8327,
+      "sha256": "b3399f31237f4a950ea6cb7f89ee618005dbb212ac451ea1211d1635c8fe35a8"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/response01_e5_checks.py",
+      "bytes": 6790,
+      "sha256": "2efc1dd219d0e16d032921819fa11fe6fd3e5334722d15e9e3a0ba90ae4978ec"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-300-l3q1-backward-interpretation-target.md",
+      "bytes": 12583,
+      "sha256": "d44253af2dbd608f36f118b60d66c8b93d2858a8a0466005149c215cc9a30070"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-301-truncated-favard-sections.md",
+      "bytes": 11605,
+      "sha256": "ac912d431c36b01e4f618211303eb015824c6c97dee94eac07d57116ba485c18"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-302-backward-reduction-moment-cone.md",
+      "bytes": 22679,
+      "sha256": "c63d57f7dae46f668ddff1dae49cee1dee3fb79aa3bb980db3b66583200334d3"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-303-moment-cone-rate-theorem.md",
+      "bytes": 11301,
+      "sha256": "20447fc0520a5b33295a16237b7337e932a037d85be8cbd05098cf88172f5276"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-304-square-case-commutator-bounds.md",
+      "bytes": 8584,
+      "sha256": "ee8f7f3b60ea434822cf1446d7c39d24a1450437a2e80d89aef45d1d9b059707"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-305-three-node-square-case-sqrt-rate.md",
+      "bytes": 3334,
+      "sha256": "f1a6d410e4d0ba7ca3d8f4c2666334a88df0995b9524eea35fcdf54103ee5bbe"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-306-padua-n2-sqrt-rate.md",
+      "bytes": 5565,
+      "sha256": "61d9ea101b7319c96ff5951729e2ef9ea49e3e8bd5054ac5a7d41f86777d5f44"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-307-square-case-hessian-condition-measurements.md",
+      "bytes": 8588,
+      "sha256": "b34441e123d2501301bb142d05726da133bf1d93992ef89e194c118baa4ad2f8"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-308-compression-model-no-obstruction.md",
+      "bytes": 4427,
+      "sha256": "c44de0c3b5fedfef38bf2a9c8635df399fe6d793346f3f4532587175d677a41b"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-309-square-case-quadratic-generator-form.md",
+      "bytes": 7328,
+      "sha256": "aed78674630f496b39b7b3d3878030f9a4c2d4af2d3de79c8b5f40e55153750e"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-310-equispaced-checkerboard-condition-H.md",
+      "bytes": 5372,
+      "sha256": "e2fc4b30584c3b4929adf378297692ae765daf2506ce739a334cad6e1a540e3f"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-311-equispaced-certificate-margins.md",
+      "bytes": 4277,
+      "sha256": "fe73a531fc32e58a699dace91f62390bdae5660c26bb38e7cf1403c56dc63477"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-312-padua-interior-turan-lemma.md",
+      "bytes": 3983,
+      "sha256": "0ad38fd62c522e4c3e53ac8479ed4f17d039ee59e438819c83e572f5ecd619a5"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-313-padua-turan-certificate-all-n.md",
+      "bytes": 9940,
+      "sha256": "edaa5e2246eefeb11d244aec9443e236e900c3a3466090986f55836e3b2edb23"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-314-computed-data-consistency-symmetry.md",
+      "bytes": 6887,
+      "sha256": "720e234b1366bdaaa8891096123daa47422c36c2e4f4d2cce98fdd8acbf60439"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-315-consistency-defect-measurements.md",
+      "bytes": 5616,
+      "sha256": "59cee2cce3b9cc04c49f59a0f21287735ae046c4fffbf580e15ee4c7225ea163"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-316-square-case-first-order-commutator-isomorphism.md",
+      "bytes": 3760,
+      "sha256": "5e449470b4e76943df1cd5401cfd0357c9e9b0c32c1024fb0bb31abd35dc2a20"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-317-first-order-commutator-rank-measurements.md",
+      "bytes": 3453,
+      "sha256": "d423d5cc32eb00eef2365783d28d4ab26d25a24dc6012be810713791cbae7ee1"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-318-first-order-commutator-formula.md",
+      "bytes": 11987,
+      "sha256": "8e634bdfba81231ae4cb5e89058da1a5dddff649448450a36ad2c1e230bf01b5"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-319-padua-obstruction-radius-uniformity.md",
+      "bytes": 5950,
+      "sha256": "f7c1f4f9caf00f28395a5ff95ac0358d8b80059fb00c432676b0fb4086181f36"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N301-padua-n3-exact-backward-obstruction.md",
+      "bytes": 10019,
+      "sha256": "006b5e73782588f27c068c35afc57db408b40265be152b718dc0ffbbab95d6c7"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N302-square-case-linear-rate-refuted.md",
+      "bytes": 5247,
+      "sha256": "db4bd1b1770dddf07bf4bc99ca41368ddb5d9e6c7a3fb96569ad654ed8c67b01"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N303-padua-all-n-exact-backward-obstruction.md",
+      "bytes": 7662,
+      "sha256": "82d26b7d12a140fd14e9a26932f9e979194d40d88883d182455c73ebcb567192"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N304-compression-model-insufficient.md",
+      "bytes": 3216,
+      "sha256": "80382df3200705c74fdc95d1cedd3558bff9a3dca573ed5c87d6a0a3ce81a43b"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N305-closed-form-C1-fails.md",
+      "bytes": 1990,
+      "sha256": "1b0b4070ebbc104fab5bc5cf813b2dc8ef5793ec5bc3d96691568eaa992bfdb5"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N306-H-not-decided-by-count.md",
+      "bytes": 3217,
+      "sha256": "5c812a66fbdc8d883ba1c30d1245c3ab6449636dbcf49a29c6b80430f31e3d6e"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N307-consistency-survives-loss-refuted.md",
+      "bytes": 2384,
+      "sha256": "1b13e3055e354c60f6ed0395f38ee3914598e6ec637b10d0cc92a5a251cc7d33"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N308-weight-only-greenbaum-fit-refuted.md",
+      "bytes": 2946,
+      "sha256": "109684827fed2cbdf52b15372bf37877cd2e2282c334fed9e1b076dc8a4337c6"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N309-normalized-residual-threshold-refuted.md",
+      "bytes": 8284,
+      "sha256": "afda8cee4d1b994f0a8933f2e17ca33f7290d219c36f7a88fd07e9668a213640"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bj-universal-reorthogonalization-obstruction-open.md",
+      "bytes": 6328,
+      "sha256": "37574ea58dcb9e82897f42cb6f3565546e78dc965af80e429141dcfa54d0de1d"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/checkerboard-and-near-product-measurements.md",
+      "bytes": 8324,
+      "sha256": "609b44e219c752786b478f15986a26c43d409624bfdbfda6eca79bc5986f3d38"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/closed-loop-dot-product-rounding-carries-coefficient-channel.md",
+      "bytes": 12172,
+      "sha256": "601dc1155db375ac8cb4458a309a016ef18c0ca2d1a0133b1fdf268f1182d707"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/coefficient-channel-gain-census-checkerboards-measured.md",
+      "bytes": 6533,
+      "sha256": "9843f2cb785397fb98c1b579deb73334124ed024f54ed6a494a7fb8a3b607ba5"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/commutator-shadow-recursion-and-span-drift-bound.md",
+      "bytes": 15308,
+      "sha256": "045e583af639094a6a462cd36a5329948cc2accc5fd7fb6d9c5748f167b72609"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/condition-C-staircase-selections-acyclic-sections.md",
+      "bytes": 11565,
+      "sha256": "4bb00f8f1acbc8c96f211e3b7f29359ad6c982e45a80b3039d09648455674567"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/coupled-section-residuals-general-selection.md",
+      "bytes": 13049,
+      "sha256": "3ff378a8bd18af26bb2ebebf1c4fd2bba9989378d61d548274aae51e744dca8e"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e1-01-span-derivative.md",
+      "bytes": 8383,
+      "sha256": "72fd3f12b6fa44314c8ed42517b449d60d7469ed2395d494e4f11cb46e4a204d"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e1-02-rational-span-bounds.md",
+      "bytes": 5929,
+      "sha256": "7e405012b9730e9d92fda5b4af097be3695b315554902eac89e7ae971ea39212"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e1-03-scalar-operation-bridge.md",
+      "bytes": 18101,
+      "sha256": "f3cea17d8ccb1eb09802fa580a4f95c4967643892869341432f285c8d315d050"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e1-04-finite-aggregate-separation.md",
+      "bytes": 14703,
+      "sha256": "b84656b42f7d95038adf83d23f1d1450130cf65dfd30a2783ccd30fae837ad23"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e1-05-finite-scalar-cgs2-capacities.md",
+      "bytes": 14176,
+      "sha256": "69c8db56e867f92d8235c12090e0b4bcdbe578a6e631fca554da5c32ceccb12e"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e3-10-polynomial-span-certificate.md",
+      "bytes": 7820,
+      "sha256": "f0e1d506593bd51395bd37bfbf1284a87237c8de84035ea747fa64f1864fe837"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e3-11-selection-criterion.md",
+      "bytes": 14087,
+      "sha256": "23628b98ecde23e7a7a5e5f4506a89d89c58d4638c1635b4371f1b565a59a96f"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e4-14-noiseless-quantifier-refutation.md",
+      "bytes": 7332,
+      "sha256": "820e43cd2a00238b16193831bd46ffa23bfabee0766000de082a03f3ff677c83"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e4-15-projection-only-closure-obstruction.md",
+      "bytes": 26544,
+      "sha256": "15a307e3b4d79cb3f7a97c3902fd929a9474d9eee36562e964931d289f59a299"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e5-30-padua-positivity-radius-upper-bound.md",
+      "bytes": 14112,
+      "sha256": "e229df862ca7e42f97bf0b35a944feec385d4cf6dfd58461dae870c7f5119fc5"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e5-31-explicit-square-root-spread-family.md",
+      "bytes": 10436,
+      "sha256": "fadc931b0895c5c1fe6b843e06b29509363d93649befc67a87395a026ad7de27"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e5-32-failed-negative-witness-paths.md",
+      "bytes": 13504,
+      "sha256": "020276fe93ad286b0c9a15baa15cb449d96ee22b7b37ff81c0ea31481d827ebf"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e6-50-public-va-drift-measured.md",
+      "bytes": 20081,
+      "sha256": "5d1457f7ae6aaa6d11b69cd5a2635776c8324c174bd171fc67bd058a63e93d81"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/exact-certificate-propagator-growth-triangle.md",
+      "bytes": 16047,
+      "sha256": "7b9e88fc7b8eef2e74ecfe7a1b748e63f4dfc4ec6a74ebeedccbf6d5f0bdea8c"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/exact-omega-recurrence-window.md",
+      "bytes": 4706,
+      "sha256": "f74a7adf0f4285c4a8dd5988ad939f1a59fa38a317e174f9926b9e5c64d7c083"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/exact-window-dots-do-not-remove-coefficient-channel.md",
+      "bytes": 10980,
+      "sha256": "2f9fd1b9742cd5ccbb948ec382c2b6d0dc619754064a70720783573c8f7cfd79"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/fifo-threshold-deferral-failure.md",
+      "bytes": 4785,
+      "sha256": "c80c584f4c9019377482c866cb0d73259ac6bb209f0d048cd825a6027f8a380d"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/first-order-coefficient-channel-gains-product-type.md",
+      "bytes": 16115,
+      "sha256": "02ca94fc8b53de50f205a9c1b056a4bdc6ef1c7412b5e16bfa17e40573f8e880"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/fp-local-relations-window-recurrence.md",
+      "bytes": 9402,
+      "sha256": "57d5bd8783a14bc2f948cb42acb3d624f0f5e98af72622af339b2e5a7dcafdaa"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/full-operator-paige-identity-growing-blocks.md",
+      "bytes": 10427,
+      "sha256": "9e39d8b57c0196fbd3e3dc9e96bff356fd1ebbe900dc718c8b5e11a9b12bdc66"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/givens-deficit-slopes-measured.md",
+      "bytes": 18177,
+      "sha256": "12ec93dc2f082d957422ff46abd5e61c07fa35a259a604bd2f185d5768397acd"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/givens-updating-rotation-count-backward-bound.md",
+      "bytes": 14027,
+      "sha256": "fa1c9360e5f3c8d3f109f83b06b04d139b35568b84aa804059edc6887423e8fb"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/hl-simax-windowed-complex-recurrence-instability.md",
+      "bytes": 5290,
+      "sha256": "02cdfcfe6d7a96f6a4665cfa0d4b66807330f7d5eea8f3bc7a845e936d4a27c7"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/l4-band-krylov-obstruction.md",
+      "bytes": 13835,
+      "sha256": "846d7800638c083291e7645b7066f165d6647ba60c610c060eb00388560e2975"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/largest-redundant-pivot-degradation.md",
+      "bytes": 14559,
+      "sha256": "a4847b92c4c4416d2cb5461d974cb153e0fbfe57551210f4f27695a734b659e3"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/loss-regimes-node-propagator-measured.md",
+      "bytes": 8634,
+      "sha256": "6f54865c508c8e1a2630d394cca70ae5924103c4ae0656d3c3ba965fd0b6b4d0"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/magnitude-threshold-pivot-rules-failure.md",
+      "bytes": 5584,
+      "sha256": "cad12f0e278cb4e96cc32a3c0111214d22787a3d3c5515af011f21766827d56f"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/moment-matching-product-factorization-checkerboards.md",
+      "bytes": 6238,
+      "sha256": "70e6fb0b0624eae2792d096212da74567a5d278745c7c1b5dd22cd7fc1ed3e7c"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/near-product-transfer-perturbation-bound.md",
+      "bytes": 7372,
+      "sha256": "926c51fb9aa7835406d92776b8c27e0119d76dfbeac9ee49fe7b3f333d745b80"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/node-row-representation-and-commutator-residual.md",
+      "bytes": 6312,
+      "sha256": "292dd116eb5db6bf05824797e89f7aa5e55f2f956d0ba6e5d9eb1d163a17ecf9"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/non-product-amplification-is-a-priori-measured.md",
+      "bytes": 7745,
+      "sha256": "8d8cd65879ac64e7e949138d849727756f1fde2afebb24a1db7a2f5f39367f11"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/omega-estimate-componentwise-in-window-sources-fail.md",
+      "bytes": 3242,
+      "sha256": "13bcfee9f6d67169c7dada594b99f69391831f5d3d7cbecd20ac84365d6e5080"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/omega-estimate-tracks-loss-measured.md",
+      "bytes": 9136,
+      "sha256": "b3b384fede17a8480e6b102af264f199783ad7980b3d1fecae9db134e7863046"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/one-pass-window-semi-orthogonality-insufficient-for-F-section.md",
+      "bytes": 3034,
+      "sha256": "0b8df5e55c2517d26ca1a81d6f1de53429af95fd3424de69ef80bbab5e9d39d9"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/one-relation-selections-do-not-keep-spans-near-Sn.md",
+      "bytes": 2953,
+      "sha256": "498072809d6d57bd28846e1238eb2e0f393f56bb227c02688fc8d9f8aefc7ddb"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/open-loop-coefficient-noise-estimates-fail.md",
+      "bytes": 6442,
+      "sha256": "979dd78e134aae0806d99f9f835549d2e3c080e4ae7f74e89b05f6555cc67496"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/prefix-unisolvence-order-statistics-measured.md",
+      "bytes": 16843,
+      "sha256": "593d865fb517d5cb2cc33b4ab56595c63c89f7829950e97634b179435e01dad8"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/pro2d-j-fails-on-clustered-checkerboard.md",
+      "bytes": 3005,
+      "sha256": "0b65d126da0fb39c285f4e6c18ee967b72c043b533f5c1356da8d524df5526b6"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/pro2d-rounding-only-trigger-fails.md",
+      "bytes": 4210,
+      "sha256": "00e22616350082bff3771f41896a114463e9031e7941b859614a23c61e981967"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/pro2d-strategy-and-cost-measured.md",
+      "bytes": 12637,
+      "sha256": "9235bc4fe451dc250c432cdf8c03d37c2b7a39a693b5204d54259ad90407ebf5"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/product-measure-computed-propagator-transfer-conditional.md",
+      "bytes": 9685,
+      "sha256": "91854a41d8539a9026885137c0ed82f8680b4a7ce9c2d4fc45b2f68bd59d4fa8"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/product-measure-propagator-factorization.md",
+      "bytes": 12698,
+      "sha256": "d5a17d3360b97e5b8688a90b9823c1ae41937dcd20c01a0ef4bfa62099db0990"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/r04-failed-scaling-and-predictor-hypotheses.md",
+      "bytes": 4764,
+      "sha256": "e82b7ea260db008071e0bfa9f0f42403dec2ea542b266223ca2e35a96b2e3203"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/reference-free-span-drift-lower-bound.md",
+      "bytes": 9375,
+      "sha256": "c6f7db6a7114d3c16844866583964971533b51a681accdada03b22864488ac18"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/reorthogonalization-does-not-restore-graded-spaces.md",
+      "bytes": 12479,
+      "sha256": "1124ffb00dd6844136219ef4328094fff43b4f9269c8e99467fd0e8a8839aa6b"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/ritz-residual-governance-fails-off-product-supports.md",
+      "bytes": 15778,
+      "sha256": "3e95da59f2cb20fcf9575e789bd47ca1a68dcd0d41ce66aaf9e01c39647a860b"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/section-accuracy-and-two-pass-window-measured.md",
+      "bytes": 7307,
+      "sha256": "33df30425ec59857b6440e16da486d662b1f05db6b07e6ea267525514a13d484"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/selection-and-truncation-both-matter-measured.md",
+      "bytes": 6562,
+      "sha256": "b914f081ab7c583a7fc1040c2b3c57eb604fd74375374afc1f8857eb7b85c120"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/selection-rules-and-span-drift-measured.md",
+      "bytes": 7855,
+      "sha256": "e45aa671a488840891c5250834d707aacd73d17013e2e6deca8054367c93637f"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/semi-orthogonality-implies-accurate-F-section.md",
+      "bytes": 26951,
+      "sha256": "06c9043abb9429f6b4036294316e38939586acf1299b909ebd06a8806c41adf1"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/support-shape-does-not-classify-loss-regime.md",
+      "bytes": 5050,
+      "sha256": "f3a2cd1584e294fb0c22c1aa364f02f5fc20d1123d1f6c50c5a92907e64f8e33"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/unisolvent-prefix-extension-lemma.md",
+      "bytes": 7082,
+      "sha256": "cddd1c159fb212527a3b8266015cf027f160989f6a674c26b0078c5ffe409fb6"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/window-coefficient-pattern-exact.md",
+      "bytes": 9689,
+      "sha256": "5b101ac7008305f097ddad6756c30d38afd4908f73afa9c0f27129182b77320b"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/window-recurrence-row-selection-of-jacobi-pencil.md",
+      "bytes": 17597,
+      "sha256": "39eb111391dc085bc4bd00ad980c449e2825fcfc443f3d04d526a592c85f8c5a"
+    }
+  ],
+  "archive_delivery": "Windows pending; original artifact hashes verified locally; compact evidence/regeneration explicit",
+  "historical_pin_limit": "One earlier record05 working-byte metadata pin unavailable; current proof and all computational dependencies independently re-audited."
+}

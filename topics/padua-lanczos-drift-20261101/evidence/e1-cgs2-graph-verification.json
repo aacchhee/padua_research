@@ -1,0 +1,77 @@
+{
+  "status": "MEASURED developer local-graph check; not independent agent rerun",
+  "checks": [
+    {
+      "set": "triangle",
+      "rule": "bj",
+      "degree": 3,
+      "local_graph_gradient_identities": 2925,
+      "zero_second_pass_operation_checks": 26325,
+      "arithmetic": "exact rational dual numbers",
+      "result": "PASS"
+    },
+    {
+      "set": "triangle",
+      "rule": "mirror",
+      "degree": 3,
+      "local_graph_gradient_identities": 2925,
+      "zero_second_pass_operation_checks": 26325,
+      "arithmetic": "exact rational dual numbers",
+      "result": "PASS"
+    },
+    {
+      "set": "triangle",
+      "rule": "alt",
+      "degree": 3,
+      "local_graph_gradient_identities": 2925,
+      "zero_second_pass_operation_checks": 26325,
+      "arithmetic": "exact rational dual numbers",
+      "result": "PASS"
+    },
+    {
+      "set": "triangle",
+      "rule": "pivot",
+      "degree": 3,
+      "local_graph_gradient_identities": 2925,
+      "zero_second_pass_operation_checks": 26325,
+      "arithmetic": "exact rational dual numbers",
+      "result": "PASS"
+    },
+    {
+      "set": "rotated",
+      "rule": "bj",
+      "degree": 3,
+      "local_graph_gradient_identities": 5625,
+      "zero_second_pass_operation_checks": 50625,
+      "arithmetic": "exact rational dual numbers",
+      "result": "PASS"
+    },
+    {
+      "set": "rotated",
+      "rule": "mirror",
+      "degree": 3,
+      "local_graph_gradient_identities": 5625,
+      "zero_second_pass_operation_checks": 50625,
+      "arithmetic": "exact rational dual numbers",
+      "result": "PASS"
+    },
+    {
+      "set": "rotated",
+      "rule": "alt",
+      "degree": 3,
+      "local_graph_gradient_identities": 5625,
+      "zero_second_pass_operation_checks": 50625,
+      "arithmetic": "exact rational dual numbers",
+      "result": "PASS"
+    },
+    {
+      "set": "rotated",
+      "rule": "pivot",
+      "degree": 3,
+      "local_graph_gradient_identities": 5625,
+      "zero_second_pass_operation_checks": 50625,
+      "arithmetic": "exact rational dual numbers",
+      "result": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "scope": "Read-only GitHub snapshot; repeat before final-ID assignment/readiness",
+  "main": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+  "open": [
+    {
+      "number": 15,
+      "head": "2fd5456066de08094a35542f2ff6443c27d8c149",
+      "branch": "codex/padua-lanczos-drift-20261101"
+    },
+    {
+      "number": 12,
+      "head": "9a75747f42c78adee93783cf0c32d150fd5755da",
+      "branch": "codex/padua-proof-attempts-2-20261101"
+    }
+  ],
+  "pr16_merged": true,
+  "pr16_merge_commit": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+  "closed": [
+    {
+      "number": 16,
+      "merged_at": "2026-11-01T15:49:54Z",
+      "merge_commit": "28aaa20861d08074b77efc74eaef75cdcb36234d"
+    },
+    {
+      "number": 14,
+      "merged_at": "2026-11-01T15:19:41Z",
+      "merge_commit": "e0d9e3d08ee26c3b82a295f33b6ff99d928f22b9"
+    },
+    {
+      "number": 13,
+      "merged_at": "2026-11-01T10:25:55Z",
+      "merge_commit": "e24b21fe43cdd090f6dfac269147e75185f04c5b"
+    },
+    {
+      "number": 10,
+      "merged_at": "2026-11-01T09:37:12Z",
+      "merge_commit": "21e620ba8b5f0e0706f3a8c6613517df04d9d469"
+    },
+    {
+      "number": 9,
+      "merged_at": "2026-11-01T11:05:27Z",
+      "merge_commit": "806cc7b4509fd93bae652f9545d32d95529f8281"
+    },
+    {
+      "number": 8,
+      "merged_at": "2026-11-01T09:17:10Z",
+      "merge_commit": "9739a0c56b7a3976422ce60a8441bfbbfd6554df"
+    },
+    {
+      "number": 11,
+      "merged_at": "2026-11-01T10:47:08Z",
+      "merge_commit": "cf89b140530d5838bdb208a8c28f3e7aa676ace3"
+    },
+    {
+      "number": 6,
+      "merged_at": "2026-11-01T10:19:03Z",
+      "merge_commit": "a7e123476cef761807c69e5d0af1a094c7ac3df0"
+    },
+    {
+      "number": 5,
+      "merged_at": "2026-11-01T07:14:16Z",
+      "merge_commit": "0d058fb410166bd97b178be57910f2d256d0b529"
+    },
+    {
+      "number": 4,
+      "merged_at": "2026-11-01T07:14:15Z",
+      "merge_commit": "0d058fb410166bd97b178be57910f2d256d0b529"
+    },
+    {
+      "number": 3,
+      "merged_at": "2026-10-31T22:20:47Z",
+      "merge_commit": "07c5f5465d6de306aa81dbe8ca1f615295163864"
+    },
+    {
+      "number": 2,
+      "merged_at": "2026-10-31T21:42:07Z",
+      "merge_commit": "08fafe62d9798385dfafaacc9a41344272737e68"
+    },
+    {
+      "number": 1,
+      "merged_at": "2026-10-31T13:51:13Z",
+      "merge_commit": "d36722823441dc40c6e19d69a174459348dd309c"
+    }
+  ],
+  "closed_unmerged": []
+}

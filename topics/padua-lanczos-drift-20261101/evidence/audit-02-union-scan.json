@@ -1,0 +1,210 @@
+{
+  "purpose": "Read-only fresh union scan for audit; no reservation or assignment",
+  "heads": {
+    "main": {
+      "sha": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+      "complete_ledgers": [
+        "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+        "topics/padua-batch-20261031/ALLOCATIONS.md"
+      ],
+      "files": [
+        {
+          "path": "PROOF_STATUS.md",
+          "blob": "095a29706f03b5f6dac42e725c915c3ebc3802fe",
+          "bytes": 112158,
+          "sha256": "641d1aac027dd53f11dad22f327c694eb0ee880e4c355a4cc5eb736d6188231b",
+          "own_final_ids_in_first_two_table_cells": []
+        },
+        {
+          "path": "state/IDEAS.md",
+          "blob": "a3fd0aa42e7f90c64d012f410d2c0c95671718e7",
+          "bytes": 170639,
+          "sha256": "4a7f365d0932048d4e861a817e758077f9c715c936d2191b1c2a5da63d14d0bb",
+          "own_final_ids_in_first_two_table_cells": []
+        },
+        {
+          "path": "literature/INDEX.md",
+          "blob": "b6fad245a44916d958b0d810653522a1036c5281",
+          "bytes": 268372,
+          "sha256": "3cd4a057587459b117e555f1cae615e9985b770206c9b96d199a7161cc1a975e",
+          "own_final_ids_in_first_two_table_cells": []
+        },
+        {
+          "path": "ID_CROSSWALK.md",
+          "blob": "327ec7fcb42bfc9f29dc327d2a813e52d267b08e",
+          "bytes": 263250,
+          "sha256": "73da371370b82b19452cf2aa6ae9daf90d212d744527c6f4f550133dcb846988",
+          "own_final_ids_in_first_two_table_cells": []
+        },
+        {
+          "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+          "blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+          "bytes": 2271,
+          "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+          "own_final_ids_in_first_two_table_cells": []
+        },
+        {
+          "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+          "blob": "140e6110627096e01253b6f5b68340ef19f06d5a",
+          "bytes": 25061,
+          "sha256": "8737e3c36f2a3b7982a0bce511ebac0a28f7c3fdfb91abc876aa8e164bcf453c",
+          "own_final_ids_in_first_two_table_cells": [
+            "IDEA-246",
+            "IDEA-285",
+            "LIT-445",
+            "LIT-459",
+            "PD-N062",
+            "PD-N071",
+            "PD-T136",
+            "PD-T155"
+          ]
+        }
+      ]
+    },
+    "PR15": {
+      "sha": "7a6dd1f7f8f10d0f9c2568e89d693b7d04cd571b",
+      "complete_ledgers": [
+        "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+        "topics/padua-batch-20261031/ALLOCATIONS.md"
+      ],
+      "files": [
+        {
+          "path": "PROOF_STATUS.md",
+          "blob": "095a29706f03b5f6dac42e725c915c3ebc3802fe",
+          "bytes": 112158,
+          "sha256": "641d1aac027dd53f11dad22f327c694eb0ee880e4c355a4cc5eb736d6188231b",
+          "own_final_ids_in_first_two_table_cells": []
+        },
+        {
+          "path": "state/IDEAS.md",
+          "blob": "a3fd0aa42e7f90c64d012f410d2c0c95671718e7",
+          "bytes": 170639,
+          "sha256": "4a7f365d0932048d4e861a817e758077f9c715c936d2191b1c2a5da63d14d0bb",
+          "own_final_ids_in_first_two_table_cells": []
+        },
+        {
+          "path": "literature/INDEX.md",
+          "blob": "b6fad245a44916d958b0d810653522a1036c5281",
+          "bytes": 268372,
+          "sha256": "3cd4a057587459b117e555f1cae615e9985b770206c9b96d199a7161cc1a975e",
+          "own_final_ids_in_first_two_table_cells": []
+        },
+        {
+          "path": "ID_CROSSWALK.md",
+          "blob": "034f1e1eb63d35a083bcde4ac286084c2a313c1b",
+          "bytes": 263726,
+          "sha256": "eca54a2e48932007d179f499de49fb82857d089d2622f7175a9429c3c4d4d0e8",
+          "own_final_ids_in_first_two_table_cells": []
+        },
+        {
+          "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+          "blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+          "bytes": 2271,
+          "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+          "own_final_ids_in_first_two_table_cells": []
+        },
+        {
+          "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+          "blob": "d2ee47a8951d893597fb996a24a4227c014df846",
+          "bytes": 25216,
+          "sha256": "f1b4f9477e625f88ffe2e4f5102e28f0745a05d1aa5bb094fc1f7104baffe268",
+          "own_final_ids_in_first_two_table_cells": [
+            "IDEA-246",
+            "IDEA-285",
+            "LIT-445",
+            "LIT-459",
+            "PD-N062",
+            "PD-N071",
+            "PD-T136",
+            "PD-T155"
+          ]
+        }
+      ]
+    },
+    "PR12": {
+      "sha": "9a75747f42c78adee93783cf0c32d150fd5755da",
+      "complete_ledgers": [
+        "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+        "topics/padua-batch-20261031/ALLOCATIONS.md"
+      ],
+      "files": [
+        {
+          "path": "PROOF_STATUS.md",
+          "blob": "095a29706f03b5f6dac42e725c915c3ebc3802fe",
+          "bytes": 112158,
+          "sha256": "641d1aac027dd53f11dad22f327c694eb0ee880e4c355a4cc5eb736d6188231b",
+          "own_final_ids_in_first_two_table_cells": []
+        },
+        {
+          "path": "state/IDEAS.md",
+          "blob": "a3fd0aa42e7f90c64d012f410d2c0c95671718e7",
+          "bytes": 170639,
+          "sha256": "4a7f365d0932048d4e861a817e758077f9c715c936d2191b1c2a5da63d14d0bb",
+          "own_final_ids_in_first_two_table_cells": []
+        },
+        {
+          "path": "literature/INDEX.md",
+          "blob": "b6fad245a44916d958b0d810653522a1036c5281",
+          "bytes": 268372,
+          "sha256": "3cd4a057587459b117e555f1cae615e9985b770206c9b96d199a7161cc1a975e",
+          "own_final_ids_in_first_two_table_cells": []
+        },
+        {
+          "path": "ID_CROSSWALK.md",
+          "blob": "327ec7fcb42bfc9f29dc327d2a813e52d267b08e",
+          "bytes": 263250,
+          "sha256": "73da371370b82b19452cf2aa6ae9daf90d212d744527c6f4f550133dcb846988",
+          "own_final_ids_in_first_two_table_cells": []
+        },
+        {
+          "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+          "blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+          "bytes": 2271,
+          "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+          "own_final_ids_in_first_two_table_cells": []
+        },
+        {
+          "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+          "blob": "140e6110627096e01253b6f5b68340ef19f06d5a",
+          "bytes": 25061,
+          "sha256": "8737e3c36f2a3b7982a0bce511ebac0a28f7c3fdfb91abc876aa8e164bcf453c",
+          "own_final_ids_in_first_two_table_cells": [
+            "IDEA-246",
+            "IDEA-285",
+            "LIT-445",
+            "LIT-459",
+            "PD-N062",
+            "PD-N071",
+            "PD-T136",
+            "PD-T155"
+          ]
+        }
+      ]
+    }
+  },
+  "own_ranges": {
+    "PD-T": [
+      136,
+      155
+    ],
+    "PD-N": [
+      62,
+      71
+    ],
+    "IDEA": [
+      246,
+      285
+    ],
+    "LIT": [
+      445,
+      459
+    ]
+  },
+  "note": "Next-unreserved boundary prose and foreign source IDs are not assignments. Existing reservations inspected at all heads; own-owner copies of the drift block are duplicates, not conflicting reservations.",
+  "assignment_and_integration_result": "PASS",
+  "final_assignments_of_own_ranges": {
+    "main": {},
+    "head": {},
+    "PR12": {}
+  }
+}

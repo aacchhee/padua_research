@@ -1,0 +1,61 @@
+{
+  "auditor": "Codex independent scope subagent; configured gpt-6-astra high; resolved serving metadata unexposed",
+  "read_head": "39b3c5d8690566ce461e6e3a0a628e772a695dbc",
+  "candidate": "02bd97b892ed409ec64e9b281130c71a85e914e9",
+  "previous_published": "3cca9b929ac006a5ed4295b3beba909dfd602271",
+  "command": "python3 -B topics/padua-lanczos-drift-20261101/checks/audit-04/scope_check.py",
+  "checker_sha256": "f491fcddee705be652af16a299e96b35ee30c974907ca3fe2ba0f3ac587f4c52",
+  "python": "3.12.14",
+  "inputs": {
+    "state/IDEAS.md": {
+      "sha256": "4a7f365d0932048d4e861a817e758077f9c715c936d2191b1c2a5da63d14d0bb",
+      "bytes": 170639
+    },
+    "topics/padua-lanczos-drift-20261101/ideas-e3-e4.md": {
+      "sha256": "f115c19e15d430b99e4e0a19cdb9db05712d47490ec9305832b3110e0675587a",
+      "bytes": 48975
+    },
+    "tracks/bivariate-lanczos/theory/drift-codex-e1-05-finite-scalar-cgs2-capacities.md": {
+      "sha256": "b1aa229f0ec74e8c4fb274fdc54cf40201c85712f91ae1ea0508466e46ed44ce",
+      "bytes": 23470
+    }
+  },
+  "checks": {
+    "unchanged_idea_content_except_separation_and_history": true,
+    "unchanged_record05_except_rotated_row_and_history": true,
+    "alt_only_countermodel": true,
+    "strict_target_equality_refutation": true,
+    "reference_countermodels": [
+      {
+        "gamma": "3/5",
+        "pre_normalization_correction": [
+          "0",
+          "0",
+          "-4/5"
+        ],
+        "normalized_difference": [
+          "0",
+          "2/5",
+          "-4/5"
+        ],
+        "both_normal_components_zero": true
+      },
+      {
+        "gamma": "9999/10001",
+        "pre_normalization_correction": [
+          "0",
+          "0",
+          "-200/10001"
+        ],
+        "normalized_difference": [
+          "0",
+          "2/10001",
+          "-200/10001"
+        ],
+        "both_normal_components_zero": true
+      }
+    ]
+  },
+  "all_pass": true,
+  "limits": "Exact elementary scope checks only; no experiment, scalar regeneration, IEEE realization or novelty claim."
+}

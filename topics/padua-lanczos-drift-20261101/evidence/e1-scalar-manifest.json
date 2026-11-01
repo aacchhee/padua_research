@@ -1,0 +1,208 @@
+{
+  "status": "MEASURED reproducible declared scalar-CGS2 graph finite bounds; independent audit pending",
+  "rule_base_sha": "806cc7b4509fd93bae652f9545d32d95529f8281",
+  "code": [
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_batch.py",
+      "bytes": 1985,
+      "sha256": "3c2e2c438737775137f33a2b8e985064fa1ace862436344830f1df5af20830dd"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_cgs2.py",
+      "bytes": 3710,
+      "sha256": "426630eb916e13bb14409f6f7b8ea310eaeb1bf7949de10866d163aad31c7b4b"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_cgs2_multinode.py",
+      "bytes": 3827,
+      "sha256": "32b9e82756a38387ce5a9f2d596d3f6d59282eeec30b5a25afe96f514abe5553"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_cgs2_verify.py",
+      "bytes": 3345,
+      "sha256": "90055da72bdbcb8b5915418e21193bd52238d6e761e696bb47b6c4aeec9b7023"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_cgs2_witness.py",
+      "bytes": 3558,
+      "sha256": "06dff7f4019cd6dc7a30be686bf5a7708704af7c2be0b2f251546529ecade5a4"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_check.py",
+      "bytes": 3032,
+      "sha256": "b6b3e9ec0498f0e7f5e9ccecb524f7410f13acd9ecd26f0fb42d34e9ff17a821"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_exact.py",
+      "bytes": 6167,
+      "sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_fp.py",
+      "bytes": 2913,
+      "sha256": "494810567de117cfeabe9eed9e49f98e55798f33ae2e80adfc5f2c47275650e4"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_reproduce.py",
+      "bytes": 2792,
+      "sha256": "4381f3367651bf69feaf801ef5cec94a704cbcc62e4d982bae6c7a2ef9dbbc02"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_scalar.py",
+      "bytes": 4411,
+      "sha256": "c14cc7f05acdef82a6f4a1b67ad5e1c7d6299c480391c19ce691aad3542545c1"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_sign_check.py",
+      "bytes": 1993,
+      "sha256": "0a3717f73e272ca926664c2dc06a0a91bbe4a1be8eaeff89a9b40cb184364a12"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_verify.py",
+      "bytes": 2563,
+      "sha256": "f60c49e08ba51c9c4647d3ed346ec4681c48c9ee869bc6248b6fc861c2d456cd"
+    }
+  ],
+  "committed_evidence": [
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-cgs2-graph-verification.json",
+      "bytes": 2098,
+      "sha256": "ffbfc2beb5fbc92c2d7db11a41bd2adb76f8590a518117d089e7d7aebc21bf71"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-derivative-verification.json",
+      "bytes": 2087,
+      "sha256": "97306679c87ac26c6983effe396e3eb1b3d8105d8919bf965d67f2eea77026e5"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-exact-check.json",
+      "bytes": 20868,
+      "sha256": "d8488e9637210ae2e513eb4b99259ad37d617b24e2026e3743ac0e664e2caaba"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-fp-comparison.json",
+      "bytes": 12280,
+      "sha256": "dcbef8541df4f8f5503172e7e6044247039d5c08bc0f63554641f6330cc74c99"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-freeze.json",
+      "bytes": 3344,
+      "sha256": "66313783ccb499b2aafe333e03bc5b809a2064e882eac2d61f4ddf5a7924668d"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-full-sweep.json",
+      "bytes": 616693,
+      "sha256": "0d9c236fe879879b7f546596c554d213b7b8c408d31dec08dd79146c7d629344"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-manifest.json",
+      "bytes": 5448,
+      "sha256": "4f6b2f2320b5d7ce2b47bdc1f2f2ced2adbbc386e09ff5bf6e179c22b8656526"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-multinode-certificates.json",
+      "bytes": 55328,
+      "sha256": "fae9c8743c78230ef0aa82c185d1efe0eee37be066982a37d39d920af95719f0"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-n12-directional-snapshot.json",
+      "bytes": 103002,
+      "sha256": "385b96c2b710f53332133bfcd0575b29631351ea28ad73523213492847347f1f"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-posthoc-scalar-ratios.json",
+      "bytes": 682,
+      "sha256": "599766011500b569d16c0faca974605495889575db12e715b420d87faeff739b"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-reproduction-triangle.json",
+      "bytes": 927,
+      "sha256": "aa6bef4edaf46cd1e0df5f115714ad0150332c583f62f1693d4fde1fcf237dd8"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-scalar-cgs2.json",
+      "bytes": 444008,
+      "sha256": "e215556a01f9e169163b228dfe1b984d28e0cebd7f78e0d858f9a61a0de878c8"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-sign-check-rotated.json",
+      "bytes": 472,
+      "sha256": "8ba0c9e84f01988cc10fd7fb2be930f8c4630a88ee1199c81e0536a82b287c06"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-sign-check-triangle.json",
+      "bytes": 473,
+      "sha256": "483b905fdd7cb3b6f0d0eb3299496765e29ddcd6a3da6bc2a0b7ced5115fef7f"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-source-degree2-screen.json",
+      "bytes": 93265,
+      "sha256": "9f5c354ab2b73ece1aff4540d26256ee6d03cc39963ca493e863fa8502d34191"
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/e1-summary.md",
+      "bytes": 6094,
+      "sha256": "2b34f994284ba40d597441fd99135567f4beba4cdfc10143087f3f2b0b6d6df5"
+    }
+  ],
+  "working_artifacts": [
+    {
+      "path": "/workspace/padua-drift-runs/e1/scalar-rotated-n12-alt.json",
+      "bytes": 156443,
+      "sha256": "948dd538d24fd610b576b4786dc43272515768381629edec7e26a28054e71506"
+    },
+    {
+      "path": "/workspace/padua-drift-runs/e1/scalar-rotated-n12-bj.json",
+      "bytes": 134685,
+      "sha256": "75f5238f16a0b9f8b0b117731d67e26681c6913880371fe1eb4baa2704bf776f"
+    },
+    {
+      "path": "/workspace/padua-drift-runs/e1/scalar-triangle-n12-bj.json",
+      "bytes": 8559,
+      "sha256": "723abdd543ebb7b02d1bfe8e68bf4de372d56e0f3997f24c710b65986f2a5aba"
+    },
+    {
+      "path": "/workspace/padua-drift-runs/e1/scalar-triangle-n12-pivot.json",
+      "bytes": 9267,
+      "sha256": "e0eab641c368b63bd8aad7016af3ac1e01bef1d7e4b611fb02e2ee0b99796251"
+    },
+    {
+      "path": "/workspace/padua-drift-runs/e1/cgs2-multinode-rotated-n12-bj.json",
+      "bytes": 3626111,
+      "sha256": "ffd035eef09d39be2ab862a6c12abbe58c455cd9131615ee89b4eefba14d1d8e"
+    },
+    {
+      "path": "/workspace/padua-drift-runs/e1/cgs2-multinode-triangle-n12-bj.json",
+      "bytes": 25829,
+      "sha256": "5e5897dc49fc9145add8abd22a5411f21839067c6b85674e694b491c5104fa55"
+    },
+    {
+      "path": "/workspace/padua-drift-runs/e1/cgs2-rotated-n12-alt.json",
+      "bytes": 14382,
+      "sha256": "9e04443e03f35ca7f2f63522defaca004bb14b0ad51dc070b89d2ba93b8783d6"
+    },
+    {
+      "path": "/workspace/padua-drift-runs/e1/cgs2-triangle-n12-pivot.json",
+      "bytes": 1794,
+      "sha256": "90d1f84de5c63bac1c2acd96e48d5a8fecd5f38dac7f5da6c8d308f004adb99e"
+    },
+    {
+      "path": "/workspace/padua-drift-runs/e1/cgs2-witness-rotated-n12-bj.json",
+      "bytes": 93610,
+      "sha256": "9ab8dcbf3f13196662b9fbd2ec0a14bebed4a18399673af522ead35718f4c87d"
+    },
+    {
+      "path": "/workspace/padua-drift-runs/e1/cgs2-witness-triangle-n12-bj.json",
+      "bytes": 4896,
+      "sha256": "0229968d21c366c2ef7fa73c1b31f7529762493ad9ecccaefe882262325f74e2"
+    }
+  ],
+  "reproduction_commands": [
+    "PYTHONPATH=/workspace/padua-drift-runs/python-deps python tracks/bivariate-lanczos/code/drift/e1_reproduce.py --set triangle --output /tmp/e1-reproduction-triangle.json",
+    "PYTHONPATH=/workspace/padua-drift-runs/python-deps python tracks/bivariate-lanczos/code/drift/e1_reproduce.py --set rotated --output /tmp/e1-reproduction-rotated.json"
+  ],
+  "actual_execution": "Full run commands are retained inside each source record. Both full graph uppers, both explicit one-node witnesses, and both multinode witnesses executed. Triangle compact-certificate regeneration executed and passed. Rotated capacities checked by separate explicit projection; full independent regeneration pending at developer completion.",
+  "resource_notes": "Final multinode generators were wrapped in timeout240s. Rotated full graph upper152.53s, multinode89.57s. No hard memory byte cap or peak-RSS profiling.",
+  "large_artifact_policy": "The 3.626MB rotated capacity record was not committed or split. Compact exact witness plus committed generator/source records supports complete regeneration. Working artifact external archival pending AC; local path/hash/size recorded.",
+  "interpretation": "Full declared formal scalar-CGS2 factor10 across both sets INCONCLUSIVE. Weaker factors>7both,>800T24 are post-hoc. Aggregate-map factor10 certified via separately added Urow bound; original KHS-only certificate INCONCLUSIVE."
+}

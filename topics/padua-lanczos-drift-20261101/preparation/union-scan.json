@@ -1,0 +1,305 @@
+{
+ "generated_utc": "2026-11-01T19:42:39+00:00",
+ "refs": {
+  "main": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+  "PR12": "f4c5c9e783d2a57253142877cf6845635aaac50f",
+  "PR15": "918f41ce719e9fe8c5336a338692f1fac14a2018"
+ },
+ "registries": [
+  "PROOF_STATUS.md",
+  "state/IDEAS.md",
+  "literature/INDEX.md",
+  "ID_CROSSWALK.md",
+  "topics/padua-batch-20261031/ALLOCATIONS.md",
+  "PAPER_MAP.md",
+  "state/CURRENT.md"
+ ],
+ "scan": {
+  "main": {
+   "PROOF_STATUS.md": {
+    "sha256": "641d1aac027dd53f11dad22f327c694eb0ee880e4c355a4cc5eb736d6188231b",
+    "table_rows_using_reserved_ids": 0,
+    "mentions": []
+   },
+   "state/IDEAS.md": {
+    "sha256": "4a7f365d0932048d4e861a817e758077f9c715c936d2191b1c2a5da63d14d0bb",
+    "table_rows_using_reserved_ids": 0,
+    "mentions": []
+   },
+   "literature/INDEX.md": {
+    "sha256": "3cd4a057587459b117e555f1cae615e9985b770206c9b96d199a7161cc1a975e",
+    "table_rows_using_reserved_ids": 0,
+    "mentions": []
+   },
+   "ID_CROSSWALK.md": {
+    "sha256": "73da371370b82b19452cf2aa6ae9daf90d212d744527c6f4f550133dcb846988",
+    "table_rows_using_reserved_ids": 0,
+    "mentions": []
+   },
+   "topics/padua-batch-20261031/ALLOCATIONS.md": {
+    "sha256": "8737e3c36f2a3b7982a0bce511ebac0a28f7c3fdfb91abc876aa8e164bcf453c",
+    "table_rows_using_reserved_ids": 8,
+    "mentions": [
+     "IDEA-246",
+     "IDEA-285",
+     "LIT-445",
+     "LIT-459",
+     "PD-N062",
+     "PD-N071",
+     "PD-T136",
+     "PD-T155"
+    ],
+    "note": "rows are this topic's own reservation table (PD-T136\u2013PD-T155 etc.), not assignments"
+   },
+   "PAPER_MAP.md": {
+    "sha256": "dfa659e3e33e1e855635ed0863583830dfad075235f509745bc2b0985dc85f6c",
+    "table_rows_using_reserved_ids": 0,
+    "mentions": []
+   },
+   "state/CURRENT.md": {
+    "sha256": "ca8a8b356c3974217a8347dfd3706e75004adc66200f14c04cca3770bc53d8c6",
+    "table_rows_using_reserved_ids": 0,
+    "mentions": []
+   },
+   "record_headers_using_reserved_ids": []
+  },
+  "PR12": {
+   "PROOF_STATUS.md": {
+    "sha256": "641d1aac027dd53f11dad22f327c694eb0ee880e4c355a4cc5eb736d6188231b",
+    "table_rows_using_reserved_ids": 0,
+    "mentions": []
+   },
+   "state/IDEAS.md": {
+    "sha256": "4a7f365d0932048d4e861a817e758077f9c715c936d2191b1c2a5da63d14d0bb",
+    "table_rows_using_reserved_ids": 0,
+    "mentions": []
+   },
+   "literature/INDEX.md": {
+    "sha256": "3cd4a057587459b117e555f1cae615e9985b770206c9b96d199a7161cc1a975e",
+    "table_rows_using_reserved_ids": 0,
+    "mentions": []
+   },
+   "ID_CROSSWALK.md": {
+    "sha256": "73da371370b82b19452cf2aa6ae9daf90d212d744527c6f4f550133dcb846988",
+    "table_rows_using_reserved_ids": 0,
+    "mentions": []
+   },
+   "topics/padua-batch-20261031/ALLOCATIONS.md": {
+    "sha256": "8737e3c36f2a3b7982a0bce511ebac0a28f7c3fdfb91abc876aa8e164bcf453c",
+    "table_rows_using_reserved_ids": 8,
+    "mentions": [
+     "IDEA-246",
+     "IDEA-285",
+     "LIT-445",
+     "LIT-459",
+     "PD-N062",
+     "PD-N071",
+     "PD-T136",
+     "PD-T155"
+    ],
+    "note": "rows are this topic's own reservation table (PD-T136\u2013PD-T155 etc.), not assignments"
+   },
+   "PAPER_MAP.md": {
+    "sha256": "dfa659e3e33e1e855635ed0863583830dfad075235f509745bc2b0985dc85f6c",
+    "table_rows_using_reserved_ids": 0,
+    "mentions": []
+   },
+   "state/CURRENT.md": {
+    "sha256": "ca8a8b356c3974217a8347dfd3706e75004adc66200f14c04cca3770bc53d8c6",
+    "table_rows_using_reserved_ids": 0,
+    "mentions": []
+   },
+   "record_headers_using_reserved_ids": []
+  },
+  "PR15": {
+   "PROOF_STATUS.md": {
+    "sha256": "641d1aac027dd53f11dad22f327c694eb0ee880e4c355a4cc5eb736d6188231b",
+    "table_rows_using_reserved_ids": 0,
+    "mentions": []
+   },
+   "state/IDEAS.md": {
+    "sha256": "4a7f365d0932048d4e861a817e758077f9c715c936d2191b1c2a5da63d14d0bb",
+    "table_rows_using_reserved_ids": 0,
+    "mentions": []
+   },
+   "literature/INDEX.md": {
+    "sha256": "3cd4a057587459b117e555f1cae615e9985b770206c9b96d199a7161cc1a975e",
+    "table_rows_using_reserved_ids": 0,
+    "mentions": []
+   },
+   "ID_CROSSWALK.md": {
+    "sha256": "eca54a2e48932007d179f499de49fb82857d089d2622f7175a9429c3c4d4d0e8",
+    "table_rows_using_reserved_ids": 0,
+    "mentions": [
+     "IDEA-246",
+     "LIT-445",
+     "PD-N062",
+     "PD-T136"
+    ]
+   },
+   "topics/padua-batch-20261031/ALLOCATIONS.md": {
+    "sha256": "f1b4f9477e625f88ffe2e4f5102e28f0745a05d1aa5bb094fc1f7104baffe268",
+    "table_rows_using_reserved_ids": 8,
+    "mentions": [
+     "IDEA-246",
+     "IDEA-285",
+     "LIT-445",
+     "LIT-459",
+     "PD-N062",
+     "PD-N071",
+     "PD-T136",
+     "PD-T155"
+    ],
+    "note": "rows are this topic's own reservation table (PD-T136\u2013PD-T155 etc.), not assignments"
+   },
+   "PAPER_MAP.md": {
+    "sha256": "dfa659e3e33e1e855635ed0863583830dfad075235f509745bc2b0985dc85f6c",
+    "table_rows_using_reserved_ids": 0,
+    "mentions": []
+   },
+   "state/CURRENT.md": {
+    "sha256": "ca8a8b356c3974217a8347dfd3706e75004adc66200f14c04cca3770bc53d8c6",
+    "table_rows_using_reserved_ids": 0,
+    "mentions": []
+   },
+   "record_headers_using_reserved_ids": []
+  }
+ },
+ "registry_bytes_PR12_equal_main": {
+  "PROOF_STATUS.md": true,
+  "state/IDEAS.md": true,
+  "literature/INDEX.md": true,
+  "ID_CROSSWALK.md": true,
+  "topics/padua-batch-20261031/ALLOCATIONS.md": true,
+  "PAPER_MAP.md": true,
+  "state/CURRENT.md": true
+ },
+ "pull_requests": [
+  {
+   "number": 16,
+   "state": "closed",
+   "merged": true,
+   "draft": false,
+   "head": "060d29b7b0d4ef2dcd8d95b6a2ff942e11d79ba3",
+   "ref": "claude/results-in-repo-20261101"
+  },
+  {
+   "number": 15,
+   "state": "open",
+   "merged": false,
+   "draft": true,
+   "head": "918f41ce719e9fe8c5336a338692f1fac14a2018",
+   "ref": "codex/padua-lanczos-drift-20261101"
+  },
+  {
+   "number": 14,
+   "state": "closed",
+   "merged": true,
+   "draft": false,
+   "head": "635ba4fd537be9a4dbc060617fbc0535db4d72ad",
+   "ref": "codex/padua-mz-2d-20261101"
+  },
+  {
+   "number": 13,
+   "state": "closed",
+   "merged": true,
+   "draft": false,
+   "head": "7ce4c36fb1494fee2dd3bdc1bf39fc241c5b9e21",
+   "ref": "claude/handoff-id-rules-20261101"
+  },
+  {
+   "number": 10,
+   "state": "closed",
+   "merged": true,
+   "draft": false,
+   "head": "9fa30122fec9796ca718af210a2a13c7525038a2",
+   "ref": "claude/bivariate-lanczos-20261031"
+  },
+  {
+   "number": 9,
+   "state": "closed",
+   "merged": true,
+   "draft": false,
+   "head": "752ba068589683afe644b505d673f8da1529cbf0",
+   "ref": "codex/padua-proof-attempts-20261101"
+  },
+  {
+   "number": 8,
+   "state": "closed",
+   "merged": true,
+   "draft": false,
+   "head": "6eeec5b3a3d48c4bde198d9cc6c170dd92674bdb",
+   "ref": "claude/results-track-rule-20261101"
+  },
+  {
+   "number": 12,
+   "state": "open",
+   "merged": false,
+   "draft": true,
+   "head": "f4c5c9e783d2a57253142877cf6845635aaac50f",
+   "ref": "codex/padua-proof-attempts-2-20261101"
+  },
+  {
+   "number": 11,
+   "state": "closed",
+   "merged": true,
+   "draft": false,
+   "head": "1406ef74a76d9160324596447a831470b93c398b",
+   "ref": "claude/mz-prior-art-20261101"
+  },
+  {
+   "number": 6,
+   "state": "closed",
+   "merged": true,
+   "draft": false,
+   "head": "b46b4dea18ce2c933489a211b0b6819dfd32ca70",
+   "ref": "claude/programme-ideas-20261031"
+  },
+  {
+   "number": 5,
+   "state": "closed",
+   "merged": true,
+   "draft": false,
+   "head": "da679224b50d2210689c92e5a69d5a4d181afe3c",
+   "ref": "codex/mz-postmerge-frontier-20261031"
+  },
+  {
+   "number": 4,
+   "state": "closed",
+   "merged": true,
+   "draft": false,
+   "head": "a4331a13301ee4a9905c8204c26bff5f9fdf246e",
+   "ref": "codex/lattice-unisolvence-20261031"
+  },
+  {
+   "number": 3,
+   "state": "closed",
+   "merged": true,
+   "draft": false,
+   "head": "8ee04f4e5db46dd25fe5752ce605dde27098aae6",
+   "ref": "codex/mz-constants-20261031"
+  },
+  {
+   "number": 2,
+   "state": "closed",
+   "merged": true,
+   "draft": false,
+   "head": "317a26597dedc9adc9cfc6a26fa00078df7d29e4",
+   "ref": "codex/charter-unisolvence-20261031"
+  },
+  {
+   "number": 1,
+   "state": "closed",
+   "merged": true,
+   "draft": false,
+   "head": "5a5f09f9768f4c2b28a82eb85ed5be8bd3c797e5",
+   "ref": "codex/initialize-padua"
+  }
+ ],
+ "closed_unmerged": [],
+ "open_other": [
+  12
+ ],
+ "result": "PASS: no final use of any reserved ID on main or PR12, or as a record header on any ref; no closed-unmerged PR; PR12 registry bytes equal main",
+ "classification": "Ledger table rows are excluded from use: they are the PR15 reservation rows. PR15 ID_CROSSWALK mentions are its own reservation prose."
+}

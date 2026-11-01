@@ -29,3 +29,23 @@ One section per topic. Each topic replaces only its own section, from its own `r
   - All agent work must run from the cloud; AC's machine is only for unfetchable papers and cold storage.
 - **Response:** response-01 corrected the migrated PR14 summary (audit F1–F3).
 - **Details:** [results/results-in-repo-20261101.md](results/results-in-repo-20261101.md)
+
+## padua-lanczos-drift-20261101 — finite-precision span drift in bivariate Lanczos (PR #15, draft)
+
+- **Audits:** Claude audit-01 and Codex audits 02–04. Audit-04 accepted the final response; no PROVED or MEASURED claim was refuted.
+- **PROVED:**
+  - PD-T144: for the named Padua certificate, ρ_n = O(n⁻⁵), limsup n⁵ρ_n ≤ 20√2π⁴/9 (sharper ≈ 219.5). This splits PD-T075(U1); PD-T075 is now PARTIAL.
+  - PD-T145: an explicit square-case √ε family (reading (E)).
+  - PD-T136/137: the normal-quotient span derivative and rational certificates.
+  - PD-T138: the formal scalar-CGS2 normal map.
+  - PD-T139: the finite aggregate separation, κ ratio > 1126 on T24 and > 11.72 on rotated Q24.
+  - PD-T141: the finite formal scalar separation, > 800 on T24 and > 7 on rotQ24 (thresholds post hoc).
+  - PD-T142/143: a computed-polynomial span certificate and a fixed-degree selection criterion.
+  - PD-N062: a fixed-degree closure lemma; projection-only rules cannot remove the drift.
+  - PD-N063: three failed Padua witness paths.
+- **MEASURED:**
+  - PD-T140: the scalar experiment. Its factor-ten target is PARTIAL (T24 proved, rotQ24 OPEN).
+  - PD-T146: public polyrat V+A span gaps of 0.0041 and 0.0102 at near-machine orthogonality.
+- **OPEN:** all-degree drift, general staircase safety, PD-T055, PD-T075(U2) and PD-T056(G). Formal-model results imply no IEEE claim.
+- **IDs:** PD-T136–146, PD-N062–063, IDEA-246–267.
+- **Details:** [results/padua-lanczos-drift-20261101.md](results/padua-lanczos-drift-20261101.md)

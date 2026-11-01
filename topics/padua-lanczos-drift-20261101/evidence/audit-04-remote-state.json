@@ -1,0 +1,21 @@
+{
+ "observed_utc": "2026-11-01 19:31:28 UTC",
+ "main": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+ "open": [
+  {
+   "number": 15,
+   "head": "39b3c5d8690566ce461e6e3a0a628e772a695dbc",
+   "base": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+   "draft": true
+  },
+  {
+   "number": 12,
+   "head": "0dd4a6df2db4a2019541604bb97c05926ab3c22b",
+   "base": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+   "draft": true
+  }
+ ],
+ "closed_pr_count": 13,
+ "closed_unmerged": [],
+ "note": "No allocation/readiness decision; preparation must refresh again."
+}

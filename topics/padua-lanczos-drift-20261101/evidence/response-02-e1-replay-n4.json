@@ -1,0 +1,1210 @@
+{
+ "purpose": "audit-02 A02-L1: execute the record-03 full normalized scalar-CGS2 trajectory replay at degree 4, which the committed audit-01 first_principles.py omits (partC guarded by n == 3).",
+ "executor": "Claude response-02 developer (Opus 5.5); developer execution, NOT an independent rerun",
+ "command": "PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 tracks/bivariate-lanczos/code/drift/e1_replay_n4.py --output topics/padua-lanczos-drift-20261101/evidence/response-02-e1-replay-n4.json",
+ "started_utc": "2026-11-01T16:51:35.333063+00:00",
+ "finished_utc": "2026-11-01T16:52:47.567972+00:00",
+ "elapsed_seconds_total": 72.23493321799992,
+ "code_sha256": "d454de30f6c4d1cda7967cb6ee4c21cd956dadd563b0e5632bed5195574cfcad",
+ "called_unchanged_script": {
+  "path": "topics/padua-lanczos-drift-20261101/checks/audit-01/scripts/E1/first_principles.py",
+  "sha256": "07624560cf3be894429a048e7928d614f731c8107e503accfebdef665b3b64ac"
+ },
+ "receipt_compared": {
+  "path": "topics/padua-lanczos-drift-20261101/evidence/audit-02-e1-checks.json",
+  "sha256": "7bb3e3b566d7d25d369ee812c007b690b46bbdcc54b55ceb54f18fec9390d0ee",
+  "available": true
+ },
+ "python": "3.13.18",
+ "mpmath": "1.3.0",
+ "mp_dps": 80,
+ "acceptance": "every partC discrepancy < 1e-70 at 80 digits; dot/norm-only tangential part > 1e-3; finite-epsilon ratio within 1e-10 of 1; partA exact normal-derivative identity True",
+ "scope": "Degree 4: 20 generic rational nodes (seed 2), four fixed rules, every scalar operation of the declared CGS2 graph carrying its own formal relative delta (random rationals in [-1,1]). Not an exact proof, not degree 12, not T24/rotQ24, no IEEE rounding.",
+ "cases": [
+  {
+   "role": "control",
+   "degree": 3,
+   "M": 14,
+   "point_seed": 1,
+   "rule": "bj",
+   "partA_seed": 11,
+   "partC_seed": 31,
+   "points": [
+    [
+     "-40/37",
+     "17/41"
+    ],
+    [
+     "-38/37",
+     "-37/41"
+    ],
+    [
+     "-1",
+     "9/41"
+    ],
+    [
+     "-32/37",
+     "-8/41"
+    ],
+    [
+     "-28/37",
+     "22/41"
+    ],
+    [
+     "-25/37",
+     "23/41"
+    ],
+    [
+     "-23/37",
+     "32/41"
+    ],
+    [
+     "-6/37",
+     "-11/41"
+    ],
+    [
+     "0",
+     "-37/41"
+    ],
+    [
+     "8/37",
+     "-14/41"
+    ],
+    [
+     "15/37",
+     "37/41"
+    ],
+    [
+     "17/37",
+     "20/41"
+    ],
+    [
+     "29/37",
+     "-39/41"
+    ],
+    [
+     "35/37",
+     "-27/41"
+    ]
+   ],
+   "A_record01": {
+    "rule": "bj",
+    "M": 14,
+    "N": 10,
+    "ties": 0,
+    "choices": "XYXYYXYYY",
+    "normal_derivative_equals_frozen_V": true,
+    "raw_unprojected_difference_max_abs": 6.852361975415338,
+    "normT": "33.7903956448758",
+    "unprojected_norm": "48.4117973608861",
+    "finite_differences": [
+     {
+      "eps": "1/1000000",
+      "theta_over_eps_div_normT": "1.0000046767391253273"
+     },
+     {
+      "eps": "1/1000000000",
+      "theta_over_eps_div_normT": "1.0000000046771867348"
+     },
+     {
+      "eps": "1/1000000000000",
+      "theta_over_eps_div_normT": "1.0000000000046771872"
+     }
+    ]
+   },
+   "C_record03": {
+    "ops_with_formal_delta": 5454,
+    "baseline_max_err": "2.6355e-81",
+    "full_replay_vs_table_rel_err": "3.9438e-81",
+    "per_class_rel_err": {
+     "mul": "8.289e-81",
+     "mv1p": "7.4015e-81",
+     "mv1s": "6.0556e-81",
+     "sub1": "7.696e-81",
+     "sub2": "2.2021e-81",
+     "div": "7.8575e-81"
+    },
+    "dot_norm_only_normal_max": "2.985e-81",
+    "dot_norm_only_tangential_max": "1.2716",
+    "second_matvec_only_derivative_max": "3.7596e-81",
+    "finite_eps": [
+     {
+      "eps": "1e-20",
+      "theta_over_eps_div_pred": "1.0"
+     },
+     {
+      "eps": "1e-30",
+      "theta_over_eps_div_pred": "1.0"
+     }
+    ]
+   },
+   "checks": {
+    "baseline_q_equals_b_over_sqrt_d": true,
+    "full_replay_matches_amplitude_table": true,
+    "each_vector_class_matches_table": true,
+    "dot_norm_errors_normal_part_zero": true,
+    "dot_norm_errors_tangential_part_nonzero": true,
+    "second_matvec_errors_zero_derivative": true,
+    "finite_eps_ratio_one": true
+   },
+   "elapsed_seconds_partA": 0.5523475169999301,
+   "elapsed_seconds_partC": 1.0431861460000391,
+   "audit02_receipt_comparison": {
+    "points_equal": true,
+    "A_record01_equal": true,
+    "C_record03_in_receipt": true,
+    "C_record03_equal": true
+   },
+   "pass": true
+  },
+  {
+   "role": "control",
+   "degree": 3,
+   "M": 14,
+   "point_seed": 1,
+   "rule": "mirror",
+   "partA_seed": 11,
+   "partC_seed": 31,
+   "points": [
+    [
+     "-40/37",
+     "17/41"
+    ],
+    [
+     "-38/37",
+     "-37/41"
+    ],
+    [
+     "-1",
+     "9/41"
+    ],
+    [
+     "-32/37",
+     "-8/41"
+    ],
+    [
+     "-28/37",
+     "22/41"
+    ],
+    [
+     "-25/37",
+     "23/41"
+    ],
+    [
+     "-23/37",
+     "32/41"
+    ],
+    [
+     "-6/37",
+     "-11/41"
+    ],
+    [
+     "0",
+     "-37/41"
+    ],
+    [
+     "8/37",
+     "-14/41"
+    ],
+    [
+     "15/37",
+     "37/41"
+    ],
+    [
+     "17/37",
+     "20/41"
+    ],
+    [
+     "29/37",
+     "-39/41"
+    ],
+    [
+     "35/37",
+     "-27/41"
+    ]
+   ],
+   "A_record01": {
+    "rule": "mirror",
+    "M": 14,
+    "N": 10,
+    "ties": 0,
+    "choices": "XYXXYXXXY",
+    "normal_derivative_equals_frozen_V": true,
+    "raw_unprojected_difference_max_abs": 6.265142317918416,
+    "normT": "36.7051527524923",
+    "unprojected_norm": "42.2059285708971",
+    "finite_differences": [
+     {
+      "eps": "1/1000000",
+      "theta_over_eps_div_normT": "1.0000045266654804013"
+     },
+     {
+      "eps": "1/1000000000",
+      "theta_over_eps_div_normT": "1.0000000045272177179"
+     },
+     {
+      "eps": "1/1000000000000",
+      "theta_over_eps_div_normT": "1.0000000000045272183"
+     }
+    ]
+   },
+   "C_record03": {
+    "ops_with_formal_delta": 5454,
+    "baseline_max_err": "2.6355e-81",
+    "full_replay_vs_table_rel_err": "2.999e-81",
+    "per_class_rel_err": {
+     "mul": "9.6654e-81",
+     "mv1p": "5.9638e-81",
+     "mv1s": "5.812e-81",
+     "sub1": "5.6541e-81",
+     "sub2": "6.7945e-81",
+     "div": "1.276e-80"
+    },
+    "dot_norm_only_normal_max": "5.4295e-81",
+    "dot_norm_only_tangential_max": "1.2716",
+    "second_matvec_only_derivative_max": "2.9002e-81",
+    "finite_eps": [
+     {
+      "eps": "1e-20",
+      "theta_over_eps_div_pred": "1.0"
+     },
+     {
+      "eps": "1e-30",
+      "theta_over_eps_div_pred": "1.0"
+     }
+    ]
+   },
+   "checks": {
+    "baseline_q_equals_b_over_sqrt_d": true,
+    "full_replay_matches_amplitude_table": true,
+    "each_vector_class_matches_table": true,
+    "dot_norm_errors_normal_part_zero": true,
+    "dot_norm_errors_tangential_part_nonzero": true,
+    "second_matvec_errors_zero_derivative": true,
+    "finite_eps_ratio_one": true
+   },
+   "elapsed_seconds_partA": 0.6947911379999141,
+   "elapsed_seconds_partC": 1.0222243660000458,
+   "audit02_receipt_comparison": {
+    "points_equal": true,
+    "A_record01_equal": true,
+    "C_record03_in_receipt": true,
+    "C_record03_equal": true
+   },
+   "pass": true
+  },
+  {
+   "role": "control",
+   "degree": 3,
+   "M": 14,
+   "point_seed": 1,
+   "rule": "alt",
+   "partA_seed": 11,
+   "partC_seed": 31,
+   "points": [
+    [
+     "-40/37",
+     "17/41"
+    ],
+    [
+     "-38/37",
+     "-37/41"
+    ],
+    [
+     "-1",
+     "9/41"
+    ],
+    [
+     "-32/37",
+     "-8/41"
+    ],
+    [
+     "-28/37",
+     "22/41"
+    ],
+    [
+     "-25/37",
+     "23/41"
+    ],
+    [
+     "-23/37",
+     "32/41"
+    ],
+    [
+     "-6/37",
+     "-11/41"
+    ],
+    [
+     "0",
+     "-37/41"
+    ],
+    [
+     "8/37",
+     "-14/41"
+    ],
+    [
+     "15/37",
+     "37/41"
+    ],
+    [
+     "17/37",
+     "20/41"
+    ],
+    [
+     "29/37",
+     "-39/41"
+    ],
+    [
+     "35/37",
+     "-27/41"
+    ]
+   ],
+   "A_record01": {
+    "rule": "alt",
+    "M": 14,
+    "N": 10,
+    "ties": 0,
+    "choices": "XYXYYXXYY",
+    "normal_derivative_equals_frozen_V": true,
+    "raw_unprojected_difference_max_abs": 9.196619886809824,
+    "normT": "28.1072503814423",
+    "unprojected_norm": "45.9400064477414",
+    "finite_differences": [
+     {
+      "eps": "1/1000000",
+      "theta_over_eps_div_normT": "1.0000186630863497687"
+     },
+     {
+      "eps": "1/1000000000",
+      "theta_over_eps_div_normT": "1.0000000186631039241"
+     },
+     {
+      "eps": "1/1000000000000",
+      "theta_over_eps_div_normT": "1.0000000000186631039"
+     }
+    ]
+   },
+   "C_record03": {
+    "ops_with_formal_delta": 5454,
+    "baseline_max_err": "2.6355e-81",
+    "full_replay_vs_table_rel_err": "5.7804e-81",
+    "per_class_rel_err": {
+     "mul": "5.3919e-81",
+     "mv1p": "4.7533e-81",
+     "mv1s": "5.7938e-81",
+     "sub1": "5.8954e-81",
+     "sub2": "4.4042e-81",
+     "div": "7.6547e-81"
+    },
+    "dot_norm_only_normal_max": "5.312e-81",
+    "dot_norm_only_tangential_max": "1.2716",
+    "second_matvec_only_derivative_max": "3.087e-81",
+    "finite_eps": [
+     {
+      "eps": "1e-20",
+      "theta_over_eps_div_pred": "1.0"
+     },
+     {
+      "eps": "1e-30",
+      "theta_over_eps_div_pred": "1.0"
+     }
+    ]
+   },
+   "checks": {
+    "baseline_q_equals_b_over_sqrt_d": true,
+    "full_replay_matches_amplitude_table": true,
+    "each_vector_class_matches_table": true,
+    "dot_norm_errors_normal_part_zero": true,
+    "dot_norm_errors_tangential_part_nonzero": true,
+    "second_matvec_errors_zero_derivative": true,
+    "finite_eps_ratio_one": true
+   },
+   "elapsed_seconds_partA": 0.5560195819999763,
+   "elapsed_seconds_partC": 0.8999942409999449,
+   "audit02_receipt_comparison": {
+    "points_equal": true,
+    "A_record01_equal": true,
+    "C_record03_in_receipt": true,
+    "C_record03_equal": true
+   },
+   "pass": true
+  },
+  {
+   "role": "control",
+   "degree": 3,
+   "M": 14,
+   "point_seed": 1,
+   "rule": "pivot",
+   "partA_seed": 11,
+   "partC_seed": 31,
+   "points": [
+    [
+     "-40/37",
+     "17/41"
+    ],
+    [
+     "-38/37",
+     "-37/41"
+    ],
+    [
+     "-1",
+     "9/41"
+    ],
+    [
+     "-32/37",
+     "-8/41"
+    ],
+    [
+     "-28/37",
+     "22/41"
+    ],
+    [
+     "-25/37",
+     "23/41"
+    ],
+    [
+     "-23/37",
+     "32/41"
+    ],
+    [
+     "-6/37",
+     "-11/41"
+    ],
+    [
+     "0",
+     "-37/41"
+    ],
+    [
+     "8/37",
+     "-14/41"
+    ],
+    [
+     "15/37",
+     "37/41"
+    ],
+    [
+     "17/37",
+     "20/41"
+    ],
+    [
+     "29/37",
+     "-39/41"
+    ],
+    [
+     "35/37",
+     "-27/41"
+    ]
+   ],
+   "A_record01": {
+    "rule": "pivot",
+    "M": 14,
+    "N": 10,
+    "ties": 0,
+    "choices": "XYXXYXYXY",
+    "normal_derivative_equals_frozen_V": true,
+    "raw_unprojected_difference_max_abs": 6.265142317918416,
+    "normT": "35.0191746305788",
+    "unprojected_norm": "46.7506987300557",
+    "finite_differences": [
+     {
+      "eps": "1/1000000",
+      "theta_over_eps_div_normT": "1.0000008828324488366"
+     },
+     {
+      "eps": "1/1000000000",
+      "theta_over_eps_div_normT": "1.0000000008833281115"
+     },
+     {
+      "eps": "1/1000000000000",
+      "theta_over_eps_div_normT": "1.0000000000008833286"
+     }
+    ]
+   },
+   "C_record03": {
+    "ops_with_formal_delta": 5454,
+    "baseline_max_err": "2.7673e-81",
+    "full_replay_vs_table_rel_err": "6.0012e-81",
+    "per_class_rel_err": {
+     "mul": "8.5914e-81",
+     "mv1p": "8.9245e-81",
+     "mv1s": "5.9518e-81",
+     "sub1": "6.6996e-81",
+     "sub2": "4.5297e-81",
+     "div": "9.6922e-81"
+    },
+    "dot_norm_only_normal_max": "3.4842e-81",
+    "dot_norm_only_tangential_max": "1.2716",
+    "second_matvec_only_derivative_max": "3.3708e-81",
+    "finite_eps": [
+     {
+      "eps": "1e-20",
+      "theta_over_eps_div_pred": "1.0"
+     },
+     {
+      "eps": "1e-30",
+      "theta_over_eps_div_pred": "1.0"
+     }
+    ]
+   },
+   "checks": {
+    "baseline_q_equals_b_over_sqrt_d": true,
+    "full_replay_matches_amplitude_table": true,
+    "each_vector_class_matches_table": true,
+    "dot_norm_errors_normal_part_zero": true,
+    "dot_norm_errors_tangential_part_nonzero": true,
+    "second_matvec_errors_zero_derivative": true,
+    "finite_eps_ratio_one": true
+   },
+   "elapsed_seconds_partA": 0.6646135910000339,
+   "elapsed_seconds_partC": 1.0035669869999992,
+   "audit02_receipt_comparison": {
+    "points_equal": true,
+    "A_record01_equal": true,
+    "C_record03_in_receipt": true,
+    "C_record03_equal": true
+   },
+   "pass": true
+  },
+  {
+   "role": "new",
+   "degree": 4,
+   "M": 20,
+   "point_seed": 2,
+   "rule": "bj",
+   "partA_seed": 12,
+   "partC_seed": 32,
+   "points": [
+    [
+     "-1",
+     "-18/41"
+    ],
+    [
+     "-1",
+     "6/41"
+    ],
+    [
+     "-36/37",
+     "34/41"
+    ],
+    [
+     "-33/37",
+     "-29/41"
+    ],
+    [
+     "-30/37",
+     "6/41"
+    ],
+    [
+     "-23/37",
+     "25/41"
+    ],
+    [
+     "-20/37",
+     "15/41"
+    ],
+    [
+     "-19/37",
+     "-1/41"
+    ],
+    [
+     "-13/37",
+     "37/41"
+    ],
+    [
+     "-10/37",
+     "-11/41"
+    ],
+    [
+     "-8/37",
+     "37/41"
+    ],
+    [
+     "-6/37",
+     "-36/41"
+    ],
+    [
+     "1/37",
+     "-18/41"
+    ],
+    [
+     "7/37",
+     "29/41"
+    ],
+    [
+     "8/37",
+     "14/41"
+    ],
+    [
+     "10/37",
+     "25/41"
+    ],
+    [
+     "16/37",
+     "24/41"
+    ],
+    [
+     "19/37",
+     "0"
+    ],
+    [
+     "27/37",
+     "-19/41"
+    ],
+    [
+     "31/37",
+     "-18/41"
+    ]
+   ],
+   "A_record01": {
+    "rule": "bj",
+    "M": 20,
+    "N": 15,
+    "ties": 0,
+    "choices": "XYXYYXYYYXYYYY",
+    "normal_derivative_equals_frozen_V": true,
+    "raw_unprojected_difference_max_abs": 7.346803631370823,
+    "normT": "84.7629607237333",
+    "unprojected_norm": "223.651907557728",
+    "finite_differences": [
+     {
+      "eps": "1/1000000",
+      "theta_over_eps_div_normT": "1.0000080946079984154"
+     },
+     {
+      "eps": "1/1000000000",
+      "theta_over_eps_div_normT": "1.0000000080964961325"
+     },
+     {
+      "eps": "1/1000000000000",
+      "theta_over_eps_div_normT": "1.000000000008096498"
+     }
+    ]
+   },
+   "C_record03": {
+    "ops_with_formal_delta": 17710,
+    "baseline_max_err": "3.1627e-81",
+    "full_replay_vs_table_rel_err": "4.6037e-81",
+    "per_class_rel_err": {
+     "mul": "6.0953e-81",
+     "mv1p": "4.3794e-81",
+     "mv1s": "7.6359e-81",
+     "sub1": "2.6541e-81",
+     "sub2": "7.8629e-81",
+     "div": "5.4815e-81"
+    },
+    "dot_norm_only_normal_max": "1.6598e-80",
+    "dot_norm_only_tangential_max": "0.86289",
+    "second_matvec_only_derivative_max": "1.6861e-80",
+    "finite_eps": [
+     {
+      "eps": "1e-20",
+      "theta_over_eps_div_pred": "1.0"
+     },
+     {
+      "eps": "1e-30",
+      "theta_over_eps_div_pred": "1.0"
+     }
+    ]
+   },
+   "checks": {
+    "baseline_q_equals_b_over_sqrt_d": true,
+    "full_replay_matches_amplitude_table": true,
+    "each_vector_class_matches_table": true,
+    "dot_norm_errors_normal_part_zero": true,
+    "dot_norm_errors_tangential_part_nonzero": true,
+    "second_matvec_errors_zero_derivative": true,
+    "finite_eps_ratio_one": true
+   },
+   "elapsed_seconds_partA": 8.524057494999965,
+   "elapsed_seconds_partC": 3.885481562999985,
+   "audit02_receipt_comparison": {
+    "points_equal": true,
+    "A_record01_equal": true,
+    "C_record03_in_receipt": false,
+    "C_record03_equal": null
+   },
+   "pass": true
+  },
+  {
+   "role": "new",
+   "degree": 4,
+   "M": 20,
+   "point_seed": 2,
+   "rule": "mirror",
+   "partA_seed": 12,
+   "partC_seed": 32,
+   "points": [
+    [
+     "-1",
+     "-18/41"
+    ],
+    [
+     "-1",
+     "6/41"
+    ],
+    [
+     "-36/37",
+     "34/41"
+    ],
+    [
+     "-33/37",
+     "-29/41"
+    ],
+    [
+     "-30/37",
+     "6/41"
+    ],
+    [
+     "-23/37",
+     "25/41"
+    ],
+    [
+     "-20/37",
+     "15/41"
+    ],
+    [
+     "-19/37",
+     "-1/41"
+    ],
+    [
+     "-13/37",
+     "37/41"
+    ],
+    [
+     "-10/37",
+     "-11/41"
+    ],
+    [
+     "-8/37",
+     "37/41"
+    ],
+    [
+     "-6/37",
+     "-36/41"
+    ],
+    [
+     "1/37",
+     "-18/41"
+    ],
+    [
+     "7/37",
+     "29/41"
+    ],
+    [
+     "8/37",
+     "14/41"
+    ],
+    [
+     "10/37",
+     "25/41"
+    ],
+    [
+     "16/37",
+     "24/41"
+    ],
+    [
+     "19/37",
+     "0"
+    ],
+    [
+     "27/37",
+     "-19/41"
+    ],
+    [
+     "31/37",
+     "-18/41"
+    ]
+   ],
+   "A_record01": {
+    "rule": "mirror",
+    "M": 20,
+    "N": 15,
+    "ties": 0,
+    "choices": "XYXXYXXXYXXXXY",
+    "normal_derivative_equals_frozen_V": true,
+    "raw_unprojected_difference_max_abs": 7.081198007783777,
+    "normT": "80.2836649248412",
+    "unprojected_norm": "185.902820296992",
+    "finite_differences": [
+     {
+      "eps": "1/1000000",
+      "theta_over_eps_div_normT": "1.0000043125100477752"
+     },
+     {
+      "eps": "1/1000000000",
+      "theta_over_eps_div_normT": "1.0000000043146803759"
+     },
+     {
+      "eps": "1/1000000000000",
+      "theta_over_eps_div_normT": "1.0000000000043146825"
+     }
+    ]
+   },
+   "C_record03": {
+    "ops_with_formal_delta": 17710,
+    "baseline_max_err": "3.1627e-81",
+    "full_replay_vs_table_rel_err": "1.7501e-80",
+    "per_class_rel_err": {
+     "mul": "1.3716e-80",
+     "mv1p": "1.115e-80",
+     "mv1s": "2.0279e-80",
+     "sub1": "7.276e-81",
+     "sub2": "2.4161e-80",
+     "div": "7.2519e-81"
+    },
+    "dot_norm_only_normal_max": "6.3977e-81",
+    "dot_norm_only_tangential_max": "0.86289",
+    "second_matvec_only_derivative_max": "9.2209e-81",
+    "finite_eps": [
+     {
+      "eps": "1e-20",
+      "theta_over_eps_div_pred": "1.0"
+     },
+     {
+      "eps": "1e-30",
+      "theta_over_eps_div_pred": "1.0"
+     }
+    ]
+   },
+   "checks": {
+    "baseline_q_equals_b_over_sqrt_d": true,
+    "full_replay_matches_amplitude_table": true,
+    "each_vector_class_matches_table": true,
+    "dot_norm_errors_normal_part_zero": true,
+    "dot_norm_errors_tangential_part_nonzero": true,
+    "second_matvec_errors_zero_derivative": true,
+    "finite_eps_ratio_one": true
+   },
+   "elapsed_seconds_partA": 19.578271578999875,
+   "elapsed_seconds_partC": 3.7990781330001937,
+   "audit02_receipt_comparison": {
+    "points_equal": true,
+    "A_record01_equal": true,
+    "C_record03_in_receipt": false,
+    "C_record03_equal": null
+   },
+   "pass": true
+  },
+  {
+   "role": "new",
+   "degree": 4,
+   "M": 20,
+   "point_seed": 2,
+   "rule": "alt",
+   "partA_seed": 12,
+   "partC_seed": 32,
+   "points": [
+    [
+     "-1",
+     "-18/41"
+    ],
+    [
+     "-1",
+     "6/41"
+    ],
+    [
+     "-36/37",
+     "34/41"
+    ],
+    [
+     "-33/37",
+     "-29/41"
+    ],
+    [
+     "-30/37",
+     "6/41"
+    ],
+    [
+     "-23/37",
+     "25/41"
+    ],
+    [
+     "-20/37",
+     "15/41"
+    ],
+    [
+     "-19/37",
+     "-1/41"
+    ],
+    [
+     "-13/37",
+     "37/41"
+    ],
+    [
+     "-10/37",
+     "-11/41"
+    ],
+    [
+     "-8/37",
+     "37/41"
+    ],
+    [
+     "-6/37",
+     "-36/41"
+    ],
+    [
+     "1/37",
+     "-18/41"
+    ],
+    [
+     "7/37",
+     "29/41"
+    ],
+    [
+     "8/37",
+     "14/41"
+    ],
+    [
+     "10/37",
+     "25/41"
+    ],
+    [
+     "16/37",
+     "24/41"
+    ],
+    [
+     "19/37",
+     "0"
+    ],
+    [
+     "27/37",
+     "-19/41"
+    ],
+    [
+     "31/37",
+     "-18/41"
+    ]
+   ],
+   "A_record01": {
+    "rule": "alt",
+    "M": 20,
+    "N": 15,
+    "ties": 0,
+    "choices": "XYXYYXXYYXXYYY",
+    "normal_derivative_equals_frozen_V": true,
+    "raw_unprojected_difference_max_abs": 7.014136595340026,
+    "normT": "80.2780449015562",
+    "unprojected_norm": "201.71439387974",
+    "finite_differences": [
+     {
+      "eps": "1/1000000",
+      "theta_over_eps_div_normT": "1.0000084998445667177"
+     },
+     {
+      "eps": "1/1000000000",
+      "theta_over_eps_div_normT": "1.0000000085013092451"
+     },
+     {
+      "eps": "1/1000000000000",
+      "theta_over_eps_div_normT": "1.0000000000085013107"
+     }
+    ]
+   },
+   "C_record03": {
+    "ops_with_formal_delta": 17710,
+    "baseline_max_err": "3.1627e-81",
+    "full_replay_vs_table_rel_err": "2.0027e-80",
+    "per_class_rel_err": {
+     "mul": "9.2519e-81",
+     "mv1p": "9.2025e-81",
+     "mv1s": "1.1559e-80",
+     "sub1": "1.6992e-80",
+     "sub2": "1.3603e-80",
+     "div": "6.7365e-81"
+    },
+    "dot_norm_only_normal_max": "1.8335e-80",
+    "dot_norm_only_tangential_max": "0.86289",
+    "second_matvec_only_derivative_max": "1.4027e-80",
+    "finite_eps": [
+     {
+      "eps": "1e-20",
+      "theta_over_eps_div_pred": "1.0"
+     },
+     {
+      "eps": "1e-30",
+      "theta_over_eps_div_pred": "1.0"
+     }
+    ]
+   },
+   "checks": {
+    "baseline_q_equals_b_over_sqrt_d": true,
+    "full_replay_matches_amplitude_table": true,
+    "each_vector_class_matches_table": true,
+    "dot_norm_errors_normal_part_zero": true,
+    "dot_norm_errors_tangential_part_nonzero": true,
+    "second_matvec_errors_zero_derivative": true,
+    "finite_eps_ratio_one": true
+   },
+   "elapsed_seconds_partA": 10.414909409000074,
+   "elapsed_seconds_partC": 4.09427107700003,
+   "audit02_receipt_comparison": {
+    "points_equal": true,
+    "A_record01_equal": true,
+    "C_record03_in_receipt": false,
+    "C_record03_equal": null
+   },
+   "pass": true
+  },
+  {
+   "role": "new",
+   "degree": 4,
+   "M": 20,
+   "point_seed": 2,
+   "rule": "pivot",
+   "partA_seed": 12,
+   "partC_seed": 32,
+   "points": [
+    [
+     "-1",
+     "-18/41"
+    ],
+    [
+     "-1",
+     "6/41"
+    ],
+    [
+     "-36/37",
+     "34/41"
+    ],
+    [
+     "-33/37",
+     "-29/41"
+    ],
+    [
+     "-30/37",
+     "6/41"
+    ],
+    [
+     "-23/37",
+     "25/41"
+    ],
+    [
+     "-20/37",
+     "15/41"
+    ],
+    [
+     "-19/37",
+     "-1/41"
+    ],
+    [
+     "-13/37",
+     "37/41"
+    ],
+    [
+     "-10/37",
+     "-11/41"
+    ],
+    [
+     "-8/37",
+     "37/41"
+    ],
+    [
+     "-6/37",
+     "-36/41"
+    ],
+    [
+     "1/37",
+     "-18/41"
+    ],
+    [
+     "7/37",
+     "29/41"
+    ],
+    [
+     "8/37",
+     "14/41"
+    ],
+    [
+     "10/37",
+     "25/41"
+    ],
+    [
+     "16/37",
+     "24/41"
+    ],
+    [
+     "19/37",
+     "0"
+    ],
+    [
+     "27/37",
+     "-19/41"
+    ],
+    [
+     "31/37",
+     "-18/41"
+    ]
+   ],
+   "A_record01": {
+    "rule": "pivot",
+    "M": 20,
+    "N": 15,
+    "ties": 0,
+    "choices": "XYXYYXYXYXXYXY",
+    "normal_derivative_equals_frozen_V": true,
+    "raw_unprojected_difference_max_abs": 8.995007447075535,
+    "normT": "86.229420790643",
+    "unprojected_norm": "239.053628568784",
+    "finite_differences": [
+     {
+      "eps": "1/1000000",
+      "theta_over_eps_div_normT": "1.0000213870307434699"
+     },
+     {
+      "eps": "1/1000000000",
+      "theta_over_eps_div_normT": "1.0000000213897702316"
+     },
+     {
+      "eps": "1/1000000000000",
+      "theta_over_eps_div_normT": "1.000000000021389773"
+     }
+    ]
+   },
+   "C_record03": {
+    "ops_with_formal_delta": 17710,
+    "baseline_max_err": "2.372e-81",
+    "full_replay_vs_table_rel_err": "1.1245e-80",
+    "per_class_rel_err": {
+     "mul": "5.9677e-81",
+     "mv1p": "4.9175e-81",
+     "mv1s": "9.0363e-81",
+     "sub1": "8.2101e-81",
+     "sub2": "9.0276e-81",
+     "div": "5.5361e-81"
+    },
+    "dot_norm_only_normal_max": "1.1341e-80",
+    "dot_norm_only_tangential_max": "0.86289",
+    "second_matvec_only_derivative_max": "1.6108e-80",
+    "finite_eps": [
+     {
+      "eps": "1e-20",
+      "theta_over_eps_div_pred": "1.0"
+     },
+     {
+      "eps": "1e-30",
+      "theta_over_eps_div_pred": "1.0"
+     }
+    ]
+   },
+   "checks": {
+    "baseline_q_equals_b_over_sqrt_d": true,
+    "full_replay_matches_amplitude_table": true,
+    "each_vector_class_matches_table": true,
+    "dot_norm_errors_normal_part_zero": true,
+    "dot_norm_errors_tangential_part_nonzero": true,
+    "second_matvec_errors_zero_derivative": true,
+    "finite_eps_ratio_one": true
+   },
+   "elapsed_seconds_partA": 11.614036766000027,
+   "elapsed_seconds_partC": 3.863012241999968,
+   "audit02_receipt_comparison": {
+    "points_equal": true,
+    "A_record01_equal": true,
+    "C_record03_in_receipt": false,
+    "C_record03_equal": null
+   },
+   "pass": true
+  }
+ ],
+ "all_pass": true
+}

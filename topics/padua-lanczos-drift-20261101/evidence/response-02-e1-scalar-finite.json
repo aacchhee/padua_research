@@ -1,0 +1,236 @@
+{
+ "record": "PD-T?drift-codex-06 (tracks/bivariate-lanczos/theory/drift-codex-e1-06-finite-scalar-cgs2-separation.md)",
+ "checker": "Claude response-02 developer checker (Opus 5.5); exact Fraction arithmetic; not an independent implementation",
+ "command": "PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 tracks/bivariate-lanczos/code/drift/e1_scalar_finite_check.py --regenerated /workspace/padua-drift-runs/response-02/E1 --regeneration-notes /workspace/padua-drift-runs/response-02/E1/regeneration-notes.json --output topics/padua-lanczos-drift-20261101/evidence/response-02-e1-scalar-finite.json",
+ "code_sha256": "422a6495caa33a275b084b7a98ab8aeaee0ee698de0d8c512a9eefaf6d2f7193",
+ "python": "3.13.18",
+ "arithmetic": "fractions.Fraction with sys.set_int_max_str_digits(0); floats are display only",
+ "started_utc": "2026-11-01T17:00:35.762016+00:00",
+ "input_pins_verified": {
+  "e1-scalar-cgs2.json": "e215556a01f9e169163b228dfe1b984d28e0cebd7f78e0d858f9a61a0de878c8",
+  "e1-multinode-certificates.json": "fae9c8743c78230ef0aa82c185d1efe0eee37be066982a37d39d920af95719f0",
+  "e1-posthoc-scalar-ratios.json": "599766011500b569d16c0faca974605495889575db12e715b420d87faeff739b",
+  "independent-scalar-01.json": "2d06b3b4e04956f9c9e2f4127c3937543dc92ee071de2926589d0a40c9bf6a10",
+  "audit-02-e1-checks.json": "7bb3e3b566d7d25d369ee812c007b690b46bbdcc54b55ceb54f18fec9390d0ee"
+ },
+ "producer_files_now": {
+  "e1_cgs2.py": {
+   "sha256": "426630eb916e13bb14409f6f7b8ea310eaeb1bf7949de10866d163aad31c7b4b",
+   "equals_pin": true
+  },
+  "e1_cgs2_multinode.py": {
+   "sha256": "32b9e82756a38387ce5a9f2d596d3f6d59282eeec30b5a25afe96f514abe5553",
+   "equals_pin": true
+  },
+  "e1_exact.py": {
+   "sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+   "equals_pin": true
+  }
+ },
+ "sets": [
+  {
+   "set": "triangle",
+   "label": "T24",
+   "comparator": "pivot",
+   "checks": {
+    "upper_record_degree12_all90_sources": true,
+    "upper_record_linf_model": true,
+    "upper_record_producer_pinned": true,
+    "witness_bj_degree12": true,
+    "witness_target_column": true,
+    "witness_producer_pinned": true,
+    "node_signs_count": true,
+    "node_signs_unit": true,
+    "U_positive": true,
+    "G_ge_E_gt_0": true,
+    "G_gt_lower_threshold": true,
+    "U_lt_upper_threshold": true,
+    "threshold_chain": true,
+    "ratio_gt_factor_squared": true,
+    "ratio_gt_100_matches_expectation": true,
+    "ratio_floor": true,
+    "sqrt_ratio_bracket": true,
+    "ratio_equals_committed_comparison": true,
+    "posthoc_booleans_consistent": true,
+    "indep01_upper_equal": true,
+    "indep01_greedy_lower_equal": true,
+    "indep01_expected_equal": true,
+    "indep01_signs_and_target_equal": true,
+    "indep01_ratio_equal": true,
+    "indep01_decisions_consistent": true,
+    "indep01_endpoint_identity_all_identical": true,
+    "audit02_internal_checks_true": true,
+    "audit02_exact_upper_equal": true,
+    "audit02_exact_lower_equal": true,
+    "audit02_exact_expected_equal": true,
+    "audit02_exact_ratio_equal": true
+   },
+   "pass": true,
+   "display": {
+    "U_inf_squared": 23984814435.900658,
+    "G_squared": 1.5765963915672958e+16,
+    "E_squared": 5549990187724645.0,
+    "squared_ratio_lower_bound": 657331.0774535049,
+    "ratio_lower_bound": 810.7595682158212
+   },
+   "exact_identities": {
+    "U_sha256_of_exact_string": "c24d8a8aaf8e931bf102148df5df964c7a8f00429dff66bfd819f322bb65d413",
+    "G_sha256_of_exact_string": "352dade98e1c9f0f6c8907bdab7c658cd6147ea3c8c224131cf0a85b16e37dd6",
+    "U_exact_string_length": 167,
+    "G_exact_string_length": 149
+   },
+   "thresholds": {
+    "K_bj_squared_gt": "15700000000000000",
+    "K_comparator_squared_lt": "24000000000",
+    "factor": 800
+   }
+  },
+  {
+   "set": "rotated",
+   "label": "rotQ24",
+   "comparator": "alt",
+   "checks": {
+    "upper_record_degree12_all90_sources": true,
+    "upper_record_linf_model": true,
+    "upper_record_producer_pinned": true,
+    "witness_bj_degree12": true,
+    "witness_target_column": true,
+    "witness_producer_pinned": true,
+    "node_signs_count": true,
+    "node_signs_unit": true,
+    "U_positive": true,
+    "G_ge_E_gt_0": true,
+    "G_gt_lower_threshold": true,
+    "U_lt_upper_threshold": true,
+    "threshold_chain": true,
+    "ratio_gt_factor_squared": true,
+    "ratio_gt_100_matches_expectation": true,
+    "ratio_lt_100_certificate_does_not_decide_factor10": true,
+    "ratio_floor": true,
+    "sqrt_ratio_bracket": true,
+    "ratio_equals_committed_comparison": true,
+    "posthoc_booleans_consistent": true,
+    "indep01_upper_equal": true,
+    "indep01_greedy_lower_equal": true,
+    "indep01_expected_equal": true,
+    "indep01_signs_and_target_equal": true,
+    "indep01_ratio_equal": true,
+    "indep01_decisions_consistent": true,
+    "indep01_endpoint_identity_all_identical": true,
+    "audit02_internal_checks_true": true,
+    "audit02_arb_upper_encloses": true,
+    "audit02_arb_lower_encloses": true,
+    "audit02_arb_expected_encloses": true,
+    "audit02_arb_ratio_encloses": true,
+    "audit02_enclosure_alone_gt_49_lt_100": true,
+    "audit02_enclosure_alone_upper_lower_thresholds": true
+   },
+   "pass": true,
+   "display": {
+    "U_inf_squared": 13532944864.274591,
+    "G_squared": 840200144892.756,
+    "E_squared": 484942583944.16656,
+    "squared_ratio_lower_bound": 62.08553668985878,
+    "ratio_lower_bound": 7.879437587154224
+   },
+   "exact_identities": {
+    "U_sha256_of_exact_string": "bbf44c22629183d6fbdf0d74aad4a55590421ddc62d3aae4b561a5d9718ecada",
+    "G_sha256_of_exact_string": "ea09d0a31dd30577fb6177ed3de925359706136b7f4ac587c8eca0be6340d456",
+    "U_exact_string_length": 12766,
+    "G_exact_string_length": 11552
+   },
+   "thresholds": {
+    "K_bj_squared_gt": "840000000000",
+    "K_comparator_squared_lt": "13600000000",
+    "factor": 7
+   }
+  }
+ ],
+ "reduction": "PD-T?drift-codex-03: K_inf <= U_inf (absolute-sum/Frobenius bound); for any node signs s in {+1,-1}^M the admissible errors delta_hio=s_i sign(g_th(z_i) m_hio) (h<=t, others 0) give output column t of norm^2 G_t^2=[sum_i S_ti^2-sum_l c_l^2/d_l]/d_t <= K_inf^2. Hence (K_bj/K_cmp)^2 >= G/U.",
+ "reused_independent_evidence": [
+  "evidence/independent-scalar-01.json (Codex Astra supplementary checker; reruns of the inspected producers e1_cgs2.py, e1_cgs2_witness.py, e1_cgs2_multinode.py, e1_sign_check.py; generated 2026-11-01T11:32:54Z)",
+  "evidence/audit-02-e1-checks.json checks scalar-triangle/scalar-rotated (Codex audit-02 reaudit.py, fresh calls of audit-01 independent ind_scalar.py; T24 exact, rotQ24 Arb 512 bits)",
+  "audit-01 ind_scalar.py run (checks/audit-01/E1-records-01-05.md item 6; raw outputs not committed)"
+ ],
+ "scope": "Formal scalar-CGS2 model of PD-T?drift-codex-03 only: first-order normal quotient, independent formal relative operation errors |delta|<=1 (l-infinity), T24/rotQ24, degree 12, all 90 sources. No IEEE lower bound, no actual implementation behaviour, no all-degree claim. The >800 and >7 thresholds were chosen after the endpoints were known (post hoc).",
+ "new_regeneration": {
+  "directory": "/workspace/padua-drift-runs/response-02/E1",
+  "files": {
+   "cgs2-triangle-n12-pivot.json": {
+    "exists": true,
+    "sha256": "5c3e1e3283f76386c6e91da40a7ee6476300336538d1769985d3f324682d766a",
+    "upper_equal_committed": true,
+    "producer_pinned": true,
+    "python": "3.13.18",
+    "elapsed_seconds": 3.4884704950000014,
+    "command": "tracks/bivariate-lanczos/code/drift/e1_cgs2.py --set triangle --degree 12 --rule pivot --output /workspace/padua-drift-runs/response-02/E1/cgs2-triangle-n12-pivot.json"
+   },
+   "reproduce-triangle.json": {
+    "exists": true,
+    "sha256": "5c957fc35f87b4078e48c5266018e7c1eb9ea5a8351df1b528f5ed22b991f7fa",
+    "result": "PASS",
+    "explicit_projection_check": "PASS",
+    "generator_pinned": true,
+    "certificate_pinned": true,
+    "source_record_pinned": true
+   },
+   "cgs2-rotated-n12-alt.json": {
+    "exists": true,
+    "sha256": "e619b8eacf80072413cae2f95ff830fd294837398d8025b0d1e023f7458b8b24",
+    "upper_equal_committed": true,
+    "producer_pinned": true,
+    "python": "3.13.18",
+    "elapsed_seconds": 252.52800452399993,
+    "command": "tracks/bivariate-lanczos/code/drift/e1_cgs2.py --set rotated --degree 12 --rule alt --output /workspace/padua-drift-runs/response-02/E1/cgs2-rotated-n12-alt.json"
+   },
+   "reproduce-rotated.json": {
+    "exists": true,
+    "sha256": "f99c0c1b82103bed5eb130a6c6523b71225abfd0d7b6a104edd1c4e66250f1c0",
+    "result": "PASS",
+    "explicit_projection_check": "PASS",
+    "generator_pinned": true,
+    "certificate_pinned": true,
+    "source_record_pinned": true
+   }
+  },
+  "pass": true,
+  "notes": {
+   "executor": "Claude response-02 developer (Opus 5.5); developer executions of the committed producers, not independent reruns",
+   "cwd": "repository root /home/claude/padua_research, branch codex/padua-lanczos-drift-20261101, working tree. HEAD advanced during these runs through orchestrator commits for other response-02 groups (1df5f89 -> b216cb3 -> 99cc9f9 -> a7a9b77, later 20bbb65); git diff 1df5f89 20bbb65 touches no E1 producer, E1 evidence, audit-01/02 check file or E1 theory record (only code/drift/README.md among drift-code files). Record 03 was still unedited when e1_cgs2.py hashed it (theory_sha256 f3cea17d...).",
+   "python": "3.13.18",
+   "python_flint": "0.9.0",
+   "runs": [
+    {
+     "command": "PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 tracks/bivariate-lanczos/code/drift/e1_reproduce.py --set triangle --output /workspace/padua-drift-runs/response-02/E1/reproduce-triangle.json",
+     "started_utc": "2026-11-01T16:42:20Z",
+     "wall_seconds": 2.98,
+     "exit": 0
+    },
+    {
+     "command": "PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 tracks/bivariate-lanczos/code/drift/e1_cgs2.py --set triangle --degree 12 --rule pivot --output /workspace/padua-drift-runs/response-02/E1/cgs2-triangle-n12-pivot.json",
+     "finished_utc": "2026-11-01T16:42:26Z",
+     "wall_seconds": 3.59,
+     "exit": 0
+    },
+    {
+     "command": "PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 tracks/bivariate-lanczos/code/drift/e1_reproduce.py --set rotated --output /workspace/padua-drift-runs/response-02/E1/reproduce-rotated.json",
+     "started_utc": "2026-11-01T16:42:42Z",
+     "wall_seconds": 174.75,
+     "exit": 0,
+     "note": "ran concurrently with the degree-4 replay on the second CPU"
+    },
+    {
+     "command": "PYTHONPATH=/workspace/padua-drift-runs/python-deps OPENBLAS_NUM_THREADS=1 python3 tracks/bivariate-lanczos/code/drift/e1_cgs2.py --set rotated --degree 12 --rule alt --output /workspace/padua-drift-runs/response-02/E1/cgs2-rotated-n12-alt.json",
+     "finished_utc": "2026-11-01T16:49:50Z",
+     "wall_seconds": 252.66,
+     "exit": 0
+    }
+   ],
+   "working_outputs_outside_git": "/workspace/padua-drift-runs/response-02/E1/ (regenerable; not a cold-storage deposit)",
+   "e1_reproduce_note": "explicit_projection_check.input_sha256 hashes a temporary file and is not reproducible (record 05 Regeneration path); ignored as identity"
+  }
+ },
+ "all_pass": true,
+ "finished_utc": "2026-11-01T17:00:35.779123+00:00",
+ "elapsed_seconds": 0.017129192000084004
+}

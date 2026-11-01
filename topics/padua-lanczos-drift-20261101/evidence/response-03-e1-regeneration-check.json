@@ -1,0 +1,114 @@
+{
+ "purpose": "response-03 (audit-03 A03-L1): demonstrate that --regenerated now requires all four outputs; developer executions by Claude (orchestrator, configured claude-opus-5-5, high), not independent reruns",
+ "checker": "tracks/bivariate-lanczos/code/drift/e1_scalar_finite_check.py",
+ "checker_sha256_now": "93130ae87b0781978582f7a0389c79e42abb0b370021d9f70cc2dc0c53e03544",
+ "checker_sha256_response02": "422a6495caa33a275b084b7a98ab8aeaee0ee698de0d8c512a9eefaf6d2f7193",
+ "environment": "CPython 3.13.18, python-flint 0.9.0, PYTHONPATH=/workspace/padua-drift-runs/python-deps, OPENBLAS_NUM_THREADS=1; raw outputs outside Git",
+ "regeneration_runs": [
+  "rep-tri rc=0 start=2026-11-01T18:40:53Z wall=2.387967015 cmd=python3 tracks/bivariate-lanczos/code/drift/e1_reproduce.py --set triangle --output /workspace/padua-drift-runs/response-03/E1/reproduce-triangle.json",
+  "cgs2-tri rc=0 start=2026-11-01T18:40:56Z wall=3.341036079 cmd=python3 tracks/bivariate-lanczos/code/drift/e1_cgs2.py --set triangle --degree 12 --rule pivot --output /workspace/padua-drift-runs/response-03/E1/cgs2-triangle-n12-pivot.json",
+  "rep-rot rc=0 start=2026-11-01T18:40:59Z wall=162.214076936 cmd=python3 tracks/bivariate-lanczos/code/drift/e1_reproduce.py --set rotated --output /workspace/padua-drift-runs/response-03/E1/reproduce-rotated.json",
+  "cgs2-rot rc=0 start=2026-11-01T18:40:53Z wall=242.845681000 cmd=python3 tracks/bivariate-lanczos/code/drift/e1_cgs2.py --set rotated --degree 12 --rule alt --output /workspace/padua-drift-runs/response-03/E1/cgs2-rotated-n12-alt.json"
+ ],
+ "regeneration_note": "Fresh 2026-11-01 runs into /workspace/padua-drift-runs/response-03/E1 (not committed). They are separate from the response-02 runs recorded in response-02-e1-scalar-finite.json; by response-03 the response-02 working directory no longer contained reproduce-triangle.json (working files outside Git), so it was not reused.",
+ "partial_case_construction": "copy of the two fresh cgs2 uppers and reproduce-triangle.json only (reproduce-rotated.json omitted)",
+ "cases": {
+  "none": {
+   "cli_exit_status": 0,
+   "all_pass": true,
+   "committed_certificate_sets_pass": {
+    "triangle": true,
+    "rotated": true
+   }
+  },
+  "absent": {
+   "cli_exit_status": 1,
+   "all_pass": false,
+   "committed_certificate_sets_pass": {
+    "triangle": true,
+    "rotated": true
+   },
+   "regenerated_directory": "/workspace/padua-drift-runs/response-03/does-not-exist",
+   "directory_exists": false,
+   "missing_required": [
+    "cgs2-triangle-n12-pivot.json",
+    "reproduce-triangle.json",
+    "cgs2-rotated-n12-alt.json",
+    "reproduce-rotated.json"
+   ],
+   "regeneration_pass": false
+  },
+  "partial": {
+   "cli_exit_status": 1,
+   "all_pass": false,
+   "committed_certificate_sets_pass": {
+    "triangle": true,
+    "rotated": true
+   },
+   "regenerated_directory": "/workspace/padua-drift-runs/response-03/partial",
+   "directory_exists": true,
+   "missing_required": [
+    "reproduce-rotated.json"
+   ],
+   "regeneration_pass": false
+  },
+  "complete": {
+   "cli_exit_status": 0,
+   "all_pass": true,
+   "committed_certificate_sets_pass": {
+    "triangle": true,
+    "rotated": true
+   },
+   "regenerated_directory": "/workspace/padua-drift-runs/response-03/E1",
+   "directory_exists": true,
+   "missing_required": [],
+   "regeneration_pass": true,
+   "files": {
+    "cgs2-triangle-n12-pivot.json": {
+     "exists": true,
+     "sha256": "421511071ed78e209d7c4665a2786225deac1cd0db8838c19779f6b7835b2973",
+     "upper_equal_committed": true,
+     "producer_pinned": true,
+     "python": "3.13.18",
+     "elapsed_seconds": 3.268468177000017,
+     "command": "tracks/bivariate-lanczos/code/drift/e1_cgs2.py --set triangle --degree 12 --rule pivot --output /workspace/padua-drift-runs/response-03/E1/cgs2-triangle-n12-pivot.json"
+    },
+    "reproduce-triangle.json": {
+     "exists": true,
+     "sha256": "e5926e58dd4d4a2d67750c2db688740ee99560696e9f057d3d14771ebaf99cd1",
+     "result": "PASS",
+     "explicit_projection_check": "PASS",
+     "generator_pinned": true,
+     "certificate_pinned": true,
+     "source_record_pinned": true
+    },
+    "cgs2-rotated-n12-alt.json": {
+     "exists": true,
+     "sha256": "6706528f23d32b4d568be75df9aafa9dcb5298de04816bf8769a7295c8fb5123",
+     "upper_equal_committed": true,
+     "producer_pinned": true,
+     "python": "3.13.18",
+     "elapsed_seconds": 242.74010962199998,
+     "command": "tracks/bivariate-lanczos/code/drift/e1_cgs2.py --set rotated --degree 12 --rule alt --output /workspace/padua-drift-runs/response-03/E1/cgs2-rotated-n12-alt.json"
+    },
+    "reproduce-rotated.json": {
+     "exists": true,
+     "sha256": "ee4c0c7f23bb7184dc8678d717476d6360912b8e45b80c9dabd52d63686a47f9",
+     "result": "PASS",
+     "explicit_projection_check": "PASS",
+     "generator_pinned": true,
+     "certificate_pinned": true,
+     "source_record_pinned": true
+    }
+   }
+  }
+ },
+ "expected": {
+  "none": "PASS, exit 0 (committed-certificate mode unchanged)",
+  "absent": "FAIL, exit 1",
+  "partial": "FAIL, exit 1",
+  "complete": "PASS, exit 0"
+ },
+ "result": "PASS",
+ "generated_utc": "2026-11-01T18:45:23+00:00"
+}
