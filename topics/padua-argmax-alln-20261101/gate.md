@@ -27,3 +27,24 @@ Claude (claude-opus-5-5), 2026-11-01, rules read at `28aaa20861d08074b77efc74eae
 | IDEA?argmax-alln-claude-04: generating-curve numerator factorisation | new within this search | 2D analogue of the 1D common-factor trick; untested |
 
 Cheapest decisive tests and kill criteria are in [plan.md](plan.md) §5 and [ideas.md](ideas.md). No literature priority claim is made. Literature on the 1D analogues has not been read yet (plan §5.4).
+
+## Gate refresh — 2026-11-01, handoff 01 (main `2b52b43`)
+
+- Rules unchanged since `28aaa20` (`git diff --stat 28aaa20 2b52b43 -- AGENTS.md agents/ templates/` is empty).
+- Registry grown to 701 non-empty lines. Rescanned headings and alias lines and the PR12 addenda (IDEA-286…311, PD-N072/073 obstruction table).
+- Keyword search repeated: `triangle defect|phase locali|primitive|central envelope|R_cen|argmax|majorant|monoton|profile`.
+- New closest entries:
+  - **IDEA-305** (uniform phase/gain/defect assembly for the central envelope; PD-T189–192);
+  - **IDEA-303/304** (all-edge kernel, complementary-grid defect, constant g);
+  - **IDEA-290…302** (finite complete certification), with **IDEA-299** (n = 8 cover) deferred.
+- Verdicts, also recorded in ideas.md:
+
+| Candidate | Verdict | Difference |
+|---|---|---|
+| IDEA?argmax-alln-claude-01 | unchanged (REJECTED: failed, MEASURED; sub-tool) | consistent with PD-T190 |
+| IDEA?argmax-alln-claude-02 | variant of IDEA-305 | all regimes + effective n₀ (plan v2 P1–P6) |
+| IDEA?argmax-alln-claude-03 | new within search (unchanged) | the edge profile is compatible; untested |
+| IDEA?argmax-alln-claude-04 | new within search (unchanged) | untested |
+| IDEA?argmax-alln-claude-05 (new) | variant of IDEA-290…302 | global maximum only, no counting |
+
+- No literature claim. The 1-D Lebesgue-function literature (plan v1 §5.4) is still unread and is assigned to part 3 before P3.

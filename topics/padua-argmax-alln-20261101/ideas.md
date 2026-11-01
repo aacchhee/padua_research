@@ -61,3 +61,31 @@ Aliases: 2D common-factor trick; envelope × convex sum.
 - Kill criterion written before testing: kill if no cell-wise sign-stable envelope exists at n = 4.
 - Actual test results: not run.
 - Disposition: **deferred**.
+
+## Update 2026-11-01 — handoff 01, after PR #12 merged (`2b52b43`)
+
+Earlier entries above are unchanged. These notes amend them.
+
+- **IDEA?argmax-alln-claude-01.** Disposition unchanged: REJECTED: failed (MEASURED) as a stand-alone mechanism, retained as a sub-tool. It is consistent with PD-T190: on edges, the supremum of the majorant above Λ_c near phase 0 is O(log⁻² n), so the majorant must be paired with a defect. The measured excess (9.2e-5 at n = 40) is compatible.
+- **IDEA?argmax-alln-claude-02.** Closest registry entry is now **IDEA-305** (PD-T189–192), which realizes this architecture on the central vertical edge with non-effective o(1) remainders, together with IDEA-303/304 (PD-T185–188).
+  - Novelty verdict: **variant of IDEA-305**. The difference is the extension to all regimes (whole vertical edges, horizontal edges, corner neighbourhoods, interior, strips) plus effective constants and a threshold n₀ (plan v2 P1–P6).
+  - Kill criteria: superseded by plan v2 §6 T1–T4, pre-registered before any part 3 run.
+  - Disposition: **deferred → active in part 3** (handoff 02).
+- **IDEA?argmax-alln-claude-03.** The measured vertical-edge gap profile (PD-T?argmax-alln-claude-02) is smallest at the centre and rises toward both ends. This is compatible with an along-edge monotonicity toward the centre, which would reduce plan v2 P1 to PD-T192. Still untested in the 2-D sense. Disposition: deferred; fallback if T4 kills the asymptotic route.
+- **IDEA?argmax-alln-claude-04.** Unchanged, deferred.
+
+## IDEA?argmax-alln-claude-05 — global-maximum-only finite certifier
+
+Aliases: majorant-discard branch and bound; A4(d) certifier.
+
+- Question / scope: certify max λ_n = Λ_c(n), attained only at the non-node corners, for each n in a finite range (n = 2 and 8 ≤ n < n₀), without counting all local maxima.
+- Mechanism and hypotheses: box branch and bound on the angle square.
+  - Discard a box when an outward-rounded upper bound of the majorant S (or of λ_n directly) is below Λ_c − margin.
+  - Near coset points use exact or interval λ_n. Near the non-node corners use a local strict-maximum certificate (Hessian or cusp slopes), in the style of PD-T103.
+- Closest registry entries (read in full): IDEA-290…302 (A5 complete certification; PD-T160–184), and IDEA-299 (n = 8 complete cover, deferred). These certify every local maximum. This candidate certifies only the global maximum.
+- Separation criterion: no completeness or counting obligation. Boxes need only an upper bound below Λ_c. Erased if the corner-neighbourhood local certificate already requires the full A5 machinery.
+- Novelty gate verdict: variant of IDEA-290…302 (a weaker target, hence a cheaper method).
+- Cheapest decisive test: run it for n = 2 (P0) and n = 8 (PD-T181 OPEN), and record box counts and run times.
+- Kill criterion written before testing: kill as the P6 tool if n = 12 needs more than 10× the run time of part 2's n = 7 full certificate.
+- Actual test results: not run.
+- Disposition: **active in part 3** (handoff 02).
