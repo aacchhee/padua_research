@@ -1,0 +1,69 @@
+{
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "arithmetic": "QQ(zeta), exact cyclotomic polynomial quotient",
+  "script_sha256": "94438117d4510b248beaac3e22afb23c159c21d107e17d300206b73751be4101",
+  "scope": "n=1,...,6; every odd-board kernel term and exact same-mesh square; supplementary regression only",
+  "results": [
+    {
+      "n": 1,
+      "cyclotomic_order": 8,
+      "field_degree": 4,
+      "odd_board_kernel_terms_checked": 3,
+      "coincident_endpoint_checked": true,
+      "positive_corner_sum_identity": true,
+      "same_mesh_square_identity": true,
+      "all_equalities_exact": true
+    },
+    {
+      "n": 2,
+      "cyclotomic_order": 24,
+      "field_degree": 8,
+      "odd_board_kernel_terms_checked": 6,
+      "coincident_endpoint_checked": true,
+      "positive_corner_sum_identity": true,
+      "same_mesh_square_identity": true,
+      "all_equalities_exact": true
+    },
+    {
+      "n": 3,
+      "cyclotomic_order": 48,
+      "field_degree": 16,
+      "odd_board_kernel_terms_checked": 10,
+      "coincident_endpoint_checked": true,
+      "positive_corner_sum_identity": true,
+      "same_mesh_square_identity": true,
+      "all_equalities_exact": true
+    },
+    {
+      "n": 4,
+      "cyclotomic_order": 80,
+      "field_degree": 32,
+      "odd_board_kernel_terms_checked": 15,
+      "coincident_endpoint_checked": true,
+      "positive_corner_sum_identity": true,
+      "same_mesh_square_identity": true,
+      "all_equalities_exact": true
+    },
+    {
+      "n": 5,
+      "cyclotomic_order": 120,
+      "field_degree": 32,
+      "odd_board_kernel_terms_checked": 21,
+      "coincident_endpoint_checked": true,
+      "positive_corner_sum_identity": true,
+      "same_mesh_square_identity": true,
+      "all_equalities_exact": true
+    },
+    {
+      "n": 6,
+      "cyclotomic_order": 168,
+      "field_degree": 48,
+      "odd_board_kernel_terms_checked": 28,
+      "coincident_endpoint_checked": true,
+      "positive_corner_sum_identity": true,
+      "same_mesh_square_identity": true,
+      "all_equalities_exact": true
+    }
+  ]
+}

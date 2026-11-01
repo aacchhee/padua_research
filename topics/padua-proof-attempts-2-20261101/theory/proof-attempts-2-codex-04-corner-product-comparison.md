@@ -53,7 +53,7 @@ Candidate disposition: retained algebraic/analytic proof route for the registere
 
 ## Checks
 
-The proof is analytic and does not depend on finite computations. Exact regression and independent execution receipts will be recorded when actually run. The independent route agent has already reconstructed, without executing code, the exact square and pointwise deformation bound. This supplements the required Claude audit.
+The proof is analytic and does not depend on finite computations. Developer actually executed `python topics/padua-proof-attempts-2-20261101/code/a2_exact_check.py > topics/padua-proof-attempts-2-20261101/outputs/a2_exact_check.json`: Python3.12.14, SymPy1.14.0, exact QQ(ζ) quotients; every83 odd-board kernel terms, all6 coincident endpoints, and all6 same-mesh square identities passed for n=1,…,6. Code SHA256 `94438117d4510b248beaac3e22afb23c159c21d107e17d300206b73751be4101`; receipt SHA256 `91db451c362d59c8bd1d155b10e0e5da275d62cced0e165b82cff7242fcc3d0e`,2067bytes. Initial ANP/integer equality-coercion plumbing was fixed before the full successful run; no identity mismatch. An actual independent rerun was requested from root; its receipt is separate. The independent route agent also reconstructed, without executing code, the exact square and pointwise deformation bound; see `../independent-checks-a2.md`. These supplement the required Claude audit.
 
 ## Sources
 
@@ -167,7 +167,7 @@ Only the finite corner value is compared; this says nothing about the global arg
 
 ## Open items
 
-Required Claude audit; exact regression and independent receipt; A2 parts are in separate records. No full A3 constant or expansion is claimed.
+Required Claude audit and actual independent exact receipt; A2 parts are in separate records. Developer regression passed. No full A3 constant or expansion is claimed.
 
 ## History
 

@@ -10,7 +10,7 @@ Kill criteria written before any exploratory computation: an exact failure of a 
 
 Audit interruption: root reported the arrival of part-1 Claude audit at `95279b833bca5967fcf47c1b71a56ff622185b4e`; all A1-dependent work paused immediately while independent literature reading continued. Root reviewed the full audit, merged it via `818ca4ad0942eb4743860f913a299ff30d959dae`, and authorized resumption. A1 had no mathematical finding requiring adaptation. Per the user's requested literal reference the dependency remains **PD-T?proof-attempts-codex-01 (audit pending)**; dated qualification: audit-01 accepted A1 at `95279b8`, while part-1 disposition records are pending. No dependent claim was promoted during the pause.
 
-Current target status: OPEN; no computation or theorem is claimed at this checkpoint.
+Initial checkpoint status was OPEN, with no computation or theorem claimed. **Stop reached2026-11-01T09:18 UTC: all three ordered A2 deliverables PROVED in written analytic form; required Claude audit pending.** No A3 attempt was launched. Completion is well within the five-hour box; no supporting-lemma-only stop was taken.
 
 ## Relaxed registry and predecessor gate
 
@@ -28,10 +28,36 @@ Bos–Caliari–De Marchi–Vianello–Xu, *Bivariate Lagrange interpolation at 
 
 ## Candidate memory
 
-- Prescribed shear/product-U route: retained as an available route; its generic triangle inequality would lose cross-term information, so no b conclusion from it yet.
-- Node-angle rational simplification: under development, with the coincident endpoint treated by its A1 limit. This is an algebraic rewrite of A1, not a new mechanism. Kill test: exact mismatch against A1 at any degree/node/corner.
-- Same-mesh comparison: not yet accepted; must prove a uniform total error before it can supply (iii). Kill test: a comparison error growing with n or an unhandled near-diagonal endpoint.
+- Prescribed shear/product-U route: deferred after the exact positive rewrite gave a bounded comparison. A generic triangle inequality would lose cross-term information; no negative theorem is inferred from not following it.
+- Node-angle rational simplification: retained PROVED in -04, with the coincident endpoint separately contributing1/(n+1). Exact regression against the finite kernel passed every83 odd-board terms for n=1,…,6. This is an algebraic rewrite of A1, not a new mechanism.
+- Same-mesh comparison: retained PROVED in -04. The same-mesh reference is exactly L_n², with L_n an odd-cosecant sum. The pointwise deformation error is≤π²n/(2|j−k|²), including adjacent indices nearπ; summation, endpoint and normalization yield |Λ_c−L_n²|≤54. Independent route agent reconstructed this analytically. The actual k=n deformation is nonzero; using actual endpoint weights in both sums avoids a false vanishing argument.
+- A coarse mean-value derivative estimate near the adjacent upper endpoint would produce an excessive bound; exact subtraction of the rational summands gives the needed product of the two gaps. This is a discarded estimate, not a refuted A2 candidate or a PD-N.
+
+## Completed ordered results
+
+1. `PD-T?proof-attempts-2-codex-01`: for every n≥2, Λ_c≥(4/π²)log²n−54, hence≥(4/π²)log²n−80log n. This closes(i), with a stronger constant additive lower loss. The global KL theorem alone supplies the previously known upper asymptotic.
+2. `PD-T?proof-attempts-2-codex-02`: for every n≥2, (4/π²)log²n−54≤Λ_c≤(4/π²)log²n+(12/π)logn+63, hence the absolute leading-term error≤95logn. This closes(ii) with explicit constants.
+3. `PD-T?proof-attempts-2-codex-03`: for every n≥2, |Λ_c−(4/π²)log²n−b logn|≤68 with the requested b. This closes(iii). The key locally proved one-dimensional estimate is |L_n−(2/π)(logn+γ+log(8/π))|<2/n.
+
+Supporting result `PD-T?proof-attempts-2-codex-04` has its own theory file and PROVED status; it is not used to relabel an unresolved source target. The full A3 constant, its parity independence, κ, and its finer remainder remain OPEN. A2 is done; the next active target belongs to root's ordered plan.
+
+## Actual computations and evidence
+
+Executed from repository root:
+
+```text
+python topics/padua-proof-attempts-2-20261101/code/a2_exact_check.py > topics/padua-proof-attempts-2-20261101/outputs/a2_exact_check.json
+python topics/padua-proof-attempts-2-20261101/code/a2_sanity.py > topics/padua-proof-attempts-2-20261101/outputs/a2_sanity.json
+```
+
+Python3.12.14, SymPy1.14.0; exact cyclotomic quotient fields. n=1,…,6: all83 corrected-kernel simplifications, all6 coincident-endpoint checks, all6 positive-sum identities, and all6 same-mesh square identities pass. No floating tolerances and no Vandermonde/kernel code imported. First execution hit an ANP-versus-Python-int equality-coercion assertion at the endpoint; converting the expected integer to the same field fixed the checker, and the full run then passed. This was a checker-type mismatch, with no mathematical identity failure. Script SHA256 `94438117d4510b248beaac3e22afb23c159c21d107e17d300206b73751be4101`; developer receipt SHA256 `91db451c362d59c8bd1d155b10e0e5da275d62cced0e165b82cff7242fcc3d0e`,2067bytes.
+
+NumPy2.3.5 longdouble (64-bit mantissa): MEASURED sanity n=2,…,64 and128,256,512,1024; maximum observed |Λ_c−L_n²|=1 and maximum observed absolute b-remainder≈1.955813, both comfortably inside the proved loose constants. The values at n=64,128,256 agree with pinned T2 longdouble values within3e−16; this is a sanity check only. At n=1024, Λ_c≈29.81522415101805 and the remainder after leading and b is≈1.848524867410685. No fit was performed and these numbers play no role in the proof. Sanity script SHA256 `8ca20d9690664430fe596ebdda881183034ef6e1ea81ca3bd841d9c2bfbb0649`; receipt SHA256 `caf52a027f271f0f47ab07ed4289ca2115618aa2970290d2d10d89b90da59b4f`,19691bytes.
+
+The independent mathematical route agent recorded its own handwritten reconstruction in the topic's separate `independent-checks-a2.md`. A different agent `/root/input_manifest` then actually reran BOTH scripts, exit0, producing `outputs/a2_exact_independent.json` and `outputs/a2_sanity_independent.json`. Both outputs are byte-identical to the developer receipts with the SHA256 values above. Its separate receipt is `../independent-execution-a2.md`. Neither code inspection nor the hand proof was counted as that rerun. These supplement, and do not replace, the required Claude audit.
 
 ## Runs needed
 
-Independent exact/interval rerun of any consequential checks once code exists; required Claude audit of all written proofs. Computation commands and result paths will be appended when actually executed.
+- Actual independent exact and sanity reruns are complete, with separate `independent-execution-a2.md` receipt; no computation remains needed for A2 development.
+- Required Claude audit of all written A2 proofs at root's final candidate SHA.
+- For any later A3 work, first prove existence and determine the limit of the bounded difference Λ_c−L_n²; boundedness alone does not imply convergence. No A3 status upgrade here.

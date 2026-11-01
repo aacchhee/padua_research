@@ -57,3 +57,12 @@
 
 - Second ordered deliverable PROVED: `PD-T?proof-attempts-2-codex-02`. For n≥2, `(4/π²)log²n−54 ≤ Λ_c(n) ≤ (4/π²)log²n+(12/π)log n+63`, hence absolute leading-term error≤95log n. Root read the complete proof and the elementary monotone-cosecant estimate. These constants are local explicit bounds; no unspecified literature O-constant is silently made explicit.
 - A2 continues to its b-term done criterion. No A3 constant or global argmax claim.
+
+### A2(iii) done — corner b coefficient, target boundary
+
+- Third ordered deliverable PROVED: `PD-T?proof-attempts-2-codex-03` gives for every n≥2 the requested coefficient b=(8/π²)(γ+log(8/π)) with absolute remainder≤68 after the leading and logarithmic terms. Root read its full harmonic-tail, monotone-quadrature and squaring proof. The separate support -04 has uniform comparison constant54; -01/-02 retain the first two requested deliverables.
+- A2 stops at its done criterion, not at its five-hour ceiling. Start09:06:18UTC; completion09:18UTC on2026-11-01, with the earlier audit pause recorded. No asymptotic counterexample, no PD-N, no A3 proof claim. The bounded difference Λ_c−L_n² has no proved limit here; a bounded A3 route note is retained without launching it.
+- Developer actually ran code/a2_exact_check.py (exact cyclotomic quotient) and code/a2_sanity.py (longdouble diagnostic). `/root/input_manifest` (gpt-6.1-sol medium) separately executed both into distinct independent outputs. Both pairs are byte-identical; the exact check covers83 odd-board terms at n=1,…,6 and all six endpoint/square identities; sanity covers67 degrees n=2,…,64,128,256,512,1024. Full commands/hashes/versions: independent-execution-a2.md. Root inspected both code files and exact receipt. These are supplementary checks; mathematical proof does not depend on them. Required Claude audit remains PENDING.
+- Pinned source sanity agrees with t2_onepage.out's mpmath corner values at64/128/256 to <7e-16; fitted b was not used as proof. New outputs remain small. No new parameter fit or full A3 expansion is claimed.
+- Refreshed main/part1/programme: unchanged at9739a0c/95279b8/9bd14a6. No further merge needed.
+- Next ordered target A5 now starts with its own pre-run gate/kill record. Rigorous corner(D), edge-node(E), and all five coverage obligations are required; theorem03 of part1 covers only its stated local degenerate-max discs.

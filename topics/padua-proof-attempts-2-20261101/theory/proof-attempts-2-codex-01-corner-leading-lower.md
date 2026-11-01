@@ -38,7 +38,7 @@ Overall status: **PROVED** (written all-n proof; Claude audit pending).
 
 ## Checks
 
-Entirely analytic. Independent route agent reconstructed the supporting comparison by hand. No finite computation is needed for(1). Supplementary exact-regression and independent-rerun records are under the topic's code/outputs and independent-checks records when executed; none is silently presumed here.
+Entirely analytic. Independent route agent reconstructed the supporting comparison by hand. No finite computation is needed for(1). Supplementary exact regression passed83 kernel terms and6 square identities for n=1,…,6; a different agent actually reran both exact and sanity scripts, exit0 with byte-identical outputs. Its separate receipt is `../independent-execution-a2.md`. These supplement the required Claude audit.
 
 ## Sources
 
