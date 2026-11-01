@@ -4,7 +4,7 @@
 - Role: Codex orchestrator. Root model/effort metadata is runtime-unexposed; delegated mathematics uses `gpt-6.1-sol xhigh`, code/mechanical work `gpt-6.1-sol medium`. No ultra allocation.
 - Stage: WORK. Required final auditor: Claude, Opus 5.5 xhigh; AUDIT PENDING.
 - Open handoff: [01-work.md](handoffs/01-work.md).
-- Reserved final-ID ranges: not yet; fresh scan active before early draft PR. Batch ledger: [ALLOCATIONS.md](../padua-batch-20261031/ALLOCATIONS.md).
+- Reserved final-ID ranges: PD-T106–135 (30), PD-N044–061 (18), IDEA-210–245 (36), LIT-427–444 (18), including permanent headroom. Fresh scan and provenance: [protocol/reservation-scan.json](protocol/reservation-scan.json). Batch ledger: [ALLOCATIONS.md](../padua-batch-20261031/ALLOCATIONS.md). Reservation only; no final IDs assigned yet.
 - Scientific claims: none yet. Existing PD-T028 stays OPEN. Floating computations will be MEASURED.
 
 ## 2026-11-01 — initialization

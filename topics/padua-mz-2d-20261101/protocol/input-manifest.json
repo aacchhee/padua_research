@@ -1,0 +1,194 @@
+{
+  "purpose": "Pinned identity/provenance inspection; reading source evidence is not an independent rerun or scientific audit",
+  "A1": {
+    "pin": "752ba068589683afe644b505d673f8da1529cbf0",
+    "final_id": "PD-T101",
+    "source_status": "PROVED; Claude audit-01 ACCEPTED at a09d910ae7d5526b1e216066421a0bee7fc20da4; dispositions accepted administratively, merged PR9 at main 806cc7b4509fd93bae652f9545d32d95529f8281",
+    "scope": "Every n>=1 and all four corners, even checkerboard, x exceptional mode, continuous singular limits. No global argmax or asymptotic conclusion.",
+    "files": [
+      {
+        "commit": "752ba068589683afe644b505d673f8da1529cbf0",
+        "path": "topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-01-padua-corner.md",
+        "git_blob": "e08dc5c427b57ec944135776aac8a87dde804ccf",
+        "sha256": "ea59aa077a4d021fc69354383f69340f21d17d87d3a28c6ecaaf302cc763612c",
+        "bytes": 10507
+      },
+      {
+        "commit": "752ba068589683afe644b505d673f8da1529cbf0",
+        "path": "topics/padua-proof-attempts-20261101/attempts/T-A1.md",
+        "git_blob": "76ae79094d16c616c85116ba375b9c3a17e7cc79",
+        "sha256": "81e598bfd9e6c3bd7988a19f035da9fa383e52407aa6426c515187c5f9db2cd3",
+        "bytes": 3442
+      },
+      {
+        "commit": "752ba068589683afe644b505d673f8da1529cbf0",
+        "path": "topics/padua-proof-attempts-20261101/audit-01.md",
+        "git_blob": "3e1ca9a8251b5c078ba57dca66d6f181580c5ff1",
+        "sha256": "f651c118d8693c046ce09bbd332fa74cfe287c733fc3bb8aa78fac25e3ea0e50",
+        "bytes": 14965
+      },
+      {
+        "commit": "752ba068589683afe644b505d673f8da1529cbf0",
+        "path": "topics/padua-proof-attempts-20261101/response-01.md",
+        "git_blob": "817c222e54fa18913923a4276476492f0926b245",
+        "sha256": "2c19ca7a7a0491b5160c96d36df19eb7623bdaba0053a6ea176c432aab3383f7",
+        "bytes": 5250
+      },
+      {
+        "commit": "752ba068589683afe644b505d673f8da1529cbf0",
+        "path": "topics/padua-proof-attempts-20261101/independent-checks.md",
+        "git_blob": "c62c594d4d41dda9b5038d3898c6361871c100c0",
+        "sha256": "c0cfb02c8d69090f6eb6732e1d48153e55ddc10806da35fe715b63a6293c3f07",
+        "bytes": 7918
+      },
+      {
+        "commit": "752ba068589683afe644b505d673f8da1529cbf0",
+        "path": "topics/padua-proof-attempts-20261101/code/a1_exact_check.py",
+        "git_blob": "23f314a03aa1c6941aaec44279e8f03db1c9133e",
+        "sha256": "e7ea17bc56e44214fdf4206c654fb1710e7a8d3ca194dcdc15390a066a7920b0",
+        "bytes": 3736
+      },
+      {
+        "commit": "752ba068589683afe644b505d673f8da1529cbf0",
+        "path": "topics/padua-proof-attempts-20261101/outputs/a1_exact_check.json",
+        "git_blob": "60c349d55127808d7544b401ea1ffb7846260106",
+        "sha256": "f8cd6cfd027989bf4bb59ebaebd9040824b0763ef660db51b5046078f33e8f94",
+        "bytes": 1875
+      },
+      {
+        "commit": "752ba068589683afe644b505d673f8da1529cbf0",
+        "path": "topics/padua-proof-attempts-20261101/outputs/a1_independent.json",
+        "git_blob": "60c349d55127808d7544b401ea1ffb7846260106",
+        "sha256": "f8cd6cfd027989bf4bb59ebaebd9040824b0763ef660db51b5046078f33e8f94",
+        "bytes": 1875
+      },
+      {
+        "commit": "752ba068589683afe644b505d673f8da1529cbf0",
+        "path": "topics/padua-proof-attempts-20261101/audit-support/claude-audit-01/aud_a1.py",
+        "git_blob": "099b113be811b92892e9a1c36deef90d3026007d",
+        "sha256": "d0309e9727ed541cf7ccbcf9b4e4ae6c5a41d15009aa0a1823b1f288c3f42b22",
+        "bytes": 2579
+      },
+      {
+        "commit": "752ba068589683afe644b505d673f8da1529cbf0",
+        "path": "topics/padua-proof-attempts-20261101/audit-support/claude-audit-01/outputs/aud_a1.json",
+        "git_blob": "8517cdbe8a5464c435e3c27754a3beb754ea1786",
+        "sha256": "c51f80e93819bf08c8b23ca4cf3247116bdb62730b82c03d5c4712e83d8fe9e5",
+        "bytes": 1140
+      },
+      {
+        "commit": "752ba068589683afe644b505d673f8da1529cbf0",
+        "path": "topics/padua-proof-attempts-20261101/finalization/integration-checks.json",
+        "git_blob": "bbaab4248b507047cb653b9f51fc20f68f1a9416",
+        "sha256": "77d0c30592d988ca5d4876c93397718ffa5f52db46c0d924b4ef49d421b36730",
+        "bytes": 5482
+      },
+      {
+        "commit": "752ba068589683afe644b505d673f8da1529cbf0",
+        "path": "topics/padua-proof-attempts-20261101/finalization/integration-review.md",
+        "git_blob": "f193a7a457616231f30e74a819d73365a6f70f0a",
+        "sha256": "a12d13874d33c8be990bc45d049146fd7017f031ef3e3fcd15ae55492f8d5001",
+        "bytes": 7414
+      }
+    ]
+  },
+  "A2": {
+    "pin": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+    "source_status": "Developer PROVED records01\u201304, required Claude audit PENDING; Codex independent hand checks and actual separate reruns reported in source records. Not inherited as audited results.",
+    "scope": "Every n>=2: lower loss54, explicit leading error<=95 log n, b=(8/pi^2)(gamma+log(8/pi)) with remainder<=68; supporting square-comparison difference<=54. No A3 constant or global argmax conclusion.",
+    "stale_label": "A1 dependency audit-pending qualifiers in A2 retained literally upstream; A1 now accepted and merged. Do not silently edit upstream source.",
+    "files": [
+      {
+        "commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+        "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-01-corner-leading-lower.md",
+        "git_blob": "490947559d11f9074180692cace60f2a9918370c",
+        "sha256": "6d99f737fab76931e5c26850f3e95e23d3df3c8f3f22cfb85238b5e9168e8032",
+        "bytes": 3975
+      },
+      {
+        "commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+        "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-02-corner-explicit-leading.md",
+        "git_blob": "e02e301f54ff1197651b765e7ad077a29b6cece2",
+        "sha256": "275a947ac91291f5fddbd5291b5438bf37abe765113012936e59f8992242b441",
+        "bytes": 3095
+      },
+      {
+        "commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+        "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-03-corner-log-coefficient.md",
+        "git_blob": "1cde37029e20b7d55790ea10307e91d0a6b410db",
+        "sha256": "9f8667eeb1da848fd8a20e62d4fb4c5845bae938045182e0f4e8f21058c01696",
+        "bytes": 8017
+      },
+      {
+        "commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+        "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-04-corner-product-comparison.md",
+        "git_blob": "ed0e438ec29665f54eebf6ba581a533220871f62",
+        "sha256": "afab6eb482c4df0ab19e149f4a990d3e41b73ef54665b6426d44243359e2f265",
+        "bytes": 9927
+      },
+      {
+        "commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+        "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A2.md",
+        "git_blob": "8db4d4ca04d2ea2d9f7ddb66d61abbbf40675c91",
+        "sha256": "1717b073cd7c298b804e14856b018754707a9e5fcb5ea6e32bd0b4762ec3b6ed",
+        "bytes": 10773
+      },
+      {
+        "commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+        "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a2.md",
+        "git_blob": "5026354373dfa3ce880d176caadc851c8d800541",
+        "sha256": "78158b6b53fe659161dea99e2abd2451d6a3ab1ed8c486496f25742fdfafed3d",
+        "bytes": 7112
+      },
+      {
+        "commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+        "path": "topics/padua-proof-attempts-2-20261101/independent-execution-a2.md",
+        "git_blob": "ee2a54e07171276feb2e755777125ab3090f6f65",
+        "sha256": "135f8d5c515511ed8680864c1378b12baf81aa938664b4c27335b4331dee73bd",
+        "bytes": 3934
+      },
+      {
+        "commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+        "path": "topics/padua-proof-attempts-2-20261101/code/a2_exact_check.py",
+        "git_blob": "e3da746300cda7233eaf762e6edb3c8091e77d96",
+        "sha256": "94438117d4510b248beaac3e22afb23c159c21d107e17d300206b73751be4101",
+        "bytes": 3915
+      },
+      {
+        "commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+        "path": "topics/padua-proof-attempts-2-20261101/code/a2_sanity.py",
+        "git_blob": "bb818f42e8e927f8d16fd7fe19719c97f3c681b3",
+        "sha256": "8ca20d9690664430fe596ebdda881183034ef6e1ea81ca3bd841d9c2bfbb0649",
+        "bytes": 2121
+      },
+      {
+        "commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+        "path": "topics/padua-proof-attempts-2-20261101/outputs/a2_exact_check.json",
+        "git_blob": "9d15ca5470261b5a2d2d969ae0867ca9b7f8e867",
+        "sha256": "91db451c362d59c8bd1d155b10e0e5da275d62cced0e165b82cff7242fcc3d0e",
+        "bytes": 2067
+      },
+      {
+        "commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+        "path": "topics/padua-proof-attempts-2-20261101/outputs/a2_exact_independent.json",
+        "git_blob": "9d15ca5470261b5a2d2d969ae0867ca9b7f8e867",
+        "sha256": "91db451c362d59c8bd1d155b10e0e5da275d62cced0e165b82cff7242fcc3d0e",
+        "bytes": 2067
+      },
+      {
+        "commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+        "path": "topics/padua-proof-attempts-2-20261101/outputs/a2_sanity.json",
+        "git_blob": "8f93449076c2e4915eb5edea48905a5b61bf67f8",
+        "sha256": "caf52a027f271f0f47ab07ed4289ca2115618aa2970290d2d10d89b90da59b4f",
+        "bytes": 19691
+      },
+      {
+        "commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+        "path": "topics/padua-proof-attempts-2-20261101/outputs/a2_sanity_independent.json",
+        "git_blob": "8f93449076c2e4915eb5edea48905a5b61bf67f8",
+        "sha256": "caf52a027f271f0f47ab07ed4289ca2115618aa2970290d2d10d89b90da59b4f",
+        "bytes": 19691
+      }
+    ]
+  }
+}

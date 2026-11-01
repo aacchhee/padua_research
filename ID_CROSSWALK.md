@@ -1,5 +1,7 @@
 # Identifier crosswalk
 
+Padua MZ 2D has reserved PD-T106–135, PD-N044–061, IDEA-210–245 and LIT-427–444 in the [shared batch ledger](topics/padua-batch-20261031/ALLOCATIONS.md), with headroom and a [fresh scan receipt](topics/padua-mz-2d-20261101/protocol/reservation-scan.json). This reservation-only note assigns no final ID; campaign records remain provisional until PR preparation.
+
 Authoritative batch reservations, integration order and allocation owner: [shared batch ledger](topics/padua-batch-20261031/ALLOCATIONS.md). The [charter member ledger](topics/charter-unisolvence-20261031/ALLOCATIONS.md) preserves this member’s original allocation and base/active-PR checks. Final map retained as [JSON](topics/charter-unisolvence-20261031/final-id-map.json). Frozen independent reports deliberately retain provisional IDs and old staging paths; resolve them here and through the [mechanical impact record](topics/charter-unisolvence-20261031/integration-impact.md).
 
 | Provisional ID | Final ID | Source branch / commit | Canonical file | Allocating PR / batch |
