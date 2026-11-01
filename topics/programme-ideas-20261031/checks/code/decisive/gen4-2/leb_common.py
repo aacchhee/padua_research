@@ -232,6 +232,12 @@ class LebDense:
             out['Ltt'] = w[None, :] * ((sc * (-ii * ii * Ct) * Cp) @ V.T + np.outer(n * n * cn, sg))
             out['Ltp'] = w[None, :] * ((sc * (ii * St) * (ll * Sp)) @ V.T)
             out['Lpp'] = w[None, :] * ((sc * Ct * (-ll * ll * Cp)) @ V.T)
+        if derivs >= 3:
+            # third derivatives in angles (d^3/dth^3 cos(n th) = n^3 sin(n th))
+            out['Lttt'] = w[None, :] * ((sc * (ii ** 3 * St) * Cp) @ V.T - np.outer(n ** 3 * sn, sg))
+            out['Lttp'] = w[None, :] * ((sc * (ii * ii * Ct) * (ll * Sp)) @ V.T)
+            out['Ltpp'] = w[None, :] * ((sc * (ii * St) * (ll * ll * Cp)) @ V.T)
+            out['Lppp'] = w[None, :] * ((sc * Ct * (ll ** 3 * Sp)) @ V.T)
         return out
 
     def __call__(self, th, ph):
