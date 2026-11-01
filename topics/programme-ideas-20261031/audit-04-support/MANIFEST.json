@@ -100,8 +100,8 @@
     },
     {
       "path": "topics/programme-ideas-20261031/audit-04-support/pr-body-before.md",
-      "bytes": 6296,
-      "sha256": "2fa693fc6f108356aa17ffd026a9c07cbc0d6f60272c111ab918611c5f8665a7"
+      "bytes": 6295,
+      "sha256": "96d504910f94ebe01c3bda3a4c564326beab7f5db07b3b5e7325fb9594e96be4"
     },
     {
       "path": "topics/programme-ideas-20261031/audit-04-support/preservation-check.json",
@@ -139,6 +139,6 @@
       "sha256": "2d64960f2057b706a601d904350ffc70b0c12fb5867197ae773e1ff175b43399"
     }
   ],
-  "support_total_bytes": 1171705,
+  "support_total_bytes": 1171704,
   "retention": "Committed small necessary integration evidence; prior audit artifacts/history are retained. No bulk numerical output or new external cold storage."
 }
