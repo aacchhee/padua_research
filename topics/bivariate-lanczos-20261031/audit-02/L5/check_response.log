@@ -1,0 +1,21 @@
+{
+  "utc": "2026-11-01T08:13:26.432653+00:00",
+  "head": "50b0d304001b48607527e5086a67045f534d9472",
+  "checkout_head": "84958660511d57227e11e6ef1712bed21c4d0233",
+  "checkout_changes_since_head": [
+    "topics/bivariate-lanczos-20261031/LOG.md",
+    "topics/bivariate-lanczos-20261031/audit-02/check_impact.py",
+    "topics/bivariate-lanczos-20261031/audit-02/impact-check.json"
+  ],
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "driver_output_matches_committed": true,
+  "paired_rows_checked": 66,
+  "theory_table_triples_checked": 27
+}
+PASS: 66 paired intervals; common-HH invariance; 27 theory triples; GEPP decline counts/slopes; reused full-read identities.

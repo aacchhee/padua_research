@@ -1,0 +1,32 @@
+# l2_audit01_staircase.py python=3.12.14
+  n=2 exhaustive, block window: 2 selections; (C) 2; staircase 2 (2^(n-1) = 2); (C) != staircase: 0; (C) with cyclic definitions: 0; support-lemma violations: 0; disagreements with rl2_cycles.analyse: 0
+  n=3 exhaustive, block window: 8 selections; (C) 4; staircase 4 (2^(n-1) = 4); (C) != staircase: 0; (C) with cyclic definitions: 0; support-lemma violations: 0; disagreements with rl2_cycles.analyse: 0
+  n=4 exhaustive, block window: 64 selections; (C) 8; staircase 8 (2^(n-1) = 8); (C) != staircase: 0; (C) with cyclic definitions: 0; support-lemma violations: 0; disagreements with rl2_cycles.analyse: 0
+  n=5 exhaustive, block window: 1024 selections; (C) 16; staircase 16 (2^(n-1) = 16); (C) != staircase: 0; (C) with cyclic definitions: 0; support-lemma violations: 0; disagreements with rl2_cycles.analyse: 0
+  n=6 exhaustive, block window: 32768 selections; (C) 32; staircase 32 (2^(n-1) = 32); (C) != staircase: 0; (C) with cyclic definitions: 0; support-lemma violations: 0
+  n=7 all 64 staircases, block window: not (C) 0; cyclic 0; support-lemma violations 0
+  n=8 all 128 staircases, block window: not (C) 0; cyclic 0; support-lemma violations 0
+  n=9 all 256 staircases, block window: not (C) 0; cyclic 0; support-lemma violations 0
+  n=10 all 512 staircases, block window: not (C) 0; cyclic 0; support-lemma violations 0
+  n=11 all 1024 staircases, block window: not (C) 0; cyclic 0; support-lemma violations 0
+  n=12 all 2048 staircases, block window: not (C) 0; cyclic 0; support-lemma violations 0
+  n=13 all 4096 staircases, block window: not (C) 0; cyclic 0; support-lemma violations 0
+  n=2 staircases x 3 random windows/L-sets in {l < c}: 6 cases; cyclic 0; support-lemma violations 0
+  n=3 staircases x 3 random windows/L-sets in {l < c}: 12 cases; cyclic 0; support-lemma violations 0
+  n=4 staircases x 3 random windows/L-sets in {l < c}: 24 cases; cyclic 0; support-lemma violations 0
+  n=5 staircases x 3 random windows/L-sets in {l < c}: 48 cases; cyclic 0; support-lemma violations 0
+  n=6 staircases x 3 random windows/L-sets in {l < c}: 96 cases; cyclic 0; support-lemma violations 0
+  n=7 staircases x 3 random windows/L-sets in {l < c}: 192 cases; cyclic 0; support-lemma violations 0
+  n=8 staircases x 3 random windows/L-sets in {l < c}: 384 cases; cyclic 0; support-lemma violations 0
+  n=9 staircases x 3 random windows/L-sets in {l < c}: 768 cases; cyclic 0; support-lemma violations 0
+  n=10 staircases x 3 random windows/L-sets in {l < c}: 1536 cases; cyclic 0; support-lemma violations 0
+  rule bj n=6: staircase True, (C) True, acyclic True
+  rule bj n=12: staircase True, (C) True, acyclic True
+  rule bj n=20: staircase True, (C) True, acyclic True
+  rule mirror n=6: staircase True, (C) True, acyclic True
+  rule mirror n=12: staircase True, (C) True, acyclic True
+  rule mirror n=20: staircase True, (C) True, acyclic True
+  rule alt n=6: staircase True, (C) True, acyclic True
+  rule alt n=12: staircase True, (C) True, acyclic True
+  rule alt n=20: staircase True, (C) True, acyclic True
+# done in 20.8s

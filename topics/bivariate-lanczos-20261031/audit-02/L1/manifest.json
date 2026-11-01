@@ -1,0 +1,1788 @@
+{
+  "actual_head": "84958660511d57227e11e6ef1712bed21c4d0233",
+  "artifacts": [
+    {
+      "bytes": 6445,
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L1/developer-exact-rerun.log",
+      "sha256": "f4ff98a922b620c10786ee6af7071c635472ea7ce7e48c0e410f6fcb091c1377"
+    },
+    {
+      "bytes": 13436,
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L1/developer-n101-reanalysis-rerun.log",
+      "sha256": "3b29cf2fcb1f1aec768e8fa0c7b9edc770afba717f98353ba88f6febc8bc312c"
+    },
+    {
+      "bytes": 1721,
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L1/independent-response-checks.log",
+      "sha256": "ccb610f0b348a704f6c5d1370c5ae99c8f531a44243ad586239feb7606178844"
+    },
+    {
+      "bytes": 5757,
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L1/independent_response_checks.py",
+      "sha256": "c48760aa26436cfda0d1a21ae5353a22ccc4f79706d22bea7d945f97a1eed416"
+    },
+    {
+      "bytes": 5244,
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L1/make_manifest.py",
+      "sha256": "f6a6d090a386dbd3e21ca765b102ce9847e29388118df0de35e30c492e4ddc57"
+    }
+  ],
+  "command_results": "All three exited zero; success markers and raw results reviewed. No historical expensive suite rerun in audit-02.",
+  "environment": {
+    "mpmath": "1.3.0",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  },
+  "executed_scientific_commands": [
+    "python3 -I tracks/bivariate-lanczos/code/L1/l1_audit01_exact_checks.py > topics/bivariate-lanczos-20261031/audit-02/L1/developer-exact-rerun.log",
+    "python3 -I tracks/bivariate-lanczos/code/L1/l1_audit01_n101_reanalysis.py topics/bivariate-lanczos-20261031/directions/L1/logs > topics/bivariate-lanczos-20261031/audit-02/L1/developer-n101-reanalysis-rerun.log",
+    "python3 -I topics/bivariate-lanczos-20261031/audit-02/L1/independent_response_checks.py > topics/bivariate-lanczos-20261031/audit-02/L1/independent-response-checks.log"
+  ],
+  "model": "Requested/configured gpt-6-astra xhigh; no independent runtime attestation",
+  "retention": "Small necessary audit evidence; root owns commit decisions. No external cold-storage destination selected.",
+  "snapshots": {
+    "audit01_publication": "5f523313b7b388cb114103734028f0a850dfeaad",
+    "original_candidate": "5ccfac223f466a9105450365d8c6c3781ff7d922",
+    "response_candidate": "075d4074017445a0fd4d7443ffac97cd7f8c106b",
+    "rules_head": "50b0d304001b48607527e5086a67045f534d9472"
+  },
+  "sources": [
+    {
+      "bytes": 3159,
+      "path": "AGENTS.md",
+      "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 3159,
+          "equals_workspace": true,
+          "git_blob": "8c94c718629649c3f5c89d05e5b674ae5ad3a99c",
+          "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60"
+        },
+        "original_candidate": {
+          "bytes": 3159,
+          "equals_workspace": true,
+          "git_blob": "8c94c718629649c3f5c89d05e5b674ae5ad3a99c",
+          "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60"
+        },
+        "response_candidate": {
+          "bytes": 3159,
+          "equals_workspace": true,
+          "git_blob": "8c94c718629649c3f5c89d05e5b674ae5ad3a99c",
+          "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60"
+        },
+        "rules_head": {
+          "bytes": 3159,
+          "equals_workspace": true,
+          "git_blob": "8c94c718629649c3f5c89d05e5b674ae5ad3a99c",
+          "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60"
+        }
+      }
+    },
+    {
+      "bytes": 18116,
+      "path": "agents/WORKFLOW.md",
+      "sha256": "b1c1c14c83e02bf38283159f81ec278ae336ab56c95d0c026b9ada3314d1ffaa",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 18116,
+          "equals_workspace": true,
+          "git_blob": "1e3399cc4089c3784f017cf9ec0927bc695ef99c",
+          "sha256": "b1c1c14c83e02bf38283159f81ec278ae336ab56c95d0c026b9ada3314d1ffaa"
+        },
+        "original_candidate": {
+          "bytes": 18116,
+          "equals_workspace": true,
+          "git_blob": "1e3399cc4089c3784f017cf9ec0927bc695ef99c",
+          "sha256": "b1c1c14c83e02bf38283159f81ec278ae336ab56c95d0c026b9ada3314d1ffaa"
+        },
+        "response_candidate": {
+          "bytes": 18116,
+          "equals_workspace": true,
+          "git_blob": "1e3399cc4089c3784f017cf9ec0927bc695ef99c",
+          "sha256": "b1c1c14c83e02bf38283159f81ec278ae336ab56c95d0c026b9ada3314d1ffaa"
+        },
+        "rules_head": {
+          "bytes": 18116,
+          "equals_workspace": true,
+          "git_blob": "1e3399cc4089c3784f017cf9ec0927bc695ef99c",
+          "sha256": "b1c1c14c83e02bf38283159f81ec278ae336ab56c95d0c026b9ada3314d1ffaa"
+        }
+      }
+    },
+    {
+      "bytes": 4969,
+      "path": "agents/codex/CODEX.md",
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 4969,
+          "equals_workspace": true,
+          "git_blob": "16a4ecfea89acd5b1d9cd09c9213094bce144caf",
+          "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b"
+        },
+        "original_candidate": {
+          "bytes": 4969,
+          "equals_workspace": true,
+          "git_blob": "16a4ecfea89acd5b1d9cd09c9213094bce144caf",
+          "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b"
+        },
+        "response_candidate": {
+          "bytes": 4969,
+          "equals_workspace": true,
+          "git_blob": "16a4ecfea89acd5b1d9cd09c9213094bce144caf",
+          "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b"
+        },
+        "rules_head": {
+          "bytes": 4969,
+          "equals_workspace": true,
+          "git_blob": "16a4ecfea89acd5b1d9cd09c9213094bce144caf",
+          "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b"
+        }
+      }
+    },
+    {
+      "bytes": 111148,
+      "path": "literature/INDEX.md",
+      "sha256": "a9fdbfeb7d0a5b485c84e3e9763739e8f8597f118a6e76bf1dcf76ea8aa28a15",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 111148,
+          "equals_workspace": true,
+          "git_blob": "a376a9cfaf929ac0ece7a2bae1ed17f4b0abe789",
+          "sha256": "a9fdbfeb7d0a5b485c84e3e9763739e8f8597f118a6e76bf1dcf76ea8aa28a15"
+        },
+        "original_candidate": {
+          "bytes": 111148,
+          "equals_workspace": true,
+          "git_blob": "a376a9cfaf929ac0ece7a2bae1ed17f4b0abe789",
+          "sha256": "a9fdbfeb7d0a5b485c84e3e9763739e8f8597f118a6e76bf1dcf76ea8aa28a15"
+        },
+        "response_candidate": {
+          "bytes": 111148,
+          "equals_workspace": true,
+          "git_blob": "a376a9cfaf929ac0ece7a2bae1ed17f4b0abe789",
+          "sha256": "a9fdbfeb7d0a5b485c84e3e9763739e8f8597f118a6e76bf1dcf76ea8aa28a15"
+        },
+        "rules_head": {
+          "bytes": 111148,
+          "equals_workspace": true,
+          "git_blob": "a376a9cfaf929ac0ece7a2bae1ed17f4b0abe789",
+          "sha256": "a9fdbfeb7d0a5b485c84e3e9763739e8f8597f118a6e76bf1dcf76ea8aa28a15"
+        }
+      }
+    },
+    {
+      "bytes": 46988,
+      "path": "state/IDEAS.md",
+      "sha256": "12ba5f8eccfc943faebee07b83ea37b995f0b89244fa3b9b81a6f88051ad931d",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 46988,
+          "equals_workspace": true,
+          "git_blob": "061524dc4dd7bd0ab79775bb058fe8e0247570d9",
+          "sha256": "12ba5f8eccfc943faebee07b83ea37b995f0b89244fa3b9b81a6f88051ad931d"
+        },
+        "original_candidate": {
+          "bytes": 46988,
+          "equals_workspace": true,
+          "git_blob": "061524dc4dd7bd0ab79775bb058fe8e0247570d9",
+          "sha256": "12ba5f8eccfc943faebee07b83ea37b995f0b89244fa3b9b81a6f88051ad931d"
+        },
+        "response_candidate": {
+          "bytes": 46988,
+          "equals_workspace": true,
+          "git_blob": "061524dc4dd7bd0ab79775bb058fe8e0247570d9",
+          "sha256": "12ba5f8eccfc943faebee07b83ea37b995f0b89244fa3b9b81a6f88051ad931d"
+        },
+        "rules_head": {
+          "bytes": 46988,
+          "equals_workspace": true,
+          "git_blob": "061524dc4dd7bd0ab79775bb058fe8e0247570d9",
+          "sha256": "12ba5f8eccfc943faebee07b83ea37b995f0b89244fa3b9b81a6f88051ad931d"
+        }
+      }
+    },
+    {
+      "bytes": 6948,
+      "path": "topics/bivariate-lanczos-20261031/SPLITS.md",
+      "sha256": "9bb5b5b89837a5148ceda370dc133ac2f0dc39d501c8ab521d96a913f4842c4e",
+      "snapshots": {
+        "response_candidate": {
+          "bytes": 6948,
+          "equals_workspace": true,
+          "git_blob": "940a9df282797070f66f741ef8f582885baab7c8",
+          "sha256": "9bb5b5b89837a5148ceda370dc133ac2f0dc39d501c8ab521d96a913f4842c4e"
+        },
+        "rules_head": {
+          "bytes": 6948,
+          "equals_workspace": true,
+          "git_blob": "940a9df282797070f66f741ef8f582885baab7c8",
+          "sha256": "9bb5b5b89837a5148ceda370dc133ac2f0dc39d501c8ab521d96a913f4842c4e"
+        }
+      }
+    },
+    {
+      "bytes": 1086,
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-foundations/independent_exact.log",
+      "sha256": "679164554b7018a1f6a0e4f874669b90c6584ca08003a510bf5033eb804e95ad",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 1086,
+          "equals_workspace": true,
+          "git_blob": "66ab1ef79279271ddb94dbf2e14e6d4c8f84d190",
+          "sha256": "679164554b7018a1f6a0e4f874669b90c6584ca08003a510bf5033eb804e95ad"
+        },
+        "response_candidate": {
+          "bytes": 1086,
+          "equals_workspace": true,
+          "git_blob": "66ab1ef79279271ddb94dbf2e14e6d4c8f84d190",
+          "sha256": "679164554b7018a1f6a0e4f874669b90c6584ca08003a510bf5033eb804e95ad"
+        },
+        "rules_head": {
+          "bytes": 1086,
+          "equals_workspace": true,
+          "git_blob": "66ab1ef79279271ddb94dbf2e14e6d4c8f84d190",
+          "sha256": "679164554b7018a1f6a0e4f874669b90c6584ca08003a510bf5033eb804e95ad"
+        }
+      }
+    },
+    {
+      "bytes": 5496,
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-foundations/manifest.json",
+      "sha256": "410e2821057205ee3da64540f9cef8c7ad03b1489e2f9326cdf6127a78b95646",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 5496,
+          "equals_workspace": true,
+          "git_blob": "bf0f8e9c729390c5c00ba7a51f5410b69fb66af7",
+          "sha256": "410e2821057205ee3da64540f9cef8c7ad03b1489e2f9326cdf6127a78b95646"
+        },
+        "response_candidate": {
+          "bytes": 5496,
+          "equals_workspace": true,
+          "git_blob": "bf0f8e9c729390c5c00ba7a51f5410b69fb66af7",
+          "sha256": "410e2821057205ee3da64540f9cef8c7ad03b1489e2f9326cdf6127a78b95646"
+        },
+        "rules_head": {
+          "bytes": 5496,
+          "equals_workspace": true,
+          "git_blob": "bf0f8e9c729390c5c00ba7a51f5410b69fb66af7",
+          "sha256": "410e2821057205ee3da64540f9cef8c7ad03b1489e2f9326cdf6127a78b95646"
+        }
+      }
+    },
+    {
+      "bytes": 4550,
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-foundations/reviewer_exact_rerun.log",
+      "sha256": "01b6a329bd09f4ed329ac3a99716e3366e84e2417a72b5d9a21698c2f730e1e0",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 4550,
+          "equals_workspace": true,
+          "git_blob": "a010d828fc658fe9e81d01fb6aafc1e843a226ae",
+          "sha256": "01b6a329bd09f4ed329ac3a99716e3366e84e2417a72b5d9a21698c2f730e1e0"
+        },
+        "response_candidate": {
+          "bytes": 4550,
+          "equals_workspace": true,
+          "git_blob": "a010d828fc658fe9e81d01fb6aafc1e843a226ae",
+          "sha256": "01b6a329bd09f4ed329ac3a99716e3366e84e2417a72b5d9a21698c2f730e1e0"
+        },
+        "rules_head": {
+          "bytes": 4550,
+          "equals_workspace": true,
+          "git_blob": "a010d828fc658fe9e81d01fb6aafc1e843a226ae",
+          "sha256": "01b6a329bd09f4ed329ac3a99716e3366e84e2417a72b5d9a21698c2f730e1e0"
+        }
+      }
+    },
+    {
+      "bytes": 17330,
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-foundations.md",
+      "sha256": "34dc75151a8cc5269c5bfbabd491f902a02d4e32b3eedd0895078be6489a34b6",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 17330,
+          "equals_workspace": true,
+          "git_blob": "394d35d2f63008adba3a18e4ab07fbdd23f1c7ff",
+          "sha256": "34dc75151a8cc5269c5bfbabd491f902a02d4e32b3eedd0895078be6489a34b6"
+        },
+        "response_candidate": {
+          "bytes": 17330,
+          "equals_workspace": true,
+          "git_blob": "394d35d2f63008adba3a18e4ab07fbdd23f1c7ff",
+          "sha256": "34dc75151a8cc5269c5bfbabd491f902a02d4e32b3eedd0895078be6489a34b6"
+        },
+        "rules_head": {
+          "bytes": 17330,
+          "equals_workspace": true,
+          "git_blob": "394d35d2f63008adba3a18e4ab07fbdd23f1c7ff",
+          "sha256": "34dc75151a8cc5269c5bfbabd491f902a02d4e32b3eedd0895078be6489a34b6"
+        }
+      }
+    },
+    {
+      "bytes": 1823,
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/cert_square40_rerun.log",
+      "sha256": "4375ae13eae79f3011c3455c09c85798bff7d810aae17ce9111afd17073005f2",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 1823,
+          "equals_workspace": true,
+          "git_blob": "d5ee284459a4b00b87a8118d6c3f44bc0741370b",
+          "sha256": "4375ae13eae79f3011c3455c09c85798bff7d810aae17ce9111afd17073005f2"
+        },
+        "response_candidate": {
+          "bytes": 1823,
+          "equals_workspace": true,
+          "git_blob": "d5ee284459a4b00b87a8118d6c3f44bc0741370b",
+          "sha256": "4375ae13eae79f3011c3455c09c85798bff7d810aae17ce9111afd17073005f2"
+        },
+        "rules_head": {
+          "bytes": 1823,
+          "equals_workspace": true,
+          "git_blob": "d5ee284459a4b00b87a8118d6c3f44bc0741370b",
+          "sha256": "4375ae13eae79f3011c3455c09c85798bff7d810aae17ce9111afd17073005f2"
+        }
+      }
+    },
+    {
+      "bytes": 821,
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/closed_loop_rerun.log",
+      "sha256": "77b844281db536a8101a22faee5d41037ac2799a5d2a1de5604f386fc7394ebe",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 821,
+          "equals_workspace": true,
+          "git_blob": "f5159b3fc11dc649d97cd60315a675bcf91c2b8d",
+          "sha256": "77b844281db536a8101a22faee5d41037ac2799a5d2a1de5604f386fc7394ebe"
+        },
+        "response_candidate": {
+          "bytes": 821,
+          "equals_workspace": true,
+          "git_blob": "f5159b3fc11dc649d97cd60315a675bcf91c2b8d",
+          "sha256": "77b844281db536a8101a22faee5d41037ac2799a5d2a1de5604f386fc7394ebe"
+        },
+        "rules_head": {
+          "bytes": 821,
+          "equals_workspace": true,
+          "git_blob": "f5159b3fc11dc649d97cd60315a675bcf91c2b8d",
+          "sha256": "77b844281db536a8101a22faee5d41037ac2799a5d2a1de5604f386fc7394ebe"
+        }
+      }
+    },
+    {
+      "bytes": 1577,
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/gain_producer_rerun.log",
+      "sha256": "583ca75e1338abcb7d8d193b71d865fd861f5f774a5be666d7e3af495f37169e",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 1577,
+          "equals_workspace": true,
+          "git_blob": "e2fa585e2770105af9d76255ec5c3946283efea4",
+          "sha256": "583ca75e1338abcb7d8d193b71d865fd861f5f774a5be666d7e3af495f37169e"
+        },
+        "response_candidate": {
+          "bytes": 1577,
+          "equals_workspace": true,
+          "git_blob": "e2fa585e2770105af9d76255ec5c3946283efea4",
+          "sha256": "583ca75e1338abcb7d8d193b71d865fd861f5f774a5be666d7e3af495f37169e"
+        },
+        "rules_head": {
+          "bytes": 1577,
+          "equals_workspace": true,
+          "git_blob": "e2fa585e2770105af9d76255ec5c3946283efea4",
+          "sha256": "583ca75e1338abcb7d8d193b71d865fd861f5f774a5be666d7e3af495f37169e"
+        }
+      }
+    },
+    {
+      "bytes": 1687,
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/independent_checks.log",
+      "sha256": "dd49d6a0bbd2ec832b5d3274f7ff06bc6404bf2e6f404d35ca6f33190efab0ad",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 1687,
+          "equals_workspace": true,
+          "git_blob": "d651d1146eca4e027f3c766adf4f843be4b9849a",
+          "sha256": "dd49d6a0bbd2ec832b5d3274f7ff06bc6404bf2e6f404d35ca6f33190efab0ad"
+        },
+        "response_candidate": {
+          "bytes": 1687,
+          "equals_workspace": true,
+          "git_blob": "d651d1146eca4e027f3c766adf4f843be4b9849a",
+          "sha256": "dd49d6a0bbd2ec832b5d3274f7ff06bc6404bf2e6f404d35ca6f33190efab0ad"
+        },
+        "rules_head": {
+          "bytes": 1687,
+          "equals_workspace": true,
+          "git_blob": "d651d1146eca4e027f3c766adf4f843be4b9849a",
+          "sha256": "dd49d6a0bbd2ec832b5d3274f7ff06bc6404bf2e6f404d35ca6f33190efab0ad"
+        }
+      }
+    },
+    {
+      "bytes": 26850,
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/manifest.json",
+      "sha256": "ec92a4f0ecb0f83f75e1c1088b8f818105c258b27af24f089625ebc0f7666a81",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 26850,
+          "equals_workspace": true,
+          "git_blob": "ee788f5792947e6d436034f38ad07d78855fc360",
+          "sha256": "ec92a4f0ecb0f83f75e1c1088b8f818105c258b27af24f089625ebc0f7666a81"
+        },
+        "response_candidate": {
+          "bytes": 26850,
+          "equals_workspace": true,
+          "git_blob": "ee788f5792947e6d436034f38ad07d78855fc360",
+          "sha256": "ec92a4f0ecb0f83f75e1c1088b8f818105c258b27af24f089625ebc0f7666a81"
+        },
+        "rules_head": {
+          "bytes": 26850,
+          "equals_workspace": true,
+          "git_blob": "ee788f5792947e6d436034f38ad07d78855fc360",
+          "sha256": "ec92a4f0ecb0f83f75e1c1088b8f818105c258b27af24f089625ebc0f7666a81"
+        }
+      }
+    },
+    {
+      "bytes": 1654,
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/near_product_producer_rerun.log",
+      "sha256": "6dd7cce88660e9a303ac2f10051c321abd95b89955e56d7460acf697451de16a",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 1654,
+          "equals_workspace": true,
+          "git_blob": "72d80acd8e71865b2ee7b6549ca8bedb57bbd139",
+          "sha256": "6dd7cce88660e9a303ac2f10051c321abd95b89955e56d7460acf697451de16a"
+        },
+        "response_candidate": {
+          "bytes": 1654,
+          "equals_workspace": true,
+          "git_blob": "72d80acd8e71865b2ee7b6549ca8bedb57bbd139",
+          "sha256": "6dd7cce88660e9a303ac2f10051c321abd95b89955e56d7460acf697451de16a"
+        },
+        "rules_head": {
+          "bytes": 1654,
+          "equals_workspace": true,
+          "git_blob": "72d80acd8e71865b2ee7b6549ca8bedb57bbd139",
+          "sha256": "6dd7cce88660e9a303ac2f10051c321abd95b89955e56d7460acf697451de16a"
+        }
+      }
+    },
+    {
+      "bytes": 1662,
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/open_loop_rerun.log",
+      "sha256": "38855fabb74083ad40842f65bc9b4e264382e2afd7062bbcf6302c082118eab2",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 1662,
+          "equals_workspace": true,
+          "git_blob": "68ac6a6cde433f12152750c702104c0a800f5df3",
+          "sha256": "38855fabb74083ad40842f65bc9b4e264382e2afd7062bbcf6302c082118eab2"
+        },
+        "response_candidate": {
+          "bytes": 1662,
+          "equals_workspace": true,
+          "git_blob": "68ac6a6cde433f12152750c702104c0a800f5df3",
+          "sha256": "38855fabb74083ad40842f65bc9b4e264382e2afd7062bbcf6302c082118eab2"
+        },
+        "rules_head": {
+          "bytes": 1662,
+          "equals_workspace": true,
+          "git_blob": "68ac6a6cde433f12152750c702104c0a800f5df3",
+          "sha256": "38855fabb74083ad40842f65bc9b4e264382e2afd7062bbcf6302c082118eab2"
+        }
+      }
+    },
+    {
+      "bytes": 306,
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/simax_producer_rerun.log",
+      "sha256": "7ff6cb74f7a020e21c8ecf09cf1a8ee83f923465e75f7fbb137b90171d386923",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 306,
+          "equals_workspace": true,
+          "git_blob": "cb9580785addb1a22cc72ec55a03530d7d826b5e",
+          "sha256": "7ff6cb74f7a020e21c8ecf09cf1a8ee83f923465e75f7fbb137b90171d386923"
+        },
+        "response_candidate": {
+          "bytes": 306,
+          "equals_workspace": true,
+          "git_blob": "cb9580785addb1a22cc72ec55a03530d7d826b5e",
+          "sha256": "7ff6cb74f7a020e21c8ecf09cf1a8ee83f923465e75f7fbb137b90171d386923"
+        },
+        "rules_head": {
+          "bytes": 306,
+          "equals_workspace": true,
+          "git_blob": "cb9580785addb1a22cc72ec55a03530d7d826b5e",
+          "sha256": "7ff6cb74f7a020e21c8ecf09cf1a8ee83f923465e75f7fbb137b90171d386923"
+        }
+      }
+    },
+    {
+      "bytes": 20727,
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later.md",
+      "sha256": "767333dac06f489893e83b5d1850eec9414be5aa31624d941481d4a06369826a",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 20727,
+          "equals_workspace": true,
+          "git_blob": "fcca00e4d248db7c4d36c28190c9fba756bfcaf0",
+          "sha256": "767333dac06f489893e83b5d1850eec9414be5aa31624d941481d4a06369826a"
+        },
+        "response_candidate": {
+          "bytes": 20727,
+          "equals_workspace": true,
+          "git_blob": "fcca00e4d248db7c4d36c28190c9fba756bfcaf0",
+          "sha256": "767333dac06f489893e83b5d1850eec9414be5aa31624d941481d4a06369826a"
+        },
+        "rules_head": {
+          "bytes": 20727,
+          "equals_workspace": true,
+          "git_blob": "fcca00e4d248db7c4d36c28190c9fba756bfcaf0",
+          "sha256": "767333dac06f489893e83b5d1850eec9414be5aa31624d941481d4a06369826a"
+        }
+      }
+    },
+    {
+      "bytes": 8188,
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/SUMMARY.md",
+      "sha256": "ed93cc765c8b5c16abad203362a7f71f07d2bdede21732fbfeb973e9ac1e9b15",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 6379,
+          "equals_workspace": false,
+          "git_blob": "fad86f2cd0130ee4be262561f1f329a4df08a0e1",
+          "sha256": "174661440746845a193cea9389a7566b9b607825acff7ad5781ab55c7e76c18d"
+        },
+        "original_candidate": {
+          "bytes": 6379,
+          "equals_workspace": false,
+          "git_blob": "fad86f2cd0130ee4be262561f1f329a4df08a0e1",
+          "sha256": "174661440746845a193cea9389a7566b9b607825acff7ad5781ab55c7e76c18d"
+        },
+        "response_candidate": {
+          "bytes": 8188,
+          "equals_workspace": true,
+          "git_blob": "3e4c19f9c8ca6713e92badbe0e463e17c123f33d",
+          "sha256": "ed93cc765c8b5c16abad203362a7f71f07d2bdede21732fbfeb973e9ac1e9b15"
+        },
+        "rules_head": {
+          "bytes": 8188,
+          "equals_workspace": true,
+          "git_blob": "3e4c19f9c8ca6713e92badbe0e463e17c123f33d",
+          "sha256": "ed93cc765c8b5c16abad203362a7f71f07d2bdede21732fbfeb973e9ac1e9b15"
+        }
+      }
+    },
+    {
+      "bytes": 58018,
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/candidates.md",
+      "sha256": "b54087ae1e68984fb0fa8bc02ecc4060ed04aae22c15200cad5e0d172c3b562e",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 54951,
+          "equals_workspace": false,
+          "git_blob": "a21975f1cd31a19650901ec1039a68a4aa48fb2b",
+          "sha256": "d633dbbe32465ec81f6a49d82e5a553cf0dfa0a8adb09b5588072f6a382d4a0d"
+        },
+        "original_candidate": {
+          "bytes": 54951,
+          "equals_workspace": false,
+          "git_blob": "a21975f1cd31a19650901ec1039a68a4aa48fb2b",
+          "sha256": "d633dbbe32465ec81f6a49d82e5a553cf0dfa0a8adb09b5588072f6a382d4a0d"
+        },
+        "response_candidate": {
+          "bytes": 58018,
+          "equals_workspace": true,
+          "git_blob": "2c7c9b9c668a5466ffe2e7615c25969e7104493a",
+          "sha256": "b54087ae1e68984fb0fa8bc02ecc4060ed04aae22c15200cad5e0d172c3b562e"
+        },
+        "rules_head": {
+          "bytes": 58018,
+          "equals_workspace": true,
+          "git_blob": "2c7c9b9c668a5466ffe2e7615c25969e7104493a",
+          "sha256": "b54087ae1e68984fb0fa8bc02ecc4060ed04aae22c15200cad5e0d172c3b562e"
+        }
+      }
+    },
+    {
+      "bytes": 6489,
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/a01_exact_checks.log",
+      "sha256": "321c114901320b242adbac9bec9d08025107a4af7ee0ea41d848fb065db4db5b",
+      "snapshots": {
+        "response_candidate": {
+          "bytes": 6489,
+          "equals_workspace": true,
+          "git_blob": "3a2f0e2f76d2d1154c126904c0712f14d0eb342f",
+          "sha256": "321c114901320b242adbac9bec9d08025107a4af7ee0ea41d848fb065db4db5b"
+        },
+        "rules_head": {
+          "bytes": 6489,
+          "equals_workspace": true,
+          "git_blob": "3a2f0e2f76d2d1154c126904c0712f14d0eb342f",
+          "sha256": "321c114901320b242adbac9bec9d08025107a4af7ee0ea41d848fb065db4db5b"
+        }
+      }
+    },
+    {
+      "bytes": 13436,
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/a01_n101_reanalysis.log",
+      "sha256": "3b29cf2fcb1f1aec768e8fa0c7b9edc770afba717f98353ba88f6febc8bc312c",
+      "snapshots": {
+        "response_candidate": {
+          "bytes": 13436,
+          "equals_workspace": true,
+          "git_blob": "fe22a2ce2ffa26fd8c4c4b0481cf3ce4cbc5113c",
+          "sha256": "3b29cf2fcb1f1aec768e8fa0c7b9edc770afba717f98353ba88f6febc8bc312c"
+        },
+        "rules_head": {
+          "bytes": 13436,
+          "equals_workspace": true,
+          "git_blob": "fe22a2ce2ffa26fd8c4c4b0481cf3ce4cbc5113c",
+          "sha256": "3b29cf2fcb1f1aec768e8fa0c7b9edc770afba717f98353ba88f6febc8bc312c"
+        }
+      }
+    },
+    {
+      "bytes": 60084,
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_input3.raw",
+      "sha256": "47c95e6ff78ce5775ae8e65f697bc66347c52ab8b27947f18cd7c77d874d4fe8",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 60084,
+          "equals_workspace": true,
+          "git_blob": "0d5d4e4dc8f4513e2d9c2825258e87dffeab8ec2",
+          "sha256": "47c95e6ff78ce5775ae8e65f697bc66347c52ab8b27947f18cd7c77d874d4fe8"
+        },
+        "original_candidate": {
+          "bytes": 60084,
+          "equals_workspace": true,
+          "git_blob": "0d5d4e4dc8f4513e2d9c2825258e87dffeab8ec2",
+          "sha256": "47c95e6ff78ce5775ae8e65f697bc66347c52ab8b27947f18cd7c77d874d4fe8"
+        },
+        "response_candidate": {
+          "bytes": 60084,
+          "equals_workspace": true,
+          "git_blob": "0d5d4e4dc8f4513e2d9c2825258e87dffeab8ec2",
+          "sha256": "47c95e6ff78ce5775ae8e65f697bc66347c52ab8b27947f18cd7c77d874d4fe8"
+        },
+        "rules_head": {
+          "bytes": 60084,
+          "equals_workspace": true,
+          "git_blob": "0d5d4e4dc8f4513e2d9c2825258e87dffeab8ec2",
+          "sha256": "47c95e6ff78ce5775ae8e65f697bc66347c52ab8b27947f18cd7c77d874d4fe8"
+        }
+      }
+    },
+    {
+      "bytes": 88199,
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_irregular.raw",
+      "sha256": "be99f833226de1bc4df87fad85b5f1d1c60273f9b6ea09bb4684a3e80973c591",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 88199,
+          "equals_workspace": true,
+          "git_blob": "c49c8d43f314ce6787d06490216862b7d99117f2",
+          "sha256": "be99f833226de1bc4df87fad85b5f1d1c60273f9b6ea09bb4684a3e80973c591"
+        },
+        "original_candidate": {
+          "bytes": 88199,
+          "equals_workspace": true,
+          "git_blob": "c49c8d43f314ce6787d06490216862b7d99117f2",
+          "sha256": "be99f833226de1bc4df87fad85b5f1d1c60273f9b6ea09bb4684a3e80973c591"
+        },
+        "response_candidate": {
+          "bytes": 88199,
+          "equals_workspace": true,
+          "git_blob": "c49c8d43f314ce6787d06490216862b7d99117f2",
+          "sha256": "be99f833226de1bc4df87fad85b5f1d1c60273f9b6ea09bb4684a3e80973c591"
+        },
+        "rules_head": {
+          "bytes": 88199,
+          "equals_workspace": true,
+          "git_blob": "c49c8d43f314ce6787d06490216862b7d99117f2",
+          "sha256": "be99f833226de1bc4df87fad85b5f1d1c60273f9b6ea09bb4684a3e80973c591"
+        }
+      }
+    },
+    {
+      "bytes": 88036,
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_rotation.raw",
+      "sha256": "410d772354f454d362a2979e508a87d103f640f2e665ae1e5eb057f583c5ccaf",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 88036,
+          "equals_workspace": true,
+          "git_blob": "1149be5a0cb25d4a098f5c39f83d21c95a635970",
+          "sha256": "410d772354f454d362a2979e508a87d103f640f2e665ae1e5eb057f583c5ccaf"
+        },
+        "original_candidate": {
+          "bytes": 88036,
+          "equals_workspace": true,
+          "git_blob": "1149be5a0cb25d4a098f5c39f83d21c95a635970",
+          "sha256": "410d772354f454d362a2979e508a87d103f640f2e665ae1e5eb057f583c5ccaf"
+        },
+        "response_candidate": {
+          "bytes": 88036,
+          "equals_workspace": true,
+          "git_blob": "1149be5a0cb25d4a098f5c39f83d21c95a635970",
+          "sha256": "410d772354f454d362a2979e508a87d103f640f2e665ae1e5eb057f583c5ccaf"
+        },
+        "rules_head": {
+          "bytes": 88036,
+          "equals_workspace": true,
+          "git_blob": "1149be5a0cb25d4a098f5c39f83d21c95a635970",
+          "sha256": "410d772354f454d362a2979e508a87d103f640f2e665ae1e5eb057f583c5ccaf"
+        }
+      }
+    },
+    {
+      "bytes": 2292,
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r02_node_propagator.log",
+      "sha256": "6e37f1074978ad9b8859027db8ef10d1acd78c4cdd3541ea293b596f7f2222f9",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 2292,
+          "equals_workspace": true,
+          "git_blob": "e6f28aa2e62fcbb2eb77c11ea9d588f8eafa9a91",
+          "sha256": "6e37f1074978ad9b8859027db8ef10d1acd78c4cdd3541ea293b596f7f2222f9"
+        },
+        "original_candidate": {
+          "bytes": 2292,
+          "equals_workspace": true,
+          "git_blob": "e6f28aa2e62fcbb2eb77c11ea9d588f8eafa9a91",
+          "sha256": "6e37f1074978ad9b8859027db8ef10d1acd78c4cdd3541ea293b596f7f2222f9"
+        },
+        "response_candidate": {
+          "bytes": 2292,
+          "equals_workspace": true,
+          "git_blob": "e6f28aa2e62fcbb2eb77c11ea9d588f8eafa9a91",
+          "sha256": "6e37f1074978ad9b8859027db8ef10d1acd78c4cdd3541ea293b596f7f2222f9"
+        },
+        "rules_head": {
+          "bytes": 2292,
+          "equals_workspace": true,
+          "git_blob": "e6f28aa2e62fcbb2eb77c11ea9d588f8eafa9a91",
+          "sha256": "6e37f1074978ad9b8859027db8ef10d1acd78c4cdd3541ea293b596f7f2222f9"
+        }
+      }
+    },
+    {
+      "bytes": 26494,
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/response-audit-01.md",
+      "sha256": "3ffc82db752838bdf0b3532e4e44b5e5dc5fd326eb43520ed93495193a4efa92",
+      "snapshots": {
+        "response_candidate": {
+          "bytes": 26494,
+          "equals_workspace": true,
+          "git_blob": "e9df95c70551a150095508ba065b743842c46ddf",
+          "sha256": "3ffc82db752838bdf0b3532e4e44b5e5dc5fd326eb43520ed93495193a4efa92"
+        },
+        "rules_head": {
+          "bytes": 26494,
+          "equals_workspace": true,
+          "git_blob": "e9df95c70551a150095508ba065b743842c46ddf",
+          "sha256": "3ffc82db752838bdf0b3532e4e44b5e5dc5fd326eb43520ed93495193a4efa92"
+        }
+      }
+    },
+    {
+      "bytes": 17069,
+      "path": "topics/bivariate-lanczos-20261031/plan.md",
+      "sha256": "a4dbc973b79b3b16fc6c8ec31adc8e0c8bc18a5a6136b2983ea6125e7337e69a",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 17069,
+          "equals_workspace": true,
+          "git_blob": "7fae0a77bfe34ea292ac49fbeb9d1ad8b9abd1b6",
+          "sha256": "a4dbc973b79b3b16fc6c8ec31adc8e0c8bc18a5a6136b2983ea6125e7337e69a"
+        },
+        "original_candidate": {
+          "bytes": 17069,
+          "equals_workspace": true,
+          "git_blob": "7fae0a77bfe34ea292ac49fbeb9d1ad8b9abd1b6",
+          "sha256": "a4dbc973b79b3b16fc6c8ec31adc8e0c8bc18a5a6136b2983ea6125e7337e69a"
+        },
+        "response_candidate": {
+          "bytes": 17069,
+          "equals_workspace": true,
+          "git_blob": "7fae0a77bfe34ea292ac49fbeb9d1ad8b9abd1b6",
+          "sha256": "a4dbc973b79b3b16fc6c8ec31adc8e0c8bc18a5a6136b2983ea6125e7337e69a"
+        },
+        "rules_head": {
+          "bytes": 17069,
+          "equals_workspace": true,
+          "git_blob": "7fae0a77bfe34ea292ac49fbeb9d1ad8b9abd1b6",
+          "sha256": "a4dbc973b79b3b16fc6c8ec31adc8e0c8bc18a5a6136b2983ea6125e7337e69a"
+        }
+      }
+    },
+    {
+      "bytes": 22307,
+      "path": "topics/bivariate-lanczos-20261031/report.md",
+      "sha256": "8a86f5af2df7e8dba18a0cffba00dd40674a3b31cfe797a603929883018ded5d",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 15087,
+          "equals_workspace": false,
+          "git_blob": "a33eddd68fad287f86baf178046e60cbb6fdb005",
+          "sha256": "784b11c7fc235c9e8bcfcff915fe3dc3657f33976fbbc8d2d3d4f3f725becc19"
+        },
+        "original_candidate": {
+          "bytes": 15087,
+          "equals_workspace": false,
+          "git_blob": "a33eddd68fad287f86baf178046e60cbb6fdb005",
+          "sha256": "784b11c7fc235c9e8bcfcff915fe3dc3657f33976fbbc8d2d3d4f3f725becc19"
+        },
+        "response_candidate": {
+          "bytes": 22307,
+          "equals_workspace": true,
+          "git_blob": "e0158ec4004b54591bcbb9f971114ecc56fcda7a",
+          "sha256": "8a86f5af2df7e8dba18a0cffba00dd40674a3b31cfe797a603929883018ded5d"
+        },
+        "rules_head": {
+          "bytes": 22307,
+          "equals_workspace": true,
+          "git_blob": "e0158ec4004b54591bcbb9f971114ecc56fcda7a",
+          "sha256": "8a86f5af2df7e8dba18a0cffba00dd40674a3b31cfe797a603929883018ded5d"
+        }
+      }
+    },
+    {
+      "bytes": 22605,
+      "path": "topics/bivariate-lanczos-20261031/response-01.md",
+      "sha256": "d317c0883768741a2c0a90dca45fb9a13bb528af1ad38268f5aa464ade2b2b67",
+      "snapshots": {
+        "response_candidate": {
+          "bytes": 22500,
+          "equals_workspace": false,
+          "git_blob": "31e5e670f7df48682735535be401b43479f26000",
+          "sha256": "b90b19217e8406b4c9064362d5171a7b0053031f3852b995787302664cf04349"
+        },
+        "rules_head": {
+          "bytes": 22605,
+          "equals_workspace": true,
+          "git_blob": "bc4564703c93851717e506e984f45041bbfa9de3",
+          "sha256": "d317c0883768741a2c0a90dca45fb9a13bb528af1ad38268f5aa464ade2b2b67"
+        }
+      }
+    },
+    {
+      "bytes": 18721,
+      "path": "tracks/bivariate-lanczos/code/L1/l1_audit01_exact_checks.py",
+      "sha256": "dea227ed257d96686cb9d4538e6667753b40fd3c5746947fcd7525f80440c270",
+      "snapshots": {
+        "response_candidate": {
+          "bytes": 18721,
+          "equals_workspace": true,
+          "git_blob": "98f3e86e2c1d2718887dd7596685655493ed67d8",
+          "sha256": "dea227ed257d96686cb9d4538e6667753b40fd3c5746947fcd7525f80440c270"
+        },
+        "rules_head": {
+          "bytes": 18721,
+          "equals_workspace": true,
+          "git_blob": "98f3e86e2c1d2718887dd7596685655493ed67d8",
+          "sha256": "dea227ed257d96686cb9d4538e6667753b40fd3c5746947fcd7525f80440c270"
+        }
+      }
+    },
+    {
+      "bytes": 6057,
+      "path": "tracks/bivariate-lanczos/code/L1/l1_audit01_n101_reanalysis.py",
+      "sha256": "bb4bd526d885be7ce0544a8bf9cae51075021d2f1ec7f1a802a187b0a532e937",
+      "snapshots": {
+        "response_candidate": {
+          "bytes": 6057,
+          "equals_workspace": true,
+          "git_blob": "0517d6f6adba514ce5f5740723c7a32602e87026",
+          "sha256": "bb4bd526d885be7ce0544a8bf9cae51075021d2f1ec7f1a802a187b0a532e937"
+        },
+        "rules_head": {
+          "bytes": 6057,
+          "equals_workspace": true,
+          "git_blob": "0517d6f6adba514ce5f5740723c7a32602e87026",
+          "sha256": "bb4bd526d885be7ce0544a8bf9cae51075021d2f1ec7f1a802a187b0a532e937"
+        }
+      }
+    },
+    {
+      "bytes": 7431,
+      "path": "tracks/bivariate-lanczos/code/L1/l1_r06_gain_identity.py",
+      "sha256": "b56247dcad87d7d6481c05ff78150ee2971bf8f60f3deff9e094db61bd6cea78",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 7431,
+          "equals_workspace": true,
+          "git_blob": "7487d6931cf2fdd93cabe2286500c59ca49dcce3",
+          "sha256": "b56247dcad87d7d6481c05ff78150ee2971bf8f60f3deff9e094db61bd6cea78"
+        },
+        "original_candidate": {
+          "bytes": 7431,
+          "equals_workspace": true,
+          "git_blob": "7487d6931cf2fdd93cabe2286500c59ca49dcce3",
+          "sha256": "b56247dcad87d7d6481c05ff78150ee2971bf8f60f3deff9e094db61bd6cea78"
+        },
+        "response_candidate": {
+          "bytes": 7431,
+          "equals_workspace": true,
+          "git_blob": "7487d6931cf2fdd93cabe2286500c59ca49dcce3",
+          "sha256": "b56247dcad87d7d6481c05ff78150ee2971bf8f60f3deff9e094db61bd6cea78"
+        },
+        "rules_head": {
+          "bytes": 7431,
+          "equals_workspace": true,
+          "git_blob": "7487d6931cf2fdd93cabe2286500c59ca49dcce3",
+          "sha256": "b56247dcad87d7d6481c05ff78150ee2971bf8f60f3deff9e094db61bd6cea78"
+        }
+      }
+    },
+    {
+      "bytes": 7275,
+      "path": "tracks/bivariate-lanczos/code/L1/l1_recurrence.py",
+      "sha256": "4b6014359d6cf50d2977ace0524846a5d0bf5498528a382e1c6abde2cb05b884",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 7275,
+          "equals_workspace": true,
+          "git_blob": "99b89e5ec0493994e4ba79f0fe1cb3ed7e16ed97",
+          "sha256": "4b6014359d6cf50d2977ace0524846a5d0bf5498528a382e1c6abde2cb05b884"
+        },
+        "original_candidate": {
+          "bytes": 7275,
+          "equals_workspace": true,
+          "git_blob": "99b89e5ec0493994e4ba79f0fe1cb3ed7e16ed97",
+          "sha256": "4b6014359d6cf50d2977ace0524846a5d0bf5498528a382e1c6abde2cb05b884"
+        },
+        "response_candidate": {
+          "bytes": 7275,
+          "equals_workspace": true,
+          "git_blob": "99b89e5ec0493994e4ba79f0fe1cb3ed7e16ed97",
+          "sha256": "4b6014359d6cf50d2977ace0524846a5d0bf5498528a382e1c6abde2cb05b884"
+        },
+        "rules_head": {
+          "bytes": 7275,
+          "equals_workspace": true,
+          "git_blob": "99b89e5ec0493994e4ba79f0fe1cb3ed7e16ed97",
+          "sha256": "4b6014359d6cf50d2977ace0524846a5d0bf5498528a382e1c6abde2cb05b884"
+        }
+      }
+    },
+    {
+      "bytes": 1924,
+      "path": "tracks/bivariate-lanczos/code/L1/l1_simax_variants.py",
+      "sha256": "c4976003600f2376d5f7b281a76a3d2116fced21795625a01a57dc69b13fdf17",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 1924,
+          "equals_workspace": true,
+          "git_blob": "39c74b5d58a8e7112b8219d8fcb46b4fc93f23ba",
+          "sha256": "c4976003600f2376d5f7b281a76a3d2116fced21795625a01a57dc69b13fdf17"
+        },
+        "original_candidate": {
+          "bytes": 1924,
+          "equals_workspace": true,
+          "git_blob": "39c74b5d58a8e7112b8219d8fcb46b4fc93f23ba",
+          "sha256": "c4976003600f2376d5f7b281a76a3d2116fced21795625a01a57dc69b13fdf17"
+        },
+        "response_candidate": {
+          "bytes": 1924,
+          "equals_workspace": true,
+          "git_blob": "39c74b5d58a8e7112b8219d8fcb46b4fc93f23ba",
+          "sha256": "c4976003600f2376d5f7b281a76a3d2116fced21795625a01a57dc69b13fdf17"
+        },
+        "rules_head": {
+          "bytes": 1924,
+          "equals_workspace": true,
+          "git_blob": "39c74b5d58a8e7112b8219d8fcb46b4fc93f23ba",
+          "sha256": "c4976003600f2376d5f7b281a76a3d2116fced21795625a01a57dc69b13fdf17"
+        }
+      }
+    },
+    {
+      "bytes": 9886,
+      "path": "tracks/bivariate-lanczos/code/review_L1b/rv2_certificate.py",
+      "sha256": "b817545be2b237a78d41c198a133b8bf78680c42032332327eb7ac419eb59501",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 9886,
+          "equals_workspace": true,
+          "git_blob": "6832a8345db6da75ad4510319c60813626311957",
+          "sha256": "b817545be2b237a78d41c198a133b8bf78680c42032332327eb7ac419eb59501"
+        },
+        "original_candidate": {
+          "bytes": 9886,
+          "equals_workspace": true,
+          "git_blob": "6832a8345db6da75ad4510319c60813626311957",
+          "sha256": "b817545be2b237a78d41c198a133b8bf78680c42032332327eb7ac419eb59501"
+        },
+        "response_candidate": {
+          "bytes": 9886,
+          "equals_workspace": true,
+          "git_blob": "6832a8345db6da75ad4510319c60813626311957",
+          "sha256": "b817545be2b237a78d41c198a133b8bf78680c42032332327eb7ac419eb59501"
+        },
+        "rules_head": {
+          "bytes": 9886,
+          "equals_workspace": true,
+          "git_blob": "6832a8345db6da75ad4510319c60813626311957",
+          "sha256": "b817545be2b237a78d41c198a133b8bf78680c42032332327eb7ac419eb59501"
+        }
+      }
+    },
+    {
+      "bytes": 3496,
+      "path": "tracks/bivariate-lanczos/code/review_L1b/rv2_closed_loop.py",
+      "sha256": "2f3fe3734c79cee7eb4d636101bb31a737ce3b76859c2c30e661c14a4a12bc76",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 3496,
+          "equals_workspace": true,
+          "git_blob": "7b1c00bec97a58d63cd75abbbbbeb9d5589679b1",
+          "sha256": "2f3fe3734c79cee7eb4d636101bb31a737ce3b76859c2c30e661c14a4a12bc76"
+        },
+        "original_candidate": {
+          "bytes": 3496,
+          "equals_workspace": true,
+          "git_blob": "7b1c00bec97a58d63cd75abbbbbeb9d5589679b1",
+          "sha256": "2f3fe3734c79cee7eb4d636101bb31a737ce3b76859c2c30e661c14a4a12bc76"
+        },
+        "response_candidate": {
+          "bytes": 3496,
+          "equals_workspace": true,
+          "git_blob": "7b1c00bec97a58d63cd75abbbbbeb9d5589679b1",
+          "sha256": "2f3fe3734c79cee7eb4d636101bb31a737ce3b76859c2c30e661c14a4a12bc76"
+        },
+        "rules_head": {
+          "bytes": 3496,
+          "equals_workspace": true,
+          "git_blob": "7b1c00bec97a58d63cd75abbbbbeb9d5589679b1",
+          "sha256": "2f3fe3734c79cee7eb4d636101bb31a737ce3b76859c2c30e661c14a4a12bc76"
+        }
+      }
+    },
+    {
+      "bytes": 8166,
+      "path": "tracks/bivariate-lanczos/theory/checkerboard-and-near-product-measurements.md",
+      "sha256": "39d261103e4b3fa3c8cffb5228f7201ef4bc0f3f6bb28c4796fe57855daa91ca",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 6729,
+          "equals_workspace": false,
+          "git_blob": "85399e724dabda1af66731da4e9291997abf3d96",
+          "sha256": "6e4ef4cdbbc63395b8ad181e464611a01bbc5ddeedb258e5132e3da151dda633"
+        },
+        "original_candidate": {
+          "bytes": 6729,
+          "equals_workspace": false,
+          "git_blob": "85399e724dabda1af66731da4e9291997abf3d96",
+          "sha256": "6e4ef4cdbbc63395b8ad181e464611a01bbc5ddeedb258e5132e3da151dda633"
+        },
+        "response_candidate": {
+          "bytes": 8166,
+          "equals_workspace": true,
+          "git_blob": "8b84e71a151d6bc51ed6d0ccc20d4c316f228e19",
+          "sha256": "39d261103e4b3fa3c8cffb5228f7201ef4bc0f3f6bb28c4796fe57855daa91ca"
+        },
+        "rules_head": {
+          "bytes": 8166,
+          "equals_workspace": true,
+          "git_blob": "8b84e71a151d6bc51ed6d0ccc20d4c316f228e19",
+          "sha256": "39d261103e4b3fa3c8cffb5228f7201ef4bc0f3f6bb28c4796fe57855daa91ca"
+        }
+      }
+    },
+    {
+      "bytes": 12014,
+      "path": "tracks/bivariate-lanczos/theory/closed-loop-dot-product-rounding-carries-coefficient-channel.md",
+      "sha256": "7090f6e9b60c1827d7ac101f5e244d80eba9b5653ccdfd1e9a7434a9457c8367",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 9727,
+          "equals_workspace": false,
+          "git_blob": "ab0b76e79412134f6635970901c153652420bb95",
+          "sha256": "aecf9975248b07f5d05d1c579b3f42201d9e3252ffc1e5daca123972c37fe0fd"
+        },
+        "original_candidate": {
+          "bytes": 9727,
+          "equals_workspace": false,
+          "git_blob": "ab0b76e79412134f6635970901c153652420bb95",
+          "sha256": "aecf9975248b07f5d05d1c579b3f42201d9e3252ffc1e5daca123972c37fe0fd"
+        },
+        "response_candidate": {
+          "bytes": 12014,
+          "equals_workspace": true,
+          "git_blob": "cd314cdfe204641c8580842108f5e94cbcd440dd",
+          "sha256": "7090f6e9b60c1827d7ac101f5e244d80eba9b5653ccdfd1e9a7434a9457c8367"
+        },
+        "rules_head": {
+          "bytes": 12014,
+          "equals_workspace": true,
+          "git_blob": "cd314cdfe204641c8580842108f5e94cbcd440dd",
+          "sha256": "7090f6e9b60c1827d7ac101f5e244d80eba9b5653ccdfd1e9a7434a9457c8367"
+        }
+      }
+    },
+    {
+      "bytes": 6375,
+      "path": "tracks/bivariate-lanczos/theory/coefficient-channel-gain-census-checkerboards-measured.md",
+      "sha256": "227c30458b4bac88182ba720541a8513201b18e3dc572b46b400f269c615e699",
+      "snapshots": {
+        "response_candidate": {
+          "bytes": 6375,
+          "equals_workspace": true,
+          "git_blob": "3bf56a961ec62b28e2a8557d41f55bca26059436",
+          "sha256": "227c30458b4bac88182ba720541a8513201b18e3dc572b46b400f269c615e699"
+        },
+        "rules_head": {
+          "bytes": 6375,
+          "equals_workspace": true,
+          "git_blob": "3bf56a961ec62b28e2a8557d41f55bca26059436",
+          "sha256": "227c30458b4bac88182ba720541a8513201b18e3dc572b46b400f269c615e699"
+        }
+      }
+    },
+    {
+      "bytes": 15889,
+      "path": "tracks/bivariate-lanczos/theory/exact-certificate-propagator-growth-triangle.md",
+      "sha256": "332a2e9643c28f31664c49d0858906a3606db2559ac3a8eab5ef2259ac748ab3",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 9462,
+          "equals_workspace": false,
+          "git_blob": "c76d816533ed7cbb75b3ad84bad1bd26c0a3cb05",
+          "sha256": "4d7f17ff8cf75726df97a7c65ad84fb3f455911cb634bd04c0e08ce2533062e7"
+        },
+        "original_candidate": {
+          "bytes": 9462,
+          "equals_workspace": false,
+          "git_blob": "c76d816533ed7cbb75b3ad84bad1bd26c0a3cb05",
+          "sha256": "4d7f17ff8cf75726df97a7c65ad84fb3f455911cb634bd04c0e08ce2533062e7"
+        },
+        "response_candidate": {
+          "bytes": 15889,
+          "equals_workspace": true,
+          "git_blob": "dfc40df6e0917a946753689f44e178db040f60d5",
+          "sha256": "332a2e9643c28f31664c49d0858906a3606db2559ac3a8eab5ef2259ac748ab3"
+        },
+        "rules_head": {
+          "bytes": 15889,
+          "equals_workspace": true,
+          "git_blob": "dfc40df6e0917a946753689f44e178db040f60d5",
+          "sha256": "332a2e9643c28f31664c49d0858906a3606db2559ac3a8eab5ef2259ac748ab3"
+        }
+      }
+    },
+    {
+      "bytes": 4548,
+      "path": "tracks/bivariate-lanczos/theory/exact-omega-recurrence-window.md",
+      "sha256": "26931230f9a9f97f46470a461f0cadcdc9fcb172d69fba50d028db416ebafa71",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 3967,
+          "equals_workspace": false,
+          "git_blob": "097a7f9de6a96f1e49d01f1c420f363fab0c1838",
+          "sha256": "b9b984deee3dfa44ba27ab6e7c39ef7c43b98b2b5e678d20c4b6d4d2dd90eaa9"
+        },
+        "original_candidate": {
+          "bytes": 3967,
+          "equals_workspace": false,
+          "git_blob": "097a7f9de6a96f1e49d01f1c420f363fab0c1838",
+          "sha256": "b9b984deee3dfa44ba27ab6e7c39ef7c43b98b2b5e678d20c4b6d4d2dd90eaa9"
+        },
+        "response_candidate": {
+          "bytes": 4548,
+          "equals_workspace": true,
+          "git_blob": "a0df922119ff5c23f9f2386371e01d0decda0651",
+          "sha256": "26931230f9a9f97f46470a461f0cadcdc9fcb172d69fba50d028db416ebafa71"
+        },
+        "rules_head": {
+          "bytes": 4548,
+          "equals_workspace": true,
+          "git_blob": "a0df922119ff5c23f9f2386371e01d0decda0651",
+          "sha256": "26931230f9a9f97f46470a461f0cadcdc9fcb172d69fba50d028db416ebafa71"
+        }
+      }
+    },
+    {
+      "bytes": 15957,
+      "path": "tracks/bivariate-lanczos/theory/first-order-coefficient-channel-gains-product-type.md",
+      "sha256": "bc3912e13c7ee6b21fed8e9d3fa1a25427ab8c03b39c22dd7256de5e28d82b1c",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 10755,
+          "equals_workspace": false,
+          "git_blob": "365b917a53e40a9cf8c5fd392ad4857194bf98cb",
+          "sha256": "9dbeb5f4d94745dd02fbc8e51de968a6ff1b3011f84d5766df6141c12a23e692"
+        },
+        "original_candidate": {
+          "bytes": 10755,
+          "equals_workspace": false,
+          "git_blob": "365b917a53e40a9cf8c5fd392ad4857194bf98cb",
+          "sha256": "9dbeb5f4d94745dd02fbc8e51de968a6ff1b3011f84d5766df6141c12a23e692"
+        },
+        "response_candidate": {
+          "bytes": 15957,
+          "equals_workspace": true,
+          "git_blob": "b9303acd6f091b58428e129ca52aea5732bd3e91",
+          "sha256": "bc3912e13c7ee6b21fed8e9d3fa1a25427ab8c03b39c22dd7256de5e28d82b1c"
+        },
+        "rules_head": {
+          "bytes": 15957,
+          "equals_workspace": true,
+          "git_blob": "b9303acd6f091b58428e129ca52aea5732bd3e91",
+          "sha256": "bc3912e13c7ee6b21fed8e9d3fa1a25427ab8c03b39c22dd7256de5e28d82b1c"
+        }
+      }
+    },
+    {
+      "bytes": 9244,
+      "path": "tracks/bivariate-lanczos/theory/fp-local-relations-window-recurrence.md",
+      "sha256": "13fd2f50b813b8cbad43d26df95cebd473992dd76c83da07cd4ad31271f68735",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 9244,
+          "equals_workspace": true,
+          "git_blob": "9e612d4042e10f184693e89b859c1e107b4805b4",
+          "sha256": "13fd2f50b813b8cbad43d26df95cebd473992dd76c83da07cd4ad31271f68735"
+        },
+        "original_candidate": {
+          "bytes": 9244,
+          "equals_workspace": true,
+          "git_blob": "9e612d4042e10f184693e89b859c1e107b4805b4",
+          "sha256": "13fd2f50b813b8cbad43d26df95cebd473992dd76c83da07cd4ad31271f68735"
+        },
+        "response_candidate": {
+          "bytes": 9244,
+          "equals_workspace": true,
+          "git_blob": "9e612d4042e10f184693e89b859c1e107b4805b4",
+          "sha256": "13fd2f50b813b8cbad43d26df95cebd473992dd76c83da07cd4ad31271f68735"
+        },
+        "rules_head": {
+          "bytes": 9244,
+          "equals_workspace": true,
+          "git_blob": "9e612d4042e10f184693e89b859c1e107b4805b4",
+          "sha256": "13fd2f50b813b8cbad43d26df95cebd473992dd76c83da07cd4ad31271f68735"
+        }
+      }
+    },
+    {
+      "bytes": 10269,
+      "path": "tracks/bivariate-lanczos/theory/full-operator-paige-identity-growing-blocks.md",
+      "sha256": "904cd894c93d6a297a9570279652392432a85b8a41cdf55e34e3b0dbfa0809ad",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 9605,
+          "equals_workspace": false,
+          "git_blob": "be9a6f966545da6cc2951c4edfb3dc18ded01148",
+          "sha256": "a2707434f266388b8d69310b71ef1921d083b8e2e11051bc8a2653bba9ae589e"
+        },
+        "original_candidate": {
+          "bytes": 9605,
+          "equals_workspace": false,
+          "git_blob": "be9a6f966545da6cc2951c4edfb3dc18ded01148",
+          "sha256": "a2707434f266388b8d69310b71ef1921d083b8e2e11051bc8a2653bba9ae589e"
+        },
+        "response_candidate": {
+          "bytes": 10269,
+          "equals_workspace": true,
+          "git_blob": "36aab1d006d7943ffc6339c5ab73268020451f36",
+          "sha256": "904cd894c93d6a297a9570279652392432a85b8a41cdf55e34e3b0dbfa0809ad"
+        },
+        "rules_head": {
+          "bytes": 10269,
+          "equals_workspace": true,
+          "git_blob": "36aab1d006d7943ffc6339c5ab73268020451f36",
+          "sha256": "904cd894c93d6a297a9570279652392432a85b8a41cdf55e34e3b0dbfa0809ad"
+        }
+      }
+    },
+    {
+      "bytes": 5132,
+      "path": "tracks/bivariate-lanczos/theory/hl-simax-windowed-complex-recurrence-instability.md",
+      "sha256": "6a323dd06ea3a80c46b8a679b40f7d254b283d0f5a25b8f41417df54cd4bfb97",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 4155,
+          "equals_workspace": false,
+          "git_blob": "810c50c33941b32b91544c0248a678ae65c12a5f",
+          "sha256": "47cd4f5b518ecba4dcf7a736293acf5f37dba31b5a6127b008fd5134df3aa1f5"
+        },
+        "original_candidate": {
+          "bytes": 4155,
+          "equals_workspace": false,
+          "git_blob": "810c50c33941b32b91544c0248a678ae65c12a5f",
+          "sha256": "47cd4f5b518ecba4dcf7a736293acf5f37dba31b5a6127b008fd5134df3aa1f5"
+        },
+        "response_candidate": {
+          "bytes": 5132,
+          "equals_workspace": true,
+          "git_blob": "a0820e652fb14a8789664db5354e0313dee4daa2",
+          "sha256": "6a323dd06ea3a80c46b8a679b40f7d254b283d0f5a25b8f41417df54cd4bfb97"
+        },
+        "rules_head": {
+          "bytes": 5132,
+          "equals_workspace": true,
+          "git_blob": "a0820e652fb14a8789664db5354e0313dee4daa2",
+          "sha256": "6a323dd06ea3a80c46b8a679b40f7d254b283d0f5a25b8f41417df54cd4bfb97"
+        }
+      }
+    },
+    {
+      "bytes": 13677,
+      "path": "tracks/bivariate-lanczos/theory/l4-band-krylov-obstruction.md",
+      "sha256": "a9334fead2767516abd30bf8967d18394af76c489bd9bb56a4e16c200c90ec9f",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 12227,
+          "equals_workspace": false,
+          "git_blob": "404ff2a597ec83ace04e0ed1dd8b36537212bf73",
+          "sha256": "54bf537b5178823af4dbea7ca546999588bc6124404a4d7f3ac269358014749d"
+        },
+        "original_candidate": {
+          "bytes": 12227,
+          "equals_workspace": false,
+          "git_blob": "404ff2a597ec83ace04e0ed1dd8b36537212bf73",
+          "sha256": "54bf537b5178823af4dbea7ca546999588bc6124404a4d7f3ac269358014749d"
+        },
+        "response_candidate": {
+          "bytes": 13677,
+          "equals_workspace": true,
+          "git_blob": "a2642d242b095241c8912a10ba2107ca6416785b",
+          "sha256": "a9334fead2767516abd30bf8967d18394af76c489bd9bb56a4e16c200c90ec9f"
+        },
+        "rules_head": {
+          "bytes": 13677,
+          "equals_workspace": true,
+          "git_blob": "a2642d242b095241c8912a10ba2107ca6416785b",
+          "sha256": "a9334fead2767516abd30bf8967d18394af76c489bd9bb56a4e16c200c90ec9f"
+        }
+      }
+    },
+    {
+      "bytes": 8476,
+      "path": "tracks/bivariate-lanczos/theory/loss-regimes-node-propagator-measured.md",
+      "sha256": "1b20334cd1d0ca3b15e7f5565d6a01b4cb0ea5e68206206e30bdf6b182887910",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 7551,
+          "equals_workspace": false,
+          "git_blob": "e43bcc3212d5934fc3b8e23eadaf3d6bbae848a4",
+          "sha256": "dae0bf50b57fd6194079dc2545e64359ac316093dd1fbc2d7e0603363f59db73"
+        },
+        "original_candidate": {
+          "bytes": 7551,
+          "equals_workspace": false,
+          "git_blob": "e43bcc3212d5934fc3b8e23eadaf3d6bbae848a4",
+          "sha256": "dae0bf50b57fd6194079dc2545e64359ac316093dd1fbc2d7e0603363f59db73"
+        },
+        "response_candidate": {
+          "bytes": 8476,
+          "equals_workspace": true,
+          "git_blob": "11a8076c4eab6a048ff333bd5a464b54bee7fcf4",
+          "sha256": "1b20334cd1d0ca3b15e7f5565d6a01b4cb0ea5e68206206e30bdf6b182887910"
+        },
+        "rules_head": {
+          "bytes": 8476,
+          "equals_workspace": true,
+          "git_blob": "11a8076c4eab6a048ff333bd5a464b54bee7fcf4",
+          "sha256": "1b20334cd1d0ca3b15e7f5565d6a01b4cb0ea5e68206206e30bdf6b182887910"
+        }
+      }
+    },
+    {
+      "bytes": 6080,
+      "path": "tracks/bivariate-lanczos/theory/moment-matching-product-factorization-checkerboards.md",
+      "sha256": "8fefaafadafecfb42f7f9db960fc10543ea0d1bba40057670d4ab2a85f798030",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 6080,
+          "equals_workspace": true,
+          "git_blob": "6e0f42a968d6a71d23465288dfc1112852507e9c",
+          "sha256": "8fefaafadafecfb42f7f9db960fc10543ea0d1bba40057670d4ab2a85f798030"
+        },
+        "original_candidate": {
+          "bytes": 6080,
+          "equals_workspace": true,
+          "git_blob": "6e0f42a968d6a71d23465288dfc1112852507e9c",
+          "sha256": "8fefaafadafecfb42f7f9db960fc10543ea0d1bba40057670d4ab2a85f798030"
+        },
+        "response_candidate": {
+          "bytes": 6080,
+          "equals_workspace": true,
+          "git_blob": "6e0f42a968d6a71d23465288dfc1112852507e9c",
+          "sha256": "8fefaafadafecfb42f7f9db960fc10543ea0d1bba40057670d4ab2a85f798030"
+        },
+        "rules_head": {
+          "bytes": 6080,
+          "equals_workspace": true,
+          "git_blob": "6e0f42a968d6a71d23465288dfc1112852507e9c",
+          "sha256": "8fefaafadafecfb42f7f9db960fc10543ea0d1bba40057670d4ab2a85f798030"
+        }
+      }
+    },
+    {
+      "bytes": 7214,
+      "path": "tracks/bivariate-lanczos/theory/near-product-transfer-perturbation-bound.md",
+      "sha256": "398d73ed7b01bd986aaf4c4c78599b96cc3ea3077028d6c70bd1cc038e5a88e2",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 6070,
+          "equals_workspace": false,
+          "git_blob": "12261dbbfe682712625b6c86022a301bf34900b1",
+          "sha256": "7dd02ce2455ca553b8196ee771cad25f2a0f2e57f9e3c7d3c439dc30115cff29"
+        },
+        "original_candidate": {
+          "bytes": 6070,
+          "equals_workspace": false,
+          "git_blob": "12261dbbfe682712625b6c86022a301bf34900b1",
+          "sha256": "7dd02ce2455ca553b8196ee771cad25f2a0f2e57f9e3c7d3c439dc30115cff29"
+        },
+        "response_candidate": {
+          "bytes": 7214,
+          "equals_workspace": true,
+          "git_blob": "6e8ce0f6e5fb25744c577796c80c8271bf361885",
+          "sha256": "398d73ed7b01bd986aaf4c4c78599b96cc3ea3077028d6c70bd1cc038e5a88e2"
+        },
+        "rules_head": {
+          "bytes": 7214,
+          "equals_workspace": true,
+          "git_blob": "6e8ce0f6e5fb25744c577796c80c8271bf361885",
+          "sha256": "398d73ed7b01bd986aaf4c4c78599b96cc3ea3077028d6c70bd1cc038e5a88e2"
+        }
+      }
+    },
+    {
+      "bytes": 6154,
+      "path": "tracks/bivariate-lanczos/theory/node-row-representation-and-commutator-residual.md",
+      "sha256": "0c618867a1e2679e495e133a7326594e3cf9bb8208afad730e1bea94b1816023",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 6154,
+          "equals_workspace": true,
+          "git_blob": "7c1a4682b54ebffad79d1e194fa6aa57ace70248",
+          "sha256": "0c618867a1e2679e495e133a7326594e3cf9bb8208afad730e1bea94b1816023"
+        },
+        "original_candidate": {
+          "bytes": 6154,
+          "equals_workspace": true,
+          "git_blob": "7c1a4682b54ebffad79d1e194fa6aa57ace70248",
+          "sha256": "0c618867a1e2679e495e133a7326594e3cf9bb8208afad730e1bea94b1816023"
+        },
+        "response_candidate": {
+          "bytes": 6154,
+          "equals_workspace": true,
+          "git_blob": "7c1a4682b54ebffad79d1e194fa6aa57ace70248",
+          "sha256": "0c618867a1e2679e495e133a7326594e3cf9bb8208afad730e1bea94b1816023"
+        },
+        "rules_head": {
+          "bytes": 6154,
+          "equals_workspace": true,
+          "git_blob": "7c1a4682b54ebffad79d1e194fa6aa57ace70248",
+          "sha256": "0c618867a1e2679e495e133a7326594e3cf9bb8208afad730e1bea94b1816023"
+        }
+      }
+    },
+    {
+      "bytes": 7587,
+      "path": "tracks/bivariate-lanczos/theory/non-product-amplification-is-a-priori-measured.md",
+      "sha256": "4c48cb5b891a5e572576f761feba545ce5beeb52faf20bcb574ca064d2b8ffb7",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 6959,
+          "equals_workspace": false,
+          "git_blob": "9adbef7227778c8e99d4d663c176295899e254d7",
+          "sha256": "8decf8dafb97611b88a296ad0344f09e33225f7a0a26afa3cf493aa0096e6544"
+        },
+        "original_candidate": {
+          "bytes": 6959,
+          "equals_workspace": false,
+          "git_blob": "9adbef7227778c8e99d4d663c176295899e254d7",
+          "sha256": "8decf8dafb97611b88a296ad0344f09e33225f7a0a26afa3cf493aa0096e6544"
+        },
+        "response_candidate": {
+          "bytes": 7587,
+          "equals_workspace": true,
+          "git_blob": "9ba843e9a2ca7277ed9aa3e2d9afd2c93d7c9f0e",
+          "sha256": "4c48cb5b891a5e572576f761feba545ce5beeb52faf20bcb574ca064d2b8ffb7"
+        },
+        "rules_head": {
+          "bytes": 7587,
+          "equals_workspace": true,
+          "git_blob": "9ba843e9a2ca7277ed9aa3e2d9afd2c93d7c9f0e",
+          "sha256": "4c48cb5b891a5e572576f761feba545ce5beeb52faf20bcb574ca064d2b8ffb7"
+        }
+      }
+    },
+    {
+      "bytes": 6284,
+      "path": "tracks/bivariate-lanczos/theory/open-loop-coefficient-noise-estimates-fail.md",
+      "sha256": "788dfdab19558b0b2367dbde6c38df93f0a2073e7b57300454a3068e30c1b2bd",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 4939,
+          "equals_workspace": false,
+          "git_blob": "9906b7883135130211e2175706fb13b23c28ad6e",
+          "sha256": "c6a51ae6b6862b1b5a4c81a07070ea0d21246e78e1fe4a09061d8d5cf1396bf8"
+        },
+        "original_candidate": {
+          "bytes": 4939,
+          "equals_workspace": false,
+          "git_blob": "9906b7883135130211e2175706fb13b23c28ad6e",
+          "sha256": "c6a51ae6b6862b1b5a4c81a07070ea0d21246e78e1fe4a09061d8d5cf1396bf8"
+        },
+        "response_candidate": {
+          "bytes": 6284,
+          "equals_workspace": true,
+          "git_blob": "2f79e79898ef1d1bac767ed6db4a26a649a80628",
+          "sha256": "788dfdab19558b0b2367dbde6c38df93f0a2073e7b57300454a3068e30c1b2bd"
+        },
+        "rules_head": {
+          "bytes": 6284,
+          "equals_workspace": true,
+          "git_blob": "2f79e79898ef1d1bac767ed6db4a26a649a80628",
+          "sha256": "788dfdab19558b0b2367dbde6c38df93f0a2073e7b57300454a3068e30c1b2bd"
+        }
+      }
+    },
+    {
+      "bytes": 8965,
+      "path": "tracks/bivariate-lanczos/theory/product-measure-computed-propagator-transfer-conditional.md",
+      "sha256": "6d122bf4e03802398d72294f71b3867bb5c5a2846afff538884d8d14e7caaaaa",
+      "snapshots": {
+        "response_candidate": {
+          "bytes": 8965,
+          "equals_workspace": true,
+          "git_blob": "b07e97f1b14d07700d40089194e345d5f0404e58",
+          "sha256": "6d122bf4e03802398d72294f71b3867bb5c5a2846afff538884d8d14e7caaaaa"
+        },
+        "rules_head": {
+          "bytes": 8965,
+          "equals_workspace": true,
+          "git_blob": "b07e97f1b14d07700d40089194e345d5f0404e58",
+          "sha256": "6d122bf4e03802398d72294f71b3867bb5c5a2846afff538884d8d14e7caaaaa"
+        }
+      }
+    },
+    {
+      "bytes": 12540,
+      "path": "tracks/bivariate-lanczos/theory/product-measure-propagator-factorization.md",
+      "sha256": "f6561373d262f4b719bde7fe79dcace72782c3b1f8755fc618eeaec2eb7350e3",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 10409,
+          "equals_workspace": false,
+          "git_blob": "94f31646dd6794958177fd5698cb190f7ba620c6",
+          "sha256": "b304e439b9aa069af3865c7efe4e4ee6209cf03227ff1dbd74f16bf39e72a2f3"
+        },
+        "original_candidate": {
+          "bytes": 10409,
+          "equals_workspace": false,
+          "git_blob": "94f31646dd6794958177fd5698cb190f7ba620c6",
+          "sha256": "b304e439b9aa069af3865c7efe4e4ee6209cf03227ff1dbd74f16bf39e72a2f3"
+        },
+        "response_candidate": {
+          "bytes": 12540,
+          "equals_workspace": true,
+          "git_blob": "b06fbe70673bd8fd517b7bc51ee95b08d68926f7",
+          "sha256": "f6561373d262f4b719bde7fe79dcace72782c3b1f8755fc618eeaec2eb7350e3"
+        },
+        "rules_head": {
+          "bytes": 12540,
+          "equals_workspace": true,
+          "git_blob": "b06fbe70673bd8fd517b7bc51ee95b08d68926f7",
+          "sha256": "f6561373d262f4b719bde7fe79dcace72782c3b1f8755fc618eeaec2eb7350e3"
+        }
+      }
+    },
+    {
+      "bytes": 4606,
+      "path": "tracks/bivariate-lanczos/theory/r04-failed-scaling-and-predictor-hypotheses.md",
+      "sha256": "4956585b3509026815ca5117e4c9d1c7d4186220da026d4545eb1ae78dbc06f4",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 4019,
+          "equals_workspace": false,
+          "git_blob": "8049e704647fadcea5d28d6c31df70ff8dc8152e",
+          "sha256": "66623728ff6f85a269cd08032722248e016be8a470fd27f00ce8a8565169fee5"
+        },
+        "original_candidate": {
+          "bytes": 4019,
+          "equals_workspace": false,
+          "git_blob": "8049e704647fadcea5d28d6c31df70ff8dc8152e",
+          "sha256": "66623728ff6f85a269cd08032722248e016be8a470fd27f00ce8a8565169fee5"
+        },
+        "response_candidate": {
+          "bytes": 4606,
+          "equals_workspace": true,
+          "git_blob": "a939cb4081a228a46fa7c4c3596321ef7f746c18",
+          "sha256": "4956585b3509026815ca5117e4c9d1c7d4186220da026d4545eb1ae78dbc06f4"
+        },
+        "rules_head": {
+          "bytes": 4606,
+          "equals_workspace": true,
+          "git_blob": "a939cb4081a228a46fa7c4c3596321ef7f746c18",
+          "sha256": "4956585b3509026815ca5117e4c9d1c7d4186220da026d4545eb1ae78dbc06f4"
+        }
+      }
+    },
+    {
+      "bytes": 15620,
+      "path": "tracks/bivariate-lanczos/theory/ritz-residual-governance-fails-off-product-supports.md",
+      "sha256": "b1515811af69d77430dbeb6b73187f7c4771ac0df0f8b8ade5c80dcf42ef95f9",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 6549,
+          "equals_workspace": false,
+          "git_blob": "5a4f875ca62da65f92055f0cd006b2d983726ae8",
+          "sha256": "5388763d07fb877c4a9f04b52621a536817a2a27b802ea432f511aa19f5b27b3"
+        },
+        "original_candidate": {
+          "bytes": 6549,
+          "equals_workspace": false,
+          "git_blob": "5a4f875ca62da65f92055f0cd006b2d983726ae8",
+          "sha256": "5388763d07fb877c4a9f04b52621a536817a2a27b802ea432f511aa19f5b27b3"
+        },
+        "response_candidate": {
+          "bytes": 15620,
+          "equals_workspace": true,
+          "git_blob": "fd910d30117019f18ca8913d04c79fb8e92c1978",
+          "sha256": "b1515811af69d77430dbeb6b73187f7c4771ac0df0f8b8ade5c80dcf42ef95f9"
+        },
+        "rules_head": {
+          "bytes": 15620,
+          "equals_workspace": true,
+          "git_blob": "fd910d30117019f18ca8913d04c79fb8e92c1978",
+          "sha256": "b1515811af69d77430dbeb6b73187f7c4771ac0df0f8b8ade5c80dcf42ef95f9"
+        }
+      }
+    },
+    {
+      "bytes": 6404,
+      "path": "tracks/bivariate-lanczos/theory/selection-and-truncation-both-matter-measured.md",
+      "sha256": "eb2ec6db92211e1f95dd44ea17c35fde9514368bea0e991bc09da706472cd397",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 6404,
+          "equals_workspace": true,
+          "git_blob": "1398377ab66fff981e1df38268fb661396dda8e9",
+          "sha256": "eb2ec6db92211e1f95dd44ea17c35fde9514368bea0e991bc09da706472cd397"
+        },
+        "original_candidate": {
+          "bytes": 6404,
+          "equals_workspace": true,
+          "git_blob": "1398377ab66fff981e1df38268fb661396dda8e9",
+          "sha256": "eb2ec6db92211e1f95dd44ea17c35fde9514368bea0e991bc09da706472cd397"
+        },
+        "response_candidate": {
+          "bytes": 6404,
+          "equals_workspace": true,
+          "git_blob": "1398377ab66fff981e1df38268fb661396dda8e9",
+          "sha256": "eb2ec6db92211e1f95dd44ea17c35fde9514368bea0e991bc09da706472cd397"
+        },
+        "rules_head": {
+          "bytes": 6404,
+          "equals_workspace": true,
+          "git_blob": "1398377ab66fff981e1df38268fb661396dda8e9",
+          "sha256": "eb2ec6db92211e1f95dd44ea17c35fde9514368bea0e991bc09da706472cd397"
+        }
+      }
+    },
+    {
+      "bytes": 4892,
+      "path": "tracks/bivariate-lanczos/theory/support-shape-does-not-classify-loss-regime.md",
+      "sha256": "d7bf176b192c746573d3c94cd93daf905b0cc83f85d578b89279201754b4bc02",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 4282,
+          "equals_workspace": false,
+          "git_blob": "26d5b074684527f3eae5edd2300cec0f65477b17",
+          "sha256": "0a689dc93140d3d6bc0a5181f8f2fdabaa0a2fc83a2df7f6b84ca4e8f0e0017a"
+        },
+        "original_candidate": {
+          "bytes": 4282,
+          "equals_workspace": false,
+          "git_blob": "26d5b074684527f3eae5edd2300cec0f65477b17",
+          "sha256": "0a689dc93140d3d6bc0a5181f8f2fdabaa0a2fc83a2df7f6b84ca4e8f0e0017a"
+        },
+        "response_candidate": {
+          "bytes": 4892,
+          "equals_workspace": true,
+          "git_blob": "7f0ffd4bf1c8a968d9496761d8d45285eb3066fa",
+          "sha256": "d7bf176b192c746573d3c94cd93daf905b0cc83f85d578b89279201754b4bc02"
+        },
+        "rules_head": {
+          "bytes": 4892,
+          "equals_workspace": true,
+          "git_blob": "7f0ffd4bf1c8a968d9496761d8d45285eb3066fa",
+          "sha256": "d7bf176b192c746573d3c94cd93daf905b0cc83f85d578b89279201754b4bc02"
+        }
+      }
+    },
+    {
+      "bytes": 9531,
+      "path": "tracks/bivariate-lanczos/theory/window-coefficient-pattern-exact.md",
+      "sha256": "f5110d68c4894fcbfef3718ecf677eafcc2a41ebe79cb3ef35c19b14a1be8f99",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 9531,
+          "equals_workspace": true,
+          "git_blob": "32f11795324d2d2765d8aed928e485d711dac43b",
+          "sha256": "f5110d68c4894fcbfef3718ecf677eafcc2a41ebe79cb3ef35c19b14a1be8f99"
+        },
+        "original_candidate": {
+          "bytes": 9531,
+          "equals_workspace": true,
+          "git_blob": "32f11795324d2d2765d8aed928e485d711dac43b",
+          "sha256": "f5110d68c4894fcbfef3718ecf677eafcc2a41ebe79cb3ef35c19b14a1be8f99"
+        },
+        "response_candidate": {
+          "bytes": 9531,
+          "equals_workspace": true,
+          "git_blob": "32f11795324d2d2765d8aed928e485d711dac43b",
+          "sha256": "f5110d68c4894fcbfef3718ecf677eafcc2a41ebe79cb3ef35c19b14a1be8f99"
+        },
+        "rules_head": {
+          "bytes": 9531,
+          "equals_workspace": true,
+          "git_blob": "32f11795324d2d2765d8aed928e485d711dac43b",
+          "sha256": "f5110d68c4894fcbfef3718ecf677eafcc2a41ebe79cb3ef35c19b14a1be8f99"
+        }
+      }
+    },
+    {
+      "bytes": 17439,
+      "path": "tracks/bivariate-lanczos/theory/window-recurrence-row-selection-of-jacobi-pencil.md",
+      "sha256": "81667e10def6423dd0deb139797d72734b1555aa9f126e4e22a8210ccc7c9e02",
+      "snapshots": {
+        "audit01_publication": {
+          "bytes": 6917,
+          "equals_workspace": false,
+          "git_blob": "9195a2f491abfac56b6447f4fd7a8e350aa23119",
+          "sha256": "75c3ea0e34de612cfb17362c603a56ea4419323742538d7275a6c33026c77ecd"
+        },
+        "original_candidate": {
+          "bytes": 6917,
+          "equals_workspace": false,
+          "git_blob": "9195a2f491abfac56b6447f4fd7a8e350aa23119",
+          "sha256": "75c3ea0e34de612cfb17362c603a56ea4419323742538d7275a6c33026c77ecd"
+        },
+        "response_candidate": {
+          "bytes": 17439,
+          "equals_workspace": true,
+          "git_blob": "695a7600695c1ddbe88264edc121b07d20a7e03c",
+          "sha256": "81667e10def6423dd0deb139797d72734b1555aa9f126e4e22a8210ccc7c9e02"
+        },
+        "rules_head": {
+          "bytes": 17439,
+          "equals_workspace": true,
+          "git_blob": "695a7600695c1ddbe88264edc121b07d20a7e03c",
+          "sha256": "81667e10def6423dd0deb139797d72734b1555aa9f126e4e22a8210ccc7c9e02"
+        }
+      }
+    }
+  ],
+  "workspace": "/workspace/padua_research"
+}

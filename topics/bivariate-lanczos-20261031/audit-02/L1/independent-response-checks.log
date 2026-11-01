@@ -1,0 +1,8 @@
+T116: exact product probability measure on {+-a}^2, n=1, node (a,a)
+{"B_delta": 4.0804, "B_delta_exact": "10201/2500", "Neumann_bounds_valid": true, "a": "1/100", "beta_relative_error": "1/100", "inverse_norm": 100.0, "kappa_delta": 0.0101, "kappa_delta_exact": "101/10000", "proposed_B_bound_negative": true}
+{"B_delta": 1073741824.0, "B_delta_exact": "1461501637330902918203687250567922248914281955329/1361129467683753853853498429727072845824", "Neumann_bounds_valid": true, "a": "1/1208925819614629174706176", "beta_relative_error": "1/4503599627370496", "inverse_norm": 1.2089258196146289e+24, "kappa_delta": 2.220446049250313e-16, "kappa_delta_exact": "1208925819614629174706177/5444517870735015415413993718908291383296", "proposed_B_bound_negative": true}
+N101(a1): independent exact-decimal reanalysis of stored JSON; no recurrence rerun
+{"in_factor3_band": 0, "max_identity": ["tensorcheb41_rot0.3", "bj", 28, "res_nk"], "max_ratio": 102903934257632.89, "min_identity": ["Lshape_grid61_rot0.3", "hl", 12, "res_y"], "min_ratio": 102.17261558818547, "simax_own_max": 53466852253703.88, "simax_own_min": 149.97509868435964, "triples": 550, "unit": "2^-52"}
+{"in_factor3_band": 0, "max_identity": ["tensorcheb41_rot0.3", "bj", 28, "res_nk"], "max_ratio": 205807868515265.78, "min_identity": ["annulus_rand3000", "hl", 12, "res_y"], "min_ratio": 44.33847426641988, "simax_own_max": 106933704507407.77, "simax_own_min": 299.9501973687193, "triples": 570, "unit": "2^-53"}
+{"growth_decades_per4_max": 4.4108859361111605, "growth_decades_per4_min": 1.3035727042775611, "rotation_max_relative_before_loss1e8": 2.2925642177871205e-12, "rotation_max_relative_through24": 8.043876965145267e-06}
+ALL INDEPENDENT CHECKS PASSED

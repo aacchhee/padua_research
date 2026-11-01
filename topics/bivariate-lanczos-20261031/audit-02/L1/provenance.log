@@ -1,0 +1,8 @@
+Wrote topics/bivariate-lanczos-20261031/audit-02/L1/manifest.json
+AGENTS.md 60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60 {'original_candidate': True, 'audit01_publication': True, 'response_candidate': True, 'rules_head': True}
+agents/WORKFLOW.md b1c1c14c83e02bf38283159f81ec278ae336ab56c95d0c026b9ada3314d1ffaa {'original_candidate': True, 'audit01_publication': True, 'response_candidate': True, 'rules_head': True}
+agents/codex/CODEX.md 28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b {'original_candidate': True, 'audit01_publication': True, 'response_candidate': True, 'rules_head': True}
+state/IDEAS.md 12ba5f8eccfc943faebee07b83ea37b995f0b89244fa3b9b81a6f88051ad931d {'original_candidate': True, 'audit01_publication': True, 'response_candidate': True, 'rules_head': True}
+literature/INDEX.md a9fdbfeb7d0a5b485c84e3e9763739e8f8597f118a6e76bf1dcf76ea8aa28a15 {'original_candidate': True, 'audit01_publication': True, 'response_candidate': True, 'rules_head': True}
+All recorded sources match rules-head bytes. Only response-01 differs from the scientific candidate:
+Metadata-only line70 inserts candidate SHA and later-commit description; scientific L1 sources unchanged.
