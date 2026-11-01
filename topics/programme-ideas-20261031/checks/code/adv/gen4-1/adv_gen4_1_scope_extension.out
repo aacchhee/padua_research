@@ -1,0 +1,20 @@
+  n=24 th=0.5 k=12 tol=1e-06: #sat=0 ; of these in {a(x)+a(y)<=th}: 0, in {max<=th}: 0; size of predicted sets: sum-region 12 nodes, max-region 16 nodes
+  n=24 th=0.5 k=12 tol=1e-03: #sat=0 ; of these in {a(x)+a(y)<=th}: 0, in {max<=th}: 0; size of predicted sets: sum-region 12 nodes, max-region 16 nodes
+  n=24 th=0.5: corner 1-s = 7.92e-02, corner joint residual r = 9.38e-02 (bound 5.63e-01); lemma violations 0; max r/sqrt(1-s) = 0.33; generator-style joint converged pairs at tol 1e-6/1e-3/1e-2: 0/0/0; #nodes with r < 1e-2: 1, with r < 1e-3: 1
+  n=24 th=0.75 k=18 tol=1e-06: #sat=0 ; of these in {a(x)+a(y)<=th}: 0, in {max<=th}: 0; size of predicted sets: sum-region 36 nodes, max-region 100 nodes
+  n=24 th=0.75 k=18 tol=1e-03: #sat=0 ; of these in {a(x)+a(y)<=th}: 0, in {max<=th}: 0; size of predicted sets: sum-region 36 nodes, max-region 100 nodes
+  n=24 th=0.75: corner 1-s = 1.70e-03, corner joint residual r = 1.48e-02 (bound 8.24e-02); lemma violations 0; max r/sqrt(1-s) = 0.36; generator-style joint converged pairs at tol 1e-6/1e-3/1e-2: 0/0/2; #nodes with r < 1e-2: 1, with r < 1e-3: 1
+  n=24 th=0.9 k=22 tol=1e-06: #sat=0 ; of these in {a(x)+a(y)<=th}: 0, in {max<=th}: 0; size of predicted sets: sum-region 56 nodes, max-region 196 nodes
+  n=24 th=0.9 k=22 tol=1e-03: #sat=4 ; of these in {a(x)+a(y)<=th}: 4, in {max<=th}: 4; size of predicted sets: sum-region 56 nodes, max-region 196 nodes
+  n=24 th=0.9: corner 1-s = 4.72e-05, corner joint residual r = 2.54e-03 (bound 1.37e-02); lemma violations 0; max r/sqrt(1-s) = 0.37; generator-style joint converged pairs at tol 1e-6/1e-3/1e-2: 0/2/6; #nodes with r < 1e-2: 5, with r < 1e-3: 1
+  elapsed 0.1 s
+  n=40 th=0.5 k=20 tol=1e-06: #sat=0 ; of these in {a(x)+a(y)<=th}: 0, in {max<=th}: 0; size of predicted sets: sum-region 20 nodes, max-region 36 nodes
+  n=40 th=0.5 k=20 tol=1e-03: #sat=0 ; of these in {a(x)+a(y)<=th}: 0, in {max<=th}: 0; size of predicted sets: sum-region 20 nodes, max-region 36 nodes
+  n=40 th=0.5: corner 1-s = 1.32e-02, corner joint residual r = 3.62e-02 (bound 2.29e-01); lemma violations 0; max r/sqrt(1-s) = 0.32; generator-style joint converged pairs at tol 1e-6/1e-3/1e-2: 0/0/0; #nodes with r < 1e-2: 1, with r < 1e-3: 1
+  n=40 th=0.75 k=30 tol=1e-06: #sat=0 ; of these in {a(x)+a(y)<=th}: 0, in {max<=th}: 0; size of predicted sets: sum-region 64 nodes, max-region 196 nodes
+  n=40 th=0.75 k=30 tol=1e-03: #sat=12 ; of these in {a(x)+a(y)<=th}: 12, in {max<=th}: 12; size of predicted sets: sum-region 64 nodes, max-region 196 nodes
+  n=40 th=0.75: corner 1-s = 2.14e-05, corner joint residual r = 1.63e-03 (bound 9.25e-03); lemma violations 0; max r/sqrt(1-s) = 0.35; generator-style joint converged pairs at tol 1e-6/1e-3/1e-2: 0/2/10; #nodes with r < 1e-2: 5, with r < 1e-3: 1
+  n=40 th=0.9 k=36 tol=1e-06: #sat=4 ; of these in {a(x)+a(y)<=th}: 4, in {max<=th}: 4; size of predicted sets: sum-region 116 nodes, max-region 576 nodes
+  n=40 th=0.9 k=36 tol=1e-03: #sat=24 ; of these in {a(x)+a(y)<=th}: 24, in {max<=th}: 24; size of predicted sets: sum-region 116 nodes, max-region 576 nodes
+  n=40 th=0.9: corner 1-s = 1.08e-07, corner joint residual r = 1.19e-04 (bound 6.58e-04); lemma violations 0; max r/sqrt(1-s) = 0.36; generator-style joint converged pairs at tol 1e-6/1e-3/1e-2: 0/8/28; #nodes with r < 1e-2: 25, with r < 1e-3: 5
+  elapsed 0.8 s
