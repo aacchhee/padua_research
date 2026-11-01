@@ -47,7 +47,7 @@ The fixed graded order, structural patterns, exactly N nodes, Π_n-unisolvence, 
 
 ## Status by part
 
-Overall status: **PROVED** (written all-n proof; Claude audit pending).
+Overall status: **PROVED** (written all-n proof; Claude audit-01 ACCEPTED; minor wording dispositions in response-01.md).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -71,17 +71,17 @@ python topics/padua-proof-attempts-20261101/code/b5_exact_instances.py > topics/
 
 Producer code uses only exact integers and rationals in SymPy; it builds nodes (t,t^(n+1)), t=1,…,N, with weights 1/N. The rational unit-leading orthogonal basis is obtained by LDLᵀ. Its multiplication matrices A_x,A_y are checked for exact commutation, D-self-adjointness, structural support, positive diagonal norms and unit monic pivots. Diagonal similarity converts them to the real symmetric positive-pivot pair without changing zero positions or ranks, as proved below. The code computes the rank of the **reduced rational constraint matrix** consisting of rows 3,…,N−1 of V⁻¹, and checks that its kernel is exactly the node values of span{1,x,y}. The full original commutator-map rank is deduced by the proved equivalence below; it is not reported as a directly computed radical-valued matrix rank. Executed results, versions and hashes appear in the receipt and attempt note; independent rerun is recorded separately by the orchestrator.
 
-The mathematical proof in this record does not depend on finite computation.
+The mathematical proof in this record does not depend on finite computation. In particular, the last N−3 rows of any invertible V⁻¹ necessarily have rank N−3; that reduced-rank calculation is a consistency check, not an independent test of the commutant dimension. The rational witness checks establish unisolvence, positive norms/pivots, pattern and commutation; dimension three follows from the all-n proof. Claude audit-01 additionally computed full-system nullities by a separate checker (`../audit-support/claude-audit-01/aud_b5.py`), in its stated finite scope.
 
 Developer execution completed with Python 3.12.14, SymPy 1.14.0, no seeds or numerical tolerances:
 
-| n | N | Symmetric P_y variables | Computed reduced rank | Full map rank by proof | Commutant dimension |
+| n | N | Symmetric P_y variables | Computed reduced rank | Full map rank by proof | Commutant dimension (by the proof) |
 |---|---|---|---|---|---|
-| 2 | 6 | 17 | 3 | 14 | 3 |
-| 3 | 10 | 36 | 7 | 33 | 3 |
-| 4 | 15 | 65 | 12 | 62 | 3 |
-| 5 | 21 | 106 | 18 | 103 | 3 |
-| 6 | 28 | 161 | 25 | 158 | 3 |
+| 2 | 6 | 17 | 3 | 14 | 3 (by the proof) |
+| 3 | 10 | 36 | 7 | 33 | 3 (by the proof) |
+| 4 | 15 | 65 | 12 | 62 | 3 (by the proof) |
+| 5 | 21 | 106 | 18 | 103 | 3 (by the proof) |
+| 6 | 28 | 161 | 25 | 158 | 3 (by the proof) |
 
 All exact pair checks passed. Script SHA-256: `fb56be6166ce10ecae213cd1c4e169594a52b0a922058e52934b88ccd0edf18b`. Developer receipt `../outputs/b5_exact_instances.json` is 5,327 bytes, SHA-256 `251496a1a117054608dd55d32c7dfa5441c5af34cf7cb00d1f99ec0e9e80da02`.
 
@@ -156,7 +156,7 @@ B5 is closed for every n≥2, with a sufficient pointwise condition stronger and
 
 ## Open items
 
-Required Claude audit and independent exact-run record. No all-n stretch remains for B5. No stability, coordinate-collision classification or different-pattern theorem is claimed. Source changes and final IDs remain deferred under the user's ownership restriction.
+Claude audit-01 ACCEPTED; the completed independent exact-run record is in independent-checks.md. No all-n stretch remains for B5. No stability, coordinate-collision classification or different-pattern theorem is claimed. Source changes and final IDs remain deferred under the user's ownership restriction.
 
 ## History
 

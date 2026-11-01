@@ -193,13 +193,13 @@
   "topic_artifacts": [
     {
       "path": "topics/padua-proof-attempts-20261101/attempts/T-A1.md",
-      "bytes": 3399,
-      "sha256": "110ed9c8ded82a9e65e2d243a22cfaddcaf457d81d70e37fe635745e3ae75ebd"
+      "bytes": 3442,
+      "sha256": "81e598bfd9e6c3bd7988a19f035da9fa383e52407aa6426c515187c5f9db2cd3"
     },
     {
       "path": "topics/padua-proof-attempts-20261101/attempts/T-A5-partial.md",
-      "bytes": 6706,
-      "sha256": "61267de23956454a0855219f1c23b382362e46c89f4fba25b44c05eff5642db8"
+      "bytes": 6920,
+      "sha256": "73a6d623ceddd56d0026ec942232240cb7f259b3a5ad6c34751139bf0465cf1e"
     },
     {
       "path": "topics/padua-proof-attempts-20261101/attempts/T-B1-optional.md",
@@ -208,8 +208,53 @@
     },
     {
       "path": "topics/padua-proof-attempts-20261101/attempts/T-B5.md",
-      "bytes": 3903,
-      "sha256": "38f115c2bdb806557cf0c1648aa814679036df4c70f63f374edd430252925cfc"
+      "bytes": 4241,
+      "sha256": "a774ef53cdc85e0a6dd7b1c43096cf23112e7d72af4c8895506f20e6825706a0"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/audit-01.md",
+      "bytes": 14965,
+      "sha256": "f651c118d8693c046ce09bbd332fa74cfe287c733fc3bb8aa78fac25e3ea0e50"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/audit-support/claude-audit-01/README.md",
+      "bytes": 686,
+      "sha256": "d65538afc95ded078cfe90fd095e1f1604f569b173154e55e8e5eef11e651e75"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/audit-support/claude-audit-01/SHA256SUMS.txt",
+      "bytes": 561,
+      "sha256": "dfbfc4f88f56c3f27f61467400414141d7ef4444c06c7ee37b572c996430a5ca"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/audit-support/claude-audit-01/aud_a1.py",
+      "bytes": 2579,
+      "sha256": "d0309e9727ed541cf7ccbcf9b4e4ae6c5a41d15009aa0a1823b1f288c3f42b22"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/audit-support/claude-audit-01/aud_a5.py",
+      "bytes": 5431,
+      "sha256": "5e84761bb5ba87922bf8f36b72112c9ac1004decf79f3fce691c5acf361d8aea"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/audit-support/claude-audit-01/aud_b5.py",
+      "bytes": 5033,
+      "sha256": "f2cb2be9166fc8e358075af5080adad037817edbec50708f4c311ddc0e1ac5c8"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/audit-support/claude-audit-01/outputs/aud_a1.json",
+      "bytes": 1140,
+      "sha256": "c51f80e93819bf08c8b23ca4cf3247116bdb62730b82c03d5c4712e83d8fe9e5"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/audit-support/claude-audit-01/outputs/aud_a5.json",
+      "bytes": 1167,
+      "sha256": "da6ae77a4bb6fc3c0714d43b9ab4b094dbc06a7d4adb6656e61432539edf3aff"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/audit-support/claude-audit-01/outputs/aud_b5.out",
+      "bytes": 2270,
+      "sha256": "31c903beeb461ed0aad5b607b4c1887bb3203e905b78b20e6499678eddaa7671"
     },
     {
       "path": "topics/padua-proof-attempts-20261101/code/a1_exact_check.py",
@@ -297,26 +342,41 @@
       "sha256": "bf1c8b13b4fc18a4a9a9f046825610188cce19c6cd317340da54c34673385fdf"
     },
     {
+      "path": "topics/padua-proof-attempts-20261101/pr-prep.md",
+      "bytes": 3980,
+      "sha256": "9bceffd5799b515cb2bc10fed3e44c0b12848c70b237f4eb0766f8d4e0690582"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/preparation-checks.json",
+      "bytes": 1280,
+      "sha256": "97713206bfdc4a1009a689b42fad0578e303a31dca0929516c8ad47a7da11861"
+    },
+    {
       "path": "topics/padua-proof-attempts-20261101/proposed-record-changes.md",
-      "bytes": 13065,
-      "sha256": "3a687a30a589bcc4120f96b3173b0562a55fa5f75fa04add0e81872bca964c5e"
+      "bytes": 18971,
+      "sha256": "29e2133dd2a2983de929f8da48340f89880b96aa3d9000ae926834b7e47b9c62"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/response-01.md",
+      "bytes": 5250,
+      "sha256": "2c19ca7a7a0491b5160c96d36df19eb7623bdaba0053a6ea176c432aab3383f7"
     },
     {
       "path": "topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-01-padua-corner.md",
-      "bytes": 10374,
-      "sha256": "07f596870c05388ea0219aac3309bd5b4c651e3c9d5390d9ae7b381b5c35af64"
+      "bytes": 10381,
+      "sha256": "d32db014897175b6c14954af7a6ab601d193535e2c9fdeb15730db1420b6f24f"
     },
     {
       "path": "topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-02-generic-commutant.md",
-      "bytes": 14153,
-      "sha256": "cd8afff1f61099974c2397045005a282848aa2441d186ebb0c78ca5a7666ff82"
+      "bytes": 14833,
+      "sha256": "99c0aee57ec17cc125c182346710a1894094b673f0ae0719ecd61da0e400b0b0"
     },
     {
       "path": "topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-03-degenerate-maxima.md",
-      "bytes": 16372,
-      "sha256": "24bf84738f59ca3090e0179bac324f9b8f8644b5c747ba672ed79f68f04a81ad"
+      "bytes": 16526,
+      "sha256": "c5a30a0922604ec2545233bc91d7a05efcac55ff424d236a8a9eed4907ecf466"
     }
   ],
-  "generated_output_bytes": 36856,
+  "generated_output_bytes": 41433,
   "limitations": "No external Windows delivery or Claude audit attested."
 }

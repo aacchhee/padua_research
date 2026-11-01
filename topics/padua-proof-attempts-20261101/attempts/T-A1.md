@@ -2,7 +2,7 @@
 
 - Rules/base: `cadb35066160e466cb1704b9791ad6f374446422`.
 - Developer: Codex `/root/a1_develop`, requested gpt-6.1-sol xhigh; resolved runtime metadata unexposed.
-- Result: **PROVED**, `PD-T?proof-attempts-codex-01`, [written proof](../theory/proof-attempts-codex-01-padua-corner.md); required Claude audit pending.
+- Result: **PROVED**, `PD-T?proof-attempts-codex-01`, [written proof](../theory/proof-attempts-codex-01-padua-corner.md); Claude audit-01 ACCEPTED; response-01.md records the minor dispositions.
 - Stop: done criterion reached; no exact mismatch, no PD-N.
 
 ## Gate and route, recorded scope
@@ -27,7 +27,7 @@ No mathematical route failed. A naive direct copy of a “first-family” citati
 
 ## Runs needed
 
-- Required Claude (Opus 5.5 xhigh) audit of the written proof and exact-check scope at the orchestrator's final SHA.
-- Independent exact regression receipt, if not yet present in the orchestrator's independent-check record.
+- Claude audit-01 accepted the proof and exact-check scope; PR integration remains in pr-prep.md.
+- Independent exact regression receipt is complete in independent-checks.md.
 
-Next: `Claude (Opus 5.5 xhigh): Audit codex/padua-proof-attempts-20261101.`
+Next: `Codex (gpt-6.1-sol medium): Continue codex/padua-proof-attempts-20261101 — reconcile PR #9 after PR #6 integration.`

@@ -27,8 +27,6 @@ the nonzero-cardinal signs are constant, the excluded cardinal is nonpositive, a
 
 Thus each z_σ is the unique critical point and strict maximum of λ_3 on its disc. This rigorously covers the decimal radius `.002` neighbourhoods of both floating seeds recorded by the frozen search, without identifying those floating seeds with exact roots.
 
-The reconstructed n=3,…,8 execution has exactly two `degenerate_max` calls, both accepted at n=3 with Z={6}; there are none for n=4,…,8. That trace is **MEASURED execution evidence**, not a proved search-completeness statement. This record's mathematical assertion concerns the two exact representatives and their local neighbourhoods.
-
 ## Definitions
 
 The square coordinates are x=cos θ,y=cos φ. All gradients and Hessians in the statement are in the angle coordinates. Write L_b(x,y) for the polynomial cardinal functions, and use the same notation for their compositions with the cosine map when taking angle derivatives. The background is
@@ -46,7 +44,7 @@ Precisely the degree-three nodes, cardinal ordering and angle coordinates above.
 
 ## Status by part
 
-Overall status: **PROVED** (written local proof, exact/rigorous committed checker and evidence, actual independent rerun; required Claude audit pending).
+Overall status: **PROVED** (written local proof, exact/rigorous committed checker and evidence, actual independent rerun; Claude audit-01 ACCEPTED).
 
 | Mathematical part | Status / evidence |
 |---|---|
@@ -63,6 +61,8 @@ The three local mathematical parts form this one substantive result. Exact polyn
 `PD-T?proof-attempts-codex-01` gives unisolvence/cardinal normalization for the precise node family, if needed for the interpolation interpretation. The exact checker independently constructs the degree-three monomial Vandermonde inverse, so it does not import the numerical Padua kernel evaluator or an unproved source cardinal formula. Elementary cosine differentiation, the mean-value theorem, an alternating Taylor remainder and the symmetric-matrix row-sum eigenvalue bound supply the interval reduction.
 
 ## Checks
+
+The reconstructed n=3,…,8 execution has exactly two `degenerate_max` calls, both accepted at n=3 with Z={6}; there are none for n=4,…,8. That trace is **MEASURED execution evidence**, not a proved search-completeness statement. This record's mathematical assertion concerns the two exact representatives and their local neighbourhoods.
 
 From the repository root, root reconstructs every call by subclassing the frozen certifier and logging the existing method without changing its inputs or source:
 
@@ -262,7 +262,7 @@ This is the local degenerate-point obligation for the two decisions reconstructe
 
 ## Open items
 
-Required Claude audit remains pending. The four other A5 obligations remain unresolved: (1) a proved finite reduction covering all maximum types and all search regions; (3) rigorous per-pattern root enclosures/exclusions on the whole region actually discarded; (4) all consistent sign-pattern decisions without the early return after one accepted root; (5) exact crease-crossing treatment replacing the 1e−10 near-coincidence rule. Global rigorous arithmetic and an independent counting checker are also still needed. The source's six candidate counts remain MEASURED.
+Claude audit-01 is ACCEPTED. Obligation (2) is discharged for the `degenerate_max` path only; rigorous versions of the (D) corner and (E) edge-node certificates in `t3_degenerate.py` remain needed. The four other A5 obligations remain unresolved: (1) a proved finite reduction covering all maximum types and all search regions; (3) rigorous per-pattern root enclosures/exclusions on the whole region actually discarded; (4) all consistent sign-pattern decisions without the early return after one accepted root; (5) exact crease-crossing treatment replacing the 1e−10 near-coincidence rule. Global rigorous arithmetic and an independent counting checker are also still needed. The source's six candidate counts remain MEASURED.
 
 ## History
 
