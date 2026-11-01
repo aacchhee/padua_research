@@ -5,6 +5,8 @@
     "part1_and_rules": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
     "part1_audit_arrived": "95279b833bca5967fcf47c1b71a56ff622185b4e",
     "part1_response_arrived": "7b8884a2f98518784ff3698dd2f3f9c49c9cdd62",
+    "current_main_and_rules": "e24b21fe43cdd090f6dfac269147e75185f04c5b",
+    "programme_final": "b46b4dea18ce2c933489a211b0b6819dfd32ca70",
     "main_observed": "9739a0c56b7a3976422ce60a8441bfbbfd6554df",
     "programme": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
     "part1_programme": "cadb35066160e466cb1704b9791ad6f374446422",
@@ -895,6 +897,102 @@
       "bytes": 8584
     },
     {
+      "source": "programme_final",
+      "commit": "b46b4dea18ce2c933489a211b0b6819dfd32ca70",
+      "path": "topics/programme-ideas-20261031/OPEN_TARGETS.md",
+      "git_blob": "61f53d6468166a1f4ecae4ed5c4c6ea7d8412446",
+      "sha256": "147501520020a9d718b6e90d413bd785694edf85e563d2e85582b4fb207d1f06",
+      "bytes": 17280
+    },
+    {
+      "source": "programme_final",
+      "commit": "b46b4dea18ce2c933489a211b0b6819dfd32ca70",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-01-finite-favard-pattern-pairs.md",
+      "git_blob": "e84fea46809be6220dc28f1dcaca51dbc09900c6",
+      "sha256": "4b0d8996fad1b5c21be244bca0df7cb2a39fc5ae70a651d75ce2f69cc5d38f2e",
+      "bytes": 11862
+    },
+    {
+      "source": "programme_final",
+      "commit": "b46b4dea18ce2c933489a211b0b6819dfd32ca70",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-02-joint-ritz-saturation-bound.md",
+      "git_blob": "8d8a2cd8752459709f9e6920c86bf07b0bfe04a1",
+      "sha256": "8401eb0b1efd9bd2c57f70632131a77c75d5a9368a6235de7b47e1139aa833d6",
+      "bytes": 5652
+    },
+    {
+      "source": "programme_final",
+      "commit": "b46b4dea18ce2c933489a211b0b6819dfd32ca70",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-03-compressed-commutator-identity.md",
+      "git_blob": "c715bb221882778c20aaa159fa091fd5cec9b613",
+      "sha256": "f603da3a21a3711eb6a1279d2f000861bcefe500a1dcb13cf82dbacd38125f86",
+      "bytes": 4474
+    },
+    {
+      "source": "programme_final",
+      "commit": "b46b4dea18ce2c933489a211b0b6819dfd32ca70",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-04-padua-corner-expansion.md",
+      "git_blob": "c1618ed94f5aa68be6183807d5c417630a291b0c",
+      "sha256": "5b383a3915e20191121d1167b33f35fd2c79a7a87f536aa6f332fe4a100bf4bd",
+      "bytes": 5612
+    },
+    {
+      "source": "programme_final",
+      "commit": "b46b4dea18ce2c933489a211b0b6819dfd32ca70",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-05-padua-corner-argmax.md",
+      "git_blob": "e05cbcee66ebf307d53a540979dd413ab5c54aeb",
+      "sha256": "292eb99703eb11b0c6f55d2b9806c1abe39191167f84ac5caf66372e4fd2cf5b",
+      "bytes": 3165
+    },
+    {
+      "source": "programme_final",
+      "commit": "b46b4dea18ce2c933489a211b0b6819dfd32ca70",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-06-padua-lebesgue-maxima-counts.md",
+      "git_blob": "ed353743e673d70100a7fd4c937d94c88498f4ac",
+      "sha256": "2b682962dc7dbf102ce44916370a7e7906e83e17bc812a37271e80af974fa626",
+      "bytes": 6609
+    },
+    {
+      "source": "programme_final",
+      "commit": "b46b4dea18ce2c933489a211b0b6819dfd32ca70",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N01-symmetrised-product-inertia-count.md",
+      "git_blob": "0310faa2c757e13333c731b3fd286a6345a59400",
+      "sha256": "c9cb48f5a0b21cf6bf76e2251c3f91f02320675156f702f00198a81dd3189d32",
+      "bytes": 7379
+    },
+    {
+      "source": "programme_final",
+      "commit": "b46b4dea18ce2c933489a211b0b6819dfd32ca70",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N02-windowed-rational-lanczos-instability.md",
+      "git_blob": "601b7d4be7d9ac272f231b0b49f7570a172f671c",
+      "sha256": "3c96bff3b0827f343932f22b3c629fd7e367a7d19a0d16ccae0ed339d0ccd8ed",
+      "bytes": 5860
+    },
+    {
+      "source": "programme_final",
+      "commit": "b46b4dea18ce2c933489a211b0b6819dfd32ca70",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N03-joint-ritz-converse-refuted.md",
+      "git_blob": "00cc49ac021be5ad24e67bb03571863fd2ee5855",
+      "sha256": "052b76c378870587da0464bddcc43c0b1596af4d739c6e65a2baf10e03e9da39",
+      "bytes": 5807
+    },
+    {
+      "source": "programme_final",
+      "commit": "b46b4dea18ce2c933489a211b0b6819dfd32ca70",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N04-pattern-commutant-not-three-dimensional.md",
+      "git_blob": "9b413447048fbeeb39a66003b2361b55b3bb9b12",
+      "sha256": "7e6a9532bb45ff22360f332f37aef3ff8af06a17aec58a7f3b237aa4861177c3",
+      "bytes": 4524
+    },
+    {
+      "source": "programme_final",
+      "commit": "b46b4dea18ce2c933489a211b0b6819dfd32ca70",
+      "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N05-fourier-basis-commutation-fails.md",
+      "git_blob": "1da3319fba27c842720c0463fd1700a8e368cc4a",
+      "sha256": "c262776ff94f60d00bf4c30ab52292c9f822e5cf0cb5bd5edbff92f6a9f7ecf2",
+      "bytes": 4056
+    },
+    {
       "source": "part1_programme",
       "commit": "cadb35066160e466cb1704b9791ad6f374446422",
       "path": "AGENTS.md",
@@ -1365,6 +1463,78 @@
       "git_blob": "61150b5ad627a9352853445029b9256105ed82da",
       "sha256": "3c37dd27b5ef0d051ec57850c05ba6eabadef03778337be57419aad8b786bde5",
       "bytes": 3614
+    },
+    {
+      "source": "current_main_and_rules",
+      "commit": "e24b21fe43cdd090f6dfac269147e75185f04c5b",
+      "path": "AGENTS.md",
+      "git_blob": "07cd8c8920fabccc16dce4a63fe853a2f3a26f3d",
+      "sha256": "c44a76f138fce01f02c06753b22fbc83fd5c1ee701785d49ba17cef5f8eee05b",
+      "bytes": 3572
+    },
+    {
+      "source": "current_main_and_rules",
+      "commit": "e24b21fe43cdd090f6dfac269147e75185f04c5b",
+      "path": "ID_CROSSWALK.md",
+      "git_blob": "15637d098d5e88e354f16948ad3c5bf4b103fe2c",
+      "sha256": "543b970b311bb49cc7147db637734f37e6cdb7c48e91d67c3c9e79d55812844c",
+      "bytes": 249483
+    },
+    {
+      "source": "current_main_and_rules",
+      "commit": "e24b21fe43cdd090f6dfac269147e75185f04c5b",
+      "path": "PROOF_STATUS.md",
+      "git_blob": "8a42699a04ee0d555453f4e2ac10a597dc9e276a",
+      "sha256": "ab3cbc4f09578571828a28773a9a527f0c22dba49270c92b652645c1420b35c2",
+      "bytes": 96640
+    },
+    {
+      "source": "current_main_and_rules",
+      "commit": "e24b21fe43cdd090f6dfac269147e75185f04c5b",
+      "path": "agents/WORKFLOW.md",
+      "git_blob": "cca18dccfbc9c56754920d2905919e6bb69498e9",
+      "sha256": "3ac67448c6d0bd98c057262d60a01cf46fd0ae9df2643e4d8f20ef163f998d5e",
+      "bytes": 25921
+    },
+    {
+      "source": "current_main_and_rules",
+      "commit": "e24b21fe43cdd090f6dfac269147e75185f04c5b",
+      "path": "agents/codex/CODEX.md",
+      "git_blob": "16a4ecfea89acd5b1d9cd09c9213094bce144caf",
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+      "bytes": 4969
+    },
+    {
+      "source": "current_main_and_rules",
+      "commit": "e24b21fe43cdd090f6dfac269147e75185f04c5b",
+      "path": "literature/INDEX.md",
+      "git_blob": "b5c060ad49d938606b056090c3be5a2cd2e3102a",
+      "sha256": "5cad267c7f98f1832a3ed0d8c7db65fed32e4795ac396d55add801c9493e55c9",
+      "bytes": 261781
+    },
+    {
+      "source": "current_main_and_rules",
+      "commit": "e24b21fe43cdd090f6dfac269147e75185f04c5b",
+      "path": "state/IDEAS.md",
+      "git_blob": "d6570b2b20a9f882b02ca4e79cd737a5fa13179e",
+      "sha256": "f70650460c7b140021a084a2b9ddd56efc73f7e92ce8ef7b2f717db3ae677898",
+      "bytes": 158605
+    },
+    {
+      "source": "current_main_and_rules",
+      "commit": "e24b21fe43cdd090f6dfac269147e75185f04c5b",
+      "path": "templates/HANDOFF.md",
+      "git_blob": "4bab329814648ff00bd3580b2ec211ac811cb5b1",
+      "sha256": "3cba7a7390f1d21c9777ea218328e2e35eb970b55f03563f8f7c545cfaa3e0d7",
+      "bytes": 1555
+    },
+    {
+      "source": "current_main_and_rules",
+      "commit": "e24b21fe43cdd090f6dfac269147e75185f04c5b",
+      "path": "templates/THEORY.md",
+      "git_blob": "078deb26c229c8f715f6238ba92fa48432f0dd5a",
+      "sha256": "eadbf9f53237abe0977b3593a7852561f61fc1dc04f9778babeaeaf237792dc8",
+      "bytes": 3655
     }
   ],
   "changed_compared_inputs": [
@@ -1418,8 +1588,8 @@
   "outputs": [
     {
       "path": "topics/padua-proof-attempts-2-20261101/LOG.md",
-      "sha256": "bf7cb1b01c4d6fd757bb74ff110fc92efe1376537f15211dddde5cee2b49b2db",
-      "bytes": 26685
+      "sha256": "46a2f60d6e5695006ecb92a24cb1e802873851d954ca2900e31927db3ddd47f2",
+      "bytes": 29204
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A2.md",
@@ -1523,8 +1693,13 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/code/evidence_manifest.py",
-      "sha256": "00e463e602bb1a95cfba6a779824a9c68b0797144cb87652625e50a4504cf14d",
-      "bytes": 5607
+      "sha256": "fff50f76136197091764a97314b643f283a5587fecbdde8a45e98236cce5d2fb",
+      "bytes": 6047
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/handoffs/01-work.md",
+      "sha256": "50bdc0f27aee5b62378d56f337f5a33ff7c98579266446edc50c79e682a76cb5",
+      "bytes": 5931
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a2.md",
@@ -1573,8 +1748,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/inputs-review.md",
-      "sha256": "b428736939262ee7a1c3e5f9a6030fc5091bc4512da3ca4a595ae5259306f31a",
-      "bytes": 12330
+      "sha256": "f7fec3d777878eff6faf7763606cab55364cb86d1e0b1bd01dc4e883d143420e",
+      "bytes": 12980
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/outputs/a2_exact_check.json",

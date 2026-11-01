@@ -184,3 +184,7 @@ numerical rerun. Output files are SHA-256/size identified. The manifest excludes
 itself to avoid recursive self-hashing, and excludes interpreter caches. It must
 be regenerated after subsequent topic-file changes. It is provenance evidence,
 not an audit or a mathematical checker.
+
+## Current rules and final programme provenance — 2026-11-01
+
+Main e24b21fe43cdd090f6dfac269147e75185f04c5b changed AGENTS/WORKFLOW handoff and allocation rules. Read all3 rules and HANDOFF before merging; scientific statements/computed inputs unchanged. Adopt numbered handoffs; no range under AC local-ID scope. Final programme PR6 head b46b4dea18ce2c933489a211b0b6819dfd32ca70 adds final-ID aliases, without changing depended-on proof bodies or OPEN_TARGETS. Initial scientific pins remain; manifest now includes both versions and current rule/template/registry provenance. Branch deletions after AC merges are handled with immutable SHA pins.
