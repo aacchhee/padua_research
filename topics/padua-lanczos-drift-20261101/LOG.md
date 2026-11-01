@@ -287,3 +287,9 @@
 - `preparation/validate.py` at `4bc3c7a`: **PASS** (`preparation/validation.json`). It covers the map; records; literal targets recomputed from base; the 69 other inherited theory files identical to main; ID-only prose with 5 declared administrative files; registry preservation and counts 14/22/36; protected files; links; a squash tree equal to head; and a clean merge-tree with PR12.
 - No scientific claim, proof, code or evidence changed. Tracked campaign bytes are 4,744,471 (< 5 MB; largest file 616,693).
 - Stage **PR**, ready for AC's decision. Next handoff: [12-merge](handoffs/12-merge.md).
+
+## AC finalization order (2026-11-01 20:55 CET)
+
+- AC: "finalize pr15, it goes in først" — PR15 merges first, before PR12. Recorded in the batch ledger's integration-order note and in [13-merge](handoffs/13-merge.md); handoff 12 is superseded.
+- Re-checked: main is still `28aaa20`; PR12 `f4c5c9e` is the only other open PR; merge-tree of PR15 and PR12 is clean. `preparation/validate.py` was rerun after the ledger note: receipt `preparation/validation-2.json`.
+- PR #15 is marked ready for review. Only AC merges (squash).
