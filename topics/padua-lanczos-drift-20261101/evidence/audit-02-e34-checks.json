@@ -1,0 +1,580 @@
+{
+  "scope": "E34 response-01 independent re-audit",
+  "candidate": "cef79d66321a93d93d53e53efcb7e6744c387481",
+  "initial_rules_head": "2fd5456066de08094a35542f2ff6443c27d8c149",
+  "post_PR16_head": "7a6dd1f7f8f10d0f9c2568e89d693b7d04cd571b",
+  "proof_status": "Analytic audit with exact finite corroboration; no new computer-proof theorem",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 3572,
+      "sha256": "c44a76f138fce01f02c06753b22fbc83fd5c1ee701785d49ba17cef5f8eee05b",
+      "candidate_sha256": "c44a76f138fce01f02c06753b22fbc83fd5c1ee701785d49ba17cef5f8eee05b",
+      "equals_candidate": true
+    },
+    {
+      "path": "agents/WORKFLOW.md",
+      "bytes": 26615,
+      "sha256": "a8927be27a1fe8166e5bcf59c7da8e70618ae0a5f17d56131724baffdad49353",
+      "candidate_sha256": "3ac67448c6d0bd98c057262d60a01cf46fd0ae9df2643e4d8f20ef163f998d5e",
+      "equals_candidate": false
+    },
+    {
+      "path": "agents/codex/CODEX.md",
+      "bytes": 4969,
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+      "candidate_sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+      "equals_candidate": true
+    },
+    {
+      "path": "state/IDEAS.md",
+      "bytes": 170639,
+      "sha256": "4a7f365d0932048d4e861a817e758077f9c715c936d2191b1c2a5da63d14d0bb",
+      "candidate_sha256": "4a7f365d0932048d4e861a817e758077f9c715c936d2191b1c2a5da63d14d0bb",
+      "equals_candidate": true
+    },
+    {
+      "path": "literature/INDEX.md",
+      "bytes": 268372,
+      "sha256": "3cd4a057587459b117e555f1cae615e9985b770206c9b96d199a7161cc1a975e",
+      "candidate_sha256": "3cd4a057587459b117e555f1cae615e9985b770206c9b96d199a7161cc1a975e",
+      "equals_candidate": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/node-row-representation-and-commutator-residual.md",
+      "bytes": 6312,
+      "sha256": "292dd116eb5db6bf05824797e89f7aa5e55f2f956d0ba6e5d9eb1d163a17ecf9",
+      "candidate_sha256": "292dd116eb5db6bf05824797e89f7aa5e55f2f956d0ba6e5d9eb1d163a17ecf9",
+      "equals_candidate": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/coupled-section-residuals-general-selection.md",
+      "bytes": 13049,
+      "sha256": "3ff378a8bd18af26bb2ebebf1c4fd2bba9989378d61d548274aae51e744dca8e",
+      "candidate_sha256": "3ff378a8bd18af26bb2ebebf1c4fd2bba9989378d61d548274aae51e744dca8e",
+      "equals_candidate": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/condition-C-staircase-selections-acyclic-sections.md",
+      "bytes": 11565,
+      "sha256": "4bb00f8f1acbc8c96f211e3b7f29359ad6c982e45a80b3039d09648455674567",
+      "candidate_sha256": "4bb00f8f1acbc8c96f211e3b7f29359ad6c982e45a80b3039d09648455674567",
+      "equals_candidate": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bj-universal-reorthogonalization-obstruction-open.md",
+      "bytes": 6328,
+      "sha256": "37574ea58dcb9e82897f42cb6f3565546e78dc965af80e429141dcfa54d0de1d",
+      "candidate_sha256": "37574ea58dcb9e82897f42cb6f3565546e78dc965af80e429141dcfa54d0de1d",
+      "equals_candidate": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e3-10-polynomial-span-certificate.md",
+      "bytes": 7820,
+      "sha256": "f0e1d506593bd51395bd37bfbf1284a87237c8de84035ea747fa64f1864fe837",
+      "candidate_sha256": "f0e1d506593bd51395bd37bfbf1284a87237c8de84035ea747fa64f1864fe837",
+      "equals_candidate": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e3-11-selection-criterion.md",
+      "bytes": 14087,
+      "sha256": "23628b98ecde23e7a7a5e5f4506a89d89c58d4638c1635b4371f1b565a59a96f",
+      "candidate_sha256": "23628b98ecde23e7a7a5e5f4506a89d89c58d4638c1635b4371f1b565a59a96f",
+      "equals_candidate": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e4-14-noiseless-quantifier-refutation.md",
+      "bytes": 7332,
+      "sha256": "820e43cd2a00238b16193831bd46ffa23bfabee0766000de082a03f3ff677c83",
+      "candidate_sha256": "820e43cd2a00238b16193831bd46ffa23bfabee0766000de082a03f3ff677c83",
+      "equals_candidate": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/drift-codex-e4-15-projection-only-closure-obstruction.md",
+      "bytes": 26544,
+      "sha256": "15a307e3b4d79cb3f7a97c3902fd929a9474d9eee36562e964931d289f59a299",
+      "candidate_sha256": "15a307e3b4d79cb3f7a97c3902fd929a9474d9eee36562e964931d289f59a299",
+      "equals_candidate": true
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/handoffs/06-reaudit.md",
+      "bytes": 5172,
+      "sha256": "254e5ce62ab6d99f2bad2293be3609b84e41e14aa35f0fa60506df820587439c",
+      "candidate_sha256": null,
+      "equals_candidate": null
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/checks/audit-01/E3-E4-records-10-15.md",
+      "bytes": 19406,
+      "sha256": "d84958591fa81788722dbc28182dce9c562ef0c12c4630137af4e1702a99cb00",
+      "candidate_sha256": "d84958591fa81788722dbc28182dce9c562ef0c12c4630137af4e1702a99cb00",
+      "equals_candidate": true
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/checks/response-01/E34-developer-report.md",
+      "bytes": 22027,
+      "sha256": "f8f9fad5710b7838170dacaf0c91014556062d7454af1c92d62e8b5269e0b486",
+      "candidate_sha256": "f8f9fad5710b7838170dacaf0c91014556062d7454af1c92d62e8b5269e0b486",
+      "equals_candidate": true
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/response-01.md",
+      "bytes": 10815,
+      "sha256": "74e74dc7ef06d2427aeec8be41792a7599d676d2786a05bbd86c04caf7a58762",
+      "candidate_sha256": "74e74dc7ef06d2427aeec8be41792a7599d676d2786a05bbd86c04caf7a58762",
+      "equals_candidate": true
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/ideas-e3-e4.md",
+      "bytes": 33826,
+      "sha256": "95613f22e44703ba7c562bb4fc184f1f926a72894ec24bafc80c31ec9bb876d1",
+      "candidate_sha256": "95613f22e44703ba7c562bb4fc184f1f926a72894ec24bafc80c31ec9bb876d1",
+      "equals_candidate": true
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/directions/E3.md",
+      "bytes": 6723,
+      "sha256": "81aade60b7e01a6eae4ee2cd15081740a8ee3e99cfc68f0baf8b7abdd339342e",
+      "candidate_sha256": "81aade60b7e01a6eae4ee2cd15081740a8ee3e99cfc68f0baf8b7abdd339342e",
+      "equals_candidate": true
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/directions/E4.md",
+      "bytes": 7804,
+      "sha256": "bda2a649c61a922012fbfaf4d5f08ccc853b5fe2c476c39da6ec4479907ba901",
+      "candidate_sha256": "bda2a649c61a922012fbfaf4d5f08ccc853b5fe2c476c39da6ec4479907ba901",
+      "equals_candidate": true
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/proposed-record-changes.md",
+      "bytes": 15051,
+      "sha256": "7759302ffbbf1e8d8329b2eb77b754b1786bc2055a5a365cbbe6969b530e0556",
+      "candidate_sha256": "7759302ffbbf1e8d8329b2eb77b754b1786bc2055a5a365cbbe6969b530e0556",
+      "equals_candidate": true
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/report.md",
+      "bytes": 11351,
+      "sha256": "8b805824a50a5e29f407a6292f5ed2f77cb0d8342578ed544584db08a36dedc0",
+      "candidate_sha256": "8b805824a50a5e29f407a6292f5ed2f77cb0d8342578ed544584db08a36dedc0",
+      "equals_candidate": true
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/local-results-entry.md",
+      "bytes": 3413,
+      "sha256": "9ec672f3f130de5efdbe7c87e535f8788a9168c61ff6059828e56bf9c92bd9f4",
+      "candidate_sha256": "9ec672f3f130de5efdbe7c87e535f8788a9168c61ff6059828e56bf9c92bd9f4",
+      "equals_candidate": true
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/evidence/response-01-e4-closure.json",
+      "bytes": 30826,
+      "sha256": "956dfe71e8b6958f54e19f2d7fb30f04c5788351b7942bf8be21b41977d3599c",
+      "candidate_sha256": "956dfe71e8b6958f54e19f2d7fb30f04c5788351b7942bf8be21b41977d3599c",
+      "equals_candidate": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/drift/e4_closure_check.py",
+      "bytes": 18454,
+      "sha256": "b22949c61d98207f950a5b8e1a8974e0eb1545f85dc5b639872bf09a987d6dac",
+      "candidate_sha256": "b22949c61d98207f950a5b8e1a8974e0eb1545f85dc5b639872bf09a987d6dac",
+      "equals_candidate": true
+    }
+  ],
+  "producer_comparison": {
+    "instances_equal": true,
+    "inequality9_equal": true,
+    "code_hash_equal": true,
+    "different_keys": [
+      "command",
+      "elapsed_seconds",
+      "platform",
+      "python"
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "/workspace/padua-drift-runs/reaudit-02/E34/producer-rerun.json",
+      "bytes": 30808,
+      "sha256": "1415b8363090340397f5c014f846017f95c8bef68d1f535a20fd4179b54ef45c",
+      "retention": "Padua-specific local working output; no Windows cold-storage delivery claimed",
+      "retrieval": "Regenerate with recorded command; independent result embedded below"
+    },
+    {
+      "path": "/workspace/padua-drift-runs/reaudit-02/E34/independent-exact.json",
+      "bytes": 8728,
+      "sha256": "71609b94fc0bf9a0e012773b6b95fee67042782c61867ecaa8fecc56e3387e12",
+      "retention": "Padua-specific local working output; no Windows cold-storage delivery claimed",
+      "retrieval": "Regenerate with recorded command; independent result embedded below"
+    }
+  ],
+  "independent_result": {
+    "purpose": "Independent exact finite corroboration; no campaign code imports; analytic audit proves universal claim",
+    "command": "python3 -B /workspace/padua_research/topics/padua-lanczos-drift-20261101/checks/audit-02/E34/independent_exact.py --output /workspace/padua-drift-runs/reaudit-02/E34/independent-exact.json",
+    "script_sha256": "e246694cd210fe6f3a05a38c02e47cd0eecdea10487eab0f0a21aa080453df1f",
+    "python": "3.12.14",
+    "sympy": "1.14.0",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "all_assertions_passed": true,
+    "T3_U3_rank": 10,
+    "cases": [
+      {
+        "name": "T3_BJ_m0_alpha0",
+        "rules": 18,
+        "theta2": "864/12869",
+        "unit_b2": "7/15",
+        "alpha": "0",
+        "parent_norm2": "1",
+        "v_norm2_unit_parent": "22/5",
+        "normal_norm2": "72/175",
+        "operators": {
+          "X": {
+            "kappa2": "28/45",
+            "delta2": "2688/64345",
+            "kappa2_over_unit_b2": "4/3"
+          },
+          "Y": {
+            "kappa2": "0",
+            "delta2": "0",
+            "kappa2_over_unit_b2": "0"
+          }
+        }
+      },
+      {
+        "name": "T3_BJ_m0_alpha-1",
+        "rules": 18,
+        "theta2": "1",
+        "unit_b2": "7/15",
+        "alpha": "-1",
+        "parent_norm2": "1",
+        "v_norm2_unit_parent": "22/5",
+        "normal_norm2": "72/175",
+        "operators": {
+          "X": {
+            "kappa2": "28/45",
+            "delta2": "28/45",
+            "kappa2_over_unit_b2": "4/3"
+          },
+          "Y": {
+            "kappa2": "0",
+            "delta2": "0",
+            "kappa2_over_unit_b2": "0"
+          }
+        }
+      },
+      {
+        "name": "T3_BJ_m0_alpha-3/2",
+        "rules": 18,
+        "theta2": "3456/15461",
+        "unit_b2": "7/15",
+        "alpha": "-3/2",
+        "parent_norm2": "1",
+        "v_norm2_unit_parent": "22/5",
+        "normal_norm2": "72/175",
+        "operators": {
+          "X": {
+            "kappa2": "28/45",
+            "delta2": "10752/77305",
+            "kappa2_over_unit_b2": "4/3"
+          },
+          "Y": {
+            "kappa2": "0",
+            "delta2": "0",
+            "kappa2_over_unit_b2": "0"
+          }
+        }
+      },
+      {
+        "name": "T3_BJ_m1_alpha0",
+        "rules": 18,
+        "theta2": "1656/13661",
+        "unit_b2": "28/115",
+        "alpha": "0",
+        "parent_norm2": "1",
+        "v_norm2_unit_parent": "3/2",
+        "normal_norm2": "72/175",
+        "operators": {
+          "X": {
+            "kappa2": "112/345",
+            "delta2": "2688/68305",
+            "kappa2_over_unit_b2": "4/3"
+          },
+          "Y": {
+            "kappa2": "28/115",
+            "delta2": "2016/68305",
+            "kappa2_over_unit_b2": "1"
+          }
+        }
+      },
+      {
+        "name": "T3_BJ_m1_alpha-1",
+        "rules": 18,
+        "theta2": "1",
+        "unit_b2": "28/115",
+        "alpha": "-1",
+        "parent_norm2": "1",
+        "v_norm2_unit_parent": "3/2",
+        "normal_norm2": "72/175",
+        "operators": {
+          "X": {
+            "kappa2": "112/345",
+            "delta2": "112/345",
+            "kappa2_over_unit_b2": "4/3"
+          },
+          "Y": {
+            "kappa2": "28/115",
+            "delta2": "28/115",
+            "kappa2_over_unit_b2": "1"
+          }
+        }
+      },
+      {
+        "name": "T3_BJ_m1_alpha-3/2",
+        "rules": 18,
+        "theta2": "6624/18629",
+        "unit_b2": "28/115",
+        "alpha": "-3/2",
+        "parent_norm2": "1",
+        "v_norm2_unit_parent": "3/2",
+        "normal_norm2": "72/175",
+        "operators": {
+          "X": {
+            "kappa2": "112/345",
+            "delta2": "10752/93145",
+            "kappa2_over_unit_b2": "4/3"
+          },
+          "Y": {
+            "kappa2": "28/115",
+            "delta2": "8064/93145",
+            "kappa2_over_unit_b2": "1"
+          }
+        }
+      },
+      {
+        "name": "T3_BJ_m2_alpha0",
+        "rules": 18,
+        "theta2": "864/12869",
+        "unit_b2": "28/45",
+        "alpha": "0",
+        "parent_norm2": "3/4",
+        "v_norm2_unit_parent": "103/30",
+        "normal_norm2": "72/175",
+        "operators": {
+          "X": {
+            "kappa2": "0",
+            "delta2": "0",
+            "kappa2_over_unit_b2": "0"
+          },
+          "Y": {
+            "kappa2": "28/45",
+            "delta2": "2688/64345",
+            "kappa2_over_unit_b2": "1"
+          }
+        }
+      },
+      {
+        "name": "T3_BJ_m2_alpha-1",
+        "rules": 18,
+        "theta2": "1",
+        "unit_b2": "28/45",
+        "alpha": "-1",
+        "parent_norm2": "3/4",
+        "v_norm2_unit_parent": "103/30",
+        "normal_norm2": "72/175",
+        "operators": {
+          "X": {
+            "kappa2": "0",
+            "delta2": "0",
+            "kappa2_over_unit_b2": "0"
+          },
+          "Y": {
+            "kappa2": "28/45",
+            "delta2": "28/45",
+            "kappa2_over_unit_b2": "1"
+          }
+        }
+      },
+      {
+        "name": "T3_BJ_m2_alpha-3/2",
+        "rules": 18,
+        "theta2": "3456/15461",
+        "unit_b2": "28/45",
+        "alpha": "-3/2",
+        "parent_norm2": "3/4",
+        "v_norm2_unit_parent": "103/30",
+        "normal_norm2": "72/175",
+        "operators": {
+          "X": {
+            "kappa2": "0",
+            "delta2": "0",
+            "kappa2_over_unit_b2": "0"
+          },
+          "Y": {
+            "kappa2": "28/45",
+            "delta2": "10752/77305",
+            "kappa2_over_unit_b2": "1"
+          }
+        }
+      },
+      {
+        "name": "nonuniform_t0_m0",
+        "rules": 6,
+        "theta2": "1",
+        "unit_b2": "133/75",
+        "alpha": "-1",
+        "parent_norm2": "1",
+        "v_norm2_unit_parent": "19/5",
+        "normal_norm2": "6/665",
+        "operators": {
+          "X": {
+            "kappa2": "133/75",
+            "delta2": "133/75",
+            "kappa2_over_unit_b2": "1"
+          },
+          "Y": {
+            "kappa2": "0",
+            "delta2": "0",
+            "kappa2_over_unit_b2": "0"
+          }
+        }
+      },
+      {
+        "name": "nonuniform_t0_m1",
+        "rules": 6,
+        "theta2": "1",
+        "unit_b2": "133/230",
+        "alpha": "-1",
+        "parent_norm2": "1",
+        "v_norm2_unit_parent": "8/5",
+        "normal_norm2": "6/665",
+        "operators": {
+          "X": {
+            "kappa2": "0",
+            "delta2": "0",
+            "kappa2_over_unit_b2": "0"
+          },
+          "Y": {
+            "kappa2": "133/230",
+            "delta2": "133/230",
+            "kappa2_over_unit_b2": "1"
+          }
+        }
+      },
+      {
+        "name": "T4_t2_XYXY_m0",
+        "rules": 3,
+        "theta2": "82/2917",
+        "unit_b2": "1215/2296",
+        "alpha": "1/3",
+        "parent_norm2": "56/25",
+        "v_norm2_unit_parent": "254/35",
+        "normal_norm2": "32/21",
+        "operators": {
+          "X": {
+            "kappa2": "1215/1312",
+            "delta2": "1215/46672",
+            "kappa2_over_unit_b2": "7/4"
+          },
+          "Y": {
+            "kappa2": "405/9184",
+            "delta2": "405/326704",
+            "kappa2_over_unit_b2": "1/12"
+          }
+        }
+      },
+      {
+        "name": "T4_t2_XYXY_m1",
+        "rules": 3,
+        "theta2": "341/6011",
+        "unit_b2": "1215/4774",
+        "alpha": "1/3",
+        "parent_norm2": "56/25",
+        "v_norm2_unit_parent": "34/15",
+        "normal_norm2": "32/21",
+        "operators": {
+          "X": {
+            "kappa2": "3645/4774",
+            "delta2": "3645/84154",
+            "kappa2_over_unit_b2": "3"
+          },
+          "Y": {
+            "kappa2": "1215/2728",
+            "delta2": "1215/48088",
+            "kappa2_over_unit_b2": "7/4"
+          }
+        }
+      },
+      {
+        "name": "T4_t2_XYXY_m2",
+        "rules": 3,
+        "theta2": "34/349",
+        "unit_b2": "243/952",
+        "alpha": "1/3",
+        "parent_norm2": "56/45",
+        "v_norm2_unit_parent": "5/14",
+        "normal_norm2": "32/21",
+        "operators": {
+          "X": {
+            "kappa2": "243/952",
+            "delta2": "243/9772",
+            "kappa2_over_unit_b2": "1"
+          },
+          "Y": {
+            "kappa2": "405/952",
+            "delta2": "405/9772",
+            "kappa2_over_unit_b2": "5/3"
+          }
+        }
+      },
+      {
+        "name": "T4_t2_XYXY_m3",
+        "rules": 3,
+        "theta2": "2/65",
+        "unit_b2": "243/280",
+        "alpha": "1/3",
+        "parent_norm2": "56/45",
+        "v_norm2_unit_parent": "118/21",
+        "normal_norm2": "32/21",
+        "operators": {
+          "X": {
+            "kappa2": "0",
+            "delta2": "0",
+            "kappa2_over_unit_b2": "0"
+          },
+          "Y": {
+            "kappa2": "243/280",
+            "delta2": "243/9100",
+            "kappa2_over_unit_b2": "1"
+          }
+        }
+      }
+    ],
+    "counterexample": {
+      "measure": "uniform T3",
+      "t": 1,
+      "selection": "XYY",
+      "source_product": "v20=X[x-1]",
+      "source": "eta times normal part of y^3; then eta = u sqrt(v20_norm2/r_norm2)",
+      "v20_norm2": "22/5",
+      "b2": "7/15",
+      "kappaX2": "28/45",
+      "direct_deltaX2_as_function_of_eta": "672*eta**2/(5*(216*eta**2 + 245))",
+      "limit_deltaX2_over_u2": "88/15",
+      "false_claim_squared_value": "22/5",
+      "actual_limit_squared_over_claimed": "4/3"
+    }
+  },
+  "commands": [
+    "python3 -B tracks/bivariate-lanczos/code/drift/e4_closure_check.py --output /workspace/padua-drift-runs/reaudit-02/E34/producer-rerun.json",
+    "python3 -B topics/padua-lanczos-drift-20261101/checks/audit-02/E34/independent_exact.py --output /workspace/padua-drift-runs/reaudit-02/E34/independent-exact.json"
+  ],
+  "limitations": [
+    "No original publication fulltexts reread or new external literature search; inspected repository index/digests and exact theory predecessors",
+    "No floating point/IEEE realization or multidegree amplification proof",
+    "No useful polynomial score bound or finite-u transfer radius proved",
+    "No IDEA17 parent-repair experiment executed",
+    "Producer samples natural creation order; independent checker additionally covers all creation permutations for T3 and t0 cases"
+  ],
+  "model_assignment": "gpt-6-astra, xhigh",
+  "runtime_metadata": "Actual runtime variant/effort not separately exposed to this subagent"
+}

@@ -1,9 +1,9 @@
 # Padua–Lanczos drift: work log
 
 - Branch: `codex/padua-lanczos-drift-20261101`.
-- Initial base and rules SHA: `cf89b140530d5838bdb208a8c28f3e7aa676ace3`. Current synchronized base: `806cc7b4509fd93bae652f9545d32d95529f8281`; rules unchanged.
+- Initial base and rules SHA: `cf89b140530d5838bdb208a8c28f3e7aa676ace3`. Current synchronized base: `28aaa20861d08074b77efc74eaef75cdcb36234d` (merged PR16); changed results rule read at `7a6dd1f7f8f10d0f9c2568e89d693b7d04cd571b`.
 - Developer/orchestrator: Codex; root runtime does not expose the actual model variant or effort independently.
-- Stage: **WORK** (after audit-01: CHANGES REQUIRED; Codex response-01 pending). Earlier: AUDIT, Claude Opus 5.5 xhigh audit PENDING. Handoff chain: [handoffs/](handoffs/); the numbered status lines identify the one open handoff.
+- Stage: **WORK** (after Codex audit-02: CHANGES REQUIRED; Claude response-02 next). Audit-01 and response-01 are completed history. Handoff chain: [handoffs/](handoffs/); the numbered status lines identify the one open handoff.
 - Final IDs: none allocated; provisional records only. Allocation and all Git mutations belong to the orchestrator.
 - Current claims/outcomes: see [report.md](report.md) and the direction ledger in [plan.md](plan.md). Initial all-OPEN wording below is historical setup provenance.
 - For the PR: reconcile candidate records, durable theory, global IDs and shared registries only at PR preparation; show WORK / AUDIT / PR sections.
@@ -139,3 +139,36 @@
   it for a verified runtime identity.
 - PR15 remains draft, stageAUDIT while review is in progress. New findings are
   returned to development; the reviewer does not silently fix and approve them.
+
+## Audit 02 — Codex re-audit of Claude response-01 (2026-11-01)
+
+- Record: [audit-02.md](audit-02.md), reviewer reports/code in
+  [checks/audit-02/](checks/audit-02/). Verdict CHANGES REQUIRED:0high,2medium,
+  8low; stageWORK. All42 old findings have individual dispositions. The core
+  generalized closure lemma, rho_n=O(n^-5), sharper219.5414 constant and the
+  reproducible measurements remain supported. One ancillary creator-limit
+  equality is refuted; record05's substantive finite bounds need a split-status
+  response. Current scientific target conclusions remain unchanged.
+- Actual separate reruns: all five response checkers; independent exact/Arb E1
+  comparisons/ties/950signs; exact E4 symbolic counterexample plus186rule/order
+  checks; independent E5 series/atoms/Arb finite counterexample; full E6 response
+  and n16 grids with independent basis/sample/error checks; isolated NumPy2.4.1
+  failure. Execution coverage is attributed in each report, not silently widened.
+- Root integration replay against main28aaa and PR12=9a75747:PASS, reserved ranges
+  unused, both topic ledger/crosswalk content preserved, clean PR12 merge-tree,
+  disposable squash tree equals tested head7a6dd1f. Receipts:
+  evidence/audit-02-integration.json, audit-02-union-scan.json and
+  audit-02-remote-state.json. No live main branch or PR merge performed.
+- Original ZIP/run-artifact identities now verified in this workspace. All81 ZIP
+  source files equal pinned source;147unique run-output paths match. All actual
+  off-repo outputs among the older46row selection verify; one earlier record05
+  working-byte metadata pin is not retrievable. It is not a required hidden
+  computational input. Windows cold-storage delivery remains pending; compact
+  committed evidence/regeneration remains the verification path.
+- PR16 is merged and its repository-only results rule is active. Updated only
+  this topic's results status/next-step summary; root RESULTS remains unchanged
+  until PR preparation. A02-L8 returns the remaining obsolete Windows-results
+  instructions to the developer; they are not current execution instructions.
+- Next handoff:07-response-02.md, Claude Opus5.5xhigh for the mathematical and
+  classification response, with appropriate code allocation. Do not reopen
+  accepted original results or allocate final IDs during the response.
