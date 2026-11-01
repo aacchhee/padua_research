@@ -82,15 +82,24 @@ def main():
             if old != new:
                 changes.append({"path": path, "old_git_blob": old, "new_git_blob": new})
     outputs = []
+    # Checkpoint identities cover files available from the index/repository.
+    # Untracked prototypes may change during parallel development; stage each
+    # durable artifact before regenerating this manifest.
+    indexed_paths = set(git("ls-files", "--", TOPIC).decode().splitlines())
     for path in sorted((ROOT / TOPIC).rglob("*")):
-        if path.is_file() and path.name != "evidence-manifest.json" and "__pycache__" not in path.parts:
+        relative = str(path.relative_to(ROOT))
+        if (path.is_file() and relative in indexed_paths
+                and path.name != "evidence-manifest.json" and "__pycache__" not in path.parts):
             outputs.append({"path": str(path.relative_to(ROOT)), **identity(path.read_bytes())})
     result = {"schema": 1, "purpose": "mechanical provenance; no scientific execution or verification",
               "pins": PINS, "python": platform.python_version(),
               "command": f"python {TOPIC}/code/evidence_manifest.py",
               "input_source": "local immutable Git objects via git show COMMIT:PATH; no files fetched remotely by this script",
-              "inputs": inputs, "changed_compared_inputs": changes, "outputs": outputs,
+              "inputs": inputs, "changed_compared_inputs": changes,
+              "output_source": "tracked and staged topic files; stage new durable artifacts before generation",
+              "outputs": outputs,
               "exclusions": ["evidence-manifest.json excludes itself to avoid a recursive hash",
+                             "untracked working prototypes are excluded until staged for a checkpoint",
                              "__pycache__ files are interpreter cache, not evidence"]}
     dest = ROOT / TOPIC / "evidence-manifest.json"
     dest.write_text(json.dumps(result, indent=2) + "\n")

@@ -11,7 +11,7 @@ For the degree-three even-checkerboard Padua family defined in result06,
 
 max_{[−1,1]²} λ_3 = 17/6 + (2/3)sqrt2,
 
-and equality holds exactly at (−1,−1) and (−1,1). Thus A4(d) is established for n=3 if the exact finite checks recorded below complete successfully.
+and equality holds exactly at (−1,−1) and (−1,1). This establishes the n=3 finite case of A4(d).
 
 ## Definitions
 
@@ -23,11 +23,11 @@ The exact degree-three count certificate of result06, together with its addition
 
 ## Status by part
 
-Overall status: **OPEN — final finite verification and independent execution pending**.
+Overall status: **PROVED** (written non-strict-maximum exclusion, complete exact value certificate, separate checker and actual independent producer/checker rerun).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
-| global maximum value and its exact equality set for n=3 | OPEN | final additional certificate predicates and independent run pending |
+| global maximum value and exact equality set for n=3 | PROVED | exact global predicates verified on developer and independently regenerated certificates |
 
 The argument below closes the potential non-strict-maximum gap explicitly. A strict-local-maxima list by itself would not prove the statement. Required Claude audit of Part 2 remains pending.
 
@@ -39,7 +39,20 @@ The argument below closes the potential non-strict-maximum gap explicitly. A str
 
 ## Checks
 
-The same single compressed essential certificate as result06 has a `global` section. New producer module `../code/a5_global.py` writes the explicit flat-mask panels, value enclosures and exact corner identity. The separate `a5_checker.py` verifies these fields without a root search, as well as the count predicates. Actual final developer, independent checker and independent producer/checker commands and receipts will be recorded here after completion; they are not yet claimed.
+The same single essential compressed certificate as result06 has a `global` section. Producer module `../code/a5_global.py` supplies the explicit flat-mask panels, value enclosures and exact corner identity. The separate checker verifies these fields without a root search, as well as the count predicates. The artifact is386415bytes with SHA256 `401a99243ebeb7b3844216a47f8466bbb60086cbba71d2de2088d7626f532b2b`.
+
+The checker implementer's complete run exited0 in217.540s. A different subagent actually regenerated the entire certificate byte-identically, then checked both the independent and developer artifacts, exiting0 in220.972s and220.474s. Full actual commands, code pins, output hashes and receipts are in result06, `../independent-checks-a5-checker.md` and `../independent-execution-a5.md`. All14 malformed-certificate controls were rejected in both independent sessions.
+
+The three complete positive checker receipts agree exactly on the mathematical predicates:
+
+| Verified value bound | Exact rational bound |
+|---|---|
+| maximum of all supplied flat-mask panel upper bounds |225879/125000<3 |
+| largest interior maximum upper enclosure |1188087/500000<15/4 |
+| largest open-edge maximum upper enclosure |3021223/1000000<15/4 |
+| non-node corner value |17/6+(2/3)sqrt2>15/4 |
+
+Every one of the1004 non-flat masks has constant gradient gcd and nonzero resultants; every one of the20 flat masks has all32 partition panels checked. Every accepted non-corner root has its own rigorously enclosed value. The exact part1 edge representative map is also verified. These finite facts supply precisely the additional hypotheses used in the proof below; numerical fit agreement is not used.
 
 ## Sources
 
@@ -81,8 +94,8 @@ Only the n=3 instance of A4(d). No statement about large-n corner neighbourhoods
 
 ## Open items
 
-Finish the finite evidence and independent execution before promotion. Extend to n=4 only with a valid quartic treatment; cubic null-line arguments do not exclude singular strict maxima of quartics. Required Claude audit remains pending.
+This n=3 case is complete. Required Claude audit of Part2 remains PENDING. Higher-degree A4(d) cases and the all-n conjecture remain OPEN; quartic singular maxima require a separate argument.
 
 ## History
 
-2026-11-01, Codex `/root/a5_develop`, allocated gpt-6.1-sol xhigh. Root and independent checker flagged that strict counts alone leave non-strict global plateaus uncovered. The present separate result adds explicit flat-mask bounds and coprime-gradient reasoning, independently checked as a conditional proof route by `/root/a2_independent_route`. This is a separate mathematical claim from result06 and remains OPEN pending its exact additional finite checks.
+2026-11-01, Codex `/root/a5_develop`, allocated gpt-6.1-sol xhigh. Root and independent checker identified that strict counts alone do not cover non-strict global plateaus. This separate result adds exact flat-mask bounds and finite stationary-set reasoning, inspected independently by `/root/a2_independent_route`. Initial status was OPEN while the finite checks ran. Promoted to PROVED only after the separate checker and actual independent producer/checker rerun verified the complete count and global fields. Required Claude audit remains PENDING.

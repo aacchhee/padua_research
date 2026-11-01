@@ -84,7 +84,7 @@ This theorem supplies a finite verification problem for cubics and exact crease 
 
 ## Open items
 
-Complete and independentlycheck the degree-three certificate; then assess degreefour separately. Globalargmax conclusions require additional treatment of non-strict maxima and rigorous values; they are not consequences of a strict maxima list alone. Required Claude audit remainspending.
+The complete degree-three certificate and independent executions are now recorded in result06; result07 separately establishes the degree-three global argmax with additional exact bounds. Assess degreefour and higher separately: the cubic Hessian exclusion does not apply there. Required Claude audit of Part2 remains PENDING.
 
 ## History
 

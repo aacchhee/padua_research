@@ -224,15 +224,63 @@ omitted flat covering panel and false flat upper bound. Its report records the
 rejection reason for every mutation and the exact certificate/checker hashes.
 It does not replace a positive verification of the original certificate.
 
-Planned final integration commands (not execution claims until receipts below):
+Final integration commands:
 
 ```text
 PYTHONDONTWRITEBYTECODE=1 python -B topics/padua-proof-attempts-2-20261101/code/a5_checker.py topics/padua-proof-attempts-2-20261101/outputs/a5_n3_certificate.json.gz > topics/padua-proof-attempts-2-20261101/outputs/a5_checker_full-integration.json
 PYTHONDONTWRITEBYTECODE=1 python -B topics/padua-proof-attempts-2-20261101/code/a5_checker_adversarial.py topics/padua-proof-attempts-2-20261101/outputs/a5_n3_certificate.json.gz > topics/padua-proof-attempts-2-20261101/outputs/a5_checker_adversarial.json
 ```
 
-These are implementation/integration checks, not yet a complete closed-square
-certificate execution. Full producer/checker integration and the required
-different-subagent execution remain pending at this checkpoint. An executor
-must retain its own output; this implementer's run cannot replace that
-independent execution.
+Both commands were actually launched on the final exact producer artifact
+`outputs/a5_n3_certificate.json.gz`, SHA-256
+`401a99243ebeb7b3844216a47f8466bbb60086cbba71d2de2088d7626f532b2b`
+(386,415 bytes). The adversarial command completed with exit 0 and all 14
+mutations rejected for the intended algebra/coverage/inequality reasons. Its
+receipt `outputs/a5_checker_adversarial.json` has SHA-256
+`075ed516a278130134468d2ff3d02775cff930da819f6d758fd85a62ab39454d`
+and size 2493 bytes. Positive full verification completed subsequently as recorded
+below; the negative controls do not substitute for it.
+
+## Completed frozen full integration
+
+The positive full command above completed with exit 0 in **217.540 seconds** on
+the final exact artifact. Receipt: `outputs/a5_checker_full-integration.json`,
+SHA-256 `425fd02d3a599b419867f9c985b4aadccf0b049cd32b6b6a235b0306411f77cc`,
+15,206 bytes. Python 3.12.14 / SymPy 1.14.0; checker hash remains the frozen
+`d32810f1b478315cd240f7f68c41177fd97836c8337aefd9de8aa90203884cde`.
+
+The verifier accepted every required record:
+
+| Scope | Verified complete coverage / outcome |
+| --- | --- |
+| Interior | 1024 masks: 20 flat, 1004 residual; 35,376 Cartesian pairs; seven strict maxima |
+| Interior exclusions | 23,668 gradient, 8972 outside, 2147 Hessian, 580 sign, two exact regular creases |
+| Four open edges | 3584 canonical masks: 44 flat and 3540 with derivative roots; all 10,508 root dispositions; six strict maxima |
+| Edge exclusions | 2972 derivative, 2470 Hessian, 2596 outside, 26 exact regular tangent creases, 2438 sign |
+| Four corners | two exact cardinal-node exclusions; two strict nonnode-corner maxima |
+| Total | **15 strict local maxima: seven interior, six edge, two corner** |
+
+The optional global extension also passed, including every flat mask / panel,
+constant g for every nonflat mask, every accepted root value enclosure and the
+two exact part-1 representative identities. Its verified upper bounds are
+
+* every flat signed polynomial: at most 225879/125000 < 3;
+* accepted interior maxima: at most 1188087/500000 < 15/4;
+* accepted edge maxima: at most 3021223/1000000 < 15/4.
+
+The exact global value is **17/6 + 2*sqrt(2)/3**, attained precisely at
+**(-1,-1) and (-1,1)**. Its outward rational enclosure is in the receipt and has
+lower bound greater than 15/4. The non-strict-plateau exclusion described above
+is essential to this conclusion; it was explicitly verified via the additional
+global evidence rather than inferred from strict counts alone.
+
+No implementation change was required after freezing. The separate required
+different-subagent execution is owned and recorded by the orchestrator/executor;
+this implementer's full integration is not substituted for it. Required Claude
+audit remains separate. New `code/a5_checker_n4*` / `outputs/a5_checker_n4*` files
+were explicitly relinquished to the independently assigned degree-four verifier;
+this agent made no write to them.
+
+The preliminary checks above are superseded for the final artifact by the
+completed positive full integration and its receipt. An executor must retain its
+own output; this implementer's run cannot replace that independent execution.

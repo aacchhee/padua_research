@@ -2,7 +2,7 @@
 
 - Branch: `codex/padua-proof-attempts-2-20261101` · Base: `a09d910ae7d5526b1e216066421a0bee7fc20da4` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh), PENDING.
 - Stage: WORK · Next: `Codex (gpt-6.1-sol xhigh): Continue codex/padua-proof-attempts-2-20261101.`
-- Claims: A2(i)–(iii) PROVED in theory01–03, support04; A5 active, A4(a)/B3/B1 not started.
+- Claims: A2(i)–(iii) PROVED in theory01–03, support04. A5 n=3 count PROVED in06, with global argmax07 and finite reduction05; n=4 active. A4(a)/B3/B1 not started.
 - PR: draft against `codex/padua-proof-attempts-20261101`; additions under this topic only. Local IDs only; proposed upstream edits remain literal proposals.
 - Open for AC: no development approval needed; Claude audit is a later handoff.
 
@@ -98,3 +98,14 @@
 - `/root/a5_n4`, gpt-6.1-sol xhigh, owns only new attempts/T-A5-n4.md, theory08–14, code/outputs prefixesa5_n4_. It assesses a quartic extension within the existing A5 ceiling15:19UTC, keeping frozen n3 files untouched. Cubic Hessian-singular exclusions are not applied to quartics. Main A5 lead retains05–07/15–19 and main attempt; checker agent owns checker prefixes; independent executor owns a5_independent outputs.
 - Root independently verified the complete mathematical proof bodies of all three part1 records are byte-identical at originala09d910 versus response7b8884a. Developer code and scientific outputs also have zero changed paths. This supports the recorded merge impact, rather than relying only on the upstream response's assertion.
 - Manifest generator now includes169 pinned inputs after the12-path part1 response addition. Final output-hash refresh waits for running producer receipt files to close; no partial stdout receipt is committed as completed evidence.
+
+### A5 n=3 complete — certified count and separate A4(d) corollary
+
+- Result06 is PROVED: exactly15 strict relative local maxima on the closed square, split7interior/6open-edge/2non-node-corner. All five A5 obligations are discharged for n3 by the new exact procedure; no old floating handler is inherited. Part1theorem03 is explicitly reused at x=1,y=±1/sqrt3.
+- Result07 is separately PROVED: global maximum17/6+(2/3)sqrt2, attained exactly at(−1,−1),(−1,1). Its additional flat-polynomial bounds and finite-critical-set argument exclude non-strict global plateaus; this is not inferred from a strict-count list alone. Both finite results retain required Part2 Claude audit PENDING.
+- Final essential certificate outputs/a5_n3_certificate.json.gz is386415bytes, SHA256401a99243ebeb7b3844216a47f8466bbb60086cbba71d2de2088d7626f532b2b (decodedJSON2809931bytes). One compressed artifact is used, not split files. Its byte-identical independently generated counterpart has its own path and receipt. No cold-storage dependency is needed for these sub1MB artifacts.
+- Coverage:1024interior masks,35376Cartesian projected-root pairs,3584canonical edge masks,10508edge-root dispositions, all4corners; no unresolved case. Developer, independent checker implementer and separate executor actually ran the commands. The executor regenerated the producer artifact in a fresh process, checked both artifacts with the separately written frozen verifier, and independently ran14 malformed-certificate controls, all rejected. Actual evidence: independent-execution-a5.md, independent-checks-a5-checker.md and their own output receipts. Root read the complete code/proofs and all final verification flags.
+- Rigorous value bounds: flat patterns≤225879/125000<3; accepted interior maxima≤1188087/500000; edge maxima≤3021223/1000000; both are<15/4<17/6+(2/3)sqrt2. The verifier also checks the exact Part1 representative mapping.
+- Primary arXiv2605.23299v1 Table3 agrees at n3 (7interior/15total), as recorded in outputs/a5_n3_literature-comparison.md. No published count is refuted and no n6/7/8 correction is certified here.
+- A5 is PARTIAL by explicit degree cases: n3PROVED; n4…8OPEN. N4 continues in its disjoint files within the existing box. A4's all-n statement remains OPEN; only its n3 finite corollary is closed. Next ordered target A4(a) has not started.
+- Provenance generator now inventories tracked and staged durable files, excluding untracked prototypes until their checkpoint. This avoids claiming a public output identity for unfinished parallel files absent from that checkpoint. Stage artifacts before regeneration; the manifest excludes itself and interpreter caches.

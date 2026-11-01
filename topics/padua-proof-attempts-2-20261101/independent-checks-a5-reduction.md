@@ -120,3 +120,51 @@ The developer reported plans to bound exceptional masks by exact interval panels
 ### Degree-four warning and bounded advice
 
 No part of the just-inspected cubic theorem silently extends to n=4. Besides `-(x^2+y^2)^2`, the quartic `-(y-x^2)^2-x^2*y^2` has a strict maximum at the origin with rank-one Hessian and a vanishing effective quartic along the null direction. Thus simply checking a negative quartic coefficient on the Hessian-null line is not a complete degree-four classification. Coprime quartic gradients are cubics with at most nine complex intersection points, so an exhaustive elimination route remains possible, but degenerate fibers and critical points must be retained. As implementation advice only, opposite masks P and -P share a stationary system, and x-reflection permutes the n=4 Padua masks; verified mask orbits can reduce repeated stationary searches. No degree-four computation or finite coverage claim was made.
+
+## Refreshed full theory-05 and draft theory-06/-07 review
+
+At 2026-11-01T09:44:23Z, with workspace head `c26a6adf6ebf701368f5de73fc319b0e55cdfc13`, independently read the FULL current files below and obtained their SHA-256 values with a read-only provenance command:
+
+| File under `theory/` | SHA-256 at this read |
+|---|---|
+| `proof-attempts-2-codex-05-cubic-finite-reduction.md` | `042d41b145182d321601db83d748e86278649866e8b6e9211cc13628c1c8816b` |
+| `proof-attempts-2-codex-06-degree-three-maxima-count.md` | `cf892c0f16eafdcc55bc33f3c3691834457aa25fe0770ad98a66dca2075e40c3` |
+| `proof-attempts-2-codex-07-degree-three-global-argmax.md` | `b1472c2642ee97e0a42de9f98acd36e00a9f6e0359e90ca09945a277a82c5760` |
+
+The refreshed theory-05 reading confirms that its mathematical content is unchanged from the earlier full inspection; its prose-spacing edits introduce no new mathematical finding. The previous receipt remains applicable to the mathematical claims, with the new hash above identifying this refreshed version.
+
+Theory-06 and theory-07 were both explicitly OPEN pending final finite verification and independent execution. This review checks the written mathematical reductions, **not** the producer/checker implementation, certificate bytes, run completion, or numerical values of pending interval fields. It is supplementary to the required Claude audit.
+
+### Theory-06 count reduction
+
+The intended exact board, physical-coordinate types, and 15=7+6+2 count are stated without narrowing the original n=3,...,8 target. Under the stated finite-check assumptions, the proof reduction is mathematically adequate:
+
+- An exact monomial Vandermonde inverse, with its matrix identities, establishes the cardinals and constant reproduction. All 1024 signed cubics must be covered. Common-factor exclusion uses theory-05 only for strict interior maxima; it is not misused to settle non-strict global maxima.
+- Complete projection partitions and EVERY Cartesian pair must receive a valid disposition. Uniqueness/injectivity on the whole discarded pair box is essential to the exact-crease exclusion; the prose requires it explicitly. A valid existence box with strict cardinal signs identifies one actual active mask and one strict maximum. Thus other masks cannot duplicate such an accepted interior maximum. Extraneous norm roots and projection pairs still require explicit dispositions.
+- The edge reduction must cover every nonconstant restriction, every derivative root and all equality/zero cases encountered. The asserted special identity for L_6 on x=1, the complete list of identicallyzero edge restrictions, the exact factor signs, and the signs of the actual inward derivatives are **finite predicates still to be checked**, not inherited facts from this review. If those predicates hold, all surviving edge candidates have rigorous strict relative maxima and the two part-1 representatives are integrated without reusing the old floating neighbourhood discards.
+- Exact corner values and all-active inward derivative tests give the four point dispositions. The separate interior and open-edge enumeration supplies full neighbourhood coverage, so the argument does not depend on the old (D)/(E) handlers.
+
+One **minor clarification requested** in the inspected theory-06 version: proof step 4 says to cover all real roots of the norm of the tangent derivative without explicitly first discarding constant restricted q_s. The all-plus mask gives q_s=1 and an identicallyzero derivative, which has no finite real-root partition. Theory-05 already proves that a constant restriction cannot account for a strict edge maximum, so the mathematical repair is simply to state that constant restrictions are disposed of first, and derivative-root isolation applies to the remaining nonconstant restrictions. This was sent to root and the developer before this append. It is not an obstruction to the stated reduction once that existing branch is made explicit; this review does not assert that the checker already implements it.
+
+### Theory-07 global-argmax reduction
+
+No further mathematical finding was identified in the conditional written argument. Its additional finite assumptions are necessary and are not supplied merely by the strict count in theory-06.
+
+1. The threshold separation is exact: for `C=17/6+(2/3)*sqrt(2)`,
+
+   `C-15/4=(8*sqrt(2)-11)/12>0`,
+
+   since both sides of `8*sqrt(2)>11` are positive and their squares are 128 and 121. This is a handwritten elementary verification, not a run of the finite certificate. The exact cardinal evaluation giving C at both non-node corners still belongs to the pending finite fields.
+2. At an interior global maximum with value M>=C>3, every active signed cubic has a non-strict ordinary local maximum. A verified upper bound below 3 for **every** flat mask excludes those masks from the active set. For each remaining mask, constant gcd and nonzero projection resultants put all stationary points in a finite Cartesian set. The null-line argument produces a whole stationary segment if its Hessian is singular, contradicting that finite set. Thus all active Hessians are negative definite, and the finite active/inactive neighbourhood argument makes lambda itself strict. It must occur in the complete strict list.
+3. Each edge has a Padua node; at such a node every signed cardinal sum has value +1 or -1. Therefore a restriction constant on that edge must have that value and cannot be active at a global maximum with value at least C>1. Every other active cubic restriction at an edge global maximum has zero first and negative second tangential derivative, so the complete edge enumeration covers it. Derivative/sign mismatch, positive tangential curvature, a regular restricted zero, and strictly positive actual inward derivative all exclude a non-strict global maximum too. The proof additionally requires that **every** surviving compatible candidate, including any potential zero-normal case, receives the claimed negative inward-derivative/strictness disposition. Under that verified condition, each possible edge global maximum belongs to the strict list.
+4. Rigorous upper value enclosures below 15/4 must cover every accepted interior and edge root, rather than only rounded representatives. Then their values are below C. Compactness guarantees a global maximum, and the exhaustive interior/edge exclusions leave only the four corners. The node corners have value 1 and the two non-node corners have value C, proving the exact equality set.
+
+The 32-panel flat-mask bounds, non-flat coprime partition, all candidate dispositions, and full accepted-root value enclosures have **not** been executed or inspected by this agent. No status upgrade of theory-06 or theory-07 follows from this mathematical review. The actual producer/checker and independent execution receipts remain separate obligations.
+
+### Disposition of the theory-06 constant-restriction clarification
+
+After the developer's correction, read the changed proof step 4 and obtained the new theory-06 SHA-256:
+
+`189621815f34d81ef358f0a886ae0bda4c61d31f439522338baa5d8a89fe2f17`.
+
+It now explicitly says to discard constant edge restrictions using result05 and only then isolate roots of the norm of the **nonzero** tangent derivative. This resolves the sole clarification requested in the preceding review. The prior complete mathematical inspection plus this bounded changed-paragraph read covers this revised proof version; the finite checks, evidence insertion and any later status changes remain outside this receipt.

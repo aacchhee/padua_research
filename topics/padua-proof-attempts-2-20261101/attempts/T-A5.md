@@ -11,7 +11,7 @@
 
 ## Status
 
-A5 OPEN. Pre-run gate and source reading in progress. No certification claimed.
+A5 PARTIAL by explicit degree cases: n=3 is PROVED under separate result06; n=4,…,8 remain OPEN. The same six-hour A5 box continues with the independently assigned n=4 developer. Result07 proves A4(d) for n=3. Required Claude audit of Part2 remains PENDING.
 
 ## Runs needed
 
@@ -47,3 +47,46 @@ Preconditioner correction before the final proof run: root noted that selecting 
 2026-11-01 09:34UTC source-impact update from root: part1 response at `7b8884a2f98518784ff3698dd2f3f9c49c9cdd62` disposes F1–F6 minor findings. The theorem03 mathematical proof, code and scientific outputs are unchanged; its MEASURED trace paragraph moves out of the Statement and D/E obligations become explicit. Root integrates the changed authoritative records. Required literal dependency `PD-T?proof-attempts-codex-03 (audit pending)` is retained, with this dated note that its Claude audit is ACCEPTED and minor finding dispositions completed. No dependentmathematical run needs restart for this record-only change.
 
 New reduction proof saved as result05 (`theory/proof-attempts-2-codex-05-cubic-finite-reduction.md`). The first complete boundary producer found6acceptededge roots and2non-node corners, with0unresolved dispositions acrossall3584canonicaledge masks. This is preliminary untilthe whole certificate and separate independent execution arecomplete. Checkeragent independentlyverified the suppliedboundaryrecords (reported6/2,71.88s); it did not rerun the boundarysearch. Finalall-in-oneproducer will regenerateallcode / evidencefromtheexact-preconditioner revision.
+
+## Final degree-three producer completed (2026-11-01 09:45 UTC)
+
+Frozen corrected modules completed successfully, with no unresolved disposition.
+The single essential certificate is `outputs/a5_n3_certificate.json.gz`:
+386415 bytes, SHA256 `401a99243ebeb7b3844216a47f8466bbb60086cbba71d2de2088d7626f532b2b`.
+It decompresses to2809931 bytes, SHA256
+`8340b56cfa17f735645c6585ea059bf489ee001cb76dcc254e24ea165242eae1`.
+This is genuine compression of one artifact, not splitting to evade limits.
+The committed compressed artifact is below1MB; no cold-storage dependency is needed.
+
+Coverage:1024 interior masks;20 flat and1004 residual patterns;35376 Cartesian
+pairs with8972 outside,23668 gradient exclusions,580 sign exclusions,2147 Hessian
+exclusions,2 exact regular-crossing exclusions and7 accepted maxima. The four
+edges have3584 canonical masks,44 constant restrictions,10508 root dispositions:
+2596 outside,2972 derivative exclusions,2470 tangent-Hessian exclusions,2438 sign
+exclusions,26 exact regular-edge exclusions and6 accepted edge maxima. Both
+non-node corners pass every active-pattern inward-derivative test; both node
+corners have value1. Producer receipt reports7 interior /6 edge /2 corner /15 total.
+These values remain verification-pending until the separate checker and actual
+independent producer/checker run pass.
+
+Additional global predicates: all1004 non-flat gcds are constant; all20 flat
+polynomials are bounded by225879/125000<3 using32 supplied exact panels each.
+All13 non-corner accepted values are below15/4, while the exact corner value
+is17/6+(2/3)sqrt2>15/4. Result07 explicitly rules out non-strict global plateaus
+before using this separation. The two x=1 edge roots are identified exactly
+with part1theorem03's y=±1/sqrt3 representatives and its local proof is reused.
+
+Actual environment: Python3.12.14, SymPy1.14.0. Every proof inequality and root
+partition is exact or outward Fraction arithmetic. Final code has no `sp.N` or
+other floating approximation in preconditioner selection. The first complete
+corrected producer ran from about09:35 to09:45UTC; only per-phase progress
+seconds were logged, not an exact whole-command wall-clock measurement.
+
+
+## Degree-three done criterion met (2026-11-01)
+
+The complete separate checker exited0 in217.540s, verifying15 total =7 interior +6 open-edge +2 corner maxima, all five A5 obligations and the additional global fields. A different agent actually regenerated the full producer artifact byte-identically and then ran the checker on both its own and the developer artifacts; both exited0 (220.972s/220.474s), with every mathematical result identical. All14 malformed-certificate controls were rejected in both sessions. Code pins were unchanged before/after both complete runs. Actual commands and hashes are recorded in independent-execution-a5.md and independent-checks-a5-checker.md.
+
+Results05,06,07 are now PROVED within their stated degree-three scopes; required Part2Claude audit remains PENDING. Result06 certifies15/7/6/2. Result07 proves exact global maximum17/6+(2/3)sqrt2, attained only at(−1,±1), after explicitly excluding non-strict global plateaus. Primary Table3 comparison agrees at the only certified degree n=3; no correction is made for n=6,7,8.
+
+The n=3 computation is at its done criterion; no further n=3 search is needed. A5's same timebox continues for n=4 in the separately owned T-A5-n4.md and code/a5_n4* paths. Cases n=4,…,8 remain OPEN until their own complete evidence and independent checks exist.

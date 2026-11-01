@@ -11,3 +11,10 @@ Required Claude audit: **PENDING**. Independent Codex subagent checks supplement
 ## A5 / A4(a) / B3 / B1
 
 Not yet submitted for independent execution. Every consequential exact/interval computation needs a different subagent's actual replay and own output. A5 also requires a separate checker that verifies the produced certificate without rerunning the search.
+
+## A5 n=3 complete
+
+- Analytic reductions05–07 independently inspected by `/root/a2_independent_route` (gpt-6.1-sol xhigh), with hash-pinned scope in independent-checks-a5-reduction.md. It does not claim numerical executions. The separate quartic reduction08 has its own independent-checks-a5-n4-reduction.md and does not certify a quartic count.
+- Separate certificate checker implemented by `/root/a5_checker` (gpt-6.1-sol xhigh), without importing producer/search/root-isolation code. Its full final verification accepted15=7+6+2 and the separate global fields;14 negative controls rejected. Own command/hash/predicate proof receipt: independent-checks-a5-checker.md.
+- Different executor `/root/input_manifest` (gpt-6.1-sol medium) actually regenerated the producer certificate, then executed the frozen checker on both independent and developer artifacts plus14 negative controls. Producer artifacts are byte-identical; exact commands,6before/after source hashes, own artifact identities and limitations: independent-execution-a5.md. Both final checker receipts verify full closed-square scope and global value/equality set.
+- Root inspected final positive flags, scope, values and evidence sizes. Required Claude Part2 audit remains PENDING. No new count at n4…8 or all-n argmax follows from these checks.
