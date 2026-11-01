@@ -4,13 +4,14 @@ This is the topic's results file; only the topic orchestrator writes it. Branch 
 
 All IDs are provisional (`PD-T?drift-codex-NN`, `PD-N?drift-codex-NN`, `IDEA?drift-codex-NN`). The permanent reservations are PD-T136–155, PD-N062–071, IDEA-246–285 and LIT-445–459. Theory records are in `tracks/bivariate-lanczos/theory/drift-codex-*.md`, code in `tracks/bivariate-lanczos/code/drift/`, and the topic files in `topics/padua-lanczos-drift-20261101/`.
 
-## Status (2026-11-01): WORK — audit-02 changes required
+## Status (2026-11-01): AUDIT — response-02 done, Codex re-audit pending
 
 - **Development.** Codex developed the campaign (scientific source `b09e1db`).
 - **Audit-01.** The Claude audit (Opus 5.5 xhigh) of `36c93794` returned CHANGES REQUIRED: 0 high, 10 medium and 32 low findings, with no PROVED or MEASURED claim refuted. See [audit-01](../topics/padua-lanczos-drift-20261101/audit-01.md).
 - **Response-01.** By AC's redirection, Claude is the developer of the fixes. Because Claude is also the auditor of record, a Codex re-audit is required before PR preparation. See [response-01](../topics/padua-lanczos-drift-20261101/response-01.md).
 - **Integration.** PR #14 merged first (main `e0d9e3d`); PR #16 is now merged at `28aaa208` and integrated without rewriting history. Both topics’ ledger/crosswalk content is preserved.
 - **Audit-02.** Codex Astra xhigh re-audited Claude response-01: CHANGES REQUIRED, 2 medium and 8 low findings. Numerical checks reproduce. Correct the record-15 ancillary limit and address record-05 finite-result classification, plus the listed low corrections. [Audit record](../topics/padua-lanczos-drift-20261101/audit-02.md).
+- **Response-02.** Claude answered all 10 audit-02 findings ([response-02](../topics/padua-lanczos-drift-20261101/response-02.md)): record 15 limit factor corrected; record 05's finite inequalities split into the new PROVED record 06; record 30 labels and eventual-only scope; E6 wording and the numpy pin; a degree-4 trajectory replay; repository-only results wording. Codex re-audit pending (handoff 08).
 
 ## Meaningful results, at their stated scope
 
@@ -43,4 +44,4 @@ Still OPEN:
 
 ## Next step
 
-Claude response-02 to audit-02, followed by independent Codex re-audit of material changes. PR16 is merged: results tracking is repository-only. After acceptance, PR preparation assigns final IDs from reserved ranges, applies approved registry proposals, and adds only this topic’s root `RESULTS.md` section. Only AC merges.
+Independent Codex re-audit of response-02 (handoff 08). PR16 is merged: results tracking is repository-only. After acceptance, PR preparation assigns final IDs from reserved ranges, applies approved registry proposals, and adds only this topic’s root `RESULTS.md` section. Only AC merges.
