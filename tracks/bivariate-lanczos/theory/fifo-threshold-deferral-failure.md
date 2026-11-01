@@ -9,7 +9,7 @@ Split into: none.
 
 [FP, MEASURED; scope = Parameter range below.] Let a node stream be processed by 'scheme' Givens updating with the following deferral rule: before committing a node, insert it tentatively; if the minimum over the monomials j of the absolute primary pivot of the resulting state is below tau (the online detector of PD-T?bivariate-lanczos-claude-503 B), put the node back in a FIFO buffer and try the next one; commit the first node that passes, with a forced insertion if the buffer stalls. Then, on Padua n = 20 and 30 (cubature and U(0.1,1) weights), tau = 1e-8 and tau = 1e-3:
 
-(D1) On the unisolvent orders rand1-3 and gepp the rule equals 'scheme' (tau = 1e-8: no deferrals, identical errors) or is within 1.4 times it (tau = 1e-3: 0-29 deferrals; e.g. n = 30 rand3 U weights 1.0e-13 vs 7.5e-14).
+(D1) On the numerically unisolvent orders rand1-3 and gepp (floating-point σ_min estimates of PD-T?bivariate-lanczos-claude-503, not certificates) the rule equals 'scheme' (tau = 1e-8: no deferrals, identical errors) or is within 1.4 times it (tau = 1e-3: 0-29 deferrals; e.g. n = 30 rand3 U weights 1.0e-13 vs 7.5e-14).
 
 (D2) On the structured streams (given, sortx) it is far worse than 'scheme' and than the best order (gepp-scheme 1.9e-14 at n = 20, 3.8e-14 at n = 30): tau = 1e-8: n = 20 3.1e-9 (given), 1.5e-8 (sortx) (cubature), 5.5e-9, 6.3e-9 (U); n = 30 5.6e-5, 2.9e-8 (cubature), 1.4e-5, 1.4e-8 (U); tau = 1e-3: n = 20 5.5e-10, 2.0e-9, 8.8e-10, 5.0e-9; n = 30 1.5e-3, 1.3e-1, 7.8e-4, 8.8e-4. The number of deferral events is 9 000-79 000 and forced insertions occur (0-10 per run). 'scheme' on the same streams is 1.0e-14..2.6e-14.
 
@@ -62,3 +62,5 @@ n >= 40; a deferral that selects by the conditioning of the prefix rather than b
 ## History
 
 2026-10-31T23:00Z, Claude Sonnet 5.5 (high), created in response to L5 reconstruction 01 finding L9 (AC's L5 decision: a separate evidenced mechanism failure gets its own PD-N).
+
+2026-11-01T08:22:31+01:00, Claude Sonnet 5.5 (high), response to Codex audit-01 (L5) finding **M2** (terminology only): "(D1) On the unisolvent orders rand1-3 and gepp" now say "numerically unisolvent" (floating-point σ_min estimates of PD-T?bivariate-lanczos-claude-503, not exact or interval certificates). No number, scope, status (MEASURED) or disposition changed; audit-01 accepts this record as an eligible scoped negative statement.

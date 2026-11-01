@@ -38,7 +38,7 @@ None.
 
 ## Checks
 
-Numerical illustration (MEASURED, not part of the proof): for Padua n = 10..50 the GEPP order and the randomised threshold-pivoting order (`prefix.py`) have min_K σ_min(prefix block of the orthogonal Chebyshev matrix) between 4.7e-4 and 1.3e-1 (R01 logs `r01_prefix_*.jsonl`), i.e. all prefixes unisolvent with a visible margin; the greedy-by-threshold *online* variant with the pivot detector is tested in R03 and is not covered by this lemma.
+Numerical illustration (MEASURED, not part of the proof): for Padua n = 10..50 the GEPP order and the randomised threshold-pivoting order (`prefix.py`) have, among the refined/scanned prefixes, smallest numerical σ_min estimates (floating point, not certificates) of the prefix blocks of the orthogonal Chebyshev matrix between 4.7e-4 and 1.3e-1 (R01 logs `r01_prefix_*.jsonl`), i.e. all prefixes numerically unisolvent with a visible margin; the greedy-by-threshold *online* variant with the pivot detector is tested in R03 and is not covered by this lemma.
 
 ## Sources
 
@@ -52,7 +52,7 @@ Order the nodes so that S comes first, and write V = [[B, C],[D, E]] with B = V[
 
 An existence statement for exact arithmetic. It does not say how large the smallest prefix singular value must be, nor that a *cheap online* test finds an admissible node (the measured detector `min_j |pivot_j| < 1e-10` in R03 is a separate MEASURED claim), and the bound σ_min(S_c)/√(N−K) is not claimed to be uniform in n.
 
-**Scope notes added after reconstruction 01 (CONFIRMED, findings L3).** (a) The order produced by floating-point GEPP (scipy `getrf`) is an exact-arithmetic GEPP order only up to near ties; its use as 'all prefixes unisolvent' in measured claims rests on the numerical certificate of `prefix.py` (and the reviewer's independent LU-based lower bounds, certified min sigma_min >= 6.5e-5 (n = 30), 2.4e-5 (n = 40), 1.2e-5 (n = 50) on the reviewer's orthonormal matrix), not on this lemma. (b) For M > N (random nodes, where Algorithm 1 uses M graded monomials beyond degree n) the proof carries over verbatim whenever the M×M matrix of the nodes against the first M graded monomials is nonsingular (generic, not guaranteed); the lemma as stated is for N = dim Pi_n.
+**Scope notes added after reconstruction 01 (CONFIRMED, findings L3).** (a) The order produced by floating-point GEPP (scipy `getrf`) is an exact-arithmetic GEPP order only up to near ties; its use as 'all prefixes unisolvent' in measured claims rests on the numerical σ_min estimates of `prefix.py` (earlier wording: 'numerical certificate') and the reviewer's independent LU-based numerical lower estimates (smallest 6.5e-5 (n = 30), 2.4e-5 (n = 40), 1.2e-5 (n = 50) on the reviewer's orthonormal matrix; Codex audit-01's all-prefix LU lower estimate for the developer's GEPP order at n = 50 is 1.1564e-5 with max-entry factorization residual 4.62e-15), not on this lemma. All of these are floating-point estimates, not exact or interval certificates (audit-01 L5 M2). (b) For M > N (random nodes, where Algorithm 1 uses M graded monomials beyond degree n) the proof carries over verbatim whenever the M×M matrix of the nodes against the first M graded monomials is nonsingular (generic, not guaranteed); the lemma as stated is for N = dim Pi_n.
 
 ## Open items
 
@@ -63,3 +63,5 @@ Quantitative growth of the best achievable min_K σ_min(prefix block) over order
 2026-10-31, Claude Sonnet 5.5 (high), L5 R03: created.
 
 2026-10-31T22:58Z, Claude Sonnet 5.5 (high), response to L5 reconstruction 01: finding L3 and the M > N scope note added. Reconstruction verdict: CONFIRMED.
+
+2026-11-01T08:22:09+01:00, Claude Sonnet 5.5 (high), response to Codex audit-01 (L5) finding **M2**. The lemma, its statement and its proof are unchanged (audit-01 accepts T505 as PROVED within scope); status unchanged (PROVED). Terminology in the two non-proof remarks changed: "all prefixes unisolvent with a visible margin" became "all prefixes numerically unisolvent ... (floating point, not certificates)"; "rests on the numerical certificate of `prefix.py` (and the reviewer's independent LU-based lower bounds, certified min sigma_min >= 6.5e-5 (n = 30), 2.4e-5 (n = 40), 1.2e-5 (n = 50) ...)" became "numerical σ_min estimates ... LU-based numerical lower estimates (smallest ...)"; added the audit's all-prefix LU lower estimate 1.1564e-5 (residual 4.62e-15) and the statement that none is an exact or interval certificate.
