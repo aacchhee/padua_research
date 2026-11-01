@@ -1,6 +1,6 @@
 # Handoff 09 — padua-lanczos-drift-20261101 — narrow response to audit-03
 
-- Status: open
+- Status: done in 02bd97b892ed409ec64e9b281130c71a85e914e9
 - Previous handoff: 08-reaudit.md
 - Next agent / model / effort: Claude, Opus 5.5 high (mathematical scope and checker response)
 - Role: developer/orchestrator; Claude responds to Codex audit
