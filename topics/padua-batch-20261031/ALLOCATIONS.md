@@ -13,7 +13,7 @@ Full ledgers and four registries checked at main
 `9f0c7710abd19ee5a0d61bce6384e7a399e838d2`. All closed PRs returned were merged;
 no missing retired reservation was found. The MZ topic appeared between the
 initial and final scan; the superseded recommendation was never reserved.
-[Complete scan and file identities](../padua-lanczos-drift-20261101/allocation-scan.json).
+[Complete scan and file identities](../padua-lanczos-drift-20261101/allocation-scan.json); reservation first published in `6920ba632843597c37e1493d077c1df2e89f54cb`; copy pinned at [2d20672](https://github.com/aacchhee/padua_research/blob/2d20672f62e0130d2adbe104af6e5ee9d05d20af/topics/padua-lanczos-drift-20261101/allocation-scan.json).
 
 | Namespace | Reserved range | Count | Estimated needs + permanent headroom |
 |---|---|---:|---|
@@ -31,7 +31,7 @@ Scientific records retain provisional IDs through development and audit.
 
 Owner branch: `codex/padua-mz-2d-20261101`. This is a reservation for the early draft, not a final-ID assignment. The fresh-range procedure supersedes historical single-owner prose below. All previous allocations, permanent headroom and retired reservations remain in force.
 
-Checked complete ledgers and final-ID uses at main `806cc7b4509fd93bae652f9545d32d95529f8281`, sole other open PR12 `12e9cf4539d0977773cad75fc74f93d1664cb429`, and retained merged PR9 head `752ba068589683afe644b505d673f8da1529cbf0`. All twelve returned repository PRs were individually classified: eleven merged, one open, none closed-unmerged. Main includes the prior PR9 reservation through PD-T105 (including permanent gaps104–105). Historical LIT provisional aliases in the1700s are not final IDs. Full scan with file identities: [reservation-scan.json](https://github.com/aacchhee/padua_research/blob/9f0c7710abd19ee5a0d61bce6384e7a399e838d2/topics/padua-mz-2d-20261101/protocol/reservation-scan.json); [GitHub state receipt](https://github.com/aacchhee/padua_research/blob/9f0c7710abd19ee5a0d61bce6384e7a399e838d2/topics/padua-mz-2d-20261101/protocol/github-scan.json).
+Checked complete ledgers and final-ID uses at main `806cc7b4509fd93bae652f9545d32d95529f8281`, sole other open PR12 `12e9cf4539d0977773cad75fc74f93d1664cb429`, and retained merged PR9 head `752ba068589683afe644b505d673f8da1529cbf0`. All twelve returned repository PRs were individually classified: eleven merged, one open, none closed-unmerged. Main includes the prior PR9 reservation through PD-T105 (including permanent gaps104–105). Historical LIT provisional aliases in the1700s are not final IDs. Full scan with file identities: [reservation-scan.json](../padua-mz-2d-20261101/protocol/reservation-scan.json); [GitHub state receipt](../padua-mz-2d-20261101/protocol/github-scan.json).
 
 | Namespace | Reserved range | Count | Estimated needs + permanent headroom | Next unreserved |
 |---|---|---:|---|---|
@@ -183,3 +183,11 @@ The boundary was the column "Next unreserved after this block" of the bivariate-
 ## PR #9 assignments after reservation publication (2026-11-01)
 
 Reservation priority: `020dcddd36fa1e3254cbf288701d5ab02d27c580`, published and linked in PR #9 before assignment. Fresh recheck of PR #12 at `12e9cf4539d0977773cad75fc74f93d1664cb429` found unchanged ledgers/registries and no collision. PD-T101 = exact corner identity; PD-T102 = generic distinct-x commutant; PD-T103 = degree-3 local certificates. PD-T104–105 remain permanent unused headroom. No other namespace reserved or assigned. [Exact map](../padua-proof-attempts-20261101/finalization/id-map.json). Earlier ledger text and all earlier ranges are preserved.
+
+## Padua MZ 2D campaign — PR14 final registration
+
+Own reservation unchanged, first published `9f0c7710abd19ee5a0d61bce6384e7a399e838d2`: assigned PD-T106–117 (12), PD-N044–053 (10), IDEA-210–227 (18), LIT-427–428 (2). Same-source LIT IDs reused: 312,014,379,314,045. Permanent unused headroom: **PD-T118–135, PD-N054–061, IDEA-228–245, LIT-429–444**. No ranges shift or shrink. [Map](../padua-mz-2d-20261101/protocol/final-id-map.json); [fresh scan](../padua-mz-2d-20261101/protocol/final-reservation-recheck.json).
+
+PR15 reservation data above is imported unchanged (its unavailable local evidence link is made a pinned remote link) from `2d20672f62e0130d2adbe104af6e5ee9d05d20af`; first published commit **6920ba632843597c37e1493d077c1df2e89f54cb**, [PR15](https://github.com/aacchhee/padua_research/pull/15). Its PD-T136–155, PD-N062–071, IDEA-246–285 and LIT-445–459 remain reserved to its branch. This campaign assigns none of them. Stage AUDIT, Claude PENDING.
+
+**Integration order (AC, 2026-11-01):** PR14 (`codex/padua-mz-2d-20261101`) before PR15 (`codex/padua-lanczos-drift-20261101`). After AC squash-merges PR14, the PR15 orchestrator merges the new main without rebasing and keeps both topics' complete reservation and mapping text and every permanent gap (see [readiness plan](../padua-mz-2d-20261101/readiness-plan-01.md)). No range changes. Receipt: [integration-pr14-first-20261101.json](../padua-mz-2d-20261101/protocol/integration-pr14-first-20261101.json).

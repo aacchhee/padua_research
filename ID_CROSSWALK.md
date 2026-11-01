@@ -1,5 +1,7 @@
 # Identifier crosswalk
 
+Padua MZ 2D has reserved PD-T106–135, PD-N044–061, IDEA-210–245 and LIT-427–444 in the [shared batch ledger](topics/padua-batch-20261031/ALLOCATIONS.md), with headroom and a [fresh scan receipt](topics/padua-mz-2d-20261101/protocol/reservation-scan.json). This reservation-only note assigns no final ID; campaign records remain provisional until PR preparation.
+
 Authoritative batch reservations, integration order and allocation owner: [shared batch ledger](topics/padua-batch-20261031/ALLOCATIONS.md). The [charter member ledger](topics/charter-unisolvence-20261031/ALLOCATIONS.md) preserves this member’s original allocation and base/active-PR checks. Final map retained as [JSON](topics/charter-unisolvence-20261031/final-id-map.json). Frozen independent reports deliberately retain provisional IDs and old staging paths; resolve them here and through the [mechanical impact record](topics/charter-unisolvence-20261031/integration-impact.md).
 
 | Provisional ID | Final ID | Source branch / commit | Canonical file | Allocating PR / batch |
@@ -904,9 +906,88 @@ From the topic's [SPLITS.md](topics/bivariate-lanczos-20261031/SPLITS.md) (respo
 
 Original-to-split mapping: **PD-T098** (alias PD-T?programme-ideas-claude-04), exact finite corner-identity part → **PD-T101**. The original asymptotic expansion stays OPEN, its wording and measured fits preserved. B5 → PD-T102 is the positive generic complement to PD-N042; the negative proof has no dependency on it. A5-partial → PD-T103 is supporting local work for PD-T100, whose counts remain MEASURED and completeness OPEN.
 
+## Padua MZ 2D campaign — PR14 final registration
+
+Reservation priority: `9f0c7710abd19ee5a0d61bce6384e7a399e838d2`; [map](topics/padua-mz-2d-20261101/protocol/final-id-map.json), [fresh union scan](topics/padua-mz-2d-20261101/protocol/final-reservation-recheck.json). No accepted ID is renumbered.
+
+| Provisional ID | Final ID | Origin | Durable record / source coverage | Audit / provenance |
+|---|---|---|---|---|
+| PD-T?mz2d-codex-01 | PD-T106 | codex/padua-mz-2d-20261101 | [record](tracks/mz-constants/theory/mz2d-aliasing.md) | Claude audit PENDING; see exact source scope |
+| PD-T?mz2d-codex-02 | PD-T107 | codex/padua-mz-2d-20261101 | [record](tracks/mz-constants/theory/mz2d-certified-spectra.md) | Claude audit PENDING; see exact source scope |
+| PD-T?mz2d-codex-03 | PD-T108 | codex/padua-mz-2d-20261101 | [record](tracks/mz-constants/theory/mz2d-measured-spectra.md) | Claude audit PENDING; see exact source scope |
+| PD-T?mz2d-codex-04 | PD-T109 | codex/padua-mz-2d-20261101 | [record](tracks/mz-constants/theory/mz2d-defect-structure.md) | Claude audit PENDING; see exact source scope |
+| PD-T?mz2d-codex-10 | PD-T110 | codex/padua-mz-2d-20261101 | [record](tracks/mz-constants/theory/mz2d-upper-open.md) | Claude audit PENDING; see exact source scope |
+| PD-T?mz2d-codex-20 | PD-T111 | codex/padua-mz-2d-20261101 | [record](tracks/mz-constants/theory/mz2d-lower-corner-weights.md) | Claude audit PENDING; see exact source scope |
+| PD-T?mz2d-codex-30 | PD-T112 | codex/padua-mz-2d-20261101 | [record](tracks/mz-constants/theory/mz2d-hyperinterpolation-absolute.md) | Claude audit PENDING; see exact source scope |
+| PD-T?mz2d-codex-31 | PD-T113 | codex/padua-mz-2d-20261101 | [record](tracks/mz-constants/theory/mz2d-hyperinterpolation-reproduction.md) | Claude audit PENDING; see exact source scope |
+| PD-T?mz2d-codex-32 | PD-T114 | codex/padua-mz-2d-20261101 | [record](tracks/mz-constants/theory/mz2d-hyperinterpolation-uniform-open.md) | Claude audit PENDING; see exact source scope |
+| PD-T?mz2d-codex-40 | PD-T115 | codex/padua-mz-2d-20261101 | [record](tracks/mz-constants/theory/mz2d-fixed-ratio-diamond-reconstruction.md) | Claude audit PENDING; see exact source scope |
+| PD-T?mz2d-codex-41 | PD-T116 | codex/padua-mz-2d-20261101 | [record](tracks/mz-constants/theory/mz2d-fixed-ratio.md) | Claude audit PENDING; see exact source scope |
+| PD-T?mz2d-codex-50 | PD-T117 | codex/padua-mz-2d-20261101 | [record](tracks/mz-constants/theory/mz2d-tensor-control.md) | Claude audit PENDING; see exact source scope |
+| PD-N?mz2d-codex-01 | PD-N044 | codex/padua-mz-2d-20261101 | [record](tracks/mz-constants/theory/mz2d-eta-counterexample.md) | Claude audit PENDING; see exact source scope |
+| PD-N?mz2d-codex-10 | PD-N045 | codex/padua-mz-2d-20261101 | [record](tracks/mz-constants/theory/mz2d-upper-sign-obstruction.md) | Claude audit PENDING; see exact source scope |
+| PD-N?mz2d-codex-11 | PD-N046 | codex/padua-mz-2d-20261101 | [record](tracks/mz-constants/theory/mz2d-upper-tensor-obstruction.md) | Claude audit PENDING; see exact source scope |
+| PD-N?mz2d-codex-20 | PD-N047 | codex/padua-mz-2d-20261101 | [record](tracks/mz-constants/theory/mz2d-endpoint-tensor-obstruction.md) | Claude audit PENDING; see exact source scope |
+| PD-N?mz2d-codex-21 | PD-N048 | codex/padua-mz-2d-20261101 | [record](tracks/mz-constants/theory/mz2d-lower-corner-subtraction-obstruction.md) | Claude audit PENDING; see exact source scope |
+| PD-N?mz2d-codex-22 | PD-N049 | codex/padua-mz-2d-20261101 | [record](tracks/mz-constants/theory/mz2d-endpoint-rhombus-packet.md) | Claude audit PENDING; see exact source scope |
+| PD-N?mz2d-codex-30 | PD-N050 | codex/padua-mz-2d-20261101 | [record](tracks/mz-constants/theory/mz2d-hyperinterpolation-signed-obstruction.md) | Claude audit PENDING; see exact source scope |
+| PD-N?mz2d-codex-31 | PD-N051 | codex/padua-mz-2d-20261101 | [record](tracks/mz-constants/theory/mz2d-hyperinterpolation-reproduction-obstruction.md) | Claude audit PENDING; see exact source scope |
+| PD-N?mz2d-codex-32 | PD-N052 | codex/padua-mz-2d-20261101 | [record](tracks/mz-constants/theory/mz2d-hyperinterpolation-absolute-obstruction.md) | Claude audit PENDING; see exact source scope |
+| PD-N?mz2d-codex-40 | PD-N053 | codex/padua-mz-2d-20261101 | [record](tracks/mz-constants/theory/mz2d-fixed-ratio-rectangular-obstruction.md) | Claude audit PENDING; see exact source scope |
+| IDEA?mz2d-codex-01 | IDEA-210 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/ideas-d1.md) | Claude audit PENDING; see exact source scope |
+| IDEA?mz2d-codex-02 | IDEA-211 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/ideas-d1.md) | Claude audit PENDING; see exact source scope |
+| IDEA?mz2d-codex-10 | IDEA-212 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/ideas-d2.md) | Claude audit PENDING; see exact source scope |
+| IDEA?mz2d-codex-11 | IDEA-213 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/ideas-d2.md) | Claude audit PENDING; see exact source scope |
+| IDEA?mz2d-codex-12 | IDEA-214 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/ideas-d2.md) | Claude audit PENDING; see exact source scope |
+| IDEA?mz2d-codex-20 | IDEA-215 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/directions/ideas-d3.md) | Claude audit PENDING; see exact source scope |
+| IDEA?mz2d-codex-21 | IDEA-216 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/directions/ideas-d3.md) | Claude audit PENDING; see exact source scope |
+| IDEA?mz2d-codex-22 | IDEA-217 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/directions/ideas-d3.md) | Claude audit PENDING; see exact source scope |
+| IDEA?mz2d-codex-23 | IDEA-218 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/directions/ideas-d3.md) | Claude audit PENDING; see exact source scope |
+| IDEA?mz2d-codex-30 | IDEA-219 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/ideas-d5.md) | Claude audit PENDING; see exact source scope |
+| IDEA?mz2d-codex-31 | IDEA-220 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/ideas-d5.md) | Claude audit PENDING; see exact source scope |
+| IDEA?mz2d-codex-32 | IDEA-221 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/ideas-d5.md) | Claude audit PENDING; see exact source scope |
+| IDEA?mz2d-codex-33 | IDEA-222 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/ideas-d5.md) | Claude audit PENDING; see exact source scope |
+| IDEA?mz2d-codex-34 | IDEA-223 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/ideas-d5.md) | Claude audit PENDING; see exact source scope |
+| IDEA?mz2d-codex-40 | IDEA-224 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/ideas-d4.md) | Claude audit PENDING; see exact source scope |
+| IDEA?mz2d-codex-41 | IDEA-225 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/ideas-d4.md) | Claude audit PENDING; see exact source scope |
+| IDEA?mz2d-codex-42 | IDEA-226 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/ideas-d4.md) | Claude audit PENDING; see exact source scope |
+| IDEA?mz2d-codex-50 | IDEA-227 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/directions/ideas-d7.md) | Claude audit PENDING; see exact source scope |
+| LIT?mz2d-codex-01 | LIT-312 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/literature.md) | Same-source reuse; new reading coverage remains separately dated |
+| LIT?mz2d-codex-02 | LIT-427 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/literature.md) | Claude audit PENDING; see exact source scope |
+| LIT?mz2d-codex-03 | LIT-428 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/literature.md) | Claude audit PENDING; see exact source scope |
+| LIT?mz2d-codex-04 | LIT-014 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/literature.md) | Same-source reuse; new reading coverage remains separately dated |
+| LIT?mz2d-codex-05 | LIT-379 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/literature.md) | Same-source reuse; new reading coverage remains separately dated |
+| LIT?mz2d-codex-06 | LIT-314 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/literature.md) | Same-source reuse; new reading coverage remains separately dated |
+| LIT?mz2d-codex-07 | LIT-045 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/literature.md) | Same-source reuse; new reading coverage remains separately dated |
+| PD-N?mz2d-codex-41 | PD-N045 | codex/padua-mz-2d-20261101 | [record](tracks/mz-constants/theory/mz2d-upper-sign-obstruction.md) | Historical duplicate consolidated into existing PD-N045; no second PD-N allocation |
+
+Original-to-split relations: PD-T106 exact aliases and pencil → PD-T109 separately substantive masked-tensor architecture; exact finite spectra PD-T107 → scoped threshold refutation PD-N044. PD-T028 remains the original OPEN signed-Padua spectral target, supported by PD-T106/109/111/115/117 and finite PD-T107/108; endpoint upper target PD-T110 and fixed-ratio target PD-T116 remain OPEN. D5 uniform operator target PD-T114 remains OPEN; proved general tools PD-T112/113 and scoped failures PD-N050–052 are separate dependencies, not solved target conjuncts. Historical provisional PD-N?mz2d-codex-41 consolidates into PD-N045, with complete original proof bytes retained in the verification-only archive.
+
+
+Administrative reciprocal mapping, 2026-11-01 (audit-01 F3):
+[PD-T028](tracks/mz-constants/theory/open-padua-target.md) →
+[PD-T110](tracks/mz-constants/theory/mz2d-upper-open.md), the explicitly
+identified upper-threshold part, **OPEN**; PD-T028 ↔
+[PD-T116](tracks/mz-constants/theory/mz2d-fixed-ratio.md), a supporting
+fixed-ratio target, **OPEN**, rather than a solved conjunct. In the reverse
+direction, PD-T110's “Split from” names PD-T028; the original target and both
+named targets remain OPEN. Supporting records are
+[PD-T106](tracks/mz-constants/theory/mz2d-aliasing.md),
+[PD-T109](tracks/mz-constants/theory/mz2d-defect-structure.md),
+[PD-T111](tracks/mz-constants/theory/mz2d-lower-corner-weights.md),
+[PD-T115](tracks/mz-constants/theory/mz2d-fixed-ratio-diamond-reconstruction.md),
+[PD-T117](tracks/mz-constants/theory/mz2d-tensor-control.md), and the finite
+[PD-T107](tracks/mz-constants/theory/mz2d-certified-spectra.md)/
+[PD-T108](tracks/mz-constants/theory/mz2d-measured-spectra.md) records.
+PD-T028's own file stays frozen because it is one of the 73 protected prior
+MZ inputs. This crosswalk supplies the reciprocal administrative relationship
+without changing that accepted record, its protected-object manifest, its
+statement, or its status; supporting results are not proved target parts.
+
 ## Lanczos drift reservation (no final assignment)
 
 The `codex/padua-lanczos-drift-20261101` draft permanently reserves PD-T136–155,
 PD-N062–071, IDEA-246–285 and LIT-445–459 in the
 [shared batch ledger](topics/padua-batch-20261031/ALLOCATIONS.md).
 All development records still use provisional IDs; no mapping is assigned here.
+Reservation first published in `6920ba632843597c37e1493d077c1df2e89f54cb`; kept unchanged through the PR14-first merge of main `e0d9e3d`.

@@ -1,0 +1,452 @@
+{
+  "date_utc": "2026-11-01T11:07:52.543775+00:00",
+  "rules_read_sha": "cf89b140530d5838bdb208a8c28f3e7aa676ace3",
+  "purpose": "Fresh-range recommendation only; no reservation or final-ID assignment performed by worker",
+  "connector_receipt": "github-scan.json",
+  "heads_checked": [
+    {
+      "label": "main",
+      "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "files": [
+        {
+          "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+          "path": "PROOF_STATUS.md",
+          "git_blob": "eedee5e38a2469ddb81980f10944b0e08f87c78c",
+          "sha256": "a916cda87c9f7ad1950f62e32d254f5c276d386b63f5e84a32cb08a3298f8b0f",
+          "bytes": 99924,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 104,
+            "PD-N": 43,
+            "IDEA": 209,
+            "LIT": 426
+          }
+        },
+        {
+          "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+          "path": "state/IDEAS.md",
+          "git_blob": "51d0d9cf79507b0b92e930a19882b942ecb94486",
+          "sha256": "de45820ecb33f8694b0ed4a13177fc2d91094729dc2f164e3d26034fada4d4a0",
+          "bytes": 159295,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 103,
+            "PD-N": 43,
+            "IDEA": 209,
+            "LIT": 1729
+          }
+        },
+        {
+          "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+          "path": "literature/INDEX.md",
+          "git_blob": "f9348537234c798a3fa738970513891f0dd8c956",
+          "sha256": "f90355c5b77a638d1a49980330eff1bda7d0e7610771a3bdae465f384b03f056",
+          "bytes": 265014,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 100,
+            "PD-N": 43,
+            "IDEA": 209,
+            "LIT": 1750
+          }
+        },
+        {
+          "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+          "path": "ID_CROSSWALK.md",
+          "git_blob": "631cc65a86c1b39a38a13c257064a39b42d2df4b",
+          "sha256": "a65c2e715cbb6fd01f75ae7de900ccf85509e81c34ed0354bd21c2e2289d8229",
+          "bytes": 252010,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 104,
+            "PD-N": 43,
+            "IDEA": 209,
+            "LIT": 426
+          }
+        },
+        {
+          "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+          "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+          "git_blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+          "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+          "bytes": 2271,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 12,
+            "PD-N": 1,
+            "IDEA": 51,
+            "LIT": 41
+          }
+        },
+        {
+          "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+          "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+          "git_blob": "625b7ca0d12bd1ac1e3501f05adc573fbdf2aead",
+          "sha256": "26918056d06e8fed622e07e512c062fb8bfce9762e211ffe5bf78aedd0225d36",
+          "bytes": 20377,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 106,
+            "PD-N": 44,
+            "IDEA": 210,
+            "LIT": 427
+          }
+        },
+        {
+          "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+          "path": "topics/programme-ideas-20261031/audit-04-support/allocation-repair-report.md",
+          "git_blob": "4a5ade329e96f7215d90bead700c0dffc1deb4cb",
+          "sha256": "8e2ab4bb7c3e51e83f9c523ac126513cc60700e837c2d8a7b2c57eec9e17603b",
+          "bytes": 5713,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 82,
+            "PD-N": 0,
+            "IDEA": 0,
+            "LIT": 299
+          }
+        },
+        {
+          "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+          "path": "topics/programme-ideas-20261031/audit-04-support/allocation-report.md",
+          "git_blob": "af8df76078c0baf26b4a3231712983a22c02d6af",
+          "sha256": "9e2b72eca82f62d0ca73281deb32aced0c96752247950e7b04a3feda9020cbe1",
+          "bytes": 7493,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 101,
+            "PD-N": 44,
+            "IDEA": 210,
+            "LIT": 427
+          }
+        },
+        {
+          "commit": "806cc7b4509fd93bae652f9545d32d95529f8281",
+          "path": "topics/programme-ideas-20261031/audit-04-support/preservation-review.md",
+          "git_blob": "8b7476892af0b6377a7fa2fbc7fc46a96afb7394",
+          "sha256": "0b1705f84cc02c5c3a92c6ca50692fcefcd1b02b6150149bb1c94838f3a89934",
+          "bytes": 6432,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 1,
+            "PD-N": 0,
+            "IDEA": 0,
+            "LIT": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "PR12",
+      "commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+      "files": [
+        {
+          "commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+          "path": "PROOF_STATUS.md",
+          "git_blob": "8a42699a04ee0d555453f4e2ac10a597dc9e276a",
+          "sha256": "ab3cbc4f09578571828a28773a9a527f0c22dba49270c92b652645c1420b35c2",
+          "bytes": 96640,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 100,
+            "PD-N": 43,
+            "IDEA": 209,
+            "LIT": 426
+          }
+        },
+        {
+          "commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+          "path": "state/IDEAS.md",
+          "git_blob": "d6570b2b20a9f882b02ca4e79cd737a5fa13179e",
+          "sha256": "f70650460c7b140021a084a2b9ddd56efc73f7e92ce8ef7b2f717db3ae677898",
+          "bytes": 158605,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 100,
+            "PD-N": 43,
+            "IDEA": 209,
+            "LIT": 1729
+          }
+        },
+        {
+          "commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+          "path": "literature/INDEX.md",
+          "git_blob": "f9348537234c798a3fa738970513891f0dd8c956",
+          "sha256": "f90355c5b77a638d1a49980330eff1bda7d0e7610771a3bdae465f384b03f056",
+          "bytes": 265014,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 100,
+            "PD-N": 43,
+            "IDEA": 209,
+            "LIT": 1750
+          }
+        },
+        {
+          "commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+          "path": "ID_CROSSWALK.md",
+          "git_blob": "15637d098d5e88e354f16948ad3c5bf4b103fe2c",
+          "sha256": "543b970b311bb49cc7147db637734f37e6cdb7c48e91d67c3c9e79d55812844c",
+          "bytes": 249483,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 100,
+            "PD-N": 43,
+            "IDEA": 209,
+            "LIT": 426
+          }
+        },
+        {
+          "commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+          "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+          "git_blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+          "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+          "bytes": 2271,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 12,
+            "PD-N": 1,
+            "IDEA": 51,
+            "LIT": 41
+          }
+        },
+        {
+          "commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+          "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+          "git_blob": "4c55ac54bde0f8c901f34d1b73202fa606a467ab",
+          "sha256": "d95ea644838d39dc4370ab8ce6c21b16d39f18d6a6dfdae7e912664807d573c3",
+          "bytes": 18382,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 101,
+            "PD-N": 44,
+            "IDEA": 210,
+            "LIT": 427
+          }
+        },
+        {
+          "commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+          "path": "topics/programme-ideas-20261031/audit-04-support/allocation-repair-report.md",
+          "git_blob": "4a5ade329e96f7215d90bead700c0dffc1deb4cb",
+          "sha256": "8e2ab4bb7c3e51e83f9c523ac126513cc60700e837c2d8a7b2c57eec9e17603b",
+          "bytes": 5713,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 82,
+            "PD-N": 0,
+            "IDEA": 0,
+            "LIT": 299
+          }
+        },
+        {
+          "commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+          "path": "topics/programme-ideas-20261031/audit-04-support/allocation-report.md",
+          "git_blob": "af8df76078c0baf26b4a3231712983a22c02d6af",
+          "sha256": "9e2b72eca82f62d0ca73281deb32aced0c96752247950e7b04a3feda9020cbe1",
+          "bytes": 7493,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 101,
+            "PD-N": 44,
+            "IDEA": 210,
+            "LIT": 427
+          }
+        },
+        {
+          "commit": "12e9cf4539d0977773cad75fc74f93d1664cb429",
+          "path": "topics/programme-ideas-20261031/audit-04-support/preservation-review.md",
+          "git_blob": "8b7476892af0b6377a7fa2fbc7fc46a96afb7394",
+          "sha256": "0b1705f84cc02c5c3a92c6ca50692fcefcd1b02b6150149bb1c94838f3a89934",
+          "bytes": 6432,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 1,
+            "PD-N": 0,
+            "IDEA": 0,
+            "LIT": 0
+          }
+        }
+      ]
+    },
+    {
+      "label": "merged-PR9-source",
+      "commit": "752ba068589683afe644b505d673f8da1529cbf0",
+      "files": [
+        {
+          "commit": "752ba068589683afe644b505d673f8da1529cbf0",
+          "path": "PROOF_STATUS.md",
+          "git_blob": "eedee5e38a2469ddb81980f10944b0e08f87c78c",
+          "sha256": "a916cda87c9f7ad1950f62e32d254f5c276d386b63f5e84a32cb08a3298f8b0f",
+          "bytes": 99924,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 104,
+            "PD-N": 43,
+            "IDEA": 209,
+            "LIT": 426
+          }
+        },
+        {
+          "commit": "752ba068589683afe644b505d673f8da1529cbf0",
+          "path": "state/IDEAS.md",
+          "git_blob": "51d0d9cf79507b0b92e930a19882b942ecb94486",
+          "sha256": "de45820ecb33f8694b0ed4a13177fc2d91094729dc2f164e3d26034fada4d4a0",
+          "bytes": 159295,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 103,
+            "PD-N": 43,
+            "IDEA": 209,
+            "LIT": 1729
+          }
+        },
+        {
+          "commit": "752ba068589683afe644b505d673f8da1529cbf0",
+          "path": "literature/INDEX.md",
+          "git_blob": "f9348537234c798a3fa738970513891f0dd8c956",
+          "sha256": "f90355c5b77a638d1a49980330eff1bda7d0e7610771a3bdae465f384b03f056",
+          "bytes": 265014,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 100,
+            "PD-N": 43,
+            "IDEA": 209,
+            "LIT": 1750
+          }
+        },
+        {
+          "commit": "752ba068589683afe644b505d673f8da1529cbf0",
+          "path": "ID_CROSSWALK.md",
+          "git_blob": "631cc65a86c1b39a38a13c257064a39b42d2df4b",
+          "sha256": "a65c2e715cbb6fd01f75ae7de900ccf85509e81c34ed0354bd21c2e2289d8229",
+          "bytes": 252010,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 104,
+            "PD-N": 43,
+            "IDEA": 209,
+            "LIT": 426
+          }
+        },
+        {
+          "commit": "752ba068589683afe644b505d673f8da1529cbf0",
+          "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+          "git_blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+          "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+          "bytes": 2271,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 12,
+            "PD-N": 1,
+            "IDEA": 51,
+            "LIT": 41
+          }
+        },
+        {
+          "commit": "752ba068589683afe644b505d673f8da1529cbf0",
+          "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+          "git_blob": "625b7ca0d12bd1ac1e3501f05adc573fbdf2aead",
+          "sha256": "26918056d06e8fed622e07e512c062fb8bfce9762e211ffe5bf78aedd0225d36",
+          "bytes": 20377,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 106,
+            "PD-N": 44,
+            "IDEA": 210,
+            "LIT": 427
+          }
+        },
+        {
+          "commit": "752ba068589683afe644b505d673f8da1529cbf0",
+          "path": "topics/programme-ideas-20261031/audit-04-support/allocation-repair-report.md",
+          "git_blob": "4a5ade329e96f7215d90bead700c0dffc1deb4cb",
+          "sha256": "8e2ab4bb7c3e51e83f9c523ac126513cc60700e837c2d8a7b2c57eec9e17603b",
+          "bytes": 5713,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 82,
+            "PD-N": 0,
+            "IDEA": 0,
+            "LIT": 299
+          }
+        },
+        {
+          "commit": "752ba068589683afe644b505d673f8da1529cbf0",
+          "path": "topics/programme-ideas-20261031/audit-04-support/allocation-report.md",
+          "git_blob": "af8df76078c0baf26b4a3231712983a22c02d6af",
+          "sha256": "9e2b72eca82f62d0ca73281deb32aced0c96752247950e7b04a3feda9020cbe1",
+          "bytes": 7493,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 101,
+            "PD-N": 44,
+            "IDEA": 210,
+            "LIT": 427
+          }
+        },
+        {
+          "commit": "752ba068589683afe644b505d673f8da1529cbf0",
+          "path": "topics/programme-ideas-20261031/audit-04-support/preservation-review.md",
+          "git_blob": "8b7476892af0b6377a7fa2fbc7fc46a96afb7394",
+          "sha256": "0b1705f84cc02c5c3a92c6ca50692fcefcd1b02b6150149bb1c94838f3a89934",
+          "bytes": 6432,
+          "read_complete": true,
+          "literal_namespace_maxima": {
+            "PD-T": 1,
+            "PD-N": 0,
+            "IDEA": 0,
+            "LIT": 0
+          }
+        }
+      ]
+    }
+  ],
+  "closed_unmerged_prs": [],
+  "retired_reservations": "No closed-unmerged PR returned. All 11 closed PR metadata objects individually confirm merged=true. Full extant ledgers preserve all historical reservations.",
+  "classification_notes": [
+    "PD-T106/PD-N044/IDEA-210/LIT-427 in historical ledger boundaries are NEXT-unreserved labels, not existing reservations.",
+    "LIT-1729 and LIT-1750 are explicitly external bttb-research record identifiers; excluded from this repository namespace.",
+    "PD-T104\u2013105 are PR9 permanent unused reserved headroom, not final assigned result rows.",
+    "PR12 explicitly no range; local provisional IDs do not enter final namespace maxima."
+  ],
+  "maximum_assigned": {
+    "PD-T": 103,
+    "PD-N": 43,
+    "IDEA": 209,
+    "LIT": 426
+  },
+  "maximum_reserved_or_assigned": {
+    "PD-T": 105,
+    "PD-N": 43,
+    "IDEA": 209,
+    "LIT": 426
+  },
+  "recommended_ranges": {
+    "PD-T": {
+      "first": 106,
+      "last": 135,
+      "count": 30,
+      "estimated_need": 20
+    },
+    "PD-N": {
+      "first": 44,
+      "last": 61,
+      "count": 18,
+      "estimated_need": 12
+    },
+    "IDEA": {
+      "first": 210,
+      "last": 245,
+      "count": 36,
+      "estimated_need": 24
+    },
+    "LIT": {
+      "first": 427,
+      "last": 444,
+      "count": 18,
+      "estimated_need": 12
+    }
+  },
+  "recommendation_owner": "root orchestrator; reserve once in shared batch ledger and PR body before assignment",
+  "limitations": "Point-in-time scan. Recheck before final-ID assignment and readiness. No scientific novelty review or audit is claimed."
+}

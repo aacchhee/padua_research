@@ -1,0 +1,7 @@
+minimum 214817/1000000 107409/500000 [{'dimension': 420, 'min_relative_margin': 0.9999999997387051}, {'dimension': 400, 'min_relative_margin': 0.9999999999180313}]
+maximum 222261/125000 1778089/1000000 [{'dimension': 420, 'min_relative_margin': 0.9999999999106641}, {'dimension': 400, 'min_relative_margin': 0.9999999998700694}]
+PASS
+
+real	0m13.924s
+user	0m13.607s
+sys	0m0.198s

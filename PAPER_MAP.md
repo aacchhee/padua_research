@@ -29,3 +29,9 @@ No manuscript has been drafted or accepted. The following is a development brief
 ## Accepted proof-attempt support
 
 [PD-T101–103](topics/padua-proof-attempts-20261101/LOG.md), accepted by Claude audit-01, supply the exact Padua corner identity, generic distinct-x pattern commutant and two degree-3 local certificates. They do not complete the asymptotic, argmax or counting projects: expansion/argmax remain OPEN and counts MEASURED. No manuscript, novelty or submission claim is added.
+
+## Padua MZ 2D campaign — PR14 final registration
+
+| Brief | Question | Support | Remaining gaps | Readiness |
+|---|---|---|---|---|
+| [Signed Padua MZ campaign](topics/padua-mz-2d-20261101/report.md) | Beyond-half-exactness signed Lebesgue Padua spectra and reconstruction | PD-T106–117; PD-N044–053 at their individual written statuses | Universal endpoint/fixed-ratio spectral targets and uniform signed operator norm OPEN; historical attribution limits retained | Claude audit-01 accepted scoped mathematics; response-01 documentation fixes complete; stage PR, draft pending AC merge order; no manuscript/submission claim |
