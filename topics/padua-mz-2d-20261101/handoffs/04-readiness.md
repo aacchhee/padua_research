@@ -1,6 +1,6 @@
 # Handoff 04 — padua-mz-2d-20261101 — AC readiness and merge-order decision
 
-- Status: open
+- Status: done in b1255ba95da439b099eca9f51abb295943f2ea4e
 - Previous handoff: [03-response.md](03-response.md), done in `97a8e2ff0df9907536733b25ecd35ae74892d660`.
 - Next agent / model / effort: Codex, `gpt-6.1-sol` medium.
 - Role: topic orchestrator, integration preparation after AC's decision.

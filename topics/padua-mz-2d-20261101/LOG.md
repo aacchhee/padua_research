@@ -3,7 +3,7 @@
 - Branch: `codex/padua-mz-2d-20261101` · Base/rules read: `cf89b140530d5838bdb208a8c28f3e7aa676ace3`.
 - Role: Codex orchestrator. Root model/effort metadata is runtime-unexposed; delegated mathematics uses `gpt-6.1-sol xhigh`, code/mechanical work `gpt-6.1-sol medium`. No ultra allocation.
 - Stage: PR (documentation-only response complete). Claude Opus 5.5 xhigh audit-01 ACCEPTED the scoped mathematics; six P3 record findings addressed in [response-01.md](response-01.md). PR14 stays draft pending AC's merge order and integration preparation.
-- Open handoff: [04-readiness.md](handoffs/04-readiness.md), Codex gpt-6.1-sol medium; response output `97a8e2ff0df9907536733b25ecd35ae74892d660`. Handoff 03 done in that output commit; handoff 02 done in `0d48727f13bf8afcf8c21568ed71572c305552a5`.
+- Open handoff: [05-merge.md](handoffs/05-merge.md) — AC squash-merge of PR14 (order: PR14 before PR15), then post-merge closure. Handoff 04 done in `b1255ba95da439b099eca9f51abb295943f2ea4e`.
 - Reserved final-ID ranges: PD-T106–135 (30), PD-N044–061 (18), IDEA-210–245 (36), LIT-427–444 (18), including permanent headroom. Assigned PD-T106–117, PD-N044–053, IDEA-210–227 and LIT-427–428, with five source-ID reuses. Dated current recheck: [response-01 reservation receipt](protocol/response-01-20261101-reservation-recheck.json). Batch ledger: [ALLOCATIONS.md](../padua-batch-20261031/ALLOCATIONS.md). No new allocation in this response.
 - Scientific outcome: D1 PASS; exact alias/defect structure, replayed finite spectra and eta>3/4 witness, corner formula, diamond reconstruction, corrected signed hyperinterpolation scope, tensor-control theorem. Existing PD-T028 stays OPEN. Floating computations are MEASURED. Full statuses: [report.md](report.md).
 
@@ -113,3 +113,4 @@ AC chose the merge order: "pr14 first" (16:12 Europe/Oslo). Claude, Opus 5.5 xhi
   - PR12 then applies cleanly.
   - PR15 then conflicts only in ID_CROSSWALK.md and the batch ledger. That reconciliation belongs to the PR15 orchestrator after PR14 merges, per [readiness-plan-01.md](readiness-plan-01.md).
 - **Ledger.** The order was recorded in the batch ledger. PR14 stays draft until AC instructs otherwise; only AC merges.
+- Handoff 04 → done in `b1255ba95da439b099eca9f51abb295943f2ea4e`; [handoff 05](handoffs/05-merge.md) open.
