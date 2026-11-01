@@ -2289,8 +2289,8 @@
   "outputs": [
     {
       "path": "topics/padua-proof-attempts-2-20261101/LOG.md",
-      "sha256": "a5b48dab178a51eb0c28aa87387d15607f839ee1e7331ade3d083c92b950fc4f",
-      "bytes": 76289
+      "sha256": "8e04a8cbb5be2536f2e651ae1b6a73f2ee2c4106da516a1cd5bee58f1673fb36",
+      "bytes": 78074
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/a4-input-preparation.md",
@@ -2301,6 +2301,11 @@
       "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A2.md",
       "sha256": "1717b073cd7c298b804e14856b018754707a9e5fcb5ea6e32bd0b4762ec3b6ed",
       "bytes": 10773
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A4a.md",
+      "sha256": "efcf6c5a0de6d8359554542b7398482b5e9a7ba61327bdfcd072f75be9afc5f6",
+      "bytes": 5841
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n4.md",
@@ -2331,6 +2336,16 @@
       "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A5.md",
       "sha256": "0e3ccf525cd92d8bff2652dce373eb69fea6929a0e0f5026b3b25d163a3f3e9e",
       "bytes": 15871
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/b1-input-preparation.md",
+      "sha256": "cbe39dc9939ac4cc201eab29b0e072d2b376874c77afdc8deac18c70e869b6a1",
+      "bytes": 17674
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/b3-input-preparation.md",
+      "sha256": "c21a8e3c89de5e992148760b59f285d4752c29d4387cc1007573906de610d77e",
+      "bytes": 16357
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/code/a2_exact_check.py",
@@ -3799,8 +3814,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/proposed-record-changes.md",
-      "sha256": "360fdd4da417ac3398534c1bedfb74f3fe31b88751b07109ee0aa53586b5428f",
-      "bytes": 16047
+      "sha256": "023a4febaa04d34180f8fcc57737941f7e871f9b2ad53bbc0c20695d140abf82",
+      "bytes": 17628
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-01-corner-leading-lower.md",
@@ -3946,6 +3961,11 @@
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-65-degree-eight-exact-interior-count.md",
       "sha256": "ee360492ee44a0ec1e164ea48382838d960aaa99f599155ae73123026c6b6b1e",
       "bytes": 11913
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-70-all-edge-kernel-formula.md",
+      "sha256": "f2e76ff091a964be15c28607ca49d52ff5ce4e12fa91dc42df5aa12a7e6b0ebe",
+      "bytes": 6272
     }
   ],
   "exclusions": [
