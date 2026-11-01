@@ -1,6 +1,6 @@
 # Handoff 04 — padua-lanczos-drift-20261101 — developer response to audit-01 (Claude, by AC redirection)
 
-- Status: open
+- Status: superseded by 05: AC correction (2026-11-01 16:27 CET)
 - Previous handoff: 03-response.md (superseded by this file)
 
 - Next agent / model / effort: Claude, Opus 5.5 xhigh (orchestrator and mathematics). Code and mechanical subtasks: Sonnet 5.5 high/medium. Mathematical rescoping: Opus 5.5 xhigh subagents.
