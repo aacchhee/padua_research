@@ -1,0 +1,1 @@
+stability.json rerun with OPENBLAS/OMP/MKL_NUM_THREADS=2 (as in C1/rounds.md): diffs = 0 []

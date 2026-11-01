@@ -1,0 +1,12 @@
+full-rank reps satisfying D (must be 0): 0
+deficient reps covered by D: 160 of 222
+nine residual all covered: True
+C3-146194f53e09 [{'axis': 0, 'E': 7, 'bound': 8, 'classes': [[0, 2]]}]
+C3-63a9bc46428d [{'axis': 0, 'E': 7, 'bound': 8, 'classes': [[0, 2]]}]
+C3-b312ad59cf2d [{'axis': 1, 'E': 12, 'bound': 13, 'classes': [[0, 2], [1, 3]]}]
+C3-e94fa0f84746 [{'axis': 0, 'E': 12, 'bound': 13, 'classes': [[0, 2], [1, 3]]}]
+C3-ed5be2a8aa20 [{'axis': 0, 'E': 12, 'bound': 13, 'classes': [[0, 2], [1, 3]]}]
+C3-a86caab28e7a [{'axis': 0, 'E': 12, 'bound': 13, 'classes': [[0, 2], [1, 3]]}]
+C3-4b8f5204bfc8 [{'axis': 0, 'E': 12, 'bound': 13, 'classes': [[0, 2], [1, 3]]}]
+C3-e52f073b516e [{'axis': 0, 'E': 12, 'bound': 13, 'classes': [[0, 2], [1, 3]]}]
+C3-1173efd58918 [{'axis': 0, 'E': 12, 'bound': 13, 'classes': [[0, 2], [1, 3]]}]

@@ -2,10 +2,16 @@
 
 | Track | Question | Results and stage |
 |---|---|---|
-| [unisolvence](unisolvence/README.md) | Algebraic total-degree checkerboard interpolation over arbitrary fields, motivated by Padua sets | PD-T001–012, PD-N001; Claude audit-01 accepted mathematics; Stage PR |
+| [unisolvence](unisolvence/README.md) | Algebraic total-degree checkerboard interpolation over arbitrary fields, motivated by Padua sets | PD-T001–012, PD-N001; Claude audit-01 accepted mathematics; merged in PR #2 |
 
-Track theories use global IDs and explicit assumptions/statuses. Negative results are scoped mechanisms; equivalent/abandoned ideas remain idea dispositions. No other scientific track is active.
+Track theories use global IDs and explicit assumptions/statuses. Negative results are scoped mechanisms; equivalent/abandoned ideas remain idea dispositions. All active tracks are listed below.
 
 ## Active scoped track
 
 [CC/Padua MZ constants](mz-constants/README.md): analytic CC upper, endpoint and fixed-ratio bounds; signed Padua marginal reduction, finite reproduced spectra and explicit open targets. The campaign charter is owned by the separate charter topic.
+
+## Lattice extension
+
+| Track | Question | Results and stage |
+|---|---|---|
+| [lattice-unisolvence](lattice-unisolvence/README.md) | Periodic2D/3D total-degree interpolation beyond checkerboards | Provisional21theory records, direct proofs/measurements/OPEN targets separated; Claude audit-01 accepted; PR #4 preparation |

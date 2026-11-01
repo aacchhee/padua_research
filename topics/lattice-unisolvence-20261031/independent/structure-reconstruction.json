@@ -1,0 +1,178 @@
+{
+  "all_checks_passed": true,
+  "checker_sha256": "82e3d4271e1a87287c001cc315ca1eae4cace29c6fd90f84843b7bce0e290f39",
+  "cover_decisions_checked": 222,
+  "covers_found": 127,
+  "input_sha256": {
+    "topics/lattice-unisolvence-20261031/directions/C3/ranks.json": "560471d0053fef785bcee9c64f1b7fe9a384e24c0c74ef3d4cd58b9d6c703130",
+    "topics/lattice-unisolvence-20261031/directions/C3/structure.json": "d5c34e03d7c62a0f0f63470a742ff1e6b26f4dd774bb1c916e6ebee1416144be"
+  },
+  "integer_determinants_checked": 69,
+  "integer_nonzero": 68,
+  "method": "Fresh branch-on-uncovered-point cover decision; SymPy domain determinants; mixed logarithmic derivative test avoiding irreducibility reliance.",
+  "mixed_dependence_certificates": [
+    {
+      "id": "C3-a42612abf964",
+      "variables": [
+        "y2",
+        "z2"
+      ]
+    },
+    {
+      "id": "C3-b083ccfa404b",
+      "variables": [
+        "y2",
+        "z2"
+      ]
+    },
+    {
+      "id": "C3-a4b6d3cfb9e6",
+      "variables": [
+        "y2",
+        "z2"
+      ]
+    },
+    {
+      "id": "C3-54a1ea65014e",
+      "variables": [
+        "y2",
+        "z2"
+      ]
+    },
+    {
+      "id": "C3-68429a174814",
+      "variables": [
+        "y2",
+        "z3"
+      ]
+    },
+    {
+      "id": "C3-5593183eb296",
+      "variables": [
+        "y2",
+        "z2"
+      ]
+    },
+    {
+      "id": "C3-eb02cc3c98c6",
+      "variables": [
+        "y2",
+        "z2"
+      ]
+    },
+    {
+      "id": "C3-6885d1012567",
+      "variables": [
+        "y2",
+        "z2"
+      ]
+    },
+    {
+      "id": "C3-0fb0d77700e5",
+      "variables": [
+        "y2",
+        "z2"
+      ]
+    },
+    {
+      "id": "C3-45fb0b29f140",
+      "variables": [
+        "y2",
+        "z2"
+      ]
+    },
+    {
+      "id": "C3-d09a67a5f1d5",
+      "variables": [
+        "y2",
+        "z2"
+      ]
+    },
+    {
+      "id": "C3-e8649b214fb5",
+      "variables": [
+        "y2",
+        "z2"
+      ]
+    },
+    {
+      "id": "C3-68b1665b3075",
+      "variables": [
+        "y2",
+        "z2"
+      ]
+    },
+    {
+      "id": "C3-b42286807923",
+      "variables": [
+        "y3",
+        "z3"
+      ]
+    },
+    {
+      "id": "C3-b8f43ef0ea9a",
+      "variables": [
+        "y2",
+        "z2"
+      ]
+    },
+    {
+      "id": "C3-8ac125f56057",
+      "variables": [
+        "x2",
+        "y2"
+      ]
+    },
+    {
+      "id": "C3-3275c762cb8d",
+      "variables": [
+        "x2",
+        "y2"
+      ]
+    },
+    {
+      "id": "C3-c14783f0fcbe",
+      "variables": [
+        "x2",
+        "y2"
+      ]
+    },
+    {
+      "id": "C3-197d7eeadf98",
+      "variables": [
+        "x2",
+        "y2"
+      ]
+    },
+    {
+      "id": "C3-8e9fbb088654",
+      "variables": [
+        "x2",
+        "y2"
+      ]
+    },
+    {
+      "id": "C3-3211038f85af",
+      "variables": [
+        "x2",
+        "y2"
+      ]
+    },
+    {
+      "id": "C3-11e21d7e2916",
+      "variables": [
+        "x2",
+        "y2"
+      ]
+    },
+    {
+      "id": "C3-75e222a2582a",
+      "variables": [
+        "x2",
+        "y2"
+      ]
+    }
+  ],
+  "symbolic_determinants_checked": 50,
+  "sympy": "1.14.0"
+}

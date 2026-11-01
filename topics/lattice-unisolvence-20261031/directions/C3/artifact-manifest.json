@@ -1,0 +1,78 @@
+{
+  "schema": "c3-artifact-manifest-v1",
+  "rules_read_sha": "e949ef06895acd5463cdf8df7e0e5f795218f70f",
+  "command": [
+    "tracks/lattice-unisolvence/code/c3_records.py"
+  ],
+  "generator_sha256": "3aca2a2a602255d4bb38a19425b2bfd18167097a6e6ab4409ffc20712a93e39e",
+  "files": [
+    {
+      "path": "topics/lattice-unisolvence-20261031/directions/C0/catalogue.json",
+      "bytes": 203368,
+      "sha256": "21cd7610051d7f51e8578051da164f73ef112d9081765cea7156b26f01441430"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/directions/C3/lebesgue.json",
+      "bytes": 69136,
+      "sha256": "ee98828d9fe4b790c02059a60e00bacddcd9bceb835d90706c03cfb03bedb3a0"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/directions/C3/lowdegree.json",
+      "bytes": 2933,
+      "sha256": "c23ee5bf0ca2bc22576628965e882360e1ea66821f50d1e1d7030791b3650b8d"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/directions/C3/obstructions.json",
+      "bytes": 139840,
+      "sha256": "d61b0a60f1b99aad93b96514ef78f05f5e1542514d6db7756fbd916a54a76def"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/directions/C3/ranks.json",
+      "bytes": 535224,
+      "sha256": "560471d0053fef785bcee9c64f1b7fe9a384e24c0c74ef3d4cd58b9d6c703130"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/directions/C3/structure.json",
+      "bytes": 39828,
+      "sha256": "d5c34e03d7c62a0f0f63470a742ff1e6b26f4dd774bb1c916e6ebee1416144be"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/directions/C3/pattern-outcomes.tsv",
+      "bytes": 109800,
+      "sha256": "f3cccddff5e60a12fdb1cad4e51ca8cc6fd237b53dfc626ae6121d97ba645c8b"
+    },
+    {
+      "path": "tracks/lattice-unisolvence/code/c3_lebesgue.py",
+      "bytes": 6286,
+      "sha256": "bf9cdb7c057f6ddf1793d99e6d338b1c1cfa37a274e5a6ac9689085f6bb3d66e"
+    },
+    {
+      "path": "tracks/lattice-unisolvence/code/c3_lowdegree.py",
+      "bytes": 3434,
+      "sha256": "fb4f249058d425a684ef7a62aaf674f00527e00e0848ae368d18fad4702331dd"
+    },
+    {
+      "path": "tracks/lattice-unisolvence/code/c3_obstructions.py",
+      "bytes": 4176,
+      "sha256": "9088670ef3aa95b8493b7afa6029e3f90a00a184e825e2045dd24fd8cad0f379"
+    },
+    {
+      "path": "tracks/lattice-unisolvence/code/c3_rank.py",
+      "bytes": 7430,
+      "sha256": "a95afbb764838662358dc70d2fd5a7eddf335d3ae48254d29b717fa015143332"
+    },
+    {
+      "path": "tracks/lattice-unisolvence/code/c3_records.py",
+      "bytes": 5590,
+      "sha256": "3aca2a2a602255d4bb38a19425b2bfd18167097a6e6ab4409ffc20712a93e39e"
+    },
+    {
+      "path": "tracks/lattice-unisolvence/code/c3_structure.py",
+      "bytes": 6473,
+      "sha256": "4a0695ef40f4f2d6d451c39df469eccc9b7287701c0e4baa628eaf1b16e39fdb"
+    }
+  ],
+  "retention": "essential small reproducibility evidence; orchestrator controls Git",
+  "cold_storage": "C:\\Users\\andreyac\\Downloads\\padua\\cold_storage\\lattice-unisolvence-20261031",
+  "cold_storage_receipt": "not delivered; no cold-storage claim made"
+}

@@ -1,0 +1,20 @@
+# Progress — final development checkpoint
+
+Stage **AUDIT**. Next: `Claude (Opus 5.5 xhigh): Continue codex/lattice-unisolvence-20261031.`
+
+Required original base eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64; audited parent3bd9d4e and administrative response317a265merged without rebasing. Rules e949ef06895acd5463cdf8df7e0e5f795218f70f, unchanged at parent refresh. Main stayed d367228at the recorded fetch. Root alone controls Git; models/ownership are in plan and LOG. No ultra assignment.
+
+Completed C0two rounds:5061canonical trials representing77616raw tuples,451cardinality survivors (39d2/412d3), density/infinite6count/short-axis proofs. Every failed count retained; catalogue scope and deferred zeros/unions/corrections explicit.
+
+Completed C3five rounds: all412source patterns→364representatives,2184exact matrices,142finite-rank survivors;213/222sampled deficiencies have checked cover/projection certificates, nine unexplained;114axis-product rectangle obstructions. Isolated n2mod6case has an all-field axis-factorized determinant and monotone-real unisolvence. No unbounded3D family with required structure or favorable Lobatto behavior emerged. Finite failures are not universal negatives.
+
+Completed C1twelve rounds: original ten plus a written justified two-round extension for the missing n≡0mod4phase. The parity-adapted adjacent-mod4schedule has exactly the required count at every degree, an arbitrary-field row-moment criterion and an exact Chebyshev antipodal-Gram reduction. Strict contraction/all-degree unisolvence and log²stability remain OPEN.84exact modular draws,57adaptive comparison rows and17Gram diagnostics remain MEASURED; sampled maxima71.507at n31and45.853at n32are not supremum certificates or growth laws. Failed original phases and mixed-axis obstructions are preserved separately.
+
+Literature:67queries,22coverage-qualified records plus10initial UNVERIFIED source groups. No exhaustive novelty claim; original-source/journal gaps remain pending-reference. Canonical registration:21provisional theory records (13PROVED,6MEASURED,2OPEN),13IDEAfamilies with keyed per-pattern inheritance,32provisional LIT statements. Existing charter/MZ final IDs preserved; coordinated final allocation still pending with the named owner.
+
+Separate Astra xhigh reconstruction and executed reruns are recorded in independent/report.md; protocol evidence in protocol/report.md. These supplements do not replace the required Claude audit. Exact final byte identities and reproducible commands are in AUDIT_HANDOFF.md/audit-targets.json. Small evidence is committed within limits; Windows archival receipt is not claimed. The direct dependency rehearsal and wider MZ conflict observation are recorded separately; no whole-batch merge readiness or live merge is asserted. No required scientific producer run remains for these stated scopes. The next work is the independent Claude audit, followed by explicit disposition of its findings.
+
+Post-freeze integration update: charter PR#2 was merged by AC at08fafe62d9798385dfafaacc9a41344272737e68 and the old branch was deleted. Its tree is byte-identical to the already imported317a265parent. Root merged that charter-bearing main into this published topic at a9e519ac3e0ff65f4ede8954d4630f2160600301 without rebasing, with zero file changes. The dependency is satisfied; the draft now targets main. Earlier base/main observations above remain historical. All scientific proofs, source/checker/output hashes and the frozen ZIP remain unchanged; only this integration metadata and its review envelope are updated. Required Claude audit remains PENDING and Stage AUDIT is unchanged.
+
+
+Current response update (2026-11-01): Claude audit-01 accepted all21 existing records. Stage WORK while the metadata response is verified; main07c5f54 is merged with both accepted final blocks and the lattice provisionals retained. PR#4is next under AC's instruction; PR#5will inherit it. The proposed new F2 result and optional F6 upgrades are deferred from this unchanged-science cleanup, not silently adopted. See response-01.md for all seven dispositions and the focused integration evidence.
