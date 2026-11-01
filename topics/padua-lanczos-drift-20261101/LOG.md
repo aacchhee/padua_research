@@ -96,3 +96,22 @@
 
 - AC: "Claude (Opus 5.5 xhigh): Continue codex/padua-lanczos-drift-20261101. Pr14 merges first, then pr15". Handoff 03 (Codex response) is superseded by [04-response.md](handoffs/04-response.md). Claude is now the developer of the audit-01 fixes, so a Codex re-audit is required for material changes.
 - Merge order: PR #14 first, then PR #15. A `git merge-tree` rehearsal (PR14 `5494436` + PR15 `fa5835f`) gives conflicts only in ID_CROSSWALK.md and the batch ALLOCATIONS.md, where both PRs append sections. These are resolved at PR #15 preparation, after PR #14 merges.
+
+## Response-01 and AC correction: PR14 integration and results in the repository (2026-11-01)
+
+- **AC correction, 16:27 CET.** Recorded as [05-integration.md](handoffs/05-integration.md); handoff 04 is superseded. Rules (`AGENTS.md`, `agents/WORKFLOW.md`, `agents/claude/CLAUDE_ROLES.md`) are unchanged from `806cc7b` to main `e0d9e3d`. They were read at merge head `0f819a3c670dcc8a4e1af58fcd2bfdad215e06a0`.
+- **Handoff chain.** [01-work](handoffs/01-work.md), [02-audit](handoffs/02-audit.md), [03-response](handoffs/03-response.md), [04-response](handoffs/04-response.md), [05-integration](handoffs/05-integration.md), [06-reaudit](handoffs/06-reaudit.md).
+- **PR14 merge.** main `e0d9e3d` was merged without rebasing as `0f819a3`. Conflicts arose only in ID_CROSSWALK.md and the batch ALLOCATIONS.md, and both topics' complete text is kept: PR14's final table, the PD-N?mz2d-codex-41 → PD-N045 alias, the PD-T028/PD-T110 note, the Integration order note and the gaps T118–135/N054–061/IDEA228–245/LIT429–444; and PR15's reserved ranges with first publication `6920ba6`. Nothing was allocated or renumbered. The only extra registry-file edits on this branch remain the two reservation-only sections (audit P-F2).
+- **Integration check.** `integration_check.py` PASS (receipt: `evidence/response-01-integration-20261101.json`):
+  - no final assignment of a reserved ID on main, head, PR12 or PR16;
+  - merge-tree against PR12 and PR16 is clean;
+  - the squash rehearsal onto `e0d9e3d` gives a tree equal to the head tree;
+  - protected paths and the 77 old theory files are unchanged.
+- **Response-01.** [response-01.md](response-01.md) answers all 42 findings: 40 FIXED (some as proposals), P-F1 UNRESOLVED, and P-F2 by disclosure. Developer reports are in [checks/response-01/](checks/response-01/). The material changes go to a Codex re-audit; record 15's generalization, record 14's conversion and record 32's rescope are among them, so the stage is **AUDIT**.
+- **Results file.** The local working track was read through the bridge; it is byte-identical to the copy written earlier. It was revised and committed as [results/padua-lanczos-drift-20261101.md](../../results/padua-lanczos-drift-20261101.md). PR #16 is still an open draft, so this topic's root `RESULTS.md` section is deferred to preparation after PR16 merges. No further writes go to AC's machine.
+- **Local leftovers.** These are AC's to delete; none was edited or deleted. Duplicated in the repository:
+  - `Downloads\padua\results\padua-lanczos-drift-20261101.md`: by `results/padua-lanczos-drift-20261101.md` on this branch (revised).
+  - `Downloads\padua\results\padua-mz-2d-20261101.md`, and the padua-mz-2d section of `Downloads\padua\RESULTS.md`: by `results/padua-mz-2d-20261101.md` and the root `RESULTS.md` in draft PR #16 (not yet on main).
+
+  Not duplicated as results files:
+  - `Downloads\padua\results\bivariate-lanczos-20261031.md`, `mz-prior-art-20261101.md` and `programme-ideas-20261031.md`, and the programme-ideas section of `Downloads\padua\RESULTS.md`. Their content is covered only by the topic reports on main (`topics/bivariate-lanczos-20261031/report.md`, `topics/mz-prior-art-20261101/report.md`, `topics/programme-ideas-20261031/report.md`).
