@@ -36,3 +36,12 @@
 - Fresh union scan caught PR #14 appearing after the first inventory. Reserved PD-T136–155, PD-N062–071, IDEA-246–285, LIT-445–459 with permanent headroom; no final assignments. Shared batch ledger preserves the MZ reservation.
 - Workers: e1_mathematics (Sol xhigh; E1/E2, local IDs01–09); e1_code (Sol medium; exact checker); e3_e4_math (Sol xhigh; IDs10–29); e5_math (Sol xhigh; IDs30–49); e6_benchmarks (Sol medium; IDs50–59); setup_records (Sol medium; mechanical setup/allocation scan). Only the root changes Git and handoffs.
 - Claimed statuses are pending worker delivery, independent checking, and Claude audit. No computer proof is inferred from an exact-looking output alone.
+
+## First scientific checkpoint — E1 reductions and E5 witness
+
+- Draft PR: https://github.com/aacchhee/padua_research/pull/15 (AUDIT PENDING).
+- E1 developer wrote analytic normal-quotient derivative and rational spectral sensitivity bounds, with separate all-source and degree-two-source scopes. Exact checks and an independent rerun are underway; no scalar-operation rounding conclusion yet. `evidence/e1-freeze.json` records its original KHS-only test and disclosed stronger Urow certificate/history separately.
+- E1 snapshot: T24 degree12 full BJ lower squared 2.049e14 against pivot upper squared 1.615e8; rotatedQ24 BJ lower squared 8.817e10 against alt Urow upper squared 6.419e8. These certify the aggregate-map factor10 property using the analytic tightened bound. Original KHS-only comparison is still reported separately, not retroactively replaced.
+- E5 analytic draft PD-T?drift-codex-30 gives an explicit common-angle corner witness with n^14 P_n tending to -6400*pi^12/729 and limsup n^5 rho_n <=20*sqrt(2)*pi^4/9. A separate Astra xhigh reconstruction reports no gap so far; final check record and Claude audit remain pending. No conclusion on the optimal obstruction radius delta_obs.
+- Root authorized a bounded E2 attempt after aggregate-map survival; per-operation realization and any all-degree exponential/matching theorem remain separate OPEN obligations.
+- Public upstream polyrat runs have completed on all12 frozen L2 benchmarks; E6 developer is recording ordering, reference conditioning and fit-target limits. Root independently reran the two hard cases (actual command/results to enter independent-checks after comparison).

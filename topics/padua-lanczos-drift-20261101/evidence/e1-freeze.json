@@ -13,7 +13,16 @@
   "rules": {"bj":"X iff j=0; else Y", "mirror":"X except j=t", "alt":"X iff 2j<t; boundary force", "pivot":"max residual_norm_squared / candidate_norm_squared; ties X"},
   "screen": "degree-2 sources only, separate screen-only result; cannot certify full-map dead verdict",
   "survives": "At n=12 on BOTH sets, BJ full Knode^2 > 100 times min(alt full KHS^2,pivot full KHS^2)",
-  "dead": "On either set, BJ full KHS^2 <= one good rule full Knode^2, OR BJ full KHS^2 <100 alt full Knode^2 AND <100 pivot full Knode^2",
+  "dead": "At final n=12 on either set, BJ full KHS^2 <= one good rule full Knode^2, OR BJ full KHS^2 <100 alt full Knode^2 AND <100 pivot full Knode^2. Degrees2..11 are descriptive only (final-degree scope clarified by math developer).",
   "otherwise": "INCONCLUSIVE; overlapping bounds cannot determine kappa comparison",
   "fallback_interpretation": "degree-8 output remains scoped evidence; does not fulfill degree-12 survival condition"
+  ,"amendment_audit": {
+    "recorded_utc": "2026-11-01 11:13:25 UTC",
+    "original_frozen_copy": "Git commit 6920ba6 (orchestrator recorded); original KHS-only criterion remains authoritative and independently reported",
+    "Urow_change": "Added after initial T24 n2 BJ degree2-source run (KHS/Knode only); no full n12 output had been inspected at addition. Exact decision timestamp not separately logged. Urow is an additional mathematically derived certificate, not a retroactive original preregistration.",
+    "final_degree_clarification": "Math developer clarified DEAD applies at final n12 before this developer inspected the full n12 T24 records; intermediate n2..11 descriptive. Exact message timestamp not separately logged.",
+    "results_now_inspected": "T24 full n12 all4 rules; rotated full n12 alt standalone; degree2-source screens all sets/rules at n2,n8,n12. Full rotated n12 BJ/mirror/pivot not yet inspected.",
+    "interpretation_commitment": "Report original KHS-only verdict and additional Urow certificate separately; do not relabel original survival on tightened evidence alone.",
+    "best_comparator_logical_correction": "Received after full T24 final and standalone rotated alt were known: isolated BJ upper<=alt lower does not kill BJ/min(alt,pivot) when pivot is smaller. Retain original mechanical test separately; valid best-comparator DEAD requires BOTH BJ upper<100 alt lower and BJ upper<100 pivot lower. This correction is immaterial when no original DEAD inequality fires."
+  }
 }
