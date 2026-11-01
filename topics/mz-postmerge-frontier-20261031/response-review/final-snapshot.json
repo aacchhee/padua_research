@@ -1,0 +1,113 @@
+{
+  "rules_read_at": "4076a2f4c73427164125870932192c2e38ab60c6",
+  "parent": "a4331a13301ee4a9905c8204c26bff5f9fdf246e",
+  "scope": "PR5 L1-L4 text-only impact; no mathematical rerun",
+  "protected_parent_files_unchanged": 509,
+  "original_MZ_LOG_delta_unchanged": true,
+  "CURRENT_outside_MZ_unchanged": true,
+  "accepted_MZ_IDs_endpoint_retained": true,
+  "rehearsal_tree_checks": [
+    {
+      "pr": "PR4",
+      "source": "a4331a13301ee4a9905c8204c26bff5f9fdf246e",
+      "tree": "490d9ebb50c63a8ea6fc5d1d60ace50eaf5ac4da"
+    },
+    {
+      "pr": "PR5",
+      "source": "4076a2f4c73427164125870932192c2e38ab60c6",
+      "tree": "e7f1111cc356ddcb8939d092198cc26089f71d23"
+    }
+  ],
+  "new_developer_trailers_parse": true,
+  "stage": "PR",
+  "next": "`Codex (gpt-6.1-sol medium): Check PR #4 then stacked PR #5 before AC\u2019s merge decisions.`",
+  "github_observation": {
+    "tool": "github_get_pr_info",
+    "date_UTC": "2026-11-01",
+    "pr": 5,
+    "base": "codex/lattice-unisolvence-20261031",
+    "base_sha": "a4331a13301ee4a9905c8204c26bff5f9fdf246e",
+    "head_sha": "6678d38c7a79cf8c5f4dd105c170327675fa3043",
+    "state": "open",
+    "draft": true,
+    "merged": false,
+    "note": "remote body still historical pending text; root must publish candidate/envelope and current AUDIT/PR body before readiness"
+  },
+  "files": [
+    {
+      "path": "PROOF_STATUS.md",
+      "bytes": 28907,
+      "sha256": "ac97523eb58bcce5ea6444b5d4d93d22775eb35842c19386ba30344bb1ba29a7"
+    },
+    {
+      "path": "state/CURRENT.md",
+      "bytes": 9429,
+      "sha256": "a6fc68dee01c39d5bb2869311b1e205eedd445a727769742b88359a1d3ddd3b5"
+    },
+    {
+      "path": "topics/mz-constants/LOG.md",
+      "bytes": 15608,
+      "sha256": "f3d77c3148a3d184455fb4dee4e17616cf1978e53b35154aafa34f3619ec795e"
+    },
+    {
+      "path": "topics/mz-constants/POST_MERGE.md",
+      "bytes": 4724,
+      "sha256": "a54ba36e245ede1346b70f743738727238c1fc8021754bd4ab69094d2f78761c"
+    },
+    {
+      "path": "topics/mz-postmerge-frontier-20261031/LOG.md",
+      "bytes": 7680,
+      "sha256": "fe682a9f5de95dfdfe0277c81e52b247c1dfc214ad4035948bfab25a79d286cb"
+    },
+    {
+      "path": "topics/mz-postmerge-frontier-20261031/audit-01.md",
+      "bytes": 15354,
+      "sha256": "361f5bad041b3dc1ccc0ca1aad9f68aa9111880ce59d8196d1577b6b71269230"
+    },
+    {
+      "path": "topics/mz-postmerge-frontier-20261031/check-response-01.py",
+      "bytes": 7941,
+      "sha256": "a1d278128cca568b7de6daf5984e177e65098b5fef3a85eaf95c841888371f43"
+    },
+    {
+      "path": "topics/mz-postmerge-frontier-20261031/checks.json",
+      "bytes": 2286,
+      "sha256": "8ff7815e022657e6c3dc4cdb686e4901740ecff8992aba20711f2efe3c600d9c"
+    },
+    {
+      "path": "topics/mz-postmerge-frontier-20261031/final-stack-rehearsal.json",
+      "bytes": 1390,
+      "sha256": "32033cc72e0792fb1106899944a0115f2ab33e0c01c54cb9665aeee41a315e45"
+    },
+    {
+      "path": "topics/mz-postmerge-frontier-20261031/independent-protocol-01.md",
+      "bytes": 9515,
+      "sha256": "71cf428b55c1fb60e89e8de50add9f2e71325721b78141101ca235a394e0e3ec"
+    },
+    {
+      "path": "topics/mz-postmerge-frontier-20261031/merge-verification.json",
+      "bytes": 1185,
+      "sha256": "0343bc6ed387eb74235a2708b3574c67e1c087ce6c804cebd3b15ff2f622f560"
+    },
+    {
+      "path": "topics/mz-postmerge-frontier-20261031/response-01-checks.json",
+      "bytes": 2270,
+      "sha256": "0b102ce383a39ec931aa0248e13c9c695cb5c4fc80cd24e168ed18ccb3c6ed29"
+    },
+    {
+      "path": "topics/mz-postmerge-frontier-20261031/response-01.md",
+      "bytes": 7639,
+      "sha256": "518c67bffd43270ce42df534910182d1971d55e0cfd403c07510a6607bb0add2"
+    },
+    {
+      "path": "topics/mz-postmerge-frontier-20261031/stack-rehearsal.json",
+      "bytes": 1406,
+      "sha256": "5cd7c4bfb2f8c215918ac8e638ef3331de263c58d54326fab43599a3158f2ec3"
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "bytes": 9192,
+      "sha256": "64f40c4ddf0af6a5072573c00922fe255c894d3ef0b62d708214e5568828bf52"
+    }
+  ]
+}

@@ -50,3 +50,6 @@ The actual local sequential squash rehearsal and its whole-tree equality checks 
 
 Stage: PR
 Next: `Codex (gpt-6.1-sol medium): Check PR #4 then stacked PR #5 before AC’s merge decisions.`
+
+
+Final-parent rehearsal: final-stack-rehearsal.json pins main07c5f54→PR4a4331a1→PR5candidate4076a2f. It passed exact whole-tree equality after both squashes; the one CURRENT conflict retained every surrounding byte and accepted MZ ID. Only this receipt/review/publication metadata follows that frozen candidate; science and registries remain unchanged.
