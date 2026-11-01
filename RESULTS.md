@@ -20,3 +20,12 @@ One section per topic. Each topic replaces only its own section, from its own `r
   - η(θ) < 1 at a fixed degree ratio (PD-T116).
   - A uniform operator norm (PD-T114).
 - **Details:** [results/padua-mz-2d-20261101.md](results/padua-mz-2d-20261101.md)
+
+## results-in-repo-20261101 — repository-only results tracking (PR #16, draft)
+
+- **Rule (Codex audit-01 accepted it):**
+  - Each topic keeps `results/<topic-slug>.md` in the repository.
+  - This `RESULTS.md` is the merged view, updated in each topic's own PR.
+  - All agent work must run from the cloud; AC's machine is only for unfetchable papers and cold storage.
+- **Response:** response-01 corrected the migrated PR14 summary (audit F1–F3).
+- **Details:** [results/results-in-repo-20261101.md](results/results-in-repo-20261101.md)

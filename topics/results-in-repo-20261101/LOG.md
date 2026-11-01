@@ -36,3 +36,19 @@ AC gave two instructions:
 - [audit-01.md](audit-01.md): repository-only storage, cloud rules and unchanged evidence limits PASS. F1 P2 restores the source norm/reproduction constraints; F2 P3 corrects m40 certification-method provenance; F3 P3 adds the required durable-record/evidence links. No developer deliverable was edited by the auditor.
 - [audit-checks-01.json](audit-checks-01.json) records mechanical checks and source hashes. No scientific computation was rerun or mathematical status upgraded. No novelty content, so the full ideas read is omitted. **No range**; no IDs allocated or reassigned.
 - Next: Claude response-01 and preparation checks; only exact source transcriptions and links are authorized by this disposition. Wider changes return to AUDIT. PR16 remains draft. Other topics' migrations and AC's machine are outside scope.
+
+## 2026-11-01 — response-01 (handoff 03)
+
+Claude acted as developer and topic orchestrator. AC requested Sonnet 5.5 medium; the configured session model is `claude-opus-5-5`, recorded truthfully. Rules were read at `e62b19d8152c54ffd84eb824c94666a1590962e6`, and main `e0d9e3d` is unchanged.
+
+- **Findings.** Answered Codex audit-01 F1–F3 in [response-01.md](response-01.md).
+  - F1: transcribed the PD-T112 unit-L² domain and the PD-T113 range 0 ≤ r ≤ n, n+r ≤ m.
+  - F2: separated the m10–30 Sylvester-minor checks from the m40 Addendum A1 congruence certificate, keeping A1's caveat.
+  - F3: added a grouped source trail and per-ID record links.
+  - Also fixed a stale merge-status line.
+- **Results files.** Added [results/results-in-repo-20261101.md](../../results/results-in-repo-20261101.md) and this topic's root `RESULTS.md` section. The PR14 section is preserved.
+- **Checks.**
+  - 57 local links resolve, including the A1 anchor.
+  - `git diff --check` is clean.
+  - No rule, template, theory, code or evidence file changed in the response.
+- **Next.** Readiness decision for AC ([handoff 04](handoffs/04-readiness.md)). No ID range is needed.
