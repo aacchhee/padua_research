@@ -28,6 +28,8 @@ Pinned read-only dependency heads after fetch: A1 branch `752ba068589683afe644b5
 
 ## Runs needed
 
+2026-11-01 update: AC explicitly allowed updating from new main. Fetched and merged `806cc7b4509fd93bae652f9545d32d95529f8281`, which contains accepted PR9 and final A1 ID PD-T101. Rules were reread; all three rule files are byte-unchanged from cf89b140. The merge preserves published campaign history. All following allocation and novelty checks include the new main; part2 remains audit pending.
+
 - Execute D0 after definitions and D1 kill criterion are fixed; rigorously enclose m=10,20,30,40 if feasible, distinguish any incomplete certification from floating reproduction.
 - Execute a separate-agent exact checker rerun before any computer-assisted claim is labeled PROVED.
 - Reserve fresh ranges and publish early draft PR after checking current main, all open PRs, all ledgers and closed-unmerged reservations.
