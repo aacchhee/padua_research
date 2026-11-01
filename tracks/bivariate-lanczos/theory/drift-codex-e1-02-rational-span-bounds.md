@@ -39,7 +39,7 @@ Exactly those of PD-T?drift-codex-01. All-source sensitivity uses J={1,...,N_s-1
 
 ## Status by part
 
-Overall status: PROVED (analytic; independent audit pending).
+Overall status: PROVED (analytic; Claude audit-01: CONFIRMED; Codex re-audit pending).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -88,3 +88,5 @@ Tighter certified upper bounds if the row traces are too pessimistic. One option
 ## History
 
 - 2026-11-01: Codex mathematics developer; requested gpt-6.1-sol xhigh allocation, runtime metadata unexposed. Node/HS setup sent before computation; independent-node tightening sent before receiving results. Frozen comparison thresholds unchanged.
+- 2026-11-01 (Claude response-01, Sonnet 5.5): E1-F4: the statement about the Urow tightening reconciled with `evidence/e1-freeze.json`, which records the Urow bound as added "after initial n2 restricted-source run" (present already in the earliest committed freeze 6920ba6 under `frozen_before_run`), at a time not separately logged; "before receiving results" is therefore dropped as unverifiable (details: `directions/E1.md`, Response-01 annotations); original wording: «Node/HS setup sent before computation; independent-node tightening sent before receiving results.»
+- 2026-11-01 (Claude response-01, Sonnet 5.5): status line updated for audit-01 (status PROVED unchanged); original wording: «Overall status: PROVED (analytic; independent audit pending).»

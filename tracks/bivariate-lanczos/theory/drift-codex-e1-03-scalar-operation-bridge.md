@@ -1,7 +1,7 @@
-# PD-T?drift-codex-03 — First-order scalar-CGS2 rounding map in the polynomial normal quotient
+# PD-T?drift-codex-03 — First-order normal-quotient map of the vector-operation errors of a scalar CGS2 graph in a formal relative-error model
 
 ID kind: PD-T.
-Aliases: operation-to-residual bridge; scalar coefficient errors lie in the normal kernel; vector arithmetic controls first-order span drift.
+Aliases: operation-to-residual bridge; scalar coefficient errors lie in the normal kernel; vector-operation amplitudes determine the first-order normal map in the formal relative-error model.
 Split from: E2's explicit-family/rounding explanation target, which remains OPEN beyond this stated model.
 Split into: none.
 
@@ -83,7 +83,7 @@ Exact positive pivots; injectivity through the specified degree; fixed choices u
 
 ## Status by part
 
-Overall status: PROVED (analytic model reduction and bounds; independent audit pending).
+Overall status: PROVED (analytic model reduction and bounds; Claude audit-01: CONFIRMED, wording corrections applied in response-01; Codex re-audit pending).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -96,15 +96,17 @@ Candidate / claim disposition: retained as a bridge for the stated formal model.
 
 PD-T?drift-codex-01's exact frozen recurrence and graph-angle argument. Its assumption of exact perturbed full projection is not imposed on this theorem: the proof below directly differentiates a computed recurrence instead.
 
+Closest predecessors (added in response-01, audit finding P-F6; **not dependencies**, nothing below is used in the proof): PD-T042 / IDEA-141 (exact first-order derivative of the window coefficient map with respect to coefficient errors, with on/off-pattern gains, on product-type measures), PD-T043 / IDEA-142-144 (term-wise and closed-loop dot-product rounding through that coefficient map; Gaussian term-wise noise and the mixed-precision `dot64` model, MEASURED) and IDEA-139 (coefficient-aware forcing, REJECTED as a loss predictor, PD-N009(b)). Separation: (i) *output functional*: PD-T042/043 concern the **Gram** matrix of the windowed-recurrence output (orthogonality defect), where in the tested models the coefficient errors carry the measured loss; this record concerns the **span** of the fully orthogonalized columns, in which the same coefficient, dot-product and norm errors lie in the polynomial kernel and vanish at first order. It is the span-output counterpart of those Gram-output results and says nothing about the orthogonality defect. (ii) *error model*: PD-T042 is an exact derivative on product-type measures and PD-T043 uses Gaussian noise or an actual mixed-precision dot product, whereas here every scalar operation of a specified CGS2 implementation carries an independent formal relative error |delta|<=1 (an l-infinity operation graph) at arbitrary rational nodes and fixed choices, with no stochastic or IEEE model. Nothing here confirms or contradicts those findings.
+
 ## Checks
 
-Written after root explicitly authorized E2 development on E1's tightened finite property certificate. The scalar-subset/full-graph finite results are separate evidence; no computer proof is claimed by this analytic reduction alone. Supplementary independent mathematical reconstruction of the full chain rule and the added support/sign-witness bounds found no gap (see the topic's independent mathematical check). Full independent operation-by-operation dual-number trajectory reconstruction is an outstanding supplementary check.
+Written after root explicitly authorized E2 development on E1's tightened finite property certificate. The scalar-subset/full-graph finite results are separate evidence; no computer proof is claimed by this analytic reduction alone. Supplementary independent mathematical reconstruction of the full chain rule and the added support/sign-witness bounds found no gap (see the topic's independent mathematical check). Full independent operation-by-operation dual-number trajectory reconstruction was an outstanding supplementary check when this record was written; the audit-01 reviewer has since run it at degrees 3 and 4 (14 and 20 generic rational nodes, all four rules, 5454 scalar operations per case, agreement with the amplitude table to 1.3e-80; no degree-12 replay was run).
 
 The developer executed `tracks/bivariate-lanczos/code/drift/e1_cgs2_verify.py`; `topics/padua-lanczos-drift-20261101/evidence/e1-cgs2-graph-verification.json` records exact rational dual-number checks at degree three for all four rules on both primary grids. Per rule, T24 had 2925 local graph-gradient identities and 26325 zero second-pass-operation checks; rotQ24 had 5625 and 50625. All passed. This verifies local primitive amplitudes, not the complete normalized trajectory or an actual IEEE realization; it is developer execution, not independent rerun.
 
 ## Sources
 
-Standard relative-error model, explicitly restated rather than imported as a theorem. Existing PD-T046 includes normwise local recurrence error and a non-breakdown factor; the present claim gives the first-order normal quotient of a fully specified scalar implementation. No priority claim.
+Closest coefficient-error predecessors PD-T042 / IDEA-141 and PD-T043 / IDEA-142-144 (and IDEA-139), with the separation stated under Depends on. Standard relative-error model, explicitly restated rather than imported as a theorem. Existing PD-T046 includes normwise local recurrence error and a non-breakdown factor; the present claim gives the first-order normal quotient of a fully specified scalar implementation. No priority claim.
 
 ## Proof or evidence
 
@@ -137,10 +139,14 @@ For actual IEEE arithmetic, a formal adversarial delta may be unattainable; a su
 
 ## Open items
 
-Independent dual-number operation-level replay; exact finite scalar-subset/full-map certificates; a concrete actual-rounding realization; explicit-family uniform degree bounds and matching finite-epsilon estimates. Zero local errors remain permitted, so no unavoidable pathwise drift lower bound follows.
+Independent dual-number operation-level replay (done at degrees 3 and 4 by the audit-01 reviewer; degree 12 not run); exact finite scalar-subset/full-map certificates; a concrete actual-rounding realization; explicit-family uniform degree bounds and matching finite-epsilon estimates. Zero local errors remain permitted, so no unavoidable pathwise drift lower bound follows.
 
 ## History
 
 - 2026-11-01: Codex mathematics developer, requested gpt-6.1-sol xhigh, exact runtime metadata unexposed. Root authorized E2 after the tightened E1 finite certificate. This file records an analytic scalar-model bridge, while preserving the original E2 family/rate target as OPEN.
 
 - 2026-11-01: Added coherent-node, projected-row and node-sign expectation/greedy lower certificates during the post-E1 scalar search. These are routine support/norm consequences in the same formal model; no target/parameter change and no historical preregistration claim.
+
+- 2026-11-01 (Claude response-01, Sonnet 5.5): E1-F8: title and alias reworded so that neither reads as an IEEE or causal claim (provisional ID kept); original wording: «# PD-T?drift-codex-03 — First-order scalar-CGS2 rounding map in the polynomial normal quotient»; alias «…; vector arithmetic controls first-order span drift.»
+- 2026-11-01 (Claude response-01, Sonnet 5.5): P-F6: added the closest coefficient-error predecessors PD-T042/IDEA-141, PD-T043/IDEA-142-144 and IDEA-139 with a separation statement under Depends on and Sources; no mathematical content changed; original Sources wording: «Standard relative-error model, explicitly restated rather than imported as a theorem.»
+- 2026-11-01 (Claude response-01, Sonnet 5.5): status line, Checks and Open items updated for the audit-01 trajectory replay at degrees 3-4 (status PROVED unchanged); original wording: «Overall status: PROVED (analytic model reduction and bounds; independent audit pending).»; «Full independent operation-by-operation dual-number trajectory reconstruction is an outstanding supplementary check.»

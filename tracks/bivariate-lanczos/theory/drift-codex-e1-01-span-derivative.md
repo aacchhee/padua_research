@@ -26,7 +26,7 @@ where a_k is the chosen x or y coordinate. Set
     V_0=0,  V_k=sum_{h=1}^k diag(g_kh(z_i)) f_h,
     T_s(f)=R_s [V_0,...,V_(N_s-1)] D_s^(-1/2).
 
-Then the largest principal-angle sine theta_s(epsilon)=||(I-P_s)P_s(epsilon)||_2 satisfies
+Then, for s <= n, the largest principal-angle sine theta_s(epsilon)=||(I-P_s)P_s(epsilon)||_2 satisfies
 
     theta_s(epsilon)=|epsilon| ||T_s(f)||_2 + O(epsilon^2).
 
@@ -44,7 +44,7 @@ Real diagonal coordinate operators; injectivity through degree n; fixed admissib
 
 ## Status by part
 
-Overall status: PROVED (written analytic proof; independent audit pending).
+Overall status: PROVED (written analytic proof; Claude audit-01: CONFIRMED, editorial correction applied in response-01; Codex re-audit pending).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -100,3 +100,5 @@ Finite exact separation of BJ and good selections; an independently verified sca
 ## History
 
 - 2026-11-01: Codex mathematics developer; requested gpt-6.1-sol xhigh allocation, runtime variant/effort not independently exposed. Written as a substantive split from E1 before sensitivity computations. No final ID allocated.
+- 2026-11-01 (Claude response-01, Sonnet 5.5): E1-F9: added "for s <= n" to the Statement (the stage s of the angle expansion must not exceed the injectivity degree n; the proof already used s <= n); original wording: «Then the largest principal-angle sine theta_s(epsilon)=||(I-P_s)P_s(epsilon)||_2 satisfies»
+- 2026-11-01 (Claude response-01, Sonnet 5.5): status line updated for audit-01 (status PROVED unchanged); original wording: «Overall status: PROVED (written analytic proof; independent audit pending).»
