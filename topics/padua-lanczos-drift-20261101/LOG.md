@@ -189,3 +189,21 @@
 - Annotation (A02-L1; the audit files are unchanged): audit-01's summary states that the record-03 full normalized-trajectory replay ran "at degrees 3 and 4" (audit-01.md:67), and that it "now exists at degrees 3–4" (audit-01.md:103). Its E1 report repeats this under Remaining uncertainty ("covers degrees 3 and 4", checks/audit-01/E1-records-01-05.md:169). This is an error. The committed first_principles.py runs partC only when n == 3, and the same report's own record-03 disposition says "degree 3". Response-01 propagated the error into record03, record05, E1/E2 and ideas-e1, and into checks/response-01/E1-developer-report.md:23 ("degree 3-4"). Response-02 corrects the active files and adds an actual degree-4 replay as a new developer execution with its own chronology. The frozen audit-01 and response-01 files are not edited.
 - A02-L8: Windows-results obligations superseded (repository-only results). Integration refresh: PASS against main `28aaa20` and PR12 `146babe` (`evidence/response-02-integration-20261101.json`).
 - Stage: **AUDIT**. Next handoff: [08-reaudit](handoffs/08-reaudit.md), a Codex re-audit.
+
+## Audit-03 start — Codex, 2026-11-01
+
+- AC requested Codex gpt-6-astra xhigh to continue this branch. Fetched and
+  fast-forwarded to c8849a89a601e0a56342d3d568086ab8abdbc4c0; read AGENTS.md,
+  agents/WORKFLOW.md and agents/codex/CODEX.md there. Candidate under handoff08:
+  ea829d92d509f79326a1cc037844a1bac3b4de13, Claude response-02. Main remains
+  28aaa20861d08074b77efc74eaef75cdcb36234d; PR16 is already incorporated.
+- Root audit/orchestration requested Astra xhigh; resolved runtime metadata is
+  unexposed. Five separate reviewers explicitly configured gpt-6-astra xhigh
+  cover E1, E3/E4, E5, E6 and protocol. Only root changes Git. Scope is the ten
+  audit02 dispositions and response02 changes, with fresh integration and pins;
+  no new mechanism, registry edits, final-ID assignment or developer fixes.
+- Refreshed sole other open draft PR12 to 7f226c1cec873fd8069feae1f4749f13d95f5c9d.
+  Root integration_check.py PASS at c8849a8, including clean PR12 merge-tree,
+  squash tree equality, protected paths and all77 original theory files.
+  Remote inventory: evidence/audit-03-remote-state.json; integration receipt:
+  evidence/audit-03-integration.json. Audit verdict pending separate reruns.
