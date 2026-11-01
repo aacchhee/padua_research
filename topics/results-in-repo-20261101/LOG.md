@@ -52,3 +52,4 @@ Claude acted as developer and topic orchestrator. AC requested Sonnet 5.5 medium
   - `git diff --check` is clean.
   - No rule, template, theory, code or evidence file changed in the response.
 - **Next.** Readiness decision for AC ([handoff 04](handoffs/04-readiness.md)). No ID range is needed.
+- 03 → done in `9c4a69c41f0e7355a8c6768cee94693ffad6106d`; [04-readiness.md](handoffs/04-readiness.md) is open for AC.
