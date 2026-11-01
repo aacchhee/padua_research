@@ -199,3 +199,11 @@ Consolidated list (exact commands in the cited records): L1 SUMMARY §6; L2 abov
 ## Open for AC
 
 - (resolved 2026-10-31 21:41) Push access attached after AC approval.
+
+## 2026-11-01 — Codex focused re-audit of response-01 (in progress)
+
+- Requested role: independent Codex re-auditor, `gpt-6-astra xhigh`. Five bounded workers reuse the explicitly configured Astra/xhigh audit agents for L1/L4, L2, L3 residual conventions, L3 formula/scope and L5. Root owns the impact inventory, cross-scope disposition and Git; no developer correction is made by the auditors.
+- Rules read at session-start branch head `50b0d304001b48607527e5086a67045f534d9472`: `AGENTS.md`, `agents/WORKFLOW.md`, `agents/codex/CODEX.md` (byte-identical to the prior read). Fetched main `0d058fb410166bd97b178be57910f2d256d0b529`; topic fast-forwarded from `5f523313b7b388cb114103734028f0a850dfeaad` to `50b0d304001b48607527e5086a67045f534d9472`. The previously recorded preparation boundary still defers merging main; this is a frozen focused audit.
+- Scientific response candidate: `075d4074017445a0fd4d7443ffac97cd7f8c106b`. The publication delta to `50b0d30` changes LOG and the response's self-SHA pin, not science. This inspected metadata-only delta is recorded explicitly despite the response's shorthand “only LOG bookkeeping.”
+- Executed root command: `python3 topics/bivariate-lanczos-20261031/audit-02/check_impact.py > topics/bivariate-lanczos-20261031/audit-02/impact-check.json`. Result PASS: all 65 response-declared changed/new theory hashes match, 10 are new, 12 original theory files unchanged, 77 total. Every audit-01 artifact identity remains intact; rules/IDEAS/literature registry bytes are unchanged, so their prior full reads are reused. All producer-code changes are additions of response checkers; existing producer implementations are unchanged.
+- Review scope includes all prior finding dispositions, changed hypotheses/status splits, new proofs 209/318 and their dependencies, propagation into summaries, the exact normalization refutation and evidence interpretation. No new research candidate, primary-source reading or novelty claim is introduced. Independent executions and inspected historical evidence are distinguished in the forthcoming `audit-02/` reports. Status remains AUDIT pending those reports.
