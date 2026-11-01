@@ -31,7 +31,7 @@ PD-T?…-203, -207.
 
 ## Checks
 
-`python3 -I tracks/bivariate-lanczos/code/L2/l2_r02_pro.py --jmeasure cb_cubic`.
+`python3 -I tracks/bivariate-lanczos/code/L2/l2_r02_pro.py --jmeasure cb_cubic`. Independent rerun: Codex audit-01 (`topics/bivariate-lanczos-20261031/audit-01/L2/proJ-rerun.log`, `dots-rerun.log`): L(29) = 1.9702675e-7 = 18.70√u (> 10√u); the failure is also reproduced with the exact-dot substitution of the R03 suite.
 
 ## Sources
 
@@ -52,3 +52,4 @@ Cause of the failure.
 ## History
 
 - 2026-11-01T01:29:29+01:00: created from PD-T?…-207 (a) in response to reconstruction 01 finding F3 (Claude Opus 5.5, xhigh; L2 developer).
+- 2026-11-01T08:32:22+01:00: Checks: audit-01 independent rerun recorded (original Checks: the command only). Statement, disposition and status MEASURED unchanged (Claude Opus 5.5, xhigh; L2 developer, response to Codex audit-01, `directions/L2/response-audit-01.md`).

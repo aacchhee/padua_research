@@ -99,7 +99,7 @@ Aliases: Lin's theorem; Kachkovskiy–Safarov √‖[A,B]‖ bound (attribution 
 ## IDEA?bivariate-lanczos-claude-307 — Greenbaum-type exact commuting (graded) backward model with δ(ε) → 0 in the square case
 
 Aliases: seed 005 in its exact form.
-- Disposition: REJECTED: refuted for Padua n = 3 → PD-N?bivariate-lanczos-claude-301 (PROVED after independent rerun) and for every Padua n ≥ 4 → PD-N?…-303 (PROVED under the Padua-unisolvence assumption); holds with δ ≍ √ε for n = 1 (PROVED) and Padua n = 2 (PROVED). [Updated per finding L9 of L3-reconstruction-02; original: "PD-N?…-301 (CONDITIONAL on independent rerun of the exact checker); MEASURED failure for Padua n = 4..7 (PD-T?…-307); … Padua n = 2 (CONDITIONAL)".]
+- Disposition: REJECTED: refuted in reading (E) (exact representation, or a sufficiently smaller residual, of specified consistent perturbations given as data; the finite-precision reading (G) is OPEN) for Padua n = 3 → PD-N?bivariate-lanczos-claude-301 (PROVED after independent rerun) and for every Padua n ≥ 4 → PD-N?…-303 (PROVED under the Padua-unisolvence assumption); holds with δ ≍ √ε for n = 1 (PROVED) and Padua n = 2 (PROVED). [Reading-(E) qualifier added 2026-11-01T08:33:39+01:00 per consolidated item 4 of Codex audit-01; original first clause: "- Disposition: REJECTED: refuted for Padua n = 3 → PD-N?bivariate-lanczos-claude-301 (PROVED after independent rerun)".] [Updated per finding L9 of L3-reconstruction-02; original: "PD-N?…-301 (CONDITIONAL on independent rerun of the exact checker); MEASURED failure for Padua n = 4..7 (PD-T?…-307); … Padua n = 2 (CONDITIONAL)".]
 - Kill criterion (plan.md): explicit small-n perturbation satisfying all interior commutativity conditions, no representing measure with δ → 0 — FIRED at Padua n = 3 (family E = −ε ev_ζ, p*(ζ) > 0).
 
 ## IDEA?bivariate-lanczos-claude-308 — Weight-only backward model in the overdetermined case
@@ -136,13 +136,13 @@ Aliases: p_C = Σ c_jk q_j q_k, C ⊥ Hankel; Hankel test Σ G_iA_iG_iᵀ ∈ Ha
 | Obstruction | Exact obstruction and hypotheses | Affected | Evidence | Scope / escape |
 |---|---|---|---|---|
 | OBST?…-L3-a | Square case M = N_n: dim Π_{2n+1} − 3N_n = n(n+1)/2 > 0 polynomials vanish to second order at all nodes, so exact backward measures need support spread ≥ c√ε (≥ c√‖κ̂‖) | 004, 005, 031, 032 | PD-N?…-302 PROVED; PD-T?…-304 PROVED | escape: residual ≥ perturbation (trivial), or fully commuting data (δ = O(ε)) |
-| OBST?…-L3-b | Locally nonnegative singular polynomial: Padua n = 3 has p* ∈ Π_7 with double zeros and PD Hessians at all nodes ⇒ no exact backward measure within δ_0 for perturbations with E(p*) < 0 | 005, 031, 032 | PD-N?…-301 CONDITIONAL (rerun); n = 4..7 MEASURED | escape: support beyond δ_0, residual ≥ |E(p*)|, or error directions with E(p*) ≥ 0 |
+| OBST?…-L3-b | Locally nonnegative singular polynomial (reading (E), perturbations given as data): Padua n = 3 has p* ∈ Π_7 with double zeros and PD Hessians at all nodes, and every Padua n ≥ 4 has P_n ⇒ no exact backward measure within δ_0(n) for perturbations with E(p*) < 0 | 005, 031, 032 | PD-N?…-301 PROVED; PD-N?…-303 PROVED under Padua unisolvence [updated 2026-11-01T08:33:39+01:00 per LC-L1 of Codex audit-01; original: "PD-N?…-301 CONDITIONAL (rerun); n = 4..7 MEASURED"] | escape: support beyond δ_0(n), residual ≥ |E(p*)|/‖p*‖_* against L_μ + E (convention (R1) of PD-T?…-302), error directions with E(p*) ≥ 0, or reading (G) (OPEN); uniformity in n not established (PD-T?…-319) |
 | OBST?…-L3-c | Computed coefficients are overdetermined (excess e_n = 1, 6, 17, 36, … relations), so the completed H_y and the functional L̂ are defined only up to the consistency defect | 008, 031 | PD-T?…-301(d) PROVED (count) | relevant for reading (G) and L2's ω-recurrence |
 
 ## IDEA?bivariate-lanczos-claude-312 — "Equispaced checkerboards satisfy (H) for every n" (R04)
 
 - Kill criterion (before testing, K9): killed by an exact primal (failure) certificate at any tested n.
-- Result: not killed for n ≤ 7 (exact dual certificates, PD-T?…-310, CONDITIONAL on rerun); n = 8 unresolved; margins collapse super-geometrically (PD-T?…-311, MEASURED).
+- Result: not killed for n ≤ 7 (exact dual certificates, PD-T?…-310, PROVED after the independent exact rerun of L3-reconstruction-02, rerun again by Codex audit-01); n = 8: reviewer high-precision certificate, pending an independent rerun; margins collapse super-geometrically (PD-T?…-311, MEASURED). [Updated 2026-11-01T08:33:39+01:00 per LC-L1 of Codex audit-01; original: "- Result: not killed for n ≤ 7 (exact dual certificates, PD-T?…-310, CONDITIONAL on rerun); n = 8 unresolved; margins collapse super-geometrically (PD-T?…-311, MEASURED)."]
 - Disposition: open (neither confirmed nor refuted beyond n = 7).
 
 ## Pending corrections (frozen files not edited; recorded per coordinator instruction 2026-10-31)
@@ -156,7 +156,7 @@ Aliases: p_C = Σ c_jk q_j q_k, C ⊥ Hankel; Hankel test Σ G_iA_iG_iᵀ ∈ Ha
 Aliases: κ(t) = −(1−c) − ct; P_n = 9(g_1² − ½g_0g_2) + (g_2² − g_1g_3).
 - Closest: IDEA 302 (H), 309 (Hankel form); records bos-dmv-xu-2007 (two-term generators, as reported); Blekherman JAMS 2012 Lemma 3.1 (as reported by the prior-art check: PD-Hessian double zeros stay nonnegative under perturbation).
 - Kill criteria (before testing): K10 (interior), K11 (all nodes) — R05 §3.
-- Results: K10 not fired; K11 fired at n = 2, 3, holds n = 4..12 numerically and is proved for all n ≥ 4 (PD-T?…-313, CONDITIONAL on rerun/hand check of three expansions).
+- Results: K10 not fired; K11 fired at n = 2, 3, holds n = 4..12 numerically and is proved for all n ≥ 4 (PD-T?…-313, PROVED after the independent exact check and hand check of L3-reconstruction-02; rechecked by Codex audit-01). [Updated 2026-11-01T08:33:39+01:00 per LC-L1 of Codex audit-01; original: "- Results: K10 not fired; K11 fired at n = 2, 3, holds n = 4..12 numerically and is proved for all n ≥ 4 (PD-T?…-313, CONDITIONAL on rerun/hand check of three expansions)."]
 - Disposition: survived for n ≥ 4 → PD-T?…-312, 313, PD-N?…-303; failed for n ≤ 3 (recorded; n = 3 handled by N301).
 
 ## Pending corrections (R05, from the independent prior-art check, 2026-10-31)
@@ -189,3 +189,11 @@ Aliases: κ(t) = −(1−c) − ct; P_n = 9(g_1² − ½g_0g_2) + (g_2² − g_1
 ## Corrections (2026-11-01T00:48:09+01:00; response to L3-reconstruction-02)
 
 - L8: IDEA 314–316 and PD-N?…-307/308 added; L9: IDEA 307 disposition updated (original wording kept in the entry).
+
+## Corrections (2026-11-01T08:33:39+01:00; response to Codex audit-01, see `response-audit-01.md`; original wording kept in the bracketed notes above)
+
+- LC-L1: current status pointers synchronised in OBST?…-L3-b, IDEA 312 and IDEA 313 (dated historical round statements in R01–R06 are not edited).
+- Consolidated item 4: every obstruction disposition here (IDEA 306, 307; OBST?…-L3-a, -b) is a statement in reading (E); none answers the Greenbaum reading (G), which stays OPEN (PD-T?…-300). IDEA 306's refutation (no δ = O(ε)) is likewise a worst-case statement in reading (E).
+- LF-M1: IDEA 301's criterion "all ε-perturbations ⟺ r(δ) ≥ ε" is PD-T?…-302(b1) (unchanged). The pre-audit residual variant of 302(b) (threshold (1−θ)ε with the mass-normalised L̂ and factor 1) is refuted → PD-N?bivariate-lanczos-claude-309 (PROVED, exact counterexample of the audit); corrected conventions (R1)–(R3) in 302(b1)–(b3). No IDEA record is created: the refuted object is a claim variant inside a theorem, not a candidate mechanism.
+- LF-M2: the isomorphism clause of PD-T?…-304(c) is split into PD-T?…-316 (OPEN) and PD-T?…-317 (MEASURED); new PD-T?…-318 (PROVED) shows that 316 is equivalent to the open conjunct of IDEA 309 / PD-T?…-309 ("injectivity of C ↦ p_C and S_1 = {p_C}"), so IDEA 309's open item and 304(c)'s isomorphism are one question.
+- LC-M1: the dependence on n of the Padua obstruction radius (formerly "δ_0(n) → 0, no radius uniform in n") is OPEN → PD-T?…-319.

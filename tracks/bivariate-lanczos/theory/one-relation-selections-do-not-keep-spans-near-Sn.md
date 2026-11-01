@@ -52,3 +52,4 @@ As PD-T?…-206.
 ## History
 
 - 2026-11-01: created (Claude Opus 5.5, xhigh; L2 R02).
+- 2026-11-01T08:32:22+01:00: (Codex audit-01: L2-F4 reference to the split drift bound; claim-coverage note "does not quantify over all possible selections"; Claude Opus 5.5, xhigh; L2 developer, response `directions/L2/response-audit-01.md`) Depends on: original "PD-T?…-205 part 4 (bound), PD-T?…-206 (measurements)." → PD-T?…-208. Checks: original "As PD-T?…-206." extended. Scope sentence added. Statement, disposition and status MEASURED unchanged.
