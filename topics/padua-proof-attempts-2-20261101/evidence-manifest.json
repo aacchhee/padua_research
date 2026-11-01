@@ -2,6 +2,7 @@
   "schema": 1,
   "purpose": "mechanical provenance; no scientific execution or verification",
   "pins": {
+    "main_results_tracking_rule": "28aaa20861d08074b77efc74eaef75cdcb36234d",
     "main_mz_registry_update": "e0d9e3d08ee26c3b82a295f33b6ff99d928f22b9",
     "part1_and_rules": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
     "part1_audit_arrived": "95279b833bca5967fcf47c1b71a56ff622185b4e",
@@ -21,6 +22,46 @@
   "command": "python topics/padua-proof-attempts-2-20261101/code/evidence_manifest.py",
   "input_source": "local immutable Git objects via git show COMMIT:PATH; no files fetched remotely by this script",
   "inputs": [
+    {
+      "source": "main_results_tracking_rule",
+      "commit": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+      "path": "AGENTS.md",
+      "git_blob": "07cd8c8920fabccc16dce4a63fe853a2f3a26f3d",
+      "sha256": "c44a76f138fce01f02c06753b22fbc83fd5c1ee701785d49ba17cef5f8eee05b",
+      "bytes": 3572
+    },
+    {
+      "source": "main_results_tracking_rule",
+      "commit": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+      "path": "RESULTS.md",
+      "git_blob": "a052265a4730074a3986bdc41008f6568d7282a9",
+      "sha256": "799aa98dc706c47b7440cb1195da5340b22d1deb60367afbd5f6127294e05ab2",
+      "bytes": 2018
+    },
+    {
+      "source": "main_results_tracking_rule",
+      "commit": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+      "path": "agents/WORKFLOW.md",
+      "git_blob": "52ca0630b69a8759e2e418c669bc35855bc9ea66",
+      "sha256": "a8927be27a1fe8166e5bcf59c7da8e70618ae0a5f17d56131724baffdad49353",
+      "bytes": 26615
+    },
+    {
+      "source": "main_results_tracking_rule",
+      "commit": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+      "path": "agents/codex/CODEX.md",
+      "git_blob": "16a4ecfea89acd5b1d9cd09c9213094bce144caf",
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+      "bytes": 4969
+    },
+    {
+      "source": "main_results_tracking_rule",
+      "commit": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+      "path": "results/README.md",
+      "git_blob": "b4d44ae3a11d6cebce976477b45b6c66d3d589d2",
+      "sha256": "98e3407ddf7cd245ecc30e0f79cbf2de9ee64ff524c9a82829f2f7296f226470",
+      "bytes": 479
+    },
     {
       "source": "part1_response_arrived",
       "commit": "7b8884a2f98518784ff3698dd2f3f9c49c9cdd62",
@@ -2289,8 +2330,8 @@
   "outputs": [
     {
       "path": "topics/padua-proof-attempts-2-20261101/LOG.md",
-      "sha256": "4a37d4ec0a2cc998be289e0268d04249cd530581d7098498964b91c20f6a1732",
-      "bytes": 81513
+      "sha256": "3b3611234095df69ee9a3bc436e5303a79091e9b8d120d2621723a6ac7edc7af",
+      "bytes": 85863
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/a4-input-preparation.md",
@@ -2304,8 +2345,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A4a.md",
-      "sha256": "99f65bdb14479261e3f98b4428e69af9e3fd98cd234fb1fdcf875feb96d8e138",
-      "bytes": 8901
+      "sha256": "2cca59ffd17b63b2805cafb44fa98ba4f61c84b42823fff0b0f7daf91784b7c3",
+      "bytes": 11634
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n4.md",
@@ -2356,6 +2397,11 @@
       "path": "topics/padua-proof-attempts-2-20261101/code/a2_sanity.py",
       "sha256": "8ca20d9690664430fe596ebdda881183034ef6e1ea81ca3bd841d9c2bfbb0649",
       "bytes": 2121
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/code/a4g_series.py",
+      "sha256": "510955136172a93206861f3a8252aa36460daa8c7965770d0fd6354209104ab9",
+      "bytes": 2953
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/code/a4reg_complementary_check.py",
@@ -2704,8 +2750,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/code/evidence_manifest.py",
-      "sha256": "f26b23da0a3d0d9dddd852ec23864f58fb10b4e3e4c0864d8e9046206342093b",
-      "bytes": 7830
+      "sha256": "8ac03b888e375b4b714d985e1f6838ea0cc3fa4efe3afbfddbd17e42b3186dbf",
+      "bytes": 7991
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/evidence-packaging.md",
@@ -2724,8 +2770,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a4.md",
-      "sha256": "7783733594f37659e1ff398fb4253e8b0fc531674acfe6969df8fe06df66ef4c",
-      "bytes": 20081
+      "sha256": "c112b51635c66413d6ee571e774ff0313ef23dd87f90d7162524fb0504963923",
+      "bytes": 34917
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-checks-a5-checker.md",
@@ -2814,13 +2860,18 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-checks.md",
-      "sha256": "9fe38645bc66af466255410ad77e58100ff57c6150ff4083734250922b81556d",
-      "bytes": 11977
+      "sha256": "06511de502818b22672601e7a4ea9c4f0f83d37b34be4438e7c3fc8df9941fc1",
+      "bytes": 12720
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-execution-a2.md",
       "sha256": "135f8d5c515511ed8680864c1378b12baf81aa938664b4c27335b4331dee73bd",
       "bytes": 3934
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/independent-execution-a4-g.md",
+      "sha256": "df56f4432539eee12ea25783be570642658b9799d2a1c298705d83e63069a9db",
+      "bytes": 5383
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/independent-execution-a4-regression.md",
@@ -2896,6 +2947,16 @@
       "path": "topics/padua-proof-attempts-2-20261101/outputs/a2_sanity_independent.json",
       "sha256": "caf52a027f271f0f47ab07ed4289ca2115618aa2970290d2d10d89b90da59b4f",
       "bytes": 19691
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a4g_series_developer.json",
+      "sha256": "1f05b126bdd7ab13b2c1fb889019455d3f02ab9cce95bb76e369340c57e1f24c",
+      "bytes": 1754
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a4g_series_independent.json",
+      "sha256": "5032027b25a848c0fc08be9b03408d1f2ae40511f6975d61584734c79d2a15f9",
+      "bytes": 1754
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/outputs/a4reg_complementary_developer.json",
@@ -3854,8 +3915,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/proposed-record-changes.md",
-      "sha256": "b12316044066eda8b2b1cc0cb41b20e5f88a75ed7611df6612971e3d9ae8fba1",
-      "bytes": 21414
+      "sha256": "2b72aa30035327003c35696bf0bd8bd35cd0ed18b333690c649bf6a3d58f5a0f",
+      "bytes": 22063
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-01-corner-leading-lower.md",
@@ -4009,13 +4070,18 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-71-complementary-edge-grid-gap.md",
-      "sha256": "4718a1e8e50b1e350f771b39b03540c05e3ef9c8d0b6abcb7abdcf1f6e8eecf3",
-      "bytes": 7449
+      "sha256": "502c3f72720bacaf163fc926ef635b184c9c1932fa046d35ab8075ea91e68a56",
+      "bytes": 8334
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-72-central-grid-positive-gap.md",
       "sha256": "82a742be149b634df03f56f625242f4da3e347f2cbf795777dd37b2e9e91175b",
       "bytes": 8423
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-73-gap-constant-series.md",
+      "sha256": "8adbd4a97b13950c9ad7d704a607fc3356c41dbee0c6448d89224600f855db49",
+      "bytes": 8447
     }
   ],
   "exclusions": [

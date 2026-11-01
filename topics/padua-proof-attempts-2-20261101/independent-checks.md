@@ -68,3 +68,8 @@ N8 standalone64 has two actual exact root-witness executions and standalone repl
 ## A4(a) edge and central-grid point proofs
 
 Supplementary independent-checks-a4.md reconstructs all four edge identities, exact complementary-grid translation/triangle-defect identity, singular endpoint correction and the common all-parity positive gap limit; it inspected complete70–72and resolved the zero-numerator wording before final inspection. No numerical script was run by that analytic reviewer. The separate finite n1–6 cardinal/Vandermonde regression has TWO actual executions, source13e8c524…, outputs4561B each; all fields agree except only elapsed time. Source unchanged,332full polynomial identities per formula,472removable values and592diagonal branches pass. Exact commands/backend identities in independent-execution-a4-regression.md. This does not itself check the asymptotic proof or a maximizing branch. Independent central-envelope assessment is separate and remainsOPEN. Required Claude audit remainsPENDING.
+
+
+## A4 gap constant73, exact two-executor finite enclosure
+
+independent-checks-a4.md contains an independent positive1Dintegral/series derivation and strict tail proof; root also reconstructed the full argument. NEWa4g_series.py510955136… uses onlyFraction/integer arithmetic for K64and exact Machinatanbounds. Medium actualexit0/0.003861s, differentleadactualexit0/0.004015s; distinct1754B outputs agree after removingONLYelapsed_seconds, unchanged sourceguards. Strict bounds0.54850<g<0.54853 follow from the analytic73tail theorem and its local Machinproof. Full exactrationalendpoints/commands/hashes: independent-execution-a4-g.md. No R_cen/search/global claim follows from this finite constant computation. No further g runs planned.

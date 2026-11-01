@@ -51,7 +51,7 @@ Overall status: **PROVED** (written analytic identity; required Claude audit PEN
 
 ## Checks
 
-Supplementary independent analytic reconstruction by `/root/a2_independent_route` confirmed the general translated-grid normalization, the sole singular correction and the positivity identity before this record was completed. Its receipt is independent-checks-a4.md. No A4 mathematical computation has run at this initial writing. A finite exact regression will be recorded only after execution and actual different-agent replay. The analytic proof does not depend on it.
+Supplementary independent analytic reconstruction by `/root/a2_independent_route` confirmed the general translated-grid normalization, the sole singular correction and the positivity identity. Its receipt is independent-checks-a4.md. Subsequently the separately implemented code/a4reg_complementary_check.py, frozen SHA256978bf8e00e09f4671d36d9de0e3c8dae531d34491ed7cdec1741aa6542032fca, was actually executed and independently replayed, both exit0 with both source/import hashes unchanged. Exact cyclotomic Vandermonde arithmetic checks all21 admissible points for n1..6:357 regular cardinal identities,21 unique endpoint corrections, the weighted raw-E multiset translation and the rational+2/N normalization. It does not compute absolute-value gap sums or the limiting integral. Developer elapsed1.543606s, separate replay1.681193s; their3074byte receipts are outputs/a4reg_complementary_developer.json (SHA2561c6c3ef524ce9d21a4eec1fe19d2120b7f572ce1e8c78847fbdafb96f0553f93) and outputs/a4reg_complementary_independent.json (SHA256fbdff9c29bee11828ac173fbd7f93d5606ff05d5b159e1813e91d8c1018c1520). All fields agree after removing only elapsed_seconds. Full commands and limitations are in independent-execution-a4-regression.md. The analytic proof does not depend on this finite regression; required Claude audit remains PENDING.
 
 ## Sources
 
@@ -108,7 +108,7 @@ Every specified complementary point on either vertical edge, all n>=1. This is n
 
 ## Open items
 
-Central-grid asymptotics72, connection to a central maximizing branch/envelope, exact supplementary regression and required Claude audit. No result about all-n A4(b)/(c) follows.
+Connection to a central maximizing branch/envelope and required Claude audit. The point-sequence asymptotics72 and supplementary finite regression are complete. No result about all-n A4(b)/(c) follows.
 
 ## History
 

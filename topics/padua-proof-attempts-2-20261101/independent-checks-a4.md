@@ -210,3 +210,261 @@ No blocking mathematical finding remains within their stated point-value scope.7
 Two minor written-quantifier findings were returned to the developer and resolved: at z_+=−1 the first numerator vanishes, so one cannot claim opposite NONZERO signs exactly throughout the open band or an attained positive maximum at the fraction-equality point. The corrected71 states the triangle-defect identity directly with this zero case, and72 treats its maximum formula as an upper bound on the degenerate line. Neither correction changes the limit, numerical normalization or acceptance scope.
 
 This is a proof inspection and analytic reconstruction only. Developer/replay reports for the exact70 regression, including their counts/timing, are separate actual execution evidence; they were not executed or independently endorsed by this reviewer. The central envelope/runner-up comparison remains excluded from70–72, and their required Claude audit remains pending.
+
+## Bounded analytic one-dimensional reduction of g
+
+This subsection was derived independently in memory during root's staging freeze and appended after it was relieved. It does not overwrite the previously inspected70–72 proof. No exact/interval or floating computation was executed. Let `I=(pi²/4)g`, the positive double integral in(3). Then
+
+`g=(8/pi²) integral_0^1 [asinh x+x/(1+sqrt(1+x²))] atanh x dx`.       (7)
+
+All quantities in the integrand are elementary real functions. It is positive for0<x<1; its endpoint singularity is only logarithmic and integrable. In particular no model fit is needed to define or bound this constant.
+
+### Derivation
+
+Set y=tan(t/2), z=tan(a/2). The original integration band becomes `0<y<1`, `y<z<1/y`. The two fractions and measure transform as
+
+`(1+c)/(c-A)=(1+z²)/(z²-y²)`,
+
+`(1-c)/(A+c)=y²(1+z²)/(1-y²*z²)`,
+
+`da dt=4 dz dy/[(1+z²)(1+y²)]`.
+
+Their equality point is `z0=sqrt(1+y^4)/(sqrt2*y)`, between y and1/y. The second entry is the minimum below z0 and the first above it. Hence
+
+`I=4 integral_0^1 { y[atanh(y*z0)-atanh(y²)] + y^(-1)[atanh(y/z0)-atanh(y²)] } dy/(1+y²)`.
+
+The antiderivatives are direct rational ones: the first inner piece integrates to y*atanh(y*z), and the second to -atanh(y/z)/y. All arguments lie in(0,1) on the open integration interval. These combined differences are positive and have the finite improper integral already proved above.
+
+Put u=y², R=sqrt((1+u²)/2), S=sqrt2*u/sqrt(1+u²). Then
+
+`I=2 integral_0^1 {atanh R/(1+u)+atanh S/[u(1+u)]-atanh u/u} du`.
+
+Since R*S=u, the addition/subtraction formulas for tanh give
+
+`atanh R+atanh S=atanh P`, `atanh R-atanh S=atanh Q`,
+
+where `P=(1+u)/sqrt(2(1+u²))`, `Q=(1-u)/sqrt(2(1+u²))`. Thus
+
+`I=integral_0^1 {atanh P-[(1-u)/(1+u)]atanh Q-2atanh u} du/u`.
+
+Next write `(1-u)/(1+u)=tan theta`, so0<theta<pi/4, P=cos theta,Q=sin theta and du/u=-2dtheta/cos(2theta). The reversed limits and the identities
+
+`atanh(cos theta)=log cot(theta/2)`,
+
+`atanh(sin theta)=log(sec theta+tan theta)`,
+
+`2atanh u=-log tan theta`
+
+give
+
+`I=2 integral_0^(pi/4) F(theta)/cos(2theta) dtheta`,
+
+`F(theta)=log(1+sec theta)-tan theta*log(sec theta+tan theta)`.
+
+Here F(0)=log2,F(pi/4)=0, and direct differentiation yields
+
+`F'(theta)=-sec²theta*[log(sec theta+tan theta)+tan(theta/2)]`.
+
+Integrate by parts using `integral sec(2theta)dtheta=(1/2)log(sec(2theta)+tan(2theta))`. The lower boundary term is zero. At pi/4, F vanishes linearly and the logarithm diverges only logarithmically, so that boundary term is also zero. Therefore
+
+`I=integral_0^(pi/4) sec²theta*[log(sec theta+tan theta)+tan(theta/2)]*log(sec(2theta)+tan(2theta)) dtheta`.
+
+Finally x=tan theta gives `log(sec theta+tan theta)=asinh x`, `tan(theta/2)=x/(1+sqrt(1+x²))`, and `log(sec(2theta)+tan(2theta))=2atanh x`. This proves(7), including its factor8/pi².
+
+### Improved analytic bounds, without numerical evaluation
+
+For0<x<=1, elementary Taylor inequalities with alternating derivative signs give
+
+`x-x³/6 < asinh x < x-x³/6+3x^5/40`,
+
+`x/2-x³/8 < x/(1+sqrt(1+x²)) < x/2-x³/8+x^5/16`.
+
+For the second inequality use `(sqrt(1+x²)-1)/x` and Taylor's formula for sqrt(1+z); for the first integrate the corresponding lower/upper polynomials for(1+x²)^(-1/2). Consequently, with B the bracket in(7),
+
+`3x/2-7x³/24 < B(x) < 3x/2-7x³/24+11x^5/80`.
+
+The positive atanh series and telescoping give
+
+`integral_0^1 x^(2k+1)atanh x dx = [sum_(r=0)^k 1/(2r+1)]/(2k+2)`.
+
+The first three moments are1/2,1/3,23/90. Thus the integral in(7) is strictly between47/72 and1651/2400, proving the sharper explicit bounds
+
+`47/(9*pi²) < g < 1651/(300*pi²)`.                          (8)
+
+These are handwritten rational inequalities, not an executed numerical enclosure or approximation of g.
+
+For a further exact analytic representation, define
+
+`b_k = binom(2k,k)*(4k+3)/[4^k*(2k+1)*(2k+2)]`.
+
+The binomial series for the two components of B gives
+
+`g=(8/pi²) sum_(k>=0) (-1)^k b_k * [sum_(r=0)^k 1/(2r+1)]/(2k+2)`.       (9)
+
+There is no numerical summation here. The positive b_k decrease to0 (for example b_(k+1)/b_k=(4k+7)(2k+1)²/[(4k+3)(2k+3)(2k+4)]<1). Alternating truncation bounds hold uniformly on[0,1] for B; multiplying by integrable atanh and integrating makes the resulting lower/upper partial sums converge to(7). Thus(9) is a convergent rational alternating-series characterization, and its next integrated term bounds the truncation error. A future numerical enclosure would still need its own actual exact/outward run and different-agent execution receipt.
+
+### Independent check of the lead's alternate inner antiderivative
+
+The lead separately supplied a nonsingular expression for the a integral at fixed t. With c=cos t,Q=sqrt(1+c²),k=tan(t/2), it is
+
+`2k*log[(1+c+Q)/sqrt2]+(2/k)*log[(1-c+Q)/sqrt2]`.
+
+This independently verifies: the earlier tan-half-angle antiderivatives give `2k[atanh(Q/(1+c))-atanh(k²)]+(2/k)[atanh((1-c)/Q)-atanh(k²)]`. Use `(1-k²)/(1+k²)=c`, `(1+c-Q)(1+c+Q)=2c` and `(Q-1+c)(Q+1-c)=2c` to obtain exactly the two logarithms. Its endpoint limits are0 at t=0 and2log2 at t=pi/2. This is a second analytic1D representation of the same g, not an execution or a central-envelope comparison.
+
+## Full73 inspection
+
+Read FULL theory/proof-attempts-2-codex-73-gap-constant-series.md, SHA256 `2477b42d34c1802b67a6b6c516ddc617688655e33d763f192a9d937d7843c13b`. Its shorter c=cos t derivation, F'(c), zero endpoint term in integration by parts, coefficients, positive moment series, strict integrated alternating remainder and first rational bounds all agree with the independent reconstruction. No mathematical finding within that analytic scope. The supplied finite numerical evaluation is not an execution performed by this reviewer and is not a premise of this receipt.
+
+## Local even phase-profile module for the central-envelope proof
+
+This is a self-contained analytic module requested by root and the separate central-envelope reviewer. It controls the universal periodic upper-envelope sum at small phase. It does not prove the separate outside-window localization or stability of the paired triangle defect; those are assigned to other workers. No computation is used.
+
+### Exact object and claim
+
+Let n>=2,m=n+1,N=nm. On the full periodic meshes put `u_j=j*pi/n`, `0<=j<2n`, and `v_r(s)=r*pi/m+s/m`, `0<=r<2m`. Let Gamma consist of j+r odd, tau_j=(-1)^j, and
+
+`H_jr(s)=tau_j*[D_n(u_j,v_r(s))-tau_j]/2`,
+
+`S_n(s)=N^(-1) sum_Gamma |H_jr(s)|`.
+
+This definition uses the original finite D_n at every removable argument. In particular `H_(n,m)(0)=n`, not0. Periodic reflection and the corner normalization give **S_n(0)=Lambda_c(n)** exactly. Also S_n(-s)=S_n(s), by r->-r modulo2m and the evenness of D_n in its second angle.
+
+There is an absolute constant C, independent of n and s, such that
+
+`S_n(s) <= cos²(s/2)*Lambda_c(n) + C*s²*log(n+1) + C*|s|`,
+
+for every `|s|<=pi/6`. Consequently
+
+`sup_(|s|<=pi/6) [S_n(s)-Lambda_c(n)] = O(log^(-2)n)` as n grows.       (10)
+
+The upper bound is the assertion; the supremum is also nonnegative because it includes s=0. In particular every sequence s_n->0 satisfies `S_n(s_n)<=Lambda_c(n)+o(1)`.
+
+### Half-mesh pairing and the exact rational factor
+
+For fixed u=u_j in[0,pi] put A=cos u, v=v0+s/m, v0=r*pi/m, and
+
+`a(s)=cos²(s/2)`, `b(s)=sin(s)/2`,
+
+`f(A,v)=(1+cos v)/(A-cos v)`, `g(A,v)=sin v/(A-cos v)`.
+
+Off coincidences, direct substitution into the divided difference gives
+
+`F_jr(s):=H_jr(s)=a(s)f(A,v)+b(s)g(A,v)`
+
+`=2cos(s/2)cos(v/2)cos((v-s)/2)/(A-cos v)`.                (11)
+
+Indeed cos(mv)=(-1)^r cos s, sin(mv)=(-1)^r sin s and (-1)^r=-tau_j on Gamma. This yields exactly the coefficients a,b in(11); no approximation or change of kernel is involved.
+
+Reflect the first mesh into j=0,...,n with weights eps_j. Reflecting the interior second-mesh indices r and2m-r pairs F_jr(s) with F_jr(-s). The r=0 and r=m rows are single rows. Thus
+
+`S_n(s)=(2/N) sum_j eps_j { endpoint rows + sum_(1<=r<m,j+r odd) [|F_jr(s)|+|F_jr(-s)|] }`.       (12)
+
+At s=0 this is exactly the endpoint-half-weighted corner sum including its singular n contribution. In the estimates below fixed factors2 and endpoint eps<=1 are absorbed in C, without changing(12).
+
+### Regular indices and elementary summation bounds
+
+In the interior second-mesh rows, remove the family
+
+`B={r=j+1, j>=2n/3, 1<=r<m}`.
+
+For every remaining pair j+r odd define L=|j-r|>=1 and `d=min(j+r,2n+1-j-r)>=1`. Uniformly for |s|<=pi/6, write `P=(u+v)/2`, `T=(u-v)/2`, alpha=sin P and t=|sin T|. Both u,v lie in[0,pi], with v strictly interior. Then
+
+`t>=c0*L/m`, `alpha>=c0*d/m`                               (13)
+
+for an absolute c0>0. To verify the gap bound, if j>r then u-v0>=pi*L/m. If r-j>=3, then v0-u>=pi*(L-1)/m. The remaining case r=j+1 outside B has j<2n/3, so v0-u>pi/(3m). Subtracting |s|/m<=pi/(6m) leaves the claimed bound, using sin(|u-v|/2)>=|u-v|/pi. For alpha, both distances of P from0 andpi are at least `(pi/(2m))*min(j+r,2n+1-j-r)-pi/(12m)`; the sine chord proves(13).
+
+For each fixed signed odd difference l=j-r, j+r changes in steps2. Every possible d has multiplicity at most2. Hence
+
+`sum_(j-r=l) d^(-1)<=C log m`, `sum_(j-r=l) d^(-p)<=C_p` for p>=2,
+
+and there are O(m) indices per difference. Also sums of L^(-p) over nonzero differences are bounded for p>1 and O(log m) for p=1. These statements are direct harmonic-series comparisons; they remain valid after deleting B.
+
+### Phase derivative sums
+
+Differentiation in v gives
+
+`f_v=-(1+A)sin v/(A-cos v)²`,
+
+`g_v=-(1/4)(csc²T+csc²P)`.
+
+Since sin v<=2sin P and `sin P>=cos(u/2)sin(v/2)`, the following pointwise bounds hold:
+
+`|f_v|<=1/(alpha*t²)`,
+
+`|f_vv|<=1/(2alpha²*t²)+2/(alpha*t³)`,
+
+`|g|<=1/t`, `|g_v|<=(t^(-2)+alpha^(-2))/4`,
+
+`|g_vv|<=(t^(-3)+alpha^(-3))/4`.
+
+Combining(13) with the preceding difference/d sums proves, with sums normalized by1/N and even with termwise suprema over the phase window,
+
+`sum |f_v|/m = O(log m)`, `sum |f_vv|/m² = O(log m)`,
+
+`sum |g| = O(log m)`, `sum |g_v|/m = O(1)`, `sum |g_vv|/m² = O(1)`.       (14)
+
+For example alpha^(-1)t^(-3) sums to O(m^4 log m), and alpha^(-2)t^(-2) to O(m^4); multiplying by1/(Nm²) gives the f_vv bound. Similarly each of t^(-3),alpha^(-3) sums to O(m^4), proving the last assertion. These estimates have constants independent of n,s.
+
+Put `E_jr(s)=F_jr(s)-a(s)f(A,v0)`. Its second derivative consists of
+
+`a''(f(v)-f(v0)) +2a'f_v/m +a f_vv/m² +b''g +2b'g_v/m +b g_vv/m²`.
+
+The phase factors and their derivatives are uniformly bounded. The first difference is bounded by |s|/m times the corresponding supremum of |f_v|. Equation(14) therefore gives a normalized sum of termwise suprema of |E''| bounded by C log m. Since E(0)=0, symmetric Taylor's integral formula yields
+
+`N^(-1) sum_regular |E_jr(s)+E_jr(-s)| <= C s² log m`.     (15)
+
+There is no first-order contribution to this paired expression.
+
+### Numerator sign changes are retained
+
+On regular pairs the denominator in(11) has fixed sign throughout the window, by(13). Let chi=sign f(A,v0), which is nonzero. The identity `|F|=chi*F+2(-chi*F)_+` shows exactly what is lost when replacing absolute values by the signed Taylor pairing(15).
+
+For v in(0,pi), the numerator in(11) can become negative only when v-s>pi. If sigma=|s| this requires a row with `pi-v0<=sigma`; in the changing term put y=pi-v, so0<y<sigma. Its numerator magnitude is at most C sigma*y. Also `y/sin P<=C` uniformly: sin P=sin((x+y)/2), x=pi-u in[0,pi], and a sine chord on x+y<=pi plus a fixed lower bound on pi<=x+y<=7pi/6 suffice. Thus the sign-change error is at most
+
+`C sigma/t <= C m*sigma/L`.
+
+There are O(m*sigma+1) such rows. In each row the sum of L^(-1) over compatible j is O(log m). After normalization the total error is therefore
+
+`C s² log m + C |s| log m/m <= C s² log m+C|s|`.           (16)
+
+This argument includes zero-numerator events; they are not discarded as differentiability exceptions.
+
+### The removed negative-corner family has bounded total Lipschitz cost
+
+For B write h=n-j, so1<=h<=n/3, u=pi-h*pi/n and v=pi-h*pi/m+s/m. Put x=h*pi/n, y=(h*pi-s)/m and T=(u-v)/2. Exact cancellation in(11) gives
+
+`F_jr(s)=cos(s/2)*R_h(s)*U_n(T)`,
+
+`R_h(s)=sin(y/2)/sin((x+y)/2)`.
+
+This follows because `cos((v-s)/2)=-sin(nT)`. It remains valid through T=0 by the original finite U_n, so every phase collision in this family is retained. In the fixed phase window x,y are positive and at most a fixed angle belowpi; sine chords give `|R_h|<=C`, `|R_h'|<=C/h`.
+
+The finite Fourier identity `U_n(T)=sum_(l=-n+1,step2)^(n-1) exp(ilT)` gives `|U_n|<=n`. Since T'=-1/(2m), it also gives `|d_s U_n(T)|<=n²/(2m)<=n/2`. Thus every F in B has derivative at most C(n+n/h)<=Cn, including its removable points. There are O(n) such pairs and1/N=O(n^(-2)), so their entire normalized absolute-value sum is O(1)-Lipschitz in s and is O(1) at0. Its excess over a(s) times the zero-phase sum is consequently at most C|s|. This uses no lower bound on the formerly vanishing denominator.
+
+### Single endpoint rows
+
+For r=0 the allowed j are odd, hence j>=1. Here v=s/m and |v|<=u/6. The denominator keeps its sign and the numerator in(11) is positive. The difference `F_j0(s)-a(s)F_j0(0)` is even in s and vanishes at0. Direct differentiation, using `|cos u-cos(s/m)|>=c*(j/m)²`, gives a second-derivative bound `C(m²/j^4+m/j²)`; its normalized sum is O(1). This row therefore contributes at most C s².
+
+For r=m the allowed h=n-j are even. If h>=2, the numerator is
+
+`a(s)(1-cos(s/m))-b(s)sin(s/m)`,
+
+whose magnitude is at most C s²/m. The denominator is at least c*(h/n)². Hence `|F_jm(s)|<=C n*s²/h²`, while F_jm(0)=0; after normalization these terms cost O(s²/n).
+
+At h=0, the exact removable expression is
+
+`H_(n,m)(s)=cos(s/2)*U_n(s/(2m))`, `H_(n,m)(0)=n`.
+
+The finite Fourier sum gives `|U_n(s/(2m))-n|<=C n*s²` by `|cos z-1|<=z²/2`. Its excess over a(s)n is at most C n*s², giving again O(s²/n) after normalization. Thus no endpoint value is replaced by the formal zero convention used only in the earlier complementary-grid bookkeeping.
+
+### Combine and optimize
+
+Use(15) for the signed regular pairs, add(16), the removed-family Lipschitz cost and the endpoint bounds, and insert the exact half-mesh normalization(12). This proves
+
+`S_n(s)<=a(s)S_n(0)+C s²log m+C|s|`.
+
+The A2 lower bound is `Lambda_c(n)>=(4/pi²)log²n-54`. Also `1-a(s)=sin²(s/2)>=s²/pi²` on this window. Therefore for sufficiently large n,
+
+`S_n(s)-Lambda_c(n) <= -c*s²log²n+C|s|`
+
+with absolute c>0, after absorbing the lower-order quadratic logarithm. Completing the square bounds its supremum by `C²/[4c log²n]`. This proves(10) and the requested all-sequence small-phase upper bound. No assertion about a phase bounded away from0 or about the central defect's limit is included in this local module.
