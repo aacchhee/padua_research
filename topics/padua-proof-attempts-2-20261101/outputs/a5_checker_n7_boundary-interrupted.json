@@ -1,0 +1,162 @@
+{
+  "accepted": false,
+  "checker_sha256": "dd106871554bbf437699e3ac615121bd38d5bbd6d5d41bf29a6cf51cac7ed323",
+  "completed": false,
+  "count_certified": false,
+  "exit_code": 143,
+  "fixture_sha256": "89c7a16379e461ddf83e2afd823c1947bf2a209b60c9a784ea57b06e1ad9e9f8",
+  "formal_field_helper_sha256": "76f9ba3de6d4fa4a3bd403ec2c049997de5acb75dd474ac8e05e9e324d6cd106",
+  "reason": "Parent explicitly authorized exact FLINT finite-endpoint performance change before first full count verification; old process stopped first.",
+  "scope": "interrupted partial boundary integration; no pass or count",
+  "status": "interrupted_before_source_edit",
+  "stdout": [
+    {
+      "status": "accepted",
+      "verified_node": 0
+    },
+    {
+      "status": "accepted",
+      "verified_node": 1
+    },
+    {
+      "status": "accepted",
+      "verified_node": 2
+    },
+    {
+      "status": "accepted",
+      "verified_node": 3
+    },
+    {
+      "status": "accepted",
+      "verified_node": 4
+    },
+    {
+      "status": "accepted",
+      "verified_node": 5
+    },
+    {
+      "status": "accepted",
+      "verified_node": 6
+    },
+    {
+      "status": "accepted",
+      "verified_node": 7
+    },
+    {
+      "status": "accepted",
+      "verified_node": 8
+    },
+    {
+      "status": "accepted",
+      "verified_node": 9
+    },
+    {
+      "status": "accepted",
+      "verified_node": 10
+    },
+    {
+      "status": "accepted",
+      "verified_node": 11
+    },
+    {
+      "status": "accepted",
+      "verified_node": 12
+    },
+    {
+      "status": "accepted",
+      "verified_node": 13
+    },
+    {
+      "status": "accepted",
+      "verified_node": 14
+    },
+    {
+      "status": "accepted",
+      "verified_node": 15
+    },
+    {
+      "status": "accepted",
+      "verified_node": 16
+    },
+    {
+      "status": "accepted",
+      "verified_node": 17
+    },
+    {
+      "status": "accepted",
+      "verified_node": 18
+    },
+    {
+      "status": "accepted",
+      "verified_node": 19
+    },
+    {
+      "status": "accepted",
+      "verified_node": 20
+    },
+    {
+      "status": "accepted",
+      "verified_node": 21
+    },
+    {
+      "status": "accepted",
+      "verified_node": 22
+    },
+    {
+      "status": "accepted",
+      "verified_node": 23
+    },
+    {
+      "status": "accepted",
+      "verified_node": 24
+    },
+    {
+      "status": "accepted",
+      "verified_node": 25
+    },
+    {
+      "status": "accepted",
+      "verified_node": 26
+    },
+    {
+      "status": "accepted",
+      "verified_node": 27
+    },
+    {
+      "status": "accepted",
+      "verified_node": 28
+    },
+    {
+      "status": "accepted",
+      "verified_node": 29
+    },
+    {
+      "status": "accepted",
+      "verified_node": 30
+    },
+    {
+      "status": "accepted",
+      "verified_node": 31
+    },
+    {
+      "status": "accepted",
+      "verified_node": 32
+    },
+    {
+      "status": "accepted",
+      "verified_node": 33
+    },
+    {
+      "status": "accepted",
+      "verified_node": 34
+    },
+    {
+      "status": "accepted",
+      "verified_node": 35
+    },
+    {
+      "verified_leaves": 1000,
+      "verified_patterns": 2530
+    }
+  ]
+}

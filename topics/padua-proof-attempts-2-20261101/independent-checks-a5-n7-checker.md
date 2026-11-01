@@ -227,7 +227,7 @@ any complete count. Checker and controls now pin source hashes at the start and
 require all remain unchanged at completion; the following fresh run supersedes
 that ambiguous receipt.
 
-Final-candidate sources:
+First-freeze sources (superseded only by the explicitly authorized backend/reader update below):
 
 | File | SHA-256 |
 |---|---|
@@ -300,6 +300,136 @@ The checker source hash remained unchanged. Output
 These checks establish the degree-specific hypotheses of the adopted boundary
 schema; they certify no edge root or count. Full certificate replay must still
 verify every supplied real-root partition and disposition.
+
+## Independent exact corner evaluations
+
+A fresh inline wrapper in the same exact environment imported only the frozen
+checker, reconstructed its Vandermonde cardinals from the supplied embedding,
+evaluated every cardinal at all four corners using native exact polynomial
+evaluation, and summed their independently determined signed absolute values.
+Actual exit0,8.658971 seconds, main/helper hashes unchanged. Both(-1,±1) give
+the FIELD12 vector
+`[83/28,-5/7,-4/7,2/7,-2/7,0,2/7,0,-2/7,1/7,2/7,0]`.
+Its outward lower bound is
+`62055356822366541328648531998144130305/10633823966279326983230456482242756608 > 11/2`.
+Both(1,±1) satisfy exact cardinal node identities and have value1. These are
+local evaluation identities, not a global argmax or count assertion. Output
+`outputs/a5_checker_n7_corner-values.json` retains all four exact vectors,
+intervals and input/source hashes. Full global replay still must exclude every
+other possible weak maximum using the complete certificate and value bounds.
+
+## Authorized exact endpoint backend and lossless XZ update
+
+Before the first complete N7 count verification, parent explicitly authorized
+an exception to the local freeze: an equivalent exact finite-endpoint evaluator
+with measured benefit, preserving the Sturm sequence, positive scaling,
+endpoint conventions and every mathematical predicate. Parent then explicitly
+requested stdlib XZ auto-decoding to meet the artifact size budget, keeping all
+producer sources unchanged. This was an authorized implementation update, not
+a new exclusion or a completed finite-count claim.
+
+The original boundary-fixture process was stopped BEFORE any source edit,
+exit143. It had rechecked36 nodes/2220 breakpoints and passed1,000 tree leaves;
+no full boundary result was produced. Captured progress and old source/input
+pins are retained in `outputs/a5_checker_n7_boundary-interrupted.json`,3,141
+bytes,SHA-256 `017e6543110a053580dc4e2f20e4f2102e93c2f8261df62fa558b21f63168552`.
+This is explicitly INTERRUPTED, not a pass.
+
+Before editing, benchmarked an ACTUAL supplied edge-mask derivative norm:
+mask62737136190, degree72,73 Sturm rows, six rational points. All438 exact
+VALUES, including zeros and signs, agreed between SymPy and the proposed FLINT
+evaluation. SymPy0.099590s versus FLINT0.042128s,2.364 times faster for this
+point mix. Receipt `outputs/a5_checker_n7_endpoint-benchmark.json`,653 bytes,
+SHA-256 `79538b9406476a0f57d6e79da6ef1c3e11c30ccfda5eacabab6b5d1cba65d1a7`.
+
+The evaluator clears only positive rational denominators: if p=Dq with D>0
+and integer p, it constructs the exact `fmpz_poly` p from its integer
+coefficients and evaluates p(n/d)/D with exact `fmpq` arithmetic. This equals
+the ORIGINAL q(n/d), retaining its sign and zero status. No polynomial content
+is discarded. Existing full-polynomial Sturm chains, positive primitive
+remainder scaling and infinity signs remain byte-for-byte unchanged. No
+rational factorization, root discovery, Arb or numerical sign is added here.
+The helper objects are cached and treated read-only. The runtime receipt now
+names python-flint0.9.0 / FLINT3.6.0 explicitly.
+
+`decode_document` recognizes XZ magic `fd377a585a00`, then gzip magic, then raw
+JSON. It only decompresses bytes; parsing and proof predicates are unchanged.
+Raw compressed-artifact SHA remains the global-certificate binding. The
+parent-owned repacker records old/new raw and decoded hashes and changes only
+that binding in the separate global value file. Independent byte comparison
+confirmed gzip fixture682,665 bytes and XZ fixture332,548 bytes decode to the
+IDENTICAL3,302,464 JSON bytes with SHA-256
+`257e87a8aba4d55d2cd725c7d760fc1ce87dcfb515a6f98f98600730d0958fa0`.
+XZ fixture SHA-256 `6bf817ccef2b8156395386b99028269544be0da986c4422a76a3c35e8b662d1c`.
+
+New sources, held unchanged during fresh controls and boundary replay:
+
+| File | Bytes | SHA-256 |
+|---|---:|---|
+| `code/a5_checker_n7.py` |64632|`41ab8dd11f6996b2fbbcc31ec9e415b63b350dafad7903768e3df99b99a07cdd`|
+| `code/a5_checker_n7_field.py` |4512|`76f9ba3de6d4fa4a3bd403ec2c049997de5acb75dd474ac8e05e9e324d6cd106`|
+| `code/a5_checker_n7_controls.py` |17115|`724a2f6731e6eaffb17470ab5adbd8b42af107f68b7ea1319158fa924ef16b73`|
+
+Fresh actual controls on this XZ fixture completed exit0,116.094365 seconds:
+40 controls passed(32 negative,8 positive). They include35 exact FLINT value
+and sign comparisons for QQ/ZZ polynomials, positive denominator scaling, zero
+polynomials and exact rational zeros, and equality of raw/gzip/XZ decoded bytes.
+All three source guards remained true. Actual command:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps python -B topics/padua-proof-attempts-2-20261101/code/a5_checker_n7_controls.py /tmp/a5-n7-boundary-fixture.json.xz --spatial-certificate /tmp/a5-n7-boundary-fixture.json.xz --output topics/padua-proof-attempts-2-20261101/outputs/a5_checker_n7_controls-backend-pilot.json
+```
+
+The three sources in the preceding table are now FROZEN again, and root/lead
+were explicitly notified of readiness for the actual different-agent full
+execution. No further edits are planned absent an essential bug. The full
+boundary/partial-tree replay then completed under exactly these same sources,
+as recorded next; its partial prefix still certifies no whole-square count.
+Control output6,708 bytes, SHA-256
+`8620cae85f2a0596d9852e18cf27cafd9ac50c6fb29f9eadaf9a9aab8be50513`.
+
+## Actual complete boundary replay on the frozen updated checker
+
+Exact command:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps python -B topics/padua-proof-attempts-2-20261101/code/a5_checker_n7.py /tmp/a5-n7-boundary-fixture.json.xz --allow-partial --output topics/padua-proof-attempts-2-20261101/outputs/a5_checker_n7_boundary-integration.json
+```
+
+Actual exit0,884.883032 seconds, every source guard unchanged. Independent
+norms, all-real Sturm partitions and EVERY supplied disposition passed for all
+four edges. Counts are derived by the checker, not copied from a pilot claim:
+
+| Edge(axis,side) | Verified sampled masks | Strict open-edge maxima |
+|---|---:|---:|
+| (0,-1) |83|3|
+| (0,1) |52|4|
+| (1,-1) |99|4|
+| (1,1) |99|4|
+| total |333|15|
+
+The19,863 derivative-candidate dispositions comprise15,472 wrong-embedding
+derivative exclusions,836 strictly positive tangent-curvature exclusions,
+2,766 outside-open-edge exclusions,774 strict sign incompatibilities and15
+accepted simple tangent maxima with strict inward descent. All four corners
+passed: two exact nodes and two strict non-node maxima, checking all16 active
+corner patterns. No degeneracy fallback or unresolved boundary case was used.
+
+The fixture also rechecked all36 accepted node cones/2220 breakpoints and its
+entire1,729-leaf partial tree(1581 universal-gradient leaves,2608 ordinary mask
+records,6 node leaves and1 accepted interior root). The exact principal field,
+all1296 cardinal identities and all positive root/hull predicates passed.
+`boundary_complete=true`, but `complete_prefix_partition=false` and
+`count_certified=false`; this is an explicitly partial spatial fixture with
+complete boundary data, not a complete degree-seven count.
+
+Output `outputs/a5_checker_n7_boundary-integration.json`,9,351 bytes,SHA-256
+`f7d4a0ee1b0a7393461793d9eeea61795400cc7ad840d15504ea44a4f1c67087`.
+Input raw XZ and decoded SHA values are the ones recorded above. Frozen
+sources remain main41ab8dd…, helper76f9ba…, controls724a2f… (full pins in the
+table). Runtime explicitly reports Python3.12.14, SymPy1.14.0,
+python-flint0.9.0 / FLINT3.6.0. Full count/global artifacts and different-agent
+execution remain separate obligations.
 
 Runs needed: complete count/global certificate and the required
 actual different-subagent producer/checker execution. The reference33 interior /

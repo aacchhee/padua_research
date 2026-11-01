@@ -27,7 +27,7 @@ Overall status: **OPEN**. The drafted conditional argument below requires the co
 
 | Part | Current status |
 |---|---|
-| exact common corner value and C>11/2 | actual exact developer diagnostic; independent check pending |
+| exact common corner value and C>11/2 | independently verified exact corner identity; no global conclusion from it alone |
 | non-strict-global-maximum case argument | conditional draft; all finite value checks pending |
 | all exceptional/root/constant-edge bounds | OPEN finite checks |
 | corner-only argmax | OPEN |
@@ -38,7 +38,7 @@ Results15,18,50,53 and a complete accepted51 certificate. Strict-count completen
 
 ## Checks
 
-New producer a5_n7_global.py; schema a5_n7_schema.md. Exact native corner diagnostic is outputs/a5_n7_corner-diagnostic.json. The separate checker must reconstruct C and all additional bounds itself. Actual full commands, hashes and completed execution status belong to T-A5-n7.md and the final independent execution record.
+New producer a5_n7_global.py; schema a5_n7_schema.md. Exact native corner diagnostic is outputs/a5_n7_corner-diagnostic.json. The separate checker independently reconstructed C and both nodecorner values in outputs/a5_checker_n7_corner-values.json (8.66s, source hashes unchanged). All additional whole-square value bounds remain pending. Actual full commands, hashes and completed execution status belong to T-A5-n7.md and the final independent execution record.
 
 ## Sources
 
@@ -48,7 +48,7 @@ Registered A4(d) finite-case corollary reached while solving A5, programme sourc
 
 Continuity gives at least one global maximum. The exact corner value C>11/2 excludes nodes and every candidate whose certified value is below11/2.
 
-Suppose a global maximum z is interior. Every active signed polynomial P_s has a non-strict local maximum there, so its gradient vanishes and Hessian is negative semidefinite. Select any leaf containing z and any active compatible mask. A node leaf excludes any non-node local maximum by strict radial ascent; the node itself has value1. In an ordinary leaf, the uniform-gradient53 predicate, derivative and strictly wrong-curvature predicates exclude non-strict maxima as well. A regular-point injection identifies z with an exact node or an impossible regular-zero local maximum (or a boundary point, impossible for interior z). A root reference and whole-hull injection identify z with the accepted root, whose value is below11/2. A flat/factor occurrence is bounded below11/2 on the entire leaf by the separate value artifact. Thus no interior point can attain C.
+Suppose a global maximum z is interior. Every active signed polynomial P_s has a non-strict local maximum there, so its gradient vanishes and Hessian is negative semidefinite. Select any leaf containing z and any active compatible mask. A node leaf excludes any non-node local maximum by strict radial ascent; the node itself has value1. A direct all_gradient leaf excludes non-strict maxima by53. In an ordinary leaf, derivative and strictly wrong-curvature predicates exclude non-strict maxima as well. A regular-point injection identifies z with an exact node or an impossible regular-zero local maximum (or a boundary point, impossible for interior z). A root reference and whole-hull injection identify z with the accepted root, whose value is below11/2. A flat/factor occurrence is bounded below11/2 on the entire leaf by the separate value artifact. Thus no interior point can attain C.
 
 On an open edge, regular-crease points are excluded by tangent sign flipping, and all noncrease patterns and all reduced derivative roots are covered by18. A constant edge restriction equals±1; otherwise the exact derivative/sign/strict-positive-curvature/positive-inward tests exclude non-strict maxima, or the candidate is an accepted root with value below11/2. No unresolved zero-curvature or zero-normal case is assumed away. Hence no open-edge point attains C.
 

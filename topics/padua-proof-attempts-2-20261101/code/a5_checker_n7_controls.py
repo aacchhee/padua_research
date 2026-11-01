@@ -5,6 +5,7 @@ import copy
 import gzip
 import hashlib
 import json
+import lzma
 from pathlib import Path
 import time
 
@@ -26,7 +27,7 @@ def main():
     source_hashes = {key: hashlib.sha256(path.read_bytes()).hexdigest()
                      for key, path in sources.items()}
     raw = Path(args.node_certificate).read_bytes()
-    data = json.loads(gzip.decompress(raw) if raw[:2] == b"\x1f\x8b" else raw)
+    data = json.loads(check.decode_document(raw))
     nodes = data["nodes"] if "nodes" in data else data["node_cones"]
     if "field_embedding" in data:
         embedding = data["field_embedding"]
@@ -34,12 +35,17 @@ def main():
         check.require(args.embedding_file is not None or args.spatial_certificate is not None,
                       "node-only fixture needs a supplied embedding record")
         embedding_raw = Path(args.embedding_file or args.spatial_certificate).read_bytes()
-        supplied_embedding = json.loads(gzip.decompress(embedding_raw) if embedding_raw[:2] == b"\x1f\x8b" else embedding_raw)
+        supplied_embedding = json.loads(check.decode_document(embedding_raw))
         embedding = supplied_embedding.get("embedding", supplied_embedding.get("field_embedding"))
     v = check.Verifier(embedding)
     positive = v.node_certificates(nodes)
     accepted = dict(v.node_cones)
     controls = [{"name": "all_supplied_exact_node_cones", "accepted": True, **positive}]
+    container_fixture = b'{"lossless":"exact rational certificate","value":"1/7"}\n'
+    check.require(all(check.decode_document(value) == container_fixture for value in
+                      (container_fixture, gzip.compress(container_fixture, mtime=0),
+                       lzma.compress(container_fixture))), "lossless document decoder changed JSON bytes")
+    controls.append({"name": "raw_gzip_xz_decode_identical_json_bytes", "accepted": True})
 
     def reject(name, action):
         try:
@@ -150,6 +156,23 @@ def main():
     intervals = [["-3/2", "-7/5"], ["1", "1"], ["7/5", "3/2"]]
     check.require(len(check.verify_root_partition(p, intervals)) == 3, "positive Sturm control failed")
     reject("one_sturm_projected_root_omitted", lambda: check.verify_root_partition(p, intervals[:-1]))
+    evaluation_polynomials = (
+        check.sp.Poly(0, check.x, domain=check.sp.QQ),
+        check.sp.Poly(-7, check.x, domain=check.sp.QQ),
+        check.sp.Poly((2*check.x**3-7*check.x+1)/13, check.x, domain=check.sp.QQ),
+        check.sp.Poly((check.x-1)*(check.x+2), check.x, domain=check.sp.QQ),
+        check.sp.Poly(17*check.x**7-23*check.x**2+5, check.x, domain=check.sp.ZZ))
+    evaluation_points = tuple(map(check.Fraction, (-2, -1, 0, 1, 2))) + \
+        (check.Fraction(-1, 10), check.Fraction(123456789012345678901, 1 << 80))
+    for polynomial in evaluation_polynomials:
+        for point in evaluation_points:
+            expected = polynomial.eval(check.sp.Rational(point.numerator, point.denominator))
+            value = check.exact_qq_value(polynomial, point)
+            check.require(check.Fraction(str(value)) == check.Fraction(str(expected)) and
+                          check.exact_qq_sign(polynomial, point) == int(check.sp.sign(expected)),
+                          "exact FLINT rational evaluation differs from SymPy")
+    controls.append({"name": "exact_flint_values_and_signs_vs_sympy_including_scaling_and_zeros",
+                     "accepted": True, "evaluations": len(evaluation_polynomials)*len(evaluation_points)})
     masks = (0, 1, 3, 17, 255, 1024, 8191, 21845, 1 << 35, (1 << 36)-1)
     for mask in masks:
         coefficients = v.coefficients(mask)
@@ -177,7 +200,7 @@ def main():
 
     if args.spatial_certificate:
         spatial_raw = Path(args.spatial_certificate).read_bytes()
-        spatial = json.loads(gzip.decompress(spatial_raw) if spatial_raw[:2] == b"\x1f\x8b" else spatial_raw)
+        spatial = json.loads(check.decode_document(spatial_raw))
         v.implicit_masks = True
         ordinary = next(leaf for leaf in spatial["leaves"] if "patterns" in leaf)
         altered = copy.deepcopy(ordinary)
@@ -203,7 +226,7 @@ def main():
         full = check.Verifier(embedding)
         count_result = full.run(spatial)
         global_raw = Path(args.global_file).read_bytes()
-        global_data = json.loads(global_raw)
+        global_data = json.loads(check.decode_document(global_raw))
         spatial_hash = hashlib.sha256(spatial_raw).hexdigest()
         full.global_values(spatial, global_data, spatial_hash, count_result)
         controls.append({"name": "complete_count_and_global_value_certificate", "accepted": True})
@@ -250,6 +273,7 @@ def main():
               "node_certificate_sha256": hashlib.sha256(raw).hexdigest(),
               **source_hashes, "source_hashes_unchanged": True,
               "python": check.platform.python_version(), "sympy": check.sp.__version__,
+              "python_flint": check.flint.__version__, "FLINT": check.flint.__FLINT_VERSION__,
               "seconds": time.monotonic()-started,
               "scope": "independent verifier controls; no degree-seven count"}
     Path(args.output).write_text(json.dumps(result, indent=2, sort_keys=True)+"\n")

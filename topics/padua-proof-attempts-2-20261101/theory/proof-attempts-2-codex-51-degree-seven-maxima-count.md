@@ -15,7 +15,7 @@ where B ranges through Pad_7={(cos(j*pi/7),cos(k*pi/8)):0<=j<=7,0<=k<=8,j+k even
 
 ## Definitions
 
-There are36 cardinals in lexicographic(j,k) order. FIELD12 uses result50's basis; positive mask bits select+L_B, unset bits select−L_B. Physical coordinates and strictness relative to the square are used. Node-cone leaves exclude the whole leaf directly by result15; ordinary leaves require every compatible sign mask.
+There are36 cardinals in lexicographic(j,k) order. FIELD12 uses result50's basis; positive mask bits select+L_B, unset bits select−L_B. Physical coordinates and strictness relative to the square are used. Node-cone leaves exclude the whole leaf directly by result15, and direct all_gradient leaves use the universal bound53. Ordinary leaves require every compatible sign mask.
 
 ## Assumptions
 

@@ -18,6 +18,7 @@ from functools import lru_cache, cmp_to_key
 import gzip
 import hashlib
 import json
+import lzma
 from math import isqrt, lcm
 from pathlib import Path
 import platform
@@ -25,6 +26,8 @@ import sys
 import time
 
 import sympy as sp
+import flint
+from flint import fmpq, fmpz_poly
 
 SOURCE_SHA_AT_IMPORT = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
 
@@ -41,6 +44,18 @@ def rational(value):
     require(isinstance(value, (str, int)) and not isinstance(value, bool),
             "rational must be a string or integer")
     return Fraction(value)
+
+
+def decode_payload(raw):
+    """Lossless XZ/gzip/raw decoding; compression is not a proof predicate."""
+    try:
+        if raw.startswith(b"\xfd7zXZ\x00"):
+            return lzma.decompress(raw)
+        if raw.startswith(b"\x1f\x8b"):
+            return gzip.decompress(raw)
+        return raw
+    except (lzma.LZMAError, OSError, EOFError) as error:
+        raise Rejected("invalid compressed input: " + str(error)) from error
 
 
 PRECISION = 160
@@ -434,6 +449,29 @@ def sturm_chain(poly):
     return tuple(chain)
 
 
+@lru_cache(maxsize=8192)
+def _exact_qq_evaluator(poly):
+    """Read-only exact integer polynomial and its positive denominator."""
+    require(poly.domain in (sp.QQ, sp.ZZ), "Sturm evaluation needs rational coefficients")
+    denominator, integral = poly.clear_denoms()
+    coefficients = integral.all_coeffs()
+    require(denominator > 0 and all(c.q == 1 for c in coefficients),
+            "rational-to-integer polynomial conversion failed")
+    return fmpz_poly([int(c) for c in reversed(coefficients)]), fmpq(int(denominator))
+
+
+def exact_qq_value(poly, point):
+    """Exact QQ evaluation only; no root discovery or approximate arithmetic."""
+    polynomial, denominator = _exact_qq_evaluator(poly)
+    point = Fraction(point)
+    return polynomial(fmpq(point.numerator, point.denominator))/denominator
+
+
+def exact_qq_sign(poly, point):
+    value = exact_qq_value(poly, point)
+    return 1 if value > 0 else -1 if value < 0 else 0
+
+
 def verify_root_partition(poly, intervals):
     """Check given all-real root intervals by exact Sturm counts, without isolation."""
     require(not poly.is_zero, "zero root-partition polynomial")
@@ -462,7 +500,7 @@ def verify_root_partition(poly, intervals):
                 elif where == "+inf":
                     sign = sp.sign(q.LC())
                 else:
-                    sign = sp.sign(q.eval(sp.Rational(where.numerator, where.denominator)))
+                    sign = exact_qq_sign(q, where)
                 if sign:
                     signs.append(int(sign))
             result += sum(a != b for a, b in zip(signs, signs[1:]))
@@ -475,11 +513,11 @@ def verify_root_partition(poly, intervals):
         require(low <= high, "reversed root interval")
         require(not parsed or parsed[-1][1] < low, "root intervals not strictly disjoint/ordered")
         if low == high:
-            require(poly.eval(sp.Rational(low.numerator, low.denominator)) == 0,
+            require(exact_qq_value(poly, low) == 0,
                     "singleton is not an exact rational root")
         else:
-            require(poly.eval(sp.Rational(low.numerator, low.denominator)) != 0 and
-                    poly.eval(sp.Rational(high.numerator, high.denominator)) != 0,
+            require(exact_qq_value(poly, low) != 0 and
+                    exact_qq_value(poly, high) != 0,
                     "non-singleton root interval has root endpoint")
             require(variations(low) - variations(high) == 1,
                     "root interval does not contain exactly one root")
@@ -1230,14 +1268,16 @@ def main():
     start = time.monotonic()
     certificate_path = Path(arguments.certificate)
     raw = certificate_path.read_bytes()
-    decompressed = gzip.decompress(raw) if certificate_path.suffix == ".gz" else raw
     result = {"certificate_sha256": hashlib.sha256(raw).hexdigest(),
               "certificate_bytes": len(raw),
               "checker_sha256": SOURCE_SHA_AT_IMPORT,
               "python": platform.python_version(), "sympy": sp.__version__,
+              "python_flint": flint.__version__, "FLINT": flint.__FLINT_VERSION__,
               "precision": PRECISION,
-              "trusted_dependencies": ["CPython integers/Fraction", "SymPy exact field, linear and polynomial algebra"]}
+              "trusted_dependencies": ["CPython integers/Fraction", "SymPy exact field, linear and polynomial algebra",
+                                       "python-flint exact fmpz_poly/fmpq evaluation"]}
     try:
+        decompressed = decode_payload(raw)
         certificate = json.loads(decompressed, object_pairs_hook=unique_object)
         verifier = Verifier(certificate["field_embedding"])
         if arguments.nodes_only:
@@ -1254,7 +1294,7 @@ def main():
         if arguments.global_file:
             require(not arguments.nodes_only, "local node replay cannot certify a global maximum")
             global_raw = Path(arguments.global_file).read_bytes()
-            global_data = json.loads(global_raw, object_pairs_hook=unique_object)
+            global_data = json.loads(decode_payload(global_raw), object_pairs_hook=unique_object)
             result.update(verifier.global_values(certificate, global_data,
                                                  result["certificate_sha256"], result))
             result["global_certificate_sha256"] = hashlib.sha256(global_raw).hexdigest()

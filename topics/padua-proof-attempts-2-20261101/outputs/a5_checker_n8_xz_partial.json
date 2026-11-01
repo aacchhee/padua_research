@@ -1,0 +1,58 @@
+{
+  "FLINT": "3.6.0",
+  "accepted": false,
+  "accepted_node_cones": 45,
+  "all_gradient_summary": {
+    "axes": {
+      "0": 843,
+      "1": 292
+    },
+    "compatible_pattern_occurrences": 3116148066,
+    "leaves": 1135,
+    "methods": {
+      "centered": 716,
+      "natural": 419
+    }
+  },
+  "boundary_complete": false,
+  "certificate_bytes": 78564,
+  "certificate_sha256": "8729195bca79dabb03f876bc2fe853a223ad60fcc7373d0a8af8ecdf9d80945a",
+  "checker_sha256": "a9cff5748d6c40ee41ac76e4e8a0035e0d5dab95f4de1233dfcc26902cb085a2",
+  "checker_sha256_after": "a9cff5748d6c40ee41ac76e4e8a0035e0d5dab95f4de1233dfcc26902cb085a2",
+  "checker_source_unchanged": true,
+  "complete_prefix_partition": false,
+  "count_certified": false,
+  "dispositions": {
+    "all_gradient": 1135,
+    "gradient": 7084,
+    "hessian": 96,
+    "node_cone": 3
+  },
+  "field_embedding_verified": true,
+  "formal_minpoly_degree": 12,
+  "interior_complete": false,
+  "native_tensor_inverse_verified": true,
+  "node_status_counts": {
+    "accepted": 45
+  },
+  "precision": 160,
+  "principal_embedding_verified": true,
+  "python": "3.12.14",
+  "python_flint": "0.9.0",
+  "root_values": {},
+  "seconds": 258.7336270199994,
+  "sympy": "1.14.0",
+  "total_maxima": null,
+  "trusted_dependencies": [
+    "CPython integers/Fraction",
+    "SymPy exact field, linear and polynomial algebra",
+    "python-flint exact fmpz_poly/fmpq evaluation"
+  ],
+  "verified_direction_breakpoints": 3474,
+  "verified_interior_maxima_enclosures": 0,
+  "verified_leaves": 1227,
+  "verified_node_leaves": 3,
+  "verified_node_records": 45,
+  "verified_patterns": 7180,
+  "verified_supplied_witnesses": true
+}

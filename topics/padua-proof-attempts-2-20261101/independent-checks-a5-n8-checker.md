@@ -7,8 +7,10 @@ N6 verifier was frozen and its actual full executions had started. N6 is now
 fully checked by its implementer; its source and every earlier degree remain
 frozen. No mutable Git, handoff or final-ID operation is performed here.
 
-Rules were read at `842dfaaeff524b4db4141d314afff6ad4a5b7721` and remain
-byte-identical at subsequent observed heads. The new handoff/allocation rules
+Rules were read at `842dfaaeff524b4db4141d314afff6ad4a5b7721` and reread at
+`3a3281dd44747fdd0dd7a4317c59d99411d592dd` on resuming at12:24UTC;
+an actual read-only Git diff confirmed all three rule files remain
+byte-identical. The new handoff/allocation rules
 do not grant a parallel worker authority to allocate either. Managed-cloud
 runtime/status was checked on resuming this work; no network or credential
 operation was needed.
@@ -63,9 +65,10 @@ reproducing1,x,y,x²,xy,y². The producer instead uses a corrected kernel; this
 checker reconstruction needs no part1 kernel theorem dependency. Signed
 polynomials use540-component exact integer coefficient vectors.
 
-Trusted dependencies: CPython integers/Fraction and SymPy exact field,
-matrix and polynomial arithmetic; actual Python3.12.14, SymPy1.14.0 and
-configured flint ground backend. No floating proof predicate is used.
+Trusted dependencies: CPython integers/Fraction, SymPy exact field/matrix/
+polynomial arithmetic, and direct python-flint exact fmpz_poly/fmpq endpoint
+evaluation. Actual versions are Python3.12.14, SymPy1.14.0,
+python-flint0.9.0 and FLINT3.6.0. No floating proof predicate is used.
 
 ## Node, tree, root and boundary checks
 
@@ -192,11 +195,95 @@ PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps python -B /workspace/padua
 PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps python -B /workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_checker_n8_controls.py /tmp/a5-n8-centered-gradient-pilot.json.gz --spatial-certificate /tmp/a5-n8-centered-gradient-pilot.json.gz --output /tmp/a5_checker_n8_centered-controls.json
 ```
 
-The source candidate is now frozen awaiting a complete artifact. The new
+That source candidate was held fixed for those executions. The new
 universal predicate is supported explicitly by53 alongside18; frozen18 and
 all earlier-degree sources are unchanged. Source-generated diagnostics above
 are necessary small regression evidence and are below the per-file limit;
 they do not replace essential finite count evidence.
+
+## Boundary algebra and actual degree-84 norm controls
+
+A small independent algebra preflight completed in36.092217830seconds on
+checker ae564ff7, with before/after source hashes equal. It rebuilt the field
+and all cardinals from committed field input SHA256
+`3324c12e62b11fe28014db625faa3ce33161c70a51aff28b327269b40b939ea3`.
+Every restricted cardinal is nonzero on every edge and every exact
+multiplicity-one crease cover passed. E/norm degrees were125,125,171,131;
+factor counts17,17,16,18; all-real rational norm Sturm totals107,107,155,123.
+This checks boundary algebra hypotheses, not derivative candidates or maxima.
+Output `outputs/a5_checker_n8_boundary_preflight.json`,1506bytes, SHA256
+`e50421d1fefcdbfcf2cb5e6b83dc9193d556673df980b82c7b7884675ae959e9`.
+
+An actual signed edge polynomial was selected by exact cardinal signs at
+`x=-1,y=1/10`, mask30977923165959. Its reduced derivative has degree7 and
+rational squarefree norm degree84. The independent quartic/cubic norm equalled
+the native norm exactly. Its normalized factored Sturm count was66 real roots,
+agreeing with an additional exact reference count; no roots were isolated.
+Output `outputs/a5_checker_n8_critical_norm.json` records source/input identity
+and timings. The normalized chain required0.3884seconds while generic
+`count_roots` needed112.36seconds on that regression; this justified retaining
+the explicit normalized chain.
+
+## Exact finite QQ evaluation and XZ validation
+
+Before any full N8 replay, a parent-approved bounded optimization replaced only
+finite rational polynomial evaluation. For a QQ polynomial, positive common
+denominator D gives an integer polynomial Dp. An exact FLINT fmpz_poly is
+built from its checked integral coefficients and evaluated at fmpq(a,b); the
+returned value is divided by D. This is exactly p(a/b), with no approximation.
+The Sturm chain, positive scaling, factor identities, infinity signs,
+singleton conventions, endpoint-root tests and interval counts are unchanged.
+Cached evaluator objects are read-only in the verifier.
+
+An actual degree-84/85-row chain at six rational points gave510 exact sign
+agreements with SymPy. Aggregated finite evaluation was0.1161seconds through
+SymPy and0.01229seconds through exact FLINT, about9.4 times faster in that
+specific benchmark. New local controls additionally verified36 exact values,
+including scaled rational and zero polynomials. The intermediate positive
+partial replay and all35 controls passed with unchanged-source guards.
+
+The parent then requested lossless standard-library XZ decoding before final
+freeze. Both main and controls now inspect the XZ magic, then gzip magic,
+otherwise raw JSON. Invalid/truncated compressed data fails closed. A test
+repack reduced the same centered-pilot payload from141922 gzip bytes to78564
+XZ bytes. The decoded bytes are exactly equal, SHA256
+`45d8ee3eb1c91a074229fdd57bbd19142c145596c0856a3c5df6bac6003fa584`.
+No mathematical field, interval, path, predicate or count metadata changed.
+
+Actual final XZ partial replay completed with exit0 in258.733627020seconds.
+It reverified all45 cones/3474 breakpoints,1227 supplied leaves,1135 universal
+leaves (419 natural,716 centered),7180 ordinary records and3 node leaves.
+Source guards passed; acceptance/count flags correctly remained false because
+the square partition and boundary are incomplete. Actual final controls
+completed with exit0 in128.868455936seconds, all37 cases passing, including
+exact QQ values, raw/gzip/XZ byte identity and truncated-XZ rejection. Both
+main and controls recorded python-flint0.9.0/FLINT3.6.0 explicitly.
+
+Final frozen source identities:
+
+| Artifact | Bytes | SHA256 |
+|---|---:|---|
+| `code/a5_checker_n8.py` |69248| `a9cff5748d6c40ee41ac76e4e8a0035e0d5dab95f4de1233dfcc26902cb085a2` |
+| `code/a5_checker_n8_controls.py` |14393| `7f57ed9ba5ad864391aa2e309834d9b61c33f673a6854247d44594cb10ec71d2` |
+| `outputs/a5_checker_n8_xz_partial.json` |1653| `93faf3b3d3edbc4a6785f89658f080984679c0a7a530c1cf977a87b7123c046a` |
+| `outputs/a5_checker_n8_xz_partial_controls.json` |6497| `b99fa37324dfcfeed2e360cf108772cefd3992faf5440b374005cb4d66b315c0` |
+
+The actual XZ test input is
+`/tmp/a5_checker_n8_centered-pilot.json.xz`, SHA256
+`8729195bca79dabb03f876bc2fe853a223ad60fcc7373d0a8af8ecdf9d80945a`.
+Exact commands executed from `/workspace`:
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps python -B /workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_checker_n8.py /tmp/a5_checker_n8_centered-pilot.json.xz --allow-partial --output /workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_checker_n8_xz_partial.json
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/tmp/padua2-deps python -B /workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_checker_n8_controls.py /tmp/a5_checker_n8_centered-pilot.json.xz --spatial-certificate /tmp/a5_checker_n8_centered-pilot.json.xz --output /workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_checker_n8_xz_partial_controls.json
+```
+
+No historical output was removed. For a future final XZ certificate, root's
+separate mechanical repacker must rebind only the global file's count-input
+SHA256 to the raw XZ bytes and prove decoded-payload identity. All frozen
+producer/global sources remain unchanged. A complete N8 count/global replay
+and independent regeneration are still pending; these partial regressions do
+not certify a maxima count.
 
 No heavy full N8 verification is launched before both a complete artifact and
 the parent's RAM criterion; N6 executions took priority. A complete N8 count,

@@ -1,15 +1,21 @@
 {
   "Dr_degree": 7,
+  "all_real_norm_roots": 66,
   "axis": 0,
   "checker_sha256": "ae564ff72e220808c1998b473a37cf4b2a2f15714eca82765b6f4de682c1ad55",
   "checker_sha256_after": "ae564ff72e220808c1998b473a37cf4b2a2f15714eca82765b6f4de682c1ad55",
   "exact_norm_equality": true,
+  "field_input_sha256": "3324c12e62b11fe28014db625faa3ce33161c70a51aff28b327269b40b939ea3",
   "mask": 30977923165959,
-  "native_norm_seconds": 1.4157678440005839,
+  "native_norm_seconds": 2.8525092999989283,
   "norm_degree": 84,
+  "rational_norm_factors": 1,
   "rational_sample": "1/10",
-  "scope": "actual signed edge-derivative norm arithmetic control; no root isolation or maxima count",
+  "reference_count_seconds": 112.36022550800044,
+  "reference_real_norm_roots": 66,
+  "scope": "actual signed edge-derivative norm/Sturm arithmetic control; no isolation or maxima count",
   "side": -1,
   "source_unchanged": true,
-  "tensor_norm_seconds": 1.2724847410008806
+  "sturm_seconds": 0.3883776559996477,
+  "tensor_norm_seconds": 3.1467712900011975
 }
