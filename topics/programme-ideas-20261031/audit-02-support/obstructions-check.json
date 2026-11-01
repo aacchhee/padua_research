@@ -1,0 +1,620 @@
+{
+  "candidate": "cadb35066160e466cb1704b9791ad6f374446422",
+  "historical_candidate": "614709d4a60fb0c2593b05764e8d5aceda1be381",
+  "model_assignment": "gpt-6-astra xhigh (inherited; resolved runtime metadata unexposed)",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+  },
+  "review_input_sha256": {
+    "response-01.md": "8f080f2fe1239e2eb4e70ab404607737a978402f00c0362a753aa1e75ac64605",
+    "OPEN_TARGETS.md": "24135cbdca62c1f1bb37893b5701fd6152ee9390f296d2d90acb9c9d99a8df84",
+    "report.md": "71ef9f0e620f60a58f36b37255c1d917e086a64981bb94fa0e4b578c31c0dadc",
+    "ideas/candidates.md": "d079d870350603d63ebae2fbfc9c98ecccb91f54e8b6d5df4cac2a37c7e2286e",
+    "checks/adversarial-M1.md": "61a5b520fc75a65a061e954762c5567f7b9f8c6aab12fa6afb7a70753e00937a",
+    "checks/adversarial-M2.md": "3dea8d6da569deccaf2ddaca9ab4b22d53d88852ba3b4e29a16b6e3ca6d43b9d",
+    "checks/adversarial-gen2-3.md": "bb44182e676c00cf4ceff6cb6ef9775b5163ad87edfd45bbc3e4d101ab736cc4",
+    "checks/adversarial-gen3-1.md": "30cf095069309443ac1c133266b60864d8978fadb4c63dca0a31a6447aae7875",
+    "theory/programme-ideas-claude-01-finite-favard-pattern-pairs.md": "31e4de97c465f6a09b8114ed5090b3996155dc9072999311fccde5733f4e42ff",
+    "theory/programme-ideas-claude-03-compressed-commutator-identity.md": "4c9156af4f1cb5117d961bc756fbab2bb42eebf2f6180317b657635912f9e83e",
+    "theory/programme-ideas-claude-N01-symmetrised-product-inertia-count.md": "a244fd7531ae09b6f69ea00b44b90225a0eeb1e4eddcdba6725eb24b03af0d1e",
+    "theory/programme-ideas-claude-N04-pattern-commutant-not-three-dimensional.md": "5755fa21b7336917b4bf7bde66147bf0750ed41e65d3c037a90f103a10511b9f",
+    "theory/programme-ideas-claude-N05-fourier-basis-commutation-fails.md": "3c37dd27b5ef0d051ec57850c05ba6eabadef03778337be57419aad8b786bde5"
+  },
+  "rules_and_registry_sha256": {
+    "AGENTS.md": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60",
+    "agents/WORKFLOW.md": "64253ae526179be3ce8303987e3f38b9d7a43f825d1a6e310c99c022ba728554",
+    "agents/codex/CODEX.md": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+    "state/IDEAS.md": "183a4a13481aec97b4a7673b36d87f7ec799009ca68d859e299b24f80d804992"
+  },
+  "runs": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-I",
+        "/workspace/programme-integration/topics/programme-ideas-20261031/checks/code/response-01/inertia_two_node_family.py"
+      ],
+      "sha256": "30803cf7207c81b39a911ea4242b6246f7a2f5d4daab1750846e9358cc7f9288",
+      "returncode": 0,
+      "stdout": "{\n \"Mx_eigs\": [\n  \"e/10\",\n  \"11*e*(1 - e)/10\"\n ],\n \"My_eigs\": [\n  \"e/10\",\n  \"11*e*(1 - e)/10\"\n ],\n \"commutator\": \"Matrix([[0, e**2/2], [-e**2/2, 0]])\",\n \"commutator_2norm_squared_eigs\": [\n  \"e**4/4\"\n ],\n \"det_S\": \"-e**4*(11*e - 12)**2*(121*e**2 - 176*e + 56)/160000\",\n \"det_S_equals_formula\": true,\n \"trace_S\": \"e**2*(11*e - 12)**2/200\",\n \"instances\": [\n  {\n   \"e\": \"1/10\",\n   \"det_S\": \"-47060641/16000000000000\",\n   \"trace_S\": \"11881/2000000\",\n   \"n_plus_S\": 1,\n   \"n_plus_Mx\": 2,\n   \"n_plus_My\": 2,\n   \"n_box_formula\": \"3/2\",\n   \"delta_commutator_2norm\": \"1/200\",\n   \"boundary_distance\": \"1/100\"\n  },\n  {\n   \"e\": \"1/20\",\n   \"det_S\": \"-996431441/4096000000000000\",\n   \"trace_S\": \"52441/32000000\",\n   \"n_plus_S\": 1,\n   \"n_plus_Mx\": 2,\n   \"n_plus_My\": 2,\n   \"n_box_formula\": \"3/2\",\n   \"delta_commutator_2norm\": \"1/800\",\n   \"boundary_distance\": \"1/200\"\n  },\n  {\n   \"e\": \"1/100\",\n   \"det_S\": \"-766973330641/1600000000000000000000\",\n   \"trace_S\": \"1413721/20000000000\",\n   \"n_plus_S\": 1,\n   \"n_plus_Mx\": 2,\n   \"n_plus_My\": 2,\n   \"n_box_formula\": \"3/2\",\n   \"delta_commutator_2norm\": \"1/20000\",\n   \"boundary_distance\": \"1/1000\"\n  },\n  {\n   \"e\": \"1/1000\",\n   \"det_S\": \"-8023942610774641/160000000000000000000000000000\",\n   \"trace_S\": \"143736121/200000000000000\",\n   \"n_plus_S\": 1,\n   \"n_plus_Mx\": 2,\n   \"n_plus_My\": 2,\n   \"n_box_formula\": \"3/2\",\n   \"delta_commutator_2norm\": \"1/2000000\",\n   \"boundary_distance\": \"1/10000\"\n  },\n  {\n   \"e\": \"1/1000000\",\n   \"det_S\": \"-8063959872070663946760014641/160000000000000000000000000000000000000000000000000000\",\n   \"trace_S\": \"143999736000121/200000000000000000000000000\",\n   \"n_plus_S\": 1,\n   \"n_plus_Mx\": 2,\n   \"n_plus_My\": 2,\n   \"n_box_formula\": \"3/2\",\n   \"delta_commutator_2norm\": \"1/2000000000000\",\n   \"boundary_distance\": \"1/10000000\"\n  }\n ]\n}\n",
+      "stderr": "",
+      "comparison_with_committed_output": true
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-I",
+        "/workspace/programme-integration/topics/programme-ideas-20261031/checks/code/response-02/padua_pattern_commutant.py"
+      ],
+      "sha256": "abb786981421ffeb4a81f7eb175fb2fb1fa70cef7e71f7649d43bf4c2aa4a87b",
+      "returncode": 0,
+      "stdout": "{\n \"det_V\": \"-27/2\",\n \"commutator_zero\": true,\n \"pivots_x\": [\n  \"sqrt(2)/2\",\n  \"sqrt(2)/2\",\n  \"sqrt(2)/2\"\n ],\n \"pivots_y\": [\n  \"sqrt(2)/2\",\n  \"sqrt(2)/2\",\n  \"1/2\"\n ],\n \"all_pivots_positive\": true,\n \"pattern_violations\": [],\n \"n_symmetric_variables_in_pattern_y\": 17,\n \"rank_of_commutator_map\": 11,\n \"commutant_dimension\": 6,\n \"span_I_Hx_Hy_dimension\": 3\n}\n",
+      "stderr": "",
+      "comparison_with_committed_output": true
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-I",
+        "/workspace/programme-integration/topics/programme-ideas-20261031/checks/code/adv/gen3-1/commutator_sections.py"
+      ],
+      "sha256": "7c1cfda5c61b9ad2736d6261aa01b6135287dce296945fe4b3bb0bc765ccb220",
+      "returncode": 0,
+      "stdout": "\n== rhodonea_7, M=64: kept 32 OP vectors up to degree 7\n  n   N_n   ||[Hx,Hy]||_2   ||Bx^T By - By^T Bx||_2   max|diff|   ||[Hx,Hy]||/||Hx||\n   1     3   2.500e-01        2.500e-01            8.6e-18     5.00e-01\n   2     6   3.750e-01        3.750e-01            5.6e-17     5.00e-01\n   3    10   8.333e-02        8.333e-02            5.6e-17     9.15e-02\n   4    15   2.415e-01        2.415e-01            7.6e-17     2.50e-01\n   5    21   3.366e-01        3.366e-01            1.7e-16     3.37e-01\n   6    28   2.580e-01        2.580e-01            1.8e-16     2.58e-01\n  Fourier basis, n=4: ||[Hx,Hy]|| = 2.415e-01  (same as above, unitary invariance); Xf is a Laurent polynomial of the shift: max |entry| at cyclic distance > m: 3.5e-16\n  Krylov space degree 2: max |Fourier coefficient| beyond mode m*n=16: 1.1e-15  (dimension 6 inside 2mn+1=33 modes)\n  Krylov space degree 4: max |Fourier coefficient| beyond mode m*n=32: 0.0e+00  (dimension 15 inside 2mn+1=65 modes)\n  Krylov space degree 6: max |Fourier coefficient| beyond mode m*n=48: 0.0e+00  (dimension 28 inside 2mn+1=97 modes)\n\n== rhodonea_7, M=128: kept 52 OP vectors up to degree 9\n  n   N_n   ||[Hx,Hy]||_2   ||Bx^T By - By^T Bx||_2   max|diff|   ||[Hx,Hy]||/||Hx||\n   1     3   2.500e-01        2.500e-01            5.6e-17     5.00e-01\n   2     6   3.750e-01        3.750e-01            8.3e-17     5.00e-01\n   3    10   8.333e-02        8.333e-02            8.3e-17     9.15e-02\n   4    15   2.300e-01        2.300e-01            8.3e-17     2.43e-01\n   5    21   3.589e-01        3.589e-01            1.1e-16     3.72e-01\n   6    28   3.896e-01        3.896e-01            1.7e-16     4.00e-01\n   7    36   2.500e-01        2.500e-01            5.0e-16     2.55e-01\n   8    44   3.063e-01        3.063e-01            7.8e-15     3.10e-01\n  Fourier basis, n=4: ||[Hx,Hy]|| = 2.300e-01  (same as above, unitary invariance); Xf is a Laurent polynomial of the shift: max |entry| at cyclic distance > m: 2.9e-16\n  Krylov space degree 2: max |Fourier coefficient| beyond mode m*n=16: 9.4e-16  (dimension 6 inside 2mn+1=33 modes)\n  Krylov space degree 4: max |Fourier coefficient| beyond mode m*n=32: 1.6e-15  (dimension 15 inside 2mn+1=65 modes)\n  Krylov space degree 6: max |Fourier coefficient| beyond mode m*n=48: 2.7e-15  (dimension 28 inside 2mn+1=97 modes)\n\n== rhodonea_7, M=512: kept 52 OP vectors up to degree 9\n  n   N_n   ||[Hx,Hy]||_2   ||Bx^T By - By^T Bx||_2   max|diff|   ||[Hx,Hy]||/||Hx||\n   1     3   2.500e-01        2.500e-01            1.1e-16     5.00e-01\n   2     6   3.750e-01        3.750e-01            1.1e-16     5.00e-01\n   3    10   8.333e-02        8.333e-02            1.1e-16     9.15e-02\n   4    15   2.300e-01        2.300e-01            1.1e-16     2.43e-01\n   5    21   3.589e-01        3.589e-01            1.1e-16     3.72e-01\n   6    28   3.896e-01        3.896e-01            1.7e-16     4.00e-01\n   7    36   2.500e-01        2.500e-01            3.9e-16     2.55e-01\n   8    44   3.056e-01        3.056e-01            2.7e-15     3.10e-01\n  Fourier basis, n=4: ||[Hx,Hy]|| = 2.300e-01  (same as above, unitary invariance); Xf is a Laurent polynomial of the shift: max |entry| at cyclic distance > m: 1.9e-16\n  Krylov space degree 2: max |Fourier coefficient| beyond mode m*n=16: 5.9e-16  (dimension 6 inside 2mn+1=33 modes)\n  Krylov space degree 4: max |Fourier coefficient| beyond mode m*n=32: 1.1e-15  (dimension 15 inside 2mn+1=65 modes)\n  Krylov space degree 6: max |Fourier coefficient| beyond mode m*n=48: 1.5e-15  (dimension 28 inside 2mn+1=97 modes)\n\n== generic_4, M=64: kept 36 OP vectors up to degree 7\n  n   N_n   ||[Hx,Hy]||_2   ||Bx^T By - By^T Bx||_2   max|diff|   ||[Hx,Hy]||/||Hx||\n   1     3   2.799e-01        2.799e-01            5.6e-17     5.31e-01\n   2     6   3.617e-01        3.617e-01            1.1e-16     4.52e-01\n   3    10   3.443e-01        3.443e-01            8.3e-17     3.88e-01\n   4    15   3.579e-01        3.579e-01            1.0e-16     3.92e-01\n   5    21   3.116e-01        3.116e-01            3.3e-16     3.36e-01\n   6    28   2.763e-01        2.763e-01            3.4e-15     2.96e-01\n  Fourier basis, n=4: ||[Hx,Hy]|| = 3.579e-01  (same as above, unitary invariance); Xf is a Laurent polynomial of the shift: max |entry| at cyclic distance > m: 1.7e-16\n  Krylov space degree 2: max |Fourier coefficient| beyond mode m*n=8: 2.6e-16  (dimension 6 inside 2mn+1=17 modes)\n  Krylov space degree 4: max |Fourier coefficient| beyond mode m*n=16: 3.0e-15  (dimension 15 inside 2mn+1=33 modes)\n  Krylov space degree 6: max |Fourier coefficient| beyond mode m*n=24: 1.0e-12  (dimension 28 inside 2mn+1=49 modes)\n\n== generic_4, M=128: kept 52 OP vectors up to degree 9\n  n   N_n   ||[Hx,Hy]||_2   ||Bx^T By - By^T Bx||_2   max|diff|   ||[Hx,Hy]||/||Hx||\n   1     3   2.799e-01        2.799e-01            5.6e-17     5.31e-01\n   2     6   3.617e-01        3.617e-01            1.1e-16     4.52e-01\n   3    10   3.443e-01        3.443e-01            8.3e-17     3.88e-01\n   4    15   3.579e-01        3.579e-01            8.3e-17     3.92e-01\n   5    21   3.116e-01        3.116e-01            7.5e-16     3.36e-01\n   6    28   2.763e-01        2.763e-01            1.8e-15     2.96e-01\n   7    36   3.048e-01        3.048e-01            2.7e-13     3.25e-01\n   8    44   2.647e-01        2.647e-01            2.0e-12     2.82e-01\n  Fourier basis, n=4: ||[Hx,Hy]|| = 3.579e-01  (same as above, unitary invariance); Xf is a Laurent polynomial of the shift: max |entry| at cyclic distance > m: 2.2e-16\n  Krylov space degree 2: max |Fourier coefficient| beyond mode m*n=8: 1.8e-16  (dimension 6 inside 2mn+1=17 modes)\n  Krylov space degree 4: max |Fourier coefficient| beyond mode m*n=16: 2.9e-15  (dimension 15 inside 2mn+1=33 modes)\n  Krylov space degree 6: max |Fourier coefficient| beyond mode m*n=24: 7.5e-13  (dimension 28 inside 2mn+1=49 modes)\n\n== generic_4, M=512: kept 52 OP vectors up to degree 9\n  n   N_n   ||[Hx,Hy]||_2   ||Bx^T By - By^T Bx||_2   max|diff|   ||[Hx,Hy]||/||Hx||\n   1     3   2.799e-01        2.799e-01            5.6e-17     5.31e-01\n   2     6   3.617e-01        3.617e-01            5.7e-17     4.52e-01\n   3    10   3.443e-01        3.443e-01            8.3e-17     3.88e-01\n   4    15   3.579e-01        3.579e-01            8.3e-17     3.92e-01\n   5    21   3.116e-01        3.116e-01            2.6e-16     3.36e-01\n   6    28   2.763e-01        2.763e-01            2.6e-15     2.96e-01\n   7    36   3.048e-01        3.048e-01            1.5e-13     3.25e-01\n   8    44   2.647e-01        2.647e-01            1.7e-12     2.82e-01\n  Fourier basis, n=4: ||[Hx,Hy]|| = 3.579e-01  (same as above, unitary invariance); Xf is a Laurent polynomial of the shift: max |entry| at cyclic distance > m: 1.7e-16\n  Krylov space degree 2: max |Fourier coefficient| beyond mode m*n=8: 2.0e-16  (dimension 6 inside 2mn+1=17 modes)\n  Krylov space degree 4: max |Fourier coefficient| beyond mode m*n=16: 1.4e-15  (dimension 15 inside 2mn+1=33 modes)\n  Krylov space degree 6: max |Fourier coefficient| beyond mode m*n=24: 5.0e-13  (dimension 28 inside 2mn+1=49 modes)\n\n== lissajous_5_6, M=64: kept 30 OP vectors up to degree 7\n  n   N_n   ||[Hx,Hy]||_2   ||Bx^T By - By^T Bx||_2   max|diff|   ||[Hx,Hy]||/||Hx||\n   1     3   5.000e-01        5.000e-01            5.6e-17     7.07e-01\n   2     6   5.000e-01        5.000e-01            5.6e-17     5.77e-01\n   3    10   5.000e-01        5.000e-01            1.1e-16     5.41e-01\n   4    15   5.000e-01        5.000e-01            1.1e-16     5.26e-01\n   5    21   3.781e-01        3.781e-01            1.7e-16     3.83e-01\n   6    27   4.045e-01        4.045e-01            1.7e-16     4.05e-01\n  Fourier basis, n=4: ||[Hx,Hy]|| = 5.000e-01  (same as above, unitary invariance); Xf is a Laurent polynomial of the shift: max |entry| at cyclic distance > m: 2.8e-16\n  Krylov space degree 2: max |Fourier coefficient| beyond mode m*n=12: 8.7e-16  (dimension 6 inside 2mn+1=25 modes)\n  Krylov space degree 4: max |Fourier coefficient| beyond mode m*n=24: 1.9e-15  (dimension 15 inside 2mn+1=49 modes)\n  Krylov space degree 6: max |Fourier coefficient| beyond mode m*n=36: 0.0e+00  (dimension 27 inside 2mn+1=73 modes)\n\n== lissajous_5_6, M=128: kept 45 OP vectors up to degree 9\n  n   N_n   ||[Hx,Hy]||_2   ||Bx^T By - By^T Bx||_2   max|diff|   ||[Hx,Hy]||/||Hx||\n   1     3   5.000e-01        5.000e-01            5.6e-17     7.07e-01\n   2     6   5.000e-01        5.000e-01            1.7e-16     5.77e-01\n   3    10   5.000e-01        5.000e-01            1.7e-16     5.41e-01\n   4    15   5.000e-01        5.000e-01            1.7e-16     5.26e-01\n   5    21   3.614e-01        3.614e-01            2.2e-16     3.71e-01\n   6    27   4.514e-01        4.514e-01            6.6e-16     4.60e-01\n   7    33   4.585e-01        4.585e-01            3.5e-16     4.66e-01\n   8    39   4.649e-01        4.649e-01            7.8e-16     4.71e-01\n  Fourier basis, n=4: ||[Hx,Hy]|| = 5.000e-01  (same as above, unitary invariance); Xf is a Laurent polynomial of the shift: max |entry| at cyclic distance > m: 2.6e-16\n  Krylov space degree 2: max |Fourier coefficient| beyond mode m*n=12: 8.2e-16  (dimension 6 inside 2mn+1=25 modes)\n  Krylov space degree 4: max |Fourier coefficient| beyond mode m*n=24: 1.6e-15  (dimension 15 inside 2mn+1=49 modes)\n  Krylov space degree 6: max |Fourier coefficient| beyond mode m*n=36: 2.2e-15  (dimension 27 inside 2mn+1=73 modes)\n\n== lissajous_5_6, M=512: kept 45 OP vectors up to degree 9\n  n   N_n   ||[Hx,Hy]||_2   ||Bx^T By - By^T Bx||_2   max|diff|   ||[Hx,Hy]||/||Hx||\n   1     3   5.000e-01        5.000e-01            2.2e-16     7.07e-01\n   2     6   5.000e-01        5.000e-01            3.3e-16     5.77e-01\n   3    10   5.000e-01        5.000e-01            3.3e-16     5.41e-01\n   4    15   5.000e-01        5.000e-01            3.3e-16     5.26e-01\n   5    21   3.614e-01        3.614e-01            3.3e-16     3.71e-01\n   6    27   4.514e-01        4.514e-01            3.3e-16     4.60e-01\n   7    33   4.585e-01        4.585e-01            3.3e-16     4.66e-01\n   8    39   4.649e-01        4.649e-01            5.2e-16     4.71e-01\n  Fourier basis, n=4: ||[Hx,Hy]|| = 5.000e-01  (same as above, unitary invariance); Xf is a Laurent polynomial of the shift: max |entry| at cyclic distance > m: 2.7e-16\n  Krylov space degree 2: max |Fourier coefficient| beyond mode m*n=12: 6.3e-16  (dimension 6 inside 2mn+1=25 modes)\n  Krylov space degree 4: max |Fourier coefficient| beyond mode m*n=24: 1.3e-15  (dimension 15 inside 2mn+1=49 modes)\n  Krylov space degree 6: max |Fourier coefficient| beyond mode m*n=36: 2.3e-15  (dimension 27 inside 2mn+1=73 modes)\n",
+      "stderr": "",
+      "parsed_summary": {
+        "row_count": 66,
+        "min_commutator_norm": 0.08333,
+        "max_commutator_norm": 0.5,
+        "max_identity_entry_error": 2e-12
+      }
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-I",
+        "/workspace/programme-integration/topics/programme-ideas-20261031/checks/code/adv/M2/m2_favard_commutant.py"
+      ],
+      "sha256": "2d262a4ffbf7469cf16318169dcdeb0517f948400185bba43d271673a4ddbf43",
+      "returncode": 0,
+      "stdout": "n  N  | jointEV err | dim comm(Hx) in patt(Hy) / patt(Hx) / blocktri | I,Hx,Hy in patt(Hy)? | tangent GH / blocktri | 3N-1, +C(n+2,3)\n3  10 |  6.4e-16    | 3 / 2 / 3  | ['I', 'Hx', 'Hy'] | 29 / 39 | 29, 39\n4  15 |  7.6e-16    | 3 / 2 / 3  | ['I', 'Hx', 'Hy'] | 44 / 64 | 44, 64\n5  21 |  1.4e-15    | 3 / 2 / 3  | ['I', 'Hx', 'Hy'] | 62 / 97 | 62, 97\n6  28 |  1.7e-15    | 3 / 2 / 3  | ['I', 'Hx', 'Hy'] | 83 / 139 | 83, 139\npattern(Hy) subset of pattern(Hx)? False ; pattern(Hx) subset of pattern(Hy)? True\n",
+      "stderr": ""
+    }
+  ],
+  "historical_code_and_output_identity": {
+    "reference_snapshot": "/workspace/programme-audit-614709d/topics/programme-ideas-20261031",
+    "unchanged_count": 125,
+    "unchanged": [
+      {
+        "path": "checks/code/adv/M1/m1_moller_extension.log",
+        "sha256": "73fc765b411d60a1abc4a065d81fe818057e1cd9fb82f91ac37c91379189eed5"
+      },
+      {
+        "path": "checks/code/adv/M1/m1_moller_extension.py",
+        "sha256": "c230a1f330cd548b819a434ae8b1f14b4504186b89111bffe7547f2a90b27300"
+      },
+      {
+        "path": "checks/code/adv/M1/m1_word_rule.log",
+        "sha256": "f86de302ce84b5d2bcaad62128fbcbf2d7e7855f239acea7514f707f02d39c3a"
+      },
+      {
+        "path": "checks/code/adv/M1/m1_word_rule.py",
+        "sha256": "0b84f6268e01a53f53f4626f935449a2fcc54c16deaf93cef97f979bb81f1cf1"
+      },
+      {
+        "path": "checks/code/adv/M2/m2_chart_tests.py",
+        "sha256": "93df2863363ff922572f4bfb85ec77fd9705ce1287d2b716074e5207886d801a"
+      },
+      {
+        "path": "checks/code/adv/M2/m2_common.py",
+        "sha256": "8b2591383912f086652c6b2524f824d41cda4d7fe387120ddec1953c95f91a65"
+      },
+      {
+        "path": "checks/code/adv/M2/m2_favard_commutant.py",
+        "sha256": "2d262a4ffbf7469cf16318169dcdeb0517f948400185bba43d271673a4ddbf43"
+      },
+      {
+        "path": "checks/code/adv/M2/m2_pencil_conditioning.py",
+        "sha256": "c8a412355a724514bcbce6352925ad7298d7a0d063d735f13bcc4cd9918489cc"
+      },
+      {
+        "path": "checks/code/adv/M2/m2_rim_chart_check.py",
+        "sha256": "f4250ced1c8aad5ad4c1348e2856af53efe44f4ddc33e338aed51a4f70aad6fa"
+      },
+      {
+        "path": "checks/code/adv/gen1-2/ah_breakdown_exact.out",
+        "sha256": "4e9283e8fd4a767a92a7da4191ee898a6ac5b61a678f8cb3e6cd0a63fcdd60ca"
+      },
+      {
+        "path": "checks/code/adv/gen1-2/ah_breakdown_exact.py",
+        "sha256": "07e2e1b94a9d5de700396af0f7b20cdc285c05eaaa30a61e7758024e263a7ecc"
+      },
+      {
+        "path": "checks/code/adv/gen1-2/qs_rank.out",
+        "sha256": "47cbf5523a7c8db7cf489d5bd725707da832666b1517fdbf99a07122bb6f72f7"
+      },
+      {
+        "path": "checks/code/adv/gen1-2/qs_rank.py",
+        "sha256": "1b9fbae76a5e80d51c1220a5fe9986aba27c5781060ee4441a00bccc0c54ad18"
+      },
+      {
+        "path": "checks/code/adv/gen1-2/sobolev_adv.out",
+        "sha256": "fcfb5b3634d6747fa30b5d50fc71ef1aad83018d88dc79bd468b0f3fa5a454bf"
+      },
+      {
+        "path": "checks/code/adv/gen1-2/sobolev_adv.py",
+        "sha256": "2a8f955e252e741d8bbece63bce65b0fda1aefb13aae86087ae68128694950c0"
+      },
+      {
+        "path": "checks/code/adv/gen1-3/approx_baseline.py",
+        "sha256": "f25649537b6d1c7ae5df758366a0195a12bdb8c9ebc8ce63baa4d818fb09ff77"
+      },
+      {
+        "path": "checks/code/adv/gen1-3/approx_baseline2.py",
+        "sha256": "7cdf66fe0ded82aa55660bcc104b0021d58524d1b4c9c64fd4e63085f4a59cc9"
+      },
+      {
+        "path": "checks/code/adv/gen1-3/window_complex.py",
+        "sha256": "7fef756ca25e9a762b912929756668ab0eb5944d2d9f24a5487bac0a888f6619"
+      },
+      {
+        "path": "checks/code/adv/gen1-3/window_test.py",
+        "sha256": "9f3d0a48d120647add35fa85eb4d6abf2f7b7f9128dad5962a2233679e351bf8"
+      },
+      {
+        "path": "checks/code/adv/gen2-3/pairs.py",
+        "sha256": "9067edf38f5c7a7565fb99245caa25453bf936ba3a0fe1342377a535b606a015"
+      },
+      {
+        "path": "checks/code/adv/gen2-3/t1_replicate_n8.py",
+        "sha256": "b447f8945a2c5d45c432558d777576a60af00a8f9d5235445934ef5cf5f4ec38"
+      },
+      {
+        "path": "checks/code/adv/gen2-3/t2_ldl_N231.py",
+        "sha256": "6b725b3968ba2e06b9a4cd973f68568b7e363f79ae0aee1b941decb59756e6bc"
+      },
+      {
+        "path": "checks/code/adv/gen2-3/t3_delta_exponent.py",
+        "sha256": "a9a804a7ceae44e630d11df40e590d739807a20d056f7cf6d6ce839cc55f0b0a"
+      },
+      {
+        "path": "checks/code/adv/gen2-3/t3b_diagnose.py",
+        "sha256": "afaf1229469acc31a2dd1e231df07591bfe684e70db16949cc6fec9eebc76138"
+      },
+      {
+        "path": "checks/code/adv/gen2-3/t4_univariate_route.py",
+        "sha256": "ffbc3b91f8758418777d1abfc9a6dba44f57ea90c13dc28f5f169815a2b71104"
+      },
+      {
+        "path": "checks/code/adv/gen2-3/t5_relative_padua.py",
+        "sha256": "815de0fc0cf8088529c45cabecef643fdfd48aa0b912b9e6495d85f38c476173"
+      },
+      {
+        "path": "checks/code/adv/gen3-1/commutator_out.txt",
+        "sha256": "e3f317f6fe6189c72efa11308244211d6337afb66e0f2a025aad194e08ebff26"
+      },
+      {
+        "path": "checks/code/adv/gen3-1/commutator_sections.py",
+        "sha256": "7c1cfda5c61b9ad2736d6261aa01b6135287dce296945fe4b3bb0bc765ccb220"
+      },
+      {
+        "path": "checks/code/adv/gen3-1/curve_kappa_adv.py",
+        "sha256": "ae95a5a429504291f7e1fec9b10ef087a8f780ce5274156a65b3555a578bcecf"
+      },
+      {
+        "path": "checks/code/adv/gen3-1/kappa_extremes.py",
+        "sha256": "d83f1c5745a193e6b409a025ce460805159f3d7dccce80963d3c34433e8ffd29"
+      },
+      {
+        "path": "checks/code/adv/gen3-1/kappa_extremes_out.txt",
+        "sha256": "9d6af8eb0559147a4eb46e674d413ea079d75fe31f83a3938afabed1ac39a4a6"
+      },
+      {
+        "path": "checks/code/adv/gen3-1/kappa_out.txt",
+        "sha256": "7a79244ede202917ba9ed6d230c69bc43cfbc802309d117c7ea4cf422fffe287"
+      },
+      {
+        "path": "checks/code/adv/gen3-3/bandwidth_pg_probe.out",
+        "sha256": "da8d787b347800074d0a6db757f3098bf7ccfccb418f98e197e59f005022c3fb"
+      },
+      {
+        "path": "checks/code/adv/gen3-3/bandwidth_pg_probe.py",
+        "sha256": "17c778e9a866c3b44ff81a8d8cf784c35f3276c48a0b281d7d6e2c67ec0b11ee"
+      },
+      {
+        "path": "checks/code/adv/gen4-1/adv_gen4_1_product_structure.out",
+        "sha256": "87dc47eac8f85468589c3a23239187294a0af71949a0f299497f78fc141b7f8e"
+      },
+      {
+        "path": "checks/code/adv/gen4-1/adv_gen4_1_product_structure.py",
+        "sha256": "9d7435ee50b9fca4a6141fe83abe38b299750be90d4baeec33648853a834f1fb"
+      },
+      {
+        "path": "checks/code/adv/gen4-1/adv_gen4_1_scope_extension.out",
+        "sha256": "d12b86f372947511115d957d07eb079d9d9ef9cdb864e6b3f5ae83e1e8465075"
+      },
+      {
+        "path": "checks/code/adv/gen4-1/adv_gen4_1_scope_extension.py",
+        "sha256": "287d998bdcfa082d3eab8e4a6a4412ecf338117029cc79f1778f56ecb11d7cca"
+      },
+      {
+        "path": "checks/code/adv/gen4-1/rerun_gen4_saturation_n_le_8.out",
+        "sha256": "a8942edca476f7b3c64e0aa52bf0a0c94c6f7c1c3453c3a3ec0df8736a965f59"
+      },
+      {
+        "path": "checks/code/adv/gen4-1/rerun_gen4_saturation_n_le_8.py",
+        "sha256": "977be09454682a16fd02b4783f290e246894819097c10bb48f0c25fe164b0746"
+      },
+      {
+        "path": "checks/code/adv/gen4-2/adv_corner_const.out",
+        "sha256": "94b1f94f71f505a494df9633b0f456c6915902d1753dee7199da28f0bd3cdb37"
+      },
+      {
+        "path": "checks/code/adv/gen4-2/adv_corner_const.py",
+        "sha256": "6beb523399846c5d9361882e11f8426aaaaa8ec10cbb1699ef232c12fb6cf0ea"
+      },
+      {
+        "path": "checks/code/adv/gen4-2/adv_corner_fit.out",
+        "sha256": "9284946029f218fb94ebf61bcbfa2863dc4ed68982030aa50848bc7081d9d1c5"
+      },
+      {
+        "path": "checks/code/adv/gen4-2/adv_corner_fit.py",
+        "sha256": "38b54882f77d06e6fa3265a9b3326193e20957b0023fadf7b35c0d2382245c6d"
+      },
+      {
+        "path": "checks/code/adv/gen4-2/adv_corner_parity.out",
+        "sha256": "2cc01cf191b6b7724f8d6969bb1c3f560edf87597de0d8530749dc87b365a3bf"
+      },
+      {
+        "path": "checks/code/adv/gen4-2/adv_corner_parity.py",
+        "sha256": "2d0e98cd5ec3900bcf84423044ef433f87dacedcce8824f040ca0c10b95be0ad"
+      },
+      {
+        "path": "checks/code/adv/gen4-2/adv_maxima_count.out",
+        "sha256": "ccce6d0704549549a929d4014ef5189a3ec0cfd9b7ce436e3d8359c41c33b14d"
+      },
+      {
+        "path": "checks/code/adv/gen4-2/adv_maxima_count.py",
+        "sha256": "02ee8d81241dd60f83c19e348635a8b4ddecdb09efae51c3f8b2886fb83d0cda"
+      },
+      {
+        "path": "checks/code/adv/gen4-2/adv_maxima_count2.out",
+        "sha256": "471d961cadbc15ec619fde42077449f1db4a4f129a5f27be80e4c2c152d57791"
+      },
+      {
+        "path": "checks/code/adv/gen4-2/adv_maxima_count2.py",
+        "sha256": "aec000754b8349e558b484d5a9455f88aa9f67e524e86ad254dd0f5cbb17defd"
+      },
+      {
+        "path": "checks/code/adv/gen4-2/adv_rhombus_L1.out",
+        "sha256": "43ba2b973aec550a0cd1dc6ed100cfd8f22bed5fdbad08450512f6260e18c764"
+      },
+      {
+        "path": "checks/code/adv/gen4-2/adv_rhombus_L1.py",
+        "sha256": "39f8a69713ed2202a90562534a233e74d7c2cebdb8b8e1b3834ccec4132b4aa9"
+      },
+      {
+        "path": "checks/code/adv/gen4-2/adv_rhombus_crosscheck.py",
+        "sha256": "9c13ba130e1a83eb67e782b8133602c71291288e44642fad5173b1e4d30e8ba4"
+      },
+      {
+        "path": "checks/code/decisive/gen1-3/T1_T3.out",
+        "sha256": "853414ed9fb65eef13e7bb94948112db63571d452b037387f2db4f310a8184e0"
+      },
+      {
+        "path": "checks/code/decisive/gen1-3/T1b.out",
+        "sha256": "8c77635738262d8946727d46e781223815ceb9f9c8c10cac02937e66528b7da3"
+      },
+      {
+        "path": "checks/code/decisive/gen1-3/T2.out",
+        "sha256": "a60324a7d4f684bb777b2e37e9130986b2a0a9c63b58f2c268b7c33b56e555fe"
+      },
+      {
+        "path": "checks/code/decisive/gen1-3/T2c.out",
+        "sha256": "67bf0363656ed7af8b6be82bbecc85b1e7c6c4994ef2430bca11792df8df9a78"
+      },
+      {
+        "path": "checks/code/decisive/gen1-3/orf2d.py",
+        "sha256": "9e2197347a9125cc9f75178021c59d835bc3c85b7b63ef47d5e0213dc2287525"
+      },
+      {
+        "path": "checks/code/decisive/gen1-3/run_T1_T3.py",
+        "sha256": "561d16b96cbc69d7bd59cda7c44be6a09850e6839c06fdbbf718d410128d2439"
+      },
+      {
+        "path": "checks/code/decisive/gen1-3/run_T1b.py",
+        "sha256": "b3b98ad02006dc8ad1ed6a267fe38bb49914b7cef529df52c38f0eb85f070c0b"
+      },
+      {
+        "path": "checks/code/decisive/gen1-3/run_T2.py",
+        "sha256": "7127d077f6a3b7cb0b469bfe6dcc8d3c1e1c4f9cd19ff32efcc20a095dca1369"
+      },
+      {
+        "path": "checks/code/decisive/gen1-3/run_T2c.py",
+        "sha256": "4275b823cb294a5269ea7448bc4217d65b74db316e0cae9c2b0504ac2bc1bbee"
+      },
+      {
+        "path": "checks/code/decisive/gen1-3/window_exact.out",
+        "sha256": "8354313abf496f9d62550daade12d5b148ff653b20ad1266c4e48d62cbc6a1e4"
+      },
+      {
+        "path": "checks/code/decisive/gen1-3/window_exact.py",
+        "sha256": "abf066a0fe35355703586ad02701e3f3cfd55690e16a1f3da5b6749d292524c0"
+      },
+      {
+        "path": "checks/code/decisive/gen4-2/leb_common.py",
+        "sha256": "419970972ae69efcc5e4a1c965fbd49982b67100376d3ff0c46e8629dcb382d0"
+      },
+      {
+        "path": "checks/code/decisive/gen4-2/t1_argmax.json",
+        "sha256": "00002366be4f5a47a9fbcfb2d4b61dd5080bb1e81774db8b6021477d539c7a8c"
+      },
+      {
+        "path": "checks/code/decisive/gen4-2/t1_argmax.out",
+        "sha256": "9d500032d8d53583c4644fd2d554bf487c3fd5472bb21bd892ec4f70a9c6f548"
+      },
+      {
+        "path": "checks/code/decisive/gen4-2/t1_argmax.py",
+        "sha256": "02fa14792afa2c72032d4a91998d4da273d83200067437bd2573bb8430bae216"
+      },
+      {
+        "path": "checks/code/decisive/gen4-2/t1_tail.out",
+        "sha256": "d863e8f2861503702831c4ab1eac0a629b4b4a39b05dc9cb9fdd204188d36492"
+      },
+      {
+        "path": "checks/code/decisive/gen4-2/t1_tail.py",
+        "sha256": "552fdb4233bf6ee9d3f4d893dcf38f34b04a759e924711f43927d9a5703769fe"
+      },
+      {
+        "path": "checks/code/decisive/gen4-2/t2_halfshift.out",
+        "sha256": "0f65bd19274fe11b84045061c30b0243eed5fd1b1402c5acd82612e83c99b186"
+      },
+      {
+        "path": "checks/code/decisive/gen4-2/t2_halfshift.py",
+        "sha256": "d4cdc2102f3f6885f86ec2a6e9a4ad64b81a36de8b7878e6d6be8c950deb4d4a"
+      },
+      {
+        "path": "checks/code/decisive/gen4-2/t2_identify.out",
+        "sha256": "7dfe7db98f26fef0ab68da6b5afb1857c3cefd0efc182bed50e9a426d8b150ed"
+      },
+      {
+        "path": "checks/code/decisive/gen4-2/t2_identify.py",
+        "sha256": "55936d19d737e67c0145a9e3ab125643b949e7f62a289f9a138060bd7fdd6aa7"
+      },
+      {
+        "path": "checks/code/decisive/gen4-2/t2_identify2.out",
+        "sha256": "e8ba834388e9e0b29a5a46d2f5f853c83f42eae3fb18b8ad1517db675032f1a2"
+      },
+      {
+        "path": "checks/code/decisive/gen4-2/t2_odd.out",
+        "sha256": "fc809dada19f75e3cea51ae6a3c6ec0f0d2c7b76281f6afa06d9da77e7a4c444"
+      },
+      {
+        "path": "checks/code/decisive/gen4-2/t2_odd.py",
+        "sha256": "269f37e6a350bf4f04ea1123bb4d3f88629f00123383433892eb02fd75c938cf"
+      },
+      {
+        "path": "checks/code/decisive/gen4-2/t2_onepage.out",
+        "sha256": "4b0c81bd0dcc5f87447769b91404637ec5c4b9a815bcdd90a07be1b5ee9d5df6"
+      },
+      {
+        "path": "checks/code/decisive/gen4-2/t2_onepage.py",
+        "sha256": "e7c062a90c883de783d041503dbba77f7fe03070a0f796a28cf66b78b4a5262a"
+      },
+      {
+        "path": "checks/code/decisive/gen4-2/t3_certify.log",
+        "sha256": "4eeb37aa8848202988ebd660b0a332e8812f2adb616d0dacc56cfa1140e7f3a8"
+      },
+      {
+        "path": "checks/code/decisive/gen4-2/t3_certify.out",
+        "sha256": "637303c5defbaac0fa105c80d79b9f69c8e34922af39f1607924aa2468516b06"
+      },
+      {
+        "path": "checks/code/decisive/gen4-2/t3_certify.py",
+        "sha256": "1a1fb00ced54bb3083dce2ff12c56cd10c28499b7e0353ba23e8a6afd5a9d78b"
+      },
+      {
+        "path": "checks/code/decisive/gen4-2/t3_degenerate.py",
+        "sha256": "cdf8cd3273c9ecffa35542bb572a0dde141bf5d068b77ddda548a9a5bdaee5b4"
+      },
+      {
+        "path": "checks/code/decisive/gen4-2/t3_maxima.json",
+        "sha256": "bf1890f4d23f871f16d2dda41b800e0d70d2025299221296081a925518d48de0"
+      },
+      {
+        "path": "checks/code/decisive/gen4-2/t3_validate.out",
+        "sha256": "1da3aa3b434eb93cfb8041e87218401fa785c245ac40f84b096ad1a65b042e1e"
+      },
+      {
+        "path": "checks/code/decisive/gen4-2/t3_validate.py",
+        "sha256": "3fb63a3b3dcd2e50b585728fc0f7323a78ddb3952267072d3a37f65fe1c5874b"
+      },
+      {
+        "path": "checks/code/gen1/sobolev.py",
+        "sha256": "2ff3d432443e581cd0b391ddbf0ecd746cb02fc8c3b0527d550de2d8f8800f51"
+      },
+      {
+        "path": "checks/code/gen1/wordcensus.py",
+        "sha256": "3dc6ecc3e299c9fef8dfc07ba7451cc6179dc2a0b37d7e05ae55769725666ccf"
+      },
+      {
+        "path": "checks/code/gen2/chart_test.py",
+        "sha256": "ed9388cb63dbd9fd678a1f1056ec6736d204f2217cb894fb9f94382b1ad44de1"
+      },
+      {
+        "path": "checks/code/gen2/hb_from_recurrence.py",
+        "sha256": "e70b4830eebba4e93f5ef45856ea8b2b37f7290e35167bf7d079232ec60aa84d"
+      },
+      {
+        "path": "checks/code/gen2/nearly_commuting_probe.py",
+        "sha256": "939ff92e9cc2bed2f79b9d6a48ee70e03b6bc712fade4a7c73c930d20ac36991"
+      },
+      {
+        "path": "checks/code/gen2/sturm_pair_check.py",
+        "sha256": "5ec4caa963b0028c957dd635662ad578448cbfeeaa5f8a71a751918cf3e42c14"
+      },
+      {
+        "path": "checks/code/gen2/tangent_dim.py",
+        "sha256": "41a56f135f24df45da00d85f6dbafd8a363b6ea35238e156bd71fbb7343b7974"
+      },
+      {
+        "path": "checks/code/gen2/tangent_dim2.py",
+        "sha256": "2b131f97b1ffdec0589943809317b31de5c6f2067ae0f9d10ee476c32de65214"
+      },
+      {
+        "path": "checks/code/gen2/tear_factor_ranks.py",
+        "sha256": "43cba3e9cb2455698a8dcf97a672ce30025828b104f51072602163e8b6a311a2"
+      },
+      {
+        "path": "checks/code/gen2/tear_level_rank.py",
+        "sha256": "4ea5aff57c25dd26540def3e8709eb6a0ed1b194fe813b11163ce71a327a502c"
+      },
+      {
+        "path": "checks/code/gen3/butterfly_probe.py",
+        "sha256": "639b0db2ebb940937f5e39c60955f7e84f3da469e57354e58f910f62d8b4facd"
+      },
+      {
+        "path": "checks/code/gen3/butterfly_probe2.py",
+        "sha256": "28b1afe4fc46bf9a44b001fba0e112b97b94e93603c79739e81cd2fd65cc62e4"
+      },
+      {
+        "path": "checks/code/gen3/curve_measure_probe.py",
+        "sha256": "b7e9f62873c99f80fa958ad818dd68738c6030053bfb222520eada221cceeff0"
+      },
+      {
+        "path": "checks/code/gen3/polygon_sparse_ops_probe.py",
+        "sha256": "edc469d486a21eac110c0d5a9a002fb6775ece8448fa9d6bfade8ca409120b7f"
+      },
+      {
+        "path": "checks/code/gen3/tomography_design_probe.py",
+        "sha256": "9e969bbd7f20e3749123948e08f3b0c778dd737e4d2a21f22ba4beaad6abc87f"
+      },
+      {
+        "path": "checks/code/gen4/gen4_tests.py",
+        "sha256": "9ec69777c75f9ffe8b784b083d6684d47b279091d341c53e9e3b0287078bfb6c"
+      },
+      {
+        "path": "checks/code/gen4/gen4_tests10.py",
+        "sha256": "e9b0835fc9d628a8a6aa7ed68c585710c306c72b83eba592f44f7b20a552aeb8"
+      },
+      {
+        "path": "checks/code/gen4/gen4_tests11.py",
+        "sha256": "e81a7e55f791ce984ced4d0866b63203d5edf51c08f3d6251943501ddf2b5b34"
+      },
+      {
+        "path": "checks/code/gen4/gen4_tests12.py",
+        "sha256": "2e5a4fd3cdaa182e25cdaf3258c20a6cea347156e8b4b5a7613df19832f90b9c"
+      },
+      {
+        "path": "checks/code/gen4/gen4_tests13.py",
+        "sha256": "370257559c49d731034966efd8c6af19f66832c2f6e362aa3b8701fce7d62ef0"
+      },
+      {
+        "path": "checks/code/gen4/gen4_tests14.py",
+        "sha256": "8fbcf97896ae049a2a5cd65a6d3c5e1f8ee1e3c3d35ff8ddde7a08da8edd6556"
+      },
+      {
+        "path": "checks/code/gen4/gen4_tests15.py",
+        "sha256": "38047f06d57c5c37ba544e5e751a854494c0123ae5bbbadd78d540f2550b931a"
+      },
+      {
+        "path": "checks/code/gen4/gen4_tests16.py",
+        "sha256": "b1cd5a0ed0383d288ffb4dcaf9ab6093f56d11986f149144b562516c294d2e61"
+      },
+      {
+        "path": "checks/code/gen4/gen4_tests17.py",
+        "sha256": "dba703bef5b9316dcbc88c05b15554145479c54dbeabb6a336cbf57d947c02cb"
+      },
+      {
+        "path": "checks/code/gen4/gen4_tests18.py",
+        "sha256": "46127e59bd408dba17b823cfa3bdcb62290ce025cb362e76ebba8c45c3eef5d7"
+      },
+      {
+        "path": "checks/code/gen4/gen4_tests19.py",
+        "sha256": "db03ac3b8986b981778bee2d160302468158602fb34284cb6f69c642b951bb7a"
+      },
+      {
+        "path": "checks/code/gen4/gen4_tests2.py",
+        "sha256": "3e4d5931509d795784ef0357e269ea34782aa117ec371741153ac975ac8532a6"
+      },
+      {
+        "path": "checks/code/gen4/gen4_tests20.py",
+        "sha256": "7a0f42db33d249d1b79a7b35775c7851824682dcdf3dbd50c74ef2888d3647ee"
+      },
+      {
+        "path": "checks/code/gen4/gen4_tests21.py",
+        "sha256": "67e83b6b4b93f7368292953e33ac1505b102ad79f0b01a25e28d30d5230768fb"
+      },
+      {
+        "path": "checks/code/gen4/gen4_tests22.py",
+        "sha256": "87558368b311196d1977b8e7eb1742bc8a85b7b3dc676c85ce070ea54f142891"
+      },
+      {
+        "path": "checks/code/gen4/gen4_tests23.py",
+        "sha256": "aa66ae21bb33e3b4b8d9fea71b18a4f17c79f59431bfd7d8a013da88cc1ea6aa"
+      },
+      {
+        "path": "checks/code/gen4/gen4_tests24.py",
+        "sha256": "4c261f7fae12a7aaad615b5b2f774e84a5c7a0fcbe88344bf42b3d613b539547"
+      },
+      {
+        "path": "checks/code/gen4/gen4_tests3.py",
+        "sha256": "21078c5c9a5c90a6045a4c9fa40e4fc80ca22f6d98cb76b8ec1241dd06b0adb4"
+      },
+      {
+        "path": "checks/code/gen4/gen4_tests4.py",
+        "sha256": "8babab1bbbab89e4e86b542c1195400486356e7ceb64787d6d1b9d28b7cb5d33"
+      },
+      {
+        "path": "checks/code/gen4/gen4_tests5.py",
+        "sha256": "78c2151289d57758b55c1d35f57b9c51e19ba5b13907d9bc84c67cea612feb41"
+      },
+      {
+        "path": "checks/code/gen4/gen4_tests6.py",
+        "sha256": "f88087453d6a8d8af8d3d633793025a24341e93aedbdf60a6ad7d27eefc31ca6"
+      },
+      {
+        "path": "checks/code/gen4/gen4_tests7.py",
+        "sha256": "2d89ad4debc881b8460a5ffa176b71240824bf8333840c7e4d066c7418c9a6a8"
+      },
+      {
+        "path": "checks/code/gen4/gen4_tests8.py",
+        "sha256": "6d2419697d74cc5e00c597d63460791014f6244cb170398ae8237ded66d00178"
+      },
+      {
+        "path": "checks/code/gen4/gen4_tests9.py",
+        "sha256": "fe12cbf992ea76c7c34fa246a479499a987c7258589e659b2bcdfdd84856de42"
+      }
+    ],
+    "different": []
+  },
+  "independent_QR_reconstruction": [
+    {
+      "n": 1,
+      "norm": 0.24999999999999992,
+      "boundary_identity_max_error": 1.3877787807814457e-16,
+      "Fourier_transform_max_error": 8.378113973666767e-17
+    },
+    {
+      "n": 2,
+      "norm": 0.37500000000000017,
+      "boundary_identity_max_error": 2.498001805406601e-16,
+      "Fourier_transform_max_error": 1.388022102561073e-16
+    },
+    {
+      "n": 3,
+      "norm": 0.08333333333333316,
+      "boundary_identity_max_error": 1.6653345369377338e-16,
+      "Fourier_transform_max_error": 1.666466438591506e-16
+    },
+    {
+      "n": 4,
+      "norm": 0.241454677859011,
+      "boundary_identity_max_error": 1.6653345369377348e-16,
+      "Fourier_transform_max_error": 1.9432986914318333e-16
+    }
+  ]
+}
