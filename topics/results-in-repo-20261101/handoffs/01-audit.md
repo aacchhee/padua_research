@@ -1,6 +1,6 @@
 # Handoff 01 — results-in-repo-20261101 — audit
 
-- Status: open
+- Status: superseded by 02: AC follow-up instruction (RESULTS.md repository-only; machine only for papers and cold storage)
 - Previous handoff: none
 - Next agent / model / effort: Codex, gpt-6-astra medium (protocol audit).
 - Role: auditor
