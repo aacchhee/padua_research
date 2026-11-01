@@ -1,0 +1,18 @@
+{
+  "command": "PYTHONPATH=/tmp/padua2-deps timeout 2400 python -B topics/padua-proof-attempts-2-20261101/code/a5_n8_boundary.py --edge-limit 4 --output /tmp/a5-n8-boundary-final-v2.json",
+  "deadline_utc": "2026-11-01T15:19:00+00:00",
+  "format": "a5-n8-boundary-v2-prerun-v1",
+  "kill_criteria": [
+    "outer guard or deadline",
+    "any unresolved/missing edge/corner or source change blocks join",
+    "no count/global status upgrade before full existing predicates actually pass"
+  ],
+  "outer_timeout_seconds": 2400,
+  "output": "/tmp/a5-n8-boundary-final-v2.json",
+  "ownership": "fresh OWN all-four-edge execution from scratch; no old printed data reused",
+  "registered_before_launch_utc": "2026-11-01T14:16:19.843879+00:00",
+  "source_sha256_before": "6088db34cce2952332bd22e560c8b02e90446236f994dc2bac79b33717e769cb",
+  "status": "REGISTERED BEFORE LAUNCH; no result yet",
+  "stderr": "/tmp/a5-n8-boundary-final-v2.progress",
+  "stdout": "/tmp/a5-n8-boundary-final-v2.log"
+}

@@ -1,0 +1,65 @@
+{
+  "all_controls_passed": true,
+  "certificate_sha256": "14a69a131b3c20416fd5521bd971efdadd4e3741f70546d0fc5f0d9f25a2cf61",
+  "checker_sha256": "1fe4f74ffe21447134e1c2f34e6364f3ca73929f207c7ebd8f3ea8977e53d143",
+  "checks": [
+    {
+      "name": "overlapping_prefix_partition",
+      "reason": "leaf paths are not prefix-free",
+      "rejected": true
+    },
+    {
+      "name": "missing_square_leaf",
+      "reason": "incomplete square leaf partition",
+      "rejected": true
+    },
+    {
+      "name": "missing_compatible_mask_disposition",
+      "reason": "compatible sign patterns missing, duplicated, reordered, or extraneous at 0000000000",
+      "rejected": true
+    },
+    {
+      "name": "counterfeit_singular_preconditioner",
+      "reason": "singular preconditioner",
+      "rejected": true
+    },
+    {
+      "name": "false_flat_witness",
+      "reason": "false flat witness",
+      "rejected": true
+    },
+    {
+      "name": "zero_hessian_not_an_exclusion",
+      "reason": "no strict positive-curvature/negative-determinant exclusion",
+      "rejected": true
+    },
+    {
+      "accepted": true,
+      "name": "sturm_rational_singleton_and_two_irrational_roots"
+    },
+    {
+      "name": "sturm_missing_real_root",
+      "reason": "root partition omits real roots",
+      "rejected": true
+    },
+    {
+      "name": "sturm_interval_without_root",
+      "reason": "root interval does not contain exactly one root",
+      "rejected": true
+    },
+    {
+      "accepted": true,
+      "masks": 14,
+      "name": "exact_integer_vector_vs_symbolic_polynomial"
+    },
+    {
+      "name": "strict_only_factor_cannot_supply_global_plateau_proof",
+      "reason": "global proof does not cover optional strict-only factor/point predicates",
+      "rejected": true
+    }
+  ],
+  "controls_sha256": "6ff60f6545f98fe09ead2a4749f399091e9de12615ae957cdbb502189ed64b61",
+  "python": "3.12.14",
+  "seconds": 8.477368940999895,
+  "sympy": "1.14.0"
+}

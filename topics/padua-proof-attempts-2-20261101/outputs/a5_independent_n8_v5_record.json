@@ -1,0 +1,74 @@
+{
+  "actual_exit": 0,
+  "all23pins_unchanged_after": true,
+  "axis_crossing_root_box_ids": [
+    9,
+    10,
+    21,
+    23
+  ],
+  "count_certified": false,
+  "full_prefix_including_parked_complete": true,
+  "independent_left_prefix_complete": true,
+  "negative_root_box_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22
+  ],
+  "pending_paths": [
+    "1"
+  ],
+  "raw_bytes": 390863,
+  "raw_path": "/tmp/a5-independent-n8-candidate-v5.json.gz",
+  "raw_sha256": "cd6827318e4dcd8065b2fda82c9a869591d8519ef44a64df94e1e83ade350ba9",
+  "summary": {
+    "Pcache": 8000,
+    "all_gradient_leaves": 72451,
+    "complete": false,
+    "depth": 34,
+    "interior": 24,
+    "interior_complete": false,
+    "leaf_counts": {
+      "all_gradient": 72451,
+      "gradient": 267179,
+      "hessian": 3501,
+      "node_cone": 173,
+      "root": 261
+    },
+    "leaf_pattern_records": 270941,
+    "maximum_ambiguity": 45,
+    "negative_half_complete": true,
+    "node_leaves": 173,
+    "pending": 1,
+    "seconds": 828.5748775005341,
+    "stats": {
+      "all_gradient": 72451,
+      "discard": 76760,
+      "failedmask": 21206,
+      "gradient": 345149,
+      "hessian": 5495,
+      "mask_checks": 351319,
+      "node_cone": 173,
+      "root": 675,
+      "visited": 153520
+    },
+    "unresolved": 0
+  }
+}

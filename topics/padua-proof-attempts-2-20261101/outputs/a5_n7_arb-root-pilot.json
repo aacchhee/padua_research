@@ -1,0 +1,1 @@
+{"QQdegree": 25, "all_exact_sturm_counts_passed": true, "format": "a5-n7-arb-root-pilot-v1", "realroots": 23, "scope": "actual single boundary derivative polynomial; no count claim", "seconds_arb": 0.0023915767669677734, "seconds_exact_sturm_checks": 0.04692387580871582, "seconds_norm_plus_construction": 0.6221520900726318}

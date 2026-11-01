@@ -1,0 +1,79 @@
+{
+ "purpose": "mechanical final registration only; no science execution",
+ "base": "67bd07c0867d8d49eb104942237d7f51a7d9f77d",
+ "reservation": "103ee71e101265ca4133c7ffea8c0e48fa840109",
+ "theory_records": 44,
+ "idea_records": 26,
+ "literal_blocks": [
+  {
+   "target": "topics/programme-ideas-20261031/OPEN_TARGETS.md",
+   "pin": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+   "old_sha256": "6803701ef165541ff965fcf2438df83fcfef7fdfe7d4443286ecf89267d0a361"
+  },
+  {
+   "target": "topics/programme-ideas-20261031/theory/programme-ideas-claude-04-padua-corner-expansion.md",
+   "pin": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+   "old_sha256": "7f2c333861b6a8fed5515aff66b6da767ba3a37ed4294ff3c2532bd9544147e6"
+  },
+  {
+   "target": "topics/programme-ideas-20261031/OPEN_TARGETS.md",
+   "pin": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+   "old_sha256": "72f9ae07d0e16c4dfaba0376cff9536b8393ad9b3b498b724e31b0c69908bf89"
+  },
+  {
+   "target": "topics/programme-ideas-20261031/theory/programme-ideas-claude-06-padua-lebesgue-maxima-counts.md",
+   "pin": "806cc7b4509fd93bae652f9545d32d95529f8281",
+   "old_sha256": "474345268916d88df3a185d298ae77ced981c92122f57389bc0244f8be8473cd"
+  },
+  {
+   "target": "topics/programme-ideas-20261031/theory/programme-ideas-claude-05-padua-corner-argmax.md",
+   "pin": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+   "old_sha256": "886cbe4806fb563a50f85574ecac8e0b85d9528a9c51577c45b8281872cbdea3"
+  },
+  {
+   "target": "topics/programme-ideas-20261031/OPEN_TARGETS.md",
+   "pin": "e0d9e3d08ee26c3b82a295f33b6ff99d928f22b9",
+   "old_sha256": "46b6587a2292c59857615d9549c0a3fadbba03660132e51842e7c3d022c63661"
+  },
+  {
+   "target": "topics/programme-ideas-20261031/OPEN_TARGETS.md",
+   "pin": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+   "old_sha256": "40f72d27932e102893fc6772c7be989b7dc6651365be6d6e6eaf0b6ee50b8815"
+  },
+  {
+   "target": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N01-symmetrised-product-inertia-count.md",
+   "pin": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+   "old_sha256": "c91bd5dee2644ff4bdb02ab1e709cf778933320f83e88b5fbc9f08d1ef064d66"
+  },
+  {
+   "target": "topics/programme-ideas-20261031/OPEN_TARGETS.md",
+   "pin": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+   "old_sha256": "8a4348e248a2dea9b8f6b4892c0ae657bc93313b27e48a9bdf970ef6277f0de5"
+  },
+  {
+   "target": "results/padua-proof-attempts-2-20261101.md",
+   "pin": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+   "old_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+ ],
+ "shared_paths": [
+  "ID_CROSSWALK.md",
+  "PAPER_MAP.md",
+  "PROOF_STATUS.md",
+  "RESULTS.md",
+  "literature/INDEX.md",
+  "results/padua-proof-attempts-2-20261101.md",
+  "state/CURRENT.md",
+  "state/IDEAS.md",
+  "topics/README.md",
+  "topics/padua-batch-20261031/ALLOCATIONS.md",
+  "topics/programme-ideas-20261031/OPEN_TARGETS.md",
+  "topics/programme-ideas-20261031/theory/programme-ideas-claude-04-padua-corner-expansion.md",
+  "topics/programme-ideas-20261031/theory/programme-ideas-claude-05-padua-corner-argmax.md",
+  "topics/programme-ideas-20261031/theory/programme-ideas-claude-06-padua-lebesgue-maxima-counts.md",
+  "topics/programme-ideas-20261031/theory/programme-ideas-claude-N01-symmetrised-product-inertia-count.md",
+  "topics/programme-ideas-20261031/theory/programme-ideas-claude-N02-windowed-rational-lanczos-instability.md"
+ ],
+ "proof_body_changes": 0,
+ "frozen_code_or_evidence_changes": 0
+}

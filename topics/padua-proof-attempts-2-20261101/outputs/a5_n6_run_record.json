@@ -1,0 +1,230 @@
+{
+  "format": "a5-n6-development-evidence-v1",
+  "initial_rules_sha": "38db12bc1cee57902c67f62e022af83e0880f699",
+  "refreshed_rules_sha": "842dfaaeff524b4db4141d314afff6ad4a5b7721",
+  "programme_sha": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+  "agent": "/root/a5_n4",
+  "role": "n6 developer",
+  "model": "gpt-6.1-sol xhigh inherited",
+  "created_utc": "2026-11-01T11:09:25.130463+00:00",
+  "environment": {
+    "python": "3.12.14",
+    "sympy": "1.14.0",
+    "python_flint": "0.9.0",
+    "FLINT": "3.6.0",
+    "GROUND_TYPES": "flint",
+    "precision_bits": 112,
+    "seed": null
+  },
+  "files": [
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n6_field.py",
+      "bytes": 6260,
+      "sha256": "1e08c253f78b3e34df1f02947f3e4767949976daa6240aa7753c11a82f9970e5"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n6_nodes.py",
+      "bytes": 4848,
+      "sha256": "1901437733a441c5d2279433c63378d17343367c1826400617a7002aa09371b5"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n6_boxes.py",
+      "bytes": 11008,
+      "sha256": "fed35e7ef6efe13df5d0df150550abbe9ddaf186a3f8d1f07884e04711a2bdd9"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n6_boundary.py",
+      "bytes": 5753,
+      "sha256": "e0d16de330aff00060beff7a9d4be94f80079f326a37e675448f22dc6c3e696a"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n6_global.py",
+      "bytes": 3461,
+      "sha256": "ab1e287b4a152975aec91056aa5326fdddb294394eecee5d5725770e1e89dcda"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n6_schema.md",
+      "bytes": 6794,
+      "sha256": "e03ea676ad5710d97efafb426066f0cb07857e7e800acede87add5b2606585da"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-40-degree-six-principal-field.md",
+      "bytes": 7128,
+      "sha256": "aa3d4d40c14de231285b5fee3648566d2e8b9606f337aaeadf841e7aba32027e"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-41-degree-six-maxima-count.md",
+      "bytes": 9762,
+      "sha256": "64daab76318c8c816cbd9c89952f7c0d18cda242e377468a33f1a472da251a48"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-42-degree-six-global-argmax.md",
+      "bytes": 7963,
+      "sha256": "26a9a911f716a22be3d4ba7cde89ff1239c45365ba62ed2be72eecae1a9d6369"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/attempts/T-A5-n6.md",
+      "bytes": 17133,
+      "sha256": "4cb5f1a89d7d619fd4a5c8716da0eab1c44911fe192294322113aff68b536a0d"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_n6_certificate.json.gz",
+      "bytes": 414031,
+      "sha256": "c7a113b9b623c47309fd186c19ee2dddb2d5a0270c01b118bd11ee1ee069f0f5"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_n6_global.json",
+      "bytes": 7077,
+      "sha256": "af21a0a8f3d1e4301c3a249b6683ce61ce14436e7a2e96e71773b275a8563170"
+    }
+  ],
+  "actual_developer_count": {
+    "interior": 25,
+    "edge": 14,
+    "corner": 2,
+    "total": 41,
+    "unresolved": 0,
+    "pending_paths": 0,
+    "full_checker_status": "PASSED: frozen separate main and all38 controls, plus actual fresh different-agent producer/global/matching checker and sequential full controls completed exit0"
+  },
+  "tmp_inputs_and_diagnostics": [
+    {
+      "path": "/tmp/a5-n6-field-current.json",
+      "bytes": 1031,
+      "sha256": "6a80a67149237621c057616367f07f08a081c8e8f9afc14372874757f3e94d9d"
+    },
+    {
+      "path": "/tmp/a5-n6-nodes-pilot.json",
+      "bytes": 141321,
+      "sha256": "a0330d2921bd08a51f2eb13ebcf5e2ebe3338730309ec620ca2bb76fb9802c26"
+    },
+    {
+      "path": "/tmp/a5-n6-nodes-frozen.json",
+      "bytes": 141322,
+      "sha256": "0f10acc39369cff33b0f4d798c3e19c5710d2dd404850e9aeff6eb008631420a"
+    },
+    {
+      "path": "/tmp/a5-n6-spatial-pilot.json.gz",
+      "bytes": 71245,
+      "sha256": "155ca627bcbc8814a1471fd720ada6f9fa15937318feddb40293c833a521301f"
+    },
+    {
+      "path": "/tmp/a5-n6-boundary-pilot.json",
+      "bytes": 526696,
+      "sha256": "ab11e0577cf76518171b2b594831b5e84108f999e21b95f96d8a297d5f49b88d"
+    }
+  ],
+  "independent_status": "COMPLETE: fresh producer rebuilt all28 cones without node-file; matching full checker passed; sequential developer-pair full positive and all38 controls passed; all8 frozen source/schema/checker identities unchanged after exit; exact decoded mathematical equality established.",
+  "cold_storage": {
+    "status": "PENDING_AC_DESTINATION",
+    "retention": "Nonessential intermediate diagnostics retained in/tmp only; final essential developer artifacts are within individual limits.",
+    "retrieval_limit": "/tmp is session-local, not durable cold storage."
+  },
+  "updated_utc": "2026-11-01T11:40:28.324078+00:00",
+  "completed_checker_outputs": [
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_checker_n6_developer.json",
+      "bytes": 13396,
+      "sha256": "e83802f689618f423df5bd877dc0620fa6aaaacea216b8667a55f70f183de10e",
+      "accepted": true,
+      "count_certified": true,
+      "global_argmax_verified": true,
+      "all_controls_passed": null
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_checker_n6_controls.json",
+      "bytes": 6335,
+      "sha256": "beb751e64c00cc05a72aac276c018aa08cac6f7c58cba63944a9a57a397c7778",
+      "accepted": null,
+      "count_certified": null,
+      "global_argmax_verified": null,
+      "all_controls_passed": true
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n6_checker.json",
+      "bytes": 13396,
+      "sha256": "b4b99f4c739dce3e98d336645ca092912b91f5193482518da12f23bc377d2018",
+      "accepted": true,
+      "count_certified": true,
+      "global_argmax_verified": true,
+      "all_controls_passed": null
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n6_controls.json",
+      "bytes": 6334,
+      "sha256": "48d0fb053ac064e5d0a4abfeb30d878a3dae665538e52d7d4fe7994c40ca5984",
+      "accepted": null,
+      "count_certified": null,
+      "global_argmax_verified": null,
+      "all_controls_passed": true
+    }
+  ],
+  "claim_status": {
+    "count_theory41": "PROVED",
+    "global_theory42": "PROVED",
+    "required_part2_Claude_audit": "PENDING",
+    "primary_table3_comparison": "candidate correction n6 certified25/41 vs printed23/39; no author contact"
+  },
+  "verification_files": [
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_checker_n6.py",
+      "bytes": 60892,
+      "sha256": "34d8c0b7afb261d5f082022f49a84ec6e741f50de31904da5f4221f02f9673c8"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_checker_n6_controls.py",
+      "bytes": 10953,
+      "sha256": "fd926f0d390ab2336476d054bfcee89aba97c624487f8acd0e64491c664633e0"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/independent-checks-a5-n6-checker.md",
+      "bytes": 15027,
+      "sha256": "709f147bd4b8b1c51eb869d548e5aedb04f92f353b645246b9f8c5f78913bedb"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/independent-execution-a5-n6.md",
+      "bytes": 13359,
+      "sha256": "f13b16af6b955aa2240d708fad52abc28a5152430368f36ac2a9550699274374"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_checker_n6_developer.json",
+      "bytes": 13396,
+      "sha256": "e83802f689618f423df5bd877dc0620fa6aaaacea216b8667a55f70f183de10e"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_checker_n6_controls.json",
+      "bytes": 6335,
+      "sha256": "beb751e64c00cc05a72aac276c018aa08cac6f7c58cba63944a9a57a397c7778"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n6_certificate.json.gz",
+      "bytes": 414047,
+      "sha256": "c042401f3d8c3e28d045fed9855f3b7817840f68491d8d686cdcd2c587cd48e1"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n6_producer.jsonl",
+      "bytes": 7657,
+      "sha256": "8e493e5a40c36a9ec4bd28ec0d0b645c9dac1625c89268e5a6b0adbc77eb3abd"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n6_global.json",
+      "bytes": 7077,
+      "sha256": "7135a483a834b66ab60608b1e682ede1af9878c325fef06f74ace7d6077f1dcc"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n6_checker.json",
+      "bytes": 13396,
+      "sha256": "b4b99f4c739dce3e98d336645ca092912b91f5193482518da12f23bc377d2018"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n6_controls.json",
+      "bytes": 6334,
+      "sha256": "48d0fb053ac064e5d0a4abfeb30d878a3dae665538e52d7d4fe7994c40ca5984"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_n6_literature-comparison.md",
+      "bytes": 3680,
+      "sha256": "7a13b48afc8471f22e6cb50d05789d47bf3b988b7c07f7727cd007c70642f62d"
+    }
+  ]
+}

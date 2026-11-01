@@ -1,0 +1,681 @@
+{
+ "reservation_commit": "103ee71e101265ca4133c7ffea8c0e48fa840109",
+ "base": "67bd07c0867d8d49eb104942237d7f51a7d9f77d",
+ "scientific_candidate": "4265bb94f987ce77d89cd5e15a8c435cbd1411d0",
+ "response": "e1581b3d697610be5eb647c594e7d66fcbc61352",
+ "mapping": {
+  "PD-T?proof-attempts-2-codex-01": "PD-T156",
+  "PD-T?proof-attempts-2-codex-02": "PD-T157",
+  "PD-T?proof-attempts-2-codex-03": "PD-T158",
+  "PD-T?proof-attempts-2-codex-04": "PD-T159",
+  "PD-T?proof-attempts-2-codex-05": "PD-T160",
+  "PD-T?proof-attempts-2-codex-06": "PD-T161",
+  "PD-T?proof-attempts-2-codex-07": "PD-T162",
+  "PD-T?proof-attempts-2-codex-08": "PD-T163",
+  "PD-T?proof-attempts-2-codex-09": "PD-T164",
+  "PD-T?proof-attempts-2-codex-10": "PD-T165",
+  "PD-T?proof-attempts-2-codex-11": "PD-T166",
+  "PD-T?proof-attempts-2-codex-15": "PD-T167",
+  "PD-T?proof-attempts-2-codex-16": "PD-T168",
+  "PD-T?proof-attempts-2-codex-17": "PD-T169",
+  "PD-T?proof-attempts-2-codex-18": "PD-T170",
+  "PD-T?proof-attempts-2-codex-19": "PD-T171",
+  "PD-T?proof-attempts-2-codex-40": "PD-T172",
+  "PD-T?proof-attempts-2-codex-41": "PD-T173",
+  "PD-T?proof-attempts-2-codex-42": "PD-T174",
+  "PD-T?proof-attempts-2-codex-50": "PD-T175",
+  "PD-T?proof-attempts-2-codex-51": "PD-T176",
+  "PD-T?proof-attempts-2-codex-52": "PD-T177",
+  "PD-T?proof-attempts-2-codex-53": "PD-T178",
+  "PD-T?proof-attempts-2-codex-60": "PD-T179",
+  "PD-T?proof-attempts-2-codex-61": "PD-T180",
+  "PD-T?proof-attempts-2-codex-62": "PD-T181",
+  "PD-T?proof-attempts-2-codex-63": "PD-T182",
+  "PD-T?proof-attempts-2-codex-64": "PD-T183",
+  "PD-T?proof-attempts-2-codex-65": "PD-T184",
+  "PD-T?proof-attempts-2-codex-70": "PD-T185",
+  "PD-T?proof-attempts-2-codex-71": "PD-T186",
+  "PD-T?proof-attempts-2-codex-72": "PD-T187",
+  "PD-T?proof-attempts-2-codex-73": "PD-T188",
+  "PD-T?proof-attempts-2-codex-74": "PD-T189",
+  "PD-T?proof-attempts-2-codex-75": "PD-T190",
+  "PD-T?proof-attempts-2-codex-76": "PD-T191",
+  "PD-T?proof-attempts-2-codex-77": "PD-T192",
+  "PD-T?proof-attempts-2-codex-80": "PD-T193",
+  "PD-T?proof-attempts-2-codex-90": "PD-T194",
+  "PD-T?proof-attempts-2-codex-91": "PD-T195",
+  "PD-T?proof-attempts-2-codex-92": "PD-T196",
+  "PD-T?proof-attempts-2-codex-93": "PD-T197",
+  "PD-N?proof-attempts-2-codex-01": "PD-N072",
+  "PD-N?proof-attempts-2-codex-02": "PD-N073",
+  "IDEA?proof-attempts-2-codex-a2-product": "IDEA-286",
+  "IDEA?proof-attempts-2-codex-a2-positive": "IDEA-287",
+  "IDEA?proof-attempts-2-codex-a2-square": "IDEA-288",
+  "IDEA?proof-attempts-2-codex-a2-coarse": "IDEA-289",
+  "IDEA?proof-attempts-2-codex-a5-n3": "IDEA-290",
+  "IDEA?proof-attempts-2-codex-n4-01": "IDEA-291",
+  "IDEA?proof-attempts-2-codex-n4-02": "IDEA-292",
+  "IDEA?proof-attempts-2-codex-n5-generic": "IDEA-293",
+  "IDEA?proof-attempts-2-codex-n6-field": "IDEA-294",
+  "IDEA?proof-attempts-2-codex-n6-cover": "IDEA-295",
+  "IDEA?proof-attempts-2-codex-n7-field": "IDEA-296",
+  "IDEA?proof-attempts-2-codex-n7-roots": "IDEA-297",
+  "IDEA?proof-attempts-2-codex-n8-field": "IDEA-298",
+  "IDEA?proof-attempts-2-codex-n8-cover": "IDEA-299",
+  "IDEA?proof-attempts-2-codex-n8-gradient": "IDEA-300",
+  "IDEA?proof-attempts-2-codex-n8-reflect": "IDEA-301",
+  "IDEA?proof-attempts-2-codex-n8-witness": "IDEA-302",
+  "IDEA?proof-attempts-2-codex-a4-edges": "IDEA-303",
+  "IDEA?proof-attempts-2-codex-a4-g": "IDEA-304",
+  "IDEA?proof-attempts-2-codex-a4-envelope": "IDEA-305",
+  "IDEA?proof-attempts-2-codex-b3-c1": "IDEA-306",
+  "IDEA?proof-attempts-2-codex-b3-c2": "IDEA-307",
+  "IDEA?proof-attempts-2-codex-b3-c3": "IDEA-308",
+  "IDEA?proof-attempts-2-codex-b1-detector": "IDEA-309",
+  "IDEA?proof-attempts-2-codex-b1-rank": "IDEA-310",
+  "IDEA?proof-attempts-2-codex-b1-taper": "IDEA-311"
+ },
+ "records": {
+  "PD-T?proof-attempts-2-codex-01": {
+   "final": "PD-T156",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-01-corner-leading-lower.md",
+   "title": "The corner leading lower bound",
+   "status": "PROVED",
+   "local_number": "01"
+  },
+  "PD-T?proof-attempts-2-codex-02": {
+   "final": "PD-T157",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-02-corner-explicit-leading.md",
+   "title": "An explicit two-sided corner leading term",
+   "status": "PROVED",
+   "local_number": "02"
+  },
+  "PD-T?proof-attempts-2-codex-03": {
+   "final": "PD-T158",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-03-corner-log-coefficient.md",
+   "title": "The corner logarithmic coefficient with explicit remainder",
+   "status": "PROVED",
+   "local_number": "03"
+  },
+  "PD-T?proof-attempts-2-codex-04": {
+   "final": "PD-T159",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-04-corner-product-comparison.md",
+   "title": "A bounded comparison with a squared Chebyshev sum",
+   "status": "PROVED",
+   "local_number": "04"
+  },
+  "PD-T?proof-attempts-2-codex-05": {
+   "final": "PD-T160",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-05-cubic-finite-reduction.md",
+   "title": "Finite signed-cubic reduction for strict maxima on a square",
+   "status": "PROVED",
+   "local_number": "05"
+  },
+  "PD-T?proof-attempts-2-codex-06": {
+   "final": "PD-T161",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-06-degree-three-maxima-count.md",
+   "title": "Degree-three Padua strict-local-maxima count",
+   "status": "PROVED",
+   "local_number": "06"
+  },
+  "PD-T?proof-attempts-2-codex-07": {
+   "final": "PD-T162",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-07-degree-three-global-argmax.md",
+   "title": "The global Padua argmax for degree three",
+   "status": "PROVED",
+   "local_number": "07"
+  },
+  "PD-T?proof-attempts-2-codex-08": {
+   "final": "PD-T163",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-08-quartic-finite-reduction.md",
+   "title": "Finite reduction retaining singular quartic critical points",
+   "status": "PROVED",
+   "local_number": "08"
+  },
+  "PD-T?proof-attempts-2-codex-09": {
+   "final": "PD-T164",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-09-spatial-certificate-correctness.md",
+   "title": "Correctness of the spatial and edge-arrangement certificate",
+   "status": "PROVED",
+   "local_number": "09"
+  },
+  "PD-T?proof-attempts-2-codex-10": {
+   "final": "PD-T165",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-10-degree-four-maxima-count.md",
+   "title": "Degree-four strict local maxima count",
+   "status": "PROVED",
+   "local_number": "10"
+  },
+  "PD-T?proof-attempts-2-codex-11": {
+   "final": "PD-T166",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-11-degree-four-global-argmax.md",
+   "title": "Degree-four global Lebesgue maximum at the non-node corners",
+   "status": "PROVED",
+   "local_number": "11"
+  },
+  "PD-T?proof-attempts-2-codex-15": {
+   "final": "PD-T167",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-15-exact-node-cone.md",
+   "title": "Exact physical node-cone exclusion",
+   "status": "PROVED",
+   "local_number": "15"
+  },
+  "PD-T?proof-attempts-2-codex-16": {
+   "final": "PD-T168",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-16-degree-five-maxima-count.md",
+   "title": "Degree-five Padua maxima-count certification",
+   "status": "PROVED",
+   "local_number": "16"
+  },
+  "PD-T?proof-attempts-2-codex-17": {
+   "final": "PD-T169",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-17-degree-five-global-argmax.md",
+   "title": "Degree-five global Padua argmax",
+   "status": "PROVED",
+   "local_number": "17"
+  },
+  "PD-T?proof-attempts-2-codex-18": {
+   "final": "PD-T170",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-18-generic-spatial-certificate.md",
+   "title": "Degree-independent spatial certificate with exact node cones",
+   "status": "PROVED",
+   "local_number": "18"
+  },
+  "PD-T?proof-attempts-2-codex-19": {
+   "final": "PD-T171",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-19-quadratic-reproduction-node-gap.md",
+   "title": "Quadratic reproduction forces a positive physical node gap",
+   "status": "PROVED",
+   "local_number": "19"
+  },
+  "PD-T?proof-attempts-2-codex-40": {
+   "final": "PD-T172",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-40-degree-six-principal-field.md",
+   "title": "Exact tensor representation and principal embedding for degree six",
+   "status": "PROVED",
+   "local_number": "40"
+  },
+  "PD-T?proof-attempts-2-codex-41": {
+   "final": "PD-T173",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-41-degree-six-maxima-count.md",
+   "title": "Degree-six strict local maxima count",
+   "status": "PROVED",
+   "local_number": "41"
+  },
+  "PD-T?proof-attempts-2-codex-42": {
+   "final": "PD-T174",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-42-degree-six-global-argmax.md",
+   "title": "Degree-six global Lebesgue maximum at the non-node corners",
+   "status": "PROVED",
+   "local_number": "42"
+  },
+  "PD-T?proof-attempts-2-codex-50": {
+   "final": "PD-T175",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-50-degree-seven-principal-field.md",
+   "title": "Degree-seven tensor field and its principal real embedding",
+   "status": "PROVED",
+   "local_number": "50"
+  },
+  "PD-T?proof-attempts-2-codex-51": {
+   "final": "PD-T176",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-51-degree-seven-maxima-count.md",
+   "title": "Degree-seven Padua maxima-count certification",
+   "status": "PROVED",
+   "local_number": "51"
+  },
+  "PD-T?proof-attempts-2-codex-52": {
+   "final": "PD-T177",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-52-degree-seven-global-argmax.md",
+   "title": "Degree-seven global Padua argmax",
+   "status": "PROVED",
+   "local_number": "52"
+  },
+  "PD-T?proof-attempts-2-codex-53": {
+   "final": "PD-T178",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-53-uniform-gradient-leaf.md",
+   "title": "Uniform compatible-pattern gradient exclusion",
+   "status": "PROVED",
+   "local_number": "53"
+  },
+  "PD-T?proof-attempts-2-codex-60": {
+   "final": "PD-T179",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-60-degree-eight-principal-field.md",
+   "title": "Degree-eight Padua tensor field and specified real embedding",
+   "status": "PROVED",
+   "local_number": "60"
+  },
+  "PD-T?proof-attempts-2-codex-61": {
+   "final": "PD-T180",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-61-degree-eight-maxima-count.md",
+   "title": "Degree-eight strict-local-maxima count",
+   "status": "OPEN",
+   "local_number": "61"
+  },
+  "PD-T?proof-attempts-2-codex-62": {
+   "final": "PD-T181",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-62-degree-eight-global-argmax.md",
+   "title": "Degree-eight global corner maximum",
+   "status": "OPEN",
+   "local_number": "62"
+  },
+  "PD-T?proof-attempts-2-codex-63": {
+   "final": "PD-T182",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-63-degree-eight-reflection.md",
+   "title": "Exact degree-eight x-reflection identities",
+   "status": "PROVED",
+   "local_number": "63"
+  },
+  "PD-T?proof-attempts-2-codex-64": {
+   "final": "PD-T183",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-64-degree-eight-interior-lower-bound.md",
+   "title": "At least44 strict interior maxima at degree8",
+   "status": "PROVED",
+   "local_number": "64"
+  },
+  "PD-T?proof-attempts-2-codex-65": {
+   "final": "PD-T184",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-65-degree-eight-exact-interior-count.md",
+   "title": "Exactly44 strict interior maxima at degree8",
+   "status": "OPEN",
+   "local_number": "65"
+  },
+  "PD-T?proof-attempts-2-codex-70": {
+   "final": "PD-T185",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-70-all-edge-kernel-formula.md",
+   "title": "Exact Padua formula on all four edges",
+   "status": "PROVED",
+   "local_number": "70"
+  },
+  "PD-T?proof-attempts-2-codex-71": {
+   "final": "PD-T186",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-71-complementary-edge-grid-gap.md",
+   "title": "Positive corner gap on complementary edge-grid points",
+   "status": "PROVED",
+   "local_number": "71"
+  },
+  "PD-T?proof-attempts-2-codex-72": {
+   "final": "PD-T187",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-72-central-grid-positive-gap.md",
+   "title": "A positive limiting gap at central complementary edge points",
+   "status": "PROVED",
+   "local_number": "72"
+  },
+  "PD-T?proof-attempts-2-codex-73": {
+   "final": "PD-T188",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-73-gap-constant-series.md",
+   "title": "Positive one-dimensional and alternating-series formulas for g",
+   "status": "PROVED",
+   "local_number": "73"
+  },
+  "PD-T?proof-attempts-2-codex-74": {
+   "final": "PD-T189",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-74-global-edge-phase-localization.md",
+   "title": "Uniform leading phase bound and central phase localization",
+   "status": "PROVED",
+   "local_number": "74"
+  },
+  "PD-T?proof-attempts-2-codex-75": {
+   "final": "PD-T190",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-75-local-edge-phase-bound.md",
+   "title": "Vanishing gain of the primitive at small phase",
+   "status": "PROVED",
+   "local_number": "75"
+  },
+  "PD-T?proof-attempts-2-codex-76": {
+   "final": "PD-T191",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-76-central-triangle-defect-stability.md",
+   "title": "Joint stability of the central triangle defect",
+   "status": "PROVED",
+   "local_number": "76"
+  },
+  "PD-T?proof-attempts-2-codex-77": {
+   "final": "PD-T192",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-77-central-edge-envelope-expansion.md",
+   "title": "The central vertical-edge envelope has a positive limiting corner gap",
+   "status": "PROVED",
+   "local_number": "77"
+  },
+  "PD-T?proof-attempts-2-codex-80": {
+   "final": "PD-T193",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-80-uniform-pivot-common-cluster.md",
+   "title": "Uniform parent pivots exclude a collapsing common joint cluster",
+   "status": "PROVED",
+   "local_number": "80"
+  },
+  "PD-T?proof-attempts-2-codex-90": {
+   "final": "PD-T194",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-90-pole-topform-detection.md",
+   "title": "Pole top form and detection of all lower-block leakage",
+   "status": "PROVED",
+   "local_number": "90"
+  },
+  "PD-T?proof-attempts-2-codex-91": {
+   "final": "PD-T195",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-91-pole-only-generic-rank.md",
+   "title": "A coalescent structural witness for pole-only generic rank",
+   "status": "PROVED",
+   "local_number": "91"
+  },
+  "PD-T?proof-attempts-2-codex-92": {
+   "final": "PD-T196",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-92-generic-ldiag-constrained-window.md",
+   "title": "B1 for generic real exterior parallel diagonal poles",
+   "status": "PROVED",
+   "local_number": "92"
+  },
+  "PD-T?proof-attempts-2-codex-93": {
+   "final": "PD-T197",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-93-source-ldiag-taper.md",
+   "title": "The source Ldiag taper has only finitely many exceptional parameters",
+   "status": "PROVED",
+   "local_number": "93"
+  },
+  "PD-N?proof-attempts-2-codex-01": {
+   "final": "PD-N072",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-N01-computed-section-box-count.md",
+   "title": "The symmetrised-product count fails inside positive-pivot computed sections",
+   "status": "PROVED",
+   "local_number": "N01"
+  },
+  "PD-N?proof-attempts-2-codex-02": {
+   "final": "PD-N073",
+   "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-N02-common-cluster-route-obstruction.md",
+   "title": "A common collapsing cluster cannot retain uniform parent pivots",
+   "status": "PROVED",
+   "local_number": "N02"
+  }
+ },
+ "ideas": [
+  {
+   "local": "IDEA?proof-attempts-2-codex-a2-product",
+   "final": "IDEA-286",
+   "title": "Prescribed sheared product-U route",
+   "disposition": "deferred",
+   "attempt": "topics/padua-proof-attempts-2-20261101/attempts/T-A2.md",
+   "records": [
+    "PD-T156",
+    "PD-T157",
+    "PD-T158",
+    "PD-T159"
+   ]
+  },
+  {
+   "local": "IDEA?proof-attempts-2-codex-a2-positive",
+   "final": "IDEA-287",
+   "title": "Positive corner Cauchy rewrite",
+   "disposition": "retained",
+   "attempt": "topics/padua-proof-attempts-2-20261101/attempts/T-A2.md",
+   "records": [
+    "PD-T159"
+   ]
+  },
+  {
+   "local": "IDEA?proof-attempts-2-codex-a2-square",
+   "final": "IDEA-288",
+   "title": "Same-mesh square and bounded deformation",
+   "disposition": "retained",
+   "attempt": "topics/padua-proof-attempts-2-20261101/attempts/T-A2.md",
+   "records": [
+    "PD-T159"
+   ]
+  },
+  {
+   "local": "IDEA?proof-attempts-2-codex-a2-coarse",
+   "final": "IDEA-289",
+   "title": "Coarse mean-value estimate near adjacent endpoints",
+   "disposition": "abandoned",
+   "attempt": "topics/padua-proof-attempts-2-20261101/attempts/T-A2.md",
+   "records": [
+    "PD-T159"
+   ]
+  },
+  {
+   "local": "IDEA?proof-attempts-2-codex-a5-n3",
+   "final": "IDEA-290",
+   "title": "Complete cubic sign-arrangement certification",
+   "disposition": "retained",
+   "attempt": "topics/padua-proof-attempts-2-20261101/attempts/T-A5.md",
+   "records": [
+    "PD-T160",
+    "PD-T161",
+    "PD-T162"
+   ]
+  },
+  {
+   "local": "IDEA?proof-attempts-2-codex-n4-01",
+   "final": "IDEA-291",
+   "title": "Quartic finite elimination retaining singular points",
+   "disposition": "retained",
+   "attempt": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n4.md",
+   "records": [
+    "PD-T163"
+   ]
+  },
+  {
+   "local": "IDEA?proof-attempts-2-codex-n4-02",
+   "final": "IDEA-292",
+   "title": "Simultaneous spatial sign enumeration",
+   "disposition": "retained",
+   "attempt": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n4.md",
+   "records": [
+    "PD-T164",
+    "PD-T165",
+    "PD-T166"
+   ]
+  },
+  {
+   "local": "IDEA?proof-attempts-2-codex-n5-generic",
+   "final": "IDEA-293",
+   "title": "Exact node cones and generic spatial certificate",
+   "disposition": "retained",
+   "attempt": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n5.md",
+   "records": [
+    "PD-T167",
+    "PD-T168",
+    "PD-T169",
+    "PD-T170",
+    "PD-T171"
+   ]
+  },
+  {
+   "local": "IDEA?proof-attempts-2-codex-n6-field",
+   "final": "IDEA-294",
+   "title": "Principal exact tensor field for degree six",
+   "disposition": "retained",
+   "attempt": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n6.md",
+   "records": [
+    "PD-T172"
+   ]
+  },
+  {
+   "local": "IDEA?proof-attempts-2-codex-n6-cover",
+   "final": "IDEA-295",
+   "title": "Complete degree-six spatial and boundary coverage",
+   "disposition": "retained",
+   "attempt": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n6.md",
+   "records": [
+    "PD-T173",
+    "PD-T174"
+   ]
+  },
+  {
+   "local": "IDEA?proof-attempts-2-codex-n7-field",
+   "final": "IDEA-296",
+   "title": "Degree-seven formal field and complete certification",
+   "disposition": "retained",
+   "attempt": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n7.md",
+   "records": [
+    "PD-T175",
+    "PD-T176",
+    "PD-T177"
+   ]
+  },
+  {
+   "local": "IDEA?proof-attempts-2-codex-n7-roots",
+   "final": "IDEA-297",
+   "title": "Tensor tower norms with Arb proposals and exact Sturm checks",
+   "disposition": "retained",
+   "attempt": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n7.md",
+   "records": [
+    "PD-T176",
+    "PD-T177"
+   ]
+  },
+  {
+   "local": "IDEA?proof-attempts-2-codex-n8-field",
+   "final": "IDEA-298",
+   "title": "Degree-eight exact tensor field",
+   "disposition": "retained",
+   "attempt": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n8.md",
+   "records": [
+    "PD-T179"
+   ]
+  },
+  {
+   "local": "IDEA?proof-attempts-2-codex-n8-cover",
+   "final": "IDEA-299",
+   "title": "Degree-eight complete interior/boundary continuation",
+   "disposition": "deferred",
+   "attempt": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n8.md",
+   "records": [
+    "PD-T180",
+    "PD-T181",
+    "PD-T184"
+   ]
+  },
+  {
+   "local": "IDEA?proof-attempts-2-codex-n8-gradient",
+   "final": "IDEA-300",
+   "title": "Universal compatible-gradient leaf",
+   "disposition": "retained",
+   "attempt": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n8.md",
+   "records": [
+    "PD-T178"
+   ]
+  },
+  {
+   "local": "IDEA?proof-attempts-2-codex-n8-reflect",
+   "final": "IDEA-301",
+   "title": "Exact x-reflection witness construction",
+   "disposition": "retained",
+   "attempt": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n8.md",
+   "records": [
+    "PD-T182",
+    "PD-T183"
+   ]
+  },
+  {
+   "local": "IDEA?proof-attempts-2-codex-n8-witness",
+   "final": "IDEA-302",
+   "title": "Axis handling and standalone interior witness fallback",
+   "disposition": "retained",
+   "attempt": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n8.md",
+   "records": [
+    "PD-T183"
+   ]
+  },
+  {
+   "local": "IDEA?proof-attempts-2-codex-a4-edges",
+   "final": "IDEA-303",
+   "title": "All-edge kernel and complementary-grid defect",
+   "disposition": "retained",
+   "attempt": "topics/padua-proof-attempts-2-20261101/attempts/T-A4a.md",
+   "records": [
+    "PD-T185",
+    "PD-T186"
+   ]
+  },
+  {
+   "local": "IDEA?proof-attempts-2-codex-a4-g",
+   "final": "IDEA-304",
+   "title": "Positive central-grid limit and gap-constant series",
+   "disposition": "retained",
+   "attempt": "topics/padua-proof-attempts-2-20261101/attempts/T-A4a.md",
+   "records": [
+    "PD-T187",
+    "PD-T188"
+   ]
+  },
+  {
+   "local": "IDEA?proof-attempts-2-codex-a4-envelope",
+   "final": "IDEA-305",
+   "title": "Uniform phase/gain/defect assembly for the central envelope",
+   "disposition": "retained",
+   "attempt": "topics/padua-proof-attempts-2-20261101/attempts/T-A4a.md",
+   "records": [
+    "PD-T189",
+    "PD-T190",
+    "PD-T191",
+    "PD-T192"
+   ]
+  },
+  {
+   "local": "IDEA?proof-attempts-2-codex-b3-c1",
+   "final": "IDEA-306",
+   "title": "Literal common shrinking full-residual cluster",
+   "disposition": "REJECTED: failed",
+   "attempt": "topics/padua-proof-attempts-2-20261101/attempts/T-B3.md",
+   "records": [
+    "PD-T193",
+    "PD-N073"
+   ]
+  },
+  {
+   "local": "IDEA?proof-attempts-2-codex-b3-c2",
+   "final": "IDEA-307",
+   "title": "Minimal positive computed-section screen",
+   "disposition": "equivalent: consolidated into C3",
+   "attempt": "topics/padua-proof-attempts-2-20261101/attempts/T-B3.md",
+   "records": [
+    "PD-N072"
+   ]
+  },
+  {
+   "local": "IDEA?proof-attempts-2-codex-b3-c3",
+   "final": "IDEA-308",
+   "title": "Small positive fourth atom and shrinking isolated-node box",
+   "disposition": "retained",
+   "attempt": "topics/padua-proof-attempts-2-20261101/attempts/T-B3.md",
+   "records": [
+    "PD-N072"
+   ]
+  },
+  {
+   "local": "IDEA?proof-attempts-2-codex-b1-detector",
+   "final": "IDEA-309",
+   "title": "Next-pole top-form leakage detector",
+   "disposition": "retained",
+   "attempt": "topics/padua-proof-attempts-2-20261101/attempts/T-B1.md",
+   "records": [
+    "PD-T194"
+   ]
+  },
+  {
+   "local": "IDEA?proof-attempts-2-codex-b1-rank",
+   "final": "IDEA-310",
+   "title": "Coalescent projective witness and pole-only minors",
+   "disposition": "retained",
+   "attempt": "topics/padua-proof-attempts-2-20261101/attempts/T-B1.md",
+   "records": [
+    "PD-T195",
+    "PD-T196"
+   ]
+  },
+  {
+   "local": "IDEA?proof-attempts-2-codex-b1-taper",
+   "final": "IDEA-311",
+   "title": "Literal source taper and finite real-exponential exceptions",
+   "disposition": "retained",
+   "attempt": "topics/padua-proof-attempts-2-20261101/attempts/T-B1.md",
+   "records": [
+    "PD-T197"
+   ]
+  }
+ ],
+ "permanent_gaps": {
+  "PD-T": "198\u2013205",
+  "PD-N": "074\u2013077",
+  "IDEA": "312\u2013315",
+  "LIT": "no range"
+ }
+}

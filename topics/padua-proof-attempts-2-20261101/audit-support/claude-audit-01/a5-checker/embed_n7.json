@@ -1,0 +1,17 @@
+{
+ "n": 7,
+ "cardinals": 36,
+ "node_checks": 72,
+ "cardinal_value_checks": 324,
+ "max_node_enclosure_width": "2.351e-38",
+ "max_cardinal_enclosure_width": "9.8477e-36",
+ "lambda_corners_numeric": {
+  "(-1, -1)": "5.835657710636253414275389",
+  "(-1, 1)": "5.835657710636253414275389",
+  "(1, -1)": "1.0",
+  "(1, 1)": "1.0"
+ },
+ "verifier_build_seconds": 26.75,
+ "seconds": 27.85,
+ "passed": true
+}

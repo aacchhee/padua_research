@@ -1,0 +1,38 @@
+{
+  "accepted": false,
+  "actual_cached_exit": 1,
+  "actual_seconds": 1849.1825140999972,
+  "boundary_v2_actual_exit": 124,
+  "boundary_v2_final_artifact_exists": false,
+  "complete_interior_receipt_exists": false,
+  "count_certified": false,
+  "deadline_utc": "2026-11-01T15:19:00Z",
+  "files": {
+    "/tmp/a5-independent-n8-cached-driver.log": {
+      "bytes": 1970,
+      "sha256": "0642275b84d832bde0ac3da8207856d660b5566a4e448dd5db5a40cb8a152e7e"
+    },
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_boundary_v2_record.json": {
+      "bytes": 2058,
+      "sha256": "998ab50a9e7a3554bf62b3017114ff58d5d6e9f5b53086e298ee6b6a79299945"
+    },
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_cached_driver.jsonl": {
+      "bytes": 10359,
+      "sha256": "fcdac760a68983b15bec181edf421a8a7ab37dcf1ce56b6837561f815dde2b7a"
+    },
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_cached_full.json": {
+      "bytes": 2065,
+      "sha256": "f9b0da570c3112e85f4d86f5c60a69a1b119f0f021365430b383ee45f1d61dee"
+    }
+  },
+  "format": "a5-n8-independent-final-timebox-record-v1",
+  "input_raw_sha256": "2992e3fad6df217e76f0c345c8b38109d233358c94d98715b90545105e49feb9",
+  "last_emitted_progress_diagnostic_only": {
+    "verified_leaves": 150000,
+    "verified_patterns": 523805
+  },
+  "ready_exists": false,
+  "real_join_global_repack_executed": false,
+  "scope": "No complete interior/count/global acceptance; partial progress is not a completeness certificate. No mathematics/restart/optimization after the A5 deadline.",
+  "source_guard_27_after": true
+}

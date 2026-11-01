@@ -1,0 +1,114 @@
+{
+ "purpose": "mechanical preparation verification, not mathematical audit",
+ "base": "67bd07c0867d8d49eb104942237d7f51a7d9f77d",
+ "response": "e1581b3d697610be5eb647c594e7d66fcbc61352",
+ "mapping_count": 70,
+ "theory_count": 44,
+ "idea_count": 26,
+ "frozen_files_checked": 389,
+ "theory_files_metadata_only": 44,
+ "literal_blocks": 10,
+ "generated_bytes": 4967246,
+ "largest_generated": 637163,
+ "manifest": null,
+ "shared_outputs": [
+  {
+   "path": "ID_CROSSWALK.md",
+   "base_blob": "2e4fa8b6a39d9d82af547952ae5eef88b80f3e56",
+   "sha256": "4b9e50d4d01dddeb7a67e0062de047bf090288f478c9d6ec51d9adfcb33e4cfa",
+   "bytes": 294794
+  },
+  {
+   "path": "PAPER_MAP.md",
+   "base_blob": "46c33e2c98ca7bb2c7bba13c120880658fcb6d8b",
+   "sha256": "3e87042d13530430eafc968b7024dcfab2c7e8a9c613335b3c2aa0cca3cd3f3d",
+   "bytes": 5245
+  },
+  {
+   "path": "PROOF_STATUS.md",
+   "base_blob": "bd60a501ddf99112100908154d039b49613cad7e",
+   "sha256": "4d93f5d010758735555d4910cab7a411711a025818023b2f4166c399e8276718",
+   "bytes": 145504
+  },
+  {
+   "path": "RESULTS.md",
+   "base_blob": "461258c46c2b37fddf68ef67d582d67f6ba70f86",
+   "sha256": "07e99a29a256c1190000ba42a6658996d05b61835b4fec4f26a6b6122165a017",
+   "bytes": 5297
+  },
+  {
+   "path": "literature/INDEX.md",
+   "base_blob": "b6fad245a44916d958b0d810653522a1036c5281",
+   "sha256": "9b7759b44e6b4a4fa76d7cecc443ec1535b491ad477a1b46bd5adaeb27bdc579",
+   "bytes": 269974
+  },
+  {
+   "path": "results/padua-proof-attempts-2-20261101.md",
+   "base_blob": null,
+   "sha256": "b0dade49659cd944c9b79034e278466566f8a9e7863c3e5670254d54baadc6e2",
+   "bytes": 1764
+  },
+  {
+   "path": "state/CURRENT.md",
+   "base_blob": "df87d6738f3948fd3e59233c53fae083504614a1",
+   "sha256": "dfcd63460ba86fe821f8bcaa3d36cb4af4e9d42b250b4e2c68a8abdb710f8145",
+   "bytes": 17141
+  },
+  {
+   "path": "state/IDEAS.md",
+   "base_blob": "52e9e42b39cd35f5aab7bb200c57b2bc73d56838",
+   "sha256": "40ec132f73e55f82944ae497d2405f345a9f251b99702055a2c7baec7a4426df",
+   "bytes": 189069
+  },
+  {
+   "path": "topics/README.md",
+   "base_blob": "02d4868f3008ebfdf632d489ec3e6d63483319ca",
+   "sha256": "77cde9a6eb5e1b005363fe062a6e1623ee3e1832677504cedcb5101eacab4f97",
+   "bytes": 2518
+  },
+  {
+   "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+   "base_blob": "6b37460cdf0e419545839168d1dbae82158c42cd",
+   "sha256": "d16a180cdec572908165a058d978feb40fcc8591284e423459eb1c53fd7019a1",
+   "bytes": 28514
+  },
+  {
+   "path": "topics/programme-ideas-20261031/OPEN_TARGETS.md",
+   "base_blob": "98f83956714b002e229cd9ad9b3c9072f19c4591",
+   "sha256": "2c53d7cbd317b6c4adb2976c4589586b00fc7d71df638a7debd6b1114a4d68b4",
+   "bytes": 26758
+  },
+  {
+   "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-04-padua-corner-expansion.md",
+   "base_blob": "7d44062ac48f73926c15999a7ce6a33bc0f4eb0c",
+   "sha256": "0cb7bf1f797f20a8c5dd5cf8f88aaf75571fdc2908ec46cc2eb15c04f190d499",
+   "bytes": 6844
+  },
+  {
+   "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-05-padua-corner-argmax.md",
+   "base_blob": "e05cbcee66ebf307d53a540979dd413ab5c54aeb",
+   "sha256": "39cb81f5934e0ed26e7559858e90e2ec6c7d1952814a00538c1b3daf0f50204b",
+   "bytes": 4102
+  },
+  {
+   "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-06-padua-lebesgue-maxima-counts.md",
+   "base_blob": "21f1268d1f3b7fb4eb1d423dfcd7ecb354a3b89c",
+   "sha256": "fbd92c0027c72ea5717213c54ff16c5b59b6b8210302cae523c4861961ba75bf",
+   "bytes": 9590
+  },
+  {
+   "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N01-symmetrised-product-inertia-count.md",
+   "base_blob": "0310faa2c757e13333c731b3fd286a6345a59400",
+   "sha256": "ff9da47dd88264a4ffa042fc8f23e21e11288b4fbe9389c2092fb42522e97b0d",
+   "bytes": 8196
+  },
+  {
+   "path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N02-windowed-rational-lanczos-instability.md",
+   "base_blob": "601b7d4be7d9ac272f231b0b49f7570a172f671c",
+   "sha256": "28d5e46605f1135bfc2f6c2926af70f6285400d4bb2f8941cbdaa78ef069b9bc",
+   "bytes": 6346
+  }
+ ],
+ "errors": [],
+ "passed": true
+}

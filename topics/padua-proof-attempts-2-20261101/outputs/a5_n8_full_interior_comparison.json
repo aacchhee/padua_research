@@ -1,0 +1,25 @@
+{
+  "all_remaining_fields_exactly_equal": true,
+  "canonical_equal_payload_sha256": "e02c672d7b72ff28eed910324e06d5a5f8038f9ad7345efa19c320d5644db676",
+  "closed_square_count_certified": false,
+  "format": "a5-n8-full-interior-independent-comparison-v1",
+  "inputs": [
+    {
+      "bytes": 637163,
+      "own_parent_input_sha256": "6eeed0de98794f18379a656fc7d3c6ef13485fe3eee3f43b9f382cd308d21f56",
+      "path": "/tmp/a5-n8-interior-reflected-v1.json.gz",
+      "sha256": "a3b4f278a322338fb65f60922b4251265288148e1a09fd22882215004e81c324"
+    },
+    {
+      "bytes": 637165,
+      "own_parent_input_sha256": "cd6827318e4dcd8065b2fda82c9a869591d8519ef44a64df94e1e83ade350ba9",
+      "path": "/tmp/a5-independent-n8-interior-reflected-v1.json.gz",
+      "sha256": "2992e3fad6df217e76f0c345c8b38109d233358c94d98715b90545105e49feb9"
+    }
+  ],
+  "interior_complete": true,
+  "removed_fields": [
+    "metadata.input_sha256"
+  ],
+  "scope": "exact whole ordinary interior JSON identity after removing ONLY metadata.input_sha256; no count/global acceptance"
+}

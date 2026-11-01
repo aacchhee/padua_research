@@ -1,0 +1,78 @@
+{
+  "adversarial_runner_sha256": "28353ea677c7a99c8a1ea1e8ed6f41afc27972bba19a1b5c0618ef7e09c12362",
+  "all_mutations_rejected": true,
+  "certificate_sha256": "401a99243ebeb7b3844216a47f8466bbb60086cbba71d2de2088d7626f532b2b",
+  "checker_sha256": "d32810f1b478315cd240f7f68c41177fd97836c8337aefd9de8aa90203884cde",
+  "negative_controls": [
+    {
+      "mutation": "one complete sign pattern omitted",
+      "reason": "all 1024 sign patterns are required",
+      "rejected": true
+    },
+    {
+      "mutation": "ordered sign pattern replaced by a duplicate",
+      "reason": "sign patterns missing, duplicated, or out of order",
+      "rejected": true
+    },
+    {
+      "mutation": "gradient factor identity altered",
+      "reason": "mask 1: false exact gradient division",
+      "rejected": true
+    },
+    {
+      "mutation": "one real projected coordinate root omitted",
+      "reason": "root partition omits or adds a real root",
+      "rejected": true
+    },
+    {
+      "mutation": "one Cartesian pair disposition omitted",
+      "reason": "mask 1: incomplete Cartesian pair coverage",
+      "rejected": true
+    },
+    {
+      "mutation": "pair disposition changed to unknown assertion",
+      "reason": "mask 1: unknown pair disposition 'assume_empty'",
+      "rejected": true
+    },
+    {
+      "mutation": "one entire edge omitted",
+      "reason": "all four edges required",
+      "rejected": true
+    },
+    {
+      "mutation": "one canonical edge sign pattern omitted",
+      "reason": "incomplete canonical edge sign-pattern coverage",
+      "rejected": true
+    },
+    {
+      "mutation": "one edge root disposition omitted",
+      "reason": "edge root dispositions are incomplete",
+      "rejected": true
+    },
+    {
+      "mutation": "one corner omitted",
+      "reason": "all four corners required",
+      "rejected": true
+    },
+    {
+      "mutation": "a nonnode corner asserted to be a node",
+      "reason": "claimed node corner is not a cardinal node",
+      "rejected": true
+    },
+    {
+      "mutation": "one flat-pattern global bound omitted",
+      "reason": "global flat-pattern bounds are incomplete",
+      "rejected": true
+    },
+    {
+      "mutation": "one flat-bound covering panel omitted",
+      "reason": "global flat bound needs all 32 supplied panels",
+      "rejected": true
+    },
+    {
+      "mutation": "a false flat-panel numerical upper bound supplied",
+      "reason": "global flat-panel upper bound failed",
+      "rejected": true
+    }
+  ]
+}

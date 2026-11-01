@@ -1,0 +1,74 @@
+{
+  "files": [
+    {
+      "bytes": 23249,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_continue.py",
+      "sha256": "96ce015c9d3d161030be8d8d0de7e2c20f8e21d31b718948734703f3667476ad"
+    },
+    {
+      "bytes": 7040,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_continue_controls.py",
+      "sha256": "2ac7e60d7f814eee58abfed8bd02b1a2581be79fb13a6d776f5cdab2761e16d0"
+    },
+    {
+      "bytes": 8311,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect.py",
+      "sha256": "84e3ca91689f671cb05f008d87cd4c1ce835392b715505070e5f45e60e166def"
+    },
+    {
+      "bytes": 4461,
+      "path": "topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_controls.py",
+      "sha256": "515efd319553af2b6c04c19d5cd8c09d29c50141112492718840df52a0b8448c"
+    },
+    {
+      "bytes": 9749,
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-63-degree-eight-reflection.md",
+      "sha256": "287aa76a05fad486eadc85a2abb1377b507c24ae6662cfb6fa92bb81a5446331"
+    },
+    {
+      "bytes": 33436,
+      "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A5-n8.md",
+      "sha256": "164c59a876fa233924981f8c718d07c90c6609ef83aead41a75de0eca033a941"
+    },
+    {
+      "bytes": 6894,
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-61-degree-eight-maxima-count.md",
+      "sha256": "b8aa4968b6a157020fa364f9c8f0e5eaa2f7af99d3c7a05b40bbaf2b5a85ad72"
+    },
+    {
+      "bytes": 2996,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_continuation_controls.json",
+      "sha256": "ed0b5af2766d7f6198753e08b7ea2bfb80b23ffc6b13767d7dc30743a1deaa03"
+    },
+    {
+      "bytes": 2415,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_reflection_controls.json",
+      "sha256": "7f2a7525df524e917061090e3c2a9ad630a46fb227975f5fce8298caf5d3e79b"
+    },
+    {
+      "bytes": 774,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_reflection_comparison.json",
+      "sha256": "0941ce38b2fb3b737411d7deef14775fd63a2e87e543f64cf12efca3eef493c1"
+    },
+    {
+      "bytes": 5829,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_reflection_checker_fixture.json",
+      "sha256": "4c4c0d06e4c711873c4853167298fed2d092aeb0bb469b0c0b5027805adf3b46"
+    },
+    {
+      "bytes": 5561,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_v3_run_record.json",
+      "sha256": "aa6520d81113c91f4ba5bd532c7fd5b1d14693c7fc7cec521dcf11e8c9b629a1"
+    }
+  ],
+  "format": "a5-n8-support-freeze-v1",
+  "scope": "checkpoint of continuation and static reflection support; active V4 and all six original V3 sources remain unchanged",
+  "statuses": {
+    "60": "PROVED supporting field result",
+    "61": "OPEN",
+    "62": "OPEN",
+    "63": "PROVED analytic reflection identities; Claude audit pending",
+    "V3": "actual cap incomplete",
+    "V4": "RUNNING"
+  }
+}

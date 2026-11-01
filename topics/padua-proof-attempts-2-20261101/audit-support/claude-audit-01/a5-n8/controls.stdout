@@ -1,0 +1,144 @@
+{
+ "flip_bit6": {
+  "exit": 1,
+  "rejected": true,
+  "n_ok": 0,
+  "n": 1,
+  "disjoint": true,
+  "expected_failure": "i_",
+  "expected_failed": true,
+  "failed_predicates": [
+   "ii_krawczyk_inclusion",
+   "i_all_signed_cardinals_positive",
+   "all_ok"
+  ]
+ },
+ "negate_mask": {
+  "exit": 1,
+  "rejected": true,
+  "n_ok": 0,
+  "n": 1,
+  "disjoint": true,
+  "expected_failure": "i_",
+  "expected_failed": true,
+  "failed_predicates": [
+   "ii_krawczyk_inclusion",
+   "ii_contraction_norm_lt_1",
+   "iii_Hxx_neg",
+   "i_all_signed_cardinals_positive",
+   "all_ok"
+  ]
+ },
+ "shift_box": {
+  "exit": 1,
+  "rejected": true,
+  "n_ok": 0,
+  "n": 1,
+  "disjoint": true,
+  "expected_failure": "ii_krawczyk",
+  "expected_failed": true,
+  "failed_predicates": [
+   "ii_krawczyk_inclusion",
+   "all_ok"
+  ]
+ },
+ "zero_C": {
+  "exit": 1,
+  "rejected": true,
+  "n_ok": 0,
+  "n": 1,
+  "disjoint": true,
+  "expected_failure": "ii_",
+  "expected_failed": true,
+  "failed_predicates": [
+   "ii_krawczyk_inclusion",
+   "ii_contraction_norm_lt_1",
+   "all_ok"
+  ]
+ },
+ "triple_C": {
+  "exit": 1,
+  "rejected": true,
+  "n_ok": 0,
+  "n": 1,
+  "disjoint": true,
+  "expected_failure": "ii_",
+  "expected_failed": true,
+  "failed_predicates": [
+   "ii_krawczyk_inclusion",
+   "ii_contraction_norm_lt_1",
+   "all_ok"
+  ]
+ },
+ "duplicate": {
+  "exit": 1,
+  "rejected": true,
+  "n_ok": 2,
+  "n": 2,
+  "disjoint": false,
+  "expected_failure": "v",
+  "expected_failed": true,
+  "failed_predicates": []
+ },
+ "touch_boundary": {
+  "exit": 1,
+  "rejected": true,
+  "n_ok": 0,
+  "n": 1,
+  "disjoint": true,
+  "expected_failure": "iv_",
+  "expected_failed": true,
+  "failed_predicates": [
+   "iv_inside_open_square",
+   "ii_krawczyk_inclusion",
+   "ii_contraction_norm_lt_1",
+   "i_all_signed_cardinals_positive",
+   "all_ok"
+  ]
+ },
+ "enlarge_rec1_h1e-4_info": {
+  "exit": 1,
+  "all_ok": false,
+  "bisections": 12,
+  "failed_predicates": [
+   "i_all_signed_cardinals_positive",
+   "all_ok"
+  ]
+ },
+ "enlarge_rec12_h1e-4_positive": {
+  "exit": 0,
+  "all_ok": true,
+  "bisections": 0,
+  "min_lower": 0.0060337276261025335,
+  "failed_predicates": []
+ },
+ "enlarge_rec12_h1e-3_positive": {
+  "exit": 0,
+  "all_ok": true,
+  "bisections": 0,
+  "min_lower": 0.005792347881766076,
+  "failed_predicates": []
+ },
+ "enlarge_rec1_h1e-6_positive": {
+  "exit": 0,
+  "all_ok": true,
+  "bisections": 0,
+  "min_lower": 1.039028747180825e-05,
+  "failed_predicates": []
+ },
+ "hull_of_twins": {
+  "exit": 1,
+  "rejected": true,
+  "n_ok": 0,
+  "n": 1,
+  "disjoint": true,
+  "expected_failure": "i_",
+  "expected_failed": true,
+  "failed_predicates": [
+   "ii_krawczyk_inclusion",
+   "i_all_signed_cardinals_positive",
+   "all_ok"
+  ]
+ }
+}
+ALL_NEGATIVE_CONTROLS_REJECTED_AS_EXPECTED True

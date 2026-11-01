@@ -1,0 +1,49 @@
+{
+ "all_probes_passed": true,
+ "probes": [
+  {
+   "name": "touching_nonroot_endpoint_allowed",
+   "accepted": true
+  },
+  {
+   "name": "touching_at_root_rejected",
+   "rejected": true,
+   "reason": "nonsingleton interval has a root endpoint"
+  },
+  {
+   "name": "overlap_rejected",
+   "rejected": true,
+   "reason": "root intervals out of order or overlap"
+  },
+  {
+   "name": "omitted_root_rejected",
+   "rejected": true,
+   "reason": "root partition omits or adds a real root"
+  },
+  {
+   "name": "double_root_interval_rejected",
+   "rejected": true,
+   "reason": "supplied interval does not contain exactly one root"
+  },
+  {
+   "name": "no_real_roots_empty_partition",
+   "accepted": true
+  },
+  {
+   "name": "no_real_roots_fake_interval",
+   "rejected": true,
+   "reason": "supplied interval does not contain exactly one root"
+  },
+  {
+   "name": "qsign_random_vs_mpmath",
+   "accepted": true,
+   "cases": 3000
+  },
+  {
+   "name": "interval_power_containment",
+   "accepted": true,
+   "cases": 3000
+  }
+ ],
+ "seconds": 47.61
+}

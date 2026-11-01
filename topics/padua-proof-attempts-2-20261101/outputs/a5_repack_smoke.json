@@ -1,0 +1,57 @@
+{
+  "compression": {
+    "check": "SHA256",
+    "container": "XZ",
+    "extreme": true,
+    "filter": "LZMA2",
+    "preset": 9
+  },
+  "decoded_bytes": 32057488,
+  "decoded_bytes_identical": true,
+  "decoded_sha256": "430d12d7e1da80cdd5023a4cac2c735b5f7758f2bb22db50a2581ebba26a0c79",
+  "dont_write_bytecode": true,
+  "format": "a5-mechanical-xz-repack-v1",
+  "global_input": {
+    "bytes": 7077,
+    "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_n6_global.json",
+    "sha256": "af21a0a8f3d1e4301c3a249b6683ce61ce14436e7a2e96e71773b275a8563170"
+  },
+  "global_only_binding_field_changed": true,
+  "global_output": {
+    "bytes": 7077,
+    "path": "/tmp/a5-repack-smoke-n6-global.json",
+    "sha256": "c68d0574ee1ca2780580d4adaeab995a85e7ea39e0847ab1184e6a20fc8d15ae"
+  },
+  "input": {
+    "bytes": 414031,
+    "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_n6_certificate.json.gz",
+    "sha256": "c7a113b9b623c47309fd186c19ee2dddb2d5a0270c01b118bd11ee1ee069f0f5"
+  },
+  "input_claimed_complete": true,
+  "output": {
+    "bytes": 261288,
+    "path": "/tmp/a5-repack-smoke-n6.json.xz",
+    "sha256": "4b558b0aa72ce1ae509689a1564583ad940258b19340ec51f25a04e44eff987d"
+  },
+  "program_argv": [
+    "topics/padua-proof-attempts-2-20261101/code/a5_repack_certificate.py",
+    "topics/padua-proof-attempts-2-20261101/outputs/a5_n6_certificate.json.gz",
+    "--output",
+    "/tmp/a5-repack-smoke-n6.json.xz",
+    "--global-file",
+    "topics/padua-proof-attempts-2-20261101/outputs/a5_n6_global.json",
+    "--global-output",
+    "/tmp/a5-repack-smoke-n6-global.json",
+    "--receipt",
+    "topics/padua-proof-attempts-2-20261101/outputs/a5_repack_smoke.json"
+  ],
+  "python": "3.12.14",
+  "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+  "scope": "lossless packaging only; no count or global verification",
+  "source": {
+    "bytes": 6378,
+    "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_repack_certificate.py",
+    "sha256": "e1cc7fe03b69d5542fabf9d2bc8052e71bf7c33398f68d23543d2610241c7332"
+  },
+  "source_unchanged": true
+}

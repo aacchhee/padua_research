@@ -1,0 +1,1210 @@
+{
+ "all_assertions_passed": true,
+ "fixed_permutation_relation": true,
+ "metadata": {
+  "flint": "0.9.0",
+  "python": "3.13.18",
+  "seconds": 36.41,
+  "source_sha256": "4cf1b20ff37e13c8671187461c5b02ba6277cb4c233da6096e5d0890eee28ff8",
+  "sympy": "1.14.0"
+ },
+ "orders": {
+  "1xy": {
+   "Hx": [
+    [
+     "0",
+     "sqrt(6 - 6*t)/6",
+     "0"
+    ],
+    [
+     "sqrt(6 - 6*t)/6",
+     "0",
+     "sqrt(6)*(-5*t**2 + 4*t + 1)/(6*sqrt(1 - t)*sqrt(-25*t**2 + 23*t + 2))"
+    ],
+    [
+     "0",
+     "sqrt(6)*(-5*t**2 + 4*t + 1)/(6*sqrt(1 - t)*sqrt(-25*t**2 + 23*t + 2))",
+     "0"
+    ]
+   ],
+   "Hy": [
+    [
+     "1/3 - 5*t/6",
+     "0",
+     "sqrt(-25*t**2 + 23*t + 2)/6"
+    ],
+    [
+     "0",
+     "1/2",
+     "0"
+    ],
+    [
+     "sqrt(-25*t**2 + 23*t + 2)/6",
+     "0",
+     "(125*t**2 - 55*t + 2)/(6*(25*t + 2))"
+    ]
+   ],
+   "base_evaluation_det": "1/2",
+   "delta2_matches_developer": true,
+   "delta_squared": "27*t**2/(2*(25*t + 2)**3)",
+   "detS_matches_developer": true,
+   "distance_frobenius_derivative_bound_sq": {
+    "x": "[0.343750352754244 +/- 1.82e-17]",
+    "y": "[48.8125005460272 +/- 2.13e-15]"
+   },
+   "gap_lower_bound": "g(H(t),Q_t) > h/2 for every 0<t<=10/99856",
+   "inertia": {
+    "Mx": {
+     "charpoly_signs": [
+      1,
+      1,
+      1,
+      -1
+     ],
+     "congruent_minor_signs": [
+      1,
+      -1,
+      1,
+      1
+     ],
+     "det": "t*(25*t**2 - 53*t - 5)**2/(1000*(25*t + 2)**2)",
+     "n_plus": 1,
+     "trace": "(75*t**2 - 104*t - 10)/(10*(25*t + 2))"
+    },
+    "My": {
+     "charpoly_signs": [
+      1,
+      1,
+      1,
+      -1
+     ],
+     "congruent_minor_signs": [
+      1,
+      -1,
+      1,
+      1
+     ],
+     "det": "t*(2*t - 5)*(1250*t**3 - 5925*t**2 + 6828*t - 20)/(4000*(25*t + 2)**2)",
+     "n_plus": 1,
+     "trace": "(1875*t**3 - 4325*t**2 - 428*t - 20)/(10*(25*t + 2)**2)"
+    },
+    "S": {
+     "charpoly_signs": [
+      1,
+      -1,
+      1,
+      1
+     ],
+     "congruent_minor_signs": [
+      1,
+      1,
+      1,
+      -1
+     ],
+     "det": "t**2*(2*t - 5)*(25*t**2 - 53*t - 5)*(39062500*t**7 - 261718750*t**6 + 555468750*t**5 - 321968750*t**4 - 103933375*t**3 - 9406197*t**2 - 109640*t - 21700)/(8000000*(25*t + 2)**6)",
+     "n_plus": 2,
+     "trace": "(46875*t**5 - 173125*t**4 + 116525*t**3 + 36429*t**2 + 3220*t + 100)/(100*(25*t + 2)**3)"
+    }
+   },
+   "n_box": "1/2",
+   "numeric_illustration_at_T": {
+    "d_at_T": "6.96607843619e-6",
+    "delta_at_T": "1.29901374909e-6",
+    "g_at_T": "0.000310227823017",
+    "h_at_T": "0.000316227766017",
+    "spec_Hx_at_T": [
+     "-0.499999625005",
+     "-6.5244456499e-42",
+     "0.499999625005"
+    ],
+    "spec_Hy_at_T": [
+     "-5.99994300033e-6",
+     "0.499998500037",
+     "0.5"
+    ]
+   },
+   "order": [
+    "1",
+    "x",
+    "y"
+   ],
+   "pivot_squares": {
+    "x": "-(t - 1)/6",
+    "y": "-(t - 1)*(25*t + 2)/36"
+   },
+   "reference_joint_count": 1,
+   "trS_matches_developer": true
+  },
+  "1yx": {
+   "Hx": [
+    [
+     "0",
+     "0",
+     "sqrt(6 - 6*t)/6"
+    ],
+    [
+     "0",
+     "0",
+     "sqrt(6)*(-5*t**2 + 4*t + 1)/(6*sqrt(1 - t)*sqrt(-25*t**2 + 23*t + 2))"
+    ],
+    [
+     "sqrt(6 - 6*t)/6",
+     "sqrt(6)*(-5*t**2 + 4*t + 1)/(6*sqrt(1 - t)*sqrt(-25*t**2 + 23*t + 2))",
+     "0"
+    ]
+   ],
+   "Hy": [
+    [
+     "1/3 - 5*t/6",
+     "sqrt(-25*t**2 + 23*t + 2)/6",
+     "0"
+    ],
+    [
+     "sqrt(-25*t**2 + 23*t + 2)/6",
+     "(125*t**2 - 55*t + 2)/(6*(25*t + 2))",
+     "0"
+    ],
+    [
+     "0",
+     "0",
+     "1/2"
+    ]
+   ],
+   "N01_displayed_formulas": {
+    "D_T_Dinv_matches": true,
+    "H_matches": true,
+    "commutator_entry_and_support_match": true
+   },
+   "base_evaluation_det": "-1/2",
+   "delta2_matches_developer": true,
+   "delta_squared": "27*t**2/(2*(25*t + 2)**3)",
+   "detS_matches_developer": true,
+   "distance_frobenius_derivative_bound_sq": {
+    "x": "[0.343750352754244 +/- 3.74e-17]",
+    "y": "[48.8125005460272 +/- 2.13e-15]"
+   },
+   "gap_lower_bound": "g(H(t),Q_t) > h/2 for every 0<t<=10/99856",
+   "inertia": {
+    "Mx": {
+     "charpoly_signs": [
+      1,
+      1,
+      1,
+      -1
+     ],
+     "congruent_minor_signs": [
+      1,
+      -1,
+      -1,
+      1
+     ],
+     "det": "t*(25*t**2 - 53*t - 5)**2/(1000*(25*t + 2)**2)",
+     "n_plus": 1,
+     "trace": "(75*t**2 - 104*t - 10)/(10*(25*t + 2))"
+    },
+    "My": {
+     "charpoly_signs": [
+      1,
+      1,
+      1,
+      -1
+     ],
+     "congruent_minor_signs": [
+      1,
+      -1,
+      -1,
+      1
+     ],
+     "det": "t*(2*t - 5)*(1250*t**3 - 5925*t**2 + 6828*t - 20)/(4000*(25*t + 2)**2)",
+     "n_plus": 1,
+     "trace": "(1875*t**3 - 4325*t**2 - 428*t - 20)/(10*(25*t + 2)**2)"
+    },
+    "S": {
+     "charpoly_signs": [
+      1,
+      -1,
+      1,
+      1
+     ],
+     "congruent_minor_signs": [
+      1,
+      1,
+      -1,
+      -1
+     ],
+     "det": "t**2*(2*t - 5)*(25*t**2 - 53*t - 5)*(39062500*t**7 - 261718750*t**6 + 555468750*t**5 - 321968750*t**4 - 103933375*t**3 - 9406197*t**2 - 109640*t - 21700)/(8000000*(25*t + 2)**6)",
+     "n_plus": 2,
+     "trace": "(46875*t**5 - 173125*t**4 + 116525*t**3 + 36429*t**2 + 3220*t + 100)/(100*(25*t + 2)**3)"
+    }
+   },
+   "n_box": "1/2",
+   "numeric_illustration_at_T": {
+    "d_at_T": "6.96607843619e-6",
+    "delta_at_T": "1.29901374909e-6",
+    "g_at_T": "0.000310227823017",
+    "h_at_T": "0.000316227766017",
+    "spec_Hx_at_T": [
+     "-0.499999625005",
+     "0.0",
+     "0.499999625005"
+    ],
+    "spec_Hy_at_T": [
+     "-5.99994300033e-6",
+     "0.499998500037",
+     "0.5"
+    ]
+   },
+   "order": [
+    "1",
+    "y",
+    "x"
+   ],
+   "pivot_squares": {
+    "x": "-(t - 1)/6",
+    "y": "-(t - 1)*(25*t + 2)/36"
+   },
+   "reference_joint_count": 1,
+   "trS_matches_developer": true
+  }
+ },
+ "scope": "B3 four-atom family, every 0<t<=1e-6, both degree-one orders",
+ "sign_certificates": 104,
+ "sign_log": [
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):weight4",
+   "num_degree": 0,
+   "sign": 1,
+   "stripped_var_power": 1,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):weight123",
+   "num_degree": 1,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):gram_minor1",
+   "num_degree": 0,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):gram_minor2",
+   "num_degree": 2,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):gram_minor3",
+   "num_degree": 3,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):pivot_x^2>p^2",
+   "num_degree": 1,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):pivot_x^2>(1/5)^2",
+   "num_degree": 1,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):pivot_y^2>p^2",
+   "num_degree": 2,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):pivot_y^2>(1/5)^2",
+   "num_degree": 2,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "N01form:Hx[0,2]",
+   "num_degree": 1,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 1,
+   "interval": "(0, 1/1000000]",
+   "label": "N01form:Hx[1,2]",
+   "num_degree": 2,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "N01form:Hx[2,0]",
+   "num_degree": 1,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 1,
+   "interval": "(0, 1/1000000]",
+   "label": "N01form:Hx[2,1]",
+   "num_degree": 2,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "N01form:Hy[0,0]",
+   "num_degree": 2,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "N01form:Hy[0,1]",
+   "num_degree": 2,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "N01form:Hy[1,0]",
+   "num_degree": 2,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 2,
+   "interval": "(0, 1/1000000]",
+   "label": "N01form:Hy[1,1]",
+   "num_degree": 4,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "N01form:Hy[2,2]",
+   "num_degree": 0,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "N01form:DTxD[0,2]",
+   "num_degree": 1,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 1,
+   "interval": "(0, 1/1000000]",
+   "label": "N01form:DTxD[1,2]",
+   "num_degree": 2,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "N01form:DTxD[2,0]",
+   "num_degree": 1,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 1,
+   "interval": "(0, 1/1000000]",
+   "label": "N01form:DTxD[2,1]",
+   "num_degree": 2,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "N01form:DTyD[0,0]",
+   "num_degree": 2,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "N01form:DTyD[0,1]",
+   "num_degree": 2,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "N01form:DTyD[1,0]",
+   "num_degree": 2,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 2,
+   "interval": "(0, 1/1000000]",
+   "label": "N01form:DTyD[1,1]",
+   "num_degree": 4,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "N01form:DTyD[2,2]",
+   "num_degree": 0,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 3,
+   "interval": "(0, 1/1000000]",
+   "label": "N01form:k",
+   "num_degree": 0,
+   "sign": 1,
+   "stripped_var_power": 2,
+   "var": "t"
+  },
+  {
+   "den_degree": 3,
+   "interval": "(0, 1/1000000]",
+   "label": "N01form:K12",
+   "num_degree": 0,
+   "sign": 1,
+   "stripped_var_power": 2,
+   "var": "t"
+  },
+  {
+   "den_degree": 3,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):delta2>0",
+   "num_degree": 0,
+   "sign": 1,
+   "stripped_var_power": 2,
+   "var": "t"
+  },
+  {
+   "den_degree": 3,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):(h/2)^4*1e4>=delta^2",
+   "num_degree": 3,
+   "sign": 1,
+   "stripped_var_power": 2,
+   "var": "t"
+  },
+  {
+   "den_degree": 3,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):delta<2t",
+   "num_degree": 3,
+   "sign": 1,
+   "stripped_var_power": 2,
+   "var": "t"
+  },
+  {
+   "den_degree": 1,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):Mx:charpoly:coef1",
+   "num_degree": 2,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 2,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):Mx:charpoly:coef2",
+   "num_degree": 4,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 2,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):Mx:charpoly:coef3",
+   "num_degree": 4,
+   "sign": -1,
+   "stripped_var_power": 1,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):Mx:congruent:minor1",
+   "num_degree": 1,
+   "sign": -1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):Mx:congruent:minor2",
+   "num_degree": 3,
+   "sign": -1,
+   "stripped_var_power": 1,
+   "var": "t"
+  },
+  {
+   "den_degree": 1,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):Mx:congruent:minor3",
+   "num_degree": 6,
+   "sign": 1,
+   "stripped_var_power": 1,
+   "var": "t"
+  },
+  {
+   "den_degree": 2,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):My:charpoly:coef1",
+   "num_degree": 3,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 2,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):My:charpoly:coef2",
+   "num_degree": 4,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 2,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):My:charpoly:coef3",
+   "num_degree": 4,
+   "sign": -1,
+   "stripped_var_power": 1,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):My:congruent:minor1",
+   "num_degree": 1,
+   "sign": -1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 1,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):My:congruent:minor2",
+   "num_degree": 4,
+   "sign": -1,
+   "stripped_var_power": 1,
+   "var": "t"
+  },
+  {
+   "den_degree": 1,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):My:congruent:minor3",
+   "num_degree": 6,
+   "sign": 1,
+   "stripped_var_power": 1,
+   "var": "t"
+  },
+  {
+   "den_degree": 3,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):S:charpoly:coef1",
+   "num_degree": 5,
+   "sign": -1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 5,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):S:charpoly:coef2",
+   "num_degree": 9,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 6,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):S:charpoly:coef3",
+   "num_degree": 10,
+   "sign": 1,
+   "stripped_var_power": 2,
+   "var": "t"
+  },
+  {
+   "den_degree": 1,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):S:congruent:minor1",
+   "num_degree": 3,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 4,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):S:congruent:minor2",
+   "num_degree": 8,
+   "sign": -1,
+   "stripped_var_power": 2,
+   "var": "t"
+  },
+  {
+   "den_degree": 5,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'y', 'x'):S:congruent:minor3",
+   "num_degree": 12,
+   "sign": -1,
+   "stripped_var_power": 2,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/316]",
+   "label": "('1', 'y', 'x'):gap:x:+band:minor1",
+   "num_degree": 2,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "w"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/316]",
+   "label": "('1', 'y', 'x'):gap:x:+band:minor2",
+   "num_degree": 6,
+   "sign": 1,
+   "stripped_var_power": 2,
+   "var": "w"
+  },
+  {
+   "den_degree": 2,
+   "interval": "(0, 1/316]",
+   "label": "('1', 'y', 'x'):gap:x:+band:minor3",
+   "num_degree": 12,
+   "sign": 1,
+   "stripped_var_power": 2,
+   "var": "w"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/316]",
+   "label": "('1', 'y', 'x'):gap:x:-band:minor1",
+   "num_degree": 2,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "w"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/316]",
+   "label": "('1', 'y', 'x'):gap:x:-band:minor2",
+   "num_degree": 6,
+   "sign": 1,
+   "stripped_var_power": 2,
+   "var": "w"
+  },
+  {
+   "den_degree": 2,
+   "interval": "(0, 1/316]",
+   "label": "('1', 'y', 'x'):gap:x:-band:minor3",
+   "num_degree": 12,
+   "sign": 1,
+   "stripped_var_power": 2,
+   "var": "w"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/316]",
+   "label": "('1', 'y', 'x'):gap:y:+band:minor1",
+   "num_degree": 3,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "w"
+  },
+  {
+   "den_degree": 2,
+   "interval": "(0, 1/316]",
+   "label": "('1', 'y', 'x'):gap:y:+band:minor2",
+   "num_degree": 8,
+   "sign": 1,
+   "stripped_var_power": 2,
+   "var": "w"
+  },
+  {
+   "den_degree": 2,
+   "interval": "(0, 1/316]",
+   "label": "('1', 'y', 'x'):gap:y:+band:minor3",
+   "num_degree": 12,
+   "sign": 1,
+   "stripped_var_power": 2,
+   "var": "w"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/316]",
+   "label": "('1', 'y', 'x'):gap:y:-band:minor1",
+   "num_degree": 3,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "w"
+  },
+  {
+   "den_degree": 2,
+   "interval": "(0, 1/316]",
+   "label": "('1', 'y', 'x'):gap:y:-band:minor2",
+   "num_degree": 8,
+   "sign": 1,
+   "stripped_var_power": 2,
+   "var": "w"
+  },
+  {
+   "den_degree": 2,
+   "interval": "(0, 1/316]",
+   "label": "('1', 'y', 'x'):gap:y:-band:minor3",
+   "num_degree": 12,
+   "sign": 1,
+   "stripped_var_power": 2,
+   "var": "w"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):weight4",
+   "num_degree": 0,
+   "sign": 1,
+   "stripped_var_power": 1,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):weight123",
+   "num_degree": 1,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):gram_minor1",
+   "num_degree": 0,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):gram_minor2",
+   "num_degree": 1,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):gram_minor3",
+   "num_degree": 3,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):pivot_x^2>p^2",
+   "num_degree": 1,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):pivot_x^2>(1/5)^2",
+   "num_degree": 1,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):pivot_y^2>p^2",
+   "num_degree": 2,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):pivot_y^2>(1/5)^2",
+   "num_degree": 2,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 3,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):delta2>0",
+   "num_degree": 0,
+   "sign": 1,
+   "stripped_var_power": 2,
+   "var": "t"
+  },
+  {
+   "den_degree": 3,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):(h/2)^4*1e4>=delta^2",
+   "num_degree": 3,
+   "sign": 1,
+   "stripped_var_power": 2,
+   "var": "t"
+  },
+  {
+   "den_degree": 3,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):delta<2t",
+   "num_degree": 3,
+   "sign": 1,
+   "stripped_var_power": 2,
+   "var": "t"
+  },
+  {
+   "den_degree": 1,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):Mx:charpoly:coef1",
+   "num_degree": 2,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 2,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):Mx:charpoly:coef2",
+   "num_degree": 4,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 2,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):Mx:charpoly:coef3",
+   "num_degree": 4,
+   "sign": -1,
+   "stripped_var_power": 1,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):Mx:congruent:minor1",
+   "num_degree": 1,
+   "sign": -1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 1,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):Mx:congruent:minor2",
+   "num_degree": 4,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 1,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):Mx:congruent:minor3",
+   "num_degree": 6,
+   "sign": 1,
+   "stripped_var_power": 1,
+   "var": "t"
+  },
+  {
+   "den_degree": 2,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):My:charpoly:coef1",
+   "num_degree": 3,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 2,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):My:charpoly:coef2",
+   "num_degree": 4,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 2,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):My:charpoly:coef3",
+   "num_degree": 4,
+   "sign": -1,
+   "stripped_var_power": 1,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):My:congruent:minor1",
+   "num_degree": 1,
+   "sign": -1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):My:congruent:minor2",
+   "num_degree": 3,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 1,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):My:congruent:minor3",
+   "num_degree": 6,
+   "sign": 1,
+   "stripped_var_power": 1,
+   "var": "t"
+  },
+  {
+   "den_degree": 3,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):S:charpoly:coef1",
+   "num_degree": 5,
+   "sign": -1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 5,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):S:charpoly:coef2",
+   "num_degree": 9,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 6,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):S:charpoly:coef3",
+   "num_degree": 10,
+   "sign": 1,
+   "stripped_var_power": 2,
+   "var": "t"
+  },
+  {
+   "den_degree": 1,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):S:congruent:minor1",
+   "num_degree": 3,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 2,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):S:congruent:minor2",
+   "num_degree": 7,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "t"
+  },
+  {
+   "den_degree": 5,
+   "interval": "(0, 1/1000000]",
+   "label": "('1', 'x', 'y'):S:congruent:minor3",
+   "num_degree": 12,
+   "sign": -1,
+   "stripped_var_power": 2,
+   "var": "t"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/316]",
+   "label": "('1', 'x', 'y'):gap:x:+band:minor1",
+   "num_degree": 2,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "w"
+  },
+  {
+   "den_degree": 2,
+   "interval": "(0, 1/316]",
+   "label": "('1', 'x', 'y'):gap:x:+band:minor2",
+   "num_degree": 8,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "w"
+  },
+  {
+   "den_degree": 2,
+   "interval": "(0, 1/316]",
+   "label": "('1', 'x', 'y'):gap:x:+band:minor3",
+   "num_degree": 12,
+   "sign": 1,
+   "stripped_var_power": 2,
+   "var": "w"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/316]",
+   "label": "('1', 'x', 'y'):gap:x:-band:minor1",
+   "num_degree": 2,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "w"
+  },
+  {
+   "den_degree": 2,
+   "interval": "(0, 1/316]",
+   "label": "('1', 'x', 'y'):gap:x:-band:minor2",
+   "num_degree": 8,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "w"
+  },
+  {
+   "den_degree": 2,
+   "interval": "(0, 1/316]",
+   "label": "('1', 'x', 'y'):gap:x:-band:minor3",
+   "num_degree": 12,
+   "sign": 1,
+   "stripped_var_power": 2,
+   "var": "w"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/316]",
+   "label": "('1', 'x', 'y'):gap:y:+band:minor1",
+   "num_degree": 3,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "w"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/316]",
+   "label": "('1', 'x', 'y'):gap:y:+band:minor2",
+   "num_degree": 7,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "w"
+  },
+  {
+   "den_degree": 2,
+   "interval": "(0, 1/316]",
+   "label": "('1', 'x', 'y'):gap:y:+band:minor3",
+   "num_degree": 12,
+   "sign": 1,
+   "stripped_var_power": 2,
+   "var": "w"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/316]",
+   "label": "('1', 'x', 'y'):gap:y:-band:minor1",
+   "num_degree": 3,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "w"
+  },
+  {
+   "den_degree": 0,
+   "interval": "(0, 1/316]",
+   "label": "('1', 'x', 'y'):gap:y:-band:minor2",
+   "num_degree": 7,
+   "sign": 1,
+   "stripped_var_power": 0,
+   "var": "w"
+  },
+  {
+   "den_degree": 2,
+   "interval": "(0, 1/316]",
+   "label": "('1', 'x', 'y'):gap:y:-band:minor3",
+   "num_degree": 12,
+   "sign": 1,
+   "stripped_var_power": 2,
+   "var": "w"
+  }
+ ]
+}

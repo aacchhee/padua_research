@@ -1,0 +1,8 @@
+{
+  "column_one_is_a_plus_b": true,
+  "column_zero_is_unit": true,
+  "formal_field_helper_sha256": "76f9ba3de6d4fa4a3bd403ec2c049997de5acb75dd474ac8e05e9e324d6cd106",
+  "native_to_tensor_determinant": "203415409",
+  "remainder_of_minpoly_at_a_plus_b_zero": true,
+  "scope": "formal exact identities only; no maxima count"
+}

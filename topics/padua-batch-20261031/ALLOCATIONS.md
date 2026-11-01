@@ -197,3 +197,23 @@ PR15 reservation data above is imported unchanged (its unavailable local evidenc
 Own reservation unchanged (first published `6920ba632843597c37e1493d077c1df2e89f54cb`): assigned **PD-T136–146 (11), PD-N062–063 (2), IDEA-246–267 (22)**, no LIT. Permanent unused headroom: **PD-T147–155, PD-N064–071, IDEA-268–285, LIT-445–459**. No range shifts, shrinks or reuses another topic's IDs; PR14's assignments and gaps above are preserved. [Map](../padua-lanczos-drift-20261101/preparation/final-id-map.json); [fresh union scan](../padua-lanczos-drift-20261101/preparation/union-scan.json).
 
 **Integration order (AC, 2026-11-01 20:55 CET):** PR15 (`codex/padua-lanczos-drift-20261101`) merges before PR12 (`codex/padua-proof-attempts-2-20261101`). After AC squash-merges PR15, the PR12 orchestrator merges the new main into its branch without rebasing and keeps PR15's registrations (PD-T136–146, PD-N062–063, IDEA-246–267) and permanent gaps (PD-T147–155, PD-N064–071, IDEA-268–285, LIT-445–459) intact. A merge-tree of PR15 head `b6980b9` with PR12 head `f4c5c9e` is clean.
+
+
+## PR12 second proof campaign — permanent reservation (2026-11-01)
+
+AC explicitly authorized final IDs and shared updates after merging PR15. Owner: `codex/padua-proof-attempts-2-20261101`. The current fresh-range procedure supersedes historical single-owner prose; all earlier reservations, assignments and permanent gaps remain unchanged.
+
+Fresh union: main `67bd07c0867d8d49eb104942237d7f51a7d9f77d`, sole open PR12 `f4c5c9e783d2a57253142877cf6845635aaac50f`; all other14 returned PRs merged, no closed-unmerged reservation missing. Both complete ledgers and all four registries scanned at both heads. [Receipt](../padua-proof-attempts-2-20261101/preparation/reservation-scan.json); [remote classification](../padua-proof-attempts-2-20261101/preparation/pr-snapshot.json). Highest used/reserved: PD-T155, PD-N071, IDEA-285, LIT-459; next-unreserved prose is not an allocation.
+
+| Namespace | Permanent reserved range | Count | Needs / headroom |
+|---|---|---:|---|
+| PD-T | PD-T156–PD-T205 | 50 | 42 durable theory records + 8 permanent headroom |
+| PD-N | PD-N072–PD-N077 | 6 | 2 scoped negative records + 4 permanent headroom |
+| IDEA | IDEA-286–IDEA-315 | 30 | retained route/candidate dispositions + permanent headroom |
+| LIT | no range | 0 | existing LIT-312, LIT-379 and LIT-388 reused |
+
+Reservation priority is the pushed commit introducing this section, published in PR12 before assignment. No final IDs are assigned in this reservation checkpoint. Unused IDs remain permanent gaps. PR15's registrations and headroom through155/071/285/459 remain intact. Integration order: PR15 is merged; PR12 follows on new main without rebasing. Only AC merges.
+
+## PR12 assignments after reservation publication
+
+Priority: published103ee71e101265ca4133c7ffea8c0e48fa840109 before assignment. Assigned PD-T156–197 (42), PD-N072–073 (2), IDEA-286–311 (26). Permanent unused headroom PD-T198–205, PD-N074–077, IDEA-312–315. No LIT assignment/range; source IDs312/379/388 reused. [Map](../padua-proof-attempts-2-20261101/preparation/final-id-map.json). All earlier reservations and gaps, especially merged PR15's, remain unchanged. PR15 is merged as67bd07c; PR12 follows on that base. Only AC merges.

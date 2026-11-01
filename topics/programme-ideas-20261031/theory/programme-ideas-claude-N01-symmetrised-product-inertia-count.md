@@ -5,7 +5,7 @@ Final ID: **PD-N039** (allocated 2026-11-01 under AC's authorisation; the provis
 ID kind: PD-N.
 Aliases: √δ cluster counterexample (gen2-3 adversary); half-integer box count; "n_box = ½(n₊(S) − N + n₊(M_x) + n₊(M_y))" failure.
 Split from: `checks/adversarial-gen2-3.md` (iii) and its salvage bullet at `614709d` ("no δ-only certificate for computed sections beyond √δ"). The broad computed-section claim is withdrawn (audit-01 A5); this record holds only the restricted method failure.
-Split into: none.
+Split into: PD-N072, PD-N073, PD-T193 (PR12, exact scoped splits; original status/history retained).
 
 ## Statement
 
@@ -72,6 +72,8 @@ Exactly the formula and pair class stated. This is a scoped method failure, not 
 ## Open items
 
 Whether a δ-tolerant count with α > ½ exists on the class of positive-pivot computed sections (cyclic, size dim Π_n) is not addressed: `OPEN_TARGETS.md` B3. Transfer to the Lanczos topic (LZ-034 / L3) only in this restricted form.
+
+Dated separate extension after accepted Part2 Claude audit-01: the scope left unresolved by PD-N039's historical statement above is resolved for the specified symmetrised-product S(α) by PROVED PD-N072. The specified count has disposition REJECTED: refuted at fixed n = 1, p = 1/10, M = 4 for all 0 < t ≤ 10^−6, with computed gap ≥ √δ/10 and n_box = 1/2 versus valid reference count 1. This does not broaden the original PD-N039 theorem retrospectively or relabel its old measurements as section certificates. Other count objects S_F, other degrees and reference-existence questions remain OPEN. The complete proof and exact evidence are in the Part2 topic; the distinct route obstruction is PD-N073, supported by PD-T193.
 
 ## History
 

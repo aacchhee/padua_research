@@ -1,0 +1,67 @@
+{
+  "count_certified": false,
+  "fixture_bytes": 140986,
+  "fixture_path": "/tmp/a5-n8-reflection-fixture.json.gz",
+  "fixture_sha256": "682b21facd2763718d0cba167f3c5816916dd5538c46fa03610fd3fde9a69937",
+  "fixture_summary": {
+    "all_gradient_leaves": 2,
+    "complete": false,
+    "depth": 22,
+    "interior": 18,
+    "interior_complete": false,
+    "leaf_counts": {
+      "all_gradient": 2,
+      "gradient": 320,
+      "hessian": 192,
+      "node_cone": 2,
+      "root": 4
+    },
+    "leaf_pattern_records": 516,
+    "maximum_ambiguity": 45,
+    "node_leaves": 2,
+    "pending": 14,
+    "seconds": 0,
+    "stats": {
+      "all_gradient": 2,
+      "discard": 8,
+      "node_cone": 2,
+      "visited": 29
+    },
+    "unresolved": 0
+  },
+  "format": "a5-n8-reflection-controls-v1",
+  "independent_verification": "PENDING; unchanged checker must replay every proposed record",
+  "input_sha256": "4d1210394d674f785c6a7d2647c6e97c7353cb071785ac38a68a42aa79e7032d",
+  "negative_control_count": 6,
+  "negative_controls": [
+    "actual-left-half-incomplete",
+    "wrong-field",
+    "wrong-producer",
+    "axis-crossing-root",
+    "implicit-mask-count-mismatch",
+    "reflected-node-cube-containment"
+  ],
+  "passed": true,
+  "proposal_receipt": {
+    "acceptance_predicate_added": false,
+    "exact_cardinal_identities": 45,
+    "fixture_only": true,
+    "left_complete": false,
+    "mirrored_leaves": 4,
+    "mirrored_ordinary_records": 258,
+    "proposed_roots": 18,
+    "retained_left_roots": 9,
+    "source_left_leaves": 4
+  },
+  "scope": "exact identities and incomplete transformed witness fixture only; no count acceptance",
+  "search_advanced": false,
+  "source_sha256_after": {
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect.py": "84e3ca91689f671cb05f008d87cd4c1ce835392b715505070e5f45e60e166def",
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_controls.py": "515efd319553af2b6c04c19d5cd8c09d29c50141112492718840df52a0b8448c"
+  },
+  "source_sha256_before": {
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect.py": "84e3ca91689f671cb05f008d87cd4c1ce835392b715505070e5f45e60e166def",
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n8_reflect_controls.py": "515efd319553af2b6c04c19d5cd8c09d29c50141112492718840df52a0b8448c"
+  },
+  "sources_unchanged": true
+}

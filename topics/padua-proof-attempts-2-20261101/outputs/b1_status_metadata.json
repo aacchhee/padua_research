@@ -1,0 +1,46 @@
+{
+  "claimed_status": "PROVED at written class scope; Part2 Claude audit PENDING",
+  "format": "b1-status-metadata-guard-v1",
+  "math_stop_utc": "2026-11-01T16:57:37Z",
+  "mathematical_computation_executed": false,
+  "provenance_note": "Primary checker /root/a5_checker requested metadata wording independently reconstructed; no separate-origination claim is needed.",
+  "records": [
+    {
+      "after_sha256": "fc18d4e83e23607783d3968c387b5dd0b5101faa82c92f2a44365d1ee396f972",
+      "before_sha256": "63a8d44dcc8e60f871697de4adf0f73a067843a48a8dc208980b187267ed2ad7",
+      "change_scope": "status, verification and reconstruction-provenance metadata only",
+      "path": "theory/proof-attempts-2-codex-90-pole-topform-detection.md",
+      "proof_body_byte_identical": true,
+      "proof_body_sha256_after": "c433e006f811c7ab99577b75d62120a3736d97d963f325bd40188b11beb3f0bf",
+      "proof_body_sha256_before": "c433e006f811c7ab99577b75d62120a3736d97d963f325bd40188b11beb3f0bf"
+    },
+    {
+      "after_sha256": "732c5bd93aa751514fc61fed5322e4062e96e4090cad0ad82588a847a2484eb9",
+      "before_sha256": "ebbb9084db570abab6eaa3ae36c5f0c2d8578d828dd46c2c7da2184efb09926b",
+      "change_scope": "status, verification and reconstruction-provenance metadata only",
+      "path": "theory/proof-attempts-2-codex-91-pole-only-generic-rank.md",
+      "proof_body_byte_identical": true,
+      "proof_body_sha256_after": "5e0d508d8eec8a98558a72f0b48da5eb3674ccd6d232602009d2ca62904c14ff",
+      "proof_body_sha256_before": "5e0d508d8eec8a98558a72f0b48da5eb3674ccd6d232602009d2ca62904c14ff"
+    },
+    {
+      "after_sha256": "8261bd243e633c2d9532c17aadb3137820dfbd7f66583d28010152a9ecf59229",
+      "before_sha256": "8fc4a6c646f6d3461b2634801bb5099665c11fe7d1f2fe90110c68b21d0f973f",
+      "change_scope": "status, verification and reconstruction-provenance metadata only",
+      "path": "theory/proof-attempts-2-codex-92-generic-ldiag-constrained-window.md",
+      "proof_body_byte_identical": true,
+      "proof_body_sha256_after": "2c369fde2865fb66122a3e4d1cdaceec9455fdcd1273f2bfeae8a8dae9d2900c",
+      "proof_body_sha256_before": "2c369fde2865fb66122a3e4d1cdaceec9455fdcd1273f2bfeae8a8dae9d2900c"
+    },
+    {
+      "after_sha256": "563fae640d26f49d88cc773aa339f3fc472abceed7d61def120d42337ff2c614",
+      "before_sha256": "2fa614b3e0175975934ff511d081238570692d89888188e159f0e5ec1af50df1",
+      "change_scope": "status, verification and reconstruction-provenance metadata only",
+      "path": "theory/proof-attempts-2-codex-93-source-ldiag-taper.md",
+      "proof_body_byte_identical": true,
+      "proof_body_sha256_after": "b7816d41028575cf46f6f0ec52968fded3caf2eae53859b0f6b52a645c69043c",
+      "proof_body_sha256_before": "b7816d41028575cf46f6f0ec52968fded3caf2eae53859b0f6b52a645c69043c"
+    }
+  ],
+  "root_reported_done_criterion": true
+}

@@ -1,0 +1,205 @@
+{
+  "FLINT": "3.6.0",
+  "all_controls_passed": true,
+  "checker_sha256": "a9cff5748d6c40ee41ac76e4e8a0035e0d5dab95f4de1233dfcc26902cb085a2",
+  "checker_sha256_after": "a9cff5748d6c40ee41ac76e4e8a0035e0d5dab95f4de1233dfcc26902cb085a2",
+  "controls": [
+    {
+      "accepted": true,
+      "accepted_node_cones": 45,
+      "name": "all_supplied_exact_node_cones",
+      "node_status_counts": {
+        "accepted": 45
+      },
+      "verified_direction_breakpoints": 3474,
+      "verified_node_records": 45
+    },
+    {
+      "accepted": true,
+      "name": "raw_gzip_XZ_decoding_preserves_exact_payload_bytes"
+    },
+    {
+      "name": "truncated_XZ_payload_rejected",
+      "reason": "invalid compressed input: Compressed data ended before the end-of-stream marker was reached",
+      "rejected": true
+    },
+    {
+      "name": "wrong_native_minimal_polynomial",
+      "reason": "native minimal polynomial mismatch",
+      "rejected": true
+    },
+    {
+      "name": "counterfeit_tensor_conversion",
+      "reason": "native-to-tensor matrix mismatch",
+      "rejected": true
+    },
+    {
+      "name": "negative_quartic_root_embedding",
+      "reason": "principal a outer bracket failed",
+      "rejected": true
+    },
+    {
+      "name": "nonprincipal_cubic_root_embedding",
+      "reason": "principal b outer bracket failed",
+      "rejected": true
+    },
+    {
+      "name": "incorrect_principal_root_accounting",
+      "reason": "principal U7/U8 root accounting mismatch",
+      "rejected": true
+    },
+    {
+      "name": "field_encoding_has_wrong_dimension",
+      "reason": "FIELD needs twelve rational coefficients",
+      "rejected": true
+    },
+    {
+      "accepted": true,
+      "name": "tensor_quartic_cubic_norm_vs_native_degree_twelve_norm",
+      "polynomials": 2
+    },
+    {
+      "name": "one_node_record_omitted",
+      "reason": "all 45 ordered node-cone records are required",
+      "rejected": true
+    },
+    {
+      "name": "one_feasible_direction_side_omitted",
+      "reason": "feasible direction-side segments are incomplete",
+      "rejected": true
+    },
+    {
+      "name": "one_internal_directional_zero_breakpoint_omitted",
+      "reason": "a cardinal directional zero breakpoint was omitted",
+      "rejected": true
+    },
+    {
+      "name": "false_positive_gap_lower_bound",
+      "reason": "claimed node gap lower bound exceeds a breakpoint value",
+      "rejected": true
+    },
+    {
+      "name": "cone_rectangle_hits_inactive_square_face",
+      "reason": "node cone meets an inactive opposite square face",
+      "rejected": true
+    },
+    {
+      "name": "radius_underestimates_whole_cone_rectangle",
+      "reason": "node cone R does not bound the entire supplied rectangle",
+      "rejected": true
+    },
+    {
+      "name": "false_whole_cone_node_cardinal_positivity_bound",
+      "reason": "node cardinal is not certified positive on entire B",
+      "rejected": true
+    },
+    {
+      "name": "one_cardinal_hessian_bound_underestimated",
+      "reason": "node Hessian quadratic-form bound failed",
+      "rejected": true
+    },
+    {
+      "name": "radial_remainder_exceeds_exact_gap",
+      "reason": "node radial remainder inequality R*H < m failed",
+      "rejected": true
+    },
+    {
+      "name": "whole_leaf_not_inside_referenced_cone",
+      "reason": "whole node leaf is not strictly inside its verified cone",
+      "rejected": true
+    },
+    {
+      "name": "non_strict_leaf_cone_containment",
+      "reason": "whole node leaf is not strictly inside its verified cone",
+      "rejected": true
+    },
+    {
+      "name": "zero_gap_or_missing_cone_has_no_discard_authority",
+      "reason": "node leaf references a missing, zero-gap, or unaccepted cone",
+      "rejected": true
+    },
+    {
+      "name": "node_leaf_cannot_hide_ordinary_pattern_list",
+      "reason": "node-cone leaf mixes predicate types or unknown keys",
+      "rejected": true
+    },
+    {
+      "name": "node_leaf_cannot_hide_universal_gradient",
+      "reason": "node-cone leaf mixes predicate types or unknown keys",
+      "rejected": true
+    },
+    {
+      "name": "ordinary_leaf_cannot_hide_universal_gradient",
+      "reason": "leaf mixes predicate types or has unknown keys",
+      "rejected": true
+    },
+    {
+      "name": "universal_gradient_coordinate_must_be_zero_or_one",
+      "reason": "invalid universal gradient coordinate",
+      "rejected": true
+    },
+    {
+      "name": "universal_gradient_coordinate_is_not_boolean",
+      "reason": "invalid universal gradient coordinate",
+      "rejected": true
+    },
+    {
+      "name": "universal_gradient_on_whole_square_is_not_an_exclusion",
+      "reason": "universal compatible-pattern gradient interval contains zero",
+      "rejected": true
+    },
+    {
+      "name": "overlapping_prefix_partition",
+      "reason": "leaf paths are not prefix-free",
+      "rejected": true
+    },
+    {
+      "accepted": true,
+      "name": "complete_vs_missing_prefix_subtree"
+    },
+    {
+      "name": "singular_zero_hessian_is_not_an_exclusion",
+      "reason": "no strict positive-curvature/negative-determinant exclusion",
+      "rejected": true
+    },
+    {
+      "name": "one_sturm_projected_root_omitted",
+      "reason": "root partition omits real roots",
+      "rejected": true
+    },
+    {
+      "accepted": true,
+      "identities": 36,
+      "name": "exact_FLINT_QQ_values_vs_SymPy_including_scaled_and_zero_polynomials"
+    },
+    {
+      "accepted": true,
+      "masks": 10,
+      "name": "540_component_integer_vectors_vs_symbolic_masks"
+    },
+    {
+      "name": "ordinary_compatible_mask_omitted",
+      "reason": "compatible sign patterns missing, duplicated, reordered, or extraneous at 0000000000001111100",
+      "rejected": true
+    },
+    {
+      "accepted": true,
+      "name": "supplied_universal_gradient_leaf_all_patterns",
+      "path": "00000000000000000"
+    },
+    {
+      "name": "counterfeit_root_singular_preconditioner",
+      "reason": "singular preconditioner",
+      "rejected": true
+    }
+  ],
+  "controls_sha256": "7f57ed9ba5ad864391aa2e309834d9b61c33f673a6854247d44594cb10ec71d2",
+  "controls_sha256_after": "7f57ed9ba5ad864391aa2e309834d9b61c33f673a6854247d44594cb10ec71d2",
+  "node_certificate_sha256": "2992e3fad6df217e76f0c345c8b38109d233358c94d98715b90545105e49feb9",
+  "python": "3.12.14",
+  "python_flint": "0.9.0",
+  "scope": "independent verifier controls; no degree-eight count",
+  "seconds": 94.72681806499895,
+  "sources_unchanged": true,
+  "sympy": "1.14.0"
+}

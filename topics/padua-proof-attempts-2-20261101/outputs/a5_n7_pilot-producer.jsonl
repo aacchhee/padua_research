@@ -1,0 +1,9 @@
+{"node_cones": 36, "node_gap_positive": 36, "seconds": 4.197283744812012}
+{"construction_seconds": 4.19735860824585, "precision": 128}
+{"seconds": 18.722301244735718, "stats": {"visited": 1000, "gradient": 2475, "mask_checks": 2475, "discard": 491}, "pending": 19, "depth": 28, "unresolved": 0, "Pcache": 78}
+{"seconds": 76.01661491394043, "stats": {"visited": 4000, "gradient": 10296, "mask_checks": 10300, "discard": 1992, "failedmask": 9, "hessian": 4}, "pending": 17, "depth": 30, "unresolved": 0, "Pcache": 109}
+{"seconds": 113.96640992164612, "stats": {"visited": 5000, "gradient": 12859, "mask_checks": 12880, "discard": 2488, "failedmask": 131, "hessian": 21}, "pending": 25, "depth": 31, "unresolved": 0, "Pcache": 113}
+{"seconds": 146.3638162612915, "stats": {"visited": 6000, "gradient": 15422, "mask_checks": 15443, "discard": 2991, "failedmask": 131, "hessian": 21, "node_cone": 16}, "pending": 19, "depth": 33, "unresolved": 0, "Pcache": 166}
+{"seconds": 218.8997540473938, "stats": {"visited": 8000, "gradient": 20664, "mask_checks": 20685, "discard": 3993, "failedmask": 131, "hessian": 21, "node_cone": 18}, "pending": 15, "depth": 33, "unresolved": 0, "Pcache": 241}
+{"seconds": 249.93309569358826, "stats": {"visited": 9000, "gradient": 23003, "mask_checks": 23024, "discard": 4491, "failedmask": 131, "hessian": 21, "node_cone": 18}, "pending": 19, "depth": 33, "unresolved": 0, "Pcache": 241}
+{"seconds": 300.02130937576294, "stats": {"visited": 10550, "gradient": 26624, "mask_checks": 26645, "discard": 5264, "failedmask": 131, "hessian": 21, "node_cone": 18}, "pending": 23, "depth": 33, "unresolved": 0, "Pcache": 245, "interior": 0, "leaf_counts": {"gradient": 26179, "hessian": 2, "node_cone": 18}, "leaf_pattern_records": 26181, "node_leaves": 18, "maximum_ambiguity": 36, "interior_complete": false, "complete": false}

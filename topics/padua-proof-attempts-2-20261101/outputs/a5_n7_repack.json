@@ -1,0 +1,57 @@
+{
+  "compression": {
+    "check": "SHA256",
+    "container": "XZ",
+    "extreme": true,
+    "filter": "LZMA2",
+    "preset": 9
+  },
+  "decoded_bytes": 7702326,
+  "decoded_bytes_identical": true,
+  "decoded_sha256": "f0adb38cdd13dd8b30a813a4143b567f1b564f343b5ebd792a6edd5f58f1f018",
+  "dont_write_bytecode": true,
+  "format": "a5-mechanical-xz-repack-v1",
+  "global_input": {
+    "bytes": 9493,
+    "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_n7_global.raw.json",
+    "sha256": "ee970b83bab7b994cc2cc34b9378e3e500a585092a9396690ef4ccd787c6511c"
+  },
+  "global_only_binding_field_changed": true,
+  "global_output": {
+    "bytes": 9493,
+    "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_n7_global.json",
+    "sha256": "b309483ba2b1c7dc5c83bc23d9cfcb0dfb68191fb8b3677f0d0124e0655a17cb"
+  },
+  "input": {
+    "bytes": 856807,
+    "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_n7_certificate.json.gz",
+    "sha256": "e55b0b5592b60d4d4401478605d6ed3f4dd62a84472b414ba15d1eba9155693b"
+  },
+  "input_claimed_complete": true,
+  "output": {
+    "bytes": 436960,
+    "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/outputs/a5_n7_certificate.json.xz",
+    "sha256": "9338e01c89482acd4e3e948812a62b5511ca6d9afcf87672fad053ee28cfaa85"
+  },
+  "program_argv": [
+    "topics/padua-proof-attempts-2-20261101/code/a5_repack_certificate.py",
+    "topics/padua-proof-attempts-2-20261101/outputs/a5_n7_certificate.json.gz",
+    "--output",
+    "topics/padua-proof-attempts-2-20261101/outputs/a5_n7_certificate.json.xz",
+    "--global-file",
+    "topics/padua-proof-attempts-2-20261101/outputs/a5_n7_global.raw.json",
+    "--global-output",
+    "topics/padua-proof-attempts-2-20261101/outputs/a5_n7_global.json",
+    "--receipt",
+    "topics/padua-proof-attempts-2-20261101/outputs/a5_n7_repack.json"
+  ],
+  "python": "3.12.14",
+  "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+  "scope": "lossless packaging only; no count or global verification",
+  "source": {
+    "bytes": 6378,
+    "path": "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_repack_certificate.py",
+    "sha256": "e1cc7fe03b69d5542fabf9d2bc8052e71bf7c33398f68d23543d2610241c7332"
+  },
+  "source_unchanged": true
+}

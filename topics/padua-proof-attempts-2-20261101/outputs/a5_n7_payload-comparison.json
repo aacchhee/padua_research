@@ -1,0 +1,18 @@
+{
+  "count_payloads_equal_after_removing_only_phase_times": true,
+  "files": [
+    {
+      "bytes": 436960,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n7_certificate.json.xz",
+      "sha256": "9338e01c89482acd4e3e948812a62b5511ca6d9afcf87672fad053ee28cfaa85"
+    },
+    {
+      "bytes": 436504,
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n7_certificate.json.xz",
+      "sha256": "a8a78bc7d206507103710d52e5279842b70d5bc1f38dd6c3fe2eca6a5e4fc00a"
+    }
+  ],
+  "format": "a5-n7-mathematical-payload-comparison-v1",
+  "global_payloads_equal_after_removing_only_raw_certificate_binding": true,
+  "scope": "representation comparison only; not proof verification"
+}

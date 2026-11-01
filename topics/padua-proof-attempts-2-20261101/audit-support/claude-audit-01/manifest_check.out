@@ -1,0 +1,23 @@
+Counter({'out_ok': 378, 'in_ok': 294}) bad []
+topic files 380 outputs 378 not in manifest: ['topics/padua-proof-attempts-2-20261101/evidence-manifest.json', 'topics/padua-proof-attempts-2-20261101/handoffs/01-work.md']
+exclusions ['evidence-manifest.json excludes itself to avoid a recursive hash', 'numbered handoffs are Git-pinned publication metadata, excluded because required post-candidate status closure/addition occurs in the following commit', 'untracked prototypes and unstaged tracked edits are excluded until staged for a checkpoint', '__pycache__ files are interpreter cache, not evidence']
+outputs/ files 203 total 4473896 max (637163, 'topics/padua-proof-attempts-2-20261101/outputs/a5_n8_interior_candidate.json.gz')
+changed_compared [{"path": "literature/CORPUS.md", "old_git_blob": "f334e7ab59eed0471aaae2520ad7787c55e14f03", "new_git_blob": "66d1190c23e7a011840b06bdfbfcecf63f21ace3"}, {"path": "literature/INDEX.md", "old_git_blob": "279327ef4471e174abf2c4e4a344847babca6fa9", "new_git_blob": "3150ed3097aa2d000ea58dd68aec1bfd00223616"}, {"path": "state/IDEAS.md", "old_git_blob": "60580dbe8be3e373837a0a6a04ec8810af0e87e8", "new_git_blob": "3bc9f45599e3bd3b29ef08dd8673793732b79055"}, {"path": "topics/programme-ideas-20261031/OPEN_TARGETS.md", "old_git_blob": "7d19248df1d6897b370035a122b8104bb48c724f", "new_git_blob": "61f53d6468166a1f4ecae4ed5c4c6ea7d8412446"}, {"path": "topics/programme-ideas-20261031/checks/decisive-gen4-2.md", "old_git_blob": "0b6d226c97dda328cc571c8ea4a591ddba780537", "new_git_blob": "2a128194a6b6da260de123c0458079049b368766"}, {"path": "topics/programme-ideas-20261031/ideas/candidates.md", "old_git_blob": "5ff6097e49451c4119719faf47399dd5768abaa1", "new_git_blob": "00bee144e38d13540a4936c3afb99eadd6012b43"}, {"path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-01-finite-favard-pattern-pairs.md", "old_git_blob": "640eec26cec8a891f04ce444e68ba5760be97486", "new_git_blob": "527759ed82ddbc3681ad5e8f0df45c0a8e4bf760"}, {"path": "topics/programme-ideas-20261031/theory/programme-ideas-claude-N03-joint-ritz-converse-refuted.md", "old_git_blob": "1e2be11ea7ae99f5d39512569b06af8a15d60aee", "new_git_blob": "9f0f7d5229c63053d20378a9789e2ace7d7858e5"}, {"path": "topics/programme-i
+pins {
+"main_b3_b1_context": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+"main_results_tracking_rule": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+"main_mz_registry_update": "e0d9e3d08ee26c3b82a295f33b6ff99d928f22b9",
+"part1_and_rules": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
+"part1_audit_arrived": "95279b833bca5967fcf47c1b71a56ff622185b4e",
+"main_part1_merged": "806cc7b4509fd93bae652f9545d32d95529f8281",
+"part1_final_branch": "752ba068589683afe644b505d673f8da1529cbf0",
+"part1_main_sync_arrived": "93da3be26dbddf9ec2446af578fe8015bb4eeada",
+"part1_response_arrived": "7b8884a2f98518784ff3698dd2f3f9c49c9cdd62",
+"literature_index_update": "cf89b140530d5838bdb208a8c28f3e7aa676ace3",
+"current_main_and_rules": "e24b21fe43cdd090f6dfac269147e75185f04c5b",
+"programme_final": "b46b4dea18ce2c933489a211b0b6819dfd32ca70",
+"main_observed": "9739a0c56b7a3976422ce60a8441bfbbfd6554df",
+"programme": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+"part1_programme": "cadb35066160e466cb1704b9791ad6f374446422",
+"lanczos": "a2dd845b8a231e1b00733e1361e2a9ad3bad222f"
+}
