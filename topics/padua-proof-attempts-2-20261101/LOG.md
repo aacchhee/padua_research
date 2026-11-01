@@ -156,3 +156,9 @@
 - N6 frozen producer modules/schema, analytic field40, pilot receipt and OPEN attempt are checkpointed alongside completed N5; its full run is still pending in/tmp and is not represented as complete evidence. N7/N8 prototypes remain untracked until their own durable checkpoints.
 
 - Published scientific checkpoint f5f074e certifies n5 and preserves the frozen OPEN n6 extension. Changed-index integration completed cleanly; no own topic file or frozen source was altered. Required generic rule blobs remain identical to e24b21f. Literature provenance now includes cf89b14 separately.
+
+### Part1 fresh-main synchronization arrival — impact before integration
+
+- PR9 advanced to `93da3be26dbddf9ec2446af578fe8015bb4eeada`; PR12 reports temporary base divergence. Fetched that immutable head and read the full relevant LOG/pr-prep/proposal diff, main-sync receipt and numbered handoff. Part1 imported exactly the same cf89b14 main now present here, then published administrative source/registry preservation receipts and its own handoff.
+- Direct comparison confirms ZERO changed part1 theory/code/scientific-output/audit/response paths since7b8884a. No mathematical finding or altered hypothesis landed; no dependent run is paused or restarted. Rules/state/INDEX/.github match our current merged copies exactly. The accepted audit qualification remains unchanged.
+- Part1 LOG and preparation inputs changed, triggering AC's integration exception. Merge pinned93da3be after this impact entry, never rebase; inherit only six changed/new Part1 administrative files relative to our head. No Part1 file is authored here. Add separate provenance pins for those administrative paths, retain original scientific/audit/response pins, and keep PR12's requested base branch.
