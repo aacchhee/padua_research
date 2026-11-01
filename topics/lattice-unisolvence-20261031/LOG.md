@@ -1,6 +1,6 @@
 # Unisolvent lattice subsets beyond checkerboards
 
-Stage: WORK
+Stage: PR
 Next: `Claude (Opus 5.5 xhigh): Continue codex/lattice-unisolvence-20261031.`
 
 ## Authority / provenance
@@ -60,4 +60,10 @@ F2's proposed additive-separation result is retained in the immutable audit for 
 
 Original direction/checker hash manifests remain historical snapshots at the audited source; appended history changes their full-file hashes but not their mathematical prefixes. The response checker verifies those prefixes and unchanged producer payloads explicitly. The two pre-existing verbatim MZ input lines and generated SVG whitespace are retained rather than rewriting audited source/artifact bytes; the authored response patch is checked separately.
 
-Current stage remains WORK until the focused registry/ledger review and actual PR#4→PR#5 rehearsal pass. No PR is merged by this agent.
+The registry checker and focused semantic review pass. The actual main→PR#4→PR#5 rehearsal also passes, with exact whole-tree equality after each squashed candidate; its only PR#5 CURRENT conflict was resolved by preserving every surrounding byte and every accepted ID. Current Stage PR; formal focused-review hashes are in response-review/. No PR is merged by this agent.
+
+
+Rehearsal source receipts: response-01-rehearsal.json; sourcePR4ad40c38, sourcePR5 8d4ef1d. These are exact candidate trees, followed only by response/review/publication metadata. No live merge was performed.
+
+Stage: PR
+Next: `Codex (gpt-6.1-sol medium): Check PR #4 then stacked PR #5 before AC’s merge decisions.`

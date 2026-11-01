@@ -1,0 +1,22 @@
+{
+  "refs": {
+    "charter": "08fafe62d9798385dfafaacc9a41344272737e68",
+    "main": "07c5f5465d6de306aa81dbe8ca1f615295163864",
+    "topic": "3f369611f364c8bab41b8a48f1414f88b21937ec"
+  },
+  "charter_rows_changed_in_main": {
+    "PROOF_STATUS.md": [],
+    "ID_CROSSWALK.md": [],
+    "state/IDEAS.md": [],
+    "literature/INDEX.md": []
+  },
+  "canonical_duplicate_rows": {
+    "charter:PROOF_STATUS.md": {},
+    "main:PROOF_STATUS.md": {},
+    "topic:PROOF_STATUS.md": {},
+    "charter:literature/INDEX.md": {},
+    "main:literature/INDEX.md": {},
+    "topic:literature/INDEX.md": {}
+  },
+  "charter_scientific_files_changed_in_main": []
+}
