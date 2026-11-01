@@ -1,4 +1,6 @@
-# PD-T?mz2d-codex-01 — Exact signed Padua aliases and rational Gram pencil
+# PD-T106 — Exact signed Padua aliases and rational Gram pencil
+
+Provisional alias: `PD-T?mz2d-codex-01`. Final ID assigned at PR preparation, 2026-11-01; required Claude audit PENDING.
 
 ID kind: PD-T.
 Aliases: checkerboard complement alias; folded Padua moments; rational
@@ -7,7 +9,7 @@ Hankel/Toeplitz defect; signed-total-degree truncation (now split).
 Split from: supporting exact representation for the OPEN signed-Padua
 targets PD-T028; this is not a proved conjunct of those spectral targets.
 Split into: the separately substantive masked-tensor operator architecture and
-truncation norm are PD-T?mz2d-codex-04 in `mz2d-defect-structure.md`.
+truncation norm are PD-T109 in `mz2d-defect-structure.md`.
 The orchestrator will record the crosswalk at PR preparation.
 
 ## Statement
@@ -72,7 +74,7 @@ eigenvalues of the Legendre Gram matrix `G_(m,n)`.
 
 The separately substantive bounded masked-tensor architecture and its
 one-dimensional truncation norm are split into
-[PD-T?mz2d-codex-04](mz2d-defect-structure.md), which depends on these exact
+[PD-T109](mz2d-defect-structure.md), which depends on these exact
 aliases. They are not required for the proof of (1)--(4).
 
 ## Definitions
@@ -84,7 +86,7 @@ Chebyshev checkerboard weights used in a cardinal formula are denoted
 `rho`, never identified with these signed weights.
 
 The separate scalar Hankel/Toeplitz and signed-degree truncation
-definitions are in PD-T?mz2d-codex-04.
+definitions are in PD-T109.
 
 ## Assumptions
 
@@ -227,7 +229,7 @@ generally irrational nodes or orthonormal Legendre scaling.
 
 The all-degree nodal representative and rational Gram pencil are proved.
 The D1 structural kill criterion is decided separately by
-PD-T?mz2d-codex-04, which supplies the bounded separable architecture
+PD-T109, which supplies the bounded separable architecture
 and its norm control. The alias formula alone does not pass that gate.
 
 In particular the proof does not transplant the one-dimensional
@@ -260,7 +262,7 @@ exact-engine, D2 and D3 workers before their dependent proof work.
 
 2026-11-01, orchestrator requested workflow split: the original combined
 statement additionally asserted the following separately substantive
-architecture, now preserved verbatim in PD-T?mz2d-codex-04:
+architecture, now preserved verbatim in PD-T109:
 
 On the full moment range `a+b<=2m-2`, `E_m` is the sum of ten separable
 scalar moment kernels, supported on five explicit regions, each cut

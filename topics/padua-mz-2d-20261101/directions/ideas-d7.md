@@ -1,4 +1,4 @@
-# IDEA?mz2d-codex-50 — Disjoint coordinate defects on the total-degree tensor control
+# IDEA-227 — Disjoint coordinate defects on the total-degree tensor control
 
 Aliases: exact tensor-CC extreme eigenvalues; wedge decomposition;
 total-degree Hankel pullback; no mixed alias term.
@@ -13,7 +13,7 @@ total-degree Hankel pullback; no mixed alias term.
 - Cheapest decisive test: degree-count the mixed defect, then identify its two row supports before any spectrum.
 - Kill criterion written before testing: a single legal pair with both coordinate defects nonzero, or an index belonging to both active coordinate supports, stops the exact decomposition. A later floating mismatch also stops the claimed extrema formula but finite agreement cannot prove it.
 - Test discriminability: the exact support test is valid for all m,n in the stated range; it can justify an operator identity, while finite spectral tests only check implementation.
-- Actual test results: pending the written test/proof.
-- Disposition: one bounded active family, no additional catalogue entries or families proposed.
-- Canonical theory / ID: prospective PD-T?mz2d-codex-50, `mz2d-tensor-control.md`.
+- Actual test results: the mixed defect requires forbidden total degree at least 2m+3, and the remaining supports are the disjoint wedges a-b>m-n and b-a>m+1-n. Full analytic proof establishes exact tensor extrema and the stated one-dimensional consequences. A 20-case float64 regression found maximum extreme discrepancy 1.12e-15; it is diagnostic only.
+- Disposition: retained PROVED analytic theorem for one family; other named families remain deferred pending their primary conventions. No failed candidate or D7 negative record was generated.
+- Canonical theory / ID: PD-T117, `mz2d-tensor-control.md`; required audit pending.
 - History: D7 activated by root only after D2/D3 STOP, 2026-11-01; requested gpt-6.1-sol xhigh.

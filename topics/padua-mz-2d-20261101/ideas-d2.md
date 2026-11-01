@@ -8,7 +8,7 @@ Inspected the complete headings, IDs, aliases and summaries of `state/IDEAS.md`,
 
 D1's finite-family decomposition verdict PASS was received before generating D2 mechanisms. D1 supplies finitely many tensor Toeplitz/Hankel kernels under triangular masks, with generic logarithmic mask bounds, not the mass-normalized threshold below two.
 
-## IDEA?mz2d-codex-10 — transfer the one-dimensional coefficient sign proof
+## IDEA-212 — transfer the one-dimensional coefficient sign proof
 
 Aliases: signed-Padua Z-matrix; absolute-coefficient comparison; diagonal sign switching.
 
@@ -25,10 +25,10 @@ Aliases: signed-Padua Z-matrix; absolute-coefficient comparison; diagonal sign s
 - Actual test results and committed evidence: exact cycle `1,T2(x),T2(y)` has positive off-diagonal sign product for every `m>=3`, invariant under every switch. At `m=4`, `H−R` also has entries `−4/9` and `2/15`. Complete written proof in the linked PD-N.
 - Disposition and precise rejected scope, if any: **REJECTED: failed**, for this coefficient-sign transfer on every `m>=3`; no spectral threshold is refuted.
 - Disposition reason: PROVED failure of the required switchable Z-matrix property; a separate exact mixed-sign witness kills the inherited defect sign.
-- Canonical theory / negative-result ID: [PD-N?mz2d-codex-10](../../tracks/mz-constants/theory/mz2d-upper-sign-obstruction.md), PROVED analytic mechanism failure.
+- Canonical theory / negative-result ID: [PD-N045](../../tracks/mz-constants/theory/mz2d-upper-sign-obstruction.md), PROVED analytic mechanism failure.
 - Topic / audit / history: D2; Claude audit pending.
 
-## IDEA?mz2d-codex-11 — direct nodal domination by doubled tensor CC
+## IDEA-213 — direct nodal domination by doubled tensor CC
 
 Aliases: checkerboard density bound; tensor Lebesgue weight majorant.
 
@@ -45,10 +45,10 @@ Aliases: checkerboard density bound; tensor Lebesgue weight majorant.
 - Actual test results and committed evidence: floating `m=2..20` diagnostic found ratios above two; the exact `m=2` node `(0,−1)` has Padua weight `4/9` and tensor weight `4/27`, ratio three. Hand-checkable cardinal and moment proof is in the linked PD-N; full diagnostic command/provenance in directions/D2.md.
 - Disposition and precise rejected scope, if any: **REJECTED: refuted**, universal pointwise factor-two majorant.
 - Disposition reason: PROVED exact counterexample at `m=2`; a restricted polynomial-space Loewner comparison is not refuted.
-- Canonical theory / negative-result ID: [PD-N?mz2d-codex-11](../../tracks/mz-constants/theory/mz2d-upper-tensor-obstruction.md), PROVED analytic counterexample.
+- Canonical theory / negative-result ID: [PD-N046](../../tracks/mz-constants/theory/mz2d-upper-tensor-obstruction.md), PROVED analytic counterexample.
 - Topic / audit / history: D2; bounded second round; independent audit pending.
 
-## IDEA?mz2d-codex-12 — parity-block Schur control with tensor diagonal blocks
+## IDEA-214 — parity-block Schur control with tensor diagonal blocks
 
 Aliases: mixed-parity alias block; normalized cross contraction; block Schur complement.
 
@@ -65,11 +65,11 @@ Aliases: mixed-parity alias block; normalized cross contraction; block Schur com
 - Actual test results and committed evidence: exact parity and mixed-kernel formulas written in the OPEN theory record. Small floating `m=3..15` Schur diagnostics were below one, with maximum about `.685`; provenance and all values in directions/D2.md. No all-degree positive diagonal-block or mass-normalized contraction estimate was derived.
 - Disposition and precise rejected scope, if any: **deferred**, after the bounded third round; universal upper target **OPEN**.
 - Disposition reason: no proved mass-normalized contraction inequality. Resume with an actual one-dimensional estimate of the combined mixed kernel and diagonal-block floors; finite agreement and generic logarithmic mask bounds are insufficient. This is not a PD-N.
-- Canonical theory / negative-result ID: [PD-T?mz2d-codex-10](../../tracks/mz-constants/theory/mz2d-upper-open.md), OPEN; no negative ID for mere deferral.
+- Canonical theory / negative-result ID: [PD-T110](../../tracks/mz-constants/theory/mz2d-upper-open.md), OPEN; no negative ID for mere deferral.
 - Topic / audit / history: D2; at most one final bounded analytic round; independent audit pending.
 
 ## Round ledger
 
-1. Sign comparison: exact invariant triangle kills direct transfer for every `m>=3`; scoped PD-N?mz2d-codex-10 retained.
-2. Pointwise tensor weight comparison: exact `m=2` ratio three kills doubled nodal majorant; scoped PD-N?mz2d-codex-11 retained.
+1. Sign comparison: exact invariant triangle kills direct transfer for every `m>=3`; scoped PD-N045 retained.
+2. Pointwise tensor weight comparison: exact `m=2` ratio three kills doubled nodal majorant; scoped PD-N046 retained.
 3. Parity-block comparison: remaining mass-normalized contraction and diagonal positivity are unproved; route deferred, target OPEN. **D2 STOP.**

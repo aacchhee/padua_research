@@ -1,9 +1,11 @@
-# PD-T?mz2d-codex-30 — signed hyperinterpolation norm from absolute weights
+# PD-T112 — signed hyperinterpolation norm from absolute weights
+
+Provisional alias: `PD-T?mz2d-codex-30`. Final ID assigned at PR preparation, 2026-11-01; required Claude audit PENDING.
 
 ID kind: PD-T. Aliases: absolute Gram repair; signed adjoint norm;
 negative-leverage bound. Split from: D5 signed-hyperinterpolation application.
 Split into: none; reproduction/error application is the separate
-PD-T?mz2d-codex-31. The uniform Padua target is PD-T?mz2d-codex-32, OPEN.
+PD-T113. The uniform Padua target is PD-T114, OPEN.
 
 Rules/base `cf89b140530d5838bdb208a8c28f3e7aa676ace3`; 2026-11-01.
 Codex mathematical worker, allocated xhigh; actual runtime model metadata

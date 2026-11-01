@@ -1,4 +1,6 @@
-# PD-T?mz2d-codex-20 — Exact signed Lebesgue weights at the Padua node corners
+# PD-T111 — Exact signed Lebesgue weights at the Padua node corners
+
+Provisional alias: `PD-T?mz2d-codex-20`. Final ID assigned at PR preparation, 2026-11-01; required Claude audit PENDING.
 
 ID kind: PD-T.
 Aliases: harmonic corner-weight formula; two negative node corners;
@@ -6,7 +8,7 @@ logarithmic corner mass.
 Split from: supporting signed-form analysis for PD-T028, not a proved
 conjunct of its lower-spectrum or endpoint-order targets.
 Split into: the failed continuous-metric subtraction mechanism is recorded
-separately in [PD-N?mz2d-codex-21](mz2d-lower-corner-subtraction-obstruction.md).
+separately in [PD-N048](mz2d-lower-corner-subtraction-obstruction.md).
 
 ## Statement
 
@@ -66,7 +68,7 @@ and Claude audits pending).
 | Asymptotic (2) over both parities | PROVED | Elementary harmonic asymptotic |
 
 Candidate disposition: retained supporting result from
-IDEA?mz2d-codex-22; no historical novelty claim. The signed lower-spectrum
+IDEA-217; no historical novelty claim. The signed lower-spectrum
 and matching-order targets PD-T028 remain OPEN.
 
 ## Depends on

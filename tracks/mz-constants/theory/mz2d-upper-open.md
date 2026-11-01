@@ -1,12 +1,14 @@
-# PD-T?mz2d-codex-10 — endpoint Padua upper spectrum remains open
+# PD-T110 — endpoint Padua upper spectrum remains open
+
+Provisional alias: `PD-T?mz2d-codex-10`. Final ID assigned at PR preparation, 2026-11-01; required Claude audit PENDING.
 
 ID kind: PD-T.
 Aliases: signed two-dimensional upper MZ threshold; parity-block Schur target.
 Split from: the upper-threshold part of PD-T028, whose original other
 positivity, lower-order and eta-convergence questions remain unchanged.
 Split into: no proved part of the universal target. Scoped mechanism
-failures are [PD-N?mz2d-codex-10](mz2d-upper-sign-obstruction.md) and
-[PD-N?mz2d-codex-11](mz2d-upper-tensor-obstruction.md).
+failures are [PD-N045](mz2d-upper-sign-obstruction.md) and
+[PD-N046](mz2d-upper-tensor-obstruction.md).
 The orchestrator owns the final crosswalk and registry integration.
 
 ## Statement
@@ -49,12 +51,12 @@ separate substantive case theorem. The finite D0 spectra retain their
 own measured/certified scopes and supply no universal inference here.
 
 Candidate disposition: the target is retained OPEN; the final block
-route IDEA?mz2d-codex-12 is **deferred**, not rejected.
+route IDEA-214 is **deferred**, not rejected.
 
 ## Depends on
 
-[PD-T?mz2d-codex-01](mz2d-aliasing.md) gives exact moments and the
-mass pencil. [PD-T?mz2d-codex-04](mz2d-defect-structure.md) gives the
+[PD-T106](mz2d-aliasing.md) gives exact moments and the
+mass pencil. [PD-T109](mz2d-defect-structure.md) gives the
 bounded masked-tensor architecture. These are development proofs with
 their own pending audit. PD-T021 supplies only marginal compression;
 PD-T014/022 concern one-dimensional CC and do not control the missing
@@ -139,7 +141,7 @@ D1's finite-family scalar kernels retain triangular truncations, whose
 generic coefficient-space norms grow logarithmically with the degree.
 That bound does not yield a number below one after the continuous
 mass normalization in (4). Taking absolute values also discards the
-boundary and cross-coordinate signs exhibited in PD-N?mz2d-codex-10.
+boundary and cross-coordinate signs exhibited in PD-N045.
 No mass-weighted bound for the combined kernel (3), or usable positive
 lower bound for the two diagonal blocks, was derived in this bounded
 round. This is an unproved obligation, not an impossibility theorem

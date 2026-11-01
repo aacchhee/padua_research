@@ -1,4 +1,6 @@
-# PD-T?mz2d-codex-50 — Exact tensor-CC extrema on a total-degree space
+# PD-T117 — Exact tensor-CC extrema on a total-degree space
+
+Provisional alias: `PD-T?mz2d-codex-50`. Final ID assigned at PR preparation, 2026-11-01; required Claude audit PENDING.
 
 ID kind: PD-T.
 Aliases: disjoint coordinate defects; total-degree tensor spectral
@@ -98,7 +100,7 @@ and Claude audits pending.
 | Exact defect decomposition and extrema (1)--(3) | PROVED | Vanishing mixed term, disjoint supports and principal-submatrix comparison |
 | Interval and endpoint consequences (4)--(6) | PROVED | Direct applications of PD-T017/018/022/023 to (1)--(3) |
 
-Candidate disposition: retained, IDEA?mz2d-codex-50. This is a variant
+Candidate disposition: retained, IDEA-227. This is a variant
 of classical tensor quadrature with an explicit total-degree support
 property. No exhaustive priority or all-family claim is made.
 

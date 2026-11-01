@@ -3,7 +3,7 @@
 Rules/base and complete gate scope: [D3.md](D3.md). All identifiers are
 provisional. The bounded rounds were activated only after D1's PASS.
 
-## IDEA?mz2d-codex-20 — Marginal harmonic witness
+## IDEA-215 — Marginal harmonic witness
 
 Aliases: coordinate compression; endpoint-cancelled U packet.
 
@@ -21,7 +21,7 @@ Aliases: coordinate compression; endpoint-cancelled U packet.
 - Canonical theory: PD-T018 and PD-T021, no new ID.
 - History: pre-round dependency inspection, 2026-11-01.
 
-## IDEA?mz2d-codex-21 — Multiply two critical coordinate packets
+## IDEA-216 — Multiply two critical coordinate packets
 
 Aliases: naive tensor log-four witness; split-degree U product.
 
@@ -37,10 +37,10 @@ Aliases: naive tensor log-four witness; split-degree U product.
 - Test discriminability: distinguishes an admissible tensor witness from an interpolation polynomial on an unrelated smaller grid.
 - Actual result: critical meshes give degree 2m-1; balanced actual-mesh tensor factors have the fixed positive lower bound epsilon^4/C_*^2.
 - Disposition: REJECTED: failed for the specified tensorization mechanism, with signed Padua cancellation outside its scope.
-- Canonical theory / negative ID: PD-N?mz2d-codex-20, `mz2d-endpoint-tensor-obstruction.md`, PROVED.
+- Canonical theory / negative ID: PD-N047, `mz2d-endpoint-tensor-obstruction.md`, PROVED.
 - History: preregistered 2026-11-01 after D1 PASS.
 
-## IDEA?mz2d-codex-22 — Control signed corners by leverage
+## IDEA-217 — Control signed corners by leverage
 
 Aliases: rank-two downdate; positive-node Schur complement; negative-corner leverage.
 
@@ -56,10 +56,10 @@ Aliases: rank-two downdate; positive-node Schur complement; negative-corner leve
 - Test discriminability: finite leverage above one would give an actual counterexample; finite values below one do not prove all-m positivity.
 - Actual results: exact corner weights are strictly negative for every m>=3 and have magnitude (4log m+O(1))/m^4. Their continuous rank-one norm is (log m)/6+O(1), so the crude fixed-constant subtraction fails. Positive-node leverage eigenvalues are below .424 in the actual bounded diagnostic m2,3,4,5,8,9,16,17,32; no all-m inference.
 - Disposition: retained exact supporting formula; REJECTED: failed for the crude continuous-metric subroute; positive-node leverage deferred until an all-m metric estimate is supplied.
-- Canonical theory: PD-T?mz2d-codex-20 exact corner formula and PD-N?mz2d-codex-21 continuous-metric obstruction, both PROVED analytically. Universal positivity/order remain OPEN.
+- Canonical theory: PD-T111 exact corner formula and PD-N048 continuous-metric obstruction, both PROVED analytically. Universal positivity/order remain OPEN.
 - History: preregistered after D0 reported two negative corners in its even m10..100 measurements; root suggested the same route independently.
 
-## IDEA?mz2d-codex-23 — Symmetrized rotated harmonic packet
+## IDEA-218 — Symmetrized rotated harmonic packet
 
 Aliases: rhombus harmonic product; sum-difference U packet.
 
@@ -75,5 +75,5 @@ Aliases: rhombus harmonic product; sum-difference U packet.
 - Test discriminability: checks the precise admissible polynomial, not a rotated function outside the polynomial space.
 - Actual results: the explicit packet F_m=p_m(cos S)p_m(cos T) is admissible by the exact support formula, but its measured quotients increase from .8817 to .9420 at m8,16,32,64,128.
 - Disposition: REJECTED: failed for this packet's bounded improvement screen; no whole-family or all-m conclusion.
-- Canonical theory: PD-N?mz2d-codex-22, `mz2d-endpoint-rhombus-packet.md`, MEASURED with explicit finite scope.
+- Canonical theory: PD-N049, `mz2d-endpoint-rhombus-packet.md`, MEASURED with explicit finite scope.
 - History: preregistered 2026-11-01.

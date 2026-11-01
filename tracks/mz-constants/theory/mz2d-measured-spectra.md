@@ -1,4 +1,6 @@
-# PD-T?mz2d-codex-03 — Finite two-dimensional Padua spectral measurements
+# PD-T108 — Finite two-dimensional Padua spectral measurements
+
+Provisional alias: `PD-T?mz2d-codex-03`. Final ID assigned at PR preparation, 2026-11-01; required Claude audit PENDING.
 
 ID kind: PD-T.
 Aliases: D0 signed-Padua extension; rectangular tensor-CC spectral control.

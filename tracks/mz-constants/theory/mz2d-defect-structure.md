@@ -1,9 +1,11 @@
-# PD-T?mz2d-codex-04 — Finite masked-tensor Padua defect architecture
+# PD-T109 — Finite masked-tensor Padua defect architecture
+
+Provisional alias: `PD-T?mz2d-codex-04`. Final ID assigned at PR preparation, 2026-11-01; required Claude audit PENDING.
 
 ID kind: PD-T.
 Aliases: signed-degree triangular truncation; finite tensor Hankel/Toeplitz
 defect; half-plane mask Fourier control.
-Split from: original combined PD-T?mz2d-codex-01, whose exact alias and
+Split from: original combined PD-T106, whose exact alias and
 rational pencil remain in `mz2d-aliasing.md`. The full original combined
 architecture statement is preserved below.
 Split into: none. The orchestrator records the mapping at PR preparation.
@@ -29,7 +31,7 @@ or a sharp estimate in the continuous Lebesgue mass metric.
 
 Use the definitions and exact moments `q_m`, `h`, `E_m`, continuous
 mass `M` and signed mass `R` of
-[PD-T?mz2d-codex-01](mz2d-aliasing.md). Here `D=R-M` on the
+[PD-T106](mz2d-aliasing.md). Here `D=R-M` on the
 product-Chebyshev basis for `Pi_n`, `m>=2`, `0<=n<=m-1`.
 
 ## Definitions
@@ -69,7 +71,7 @@ claim. The spectral target PD-T028 remains OPEN.
 
 ## Depends on
 
-PD-T?mz2d-codex-01: all-degree alias formula (1) and rational defect
+PD-T106: all-degree alias formula (1) and rational defect
 pencil (3)--(4). No external theorem is used. Geometric sums, the sine
 chord inequality and elementary matrix norm properties are proved or
 used explicitly below.
@@ -85,7 +87,7 @@ are in `topics/padua-mz-2d-20261101/directions/D1.md`.
 
 ## Sources
 
-Local alias theorem PD-T?mz2d-codex-01; accepted cardinal dependency
+Local alias theorem PD-T106; accepted cardinal dependency
 PD-T101 is needed only for existence of the rule, not for the masked
 operator estimates. Separate campaign primary literature verification
 is not inherited as a proof. Historical originality is unverified.
@@ -231,7 +233,7 @@ bounds. No positivity, upper gap or endpoint asymptotic is asserted.
 2026-11-01, Codex mathematical developer `/root/d1_aliasing`, requested
 `gpt-6.1-sol` xhigh; resolved runtime model/effort metadata not exposed.
 The original combined alias-and-architecture statement was written in
-PD-T?mz2d-codex-01 before the orchestrator requested the workflow split.
+PD-T106 before the orchestrator requested the workflow split.
 Its architecture statement is preserved verbatim above, and original
 proof sections 3--5 are moved intact here. The split preserves both
 PROVED development claims and keeps all spectral targets OPEN; audit

@@ -1,7 +1,9 @@
-# PD-N?mz2d-codex-31 — endpoint Padua hyperinterpolation does not reproduce quadratics
+# PD-N051 — endpoint Padua hyperinterpolation does not reproduce quadratics
+
+Provisional alias: `PD-N?mz2d-codex-31`. Final ID assigned at PR preparation, 2026-11-01; required Claude audit PENDING.
 
 ID kind: PD-N. Aliases: endpoint E2 obstruction; endpoint projection
-obstruction. Split from: IDEA?mz2d-codex-34. Split into: none.
+obstruction. Split from: IDEA-223. Split into: none.
 
 Rules/base `cf89b140530d5838bdb208a8c28f3e7aa676ace3`; 2026-11-01.
 Codex, allocated xhigh; runtime model metadata unexposed.
@@ -9,7 +11,7 @@ Codex, allocated xhigh; runtime model metadata unexposed.
 ## Statement / negative-result scope
 
 Use the actual signed Lebesgue Padua rule and coefficient operator
-`H_(m,m-1)` from definitions.md and PD-T?mz2d-codex-31. For every integer
+`H_(m,m-1)` from definitions.md and PD-T113. For every integer
 `m>=3`, this operator reproduces `Pi_1` but fails to reproduce `Pi_2`.
 More explicitly set
 
@@ -51,7 +53,7 @@ pending.
 ## Depends on
 
 Degree-m cubature exactness, the fixed Padua nodes, and the elementary
-Chebyshev product identity. PD-T?mz2d-codex-31 proves affine reproduction.
+Chebyshev product identity. PD-T113 proves affine reproduction.
 No external theorem or numerical evidence is needed for (1).
 
 ## Proof

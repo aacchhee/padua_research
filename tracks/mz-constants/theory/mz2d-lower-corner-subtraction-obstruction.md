@@ -1,11 +1,13 @@
-# PD-N?mz2d-codex-21 — A crude continuous corner-subtraction bound diverges
+# PD-N048 — A crude continuous corner-subtraction bound diverges
+
+Provisional alias: `PD-N?mz2d-codex-21`. Final ID assigned at PR preparation, 2026-11-01; required Claude audit PENDING.
 
 ID kind: PD-N.
 Aliases: continuous Christoffel loss; negative-corner rank correction.
-Split from: IDEA?mz2d-codex-22, the crude continuous-metric sufficient
+Split from: IDEA-217, the crude continuous-metric sufficient
 comparison inside the leverage route.
 Split into: none. The exact corner weights are separately PROVED in
-[PD-T?mz2d-codex-20](mz2d-lower-corner-weights.md).
+[PD-T111](mz2d-lower-corner-weights.md).
 
 ## Statement
 
@@ -77,7 +79,7 @@ node form is outside this obstruction.
 
 ## Depends on
 
-PD-T?mz2d-codex-20, exact corner weight and its asymptotic. The elementary
+PD-T111, exact corner weight and its asymptotic. The elementary
 finite Legendre endpoint calculation is written below. No A2 dependency.
 
 ## Proof

@@ -1,4 +1,6 @@
-# PD-T?mz2d-codex-02 — Exact finite Padua spectrum enclosures
+# PD-T107 — Exact finite Padua spectrum enclosures
+
+Provisional alias: `PD-T?mz2d-codex-02`. Final ID assigned at PR preparation, 2026-11-01; required Claude audit PENDING.
 
 ID kind: PD-T.
 Aliases: signed-dominance congruence certificate; rational Padua pencil
@@ -6,7 +8,7 @@ inertia; finite two-dimensional MZ verification.
 Split from: finite verification support for PD-T028; no all-degree target
 is narrowed to these four cases.
 Split into: the separate eta-threshold refutation has its own negative
-record PD-N?mz2d-codex-01 in `mz2d-eta-counterexample.md`.
+record PD-N044 in `mz2d-eta-counterexample.md`.
 
 ## Statement
 
@@ -31,7 +33,7 @@ remains pending and is not replaced by the replay.
 
 In this file `H` is the continuous Chebyshev product mass matrix and `Q`
 is the quadrature mass matrix on `Pi_(m-1)`. These are `M,R` in
-[PD-T?mz2d-codex-01](mz2d-aliasing.md). A different matrix called `R_t`
+[PD-T106](mz2d-aliasing.md). A different matrix called `R_t`
 below is an integer change-of-coordinate proposal; it is never the
 quadrature mass matrix. Inertia counts are ordered `(negative,zero,positive)`.
 
@@ -39,7 +41,7 @@ quadrature mass matrix. Inertia counts are ordered `(negative,zero,positive)`.
 
 Precisely `m in {10,20,30,40}`, `n=m-1`, the signed Lebesgue rule and
 fixed coordinates. The analytic alias formula is as proved in
-PD-T?mz2d-codex-01. Exact execution trusts Python integer/Fraction and
+PD-T106. Exact execution trusts Python integer/Fraction and
 FLINT integer matrix arithmetic, the interpreter and the recorded
 execution environment. Numerical eigensolvers only select rational
 endpoints and integer transformation proposals; their accuracy is not
@@ -65,7 +67,7 @@ OPEN under their own targets.
 
 ## Depends on
 
-PD-T?mz2d-codex-01: rational exact moments, Chebyshev mass pencil and
+PD-T106: rational exact moments, Chebyshev mass pencil and
 Legendre change-of-basis identity. Elementary symmetric-matrix
 variational principles, continuous dependence of eigenvalues and
 Sylvester's law of inertia. No external numerical theorem is used.
@@ -154,7 +156,7 @@ For basis indices `(a,b),(c,d)` with `a+b,c+d<=m-1`, use the four
 product-to-sum modes `(r,s)` from `{a+c,|a-c|} x {b+d,|b-d|}`.
 The continuous mass entry is one quarter of the sum of `h_r h_s`;
 the quadrature mass entry is one quarter of the sum of the exact
-`q_m(r,s)` in PD-T?mz2d-codex-01. Multiplicities are retained. These
+`q_m(r,s)` in PD-T106. Multiplicities are retained. These
 formulas construct both matrices in rational arithmetic before any
 eigensolve is called. `H` is positive definite, since a nonzero real
 polynomial has positive squared Lebesgue integral. The generalized

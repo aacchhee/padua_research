@@ -1,10 +1,12 @@
-# PD-N?mz2d-codex-01 — A finite signed-Padua eta greater than three quarters
+# PD-N044 — A finite signed-Padua eta greater than three quarters
+
+Provisional alias: `PD-N?mz2d-codex-01`. Final ID assigned at PR preparation, 2026-11-01; required Claude audit PENDING.
 
 ID kind: PD-N.
 Aliases: Padua m30 threshold witness; integer Chebyshev Rayleigh
 counterexample; eta-three-quarter transfer.
-Split from: the finite threshold test of IDEA?mz2d-codex-02; the
-exact spectral enclosures remain separate in PD-T?mz2d-codex-02.
+Split from: the finite threshold test of IDEA-211; the
+exact spectral enclosures remain separate in PD-T107.
 Split into: none.
 
 ## Statement
@@ -97,7 +99,7 @@ different-agent exact verification.
 
 ## Negative-result scope (PD-N only)
 
-Attempted mechanism: IDEA?mz2d-codex-02, the suggested uniform
+Attempted mechanism: IDEA-211, the suggested uniform
 three-quarter MZ threshold for the signed Lebesgue Padua rules in the
 window `n=m-1`. The closest local predecessor is PD-N004/IDEA-068,
 the separate one-dimensional CC eta-threshold refutation. This is a
@@ -111,9 +113,9 @@ eigenvalues, convergence to one or endpoint logarithmic laws.
 
 ## Depends on
 
-PD-T?mz2d-codex-01 exact aliases and rational Gram pencil, plus the
+PD-T106 exact aliases and rational Gram pencil, plus the
 finite-dimensional symmetric Rayleigh principle. It does **not**
-depend on proving all eight intervals in PD-T?mz2d-codex-02: direct
+depend on proving all eight intervals in PD-T107: direct
 evaluation of this fixed polynomial suffices.
 
 ## Checks
@@ -191,7 +193,7 @@ task. No historical novelty claim is made.
 
 ## Proof or evidence
 
-By the exact moment formula in PD-T?mz2d-codex-01, all entries of the
+By the exact moment formula in PD-T106, all entries of the
 Chebyshev continuous mass `H` and quadrature mass `Q` on `Pi_29` are
 rational and are obtained by the four product-to-sum moments with
 multiplicities. Insert the explicitly stored integer vector `z`.

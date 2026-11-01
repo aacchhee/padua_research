@@ -25,7 +25,7 @@ absolute measure. SVZ's total-variation limit concerns an integration
 functional, and ASV's general estimates assume positive weights. Neither
 is silently promoted to a signed Padua operator theorem.
 
-### IDEA?mz2d-codex-30 — transfer the signed upper Gram bound alone
+### IDEA-219 — transfer the signed upper Gram bound alone
 
 Aliases: signed analogue of PD-T025; free positivity transfer.
 
@@ -49,13 +49,13 @@ Aliases: signed analogue of PD-T025; free positivity transfer.
 - Test discriminability: exact three-node algebra decides the universal
   transfer claim; it says nothing adverse about a separate Padua bound.
 - Actual result: kill fires, with norm `(4t-2)/sqrt(2)`; analytic proof in
-  PD-N?mz2d-codex-30.
+  PD-N050.
 - Disposition: **REJECTED: refuted**, general signed transfer only. The
   actual Padua norm is not refuted.
 - Canonical negative record: `theory/mz2d-hyperinterpolation-signed-obstruction.md`
   under tracks/mz-constants.
 
-### IDEA?mz2d-codex-31 — absolute-weight duality and negative leverage
+### IDEA-220 — absolute-weight duality and negative leverage
 
 Aliases: signed hyperinterpolation adjoint norm; absolute Gram repair.
 
@@ -77,11 +77,11 @@ Aliases: signed hyperinterpolation adjoint norm; absolute Gram repair.
   duality before estimating; verify that a continuous function of norm one
   can attain each required nodal sign. Then verify `G_abs=G+2G_minus`.
 - Actual result: analytic identity and bounds survive; see
-  PD-T?mz2d-codex-30. No numerical test is required for this calculation.
+  PD-T112. No numerical test is required for this calculation.
 - Disposition: retained as a PROVED supporting result in development;
   independent audit pending.
 
-### IDEA?mz2d-codex-32 — reproduce only the degree permitted by exactness
+### IDEA-221 — reproduce only the degree permitted by exactness
 
 Aliases: signed relaxed-exactness error; `m>=n+r` reproduction.
 
@@ -101,11 +101,11 @@ Aliases: signed relaxed-exactness error; `m>=n+r` reproduction.
   and `r=n` separately. The latter is justified by this argument only when
   `2n<=m`; no endpoint projection is inferred.
 - Actual result: `||f-H_m,n f||_2 <= (2+sqrt(tau_m beta_abs(m,n)))E_r(f)`
-  proved in PD-T?mz2d-codex-31.
+  proved in PD-T113.
 - Disposition: equivalent reproduction argument with a signed-norm variant,
   retained; no PD-N for equivalence.
 
-### IDEA?mz2d-codex-33 — uniform signed Padua bounds: target and failed majorants
+### IDEA-222 — uniform signed Padua bounds: target and failed majorants
 
 Aliases: absolute Gram closure; negative-leverage control.
 
@@ -125,21 +125,21 @@ Aliases: absolute Gram closure; negative-leverage control.
   negative corner gives `beta_abs,chi >= |w_c|K_(m-1)(c,c)` with the latter
   equal to `(log m)/6+O(1)`. Since `tau_m>=4`, the proposed uniform
   `tau_m beta_abs` majorant diverges, as does the negative-leverage majorant.
-  Proof: PD-N?mz2d-codex-32. Their degree-dependent upper-bound inequalities
+  Proof: PD-N052. Their degree-dependent upper-bound inequalities
   remain valid. The actual operator norm has not been shown to diverge.
 - Disposition split: **REJECTED: failed** for the uniform absolute-Gram and
   bounded-negative-leverage mechanisms; the actual operator-norm target
   remains **deferred, OPEN**. Resume that target with direct weighted-L1
   control, a useful degree-dependent estimate, or another specified majorant
   that escapes this corner obstruction.
-- Canonical records: target PD-T?mz2d-codex-32, OPEN; failed-majorant
-  obstruction PD-N?mz2d-codex-32, PROVED in development.
+- Canonical records: target PD-T114, OPEN; failed-majorant
+  obstruction PD-N052, PROVED in development.
 - History: original title “uniform signed Padua operator bounds” and exact
   question above are preserved. The original “neither sufficient route has
   been closed” disposition is superseded only for the two uniform majorants
   by the new analytic obstruction; the actual-norm target is unchanged.
 
-### IDEA?mz2d-codex-34 — promote endpoint reproduction beyond degree one
+### IDEA-223 — promote endpoint reproduction beyond degree one
 
 Aliases: endpoint E2 estimate; endpoint projection error bound.
 
@@ -158,7 +158,7 @@ Aliases: endpoint E2 estimate; endpoint projection error bound.
   `T_(m+1)(y)=T_m(x)`. Any nonzero product defect kills reproduction of
   `Pi_2` and every E2-only estimate for all continuous inputs.
 - Actual result: the defects are respectively `h_(m-1)-h_(m+1)` and `h_m`,
-  both nonzero. Written proof: PD-N?mz2d-codex-31.
+  both nonzero. Written proof: PD-N051.
 - Disposition: **REJECTED: refuted** for this precise reproduction/error
   mechanism. No obstruction to an estimate with an aliasing term or to
   convergence for a fixed function is claimed.

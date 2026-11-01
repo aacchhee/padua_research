@@ -1,8 +1,10 @@
-# PD-N?mz2d-codex-22 — A bounded rotated harmonic-packet test does not improve the endpoint witness
+# PD-N049 — A bounded rotated harmonic-packet test does not improve the endpoint witness
+
+Provisional alias: `PD-N?mz2d-codex-22`. Final ID assigned at PR preparation, 2026-11-01; required Claude audit PENDING.
 
 ID kind: PD-N.
 Aliases: symmetrized sum-difference U packet; rhombus harmonic product.
-Split from: IDEA?mz2d-codex-23, one explicitly specified packet only.
+Split from: IDEA-218, one explicitly specified packet only.
 Split into: none.
 
 ## Statement
@@ -51,7 +53,7 @@ were checked before interpreting any quotient.
 
 Overall status: **MEASURED**. Polynomial admissibility above is a routine
 exact check of this measured candidate, not a separate all-m spectral
-result. IDEA?mz2d-codex-23 is **REJECTED: failed** for the stated packet's
+result. IDEA-218 is **REJECTED: failed** for the stated packet's
 bounded improvement screen at precisely the five m values in (1).
 
 ## Negative-result scope

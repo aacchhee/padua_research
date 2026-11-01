@@ -1,0 +1,888 @@
+{
+  "apply_requested": false,
+  "root_approved_counts": {
+    "PD-T": 12,
+    "PD-N": 10,
+    "IDEA": 18
+  },
+  "new_LIT": 2,
+  "reused_LIT": 5,
+  "canonical_records": [
+    {
+      "provisional": "PD-T?mz2d-codex-32",
+      "final": "PD-T114",
+      "title": "uniform signed Padua hyperinterpolation norm target",
+      "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-uniform-open.md",
+      "status": "OPEN",
+      "depends_on": [],
+      "statement_sha256": "6a73a05011b9ec5c442d78dcd6cf67413dbf591d48bbeae9cfaa2cd49cdcde72"
+    },
+    {
+      "provisional": "PD-T?mz2d-codex-31",
+      "final": "PD-T113",
+      "title": "signed Padua hyperinterpolation at the correct reproduced degree",
+      "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-reproduction.md",
+      "status": "PROVED",
+      "depends_on": [
+        "PD-T025",
+        "PD-T106",
+        "PD-T112"
+      ],
+      "statement_sha256": "9b3a2a1e8fea96e53facd8a648760f2917123cccdaa2c9da52e10f40158b1f52"
+    },
+    {
+      "provisional": "PD-N?mz2d-codex-21",
+      "final": "PD-N048",
+      "title": "A crude continuous corner-subtraction bound diverges",
+      "path": "tracks/mz-constants/theory/mz2d-lower-corner-subtraction-obstruction.md",
+      "status": "PROVED",
+      "depends_on": [
+        "PD-T111"
+      ],
+      "statement_sha256": "4f2f2e6cc39fc5fddfcbb4ed891daa62b7b98a50f6705c7284ba8c2fc1ecbba7"
+    },
+    {
+      "provisional": "PD-N?mz2d-codex-40",
+      "final": "PD-N053",
+      "title": "direct rectangular Fej\u00e9r reconstruction aliases",
+      "path": "tracks/mz-constants/theory/mz2d-fixed-ratio-rectangular-obstruction.md",
+      "status": "PROVED",
+      "depends_on": [
+        "PD-T023"
+      ],
+      "statement_sha256": "8b53bd36cfe313ec1c8335c1c11d41d4e11ddd38a9529eb5a9633858401caa16"
+    },
+    {
+      "provisional": "PD-N?mz2d-codex-10",
+      "final": "PD-N045",
+      "title": "coefficient sign comparison fails for Padua",
+      "path": "tracks/mz-constants/theory/mz2d-upper-sign-obstruction.md",
+      "status": "PROVED",
+      "depends_on": [
+        "PD-T014",
+        "PD-T106"
+      ],
+      "statement_sha256": "5a4e7e96cb786b889aac580712db605499677c90d4f5f6059aaa15211c9c24ce"
+    },
+    {
+      "provisional": "PD-T?mz2d-codex-30",
+      "final": "PD-T112",
+      "title": "signed hyperinterpolation norm from absolute weights",
+      "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-absolute.md",
+      "status": "PROVED",
+      "depends_on": [
+        "PD-T025"
+      ],
+      "statement_sha256": "d69b7475db9ec95e7dbb9b9c914bafd2bc9ff4b706e468a8c850e08d4188bd26"
+    },
+    {
+      "provisional": "PD-N?mz2d-codex-32",
+      "final": "PD-N052",
+      "title": "uniform absolute-Gram and negative-leverage majorants fail",
+      "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-absolute-obstruction.md",
+      "status": "PROVED",
+      "depends_on": [
+        "PD-N048",
+        "PD-T111"
+      ],
+      "statement_sha256": "935b97bf71d3627b1ea4bc98c05b359fd7d141935286c9beadcff3bcf5e149ff"
+    },
+    {
+      "provisional": "PD-N?mz2d-codex-30",
+      "final": "PD-N050",
+      "title": "a signed upper Gram bound does not control continuous data",
+      "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-signed-obstruction.md",
+      "status": "PROVED",
+      "depends_on": [],
+      "statement_sha256": "a88533ad63ef708142535681d1968fe9c0b4e139a9db2da016dae22089b39196"
+    },
+    {
+      "provisional": "PD-T?mz2d-codex-02",
+      "final": "PD-T107",
+      "title": "Exact finite Padua spectrum enclosures",
+      "path": "tracks/mz-constants/theory/mz2d-certified-spectra.md",
+      "status": "PROVED",
+      "depends_on": [
+        "PD-T106"
+      ],
+      "statement_sha256": "7d4aa51a5019b3957510653f3867f5b9073f2cbe3567f981a0e583c50ec97b2e"
+    },
+    {
+      "provisional": "PD-T?mz2d-codex-10",
+      "final": "PD-T110",
+      "title": "endpoint Padua upper spectrum remains open",
+      "path": "tracks/mz-constants/theory/mz2d-upper-open.md",
+      "status": "OPEN",
+      "depends_on": [
+        "PD-T014",
+        "PD-T021",
+        "PD-T106",
+        "PD-T109"
+      ],
+      "statement_sha256": "6f2fba43d81c47348a93e17a840a9cbf8371b2ce0b886ad8e21df3a89affbbd9"
+    },
+    {
+      "provisional": "PD-N?mz2d-codex-20",
+      "final": "PD-N047",
+      "title": "Two critical coordinate packets do not tensorize at total degree m-1",
+      "path": "tracks/mz-constants/theory/mz2d-endpoint-tensor-obstruction.md",
+      "status": "PROVED",
+      "depends_on": [
+        "PD-T018",
+        "PD-T023"
+      ],
+      "statement_sha256": "175b6425b15f43dd7a486e76635d030adac9532272dcd0f03e8f1be31332e467"
+    },
+    {
+      "provisional": "PD-N?mz2d-codex-22",
+      "final": "PD-N049",
+      "title": "A bounded rotated harmonic-packet test does not improve the endpoint witness",
+      "path": "tracks/mz-constants/theory/mz2d-endpoint-rhombus-packet.md",
+      "status": "MEASURED",
+      "depends_on": [
+        "PD-T018",
+        "PD-T101"
+      ],
+      "statement_sha256": "276c8beefa4d1b3340ee72bd466e58b9e7d44009af950d909b5663f545223a6d"
+    },
+    {
+      "provisional": "PD-T?mz2d-codex-41",
+      "final": "PD-T116",
+      "title": "signed Padua MZ at every fixed degree ratio",
+      "path": "tracks/mz-constants/theory/mz2d-fixed-ratio.md",
+      "status": "OPEN",
+      "depends_on": [
+        "PD-N045",
+        "PD-N053",
+        "PD-T115"
+      ],
+      "statement_sha256": "504f5d4d3827cd1f29219bc49ee949a704346f8b683f610d511635f00c1a1d20"
+    },
+    {
+      "provisional": "PD-T?mz2d-codex-20",
+      "final": "PD-T111",
+      "title": "Exact signed Lebesgue weights at the Padua node corners",
+      "path": "tracks/mz-constants/theory/mz2d-lower-corner-weights.md",
+      "status": "PROVED",
+      "depends_on": [
+        "PD-T101"
+      ],
+      "statement_sha256": "1dcebbbe7fdca5e431b981ec3d0b41fac7065a92a65488b67c4501a14c2cae12"
+    },
+    {
+      "provisional": "PD-N?mz2d-codex-01",
+      "final": "PD-N044",
+      "title": "A finite signed-Padua eta greater than three quarters",
+      "path": "tracks/mz-constants/theory/mz2d-eta-counterexample.md",
+      "status": "PROVED",
+      "depends_on": [
+        "PD-T106",
+        "PD-T107"
+      ],
+      "statement_sha256": "2dc8ace7dabea0857950cdc4b53adf5af686dee24931b16c36bb95b48f95a40c"
+    },
+    {
+      "provisional": "PD-T?mz2d-codex-04",
+      "final": "PD-T109",
+      "title": "Finite masked-tensor Padua defect architecture",
+      "path": "tracks/mz-constants/theory/mz2d-defect-structure.md",
+      "status": "PROVED",
+      "depends_on": [
+        "PD-T106"
+      ],
+      "statement_sha256": "7f88f1abe0ba7257ccb95cf520bb6fef09dc0dd4340973e04ffce071e0861dcb"
+    },
+    {
+      "provisional": "PD-T?mz2d-codex-01",
+      "final": "PD-T106",
+      "title": "Exact signed Padua aliases and rational Gram pencil",
+      "path": "tracks/mz-constants/theory/mz2d-aliasing.md",
+      "status": "PROVED",
+      "depends_on": [
+        "PD-T013",
+        "PD-T021",
+        "PD-T028",
+        "PD-T101"
+      ],
+      "statement_sha256": "bb3469717d136f327dd0ff3c4e1b49ff427d9ca4035b2ef015aa7a15fb16bbb6"
+    },
+    {
+      "provisional": "PD-T?mz2d-codex-50",
+      "final": "PD-T117",
+      "title": "Exact tensor-CC extrema on a total-degree space",
+      "path": "tracks/mz-constants/theory/mz2d-tensor-control.md",
+      "status": "PROVED",
+      "depends_on": [
+        "PD-T013",
+        "PD-T017",
+        "PD-T018",
+        "PD-T022"
+      ],
+      "statement_sha256": "767f08d029da5abcd4747ed1cff39d2031f1d398e09d982dc877d697c31d57e0"
+    },
+    {
+      "provisional": "PD-T?mz2d-codex-03",
+      "final": "PD-T108",
+      "title": "Finite two-dimensional Padua spectral measurements",
+      "path": "tracks/mz-constants/theory/mz2d-measured-spectra.md",
+      "status": "MEASURED",
+      "depends_on": [
+        "PD-T026"
+      ],
+      "statement_sha256": "6d757e98035baf815b8668e4e8ead7c57ce251a4bce1b19398127b2ac92beb96"
+    },
+    {
+      "provisional": "PD-N?mz2d-codex-11",
+      "final": "PD-N046",
+      "title": "doubled tensor weights do not majorize Padua",
+      "path": "tracks/mz-constants/theory/mz2d-upper-tensor-obstruction.md",
+      "status": "PROVED",
+      "depends_on": [
+        "PD-T013"
+      ],
+      "statement_sha256": "9ac9e0edc506064a3b8cd78d0f1c2d592aa8b50f8ed23fcb193f73f9468fd3f8"
+    },
+    {
+      "provisional": "PD-T?mz2d-codex-40",
+      "final": "PD-T115",
+      "title": "exact diamond-filter reconstruction on the checkerboard",
+      "path": "tracks/mz-constants/theory/mz2d-fixed-ratio-diamond-reconstruction.md",
+      "status": "PROVED",
+      "depends_on": [
+        "PD-N053",
+        "PD-T023"
+      ],
+      "statement_sha256": "ba346477baa802adb55a7c7b136833e6427ed6871691365973f7ca6d021bb3fd"
+    },
+    {
+      "provisional": "PD-N?mz2d-codex-31",
+      "final": "PD-N051",
+      "title": "endpoint Padua hyperinterpolation does not reproduce quadratics",
+      "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-reproduction-obstruction.md",
+      "status": "PROVED",
+      "depends_on": [
+        "PD-T113"
+      ],
+      "statement_sha256": "7438ef2669b9fb9fe15b001ee7d41d74f3b2997f23874a93047c6215af19884a"
+    }
+  ],
+  "source_ID_only_impact": [
+    {
+      "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-uniform-open.md",
+      "before_sha256": "b9fd1371f19d9c1088546581485447e50240684251712776cd87deef860d4ee3",
+      "after_sha256": "0dbd3effb2f10364fe5e7b13670328f113c47caeb67e39c11f8b3f7751655860",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-reproduction.md",
+      "before_sha256": "59de128f347330316d7eae26091db255740477d1b6d65d1e1b58456556ded0b1",
+      "after_sha256": "72aa59b9a859226f59c10d0f25f3e32ee8d768bc27e227e66cb4efd9da5c4e30",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-lower-corner-subtraction-obstruction.md",
+      "before_sha256": "282bc22de3a15056bef406ddc6a3aa4f268a62b4c54a2574b82208e8240a63a1",
+      "after_sha256": "2d9201222f632bcec6e3697c650e0aa8ee8e5e5f6989a2e682df8f8ea7ca42fb",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-fixed-ratio-rectangular-obstruction.md",
+      "before_sha256": "777046f5b57d853db12e2df8470ba5b14624fbe3eb35f96bc3e6a30b9ca4dfbd",
+      "after_sha256": "0b6adc8afda570602603dddd9ee446e5e4a6b42ccdbb643bc80d31ced5488e12",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-upper-sign-obstruction.md",
+      "before_sha256": "e26df8e8f302d3ba8d6e4006cb2c488131e0f4ded9285a391f34493c6a630a2d",
+      "after_sha256": "5278ed8ba7e7381aa20d4358473df0cd5961839e74ed9d26d22d4fd548e7027b",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-absolute.md",
+      "before_sha256": "1bcea644be34a797d90b282287ad77c61d679da369f644107bdcadc4eb162b8b",
+      "after_sha256": "ed742f9928c3406cb954bd00378ccafa1d6db208f67a65bcce02cacc8b1f5da0",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-absolute-obstruction.md",
+      "before_sha256": "201f3a3347b3716c7ace06024535e2b9571987b58e59bc9f0dd61ca3069bd3e7",
+      "after_sha256": "183d6292bf9c477333bdb69ebe5579924b3bd6b5781ba1b7c6d8ffe67ce4c1ec",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-signed-obstruction.md",
+      "before_sha256": "b5dbb0f05752fb6484f4fda4896b327f3f17467cf1e508612c59f1ef843e523c",
+      "after_sha256": "2b68198e74eb686570023ca1fde12a7ac0c1c8e697598c6bb16560b5fa416508",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-certified-spectra.md",
+      "before_sha256": "81986b6379adedf3393173cf75388a99211d5c3330b34254e7d48d87cc7af795",
+      "after_sha256": "aa11dcd25558648774877d64afa4c194ee515533b7974d8dcac5a22e26b5f01d",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-upper-open.md",
+      "before_sha256": "482c2126cda6348539abfa6b1ffecd529b4f12327424e1e5d50cb9d919e024f0",
+      "after_sha256": "67287c2de59618be9f2a672d5aa389fa139c612a0cc7a5bcbb2e20987a879519",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-endpoint-tensor-obstruction.md",
+      "before_sha256": "c20da3825a1a28535763ac5a5b1ec9bdc0dd82a45875896ed7867969659543a2",
+      "after_sha256": "a0d3b5756a1ef3a7e153355bbb556e16f1b4b969f374fec2588a782ddaa16e77",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-endpoint-rhombus-packet.md",
+      "before_sha256": "308206c521f1182f8c18634835a062f686008a7854f08565c91f8bbd1a7b6f2a",
+      "after_sha256": "bc410b9e5debbd69cf3c108179b7fd3c8b723f5e03ef391705e978abceafec00",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-fixed-ratio.md",
+      "before_sha256": "a4eca46fd8d312ff09ceee74dd3a66fcf4cfe5ddde7c000a9bc54da5c3ff48e8",
+      "after_sha256": "9116dcb6203d585d2b3eeeee539812a0ffb568f7c9313096db42da7ba7d85c04",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-lower-corner-weights.md",
+      "before_sha256": "3c763e54a5758db7f444917c46d07312bc97c411f400b4c85f6a59af7232dc07",
+      "after_sha256": "38e730b7f8a11eea7265dc02d3163d128d7092a1a9cd9a38e8b6742daf87b56a",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-eta-counterexample.md",
+      "before_sha256": "ae52a472871b8ee4d9bf22f787bb417cb23e88dcedc041ed53360091e246d6e1",
+      "after_sha256": "8123353aa5d0fced7812d58b74da95cae90dfc9902655d3fd32ace2fbe14b583",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-defect-structure.md",
+      "before_sha256": "25bc96aa605afdfa9e16d6f05baf9a5e44a1800c1b56c0323272d936e2e47eec",
+      "after_sha256": "2c1ae9affe145c000e4a704d4f4b70e54c446419a9bd7bbe88a4d1d980c4407d",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-aliasing.md",
+      "before_sha256": "ca22c888e00b46c2caf569dd9221b9c490367a5f16384460b27b111ef3229947",
+      "after_sha256": "c6db7a52513e865ccd38b163eeaeace2300ccb775d69c0203d5d7f3d21e7a153",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-tensor-control.md",
+      "before_sha256": "7a652720ed5ca88d4bd9c3da6b1c1296957928c2f8436283f12400da627e0741",
+      "after_sha256": "400853f5686dfbeb9b0456a428bd327be8e03d915bc6a6d80b52962534caa460",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-measured-spectra.md",
+      "before_sha256": "292d4b91c1135a2e47adae09aecb5c604cbe16afc6f4da5b748bf62925f54ca9",
+      "after_sha256": "c15fd5570bb2fbac3234d3bdd0a989dc19608daeaef586b1495680248d53f32a",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-upper-tensor-obstruction.md",
+      "before_sha256": "c861784adce7fff04e3cd886969bd29489846688c8d5e0296ecfa42fc7a65ed8",
+      "after_sha256": "dbf14f6f85d5816125e132073ee9301cec9544cb24260815f2eb08fa82bc757f",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-fixed-ratio-diamond-reconstruction.md",
+      "before_sha256": "8d517cc6435a7936f4eb3572089e9990659e1a02b560ae602059c394b78ac4d5",
+      "after_sha256": "f1619b1919400bb3c168debbcca9dd5ba6e3bfbd145c355729ac0237789524ab",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-reproduction-obstruction.md",
+      "before_sha256": "b728d3d30b1ab1bb3ab26f661d1c0fa7875ba91f667f527466c124e991a8c451",
+      "after_sha256": "80e5e604cf451f923133a3644dd67176e42b5e9655c6cc23b47b7a3d0374c8f2",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/directions/ideas-d3.md",
+      "before_sha256": "1fbbb3cd362da9f9e8b70d408166c8e4fc98a4f3158e801522c2d7c39e2f0f79",
+      "after_sha256": "2e4ce1bd408fc5862ebe81ed31125433ad0369aa0f8d8c19c5c61c7f046e7896",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/directions/ideas-d7.md",
+      "before_sha256": "db118eb9206dce527b3866cb60d7a106b9e4524655b0a0e48855f726956cd245",
+      "after_sha256": "69e630b32c988280b84e9a8001e3ba406cd63032e27df0232fa24994e8accaf9",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/ideas-d1.md",
+      "before_sha256": "eff83aa4a270de3f3a7c95c11e728f6dbf0476fbb7358a772ba6f5d0b141c0ac",
+      "after_sha256": "0c448e103d5d940302b03326f1bd2a40a77d1fdce18f1a502d255ff02e433f7c",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/ideas-d2.md",
+      "before_sha256": "a259f838cf51acb44d6670dbcc7d5e584aad3167f615f1d4e629c80cc9cc01aa",
+      "after_sha256": "5ef2d81745fab5789412d5517e8ae42bc48a086c358bd20452488f3631bae588",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/ideas-d4.md",
+      "before_sha256": "82b9a33d86edb6c68d1fb454a7da8b1b769e0ba490407fcc97722fe8d8d0400a",
+      "after_sha256": "fae475dee990e33c5bd1f4c9a1f634525ebec2e1274e1a82d92bc18555b7fa72",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/ideas-d5.md",
+      "before_sha256": "5ea1a0dd640d59950cbf565c82271ab0630ec564c367533ddd8d6a6814343550",
+      "after_sha256": "10f95ee264892b5c48b2136e2891014c9eba457d05dad8463f537320a7b04ff5",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/definitions.md",
+      "before_sha256": "4ac0e391859a14e4d6f752f1244df0701e99d9b3d8ab8570bd632520f517c7db",
+      "after_sha256": "4ac0e391859a14e4d6f752f1244df0701e99d9b3d8ab8570bd632520f517c7db",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/literature.md",
+      "before_sha256": "b8922e27b54d60d631f1e48dc3ff993bbc6bcde37a2f6c7ac9eb32c2a2306054",
+      "after_sha256": "bf4d8be2e860a6056bbe8af918b02e0061f2cbaf51f5f6bf50693f907de5b58b",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/directions/D0.md",
+      "before_sha256": "7dbb314dd19ab415231aeeb1c56cce76c640354f8d58c6326cc470f4c35cde3e",
+      "after_sha256": "7dbb314dd19ab415231aeeb1c56cce76c640354f8d58c6326cc470f4c35cde3e",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/directions/D1.md",
+      "before_sha256": "8c814c2708a3ddce972d7eea01ade1d1901de330e22512943680cbcfd1b16e3b",
+      "after_sha256": "b3c20c8997b29865de4a1facf3c34a5854762874f76a282984b608c1efac30c0",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/directions/D2.md",
+      "before_sha256": "09d07679dd5cce1d0a2a8da9541cb80f8f7caa11c168ebd5d73f588814d91aa9",
+      "after_sha256": "b4e9a67dc2ca135ca13bfd0acac1e4cacaddd14b1d47a44cf45632301d955b8b",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/directions/D3.md",
+      "before_sha256": "45b378b177ce7d1ae0a0372f052329b6ef0276d81350869d5ef6b4f3c03461e2",
+      "after_sha256": "a841d792579fc9d0804f3d28166ce963e70fd2b69991104514aa6bb192e29e89",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/directions/D4.md",
+      "before_sha256": "03a096fa233d2e7b53e2a8aff24615483902391eca48d31a36f5de7717172adc",
+      "after_sha256": "40318e03531f1a99a80897d59a79e693cb38f779ef3dfc0d78e2bc03248ebc97",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/directions/D5.md",
+      "before_sha256": "7d2a603edaa41be9c031dee973a7a6434cabaae3ac3bc4b3343ce6483f96043f",
+      "after_sha256": "af4dc8fca14500a6f453ab8b5d67085581dff5ff85d2e4585875421c0fde7e12",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/directions/D6.md",
+      "before_sha256": "e6dda55da5fe9abc0af3af874f702f672190ae48b8660d6f7fe2a19ac406064f",
+      "after_sha256": "e6dda55da5fe9abc0af3af874f702f672190ae48b8660d6f7fe2a19ac406064f",
+      "normalized_ID_only_plus_alias_metadata": true
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/directions/D7.md",
+      "before_sha256": "03672c9219946e3dcdf716de102b679e4793646a6d0a36412df4dea834a68e0e",
+      "after_sha256": "4addc4eaaebdb10bd63435bc1a8394437c070fa91c515297874e5583931579cd",
+      "normalized_ID_only_plus_alias_metadata": true
+    }
+  ],
+  "protected_inputs": [
+    {
+      "path": "topics/padua-mz-2d-20261101/directions/d4-positive-floor-verification.md",
+      "sha256": "7cde49ddb70e36c070891247d41e436ac1a12a853843299089ad92698efe0b5f",
+      "bytes": 6705
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/evidence/d0-manifest.json",
+      "sha256": "91b2d9a4645ba4ca0d5451ef9f503a4d22dcf8972624f183d0559460317cd90f",
+      "bytes": 1256
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/evidence/d0-spectra.json",
+      "sha256": "3c5c702ed964b240a9e96bb0be55a2a3e86c2c71eb5e49706b7c58680879e4f5",
+      "bytes": 837344
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/evidence/exact-parity-scan.json",
+      "sha256": "d4f57cbe7c4185a662e0c7d6828ec8c323a8b3da39b17bab48ef025f09d17094",
+      "bytes": 6019
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/evidence/exact-parity-scan.py",
+      "sha256": "d517eaa0c2bf08305d6a647e1b57e363ba0c0f5a665c28390dea508c30991077",
+      "bytes": 1481
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/evidence/exact-spectra.json",
+      "sha256": "5456917afe8fea69b0a776270ef3ae79fdc33deb02d27f89648fc342f78b93de",
+      "bytes": 31822
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/evidence/independent-additional-checks.json",
+      "sha256": "2da16fa5c8f2f480ab7c12270b8c9b95ec49028f9df6b1cf4062af4f11897717",
+      "bytes": 3156
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/evidence/independent-exact-spectra.json",
+      "sha256": "18c8623442664aa119d3581b701d200315d454071d6b8f6c89cbaf540fe34d9c",
+      "bytes": 31834
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/handoffs/01-work.md",
+      "sha256": "e1b7495b6a535eb5e701c131498295c3fb118f8e02d064f80b21b4ccd7641d26",
+      "bytes": 3816
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/independent-checks.md",
+      "sha256": "d52745b92daa23c1a7596f2ba9ca2c49f6342610f9a1be81f10a216a7470577f",
+      "bytes": 5442
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/independent-math-d1.md",
+      "sha256": "0f0063891a624b0745d5209b504cba922b8e83623e5f271fd1bb2c73110f905c",
+      "bytes": 4827
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/independent-math-d2.md",
+      "sha256": "200982ca39e00abebb940c25607babf76bd8d2f9c8380723ae276ccd9428694d",
+      "bytes": 13012
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/supplementary-audit.md",
+      "sha256": "305aebd2065a181bc62131b9b394934759009108499a41148e2f0d2542827e66",
+      "bytes": 25864
+    },
+    {
+      "path": "tracks/mz-constants/code/m1_exact_check.py",
+      "sha256": "7a9b32260a90684e16fcd023e031fd3b91d5ea21ecce2ff351bbc034d68552e3",
+      "bytes": 3709
+    },
+    {
+      "path": "tracks/mz-constants/code/m2_endpoint.py",
+      "sha256": "71f516a44e4d1e46731b0e596b36ba8796577f823c11a267efaf6b71746142c0",
+      "bytes": 2962
+    },
+    {
+      "path": "tracks/mz-constants/code/m3_exact_check.py",
+      "sha256": "246bd4b95226182b0231730d7ad6ae6d7716623d31b28193c0e44d932825d2dd",
+      "bytes": 3003
+    },
+    {
+      "path": "tracks/mz-constants/code/mz2d_exact.py",
+      "sha256": "5d1f005e2307d3a26badc9c1a44ce313dc9126625a49fba5d59430c151cf9c70",
+      "bytes": 6421
+    },
+    {
+      "path": "tracks/mz-constants/code/mz2d_independent_check.py",
+      "sha256": "5e455d747dc5dca84c883ed900095ff4a2bb40767f4ebcb3261d7d583df7bdfc",
+      "bytes": 7617
+    },
+    {
+      "path": "tracks/mz-constants/code/mz2d_spectra.py",
+      "sha256": "623acdf06e4ad1c50c3c0562f47f037b8efa15fcc332c2f1ee7a7d0f88ee8b76",
+      "bytes": 8903
+    },
+    {
+      "path": "tracks/mz-constants/code/reproduce.py",
+      "sha256": "fe88a16d2ac08df96dc5e18a224ac1b0d46d5cec4310cc86fff0f7fda1aa44ac",
+      "bytes": 6216
+    }
+  ],
+  "changed_files": [
+    {
+      "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-uniform-open.md",
+      "before_sha256": "b9fd1371f19d9c1088546581485447e50240684251712776cd87deef860d4ee3",
+      "after_sha256": "0dbd3effb2f10364fe5e7b13670328f113c47caeb67e39c11f8b3f7751655860",
+      "bytes": 3592
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-reproduction.md",
+      "before_sha256": "59de128f347330316d7eae26091db255740477d1b6d65d1e1b58456556ded0b1",
+      "after_sha256": "72aa59b9a859226f59c10d0f25f3e32ee8d768bc27e227e66cb4efd9da5c4e30",
+      "bytes": 4856
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-lower-corner-subtraction-obstruction.md",
+      "before_sha256": "282bc22de3a15056bef406ddc6a3aa4f268a62b4c54a2574b82208e8240a63a1",
+      "after_sha256": "2d9201222f632bcec6e3697c650e0aa8ee8e5e5f6989a2e682df8f8ea7ca42fb",
+      "bytes": 5627
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-fixed-ratio-rectangular-obstruction.md",
+      "before_sha256": "777046f5b57d853db12e2df8470ba5b14624fbe3eb35f96bc3e6a30b9ca4dfbd",
+      "after_sha256": "0b6adc8afda570602603dddd9ee446e5e4a6b42ccdbb643bc80d31ced5488e12",
+      "bytes": 4821
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-upper-sign-obstruction.md",
+      "before_sha256": "e26df8e8f302d3ba8d6e4006cb2c488131e0f4ded9285a391f34493c6a630a2d",
+      "after_sha256": "5278ed8ba7e7381aa20d4358473df0cd5961839e74ed9d26d22d4fd548e7027b",
+      "bytes": 7274
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-absolute.md",
+      "before_sha256": "1bcea644be34a797d90b282287ad77c61d679da369f644107bdcadc4eb162b8b",
+      "after_sha256": "ed742f9928c3406cb954bd00378ccafa1d6db208f67a65bcce02cacc8b1f5da0",
+      "bytes": 5451
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-absolute-obstruction.md",
+      "before_sha256": "201f3a3347b3716c7ace06024535e2b9571987b58e59bc9f0dd61ca3069bd3e7",
+      "after_sha256": "183d6292bf9c477333bdb69ebe5579924b3bd6b5781ba1b7c6d8ffe67ce4c1ec",
+      "bytes": 5139
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-signed-obstruction.md",
+      "before_sha256": "b5dbb0f05752fb6484f4fda4896b327f3f17467cf1e508612c59f1ef843e523c",
+      "after_sha256": "2b68198e74eb686570023ca1fde12a7ac0c1c8e697598c6bb16560b5fa416508",
+      "bytes": 2650
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-certified-spectra.md",
+      "before_sha256": "81986b6379adedf3393173cf75388a99211d5c3330b34254e7d48d87cc7af795",
+      "after_sha256": "aa11dcd25558648774877d64afa4c194ee515533b7974d8dcac5a22e26b5f01d",
+      "bytes": 12622
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-upper-open.md",
+      "before_sha256": "482c2126cda6348539abfa6b1ffecd529b4f12327424e1e5d50cb9d919e024f0",
+      "after_sha256": "67287c2de59618be9f2a672d5aa389fa139c612a0cc7a5bcbb2e20987a879519",
+      "bytes": 7552
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-endpoint-tensor-obstruction.md",
+      "before_sha256": "c20da3825a1a28535763ac5a5b1ec9bdc0dd82a45875896ed7867969659543a2",
+      "after_sha256": "a0d3b5756a1ef3a7e153355bbb556e16f1b4b969f374fec2588a782ddaa16e77",
+      "bytes": 4000
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-endpoint-rhombus-packet.md",
+      "before_sha256": "308206c521f1182f8c18634835a062f686008a7854f08565c91f8bbd1a7b6f2a",
+      "after_sha256": "bc410b9e5debbd69cf3c108179b7fd3c8b723f5e03ef391705e978abceafec00",
+      "bytes": 5167
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-fixed-ratio.md",
+      "before_sha256": "a4eca46fd8d312ff09ceee74dd3a66fcf4cfe5ddde7c000a9bc54da5c3ff48e8",
+      "after_sha256": "9116dcb6203d585d2b3eeeee539812a0ffb568f7c9313096db42da7ba7d85c04",
+      "bytes": 5643
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-lower-corner-weights.md",
+      "before_sha256": "3c763e54a5758db7f444917c46d07312bc97c411f400b4c85f6a59af7232dc07",
+      "after_sha256": "38e730b7f8a11eea7265dc02d3163d128d7092a1a9cd9a38e8b6742daf87b56a",
+      "bytes": 5945
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-eta-counterexample.md",
+      "before_sha256": "ae52a472871b8ee4d9bf22f787bb417cb23e88dcedc041ed53360091e246d6e1",
+      "after_sha256": "8123353aa5d0fced7812d58b74da95cae90dfc9902655d3fd32ace2fbe14b583",
+      "bytes": 10764
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-defect-structure.md",
+      "before_sha256": "25bc96aa605afdfa9e16d6f05baf9a5e44a1800c1b56c0323272d936e2e47eec",
+      "after_sha256": "2c1ae9affe145c000e4a704d4f4b70e54c446419a9bd7bbe88a4d1d980c4407d",
+      "bytes": 10278
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-aliasing.md",
+      "before_sha256": "ca22c888e00b46c2caf569dd9221b9c490367a5f16384460b27b111ef3229947",
+      "after_sha256": "c6db7a52513e865ccd38b163eeaeace2300ccb775d69c0203d5d7f3d21e7a153",
+      "bytes": 11700
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-tensor-control.md",
+      "before_sha256": "7a652720ed5ca88d4bd9c3da6b1c1296957928c2f8436283f12400da627e0741",
+      "after_sha256": "400853f5686dfbeb9b0456a428bd327be8e03d915bc6a6d80b52962534caa460",
+      "bytes": 10874
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-measured-spectra.md",
+      "before_sha256": "292d4b91c1135a2e47adae09aecb5c604cbe16afc6f4da5b748bf62925f54ca9",
+      "after_sha256": "c15fd5570bb2fbac3234d3bdd0a989dc19608daeaef586b1495680248d53f32a",
+      "bytes": 5693
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-upper-tensor-obstruction.md",
+      "before_sha256": "c861784adce7fff04e3cd886969bd29489846688c8d5e0296ecfa42fc7a65ed8",
+      "after_sha256": "dbf14f6f85d5816125e132073ee9301cec9544cb24260815f2eb08fa82bc757f",
+      "bytes": 4413
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-fixed-ratio-diamond-reconstruction.md",
+      "before_sha256": "8d517cc6435a7936f4eb3572089e9990659e1a02b560ae602059c394b78ac4d5",
+      "after_sha256": "f1619b1919400bb3c168debbcca9dd5ba6e3bfbd145c355729ac0237789524ab",
+      "bytes": 6296
+    },
+    {
+      "path": "tracks/mz-constants/theory/mz2d-hyperinterpolation-reproduction-obstruction.md",
+      "before_sha256": "b728d3d30b1ab1bb3ab26f661d1c0fa7875ba91f667f527466c124e991a8c451",
+      "after_sha256": "80e5e604cf451f923133a3644dd67176e42b5e9655c6cc23b47b7a3d0374c8f2",
+      "bytes": 3828
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/directions/ideas-d3.md",
+      "before_sha256": "1fbbb3cd362da9f9e8b70d408166c8e4fc98a4f3158e801522c2d7c39e2f0f79",
+      "after_sha256": "2e4ce1bd408fc5862ebe81ed31125433ad0369aa0f8d8c19c5c61c7f046e7896",
+      "bytes": 7719
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/directions/ideas-d7.md",
+      "before_sha256": "db118eb9206dce527b3866cb60d7a106b9e4524655b0a0e48855f726956cd245",
+      "after_sha256": "69e630b32c988280b84e9a8001e3ba406cd63032e27df0232fa24994e8accaf9",
+      "bytes": 3056
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/ideas-d1.md",
+      "before_sha256": "eff83aa4a270de3f3a7c95c11e728f6dbf0476fbb7358a772ba6f5d0b141c0ac",
+      "after_sha256": "0c448e103d5d940302b03326f1bd2a40a77d1fdce18f1a502d255ff02e433f7c",
+      "bytes": 9216
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/ideas-d2.md",
+      "before_sha256": "a259f838cf51acb44d6670dbcc7d5e584aad3167f615f1d4e629c80cc9cc01aa",
+      "after_sha256": "5ef2d81745fab5789412d5517e8ae42bc48a086c358bd20452488f3631bae588",
+      "bytes": 9855
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/ideas-d4.md",
+      "before_sha256": "82b9a33d86edb6c68d1fb454a7da8b1b769e0ba490407fcc97722fe8d8d0400a",
+      "after_sha256": "fae475dee990e33c5bd1f4c9a1f634525ebec2e1274e1a82d92bc18555b7fa72",
+      "bytes": 11795
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/ideas-d5.md",
+      "before_sha256": "5ea1a0dd640d59950cbf565c82271ab0630ec564c367533ddd8d6a6814343550",
+      "after_sha256": "10f95ee264892b5c48b2136e2891014c9eba457d05dad8463f537320a7b04ff5",
+      "bytes": 10316
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/literature.md",
+      "before_sha256": "b8922e27b54d60d631f1e48dc3ff993bbc6bcde37a2f6c7ac9eb32c2a2306054",
+      "after_sha256": "bf4d8be2e860a6056bbe8af918b02e0061f2cbaf51f5f6bf50693f907de5b58b",
+      "bytes": 13782
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/directions/D1.md",
+      "before_sha256": "8c814c2708a3ddce972d7eea01ade1d1901de330e22512943680cbcfd1b16e3b",
+      "after_sha256": "b3c20c8997b29865de4a1facf3c34a5854762874f76a282984b608c1efac30c0",
+      "bytes": 4952
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/directions/D2.md",
+      "before_sha256": "09d07679dd5cce1d0a2a8da9541cb80f8f7caa11c168ebd5d73f588814d91aa9",
+      "after_sha256": "b4e9a67dc2ca135ca13bfd0acac1e4cacaddd14b1d47a44cf45632301d955b8b",
+      "bytes": 7452
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/directions/D3.md",
+      "before_sha256": "45b378b177ce7d1ae0a0372f052329b6ef0276d81350869d5ef6b4f3c03461e2",
+      "after_sha256": "a841d792579fc9d0804f3d28166ce963e70fd2b69991104514aa6bb192e29e89",
+      "bytes": 6495
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/directions/D4.md",
+      "before_sha256": "03a096fa233d2e7b53e2a8aff24615483902391eca48d31a36f5de7717172adc",
+      "after_sha256": "40318e03531f1a99a80897d59a79e693cb38f779ef3dfc0d78e2bc03248ebc97",
+      "bytes": 3336
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/directions/D5.md",
+      "before_sha256": "7d2a603edaa41be9c031dee973a7a6434cabaae3ac3bc4b3343ce6483f96043f",
+      "after_sha256": "af4dc8fca14500a6f453ab8b5d67085581dff5ff85d2e4585875421c0fde7e12",
+      "bytes": 2968
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/directions/D7.md",
+      "before_sha256": "03672c9219946e3dcdf716de102b679e4793646a6d0a36412df4dea834a68e0e",
+      "after_sha256": "4addc4eaaebdb10bd63435bc1a8394437c070fa91c515297874e5583931579cd",
+      "bytes": 4620
+    },
+    {
+      "path": "PROOF_STATUS.md",
+      "before_sha256": "a916cda87c9f7ad1950f62e32d254f5c276d386b63f5e84a32cb08a3298f8b0f",
+      "after_sha256": "b5865a37ff8c0f632e576a8c9d1046080bd2f1bd963693ff4319de0f0693bd30",
+      "bytes": 108693
+    },
+    {
+      "path": "state/IDEAS.md",
+      "before_sha256": "de45820ecb33f8694b0ed4a13177fc2d91094729dc2f164e3d26034fada4d4a0",
+      "after_sha256": "6a0a773c28d594561c828e92668571628fd42fa30ad8ae3e4216d7aa67a87f28",
+      "bytes": 165050
+    },
+    {
+      "path": "ID_CROSSWALK.md",
+      "before_sha256": "f9ab0a1a06b074ef391e35630f957dba764599fc0f14ec1d82e87df2812f98d6",
+      "after_sha256": "eb6c038fe9e3e85dfa04faa49ef09806b3b4c28f78ca292c587e8024d48ea98f",
+      "bytes": 261926
+    },
+    {
+      "path": "state/CURRENT.md",
+      "before_sha256": "bfa11a51cd5e03d614756638818674644a830dbd92372ce98e719ed9f7972afc",
+      "after_sha256": "7efb17e3177c9df0cf1af8542461c50858d6f066d515664ade120d8035a29191",
+      "bytes": 15000
+    },
+    {
+      "path": "PAPER_MAP.md",
+      "before_sha256": "bca6b29bbd5c0e6b357cb9904dfe0df682f4c80518829a823e9fac28b3b2e701",
+      "after_sha256": "926f23a0cd6c64895dee11679368f9cc9385324f0a58f60face5c360830c80b7",
+      "bytes": 4134
+    },
+    {
+      "path": "topics/README.md",
+      "before_sha256": "ffcd26e98d7328593a697da6b7a9ecf18912455f7e79be70ff28199bcdebd72e",
+      "after_sha256": "647dfe5ef5ae07a2adb40ad84a5a927bdad62c78b2a0f17c981d1d36fceb1050",
+      "bytes": 1776
+    },
+    {
+      "path": "tracks/mz-constants/README.md",
+      "before_sha256": "c0e97bd0a0d9d493d4016cdd3dd668325e878f9487c883b5b7dfb202dfbfba18",
+      "after_sha256": "cc4e2cdb67c65ae08a0e8f2316bc4f9de3a501119f406189d4921e7c9304fe0d",
+      "bytes": 2504
+    },
+    {
+      "path": "literature/records/mz2d-sommariva-vianello-zanovello-2008.md",
+      "before_sha256": null,
+      "after_sha256": "4f6d600c5c4b226dded01debb09a4b4a4dbe7362dceb0ab8614fd6a338817171",
+      "bytes": 2754
+    },
+    {
+      "path": "literature/records/mz2d-caliari-demarchi-vianello-2007.md",
+      "before_sha256": null,
+      "after_sha256": "38b2247f21ae2778e3e6538f15ff03d66eed2b22b7eeaa75cdc395019dd70ece",
+      "bytes": 2676
+    },
+    {
+      "path": "literature/INDEX.md",
+      "before_sha256": "f90355c5b77a638d1a49980330eff1bda7d0e7610771a3bdae465f384b03f056",
+      "after_sha256": "163cfd8c22ab884f8170cbc84aded967873bdd47d9aef16b1949f58e017df388",
+      "bytes": 268533
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "before_sha256": "30dc06e08dd3f34fef95aa1aafd4dcc94787db5b83d829b817728b3507f9c324",
+      "after_sha256": "5fa6d46165e0a961f51a4d113a95ad736f6cc60018c7ca9c837d0f580ea2fa65",
+      "bytes": 24386
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/protocol/final-id-map.json",
+      "before_sha256": null,
+      "after_sha256": "740382b2df466e5f57afe90d0dab05594352f602ac36b6bbdd6e8a85430355b0",
+      "bytes": 26522
+    }
+  ],
+  "shared_append_preservation": true,
+  "stage": "AUDIT",
+  "Claude_audit": "PENDING"
+}

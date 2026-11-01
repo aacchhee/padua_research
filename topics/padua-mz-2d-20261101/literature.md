@@ -94,7 +94,7 @@ hyperinterpolant a projection on `Pi_(m-1)`.
 
 ## Source records
 
-### LIT?mz2d-codex-01 — generating-curve foundation, primary published text read
+### LIT-312 — generating-curve foundation, primary published text read
 
 Bos, **Caliari**, De Marchi, Vianello, Xu, *Bivariate Lagrange interpolation at
 the Padua points: the generating curve approach*, J. Approx. Theory 143
@@ -112,7 +112,7 @@ read for normalization and exceptional-mode bookkeeping, not independently
 audited as an entire paper. No signed Lebesgue hyperinterpolation theorem is
 being attributed to it.
 
-### LIT?mz2d-codex-02 — signed Lebesgue cubature, author preprint read
+### LIT-427 — signed Lebesgue cubature, author preprint read
 
 Sommariva, Vianello, Zanovello, *Nontensorial Clenshaw--Curtis cubature*,
 Numer. Algorithms 49 (2008), 409--427.
@@ -133,7 +133,7 @@ would multiply the unit Chebyshev mass by `(n+1)/(n+3)`. This discrepancy is
 not called a journal error or erratum: the journal body was not compared.
 Publisher access was subscription-preview only.
 
-### LIT?mz2d-codex-03 — CDMV hyperinterpolation is at Xu points
+### LIT-428 — CDMV hyperinterpolation is at Xu points
 
 Caliari, De Marchi, Vianello, *Hyperinterpolation on the square*, J. Comput.
 Appl. Math. 210 (2007), 78--83.
@@ -152,7 +152,7 @@ signed-Lebesgue hyperinterpolation theorem. The six-page article-in-press
 copy agrees with the earlier preprint on these hypotheses; final pagination
 was verified through journal metadata, not a separate final PDF comparison.
 
-### LIT?mz2d-codex-04 — Dencker--Erb checkerboard orthogonality
+### LIT-014 — Dencker--Erb checkerboard orthogonality
 
 Dencker, Erb, *Multivariate polynomial interpolation on Lissajous--Chebyshev
 nodes*, J. Approx. Theory 219 (2017), 15--45.
@@ -172,7 +172,7 @@ quadrature for normalized product Chebyshev measure. Taking
 These are direct prior sources for that mechanism, not signed Lebesgue
 spectral estimates. The 2017 journal body was not separately compared.
 
-### LIT?mz2d-codex-05 — Kolomoitsev--Lomako uniform Lebesgue asymptotics
+### LIT-379 — Kolomoitsev--Lomako uniform Lebesgue asymptotics
 
 Kolomoitsev, Lomako, *Asymptotics of the Lebesgue constants for bivariate
 approximation processes*, Appl. Math. Comput. 403 (2021), 126192.
@@ -192,7 +192,7 @@ prevents treating this asymptotic as the campaign's endpoint Gram theorem.
 Journal body inaccessible (403); theorem attribution is to the inspected
 arXiv version, with published metadata only.
 
-### LIT?mz2d-codex-06 — Xu 1996 MZ inequality uses Chebyshev measure and Xu nodes
+### LIT-314 — Xu 1996 MZ inequality uses Chebyshev measure and Xu nodes
 
 Xu, *Lagrange interpolation on Chebyshev points of two variables*, J. Approx.
 Theory 87 (1996), 220--238.
@@ -211,7 +211,7 @@ MZ prior art with different measure, nodes, and weights; it does not establish
 a signed Lebesgue Padua MZ bound. Final journal PDF was not compared to the
 author version.
 
-### LIT?mz2d-codex-07 — ASV context independently checked in author text
+### LIT-045 — ASV context independently checked in author text
 
 An, Sommariva, Vianello, *On the role of weak Marcinkiewicz--Zygmund
 constants in polynomial approximation by orthogonal bases*.

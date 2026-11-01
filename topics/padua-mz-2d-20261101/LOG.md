@@ -2,10 +2,10 @@
 
 - Branch: `codex/padua-mz-2d-20261101` · Base/rules read: `cf89b140530d5838bdb208a8c28f3e7aa676ace3`.
 - Role: Codex orchestrator. Root model/effort metadata is runtime-unexposed; delegated mathematics uses `gpt-6.1-sol xhigh`, code/mechanical work `gpt-6.1-sol medium`. No ultra allocation.
-- Stage: WORK. Required final auditor: Claude, Opus 5.5 xhigh; AUDIT PENDING.
+- Stage: AUDIT. Required final auditor: Claude, Opus 5.5 xhigh; AUDIT PENDING.
 - Open handoff: [01-work.md](handoffs/01-work.md).
 - Reserved final-ID ranges: PD-T106–135 (30), PD-N044–061 (18), IDEA-210–245 (36), LIT-427–444 (18), including permanent headroom. Fresh scan and provenance: [protocol/reservation-scan.json](protocol/reservation-scan.json). Batch ledger: [ALLOCATIONS.md](../padua-batch-20261031/ALLOCATIONS.md). Reservation only; no final IDs assigned yet.
-- Scientific claims: none yet. Existing PD-T028 stays OPEN. Floating computations will be MEASURED.
+- Scientific outcome: D1 PASS; exact alias/defect structure, replayed finite spectra and eta>3/4 witness, corner formula, diamond reconstruction, corrected signed hyperinterpolation scope, tensor-control theorem. Existing PD-T028 stays OPEN. Floating computations are MEASURED. Full statuses: [report.md](report.md).
 
 Draft PR: [#14](https://github.com/aacchhee/padua_research/pull/14). Reservation priority commit: `9f0c7710abd19ee5a0d61bce6384e7a399e838d2`; ledger and PR body published before any final-ID assignment.
 
@@ -40,7 +40,23 @@ Additional workers: `exact_engine`, gpt-6.1-sol medium, owns exact rational/inte
 
 ## Runs needed
 
+The initialization run requests below are historical: D0, exact independent replay, fresh reservations and early draft creation completed; commands and failures are in the direction/evidence records. Remaining work is the required Claude audit, named source comparisons, future OPEN research and Windows delivery. The current complete audit instruction will be published as handoff02 after the final candidate is committed.
+
 - Execute D0 after definitions and D1 kill criterion are fixed; rigorously enclose m=10,20,30,40 if feasible, distinguish any incomplete certification from floating reproduction.
 - Execute a separate-agent exact checker rerun before any computer-assisted claim is labeled PROVED.
 - Reserve fresh ranges and publish early draft PR after checking current main, all open PRs, all ledgers and closed-unmerged reservations.
 - No Windows filesystem bridge is available. Intended working-track destination: `C:\Users\andreyac\Downloads\padua\results\padua-mz-2d-20261101.md`. Copy this topic's final report and next step there; do not claim delivery here. Large artifacts, if any, belong in `C:\Users\andreyac\Downloads\padua\cold_storage\padua-mz-2d-20261101\` with content identities and checker receipts.
+
+## 2026-11-01 — completed campaign and AUDIT handoff
+
+All directions reached their recorded bounded stops. D0 floating reproduction and extension were committed/pushed in `9e0910e`; exact producer in `e59f57c`; D1 proofs and actual different-agent exact replay in `df44db4`, with completed finite-proof statuses in `328a3ec`. D2 scoped negatives were pushed in `43233bd`; D3 corner theory and D7 tensor theorem in `1f3530b`; D4/D5 proofs and substantive supplementary repairs in `c682164`. These are published checkpoints, not claims about unseen execution.
+
+The independent medium worker reran all m10/20/30/40 exact spectra and evaluated the stored m30 integer polynomial independently. D1/D2 xhigh workers reconstructed each other's bounded mathematics without approving their own results. Supplementary adversarial audit used distinct `gpt-6-astra xhigh` under the workflow audit allocation. Its two findings were accepted: the corner theorem rules out D5's proposed uniform absolute majorants; D4's repeated negative-node floor obstruction is an application of D2's existing result. New scoped PD-N052 and the N41→N045 consolidation preserve both histories. The supplementary reviewer independently rechecked the repairs, D7 and D3's later fixed-ratio corollary. Its frozen report records exact coverage and execution limits. Required Claude Opus 5.5 xhigh audit remains PENDING.
+
+The D3 fixed-ratio corollary is a material scope extension of the endpoint-only obstruction, made before final-ID assignment. Earlier peer reports pin the endpoint-only bytes; the final supplementary auditor separately checked the extended pre-ID hash `282bc22de3a15056bef406ddc6a3aa4f268a62b4c54a2574b82208e8240a63a1`. It is not described as an ID-only difference from the older peer version.
+
+Final registration assigns PD-T106–117 (12), PD-N044–053 (10), IDEA-210–227 (18), new LIT-427–428 and five existing source IDs. All own unused headroom remains permanently reserved. A fresh scan includes main806cc7b, PR12 `7ec02d0fa4a06cf9ab7ede5db0b60a5eddf887d1` and PR15 `2d20672f62e0130d2adbe104af6e5ee9d05d20af`; PR15's disjoint reservations were preserved in the batch ledger. All13 original pinned A2 input objects are byte-unchanged at the advanced PR12 head, so the original12e9cf45 scientific input pin remains explicit. The final assignment receipt records ID-only substitutions against final reviewed proof bytes, preserved code/evidence/review/archive identities, prefix-preserved shared registries, links, uniqueness and size checks.
+
+Durable new claim statuses:17 PROVED,2 MEASURED,3 OPEN; acceptance for all is Claude PENDING. The original signed Padua target PD-T028 stays OPEN. D7 supplies a tensor-control theorem, not a Padua endpoint proof. No all-family catalogue or separate manuscript section was created; no .github edit, tag, main commit, PR merge, force push or Windows delivery occurred. The report includes the exact ASV message to consider after audit; nobody was contacted.
+
+Current unresolved scientific steps are the mass-normalized mixed-block contraction, positive-node-relative signed coercivity, a new admissible endpoint witness/lower bound, and direct weighted-L1 operator control. Repeating the recorded failed uniform majorants is not a next step. Fulltext/version gaps and local delivery are listed in report.md with DOI/journal locators. The next numbered handoff requests the complete required Claude audit at the final candidate SHA.

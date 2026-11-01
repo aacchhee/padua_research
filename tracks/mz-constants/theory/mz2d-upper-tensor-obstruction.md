@@ -1,10 +1,12 @@
-# PD-N?mz2d-codex-11 — doubled tensor weights do not majorize Padua
+# PD-N046 — doubled tensor weights do not majorize Padua
+
+Provisional alias: `PD-N?mz2d-codex-11`. Final ID assigned at PR preparation, 2026-11-01; required Claude audit PENDING.
 
 ID kind: PD-N.
 Aliases: pointwise tensor-CC majorant failure; checkerboard weight ratio.
-Split from: IDEA?mz2d-codex-11.
+Split from: IDEA-213.
 Split into: none. The upper target remains in
-[PD-T?mz2d-codex-10](mz2d-upper-open.md).
+[PD-T110](mz2d-upper-open.md).
 
 ## Statement
 
@@ -41,7 +43,7 @@ pointwise factor-two majorant. No spectral theorem is rejected.
 
 ## Negative-result scope
 
-Attempted mechanism: IDEA?mz2d-codex-11, direct comparison of signed
+Attempted mechanism: IDEA-213, direct comparison of signed
 Padua samples against twice the positive tensor-CC samples by individual
 nodal weights.
 Parameter range: an exact counterexample at `m=2`. No universal

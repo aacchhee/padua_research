@@ -45,3 +45,11 @@ and verified its length/hash; verified unchanged diamond/rectangle hashes,
 absence of the duplicate source, and existence of all **16** local links
 in the changed D4 notes/OPEN record. All passed. No mathematical program
 or new experiment was run.
+
+Supplementary Astra focused recheck: **PASS**. The reviewer independently
+recovered the 4450 archived bytes at offset 2255 with the original hash,
+confirmed source removal and unchanged T40/N40 hashes, checked equivalent
+candidate disposition and canonical N10 §3 mapping, and verified all 13
+live links in its selected four-file scope. Finding S2 is resolved,
+subject to root completing the final crosswalk mapping. The reviewer’s
+13-link count and this worker’s 16-link count use different file sets.

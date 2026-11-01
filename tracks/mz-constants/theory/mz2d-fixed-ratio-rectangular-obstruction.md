@@ -1,4 +1,6 @@
-# PD-N?mz2d-codex-40 — direct rectangular Fejér reconstruction aliases
+# PD-N053 — direct rectangular Fejér reconstruction aliases
+
+Provisional alias: `PD-N?mz2d-codex-40`. Final ID assigned at PR preparation, 2026-11-01; required Claude audit PENDING.
 
 ID kind: PD-N. Aliases: tensor M3 checkerboard filter failure; complementary
 high-high spurious mode. Split from: none. Split into: none.
@@ -53,7 +55,7 @@ reconstruction step before any norm estimate or signed conversion.
 ## Status by part
 
 Overall status: **PROVED** in development; independent mathematical audit
-pending. Candidate IDEA?mz2d-codex-40: **REJECTED: failed** for this precise
+pending. Candidate IDEA-224: **REJECTED: failed** for this precise
 operator and parameter range. The signed Padua fixed-ratio target remains
 OPEN. This is not a negative statement about other filters.
 
@@ -117,7 +119,7 @@ The output contains an inadmissible high-high component even for a
 low-degree input; a subsequent total-degree projection could remove it,
 but would define a different operator requiring its own localization and
 norm analysis. The corrected diamond filter is treated separately in
-PD-T?mz2d-codex-40.
+PD-T115.
 
 ## Open items and history
 

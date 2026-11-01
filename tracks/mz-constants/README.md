@@ -19,3 +19,7 @@ This is a track within the campaign; it does not replace the repository charter.
 Development used provisional IDs; PR preparation allocated final PD-T013–028, PD-N002–006, LIT-042–060 and IDEA-052–076 through the shared batch ledger. Status and acceptance are distinct: the declared analytic claims passed independent Astra reconstruction, while the required Claude handoff remains pending. Numerical observations are MEASURED. No novelty or exhaustive-literature claim follows from a proof's correctness.
 
 Audit-01 response: the headline explicit endpoint upper bound is now PD-T022's2−4/N+4/N² specialization; PD-T014 retains its short qualitative proof and PD-T015 its independent mass inequality. Original claims passed Claude's mathematical audit; focused review of the response and the new named literature gaps is pending.
+
+## Padua MZ 2D campaign — PR14 final registration
+
+[Two-dimensional signed Padua development](../../topics/padua-mz-2d-20261101/report.md) is registered in PD-T106–117/PD-N044–053 with their individual statuses; IDEA-210–227 retains all candidates. Exact four-size certificates and the m30 eta>3/4 witness have separate actual execution receipts. Universal signed Padua spectral bounds remain OPEN. Stage AUDIT, Claude PENDING; this draft does not change acceptance of the earlier MZ manuscript/results.

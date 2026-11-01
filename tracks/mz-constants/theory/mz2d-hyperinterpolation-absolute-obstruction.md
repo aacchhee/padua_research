@@ -1,10 +1,12 @@
-# PD-N?mz2d-codex-32 — uniform absolute-Gram and negative-leverage majorants fail
+# PD-N052 — uniform absolute-Gram and negative-leverage majorants fail
+
+Provisional alias: `PD-N?mz2d-codex-32`. Final ID assigned at PR preparation, 2026-11-01; required Claude audit PENDING.
 
 ID kind: PD-N. Aliases: endpoint absolute-Gram divergence;
 negative-corner leverage obstruction; failed uniform D5 majorants.
 Split from: the sufficient uniform-majorant mechanisms of
-IDEA?mz2d-codex-33. Split into: none. The actual operator-norm target
-PD-T?mz2d-codex-32 remains OPEN and is not rejected.
+IDEA-222. Split into: none. The actual operator-norm target
+PD-T114 remains OPEN and is not rejected.
 
 Rules/base `cf89b140530d5838bdb208a8c28f3e7aa676ace3`; 2026-11-01.
 Codex mathematical worker, allocated xhigh; runtime model metadata unexposed.
@@ -15,7 +17,7 @@ formula became available. Independent focused review pending.
 
 Use the actual even-checkerboard signed Padua rule, unnormalized measure
 `dx dy`, and endpoint degree `n=m-1`, with integer `m>=3`. Retain the
-definitions from PD-T?mz2d-codex-30:
+definitions from PD-T112:
 
 \[
 A_m=B^T\operatorname{diag}(|w|)B,\quad
@@ -48,7 +50,7 @@ Thus the sufficient strategy of proving a uniform bound on
 `tau_m beta_abs(m,m-1)` cannot establish a uniform endpoint operator norm.
 Likewise a uniformly bounded negative-leverage estimate cannot hold.
 More explicitly, the negative-leverage majorant from
-PD-T?mz2d-codex-30 itself diverges:
+PD-T112 itself diverges:
 
 \[
 \sqrt{(4+2\delta_m)(\lambda_+(m,m-1)+2\chi_m)}
@@ -69,14 +71,14 @@ The parameter range is the endpoint `n=m-1`, all sufficiently large m,
 with inequalities (1)--(2) valid for every `m>=3`.
 
 The underlying question whether `sup_m ||H_(m,m-1)||_(C->L2)` is finite
-remains PD-T?mz2d-codex-32, **OPEN**. This negative record does not decide
+remains PD-T114, **OPEN**. This negative record does not decide
 that question, any fixed-ratio operator bound, or the signed MZ spectrum.
 
 ## Depends on
 
-PD-T?mz2d-codex-20, the exact corner weights and
+PD-T111, the exact corner weights and
 `w_c=-(4 log m+O(1))/m^4`, negative at both node corners for every `m>=3`.
-PD-N?mz2d-codex-21 supplies the continuous corner evaluation calculation;
+PD-N048 supplies the continuous corner evaluation calculation;
 its elementary finite sum is also repeated below. These are local analytic
 results, not mathematical claims imported from an unread source.
 
@@ -116,7 +118,7 @@ quadrature square equals one. Therefore `lambda_+(m,m-1)>=1`. Also
 majorant to obtain (3).
 
 To separate this obstruction from the actual operator norm, recall its
-exact formula in PD-T?mz2d-codex-30 has **one** power of `|p(z)|`.
+exact formula in PD-T112 has **one** power of `|p(z)|`.
 The single-corner contribution to its supremum is instead
 
 \[

@@ -1,9 +1,11 @@
-# PD-T?mz2d-codex-31 — signed Padua hyperinterpolation at the correct reproduced degree
+# PD-T113 — signed Padua hyperinterpolation at the correct reproduced degree
+
+Provisional alias: `PD-T?mz2d-codex-31`. Final ID assigned at PR preparation, 2026-11-01; required Claude audit PENDING.
 
 ID kind: PD-T. Aliases: `m>=n+r` reproduction; signed relaxed-exactness
 error; aliasing-term estimate. Split from: D5 application. Split into:
-norm theorem PD-T?mz2d-codex-30; the unresolved uniform operator target is
-PD-T?mz2d-codex-32, not part of this statement.
+norm theorem PD-T112; the unresolved uniform operator target is
+PD-T114, not part of this statement.
 
 Rules/base `cf89b140530d5838bdb208a8c28f3e7aa676ace3`; 2026-11-01.
 Codex, allocated xhigh; runtime model metadata unexposed.
@@ -22,7 +24,7 @@ H_{m,n}f=\sum_{|\alpha|\le n} Q_m(f\phi_\alpha)\phi_\alpha.
 
 Let `G_(m,n)`, `tau_m`, and `beta_abs(m,n)` be the signed Gramian, weight
 total variation, and largest absolute-Gram eigenvalue from
-PD-T?mz2d-codex-30. Put
+PD-T112. Put
 `C_(m,n)=sqrt(tau_m beta_abs(m,n))`. For every integer
 
 \[
@@ -37,7 +39,7 @@ the operator reproduces `Pi_r`, and every real continuous f satisfies
 E_r(f)=\inf_{q\in\Pi_r}\|f-q\|_\infty. \tag{1}
 \]
 
-The exact norm in PD-T?mz2d-codex-30 may replace `C_(m,n)` in (1).
+The exact norm in PD-T112 may replace `C_(m,n)` in (1).
 The negative-leverage majorant from that theorem is another valid choice.
 No positivity of the signed weights or lower Gram bound is required.
 
@@ -60,7 +62,7 @@ where, if c is the orthonormal coefficient vector of q,
 In particular at the campaign endpoint `n=m-1`, affine polynomials are
 reproduced for every `m>=2`, so (1) applies with `r=1`. For `m=1,n=0`, use
 `r=0`. For `m>=3`, degree one is the **maximal complete total-degree space**
-reproduced, by the separate obstruction PD-N?mz2d-codex-31. An E2-only or
+reproduced, by the separate obstruction PD-N051. An E2-only or
 E_(m-1)-only estimate is therefore not inferred from this operator.
 
 ## Assumptions and status
@@ -79,11 +81,11 @@ to this finite-m statement.
 
 ## Depends on / sources
 
-PD-T?mz2d-codex-30 supplies the norm bound. Only the stated degree-m exactness
+PD-T112 supplies the norm bound. Only the stated degree-m exactness
 of the signed Padua rule is otherwise needed; it is independently established
-by the campaign foundation / PD-T?mz2d-codex-01. The primary source
+by the campaign foundation / PD-T106. The primary source
 provenance for integrating the degree-m interpolant is
-LIT?mz2d-codex-01/02 in literature.md. PD-T025 is the positive-rule
+LIT-312/LIT-427 in literature.md. PD-T025 is the positive-rule
 predecessor; ASV equation (7) is relevant aliasing context, not a theorem
 assumed for signed weights.
 
@@ -93,7 +95,7 @@ Let `q in Pi_r`. Every `q phi_alpha` has total degree at most `r+n<=m`.
 Therefore `Q_m(q phi_alpha)=integral q phi_alpha`. Since `r<=n`, expansion
 in the orthonormal basis gives `H_(m,n)q=q`.
 
-For every such q, the triangle inequality and PD-T?mz2d-codex-30 give
+For every such q, the triangle inequality and PD-T112 give
 
 \[
 \|f-H_{m,n}f\|_2

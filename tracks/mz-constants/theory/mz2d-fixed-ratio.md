@@ -1,4 +1,6 @@
-# PD-T?mz2d-codex-41 — signed Padua MZ at every fixed degree ratio
+# PD-T116 — signed Padua MZ at every fixed degree ratio
+
+Provisional alias: `PD-T?mz2d-codex-41`. Final ID assigned at PR preparation, 2026-11-01; required Claude audit PENDING.
 
 ID kind: PD-T. Aliases: D4 target; eta(theta) below one for signed Lebesgue
 Padua. Split from: the D4 campaign question. Split into: none. The separate
@@ -47,11 +49,11 @@ provide either signed spectral endpoint.
 
 - D1: exact aliases and finite-family operator structure; no spectral
   conclusion imported.
-- `PD-T?mz2d-codex-40`: exact parity-projected diamond reconstruction,
+- `PD-T115`: exact parity-projected diamond reconstruction,
   PROVED in development, independent audit pending.
-- `PD-N?mz2d-codex-40`: direct rectangular reconstruction is false for
+- `PD-N053`: direct rectangular reconstruction is false for
   every `m>=3,2<=n<m`.
-- Existing [PD-N?mz2d-codex-10 §3](mz2d-upper-sign-obstruction.md): the m3
+- Existing [PD-N045 §3](mz2d-upper-sign-obstruction.md): the m3
   weight -1/18 obstructs positive pointwise conversion, but does not
   obstruct a restricted-degree energy theorem. Historical provisional
   N41 maps to N10; D4's equivalent application is retained as

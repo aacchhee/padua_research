@@ -1,12 +1,14 @@
-# PD-N?mz2d-codex-10 — coefficient sign comparison fails for Padua
+# PD-N045 — coefficient sign comparison fails for Padua
+
+Provisional alias: `PD-N?mz2d-codex-10`. Final ID assigned at PR preparation, 2026-11-01; required Claude audit PENDING.
 
 ID kind: PD-N.
 Aliases: signed-Padua Z-matrix obstruction; frustrated coefficient triangle;
 two-dimensional absolute-coefficient transfer.
-Split from: IDEA?mz2d-codex-10, the direct transfer of the one-dimensional
+Split from: IDEA-212, the direct transfer of the one-dimensional
 proof of PD-T014/022 to the signed Padua endpoint space.
 Split into: none. The upper target is retained OPEN in
-[PD-T?mz2d-codex-10](mz2d-upper-open.md).
+[PD-T110](mz2d-upper-open.md).
 
 ## Statement
 
@@ -49,7 +51,7 @@ cycle that prevents this one-dimensional argument.
 
 ## Negative-result scope
 
-Attempted mechanism: IDEA?mz2d-codex-10, requiring `2H-R` to be a
+Attempted mechanism: IDEA-212, requiring `2H-R` to be a
 Z-matrix after diagonal sign switching, and a nonnegative entrywise
 defect as in IDEA-062/073.
 Parameter range: switchability fails for all `m>=3`; both defect signs
@@ -58,7 +60,7 @@ are exhibited at `m=4`.
 ## Depends on
 
 Only degree-`m` exactness, elementary Chebyshev integrals, and the nodal
-alias identities of [PD-T?mz2d-codex-01](mz2d-aliasing.md). The aliases
+alias identities of [PD-T106](mz2d-aliasing.md). The aliases
 used here can also be checked directly at the stated nodes.
 PD-T014/022 identify the attempted predecessor mechanism, not a proof
 dependency for the obstruction.

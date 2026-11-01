@@ -34,7 +34,7 @@ need to bound both spectral endpoints. The one-dimensional lower proof's
 exact-reconstruction step and positive-weight-conversion step must be
 tested separately. Half-degree exactness alone does not close D4.
 
-## IDEA?mz2d-codex-40 — rectangular Fejér reconstruction on the checkerboard
+## IDEA-224 — rectangular Fejér reconstruction on the checkerboard
 
 Aliases: direct tensor M3 filter; rectangular oversampled convolution.
 
@@ -65,11 +65,11 @@ Aliases: direct tensor M3 filter; rectangular oversampled convolution.
   output `1/[4(m-n)(m+1-n)]>0` for every `m>=3,2<=n<m`.
 - Disposition: **REJECTED: failed**, exactly for the specified rectangular
   operator. Diamond filters and the signed spectral target are not rejected.
-- Canonical negative/theory record: `PD-N?mz2d-codex-40`,
+- Canonical negative/theory record: `PD-N053`,
   `tracks/mz-constants/theory/mz2d-fixed-ratio-rectangular-obstruction.md`,
   **PROVED** in development, independent audit pending.
 
-## IDEA?mz2d-codex-41 — direct positive-energy conversion after Schur
+## IDEA-225 — direct positive-energy conversion after Schur
 
 Aliases: signed M3 last-step transfer; pointwise Padua sampling floor.
 
@@ -80,7 +80,7 @@ Aliases: signed M3 last-step transfer; pointwise Padua sampling floor.
   product angular weights are one such reference.
 - Closest entries read in full: IDEA-074, IDEA-056, PD-T023 and the campaign
   source formulas. Supplementary review identified existing D2
-  `PD-N?mz2d-codex-10` §3 as the same negative-weight/arbitrary-data
+  `PD-N045` §3 as the same negative-weight/arbitrary-data
   obstruction; that full record has now been read for consolidation.
 - Separation criterion: actual signed weights would admit the required
   positive floor. A negative retained weight kills this pointwise step.
@@ -105,14 +105,14 @@ Aliases: signed M3 last-step transfer; pointwise Padua sampling floor.
   **failed** in its pointwise/arbitrary-data scope. The allowed value
   subspace of `Pi_(m-1)` is not arbitrary. Retained as an application and
   verification; no duplicate mechanism is pursued or negative allocated.
-- Canonical negative/theory record: existing `PD-N?mz2d-codex-10` §3,
+- Canonical negative/theory record: existing `PD-N045` §3,
   [theory](../../tracks/mz-constants/theory/mz2d-upper-sign-obstruction.md).
-  Historical provisional `PD-N?mz2d-codex-41` is an alias mapped to N10,
+  Historical provisional `PD-N045` is an alias mapped to N10,
   for root's crosswalk. D4's original proof bytes and history are retained
   in the [verification-only archive](directions/d4-positive-floor-verification.md).
   This consolidation accepts the supplementary Astra finding.
 
-## IDEA?mz2d-codex-42 — diamond plateau filter in diagonal angles
+## IDEA-226 — diamond plateau filter in diagonal angles
 
 Aliases: rotated tensor filter; total-degree checkerboard reconstruction.
 
@@ -149,7 +149,7 @@ Aliases: rotated tensor filter; total-degree checkerboard reconstruction.
   comparison controlling the negative nodal part, and compatible weighted
   localization estimates in the diagonal angles; a general bound on a
   positive reference norm alone does not meet that condition.
-- Canonical theory: `PD-T?mz2d-codex-40`,
+- Canonical theory: `PD-T115`,
   `tracks/mz-constants/theory/mz2d-fixed-ratio-diamond-reconstruction.md`,
   **PROVED** in development, independent audit pending.
 

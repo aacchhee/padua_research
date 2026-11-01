@@ -1,8 +1,10 @@
-# PD-N?mz2d-codex-20 — Two critical coordinate packets do not tensorize at total degree m-1
+# PD-N047 — Two critical coordinate packets do not tensorize at total degree m-1
+
+Provisional alias: `PD-N?mz2d-codex-20`. Final ID assigned at PR preparation, 2026-11-01; required Claude audit PENDING.
 
 ID kind: PD-N.
 Aliases: naive product log-four witness; critical-mesh degree obstruction.
-Split from: IDEA?mz2d-codex-21.
+Split from: IDEA-216.
 Split into: none.
 
 ## Statement
@@ -48,7 +50,7 @@ from the signed Padua rule.
 ## Status and disposition
 
 Overall status: **PROVED**, analytic; audit pending.
-IDEA?mz2d-codex-21 is **REJECTED: failed** only as a direct multiplication
+IDEA-216 is **REJECTED: failed** only as a direct multiplication
 of the two known critical CC witnesses, or as an inference of two critical
 losses from their fixed-ratio tensor factors. This is not a refutation of
 a Padua log-four endpoint law or of all separable polynomial trials.

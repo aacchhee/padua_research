@@ -1,4 +1,6 @@
-# PD-T?mz2d-codex-40 — exact diamond-filter reconstruction on the checkerboard
+# PD-T115 — exact diamond-filter reconstruction on the checkerboard
+
+Provisional alias: `PD-T?mz2d-codex-40`. Final ID assigned at PR preparation, 2026-11-01; required Claude audit PENDING.
 
 ID kind: PD-T. Aliases: diagonal-angle filtered reconstruction; parity
 projected square-to-diamond filter. Split from: supporting reconstruction
@@ -54,7 +56,7 @@ of the failed rectangular transfer. The original fixed-ratio eta target
 remains **OPEN**: reconstruction is not one of that target's parameter
 cases and does not justify PARTIAL status for it.
 
-Candidate IDEA?mz2d-codex-42: reconstruction retained; its proposed signed
+Candidate IDEA-226: reconstruction retained; its proposed signed
 weighted-Schur completion is deferred, with the missing obligation below.
 
 ## Depends on
@@ -62,7 +64,7 @@ weighted-Schur completion is deferred, with the missing obligation below.
 The scalar finite Fejér formula, rederived here at coefficient level, and
 the elementary checkerboard character sum. PD-T023/IDEA-074 and D1 are
 local predecessors. No theorem on weight positivity or signed MZ
-inequalities is assumed. PD-N?mz2d-codex-40 is context, not a logically
+inequalities is assumed. PD-N053 is context, not a logically
 necessary dependency on a negative statement.
 
 ## Proof
@@ -141,7 +143,7 @@ without checking the weight ratio is unjustified.
 
 More decisively, even a successful positive sampled-energy estimate
 does not identify the actual signed Padua quadratic form. The direct
-positive-floor conversion is refuted by PD-N?mz2d-codex-41. To resume the
+positive-floor conversion is refuted by PD-N045. To resume the
 signed lower route, prove a comparison on the admissible value subspace,
 for example a bound of the negative sampled energy by a strict fraction
 of a positive coercive sampled form, uniform in `n/m<=theta`. An upper

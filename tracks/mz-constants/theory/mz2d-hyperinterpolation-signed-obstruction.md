@@ -1,7 +1,9 @@
-# PD-N?mz2d-codex-30 — a signed upper Gram bound does not control continuous data
+# PD-N050 — a signed upper Gram bound does not control continuous data
+
+Provisional alias: `PD-N?mz2d-codex-30`. Final ID assigned at PR preparation, 2026-11-01; required Claude audit PENDING.
 
 ID kind: PD-N. Aliases: failed positive-rule transfer; signed constant-space
-counterexample. Split from: IDEA?mz2d-codex-30. Split into: none.
+counterexample. Split from: IDEA-219. Split into: none.
 
 Rules/base `cf89b140530d5838bdb208a8c28f3e7aa676ace3`; 2026-11-01.
 Codex, allocated xhigh; runtime model metadata unexposed.
@@ -27,7 +29,7 @@ Thus the estimate `||H||<=sqrt(V lambda_max(G))` cannot be extended from
 positive to arbitrary signed quadrature, even with fixed nodes, exactness
 through degree one, `eta=0` on the approximation space, and exact polynomial
 reproduction. The attempted mechanism is precisely the positive-rule
-Cauchy--Schwarz transfer of IDEA?mz2d-codex-30.
+Cauchy--Schwarz transfer of IDEA-219.
 
 ## Assumptions and status
 
@@ -52,7 +54,7 @@ is `sqrt(2)` and is exceeded for every `t>1`.
 Elementary exact arithmetic only; no external theorem or numerical run.
 Closest positive predecessor: PD-T025, whose positivity hypothesis is
 explicit and is not being refuted. The absolute-weight repair is
-PD-T?mz2d-codex-30. D5 gate: ideas-d5.md. Independent audit pending.
+PD-T112. D5 gate: ideas-d5.md. Independent audit pending.
 
 ## Scope and history
 

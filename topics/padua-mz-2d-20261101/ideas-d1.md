@@ -6,7 +6,7 @@ the D1 structural kill test were recorded before campaign numerical
 runs. The orchestrator owns Git, handoffs, shared registries and final
 ID allocation.
 
-## IDEA?mz2d-codex-01 — Complement aliases and a finite masked-tensor defect
+## IDEA-210 — Complement aliases and a finite masked-tensor defect
 
 Aliases: folded Padua moments; checkerboard-complement reduction;
 signed-total-degree triangular truncation; 2D Hankel/Toeplitz pencil.
@@ -66,7 +66,7 @@ signed-total-degree triangular truncation; 2D Hankel/Toeplitz pencil.
   decomposition.
 - Actual test results and committed evidence: analytic derivation
   gives the all-degree formula and five-region decomposition in
-  PD-T?mz2d-codex-01. At most 160 tensor terms suffice, each with
+  PD-T106. At most 160 tensor terms suffice, each with
   one-dimensional Fourier-mask norm `<=1+log(8n+1)`. This D1 developer
   executed no numerical/exact-arithmetic test; independent campaign
   checker executions are recorded separately by their producers.
@@ -75,10 +75,10 @@ signed-total-degree triangular truncation; 2D Hankel/Toeplitz pencil.
   PD-N from this successful architecture.
 - Disposition reason: not applicable; complementary-mode spectral
   estimates are separately OPEN under D2/D3.
-- Canonical theory / negative-result ID: PD-T?mz2d-codex-01,
+- Canonical theory / negative-result ID: PD-T106,
   `tracks/mz-constants/theory/mz2d-aliasing.md`; the separately
   substantive structure/norm theorem is split into
-  PD-T?mz2d-codex-04, `mz2d-defect-structure.md`, depending on the
+  PD-T109, `mz2d-defect-structure.md`, depending on the
   alias theorem. Original combined wording and split history are
   preserved in both theory records.
 - Topic / audit / history: `topics/padua-mz-2d-20261101/directions/D1.md`;
@@ -94,7 +94,7 @@ The classical positive Chebyshev cubature has a different measure and
 a different exactness degree. Conflating these measures would
 invalidate the moment pencil.
 
-## IDEA?mz2d-codex-02 — Finite test of a Padua three-quarter eta threshold
+## IDEA-211 — Finite test of a Padua three-quarter eta threshold
 
 Aliases: signed-Padua eta<=3/4 transfer; m30 integer Rayleigh witness.
 
@@ -139,7 +139,7 @@ Aliases: signed-Padua eta<=3/4 transfer; m30 integer Rayleigh witness.
 - Actual test results and committed evidence: the producer's m=30
   polynomial has 225 nonzero integer coefficients and exact
   `b-4a>0` in `evidence/exact-spectra.json`, with hash and rational
-  values in PD-N?mz2d-codex-01. Different-agent replay, including the
+  values in PD-N044. Different-agent replay, including the
   stored coefficient list, actually passed and is recorded in the
   dated `independent-checks.md` append. The mathematical writer did
   not execute the producer computation.
@@ -149,7 +149,7 @@ Aliases: signed-Padua eta<=3/4 transfer; m30 integer Rayleigh witness.
 - Disposition reason: refuted within the exact stated finite witness
   scope; no rejection of positivity, `eta<1`, endpoint
   rates or conditional source theorems.
-- Canonical theory / negative-result ID: PD-N?mz2d-codex-01,
+- Canonical theory / negative-result ID: PD-N044,
   `tracks/mz-constants/theory/mz2d-eta-counterexample.md`.
 - Topic / audit / history: 2026-11-01, exact producer
   `/root/exact_engine` medium technical effort; mathematical record

@@ -65,7 +65,15 @@ constant-polynomial Rayleigh floor. The proof is analytic; no numerical
 execution or independent replay is claimed.
 
 Supplementary Astra confirmed the proposed correction's scope before the
-edit and was sent the final scientific-file hashes for focused review.
-Focused review of those bytes is **PENDING** until its receipt arrives.
-The required Claude audit remains **PENDING** regardless of this
-supplementary review.
+edit, then independently rechecked the written repair at these hashes:
+
+- N32: `201f3a3347b3716c7ace06024535e2b9571987b58e59bc9f0dd61ca3069bd3e7`.
+- T32: `b9fd1371f19d9c1088546581485447e50240684251712776cd87deef860d4ee3`.
+
+Focused review: **PASS; S1 resolved**. The receipt confirms the rank-one
+lower bounds, `tau>=4`, `lambda_+>=1`, divergence of the sufficient
+majorants, vanishing single-corner L1 contribution, unchanged OPEN
+actual-norm target and unchanged valid finite-degree theorems. The
+reviewer's canonical receipt is [supplementary-audit.md](supplementary-audit.md).
+The required Claude audit remains **PENDING**; this supplementary review
+does not replace it.

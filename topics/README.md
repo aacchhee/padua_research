@@ -14,3 +14,7 @@ Keep proposals, gate decisions, reports, audit-NN.md, response-NN.md and reprodu
 
 Active MZ campaign: [log](mz-constants/LOG.md), [report](mz-constants/report.md), [audit handoff](mz-constants/AUDIT_HANDOFF.md). Shared reservations: [batch ledger](padua-batch-20261031/ALLOCATIONS.md).
 | [lattice-unisolvence-20261031](lattice-unisolvence-20261031/LOG.md) | codex/lattice-unisolvence-20261031; PR | Periodic-pattern campaign; Claude audit-01 accepted; registry response, PR #4 next |
+
+## Padua MZ 2D campaign — PR14 final registration
+
+[padua-mz-2d-20261101](padua-mz-2d-20261101/LOG.md): signed Lebesgue Padua MZ campaign; PD-T106–117, PD-N044–053, IDEA-210–227, LIT-427–428 plus five source-ID reuses. Stage AUDIT, required Claude audit PENDING, draft PR14 not ready.
