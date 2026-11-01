@@ -25,3 +25,42 @@ The publisher summary describes the same interpolatory product rule and two erro
 ## History
 
 2026-10-31: publisher-summary screen; fulltext exclusion remains pending.
+
+## 2026-11-01 fulltext reading (topic mz-prior-art-20261101)
+
+Reader: Claude, Opus 5.5 (orchestrator). Access: publisher PDF via AC's NTNU institutional access in AC's built-in browser, text extracted in-page with pdf.js and read in the session only; no PDF or fulltext extract stored anywhere in the repository. Rules `9739a0c`.
+
+### LIT-047 — fulltext coverage upgrade
+
+- Coverage: complete article, pp. 415–428. Pp. 415–421 read in full; pp. 422–428 keyword-screened (Theorem/Lemma/norm/log/interpolation/Lobatto/Corollary).
+- Statements: Theorem 1 (p. 419): if ∫|k|^p<∞ for some p>1, then lim_n Σ_i|w_ni|=∫|k| for the interpolatory product rule at cos(iπ/n). Theorem 2 (§3, after the proof of Theorem 1; exact page not recorded in the keyword screen): pointwise limit n·w_ni → πk(x)(1−x²)^{1/2} under local regularity. Theorem 3 (§4; exact page not recorded): convergence for every continuous f, with error ≤(‖I_n‖+‖I‖)E_n(f) in the C[−1,1] functional norm. Tools: modified Fourier partial sums and the trigonometric Marcinkiewicz inequality in L¹ (Zygmund, vol. 2, pp. 28–30) (p. 421).
+- Relation: the only norm controlled is the C[−1,1] dual (Σ|w_ni|) of a linear functional. There is no quadratic form, no Gram/mass matrix, no nodal ℓ²→L² interpolation bound and no logarithmic rate. For k≡1 the weights are the CC weights (p. 419), so this is the node/weight ancestor only. **Verdict for PD-T014/017/018/022/024/025: RELATED, DIFFERENT SETTING.** The FULLTEXT UNVERIFIED gap is closed for this article.
+
+### LIT-048 — fulltext coverage upgrade
+
+- Coverage: pp. 387–388 read; remainder not needed after the summary and the 1978 reading. It concerns implementation and two computable error estimates for smooth f, with numerical tests. Remaining pages 389–401 are **not read**; a keyword screen is still pending. No theorem about ℓ²/L² norms is suggested by the read portion.
+- Relation: RELATED, DIFFERENT SETTING (practical error estimation).
+
+### Further companion (not yet read)
+
+Smith 1986 cites I. H. Sloan, W. E. Smith, "Properties of interpolatory product integration rules", SIAM J. Numer. Anal. 19 (1982) 427–442, as its source for product-integration convergence. SIAM fulltext is not reachable from the automated browser (bot check); it is on AC's missing-fulltext list.
+
+## 2026-11-01 companion papers read (topic mz-prior-art-20261101)
+
+Reader: Claude, Opus 5.5. Access: PDF supplied by AC in Downloads\\padua\\papers (2026-11-01, NTNU access), staged to the session; text via pdftotext, or tesseract OCR for image-only scans (Xu I/II). Read in the session only; nothing stored in Git. Rules `9739a0c`.
+
+### LIT-297 — Sloan–Smith 1982, Properties of interpolatory product integration rules
+
+- Citation: SIAM J. Numer. Anal. 19(2) (1982) 427–442, DOI 10.1137/0719027. Coverage: pp. 427–434 read (all theorem statements, Theorems 1–7); proofs keyword-screened.
+- Statement: Theorem 5 (p. 432): for given points, I_n(k,f)→I(k,f) for all f∈C and all k in a weighted L^{q′} class iff sup_n‖(L_n)ρ‖_{C→L^q}<∞, i.e. iff weighted mean convergence of Lagrange interpolation holds for all continuous f. Theorem 6 (p. 433) is the L¹ case via Faber's theorem; it quotes a logarithmic bound for the uniform-norm Lebesgue constant at the classical Chebyshev points (extracted text garbled; uniform norm in any case). Theorem 7 (p. 433) is sharpness at Jacobi zeros.
+- Relation: uniform-input operator norms. **Verdict: RELATED, DIFFERENT SETTING** for all MZ claims.
+
+### LIT-298 — Smith–Sloan 1980, product-integration rules based on the zeros of Jacobi polynomials
+
+- Citation: SIAM J. Numer. Anal. 17(1) (1980) 1–13, DOI 10.1137/0717001. Coverage: abstract, introduction and the statements of Theorems 1–3; proofs not audited.
+- Statement: for nodes at Jacobi zeros and k satisfying a weighted L^p condition, p>1, the rule converges for all continuous f and Σ|w_ni|→∫|k| (Theorem 1); individual-weight limits (Theorem 2). The introduction names the CC set as the most important related case.
+- Relation: **RELATED, DIFFERENT SETTING** (Gauss–Jacobi nodes, weight sums).
+
+### LIT-048 — coverage completed (2026-11-01, response-01 to audit-01 F2)
+
+The complete article (15 pp., pp. 387–401) was loaded in AC's built-in browser (NTNU access) and section- and keyword-screened (Theorem/Lemma/Corollary/L2/quadratic/norm/log/Lobatto/interpolation/Marcinkiewicz). Structure: §1 Introduction, §2 Formulas for I_n(f), §3 Practical implementation, §4 Error estimates (explicitly "rather than rigorous error bounds"), §5 Numerical examples (Tables 1–2), references. The article contains no theorem, lemma or corollary statement and no quadratic-form or nodal ℓ² estimate. **RELATED, DIFFERENT SETTING**, now with complete-text screening coverage rather than pp. 387–388 only.

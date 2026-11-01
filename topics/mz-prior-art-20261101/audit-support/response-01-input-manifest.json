@@ -1,0 +1,179 @@
+{
+  "candidate": "41bbc231be4b5ccc7c3f92e5818a53b950ccc25f",
+  "files": [
+    {
+      "path": "literature/CORPUS.md",
+      "git_blob": "7e7a852d4c33e1d621b4e3abf827d6a92e433331",
+      "sha256": "4740975d1c31858cf54be4ea0eea50e66a594765656c33737bcfa8cfe35115b5",
+      "bytes": 19932
+    },
+    {
+      "path": "literature/INDEX.md",
+      "git_blob": "b11411b985a801d7af3ef7b22cded4445630fc61",
+      "sha256": "1795a0518202b2d51e2bd53d5236ec3bafd2cc2257601bfbbe9f36b9a75ded48",
+      "bytes": 41261
+    },
+    {
+      "path": "literature/records/mz-classical-mz-screen.md",
+      "git_blob": "931016758845c35d4327c758a8ef151bf61f14d2",
+      "sha256": "981838dee8cb0a289a0c02eb75afbb39ba333dc9abfc00413e21a882e4001ac2",
+      "bytes": 7823
+    },
+    {
+      "path": "literature/records/mz-prior-art-2026-additions.md",
+      "git_blob": "161067b2f61ec0c41143f2205f71f6daa839f818",
+      "sha256": "7370501b0c2cfddb26c34136f1845d82e6c20e08cb2c7bdff8d286983bde2d0d",
+      "bytes": 9926
+    },
+    {
+      "path": "literature/records/mz-sloan-smith-1978-1980.md",
+      "git_blob": "5017bfa79064d10b4d11da740757f582d9337f6e",
+      "sha256": "725cfe92ddfb2bb4666310f28bd7277bd22aec74874bad043b4ca0c535e95121",
+      "bytes": 7099
+    },
+    {
+      "path": "topics/mz-constants/literature-search.md",
+      "git_blob": "b75ed35444c9e2c704b9136571d62f8651ffc544",
+      "sha256": "1e4b404484bd15ed66e45efc2223e49e30abc8fb3e77f423558c3cead79fdc3a",
+      "bytes": 21918
+    },
+    {
+      "path": "topics/mz-prior-art-20261101/LOG.md",
+      "git_blob": "c17f5f34ccf81ca62f3105e123dd746fc6f59aee",
+      "sha256": "20ae6815b8d4c9e8325a4cc22f8b22e91f3e42d6f4a09e204e4de11b9c9bf07c",
+      "bytes": 10442
+    },
+    {
+      "path": "topics/mz-prior-art-20261101/comparison.md",
+      "git_blob": "e6346cd7f1b859deb50b4e8743e82a20311a45a7",
+      "sha256": "f932db08c7ee8e88596226419d0ad83e34ae5f2747355e897d389f95977116fd",
+      "bytes": 14540
+    },
+    {
+      "path": "topics/mz-prior-art-20261101/report.md",
+      "git_blob": "64bdb40ff5af0cd73805d938c4aa5e69d0e4559d",
+      "sha256": "7665cc54587cbaf3291023c9148edf9f4c48304ca31ea749a8a492c1397ab0aa",
+      "bytes": 6066
+    },
+    {
+      "path": "topics/mz-prior-art-20261101/response-01.md",
+      "git_blob": "192e7459b037b2e0a7be7521724c0f5d1d9e2d6a",
+      "sha256": "b3fccf6a1df4765718b997a7fd9350a289246100f97b7d098087bafdf6dd57bc",
+      "bytes": 10131
+    },
+    {
+      "path": "topics/mz-prior-art-20261101/translation.md",
+      "git_blob": "c11f75602720b88d054030ced7a03317cf929e03",
+      "sha256": "1f07addcf257f7a877977eaffde4594d532e578a38b3264edb46275ce2cdcc22",
+      "bytes": 12372
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "git_blob": "3c448920c0e1b5f1e8b6ff01032799b41cbdaa05",
+      "sha256": "bda43fc4f08d638563b30ea35c302ab4677f2569057b578652c1bad00852af51",
+      "bytes": 10700
+    },
+    {
+      "path": "tracks/mz-constants/paper/README.md",
+      "git_blob": "f3dc741c9246233d89130e8b289a1a722e9580cb",
+      "sha256": "391053c4a22103f04869a15c6c55382e713d1bd2290f4ffa1e5ff87bd69a14ce",
+      "bytes": 10492
+    },
+    {
+      "path": "tracks/mz-constants/paper/manuscript.tex",
+      "git_blob": "83586ac59e69574ee11f91cc17c887f6e309b1c3",
+      "sha256": "d1ae93ae7044250877b359f560ee9b609d6a87e37a5667e7a0aaab8fb85742b2",
+      "bytes": 47602
+    },
+    {
+      "path": "tracks/mz-constants/paper/refs.bib",
+      "git_blob": "c43c961903f6aebcd7bd63468392b95dcc66d35c",
+      "sha256": "9901ae3dba63af176a1ced7c066da559588bd762ee8fe7bf25602e0a48c7da63",
+      "bytes": 8810
+    },
+    {
+      "path": "AGENTS.md",
+      "git_blob": "8c94c718629649c3f5c89d05e5b674ae5ad3a99c",
+      "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60",
+      "bytes": 3159
+    },
+    {
+      "path": "agents/WORKFLOW.md",
+      "git_blob": "ae7caab0a1a393188399615e27660e7be6cf0511",
+      "sha256": "ed7322e091202e880c3d9a68a7ed52ddfdff16f522a1daaaf98864ede9419fad",
+      "bytes": 18978
+    },
+    {
+      "path": "agents/codex/CODEX.md",
+      "git_blob": "16a4ecfea89acd5b1d9cd09c9213094bce144caf",
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+      "bytes": 4969
+    },
+    {
+      "path": "state/IDEAS.md",
+      "git_blob": "2c4f99561dfc98a935179d2b07c0ac72244b2e46",
+      "sha256": "f4187404492bed6d09c5609484107f41303952eeb63453820e67b7d6d382848c",
+      "bytes": 57480
+    }
+  ],
+  "comparison_base": "64c3c79b8fe2fac27645b181aab79e3206886d16",
+  "manuscript_diff_base": "4f937137f9baac5e51814964e6a83aeb2df38815",
+  "rules_sha": "41bbc231be4b5ccc7c3f92e5818a53b950ccc25f",
+  "full_ideas_read_lines": [
+    1,
+    457
+  ],
+  "reservation_check": {
+    "candidate": "41bbc231be4b5ccc7c3f92e5818a53b950ccc25f",
+    "current_main": "21e620ba8b5f0e0706f3a8c6613517df04d9d469",
+    "main_index_blob": "e75e152d8073409ebf3dc51a09ea650ede7d926f",
+    "main_count": 292,
+    "main_unique_count": 292,
+    "main_max": 292,
+    "main_block_66_292_count": 227,
+    "reservation": [
+      293,
+      294,
+      295,
+      296,
+      297,
+      298,
+      299
+    ],
+    "reservation_count": 7,
+    "overlap": [],
+    "next_lit": 300,
+    "branches": [
+      {
+        "pr": 6,
+        "head": "3e0100f1a339c3f63dcb638785917400089a31a6",
+        "index_blob": "55843a5097ed49ab0d26d0175eb4621dda220908",
+        "allocated_at_293_or_above": [],
+        "planning_blob": "7c584f1d6cc4d2050d17748e5a6c5443b0994601",
+        "has_stale_plan": true
+      },
+      {
+        "pr": 12,
+        "head": "95ca473cc21b2db6a9a46c62e86495ebe94eb397",
+        "index_blob": "3150ed3097aa2d000ea58dd68aec1bfd00223616",
+        "allocated_at_293_or_above": [],
+        "planning_blob": "7c584f1d6cc4d2050d17748e5a6c5443b0994601",
+        "has_stale_plan": true
+      }
+    ]
+  },
+  "build_commands": [
+    "pdflatex -interaction=nonstopmode -halt-on-error -output-directory=/workspace/pr11-reaudit/build tracks/mz-constants/paper/manuscript.tex",
+    "BIBINPUTS=/workspace/pr11-reaudit/target/tracks/mz-constants/paper: bibtex manuscript (cwd /workspace/pr11-reaudit/build)",
+    "repeat pdflatex twice"
+  ],
+  "build_result": {
+    "pages": 17,
+    "final_warnings": false,
+    "pdf_sha256": "10aa9246cd7f3936fc0869d62b4b8f3a626fdc1e35448c727d1f6c43ab5efd5f"
+  },
+  "versions": {
+    "pdflatex": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+    "bibtex": "BibTeX 0.99d (TeX Live 2025/dev/Debian)"
+  }
+}

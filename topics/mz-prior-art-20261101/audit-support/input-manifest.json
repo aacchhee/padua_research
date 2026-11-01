@@ -1,0 +1,263 @@
+{
+  "candidate": "4f937137f9baac5e51814964e6a83aeb2df38815",
+  "files": [
+    {
+      "path": "literature/CORPUS.md",
+      "git_blob": "22b0fd9463d9ca193e1dd66202098a0ca8550523",
+      "sha256": "7e8e2de1f26602d21d81f768a23115d2a0fd55a54f5378436eb31f9f524a4512",
+      "bytes": 19831,
+      "verified_blob": true
+    },
+    {
+      "path": "literature/INDEX.md",
+      "git_blob": "924bc7cd8b2c17edf6b9f724c68aae0aa1732514",
+      "sha256": "dc26bdb0849ba23afc46b1156b3a057f90e904cbd51c0863e07ec80d0af261ec",
+      "bytes": 40583,
+      "verified_blob": true
+    },
+    {
+      "path": "literature/records/mz-an-sommariva-vianello-2026.md",
+      "git_blob": "ac7f4a2954264363c9470dda3a22219f17a146f2",
+      "sha256": "41c160c5df7a00aa2f782144093ff6b5d735e2f908701a8e9f6835aec7f85285",
+      "bytes": 5194,
+      "verified_blob": true
+    },
+    {
+      "path": "literature/records/mz-an-wu-2022.md",
+      "git_blob": "d59516490ccdcfb94cf1d6eeffcb4204de33647e",
+      "sha256": "831ba0a79f8786357a466010f43f9a6630727625f019b34a0f388d9dd2b147f1",
+      "bytes": 3057,
+      "verified_blob": true
+    },
+    {
+      "path": "literature/records/mz-classical-mz-screen.md",
+      "git_blob": "b6f4bff1f71b59e5b7b9ad567674387e58554c8b",
+      "sha256": "14a6e243f2f2901ace5506af4a45c9b47237e1bb57bf44e27bf77f3d60a29045",
+      "bytes": 7107,
+      "verified_blob": true
+    },
+    {
+      "path": "literature/records/mz-don-gottlieb-1994.md",
+      "git_blob": "76020a85cfe4fbfe3471a7ec09942cf7d60c3015",
+      "sha256": "ada9f8960ad1131b34285d89627bd0bdf0c143187f55b6ab1b3cb8b6bd9033e5",
+      "bytes": 2494,
+      "verified_blob": true
+    },
+    {
+      "path": "literature/records/mz-mastroianni-milovanovic-2008.md",
+      "git_blob": "9720f41f57764e2200d0a7b8d6b56112b4b14347",
+      "sha256": "2c51868c80a0bf918b1a353240515edb79d491df84961a25a53e6d3204814fd8",
+      "bytes": 2924,
+      "verified_blob": true
+    },
+    {
+      "path": "literature/records/mz-mean-convergence-screen.md",
+      "git_blob": "6e2507efa6a62afd83a430cf55c60bd65dc1651a",
+      "sha256": "3d924fd228eead5c5de6396833cb02535691acd896410434b2c0a724e6a44558",
+      "bytes": 19154,
+      "verified_blob": true
+    },
+    {
+      "path": "literature/records/mz-passi-cv-2026.md",
+      "git_blob": "f8ab06fd9cf8b260b4b07417f1703f2e524cdf6d",
+      "sha256": "c0de7bc6b35f9d9fedad4ec9570f061b3506f2a4ba25d936c47eeaa4f20592d5",
+      "bytes": 2625,
+      "verified_blob": true
+    },
+    {
+      "path": "literature/records/mz-prior-art-2026-additions.md",
+      "git_blob": "b712ed746fc065256165fc51757ccd760543b97a",
+      "sha256": "66fcb2a63ee8d4a7d8a9246de4dc55fd23bb94ff3619f439b7130697b530e077",
+      "bytes": 7098,
+      "verified_blob": true
+    },
+    {
+      "path": "literature/records/mz-sloan-smith-1978-1980.md",
+      "git_blob": "033bd5bc7f6e11dfb8dfaf6edd6d20912604c6c7",
+      "sha256": "05e587743bc0555ebceb1b3eff0c351db14a14094268533cb5b1f5b600aea218",
+      "bytes": 6387,
+      "verified_blob": true
+    },
+    {
+      "path": "literature/records/mz-widom-1966-screen.md",
+      "git_blob": "cb55b2019220e99e629c067c84ba3572cc32cc7e",
+      "sha256": "34976d3eb43ea776a6e5ea9c704e7ed49620d9d6792b998caf367054730c129f",
+      "bytes": 3414,
+      "verified_blob": true
+    },
+    {
+      "path": "topics/mz-constants/literature-search.md",
+      "git_blob": "63e9b93005baa38e86f95775d211eb78d03aea47",
+      "sha256": "54a0fd441bfb4f171dbd6154fa1a3a3648ec798acd9f180b82a9d0e818ca068e",
+      "bytes": 21336,
+      "verified_blob": true
+    },
+    {
+      "path": "topics/mz-prior-art-20261101/LOG.md",
+      "git_blob": "018a1ff9e1113051a34f726b7690e1fbcf47cb38",
+      "sha256": "ace023e59a64d4a3970f0e150a5798a5ca8c988aa8186eb036a29a0415cc43fe",
+      "bytes": 7541,
+      "verified_blob": true
+    },
+    {
+      "path": "topics/mz-prior-art-20261101/comparison.md",
+      "git_blob": "4d522ed545bac9058d05e4f7945d4c5614775ee8",
+      "sha256": "8503cc80ed91038ad37e8994b43f639a4acd3e718985bf22bb540b5533dd7ad8",
+      "bytes": 11654,
+      "verified_blob": true
+    },
+    {
+      "path": "topics/mz-prior-art-20261101/report.md",
+      "git_blob": "329491f5193888c2e2d1f5e826501b6d88b61408",
+      "sha256": "b3a4717ec99efe57bcc67e416e182fde2c2866e0f5ab67613516864eeb6eb662",
+      "bytes": 5087,
+      "verified_blob": true
+    },
+    {
+      "path": "topics/mz-prior-art-20261101/translation.md",
+      "git_blob": "cb209ac9a8da16a47c2109779a425efc24ab6975",
+      "sha256": "ea76326b664fb3266d9aa1f977e8bf25a444a9f2dc1c08e59924c0ad6edf14b6",
+      "bytes": 6871,
+      "verified_blob": true
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "git_blob": "312fbb2e1169de68091246ff09c08220c85d64e0",
+      "sha256": "7487db4a47903495c77cda0e60ab5747be9845ed230ed84a14a68de49d4546f2",
+      "bytes": 10566,
+      "verified_blob": true
+    },
+    {
+      "path": "tracks/mz-constants/paper/README.md",
+      "git_blob": "383c4bcb8184fcf38820c6b93bf2223827fd851a",
+      "sha256": "fac81cf6f4494a68903780f44424f4ba86797fe45100525317a4a2d69389b5ee",
+      "bytes": 9960,
+      "verified_blob": true
+    },
+    {
+      "path": "tracks/mz-constants/paper/manuscript.tex",
+      "git_blob": "9c1db0f57bc4259bfb7437649f1a9469a88c64e9",
+      "sha256": "24e32f5257fa3277711b2f467dc1a6cd7f37b4a42cb62b53c0611e2ce4158d28",
+      "bytes": 46224,
+      "verified_blob": true
+    },
+    {
+      "path": "tracks/mz-constants/paper/refs.bib",
+      "git_blob": "bd92f83f087d79eaea428069e9e53a87ec803b0b",
+      "sha256": "7943d8fce979d8415e58c972e4577d3b68760f60fccda42dd2d622e448597234",
+      "bytes": 8379,
+      "verified_blob": true
+    },
+    {
+      "path": "AGENTS.md",
+      "git_blob": "8c94c718629649c3f5c89d05e5b674ae5ad3a99c",
+      "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60",
+      "bytes": 3159,
+      "verified_blob": true
+    },
+    {
+      "path": "agents/codex/CODEX.md",
+      "git_blob": "16a4ecfea89acd5b1d9cd09c9213094bce144caf",
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+      "bytes": 4969,
+      "verified_blob": true
+    },
+    {
+      "path": "state/IDEAS.md",
+      "git_blob": "2c4f99561dfc98a935179d2b07c0ac72244b2e46",
+      "sha256": "f4187404492bed6d09c5609484107f41303952eeb63453820e67b7d6d382848c",
+      "bytes": 57480,
+      "verified_blob": true
+    },
+    {
+      "path": "agents/WORKFLOW.md",
+      "git_blob": "ae7caab0a1a393188399615e27660e7be6cf0511",
+      "sha256": "ed7322e091202e880c3d9a68a7ed52ddfdff16f522a1daaaf98864ede9419fad",
+      "bytes": 18978,
+      "verified_blob": true
+    }
+  ],
+  "base": "9739a0c56b7a3976422ce60a8441bfbbfd6554df",
+  "base_inputs": [
+    {
+      "path": "topics/mz-constants/directions/M1/IDEAS.md",
+      "sha256": "4352523c449d33f741c82c2ea6dd2e8e3faf440ec15311c173643b00911c1348"
+    },
+    {
+      "path": "topics/mz-constants/directions/M2/candidates.md",
+      "sha256": "691c9dd15362f1d71cbbeac86c69ff9c07ac1bd8642dfc377502d59881dc9d30"
+    },
+    {
+      "path": "topics/mz-constants/directions/M3/IDEAS.md",
+      "sha256": "a67442fbfe4f389531639b20d07e6e4e39d7dafcc8d00cc71e19c69265f5bae0"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-cardinal-lower.md",
+      "sha256": "1c9a3bf5fe8bb9dfbb2943500fb7aafd092eb8a5892c43a2e292f117fabf7776"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-parity-upper.md",
+      "sha256": "1897c95812140a7c8fbdd8331923014cb871be5d628977d1f0f942fce43af827"
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-u-witness.md",
+      "sha256": "8d43f94f191dba8b6f600a06e190fd24e274cd273ec536b1e2369ae7160f5678"
+    }
+  ],
+  "pr10_source": "a2dd845b8a231e1b00733e1361e2a9ad3bad222f",
+  "pr10_inputs": [
+    "literature/INDEX.md",
+    "literature/CORPUS.md",
+    "topics/padua-batch-20261031/ALLOCATIONS.md"
+  ],
+  "pr6_source": "9bd14a6d2c4da69139a10107d8a787f2be0c5c9e",
+  "build_commands": [
+    "pdflatex -interaction=nonstopmode -halt-on-error -output-directory=/workspace/pr11-audit/build tracks/mz-constants/paper/manuscript.tex",
+    "cd /workspace/pr11-audit/build && BIBINPUTS=/workspace/pr11-audit/target/tracks/mz-constants/paper: bibtex manuscript",
+    "repeat pdflatex command twice"
+  ],
+  "build_versions": {
+    "pdflatex": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+    "bibtex": "BibTeX 0.99d (TeX Live 2025/dev/Debian)"
+  },
+  "build_result": {
+    "pages": 17,
+    "final_warnings": false,
+    "artifact_local": "/workspace/pr11-audit/build/manuscript.pdf",
+    "sha256": "4731cd2946489fe3ce6ea606452dc5585aa2ff52dbf1033415ddd85ff08c81f5"
+  },
+  "integration_check": [
+    {
+      "path": "literature/INDEX.md",
+      "merge_file_exit": 0,
+      "conflict_markers": 0
+    },
+    {
+      "path": "literature/CORPUS.md",
+      "merge_file_exit": 0,
+      "conflict_markers": 0
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "merge_file_exit": 0,
+      "conflict_markers": 0
+    }
+  ],
+  "reservation_check": {
+    "pr10_block": [
+      66,
+      292
+    ],
+    "pr10_distinct_count": 227,
+    "pr11_ids": [
+      293,
+      294,
+      295,
+      296,
+      297,
+      298
+    ],
+    "collision": false,
+    "next_lit": 299
+  }
+}
