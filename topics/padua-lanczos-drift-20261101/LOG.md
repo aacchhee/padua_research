@@ -3,7 +3,7 @@
 - Branch: `codex/padua-lanczos-drift-20261101`.
 - Initial base and rules SHA: `cf89b140530d5838bdb208a8c28f3e7aa676ace3`. Current synchronized base: `806cc7b4509fd93bae652f9545d32d95529f8281`; rules unchanged.
 - Developer/orchestrator: Codex; root runtime does not expose the actual model variant or effort independently.
-- Stage: **AUDIT**. Required Claude Opus 5.5 xhigh audit: **PENDING**. Handoff chain: [handoffs/](handoffs/); the numbered status lines identify the one open handoff.
+- Stage: **WORK** (after audit-01: CHANGES REQUIRED; Codex response-01 pending). Earlier: AUDIT, Claude Opus 5.5 xhigh audit PENDING. Handoff chain: [handoffs/](handoffs/); the numbered status lines identify the one open handoff.
 - Final IDs: none allocated; provisional records only. Allocation and all Git mutations belong to the orchestrator.
 - Current claims/outcomes: see [report.md](report.md) and the direction ledger in [plan.md](plan.md). Initial all-OPEN wording below is historical setup provenance.
 - For the PR: reconcile candidate records, durable theory, global IDs and shared registries only at PR preparation; show WORK / AUDIT / PR sections.
@@ -81,3 +81,12 @@
 - Exact independent scalar supplement is committed. No scientific claim or endpoint changed after the final independent reconstruction except explicitly attributed record05 receipt metadata. Scalar05 remainsMEASURED.
 - Own ZIP staged at `/workspace/exports/padua-lanczos-drift-b09e1db.zip` (799968 bytes); CRC PASS. Actual content hash/source identity and nonessential raw artifact are in COLD_STORAGE.md. Windows delivery and topic-local results write remain Runs needed.
 - Next numbered handoff02 is the full Claude audit instruction; handoff01 closes at this step's output commit. The publication commit changes only the prior status and adds the new handoff. Only AC merges.
+
+## Audit 01 — Claude independent audit (2026-11-01)
+
+- Handoff: [02-audit.md](handoffs/02-audit.md). Auditor: Claude, configured `claude-opus-5-5`, xhigh; reviewer subagents Opus 5.5 xhigh (E1, E3/E4, E5) and high (E6, full IDEAS read, protocol). Rules and candidate `36c93794ce02f92c76c89e5a9ec8095eb238d91d`; scientific `b09e1db`.
+- Record: [audit-01.md](audit-01.md), with the reviewer reports, scripts and manifest in [checks/audit-01/](checks/audit-01/). Verdict CHANGES REQUIRED: 0 high, 10 medium, 32 low; no PROVED or MEASURED claim refuted. Stage returns to WORK.
+- Executed: every handoff command (E1 check and exact degree-12 runs, verify, both scalar reproductions, E5, and E6 suite/grids12/smooth). Decisive rationals are exactly equal; E5 and E6 are identical. Independent recomputations are as listed in audit-01.
+- Cold storage: audit outputs were delivered to `C:\Users\andreyac\Downloads\padua\cold_storage\padua-lanczos-drift-20261101\audit-01\` (audit-01-outputs.zip, 269978 bytes, sha256 `29c177218d0d08dcfb1299c1cdc2cc333c40f6da3208abd6f12f1e089150f9ff`; manifest.json sha256 `8d8d3306…`). Both were read back with matching hashes. Codex's own ZIP and off-repo artifacts are still not delivered or verified (audit P-F1).
+- Topic working track: written to `C:\Users\andreyac\Downloads\padua\results\padua-lanczos-drift-20261101.md` (development summary plus audit-01 outcome). Shared RESULTS.md untouched.
+- PR #15 AUDIT section: not updated by this session, which has no GitHub write credentials. The text to paste is at the end of audit-01.md.
