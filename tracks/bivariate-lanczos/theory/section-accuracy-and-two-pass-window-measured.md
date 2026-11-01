@@ -3,7 +3,7 @@
 ID kind: PD-T.
 Aliases: L2-Q1(b) measurements (F-part); IDEA?…-206 P1/P2; local channel vs propagated channel; "two-pass window".
 Split from: none.
-Split into: none.
+Split into: PD-N?…-206 (one-pass counterexamples of (a)).
 
 ## Statement
 
@@ -60,3 +60,4 @@ Two-pass window for the HL ORTH variant (conditional second MGS pass); whether �
 ## History
 
 - 2026-11-01: created (Claude Opus 5.5, xhigh; L2 R01).
+- 2026-11-01T01:29:55+01:00: Split into updated (original: "Split into: none."), reconstruction 01 F3 (Claude Opus 5.5, xhigh; L2 developer, response to reconstruction 01).

@@ -1,9 +1,9 @@
-# PD-T?bivariate-lanczos-claude-203 — The online 2D ω-estimate (exact ω-recurrence with rounding-model sources) never underestimates the loss by more than 1.5× on the benchmark set and tracks it within 7× off product-type measures; it overestimates the clustered-checkerboard coefficient channel by ~10⁵
+# PD-T?bivariate-lanczos-claude-203 — The online 2D ω-estimate (exact ω-recurrence with rounding-model sources) never underestimates the loss by more than 1.44× (E1, E2, E2D, E3) or 3.85× (sign-matched E1D) on the benchmark set and tracks it within 7× off product-type measures; it overestimates the clustered-checkerboard coefficient channel by ~10⁵
 
 ID kind: PD-T.
 Aliases: L2-Q1(a) answer; E1/E1D/E2/E2D/E3; 2D Simon ω-estimate; source audit.
 Split from: none.
-Split into: none.
+Split into: PD-N?…-205 (E3 failure, formerly only in (b)).
 
 ## Statement
 
@@ -25,7 +25,7 @@ Split into: none.
 (a) **Frozen kill test (L2-Q1, first clause): not fired** for any estimator: max U = 1.08 (E1), 1.22 (E2), 3.85 (E1D), 1.15 (E2D), 1.44 (E3) < 10.
 (b) **Tracking.** Off the checkerboards E1 tracks within the factor max(U, O) ≤ 7.1 (pre-registered definition) on all informative non-product and near-product sets (23 on the equispaced checkerboard), including the triangle where the L1 node-forcing predictor under-estimated by 50–10³ (PD-T?…-107 (c)). It does **not** track within a constant factor on the cubic-clustered checkerboard (overestimate 2.4·10⁵) — the coefficient channel. E3 does not repair this (1.8·10⁵; its pre-registered improvement criterion, ≥ 100× drop, fails).
 (c) **Source audit (long double, actual one-step sources / model scale).** F-steps out of window: max 0.06–0.6, median 0.005–0.03 (the model scale u‖·‖ exceeds the actual inner-product rounding by ~√M on spread vectors); in-window: max 1.6–20, median 0.01–0.3; J-steps out of window (contain the commutator source (C_res e_l)ᵀq̂_p): on product-type sets ≤ 2.6 (tensor), ≤ 1.1 (checkerboards); on non-product sets they grow with degree to max 10⁴–10¹⁰ × the model scale (rotπ/4 6.1e8 at n = 24, triangle 8.6e8 at n = 20, L-shape 4.5e10 at n = 30), median 10–3·10⁴. Despite this, E1 (which ignores the commutator source) and E2 (which includes it exactly) give the same verdicts: the commutator sources stay below the propagated in-window and F contributions in the loss (consistent with L1 PD-T?…-107 (d)).
-(d) **Cost of the estimate.** One dense update of order N per column: O(N²·n) flops with dense storage, independent of M; replay times 1–12 s for N ≤ 1176 (all five estimators).
+(d) **Cost of the estimate.** As coded (dense storage) O(N²) flops per column, i.e. O(N³) per run; O(N²n) would require exploiting the band sparsity of T_F and Ĥ_J; independent of M in either form; replay times 1–12 s for N ≤ 1176 (all five estimators).
 
 ## Definitions
 
@@ -68,8 +68,10 @@ Measured; tables above are the verdict file's numbers.
 
 ## Open items
 
-A source model that sees the closed-loop damping of the coefficient channel (PD-T?…-115) so that clustered product-type measures are not over-estimated by 10⁵; the estimate for selection rules other than BJ (both sections implicit in part); M-dependence of the √M overestimate of the out-of-window scale.
+A source model that sees the closed-loop damping of the coefficient channel (PD-T?…-115) so that clustered product-type measures are not over-estimated by 10⁵; the estimate for selection rules other than BJ: for selections satisfying condition (C) of PD-T?…-205 (dev, mirror, alt) both partly implicit sections are defined; for 'adapt' (violates (C) from degree 3) the implicit-section recursion is not defined and no estimate of this form exists; M-dependence of the √M overestimate of the out-of-window scale.
 
 ## History
 
 - 2026-11-01: created (Claude Opus 5.5, xhigh; L2 R01). Kill rules written before the runs (candidates.md, 00:06); E3 written after seeing E1 (disclosed there, 00:12).
+- 2026-11-01T01:28:43+01:00: (reconstruction 01 F5) title bound corrected; original title: "PD-T?bivariate-lanczos-claude-203 — The online 2D ω-estimate (exact ω-recurrence with rounding-model sources) never underestimates the loss by more than 1.5× on the benchmark set and tracks it within 7× off product-type measures; it overestimates the clustered-checkerboard coefficient channel by ~10⁵". (Reconstruction 01 §4) cost (d) corrected; original: "One dense update of order N per column: O(N²·n) flops with dense storage, independent of M;". (F1) Open item on other selections restricted to (C)-selections; original: "the estimate for selection rules other than BJ (both sections implicit in part);". Measurements unchanged (Claude Opus 5.5, xhigh; L2 developer, response to reconstruction 01, `directions/L2/response-recon-01.md`).
+- 2026-11-01T01:29:55+01:00: Split into updated (original: "Split into: none."), reconstruction 01 F3 (Claude Opus 5.5, xhigh; L2 developer, response to reconstruction 01).

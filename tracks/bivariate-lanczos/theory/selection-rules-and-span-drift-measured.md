@@ -7,7 +7,7 @@ Split into: none. Negative parts: PD-N?…-203.
 
 ## Statement
 
-[FP, MEASURED] One-relation window recurrences with selection rules dev (BJ), mirror (HL BIT), alt (X for 2j < t, else Y) and adapt (per column the candidate with larger β/‖Aq̂_p‖; reconstruction-01 rules, own implementation), block window, each with (A) CGS2 against all previous columns and (B) two-pass window without reorthogonalization; control: two-relation block recurrence, two CGS passes against blocks n−2, n−1, SVD completion. u = 2^-53. θ_LB := max_A max_{s<n} δ_A(s)/(2‖A‖) (reference-free lower bound on the principal angle to S_n, PD-T?…-205 part 4); drift against the unrotated-frame reference (rotated squares, u·κ ≤ 4e-13) and a Koornwinder–Dubiner reference (triangle, u·κ ≤ 1e-14). Max over degrees, (A) runs:
+[FP, MEASURED] One-relation window recurrences with selection rules dev (BJ), mirror (HL BIT), alt (X for 2j < t, else Y) and adapt (per column the candidate with larger β/‖Aq̂_p‖; reconstruction-01 rules, own implementation), block window, each with (A) CGS2 against all previous columns and (B) two-pass window without reorthogonalization; control: two-relation block recurrence, two CGS passes against blocks n−2, n−1, SVD completion. u = 2^-53. θ_LB := max_A max_{s<n} δ_A(s)/(2‖A‖) (reference-free lower bound on max_{s≤n} θ_s, θ_s the largest principal angle between the computed and the exact graded space of degree s; PD-T?…-205 part 4, valid for every selection); drift against the unrotated-frame reference (rotated squares, u·κ ≤ 4e-13) and a Koornwinder–Dubiner reference (triangle, u·κ ≤ 1e-14). Max over degrees, (A) runs:
 
 | set (n max) | dev θ_LB | mirror | alt | adapt | two-relation |
 |---|---|---|---|---|---|
@@ -65,8 +65,9 @@ Nine node sets, M ≤ 3000, n ≤ 39; block window; four one-relation rules and 
 
 ## Open items
 
-A selection criterion with a provable bound on the coupled residual growth (PD-T?…-205); a hybrid that uses two relations only where one-relation rules fail (rotπ/4-type isotropic supports) and one relation on product-type measures (where the two-relation completion fails).
+A selection criterion with a provable bound on the coupled residual growth (PD-T?…-205 covers only (C)-selections; 'adapt' violates (C) from degree 3, so neither PD-T?…-205's recursion nor an ω-estimate of the PD-T?…-203 form is available for it); a hybrid that uses two relations only where one-relation rules fail (rotπ/4-type isotropic supports) and one relation on product-type measures (where the two-relation completion fails).
 
 ## History
 
 - 2026-11-01: created (Claude Opus 5.5, xhigh; L2 R02). Kill rules pre-registered 00:24:54 (candidates.md).
+- 2026-11-01T01:28:43+01:00: (reconstruction 01 F7) θ_LB described as a bound on max_{s≤n} θ_s; original: "(reference-free lower bound on the principal angle to S_n, PD-T?…-205 part 4);". (F1) Open item notes that 'adapt' violates (C). Measurements and verdicts unchanged (Claude Opus 5.5, xhigh; L2 developer, response to reconstruction 01, `directions/L2/response-recon-01.md`).

@@ -176,3 +176,19 @@ Aliases: exact window dots; compensated dots; L1 hand-off "compensated/extra-pre
 | ID | Result (`logs/r03_dots.raw.gz`) | Disposition | Canonical record |
 |---|---|---|---|
 | IDEA?…-210 | P1 killed on all four clustered checkerboards (exact-dot reduction 1.3–8.5× at n = 20/24); P2 killed on rotπ/4 (14–19× reduction there); triangle 10× worse at n = 16; P3 survives (θ_LB changes < 3×); PRO-2D-J + exact dots still fails at cubic n = 29 | REJECTED: failed (remedy for the coefficient channel; channel separator) | PD-N?…-204 |
+
+---
+
+## Response to reconstruction 01 (2026-11-01T01:29:55+01:00; pre-registered and R01–R03 text above unchanged)
+
+- New PD-N records for evidenced failures (finding F3): PD-N?…-205 (IDEA?…-205, E3), PD-N?…-206 (IDEA?…-203 F-part, unconditional one-pass form), PD-N?…-207 (IDEA?…-209 on the cubic checkerboard).
+- IDEA?…-205 / -203 F-part / -207 rules / -209 dispositions are unchanged (REJECTED: failed, scopes as recorded); their canonical negative records are now the PD-N files above.
+- F1: IDEA?…-207's 'adapt' violates condition (C) of PD-T?…-205; its verdicts used only the selection-independent drift bound and are unchanged.
+
+### IDEA?bivariate-lanczos-claude-211 — PRO-2D-J restricted to non-clustered measures (narrowed successor of -209; recorded, NOT tested)
+
+Aliases: narrowed PRO-2D-J.
+- Question / scope: PRO-2D-J as in IDEA?…-209, claimed only for measures without strongly graded (clustered) weights.
+- Closest entries: IDEA?…-209 (killed on the cubic checkerboard only), PD-T?…-207.
+- Separation criterion: identical mechanism; differs only by the scope restriction — by itself not a new mechanism (variant).
+- Kill criterion: to be pre-registered before a fresh test on node sets not used in R01–R03 (the R01–R03 data cannot confirm it: the restriction was chosen after seeing them). Disposition: deferred (no new rounds in this cycle; resume with fresh sets and a written quantitative definition of "non-clustered").

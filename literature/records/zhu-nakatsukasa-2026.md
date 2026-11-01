@@ -34,3 +34,4 @@ Venue correction preserved from notes/verify_algorithmic_problems.md: the journa
 ## History
 
 2026-10-31: Step 0 baseline record (AC-requested; not a novelty gate). Provisional IDs only; final `LIT-nnn` allocated at PR preparation.
+2026-11-01: orchestrator annotation — the L2 developer (response-recon-01, finding F9) reports that the sentence quoted for LIT?bivariate-lanczos-claude-025 was not found in arXiv v2 of this paper; treat that statement's wording as UNVERIFIED until checked against the published version. The identification of BJ + CGS2-against-all with this paper's multivariate V+A is also UNVERIFIED (paper digest only; code not checked).

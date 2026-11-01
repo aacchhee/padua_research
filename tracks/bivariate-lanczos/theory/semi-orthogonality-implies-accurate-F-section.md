@@ -24,6 +24,8 @@ Split into: none.
  (b) two CGS passes over W_k (h_k = h⁽¹⁾ + h⁽²⁾): β_k‖Q̂_{W_k}ᵀq̂_k‖₂ ≤ ‖Ω_{W_k}‖₂²‖h⁽¹⁾‖₂ + ρ_k, where ρ_k collects the rounding of the two passes and of the normalisation, ρ_k ≤ c(w_k, M)·u·‖Fq̂_c‖ with c polynomial in the window size w_k and M (standard model, first order).
 **Corollary A′ (2D Simon theorem, F-part).** If the window is processed with two CGS passes, ‖Ω‖_F ≤ η ≤ √u, and the reorthogonalization coefficients satisfy γ ≤ c′√u‖F‖, then max|S − T| = O(u)·(τ₁ + ‖T‖₂ + ‖F‖)·(1 + max_k‖Fq̂_{p(k)}‖/β_k)·poly(N, M), i.e. the computed F-section equals the section W_nᵀFW_{n−1} of an orthonormal basis of the same (computed) nested spaces up to O(u)‖F‖ with polynomial constants. With one CGS pass the same conclusion holds if, additionally, μ = O(u) (an explicit hypothesis that semi-orthogonality does not supply).
 
+**Remarks added after reconstruction 01 (F8).** (i) Proposition L(b) is stated for L_k = ∅. For the implemented reorthogonalized step (two window passes, two passes against L_k, one further window pass) the same computation applied to the last window pass gives β_k‖Q̂_Wᵀq̂_k‖₂ ≤ ‖Ω_W‖₂‖h⁽³⁾‖₂ + ρ′_k with h⁽³⁾ = Q̂_Wᵀr before that pass and ‖h⁽³⁾‖₂ ≤ ‖Ω_W‖₂²‖h⁽¹⁾‖₂ + ‖Q̂_WᵀQ̂_{L_k}‖₂‖g_k‖₂ + O(u) ≤ η²‖h⁽¹⁾‖₂ + η‖g_k‖₂ + O(u); hence the local level is O(η³ + η²γ/β_k + u) — routine, first order, not written out further. (ii) The kill test of L2-Q1 uses entrywise semi-orthogonality max|Ω| ≤ √u, which gives only η ≤ N√u; the η² terms of Theorem A are then O(N²u), so "the measurements follow Theorem A" (PD-T?…-204) holds up to such polynomial factors (measured e_F is far below the bound; reconstruction 01: worst LHS/RHS = 0.16 over 35 instances).
+
 ## Definitions
 
 Local pair: a ≠ b with |deg a − deg b| ≤ 2 (equivalently min(a,b) ∈ W_{max(a,b)} for the block window). up(Z): strictly upper triangle of Z plus half its diagonal. ‖·‖_F Frobenius, ‖·‖₂ spectral.
@@ -97,3 +99,4 @@ Sharper constants (τ₁ and ‖Fq̂‖/β factors); an analogue for MGS/HL ORTH
 ## History
 
 - 2026-11-01: created (Claude Opus 5.5, xhigh; L2 R01). Proof route written before the R01 measurements (candidates.md IDEA?…-203); Proposition L(b) formulated after the R01 section suite showed that the semi-orthogonal F-failures coincide with local-level growth (disclosed in candidates.md IDEA?…-206).
+- 2026-11-01T01:28:43+01:00: Remarks (i)–(ii) after Corollary A′ added (reconstruction 01 finding F8: Prop. L(b) was applied to runs with reorthogonalization without the extension being written; Theorem-A-vs-measurement link holds only up to N² factors under entrywise SO). Statement, proof and status unchanged (Claude Opus 5.5, xhigh; L2 developer, response to reconstruction 01, `directions/L2/response-recon-01.md`).

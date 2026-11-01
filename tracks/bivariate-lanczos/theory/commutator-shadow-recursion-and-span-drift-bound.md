@@ -1,4 +1,4 @@
-# PD-T?bivariate-lanczos-claude-202 — J-part of the section theorem: the in-span commutator residual obeys the F-step ω-recursion with clamped J-columns, reorthogonalization does not reset it, and the J-defect bounds the drift of the computed spaces from S_n from below
+# PD-T?bivariate-lanczos-claude-202 — J-part of the section theorem: the in-span commutator residual obeys the F-step ω-recursion with clamped J-columns, in which reorthogonalization coefficients enter only as further coefficients (no reset term; that the residual stays large is measured, PD-N?…-201), and the J-defect bounds the drift of the computed spaces from S_n from below
 
 ID kind: PD-T.
 Aliases: commutator obstruction; shadow ω-recursion; K-recursion; J-section decomposition; drift lower bound θ ≥ δ_J/(2‖J‖); L2-Q1(b) J-part (identities).
@@ -77,3 +77,4 @@ A priori growth bound for K under the clamped recursion (equivalently for the cl
 ## History
 
 - 2026-11-01: created (Claude Opus 5.5, xhigh; L2 R01). Parts 1–4 were derived before the R01 section suite (as the intended obstruction route, candidates.md IDEA?…-203); part 5 was added after the rotπ/4 smoke test showed the pre-registered drift reference to be non-discriminating (disclosed, candidates.md amendment to IDEA?…-204).
+- 2026-11-01T01:28:43+01:00: title reworded (reconstruction 01 wording note: "does not reset it" is an interpretation of part 3; part 3 proves only that g enters as coefficients, the size of K is MEASURED). Original title: "J-part of the section theorem: the in-span commutator residual obeys the F-step ω-recursion with clamped J-columns, reorthogonalization does not reset it, and the J-defect bounds the drift of the computed spaces from S_n from below". Statement and status unchanged (Claude Opus 5.5, xhigh; L2 developer, response to reconstruction 01, `directions/L2/response-recon-01.md`).

@@ -1,9 +1,9 @@
-# PD-T?bivariate-lanczos-claude-207 — PRO-2D-J (two-pass window + ω-triggered partial reorthogonalization with measured J-rows) keeps the BJ recurrence semi-orthogonal with O(u) F-sections on 11 of 12 benchmarks at 13–70% of the dot products of CGS2-against-all; costs and M-scaling to M = 10⁵
+# PD-T?bivariate-lanczos-claude-207 — Measured behaviour of PRO-2D-J (two-pass window + ω-triggered partial reorthogonalization with measured J-rows; IDEA?…-209, REJECTED on the cubic checkerboard, PD-N?…-207): semi-orthogonal with O(u) F-sections on 11 of 12 benchmarks at 16–71% of the dot products of CGS2-against-all; costs and M-scaling to M = 10⁵
 
 ID kind: PD-T.
 Aliases: IDEA?…-209 results; L2 strategy; cost comparison vs full reorthogonalization / V+A-type CGS2; M-scaling.
 Split from: none.
-Split into: none. Negative parts: PD-N?…-202 (rounding-only trigger), PD-N?…-201 (no repair of the drift).
+Split into: PD-N?…-207 (cubic-checkerboard failure of (a)). Negative parts: PD-N?…-202 (rounding-only trigger), PD-N?…-201 (no repair of the drift).
 
 ## Statement
 
@@ -22,8 +22,8 @@ Split into: none. Negative parts: PD-N?…-202 (rounding-only trigger), PD-N?…
 | CGS2 against all (V+A type) | 1 | 6.9e-15, 4.1e-3 / 2.2e-15, 1.4e-3 / 4.4e-15, 7.1e-4 | 6.9e-15, 2.4e-2 / 2.2e-15, 1.3e-2 / 4.4e-15, 1.9e-2 | 13.3 s, 7.9 s |
 | two-relation, 2 passes | ≈ 0.36 + SVD (BLAS-3) | 6.9e-15, 6.5e-13 / 3.7e-15, 3.9e-14 / 4.4e-15, 4.3e-14 | 5.5e-13, 7.4e-12 / 7.5e-13, 5.7e-12 / 1.1e-13, 8.8e-12 | 4.9 s, 2.8 s |
 
-(reference bound u·κ ≤ 4e-13 for every drift entry). Readings: the BJ drift does not decrease with M beyond a factor ≈ 7 (rotπ/4) and is flat on the triangle; partial or full reorthogonalization changes L by up to 12 decades and the drift by less than a factor 2; the dot-product ratio of PRO-2D-J is M-independent (51 901–59 783 of 105 300 on rotπ/4; 33 754–38 195 of 53 130 on the triangle).
-(d) **Operation-count model (exact counts from the runs, n = degree, N = N_n).** One window pass: Σ_k |W_k| (block window ≈ n³ dot products; 12 676 at n = 24); two-pass window: twice that; CGS2-against-all: N(N − 1) ≈ n⁴/4 (105 300); ratio window/full ≈ 4/n. J-row measurement: Σ_t N_{t−1} ≈ n³/6 (4 624 at n = 24). Two-relation block (2 passes): Σ_n 4n(2n−1) ≈ (8/3)n³ dot products (38 000 at n = 24) plus a thin SVD of an M × 2n block per degree (≈ (8/3)n³ further dot-equivalents) — O(M n³) = O(M N^{3/2}), the same order as the window recurrence, against O(M N²) for CGS2-against-all. The ω-estimate costs O(N²n) flops independent of M.
+(reference bound u·κ ≤ 4e-13 for every drift entry). Readings: the BJ drift does not decay towards √u with M: on rotπ/4 at n = 24 it falls by ≈ 6× from M = 1681 to 10⁵ in this sample and is ≈ 6–7e-4 at M = 10⁵ (reconstruction 01: two seeds 6.3e-4–7.2e-4; seed spread 50× at M = 1681; M-independent at n ≤ 16); flat on the triangle; partial or full reorthogonalization changes L by up to 12 decades and the drift by less than a factor 2; the dot-product ratio of PRO-2D-J is M-independent (51 901–59 783 of 105 300 on rotπ/4; 33 754–38 195 of 53 130 on the triangle).
+(d) **Operation-count model (exact counts from the runs, n = degree, N = N_n).** One window pass: Σ_k |W_k| (block window ≈ n³ dot products; 12 676 at n = 24); two-pass window: twice that; CGS2-against-all: N(N − 1) ≈ n⁴/4 (105 300); ratio window/full ≈ 4/n. J-row measurement: Σ_t N_{t−1} ≈ n³/6 (4 624 at n = 24). Two-relation block (2 passes): Σ_n 4n(2n−1) ≈ (8/3)n³ dot products (38 000 at n = 24) plus a thin SVD of an M × 2n block per degree (≈ (8/3)n³ further dot-equivalents) — O(M n³) = O(M N^{3/2}), the same order as the window recurrence, against O(M N²) for CGS2-against-all. The ω-estimate costs O(N³) flops per run as coded (dense), independent of M. The J-rows are measured twice (provisional r/β₀ and final q̂_k); the provisional pass is redundant when nothing triggers, ≈ n³/6 extra dot products (≈ 2% of CGS2-against-all), counted in the ratios above (reconstruction 01).
 
 ## Definitions
 
@@ -54,7 +54,7 @@ PD-T?…-201 (why e_F stays O(u)), -202/-205 (why the drift stays), -203 (estima
 
 ## Sources
 
-Zhu–Nakatsukasa 2026 (LIT?…-024/025): CGS2 against all previous columns, O(MN²) — the cost comparator; their selection rule was not checked against BJ, so (c)'s "V+A type" row is our BJ-selection implementation, not their code. Simon 1984 (LIT?…-212): about 20% of full reorthogonalization for moderately conditioned single-operator problems (as digested) — the 2D figure here is 50–70% on hard non-product sets because nearly every column of the top degrees needs reorthogonalization.
+Zhu–Nakatsukasa 2026 (LIT?…-024/025): CGS2 against all previous columns, O(MN²) — the cost comparator; reconstruction 01 identifies, from the paper text read through a tool digest (UNVERIFIED against their code), ZN's Remark 3.2 rule in grevlex order with the BJ selection, so (c)'s "V+A type" row would be their multivariate V+A in grevlex order up to scaling; our row is our implementation, not their code. Simon 1984 (LIT?…-212): about 20% of full reorthogonalization for moderately conditioned single-operator problems (as digested) — the 2D figure here is 50–70% on hard non-product sets because nearly every column of the top degrees needs reorthogonalization.
 
 ## Proof or evidence
 
@@ -71,3 +71,5 @@ M = 10⁶ (Runs needed); the cubic-checkerboard last-degree failure; a PRO varia
 ## History
 
 - 2026-11-01: created (Claude Opus 5.5, xhigh; L2 R02). IDEA?…-209 written after the -208 failure and before its own run (disclosed in candidates.md).
+- 2026-11-01T01:28:43+01:00: (reconstruction 01 F3/F6) title states that IDEA?…-209 is REJECTED on the cubic checkerboard (PD-N?…-207) and corrects the range; original title: "PD-T?bivariate-lanczos-claude-207 — PRO-2D-J (two-pass window + ω-triggered partial reorthogonalization with measured J-rows) keeps the BJ recurrence semi-orthogonal with O(u) F-sections on 11 of 12 benchmarks at 13–70% of the dot products of CGS2-against-all; costs and M-scaling to M = 10⁵". (F4) M-scaling sentence corrected; original: "the BJ drift does not decrease with M beyond a factor ≈ 7 (rotπ/4) and is flat on the triangle;". (§4) estimate cost and double J-row measurement noted; original: "The ω-estimate costs O(N²n) flops independent of M.". (F9) ZN identification recorded as UNVERIFIED; original: "their selection rule was not checked against BJ, so (c)'s "V+A type" row is our BJ-selection implementation, not their code.". Measurements unchanged (Claude Opus 5.5, xhigh; L2 developer, response to reconstruction 01, `directions/L2/response-recon-01.md`).
+- 2026-11-01T01:29:55+01:00: Split into updated (original: "Split into: none."), reconstruction 01 F3 (Claude Opus 5.5, xhigh; L2 developer, response to reconstruction 01).
