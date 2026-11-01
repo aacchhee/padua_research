@@ -8,7 +8,7 @@ The auditor's report is immutable. Claude accepted all existing13PROVED/6MEASURE
 
 | Finding | Disposition | Concrete change / preserved scope |
 |---|---|---|
-| F1 — main/registry integration | RESOLVED, subject to focused final check | Merged main07c5f54 without rebase at718d571. Nine shared conflicts preserve both source sets. All charter and MZ final IDs, source/crosswalk/disposition rows and lattice provisional records remain. LIT061–065 are restored to this branch from merged main. No accepted charter row was found overwritten on main; the issue was branch divergence. The ledger retains its MZ owner, exact final reservation table and66 lattice provisionals, and records AC's PR4→PR5 order. |
+| F1 — main/registry integration | RESOLVED | Merged main07c5f54 without rebase at718d571. Nine shared conflicts preserve both source sets. All charter and MZ final IDs, source/crosswalk/disposition rows and lattice provisional records remain. LIT061–065 are restored to this branch from merged main. No accepted charter row was found overwritten on main; the issue was branch divergence. The ledger retains its MZ owner, exact final reservation table and66 lattice provisionals, and records AC's PR4→PR5 order. |
 | F2 — additive-separation certificate for nine residuals | DEFERRED from this registry response, not rejected | The proposed result and exact checker/output remain in audit-01.md and claude-audit/. The report and history addenda explicitly acknowledge that this auditor mechanism explains the cases left outside the original(A)/(B) methods. It is not silently folded into an existing PD-T or used for a status upgrade. A later adoption requires a new/split result and focused mathematical audit, as the auditor states. |
 | F3 — thread count | RESOLVED | The c1_stability handoff command now uses OPENBLAS_NUM_THREADS=2, OMP_NUM_THREADS=2 and MKL_NUM_THREADS=2, matching the executed producer and auditor replay. No numeric payload is changed or rerun claimed by this response. |
 | F4 — stale pending text | RESOLVED, historical text retained | Every lattice theory file has a dated History addendum linking completed Astra reconstruction and Claude acceptance. Original mathematical/pending-at-drafting text remains intact. Live README/registry/current-status metadata now distinguishes accepted mathematics from genuinely unresolved literature/targets. Two old MZ registry audit-progress fragments are also normalized to audit-02 acceptance under AC's registry-cleanup instruction; no statement/status changes. |
@@ -24,4 +24,10 @@ The focused independent review is recorded in response-review/. The final curren
 
 ## Decision
 
-After the focused registry check and rehearsal pass, this unchanged-science response can proceed to Stage PR without another mathematical audit under audit-01's stated disposition. PR #5 remains based on PR #4, so its later frontier prose cannot erase PR #4's registries. Only AC merges, in the requested order.
+The focused registry check and the recorded sequential rehearsal pass. This unchanged-science response proceeds to Stage PR without another mathematical audit under audit-01's stated disposition. PR #5 remains based on PR #4, so its later frontier prose cannot erase PR #4's registries. Only AC merges, in the requested order.
+
+
+Actual stack rehearsal: [response-01-rehearsal.json](response-01-rehearsal.json) records main07c5f54→PR4ad40c38→PR5 8d4ef1d. The result tree equals the source candidate tree at each step. The one PR5 CURRENT conflict retains all parent accepted IDs and the exact surrounding lattice paragraph. Later review/publication metadata is checked separately; no live branch was merged.
+
+Stage: PR
+Next: `Codex (gpt-6.1-sol medium): Check PR #4 then stacked PR #5 before AC’s merge decisions.`

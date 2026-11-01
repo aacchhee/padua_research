@@ -19,5 +19,14 @@
     "topic_merge": "a9e519ac3e0ff65f4ede8954d4630f2160600301",
     "target": "main",
     "parent_tree_unchanged": true
+  },
+  "response_01": {
+    "rules_read_sha": "3f369611f364c8bab41b8a48f1414f88b21937ec",
+    "main": "07c5f5465d6de306aa81dbe8ca1f615295163864",
+    "main_merge": "718d571acf140ffe5d82707d4abe93871a2ffd13",
+    "pr4_candidate": "ad40c38ffbd28a80500f6ee10dd35bc778ac4c5b",
+    "pr5_candidate": "8d4ef1d91dbd11670be0b978a0344a29ea42a7eb",
+    "order": "PR4 then PR5 stacked on PR4; user instructed",
+    "new_mathematics": false
   }
 }
