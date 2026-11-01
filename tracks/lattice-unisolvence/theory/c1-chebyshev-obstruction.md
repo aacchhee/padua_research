@@ -1,5 +1,7 @@
 # PD-N?lattice-c1-codex-02 — Infinite singular Chebyshev subsequence for the unshifted union
 
+Final ID: **PD-N034** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N. Aliases: antipodal parity-dimension obstruction; phase0/2 mod4 Chebyshev failure.
 Split from: none. Split into: none.
 

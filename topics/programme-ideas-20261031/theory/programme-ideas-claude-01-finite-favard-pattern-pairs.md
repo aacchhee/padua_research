@@ -1,5 +1,7 @@
 # PD-T?programme-ideas-claude-01 — Finite Favard theorem for commuting symmetric generalized-Hessenberg pattern pairs; dimension 3N−1
 
+Final ID: **PD-T095** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: finite Favard (M2 adversary); "commuting pattern pairs are N-node sections"; 3N−1 count; block-tridiagonal 3N−1 + C(n+2,3) count; M2 (ii)(1).
 Split from: the M2 adversarial record's combined row "finite Favard … commutant in the pattern = span{I, H_x, H_y}" (`report.md` §3 at `614709d`). The commutant clause is NOT part of this record; it is a finite MEASURED observation on random instances, kept with IDEA?programme-ideas-claude-08 and false if read universally (audit-01 A3).

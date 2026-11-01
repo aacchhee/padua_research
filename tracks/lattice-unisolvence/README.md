@@ -1,5 +1,7 @@
 # Unisolvent lattice subsets beyond checkerboards
 
+> **Final IDs (2026-11-01).** The provisional `?lattice-…-codex-NN` IDs in this track were allocated final IDs PD-T081–094, PD-N032–038, IDEA-177–189 and LIT-300–331 under AC's authorisation (PR #6). The map is `topics/programme-ideas-20261031/pr-prep/id-map.json`; see also ID_CROSSWALK.md. Each theory record states its final ID under its heading. The provisional IDs are kept below as provenance.
+
 This track develops AC's interpolation-only campaign in two and three dimensions. It began on the charter branch; charter PR #2 and MZ PR #3 are now merged. The charter itself is unchanged. See [topic log](../../topics/lattice-unisolvence-20261031/LOG.md), [frozen plan](../../topics/lattice-unisolvence-20261031/plan.md), [literature baseline](../../literature/lattice-unisolvence/baseline.md) and [shared ledger](../../topics/padua-batch-20261031/ALLOCATIONS.md).
 
 Every pattern is assessed for periodic/character definition, axis determinant factorization or a substantive analogous structural criterion, and Chebyshev Lebesgue behavior. Minimal-cardinality generic unisolvence alone is not the scientific target: lower-set interpolation is an established predecessor. Cube cubature constructions and their lower bounds are not imposed on interpolation sets.
@@ -10,11 +12,11 @@ Random-axis exact rank samples remain MEASURED for generic claims unless a writt
 
 ## Development and audit
 
-The topic retains provisional candidates and result IDs until coordinated PR preparation. Developer proofs, measurements and unresolved targets live in separate theory files. Separate Astra reconstruction supplements the required Claude audit; it does not replace it. Stage PR after the unchanged-science response and focused registry check. Exact commands and actual outputs will be linked from the final report and handoff.
+The original provisional headings remain provenance; final IDs were allocated during PR #6 preparation as recorded above. Developer proofs, measurements and unresolved targets live in separate theory files. Separate Astra reconstruction supplements the required Claude audit; it does not replace it. Stage PR after the unchanged-science response and focused registry check. Exact commands and actual outputs will be linked from the final report and handoff.
 
 ## Canonical theory inventory
 
-All IDs remain provisional as AC requested. PROVED means the written proof at its exact scope; supplementary Astra reconstruction is recorded separately and the Claude audit-01 has ACCEPTED the existing scopes/statuses.
+The table below retains the originally requested provisional IDs as aliases; each canonical record now also states its allocated final ID. PROVED means the written proof at its exact scope; supplementary Astra reconstruction is recorded separately and the Claude audit-01 has ACCEPTED the existing scopes/statuses.
 
 | ID | Statement | Status |
 |---|---|---|

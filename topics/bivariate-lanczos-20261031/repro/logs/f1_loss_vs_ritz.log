@@ -1,0 +1,65 @@
+tensor Chebyshev 25^2 plain-CGS
+   deg   4 N=   15  max|Q^TQ-I|=1.2e-14  min Ritz residual=3.0e-01  #Ritz res<1e-8: 0
+   deg   8 N=   45  max|Q^TQ-I|=1.6e-14  min Ritz residual=1.3e-01  #Ritz res<1e-8: 0
+   deg  12 N=   91  max|Q^TQ-I|=1.8e-14  min Ritz residual=7.5e-02  #Ritz res<1e-8: 0
+   deg  16 N=  153  max|Q^TQ-I|=1.9e-14  min Ritz residual=5.1e-02  #Ritz res<1e-8: 0
+   deg  20 N=  231  max|Q^TQ-I|=1.9e-14  min Ritz residual=3.7e-02  #Ritz res<1e-8: 0
+   deg  24 N=  325  max|Q^TQ-I|=1.9e-14  min Ritz residual=2.9e-02  #Ritz res<1e-8: 0
+random M=625 plain-CGS
+   deg   4 N=   15  max|Q^TQ-I|=4.2e-15  min Ritz residual=3.6e-01  #Ritz res<1e-8: 0
+   deg   8 N=   45  max|Q^TQ-I|=4.2e-15  min Ritz residual=1.2e-01  #Ritz res<1e-8: 0
+   deg  12 N=   91  max|Q^TQ-I|=4.2e-15  min Ritz residual=2.1e-02  #Ritz res<1e-8: 0
+   deg  16 N=  153  max|Q^TQ-I|=8.2e-15  min Ritz residual=8.9e-03  #Ritz res<1e-8: 0
+   deg  20 N=  231  max|Q^TQ-I|=7.7e-14  min Ritz residual=1.6e-03  #Ritz res<1e-8: 0
+   deg  24 N=  325  max|Q^TQ-I|=2.0e-12  min Ritz residual=1.5e-04  #Ritz res<1e-8: 0
+random M=2500 plain-CGS
+   deg   4 N=   15  max|Q^TQ-I|=2.1e-15  min Ritz residual=3.7e-01  #Ritz res<1e-8: 0
+   deg   8 N=   45  max|Q^TQ-I|=3.6e-15  min Ritz residual=1.6e-01  #Ritz res<1e-8: 0
+   deg  12 N=   91  max|Q^TQ-I|=4.7e-15  min Ritz residual=8.8e-02  #Ritz res<1e-8: 0
+   deg  16 N=  153  max|Q^TQ-I|=6.1e-15  min Ritz residual=4.1e-02  #Ritz res<1e-8: 0
+   deg  20 N=  231  max|Q^TQ-I|=1.3e-14  min Ritz residual=2.4e-02  #Ritz res<1e-8: 0
+   deg  24 N=  325  max|Q^TQ-I|=4.7e-14  min Ritz residual=1.2e-02  #Ritz res<1e-8: 0
+tensor Chebyshev 41^2 plain-CGS
+   deg   4 N=   15  max|Q^TQ-I|=6.5e-14  min Ritz residual=3.0e-01  #Ritz res<1e-8: 0
+   deg   8 N=   45  max|Q^TQ-I|=8.8e-14  min Ritz residual=1.3e-01  #Ritz res<1e-8: 0
+   deg  12 N=   91  max|Q^TQ-I|=9.2e-14  min Ritz residual=7.5e-02  #Ritz res<1e-8: 0
+   deg  16 N=  153  max|Q^TQ-I|=9.3e-14  min Ritz residual=5.1e-02  #Ritz res<1e-8: 0
+   deg  20 N=  231  max|Q^TQ-I|=9.5e-14  min Ritz residual=3.7e-02  #Ritz res<1e-8: 0
+   deg  24 N=  325  max|Q^TQ-I|=9.5e-14  min Ritz residual=2.9e-02  #Ritz res<1e-8: 0
+   deg  28 N=  435  max|Q^TQ-I|=9.6e-14  min Ritz residual=2.3e-02  #Ritz res<1e-8: 0
+   deg  32 N=  561  max|Q^TQ-I|=9.6e-14  min Ritz residual=1.9e-02  #Ritz res<1e-8: 0
+   deg  36 N=  703  max|Q^TQ-I|=9.6e-14  min Ritz residual=1.6e-02  #Ritz res<1e-8: 0
+   deg  40 N=  861  max|Q^TQ-I|=9.6e-14  min Ritz residual=1.4e-02  #Ritz res<1e-8: 0
+random M=1681 plain-CGS
+   deg   4 N=   15  max|Q^TQ-I|=6.9e-15  min Ritz residual=3.7e-01  #Ritz res<1e-8: 0
+   deg   8 N=   45  max|Q^TQ-I|=6.9e-15  min Ritz residual=1.3e-01  #Ritz res<1e-8: 0
+   deg  12 N=   91  max|Q^TQ-I|=6.9e-15  min Ritz residual=6.1e-02  #Ritz res<1e-8: 0
+   deg  16 N=  153  max|Q^TQ-I|=7.8e-15  min Ritz residual=5.4e-02  #Ritz res<1e-8: 0
+   deg  20 N=  231  max|Q^TQ-I|=2.7e-14  min Ritz residual=1.2e-02  #Ritz res<1e-8: 0
+   deg  24 N=  325  max|Q^TQ-I|=1.8e-13  min Ritz residual=1.7e-03  #Ritz res<1e-8: 0
+   deg  28 N=  435  max|Q^TQ-I|=1.3e-12  min Ritz residual=2.7e-04  #Ritz res<1e-8: 0
+   deg  32 N=  561  max|Q^TQ-I|=1.8e-11  min Ritz residual=2.4e-05  #Ritz res<1e-8: 0
+   deg  36 N=  703  max|Q^TQ-I|=2.9e-10  min Ritz residual=1.8e-06  #Ritz res<1e-8: 0
+   deg  40 N=  861  max|Q^TQ-I|=8.4e-09  min Ritz residual=7.7e-08  #Ritz res<1e-8: 0
+random M=6724 plain-CGS
+   deg   4 N=   15  max|Q^TQ-I|=8.9e-15  min Ritz residual=3.8e-01  #Ritz res<1e-8: 0
+   deg   8 N=   45  max|Q^TQ-I|=8.9e-15  min Ritz residual=1.8e-01  #Ritz res<1e-8: 0
+   deg  12 N=   91  max|Q^TQ-I|=8.9e-15  min Ritz residual=9.7e-02  #Ritz res<1e-8: 0
+   deg  16 N=  153  max|Q^TQ-I|=8.9e-15  min Ritz residual=6.2e-02  #Ritz res<1e-8: 0
+   deg  20 N=  231  max|Q^TQ-I|=8.9e-15  min Ritz residual=3.1e-02  #Ritz res<1e-8: 0
+   deg  24 N=  325  max|Q^TQ-I|=1.3e-14  min Ritz residual=1.6e-02  #Ritz res<1e-8: 0
+   deg  28 N=  435  max|Q^TQ-I|=2.6e-14  min Ritz residual=6.6e-03  #Ritz res<1e-8: 0
+   deg  32 N=  561  max|Q^TQ-I|=7.2e-14  min Ritz residual=2.9e-03  #Ritz res<1e-8: 0
+   deg  36 N=  703  max|Q^TQ-I|=1.9e-13  min Ritz residual=1.1e-03  #Ritz res<1e-8: 0
+   deg  40 N=  861  max|Q^TQ-I|=8.8e-13  min Ritz residual=3.5e-04  #Ritz res<1e-8: 0
+tensor 41^2 (HL reorth) reorth
+   deg   4 N=   15  max|Q^TQ-I|=6.9e-15  min Ritz residual=3.0e-01  #Ritz res<1e-8: 0
+   deg   8 N=   45  max|Q^TQ-I|=6.9e-15  min Ritz residual=1.3e-01  #Ritz res<1e-8: 0
+   deg  12 N=   91  max|Q^TQ-I|=6.9e-15  min Ritz residual=7.5e-02  #Ritz res<1e-8: 0
+   deg  16 N=  153  max|Q^TQ-I|=6.9e-15  min Ritz residual=5.1e-02  #Ritz res<1e-8: 0
+   deg  20 N=  231  max|Q^TQ-I|=6.9e-15  min Ritz residual=3.7e-02  #Ritz res<1e-8: 0
+   deg  24 N=  325  max|Q^TQ-I|=6.9e-15  min Ritz residual=2.9e-02  #Ritz res<1e-8: 0
+   deg  28 N=  435  max|Q^TQ-I|=6.9e-15  min Ritz residual=2.3e-02  #Ritz res<1e-8: 0
+   deg  32 N=  561  max|Q^TQ-I|=6.9e-15  min Ritz residual=1.9e-02  #Ritz res<1e-8: 0
+   deg  36 N=  703  max|Q^TQ-I|=6.9e-15  min Ritz residual=1.6e-02  #Ritz res<1e-8: 0
+   deg  40 N=  861  max|Q^TQ-I|=6.9e-15  min Ritz residual=1.4e-02  #Ritz res<1e-8: 0

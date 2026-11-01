@@ -1,0 +1,350 @@
+{
+  "repair_checks": {
+    "markdown_nonseven_column_rows": [],
+    "reading_coverage_missing": [],
+    "unchanged_baseline_maps_allocation": {
+      "topics/programme-ideas-20261031/lit/baseline.md": true,
+      "topics/programme-ideas-20261031/lit/integration-map.json": true,
+      "topics/programme-ideas-20261031/lit/integration-map-pr10.json": true,
+      "topics/programme-ideas-20261031/pr-prep/id-map.json": true
+    },
+    "removed_corpus_keys": [
+      "Y",
+      "c",
+      "x±y"
+    ],
+    "added_corpus_keys": [],
+    "unexpected_corpus_row_edits": [],
+    "corpus_gap_clarifications": 75,
+    "original_audit_artifacts_unchanged": {
+      "literature-check.py": true,
+      "literature-check.json": true
+    },
+    "row73_attribution_flag_retained": true,
+    "row58_unchanged": true
+  },
+  "candidate_sha": "60e8ecf7bf5a171af02fec589583fa135dee2709",
+  "main_sha": "21e620ba8b5f0e0706f3a8c6613517df04d9d469",
+  "scope": "Integration inventory, statement/locator/coverage retention; no mathematics or fulltext rerun",
+  "python": "3.12.14",
+  "baseline_rows": 111,
+  "programme_rows": 95,
+  "lattice_rows": 32,
+  "first_relations": {
+    "overlap": 51,
+    "new": 58,
+    "same": 2
+  },
+  "second_relations": {
+    "same": 14,
+    "overlap": 38,
+    "unrelated": 3
+  },
+  "merges": {
+    "LIT?programme-ideas-claude-48": "LIT-002",
+    "LIT?programme-ideas-claude-60": "LIT-010",
+    "LIT?programme-ideas-claude-01": "LIT-193",
+    "LIT?programme-ideas-claude-03": "LIT-195",
+    "LIT?programme-ideas-claude-04": "LIT-197",
+    "LIT?programme-ideas-claude-06": "LIT-198",
+    "LIT?programme-ideas-claude-09": "LIT-199",
+    "LIT?programme-ideas-claude-17": "LIT-183",
+    "LIT?programme-ideas-claude-30": "LIT-174",
+    "LIT?programme-ideas-claude-32": "LIT-148",
+    "LIT?programme-ideas-claude-33": "LIT-149",
+    "LIT?programme-ideas-claude-35": "LIT-152",
+    "LIT?programme-ideas-claude-36": "LIT-153",
+    "LIT?programme-ideas-claude-37": "LIT-161",
+    "LIT?programme-ideas-claude-44": "LIT-099",
+    "LIT?programme-ideas-claude-78": "LIT-130"
+  },
+  "merge_map_matches": true,
+  "crosswalk_merges_match": true,
+  "programme_range_matches": true,
+  "lattice_range_matches": true,
+  "all_provisional_rows_retained": true,
+  "changed_inherited_index_rows": [],
+  "retention_mismatches": [],
+  "flag_count": 20,
+  "flag_retention": {
+    "LIT?programme-ideas-claude-06": "merged; conflict retained in map",
+    "LIT?programme-ideas-claude-10": true,
+    "LIT?programme-ideas-claude-13": true,
+    "LIT?programme-ideas-claude-23": true,
+    "LIT?programme-ideas-claude-24": true,
+    "LIT?programme-ideas-claude-25": true,
+    "LIT?programme-ideas-claude-26": true,
+    "LIT?programme-ideas-claude-29": true,
+    "LIT?programme-ideas-claude-31": true,
+    "LIT?programme-ideas-claude-41": true,
+    "LIT?programme-ideas-claude-42": true,
+    "LIT?programme-ideas-claude-43": true,
+    "LIT?programme-ideas-claude-46": true,
+    "LIT?programme-ideas-claude-47": true,
+    "LIT?programme-ideas-claude-58": true,
+    "LIT?programme-ideas-claude-59": true,
+    "LIT?programme-ideas-claude-77": true,
+    "LIT?programme-ideas-claude-79": true,
+    "LIT?programme-ideas-claude-83": true,
+    "LIT?programme-ideas-claude-86": true
+  },
+  "row58_relation": {
+    "id": "LIT?programme-ideas-claude-58",
+    "relation_vs_pr10": "overlap",
+    "pr10_ids": [
+      "LIT-141",
+      "LIT-142"
+    ],
+    "conflict": "Attribution of the Gamma_2 extension to Pitman RN 312 is not supported by the online pass: LIT-231 says the Padua ideal-theory paper (BDMX) derives Padua cubature from Xu 2000 (Adv. Comput. Math. 12) and introduces Gamma_2 without citation; LIT-230 gives only book metadata. Ours (like LIT-141) is secondary.",
+    "note": "[developer override 2026-11-01: helper said same; reclassified overlap because our row adds the unsupported Pitman RN 312 attribution flagged in conflict] Same attribution correction: the SIAM 1994 paper covers dim Pi_{n-1} nodes and degree 2n-2 only; Padua needs the Gamma_2 extension (Pitman RN 312, Fields survey Thm 6.1); Padua cubature fails exactly on T_{2n}(x). SIAM scope also in LIT-142."
+  },
+  "cleanup_keys": {
+    "vanbarel-humet-sorber-2014": {
+      "count": 1,
+      "matches_main": true
+    },
+    "gill-golub-murray-saunders-1974": {
+      "count": 1,
+      "matches_main": true
+    },
+    "paige-1980-updating": {
+      "count": 1,
+      "matches_main": true
+    },
+    "stewart-1979": {
+      "count": 1,
+      "matches_main": true
+    },
+    "bojanczyk-et-al-1987": {
+      "count": 1,
+      "matches_main": true
+    },
+    "stewart-1995": {
+      "count": 1,
+      "matches_main": true
+    },
+    "chang-paige-1998": {
+      "count": 1,
+      "matches_main": true
+    },
+    "faghih-et-al-2025": {
+      "count": 1,
+      "matches_main": true
+    },
+    "faghih-vanbarel-vandebril-2026": {
+      "count": 1,
+      "matches_main": true
+    },
+    "zaccaron-2014": {
+      "count": 1,
+      "matches_main": true
+    },
+    "meurant-sommariva-2019": {
+      "count": 1,
+      "matches_main": true
+    },
+    "huhtanen-larsen-simax-2002": {
+      "count": 1,
+      "matches_main": true
+    },
+    "huhtanen-simax-2002": {
+      "count": 1,
+      "matches_main": true
+    },
+    "hokanson-2020": {
+      "count": 1,
+      "matches_main": true
+    },
+    "zhu-nakatsukasa-2026": {
+      "count": 1,
+      "matches_main": true
+    },
+    "liu-narayan-2023": {
+      "count": 1,
+      "matches_main": true
+    },
+    "brubeck-nakatsukasa-trefethen-2021": {
+      "count": 1,
+      "matches_main": true
+    },
+    "paige-1976": {
+      "count": 1,
+      "matches_main": true
+    },
+    "paige-1980-lanczos": {
+      "count": 1,
+      "matches_main": true
+    },
+    "simon-1984-mathcomp": {
+      "count": 1,
+      "matches_main": true
+    },
+    "greenbaum-1989": {
+      "count": 1,
+      "matches_main": true
+    },
+    "jia-li-2021": {
+      "count": 1,
+      "matches_main": true
+    },
+    "simonova-tichy-2025": {
+      "count": 1,
+      "matches_main": true
+    },
+    "chen-2026": {
+      "count": 1,
+      "matches_main": true
+    },
+    "sinha-2026": {
+      "count": 1,
+      "matches_main": true
+    },
+    "amsel-et-al-2026": {
+      "count": 1,
+      "matches_main": true
+    },
+    "fischer-1998": {
+      "count": 1,
+      "matches_main": true
+    },
+    "gautschi-1982": {
+      "count": 1,
+      "matches_main": true
+    },
+    "kachkovskiy-safarov-2016": {
+      "count": 1,
+      "matches_main": true
+    },
+    "lin-1997": {
+      "count": 1,
+      "matches_main": true
+    },
+    "collowald-hubert-2018": {
+      "count": 1,
+      "matches_main": true
+    },
+    "kressner-2018": {
+      "count": 1,
+      "matches_main": true
+    },
+    "kressner-oehme-2026": {
+      "count": 1,
+      "matches_main": true
+    },
+    "huhtanen-2003": {
+      "count": 1,
+      "matches_main": true
+    }
+  },
+  "bogus_corpus_rows": [],
+  "inputs": {
+    "60e8ecf7bf5a171af02fec589583fa135dee2709:topics/programme-ideas-20261031/lit/baseline.md": {
+      "bytes": 81109,
+      "sha256": "26385cb01c301d0f92f685df1c46f5b03ce55b3b935f9e5d1f8389f268d6debd"
+    },
+    "60e8ecf7bf5a171af02fec589583fa135dee2709:literature/INDEX.md": {
+      "bytes": 261781,
+      "sha256": "5cad267c7f98f1832a3ed0d8c7db65fed32e4795ac396d55add801c9493e55c9"
+    },
+    "60e8ecf7bf5a171af02fec589583fa135dee2709:literature/CORPUS.md": {
+      "bytes": 102695,
+      "sha256": "805550cc8ecaab79ac98981a71bab752e53c3ad8b2ad66615f445510071c9b62"
+    },
+    "60e8ecf7bf5a171af02fec589583fa135dee2709:ID_CROSSWALK.md": {
+      "bytes": 249483,
+      "sha256": "543b970b311bb49cc7147db637734f37e6cdb7c48e91d67c3c9e79d55812844c"
+    },
+    "60e8ecf7bf5a171af02fec589583fa135dee2709:topics/programme-ideas-20261031/lit/integration-map.json": {
+      "bytes": 47336,
+      "sha256": "7073797a7b9e1cb5f4ff82c3655b73f7b78e4258132ff86c5aa31d3fa0b5e533"
+    },
+    "60e8ecf7bf5a171af02fec589583fa135dee2709:topics/programme-ideas-20261031/lit/integration-map-pr10.json": {
+      "bytes": 23111,
+      "sha256": "cad0485ab96ffa9ff64445e57ad42cd5e7f88690b35d45f481a921d4a37b8b98"
+    },
+    "60e8ecf7bf5a171af02fec589583fa135dee2709:topics/programme-ideas-20261031/lit/integration-map.md": {
+      "bytes": 40540,
+      "sha256": "a0f068830bbbab4433967a634c7862b3c48dde0a6a6347fb43ca206206c3beed"
+    },
+    "60e8ecf7bf5a171af02fec589583fa135dee2709:topics/programme-ideas-20261031/lit/integration-map-pr10.md": {
+      "bytes": 19433,
+      "sha256": "50ef42383ab5668b9cf97112b3ae4eb1451c634e2295c5d87479abd8dd4ebf20"
+    },
+    "60e8ecf7bf5a171af02fec589583fa135dee2709:topics/programme-ideas-20261031/pr-prep/id-map.json": {
+      "bytes": 10143,
+      "sha256": "1b4b6145235ad1b2e1d8f08b7aee65ec52881711e0ca855186ba2afdab503b44"
+    },
+    "21e620b:literature/INDEX.md": {
+      "bytes": 187591,
+      "sha256": "349c7fd4b493a26e660494e9dd4fde810fcc44b432f7a076287bab8190253c3b"
+    },
+    "21e620b:literature/CORPUS.md": {
+      "bytes": 76748,
+      "sha256": "613cb145503e8fcdaacf8dbfb59cc8e1c4bdcb476a4fabb038d0d5f6ad996a5e"
+    },
+    "60e8ecf7bf5a171af02fec589583fa135dee2709:literature/records/bos-dmv-xu-2007.md": {
+      "bytes": 5058,
+      "sha256": "01c0d51e40355c00bf813b28d5164601b7d688cf47a9eb2138e687a67ae5fd45"
+    },
+    "60e8ecf7bf5a171af02fec589583fa135dee2709:literature/records/li-sun-xu-2009.md": {
+      "bytes": 1833,
+      "sha256": "f384d5b0ba6e15edaf20842c1d166f89432b3492b0a5878a7d7e7b23b73b7b53"
+    },
+    "60e8ecf7bf5a171af02fec589583fa135dee2709:literature/records/vanbarel-chesnokov-2010.md": {
+      "bytes": 24384,
+      "sha256": "9f46971a012fd9918dbac94d7af53e20c7a10910026dfa37a1a8735eadaeb8a5"
+    },
+    "60e8ecf7bf5a171af02fec589583fa135dee2709:literature/records/egk-1991.md": {
+      "bytes": 18029,
+      "sha256": "69b2932803313b6702b5b1aac36cb42d1c0997945692df67d82abdcb3d026e49"
+    },
+    "60e8ecf7bf5a171af02fec589583fa135dee2709:literature/records/bartels-jezioranski-1985.md": {
+      "bytes": 14526,
+      "sha256": "c5886c6de3e2f1cac7f70592758f02652d9c041c5942a4de7125b4aff0a7b7fa"
+    },
+    "60e8ecf7bf5a171af02fec589583fa135dee2709:literature/records/huhtanen-larsen-bit-2002.md": {
+      "bytes": 22288,
+      "sha256": "beb8a0e6a36c43c58a54c7a86b73cff0a303d571929c3a0333e73f6bf30748e5"
+    },
+    "60e8ecf7bf5a171af02fec589583fa135dee2709:literature/records/huhtanen-larsen-simax-2002.md": {
+      "bytes": 14941,
+      "sha256": "65ead53651bdb071f826a760e90837233b22dd52698aac3430fd8347174d4114"
+    },
+    "60e8ecf7bf5a171af02fec589583fa135dee2709:literature/records/brubeck-nakatsukasa-trefethen-2021.md": {
+      "bytes": 5001,
+      "sha256": "a1df44a77a3d34c4c066f4c1923d987d727ea42dc2be65a7953dd1cd3bbe018d"
+    },
+    "60e8ecf7bf5a171af02fec589583fa135dee2709:literature/records/sauer-2007.md": {
+      "bytes": 6176,
+      "sha256": "d6dfdd85757cee65546f1e084f84262e9807716a3faa40807801c7ca397a81f9"
+    },
+    "60e8ecf7bf5a171af02fec589583fa135dee2709:literature/records/xu-pitman-1994.md": {
+      "bytes": 12650,
+      "sha256": "ec05c1151be4568aaa8e787b2af82625cdb170d5375eccfc562ae4bcd771db0d"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/lit/baseline.md": {
+      "bytes": 81109,
+      "sha256": "26385cb01c301d0f92f685df1c46f5b03ce55b3b935f9e5d1f8389f268d6debd"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/lit/integration-map.json": {
+      "bytes": 47336,
+      "sha256": "7073797a7b9e1cb5f4ff82c3655b73f7b78e4258132ff86c5aa31d3fa0b5e533"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/lit/integration-map-pr10.json": {
+      "bytes": 23111,
+      "sha256": "cad0485ab96ffa9ff64445e57ad42cd5e7f88690b35d45f481a921d4a37b8b98"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/pr-prep/id-map.json": {
+      "bytes": 10143,
+      "sha256": "1b4b6145235ad1b2e1d8f08b7aee65ec52881711e0ca855186ba2afdab503b44"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:literature/CORPUS.md": {
+      "bytes": 101065,
+      "sha256": "d277638cf63aa76bbce83e01152fdf1543f5ceb47475b2c01e24ba2316b81343"
+    },
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:literature/INDEX.md": {
+      "bytes": 260653,
+      "sha256": "47599a6d32a8691bd5c4e4479417f4d935e0d97e8a32c08a0f110dcd08e1c49d"
+    }
+  }
+}

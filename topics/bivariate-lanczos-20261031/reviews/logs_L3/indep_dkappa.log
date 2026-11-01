@@ -1,0 +1,4 @@
+numpy 2.5.3 scipy 1.18.1 cvxpy 1.6.0
+304(c) Padua n=2: d(kappa o Phi) singular values (dim Skew = 3): [4.941 3.327 3.116]; max |d kappa| along T (node moves/reweights) = 2.5e-11
+numpy 2.5.3 scipy 1.18.1 cvxpy 1.6.0
+304(c) Padua n=3: d(kappa o Phi) singular values (dim Skew = 6): [9.405 8.226 4.804 3.599 2.491 2.111]; max |d kappa| along T (node moves/reweights) = 4.2e-11

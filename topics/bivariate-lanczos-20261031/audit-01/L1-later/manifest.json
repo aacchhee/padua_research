@@ -1,0 +1,628 @@
+{
+  "created_utc": "2026-11-01T06:40:06.676569+00:00",
+  "auditor": "Codex later-L1 subagent; requested gpt-6-astra xhigh; runtime identity not independently exposed",
+  "candidate_commit_supplied_by_root": "5ccfac223f466a9105450365d8c6c3781ff7d922",
+  "rules_and_working_head_supplied_by_root": "3a9063b84d14ca0a5998378371e27643fde50a29",
+  "branch_supplied_by_root": "claude/bivariate-lanczos-20261031",
+  "no_git_operations_by_subagent": true,
+  "scope_theory_with_handoff_comparison": [
+    {
+      "path": "tracks/bivariate-lanczos/theory/checkerboard-and-near-product-measurements.md",
+      "bytes": 6729,
+      "sha256": "6e4ef4cdbbc63395b8ad181e464611a01bbc5ddeedb258e5132e3da151dda633",
+      "candidate_handoff_sha256": "6e4ef4cdbbc63395b8ad181e464611a01bbc5ddeedb258e5132e3da151dda633",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/closed-loop-dot-product-rounding-carries-coefficient-channel.md",
+      "bytes": 9727,
+      "sha256": "aecf9975248b07f5d05d1c579b3f42201d9e3252ffc1e5daca123972c37fe0fd",
+      "candidate_handoff_sha256": "aecf9975248b07f5d05d1c579b3f42201d9e3252ffc1e5daca123972c37fe0fd",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/exact-certificate-propagator-growth-triangle.md",
+      "bytes": 9462,
+      "sha256": "4d7f17ff8cf75726df97a7c65ad84fb3f455911cb634bd04c0e08ce2533062e7",
+      "candidate_handoff_sha256": "4d7f17ff8cf75726df97a7c65ad84fb3f455911cb634bd04c0e08ce2533062e7",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/first-order-coefficient-channel-gains-product-type.md",
+      "bytes": 10755,
+      "sha256": "9dbeb5f4d94745dd02fbc8e51de968a6ff1b3011f84d5766df6141c12a23e692",
+      "candidate_handoff_sha256": "9dbeb5f4d94745dd02fbc8e51de968a6ff1b3011f84d5766df6141c12a23e692",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/hl-simax-windowed-complex-recurrence-instability.md",
+      "bytes": 4155,
+      "sha256": "47cd4f5b518ecba4dcf7a736293acf5f37dba31b5a6127b008fd5134df3aa1f5",
+      "candidate_handoff_sha256": "47cd4f5b518ecba4dcf7a736293acf5f37dba31b5a6127b008fd5134df3aa1f5",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/loss-regimes-node-propagator-measured.md",
+      "bytes": 7551,
+      "sha256": "dae0bf50b57fd6194079dc2545e64359ac316093dd1fbc2d7e0603363f59db73",
+      "candidate_handoff_sha256": "dae0bf50b57fd6194079dc2545e64359ac316093dd1fbc2d7e0603363f59db73",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/moment-matching-product-factorization-checkerboards.md",
+      "bytes": 6080,
+      "sha256": "8fefaafadafecfb42f7f9db960fc10543ea0d1bba40057670d4ab2a85f798030",
+      "candidate_handoff_sha256": "8fefaafadafecfb42f7f9db960fc10543ea0d1bba40057670d4ab2a85f798030",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/near-product-transfer-perturbation-bound.md",
+      "bytes": 6070,
+      "sha256": "7dd02ce2455ca553b8196ee771cad25f2a0f2e57f9e3c7d3c439dc30115cff29",
+      "candidate_handoff_sha256": "7dd02ce2455ca553b8196ee771cad25f2a0f2e57f9e3c7d3c439dc30115cff29",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/non-product-amplification-is-a-priori-measured.md",
+      "bytes": 6959,
+      "sha256": "8decf8dafb97611b88a296ad0344f09e33225f7a0a26afa3cf493aa0096e6544",
+      "candidate_handoff_sha256": "8decf8dafb97611b88a296ad0344f09e33225f7a0a26afa3cf493aa0096e6544",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/open-loop-coefficient-noise-estimates-fail.md",
+      "bytes": 4939,
+      "sha256": "c6a51ae6b6862b1b5a4c81a07070ea0d21246e78e1fe4a09061d8d5cf1396bf8",
+      "candidate_handoff_sha256": "c6a51ae6b6862b1b5a4c81a07070ea0d21246e78e1fe4a09061d8d5cf1396bf8",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/product-measure-propagator-factorization.md",
+      "bytes": 10409,
+      "sha256": "b304e439b9aa069af3865c7efe4e4ee6209cf03227ff1dbd74f16bf39e72a2f3",
+      "candidate_handoff_sha256": "b304e439b9aa069af3865c7efe4e4ee6209cf03227ff1dbd74f16bf39e72a2f3",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/r04-failed-scaling-and-predictor-hypotheses.md",
+      "bytes": 4019,
+      "sha256": "66623728ff6f85a269cd08032722248e016be8a470fd27f00ce8a8565169fee5",
+      "candidate_handoff_sha256": "66623728ff6f85a269cd08032722248e016be8a470fd27f00ce8a8565169fee5",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/ritz-residual-governance-fails-off-product-supports.md",
+      "bytes": 6549,
+      "sha256": "5388763d07fb877c4a9f04b52621a536817a2a27b802ea432f511aa19f5b27b3",
+      "candidate_handoff_sha256": "5388763d07fb877c4a9f04b52621a536817a2a27b802ea432f511aa19f5b27b3",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/selection-and-truncation-both-matter-measured.md",
+      "bytes": 6404,
+      "sha256": "eb2ec6db92211e1f95dd44ea17c35fde9514368bea0e991bc09da706472cd397",
+      "candidate_handoff_sha256": "eb2ec6db92211e1f95dd44ea17c35fde9514368bea0e991bc09da706472cd397",
+      "matches_handoff": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/support-shape-does-not-classify-loss-regime.md",
+      "bytes": 4282,
+      "sha256": "0a689dc93140d3d6bc0a5181f8f2fdabaa0a2fc83a2df7f6b84ca4e8f0e0017a",
+      "candidate_handoff_sha256": "0a689dc93140d3d6bc0a5181f8f2fdabaa0a2fc83a2df7f6b84ca4e8f0e0017a",
+      "matches_handoff": true
+    }
+  ],
+  "read_documents": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 3159,
+      "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60"
+    },
+    {
+      "path": "agents/WORKFLOW.md",
+      "bytes": 18116,
+      "sha256": "b1c1c14c83e02bf38283159f81ec278ae336ab56c95d0c026b9ada3314d1ffaa"
+    },
+    {
+      "path": "agents/codex/CODEX.md",
+      "bytes": 4969,
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b"
+    },
+    {
+      "path": "state/IDEAS.md",
+      "bytes": 46988,
+      "sha256": "12ba5f8eccfc943faebee07b83ea37b995f0b89244fa3b9b81a6f88051ad931d"
+    },
+    {
+      "path": "literature/INDEX.md",
+      "bytes": 111148,
+      "sha256": "a9fdbfeb7d0a5b485c84e3e9763739e8f8597f118a6e76bf1dcf76ea8aa28a15"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-handoff.md",
+      "bytes": 16243,
+      "sha256": "3ad150ace51e9a6e4d9c2276b3aa20bb8a80b51d1c169611cf2cba22313ed79c"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/report.md",
+      "bytes": 15087,
+      "sha256": "784b11c7fc235c9e8bcfcff915fe3dc3657f33976fbbc8d2d3d4f3f725becc19"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/plan.md",
+      "bytes": 17069,
+      "sha256": "a4dbc973b79b3b16fc6c8ec31adc8e0c8bc18a5a6136b2983ea6125e7337e69a"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/candidates.md",
+      "bytes": 54951,
+      "sha256": "d633dbbe32465ec81f6a49d82e5a553cf0dfa0a8adb09b5588072f6a382d4a0d"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/L1-reconstruction-01.md",
+      "bytes": 41245,
+      "sha256": "de1c02c2e75bba2a4535ae47c5e80e28306ff902d8cfe61bcb73e39a34416bd4"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/L1-reconstruction-02.md",
+      "bytes": 24087,
+      "sha256": "a18906b0c5721fa967e03637cace0f941e259d9212666b406909271bf93d8b43"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/R04.md",
+      "bytes": 13386,
+      "sha256": "1ad5abbc71a3c6dce1db1c877fbea60af0106a1a4e129045c2600d9ae37ab352"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/R05.md",
+      "bytes": 8006,
+      "sha256": "354ce60ca86d8d5b6ac15684a05fac06ac65ba9e8e7c473dd36bd4533385a514"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/R06.md",
+      "bytes": 7702,
+      "sha256": "864e1b0001daec74fb8c1527a768f803b908122d383858bb12ebf29946c57ef7"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/R07.md",
+      "bytes": 7732,
+      "sha256": "58c89cb633b52f5a6d280fa169e677ef7cf20a64ba52c0d6f6e58f3dfc14c483"
+    }
+  ],
+  "source_inventory_note": "Hashes cover all Python files in the three relevant L1 code directories to capture dependencies. Inventory does not assert that every unexecuted file was read or independently verified.",
+  "source_inventory": [
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_analyze_r01.py",
+      "bytes": 4772,
+      "sha256": "31a1469dd2a13e262c1fc14f2ad4318b79020f9b2b7951c5cc3828fe9b40fb5c"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_block_solve_growth.py",
+      "bytes": 1854,
+      "sha256": "6e4a87ea3382be0b3f40038b070c8d817b3bffd3223916691b1ea2508b7e04fb"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_both_relations.py",
+      "bytes": 2321,
+      "sha256": "bf3ed4c966154a41cafc86d896135d75d9608d241a06406755bdee4c979047c5"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_c01_recon_checks.py",
+      "bytes": 8415,
+      "sha256": "36a50833f45f51cc71f5001b82d2a92924921f95a2ee273cfeecf419f736c4e7"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_c01_u53_rerun.py",
+      "bytes": 2576,
+      "sha256": "698bf40c6776d812f1ff3bd15150a12e866aeb9f04360cbb662eadb7c55e0efa"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_defect_probe.py",
+      "bytes": 2446,
+      "sha256": "252707c8359eaa31cc51ac321afa1b0e2e4ee994df0384108b8b93266e577cbb"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_exact_propagator.py",
+      "bytes": 3929,
+      "sha256": "3c203ee3852fe029bc5503f2e335b12cc71521321787262a554cfd0d7c689fd3"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_identities.py",
+      "bytes": 12101,
+      "sha256": "fea4a15ca2a13d4d403d7fd8522b8db71c8a48381cee62982d8413d1bdf14f8c"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_kill_test.py",
+      "bytes": 6697,
+      "sha256": "f2430d6dd2ed20f5a17e5f7bf178b0241aa6762142b33d882ec3250644e1c1e7"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_mixed_precision.py",
+      "bytes": 1837,
+      "sha256": "eb29c15308dc698bb5f76adce25339c4e1acf809e9ddc2070ca959c48d88e5d6"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_node_propagator.py",
+      "bytes": 2431,
+      "sha256": "1638b5b227258d95b539cd1f41facc3f0917c6d77bcc54c0c09fdd8b4bdfb9b9"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_precision_scaling.py",
+      "bytes": 899,
+      "sha256": "dd7a86aa705297fc4e2a95f12319a46dc61cbf5c0541701e30d3772b40a8b75d"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_r02_main.py",
+      "bytes": 801,
+      "sha256": "74714b3ce57ac655a28072e3836f7b2481d576b82470f640efab5b1ed0d487cb"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_r04_actual_forcing.py",
+      "bytes": 1950,
+      "sha256": "412e444481f1047265e3f0a706d770f9ead9f70ad3d13518d03d68886e4bfa9d"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_r04_checkerboard.py",
+      "bytes": 4516,
+      "sha256": "1a53cdc4c187edf5ae1e14a60d125b7e2846009134d2d390a68ceb8345506c20"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_r04_checkerboard_diag.py",
+      "bytes": 4197,
+      "sha256": "bfedeb8c60010f1fb8c7eaca70023f2f2951c17da14f02ac55e34de0ee58cde0"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_r04_checkerboard_local.py",
+      "bytes": 2107,
+      "sha256": "68e512d34f75fe76bd9c91da86c43123101fe0ad13c16b07f7519e4843e443c6"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_r04_checkerboard_more.py",
+      "bytes": 1475,
+      "sha256": "b4f488b1a8e834f7fc4a565e8952af771b1594b37778f063d23482dcc1d6a03b"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_r04_checkerboard_ritz.py",
+      "bytes": 1395,
+      "sha256": "022072b553d66beaa5e39431e2e20f006a67381ce4fa4c4d456f5a3878067b66"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_r04_coef_forcing.py",
+      "bytes": 2525,
+      "sha256": "29635c459765b1c118728bb60384447f34918dad394d8f53a26b109d8c38512a"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_r04_near_product.py",
+      "bytes": 7531,
+      "sha256": "c286cb0bd2151f8dbcb6294bad1efcdd0b7f6334df346237e0572399615bb6d9"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_r04_scaled_predictor.py",
+      "bytes": 4060,
+      "sha256": "083f5ace6a2bf7136dc9e3f6e023d817e34406f2916c84fa0f6b19ce50ebdb4f"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_r05_exact_certificate.py",
+      "bytes": 3691,
+      "sha256": "d72e0deb169fefbefd6acc0bfbf60567620e62d9fc73bcae038368885812b606"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_r05_exact_more.py",
+      "bytes": 2645,
+      "sha256": "2dd8ac26a0da0c782489e5fea1dec8ce80c76b46bb4aba0b02e3c0f3d37111c0"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_r05_grid_double.py",
+      "bytes": 894,
+      "sha256": "2e811211a1cbe2274e49b1c5a7a2439fec2118f0098cff6b9a6bb512dad0e5f6"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_r06_coefficient_channel.py",
+      "bytes": 6344,
+      "sha256": "671813d2abd35a63ab7af5e28a66e0dd7c6f4da07676e06ede31f7ebbe13d1a2"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_r06_gain_identity.py",
+      "bytes": 7431,
+      "sha256": "b56247dcad87d7d6481c05ff78150ee2971bf8f60f3deff9e094db61bd6cea78"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_r07_closed_loop.py",
+      "bytes": 3789,
+      "sha256": "caa1781922d29ddc9f5c53860388e23a040b7058c1cd16e8e27515b0b8226ec7"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_r07_offpattern_anatomy.py",
+      "bytes": 5715,
+      "sha256": "02d915336a09b22621dc18c7d17b244c6536f8a34b0dec19bf104cdc780fdaea"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_r07_termwise_predictor.py",
+      "bytes": 3537,
+      "sha256": "73d2a1a630e983b0b4101efd95564741667f156f74388065031816405d72434a"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_recurrence.py",
+      "bytes": 7275,
+      "sha256": "4b6014359d6cf50d2977ace0524846a5d0bf5498528a382e1c6abde2cb05b884"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l1_simax_variants.py",
+      "bytes": 1924,
+      "sha256": "c4976003600f2376d5f7b281a76a3d2116fced21795625a01a57dc69b13fdf17"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L1/l4_codim_check.py",
+      "bytes": 1158,
+      "sha256": "1cbe691ecaf6154aaebb97f5481708a85e9c0139b6a48ef012e62646cac81014"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L1/rv_core.py",
+      "bytes": 9411,
+      "sha256": "b2360c4cc4c96c3ca55bbc5561f3a262a0d95960731a513db4f98fe861192b00"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L1/rv_exact_checks.py",
+      "bytes": 22203,
+      "sha256": "be0cbd8a95771f25235c8247a3452ff6d4465662ca56c1b098d9632326cfa63f"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L1/rv_extra.py",
+      "bytes": 4984,
+      "sha256": "62484956c27c1e75fa29bea2b4d14ff1db50ff23db3ec936297f70e7e32da7ab"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L1/rv_prop.py",
+      "bytes": 4483,
+      "sha256": "1b2073d1be5cb53ef1695366327018f7cc4f63a5c5f569f1a937666633ce48d7"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L1/rv_prop_selection.py",
+      "bytes": 1534,
+      "sha256": "45595ee5f7a44b87031d3f9bbebbb1407134da409758a2b424be8521e63b0f33"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L1/rv_rule_sensitivity.py",
+      "bytes": 2732,
+      "sha256": "c92a16aa9d55302dcd2a9a3df97db9b0c44edacbd1b485beb23b746ee608d3cf"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L1/rv_sweep.py",
+      "bytes": 8623,
+      "sha256": "9a641998ccb7589ae30dca1a3e36a49061902a39379e9f6c2e98353aa9d78e34"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L1b/rv2_certificate.py",
+      "bytes": 9886,
+      "sha256": "b817545be2b237a78d41c198a133b8bf78680c42032332327eb7ac419eb59501"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L1b/rv2_checkerboard.py",
+      "bytes": 7895,
+      "sha256": "d29ed806c7959ebf8728dd0d7c8be8fbe285a2cdfafd773582b04610bf9702a2"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L1b/rv2_checkerboard_ritz.py",
+      "bytes": 1375,
+      "sha256": "870fa766ef07f735a04cf1b62b25dd06daca3b32b9f54cff92c3dda4014f0bdf"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L1b/rv2_closed_loop.py",
+      "bytes": 3496,
+      "sha256": "2f3fe3734c79cee7eb4d636101bb31a737ce3b76859c2c30e661c14a4a12bc76"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L1b/rv2_closed_loop_sets.py",
+      "bytes": 1496,
+      "sha256": "6ab077f6695c47971296c8211b2d1340bbcb77be020ef728f6a21084a1acff42"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L1b/rv2_exact_checkerboard.py",
+      "bytes": 3324,
+      "sha256": "be0a8dd4691dfbf54dab696ad8f53c2cd8dd6a8b7e62a1bbcf87ab25faebf462"
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L1b/rv2_open_loop.py",
+      "bytes": 3157,
+      "sha256": "2a41103f524354f19437b14471a365f1f47ef31a8662ff9a5c304ccf87a1b3da"
+    }
+  ],
+  "existing_raw_data_reanalysed_not_rerun": [
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_input3.raw",
+      "bytes": 60084,
+      "sha256": "47c95e6ff78ce5775ae8e65f697bc66347c52ab8b27947f18cd7c77d874d4fe8"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_rotation.raw",
+      "bytes": 88036,
+      "sha256": "410d772354f454d362a2979e508a87d103f640f2e665ae1e5eb057f583c5ccaf"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_swap.raw",
+      "bytes": 19696,
+      "sha256": "08d6d7bb459e9491d8a7b5d490162a07e9b7f78b36695dd2997dc658e6a22e1a"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_padua.raw",
+      "bytes": 71835,
+      "sha256": "dbe2bdf5606fb77633c3eeb9631b7717caacc25de006d858fec5733a28e9dec0"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_irregular.raw",
+      "bytes": 88199,
+      "sha256": "be99f833226de1bc4df87fad85b5f1d1c60273f9b6ea09bb4684a3e80973c591"
+    }
+  ],
+  "executions": [
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 -I -u tracks/bivariate-lanczos/code/review_L1b/rv2_certificate.py triangle 24 12 integer mp > topics/bivariate-lanczos-20261031/audit-01/L1-later/cert_triangle_rerun.log",
+      "cwd": "/workspace/padua_research",
+      "exit_code": 0,
+      "output": {
+        "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/cert_triangle_rerun.log",
+        "bytes": 1665,
+        "sha256": "b328c93fccdccf009a3c48d07c5df0a19adc4f60eeb97a4db0085f774b65c95d"
+      }
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 -I -u tracks/bivariate-lanczos/code/review_L1b/rv2_certificate.py square 24 12 > topics/bivariate-lanczos-20261031/audit-01/L1-later/cert_square_rerun.log",
+      "cwd": "/workspace/padua_research",
+      "exit_code": 0,
+      "output": {
+        "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/cert_square_rerun.log",
+        "bytes": 1566,
+        "sha256": "8606323c1890a4eea9d8c3528f9b40adada016130e3729e1fa4be367ed374f5a"
+      }
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 -I -u tracks/bivariate-lanczos/code/review_L1b/rv2_certificate.py square 40 16 > topics/bivariate-lanczos-20261031/audit-01/L1-later/cert_square40_rerun.log",
+      "cwd": "/workspace/padua_research",
+      "exit_code": 0,
+      "output": {
+        "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/cert_square40_rerun.log",
+        "bytes": 1823,
+        "sha256": "4375ae13eae79f3011c3455c09c85798bff7d810aae17ce9111afd17073005f2"
+      }
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 -I -u tracks/bivariate-lanczos/code/L1/l1_r06_gain_identity.py > topics/bivariate-lanczos-20261031/audit-01/L1-later/gain_producer_rerun.log",
+      "cwd": "/workspace/padua_research",
+      "exit_code": 0,
+      "output": {
+        "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/gain_producer_rerun.log",
+        "bytes": 1577,
+        "sha256": "583ca75e1338abcb7d8d193b71d865fd861f5f774a5be666d7e3af495f37169e"
+      }
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 -I -u tracks/bivariate-lanczos/code/review_L1b/rv2_closed_loop_sets.py > topics/bivariate-lanczos-20261031/audit-01/L1-later/closed_loop_rerun.log",
+      "cwd": "/workspace/padua_research",
+      "exit_code": 0,
+      "output": {
+        "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/closed_loop_rerun.log",
+        "bytes": 821,
+        "sha256": "77b844281db536a8101a22faee5d41037ac2799a5d2a1de5604f386fc7394ebe"
+      }
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 -I -u tracks/bivariate-lanczos/code/review_L1b/rv2_open_loop.py > topics/bivariate-lanczos-20261031/audit-01/L1-later/open_loop_rerun.log",
+      "cwd": "/workspace/padua_research",
+      "exit_code": 0,
+      "output": {
+        "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/open_loop_rerun.log",
+        "bytes": 1662,
+        "sha256": "38855fabb74083ad40842f65bc9b4e264382e2afd7062bbcf6302c082118eab2"
+      }
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 -I -u tracks/bivariate-lanczos/code/L1/l1_r04_near_product.py > topics/bivariate-lanczos-20261031/audit-01/L1-later/near_product_producer_rerun.log",
+      "cwd": "/workspace/padua_research",
+      "exit_code": 0,
+      "output": {
+        "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/near_product_producer_rerun.log",
+        "bytes": 1654,
+        "sha256": "6dd7cce88660e9a303ac2f10051c321abd95b89955e56d7460acf697451de16a"
+      }
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 -I -u tracks/bivariate-lanczos/code/L1/l1_simax_variants.py > topics/bivariate-lanczos-20261031/audit-01/L1-later/simax_producer_rerun.log",
+      "cwd": "/workspace/padua_research",
+      "exit_code": 0,
+      "output": {
+        "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/simax_producer_rerun.log",
+        "bytes": 306,
+        "sha256": "7ff6cb74f7a020e21c8ecf09cf1a8ee83f923465e75f7fbb137b90171d386923"
+      }
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 -I -u topics/bivariate-lanczos-20261031/audit-01/L1-later/independent_checks.py > topics/bivariate-lanczos-20261031/audit-01/L1-later/independent_checks.log",
+      "cwd": "/workspace/padua_research",
+      "exit_code": 0,
+      "output": {
+        "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/independent_checks.log",
+        "bytes": 1687,
+        "sha256": "dd49d6a0bbd2ec832b5d3274f7ff06bc6404bf2e6f404d35ca6f33190efab0ad"
+      }
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 -I -u topics/bivariate-lanczos-20261031/audit-01/L1-later/independent_checks.py rule > topics/bivariate-lanczos-20261031/audit-01/L1-later/rule_reanalysis.log",
+      "cwd": "/workspace/padua_research",
+      "exit_code": 0,
+      "output": {
+        "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/rule_reanalysis.log",
+        "bytes": 419,
+        "sha256": "611e9d0aa5ce7e292be59a035238601527dd576b3d1772b65a9affd5ecc71e55"
+      }
+    }
+  ],
+  "audit_report": {
+    "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later.md",
+    "bytes": 20727,
+    "sha256": "767333dac06f489893e83b5d1850eec9414be5aa31624d941481d4a06369826a"
+  },
+  "own_evidence_except_manifest": [
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/cert_square40_rerun.log",
+      "bytes": 1823,
+      "sha256": "4375ae13eae79f3011c3455c09c85798bff7d810aae17ce9111afd17073005f2"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/cert_square_rerun.log",
+      "bytes": 1566,
+      "sha256": "8606323c1890a4eea9d8c3528f9b40adada016130e3729e1fa4be367ed374f5a"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/cert_triangle_rerun.log",
+      "bytes": 1665,
+      "sha256": "b328c93fccdccf009a3c48d07c5df0a19adc4f60eeb97a4db0085f774b65c95d"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/closed_loop_rerun.log",
+      "bytes": 821,
+      "sha256": "77b844281db536a8101a22faee5d41037ac2799a5d2a1de5604f386fc7394ebe"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/environment.log",
+      "bytes": 2051,
+      "sha256": "bc81f3b0f70737a14a85e70a2f477eeacc056486575f89223038582901aade2f"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/gain_producer_rerun.log",
+      "bytes": 1577,
+      "sha256": "583ca75e1338abcb7d8d193b71d865fd861f5f774a5be666d7e3af495f37169e"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/independent_checks.log",
+      "bytes": 1687,
+      "sha256": "dd49d6a0bbd2ec832b5d3274f7ff06bc6404bf2e6f404d35ca6f33190efab0ad"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/independent_checks.py",
+      "bytes": 5754,
+      "sha256": "6c4f32509bc8d52650e2d5447f275afa498042c274a48387cdcbf4facab91da5"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/near_product_producer_rerun.log",
+      "bytes": 1654,
+      "sha256": "6dd7cce88660e9a303ac2f10051c321abd95b89955e56d7460acf697451de16a"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/open_loop_rerun.log",
+      "bytes": 1662,
+      "sha256": "38855fabb74083ad40842f65bc9b4e264382e2afd7062bbcf6302c082118eab2"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/rule_reanalysis.log",
+      "bytes": 419,
+      "sha256": "611e9d0aa5ce7e292be59a035238601527dd576b3d1772b65a9affd5ecc71e55"
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/simax_producer_rerun.log",
+      "bytes": 306,
+      "sha256": "7ff6cb74f7a020e21c8ecf09cf1a8ee83f923465e75f7fbb137b90171d386923"
+    }
+  ],
+  "own_evidence_bytes_except_manifest": 20985,
+  "manifest_self_hash": "Excluded to avoid self-reference; root integration can inventory it."
+}

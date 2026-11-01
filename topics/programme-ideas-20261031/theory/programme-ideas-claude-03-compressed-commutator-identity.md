@@ -1,5 +1,7 @@
 # PD-T?programme-ideas-claude-03 — Compressed commutator of a commuting pair on a graded Krylov space equals minus the boundary-block skew product
 
+Final ID: **PD-T097** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: basis-invariant commutator block identity (gen3-1 adversary, (iii)); [Q_nᴴXQ_n, Q_nᴴYQ_n] = −(B_xᴴB_y − B_yᴴB_x).
 Split from: `checks/adversarial-gen3-1.md` (iii), first bullet, at `614709d`: the identity **and** the clause "nonzero whenever K_n ≠ ℂ^M". Only the identity is retained; the nonvanishing clause is withdrawn (audit-01 A9.5).

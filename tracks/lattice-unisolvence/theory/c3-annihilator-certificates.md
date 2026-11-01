@@ -1,5 +1,7 @@
 # PD-T?lattice-c3-codex-02 — Coordinate-layer and projected-count annihilator certificates
 
+Final ID: **PD-T091** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T. Aliases: product cover; slice-removal dimension obstruction. Split from: none. Split into: catalogue certificate observations in c3-rank-observations.md.
 
 ## Statement

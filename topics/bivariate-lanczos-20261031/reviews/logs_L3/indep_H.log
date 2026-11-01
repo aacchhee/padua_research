@@ -1,0 +1,38 @@
+numpy 2.5.3 scipy 1.18.1 cvxpy 1.6.0
+(H) rerun family=padua nmax=7 seed=0; Legendre basis; primal normalisation sum tr Hess = 1
+  n=1 M=3 dimS1=1 (exp 1) last kept sv/s0=1.2e-01 lam_P=-1.7658e-01 t_D=8.5740e-02 [optimal,optimal] -> (H) holds
+  n=2 M=6 dimS1=3 (exp 3) last kept sv/s0=4.9e-02 lam_P=-1.8590e-02 t_D=1.5199e-02 [optimal,optimal] -> (H) holds
+  n=3 M=10 dimS1=6 (exp 6) last kept sv/s0=2.9e-02 lam_P=3.4655e-03 t_D=-3.7236e-03 [optimal,optimal] -> robust failure
+  n=4 M=15 dimS1=10 (exp 10) last kept sv/s0=1.7e-02 lam_P=1.2297e-03 t_D=-1.2768e-03 [optimal,optimal] -> robust failure
+  n=5 M=21 dimS1=15 (exp 15) last kept sv/s0=1.0e-02 lam_P=1.6612e-03 t_D=-1.7858e-03 [optimal,optimal] -> robust failure
+  n=6 M=28 dimS1=21 (exp 21) last kept sv/s0=7.7e-03 lam_P=6.6210e-04 t_D=-6.8759e-04 [optimal,optimal] -> robust failure
+  n=7 M=36 dimS1=28 (exp 28) last kept sv/s0=5.4e-03 lam_P=8.4835e-04 t_D=-9.0354e-04 [optimal,optimal] -> robust failure
+numpy 2.5.3 scipy 1.18.1 cvxpy 1.6.0
+(H) rerun family=equi nmax=6 seed=0; Legendre basis; primal normalisation sum tr Hess = 1
+  n=1 M=3 dimS1=1 (exp 1) last kept sv/s0=1.2e-01 lam_P=-1.7658e-01 t_D=8.5740e-02 [optimal,optimal] -> (H) holds
+  n=2 M=6 dimS1=3 (exp 3) last kept sv/s0=5.7e-02 lam_P=-2.6400e-02 t_D=2.0049e-02 [optimal,optimal] -> (H) holds
+  n=3 M=10 dimS1=6 (exp 6) last kept sv/s0=3.0e-02 lam_P=-1.8976e-03 t_D=1.8282e-03 [optimal,optimal] -> (H) holds
+  n=4 M=15 dimS1=10 (exp 10) last kept sv/s0=1.7e-02 lam_P=-1.3318e-04 t_D=1.3265e-04 [optimal,optimal] -> (H) holds
+  n=5 M=21 dimS1=15 (exp 15) last kept sv/s0=9.8e-03 lam_P=-4.8479e-06 t_D=4.8468e-06 [optimal,optimal] -> (H) holds
+/usr/local/lib/python3.13/site-packages/cvxpy/problems/problem.py:1481: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  warnings.warn(
+  n=6 M=28 dimS1=21 (exp 21) last kept sv/s0=6.5e-03 lam_P=-4.6123e-08 t_D=4.5982e-08 [optimal_inaccurate,optimal] -> unresolved
+numpy 2.5.3 scipy 1.18.1 cvxpy 1.6.0
+(H) rerun family=random nmax=6 seed=1; Legendre basis; primal normalisation sum tr Hess = 1
+  n=1 M=3 dimS1=1 (exp 1) last kept sv/s0=4.9e-02 lam_P=-1.8762e-01 t_D=8.8261e-02 [optimal,optimal] -> (H) holds
+  n=2 M=6 dimS1=3 (exp 3) last kept sv/s0=4.6e-02 lam_P=-1.8246e-02 t_D=1.4969e-02 [optimal,optimal] -> (H) holds
+  n=3 M=10 dimS1=6 (exp 6) last kept sv/s0=3.2e-02 lam_P=1.7062e-04 t_D=-1.7120e-04 [optimal,optimal] -> robust failure
+  n=4 M=15 dimS1=10 (exp 10) last kept sv/s0=6.3e-03 lam_P=5.8165e-04 t_D=-5.9198e-04 [optimal,optimal] -> robust failure
+  n=5 M=21 dimS1=15 (exp 15) last kept sv/s0=4.5e-03 lam_P=4.0612e-05 t_D=-4.0681e-05 [optimal,optimal] -> robust failure
+  n=6 M=28 dimS1=21 (exp 21) last kept sv/s0=1.3e-02 lam_P=1.4786e-05 t_D=-1.4799e-05 [optimal,optimal] -> robust failure
+numpy 2.5.3 scipy 1.18.1 cvxpy 1.6.0
+(H) rerun family=graded nmax=5 seed=0; Legendre basis; primal normalisation sum tr Hess = 1
+  n=1 M=3 dimS1=1 (exp 1) last kept sv/s0=1.3e-01 lam_P=-2.1539e-01 t_D=9.3960e-02 [optimal,optimal] -> (H) holds
+  n=2 M=6 dimS1=3 (exp 3) last kept sv/s0=4.5e-02 lam_P=-7.4513e-02 t_D=3.9338e-02 [optimal,optimal] -> (H) holds
+  n=3 M=10 dimS1=6 (exp 6) last kept sv/s0=2.3e-02 lam_P=-5.2704e-03 t_D=4.7678e-03 [optimal,optimal] -> (H) holds
+  n=4 M=15 dimS1=10 (exp 10) last kept sv/s0=1.2e-02 lam_P=-4.2718e-06 t_D=4.2711e-06 [optimal,optimal] -> (H) holds
+  n=5 M=21 dimS1=15 (exp 15) last kept sv/s0=7.4e-03 lam_P=-2.2487e-13 t_D=-7.0733e-11 [optimal,optimal] -> unresolved
+
+real	0m27.912s
+user	0m14.974s
+sys	0m0.513s

@@ -1,5 +1,7 @@
 # PD-N?programme-ideas-claude-05 — No change of basis makes the truncated sections of the tested trajectory measures commute; the commutator is the boundary-block skew product
 
+Final ID: **PD-N043** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: "exact commutation in the Fourier basis" refuted (gen3-1 sub-problem 3); trajectory-measure sections; Lissajous/rhodonea commutators.
 Split from: `checks/adversarial-gen3-1.md` (iii), first bullet, at `614709d` (the mechanism refutation); the identity it uses is `PD-T?programme-ideas-claude-03`.

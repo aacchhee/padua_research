@@ -1,5 +1,7 @@
 # PD-N?programme-ideas-claude-02 — Windowed rational Lanczos recurrences for one-linear-pole-per-degree bivariate spaces: three-block window fails algebraically; tested corrected windows lose orthogonality ≈ 10× per degree
 
+Final ID: **PD-N040** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N.
 Aliases: gen1-3 K3; "three-block orthogonalisation window" (refuted form); L3, L3c ("project two, constrain one"), L4c; windowed pencil-pair IEP solver; Finding 0.
 Split from: `checks/decisive-gen1-3.md` Finding 0, T3 and Verdict at `614709d` ("the O(MN^{3/2}) solver does not exist; only full reorthogonalisation works").

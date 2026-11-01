@@ -1,0 +1,82 @@
+# L5 — response to Codex audit-01 (`audit-01/L5.md`, summary in `audit-01.md`)
+
+Developer: Claude Sonnet 5.5 (high). Written 2026-11-01T08:24+01:00. Branch `claude/bivariate-lanczos-20261031`, head `5f52331` (no Git state touched by the developer). I read `audit-01/L5.md`, its evidence folder `audit-01/L5/` (`diagnostics.jsonl`, `kill-rerun.jsonl`, `random-fit.jsonl`, ...) and the L5 section of `audit-01.md`, and did not edit any audit file. The audit finds no counterexample to either PROVED result and accepts the scoped MEASURED failures; its four findings concern inference language (M1), numerical-versus-certified terminology (M2), a wrong ID in the report (L1) and a false descriptive claim (L2). **No status is upgraded or downgraded; no number, kill verdict or disposition was changed.** Only wording was corrected, one reanalysis script was added, and the audit's figures were recorded. Every changed statement carries a dated History line (`date -Iseconds`) that quotes the original wording and names the finding; for direction records the dated line is in the file's revision-history list.
+
+New analysis (no new experiment; committed logs only): `tracks/bivariate-lanczos/code/L5/analyze_r01d.py`, run as `OPENBLAS_NUM_THREADS=1 python3 -I analyze_r01d.py directions/L5/logs > directions/L5/logs/analysis_r01d.txt` (Python 3.13.18, NumPy 2.5.3, SciPy 1.18.1, the developer environment of the original runs; exit 0). It computes paired slope differences for all families and order classes, with a check column confirming that each paired slope equals the difference of the marginal slopes, and lists the lockstep checkpoint decreases from `logs/r02_dual.jsonl`.
+
+## M1 — Householder ratios do not establish removal of conditioning
+
+**Summary.** Accepted in full. For paired errors G, H and Householder B, log(G/B) − log(H/B) = log(G/H), so Householder normalisation leaves every Givens-versus-HL (or CGS2) slope difference unchanged, and no common multiplicative conditioning factor was assumed or established. Positive separate ratio slopes are not an interval for their difference.
+
+**Disposition.** FIXED (wording and reporting); nothing disputed. Point estimates and exploratory ratios retained. "removes the per-instance conditioning" replaced by an explicitly heuristic description; "survives the conditioning confound in the uniform family" deleted. Paired differences reported with size-level 95% t-intervals (df = sizes − 2, the convention of `analyze_r01c.py`), labelled descriptive (not significance tests, no causal reading). No resolved uniform-family Givens-versus-HL rate separation is asserted. "driven by prefix conditioning ..., not by rotation count" replaced by "associated with prefix conditioning (T503 (C) is a correlation only; causality not established)", with rotation count neither confirmed nor excluded. The frozen criterion's failure (uniform-density family, as written) is preserved as the headline and gets an explicit clause (6) saying that neither the ratios nor the paired differences revive it. Supplementary remark of the audit (absence of detected curvature at seven sizes is not proof of an asymptotic power law) applied to "clean power law" wording.
+
+**Files changed.** `tracks/bivariate-lanczos/theory/givens-deficit-slopes-measured.md` (PD-T?bivariate-lanczos-claude-502); `directions/L5/R01.md` (§3.1 post-hoc paragraph, model-misspecification paragraph, §8); `directions/L5/candidates.md` (IDEA 501 result; History); `directions/L5/STATUS.md` (ledger line); new `code/L5/analyze_r01d.py`, `directions/L5/logs/analysis_r01d.txt`.
+
+**Evidence.** Paired differences from `analysis_r01d.txt` (27 interval triples in the 502 table were machine-checked against that file), uniform-random family: Givens − HL **0.595 [−0.111, 1.301]** (df 5; contains zero), Givens − CGS2 **1.302 [0.620, 1.984]**, Givens − Householder 0.758 [0.057, 1.459], which equals the retained normalised Givens slope 0.76 [0.06, 1.46]. These agree with the audit's independent 0.5953256 [−0.1106994, 1.3013506] and 1.3020027 [0.6202911, 1.9837143]. Other families, Givens − HL: Padua cubature 0.668 [0.275, 1.060]; Padua U(0.1,1) 0.756 [0.260, 1.251]; Padua unit weights (4 sizes, df 2) 0.312 [−0.006, 0.631], also containing zero; arcsine random (df 4) 0.568 [0.245, 0.891]; structured orders only 0.12–0.14. The audit's fresh uniform rerun (35 size/seed cases, M ≤ 2016: Givens-scheme 2.87152 [1.78578, 3.95726], HL 2.27619, CGS2 1.56952, Householder 2.11374) reproduces the failure of the original criterion and is recorded in the 502 Checks; it covers only the uniform family. Open item added: any "removal of conditioning" reading needs a stated and tested model.
+
+## M2 — prefix checker gives numerical estimates, not exact or interval certificates
+
+**Summary.** Accepted. `prefix.py` evaluates the (exact-arithmetic reasonable) Schur-complement bounds with ordinary floating-point inverses, products and SVDs and no error enclosure; "SVD sets lo == hi and is called exact". The claim that the entries of the constructed orthogonal Padua matrix have errors ≲ 3u was never demonstrated; the audit's 80-digit spot checks give 17.11u (n = 30), 13.69u (n = 50), 22.60u (n = 62) against exact Padua data (3.32u/3.62u against the same stored doubles at n = 10/62).
+
+**Disposition.** FIXED (terminology and one withdrawn assumption); nothing disputed. Used throughout: "numerical lower/upper estimates", "direct floating-point SVD", "numerically singular/unisolvent", "smallest value among the refined/scanned prefixes". The combinatorial line criterion (K nodes on c vertical lines) is kept as the only exact singularity argument and separated from the numerical estimates. The Assumption "entries of Q_c with errors ≲ 3u, so certified σ_min ≥ 1e-11 implies nonsingular for K ≤ 2016" is **withdrawn as a bound** and replaced by the audit's spot-check figures and the statement that all classifications are floating-point (with the observation that the crude K·max|E| ≈ 5e-12 at K = 2016 is the same order as the 1e-11 tolerance, which a universal enclosure cannot rely on). The audit's own all-prefix LU lower estimate for the developer's n = 50 GEPP order, **1.1564e-5** (max-entry factorization residual 4.62e-15; coarse N·residual correction 6.13e-12; n = 30: 6.33e-5), is recorded in T503 (A), T505 scope note, N506 N2 and candidates.md, labelled a floating-point estimate that supports, but does not certify, the measured claim (all consistent with the developer's smallest refined values 7.5e-3, i.e. as lower estimates). It is stated that the n = 60 REPRO sequence (1891 prefixes) is not certified. T503 and N506 stay MEASURED; T505 (PROVED) keeps statement and proof unchanged.
+
+The code files (`prefix.py`, `exp_r01b.py`, `analyze_r01b.py`, `diag_*.py`) were **not edited**, to keep the audited sources and hashes intact; their identifiers (`smin_exact`) and docstring words "certified"/"exact" are unchanged historical wording, and the T503 Definitions state that they mean "direct floating-point SVD" and "numerical bound". The older response `response-recon-01.md` (L3: "numerical certificate") is a dated historical record and is not rewritten; the audit-era meaning is given here and in T505's scope note.
+
+**Files changed.** `theory/prefix-unisolvence-order-statistics-measured.md` (T503: statement (A)–(C), Definitions, Assumptions, status table, Checks, Scope, Open items); `theory/unisolvent-prefix-extension-lemma.md` (T505: numerical illustration and scope note (a) only); `theory/largest-redundant-pivot-degradation.md` (N506: N2, scope paragraph, Definitions); `theory/magnitude-threshold-pivot-rules-failure.md` (N507) and `theory/fifo-threshold-deferral-failure.md` (N508): "numerically unisolvent" in K1/K3 and D1; `directions/L5/R01.md` (§3.2), `R03.md` (§3.2, §3.3, §4), `candidates.md` (IDEA 502 result, terminology sentence).
+
+**Evidence.** Audit `diagnostics.jsonl` (entry-rounding records; values above) and `kill-rerun.jsonl` (`min_lu_lower_bound` 1.1563759e-05 and `lu_max_entry_residual` 4.6213e-15 at n = 50; 6.3316e-05 and 2.8588e-15 at n = 30; `prefix_status`: "floating-point estimate, not exact certificate"). The audit's 12 C/Python comparisons and the six-case exhaustive-SVD agreement are recorded in T503 Checks. Open items: a rigorous prefix classification (error-enclosed, or exact/interval arithmetic) is listed as T503 open item (4); no such calculation was made here.
+
+## L1 — the report cites a nonexistent N503
+
+**Summary.** Accepted: there is no L5 N503. The L5 negative prefix record is **N506**; **T503** is the measured prefix-statistics record. None of my files contains an "N503" reference (searched `theory/`, `directions/L5/*.md`, code); the error is only in `report.md`, which the orchestrator edits.
+
+**Disposition.** FIXED on my side as far as my ownership goes (the N506 History line records the correct identity); report corrections listed for the orchestrator. Correct references: PD-T?bivariate-lanczos-claude-**501** (rotation bound, PROVED), **502** (slopes, MEASURED), **503** (prefix statistics, detector, scheme error versus prefix conditioning, lockstep; MEASURED), **505** (extension lemma, PROVED); PD-N?bivariate-lanczos-claude-**506** (largest redundant pivot; prefix mechanism in its "only" form refuted), **507** (magnitude-threshold pivots), **508** (FIFO deferral). Specific `report.md` edits: line 57 header "(L5: PD-T?…-501, -502, -505; PD-N?…-503, -506–508)" should read "(L5: PD-T?…-501, -502, -503, -505; PD-N?…-506–508)"; line 59 "prefix-unisolvence mechanism refuted (503)" should read "prefix-unisolvence mechanism in its 'only non-unisolvent prefixes' form refuted (PD-N 506; measured prefix statistics PD-T 503)"; line 64 "prefix mechanism for the 'largest' catastrophe (L5 N503)" should read "(L5 N506)". `audit-handoff.md` line 23 and the L5 crosswalk in `candidates.md` already use the correct IDs. Also noted for the orchestrator (audit checklist item 5): theory-file count 64 → 67.
+
+**Files changed.** `theory/largest-redundant-pivot-degradation.md` (History only for this finding).
+
+## L2 — "monotonic lockstep growth" contradicts the checkpoints
+
+**Summary.** Accepted. The committed gepp lockstep differences decrease at three checkpoint steps each for n = 15 and n = 20, once at n = 30 (i = 162 → 214: 2.5685960e-14 → 2.3156126e-14) and not at n = 40 (listed by `analysis_r01d.txt`; same as the audit's `diagnostics.jsonl` monotonicity records). The experiment compares double and long double on exactly the same input doubles, not a limiting sequence of perturbed exact data, so "not continuous in the data" overstates it.
+
+**Disposition.** FIXED; nothing disputed. "grows monotonically" / "grows smoothly" / "monotone growth" became "overall increasing trend with local decreases", with the slopes 0.83–0.87 (n = 30, 40) and 0.65–0.70 (n = 15, 20) preserved (and marked as a fit to ten checkpoints of a non-monotone series). The heading "Intermediate states are not continuous in the data on non-unisolvent prefixes" became "Precision sensitivity of intermediate states on streams with numerically singular prefixes (observation; mathematical discontinuity is not shown)"; the rounding-noise explanation of the rotation angles is marked as a hypothesis, "stable in the relational sense only ... fails at singular prefixes" is run-scoped, and mathematical discontinuity is listed as an unproved separate claim (T503 open item (5)). The finite large intermediate differences (0.24–0.6) and the small final differences, which the audit reproduced (n = 15 given: about 0.34–0.58 intermediate, final 7.89e-15; n = 20: about 0.24–0.52, final 9.87e-15), are kept unchanged.
+
+**Files changed.** `theory/prefix-unisolvence-order-statistics-measured.md` ((D), status table row, History); `directions/L5/R02.md` (lockstep paragraph, status table, §8); `directions/L5/STATUS.md` (R02 ledger line reworded, new ledger line); `directions/L5/R01.md` (§4 table row).
+
+## Other content of L5.md (no finding ID)
+
+- **T501, T505 accepted** (proof reconstructed, PROVED appropriate); statements unchanged. T505's only edits are M2 terminology in non-proof remarks.
+- **T502/T503 stay MEASURED**; no relabel as PARTIAL; no weakening of T501/T505.
+- **N506–N508 confirmed eligible scoped PD-N**; no new PD-N, no administrative allocation.
+- **Post-hoc disclosures** (excluded uniform family, arcsine family, Householder normalisation, tolerance change, deferral variants; Git cannot establish the time of the self-attested kill criteria; 16-case versus 14-case count) are already disclosed in `candidates.md`, R01 and the theory files and are unchanged. "Catastrophe" keeps its explicit ≥ 1e3 ratio and ≥ 1e-10 error definition.
+- **Environment difference** (audit: Python 3.12.14, NumPy 2.3.5, SciPy 1.17.0 versus the developer's 3.13/2.5.3/1.18.1) is recorded in T502/T503 Checks as part of the audit's independent reanalysis.
+- **Not done and still open:** full independent regeneration of all Padua slope families, the 54 prefix scans, the n = 60 sequence, windowed best-pivot runs, an exact/interval prefix certificate, and any asymptotic-rate claim remain absent; Runs needed in R01 §7 and R03 §7 are unchanged.
+
+## Material-change statement and re-audit
+
+Claims, proofs, numbers, kill verdicts and dispositions are unchanged; changed items are interpretation and terminology (M1, M2, L2), one withdrawn undemonstrated assumption (M2) and added reanalysis output. A focused re-check of the changed statements is nevertheless recommended (T503 Definitions/Assumptions and the T502 secondary analysis and paired-difference table); the orchestrator decides whether this returns to AUDIT.
+
+## Unresolved items (preserved for AC)
+
+(1) A rigorous (error-enclosed or exact/interval) prefix classification does not exist for the orders used; classifications are numerical. (2) Whether Householder ratios have any conditioning-removal interpretation needs a tested model. (3) The kill-criteria timing remains self-attested (P1). (4) Mathematical discontinuity of intermediate states at singular prefixes is unproved. (5) The `response-recon-01.md` wording from the earlier round (for example "numerical certificate") is left as a historical record.
+
+## File → sha256 after changes
+
+A file cannot contain its own hash; the hash of this response file is given in the hand-back message to the orchestrator.
+
+| File | sha256 |
+|---|---|
+| tracks/bivariate-lanczos/theory/givens-deficit-slopes-measured.md | 7a34cca3b0fb0dabcbc52fb010c458cef8a5a5a52ca9a218a4d7724439404791 |
+| tracks/bivariate-lanczos/theory/prefix-unisolvence-order-statistics-measured.md | 0e0a053c8329e442dd864904371ace02230f833bb7c9d7191e7e7b8a8b96bfb1 |
+| tracks/bivariate-lanczos/theory/unisolvent-prefix-extension-lemma.md | 4dc283acc4ee5cc8bc550a1baf23f956307c66d8909f27a9242ca864edf6a8d9 |
+| tracks/bivariate-lanczos/theory/largest-redundant-pivot-degradation.md | f55631f90910931ff33bd7a3b9401e15b4cd5ffb89c60dd85de4c93bb66414f2 |
+| tracks/bivariate-lanczos/theory/magnitude-threshold-pivot-rules-failure.md | 155c981bf6f24c5112c02b51835f1973c6fdd8fee2d5367b91734986ec53feb5 |
+| tracks/bivariate-lanczos/theory/fifo-threshold-deferral-failure.md | e8722b140087cd787f2e17322c901527ed475020b9e6234ac3201493b7a378e2 |
+| topics/bivariate-lanczos-20261031/directions/L5/R01.md | 6bd0091f2f5ab0adffb4a4d8e0e6d83e4c10f8b16029e64a3e52b84bf9faf848 |
+| topics/bivariate-lanczos-20261031/directions/L5/R02.md | b3c795a93a9b46f620c3ccf5bec186b1c1cdee38476a94ef1a85efa0de533ca9 |
+| topics/bivariate-lanczos-20261031/directions/L5/R03.md | b153fd0a0867723adca3a075d20ed0b94cf77ea3bb175e48144309b1047ab2ed |
+| topics/bivariate-lanczos-20261031/directions/L5/candidates.md | 0c8c6954905c98403f1e0c03a0adf45944905e0b3834b6484a2cc5b8ca07e90e |
+| topics/bivariate-lanczos-20261031/directions/L5/STATUS.md | 0a388f7ce155d6977d81ba6e3341e06f5ab9f2ae2a6ccf997731046b04d2189b |
+| topics/bivariate-lanczos-20261031/directions/L5/logs/analysis_r01d.txt (new) | d295f49b523ea0d81f8cee017186ce7e615d66bbf38fa917bce1aa1a36ff8604 |
+| tracks/bivariate-lanczos/code/L5/analyze_r01d.py (new) | 5f81798c2877bdf74576e74e4eed701017a94674d3f45086ce7e19de572c975e |
+
+Unchanged for reference: `tracks/bivariate-lanczos/theory/givens-updating-rotation-count-backward-bound.md` (T501) 99808ffefad8a8dfa346b9f9dbcdb99a3de0448e4f18e0a87acdfcd08395d295, `directions/L5/BRIEF.md`, `response-recon-01.md`.

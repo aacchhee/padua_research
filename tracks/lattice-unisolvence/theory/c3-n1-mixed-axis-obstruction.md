@@ -1,5 +1,7 @@
 # PD-N?lattice-c3-codex-02 — A four-point 3D congruence fibre has an essential mixed-axis condition
 
+Final ID: **PD-N036** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-N. Aliases: normalized t-s obstruction; primitive (2,1,1) mod4 fibre. Split from: none. Split into: broader measured rectangle tests in c3-rectangle-observations.md.
 
 ## Statement

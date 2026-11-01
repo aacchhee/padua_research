@@ -1,0 +1,14 @@
+# exact monic recurrence: set=square m=24 M=625 nmax=12 N=91 (3.8s)
+# exact orthogonality check: nonzero inner products among 4095 pairs: 0
+   degree  2: max_(s,k,i) (L*(z_i)^-1)_(k,s)^2 = 10^-inf  (s=(2, 0), k=(2, 1))  [exact rational with 0/1 bits]
+   degree  3: max_(s,k,i) (L*(z_i)^-1)_(k,s)^2 = 10^1.102  (s=(2, 0), k=(3, 0))  [exact rational with 12/8 bits]
+   degree  4: max_(s,k,i) (L*(z_i)^-1)_(k,s)^2 = 10^1.544  (s=(2, 0), k=(4, 1))  [exact rational with 17/12 bits]
+   degree  5: max_(s,k,i) (L*(z_i)^-1)_(k,s)^2 = 10^1.836  (s=(2, 0), k=(5, 1))  [exact rational with 18/12 bits]
+   degree  6: max_(s,k,i) (L*(z_i)^-1)_(k,s)^2 = 10^2.014  (s=(2, 0), k=(6, 1))  [exact rational with 25/18 bits]
+   degree  7: max_(s,k,i) (L*(z_i)^-1)_(k,s)^2 = 10^2.166  (s=(2, 0), k=(7, 2))  [exact rational with 22/14 bits]
+   degree  8: max_(s,k,i) (L*(z_i)^-1)_(k,s)^2 = 10^2.286  (s=(2, 0), k=(8, 2))  [exact rational with 31/23 bits]
+   degree  9: max_(s,k,i) (L*(z_i)^-1)_(k,s)^2 = 10^2.379  (s=(2, 0), k=(9, 2))  [exact rational with 35/27 bits]
+   degree 10: max_(s,k,i) (L*(z_i)^-1)_(k,s)^2 = 10^2.471  (s=(2, 0), k=(10, 2))  [exact rational with 36/28 bits]
+   degree 11: max_(s,k,i) (L*(z_i)^-1)_(k,s)^2 = 10^2.591  (s=(2, 0), k=(11, 1))  [exact rational with 41/33 bits]
+   degree 12: max_(s,k,i) (L*(z_i)^-1)_(k,s)^2 = 10^2.809  (s=(2, 0), k=(12, 1))  [exact rational with 41/32 bits]
+# total time 12.6s

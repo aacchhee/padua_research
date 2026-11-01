@@ -1,5 +1,7 @@
 # PD-T?programme-ideas-claude-06 — Candidate counts of local maxima of the Padua Lebesgue function, n = 3…8 (MEASURED; not certified)
 
+Final ID: **PD-T100** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 ID kind: PD-T.
 Aliases: T3 counts; "certified maxima" (withdrawn wording); 15, 27, 25, 41, 50, 62; proposed correction to Białas-Cież–De Marchi–Suder arXiv 2605.23299 Table 3; proposal-1 Paper B data.
 Split from: `checks/decisive-gen4-2.md` T3 and Verdict at `614709d` ("complete certification", "settles", "corrects the published table").

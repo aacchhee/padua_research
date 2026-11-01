@@ -1,0 +1,10 @@
+Command: python3 -I topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/independent_t318.py
+Initial source SHA-256: 6ce94313c7b19ee5a3c6fb4c3bbea72306f99109f83c7e5b4be592e23ec9644e
+First run deliberately interrupted with SIGINT after approximately six CPU minutes.
+Exit status: 130.
+Printed n=1 and n=2 checks passed. All n=3 identity assertions had already passed;
+the traceback identifies the outstanding operation as J.rank() in the final
+dim-S1 print for n=3, using generic sympy Matrix row reduction. No mathematical
+assertion failed. The definitive rerun replaces generic Matrix.rank() calls
+with exact DomainMatrix.from_Matrix(A).rank(); all test cases and identities
+remain unchanged. Initial output preserved in independent-t318-initial.log.

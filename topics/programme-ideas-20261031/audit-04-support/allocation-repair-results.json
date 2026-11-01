@@ -1,0 +1,437 @@
+{
+  "source": "37820a528c863e5cfe2dc2f1f8879b4fd40cf210",
+  "worktree_head_at_end": "60e8ecf7bf5a171af02fec589583fa135dee2709",
+  "PR11": "97968d2c2d039cb0910e0ea50747fb2d9e01a262",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "checks": [
+    {
+      "name": "allocation_map_byte_identical_to_source",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_changes_limited_to_lattice_README",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "canonical_README_only_two_exact_metadata_replacements",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "canonical_scientific_records_preserved",
+      "pass": true,
+      "detail": 35
+    },
+    {
+      "name": "PROOF_STATUS.md_ID_cells_identical",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "proof_registry_all_cells_except_audit_metadata_identical",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "state/IDEAS.md_ID_cells_identical",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "IDEA_primary_rows_all_cells_identical",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "literature/INDEX.md_ID_cells_identical",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "ID_CROSSWALK.md_ID_cells_identical",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "actual_PR11_reservation_preserved",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_installed_no_writes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_installed_success_and_map_boundaries_match",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_preallocation_no_writes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_preallocation_success_and_map_boundaries_match",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mutated_installed_map_no_writes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "mutated_installed_map_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "duplicate_primary_ID_no_writes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "duplicate_primary_ID_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "wrong_crosswalk_target_no_writes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "wrong_crosswalk_target_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "wrong_merged_crosswalk_target_no_writes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "wrong_merged_crosswalk_target_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "missing_primary_row_no_writes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "missing_primary_row_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "wrong_primary_alias_no_writes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "wrong_primary_alias_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "missing_map_with_allocated_registries_no_writes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "missing_map_with_allocated_registries_rejected",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source_inputs_not_changed_during_audit",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "runs": [
+    {
+      "case": "valid_installed",
+      "argv": [
+        "python3",
+        "-I",
+        "topics/programme-ideas-20261031/pr-prep/allocate.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\n \"blocks\": {\n  \"lattice-unisolvence\": {\n   \"PD-T\": [\n    \"PD-T081\",\n    \"PD-T094\",\n    14\n   ],\n   \"PD-N\": [\n    \"PD-N032\",\n    \"PD-N038\",\n    7\n   ],\n   \"IDEA\": [\n    \"IDEA-177\",\n    \"IDEA-189\",\n    13\n   ],\n   \"LIT\": [\n    \"LIT-300\",\n    \"LIT-331\",\n    32\n   ]\n  },\n  \"programme-ideas\": {\n   \"PD-T\": [\n    \"PD-T095\",\n    \"PD-T100\",\n    6\n   ],\n   \"PD-N\": [\n    \"PD-N039\",\n    \"PD-N043\",\n    5\n   ],\n   \"IDEA\": [\n    \"IDEA-190\",\n    \"IDEA-209\",\n    20\n   ],\n   \"LIT\": [\n    \"LIT-332\",\n    \"LIT-426\",\n    95\n   ]\n  }\n },\n \"next\": {\n  \"PD-T\": \"PD-T101\",\n  \"PD-N\": \"PD-N044\",\n  \"IDEA\": \"IDEA-210\",\n  \"LIT\": \"LIT-427\"\n }\n}\n",
+      "stderr": "",
+      "bytes_unchanged": true,
+      "input_hashes_changed_from_valid": {},
+      "inputs_removed": []
+    },
+    {
+      "case": "valid_preallocation",
+      "argv": [
+        "python3",
+        "-I",
+        "topics/programme-ideas-20261031/pr-prep/allocate.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\n \"blocks\": {\n  \"lattice-unisolvence\": {\n   \"PD-T\": [\n    \"PD-T081\",\n    \"PD-T094\",\n    14\n   ],\n   \"PD-N\": [\n    \"PD-N032\",\n    \"PD-N038\",\n    7\n   ],\n   \"IDEA\": [\n    \"IDEA-177\",\n    \"IDEA-189\",\n    13\n   ],\n   \"LIT\": [\n    \"LIT-300\",\n    \"LIT-331\",\n    32\n   ]\n  },\n  \"programme-ideas\": {\n   \"PD-T\": [\n    \"PD-T095\",\n    \"PD-T100\",\n    6\n   ],\n   \"PD-N\": [\n    \"PD-N039\",\n    \"PD-N043\",\n    5\n   ],\n   \"IDEA\": [\n    \"IDEA-190\",\n    \"IDEA-209\",\n    20\n   ],\n   \"LIT\": [\n    \"LIT-332\",\n    \"LIT-426\",\n    95\n   ]\n  }\n },\n \"next\": {\n  \"PD-T\": \"PD-T101\",\n  \"PD-N\": \"PD-N044\",\n  \"IDEA\": \"IDEA-210\",\n  \"LIT\": \"LIT-427\"\n }\n}\n",
+      "stderr": "",
+      "bytes_unchanged": true,
+      "input_hashes_changed_from_valid": {
+        "ID_CROSSWALK.md": "ae37eb147dfbe4dc790f8ee1011b17205cca6dad380113d6658aac01b23bf01b",
+        "PROOF_STATUS.md": "b33c1b357cdeec3935a5524dd2703757c66f95a6f3d1552e732b46671e7f1765",
+        "literature/INDEX.md": "31f3e1f708709bfe54034f9c83e0079280031c17355575384bb4a9566aacca5a",
+        "state/IDEAS.md": "5dfb727c748e64a94daf42ddf73d426f17e7dfed2d265269de56194aecaa9f3b",
+        "topics/padua-batch-20261031/ALLOCATIONS.md": "5a84238e99a12eb21cb99b50049cf30ee1c51a3658d5c46c7c43bb91a8699398",
+        "topics/programme-ideas-20261031/lit/baseline.md": "078631b7d618c22365634354edecfeb419eb0e71a9c7736d06c1bda82bd51f85",
+        "topics/programme-ideas-20261031/theory/programme-ideas-claude-01-finite-favard-pattern-pairs.md": "2076b031c26f5d33fdd79e13fcfe06d49b093349de40ffcc34a04f707cbef1fd",
+        "topics/programme-ideas-20261031/theory/programme-ideas-claude-02-joint-ritz-saturation-bound.md": "0ed649103e3de3f1c22875ebb4bed26e1d4c252ba14d1ac971581fd084c8c193",
+        "topics/programme-ideas-20261031/theory/programme-ideas-claude-03-compressed-commutator-identity.md": "4c9156af4f1cb5117d961bc756fbab2bb42eebf2f6180317b657635912f9e83e",
+        "topics/programme-ideas-20261031/theory/programme-ideas-claude-04-padua-corner-expansion.md": "35abb6bd74b427bf4c8bc258476e6a506d11150a78abeca2735e0e94569abac2",
+        "topics/programme-ideas-20261031/theory/programme-ideas-claude-05-padua-corner-argmax.md": "47fbbf90a9a985e600519602f13c4b4fd277f6d8c7c9d3da738dac2509711185",
+        "topics/programme-ideas-20261031/theory/programme-ideas-claude-06-padua-lebesgue-maxima-counts.md": "ff53d00c2ec0f00e2716cd47a7f57ce53c27a7b51484b3473e9d5742c60d8650",
+        "topics/programme-ideas-20261031/theory/programme-ideas-claude-N01-symmetrised-product-inertia-count.md": "a244fd7531ae09b6f69ea00b44b90225a0eeb1e4eddcdba6725eb24b03af0d1e",
+        "topics/programme-ideas-20261031/theory/programme-ideas-claude-N02-windowed-rational-lanczos-instability.md": "777beb22f8364b21e7ecf03e930e586f563e11b361e9fecaacb1b67e956f395b",
+        "topics/programme-ideas-20261031/theory/programme-ideas-claude-N03-joint-ritz-converse-refuted.md": "500179a0cb18edd304dc0beb3682662e7134eae35cd03a65286b98a1f00dce5a",
+        "topics/programme-ideas-20261031/theory/programme-ideas-claude-N04-pattern-commutant-not-three-dimensional.md": "5755fa21b7336917b4bf7bde66147bf0750ed41e65d3c037a90f103a10511b9f",
+        "topics/programme-ideas-20261031/theory/programme-ideas-claude-N05-fourier-basis-commutation-fails.md": "59ef3e48bc689d9345bdaec5d2af3b99f6a2d264a2fbf4ade519967004e4fb92"
+      },
+      "inputs_removed": [
+        "topics/programme-ideas-20261031/pr-prep/id-map.json"
+      ]
+    },
+    {
+      "case": "mutated_installed_map",
+      "argv": [
+        "python3",
+        "-I",
+        "topics/programme-ideas-20261031/pr-prep/allocate.py"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/allocation-repair-audit-l9fn5dc6/topics/programme-ideas-20261031/pr-prep/allocate.py\", line 97, in <module>\n    assert json.loads(installed.read_text()) == out, 'installed allocation map differs'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: installed allocation map differs\n",
+      "bytes_unchanged": true,
+      "input_hashes_changed_from_valid": {
+        "topics/programme-ideas-20261031/pr-prep/id-map.json": "b008431f62a13137bb30ab0dae50d276a967f173719d4036197d0e380b0a7659"
+      },
+      "inputs_removed": []
+    },
+    {
+      "case": "duplicate_primary_ID",
+      "argv": [
+        "python3",
+        "-I",
+        "topics/programme-ideas-20261031/pr-prep/allocate.py"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/allocation-repair-audit-7e7v0etf/topics/programme-ideas-20261031/pr-prep/allocate.py\", line 103, in <module>\n    assert len(rows) == 1 and pid in rows[0].split(' | ')[0], (pid, final, 'primary row')\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('PD-T?lattice-c0-codex-01', 'PD-T081', 'primary row')\n",
+      "bytes_unchanged": true,
+      "input_hashes_changed_from_valid": {
+        "PROOF_STATUS.md": "eeb624ec1d9b635435e971b5b62b6fc32a7dd5036bc769d9cde9d73450685afd"
+      },
+      "inputs_removed": []
+    },
+    {
+      "case": "wrong_crosswalk_target",
+      "argv": [
+        "python3",
+        "-I",
+        "topics/programme-ideas-20261031/pr-prep/allocate.py"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/allocation-repair-audit-ftabzo_e/topics/programme-ideas-20261031/pr-prep/allocate.py\", line 106, in <module>\n    assert len(cross) == 1 and cross[0].split(' | ')[1].startswith(final + ' '), (pid, 'crosswalk')\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('PD-T?lattice-c0-codex-01', 'crosswalk')\n",
+      "bytes_unchanged": true,
+      "input_hashes_changed_from_valid": {
+        "ID_CROSSWALK.md": "e66ecf3f3a640fb9b75466103b0a71b33d0659bc504bfdd200ae717f4cc7ea1f"
+      },
+      "inputs_removed": []
+    },
+    {
+      "case": "wrong_merged_crosswalk_target",
+      "argv": [
+        "python3",
+        "-I",
+        "topics/programme-ideas-20261031/pr-prep/allocate.py"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/allocation-repair-audit-m9w6qwt8/topics/programme-ideas-20261031/pr-prep/allocate.py\", line 110, in <module>\n    assert len(cross) == 1 and re.match(r'Merged into ' + re.escape(final) + r'\\b',\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('LIT?programme-ideas-claude-48', 'merged crosswalk')\n",
+      "bytes_unchanged": true,
+      "input_hashes_changed_from_valid": {
+        "ID_CROSSWALK.md": "52cca8174ec2e44bbdd5b29c263490873268c61857abbc64d60915fc92f6c63e"
+      },
+      "inputs_removed": []
+    },
+    {
+      "case": "missing_primary_row",
+      "argv": [
+        "python3",
+        "-I",
+        "topics/programme-ideas-20261031/pr-prep/allocate.py"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/allocation-repair-audit-kwwy63j9/topics/programme-ideas-20261031/pr-prep/allocate.py\", line 103, in <module>\n    assert len(rows) == 1 and pid in rows[0].split(' | ')[0], (pid, final, 'primary row')\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('PD-T?lattice-c0-codex-01', 'PD-T081', 'primary row')\n",
+      "bytes_unchanged": true,
+      "input_hashes_changed_from_valid": {
+        "PROOF_STATUS.md": "a29028466fd621c5ae6e4ea83d3e768a77ba5010e290f1407ef8968748d61010"
+      },
+      "inputs_removed": []
+    },
+    {
+      "case": "wrong_primary_alias",
+      "argv": [
+        "python3",
+        "-I",
+        "topics/programme-ideas-20261031/pr-prep/allocate.py"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/allocation-repair-audit-hvk9ftsz/topics/programme-ideas-20261031/pr-prep/allocate.py\", line 103, in <module>\n    assert len(rows) == 1 and pid in rows[0].split(' | ')[0], (pid, final, 'primary row')\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('PD-T?lattice-c0-codex-01', 'PD-T081', 'primary row')\n",
+      "bytes_unchanged": true,
+      "input_hashes_changed_from_valid": {
+        "PROOF_STATUS.md": "2946e3198dbc3eb480595449af818be34e3aaf80495f4185c11ae1d10a79d3d5"
+      },
+      "inputs_removed": []
+    },
+    {
+      "case": "missing_map_with_allocated_registries",
+      "argv": [
+        "python3",
+        "-I",
+        "topics/programme-ideas-20261031/pr-prep/allocate.py"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/allocation-repair-audit-mvfq4ujx/topics/programme-ideas-20261031/pr-prep/allocate.py\", line 114, in <module>\n    assert not clash, clash\n           ^^^^^^^^^\nAssertionError: ['IDEA-177', 'IDEA-178', 'IDEA-179', 'IDEA-180', 'IDEA-181', 'IDEA-182', 'IDEA-183', 'IDEA-184', 'IDEA-185', 'IDEA-186', 'IDEA-187', 'IDEA-188', 'IDEA-189', 'IDEA-190', 'IDEA-191', 'IDEA-192', 'IDEA-193', 'IDEA-194', 'IDEA-195', 'IDEA-196', 'IDEA-197', 'IDEA-198', 'IDEA-199', 'IDEA-200', 'IDEA-201', 'IDEA-202', 'IDEA-203', 'IDEA-204', 'IDEA-205', 'IDEA-206', 'IDEA-207', 'IDEA-208', 'IDEA-209', 'LIT-300', 'LIT-301', 'LIT-302', 'LIT-303', 'LIT-304', 'LIT-305', 'LIT-306', 'LIT-307', 'LIT-308', 'LIT-309', 'LIT-310', 'LIT-311', 'LIT-312', 'LIT-313', 'LIT-314', 'LIT-315', 'LIT-316', 'LIT-317', 'LIT-318', 'LIT-319', 'LIT-320', 'LIT-321', 'LIT-322', 'LIT-323', 'LIT-324', 'LIT-325', 'LIT-326', 'LIT-327', 'LIT-328', 'LIT-329', 'LIT-330', 'LIT-331', 'LIT-332', 'LIT-333', 'LIT-334', 'LIT-335', 'LIT-336', 'LIT-337', 'LIT-338', 'LIT-339', 'LIT-340', 'LIT-341', 'LIT-342', 'LIT-343', 'LIT-344', 'LIT-345', 'LIT-346', 'LIT-347', 'LIT-348', 'LIT-349', 'LIT-350', 'LIT-351', 'LIT-352', 'LIT-353', 'LIT-354', 'LIT-355', 'LIT-356', 'LIT-357', 'LIT-358', 'LIT-359', 'LIT-360', 'LIT-361', 'LIT-362', 'LIT-363', 'LIT-364', 'LIT-365', 'LIT-366', 'LIT-367', 'LIT-368', 'LIT-369', 'LIT-370', 'LIT-371', 'LIT-372', 'LIT-373', 'LIT-374', 'LIT-375', 'LIT-376', 'LIT-377', 'LIT-378', 'LIT-379', 'LIT-380', 'LIT-381', 'LIT-382', 'LIT-383', 'LIT-384', 'LIT-385', 'LIT-386', 'LIT-387', 'LIT-388', 'LIT-389', 'LIT-390', 'LIT-391', 'LIT-392', 'LIT-393', 'LIT-394', 'LIT-395', 'LIT-396', 'LIT-397', 'LIT-398', 'LIT-399', 'LIT-400', 'LIT-401', 'LIT-402', 'LIT-403', 'LIT-404', 'LIT-405', 'LIT-406', 'LIT-407', 'LIT-408', 'LIT-409', 'LIT-410', 'LIT-411', 'LIT-412', 'LIT-413', 'LIT-414', 'LIT-415', 'LIT-416', 'LIT-417', 'LIT-418', 'LIT-419', 'LIT-420', 'LIT-421', 'LIT-422', 'LIT-423', 'LIT-424', 'LIT-425', 'LIT-426', 'PD-N032', 'PD-N033', 'PD-N034', 'PD-N035', 'PD-N036', 'PD-N037', 'PD-N038', 'PD-N039', 'PD-N040', 'PD-N041', 'PD-N042', 'PD-N043', 'PD-T081', 'PD-T082', 'PD-T083', 'PD-T084', 'PD-T085', 'PD-T086', 'PD-T087', 'PD-T088', 'PD-T089', 'PD-T090', 'PD-T091', 'PD-T092', 'PD-T093', 'PD-T094', 'PD-T095', 'PD-T096', 'PD-T097', 'PD-T098', 'PD-T099', 'PD-T100']\n",
+      "bytes_unchanged": true,
+      "input_hashes_changed_from_valid": {},
+      "inputs_removed": [
+        "topics/programme-ideas-20261031/pr-prep/id-map.json"
+      ]
+    }
+  ],
+  "sha256": {
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/lattice-unisolvence-20261031/provisional-id-map.json": "3b04ce988f1e90f1b84aae1c91097e309aa4dbe982c71f8317b13efd8aac60c4",
+    "worktree:ID_CROSSWALK.md": "543b970b311bb49cc7147db637734f37e6cdb7c48e91d67c3c9e79d55812844c",
+    "worktree:PROOF_STATUS.md": "ab3cbc4f09578571828a28773a9a527f0c22dba49270c92b652645c1420b35c2",
+    "worktree:literature/INDEX.md": "5cad267c7f98f1832a3ed0d8c7db65fed32e4795ac396d55add801c9493e55c9",
+    "worktree:state/IDEAS.md": "f70650460c7b140021a084a2b9ddd56efc73f7e92ce8ef7b2f717db3ae677898",
+    "worktree:topics/bivariate-lanczos-20261031/pr-prep/id-map.json": "e5f4974b878b509b896cd2f69aae3220fa789d5c9347dbcb40baa77a419b1948",
+    "worktree:topics/lattice-unisolvence-20261031/provisional-id-map.json": "3b04ce988f1e90f1b84aae1c91097e309aa4dbe982c71f8317b13efd8aac60c4",
+    "worktree:topics/padua-batch-20261031/ALLOCATIONS.md": "a3d907e2481a888d54c6d653ef49314d843ed4b87a7f78ebf5b22d9fac3f10b6",
+    "worktree:topics/programme-ideas-20261031/lit/baseline.md": "26385cb01c301d0f92f685df1c46f5b03ce55b3b935f9e5d1f8389f268d6debd",
+    "worktree:topics/programme-ideas-20261031/lit/integration-map-pr10.json": "cad0485ab96ffa9ff64445e57ad42cd5e7f88690b35d45f481a921d4a37b8b98",
+    "worktree:topics/programme-ideas-20261031/lit/integration-map.json": "7073797a7b9e1cb5f4ff82c3655b73f7b78e4258132ff86c5aa31d3fa0b5e533",
+    "worktree:topics/programme-ideas-20261031/pr-prep/allocate.py": "aedf30e280390d4fa7cdafda718a6ea2d6902eabc3b1f1d4fd11e9865e7c6861",
+    "worktree:topics/programme-ideas-20261031/pr-prep/id-map.json": "1b4b6145235ad1b2e1d8f08b7aee65ec52881711e0ca855186ba2afdab503b44",
+    "worktree:topics/programme-ideas-20261031/theory/programme-ideas-claude-01-finite-favard-pattern-pairs.md": "4b0d8996fad1b5c21be244bca0df7cb2a39fc5ae70a651d75ce2f69cc5d38f2e",
+    "worktree:topics/programme-ideas-20261031/theory/programme-ideas-claude-02-joint-ritz-saturation-bound.md": "8401eb0b1efd9bd2c57f70632131a77c75d5a9368a6235de7b47e1139aa833d6",
+    "worktree:topics/programme-ideas-20261031/theory/programme-ideas-claude-03-compressed-commutator-identity.md": "f603da3a21a3711eb6a1279d2f000861bcefe500a1dcb13cf82dbacd38125f86",
+    "worktree:topics/programme-ideas-20261031/theory/programme-ideas-claude-04-padua-corner-expansion.md": "5b383a3915e20191121d1167b33f35fd2c79a7a87f536aa6f332fe4a100bf4bd",
+    "worktree:topics/programme-ideas-20261031/theory/programme-ideas-claude-05-padua-corner-argmax.md": "292eb99703eb11b0c6f55d2b9806c1abe39191167f84ac5caf66372e4fd2cf5b",
+    "worktree:topics/programme-ideas-20261031/theory/programme-ideas-claude-06-padua-lebesgue-maxima-counts.md": "2b682962dc7dbf102ce44916370a7e7906e83e17bc812a37271e80af974fa626",
+    "worktree:topics/programme-ideas-20261031/theory/programme-ideas-claude-N01-symmetrised-product-inertia-count.md": "c9cb48f5a0b21cf6bf76e2251c3f91f02320675156f702f00198a81dd3189d32",
+    "worktree:topics/programme-ideas-20261031/theory/programme-ideas-claude-N02-windowed-rational-lanczos-instability.md": "3c96bff3b0827f343932f22b3c629fd7e367a7d19a0d16ccae0ed339d0ccd8ed",
+    "worktree:topics/programme-ideas-20261031/theory/programme-ideas-claude-N03-joint-ritz-converse-refuted.md": "052b76c378870587da0464bddcc43c0b1596af4d739c6e65a2baf10e03e9da39",
+    "worktree:topics/programme-ideas-20261031/theory/programme-ideas-claude-N04-pattern-commutant-not-three-dimensional.md": "7e6a9532bb45ff22360f332f37aef3ff8af06a17aec58a7f3b237aa4861177c3",
+    "worktree:topics/programme-ideas-20261031/theory/programme-ideas-claude-N05-fourier-basis-commutation-fails.md": "c262776ff94f60d00bf4c30ab52292c9f822e5cf0cb5bd5edbff92f6a9f7ecf2",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/pr-prep/id-map.json": "1b4b6145235ad1b2e1d8f08b7aee65ec52881711e0ca855186ba2afdab503b44",
+    "worktree:topics/lattice-unisolvence-20261031/directions/C0/candidates.md": "74def09b09180e2176a6fd96814a363cd8623abbdfd6b4e5a8946c41989e0dfd",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/lattice-unisolvence-20261031/directions/C0/candidates.md": "74def09b09180e2176a6fd96814a363cd8623abbdfd6b4e5a8946c41989e0dfd",
+    "worktree:topics/lattice-unisolvence-20261031/directions/C1/candidates.md": "369d166965c145a4efe880e43556b00e7cc6013c8b55a4d824605d8532a2622b",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/lattice-unisolvence-20261031/directions/C1/candidates.md": "369d166965c145a4efe880e43556b00e7cc6013c8b55a4d824605d8532a2622b",
+    "worktree:topics/lattice-unisolvence-20261031/directions/C3/candidates.md": "767baca475a2781f1a830738bf54d6712bd5e96677e0ddd6110553bd82dd6e61",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/lattice-unisolvence-20261031/directions/C3/candidates.md": "767baca475a2781f1a830738bf54d6712bd5e96677e0ddd6110553bd82dd6e61",
+    "worktree:topics/programme-ideas-20261031/ideas/candidates.md": "2658ac851dcb2d5f3da0212c0ec827f377e15d4170e6718995a20b9d70311a99",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/ideas/candidates.md": "2658ac851dcb2d5f3da0212c0ec827f377e15d4170e6718995a20b9d70311a99",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/theory/programme-ideas-claude-01-finite-favard-pattern-pairs.md": "4b0d8996fad1b5c21be244bca0df7cb2a39fc5ae70a651d75ce2f69cc5d38f2e",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/theory/programme-ideas-claude-02-joint-ritz-saturation-bound.md": "8401eb0b1efd9bd2c57f70632131a77c75d5a9368a6235de7b47e1139aa833d6",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/theory/programme-ideas-claude-03-compressed-commutator-identity.md": "f603da3a21a3711eb6a1279d2f000861bcefe500a1dcb13cf82dbacd38125f86",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/theory/programme-ideas-claude-04-padua-corner-expansion.md": "5b383a3915e20191121d1167b33f35fd2c79a7a87f536aa6f332fe4a100bf4bd",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/theory/programme-ideas-claude-05-padua-corner-argmax.md": "292eb99703eb11b0c6f55d2b9806c1abe39191167f84ac5caf66372e4fd2cf5b",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/theory/programme-ideas-claude-06-padua-lebesgue-maxima-counts.md": "2b682962dc7dbf102ce44916370a7e7906e83e17bc812a37271e80af974fa626",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/theory/programme-ideas-claude-N01-symmetrised-product-inertia-count.md": "c9cb48f5a0b21cf6bf76e2251c3f91f02320675156f702f00198a81dd3189d32",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/theory/programme-ideas-claude-N02-windowed-rational-lanczos-instability.md": "3c96bff3b0827f343932f22b3c629fd7e367a7d19a0d16ccae0ed339d0ccd8ed",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/theory/programme-ideas-claude-N03-joint-ritz-converse-refuted.md": "052b76c378870587da0464bddcc43c0b1596af4d739c6e65a2baf10e03e9da39",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/theory/programme-ideas-claude-N04-pattern-commutant-not-three-dimensional.md": "7e6a9532bb45ff22360f332f37aef3ff8af06a17aec58a7f3b237aa4861177c3",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:topics/programme-ideas-20261031/theory/programme-ideas-claude-N05-fourier-basis-commutation-fails.md": "c262776ff94f60d00bf4c30ab52292c9f822e5cf0cb5bd5edbff92f6a9f7ecf2",
+    "worktree:tracks/lattice-unisolvence/theory/c0-catalogue.md": "a850819a72ab57119026e2b82c3a038ea6c4a816d1ba801ae7e43dc0c3ec5346",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c0-catalogue.md": "a850819a72ab57119026e2b82c3a038ea6c4a816d1ba801ae7e43dc0c3ec5346",
+    "worktree:tracks/lattice-unisolvence/theory/c0-density.md": "8aee1047fc725c129550f2a34d6f57185811fd930f704de9555a02611b659db2",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c0-density.md": "8aee1047fc725c129550f2a34d6f57185811fd930f704de9555a02611b659db2",
+    "worktree:tracks/lattice-unisolvence/theory/c0-infinite-six.md": "68ea1e5f5043f067ba9d1aa156c2440a761b4992a04600ec7bde93fd73ae68ba",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c0-infinite-six.md": "68ea1e5f5043f067ba9d1aa156c2440a761b4992a04600ec7bde93fd73ae68ba",
+    "worktree:tracks/lattice-unisolvence/theory/c0-short-axis.md": "2ef243bd1837f18914f3572e84e4c837d3b474cf8755aff208d98347c7318691",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c0-short-axis.md": "2ef243bd1837f18914f3572e84e4c837d3b474cf8755aff208d98347c7318691",
+    "worktree:tracks/lattice-unisolvence/theory/c1-chebyshev-obstruction.md": "46b1fd2ef9b0fec9729b0d23424279e6d48853e78fb007a4127bce71aaa073db",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c1-chebyshev-obstruction.md": "46b1fd2ef9b0fec9729b0d23424279e6d48853e78fb007a4127bce71aaa073db",
+    "worktree:tracks/lattice-unisolvence/theory/c1-counts.md": "461060ec45742d3c827a86f8958d0853a22af6582905f36d703a3c9d61923895",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c1-counts.md": "461060ec45742d3c827a86f8958d0853a22af6582905f36d703a3c9d61923895",
+    "worktree:tracks/lattice-unisolvence/theory/c1-finite-evidence.md": "c7ba630064d72b5f522a7a2b432796dabfe6332fb3e2fcdfbc932581c0dc8ab8",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c1-finite-evidence.md": "c7ba630064d72b5f522a7a2b432796dabfe6332fb3e2fcdfbc932581c0dc8ab8",
+    "worktree:tracks/lattice-unisolvence/theory/c1-gram-reduction.md": "209e9a39524a7838bd90737facdec030b84e7023148ce8d48a20fdc77e59ec5f",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c1-gram-reduction.md": "209e9a39524a7838bd90737facdec030b84e7023148ce8d48a20fdc77e59ec5f",
+    "worktree:tracks/lattice-unisolvence/theory/c1-mixed-obstruction.md": "4b4a20b322c3b02b0bfedd9398b405ee9abc1f6f47f8b9e0c83dba9ee2684360",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c1-mixed-obstruction.md": "4b4a20b322c3b02b0bfedd9398b405ee9abc1f6f47f8b9e0c83dba9ee2684360",
+    "worktree:tracks/lattice-unisolvence/theory/c1-open-family.md": "374f472102c8974576f60538caf569b7f1149b6bc6ab6cbaa198387b8cdbf714",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c1-open-family.md": "374f472102c8974576f60538caf569b7f1149b6bc6ab6cbaa198387b8cdbf714",
+    "worktree:tracks/lattice-unisolvence/theory/c1-quadratic.md": "fbe2318059be4643e3973c8a9eae511c74d7ecab48d7c64f605f172cdbaae0ff",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c1-quadratic.md": "fbe2318059be4643e3973c8a9eae511c74d7ecab48d7c64f605f172cdbaae0ff",
+    "worktree:tracks/lattice-unisolvence/theory/c1-row-moments.md": "bd80d719e481b47ef54a11bde4529912fd821b47c90140a967863ab407560f23",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c1-row-moments.md": "bd80d719e481b47ef54a11bde4529912fd821b47c90140a967863ab407560f23",
+    "worktree:tracks/lattice-unisolvence/theory/c3-annihilator-certificates.md": "a6f9bd8b776f2ee42a23a920ecde5ef68ce687fa66e0c75a10b9bbe5788340fe",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c3-annihilator-certificates.md": "a6f9bd8b776f2ee42a23a920ecde5ef68ce687fa66e0c75a10b9bbe5788340fe",
+    "worktree:tracks/lattice-unisolvence/theory/c3-chebyshev-observations.md": "45d8cc9379555fe4110478a1040ff091a580280f3d5d7e978d40c857d8035a0c",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c3-chebyshev-observations.md": "45d8cc9379555fe4110478a1040ff091a580280f3d5d7e978d40c857d8035a0c",
+    "worktree:tracks/lattice-unisolvence/theory/c3-deficiency-observations.md": "27e60ef3a47e0624036827a7ae0d73bbac66de1ec5835e4d61dc376400a7af6a",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c3-deficiency-observations.md": "27e60ef3a47e0624036827a7ae0d73bbac66de1ec5835e4d61dc376400a7af6a",
+    "worktree:tracks/lattice-unisolvence/theory/c3-generic-witness-reduction.md": "62874093640e08a72f2b8afa797bb7c854ce1b14e197be6dc916ee62b0351280",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c3-generic-witness-reduction.md": "62874093640e08a72f2b8afa797bb7c854ce1b14e197be6dc916ee62b0351280",
+    "worktree:tracks/lattice-unisolvence/theory/c3-n1-mixed-axis-obstruction.md": "29a048d3266f348084cf6fa49d11cca64945ec8bc335223d14674d05e6675f32",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c3-n1-mixed-axis-obstruction.md": "29a048d3266f348084cf6fa49d11cca64945ec8bc335223d14674d05e6675f32",
+    "worktree:tracks/lattice-unisolvence/theory/c3-n2-axis-factorization.md": "2be27391682866bb98a96baa21f3b568b366cd069f334b0bdeb7d5f36f3f70ed",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c3-n2-axis-factorization.md": "2be27391682866bb98a96baa21f3b568b366cd069f334b0bdeb7d5f36f3f70ed",
+    "worktree:tracks/lattice-unisolvence/theory/c3-open-target.md": "4a2d4a60c8b347be85d348db7c6457f00ba6b6e56e0ba363d2c28ffacb27a061",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c3-open-target.md": "4a2d4a60c8b347be85d348db7c6457f00ba6b6e56e0ba363d2c28ffacb27a061",
+    "worktree:tracks/lattice-unisolvence/theory/c3-rank-observations.md": "6d2e757970574458d44d4546915c4bc149faa398e144efb1b537690e6099e8be",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c3-rank-observations.md": "6d2e757970574458d44d4546915c4bc149faa398e144efb1b537690e6099e8be",
+    "worktree:tracks/lattice-unisolvence/theory/c3-rectangle-observations.md": "d04cd49ed68b0a8dfe815e3bb6301740dbbc931eca3b8d8ab2315a7e659ffb51",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/theory/c3-rectangle-observations.md": "d04cd49ed68b0a8dfe815e3bb6301740dbbc931eca3b8d8ab2315a7e659ffb51",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:tracks/lattice-unisolvence/README.md": "a08759dd05d9cffb8f76eb325020de4eea38114b5cc0c5358408b0df312ebfc3",
+    "worktree:tracks/lattice-unisolvence/README.md": "7e0b3c19e8bbcd088da0fea5d878f074ec4410acdfded56a79434336448bd5c1",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:PROOF_STATUS.md": "2c11fad861f60d85000f81d35d8a0b2c30dca2c18ab8612a31384d618b224af0",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:state/IDEAS.md": "975c0f3b82adb2257b4a6129996a9a7191ca8857f0609a93f6cec746e3198814",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:literature/INDEX.md": "47599a6d32a8691bd5c4e4479417f4d935e0d97e8a32c08a0f110dcd08e1c49d",
+    "37820a528c863e5cfe2dc2f1f8879b4fd40cf210:ID_CROSSWALK.md": "71864dea27135551cd26fe23427ae9a525f44eb77ee528a74a708129f4e93507",
+    "97968d2c2d039cb0910e0ea50747fb2d9e01a262:topics/padua-batch-20261031/ALLOCATIONS.md": "bda43fc4f08d638563b30ea35c302ab4677f2569057b578652c1bad00852af51",
+    "6954664fc0906b7e5c8ff0f1804b077bd3b5861f^:ID_CROSSWALK.md": "ae37eb147dfbe4dc790f8ee1011b17205cca6dad380113d6658aac01b23bf01b",
+    "6954664fc0906b7e5c8ff0f1804b077bd3b5861f^:PROOF_STATUS.md": "b33c1b357cdeec3935a5524dd2703757c66f95a6f3d1552e732b46671e7f1765",
+    "6954664fc0906b7e5c8ff0f1804b077bd3b5861f^:literature/INDEX.md": "31f3e1f708709bfe54034f9c83e0079280031c17355575384bb4a9566aacca5a",
+    "6954664fc0906b7e5c8ff0f1804b077bd3b5861f^:state/IDEAS.md": "5dfb727c748e64a94daf42ddf73d426f17e7dfed2d265269de56194aecaa9f3b",
+    "6954664fc0906b7e5c8ff0f1804b077bd3b5861f^:topics/bivariate-lanczos-20261031/pr-prep/id-map.json": "e5f4974b878b509b896cd2f69aae3220fa789d5c9347dbcb40baa77a419b1948",
+    "6954664fc0906b7e5c8ff0f1804b077bd3b5861f^:topics/lattice-unisolvence-20261031/provisional-id-map.json": "3b04ce988f1e90f1b84aae1c91097e309aa4dbe982c71f8317b13efd8aac60c4",
+    "6954664fc0906b7e5c8ff0f1804b077bd3b5861f^:topics/padua-batch-20261031/ALLOCATIONS.md": "5a84238e99a12eb21cb99b50049cf30ee1c51a3658d5c46c7c43bb91a8699398",
+    "6954664fc0906b7e5c8ff0f1804b077bd3b5861f^:topics/programme-ideas-20261031/lit/baseline.md": "078631b7d618c22365634354edecfeb419eb0e71a9c7736d06c1bda82bd51f85",
+    "6954664fc0906b7e5c8ff0f1804b077bd3b5861f^:topics/programme-ideas-20261031/lit/integration-map-pr10.json": "cad0485ab96ffa9ff64445e57ad42cd5e7f88690b35d45f481a921d4a37b8b98",
+    "6954664fc0906b7e5c8ff0f1804b077bd3b5861f^:topics/programme-ideas-20261031/lit/integration-map.json": "7073797a7b9e1cb5f4ff82c3655b73f7b78e4258132ff86c5aa31d3fa0b5e533",
+    "6954664fc0906b7e5c8ff0f1804b077bd3b5861f^:topics/programme-ideas-20261031/theory/programme-ideas-claude-01-finite-favard-pattern-pairs.md": "2076b031c26f5d33fdd79e13fcfe06d49b093349de40ffcc34a04f707cbef1fd",
+    "6954664fc0906b7e5c8ff0f1804b077bd3b5861f^:topics/programme-ideas-20261031/theory/programme-ideas-claude-02-joint-ritz-saturation-bound.md": "0ed649103e3de3f1c22875ebb4bed26e1d4c252ba14d1ac971581fd084c8c193",
+    "6954664fc0906b7e5c8ff0f1804b077bd3b5861f^:topics/programme-ideas-20261031/theory/programme-ideas-claude-03-compressed-commutator-identity.md": "4c9156af4f1cb5117d961bc756fbab2bb42eebf2f6180317b657635912f9e83e",
+    "6954664fc0906b7e5c8ff0f1804b077bd3b5861f^:topics/programme-ideas-20261031/theory/programme-ideas-claude-04-padua-corner-expansion.md": "35abb6bd74b427bf4c8bc258476e6a506d11150a78abeca2735e0e94569abac2",
+    "6954664fc0906b7e5c8ff0f1804b077bd3b5861f^:topics/programme-ideas-20261031/theory/programme-ideas-claude-05-padua-corner-argmax.md": "47fbbf90a9a985e600519602f13c4b4fd277f6d8c7c9d3da738dac2509711185",
+    "6954664fc0906b7e5c8ff0f1804b077bd3b5861f^:topics/programme-ideas-20261031/theory/programme-ideas-claude-06-padua-lebesgue-maxima-counts.md": "ff53d00c2ec0f00e2716cd47a7f57ce53c27a7b51484b3473e9d5742c60d8650",
+    "6954664fc0906b7e5c8ff0f1804b077bd3b5861f^:topics/programme-ideas-20261031/theory/programme-ideas-claude-N01-symmetrised-product-inertia-count.md": "a244fd7531ae09b6f69ea00b44b90225a0eeb1e4eddcdba6725eb24b03af0d1e",
+    "6954664fc0906b7e5c8ff0f1804b077bd3b5861f^:topics/programme-ideas-20261031/theory/programme-ideas-claude-N02-windowed-rational-lanczos-instability.md": "777beb22f8364b21e7ecf03e930e586f563e11b361e9fecaacb1b67e956f395b",
+    "6954664fc0906b7e5c8ff0f1804b077bd3b5861f^:topics/programme-ideas-20261031/theory/programme-ideas-claude-N03-joint-ritz-converse-refuted.md": "500179a0cb18edd304dc0beb3682662e7134eae35cd03a65286b98a1f00dce5a",
+    "6954664fc0906b7e5c8ff0f1804b077bd3b5861f^:topics/programme-ideas-20261031/theory/programme-ideas-claude-N04-pattern-commutant-not-three-dimensional.md": "5755fa21b7336917b4bf7bde66147bf0750ed41e65d3c037a90f103a10511b9f",
+    "6954664fc0906b7e5c8ff0f1804b077bd3b5861f^:topics/programme-ideas-20261031/theory/programme-ideas-claude-N05-fourier-basis-commutation-fails.md": "59ef3e48bc689d9345bdaec5d2af3b99f6a2d264a2fbf4ade519967004e4fb92"
+  },
+  "all_checks_pass": true
+}

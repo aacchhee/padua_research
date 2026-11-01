@@ -1,0 +1,511 @@
+{
+  "recorded_utc": "2026-11-01T08:19:11.261078+00:00",
+  "baseline": "5f523313b7b388cb114103734028f0a850dfeaad",
+  "candidate": "075d4074017445a0fd4d7443ffac97cd7f8c106b",
+  "rules_read_head": "50b0d304001b48607527e5086a67045f534d9472",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "numpy": "2.3.5",
+    "sympy": "1.14.0"
+  },
+  "sources": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 3159,
+      "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60",
+      "matches_candidate": true,
+      "candidate_sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60",
+      "baseline_sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60",
+      "baseline_unchanged": true
+    },
+    {
+      "path": "agents/WORKFLOW.md",
+      "bytes": 18116,
+      "sha256": "b1c1c14c83e02bf38283159f81ec278ae336ab56c95d0c026b9ada3314d1ffaa",
+      "matches_candidate": true,
+      "candidate_sha256": "b1c1c14c83e02bf38283159f81ec278ae336ab56c95d0c026b9ada3314d1ffaa",
+      "baseline_sha256": "b1c1c14c83e02bf38283159f81ec278ae336ab56c95d0c026b9ada3314d1ffaa",
+      "baseline_unchanged": true
+    },
+    {
+      "path": "agents/codex/CODEX.md",
+      "bytes": 4969,
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+      "matches_candidate": true,
+      "candidate_sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+      "baseline_sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+      "baseline_unchanged": true
+    },
+    {
+      "path": "literature/INDEX.md",
+      "bytes": 111148,
+      "sha256": "a9fdbfeb7d0a5b485c84e3e9763739e8f8597f118a6e76bf1dcf76ea8aa28a15",
+      "matches_candidate": true,
+      "candidate_sha256": "a9fdbfeb7d0a5b485c84e3e9763739e8f8597f118a6e76bf1dcf76ea8aa28a15",
+      "baseline_sha256": "a9fdbfeb7d0a5b485c84e3e9763739e8f8597f118a6e76bf1dcf76ea8aa28a15",
+      "baseline_unchanged": true
+    },
+    {
+      "path": "state/IDEAS.md",
+      "bytes": 46988,
+      "sha256": "12ba5f8eccfc943faebee07b83ea37b995f0b89244fa3b9b81a6f88051ad931d",
+      "matches_candidate": true,
+      "candidate_sha256": "12ba5f8eccfc943faebee07b83ea37b995f0b89244fa3b9b81a6f88051ad931d",
+      "baseline_sha256": "12ba5f8eccfc943faebee07b83ea37b995f0b89244fa3b9b81a6f88051ad931d",
+      "baseline_unchanged": true
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/SPLITS.md",
+      "bytes": 6948,
+      "sha256": "9bb5b5b89837a5148ceda370dc133ac2f0dc39d501c8ab521d96a913f4842c4e",
+      "matches_candidate": true,
+      "candidate_sha256": "9bb5b5b89837a5148ceda370dc133ac2f0dc39d501c8ab521d96a913f4842c4e",
+      "baseline_sha256": null,
+      "baseline_unchanged": null
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/SUMMARY.md",
+      "bytes": 9483,
+      "sha256": "87fad76aaf322d24591e4da929c2075e606bfa8809bddd2bbb93070d26f4c588",
+      "matches_candidate": true,
+      "candidate_sha256": "87fad76aaf322d24591e4da929c2075e606bfa8809bddd2bbb93070d26f4c588",
+      "baseline_sha256": "d03da9a14fe6c62b4996ea98ea3c159ab011aeb8b414e0fe251b53f8cc6d2613",
+      "baseline_unchanged": false
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/candidates.md",
+      "bytes": 23265,
+      "sha256": "55cfbf8ee57f4ce5d5f1e291ea681a8e942a30adb679ce28a540e691306018e0",
+      "matches_candidate": true,
+      "candidate_sha256": "55cfbf8ee57f4ce5d5f1e291ea681a8e942a30adb679ce28a540e691306018e0",
+      "baseline_sha256": "a51c93a1c683e90481b28fe237496f2efcc285da2f8e64fc02c0e4423012b6a6",
+      "baseline_unchanged": false
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/exact_certificates.log",
+      "bytes": 3963,
+      "sha256": "287e8dd0bdaa60d93d728045fcd47c5c75832813657f4849081fe4b1e0629e8b",
+      "matches_candidate": true,
+      "candidate_sha256": "287e8dd0bdaa60d93d728045fcd47c5c75832813657f4849081fe4b1e0629e8b",
+      "baseline_sha256": "287e8dd0bdaa60d93d728045fcd47c5c75832813657f4849081fe4b1e0629e8b",
+      "baseline_unchanged": true
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/t318_dkappa_formula_check.log",
+      "bytes": 2605,
+      "sha256": "fcc4cc02799253d15a96c531bf93798725e46b3363befa91aaff30839c885e08",
+      "matches_candidate": true,
+      "candidate_sha256": "fcc4cc02799253d15a96c531bf93798725e46b3363befa91aaff30839c885e08",
+      "baseline_sha256": null,
+      "baseline_unchanged": null
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/response-audit-01.md",
+      "bytes": 12553,
+      "sha256": "154e04b9d535b7b5d0baaf1ae53e68a4dd876e6f24d2b54c58d77b5e97903bbd",
+      "matches_candidate": true,
+      "candidate_sha256": "154e04b9d535b7b5d0baaf1ae53e68a4dd876e6f24d2b54c58d77b5e97903bbd",
+      "baseline_sha256": null,
+      "baseline_unchanged": null
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/report.md",
+      "bytes": 22307,
+      "sha256": "8a86f5af2df7e8dba18a0cffba00dd40674a3b31cfe797a603929883018ded5d",
+      "matches_candidate": true,
+      "candidate_sha256": "8a86f5af2df7e8dba18a0cffba00dd40674a3b31cfe797a603929883018ded5d",
+      "baseline_sha256": "784b11c7fc235c9e8bcfcff915fe3dc3657f33976fbbc8d2d3d4f3f725becc19",
+      "baseline_unchanged": false
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/response-01.md",
+      "bytes": 22605,
+      "sha256": "d317c0883768741a2c0a90dca45fb9a13bb528af1ad38268f5aa464ade2b2b67",
+      "matches_candidate": false,
+      "candidate_sha256": "b90b19217e8406b4c9064362d5171a7b0053031f3852b995787302664cf04349",
+      "baseline_sha256": null,
+      "baseline_unchanged": null
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L3/exact_certificates.py",
+      "bytes": 12486,
+      "sha256": "752188b6f537f38b7dfba2fb4f5cf37cf39661b7fbc4fc924c3968347fcee6c5",
+      "matches_candidate": true,
+      "candidate_sha256": "752188b6f537f38b7dfba2fb4f5cf37cf39661b7fbc4fc924c3968347fcee6c5",
+      "baseline_sha256": "752188b6f537f38b7dfba2fb4f5cf37cf39661b7fbc4fc924c3968347fcee6c5",
+      "baseline_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/L3/t318_dkappa_formula_check.py",
+      "bytes": 7995,
+      "sha256": "8ade3424969a22c2aca1744ce5d8e612117a8c138ddeff9b2e17609d74ce0ea1",
+      "matches_candidate": true,
+      "candidate_sha256": "8ade3424969a22c2aca1744ce5d8e612117a8c138ddeff9b2e17609d74ce0ea1",
+      "baseline_sha256": null,
+      "baseline_unchanged": null
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L3/indep_exact_check.py",
+      "bytes": 15054,
+      "sha256": "989ed4e1353559cf30542d62b2583e7c461edf54636c7bb268a59d7be8dcba53",
+      "matches_candidate": true,
+      "candidate_sha256": "989ed4e1353559cf30542d62b2583e7c461edf54636c7bb268a59d7be8dcba53",
+      "baseline_sha256": "989ed4e1353559cf30542d62b2583e7c461edf54636c7bb268a59d7be8dcba53",
+      "baseline_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L3/unisolvence_check.py",
+      "bytes": 758,
+      "sha256": "6b31e106a519eda30f0b6218a73c3033d063c642867eaa1a103e23f378fc7d4d",
+      "matches_candidate": true,
+      "candidate_sha256": "6b31e106a519eda30f0b6218a73c3033d063c642867eaa1a103e23f378fc7d4d",
+      "baseline_sha256": "6b31e106a519eda30f0b6218a73c3033d063c642867eaa1a103e23f378fc7d4d",
+      "baseline_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L3b/kappa_family_n3.py",
+      "bytes": 1400,
+      "sha256": "30826747a3085c9965aed90009368333f2116e710e5180581c8cfb3f3d1e4aa1",
+      "matches_candidate": true,
+      "candidate_sha256": "30826747a3085c9965aed90009368333f2116e710e5180581c8cfb3f3d1e4aa1",
+      "baseline_sha256": "30826747a3085c9965aed90009368333f2116e710e5180581c8cfb3f3d1e4aa1",
+      "baseline_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L3b/padua_delta0.py",
+      "bytes": 4817,
+      "sha256": "f096ea84d13475b6389628fca7880132e391ad5f6a31f0a393e6e93486ec215b",
+      "matches_candidate": true,
+      "candidate_sha256": "f096ea84d13475b6389628fca7880132e391ad5f6a31f0a393e6e93486ec215b",
+      "baseline_sha256": "f096ea84d13475b6389628fca7880132e391ad5f6a31f0a393e6e93486ec215b",
+      "baseline_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L3b/padua_turan_check.py",
+      "bytes": 15491,
+      "sha256": "c1896577dcf9683b75e1ffa6ea481f1c498107ce482df97381e8462c0fe108ff",
+      "matches_candidate": true,
+      "candidate_sha256": "c1896577dcf9683b75e1ffa6ea481f1c498107ce482df97381e8462c0fe108ff",
+      "baseline_sha256": "c1896577dcf9683b75e1ffa6ea481f1c498107ce482df97381e8462c0fe108ff",
+      "baseline_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L3b/rigorous.py",
+      "bytes": 3965,
+      "sha256": "de764cc6b955aa7e68bf6838f5c4e715bfbe1d8a5cf384879ecf3a321ae2085a",
+      "matches_candidate": true,
+      "candidate_sha256": "de764cc6b955aa7e68bf6838f5c4e715bfbe1d8a5cf384879ecf3a321ae2085a",
+      "baseline_sha256": "de764cc6b955aa7e68bf6838f5c4e715bfbe1d8a5cf384879ecf3a321ae2085a",
+      "baseline_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/review_L3b/turan_symbolic.py",
+      "bytes": 4605,
+      "sha256": "495ae2f488daf835d9f24f18aabcd7671dd5c01dc743b83d5adac200db89fd5d",
+      "matches_candidate": true,
+      "candidate_sha256": "495ae2f488daf835d9f24f18aabcd7671dd5c01dc743b83d5adac200db89fd5d",
+      "baseline_sha256": "495ae2f488daf835d9f24f18aabcd7671dd5c01dc743b83d5adac200db89fd5d",
+      "baseline_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-300-l3q1-backward-interpretation-target.md",
+      "bytes": 12425,
+      "sha256": "a1157022d0750fe6f64eb5bfc6a6c7f0182d8f68840f9069f73f8c96461e0143",
+      "matches_candidate": true,
+      "candidate_sha256": "a1157022d0750fe6f64eb5bfc6a6c7f0182d8f68840f9069f73f8c96461e0143",
+      "baseline_sha256": "175aaad3fce7cfde64c7f9644482d8eb2a24c7500b17b6a3150e7bbfb61ad9aa",
+      "baseline_unchanged": false
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-301-truncated-favard-sections.md",
+      "bytes": 11447,
+      "sha256": "6362f6ff465ab4d8d93e2cdb0fd49989e0faed93430edbfccc9bcdc63b4a03c8",
+      "matches_candidate": true,
+      "candidate_sha256": "6362f6ff465ab4d8d93e2cdb0fd49989e0faed93430edbfccc9bcdc63b4a03c8",
+      "baseline_sha256": "c0f84c2dab322e8f5c61a10bf8a0df45c291781f623bc0238f58f6366e52af2d",
+      "baseline_unchanged": false
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-302-backward-reduction-moment-cone.md",
+      "bytes": 22202,
+      "sha256": "fd21c38c54355f9951dbc4281fb6cb79377d66541d6ffb272c2b895ba20a5d93",
+      "matches_candidate": true,
+      "candidate_sha256": "fd21c38c54355f9951dbc4281fb6cb79377d66541d6ffb272c2b895ba20a5d93",
+      "baseline_sha256": "b2ba05315a0c3f5afab9cae52fa422f0163cb292a5dc7d2abbb63766e0b7f6cd",
+      "baseline_unchanged": false
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-303-moment-cone-rate-theorem.md",
+      "bytes": 11143,
+      "sha256": "e2cebac0f5f6181d75a412ef815f8c11f2e788ce21d90cf3dff1c940c619c7f9",
+      "matches_candidate": true,
+      "candidate_sha256": "e2cebac0f5f6181d75a412ef815f8c11f2e788ce21d90cf3dff1c940c619c7f9",
+      "baseline_sha256": "8207b3b87625bb692aa9da2da0efc0a14cee5cd1fe3ef02444cf798b28768a5a",
+      "baseline_unchanged": false
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-304-square-case-commutator-bounds.md",
+      "bytes": 8426,
+      "sha256": "efbf1ab4adb34eda1ad0006e30eb2a22ef387e5235986ac5498d2e539f35781b",
+      "matches_candidate": true,
+      "candidate_sha256": "efbf1ab4adb34eda1ad0006e30eb2a22ef387e5235986ac5498d2e539f35781b",
+      "baseline_sha256": "8bfa07da8fb255dbb4b4a89b85b3206518755d366a60b734abebb8cc9d2e4c82",
+      "baseline_unchanged": false
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-305-three-node-square-case-sqrt-rate.md",
+      "bytes": 3176,
+      "sha256": "52f5ddda0bad49b102da6637a6b58428a881c0be2eb2863ca7cbf8682cd9ce48",
+      "matches_candidate": true,
+      "candidate_sha256": "52f5ddda0bad49b102da6637a6b58428a881c0be2eb2863ca7cbf8682cd9ce48",
+      "baseline_sha256": "52f5ddda0bad49b102da6637a6b58428a881c0be2eb2863ca7cbf8682cd9ce48",
+      "baseline_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-306-padua-n2-sqrt-rate.md",
+      "bytes": 5407,
+      "sha256": "52af1c9ddced7a788f3dd27448e156d6b8a5df5d82768c7bb2c7494aca885beb",
+      "matches_candidate": true,
+      "candidate_sha256": "52af1c9ddced7a788f3dd27448e156d6b8a5df5d82768c7bb2c7494aca885beb",
+      "baseline_sha256": "52af1c9ddced7a788f3dd27448e156d6b8a5df5d82768c7bb2c7494aca885beb",
+      "baseline_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-307-square-case-hessian-condition-measurements.md",
+      "bytes": 8430,
+      "sha256": "683ad23074cc20ae56126bed032efc9bcd77f211922a24f142617365b5b3691b",
+      "matches_candidate": true,
+      "candidate_sha256": "683ad23074cc20ae56126bed032efc9bcd77f211922a24f142617365b5b3691b",
+      "baseline_sha256": "e810d77b5f494b72ecb173d3607d9031d89bfe531623f047198cae6f35594f98",
+      "baseline_unchanged": false
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-308-compression-model-no-obstruction.md",
+      "bytes": 4269,
+      "sha256": "88bc0093ab89d29be72e06fc8c66114b9a4eb86c2c9fb9eb8fb71dd80c8e990d",
+      "matches_candidate": true,
+      "candidate_sha256": "88bc0093ab89d29be72e06fc8c66114b9a4eb86c2c9fb9eb8fb71dd80c8e990d",
+      "baseline_sha256": "59be05e16c06d18efd37475849449fa33e6999c976a9d5e3275329512ae5cc38",
+      "baseline_unchanged": false
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-309-square-case-quadratic-generator-form.md",
+      "bytes": 7170,
+      "sha256": "373d7d198a7d02d2ea119bc1d09080c53e085a1f88804dbb093ce5bcb4360696",
+      "matches_candidate": true,
+      "candidate_sha256": "373d7d198a7d02d2ea119bc1d09080c53e085a1f88804dbb093ce5bcb4360696",
+      "baseline_sha256": "373d7d198a7d02d2ea119bc1d09080c53e085a1f88804dbb093ce5bcb4360696",
+      "baseline_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-310-equispaced-checkerboard-condition-H.md",
+      "bytes": 5214,
+      "sha256": "c2848bc6f183718d9ffa02f12e1f7c6b91274495977edf20c9902640f72cbcea",
+      "matches_candidate": true,
+      "candidate_sha256": "c2848bc6f183718d9ffa02f12e1f7c6b91274495977edf20c9902640f72cbcea",
+      "baseline_sha256": "0aad172c8b57c10901e16d08d3ba0b4bd5ff8eec4087fe10d269945bc7c350d9",
+      "baseline_unchanged": false
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-311-equispaced-certificate-margins.md",
+      "bytes": 4119,
+      "sha256": "34a5c33ced7f222705a05df6b62dd42f7bc1624223d12caf329f920c9e876652",
+      "matches_candidate": true,
+      "candidate_sha256": "34a5c33ced7f222705a05df6b62dd42f7bc1624223d12caf329f920c9e876652",
+      "baseline_sha256": "0eeeea78604fbf201cc40c33bac1d0011b76e1e5edf9e96afd3c77c0e5dbcd47",
+      "baseline_unchanged": false
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-312-padua-interior-turan-lemma.md",
+      "bytes": 3825,
+      "sha256": "80f59ddd11542339832392bd331ae0c5ec57811ae337e2b12303a81dcfdc394d",
+      "matches_candidate": true,
+      "candidate_sha256": "80f59ddd11542339832392bd331ae0c5ec57811ae337e2b12303a81dcfdc394d",
+      "baseline_sha256": "80f59ddd11542339832392bd331ae0c5ec57811ae337e2b12303a81dcfdc394d",
+      "baseline_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-313-padua-turan-certificate-all-n.md",
+      "bytes": 9782,
+      "sha256": "8c85a85617469b5b329a826482d78369c7bdff2447e86d4659129b1450299474",
+      "matches_candidate": true,
+      "candidate_sha256": "8c85a85617469b5b329a826482d78369c7bdff2447e86d4659129b1450299474",
+      "baseline_sha256": "730b06228c9eff676f1d462a29a4b39de0169b5fb3790196d4e42b461b51842e",
+      "baseline_unchanged": false
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-314-computed-data-consistency-symmetry.md",
+      "bytes": 6729,
+      "sha256": "5ba1c0bc7493f949cacfb8d76cf740876a249440ebd890611dc5a1ebc42b5557",
+      "matches_candidate": true,
+      "candidate_sha256": "5ba1c0bc7493f949cacfb8d76cf740876a249440ebd890611dc5a1ebc42b5557",
+      "baseline_sha256": "3415a9ef3ea42a13881c8fabaf19e4af517bdfb97998c7788cc055280c9fb58f",
+      "baseline_unchanged": false
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-315-consistency-defect-measurements.md",
+      "bytes": 5458,
+      "sha256": "c0bf408f1c0b36c98d34975122afea635b19cc89406333b6676942a968f82fd1",
+      "matches_candidate": true,
+      "candidate_sha256": "c0bf408f1c0b36c98d34975122afea635b19cc89406333b6676942a968f82fd1",
+      "baseline_sha256": "c6aaee7dd79d453944460bc918fac5addf7db3a641ab2bb4195979ad63117db5",
+      "baseline_unchanged": false
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-316-square-case-first-order-commutator-isomorphism.md",
+      "bytes": 3602,
+      "sha256": "8a149eaf2ac262824b82b31147042663420ebab68c79d38d0f447b291d2f7e55",
+      "matches_candidate": true,
+      "candidate_sha256": "8a149eaf2ac262824b82b31147042663420ebab68c79d38d0f447b291d2f7e55",
+      "baseline_sha256": null,
+      "baseline_unchanged": null
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-317-first-order-commutator-rank-measurements.md",
+      "bytes": 3295,
+      "sha256": "49cf947440ca9e08f3422d563dc47eef836d3649f5dd798505956433f7888bdc",
+      "matches_candidate": true,
+      "candidate_sha256": "49cf947440ca9e08f3422d563dc47eef836d3649f5dd798505956433f7888bdc",
+      "baseline_sha256": null,
+      "baseline_unchanged": null
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-318-first-order-commutator-formula.md",
+      "bytes": 11019,
+      "sha256": "f293c642ff08dd8677a85dc9582daeb07f0f92a391bacab295d9dd4840f56e19",
+      "matches_candidate": true,
+      "candidate_sha256": "f293c642ff08dd8677a85dc9582daeb07f0f92a391bacab295d9dd4840f56e19",
+      "baseline_sha256": null,
+      "baseline_unchanged": null
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-319-padua-obstruction-radius-uniformity.md",
+      "bytes": 5792,
+      "sha256": "955dbfa15ad4c29d963586ef254bbc75e20d2af6ab8a4cad200264c93d4aaad7",
+      "matches_candidate": true,
+      "candidate_sha256": "955dbfa15ad4c29d963586ef254bbc75e20d2af6ab8a4cad200264c93d4aaad7",
+      "baseline_sha256": null,
+      "baseline_unchanged": null
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N301-padua-n3-exact-backward-obstruction.md",
+      "bytes": 9861,
+      "sha256": "1c3ef581874c134d14c00b8a4aca1b3039bceadbb5a43728e25ef5d44ae817f1",
+      "matches_candidate": true,
+      "candidate_sha256": "1c3ef581874c134d14c00b8a4aca1b3039bceadbb5a43728e25ef5d44ae817f1",
+      "baseline_sha256": "50e455fcdcf88601d68537fe95da4da8666fcb00200692fa3053f52334509a21",
+      "baseline_unchanged": false
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N303-padua-all-n-exact-backward-obstruction.md",
+      "bytes": 7504,
+      "sha256": "6ef1bbfbcfa818d33626e4435c12e8d2a12d5297463795dccb4a400696b087ed",
+      "matches_candidate": true,
+      "candidate_sha256": "6ef1bbfbcfa818d33626e4435c12e8d2a12d5297463795dccb4a400696b087ed",
+      "baseline_sha256": "ed0e9a9d9dbfb5570427f46717481b4e9c40f68481d589e56a7415fe2bedbbab",
+      "baseline_unchanged": false
+    }
+  ],
+  "original_certificate_files_unchanged": [
+    "tracks/bivariate-lanczos/code/L3/exact_certificates.py",
+    "topics/bivariate-lanczos-20261031/directions/L3/logs/exact_certificates.log",
+    "tracks/bivariate-lanczos/code/review_L3/indep_exact_check.py",
+    "tracks/bivariate-lanczos/code/review_L3/unisolvence_check.py",
+    "tracks/bivariate-lanczos/code/review_L3b/rigorous.py",
+    "tracks/bivariate-lanczos/code/review_L3b/padua_turan_check.py",
+    "tracks/bivariate-lanczos/code/review_L3b/padua_delta0.py",
+    "tracks/bivariate-lanczos/code/review_L3b/turan_symbolic.py",
+    "tracks/bivariate-lanczos/code/review_L3b/kappa_family_n3.py"
+  ],
+  "code_log_diff_only_additions": [
+    "A\ttopics/bivariate-lanczos-20261031/directions/L3/logs/t302b_conventions_check.log",
+    "A\ttopics/bivariate-lanczos-20261031/directions/L3/logs/t318_dkappa_formula_check.log",
+    "A\ttracks/bivariate-lanczos/code/L3/t302b_conventions_check.py",
+    "A\ttracks/bivariate-lanczos/code/L3/t318_dkappa_formula_check.py"
+  ],
+  "runs": [
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 -I tracks/bivariate-lanczos/code/L3/t318_dkappa_formula_check.py",
+      "working_directory": "/workspace/padua_research",
+      "log": "topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/developer-t318-rerun.log",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 -I topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/independent_t318.py",
+      "working_directory": "/workspace/padua_research",
+      "log": "topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/independent-t318.log",
+      "exit_code": 0
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 -I topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/sampling_scope.py",
+      "working_directory": "/workspace/padua_research",
+      "log": "topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/sampling-scope.log",
+      "exit_code": 0
+    }
+  ],
+  "evidence": [
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/code-log-diff.txt",
+      "sha256": "481dbb907773096d9f814dd53cedca3e666e03e8e79481a5a8f708061114de4f",
+      "bytes": 294
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/developer-t318-rerun.log",
+      "sha256": "06413c814eec75897aaebaa4d72da455497b1716877ee824a12e6ba28a7b9c02",
+      "bytes": 2605
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/independent-t318-initial-status.txt",
+      "sha256": "118bd128a7b43410ceeeec7190a90261b681ebd656ba058c5f4ff0003455bdb2",
+      "bytes": 759
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/independent-t318-initial.log",
+      "sha256": "33b84015940c330b10abe22b137c84d857edcf59c2c00e9bc4d47014a305778b",
+      "bytes": 319
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/independent-t318.log",
+      "sha256": "3e5f8bac5fee4a5ccc50dc70235c523aed216efbc422b17bab4ca9033e558de4",
+      "bytes": 1057
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/independent_t318.py",
+      "sha256": "cb1b0fc736b06ae820e3a5d0f3c680ad76446df00c2230823e5e1bec838425a0",
+      "bytes": 6861
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/original-proof-scope.diff",
+      "sha256": "c519157f03cffc6db42dee2cd1a093abba9dae5129bd20532c602c6bfd77a67b",
+      "bytes": 51077
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/post-candidate-metadata.diff",
+      "sha256": "211efa463d9eed7b792915e473faeed7ed027e5804b7f09ea77de2dbac840202",
+      "bytes": 1032
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/record_evidence.py",
+      "sha256": "73602c1f4f847319210268923d6a0beeb0fde0482a35295bf5dc664eae0838ba",
+      "bytes": 5181
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/sampling-scope.log",
+      "sha256": "3084fecff7c500ec1df8f3000ee7b2e9111423bcc56633e073c2a9d9548333d4",
+      "bytes": 921
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/sampling_scope.py",
+      "sha256": "b683a29596d052aa9b3e3e407f189bd6b2ef711ba8a481b3b2daae345a86c1f0",
+      "bytes": 1623
+    }
+  ],
+  "incomplete_initial_execution": {
+    "command": "python3 -I topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/independent_t318.py",
+    "exit_code": 130,
+    "reason": "deliberately interrupted slow generic J.rank at n=3",
+    "status_record": "topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/independent-t318-initial-status.txt",
+    "completed_rerun": "independent-t318.log"
+  }
+}

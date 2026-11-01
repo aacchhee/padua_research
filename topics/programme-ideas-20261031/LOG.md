@@ -165,6 +165,36 @@ Subagents are launched as background `general-purpose` agents on `claude-fable-5
 - PR #10 has allocated PD-T029–080, PD-N007–031, LIT-066–292 and IDEA-077–176. The next free IDs for this branch are PD-T081, PD-N032, LIT-293 and IDEA-177. If PR #10 lands first: drop the 34 duplicate CORPUS keys, and re-deduplicate the 54 INDEX rows whose sources PR #10 also registers.
 - Decision for AC: keep the provisional IDs at merge (lattice precedent), or allocate final IDs after PR #10 (ledger owner or explicit authorisation). Recommended order: PR #10 → PR #6 → PR #9. PR #6 stays draft until AC decides. No final ID is allocated. Only AC merges.
 
+## 2026-11-01 — Claude, re-integration after PR #10 merged (claude-opus-5-5; requested effort high); Stage PR
+
+- Main `21e620b` (PR #10) is merged in `3e0100f`. The five registry append conflicts are resolved as the union, and 34 duplicate CORPUS keys are dropped.
+- The second literature dedupe against PR #10's LIT-066–292 is in `af3881b`: 14 same (merged, no new ID), 38 overlap, 3 unrelated and 20 flags. The INDEX block is down to 95 rows. Row 58 was overridden to overlap. The helper was Sonnet 5.5; I reviewed all 15 of its "same" calls.
+- Rehearsal from `21e620b` with #6, #11, #9 and #12 is clean in sequence, and #11-first auto-merges. Details are in [pr-prep.md](pr-prep.md).
+- Next free IDs: PD-T081, PD-N032, IDEA-177 and LIT-300 (draft #11 reserves LIT-293–299). AC still has to choose between provisional IDs at merge and final allocation. No ledger edit, no final ID. Only AC merges.
+
+## 2026-11-01 — Claude, final-ID allocation at AC's instruction (claude-opus-5-5; requested effort high); Stage PR
+
+- AC's instructions: "allocate this block now", then "are the lattice ids allocated now? if not, do that as well". The lattice IDs were still provisional on main (66 of them, deferred), so both blocks were allocated in `6954664`:
+  - lattice: PD-T081–094, PD-N032–038, IDEA-177–189 and LIT-300–331;
+  - programme-ideas: PD-T095–100, PD-N039–043, IDEA-190–209 and LIT-332–426;
+  - next unreserved: PD-T101, PD-N044, IDEA-210 and LIT-427.
+- Generator and map: `pr-prep/allocate.py` and `id-map.json`. Registry blocks, crosswalk, records and the ledger are updated, and provisional IDs are kept as provenance. No status change. The rehearsal with #11, #9 and #12 is clean. Details are in [pr-prep.md](pr-prep.md).
+
+## 2026-11-01 — Codex audit-04 integration review and AC-authorized bookkeeping repair
+
+- Rules/candidate read: `37820a528c863e5cfe2dc2f1f8879b4fd40cf210`; main `21e620ba8b5f0e0706f3a8c6613517df04d9d469`. AC requested `gpt-6-astra high`; three disjoint supplementary reviewers used that explicit allocation. Runtime-resolved metadata is unavailable. Root alone controls Git and PR metadata. No new novelty-bearing work or accepted-mathematics review.
+- Allocation review passed: 192 unique final IDs, 208 provisional crosswalk records, 16 aliases, canonical Final ID lines and all scientific statuses preserved; exact #11 head `97968d2` reserves LIT-293–299. Main merge preserves every main registry line, and all 49 removed branch CORPUS rows have main replacements (15 rewritten, 34 duplicate). Original audit/code/rule files are unchanged.
+- Found three pipe-parsing registration defects and an incomplete description of the dependent squash rehearsal. AC then instructed: “you have to fix all bookkeeping without more claude rounds”. Root restored the baseline fields/coverage of LIT-342/369/389, removed three formula-derived CORPUS keys, repaired stale audit/allocation/frontier wording and made the allocation helper's default check work after installation. All allocated IDs/maps, mathematical statements/statuses and existing audits/checks/code/agents are preserved. The README edits affect administrative ID wording only.
+- Independent repair checks pass for literature retention and the allocator's read-only positive/negative cases. Current source-comparison flags remain recorded limits, not new mathematics or cleared source claims. Rehearsal documentation now requires own-topic-only dependent changes after upstream squashes; raw #12 whole-head conflicts are explicitly recorded. No other live branch is modified.
+- Detailed findings, dispositions and final integration verification will be retained in `audit-04.md` and the small new `audit-04-support/` artifacts. Only AC merges.
+
+## 2026-11-01 — Codex audit-04 completion; Stage PR
+
+- [Audit-04](audit-04.md): ACCEPTED after AC-authorized administrative repairs. The original finding receipts remain; independent literature/allocator repair reviews pass. `60e8ecf7bf5a171af02fec589583fa135dee2709` records the repairs. Subsequent delivery changes only current instructions, the audit, support evidence and this log. All accepted science, IDs/maps and old audits/checks/code/agents are preserved. No history rewrite or live merge.
+- AC's final sequence is **#6 → #13 (rules update) → #11 → #9 → #12**, with later drafts refreshed against the preceding merges. Rehearsal pins #13 `10f2d8592673866ed0aa5ca73cef88d7541183ed`, #11 `97968d2`, #9 `7b8884a`, #12 documented `c26a6ad` and refreshed `44be008`. The prepared sequence passes, retaining all192 allocations,7 reserved #11 rows and the Fable amendment. PR #13's separate protocol audit is not supplied by this compatibility check.
+- The raw whole-head #12 squash gives20conflicts, so PR preparation now explicitly requires refreshing/retargeting #9/#12 with their own-topic changes after preceding squashes. #11 refreshes against #6/#13-bearing main without moving its range. No later branch was rewritten here.
+- Prior protected197 files are byte-identical to `f4e2133`; canonical scientific records/statuses are unchanged. Three literature registrations are restored, bogus source keys removed, stale current metadata corrected, and default allocator validation is repeatable/read-only. Existing20source-comparison flags and all OPEN/MEASURED limits remain visible. Small evidence/manifests are in `audit-04-support/`. Root updates PR #6 and marks it ready for AC's decision after publishing the clean delivery. Only AC merges.
+
 ## Runs needed
 
-Response-02 focused review is complete, and PR preparation is done ([pr-prep.md](pr-prep.md)). What remains is AC's final-ID and merge-order decision, plus re-integration with PR #10 if it lands first. Certification of maxima and proofs of corner expansion/argmax stay OPEN; unimplemented rational and computed-section alternatives are unexcluded. Source identities verified in audit-02 remain pinned; Windows archive retention was not independently rechecked. No full n≤200/n=8192/80-bit replay is claimed. Completed commands/evidence are in the three audit-support directories with separate source revisions.
+No further PR #6 bookkeeping or Claude response round is required. AC decides whether to merge #6, then the separately audited #13. Refresh #11, #9 and #12 in that order against the preceding merges, preserving allocations and history. Scientific certification, OPEN targets and the recorded source-comparison gaps remain continuing research/source-reading work, not completed by this integration review. No unchanged expensive numerical replay or independent Windows-archive retrieval is claimed.

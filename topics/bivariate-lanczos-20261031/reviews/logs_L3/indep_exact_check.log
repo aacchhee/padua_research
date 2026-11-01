@@ -1,0 +1,29 @@
+certificate source: topics/bivariate-lanczos-20261031/directions/L3/logs/exact_certificates.log
+  sha256 287e8dd0bdaa60d93d728045fcd47c5c75832813657f4849081fe4b1e0629e8b
+sympy field: QQ<sqrt(2)>
+[n=1 structure] dim S1=1; S1 = span(l12 l13 l23): True; sign det Hess at the 3 nodes: [-1, -1, -1] (all -1 => indefinite)
+[dual n=1] M=3 dim Pi_3=10 rank J=9 dim S1=1 (n(n+1)/2=1) rank Hess|S1=1 injective=True
+   sum_i <A_i, Hess p(z_i)> = 0 for every S1 basis element: True; A_i PD: [True, True, True]; min lam_min(A_i) >= 0.0857404
+   => dual certificate for (H) at Padua n=1: PASS
+[dual n=2] M=6 dim Pi_5=21 rank J=18 dim S1=3 (n(n+1)/2=3) rank Hess|S1=3 injective=True
+   sum_i <A_i, Hess p(z_i)> = 0 for every S1 basis element: True; A_i PD: [True, True, True, True, True, True]; min lam_min(A_i) >= 0.015199
+   => dual certificate for (H) at Padua n=2: PASS
+[primal n=3] p* has 20 nonzero monomials; total degree = 7; all coefficients rational: True; even in y: True
+   p*(z_i) = 0 exactly at all 10 nodes: True; grad p*(z_i) = 0: True; Hess p*(z_i) PD (exact): True [True, True, True, True, True, True, True, True, True, True]
+     node (+1.0000,+1.0000): hxx=1368081/400000, hxy=-51213/12500, hyy=81062/15625, lam_min >= 0.112786
+     node (+1.0000,+0.0000): hxx=689211/2000000, hxy=0, hyy=40531/31250, lam_min >= 0.344605
+     node (+1.0000,-1.0000): hxx=1368081/400000, hxy=51213/12500, hyy=81062/15625, lam_min >= 0.112786
+     node (+0.5000,+0.7071): hxx=39771/125000, hxy=-121593*sqrt(2)/500000, hyy=172169/250000, lam_min >= 0.112784
+     node (+0.5000,-0.7071): hxx=39771/125000, hxy=121593*sqrt(2)/500000, hyy=172169/250000, lam_min >= 0.112784
+     node (-0.5000,+1.0000): hxx=1999413/2000000, hxy=-5037/12500, hyy=133517/62500, lam_min >= 0.871339
+     node (-0.5000,+0.0000): hxx=225567/2000000, hxy=0, hyy=133517/250000, lam_min >= 0.112783
+     node (-0.5000,-1.0000): hxx=1999413/2000000, hxy=5037/12500, hyy=133517/62500, lam_min >= 0.871339
+     node (-1.0000,+0.7071): hxx=239301/2000000, hxy=85821*sqrt(2)/1000000, hyy=28219/12500, lam_min >= 0.112782
+     node (-1.0000,-0.7071): hxx=239301/2000000, hxy=-85821*sqrt(2)/1000000, hyy=28219/12500, lam_min >= 0.112782
+   exact S1 for Padua n=3: rank J=30, dim S1=6, rank Hess|S1=6
+   rigorous radius (coefficient-sum Taylor bound, full expansion): min_i R_i = 0.00234656 (per node: [0.00235, 0.04118, 0.00235, 0.01708, 0.01708, 0.0502, 0.04825, 0.0502, 0.00556, 0.00556])
+   developer delta_0 = 30117029139000/77370908310949543 ~ 0.000389255: lam/2 - sum B_t d0^(t-2) > 0 at every node: True => p* >= 0 on all closed balls B(z_i, delta_0): True
+   interval certificate p* > 0 on punctured squares |h|_inf <= 0.02 (contain discs of that radius): True  boxes per node [11348, 4, 11348, 298, 298, 18, 4, 18, 98, 98]
+   interval certificate p* > 0 on punctured squares |h|_inf <= 0.03 (contain discs of that radius): True  boxes per node [11614, 4, 11614, 344, 344, 26, 4, 26, 120, 120]
+   interval certificate p* > 0 on punctured squares |h|_inf <= 0.04 (contain discs of that radius): True  boxes per node [11984, 4, 11984, 372, 372, 26, 4, 26, 154, 154]
+   example zeta = node0 + (-0.01, 0) = 99/100,1: p*(zeta) = 8338415755662367/50000000000000000000 (sign 1); zeta lies in K_delta0? False

@@ -1,0 +1,10 @@
+N309 point counterexample: det V = 576 ; leading minors = [998001/1000000, 110778111/100000000, 36889110963/40000000000]
+N309 positive-radius proof: q = x*y*(-x - y + 3) ; gradient bound = 120
+delta = 1/100000000 ; exact rational lower bound = 12485015/12487547952 ; gap over theta epsilon = 463852747/1560943494000000
+threshold equality and strict-failure checks PASS: theta = 0 ; k = 1
+threshold equality and strict-failure checks PASS: theta = 1/2 ; k = 2
+threshold equality and strict-failure checks PASS: theta = 9/10 ; k = 10
+R2 requires fixed mass: free dist^2 = 2601/2500000000 <= budget^2 = 10201/9000000000 < fixed dist^2 = 289/250000000
+r/r_0 comparison PASS: r = 1/1000 ; r_0 = sqrt(10)/3000 ; A = 1 + sqrt(10) ; B = 1000*sqrt(10)
+R3 identity and upper bound PASS: scale = 1000000/998001 ; normalized distance = 1/999
+ALL INDEPENDENT CHECKS PASS

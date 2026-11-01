@@ -1,0 +1,19 @@
+[309(c) n=1] generators vanish at all nodes: True; top forms -lam_m x^m y^(n+1-m), 2^(n-1) x^(n+1): True; interior-gradient formula at 0 interior nodes: True
+[309(a,b) n=1] dim{C perp Hankel}=1; every p_C in S1 with deg <= 3: True; rank(C -> p_C)=1; dim S1=1; S1 = {p_C} exactly: True
+[309(c) n=2] generators vanish at all nodes: True; top forms -lam_m x^m y^(n+1-m), 2^(n-1) x^(n+1): True; interior-gradient formula at 1 interior nodes: True
+[309(a,b) n=2] dim{C perp Hankel}=3; every p_C in S1 with deg <= 5: True; rank(C -> p_C)=3; dim S1=3; S1 = {p_C} exactly: True
+[309(c) n=3] generators vanish at all nodes: True; top forms -lam_m x^m y^(n+1-m), 2^(n-1) x^(n+1): True; interior-gradient formula at 3 interior nodes: True
+[309(a,b) n=3] dim{C perp Hankel}=6; every p_C in S1 with deg <= 7: True; rank(C -> p_C)=6; dim S1=6; S1 = {p_C} exactly: True
+[309(c) n=3] generators vanish at all nodes: True; top forms -lam_m x^m y^(n+1-m), 2^(n-1) x^(n+1): True; interior-gradient formula at 3 interior nodes: True
+[n=3 generator SDP] float max-min eigenvalue of G_i^T C G_i: 0.099698 (proposal only)
+   rational C (exact, symmetric, all anti-diagonal sums 0):
+      ['0', '0', '-1/2', '0', '-849/4000']
+      ['0', '1', '0', '63/2500', '0']
+      ['-1/2', '0', '3741/10000', '0', '-1969/20000']
+      ['0', '63/2500', '0', '1969/10000', '0']
+      ['-849/4000', '0', '-1969/20000', '0', '0']
+   G_i^T C G_i PD at all 10 nodes (exact): True; p_C has degree 7 (<= 7), p_C in S1: True; Hess p_C(z_i) = 2 G_i^T C G_i exactly: True
+   min_i lam_min(Hess p_C(z_i)) >= 0.19935
+   rigorous coefficient-sum radius: 0.0023467
+   interval certificate p_C > 0 on punctured squares of half-width 0.01: True boxes [11122, 4, 11122, 282, 282, 4, 4, 4, 92, 92]
+   interval certificate p_C > 0 on punctured squares of half-width 0.02: True boxes [11348, 4, 11348, 298, 298, 18, 4, 18, 98, 98]

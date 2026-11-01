@@ -1,0 +1,8 @@
+# l1_r04_scaled_predictor.py numpy=2.5.3
+square                         n4: L=7e-15 Ps=2e-15 | n8: L=7e-15 Ps=5e-15 | n12: L=7e-15 Ps=7e-15 | n16: L=7e-15 Ps=1e-14 | n20: L=1e-14 Ps=4e-14 | n24: L=8e-14 Ps=3e-13 | n28: L=4e-13 Ps=2e-12 | n32: L=5e-12 Ps=3e-11
+square rot pi/4                n4: L=7e-15 Ps=3e-15 | n8: L=4e-14 Ps=1e-13 | n12: L=6e-12 Ps=2e-11 | n16: L=2e-09 Ps=1e-08 | n20: L=2e-06 Ps=2e-05 | n24: L=4e-03 Ps=3e-02
+disk                           n4: L=7e-15 Ps=2e-15 | n8: L=9e-15 Ps=2e-14 | n12: L=3e-13 Ps=4e-13 | n16: L=7e-12 Ps=8e-12 | n20: L=2e-10 Ps=3e-10 | n24: L=1e-08 Ps=2e-08
+triangle                       n4: L=1e-14 Ps=2e-14 | n8: L=5e-12 Ps=6e-12 | n12: L=1e-07 Ps=4e-09 | n16: L=7e-03 Ps=2e-05 | n20: L=1e+00 Ps=8e-04
+checkerboard Cheb-Lobatto      n4: L=2e-15 Ps=3e-15 Ps_factorised=3e-15 | n8: L=2e-15 Ps=6e-15 Ps_factorised=6e-15 | n12: L=3e-15 Ps=9e-15 Ps_factorised=9e-15 | n16: L=3e-15 Ps=1e-14 Ps_factorised=1e-14 | n20: L=3e-15 Ps=2e-14 Ps_factorised=2e-14 | n24: L=3e-15 Ps=2e-14 Ps_factorised=2e-14 | n28: L=3e-15 Ps=3e-14 Ps_factorised=3e-14
+checkerboard equispaced        n4: L=9e-16 Ps=1e-15 Ps_factorised=1e-15 | n8: L=9e-16 Ps=3e-15 Ps_factorised=3e-15 | n12: L=1e-15 Ps=4e-15 Ps_factorised=4e-15 | n16: L=4e-15 Ps=5e-15 Ps_factorised=5e-15 | n20: L=1e-14 Ps=6e-15 Ps_factorised=6e-15 | n24: L=4e-14 Ps=2e-14 Ps_factorised=2e-14 | n28: L=1e-13 Ps=4e-13 Ps_factorised=4e-13
+checkerboard clustered         n4: L=3e-16 Ps=1e-15 Ps_factorised=1e-15 | n8: L=7e-16 Ps=2e-15 Ps_factorised=2e-15 | n12: L=3e-14 Ps=3e-15 Ps_factorised=3e-15 | n16: L=1e-11 Ps=4e-15 Ps_factorised=4e-15 | n20: L=4e-09 Ps=1e-14 Ps_factorised=1e-14 | n24: L=9e-07 Ps=5e-12 Ps_factorised=5e-12 | n28: L=7e-05 Ps=7e-06 Ps_factorised=7e-06

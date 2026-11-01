@@ -1,0 +1,37 @@
+# rl2_exact.py numpy=2.3.5 mpmath=1.3.0 dps=80
+  bj       cgs1win inj=0: 205 parts 1-2 exact residual = 0 over 18 columns; 202.3 shadow residual = 0, K(t,0) residual = 0, Gram identity residual = 0; 202.1 decomposition residual = 1.6e-81 (|lhs| = 2.7e-16)
+      s=0: 202.4 residual 5.9e-82; delta_J/(2|J|) = 2.353e-17 <= max(theta_s, theta_s+1) = max(6.865e-17, 1.157e-16): True
+      s=1: 202.4 residual 7.4e-82; delta_J/(2|J|) = 3.188e-17 <= max(theta_s, theta_s+1) = max(1.157e-16, 2.174e-16): True
+      s=2: 202.4 residual 8.1e-82; delta_J/(2|J|) = 3.594e-17 <= max(theta_s, theta_s+1) = max(2.174e-16, 3.377e-16): True
+      s=3: 202.4 residual 9.4e-82; delta_J/(2|J|) = 7.141e-17 <= max(theta_s, theta_s+1) = max(3.377e-16, 6.800e-16): True
+      (0s)
+  bj       cgs2all inj=0: 205 parts 1-2 exact residual = 0 over 18 columns; 202.3 shadow residual = 0, K(t,0) residual = 0, Gram identity residual = 0; 202.1 decomposition residual = 1.6e-81 (|lhs| = 1.6e-16)
+      s=0: 202.4 residual 3.0e-82; delta_J/(2|J|) = 2.879e-17 <= max(theta_s, theta_s+1) = max(6.865e-17, 1.155e-16): True
+      s=1: 202.4 residual 1.3e-81; delta_J/(2|J|) = 3.755e-17 <= max(theta_s, theta_s+1) = max(1.155e-16, 2.068e-16): True
+      s=2: 202.4 residual 4.5e-82; delta_J/(2|J|) = 4.406e-17 <= max(theta_s, theta_s+1) = max(2.068e-16, 3.373e-16): True
+      s=3: 202.4 residual 1.2e-81; delta_J/(2|J|) = 4.919e-17 <= max(theta_s, theta_s+1) = max(3.373e-16, 4.915e-16): True
+      (0s)
+  bj       part    inj=0: 205 parts 1-2 exact residual = 0 over 18 columns; 202.3 shadow residual = 0, K(t,0) residual = 0, Gram identity residual = 0; 202.1 decomposition residual = 1.6e-81 (|lhs| = 2.7e-16)
+      s=0: 202.4 residual 5.9e-82; delta_J/(2|J|) = 2.353e-17 <= max(theta_s, theta_s+1) = max(6.865e-17, 1.157e-16): True
+      s=1: 202.4 residual 7.4e-82; delta_J/(2|J|) = 3.188e-17 <= max(theta_s, theta_s+1) = max(1.157e-16, 2.174e-16): True
+      s=2: 202.4 residual 8.4e-82; delta_J/(2|J|) = 3.385e-17 <= max(theta_s, theta_s+1) = max(2.174e-16, 3.523e-16): True
+      s=3: 202.4 residual 8.4e-82; delta_J/(2|J|) = 5.874e-17 <= max(theta_s, theta_s+1) = max(3.523e-16, 5.779e-16): True
+      (0s)
+  bj       cgs1win inj=0.001: 205 parts 1-2 exact residual = 0 over 18 columns; 202.3 shadow residual = 0, K(t,0) residual = 0, Gram identity residual = 0; 202.1 decomposition residual = 1.2e-81 (|lhs| = 1.1e-03)
+      s=0: 202.4 residual 1.8e-82; delta_J/(2|J|) = 1.579e-04 <= max(theta_s, theta_s+1) = max(6.865e-17, 1.047e-03): True
+      s=1: 202.4 residual 4.2e-82; delta_J/(2|J|) = 3.271e-04 <= max(theta_s, theta_s+1) = max(1.047e-03, 1.971e-03): True
+      s=2: 202.4 residual 4.1e-82; delta_J/(2|J|) = 5.492e-04 <= max(theta_s, theta_s+1) = max(1.971e-03, 3.010e-03): True
+      s=3: 202.4 residual 3.9e-82; delta_J/(2|J|) = 5.217e-04 <= max(theta_s, theta_s+1) = max(3.010e-03, 4.642e-03): True
+      (0s)
+  alt      cgs2all inj=0: 205 parts 1-2 exact residual = 0 over 18 columns
+      (0s)
+  alt      part    inj=0.001: 205 parts 1-2 exact residual = 0 over 18 columns
+      (0s)
+  random0  part    inj=0.001: 205 recursion NOT well defined: cycle at ('X', 4)
+  random1  part    inj=0.001: 205 recursion NOT well defined: cycle at ('X', 4)
+  random2  part    inj=0.001: 205 recursion NOT well defined: cycle at ('X', 4)
+== structural well-definedness search for the PD-T?...-205 recursion
+  cycle found: n=5 trial=0
+  cycle found: n=5 trial=1
+  cycle found: n=5 trial=2
+  structural search: 1600 random selections (n = 5..8), cycles found: 1594

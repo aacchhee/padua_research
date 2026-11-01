@@ -1,0 +1,15 @@
+n=6: N=28, sum w=1.000000000000000, max|offdiag Gram|=7.80e-16, basis elems with norm^2 != 1: [(6, 0)] (norm^2=[np.float64(2.0)])
+   ||Q^T Q - I|| = 3.1850946167108735e-15
+   H_x: max nnz/col for deg<n: 2, deg=n block: max nnz/col 2, total nnz 48 of 784
+   H_y: max nnz/col for deg<n: 2, deg=n block: max nnz/col 2, total nnz 49 of 784
+   equal weights: H_x nnz 136 of 784 (lower bandwidth-type structure, not explicit)
+n=20: N=231, sum w=1.000000000000000, max|offdiag Gram|=3.03e-15, basis elems with norm^2 != 1: [(20, 0)] (norm^2=[np.float64(2.0)])
+   ||Q^T Q - I|| = 4.4716619450570945e-14
+   H_x: max nnz/col for deg<n: 2, deg=n block: max nnz/col 2, total nnz 440 of 53361
+   H_y: max nnz/col for deg<n: 2, deg=n block: max nnz/col 2, total nnz 441 of 53361
+   equal weights: H_x nnz 3300 of 53361 (lower bandwidth-type structure, not explicit)
+n=60: N=1891, sum w=1.000000000000000, max|offdiag Gram|=7.72e-15, basis elems with norm^2 != 1: [(60, 0)] (norm^2=[np.float64(2.0)])
+   ||Q^T Q - I|| = 4.84938141939394e-13
+   H_x: max nnz/col for deg<n: 2, deg=n block: max nnz/col 2, total nnz 3720 of 3575881
+   H_y: max nnz/col for deg<n: 2, deg=n block: max nnz/col 2, total nnz 3721 of 3575881
+   equal weights: H_x nnz 77500 of 3575881 (lower bandwidth-type structure, not explicit)

@@ -35,6 +35,8 @@ Durable THEORY records (response-01, audit-01 A7; `../theory/`): PD-T?programme-
 
 # IDEA?programme-ideas-claude-01 — Bivariate Golub–Meurant quadrature from truncated bivariate sections
 
+Final ID: **IDEA-190** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 Aliases: Bivariate Golub–Meurant: Gauss-type rules for bilinear forms of commuting pairs and normal matrices from the truncated bivariate recurrence (working title); IDEA?programme-ideas-claude-1-1; M1 = gen1-draft-1 ⊕ gen4-draft-3 (host); matrix cubature from sections; bivariate anti-Gauss; polyanalytic Gauss rules; quadrature for normal matrices via short recurrence; bivariate Gauss–Radau/Lobatto bordering; block Laurie/Kronrod for pairs.
 
 - Question / scope: which bilinear forms uᵀf(X,Y)u, u*f(N,N*)u (N normal) or ∫f dμ (discrete 2D measure) are reproduced, bracketed or bounded by e₁ᵀf(H_x^{(k)},H_y^{(k)})e₁ from the k-th truncated sections, and whether Golub–Meurant bordering (Radau/Lobatto, anti-Gauss, averaged, Kronrod) transfers to the non-commuting pair; as M1 host it also carries the extension half (IDEA-18).
@@ -55,6 +57,8 @@ Aliases: Bivariate Golub–Meurant: Gauss-type rules for bilinear forms of commu
 - Topic / audit / history: programme-ideas-20261031; gen1-draft-1 (angle A, 2026-10-31); gate PASS / M1 host (gate.md §1, §2, §3, §5.1, §8); adversarial-M1.md KILLED (ii) with (iv) decisive (2026-11-01); Step 6a record (gate-rejected.md).
 
 # IDEA?programme-ideas-claude-02 — Discrete bivariate Sobolev OPs via non-normal commuting node operators
+
+Final ID: **IDEA-191** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
 
 Aliases: Discrete bivariate Sobolev (Hermite-data) orthogonal polynomials: non-normal commuting node operators, band-plus-low-rank recurrences, and the Alexander–Hirschowitz breakdown (working title); IDEA?programme-ideas-claude-1-2; Hermite-data bivariate OPs; confluent bivariate IEP; Jordan node blocks; band-plus-low-rank bivariate recurrence; Alexander–Hirschowitz breakdown; bivariate coherent pairs; NOTES P7.
 
@@ -77,6 +81,8 @@ Aliases: Discrete bivariate Sobolev (Hermite-data) orthogonal polynomials: non-n
 
 # IDEA?programme-ideas-claude-04 — Toda/qd flows on bivariate block Jacobi pairs
 
+Final ID: **IDEA-193** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 Aliases: Isospectral flows on block Jacobi pairs: Toda/qd dynamics of bivariate recurrence matrices under Christoffel/Geronimus steps (working title); IDEA?programme-ideas-claude-1-4; bivariate Toda; block LR Christoffel step; multispectral Toda discrete; bivariate dqds.
 
 - Question / scope: a Toda/qd-type isospectral flow on (H_x, H_y) of a discrete bivariate measure whose discrete-time steps are the LR/QR steps induced by Christoffel and Geronimus transformations, with dqds-type relative accuracy for block-bidiagonal factors.
@@ -97,6 +103,8 @@ Aliases: Isospectral flows on block Jacobi pairs: Toda/qd dynamics of bivariate 
 - Topic / audit / history: programme-ideas-20261031; gen1-draft-4 (angle A, 2026-10-31, not returned); gate REJECT (2026-11-01); Step 6a record.
 
 # IDEA?programme-ideas-claude-05 — Bivariate modified Chebyshev algorithm
+
+Final ID: **IDEA-194** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
 
 Aliases: Bivariate modified Chebyshev algorithm: block Jacobi pairs from Chebyshev-modified moments with Gautschi-type conditioning (working title); IDEA?programme-ideas-claude-1-5; block modified-moment algorithm; bivariate Gautschi conditioning; NOTES P11; F9 remainder.
 
@@ -119,6 +127,8 @@ Aliases: Bivariate modified Chebyshev algorithm: block Jacobi pairs from Chebysh
 
 # IDEA?programme-ideas-claude-06 — RH/Szegő method transfer for discrete bivariate measures
 
+Final ID: **IDEA-195** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 Aliases: Riemann–Hilbert / Szegő method transfer for discrete bivariate measures (Padua, Lissajous): method-transfer question only (working title); IDEA?programme-ideas-claude-1-6; bivariate Riemann–Hilbert; polyanalytic RH; Padua recurrence asymptotics.
 
 - Question / scope: whether a Riemann–Hilbert or Szegő/CMV formulation can be set up for the discrete product-Chebyshev measure on Padua points so that strong asymptotics of the recurrence blocks follow by a method rather than from the closed form.
@@ -139,6 +149,8 @@ Aliases: Riemann–Hilbert / Szegő method transfer for discrete bivariate measu
 - Topic / audit / history: programme-ideas-20261031; gen1-draft-6 (angle A, 2026-10-31, not returned); gate REJECT (2026-11-01); Step 6a record.
 
 # IDEA?programme-ideas-claude-07 — Two-index divide-and-conquer for commuting banded pairs
+
+Final ID: **IDEA-196** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
 
 Aliases: Two-index divide-and-conquer: product-structured joint eigenvectors of commuting banded pairs and the merge-based bivariate IEP (working title); IDEA?programme-ideas-claude-2-1; two-index SuperDC; bivariate Laurie/Gragg–Harrod merge; product-structured Q; joint secular equation; rank-√N tear; D&C bivariate IEP; node-set merge.
 
@@ -161,6 +173,8 @@ Aliases: Two-index divide-and-conquer: product-structured joint eigenvectors of 
 
 # IDEA?programme-ideas-claude-08 — Structure theory of commuting generalized-Hessenberg pairs (parameters, implicit-Q, cores)
 
+Final ID: **IDEA-197** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 Aliases: Structure theory of commuting generalized-Hessenberg pairs: minimal parametrizations, implicit-Q with order-ideal transitions, and core-transformation forms (working title); IDEA?programme-ideas-claude-2-2; M2 = gen2-draft-2 ⊕ gen2-draft-4 (host); bivariate Jacobi parameters; bivariate Schur parameters; commuting pattern variety; implicit-Q for pairs; order-ideal transition; generalised implicit Q theorem (Humet); Elsner–Ikramov layered form; two-index core chasing.
 
 - Question / scope: minimal recurrence-compatible parametrization of commuting symmetric generalized-Hessenberg pairs of a graded order (≈ 3N−1 parameters inside a Θ(N^{3/2}) pattern), an implicit-Q theorem across zero-pivot order-ideal transitions, and a core-transformation normal form for the condensed pair (normal / torus nodes); as M2 host also the comrade pencil (IDEA-10).
@@ -181,6 +195,8 @@ Aliases: Structure theory of commuting generalized-Hessenberg pairs: minimal par
 - Topic / audit / history: programme-ideas-20261031; gen2-draft-2 (angle B, 2026-10-31); gate PASS / M2 host (gate.md §1, §2, §3, §5.2); adversarial-M2.md KILLED (ii) (2026-11-01); Step 6a record. Name hazard: "Hessenberg pairs" is Godjali's term for a different object (LAA 2009).
 
 # IDEA?programme-ideas-claude-09 — Two-index Sturm counts, bisection and relative perturbation for commuting banded pairs
+
+Final ID: **IDEA-198** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
 
 Aliases: Joint spectral theory of banded commuting pairs: two-index Sturm counts, bisection, relative perturbation, and certified joint spectra of nearly commuting sections (working title); IDEA?programme-ideas-claude-2-3; joint inertia count; two-index Sylvester law; 2-D bisection for commuting pairs; bivariate Demmel–Kahan; certified joint spectra of nearly commuting sections; Sturm object for pairs.
 
@@ -203,6 +219,8 @@ Aliases: Joint spectral theory of banded commuting pairs: two-index Sturm counts
 
 # IDEA?programme-ideas-claude-10 — Bivariate comrade pencils: rectangular two-parameter pencils from recurrence blocks
 
+Final ID: **IDEA-199** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 Aliases: The √N-size inverse problem: rectangular two-parameter pencils from the top recurrence blocks, their conditioning, normal forms and stable node extraction (working title); IDEA?programme-ideas-claude-2-4; merged into M2 (gate §3 Cluster B); Hilbert–Burch pencil from recurrences; inverse rectangular MEP; bivariate colleague/comrade pencil; √N-size IEP; staircase normal form of rectangular pencils; X3(ii) developed.
 
 - Question / scope: whether the N×N pair of a unisolvent node set can be replaced, for node recovery, updating and conditioning, by an (n+2)×(n+1) linear rectangular two-parameter pencil built from the top recurrence blocks, with a two-sided unitary staircase normal form, a conditioning theory of its rank-drop points, and stable extraction; d = 2, N = dim Π_n first.
@@ -223,6 +241,8 @@ Aliases: The √N-size inverse problem: rectangular two-parameter pencils from t
 - Topic / audit / history: programme-ideas-20261031; gen2-draft-4 (angle B, 2026-10-31, note-size flagged by the generator); gate MERGE → M2 (2026-11-01); adversarial-M2.md (ii)(6) (2026-11-01); Step 6a record.
 
 # IDEA?programme-ideas-claude-11 — Discrete OPs of sampled trajectory measures and reconstruction from spectral data along non-Lissajous curves
+
+Final ID: **IDEA-200** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
 
 Aliases: Discrete orthogonal polynomials of sampled trajectory measures: recovering bivariate polynomial information from data along a closed curve (working title); IDEA?programme-ideas-claude-3-1; curve-supported discrete measures; trajectory measures; non-Lissajous scanning trajectories; Fourier-along-a-curve reconstruction; restriction operator Π_n → L²(γ, dt); Hilbert function of a sampled trigonometric curve; pulled-back Szegő/Laurent problem; MPI beyond Lissajous.
 
@@ -245,6 +265,8 @@ Aliases: Discrete orthogonal polynomials of sampled trajectory measures: recover
 
 # IDEA?programme-ideas-claude-12 — Phase-space design theory for CV tomography in the Gaussian-weighted bivariate polynomial model
 
+Final ID: **IDEA-201** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 Aliases: Phase-space design theory for continuous-variable quantum tomography: Padua points versus structured designs in the Gaussian-weighted bivariate polynomial model (working title); IDEA?programme-ideas-claude-3-2; Padua-point tomography; Husimi-Q / Wigner interpolation; Landon-Cardinal–Govia–Clerk 2018; Gaussian-weighted bivariate Vandermonde; truncated-Fock sensing matrix; phase-space sampling design; Gauss–Laguerre ring designs; optimal displacement amplitudes; Fock-cutoff conditioning.
 
 - Question / scope: conditioning and optimality of finite phase-space designs for the linear map ρ ↦ Q(α_i) (and Wigner, Q_n) in the truncated Fock model with cutoff N; single mode first, multimode as escalation; the role of the Padua design of the 2018 PRL.
@@ -265,6 +287,8 @@ Aliases: Phase-space design theory for continuous-variable quantum tomography: P
 - Topic / audit / history: programme-ideas-20261031; gen3-draft-2 (angle C, 2026-10-31, returned); gate DEFER (2026-11-01); Step 6a record.
 
 # IDEA?programme-ideas-claude-13 — Boundary-polynomial operator calculus and spectral methods on arbitrary algebraic domains with numerically generated OPs
+
+Final ID: **IDEA-202** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
 
 Aliases: Total-degree spectral methods on arbitrary planar algebraic domains with numerically generated orthogonal polynomials: the boundary-polynomial operator calculus (working title); IDEA?programme-ideas-claude-3-3; π-weighted differentiation; boundary-polynomial calculus; semiclassical structure relation for numerically generated bivariate OPs; weighted trial spaces π·Π_n; spectral methods on polygons / non-Koornwinder domains; conversion operators between dμ and π²dμ; fast transforms for discrete bivariate OPs.
 
@@ -287,6 +311,8 @@ Aliases: Total-degree spectral methods on arbitrary planar algebraic domains wit
 
 # IDEA?programme-ideas-claude-14 — Stochastic Galerkin spectral bounds for dependent inputs via bivariate recurrence sections
 
+Final ID: **IDEA-203** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 Aliases: Stochastic Galerkin with dependent inputs: spectral bounds of Galerkin matrices built from truncated bivariate recurrence matrices (working title); IDEA?programme-ideas-claude-3-4; data-driven PCE on dependent/discrete measures; aPC in several variables; stochastic Galerkin matrices for non-product measures; Ernst–Ullmann bounds in two parameters; Kronecker sums of non-commuting recurrence sections.
 
 - Question / scope: eigenvalue bounds for I⊗A₀ + H_x⊗A₁ + H_y⊗A₂ with (H_x, H_y) truncated bivariate recurrence sections of a dependent (possibly sample-based) measure; preconditioning; sample-generated bases.
@@ -307,6 +333,8 @@ Aliases: Stochastic Galerkin with dependent inputs: spectral bounds of Galerkin 
 - Topic / audit / history: programme-ideas-20261031; gen3-draft-4 (angle C, 2026-10-31, not returned, handed to angle B); gate DEFER (2026-11-01); Step 6a record.
 
 # IDEA?programme-ideas-claude-15 — Christoffel functions and certified approximate border bases from one recurrence
+
+Final ID: **IDEA-204** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
 
 Aliases: Vanishing-ideal learning with a backward-certified ideal: Christoffel functions and approximate border bases as one object (working title); IDEA?programme-ideas-claude-3-5; approximate vanishing ideals (AVI/ABM/OAVI/VCA); Christoffel outlier detection; gradient-weighted border bases; streaming Christoffel; whole-ideal certificate; Buchberger–Möller residual ratios.
 
@@ -329,6 +357,8 @@ Aliases: Vanishing-ideal learning with a backward-certified ideal: Christoffel f
 
 # IDEA?programme-ideas-claude-16 — Constrained equilibrium for discrete bivariate OPs (grids saturate, Padua does not)
 
+Final ID: **IDEA-205** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 Aliases: Constrained equilibrium for discrete bivariate OPs: saturation on grids, no saturation on Padua (working title); IDEA?programme-ideas-claude-4-1; saturation layer; constrained equilibrium on Padua; discrete bivariate OP asymptotics; Uvarov boundary layer; multivariate Coppersmith–Rivlin; joint Ritz limit law; equal-vs-cubature weights at degree ≈ n.
 
 - Question / scope: asymptotics (Christoffel function, block-Jacobi sections, joint Ritz values, sup-norm growth) of total-degree discrete OPs at degree k = θn on planar equal-weight node sets; equispaced (n+1)² grids as the saturating case, Padua / Chebyshev lattices as the non-saturating reference; 2D, real nodes.
@@ -349,6 +379,8 @@ Aliases: Constrained equilibrium for discrete bivariate OPs: saturation on grids
 - Topic / audit / history: programme-ideas-20261031; gen4-draft-1 (angle D, 2026-10-31, re-centred 2026-11-01); gate PASS (gate.md §1, §2, §3, §5.8); adversarial-gen4-1.md KILLED (ii)/(iii) (2026-11-01); Step 6a record. Correction: Kuijlaars's Ritz-value paper is SIMAX 22 (2000), not Numer. Math.
 
 # IDEA?programme-ideas-claude-18 — Symmetric commuting extensions as bivariate Gauss–Christoffel theory
+
+Final ID: **IDEA-207** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
 
 Aliases: Symmetric commuting extensions as the Gauss–Christoffel theory of bivariate cubature: lower bounds, uniqueness, Christoffel numbers (working title); IDEA?programme-ideas-claude-4-3; merged into M1 (gate §3 Cluster A); commuting extensions; Möller lower bound via commutator rank; Christoffel numbers of minimal cubature; near-minimal cubature IEP; block-Jacobi completion; Padua as sparse extension; cubature node lower bounds d = 2, 3.
 
@@ -371,6 +403,8 @@ Aliases: Symmetric commuting extensions as the Gauss–Christoffel theory of biv
 
 # IDEA?programme-ideas-claude-19 — Explicit stable least-squares designs from Padua arrays (uniform measure)
 
+Final ID: **IDEA-208** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 Aliases: Explicit O(dim) stable least-squares designs on the square: Chebyshev-lattice arrays as a deterministic sampling theory (working title); IDEA?programme-ideas-claude-4-4; deterministic Christoffel sampling; Padua arrays as designs; density-reweighted Padua; linear oversampling; weighted MZ for Padua vs Legendre.
 
 - Question / scope: an explicit closed-form family of M = O(dim Π_n) points with weights on [−1,1]² for which weighted least squares in Π_n is provably stable (Gram spectrum in [1−η, 1+η]) for the uniform (Legendre) measure — the deterministic counterpart of the Dolbeault–Krieg–Ullrich O(n) sampling bound.
@@ -391,6 +425,8 @@ Aliases: Explicit O(dim) stable least-squares designs on the square: Chebyshev-l
 - Topic / audit / history: programme-ideas-20261031; gen4-draft-4 (angle D, 2026-11-01, not returned); gate REJECT (2026-11-01); Step 6a record.
 
 # IDEA?programme-ideas-claude-20 — Padua asymptotically Fekete / weighted-Fekete stationarity
+
+Final ID: **IDEA-209** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
 
 Aliases: Padua points are asymptotically Fekete, Dubiner-equidistributed and weighted-Fekete-stationary: closing the deduction gap (working title); IDEA?programme-ideas-claude-4-5; absorbed into gen4-draft-2 sub-problem 4 (IDEA-17; gate §3 Cluster F); asymptotically Fekete Padua; Dubiner equidistribution conjecture; weighted Fekete stationarity; Padua gradient of log det.
 
@@ -413,6 +449,8 @@ Aliases: Padua points are asymptotically Fekete, Dubiner-equidistributed and wei
 
 # IDEA?programme-ideas-claude-03 — Bivariate orthogonal rational functions with pencil-pair recurrences
 
+Final ID: **IDEA-192** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
+
 Aliases: Bivariate orthogonal rational functions: which nested pole structures admit short recurrences, their pencil IEPs, and rational least squares/Krylov in two variables (working title); IDEA?programme-ideas-claude-1-3; bivariate ORFs; linear-pole-per-degree spaces Π_n/π_n; pencil-pair IEP (H_x,K_x), (H_y,K_y); windowed rational Lanczos; bivariate lightning least squares; rational Krylov for commuting pairs; three-block window (refuted form); "project two, constrain one" step. Record appended by Step 6b (Model: claude-fable-5-1, effort xhigh, 2026-11-01).
 
 - Question / scope: for a discrete inner product on nodes in ℝ²/ℂ² and nested rational spaces with one prescribed linear pole per degree (product poles and pole curves excluded by the gate), which pole structures give a graded short recurrence encoded by a generalized-Hessenberg pencil pair sharing one unitary Q, how to compute it by a unitary IEP or a windowed two-operator rational Lanczos at O(MN^{3/2}), and what rational least squares (BHH-type corner/curve singularities) and rational Krylov for commuting pairs gain.
@@ -433,6 +471,8 @@ Aliases: Bivariate orthogonal rational functions: which nested pole structures a
 - Topic / audit / history: programme-ideas-20261031; gen1-draft-3 (angle A, 2026-10-31, returned); gate PASS with conditions (gate.md §1, §2, §5.5, §8); adversarial-gen1-3.md WOUNDED (2026-11-01); decisive-gen1-3.md RESIDUE KILLED (2026-11-01); Step 6b record (report.md §1 row 2).
 
 # IDEA?programme-ideas-claude-17 — Lebesgue theory of checkerboard (Padua-type) interpolation
+
+Final ID: **IDEA-206** (allocated 2026-11-01 under AC's authorisation; the provisional ID above and in the text is retained as provenance — see ID_CROSSWALK.md).
 
 Aliases: Lebesgue theory of checkerboard (Padua-type) interpolation: second-order term, maxima geometry, and Fekete nodes within the family (working title); IDEA?programme-ideas-claude-4-2; Padua second-order term; corner argmax; corner expansion constants b, c, κ; certified crease-aware maxima counting; Lissajous-cell count (refuted mechanism); square lower bound (4/π²) log² n (refuted route); rhombus Dirichlet kernel; Padua–Jacobi / checkerboard Fekete (absorbs IDEA-20's negative note); proposal-1. Record appended by Step 6b (Model: claude-fable-5-1, effort xhigh, 2026-11-01).
 

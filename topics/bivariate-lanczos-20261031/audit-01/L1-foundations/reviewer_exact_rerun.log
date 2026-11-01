@@ -1,0 +1,36 @@
+[   0.0s] # rv_exact_checks.py  python 3.12.14  sympy 1.14.0  seed 31102026
+[   0.2s] T-101 supports [generic rational nodes, M=30, random integer weights] n=4: entries outside derived support = 385, nonzero among them = 0
+[   0.4s] T-101 part 5 (implicit J-column identity) and exact window of F-products: mismatches = 0
+[   0.4s] T-101 supports [repeated x-coordinates]:  breakdown at (4, 0) (U(n+1) violated, recurrence breaks down as the theorem's hypothesis requires)
+[   0.4s] T-101 supports [repeated x-coordinates (4 distinct x), M=30, n=2 (U(3) holds)] n=2: entries outside derived support = 55, nonzero among them = 0
+[   0.4s] T-101 supports [M = N_4 = 15 generic nodes (square case), n=3] n=3: entries outside derived support = 164, nonzero among them = 0
+[   0.5s] T-103 identity, 5 random rational instances: max |lhs - rhs| = 0
+[   0.5s] T-103 identity, 2 random rational instances (bandwidth hypothesis deliberately violated): max |lhs - rhs| = 10249579529/8587340257
+[   0.7s] T-103 identity, complex-symmetric instance (bilinear): lhs - rhs = 0
+[   0.7s] T-104 part 3 (commutator-residual recursion), rational simulated run n=4, M=24: mismatches = 0
+[   0.8s] T-104 part 1 (node-row relation L(z_i) xi = xi_0 e_0 - phi), all nodes: mismatches = 0
+[   1.1s] T-106 omega-recurrence, same run: 155 (l,k) pairs checked, mismatches = 0
+[   1.1s] T-105 part 1, 5x5 rational tensor grid, product weights, n<=4: nonzero within-degree couplings = 0, other off-chain = 0
+[   1.1s] T-105 part 3 control, same grid sheared y -> y + x/2: nonzero within-degree couplings = 10
+[   1.2s] T-105 part 3 control, product grid with non-product weights (2 + x y): nonzero within-degree couplings = 20
+[   1.2s] T-105 impulse-response formula (mpmath 50 digits, 6-point measure, eta=0.3): max error = 2.6728e-51
+[   1.2s] T-401 Lemma 5 exact rank, M=40 generic rational nodes, n=1, A=X: codim(S_n cap A S_n in S_n) = 2 (affine prediction n+1 = 2)
+[   1.2s] T-401 Lemma 5 exact rank, M=40 generic rational nodes, n=1, A=0.6X+0.8Y+0.3: codim(S_n cap A S_n in S_n) = 2 (affine prediction n+1 = 2)
+[   1.2s] T-401 Lemma 5 exact rank, M=40 generic rational nodes, n=1, A=X^2+Y: codim(S_n cap A S_n in S_n) = 3 (affine prediction n+1 = 2)
+[   1.2s] T-401 Lemma 5 exact rank, M=40 generic rational nodes, n=2, A=X: codim(S_n cap A S_n in S_n) = 3 (affine prediction n+1 = 3)
+[   1.2s] T-401 Lemma 5 exact rank, M=40 generic rational nodes, n=2, A=0.6X+0.8Y+0.3: codim(S_n cap A S_n in S_n) = 3 (affine prediction n+1 = 3)
+[   1.2s] T-401 Lemma 5 exact rank, M=40 generic rational nodes, n=2, A=X^2+Y: codim(S_n cap A S_n in S_n) = 5 (affine prediction n+1 = 3)
+[   1.2s] T-401 Lemma 5 exact rank, M=40 generic rational nodes, n=3, A=X: codim(S_n cap A S_n in S_n) = 4 (affine prediction n+1 = 4)
+[   1.2s] T-401 Lemma 5 exact rank, M=40 generic rational nodes, n=3, A=0.6X+0.8Y+0.3: codim(S_n cap A S_n in S_n) = 4 (affine prediction n+1 = 4)
+[   1.2s] T-401 Lemma 5 exact rank, M=40 generic rational nodes, n=3, A=X^2+Y: codim(S_n cap A S_n in S_n) = 7 (affine prediction n+1 = 4)
+[   1.3s] T-401 Lemma 5 exact rank, M=40 generic rational nodes, n=4, A=X: codim(S_n cap A S_n in S_n) = 5 (affine prediction n+1 = 5)
+[   1.3s] T-401 Lemma 5 exact rank, M=40 generic rational nodes, n=4, A=0.6X+0.8Y+0.3: codim(S_n cap A S_n in S_n) = 5 (affine prediction n+1 = 5)
+[   1.3s] T-401 Lemma 5 exact rank, M=40 generic rational nodes, n=4, A=X^2+Y: codim(S_n cap A S_n in S_n) = 9 (affine prediction n+1 = 5)
+[   1.3s] T-401 hypothesis necessity, nodes on 2 vertical lines (U(2) fails), n=1: dim S_n=3, dim B_(n,1)(Y,[q0,Xq0])=3, dim sum=3 -> equal: True
+[   1.3s] T-401 hypothesis necessity, nodes on 2 vertical lines (U(2) fails), n=2: dim S_n=5, dim B_(n,1)(Y,[q0,Xq0])=5, dim sum=5 -> equal: True
+[   1.3s] T-401 hypothesis necessity, nodes on 2 vertical lines (U(2) fails), n=3: dim S_n=7, dim B_(n,1)(Y,[q0,Xq0])=7, dim sum=7 -> equal: True
+[   1.3s] T-401 hypothesis necessity, nodes on 2 vertical lines (U(2) fails), n=4: dim S_n=9, dim B_(n,1)(Y,[q0,Xq0])=9, dim sum=9 -> equal: True
+[   1.3s] T-401 hypothesis necessity, nodes on 2 vertical lines (U(2) fails), n=5: dim S_n=11, dim B_(n,1)(Y,[q0,Xq0])=11, dim sum=11 -> equal: True
+[   1.3s] T-401 strengthening check, generic nodes n=1: dim(S_n + X S_n) = 5, N_n + n + 1 = 5, N_(n+1) = 6
+[   1.3s] T-401 strengthening check, generic nodes n=2: dim(S_n + X S_n) = 9, N_n + n + 1 = 9, N_(n+1) = 10
+[   1.4s] T-401 strengthening check, generic nodes n=3: dim(S_n + X S_n) = 14, N_n + n + 1 = 14, N_(n+1) = 15

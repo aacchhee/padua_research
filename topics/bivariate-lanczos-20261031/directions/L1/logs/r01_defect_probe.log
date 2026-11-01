@@ -1,0 +1,15 @@
+square (product)                   n4:L=7e-15,d=1e-15 n8:L=7e-15,d=8e-16 n12:L=7e-15,d=1e-15 n16:L=7e-15,d=2e-15 n20:L=1e-14,d=3e-15 n24:L=8e-14,d=1e-14
+square rotated 0.050               n4:L=7e-15,d=9e-16 n8:L=7e-15,d=9e-16 n12:L=7e-15,d=2e-15 n16:L=7e-15,d=5e-15 n20:L=2e-14,d=2e-14 n24:L=2e-13,d=1e-13
+square rotated 0.300               n4:L=7e-15,d=9e-16 n8:L=7e-15,d=4e-15 n12:L=2e-13,d=1e-13 n16:L=4e-11,d=1e-11 n20:L=1e-08,d=3e-09 n24:L=5e-06,d=9e-07
+square rotated 0.785               n4:L=7e-15,d=7e-16 n8:L=4e-14,d=1e-14 n12:L=6e-12,d=2e-12 n16:L=2e-09,d=7e-10 n20:L=2e-06,d=7e-07 n24:L=4e-03,d=9e-04
+square rotated 1.571               n4:L=7e-15,d=2e-15 n8:L=7e-15,d=8e-16 n12:L=7e-15,d=1e-15 n16:L=7e-15,d=2e-15 n20:L=9e-15,d=7e-15 n24:L=6e-14,d=4e-14
+square, x<->y swapped              n4:L=7e-15,d=2e-15 n8:L=7e-15,d=8e-16 n12:L=7e-15,d=1e-15 n16:L=7e-15,d=2e-15 n20:L=7e-15,d=6e-15 n24:L=4e-14,d=3e-14
+disk                               n4:L=7e-15,d=1e-15 n8:L=9e-15,d=1e-15 n12:L=3e-13,d=2e-14 n16:L=7e-12,d=5e-13 n20:L=2e-10,d=1e-11 n24:L=1e-08,d=7e-10
+product x~U, y~Beta(.5,2)          n4:L=7e-15,d=1e-15 n8:L=7e-15,d=9e-16 n12:L=7e-15,d=1e-15 n16:L=1e-13,d=3e-15 n20:L=4e-12,d=2e-14 n24:L=3e-10,d=3e-13
+product, rotated 0.3               n4:L=7e-15,d=1e-15 n8:L=2e-14,d=1e-14 n12:L=4e-12,d=5e-13 n16:L=2e-09,d=5e-11 n20:L=2e-06,d=2e-08 n24:L=2e-02,d=3e-06
+triangle                           n4:L=7e-15,d=2e-15 n8:L=9e-12,d=2e-13 n12:L=5e-08,d=2e-10 n16:L=3e-03,d=8e-07 n20:L=1e+00,d=3e-03 n24:L=1e+00,d=1e-01
+square, weights exp(x)exp(y) (product) n4:L=1e-15,d=1e-15 n8:L=3e-15,d=9e-16 n12:L=4e-15,d=1e-15 n16:L=8e-15,d=2e-15 n20:L=3e-14,d=3e-15 n24:L=2e-13,d=1e-14
+square, weights exp(x*y) (non-product) n4:L=9e-16,d=1e-15 n8:L=1e-15,d=8e-16 n12:L=2e-15,d=1e-15 n16:L=5e-15,d=1e-15 n20:L=3e-14,d=3e-15 n24:L=2e-13,d=1e-14
+square rotated 0.3, HL exact/orth  n4:L=7e-15,d=8e-16 n8:L=7e-15,d=5e-15 n12:L=2e-13,d=1e-13 n16:L=5e-11,d=1e-11 n20:L=2e-08,d=4e-09 n24:L=7e-06,d=1e-06
+square sheared (x, y+0.5x)         n4:L=7e-15,d=1e-15 n8:L=4e-14,d=5e-14 n12:L=5e-12,d=5e-12 n16:L=6e-10,d=5e-10 n20:L=9e-08,d=6e-08 n24:L=1e-05,d=1e-05
+square sheared (x+0.5y, y)         n4:L=7e-15,d=2e-15 n8:L=2e-13,d=4e-14 n12:L=1e-10,d=2e-11 n16:L=2e-05,d=4e-08 n20:L=2e-01,d=1e-03 n24:L=1e+00,d=2e-01
