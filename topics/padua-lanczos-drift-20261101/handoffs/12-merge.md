@@ -1,6 +1,6 @@
 # Handoff 12 — padua-lanczos-drift-20261101 — AC merge decision for PR15, then topic closure
 
-- Status: open
+- Status: superseded by 13: AC finalization order (PR15 merges before PR12), 2026-11-01 20:55 CET
 - Previous handoff: [11-pr-preparation.md](11-pr-preparation.md), done in `51315a33d426bd0abce9af79f9692b3d22585709`.
 - Next agent / model / effort: **AC** for the merge decision. After the merge, Claude Sonnet 5.5 medium does the mechanical closure.
 - Role: AC (merge); afterwards, topic orchestrator (closure)
