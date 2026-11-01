@@ -95,3 +95,21 @@ F6 uses new dated receipts, retaining every old receipt and all auditor outputs.
 Audit-01 explicitly permits these listed text remedies to proceed without another audit. No wider mathematical edit triggers its focused-recheck condition. Stage PR records accepted scientific scope, not approval to merge: PR14 remains draft. Live summary paragraphs and PR14 WORK/AUDIT/PR sections are synchronized; historical PENDING paragraphs in frozen/historical records remain provenance.
 
 The concrete next integration actions for either AC-selected order are in [readiness-plan-01.md](readiness-plan-01.md). No order is assumed, no foreign branch is edited, and no merge is requested. Source-version gaps and Windows delivery remain open limitations. Commit response outputs first; then publish handoff04 in the separate required transition commit, changing only handoff03's status and preserving its instruction body.
+
+## 2026-11-01 — AC merge order: PR14 first (handoff 04)
+
+AC chose the merge order: "pr14 first" (16:12 Europe/Oslo). Claude, Opus 5.5 xhigh, acted as topic orchestrator for handoff 04, with rules unchanged at `806cc7b`. This is not an instruction to mark PR14 ready or to merge it.
+
+- **Audit addendum.** The topic branch was fast-forwarded to Claude's audit-01 Addendum A1 (`4893abb`), which certifies m40 with auditor code. It adds auditor-owned files only.
+- **Fresh heads.** main `806cc7b` (unchanged, already an ancestor); PR12 `6c6e484`; PR15 `fa5835f`; no closed-unmerged PRs.
+- **Integration check.** Receipt: [integration-pr14-first-20261101.json](protocol/integration-pr14-first-20261101.json).
+  - Code, evidence and paper are unchanged since the audited candidate `e847601`.
+  - Theory changes are only the response's F1/F2 edits, and the F1 proof is byte-identical. Status cells are unchanged (17/2/3).
+  - The original audit-01 text is an exact prefix of the current file.
+  - Registries hold unique IDs; no other PR collides with our ranges; all 13 A2 pins are unchanged.
+  - 2,467 local links pass, and the size limits hold.
+- **Squash rehearsal (disposable).**
+  - PR14 squashes cleanly onto main, with an identical tree (`f850c3b`).
+  - PR12 then applies cleanly.
+  - PR15 then conflicts only in ID_CROSSWALK.md and the batch ledger. That reconciliation belongs to the PR15 orchestrator after PR14 merges, per [readiness-plan-01.md](readiness-plan-01.md).
+- **Ledger.** The order was recorded in the batch ledger. PR14 stays draft until AC instructs otherwise; only AC merges.
