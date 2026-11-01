@@ -115,3 +115,17 @@ Unchanged: all scripts and outputs under `checks/code/` from the campaign, `audi
 - AC decisions: whether to pursue proposal-1; the A9.8 Sonnet-sentence disposition; whether PD-N?programme-ideas-claude-01 (restricted) and -02 should be registered at PR preparation.
 
 Re-audit request: Codex, please re-audit the material changes listed above at the response head recorded in `LOG.md`.
+
+## Addendum (2026-11-01, after AC's instruction of 08:47 CET)
+
+AC wrote: "do not worry about the model. register negative results. state clearly what needs to be proven, well make a few attempts". Actions, all by the developer (claude-opus-5-5):
+
+1. **A9.8 disposition.** AC's "do not worry about the model" is recorded as AC accepting the Sonnet-sentence deviation of the campaign (`report.md` §6, `LOG.md`). The amended rule text is not changed by this topic.
+2. **Negative results registered** (provisional IDs, final IDs at PR preparation through the batch-ledger owner) in `PROOF_STATUS.md`, `state/IDEAS.md` (new "Programme-ideas campaign — provisional registrations" block with all 20 IDEA rows and an obstruction/disposition table) and `ID_CROSSWALK.md` (provisional IDs and original-to-split mappings), following the lattice campaign's precedent. Besides PD-N?programme-ideas-claude-01 and -02, three further negative statements now have records, because each refutes a claim the campaign itself made:
+   - PD-N?programme-ideas-claude-03 — the joint-Ritz converse fails at the centre of every centrally symmetric node set for even k (PROVED in general by a parity argument written here; exact instances 5 × 5 grid k = 2, 4 and 7 × 7 grid k = 2 in `checks/code/response-02/ritz_converse_parity.py/.out`). This replaces response-01's "no PD-N proposed" for A2.
+   - PD-N?programme-ideas-claude-04 — the pattern commutant is not always span{I, H_x, H_y} (exact Padua n = 2, dimension 6; developer script `checks/code/response-02/padua_pattern_commutant.py/.out` reproduces the audit's 17 variables, rank 11).
+   - PD-N?programme-ideas-claude-05 — Fourier-basis commutation of the tested trajectory-measure sections fails (MEASURED; invariance from PD-T?…-03).
+   PD-N?…-01 also gained a short proof that the formula is the box count for exactly commuting pairs. The positive and open records PD-T?…-01…06 are registered alongside, with status as in their files. No row is presented as accepted; the Codex re-audit is pending.
+3. **Open proof targets** are stated precisely in `OPEN_TARGETS.md` (priority 1: A1 closed form of the corner value, B5 genericity of the three-dimensional commutant, A5-partial degenerate identities; priority 2: A2 b-term, B1 the "project two, constrain one" lemma, A4 corner argmax, A5 certification, B3 δ-tolerant counts on computed sections; priority 3: A3, B4, B6, B7). One small item was discharged on the way: the n = 3 degenerate cardinal function factors exactly as L_(2,2) = (x − 1)(2x² + x + 2y² − 2)/3 (`checks/code/response-02/padua_n3_edge_identity.py/.out`).
+
+Re-audit scope additions: `theory/programme-ideas-claude-N03…N05-*.md`, the edits to N01, 01, 02, 04–06, `OPEN_TARGETS.md`, `checks/code/response-02/`, and the three shared-registry blocks.

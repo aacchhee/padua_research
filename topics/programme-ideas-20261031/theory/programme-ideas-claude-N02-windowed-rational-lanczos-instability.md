@@ -60,7 +60,9 @@ A MEASURED failure of the tested implementations on the tested settings; it does
 
 ## Open items
 
-The untested alternatives listed above; a proof of (ii)'s exact-block statement.
+The untested alternatives listed above; a proof of (ii)'s exact-block statement (`OPEN_TARGETS.md` B1).
+
+Registered (provisional ID) in `PROOF_STATUS.md` and `state/IDEAS.md` by the response-01 addendum at AC's instruction "register negative results" (2026-11-01).
 
 ## History
 

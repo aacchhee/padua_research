@@ -68,6 +68,8 @@ The six counts are what this search found. They are not certified, and no correc
 
 ## Open items
 
+Precise targets: `../OPEN_TARGETS.md` A5-partial (degenerate identities; the n = 3 cardinal function L_(2,2) = (x − 1)(2x² + x + 2y² − 2)/3 is now exact, `checks/code/response-02/padua_n3_edge_identity.py`) and A5 (the five certification obligations).
+
 Certification (Runs needed above). The code is Padua-specific (`LebDense` uses Padua kernel weights; the degenerate-point handlers use the Padua square/corner/node geometry); extension to other node families is planned, not implemented.
 
 ## History

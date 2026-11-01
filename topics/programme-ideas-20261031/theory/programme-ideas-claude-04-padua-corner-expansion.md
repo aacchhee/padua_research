@@ -56,6 +56,8 @@ Padua points, corner value only. No claim about the global maximum (see `PD-T?pr
 
 ## Open items
 
+Precise targets: `../OPEN_TARGETS.md` A1 (closed form of the corner value), A2 (the b-term), A3 (full expansion and κ).
+
 Proof of the expansion (or of the b-term alone); rigorous evaluation of Λ_c(n) with error bounds; identification or characterisation of κ; full reading of Kolomoitsev–Lomako 2021 to see whether their method yields the second term.
 
 ## History

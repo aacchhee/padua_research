@@ -298,3 +298,32 @@ All provisional reservations are enumerated below and in [provisional-id-map.jso
 | LIT?lattice-codex-30 | Unallocated, AC requested provisional IDs | codex/lattice-unisolvence-20261031; root orchestrator | [record](literature/lattice-unisolvence/records/sorevik-nome-2016.md) | [shared ledger](topics/padua-batch-20261031/ALLOCATIONS.md); Claude audit-01 accepted declared scopes; source-coverage limits unchanged |
 | LIT?lattice-codex-15 | Unallocated, AC requested provisional IDs | codex/lattice-unisolvence-20261031; root orchestrator | [record](literature/lattice-unisolvence/records/xu-1996.md) | [shared ledger](topics/padua-batch-20261031/ALLOCATIONS.md); Claude audit-01 accepted declared scopes; source-coverage limits unchanged |
 | LIT?lattice-codex-28 | Unallocated, AC requested provisional IDs | codex/lattice-unisolvence-20261031; root orchestrator | [record](literature/lattice-unisolvence/records/xu-2024.md) | [shared ledger](topics/padua-batch-20261031/ALLOCATIONS.md); Claude audit-01 accepted declared scopes; source-coverage limits unchanged |
+
+## Programme-ideas campaign — provisional registrations
+
+Provisional theory/negative-result IDs of `claude/programme-ideas-20261031` (response-01 addendum, 2026-11-01). The 20 provisional IDEA and 111 provisional LIT IDs of the campaign are listed in `topics/programme-ideas-20261031/ideas/candidates.md` and `lit/baseline.md`; they are also unallocated.
+
+| Provisional ID | Final ID | Source branch / commit | Canonical file | Allocating PR / batch |
+|---|---|---|---|---|
+| PD-T?programme-ideas-claude-01 | Unallocated; final ID at PR preparation | claude/programme-ideas-20261031; developer response-01 | [record](topics/programme-ideas-20261031/theory/programme-ideas-claude-01-finite-favard-pattern-pairs.md) | [shared ledger](topics/padua-batch-20261031/ALLOCATIONS.md); re-audit pending |
+| PD-T?programme-ideas-claude-02 | Unallocated; final ID at PR preparation | claude/programme-ideas-20261031; developer response-01 | [record](topics/programme-ideas-20261031/theory/programme-ideas-claude-02-joint-ritz-saturation-bound.md) | [shared ledger](topics/padua-batch-20261031/ALLOCATIONS.md); re-audit pending |
+| PD-T?programme-ideas-claude-03 | Unallocated; final ID at PR preparation | claude/programme-ideas-20261031; developer response-01 | [record](topics/programme-ideas-20261031/theory/programme-ideas-claude-03-compressed-commutator-identity.md) | [shared ledger](topics/padua-batch-20261031/ALLOCATIONS.md); re-audit pending |
+| PD-T?programme-ideas-claude-04 | Unallocated; final ID at PR preparation | claude/programme-ideas-20261031; developer response-01 | [record](topics/programme-ideas-20261031/theory/programme-ideas-claude-04-padua-corner-expansion.md) | [shared ledger](topics/padua-batch-20261031/ALLOCATIONS.md); re-audit pending |
+| PD-T?programme-ideas-claude-05 | Unallocated; final ID at PR preparation | claude/programme-ideas-20261031; developer response-01 | [record](topics/programme-ideas-20261031/theory/programme-ideas-claude-05-padua-corner-argmax.md) | [shared ledger](topics/padua-batch-20261031/ALLOCATIONS.md); re-audit pending |
+| PD-T?programme-ideas-claude-06 | Unallocated; final ID at PR preparation | claude/programme-ideas-20261031; developer response-01 | [record](topics/programme-ideas-20261031/theory/programme-ideas-claude-06-padua-lebesgue-maxima-counts.md) | [shared ledger](topics/padua-batch-20261031/ALLOCATIONS.md); re-audit pending |
+| PD-N?programme-ideas-claude-01 | Unallocated; final ID at PR preparation | claude/programme-ideas-20261031; developer response-01 | [record](topics/programme-ideas-20261031/theory/programme-ideas-claude-N01-symmetrised-product-inertia-count.md) | [shared ledger](topics/padua-batch-20261031/ALLOCATIONS.md); re-audit pending |
+| PD-N?programme-ideas-claude-02 | Unallocated; final ID at PR preparation | claude/programme-ideas-20261031; developer response-01 | [record](topics/programme-ideas-20261031/theory/programme-ideas-claude-N02-windowed-rational-lanczos-instability.md) | [shared ledger](topics/padua-batch-20261031/ALLOCATIONS.md); re-audit pending |
+| PD-N?programme-ideas-claude-03 | Unallocated; final ID at PR preparation | claude/programme-ideas-20261031; developer response-01 | [record](topics/programme-ideas-20261031/theory/programme-ideas-claude-N03-joint-ritz-converse-refuted.md) | [shared ledger](topics/padua-batch-20261031/ALLOCATIONS.md); re-audit pending |
+| PD-N?programme-ideas-claude-04 | Unallocated; final ID at PR preparation | claude/programme-ideas-20261031; developer response-01 | [record](topics/programme-ideas-20261031/theory/programme-ideas-claude-N04-pattern-commutant-not-three-dimensional.md) | [shared ledger](topics/padua-batch-20261031/ALLOCATIONS.md); re-audit pending |
+| PD-N?programme-ideas-claude-05 | Unallocated; final ID at PR preparation | claude/programme-ideas-20261031; developer response-01 | [record](topics/programme-ideas-20261031/theory/programme-ideas-claude-N05-fourier-basis-commutation-fails.md) | [shared ledger](topics/padua-batch-20261031/ALLOCATIONS.md); re-audit pending |
+
+Original-to-split mappings (all originals were unregistered claims in campaign files at `614709d`):
+
+| Original claim (file at `614709d`) | Split into |
+|---|---|
+| `report.md` §3 row "Finite Favard … commutant in the pattern = span{I, H_x, H_y}" | PD-T?programme-ideas-claude-01 (Favard, PROVED); PD-N?programme-ideas-claude-04 (universal commutant refuted); commutant observation on random instances kept MEASURED with IDEA?programme-ideas-claude-08 |
+| `checks/adversarial-gen4-1.md` (ii)(c) "joint-Ritz ⟺ saturation, residual ≤ 2√(1−s) and ≍ √(1−s)" | PD-T?programme-ideas-claude-02 (bound, PROVED); PD-N?programme-ideas-claude-03 (converse refuted) |
+| `checks/adversarial-gen3-1.md` (iii) identity "… and nonzero whenever K_n ≠ ℂ^M" | PD-T?programme-ideas-claude-03 (identity, PROVED); PD-N?programme-ideas-claude-05 (Fourier-basis commutation refuted on the tested instances); nonvanishing clause withdrawn |
+| `checks/decisive-gen4-2.md` T1–T3 and Verdict | PD-T?programme-ideas-claude-04 (expansion, OPEN), -05 (argmax, OPEN), -06 (counts, MEASURED) |
+| `checks/adversarial-gen2-3.md` salvage "no δ-only certificate for computed sections beyond √δ" | PD-N?programme-ideas-claude-01 (restricted to the symmetrised-product count on symmetric pairs; broad claim withdrawn) |
+| `checks/decisive-gen1-3.md` Verdict "the O(MN^{3/2}) solver does not exist" | PD-N?programme-ideas-claude-02 (tested implementations only) |

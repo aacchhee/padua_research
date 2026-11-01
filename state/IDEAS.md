@@ -455,3 +455,42 @@ The following conceptual IDEA records inherit uniquely keyed parameter rows for 
 | [PD-N?lattice-c3-codex-04](../tracks/lattice-unisolvence/theory/c3-rectangle-observations.md) | Exact axis-separation rectangle obstructions in finite degrees | MEASURED; no universal conclusion beyond written scope |
 
 The C1 parity-adapted family is retained OPEN: original singular phases do not reject escaped phases. The unbounded3D target remains OPEN while one isolated degree-two axis-factorable case survives. All other resumption/deferral conditions are in the linked candidate records. Claude audit-01 ACCEPTED existing scopes/statuses; response-01 records the metadata dispositions and deferred new audit suggestion.
+
+## Programme-ideas campaign — provisional registrations
+
+Registered 2026-11-01 by the Claude developer (`claude/programme-ideas-20261031`, response-01 addendum) at AC's instruction "register negative results". Full IDEA-template records, closest predecessors, separation criteria, pre-written kill tests and evidence: [ideas/candidates.md](../topics/programme-ideas-20261031/ideas/candidates.md); narrative: [gate-rejected.md](../topics/programme-ideas-20261031/gate-rejected.md). Provisional IDs only; final IDs at coordinated PR preparation. The campaign found no programme; Codex audit-01 required scope corrections now applied; re-audit pending. Open proof targets: [OPEN_TARGETS.md](../topics/programme-ideas-20261031/OPEN_TARGETS.md).
+
+| Idea / aliases | Title | Disposition and record |
+|---|---|---|
+| IDEA?programme-ideas-claude-01; gen1-draft-1 | Bivariate Golub–Meurant quadrature from truncated bivariate sections | equivalent (DST 2005, Xu; PD-T?…-301); weak PD-N withdrawn; specified-lift bracketing OPEN (B7) |
+| IDEA?programme-ideas-claude-02; gen1-draft-2 | Discrete bivariate Sobolev OPs via non-normal commuting node operators | equivalent (univariate Sobolev updating; Granada coherent pairs; AH) |
+| IDEA?programme-ideas-claude-03; gen1-draft-3 | Bivariate orthogonal rational functions with pencil-pair recurrences | REJECTED: failed (see PD-N?programme-ideas-claude-02), tested implementations only |
+| IDEA?programme-ideas-claude-04; gen1-draft-4 | Toda/qd flows on bivariate block Jacobi pairs | equivalent (judged measure modification / Uvarov) |
+| IDEA?programme-ideas-claude-05; gen1-draft-5 | Bivariate modified Chebyshev algorithm | equivalent (exact side is exclusion (a)) |
+| IDEA?programme-ideas-claude-06; gen1-draft-6 | RH/Szegő method transfer for discrete bivariate measures | abandoned (no mechanism) |
+| IDEA?programme-ideas-claude-07; gen2-draft-1 | Two-index divide-and-conquer for commuting banded pairs | deferred (kill fired at N = 1035; resume with a spectrum-separating tear) |
+| IDEA?programme-ideas-claude-08; gen2-draft-2 | Structure theory of commuting generalized-Hessenberg pairs (parameters, implicit-Q, cores) | equivalent (Kreuzer–Robbiano chart; PD-T?…-304(b)); retained PD-T?programme-ideas-claude-01; universal commutant REJECTED: refuted (see PD-N?programme-ideas-claude-04) |
+| IDEA?programme-ideas-claude-09; gen2-draft-3 | Two-index Sturm counts, bisection and relative perturbation for commuting banded pairs | REJECTED: failed (see PD-N?programme-ideas-claude-01); sub-problems 1, 2 equivalent |
+| IDEA?programme-ideas-claude-10; gen2-draft-4 | Bivariate comrade pencils: rectangular two-parameter pencils from recurrence blocks | abandoned (investment); normalised-pencil staircase OPEN (B6) |
+| IDEA?programme-ideas-claude-11; gen3-draft-1 | Discrete OPs of sampled trajectory measures and reconstruction from spectral data along non-Lissajous curves | REJECTED: refuted (see PD-N?programme-ideas-claude-05) within the tested scope; sub-problems 1, 5 equivalent |
+| IDEA?programme-ideas-claude-12; gen3-draft-2 | Phase-space design theory for CV tomography in the Gaussian-weighted bivariate polynomial model | deferred (needs a physics collaborator; re-gate vs MZ M5) |
+| IDEA?programme-ideas-claude-13; gen3-draft-3 | Boundary-polynomial operator calculus and spectral methods on arbitrary algebraic domains with numerically generated OPs | equivalent (Álvarez de Morales et al. 2008 Thm 3.1; Olver Leverhulme project) |
+| IDEA?programme-ideas-claude-14; gen3-draft-4 | Stochastic Galerkin spectral bounds for dependent inputs via bivariate recurrence sections | deferred (resume condition closed) |
+| IDEA?programme-ideas-claude-15; gen3-draft-5 | Christoffel functions and certified approximate border bases from one recurrence | equivalent (LZ-025 + LZ-028/029) |
+| IDEA?programme-ideas-claude-16; gen4-draft-1 | Constrained equilibrium for discrete bivariate OPs (grids saturate, Padua does not) | equivalent (product-grid corollaries; Uvarov); retained PD-T?programme-ideas-claude-02; converse REJECTED: refuted (see PD-N?programme-ideas-claude-03) |
+| IDEA?programme-ideas-claude-17; gen4-draft-2 | Lebesgue theory of checkerboard (Padua-type) interpolation | retained provisionally as proposal-1 (project, not programme); PD-T?programme-ideas-claude-04, -05 (OPEN), -06 (MEASURED) |
+| IDEA?programme-ideas-claude-18; gen4-draft-3 | Symmetric commuting extensions as bivariate Gauss–Christoffel theory | equivalent (DST 2005; Möller; Xu) |
+| IDEA?programme-ideas-claude-19; gen4-draft-4 | Explicit stable least-squares designs from Padua arrays (uniform measure) | equivalent (weighted MZ for Padua = MZ M5) |
+| IDEA?programme-ideas-claude-20; gen4-draft-5 | Padua asymptotically Fekete / weighted-Fekete stationarity | abandoned as a programme (negative note absorbed by IDEA-17) |
+
+### Programme-ideas obstruction and disposition table
+
+| Record | Exact scoped mechanism | Status / limits |
+|---|---|---|
+| [PD-N?programme-ideas-claude-01](../topics/programme-ideas-20261031/theory/programme-ideas-claude-N01-symmetrised-product-inertia-count.md) | The symmetrised-product inertia box count fails at √δ commutator scale for symmetric pairs (explicit two-node family) | PROVED; not a statement about positive-pivot computed sections |
+| [PD-N?programme-ideas-claude-02](../topics/programme-ideas-20261031/theory/programme-ideas-claude-N02-windowed-rational-lanczos-instability.md) | Three-block window is not a Lanczos step; tested corrected windowed rational recurrences lose orthogonality ≈ 10× per degree | MEASURED; tested implementations and settings only |
+| [PD-N?programme-ideas-claude-03](../topics/programme-ideas-20261031/theory/programme-ideas-claude-N03-joint-ritz-converse-refuted.md) | Joint Ritz residual vanishes at the centre of every centrally symmetric node set for even k: no lower bound by the saturation deficit | PROVED; centrally symmetric measures, even k |
+| [PD-N?programme-ideas-claude-04](../topics/programme-ideas-20261031/theory/programme-ideas-claude-N04-pattern-commutant-not-three-dimensional.md) | The pattern commutant of H_x in pattern(H_y) is not always span{I, H_x, H_y} (Padua n = 2: dimension 6) | PROVED (exact); genericity of dimension 3 OPEN |
+| [PD-N?programme-ideas-claude-05](../topics/programme-ideas-20261031/theory/programme-ideas-claude-N05-fourier-basis-commutation-fails.md) | No change of basis makes the truncated sections of the tested trajectory measures commute | MEASURED; tested curves, M ≤ 512, n ≤ 8 |
+
+Mechanism-level warnings for future campaigns (from the same records, not separate results): product grids reduce total-degree discrete OPs to 1-D (IDEA-16); the joint spectrum of an exactly commuting pair is spec(H_x) plus a pairing (IDEA-09); beyond Π_(2k+1) scalar functionals of the pair depend on word order and lift (IDEA-01); one-linear-pole-per-degree rational recurrences tested so far are unstable (PD-N?…-02).

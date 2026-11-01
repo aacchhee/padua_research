@@ -1,7 +1,7 @@
 # Programme-scale research directions (ideas campaign)
 
 - Branch: `claude/programme-ideas-20261031` · Base: `d36722823441dc40c6e19d69a174459348dd309c` (= `origin/main` at start) · Developer: Claude · Auditor: Codex (`gpt-6-astra`)
-- Stage: AUDIT — developer response-01 to Codex audit-01 submitted for re-audit. Next: `Codex (gpt-6-astra xhigh): Re-audit claude/programme-ideas-20261031 response-01 (A1–A9) at the recorded response head.`
+- Stage: AUDIT — developer response-01 (with addendum) to Codex audit-01 submitted for re-audit. Next: `Codex (gpt-6-astra xhigh): Re-audit claude/programme-ideas-20261031 response-01 (A1–A9) at the recorded response head.`
 - Submitted claims at `614709d`: no PD-T; 0 programmes, 1 project proposal (`proposal-1.md`, gen4-2), 19 candidates refuted/equivalent/abandoned/deferred (`gate-rejected.md`); 20 IDEA records (`ideas/candidates.md`); by-products in `report.md` §3. Audit-01 preserves finite measured evidence but rejects certification, several universal/negative claims and status/provenance overreach. The project is provisional; no certified replacement table or final PD-N is accepted.
 - For the PR: the rule amendment below (material rule change, to be audited by Codex); provisional `LIT?programme-ideas-claude-NN` and `IDEA?programme-ideas-claude-NN` records; allocations through the shared ledger `topics/padua-batch-20261031/ALLOCATIONS.md`.
 - Response-01 (2026-11-01, claude-opus-5-5): all of A1–A9 accepted; eight THEORY records added in `theory/` (PD-T?programme-ideas-claude-01…06, PD-N?programme-ideas-claude-01, 02); scope corrections inline in the evidence files and in the summaries; campaign inputs pinned in `sources/campaign-inputs/`. See `response-01.md`.
@@ -112,6 +112,14 @@ Subagents are launched as background `general-purpose` agents on `claude-fable-5
 - A9.8 deviation: the amended rule text keeps Sonnet 5.5 high for tiny sanity scripts in ideas campaigns; the campaign's Fable agents wrote and ran their own scripts. No AC override is on record; deviation documented; disposition open for AC. Model history is not rewritten.
 - Response content committed at `6dc547b4216c8b1a98d6b8e78065bad4b695a671`; the following commit only records this SHA here. Re-audit target: the branch head containing this line.
 - Not claimed: certification of the maxima counts; proofs of the corner expansion or argmax; any final ID; any registry integration; any message to external authors.
+
+## 2026-11-01 — Claude, response-01 addendum (claude-opus-5-5; effort not exposed)
+
+- AC (08:47 CET): "do not worry about the model. register negative results. state clearly what needs to be proven, well make a few attempts".
+- A9.8: deviation accepted by AC ("do not worry about the model"); rule text unchanged.
+- Registered provisionally in `PROOF_STATUS.md`, `state/IDEAS.md`, `ID_CROSSWALK.md`: PD-T?programme-ideas-claude-01…06, PD-N?programme-ideas-claude-01…05 (N03–N05 new: joint-Ritz converse refuted in general; Padua n = 2 pattern commutant of dimension 6; Fourier-basis commutation refuted on the tested instances), all 20 IDEA rows and an obstruction/disposition table. Final IDs remain for PR preparation through the batch-ledger owner.
+- New exact developer scripts: `checks/code/response-02/{ritz_converse_parity,padua_pattern_commutant,padua_n3_edge_identity}.py` with outputs (SymPy 1.14.0).
+- `OPEN_TARGETS.md`: precise statements of everything that still needs proof, with known evidence, done-criteria and first routes.
 
 ## Runs needed
 

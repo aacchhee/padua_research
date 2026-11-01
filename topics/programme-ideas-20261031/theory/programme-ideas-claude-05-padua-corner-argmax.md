@@ -49,6 +49,8 @@ Padua points only; the statement is a conjecture. "No counterexample found at 75
 
 ## Open items
 
+Precise target and decomposition: `../OPEN_TARGETS.md` A4.
+
 Proof for all n; rigorous verification for small n (e.g. by a certified sup bound away from the corners).
 
 ## History

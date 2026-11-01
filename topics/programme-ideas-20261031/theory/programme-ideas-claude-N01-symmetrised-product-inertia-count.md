@@ -11,7 +11,7 @@ For a pair of real symmetric N × N matrices (H_x, H_y) and an open box (a, a′
 
   n_box := ½ (n₊(S) − N + n₊(M_x) + n₊(M_y)),  M_x = (H_x − aI)(a′I − H_x),  M_y = (H_y − bI)(b′I − H_y),  S = ½(M_xM_y + M_yM_x),
 
-where n₊ counts positive eigenvalues (`checks/code/adv/gen2-3/pairs.py`: `box_matrices`, `box_count_numerator`). For commuting pairs with no joint eigenvalue on the box boundary it equals the number of joint eigenvalues in the box.
+where n₊ counts positive eigenvalues (`checks/code/adv/gen2-3/pairs.py`: `box_matrices`, `box_count_numerator`). For commuting pairs with no eigenvalue of H_x in {a, a′} and none of H_y in {b, b′} it equals the number of joint eigenvalues in the box (proof below).
 
 **Claim (PROVED).** For every e with 0 < e < (8 − 2√2)/11 ≈ 0.470, the 2 × 2 pair H_x = diag(0, e), H_y = R diag(0, e) Rᵀ (R the rotation by 45°) and the box (−e/10, 1)² give n_box = 3/2, whereas every commuting symmetric pair (H′_x, H′_y) with spec H′_x = spec H_x and spec H′_y = spec H_y has exactly 2 joint eigenvalues in the box. Here ‖[H_x, H_y]‖₂ = δ := e²/2, and the box boundary is at distance e/10 = √(2δ)/10 from both marginal spectra. Hence no inequality of the form "n_box is correct whenever the boundary distance exceeds C·δ^α" can hold with α > ½ on the class of all symmetric pairs.
 
@@ -29,6 +29,7 @@ Overall status: PROVED (explicit two-node family).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
+| n_box is the box count for exactly commuting pairs | PROVED (routine) | proof below |
 | n_box = 3/2 on the two-node family | PROVED | proof below; exact SymPy check `checks/code/response-01/inertia_two_node_family.py/.out` (symbolic det S and five rational e); independently reconstructed by the Codex audit (`audit-support/obstructions-check.py`, e ≤ 1/10) |
 | failures at √δ scale on larger symmetric banded pairs | MEASURED (supporting, restricted) | `checks/code/adv/gen2-3/t3_delta_exponent.py`, `t3b_diagnose.py`: N = 45 rotated-cluster pairs (rotation of an eigenbasis; the recurrence pattern is generally not preserved) and an N = 38 symmetric block-tridiagonal direct sum with a 2 × 2 cluster (reducible, constant vector not cyclic, N ≠ dim Π_n); wrong half-integer counts at boundary distance ≈ 0.24–0.28 √δ, δ from 5e-5 to 5e-9 (e.g. N = 38, δ = 5e-7, distance 2e-4: numerator 7 instead of 8) |
 
@@ -54,7 +55,9 @@ LITERATURE context for the √δ scale (not used in the proof): Kachkovskiy–Sa
 
 ## Proof or evidence
 
-M_x = diag(a, b) with a = (e/10)(1) = e/10 and b = (e + e/10)(1 − e) = 11e(1 − e)/10; M_y = R diag(a, b) Rᵀ. Both are positive definite for 0 < e < 1, so n₊(M_x) = n₊(M_y) = 2. With R the 45° rotation, a direct computation gives
+*Commuting case.* If [H_x, H_y] = 0, then M_x, M_y and S = M_xM_y are simultaneously diagonal in a joint eigenbasis, with diagonal entries m_x(i) = (ξ_i − a)(a′ − ξ_i), m_y(i) = (η_i − b)(b′ − η_i), nonzero by assumption; m_x(i) > 0 iff ξ_i ∈ (a, a′), and likewise for y. With p, q, r, s the numbers of joint eigenvalues with signs (+,+), (+,−), (−,+), (−,−): n₊(S) = p + s, N = p + q + r + s, n₊(M_x) = p + q, n₊(M_y) = p + r, so n_box = ½(p + s − p − q − r − s + p + q + p + r) = p. ∎
+
+*Two-node family.* M_x = diag(a, b) with a = (e/10)(1) = e/10 and b = (e + e/10)(1 − e) = 11e(1 − e)/10; M_y = R diag(a, b) Rᵀ. Both are positive definite for 0 < e < 1, so n₊(M_x) = n₊(M_y) = 2. With R the 45° rotation, a direct computation gives
 
   det S = −(a + b)² (a² − 6ab + b²)/16 = −e⁴ (11e − 12)² (121e² − 176e + 56)/160000,  tr S = e² (11e − 12)²/200 > 0.
 
@@ -66,10 +69,11 @@ Exactly the formula and pair class stated. This is a scoped method failure, not 
 
 ## Open items
 
-Whether a δ-tolerant count with α > ½ exists on the class of positive-pivot computed sections (cyclic, size dim Π_n) is not addressed. Transfer to the Lanczos topic (LZ-034 / L3) only in this restricted form.
+Whether a δ-tolerant count with α > ½ exists on the class of positive-pivot computed sections (cyclic, size dim Π_n) is not addressed: `OPEN_TARGETS.md` B3. Transfer to the Lanczos topic (LZ-034 / L3) only in this restricted form.
 
 ## History
 
 - 2026-11-01, gen2-3 adversarial agent (claude-fable-5-1, xhigh): cluster counterexamples, fitted slopes 0.52–0.55, broad salvage wording "no δ-only certificate for computed sections beyond √δ".
 - 2026-11-01, Codex audit-01 A5 / obstructions O3: restrict to the formula and the explicit class; exact two-node reconstruction.
+- 2026-11-01, response-01 addendum: commuting-case proof added; registered in `PROOF_STATUS.md` and `state/IDEAS.md` (provisional ID) at AC's instruction "register negative results".
 - 2026-11-01, response-01 (claude-opus-5-5, effort not exposed): this record, with the developer's own exact derivation (range extended to e < (8 − 2√2)/11) and script; broad wording struck in the sources.

@@ -57,9 +57,11 @@ LITERATURE context, not used as proof: Xu, Trans. AMS 342 (1994), Thms 3.2/3.4 (
 
 ## Scope
 
-Exact arithmetic, real symmetric pairs, the generalized-Hessenberg pattern of a fixed graded order, nonzero (respectively positive) pivots. It says nothing about computed (nearly commuting) sections, about pairs with zero pivots, or about the dimension of the commutant of H_x inside the pattern of H_y (see IDEA?programme-ideas-claude-08: random instances give span{I, H_x, H_y}, exact Padua n = 2 gives dimension 6 — audit-01 A3).
+Exact arithmetic, real symmetric pairs, the generalized-Hessenberg pattern of a fixed graded order, nonzero (respectively positive) pivots. It says nothing about computed (nearly commuting) sections, about pairs with zero pivots, or about the dimension of the commutant of H_x inside the pattern of H_y (random instances give span{I, H_x, H_y}; the universal claim is refuted by PD-N?programme-ideas-claude-04, exact Padua n = 2, dimension 6).
 
 ## Open items
+
+Related open target: genericity of the three-dimensional pattern commutant, `../OPEN_TARGETS.md` B5.
 
 None for the statement. Not claimed: any stability statement for recovering the pair from the top-layer chart (the M2 record's "seed for (b)"), which remains a MEASURED observation in IDEA?programme-ideas-claude-08.
 

@@ -30,7 +30,7 @@ Overall status: PROVED.
 | residual ≤ 2√(1 − s_k(B)) for H_x and H_y | PROVED | proof below (developer proof, `checks/adversarial-gen4-1.md` (ii)(c)); MEASURED ratio residual/√(1−s) ≤ 0.79 on grids and Padua sets, n ≤ 8 (and ≤ 0.37 at n = 24, 40), `checks/code/adv/gen4-1/adv_gen4_1_product_structure.py` P4 |
 
 Candidate / claim disposition of the retracted converse ("joint Ritz convergence ⟺ saturation up to constants; residual ≍ √(1−s)"): REJECTED.
-Rejection reason: refuted. Exact counterexample constructed and checked by the Codex audit (audit-01 A2; `audit-support/rejections-check.py/.json`): equal weights on the 5 × 5 grid {−1, −½, 0, ½, 1}², k = 2, B = (0, 0): s₂(B) = 27/175 while P X P e_B = P Y P e_B = 0, so both compressed residuals vanish with saturation deficit 148/175. The audit's parity explanation (for an origin-symmetric measure and even k the kernel at the origin is even, and the residual vanishes by parity and reproduction) shows the cancellation is structural, not numerical. The developer adopts the refutation; no PD-N is proposed for it, because the refuting evidence is the auditor's countercheck and the retracted statement was never registered (decision left to AC/auditor at PR preparation).
+Rejection reason: refuted. Exact counterexample constructed and checked by the Codex audit (audit-01 A2; `audit-support/rejections-check.py/.json`): equal weights on the 5 × 5 grid {−1, −½, 0, ½, 1}², k = 2, B = (0, 0): s₂(B) = 27/175 while P X P e_B = P Y P e_B = 0, so both compressed residuals vanish with saturation deficit 148/175. The audit's parity explanation (for an origin-symmetric measure and even k the kernel at the origin is even, and the residual vanishes by parity and reproduction) shows the cancellation is structural, not numerical. Registered as PD-N?programme-ideas-claude-03 (response-01 addendum, at AC's instruction "register negative results"), with a developer-written proof of the general parity statement for centrally symmetric measures and even k.
 
 ## Depends on
 
@@ -54,6 +54,8 @@ Write K = K_k(·, B). The function (x − x_B)K vanishes at B, so ‖(x − x_B)
 One-sided sufficiency only. It gives no lower bound on the residual in terms of 1 − s, so it cannot be used to say that joint Ritz pairs occur *only* at saturated nodes, or that the absence of saturation prevents joint Ritz convergence. Any asymptotic converse would need separate localisation/separation hypotheses and is OPEN (not proposed here).
 
 ## Open items
+
+Related open target: a converse under hypotheses, `../OPEN_TARGETS.md` B4.
 
 None for the retained statement. For the downstream topic (b) L1 (Lanczos branch): only this sufficient bound may be transferred; the earlier handover "joint Ritz pairs converge exactly at saturated nodes" is withdrawn.
 
