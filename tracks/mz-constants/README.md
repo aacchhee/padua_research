@@ -22,4 +22,4 @@ Audit-01 response: the headline explicit endpoint upper bound is now PD-T022's2�
 
 ## Padua MZ 2D campaign — PR14 final registration
 
-[Two-dimensional signed Padua development](../../topics/padua-mz-2d-20261101/report.md) is registered in PD-T106–117/PD-N044–053 with their individual statuses; IDEA-210–227 retains all candidates. Exact four-size certificates and the m30 eta>3/4 witness have separate actual execution receipts. Universal signed Padua spectral bounds remain OPEN. Stage AUDIT, Claude PENDING; this draft does not change acceptance of the earlier MZ manuscript/results.
+[Two-dimensional signed Padua development](../../topics/padua-mz-2d-20261101/report.md) is registered in PD-T106–117/PD-N044–053 with their individual statuses; IDEA-210–227 retains all candidates. Exact four-size certificates and the m30 eta>3/4 witness have separate actual execution receipts. Universal signed Padua spectral bounds remain OPEN. Claude audit-01 accepted the scoped mathematics; documentation-only response-01 complete. Stage PR, draft pending AC merge order; acceptance of earlier MZ manuscript/results is unchanged.

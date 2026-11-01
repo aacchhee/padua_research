@@ -959,6 +959,27 @@ Reservation priority: `9f0c7710abd19ee5a0d61bce6384e7a399e838d2`; [map](topics/p
 | LIT?mz2d-codex-05 | LIT-379 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/literature.md) | Same-source reuse; new reading coverage remains separately dated |
 | LIT?mz2d-codex-06 | LIT-314 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/literature.md) | Same-source reuse; new reading coverage remains separately dated |
 | LIT?mz2d-codex-07 | LIT-045 | codex/padua-mz-2d-20261101 | [record](topics/padua-mz-2d-20261101/literature.md) | Same-source reuse; new reading coverage remains separately dated |
-| PD-N?mz2d-codex-41 | PD-N045 | codex/padua-mz-2d-20261101 | [record](tracks/mz-constants/theory/mz2d-upper-sign-obstruction.md) | Historical duplicate consolidated into existing N10; no second PD-N allocation |
+| PD-N?mz2d-codex-41 | PD-N045 | codex/padua-mz-2d-20261101 | [record](tracks/mz-constants/theory/mz2d-upper-sign-obstruction.md) | Historical duplicate consolidated into existing PD-N045; no second PD-N allocation |
 
 Original-to-split relations: PD-T106 exact aliases and pencil → PD-T109 separately substantive masked-tensor architecture; exact finite spectra PD-T107 → scoped threshold refutation PD-N044. PD-T028 remains the original OPEN signed-Padua spectral target, supported by PD-T106/109/111/115/117 and finite PD-T107/108; endpoint upper target PD-T110 and fixed-ratio target PD-T116 remain OPEN. D5 uniform operator target PD-T114 remains OPEN; proved general tools PD-T112/113 and scoped failures PD-N050–052 are separate dependencies, not solved target conjuncts. Historical provisional PD-N?mz2d-codex-41 consolidates into PD-N045, with complete original proof bytes retained in the verification-only archive.
+
+
+Administrative reciprocal mapping, 2026-11-01 (audit-01 F3):
+[PD-T028](tracks/mz-constants/theory/open-padua-target.md) →
+[PD-T110](tracks/mz-constants/theory/mz2d-upper-open.md), the explicitly
+identified upper-threshold part, **OPEN**; PD-T028 ↔
+[PD-T116](tracks/mz-constants/theory/mz2d-fixed-ratio.md), a supporting
+fixed-ratio target, **OPEN**, rather than a solved conjunct. In the reverse
+direction, PD-T110's “Split from” names PD-T028; the original target and both
+named targets remain OPEN. Supporting records are
+[PD-T106](tracks/mz-constants/theory/mz2d-aliasing.md),
+[PD-T109](tracks/mz-constants/theory/mz2d-defect-structure.md),
+[PD-T111](tracks/mz-constants/theory/mz2d-lower-corner-weights.md),
+[PD-T115](tracks/mz-constants/theory/mz2d-fixed-ratio-diamond-reconstruction.md),
+[PD-T117](tracks/mz-constants/theory/mz2d-tensor-control.md), and the finite
+[PD-T107](tracks/mz-constants/theory/mz2d-certified-spectra.md)/
+[PD-T108](tracks/mz-constants/theory/mz2d-measured-spectra.md) records.
+PD-T028's own file stays frozen because it is one of the 73 protected prior
+MZ inputs. This crosswalk supplies the reciprocal administrative relationship
+without changing that accepted record, its protected-object manifest, its
+statement, or its status; supporting results are not proved target parts.

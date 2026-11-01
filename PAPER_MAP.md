@@ -34,4 +34,4 @@ No manuscript has been drafted or accepted. The following is a development brief
 
 | Brief | Question | Support | Remaining gaps | Readiness |
 |---|---|---|---|---|
-| [Signed Padua MZ campaign](topics/padua-mz-2d-20261101/report.md) | Beyond-half-exactness signed Lebesgue Padua spectra and reconstruction | PD-T106–117; PD-N044–053 at their individual written statuses | Universal endpoint/fixed-ratio spectral targets and uniform signed operator norm OPEN; historical attribution limits retained | AUDIT, Claude PENDING; draft PR14 not ready, no manuscript/submission claim |
+| [Signed Padua MZ campaign](topics/padua-mz-2d-20261101/report.md) | Beyond-half-exactness signed Lebesgue Padua spectra and reconstruction | PD-T106–117; PD-N044–053 at their individual written statuses | Universal endpoint/fixed-ratio spectral targets and uniform signed operator norm OPEN; historical attribution limits retained | Claude audit-01 accepted scoped mathematics; response-01 documentation fixes complete; stage PR, draft pending AC merge order; no manuscript/submission claim |

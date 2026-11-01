@@ -107,7 +107,7 @@ Aliases: signed M3 last-step transfer; pointwise Padua sampling floor.
   verification; no duplicate mechanism is pursued or negative allocated.
 - Canonical negative/theory record: existing `PD-N045` §3,
   [theory](../../tracks/mz-constants/theory/mz2d-upper-sign-obstruction.md).
-  Historical provisional `PD-N045` is an alias mapped to N10,
+  Historical provisional `PD-N?mz2d-codex-41` is an alias mapped to PD-N045,
   for root's crosswalk. D4's original proof bytes and history are retained
   in the [verification-only archive](directions/d4-positive-floor-verification.md).
   This consolidation accepts the supplementary Astra finding.
@@ -121,9 +121,9 @@ Aliases: rotated tensor filter; total-degree checkerboard reconstruction.
 - Mechanism and hypotheses: transform frequencies by `(a,b)->(a+b,a-b)`;
   enforce same parity and apply a scalar plateau filter in both transformed
   frequencies. Checkerboard alias vectors have l1 length at least `2m`.
-- Closest entries read in full: IDEA-074, D1 and candidate 40 above.
+- Closest entries read in full: IDEA-074, D1 and IDEA-224 above.
 - Separation criterion: the corrected filter's support is a diamond,
-  rather than candidate 40's rectangle; exact reproduction must follow
+  rather than IDEA-224's rectangle; exact reproduction must follow
   from the shortest nonzero alias vector. A surviving alias or a wrong
   Fourier multiplier at the plateau boundary kills the construction.
 - Literature baseline: rotated-square/diamond Fourier summation is
@@ -158,7 +158,7 @@ Aliases: rotated tensor filter; total-degree checkerboard reconstruction.
 | Round | Cheapest decisive test | Outcome |
 |---|---|---|
 | 1 | Rectangular filter's coefficient at `(1-m,-m)` on input xy | Failed for every `m>=3,2<=n<m`; scoped negative retained |
-| 2 | Positive pointwise floor at the m3 node corner | Existing N10 §3 obstruction applied: failed step, equivalent candidate retained; no second PD-N |
+| 2 | Positive pointwise floor at the m3 node corner | Existing PD-N045 §3 obstruction applied: failed step, equivalent candidate retained; no second PD-N |
 | 3 | Parity-projected diamond filter's plateau and shortest alias | Exact reconstruction proved; signed coercivity comparison still missing |
 
 D4 is **STOPPED / OPEN** after these three bounded attempts. Neither
@@ -182,7 +182,7 @@ required Claude audit. Diamond and rectangle proof bytes remain at their
 pinned hashes. The conversion hash is historical: supplementary Astra
 identified the duplicate negative; the exact original body is preserved
 in the verification-only archive at byte offset 2255, length 4450, with
-its old N41 alias mapped to canonical N10 §3.
+its old PD-N?mz2d-codex-41 alias mapped to canonical PD-N045 §3.
 
 ## Runs needed
 

@@ -56,7 +56,7 @@ provide either signed spectral endpoint.
 - Existing [PD-N045 §3](mz2d-upper-sign-obstruction.md): the m3
   weight -1/18 obstructs positive pointwise conversion, but does not
   obstruct a restricted-degree energy theorem. Historical provisional
-  N41 maps to N10; D4's equivalent application is retained as
+  PD-N?mz2d-codex-41 maps to PD-N045; D4's equivalent application is retained as
   [verification only](../../../topics/padua-mz-2d-20261101/directions/d4-positive-floor-verification.md).
 
 ## Proof attempts, checks and sources
@@ -64,7 +64,7 @@ provide either signed spectral endpoint.
 Three bounded analytic attempts and their prewritten kill tests are
 retained in `topics/padua-mz-2d-20261101/ideas-d4.md`. The rectangular
 transfer fails in its exact stated scope. The positive-floor transfer
-applies the existing N10 §3 obstruction; supplementary Astra's duplicate
+applies the existing PD-N045 §3 obstruction; supplementary Astra's duplicate
 finding was accepted and no second negative is allocated. The third
 attempt proves the reconstruction identity
 and stops at the signed norm comparison. The local one-dimensional M3
@@ -104,8 +104,8 @@ received before development. No Git mutation, shared-registry edit,
 manuscript change or ultra allocation. Original target wording and its
 OPEN scope are preserved.
 
-Supplementary Astra response: the former proposed D4 negative N41
-duplicates existing N10 §3 and is consolidated there. Its application,
+Supplementary Astra response: the former proposed D4 negative PD-N?mz2d-codex-41
+duplicates existing PD-N045 §3 and is consolidated there. Its application,
 original proof bytes and historical alias are retained in the topic
 verification archive. The diamond theorem and rectangular obstruction
 are unchanged; the fixed-ratio target remains OPEN.

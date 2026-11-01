@@ -1,6 +1,6 @@
 # Signed Padua MZ — campaign report
 
-[Draft PR14](https://github.com/aacchhee/padua_research/pull/14) · branch `codex/padua-mz-2d-20261101` · main/rules `806cc7b4509fd93bae652f9545d32d95529f8281`. Stage AUDIT; required Claude Opus 5.5 xhigh audit **PENDING**. No readiness or merge request. Development mathematics used gpt-6.1-sol xhigh, code/mechanical work medium, supplementary adversarial review gpt-6-astra xhigh. Root runtime metadata is unexposed.
+[Draft PR14](https://github.com/aacchhee/padua_research/pull/14) · branch `codex/padua-mz-2d-20261101` · main/base `806cc7b4509fd93bae652f9545d32d95529f8281`. Claude Opus 5.5 xhigh [audit-01](audit-01.md) **ACCEPTED the mathematics at its stated scope**. Stage PR after the six documentation findings are addressed in [response-01](response-01.md); draft retained pending AC's merge order and integration preparation. Development mathematics used gpt-6.1-sol xhigh, code/mechanical work medium, supplementary adversarial review gpt-6-astra xhigh. Root runtime metadata is unexposed.
 
 The [definitions](definitions.md) fix signed interpolatory weights for unnormalized dxdy and a total-degree Legendre space. Positive Chebyshev cubature is distinct. Accepted PD-T101 is a dependency; audit-pending A2 records were contextual inputs, not proof dependencies of the new theorems.
 
@@ -16,7 +16,7 @@ The [definitions](definitions.md) fix signed interpolatory weights for unnormali
 | PD-T112/113 | Correct signed operator norm identity, degree-dependent bound, reproduction/error estimate when n+r<=m | [Norm](../../tracks/mz-constants/theory/mz2d-hyperinterpolation-absolute.md), [reproduction](../../tracks/mz-constants/theory/mz2d-hyperinterpolation-reproduction.md) |
 | PD-T117 | Tensor-CC extrema on the same total-degree space equal the extrema of the coordinate CC rules; endpoint minimum has order log^-2 m, eta tends to1 | [Tensor control](../../tracks/mz-constants/theory/mz2d-tensor-control.md) |
 
-These statuses describe written proofs and exact evidence; they are distinct from the required Claude acceptance. No historical novelty is claimed.
+Claude audit-01 accepts all17 PROVED,2 MEASURED and3 OPEN classifications and every candidate disposition. Response-01 changes records and registries only; mathematical statuses and proof bodies remain unchanged. No historical novelty is claimed.
 
 ## D1 verdict and endpoint answer
 
@@ -56,7 +56,7 @@ PD-T108 is **MEASURED**: full extreme vectors and matching tensor controls at m=
 |80|0.172730495887|1.816497914219|0.827269504113|
 |100|0.161748411019|1.826582423850|0.838251588981|
 
-At m10/20/30/40 each extremum has an independently checked strict bracket of width10^-6. Acceptance uses rational moments, exact integer congruences and signed strict row dominance; floats only propose transformations. A different worker reran the full producer, independently evaluated the stored225-term witness, and checked245 cyclotomic nodal moments,371 Gram pairs,1,221 region cases and six rejection controls. [Independent evidence](independent-checks.md) and [supplementary Astra review](supplementary-audit.md) record scope and hashes. Both supplementary findings were repaired and rechecked; Claude audit remains pending.
+At m10/20/30/40 each extremum has an independently checked strict bracket of width10^-6. Acceptance uses rational moments, exact integer congruences and signed strict row dominance; floats only propose transformations. A different worker reran the full producer, independently evaluated the stored225-term witness, and checked245 cyclotomic nodal moments,371 Gram pairs,1,221 region cases and six rejection controls. [Independent evidence](independent-checks.md) and [supplementary Astra review](supplementary-audit.md) record scope and hashes. Both supplementary findings were repaired and rechecked. Claude audit-01 accepted the scoped mathematics after its own full exact-producer rerun and additional checks. Its committed second-method certificate receipt covers m10–30; m40 was still running at audit commit. The accepted m40 result also has the complete exact-producer rerun, so that partial extra receipt does not weaken acceptance.
 
 ## What to tell An–Sommariva–Vianello
 
@@ -64,7 +64,7 @@ Their work supplies the numerical question and weak/strong distinction. This cam
 
 ## Runs needed / missing fulltexts / delivery
 
-- Required next step: Claude Opus 5.5 xhigh audit of the final candidate, complete new proofs/code/evidence and full state/IDEAS.md, via the next numbered handoff. PR stays draft.
+- Next step: AC's merge-order decision and the corresponding integration preparation in handoff04. The required Claude audit is complete; audit-01 explicitly permits these listed documentation fixes to proceed without re-audit. PR stays draft.
 - Integration rehearsal: this campaign squashes cleanly onto pinned main; prospective PR15 integration conflicts in the crosswalk and allocation ledger. Reconcile those reservation texts at readiness, after audit and AC's merge-order decision; no live merge was performed.
 - Missing independent final-version comparisons: SVZ DOI10.1007/s11075-008-9203-x; Dencker–Erb DOI10.1016/j.jat.2017.03.003; Kolomoitsev–Lomako DOI10.1016/j.amc.2021.126192; Xu1996 DOI10.1006/jath.1996.0102; ASV published body DOI10.1016/j.matcom.2026.10.001. KLP2018 body DOI10.1016/j.jat.2018.02.005 was unreachable. [Source review](literature.md) supplies journal links, inspected versions and locators; unread bodies are not theorem dependencies.
 - No Windows bridge: copy this report and the audit handoff to `C:\Users\andreyac\Downloads\padua\results\padua-mz-2d-20261101.md`. No local delivery is claimed. All essential evidence fits Git limits; no large artifact requires cold-storage export.

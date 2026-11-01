@@ -91,7 +91,7 @@ Aliases: signed relaxed-exactness error; `m>=n+r` reproduction.
   degree-r input and a degree-n basis member lies in the exactness space.
 - Closest predecessor read: IDEA-055/075 and PD-T025. The product-degree
   argument is identical and uses no positivity; only the norm estimate
-  needs the repair in candidate 31.
+  needs the repair in IDEA-220.
 - Separation criterion: none claimed as a new reproduction mechanism.
   Failing to check the degree of each coefficient product would invalidate
   the application.
@@ -111,10 +111,10 @@ Aliases: absolute Gram closure; negative-leverage control.
 
 - Question/scope: is `sup_m ||H_(m,m-1)||_(C->L2)` finite, or can the actual
   signed coefficient operator be given a useful explicit all-m bound?
-- Mechanism/hypotheses: candidate 31 reduces one sufficient route to bounds
+- Mechanism/hypotheses: IDEA-220 reduces one sufficient route to bounds
   on `tau_m` and `beta_abs(m,m-1)`, or on signed `lambda_max` together with
   negative leverage `chi_m=sum_(w<0)|w|K_(m-1)(x,x)`.
-- Closest predecessors: IDEA-056/075, candidate 31, SVZ integration-functional
+- Closest predecessors: IDEA-056/075, IDEA-220, SVZ integration-functional
   stability. The new unresolved obligation is quantitative control of the
   absolute nodal measure on the Legendre polynomial space.
 - Separation / kill criterion: total variation alone is insufficient, and

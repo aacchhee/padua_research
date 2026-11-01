@@ -126,7 +126,7 @@ uses only those supplied values. ∎
 
 ## Checks and sources
 
-Candidate and prewritten kill criteria: `ideas-d4.md`, candidate 42.
+Candidate and prewritten kill criteria: `ideas-d4.md`, IDEA-226.
 The checks are analytic Fourier algebra, not a program run or a numerical
 experiment. No independent audit or executed finite rerun is claimed.
 The campaign literature record documents classical checkerboard Fourier

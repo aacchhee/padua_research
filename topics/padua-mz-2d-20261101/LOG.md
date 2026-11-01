@@ -2,9 +2,9 @@
 
 - Branch: `codex/padua-mz-2d-20261101` · Base/rules read: `cf89b140530d5838bdb208a8c28f3e7aa676ace3`.
 - Role: Codex orchestrator. Root model/effort metadata is runtime-unexposed; delegated mathematics uses `gpt-6.1-sol xhigh`, code/mechanical work `gpt-6.1-sol medium`. No ultra allocation.
-- Stage: WORK (documentation-only response). Claude Opus 5.5 xhigh audit-01 complete at `e847601`: mathematics ACCEPTED at stated scope; six P3 record findings, see [audit-01.md](audit-01.md).
+- Stage: PR (documentation-only response complete). Claude Opus 5.5 xhigh audit-01 ACCEPTED the scoped mathematics; six P3 record findings addressed in [response-01.md](response-01.md). PR14 stays draft pending AC's merge order and integration preparation.
 - Open handoff: [03-response.md](handoffs/03-response.md), Codex gpt-6.1-sol medium (high for F1); input `0d48727f13bf8afcf8c21568ed71572c305552a5`. Handoff 02 done in `0d48727f13bf8afcf8c21568ed71572c305552a5`.
-- Reserved final-ID ranges: PD-T106–135 (30), PD-N044–061 (18), IDEA-210–245 (36), LIT-427–444 (18), including permanent headroom. Fresh scan and provenance: [protocol/reservation-scan.json](protocol/reservation-scan.json). Batch ledger: [ALLOCATIONS.md](../padua-batch-20261031/ALLOCATIONS.md). Reservation only; no final IDs assigned yet.
+- Reserved final-ID ranges: PD-T106–135 (30), PD-N044–061 (18), IDEA-210–245 (36), LIT-427–444 (18), including permanent headroom. Assigned PD-T106–117, PD-N044–053, IDEA-210–227 and LIT-427–428, with five source-ID reuses. Dated current recheck: [response-01 reservation receipt](protocol/response-01-20261101-reservation-recheck.json). Batch ledger: [ALLOCATIONS.md](../padua-batch-20261031/ALLOCATIONS.md). No new allocation in this response.
 - Scientific outcome: D1 PASS; exact alias/defect structure, replayed finite spectra and eta>3/4 witness, corner formula, diamond reconstruction, corrected signed hyperinterpolation scope, tensor-control theorem. Existing PD-T028 stays OPEN. Floating computations are MEASURED. Full statuses: [report.md](report.md).
 
 Draft PR: [#14](https://github.com/aacchhee/padua_research/pull/14). Reservation priority commit: `9f0c7710abd19ee5a0d61bce6384e7a399e838d2`; ledger and PR body published before any final-ID assignment.
@@ -81,3 +81,17 @@ Claude, Opus 5.5 xhigh, acting as independent auditor and as orchestrator for ha
 Next: [handoff 03](handoffs/03-response.md), Codex `response-01.md` (documentation-only) and readiness preparation. PR14 stays draft.
 
 - Handoff 02 → done in `0d48727f13bf8afcf8c21568ed71572c305552a5`; [handoff 03](handoffs/03-response.md) open.
+
+## 2026-11-01 — Codex response-01 to F1–F6
+
+Session input/rules head: `d04a39bb8481fa3320ea98b9d70cfb3bbf4b3878`. Read the rules, full handoff03, audit-01 and log; fetched the topic and current main. Topic advanced by fast-forward from14de1df; main remains806cc7b and rule bytes are unchanged, so no main merge/rebase was performed. The cloud runtime skill and networking policy were refreshed; the enforced policy has no VPN configured. No credentials were printed.
+
+User model allocation was applied through bounded workers: gpt-6.1-sol high for F1's existing-statement transcription, medium for F2–F5 record/registry edits and F6 mechanical recheck. Root metadata is unexposed. Only root mutates Git. The response introduces no new mechanism, claim, mathematical premise, epistemic status, code or computed evidence; the novelty-generation gate is inapplicable.
+
+All six P3 findings are accepted and addressed in response-01.md. F1 adds only the already proved §3 witness to the Statement/Negative-result scope and IDEA-225 to its attempted mechanisms. The full proof §§1–3 (3083 bytes, SHA256077f0c1f31e5f25c787553f9caa11e0b980a408c1d7b0eeb3f047b5fe3c5d26c) and the entire proof-to-EOF suffix are unchanged. F2 normalizes live shorthand; F3 keeps the protected PD-T028 file frozen and supplies the reciprocal administrative mapping in the crosswalk; F4 replaces22 registry rows' boilerplate while retaining statuses; F5 appends ten exact-scope obstruction rows without changing the existing registry prefix.
+
+F6 uses new dated receipts, retaining every old receipt and all auditor outputs. Refreshed main806cc7b, PR12 `6c6e484818b8b949ab0a6b2a4b9086b6a46528c3` and PR15 `fa5835f6fd2c1f62cd9e34e14e90d492ac387242`; complete ledgers/four registries remain disjoint, all thirteen frozen A2 objects match and all eleven closed PRs are merged. No ID or headroom was reallocated. The new mechanical validation checks the precise response diff, all frozen audits/code/evidence/archive objects, all73 prior MZ inputs, status/candidate/registration preservation, current links and output sizes. No scientific rerun is needed or claimed for these documentation changes.
+
+Audit-01 explicitly permits these listed text remedies to proceed without another audit. No wider mathematical edit triggers its focused-recheck condition. Stage PR records accepted scientific scope, not approval to merge: PR14 remains draft. Live summary paragraphs and PR14 WORK/AUDIT/PR sections are synchronized; historical PENDING paragraphs in frozen/historical records remain provenance.
+
+The concrete next integration actions for either AC-selected order are in [readiness-plan-01.md](readiness-plan-01.md). No order is assumed, no foreign branch is edited, and no merge is requested. Source-version gaps and Windows delivery remain open limitations. Commit response outputs first; then publish handoff04 in the separate required transition commit, changing only handoff03's status and preserving its instruction body.

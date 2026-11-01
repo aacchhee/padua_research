@@ -1,0 +1,101 @@
+{
+  "date": "2026-11-01",
+  "source": "GitHub connector GET pulls state=open/closed per_page100; fewer than100 returned per collection",
+  "main": "806cc7b4509fd93bae652f9545d32d95529f8281",
+  "open_prs": [
+    {
+      "number": 15,
+      "sha": "fa5835f6fd2c1f62cd9e34e14e90d492ac387242",
+      "branch": "codex/padua-lanczos-drift-20261101",
+      "base": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "draft": true,
+      "url": "https://github.com/aacchhee/padua_research/pull/15"
+    },
+    {
+      "number": 14,
+      "sha": "d04a39bb8481fa3320ea98b9d70cfb3bbf4b3878",
+      "branch": "codex/padua-mz-2d-20261101",
+      "base": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "draft": true,
+      "url": "https://github.com/aacchhee/padua_research/pull/14"
+    },
+    {
+      "number": 12,
+      "sha": "6c6e484818b8b949ab0a6b2a4b9086b6a46528c3",
+      "branch": "codex/padua-proof-attempts-2-20261101",
+      "base": "806cc7b4509fd93bae652f9545d32d95529f8281",
+      "draft": true,
+      "url": "https://github.com/aacchhee/padua_research/pull/12"
+    }
+  ],
+  "closed_prs": [
+    {
+      "number": 13,
+      "head": "7ce4c36fb1494fee2dd3bdc1bf39fc241c5b9e21",
+      "merged_at": "2026-11-01T10:25:55Z",
+      "url": "https://github.com/aacchhee/padua_research/pull/13"
+    },
+    {
+      "number": 10,
+      "head": "9fa30122fec9796ca718af210a2a13c7525038a2",
+      "merged_at": "2026-11-01T09:37:12Z",
+      "url": "https://github.com/aacchhee/padua_research/pull/10"
+    },
+    {
+      "number": 9,
+      "head": "752ba068589683afe644b505d673f8da1529cbf0",
+      "merged_at": "2026-11-01T11:05:27Z",
+      "url": "https://github.com/aacchhee/padua_research/pull/9"
+    },
+    {
+      "number": 8,
+      "head": "6eeec5b3a3d48c4bde198d9cc6c170dd92674bdb",
+      "merged_at": "2026-11-01T09:17:10Z",
+      "url": "https://github.com/aacchhee/padua_research/pull/8"
+    },
+    {
+      "number": 11,
+      "head": "1406ef74a76d9160324596447a831470b93c398b",
+      "merged_at": "2026-11-01T10:47:08Z",
+      "url": "https://github.com/aacchhee/padua_research/pull/11"
+    },
+    {
+      "number": 6,
+      "head": "b46b4dea18ce2c933489a211b0b6819dfd32ca70",
+      "merged_at": "2026-11-01T10:19:03Z",
+      "url": "https://github.com/aacchhee/padua_research/pull/6"
+    },
+    {
+      "number": 5,
+      "head": "da679224b50d2210689c92e5a69d5a4d181afe3c",
+      "merged_at": "2026-11-01T07:14:16Z",
+      "url": "https://github.com/aacchhee/padua_research/pull/5"
+    },
+    {
+      "number": 4,
+      "head": "a4331a13301ee4a9905c8204c26bff5f9fdf246e",
+      "merged_at": "2026-11-01T07:14:15Z",
+      "url": "https://github.com/aacchhee/padua_research/pull/4"
+    },
+    {
+      "number": 3,
+      "head": "8ee04f4e5db46dd25fe5752ce605dde27098aae6",
+      "merged_at": "2026-10-31T22:20:47Z",
+      "url": "https://github.com/aacchhee/padua_research/pull/3"
+    },
+    {
+      "number": 2,
+      "head": "317a26597dedc9adc9cfc6a26fa00078df7d29e4",
+      "merged_at": "2026-10-31T21:42:07Z",
+      "url": "https://github.com/aacchhee/padua_research/pull/2"
+    },
+    {
+      "number": 1,
+      "head": "5a5f09f9768f4c2b28a82eb85ed5be8bd3c797e5",
+      "merged_at": "2026-10-31T13:51:13Z",
+      "url": "https://github.com/aacchhee/padua_research/pull/1"
+    }
+  ],
+  "closed_unmerged": [],
+  "refresh_note": "PR12 advanced during response; final recheck uses6c6e4848; original published A2 source pin remains12e9cf45."
+}

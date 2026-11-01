@@ -17,4 +17,4 @@ Active MZ campaign: [log](mz-constants/LOG.md), [report](mz-constants/report.md)
 
 ## Padua MZ 2D campaign — PR14 final registration
 
-[padua-mz-2d-20261101](padua-mz-2d-20261101/LOG.md): signed Lebesgue Padua MZ campaign; PD-T106–117, PD-N044–053, IDEA-210–227, LIT-427–428 plus five source-ID reuses. Stage AUDIT, required Claude audit PENDING, draft PR14 not ready.
+[padua-mz-2d-20261101](padua-mz-2d-20261101/LOG.md): signed Lebesgue Padua MZ campaign; PD-T106–117, PD-N044–053, IDEA-210–227, LIT-427–428 plus five source-ID reuses. Claude audit-01 accepted scoped mathematics; documentation-only response-01 complete. Stage PR; PR14 stays draft pending AC merge order and integration preparation.
