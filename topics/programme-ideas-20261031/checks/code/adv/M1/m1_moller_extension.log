@@ -19,3 +19,9 @@ triangle n=2 | r= 3 rank= 2 Möller N= 4 |  8/8  | best res 7.3e-17 | inside [2,
 triangle n=3 | r= 6 rank= 2 Möller N= 7 |  7/8  | best res 9.8e-17 | inside [7] / 7, min weight 1.26e-01, local dim [0]
 triangle n=4 | r=10 rank= 4 Möller N=12 |  3/8  | best res 1.9e-16 | inside [12] / 12, min weight 5.30e-02, local dim [0]
 triangle n=5 | r=15 rank= 4 Möller N=17 |  0/8  | best res 1.4e-02 | no converged solution (best residual 1.4e-02)
+triangle n=6 | r=21 rank= 6 Möller N=24 |  0/8  | best res 9.7e-03 | no converged solution (best residual 9.7e-03)
+jacobi   n=2 | r= 3 rank= 2 Möller N= 4 |  8/8  | best res 1.4e-16 | inside [3, 4] / 4, min weight 4.66e-02, local dim [2]
+jacobi   n=3 | r= 6 rank= 2 Möller N= 7 |  8/8  | best res 3.7e-16 | inside [7] / 7, min weight 4.19e-02, local dim [0]
+jacobi   n=4 | r=10 rank= 4 Möller N=12 |  3/8  | best res 6.1e-16 | inside [11] / 12, min weight 4.07e-03, local dim [0]
+jacobi   n=5 | r=15 rank= 4 Möller N=17 |  0/8  | best res 1.8e-02 | no converged solution (best residual 1.8e-02)
+jacobi   n=6 | r=21 rank= 6 Möller N=24 |  0/8  | best res 1.5e-02 | no converged solution (best residual 1.5e-02)
