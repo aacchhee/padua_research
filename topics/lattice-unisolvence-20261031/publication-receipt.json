@@ -1,0 +1,25 @@
+{
+  "pr": "https://github.com/aacchhee/padua_research/pull/4",
+  "draft": true,
+  "target": "main",
+  "target_parent": "08fafe62d9798385dfafaacc9a41344272737e68",
+  "reviewed_scientific_head": "5d6c76c06ec27f61af57f499dab649f01454bad9",
+  "impact": "publication links and enclosing content manifest only; no scientific claim/status/code/evidence changes",
+  "developer_identity_checks": [
+    {
+      "manifest": "C0/hashes.txt",
+      "verified": 11
+    },
+    {
+      "manifest": "C1/hashes.txt",
+      "verified": 23
+    },
+    {
+      "manifest": "C3/checkpoint.sha256",
+      "verified": 25
+    }
+  ],
+  "frozen_zip_sha256": "7b173b14f12eb73661e165e544f189a42faa13c08d94e957126a08eb7b7ba53a",
+  "required_audit": "Claude Opus5.5 xhigh PENDING",
+  "stage": "AUDIT"
+}

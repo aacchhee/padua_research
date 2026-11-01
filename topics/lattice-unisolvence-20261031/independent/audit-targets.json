@@ -1,0 +1,653 @@
+{
+  "assigned_model": "gpt-6-astra",
+  "assigned_reasoning_effort": "xhigh",
+  "auditor": "Codex adversarial subagent /root/adversarial",
+  "date_utc": "2026-10-31",
+  "developer_manifests_verified": [
+    {
+      "all_hashes_match": true,
+      "checked_entries": 11,
+      "path": "topics/lattice-unisolvence-20261031/directions/C0/hashes.txt",
+      "sha256": "0d9fa124dc9c127a39c68a997d02fc7d607896067c4b7866e0b63ed82203c150"
+    },
+    {
+      "all_hashes_match": true,
+      "checked_entries": 23,
+      "path": "topics/lattice-unisolvence-20261031/directions/C1/hashes.txt",
+      "sha256": "862777d9726a914c3df87821d7fec4537531861439dfcca04a9a3cff9357c280"
+    },
+    {
+      "all_hashes_match": true,
+      "checked_entries": 25,
+      "path": "topics/lattice-unisolvence-20261031/directions/C3/checkpoint.sha256",
+      "sha256": "0ebac3f6b36e711eaaf054e13a46523eeedf0a60820442d0379ce1422ea1285a"
+    }
+  ],
+  "exclusions": [
+    "Global/root metadata, state registries, protocol records, integration manifests and this manifest/report are excluded from target pinning to avoid cycles.",
+    "Reading these records is not complete-paper reading or proof inheritance.",
+    "Floating outputs remain MEASURED; numerical replay does not certify exact nonvanishing or asymptotic growth."
+  ],
+  "independent_evidence": {
+    "topics/lattice-unisolvence-20261031/independent/c0-rerun/catalogue.json": {
+      "bytes": 203368,
+      "sha256": "21cd7610051d7f51e8578051da164f73ef112d9081765cea7156b26f01441430"
+    },
+    "topics/lattice-unisolvence-20261031/independent/c0-rerun/count-result.json": {
+      "bytes": 1260,
+      "sha256": "fc2130d8c30ae5608d7b9549812df1f6fb183b69dff5b4ee0281fe57505f0ae0"
+    },
+    "topics/lattice-unisolvence-20261031/independent/c0-rerun/count-trials.json": {
+      "bytes": 168359,
+      "sha256": "8d9d213e0725e6cc8d32b53fd71ea5220678fcb99dec0e22cd6149b8ca37b0c9"
+    },
+    "topics/lattice-unisolvence-20261031/independent/c1-extension-comparison.json": {
+      "bytes": 320,
+      "sha256": "2ae3a5dce4ee94331705b522873134d79c2c7667cbe090f64588626d8476cf83"
+    },
+    "topics/lattice-unisolvence-20261031/independent/c1-extension-rerun.json": {
+      "bytes": 18243,
+      "sha256": "487878fcb02aed7232847361a457fde0bb606b71de4d0077d4c0bc22e6abc75e"
+    },
+    "topics/lattice-unisolvence-20261031/independent/c1-extension-rerun.log": {
+      "bytes": 9355,
+      "sha256": "f4fe4dd9af3ce030d968339b895d1fbd2b09684fe30913f2949d1c1fa0105d4a"
+    },
+    "topics/lattice-unisolvence-20261031/independent/c1-gram-rerun.json": {
+      "bytes": 4917,
+      "sha256": "a015034f85e2ff47e390e8d4bc0262fd9f312c50d0fbb0382e4b0645e92ab475"
+    },
+    "topics/lattice-unisolvence-20261031/independent/c1-gram-rerun.log": {
+      "bytes": 4147,
+      "sha256": "7c74b77e017200915872b279f95bbd793a5070923fa95147e23aa23343d2cf0a"
+    },
+    "topics/lattice-unisolvence-20261031/independent/c1-later-rerun-comparison.json": {
+      "bytes": 553,
+      "sha256": "47f830496bfcb9f090a3e8a6bd6fd33e285c7e9b9c73fb138546212c019eb0a4"
+    },
+    "topics/lattice-unisolvence-20261031/independent/c1-reconstruction.json": {
+      "bytes": 929,
+      "sha256": "81bd57719e0481d59f3d81d1e00d8c76a51c4edcc6f99f9b3567cce8d71a1540"
+    },
+    "topics/lattice-unisolvence-20261031/independent/c1-rectangle-check.json": {
+      "bytes": 203,
+      "sha256": "cc7c8b0005126bb624ed77aab0d35a42681835744f9caa9059083602ab5cb455"
+    },
+    "topics/lattice-unisolvence-20261031/independent/c1-rerun.json": {
+      "bytes": 44015,
+      "sha256": "0275afeb6d6f4def48200911b58fc17e2d8331f6686c37684966abd264a42247"
+    },
+    "topics/lattice-unisolvence-20261031/independent/c1-rerun.log": {
+      "bytes": 5077,
+      "sha256": "7508e050d2241b52185d2cabb957cad4095030a93fdb48540d7160d531a09306"
+    },
+    "topics/lattice-unisolvence-20261031/independent/c1-stability-rerun.json": {
+      "bytes": 29003,
+      "sha256": "b0ec03829631a2da48d8e09b4625c183281019156e19d7afe6aa8db140a90fcf"
+    },
+    "topics/lattice-unisolvence-20261031/independent/c1-stability-rerun.log": {
+      "bytes": 20377,
+      "sha256": "e4194bec66261a7a0f7ca1c058b8407d4ee863a58615db516b1a7fb395d4aeb4"
+    },
+    "topics/lattice-unisolvence-20261031/independent/c1-symbolic-rerun.json": {
+      "bytes": 2179,
+      "sha256": "07ad11b7425720a9b18e3051513bbf29ce310ea33916af8bd6a844ba465c0b43"
+    },
+    "topics/lattice-unisolvence-20261031/independent/c1-symbolic-rerun.log": {
+      "bytes": 1479,
+      "sha256": "87c1f345cb8d1882796ff87cf235d198bfe370861914d208cf352da7fc87e036"
+    },
+    "topics/lattice-unisolvence-20261031/independent/c3-lebesgue-rerun.json": {
+      "bytes": 69143,
+      "sha256": "4ddecacce07f85d61c78b444333b6658aeff4ca2528da3f49b80ccf46fea3546"
+    },
+    "topics/lattice-unisolvence-20261031/independent/c3-lowdegree-rerun.json": {
+      "bytes": 2940,
+      "sha256": "c1cd7fd486d5471b463408098cf2122ab2d886f836fbcef7495ca084f1d9db1d"
+    },
+    "topics/lattice-unisolvence-20261031/independent/c3-obstructions-rerun.json": {
+      "bytes": 139847,
+      "sha256": "7aa20154d9f681d66d991cc88dae65632059d6d9250d58070a4432a96269c5df"
+    },
+    "topics/lattice-unisolvence-20261031/independent/c3-records-check.json": {
+      "bytes": 274,
+      "sha256": "20420e0bc2503fd23c4f5767553e957fe4531c36c02a488506e98d606758c83e"
+    },
+    "topics/lattice-unisolvence-20261031/independent/c3-rerun.json": {
+      "bytes": 535225,
+      "sha256": "b2010a96cee00ad546ebd5bd2075f894f081e8bf616d2ef0b13d1aa711b88b24"
+    },
+    "topics/lattice-unisolvence-20261031/independent/c3-structure-rerun.json": {
+      "bytes": 39835,
+      "sha256": "10a589590b2cb409b0d54c18dab2f2f37f11edfe28ae9a82bb2e5d692555e2d5"
+    },
+    "topics/lattice-unisolvence-20261031/independent/commands.md": {
+      "bytes": 6009,
+      "sha256": "4963a1be0ec1415897dea36c16fb3b8218077bd482a7f3d735547b60b50ef474"
+    },
+    "topics/lattice-unisolvence-20261031/independent/count-reconstruction.json": {
+      "bytes": 1097,
+      "sha256": "4ab2d0fdb27f217291dd2e7d920f04c4e492abc8131d537e9aba6705bda61f31"
+    },
+    "topics/lattice-unisolvence-20261031/independent/gram-reconstruction.json": {
+      "bytes": 2652,
+      "sha256": "d60c245edcd2ecd2d84539cfad0acd123eeb2dbba589679ee3fd47d65f1e90ef"
+    },
+    "topics/lattice-unisolvence-20261031/independent/literature-crosscheck.md": {
+      "bytes": 2781,
+      "sha256": "2410d442c8f009b0bf59bc8b6d721d74ada583b8e4c57a28b9dbef422f912430"
+    },
+    "topics/lattice-unisolvence-20261031/independent/lowdegree-reconstruction.json": {
+      "bytes": 679,
+      "sha256": "da69dec80ca0544a605c54fe5162f9533354ae964274f19f478305aa7d518128"
+    },
+    "topics/lattice-unisolvence-20261031/independent/mathematical-reconstruction.md": {
+      "bytes": 10573,
+      "sha256": "1bc79bc283409372786d6449012b77951e1de5bed994aae7dcd02430f3723186"
+    },
+    "topics/lattice-unisolvence-20261031/independent/numerical-rerun-comparison.json": {
+      "bytes": 2474,
+      "sha256": "c610159914c5a5bf736b494c3ab2fb8a43c1431a0fbcf6f3aeed5413ba9c661e"
+    },
+    "topics/lattice-unisolvence-20261031/independent/obstruction-reconstruction.json": {
+      "bytes": 703,
+      "sha256": "5d544fa5784bf8390cb3a412aa1c1b9a4915dcc3a41bd251bc33f6f357834289"
+    },
+    "topics/lattice-unisolvence-20261031/independent/rank-reconstruction.json": {
+      "bytes": 657,
+      "sha256": "7633bd0c508d3bec72b34a9a1c787508f2efad0913e9506c0cdce0ab683170c7"
+    },
+    "topics/lattice-unisolvence-20261031/independent/reconstruct_c1.py": {
+      "bytes": 4627,
+      "sha256": "6a6c7c2db3a8542cd80f0330089ac56ccbc8a1e254ed8a2cac4dd2bfc1a66bab"
+    },
+    "topics/lattice-unisolvence-20261031/independent/reconstruct_count.py": {
+      "bytes": 4733,
+      "sha256": "bcb632572803d04af16c8e06b8fe3326b09d680c10f5bcefdf02dc41faa6206f"
+    },
+    "topics/lattice-unisolvence-20261031/independent/reconstruct_gram.py": {
+      "bytes": 3038,
+      "sha256": "ad892176a2dcb62072a2985988fa4fb2515c88333358998fa9cf98aeb8857b5c"
+    },
+    "topics/lattice-unisolvence-20261031/independent/reconstruct_lowdegree.py": {
+      "bytes": 2711,
+      "sha256": "d7def7be2ef4355ddcba5f4c86e3b3eb3d28ccae74157e02590db3db2a670247"
+    },
+    "topics/lattice-unisolvence-20261031/independent/reconstruct_obstructions.py": {
+      "bytes": 4427,
+      "sha256": "30492401bf80111361bcdb2f70a8b1cba119f5c8961030ae4859e2c3d10be414"
+    },
+    "topics/lattice-unisolvence-20261031/independent/reconstruct_rank.py": {
+      "bytes": 3800,
+      "sha256": "9e22c5811d8c0dfd3ae538cd978c8c197892c18df58b632218fb65e5e17ec286"
+    },
+    "topics/lattice-unisolvence-20261031/independent/reconstruct_row_moments.py": {
+      "bytes": 3612,
+      "sha256": "b7c107b81e298a9d4e03d7da9c9167d611940db66d7fe49684db028e774f505a"
+    },
+    "topics/lattice-unisolvence-20261031/independent/reconstruct_structure.py": {
+      "bytes": 4395,
+      "sha256": "82e3d4271e1a87287c001cc315ca1eae4cace29c6fd90f84843b7bce0e290f39"
+    },
+    "topics/lattice-unisolvence-20261031/independent/row-moments-reconstruction.json": {
+      "bytes": 936,
+      "sha256": "f6d656d6e77c70ae27413dd217632d59191b522f0c2de3c0abb95d74f49d5a9f"
+    },
+    "topics/lattice-unisolvence-20261031/independent/structure-reconstruction.json": {
+      "bytes": 3099,
+      "sha256": "c76461df50df86c44b4da838d6882a62c6fcbbe5e6e82f2fa057a74c651552fd"
+    }
+  },
+  "rules_sha_reported_by_orchestrator": "e949ef06895acd5463cdf8df7e0e5f795218f70f",
+  "runtime_model_fingerprint": "not exposed; assignment reported, not independently attested",
+  "schema": "independent-science-audit-targets-v1",
+  "scope": "Final C0, C3, and C1 scientific freeze; supplementary audit, not required Claude audit",
+  "targets": {
+    "literature/lattice-unisolvence/baseline.md": {
+      "bytes": 3613,
+      "coverage": "Review of attributed record; primary excerpt scope is separately specified in literature-crosscheck.md.",
+      "kind": "literature-record",
+      "sha256": "85e7fc4a7a9d5e5e5bd44607f0ddfbee5b469b3caf1efcce95bf3b95d289402a"
+    },
+    "literature/lattice-unisolvence/candidate-screen.md": {
+      "bytes": 6991,
+      "coverage": "Review of attributed record; primary excerpt scope is separately specified in literature-crosscheck.md.",
+      "kind": "literature-record",
+      "sha256": "015b454716f92554b475d9b475d21deec1502a81cb09977d73c7fe015369bd49"
+    },
+    "literature/lattice-unisolvence/comparison.md": {
+      "bytes": 4535,
+      "coverage": "Review of attributed record; primary excerpt scope is separately specified in literature-crosscheck.md.",
+      "kind": "literature-record",
+      "sha256": "6d51058de07ac74e561f11e7cc1ca80db3bbc3162e620ee63c6f245671811a7f"
+    },
+    "literature/lattice-unisolvence/records/bos-demarchi-vianello-2017.md": {
+      "bytes": 1850,
+      "coverage": "Review of attributed record; primary excerpt scope is separately specified in literature-crosscheck.md.",
+      "kind": "literature-record",
+      "sha256": "bc2c99ed1cce0eb0c08da85b1a043b62dd14e9c1c420270ab04a9fd36c40f7c0"
+    },
+    "literature/lattice-unisolvence/records/caliari-demarchi-vianello-2008.md": {
+      "bytes": 2029,
+      "coverage": "Review of attributed record; primary excerpt scope is separately specified in literature-crosscheck.md.",
+      "kind": "literature-record",
+      "sha256": "aa42279daa1bf6bee483b50877e9e49844d64b07920aa357b8012b1ecc443f73"
+    },
+    "literature/lattice-unisolvence/records/camargo-demarchi-2015.md": {
+      "bytes": 1801,
+      "coverage": "Review of attributed record; primary excerpt scope is separately specified in literature-crosscheck.md.",
+      "kind": "literature-record",
+      "sha256": "c64e8da35329e6177797f008c15b4f1b6bc2df85cda87bc2d18b76afa3733503"
+    },
+    "literature/lattice-unisolvence/records/cao-ghimire-wang-2022.md": {
+      "bytes": 1743,
+      "coverage": "Review of attributed record; primary excerpt scope is separately specified in literature-crosscheck.md.",
+      "kind": "literature-record",
+      "sha256": "dc7fe8fc8c8543f2180c60dfebb786efb5a3815abd14b40e55ed9766fcb6bffe"
+    },
+    "literature/lattice-unisolvence/records/cools-poppe-2011.md": {
+      "bytes": 1750,
+      "coverage": "Review of attributed record; primary excerpt scope is separately specified in literature-crosscheck.md.",
+      "kind": "literature-record",
+      "sha256": "07771af29ddab0c488321396e8afa55f32f614e746cc1738884986502e6106d2"
+    },
+    "literature/lattice-unisolvence/records/demarchi-2022.md": {
+      "bytes": 1858,
+      "coverage": "Review of attributed record; primary excerpt scope is separately specified in literature-crosscheck.md.",
+      "kind": "literature-record",
+      "sha256": "c8784df0eea2cd1e90b5aa85242cd212ef43bf53d71ea3f3c52f6fdac33de15d"
+    },
+    "literature/lattice-unisolvence/records/demarchi-usevich-2014.md": {
+      "bytes": 1789,
+      "coverage": "Review of attributed record; primary excerpt scope is separately specified in literature-crosscheck.md.",
+      "kind": "literature-record",
+      "sha256": "c409232ffd26c85a9ba2e1ab41d097520a61315e695f1b6b401aa0542bb049a0"
+    },
+    "literature/lattice-unisolvence/records/demarchi-vianello-xu-2009.md": {
+      "bytes": 1728,
+      "coverage": "Review of attributed record; primary excerpt scope is separately specified in literature-crosscheck.md.",
+      "kind": "literature-record",
+      "sha256": "ee98879d3eeddda250a42b817c619f1e3b5a22f9bddbda43603d8a167b425b1e"
+    },
+    "literature/lattice-unisolvence/records/dencker-erb-2017.md": {
+      "bytes": 1865,
+      "coverage": "Review of attributed record; primary excerpt scope is separately specified in literature-crosscheck.md.",
+      "kind": "literature-record",
+      "sha256": "9f39e33734ec73913029d80b8f398a22284681161c49c44c02fe460245c59bfc"
+    },
+    "literature/lattice-unisolvence/records/dencker-erb-unifying-2017.md": {
+      "bytes": 1872,
+      "coverage": "Review of attributed record; primary excerpt scope is separately specified in literature-crosscheck.md.",
+      "kind": "literature-record",
+      "sha256": "cff900a05369686ef27a14c39f1bcae24dc0e4cc0769daee32085c10a7bfb54a"
+    },
+    "literature/lattice-unisolvence/records/erb-kaethner-ahlborg-buzug-2016.md": {
+      "bytes": 2016,
+      "coverage": "Review of attributed record; primary excerpt scope is separately specified in literature-crosscheck.md.",
+      "kind": "literature-record",
+      "sha256": "ba5b5dd03755dc739619dcf230bd4c20a960e7646655d8caeb650946e39bfdb4"
+    },
+    "literature/lattice-unisolvence/records/floater-2017.md": {
+      "bytes": 1890,
+      "coverage": "Review of attributed record; primary excerpt scope is separately specified in literature-crosscheck.md.",
+      "kind": "literature-record",
+      "sha256": "c4a8c05627754fd879df6d951918865747a3fc60ab766156f3b1ebb3286fca12"
+    },
+    "literature/lattice-unisolvence/records/harris-2015.md": {
+      "bytes": 1775,
+      "coverage": "Review of attributed record; primary excerpt scope is separately specified in literature-crosscheck.md.",
+      "kind": "literature-record",
+      "sha256": "db1c23ce322a83f9ec91edf6550e6dc7a8775c243dfd27552a56daebdbca973e"
+    },
+    "literature/lattice-unisolvence/records/harris-2018.md": {
+      "bytes": 1696,
+      "coverage": "Review of attributed record; primary excerpt scope is separately specified in literature-crosscheck.md.",
+      "kind": "literature-record",
+      "sha256": "afab98b92bddcf68b59c7bcf998cdb447639600a847eaeb6a56a54eba85b17db"
+    },
+    "literature/lattice-unisolvence/records/harris-simanek-2021.md": {
+      "bytes": 1653,
+      "coverage": "Review of attributed record; primary excerpt scope is separately specified in literature-crosscheck.md.",
+      "kind": "literature-record",
+      "sha256": "ec9d9a31eeef6537425688d10a02f001ddf9955f61cac4cf618dc499de9f4d1f"
+    },
+    "literature/lattice-unisolvence/records/lower-sets-2015.md": {
+      "bytes": 1818,
+      "coverage": "Review of attributed record; primary excerpt scope is separately specified in literature-crosscheck.md.",
+      "kind": "literature-record",
+      "sha256": "931bed9196fdb2913298fd1aeb809afe4cf33796746facfa1ba7c171aa8f5285"
+    },
+    "literature/lattice-unisolvence/records/natural-lattices-2013.md": {
+      "bytes": 1950,
+      "coverage": "Review of attributed record; primary excerpt scope is separately specified in literature-crosscheck.md.",
+      "kind": "literature-record",
+      "sha256": "69aeff0d591005b26e969a0cb70d05d8b1aead768fbc5685adc7efaa8f64f00d"
+    },
+    "literature/lattice-unisolvence/records/padua-2006.md": {
+      "bytes": 1774,
+      "coverage": "Review of attributed record; primary excerpt scope is separately specified in literature-crosscheck.md.",
+      "kind": "literature-record",
+      "sha256": "9a3cd98ce3807fced60bbac509139bbe756c0f9a5e2bff84ce8e8f29e20d31fc"
+    },
+    "literature/lattice-unisolvence/records/padua-ideal-2007.md": {
+      "bytes": 1759,
+      "coverage": "Review of attributed record; primary excerpt scope is separately specified in literature-crosscheck.md.",
+      "kind": "literature-record",
+      "sha256": "a725278785c3c4330a9bff9db816f362570568a46429904cc9f20a741a69ef9c"
+    },
+    "literature/lattice-unisolvence/records/sorevik-nome-2016.md": {
+      "bytes": 1777,
+      "coverage": "Review of attributed record; primary excerpt scope is separately specified in literature-crosscheck.md.",
+      "kind": "literature-record",
+      "sha256": "95df9efd84abccb3ecdc69bca0215deedb8fb9e96e7548b02e0419fb8f300881"
+    },
+    "literature/lattice-unisolvence/records/xu-1996.md": {
+      "bytes": 1933,
+      "coverage": "Review of attributed record; primary excerpt scope is separately specified in literature-crosscheck.md.",
+      "kind": "literature-record",
+      "sha256": "5a4f6fcaec2fb2f05b0853b32ec8ee67ffa8c35294b4daed41f68571bb90180c"
+    },
+    "literature/lattice-unisolvence/records/xu-2024.md": {
+      "bytes": 1630,
+      "coverage": "Review of attributed record; primary excerpt scope is separately specified in literature-crosscheck.md.",
+      "kind": "literature-record",
+      "sha256": "0d7e52b0a855e8c06c980eb66ffc64930e5d49a1b6c52bec1752abfc35851d9c"
+    },
+    "literature/lattice-unisolvence/search-log.md": {
+      "bytes": 13807,
+      "coverage": "Review of attributed record; primary excerpt scope is separately specified in literature-crosscheck.md.",
+      "kind": "literature-record",
+      "sha256": "c47d056749d4dd8842a74b2dfddc5bf4fe56d9a7d76f503340308e8b3a97362e"
+    },
+    "topics/lattice-unisolvence-20261031/directions/C0/candidates.md": {
+      "bytes": 9085,
+      "kind": "developer-scientific-source",
+      "sha256": "9f8c4dd6d27a571c2f4c237312102d3cd6fec6b29946cb89dd4fca843a799638"
+    },
+    "topics/lattice-unisolvence-20261031/directions/C0/catalogue.json": {
+      "bytes": 203368,
+      "kind": "developer-scientific-source",
+      "sha256": "21cd7610051d7f51e8578051da164f73ef112d9081765cea7156b26f01441430"
+    },
+    "topics/lattice-unisolvence-20261031/directions/C0/count-result.json": {
+      "bytes": 1260,
+      "kind": "developer-scientific-source",
+      "sha256": "fc2130d8c30ae5608d7b9549812df1f6fb183b69dff5b4ee0281fe57505f0ae0"
+    },
+    "topics/lattice-unisolvence-20261031/directions/C0/count-trials.json": {
+      "bytes": 168359,
+      "kind": "developer-scientific-source",
+      "sha256": "8d9d213e0725e6cc8d32b53fd71ea5220678fcb99dec0e22cd6149b8ca37b0c9"
+    },
+    "topics/lattice-unisolvence-20261031/directions/C0/frozen-scope.md": {
+      "bytes": 3646,
+      "kind": "developer-scientific-source",
+      "sha256": "dea3907aa6d382a2e878d728d2dc9b7a86a0e05204c41bdef8aca4624fd88c1c"
+    },
+    "topics/lattice-unisolvence-20261031/directions/C0/rounds.md": {
+      "bytes": 5067,
+      "kind": "developer-scientific-source",
+      "sha256": "e175e4a9ad1e57161e70c49b1997519cc407787f29b96b902f66b4f922ae9dd7"
+    },
+    "topics/lattice-unisolvence-20261031/directions/C1/candidates.md": {
+      "bytes": 10402,
+      "kind": "developer-scientific-source",
+      "sha256": "0e200b0f4cc8dc7093f5b92c74140c8978615c303c6d99a5bdbb0e8f96a53f09"
+    },
+    "topics/lattice-unisolvence-20261031/directions/C1/extension.json": {
+      "bytes": 18244,
+      "kind": "developer-scientific-source",
+      "sha256": "0b7dd941ebd269eef37daa98259e784872af08ceccce6522035b472691c04948"
+    },
+    "topics/lattice-unisolvence-20261031/directions/C1/extension.md": {
+      "bytes": 1960,
+      "kind": "developer-scientific-source",
+      "sha256": "3bb5c9c9c9bf87b6289d28343245a4b8462baad1f13101d76e96e5e11c094f46"
+    },
+    "topics/lattice-unisolvence-20261031/directions/C1/frozen-scope.md": {
+      "bytes": 7725,
+      "kind": "developer-scientific-source",
+      "sha256": "7ba1ee9cfae12815b6bb49cea91418a8855652adcc7f70cb15aadd2825fdb216"
+    },
+    "topics/lattice-unisolvence-20261031/directions/C1/gram.json": {
+      "bytes": 4917,
+      "kind": "developer-scientific-source",
+      "sha256": "a015034f85e2ff47e390e8d4bc0262fd9f312c50d0fbb0382e4b0645e92ab475"
+    },
+    "topics/lattice-unisolvence-20261031/directions/C1/launch.md": {
+      "bytes": 1871,
+      "kind": "developer-scientific-source",
+      "sha256": "27b513eaefc55ec86600e38227b7ecfcc52abb1357da4e4626a54d0c06620d96"
+    },
+    "topics/lattice-unisolvence-20261031/directions/C1/results.json": {
+      "bytes": 44013,
+      "kind": "developer-scientific-source",
+      "sha256": "e2576de67528fefae7c04d3f1dfe8f7d0626bb0cd0518a6295d9223bb27d00c9"
+    },
+    "topics/lattice-unisolvence-20261031/directions/C1/rounds.md": {
+      "bytes": 7662,
+      "kind": "developer-scientific-source",
+      "sha256": "41a930f64b31766a98c8441e866497d56d0ba378526eba412b78b7c70d51e331"
+    },
+    "topics/lattice-unisolvence-20261031/directions/C1/stability.json": {
+      "bytes": 29012,
+      "kind": "developer-scientific-source",
+      "sha256": "35b3ce51f4671be608fe898733987ede2e103ab5740f10d919143be64e5969fb"
+    },
+    "topics/lattice-unisolvence-20261031/directions/C1/symbolic.json": {
+      "bytes": 2179,
+      "kind": "developer-scientific-source",
+      "sha256": "07ad11b7425720a9b18e3051513bbf29ce310ea33916af8bd6a844ba465c0b43"
+    },
+    "topics/lattice-unisolvence-20261031/directions/C3/candidates.md": {
+      "bytes": 7910,
+      "kind": "developer-scientific-source",
+      "sha256": "21f07e0ba3ff9b3ce84b82dbf7a29edf689844c080687a66ccd986679e2b4b51"
+    },
+    "topics/lattice-unisolvence-20261031/directions/C3/evidence.md": {
+      "bytes": 7618,
+      "kind": "developer-scientific-source",
+      "sha256": "078567d91145603b253e41c155767e317da4d154283358d0cb28555dba2991c8"
+    },
+    "topics/lattice-unisolvence-20261031/directions/C3/lebesgue.json": {
+      "bytes": 69136,
+      "kind": "developer-scientific-source",
+      "sha256": "ee98828d9fe4b790c02059a60e00bacddcd9bceb835d90706c03cfb03bedb3a0"
+    },
+    "topics/lattice-unisolvence-20261031/directions/C3/lowdegree.json": {
+      "bytes": 2933,
+      "kind": "developer-scientific-source",
+      "sha256": "c23ee5bf0ca2bc22576628965e882360e1ea66821f50d1e1d7030791b3650b8d"
+    },
+    "topics/lattice-unisolvence-20261031/directions/C3/obstructions.json": {
+      "bytes": 139840,
+      "kind": "developer-scientific-source",
+      "sha256": "d61b0a60f1b99aad93b96514ef78f05f5e1542514d6db7756fbd916a54a76def"
+    },
+    "topics/lattice-unisolvence-20261031/directions/C3/pattern-outcomes.tsv": {
+      "bytes": 109800,
+      "kind": "developer-scientific-source",
+      "sha256": "f3cccddff5e60a12fdb1cad4e51ca8cc6fd237b53dfc626ae6121d97ba645c8b"
+    },
+    "topics/lattice-unisolvence-20261031/directions/C3/plan.md": {
+      "bytes": 11070,
+      "kind": "developer-scientific-source",
+      "sha256": "e3e39179d93b3c3844f71a478aa50af9827dac351fec1e2dd2058d8fac46041a"
+    },
+    "topics/lattice-unisolvence-20261031/directions/C3/ranks.json": {
+      "bytes": 535224,
+      "kind": "developer-scientific-source",
+      "sha256": "560471d0053fef785bcee9c64f1b7fe9a384e24c0c74ef3d4cd58b9d6c703130"
+    },
+    "topics/lattice-unisolvence-20261031/directions/C3/structure.json": {
+      "bytes": 39828,
+      "kind": "developer-scientific-source",
+      "sha256": "d5c34e03d7c62a0f0f63470a742ff1e6b26f4dd774bb1c916e6ebee1416144be"
+    },
+    "tracks/lattice-unisolvence/code/c0_catalogue.py": {
+      "bytes": 7000,
+      "kind": "developer-scientific-source",
+      "sha256": "67a09448f57ecd9c8aad081152e4c2fd3b103f2a635a0932bb62a87c18007a77"
+    },
+    "tracks/lattice-unisolvence/code/c1_extension.py": {
+      "bytes": 2388,
+      "kind": "developer-scientific-source",
+      "sha256": "36ef0ead1d9cd944352fbfb71e4917e2c90dcb00e5713aefa4eb7c7d75a82406"
+    },
+    "tracks/lattice-unisolvence/code/c1_gram.py": {
+      "bytes": 3600,
+      "kind": "developer-scientific-source",
+      "sha256": "dc7c97e4214b899ec719739f8b567d49d8513916063d51fc93ebb1c63e2a9d47"
+    },
+    "tracks/lattice-unisolvence/code/c1_mod4.py": {
+      "bytes": 8506,
+      "kind": "developer-scientific-source",
+      "sha256": "3adecb8592f7a944a333431ff7f665ba440627469dc446944097664124c1fc70"
+    },
+    "tracks/lattice-unisolvence/code/c1_stability.py": {
+      "bytes": 6306,
+      "kind": "developer-scientific-source",
+      "sha256": "7f4b7107ce9023030b2091dc44b08672d405fc8f63d5b8876271bc7481e12952"
+    },
+    "tracks/lattice-unisolvence/code/c1_symbolic.py": {
+      "bytes": 1998,
+      "kind": "developer-scientific-source",
+      "sha256": "498886ff716f8dbc94aba74fd758dc3ec003dd9f2eb5bcddc3268be4fb6ce73f"
+    },
+    "tracks/lattice-unisolvence/code/c3_lebesgue.py": {
+      "bytes": 6286,
+      "kind": "developer-scientific-source",
+      "sha256": "bf9cdb7c057f6ddf1793d99e6d338b1c1cfa37a274e5a6ac9689085f6bb3d66e"
+    },
+    "tracks/lattice-unisolvence/code/c3_lowdegree.py": {
+      "bytes": 3434,
+      "kind": "developer-scientific-source",
+      "sha256": "fb4f249058d425a684ef7a62aaf674f00527e00e0848ae368d18fad4702331dd"
+    },
+    "tracks/lattice-unisolvence/code/c3_obstructions.py": {
+      "bytes": 4176,
+      "kind": "developer-scientific-source",
+      "sha256": "9088670ef3aa95b8493b7afa6029e3f90a00a184e825e2045dd24fd8cad0f379"
+    },
+    "tracks/lattice-unisolvence/code/c3_rank.py": {
+      "bytes": 7430,
+      "kind": "developer-scientific-source",
+      "sha256": "a95afbb764838662358dc70d2fd5a7eddf335d3ae48254d29b717fa015143332"
+    },
+    "tracks/lattice-unisolvence/code/c3_records.py": {
+      "bytes": 5590,
+      "kind": "developer-scientific-source",
+      "sha256": "3aca2a2a602255d4bb38a19425b2bfd18167097a6e6ab4409ffc20712a93e39e"
+    },
+    "tracks/lattice-unisolvence/code/c3_structure.py": {
+      "bytes": 6473,
+      "kind": "developer-scientific-source",
+      "sha256": "4a0695ef40f4f2d6d451c39df469eccc9b7287701c0e4baa628eaf1b16e39fdb"
+    },
+    "tracks/lattice-unisolvence/theory/c0-catalogue.md": {
+      "bytes": 4979,
+      "kind": "developer-scientific-source",
+      "sha256": "d09d1ac89b817814ddca78ab8f17450ce26ae7c1767bc093e46c3464d0691d88"
+    },
+    "tracks/lattice-unisolvence/theory/c0-density.md": {
+      "bytes": 4041,
+      "kind": "developer-scientific-source",
+      "sha256": "015e9876ed6dd68916d0098461cafd6a26730317a49926293267692215f7168c"
+    },
+    "tracks/lattice-unisolvence/theory/c0-infinite-six.md": {
+      "bytes": 4252,
+      "kind": "developer-scientific-source",
+      "sha256": "4753fb795dc2c4283779736c0c728c88c7378e35a5daef069338a5a9eff67e1f"
+    },
+    "tracks/lattice-unisolvence/theory/c0-short-axis.md": {
+      "bytes": 2602,
+      "kind": "developer-scientific-source",
+      "sha256": "53eedc7a47191daeb076dbacd24081b3eb51d1d8489f4b5349abdc03d2abce92"
+    },
+    "tracks/lattice-unisolvence/theory/c1-chebyshev-obstruction.md": {
+      "bytes": 3500,
+      "kind": "developer-scientific-source",
+      "sha256": "9e748167332f9e7b06c1404dedc5007b21693f7705d48b7181b26066e2e46a40"
+    },
+    "tracks/lattice-unisolvence/theory/c1-counts.md": {
+      "bytes": 3089,
+      "kind": "developer-scientific-source",
+      "sha256": "9745074a27689afbea9fd994ccffa97aa90c41be0ffc290154c83de2c4e659e0"
+    },
+    "tracks/lattice-unisolvence/theory/c1-finite-evidence.md": {
+      "bytes": 4233,
+      "kind": "developer-scientific-source",
+      "sha256": "7fd84290680bbc264f6ba26b33ae5a501c864a6780b26d91805e10a35ce2f362"
+    },
+    "tracks/lattice-unisolvence/theory/c1-gram-reduction.md": {
+      "bytes": 7241,
+      "kind": "developer-scientific-source",
+      "sha256": "f608540a5f377a28a4c6055ce6e27d1097a4284d035544e753700ba14f782dbd"
+    },
+    "tracks/lattice-unisolvence/theory/c1-mixed-obstruction.md": {
+      "bytes": 4213,
+      "kind": "developer-scientific-source",
+      "sha256": "44e139857a597a56d3f31514a960d1e9bb0acfbcd702541dd693db6f4e8b2654"
+    },
+    "tracks/lattice-unisolvence/theory/c1-open-family.md": {
+      "bytes": 4173,
+      "kind": "developer-scientific-source",
+      "sha256": "d44ed082b0f03717bf75502359747fb96efcbac8618ddbc948e27f3d5fe0f24a"
+    },
+    "tracks/lattice-unisolvence/theory/c1-quadratic.md": {
+      "bytes": 5435,
+      "kind": "developer-scientific-source",
+      "sha256": "ce8db847630f6aec3ca477c8c67e7a9f13ad7762e4d767ceb85e387409ca75a6"
+    },
+    "tracks/lattice-unisolvence/theory/c1-row-moments.md": {
+      "bytes": 4381,
+      "kind": "developer-scientific-source",
+      "sha256": "e1c348381975c649a22324c29355b42cd0deb1a5959cdd86db50a6c127a78856"
+    },
+    "tracks/lattice-unisolvence/theory/c3-annihilator-certificates.md": {
+      "bytes": 3144,
+      "kind": "developer-scientific-source",
+      "sha256": "95296aeefeec436035e8f000dcd5f35fcb64ff5b54a5f92d5889f6f1e33cb03b"
+    },
+    "tracks/lattice-unisolvence/theory/c3-chebyshev-observations.md": {
+      "bytes": 4592,
+      "kind": "developer-scientific-source",
+      "sha256": "0bc3149617c8dd82af185a6dce71edf7df2f4cfbbfa2bbbefe51bf2a66c79f99"
+    },
+    "tracks/lattice-unisolvence/theory/c3-deficiency-observations.md": {
+      "bytes": 3080,
+      "kind": "developer-scientific-source",
+      "sha256": "5d5243930ecae3d2e71e98e7fdc61ed4771b2b9d57726c740ad037c21bdc688c"
+    },
+    "tracks/lattice-unisolvence/theory/c3-generic-witness-reduction.md": {
+      "bytes": 6116,
+      "kind": "developer-scientific-source",
+      "sha256": "fbc0e85cceb78662324360fed50ff0ae81db0b07fda9d39b07e3d92198ed06cc"
+    },
+    "tracks/lattice-unisolvence/theory/c3-n1-mixed-axis-obstruction.md": {
+      "bytes": 4466,
+      "kind": "developer-scientific-source",
+      "sha256": "13dce8f726ae861eb1d0ae8ff164b8d79715bccd3eaf47e95e7111b1a5ae56cd"
+    },
+    "tracks/lattice-unisolvence/theory/c3-n2-axis-factorization.md": {
+      "bytes": 5425,
+      "kind": "developer-scientific-source",
+      "sha256": "d4587aaf9519e061c13189fe468ba6a073474117a1f915e668836a44d1e25266"
+    },
+    "tracks/lattice-unisolvence/theory/c3-open-target.md": {
+      "bytes": 3363,
+      "kind": "developer-scientific-source",
+      "sha256": "63b2090aaccb8904a7f41d77b38710d259f3a9f0a427194811e99545b7dda2ef"
+    },
+    "tracks/lattice-unisolvence/theory/c3-rank-observations.md": {
+      "bytes": 4399,
+      "kind": "developer-scientific-source",
+      "sha256": "c8deb5470634fdf07f58bc3a9d7c5949573db2d961521241cd7a6fd0a49c35f5"
+    },
+    "tracks/lattice-unisolvence/theory/c3-rectangle-observations.md": {
+      "bytes": 2988,
+      "kind": "developer-scientific-source",
+      "sha256": "e25b7961a03bed68b652260fecc8491a8a2f701badcd88b7daeaed8de011a2cf"
+    }
+  }
+}

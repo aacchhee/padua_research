@@ -1,0 +1,13 @@
+{
+  "all_checks_passed": true,
+  "checker_sha256": "9e22c5811d8c0dfd3ae538cd978c8c197892c18df58b632218fb65e5e17ec286",
+  "full_rank_tests": 850,
+  "input_sha256": {
+    "topics/lattice-unisolvence-20261031/directions/C0/catalogue.json": "21cd7610051d7f51e8578051da164f73ef112d9081765cea7156b26f01441430",
+    "topics/lattice-unisolvence-20261031/directions/C3/ranks.json": "560471d0053fef785bcee9c64f1b7fe9a384e24c0c74ef3d4cd58b9d6c703130"
+  },
+  "matrix_ranks_checked": 2184,
+  "method": "Fresh lexicographic monomial matrix and incremental row-space basis; no developer code imports.",
+  "representatives_checked": 364,
+  "source_patterns_checked": 412
+}

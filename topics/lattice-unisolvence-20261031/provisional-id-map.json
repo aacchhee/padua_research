@@ -1,0 +1,401 @@
+{
+  "final_allocation": "unallocated at AC explicit provisional-ID instruction; coordinate with MZ owner before readiness",
+  "rows": [
+    {
+      "id": "PD-T?lattice-c0-codex-03",
+      "title": "Finite cardinality catalogue for potentially unisolvent single fibers",
+      "status": "MEASURED",
+      "path": "tracks/lattice-unisolvence/theory/c0-catalogue.md"
+    },
+    {
+      "id": "PD-T?lattice-c0-codex-01",
+      "title": "Density requirement for fixed congruence fibers",
+      "status": "PROVED",
+      "path": "tracks/lattice-unisolvence/theory/c0-density.md"
+    },
+    {
+      "id": "PD-T?lattice-c0-codex-02",
+      "title": "Infinite cardinality-admissible three-dimensional fibers",
+      "status": "PROVED",
+      "path": "tracks/lattice-unisolvence/theory/c0-infinite-six.md"
+    },
+    {
+      "id": "PD-N?lattice-c0-codex-01",
+      "title": "A short coordinate axis prevents total-degree unisolvence",
+      "status": "PROVED",
+      "path": "tracks/lattice-unisolvence/theory/c0-short-axis.md"
+    },
+    {
+      "id": "PD-N?lattice-c1-codex-02",
+      "title": "Infinite singular Chebyshev subsequence for the unshifted union",
+      "status": "PROVED",
+      "path": "tracks/lattice-unisolvence/theory/c1-chebyshev-obstruction.md"
+    },
+    {
+      "id": "PD-T?lattice-c1-codex-02",
+      "title": "Exact cardinality of the adjacent-mod4 union",
+      "status": "PROVED",
+      "path": "tracks/lattice-unisolvence/theory/c1-counts.md"
+    },
+    {
+      "id": "PD-T?lattice-c1-codex-06",
+      "title": "Finite mod4-union ranks and Chebyshev diagnostics",
+      "status": "MEASURED",
+      "path": "tracks/lattice-unisolvence/theory/c1-finite-evidence.md"
+    },
+    {
+      "id": "PD-T?lattice-c1-codex-04",
+      "title": "Antipodal-transversal Gram reduction and explicit character moments",
+      "status": "PROVED",
+      "path": "tracks/lattice-unisolvence/theory/c1-gram-reduction.md"
+    },
+    {
+      "id": "PD-N?lattice-c1-codex-01",
+      "title": "The quadratic mod4 determinant is not a pure axis product",
+      "status": "PROVED",
+      "path": "tracks/lattice-unisolvence/theory/c1-mixed-obstruction.md"
+    },
+    {
+      "id": "PD-T?lattice-c1-codex-05",
+      "title": "Parity-adapted adjacent-mod4 Chebyshev interpolation target",
+      "status": "OPEN",
+      "path": "tracks/lattice-unisolvence/theory/c1-open-family.md"
+    },
+    {
+      "id": "PD-T?lattice-c1-codex-01",
+      "title": "Complete six-node quadratic criterion with a mixed-axis residual",
+      "status": "PROVED",
+      "path": "tracks/lattice-unisolvence/theory/c1-quadratic.md"
+    },
+    {
+      "id": "PD-T?lattice-c1-codex-03",
+      "title": "Row-root moment criterion for total-degree interpolation",
+      "status": "PROVED",
+      "path": "tracks/lattice-unisolvence/theory/c1-row-moments.md"
+    },
+    {
+      "id": "PD-T?lattice-c3-codex-02",
+      "title": "Coordinate-layer and projected-count annihilator certificates",
+      "status": "PROVED",
+      "path": "tracks/lattice-unisolvence/theory/c3-annihilator-certificates.md"
+    },
+    {
+      "id": "PD-N?lattice-c3-codex-03",
+      "title": "Finite Chebyshev tests do not support the small-index 3D fibres as a high-quality family",
+      "status": "MEASURED",
+      "path": "tracks/lattice-unisolvence/theory/c3-chebyshev-observations.md"
+    },
+    {
+      "id": "PD-N?lattice-c3-codex-01",
+      "title": "Scoped deficiencies and annihilator certificates in the finite 3D catalogue",
+      "status": "MEASURED",
+      "path": "tracks/lattice-unisolvence/theory/c3-deficiency-observations.md"
+    },
+    {
+      "id": "PD-T?lattice-c3-codex-01",
+      "title": "Exact witnesses and a degree bound for generic grid interpolation",
+      "status": "PROVED",
+      "path": "tracks/lattice-unisolvence/theory/c3-generic-witness-reduction.md"
+    },
+    {
+      "id": "PD-N?lattice-c3-codex-02",
+      "title": "A four-point 3D congruence fibre has an essential mixed-axis condition",
+      "status": "PROVED",
+      "path": "tracks/lattice-unisolvence/theory/c3-n1-mixed-axis-obstruction.md"
+    },
+    {
+      "id": "PD-T?lattice-c3-codex-04",
+      "title": "An isolated degree-two periodic 3D fibre has axis-only factors",
+      "status": "PROVED",
+      "path": "tracks/lattice-unisolvence/theory/c3-n2-axis-factorization.md"
+    },
+    {
+      "id": "PD-T?lattice-c3-codex-05",
+      "title": "An unbounded-degree periodic 3D total-degree interpolation family",
+      "status": "OPEN",
+      "path": "tracks/lattice-unisolvence/theory/c3-open-target.md"
+    },
+    {
+      "id": "PD-T?lattice-c3-codex-03",
+      "title": "Finite exact ranks of the C0 3D congruence catalogue",
+      "status": "MEASURED",
+      "path": "tracks/lattice-unisolvence/theory/c3-rank-observations.md"
+    },
+    {
+      "id": "PD-N?lattice-c3-codex-04",
+      "title": "Exact axis-separation rectangle obstructions in finite degrees",
+      "status": "MEASURED",
+      "path": "tracks/lattice-unisolvence/theory/c3-rectangle-observations.md"
+    },
+    {
+      "id": "IDEA?lattice-c0-codex-01",
+      "title": "Bivariate bounded single-fiber catalogue",
+      "path": "topics/lattice-unisolvence-20261031/directions/C0/candidates.md",
+      "direction": "C0"
+    },
+    {
+      "id": "IDEA?lattice-c0-codex-02",
+      "title": "Trivariate bounded single-fiber catalogue",
+      "path": "topics/lattice-unisolvence-20261031/directions/C0/candidates.md",
+      "direction": "C0"
+    },
+    {
+      "id": "IDEA?lattice-c0-codex-03",
+      "title": "Boxes with a short coordinate axis",
+      "path": "topics/lattice-unisolvence-20261031/directions/C0/candidates.md",
+      "direction": "C0"
+    },
+    {
+      "id": "IDEA?lattice-c0-codex-04",
+      "title": "Primitive characters with some zero coefficient",
+      "path": "topics/lattice-unisolvence-20261031/directions/C0/candidates.md",
+      "direction": "C0"
+    },
+    {
+      "id": "IDEA?lattice-c0-codex-05",
+      "title": "Coset unions and boundary corrections",
+      "path": "topics/lattice-unisolvence-20261031/directions/C0/candidates.md",
+      "direction": "C0"
+    },
+    {
+      "id": "IDEA?lattice-c1-codex-01",
+      "title": "Adjacent-mod4 unions and parity-adapted Chebyshev labels",
+      "path": "topics/lattice-unisolvence-20261031/directions/C1/candidates.md",
+      "direction": "C1"
+    },
+    {
+      "id": "IDEA?lattice-c1-codex-02",
+      "title": "Row-root/moment kernel reduction",
+      "path": "topics/lattice-unisolvence-20261031/directions/C1/candidates.md",
+      "direction": "C1"
+    },
+    {
+      "id": "IDEA?lattice-c1-codex-03",
+      "title": "Antipodal cross-block and quarter-character inverse route",
+      "path": "topics/lattice-unisolvence-20261031/directions/C1/candidates.md",
+      "direction": "C1"
+    },
+    {
+      "id": "IDEA?lattice-c3-codex-01",
+      "title": "Generic feasibility of 3D small-index fibres",
+      "path": "topics/lattice-unisolvence-20261031/directions/C3/candidates.md",
+      "direction": "C3"
+    },
+    {
+      "id": "IDEA?lattice-c3-codex-02",
+      "title": "Extend independent-axis checkerboard criteria to 3D",
+      "path": "topics/lattice-unisolvence-20261031/directions/C3/candidates.md",
+      "direction": "C3"
+    },
+    {
+      "id": "IDEA?lattice-c3-codex-03",
+      "title": "Direct Lobatto specialization as a competitive family",
+      "path": "topics/lattice-unisolvence-20261031/directions/C3/candidates.md",
+      "direction": "C3"
+    },
+    {
+      "id": "IDEA?lattice-c3-codex-04",
+      "title": "The isolated n2 axis-factorable fibre and its naive continuation",
+      "path": "topics/lattice-unisolvence-20261031/directions/C3/candidates.md",
+      "direction": "C3"
+    },
+    {
+      "id": "IDEA?lattice-c3-codex-05",
+      "title": "Explain deficient fibres by elementary annihilator certificates",
+      "path": "topics/lattice-unisolvence-20261031/directions/C3/candidates.md",
+      "direction": "C3"
+    },
+    {
+      "id": "LIT?lattice-codex-01",
+      "title": "Biermann; Chung\u2013Yao 1977; Gasca\u2013Maeztu 1982; Carnicer\u2013Gasca: lower-set / natural-lattice interpolation provides standard unisolvent sets",
+      "path": "literature/lattice-unisolvence/baseline.md",
+      "coverage": "UNVERIFIED initial supplied baseline; named primary addenda are separate"
+    },
+    {
+      "id": "LIT?lattice-codex-02",
+      "title": "Bos\u2013Caliari\u2013De Marchi\u2013Vianello\u2013Xu 2006; Bos\u2013De Marchi\u2013Vianello\u2013Xu 2007: Padua interpolation, kernel and ideal; reported Lebesgue leading constant 4/pi\u00b2",
+      "path": "literature/lattice-unisolvence/baseline.md",
+      "coverage": "UNVERIFIED initial supplied baseline; named primary addenda are separate"
+    },
+    {
+      "id": "LIT?lattice-codex-03",
+      "title": "Xu 1996; Morrow\u2013Patterson 1978; Harris 2015/2018; Harris\u2013Simanek 2021; Cao\u2013Ghimire\u2013Wang 2022: known 2D alternation/interpolation families",
+      "path": "literature/lattice-unisolvence/baseline.md",
+      "coverage": "UNVERIFIED initial supplied baseline; named primary addenda are separate"
+    },
+    {
+      "id": "LIT?lattice-codex-04",
+      "title": "Cools\u2013Poppe 2011: Chebyshev lattices unify cubature constructions",
+      "path": "literature/lattice-unisolvence/baseline.md",
+      "coverage": "UNVERIFIED initial supplied baseline; named primary addenda are separate"
+    },
+    {
+      "id": "LIT?lattice-codex-05",
+      "title": "Dencker\u2013Erb 2017: d-dimensional Lissajous\u2013Chebyshev interpolation",
+      "path": "literature/lattice-unisolvence/baseline.md",
+      "coverage": "UNVERIFIED initial supplied baseline; named primary addenda are separate"
+    },
+    {
+      "id": "LIT?lattice-codex-06",
+      "title": "Bos\u2013De Marchi\u2013Vianello 2017: trivariate Lissajous extraction; user reports curve alone cannot give total-degree interpolation",
+      "path": "literature/lattice-unisolvence/baseline.md",
+      "coverage": "UNVERIFIED initial supplied baseline; named primary addenda are separate"
+    },
+    {
+      "id": "LIT?lattice-codex-07",
+      "title": "De Marchi\u2013Vianello\u2013Xu 2009: cube hyperinterpolation nodes",
+      "path": "literature/lattice-unisolvence/baseline.md",
+      "coverage": "UNVERIFIED initial supplied baseline; named primary addenda are separate"
+    },
+    {
+      "id": "LIT?lattice-codex-08",
+      "title": "Li\u2013Sun\u2013Xu 2009: conjectural >=n\u00b3/4 nodes for degree 2n\u22121 cube cubature",
+      "path": "literature/lattice-unisolvence/baseline.md",
+      "coverage": "UNVERIFIED initial supplied baseline; named primary addenda are separate"
+    },
+    {
+      "id": "LIT?lattice-codex-09",
+      "title": "De Marchi\u2013Usevich 2014; de Camargo\u2013De Marchi 2015: axis determinant factors",
+      "path": "literature/lattice-unisolvence/baseline.md",
+      "coverage": "UNVERIFIED initial supplied baseline; named primary addenda are separate"
+    },
+    {
+      "id": "LIT?lattice-codex-10",
+      "title": "De Marchi 2022 survey, Constr. Math. Anal. 5(1): unknown Padua analogue in d>=3; Xu arXiv:2407.09903",
+      "path": "literature/lattice-unisolvence/baseline.md",
+      "coverage": "UNVERIFIED initial supplied baseline; named primary addenda are separate"
+    },
+    {
+      "id": "LIT?lattice-codex-22",
+      "title": "bos-demarchi-vianello-2017 \u2014 Bos\u2013De Marchi\u2013Vianello, Trivariate polynomial approximation on Lissajous curves, IMA JNA37 (2017),519\u2013541",
+      "path": "literature/lattice-unisolvence/records/bos-demarchi-vianello-2017.md",
+      "coverage": "Named primary excerpts, slides or abstract only; see exact coverage/gaps"
+    },
+    {
+      "id": "LIT?lattice-codex-31",
+      "title": "caliari-demarchi-vianello-2008 \u2014 Caliari\u2013De Marchi\u2013Vianello, Bivariate Lagrange interpolation at the Padua points: Computational aspects, JCAM221 (2008),284\u2013292",
+      "path": "literature/lattice-unisolvence/records/caliari-demarchi-vianello-2008.md",
+      "coverage": "Named primary excerpts, slides or abstract only; see exact coverage/gaps"
+    },
+    {
+      "id": "LIT?lattice-codex-26",
+      "title": "camargo-demarchi-2015 \u2014 de Camargo\u2013De Marchi, A few remarks on \u201cOn certain Vandermonde determinants whose variables separate\u201d, DRNA8 (2015),1\u201311",
+      "path": "literature/lattice-unisolvence/records/camargo-demarchi-2015.md",
+      "coverage": "Named primary excerpts, slides or abstract only; see exact coverage/gaps"
+    },
+    {
+      "id": "LIT?lattice-codex-19",
+      "title": "cao-ghimire-wang-2022 \u2014 Cao\u2013Ghimire\u2013Wang, Bivariate Lagrange interpolation at the checkerboard nodes, Proc. AMS150 (2022),2153\u20132163",
+      "path": "literature/lattice-unisolvence/records/cao-ghimire-wang-2022.md",
+      "coverage": "Named primary excerpts, slides or abstract only; see exact coverage/gaps"
+    },
+    {
+      "id": "LIT?lattice-codex-24",
+      "title": "cools-poppe-2011 \u2014 Cools\u2013Poppe, Chebyshev lattices, a unifying framework for cubature with Chebyshev weight function, BIT51 (2011),275\u2013288",
+      "path": "literature/lattice-unisolvence/records/cools-poppe-2011.md",
+      "coverage": "Named primary excerpts, slides or abstract only; see exact coverage/gaps"
+    },
+    {
+      "id": "LIT?lattice-codex-27",
+      "title": "demarchi-2022 \u2014 De Marchi, Padua points and fake nodes for polynomial approximation: old, new and open problems, Constr. Math. Anal.5(1) (2022),14\u201336",
+      "path": "literature/lattice-unisolvence/records/demarchi-2022.md",
+      "coverage": "Named primary excerpts, slides or abstract only; see exact coverage/gaps"
+    },
+    {
+      "id": "LIT?lattice-codex-25",
+      "title": "demarchi-usevich-2014 \u2014 De Marchi\u2013Usevich, On certain multivariate Vandermonde determinants whose variables separate, LAA449 (2014),17\u201327",
+      "path": "literature/lattice-unisolvence/records/demarchi-usevich-2014.md",
+      "coverage": "Named primary excerpts, slides or abstract only; see exact coverage/gaps"
+    },
+    {
+      "id": "LIT?lattice-codex-23",
+      "title": "demarchi-vianello-xu-2009 \u2014 De Marchi\u2013Vianello\u2013Xu, New cubature formulae and hyperinterpolation in three variables, BIT49 (2009),55\u201373",
+      "path": "literature/lattice-unisolvence/records/demarchi-vianello-xu-2009.md",
+      "coverage": "Named primary excerpts, slides or abstract only; see exact coverage/gaps"
+    },
+    {
+      "id": "LIT?lattice-codex-20",
+      "title": "dencker-erb-2017 \u2014 Dencker\u2013Erb, Multivariate polynomial interpolation on Lissajous\u2013Chebyshev nodes, JAT219 (2017),15\u201345",
+      "path": "literature/lattice-unisolvence/records/dencker-erb-2017.md",
+      "coverage": "Named primary excerpts, slides or abstract only; see exact coverage/gaps"
+    },
+    {
+      "id": "LIT?lattice-codex-21",
+      "title": "dencker-erb-unifying-2017 \u2014 Dencker\u2013Erb, A unifying theory for multivariate polynomial interpolation on general Lissajous\u2013Chebyshev nodes (2017 preprint)",
+      "path": "literature/lattice-unisolvence/records/dencker-erb-unifying-2017.md",
+      "coverage": "Named primary excerpts, slides or abstract only; see exact coverage/gaps"
+    },
+    {
+      "id": "LIT?lattice-codex-32",
+      "title": "erb-kaethner-ahlborg-buzug-2016 \u2014 Erb\u2013Kaethner\u2013Ahlborg\u2013Buzug, Bivariate Lagrange interpolation at the node points of non-degenerate Lissajous curves, Numer. Math.133 (2016),685\u2013705",
+      "path": "literature/lattice-unisolvence/records/erb-kaethner-ahlborg-buzug-2016.md",
+      "coverage": "Named primary excerpts, slides or abstract only; see exact coverage/gaps"
+    },
+    {
+      "id": "LIT?lattice-codex-29",
+      "title": "floater-2017 \u2014 Floater, Polynomial interpolation on interlacing rectangular grids, JAT222 (2017),64\u201373",
+      "path": "literature/lattice-unisolvence/records/floater-2017.md",
+      "coverage": "Named primary excerpts, slides or abstract only; see exact coverage/gaps"
+    },
+    {
+      "id": "LIT?lattice-codex-16",
+      "title": "harris-2015 \u2014 Harris, Lagrange polynomials, reproducing kernels and cubature in two dimensions, JAT195 (2015),43\u201356",
+      "path": "literature/lattice-unisolvence/records/harris-2015.md",
+      "coverage": "Named primary excerpts, slides or abstract only; see exact coverage/gaps"
+    },
+    {
+      "id": "LIT?lattice-codex-17",
+      "title": "harris-2018 \u2014 Harris, Alternation points and bivariate Lagrange interpolation, JCAM340 (2018),43\u201352",
+      "path": "literature/lattice-unisolvence/records/harris-2018.md",
+      "coverage": "Named primary excerpts, slides or abstract only; see exact coverage/gaps"
+    },
+    {
+      "id": "LIT?lattice-codex-18",
+      "title": "harris-simanek-2021 \u2014 Harris\u2013Simanek, Interpolation and cubature for rectangular sets of nodes, Proc. AMS149 (2021),3485\u20133497",
+      "path": "literature/lattice-unisolvence/records/harris-simanek-2021.md",
+      "coverage": "Named primary excerpts, slides or abstract only; see exact coverage/gaps"
+    },
+    {
+      "id": "LIT?lattice-codex-11",
+      "title": "lower-sets-2015 \u2014 Carnicer\u2013God\u00e9s, Lagrange polynomials of lower sets, DRNA 8 special issue (2015), 1\u201310",
+      "path": "literature/lattice-unisolvence/records/lower-sets-2015.md",
+      "coverage": "Named primary excerpts, slides or abstract only; see exact coverage/gaps"
+    },
+    {
+      "id": "LIT?lattice-codex-12",
+      "title": "natural-lattices-2013 \u2014 Calvi\u2013Phung, On the continuity of multivariate Lagrange interpolation at natural lattices, LMS J. Comput. Math.16 (2013),45\u201360",
+      "path": "literature/lattice-unisolvence/records/natural-lattices-2013.md",
+      "coverage": "Named primary excerpts, slides or abstract only; see exact coverage/gaps"
+    },
+    {
+      "id": "LIT?lattice-codex-13",
+      "title": "padua-2006 \u2014 Bos\u2013Caliari\u2013De Marchi\u2013Vianello\u2013Xu, Bivariate Lagrange interpolation at the Padua points: the generating curve approach, JAT143 (2006),15\u201325",
+      "path": "literature/lattice-unisolvence/records/padua-2006.md",
+      "coverage": "Named primary excerpts, slides or abstract only; see exact coverage/gaps"
+    },
+    {
+      "id": "LIT?lattice-codex-14",
+      "title": "padua-ideal-2007 \u2014 Bos\u2013De Marchi\u2013Vianello\u2013Xu, Bivariate Lagrange interpolation at the Padua points: the ideal theory approach, Numer. Math.108 (2007),43\u201357",
+      "path": "literature/lattice-unisolvence/records/padua-ideal-2007.md",
+      "coverage": "Named primary excerpts, slides or abstract only; see exact coverage/gaps"
+    },
+    {
+      "id": "LIT?lattice-codex-30",
+      "title": "sorevik-nome-2016 \u2014 S\u00f8revik\u2013Nome, Trigonometric interpolation on lattice grids, BIT56 (2016),341\u2013356",
+      "path": "literature/lattice-unisolvence/records/sorevik-nome-2016.md",
+      "coverage": "Named primary excerpts, slides or abstract only; see exact coverage/gaps"
+    },
+    {
+      "id": "LIT?lattice-codex-15",
+      "title": "xu-1996 \u2014 Xu, Lagrange interpolation on Chebyshev points of two variables, JAT87 (1996),220\u2013238",
+      "path": "literature/lattice-unisolvence/records/xu-1996.md",
+      "coverage": "Named primary excerpts, slides or abstract only; see exact coverage/gaps"
+    },
+    {
+      "id": "LIT?lattice-codex-28",
+      "title": "xu-2024 \u2014 Xu, Minimal cubature rules and Koornwinder polynomials, arXiv:2407.09903v1 (2024)",
+      "path": "literature/lattice-unisolvence/records/xu-2024.md",
+      "coverage": "Named primary excerpts, slides or abstract only; see exact coverage/gaps"
+    }
+  ]
+}

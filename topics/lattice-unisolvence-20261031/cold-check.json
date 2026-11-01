@@ -1,0 +1,20 @@
+{
+  "archive_sha256": "7b173b14f12eb73661e165e544f189a42faa13c08d94e957126a08eb7b7ba53a",
+  "archive_bytes": 832029,
+  "zip_crc_pass": true,
+  "archive_entries": 161,
+  "retrieval_path": "/workspace/scratch/lattice-unisolvence-20261031/final-retrieval-check",
+  "command": [
+    "python",
+    "/workspace/scratch/lattice-unisolvence-20261031/final-retrieval-check/tracks/lattice-unisolvence/code/verify_artifacts.py",
+    "/workspace/scratch/lattice-unisolvence-20261031/final-retrieval-check/topics/lattice-unisolvence-20261031/audit-targets.json",
+    "--root",
+    "/workspace/scratch/lattice-unisolvence-20261031/final-retrieval-check"
+  ],
+  "identity_check": {
+    "checked": 160,
+    "failures": []
+  },
+  "windows_receipt": "unconfirmed; no Windows execution",
+  "protocol_envelope": "later committed separately; scientific ZIP frozen"
+}

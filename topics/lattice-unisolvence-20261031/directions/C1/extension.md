@@ -1,0 +1,9 @@
+# C1 justified extension to twelve rounds
+
+Written before extension execution,2026-10-31, at root's explicit instruction. The first ten rounds left a concrete omitted quarter of the degree range: shifted phase1was tested only at n≡2mod4 because those y blocks were complete. At n≡0mod4, its remainder may correct phase0's excess node while central inversion still swaps selected and complementary sets. This is a decisive untested parameter case, not an extension for more asymptotic sampling.
+
+Authorize rounds11–12only, within AC's justified at-most-twenty limit; no further extension planned. Round11: prove/refute phase1's exact count for n≡0mod4 by the finite4-periodic correction; verify central inversion for every even n; if valid combine phase0odd and phase1even into a cardinality-correct antipodal-transversal candidate for every n>=1. Preserve all four phase correction tables analytically, including phase1's oddn≡1excess. Update theorem history rather than silently broadening it.
+
+Round12finite scope: phase1at n4,8,12,16,32using the same81angle-grid/three-level adaptive diagnostics and Padua/greedy-Leja comparisons as rounds5–6; n64only the explicit cross-block diagnostic, avoiding a multi-gigabyte adaptive interpolation matrix product. For n4,8also two seeded generic draws per prime1009,1013,1019using the prior seedformula. All finite ranks and floating diagnostics stay MEASURED; no general strictness claim. Extend the exact Gram reduction to alleven n only if its proof is unchanged under the count/symmetry check.
+
+Stop at round12: if this all-ncompletion survives, retain it as OPEN with equivalent strict-cross-block contraction and the unresolved localized-inverse estimate. A further development campaign requires a new proof step for one of those analytic obligations, not additional rank/condition/growth extrapolation. Notify independent Astra before and after final file/hash freeze. No novelty/acceptance claim.

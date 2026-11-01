@@ -1,0 +1,19 @@
+{
+  "best_sampled": [
+    2.0,
+    4.840990257669732,
+    88.99386899143866,
+    1497.7664105347994,
+    3863.7020624297397,
+    97819.05677303785
+  ],
+  "code_sha256": "7a5c48edc9110030463330d978677bf32035ee6c208e011a36fe16394664af7c",
+  "input_sha256": "ee98828d9fe4b790c02059a60e00bacddcd9bceb835d90706c03cfb03bedb3a0",
+  "matplotlib": "3.10.8",
+  "output_bytes": 37094,
+  "output_sha256": "55aeb9fb8092a22a90a6f88267f0dfb93cb328cd6efd666f2e092424ee9df397",
+  "command": "python tracks/lattice-unisolvence/code/plot_lebesgue.py topics/lattice-unisolvence-20261031/directions/C3/lebesgue.json topics/lattice-unisolvence-20261031/figures/lebesgue.svg",
+  "worktree_parent_sha": "9444c274d1ac06ef3b047e7bf2f9531d22b6d744",
+  "note": "Plot code/input were new worktree bytes at this parent; recorded hashes, not parent SHA, identify their exact content.",
+  "plot_code_git_blob": "ee3808598d14c7cc2419c40b6e28c97dd8ad82b1"
+}

@@ -1,0 +1,3 @@
+{'pair': '[0, 1]', 'p': 1009, 'seed': 10790539017718111823, 'axes_a': '[[933, 292], [287, 727], [262, 793]]', 'axes_b': '[[521, 765], [711, 733], [225, 121]]', 'determinants_AA_AB_BA_BB': '[794, 746, 680, 34]', 'rectangle': 0}
+tests 426 convention matches {'thirdA': 426, 'thirdB': 0}
+reps with nonzero rectangle 114 {1: 23, 2: 18, 3: 32, 4: 18, 5: 16, 6: 7}

@@ -1,0 +1,54 @@
+{
+  "all_checks_passed": true,
+  "checker_sha256": "b7c107b81e298a9d4e03d7da9c9167d611940db66d7fe49684db028e774f505a",
+  "degree_prime_scope": [
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      5,
+      11
+    ]
+  ],
+  "exact_kernel_dimension_comparisons": 200,
+  "full_degree_root_rows_tested": true,
+  "method": "Fresh coefficient multiplication, independent exact rank/nullity comparison including zero/full rows and small characteristic, direct symbolic matrix identity.",
+  "n3_symbolic_matrix_and_factorization_checked": true,
+  "seed": 61931217,
+  "symbolic_input_sha256": "07ad11b7425720a9b18e3051513bbf29ce310ea33916af8bd6a844ba465c0b43",
+  "sympy": "1.14.0",
+  "zero_root_rows_tested": true
+}

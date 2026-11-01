@@ -1,0 +1,13 @@
+{
+  "all_checks_passed": true,
+  "checker_sha256": "d7def7be2ef4355ddcba5f4c86e3b3eb3d28ccae74157e02590db3db2a670247",
+  "input_sha256": {
+    "topics/lattice-unisolvence-20261031/directions/C3/lowdegree.json": "c23ee5bf0ca2bc22576628965e882360e1ea66821f50d1e1d7030791b3650b8d",
+    "topics/lattice-unisolvence-20261031/directions/C3/ranks.json": "560471d0053fef785bcee9c64f1b7fe9a384e24c0c74ef3d4cd58b9d6c703130"
+  },
+  "method": "Independent maximizing-z-layer reduction for every x/y subset, and direct normalized polynomial determinant identity.",
+  "n2_symbolic_factor_checked": true,
+  "subbox_certificates_found": 0,
+  "subbox_decisions_checked": 9,
+  "sympy": "1.14.0"
+}
