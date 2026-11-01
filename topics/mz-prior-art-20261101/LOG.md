@@ -1,7 +1,7 @@
 # MZ prior-art and fulltext closure (CC / Padua MZ manuscript)
 
-- Branch: `claude/mz-prior-art-20261101` · Base: main `9739a0c56b7a3976422ce60a8441bfbbfd6554df` · Developer: Claude (orchestrator) · Auditor: Codex `gpt-6-astra`, high (PENDING)
-- Stage: AUDIT · Next: `Codex (gpt-6-astra, high): audit claude/mz-prior-art-20261101` (reads the complete state/IDEAS.md: this branch carries priority statements).
+- Branch: `claude/mz-prior-art-20261101` · Base: main `9739a0c56b7a3976422ce60a8441bfbbfd6554df` · Developer: Claude (orchestrator) · Auditor: Codex `gpt-6-astra`, high (audit-01: CHANGES REQUIRED)
+- Stage: WORK · Next: `Claude Opus 5.5, high: address audit-01 for claude/mz-prior-art-20261101 and request a focused Codex re-audit`.
 - Claims: none new. Literature topic only; no PD-T/PD-N status changes (literature verdicts never change a PD status).
 - For the PR: record updates for LIT-045–065; new LIT-293–295 (after the bivariate-Lanczos block LIT-066–292) reserved in the shared ledger; manuscript §1/§4/Prop. 5.1 wording and refs.bib; literature INDEX/CORPUS; topics/mz-constants/literature-search.md.
 - Open for AC: missing fulltexts (see local working track `Downloads\padua\results\mz-prior-art-20261101.md`).
@@ -50,3 +50,13 @@ Missing-fulltexts table sent by message and written to `Downloads\padua\results\
 ## Runs needed
 
 None (literature topic; no computation planned).
+
+## 2026-11-01 — Codex audit-01
+
+Audited candidate/rules `4f937137f9baac5e51814964e6a83aeb2df38815`; main/base `9739a0c56b7a3976422ce60a8441bfbbfd6554df`. Allocation: Codex gpt-6-astra high; runtime-resolved model/effort is not independently exposed. Complete state/IDEAS.md read, including all obstruction/disposition tables. Three bounded independent source checks supplement the root audit.
+
+**CHANGES REQUIRED; stage WORK.** [Audit-01](audit-01.md) records F1–F4 (T4 smoothing normalization, Sloan–Smith coverage overstatement, König–Nielsen parameter restriction, and scoped classical-attribution inference) plus N1–N4. No PD status or developer proof changed. Every comparison row has a coverage disposition; inaccessible primary bodies are not counted as independently verified.
+
+Independent manuscript build: pdflatex/bibtex/pdflatex/pdflatex, 17 A4 pages, no final-pass warnings. LIT-293–298 is disjoint from PR #10's LIT-066–292 at `a2dd845b8a231e1b00733e1361e2a9ad3bad222f`; next LIT-299 after both reservations. Three shared-file text merges against base pass; this is not a full squash rehearsal. [Input manifest](audit-support/input-manifest.json) and three source checks preserve commands, identities, coverage and limits. No external author contact or merge.
+
+Developer must answer all findings in response-01.md and submit material corrections for focused re-audit. AC's desktop working-results file was unavailable in this environment; delivery there remains pending, with this audit/log as the durable handoff. No shared local RESULTS.md write was attempted.
