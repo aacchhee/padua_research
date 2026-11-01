@@ -29,7 +29,7 @@ PD-T?…-303; checker `tracks/bivariate-lanczos/code/L3/exact_checkerboard.py` (
 
 ## Checks
 
-`python3 exact_checkerboard.py 1 6 equi` and `python3 exact_checkerboard.py 7 8 equi` (Python 3.13.18, numpy 2.5.3, cvxpy 1.6.0/CLARABEL tol 1e-12 only as proposer; acceptance in exact Fraction arithmetic: exact nullspace of the 3M × dim Π_{2n+1} jet matrix, exact rank of the Hessian map, exact least-norm correction of the rounded proposal onto the exact constraints, exact PD tests). Logs `logs/exact_checkerboard_equi.log`, `logs/exact_checkerboard_equi_n7_8.log`: "DUAL exact PASS … => (H) CERTIFIED" for n = 1..7; n = 8 UNRESOLVED.
+`python3 exact_checkerboard.py 1 6 equi` and `python3 exact_checkerboard.py 7 8 equi` (Python 3.13.18, numpy 2.5.3, cvxpy 1.6.0/CLARABEL tol 1e-12 only as proposer; acceptance in exact Fraction arithmetic: exact nullspace of the 3M × dim Π_{2n+1} jet matrix, exact rank of the Hessian map, exact least-norm correction of the rounded proposal onto the exact constraints, exact PD tests). Logs `logs/exact_checkerboard_equi.log`, `logs/exact_checkerboard_equi_n7_8.log`: "DUAL exact PASS … => (H) CERTIFIED" for n = 1..7; n = 8 UNRESOLVED. Fresh rerun of the reviewer's exact checker by Codex audit-01 (L3-framework): `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 -I tracks/bivariate-lanczos/code/review_L3b/equi_H_cert.py 1 7 40`, log `topics/bivariate-lanczos-20261031/audit-01/L3-framework/equi_H_cert_n1_7.log`: all n = 1..7 accepted by the exact stage (n = 8 not rerun).
 
 ## Sources
 
@@ -41,7 +41,7 @@ Reduction PD-T?…-303(f) plus the exact certificates.
 
 ## Scope
 
-n ≤ 7, this node family. n = 8 unresolved (margin below double-precision proposals). Contrast: Padua (Chebyshev–Lobatto checkerboard) fails (H) robustly from n = 3 (PD-N?…-301, PD-T?…-307).
+n ≤ 7, this node family. n = 8: the developer's double-precision proposal was unresolved (margin below double precision); the reviewer's high-precision certificate (L3-reconstruction-02) is a reviewer computation pending an independent rerun, so n = 8 is not part of this statement. Contrast: Padua (Chebyshev–Lobatto checkerboard) fails (H) robustly from n = 3 (PD-N?…-301, PD-T?…-307).
 
 ## Open items
 
@@ -51,3 +51,4 @@ n = 8: independent rerun of the reviewer's certificate (then cite); n ≥ 9 need
 
 2026-10-31T23:15+01:00, Claude Opus 5.5 (xhigh, requested), L3 developer, round R04 (working tree fba4d2f).
 - 2026-11-01T00:47:14+01:00, L3 developer (Claude Opus 5.5, xhigh requested): CONDITIONAL → PROVED for n = 1..7 citing the independent exact rerun; reviewer's n = 8 certificate recorded as a reviewer computation of L3-reconstruction-02 (reviews/L3-reconstruction-02.md, audited head ae991c1). Original wording of the replaced passages: «Overall status: CONDITIONAL.»; «| certificates exist and pass the exact checks, n = 1..7 | CONDITIONAL | developer's exact checker passes; obligation: independent rerun |»; «Independent rerun; n ≥ 8 (extended-precision proposer); whether (H) eventually fails for equispaced checkerboards.».
+- 2026-11-01T08:33:39+01:00, L3 developer (Claude Opus 5.5, xhigh requested): stale n = 8 scope wording reconciled and the fresh audit rerun cited (L3-framework note on stale T310 wording) of Codex audit-01 (audit-01/L3-framework.md; candidate 5ccfac2). Statement and status (PROVED, n = 1..7) unchanged. Original wording of the replaced passages: «n ≤ 7, this node family. n = 8 unresolved (margin below double-precision proposals).»; «Logs `logs/exact_checkerboard_equi.log`, `logs/exact_checkerboard_equi_n7_8.log`: "DUAL exact PASS … => (H) CERTIFIED" for n = 1..7; n = 8 UNRESOLVED.».

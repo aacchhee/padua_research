@@ -30,7 +30,7 @@ PD-T?…-203.
 
 ## Checks
 
-`python3 -I tracks/bivariate-lanczos/code/L2/l2_r01_omega.py --e3`. Reconstruction 01 did not rerun E3.
+`python3 -I tracks/bivariate-lanczos/code/L2/l2_r01_omega.py --e3`. Reconstruction 01 did not rerun E3. Codex audit-01 did (`topics/bivariate-lanczos-20261031/audit-01/L2/e3-rerun.log`, rotπ/4, triangle, cubic checkerboard): cubic O = 179139 (E3) vs 242965 (E1) — not the required ≥ 100× repair; U/O = 0.4893/3.7742 (rotπ/4), 1.4434/5.2768 (triangle).
 
 ## Sources
 
@@ -42,7 +42,7 @@ Measured. Reading: the overestimate is the open-loop random-source effect on the
 
 ## Scope
 
-As stated; the estimate remains safe (no underestimate), only its cost-relevant overestimate is unrepaired.
+As stated; the estimate passes the registered underestimation tolerance (max L/E = 1.44 < 10 on the benchmark set) — this is not a pointwise upper bound on the loss (L/E exceeds 1 on some degrees, e.g. 1.44 on the triangle) — and only its cost-relevant overestimate is unrepaired.
 
 ## Open items
 
@@ -51,3 +51,4 @@ A closed-loop source model (PD-T?…-115).
 ## History
 
 - 2026-11-01T01:29:29+01:00: created from PD-T?…-203 (b) and candidates.md (R01 dispositions) in response to reconstruction 01 finding F3 (Claude Opus 5.5, xhigh; L2 developer).
+- 2026-11-01T08:32:22+01:00: (Codex audit-01, claim-coverage note on N205: "safe" can only mean passing the registered underestimation tolerance; Claude Opus 5.5, xhigh; L2 developer, response `directions/L2/response-audit-01.md`) Scope: original "As stated; the estimate remains safe (no underestimate), only its cost-relevant overestimate is unrepaired." reworded. Checks: audit-01 E3 rerun recorded. Statement, disposition and status MEASURED unchanged.

@@ -9,7 +9,7 @@ Split into: none.
 
 [FP, MEASURED] Within the stated ranges:
 
-(a) **H_lin fails** (IDEA?…-112, pre-registered K3): the excess growth rate g̃(θ) of the exact-coefficient propagator response on the square (M = 1681, seed 11) rotated by θ is not linear in θ: g̃/θ = 1.02 at θ = 0.025 and 4.39 at θ = 0.2 (factor 4.3 > 3).
+(a) **H_lin fails** (IDEA?…-112, pre-registered K3): the excess growth rate g̃(θ) of the exact-coefficient propagator response on the square (M = 1681, seed 11) rotated by θ is not linear in θ [note 2026-11-01T08:41:34+01:00, audit-01: the reference coefficients are a double full-CGS2 computation, not certified exact; this is a measurement for those computed reference coefficients]: g̃/θ = 1.02 at θ = 0.025 and 4.39 at θ = 0.2 (factor 4.3 > 3).
 (b) **The node-propagator response is not a universal loss predictor** (IDEA?…-107, -114, -115): with uniform forcing u/√M it under-predicts the triangle (50× at n = 12, 10³ at n = 16) and over-predicts the clustered checkerboard by more than 10¹⁸ (response 1e3 at n = 8, where the loss is 7e-16: the uniform forcing drives nodes of weight down to 1e-33 at the wrong scale); with componentwise-scaled forcing it under-predicts the triangle (25×, 350×) and the clustered checkerboard (2.5·10³ at n = 16, 4·10⁵ at n = 20); with worst-case absolute coefficient noise it over-predicts by up to 10⁷ (clustered checkerboard) and 40× (square).
 (c) **The two-relation block recurrence (R03 control) is not unconditionally stable** (scope restriction of IDEA?…-111): on the clustered checkerboard (m = 30) its loss is 1e-11, 1e-5, 1e-3, 0.4 at n = 8, 12, 16, 20, far worse than BJ (7e-16, 3e-14, 1e-11, 4e-9).
 
@@ -62,3 +62,4 @@ A predictor for the coefficient channel; a stable remedy covering both channels 
   - (c) is consistent with and strengthened by recon-01: the two-relation recurrence is also worse than BJ on tensor 41² (developer rerun 8.0e-13 vs 1.8e-14 at n = 24), does not remove the Ritz-type loss of a Gaussian cloud, and only reduces the triangle with one pass (PD-T?…-109 (b), narrowed).
   - (a) and (b) are dev-rule statements (PD-N?…-105).
 - 2026-10-31T23:37Z (response to reconstruction 02): (c) CONFIRMED by recon-02 (two-relation control 1.1e-5, 0.29, 0.61 at n = 12, 20, 24 on the cubic checkerboard); (a), (b) not rerun.
+- 2026-11-01T08:41:34+01:00 (Claude Opus 5.5, xhigh; response to Codex audit-01, L1-later table note on T112(e,f)/N103(a)). (a) records that the "exact-coefficient" propagator uses computed reference coefficients (double CGS2). The audit's producer rerun reproduces excess/θ = 1.02 vs 4.39 at θ = 0.025 / 0.2 (`audit-01/L1-later/near_product_producer_rerun.log`). Status (MEASURED) unchanged.

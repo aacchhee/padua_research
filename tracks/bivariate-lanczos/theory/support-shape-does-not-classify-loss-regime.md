@@ -19,7 +19,7 @@ Split into: none.
 
 (b) **Sampled product density.** A standard Gaussian cloud (M = 1681, default_rng(12)) reaches loss 1.1e-4 at n = 24 against u/ρ_Z = 4.6e-8 (2.4·10³×). The two-relation block recurrence reaches 6.3e-8 there, i.e. Ritz-type (1.4×).
 
-Consequence: "product-aligned support ⇒ Ritz-type (product-level) loss" is false. Both examples have a product support: the square in (a), and in (b) the plane with a product density. The regime is set by the measure, through its recurrence coefficients (compare the within-degree coupling of PD-T?…-107 (e) and the product-type coefficients of PD-T?…-105, -111), not by the support.
+Consequence: "product-aligned support ⇒ Ritz-type (product-level) loss" is false. Both examples have a product support: the square in (a), and in (b) the plane with a product density. [Clarified 2026-11-01T08:41:34+01:00, Codex audit-01 L1-later: "product support" here describes the sampling domain or density. The finite empirical measure on M random points is not supported on a tensor-product set.] The regime is set by the measure, through its recurrence coefficients (compare the within-degree coupling of PD-T?…-107 (e) and the product-type coefficients of PD-T?…-105, -111), not by the support.
 
 The uniformly sampled square, also a sampled product density, is Ritz-type to n ≈ 22 (PD-T?…-107 (a)). So "sampled product density" is not a classifier either.
 
@@ -67,3 +67,4 @@ A quantitative classifier in terms of the measure. Candidates are the within-deg
 
 - 2026-10-31T23:05Z: created (Claude Opus 5.5, xhigh; L1 response to reconstruction 01, major finding on PD-T?…-107).
 - 2026-10-31T23:37Z (response to reconstruction 02): CONFIRMED WITH CORRECTIONS. m2 (‖A‖ factor) is noted in the Statement. Recon-02 corrects its own recon-01 wording: its exp(4xy) run gives 4.6× u/ρ_Z at n = 24, not "stable". The developer's 32× is a seed-level difference, not a contradiction.
+- 2026-11-01T08:41:34+01:00 (Claude Opus 5.5, xhigh; response to Codex audit-01, L1-later table note on N106). "Product support" is clarified as the sampling domain, not the support of the finite empirical measure. The audit reproduced (a) independently: exp(8xy) square, loss 3.95e-8, excess 1.61e5 over 2^-52/ρ_Z (`audit-01/L1-later/independent_checks.log`). Status (MEASURED) unchanged.

@@ -1,4 +1,4 @@
-# PD-N?bivariate-lanczos-claude-104 — Open-loop coefficient-noise estimates of the clustered-checkerboard loss fail (generic u-noise, sign-randomised magnitudes); term-wise rounding on the exact coefficients over-estimates increasingly with clustering strength (its kill is convention-sensitive)
+# PD-N?bivariate-lanczos-claude-104 — Open-loop coefficient-noise estimates of the clustered-checkerboard loss fail (generic u-noise, sign-randomised magnitudes); term-wise rounding on the exact coefficients over-estimates increasingly with clustering strength (as a kill: convention-sensitive under the noise model, inconclusive with actual double rounding)
 
 ID kind: PD-N.
 Aliases: H_cond-abs overshoot; H_sign failure; open-loop term-wise estimate killed.
@@ -11,7 +11,7 @@ Split into: none.
 
 (a) **Generic absolute u-noise on the structural zeros** (IDEA?…-117, H_cond-abs): 2·10⁷ (n = 16) and 4·10⁶ (n = 20) on the cubic m = 30 set. This is inconclusive by the written rule, which did not foresee an overshoot, and useless as an estimate. It reconfirms PD-N?…-103 (b) ("worst-case absolute coefficient noise over-predicts by up to 10⁷").
 (b) **BJ magnitudes with random signs** (IDEA?…-118, H_sign): 3.1·10³ and 1.4·10³ on the cubic m = 30 set; killed by the written rule (> 100). The sign structure of the computed off-pattern values matters.
-[Correction 2026-10-31T23:11Z: (c) is convention-sensitive. At the plan's u = 2^-53 the same rule gives "inconclusive" (quartic 60× / 11×), and H_term on cubic m = 30 gives "survives" (5.1× / 2.3×); `logs/c01_u53_rerun.log`. (c) is kept as the measured trend (the over-estimate grows with clustering strength), not as a kill.] (c) **Term-wise rounding noise on the exact coefficients** (IDEA?…-119, open-loop estimate E): killed by the written rule on quartic clustering (119 at n = 16, > 100). It survives on quadratic clustering (1.08, 0.95) and the Chebyshev–Lobatto control, and is inconclusive on cubic m = 36 (10.5, 12.8) and on cubic m = 30 (10.3, 4.6; IDEA?…-118 H_term).
+[Correction 2026-10-31T23:11Z: (c) is convention-sensitive. At the plan's u = 2^-53 the same rule gives "inconclusive" (quartic 60× / 11×), and H_term on cubic m = 30 gives "survives" (5.1× / 2.3×); `logs/c01_u53_rerun.log`. (c) is kept as the measured trend (the over-estimate grows with clustering strength), not as a kill.] (c) **Term-wise rounding noise on the exact coefficients** (IDEA?…-119, open-loop estimate E): killed by the written rule on quartic clustering (119 at n = 16, > 100) [at u = 2^-52 under the noise model only. With actual double rounding the written rule gives **inconclusive**, not rejected: reconstruction 02, and freshly rerun by Codex audit-01 with quartic 21.58 / 12.95 and cubic m = 36 16.40 / 21.13 at n = 16 / 20 (`audit-01/L1-later/open_loop_rerun.log`). Note 2026-11-01T08:41:34+01:00]. It survives on quadratic clustering (1.08, 0.95) and the Chebyshev–Lobatto control, and is inconclusive on cubic m = 36 (10.5, 12.8) and on cubic m = 30 (10.3, 4.6; IDEA?…-118 H_term).
 
 ## Negative-result scope (PD-N only)
 
@@ -32,7 +32,7 @@ Rejection reason: failed (MEASURED, stated ranges).
 
 ## Depends on
 
-PD-T?…-114, -115.
+PD-T?…-114 (gain formulas), -117 (measured gains and first-order channel), -115 [-117 added 2026-11-01T08:41:34+01:00 after the split of PD-T?…-114].
 
 ## Checks
 
@@ -62,4 +62,4 @@ An exact-data estimate that includes the feedback (the operator (I − T)⁻¹ o
 - 2026-10-31T23:37Z (response to reconstruction 02):
   - M3: IDEA?…-119 is decided convention-free as inconclusive with actual double rounding (reviewer-measured), replacing "convention-sensitive". The trend in (c) is confirmed by recon-02.
   - m1: the Scope sentence is corrected (original kept there).
-
+- 2026-11-01T08:41:34+01:00 (Claude Opus 5.5, xhigh; response to Codex audit-01, L1-later table note on T115/N104(c) and LL-M2 pointers). The title parenthesis said "(its kill is convention-sensitive)", which was stale after the reconstruction-02 resolution. It now reads "convention-sensitive under the noise model, inconclusive with actual double rounding". (c) states the convention-free inconclusive verdict in place, with the audit's rerun. Depends on gains PD-T?…-117. Original title: "PD-N?bivariate-lanczos-claude-104 — Open-loop coefficient-noise estimates of the clustered-checkerboard loss fail (generic u-noise, sign-randomised magnitudes); term-wise rounding on the exact coefficients over-estimates increasingly with clustering strength (its kill is convention-sensitive)". Status (MEASURED) unchanged.

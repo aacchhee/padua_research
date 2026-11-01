@@ -1,4 +1,4 @@
-# PD-T?bivariate-lanczos-claude-206 — Selection rule vs the space channel (measured): under full reorthogonalization the pivot-adaptive selection keeps the reference-free drift bound below √u on five of six non-product benchmarks (7–10 decades below BJ), the two-relation block recurrence on all six; no one-relation rule is uniformly safe
+# PD-T?bivariate-lanczos-claude-206 — Selection rule vs the space channel (measured): under full reorthogonalization the pivot-adaptive selection keeps the reference-free drift bound below √u on five of six non-product benchmarks (7–10 decades below BJ), the two-relation block recurrence on all six; none of the four tested one-relation rules is uniformly safe
 
 ID kind: PD-T.
 Aliases: IDEA?…-207 measurements; adaptive selection + reorthogonalization; drift by selection; two-relation control.
@@ -7,7 +7,7 @@ Split into: none. Negative parts: PD-N?…-203.
 
 ## Statement
 
-[FP, MEASURED] One-relation window recurrences with selection rules dev (BJ), mirror (HL BIT), alt (X for 2j < t, else Y) and adapt (per column the candidate with larger β/‖Aq̂_p‖; reconstruction-01 rules, own implementation), block window, each with (A) CGS2 against all previous columns and (B) two-pass window without reorthogonalization; control: two-relation block recurrence, two CGS passes against blocks n−2, n−1, SVD completion. u = 2^-53. θ_LB := max_A max_{s<n} δ_A(s)/(2‖A‖) (reference-free lower bound on max_{s≤n} θ_s, θ_s the largest principal angle between the computed and the exact graded space of degree s; PD-T?…-205 part 4, valid for every selection); drift against the unrotated-frame reference (rotated squares, u·κ ≤ 4e-13) and a Koornwinder–Dubiner reference (triangle, u·κ ≤ 1e-14). Max over degrees, (A) runs:
+[FP, MEASURED] One-relation window recurrences with selection rules dev (BJ), mirror (HL BIT), alt (X for 2j < t, else Y) and adapt (per column the candidate with larger β/‖Aq̂_p‖; reconstruction-01 rules, own implementation), block window, each with (A) CGS2 against all previous columns and (B) two-pass window without reorthogonalization; control: two-relation block recurrence, two CGS passes against blocks n−2, n−1, SVD completion. u = 2^-53. θ_LB := max_A max_{s<n} δ_A(s)/(2‖A‖) (reference-free lower bound on max_{s≤n} θ_s, θ_s the largest principal angle between the computed and the exact graded space of degree s; PD-T?…-208, formerly PD-T?…-205 part 4, valid for every selection); drift against the unrotated-frame reference (rotated squares, u·κ ≤ 4e-13) and a Koornwinder–Dubiner reference (triangle, u·κ ≤ 1e-14). Max over degrees, (A) runs:
 
 | set (n max) | dev θ_LB | mirror | alt | adapt | two-relation |
 |---|---|---|---|---|---|
@@ -45,11 +45,11 @@ Overall status: MEASURED.
 
 ## Depends on
 
-PD-T?…-205 (θ_LB for both operators), PD-T?…-202.
+PD-T?…-208 (θ_LB for both operators; formerly cited as PD-T?…-205), PD-T?…-202.
 
 ## Checks
 
-`python3 -I tracks/bivariate-lanczos/code/L2/l2_r02_selection.py > …/L2/logs/r02_selection.raw` (≈ 4 min), verdicts `l2_r02_verdicts.py`. The disk, L-shape, annulus and checkerboard drift references are ill-conditioned (u·κ up to 1e10); only θ_LB is used there. Independent rerun: none.
+`python3 -I tracks/bivariate-lanczos/code/L2/l2_r02_selection.py > …/L2/logs/r02_selection.raw` (≈ 4 min), verdicts `l2_r02_verdicts.py`. The disk, L-shape, annulus and checkerboard drift references are ill-conditioned (u·κ up to 1e10); only θ_LB is used there. Independent rerun: Codex audit-01 reran the BJ/full-CGS2, mirror, alternating, adaptive and two-relation runs on rotπ/4, the triangle and the cubic checkerboard (`topics/bivariate-lanczos-20261031/audit-01/L2/selection-rerun.log`; Python 3.12.14, NumPy 2.3.5): selection dependence and the control/failure distinctions preserved; cubic two-relation loss 0.54744 (here 0.53) with stage lower bound 0.0013431. Other sets not rerun.
 
 ## Sources
 
@@ -61,7 +61,7 @@ Measured; see logs.
 
 ## Scope
 
-Nine node sets, M ≤ 3000, n ≤ 39; block window; four one-relation rules and one two-relation control. Not covered: rules that switch per node set region, two-relation with one pass, larger M (R02 cost run covers M ≤ 10⁵ for two sets).
+Nine node sets, M ≤ 3000, n ≤ 39; block window; four one-relation rules and one two-relation control. Not covered: rules that switch per node set region, two-relation with one pass, larger M (R02 cost run covers M ≤ 10⁵ for two sets). No statement quantifies over all possible selections (the four rules are the tested family; dev, mirror and alt are staircase (C)-selections, PD-T?…-209, adapt is not).
 
 ## Open items
 
@@ -71,3 +71,4 @@ A selection criterion with a provable bound on the coupled residual growth (PD-T
 
 - 2026-11-01: created (Claude Opus 5.5, xhigh; L2 R02). Kill rules pre-registered 00:24:54 (candidates.md).
 - 2026-11-01T01:28:43+01:00: (reconstruction 01 F7) θ_LB described as a bound on max_{s≤n} θ_s; original: "(reference-free lower bound on the principal angle to S_n, PD-T?…-205 part 4);". (F1) Open item notes that 'adapt' violates (C). Measurements and verdicts unchanged (Claude Opus 5.5, xhigh; L2 developer, response to reconstruction 01, `directions/L2/response-recon-01.md`).
+- 2026-11-01T08:32:22+01:00: (Codex audit-01: L2-F4 reference to the split drift bound; claim-coverage note on N203/T206 — the negatives do not quantify over all selections; Claude Opus 5.5, xhigh; L2 developer, response `directions/L2/response-audit-01.md`) Title: original "…; no one-relation rule is uniformly safe" → "…; none of the four tested one-relation rules is uniformly safe". θ_LB reference: original "PD-T?…-205 part 4, valid for every selection" → PD-T?…-208; Depends on original "PD-T?…-205 (θ_LB for both operators), PD-T?…-202." Scope sentence on the tested family added. Checks: original "Independent rerun: none." → audit-01 partial rerun recorded. Measurements, verdicts and status MEASURED unchanged.

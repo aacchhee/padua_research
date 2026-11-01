@@ -19,10 +19,11 @@ Overall status: MEASURED.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
-| ρ ≥ 0.45 (n = 12..20), linear regime | MEASURED | reviewer logs `reviews/logs_L3b/consistency_recheck_rot03*.log`; developer log `directions/L3/logs/r06_weight_fit_rot03.log` (double reference) |
+| ρ ≥ 0.45 (n = 12..20), linear regime | MEASURED | reviewer logs `reviews/logs_L3b/consistency_recheck_rot03*.log`; developer log `directions/L3/logs/r06_weight_fit_rot03.log` (double reference); fresh rerun n = 18–20 (ρ = .652, .709, .740) and rank-sensitivity instrumentation by Codex audit-01 L3-framework (`topics/bivariate-lanczos-20261031/audit-01/L3-framework/consistency_rot03_n18_20.log`, `lstsq_sensitivity.log`) |
 
 Candidate / claim disposition: REJECTED. Rejection reason: refuted (within scope).
 
 ## History
 
 - 2026-11-01T00:48:09+01:00, L3 developer: created per finding L8 of L3-reconstruction-02.
+- 2026-11-01T08:33:39+01:00, L3 developer (Claude Opus 5.5, xhigh requested): current evidence cited (status-pointer maintenance) from Codex audit-01 (audit-01/L3-framework.md; candidate 5ccfac2); first-order (linearised) fits only, as stated — no claim about nonlinear positive-measure fits. Status unchanged. Original wording of the replaced passages: «| ρ ≥ 0.45 (n = 12..20), linear regime | MEASURED | reviewer logs `reviews/logs_L3b/consistency_recheck_rot03*.log`; developer log `directions/L3/logs/r06_weight_fit_rot03.log` (double reference) |».

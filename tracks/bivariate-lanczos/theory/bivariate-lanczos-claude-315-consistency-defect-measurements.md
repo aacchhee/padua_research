@@ -24,7 +24,7 @@ Overall status: MEASURED.
 
 ## Depends on / Checks
 
-PD-T?…-314 (interpretation of asymmetry); commands in R06 §5. No independent rerun yet.
+PD-T?…-314 (interpretation of asymmetry); commands in R06 §5. Independent reruns: L3-reconstruction-02 (`tracks/bivariate-lanczos/code/review_L3b/consistency_recheck.py`, a different rounding realisation with an 80-bit long-double reference; logs `topics/bivariate-lanczos-20261031/reviews/logs_L3b/`); Codex audit-01 L3-framework freshly executed `r06_consistency.py random 40` and `consistency_recheck.py rot03 18 20` and instrumented the fit ranks (`lstsq_sensitivity.py`: default rank 739 = dim Π_37 − 2 at n = 18); logs in `topics/bivariate-lanczos-20261031/audit-01/L3-framework/`. All MEASURED.
 
 ## Proof or evidence
 
@@ -42,3 +42,4 @@ A priori relation between asymmetry and L1's commutator residual; bounded positi
 
 2026-10-31T23:52+01:00, Claude Opus 5.5 (xhigh, requested), L3 developer, round R06.
 - 2026-11-01T00:47:14+01:00, L3 developer (Claude Opus 5.5, xhigh requested): findings M1 (reference artefact; 80-bit reference results cited), M2 (claim restricted to the rotated square; random-square counter-indication recorded) and L3 (ranges) of L3-reconstruction-02 (reviews/L3-reconstruction-02.md, audited head ae991c1). Original wording of the replaced passages: «1. Rotated random square (θ = 0.3): asym_J/loss ≈ 4–10, fwd_J ≈ asym_J, asym_F ≈ (0.03–0.06)·loss, for n = 10..26 (loss 1.3e-14 … 7.3e-3).»; «2. Random square: asym_J ≈ (0.7–1)·loss ≈ fwd_J for n = 20..40 (loss up to 2.7e-9); asym_F ≤ 3.6e-13.»; «4. First-order best consistent fit of the computed partial data»; «So, within the tested scope, the computed coefficients are as inconsistent as they are inaccurate, and no consistent section pair in the linear neighbourhood of Φ(μ) fits them better than ≈ 0.7 × the forward error.».
+- 2026-11-01T08:33:39+01:00, L3 developer (Claude Opus 5.5, xhigh requested): stale 'No independent rerun yet' replaced by the actual rerun record (status-pointer maintenance) of Codex audit-01 (audit-01/L3-framework.md; candidate 5ccfac2). Measurements and status unchanged. Original wording of the replaced passages: «PD-T?…-314 (interpretation of asymmetry); commands in R06 §5. No independent rerun yet.».

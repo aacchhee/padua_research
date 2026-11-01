@@ -13,6 +13,7 @@ Split into: PD-N?…-206 (one-pass counterexamples of (a)).
 (b) **IDEA?…-206 (pre-registered 00:16).** P1: with the two-pass window, μ ≤ 3.2e-16 at all SO degrees on all benchmarks (criterion 10³u: survives). P2: two-pass window + oracle partial, e_F ≤ 2.2e-15 at all SO degrees (criterion u^{3/4}: survives). P3 (expected to fail): e_H > u^{3/4} at SO degrees on 7 benchmarks — fails as expected (PD-N?…-201).
 (c) **Local vs propagated loss.** On the triangle the plain one-pass loss is local: L(n) = μ(n) at every degree (1.0e-11 at n = 8 … 1 at n = 20). Rotπ/4 and the disk keep μ ≤ 3e-14 while L grows to 4e-3 and 1e-8, and the L-shape has μ = 1.3e-10 at L = 0.12 (n = 30): their loss is propagated (out of window); the annulus is intermediate (μ/L ≈ 10⁻⁴–10⁻¹). The two-pass window alone reduces the plain loss at the last degree from 1.0 to 7.4e-5 (triangle, n = 20), 5.8e-6 → 8.6e-7 (rot0.3, n = 24), 4.2e-3 → 2.5e-4 (rotπ/4, n = 24), 4.9e-3 → 1.7e-4 (annulus, n = 28); it leaves the J-defect unchanged (triangle 1.6e-3 → 1.7e-3 at n = 20).
 (d) **Cost of the oracle partial runs** (dot products, BJ count): window passes Σ|W_k| = 12 676 (one pass, M = 1681, n = 24); oracle partial reorthogonalization adds 17 077–30 906 reorthogonalization dot products on rot0.3/rotπ/4 (35–80 triggered columns of 324) against 105 300 for fullcgs2; on product-type sets nothing is triggered. (Oracle measurement costs, 39 974, are not part of a practical scheme; R02 replaces them by the ω-estimate.)
+(e) **Normalisation factor χ of Corollary A′ (added after audit-01, L2-F2; no kill rule).** χ(n) := max over columns k of degree ≤ n of ‖B_kq̂_{p(k)}‖₂/β_k (computed product norm over computed normalisation, double), in the two-pass-window runs without reorthogonalization (w2_none) and in the PRO-2D-J runs of PD-T?…-207, all 12 benchmarks, all degrees: max χ = 5.28 (triangle), 3.63 (cubic checkerboard), 3.08 (annulus), 2.80 (rot0.3), 2.32 (rotπ/4), 2.08 (L-shape), 1.91 (disk), 1.67 (square), 1.57 (equispaced checkerboard), 1.73 ≈ √3 (tensor 41², Padua 48, Chebyshev–Lobatto checkerboard); the same maximum in both run types. No near-breakdown occurs in these runs, so the χ factor of PD-T?…-201 Corollary A′ is at most 6.3 there. In the same runs the Frobenius loss at the last degree of PRO-2D-J is 3.7e-8 (rotπ/4), 3.3e-8 (triangle), 1.7e-7 (L-shape), 6.9e-8 (annulus) > √u although entrywise L ≤ 10√u: Corollary A′'s hypothesis η = ‖Ω‖_F ≤ √u is not met literally on these four sets (PD-T?…-201 Remark (ii): entrywise semi-orthogonality gives only η ≤ N√u). Measured, not a bound.
 
 ## Definitions
 
@@ -32,6 +33,7 @@ Overall status: MEASURED.
 | (b) | MEASURED | `logs/r01_sections_w2.raw`, `r01_verdicts.txt` (IDEA-206 block) |
 | (c) | MEASURED | same |
 | (d) | MEASURED (counts) | `stats` lines in the raw logs |
+| (e) | MEASURED | `logs/audit01_chi.raw.gz` from `cd tracks/bivariate-lanczos/code/L2 && OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python3 -I l2_audit01_chi.py > …/L2/logs/audit01_chi.raw` (run 2026-11-01T08:25:47–08:25:58+01:00, exit 0; Python 3.13.18, NumPy 2.5.3; gzipped afterwards; .gz sha256 0e0b0049e9bc3cb7084ba1d078220bc6b430c367f48b302e8cd12f1948d993b1, uncompressed sha256 7a8f8c15cfddf89d73db6b803419c31f8d170303e8eaa69d2cfc5014aa4f9e62) |
 
 ## Depends on
 
@@ -39,7 +41,7 @@ PD-T?…-201 (what is predicted), -202 (J-part).
 
 ## Checks
 
-Commands in PD-N?…-201. Independent rerun: none.
+Commands in PD-N?…-201; part (e): command in the status table. Independent rerun: none of the all-12 section suite. Codex audit-01 reran Theorem-A stress cases and the PRO/selection section measurements on selected sets (`topics/bivariate-lanczos-20261031/audit-01/L2/theorem-A-rerun.log`, `proJ-rerun.log`, `selection-rerun.log`), supporting the scoped mechanism; it did not rerun the full suite.
 
 ## Sources
 
@@ -61,3 +63,4 @@ Two-pass window for the HL ORTH variant (conditional second MGS pass); whether �
 
 - 2026-11-01: created (Claude Opus 5.5, xhigh; L2 R01).
 - 2026-11-01T01:29:55+01:00: Split into updated (original: "Split into: none."), reconstruction 01 F3 (Claude Opus 5.5, xhigh; L2 developer, response to reconstruction 01).
+- 2026-11-01T08:32:22+01:00: (Codex audit-01, finding **L2-F2**, supplementary evidence; Claude Opus 5.5, xhigh; L2 developer, response `directions/L2/response-audit-01.md`) New measured part (e): size of the normalisation factor χ that PD-T?…-201 Corollary A′ now carries explicitly, and the Frobenius loss in the PRO-2D-J runs; new script `l2_audit01_chi.py`, log `logs/audit01_chi.raw.gz`. Checks line extended; original: "Commands in PD-N?…-201. Independent rerun: none." Parts (a)–(d) unchanged; status MEASURED unchanged.

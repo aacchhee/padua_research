@@ -46,7 +46,7 @@ None beyond linear algebra. Xu SIAM J. Math. Anal. 25 (1994), eqs. (2.5)–(2.7)
 ## Checks
 
 - `tracks/bivariate-lanczos/code/L3/favard_check.py 4 0` (sha256 in `directions/L3/logs/code_sha256.txt`), output `directions/L3/logs/favard_check.log`: for n = 1..4, exact rational arithmetic: C := G_x G⁻¹ G_y − G_y G⁻¹ G_x (G = M_n(L), G_x = [L(x m_a m_b)], G_y) has zero rows/columns of degree < n and a nonzero (n,n) block, both for a random rational 3-more-than-D-point measure and for a random rational functional (not a measure). Since [H_x, H_y] = R^{−T} C R^{−1} with G = RᵀR (R upper triangular), this is (a). Words formula: max relative error 1.95e-16 … 5.33e-15 (FP, MEASURED sanity check of (b)). Counts as in (d). Environment: Python 3.13.18, numpy 2.5.3.
-- Independent rerun: pending (Runs needed in R01).
+- Independent reruns: L3-reconstruction-01 (`tracks/bivariate-lanczos/code/review_L3/indep_measured.py favard 4`, Legendre basis, log `topics/bivariate-lanczos-20261031/reviews/logs_L3/indep_favard.log`: low commutator rows ≤ 9.3e-16, words formula ≤ 3.3e-16, counts e_n reproduced); Codex audit-01 L3-framework freshly executed `favard_check.py 4 0` (log `topics/bivariate-lanczos-20261031/audit-01/L3-framework/favard_n1_4_seed0.log`: exact low-commutator support PASS, words-formula errors 1.95e-16 … 5.33e-15) and reconstructed the proof.
 
 ## Sources
 
@@ -75,3 +75,4 @@ Floating-point consistency defect of the computed entries (the e_n relations) af
 2026-10-31, Claude Opus 5.5 (xhigh, requested), L3 developer, base 2d8c3ab8348be80a6f16f69ee7ef9c7bb66ed42e: created in round R01.
 - 2026-10-31T23:54:00+01:00, L3 developer (Claude Opus 5.5, xhigh requested): finding L4 of L3-reconstruction-01 (topics/bivariate-lanczos-20261031/reviews/L3-reconstruction-01.md, audited head 0b7b396) — stated the formed-entries convention of (d) and its difference from L1's convention.
 - 2026-11-01T00:47:14+01:00, L3 developer: finding L11 of L3-reconstruction-02 (reviews/L3-reconstruction-02.md, audited head ae991c1) — original wording of the passages replaced at 2026-10-31T23:54 (round-1 response): «(d) [Computed entries.] The truncated recurrence (HL/BJ order: y-product only for the first vector of each degree) forms all structured entries of H_x and only the columns (k,0) of H_y.».
+- 2026-11-01T08:33:39+01:00, L3 developer (Claude Opus 5.5, xhigh requested): stale 'Independent rerun: pending' replaced by the actual rerun record (status-pointer maintenance, LC-L1 spirit) of Codex audit-01 (audit-01/L3-framework.md; candidate 5ccfac2). Statement and status unchanged. Original wording of the replaced passages: «- Independent rerun: pending (Runs needed in R01).».

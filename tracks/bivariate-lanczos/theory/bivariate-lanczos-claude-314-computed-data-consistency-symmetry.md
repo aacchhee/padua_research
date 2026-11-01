@@ -32,7 +32,7 @@ PD-T?…-301; L1's definition of Ĥ_J (PD-T?…-104 part 2) and the pattern stat
 
 ## Checks
 
-`r06_consistency.py` (K12 column in the logs).
+`r06_consistency.py` (K12 column in the logs). Codex audit-01 L3-framework: exact rational completion checks on independently generated asymmetric recurrence data, n = 1..4 (`topics/bivariate-lanczos-20261031/audit-01/L3-framework/exact_framework_checks.py`, seed 314): all commutator columns of degree < n exactly zero, input pair asymmetric (non-vacuous); proof reconstructed.
 
 ## Proof or evidence
 
@@ -52,3 +52,4 @@ Quantitative version: distance of (T_F, τ) to the consistent partial-data manif
 
 2026-10-31T23:52+01:00, Claude Opus 5.5 (xhigh, requested), L3 developer, round R06.
 - 2026-11-01T00:47:14+01:00, L3 developer (Claude Opus 5.5, xhigh requested): finding L1 (supplied the 'symmetric ⇒ structured' step; exact-window hypothesis dropped) of L3-reconstruction-02 (reviews/L3-reconstruction-02.md, audited head ae991c1). Original wording of the replaced passages: «(b) If the computed T_F has the structural echelon pattern of PD-T?…-301 (exact window, PD-T?…-102 part 2), then»; «(b) If both are symmetric, the pair is structured and its commutator is skew;».
+- 2026-11-01T08:33:39+01:00, L3 developer (Claude Opus 5.5, xhigh requested): current independent evidence cited (status-pointer maintenance) from Codex audit-01 (audit-01/L3-framework.md; candidate 5ccfac2). Statement and status unchanged. Original wording of the replaced passages: «`r06_consistency.py` (K12 column in the logs).».

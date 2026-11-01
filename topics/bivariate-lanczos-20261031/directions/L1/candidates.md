@@ -4,7 +4,15 @@ Direction L1 (+L4) of topic `bivariate-lanczos-20261031`. Developer: Claude Opus
 
 Novelty-gate scope (2026-10-31, R01): read `state/IDEAS.md` in full (seed rows 001-048, obstruction rows OBST-01..15, disposition table), `baseline-candidates.md` rows 001-010, 048 and notes 1-9, `literature/INDEX.md` rows 001-055 and 101-162, records `huhtanen-larsen-bit-2002`, `huhtanen-larsen-simax-2002`, `bartels-jezioranski-1985` in full, the first sections of `sinha-2026`, `simonova-tichy-2025`, `carson-et-al-2025`, `paige-1976`, `paige-1980-lanczos`, `paige-1971`, `greenbaum-1989`, `freund-2000`; the HL BIT and HL SIMAX fulltexts (pdftotext into the scratchpad; HL BIT pp. 394-398 re-read for Algorithm 1 and Thm 2.3). Terms searched in the registry and index: Paige, block Paige, band Lanczos, injected, joint Ritz, single section, commutator, implicit column, defect, rotation, complex symmetric, bilinear, Christoffel, node component. Limitation: block-Lanczos sources are abstract-level in the repository (fulltexts not inspected); any transfer statement citing them is LITERATURE-as-reported.
 
-Kill criteria below were written **before** the corresponding experiment was run (R01, 2026-10-31); the run logs are in `logs/`.
+Kill criteria below were written **before** the corresponding experiment was run (R01, 2026-10-31); the run logs are in `logs/`. [Qualified 2026-11-01T08:41:34+01:00, Codex audit-01 L1-later. Read this sentence subject to the exceptions disclosed in the entries themselves:
+- the R01 post-hoc rule changes (completion-degree exclusion, the 'tracks' minimum, the reporting tags);
+- the IDEA?…-106/-107 thresholds, written post hoc;
+- IDEA?…-114/-115, written after and motivated by the checkerboard results;
+- IDEA?…-116, written after a small smoke test;
+- IDEA?…-119, which reuses the Lobatto flat control;
+- IDEA?…-120, written with the ordinary BJ losses on all six sets already known;
+- the PD-T?…-114 identity, derived after the IDEA?…-117 run.
+A criterion written before a model's output is known is still not independent prospective validation of model selection. Timestamps are self-attested.]
 
 ---
 
@@ -194,7 +202,7 @@ Aliases: triangular row selection of the Jacobi pencil; two-relation block recur
 
 ## Pending corrections to reviewed R01–R03 files (found in R04; the reviewed files are not edited — corrections are stated in R04.md §6)
 
-- PC-1 (PD-N?…-101, (a) parameter range): the probe sets of `l1_defect_probe.py` (square rotated by 0.05; sheared squares; rotated Beta-product set) were listed as sets on which loss exceeds u/ρ_O by 10²–10¹⁴, but that probe computed **no** Ritz residuals. The 10²–10¹⁴ statement is supported only on the R01 main sets and on the seed-11 square rotated by 0.3 and π/4, disk and triangle (u/ρ_Z from `l1_node_propagator.py`). For the square rotated by 0.05 the loss at n = 24 is 2e-13, i.e. borderline (≈ 3× the seed-11 square's u/ρ_Z), not a 10²-fold miss.
+- PC-1 (PD-N?…-101, (a) parameter range) [applied 2026-11-01T08:41:34+01:00 in the PD-N?…-101 rewrite (a1)–(a3), Codex audit-01 LL-M1; the earlier "folded in" note in PD-N?…-101's History was inaccurate]: the probe sets of `l1_defect_probe.py` (square rotated by 0.05; sheared squares; rotated Beta-product set) were listed as sets on which loss exceeds u/ρ_O by 10²–10¹⁴, but that probe computed **no** Ritz residuals. The 10²–10¹⁴ statement is supported only on the R01 main sets and on the seed-11 square rotated by 0.3 and π/4, disk and triangle (u/ρ_Z from `l1_node_propagator.py`). For the square rotated by 0.05 the loss at n = 24 is 2e-13, i.e. borderline (≈ 3× the seed-11 square's u/ρ_Z), not a 10²-fold miss.
 - PC-2 (PD-T?…-107 (b)): "loss grows exponentially from degree ≈ 8–12" does not hold for the 0.05 rotation (loss 7e-15, 2e-14, 2e-13 at n = 16, 20, 24: growth starts near n ≈ 18).
 
 ## IDEA?bivariate-lanczos-claude-112 — near-product perturbation bound for the node propagator (R04)
@@ -363,3 +371,20 @@ These three verdicts are therefore **convention-sensitive**, i.e. not decided at
 - **IDEA?…-120:** survives (convention-free, REVIEWER-MEASURED: C/L 0.56–1.86 on all six sets). The term-wise noise-model version stays convention-sensitive and under-estimates actual rounding, because the per-term model misses summation rounding.
 - **PC-11 addendum (recon-02 m10):** the quoted on-pattern deviation 1.6e-14 excludes β; including β it is 3.0e-13 (recon-02). Harmless.
 - **PD-N?…-105 extension (recon-02 M1, REVIEWER-MEASURED):** on the cubic checkerboard the ranking reverses. At n = 24: alt 3.1e-13, mirror 2.7e-7, dev 1.0e-6, adapt 9.3e-6. No single tested rule is best everywhere.
+
+### A01 — dispositions after Codex audit-01 (written 2026-11-01T08:41:34+01:00; `../../audit-01.md`, `../../audit-01/L1-foundations.md`, `../../audit-01/L1-later.md`; response [response-audit-01.md](response-audit-01.md))
+
+No candidate's disposition changes. Scopes and pointers change as follows.
+- **IDEA?…-101 / -102 (PD-N?…-101):** REJECTED: failed, unchanged, now on (a1)–(a2) only:
+  - (a1) the 14 R01 main non-product runs, all sections;
+  - (a2) the seed-11 rotation 0.3, π/4, disk and triangle sets, Z only;
+  - the probe-only sets carry no Ritz claim (PC-1 applied).
+  - Under the pre-registered rule (u = 2^-52) the excess over u/ρ_O is 1.0·10²–1.0·10¹⁴ at every informative degree. At the plan's 2^-53 it is 4.4·10¹–2.1·10¹⁴. Neither convention puts any triple in the factor-3 band (`logs/a01_n101_reanalysis.log`).
+- **IDEA?…-109 (PD-T?…-105):** the "FP transfer CONDITIONAL" part is now its own record, PD-T?…-116 (CONDITIONAL on H_δ). PD-T?…-105 stays PROVED (audit-01 S1).
+- **IDEA?…-111 (PD-T?…-108):** the row-selection statement is corrected (audit-01 F1, F2):
+  - other selections must be admissible (A·lm(q_l) = lm(q_k));
+  - the left inverse is of the normalised system with π_0 = 1;
+  - PROVED is unchanged, and the disposition of the IDEA?…-111 inference is unchanged.
+- **IDEA?…-116 (PD-T?…-113):** part 3 is now PROVED for Q_40 too. The independent exact rerun is Codex audit-01's, `audit-01/L1-later/cert_square40_rerun.log`, sha256 `4375ae13eae79f3011c3455c09c85798bff7d810aae17ce9111afd17073005f2`. The affine-scaling sentence of part 1 now holds for c > 0, with signs for c < 0 (LL-L1).
+- **IDEA?…-117 (PD-T?…-114):** the measured gain census and first-order channel (former part 5) are now PD-T?…-117 (MEASURED). PD-T?…-114 parts 1–4 stay PROVED, and "on-pattern" is worded as "structurally permitted" (LL-M2, LL-L2).
+- **IDEA?…-120 (PD-T?…-115):** survives, unchanged. The title and the Reading are qualified to sufficiency within the tested models. The dot64 operation includes conversion of the operands to double.

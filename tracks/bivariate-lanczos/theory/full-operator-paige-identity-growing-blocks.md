@@ -24,7 +24,7 @@ with up/low the strictly upper/lower parts, dg the diagonal and lowd the lower p
    ‖Ω‖₂ ≤ 6‖S‖₂‖R_loc‖_F + 2‖Δ‖₂‖S‖_F + 2‖B‖₂‖c_loc‖_F + 2‖E‖_F‖Q̂‖₂ + (2 + 2‖G‖₂)‖K‖_F.
 3. **(Ritz-type corollary.)** For unit s (Euclidean norm), y := Q̂ s and any θ,
    |(Q̂_+ᵀ y)ᵀ (B s)| ≤ ‖Ω‖₂ + 2‖R‖₂ ‖(S − θ)s‖,
-   so the component of the new block along y in the (bilinear) direction Bs is bounded by (‖Ω‖₂ + 2‖R‖₂‖ρ‖)/‖Bs‖, and ‖Q̂_+ Bs‖ ≤ ‖Ay − θy‖ + ‖Q̂‖₂(‖ρ‖ + ‖K‖₂) + ‖E‖₂ (B s is the boundary part of the residual).
+   so, when Bs ≠ 0, the component of the new block along y in the (bilinear) direction Bs/‖Bs‖ is bounded by (‖Ω‖₂ + 2‖R‖₂‖ρ‖)/‖Bs‖. When Bs = 0 only the undivided inequality is asserted. [Qualification added 2026-11-01T08:41:34+01:00, Codex audit-01 L1-foundations reconstruction of 103.] Further, ‖Q̂_+ Bs‖ ≤ ‖Ay − θy‖ + ‖Q̂‖₂(‖ρ‖ + ‖K‖₂) + ‖E‖₂ (B s is the boundary part of the residual).
 
 Specialisations (with the window recurrence of PD-T?…-101/-102, n ≥ 1, Q̂ = Q̂_{n−1}, Q̂_+ = block n, q = n+1, r = n):
 
@@ -85,3 +85,4 @@ The identity controls, for each approximate eigenvector s of the section, **one*
 
 - 2026-10-31: created (Claude Opus 5.5, xhigh; L1 R02).
 - 2026-10-31T23:05Z (response to reconstruction 01): CONFIRMED by recon-01 (exact rational instances; bandwidth hypothesis shown necessary). Minor note on the locality of K added to the F specialisation. Sinha 2026 relation per PC-8: a variant of a known identity, no novelty claimed.
+- 2026-11-01T08:41:34+01:00 (Claude Opus 5.5, xhigh; response to Codex audit-01, L1-foundations, observation in the reconstruction of 103): part 3's explanatory division by ‖Bs‖ now carries the condition Bs ≠ 0. The undivided inequality, the identity and the status (PROVED) are unchanged. Original wording: "so the component of the new block along y in the (bilinear) direction Bs is bounded by (‖Ω‖₂ + 2‖R‖₂‖ρ‖)/‖Bs‖, and ‖Q̂_+ Bs‖ ≤ …".

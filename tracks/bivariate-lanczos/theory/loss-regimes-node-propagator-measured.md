@@ -20,6 +20,7 @@ Split into: none.
 - **(a)/(b) are statements about the listed set types, not a classifier by support** (recon-01 major finding). Product supports with non-product weights (square with exp(8xy): loss 1.9e-8 at n = 24, 1.6·10⁵ × u/ρ_Z) and sampled product densities (Gaussian cloud: 2.4·10³ × u/ρ_Z) lose far above the Ritz level. See PD-N?…-106. The regime depends on the measure, not on the support shape.
 - **(b) "exponentially"**: over n ≤ 24 the log-loss is convex in n (recon-01: the per-degree factor rises from ≈ 3–4 at n ≈ 10 to ≈ 8–12 at n ≈ 22). In the developer's c01 runs the decades per 4 degrees increase too, e.g. 2.3 → 2.5 → 2.8 for rotation 0.3 between n = 12 and 24. "Grows exponentially" is to be read as "grows at least exponentially, at an increasing rate, over the measured range". The onset is n ≈ 18 for the 0.05 rotation (PC-2).
 - **(b) depends on the selection rule**: all statements are for the dev (BJ input-code) parent rule; other one-relation rules change the loss by 10³–10⁸ (PD-N?…-105).
+- **(b) "independent of Ritz convergence"** [added 2026-11-01T08:41:34+01:00, Codex audit-01 LL-M1 applied here as in PD-N?…-101]: this is supported only where Ritz residuals were computed. That is the R01 main runs (all sections) and the seed-11 square rotated by 0.3 and π/4, the disk and the triangle (Z only); see PD-N?…-101 (a1)–(a2). The probe-only sets of (b) — rotation 0.05, the sheared squares, the rotated product set — have loss data only. For the 0.05 rotation an independent audit measurement gives loss/(u/ρ) = 3.7–7.2 at n = 24 and u = 2^-52, near the Ritz level (PD-N?…-101 (a3)).
 - **(c)** captures the vector channel only. It misses strongly non-uniform weights (clustered checkerboards; PC-3, PD-N?…-103 (b)) and the triangle.
 - **(e)**: non-diagonal within-degree coupling does not imply growth: recon-01 found weights exp(xy), exp(4xy) on the square stable; the developer's rerun gives 2.7× and 32× u/ρ_Z at n = 24.
 
@@ -77,3 +78,4 @@ The listed sets, M ≤ 6724, degrees ≤ 48, dev parent rule. "Product-aligned" 
   - Selection dependence noted (B1 → PD-N?…-105).
   - PC-2 and PC-3 folded in.
   - The original statements (a)–(f) are unchanged above.
+- 2026-11-01T08:41:34+01:00 (Claude Opus 5.5, xhigh; response to Codex audit-01, LL-M1 consistency). Correction bullet added: (b)'s "independent of Ritz convergence" is restricted to the sets with Ritz data. The original (b) text is unchanged above, as for the earlier corrections. Status (MEASURED) unchanged.

@@ -19,10 +19,11 @@ Overall status: MEASURED.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
-| K13 violation at n = 28..40 | MEASURED | `directions/L3/logs/r06_consistency_random.log` |
+| K13 violation at n = 28..40 | MEASURED | `directions/L3/logs/r06_consistency_random.log`; fresh rerun by Codex audit-01 L3-framework (`topics/bivariate-lanczos-20261031/audit-01/L3-framework/consistency_random_n40.log`: asymmetry/u 2.09e3 at n = 28, 1.69e7 at n = 40) |
 
 Candidate / claim disposition: REJECTED. Rejection reason: refuted (completed-pair version, within scope).
 
 ## History
 
 - 2026-11-01T00:48:09+01:00, L3 developer: created per finding L8 of L3-reconstruction-02.
+- 2026-11-01T08:33:39+01:00, L3 developer (Claude Opus 5.5, xhigh requested): current evidence cited (status-pointer maintenance) from Codex audit-01 (audit-01/L3-framework.md; candidate 5ccfac2); the audit's reading — a finite measured failure, not a proof that no nonlinear positive measure or Greenbaum model exists — matches the stated scope. Status unchanged. Original wording of the replaced passages: «| K13 violation at n = 28..40 | MEASURED | `directions/L3/logs/r06_consistency_random.log` |».

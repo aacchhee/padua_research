@@ -27,11 +27,11 @@ Rejection reason: failed.
 
 ## Depends on
 
-PD-T?…-205 part 4 (bound), PD-T?…-206 (measurements).
+PD-T?…-208 (bound; formerly cited as PD-T?…-205 part 4), PD-T?…-206 (measurements).
 
 ## Checks
 
-As PD-T?…-206.
+As PD-T?…-206 (including Codex audit-01's partial rerun on rotπ/4, the triangle and the cubic checkerboard).
 
 ## Sources
 
@@ -43,7 +43,7 @@ Measured.
 
 ## Scope
 
-Does not refute that adaptive selection is much better than BJ (it is, by 7–10 decades on four sets); it refutes uniform safety of the tested rules on the tested sets.
+Does not refute that adaptive selection is much better than BJ (it is, by 7–10 decades on four sets); it refutes uniform safety of the tested rules on the tested sets. It does not quantify over all possible one-relation selections (audit-01); in particular the adaptive exceptions and the two-relation control of PD-T?…-206 stand.
 
 ## Open items
 

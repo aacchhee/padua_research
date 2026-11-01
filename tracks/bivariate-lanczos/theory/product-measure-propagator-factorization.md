@@ -3,7 +3,7 @@
 ID kind: PD-T.
 Aliases: product decoupling; tensor-grid stability mechanism; chain factorisation; "no bivariate amplification on product measures".
 Split from: none.
-Split into: none.
+Split into: PD-T?bivariate-lanczos-claude-116 (`product-measure-computed-propagator-transfer-conditional.md`): the former part 2′, i.e. the transfer of part 2 to the computed propagator of a floating-point run (CONDITIONAL on near-exact computed coefficients). Split 2026-11-01T08:33:59+01:00, Codex audit-01 finding S1.
 
 ## Statement
 
@@ -24,7 +24,7 @@ Impulse response ρ^{[s]}: the solution of b_{l+1}ρ_{l+1} = (η − a_l)ρ_l �
 
 ## Assumptions
 
-Tensor grid with product weights (exact product measure), with μ_x and μ_y normalised as **probability measures** (Σu_a = Σv_b = 1). This was implicit and is needed: W_0 = −1 uses σ_1 = μ_y(1)/b_1, and |r_l(η_b)| ≤ 1/√v_b uses it (added 2026-10-31, recon-01 minor). n ≤ min(m_x, m_y) − 1 (U(n) holds and all columns of degree ≤ n are nonzero). Part 2 is a statement about the idealised propagator with exact coefficients; in floating point the computed coefficients differ from these by rounding-induced amounts (on tensor 41² the computed off-pattern coefficients are ≤ 7e-15 relative, `logs/r02_block_solve_growth.log`), so for the computed propagator part 2 holds to first order in that deviation (CONDITIONAL on it staying small).
+Tensor grid with product weights (exact product measure), with μ_x and μ_y normalised as **probability measures** (Σu_a = Σv_b = 1). This was implicit and is needed: W_0 = −1 uses σ_1 = μ_y(1)/b_1, and |r_l(η_b)| ≤ 1/√v_b uses it (added 2026-10-31, recon-01 minor). n ≤ min(m_x, m_y) − 1 (U(n) holds and all columns of degree ≤ n are nonzero). Part 2 is a statement about the idealised propagator with exact coefficients. Its transfer to the computed propagator of a floating-point run is a separate CONDITIONAL claim, PD-T?…-116 [split 2026-11-01T08:33:59+01:00, audit-01 S1; the original sentence is preserved in History].
 
 ## Status by part
 
@@ -32,10 +32,9 @@ Overall status: PROVED (part 2 under the stated idealisation).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
-| 1. product structure and exact coefficients | PROVED | proof below; measured: tensor 41² off-pattern within-degree coupling ≤ 7e-15 |
+| 1. product structure and exact coefficients | PROVED | proof below. Consistency check, not a claim of this file: on tensor 41² the computed within-degree coupling is ≤ 7e-15, MEASURED in PD-T?…-107 (e) |
 | 2. factorisation and bound (idealised propagator) | PROVED | proof below |
-| 2′. same for the computed propagator in FP | CONDITIONAL | named hypothesis: computed coefficients = exact ones + O(δ) with ‖L(z)⁻¹‖·δ ≪ 1 (the second condition was added 2026-10-31, recon-01 minor); first order in δ |
-| 3. non-product: decomposition fails | PROVED (reading of 1.) | measured coupling ratios 1–2.5 on rotated squares and the triangle (PD-T?…-107 (f)) |
+| 3. non-product: decomposition fails | PROVED (reading of 1.) | cross-reference, not a claim of this file: the computed coupling ratios 0.3–2.5 on the rotated squares and the triangle are MEASURED in PD-T?…-107 (e) |
 
 ## Depends on
 
@@ -59,7 +58,7 @@ Corrected 2026-10-31T23:05Z (recon-01 major finding on scope). Original wording:
 
 ## Open items
 
-(i) Perturbation version: bound the propagator for measures whose within-degree coupling is O(δ) (near-product). (ii) A lower bound (growth) for a non-product example. (iii) An explicit bound for max_l |σ_l(η_b)| at nodes.
+(i) Perturbation version: bound the propagator for measures whose within-degree coupling is O(δ) (near-product). A weak PROVED form is PD-T?…-110, informative only near exact products (PD-T?…-112 (f)). (ii) A lower bound (growth) for a non-product example. A finite exact certificate for the dev rule on the triangle grid T_24 is PD-T?…-113; there is no all-n bound. (iii) An explicit bound for max_l |σ_l(η_b)| at nodes. (iv) The hypothesis H_δ of PD-T?…-116 (near-exact computed coefficients on product measures) is unproved. [(i)–(ii) annotated and (iv) added 2026-11-01T08:33:59+01:00, audit-01 consolidated item 5, stale pointers.]
 
 ## History
 
@@ -71,3 +70,7 @@ Corrected 2026-10-31T23:05Z (recon-01 major finding on scope). Original wording:
   - Minor: recon-01 notes that the factor (n+1)² in part 2 can be (n+1). This is not re-derived here; the stated bound is valid either way.
   - Minor: part 3 is close to vacuous as a statement (a reading of part 1), agreed.
   - Part 1 is known (BPS 2010 Remark 5; PC-10).
+- 2026-11-01T08:33:59+01:00 (Claude Opus 5.5, xhigh; response to Codex audit-01, L1-foundations S1 and consolidated item 5). The exact theorem (parts 1–3) and its status PROVED are unchanged.
+  - S1 split: part 2′ moves to the new file PD-T?…-116 (CONDITIONAL). The Assumptions sentence on floating point moves with it. Original status row: "| 2′. same for the computed propagator in FP | CONDITIONAL | named hypothesis: computed coefficients = exact ones + O(δ) with ‖L(z)⁻¹‖·δ ≪ 1 (the second condition was added 2026-10-31, recon-01 minor); first order in δ |". Original Assumptions sentence: "Part 2 is a statement about the idealised propagator with exact coefficients; in floating point the computed coefficients differ from these by rounding-induced amounts (on tensor 41² the computed off-pattern coefficients are ≤ 7e-15 relative, `logs/r02_block_solve_growth.log`), so for the computed propagator part 2 holds to first order in that deviation (CONDITIONAL on it staying small)."
+  - Status-table evidence cells are relabelled as cross-references, not claims of this file. Row 3 pointed to PD-T?…-107 (f) and quoted "1–2.5". The coupling ratios are in PD-T?…-107 (e), which reads 0.3–2.5 on the rotated squares and the triangle. Original row-3 evidence: "measured coupling ratios 1–2.5 on rotated squares and the triangle (PD-T?…-107 (f))". Original row-1 evidence: "proof below; measured: tensor 41² off-pattern within-degree coupling ≤ 7e-15".
+  - Open items (i)–(ii) annotated with the later results PD-T?…-110 and -113, and (iv) added (stale pointers).

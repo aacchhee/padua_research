@@ -35,8 +35,8 @@ Overall status: PROVED.
 |---|---|---|
 | 1. transfer representation | PROVED (routine) | proof below; numerical check: transfer product vs direct inverse agree to 4.9e-15 (smoke check, R04 §5) |
 | 2. perturbed-product lemma | PROVED | proof below |
-| 3. near-product bound | PROVED (combination of 1, 2) | consistency: 0 violations over 28 nodes × 210 pairs × 4 sets (`logs/r04_near_product.log`) |
-| informativeness | MEASURED (PD-T?…-112 records the numbers) | informative (≤ 0.4 decades) only for exact product measures; 10–28 decades for the random square and its rotations against the product of the marginals |
+| 3. near-product bound | PROVED (combination of 1, 2) | consistency (MEASURED verification record): 0 violations over 210 (s, t) pairs at 28 sampled nodes on each of the three random sets and 27 on tensor 41² (after deduplication) (`logs/r04_near_product.log`; producer rerun by Codex audit-01, `audit-01/L1-later/near_product_producer_rerun.log`). The reference coefficients are a double full-CGS2 computation, not certified exact, so this checks the inequality for the computed reference data |
+| informativeness — cross-reference, not a claim of this file | MEASURED in PD-T?…-112 (f) | informative (≤ 0.4 decades) only for exact product measures; 10–28 decades for the random square and its rotations against the product of the marginals |
 
 ## Depends on
 
@@ -65,3 +65,4 @@ A reference closer than the product of the marginals (e.g. a product measure in 
 - 2026-10-31: created (Claude Opus 5.5, xhigh; L1 R04).
 - 2026-10-31T23:05Z (re-check after reconstruction 01, which covered R01–R03 only): not affected by B1/B2. The bound is exact algebra for the propagator L*(z) of the dev selection; the same transfer argument applies to any selection with a degree-block structure. The informativeness measurements (PD-T?…-112 (f)) use the dev rule.
 - 2026-10-31T23:37Z (response to reconstruction 02): CONFIRMED by recon-02 (proof re-derived). The m7 sign note is added in part 1. The informativeness numbers were not rerun by the reviewer.
+- 2026-11-01T08:41:34+01:00 (Claude Opus 5.5, xhigh; response to Codex audit-01, L1-later table note on T112(e,f)/N103(a)). The consistency row said "28 nodes × 210 pairs × 4 sets". The log shows 28 sampled nodes on the three random sets and 27 on tensor 41² after deduplication, and the row now says so. It also notes that the reference coefficients are computed, not certified exact. The informativeness row is relabelled as a cross-reference to PD-T?…-112 (f). Original rows: "| 3. near-product bound | PROVED (combination of 1, 2) | consistency: 0 violations over 28 nodes × 210 pairs × 4 sets (`logs/r04_near_product.log`) |" and "| informativeness | MEASURED (PD-T?…-112 records the numbers) | …". The theorem and its status (PROVED) are unchanged.

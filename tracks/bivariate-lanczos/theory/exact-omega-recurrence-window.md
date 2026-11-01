@@ -29,7 +29,7 @@ Overall status: PROVED.
 |---|---|---|
 | identity | PROVED | proof below; numerical check in long double: residual ≤ 1e-19 (R02 log `r02_identities.log`, "omega-recurrence sources") |
 | interpretation of sources | PROVED (reading of the identity) | |
-| sizes of sources vs loss | MEASURED (PD-T?…-107 (e)) | |
+| sizes of sources vs loss — cross-reference, not a claim of this file | MEASURED in PD-T?…-107 (d) | [pointer corrected 2026-11-01T08:41:34+01:00; it read "MEASURED (PD-T?…-107 (e))"] |
 
 ## Depends on
 
@@ -55,3 +55,4 @@ Bound the amplification of the recursion (equivalently of the node propagators o
 
 - 2026-10-31: created (Claude Opus 5.5, xhigh; L1 R02).
 - 2026-10-31T23:05Z (response to reconstruction 01): CONFIRMED by recon-01 (exact rational check, 155 pairs). The one wrong inequality for the exact window is corrected in place, with the original text kept.
+- 2026-11-01T08:41:34+01:00 (Claude Opus 5.5, xhigh; response to Codex audit-01, consolidated item 5, stale pointers). The status row on the sizes of the sources pointed to PD-T?…-107 (e), which is the within-degree coupling. The source sizes are PD-T?…-107 (d), and the row is now relabelled as a cross-reference. Original row: "| sizes of sources vs loss | MEASURED (PD-T?…-107 (e)) | |". The identity and its status (PROVED) are unchanged.

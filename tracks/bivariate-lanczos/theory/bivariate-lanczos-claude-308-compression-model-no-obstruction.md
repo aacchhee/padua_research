@@ -7,7 +7,7 @@ Split into: none.
 
 ## Statement
 
-Square case M = N_n, Π_n-unisolvent nodes, positive weights, H = Φ(μ). For every δ > 0 there is ρ(δ) > 0 such that every pair of real symmetric N × N matrices (Ĥ_x, Ĥ_y) — consistent or not — with ‖Ĥ_x − H_x‖ + ‖Ĥ_y − H_y‖ < ρ(δ) is a compression Ĥ_x = Vᵀ X′ V, Ĥ_y = Vᵀ Y′ V (V an isometry) of a commuting pair of real diagonal matrices (X′, Y′) whose joint spectrum lies in K_δ; equivalently Ĥ_x = Σ_k x_k T_k, Ĥ_y = Σ_k y_k T_k with T_k ⪰ 0, Σ_k T_k = I, (x_k, y_k) ∈ K_δ. In contrast, the section (Krylov/graded) model can be obstructed for every δ ≤ δ_0 (PD-N?…-301). Hence the obstruction comes from the graded Krylov structure (moments up to degree 2n+1), not from non-commutativity of the computed pair as such.
+Square case M = N_n, Π_n-unisolvent nodes, positive weights, H = Φ(μ). For every δ > 0 there is ρ(δ) > 0 such that every pair of real symmetric N × N matrices (Ĥ_x, Ĥ_y) — consistent or not — with ‖Ĥ_x − H_x‖ + ‖Ĥ_y − H_y‖ < ρ(δ) is a compression Ĥ_x = Vᵀ X′ V, Ĥ_y = Vᵀ Y′ V (V an isometry) of a commuting pair of real diagonal matrices (X′, Y′) whose joint spectrum lies in K_δ; equivalently Ĥ_x = Σ_k x_k T_k, Ĥ_y = Σ_k y_k T_k with T_k ⪰ 0, Σ_k T_k = I, (x_k, y_k) ∈ K_δ. In contrast, the section (Krylov/graded) model can be obstructed for every δ ≤ δ_0 in reading (E), i.e. for specified consistent perturbations given as data (PD-N?…-301); the finite-precision reading (G) is not addressed. Hence the obstruction comes from the graded Krylov structure (moments up to degree 2n+1), not from non-commutativity of the computed pair as such.
 
 ## Definitions
 
@@ -53,3 +53,4 @@ Rate of ρ(δ) as δ → 0 (expected between δ² and δ; not determined).
 ## History
 
 2026-10-31, Claude Opus 5.5 (xhigh, requested), L3 developer, base 2d8c3ab: created in round R01.
+- 2026-11-01T08:33:39+01:00, L3 developer (Claude Opus 5.5, xhigh requested): consolidated item 4 of Codex audit-01 (backward-obstruction sentence restricted to reading (E); audit-01.md, candidate 5ccfac2). Statement of the compression result and status unchanged. Original wording of the replaced passages: «In contrast, the section (Krylov/graded) model can be obstructed for every δ ≤ δ_0 (PD-N?…-301).».
