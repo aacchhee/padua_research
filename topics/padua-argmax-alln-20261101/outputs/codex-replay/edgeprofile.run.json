@@ -1,0 +1,22 @@
+{
+  "command": [
+    "python3",
+    "edgeprofile.py",
+    "12",
+    "24",
+    "48",
+    "96"
+  ],
+  "cwd": "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/code",
+  "started_utc": "2026-11-01T21:17:38.635912+00:00",
+  "finished_utc": "2026-11-01T21:18:10.722116+00:00",
+  "wall_seconds": 32.086220142,
+  "returncode": 0,
+  "environment_overrides": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "output": "edgeprofile.out",
+  "output_sha256": "2506fce17769ed37baf68594e729cfdc6e203905fc274894ff184f8d031884e1"
+}

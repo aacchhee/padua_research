@@ -45,5 +45,15 @@
 
 ## Runs needed
 
+## 2026-11-01 — Codex part 3 setup checkpoint
+
+- Role: orchestrator/developer; actual model gpt-6.1-sol xhigh, as AC requested. Mathematical and setup work in this turn retains that configured effort; bounded replay uses gpt-6.1-sol medium. Rules read at `328be35e55143013047ec03a70e9906e82b95353`.
+- GitHub connector confirmed main `2b52b432fe59c9a50aef9deebe5152c5d6874465` already belongs to this head; no merge is needed. Original `/workspace/padua_research` checkout stays intact. Selected source files were fetched into a separate snapshot; [input-snapshot.json](input-snapshot.json) records every pinned path/blob.
+- Snapshot materialization initially added a trailing newline. Before freezing evidence, every fetched file was restored to its exact pinned Git blob; the replay worker then reran all six scripts. All six stdout files are byte-identical to Claude's outputs. [Independent record](independent-checks-claude-records.md) documents scope and versions.
+- Parallel roles: replay (Sol medium), pre-registered T1–T5 numerical tests (Sol xhigh), finite certifier/P0 (Sol xhigh), and compact-edge proof preparation (Sol xhigh). All have disjoint topic file ownership and no Git authority. This is explicitly requested in handoff 02.
+- Novelty gate: existing candidates are being tested under their pre-registered criteria; no new mechanism or priority claim is introduced by setup/replay. Complete state/IDEAS headings/aliases and obstruction/disposition tables scanned; full shortlist IDEA-206/290–305 and linked part-2 material available to the relevant workers. literature/INDEX read for attribution context; no transferred unread literature theorem is used.
+- Fresh-range transition adopted. [ALLOCATIONS.md](ALLOCATIONS.md) permanently reserves PD-T206–225, PD-N078–083, IDEA-316–335, LIT-460–465; no final IDs assigned. All 15 returned PRs are merged, none open or closed-unmerged. Main ledger and all four registries checked; [scan](allocation-scan.json). The local ledger respects handoff 02's topic-only write scope; proposed shared links wait for PR preparation.
+- Stage remains WORK; handoff 02 remains open while its step runs. Tests/proofs and any finite-range extension will be recorded in a subsequent checkpoint, without upgrading the all-degree target.
+
 - Independent rerun of `code/check.py`, `cell.py`, `interior.py`, `edgeprofile.py`, `strips.py` and `n2_edges.py` (commands in the two observations records), by an agent other than Claude, before any result here is used as evidence in a PR. Assigned to Codex as step 0 of handoff 02.
 - Plan v2 §6 tests T1–T5: not run. Assigned to handoff 02.
