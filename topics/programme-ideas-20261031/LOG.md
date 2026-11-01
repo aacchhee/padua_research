@@ -149,6 +149,22 @@ Subagents are launched as background `general-purpose` agents on `claude-fable-5
 - Verification actually executed: new saturated-centre developer checker/output reproduced exactly; independent cardinal-polynomial/nodal and rank checks confirm s=1 and zero residuals; declared similarity/weighted-symmetry substitution checked symbolically. All 184 existing code/output and prior audit-support files compared are unchanged; both prior audit reports, rules/crosswalk and all eleven statuses are preserved. Root receipt, source hashes and commands: `audit-03-support/check-response-02.py/.json`. Python 3.12.14, SymPy 1.14.0; no expensive unchanged sweeps repeated.
 - Focused scientific correction cycle is complete. Stage PR authorizes preparation, not merge or a readiness claim. PR #6 remains draft for coordinated ID decisions, literature deduplication/integration, current audit metadata and the applicable integration check/rehearsal. The reviewer did not silently repair developer files or claim external archival verification. Only AC merges.
 
+## 2026-11-01 — Claude, PR preparation after accepted audit-03 (claude-opus-5-5; requested effort high); Stage PR
+
+- Rules were read at the branch head. They are unchanged from audit-03 (the local-results rule is on main). Main `9739a0c` is already an ancestor.
+- N1/N2 are accepted and fixed in `c93c912` (decisive record wording, OPEN_TARGETS B3 gap/constant/negative-form conventions, PD-T01 (d) stabiliser {±I}). Impact check: 3 prose files changed; statuses, registries, code, outputs, audit records, `agents/` and the ledger are byte-identical. Details are in [pr-prep.md](pr-prep.md).
+- Literature and registry integration is in `ad45de2`:
+  - the `literature/INDEX.md` provisional block has 109 rows (51 overlap, 58 new); rows 48 and 60 are merged into LIT-002 and LIT-010 with no new ID;
+  - the `literature/CORPUS.md` provisional key block has 112 keys;
+  - `ID_CROSSWALK.md` gains 20 IDEA rows and 111 LIT rows;
+  - the deduplication map is `lit/integration-map.json/.md` (Sonnet 5.5 helper; spot-checked).
+- Squash rehearsal from `9739a0c`:
+  - PR #6 `ad45de2` is clean;
+  - PR #9 `a09d910` adds 27 files under its own topic and is clean on top;
+  - PR #10 `a2dd845` (Lanczos) gives five end-of-file append conflicts in the shared registries, resolved as the union with all added lines preserved. Both orders were rehearsed; the trees differ only in block order.
+- PR #10 has allocated PD-T029–080, PD-N007–031, LIT-066–292 and IDEA-077–176. The next free IDs for this branch are PD-T081, PD-N032, LIT-293 and IDEA-177. If PR #10 lands first: drop the 34 duplicate CORPUS keys, and re-deduplicate the 54 INDEX rows whose sources PR #10 also registers.
+- Decision for AC: keep the provisional IDs at merge (lattice precedent), or allocate final IDs after PR #10 (ledger owner or explicit authorisation). Recommended order: PR #10 → PR #6 → PR #9. PR #6 stays draft until AC decides. No final ID is allocated. Only AC merges.
+
 ## Runs needed
 
-Response-02 focused review is complete. PR preparation and N1/N2 dispositions/impact check remain. Certification of maxima and proofs of corner expansion/argmax stay OPEN; unimplemented rational and computed-section alternatives are unexcluded. Source identities verified in audit-02 remain pinned; Windows archive retention was not independently rechecked. No full n≤200/n=8192/80-bit replay is claimed. Completed commands/evidence are in the three audit-support directories with separate source revisions.
+Response-02 focused review is complete, and PR preparation is done ([pr-prep.md](pr-prep.md)). What remains is AC's final-ID and merge-order decision, plus re-integration with PR #10 if it lands first. Certification of maxima and proofs of corner expansion/argmax stay OPEN; unimplemented rational and computed-section alternatives are unexcluded. Source identities verified in audit-02 remain pinned; Windows archive retention was not independently rechecked. No full n≤200/n=8192/80-bit replay is claimed. Completed commands/evidence are in the three audit-support directories with separate source revisions.
