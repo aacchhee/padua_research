@@ -235,3 +235,12 @@
 - Next: [09-response-03.md](handoffs/09-response-03.md), Claude Opus5.5 high,
   narrow response to the three lows. Preserve accepted proofs/classification;
   a bounded independent recheck follows material checker edits. Only AC merges.
+
+## Response-03 to audit-03 (Claude, 2026-11-01)
+
+- Handoff: [09-response-03](handoffs/09-response-03.md). Rules read at `3cca9b929ac006a5ed4295b3beba909dfd602271`, unchanged. Configured model `claude-opus-5-5`, effort high; no subagents. Record: [response-03.md](response-03.md). Output commit `69caca0`.
+- **A03-L1.** `e1_scalar_finite_check.py --regenerated` now requires all four outputs; missing ones fail with exit 1. A fresh developer regeneration was run 18:40–18:45 UTC (outside Git). The four cases (none, absent, partial, complete) give the expected PASS/FAIL/FAIL/PASS with exits 0/1/1/0: `evidence/response-03-e1-regeneration-check.json`. The response-02 working directory no longer holds `reproduce-triangle.json`; the response-02 receipt itself is unchanged.
+- **A03-L2.** Record 05's rotQ24 conjunct row now gives the minimum target's proof and refutation conditions; the refutation needs lower bounds on both comparators. The alt-only reversal is scoped to K_BJ > 10 K_alt. Statuses are unchanged.
+- **A03-L3.** IDEA?drift-claude-17's outside-span separation is now conditional on a recorded nonzero normal component, with the audit's γ = 3/5 countermodel quoted. Recipes and the deferred disposition are unchanged.
+- **Integration.** `integration_check.py` at `69caca0` against main `28aaa20` and PR12 `7f226c1`: PASS (no reserved-ID assignment, clean merge-tree, squash tree equals head tree, 77 old theory files unchanged). Tracked campaign bytes are 4,577,549.
+- **Stage AUDIT.** Next handoff: [10-reaudit](handoffs/10-reaudit.md), a bounded Codex re-audit.
