@@ -244,3 +244,36 @@
 - **A03-L3.** IDEA?drift-claude-17's outside-span separation is now conditional on a recorded nonzero normal component, with the audit's γ = 3/5 countermodel quoted. Recipes and the deferred disposition are unchanged.
 - **Integration.** `integration_check.py` at `69caca0` against main `28aaa20` and PR12 `7f226c1`: PASS (no reserved-ID assignment, clean merge-tree, squash tree equals head tree, 77 old theory files unchanged). Tracked campaign bytes are 4,577,549.
 - **Stage AUDIT.** Next handoff: [10-reaudit](handoffs/10-reaudit.md), a bounded Codex re-audit.
+
+## Audit-04 — bounded Codex re-audit of response-03 (2026-11-01)
+
+- AC requested Codex gpt-6-astra high to continue. Fetched/fast-forwarded to
+  39b3c5d8690566ce461e6e3a0a628e772a695dbc and read AGENTS/WORKFLOW/CODEX there.
+  Candidate02bd97b892ed409ec64e9b281130c71a85e914e9; scientific output69caca0;
+  candidate/read-head differences are LOG and handoff publication only.
+  Root allocation requested Astra high, resolved runtime metadata unexposed;
+  separate scope reviewer explicitly configured Astra high. Only root changes Git.
+- [audit-04.md](audit-04.md): ACCEPT within handoff10's delta scope. A03-L1/L2/L3
+  RESOLVED; no new high/medium/low findings. Stage PR, preparation pending.
+  Accepted proofs, PARTIAL target, MEASURED experiment, INCONCLUSIVE test and
+  OPEN targets are preserved. No developer fixes or scientific registry edits.
+- Fresh actual producer runs regenerate both comparator uppers and both witness
+  reproductions outside Git. Rotated upper152.60s, rotated reproduction102.30s,
+  triangle upper2.45s/reproduction1.87s (two concurrent workers, single-thread
+  BLAS, Python3.12.14/python-flint0.9.0). Seven checker cases pass expectations:
+  none/complete succeed; absent and each of four one-file omissions fail with
+  status1 and correct missing lists. Both exact uppers/pins and both explicit
+  projection checks match committed certificates. Independent Fraction scope
+  checks and text-preservation checks resolve L2/L3; full IDEA gate read by the
+  scope reviewer. No full-campaign rerun or new repair experiment is claimed.
+- Evidence/checkers: checks/audit-04 and evidence/audit-04-*.json.125 frozen
+  historical files remain unchanged, as do77 original theory files/protected
+  paths. Main remains28aaa20861d08074b77efc74eaef75cdcb36234d; other draft PR12
+  advanced to0dd4a6df2db4a2019541604bb97c05926ab3c22b. Integration PASS: clean
+  merge-tree and temporary squash tree equality, reserved ranges unassigned;
+  PR12 registries/ledgers equal main. Conservative size inventory stays under
+  decimal5MB, largest616693bytes. No Windows delivery or root RESULTS write.
+- Updated only this topic's results status. PR15 stays draft while preparation
+  assigns IDs and applies approved proposals; readiness has not been declared.
+  Next: [11-pr-preparation.md](handoffs/11-pr-preparation.md), Claude Opus5.5
+  high. Preserve the approved scope; only AC merges.

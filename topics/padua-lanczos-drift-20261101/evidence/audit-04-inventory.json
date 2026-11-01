@@ -1,0 +1,226 @@
+{
+ "rules_head": "39b3c5d8690566ce461e6e3a0a628e772a695dbc",
+ "candidate": "02bd97b892ed409ec64e9b281130c71a85e914e9",
+ "previous_published_head": "3cca9b929ac006a5ed4295b3beba909dfd602271",
+ "main": "28aaa20861d08074b77efc74eaef75cdcb36234d",
+ "other_open_PR12": "0dd4a6df2db4a2019541604bb97c05926ab3c22b",
+ "candidate_changed_inputs": [
+  {
+   "path": "results/padua-lanczos-drift-20261101.md",
+   "bytes": 9841,
+   "sha256": "9a37e692bbe464eaa6bf91ee4f0fbec6a9fa4a664f0fd213cf337e49730e6734"
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/LOG.md",
+   "bytes": 28632,
+   "sha256": "d7f33f343504dcf88bbb89682902aee7c8cd988301b0dfdb10f3b8cc58ee2399"
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/response-03-e1-regeneration-check.json",
+   "bytes": 5151,
+   "sha256": "4dea2730ef4c786b9bc156dbc5cf1b5080bdd09ebda8081a9a127b3a27430ecf"
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/ideas-e3-e4.md",
+   "bytes": 48975,
+   "sha256": "f115c19e15d430b99e4e0a19cdb9db05712d47490ec9305832b3110e0675587a"
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/response-03.md",
+   "bytes": 5788,
+   "sha256": "a75b14756d3f498a0a6a542535c487f675360370a869ec4f967779410ba9e04f"
+  },
+  {
+   "path": "tracks/bivariate-lanczos/code/drift/README.md",
+   "bytes": 13140,
+   "sha256": "96f4f5d2a9a041531266cbc99ad9fd285f1025e6bcf61c8d600f7a23f511d79e"
+  },
+  {
+   "path": "tracks/bivariate-lanczos/code/drift/e1_scalar_finite_check.py",
+   "bytes": 16119,
+   "sha256": "93130ae87b0781978582f7a0389c79e42abb0b370021d9f70cc2dc0c53e03544"
+  },
+  {
+   "path": "tracks/bivariate-lanczos/theory/drift-codex-e1-05-finite-scalar-cgs2-capacities.md",
+   "bytes": 23470,
+   "sha256": "b1aa229f0ec74e8c4fb274fdc54cf40201c85712f91ae1ea0508466e46ed44ce"
+  },
+  {
+   "path": "tracks/bivariate-lanczos/theory/drift-codex-e1-06-finite-scalar-cgs2-separation.md",
+   "bytes": 20867,
+   "sha256": "541fe0b44e8eba523b0db5dbd86f06c392a689a79a1c3a94d21db9963ce730ba"
+  }
+ ],
+ "scientific_inputs_equal_candidate": true,
+ "historical_frozen_files_unchanged": 125,
+ "protected_paths_unchanged": true,
+ "original_theory_files_unchanged": 77,
+ "PR12_registry_and_ledger_bytes_equal_main": true,
+ "registry_ledger_identities": {
+  "main": [
+   {
+    "path": "PROOF_STATUS.md",
+    "bytes": 112158,
+    "sha256": "641d1aac027dd53f11dad22f327c694eb0ee880e4c355a4cc5eb736d6188231b"
+   },
+   {
+    "path": "state/IDEAS.md",
+    "bytes": 170639,
+    "sha256": "4a7f365d0932048d4e861a817e758077f9c715c936d2191b1c2a5da63d14d0bb"
+   },
+   {
+    "path": "literature/INDEX.md",
+    "bytes": 268372,
+    "sha256": "3cd4a057587459b117e555f1cae615e9985b770206c9b96d199a7161cc1a975e"
+   },
+   {
+    "path": "ID_CROSSWALK.md",
+    "bytes": 263250,
+    "sha256": "73da371370b82b19452cf2aa6ae9daf90d212d744527c6f4f550133dcb846988"
+   },
+   {
+    "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+    "bytes": 2271,
+    "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c"
+   },
+   {
+    "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+    "bytes": 25061,
+    "sha256": "8737e3c36f2a3b7982a0bce511ebac0a28f7c3fdfb91abc876aa8e164bcf453c"
+   }
+  ],
+  "read_head": [
+   {
+    "path": "PROOF_STATUS.md",
+    "bytes": 112158,
+    "sha256": "641d1aac027dd53f11dad22f327c694eb0ee880e4c355a4cc5eb736d6188231b"
+   },
+   {
+    "path": "state/IDEAS.md",
+    "bytes": 170639,
+    "sha256": "4a7f365d0932048d4e861a817e758077f9c715c936d2191b1c2a5da63d14d0bb"
+   },
+   {
+    "path": "literature/INDEX.md",
+    "bytes": 268372,
+    "sha256": "3cd4a057587459b117e555f1cae615e9985b770206c9b96d199a7161cc1a975e"
+   },
+   {
+    "path": "ID_CROSSWALK.md",
+    "bytes": 263726,
+    "sha256": "eca54a2e48932007d179f499de49fb82857d089d2622f7175a9429c3c4d4d0e8"
+   },
+   {
+    "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+    "bytes": 2271,
+    "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c"
+   },
+   {
+    "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+    "bytes": 25216,
+    "sha256": "f1b4f9477e625f88ffe2e4f5102e28f0745a05d1aa5bb094fc1f7104baffe268"
+   }
+  ],
+  "PR12": [
+   {
+    "path": "PROOF_STATUS.md",
+    "bytes": 112158,
+    "sha256": "641d1aac027dd53f11dad22f327c694eb0ee880e4c355a4cc5eb736d6188231b"
+   },
+   {
+    "path": "state/IDEAS.md",
+    "bytes": 170639,
+    "sha256": "4a7f365d0932048d4e861a817e758077f9c715c936d2191b1c2a5da63d14d0bb"
+   },
+   {
+    "path": "literature/INDEX.md",
+    "bytes": 268372,
+    "sha256": "3cd4a057587459b117e555f1cae615e9985b770206c9b96d199a7161cc1a975e"
+   },
+   {
+    "path": "ID_CROSSWALK.md",
+    "bytes": 263250,
+    "sha256": "73da371370b82b19452cf2aa6ae9daf90d212d744527c6f4f550133dcb846988"
+   },
+   {
+    "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+    "bytes": 2271,
+    "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c"
+   },
+   {
+    "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+    "bytes": 25061,
+    "sha256": "8737e3c36f2a3b7982a0bce511ebac0a28f7c3fdfb91abc876aa8e164bcf453c"
+   }
+  ]
+ },
+ "reserved_ranges_unassigned": true,
+ "audit_outputs_excluding_this_inventory": [
+  {
+   "path": "results/padua-lanczos-drift-20261101.md",
+   "bytes": 10420,
+   "sha256": "800eadc852810fdf9540d9219ed80c7fd298590da914e5e0a49b4831422775e9"
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/LOG.md",
+   "bytes": 31030,
+   "sha256": "5c43444e8eecb7384507bf8dcec9e15cc469220fc41b7e1ece286d66d8c0726b"
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/audit-04.md",
+   "bytes": 8757,
+   "sha256": "562653adbde32efa30a0028d2e69c46da9ab751b6c2e12de02695ba5126b79f9"
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/checks/audit-04/Scope.md",
+   "bytes": 6421,
+   "sha256": "bc7b261173bdf97d929969975e905b3826805bd101a59efbbf4609abc2158e20"
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/checks/audit-04/check.py",
+   "bytes": 6877,
+   "sha256": "d02a6576c8f36fe1d5a5f9637f649c94cde6d0ef350ac359deb711252e01dfb9"
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/checks/audit-04/inventory.py",
+   "bytes": 5359,
+   "sha256": "5be3f4f38f02ddc92ed5527723912cfff2c938b25d9da4523b5b682aa552e101"
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/checks/audit-04/scope_check.py",
+   "bytes": 3526,
+   "sha256": "f491fcddee705be652af16a299e96b35ee30c974907ca3fe2ba0f3ac587f4c52"
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/audit-04-checker.json",
+   "bytes": 19102,
+   "sha256": "15d1e3b7a73b3aaa3980bf281ee57c0c83ddf6da12e4e46c4060762a402986a4"
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/audit-04-integration.json",
+   "bytes": 7712,
+   "sha256": "083612b73d2806d433281a950a351ea98f63657283f6bd4c06bd88467064eb97"
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/audit-04-remote-state.json",
+   "bytes": 546,
+   "sha256": "a082655d3646c1e3306f1a46d8c56c3ccaecde251a42ad678a4b4ae7006b42f1"
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/audit-04-scope.json",
+   "bytes": 2033,
+   "sha256": "cfe486528c2c70f1ec73a8cc8e9e5a1a326a5585d8da1d4aa3590060ada45683"
+  }
+ ],
+ "campaign_inventory": {
+  "definition": "All own new files vs main, including prose/code/results; excludes this inventory",
+  "files_excluding_this_inventory": 211,
+  "bytes_excluding_this_inventory": 4657352,
+  "largest": [
+   "topics/padua-lanczos-drift-20261101/evidence/e1-full-sweep.json",
+   616693
+  ]
+ },
+ "limits": "No allocation or readiness declaration. Preparation refreshes union/retired reservations again. Later handoff adds compact prose only.",
+ "result": "PASS"
+}
