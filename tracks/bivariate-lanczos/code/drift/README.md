@@ -73,6 +73,14 @@ minutes by
 (`--skip-tie-break-bounds` omits the 3.5-minute Y-tie bounds run). It imports the
 committed producer and is not an independent reimplementation.
 
+## E4 exact closure check (response-01)
+
+```bash
+python3 tracks/bivariate-lanczos/code/drift/e4_closure_check.py --output topics/padua-lanczos-drift-20261101/evidence/response-01-e4-closure.json
+```
+
+Standard library only (exact `fractions.Fraction`), about 3 seconds. The script evaluates the fixed-degree lemma of PD-N?drift-codex-15 on 28 instances: the rule-independent span, the angle closed form and δ_A=κ_Aθ. It also recomputes the record's T_3 constants. Sampled rules corroborate, and do not prove, the every-rule span identity.
+
 ## E5 symbolic checks
 
 ```bash

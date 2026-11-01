@@ -42,7 +42,7 @@ U(s), positive weights, nonzero intended pivots, admissible monomial parents, pr
 
 ## Status by part
 
-Overall status: PROVED (written analytic proof; independent audit pending).
+Overall status: PROVED (written analytic proof). Codex independent-math-01 reconstructed it, and Claude audit-01 CONFIRMED it.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -56,7 +56,10 @@ No unproved result. PD-T032 is the closest predecessor: its node-row identity is
 
 ## Checks
 
-The result is analytic and does not rely on a computer calculation. A finite evaluation of Khat, ε_s and σ_min is a numerical certificate only if its evaluation errors are bounded. No certified run of this new certificate is claimed. An independently evaluated residual relation can be used even when an implementation did not record individual rounding errors.
+The result is analytic and does not rely on a computer calculation. A finite evaluation of Khat, ε_s and σ_min is a numerical certificate only if its evaluation errors are bounded. No certified run of this new certificate is claimed. An independently evaluated residual relation can be used even when an implementation did not record individual rounding errors. Independent checks:
+
+- **Codex independent-math-01** ([checks/independent-math-01.md](../../../topics/padua-lanczos-drift-20261101/checks/independent-math-01.md), E3 paragraph) reconstructed the surrogate-span and projector argument.
+- **Claude audit-01** ([checks/audit-01/E3-E4-records-10-15.md](../../../topics/padua-lanczos-drift-20261101/checks/audit-01/E3-E4-records-10-15.md), run 3) reconstructed the proof independently and confirmed it. That run includes an exact Fraction check of surrogate triangularity and of the node-row identity, and float64 (MEASURED) corroboration of (2), (3) and the E_+ refinement.
 
 ## Sources
 
@@ -97,3 +100,4 @@ An inexpensive rigorous Khat bound; useful sharp bounds for the projected invers
 ## History
 
 - 2026-11-01: Codex mathematical developer; requested `gpt-6.1-sol`, xhigh, actual runtime variant/effort not separately exposed here; rules read at 806cc7b4509fd93bae652f9545d32d95529f8281. New analytic result. No Git operations by this subagent.
+- 2026-11-01 (Claude response-01, Claude Opus 5.5 xhigh): stale independence text updated, consistent with audit-01 E34-F6; no mathematical change. Original wording: «Overall status: PROVED (written analytic proof; independent audit pending).»

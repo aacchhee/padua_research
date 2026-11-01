@@ -19,8 +19,8 @@
 |---|---|---|---|
 | E1 | Exact aggregate comparison PROVED; scalar-graph finite capacities MEASURED | Tightened exact certificate survives both grids; original KHS-only sufficient test inconclusive. Scalar graph evidence complete and independently reproduced (record 05 MEASURED: factor-ten INCONCLUSIVE, >7/>800 thresholds post hoc). Response-01 added the rotQ24 pivot-tie disclosure (exact tie at column (2,1)), an exact BᵀB = D check and a committed checker for the record-04 inequalities | Theory01-05, evidence/e1*.json, evidence/response-01-e1-checks.json |
 | E2 | OPEN | Standard scalar-operation bridge written; all-degree exponential/matching drift theorem not obtained | E2.md and theory03 |
-| E3 | OPEN general family safety | Analytic span certificate and filtered fixed-degree criterion proved; useful uniform score bounds open | Theory10/11, E3.md |
-| E4 | OPEN original PD-T055 | Quantifiers formalized and restricted projection-only adverse-source obstruction proved | Scoped negative theory14/15, E4.md |
+| E3 | OPEN general family safety | Analytic span certificate and filtered fixed-degree criterion proved (family-dependent remainder; staircase restriction unused in (6)); useful uniform score bounds open; durable home proposed: PD-T054 open item / IDEA-151 | Theory10/11, E3.md |
+| E4 | OPEN original PD-T055 | Pathwise quantifier reading disposed of as IDEA?drift-codex-14 (no PD-N); fixed-degree projection-only lemma proved as the exact instance of PD-T055's heuristic; parent repair deferred (IDEA?drift-claude-17) | Scoped negative theory15, ideas-e3-e4.md, E4.md |
 | E5 | U1 PROVED; U2 and G OPEN | Named certificate radius O(n^-5); concrete residual-aware square-root family; failed witness paths retained | Theory30/31 and negative32, E5.md |
 | E6 | MEASURED within acquired-source scope | Actual polyrat executed; source/order and fit effects measured, two hard cases independently rerun; BNT/ZN limits retained | Theory50, E6.md, external-code.md |
 

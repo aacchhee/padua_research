@@ -23,7 +23,7 @@ Assume q_0 is exact and each unperturbed pivot is positive. Then
 
   θ_s(t) ≤ |t| C_loc sqrt(N_s−1) χ_0 K_0(s)+O(t²).                  (6)
 
-The remainder constant and its neighborhood may depend on the fixed measure, selection and s. If the residual directions range over a compact bounded set in a fixed smooth perturbation implementation, the remainder can be taken uniformly over that set. This is a **fixed-degree first-order theorem**. It is not a uniform finite-u estimate with a specified radius.
+The remainder constant and its neighborhood may depend on the fixed measure, the selection, s, and **the particular perturbation family**: its second-order terms and the smoothness of its coefficient path. **No remainder uniform over all (Hres)-families is asserted.** For example, f_k(t)=t d_k+t²G g_k satisfies (Hres) for every G, while its second-order term grows with G. Suppose instead the families form a compact set in a fixed smooth perturbation implementation, i.e. f_k(t;ω) is jointly C² in (t,ω) on a neighborhood of {0}×Ω, with Ω compact and every member satisfying the hypotheses. Then the remainder can be taken uniformly over ω∈Ω. This is a **fixed-degree first-order theorem**. It is not a uniform finite-u estimate with a specified radius.
 
 ## Definitions
 
@@ -37,13 +37,13 @@ U(s), admissible parents, exact start, fixed staircase R, positive exact pivots,
 
 ## Status by part
 
-Overall status: PROVED (analytic fixed-degree implication; independent audit pending).
+Overall status: PROVED (analytic fixed-degree implication). Codex independent-math-01 reconstructed it, and Claude audit-01 CONFIRMED it WITH CORRECTIONS (E34-F4, F5). The response-01 corrections below await re-audit.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
 | Computable filtered minimax criterion and bound (6) | PROVED | Proof below |
 
-Candidate / claim disposition: retained, variant. **Application as an all-degree polynomial stability theorem is CONDITIONAL on the separate, unverified hypothesis** that accepted selections exist with K_0(s), χ_0 and C_loc bounded polynomially in the declared size parameters. The unrestricted existence/safety target is OPEN. No such bound is claimed on the triangle or rotated-square families.
+Candidate / claim disposition: retained, variant. **Application as an all-degree polynomial stability theorem is CONDITIONAL on the separate, unverified hypothesis** that accepted selections exist with K_0(s), χ_0 and C_loc bounded polynomially in the declared size parameters. The unrestricted existence/safety target is OPEN. No such bound is claimed on the triangle or rotated-square families. Its proposed durable OPEN home is PD-T054's open item, cross-referenced from IDEA-151 (see E3.md and the response-01 proposal for proposed-record-changes.md); it is not carried only in topic prose.
 
 ## Depends on
 
@@ -51,7 +51,12 @@ PD-T?drift-codex-10, exact residual-to-span certificate. PD-T054 supplies the ch
 
 ## Checks
 
-No new finite certification or benchmark search is claimed. Exact rational/algebraic data allow exact construction of the Gram–Schmidt coefficients and certified upper bounds for these finite matrix norms. A floating estimate used without an enclosure is MEASURED only. Independent analytic audit and any numerical score evaluation remain to be performed.
+No new finite certification or benchmark search is claimed. Exact rational/algebraic data allow exact construction of the Gram–Schmidt coefficients and certified upper bounds for these finite matrix norms. A floating estimate used without an enclosure is MEASURED only. Independent analytic checks:
+
+- **Codex independent-math-01** ([checks/independent-math-01.md](../../../topics/padua-lanczos-drift-20261101/checks/independent-math-01.md), E3 paragraph and finding 3) reconstructed the first-order argument and required the represented-input computability qualification, which is applied.
+- **Claude audit-01** ([checks/audit-01/E3-E4-records-10-15.md](../../../topics/padua-lanczos-drift-20261101/checks/audit-01/E3-E4-records-10-15.md)) confirmed (6) for each fixed family, with corrections E34-F4/F5 applied here. Its float64 K_R/χ_R evaluations (`e3_check.py` part C, T_8, s=5) are MEASURED illustrations, not certified scores.
+
+No certified score evaluation of the frozen T_24/rotated-Q_24 rules exists.
 
 ## Sources
 
@@ -77,7 +82,17 @@ Insert these three statements in PD-T?drift-codex-10 (2), then use the two accep
 
 ## Scope
 
-If K_0(s), χ_0 and C_loc are explicitly bounded by polynomials, (6) has the requested O(u poly(s)χ) first-order form (t=u, with other size parameters declared). This statement does not assume a drift bound: K_R is the inverse norm of a finite exact recurrence and χ_R is a local ratio. They can be checked before the perturbed run. However **their polynomial boundedness is a substantive additional property, not a proved consequence of the staircase structure**. Thus this settles the computable-criterion subproblem and provides a sufficient theorem; it does not settle the unrestricted a priori staircase theorem and does not refute all one-relation selections.
+If K_0(s), χ_0 and C_loc are explicitly bounded by polynomials, (6) has the requested O(u poly(s)χ) first-order form (t=u, with other size parameters declared). This statement does not assume a drift bound: K_R is the inverse norm of a finite exact recurrence and χ_R is a local ratio. They can be checked before the perturbed run. However **their polynomial boundedness is a substantive additional property, not a proved consequence of the staircase structure**. Thus this gives a finite exact-data criterion together with a sufficient first-order theorem. The criterion is a definition, decidable for represented rational/real-algebraic inputs. Neither part shows that the criterion accepts any selection, or that it is efficient or online. It does not settle the unrestricted a priori staircase theorem and does not refute all one-relation selections.
+
+**The staircase restriction is not used in the proof of (6).** (6) holds for any fixed admissible selection R, staircase or not, whose exact pivots are positive and whose scores satisfy K_R(s)≤K_0(s) and χ_R(s)≤χ_0, because PD-T?drift-codex-10 assumes only admissibility. The restriction to (C)-staircases serves only the implicit-section interpretation through PD-T050/PD-T054.
+
+The restriction also excludes the pivot-adaptive rule, which violates (C) on several benchmarks (PD-T050/PD-T054). That rule is nevertheless E1's good comparator and PD-T051's best measured one-relation rule (its reference-free drift bound stays below √u on five of six non-product benchmarks). The same proof gives (6) for the finite criterion over all 2^(s(s−1)/2) admissible selections, in which each middle column (t,j), 1≤j≤t−1, chooses X or Y. That larger search contains the selection the pivot rule makes on exact data (ties broken by a fixed rule), but its accepted selection then lacks the (C)-based implicit-section interpretation. For an adaptive rule, (6) applies only to the selection frozen from exact data; a perturbed run that switches selection is outside it.
+
+**Classification.** The first-order transfer (6) is a routine continuity corollary of PD-T?drift-codex-10 (2) (audit-01 E34-F5 suggestion considered). This file is kept separate for three reasons:
+
+- its main object is the selection criterion itself — its definition, finiteness, represented-input decidability and acceptance/failure semantics — which PD-T?drift-codex-10 does not contain;
+- PD-T?drift-codex-10 is a non-asymptotic certificate for arbitrary computed data, whereas (6) has a family-dependent O(t²) remainder, and keeping them apart prevents either quantifier from being read into the other;
+- the CONDITIONAL family application and the OPEN safety target attach to the criterion.
 
 The condition cannot erase the old failures: dev, mirror and alt are staircases, and PD-N015 records their measured failures. PD-T041 shows why a small-inverse certificate can fail dramatically for dev on T_24 and rotated Q_24. Its unnormalized entry bounds do not numerically certify the present normalized score without conversion.
 
@@ -88,3 +103,6 @@ Prove or refute useful polynomial score bounds for any non-product family; make 
 ## History
 
 - 2026-11-01: Codex mathematical developer; requested `gpt-6.1-sol`, xhigh, actual runtime variant/effort not separately exposed; rules 806cc7b4509fd93bae652f9545d32d95529f8281. The initially considered unqualified minimization of L^*(-1) was corrected to row-normalized Lbar and a χ filter. General polynomial safety remains OPEN. Independent mathematical check noted the input-representation issue; the computability statement now explicitly restricts to represented rational/algebraic data, with the general-real case distinguished.
+- 2026-11-01 (Claude response-01, Claude Opus 5.5 xhigh): audit-01 E34-F4. The remainder now depends explicitly on the particular perturbation family, with the f_k=t d_k+t²G g_k example, and no uniformity over all (Hres)-families is asserted. The compact-family uniformity sentence is made precise. Original wording: «The remainder constant and its neighborhood may depend on the fixed measure, selection and s. If the residual directions range over a compact bounded set in a fixed smooth perturbation implementation, the remainder…»
+- 2026-11-01 (Claude response-01, Claude Opus 5.5 xhigh): audit-01 E34-F5. Scope now states that the staircase restriction is unused in the proof of (6) and excludes the pivot-adaptive rule, records the all-admissible-selection extension and the classification as a routine corollary kept in a separate file (with reasons), and qualifies the earlier claim to settle the subproblem. Original wording: «Thus this settles the computable-criterion subproblem and provides a sufficient theorem; it does not settle the unrestricted a priori staircase theorem…»
+- 2026-11-01 (Claude response-01, Claude Opus 5.5 xhigh): audit-01 E34-F6/F8. Checks now cite independent-math-01 and audit-01, and the status parenthetical is updated. Added the proposed durable OPEN home (PD-T054 open item / IDEA-151). Original wording: «Independent analytic audit and any numerical score evaluation remain to be performed.»; «Overall status: PROVED (analytic fixed-degree implication; independent audit pending).»

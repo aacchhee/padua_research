@@ -15,10 +15,28 @@ NEW
 ```text
 ## Later independent results (original target remains OPEN)
 
-PD-N?drift-codex-14 refutes only a pathwise positive lower bound for every model-admissible error realization when the zero-error exact-real run is admitted. It does not refute literal working-precision storage or a fixed IEEE implementation. PD-N?drift-codex-15 gives a ten-point triangle, exact prefix, fixed degree-two BJ products and one aggregate source for which every prior-vector subtraction rule leaves the same drifted span and a nonzero J-closure defect. Its conclusion is O(u), not exponential, and neither implicit-section in-span error nor scalar-operation realizability follows. A final formalization must distinguish every-error, worst-case-error and deterministic-IEEE quantifiers. (U) remains OPEN.
+Quantifier note (IDEA?drift-codex-14; an IDEA disposition, not a PD-N). Read pathwise, for every rule and every error realization admitted by an upper-bound model that allows the zero error and exact-real projection, (U) is false for a trivial reason: the zero-error exact run has exact spans, δ_X=δ_Y=0, and Ĥ_J=H_J by PD-T032 part 2. This disposes only of that reading. It does not refute literal working-precision storage, a fixed IEEE implementation or a worst-case-over-errors reading. A final formalization of (U) must choose among the every-error, worst-case-error and deterministic-IEEE quantifiers rather than interchange them.
+
+Fixed-degree instance of the heuristic in Proof or evidence (PD-N?drift-codex-15). Take an exact prefix through degree t and fixed admissible degree-(t+1) raw products. Then the span identity of the heuristic is exact for every coefficient choice: after a source f in one raw product, every rule that only subtracts prior vectors and rescales gives the same computed span. Its angle is θ_(t+1)=||f_⊥||/sqrt((1+α)²b²+||f_⊥||²). Its defects are δ_A(t)=κ_Aθ_(t+1), with κ_(A_m)≥b for the operator A_m forming the perturbed column. This holds for any positive measure with U(t+1) and M>N_(t+1), product or not, and any admissible selection. The defect is not specific to J or to unformed products: on T_3 with BJ and the source in Yq_x, δ_Y(1)=(√3/2)δ_X(1). The conclusion is a fixed-degree O(u) obstruction, not exponential amplification; neither implicit-section in-span error nor scalar-operation realizability follows. Parent-repair and reference-basis rules, including the experiment named in Open items, lie outside that class (deferred, IDEA?drift-claude-17). (U) remains OPEN.
 
 ## Open items
 ```
+
+## PD-T054: register the E3 polynomial-safety target in the existing open item (audit-01 E34-F8)
+
+Target: `tracks/bivariate-lanczos/theory/condition-C-staircase-selections-acyclic-sections.md`.
+
+OLD
+```text
+A residual description for selections violating (C) (PD-T?…-205 open item); whether the staircase family contains a rule whose coupled residuals stay small on non-product measures (alt is a staircase and is killed on four of six non-product sets, PD-N?…-203; mirror on four).
+```
+
+NEW
+```text
+A residual description for selections violating (C) (PD-T?…-205 open item); whether the staircase family contains a rule whose coupled residuals stay small on non-product measures (alt is a staircase and is killed on four of six non-product sets, PD-N?…-203; mirror on four). This item is also the durable OPEN home of the E3 target of topic padua-lanczos-drift-20261101, in polynomial span-drift form: does some staircase keep the full-reorthogonalization span drift O(u·poly(s)·χ) on a non-product family? The same question is open beyond (C), for some admissible one-relation selection such as the selection the pivot-adaptive rule makes on exact data. OPEN. PD-T?drift-codex-10/11 give a computed-data span certificate and a finite exact-data sufficient criterion with a first-order guarantee. Whether any selection passes that criterion with polynomially bounded scores is unproved, and no such bound is claimed on the triangle or rotated-square families.
+```
+
+At preparation, also add to the IDEA-151 row of `state/IDEAS.md`, at the end of its disposition cell: “Polynomial span-drift form of the safety question registered as OPEN in PD-T054's open item; sufficient criterion in PD-T?drift-codex-10/11 (padua-lanczos-drift-20261101).”
 
 ## PD-T056: retain OPEN; record concrete square-case test
 

@@ -1,5 +1,7 @@
 # PD-N?drift-codex-14 — A pathwise positive lower bound is false in a model admitting zero errors
 
+**Withdrawn as a registry vehicle (Claude response-01 to audit-01 E34-F3).** This file is not to be registered as a PD-N. Its candidate is recorded as the IDEA disposition IDEA?drift-codex-14 in `topics/padua-lanczos-drift-20261101/ideas-e3-e4.md`: REJECTED, refuted only as an ill-posed formalization of PD-T055's quantifier. That entry preserves the full mathematical content below. The U(3) lemma for T_3 is proved inside PD-N?drift-codex-15. The orchestrator is asked to remove this file; nothing else depends on it.
+
 ID kind: PD-N.
 Aliases: zero-error quantifier test; noiseless exact-projection counterexample; universal versus worst-case reorthogonalization.
 Split from: none. PD-T055 remains the original OPEN target; this file refutes only the explicitly stated interpretation below.
@@ -83,3 +85,4 @@ A quantitative adverse-error lower bound larger than ordinary local O(u) error; 
 ## History
 
 - 2026-11-01: Codex mathematical developer; requested `gpt-6.1-sol`, xhigh, actual runtime variant/effort not separately exposed; rules 806cc7b4509fd93bae652f9545d32d95529f8281. Original PD-T055 wording preserved. New proposed interpretation explicitly adds “every allowed error realization”; only that interpretation is refuted.
+- 2026-11-01 (Claude response-01, Claude Opus 5.5 xhigh): audit-01 E34-F3. Added the withdrawal banner only; the rest of the file is unchanged. Converted to IDEA?drift-codex-14 (REJECTED: refuted, ill-posed formalization; no PD-N), with its content moved there and U(3) moved to PD-N?drift-codex-15. No original wording was removed or changed.

@@ -66,19 +66,31 @@ no coefficient accuracy; the normalized inverse recurrence, local residuals
 and smallest singular value of the computed basis enter explicitly.
 
 **PD-T?drift-codex-11** proves a computable filtered minimax criterion over the
-2^(s−1) staircase selections and a fixed-degree first-order implication.
+2^(s−1) staircase selections and a fixed-degree first-order implication whose
+O(u²) remainder depends on the particular perturbation family. The staircase
+restriction is not used for that implication, and it excludes the
+pivot-adaptive rule.
 Polynomial score bounds, accepted staircases for every degree, a usable
 finite-u radius and efficient online selection remain OPEN. Condition (C)
 and full reorthogonalization alone have not been proved sufficient.
 
-**PD-T055 remains OPEN in its original scope.** **PD-N?drift-codex-14** refutes
-a positive lower bound for every admissible error realization in a model
-allowing zero errors. It refutes neither a fixed IEEE implementation nor a
-worst-case-over-errors assertion. **PD-N?drift-codex-15** gives a ten-point
-triangle, exact degree-one prefix and one degree-two source for which every
-rule restricted to prior-vector subtractions has the same drifted span and
-nonzero J-closure defect. This is an O(u) aggregate-source obstruction with
-fixed parents/products. Exponential growth, parent repairs, implicit-section
+**PD-T055 remains OPEN in its original scope.** Its pathwise reading, “for
+every rule and every admissible error realization”, is false for a trivial
+reason in a model allowing zero errors: the exact run is admissible, and
+PD-T032 part 2 gives an exact implicit section. This is recorded as the IDEA
+disposition **IDEA?drift-codex-14** (REJECTED: refuted, as an ill-posed
+formalization), not as a PD-N. It refutes neither a fixed IEEE implementation
+nor a worst-case-over-errors assertion. **PD-N?drift-codex-15** proves a
+fixed-degree lemma. With an exact prefix and fixed admissible raw products,
+take one raw-product source with a normal component. Then every rule
+restricted to prior-vector subtractions has the same drifted span and closure
+defects δ_A=κ_Aθ, and the defect is nonzero for the operator that formed the
+perturbed column. The span identity is the exact fixed-prefix instance of
+PD-T055's own heuristic. The lemma holds for any positive measure and
+selection, product or not, and is not specific to J: in the ten-point triangle
+instance the formed operator Y has δ_Y=(√3/2)δ_J. It is an O(u)
+aggregate-source obstruction with fixed parents and products. Exponential
+growth, parent repairs (deferred, IDEA?drift-claude-17), implicit-section
 accuracy and actual IEEE realization lie outside that result.
 
 ## Padua radius and backward interpretation
