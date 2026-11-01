@@ -2,7 +2,7 @@
 
 A new numbered file for each step, opened by the orchestrator holding the previous handoff. Never overwrite an earlier handoff or alter its body; only the status line changes. AC starts this step with `Codex (gpt-6-astra medium): Continue claude/handoff-id-rules-20261101.`
 
-- Status: open
+- Status: superseded by 04: AC requested Codex to finalize PR13 and integrate merged PR6, including the focused audit and PR preparation in this session
 - Previous handoff: [02-response.md](02-response.md)
 
 - Next agent / model / effort: Codex, gpt-6-astra medium

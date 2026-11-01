@@ -1,7 +1,7 @@
 # Handoff file and fresh-range ID reservation rules
 
 - Branch: claude/handoff-id-rules-20261101 · Base: main `21e620ba8b5f0e0706f3a8c6613517df04d9d469` · Developer: Claude · Auditor: Codex
-- Stage: AUDIT · Next: `Codex (gpt-6-astra medium): Continue claude/handoff-id-rules-20261101.` · Open handoff: [handoffs/03-audit.md](handoffs/03-audit.md)
+- Stage: AUDIT · Next: Codex final audit and PR preparation in this session · Open handoff: [handoffs/04-finalize.md](handoffs/04-finalize.md)
 - Reserved final-ID ranges: none (rule change only; no PD-T, PD-N, IDEA or LIT entry).
 - Open for AC: whether existing open drafts (#9, #11, #12) should record reservations under the new rule now or at their next step.
 
@@ -40,3 +40,10 @@
 - [response-01.md](response-01.md): F1–F4 accepted. F1 is strengthened (the scan also reads closed, unmerged PR ledgers and retired reservations). F3 is refined: the orchestrator of the session holding the open handoff numbers the next one, which keeps audit-01's own 02 handoff valid.
 - Transition: the auditor's recommendation is accepted. Existing ranges are unchanged, #9 and #12 record a range or "no range" at their next continuation, and #6 and #11 add provenance and the supersession note.
 - Handoff 02 is done; [03-audit.md](handoffs/03-audit.md) is open (focused Codex re-audit).
+
+## 2026-11-01 — Codex finalization, AC scope override
+
+- AC: "Codex (gpt-6-astra medium): Continue claude/handoff-id-rules-20261101. Make pr13 final, integrate merged pr6". This adds main integration and replaces handoff 03's separate Claude preparation with Codex finalization in the same session. Handoff 03 is superseded by [04-finalize.md](handoffs/04-finalize.md); its instruction body is unchanged.
+- Rules read at published response head `ac4ff3fd32d73880048e38d096bbcfb58df8a724`; re-read the changed Fable allocation paragraph after main integration. Requested model/effort: gpt-6-astra medium; resolved runtime metadata is not independently exposed. Codex remains independent of Claude's rule development.
+- PR #6 was merged by AC at main `a7e123476cef761807c69e5d0af1a094c7ac3df0`. Merged that main into this already-published topic without rebasing, at `fcb334c7f0ef055695b8f2633692092865366ddb`, without conflicts. Main introduces only the already-accepted Fable row and its scope paragraph into the response's WORKFLOW text; the Claude response remains unchanged.
+- Novelty gate not applicable: protocol audit and administrative integration only. No subagents or scientific reruns. No range is needed or reserved.
