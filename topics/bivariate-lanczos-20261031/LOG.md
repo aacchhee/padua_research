@@ -173,6 +173,15 @@ Subagent effort is set from the agent definition and is not independently expose
 
 ## Runs needed
 
+### 2026-11-01 — Codex audit-01 in progress
+
+- Role: Codex audit orchestrator, independent of the Claude developers. AC requested `gpt-6-astra xhigh`; six bounded audit workers explicitly use that model/effort. The root runtime does not expose a separate model identifier.
+- Rules read at `3a9063b84d14ca0a5998378371e27643fde50a29`: `AGENTS.md`, `agents/WORKFLOW.md`, `agents/codex/CODEX.md`; identical to fetched main's rules. Candidate remains `5ccfac223f466a9105450365d8c6c3781ff7d922`; the sole subsequent change is one LOG line.
+- Fetched main `07c5f5465d6de306aa81dbe8ca1f615295163864` and topic `3a9063b84d14ca0a5998378371e27643fde50a29`. Main reconciliation is inspected read-only for the frozen audit; the previously recorded AC instruction defers merging main to PR preparation. No published science is changed during review.
+- Disjoint audit scopes: L1 foundations/L4, L1 later claims/measurements, L2, L3 framework, L3 certificates, L5. Reports/checkers go under `audit-01/`; only the root controls Git and the final `audit-01.md` report. Root checks protocol, provenance, generated-output limits, shared-state integration obligations and coverage.
+- Novelty scope: review existing ideas/mechanisms/negatives, including the full idea registry and relevant obstruction/disposition tables. No new research candidate or novelty claim is introduced. Existing literature gaps remain explicit.
+- Status: audit in progress; no acceptance or completed rerun is implied by this entry.
+
 Consolidated list (exact commands in the cited records): L1 SUMMARY §6; L2 above; L3 SUMMARY §5; L5 R01 §7 and R03 §7 and response-recon-01; repro/REPRO.md §5. None executed by this session; all require AC's servers (syvert0/1/2) or more time.
 
 ## Open for AC

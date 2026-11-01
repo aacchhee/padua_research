@@ -1,0 +1,1403 @@
+{
+  "candidate": "5ccfac223f466a9105450365d8c6c3781ff7d922",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "main_at_session_start": "07c5f5465d6de306aa81dbe8ca1f615295163864",
+  "theory_manifest_entries": 67,
+  "theory": [
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-300-l3q1-backward-interpretation-target.md",
+      "sha256": "175aaad3fce7cfde64c7f9644482d8eb2a24c7500b17b6a3150e7bbfb61ad9aa",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-301-truncated-favard-sections.md",
+      "sha256": "c0f84c2dab322e8f5c61a10bf8a0df45c291781f623bc0238f58f6366e52af2d",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-302-backward-reduction-moment-cone.md",
+      "sha256": "b2ba05315a0c3f5afab9cae52fa422f0163cb292a5dc7d2abbb63766e0b7f6cd",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-303-moment-cone-rate-theorem.md",
+      "sha256": "8207b3b87625bb692aa9da2da0efc0a14cee5cd1fe3ef02444cf798b28768a5a",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-304-square-case-commutator-bounds.md",
+      "sha256": "8bfa07da8fb255dbb4b4a89b85b3206518755d366a60b734abebb8cc9d2e4c82",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-305-three-node-square-case-sqrt-rate.md",
+      "sha256": "52f5ddda0bad49b102da6637a6b58428a881c0be2eb2863ca7cbf8682cd9ce48",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-306-padua-n2-sqrt-rate.md",
+      "sha256": "52af1c9ddced7a788f3dd27448e156d6b8a5df5d82768c7bb2c7494aca885beb",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-307-square-case-hessian-condition-measurements.md",
+      "sha256": "e810d77b5f494b72ecb173d3607d9031d89bfe531623f047198cae6f35594f98",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-308-compression-model-no-obstruction.md",
+      "sha256": "59be05e16c06d18efd37475849449fa33e6999c976a9d5e3275329512ae5cc38",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-309-square-case-quadratic-generator-form.md",
+      "sha256": "373d7d198a7d02d2ea119bc1d09080c53e085a1f88804dbb093ce5bcb4360696",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-310-equispaced-checkerboard-condition-H.md",
+      "sha256": "0aad172c8b57c10901e16d08d3ba0b4bd5ff8eec4087fe10d269945bc7c350d9",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-311-equispaced-certificate-margins.md",
+      "sha256": "0eeeea78604fbf201cc40c33bac1d0011b76e1e5edf9e96afd3c77c0e5dbcd47",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-312-padua-interior-turan-lemma.md",
+      "sha256": "80f59ddd11542339832392bd331ae0c5ec57811ae337e2b12303a81dcfdc394d",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-313-padua-turan-certificate-all-n.md",
+      "sha256": "730b06228c9eff676f1d462a29a4b39de0169b5fb3790196d4e42b461b51842e",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-314-computed-data-consistency-symmetry.md",
+      "sha256": "3415a9ef3ea42a13881c8fabaf19e4af517bdfb97998c7788cc055280c9fb58f",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-315-consistency-defect-measurements.md",
+      "sha256": "c6aaee7dd79d453944460bc918fac5addf7db3a641ab2bb4195979ad63117db5",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N301-padua-n3-exact-backward-obstruction.md",
+      "sha256": "50e455fcdcf88601d68537fe95da4da8666fcb00200692fa3053f52334509a21",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N302-square-case-linear-rate-refuted.md",
+      "sha256": "0785d7797707748bef7590af7eeb7b523a1112d9d1cd511c29e1996a70441597",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N303-padua-all-n-exact-backward-obstruction.md",
+      "sha256": "ed0e9a9d9dbfb5570427f46717481b4e9c40f68481d589e56a7415fe2bedbbab",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N304-compression-model-insufficient.md",
+      "sha256": "fd1e3d660fca62ae0b7eca8cffd46a3989a2ee2b0c3088b8e9324315a19bfe84",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N305-closed-form-C1-fails.md",
+      "sha256": "37eb32350fbbe2ff30114d30c763a2c86f927f89697f36b220960a9af72e48b4",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N306-H-not-decided-by-count.md",
+      "sha256": "9228d8256b375becfea5e048971984c021114786f9b9f137f724582518addf6d",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N307-consistency-survives-loss-refuted.md",
+      "sha256": "544d6515ca705860ed626ed619067d606fd6a5ad398b75d05a849b5a9ed1669b",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-N308-weight-only-greenbaum-fit-refuted.md",
+      "sha256": "6f929ff78112f5304c73636fe3f876f7f42c4aef160f6e9a2fd86ddf38f855b8",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/checkerboard-and-near-product-measurements.md",
+      "sha256": "6e4ef4cdbbc63395b8ad181e464611a01bbc5ddeedb258e5132e3da151dda633",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/closed-loop-dot-product-rounding-carries-coefficient-channel.md",
+      "sha256": "aecf9975248b07f5d05d1c579b3f42201d9e3252ffc1e5daca123972c37fe0fd",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/commutator-shadow-recursion-and-span-drift-bound.md",
+      "sha256": "4737a7cc984d688950fdb1cc1865227dd0a44cb03511d3c927d43ae7ef529b68",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/coupled-section-residuals-general-selection.md",
+      "sha256": "33bc73adb97f5c720209d1a07ad8b89ac87b342999d5d5d0c436dc846f0f12b3",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/exact-certificate-propagator-growth-triangle.md",
+      "sha256": "4d7f17ff8cf75726df97a7c65ad84fb3f455911cb634bd04c0e08ce2533062e7",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/exact-omega-recurrence-window.md",
+      "sha256": "b9b984deee3dfa44ba27ab6e7c39ef7c43b98b2b5e678d20c4b6d4d2dd90eaa9",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/exact-window-dots-do-not-remove-coefficient-channel.md",
+      "sha256": "d6240b158ad9850bbe36fc63d1d00356989cda2a3de2f3fc6bbc0e1a23728cc3",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/fifo-threshold-deferral-failure.md",
+      "sha256": "d47d7de4e9ef3ec0afbb37a6e6ac888296a0d5f4aa4d4b2368591232cfc248b0",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/first-order-coefficient-channel-gains-product-type.md",
+      "sha256": "9dbeb5f4d94745dd02fbc8e51de968a6ff1b3011f84d5766df6141c12a23e692",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/fp-local-relations-window-recurrence.md",
+      "sha256": "13fd2f50b813b8cbad43d26df95cebd473992dd76c83da07cd4ad31271f68735",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/full-operator-paige-identity-growing-blocks.md",
+      "sha256": "a2707434f266388b8d69310b71ef1921d083b8e2e11051bc8a2653bba9ae589e",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/givens-deficit-slopes-measured.md",
+      "sha256": "174b5c238b45f3f1e6b48ead39f7fdffdfd08c72be0ed0c1f61d74d04f761a6d",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/givens-updating-rotation-count-backward-bound.md",
+      "sha256": "99808ffefad8a8dfa346b9f9dbcdb99a3de0448e4f18e0a87acdfcd08395d295",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/hl-simax-windowed-complex-recurrence-instability.md",
+      "sha256": "47cd4f5b518ecba4dcf7a736293acf5f37dba31b5a6127b008fd5134df3aa1f5",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/l4-band-krylov-obstruction.md",
+      "sha256": "54bf537b5178823af4dbea7ca546999588bc6124404a4d7f3ac269358014749d",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/largest-redundant-pivot-degradation.md",
+      "sha256": "2b1842e1c364957d45225b29754b2b3a9895b4eafe6a85b5ecb8c541693eb955",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/loss-regimes-node-propagator-measured.md",
+      "sha256": "dae0bf50b57fd6194079dc2545e64359ac316093dd1fbc2d7e0603363f59db73",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/magnitude-threshold-pivot-rules-failure.md",
+      "sha256": "255db03e39e3c3a53e571ce3af841605804ffab56b88c618ec2462b836f754fc",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/moment-matching-product-factorization-checkerboards.md",
+      "sha256": "8fefaafadafecfb42f7f9db960fc10543ea0d1bba40057670d4ab2a85f798030",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/near-product-transfer-perturbation-bound.md",
+      "sha256": "7dd02ce2455ca553b8196ee771cad25f2a0f2e57f9e3c7d3c439dc30115cff29",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/node-row-representation-and-commutator-residual.md",
+      "sha256": "0c618867a1e2679e495e133a7326594e3cf9bb8208afad730e1bea94b1816023",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/non-product-amplification-is-a-priori-measured.md",
+      "sha256": "8decf8dafb97611b88a296ad0344f09e33225f7a0a26afa3cf493aa0096e6544",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/omega-estimate-componentwise-in-window-sources-fail.md",
+      "sha256": "90d8f7c4871f262a491306fb258a1cbf8e7a7fda1c4b3d5a72b82610ee673e63",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/omega-estimate-tracks-loss-measured.md",
+      "sha256": "d903f006fe8d382c3ebc3956c780abea5a702f1d506809327d919939d32a3d5a",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/one-pass-window-semi-orthogonality-insufficient-for-F-section.md",
+      "sha256": "67126ec06209f896247ee850b8beabbd5f73bafa146681e79bcdbf0361f37c05",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/one-relation-selections-do-not-keep-spans-near-Sn.md",
+      "sha256": "50190e070041cc3dd70641750b88bfac98a6fb45e24339e3ffd9d9b7831766b1",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/open-loop-coefficient-noise-estimates-fail.md",
+      "sha256": "c6a51ae6b6862b1b5a4c81a07070ea0d21246e78e1fe4a09061d8d5cf1396bf8",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/prefix-unisolvence-order-statistics-measured.md",
+      "sha256": "7fa040e8a025cb714e7ff79389b44b0f0cdd33e9568908e85a4679dd9af22b3d",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/pro2d-j-fails-on-clustered-checkerboard.md",
+      "sha256": "04433dc78c4133411a14e01b72cf57f6b37240970d7a9663b9b468a9f074a400",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/pro2d-rounding-only-trigger-fails.md",
+      "sha256": "37abe6b9e6cf0dc1a53f00f45d9015763e15ba5f6714fec4bfd8632832441439",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/pro2d-strategy-and-cost-measured.md",
+      "sha256": "ee3b4a4aa9c9e503dde06a1761fc46309b49db8043733cc7188176761c0584f6",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/product-measure-propagator-factorization.md",
+      "sha256": "b304e439b9aa069af3865c7efe4e4ee6209cf03227ff1dbd74f16bf39e72a2f3",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/r04-failed-scaling-and-predictor-hypotheses.md",
+      "sha256": "66623728ff6f85a269cd08032722248e016be8a470fd27f00ce8a8565169fee5",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/reorthogonalization-does-not-restore-graded-spaces.md",
+      "sha256": "973e46ceb5a5651f96cda4f874ce47304ceae9dc14cf957054f9832d577a6335",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/ritz-residual-governance-fails-off-product-supports.md",
+      "sha256": "5388763d07fb877c4a9f04b52621a536817a2a27b802ea432f511aa19f5b27b3",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/section-accuracy-and-two-pass-window-measured.md",
+      "sha256": "4f5a695279c3a17cebcbc6dd21c314e50c2f78303338da209feeef6429694cbb",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/selection-and-truncation-both-matter-measured.md",
+      "sha256": "eb2ec6db92211e1f95dd44ea17c35fde9514368bea0e991bc09da706472cd397",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/selection-rules-and-span-drift-measured.md",
+      "sha256": "8f79fc2a85b22b4b46c7f0710a0dee50ece83ea8c6b6f2a86ed01449cde4c4db",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/semi-orthogonality-implies-accurate-F-section.md",
+      "sha256": "e3613b227e577d3d69c878dd44fe608cf205abd92bff67dd97829d8dd86b981a",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/support-shape-does-not-classify-loss-regime.md",
+      "sha256": "0a689dc93140d3d6bc0a5181f8f2fdabaa0a2fc83a2df7f6b84ca4e8f0e0017a",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/unisolvent-prefix-extension-lemma.md",
+      "sha256": "74e3779774bd193314501e58724a4e608001038e067ef873a519bddbfc11aa44",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/window-coefficient-pattern-exact.md",
+      "sha256": "f5110d68c4894fcbfef3718ecf677eafcc2a41ebe79cb3ef35c19b14a1be8f99",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/theory/window-recurrence-row-selection-of-jacobi-pencil.md",
+      "sha256": "75c3ea0e34de612cfb17362c603a56ea4419323742538d7275a6c33026c77ecd",
+      "manifest_matches": true,
+      "working_science_unchanged": true
+    }
+  ],
+  "unmanifested_theory": [],
+  "input_copies": [
+    {
+      "path": "tracks/bivariate-lanczos/code/inputs/bj_window.py",
+      "identity_matches": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/inputs/closed_form_H.py",
+      "identity_matches": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/inputs/f1_loss_vs_ritz.py",
+      "identity_matches": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/inputs/f3_qfree_vs_R_downdate.py",
+      "identity_matches": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/inputs/f6_diag_redundant_pivot.py",
+      "identity_matches": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/inputs/f6_givens_vs_hl_deficit.py",
+      "identity_matches": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/inputs/f6_pivot_threshold_test.py",
+      "identity_matches": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/inputs/f6_run_padua_large.py",
+      "identity_matches": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/inputs/harris_simanek_check.py",
+      "identity_matches": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/inputs/padua_weights_check.py",
+      "identity_matches": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/inputs/qfree_bivariate_downdate.py",
+      "identity_matches": true
+    },
+    {
+      "path": "tracks/bivariate-lanczos/code/inputs/qfree_vs_conditioning.py",
+      "identity_matches": true
+    }
+  ],
+  "repro_logs": [
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/bj_window.log",
+      "identity_matches": true
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/closed_form_H.log",
+      "identity_matches": true
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f1_loss_vs_ritz.log",
+      "identity_matches": true
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f3_qfree_vs_R_downdate.log",
+      "identity_matches": true
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f6_diag_redundant_pivot.log",
+      "identity_matches": true
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f6_givens_vs_hl_deficit.log",
+      "identity_matches": true
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f6_pivot_threshold_test.log",
+      "identity_matches": true
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f6_run_padua_large_20_30.log",
+      "identity_matches": true
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f6_run_padua_large_40.log",
+      "identity_matches": true
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f6_run_padua_large_50.log",
+      "identity_matches": true
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f6_run_padua_large_60.log",
+      "identity_matches": true
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/harris_simanek_check.log",
+      "identity_matches": true
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/padua_weights_check.log",
+      "identity_matches": true
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/qfree_bivariate_downdate.log",
+      "identity_matches": true
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/qfree_vs_conditioning_I_fail.log",
+      "identity_matches": true
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/qfree_vs_conditioning_noI.log",
+      "identity_matches": true
+    }
+  ],
+  "generated_output_inventory": [
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/c01_recon_runs.log",
+      "bytes": 3628
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/c01_rule_sensitivity.log",
+      "bytes": 2244
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/c01_u53_rerun.log",
+      "bytes": 5502
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_defect_probe.log",
+      "bytes": 2303
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_input3.err",
+      "bytes": 0
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_input3.raw",
+      "bytes": 60084
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_irregular.err",
+      "bytes": 0
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_irregular.raw",
+      "bytes": 88199
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_l4_codim_check.log",
+      "bytes": 1612
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_padua.err",
+      "bytes": 0
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_padua.raw",
+      "bytes": 71835
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_precision_scaling.log",
+      "bytes": 157
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_rotation.err",
+      "bytes": 0
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_rotation.raw",
+      "bytes": 88036
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_simax_variants.log",
+      "bytes": 306
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_swap.err",
+      "bytes": 0
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_swap.raw",
+      "bytes": 19696
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_timing.txt",
+      "bytes": 86
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_verdict.txt",
+      "bytes": 11808
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r02_block_solve_growth.log",
+      "bytes": 2123
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r02_identities.err",
+      "bytes": 0
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r02_identities.log",
+      "bytes": 15586
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r02_mixed_precision.log",
+      "bytes": 696
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r02_node_propagator.log",
+      "bytes": 2292
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r03_both_relations.log",
+      "bytes": 765
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r03_exact_propagator.log",
+      "bytes": 1443
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r04_actual_forcing.log",
+      "bytes": 987
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r04_checkerboard.log",
+      "bytes": 1566
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r04_checkerboard_diag.log",
+      "bytes": 634
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r04_checkerboard_local.log",
+      "bytes": 949
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r04_checkerboard_more.log",
+      "bytes": 1096
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r04_checkerboard_ritz.log",
+      "bytes": 2027
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r04_coef_forcing.log",
+      "bytes": 1302
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r04_near_product.log",
+      "bytes": 1654
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r04_scaled_predictor.log",
+      "bytes": 1754
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r05_certificate_more.log",
+      "bytes": 648
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r05_certificate_square.log",
+      "bytes": 1412
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r05_certificate_triangle.log",
+      "bytes": 1421
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r05_grid_double.log",
+      "bytes": 392
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r06_coefficient_channel.log",
+      "bytes": 1682
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r06_gain_identity.log",
+      "bytes": 1577
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r07_closed_loop.log",
+      "bytes": 2446
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r07_offpattern_anatomy.log",
+      "bytes": 2577
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r07_offpattern_anatomy_1digit.log",
+      "bytes": 2397
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r07_termwise_predictor.log",
+      "bytes": 1798
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/r01_omega.raw.gz",
+      "bytes": 22641
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/r01_omega_e3.raw.gz",
+      "bytes": 12410
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/r01_sections.raw.gz",
+      "bytes": 35601
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/r01_sections_w2.raw.gz",
+      "bytes": 16262
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/r01_verdicts.txt",
+      "bytes": 21600
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/r02_cost.err",
+      "bytes": 0
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/r02_cost.jsonl",
+      "bytes": 12325
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/r02_pro.raw.gz",
+      "bytes": 10315
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/r02_proJ.raw.gz",
+      "bytes": 9961
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/r02_selection.raw.gz",
+      "bytes": 42736
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/r02_verdicts.txt",
+      "bytes": 14410
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/r03_dots.raw.gz",
+      "bytes": 12650
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/code_sha256.txt",
+      "bytes": 852
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/code_sha256_r04.txt",
+      "bytes": 940
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/code_sha256_r05.txt",
+      "bytes": 1291
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/code_sha256_r06.txt",
+      "bytes": 1549
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/exact_certificates.log",
+      "bytes": 3963
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/exact_checkerboard_equi.log",
+      "bytes": 1039
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/exact_checkerboard_equi_n7_8.log",
+      "bytes": 687
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/favard_check.log",
+      "bytes": 1005
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/hess_condition_padua.log",
+      "bytes": 907
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/hess_condition_random_seed1.log",
+      "bytes": 795
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/hess_condition_random_seed2.log",
+      "bytes": 794
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/hess_condition_random_seed3.log",
+      "bytes": 795
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/hs_checkerboard_condition.log",
+      "bytes": 2517
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/inspect_certificate_n3.log",
+      "bytes": 1682
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/inspect_certificate_n4.log",
+      "bytes": 2317
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/inspect_certificate_n5.log",
+      "bytes": 3058
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/lp_rate_n1_r0.03.log",
+      "bytes": 592
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/lp_rate_n1_r0.3.log",
+      "bytes": 571
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/lp_rate_n2_r0.03.log",
+      "bytes": 574
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/lp_rate_n3_scan.log",
+      "bytes": 879
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/lp_resid_n2.log",
+      "bytes": 1748
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/lp_resid_n3.log",
+      "bytes": 2649
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/padua_generators_check.log",
+      "bytes": 722
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/r02_closed_form_C.log",
+      "bytes": 850
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/r02_structure_padua.log",
+      "bytes": 1372
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/r02_structure_random_seed1.log",
+      "bytes": 756
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/r05_boundary_proof.log",
+      "bytes": 1406
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/r05_direct_check.log",
+      "bytes": 2019
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/r05_interior_identity.log",
+      "bytes": 311
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/r05_kappa_family.log",
+      "bytes": 2128
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/r06_consistency_random.log",
+      "bytes": 3168
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/r06_consistency_rot03.log",
+      "bytes": 2075
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/r06_consistency_tensor.log",
+      "bytes": 3168
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/r06_weight_fit_random.log",
+      "bytes": 647
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L3/logs/r06_weight_fit_rot03.log",
+      "bytes": 1212
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/analysis_r01.txt",
+      "bytes": 15375
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/analysis_r01b.txt",
+      "bytes": 10094
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/analysis_r01c.txt",
+      "bytes": 12452
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_padua_cub.jsonl",
+      "bytes": 17588
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_padua_cub.log",
+      "bytes": 3997
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_padua_rand.jsonl",
+      "bytes": 17625
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_padua_rand.log",
+      "bytes": 4032
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_padua_unif.jsonl",
+      "bytes": 10241
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_padua_unif.log",
+      "bytes": 2300
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_prefix_a.jsonl",
+      "bytes": 33151
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_prefix_a.log",
+      "bytes": 7744
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_prefix_b.jsonl",
+      "bytes": 6960
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_prefix_b.log",
+      "bytes": 1566
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_random.jsonl",
+      "bytes": 18361
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_random.log",
+      "bytes": 3785
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_random_cheb.jsonl",
+      "bytes": 15995
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_random_cheb.log",
+      "bytes": 3390
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r02_dual.jsonl",
+      "bytes": 11772
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r02_dual.log",
+      "bytes": 1956
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_defer3.jsonl",
+      "bytes": 16544
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_defer3.log",
+      "bytes": 4394
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_deferbest.jsonl",
+      "bytes": 4446
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_deferbest.log",
+      "bytes": 2092
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_deferbest_large.jsonl",
+      "bytes": 190
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_deferbest_large.log",
+      "bytes": 88
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_deferbest_large2.log",
+      "bytes": 0
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_detector.log",
+      "bytes": 4080
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_rules.jsonl",
+      "bytes": 15892
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_rules.log",
+      "bytes": 4314
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_x60.json",
+      "bytes": 245
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_x60.log",
+      "bytes": 249
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_x60_controls.jsonl",
+      "bytes": 454
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_x60_controls.log",
+      "bytes": 454
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/analysis/f1_ratio_table_eps.txt",
+      "bytes": 5983
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/analysis/f1_ratio_table_halfeps.txt",
+      "bytes": 5994
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/analysis/f6_deficit_factors.txt",
+      "bytes": 5072
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/analysis/f6_slopes_M66_1891.txt",
+      "bytes": 6456
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/analysis/f6_slopes_M66_496.txt",
+      "bytes": 4878
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/bj_window.log",
+      "bytes": 284
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/closed_form_H.log",
+      "bytes": 2112
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f1_loss_vs_ritz.log",
+      "bytes": 5178
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f3_qfree_vs_R_downdate.log",
+      "bytes": 1325
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f6_diag_redundant_pivot.log",
+      "bytes": 3677
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f6_givens_vs_hl_deficit.log",
+      "bytes": 4016
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f6_pivot_threshold_test.log",
+      "bytes": 766
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f6_run_padua_large_20_30.log",
+      "bytes": 1084
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f6_run_padua_large_40.log",
+      "bytes": 542
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f6_run_padua_large_50.log",
+      "bytes": 544
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/f6_run_padua_large_60.log",
+      "bytes": 544
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/harris_simanek_check.log",
+      "bytes": 2863
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/padua_weights_check.log",
+      "bytes": 1292
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/qfree_bivariate_downdate.log",
+      "bytes": 803
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/qfree_vs_conditioning_I_fail.log",
+      "bytes": 274
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/repro/logs/qfree_vs_conditioning_noI.log",
+      "bytes": 490
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1/exact_checks.log",
+      "bytes": 4550
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1/extra.log",
+      "bytes": 2796
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1/prop.log",
+      "bytes": 5160
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1/prop_selection.log",
+      "bytes": 1859
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1/rule_sensitivity.log",
+      "bytes": 7962
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1/sweep_M.log",
+      "bytes": 1162
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1/sweep_alt.log",
+      "bytes": 5170
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1/sweep_loss.json",
+      "bytes": 50104
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1/sweep_loss.log",
+      "bytes": 23143
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1/sweep_ritz.log",
+      "bytes": 5585
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1b/cert_Q24.log",
+      "bytes": 1512
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1b/cert_Q24_exactcmp.log",
+      "bytes": 1566
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1b/cert_T24.log",
+      "bytes": 1516
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1b/cert_T24_exactcmp.log",
+      "bytes": 1569
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1b/cert_T24_rescaled.log",
+      "bytes": 1415
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1b/cert_T40.log",
+      "bytes": 1684
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1b/cert_rotQ24.log",
+      "bytes": 1724
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1b/checkerboard.log",
+      "bytes": 4126
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1b/checkerboard_ritz.log",
+      "bytes": 417
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1b/closed_loop.log",
+      "bytes": 1297
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1b/closed_loop_sets.log",
+      "bytes": 821
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1b/exact_checkerboard.log",
+      "bytes": 1116
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1b/open_loop.log",
+      "bytes": 1662
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/adapt_C.log",
+      "bytes": 872
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/cycles.log",
+      "bytes": 1314
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/dev_r01_omega_rerun.raw",
+      "bytes": 12460
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/dev_r02_proJ_rerun.raw",
+      "bytes": 9620
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/dev_r02_pro_rerun.raw",
+      "bytes": 5801
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/dev_r03_dots_rerun.raw",
+      "bytes": 14441
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/drift_AB.log",
+      "bytes": 21378
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/drift_C.log",
+      "bytes": 3547
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/drift_D.log",
+      "bytes": 845
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/exact.log",
+      "bytes": 3540
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/omega.log",
+      "bytes": 13178
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/sections.log",
+      "bytes": 1106
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/thmA.log",
+      "bytes": 27727
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3/dev_exact_certificates_rerun.log",
+      "bytes": 3963
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3/dev_exact_certificates_rerun.time",
+      "bytes": 42
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3/hankel_crosscheck.log",
+      "bytes": 727
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3/indep_H.log",
+      "bytes": 3622
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3/indep_dkappa.log",
+      "bytes": 374
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3/indep_exact_check.log",
+      "bytes": 3259
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3/indep_favard.log",
+      "bytes": 1177
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3/indep_generator_cert.log",
+      "bytes": 1875
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3/indep_lp.log",
+      "bytes": 1136
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3/padua_n4_generator_cert.log",
+      "bytes": 726
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3/unisolvence_check.log",
+      "bytes": 318
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3b/consistency_recheck_rot03.log",
+      "bytes": 3033
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3b/consistency_recheck_rot03_n20_22.log",
+      "bytes": 1319
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3b/dev_r06_consistency_rot03_rerun.log",
+      "bytes": 2117
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3b/equi_H_cert_n1_7.log",
+      "bytes": 5791
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3b/equi_H_cert_n8.log",
+      "bytes": 1248
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3b/equi_H_cert_negative_control.log",
+      "bytes": 3524
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3b/kappa_family_n3.log",
+      "bytes": 286
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3b/padua_delta0.log",
+      "bytes": 2168
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3b/padua_turan_check.log",
+      "bytes": 8126
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L3b/turan_symbolic.log",
+      "bytes": 1172
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L5/a_slopes.jsonl",
+      "bytes": 23713
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L5/a_slopes.log",
+      "bytes": 21429
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L5/analysis_review.txt",
+      "bytes": 13420
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L5/b_kill.jsonl",
+      "bytes": 7607
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L5/b_kill.log",
+      "bytes": 6200
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L5/c_repro60.jsonl",
+      "bytes": 1136
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L5/c_repro60.log",
+      "bytes": 1090
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L5/checks.log",
+      "bytes": 2658
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L5/d_unif.jsonl",
+      "bytes": 4622
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L5/d_unif.log",
+      "bytes": 4153
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L5/reanalysis_dev_r01.txt",
+      "bytes": 10593
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L5/stage_check.log",
+      "bytes": 76
+    },
+    {
+      "path": "topics/bivariate-lanczos-20261031/reviews/logs_L5/unif_slopes.txt",
+      "bytes": 247
+    }
+  ],
+  "generated_output_bytes": 1361364,
+  "generated_output_files": 216,
+  "oversized_generated_files": [],
+  "generated_inventory_limit": true,
+  "archive_retrieved_this_audit": false,
+  "archive_limit": "AC's Windows cold storage is not attached; no archive re-verification claimed.",
+  "actual_theory_files": 67,
+  "handoff_prose_theory_count": 64,
+  "theory_count_prose_matches": false,
+  "pass": true
+}
