@@ -48,8 +48,14 @@ k=2 (section size  6): Gauss/anti-Gauss bracket the exact value in 199/200 insta
 k=3 (section size 10): Gauss/anti-Gauss bracket the exact value in 196/200 instances; median rel.err: pair-Gauss 9.2e-05, pair-anti 8.0e-05, univariate Lanczos on g(X,Y) with m=4 steps (size 4) 1.1e-03
 k=4 (section size 15): Gauss/anti-Gauss bracket the exact value in 198/200 instances; median rel.err: pair-Gauss 3.1e-06, pair-anti 2.9e-06, univariate Lanczos on g(X,Y) with m=5 steps (size 5) 1.2e-04
 
+== T5b: equal X/Y-product count: pair k-section (dim Pi_k products) vs Lanczos on g(X,Y) with m = dim Pi_k // 2 steps ==
+k=1 size  3: pair-Gauss median rel.err 1.5e-02 | Lanczos on g with m=1 steps 1.7e-01 (exact to g-degree 1 vs 1 for the pair)
+k=2 size  6: pair-Gauss median rel.err 1.2e-03 | Lanczos on g with m=3 steps 5.7e-03 (exact to g-degree 5 vs 2 for the pair)
+k=3 size 10: pair-Gauss median rel.err 9.2e-05 | Lanczos on g with m=5 steps 2.0e-04 (exact to g-degree 9 vs 3 for the pair)
+k=4 size 15: pair-Gauss median rel.err 3.7e-06 | Lanczos on g with m=7 steps 3.8e-06 (exact to g-degree 13 vs 4 for the pair)
+
 == T6: f = 1/(c - x y), c = 1.5: three lifts of the SAME f give different 'rules' ; 200 instances per k ==
-k=1: median relative spread between lifts AB, BA, sym: 3.7e-05 | median rel.err per lift: 4.6e-02 4.6e-02 4.6e-02 | brackets: 200 200 200 /200
-k=2: median relative spread between lifts AB, BA, sym: 4.9e-04 | median rel.err per lift: 4.2e-03 4.2e-03 3.8e-03 | brackets: 180 180 191 /200
-k=3: median relative spread between lifts AB, BA, sym: 2.8e-06 | median rel.err per lift: 8.6e-04 8.6e-04 8.6e-04 | brackets: 200 200 200 /200
-k=4: median relative spread between lifts AB, BA, sym: 2.4e-06 | median rel.err per lift: 4.4e-05 4.4e-05 4.3e-05 | brackets: 196 196 199 /200
+k=1: median relative spread between lifts AB, BA, sym: 3.8e-05 | median rel.err per lift: 4.4e-02 4.4e-02 4.4e-02 | brackets: 200 200 200 /200
+k=2: median relative spread between lifts AB, BA, sym: 5.0e-04 | median rel.err per lift: 4.0e-03 4.0e-03 3.3e-03 | brackets: 177 177 192 /200
+k=3: median relative spread between lifts AB, BA, sym: 2.8e-06 | median rel.err per lift: 7.9e-04 7.9e-04 7.8e-04 | brackets: 200 200 200 /200
+k=4: median relative spread between lifts AB, BA, sym: 2.5e-06 | median rel.err per lift: 5.0e-05 5.0e-05 4.6e-05 | brackets: 192 192 197 /200
