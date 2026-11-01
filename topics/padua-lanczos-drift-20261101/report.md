@@ -15,7 +15,7 @@ These outcomes remain distinct. All 88 aggregate rational cases ran: degrees
 2–12, two grids, four selections. Independent exact reruns confirm the decisive
 inequalities. The grids are the uniform 325-point T24 triangle and 625-point
 Q24 product grid rotated with rational cosine 3/5 and sine 4/5. Choices are
-BJ/dev, mirror, alt staircase and exact pivot-adaptive selections.
+BJ/dev, mirror, alt staircase and exact pivot-adaptive selections. The rotQ24 pivot values are an X-tie-broken frozen sequence: an exact tie at column (2,1) comes from the grid's 90° symmetry, while T24 pivot has no tie (response-01; evidence/response-01-e1-checks.json).
 
 The derivative projects out coefficient changes that remain in the polynomial
 space. Its input budget is the joint Euclidean norm of preprojection residuals
@@ -97,6 +97,13 @@ the Taylor remainder, negative limit and distance argument.
 certificates is a different question. The comparison ρ_n≤δ_obs(n) cannot
 turn an upper bound on ρ_n into an upper bound on δ_obs(n).
 
+**PD-N?drift-codex-32** (PROVED, scoped) records three failed negative-witness
+mechanisms for P_n. The equal-phase path and the edges x=1, y=1 contain no
+negative point for any n≥4 (exact identities). Each fixed-A/n³ common-angle
+path, A≠0, is eventually positive (n¹⁰P_n→(9/2)A⁴), so it gives no *eventual*
+negative witness. Fixed-A paths still contain finite-n negative points, e.g.
+η_{n₀}(a/n₀)=ζ_{n₀}. None of the three rejects U1.
+
 **PD-T?drift-codex-31** gives an explicit square n=1 positive four-atom split:
 moment perturbation exactly ε, support spread at most √(6ε), and a √ε lower
 bound allowing residual γε, γ<1/3, in a specified fixed-mass moment norm.
@@ -117,18 +124,13 @@ entrywise with its implementation here. Default `[x,y]` gives mirror with
 reversed within-degree order, which is numerically different from forward
 mirror. All parents were checked through degree 47.
 
-| Case | Span gap | Worst-polynomial training relative residual | Test relative error |
+| Case | Span gap | Worst-polynomial training relative residual | Test relative error (midpoint set) |
 |---|---:|---:|---:|
 | rotated square, n=24 | 0.004105 | 0.004105 | 0.001014 |
 | triangle, n=20 | 0.010164 | 0.010164 | 0.001569 |
 
 A separate root execution reproduced both complete case records exactly.
-Gram errors remain below 6.9e−15; polynomial references have condition numbers
-about 3778 and 101. These are numerical diagnostics, not rigorous floating
-enclosures. The polynomial targets were chosen after inspecting missing span
-directions. The independently fixed target exp(x+y) has errors about 2e−15 on
-the same hard sets. The finding therefore concerns particular polynomial
-directions; it does not establish general failure on smooth data.
+Gram error `max|QᵀQ−I|` is 6.9e−15, entirely the (0,0) normalization entry; the off-diagonal maximum is at most 2.8e−16. Polynomial references have condition numbers about 3778 and 101. These are numerical diagnostics, not rigorous floating enclosures. The adversarial polynomial target was chosen after inspecting missing span directions, so its training residual equals the gap by construction; the informative quantity is the off-sample error, and the table's test error is for the campaign's 128 centre-concentrated midpoint test points only. On 4000 uniform interior points the same fits have relative error 1.5e−2 (rotated square) and 2.5e−2 (triangle), about 15 times larger (response-01, MEASURED). The fixed target exp(x+y) (a ridge function aligned with the rotated-square frame, whose selection chronology is not documented) has errors about 2e−15 on the midpoint set and at most 1.3e−13 on boundary-inclusive samples; one generic entire target is approximation-limited and is fit as well as by the reference span. The finding therefore concerns particular polynomial directions; it does not establish general failure on smooth data, and it does not show absence of loss for other smooth functions.
 
 Several full-suite references, especially the clustered checkerboard, are
 poorly conditioned or numerically rank deficient. Their raw gaps do not

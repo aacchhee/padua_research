@@ -17,7 +17,7 @@
 
 | Direction | Target status | Outcome / remaining action | Evidence |
 |---|---|---|---|
-| E1 | Exact aggregate comparison PROVED; full-model comparison separately scoped | Tightened exact certificate survives both grids; original KHS-only sufficient test inconclusive; finish scalar graph evidence | Theory01–04 and evidence/e1*.json |
+| E1 | Exact aggregate comparison PROVED; scalar-graph finite capacities MEASURED | Tightened exact certificate survives both grids; original KHS-only sufficient test inconclusive. Scalar graph evidence complete and independently reproduced (record 05 MEASURED: factor-ten INCONCLUSIVE, >7/>800 thresholds post hoc). Response-01 added the rotQ24 pivot-tie disclosure (exact tie at column (2,1)), an exact BᵀB = D check and a committed checker for the record-04 inequalities | Theory01-05, evidence/e1*.json, evidence/response-01-e1-checks.json |
 | E2 | OPEN | Standard scalar-operation bridge written; all-degree exponential/matching drift theorem not obtained | E2.md and theory03 |
 | E3 | OPEN general family safety | Analytic span certificate and filtered fixed-degree criterion proved; useful uniform score bounds open | Theory10/11, E3.md |
 | E4 | OPEN original PD-T055 | Quantifiers formalized and restricted projection-only adverse-source obstruction proved | Scoped negative theory14/15, E4.md |
