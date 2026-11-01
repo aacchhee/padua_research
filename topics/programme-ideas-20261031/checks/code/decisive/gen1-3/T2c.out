@@ -1,0 +1,64 @@
+T2c (post hoc): clustered sampling. training M = 4321 (4096 grid + 225 polar, r >= 1e-05); validation 9673 points
+entries: training relRMS / validation relRMS / validation relMAX
+
+=== n = 16, N = 153 ===
+  P      eps=3e-03 span24=1e-14 delta=3e-15  fA: 2.3e-03/1.8e-03/1.0e-02  fB: 4.3e-03/3.9e-03/1.9e-02  fC: 3.8e-03/3.4e-03/1.3e-02
+  Ppt    eps=3e-05 span24=2e-04 delta=4e-14  fA: 3.8e-04/3.8e-04/1.2e-03  fB: 4.0e-04/3.9e-04/1.2e-03  fC: 1.3e-02/1.3e-02/2.9e-02
+  Ppt    eps=3e-04 span24=4e-05 delta=7e-15  fA: 1.4e-04/1.4e-04/6.4e-04  fB: 1.6e-04/1.6e-04/1.6e-03  fC: 7.3e-03/7.3e-03/2.4e-02
+  Ppt    eps=3e-03 span24=1e-05 delta=3e-15  fA: 9.8e-05/8.0e-05/7.2e-04  fB: 2.1e-04/1.9e-04/2.7e-03  fC: 2.8e-03/3.0e-03/1.1e-02
+  Ppt    eps=3e-02 span24=4e-07 delta=3e-15  fA: 3.1e-04/2.3e-04/1.8e-03  fB: 5.7e-04/4.5e-04/5.1e-03  fC: 1.7e-03/1.8e-03/7.9e-03
+  Pbhh   eps=3e-05 span24=6e-05 delta=3e-15  fA: 7.4e-04/1.5e+00/1.6e+01  fB: 6.1e-03/1.4e+01/1.5e+02  fC: 1.3e-02/1.9e+01/1.5e+02
+  Pbhh   eps=3e-04 span24=3e-09 delta=3e-15  fA: 4.2e-04/1.0e-02/1.1e-01  fB: 4.4e-03/1.1e-01/1.2e+00  fC: 9.5e-03/1.8e-01/1.6e+00
+  Pbhh   eps=3e-03 span24=8e-12 delta=3e-15  fA: 2.8e-04/2.4e-04/1.7e-03  fB: 2.3e-03/2.4e-03/6.0e-03  fC: 5.4e-03/5.5e-03/9.2e-03
+  Pbhh   eps=3e-02 span24=1e-12 delta=3e-15  fA: 6.2e-04/4.7e-04/3.2e-03  fB: 1.1e-03/9.6e-04/9.7e-03  fC: 1.9e-03/1.9e-03/7.2e-03
+  Ldiag  eps=3e-05 span24=2e-05 delta=2e-14  fA: 3.7e-04/4.5e-04/4.6e-03  fB: 4.0e-04/5.7e-04/4.6e-03  fC: 1.4e-02/1.6e-02/1.0e-01
+  Ldiag  eps=3e-04 span24=5e-05 delta=3e-15  fA: 1.2e-04/1.2e-04/4.3e-04  fB: 1.7e-04/1.6e-04/1.0e-03  fC: 7.1e-03/7.0e-03/1.5e-02
+  Ldiag  eps=3e-03 span24=3e-06 delta=4e-15  fA: 1.2e-04/9.5e-05/9.3e-04  fB: 2.7e-04/2.3e-04/2.7e-03  fC: 2.4e-03/2.4e-03/5.7e-03
+  Ldiag  eps=3e-02 span24=3e-09 delta=4e-15  fA: 3.6e-04/2.6e-04/2.1e-03  fB: 6.5e-04/5.2e-04/6.1e-03  fC: 1.3e-03/1.4e-03/5.9e-03
+  Pdiag  eps=3e-05 span24=1e-04 delta=2e-13  fA: 1.8e-03/1.8e-03/6.8e-03  fB: 1.9e-03/1.9e-03/6.7e-03  fC: 2.0e-02/2.0e-02/5.8e-02
+  Pdiag  eps=3e-04 span24=3e-06 delta=4e-15  fA: 8.2e-04/8.0e-04/3.0e-03  fB: 8.9e-04/8.7e-04/3.0e-03  fC: 1.4e-02/1.4e-02/2.8e-02
+  Pdiag  eps=3e-03 span24=1e-05 delta=3e-15  fA: 3.4e-04/3.0e-04/1.2e-03  fB: 4.4e-04/3.9e-04/2.8e-03  fC: 7.3e-03/7.3e-03/1.5e-02
+  Pdiag  eps=3e-02 span24=9e-08 delta=3e-15  fA: 5.4e-04/4.1e-04/2.9e-03  fB: 8.9e-04/7.2e-04/8.1e-03  fC: 2.5e-03/2.5e-03/7.0e-03
+  Mpt    eps=3e-05 span24=2e-05 delta=3e-14  fA: 5.1e-05/4.3e-05/4.1e-04  fB: 6.6e-05/5.5e-05/6.6e-04  fC: 1.9e-03/2.0e-03/1.0e-02
+  Mpt    eps=3e-04 span24=5e-05 delta=8e-15  fA: 4.7e-05/4.4e-05/4.5e-04  fB: 1.4e-04/1.1e-04/1.5e-03  fC: 1.8e-03/1.9e-03/1.0e-02
+  Mpt    eps=3e-03 span24=2e-07 delta=3e-15  fA: 1.8e-04/1.3e-04/1.1e-03  fB: 3.8e-04/3.0e-04/3.4e-03  fC: 1.8e-03/1.9e-03/9.6e-03
+  Mpt    eps=3e-02 span24=7e-11 delta=3e-15  fA: 5.4e-04/4.0e-04/2.9e-03  fB: 9.6e-04/7.8e-04/8.2e-03  fC: 1.9e-03/2.0e-03/9.4e-03
+
+  summary n = 16: best validation relRMS per class (eps), gain over P:
+    fA: P 1.8e-03 | Ppt 8.0e-05 (3e-03) x23.1; Pbhh 2.4e-04 (3e-03) x7.7; Ldiag 9.5e-05 (3e-03) x19.3; Pdiag 3.0e-04 (3e-03) x6.2; Mpt 4.3e-05 (3e-05) x42.5
+    fB: P 3.9e-03 | Ppt 1.6e-04 (3e-04) x24.9; Pbhh 9.6e-04 (3e-02) x4.1; Ldiag 1.6e-04 (3e-04) x25.1; Pdiag 3.9e-04 (3e-03) x10.0; Mpt 5.5e-05 (3e-05) x70.7
+    fC: P 3.4e-03 | Ppt 1.8e-03 (3e-02) x1.9; Pbhh 1.9e-03 (3e-02) x1.8; Ldiag 1.4e-03 (3e-02) x2.5; Pdiag 2.5e-03 (3e-02) x1.4; Mpt 1.9e-03 (3e-03) x1.8
+
+=== n = 24, N = 325 ===
+  P      eps=3e-03 span24=3e-14 delta=3e-15  fA: 1.3e-03/1.0e-03/6.3e-03  fB: 2.3e-03/2.0e-03/1.3e-02  fC: 2.1e-03/1.9e-03/8.1e-03
+  Ppt    eps=3e-05 span24=2e-04 delta=3e-15  fA: 2.1e-05/1.6e-03/3.7e-02  fB: 2.2e-05/1.9e-03/3.9e-02  fC: 2.4e-03/9.0e-02/1.8e+00
+  Ppt    eps=3e-04 span24=1e-04 delta=3e-15  fA: 6.3e-06/4.6e-05/1.1e-03  fB: 3.5e-05/4.1e-04/1.2e-02  fC: 1.5e-03/6.0e-03/1.2e-01
+  Ppt    eps=3e-03 span24=2e-05 delta=3e-15  fA: 4.5e-05/1.0e-04/2.5e-03  fB: 1.2e-04/2.0e-04/2.2e-03  fC: 1.1e-03/1.4e-03/1.6e-02
+  Ppt    eps=3e-02 span24=1e-06 delta=3e-15  fA: 1.7e-04/1.4e-04/1.2e-03  fB: 3.3e-04/3.0e-04/4.7e-03  fC: 8.7e-04/9.8e-04/4.3e-03
+  Pbhh   eps=3e-05 span24=2e-04 delta=6e-15  fA: 7.7e-05/7.0e+01/9.6e+02  fB: 1.0e-03/4.0e+03/5.9e+04  fC: 3.3e-03/5.3e+03/5.9e+04
+  Pbhh   eps=3e-04 span24=3e-04 delta=3e-15  fA: 3.2e-05/1.3e-01/2.1e+00  fB: 4.4e-04/3.5e+00/5.1e+01  fC: 1.4e-03/5.2e+00/5.9e+01
+  Pbhh   eps=3e-03 span24=1e-08 delta=3e-15  fA: 1.2e-04/9.3e-05/9.6e-04  fB: 3.2e-04/3.6e-04/3.1e-03  fC: 4.9e-04/8.5e-04/4.6e-03
+  Pbhh   eps=3e-02 span24=7e-12 delta=3e-15  fA: 3.7e-04/2.7e-04/2.1e-03  fB: 6.5e-04/5.1e-04/6.5e-03  fC: 7.2e-04/7.4e-04/4.0e-03
+  Ldiag  eps=3e-05 span24=4e-04 delta=2e-14  fA: 1.9e-05/2.9e-04/8.8e-03  fB: 2.3e-05/6.0e-04/1.3e-02  fC: 1.9e-03/1.7e-02/3.5e-01
+  Ldiag  eps=3e-04 span24=9e-06 delta=7e-15  fA: 9.6e-06/4.6e-05/9.4e-04  fB: 5.3e-05/4.0e-04/7.9e-03  fC: 8.0e-04/2.0e-03/4.0e-02
+  Ldiag  eps=3e-03 span24=3e-04 delta=4e-15  fA: 6.0e-05/1.1e-04/1.8e-03  fB: 1.6e-04/2.9e-04/4.9e-03  fC: 5.8e-04/9.4e-04/9.8e-03
+  Ldiag  eps=3e-02 span24=1e-06 delta=5e-15  fA: 2.0e-04/1.5e-04/1.2e-03  fB: 3.8e-04/3.3e-04/5.5e-03  fC: 6.4e-04/7.5e-04/3.3e-03
+  Pdiag  eps=3e-05 span24=3e-04 delta=2e-14  fA: 2.0e-04/8.4e-04/1.8e-02  fB: 2.2e-04/9.5e-04/1.8e-02  fC: 6.1e-03/2.5e-02/5.5e-01
+  Pdiag  eps=3e-04 span24=1e-04 delta=4e-15  fA: 6.4e-05/1.5e-04/5.3e-03  fB: 8.2e-05/2.6e-04/6.2e-03  fC: 2.7e-03/5.3e-03/1.4e-01
+  Pdiag  eps=3e-03 span24=2e-05 delta=3e-15  fA: 9.4e-05/1.4e-04/2.6e-03  fB: 2.0e-04/4.0e-04/9.2e-03  fC: 8.4e-04/1.2e-03/2.8e-02
+  Pdiag  eps=3e-02 span24=6e-06 delta=3e-15  fA: 3.1e-04/2.4e-04/1.9e-03  fB: 5.4e-04/5.0e-04/8.0e-03  fC: 7.4e-04/7.9e-04/3.4e-03
+  Mpt    eps=3e-05 span24=1e-04 delta=3e-14  fA: 3.2e-06/1.2e-05/2.2e-04  fB: 2.2e-05/7.2e-05/1.5e-03  fC: 1.0e-03/1.2e-03/6.0e-03
+  Mpt    eps=3e-04 span24=7e-05 delta=1e-14  fA: 1.7e-05/6.2e-05/8.1e-04  fB: 8.4e-05/2.1e-04/2.8e-03  fC: 9.6e-04/1.1e-03/5.9e-03
+  Mpt    eps=3e-03 span24=2e-05 delta=3e-15  fA: 1.1e-04/1.0e-04/1.0e-03  fB: 2.4e-04/2.0e-04/2.5e-03  fC: 8.8e-04/1.0e-03/5.2e-03
+  Mpt    eps=3e-02 span24=2e-07 delta=4e-15  fA: 3.3e-04/2.4e-04/1.9e-03  fB: 5.9e-04/4.7e-04/5.5e-03  fC: 9.7e-04/1.1e-03/4.9e-03
+  BHHxy  eps=3e-05 rank=300/324  fA: 9.3e-04/3.8e+05/3.9e+06  fB: 5.3e-03/1.4e+06/1.7e+07  fC: 1.2e-05/9.5e+02/9.4e+03
+  BHHxy  eps=3e-04 rank=312/324  fA: 9.6e-04/2.7e+04/2.7e+05  fB: 5.3e-03/1.4e+05/1.6e+06  fC: 5.4e-05/8.4e+02/8.0e+03
+  BHHxy  eps=3e-03 rank=322/324  fA: 9.8e-04/3.5e+02/2.9e+03  fB: 5.3e-03/1.8e+04/1.9e+05  fC: 1.8e-04/1.5e+03/1.3e+04
+  BHHxy  eps=3e-02 rank=312/324  fA: 1.1e-03/1.1e-03/1.2e-02  fB: 5.5e-03/5.2e-03/2.1e-02  fC: 4.7e-04/5.1e-04/2.6e-03
+
+  summary n = 24: best validation relRMS per class (eps), gain over P:
+    fA: P 1.0e-03 | Ppt 4.6e-05 (3e-04) x21.9; Pbhh 9.3e-05 (3e-03) x10.9; Ldiag 4.6e-05 (3e-04) x22.1; Pdiag 1.4e-04 (3e-03) x7.0; Mpt 1.2e-05 (3e-05) x85.2
+    fB: P 2.0e-03 | Ppt 2.0e-04 (3e-03) x10.2; Pbhh 3.6e-04 (3e-03) x5.6; Ldiag 2.9e-04 (3e-03) x7.0; Pdiag 2.6e-04 (3e-04) x7.8; Mpt 7.2e-05 (3e-05) x28.2
+    fC: P 1.9e-03 | Ppt 9.8e-04 (3e-02) x1.9; Pbhh 7.4e-04 (3e-02) x2.6; Ldiag 7.5e-04 (3e-02) x2.5; Pdiag 7.9e-04 (3e-02) x2.4; Mpt 1.0e-03 (3e-03) x1.8
+
+total wall time 72.1 s

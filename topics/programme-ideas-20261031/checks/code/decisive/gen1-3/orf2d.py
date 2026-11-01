@@ -164,9 +164,10 @@ def targets(x, y):
 
 # ----------------------------------------------------------------------------- Lanczos
 
-def _pivoted_gs(B, w, k):
-    """k weighted-orthonormal columns from the span of B by column-pivoted two-pass Gram-Schmidt
-    (for dtypes without SVD). Returns Qk, Z (Qk = B Z), kept pivot norms, max norm of the rest."""
+def _pivoted_gs(B, w, k, rtol=0.0, kmin=1):
+    """up to k weighted-orthonormal columns from the span of B by column-pivoted two-pass Gram-Schmidt
+    (for dtypes without SVD); stops early when the best remaining norm < rtol * first pivot norm.
+    Returns Qk, Z (Qk = B Z), kept pivot norms, max norm of the rest."""
     M, p = B.shape
     B = B.copy()
     T = np.eye(p, dtype=B.dtype)
@@ -176,6 +177,9 @@ def _pivoted_gs(B, w, k):
     remaining = list(range(p))
     for i in range(k):
         nrm = np.sqrt(np.real(np.sum(w[:, None] * np.abs(B[:, remaining]) ** 2, axis=0)))
+        if i >= kmin and nrm.max() < rtol * kept[0]:
+            Q, Tq = Q[:, :i], Tq[:, :i]
+            break
         jmax = remaining[int(np.argmax(nrm))]
         v, tv = B[:, jmax].copy(), T[:, jmax].copy()
         for _ in range(2):                                      # re-orthogonalise against earlier q's
@@ -196,18 +200,82 @@ def _pivoted_gs(B, w, k):
     return Q, Tq, np.array(kept), (float(rest.max()) if len(rest) else 0.0)
 
 
+def _orth_basis(B, w, sw, dt, rtol=1e-10, rmax=None, rmin=1):
+    """weighted-orthonormal basis U of range(B) with the map Z (U = B Z); rank by relative threshold,
+    clipped to [rmin, rmax]. Returns U, Z, singular values (double) or pivot norms (extended)."""
+    if dt == np.clongdouble:
+        kmax = B.shape[1] if rmax is None else min(B.shape[1], max(rmax, rmin))
+        Qa, Ta, kept, rest = _pivoted_gs(B, w, kmax, rtol=rtol, kmin=min(rmin, kmax))
+        r = Qa.shape[1]
+        return Qa, Ta, np.append(kept, rest)
+    U, S, Vh = np.linalg.svd(sw[:, None] * B, full_matrices=False)
+    r = int(np.sum(S > rtol * S[0]))
+    if rmax is not None:
+        r = min(r, rmax)
+    r = max(r, min(rmin, len(S)))
+    return U[:, :r] / sw[:, None], Vh[:r].conj().T / S[:r], S
+
+
+def _svd_small(N, dt):
+    """full SVD (s, Vh) of a small matrix; extended precision via mpmath (30 digits) when needed."""
+    if dt != np.clongdouble:
+        _, s, Vh = np.linalg.svd(N, full_matrices=True)
+        return s, Vh
+    import mpmath as mp
+    mp.mp.dps = 30
+    m, p = N.shape
+    A = mp.matrix(m, p)
+    for i in range(m):
+        for j in range(p):
+            A[i, j] = mp.mpc(mp.mpf(str(np.real(N[i, j]))), mp.mpf(str(np.imag(N[i, j]))))
+    # Hermitian eigenproblem of A^H A gives the right singular vectors (p x p)
+    H = A.H * A
+    E, V = mp.eighe(H)
+    ev = np.array([float(mp.re(E[i])) for i in range(p)])
+    order = np.argsort(-ev)
+    Vh = np.empty((p, p), dtype=np.clongdouble)
+    s = np.empty(p, dtype=np.longdouble)
+    for k, idx in enumerate(order):
+        idx = int(idx)
+        s[k] = np.sqrt(max(np.longdouble(str(mp.re(E[idx]))), np.longdouble(0)))
+        for j in range(p):
+            re_ = np.longdouble(str(mp.re(V[j, idx]))); im_ = np.longdouble(str(mp.im(V[j, idx])))
+            Vh[k, j] = np.clongdouble(re_) - np.clongdouble(1j) * np.clongdouble(im_)   # conj of right vector
+    return s, Vh
+
+
+def _null_select(N, k, dt):
+    """the k right singular directions of N with the smallest singular values (the null space when the
+    rank structure is clean), the singular values treated as constraints, and the largest 'null' one."""
+    s, Vh = _svd_small(N, dt)
+    p = N.shape[1]
+    nc = p - k                              # number of constraint directions
+    V = Vh[nc:].conj().T
+    s_con = s[:nc] if nc > 0 else np.zeros(0)
+    s_null_max = float(s[nc]) if nc < len(s) else 0.0
+    return V, s_con, s_null_max
+
+
 class Lanczos:
     """Windowed rational Lanczos for V_n = Pi_n/pi_n with one line per degree.
 
-    window = 3 : orthogonalise the candidates against the last three blocks (the adversary's claim)
-    window = 0 : full reorthogonalisation (all blocks)
-    dtype      : np.complex128 or np.clongdouble
-    After run(): self.Q (M x N), self.blocks (sizes), self.defect[t] = max |Q_{<=t}^H W Q_{t+1}|,
-    self.selfdef[t] = max |Q_{t+1}^H W Q_{t+1} - I|, self.gap[t] = (kept_min, discarded_max)/kept_max,
-    self.coef[t] = (d, G, Z) for forward evaluation."""
+    Generation: candidates C_t = [Q_{t-1}, Q_t, x Q_t, y Q_t] / l_{t+1}  (two-block generation window).
+    Orthogonalisation step, parameters (proj, con):
+        project the candidates off the last `proj` blocks (proj = 0: all blocks, full reorthogonalisation),
+        then keep the subspace of the remainder orthogonal to the next `con` older blocks (a constraint,
+        i.e. null space of the inner-product matrix), then orthonormalise.
+      (proj, con) = (3, 0): the adversary's "three-block orthogonalisation window" (projection only);
+      (2, 1): project two, constrain one -- the 2-D analogue of the 1-D ORF three-term recurrence;
+      (3, 1): project three, constrain one;  (0, 0): full reorthogonalisation.
+    dtype: np.complex128 or np.clongdouble.
+    After run(): Q (M x N), blocks (sizes), defect[t] = max |Q_{<=t}^H W Q_{t+1}| (loss against ALL
+    previous blocks), selfdef[t], gapR[t] = (last kept, first dropped)/largest singular value of the
+    projected candidates, gapN[t] = (smallest kept sv of the constraint matrix, its largest), dims[t] =
+    (rank of remainder, rank of constraint, dim kept), coef[t] = (d, G, Z, nproj, ncon) for evaluate()."""
 
-    def __init__(self, lines, n, window=3, dtype=np.complex128, track=True):
-        self.lines, self.n, self.window, self.dtype, self.track = lines, n, window, dtype, track
+    def __init__(self, lines, n, proj=2, con=1, dtype=np.complex128, track=True, fixed_dims=False):
+        self.lines, self.n, self.proj, self.con, self.dtype, self.track = lines, n, proj, con, dtype, track
+        self.fixed_dims = fixed_dims
 
     def _cands(self, Qm1, Qt, x, y, ell):
         if Qm1 is None:
@@ -215,6 +283,14 @@ class Lanczos:
         else:
             C = np.column_stack([Qm1, Qt, x[:, None] * Qt, y[:, None] * Qt])
         return C / ell[:, None]
+
+    def _windows(self, blocks):
+        if self.proj == 0:
+            return blocks, []
+        pw = blocks[-self.proj:]
+        rest = blocks[:-self.proj] if len(blocks) > self.proj else []
+        cw = rest[-self.con:] if (self.con and rest) else []
+        return pw, cw
 
     def run(self, x, y, w):
         dt = self.dtype
@@ -225,33 +301,56 @@ class Lanczos:
         t0 = time.perf_counter()
         q0 = np.ones((M, 1), dtype=dt) / np.sqrt(np.sum(w))
         blocks = [q0]
-        self.coef, self.defect, self.selfdef, self.gap = [], [], [], []
+        self.coef, self.defect, self.selfdef, self.gapR, self.gapN, self.dims = [], [], [], [], [], []
         for t in range(self.n):
             ell = line_vals(x, y, self.lines[t]).astype(dt)
             C = self._cands(blocks[t - 1] if t >= 1 else None, blocks[t], x, y, ell)
             d = 1 / np.sqrt(np.real(np.sum(w[:, None] * np.abs(C) ** 2, axis=0)))
             C = C * d
-            win = blocks if self.window == 0 else blocks[-self.window:]
-            Qw = np.column_stack(win)
-            G = np.zeros((Qw.shape[1], C.shape[1]), dtype=dt)
+            pw, cw = self._windows(blocks)
+            Qp = np.column_stack(pw)
+            G = np.zeros((Qp.shape[1], C.shape[1]), dtype=dt)
             for _ in range(2):
-                H = Qw.conj().T @ (w[:, None] * C)
-                C = C - Qw @ H
+                H = Qp.conj().T @ (w[:, None] * C)
+                C = C - Qp @ H
                 G = G + H
             k = t + 2
-            if dt == np.clongdouble:
-                Qn, Z, kept, rest = _pivoted_gs(C, w, k)
-                self.gap.append((kept.min() / kept.max(), rest / kept.max()))
+            if self.con == 0 and self.proj != 0 and self.fixed_dims:
+                # adversary's scheme: keep exactly t+2 leading directions of the projected remainder
+                if dt == np.clongdouble:
+                    Qn, Z, kept, rest = _pivoted_gs(C, w, k)
+                    self.gapR.append((kept.min() / kept.max(), rest / kept.max()))
+                else:
+                    U, S, Vh = np.linalg.svd(sw[:, None] * C, full_matrices=False)
+                    Qn = U[:, :k] / sw[:, None]
+                    Z = Vh[:k].conj().T / S[:k]
+                    self.gapR.append((S[k - 1] / S[0], S[k] / S[0] if len(S) > k else 0.0))
+                self.dims.append((C.shape[1], 0, k))
+                self.gapN.append((np.nan, np.nan))
             else:
-                U, S, Vh = np.linalg.svd(sw[:, None] * C, full_matrices=False)
-                Qn = U[:, :k] / sw[:, None]
-                Z = Vh[:k].conj().T / S[:k]
-                self.gap.append((S[k - 1] / S[0], S[k] / S[0] if len(S) > k else 0.0))
-            self.coef.append((d, G, Z, len(win)))
+                # remainder rank: threshold, clipped to [t+2, 2t+1] (the generic dimensions; the lower
+                # bound is dim W_{t+1}, the upper bound the generic rank after two projected blocks)
+                U, Zr, S = _orth_basis(C, w, sw, dt, rmax=2 * t + 1 if self.proj else None, rmin=k)
+                r = U.shape[1]
+                self.gapR.append((S[r - 1] / S[0], S[r] / S[0] if len(S) > r else 0.0))
+                if cw and r > k:
+                    Qc = np.column_stack(cw)
+                    N = Qc.conj().T @ (w[:, None] * U)
+                    V, s_con, s_null = _null_select(N, k, dt)       # exactly k = t+2 directions kept
+                    Qn = U @ V
+                    Z = Zr @ V
+                    self.gapN.append((float(s_con.min()) if len(s_con) else np.nan, float(s_null)))
+                    rN = len(s_con)
+                else:
+                    Qn, Z, rN = U[:, :k], Zr[:, :k], 0
+                    self.gapN.append((np.nan, np.nan))
+                self.dims.append((r, rN, Qn.shape[1]))
+            self.coef.append((d, G, Z, len(pw), len(cw)))
             if self.track:
                 Qall = np.column_stack(blocks)
                 self.defect.append(float(np.max(np.abs(Qall.conj().T @ (w[:, None] * Qn)))))
-                self.selfdef.append(float(np.max(np.abs(Qn.conj().T @ (w[:, None] * Qn) - np.eye(k)))))
+                kk = Qn.shape[1]
+                self.selfdef.append(float(np.max(np.abs(Qn.conj().T @ (w[:, None] * Qn) - np.eye(kk)))))
             blocks.append(Qn)
         self.Q = np.column_stack(blocks)
         self.blocks = [b.shape[1] for b in blocks]
@@ -268,12 +367,12 @@ class Lanczos:
         for t in range(self.n):
             ell = line_vals(x, y, self.lines[t]).astype(dt)
             C = self._cands(blocks[t - 1] if t >= 1 else None, blocks[t], x, y, ell)
-            d, G, Z, nwin = self.coef[t]
+            d, G, Z, nproj, ncon = self.coef[t]
             C = C * d
-            win = blocks if self.window == 0 else blocks[-self.window:]
-            Qw = np.column_stack(win)
-            assert Qw.shape[1] == G.shape[0]
-            C = C - Qw @ G
+            pw, cw = self._windows(blocks)
+            Qp = np.column_stack(pw)
+            assert Qp.shape[1] == G.shape[0]
+            C = C - Qp @ G
             blocks.append(C @ Z)
         return np.column_stack(blocks)
 
