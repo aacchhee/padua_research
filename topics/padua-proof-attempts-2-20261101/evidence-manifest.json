@@ -4,6 +4,7 @@
   "pins": {
     "part1_and_rules": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
     "part1_audit_arrived": "95279b833bca5967fcf47c1b71a56ff622185b4e",
+    "part1_main_sync_arrived": "93da3be26dbddf9ec2446af578fe8015bb4eeada",
     "part1_response_arrived": "7b8884a2f98518784ff3698dd2f3f9c49c9cdd62",
     "literature_index_update": "cf89b140530d5838bdb208a8c28f3e7aa676ace3",
     "current_main_and_rules": "e24b21fe43cdd090f6dfac269147e75185f04c5b",
@@ -112,6 +113,54 @@
       "git_blob": "876b91938a629286df68e3c7daa2ea1151ab73f6",
       "sha256": "c5a30a0922604ec2545233bc91d7a05efcac55ff424d236a8a9eed4907ecf466",
       "bytes": 16526
+    },
+    {
+      "source": "part1_main_sync_arrived",
+      "commit": "93da3be26dbddf9ec2446af578fe8015bb4eeada",
+      "path": "topics/padua-proof-attempts-20261101/LOG.md",
+      "git_blob": "5ea09a7d0601d3a4de44b6354d48c82e545ec01b",
+      "sha256": "9c271386ba8ae7c78d27936d0dce2aa795f6d2ecd02ba980757a0ab0b9e1ef41",
+      "bytes": 26128
+    },
+    {
+      "source": "part1_main_sync_arrived",
+      "commit": "93da3be26dbddf9ec2446af578fe8015bb4eeada",
+      "path": "topics/padua-proof-attempts-20261101/handoffs/01-integration-preparation.md",
+      "git_blob": "e309168a6c191298ef725747fed7cb2ca98b4cce",
+      "sha256": "b0e7c887d8af3461cbb7ffde01e939c2b78c4a6330f7e1f39fbb6be4650e6ec3",
+      "bytes": 3776
+    },
+    {
+      "source": "part1_main_sync_arrived",
+      "commit": "93da3be26dbddf9ec2446af578fe8015bb4eeada",
+      "path": "topics/padua-proof-attempts-20261101/main-sync.json",
+      "git_blob": "a13c361ee241570c5cea9a5d55500eac4b127854",
+      "sha256": "1038a59589e083748c488cdc2d90777d12ea93759583092b747f4cb51b456c8e",
+      "bytes": 3711
+    },
+    {
+      "source": "part1_main_sync_arrived",
+      "commit": "93da3be26dbddf9ec2446af578fe8015bb4eeada",
+      "path": "topics/padua-proof-attempts-20261101/pr-prep.md",
+      "git_blob": "4c291ef491b56dc86a3877618920b0bbf5f3abf9",
+      "sha256": "6c2f7418edb22e93cb2ba7158f1e0d9e989afd17f9a235d07c076a4c10220fc5",
+      "bytes": 6314
+    },
+    {
+      "source": "part1_main_sync_arrived",
+      "commit": "93da3be26dbddf9ec2446af578fe8015bb4eeada",
+      "path": "topics/padua-proof-attempts-20261101/proposed-record-changes.md",
+      "git_blob": "a7af407c6eed7c7905dd99847f429724b2253844",
+      "sha256": "411045317487328022a75f3be1dd166a676a44ab412adfb62a3db1d9fc6f37ed",
+      "bytes": 19449
+    },
+    {
+      "source": "part1_main_sync_arrived",
+      "commit": "93da3be26dbddf9ec2446af578fe8015bb4eeada",
+      "path": "topics/padua-proof-attempts-20261101/registry-integrity.json",
+      "git_blob": "177cbf780e0503f1f951e26f05787dbd6a63aedd",
+      "sha256": "d147656f1cafdc9624eaaf98bbc0f77017975b1e62ec5360c1dd220baa44bd62",
+      "bytes": 4056
     },
     {
       "source": "part1_audit_arrived",
@@ -1605,8 +1654,8 @@
   "outputs": [
     {
       "path": "topics/padua-proof-attempts-2-20261101/LOG.md",
-      "sha256": "f0bf16528302f39d6697637d8d0ef8e542837f34b1d8e4e2bbdc2c3fea5a1f01",
-      "bytes": 33331
+      "sha256": "becd6f4d8f2afbbf1e30bec9977616409fafb3c53888a6b2f9da17e2a7718cf6",
+      "bytes": 34788
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/attempts/T-A2.md",
@@ -1785,8 +1834,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/code/evidence_manifest.py",
-      "sha256": "417c6a623f58afcb66829f70746b181ef51b7fd4fd2896011306ba9d077a3f2b",
-      "bytes": 6206
+      "sha256": "9b4b2f77db817dce7c7b50eb04098442b2f77b12e5af07bcb57c80d812f0f77a",
+      "bytes": 6534
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/handoffs/01-work.md",
@@ -1860,8 +1909,8 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/inputs-review.md",
-      "sha256": "8ece35e2b09b97e88cbc0e2ec2a065770bf65a3e84bdb4085eca0eaa5be9ec32",
-      "bytes": 13379
+      "sha256": "597430e51e948af71d47a73f2b7dce47c7355ea2a9bc41f1da18d5a9fe085682",
+      "bytes": 13922
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/outputs/a2_exact_check.json",

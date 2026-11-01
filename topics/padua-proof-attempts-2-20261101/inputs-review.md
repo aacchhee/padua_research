@@ -192,3 +192,7 @@ Main e24b21fe43cdd090f6dfac269147e75185f04c5b changed AGENTS/WORKFLOW handoff an
 ## Literature-index boundary refresh
 
 Main cf89b140530d5838bdb208a8c28f3e7aa676ace3 changed required INDEX/CORPUS only in MZ source comparisons. Full index/corpus diff read: no Padua source/rule/computation change. Prior impact recorded in LOG before merge; source pins retain all original inputs plus this two-file update. No arithmetic rerun is required by these unrelated source-coverage edits.
+
+## Part1 administrative synchronization
+
+Part1 advanced93da3be26dbddf9ec2446af578fe8015bb4eeada. Six administrative paths changed; no theory/code/scientific output/audit/response changed versus7b8884a (direct Git comparison). Its same-main import matches current rules/state/INDEX. Read relevant full diffs/receipts/handoff and logged impact before clean merge. Preserve scientific initial/audit/response provenance; separately pin the six sync administrative inputs. No arithmetic rerun follows from these unchanged scientific dependencies.

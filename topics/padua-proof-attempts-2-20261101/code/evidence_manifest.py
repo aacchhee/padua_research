@@ -14,6 +14,7 @@ TOPIC = "topics/padua-proof-attempts-2-20261101"
 PINS = {
     "part1_and_rules": "a09d910ae7d5526b1e216066421a0bee7fc20da4",
     "part1_audit_arrived": "95279b833bca5967fcf47c1b71a56ff622185b4e",
+    "part1_main_sync_arrived": "93da3be26dbddf9ec2446af578fe8015bb4eeada",
     "part1_response_arrived": "7b8884a2f98518784ff3698dd2f3f9c49c9cdd62",
     "literature_index_update": "cf89b140530d5838bdb208a8c28f3e7aa676ace3",
     "current_main_and_rules": "e24b21fe43cdd090f6dfac269147e75185f04c5b",
@@ -54,6 +55,10 @@ def main():
                          PINS["part1_audit_arrived"], PINS["part1_response_arrived"],
                          "--", P1).decode().splitlines()
     add("part1_response_arrived", response_paths)
+    sync_paths = git("diff", "--name-only", "--diff-filter=ACMRT",
+                     PINS["part1_response_arrived"], PINS["part1_main_sync_arrived"],
+                     "--", P1).decode().splitlines()
+    add("part1_main_sync_arrived", sync_paths)
     pg_paths = tree(PINS["programme"])
     add("programme", [p for p in pg_paths if
         p in [PG + x for x in ["OPEN_TARGETS.md", "checks/decisive-gen4-2.md",
