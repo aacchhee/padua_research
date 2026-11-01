@@ -1,8 +1,8 @@
 # Second proof campaign — development report
 
-Stage: **PR (preparation)**. Claude Opus 5.5 xhigh [audit-01](audit-01.md) **accepted the stated scope**, with minor findings F1–F8 answered in [response-01](response-01.md). The PR stays draft until preparation is complete. Supplementary Codex checks are separate from that audit.
+Stage: **PR — prepared for AC review**. Claude Opus 5.5 xhigh [audit-01](audit-01.md) **accepted the stated scope**, with minor findings F1–F8 answered in [response-01](response-01.md). Final IDs and the authorized shared/results updates are applied; only AC merges. Supplementary Codex checks are separate from that audit.
 
-Branch: `codex/padua-proof-attempts-2-20261101`; [draft PR12](https://github.com/aacchhee/padua_research/pull/12). The accepted scientific candidate is `4265bb94f987ce77d89cd5e15a8c435cbd1411d0`; the audit output is `62fc6d816f2407c445d58d47a7c997791cab9045`. The response preserves claims, proof steps, checkers and certificates, with only the audit-requested clarifications.
+Branch: `codex/padua-proof-attempts-2-20261101`; [PR12](https://github.com/aacchhee/padua_research/pull/12). The accepted scientific candidate is `4265bb94f987ce77d89cd5e15a8c435cbd1411d0`; the audit output is `62fc6d816f2407c445d58d47a7c997791cab9045`. The response preserves claims, proof steps, checkers and certificates, with only the audit-requested clarifications.
 
 ## Outcomes
 
@@ -38,10 +38,12 @@ All essential accepted certificates/global pairs and degree-eight lower-bound wi
 
 Remaining scope: exact n8 completeness/global; all-n full-square A4 and historical/global runner-up identification; B1's other pole classes, individual stored taper parameters and numerical stability. B3 refutes its specified count, not other F or reference existence. Optional B4/B7 were not developed.
 
-Original pins: Part1 `a09d910ae7d5526b1e216066421a0bee7fc20da4`; programme `9bd14a6d2c4da69139a10107d8a787f2be0c5c9e`; current main `28aaa20861d08074b77efc74eaef75cdcb36234d`; rules adopted at `d8b878b348a94575e7753e5a756d969d41d5bca8`. The required Part1 dependency label “audit pending” is historical: Part1 audit accepted, dispositions completed and PR9 merged; Part2 audit-01 is accepted; response-01 records the minor dispositions.
+Original pins: Part1 `a09d910ae7d5526b1e216066421a0bee7fc20da4`; programme `9bd14a6d2c4da69139a10107d8a787f2be0c5c9e`; current main `67bd07c0867d8d49eb104942237d7f51a7d9f77d` (merged PR15); rules adopted at `d8b878b348a94575e7753e5a756d969d41d5bca8`. The required Part1 dependency label “audit pending” is historical: Part1 audit accepted, dispositions completed and PR9 merged; Part2 audit-01 is accepted; response-01 records the minor dispositions.
 
-All authored changes stay in this topic; no final IDs/shared edits/RESULTS.md write. The repository-results summary is a literal proposal in [proposed-record-changes.md](proposed-record-changes.md), honoring the user's narrower scope. [LOG](LOG.md) preserves the original intended Windows entry as superseded history; it has been removed from active work and must not be written.
+AC subsequently authorized final IDs and shared updates for PR12. PD-T156–197, PD-N072–073 and IDEA-286–311 are assigned; the approved source/registry/literature/results changes are applied. [Preparation](pr-prep.md) and [exact map](preparation/final-id-map.json) record scope and checks; the original literal proposals remain provenance. [LOG](LOG.md) preserves the original intended Windows entry as superseded history; it has been removed from active work and must not be written.
 
-Next: topic-local PR preparation under handoff04. `Codex (gpt-6.1-sol medium): Continue codex/padua-proof-attempts-2-20261101.`
+Next: AC review/squash merge, then Codex post-merge verification under handoff06. `Codex (gpt-6.1-sol medium): Continue codex/padua-proof-attempts-2-20261101.`
 
 Audit residual risk: n4–n7 verifiers share a code lineage, so same-code reruns do not eliminate common-mode defects. Claude reviewed the reduction/core and later diffs, ran mutation probes and used an independent degree-eight witness verifier; no defect was found. The declared exact-arithmetic trusted base and all stated scope limits remain. No new scientific execution occurred in the editorial response.
+
+Final registration: 42 theory and two negative records plus26retained candidates; permanent gaps PD-T198–205, PD-N074–077, IDEA-312–315. No new LIT range. Complete source split/crosswalk and measured-status preservation checks pass; no mathematical content, code, evidence or auditor record changes.

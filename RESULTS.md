@@ -53,7 +53,7 @@ One section per topic. Each topic replaces only its own section, from its own `r
 ## padua-proof-attempts-2-20261101
 
 
-Stage PR (prepared for AC review); Claude Opus 5.5 xhigh audit-01 accepted for the stated scope, with minor findings answered in response-01. [Draft PR12](https://github.com/aacchhee/padua_research/pull/12) is prepared after merged PR15; only AC merges.
+Stage PR (prepared for AC review); Claude Opus 5.5 xhigh audit-01 accepted for the stated scope, with minor findings answered in response-01. [PR12](https://github.com/aacchhee/padua_research/pull/12) is prepared after merged PR15; only AC merges.
 
 - A2 PROVED: requested corner b coefficient, explicit absolute remainder ≤ 68; local results 01–04.
 - A5 certification item PARTIAL by degree: closed counts 15, 27, 25, 41, 50 for n = 3–7 and separate corner-only globals. Degree 8 has at least 44 strict interior maxima; exact counts/global remain OPEN. PD-T100's measured-search status stays MEASURED.

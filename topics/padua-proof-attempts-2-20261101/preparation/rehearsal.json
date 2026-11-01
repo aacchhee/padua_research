@@ -1,0 +1,12 @@
+{
+ "purpose": "mechanical squash rehearsal; no mathematical execution",
+ "base": "67bd07c0867d8d49eb104942237d7f51a7d9f77d",
+ "candidate": "533de502676a7a75dcdbeee195546a2d6f9c42e3",
+ "staged_index": false,
+ "expected_tree": "077c815d1954e8eb01bbc285d5ee18404809baf3",
+ "actual_tree": "077c815d1954e8eb01bbc285d5ee18404809baf3",
+ "main_unchanged": true,
+ "root_branch_unchanged": true,
+ "disposable_worktree_and_branch_removed": true,
+ "passed": true
+}

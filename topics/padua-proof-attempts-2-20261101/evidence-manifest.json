@@ -2427,8 +2427,8 @@
   "outputs": [
     {
       "path": "topics/padua-proof-attempts-2-20261101/LOG.md",
-      "sha256": "10bfc719914b1bebdec549df8997858c80f567e8bd855419392bd03b5768a774",
-      "bytes": 111245
+      "sha256": "1bf5b169dad3efc5559692abc28375fe6c48188e2ff374bf6f25af129992de75",
+      "bytes": 112085
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/a4-input-preparation.md",
@@ -4637,8 +4637,13 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/plan.md",
-      "sha256": "2cd2647ef5ed3dbb18a24bc74feccb22f415a36f8bdc451b4086c1b1522cc92f",
-      "bytes": 4285
+      "sha256": "4e58f8c8a13b8999f7c2683c5484bb215402487fe65131a34bdb38293a7852ff",
+      "bytes": 4303
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/pr-prep.md",
+      "sha256": "42f52cb1a2c02a3cf769c76c87607406262704ce49d5094ffc430ed13bddea79",
+      "bytes": 7762
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/preparation/final-id-map.json",
@@ -4649,6 +4654,11 @@
       "path": "topics/padua-proof-attempts-2-20261101/preparation/ideas-registration.md",
       "sha256": "9a7b74fa5ef44d3eefe92a069b394ce1ba284295a2b41f680c5fa4e8f2e9ed4a",
       "bytes": 22973
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/preparation/mechanical-review.md",
+      "sha256": "cbfeed475db78f0ad0c2050a6ba26ec0f73c5698c72515f288753473ff6c5e7b",
+      "bytes": 3315
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/preparation/pr-snapshot.json",
@@ -4664,6 +4674,16 @@
       "path": "topics/padua-proof-attempts-2-20261101/preparation/prepare.py",
       "sha256": "707d39bcf1042a298b4ec9d7b030bcbf8f50a87cffad276d69a231e9b4fecb51",
       "bytes": 26496
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/preparation/rehearsal.json",
+      "sha256": "5cc62ee72e4da015a4fef8afe3a85402e5c11bbda4220d65c47d48759137f9fd",
+      "bytes": 453
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/preparation/rehearse.py",
+      "sha256": "75718585efc57f872c8e4c2b3b6fb6ba8aa21e49fb0ca85e5a7b222136f5dfea",
+      "bytes": 2417
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/preparation/reservation-scan.json",
@@ -4682,18 +4702,18 @@
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/preparation/validation.json",
-      "sha256": "e7fbc54fbb50210c4b56b7d8b6b61ae808f5aa6abd427ab17cc62672464dc0a6",
+      "sha256": "f860bcfdaf1ff5f27504a9932416f545e6500ed7b467a536b4af8a64615fd1bb",
       "bytes": 4086
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/proposed-record-changes.md",
-      "sha256": "6fa72cd276741193fb1ae99f50cd40a911a349aeb1fc4aa514433335bd278869",
-      "bytes": 34098
+      "sha256": "4a3e0a6aac88407eba5b7bb918ef7f829bb9232894be8a8fd44de7c4ef85ae77",
+      "bytes": 34413
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/report.md",
-      "sha256": "0bdcce43e7330b75c8ea7e148aadcce6675f9d723dc4f04a33a964539b881e34",
-      "bytes": 6432
+      "sha256": "2629aa4f6723883dc3bee15d48e9994f7c8051cce4003130eb49a516c771bdec",
+      "bytes": 6933
     },
     {
       "path": "topics/padua-proof-attempts-2-20261101/response-01.md",

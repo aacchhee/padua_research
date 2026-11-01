@@ -1,6 +1,6 @@
 # Proposed upstream record changes — literal old → new blocks
 
-These proposals are not applied to shared files. All newly authored writes remain inside this topic; local Part2 IDs only, **no range**. Claude audit-01 accepted the scientific candidate 4265bb94f987ce77d89cd5e15a8c435cbd1411d0; response-01 answers its minor findings. Application requires authorized integration.
+These ten approved proposals are now applied in full PR12 preparation under AC's explicit authorization for final IDs and shared updates. The earlier topic-only deferral is superseded. Final IDs: PD-T156–197, PD-N072–073, IDEA-286–311; exact aliases/mapping are in preparation/final-id-map.json. Claude audit-01 accepted the scientific candidate 4265bb94f987ce77d89cd5e15a8c435cbd1411d0; response-01 answers its minor findings. The approved integration is recorded in pr-prep.md; Old/New text below remains the literal pre-application provenance.
 
 Each Old block is preserved verbatim at its stated pin and is also contained in its New block, except that the absent-file proposal has empty Old content. Historical aliases in those preserved paragraphs remain historical; dated additions use existing final IDs. Part2 local PD-T?/PD-N? IDs are distinct from source PD-T098/099/100 and PD-N039/040. The user-required Part1 audit-pending label stays in topic dependency records; shared additions cite accepted PD-T101.
 
@@ -248,7 +248,7 @@ Validation: Target absent at the pin; Old is empty new-file content.
 
 ## Complete PR-preparation checklist — proposals only
 
-These are the integration obligations answering F3. They authorize no shared write or allocation in this response. At a later authorized integration, refresh main and active PRs, recheck literal blocks and reserve fresh IDs under WORKFLOW before assigning them. There are currently 42 local PD-T files and two local PD-N files; count the final scope again before reserving. Do not assume an unused range is free. Reserve IDEA IDs for retained candidates when authorized. No range is reserved here.
+These integration obligations answered F3 and are now completed under AC's subsequent explicit preparation authorization. The following wording retains the original checklist for provenance. At a later authorized integration, refresh main and active PRs, recheck literal blocks and reserve fresh IDs under WORKFLOW before assigning them. There are currently 42 local PD-T files and two local PD-N files; count the final scope again before reserving. Do not assume an unused range is free. Reserve IDEA IDs for retained candidates when authorized. No range is reserved here.
 
 | Destination / existing record | Required dated addition or mapping |
 |---|---|
