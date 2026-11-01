@@ -1,0 +1,17 @@
+{
+  "auditor": "gpt-6-astra xhigh",
+  "rules_sha": "d36722823441dc40c6e19d69a174459348dd309c",
+  "developer_output_sha256": "b85b06fa9b3317d6ce84f9d354626b74edad4e8f9885341ecad39166d4fd6d40",
+  "auditor_output_sha256": "1511bfeb982f3e12b904acf151d9a586e6a65ee776dc464a12789a955ead4976",
+  "runner_sha256": "fe88a16d2ac08df96dc5e18a224ac1b0d46d5cec4310cc86fff0f7fda1aa44ac",
+  "source_hashes_identical": true,
+  "numeric_values_compared": 637,
+  "max_absolute_numeric_difference": 0.0,
+  "tolerance": {
+    "rtol": 1e-11,
+    "atol": 1e-12
+  },
+  "normalization": "compare results only; replace elapsed [Ns] in stdout by [TIMING]; metadata timestamps, runtime and output argument differ",
+  "failures": [],
+  "outcome": "PASS"
+}

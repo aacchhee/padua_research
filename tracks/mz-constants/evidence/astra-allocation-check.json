@@ -1,0 +1,310 @@
+{
+  "scientific_checkpoint": "2dc9264333cdf8372947448f4b9bdd3bb577d0e1",
+  "method": "reverse final IDs; remove one exact identical review banner per theory; restore only3file-specific dependency shorthand expansions; compare original SHA256",
+  "banner_removed": "Review update, 2026-10-31: final ID allocation and scoped independent Astra review are complete; see topics/mz-constants/independent-astra-01.md and ID_CROSSWALK.md. The original development-stage pending-review wording below is historical. Required Claude audit and unresolved literature/novelty coverage remain PENDING. This administrative update changes no mathematical claim or proof.",
+  "files": [
+    {
+      "path": "state/IDEAS.md",
+      "before_sha256": "8faa713969b420b0fd1136e87af0086715a01435df52a8e17322a6cc5fdac912",
+      "current_sha256": "ea709a469fbc771adf422811c2a586101c983c95158c2fd4a17297b45a0fa4a1",
+      "administrative_banner_removed": 0,
+      "normalized_sha256": "d994deba9709ae0f840e8ed19ce4ef4384baec0eee36e82e9ee5376337c6e006",
+      "analytic_bytes_preserved": false
+    },
+    {
+      "path": "literature/records/mz-quadrature-aliasing-screen.md",
+      "before_sha256": "658b4839cc2e041e13e95e3d085f16cbde24e93b2bfcc3c17b09a9931de588f9",
+      "current_sha256": "1321793123ef83890fa7dfbc1cecc14c754a350c6cb809d47017d1e87d3ccbf2",
+      "administrative_banner_removed": 0,
+      "normalized_sha256": "658b4839cc2e041e13e95e3d085f16cbde24e93b2bfcc3c17b09a9931de588f9",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "literature/records/mz-an-sommariva-vianello-2026.md",
+      "before_sha256": "48c3fc36116c824b11c8224be72a589227e74443c95ce7ce492146ca6138fa5b",
+      "current_sha256": "0ab57a7f40d6319690455c2e4974f466e24e045249679d0536472876af79a4a4",
+      "administrative_banner_removed": 0,
+      "normalized_sha256": "19219ff707e2cc451e2446b5308a5c61c2c1bf3691da1824d37ff415d7cce899",
+      "analytic_bytes_preserved": false
+    },
+    {
+      "path": "literature/records/mz-widom-1966-screen.md",
+      "before_sha256": "30e44f35a1fbad8ca49dde9a5d292906c9cd871099334157e620648a6d8d1bf5",
+      "current_sha256": "232ec883e16b52de73081ff10baa4356971ec6549bd87a1a948ad3c4a31c680e",
+      "administrative_banner_removed": 0,
+      "normalized_sha256": "30e44f35a1fbad8ca49dde9a5d292906c9cd871099334157e620648a6d8d1bf5",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "literature/records/mz-passi-cv-2026.md",
+      "before_sha256": "fa073d0921ecf3d147b9a3af8eafc3066606c3597bd226a71faa91493732c45f",
+      "current_sha256": "bcdf0db38572b370486888616409f707f30ac834e5d038836899fdda801f46cc",
+      "administrative_banner_removed": 0,
+      "normalized_sha256": "fa073d0921ecf3d147b9a3af8eafc3066606c3597bd226a71faa91493732c45f",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "literature/records/mz-don-gottlieb-1994.md",
+      "before_sha256": "67ad88c625428dc5fb88d43ef3b19df72007c8043f0f53b245c358c797c174fd",
+      "current_sha256": "e971462160001ca066c38969c31b230ac1a0eebda7ec2fe55323ff0c40856540",
+      "administrative_banner_removed": 0,
+      "normalized_sha256": "67ad88c625428dc5fb88d43ef3b19df72007c8043f0f53b245c358c797c174fd",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "literature/records/mz-sloan-smith-1978-1980.md",
+      "before_sha256": "2b3427b9ae2d74df98341d44286776ed1a284bb26cf9e9a218dcded66099869d",
+      "current_sha256": "00c4b09510f3a40d284edc2374b88e49558df728ebdf7cf305dcc84b76211994",
+      "administrative_banner_removed": 0,
+      "normalized_sha256": "2b3427b9ae2d74df98341d44286776ed1a284bb26cf9e9a218dcded66099869d",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "literature/records/mz-an-wu-2022.md",
+      "before_sha256": "99139ad39c3c4f0d9f7d5a1223960877c5d49a76e4653e51cbc4f51c77de6781",
+      "current_sha256": "78c03e8569a4dc64ebef571e6ce2baea72cca875cbc072d4f881ba9479fc2c5d",
+      "administrative_banner_removed": 0,
+      "normalized_sha256": "99139ad39c3c4f0d9f7d5a1223960877c5d49a76e4653e51cbc4f51c77de6781",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "literature/records/mz-mastroianni-milovanovic-2008.md",
+      "before_sha256": "1342d052a1cc8c8e333c542a469e30c9a5f3e81feec77e6555fa935929c10005",
+      "current_sha256": "51d22129385c8f4ddfa563fac804a3e6176939af2470557064362645d5c284ee",
+      "administrative_banner_removed": 0,
+      "normalized_sha256": "1342d052a1cc8c8e333c542a469e30c9a5f3e81feec77e6555fa935929c10005",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "literature/records/mz-input-reports.md",
+      "before_sha256": "11052578969d1b2478e451bdfe3902c03ba82df5013d279b7a7e759f985803e3",
+      "current_sha256": "e105a2f6c1d1139fbb5d7af2da5f537c1df7959653bfe0a3802911a659961bea",
+      "administrative_banner_removed": 0,
+      "normalized_sha256": "11052578969d1b2478e451bdfe3902c03ba82df5013d279b7a7e759f985803e3",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "literature/records/mz-classical-mz-screen.md",
+      "before_sha256": "3f90cf4c7845b738845edc3da64bff9f62175a9842af166b31f95081b7cb9d53",
+      "current_sha256": "07b8b13565170c3e85a5368977c54ea2125e75e0bea0fea7639f8187dccce17c",
+      "administrative_banner_removed": 0,
+      "normalized_sha256": "3f90cf4c7845b738845edc3da64bff9f62175a9842af166b31f95081b7cb9d53",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-sharp-constant-open.md",
+      "before_sha256": "9d6c7a2c674c351c04f0fec7325fcdd2dbbc676aefd47997a69e36e1701e606c",
+      "current_sha256": "1a0310059d03746be25de5114c8ddb87fd113c400c12db2e9d7140ad56cabe41",
+      "administrative_banner_removed": 1,
+      "normalized_sha256": "9d6c7a2c674c351c04f0fec7325fcdd2dbbc676aefd47997a69e36e1701e606c",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/open-upper-limit.md",
+      "before_sha256": "e4e404c0bc48299c2828adcec4d2ff26b180e5828cccc0f64f6917b9dbdbbdc9",
+      "current_sha256": "43e3e91c498eb60f60d04dc23d67b08f67a41f7594c3129837d3267067ca51e7",
+      "administrative_banner_removed": 1,
+      "normalized_sha256": "e4e404c0bc48299c2828adcec4d2ff26b180e5828cccc0f64f6917b9dbdbbdc9",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-l1-obstruction.md",
+      "before_sha256": "47c6a3339168d7fb5d67ed03b49f8cc196e572c0fbe2175a0fb1f59e9a87e285",
+      "current_sha256": "49e90b2d0918b9bb4d10cba7332c4ed234cbffdcb43773ab30eedc9c82ea34be",
+      "administrative_banner_removed": 1,
+      "normalized_sha256": "47c6a3339168d7fb5d67ed03b49f8cc196e572c0fbe2175a0fb1f59e9a87e285",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-parity-upper.md",
+      "before_sha256": "6513c1d598fd8adb4cc33e40fc9f7f31502c3981e7bed8a70fb66115e815605c",
+      "current_sha256": "790e8fedff639c11f979a743356d1d8617ef3bbed367a2ec42bc740c85a6b3e9",
+      "administrative_banner_removed": 1,
+      "normalized_sha256": "6513c1d598fd8adb4cc33e40fc9f7f31502c3981e7bed8a70fb66115e815605c",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-parity-obstruction.md",
+      "before_sha256": "0beac81ecf6c6db5f82bc5be8e48d56e0babb44b15263f4dcb647f55f0e1682b",
+      "current_sha256": "92a25fa5e9ee2336bef5da4b1f241a20f40c800825ee39e1bf1c8bdc9690d6f2",
+      "administrative_banner_removed": 1,
+      "normalized_sha256": "0beac81ecf6c6db5f82bc5be8e48d56e0babb44b15263f4dcb647f55f0e1682b",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/m1-failed-diagonal-dominance.md",
+      "before_sha256": "ed5d6e475ec2ea6ffd55e53f6f5ebe5ee8ec9ae28eb4f712074bfd74697896c1",
+      "current_sha256": "67c844c63bdc32b0648238c3bbb352c333bb59360bf59e480fb7eab5000ffea5",
+      "administrative_banner_removed": 1,
+      "normalized_sha256": "ed5d6e475ec2ea6ffd55e53f6f5ebe5ee8ec9ae28eb4f712074bfd74697896c1",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/m3-hyperinterpolation.md",
+      "before_sha256": "4d19ba82d096aa316c4801887740dd0ad537c6a0293eeed6075128c92e2a81d2",
+      "current_sha256": "65e251fe977dec67dbe5582d75666e086445ad0dd364ba857902bc360f0f012d",
+      "administrative_banner_removed": 1,
+      "normalized_sha256": "4d19ba82d096aa316c4801887740dd0ad537c6a0293eeed6075128c92e2a81d2",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/m1-cc-foundation.md",
+      "before_sha256": "77e58ff93b916d169c6013ebf5085dc55d406ebdce277a09385efdce5804abf3",
+      "current_sha256": "ce2731b5c585714b1e4011850ffd021b120dbec3d50f4fc2eff7eded0ab46d8e",
+      "administrative_banner_removed": 1,
+      "normalized_sha256": "77e58ff93b916d169c6013ebf5085dc55d406ebdce277a09385efdce5804abf3",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/reproduced-spectra.md",
+      "before_sha256": "cc0dea3c09c8ff3aea539388c573594cce4cb1c53d64e04cf0c41657487d62f5",
+      "current_sha256": "4f5d7452aa65f4f15f8eb0d773ec4469d3a003d1b1e3660f6ac6d8c7eae7a4a4",
+      "administrative_banner_removed": 1,
+      "normalized_sha256": "cc0dea3c09c8ff3aea539388c573594cce4cb1c53d64e04cf0c41657487d62f5",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-u-witness.md",
+      "before_sha256": "4413095f8d9bb0c86426fc7fba17f9d6e6824b00393af5ec93dea8f14625b024",
+      "current_sha256": "6333fb24fb4a3c7738684bd40d969e3be069b6c32126fa4691dfb758b11021c8",
+      "administrative_banner_removed": 1,
+      "normalized_sha256": "4413095f8d9bb0c86426fc7fba17f9d6e6824b00393af5ec93dea8f14625b024",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/m1-full-degree-obstruction.md",
+      "before_sha256": "628e0f0a10df9e9f6f253d6d31f3a689f84eb9dcefe59847e6dc26c34744efd6",
+      "current_sha256": "e6767fec1e2ddbd1ab27e621393fb0e714b469a35a0f13465924e16d7d79467c",
+      "administrative_banner_removed": 1,
+      "normalized_sha256": "628e0f0a10df9e9f6f253d6d31f3a689f84eb9dcefe59847e6dc26c34744efd6",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/m1-failed-psd.md",
+      "before_sha256": "71fe71fe4ad49b059538897b1e2d77688bae132b00e683ac09db2360b8a7534d",
+      "current_sha256": "f4ceee54f7f6b7c033e7dec70a312583a794836c4a72c4abc6252064860650ae",
+      "administrative_banner_removed": 1,
+      "normalized_sha256": "71fe71fe4ad49b059538897b1e2d77688bae132b00e683ac09db2360b8a7534d",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/m1-coefficient-floor.md",
+      "before_sha256": "60d780befe615321e3a249550c32e7e1e644b258b45933afd24fbfce0ca42893",
+      "current_sha256": "9ffdbb1ffc2ca4337f7daa76c41ca8391ae8b18fa8b8f3630e63299597d68a5d",
+      "administrative_banner_removed": 1,
+      "normalized_sha256": "60d780befe615321e3a249550c32e7e1e644b258b45933afd24fbfce0ca42893",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/m1-upper-bound.md",
+      "before_sha256": "ef798918a10befc52fb72c64443942b87a97d59bc1b85424db88f09099122514",
+      "current_sha256": "e7421bfcec83b89673142887f66befdb6ddd4c439bdcffb277e8df71e59272cd",
+      "administrative_banner_removed": 1,
+      "normalized_sha256": "ef798918a10befc52fb72c64443942b87a97d59bc1b85424db88f09099122514",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/m3-uniform-eta.md",
+      "before_sha256": "7dc112e74bbf992383b43e8f92f26c94aca27d745b7ce8c165738be55bcab44c",
+      "current_sha256": "9d774f48e914c4c96f7270a95d2f1ea0d48c02b813308d504b647be25af71ea3",
+      "administrative_banner_removed": 1,
+      "normalized_sha256": "7dc112e74bbf992383b43e8f92f26c94aca27d745b7ce8c165738be55bcab44c",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/open-padua-target.md",
+      "before_sha256": "2ca00c885d5e181555381137fbb4d3e17d3e34220a4a28445bf90ee1a5dcd2bd",
+      "current_sha256": "5e488f604a14aab9e30c52b8cb7ce6fc5e0d68f34ad71454620c5461c9996b81",
+      "administrative_banner_removed": 1,
+      "normalized_sha256": "2ca00c885d5e181555381137fbb4d3e17d3e34220a4a28445bf90ee1a5dcd2bd",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-eta-counterexample.md",
+      "before_sha256": "0814bf8bad091de72398051fb0e67674f6a59cc1cc62bb830225dda0e6ebd1dc",
+      "current_sha256": "2f5ec4c600d5913d2a0f6664a39928b737e1286bb79f270c0144dbc40162e70f",
+      "administrative_banner_removed": 1,
+      "normalized_sha256": "0814bf8bad091de72398051fb0e67674f6a59cc1cc62bb830225dda0e6ebd1dc",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/m3-lower-ratio.md",
+      "before_sha256": "2f99dac17bf276a5741ccf034fe353b6bd44a7555ee1a5192caa04281b795503",
+      "current_sha256": "4aa51f3d66cb3a443cdb9990c4114c5560d4d28949849d08a60a0190ffb0d083",
+      "administrative_banner_removed": 1,
+      "normalized_sha256": "2f99dac17bf276a5741ccf034fe353b6bd44a7555ee1a5192caa04281b795503",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-cardinal-lower.md",
+      "before_sha256": "76da1cbc0c88867eaf837f2ae2a9d3bc2112d376af4effaba5b5af18f3259f45",
+      "current_sha256": "fbf8846a40c94115defd5db4f3d05121669b9b3f323511f2321ff84229c68dc1",
+      "administrative_banner_removed": 1,
+      "normalized_sha256": "76da1cbc0c88867eaf837f2ae2a9d3bc2112d376af4effaba5b5af18f3259f45",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/m2-padua-marginal.md",
+      "before_sha256": "df4e67df2b3bcf0929375d6d2216d3ea04490a309b93dab356810120e70a0f90",
+      "current_sha256": "4fcf5cee66a389341d2d55e830df66ad07554d9ccef6abdc1ce9b33895334850",
+      "administrative_banner_removed": 1,
+      "normalized_sha256": "df4e67df2b3bcf0929375d6d2216d3ea04490a309b93dab356810120e70a0f90",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "tracks/mz-constants/theory/m3-upper-ratio.md",
+      "before_sha256": "95139656c243842cb4a23807e7b63123b7e560420af2408356b40774fe4fcda7",
+      "current_sha256": "3934f775aae3f7b962d1acce59b71cf1fb80e3edff1742b5073e5988d45281f5",
+      "administrative_banner_removed": 1,
+      "normalized_sha256": "95139656c243842cb4a23807e7b63123b7e560420af2408356b40774fe4fcda7",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "topics/mz-constants/directions/M3/IDEAS.md",
+      "before_sha256": "e7f019c7e50458db05302e1b023b7ef3b13b239523734e6e2c8e31a8fb7fa1b5",
+      "current_sha256": "032a443bf5b2bb4dbbb6d751820f2255e5d3d0238d584b61d2848f1a1bd8a378",
+      "administrative_banner_removed": 0,
+      "normalized_sha256": "e7f019c7e50458db05302e1b023b7ef3b13b239523734e6e2c8e31a8fb7fa1b5",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "topics/mz-constants/directions/M3/RUNS.md",
+      "before_sha256": "102d80a21a72b191cc3d20cc7c02728d77f2e928d14e555502712e6dc29e90c5",
+      "current_sha256": "11ef2d68a6a7a8f0ca6e82f9530b4dccdf2a8250c8256b69bf3a61249d09b712",
+      "administrative_banner_removed": 0,
+      "normalized_sha256": "102d80a21a72b191cc3d20cc7c02728d77f2e928d14e555502712e6dc29e90c5",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "topics/mz-constants/directions/M1/IDEAS.md",
+      "before_sha256": "25a97da1e9398e308c701fa27f8f84090b054bad08542c513aabda3acdebf69f",
+      "current_sha256": "524fa0f422318da86bc64f415d28ad5d8574c1be75021039cddf89048a0c06e6",
+      "administrative_banner_removed": 0,
+      "normalized_sha256": "25a97da1e9398e308c701fa27f8f84090b054bad08542c513aabda3acdebf69f",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "topics/mz-constants/directions/M2/candidates.md",
+      "before_sha256": "f5bb1210b058616ccaccc702c6f3f6074e935831bc8232150cc6c7ff7ff39dcc",
+      "current_sha256": "691c9dd15362f1d71cbbeac86c69ff9c07ac1bd8642dfc377502d59881dc9d30",
+      "administrative_banner_removed": 0,
+      "normalized_sha256": "f5bb1210b058616ccaccc702c6f3f6074e935831bc8232150cc6c7ff7ff39dcc",
+      "analytic_bytes_preserved": true
+    },
+    {
+      "path": "topics/mz-constants/directions/M2/padua-foundation-record.md",
+      "before_sha256": "42ec2b845673b4da29e1ddeba61ff9d5bb16150d0ab7cced4a7043d17ae84ca6",
+      "current_sha256": "97340dcb4f478c3286276a1c1e4e8e35fe48f29288f0ec798dadf23211ae2efa",
+      "administrative_banner_removed": 0,
+      "normalized_sha256": "42ec2b845673b4da29e1ddeba61ff9d5bb16150d0ab7cced4a7043d17ae84ca6",
+      "analytic_bytes_preserved": true
+    }
+  ],
+  "matching_files": 35,
+  "exceptions": [
+    "state/IDEAS.md",
+    "literature/records/mz-an-sommariva-vianello-2026.md"
+  ],
+  "exception_disposition": "updated IDEA registry read in full; additional ASV reading-coverage paragraph verified against own primary inspection",
+  "theory_matches": 21
+}

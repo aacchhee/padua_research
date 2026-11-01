@@ -1,0 +1,225 @@
+{
+  "scope": "Independent exact finite diagnostics and read-only repository identity checks; not proof of universal mathematical statements",
+  "command": "python -I tracks/mz-constants/evidence/astra-response-01-check.py",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "head": "2cc1918b39d191ce233d44d9a33dbe83d697dbb0",
+  "checker_sha256": "e2b151ddf777fc904a9513f79373d8844f0d8c5d5fb4147a10af849026c5d29b",
+  "endpoint_and_all_degree_pairs_N2_1000": 500499,
+  "endpoint_offdiagonal_sign_entries_N2_40": 21320,
+  "N2_exact_mass_equal_discrete": true,
+  "original_21_theory_statuses_preserved": {
+    "PROVED": 17,
+    "OPEN": 3,
+    "MEASURED": 1
+  },
+  "original_65_mappings_preserved_five_unique_LIT_additions": true,
+  "charter_105_files_unchanged": true,
+  "charter_registry_rows_preserved": 54,
+  "original_audit_and_source_checkers_unchanged": true,
+  "ledger_propagation": [
+    {
+      "branch": "claude/programme-ideas-20261031",
+      "commit": "c989031bacb3d35c711f4ace40a10e8909802106",
+      "changed_paths": [
+        "topics/padua-batch-20261031/ALLOCATIONS.md"
+      ],
+      "blob": "43c581fb242fd28ebe4d89ee4a42e3bbd660a159"
+    },
+    {
+      "branch": "claude/bivariate-lanczos-20261031",
+      "commit": "48f7a02697d7753279e27d3ad462a4817c67ade0",
+      "changed_paths": [
+        "topics/padua-batch-20261031/ALLOCATIONS.md"
+      ],
+      "blob": "43c581fb242fd28ebe4d89ee4a42e3bbd660a159"
+    }
+  ],
+  "source_files": {
+    "AGENTS.md": {
+      "sha256": "60bfe28edf232c69948efdd2f7a48edfd99af52644513a2fc378c866e742cb60",
+      "bytes": 3159
+    },
+    "agents/WORKFLOW.md": {
+      "sha256": "b1c1c14c83e02bf38283159f81ec278ae336ab56c95d0c026b9ada3314d1ffaa",
+      "bytes": 18116
+    },
+    "agents/codex/CODEX.md": {
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+      "bytes": 4969
+    },
+    "PROOF_STATUS.md": {
+      "sha256": "1b1041f42b03c687b8bd86d0f121db062f24a937ac6a46810ebf5b609f0d7b83",
+      "bytes": 17877
+    },
+    "ID_CROSSWALK.md": {
+      "sha256": "f58effdcc40bde762175f6439f1c0ffeb6e2b7a1d769a4a56896f3615314bb45",
+      "bytes": 46887
+    },
+    "PAPER_MAP.md": {
+      "sha256": "db92c95b6d27f1f1f79c94c1ac168213959526052d4eebabdab15dc50cafc61d",
+      "bytes": 1360
+    },
+    "state/IDEAS.md": {
+      "sha256": "eeb673d99cce8ed3342fcf145aa711b536673239e82be5acaf6fc60a0db9d4af",
+      "bytes": 49043
+    },
+    "literature/INDEX.md": {
+      "sha256": "d3015682fc3ca7d225db40f71dba400eca248ef47fd44b2127b5b18a8f532cae",
+      "bytes": 24874
+    },
+    "literature/CORPUS.md": {
+      "sha256": "8c2bc2669d1e9466777da0b785ebef424f341bbbe6a3d67a2f5e8899c1f10e63",
+      "bytes": 19209
+    },
+    "literature/records/mz-mean-convergence-screen.md": {
+      "sha256": "58270d1eec08635db5fb1538de93a697b0e052805a1ccd9294fc3761bc93bb27",
+      "bytes": 11206
+    },
+    "topics/mz-constants/audit-01.md": {
+      "sha256": "34ee03fcd864dd9cc8b62b61984d71ad8fc46587023f740c4b1e0ff398f3aa08",
+      "bytes": 28123
+    },
+    "topics/mz-constants/scientific-response-01.md": {
+      "sha256": "1664448d831dc1279f9c7cac3d98d08ce620443dc1c52708ffaca1bd6b3baae6",
+      "bytes": 13532
+    },
+    "topics/mz-constants/response-01.md": {
+      "sha256": "a5eb3a33d9dcc62364202e17732aba119f8ca0fb53979d9a81cd2be8b2da5aad",
+      "bytes": 13974
+    },
+    "topics/mz-constants/report.md": {
+      "sha256": "fe8befacdd2e648b99ae81fb77bae481c290a0adb277dd47235282d6e5cfee58",
+      "bytes": 10115
+    },
+    "topics/mz-constants/directions/M1/IDEAS.md": {
+      "sha256": "4352523c449d33f741c82c2ea6dd2e8e3faf440ec15311c173643b00911c1348",
+      "bytes": 10911
+    },
+    "topics/mz-constants/directions/M3/IDEAS.md": {
+      "sha256": "a67442fbfe4f389531639b20d07e6e4e39d7dafcc8d00cc71e19c69265f5bae0",
+      "bytes": 11666
+    },
+    "topics/mz-constants/final-id-map.json": {
+      "sha256": "c143f56cfc60f906a85ef8e2643535aefb9661668eec06121d9d41e1501593c2",
+      "bytes": 16640
+    },
+    "topics/mz-constants/literature-response-01.md": {
+      "sha256": "c3a42dfac3af095bfdc41ef388f07d85ad070a7b6bdead6117d2b242b2820f03",
+      "bytes": 3139
+    },
+    "topics/mz-constants/literature-search.md": {
+      "sha256": "1275b44cfdd6fe375d117012b7bcdd75e9618b1c15778e95353889c66b73d290",
+      "bytes": 18655
+    },
+    "topics/mz-constants/ledger-reconciliation-01.json": {
+      "sha256": "7a2e608e6c45fa31c2f4abf497e3d9c9dbd4c391c8eb25d8988100bbf3960919",
+      "bytes": 2112
+    },
+    "topics/padua-batch-20261031/ALLOCATIONS.md": {
+      "sha256": "39dfc9a9abcffcc7e8d28caf0c537a9dcf4536b42186cc00991ee67b33516f56",
+      "bytes": 5361
+    },
+    "tracks/mz-constants/code/m3_exact_check.py": {
+      "sha256": "246bd4b95226182b0231730d7ad6ae6d7716623d31b28193c0e44d932825d2dd",
+      "bytes": 3003
+    },
+    "tracks/mz-constants/paper/manuscript.tex": {
+      "sha256": "c0037cf857895111b98282e400dd4c0af4d87b4cfdc5abba16f53071c58134af",
+      "bytes": 42631
+    },
+    "tracks/mz-constants/paper/refs.bib": {
+      "sha256": "ea5fbd9afabb30b090003199084aa1fd3448928dc00538375cc23cd678cae6c5",
+      "bytes": 6321
+    },
+    "tracks/mz-constants/paper/README.md": {
+      "sha256": "5b692f59901bac105f6efb7df44f132827fc69ec5b99c292754d62a0b4c77f3f",
+      "bytes": 8957
+    },
+    "tracks/mz-constants/theory/m1-cc-foundation.md": {
+      "sha256": "ce2731b5c585714b1e4011850ffd021b120dbec3d50f4fc2eff7eded0ab46d8e",
+      "bytes": 5180
+    },
+    "tracks/mz-constants/theory/m1-coefficient-floor.md": {
+      "sha256": "5de9b57e78e315a0686aa5cd39a99ee469756b9c093e994f6a7dea544929920f",
+      "bytes": 4236
+    },
+    "tracks/mz-constants/theory/m1-failed-diagonal-dominance.md": {
+      "sha256": "67c844c63bdc32b0648238c3bbb352c333bb59360bf59e480fb7eab5000ffea5",
+      "bytes": 2245
+    },
+    "tracks/mz-constants/theory/m1-failed-psd.md": {
+      "sha256": "f4ceee54f7f6b7c033e7dec70a312583a794836c4a72c4abc6252064860650ae",
+      "bytes": 2707
+    },
+    "tracks/mz-constants/theory/m1-full-degree-obstruction.md": {
+      "sha256": "e6767fec1e2ddbd1ab27e621393fb0e714b469a35a0f13465924e16d7d79467c",
+      "bytes": 2341
+    },
+    "tracks/mz-constants/theory/m1-upper-bound.md": {
+      "sha256": "b315927af335c8894afcb588616879fdb7d73ee1da30ad1946baed3c39e3f93a",
+      "bytes": 6816
+    },
+    "tracks/mz-constants/theory/m2-cardinal-lower.md": {
+      "sha256": "1c9a3bf5fe8bb9dfbb2943500fb7aafd092eb8a5892c43a2e292f117fabf7776",
+      "bytes": 6899
+    },
+    "tracks/mz-constants/theory/m2-eta-counterexample.md": {
+      "sha256": "eb5f6b7ad392401427c1f0e70453f26a0da890c77b1e697f448a964651c6afec",
+      "bytes": 4522
+    },
+    "tracks/mz-constants/theory/m2-l1-obstruction.md": {
+      "sha256": "49e90b2d0918b9bb4d10cba7332c4ed234cbffdcb43773ab30eedc9c82ea34be",
+      "bytes": 2669
+    },
+    "tracks/mz-constants/theory/m2-padua-marginal.md": {
+      "sha256": "44de243749883d44d54a7ac33dca69450d8777aec035b740766bd1936d437497",
+      "bytes": 6993
+    },
+    "tracks/mz-constants/theory/m2-parity-obstruction.md": {
+      "sha256": "92a25fa5e9ee2336bef5da4b1f241a20f40c800825ee39e1bf1c8bdc9690d6f2",
+      "bytes": 3135
+    },
+    "tracks/mz-constants/theory/m2-parity-upper.md": {
+      "sha256": "1897c95812140a7c8fbdd8331923014cb871be5d628977d1f0f942fce43af827",
+      "bytes": 7359
+    },
+    "tracks/mz-constants/theory/m2-sharp-constant-open.md": {
+      "sha256": "1a0310059d03746be25de5114c8ddb87fd113c400c12db2e9d7140ad56cabe41",
+      "bytes": 2752
+    },
+    "tracks/mz-constants/theory/m2-u-witness.md": {
+      "sha256": "8d43f94f191dba8b6f600a06e190fd24e274cd273ec536b1e2369ae7160f5678",
+      "bytes": 4130
+    },
+    "tracks/mz-constants/theory/m3-hyperinterpolation.md": {
+      "sha256": "586a8d2304e7ce48277c1786b36bcd9b5f51fa4f467128ad414b7322882416d2",
+      "bytes": 5688
+    },
+    "tracks/mz-constants/theory/m3-lower-ratio.md": {
+      "sha256": "4aa51f3d66cb3a443cdb9990c4114c5560d4d28949849d08a60a0190ffb0d083",
+      "bytes": 6811
+    },
+    "tracks/mz-constants/theory/m3-uniform-eta.md": {
+      "sha256": "9d774f48e914c4c96f7270a95d2f1ea0d48c02b813308d504b647be25af71ea3",
+      "bytes": 3341
+    },
+    "tracks/mz-constants/theory/m3-upper-ratio.md": {
+      "sha256": "dd8512d6041ecba85ebf9de564e48ffff48f26e0c9c770c53741125c2e0e34ba",
+      "bytes": 5504
+    },
+    "tracks/mz-constants/theory/open-padua-target.md": {
+      "sha256": "3ab82f62455fec55436a3f087914c8fbd1bc0b68066494e0424a3be1975f4c66",
+      "bytes": 3654
+    },
+    "tracks/mz-constants/theory/open-upper-limit.md": {
+      "sha256": "3a9b96df7a21995b986ea08271e9fa1bface2a1fd300029665a1462e95125c7c",
+      "bytes": 3324
+    },
+    "tracks/mz-constants/theory/reproduced-spectra.md": {
+      "sha256": "4f5d7452aa65f4f15f8eb0d773ec4469d3a003d1b1e3660f6ac6d8c7eae7a4a4",
+      "bytes": 5504
+    }
+  },
+  "result": "PASS"
+}

@@ -1,0 +1,360 @@
+{
+  "scientific_checkpoint": "2dc9264333cdf8372947448f4b9bdd3bb577d0e1",
+  "competing_pr2_head": "317a26597dedc9adc9cfc6a26fa00078df7d29e4",
+  "mappings": {
+    "PD-T?mz-constants-codex-11": "PD-T013",
+    "PD-T?mz-constants-codex-12": "PD-T014",
+    "PD-T?mz-constants-codex-13": "PD-T015",
+    "PD-T?mz-constants-codex-14": "PD-T016",
+    "PD-T?mz-constants-codex-21": "PD-T017",
+    "PD-T?mz-constants-codex-22": "PD-T018",
+    "PD-T?mz-constants-codex-23": "PD-T019",
+    "PD-T?mz-constants-codex-27": "PD-T020",
+    "PD-T?mz-constants-codex-28": "PD-T021",
+    "PD-T?mz-constants-codex-31": "PD-T022",
+    "PD-T?mz-constants-codex-32": "PD-T023",
+    "PD-T?mz-constants-codex-33": "PD-T024",
+    "PD-T?mz-constants-codex-34": "PD-T025",
+    "PD-T?mz-constants-codex-41": "PD-T026",
+    "PD-T?mz-constants-codex-51": "PD-T027",
+    "PD-T?mz-constants-codex-52": "PD-T028",
+    "PD-N?mz-constants-codex-11": "PD-N002",
+    "PD-N?mz-constants-codex-12": "PD-N003",
+    "PD-N?mz-constants-codex-24": "PD-N004",
+    "PD-N?mz-constants-codex-25": "PD-N005",
+    "PD-N?mz-constants-codex-26": "PD-N006",
+    "LIT?mz-constants-codex-01": "LIT-042",
+    "LIT?mz-constants-codex-02": "LIT-043",
+    "LIT?mz-constants-codex-03": "LIT-044",
+    "LIT?mz-constants-codex-04": "LIT-045",
+    "LIT?mz-constants-codex-05": "LIT-046",
+    "LIT?mz-constants-codex-06": "LIT-047",
+    "LIT?mz-constants-codex-07": "LIT-048",
+    "LIT?mz-constants-codex-08": "LIT-049",
+    "LIT?mz-constants-codex-09": "LIT-050",
+    "LIT?mz-constants-codex-10": "LIT-051",
+    "LIT?mz-constants-codex-11": "LIT-052",
+    "LIT?mz-constants-codex-12": "LIT-053",
+    "LIT?mz-constants-codex-13": "LIT-054",
+    "LIT?mz-constants-codex-14": "LIT-055",
+    "LIT?mz-constants-codex-15": "LIT-056",
+    "LIT?mz-constants-codex-16": "LIT-057",
+    "LIT?mz-constants-codex-17": "LIT-058",
+    "LIT?mz-constants-codex-18": "LIT-059",
+    "LIT?mz-constants-codex-19": "LIT-060",
+    "IDEA?mz-constants-codex-01": "IDEA-052",
+    "IDEA?mz-constants-codex-02": "IDEA-053",
+    "IDEA?mz-constants-codex-03": "IDEA-054",
+    "IDEA?mz-constants-codex-04": "IDEA-055",
+    "IDEA?mz-constants-codex-05": "IDEA-056",
+    "IDEA?mz-constants-codex-06": "IDEA-057",
+    "IDEA?mz-constants-codex-07": "IDEA-058",
+    "IDEA?mz-constants-codex-08": "IDEA-059",
+    "IDEA?mz-constants-codex-11": "IDEA-060",
+    "IDEA?mz-constants-codex-12": "IDEA-061",
+    "IDEA?mz-constants-codex-13": "IDEA-062",
+    "IDEA?mz-constants-codex-14": "IDEA-063",
+    "IDEA?mz-constants-codex-15": "IDEA-064",
+    "IDEA?mz-constants-codex-21": "IDEA-065",
+    "IDEA?mz-constants-codex-22": "IDEA-066",
+    "IDEA?mz-constants-codex-23": "IDEA-067",
+    "IDEA?mz-constants-codex-24": "IDEA-068",
+    "IDEA?mz-constants-codex-25": "IDEA-069",
+    "IDEA?mz-constants-codex-26": "IDEA-070",
+    "IDEA?mz-constants-codex-27": "IDEA-071",
+    "IDEA?mz-constants-codex-28": "IDEA-072",
+    "IDEA?mz-constants-codex-31": "IDEA-073",
+    "IDEA?mz-constants-codex-32": "IDEA-074",
+    "IDEA?mz-constants-codex-33": "IDEA-075",
+    "IDEA?mz-constants-codex-34": "IDEA-076",
+    "LIT?mz-response-codex-01": "LIT-061",
+    "LIT?mz-response-codex-02": "LIT-062",
+    "LIT?mz-response-codex-03": "LIT-063",
+    "LIT?mz-response-codex-04": "LIT-064",
+    "LIT?mz-response-codex-05": "LIT-065"
+  },
+  "canonical": {
+    "PD-T?mz-constants-codex-27": {
+      "path": "tracks/mz-constants/theory/m2-sharp-constant-open.md",
+      "title": "PD-T?mz-constants-codex-27 — sharp endpoint leading constant"
+    },
+    "PD-T?mz-constants-codex-51": {
+      "path": "tracks/mz-constants/theory/open-upper-limit.md",
+      "title": "PD-T?mz-constants-codex-51 — sharp endpoint upper spectrum"
+    },
+    "PD-N?mz-constants-codex-25": {
+      "path": "tracks/mz-constants/theory/m2-l1-obstruction.md",
+      "title": "PD-N?mz-constants-codex-25 — absolute-cardinal column domination fails"
+    },
+    "PD-T?mz-constants-codex-22": {
+      "path": "tracks/mz-constants/theory/m2-parity-upper.md",
+      "title": "PD-T?mz-constants-codex-22 — parity-exact matching logarithmic upper bound"
+    },
+    "PD-N?mz-constants-codex-26": {
+      "path": "tracks/mz-constants/theory/m2-parity-obstruction.md",
+      "title": "PD-N?mz-constants-codex-26 — strictly alternating node trials miss the degree constraint"
+    },
+    "PD-N?mz-constants-codex-12": {
+      "path": "tracks/mz-constants/theory/m1-failed-diagonal-dominance.md",
+      "title": "PD-N?mz-constants-codex-12 — unweighted diagonal dominance fails at N=5"
+    },
+    "PD-T?mz-constants-codex-34": {
+      "path": "tracks/mz-constants/theory/m3-hyperinterpolation.md",
+      "title": "PD-T?mz-constants-codex-34 — hyperinterpolation stability from the upper Gram bound"
+    },
+    "PD-T?mz-constants-codex-11": {
+      "path": "tracks/mz-constants/theory/m1-cc-foundation.md",
+      "title": "PD-T?mz-constants-codex-11 — exact CC weights, aliasing and defect"
+    },
+    "PD-T?mz-constants-codex-41": {
+      "path": "tracks/mz-constants/theory/reproduced-spectra.md",
+      "title": "PD-T?mz-constants-codex-41 — Bounded reproduced numerical spectra"
+    },
+    "PD-T?mz-constants-codex-23": {
+      "path": "tracks/mz-constants/theory/m2-u-witness.md",
+      "title": "PD-T?mz-constants-codex-23 — exact U endpoint witness"
+    },
+    "PD-T?mz-constants-codex-14": {
+      "path": "tracks/mz-constants/theory/m1-full-degree-obstruction.md",
+      "title": "PD-T?mz-constants-codex-14 — full-degree CC exceeds the threshold"
+    },
+    "PD-N?mz-constants-codex-11": {
+      "path": "tracks/mz-constants/theory/m1-failed-psd.md",
+      "title": "PD-N?mz-constants-codex-11 — the nonnegative Hankel defect is indefinite"
+    },
+    "PD-T?mz-constants-codex-13": {
+      "path": "tracks/mz-constants/theory/m1-coefficient-floor.md",
+      "title": "PD-T?mz-constants-codex-13 — a quantitative Chebyshev mass floor"
+    },
+    "PD-T?mz-constants-codex-12": {
+      "path": "tracks/mz-constants/theory/m1-upper-bound.md",
+      "title": "PD-T?mz-constants-codex-12 — CC upper spectrum below two"
+    },
+    "PD-T?mz-constants-codex-33": {
+      "path": "tracks/mz-constants/theory/m3-uniform-eta.md",
+      "title": "PD-T?mz-constants-codex-33 — explicit strong MZ constants at every fixed ratio"
+    },
+    "PD-T?mz-constants-codex-52": {
+      "path": "tracks/mz-constants/theory/open-padua-target.md",
+      "title": "PD-T?mz-constants-codex-52 — two-dimensional Padua upper and endpoint targets"
+    },
+    "PD-N?mz-constants-codex-24": {
+      "path": "tracks/mz-constants/theory/m2-eta-counterexample.md",
+      "title": "PD-N?mz-constants-codex-24 — the endpoint eta≤3/4 mechanism fails at N=512"
+    },
+    "PD-T?mz-constants-codex-32": {
+      "path": "tracks/mz-constants/theory/m3-lower-ratio.md",
+      "title": "PD-T?mz-constants-codex-32 — an explicit fixed-ratio CC lower bound"
+    },
+    "PD-T?mz-constants-codex-21": {
+      "path": "tracks/mz-constants/theory/m2-cardinal-lower.md",
+      "title": "PD-T?mz-constants-codex-21 — an all-N cardinal lower bound"
+    },
+    "PD-T?mz-constants-codex-28": {
+      "path": "tracks/mz-constants/theory/m2-padua-marginal.md",
+      "title": "PD-T?mz-constants-codex-28 — exact Padua marginal and spectral domination"
+    },
+    "PD-T?mz-constants-codex-31": {
+      "path": "tracks/mz-constants/theory/m3-upper-ratio.md",
+      "title": "PD-T?mz-constants-codex-31 — a fixed-ratio CC upper constant below two"
+    },
+    "LIT?mz-constants-codex-14": {
+      "path": "literature/records/mz-quadrature-aliasing-screen.md",
+      "title": "LIT?mz-constants-codex-14 — Trefethen 2008 exact mode aliasing"
+    },
+    "LIT?mz-constants-codex-15": {
+      "path": "literature/records/mz-quadrature-aliasing-screen.md",
+      "title": "LIT?mz-constants-codex-15 — Xiang–Bornemann 2012 coefficient-decay quadrature"
+    },
+    "LIT?mz-constants-codex-16": {
+      "path": "literature/records/mz-quadrature-aliasing-screen.md",
+      "title": "LIT?mz-constants-codex-16 — Hale–Townsend 2014 transform"
+    },
+    "LIT?mz-constants-codex-04": {
+      "path": "literature/records/mz-an-sommariva-vianello-2026.md",
+      "title": "LIT?mz-constants-codex-04 — finite-degree CC/Padua observations"
+    },
+    "LIT?mz-constants-codex-12": {
+      "path": "literature/records/mz-widom-1966-screen.md",
+      "title": "LIT?mz-constants-codex-12 — Widom, Hankel matrices"
+    },
+    "LIT?mz-constants-codex-13": {
+      "path": "literature/records/mz-widom-1966-screen.md",
+      "title": "LIT?mz-constants-codex-13 — Widom–Wilf, small eigenvalues"
+    },
+    "LIT?mz-constants-codex-18": {
+      "path": "literature/records/mz-passi-cv-2026.md",
+      "title": "LIT?mz-constants-codex-18 — Passi thesis is bachelor's, numerical extension"
+    },
+    "LIT?mz-constants-codex-19": {
+      "path": "literature/records/mz-passi-cv-2026.md",
+      "title": "LIT?mz-constants-codex-19 — author CV publication/in-preparation metadata"
+    },
+    "LIT?mz-constants-codex-17": {
+      "path": "literature/records/mz-don-gottlieb-1994.md",
+      "title": "LIT?mz-constants-codex-17 — PDE-method ancestor, unresolved norm comparison"
+    },
+    "LIT?mz-constants-codex-06": {
+      "path": "literature/records/mz-sloan-smith-1978-1980.md",
+      "title": "LIT?mz-constants-codex-06 — 1978 convergence/weight result (summary coverage)"
+    },
+    "LIT?mz-constants-codex-07": {
+      "path": "literature/records/mz-sloan-smith-1978-1980.md",
+      "title": "LIT?mz-constants-codex-07 — 1980 implementation/error result (summary coverage)"
+    },
+    "LIT?mz-constants-codex-05": {
+      "path": "literature/records/mz-an-wu-2022.md",
+      "title": "LIT?mz-constants-codex-05 — explicitly conditional CC application"
+    },
+    "LIT?mz-constants-codex-08": {
+      "path": "literature/records/mz-mastroianni-milovanovic-2008.md",
+      "title": "LIT?mz-constants-codex-08 — correct chapter scope; unresolved L2 trap"
+    },
+    "LIT?mz-constants-codex-01": {
+      "path": "literature/records/mz-input-reports.md",
+      "title": "LIT?mz-constants-codex-01 — reported direct predecessor"
+    },
+    "LIT?mz-constants-codex-02": {
+      "path": "literature/records/mz-input-reports.md",
+      "title": "LIT?mz-constants-codex-02 — reported An–Wu application issue"
+    },
+    "LIT?mz-constants-codex-03": {
+      "path": "literature/records/mz-input-reports.md",
+      "title": "LIT?mz-constants-codex-03 — reported C4 transfer and stale status"
+    },
+    "LIT?mz-constants-codex-09": {
+      "path": "literature/records/mz-classical-mz-screen.md",
+      "title": "LIT?mz-constants-codex-09 — Lubinsky–Máté–Nevai 1987"
+    },
+    "LIT?mz-constants-codex-10": {
+      "path": "literature/records/mz-classical-mz-screen.md",
+      "title": "LIT?mz-constants-codex-10 — Mastroianni–Totik 2000"
+    },
+    "LIT?mz-constants-codex-11": {
+      "path": "literature/records/mz-classical-mz-screen.md",
+      "title": "LIT?mz-constants-codex-11 — Lubinsky 1998 survey"
+    },
+    "IDEA?mz-constants-codex-01": {
+      "path": "state/IDEAS.md",
+      "title": "IDEA?mz-constants-codex-01 — Literature baseline (M0)"
+    },
+    "IDEA?mz-constants-codex-02": {
+      "path": "state/IDEAS.md",
+      "title": "IDEA?mz-constants-codex-02 — CC upper spectrum (M1 seed)"
+    },
+    "IDEA?mz-constants-codex-03": {
+      "path": "state/IDEAS.md",
+      "title": "IDEA?mz-constants-codex-03 — CC lower spectrum (M2 seed)"
+    },
+    "IDEA?mz-constants-codex-04": {
+      "path": "state/IDEAS.md",
+      "title": "IDEA?mz-constants-codex-04 — Fixed-ratio bound and corrected applicability (M3)"
+    },
+    "IDEA?mz-constants-codex-05": {
+      "path": "state/IDEAS.md",
+      "title": "IDEA?mz-constants-codex-05 — Padua signed-weight extension (M4)"
+    },
+    "IDEA?mz-constants-codex-06": {
+      "path": "state/IDEAS.md",
+      "title": "IDEA?mz-constants-codex-06 — Other interpolatory rules (M5)"
+    },
+    "IDEA?mz-constants-codex-07": {
+      "path": "state/IDEAS.md",
+      "title": "IDEA?mz-constants-codex-07 — Fast and certified spectra (M6)"
+    },
+    "IDEA?mz-constants-codex-08": {
+      "path": "state/IDEAS.md",
+      "title": "IDEA?mz-constants-codex-08 — Manuscript (M7)"
+    },
+    "IDEA?mz-constants-codex-31": {
+      "path": "topics/mz-constants/directions/M3/IDEAS.md",
+      "title": "IDEA?mz-constants-codex-31 — degree-sensitive sign comparison"
+    },
+    "IDEA?mz-constants-codex-32": {
+      "path": "topics/mz-constants/directions/M3/IDEAS.md",
+      "title": "IDEA?mz-constants-codex-32 — filtered circle reconstruction removes the log N loss"
+    },
+    "IDEA?mz-constants-codex-33": {
+      "path": "topics/mz-constants/directions/M3/IDEAS.md",
+      "title": "IDEA?mz-constants-codex-33 — hyperinterpolation uses the upper Gram bound directly"
+    },
+    "IDEA?mz-constants-codex-34": {
+      "path": "topics/mz-constants/directions/M3/IDEAS.md",
+      "title": "IDEA?mz-constants-codex-34 — explicit two-sided assembly"
+    },
+    "IDEA?mz-constants-codex-11": {
+      "path": "topics/mz-constants/directions/M1/IDEAS.md",
+      "title": "IDEA?mz-constants-codex-11 — infer PSD from the active defect signs"
+    },
+    "IDEA?mz-constants-codex-12": {
+      "path": "topics/mz-constants/directions/M1/IDEAS.md",
+      "title": "IDEA?mz-constants-codex-12 — direct row diagonal dominance"
+    },
+    "IDEA?mz-constants-codex-13": {
+      "path": "topics/mz-constants/directions/M1/IDEAS.md",
+      "title": "IDEA?mz-constants-codex-13 — absolute-coefficient comparison for a Z-matrix"
+    },
+    "IDEA?mz-constants-codex-14": {
+      "path": "topics/mz-constants/directions/M1/IDEAS.md",
+      "title": "IDEA?mz-constants-codex-14 — quantify the gap through a telescoping mass floor"
+    },
+    "IDEA?mz-constants-codex-15": {
+      "path": "topics/mz-constants/directions/M1/IDEAS.md",
+      "title": "IDEA?mz-constants-codex-15 — source-reported full-degree top mode"
+    },
+    "IDEA?mz-constants-codex-21": {
+      "path": "topics/mz-constants/directions/M2/candidates.md",
+      "title": "IDEA?mz-constants-codex-21 — weighted cardinal-cell Schur estimate"
+    },
+    "IDEA?mz-constants-codex-22": {
+      "path": "topics/mz-constants/directions/M2/candidates.md",
+      "title": "IDEA?mz-constants-codex-22 — endpoint-cancelled harmonic U witness"
+    },
+    "IDEA?mz-constants-codex-23": {
+      "path": "topics/mz-constants/directions/M2/candidates.md",
+      "title": "IDEA?mz-constants-codex-23 — exact simpler U witness"
+    },
+    "IDEA?mz-constants-codex-24": {
+      "path": "topics/mz-constants/directions/M2/candidates.md",
+      "title": "IDEA?mz-constants-codex-24 — uniform endpoint eta≤3/4"
+    },
+    "IDEA?mz-constants-codex-25": {
+      "path": "topics/mz-constants/directions/M2/candidates.md",
+      "title": "IDEA?mz-constants-codex-25 — ordinary Lebesgue bound plus cardinal L1 columns"
+    },
+    "IDEA?mz-constants-codex-26": {
+      "path": "topics/mz-constants/directions/M2/candidates.md",
+      "title": "IDEA?mz-constants-codex-26 — direct transfer of full-space alternating trial"
+    },
+    "IDEA?mz-constants-codex-27": {
+      "path": "topics/mz-constants/directions/M2/candidates.md",
+      "title": "IDEA?mz-constants-codex-27 — a sharp rescaled endpoint limit"
+    },
+    "IDEA?mz-constants-codex-28": {
+      "path": "topics/mz-constants/directions/M2/padua-foundation-record.md",
+      "title": "IDEA?mz-constants-codex-28 — correctly normalized Padua marginal"
+    },
+    "LIT?mz-response-codex-01": {
+      "path": "literature/records/mz-mean-convergence-screen.md",
+      "title": "LIT?mz-response-codex-01 — Erdős–Feldheim 1936"
+    },
+    "LIT?mz-response-codex-02": {
+      "path": "literature/records/mz-mean-convergence-screen.md",
+      "title": "LIT?mz-response-codex-02 — Askey 1972 and its 1969 report"
+    },
+    "LIT?mz-response-codex-03": {
+      "path": "literature/records/mz-mean-convergence-screen.md",
+      "title": "LIT?mz-response-codex-03 — Nevai 1984, with 1990 addendum pending"
+    },
+    "LIT?mz-response-codex-04": {
+      "path": "literature/records/mz-mean-convergence-screen.md",
+      "title": "LIT?mz-response-codex-04 — Lubinsky converse MZ paper 147"
+    },
+    "LIT?mz-response-codex-05": {
+      "path": "literature/records/mz-mean-convergence-screen.md",
+      "title": "LIT?mz-response-codex-05 — Smith's explicit Lobatto comparison"
+    }
+  },
+  "historical_competing_pr2_head": "eb7bdcdf3a587dd49ea9d692b1d27c7af053fe64",
+  "merged_charter_main": "08fafe62d9798385dfafaacc9a41344272737e68"
+}

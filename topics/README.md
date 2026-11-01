@@ -10,3 +10,5 @@ Keep proposals, gate decisions, reports, audit-NN.md, response-NN.md and reprodu
 |---|---|---|
 | [charter-unisolvence-20261031](charter-unisolvence-20261031/LOG.md) | codex/charter-unisolvence-20261031; PR | First charter, literature baseline and bounded arbitrary-field checkerboard campaign |
 | [initialize-padua](initialize-padua/LOG.md) | Historical initialization record | Repository rules/templates and pre-merge audits |
+
+Active MZ campaign: [log](mz-constants/LOG.md), [report](mz-constants/report.md), [audit handoff](mz-constants/AUDIT_HANDOFF.md). Shared reservations: [batch ledger](padua-batch-20261031/ALLOCATIONS.md).

@@ -1,0 +1,3 @@
+m=60 (#neg w=2, min w=-1.14e-06): n=58: lmin=0.3289 lmax=1.6059 eta=0.6711  n=59: lmin=0.1886 lmax=1.8020 eta=0.8114 [3s]
+m=80 (#neg w=2, min w=-3.91e-07): n=78: lmin=0.2906 lmax=1.6383 eta=0.7094  n=79: lmin=0.1727 lmax=1.8165 eta=0.8273 [17s]
+m=100 (#neg w=2, min w=-1.70e-07): n=98: lmin=0.2630 lmax=1.6600 eta=0.7370  n=99: lmin=0.1617 lmax=1.8266 eta=0.8383 [75s]

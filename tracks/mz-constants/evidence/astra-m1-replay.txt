@@ -1,0 +1,16 @@
+EXACT: N=2..40: defect, support/sign, Z-matrix, telescoping floor,
+       weight bracket and full-degree obstruction checks PASS.
+EXACT: N=5, row 2 unweighted diagonal-dominance margin = -2/35.
+script_sha256=7a9b32260a90684e16fcd023e031fd3b91d5ea21ecce2ff351bbc034d68552e3
+MEASURED: numpy=2.3.5, scipy=1.17.0
+MEASURED: N=2: lambda_min=1, lambda_max=1, bound=1.68169011381621
+MEASURED: N=3: lambda_min=0.625, lambda_max=1, bound=1.78779340921081
+MEASURED: N=4: lambda_min=0.583333333333334, lambda_max=1, bound=1.8408450569081
+MEASURED: N=5: lambda_min=0.508571183968259, lambda_max=1.00558897228174, bound=1.87267604552648
+MEASURED: N=6: lambda_min=0.4850147194475, lambda_max=1.0091259055525, bound=1.8938967046054
+MEASURED: N=10: lambda_min=0.39943363754825, lambda_max=1.00559088513866, bound=1.93633802276324
+MEASURED: N=20: lambda_min=0.318138735560395, lambda_max=1.00464925515136, bound=1.96816901138162
+MEASURED: N=40: lambda_min=0.259849024875495, lambda_max=1.00447112072207, bound=1.98408450569081
+MEASURED: N=80: lambda_min=0.216153284009019, lambda_max=1.00443973472925, bound=1.99204225284541
+MEASURED: N=160: lambda_min=0.182490276565944, lambda_max=1.00443910138807, bound=1.9960211264227
+MEASURED: N=320: lambda_min=0.156015183642122, lambda_max=1.00443780095772, bound=1.99801056321135

@@ -1,0 +1,122 @@
+{
+  "method": "verify every mapping/crosswalk row, canonical heading/path, result status, literature row and IDEA heading",
+  "command": "python tracks/mz-constants/evidence/astra-final-check.py",
+  "scientific_checkpoint": "2dc9264333cdf8372947448f4b9bdd3bb577d0e1",
+  "mapping_count": 65,
+  "results": [
+    {
+      "id": "PD-T013",
+      "path": "tracks/mz-constants/theory/m1-cc-foundation.md",
+      "status": "PROVED"
+    },
+    {
+      "id": "PD-T014",
+      "path": "tracks/mz-constants/theory/m1-upper-bound.md",
+      "status": "PROVED"
+    },
+    {
+      "id": "PD-T015",
+      "path": "tracks/mz-constants/theory/m1-coefficient-floor.md",
+      "status": "PROVED"
+    },
+    {
+      "id": "PD-T016",
+      "path": "tracks/mz-constants/theory/m1-full-degree-obstruction.md",
+      "status": "PROVED"
+    },
+    {
+      "id": "PD-T017",
+      "path": "tracks/mz-constants/theory/m2-cardinal-lower.md",
+      "status": "PROVED"
+    },
+    {
+      "id": "PD-T018",
+      "path": "tracks/mz-constants/theory/m2-parity-upper.md",
+      "status": "PROVED"
+    },
+    {
+      "id": "PD-T019",
+      "path": "tracks/mz-constants/theory/m2-u-witness.md",
+      "status": "PROVED"
+    },
+    {
+      "id": "PD-T020",
+      "path": "tracks/mz-constants/theory/m2-sharp-constant-open.md",
+      "status": "OPEN"
+    },
+    {
+      "id": "PD-T021",
+      "path": "tracks/mz-constants/theory/m2-padua-marginal.md",
+      "status": "PROVED"
+    },
+    {
+      "id": "PD-T022",
+      "path": "tracks/mz-constants/theory/m3-upper-ratio.md",
+      "status": "PROVED"
+    },
+    {
+      "id": "PD-T023",
+      "path": "tracks/mz-constants/theory/m3-lower-ratio.md",
+      "status": "PROVED"
+    },
+    {
+      "id": "PD-T024",
+      "path": "tracks/mz-constants/theory/m3-uniform-eta.md",
+      "status": "PROVED"
+    },
+    {
+      "id": "PD-T025",
+      "path": "tracks/mz-constants/theory/m3-hyperinterpolation.md",
+      "status": "PROVED"
+    },
+    {
+      "id": "PD-T026",
+      "path": "tracks/mz-constants/theory/reproduced-spectra.md",
+      "status": "MEASURED"
+    },
+    {
+      "id": "PD-T027",
+      "path": "tracks/mz-constants/theory/open-upper-limit.md",
+      "status": "OPEN"
+    },
+    {
+      "id": "PD-T028",
+      "path": "tracks/mz-constants/theory/open-padua-target.md",
+      "status": "OPEN"
+    },
+    {
+      "id": "PD-N002",
+      "path": "tracks/mz-constants/theory/m1-failed-psd.md",
+      "status": "PROVED"
+    },
+    {
+      "id": "PD-N003",
+      "path": "tracks/mz-constants/theory/m1-failed-diagonal-dominance.md",
+      "status": "PROVED"
+    },
+    {
+      "id": "PD-N004",
+      "path": "tracks/mz-constants/theory/m2-eta-counterexample.md",
+      "status": "PROVED"
+    },
+    {
+      "id": "PD-N005",
+      "path": "tracks/mz-constants/theory/m2-l1-obstruction.md",
+      "status": "PROVED"
+    },
+    {
+      "id": "PD-N006",
+      "path": "tracks/mz-constants/theory/m2-parity-obstruction.md",
+      "status": "PROVED"
+    }
+  ],
+  "failures": [],
+  "outcome": "PASS",
+  "registry_sha256": {
+    "ID_CROSSWALK.md": "4fc131038f0d7823fe766e15343741a5e51fb311359a6f95bf40d8a9c415506d",
+    "PROOF_STATUS.md": "e2ed4cdaadb60abf058ba4213c3276bbf2a470bf9d4f6dd04235653578d1aebb",
+    "literature/INDEX.md": "3808438bf32ada22e341c962da11949ea5360ad3bf161167698bac3e4ad8c391",
+    "state/IDEAS.md": "ea709a469fbc771adf422811c2a586101c983c95158c2fd4a17297b45a0fa4a1",
+    "topics/padua-batch-20261031/ALLOCATIONS.md": "d797442980d524346846dc4bebdf46483f022e0fcd53d0bf7fd5a63134de2312"
+  }
+}

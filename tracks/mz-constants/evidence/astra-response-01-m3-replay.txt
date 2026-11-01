@@ -1,0 +1,3 @@
+EXACT: 324 pairs, 2<=N<=25, 0<=n<N: PASS
+       filter plateau, degree cutoff, no-alias reproduction, upper Z signs and ratio bound.
+script_sha256=246bd4b95226182b0231730d7ad6ae6d7716623d31b28193c0e44d932825d2dd
