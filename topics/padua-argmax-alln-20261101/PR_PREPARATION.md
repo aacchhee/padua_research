@@ -105,8 +105,9 @@ Owner: preparation orchestrator; preserve every alias and original wording.
   trailers/logs, never rewrite published history. Map every existing
   provisional alias (including gated/fallback spellings) to its one final
   ID by namespace; suffix reuse across namespaces is not ID reuse.
-- The cold-storage tool's CS1/CS2/CS3 findings belong to Claude development,
-  followed by a distinct Codex protocol re-audit. The active integrity
+- AC selected Codex high for CS1/CS2/CS3 development in handoff09.
+  Response-02 and the supplementary Astra check await independent Claude
+  protocol review together with response-01. The active integrity
   manifest is a new version at a historically archived pathname: restore
   must refuse to overwrite it, and verification/documentation must
   distinguish active versus archived versions. No AC export is claimed.

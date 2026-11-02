@@ -41,7 +41,8 @@ def paths():
              and p not in (MANIFEST, RECEIPT)
              and str(p.relative_to(ROOT)) not in archived]
     return sorted(found + [ROOT / 'results' / (TOPIC.name + '.md'),
-                           ROOT / 'tools/cold_storage.py'])
+                           ROOT / 'tools/cold_storage.py',
+                           ROOT / 'tools/test_cold_storage.py'])
 
 
 def verify_archives():
@@ -87,10 +88,10 @@ def run(refresh=False):
                   'sha256': sha(p.read_bytes())} for p in paths()]
         MANIFEST.write_text(json.dumps({
             'format': 'padua-argmax-current-and-cold-evidence-v3',
-            'input_head': 'b8fbb5c5be374bf658d2970681c7cac0fb40d737',
+            'input_head': '93169ab6e193fbbef91af16914cd1191e7564420',
             'accepted_scientific_input': 'c173fbf7ee66f02cc1d992e52edb43fdbd819474',
             'base_main': '2b52b432fe59c9a50aef9deebe5152c5d6874465',
-            'coverage': 'Current topic files, own results and storage tool; excludes archived paths, handoffs, this manifest and packaging receipt to avoid cycles.',
+            'coverage': 'Current topic files, own results, storage tool and its safety tests; excludes archived paths, handoffs, this manifest and packaging receipt to avoid cycles.',
             'status': 'Mathematics accepted by Claude audit-01; response and cold-storage protocol findings require Claude review.',
             'integrity_manifest_exception': 'One current integrity manifest may exceed16KiB under handoff07. It stores hashes/paths, not split measurement payloads. Historical developer manifest remains pinned in cold-storage.json.',
             'archive': archive, 'files': files}, indent=2) + '\n')

@@ -75,7 +75,7 @@ All essential new finite evidence is small and committed; no Windows/cold-storag
 Scope stays inside this topic and its own results file. [Shared-row/ledger proposals](proposed-record-changes.md) wait for audited PR preparation. No final IDs assigned.
 The GitHub connector uses Andrey Chesnokov's account noreply email and exposes no author-email override; the requested gmail email could not be selected. Published history is preserved.
 
-Next is Claude protocol review of response-01 and repair of cold-storage findings, followed by distinct Codex re-audit and PR preparation. Supplementary checks do not replace the required cross-agent review.
+Next is independent Claude protocol review of response-01 and the Codex storage repair in response-02, followed by audited PR preparation. Supplementary checks do not replace the required cross-agent review.
 
 The completed authorized sequence used6/2/1 rounds. [Gated report](gated/REPORT.md) and [ledger](gated/ROUND_LEDGER.md) state each stopping gate and resumption condition; unused quota was not spent automatically. The next numbered audit handoff includes the entire part3 and gated scope; superseded03 was never marked accepted.
 
@@ -85,4 +85,6 @@ Claude audit-01 accepts every mathematical claim at its stated scope. Response-0
 
 Audit-02-cold-storage verifies all36historical identities, both exact tool revisions' roundtrips and byte-identical D3 regeneration, but returns two major filesystem-safety findings and a minor regeneration-instruction finding to Claude. These are storage-tool issues, not a rejection of the accepted mathematics. The unified historical T1 payload is reconstructed in scratch by code/part3/reconstruct_t1.py; tests_analyze no longer splits or rewrites it. All978summary leaves agree except the unified-file metadata pointer. No large T1 data was recommitted.
 
-One refreshed evidence-manifest.json is explicitly retained as the single integrity-manifest exception allowed by handoff07. It covers current small files and source-pinned historical cold blobs separately and its plain check is read-only. The archived older manifest has the same historical pathname but a different immutable version; never restore it over the active record. Claude must address that version distinction when fixing the storage helper. Response/cold-storage protocol followup precedes final-ID and shared-registry preparation.
+One refreshed evidence-manifest.json is explicitly retained as the single integrity-manifest exception allowed by handoff07. It covers current small files and source-pinned historical cold blobs separately and its plain check is read-only. The archived older manifest has the same historical pathname but a different immutable version; never restore it over the active record. Response-02 implements that distinction in the storage helper; independent Claude review is pending. Response/cold-storage protocol followup precedes final-ID and shared-registry preparation.
+
+Codex response-02 repairs CS1/CS2/CS3 under AC's selected continuation, with targeted fixture controls and byte-exact real36 scratch checks. Distinct Astra storage rechecks supplement development; they do not replace independent Claude review. Native Windows fails closed; POSIX/WSL and quiescent destinations are required. AC delivery remains PENDING. No mathematical claim or scientific checker changed.

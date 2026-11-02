@@ -1,0 +1,16 @@
+{
+  "accepted": true,
+  "tests": 19,
+  "command": "python -B tools/test_cold_storage.py",
+  "working_directory": "/workspace/padua-storage-fix-20261102",
+  "input_head": "93169ab6e193fbbef91af16914cd1191e7564420",
+  "tool_sha256": "d12fc95dc1fe6145ad0f82b225104cee568bab5586bcd247fe445c671f123bd5",
+  "test_driver_sha256": "0aac0194efcd551a6ebe97216d2bf22992d9f3e86c8b0aa77e584285cf5fc3fe",
+  "stderr_sha256": "c9341466f9f681e8ac765fff5f239741d596a030ad0f786b6a4d582e290d30da",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "observed_seconds": 3.136,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "scope": "Owned temporary fixture repositories only; no shared Git state changes. Includes foreign checkout init/add then cleanup refusal, ancestor/nested Git metadata refusal.",
+  "independent_review": "Distinct Astra supplementary check separately recorded; required Claude review pending."
+}
