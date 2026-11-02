@@ -1,0 +1,222 @@
+{
+  "date": "2026-11-02",
+  "main": "2b52b432fe59c9a50aef9deebe5152c5d6874465",
+  "topic": "fdee6511195632dcf368865edef87b31be40f95c",
+  "prs": [
+    {
+      "number": 17,
+      "state": "open",
+      "merged": false,
+      "head": "fdee6511195632dcf368865edef87b31be40f95c",
+      "ref": "claude/padua-argmax-alln-20261101",
+      "draft": true
+    },
+    {
+      "number": 16,
+      "state": "closed",
+      "merged": true,
+      "head": "060d29b7b0d4ef2dcd8d95b6a2ff942e11d79ba3",
+      "ref": "claude/results-in-repo-20261101",
+      "draft": false
+    },
+    {
+      "number": 15,
+      "state": "closed",
+      "merged": true,
+      "head": "c714c80a35ccaf9e0f7df6b96bc840eba8bd83b1",
+      "ref": "codex/padua-lanczos-drift-20261101",
+      "draft": false
+    },
+    {
+      "number": 14,
+      "state": "closed",
+      "merged": true,
+      "head": "635ba4fd537be9a4dbc060617fbc0535db4d72ad",
+      "ref": "codex/padua-mz-2d-20261101",
+      "draft": false
+    },
+    {
+      "number": 13,
+      "state": "closed",
+      "merged": true,
+      "head": "7ce4c36fb1494fee2dd3bdc1bf39fc241c5b9e21",
+      "ref": "claude/handoff-id-rules-20261101",
+      "draft": false
+    },
+    {
+      "number": 10,
+      "state": "closed",
+      "merged": true,
+      "head": "9fa30122fec9796ca718af210a2a13c7525038a2",
+      "ref": "claude/bivariate-lanczos-20261031",
+      "draft": false
+    },
+    {
+      "number": 9,
+      "state": "closed",
+      "merged": true,
+      "head": "752ba068589683afe644b505d673f8da1529cbf0",
+      "ref": "codex/padua-proof-attempts-20261101",
+      "draft": false
+    },
+    {
+      "number": 8,
+      "state": "closed",
+      "merged": true,
+      "head": "6eeec5b3a3d48c4bde198d9cc6c170dd92674bdb",
+      "ref": "claude/results-track-rule-20261101",
+      "draft": false
+    },
+    {
+      "number": 12,
+      "state": "closed",
+      "merged": true,
+      "head": "c1325c6da7ef2fb2c20760c3e020280eba1e5126",
+      "ref": "codex/padua-proof-attempts-2-20261101",
+      "draft": false
+    },
+    {
+      "number": 11,
+      "state": "closed",
+      "merged": true,
+      "head": "1406ef74a76d9160324596447a831470b93c398b",
+      "ref": "claude/mz-prior-art-20261101",
+      "draft": false
+    },
+    {
+      "number": 6,
+      "state": "closed",
+      "merged": true,
+      "head": "b46b4dea18ce2c933489a211b0b6819dfd32ca70",
+      "ref": "claude/programme-ideas-20261031",
+      "draft": false
+    },
+    {
+      "number": 5,
+      "state": "closed",
+      "merged": true,
+      "head": "da679224b50d2210689c92e5a69d5a4d181afe3c",
+      "ref": "codex/mz-postmerge-frontier-20261031",
+      "draft": false
+    },
+    {
+      "number": 4,
+      "state": "closed",
+      "merged": true,
+      "head": "a4331a13301ee4a9905c8204c26bff5f9fdf246e",
+      "ref": "codex/lattice-unisolvence-20261031",
+      "draft": false
+    },
+    {
+      "number": 3,
+      "state": "closed",
+      "merged": true,
+      "head": "8ee04f4e5db46dd25fe5752ce605dde27098aae6",
+      "ref": "codex/mz-constants-20261031",
+      "draft": false
+    },
+    {
+      "number": 2,
+      "state": "closed",
+      "merged": true,
+      "head": "317a26597dedc9adc9cfc6a26fa00078df7d29e4",
+      "ref": "codex/charter-unisolvence-20261031",
+      "draft": false
+    },
+    {
+      "number": 1,
+      "state": "closed",
+      "merged": true,
+      "head": "5a5f09f9768f4c2b28a82eb85ed5be8bd3c797e5",
+      "ref": "codex/initialize-padua",
+      "draft": false
+    }
+  ],
+  "files": [
+    {
+      "path": "PROOF_STATUS.md",
+      "sha": "d85bd4ae56e115bb30872f777e0ca12c72193f64",
+      "textual_occurrence_maxima": {
+        "PD-T": 197,
+        "PD-N": 73,
+        "IDEA": 227,
+        "LIT": 426
+      }
+    },
+    {
+      "path": "state/IDEAS.md",
+      "sha": "ac0c4d133d412f32060e982b870850759f4352a6",
+      "textual_occurrence_maxima": {
+        "PD-T": 197,
+        "PD-N": 73,
+        "IDEA": 311,
+        "LIT": 1729
+      }
+    },
+    {
+      "path": "literature/INDEX.md",
+      "sha": "d4176c1e98a1088500782d8123516c48a9a3eeda",
+      "textual_occurrence_maxima": {
+        "PD-T": 100,
+        "PD-N": 43,
+        "IDEA": 209,
+        "LIT": 1750
+      }
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "sha": "21a699dc6d4e12693ca5e811cdd741503f9a8782",
+      "textual_occurrence_maxima": {
+        "PD-T": 205,
+        "PD-N": 77,
+        "IDEA": 315,
+        "LIT": 460
+      }
+    },
+    {
+      "path": "ID_CROSSWALK.md",
+      "sha": "ad6ba3d30ad548b15f2077ac55ae0e712220669b",
+      "textual_occurrence_maxima": {
+        "PD-T": 198,
+        "PD-N": 74,
+        "IDEA": 312,
+        "LIT": 445
+      }
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/ALLOCATIONS.md",
+      "sha": "d4b91dec56d6ece30c1f9f0bf1c75633bb5eacb9",
+      "textual_occurrence_maxima": {
+        "PD-T": 225,
+        "PD-N": 83,
+        "IDEA": 335,
+        "LIT": 465
+      }
+    }
+  ],
+  "highest_used_or_reserved": {
+    "PD-T": 225,
+    "PD-N": 83,
+    "IDEA": 335,
+    "LIT": 465
+  },
+  "new_reservation": {
+    "PD-T": [
+      226,
+      245
+    ]
+  },
+  "notes": [
+    "Complete branch-head registries/ledgers fetched using GitHub connector; their blob identities equal the recorded main inputs except the topic's existing reservation.",
+    "Only PR17 is open; all fifteen other repository PRs are merged, none closed-unmerged. No new foreign reservation requires import.",
+    "The original PD-T206\u2013225 reservation remains permanent. New PD-T226\u2013245 is an additional disjoint reservation for campaign results, not retrospective headroom.",
+    "No final ID assigned; no shared scientific registry changed.",
+    "Raw textual LIT1729/1750 occurrences are explicitly external bttb-research identifiers, not this repository's IDs. The batch's LIT460 prose is an unreserved proposal. Neither changes the actual union maximum LIT465. Only PD-T is newly reserved here."
+  ],
+  "textual_occurrence_maxima": {
+    "PD-T": 225,
+    "PD-N": 83,
+    "IDEA": 335,
+    "LIT": 1750
+  }
+}
