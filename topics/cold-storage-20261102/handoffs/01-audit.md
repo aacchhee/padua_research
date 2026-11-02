@@ -1,6 +1,6 @@
 # Handoff 01 — cold-storage-20261102 — Codex protocol audit of the repository cold-storage cleanup
 
-- Status: open
+- Status: superseded by 02: AC approved the WORKFLOW wording, the move of the 13 retained files and a later force-push (LOG 2026-11-02)
 - Previous handoff: none
 
 - Next agent / model / effort: Codex, `gpt-6-astra`, medium or high (auditor's choice, recorded); a protocol and technical audit
