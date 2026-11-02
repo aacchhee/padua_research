@@ -68,7 +68,7 @@ No counterexample to PD-T099 was found. No planning-test failure is promoted to 
 
 ## Evidence and next review
 
-[Pinned input paths/blobs](input-snapshot.json), [Claude replay](independent-checks-claude-records.md), [manifest](evidence-manifest.json).
+[Pinned input paths/blobs](COLD_STORAGE.md) (input-snapshot.json, cold storage), [Claude replay](independent-checks-claude-records.md), [manifest](COLD_STORAGE.md) (evidence-manifest.json, cold storage).
 [Codex audit of the original Claude observations](independent-checks-claude-observations-audit.md) accepts the replay-covered MEASURED claims with C-01 corrected: the strip runs cover separate one-cell-thick offset bands, not cumulative wider adjacent strips. Targeted optimizer-location checks confirm all six central-box runs ended inside the box. Standalone maj.py whole-square scans remain outside independent execution.
 All essential new finite evidence is small and committed; no Windows/cold-storage access is required for these claims. Trusted dependencies include Python integers/Fraction, SymPy for n8's algebraic field and the explicitly cited accepted PD-T101/179.
 

@@ -1,0 +1,299 @@
+{
+ "format": "padua-cold-storage-v1",
+ "slug": "padua-argmax-alln-20261101",
+ "source_commit": "1cecd68ac0a64b01ed7b2d262b6263a955a7d4d7",
+ "threshold_bytes": 16384,
+ "policy": "AC 2026-11-02: large regenerable outputs are not stored at the branch head; code and short summaries stay. Files below are retrievable byte-exactly from Git history (blob ids) and pending export to AC Padua cold storage Downloads\\padua\\cold_storage\\padua-argmax-alln-20261101\\.",
+ "delivery_to_AC_cold_storage": "PENDING (AC runs: python tools/cold_storage.py export padua-argmax-alln-20261101 --dest <Downloads\\padua\\cold_storage>)",
+ "entries": [
+  {
+   "path": "topics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/out/indep_n10.json",
+   "bytes": 20446,
+   "sha256": "b9187b0832c9f3e88bd5d2c1e8d92811decd1aaff926b95f06c07097dfc28519",
+   "git_blob": "3446dcca1291b62c756bc3b7645d33208c7c26d8",
+   "generating_command": "Claude audit-01 sub-auditor script in audit-support/claude-audit-01/files/ (see README and subaudit-reports); outputs were written to session scratch",
+   "notes": "Audit evidence; regenerable by rerunning the named sub-auditor script. Hash also listed in audit-support manifest."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/out/indep_n11.json",
+   "bytes": 21137,
+   "sha256": "1b274485a19949449b219da46c4f13a9bb2baecec83f71745a00595f3c4dae3e",
+   "git_blob": "6342dd6865d3a011f4b0ba163c466249da858d96",
+   "generating_command": "Claude audit-01 sub-auditor script in audit-support/claude-audit-01/files/ (see README and subaudit-reports); outputs were written to session scratch",
+   "notes": "Audit evidence; regenerable by rerunning the named sub-auditor script. Hash also listed in audit-support manifest."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/out/indep_n12.json",
+   "bytes": 22438,
+   "sha256": "296a01d44259d9d6fb01023db400acd7ffc4f269a3568b2eecd6dd0c44982d2d",
+   "git_blob": "158a98f66388ae133be98ac3a0344a041101d785",
+   "generating_command": "Claude audit-01 sub-auditor script in audit-support/claude-audit-01/files/ (see README and subaudit-reports); outputs were written to session scratch",
+   "notes": "Audit evidence; regenerable by rerunning the named sub-auditor script. Hash also listed in audit-support manifest."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/out/indep_n13.json",
+   "bytes": 23153,
+   "sha256": "214a9b46a605a8ebecc4e213bb077e5cfde2a9a485bd6839dea8d6e8e985a3c4",
+   "git_blob": "a4744cf830a5b43f6126f733f934e2571005acb8",
+   "generating_command": "Claude audit-01 sub-auditor script in audit-support/claude-audit-01/files/ (see README and subaudit-reports); outputs were written to session scratch",
+   "notes": "Audit evidence; regenerable by rerunning the named sub-auditor script. Hash also listed in audit-support manifest."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/out/indep_n14.json",
+   "bytes": 23831,
+   "sha256": "afa1161f333228b1088d8355b7eb36f7b66f2228823085dfe3d4d12d8391c944",
+   "git_blob": "7e6801272a06dfc0050353ff4fd602d0a98a675b",
+   "generating_command": "Claude audit-01 sub-auditor script in audit-support/claude-audit-01/files/ (see README and subaudit-reports); outputs were written to session scratch",
+   "notes": "Audit evidence; regenerable by rerunning the named sub-auditor script. Hash also listed in audit-support manifest."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/out/indep_n15.json",
+   "bytes": 32025,
+   "sha256": "bf77f40bab5df8da1bca79a7995b691d72285fc569ac4aaeff698828df7789a6",
+   "git_blob": "cc933530615b00d56dac09c6e39eec3fddc654a3",
+   "generating_command": "Claude audit-01 sub-auditor script in audit-support/claude-audit-01/files/ (see README and subaudit-reports); outputs were written to session scratch",
+   "notes": "Audit evidence; regenerable by rerunning the named sub-auditor script. Hash also listed in audit-support manifest."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/out/indep_n16.json",
+   "bytes": 36804,
+   "sha256": "c2888ce3273c9691384d50f2dd6ab38da0f5b8151598634e80cc61cf407ae93d",
+   "git_blob": "8e847e58668fee9332f37353090e7b9de6597b56",
+   "generating_command": "Claude audit-01 sub-auditor script in audit-support/claude-audit-01/files/ (see README and subaudit-reports); outputs were written to session scratch",
+   "notes": "Audit evidence; regenerable by rerunning the named sub-auditor script. Hash also listed in audit-support manifest."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/out/indep_n9.json",
+   "bytes": 18386,
+   "sha256": "6d2074c442cc7c79d9ce8ac7155a244a601ac887bae147c7f403f9e11a0e0d34",
+   "git_blob": "a2223ee483f139a696a2b608ac56dc625e02fbcc",
+   "generating_command": "Claude audit-01 sub-auditor script in audit-support/claude-audit-01/files/ (see README and subaudit-reports); outputs were written to session scratch",
+   "notes": "Audit evidence; regenerable by rerunning the named sub-auditor script. Hash also listed in audit-support manifest."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/run_8_12.log",
+   "bytes": 16610,
+   "sha256": "6a55f55bfe2fb252aa57bfb373e05ab390b37ba0e35f0db140020793a283ecb6",
+   "git_blob": "7df7207db7f825ebc504af32b672c50d5377d73b",
+   "generating_command": "Claude audit-01 sub-auditor script in audit-support/claude-audit-01/files/ (see README and subaudit-reports); outputs were written to session scratch",
+   "notes": "Audit evidence; regenerable by rerunning the named sub-auditor script. Hash also listed in audit-support manifest."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/D/t1_local.json",
+   "bytes": 55374,
+   "sha256": "5788e226f982ff6e8455620370dce67989976bbe48bc8a65e9362663884fc156",
+   "git_blob": "bf55958efd0bfb4b746fb3a19a0edd0285036c6b",
+   "generating_command": "Claude audit-01 sub-auditor script in audit-support/claude-audit-01/files/ (see README and subaudit-reports); outputs were written to session scratch",
+   "notes": "Audit evidence; regenerable by rerunning the named sub-auditor script. Hash also listed in audit-support manifest."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/audit-support/claude-audit-01/manifest.json",
+   "bytes": 64406,
+   "sha256": "8f08622f5076114f74f8b9ffdabffe94bbf4f6a2e027c172ede9606b15900c69",
+   "git_blob": "6d6fac0e5135d29186173412c4c3826ff1a26ec2",
+   "generating_command": "Claude audit-01 sub-auditor script in audit-support/claude-audit-01/files/ (see README and subaudit-reports); outputs were written to session scratch",
+   "notes": "Audit evidence; regenerable by rerunning the named sub-auditor script. Hash also listed in audit-support manifest."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/evidence-manifest.json",
+   "bytes": 56546,
+   "sha256": "16eb0708715c3abb5b7ab7011cd9675ab8bcb12b9f371aef927edb1faf19d038",
+   "git_blob": "4605c7d78463f13baea5bf2a5b1d5bb999a942f1",
+   "generating_command": "python -B topics/padua-argmax-alln-20261101/code/part3/check_evidence.py --refresh (at the recorded output boundary c173fbf)",
+   "notes": "Historical integrity manifest of the developer evidence (sha256 16eb0708...); retrieve with tools/cold_storage.py restore before running check_evidence.py."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/input-snapshot.json",
+   "bytes": 43980,
+   "sha256": "731bb44093219cf00bb160e730a90ce71879fda0571fc710209fd3312c5f3b59",
+   "git_blob": "96e8a8c15d020421749e35ce98de29606adedbcb",
+   "generating_command": "Written by the part 3 orchestrator from the pinned input blobs at 328be35 (not regenerable by a script)",
+   "notes": "Historical provenance record; 236/236 blobs verified by Claude audit-01 sub-audit F."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/gated/d1_screen_r01.json.gz",
+   "bytes": 81843,
+   "sha256": "8b57766f8e0251cc6bbd2b772888846ba475f0c01025e17cdf124a90d6c0fc1d",
+   "git_blob": "52776ce47d53fddc5000e7d01b96f93bf88e663d",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B topics/padua-argmax-alln-20261101/code/gated/d1_screen_r01.py OUT/d1_screen_r01.json > OUT/d1_screen_r01.out; then gzip -n -9 (mtime 0), see gated/PACKAGING.md",
+   "notes": "Replayed by Claude audit-01 sub-audit B: all 21,009 numeric leaves identical. Receipt: outputs/gated/check_d1_r01_receipt.json."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/gated/d1_screen_r01.out",
+   "bytes": 43818,
+   "sha256": "a5487a62de947062cd3e9b94bb2750c30d9d3019e2ffa2eaadb7aae554ce640c",
+   "git_blob": "3e654429a59b1dc4fe6fe3707d1a991b7c9de1e0",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B topics/padua-argmax-alln-20261101/code/gated/d1_screen_r01.py OUT/d1_screen_r01.json > OUT/d1_screen_r01.out",
+   "notes": "Stdout of the same run; differs only in timings on replay."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/gated/d2_screen_r01.json",
+   "bytes": 72838,
+   "sha256": "78dbf52b06c15d2ebae5f0fee5153236de28034ac8cc0fdf0d923de887ead5ad",
+   "git_blob": "796f95b32077c9aca9fec1f8ef1418e0928cc6c6",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B topics/padua-argmax-alln-20261101/code/gated/d2_screen_r01.py OUT/d2_screen_r01.json > OUT/d2_screen_r01.out",
+   "notes": "Replayed by Claude audit-01 sub-audit C: all 1505 numbers identical. Receipt: check_d2_r01_receipt.json; weighted summary d2_screen_r01_weighted.json."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/gated/d2_screen_r01.out",
+   "bytes": 17010,
+   "sha256": "7b2ce3afb8a35510cf2351e70f714bec8c639795cbe4f661bf96c60e229ac1a7",
+   "git_blob": "b8e3ec844725ac1af6e1fb40e2c51fa32d7f5047",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B topics/padua-argmax-alln-20261101/code/gated/d2_screen_r01.py OUT/d2_screen_r01.json > OUT/d2_screen_r01.out",
+   "notes": "Stdout of the same run."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/gated/d3_ep_screen.json",
+   "bytes": 24993,
+   "sha256": "3215523e1a768ce7e81c76283ac18bf476f8162bdcd84e579a7b93388707d14c",
+   "git_blob": "d754979729e692305cb0e1513091407fd0aab541",
+   "generating_command": "python -B topics/padua-argmax-alln-20261101/code/gated/d3_edge_generate.py --output OUT/d3_edge_certificate.json --ep-output OUT/d3_ep_screen.json",
+   "notes": "Regenerated byte-identically by Claude audit-01 (sha256 3215523e...). Exact witnesses are in the committed d3_edge_certificate.json."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/independent_T2.json",
+   "bytes": 69561,
+   "sha256": "bfc0197fb8c28f8b290337b5c25ce1ed83b289637a1a26292bb0c8a21e5ae0da",
+   "git_blob": "76352fa8ccb65e19f4dd40be76a4a0adda92bf7e",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B topics/padua-argmax-alln-20261101/code/part3/tests_T2_T3.py T2 OUT/independent_T2.json",
+   "notes": "Separate Astra execution of the same command; summary independent_T2.out."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/independent_T3.json",
+   "bytes": 83550,
+   "sha256": "4e4c94c497780962c2e9e354e0686a09387acdb3bbd1bc4d15ffa56818634ffa",
+   "git_blob": "aad94f76f866cbfce22d13cc22a029d95d0e77b6",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B topics/padua-argmax-alln-20261101/code/part3/tests_T2_T3.py T3 OUT/independent_T3.json",
+   "notes": "Separate Astra execution; summary independent_T3.out."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/pairing_screens.json",
+   "bytes": 106627,
+   "sha256": "f602acf48d82b91a26db422164836a4529828d027488f9f1b20e58497c8a93c2",
+   "git_blob": "9986a50d0b92b49ee9dbaa16cb83027ac7d19f40",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B topics/padua-argmax-alln-20261101/code/part3/pairing_screens.py --output OUT/pairing_screens.json",
+   "notes": "Replayed by Claude audit-01: 2540 leaves exactly equal. Exact consequence checked by pairing_exact_check.json (committed)."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1.json",
+   "bytes": 55302,
+   "sha256": "b80f8db44dfbdb2d48fab47bc40c6e9a3642e0bc2a3292b3e9c11d6bd06103bc",
+   "git_blob": "3756102854b795beb534ed1fe10a967b1c5d0d4d",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B topics/padua-argmax-alln-20261101/code/part3/tests_T1.py OUT/tests_T1.json; then python -B topics/padua-argmax-alln-20261101/code/part3/tests_analyze.py OUT (tests_analyze rewrites tests_T1.json and writes the split files and tests_summary.json)",
+   "notes": "Raw tests_T1.py output replayed by Claude audit-01 (1,342,719 B, sha256 4d7792e6...) is leaf-equal to the committed split files and top-level fields; tests_analyze post-processing not replayed."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n100.json",
+   "bytes": 68395,
+   "sha256": "156486bc9ab22cdc521e4b2dbfddca6bd6b7f6bde9f3b6a88a304fcabf3f516c",
+   "git_blob": "a4c67b5e2aabf0b2b2729dcb308ee68c0bfc1031",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B topics/padua-argmax-alln-20261101/code/part3/tests_T1.py OUT/tests_T1.json; then python -B topics/padua-argmax-alln-20261101/code/part3/tests_analyze.py OUT (tests_analyze rewrites tests_T1.json and writes the split files and tests_summary.json)",
+   "notes": "Per-degree split written by tests_analyze.py; leaf-equal to the replayed raw tests_T1.py output (Claude audit-01). Audit finding F1 (split to evade the 1 MB limit) is resolved by moving these to cold storage."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n101.json",
+   "bytes": 71096,
+   "sha256": "09241aaac1693791fcbbb685a5c60f6fbc33909f363a8fdda1b76699823230e2",
+   "git_blob": "bc50157c7b00f6a860ab20a4d31aad373570ca7e",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B topics/padua-argmax-alln-20261101/code/part3/tests_T1.py OUT/tests_T1.json; then python -B topics/padua-argmax-alln-20261101/code/part3/tests_analyze.py OUT (tests_analyze rewrites tests_T1.json and writes the split files and tests_summary.json)",
+   "notes": "Per-degree split written by tests_analyze.py; leaf-equal to the replayed raw tests_T1.py output (Claude audit-01). Audit finding F1 (split to evade the 1 MB limit) is resolved by moving these to cold storage."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n128.json",
+   "bytes": 87463,
+   "sha256": "37e44834102a1a1a0d830850384dcbbd77974d7cea8be907ec1fc0fce84a3f25",
+   "git_blob": "6de7e021264949a4596f0c86ec51d73245fc47b7",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B topics/padua-argmax-alln-20261101/code/part3/tests_T1.py OUT/tests_T1.json; then python -B topics/padua-argmax-alln-20261101/code/part3/tests_analyze.py OUT (tests_analyze rewrites tests_T1.json and writes the split files and tests_summary.json)",
+   "notes": "Per-degree split written by tests_analyze.py; leaf-equal to the replayed raw tests_T1.py output (Claude audit-01). Audit finding F1 (split to evade the 1 MB limit) is resolved by moving these to cold storage."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n199.json",
+   "bytes": 134768,
+   "sha256": "09eebe880c0f17ec0091612194128d7fc8ab878325a6a1853d50288952050a4e",
+   "git_blob": "8941c8557228a541a6ad81e6d192ed78cea4d09a",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B topics/padua-argmax-alln-20261101/code/part3/tests_T1.py OUT/tests_T1.json; then python -B topics/padua-argmax-alln-20261101/code/part3/tests_analyze.py OUT (tests_analyze rewrites tests_T1.json and writes the split files and tests_summary.json)",
+   "notes": "Per-degree split written by tests_analyze.py; leaf-equal to the replayed raw tests_T1.py output (Claude audit-01). Audit finding F1 (split to evade the 1 MB limit) is resolved by moving these to cold storage."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n200.json",
+   "bytes": 135422,
+   "sha256": "62c5a66c4497bb187bee01f3bc4048d11b205a3ab671d009cfa3a2ab2c188b46",
+   "git_blob": "3315bedd5861c12e4639340a3d3831c5d7782bff",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B topics/padua-argmax-alln-20261101/code/part3/tests_T1.py OUT/tests_T1.json; then python -B topics/padua-argmax-alln-20261101/code/part3/tests_analyze.py OUT (tests_analyze rewrites tests_T1.json and writes the split files and tests_summary.json)",
+   "notes": "Per-degree split written by tests_analyze.py; leaf-equal to the replayed raw tests_T1.py output (Claude audit-01). Audit finding F1 (split to evade the 1 MB limit) is resolved by moving these to cold storage."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n24.json",
+   "bytes": 17862,
+   "sha256": "cad4ab29aacef97a54c16f04b650c6f8fd85882fbf191702788a03dd0267dff1",
+   "git_blob": "4a46a97cd706ddf9a4e95ed9d43f79c0b469e610",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B topics/padua-argmax-alln-20261101/code/part3/tests_T1.py OUT/tests_T1.json; then python -B topics/padua-argmax-alln-20261101/code/part3/tests_analyze.py OUT (tests_analyze rewrites tests_T1.json and writes the split files and tests_summary.json)",
+   "notes": "Per-degree split written by tests_analyze.py; leaf-equal to the replayed raw tests_T1.py output (Claude audit-01). Audit finding F1 (split to evade the 1 MB limit) is resolved by moving these to cold storage."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n256.json",
+   "bytes": 173729,
+   "sha256": "cb6bf98fb2272016b537d9b493592a6d75329de7c30cf0aaa91386ff3b555136",
+   "git_blob": "9bf0a9621dd8af4a21a73c002011dbb612723ba9",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B topics/padua-argmax-alln-20261101/code/part3/tests_T1.py OUT/tests_T1.json; then python -B topics/padua-argmax-alln-20261101/code/part3/tests_analyze.py OUT (tests_analyze rewrites tests_T1.json and writes the split files and tests_summary.json)",
+   "notes": "Per-degree split written by tests_analyze.py; leaf-equal to the replayed raw tests_T1.py output (Claude audit-01). Audit finding F1 (split to evade the 1 MB limit) is resolved by moving these to cold storage."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n399.json",
+   "bytes": 269100,
+   "sha256": "63d4cd1ebf089cf99b0f4b65471d7032ce057fd4e393418971a92ecc11ed9d3e",
+   "git_blob": "ad2cb00835476e51ce34c3ad8bbaa394d0862015",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B topics/padua-argmax-alln-20261101/code/part3/tests_T1.py OUT/tests_T1.json; then python -B topics/padua-argmax-alln-20261101/code/part3/tests_analyze.py OUT (tests_analyze rewrites tests_T1.json and writes the split files and tests_summary.json)",
+   "notes": "Per-degree split written by tests_analyze.py; leaf-equal to the replayed raw tests_T1.py output (Claude audit-01). Audit finding F1 (split to evade the 1 MB limit) is resolved by moving these to cold storage."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n400.json",
+   "bytes": 269669,
+   "sha256": "b9ee1314d9c51e3cfeb5dd445dc94bcf7e336af9cc0c7dce7bb674b0e4491852",
+   "git_blob": "5af37b9ed643bd132cb89235145b77fde6613709",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B topics/padua-argmax-alln-20261101/code/part3/tests_T1.py OUT/tests_T1.json; then python -B topics/padua-argmax-alln-20261101/code/part3/tests_analyze.py OUT (tests_analyze rewrites tests_T1.json and writes the split files and tests_summary.json)",
+   "notes": "Per-degree split written by tests_analyze.py; leaf-equal to the replayed raw tests_T1.py output (Claude audit-01). Audit finding F1 (split to evade the 1 MB limit) is resolved by moving these to cold storage."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n48.json",
+   "bytes": 34628,
+   "sha256": "8e707e8c41725151ca5d54d5c81c86367846ba54399d0c0a1c899a7f806213dc",
+   "git_blob": "a817ed437ec52b82815d3b8a81154a84ebe02ec0",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B topics/padua-argmax-alln-20261101/code/part3/tests_T1.py OUT/tests_T1.json; then python -B topics/padua-argmax-alln-20261101/code/part3/tests_analyze.py OUT (tests_analyze rewrites tests_T1.json and writes the split files and tests_summary.json)",
+   "notes": "Per-degree split written by tests_analyze.py; leaf-equal to the replayed raw tests_T1.py output (Claude audit-01). Audit finding F1 (split to evade the 1 MB limit) is resolved by moving these to cold storage."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n96.json",
+   "bytes": 67200,
+   "sha256": "e8879d94f2083984be0ba53de8d391c67e4e50a44d425b794bbe8bf3a9d61ff4",
+   "git_blob": "45b23e40aed54f0f410cf73efe4f7106305107c8",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B topics/padua-argmax-alln-20261101/code/part3/tests_T1.py OUT/tests_T1.json; then python -B topics/padua-argmax-alln-20261101/code/part3/tests_analyze.py OUT (tests_analyze rewrites tests_T1.json and writes the split files and tests_summary.json)",
+   "notes": "Per-degree split written by tests_analyze.py; leaf-equal to the replayed raw tests_T1.py output (Claude audit-01). Audit finding F1 (split to evade the 1 MB limit) is resolved by moving these to cold storage."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T2.json",
+   "bytes": 69566,
+   "sha256": "474a0aade64a06c2ec2976c40677189c93d369367bc3408482bdcf8fc40cb307",
+   "git_blob": "f32c67952f3ad5b6b21044938a48747ea9c0ef66",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B topics/padua-argmax-alln-20261101/code/part3/tests_T2_T3.py T2 OUT/tests_T2.json",
+   "notes": "Replayed by Claude audit-01: 2542 leaves exactly equal (timing excluded). Summary: tests_T2.out."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T3.json",
+   "bytes": 83548,
+   "sha256": "964b22ae3d0dbf5f4bdc39cc57d6357a52beeba1beb3d16850c953ffceb5fc98",
+   "git_blob": "ed16e5ed2312bfcf69d397b56b7cfa998c5be8b5",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B topics/padua-argmax-alln-20261101/code/part3/tests_T2_T3.py T3 OUT/tests_T3.json",
+   "notes": "Replayed by Claude audit-01: 2548 leaves exactly equal. Summary: tests_T3.out."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_summary.json",
+   "bytes": 53067,
+   "sha256": "0e05c612044fe59f92d50e86c518110d1b5fcfcac029dc72a0b65334cddf9a9c",
+   "git_blob": "7cd611500458be09a6e014f1c26edcabf2607a27",
+   "generating_command": "python -B topics/padua-argmax-alln-20261101/code/part3/tests_analyze.py OUT, after tests_T1/T2/T3/T4 outputs exist in OUT",
+   "notes": "Short summary remains in outputs/part3/tests_summary.out and attempts/T1-T5.md."
+  }
+ ],
+ "total_bytes": 2526191
+}

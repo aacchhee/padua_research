@@ -24,3 +24,12 @@ This is the support evidence for [audit-01](../../audit-01.md) (handoff 05). It 
 - These records are audit evidence. They add no mathematical claim.
 - The independent kernels are unreviewed code, and they trust `mpmath.iv` and Python integers.
 - The scratch-only files were ephemeral and are not archived in cold storage.
+
+## Cold storage (2026-11-02, AC instruction)
+
+On AC's instruction, the larger files in this directory were moved off the branch head. They are listed with their SHA-256 and Git blob ids in the topic's [cold-storage manifest](../../COLD_STORAGE.md). The moved files are:
+- `manifest.json`;
+- `files/A/indep/out/indep_n9…16.json` and `files/A/indep/run_8_12.log`;
+- `files/D/t1_local.json`.
+
+To restore them byte-exactly, run `python tools/cold_storage.py restore padua-argmax-alln-20261101`. The scripts and the sub-audit reports stay committed.

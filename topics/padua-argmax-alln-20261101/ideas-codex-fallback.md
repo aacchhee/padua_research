@@ -18,7 +18,7 @@ Aliases: unique-nearest-corner ordering; mesh-distance rhombus comparison.
 - Cheapest decisive test: multistart diamond maxima at n4,7,12, with exact entire-source-cell upper bounds needed for a certified refutation.
 - Kill criterion written before testing: float reversal>10^−6 kills pursuit in this numerical screen; only a certified source upper bound plus target lower bound would establish exact failure.
 - Test discriminability: float differences here exceed threshold by up to1.63, but a missed source maximum remains a limitation.
-- Actual result:6/10,16/42,60/130 reversed comparisons at n4,7,12; interior-center reversals already at n7. [Measured record06](theory/argmax-alln-codex-06-measured-pairing.md), [output](outputs/part3/pairing_screens.json).
+- Actual result:6/10,16/42,60/130 reversed comparisons at n4,7,12; interior-center reversals already at n7. [Measured record06](theory/argmax-alln-codex-06-measured-pairing.md), [output](COLD_STORAGE.md) (pairing_screens.json, cold storage).
 - Disposition: **REJECTED: failed** as this measured screening route; exact negation remains unproved. Ambiguous IDEA03 remains OPEN.
 - Canonical result: PD-T?argmax-alln-codex-06 (MEASURED); no PD-N for an exact O-R assertion.
 - History: operationalization written before optimizer execution; retained after screen.

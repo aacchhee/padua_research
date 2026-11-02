@@ -1,7 +1,7 @@
 # All-degree Padua argmax (A4 / PD-T099): strategy topic
 
 - Branch: `claude/padua-argmax-alln-20261101` · Base: main `2b52b43` (merged in `280fea4`; initially `28aaa20`) · Developer: Claude (planning, MEASURED records); Codex (part 3 development, from handoff 02) · Auditor: Codex for Claude's records, Claude for Codex's
-- Stage: WORK · Claude [audit-01](audit-01.md) (handoff 05) ACCEPTS every PROVED/MEASURED claim at its stated scope with no status change; one MAJOR evidence-protocol finding (F1) and minor record findings (F2–F15) need a Codex response under [handoff06](handoffs/06-response.md). PD-T099 remains OPEN.
+- Stage: WORK · Claude [audit-01](audit-01.md) (handoff 05) ACCEPTS every PROVED/MEASURED claim at its stated scope with no status change; one MAJOR evidence-protocol finding (F1) and minor record findings (F2–F15) need a Codex response under [handoff07](handoffs/07-response-and-cold-storage-audit.md) (06 superseded by AC's cold-storage instruction). Large outputs moved to [cold storage](COLD_STORAGE.md). PD-T099 remains OPEN.
 - Permanent reserved ranges (no final IDs assigned): PD-T206–225, PD-N078–083, IDEA-316–335, LIT-460–465; first published405febab, [draft PR17](https://github.com/aacchhee/padua_research/pull/17), [ledger](ALLOCATIONS.md).
 - Claims:
   - PD-T?argmax-alln-claude-01 — float64 majorant/gap observations — MEASURED — [theory](theory/argmax-alln-claude-01-measured-observations.md).
@@ -47,7 +47,7 @@
 ## 2026-11-01 — Codex part 3 setup checkpoint
 
 - Role: orchestrator/developer; actual model gpt-6.1-sol xhigh, as AC requested. Mathematical and setup work in this turn retains that configured effort; bounded replay uses gpt-6.1-sol medium. Rules read at `328be35e55143013047ec03a70e9906e82b95353`.
-- GitHub connector confirmed main `2b52b432fe59c9a50aef9deebe5152c5d6874465` already belongs to this head; no merge is needed. Original `/workspace/padua_research` checkout stays intact. Selected source files were fetched into a separate snapshot; [input-snapshot.json](input-snapshot.json) records every pinned path/blob.
+- GitHub connector confirmed main `2b52b432fe59c9a50aef9deebe5152c5d6874465` already belongs to this head; no merge is needed. Original `/workspace/padua_research` checkout stays intact. Selected source files were fetched into a separate snapshot; [input-snapshot.json](COLD_STORAGE.md) (cold storage since 2026-11-02) records every pinned path/blob.
 - Snapshot materialization initially added a trailing newline. Before freezing evidence, every fetched file was restored to its exact pinned Git blob; the replay worker then reran all six scripts. All six stdout files are byte-identical to Claude's outputs. [Independent record](independent-checks-claude-records.md) documents scope and versions.
 - Parallel roles: replay (Sol medium), pre-registered T1–T5 numerical tests (Sol xhigh), finite certifier/P0 (Sol xhigh), and compact-edge proof preparation (Sol xhigh). All have disjoint topic file ownership and no Git authority. This is explicitly requested in handoff 02.
 - Novelty gate: existing candidates are being tested under their pre-registered criteria; no new mechanism or priority claim is introduced by setup/replay. Complete state/IDEAS headings/aliases and obstruction/disposition tables scanned; full shortlist IDEA-206/290–305 and linked part-2 material available to the relevant workers. literature/INDEX read for attribution context; no transferred unread literature theorem is used.
@@ -66,7 +66,7 @@
 - A separate followup Astra high review of the original Claude measured records accepts the six-script-covered claims with minor C-01: cumulative-strip wording corrected to separate one-cell-thick offset bands. Old wording is preserved in record02 History. All six targeted central optimizer locations stayed in the stated box; standalone whole-square maj.py scans remain unrerun. [Original-observations audit](independent-checks-claude-observations-audit.md).
 - Actual models: Sol xhigh development/orchestration under AC's explicit request; Sol medium replay; Astra high supplementary mathematical checks. Runtime metadata was not independently exposed to subagents; requested/configured settings are recorded.
 - Connector commit identity is Andrey Chesnokov with the account noreply email, rather than the handoff's requested gmail email: the connector exposes no author-email selector. Published history is preserved; no force-push or main mutation.
-- [report.md](report.md), [results](../../results/padua-argmax-alln-20261101.md), [evidence-manifest.json](evidence-manifest.json) and [literal shared proposals](proposed-record-changes.md) record the boundary. No final IDs assigned or shared registry changed. Stage AUDIT; [handoff03](handoffs/03-audit.md) is published in the following status-only/handoff commit after the scientific output SHA is known.
+- [report.md](report.md), [results](../../results/padua-argmax-alln-20261101.md), [evidence-manifest.json](COLD_STORAGE.md) (cold storage since 2026-11-02) and [literal shared proposals](proposed-record-changes.md) record the boundary. No final IDs assigned or shared registry changed. Stage AUDIT; [handoff03](handoffs/03-audit.md) is published in the following status-only/handoff commit after the scientific output SHA is known.
 
 ## Runs needed (updated during part 3)
 
@@ -141,6 +141,26 @@ AC authorizes at most7 rounds each in direction1 (defect domination), then2 (uni
   - NOTEs N1–N14 include assert-only checkers under `-O` and the 5 MB rule scope (for AC).
 - **Stage.** Set to WORK. [Handoff 05](handoffs/05-audit.md) is done; [handoff 06](handoffs/06-response.md) gives the Codex response. Earlier handoffs: [01](handoffs/01-update-after-part2.md), [02](handoffs/02-part3-work.md), [03](handoffs/03-audit.md) (superseded), [04](handoffs/04-gated-development.md).
 - **Not changed.** No developer theory, evidence or code file was edited. No final IDs; no shared registry change.
+
+## 2026-11-02 — Claude, claude-opus-5-5 xhigh (configured) — AC redirection: cold storage
+
+- **AC's instruction** (after audit-01): "I do not think that we have to store large outputs that can be regenerated. Make sure that all needed code is in the repo, some short summaries are stored and expunge the large data files (cold storage)". Then: "18 mb per repo is too much."
+- **What this changes.** The instruction adds to handoff 06, so handoff 06 is superseded by [handoff 07](handoffs/07-response-and-cold-storage-audit.md).
+- **Done on this branch** (Claude, orchestrator):
+  - Every generated data file of 16 KiB or more in this topic (36 files, 2,526,191 bytes) was removed from the branch head.
+  - Each is recorded in [COLD_STORAGE.md](COLD_STORAGE.md) and [cold-storage.json](cold-storage.json) with its SHA-256, its Git blob at the pushed source commit `1cecd68ac0a64b01ed7b2d262b6263a955a7d4d7`, its generating command and its short-summary location.
+  - The new [`tools/cold_storage.py`](../../tools/cold_storage.py) does plan, verify, restore, clean and export.
+  - Code, records, finite certificates, checker receipts and summaries stay.
+  - Five link targets were redirected to COLD_STORAGE.md: in report.md, LOG.md (two), ideas.md and ideas-codex-fallback.md. The link in the Astra check report `gated/checks/d1-r01.md:178` is left unedited.
+- **Checks run.**
+  - `verify` was accepted for all 36 entries.
+  - `restore` and then `clean` round-trip byte-exactly.
+  - The frozen `check_evidence.py` manifest now fails its file-set assertion. That manifest predates audit-01; refreshing it belongs to the response.
+- **Effect on audit-01 F1.** The T1 per-degree split files are now off the head.
+- **Repository-wide part.** The cleanup of other topics is outside this topic. It goes on a separate branch and PR from main.
+- **Delivery and history.**
+  - Delivery to AC's `Downloads\padua\cold_storage\padua-argmax-alln-20261101\` is PENDING; run `export` there.
+  - Git history is not rewritten, so the clone's object store does not shrink.
 
 ## Runs / work still needed after gated completion
 

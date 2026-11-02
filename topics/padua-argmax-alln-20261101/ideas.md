@@ -100,4 +100,4 @@ Earlier instructions, tests and candidate history above are preserved. These dat
 - **Claude-04, generating-curve factorization:** deferred and not tested in this part3 step. No result is inferred from its untested formula.
 - **Claude-05, global-max-only certifier:** retained. The sufficient tensor Bernstein correctness theorem codex-03 and independently replayed degree2/8–16 proofs codex-02/07/08 establish the finite goal in that range. Completed n12 discovery5.176281s, even including its two replay costs, is below10×the inherited fulln7 baseline3523.410076s. The timing kill is not triggered in the tested scope. No larger-degree runtime theorem or degree>=17 run is claimed.
 
-All new labels have provisional topic prefixes; the reservation is not a final-ID assignment. [Report](report.md) and [evidence](evidence-manifest.json) carry proof/measurement limits. Required Claude audit PENDING.
+All new labels have provisional topic prefixes; the reservation is not a final-ID assignment. [Report](report.md) and [evidence](COLD_STORAGE.md) (evidence-manifest.json, cold storage) carry proof/measurement limits. Required Claude audit PENDING.
