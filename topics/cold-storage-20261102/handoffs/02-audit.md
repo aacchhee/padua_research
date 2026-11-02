@@ -1,6 +1,6 @@
 # Handoff 02 — cold-storage-20261102 — Codex protocol audit of the repository cold-storage cleanup
 
-- Status: open
+- Status: done in 7ec5aad8e3050864cde88e575aae46f39ce49194
 - Previous handoff: 01-audit.md (superseded by this handoff)
 
 - Next agent / model / effort: Codex, `gpt-6-astra`, medium or high (auditor's choice, recorded)
