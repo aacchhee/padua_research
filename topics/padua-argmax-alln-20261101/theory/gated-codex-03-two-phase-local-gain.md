@@ -63,8 +63,7 @@ at a zero term, no pole avoidance assumption, and no defect hypothesis.
 ## Status by part
 
 Overall status: **PROVED**, by the analytic argument below; supplementary
-independent Astra xhigh reconstruction completed. Required Claude audit
-PENDING. The constants and threshold are non-effective in this record.
+independent Astra xhigh reconstruction completed. Claude audit-01 ACCEPTED the mathematics at its stated scope (record fixes pending). The constants and threshold are non-effective in this record.
 
 | Mathematical part | Status | Evidence / limitation |
 |---|---|---|
@@ -76,7 +75,7 @@ O(rho)-width sign-change proof step is retained in the round-1 record.
 ## Depends on
 
 PD-T185 for the corrected polynomial kernel; PD-T189 for normalization;
-PD-T159 for Lambda_c >= (4/pi^2)log^2(n)-54. The exact algebra and reflection
+PD-T156 (1), also PD-T157 (1), for Lambda_c >= (4/pi^2)log^2(n)-54. The exact algebra and reflection
 normalization are reproduced below, as also used in the separate global
 primitive record. The local argument does not assume the global inequality.
 
@@ -84,8 +83,7 @@ primitive record. The local argument does not assume the global inequality.
 
 The written round-1 proof was independently reconstructed by a distinct
 Astra xhigh checker with no blocking mathematical finding; see
-[independent check](../gated/checks/d1-r01.md). This supplements and does not
-replace the required Claude audit, which remains PENDING. A small float64
+[independent check](../gated/checks/d1-r01.md). This supplementary check does not replace Claude audit-01, which ACCEPTED the mathematics at its stated scope (record fixes pending). A small float64
 algebra/collision sanity run is recorded in
 [round 1](../gated/d1/r01-phase.md) and
 [its receipt](../outputs/gated/d1_phase_r01_sanity.json); it is MEASURED,
@@ -104,7 +102,7 @@ No external source transfer or priority claim.
 
 ## Proof
 
-## 1. Verify the numerator before estimating
+### 1. Verify the numerator before estimating
 
 Write \(u=j\pi/n+\alpha/n,v=r\pi/m+\beta/m\), \(j+r\) odd,
 and \(P_n=T_m+T_n\). Direct angle addition gives
@@ -147,7 +145,7 @@ two values agree by evenness of the original polynomial, and the half
 weight restores the original count. In particular simultaneous negation
 pairs the regular signed Taylor terms exactly.
 
-## 3. Local regular set and signed Taylor estimate
+### 2. Local regular set and signed Taylor estimate
 
 In the physical mesh remove
 \(B=\{r=j+1,j\ge2n/3\}\), including \((n,m)\). For every remaining
@@ -219,7 +217,7 @@ sum of its absolute second derivatives is at most \(C\rho^2\log m\).
 Thus the normalized signed excess in either simultaneous-negation pair
 in (2) is at most \(C\rho^2\log m\).
 
-## 4. Numerator sign changes: the new two-phase issue
+### 3. Numerator sign changes: the new two-phase issue
 
 On the regular set choose \(\chi=\operatorname{sign}(\cos u_0-\cos v_0)\),
 also when the reference numerator is zero. Then
@@ -282,7 +280,7 @@ phases. This proves the required sign-change estimate without assuming
 a width \(O(\rho)\) in the far rows. The case \(\rho=0\) is exact
 normalization and is excluded only from expressions containing \(1/\rho\).
 
-## 5. Finite-sum bound for the removed collision family
+### 4. Finite-sum bound for the removed collision family
 
 For \(r=j+1\) write \(h=n-j\),
 \(x=(h\pi-\alpha)/n,y=(h\pi-\beta)/m\),
@@ -324,7 +322,7 @@ by the formal rational numerator zero. Combining (8), (11)–(14), and
 ## Consequence
 
 On the small phase neighborhood,
-\(1-a\ge c(\alpha^2+\beta^2)\ge c'\rho^2\). PD-T159 gives
+\(1-a\ge c(\alpha^2+\beta^2)\ge c'\rho^2\). PD-T156 (1), also PD-T157 (1), gives
 \(\Lambda_c\ge(4/\pi^2)\log^2n-54\). For sufficiently large \(n\),
 (B) therefore implies
 \[
@@ -344,8 +342,21 @@ statement and proof.
 
 ## History
 
+The initial entry below records the publication checkpoint; its pending-review wording is superseded by the dated correction that follows.
+
 2026-11-02: split claim B and its optimized consequence from the round-1
 development record without changing either statement. The complete
 regular-set, numerator-sign and finite-sum collision arguments are retained.
 Supplementary Astra xhigh reconstruction completed; required Claude audit
 remains pending. No final ID or shared-registry edit is made here.
+
+
+### Documentation correction — 2026-11-02
+
+F2: the original direct citations were “PD-T159 for Lambda_c >= (4/pi^2)log^2(n)-54” and “PD-T159 gives”. The explicit logarithmic lower bound is PD-T156 (1) / PD-T157 (1); PD-T159 supplies the separate corner-product comparison. Only citations changed. N6: the original proof subsection headings were numbered 1, 3, 4, 5 at level 2; they are now consecutive 1–4 subsections under Proof. Equation numbers and proof text are unchanged.
+
+Current review scope (F3): [Claude audit-01](../audit-01.md) ACCEPTED the mathematics exactly as stated; its record/protocol findings and the protocol check of this response remain pending. Supplementary independent checks are complete and do not replace that Claude audit. No proof status, statement, checker predicate or certificate changes. Earlier publication-time review wording is preserved here as history:
+
+> Required Claude audit
+> PENDING
+> Claude audit, which remains PENDING

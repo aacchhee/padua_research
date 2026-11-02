@@ -51,8 +51,8 @@ on a global maximizer or on a defect limit.
 ## Status by part
 
 Overall status: **PROVED**, by the complete analytic argument below;
-supplementary independent Astra xhigh reconstruction completed. Required
-Claude audit PENDING. No effective numerical value of C is claimed.
+supplementary independent Astra xhigh reconstruction completed.
+Claude audit-01 ACCEPTED the mathematics at its stated scope (record fixes pending). No effective numerical value of C is claimed.
 
 | Mathematical part | Status | Evidence / limitation |
 |---|---|---|
@@ -70,8 +70,7 @@ harmonic and reciprocal-square estimates are proved or explained below.
 
 The written round-1 proof was independently reconstructed by a distinct
 Astra xhigh checker with no blocking mathematical finding; see
-[independent check](../gated/checks/d1-r01.md). This supplements and does not
-replace the required Claude audit, which remains PENDING. A small float64
+[independent check](../gated/checks/d1-r01.md). This supplementary check does not replace Claude audit-01, which ACCEPTED the mathematics at its stated scope (record fixes pending). A small float64
 algebra/collision sanity run is recorded in
 [round 1](../gated/d1/r01-phase.md) and
 [its receipt](../outputs/gated/d1_phase_r01_sanity.json); it is MEASURED,
@@ -203,8 +202,20 @@ PD-T099 remains OPEN.
 
 ## History
 
+The initial entry below records the publication checkpoint; its pending-review wording is superseded by the dated correction that follows.
+
 2026-11-02: split claim A from the round-1 development record without
 changing its statement or proof. The proof retains polynomial collisions;
 the rendering-only missing backslash after (1) was fixed before splitting.
 Round-1 independent reconstruction completed; required Claude audit remains
 pending. No final ID or shared-registry edit is made here.
+
+
+### Documentation correction — 2026-11-02
+
+F5 provenance impact: the frozen [d1-r02 check](../gated/checks/d1-r02.md) pinned `d57b8d07709013a246259aa3095af340e2e2b2c5d60c44d7f332cf9b44f59dc9`, while the audited committed file before this correction was `39c2f217f1ce1ca618033f0ac32852ad47933817a240911d085764cf1e3b17b7`. Claude audit-01 sub-audit B compared that committed proof with r01-phase §§1–2 (identical) and reconstructed the committed result, resolving mathematical impact. This is an attributed audit conclusion, not a new developer rerun. The frozen receipt stays unchanged; this correction and current review wording account for the new file hash.
+
+Current review scope (F3): [Claude audit-01](../audit-01.md) ACCEPTED the mathematics exactly as stated; its record/protocol findings and the protocol check of this response remain pending. Supplementary independent checks are complete and do not replace that Claude audit. No proof status, statement, checker predicate or certificate changes. Earlier publication-time review wording is preserved here as history:
+
+> Claude audit PENDING
+> Claude audit, which remains PENDING

@@ -3,7 +3,7 @@
 ID kind: PD-T.
 Aliases: direction2 round1; canonical nonnode corner derivatives; zero-cardinal correction; weighted-gradient corner radius.
 Split from: supporting local-corner obligation for PD-T099/P3.
-Split into: none. Uniform slope and energy estimates remain OPEN obligations outside the proved statement.
+Split into: none. All-n uniform slope and energy estimates remain OPEN obligations outside the proved statement; the eventual slope consequence of gated-codex-14 is qualified in the dated correction below.
 
 ## Statement
 
@@ -54,7 +54,7 @@ All derivatives in this record are physical x,y derivatives. The one-sided direc
 
 ## Status by part
 
-Overall status: **PROVED**, by the analytic proof below. Supplementary independent review and required Claude audit are pending.
+Overall status: **PROVED**, by the analytic proof below. Supplementary independent review is complete; Claude audit-01 ACCEPTED the mathematics at its stated scope (record fixes pending).
 
 | Mathematical part | Status | Evidence / limits |
 |---|---|---|
@@ -65,7 +65,7 @@ Candidate disposition: retained quantitative variant of original P3 / Claude-02 
 
 ## Depends on
 
-PD-T101: exact corrected coefficient kernel, positive weights, cardinality and unisolvence. Elementary finite sums, polynomial interpolation, cosine identities and the Chebyshev differential equation, derived from T_n(cos theta)=cos(n theta), are used below. The upper model itself does not require direction1. Its proposed application uses gated-codex-02 and PD-T159 to bound Lambda_n/Lambda_c, and gated-codex-11 to localize large-degree maximizers.
+PD-T101: exact corrected coefficient kernel, positive weights, cardinality and unisolvence. Elementary finite sums, polynomial interpolation, cosine identities and the Chebyshev differential equation, derived from T_n(cos theta)=cos(n theta), are used below. The upper model itself does not require direction1. Its proposed application uses gated-codex-02 and PD-T156 (1) / PD-T157 (1) to bound Lambda_n/Lambda_c, and gated-codex-11 to localize large-degree maximizers.
 
 ## Proof
 
@@ -163,12 +163,24 @@ Then kappa=min(1,a/(b+e*K)) gives, for 0<H<=kappa/n^2,
 
    lambda_n(c+h)<=Lambda_c-(a/2)*n^2*Lambda_c*H<Lambda_c.
 
-Indeed exp(z)-1-z<=e*z^2/2 for0<=z<=1. This is an implication with explicit hypotheses, not a claim that (8) has been proved. Direction1 gives the last inequality eventually (indeed Lambda_n/Lambda_c<=1+O(1/log n)); its threshold and the finite bridge remain separate. The first two uniform inequalities are OPEN. A useful exact next lemma is A_n,B_n<=-n^2*Lambda_c/8 and W_n<=n^4*Lambda_c for every n>=2, or a proved eventual version with explicit constants. The constants are trial bounds, not asserted theorems.
+Indeed exp(z)-1-z<=e*z^2/2 for0<=z<=1. This is an implication with explicit hypotheses, not a claim that (8) has been proved. Direction1 gives the last inequality eventually (indeed Lambda_n/Lambda_c<=1+O(1/log n)); its threshold and the finite bridge remain separate. The all-n uniform slope inequality and the energy inequality remain OPEN; the eventual slope consequence is stated in the dated correction below. A useful exact next lemma is A_n,B_n<=-n^2*Lambda_c/8 and W_n<=n^4*Lambda_c for every n>=2, or a proved eventual version with explicit constants. The constants are trial bounds, not asserted theorems.
 
 Unlike a raw coefficient bound of order n^6, (3) has the scale needed to match gated-codex-11. Individual gradient/value ratios need not be bounded by O(n^2), and neither fixed-n slope negativity nor the numerical weighted-energy screen proves (8). The unknown finite bridge prevents an all-n conclusion even after an eventual local theorem.
 
 ## Checks, sources and history
 
-The proof is analytic; numerical screens are supplementary and recorded separately by the assigned screen worker in gated/d2/r01-screen.md. No numerical output is a premise. The derivative formulas were communicated to that worker for comparison against the independent corrected coefficient-matrix evaluator. Required Claude audit and supplementary independent mathematical review remain pending.
+The proof is analytic; numerical screens are supplementary and recorded separately by the assigned screen worker in gated/d2/r01-screen.md. No numerical output is a premise. The derivative formulas were communicated to that worker for comparison against the independent corrected coefficient-matrix evaluator. Supplementary independent review is complete; Claude audit-01 ACCEPTED the mathematics at its stated scope (record fixes pending).
 
 Source base7d308b10d946b607ae0690454f6c0103690775a4; round input checkpointaa1883f2fd9a837bb931ce804cb4b210c7475886. Rules AGENTS.md, agents/WORKFLOW.md and agents/codex/CODEX.md were read from that checkpoint. Codex, parent-assigned gpt-6.1-sol xhigh,2026-11-02; actual runtime metadata not independently exposed. Bounded direction2 round1 work only. No external 1-D source theorem, Git operation, shared registry change, direction3 development or future-round execution.
+
+
+### Documentation correction — 2026-11-02
+
+F2: the original application citation “gated-codex-02 and PD-T159 to bound Lambda_n/Lambda_c” uses the explicit logarithmic lower bound from PD-T156 (1) / PD-T157 (1). PD-T159 remains their corner-product comparison dependency.
+
+F15: the original wording “Uniform slope and energy estimates remain OPEN obligations outside the proved statement” and “The first two uniform inequalities are OPEN” is retained here with its all-n/energy qualification. Gated-codex-14 (9) already gives, writing q_n=Lambda_c/10−237000 log(n+1), A_n<=−2n²q_n and B_n<=−2m²q_n by the inward axis limits rho²/h_x→2n² and rho²/h_y→2m². PD-T157 (1) gives log(n+1)/Lambda_c→0. Thus for each fixed 0<a<1/5 there is N_a>=ceil(exp(10^7)) such that A_n,B_n<=−a n²Lambda_c for all n>=N_a. N_a depends on a: log n>=10^7 alone is not asserted to suffice for every a arbitrarily close to 1/5. This records the requested consequence of the existing bound; all-n slope uniformity, the energy premise and the trial all-n constants remain OPEN. The four proved parts above are unchanged.
+
+Current review scope (F3): [Claude audit-01](../audit-01.md) ACCEPTED the mathematics exactly as stated; its record/protocol findings and the protocol check of this response remain pending. Supplementary independent checks are complete and do not replace that Claude audit. No proof status, statement, checker predicate or certificate changes. Earlier publication-time review wording is preserved here as history:
+
+> Supplementary independent review and required Claude audit are pending
+> Required Claude audit and supplementary independent mathematical review remain pending

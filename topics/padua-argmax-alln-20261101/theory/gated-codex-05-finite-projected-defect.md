@@ -21,7 +21,7 @@ Each assertion is uniform in the other coordinate, including arbitrary moving st
 
 ## Assumptions/status/dependencies
 
-Exact real arithmetic and the corrected kernel/weights of PD-T101. Overall status:PROVED by finite inequalities and grid counts below; independent check and required Claude audit pending.
+Exact real arithmetic and the corrected kernel/weights of PD-T101. Overall status:PROVED by finite inequalities and grid counts below; supplementary independent review is complete; Claude audit-01 ACCEPTED the mathematics at its stated scope (record fixes pending).
 Depends on gated-codex-01's exact pairwise normalization and numerator identity. No numerical quadrature, fitted constant, limit theorem or computer-proof premise.
 
 ## Proof
@@ -49,4 +49,16 @@ This theorem is a finite strengthening discovered during direction1 round2's qua
 
 ## Checks/history
 
-Codex Sol xhigh, scientific source7d308b10d946b607ae0690454f6c0103690775a4, authorized direction1 round2. Written grid-count proof; independent mathematical review pending. PD-T099 remains OPEN.
+Codex Sol xhigh, scientific source7d308b10d946b607ae0690454f6c0103690775a4, authorized direction1 round2. Written grid-count proof; supplementary independent review is complete; Claude audit-01 ACCEPTED the mathematics at its stated scope (record fixes pending). PD-T099 remains OPEN.
+
+
+### Documentation correction — 2026-11-02
+
+N4: Nδ here is the explicit finite-block threshold ceil(16π/δ), not the existential compact-complement threshold denoted Nδ in gated-codex-04. Neither notation nor quantifier in either theorem is changed.
+
+Current review scope (F3): [Claude audit-01](../audit-01.md) ACCEPTED the mathematics exactly as stated; its record/protocol findings and the protocol check of this response remain pending. Supplementary independent checks are complete and do not replace that Claude audit. No proof status, statement, checker predicate or certificate changes. Earlier publication-time review wording is preserved here as history:
+
+> independent check and required Claude audit pending
+> independent mathematical review pending
+
+F13 closest-prior citation: [PD-T103](../../padua-proof-attempts-20261101/theory/proof-attempts-codex-03-degenerate-maxima.md) supplies an earlier excluded-zero-cardinal local certificate at the two degree-3 degenerate maxima: it controls a signed background and the excluded cardinal by exact Hessian bounds on fixed angle discs. It is a conceptual predecessor for retaining cancellation and zero cardinals, not a proof of this compact projection/defect result or an additional hypothesis here. No duplicate, priority or exhaustive novelty claim is made.

@@ -1,0 +1,263 @@
+{
+ "initial": "6fae535df28303b27ca1d533d9afa229660a3a20",
+ "pinned_head": "b8fbb5c5be374bf658d2970681c7cac0fb40d737",
+ "manifest_sha256": "ef6efffe18f81ad9e748ff91dfdc95f25770811e1304e75c835cb6ed4b0b262e",
+ "human_manifest_sha256": "29094f0bd3c1858c6704e6738ed6dbfe696a084e4827562f007e336c46bdfdcc",
+ "sources_and_summaries": [
+  {
+   "kind": "script",
+   "path": "audit-support/claude-audit-01/files/A/indep/padua_indep.py",
+   "initial_blob": "5cc504d020cbbb5845cb5ec1d9f2c40de0bc35d2",
+   "bytes": 25510,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "script",
+   "path": "audit-support/claude-audit-01/files/D/t1_local.py",
+   "initial_blob": "5f31c71ebc8fd508c38b4d11d9f5e32aaf612fc8",
+   "bytes": 2654,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "script",
+   "path": "code/part3/check_evidence.py",
+   "initial_blob": "390ce6862ded0106f4fe54020523ee5f5622dff4",
+   "bytes": 3874,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "script",
+   "path": "code/gated/d1_screen_r01.py",
+   "initial_blob": "cd1c6b42627e33f0aa82c1c966fc85799532d2e8",
+   "bytes": 11002,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "script",
+   "path": "code/gated/d2_screen_r01.py",
+   "initial_blob": "d69931d9a3c0daf8350b147c39583c75ae1bfea9",
+   "bytes": 12279,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "script",
+   "path": "code/gated/d3_edge_generate.py",
+   "initial_blob": "ea8c40233fe0dbc2c0ab69b8535fc5a180f5fa95",
+   "bytes": 4350,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "script",
+   "path": "code/part3/tests_T2_T3.py",
+   "initial_blob": "272543f5b27749b18fb0bddaf38fac4999a156d0",
+   "bytes": 2890,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "script",
+   "path": "code/part3/pairing_screens.py",
+   "initial_blob": "bc346c2c8d4f07fa4d58d7d825a2786419c82166",
+   "bytes": 7554,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "script",
+   "path": "code/part3/tests_T1.py",
+   "initial_blob": "7472cd2a084e8a8d7bc5fbf59fb82f7fcf46ad9c",
+   "bytes": 3454,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "script",
+   "path": "code/part3/tests_analyze.py",
+   "initial_blob": "3c5d3c6df5baec9e68026a8d839fc9559c4002b5",
+   "bytes": 4874,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "summary",
+   "path": "audit-01.md",
+   "initial_blob": "2199c4971263b5e9a498328b4e06a04e484162bc",
+   "bytes": 31700,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "summary",
+   "path": "audit-support/claude-audit-01/README.md",
+   "initial_blob": "1722d232696c6d1ce729e2fddf575bff26423ef9",
+   "bytes": 2082,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "summary",
+   "path": "audit-support/claude-audit-01/subaudit-reports/A.md",
+   "initial_blob": "6c73e2ad462f2f40292deb70282a0aa4b7fd4071",
+   "bytes": 5042,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "summary",
+   "path": "audit-support/claude-audit-01/subaudit-reports/D.md",
+   "initial_blob": "2c83df0cfc10800bbcd6f02d0bf76de97828901d",
+   "bytes": 5376,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "summary",
+   "path": "audit-support/claude-audit-01/subaudit-reports/F.md",
+   "initial_blob": "ef2d18b7bbaf70e789387377ddb330fde852cb5d",
+   "bytes": 5665,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "summary",
+   "path": "outputs/gated/check_d1_r01_receipt.json",
+   "initial_blob": "01a7f2813400fb048380d55f0f463decc05258c7",
+   "bytes": 9860,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "summary",
+   "path": "outputs/gated/check_d2_r01_receipt.json",
+   "initial_blob": "5be46317cc8a10f98b2b2f337c3a224f2509e639",
+   "bytes": 7348,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "summary",
+   "path": "outputs/gated/d2_screen_r01_weighted.json",
+   "initial_blob": "464d7d7d18789b16c7b6ad13b27c754c9bd2c4fa",
+   "bytes": 4675,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "summary",
+   "path": "outputs/gated/check_d3_r01_receipt.json",
+   "initial_blob": "58a70f28f748023e3207780f0823018e26a44533",
+   "bytes": 10932,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "summary",
+   "path": "outputs/gated/d3_edge_certificate.json",
+   "initial_blob": "54e4694b7d40b70bfae6716e1c1fbe2f18f5e07f",
+   "bytes": 13561,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "summary",
+   "path": "outputs/part3/independent_T2.out",
+   "initial_blob": "f042fb7ddb510ac15f41779234091f0d72c7dc47",
+   "bytes": 3338,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "summary",
+   "path": "outputs/part3/independent_T3.out",
+   "initial_blob": "e74eb5fc41581bff994a4898b5d1fd145c3b7060",
+   "bytes": 527,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "summary",
+   "path": "outputs/part3/tests_T2.out",
+   "initial_blob": "9dffbd2aa8479565050171cd3e3d491722765619",
+   "bytes": 3343,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "summary",
+   "path": "outputs/part3/tests_T3.out",
+   "initial_blob": "cf633dec851e33399339e159d43334f35c646317",
+   "bytes": 525,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "summary",
+   "path": "outputs/part3/tests_summary.out",
+   "initial_blob": "e46ce8f59b40897b17684afbb28525f950c56f83",
+   "bytes": 4169,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "summary",
+   "path": "attempts/T1-T5.md",
+   "initial_blob": "d6dc97bb1cd4d2e69d4ca42fbb53461f29f18f8f",
+   "bytes": 14959,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "summary",
+   "path": "independent-checks-part3.md",
+   "initial_blob": "f168b6cb17405cbc257ebf4e84db391935a78d3e",
+   "bytes": 28550,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "summary",
+   "path": "theory/argmax-alln-codex-06-measured-pairing.md",
+   "initial_blob": "3d740d140f6c4727c7a05dcc44a7edbe7f904105",
+   "bytes": 4934,
+   "unchanged_at_pinned_head": true
+  },
+  {
+   "kind": "summary",
+   "path": "outputs/part3/pairing_exact_check.json",
+   "initial_blob": "2363a5391cae41372e7aeee1955666296b8b30f8",
+   "bytes": 503,
+   "unchanged_at_pinned_head": true
+  }
+ ],
+ "redirected_links": [
+  {
+   "document": "LOG.md",
+   "label": "input-snapshot.json",
+   "old_target": "input-snapshot.json",
+   "new_target": "COLD_STORAGE.md",
+   "target_exists": true
+  },
+  {
+   "document": "LOG.md",
+   "label": "evidence-manifest.json",
+   "old_target": "evidence-manifest.json",
+   "new_target": "COLD_STORAGE.md",
+   "target_exists": true
+  },
+  {
+   "document": "report.md",
+   "label": "Pinned input paths/blobs",
+   "old_target": "input-snapshot.json",
+   "new_target": "COLD_STORAGE.md",
+   "target_exists": true
+  },
+  {
+   "document": "report.md",
+   "label": "manifest",
+   "old_target": "evidence-manifest.json",
+   "new_target": "COLD_STORAGE.md",
+   "target_exists": true
+  },
+  {
+   "document": "ideas.md",
+   "label": "evidence",
+   "old_target": "evidence-manifest.json",
+   "new_target": "COLD_STORAGE.md",
+   "target_exists": true
+  },
+  {
+   "document": "ideas-codex-fallback.md",
+   "label": "output",
+   "old_target": "outputs/part3/pairing_screens.json",
+   "new_target": "COLD_STORAGE.md",
+   "target_exists": true
+  }
+ ],
+ "actual_redirect_count": 6,
+ "scientific_trees_unchanged": {
+  "theory": true,
+  "code": true,
+  "outputs/gated/d3_edge_certificate.json": true
+ },
+ "manifest_unchanged_at_pinned_head": true,
+ "human_manifest_unchanged_at_pinned_head": true
+}

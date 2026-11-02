@@ -1,6 +1,6 @@
 # Gated-campaign candidate records
 
-2026-11-02. Codex gpt-6.1-sol xhigh. All IDs provisional; required Claude audit PENDING. This consolidates the preregistered variants and their actual dispositions; it does not replace or rewrite their earlier contracts. The complete baseline/obstruction gate is in [D1 round1](d1/r01-phase.md), [original gate](../gate.md), [original ideas](../ideas.md) and [fallback records](../ideas-codex-fallback.md). The full IDEAS headings/aliases, obstruction/disposition tables and shortlisted IDEA206/290–305 were read in the campaign. Literature INDEX was read; no external1D theorem or historical priority is claimed.
+2026-11-02. Codex gpt-6.1-sol xhigh. All IDs provisional; Claude audit-01 accepts mathematical scopes, while response/storage protocol followup is pending. This consolidates the preregistered variants and their actual dispositions; it does not replace or rewrite their earlier contracts. The complete baseline/obstruction gate is in [D1 round1](d1/r01-phase.md), [original gate](../gate.md), [original ideas](../ideas.md) and [fallback records](../ideas-codex-fallback.md). The full IDEAS headings/aliases, obstruction/disposition tables and shortlisted IDEA206/290–305 were read in the campaign. Literature INDEX was read; no external1D theorem or historical priority is claimed.
 
 ## IDEA?argmax-alln-gated-codex-01 — two-phase primitive and projected defect
 
@@ -52,7 +52,7 @@ Aliases: D2 round1; zero-cardinal correction; aggregate Taylor radius.
 - Separation/kill: an aggregate n^4 Lambda_c second-order scale distinguishes this from an unusable raw coefficient bound; fixed-n negativity alone fails the gate. Frozen-sign Hessians without sign-change control would be insufficient.
 - Cheapest test: exact corner formulas plus the registered13-degree/five-direction screen, with exact n2 and outward n3/4/8 controls. Analytic upper model is checked independently of numerical agreement.
 - Actual outcome: theory13 PROVED; main, energy and symbolic replays agree. Numerical slopes/energies remain MEASURED. The checker corrected an initial private angular-to-physical sign error before acceptance; final source/check history records it.
-- Disposition: retained theorem13; uniform slope/energy hypotheses deferred, neither proved nor refuted. Resume only for an analytic uniform estimate. The route is unnecessary for eventual equality after gated05.
+- Disposition: retained theorem13; all-n slope uniformity and weighted-energy hypotheses deferred, neither proved nor refuted. The eventual slope premise follows analytically from theorem14(9), with a threshold depending on fixed0<a<1/5. Resume only for the remaining uniform/energy estimate. The route is unnecessary for eventual equality after the reflection-first candidate IDEA?argmax-alln-gated-codex-05.
 
 ## IDEA?argmax-alln-gated-codex-05 — reflection before absolute values
 
@@ -80,3 +80,9 @@ Aliases: D3 round1; odd-board sign identity; horizontal compact envelope.
 - Canonical record: gated-codex-16. No historical novelty or transferred external theorem.
 
 The separate E-C/E-P candidate remains fallback03 with its existing aliases and kill criteria; D3 does not create a duplicate IDEA record for it. Theory17 proves all10 whole-cell E-C comparisons atn7,12 by complete small interval-Bernstein certificates and distinct actual replay. E-P is **REJECTED: refuted** by exact gated-N02 atn12; the90-point screen and eight certified reversals remain separately scoped. All-n E-C is OPEN/deferred, with resumption requiring a concrete analytic comparison controlling different maximizing phases; no such repair emerged. Earlier O-R/O-L/O-Lt dispositions are unchanged.
+
+2026-11-02 corrections (F15/N6): the earlier “uniform slope/energy
+hypotheses deferred” meant all-n uniformity and energy; eventual slopes
+follow the already accepted theorem14. The earlier “after gated05” meant
+candidate05 (reflection first), not theory05's finite projected defect.
+No IDEA disposition or mathematical status changes in this clarification.

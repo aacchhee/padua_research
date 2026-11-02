@@ -206,3 +206,22 @@ The separate finite theorem is
 `theory/gated-codex-17-finite-edge-cell-comparison.md`; the exact E-P
 counterexample is independently retained by the mathematical worker in
 the separate N02 record. Required Claude audit remains PENDING.
+
+## History
+
+
+### Documentation correction — 2026-11-02
+
+F6 provenance correction: the frozen certificate's `preregistration_note_sha256` is exactly the SHA-256 of the first 86 lines (5115 bytes) of this note. Reproduction from the repository root:
+
+```sh
+head -n 86 topics/padua-argmax-alln-20261101/gated/d3/r01-finite.md | sha256sum
+```
+
+Output: `03e8770164a201354aa2eb6e293cf6503f29e9ee4c07c681b4a9ad21deafb6c5  -`. The audited complete note before this addendum hashed to `94e87303e0e08aecee3250e8108cfb4c97f56c1400bbbdabb286afca3ed9caa4`; at that audited input, lines 87–208 were appended as the completion record, without changing the scope, phase grid, thresholds, limits or acceptance text in that frozen prefix. The note was **not committed before execution**: its first publication was together with the results in `c173fbf`. Consequently its pre-execution timing rests on developer records, not Git history. The earlier public `r01-contract.md` was committed at `71f49e5` and fixes the decisive parameters. The prefix relation is content provenance, not independent evidence of pre-execution publication.
+
+N8 limit correction: the original “4096 leaves/depth24 per pair or about180CPU seconds” wording above combines a per-pair subdivision cap with a single global CPU deadline. The producer starts one `started_cpu` before controls and the E-P screen and passes `started_cpu + 180.` to every pair; it checks that deadline when an unsuccessful bound would otherwise be subdivided. The depth and leaf/stack caps apply per pair. No producer limit or predicate changes.
+
+N8 checkpoint qualification: `source_checkpoint=3aebb29` predates the first committed D3 sources. The D3 source identity is supplied by the full SHA-256 table above and in the certificate, not by that checkpoint label.
+
+Current review: the pending-Claude wording above is historical. Claude audit-01 ACCEPTED the finite E-C and N02 statements at their stated scopes; this provenance correction and the response protocol check remain pending. The first 86 lines, mathematical sources, frozen certificate and checker receipts are unchanged.

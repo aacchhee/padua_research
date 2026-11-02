@@ -40,8 +40,7 @@ For n>=48 the four boxes are disjoint near their respective corners.
 ## Status by part
 
 Overall status: **PROVED**, by the analytic sequence argument below with
-explicitly cited proved dependencies. Supplementary independent
-mathematical review and required Claude audit pending at publication.
+explicitly cited proved dependencies. Supplementary independent review is complete; Claude audit-01 ACCEPTED the mathematics at its stated scope (record fixes pending).
 No numerical experiment is a premise.
 
 | Mathematical part | Status | Evidence / limitation |
@@ -62,7 +61,7 @@ phase/gain/defect architecture. No novelty claim.
   sup(S-Lambda_c)=O(log^-2 n).
 - Gated-codex-08: exact finite bound Qv or Qh>=1/1536 for n>=48,
   rho<=1/8 and the relevant coordinate endpoint distance >=4pi/n.
-- PD-T159: Lambda_c>=(4/pi^2)log^2 n-54.
+- PD-T156 (1) / PD-T157 (1): Lambda_c>=(4/pi^2)log^2 n-54.
 
 The explicit but coarse local constants of gated-codex-07 are not needed
 for the non-effective existence statement (1).
@@ -159,6 +158,19 @@ independently exposed. Rules/snapshot
 `7d308b10d946b607ae0690454f6c0103690775a4`.
 The full candidate/obstruction gate is retained in round 1; this is the
 registered round-4 finite-geometry continuation, not a new source transfer.
-Independent review and required Claude audit remain pending. No phase
+Supplementary independent review is complete; Claude audit-01 ACCEPTED the mathematics at its stated scope (record fixes pending). No phase
 scan, degree grid, fit, Git operation, shared registry change, future
 round, or direction-2 work is a premise or execution of this worker.
+
+
+### Documentation correction — 2026-11-02
+
+F2: the original direct dependency “PD-T159: Lambda_c>=(4/pi^2)log^2 n-54” is corrected to PD-T156 (1) / PD-T157 (1). PD-T159 remains the corner-product comparison behind those bounds; no inequality changes.
+
+N4: N_* in this record denotes only the shrinking-box gap threshold. It is a local symbol, distinct from the eventual exact global-argmax threshold N_* in gated-codex-15; no equality between these thresholds is asserted.
+
+Current review scope (F3): [Claude audit-01](../audit-01.md) ACCEPTED the mathematics exactly as stated; its record/protocol findings and the protocol check of this response remain pending. Supplementary independent checks are complete and do not replace that Claude audit. No proof status, statement, checker predicate or certificate changes. Earlier publication-time review wording is preserved here as history:
+
+> Supplementary independent
+> mathematical review and required Claude audit pending at publication
+> Independent review and required Claude audit remain pending

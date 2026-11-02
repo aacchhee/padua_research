@@ -38,7 +38,7 @@ record. No beta-series was fabricated.
   vertical-edge envelope. This closes P1's permitted positive-infimum form.
 - [05](../theory/argmax-alln-codex-05-horizontal-compact-defect.md):
   **PROVED** exact horizontal decomposition and compact-uniform positive
-  defect limit \(g_h(\alpha)\). **P2 envelope remains OPEN** because its
+  defect limit \(g_h(\alpha)\). Historical publication checkpoint: **P2 envelope remains OPEN** because its
   separate primitive phase estimate was not proved.
 
 Both limits have the coarse compact lower bound
@@ -72,3 +72,10 @@ Required Claude audit remains distinct from the supplementary Astra check.
 Next P2 step: its own global phase localization and vanishing local
 gain for \(S_n^h\). Remaining work includes effectivity, endpoint
 transitions, corners, interior and strips. P1 alone does not close PD-T099.
+
+## History
+
+
+### Documentation correction — 2026-11-02
+
+F4 supersession: the original “P2 envelope remains OPEN” and “Next P2 step” paragraphs are the 2026-11-01 checkpoint. The compact horizontal envelope is subsequently PROVED by [gated-codex-16](../theory/gated-codex-16-horizontal-compact-envelope.md), using the exact primitive identity F^h(s)=−F(s,0). The compact upper half follows already from [gated-codex-04](../theory/gated-codex-04-compact-complement-gap.md). These forward pointers preserve the earlier attempt and do not change its supporting statements or resolve all-degree PD-T099. Claude audit-01 ACCEPTED the supporting proofs at their stated scopes; record fixes and the protocol check of the response remain pending.

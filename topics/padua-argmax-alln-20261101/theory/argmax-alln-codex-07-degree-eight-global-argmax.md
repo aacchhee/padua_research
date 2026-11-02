@@ -5,6 +5,12 @@ Aliases: n=8 global-max-only Bernstein certificate; P6 finite range.
 Split from: PD-T099 / PD-T181, the still-open all-degree target and its degree-eight case.
 Split into: none.
 
+Registration proposal, 2026-11-02 (F8): use this proof as the proof record
+of existing **PD-T181**, preserving this provisional label as an alias.
+Allocate no new theory ID for this identical degree-eight statement.
+Apply the registry/crosswalk change only at PR preparation after the
+response check; no final ID is assigned or shared row edited here.
+
 ## Statement
 
 For the even-checkerboard degree-eight Padua nodes of PD-T101,

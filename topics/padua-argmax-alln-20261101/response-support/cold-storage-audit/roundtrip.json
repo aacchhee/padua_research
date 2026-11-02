@@ -1,0 +1,204 @@
+{
+ "source": "1cecd68ac0a64b01ed7b2d262b6263a955a7d4d7",
+ "initial": "6fae535df28303b27ca1d533d9afa229660a3a20",
+ "latest": "b8fbb5c5be374bf658d2970681c7cac0fb40d737",
+ "entries": 36,
+ "bytes": 2526191,
+ "deleted_equals_manifest": true,
+ "changes": [
+  "M\tresults/padua-argmax-alln-20261101.md",
+  "A\ttools/cold_storage.py",
+  "A\ttopics/padua-argmax-alln-20261101/COLD_STORAGE.md",
+  "M\ttopics/padua-argmax-alln-20261101/LOG.md",
+  "M\ttopics/padua-argmax-alln-20261101/audit-support/claude-audit-01/README.md",
+  "D\ttopics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/out/indep_n10.json",
+  "D\ttopics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/out/indep_n11.json",
+  "D\ttopics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/out/indep_n12.json",
+  "D\ttopics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/out/indep_n13.json",
+  "D\ttopics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/out/indep_n14.json",
+  "D\ttopics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/out/indep_n15.json",
+  "D\ttopics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/out/indep_n16.json",
+  "D\ttopics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/out/indep_n9.json",
+  "D\ttopics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/run_8_12.log",
+  "D\ttopics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/D/t1_local.json",
+  "D\ttopics/padua-argmax-alln-20261101/audit-support/claude-audit-01/manifest.json",
+  "A\ttopics/padua-argmax-alln-20261101/cold-storage.json",
+  "D\ttopics/padua-argmax-alln-20261101/evidence-manifest.json",
+  "M\ttopics/padua-argmax-alln-20261101/ideas-codex-fallback.md",
+  "M\ttopics/padua-argmax-alln-20261101/ideas.md",
+  "D\ttopics/padua-argmax-alln-20261101/input-snapshot.json",
+  "D\ttopics/padua-argmax-alln-20261101/outputs/gated/d1_screen_r01.json.gz",
+  "D\ttopics/padua-argmax-alln-20261101/outputs/gated/d1_screen_r01.out",
+  "D\ttopics/padua-argmax-alln-20261101/outputs/gated/d2_screen_r01.json",
+  "D\ttopics/padua-argmax-alln-20261101/outputs/gated/d2_screen_r01.out",
+  "D\ttopics/padua-argmax-alln-20261101/outputs/gated/d3_ep_screen.json",
+  "D\ttopics/padua-argmax-alln-20261101/outputs/part3/independent_T2.json",
+  "D\ttopics/padua-argmax-alln-20261101/outputs/part3/independent_T3.json",
+  "D\ttopics/padua-argmax-alln-20261101/outputs/part3/pairing_screens.json",
+  "D\ttopics/padua-argmax-alln-20261101/outputs/part3/tests_T1.json",
+  "D\ttopics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n100.json",
+  "D\ttopics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n101.json",
+  "D\ttopics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n128.json",
+  "D\ttopics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n199.json",
+  "D\ttopics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n200.json",
+  "D\ttopics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n24.json",
+  "D\ttopics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n256.json",
+  "D\ttopics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n399.json",
+  "D\ttopics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n400.json",
+  "D\ttopics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n48.json",
+  "D\ttopics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n96.json",
+  "D\ttopics/padua-argmax-alln-20261101/outputs/part3/tests_T2.json",
+  "D\ttopics/padua-argmax-alln-20261101/outputs/part3/tests_T3.json",
+  "D\ttopics/padua-argmax-alln-20261101/outputs/part3/tests_summary.json",
+  "M\ttopics/padua-argmax-alln-20261101/report.md"
+ ],
+ "runs": [
+  {
+   "revision": "6fae535df28303b27ca1d533d9afa229660a3a20",
+   "tool_blob": "4c117ca8461d9240be9559b657e16ea9f86213e6",
+   "tool_sha256": "49c4842a4ff358e7b73f394042d0ff362cfc0c9087be770790cc2b5b17840b00",
+   "commands": [
+    {
+     "command": "verify",
+     "returncode": 0,
+     "stdout": {
+      "slug": "padua-argmax-alln-20261101",
+      "entries": 36,
+      "bytes": 2526191,
+      "restored_copies_present": 0,
+      "accepted": true,
+      "problems": []
+     },
+     "stderr": ""
+    },
+    {
+     "command": "restore",
+     "returncode": 0,
+     "stdout": {
+      "slug": "padua-argmax-alln-20261101",
+      "restored": 36,
+      "dest": "/workspace/padua-response-20261102"
+     },
+     "stderr": ""
+    },
+    {
+     "command": "verify",
+     "returncode": 0,
+     "stdout": {
+      "slug": "padua-argmax-alln-20261101",
+      "entries": 36,
+      "bytes": 2526191,
+      "restored_copies_present": 36,
+      "accepted": true,
+      "problems": []
+     },
+     "stderr": ""
+    },
+    {
+     "command": "clean",
+     "returncode": 0,
+     "stdout": {
+      "slug": "padua-argmax-alln-20261101",
+      "removed_restored_copies": 36
+     },
+     "stderr": ""
+    },
+    {
+     "command": "verify",
+     "returncode": 0,
+     "stdout": {
+      "slug": "padua-argmax-alln-20261101",
+      "entries": 36,
+      "bytes": 2526191,
+      "restored_copies_present": 0,
+      "accepted": true,
+      "problems": []
+     },
+     "stderr": ""
+    }
+   ],
+   "restored_bytes_equal_git_show_all_36": true,
+   "all_restored_copies_absent_after_clean": true
+  },
+  {
+   "revision": "b8fbb5c5be374bf658d2970681c7cac0fb40d737",
+   "tool_blob": "d52912b63eda4d935f191a86bf4854a2aa29a1b9",
+   "tool_sha256": "62ea9e0da86ef8a72a2298f093ed4c54691cc8cc1bd2850974248eebcaa43b58",
+   "commands": [
+    {
+     "command": "verify",
+     "returncode": 0,
+     "stdout": {
+      "slug": "padua-argmax-alln-20261101",
+      "entries": 36,
+      "bytes": 2526191,
+      "restored_copies_present": 0,
+      "accepted": true,
+      "problems": []
+     },
+     "stderr": ""
+    },
+    {
+     "command": "restore",
+     "returncode": 0,
+     "stdout": {
+      "slug": "padua-argmax-alln-20261101",
+      "restored": 36,
+      "dest": "/workspace/padua-response-20261102"
+     },
+     "stderr": ""
+    },
+    {
+     "command": "verify",
+     "returncode": 0,
+     "stdout": {
+      "slug": "padua-argmax-alln-20261101",
+      "entries": 36,
+      "bytes": 2526191,
+      "restored_copies_present": 36,
+      "accepted": true,
+      "problems": []
+     },
+     "stderr": ""
+    },
+    {
+     "command": "clean",
+     "returncode": 0,
+     "stdout": {
+      "slug": "padua-argmax-alln-20261101",
+      "removed_restored_copies": 36
+     },
+     "stderr": ""
+    },
+    {
+     "command": "verify",
+     "returncode": 0,
+     "stdout": {
+      "slug": "padua-argmax-alln-20261101",
+      "entries": 36,
+      "bytes": 2526191,
+      "restored_copies_present": 0,
+      "accepted": true,
+      "problems": []
+     },
+     "stderr": ""
+    }
+   ],
+   "restored_bytes_equal_git_show_all_36": true,
+   "all_restored_copies_absent_after_clean": true
+  }
+ ],
+ "all_source_path_blob_sha256_size_identities_match": true,
+ "scratch_export": {
+  "returncode": 0,
+  "stdout": {
+   "slug": "padua-argmax-alln-20261101",
+   "source_commit": "1cecd68ac0a64b01ed7b2d262b6263a955a7d4d7",
+   "exported_at": "2026-11-02T10:04:38Z",
+   "bytes": 2526191,
+   "all_hashes_match_manifest": true
+  },
+  "all_36_bytes_equal_source": true,
+  "delivery_to_AC": "NOT PERFORMED"
+ }
+}

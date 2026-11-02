@@ -33,7 +33,7 @@ where G_n=D_n-cos(nu) is the corrected finite cosine polynomial of PD-T101/185. 
 
 ## Status by part
 
-Overall status: **PROVED**, by the complete finite reflection and derivative argument below. Supplementary independent review and required Claude audit are pending at initial publication.
+Overall status: **PROVED**, by the complete finite reflection and derivative argument below. Supplementary independent review is complete; Claude audit-01 ACCEPTED the mathematics at its stated scope (record fixes pending).
 
 | Mathematical part | Status | Evidence / limits |
 |---|---|---|
@@ -215,6 +215,16 @@ The huge sufficient local threshold is not a practical finite bridge. No claim h
 
 Analytic derivation only; no numerical phase or degree scan is a premise. The inherited pointwise derivative constants were checked with their original normalization, rather than transferring only the primitive envelope. The exact reflection identity follows directly from the finite corrected cosine polynomial and includes every endpoint/zero/cardinal collision.
 
-Rules and administrative checkpointaa1883f2fd9a837bb931ce804cb4b210c7475886; scientific source base7d308b10d946b607ae0690454f6c0103690775a4, plus D1 round6/D2 round1 locally checked records. Codex, parent-assigned gpt-6.1-sol xhigh,2026-11-02; runtime metadata not independently exposed. Preregistered gated/d2/r02-contract.md read before development. Required Claude audit and supplementary independent review pending at initial publication. No imported external theorem, Git operation, shared-registry edit, future-round execution or direction3 work.
+Rules and administrative checkpointaa1883f2fd9a837bb931ce804cb4b210c7475886; scientific source base7d308b10d946b607ae0690454f6c0103690775a4, plus D1 round6/D2 round1 locally checked records. Codex, parent-assigned gpt-6.1-sol xhigh,2026-11-02; runtime metadata not independently exposed. Preregistered gated/d2/r02-contract.md read before development. Supplementary independent review is complete; Claude audit-01 ACCEPTED the mathematics at its stated scope (record fixes pending). No imported external theorem, Git operation, shared-registry edit, future-round execution or direction3 work.
 
 Documentation correction,2026-11-02: the explicit logarithmic lower bound is cited to PD-T157 (proof-attempts-2-codex-02-corner-explicit-leading.md), whose full statement/proof was read. PD-T159 is its corner-product comparison dependency, not the direct source of that displayed lower bound. No mathematical statement or proof changed.
+
+
+### Documentation correction — 2026-11-02
+
+F3: publication-time review labels are updated; the original proof and claim scopes are unchanged.
+
+Current review scope (F3): [Claude audit-01](../audit-01.md) ACCEPTED the mathematics exactly as stated; its record/protocol findings and the protocol check of this response remain pending. Supplementary independent checks are complete and do not replace that Claude audit. No proof status, statement, checker predicate or certificate changes. Earlier publication-time review wording is preserved here as history:
+
+> Supplementary independent review and required Claude audit are pending at initial publication
+> Required Claude audit and supplementary independent review pending at initial publication

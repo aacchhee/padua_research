@@ -423,3 +423,12 @@ and claim B as [local primitive gain](../../theory/gated-codex-03-two-phase-loca
 The required Claude audit remains pending. The original statements and
 failed proof variants above are retained unchanged. A rendering-only missing
 backslash in the displayed decomposition after (1) was corrected.
+
+## History
+
+
+### Documentation correction — 2026-11-02
+
+F2 citation correction: the original dependency “corner lower bound PD-T159” and consequence “PD-T159 gives” above should cite PD-T156 (1), also PD-T157 (1), for Lambda_c>=(4/pi²)log² n−54. PD-T159 is the genuine corner-product comparison dependency behind that bound. This addendum corrects the direct source without altering the historical proof text.
+
+Current review: the round-1 pending labels above are historical. Supplementary Astra reconstruction is complete, and Claude audit-01 ACCEPTED claims A/B in their separate gated-codex-02/03 homes at their stated scope; record fixes and the protocol check of this response remain pending. No proof status or mathematical claim changes.

@@ -20,11 +20,11 @@ The existence of N_* is proved. **No effective value of N_* is supplied.** This 
 
 ## Definitions and assumptions
 
-Exact real arithmetic, corrected exceptional x-mode convention and positive weights of PD-T101. Lambda_c(n) is the common value of lambda_n at the two physical nonnode corners. Its global optimality is a conclusion, not an assumption. Physical angle coordinates are(theta,phi) in[0,pi]^2 with(x,y)=(cos theta,cos phi).
+Exact real arithmetic, corrected exceptional x-mode convention and positive weights of PD-T101. Lambda_c(n) is the common value of lambda_n at the two physical nonnode corners; this equals the maximum over all four corner values used in PD-T156/157, since the node corners have value 1 and PD-T159 states the common nonnode-corner value. Its global optimality is a conclusion, not an assumption. Physical angle coordinates are(theta,phi) in[0,pi]^2 with(x,y)=(cos theta,cos phi).
 
 ## Status by part
 
-Overall status: **PROVED**, by the finite-dependency argument below. Supplementary independent assembly review and required Claude audit remain pending at initial publication.
+Overall status: **PROVED**, by the finite-dependency argument below. Supplementary independent review is complete; Claude audit-01 ACCEPTED the mathematics at its stated scope (record fixes pending).
 
 | Mathematical part | Status | Evidence / limits |
 |---|---|---|
@@ -34,11 +34,11 @@ Candidate disposition: retained assembly variant of original P3 / Claude-02 / fa
 
 ## Depends on
 
-- PD-T101: finite cardinal conventions, continuity and common nonnode-corner value under the parity-valid reflection.
+- PD-T101: finite cardinal conventions and continuity; the parity-valid reflection equality is proved below and stated in PD-T159.
 - Gated-codex-11: for every epsilon>0, every global maximizer, at all sufficiently large degrees, has an actual nonnode-corner phase representation with rho<epsilon. Its thresholds are non-effective.
 - Gated-codex-14: for every n with log n>=10^7, lambda_n is strictly below Lambda_c on every punctured inward corner phase neighborhood0<rho<=1/64, at either nonnode corner.
 
-The inherited proofs supporting gated-codex-11 remain at their existing scopes; this theorem neither strengthens their rates nor treats their pending Claude audit as complete.
+The inherited proofs supporting gated-codex-11 remain at their existing scopes; this theorem neither strengthens their rates nor treats their publication-time pending Claude audit as already complete at that checkpoint.
 
 ## Proof
 
@@ -60,8 +60,21 @@ A complete all-degree proof still needs an effective global threshold with match
 
 ## Checks and sources
 
-No numerical computation is a premise. The logical proof uses uniform quantifiers in gated-codex-11 and the strict local comparison at both corners in gated-codex-14. Independent review should verify the normalization, the absolute regular Taylor bounds, the finite B Hessian, and the uniform localization quantifier; the present developer does not approve its own work. Required Claude audit remains pending.
+No numerical computation is a premise. The logical proof uses uniform quantifiers in gated-codex-11 and the strict local comparison at both corners in gated-codex-14. Independent review should verify the normalization, the absolute regular Taylor bounds, the finite B Hessian, and the uniform localization quantifier; the present developer does not approve its own work. Claude audit-01 ACCEPTED the mathematics at its stated scope (record fixes pending).
 
 ## History
 
 2026-11-02, Codex, parent-assigned gpt-6.1-sol xhigh; actual runtime metadata not independently exposed. Rules/checkpointaa1883f2fd9a837bb931ce804cb4b210c7475886, scientific source base7d308b10d946b607ae0690454f6c0103690775a4, with locally checked D1 round6/D2 round1 records. Authorized direction2 round2 only. No effective global threshold, new finite certification, shared-registry update, Git action, future-round execution or direction3 work.
+
+
+### Documentation correction — 2026-11-02
+
+N7: the original dependency attributed the “common nonnode-corner value under the parity-valid reflection” to PD-T101. PD-T101 supplies the conventions; the equality is stated in PD-T159 and proved by the parity-reflection argument in this file. The definition now connects this common value to the four-corner maximum in PD-T156/157. No equality set or proof status changes.
+
+Current review scope (F3): [Claude audit-01](../audit-01.md) ACCEPTED the mathematics exactly as stated; its record/protocol findings and the protocol check of this response remain pending. Supplementary independent checks are complete and do not replace that Claude audit. No proof status, statement, checker predicate or certificate changes. Earlier publication-time review wording is preserved here as history:
+
+> Supplementary independent assembly review and required Claude audit remain pending at initial publication
+> Required Claude audit remains pending
+> pending Claude audit as complete
+
+F13 literature baseline (LITERATURE, no inherited proof): [LIT-377 and LIT-388](../../../literature/INDEX.md) and their [baseline rows 61 and 72](../../programme-ideas-20261031/lit/baseline.md) supply the closest recorded open-problem context. LIT-377 reports that De Marchi (2022) lists corner location of Lebesgue maxima as open; that particular corner-location report remains **UNVERIFIED secondary**. The linked [bounded primary De Marchi record](../../../literature/lattice-unisolvence/records/demarchi-2022.md) verifies the separate higher-dimensional open-problem wording, not this corner-location assertion. LIT-388 reports Białas-Cież–De Marchi–Suder (2026), arXiv 2605.23299, on optimal Padua Lebesgue growth and numerically reported interior maxima; those unrelated geometric assertions retain their coverage qualifications. INDEX's 2026-11-01 primary-reading addendum supersedes UNVERIFIED only for the inspected finite count statements, not for an eventual corner-argmax theorem. These records provide context, not a proof premise or evidence of exhaustive literature coverage. No external priority or novelty claim follows.

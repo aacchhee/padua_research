@@ -93,7 +93,11 @@ floating zero tests. Record each divided by `n^4*Lambda_c`.
 No new degree grid, off-corner scan, radius claim or later round is added.
 This diagnostic tests whether an aggregate sign-flip estimate could use
 the scalar inequality
-`|a+b|<=|a|+sign(a)*b+2*b^2/|a|`.
+`|a+b|<=|a|+sign(a)*b+b^2/(2*|a|)`.
+
+Documentation correction, 2026-11-02 (audit-01 N6): the original display
+used the valid looser term `2*b^2/|a|`. The display now matches theorem13's
+sharper `b^2/(2*|a|)` exactly. No measured value, code or premise changed.
 The frozen main script and its original outputs will remain unchanged;
 the additional small output is `outputs/gated/d2_screen_r01_weighted.json`.
 

@@ -88,9 +88,7 @@ The primitive therefore has the exact negative-part representation
 ## Assumptions and status
 
 Exact real arithmetic, the stated parity mesh and corrected x mode.
-Overall status: **PROVED**, by the finite algebra below; supplementary
-independent mathematical review and required Claude audit pending at
-publication. No numerical computation is a premise. Candidate disposition:
+Overall status: **PROVED**, by the finite algebra below; supplementary independent review is complete; Claude audit-01 ACCEPTED the mathematics at its stated scope (record fixes pending). No numerical computation is a premise. Candidate disposition:
 retained exact supporting identity, while the quantitative repair is
 stopped because no sharper interior negative-part estimate was obtained.
 
@@ -251,6 +249,17 @@ independently exposed. Rules/snapshot
 `7d308b10d946b607ae0690454f6c0103690775a4`.
 Registered direction1 round6, same candidate/obstruction gate as the
 earlier phase work. Exact identities retained despite STOP of this
-quantitative repair. Required independent review and Claude audit remain
-pending at publication. No shared registry, Git, future round or
+quantitative repair. Supplementary independent review is complete; Claude audit-01 ACCEPTED the mathematics at its stated scope (record fixes pending). No shared registry, Git, future round or
 direction-2 action by this worker.
+
+
+### Documentation correction — 2026-11-02
+
+F3: publication-time review labels are updated; the original proof and claim scopes are unchanged.
+
+Current review scope (F3): [Claude audit-01](../audit-01.md) ACCEPTED the mathematics exactly as stated; its record/protocol findings and the protocol check of this response remain pending. Supplementary independent checks are complete and do not replace that Claude audit. No proof status, statement, checker predicate or certificate changes. Earlier publication-time review wording is preserved here as history:
+
+> independent mathematical review and required Claude audit pending at
+> publication
+> Required independent review and Claude audit remain
+> pending at publication

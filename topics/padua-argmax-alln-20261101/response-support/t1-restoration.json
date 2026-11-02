@@ -1,0 +1,103 @@
+{
+  "source_commit": "1cecd68ac0a64b01ed7b2d262b6263a955a7d4d7",
+  "inputs": [
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1.json",
+      "bytes": 55302,
+      "sha256": "b80f8db44dfbdb2d48fab47bc40c6e9a3642e0bc2a3292b3e9c11d6bd06103bc"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n12.json",
+      "bytes": 10313,
+      "sha256": "591eadb5876672fbbc329294b801a6eaacc318d356a1271c4f54095a9fa89371"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n24.json",
+      "bytes": 17862,
+      "sha256": "cad4ab29aacef97a54c16f04b650c6f8fd85882fbf191702788a03dd0267dff1"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n48.json",
+      "bytes": 34628,
+      "sha256": "8e707e8c41725151ca5d54d5c81c86367846ba54399d0c0a1c899a7f806213dc"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n96.json",
+      "bytes": 67200,
+      "sha256": "e8879d94f2083984be0ba53de8d391c67e4e50a44d425b794bbe8bf3a9d61ff4"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n100.json",
+      "bytes": 68395,
+      "sha256": "156486bc9ab22cdc521e4b2dbfddca6bd6b7f6bde9f3b6a88a304fcabf3f516c"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n101.json",
+      "bytes": 71096,
+      "sha256": "09241aaac1693791fcbbb685a5c60f6fbc33909f363a8fdda1b76699823230e2"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n128.json",
+      "bytes": 87463,
+      "sha256": "37e44834102a1a1a0d830850384dcbbd77974d7cea8be907ec1fc0fce84a3f25"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n199.json",
+      "bytes": 134768,
+      "sha256": "09eebe880c0f17ec0091612194128d7fc8ab878325a6a1853d50288952050a4e"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n200.json",
+      "bytes": 135422,
+      "sha256": "62c5a66c4497bb187bee01f3bc4048d11b205a3ab671d009cfa3a2ab2c188b46"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n256.json",
+      "bytes": 173729,
+      "sha256": "cb6bf98fb2272016b537d9b493592a6d75329de7c30cf0aaa91386ff3b555136"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n399.json",
+      "bytes": 269100,
+      "sha256": "63d4cd1ebf089cf99b0f4b65471d7032ce057fd4e393418971a92ecc11ed9d3e"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n400.json",
+      "bytes": 269669,
+      "sha256": "b9ee1314d9c51e3cfeb5dd445dc94bcf7e336af9cc0c7dce7bb674b0e4491852"
+    }
+  ],
+  "profiles": 48,
+  "degrees": [
+    12,
+    24,
+    48,
+    96,
+    100,
+    101,
+    128,
+    199,
+    200,
+    256,
+    399,
+    400
+  ],
+  "bytes": 1342719,
+  "sha256": "bfb0acd697bfe8530a9b8441130c400f1a3601342277ab0a0c77d2cfd6cfcb90",
+  "scope": "Deterministic reversal of the historical split; one complete producer-layout artifact. No new measurement or audit-replay timing identity.",
+  "analysis_input_unchanged": true,
+  "analysis_summary_leaves_compared": 978,
+  "analysis_differences": [
+    [
+      "/T1/minimum_noncorner_cell/cell_evidence",
+      "tests_T1_n399.json",
+      "tests_T1.json"
+    ]
+  ],
+  "audit_raw_replay": {
+    "bytes": 1342719,
+    "sha256": "4d7792e69f2c7a7237e03e1343e0c65feddbdeb0a034c04878202b4e37cfe7c6",
+    "source": "audit-01.md, measured replays",
+    "limitation": "Separate replay timing metadata; its raw bytes were ephemeral. Reconstructed historical developer payload has its own exact identity above."
+  }
+}

@@ -3,7 +3,7 @@
 ID kind: PD-T.
 Aliases: P2 supporting theorem; horizontal corrected-mode defect.
 Split from: PD-T099, supporting cancellation analysis for horizontal edges.
-Split into: none. The compact horizontal envelope target remains OPEN.
+Split into: none. The publication-time OPEN compact horizontal envelope target is superseded by gated-codex-16; this record retains its supporting statement.
 
 ## Statement
 
@@ -76,12 +76,12 @@ arithmetic; all limits include both parities.
 ## Status by part
 
 Overall status: **PROVED**, for the supporting theorem (1)–(5), by the
-analytic proof below. Independent mathematical audit is pending.
+analytic proof below. Supplementary independent review is complete; Claude audit-01 ACCEPTED the mathematics at its stated scope (record fixes pending).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
 | Exact horizontal decomposition and compact positive defect limit | PROVED | Correction algebra and uniform tail argument |
-| P2 compact horizontal envelope bound | OPEN, excluded | Separate horizontal phase localization and local primitive-gain estimate needed |
+| P2 compact horizontal envelope bound | OPEN at publication, excluded | Publication-time OPEN obligation superseded by gated-codex-16; upper half also follows from gated-codex-04 |
 
 ## Depends on
 
@@ -204,6 +204,7 @@ Each positive denominator is at most 2, so the defect is at least
 
 ## Scope and open items
 
+Publication-time frontier (superseded by the dated correction below):
 P2 still needs its own global phase estimate to localize maximizing
 phases, and a local bound \(S_n^h(s_n)\le\Lambda_c+o(1)\).
 Merely exchanging \(n,n+1\) in PD-T189–190 is not a proof because the
@@ -217,3 +218,12 @@ Required Claude audit is pending.
 OPEN and is not silently narrowed to this supporting claim. Polynomial
 correction algebra preceded the limiting quotient. Development followed
 the parent's tests-done signal.
+
+
+### Documentation correction — 2026-11-02
+
+F4: the original lines “The compact horizontal envelope target remains OPEN”, “No upper bound for S_n^h(s)−Lambda_c(n) is asserted. Thus this theorem does not by itself prove P2's compact envelope inequality”, and the OPEN status row describe this supporting record at publication. The original Scope text (“P2 still needs its own global phase estimate ... and a local bound”) and 2026-11-01 History remain historical. The full compact horizontal envelope is subsequently PROVED in [gated-codex-16](gated-codex-16-horizontal-compact-envelope.md), using F^h(s)=−F(s,0), not a mesh swap. Its compact upper half is already supplied by [gated-codex-04](gated-codex-04-compact-complement-gap.md). The statement and PROVED status of the supporting theorem (1)–(5) are unchanged. Center-minimality and usable effectivity remain unresolved.
+
+Current review scope (F3): [Claude audit-01](../audit-01.md) ACCEPTED the mathematics exactly as stated; its record/protocol findings and the protocol check of this response remain pending. Supplementary independent checks are complete and do not replace that Claude audit. No proof status, statement, checker predicate or certificate changes. Earlier publication-time review wording is preserved here as history:
+
+> Independent mathematical audit is pending

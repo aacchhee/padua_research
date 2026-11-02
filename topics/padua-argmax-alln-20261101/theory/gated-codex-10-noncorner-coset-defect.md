@@ -55,8 +55,7 @@ terms below is a collision.
 ## Status by part
 
 Overall status: **PROVED**, by the finite construction below;
-supplementary independent mathematical review and required Claude audit
-pending at initial publication.
+supplementary independent mathematical review is complete; Claude audit-01 ACCEPTED the mathematics at its stated scope (record fixes pending).
 
 | Mathematical part | Status | Evidence / limits |
 |---|---|---|
@@ -292,7 +291,7 @@ independently exposed. Rules/snapshot
 obstruction gate and shortlist from round 1 remain applicable. This is
 the pre-registered round-5 middle-lattice-line candidate, not a literature
 transfer. No numerical phase/degree scan or Git operation is a premise.
-Supplementary independent review and required Claude audit are pending.
+Supplementary independent review is complete; Claude audit-01 ACCEPTED the mathematics at its stated scope (record fixes pending).
 
 Retained failed preliminary choice: horizontal top, odd s, q=+1.
 At alpha=beta=0 and s=1 it gives n(w-a_j)=-l*pi/m-pi, whose
@@ -300,3 +299,14 @@ magnitude is at least 5pi/4>pi, so the required first-cell band fails.
 The corrected q=-1 choice is used throughout the proof. This refutes
 only that selected line as a proof construction, not the defect target
 or other lattice-line choices. No new global negative ID is assigned.
+
+
+### Documentation correction — 2026-11-02
+
+F3: publication-time review labels are updated; the original proof and claim scopes are unchanged.
+
+Current review scope (F3): [Claude audit-01](../audit-01.md) ACCEPTED the mathematics exactly as stated; its record/protocol findings and the protocol check of this response remain pending. Supplementary independent checks are complete and do not replace that Claude audit. No proof status, statement, checker predicate or certificate changes. Earlier publication-time review wording is preserved here as history:
+
+> Supplementary independent review and required Claude audit are pending
+
+Original additional status wording: “supplementary independent mathematical review and required Claude audit pending at initial publication”.

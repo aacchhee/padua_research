@@ -49,3 +49,12 @@ The numerical screen worker separately compared these formulas against the corre
 or an eventual version with proved constants and a stated threshold. The screen can falsify those particular constants; it cannot prove them. A complementary direct comparison of the four reflected kernels before taking absolute values may avoid the energy obligation, but is only a prospective alternative and was not executed as another round here.
 
 No uniform local-radius theorem or all-n argmax theorem has been proved by this round. Even a later eventual theorem would leave the unknown finite bridge and audit obligations intact. The other nonnode corner follows by x reflection for even n and y reflection for odd n. No direction3 work or future-round execution was performed.
+
+## Post-round documentation clarification — 2026-11-02
+
+F15: this round's “uniform slope/energy estimates remain OPEN” is a
+historical round1 statement. The later accepted theorem14(9) implies the
+eventual negative slope premise for every fixed0<a<1/5, with a-dependent
+threshold; all-n uniformity and the weighted-energy estimate remain OPEN.
+See the dated implication in theory13 and gated/REPORT.md. No round1
+registration, numerical result or theorem statement was changed.

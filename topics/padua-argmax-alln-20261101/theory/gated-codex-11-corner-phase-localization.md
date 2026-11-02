@@ -41,8 +41,7 @@ is not assumed. Continuity of the finite absolute-polynomial sum on the
 compact square ensures M_n is nonempty.
 
 Overall status: **PROVED**, by the uniform phase argument below with
-explicitly cited proved dependencies; supplementary independent review
-and required Claude audit pending at publication.
+explicitly cited proved dependencies; supplementary independent review is complete; Claude audit-01 ACCEPTED the mathematics at its stated scope (record fixes pending).
 
 | Mathematical part | Status | Evidence / limits |
 |---|---|---|
@@ -58,7 +57,7 @@ Claude-02 / fallback-04. No novelty or external-source claim.
 - Gated-codex-03: uniform local primitive excess tends to zero.
 - Gated-codex-10: Delta>=1/4096 at every physical odd center except an
   actual nonnode corner, for n>=48 and rho<=1/64.
-- PD-T159: Lambda_c>=(4/pi^2)log^2 n-54.
+- PD-T156 (1) / PD-T157 (1): Lambda_c>=(4/pi^2)log^2 n-54.
 
 The physical odd-coset cover and same-primitive argument below were also
 proved in gated-codex-04/09. No explicit but enormous local constants
@@ -135,5 +134,16 @@ round-5 assembly of the finite lattice-line result, retaining the full
 round-1 candidate/obstruction gate. No numerical phase/degree scan,
 external literature transfer, Git action, shared registry update,
 future round or direction-2 work was performed by this worker.
-Supplementary independent review and required Claude audit remain
-pending at initial publication.
+Supplementary independent review is complete; Claude audit-01 ACCEPTED the mathematics at its stated scope (record fixes pending).
+
+
+### Documentation correction — 2026-11-02
+
+F2: the original direct dependency “PD-T159: Lambda_c>=(4/pi^2)log^2 n-54” is corrected to PD-T156 (1) / PD-T157 (1). PD-T159 remains the corner-product comparison behind those bounds; no inequality changes.
+
+Current review scope (F3): [Claude audit-01](../audit-01.md) ACCEPTED the mathematics exactly as stated; its record/protocol findings and the protocol check of this response remain pending. Supplementary independent checks are complete and do not replace that Claude audit. No proof status, statement, checker predicate or certificate changes. Earlier publication-time review wording is preserved here as history:
+
+> supplementary independent review
+> and required Claude audit pending at publication
+> Supplementary independent review and required Claude audit remain
+> pending at initial publication

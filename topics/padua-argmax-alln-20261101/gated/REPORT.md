@@ -1,6 +1,6 @@
 # Authorized gated campaign — consolidated report
 
-2026-11-02. Codex gpt-6.1-sol xhigh development/orchestration; distinct Astra xhigh supplementary mathematical checks. Configured/requested settings are recorded; runtime metadata is not independently exposed. Required Claude Opus5.5 xhigh audit remains **PENDING**. Branch claude/padua-argmax-alln-20261101, draft PR17. All IDs provisional.
+2026-11-02. Codex gpt-6.1-sol xhigh development/orchestration; distinct Astra xhigh supplementary mathematical checks. Configured/requested settings are recorded; runtime metadata is not independently exposed. Claude Opus5.5 xhigh audit-01 **ACCEPTS the mathematical scopes**; response/storage protocol followup remains **PENDING**. Branch claude/padua-argmax-alln-20261101, draft PR17. All IDs provisional.
 
 ## Main result and exact remaining gap
 
@@ -40,7 +40,7 @@ All rows below are PROVED development results, analytic except the finite comput
 | 08–09 | Adaptive finite defect>=1/1536; eventual shrinking angle-corner boxes |
 | 10–11 | Noncorner-coset defect>=1/4096; all maximizers approach actual corners in scaled phase |
 | 12 | Exact primitive row identities; no sharper partial-sum inequality claimed |
-| 13 | Exact corner mask/gradients/inward linearity and aggregate Taylor inequality; uniform slope/energy premises OPEN |
+| 13 | Exact corner mask/gradients/inward linearity and aggregate Taylor inequality; eventual slope premise follows14; all-n slope uniformity and weighted energy OPEN |
 | 14–15 | Reflection-first local bound/physical radius and eventual exact two-corner global argmax |
 | 16 | Horizontal primitive equals S(s,0); compact horizontal-edge envelope, both parities and interval endpoints |
 | 17 / N02 | All10 finite whole-cell E-C comparisons atn7,12; exact pointwise E-P reversal>39/1000 atn12 |
@@ -52,7 +52,7 @@ Every theory lives under ../theory/gated-codex-*.md with exact definitions, quan
 - Primitive coset maximality and a purely quadratic local envelope are refuted in their stated finite-n scope. This does not refute lambda's corner argmax.
 - The explicit242000/2048/640 primitive implementation is valid but quantitatively unusable for the finite bridge. A preliminary240000 bookkeeping choice was corrected before the theorem; it is not a mathematical counterexample.
 - Exact row resummation leaves uncontrolled negative cotangent partial sums. The repair stops; its exact identities remain proved.
-- Uniform corner slope/weighted-energy inequalities are OPEN. The finite numerical data and exact small-degree controls do not establish them. The aggregate Taylor theorem remains useful independently of the successful reflection route.
+- All-n corner slope uniformity and weighted-energy inequalities are OPEN. The eventual slope premise follows analytically from theorem14(9), as clarified below; finite numerical data do not establish the remaining premises. The aggregate Taylor theorem remains useful independently of the successful reflection route.
 - Earlier O-R numerical failures and exact O-Lt obstruction retain their narrow scopes. Neither rejects every cell pairing or ambiguous original IDEA03.
 - E-P common-phase centreward translation is exactly refuted atn12; the distinct whole-cell E-C statement survives its finite exact tests and remains OPEN in general. No all-n phase-alignment repair was supplied, so direction3 stops after1 round.
 - General-beta series, center-minimality of the defect integral, effective global entry and the all-degree finite bridge remain unresolved. No new degree>=17 global certificate or enlarged exploratory degree scan was run.
@@ -66,3 +66,23 @@ The original screen is retained losslessly as small gzip with decompression/cont
 Original reservations PD-T206–225, PD-N078–083, IDEA316–335, LIT460–465 remain permanent. Additional disjoint PD-T226–245 was reserved in3aebb299a4154dac822974b7245a9d243f21374e after a fresh union scan; no final IDs or shared scientific registry edits. [Ledger](../ALLOCATIONS.md). Connector commits expose the authenticated account noreply email, with no author-email override; published history is preserved.
 
 At development completion the orchestrator commits outputs, then closes handoff04 and opens a new numbered Claude audit handoff in a separate status/handoff-only commit. Superseded03 is not marked audited. Draft PR17 remains unready to merge; only AC merges.
+
+## Response clarification — 2026-11-02 (F15, storage)
+
+The earlier “uniform slope/weighted-energy inequalities are OPEN” meant
+all-n uniformity and the energy hypothesis. Put q_n=Lambda_c/10−237000log(n+1).
+Theorem14(9), with alpha=n*acos(1-h_x), beta=0, gives A_n<=−2n²q_n
+by dividing by h_x and taking the inward limit; the other axis gives
+B_n<=−2(n+1)²q_n. Since log(n+1)/Lambda_c→0 by PD-T157, each fixed
+0<a<1/5 has a threshold N_a above which both slopes are<=−a n²Lambda_c.
+N_a depends on a. The coarse condition logn>=10^7 ensures q_n>0; it does
+not by itself give every a arbitrarily close to1/5 at that fixed cutoff.
+This is the requested implication of the accepted theorem, not a new
+gated round. All-n slope uniformity and weighted energy remain OPEN.
+
+Claude audit-01 accepts the mathematical scopes. The current Codex
+response and [cold-storage audit](../audit-02-cold-storage.md) require a
+Claude protocol followup. Large artifacts described above as committed
+at the development boundary are now historical blobs in cold-storage.json;
+the current small evidence and refreshed integrity manifest have their
+own version identities. No new mathematical status is assigned here.

@@ -1,4 +1,4 @@
-"""Summarize saved T1--T4 measurements and split T1 evidence below 1 MB.
+"""Summarize saved T1--T4 measurements without rewriting raw evidence.
 
 This is postprocessing only. It does not rerun or certify any maximum.
 """
@@ -39,34 +39,29 @@ if __name__=='__main__':
     t1=root/'tests_T1.json'
     if t1.exists():
         d=json.loads(t1.read_text())
-        # Idempotent split: original complete profiles become per-degree files.
-        ns=sorted(set(r['n'] for r in d['profiles']))
-        for n in ns:
-            rr=[r for r in d['profiles'] if r['n']==n]
-            name=f'tests_T1_n{n}.json'
-            if 'cells' in rr[0]:
-                (root/name).write_text(json.dumps({'status':'MEASURED','n':n,'profiles':rr},indent=2)+'\n')
-                for r in rr:
-                    r['cell_count']=len(r.pop('cells'));r['cell_evidence']=name
+        # 2026-11-02 F1: retain the full payload as one artifact. Historical
+        # split inputs can first be rebuilt with reconstruct_t1.py in scratch.
+        if not all('cells' in r for r in d['profiles']):
+            raise SystemExit('T1 needs full profiles; run reconstruct_t1.py first')
         # Compare the positive-defect integral at each fixed macro ordinate to
         # the nearest interior cell's measured max; compare VERTICAL edges only.
         comparisons=[]
         for n in (100,200,400):
-            raw=json.loads((root/f'tests_T1_n{n}.json').read_text())
             for edge in ('v+','v-'):
-                rr=next(r['cells'] for r in raw['profiles'] if r['edge']==edge)
+                rr=next(r['cells'] for r in d['profiles'] if r['n']==n and r['edge']==edge)
                 for g in d['gbeta_integral']:
                     r=min(rr[1:-1],key=lambda z:abs(z['beta_over_pi']-g['beta_over_pi']))
                     comparisons.append({'n':n,'edge':edge,'beta_over_pi':g['beta_over_pi'],
                        'sampled_beta_over_pi':r['beta_over_pi'],'cell_gap':r['gap'],
                        'integral':g['gap_integral'],'error':r['gap']-g['gap_integral']})
-        d['vertical_integral_comparisons']=comparisons
-        t1.write_text(json.dumps(d,indent=2)+'\n')
         threshold=.5485148423995541-.01
         tested=[r for r in d['profiles'] if r['n']>=100]
+        minimum=min(tested,key=lambda r:r['minimum_noncorner_cell']['gap'])
+        minimum_summary={k:v for k,v in minimum.items() if k!='cells'}
+        minimum_summary.update(cell_count=len(minimum['cells']),cell_evidence='tests_T1.json')
         summary['T1']={'literal_verdict':'TRIVIAL KILL when cells containing maximal corners are included; criterion ill-posed',
           'dated_noncorner_cell_verdict':'RETAIN at sampled degrees and search resolution',
-          'minimum_noncorner_cell':min(tested,key=lambda r:r['minimum_noncorner_cell']['gap']),
+          'minimum_noncorner_cell':minimum_summary,
           'threshold':threshold,'breaches':sum(r['minimum_noncorner_cell']['gap']<threshold for r in tested),
           'series_requirement':'NOT DONE: beta-general PD-T188 series not derived; positive integral compared instead',
           'integral_comparison_max_abs_error_by_n':{str(n):max(abs(r['error']) for r in comparisons if r['n']==n) for n in (100,200,400)}}

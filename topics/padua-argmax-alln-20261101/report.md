@@ -1,12 +1,12 @@
 # Part 3 and gated campaign — Padua corner argmax
 
-2026-11-02 · Codex gpt-6.1-sol xhigh. Part3 input328be35e55143013047ec03a70e9906e82b95353; gated input7d308b10d946b607ae0690454f6c0103690775a4. Rule blobs unchanged; distinct Astra checks supplement the required Claude audit.
-[Draft PR17](https://github.com/aacchhee/padua_research/pull/17). Required Claude audit **PENDING**.
+2026-11-02 · Codex gpt-6.1-sol xhigh. Part3 input328be35e55143013047ec03a70e9906e82b95353; gated input7d308b10d946b607ae0690454f6c0103690775a4. Rule blobs unchanged; distinct Astra checks supplement Claude audit-01, which accepts the mathematics; the current response/storage protocol review remains pending.
+[Draft PR17](https://github.com/aacchhee/padua_research/pull/17). Claude mathematical audit **ACCEPTED at stated scopes**; response/storage protocol followup **PENDING**.
 The all-degree PD-T099 target remains **OPEN**.
 
 ## Results
 
-The strongest new result is **eventual exact global corner argmax**: there exists an integer N_* such that every n>=N_* has exactly the two nonnode-corner maximizers. [Gated theorem15](theory/gated-codex-15-eventual-global-argmax.md) combines uniform actual-corner phase localization with a reflection-first local comparison. N_* remains non-effective. The certified finite range stays **every n=2,…,16**; the unknown finite bridge beyond16 leaves PD-T099 OPEN. Required Claude audit is PENDING.
+The strongest new result is **eventual exact global corner argmax**: there exists an integer N_* such that every n>=N_* has exactly the two nonnode-corner maximizers. [Gated theorem15](theory/gated-codex-15-eventual-global-argmax.md) combines uniform actual-corner phase localization with a reflection-first local comparison. N_* remains non-effective. The certified finite range stays **every n=2,…,16**; the unknown finite bridge beyond16 leaves PD-T099 OPEN. Claude audit-01 accepts this mathematical scope; response/storage protocol followup is pending.
 
 The [gated campaign report](gated/REPORT.md) records the sequential gates, retained failures and exact remaining obligations. The [local theorem14](theory/gated-codex-14-reflection-first-corner-bound.md) gives a quadratic-logarithmic remainder and explicit physical radius2^-17/n² under a very coarse sufficient local degree condition. Both compact vertical and horizontal edge-envelope gaps are now proved; [horizontal theorem16](theory/gated-codex-16-horizontal-compact-envelope.md) identifies its primitive exactly with S(s,0), retaining the corrected mode and both parities. Scientific IDs remain provisional.
 
@@ -56,7 +56,7 @@ The original P3–P5 obligations and fallback are retained in [their attempt](at
 
 n12 discovery took5.18s, below IDEA-05's10×n7 baseline threshold (~35234s), so this finite tool is retained in the tested scope. Runtime is a measurement, with no bound for larger degrees. Corrupted-certificate controls reject missing/duplicated leaves, wrong corners, forged bounds/thresholds, altered sources and other malformed inputs. The producer/checker share arithmetic; independent execution and code/proof review are separate from an independently implemented arithmetic kernel.
 
-Together with inherited accepted n3–7, these results give2≤n≤16. PD-T181's n8 OPEN row is superseded only by a proposed local split until audited PR preparation updates the shared registry.
+Together with inherited accepted n3–7, these results give2≤n≤16. For F8, codex07 is proposed as the proof record of existing PD-T181, with its provisional label retained as an alias and no second ID for the same degree-eight statement. The shared row changes only at PR preparation.
 
 ## Fallback and limits
 
@@ -75,6 +75,14 @@ All essential new finite evidence is small and committed; no Windows/cold-storag
 Scope stays inside this topic and its own results file. [Shared-row/ledger proposals](proposed-record-changes.md) wait for audited PR preparation. No final IDs assigned.
 The GitHub connector uses Andrey Chesnokov's account noreply email and exposes no author-email override; the requested gmail email could not be selected. Published history is preserved.
 
-Next is Claude Opus5.5 xhigh audit, followed by dispositions and PR preparation. Supplementary Astra checks do not replace the required Claude audit.
+Next is Claude protocol review of response-01 and repair of cold-storage findings, followed by distinct Codex re-audit and PR preparation. Supplementary checks do not replace the required cross-agent review.
 
 The completed authorized sequence used6/2/1 rounds. [Gated report](gated/REPORT.md) and [ledger](gated/ROUND_LEDGER.md) state each stopping gate and resumption condition; unused quota was not spent automatically. The next numbered audit handoff includes the entire part3 and gated scope; superseded03 was never marked accepted.
+
+## Response/current protocol state — 2026-11-02
+
+Claude audit-01 accepts every mathematical claim at its stated scope. Response-01 addresses F1–F15 and N1–N14 without new research or scientific checker/certificate changes. The eventual negative-slope premise is already a consequence of theorem14 for each fixed0<a<1/5; all-n uniformity and weighted energy remain OPEN. The active record/preparation fixes and manifest have distinct current identities, while old proof/evidence pins remain frozen.
+
+Audit-02-cold-storage verifies all36historical identities, both exact tool revisions' roundtrips and byte-identical D3 regeneration, but returns two major filesystem-safety findings and a minor regeneration-instruction finding to Claude. These are storage-tool issues, not a rejection of the accepted mathematics. The unified historical T1 payload is reconstructed in scratch by code/part3/reconstruct_t1.py; tests_analyze no longer splits or rewrites it. All978summary leaves agree except the unified-file metadata pointer. No large T1 data was recommitted.
+
+One refreshed evidence-manifest.json is explicitly retained as the single integrity-manifest exception allowed by handoff07. It covers current small files and source-pinned historical cold blobs separately and its plain check is read-only. The archived older manifest has the same historical pathname but a different immutable version; never restore it over the active record. Claude must address that version distinction when fixing the storage helper. Response/cold-storage protocol followup precedes final-ID and shared-registry preparation.

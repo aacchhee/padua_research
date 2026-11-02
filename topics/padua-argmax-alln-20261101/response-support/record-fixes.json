@@ -1,0 +1,194 @@
+[
+  {
+    "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-14-reflection-first-corner-bound.md",
+    "old_sha256": "9e46c6c4469087117f6cd09c0853181fb5f6366aaf81f13bb402ff127e4aead8",
+    "new_sha256": "3ccb70b779af91c837ddf419074fd1bcaaa8480d95155b6b9cd6d5d541bcec43",
+    "bytes": 13563,
+    "correction_lines": [
+      "223"
+    ]
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-17-finite-edge-cell-comparison.md",
+    "old_sha256": "3d7672e808626faee576de9fa28606e251a040eb19799aecc773e9e7ec5e1d1b",
+    "new_sha256": "38c5d3b0b4fd435b8e11c5c2e4f55a9dc27f918b9e80e8a3b93ffa27f7a5685b",
+    "bytes": 12807,
+    "correction_lines": [
+      "236"
+    ]
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-03-two-phase-local-gain.md",
+    "old_sha256": "671353baf16d7237f6b7784a16b65607972375d81efc8d01a9a22a82e936ebd2",
+    "new_sha256": "9a56b9995f6014542e10a526f97670282d1e0b899f92e3791a3338da5e84c4bd",
+    "bytes": 14797,
+    "correction_lines": [
+      "354"
+    ]
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-10-noncorner-coset-defect.md",
+    "old_sha256": "ee0408d648af83621f963de1ac0f8df03fc066d98142a56615ebaf9b067a1987",
+    "new_sha256": "0558537f7f4e2a8c9fb25bd8d026bc4dc6ef9605406b8267f88859bfbe60385f",
+    "bytes": 12120,
+    "correction_lines": [
+      "304"
+    ]
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/theory/argmax-alln-codex-03-finite-certificate-correctness.md",
+    "old_sha256": "486e346f784f69bb277f20ebb947d942bcc3f62716a34bdfe044c622ea7d8c41",
+    "new_sha256": "6f08ed160100ef3faa678d5e9eb7f4339c1b22ba17c911504129e77eb8b90cc3",
+    "bytes": 14706,
+    "correction_lines": [
+      "54",
+      "62",
+      "254"
+    ]
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-01-pairwise-defect-projection.md",
+    "old_sha256": "4e35ff9890e329bc581ae9a68d2c33bb1a9eb8439fd2884d1f260eefdec167f0",
+    "new_sha256": "cfa50aa56dd12f03c321e2d9700adcc80405d8446ebe7ed58d40a4f4a0074af5",
+    "bytes": 8346,
+    "correction_lines": [
+      "97"
+    ]
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-12-row-primitive-identity.md",
+    "old_sha256": "94a0c89cc0d3b00d02b7669336d1fb343e2ea5f32514b514cd4dda73086e8d60",
+    "new_sha256": "93e2515d91497a4223bf00a3edd4428cbbb9aa4f90a344b4a740c2bdb9a2eeb8",
+    "bytes": 10104,
+    "correction_lines": [
+      "256"
+    ]
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-11-corner-phase-localization.md",
+    "old_sha256": "42372e7367ad21572544f38f281cb590d8e4b8ed07af3608fe64107c2f0dddae",
+    "new_sha256": "09ecf35d046207a50bf048d7477bd36cca6c924059c58bfd6ed548efe3d37b19",
+    "bytes": 6829,
+    "correction_lines": [
+      "140"
+    ]
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-13-corner-first-variation.md",
+    "old_sha256": "c0b927c14ad281e2717fc626f3c8fa7f34a5b5d94f85420b31eec283ec5e7312",
+    "new_sha256": "d23f10f6ed2c57e4479facac9dc390a81843a94292c2676f0bb9847a959a7d57",
+    "bytes": 14118,
+    "correction_lines": [
+      "177",
+      "181"
+    ]
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-06-exact-primitive-cusp.md",
+    "old_sha256": "89de42bb684299c3b345377a06506debbbfeb46a2ba2aac4a527be6654c81774",
+    "new_sha256": "553a1c4dcd5ca39fa29a8bf40d325b1c9a6738de19657d31af9c27c6c75907cb",
+    "bytes": 4425,
+    "correction_lines": [
+      "51",
+      "59"
+    ]
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-N01-majorant-coset-obstruction.md",
+    "old_sha256": "775c4135c5ae40ffad30b785cb4a0e5012a3ca1b490668c2f52d51d226e2a5c6",
+    "new_sha256": "8ece5681e831f0090d2c4310157271e4a44542ec5ac305b7c40af679810da266",
+    "bytes": 3494,
+    "correction_lines": [
+      "37",
+      "45"
+    ]
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-05-finite-projected-defect.md",
+    "old_sha256": "a54168c4281c1cba70c619e50eb9b71d2ccd6304681571947e6089baf41035cf",
+    "new_sha256": "46284521b8e1a2f080ff4c4f34bd63f69ec90365b005bd7d1137d5d23cdafc51",
+    "bytes": 5105,
+    "correction_lines": [
+      "55",
+      "64"
+    ]
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-04-compact-complement-gap.md",
+    "old_sha256": "fd86232665442f56e39bd1614bd355acd7e4c9795ef1358bcc766c40511f9e4b",
+    "new_sha256": "e22566191093c57a1adb388ae0de40a0e2e0b60cbaaaa83e7fba63dc0f6d0c04",
+    "bytes": 6713,
+    "correction_lines": [
+      "64",
+      "75"
+    ]
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/theory/argmax-alln-codex-05-horizontal-compact-defect.md",
+    "old_sha256": "21d65ed24a1d1358f33b12187ef7552490ea023ba58a592c8b365c96c4a9e654",
+    "new_sha256": "f3350114583c81dc0836d3efc3eb282cf8149f37427de8b7b65915f90dca1f90",
+    "bytes": 10078,
+    "correction_lines": [
+      "223"
+    ]
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-02-two-phase-global-bound.md",
+    "old_sha256": "39c2f217f1ce1ca618033f0ac32852ad47933817a240911d085764cf1e3b17b7",
+    "new_sha256": "f76fc840fd95040058defdb1e0788655f467e2b4069ebe10137f2aae6807125e",
+    "bytes": 9876,
+    "correction_lines": [
+      "214",
+      "216"
+    ]
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-09-shrinking-corner-reduction.md",
+    "old_sha256": "c7018731a1a9139ba0b217818d6d241e579da6413be283b55c3f8143e5f00301",
+    "new_sha256": "886f9f931e0ea16c795b862e10819b28bb180071d094dad1c6e59183fee50036",
+    "bytes": 8334,
+    "correction_lines": [
+      "166"
+    ]
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-15-eventual-global-argmax.md",
+    "old_sha256": "def15397bed5342905367e9309ca851ed357e4d24aef2069e1d84b6dcae59b7e",
+    "new_sha256": "e2d7b30976bbc127df8108b00ebd3c608a24fb7528e0b86253f4ae9198ced5dc",
+    "bytes": 8654,
+    "correction_lines": [
+      "70",
+      "80"
+    ]
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/attempts/P1-P2-edges.md",
+    "old_sha256": "a9b015a06b685932650f304d9d4493494d0e22290290b350a95b8ef85a9e94ac",
+    "new_sha256": "66a6de411900ed6b96804b8c112ad82b73ce744da4387d45a65d0c629998263c",
+    "bytes": 4650,
+    "correction_lines": [
+      "79"
+    ]
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/gated/d1/r01-phase.md",
+    "old_sha256": "9566c7abd0cf05ae718b89ed2b06f759901a944aa741ae085f8ec064b8dfbfc3",
+    "new_sha256": "ce552b09bed0582087b9cc0e51eb9136ac1c38e8bd46d46bc6077384c0ac228d",
+    "bytes": 19418,
+    "correction_lines": [
+      "430"
+    ]
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/gated/d3/r01-finite.md",
+    "old_sha256": "94e87303e0e08aecee3250e8108cfb4c97f56c1400bbbdabb286afca3ed9caa4",
+    "new_sha256": "a8a493c129647dab3b23d77129f1adb68e0c3af1c5a271d33e3507dbb08c21b4",
+    "bytes": 14322,
+    "correction_lines": [
+      "213",
+      "215",
+      "223",
+      "225"
+    ]
+  }
+]

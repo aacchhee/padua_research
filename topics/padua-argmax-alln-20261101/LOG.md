@@ -2,15 +2,15 @@
 
 - Branch: `claude/padua-argmax-alln-20261101` · Base: main `2b52b43` (merged in `280fea4`; initially `28aaa20`) · Developer: Claude (planning, MEASURED records); Codex (part 3 development, from handoff 02) · Auditor: Codex for Claude's records, Claude for Codex's
 - Stage: WORK · Claude [audit-01](audit-01.md) (handoff 05) ACCEPTS every PROVED/MEASURED claim at its stated scope with no status change; one MAJOR evidence-protocol finding (F1) and minor record findings (F2–F15) need a Codex response under [handoff07](handoffs/07-response-and-cold-storage-audit.md) (06 superseded by AC's cold-storage instruction). Large outputs moved to [cold storage](COLD_STORAGE.md). PD-T099 remains OPEN.
-- Permanent reserved ranges (no final IDs assigned): PD-T206–225, PD-N078–083, IDEA-316–335, LIT-460–465; first published405febab, [draft PR17](https://github.com/aacchhee/padua_research/pull/17), [ledger](ALLOCATIONS.md).
+- Permanent reserved ranges (no final IDs assigned): PD-T206–225 (first405febab) and additional PD-T226–245 (first3aebb299), PD-N078–083, IDEA-316–335, LIT-460–465; [draft PR17](https://github.com/aacchhee/padua_research/pull/17), [ledger](ALLOCATIONS.md).
 - Claims:
   - PD-T?argmax-alln-claude-01 — float64 majorant/gap observations — MEASURED — [theory](theory/argmax-alln-claude-01-measured-observations.md).
   - PD-T?argmax-alln-claude-02 — float64 edge/strip gap profiles and n = 2 scans — MEASURED — [theory](theory/argmax-alln-claude-02-measured-edge-profile.md).
-  - IDEA?argmax-alln-claude-01 — REJECTED: failed (MEASURED), retained as a sub-tool.
-  - IDEA?argmax-alln-claude-02 and -05 — active in part 3; -03 and -04 deferred. See [ideas.md](ideas.md).
+  - Original Claude candidate01 has an accepted exact refutation in gated-N01; the Claude-owned candidate close-out is proposed for PR preparation, preserving its earlier measured history.
+  - Claude candidate02 needs its measured-scope close-out at PR preparation; candidate05 supplied finite certificates. E-C remains OPEN with finite exact support; E-P is refuted separately. No new exploratory rounds are active. See [ideas.md](ideas.md) and the preparation worklist.
 - For the PR: register the IDEA and PD-T rows, `results/padua-argmax-alln-20261101.md` → `RESULTS.md` section, Codex audit.
 - Open for AC: none.
-- Current part3 claims: PROVED codex-02/03/04/05/07/08 and scoped codex-N01; MEASURED codex-01/06. See [report.md](report.md) for exact scopes and provisional prefixes. Required Claude audit PENDING.
+- Current accepted claims: PROVED codex-02/03/04/05/07/08 and scoped codex-N01; gated01–17 and scoped gated-N01/N02, including eventual exact two-corner argmax and compact horizontal envelope; MEASURED codex01/06. Finite global coverage2–16 includes inherited3–7. Claude audit-01 ACCEPTS these scopes; response/storage protocol findings remain. See [report.md](report.md).
 
 ## 2026-11-01 — Claude, claude-opus-5-5 (configured; effort not exposed)
 
@@ -68,7 +68,9 @@
 - Connector commit identity is Andrey Chesnokov with the account noreply email, rather than the handoff's requested gmail email: the connector exposes no author-email selector. Published history is preserved; no force-push or main mutation.
 - [report.md](report.md), [results](../../results/padua-argmax-alln-20261101.md), [evidence-manifest.json](COLD_STORAGE.md) (cold storage since 2026-11-02) and [literal shared proposals](proposed-record-changes.md) record the boundary. No final IDs assigned or shared registry changed. Stage AUDIT; [handoff03](handoffs/03-audit.md) is published in the following status-only/handoff commit after the scientific output SHA is known.
 
-## Runs needed (updated during part 3)
+## Historical transition from part3 to the authorized gated continuation
+
+The original empty “Runs needed (updated during part3)” heading is replaced by this historical transition label (F14,2026-11-02). Current outstanding work is listed at the end.
 
 ## AC-authorized gated continuation
 
@@ -169,9 +171,23 @@ AC authorizes at most7 rounds each in direction1 (defect domination), then2 (uni
   This topic's manifest is unchanged, and `verify` still accepts all 36 entries. Handoff 07's cold-storage audit covers the tool at the branch head.
 - **Merge order.** Recommended: PR #18 first, then this branch merges main. `tools/cold_storage.py` is identical on both branches.
 
-## Runs / work still needed after gated completion
+## 2026-11-02 — Codex gpt-6.1-sol high — response-01 / handoff07
 
-- Required Claude Opus5.5 xhigh audit under handoff05, including original part3 and all nine gated rounds; complete state/IDEAS read and explicit dispositions required. Supplementary Astra checks do not replace it.
-- A direct analytic finite-bridge comparison or an effective global threshold with complete remaining coverage; no such run/proof is claimed here. All-degree PD-T099 stays OPEN.
-- General-beta series and center-minimality remain unresolved, with no new execution planned under the closed round quota. Uniform slope/energy and row partial-sum alternatives remain deferred with their stated resumption conditions.
-- Six prescribed independent original-Claude replays are COMPLETE; standalone maj.py whole-square scans remain outside that replay's coverage. No new execution is implied by this list.
+- Rules/current input read at b8fbb5c5be374bf658d2970681c7cac0fb40d737; a later log-only9a69c9b356693473a1de317a906fa003a32aad52 update linking PR18 was preserved verbatim before publication, with no audited source change; main2b52b432fe59c9a50aef9deebe5152c5d6874465 remains unchanged. [Handoff07](handoffs/07-response-and-cold-storage-audit.md) governs both the response and independent audit of Claude's cold-storage change. GitHub connector used for source access/publication; no network CLI, main mutation or published-history rewrite. Original workspaces preserved.
+- Mathematical acceptance in [audit-01](audit-01.md) is retained. [Response-01](response-01.md) answers every F1–F15 and N1–N14. No new research, claim status, scientific checker predicate or certificate value changes; PD-T099 stays OPEN. The response fixes citations, current review labels, P2 pointers, proof/registration provenance, explicit already-proved appendix dependencies, results attribution and preparation proposals. Existing display mathematics/Overall statuses remain unchanged.
+- F15 is the requested implication of theorem14(9): A_n<=−2n²q_n, B_n<=−2(n+1)²q_n, q_n=Lambda_c/10−237000log(n+1). Each fixed0<a<1/5 has an eventual threshold N_a; the threshold depends on a. All-n slope uniformity and weighted energy remain OPEN. This was checked directly at high effort, without another gated round.
+- Disjoint Sol high record worker corrected20existing records; full old/new hashes and correction lines in response-support/record-fixes.json. Parent integrated its own current reports/results/ledger. F7 first-addition history is verified through the connector's path histories+added statuses for13contract/next-note sources; no local full-history Git log or stronger timing evidence is claimed. The D3 first86-line preregistration hash remains03e877… . Frozen old audit/support/proof receipts are unchanged.
+- F1: the old split-to-evade-limit rationale is explicitly corrected. The new small reconstruct_t1.py reverses frozen historical components to one1,342,719B scratch artifact, SHAbfb0acd697bfe8530a9b8441130c400f1a3601342277ab0a0c77d2cfd6cfcb90. The separate Claude replay4d7792e6… remains a disclosed ephemeral-byte identity, not falsely claimed retrievable. Revised tests_analyze creates no split and does not rewrite T1. All978summary leaves match the archived summary except one evidence-filename metadata pointer; inputs unchanged. No large T1 data recommitted. Distinct Astra high reconstruction/analysis replay confirms these results and idempotent/refusal cases.
+- [Audit-02-cold-storage](audit-02-cold-storage.md), a distinct Astra high protocol audit, checks initial6fae535 versus1cecd68 and the current tool throughb8fbb5c. All36paths/blobs/SHA256/sizes match; both exact versions' verify→restore→compare-all→clean and scratch export pass. D3 screen regenerates byte-identically. However CS1/CS2 are MAJOR overwrite/symlink defects and CS3 concerns incomplete regeneration commands. Codex has not repaired Claude's tool/manifests; the next Claude step must fix them and receive a distinct Codex re-audit. Seven small support files preserve executed checks/probes.
+- Current integrity-only check_evidence.py verifies current small files and all36archived versions by read-only Git identity checks; plain checking no longer rewrites a committed receipt. One active integrity manifest is retained under handoff07's explicit exception; its historical predecessor at the same pathname remains a separate pinned version. Frozen audit scratch streams keep their opaque original bytes. Scientific certificate checker sources/predicates stay frozen; their -O risk is tracked for technical preparation, and accepted executions used assertions enabled.
+- [PR_PREPARATION.md](PR_PREPARATION.md) assigns the deferred literal/shared rows, reuse of PD-T181 for codex07, durable MEASURED homes and scoped MEASURED negatives, candidate splits, Claude-owned close-outs and alias maps. No final IDs/new reservations/shared registry edits occur here.
+- Actual/configured model settings: Sol high primary and record worker; distinct Astra high cold-storage audit and supplementary response-code check; runtime serving metadata unavailable. Future commit trailers record these roles; old trailers/history are preserved. Claude's prior clone/gmail identity is distinct from this connector's account noreply identity.
+- Overall stage remains WORK for Claude storage repair and response protocol review. Commit outputs first, then change only07's status and add [handoff08](handoffs/08-response-review-and-storage-repair.md) with the real response-output SHA. Draft PR17 stays unready; only AC merges.
+
+## Current work after response-01 / cold-storage audit
+
+- Claude protocol review of response-01, with the documentation/citation/provenance fixes and unchanged mathematical scopes.
+- Claude repairs cold-storage CS1/CS2 overwrite/symlink defects and CS3 regeneration instructions; distinguish the active integrity manifest from the archived historical version at the same pathname. Codex independently reaudits the repairs. Delivery/export to AC storage remains PENDING.
+- Final-ID/shared-registry preparation after those gates, following PR_PREPARATION.md. No scientific IDs are assigned here.
+- A direct analytic finite-bridge comparison or effective threshold remains future research, not an authorized new round in this response. PD-T099, general-beta series and center-minimality remain OPEN. All-n slope uniformity and weighted energy remain OPEN; the eventual slope consequence is clarified under F15.
+- Six original-Claude-script replays and Claude's mathematical audit are complete at their stated scopes; no new execution of the old standalone whole-square scans is claimed.

@@ -28,7 +28,7 @@ Here g_v,g_h are exactly prior records codex-04/05's positive compact integrals.
 
 ## Assumptions and status
 
-Exact real arithmetic, n→∞, fixedδ, near the odd coset in both phases. Overall status:PROVED by the analytic argument below; independent check and required Claude audit pending. This is not an effective rate, not a bound away from the odd-coset phase neighborhood, and not a corner result.
+Exact real arithmetic, n→∞, fixedδ, near the odd coset in both phases. Overall status:PROVED by the analytic argument below; supplementary independent review is complete; Claude audit-01 ACCEPTED the mathematics at its stated scope (record fixes pending). This is not an effective rate, not a bound away from the odd-coset phase neighborhood, and not a corner result.
 
 ## Dependencies and sources
 
@@ -91,4 +91,14 @@ Conditional reduction: if a global two-phase bound localizes any near-corner-lev
 
 ## Scope/history
 
-This removes the need for a positive full four-copy limiting profile in P4/P5. It does not remove phase localization, local primitive gain, effective thresholds or the corner obligations. All-degree PD-T099 remains OPEN. Developed by Codex Sol xhigh within direction1 round1; required Claude audit PENDING.
+This removes the need for a positive full four-copy limiting profile in P4/P5. It does not remove phase localization, local primitive gain, effective thresholds or the corner obligations. All-degree PD-T099 remains OPEN. Developed by Codex Sol xhigh within direction1 round1; Claude audit-01 ACCEPTED the mathematics at its stated scope (record fixes pending).
+
+
+### Documentation correction — 2026-11-02
+
+F3: publication-time review labels are updated; the original proof and claim scopes are unchanged.
+
+Current review scope (F3): [Claude audit-01](../audit-01.md) ACCEPTED the mathematics exactly as stated; its record/protocol findings and the protocol check of this response remain pending. Supplementary independent checks are complete and do not replace that Claude audit. No proof status, statement, checker predicate or certificate changes. Earlier publication-time review wording is preserved here as history:
+
+> independent check and required Claude audit pending
+> required Claude audit PENDING

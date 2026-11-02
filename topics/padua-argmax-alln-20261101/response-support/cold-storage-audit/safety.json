@@ -1,0 +1,199 @@
+{
+ "fixture_method": "Isolated safety probes of exact pinned tool code; no Git mutations.\nROOT/load redirected to disposable fixtures. Git reads use actual audit repository;\nblob_bytes and all command logic are the unmodified audited implementation.\n",
+ "results": [
+  {
+   "revision": "6fae535df28303b27ca1d533d9afa229660a3a20",
+   "source_sha256": "49c4842a4ff358e7b73f394042d0ff362cfc0c9087be770790cc2b5b17840b00",
+   "cases": [
+    {
+     "name": "restore overwrites different untracked bytes",
+     "operation": "restore",
+     "returncode": 0,
+     "observed": {
+      "exists": true,
+      "equals_manifest": true,
+      "original_preserved": false
+     },
+     "stdout": "{\n \"slug\": \"fixture\",\n \"restored\": 1,\n \"dest\": \"/tmp/cold-safety-fkw3k7nk/repo\"\n}"
+    },
+    {
+     "name": "restore overwrites tracked path",
+     "operation": "restore",
+     "returncode": 0,
+     "observed": {
+      "exists": true,
+      "equals_manifest": true,
+      "original_preserved": false
+     },
+     "stdout": "{\n \"slug\": \"fixture\",\n \"restored\": 1,\n \"dest\": \"/tmp/cold-safety-ro6gm40c/repo\"\n}"
+    },
+    {
+     "name": "clean preserves different untracked bytes",
+     "operation": "clean",
+     "returncode": 0,
+     "observed": {
+      "exists": true,
+      "equals_manifest": false,
+      "original_preserved": true
+     },
+     "stdout": "{\n \"slug\": \"fixture\",\n \"removed_restored_copies\": 0\n}"
+    },
+    {
+     "name": "clean preserves tracked matching bytes",
+     "operation": "clean",
+     "returncode": 0,
+     "observed": {
+      "exists": true,
+      "equals_manifest": true,
+      "original_preserved": true
+     },
+     "stdout": "{\n \"slug\": \"fixture\",\n \"removed_restored_copies\": 0\n}"
+    },
+    {
+     "name": "clean removes matching untracked regular file",
+     "operation": "clean",
+     "returncode": 0,
+     "observed": {
+      "exists": false,
+      "equals_manifest": false,
+      "original_preserved": false
+     },
+     "stdout": "{\n \"slug\": \"fixture\",\n \"removed_restored_copies\": 1\n}"
+    },
+    {
+     "name": "restore follows final symlink",
+     "operation": "restore",
+     "returncode": 0,
+     "observed": {
+      "outside_bytes_overwritten": true
+     },
+     "stdout": "{\n \"slug\": \"fixture\",\n \"restored\": 1,\n \"dest\": \"/tmp/cold-safety-t7glryk4/repo\"\n}"
+    },
+    {
+     "name": "clean follows parent symlink outside root",
+     "operation": "clean",
+     "returncode": 0,
+     "observed": {
+      "outside_file_deleted": true
+     },
+     "stdout": "{\n \"slug\": \"fixture\",\n \"removed_restored_copies\": 1\n}"
+    },
+    {
+     "name": "clean rejects parent traversal via Git error",
+     "operation": "clean",
+     "returncode": 128,
+     "observed": {
+      "outside_file_deleted": false
+     },
+     "stdout": "fatal: ../outside/file.json: '../outside/file.json' is outside repository at '/workspace/padua-response-20261102'"
+    },
+    {
+     "name": "verify does not validate source commit/path association",
+     "operation": "verify",
+     "returncode": 0,
+     "observed": {
+      "missing_remains_missing": true
+     },
+     "stdout": "{\n \"slug\": \"fixture\",\n \"entries\": 1,\n \"bytes\": 20446,\n \"restored_copies_present\": 0,\n \"accepted\": true,\n \"problems\": []\n}"
+    }
+   ]
+  },
+  {
+   "revision": "b8fbb5c5be374bf658d2970681c7cac0fb40d737",
+   "source_sha256": "62ea9e0da86ef8a72a2298f093ed4c54691cc8cc1bd2850974248eebcaa43b58",
+   "cases": [
+    {
+     "name": "restore overwrites different untracked bytes",
+     "operation": "restore",
+     "returncode": 0,
+     "observed": {
+      "exists": true,
+      "equals_manifest": true,
+      "original_preserved": false
+     },
+     "stdout": "{\n \"slug\": \"fixture\",\n \"restored\": 1,\n \"dest\": \"/tmp/cold-safety-kkz1tk0l/repo\"\n}"
+    },
+    {
+     "name": "restore overwrites tracked path",
+     "operation": "restore",
+     "returncode": 0,
+     "observed": {
+      "exists": true,
+      "equals_manifest": true,
+      "original_preserved": false
+     },
+     "stdout": "{\n \"slug\": \"fixture\",\n \"restored\": 1,\n \"dest\": \"/tmp/cold-safety-x2xacy9m/repo\"\n}"
+    },
+    {
+     "name": "clean preserves different untracked bytes",
+     "operation": "clean",
+     "returncode": 0,
+     "observed": {
+      "exists": true,
+      "equals_manifest": false,
+      "original_preserved": true
+     },
+     "stdout": "{\n \"slug\": \"fixture\",\n \"removed_restored_copies\": 0\n}"
+    },
+    {
+     "name": "clean preserves tracked matching bytes",
+     "operation": "clean",
+     "returncode": 0,
+     "observed": {
+      "exists": true,
+      "equals_manifest": true,
+      "original_preserved": true
+     },
+     "stdout": "{\n \"slug\": \"fixture\",\n \"removed_restored_copies\": 0\n}"
+    },
+    {
+     "name": "clean removes matching untracked regular file",
+     "operation": "clean",
+     "returncode": 0,
+     "observed": {
+      "exists": false,
+      "equals_manifest": false,
+      "original_preserved": false
+     },
+     "stdout": "{\n \"slug\": \"fixture\",\n \"removed_restored_copies\": 1\n}"
+    },
+    {
+     "name": "restore follows final symlink",
+     "operation": "restore",
+     "returncode": 0,
+     "observed": {
+      "outside_bytes_overwritten": true
+     },
+     "stdout": "{\n \"slug\": \"fixture\",\n \"restored\": 1,\n \"dest\": \"/tmp/cold-safety-14vzja2t/repo\"\n}"
+    },
+    {
+     "name": "clean follows parent symlink outside root",
+     "operation": "clean",
+     "returncode": 0,
+     "observed": {
+      "outside_file_deleted": true
+     },
+     "stdout": "{\n \"slug\": \"fixture\",\n \"removed_restored_copies\": 1\n}"
+    },
+    {
+     "name": "clean rejects parent traversal via Git error",
+     "operation": "clean",
+     "returncode": 128,
+     "observed": {
+      "outside_file_deleted": false
+     },
+     "stdout": "fatal: ../outside/file.json: '../outside/file.json' is outside repository at '/workspace/padua-response-20261102'"
+    },
+    {
+     "name": "verify does not validate source commit/path association",
+     "operation": "verify",
+     "returncode": 0,
+     "observed": {
+      "missing_remains_missing": true
+     },
+     "stdout": "{\n \"slug\": \"fixture\",\n \"entries\": 1,\n \"bytes\": 20446,\n \"restored_copies_present\": 0,\n \"accepted\": true,\n \"problems\": []\n}"
+    }
+   ]
+  }
+ ]
+}

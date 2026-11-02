@@ -49,8 +49,7 @@ optimizers, sign stability and local-maxima enumeration are not premises.
 
 Overall status: **PROVED**, computer assisted in the stated finite scope.
 The written reduction, full certificate, development replay and distinct
-actual producer/checker replay are complete. Required Claude audit is
-**PENDING**; this status does not approve the rest of the campaign.
+actual producer/checker replay are complete. Claude audit-01 ACCEPTED the mathematics at its stated scope (record fixes pending); this status does not approve the rest of the campaign.
 
 | Mathematical part | Status | Evidence / limits |
 |---|---|---|
@@ -120,7 +119,7 @@ At y'=cos(k'*pi/m), rigorous cosine intervals and outward Horner
 evaluation give enclosing intervals for each P_B(y'). Summing their
 absolute-value lower bounds produces T_-<=lambda_n(x,y'). This remains
 valid when an interval contains zero. The center belongs to the target
-closed cell. The checker reconstructs the interval roots, all Bernstein
+closed cell. The checker reconstructs the initial enclosing source intervals (the root boxes of the subdivision trees), all Bernstein
 coefficients, the complete prefix cover and T_- from pinned sources.
 For every leaf it checks the strict integer inequality U<T_-*S, where U
 is the scaled bound in (3). Hence the maximum over source leaves is
@@ -214,7 +213,7 @@ unqualified all-cell pointwise comparison mechanism. A future all-n
 E-C route still requires a distinct analytic comparison handling the
 maximizing phases. No further scan or later round was executed here.
 
-The required Claude topic audit remains PENDING, including this finite
+At initial publication the required Claude topic audit remained PENDING, including this finite
 computer proof. The orchestrator controls the checkpoint/commit and the
 essential-evidence disposition; all listed code and small certificate/
 receipt artifacts are available in the shared workspace for that step.
@@ -232,3 +231,15 @@ was regenerated under the final pinned source hashes; mathematical
 interval rows did not change. After the orchestrator confirmed the
 distinct actual replay PASS, this separate finite statement was recorded
 as PROVED. No all-degree target or older result status was upgraded.
+
+
+### Documentation correction — 2026-11-02
+
+N8: the original phrase “interval roots” meant the initial source intervals at the roots of the binary subdivision trees, not roots of a polynomial or interval root isolation. Only that wording is clarified.
+
+Current review scope (F3): [Claude audit-01](../audit-01.md) ACCEPTED the mathematics exactly as stated; its record/protocol findings and the protocol check of this response remain pending. Supplementary independent checks are complete and do not replace that Claude audit. No proof status, statement, checker predicate or certificate changes. Earlier publication-time review wording is preserved here as history:
+
+> Required Claude audit is
+> **PENDING**
+
+The original closing sentence began “The required Claude topic audit remains PENDING, including this finite”; it is now explicitly labeled as the publication checkpoint and superseded by the current review correction.

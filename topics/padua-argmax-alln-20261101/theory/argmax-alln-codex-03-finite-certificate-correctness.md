@@ -24,6 +24,8 @@ degree-(d,d) Bernstein basis, with coefficients cₗ,ᵢⱼ(R).
 Then max_Q λ=C and {z∈Q:λ(z)=C}=E. Exact enclosures Uᵢⱼ≥Σₗ|cₗ,ᵢⱼ|
 and a lower bound C₋≤C suffice whenever the strict tests use Uᵢⱼ<C₋.
 
+The existing general-constructor appendix below additionally proves, for every n>=2, that its outward coefficient and corner-value intervals enclose the exact PD-T101 cardinals and their values, and that the two nonnode corners have equal values under the parity-valid reflection. These are explicit supporting parts of this record, not degree-specific successful-search claims.
+
 ## Definitions
 
 Bᵈᵢ(u)=binom(d,i)uⁱ(1−u)ᵈ⁻ⁱ, for 0≤i≤d and 0≤u≤1.
@@ -49,13 +51,15 @@ computation is claimed by this implication alone).
 |---|---|---|
 | Stated finite-certificate implication | PROVED | Positivity, partition of unity, strict vertex characterization below |
 | Integer interval conversion/subdivision enclosure rules | PROVED minor implementation lemma | Exact linear combination and outward midpoint rounding below |
+| All-n general-constructor coefficient and corner-value enclosure soundness | PROVED | Existing general-constructor appendix; PD-T101 §1 formula and outward arithmetic |
+| Equality of the two nonnode-corner values by parity-valid reflection | PROVED | Existing appendix; node permutation and cardinal uniqueness |
 
 Disposition: retained implementation of IDEA?argmax-alln-claude-05, a
 global-maximum upper-bound variant of IDEA-290…302. No novelty claim.
 
 ## Depends on
 
-No external mathematical theorem. For the n=8 implementation the exact
+The abstract finite-certificate implication uses no external mathematical theorem. The all-n general constructor additionally depends on PD-T101, proof §1, for the corrected cardinal formula and unisolvence, as the existing appendix states. For the n=8 implementation the exact
 cardinals and principal embedding are reconstructed by the unchanged
 part-2 `a5_n8_field.py` (PD-T179, provisional part-2 record 60), including
 all exact interpolation and partition-of-unity checks. A successful
@@ -223,7 +227,7 @@ not the justification of the all-n interval formulas above.
 These proof steps establish enclosure soundness, not successful search
 for any unspecified n. Degree-specific execution/replay records live in
 the separate degree-eight and finite-degrees-nine-through-sixteen
-theorems. Required Claude topic audit remains pending.
+theorems. Claude audit-01 ACCEPTED the mathematics at its stated scope (record fixes pending).
 
 The general implementation's developer controls, on the actual complete
 n=8 general certificate, accepted one complete and one genuinely partial
@@ -245,3 +249,12 @@ n=8 pilot after the first-pass T1–T5 outcomes; high-degree T1 extensions
 were still running concurrently. The T2/T3 local-profile forms and the
 literal-existing-bound T4 effectivity projection were killed; none of
 those outcomes is needed for this finite correctness implication.
+
+
+### Documentation correction — 2026-11-02
+
+F9: the original dependency lead “No external mathematical theorem” referred to the abstract Bernstein implication; the all-n constructor dependency on PD-T101 §1 was already present in the appendix and is now explicit in Depends on. The enclosure-soundness and parity-reflection corner-equality parts already proved in that appendix are now explicit in the Statement and status table because codex-08 cites them. No formula, assumption, proof argument, algorithm, predicate or degree-specific success claim changes.
+
+Current review scope (F3): [Claude audit-01](../audit-01.md) ACCEPTED the mathematics exactly as stated; its record/protocol findings and the protocol check of this response remain pending. Supplementary independent checks are complete and do not replace that Claude audit. No proof status, statement, checker predicate or certificate changes. Earlier publication-time review wording is preserved here as history:
+
+> Required Claude topic audit remains pending
