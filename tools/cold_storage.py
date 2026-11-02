@@ -12,6 +12,7 @@ Commands (run from the repository root; standard library only):
 
   plan    <path> [--threshold N]   list generated data files >= N bytes under <path>
   verify  <slug>                   check manifest entries against Git objects and the worktree
+                                   (<slug> is a topic slug or a directory such as tracks/mz-constants)
   restore <slug> [--dest DIR]      write the moved files back (default: their repository paths)
   clean   <slug>                   delete restored copies that still match the manifest
   export  <slug> --dest ROOT       copy files to ROOT/<slug>/<path> and write a receipt there
@@ -30,9 +31,9 @@ from pathlib import Path
 
 # Extensions treated as records or code, never moved: written by hand, not generated.
 RECORD_EXT = {'md', 'py', 'sh', 'tex', 'bib', 'svg', 'gitignore'}
-# The cold-storage manifest itself always stays committed.
+# Cold-storage manifests themselves always stay committed.
 def is_manifest(path):
-    return path.rsplit('/', 1)[-1].lower() == 'cold-storage.json'
+    return path.rsplit('/', 1)[-1].lower().startswith('cold-storage')
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -47,7 +48,9 @@ def sha256(data):
 
 
 def manifest_path(slug):
-    return ROOT / 'topics' / slug / 'cold-storage.json'
+    # A topic slug (topics/<slug>/) or a repository directory such as tracks/mz-constants.
+    direct = ROOT / slug / 'cold-storage.json'
+    return direct if direct.exists() else ROOT / 'topics' / slug / 'cold-storage.json'
 
 
 def load(slug):
@@ -135,7 +138,7 @@ def cmd_clean(a):
 
 def cmd_export(a):
     m = load(a.slug)
-    dest = Path(a.dest) / a.slug
+    dest = Path(a.dest) / a.slug.replace('/', '_')
     written = write_entries(m, dest)
     receipt = {'slug': a.slug, 'source_commit': m['source_commit'], 'exported_at': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
                'files': written, 'bytes': sum(w['bytes'] for w in written), 'all_hashes_match_manifest': True}
