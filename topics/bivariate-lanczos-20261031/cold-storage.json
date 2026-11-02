@@ -1,0 +1,447 @@
+{
+ "format": "padua-cold-storage-v1",
+ "slug": "bivariate-lanczos-20261031",
+ "source_commit": "2b52b432fe59c9a50aef9deebe5152c5d6874465",
+ "threshold_bytes": 16384,
+ "policy": "AC 2026-11-02: large regenerable outputs are not stored at the branch head; all code and short summaries stay. Each file is retrievable byte-exactly from Git history by its blob id; delivery to AC Padua cold storage is pending.",
+ "delivery_to_AC_cold_storage": "PENDING (AC runs: python tools/cold_storage.py export bivariate-lanczos-20261031 --dest C:\\Users\\andreyac\\Downloads\\padua\\cold_storage)",
+ "topic_note": "Every script named in the commands is committed (tracks/bivariate-lanczos/code/{L1,L2,L5,review_L1,review_L1b,review_L2,review_L5} and the audit-0N scripts). L5 runs need C libraries built with gcc -O2 -ffp-contract=off (sources committed, binaries not). L1 raw runs take 4-6.5 min each. Developer logs used Python 3.13.18/NumPy 2.5.3; audit reruns 3.12.14/2.3.5, so last digits differ. Restore before rerunning: audit-02/check_impact.py, audit-02/L2/evidence_manifest.py, audit-01/L2/make_manifest.py, audit-02/L5/check_response.py, L1 reanalysis/independent checks, l2_r0N_verdicts.py, L5 analyze_r01*.py, reanalyze_dev.py and record_completion.py scripts. The earlier statement in this file that no large generated outputs exist is superseded by this section. AC's PR #10-only size exception (response-04/AC-EXCEPTION.md) is superseded by AC's 2026-11-02 instruction.",
+ "retained_above_threshold": [
+  {
+   "path": "topics/bivariate-lanczos-20261031/pr-prep/id-map.json",
+   "bytes": 30234,
+   "reason": "authoritative immutable ID allocation (404 mappings), read from the working tree by pr-prep/allocate.py, pr-prep/check_integration.py, audit-04/registries/check_registries.py and programme-ideas pr-prep/allocate.py; not generated output"
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/pr-prep/registry-semantics.json",
+   "bytes": 49384,
+   "reason": "hand-authored reviewed registry semantics, linked from PROOF_STATUS.md and required by pr-prep/allocate.py; not generated output"
+  }
+ ],
+ "entries": [
+  {
+   "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/manifest.json",
+   "bytes": 26850,
+   "sha256": "ec92a4f0ecb0f83f75e1c1088b8f818105c258b27af24f089625ebc0f7666a81",
+   "git_blob": "ee788f5792947e6d436034f38ad07d78855fc360",
+   "generating_command": "none committed (hand-assembled by the later-L1 auditor; lists its 10 executed commands)",
+   "summary": "audit-01/L1-later.md:6 and 'Executions and retained evidence'",
+   "notes": "Audit manifest."
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/audit-01/L2/dots-rerun.log",
+   "bytes": 56550,
+   "sha256": "6b7076dbdbb97cda44a75bfea7ccb90723996297128714d629de4d0772a202eb",
+   "git_blob": "b8724102909987c9a55ae5529fcfc52fdecb2ce4",
+   "generating_command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python3 -I tracks/bivariate-lanczos/code/L2/l2_r03_dots.py > <out> 2>&1",
+   "summary": "audit-01/L2.md:110; audit-01/L2/summary.json",
+   "notes": "Audit rerun."
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/audit-01/L2/manifest.json",
+   "bytes": 16763,
+   "sha256": "4faf92c733b7fc3ddd0d591ad9ad64ee6e3a1a3ac8d2f1ab124ff5ea67ae7c1b",
+   "git_blob": "54b4b3a1e546249330b48a49486f92283b46a2f7",
+   "generating_command": "python3 -I topics/bivariate-lanczos-20261031/audit-01/L2/make_manifest.py",
+   "summary": "audit-01/L2.md:103; audit-01/L2/summary.json",
+   "notes": "Audit manifest; rerun after removal differs."
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/audit-01/L2/omega-rerun.log",
+   "bytes": 20366,
+   "sha256": "ed93cd2cdee64f2af3fb724abd47aa7fcb3206e83a58198982882a263222f480",
+   "git_blob": "d3140f436061f4d19b5f72d26d27b880a0f21900",
+   "generating_command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python3 -I tracks/bivariate-lanczos/code/L2/l2_r01_omega.py rotpi4 triangle cb_cubic > <out> 2>&1",
+   "summary": "audit-01/L2.md:108; audit-01/L2/summary.json",
+   "notes": ""
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/audit-01/L2/selection-rerun.log",
+   "bytes": 79426,
+   "sha256": "ab0a85b8d6094b722ad462d5d54d7ed1a7d613790014b7f273cc60a3bb108e5b",
+   "git_blob": "418264e5f6f398f6e6c48cfb9c2f34a21e021a4a",
+   "generating_command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python3 -I tracks/bivariate-lanczos/code/L2/l2_r02_selection.py rotpi4 triangle cb_cubic > <out> 2>&1",
+   "summary": "audit-01/L2.md:110; audit-01/L2/summary.json",
+   "notes": ""
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/audit-01/L2/theorem-A-rerun.log",
+   "bytes": 27705,
+   "sha256": "664613338df228d2ce16cffb04a3c404a6ef48e8b41ceaa545928b8247556300",
+   "git_blob": "21b8fc2c2333f38a3e3f226c06adade240cd9079",
+   "generating_command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python3 -I tracks/bivariate-lanczos/code/review_L2/rl2_thmA.py > <out> 2>&1",
+   "summary": "audit-01/L2.md:106 (35 instances, no violation, max LHS/RHS 0.1612927041); audit-01/L2/summary.json",
+   "notes": ""
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/audit-01/L5/audited_manifest.json",
+   "bytes": 16873,
+   "sha256": "831f3e6e1bcf7ac360da7163d4684c24af0e58058e35d5af4e99e5a3f1af68bb",
+   "git_blob": "d35f819eb6841188535d2a115dd9182e8774cf95",
+   "generating_command": "none committed",
+   "summary": "audit-01/L5.md:7",
+   "notes": "Read by audit-02/L5/check_response.py (restore first)."
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/audit-01/L5/random-rerun.jsonl",
+   "bytes": 18424,
+   "sha256": "49339cc43d1ab9b08ddc1cf9b9f695431d2c2e45ed5ba3ffb2664eed09b50e69",
+   "git_blob": "2a915f1f8df98ac41d5603d603f43cb7605abb1f",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 python3 -I topics/bivariate-lanczos-20261031/audit-01/L5/check_l5.py setup; then OPENBLAS_NUM_THREADS=1 python3 -I <setup>/L5/exp_r01.py random <out> 66 136 231 496 861 1326 2016",
+   "summary": "audit-01/L5.md:89,99; audit-01/L5/random-fit.jsonl",
+   "notes": "Seeds 7000*k+M."
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/audit-01/artifact-manifest.json",
+   "bytes": 17009,
+   "sha256": "41aaabdbee2e4c13a4c19cb37e0985bf7f13cbcf200198f0ca875aaa65413196",
+   "git_blob": "c49bf73f327606fb40b4422ed8343631f32aab32",
+   "generating_command": "python3 topics/bivariate-lanczos-20261031/audit-01/record_completion.py",
+   "summary": "audit-01.md:38-44; LOG.md:186",
+   "notes": "Read by audit-02/check_impact.py with every listed artifact (restore first)."
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/audit-01/inventory.json",
+   "bytes": 48770,
+   "sha256": "09abbd3d35d8c98f602cb4143b5def6e6345ee1e7b6f462b82d83f26e932a6b7",
+   "git_blob": "90ee9bea59a5121cb24b8ea22dc177ec883c5884",
+   "generating_command": "python topics/bivariate-lanczos-20261031/audit-01/check_inventory.py > <out>",
+   "summary": "audit-01.md:44; audit-01/protocol.md:16",
+   "notes": "pass true."
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/audit-02/L1/manifest.json",
+   "bytes": 72327,
+   "sha256": "e41b5e65f0727b9f4c4fbe2c0b7b9fe7a29ea7450e508118e0f486473c2d06c8",
+   "git_blob": "6c851ab37a5551b1f40ef88cdd59b64bd06f4f83",
+   "generating_command": "python3 -I topics/bivariate-lanczos-20261031/audit-02/L1/make_manifest.py > audit-02/L1/provenance.log",
+   "summary": "audit-02/L1.md:68-76; audit-02/L1/provenance.log",
+   "notes": ""
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/audit-02/L2/chi-rerun.log",
+   "bytes": 350451,
+   "sha256": "d84627ccf92eb754dc36628c0c09579ad48e04ba543f50eb2cef8451f65fad8f",
+   "git_blob": "a2e3677b0f2fb26cc1f055112255a9f6b26db1a9",
+   "generating_command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python3 -I tracks/bivariate-lanczos/code/L2/l2_audit01_chi.py > <out> 2>&1",
+   "summary": "audit-02/L2.md:83 (max chi 5.279895783639854); audit-02/L2/summary.json",
+   "notes": ""
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/audit-02/L2/ldnorm-rerun.log",
+   "bytes": 57215,
+   "sha256": "5e021b9400d6d6e6f0c4937d7b987b25021529ce1095d17f135368b1d6ce884e",
+   "git_blob": "741d726fd613b7f8bf36b17c5a58386301a36406",
+   "generating_command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python3 -I tracks/bivariate-lanczos/code/L2/l2_audit01_ldnorm.py > <out> 2>&1",
+   "summary": "audit-02/L2.md:84; audit-02/L2/summary.json",
+   "notes": ""
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/audit-02/L2/manifest.json",
+   "bytes": 52505,
+   "sha256": "15216c95a583ea0b238b7952e0232313089f8e9ebc9f9cc7af0bc0d3145e7b12",
+   "git_blob": "3d660bf46be743b1f69a72559e82f4c9f7527462",
+   "generating_command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python3 -I topics/bivariate-lanczos-20261031/audit-02/L2/evidence_manifest.py",
+   "summary": "audit-02/L2.md:77; audit-02/L2/summary.json",
+   "notes": ""
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/manifest.json",
+   "bytes": 25058,
+   "sha256": "faa8abee9bd86ca6af6e761ffce8b8bc536c418cf276df89bc4e5aa9ad43a83d",
+   "git_blob": "695b958e8909ca2ba21cf22d204259f25f7d65ef",
+   "generating_command": "python3 -I topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/record_evidence.py",
+   "summary": "audit-02/L3-formula-scope.md:5,109-111",
+   "notes": ""
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/audit-02/L3-formula-scope/original-proof-scope.diff",
+   "bytes": 51077,
+   "sha256": "c519157f03cffc6db42dee2cd1a093abba9dae5129bd20532c602c6bfd77a67b",
+   "git_blob": "76322a8203d91f0dfea9bc0baa23677d4819d190",
+   "generating_command": "git diff --unified=3 5f523313b7b388cb114103734028f0a850dfeaad 075d4074017445a0fd4d7443ffac97cd7f8c106b -- <listed theory files> (emitted by record_evidence.py)",
+   "summary": "audit-02/L3-formula-scope.md:135",
+   "notes": "Pure Git diff; fully regenerable."
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/audit-02/L5/input_manifest.json",
+   "bytes": 22156,
+   "sha256": "271a57ce030291298b1d71183a8c82dfdf772d078af3ed9c37c4e1fa4d02ebe2",
+   "git_blob": "68fc8fbf6b421954e8b0857f62469c8dff736f19",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 python3 -B -I topics/bivariate-lanczos-20261031/audit-02/L5/check_response.py > audit-02/L5/check_response.log",
+   "summary": "audit-02/L5.md:19,108; audit-02/L5/SHA256SUMS; check_response.log",
+   "notes": ""
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/audit-02/L5/paired_checks.json",
+   "bytes": 44383,
+   "sha256": "590094b8e70b2f9d5998ac878eed51fe1ffd533128291432f34c98cb5544d4b3",
+   "git_blob": "7a0febe9cfd642b689db36635928c59c0d3f082c",
+   "generating_command": "same run as audit-02/L5/input_manifest.json",
+   "summary": "audit-02/L5.md:21-34,108; audit-02/L5/check_response.log",
+   "notes": "Reanalysis of L5 logs."
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/audit-02/impact-check.json",
+   "bytes": 21445,
+   "sha256": "a3403aff634c33ebaa916ddc08fabd5003fe39b38e212a6aa58d16eec2297c3d",
+   "git_blob": "28c3049f2bc57c68f454256d89361595bb2dd5b8",
+   "generating_command": "python3 topics/bivariate-lanczos-20261031/audit-02/check_impact.py > <out>",
+   "summary": "audit-02/protocol.md:7-17; audit-02.md:22",
+   "notes": "PASS."
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/audit-04/aggregate-output-lower-bound.json",
+   "bytes": 64079,
+   "sha256": "1f116db1b64636108bff816d0777217581c5e73409ecc5b32346aa68698a7e06",
+   "git_blob": "65d6897edc190352bf04cfce6ec23c98b5a1309b",
+   "generating_command": "python3 topics/bivariate-lanczos-20261031/audit-04/record_completion.py (lower bound from git ls-tree -rl a2dd845b)",
+   "summary": "audit-04.md:64 (348 data files, 5,078,141 B); response-04/AC-EXCEPTION.md",
+   "notes": "Regenerable from Git."
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/audit-04/literature/checks.json",
+   "bytes": 40458,
+   "sha256": "b586e684832bd03b7e983488055e83e1e89a50ba45e0a214aa0dffe20fb8c635",
+   "git_blob": "ab162010f7dd789d5ea2c8e3850bf5626824ce7e",
+   "generating_command": "python topics/bivariate-lanczos-20261031/audit-04/literature/check_literature.py > audit-04/literature/run.log",
+   "summary": "audit-04/literature.md:21,33-52; audit-04/literature/run.log",
+   "notes": "failures none."
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/audit-04/literature/input-manifest.json",
+   "bytes": 30833,
+   "sha256": "2aa088848fbbba9145fa732bf13941038cc8f3a4cdfd0193b21bdd1bc917cf3d",
+   "git_blob": "8897fabe3ff4ea9bd2062c715ff3c6d4050d7e96",
+   "generating_command": "same run as audit-04/literature/checks.json",
+   "summary": "audit-04/literature.md:35,96; run.log",
+   "notes": ""
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/audit-04/registries/independent-results.json",
+   "bytes": 17300,
+   "sha256": "2b6cbe445d00ba5bd5251dc6e8136fb3d38fdab101bb498dd7a684f81be1f8c4",
+   "git_blob": "b287f010ac45f3b3dc4a74d46d6b4405d1495c9e",
+   "generating_command": "python topics/bivariate-lanczos-20261031/audit-04/registries/check_registries.py > <out>",
+   "summary": "audit-04/registries.md:53-62; audit-04/registries/evidence-manifest.json",
+   "notes": "structural_failures empty."
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/audit-04/registries/initial-checker-results.json",
+   "bytes": 50915,
+   "sha256": "e2245f6cfbedfdc23702c27d03b9bac7df2a594baeb842345af6759f38dd48dd",
+   "git_blob": "f779021833491b3e31c21ac266d257a082bfd848",
+   "generating_command": "first development run of audit-04/registries/check_registries.py (exit 1; command not recorded)",
+   "summary": "audit-04/registries.md:79",
+   "notes": "Superseded development output."
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/audit-04/science-impact/preservation.json",
+   "bytes": 217270,
+   "sha256": "12046497554a520f9e6a2f0e6645d9013aa0aad78c03687fcaf779a7a439f8c5",
+   "git_blob": "a383e2a4d7883998305de777217adf1dc8d6774f",
+   "generating_command": "python3 -B -I topics/bivariate-lanczos-20261031/audit-04/science-impact/check_preservation.py > <out>",
+   "summary": "audit-04/science-impact.md:43-76; audit-04.md:52",
+   "notes": "77/77 theory bodies identical modulo Final ID."
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_input3.raw",
+   "bytes": 60084,
+   "sha256": "47c95e6ff78ce5775ae8e65f697bc66347c52ab8b27947f18cd7c77d874d4fe8",
+   "git_blob": "0d5d4e4dc8f4513e2d9c2825258e87dffeab8ec2",
+   "generating_command": "cd tracks/bivariate-lanczos/code/L1 && python3 -I l1_kill_test.py input3 > <out> (about 246 s)",
+   "summary": "directions/L1/R01.md:30-47,86-95; directions/L1/logs/r01_verdict.txt; directions/L1/SUMMARY.md; theory ritz-residual-governance-fails-off-product-supports.md",
+   "notes": "Input of l1_analyze_r01.py and L1 audit checks."
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_irregular.raw",
+   "bytes": 88199,
+   "sha256": "be99f833226de1bc4df87fad85b5f1d1c60273f9b6ea09bb4684a3e80973c591",
+   "git_blob": "c49c8d43f314ce6787d06490216862b7d99117f2",
+   "generating_command": "cd tracks/bivariate-lanczos/code/L1 && python3 -I l1_kill_test.py irregular > <out> (about 388 s)",
+   "summary": "directions/L1/R01.md; directions/L1/logs/r01_verdict.txt; SUMMARY.md",
+   "notes": ""
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_padua.raw",
+   "bytes": 71835,
+   "sha256": "dbe2bdf5606fb77633c3eeb9631b7717caacc25de006d858fec5733a28e9dec0",
+   "git_blob": "51184b24f9fb66d60376679c603c6c83859c5064",
+   "generating_command": "cd tracks/bivariate-lanczos/code/L1 && python3 -I l1_kill_test.py padua > <out>",
+   "summary": "directions/L1/R01.md; directions/L1/logs/r01_verdict.txt; SUMMARY.md",
+   "notes": ""
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_rotation.raw",
+   "bytes": 88036,
+   "sha256": "410d772354f454d362a2979e508a87d103f640f2e665ae1e5eb057f583c5ccaf",
+   "git_blob": "1149be5a0cb25d4a098f5c39f83d21c95a635970",
+   "generating_command": "cd tracks/bivariate-lanczos/code/L1 && python3 -I l1_kill_test.py rotation > <out> (about 268 s)",
+   "summary": "directions/L1/R01.md; directions/L1/logs/r01_verdict.txt; SUMMARY.md",
+   "notes": ""
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/directions/L1/logs/r01_swap.raw",
+   "bytes": 19696,
+   "sha256": "08d6d7bb459e9491d8a7b5d490162a07e9b7f78b36695dd2997dc658e6a22e1a",
+   "git_blob": "f48dfffb855a7c43d35f4dabb072fa2c5216d610",
+   "generating_command": "cd tracks/bivariate-lanczos/code/L1 && python3 -I l1_kill_test.py swap > <out>",
+   "summary": "directions/L1/R01.md; directions/L1/logs/r01_verdict.txt; SUMMARY.md",
+   "notes": ""
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/audit01_chi.raw.gz",
+   "bytes": 49827,
+   "sha256": "0e0b0049e9bc3cb7084ba1d078220bc6b430c367f48b302e8cd12f1948d993b1",
+   "git_blob": "98a62b46c01cf89573e23515784c14ee9632d6c8",
+   "generating_command": "cd tracks/bivariate-lanczos/code/L2 && OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python3 -I l2_audit01_chi.py > audit01_chi.raw; gzip",
+   "summary": "directions/L2/response-audit-01.md:42-46 (chi <= 5.28); theory section-accuracy-and-two-pass-window-measured.md",
+   "notes": "Uncompressed sha256 7a8f8c15."
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/audit01_ldnorm.raw",
+   "bytes": 57210,
+   "sha256": "6b60fd7c972cfe64679300e24bdf35686ace357f57cb97a513ec9760f2c8e5ad",
+   "git_blob": "e090e465935bfc35b5eca3659908ac09e6cbe0d9",
+   "generating_command": "cd tracks/bivariate-lanczos/code/L2 && OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python3 -I l2_audit01_ldnorm.py > <out>",
+   "summary": "directions/L2/response-audit-01.md:83-87; theory exact-window-dots-do-not-remove-coefficient-channel.md",
+   "notes": ""
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/r01_omega.raw.gz",
+   "bytes": 22641,
+   "sha256": "b1cfd1a382f3f2d14f130cc151459da44c7577236090079e5c00d370f32933f7",
+   "git_blob": "59ac20784b5422b7667cad6314dbcd18cddd1742",
+   "generating_command": "cd tracks/bivariate-lanczos/code/L2 && python3 -I l2_r01_omega.py > r01_omega.raw; gzip (about 70 s)",
+   "summary": "directions/L2/R01.md:16-30; theory omega-estimate-tracks-loss-measured.md",
+   "notes": "Input of l2_r01_verdicts.py."
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/r01_sections.raw.gz",
+   "bytes": 35601,
+   "sha256": "8f16939ca341e7ce2c02fdb40a3423ab6eb52985497ddb0c7d78cdff459d3c61",
+   "git_blob": "7a48e8546811d3175e7170b4b14d3210402cdb65",
+   "generating_command": "cd tracks/bivariate-lanczos/code/L2 && python3 -I l2_r01_sections.py > r01_sections.raw; gzip (about 80 s)",
+   "summary": "directions/L2/R01.md:16-30; theory one-pass-window-semi-orthogonality-insufficient-for-F-section.md",
+   "notes": "Input of l2_r01_verdicts.py."
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/r01_verdicts.txt",
+   "bytes": 21600,
+   "sha256": "de423dd03e95b7e7d9252d740a61c4a54cacb9411473ccdac302e9a5ff4fba15",
+   "git_blob": "712d6734da77578a5c8b12ca4cf9a94c5a90471e",
+   "generating_command": "cd tracks/bivariate-lanczos/code/L2 && python3 -I l2_r01_verdicts.py <logs dir> > <out>",
+   "summary": "directions/L2/R01.md:16-30; directions/L2/candidates.md:102; theory omega-estimate-tracks-loss-measured.md:46",
+   "notes": "Derived verdict output."
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/directions/L2/logs/r02_selection.raw.gz",
+   "bytes": 42736,
+   "sha256": "642d044e2027d7f0ae7fd2f7c8b5120ca045e168a9da05a8879311ce96ad0227",
+   "git_blob": "7988a44a9c9d82ba44da2f84d86b7a2ee13183fc",
+   "generating_command": "cd tracks/bivariate-lanczos/code/L2 && python3 -I l2_r02_selection.py > r02_selection.raw; gzip (about 4 min)",
+   "summary": "directions/L2/R02.md:17-30; directions/L2/logs/r02_verdicts.txt; theory selection-rules-and-span-drift-measured.md",
+   "notes": ""
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_padua_cub.jsonl",
+   "bytes": 17588,
+   "sha256": "9cc28bb6403f28c55a01bce3708ad3715982b46a029a5bbd2177ee5aacb4f19d",
+   "git_blob": "5854b9ba6e6f830e98b2157aa71cb269fe657df5",
+   "generating_command": "cd tracks/bivariate-lanczos/code/L5 && OPENBLAS_NUM_THREADS=1 python3 -I exp_r01.py padua_cub <out> (needs libgivens_core.so from givens_core.c)",
+   "summary": "directions/L5/R01.md:17-51; directions/L5/logs/analysis_r01*.txt; theory givens-deficit-slopes-measured.md",
+   "notes": "Input of L5 analyze_r01*.py."
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_padua_rand.jsonl",
+   "bytes": 17625,
+   "sha256": "48201553fc443bfbf592224f120498fbe98defb009546b4fb7aae317efea45ce",
+   "git_blob": "8227c33d400d59c4f9baa06820c3bef2e3edd4e4",
+   "generating_command": "cd tracks/bivariate-lanczos/code/L5 && OPENBLAS_NUM_THREADS=1 python3 -I exp_r01.py padua_rand <out>",
+   "summary": "directions/L5/R01.md; directions/L5/logs/analysis_r01*.txt; theory givens-deficit-slopes-measured.md",
+   "notes": ""
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_prefix_a.jsonl",
+   "bytes": 33151,
+   "sha256": "e22dae610b813817c5e06ea3871e092880340b46107bdf24e028cc59ea4d0f5b",
+   "git_blob": "41b5a9a3972fd4d25d53439a7cc4e4f442032884",
+   "generating_command": "cd tracks/bivariate-lanczos/code/L5 && OPENBLAS_NUM_THREADS=1 python3 -I exp_r01b.py <out> 10 15 20 30 40",
+   "summary": "directions/L5/R01.md; directions/L5/logs/analysis_r01b.txt; theory prefix-unisolvence-order-statistics-measured.md",
+   "notes": ""
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r01_random.jsonl",
+   "bytes": 18361,
+   "sha256": "a88f05444ac9de33d692d1a02824b3baacfa8f2f779970ebf2f3f732dc9e5a78",
+   "git_blob": "57a9cfc523f81f1c697a88f07a2c8b61c8b8158f",
+   "generating_command": "cd tracks/bivariate-lanczos/code/L5 && OPENBLAS_NUM_THREADS=1 python3 -I exp_r01.py random <out>",
+   "summary": "directions/L5/R01.md; directions/L5/logs/analysis_r01*.txt; theory givens-deficit-slopes-measured.md",
+   "notes": ""
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/directions/L5/logs/r03_defer3.jsonl",
+   "bytes": 16544,
+   "sha256": "ba732b129d85947ebf411819edc64633f6fb7c0b9f4e6aba050858497d175f3c",
+   "git_blob": "a03221e584b9b15735d03dae436e924b08558c45",
+   "generating_command": "cd tracks/bivariate-lanczos/code/L5 && OPENBLAS_NUM_THREADS=1 L5_TAUS=1e-3 python3 -I exp_r03.py <out> 20 30 (assembled from R03.md:57 and the recorded argv)",
+   "summary": "directions/L5/R03.md:15-27,50; directions/L5/logs/r03_defer3.log; theory fifo-threshold-deferral-failure.md",
+   "notes": ""
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1/sweep_loss.json",
+   "bytes": 50104,
+   "sha256": "fd6b910efca16012353a08476419a865903d78ed7fc06f6397132f086782c9dc",
+   "git_blob": "69f59daf6b90fdea7a2c0e3f1231b76aa728011e",
+   "generating_command": "cd tracks/bivariate-lanczos/code/review_L1 && python3 -I -u rv_sweep.py loss > sweep_loss.log 2> sweep_loss.json",
+   "summary": "reviews/L1-reconstruction-01.md:225,289,380; theory selection-and-truncation-both-matter-measured.md",
+   "notes": ""
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/reviews/logs_L1/sweep_loss.log",
+   "bytes": 23143,
+   "sha256": "02e76987ad5c5feba58be20f63952525ffe76636fe9a11a46b9edddd5533b644",
+   "git_blob": "cab50e31d44277aba30ee394580c344ea7dd669d",
+   "generating_command": "stdout of the same rv_sweep.py loss run",
+   "summary": "reviews/L1-reconstruction-01.md:225,289,380",
+   "notes": ""
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/drift_AB.log",
+   "bytes": 21378,
+   "sha256": "e726c22de999dbe04f2a296263ed377a4ade7c456607a3dd8ae2191153a6bfcd",
+   "git_blob": "ef7671f9eb4086b374d45e56e36774f9bf9311fd",
+   "generating_command": "cd tracks/bivariate-lanczos/code/review_L2 && python3 -I rl2_drift.py A B > <out> (about 3.5 min)",
+   "summary": "reviews/L2-reconstruction-01.md:206,374; audit-01/L2.md:88",
+   "notes": ""
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/reviews/logs_L2/thmA.log",
+   "bytes": 27727,
+   "sha256": "aa5363e613e12dbea8889ca187583df571110bf1db3463a384d4e639681ebe56",
+   "git_blob": "d41f7cacd5b9c4296294efeddfdad4f20a29c8e6",
+   "generating_command": "cd tracks/bivariate-lanczos/code/review_L2 && python3 -I rl2_thmA.py > <out> (about 30 s)",
+   "summary": "reviews/L2-reconstruction-01.md:102,377; audit-01/L2.md:106",
+   "notes": ""
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/reviews/logs_L5/a_slopes.jsonl",
+   "bytes": 23713,
+   "sha256": "f714f1b8100415581984674c98acdd54a5b3ac290216751163960ef45322e6a3",
+   "git_blob": "9a68042250a154413124432f7c739101e00c0f0d",
+   "generating_command": "cd tracks/bivariate-lanczos/code/review_L5 && OPENBLAS_NUM_THREADS=1 AG_BUILD=<build> python3 -I exp_review.py slopes a_slopes.jsonl 10 15 20 25 30 35 40 44 (about 6 min; needs agivens.c built)",
+   "summary": "reviews/L5-reconstruction-01.md:63; reviews/logs_L5/analysis_review.txt; reanalysis_dev_r01.txt",
+   "notes": ""
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/reviews/logs_L5/a_slopes.log",
+   "bytes": 21429,
+   "sha256": "42599678051f9fe23c5d075e65f68b736b130bd6ddea6c9c915005b588473879",
+   "git_blob": "86195134ba104de17b8eb7b1611e9745c92aeb05",
+   "generating_command": "stdout of the same exp_review.py slopes run",
+   "summary": "reviews/L5-reconstruction-01.md:63; reviews/logs_L5/analysis_review.txt",
+   "notes": ""
+  }
+ ],
+ "total_bytes": 2274436
+}

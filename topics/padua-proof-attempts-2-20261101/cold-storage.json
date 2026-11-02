@@ -1,0 +1,217 @@
+{
+ "format": "padua-cold-storage-v1",
+ "slug": "padua-proof-attempts-2-20261101",
+ "source_commit": "2b52b432fe59c9a50aef9deebe5152c5d6874465",
+ "threshold_bytes": 16384,
+ "policy": "AC 2026-11-02: large regenerable outputs are not stored at the branch head; all code and short summaries stay. Each file is retrievable byte-exactly from Git history by its blob id; delivery to AC Padua cold storage is pending.",
+ "delivery_to_AC_cold_storage": "PENDING (AC runs: python tools/cold_storage.py export padua-proof-attempts-2-20261101 --dest C:\\Users\\andreyac\\Downloads\\padua\\cold_storage)",
+ "topic_note": "Accepted proof evidence: n3-n7 certificates (developer + independent regenerations; checker outputs committed small), n8 witnesses (>=44 interior maxima, PD-T183). NOT accepted: a5_n8_interior_candidate (PD-T184 OPEN); n8 axis preflights and V4 inventory are supporting only. All 23 blobs are retrievable at base 2b52b43; the audited pins 4265bb9 and e1581b3 are absent from this clone. Env for n4+ producers/checkers: Python 3.12.14, SymPy 1.14.0, python-flint 0.9.0/FLINT 3.6.0 under /tmp/padua2-deps (uncommitted); n3 is plain SymPy. Only the n3 gzip is byte-reproducible; for n4-n8 decoded content is reproducible but bytes differ (gzip header/timer fields). a5_n7 xz and its global (kept, <16 KiB) are bound by SHA: keep the pair together. Duplicate blobs: n3 pair (7d7056d2...), a2_sanity pair (8f93449...). Already in AC cold storage: claude-audit-01-full.tar.xz (sha b7158144...) holding auditor files, but NOT MANIFEST.json and NOT the main outputs. Mechanical validators reading the removed files (preparation/validate.py incl. --manifest, response-support/check_response.py, audit-support/.../manifest_check.py, reruns.sh) will fail on the new head and must run against history. No markdo\u2026 Abbreviations in commands: T/ = topics/padua-proof-attempts-2-20261101/, O/ = T/outputs/, C/ = T/code/, K/ = tracks/mz-constants/evidence/, M/ = topics/mz-constants/, E = 'PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=<python-flint deps> python -B', E0 = 'PYTHONDONTWRITEBYTECODE=1 python -B'.",
+ "retained_above_threshold": [
+  {
+   "path": "topics/padua-proof-attempts-2-20261101/preparation/final-id-map.json",
+   "bytes": 24726,
+   "reason": "registry ID map (70 mappings) linked from RESULTS.md and results; not bulk generated output"
+  }
+ ],
+ "entries": [
+  {
+   "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/MANIFEST.json",
+   "bytes": 23511,
+   "sha256": "92d1492f77955aff1f304a29c6026488bd68387c004158d1a6cba1d5a72d1709",
+   "git_blob": "660fbbab127491c43a8c32c8cdd7fe801b3c4a07",
+   "generating_command": "none recorded",
+   "summary": "audit-support/claude-audit-01/COLD_STORAGE.md:5-21 (archive row, retrieval, member hashes); audit-01.md:219",
+   "notes": "Auditor-assembled inventory (122 files: 108 committed+in archive, 14 archive-only; no generator script found). NOT inside the archive (written after packing) so Git history is its only copy. The companion archive claude-audit-01-full.tar.xz (185844 B, sha256 b7158144c3099e52abf6736c7de5282ff0a0a110318a66f47bca495cc086\u2026"
+  },
+  {
+   "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/a5-n8/n8_witness_verify_primary.json",
+   "bytes": 30898,
+   "sha256": "1d9f09a62515bc6ad3407e43959ef8e5097fd1b0c39d7d42bd7a2c6b1109dea7",
+   "git_blob": "7c4421384a75de00d5d3ea80957ddd15cc770a1d",
+   "generating_command": "python3 -B T/audit-support/claude-audit-01/a5-n8/verify_n8_witnesses.py O/a5_n8_interior_witnesses.json --output .../a5-n8/n8_witness_verify_primary.json (flags from script argparse and JSON \"input\" field; exact shell line not quoted in records; Python 3.13.18, python-flint 0.9.0, 320-bit arb)",
+   "summary": "audit-support/claude-audit-01/subaudit-reports/a5-n8.md:5 (A); audit-01.md:215 table row \"A5 n=8\"",
+   "notes": "Also in the cold archive (storage \"committed and in archive\"). Verifies the accepted n8 lower bound (44 witnesses); audit-01 accepted scope. Checker: is itself the auditor checker output (independent, imports no repo code); controls: a5-n8/controls_n8_witnesses.py (a5-n8/controls.stdout, 8 negative mutations rejected) Receipt: audit-support/claude-audit-01/subaudit-reports/a5-n8.md:5 (44/44 pass); audit-support/claude-audit-01/a5-n8/controls.stdout Cost: not recorded (seconds-scale; developer driver 4.0-5.9 s)."
+  },
+  {
+   "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/b3/b3_audit_independent.json",
+   "bytes": 24778,
+   "sha256": "c6e2b03131b9dcbdc1c952e8eab9d64b4a444f0c6e828bb90e58c65b60f2a0ba",
+   "git_blob": "60361be86e8e2e52955d6c15853831d407a214b0",
+   "generating_command": "nice -n 10 env PYTHONDONTWRITEBYTECODE=1 python3 -B .../audit-support/claude-audit-01/b3/b3_audit_independent.py .../b3/b3_audit_independent.json (subaudit-reports/b3.md:10; exit 0, 38.9 s, Python 3.13.18)",
+   "summary": "audit-support/claude-audit-01/subaudit-reports/b3.md:9-10; audit-01.md:216; theory N01 (PD-N072)",
+   "notes": "In cold archive too. Supports the negative B3 result (refutation); not an A5 certificate. Checker: is itself the auditor exact independent check (whole-interval refutation of B3, both orders) Receipt: audit-support/claude-audit-01/b3/b3_audit_independent.stdout/.stderr; subaudit-reports/b3.md:9-10 Cost: 38.9 s."
+  },
+  {
+   "path": "topics/padua-proof-attempts-2-20261101/evidence-manifest.json",
+   "bytes": 216680,
+   "sha256": "567392935bc526c733aab22f095fe8a7047936136b38ac60fffab018e4b964f6",
+   "git_blob": "c472e3cd3cf69e8f3e8794a3a7c9ee0147f5ab5f",
+   "generating_command": "python C/evidence_manifest.py (recorded in the file \"command\" field; no seed)",
+   "summary": "report.md:37 (link); evidence-packaging.md; audit-01.md:22,53",
+   "notes": "It is the only in-repo SHA index of ~378 outputs including those being moved: removal loses that index unless the cold manifest preserves it. preparation/validate.py and response-support/check_response.py (frozen outputs vs git commits) will fail after outputs are removed; retrieve from history. Checker: python T/preparation/validate.py --manifest (checks inputs by git show COMMIT:PATH, outputs vs tree, coverage); auditor: audit-support/claude-audit-01/manifest_check.py Receipt: audit-01.md:50-56 (294 inputs and 378 outputs match; auditor script); preparation/validation.json (4086 B); audit-support/claude-audit-01/manifest_check.out Cost: seconds (hashing)."
+  },
+  {
+   "path": "topics/padua-proof-attempts-2-20261101/outputs/a2_sanity.json",
+   "bytes": 19691,
+   "sha256": "caf52a027f271f0f47ab07ed4289ca2115618aa2970290d2d10d89b90da59b4f",
+   "git_blob": "8f93449076c2e4915eb5edea48905a5b61bf67f8",
+   "generating_command": "python C/a2_sanity.py > O/a2_sanity.json (attempts/T-A2.md:52)",
+   "summary": "attempts/T-A2.md:54; independent-execution-a2.md:63; theory/\u2026-03-corner-log-coefficient.md:56",
+   "notes": "MEASURED sanity only (no proof dependency; A2 PROVED in theory 03 without computation). Two paths share one git blob; one cold object suffices. Receipt: audit-01.md:196 (auditor rerun: identical except python, numpy and 7 last-digit long-double fields) Cost: ~0.4 s (audit rerun); NumPy 2.3.5 longdouble."
+  },
+  {
+   "path": "topics/padua-proof-attempts-2-20261101/outputs/a2_sanity_independent.json",
+   "bytes": 19691,
+   "sha256": "caf52a027f271f0f47ab07ed4289ca2115618aa2970290d2d10d89b90da59b4f",
+   "git_blob": "8f93449076c2e4915eb5edea48905a5b61bf67f8",
+   "generating_command": "python C/a2_sanity.py > O/a2_sanity_independent.json (independent rerun, independent-execution-a2.md:22)",
+   "summary": "attempts/T-A2.md:54; independent-execution-a2.md:63; theory/\u2026-03-corner-log-coefficient.md:56",
+   "notes": "MEASURED sanity only (no proof dependency; A2 PROVED in theory 03 without computation). Two paths share one git blob; one cold object suffices. Receipt: audit-01.md:196 (auditor rerun: identical except python, numpy and 7 last-digit long-double fields) Cost: ~0.4 s (audit rerun); NumPy 2.3.5 longdouble."
+  },
+  {
+   "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_checker_n8_axis_preflight.json",
+   "bytes": 24615,
+   "sha256": "04b514dd497b870c7fedc038b462d2656a8f78fecdf750306addb6004f206f11",
+   "git_blob": "f98e7872e7869790afb04a0fede57a51dc5f054a",
+   "generating_command": "inline python heredoc stored verbatim in independent-checks-a5-n8-axis.md:97-165 (E - <<'PY' ... PY), run from /workspace/padua_research; reads /tmp/a5-n8-candidate-v4.json.gz (sha 4d0884a6..., uncommitted) and imports code/a5_checker_n8.py (sha a9cff574...)",
+   "summary": "theory/proof-attempts-2-codex-63-degree-eight-reflection.md:85 (PD-T182 PROVED analytic); independent-checks-a5-n8-axis.md:73-96",
+   "notes": "Application check of reflection/axis lemma on an intermediate partial tree; supporting evidence, not a count certificate. Input not retrievable from Git (only /tmp). Checker: is itself the independent checker output (formal field + 23 V4 root records + reflection hulls); count_certified=false Receipt: independent-checks-a5-n8-axis.md:84 (sha 04b514dd...) Cost: tens of seconds once the V4 gz exists; V4 itself ~2 h of producer runs."
+  },
+  {
+   "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n3_certificate.json.gz",
+   "bytes": 386415,
+   "sha256": "401a99243ebeb7b3844216a47f8466bbb60086cbba71d2de2088d7626f532b2b",
+   "git_blob": "7d7056d26b4a01016d2fe714e246dd8ee8dcea0f",
+   "generating_command": "E0 C/a5_producer.py --output O/a5_independent_n3_certificate.json.gz --unresolved /tmp/a5-independent-n3-unresolved.json > O/a5_independent_n3_producer.json 2>/tmp/a5-independent-n3.log (independent-execution-a5.md:44)",
+   "summary": "independent-execution-a5.md:93-109; theory/\u2026-06:74",
+   "notes": "EXACT DUPLICATE of outputs/a5_n3_certificate.json.gz (same git blob 7d7056d2...; bytes regenerated identically). Independent regeneration; one cold object suffices. Checker: python -B C/a5_checker.py O/a5_independent_n3_certificate.json.gz > O/a5_independent_n3_checker.json; adversarial: a5_checker_adversarial.py <gz> > O/a5_independent_n3_adversarial.json Receipt: O/a5_independent_n3_checker.json (15207 B, 220.972 s); O/a5_independent_n3_developer_certificate_check.json; O/a5_independent_n3_adversarial.json; O/a5_indepen\u2026 Cost: as developer n3 (~10 min + ~221 s check)."
+  },
+  {
+   "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n4_certificate.json.gz",
+   "bytes": 64371,
+   "sha256": "774910755f7213c5e7bb8392c6d0d93e120145e5c896772ec9814516ac6b6032",
+   "git_blob": "0a2f740d565eed9853f5c6d4f1d0c50595cd18e4",
+   "generating_command": "E C/a5_n4_boxes.py --boxes 200000 --seconds 600 --depth 40 --ambiguity 8 --certificate --boundary --output O/a5_independent_n4_certificate.json.gz > O/a5_independent_n4_producer.jsonl 2>/tmp/a5-independent-n4.log ; global: a5_n4_global.py <gz> --output O/a5_independent_n4_global.json (independent-execution-a5-n4.md:46-47)",
+   "summary": "independent-execution-a5-n4.md:68-140; theory/\u2026-10\u2026md:64",
+   "notes": "Independent regeneration of the n4 certificate (different bytes, equal decoded math). Producer receipt was renamed .json->.jsonl. Checker: E C/a5_checker_n4.py O/a5_independent_n4_certificate.json.gz --global-file O/a5_independent_n4_global.json --output O/a5_independent_n4_checker.json; controls: a5_checker_n4_controls.py <gz> --output\u2026 Receipt: O/a5_independent_n4_checker.json (9357 B, 469.4 s); O/a5_independent_n4_controls.json (11 controls, 8.9 s); O/a5_independent_n4_global.json; O/a5_independent_n\u2026 Cost: interior 74.4 s + boundary 435.7 s; checker 469.4 s."
+  },
+  {
+   "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n5_certificate.json.gz",
+   "bytes": 125252,
+   "sha256": "d22c9b1e32728e511ca4ac20506df614b501669a37bc287ed1cde802b6c7f4b3",
+   "git_blob": "e4ddbfab82906a1ee5b5912681d042b7be17590d",
+   "generating_command": "E C/a5_n5_boxes.py --certificate --boundary --boxes 100000 --seconds 3600 --depth 36 --full-depth 30 --ambiguity 6 --root-depth 12 --output O/a5_independent_n5_certificate.json.gz > O/a5_independent_n5_producer.jsonl 2>/tmp/a5-independent-n5.log ; global: a5_n5_global.py <gz> --output O/a5_independent_n5_global.json (independent-execution-a5-n5.md:43-44)",
+   "summary": "independent-execution-a5-n5.md:55-118; independent-checks-a5-n5-checker.md:218-240",
+   "notes": "Independent regeneration (different executor, own node cones). Checker: E C/a5_checker_n5.py O/a5_independent_n5_certificate.json.gz --global-file O/a5_independent_n5_global.json --output O/a5_independent_n5_checker.json; controls a5_checker_n5_controls.py (same pair) ->\u2026 Receipt: O/a5_independent_n5_checker.json (8358 B, 299.0 s); O/a5_independent_n5_controls.json (311.4 s); O/a5_checker_n5_full-integration.json (298.9 s); O/a5_independ\u2026 Cost: interior 220.8 s + boundary 335.1 s; checker 299 s."
+  },
+  {
+   "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n6_certificate.json.gz",
+   "bytes": 414047,
+   "sha256": "c042401f3d8c3e28d045fed9855f3b7817840f68491d8d686cdcd2c587cd48e1",
+   "git_blob": "ca5ac61062eb698ae6c196e14b84b05a7358e1b6",
+   "generating_command": "E C/a5_n6_boxes.py --boxes 200000 --seconds 2400 --depth 40 --ambiguity 8 --full-depth 40 --certificate --boundary --output O/a5_independent_n6_certificate.json.gz > O/a5_independent_n6_producer.jsonl 2>/tmp/a5-independent-n6.log ; global: a5_n6_global.py <gz> --output O/a5_independent_n6_global.json (independent-execution-a5-n6.md:42-43)",
+   "summary": "independent-execution-a5-n6.md:37-167",
+   "notes": "Independent regeneration without node file. Checker: E C/a5_checker_n6.py O/a5_independent_n6_certificate.json.gz --global-file O/a5_independent_n6_global.json --output O/a5_independent_n6_checker.json (independent-execution-a5-n6.md:104); developer-pa\u2026 Receipt: O/a5_independent_n6_checker.json (13396 B, 591.0 s); O/a5_independent_n6_controls.json (38 controls incl. full dev-pair positive, 564.4 s); O/a5_independent_n6\u2026 Cost: interior 1171.4 s + boundary 316.9 s; checker 591.0 s."
+  },
+  {
+   "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n7_certificate.json.xz",
+   "bytes": 436504,
+   "sha256": "a8a78bc7d206507103710d52e5279842b70d5bc1f38dd6c3fe2eca6a5e4fc00a",
+   "git_blob": "e28021484c9c72698b6065da7c80bb0aa525447e",
+   "generating_command": "E C/a5_n7_boxes.py --boxes 500000 --seconds 5400 --depth 44 --full-depth 44 --root-depth 12 --ambiguity 6 --certificate --boundary --output O/a5_independent_n7_certificate.json.gz > O/a5_independent_n7_producer.jsonl 2>/tmp/a5-independent-n7.log ; a5_n7_global.py <gz> --output O/a5_independent_n7_global.raw.json ; a5_repack_certificate.py <gz> --output O/a5_independent_n7_certificate.json.xz --global-file <raw> --global-output O/a5_independent_n7_global.json --receipt O/a5_independent_n7_repack.json (independent-execution-a5-n7.md:72-128); no node file; gzip (856819 B) not committed",
+   "summary": "independent-execution-a5-n7.md:72-200",
+   "notes": "Independent regeneration; global a5_independent_n7_global.json bound to this xz. Checker: E C/a5_checker_n7.py O/a5_independent_n7_certificate.json.xz --global-file O/a5_independent_n7_global.json --output O/a5_independent_n7_checker.json; developer-pair controls -> O/a5_independent_n7_co\u2026 Receipt: O/a5_independent_n7_checker.json (16259 B, 1899.9 s); O/a5_independent_n7_controls.json (8436 B, 1481.9 s, 52 controls); O/a5_independent_n7_global.json; O/a5_\u2026 Cost: interior 2948.8 s + boundary 623.8 s; checker 1899.9 s."
+  },
+  {
+   "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_independent_n8_axis_preflight.json",
+   "bytes": 24613,
+   "sha256": "a1b210518708eeec30c06b1a214e9da201298d7e4ea5b53aed167c9dfbe859f3",
+   "git_blob": "03641a59806531a9b5a2e1173e60066108b4a108",
+   "generating_command": "inline python heredoc stored verbatim in independent-checks-a5-n8-axis.md:97-165 (E - <<'PY' ... PY), run from /workspace/padua_research; reads /tmp/a5-n8-candidate-v4.json.gz (sha 4d0884a6..., uncommitted) and imports code/a5_checker_n8.py (sha a9cff574...); replay changed only the output filename (independent-execution-a5-n8-axis.md:8-13)",
+   "summary": "theory/proof-attempts-2-codex-63-degree-eight-reflection.md:85 (PD-T182 PROVED analytic); independent-checks-a5-n8-axis.md:73-96",
+   "notes": "Application check of reflection/axis lemma on an intermediate partial tree; supporting evidence, not a count certificate. Input not retrievable from Git (only /tmp). Checker: is itself the independent checker output (formal field + 23 V4 root records + reflection hulls); count_certified=false Receipt: independent-execution-a5-n8-axis.md:54 (sha a1b21051...) Cost: tens of seconds once the V4 gz exists; V4 itself ~2 h of producer runs."
+  },
+  {
+   "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n3_certificate.json.gz",
+   "bytes": 386415,
+   "sha256": "401a99243ebeb7b3844216a47f8466bbb60086cbba71d2de2088d7626f532b2b",
+   "git_blob": "7d7056d26b4a01016d2fe714e246dd8ee8dcea0f",
+   "generating_command": "E0 C/a5_producer.py --output O/a5_n3_certificate.json.gz --unresolved /tmp/a5-n3-final-unresolved.json > O/a5_n3_producer.json 2> /tmp/a5-n3-final.log (theory/\u2026-06:59)",
+   "summary": "report.md:23; theory/proof-attempts-2-codex-06-degree-three-maxima-count.md:59-74 (PD-T161, PROOF_STATUS.md:262); attempts/T-A5.md:54-60; independent-execution-a5.md:58-92; audit-01.md:200",
+   "notes": "ACCEPTED proof certificate (n3 count 7/6/2/15 + global 17/6+(2/3)sqrt2, PD-T161/PD-T162). Gzip is byte-identical to a5_independent_n3_certificate.json.gz. No node cones/flint needed (plain Python+SymPy). No end-to-end producer timer. Checker: E0 C/a5_checker.py O/a5_n3_certificate.json.gz > O/a5_checker_full-integration.json (independent-checks-a5-checker.md:230); mutation controls: C/a5_checker_adversarial.py <gz> > O/a5_checker_adversar\u2026 Receipt: O/a5_checker_full-integration.json (15206 B; accepted 7/6/2/15, 217.540 s); O/a5_independent_n3_developer_certificate_check.json; O/a5_checker_adversarial.json\u2026 Cost: producer ~10 min wall (09:35-09:45Z; mask 960 at 456.7 s, boundary after; no en\u2026."
+  },
+  {
+   "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n4_certificate.json.gz",
+   "bytes": 64360,
+   "sha256": "14a69a131b3c20416fd5521bd971efdadd4e3741f70546d0fc5f0d9f25a2cf61",
+   "git_blob": "d768d04857c580459547f090a1256fd4ed8bed58",
+   "generating_command": "E C/a5_n4_boxes.py --boxes 200000 --seconds 600 --depth 40 --ambiguity 8 --certificate --boundary --output O/a5_n4_certificate.json.gz ; global: E C/a5_n4_global.py O/a5_n4_certificate.json.gz --output O/a5_n4_global.json (attempts/T-A5-n4.md:63,70)",
+   "summary": "report.md:24; theory/proof-attempts-2-codex-10-degree-four-maxima-count.md:47-64 (PD-T165, PROOF_STATUS.md:266), -11 (PD-T166); attempts/T-A5-n4.md; independent-execution-a5-n4.md:68-140; audit-01.md:201",
+   "notes": "ACCEPTED proof certificate (n4 13/12/2=27; PD-T165). Producer needs node/flint env. Checker: E C/a5_checker_n4.py O/a5_n4_certificate.json.gz --global-file O/a5_n4_global.json --output O/a5_checker_n4_developer.json (independent-checks-a5-n4-checker.md:242); controls: C/a5_checker_n4_control\u2026 Receipt: O/a5_checker_n4_developer.json (9353 B); O/a5_independent_n4_developer_certificate_check.json (9357 B, 466.3 s); O/a5_checker_n4_controls.json; O/a5_n4_global.\u2026 Cost: independent producer: interior 74.4 s + boundary 435.7 s (phase timers); checke\u2026."
+  },
+  {
+   "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n5_certificate.json.gz",
+   "bytes": 125245,
+   "sha256": "a1238d59781733cc0d380dc513a0a642d0e24b985aeb9b90bb7233756273386e",
+   "git_blob": "a730022cadf5bf40c8e458d695e5e372f2aad4aa",
+   "generating_command": "E C/a5_n5_boxes.py --certificate --boundary --boxes 100000 --seconds 3600 --depth 36 --full-depth 30 --ambiguity 6 --root-depth 12 --output O/a5_n5_certificate.json.gz > O/a5_n5_producer.jsonl 2> /tmp/a5-n5-final.log (attempts/T-A5-n5.md:55); global: C/a5_n5_global.py <gz> --output O/a5_n5_global.json",
+   "summary": "report.md:25; theory/proof-attempts-2-codex-16-degree-five-maxima-count.md:59-60 (PD-T168, PROOF_STATUS.md:269), -17 (PD-T169); attempts/T-A5-n5.md:55; independent-execution-a5-n5.md:55-139; audit-01.md:202",
+   "notes": "ACCEPTED proof certificate (n5 14/9/2=25; PD-T168). Node cones regenerated inside the producer (no node file). Checker: E C/a5_checker_n5.py O/a5_n5_certificate.json.gz --global-file O/a5_n5_global.json --output O/a5_independent_n5_developer_certificate_check.json (independent-execution-a5-n5.md:47); controls: a5_chec\u2026 Receipt: O/a5_independent_n5_developer_certificate_check.json (8359 B, 257.7 s); O/a5_checker_n5_full-integration.json (8352 B, 298.9 s, run on the independent pair); O\u2026 Cost: developer: interior 264.5 s + boundary 1047.3 s (phase timers; indep 220.8 s in\u2026."
+  },
+  {
+   "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n6_certificate.json.gz",
+   "bytes": 414031,
+   "sha256": "c7a113b9b623c47309fd186c19ee2dddb2d5a0270c01b118bd11ee1ee069f0f5",
+   "git_blob": "b44de47f2d37cf645f5a1d1543f3d3ede53e68a5",
+   "generating_command": "E C/a5_n6_boxes.py --boxes 200000 --seconds 2400 --depth 40 --ambiguity 8 --full-depth 40 --certificate --boundary --node-file /tmp/a5-n6-nodes-pilot.json --output /tmp/a5-n6-candidate.json.gz (attempts/T-A5-n6.md:53; node file made by code/a5_n6_nodes.py --output /tmp/a5-n6-nodes-pilot.json, 5.5 s); gzip then copied byte-unchanged to O/a5_n6_certificate.json.gz; global: C/a5_n6_global.py <gz> --output O/a5_n6_global.json",
+   "summary": "report.md:26; theory/proof-attempts-2-codex-41-degree-six-maxima-count.md:55 (PD-T173, PROOF_STATUS.md:274), -42 (PD-T174); attempts/T-A5-n6.md:71; independent-execution-a5-n6.md:37-167; audit-01.md:203",
+   "notes": "ACCEPTED proof certificate (n6 25/14/2=41; PD-T173). Contains embedded 28 node cones. Checker: E C/a5_checker_n6.py O/a5_n6_certificate.json.gz --global-file O/a5_n6_global.json --output O/a5_checker_n6_developer.json (independent-checks-a5-n6-checker.md:179); controls a5_checker_n6_controls.p\u2026 Receipt: O/a5_checker_n6_developer.json (13396 B, 952.45 s); O/a5_checker_n6_controls.json; O/a5_n6_global.json (7077 B); O/a5_n6_run_record.json Cost: developer: interior 887.9 s + boundary 142.7 s (phase timers; indep 1171.4 + 31\u2026."
+  },
+  {
+   "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n7_certificate.json.xz",
+   "bytes": 436960,
+   "sha256": "9338e01c89482acd4e3e948812a62b5511ca6d9afcf87672fad053ee28cfaa85",
+   "git_blob": "12006701d34cb619358d99b353160f22e5cff63f",
+   "generating_command": "(1) E C/a5_n7_nodes.py --output /tmp/a5-n7-nodes.json (28.6 s); (2) E C/a5_n7_boxes.py --boxes 500000 --seconds 5400 --depth 44 --full-depth 44 --root-depth 12 --ambiguity 6 --certificate --boundary --node-file /tmp/a5-n7-nodes.json --output O/a5_n7_certificate.json.gz > O/a5_n7_producer.jsonl 2>&1 (attempts/T-A5-n7.md:72); (3) E C/a5_n7_global.py <gz> --output O/a5_n7_global.raw.json; (4) E0 C/a5_repack_certificate.py <gz> --output O/a5_n7_certificate.json.xz --global-file O/a5_n7_global.raw.json --global-output O/a5_n7_global.json --receipt O/a5_n7_repack.json (attempts/T-A5-n7.md:98-100; e\u2026",
+   "summary": "report.md:27; theory/proof-attempts-2-codex-51-degree-seven-maxima-count.md:66 (PD-T176, PROOF_STATUS.md:277), -52 (PD-T177); attempts/T-A5-n7.md:98-140; evidence-packaging.md:5-21; independent-execution-a5-n7.md:129-200; audit-01.md:204",
+   "notes": "ACCEPTED proof certificate (n7 33/15/2=50; PD-T176). The global a5_n7_global.json (kept, <16 KiB) is bound to this exact xz SHA-256: pair them. Largest regeneration (~1 h producer). Checker: E C/a5_checker_n7.py O/a5_n7_certificate.json.xz --global-file O/a5_n7_global.json --output O/a5_checker_n7_full-integration.json ; controls: a5_checker_n7_controls.py <xz> --spatial-certificate <xz>\u2026 Receipt: O/a5_checker_n7_full-integration.json (16259 B, 1840.06 s, accepted 33/15/2=50); O/a5_checker_n7_controls-full.json (8436 B, 52 controls, 1934.4 s); O/a5_n7_gl\u2026 Cost: developer producer: interior 2852.8 s + boundary 670.6 s (phase timers; indep 2\u2026."
+  },
+  {
+   "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_interior_candidate.json.gz",
+   "bytes": 637163,
+   "sha256": "a3b4f278a322338fb65f60922b4251265288148e1a09fd22882215004e81c324",
+   "git_blob": "3f65a77df46ed9ba3c665fd80cd8509fefefaa17",
+   "generating_command": "4-step chain (all /tmp intermediates uncommitted): (1) E C/a5_n8_nodes.py --output .../a5_n8_node_pilot.json (69.6 s; moved to /tmp/a5-n8-node-pilot.json); (2) PYTHONPATH=/tmp/padua2-deps timeout 5400 python -B C/a5_n8_boxes.py --node-file /tmp/a5-n8-node-pilot.json --boxes 200000 --seconds 3600 --depth 44 --ambiguity 8 --full-depth 44 --root-depth 12 --cache-masks 8000 --certificate --boundary --output /tmp/a5-n8-candidate-v3.json.gz (3600.7 s); (3) PYTHONPATH=/tmp/padua2-deps timeout 5400 python -B C/a5_n8_continue.py --resume /tmp/a5-n8-candidate-v3.json.gz --boxes 200000 --seconds 3600 --\u2026",
+   "summary": "attempts/T-A5-n8.md:219 (\"Retained future-work evidence\"); theory/proof-attempts-2-codex-65-degree-eight-exact-interior-count.md:46 (PD-T184 OPEN); audit-01.md:58; outputs/a5_n8_interior_retention.json",
+   "notes": "NOT an accepted certificate: an interior PROPOSAL (44 roots, 153520 leaves, no edges/corners), result 65 / PD-T184 OPEN, closed count 61 / global 62 OPEN. Only large copy of this proposal; the 44-root witnesses (accepted lower bound) are self-contained elsewhere. Needed only if AC wants the future-work replay. Checker: NO accepted full-interior check. Attempted: code/a5_checker_n8_staged.py / a5_checker_n8_staged_cached.py (Stage 1 = Verifier.run(allow_partial=True) on 153520 leaves) hit the 15:19Z deadline in both\u2026 Receipt: O/a5_checker_n8_cached_full.json (2052 B, failed, 1864 s); O/a5_independent_n8_cached_full.json (failed, 1849 s); O/a5_n8_deadline_stop.json; O/a5_n8_interior_\u2026 Cost: ~7950 s (~2.2 h) of producer wall time summed from the recorded caps (nodes 70 \u2026."
+  },
+  {
+   "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_interior_witnesses.json",
+   "bytes": 69163,
+   "sha256": "ca5648106a89982995232c5555e2bfab62e0a395a743d76aa7e07835e74c30d1",
+   "git_blob": "08b8bc0da37a5e98f45043f14759a203e72f9ad5",
+   "generating_command": "PYTHONPATH=/tmp/padua2-deps python -B C/a5_n8_witness.py /tmp/a5-n8-interior-reflected-v1.json.gz --input-sha256 a3b4f278a322338fb65f60922b4251265288148e1a09fd22882215004e81c324 --driver-sha256 bc8ed34a355d585b0cd465d1c07deea76174f399dc27b6174f5eaa319a035b60 --output O/a5_n8_interior_witnesses.json (attempts/T-A5-n8.md:201; 5.88 s; input is byte-identical to a5_n8_interior_candidate.json.gz)",
+   "summary": "report.md:12,29; theory/proof-attempts-2-codex-64-degree-eight-interior-lower-bound.md:38 (PD-T183 PROVED, PROOF_STATUS.md:284); attempts/T-A5-n8.md:201,218; audit-01.md:199",
+   "notes": "ACCEPTED proof evidence for >=44 strict interior maxima at n=8 (PD-T183; audit-01 accepted scope). Self-contained (field embedding + 44 root records). Highest-priority retrievable item of the n8 set. Checker: standalone replay of the committed file: E C/a5_n8_witness.py O/a5_n8_interior_witnesses.json --input-sha256 ca5648106a89982995232c5555e2bfab62e0a395a743d76aa7e07835e74c30d1 --driver-sha256 bc8ed34a3\u2026 Receipt: independent-execution-a5-n8-witnesses.md (own-input replay, 5.617 s, 44); O/a5_n8_witness_comparison.json (payload sha 89f5ccd2...); O/a5_n8_witness_support_fr\u2026 Cost: 5-6 s given the interior proposal (whole chain from scratch ~2.2 h); uses uncha\u2026."
+  },
+  {
+   "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_interior_witnesses_independent.json",
+   "bytes": 69175,
+   "sha256": "af8d9efe8478b4b7fff46643ad431a63b9782992e307160c4a105ba59b51fa96",
+   "git_blob": "533f0b385002955804c4c79145b709617b33e411",
+   "generating_command": "E C/a5_n8_witness.py /tmp/a5-independent-n8-interior-reflected-v1.json.gz --input-sha256 2992e3fad6df217e76f0c345c8b38109d233358c94d98715b90545105e49feb9 --driver-sha256 bc8ed34a355d585b0cd465d1c07deea76174f399dc27b6174f5eaa319a035b60 --output /tmp/a5-n8-medium-interior-witnesses.json, then copied unchanged (independent-execution-a5-n8-witnesses.md; 5.617 s)",
+   "summary": "independent-execution-a5-n8-witnesses.md; theory/\u2026-64\u2026md:40",
+   "notes": "Independent-executor duplicate of the accepted witnesses (same mathematical payload). Checker: as for a5_n8_interior_witnesses.json (driver a5_n8_witness.py is itself the checker; auditor verify_n8_witnesses.py confirmed both files, 44/44) Receipt: independent-execution-a5-n8-witnesses.md; O/a5_n8_witness_comparison.json; audit-support/claude-audit-01/subaudit-reports/a5-n8.md:5 Cost: 5.6 s given independent interior proposal (own chain ~2.3 h)."
+  },
+  {
+   "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n8_v4_cap_inventory.json",
+   "bytes": 17333,
+   "sha256": "6e4ca5ad19f0fc0fbd27882060ec5b7156baff0e31b5b683db612936d6a60df8",
+   "git_blob": "638cf11244501af46dc542871b5a6ac4294df9c2",
+   "generating_command": "python -B C/a5_n8_continue_v5.py --resume /tmp/a5-n8-candidate-v4.json.gz --original-v3 /tmp/a5-n8-candidate-v3.json.gz --input-sha256 4d0884a64cf6b41c7e9b6fadb7da56bed61a4c44e816b215a8e7ce37fdc0647c --certificate --validate-only --output /tmp/a5-n8-v5-unused-validation.gz (command recorded inside the JSON as validate_only_command; wrapper that assembled the inventory not committed)",
+   "summary": "attempts/T-A5-n8.md:155 (V4 cap result: 141302 visited/70648 leaves/23 roots/7 pending; 20 strictly-left + 3 axis root boxes)",
+   "notes": "Inventory of an intermediate (non-accepted) V4 partial tree; supporting only. Not a certificate. Cost: needs the uncommitted V4 gz (3601 s run) plus V3."
+  }
+ ],
+ "total_bytes": 4030911
+}

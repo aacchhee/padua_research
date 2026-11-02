@@ -1,0 +1,182 @@
+{
+ "format": "padua-cold-storage-v1",
+ "slug": "programme-ideas-20261031",
+ "source_commit": "2b52b432fe59c9a50aef9deebe5152c5d6874465",
+ "threshold_bytes": 16384,
+ "policy": "AC 2026-11-02: large regenerable outputs are not stored at the branch head; all code and short summaries stay. Each file is retrievable byte-exactly from Git history by its blob id; delivery to AC Padua cold storage is pending.",
+ "delivery_to_AC_cold_storage": "PENDING (AC runs: python tools/cold_storage.py export programme-ideas-20261031 --dest C:\\Users\\andreyac\\Downloads\\padua\\cold_storage)",
+ "topic_note": "All receipt scripts are committed next to their outputs (audit-02-support/*.py, audit-04-support/*.py, audit-support/*.py). Several reruns need Git history at pinned SHAs; rehearsal-* need live Git state. Exact run lines of allocation-final, integration-final and rehearsal-final are inferred from their recorded candidate fields.",
+ "retained_above_threshold": [
+  {
+   "path": "topics/programme-ideas-20261031/audit-support/source-manifest.json",
+   "bytes": 45906,
+   "reason": "root-fetched provenance record with no generator (155 pinned files)"
+  },
+  {
+   "path": "topics/programme-ideas-20261031/lit/integration-map-pr10.json",
+   "bytes": 23111,
+   "reason": "agent-produced literature dedupe data with no generator; runtime input of pr-prep/allocate.py and audit-04 checkers"
+  },
+  {
+   "path": "topics/programme-ideas-20261031/lit/integration-map.json",
+   "bytes": 47336,
+   "reason": "agent-produced literature dedupe data with no generator; runtime input of pr-prep/allocate.py and audit-04 checkers"
+  }
+ ],
+ "entries": [
+  {
+   "path": "topics/programme-ideas-20261031/audit-02-support/literature-check.json",
+   "bytes": 76260,
+   "sha256": "20a651b7adfd26d8c7035e0fed76118286c459a5b3c0ce62b483cbfff78b8f02",
+   "git_blob": "343574af7bfd2cde948f34c0930c070907b9018b",
+   "generating_command": "python topics/programme-ideas-20261031/audit-02-support/literature-check.py > <out>",
+   "summary": "audit-02-support/literature-review.md",
+   "notes": "Reads provenance.json from Git at cadb3506."
+  },
+  {
+   "path": "topics/programme-ideas-20261031/audit-02-support/obstructions-check.json",
+   "bytes": 39115,
+   "sha256": "938ad64d70fdccf70ea06bddc1bfffa14e1457f817518102e4b76fac03ae65ed",
+   "git_blob": "836f21f99381a4d52c11982e0d6ab15f047208be",
+   "generating_command": "python topics/programme-ideas-20261031/audit-02-support/obstructions-check.py > <out>",
+   "summary": "audit-02-support/obstructions-report.md",
+   "notes": ""
+  },
+  {
+   "path": "topics/programme-ideas-20261031/audit-02-support/protocol-check.json",
+   "bytes": 20844,
+   "sha256": "95a626ca078e92ee5c1d6b2ced75daa242d886086ed3347b9cad52e253fbbe29",
+   "git_blob": "38a46bf352ac94ecf303794f0a58287e2694b7a0",
+   "generating_command": "python topics/programme-ideas-20261031/audit-02-support/protocol-check.py > <out>",
+   "summary": "audit-02.md:105",
+   "notes": "Protocol check at cadb3506: PASS."
+  },
+  {
+   "path": "topics/programme-ideas-20261031/audit-04-support/allocation-final.json",
+   "bytes": 35180,
+   "sha256": "4e70bc1489764eb2b7de1462e520a8126198e492e9c0e85407c4f7e779f47354",
+   "git_blob": "94b7223f8f4575f193fb163c2fbaf2db27a8efcb",
+   "generating_command": "python3 -I topics/programme-ideas-20261031/audit-04-support/allocation-repair-check.py > <out> (at 6a42b7f; inferred)",
+   "summary": "audit-04-support/README.md:8; allocation-repair-report.md:26",
+   "notes": "all_checks_pass=true."
+  },
+  {
+   "path": "topics/programme-ideas-20261031/audit-04-support/allocation-repair-results.json",
+   "bytes": 35180,
+   "sha256": "0d88bc3cca5481353e4f96c9e71d56a64794496f7c80b1115464df706ed57e9f",
+   "git_blob": "f51496ee7e77f15b445cf71ff6263f8d37491075",
+   "generating_command": "python3 -I topics/programme-ideas-20261031/audit-04-support/allocation-repair-check.py > <out>",
+   "summary": "audit-04-support/allocation-repair-report.md",
+   "notes": "30 assertions, all_checks_pass=true."
+  },
+  {
+   "path": "topics/programme-ideas-20261031/audit-04-support/allocation-results.json",
+   "bytes": 33936,
+   "sha256": "3220fa681db981d799d7f1f501887f3cad46d7bdf82fef6d3de7ede444f849fd",
+   "git_blob": "08b7f0b20e4d635e8daf2a373a96eba0bf490629",
+   "generating_command": "python3 -I topics/programme-ideas-20261031/audit-04-support/allocation-check.py > <out>",
+   "summary": "audit-04-support/allocation-report.md",
+   "notes": "52 passing assertions."
+  },
+  {
+   "path": "topics/programme-ideas-20261031/audit-04-support/integration-final.json",
+   "bytes": 111292,
+   "sha256": "d81a73024562d37dc9e702966bf112a9d12d59cd2d7554b70ec0008673a5f164",
+   "git_blob": "ab1467c93270cfb83ea50bedc901d89a4ec69a06",
+   "generating_command": "python3 -I topics/programme-ideas-20261031/audit-04-support/integration-repair-check.py 6a42b7f38163770f57a0e298a67e04dd42ab4525 > <out> (inferred)",
+   "summary": "audit-04-support/README.md:10; audit-04.md",
+   "notes": "197 protected files, 33 canonical paths; passes."
+  },
+  {
+   "path": "topics/programme-ideas-20261031/audit-04-support/integration-repair-check.json",
+   "bytes": 111241,
+   "sha256": "192194bbbf009792b08ec2124f87b143535dddb61a0f4513ca1608d6c5e64796",
+   "git_blob": "1fa3882c99ac85243617f2ec1fb680935f90d329",
+   "generating_command": "python3 -I topics/programme-ideas-20261031/audit-04-support/integration-repair-check.py > <out>",
+   "summary": "audit-04-support/README.md:10; audit-04.md:86",
+   "notes": "passes."
+  },
+  {
+   "path": "topics/programme-ideas-20261031/audit-04-support/preservation-check.json",
+   "bytes": 100655,
+   "sha256": "37330862df27c534fcadd75ec4b40869c8f7e534d594b807ca8ae71b3c83e7f0",
+   "git_blob": "506b7090dbb4a465078a27699b61f4563e6782ad",
+   "generating_command": "python3 -I topics/programme-ideas-20261031/audit-04-support/preservation-check.py > <out>",
+   "summary": "audit-04-support/preservation-review.md:6",
+   "notes": "passed=true."
+  },
+  {
+   "path": "topics/programme-ideas-20261031/audit-04-support/rehearsal-check.json",
+   "bytes": 171971,
+   "sha256": "4f3de49da183a014b776ecf0ea31134de0a975db6b65ce085447b6696c36d072",
+   "git_blob": "eed8e660d0aceca780ba651d54b96774ee6fee54",
+   "generating_command": "python3 -I topics/programme-ideas-20261031/audit-04-support/rehearsal-check.py (source 37820a5; live Git state)",
+   "summary": "pr-prep.md:116-125; audit-04-support/README.md:11",
+   "notes": "passed=true."
+  },
+  {
+   "path": "topics/programme-ideas-20261031/audit-04-support/rehearsal-final.json",
+   "bytes": 209721,
+   "sha256": "b13850532d869cef613aca13b078cfb37ba513109c9f655b9185d0ec9b307501",
+   "git_blob": "af330b3ac49ad2dbddcbae4be1e5c4da6afca3cf",
+   "generating_command": "python3 -I topics/programme-ideas-20261031/audit-04-support/rehearsal-check.py 6a42b7f38163770f57a0e298a67e04dd42ab4525 (inferred)",
+   "summary": "pr-prep.md:116-125; audit-04-support/README.md:11",
+   "notes": "passed=true."
+  },
+  {
+   "path": "topics/programme-ideas-20261031/audit-04-support/rehearsal-repaired.json",
+   "bytes": 209379,
+   "sha256": "2d64960f2057b706a601d904350ffc70b0c12fb5867197ae773e1ff175b43399",
+   "git_blob": "74f7fae7337606056172c300ebb8013e0cfe14cd",
+   "generating_command": "python3 -I topics/programme-ideas-20261031/audit-04-support/rehearsal-check.py 60e8ecf7bf5a171af02fec589583fa135dee2709",
+   "summary": "audit-04.md:66,87; pr-prep.md:116-125",
+   "notes": "passed=true."
+  },
+  {
+   "path": "topics/programme-ideas-20261031/audit-support/proposal-rerun.json",
+   "bytes": 60960,
+   "sha256": "66d06e5a5669fa71cc74deddaf4bb0c5c15c12c5d796e9c8271db16ac91613eb",
+   "git_blob": "a7d590a39bed309bec67a2d70c1d1c6db4f764f4",
+   "generating_command": "python topics/programme-ideas-20261031/audit-support/proposal-rerun.py (about 1 min)",
+   "summary": "audit-support/proposal-review.md:48 (totals 15,27,25,41,50,62 for n=3..8); theory programme-ideas-claude-06",
+   "notes": "Rerun of developer certifier t3_certify.py."
+  },
+  {
+   "path": "topics/programme-ideas-20261031/audit-support/protocol-check.json",
+   "bytes": 47051,
+   "sha256": "63074776a1b26cf60aae0a55214b1e8fc12ac5b82c890b2d1a80f0c0b58c17c2",
+   "git_blob": "6322c527aadf3dc03262b91c9e4cccc3330c50e2",
+   "generating_command": "python topics/programme-ideas-20261031/audit-support/protocol-check.py > <out>",
+   "summary": "audit-01.md:124-131",
+   "notes": "Point-in-time protocol receipt."
+  },
+  {
+   "path": "topics/programme-ideas-20261031/checks/code/adv/gen3-1/kappa_out.txt",
+   "bytes": 19235,
+   "sha256": "7a79244ede202917ba9ed6d230c69bc43cfbc802309d117c7ea4cf422fffe287",
+   "git_blob": "3bc8146ef0423acffcaf906e0ee2ced03699847e",
+   "generating_command": "python checks/code/adv/gen3-1/curve_kappa_adv.py > kappa_out.txt (inferred; seed 20261101)",
+   "summary": "checks/adversarial-gen3-1.md:59; ideas/candidates.md:260",
+   "notes": ""
+  },
+  {
+   "path": "topics/programme-ideas-20261031/checks/code/decisive/gen1-3/T1_T3.out",
+   "bytes": 29935,
+   "sha256": "853414ed9fb65eef13e7bb94948112db63571d452b037387f2db4f310a8184e0",
+   "git_blob": "45b4edf52a5a714f2781de0f6cfd6207d9c84871",
+   "generating_command": "python run_T1_T3.py (in checks/code/decisive/gen1-3/, about 351 s)",
+   "summary": "checks/decisive-gen1-3.md:35-59; theory programme-ideas-claude-N02",
+   "notes": "MEASURED; values vary with BLAS."
+  },
+  {
+   "path": "topics/programme-ideas-20261031/sources/campaign-inputs/provenance.json",
+   "bytes": 75429,
+   "sha256": "6e711d8238923349904b7e99d802eefe17ddcd12fba45e549dad05b7b8263349",
+   "git_blob": "9de4517747a0e63d82c004c99206c5f299faaa98",
+   "generating_command": "python topics/programme-ideas-20261031/sources/campaign-inputs/provenance.py <input mirror> (mirror not in repository; not rerunnable)",
+   "summary": "sources/campaign-inputs/README.md:5-20; COLD_STORAGE.md:70",
+   "notes": "Provenance of 164 mirror files (159 Git blobs)."
+  }
+ ],
+ "total_bytes": 1387384
+}

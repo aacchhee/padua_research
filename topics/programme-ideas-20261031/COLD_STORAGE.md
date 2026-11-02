@@ -1,0 +1,53 @@
+# Cold-storage manifest — programme-ideas-20261031
+
+## Repository cleanup 2026-11-02 — large regenerable outputs moved off the branch head
+
+AC (2026-11-02): "I do not think that we have to store large outputs that can be regenerated. Make sure that all needed code is in the repo, some short summaries are stored and expunge the large data files (cold storage)"; "18 mb per repo is too much."
+
+Every generated data file of 16 KiB or more in this directory left the branch head: 17 files, 1,387,384 bytes. Machine manifest: [`cold-storage.json`](cold-storage.json). Tool: `tools/cold_storage.py`.
+
+These files have **not been delivered to AC's Padua cold storage yet** (PENDING). Until then, the only stored copy is Git history, pinned by blob id at the pushed main commit `2b52b432fe59c9a50aef9deebe5152c5d6874465`. Each file's SHA-256 is recorded alongside, so the bytes can be verified.
+
+Code, records, and small receipts and summaries stay. All receipt scripts are committed next to their outputs (audit-02-support/*.py, audit-04-support/*.py, audit-support/*.py). Several reruns need Git history at pinned SHAs; rehearsal-* need live Git state. Exact run lines of allocation-final, integration-final and rehearsal-final are inferred from their recorded candidate fields.
+
+Files of 16 KiB or more kept on purpose (not generated output):
+- `audit-support/source-manifest.json` (45,906 bytes): root-fetched provenance record with no generator (155 pinned files).
+- `lit/integration-map-pr10.json` (23,111 bytes): agent-produced literature dedupe data with no generator; runtime input of pr-prep/allocate.py and audit-04 checkers.
+- `lit/integration-map.json` (47,336 bytes): agent-produced literature dedupe data with no generator; runtime input of pr-prep/allocate.py and audit-04 checkers.
+
+| File | Actual storage path | Bytes | SHA-256 | Source commit | Frozen generating command | Script blob IDs | Checker command / result |
+|---|---|---|---|---|---|---|---|
+| `audit-02-support/literature-check.json` | Git blob `343574af7bfd` at `2b52b432fe59`; AC cold storage PENDING | 76,260 | `20a651b7adfd26d8c7035e0fed76118286c459a5b3c0ce62b483cbfff78b8f02` | `2b52b432fe59` | python topics/programme-ideas-20261031/audit-02-support/literature-check.py > <out> | committed at source commit | Summary: audit-02-support/literature-review.md. Reads provenance.json from Git at cadb3506. |
+| `audit-02-support/obstructions-check.json` | Git blob `836f21f99381` at `2b52b432fe59`; AC cold storage PENDING | 39,115 | `938ad64d70fdccf70ea06bddc1bfffa14e1457f817518102e4b76fac03ae65ed` | `2b52b432fe59` | python topics/programme-ideas-20261031/audit-02-support/obstructions-check.py > <out> | committed at source commit | Summary: audit-02-support/obstructions-report.md.  |
+| `audit-02-support/protocol-check.json` | Git blob `38a46bf352ac` at `2b52b432fe59`; AC cold storage PENDING | 20,844 | `95a626ca078e92ee5c1d6b2ced75daa242d886086ed3347b9cad52e253fbbe29` | `2b52b432fe59` | python topics/programme-ideas-20261031/audit-02-support/protocol-check.py > <out> | committed at source commit | Summary: audit-02.md:105. Protocol check at cadb3506: PASS. |
+| `audit-04-support/allocation-final.json` | Git blob `94b7223f8f45` at `2b52b432fe59`; AC cold storage PENDING | 35,180 | `4e70bc1489764eb2b7de1462e520a8126198e492e9c0e85407c4f7e779f47354` | `2b52b432fe59` | python3 -I topics/programme-ideas-20261031/audit-04-support/allocation-repair-check.py > <out> (at 6a42b7f; inferred) | committed at source commit | Summary: audit-04-support/README.md:8; allocation-repair-report.md:26. all_checks_pass=true. |
+| `audit-04-support/allocation-repair-results.json` | Git blob `f51496ee7e77` at `2b52b432fe59`; AC cold storage PENDING | 35,180 | `0d88bc3cca5481353e4f96c9e71d56a64794496f7c80b1115464df706ed57e9f` | `2b52b432fe59` | python3 -I topics/programme-ideas-20261031/audit-04-support/allocation-repair-check.py > <out> | committed at source commit | Summary: audit-04-support/allocation-repair-report.md. 30 assertions, all_checks_pass=true. |
+| `audit-04-support/allocation-results.json` | Git blob `08b7f0b20e4d` at `2b52b432fe59`; AC cold storage PENDING | 33,936 | `3220fa681db981d799d7f1f501887f3cad46d7bdf82fef6d3de7ede444f849fd` | `2b52b432fe59` | python3 -I topics/programme-ideas-20261031/audit-04-support/allocation-check.py > <out> | committed at source commit | Summary: audit-04-support/allocation-report.md. 52 passing assertions. |
+| `audit-04-support/integration-final.json` | Git blob `ab1467c93270` at `2b52b432fe59`; AC cold storage PENDING | 111,292 | `d81a73024562d37dc9e702966bf112a9d12d59cd2d7554b70ec0008673a5f164` | `2b52b432fe59` | python3 -I topics/programme-ideas-20261031/audit-04-support/integration-repair-check.py 6a42b7f38163770f57a0e298a67e04dd42ab4525 > <out> (inferred) | committed at source commit | Summary: audit-04-support/README.md:10; audit-04.md. 197 protected files, 33 canonical paths; passes. |
+| `audit-04-support/integration-repair-check.json` | Git blob `1fa3882c99ac` at `2b52b432fe59`; AC cold storage PENDING | 111,241 | `192194bbbf009792b08ec2124f87b143535dddb61a0f4513ca1608d6c5e64796` | `2b52b432fe59` | python3 -I topics/programme-ideas-20261031/audit-04-support/integration-repair-check.py > <out> | committed at source commit | Summary: audit-04-support/README.md:10; audit-04.md:86. passes. |
+| `audit-04-support/preservation-check.json` | Git blob `506b7090dbb4` at `2b52b432fe59`; AC cold storage PENDING | 100,655 | `37330862df27c534fcadd75ec4b40869c8f7e534d594b807ca8ae71b3c83e7f0` | `2b52b432fe59` | python3 -I topics/programme-ideas-20261031/audit-04-support/preservation-check.py > <out> | committed at source commit | Summary: audit-04-support/preservation-review.md:6. passed=true. |
+| `audit-04-support/rehearsal-check.json` | Git blob `eed8e660d0ac` at `2b52b432fe59`; AC cold storage PENDING | 171,971 | `4f3de49da183a014b776ecf0ea31134de0a975db6b65ce085447b6696c36d072` | `2b52b432fe59` | python3 -I topics/programme-ideas-20261031/audit-04-support/rehearsal-check.py (source 37820a5; live Git state) | committed at source commit | Summary: pr-prep.md:116-125; audit-04-support/README.md:11. passed=true. |
+| `audit-04-support/rehearsal-final.json` | Git blob `af330b3ac49a` at `2b52b432fe59`; AC cold storage PENDING | 209,721 | `b13850532d869cef613aca13b078cfb37ba513109c9f655b9185d0ec9b307501` | `2b52b432fe59` | python3 -I topics/programme-ideas-20261031/audit-04-support/rehearsal-check.py 6a42b7f38163770f57a0e298a67e04dd42ab4525 (inferred) | committed at source commit | Summary: pr-prep.md:116-125; audit-04-support/README.md:11. passed=true. |
+| `audit-04-support/rehearsal-repaired.json` | Git blob `74f7fae73376` at `2b52b432fe59`; AC cold storage PENDING | 209,379 | `2d64960f2057b706a601d904350ffc70b0c12fb5867197ae773e1ff175b43399` | `2b52b432fe59` | python3 -I topics/programme-ideas-20261031/audit-04-support/rehearsal-check.py 60e8ecf7bf5a171af02fec589583fa135dee2709 | committed at source commit | Summary: audit-04.md:66,87; pr-prep.md:116-125. passed=true. |
+| `audit-support/proposal-rerun.json` | Git blob `a7d590a39bed` at `2b52b432fe59`; AC cold storage PENDING | 60,960 | `66d06e5a5669fa71cc74deddaf4bb0c5c15c12c5d796e9c8271db16ac91613eb` | `2b52b432fe59` | python topics/programme-ideas-20261031/audit-support/proposal-rerun.py (about 1 min) | committed at source commit | Summary: audit-support/proposal-review.md:48 (totals 15,27,25,41,50,62 for n=3..8); theory programme-ideas-claude-06. Rerun of developer certifier t3_certify.py. |
+| `audit-support/protocol-check.json` | Git blob `6322c527aadf` at `2b52b432fe59`; AC cold storage PENDING | 47,051 | `63074776a1b26cf60aae0a55214b1e8fc12ac5b82c890b2d1a80f0c0b58c17c2` | `2b52b432fe59` | python topics/programme-ideas-20261031/audit-support/protocol-check.py > <out> | committed at source commit | Summary: audit-01.md:124-131. Point-in-time protocol receipt. |
+| `checks/code/adv/gen3-1/kappa_out.txt` | Git blob `3bc8146ef042` at `2b52b432fe59`; AC cold storage PENDING | 19,235 | `7a79244ede202917ba9ed6d230c69bc43cfbc802309d117c7ea4cf422fffe287` | `2b52b432fe59` | python checks/code/adv/gen3-1/curve_kappa_adv.py > kappa_out.txt (inferred; seed 20261101) | committed at source commit | Summary: checks/adversarial-gen3-1.md:59; ideas/candidates.md:260.  |
+| `checks/code/decisive/gen1-3/T1_T3.out` | Git blob `45b4edf52a5a` at `2b52b432fe59`; AC cold storage PENDING | 29,935 | `853414ed9fb65eef13e7bb94948112db63571d452b037387f2db4f310a8184e0` | `2b52b432fe59` | python run_T1_T3.py (in checks/code/decisive/gen1-3/, about 351 s) | committed at source commit | Summary: checks/decisive-gen1-3.md:35-59; theory programme-ideas-claude-N02. MEASURED; values vary with BLAS. |
+| `sources/campaign-inputs/provenance.json` | Git blob `9de4517747a0` at `2b52b432fe59`; AC cold storage PENDING | 75,429 | `6e711d8238923349904b7e99d802eefe17ddcd12fba45e549dad05b7b8263349` | `2b52b432fe59` | python topics/programme-ideas-20261031/sources/campaign-inputs/provenance.py <input mirror> (mirror not in repository; not rerunnable) | committed at source commit | Summary: sources/campaign-inputs/README.md:5-20; COLD_STORAGE.md:70. Provenance of 164 mirror files (159 Git blobs). |
+
+`<out>`, `<work>`, `<deps>` and `<flint>` stand for scratch paths. Never write regenerated output over committed files.
+
+**Retrieval**
+
+```sh
+python tools/cold_storage.py verify  programme-ideas-20261031   # every entry against its Git object
+python tools/cold_storage.py restore programme-ideas-20261031   # put the files back in place, then run the recorded checkers
+python tools/cold_storage.py clean   programme-ideas-20261031   # remove the restored copies again
+python tools/cold_storage.py export  programme-ideas-20261031 --dest C:\Users\andreyac\Downloads\padua\cold_storage
+```
+
+These commands need a full clone. In a shallow clone, first run `git fetch origin 2b52b432fe59c9a50aef9deebe5152c5d6874465`.
+
+**Retention**
+
+Permanent, with AC as custodian. The Git history copy lasts as long as history is not rewritten. The AC copy is created by `export`; commit its receipt hash here when that is done.

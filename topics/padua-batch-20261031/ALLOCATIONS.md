@@ -13,7 +13,7 @@ Full ledgers and four registries checked at main
 `9f0c7710abd19ee5a0d61bce6384e7a399e838d2`. All closed PRs returned were merged;
 no missing retired reservation was found. The MZ topic appeared between the
 initial and final scan; the superseded recommendation was never reserved.
-[Complete scan and file identities](../padua-lanczos-drift-20261101/allocation-scan.json); reservation first published in `6920ba632843597c37e1493d077c1df2e89f54cb`; copy pinned at [2d20672](https://github.com/aacchhee/padua_research/blob/2d20672f62e0130d2adbe104af6e5ee9d05d20af/topics/padua-lanczos-drift-20261101/allocation-scan.json).
+[Complete scan and file identities](../padua-lanczos-drift-20261101/COLD_STORAGE.md); reservation first published in `6920ba632843597c37e1493d077c1df2e89f54cb`; copy pinned at [2d20672](https://github.com/aacchhee/padua_research/blob/2d20672f62e0130d2adbe104af6e5ee9d05d20af/topics/padua-lanczos-drift-20261101/allocation-scan.json).
 
 | Namespace | Reserved range | Count | Estimated needs + permanent headroom |
 |---|---|---:|---|

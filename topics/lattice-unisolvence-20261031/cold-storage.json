@@ -1,0 +1,244 @@
+{
+ "format": "padua-cold-storage-v1",
+ "slug": "lattice-unisolvence-20261031",
+ "source_commit": "2b52b432fe59c9a50aef9deebe5152c5d6874465",
+ "threshold_bytes": 16384,
+ "policy": "AC 2026-11-02: large regenerable outputs are not stored at the branch head; all code and short summaries stay. Each file is retrievable byte-exactly from Git history by its blob id; delivery to AC Padua cold storage is pending.",
+ "delivery_to_AC_cold_storage": "PENDING (AC runs: python tools/cold_storage.py export lattice-unisolvence-20261031 --dest C:\\Users\\andreyac\\Downloads\\padua\\cold_storage)",
+ "topic_note": "All generators are committed under tracks/lattice-unisolvence/code (c0_catalogue, c1_mod4, c1_stability, c1_extension, c3_rank, c3_structure, c3_obstructions, c3_lebesgue, c3_records, prepare_evidence, verify_artifacts). Producer commands: directions/C0/rounds.md:14, directions/C1/rounds.md:24-32, directions/C3/evidence.md:9-29; independent reruns: independent/commands.md:25-35. Restore before running verify_artifacts.py, protocol/check_protocol.py, independent/reconstruct_*.py, claude-audit/{rect_check,cert_D,cert_D_construct,certs_AB,nine}.py or the C3 pipeline (C3 scripts read C0/catalogue.json and C3/ranks.json). Small committed summaries: C0/count-result.json, C1/symbolic.json, C1/gram.json, C3/lowdegree.json, C3/artifact-manifest.json, independent/*-reconstruction.json and comparison receipts. The earlier lattice-evidence.zip (COLD_STORAGE.md above) remains as recorded.",
+ "retained_above_threshold": [
+  {
+   "path": "topics/lattice-unisolvence-20261031/provisional-id-map.json",
+   "bytes": 19769,
+   "reason": "registry input read by scripts in this and other topics (check-response-01.py, response-review/check_response.py, programme-ideas allocation scripts); hand-authored, not generated output"
+  }
+ ],
+ "entries": [
+  {
+   "path": "topics/lattice-unisolvence-20261031/audit-targets.json",
+   "bytes": 52772,
+   "sha256": "6bb1791c0b53d9962fe5d3f3180847788cfd85466d5ab6eb9404ff88941dd46e",
+   "git_blob": "d0488f3157baf95231a0ad09bfad0e6295bcaddb",
+   "generating_command": "python tracks/lattice-unisolvence/code/prepare_evidence.py (source_head ad40c38f; 204 identities)",
+   "summary": "manifest-check.json (checked 204, no failures); COLD_STORAGE.md 'Committed output and identities'",
+   "notes": "Generated integrity manifest; read by verify_artifacts.py and protocol/check_protocol.py."
+  },
+  {
+   "path": "topics/lattice-unisolvence-20261031/claude-audit/outputs/indep_ranks.json",
+   "bytes": 142972,
+   "sha256": "8e1bb0f6f124df9e2ff17299776f37ad3f279c87dcbf09fbb3988635993866a0",
+   "git_blob": "6e5a7ed8e7020ab12a3ba2714d4633b5346b8fdd",
+   "generating_command": "python topics/lattice-unisolvence-20261031/claude-audit/indep_c0_c3.py",
+   "summary": "claude-audit/outputs/indep_c0_c3.stdout; audit-01.md:38-40",
+   "notes": "Auditor independent rank table: 364 reps, 142 full / 222 deficient."
+  },
+  {
+   "path": "topics/lattice-unisolvence-20261031/directions/C0/catalogue.json",
+   "bytes": 203368,
+   "sha256": "21cd7610051d7f51e8578051da164f73ef112d9081765cea7156b26f01441430",
+   "git_blob": "9f8490412f76976866c692bb02b0f77b8976a865",
+   "generating_command": "python tracks/lattice-unisolvence/code/c0_catalogue.py --output-dir <dir> (stdlib, deterministic)",
+   "summary": "directions/C0/count-result.json; directions/C0/rounds.md:14-33; tracks/lattice-unisolvence/theory/c0-catalogue.md",
+   "notes": "5061 canonical rows, 451 admitted (39 d2 + 412 d3); input of the C3 pipeline."
+  },
+  {
+   "path": "topics/lattice-unisolvence-20261031/directions/C0/count-trials.json",
+   "bytes": 168359,
+   "sha256": "8d9d213e0725e6cc8d32b53fd71ea5220678fcb99dec0e22cd6149b8ca37b0c9",
+   "git_blob": "10fa9a834300a568800e864a6894e7cbe1d355a6",
+   "generating_command": "same run as directions/C0/catalogue.json",
+   "summary": "directions/C0/count-result.json; rounds.md:33,42; theory c0-catalogue.md, c0-density.md",
+   "notes": "5061 keyed trial rows."
+  },
+  {
+   "path": "topics/lattice-unisolvence-20261031/directions/C1/extension.json",
+   "bytes": 18244,
+   "sha256": "0b7dd941ebd269eef37daa98259e784872af08ceccce6522035b472691c04948",
+   "git_blob": "618c27ebd6d533598b36dfbc8045181dc3793c99",
+   "generating_command": "OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python tracks/lattice-unisolvence/code/c1_extension.py --output <out>",
+   "summary": "theory c1-finite-evidence.md (PD-T089) lines 14-15; directions/C1/extension.md",
+   "notes": ""
+  },
+  {
+   "path": "topics/lattice-unisolvence-20261031/directions/C1/results.json",
+   "bytes": 44013,
+   "sha256": "e2576de67528fefae7c04d3f1dfe8f7d0626bb0cd0518a6295d9223bb27d00c9",
+   "git_blob": "4bedfa256576b4628d730f020fca2cab7ce24bbf",
+   "generating_command": "python tracks/lattice-unisolvence/code/c1_mod4.py --output <out>",
+   "summary": "theory c1-finite-evidence.md (PD-T089); c1-counts.md:37; directions/C1/rounds.md",
+   "notes": "counts n1..8 = 3,6,10,16,21,28,36,46."
+  },
+  {
+   "path": "topics/lattice-unisolvence-20261031/directions/C1/stability.json",
+   "bytes": 29012,
+   "sha256": "35b3ce51f4671be608fe898733987ede2e103ab5740f10d919143be64e5969fb",
+   "git_blob": "8ce07103e5d549a19fb9886cef4ad51cef46de25",
+   "generating_command": "OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python tracks/lattice-unisolvence/code/c1_stability.py --output <out> (2 BLAS threads required)",
+   "summary": "theory c1-finite-evidence.md:14; directions/C1/rounds.md; audit-01.md F3",
+   "notes": "With 1 thread two n=22 rows differ (claude-audit/reruns/compare-1thread.txt)."
+  },
+  {
+   "path": "topics/lattice-unisolvence-20261031/directions/C3/lebesgue.json",
+   "bytes": 69136,
+   "sha256": "ee98828d9fe4b790c02059a60e00bacddcd9bceb835d90706c03cfb03bedb3a0",
+   "git_blob": "57515e9a384589099dd4139280b67da9df2e9730",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python tracks/lattice-unisolvence/code/c3_lebesgue.py <C3/ranks.json> <C0/catalogue.json> --output <out>",
+   "summary": "theory c3-chebyshev-observations.md (best sampled Lambda table); directions/C3/evidence.md:17",
+   "notes": ""
+  },
+  {
+   "path": "topics/lattice-unisolvence-20261031/directions/C3/obstructions.json",
+   "bytes": 139840,
+   "sha256": "d61b0a60f1b99aad93b96514ef78f05f5e1542514d6db7756fbd916a54a76def",
+   "git_blob": "2367f1e1e7cb9119594c453cab8c2da157bb6c0e",
+   "generating_command": "python tracks/lattice-unisolvence/code/c3_obstructions.py <C3/ranks.json> <C3/structure.json> --output <out>",
+   "summary": "theory c3-deficiency-observations.md:19, c3-rectangle-observations.md:27; directions/C3/evidence.md:21-23",
+   "notes": ""
+  },
+  {
+   "path": "topics/lattice-unisolvence-20261031/directions/C3/pattern-outcomes.tsv",
+   "bytes": 109800,
+   "sha256": "f3cccddff5e60a12fdb1cad4e51ca8cc6fd237b53dfc626ae6121d97ba645c8b",
+   "git_blob": "c26c2ce693c81484fe21d6a2ea8dc78281e27c63",
+   "generating_command": "python tracks/lattice-unisolvence/code/c3_records.py",
+   "summary": "theory c3-rank-observations.md:36; directions/C3/evidence.md:31",
+   "notes": "Derived index of 412 rows; no result depends on it."
+  },
+  {
+   "path": "topics/lattice-unisolvence-20261031/directions/C3/ranks.json",
+   "bytes": 535224,
+   "sha256": "560471d0053fef785bcee9c64f1b7fe9a384e24c0c74ef3d4cd58b9d6c703130",
+   "git_blob": "5408f15dd2970392485456bf40a2e2d7f35a8fdb",
+   "generating_command": "python tracks/lattice-unisolvence/code/c3_rank.py <C0/catalogue.json> --output <out> (about 12 s, deterministic seeds)",
+   "summary": "theory c3-rank-observations.md (PD-T092); directions/C3/evidence.md:9-11; audit-01.md:39",
+   "notes": "412 sources -> 364 reps, 2184 modular matrices; main C3 input."
+  },
+  {
+   "path": "topics/lattice-unisolvence-20261031/directions/C3/structure.json",
+   "bytes": 39828,
+   "sha256": "d5c34e03d7c62a0f0f63470a742ff1e6b26f4dd774bb1c916e6ebee1416144be",
+   "git_blob": "68f47e579a4a169b4053f8dddb441387b017df2b",
+   "generating_command": "python tracks/lattice-unisolvence/code/c3_structure.py <C3/ranks.json> --output <out>",
+   "summary": "theory c3-deficiency-observations.md:19, c3-n1-mixed-axis-obstruction.md; directions/C3/evidence.md:13-15",
+   "notes": ""
+  },
+  {
+   "path": "topics/lattice-unisolvence-20261031/independent/audit-targets.json",
+   "bytes": 31492,
+   "sha256": "8ac5c8556d98f7c00a82aa2c6a55faeaa7edf0ea95e1e532c5f6952327f5ef1f",
+   "git_blob": "0b4842fa06c5b615050e16bb8f1895535a20b2ba",
+   "generating_command": "none committed (independent reviewer's inline script)",
+   "summary": "independent/report.md:11",
+   "notes": "Independent integrity manifest (84 developer + 42 independent files)."
+  },
+  {
+   "path": "topics/lattice-unisolvence-20261031/independent/c0-rerun/catalogue.json",
+   "bytes": 203368,
+   "sha256": "21cd7610051d7f51e8578051da164f73ef112d9081765cea7156b26f01441430",
+   "git_blob": "9f8490412f76976866c692bb02b0f77b8976a865",
+   "generating_command": "python tracks/lattice-unisolvence/code/c0_catalogue.py --output-dir <dir>",
+   "summary": "independent/commands.md:44 (byte-identical to developer output)",
+   "notes": "Same Git blob as directions/C0/catalogue.json."
+  },
+  {
+   "path": "topics/lattice-unisolvence-20261031/independent/c0-rerun/count-trials.json",
+   "bytes": 168359,
+   "sha256": "8d9d213e0725e6cc8d32b53fd71ea5220678fcb99dec0e22cd6149b8ca37b0c9",
+   "git_blob": "10fa9a834300a568800e864a6894e7cbe1d355a6",
+   "generating_command": "same run as independent/c0-rerun/catalogue.json",
+   "summary": "independent/commands.md:44",
+   "notes": "Same Git blob as directions/C0/count-trials.json."
+  },
+  {
+   "path": "topics/lattice-unisolvence-20261031/independent/c1-extension-rerun.json",
+   "bytes": 18243,
+   "sha256": "487878fcb02aed7232847361a457fde0bb606b71de4d0077d4c0bc22e6abc75e",
+   "git_blob": "42cd3375cd154309297043fb34676be0365f973c",
+   "generating_command": "OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python tracks/lattice-unisolvence/code/c1_extension.py --output <out>",
+   "summary": "independent/commands.md:44; independent/c1-extension-comparison.json",
+   "notes": ""
+  },
+  {
+   "path": "topics/lattice-unisolvence-20261031/independent/c1-rerun.json",
+   "bytes": 44015,
+   "sha256": "0275afeb6d6f4def48200911b58fc17e2d8331f6686c37684966abd264a42247",
+   "git_blob": "cb8e00fd0a1310e0842b2727406361c49f614d62",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python tracks/lattice-unisolvence/code/c1_mod4.py --output <out>",
+   "summary": "independent/commands.md:44; independent/numerical-rerun-comparison.json",
+   "notes": ""
+  },
+  {
+   "path": "topics/lattice-unisolvence-20261031/independent/c1-stability-rerun.json",
+   "bytes": 29003,
+   "sha256": "b0ec03829631a2da48d8e09b4625c183281019156e19d7afe6aa8db140a90fcf",
+   "git_blob": "269b21b89b0ee11bb817e553d8f085042d7bfcc0",
+   "generating_command": "OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python tracks/lattice-unisolvence/code/c1_stability.py --output <out>",
+   "summary": "independent/commands.md:44",
+   "notes": ""
+  },
+  {
+   "path": "topics/lattice-unisolvence-20261031/independent/c1-stability-rerun.log",
+   "bytes": 20377,
+   "sha256": "e4194bec66261a7a0f7ca1c058b8407d4ee863a58615db516b1a7fb395d4aeb4",
+   "git_blob": "baaec160459c64c79619e0c32186a25883a7bc82",
+   "generating_command": "stdout of the c1_stability.py rerun",
+   "summary": "independent/c1-stability-rerun.json (cold); independent/commands.md:41",
+   "notes": "Duplicate of the rerun JSON content."
+  },
+  {
+   "path": "topics/lattice-unisolvence-20261031/independent/c3-lebesgue-rerun.json",
+   "bytes": 69143,
+   "sha256": "4ddecacce07f85d61c78b444333b6658aeff4ca2528da3f49b80ccf46fea3546",
+   "git_blob": "f28d42612ad7b9e16256c20834c30dcad755618d",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python tracks/lattice-unisolvence/code/c3_lebesgue.py <C3/ranks.json> <C0/catalogue.json> --output <out>",
+   "summary": "independent/commands.md:44; independent/report.md",
+   "notes": ""
+  },
+  {
+   "path": "topics/lattice-unisolvence-20261031/independent/c3-obstructions-rerun.json",
+   "bytes": 139847,
+   "sha256": "7aa20154d9f681d66d991cc88dae65632059d6d9250d58070a4432a96269c5df",
+   "git_blob": "4279cd910982d8212146621cf8c79ffb334458e7",
+   "generating_command": "python tracks/lattice-unisolvence/code/c3_obstructions.py <C3/ranks.json> <C3/structure.json> --output <out>",
+   "summary": "independent/commands.md:44; independent/report.md",
+   "notes": ""
+  },
+  {
+   "path": "topics/lattice-unisolvence-20261031/independent/c3-rerun.json",
+   "bytes": 535225,
+   "sha256": "b2010a96cee00ad546ebd5bd2075f894f081e8bf616d2ef0b13d1aa711b88b24",
+   "git_blob": "dbdb6cd0c96b7ee4c001aa012069d67a084ae9fe",
+   "generating_command": "python tracks/lattice-unisolvence/code/c3_rank.py <C0/catalogue.json> --output <out>",
+   "summary": "independent/commands.md:44; independent/report.md 'C3 ranks'",
+   "notes": "All 2,184 modular ranks reproduced."
+  },
+  {
+   "path": "topics/lattice-unisolvence-20261031/independent/c3-structure-rerun.json",
+   "bytes": 39835,
+   "sha256": "10a589590b2cb409b0d54c18dab2f2f37f11edfe28ae9a82bb2e5d692555e2d5",
+   "git_blob": "5c5d13a15f83a6a193cfa3185ad701ea749cd7ab",
+   "generating_command": "python tracks/lattice-unisolvence/code/c3_structure.py <C3/ranks.json> --output <out>",
+   "summary": "independent/commands.md:44; independent/report.md",
+   "notes": ""
+  },
+  {
+   "path": "topics/lattice-unisolvence-20261031/protocol/snapshot.json",
+   "bytes": 32598,
+   "sha256": "062ad98a6cb689c6b78126f50e76763c0d1e0b21f9398227899d27755b171d3b",
+   "git_blob": "35cc2caf0d056dba1857e395482a2621618cb73c",
+   "generating_command": "python topics/lattice-unisolvence-20261031/protocol/check_protocol.py > <out> (at head 61dcbe5e)",
+   "summary": "protocol/report.md:9-27",
+   "notes": "Historical protocol snapshot; not reproducible at later heads."
+  },
+  {
+   "path": "topics/lattice-unisolvence-20261031/response-review/final-snapshot.json",
+   "bytes": 33606,
+   "sha256": "70fc6c04920857193f9cb4507e43f43a38a101fefd575a0ed9f766ef5840e07e",
+   "git_blob": "040975bbd5fb02dc17b9476f9c9f2cbeda587960",
+   "generating_command": "python topics/lattice-unisolvence-20261031/response-review/check_response.py (stdout) plus reviewer-added fields",
+   "summary": "response-review/report.md:9-22; response-review/developer-check-rerun.json",
+   "notes": "Historical review snapshot."
+  }
+ ],
+ "total_bytes": 2917679
+}

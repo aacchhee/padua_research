@@ -19,7 +19,7 @@ The remaining corrections below qualify a conditional bound, a zero-operator quo
 | L3 residual conventions | LF-M1 resolved; T302(b1)–(b4), explicit N309 radius and rate propagations verified; clean in scope | [L3 conventions](audit-02/L3-conventions.md) |
 | L3 formula, splits and scope | LF-M2, LC-M1/LC-L1 and report-scope findings resolved; new T318 confirmed, T316/T319 remain OPEN; one new evidence-label correction | [L3 formula/scope](audit-02/L3-formula-scope.md) |
 | L5 | M1/M2/L1/L2 resolved; paired statistics and interpretation verified; clean in scope | [L5](audit-02/L5.md) |
-| Protocol and impact map | Declared theory inventory complete and correct; frozen evidence preserved; preparation obligations explicitly deferred | [protocol](audit-02/protocol.md), [impact result](audit-02/impact-check.json) |
+| Protocol and impact map | Declared theory inventory complete and correct; frozen evidence preserved; preparation obligations explicitly deferred | [protocol](audit-02/protocol.md), [impact result](COLD_STORAGE.md) |
 
 The direction reports contain item-by-item dispositions, proof reconstructions, actual commands, source/output identities and coverage limits. Original broad numerical/certificate suites are reused only where their code/evidence bytes are unchanged. The prior full IDEAS/INDEX reads are reused after exact identity checks; no fresh literature-priority claim is made.
 

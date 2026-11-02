@@ -34,7 +34,7 @@ Direct arXiv2605.23299v1 Table3 readings give candidate corrections23/39→25/41
 
 Every consequential mathematical exact/interval run has an actual different-agent execution with its own output. A5 additionally has independent certificate verifiers. A4's three finite supporting computations each have two executions; B3's section identities and whole-interval signs have two. B1 is a structural proof for arbitrary fixed admissible data; no mathematical software run or sampled rank is a premise.
 
-All essential accepted certificates/global pairs and degree-eight lower-bound witnesses are committed. [Manifest](evidence-manifest.json), [independent-check index](independent-checks.md) and case receipts give identities and commands. Generated evidence stays within1,000,000 bytes/file and5,000,000 total. Temporary redundant copies are identified in `outputs/local_untracked_retention.json`, without a cold-storage claim.
+All essential accepted certificates/global pairs and degree-eight lower-bound witnesses are committed. [Manifest](COLD_STORAGE.md), [independent-check index](independent-checks.md) and case receipts give identities and commands. Generated evidence stays within1,000,000 bytes/file and5,000,000 total. Temporary redundant copies are identified in `outputs/local_untracked_retention.json`, without a cold-storage claim.
 
 Remaining scope: exact n8 completeness/global; all-n full-square A4 and historical/global runner-up identification; B1's other pole classes, individual stored taper parameters and numerical stability. B3 refutes its specified count, not other F or reference existence. Optional B4/B7 were not developed.
 

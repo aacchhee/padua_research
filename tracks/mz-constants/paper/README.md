@@ -52,7 +52,7 @@ The original v1 artifact SHA-256 identities and byte sizes are recorded in `manu
 
 ## Numerical provenance
 
-Tables are transcribed, rounded, and checked against [the bounded reproduction](../evidence/reproduction.json) and [its durable measured record](../theory/reproduced-spectra.md). The manuscript worker reviewed these existing outputs; it did not rerun the numerical suite and does not call that review an independent execution.
+Tables are transcribed, rounded, and checked against [the bounded reproduction](../COLD_STORAGE.md) and [its durable measured record](../theory/reproduced-spectra.md). The manuscript worker reviewed these existing outputs; it did not rerun the numerical suite and does not call that review an independent execution.
 
 The producer command, already executed by the reproduction developer and separately replayed by Astra, is:
 

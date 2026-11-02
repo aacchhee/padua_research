@@ -34,7 +34,7 @@ python topics/padua-lanczos-drift-20261101/checks/audit-02/Protocol/check_text.p
 ```
 
 Both executed successfully. Evidence:
-[artifact receipt](../../evidence/audit-02-protocol-artifacts.json) and
+[artifact receipt](../../COLD_STORAGE.md) and
 [text/anchor receipt](../../evidence/audit-02-protocol-text.json).
 The latter records hashes for the rules, handoff, original audit, response and
 developer reports, administrative files and selected source files read.

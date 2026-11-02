@@ -124,3 +124,40 @@ Download the ZIP, extract its top-level folder into AC's chosen directory, and r
 ## Retention and retrieval
 
 Retain until AC directs otherwise; no expiry or deletion is authorized. AC/orchestrator is the custodian. Retrieve cloud-local files by the actual paths above while the workspace exists, or use the delivered ZIP. If the cloud workspace disappears before download, committed code/receipts support regeneration, while uncommitted original notes require the original upload/archive. Delivery at the Windows destination must be confirmed separately; no outside-network archival transfer was claimed.
+
+## Repository cleanup 2026-11-02 — large regenerable outputs moved off the branch head
+
+AC (2026-11-02): "I do not think that we have to store large outputs that can be regenerated. Make sure that all needed code is in the repo, some short summaries are stored and expunge the large data files (cold storage)"; "18 mb per repo is too much."
+
+Every generated data file of 16 KiB or more in this directory left the branch head: 2 files, 42,142 bytes. Machine manifest: [`cold-storage.json`](cold-storage.json). Tool: `tools/cold_storage.py`.
+
+These files have **not been delivered to AC's Padua cold storage yet** (PENDING). Until then, the only stored copy is Git history, pinned by blob id at the pushed main commit `2b52b432fe59c9a50aef9deebe5152c5d6874465`. Each file's SHA-256 is recorded alongside, so the bytes can be verified.
+
+Code, records, and small receipts and summaries stay. The topic's existing cold-storage-manifest.json and COLD_STORAGE.md stay. Generators/checkers committed: claude-audit/{check_padua,gf}.py, directions/U1/exact_checker.py, independent/u1/check_symbolic_summary.py.
+
+Files of 16 KiB or more kept on purpose (not generated output):
+- `independent/u0/evidence-manifest.json` (18,171 bytes): cold-storage-manifest.json delegates its command records to this file.
+- `integration-impact.json` (27,700 bytes): hand-produced integration record read by independent/protocol/check_integration.py; not generated output.
+- `response-01-impact.json` (20,313 bytes): hand-produced administrative impact record; not generated output.
+
+| File | Actual storage path | Bytes | SHA-256 | Source commit | Frozen generating command | Script blob IDs | Checker command / result |
+|---|---|---|---|---|---|---|---|
+| `claude-audit/outputs/padua.json` | Git blob `2ae2cc1f9ad3` at `2b52b432fe59`; AC cold storage PENDING | 23,494 | `2e7ba470954580d29fe3e8b6635cf830a3dbc445712ec0fd20cc5ad98519c146` | `2b52b432fe59` | python3 -I topics/charter-unisolvence-20261031/claude-audit/check_padua.py <out> (about 43 s) | committed at source commit | Summary: audit-01.md:110-118; claude-audit/MANIFEST.md:11. ALL PASS for PD-T004..T008, PD-T010 reproduction. |
+| `independent/u1/producer-final-symbolic.json` | Git blob `a500d4d58c88` at `2b52b432fe59`; AC cold storage PENDING | 18,648 | `df44efc4f554d14f825f6ec42eb917cd73b1e515e0da55193b8db52034728342` | `2b52b432fe59` | python3 topics/charter-unisolvence-20261031/directions/U1/exact_checker.py --symbolic --output <out> | committed at source commit | Summary: directions/U1/symbolic-factors.md; independent/u1/symbolic-summary-output.txt (PASS all 6); independent/u1/evidence.md:68-78. Byte-identical to independent-U1/producer-final-symbolic.json already in cold-storage-manifest.json; read by independent/u1/check_symbolic_summary.py. |
+
+`<out>`, `<work>`, `<deps>` and `<flint>` stand for scratch paths. Never write regenerated output over committed files.
+
+**Retrieval**
+
+```sh
+python tools/cold_storage.py verify  charter-unisolvence-20261031   # every entry against its Git object
+python tools/cold_storage.py restore charter-unisolvence-20261031   # put the files back in place, then run the recorded checkers
+python tools/cold_storage.py clean   charter-unisolvence-20261031   # remove the restored copies again
+python tools/cold_storage.py export  charter-unisolvence-20261031 --dest C:\Users\andreyac\Downloads\padua\cold_storage
+```
+
+These commands need a full clone. In a shallow clone, first run `git fetch origin 2b52b432fe59c9a50aef9deebe5152c5d6874465`.
+
+**Retention**
+
+Permanent, with AC as custodian. The Git history copy lasts as long as history is not rewritten. The AC copy is created by `export`; commit its receipt hash here when that is done.

@@ -3,7 +3,7 @@
 Rules `3a9063b84d14ca0a5998378371e27643fde50a29`.
 Interpretation: independently audit PD-T?bivariate-lanczos-claude-107, -109–115 and PD-N?bivariate-lanczos-claude-101–106, with special attention to the exact certificate, product/derivative mathematics, empirical scope and mixed statuses.
 
-Auditor: Codex subagent assigned `gpt-6-astra`, xhigh; the runtime does not independently expose model/effort metadata. Date: 2026-11-01 UTC. Developer: Claude. Candidate supplied by the orchestrator: `5ccfac223f466a9105450365d8c6c3781ff7d922`; rules/working head supplied: `3a9063b84d14ca0a5998378371e27643fde50a29`, branch `claude/bivariate-lanczos-20261031`. Only the orchestrator controls Git. This subagent performed no Git operations and changed no developer file. Exact inspected source identities, evidence hashes, sizes and commands are in [L1-later/manifest.json](L1-later/manifest.json).
+Auditor: Codex subagent assigned `gpt-6-astra`, xhigh; the runtime does not independently expose model/effort metadata. Date: 2026-11-01 UTC. Developer: Claude. Candidate supplied by the orchestrator: `5ccfac223f466a9105450365d8c6c3781ff7d922`; rules/working head supplied: `3a9063b84d14ca0a5998378371e27643fde50a29`, branch `claude/bivariate-lanczos-20261031`. Only the orchestrator controls Git. This subagent performed no Git operations and changed no developer file. Exact inspected source identities, evidence hashes, sizes and commands are in [L1-later/manifest.json](../COLD_STORAGE.md).
 
 ## Scoped verdict
 

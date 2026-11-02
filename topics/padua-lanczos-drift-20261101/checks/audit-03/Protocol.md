@@ -37,7 +37,7 @@ python -B topics/padua-lanczos-drift-20261101/checks/audit-03/Protocol/check.py 
 
 The independent standard-library checker uses read-only `git show`, `diff`
 and `ls-tree`; no checkout, worktree, merge, branch or index mutation occurs.
-The [receipt](../../evidence/audit-03-protocol-checks.json) contains exact
+The [receipt](../../COLD_STORAGE.md) contains exact
 read-input identities, the checker hash, Python version and per-check results.
 All final mechanical checks pass. An initial checker iteration used an overly
 narrow literal wording test and rejected a valid directory link; those two

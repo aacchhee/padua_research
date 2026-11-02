@@ -1,0 +1,47 @@
+{
+ "format": "padua-cold-storage-v1",
+ "slug": "charter-unisolvence-20261031",
+ "source_commit": "2b52b432fe59c9a50aef9deebe5152c5d6874465",
+ "threshold_bytes": 16384,
+ "policy": "AC 2026-11-02: large regenerable outputs are not stored at the branch head; all code and short summaries stay. Each file is retrievable byte-exactly from Git history by its blob id; delivery to AC Padua cold storage is pending.",
+ "delivery_to_AC_cold_storage": "PENDING (AC runs: python tools/cold_storage.py export charter-unisolvence-20261031 --dest C:\\Users\\andreyac\\Downloads\\padua\\cold_storage)",
+ "topic_note": "The topic's existing cold-storage-manifest.json and COLD_STORAGE.md stay. Generators/checkers committed: claude-audit/{check_padua,gf}.py, directions/U1/exact_checker.py, independent/u1/check_symbolic_summary.py.",
+ "retained_above_threshold": [
+  {
+   "path": "topics/charter-unisolvence-20261031/independent/u0/evidence-manifest.json",
+   "bytes": 18171,
+   "reason": "cold-storage-manifest.json delegates its command records to this file"
+  },
+  {
+   "path": "topics/charter-unisolvence-20261031/integration-impact.json",
+   "bytes": 27700,
+   "reason": "hand-produced integration record read by independent/protocol/check_integration.py; not generated output"
+  },
+  {
+   "path": "topics/charter-unisolvence-20261031/response-01-impact.json",
+   "bytes": 20313,
+   "reason": "hand-produced administrative impact record; not generated output"
+  }
+ ],
+ "entries": [
+  {
+   "path": "topics/charter-unisolvence-20261031/claude-audit/outputs/padua.json",
+   "bytes": 23494,
+   "sha256": "2e7ba470954580d29fe3e8b6635cf830a3dbc445712ec0fd20cc5ad98519c146",
+   "git_blob": "2ae2cc1f9ad33d6f12b0c9caa8eb091a41c4d7cd",
+   "generating_command": "python3 -I topics/charter-unisolvence-20261031/claude-audit/check_padua.py <out> (about 43 s)",
+   "summary": "audit-01.md:110-118; claude-audit/MANIFEST.md:11",
+   "notes": "ALL PASS for PD-T004..T008, PD-T010 reproduction."
+  },
+  {
+   "path": "topics/charter-unisolvence-20261031/independent/u1/producer-final-symbolic.json",
+   "bytes": 18648,
+   "sha256": "df44efc4f554d14f825f6ec42eb917cd73b1e515e0da55193b8db52034728342",
+   "git_blob": "a500d4d58c88943087f4cbae6d0f82e3e86ab59b",
+   "generating_command": "python3 topics/charter-unisolvence-20261031/directions/U1/exact_checker.py --symbolic --output <out>",
+   "summary": "directions/U1/symbolic-factors.md; independent/u1/symbolic-summary-output.txt (PASS all 6); independent/u1/evidence.md:68-78",
+   "notes": "Byte-identical to independent-U1/producer-final-symbolic.json already in cold-storage-manifest.json; read by independent/u1/check_symbolic_summary.py."
+  }
+ ],
+ "total_bytes": 42142
+}

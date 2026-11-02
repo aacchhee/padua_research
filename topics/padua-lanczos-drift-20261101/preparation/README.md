@@ -26,7 +26,7 @@ The complete provisional-to-final map is [final-id-map.json](final-id-map.json).
 
 ## What was done
 
-All of this was done by [prepare.py](prepare.py) (receipt: [prepare-receipt.json](prepare-receipt.json)), except the declared administrative edits listed in the last item.
+All of this was done by [prepare.py](prepare.py) (receipt: [prepare-receipt.json](../COLD_STORAGE.md)), except the declared administrative edits listed in the last item.
 
 1. **Literal approved proposals.** All 15 OLD/NEW blocks of `proposed-record-changes.md`, plus the Block-7 History anchor, were applied in file order, each OLD unique. The targets are:
    - PD-T055, PD-T054, PD-T056;
