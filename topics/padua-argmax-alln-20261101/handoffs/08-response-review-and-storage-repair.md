@@ -1,6 +1,6 @@
 # Handoff08 — response protocol review and Claude cold-storage repair
 
-- Status: open
+- Status: superseded by09: AC selected Codex high continuation; Codex performs storage development, while independent Claude review remains pending
 - Previous handoff:07-response-and-cold-storage-audit.md
 - Next agent/model/effort: Claude, Opus5.5 high
 - Roles: independent protocol reviewer of Codex response-01; developer responding to Codex's separate cold-storage audit. Do not conflate the two roles or approve your own storage repair.

@@ -184,6 +184,12 @@ AC authorizes at most7 rounds each in direction1 (defect domination), then2 (uni
 - Actual/configured model settings: Sol high primary and record worker; distinct Astra high cold-storage audit and supplementary response-code check; runtime serving metadata unavailable. Future commit trailers record these roles; old trailers/history are preserved. Claude's prior clone/gmail identity is distinct from this connector's account noreply identity.
 - Overall stage remains WORK for Claude storage repair and response protocol review. Commit outputs first, then change only07's status and add [handoff08](handoffs/08-response-review-and-storage-repair.md) with the real response-output SHA. Draft PR17 stays unready; only AC merges.
 
+## 2026-11-02 — Codex high continuation / storage-development redirection
+
+- Rules reread at93169ab6e193fbbef91af16914cd1191e7564420 through the GitHub connector; main remains2b52b432fe59c9a50aef9deebe5152c5d6874465. The branch is unchanged since the previous step. AC selected Codex gpt-6.1-sol high continuation; [08](handoffs/08-response-review-and-storage-repair.md) is superseded by [09](handoffs/09-codex-storage-repair.md) for Codex storage development. Independent Claude review of Codex response-01 and the new repair remains pending; no self-approval is inferred.
+- New isolated workspace /workspace/padua-storage-fix-20261102 reuses674files byte-exactly at the pinned tree, with original workspaces preserved. Actual commit/tree/blob identities were imported through the connector; no network CLI. Model requested/configured Sol high; runtime serving metadata not separately exposed.
+- Scope is the already identified CS1/CS2/CS3 tool/provenance repair and active historical-manifest distinction. No mathematics, scientific status/predicate/certificate, final ID or shared scientific registry changes. PR18 is read only for integration context; its branch is outside this task.
+
 ## Current work after response-01 / cold-storage audit
 
 - Claude protocol review of response-01, with the documentation/citation/provenance fixes and unchanged mathematical scopes.

@@ -1,6 +1,6 @@
 {
   "accepted": true,
-  "manifest_sha256": "0a89b790bbe304b2bdbcaa7922293b942735bb6a79b346d62cb8995efb623f7d",
+  "manifest_sha256": "4a0988fe689a3e3f834eab4ed216ab5c9f07d6930ca5532ac2b26f4bc46cd626",
   "files": 450,
   "generated_bytes": 692082,
   "largest_generated_file": 16344,
@@ -18,16 +18,5 @@
     ],
     "method": "Read-only Git source-path/blob/SHA256 verification; no restore, clean or export."
   },
-  "limitations": "Integrity only; mathematical predicates/replays are separate. Frozen audit scratch formats are opaque hashed bytes. No archive export to AC storage is claimed.",
-  "independent_plain_check": {
-    "actor": "Codex distinct Astra high protocol auditor; serving metadata unexposed",
-    "command": "python -B topics/padua-argmax-alln-20261101/code/part3/check_evidence.py",
-    "returncode": 0,
-    "checker_sha256": "797506c7edbdc648ca9c4bddc32f9c8fa1779b9bb16e1c23dd401171770aed71",
-    "manifest_sha256": "0a89b790bbe304b2bdbcaa7922293b942735bb6a79b346d62cb8995efb623f7d",
-    "monitored_files_unchanged": 452,
-    "stdout_sha256": "6af7432f4441a76c904cc1f2655b5e0c549e3a7ed4796c83426063b317c71a95",
-    "stderr_bytes": 0,
-    "scope": "Separate final plain execution after preserving the late log-only9a69c9b update; no covered review file changed."
-  }
+  "limitations": "Integrity only; mathematical predicates/replays are separate. Frozen audit scratch formats are opaque hashed bytes. No archive export to AC storage is claimed."
 }
