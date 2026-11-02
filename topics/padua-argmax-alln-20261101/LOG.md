@@ -162,6 +162,13 @@ AC authorizes at most7 rounds each in direction1 (defect domination), then2 (uni
   - Delivery to AC's `Downloads\padua\cold_storage\padua-argmax-alln-20261101\` is PENDING; run `export` there.
   - Git history is not rewritten, so the clone's object store does not shrink.
 
+- **Tool update after handoff 07.** Commit `b8fbb5c` changed only `tools/cold_storage.py`, to match [PR #18](https://github.com/aacchhee/padua_research/pull/18), the repository-wide cleanup on `claude/cold-storage-20261102`:
+  - a manifest may now live in any directory;
+  - files named `cold-storage*` are never moved.
+
+  This topic's manifest is unchanged, and `verify` still accepts all 36 entries. Handoff 07's cold-storage audit covers the tool at the branch head.
+- **Merge order.** Recommended: PR #18 first, then this branch merges main. `tools/cold_storage.py` is identical on both branches.
+
 ## Runs / work still needed after gated completion
 
 - Required Claude Opus5.5 xhigh audit under handoff05, including original part3 and all nine gated rounds; complete state/IDEAS read and explicit dispositions required. Supplementary Astra checks do not replace it.
