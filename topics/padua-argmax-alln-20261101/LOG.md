@@ -87,6 +87,12 @@ AC authorizes at most7 rounds each in direction1 (defect domination), then2 (uni
 - Round3 derives and independently checks explicit local constants242000/2048/640 on radius1/64. They yield only an unusable local scale exp(10^7), without global phase-entry constants. STOP applies to that coarse quantitative implementation. A distinct adaptive finite geometry candidate justifies GO to round4, pre-registered before execution. [Round ledger](gated/ROUND_LEDGER.md).
 - New files remain topic-only; no new final IDs or shared registry mutations. Directions2 and3 have not started.
 
+### Gated rounds4–5 checkpoint
+
+- Both finite geometry rounds independently pass. Adaptive positive rectangles give projected defect≥1/1536 outside4π/n corner boxes. Sparse parity-correct middle mesh lines handle the first1–4 endpoint cells and give Δ≥1/4096 near every odd coset except an actual non-node corner.
+- The resulting qualitative theorem confines all global maximizers to actual non-node corner phases with uniformly vanishing scaled distance. This does not prove exact corner equality or an effective threshold; the global phase-entry/effectivity frontier remains OPEN.
+- GO to one bounded exact primitive row-resummation repair in round6, with a registered STOP if no sharper uniform bound emerges. No direction2/3 work has started. [Round ledger](gated/ROUND_LEDGER.md).
+
 - Six prescribed independent replays: COMPLETE at the setup checkpoint; see independent-checks-claude-records.md. Standalone maj.py whole-square scans remain outside that replay's coverage.
 - Claude Opus5.5 xhigh topic audit under handoff03; complete state/IDEAS read required because the branch carries mechanisms and scoped negative content.
 - General-beta series, center-minimality, P2 primitive estimates, P3–P5 and a rigorous effective threshold remain unresolved. Further development follows audit/disposition; no additional finite discovery is implicitly claimed.

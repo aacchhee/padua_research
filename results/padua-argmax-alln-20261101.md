@@ -25,3 +25,7 @@ Next: Claude Opus5.5 xhigh audit, then dispositions/PR preparation. No final IDs
 Audit handoff03 is superseded by04 at AC's request for at most7 rounds each, sequentially in directions1,2,3. The pending Claude audit is retained; the new development must also be audited.
 
 Direction1 rounds1–3 supply new PROVED development lemmas: two-phase primitive bounds, pairwise cancellation uniform in the unused coordinate, a positive compact-complement gap, an explicit finite defect block and exact endpoint cusp. The explicit local constants are independently checked but quantitatively unusable; this implementation is stopped. Round4 tests a distinct adaptive geometry reduction to shrinking corner boxes. Directions2/3 not yet started. See [ledger](../topics/padua-argmax-alln-20261101/gated/ROUND_LEDGER.md). All-degree PD-T099 remains OPEN; finite certified range remains2–16.
+
+Round4 now independently passes: the finite projected-defect bound1/1536 confines every sufficiently-large-degree global maximizer to a4π/n angle-corner square, with a non-effective threshold. Round5 tests the remaining first-cell lattice geometry. This is localization, not a corner-maximality proof.
+
+Round5 now independently passes: Δ≥1/4096 near every noncorner odd coset, and all global maximizers approach the two actual non-node corners with scaled distance tending uniformly to zero. Exact corner equality and effective thresholds remain OPEN. Round6 is a bounded exact-row primitive repair; directions2/3 still not started.
