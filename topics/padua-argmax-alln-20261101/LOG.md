@@ -81,6 +81,12 @@ AC authorizes at most7 rounds each in direction1 (defect domination), then2 (uni
 - GO to round2 is based on these new analytic lemmas, not only the screen. [Round2 contract](gated/d1/r02-contract.md) requests a compact-complement assembly and a quantitative diagnosis. No direction2/3 development has started.
 - The860,021-byte full numerical payload is committed losslessly as81,843-byte gzip; see [packaging](gated/PACKAGING.md). Working uncompressed output was moved to/tmp after replay. No historical evidence is deleted or overwritten. Prior main evidence manifest remains the frozen previous-step record until final campaign integration refresh; WORK checkpoints are not claims that the previous manifest includes new campaign files.
 
+### Gated rounds2–3 checkpoint
+
+- Round2 proves a uniform positive gap outside fixed corner neighborhoods and an explicit finite projected-defect rectangle. The latter removes the need for a defect-convergence modulus in that comparison. The exact primitive endpoint cusp has its own durable06, and the purely quadratic/coset-maximality obstruction its scoped PD-N home. Independent Astra review accepted all stated scopes and closed the linear-plus-rho^(3/2) wording correction.
+- Round3 derives and independently checks explicit local constants242000/2048/640 on radius1/64. They yield only an unusable local scale exp(10^7), without global phase-entry constants. STOP applies to that coarse quantitative implementation. A distinct adaptive finite geometry candidate justifies GO to round4, pre-registered before execution. [Round ledger](gated/ROUND_LEDGER.md).
+- New files remain topic-only; no new final IDs or shared registry mutations. Directions2 and3 have not started.
+
 - Six prescribed independent replays: COMPLETE at the setup checkpoint; see independent-checks-claude-records.md. Standalone maj.py whole-square scans remain outside that replay's coverage.
 - Claude Opus5.5 xhigh topic audit under handoff03; complete state/IDEAS read required because the branch carries mechanisms and scoped negative content.
 - General-beta series, center-minimality, P2 primitive estimates, P3–P5 and a rigorous effective threshold remain unresolved. Further development follows audit/disposition; no additional finite discovery is implicitly claimed.

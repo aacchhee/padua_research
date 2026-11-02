@@ -239,3 +239,18 @@ Actual checks: read the round-2 contract and round-1 check receipt; split
 and reread the two theorem records; derive (D1)–(D8) algebraically; inspect
 the retained pre-simplification sign-change estimates. Independent review
 of these new diagnostic calculations remains needed.
+
+## Dated supersession — direction 1 round 3, 2026-11-02
+
+The orchestrator's independently checked
+[explicit finite projected-defect block](../../theory/gated-codex-05-finite-projected-defect.md)
+supersedes the missing defect-modulus item 3 and the corresponding later
+bottleneck wording above. It gives a positive finite-degree bound on an
+explicit phase radius; no convergence error modulus is needed for that
+comparison. The old diagnosis is retained as history.
+
+The separate [round-3 constant calculation](r03-explicit-local.md) addresses
+the sharpened local estimate on an explicit radius. Its constants give an
+unusable local degree scale, while quantitative global phase entry remains
+unresolved. Its STOP recommendation concerns that coarse quantitative
+implementation only; the orchestrator controls the direction-level gate.

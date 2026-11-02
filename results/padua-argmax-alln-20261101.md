@@ -19,3 +19,9 @@ All record IDs have prefix `PD-T?argmax-alln-`, except N01 with `PD-N?`.
 PD-T099 remains **OPEN**. P0 and a positive-gap compact form of P1 are closed. P2 primitive bounds, P3 corner neighborhoods, P4 interior, P5 strips and P6 effective threshold remain OPEN. The general-β alternating series and center-minimality proof remain unfinished.
 
 Next: Claude Opus5.5 xhigh audit, then dispositions/PR preparation. No final IDs or shared scientific registries changed.
+
+## AC-authorized gated continuation — WORK
+
+Audit handoff03 is superseded by04 at AC's request for at most7 rounds each, sequentially in directions1,2,3. The pending Claude audit is retained; the new development must also be audited.
+
+Direction1 rounds1–3 supply new PROVED development lemmas: two-phase primitive bounds, pairwise cancellation uniform in the unused coordinate, a positive compact-complement gap, an explicit finite defect block and exact endpoint cusp. The explicit local constants are independently checked but quantitatively unusable; this implementation is stopped. Round4 tests a distinct adaptive geometry reduction to shrinking corner boxes. Directions2/3 not yet started. See [ledger](../topics/padua-argmax-alln-20261101/gated/ROUND_LEDGER.md). All-degree PD-T099 remains OPEN; finite certified range remains2–16.
