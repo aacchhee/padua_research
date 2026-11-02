@@ -1,10 +1,10 @@
 # padua-argmax-alln-20261101 — current results
 
 Branch: `claude/padua-argmax-alln-20261101`; [draft PR17](https://github.com/aacchhee/padua_research/pull/17).
-2026-11-02. Codex gpt-6.1-sol xhigh development; distinct Astra supplementary checks. Required Claude Opus5.5 xhigh audit **PENDING**. All IDs provisional; [permanent reservations](../topics/padua-argmax-alln-20261101/ALLOCATIONS.md).
+2026-11-02. Codex gpt-6.1-sol xhigh development; distinct Astra supplementary checks. Claude Opus 5.5 xhigh [audit-01](../topics/padua-argmax-alln-20261101/audit-01.md) **accepts every PROVED/MEASURED claim at its stated scope** (no status change); findings F1–F15 await a Codex response. All IDs provisional; [permanent reservations](../topics/padua-argmax-alln-20261101/ALLOCATIONS.md).
 
 - **PROVED, gated-codex-15:** for every sufficiently large degree, the global maximizers are exactly the two physical nonnode corners. The existential threshold N_* is non-effective. [Eventual theorem](../topics/padua-argmax-alln-20261101/theory/gated-codex-15-eventual-global-argmax.md).
-- **PROVED, codex-02/03/07/08:** complete finite global argmax certification for every2<=n<=16, with exact/outward arithmetic and independent replay. No new degree>=17 global certificate was run.
+- **PROVED, codex-02/03/07/08:** finite global argmax certification for n=2 and every 8<=n<=16 (with the inherited accepted n=3–7 records PD-T162/166/169/174/177 this covers every 2<=n<=16), with exact/outward arithmetic and independent replay. No new degree>=17 global certificate was run.
 - **PROVED, gated-codex-01–11:** two-phase primitive bounds, finite pairwise cancellation and uniform actual-corner phase localization. Exact primitive cusp has its own theorem06 and scoped negative N01; it does not refute lambda's corner argmax.
 - **PROVED, gated-codex-12/13:** exact row identities and physical corner first variation/aggregate Taylor upper model. Sharper row partial-sum bounds and uniform slope/energy premises remain OPEN.
 - **PROVED, gated-codex-14:** reflection-first local bound with237000rho²log(n+1) remainder; strict local descent on physical radius2^-17/n² under coarse sufficient logn>=10^7. [Local theorem](../topics/padua-argmax-alln-20261101/theory/gated-codex-14-reflection-first-corner-bound.md).
@@ -17,4 +17,4 @@ All-degree **PD-T099 remains OPEN**. Finite2–16 and eventualn>=N_* do not cove
 
 The authorized gated campaign completed sequentially with **6 / 2 / 1 rounds** in directions1 / 2 / 3; unused quota was not spent without a concrete viable next lemma. All failed variants and resumption conditions are retained in [campaign report](../topics/padua-argmax-alln-20261101/gated/REPORT.md), [candidate records](../topics/padua-argmax-alln-20261101/gated/CANDIDATES.md) and [round ledger](../topics/padua-argmax-alln-20261101/gated/ROUND_LEDGER.md).
 
-Next: required Claude audit of part3 plus all gated development, then dispositions and final-ID/PR preparation. No final IDs assigned or shared scientific registries changed. [Topic report](../topics/padua-argmax-alln-20261101/report.md).
+Next: Codex response to audit-01 findings (handoff06), a Claude protocol check of the response, then final-ID/PR preparation. No final IDs assigned or shared scientific registries changed. [Topic report](../topics/padua-argmax-alln-20261101/report.md).

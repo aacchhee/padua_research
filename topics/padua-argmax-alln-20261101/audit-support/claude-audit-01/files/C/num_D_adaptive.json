@@ -1,0 +1,49 @@
+{
+ "kind": "MEASURED float64 check of theorem 08 under its hypotheses",
+ "results": [
+  {
+   "n": 48,
+   "min_Qv": 0.5638024778448681,
+   "min_Qh": 0.98145663439864,
+   "nV": 113,
+   "nH": 147,
+   "min_endpoint_dist_tested_V_over_4pi/n": 1.2156821121113677,
+   "min_endpoint_dist_tested_H_over_4pi/n": 1.000176293989579,
+   "bound": 0.0006510416666666666,
+   "pass": true
+  },
+  {
+   "n": 49,
+   "min_Qv": 0.563561712117409,
+   "min_Qh": 0.9817845350419042,
+   "nV": 108,
+   "nH": 115,
+   "min_endpoint_dist_tested_V_over_4pi/n": 1.2156133845775652,
+   "min_endpoint_dist_tested_H_over_4pi/n": 1.000716352815513,
+   "bound": 0.0006510416666666666,
+   "pass": true
+  },
+  {
+   "n": 64,
+   "min_Qv": 0.5599523275235543,
+   "min_Qh": 0.9849487875013765,
+   "nV": 107,
+   "nH": 127,
+   "min_endpoint_dist_tested_V_over_4pi/n": 1.2236922456625534,
+   "min_endpoint_dist_tested_H_over_4pi/n": 1.000029786606117,
+   "bound": 0.0006510416666666666,
+   "pass": true
+  },
+  {
+   "n": 65,
+   "min_Qv": 0.5579724136259056,
+   "min_Qh": 0.9850922180889607,
+   "nV": 98,
+   "nH": 132,
+   "min_endpoint_dist_tested_V_over_4pi/n": 1.2242277282036473,
+   "min_endpoint_dist_tested_H_over_4pi/n": 1.000409986544618,
+   "bound": 0.0006510416666666666,
+   "pass": true
+  }
+ ]
+}

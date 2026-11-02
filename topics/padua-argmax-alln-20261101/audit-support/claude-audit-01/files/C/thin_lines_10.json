@@ -1,0 +1,89 @@
+{
+ "kind": "MEASURED float64 check of theorem 10 thin-line constructions (ratios: >=1 means bound holds)",
+ "results": [
+  {
+   "n": 48,
+   "min_point_defect_ratio": 12.751764061053054,
+   "min_numerator": 0.12315119349083761,
+   "min_selected_Q": 57.6844552414739,
+   "max_span_times_m_or_n": 24.876812194958728,
+   "band_fail": 0,
+   "parity_fail": 0,
+   "range_fail": 0,
+   "cases": 272,
+   "pass": true
+  },
+  {
+   "n": 49,
+   "min_point_defect_ratio": 14.517761131901237,
+   "min_numerator": 0.14988106177749255,
+   "min_selected_Q": 53.06804682810483,
+   "max_span_times_m_or_n": 24.899255725472027,
+   "band_fail": 0,
+   "parity_fail": 0,
+   "range_fail": 0,
+   "cases": 272,
+   "pass": true
+  },
+  {
+   "n": 50,
+   "min_point_defect_ratio": 14.207317210761474,
+   "min_numerator": 0.144080558231803,
+   "min_selected_Q": 57.609158226182124,
+   "max_span_times_m_or_n": 24.899255725472038,
+   "band_fail": 0,
+   "parity_fail": 0,
+   "range_fail": 0,
+   "cases": 272,
+   "pass": true
+  },
+  {
+   "n": 51,
+   "min_point_defect_ratio": 13.91009315221118,
+   "min_numerator": 0.13860313319811698,
+   "min_selected_Q": 55.12863419166907,
+   "max_span_times_m_or_n": 24.91916989365408,
+   "band_fail": 0,
+   "parity_fail": 0,
+   "range_fail": 0,
+   "cases": 272,
+   "pass": true
+  },
+  {
+   "n": 64,
+   "min_point_defect_ratio": 15.654093112215202,
+   "min_numerator": 0.1579971829834774,
+   "min_selected_Q": 63.581723613247725,
+   "max_span_times_m_or_n": 25.00221001356207,
+   "band_fail": 0,
+   "parity_fail": 0,
+   "range_fail": 0,
+   "cases": 272,
+   "pass": true
+  },
+  {
+   "n": 97,
+   "min_point_defect_ratio": 19.611436978067477,
+   "min_numerator": 0.21249948296773044,
+   "min_selected_Q": 66.37922753539435,
+   "max_span_times_m_or_n": 25.09491680939229,
+   "band_fail": 0,
+   "parity_fail": 0,
+   "range_fail": 0,
+   "cases": 272,
+   "pass": true
+  },
+  {
+   "n": 128,
+   "min_point_defect_ratio": 20.330079472710956,
+   "min_numerator": 0.21808389900503258,
+   "min_selected_Q": 72.45196258507735,
+   "max_span_times_m_or_n": 25.123487260045927,
+   "band_fail": 0,
+   "parity_fail": 0,
+   "range_fail": 0,
+   "cases": 272,
+   "pass": true
+  }
+ ]
+}

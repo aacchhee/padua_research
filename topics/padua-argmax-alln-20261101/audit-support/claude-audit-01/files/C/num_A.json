@@ -1,0 +1,51 @@
+{
+ "kind": "auditor independent MEASURED float64/mpmath checks; not proofs",
+ "numpy": "2.5.3",
+ "mpmath": "1.3.0",
+ "seed": 20261102,
+ "A_kernel_identity": [
+  {
+   "n": 2,
+   "vandermonde_cond": 2.1213203435596433,
+   "rhombus_vs_divdiff": 2.886579864025407e-15,
+   "lambda_vandermonde_vs_kernel": 8.881784197001252e-16
+  },
+  {
+   "n": 3,
+   "vandermonde_cond": 2.7169370464568976,
+   "rhombus_vs_divdiff": 2.6645352591003757e-15,
+   "lambda_vandermonde_vs_kernel": 1.3322676295501878e-15
+  },
+  {
+   "n": 4,
+   "vandermonde_cond": 2.9983916265214385,
+   "rhombus_vs_divdiff": 7.549516567451064e-15,
+   "lambda_vandermonde_vs_kernel": 3.1086244689504383e-15
+  },
+  {
+   "n": 5,
+   "vandermonde_cond": 2.8672176881481914,
+   "rhombus_vs_divdiff": 8.43769498715119e-15,
+   "lambda_vandermonde_vs_kernel": 3.1086244689504383e-15
+  },
+  {
+   "n": 8,
+   "vandermonde_cond": 2.6820887982953217,
+   "rhombus_vs_divdiff": 1.9984014443252818e-14,
+   "lambda_vandermonde_vs_kernel": 4.440892098500626e-15
+  },
+  {
+   "n": 11,
+   "vandermonde_cond": 2.5686685887901484,
+   "rhombus_vs_divdiff": 2.220446049250313e-14,
+   "lambda_vandermonde_vs_kernel": 7.549516567451064e-15
+  },
+  {
+   "n": 16,
+   "vandermonde_cond": 2.468149010702429,
+   "rhombus_vs_divdiff": 5.240252676230739e-14,
+   "lambda_vandermonde_vs_kernel": 2.930988785010413e-14
+  }
+ ],
+ "seconds_A": 0.2
+}

@@ -1,0 +1,2 @@
+/tmp/claude-0/-home-user-padua-research/efec27fb-ede8-54e4-a9c8-12b8741cbbba/scratchpad/audit01/B/scripts/gv_gh_check.py:47: IntegrationWarning: The integral is probably divergent, or slowly convergent.
+  return integrate.quad(fun, lo, hi, limit=200, points=[(lo+hi)/2])[0]

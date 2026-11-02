@@ -1,0 +1,2 @@
+{"n": 200, "Lambda_c": 19.72538137798779, "grid_direct_check_maxabs": 2.682298827494378e-13, "grid_max_minus_Lc": 1.7763568394002505e-14, "grid_argmax": [0.0, 3.141592653589793], "max_over_cands_minus_Lc": 7.460698725481052e-14, "gap_Lc_minus_best_noncorner": 0.5524273052503084, "secs": 286.2635591030121} best_noncorner_at [3.141592653589793, 1.578613270939696]
+wrote /tmp/claude-0/-home-user-padua-research/efec27fb-ede8-54e4-a9c8-12b8741cbbba/scratchpad/audit01/D/t3_global_200_K2.json

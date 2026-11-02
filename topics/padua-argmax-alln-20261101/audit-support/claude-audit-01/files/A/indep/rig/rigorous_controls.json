@@ -1,0 +1,180 @@
+{
+ "authentic_n9": {
+  "accepted": true,
+  "failed_leaves": 0,
+  "kraft": "1",
+  "prefix_free": true,
+  "corner_cover": [
+   [
+    -1,
+    -1
+   ],
+   [
+    -1,
+    1
+   ]
+  ],
+  "nonnode": [
+   [
+    -1,
+    -1
+   ],
+   [
+    -1,
+    1
+   ]
+  ]
+ },
+ "missing_leaf_n9": {
+  "accepted": false,
+  "failed_leaves": 0,
+  "kraft": "31/32",
+  "prefix_free": true,
+  "corner_cover": [
+   [
+    -1,
+    -1
+   ],
+   [
+    -1,
+    1
+   ]
+  ],
+  "nonnode": [
+   [
+    -1,
+    -1
+   ],
+   [
+    -1,
+    1
+   ]
+  ]
+ },
+ "duplicate_leaf_n9": {
+  "accepted": false,
+  "failed_leaves": 0,
+  "kraft": "65/64",
+  "prefix_free": true,
+  "corner_cover": [
+   [
+    -1,
+    -1
+   ],
+   [
+    -1,
+    1
+   ]
+  ],
+  "nonnode": [
+   [
+    -1,
+    -1
+   ],
+   [
+    -1,
+    1
+   ]
+  ]
+ },
+ "coarsened_parent_00000_n9": {
+  "accepted": false,
+  "failed_leaves": 1,
+  "kraft": "1",
+  "prefix_free": true,
+  "corner_cover": [
+   [
+    -1,
+    1
+   ]
+  ],
+  "nonnode": [
+   [
+    -1,
+    -1
+   ],
+   [
+    -1,
+    1
+   ]
+  ]
+ },
+ "odd_checkerboard_nodes_n9": {
+  "accepted": false,
+  "failed_leaves": 2,
+  "kraft": "1",
+  "prefix_free": true,
+  "corner_cover": [
+   [
+    1,
+    -1
+   ],
+   [
+    1,
+    1
+   ]
+  ],
+  "nonnode": [
+   [
+    1,
+    -1
+   ],
+   [
+    1,
+    1
+   ]
+  ]
+ },
+ "threshold_minus_half_percent_n16": {
+  "accepted": false,
+  "failed_leaves": 2,
+  "kraft": "1",
+  "prefix_free": true,
+  "corner_cover": [
+   [
+    -1,
+    -1
+   ],
+   [
+    1,
+    -1
+   ]
+  ],
+  "nonnode": [
+   [
+    -1,
+    -1
+   ],
+   [
+    1,
+    -1
+   ]
+  ]
+ },
+ "authentic_n16": {
+  "accepted": true,
+  "failed_leaves": 0,
+  "kraft": "1",
+  "prefix_free": true,
+  "corner_cover": [
+   [
+    -1,
+    -1
+   ],
+   [
+    1,
+    -1
+   ]
+  ],
+  "nonnode": [
+   [
+    -1,
+    -1
+   ],
+   [
+    1,
+    -1
+   ]
+  ]
+ }
+}

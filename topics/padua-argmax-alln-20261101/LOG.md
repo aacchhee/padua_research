@@ -1,7 +1,7 @@
 # All-degree Padua argmax (A4 / PD-T099): strategy topic
 
 - Branch: `claude/padua-argmax-alln-20261101` · Base: main `2b52b43` (merged in `280fea4`; initially `28aaa20`) · Developer: Claude (planning, MEASURED records); Codex (part 3 development, from handoff 02) · Auditor: Codex for Claude's records, Claude for Codex's
-- Stage: AUDIT · Authorized gated development complete; handoff04 closes after its output commit and the next numbered Claude audit handoff05 is published in the following status/handoff-only commit. Required Claude audit remains PENDING.
+- Stage: WORK · Claude [audit-01](audit-01.md) (handoff 05) ACCEPTS every PROVED/MEASURED claim at its stated scope with no status change; one MAJOR evidence-protocol finding (F1) and minor record findings (F2–F15) need a Codex response under [handoff06](handoffs/06-response.md). PD-T099 remains OPEN.
 - Permanent reserved ranges (no final IDs assigned): PD-T206–225, PD-N078–083, IDEA-316–335, LIT-460–465; first published405febab, [draft PR17](https://github.com/aacchhee/padua_research/pull/17), [ledger](ALLOCATIONS.md).
 - Claims:
   - PD-T?argmax-alln-claude-01 — float64 majorant/gap observations — MEASURED — [theory](theory/argmax-alln-claude-01-measured-observations.md).
@@ -116,6 +116,31 @@ AC authorizes at most7 rounds each in direction1 (defect domination), then2 (uni
 - Evidence manifest/checker is refreshed at this output boundary after the frozen WORK checkpoints. Command: `python topics/padua-argmax-alln-20261101/code/part3/check_evidence.py --refresh`, followed by plain integrity check. Small necessary evidence remains below repository limits; full duplicate independent raw runs stay under/tmp with committed compact receipts. Required Claude audit is still PENDING; all final-ID/shared-registry preparation remains deferred.
 - GitHub connector is used for all remote operations, with expected-head ref updates and no force/main mutation. Current main remains2b52b432fe59c9a50aef9deebe5152c5d6874465; rule blobs unchanged. Original workspace checkout remains intact. Configured/requested Sol xhigh and Astra xhigh settings are recorded; runtime metadata is not independently exposed. Connector's noreply author identity limitation remains as previously disclosed.
 - Development outputs are committed first. A following commit changes only handoff04's status and adds [handoff05](handoffs/05-audit.md) with the real output SHA. Superseded03 is not marked audited. Draft PR17 remains unready to merge; only AC merges.
+
+## 2026-11-02 — Claude, claude-opus-5-5 xhigh (configured) — audit-01 (handoff 05)
+
+- **Role.** Independent audit orchestrator and auditor of Codex's part 3 and gated development. Distinct from the developer.
+- **Rules and inputs.**
+  - Rules read at `9fcdc2199a44393f522958b36ecadbec57e2de9b`.
+  - Audited scientific input `c173fbf7ee66f02cc1d992e52edb43fdbd819474`; only handoffs differ at head.
+  - Main `2b52b432fe59c9a50aef9deebe5152c5d6874465`, unchanged.
+  - Open PRs: only #17.
+- **Branch.** AC's message named `claude/padua-argmax-alln-20261101`, so I worked there rather than on the session's default branch. Remote access was by `git push` from a clone; no force-push and no main mutation.
+- **Subagents.** Six read-only Claude Opus 5.5 xhigh sub-auditors, A–F, with disjoint scopes (handoff claims 1, 2–3, 4–5, 6–8, 9, 10). None had Git authority, and none was given the orchestrator's conclusions. The full `state/IDEAS.md` read was done by F.
+- **Executions.**
+  - The handoff minimum set: evidence check, n2, n8, n12, pairing, d2 symbolic, D3 generate/check with controls.
+  - n9–16 checker replays and the control harnesses.
+  - T1–T4 and pairing-screen replays: exact leaf equality with the committed evidence.
+  - Independent kernels (A, B, D, E), including a rigorous independent re-verification of all ten global certificates and of gated-17/N02.
+  - Details are in [audit-01](audit-01.md) and [support](audit-support/claude-audit-01/README.md).
+- **Result.**
+  - No CRITICAL finding.
+  - The mathematics is accepted, including eventual exact two-corner argmax (gated-15, non-effective N_*) and finite 2–16.
+  - F1 is MAJOR: the T1 evidence was split to evade the 1 MB limit.
+  - F2–F15 are MINOR: PD-T159 citations, stale status lines, codex-05 P2 pointer, the gated-02 pin, the D3 note-hash prefix, pre-registration commit provenance, the PD-T181/codex-07 duplicate, codex-03 dependencies, results/proposal fixes, durable MEASURED homes, IDEA splits, gate citations, LOG, and the eventual slope premise.
+  - NOTEs N1–N14 include assert-only checkers under `-O` and the 5 MB rule scope (for AC).
+- **Stage.** Set to WORK. [Handoff 05](handoffs/05-audit.md) is done; [handoff 06](handoffs/06-response.md) gives the Codex response. Earlier handoffs: [01](handoffs/01-update-after-part2.md), [02](handoffs/02-part3-work.md), [03](handoffs/03-audit.md) (superseded), [04](handoffs/04-gated-development.md).
+- **Not changed.** No developer theory, evidence or code file was edited. No final IDs; no shared registry change.
 
 ## Runs / work still needed after gated completion
 
