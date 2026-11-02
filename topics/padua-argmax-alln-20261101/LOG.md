@@ -1,7 +1,7 @@
 # All-degree Padua argmax (A4 / PD-T099): strategy topic
 
 - Branch: `claude/padua-argmax-alln-20261101` · Base: main `2b52b43` (merged in `280fea4`; initially `28aaa20`) · Developer: Claude (planning, MEASURED records); Codex (part 3 development, from handoff 02) · Auditor: Codex for Claude's records, Claude for Codex's
-- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Continue claude/padua-argmax-alln-20261101.` · Next handoff: [handoffs/03-audit.md](handoffs/03-audit.md), published after the output commit.
+- Stage: WORK · Active: [handoff04](handoffs/04-gated-development.md), AC-authorized sequential gated development; previous audit remains PENDING.
 - Permanent reserved ranges (no final IDs assigned): PD-T206–225, PD-N078–083, IDEA-316–335, LIT-460–465; first published405febab, [draft PR17](https://github.com/aacchhee/padua_research/pull/17), [ledger](ALLOCATIONS.md).
 - Claims:
   - PD-T?argmax-alln-claude-01 — float64 majorant/gap observations — MEASURED — [theory](theory/argmax-alln-claude-01-measured-observations.md).
@@ -69,6 +69,10 @@
 - [report.md](report.md), [results](../../results/padua-argmax-alln-20261101.md), [evidence-manifest.json](evidence-manifest.json) and [literal shared proposals](proposed-record-changes.md) record the boundary. No final IDs assigned or shared registry changed. Stage AUDIT; [handoff03](handoffs/03-audit.md) is published in the following status-only/handoff commit after the scientific output SHA is known.
 
 ## Runs needed (updated during part 3)
+
+## AC-authorized gated continuation
+
+AC authorizes at most7 rounds each in direction1 (defect domination), then2 (uniform physical-coordinate corners), then3 (centreward edge comparison/horizontal primitive), continuing only on explicit positive gates. [Protocol](gated/PROTOCOL.md) registers the round/stop rules and direction1 round1 before execution. Rules reread at7d308b10d946b607ae0690454f6c0103690775a4; main remains2b52b432fe59c9a50aef9deebe5152c5d6874465. Role Codex orchestrator/developer, configured/requested Sol xhigh; exact-runtime metadata not independently exposed. Handoff03 is redirected to04, not approved or completed. Existing theory and audit records remain intact.
 
 - Six prescribed independent replays: COMPLETE at the setup checkpoint; see independent-checks-claude-records.md. Standalone maj.py whole-square scans remain outside that replay's coverage.
 - Claude Opus5.5 xhigh topic audit under handoff03; complete state/IDEAS read required because the branch carries mechanisms and scoped negative content.
