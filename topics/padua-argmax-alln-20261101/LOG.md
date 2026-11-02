@@ -74,6 +74,13 @@
 
 AC authorizes at most7 rounds each in direction1 (defect domination), then2 (uniform physical-coordinate corners), then3 (centreward edge comparison/horizontal primitive), continuing only on explicit positive gates. [Protocol](gated/PROTOCOL.md) registers the round/stop rules and direction1 round1 before execution. Rules reread at7d308b10d946b607ae0690454f6c0103690775a4; main remains2b52b432fe59c9a50aef9deebe5152c5d6874465. Role Codex orchestrator/developer, configured/requested Sol xhigh; exact-runtime metadata not independently exposed. Handoff03 is redirected to04, not approved or completed. Existing theory and audit records remain intact.
 
+### Gated direction1, round1 checkpoint
+
+- Sol xhigh mathematical worker wrote global/local two-phase primitive bounds, including a new square-root numerator-sign-change estimate and finite-sum collision control. Root wrote the pairwise projected-defect theorem, uniform in the unused macroscopic coordinate. Neither proof uses numerical agreement as a premise.
+- A distinct Sol xhigh worker executed the predeclared n16/32/64/128/256 phase and defect screen; all finite kill flags false. Astra xhigh independently reconstructed the analytic estimates and exactly replayed20,997 numeric and1,062 other raw JSON leaves (timing/argv and documented note-completion hash excluded). [Independent check](gated/checks/d1-r01.md).
+- GO to round2 is based on these new analytic lemmas, not only the screen. [Round2 contract](gated/d1/r02-contract.md) requests a compact-complement assembly and a quantitative diagnosis. No direction2/3 development has started.
+- The860,021-byte full numerical payload is committed losslessly as81,843-byte gzip; see [packaging](gated/PACKAGING.md). Working uncompressed output was moved to/tmp after replay. No historical evidence is deleted or overwritten. Prior main evidence manifest remains the frozen previous-step record until final campaign integration refresh; WORK checkpoints are not claims that the previous manifest includes new campaign files.
+
 - Six prescribed independent replays: COMPLETE at the setup checkpoint; see independent-checks-claude-records.md. Standalone maj.py whole-square scans remain outside that replay's coverage.
 - Claude Opus5.5 xhigh topic audit under handoff03; complete state/IDEAS read required because the branch carries mechanisms and scoped negative content.
 - General-beta series, center-minimality, P2 primitive estimates, P3–P5 and a rigorous effective threshold remain unresolved. Further development follows audit/disposition; no additional finite discovery is implicitly claimed.

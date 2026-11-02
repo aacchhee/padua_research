@@ -1,0 +1,94 @@
+{
+  "snapshot_head": "2dde541f1e5af239cae6e93e4438b9be89d15d87",
+  "scientific_input": "7d308b10d946b607ae0690454f6c0103690775a4",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "c44a76f138fce01f02c06753b22fbc83fd5c1ee701785d49ba17cef5f8eee05b",
+      "bytes": 3572
+    },
+    {
+      "path": "agents/WORKFLOW.md",
+      "sha256": "a8927be27a1fe8166e5bcf59c7da8e70618ae0a5f17d56131724baffdad49353",
+      "bytes": 26615
+    },
+    {
+      "path": "agents/codex/CODEX.md",
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+      "bytes": 4969
+    },
+    {
+      "path": "state/IDEAS.md",
+      "sha256": "40ec132f73e55f82944ae497d2405f345a9f251b99702055a2c7baec7a4426df",
+      "bytes": 189069
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/handoffs/04-gated-development.md",
+      "sha256": "dec860283f9b548c71c67722e1f8d923bc9f6d3bdbc1a1dcee305792053e27de",
+      "bytes": 1730
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/PROTOCOL.md",
+      "sha256": "dff0d96ed950559ebaf06f226eaea8cc389fa6202a56cf71b3145235024775ca",
+      "bytes": 3546
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/ideas.md",
+      "sha256": "290f14f087cd3a14715a991613e9685429d804a8bedb6ba4c9024e0b127d0a4c",
+      "bytes": 10718
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/ideas-codex-fallback.md",
+      "sha256": "94a29a32ef1a9035c141326f81b2e679745b6ae2bc2cc7c7eb4b85f9b42572b2",
+      "bytes": 10109
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/theory/argmax-alln-codex-04-vertical-compact-defect.md",
+      "sha256": "84c4b82e79041480fd9756f6d3b66c7119194c061cc0bdae472d16ce8d110bee",
+      "bytes": 8937
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/theory/argmax-alln-codex-05-horizontal-compact-defect.md",
+      "sha256": "21d65ed24a1d1358f33b12187ef7552490ea023ba58a592c8b365c96c4a9e654",
+      "bytes": 8433
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d1/r01-phase.md",
+      "sha256": "b83e6ad413c1951dec0d8b04cd278ba866026b45728ed8ca36fe65744d6e7e82",
+      "bytes": 17854
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/gated/d1_phase_r01.py",
+      "sha256": "adb3792a249aaf34b286e92936d846c9db1e23ab296e586463bf04d6d853d7ca",
+      "bytes": 2400
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/gated/d1_phase_r01_sanity.json",
+      "sha256": "d55db704251382e7f65f65acd62b08f01a509904c00266d89acc34c5ccc46297",
+      "bytes": 1256
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/preparation/ideas-registration.md",
+      "sha256": "9a7b74fa5ef44d3eefe92a069b394ce1ba284295a2b41f680c5fa4e8f2e9ed4a",
+      "bytes": 22973
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-74-global-edge-phase-localization.md",
+      "sha256": "d10b60390c39b2661493264facb89e6ee66e39c09114326bec89cbff5e159d7f",
+      "bytes": 9807
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-75-local-edge-phase-bound.md",
+      "sha256": "41d2a47053d804cb5d68fd7e085a0fa9170c04d0bfa6bac72393da6f683623cd",
+      "bytes": 9695
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-76-central-triangle-defect-stability.md",
+      "sha256": "761d5105b90311a48bf3e5d09ec6d92b56a61ef12b1eacb0e6ffe29ca3f7ccb7",
+      "bytes": 7901
+    }
+  ],
+  "command": "python topics/padua-argmax-alln-20261101/code/gated/d1_phase_r01.py > topics/padua-argmax-alln-20261101/outputs/gated/d1_phase_r01_sanity.json",
+  "independent_rerun": "not performed by this worker",
+  "retention": "small local working evidence; no cold-storage transfer performed"
+}

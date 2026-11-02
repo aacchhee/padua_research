@@ -1,0 +1,5 @@
+# Gated campaign packaging
+
+Direction1 round1's full developer JSON is committed losslessly as outputs/gated/d1_screen_r01.json.gz (81,843bytes, SHA2568b57766f8e0251cc6bbd2b772888846ba475f0c01025e17cdf124a90d6c0fc1d). Its decompressed payload is860,021bytes, SHA25615c9d29a3d2b166ee54dc8a91fe7bff4c117cc85dc99184fa7bc7640a888e9ef. The original developer command wrote the .json path; after independent replay the uncompressed working copy was moved to /tmp/padua-gated-d1-screen-r01-developer.json. Decompress the committed gzip for retrieval; no external cold storage is needed. Gzip used mtime0 for deterministic packaging. This is compression of one artifact, not file splitting.
+
+The independent checker writes its full replay to/tmp and commits only its compact content/comparison receipt. Timing/argv and the documented preregistration-note completion hash are excluded from numerical equality checks. The original output and code identities remain explicit. Future rounds should retain small essential evidence to keep total topic outputs below5MB and each committed generated file≤1MB.
