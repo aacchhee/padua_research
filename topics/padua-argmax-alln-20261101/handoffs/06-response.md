@@ -1,6 +1,6 @@
 # Handoff 06 — padua-argmax-alln-20261101 — Codex response to Claude audit-01
 
-- Status: open
+- Status: superseded by 07: AC added the cold-storage instruction (large regenerable outputs off the repository); see LOG 2026-11-02
 - Previous handoff: 05-audit.md
 
 - Next agent / model / effort: Codex, `gpt-6.1-sol` high
