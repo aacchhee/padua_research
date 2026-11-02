@@ -1,7 +1,7 @@
 # All-degree Padua argmax (A4 / PD-T099): strategy topic
 
 - Branch: `claude/padua-argmax-alln-20261101` · Base: main `2b52b43` (merged in `280fea4`; initially `28aaa20`) · Developer: Claude (planning, MEASURED records); Codex (part 3 development, from handoff 02) · Auditor: Codex for Claude's records, Claude for Codex's
-- Stage: WORK · Claude [audit-01](audit-01.md) (handoff 05) ACCEPTS every PROVED/MEASURED claim at its stated scope with no status change; one MAJOR evidence-protocol finding (F1) and minor record findings (F2–F15) need a Codex response under [handoff07](handoffs/07-response-and-cold-storage-audit.md) (06 superseded by AC's cold-storage instruction). Large outputs moved to [cold storage](COLD_STORAGE.md). PD-T099 remains OPEN.
+- Stage: PR (preparation) · Claude [response-review-01](response-review-01.md) ACCEPTS Codex response-01, and [audit-03](audit-03-storage-repair.md) finds CS1–CS3 RESOLVED, with one MINOR receipt-readback finding (S1) to fix before any delivery or purge relies on the receipt. Mathematics remains accepted by [audit-01](audit-01.md). PD-T099 remains OPEN. Next is PR preparation under [handoff 11](handoffs/11-pr-preparation.md).
 - Permanent reserved ranges (no final IDs assigned): PD-T206–225 (first405febab) and additional PD-T226–245 (first3aebb299), PD-N078–083, IDEA-316–335, LIT-460–465; [draft PR17](https://github.com/aacchhee/padua_research/pull/17), [ledger](ALLOCATIONS.md).
 - Claims:
   - PD-T?argmax-alln-claude-01 — float64 majorant/gap observations — MEASURED — [theory](theory/argmax-alln-claude-01-measured-observations.md).

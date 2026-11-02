@@ -1,7 +1,7 @@
 # padua-argmax-alln-20261101 — current results
 
 Branch: `claude/padua-argmax-alln-20261101`; [draft PR17](https://github.com/aacchhee/padua_research/pull/17).
-2026-11-02. Codex gpt-6.1-sol xhigh development; distinct Astra supplementary checks. Claude Opus 5.5 xhigh [audit-01](../topics/padua-argmax-alln-20261101/audit-01.md) **accepts every PROVED/MEASURED claim at its stated scope** (no status change); Codex response-01 addresses F1–F15; independent response/storage review remains. Current response: Codex gpt-6.1-sol high. All IDs provisional; [permanent reservations](../topics/padua-argmax-alln-20261101/ALLOCATIONS.md).
+2026-11-02. Codex gpt-6.1-sol xhigh development; distinct Astra supplementary checks. Claude Opus 5.5 xhigh [audit-01](../topics/padua-argmax-alln-20261101/audit-01.md) **accepts every PROVED/MEASURED claim at its stated scope** (no status change); Codex response-01 addresses F1–F15; Claude [response-review-01](../topics/padua-argmax-alln-20261101/response-review-01.md) accepts it, and [audit-03](../topics/padua-argmax-alln-20261101/audit-03-storage-repair.md) finds the storage repair CS1–CS3 resolved, with one minor receipt-readback item before any delivery or purge relies on it. Stage: PR preparation (handoff11). Current response: Codex gpt-6.1-sol high. All IDs provisional; [permanent reservations](../topics/padua-argmax-alln-20261101/ALLOCATIONS.md).
 
 - **PROVED, gated-codex-15:** for every sufficiently large degree, the global maximizers are exactly the two physical nonnode corners. The existential threshold N_* is non-effective. [Eventual theorem](../topics/padua-argmax-alln-20261101/theory/gated-codex-15-eventual-global-argmax.md).
 - **PROVED, codex-02/03/07/08:** finite global argmax certification for n=2 and every 8<=n<=16 (with the inherited accepted n=3–7 records PD-T162/166/169/174/177 this covers every 2<=n<=16), with exact/outward arithmetic and independent replay. No new degree>=17 global certificate was run.
@@ -22,3 +22,9 @@ Large regenerable outputs (36 files, 2.5 MB) are pinned in [cold storage](../top
 2026-11-02 continuation: AC selected Codex high. Handoff09 now assigns the pending storage-development repair to Codex; independent Claude review of the prior response and the new Codex repair remains pending. No mathematical result or status changes.
 
 Codex storage-development output: CS1/CS2/CS3 repair, source-pinned command metadata and explicit historical-manifest role; distinct Astra supplementary checks. POSIX/WSL supported, native Windows fails closed, quiescent storage/index required, foreign worktrees refused. All36archival identities unchanged; AC delivery PENDING. Handoff10 requests Claude Opus5.5 high review of both responses.
+
+2026-11-02, handoff 10 review (Claude Opus 5.5, high):
+- Codex response-01 is **ACCEPTED** ([response-review-01](../topics/padua-argmax-alln-20261101/response-review-01.md)). It makes no material scientific change.
+- The storage repair resolves CS1–CS3 ([audit-03](../topics/padua-argmax-alln-20261101/audit-03-storage-repair.md)). The independent adversarial tests and a byte-identical D3 E-P regeneration pass.
+- One minor item remains, S1: the export receipt does not yet read back the destination files. It must be fixed through PR #18 before any delivery or purge relies on the receipt.
+- Next is PR preparation (handoff 11). PD-T099 remains OPEN.
