@@ -40,7 +40,7 @@ Remaining scope: exact n8 completeness/global; all-n full-square A4 and historic
 
 Original pins: Part1 `a09d910ae7d5526b1e216066421a0bee7fc20da4`; programme `9bd14a6d2c4da69139a10107d8a787f2be0c5c9e`; current main `67bd07c0867d8d49eb104942237d7f51a7d9f77d` (merged PR15); rules adopted at `d8b878b348a94575e7753e5a756d969d41d5bca8`. The required Part1 dependency label “audit pending” is historical: Part1 audit accepted, dispositions completed and PR9 merged; Part2 audit-01 is accepted; response-01 records the minor dispositions.
 
-AC subsequently authorized final IDs and shared updates for PR12. PD-T156–197, PD-N072–073 and IDEA-286–311 are assigned; the approved source/registry/literature/results changes are applied. [Preparation](pr-prep.md) and [exact map](preparation/final-id-map.json) record scope and checks; the original literal proposals remain provenance. [LOG](LOG.md) preserves the original intended Windows entry as superseded history; it has been removed from active work and must not be written.
+AC subsequently authorized final IDs and shared updates for PR12. PD-T156–197, PD-N072–073 and IDEA-286–311 are assigned; the approved source/registry/literature/results changes are applied. [Preparation](pr-prep.md) and [exact map](COLD_STORAGE.md) record scope and checks; the original literal proposals remain provenance. [LOG](LOG.md) preserves the original intended Windows entry as superseded history; it has been removed from active work and must not be written.
 
 Next: AC review/squash merge, then Codex post-merge verification under handoff06. `Codex (gpt-6.1-sol medium): Continue codex/padua-proof-attempts-2-20261101.`
 

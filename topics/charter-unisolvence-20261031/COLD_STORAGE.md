@@ -4,7 +4,7 @@ Actual staging root: `/workspace/padua-cold/charter-unisolvence-20261031/`. AC's
 
 Portable handoff ZIP: `/workspace/padua-cold/charter-unisolvence-20261031-handoff.zip`. Bytes: 210015; SHA256 `fdcc1ce22b0addabee97d01dfcb2bdb18be5b340091fda0c52b1608014d32eb3`. It includes the original user archive, exact scientific outputs/receipts, helper code and a portable integrity manifest/checker. It is outside Git; the original notes remain outside the public repository.
 
-Full generator/source/blob/identity details: [cold-storage-manifest.json](cold-storage-manifest.json), SHA256 `bc519ed735cfccdb2102222be148556f19012acd6cdf3ed2bcc696257e00d13c`. Individual U0/U1 developer and independent manifests preserve their exact executed commands, seeds, environments and success records. Statements with source_commit=null are supplied/packaging receipts, not assertions of a scientific run at an invented revision. Source helper commit/blobs are recorded where applicable.
+Full generator/source/blob/identity details: [cold-storage-manifest.json](COLD_STORAGE.md), SHA256 `bc519ed735cfccdb2102222be148556f19012acd6cdf3ed2bcc696257e00d13c`. Individual U0/U1 developer and independent manifests preserve their exact executed commands, seeds, environments and success records. Statements with source_commit=null are supplied/packaging receipts, not assertions of a scientific run at an invented revision. Source helper commit/blobs are recorded where applicable.
 
 | File | Actual storage path | Bytes | SHA256 | Source commit / identity | Frozen generating command | Checker command / result |
 |---|---|---|---|---|---|---|
@@ -161,3 +161,14 @@ These commands need a full clone. In a shallow clone, first run `git fetch origi
 **Retention**
 
 Permanent, with AC as custodian. The Git history copy lasts as long as history is not rewritten. The AC copy is created by `export`; commit its receipt hash here when that is done.
+
+### Addendum 2026-11-02 — retained files also moved (AC approval)
+
+AC approved moving the files listed above as "kept on purpose" as well. They are now in [`cold-storage.json`](cold-storage.json), and that list no longer applies. Restore them before running the scripts named in each row.
+
+| File | Actual storage path | Bytes | SHA-256 | Source commit | Frozen generating command | Script blob IDs | Checker command / result |
+|---|---|---|---|---|---|---|---|
+| `independent/u0/evidence-manifest.json` | Git blob `777adfbd1e3a` at `2b52b432fe59`; AC cold storage PENDING | 18,171 | `604ece8c269814779870514ac0925e893a1e4f995a836296e81c8a3b59fa6c44` | `2b52b432fe59` | not script-generated: written by the independent U0 reviewer | — | Summary: independent/u0/check-summary.json; independent/u0/audit.md:30-52. cold-storage-manifest.json delegates its command records to this file; restore both together. Read by independent/u0/check_evidence.py. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well. |
+| `integration-impact.json` | Git blob `990ae732f9ed` at `2b52b432fe59`; AC cold storage PENDING | 27,700 | `6a784b9043c9075a6d750fa879f211e4a90f5f773357d980ee7f41c96d3f9262` | `2b52b432fe59` | not script-generated: produced by the PR-preparation orchestrator | — | Summary: integration-impact.md (schema and procedure); response-01.md:14. Restore before running independent/protocol/check_integration.py. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well. |
+| `response-01-impact.json` | Git blob `194a2ad302fd` at `2b52b432fe59`; AC cold storage PENDING | 20,313 | `794b62465ca1a6800a4e5c88d682015acbf3a7fca7e0e83d500f503aac464d9b` | `2b52b432fe59` | not script-generated: orchestrator-produced administrative comparison | — | Summary: response-01.md:14,35ff; response-01-review.md:9; response-01-checks.json. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well. |
+| `cold-storage-manifest.json` | Git blob `b51913d99d13` at `2b52b432fe59`; AC cold storage PENDING | 77,280 | `bc519ed735cfccdb2102222be148556f19012acd6cdf3ed2bcc696257e00d13c` | `2b52b432fe59` | not script-generated: the topic's earlier cold-storage manifest | — | Summary: COLD_STORAGE.md (human manifest of the earlier items); cold-storage-check.json. Restore before running verify_cold_storage.py. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well. |

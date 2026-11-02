@@ -125,7 +125,7 @@ No byte-identical propagation to the later member branches is claimed by this re
 ## Lattice provisional reservations (unchanged)
 
 
-AC explicitly requested provisional theory IDs; no new final global range is reserved. The named MZ allocation owner remains responsible for any later coordinated final allocation. AC explicitly authorized provisional lattice IDs, so a new final allocation is not a readiness prerequisite for PR #4. These topic-scoped IDs cannot collide with another topic’s provisional namespace. Exact map: [provisional-id-map.json](../lattice-unisolvence-20261031/provisional-id-map.json).
+AC explicitly requested provisional theory IDs; no new final global range is reserved. The named MZ allocation owner remains responsible for any later coordinated final allocation. AC explicitly authorized provisional lattice IDs, so a new final allocation is not a readiness prerequisite for PR #4. These topic-scoped IDs cannot collide with another topic’s provisional namespace. Exact map: [provisional-id-map.json](../lattice-unisolvence-20261031/COLD_STORAGE.md).
 
 | Namespace | Reserved provisional identifiers | Owner / status |
 |---|---|---|
@@ -186,7 +186,7 @@ Reservation priority: `020dcddd36fa1e3254cbf288701d5ab02d27c580`, published and 
 
 ## Padua MZ 2D campaign — PR14 final registration
 
-Own reservation unchanged, first published `9f0c7710abd19ee5a0d61bce6384e7a399e838d2`: assigned PD-T106–117 (12), PD-N044–053 (10), IDEA-210–227 (18), LIT-427–428 (2). Same-source LIT IDs reused: 312,014,379,314,045. Permanent unused headroom: **PD-T118–135, PD-N054–061, IDEA-228–245, LIT-429–444**. No ranges shift or shrink. [Map](../padua-mz-2d-20261101/protocol/final-id-map.json); [fresh scan](../padua-mz-2d-20261101/protocol/final-reservation-recheck.json).
+Own reservation unchanged, first published `9f0c7710abd19ee5a0d61bce6384e7a399e838d2`: assigned PD-T106–117 (12), PD-N044–053 (10), IDEA-210–227 (18), LIT-427–428 (2). Same-source LIT IDs reused: 312,014,379,314,045. Permanent unused headroom: **PD-T118–135, PD-N054–061, IDEA-228–245, LIT-429–444**. No ranges shift or shrink. [Map](../padua-mz-2d-20261101/COLD_STORAGE.md); [fresh scan](../padua-mz-2d-20261101/protocol/final-reservation-recheck.json).
 
 PR15 reservation data above is imported unchanged (its unavailable local evidence link is made a pinned remote link) from `2d20672f62e0130d2adbe104af6e5ee9d05d20af`; first published commit **6920ba632843597c37e1493d077c1df2e89f54cb**, [PR15](https://github.com/aacchhee/padua_research/pull/15). Its PD-T136–155, PD-N062–071, IDEA-246–285 and LIT-445–459 remain reserved to its branch. This campaign assigns none of them. Stage AUDIT, Claude PENDING.
 
@@ -216,4 +216,4 @@ Reservation priority is the pushed commit introducing this section, published in
 
 ## PR12 assignments after reservation publication
 
-Priority: published103ee71e101265ca4133c7ffea8c0e48fa840109 before assignment. Assigned PD-T156–197 (42), PD-N072–073 (2), IDEA-286–311 (26). Permanent unused headroom PD-T198–205, PD-N074–077, IDEA-312–315. No LIT assignment/range; source IDs312/379/388 reused. [Map](../padua-proof-attempts-2-20261101/preparation/final-id-map.json). All earlier reservations and gaps, especially merged PR15's, remain unchanged. PR15 is merged as67bd07c; PR12 follows on that base. Only AC merges.
+Priority: published103ee71e101265ca4133c7ffea8c0e48fa840109 before assignment. Assigned PD-T156–197 (42), PD-N072–073 (2), IDEA-286–311 (26). Permanent unused headroom PD-T198–205, PD-N074–077, IDEA-312–315. No LIT assignment/range; source IDs312/379/388 reused. [Map](../padua-proof-attempts-2-20261101/COLD_STORAGE.md). All earlier reservations and gaps, especially merged PR15's, remain unchanged. PR15 is merged as67bd07c; PR12 follows on that base. Only AC merges.

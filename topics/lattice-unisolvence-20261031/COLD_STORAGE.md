@@ -85,3 +85,11 @@ These commands need a full clone. In a shallow clone, first run `git fetch origi
 **Retention**
 
 Permanent, with AC as custodian. The Git history copy lasts as long as history is not rewritten. The AC copy is created by `export`; commit its receipt hash here when that is done.
+
+### Addendum 2026-11-02 — retained files also moved (AC approval)
+
+AC approved moving the files listed above as "kept on purpose" as well. They are now in [`cold-storage.json`](cold-storage.json), and that list no longer applies. Restore them before running the scripts named in each row.
+
+| File | Actual storage path | Bytes | SHA-256 | Source commit | Frozen generating command | Script blob IDs | Checker command / result |
+|---|---|---|---|---|---|---|---|
+| `provisional-id-map.json` | Git blob `587ec106e9ea` at `2b52b432fe59`; AC cold storage PENDING | 19,769 | `3b04ce988f1e90f1b84aae1c91097e309aa4dbe982c71f8317b13efd8aac60c4` | `2b52b432fe59` | not script-generated: orchestrator-authored map of 66 provisional IDs | — | Summary: ID_CROSSWALK.md:235; topics/padua-batch-20261031/ALLOCATIONS.md:128,180. Restore before running check-response-01.py, response-review/check_response.py or programme-ideas allocation scripts. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well. |

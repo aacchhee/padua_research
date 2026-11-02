@@ -103,3 +103,12 @@ These commands need a full clone. In a shallow clone, first run `git fetch origi
 **Retention**
 
 Permanent, with AC as custodian. The Git history copy lasts as long as history is not rewritten. The AC copy is created by `export`; commit its receipt hash here when that is done.
+
+### Addendum 2026-11-02 — retained files also moved (AC approval)
+
+AC approved moving the files listed above as "kept on purpose" as well. They are now in [`cold-storage.json`](cold-storage.json), and that list no longer applies. Restore them before running the scripts named in each row.
+
+| File | Actual storage path | Bytes | SHA-256 | Source commit | Frozen generating command | Script blob IDs | Checker command / result |
+|---|---|---|---|---|---|---|---|
+| `pr-prep/id-map.json` | Git blob `c9a9e9f8660c` at `2b52b432fe59`; AC cold storage PENDING | 30,234 | `e5f4974b878b509b896cd2f69aae3220fa789d5c9347dbcb40baa77a419b1948` | `2b52b432fe59` | not script-generated: immutable ID allocation written once by the first pr-prep/allocate.py (commit 9a77f2b) | — | Summary: ID_CROSSWALK.md rows for the 404 mappings (all mirrored); pr-prep/crosswalk.rows.md. Restore before running pr-prep/allocate.py, pr-prep/check_integration.py, audit-04/registries/check_registries.py or programme-ideas pr-prep/allocate.py. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well. |
+| `pr-prep/registry-semantics.json` | Git blob `302f2527b9df` at `2b52b432fe59`; AC cold storage PENDING | 49,384 | `cb9117ac9243101fbcddea8f8d5298067759327745eee60b076a251348f471ba` | `2b52b432fe59` | not script-generated: hand-authored reviewed registry semantics (commit d55504e) | — | Summary: PROOF_STATUS.md and state/IDEAS.md rows; pr-prep/ideas.rows.md, proof_status.rows.md, negative.rows.md; response-04.md:15. Restore before running pr-prep/allocate.py. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well. |

@@ -11,4 +11,4 @@ Stage PR (prepared for AC review); Claude Opus 5.5 xhigh audit-01 accepted for t
 [Full report, proofs and evidence](../topics/padua-proof-attempts-2-20261101/report.md).
 Next: Codex (gpt-6.1-sol medium): Continue codex/padua-proof-attempts-2-20261101. Only AC merges.
 
-Final registration: PD-T156–197; PD-N072–073; IDEA-286–311. [Exact ID map](../topics/padua-proof-attempts-2-20261101/preparation/final-id-map.json). Reservation gaps PD-T198–205, PD-N074–077, IDEA-312–315 remain permanent.
+Final registration: PD-T156–197; PD-N072–073; IDEA-286–311. [Exact ID map](../topics/padua-proof-attempts-2-20261101/COLD_STORAGE.md). Reservation gaps PD-T198–205, PD-N074–077, IDEA-312–315 remain permanent.

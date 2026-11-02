@@ -6,23 +6,7 @@
  "policy": "AC 2026-11-02: large regenerable outputs are not stored at the branch head; all code and short summaries stay. Each file is retrievable byte-exactly from Git history by its blob id; delivery to AC Padua cold storage is pending.",
  "delivery_to_AC_cold_storage": "PENDING (AC runs: python tools/cold_storage.py export charter-unisolvence-20261031 --dest C:\\Users\\andreyac\\Downloads\\padua\\cold_storage)",
  "topic_note": "The topic's existing cold-storage-manifest.json and COLD_STORAGE.md stay. Generators/checkers committed: claude-audit/{check_padua,gf}.py, directions/U1/exact_checker.py, independent/u1/check_symbolic_summary.py.",
- "retained_above_threshold": [
-  {
-   "path": "topics/charter-unisolvence-20261031/independent/u0/evidence-manifest.json",
-   "bytes": 18171,
-   "reason": "cold-storage-manifest.json delegates its command records to this file"
-  },
-  {
-   "path": "topics/charter-unisolvence-20261031/integration-impact.json",
-   "bytes": 27700,
-   "reason": "hand-produced integration record read by independent/protocol/check_integration.py; not generated output"
-  },
-  {
-   "path": "topics/charter-unisolvence-20261031/response-01-impact.json",
-   "bytes": 20313,
-   "reason": "hand-produced administrative impact record; not generated output"
-  }
- ],
+ "retained_above_threshold": [],
  "entries": [
   {
    "path": "topics/charter-unisolvence-20261031/claude-audit/outputs/padua.json",
@@ -41,7 +25,43 @@
    "generating_command": "python3 topics/charter-unisolvence-20261031/directions/U1/exact_checker.py --symbolic --output <out>",
    "summary": "directions/U1/symbolic-factors.md; independent/u1/symbolic-summary-output.txt (PASS all 6); independent/u1/evidence.md:68-78",
    "notes": "Byte-identical to independent-U1/producer-final-symbolic.json already in cold-storage-manifest.json; read by independent/u1/check_symbolic_summary.py."
+  },
+  {
+   "path": "topics/charter-unisolvence-20261031/independent/u0/evidence-manifest.json",
+   "bytes": 18171,
+   "sha256": "604ece8c269814779870514ac0925e893a1e4f995a836296e81c8a3b59fa6c44",
+   "git_blob": "777adfbd1e3a79c5f80d15146f4305f02731d82e",
+   "generating_command": "not script-generated: written by the independent U0 reviewer",
+   "summary": "independent/u0/check-summary.json; independent/u0/audit.md:30-52",
+   "notes": "cold-storage-manifest.json delegates its command records to this file; restore both together. Read by independent/u0/check_evidence.py. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
+  },
+  {
+   "path": "topics/charter-unisolvence-20261031/integration-impact.json",
+   "bytes": 27700,
+   "sha256": "6a784b9043c9075a6d750fa879f211e4a90f5f773357d980ee7f41c96d3f9262",
+   "git_blob": "990ae732f9ed823062ed5167878b0f765b80ae99",
+   "generating_command": "not script-generated: produced by the PR-preparation orchestrator",
+   "summary": "integration-impact.md (schema and procedure); response-01.md:14",
+   "notes": "Restore before running independent/protocol/check_integration.py. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
+  },
+  {
+   "path": "topics/charter-unisolvence-20261031/response-01-impact.json",
+   "bytes": 20313,
+   "sha256": "794b62465ca1a6800a4e5c88d682015acbf3a7fca7e0e83d500f503aac464d9b",
+   "git_blob": "194a2ad302fdd087a1f702eed78200881d80c04d",
+   "generating_command": "not script-generated: orchestrator-produced administrative comparison",
+   "summary": "response-01.md:14,35ff; response-01-review.md:9; response-01-checks.json",
+   "notes": "AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
+  },
+  {
+   "path": "topics/charter-unisolvence-20261031/cold-storage-manifest.json",
+   "bytes": 77280,
+   "sha256": "bc519ed735cfccdb2102222be148556f19012acd6cdf3ed2bcc696257e00d13c",
+   "git_blob": "b51913d99d131718391d6f9c304683e4751ef4ee",
+   "generating_command": "not script-generated: the topic's earlier cold-storage manifest",
+   "summary": "COLD_STORAGE.md (human manifest of the earlier items); cold-storage-check.json",
+   "notes": "Restore before running verify_cold_storage.py. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
   }
  ],
- "total_bytes": 42142
+ "total_bytes": 185606
 }

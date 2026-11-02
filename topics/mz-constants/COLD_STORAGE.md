@@ -35,3 +35,11 @@ These commands need a full clone. In a shallow clone, first run `git fetch origi
 **Retention**
 
 Permanent, with AC as custodian. The Git history copy lasts as long as history is not rewritten. The AC copy is created by `export`; commit its receipt hash here when that is done.
+
+### Addendum 2026-11-02 — retained files also moved (AC approval)
+
+AC approved moving the files listed above as "kept on purpose" as well. They are now in [`cold-storage.json`](cold-storage.json), and that list no longer applies. Restore them before running the scripts named in each row.
+
+| File | Actual storage path | Bytes | SHA-256 | Source commit | Frozen generating command | Script blob IDs | Checker command / result |
+|---|---|---|---|---|---|---|---|
+| `final-id-map.json` | Git blob `3447de0c3f77` at `2b52b432fe59`; AC cold storage PENDING | 16,640 | `c143f56cfc60f906a85ef8e2643535aefb9661668eec06121d9d41e1501593c2` | `2b52b432fe59` | not script-generated: ID allocation map produced at PR preparation | — | Summary: ID_CROSSWALK.md rows for mz-constants; tracks/mz-constants/paper/README.md. Restore before running check_response_01.py and the other readers. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well. |

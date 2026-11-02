@@ -6,13 +6,7 @@
  "policy": "AC 2026-11-02: large regenerable outputs are not stored at the branch head; all code and short summaries stay. Each file is retrievable byte-exactly from Git history by its blob id; delivery to AC Padua cold storage is pending.",
  "delivery_to_AC_cold_storage": "PENDING (AC runs: python tools/cold_storage.py export lattice-unisolvence-20261031 --dest C:\\Users\\andreyac\\Downloads\\padua\\cold_storage)",
  "topic_note": "All generators are committed under tracks/lattice-unisolvence/code (c0_catalogue, c1_mod4, c1_stability, c1_extension, c3_rank, c3_structure, c3_obstructions, c3_lebesgue, c3_records, prepare_evidence, verify_artifacts). Producer commands: directions/C0/rounds.md:14, directions/C1/rounds.md:24-32, directions/C3/evidence.md:9-29; independent reruns: independent/commands.md:25-35. Restore before running verify_artifacts.py, protocol/check_protocol.py, independent/reconstruct_*.py, claude-audit/{rect_check,cert_D,cert_D_construct,certs_AB,nine}.py or the C3 pipeline (C3 scripts read C0/catalogue.json and C3/ranks.json). Small committed summaries: C0/count-result.json, C1/symbolic.json, C1/gram.json, C3/lowdegree.json, C3/artifact-manifest.json, independent/*-reconstruction.json and comparison receipts. The earlier lattice-evidence.zip (COLD_STORAGE.md above) remains as recorded.",
- "retained_above_threshold": [
-  {
-   "path": "topics/lattice-unisolvence-20261031/provisional-id-map.json",
-   "bytes": 19769,
-   "reason": "registry input read by scripts in this and other topics (check-response-01.py, response-review/check_response.py, programme-ideas allocation scripts); hand-authored, not generated output"
-  }
- ],
+ "retained_above_threshold": [],
  "entries": [
   {
    "path": "topics/lattice-unisolvence-20261031/audit-targets.json",
@@ -238,7 +232,16 @@
    "generating_command": "python topics/lattice-unisolvence-20261031/response-review/check_response.py (stdout) plus reviewer-added fields",
    "summary": "response-review/report.md:9-22; response-review/developer-check-rerun.json",
    "notes": "Historical review snapshot."
+  },
+  {
+   "path": "topics/lattice-unisolvence-20261031/provisional-id-map.json",
+   "bytes": 19769,
+   "sha256": "3b04ce988f1e90f1b84aae1c91097e309aa4dbe982c71f8317b13efd8aac60c4",
+   "git_blob": "587ec106e9ea808462b09683556a37e42c6f0b47",
+   "generating_command": "not script-generated: orchestrator-authored map of 66 provisional IDs",
+   "summary": "ID_CROSSWALK.md:235; topics/padua-batch-20261031/ALLOCATIONS.md:128,180",
+   "notes": "Restore before running check-response-01.py, response-review/check_response.py or programme-ideas allocation scripts. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
   }
  ],
- "total_bytes": 2917679
+ "total_bytes": 2937448
 }

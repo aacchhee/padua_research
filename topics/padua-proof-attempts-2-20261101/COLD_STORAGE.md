@@ -54,3 +54,11 @@ These commands need a full clone. In a shallow clone, first run `git fetch origi
 **Retention**
 
 Permanent, with AC as custodian. The Git history copy lasts as long as history is not rewritten. The AC copy is created by `export`; commit its receipt hash here when that is done.
+
+### Addendum 2026-11-02 — retained files also moved (AC approval)
+
+AC approved moving the files listed above as "kept on purpose" as well. They are now in [`cold-storage.json`](cold-storage.json), and that list no longer applies. Restore them before running the scripts named in each row.
+
+| File | Actual storage path | Bytes | SHA-256 | Source commit | Frozen generating command | Script blob IDs | Checker command / result |
+|---|---|---|---|---|---|---|---|
+| `preparation/final-id-map.json` | Git blob `377513878547` at `2b52b432fe59`; AC cold storage PENDING | 24,726 | `bbed9414ca9772133ac3430df7eb024f1a269a380806d3fef363633eb743ff35` | `2b52b432fe59` | python topics/padua-proof-attempts-2-20261101/preparation/prepare.py (one-shot PR preparation) | — | Summary: ID_CROSSWALK.md rows for padua-proof-attempts-2; RESULTS.md section. Restore before running preparation/validate.py. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well. |

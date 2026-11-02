@@ -6,13 +6,7 @@
  "policy": "AC 2026-11-02: large regenerable outputs are not stored at the branch head; all code and short summaries stay. Each file is retrievable byte-exactly from Git history by its blob id; delivery to AC Padua cold storage is pending.",
  "delivery_to_AC_cold_storage": "PENDING (AC runs: python tools/cold_storage.py export mz-constants --dest C:\\Users\\andreyac\\Downloads\\padua\\cold_storage)",
  "topic_note": "All four are manifests/maps/patch, not scientific data. audit-targets.json (123 files at fdf0648) and response-01-targets.json (140 files) are hash manifests with no committed generator; M/check_response_01.py hard-reads audit-targets.json (:99), final-id-map.json (:30) and response-01-targets.json (:120) and hashes every listed working-tree file, so it fails after removal of any of these or of the tracks/mz-constants/evidence files they list. The patch is exactly git diff --unified=0 08fafe6..2cc1918 on ten shared paths (both commits reachable) and is regenerable. Recommend keeping final-id-map.json in Git (registry map, runtime input to four scripts, linked from tracks/mz-constants/paper/README.md:14). Small committed receipt: M/response-01-checks.json (PASS). AC cold storage for this topic: C:\\Users\\andreyac\\Downloads\\padua\\cold_storage\\mz-constants\\ (LOG.md:23), delivery unconfirmed; M/cold-storage.md is only a local staging record. Abbreviations in commands: T/ = topics/padua-proof-attempts-2-20261101/, O/ = T/outputs/, C/ = T/code/, K/ = tracks/mz-constants/evidence/, M/ = topics/mz-constants/, E = 'PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=<python-flint deps> python -B', E0 = 'PYTHONDONTWRITEBYTECODE=1 python -B'.",
- "retained_above_threshold": [
-  {
-   "path": "topics/mz-constants/final-id-map.json",
-   "bytes": 16640,
-   "reason": "ID allocation map, runtime input of four scripts and linked from tracks/mz-constants/paper/README.md; not bulk generated output"
-  }
- ],
+ "retained_above_threshold": [],
  "entries": [
   {
    "path": "topics/mz-constants/audit-targets.json",
@@ -40,7 +34,16 @@
    "generating_command": "none recorded",
    "summary": "M/AUDIT_HANDOFF.md:6; response-01.md:92; integration-impact.md",
    "notes": "Current 140-file SHA-256 manifest of the response-01 package (final package commit pins it). Assembled by orchestrator; no generator script. Lists 8 of the files being moved (and K/* ones), so check_response_01.py fails on missing files after removal. Checker: python M/check_response_01.py --require-targets --output /tmp/mz-response-checks.json (AUDIT_HANDOFF.md) Receipt: M/response-01-checks.json (956 B: current_response_targets_verified 140, result PASS) Cost: seconds."
+  },
+  {
+   "path": "topics/mz-constants/final-id-map.json",
+   "bytes": 16640,
+   "sha256": "c143f56cfc60f906a85ef8e2643535aefb9661668eec06121d9d41e1501593c2",
+   "git_blob": "3447de0c3f7706a185c1d6b56e337c72d55052c9",
+   "generating_command": "not script-generated: ID allocation map produced at PR preparation",
+   "summary": "ID_CROSSWALK.md rows for mz-constants; tracks/mz-constants/paper/README.md",
+   "notes": "Restore before running check_response_01.py and the other readers. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
   }
  ],
- "total_bytes": 135927
+ "total_bytes": 152567
 }

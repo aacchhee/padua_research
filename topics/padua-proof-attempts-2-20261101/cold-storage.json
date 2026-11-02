@@ -6,13 +6,7 @@
  "policy": "AC 2026-11-02: large regenerable outputs are not stored at the branch head; all code and short summaries stay. Each file is retrievable byte-exactly from Git history by its blob id; delivery to AC Padua cold storage is pending.",
  "delivery_to_AC_cold_storage": "PENDING (AC runs: python tools/cold_storage.py export padua-proof-attempts-2-20261101 --dest C:\\Users\\andreyac\\Downloads\\padua\\cold_storage)",
  "topic_note": "Accepted proof evidence: n3-n7 certificates (developer + independent regenerations; checker outputs committed small), n8 witnesses (>=44 interior maxima, PD-T183). NOT accepted: a5_n8_interior_candidate (PD-T184 OPEN); n8 axis preflights and V4 inventory are supporting only. All 23 blobs are retrievable at base 2b52b43; the audited pins 4265bb9 and e1581b3 are absent from this clone. Env for n4+ producers/checkers: Python 3.12.14, SymPy 1.14.0, python-flint 0.9.0/FLINT 3.6.0 under /tmp/padua2-deps (uncommitted); n3 is plain SymPy. Only the n3 gzip is byte-reproducible; for n4-n8 decoded content is reproducible but bytes differ (gzip header/timer fields). a5_n7 xz and its global (kept, <16 KiB) are bound by SHA: keep the pair together. Duplicate blobs: n3 pair (7d7056d2...), a2_sanity pair (8f93449...). Already in AC cold storage: claude-audit-01-full.tar.xz (sha b7158144...) holding auditor files, but NOT MANIFEST.json and NOT the main outputs. Mechanical validators reading the removed files (preparation/validate.py incl. --manifest, response-support/check_response.py, audit-support/.../manifest_check.py, reruns.sh) will fail on the new head and must run against history. No markdo\u2026 Abbreviations in commands: T/ = topics/padua-proof-attempts-2-20261101/, O/ = T/outputs/, C/ = T/code/, K/ = tracks/mz-constants/evidence/, M/ = topics/mz-constants/, E = 'PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=<python-flint deps> python -B', E0 = 'PYTHONDONTWRITEBYTECODE=1 python -B'.",
- "retained_above_threshold": [
-  {
-   "path": "topics/padua-proof-attempts-2-20261101/preparation/final-id-map.json",
-   "bytes": 24726,
-   "reason": "registry ID map (70 mappings) linked from RESULTS.md and results; not bulk generated output"
-  }
- ],
+ "retained_above_threshold": [],
  "entries": [
   {
    "path": "topics/padua-proof-attempts-2-20261101/audit-support/claude-audit-01/MANIFEST.json",
@@ -211,7 +205,16 @@
    "generating_command": "python -B C/a5_n8_continue_v5.py --resume /tmp/a5-n8-candidate-v4.json.gz --original-v3 /tmp/a5-n8-candidate-v3.json.gz --input-sha256 4d0884a64cf6b41c7e9b6fadb7da56bed61a4c44e816b215a8e7ce37fdc0647c --certificate --validate-only --output /tmp/a5-n8-v5-unused-validation.gz (command recorded inside the JSON as validate_only_command; wrapper that assembled the inventory not committed)",
    "summary": "attempts/T-A5-n8.md:155 (V4 cap result: 141302 visited/70648 leaves/23 roots/7 pending; 20 strictly-left + 3 axis root boxes)",
    "notes": "Inventory of an intermediate (non-accepted) V4 partial tree; supporting only. Not a certificate. Cost: needs the uncommitted V4 gz (3601 s run) plus V3."
+  },
+  {
+   "path": "topics/padua-proof-attempts-2-20261101/preparation/final-id-map.json",
+   "bytes": 24726,
+   "sha256": "bbed9414ca9772133ac3430df7eb024f1a269a380806d3fef363633eb743ff35",
+   "git_blob": "377513878547c208cfdedabb67384b3deb739ce6",
+   "generating_command": "python topics/padua-proof-attempts-2-20261101/preparation/prepare.py (one-shot PR preparation)",
+   "summary": "ID_CROSSWALK.md rows for padua-proof-attempts-2; RESULTS.md section",
+   "notes": "Restore before running preparation/validate.py. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
   }
  ],
- "total_bytes": 4030911
+ "total_bytes": 4055637
 }

@@ -13,7 +13,7 @@ This explicit task instruction waives the Windows verification/receipt requireme
 - File: `/workspace/padua-cold/charter-unisolvence-20261031-handoff.zip`.
 - Bytes: `210015`.
 - SHA256: `fdcc1ce22b0addabee97d01dfcb2bdb18be5b340091fda0c52b1608014d32eb3`.
-- Portable manifest/checker: [COLD_STORAGE.md](COLD_STORAGE.md), [cold-storage-manifest.json](cold-storage-manifest.json), [verify_cold_storage.py](verify_cold_storage.py).
+- Portable manifest/checker: [COLD_STORAGE.md](COLD_STORAGE.md), [cold-storage-manifest.json](COLD_STORAGE.md), [verify_cold_storage.py](verify_cold_storage.py).
 - Original cloud receipt: [cold-storage-check.json](cold-storage-check.json), PASS for 104 artifacts and 17 archive payloads. The original ZIP size/SHA were checked again during response-01.
 
 The original cloud manifest and receipt remain unchanged. Their pending-delivery language is historical evidence and must not be rewritten into a receipt. Claude’s separate audit-output delivery statement is the auditor’s statement in audit-01/claude-audit/MANIFEST.md, not a developer receipt for this ZIP.

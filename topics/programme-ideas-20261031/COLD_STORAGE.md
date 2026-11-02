@@ -51,3 +51,13 @@ These commands need a full clone. In a shallow clone, first run `git fetch origi
 **Retention**
 
 Permanent, with AC as custodian. The Git history copy lasts as long as history is not rewritten. The AC copy is created by `export`; commit its receipt hash here when that is done.
+
+### Addendum 2026-11-02 — retained files also moved (AC approval)
+
+AC approved moving the files listed above as "kept on purpose" as well. They are now in [`cold-storage.json`](cold-storage.json), and that list no longer applies. Restore them before running the scripts named in each row.
+
+| File | Actual storage path | Bytes | SHA-256 | Source commit | Frozen generating command | Script blob IDs | Checker command / result |
+|---|---|---|---|---|---|---|---|
+| `audit-support/source-manifest.json` | Git blob `043a29eda249` at `2b52b432fe59`; AC cold storage PENDING | 45,906 | `fcb6cdd505ac1db97491c97785cc1baf80fb98a7cefc96682e4126e3573560c9` | `2b52b432fe59` | not script-generated: root-fetched provenance of 155 pinned files | — | Summary: audit-01.md:124; LOG.md:102. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well. |
+| `lit/integration-map-pr10.json` | Git blob `1fd383cd84c5` at `2b52b432fe59`; AC cold storage PENDING | 23,111 | `cad0485ab96ffa9ff64445e57ad42cd5e7f88690b35d45f481a921d4a37b8b98` | `2b52b432fe59` | not script-generated: agent-produced literature dedupe data | — | Summary: lit/integration-map-pr10.md (companion table). Restore before running pr-prep/allocate.py and the audit-04 checkers. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well. |
+| `lit/integration-map.json` | Git blob `d5dedde399ec` at `2b52b432fe59`; AC cold storage PENDING | 47,336 | `7073797a7b9e1cb5f4ff82c3655b73f7b78e4258132ff86c5aa31d3fa0b5e533` | `2b52b432fe59` | not script-generated: agent-produced literature dedupe data | — | Summary: lit/integration-map.md (companion table). Restore before running pr-prep/allocate.py and the audit-04 checkers. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well. |

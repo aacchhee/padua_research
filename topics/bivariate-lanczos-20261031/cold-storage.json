@@ -6,18 +6,7 @@
  "policy": "AC 2026-11-02: large regenerable outputs are not stored at the branch head; all code and short summaries stay. Each file is retrievable byte-exactly from Git history by its blob id; delivery to AC Padua cold storage is pending.",
  "delivery_to_AC_cold_storage": "PENDING (AC runs: python tools/cold_storage.py export bivariate-lanczos-20261031 --dest C:\\Users\\andreyac\\Downloads\\padua\\cold_storage)",
  "topic_note": "Every script named in the commands is committed (tracks/bivariate-lanczos/code/{L1,L2,L5,review_L1,review_L1b,review_L2,review_L5} and the audit-0N scripts). L5 runs need C libraries built with gcc -O2 -ffp-contract=off (sources committed, binaries not). L1 raw runs take 4-6.5 min each. Developer logs used Python 3.13.18/NumPy 2.5.3; audit reruns 3.12.14/2.3.5, so last digits differ. Restore before rerunning: audit-02/check_impact.py, audit-02/L2/evidence_manifest.py, audit-01/L2/make_manifest.py, audit-02/L5/check_response.py, L1 reanalysis/independent checks, l2_r0N_verdicts.py, L5 analyze_r01*.py, reanalyze_dev.py and record_completion.py scripts. The earlier statement in this file that no large generated outputs exist is superseded by this section. AC's PR #10-only size exception (response-04/AC-EXCEPTION.md) is superseded by AC's 2026-11-02 instruction.",
- "retained_above_threshold": [
-  {
-   "path": "topics/bivariate-lanczos-20261031/pr-prep/id-map.json",
-   "bytes": 30234,
-   "reason": "authoritative immutable ID allocation (404 mappings), read from the working tree by pr-prep/allocate.py, pr-prep/check_integration.py, audit-04/registries/check_registries.py and programme-ideas pr-prep/allocate.py; not generated output"
-  },
-  {
-   "path": "topics/bivariate-lanczos-20261031/pr-prep/registry-semantics.json",
-   "bytes": 49384,
-   "reason": "hand-authored reviewed registry semantics, linked from PROOF_STATUS.md and required by pr-prep/allocate.py; not generated output"
-  }
- ],
+ "retained_above_threshold": [],
  "entries": [
   {
    "path": "topics/bivariate-lanczos-20261031/audit-01/L1-later/manifest.json",
@@ -441,7 +430,25 @@
    "generating_command": "stdout of the same exp_review.py slopes run",
    "summary": "reviews/L5-reconstruction-01.md:63; reviews/logs_L5/analysis_review.txt",
    "notes": ""
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/pr-prep/id-map.json",
+   "bytes": 30234,
+   "sha256": "e5f4974b878b509b896cd2f69aae3220fa789d5c9347dbcb40baa77a419b1948",
+   "git_blob": "c9a9e9f8660cb54ed2f73718a8d9a87c0d703614",
+   "generating_command": "not script-generated: immutable ID allocation written once by the first pr-prep/allocate.py (commit 9a77f2b)",
+   "summary": "ID_CROSSWALK.md rows for the 404 mappings (all mirrored); pr-prep/crosswalk.rows.md",
+   "notes": "Restore before running pr-prep/allocate.py, pr-prep/check_integration.py, audit-04/registries/check_registries.py or programme-ideas pr-prep/allocate.py. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
+  },
+  {
+   "path": "topics/bivariate-lanczos-20261031/pr-prep/registry-semantics.json",
+   "bytes": 49384,
+   "sha256": "cb9117ac9243101fbcddea8f8d5298067759327745eee60b076a251348f471ba",
+   "git_blob": "302f2527b9df363d50761b842f3d80e5195f92b0",
+   "generating_command": "not script-generated: hand-authored reviewed registry semantics (commit d55504e)",
+   "summary": "PROOF_STATUS.md and state/IDEAS.md rows; pr-prep/ideas.rows.md, proof_status.rows.md, negative.rows.md; response-04.md:15",
+   "notes": "Restore before running pr-prep/allocate.py. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
   }
  ],
- "total_bytes": 2274436
+ "total_bytes": 2354054
 }

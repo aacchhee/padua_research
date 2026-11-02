@@ -6,23 +6,7 @@
  "policy": "AC 2026-11-02: large regenerable outputs are not stored at the branch head; all code and short summaries stay. Each file is retrievable byte-exactly from Git history by its blob id; delivery to AC Padua cold storage is pending.",
  "delivery_to_AC_cold_storage": "PENDING (AC runs: python tools/cold_storage.py export programme-ideas-20261031 --dest C:\\Users\\andreyac\\Downloads\\padua\\cold_storage)",
  "topic_note": "All receipt scripts are committed next to their outputs (audit-02-support/*.py, audit-04-support/*.py, audit-support/*.py). Several reruns need Git history at pinned SHAs; rehearsal-* need live Git state. Exact run lines of allocation-final, integration-final and rehearsal-final are inferred from their recorded candidate fields.",
- "retained_above_threshold": [
-  {
-   "path": "topics/programme-ideas-20261031/audit-support/source-manifest.json",
-   "bytes": 45906,
-   "reason": "root-fetched provenance record with no generator (155 pinned files)"
-  },
-  {
-   "path": "topics/programme-ideas-20261031/lit/integration-map-pr10.json",
-   "bytes": 23111,
-   "reason": "agent-produced literature dedupe data with no generator; runtime input of pr-prep/allocate.py and audit-04 checkers"
-  },
-  {
-   "path": "topics/programme-ideas-20261031/lit/integration-map.json",
-   "bytes": 47336,
-   "reason": "agent-produced literature dedupe data with no generator; runtime input of pr-prep/allocate.py and audit-04 checkers"
-  }
- ],
+ "retained_above_threshold": [],
  "entries": [
   {
    "path": "topics/programme-ideas-20261031/audit-02-support/literature-check.json",
@@ -176,7 +160,34 @@
    "generating_command": "python topics/programme-ideas-20261031/sources/campaign-inputs/provenance.py <input mirror> (mirror not in repository; not rerunnable)",
    "summary": "sources/campaign-inputs/README.md:5-20; COLD_STORAGE.md:70",
    "notes": "Provenance of 164 mirror files (159 Git blobs)."
+  },
+  {
+   "path": "topics/programme-ideas-20261031/audit-support/source-manifest.json",
+   "bytes": 45906,
+   "sha256": "fcb6cdd505ac1db97491c97785cc1baf80fb98a7cefc96682e4126e3573560c9",
+   "git_blob": "043a29eda249bbfd4e2e0551e47ff3d6c4f95763",
+   "generating_command": "not script-generated: root-fetched provenance of 155 pinned files",
+   "summary": "audit-01.md:124; LOG.md:102",
+   "notes": "AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
+  },
+  {
+   "path": "topics/programme-ideas-20261031/lit/integration-map-pr10.json",
+   "bytes": 23111,
+   "sha256": "cad0485ab96ffa9ff64445e57ad42cd5e7f88690b35d45f481a921d4a37b8b98",
+   "git_blob": "1fd383cd84c5b2e2c169e33778d0b35cac239cdf",
+   "generating_command": "not script-generated: agent-produced literature dedupe data",
+   "summary": "lit/integration-map-pr10.md (companion table)",
+   "notes": "Restore before running pr-prep/allocate.py and the audit-04 checkers. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
+  },
+  {
+   "path": "topics/programme-ideas-20261031/lit/integration-map.json",
+   "bytes": 47336,
+   "sha256": "7073797a7b9e1cb5f4ff82c3655b73f7b78e4258132ff86c5aa31d3fa0b5e533",
+   "git_blob": "d5dedde399ec97ac2d48491bbbedb96ae57c8e5c",
+   "generating_command": "not script-generated: agent-produced literature dedupe data",
+   "summary": "lit/integration-map.md (companion table)",
+   "notes": "Restore before running pr-prep/allocate.py and the audit-04 checkers. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
   }
  ],
- "total_bytes": 1387384
+ "total_bytes": 1503737
 }

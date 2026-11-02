@@ -6,13 +6,7 @@
  "policy": "AC 2026-11-02: large regenerable outputs are not stored at the branch head; all code and short summaries stay. Each file is retrievable byte-exactly from Git history by its blob id; delivery to AC Padua cold storage is pending.",
  "delivery_to_AC_cold_storage": "PENDING (AC runs: python tools/cold_storage.py export padua-mz-2d-20261101 --dest C:\\Users\\andreyac\\Downloads\\padua\\cold_storage)",
  "topic_note": "Generators committed: tracks/mz-constants/code/{mz2d_exact,mz2d_independent_check,mz2d_spectra}.py, protocol/final-*.py, response-01-20261101-validate.py. mz2d_exact.py needs python-flint 0.9.0 (about 30 s). Restore before running mz2d_independent_check.py, audit/claude-audit-01/run_dev_independent_functions.py or the protocol validators (final-validate.py needs final-assignment-checks.json and final-input-manifest.json). mz2d-eta-counterexample.md pins exact-spectra.json by SHA-256; the manifest keeps exact bytes. Protocol receipts are point-in-time records of one-shot scripts. Small committed siblings: evidence/d0-manifest.json, exact-parity-scan.json, independent-additional-checks.json, protocol/input-manifest.json.",
- "retained_above_threshold": [
-  {
-   "path": "topics/padua-mz-2d-20261101/protocol/final-id-map.json",
-   "bytes": 26582,
-   "reason": "authoritative approved provisional-to-final ID map, linked from ID_CROSSWALK.md and the batch ALLOCATIONS ledger; registry record, not bulk output"
-  }
- ],
+ "retained_above_threshold": [],
  "entries": [
   {
    "path": "topics/padua-mz-2d-20261101/audit/claude-audit-01/claude-mz2d-spectra.json",
@@ -121,7 +115,16 @@
    "generating_command": "python3 topics/padua-mz-2d-20261101/protocol/response-01-20261101-validate.py",
    "summary": "response-01.md:59",
    "notes": "Documentation-only validation PASS; hash inventory."
+  },
+  {
+   "path": "topics/padua-mz-2d-20261101/protocol/final-id-map.json",
+   "bytes": 26582,
+   "sha256": "6206c254e117585b56d389d98f46c692ffe5af6df19e6b35a240e2533e688a55",
+   "git_blob": "8e0c2a4a60602fa2f94ef780ccdda0a7a4851710",
+   "generating_command": "written by protocol/final-assign.py --apply-approved (one-shot; do not repeat)",
+   "summary": "ID_CROSSWALK.md rows for padua-mz-2d; results/padua-mz-2d-20261101.md:8; LOG.md:7",
+   "notes": "Restore before running protocol/final-validate.py. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
   }
  ],
- "total_bytes": 1525001
+ "total_bytes": 1551583
 }
