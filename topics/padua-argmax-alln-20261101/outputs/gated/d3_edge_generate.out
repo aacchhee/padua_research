@@ -1,0 +1,11 @@
+{"pair": [7, 7, 2, 4], "leaves": 2, "pending": 0, "target_lower_approx": 5.072132221848187, "source_upper_approx": 4.784446743418639, "margin_lower_approx": 0.2876854784295477}
+{"pair": [7, 7, 6, 4], "leaves": 2, "pending": 0, "target_lower_approx": 5.072132221848187, "source_upper_approx": 4.784446743418639, "margin_lower_approx": 0.2876854784295477}
+{"pair": [12, 0, 3, 5], "leaves": 2, "pending": 0, "target_lower_approx": 6.745076269369782, "source_upper_approx": 6.492819925581057, "margin_lower_approx": 0.2522563437887251}
+{"pair": [12, 0, 5, 7], "leaves": 2, "pending": 0, "target_lower_approx": 6.810401759826133, "source_upper_approx": 6.802296546963562, "margin_lower_approx": 0.008105212862571138}
+{"pair": [12, 0, 9, 7], "leaves": 2, "pending": 0, "target_lower_approx": 6.810401759826133, "source_upper_approx": 6.691358545130142, "margin_lower_approx": 0.11904321469599126}
+{"pair": [12, 0, 11, 9], "leaves": 2, "pending": 0, "target_lower_approx": 6.609989147422762, "source_upper_approx": 6.22131782120654, "margin_lower_approx": 0.38867132621622175}
+{"pair": [12, 12, 3, 5], "leaves": 2, "pending": 0, "target_lower_approx": 6.745076269369782, "source_upper_approx": 6.492819925581057, "margin_lower_approx": 0.2522563437887251}
+{"pair": [12, 12, 5, 7], "leaves": 2, "pending": 0, "target_lower_approx": 6.810401759826133, "source_upper_approx": 6.802296546963562, "margin_lower_approx": 0.008105212862571138}
+{"pair": [12, 12, 9, 7], "leaves": 2, "pending": 0, "target_lower_approx": 6.810401759826133, "source_upper_approx": 6.691358545130142, "margin_lower_approx": 0.11904321469599126}
+{"pair": [12, 12, 11, 9], "leaves": 2, "pending": 0, "target_lower_approx": 6.609989147422762, "source_upper_approx": 6.22131782120654, "margin_lower_approx": 0.38867132621622175}
+{"complete": true, "cpu_seconds": 4.749713391, "wall_seconds": 4.749876562999816, "ep_reversals": 8, "ep_exact_witnesses": 8}

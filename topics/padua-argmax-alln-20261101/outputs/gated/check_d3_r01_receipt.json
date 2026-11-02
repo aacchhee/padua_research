@@ -1,0 +1,277 @@
+{
+  "kind": "Independent exact/outward verification and measured finite-screen replay",
+  "checker": "Codex, configured gpt-6-astra xhigh; runtime metadata not independently exposed",
+  "rules_read_reference": "aa1883f2fd9a837bb931ce804cb4b210c7475886",
+  "round_administrative_checkpoint": "3aebb299a4154dac822974b7245a9d243f21374e",
+  "scientific_base": "7d308b10d946b607ae0690454f6c0103690775a4",
+  "commands": [
+    "python -B topics/padua-argmax-alln-20261101/code/gated/d3_edge_generate.py --output /tmp/padua-gated-check-d3-r01-certificate.json --ep-output /tmp/padua-gated-check-d3-r01-ep.json > /tmp/padua-gated-check-d3-r01-generate.out",
+    "python -B topics/padua-argmax-alln-20261101/code/gated/d3_edge_check.py topics/padua-argmax-alln-20261101/outputs/gated/d3_edge_certificate.json --output /tmp/padua-gated-check-d3-r01-check.json --controls > /tmp/padua-gated-check-d3-r01-check.out"
+  ],
+  "source_sha256": {
+    "code/gated/d3_edge_common.py": "fd3b278f167999def5a8f43ddd83da258e5ce2452a76082d9256dcde93d01b92",
+    "code/gated/d3_edge_generate.py": "b0c2b98851dd8721bc876686fd388c62085938ff24d97308a132a7f14e9e3145",
+    "code/gated/d3_edge_check.py": "5f43f69a427c415542848f8ae9e337c69b3a5b8f822e78db38e095a0a2c9a358",
+    "code/part3/finite_general.py": "b20b7f88ddfc0bbc92e68096063ef626664028c2a379c34d16dc9f84e17aa74a",
+    "code/part3/finite_bernstein.py": "a3133c6c22a365380f6c2ab14f6d31f60153d0df902b325cfcfbeeccc1bed74f",
+    "code/part3/finite_n2_exact.py": "a5f00e6039d6ec76660cac90fb5720e0d6721348ed34c9e62775e1125d3e87c2"
+  },
+  "additional_measured_screen_dependencies_sha256": {
+    "code/part3/tests_common.py": "c17e4ed6473b90ed2fa887d0bd2d0b3cf5f6625bbf0d75153a6fa07e26e2a3b7",
+    "code/maj.py": "705139a65f225f66ed30f5c7f197cda9f54137c42fb10c8b6f452ab83c78909c"
+  },
+  "preregistration_note_sha256_at_execution": "03e8770164a201354aa2eb6e293cf6503f29e9ee4c07c681b4a9ad21deafb6c5",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "randomness": null,
+  "precision": 192,
+  "scale": "6277101735386680763835789423207666416102355444464034512896",
+  "comparisons": {
+    "producer": {
+      "rerun": {
+        "path": "/tmp/padua-gated-check-d3-r01-certificate.json",
+        "bytes": 13567,
+        "sha256": "6e0e1e82e1099faedde322e3ce30f8b712dd92541afd7d475f39c4073ad20a99"
+      },
+      "developer": {
+        "path": "topics/padua-argmax-alln-20261101/outputs/gated/d3_edge_certificate.json",
+        "bytes": 13561,
+        "sha256": "0d660fc70e9db06624d6f8bd82371602c9f6d540b01124824e264624de0385b7"
+      },
+      "full_raw_json_compared": true,
+      "payload_equal_excluding_only": [
+        "cpu_seconds",
+        "wall_seconds"
+      ],
+      "differences": [
+        {
+          "path": "/cpu_seconds",
+          "rerun": 5.421031703000001,
+          "developer": 4.749713391
+        },
+        {
+          "path": "/wall_seconds",
+          "rerun": 4.930395207999936,
+          "developer": 4.749876562999816
+        }
+      ],
+      "numeric_leaves_equal": 184,
+      "other_leaves_equal": 49,
+      "canonical_payload_sha256": "dc6e0c42f89e839703e48c59af2888ccbe8ca2fd9673b3eb7b6a293344c49687",
+      "byte_identical": false
+    },
+    "ep_screen": {
+      "rerun": {
+        "path": "/tmp/padua-gated-check-d3-r01-ep.json",
+        "bytes": 24993,
+        "sha256": "3215523e1a768ce7e81c76283ac18bf476f8162bdcd84e579a7b93388707d14c"
+      },
+      "developer": {
+        "path": "topics/padua-argmax-alln-20261101/outputs/gated/d3_ep_screen.json",
+        "bytes": 24993,
+        "sha256": "3215523e1a768ce7e81c76283ac18bf476f8162bdcd84e579a7b93388707d14c"
+      },
+      "full_raw_json_compared": true,
+      "payload_equal_excluding_only": [],
+      "differences": [],
+      "numeric_leaves_equal": 632,
+      "other_leaves_equal": 189,
+      "canonical_payload_sha256": "a69c17dc8ea443456112abffdbbe466b9041c7c692987154c47d9735435c0937",
+      "byte_identical": true
+    },
+    "checker": {
+      "rerun": {
+        "path": "/tmp/padua-gated-check-d3-r01-check.json",
+        "bytes": 9703,
+        "sha256": "931ce145d9316cc6a846d0ebc679a53108cac770c339eab59827b89cd8183ce4"
+      },
+      "developer": {
+        "path": "topics/padua-argmax-alln-20261101/outputs/gated/d3_edge_check.json",
+        "bytes": 9696,
+        "sha256": "7fd1ca1b8c94ea1f1f2e699de1b9aa2a70f4e749d7fcf1dc34291bb376fe2f05"
+      },
+      "full_raw_json_compared": true,
+      "payload_equal_excluding_only": [
+        "cpu_seconds"
+      ],
+      "differences": [
+        {
+          "path": "/cpu_seconds",
+          "rerun": 6.2751769269999995,
+          "developer": 6.095775444
+        }
+      ],
+      "numeric_leaves_equal": 155,
+      "other_leaves_equal": 36,
+      "canonical_payload_sha256": "495acd2421f452085d88a93967cfe97f903d02c5ee416311e6d2272ebfdde451",
+      "byte_identical": false
+    }
+  },
+  "stdout": [
+    {
+      "path": "/tmp/padua-gated-check-d3-r01-generate.out",
+      "bytes": 1922,
+      "sha256": "3de3f89a256bd9c35cd5c24e5208de036d903cf8925098d11087e6b36f757071"
+    },
+    {
+      "path": "/tmp/padua-gated-check-d3-r01-check.out",
+      "bytes": 8093,
+      "sha256": "dceebf364a42e478440c52fa6726c56a8a8b50ef8ee33bb5ef6ef893d3baa720"
+    }
+  ],
+  "accepted": true,
+  "EC_exact_pairs": [
+    {
+      "n": 7,
+      "j": 7,
+      "source": 2,
+      "target": 4,
+      "leaves": 2,
+      "margin_lower_scaled": 1805831015895661533351880672112546964694479151428000490468,
+      "source_upper_scaled": 30032458955978291865362535639670891128349162237194771412259,
+      "target_lower_scaled": 31838289971873953398714416311783438093043641388622771902727
+    },
+    {
+      "n": 7,
+      "j": 7,
+      "source": 6,
+      "target": 4,
+      "leaves": 2,
+      "margin_lower_scaled": 1805831015895661533351880672112546964694479151428000490296,
+      "source_upper_scaled": 30032458955978291865362535639670891128349162237194771412431,
+      "target_lower_scaled": 31838289971873953398714416311783438093043641388622771902727
+    },
+    {
+      "n": 12,
+      "j": 0,
+      "source": 3,
+      "target": 5,
+      "leaves": 2,
+      "margin_lower_scaled": 1583438733358505334679428062290134445546661332610343473477,
+      "source_upper_scaled": 40756091222418071188618302012737483654147653499818233682411,
+      "target_lower_scaled": 42339529955776576523297730075027618099694314832428577155888
+    },
+    {
+      "n": 12,
+      "j": 0,
+      "source": 5,
+      "target": 7,
+      "leaves": 2,
+      "margin_lower_scaled": 50877245725323741840725687756398593185869422111759570964,
+      "source_upper_scaled": 42698707459559800630432862879624571294863527784289004643426,
+      "target_lower_scaled": 42749584705285124372273588567380969888049397206400764214390
+    },
+    {
+      "n": 12,
+      "j": 0,
+      "source": 9,
+      "target": 7,
+      "leaves": 2,
+      "margin_lower_scaled": 747246369554215932586434322213505160684185924469318674556,
+      "source_upper_scaled": 42002338335730908439687154245167464727365211281931445539834,
+      "target_lower_scaled": 42749584705285124372273588567380969888049397206400764214390
+    },
+    {
+      "n": 12,
+      "j": 0,
+      "source": 11,
+      "target": 9,
+      "leaves": 2,
+      "margin_lower_scaled": 2439729456286888297965867939446345348829596012651519744365,
+      "source_upper_scaled": 39051844891887657476222880824736933006523998101012368242953,
+      "target_lower_scaled": 41491574348174545774188748764183278355353594113663887987318
+    },
+    {
+      "n": 12,
+      "j": 12,
+      "source": 3,
+      "target": 5,
+      "leaves": 2,
+      "margin_lower_scaled": 1583438733358505334679428062290134445546661332610343473454,
+      "source_upper_scaled": 40756091222418071188618302012737483654147653499818233682443,
+      "target_lower_scaled": 42339529955776576523297730075027618099694314832428577155897
+    },
+    {
+      "n": 12,
+      "j": 12,
+      "source": 5,
+      "target": 7,
+      "leaves": 2,
+      "margin_lower_scaled": 50877245725323741840725687756398593185869422111759570975,
+      "source_upper_scaled": 42698707459559800630432862879624571294863527784289004643441,
+      "target_lower_scaled": 42749584705285124372273588567380969888049397206400764214416
+    },
+    {
+      "n": 12,
+      "j": 12,
+      "source": 9,
+      "target": 7,
+      "leaves": 2,
+      "margin_lower_scaled": 747246369554215932586434322213505160684185924469318674567,
+      "source_upper_scaled": 42002338335730908439687154245167464727365211281931445539849,
+      "target_lower_scaled": 42749584705285124372273588567380969888049397206400764214416
+    },
+    {
+      "n": 12,
+      "j": 12,
+      "source": 11,
+      "target": 9,
+      "leaves": 2,
+      "margin_lower_scaled": 2439729456286888297965867939446345348829596012651519744357,
+      "source_upper_scaled": 39051844891887657476222880824736933006523998101012368242979,
+      "target_lower_scaled": 41491574348174545774188748764183278355353594113663887987336
+    }
+  ],
+  "EC_complete_leaf_count": 20,
+  "malformed_controls": {
+    "malformed_cases_rejected": [
+      "missing_pair",
+      "wrong_pair",
+      "nonedge_index",
+      "missing_leaf",
+      "duplicate_leaf",
+      "invalid_path",
+      "forged_upper",
+      "forged_target_lower",
+      "changed_source_interval",
+      "target_sample_outside",
+      "changed_source",
+      "false_complete",
+      "producer_self_approval",
+      "missing_designated_EP_witness",
+      "duplicate_EP_witness",
+      "nonpositive_EP_reversal",
+      "unregistered_EP_phase"
+    ],
+    "count": 17
+  },
+  "EP_exact_witness_count": 8,
+  "EP_designated_witness": {
+    "n": 12,
+    "j": 0,
+    "source": 5,
+    "target": 7,
+    "phase": "-1/2",
+    "source_value_interval": [
+      30470195454344039486544373764520686437665106855823873746908,
+      30470195454344039486544373764520686437665106855824512293077
+    ],
+    "target_value_interval": [
+      30223024111189925342428840247143247502305683243932071418513,
+      30223024111189925342428840247143247502305683243932294679697
+    ],
+    "reversal_lower": 247171343154114144115533517377438935359423611891579067211
+  },
+  "EP_strict_39_over_1000_integer_check": {
+    "comparison": "1000*reversal_lower > 39*2^192",
+    "positive_integer_difference": "2364375474033594325937729872339945131431749557481721208056",
+    "passed": true
+  },
+  "measured_EP_screen": {
+    "status": "MEASURED only",
+    "sample_count": 90,
+    "reversal_count": 8
+  },
+  "scope": "Whole-cell E-C at exactly all2 n7 and8 n12 eligible pairs; exact E-P failure at designated n12 pair. No all-degree E-C claim, larger scan, global finite certificate, future round or direction.",
+  "retention": "Full independent outputs stay in /tmp working storage; developer certificate and replay evidence remain in outputs/gated. This compact receipt records hashes and complete-data comparisons. No cold-storage location was invented."
+}

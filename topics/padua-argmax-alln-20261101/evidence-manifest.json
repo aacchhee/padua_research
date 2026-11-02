@@ -1,19 +1,25 @@
 {
-  "format": "padua-argmax-part3-evidence-v1",
+  "format": "padua-argmax-part3-gated-evidence-v2",
   "input_head": "328be35e55143013047ec03a70e9906e82b95353",
+  "gated_input_head": "7d308b10d946b607ae0690454f6c0103690775a4",
   "base_main": "2b52b432fe59c9a50aef9deebe5152c5d6874465",
   "coverage": "topic files and own results; excludes handoffs, this manifest and packaging receipt to avoid metadata cycles",
-  "status": "scientific development complete; required Claude audit pending",
+  "status": "part3 and authorized gated development complete; required Claude audit pending",
   "files": [
     {
       "path": "topics/padua-argmax-alln-20261101/ALLOCATIONS.md",
-      "bytes": 1313,
-      "sha256": "909aa2d3102803043c2bbf90eb252df0dbdf2e766bae37e08edc8bd19ab7991f"
+      "bytes": 2886,
+      "sha256": "66e447222213a69d203eec7cc2dcf0559c6230167f468767a149a1b6900080d0"
     },
     {
       "path": "topics/padua-argmax-alln-20261101/LOG.md",
-      "bytes": 11597,
-      "sha256": "95490d7dfae6be0c453c73b9c1b64272dcf71e4f49323bd6a7e03293f8b69d3f"
+      "bytes": 21911,
+      "sha256": "9494f1f8dedba377bb75888339dd95e4e6742ea11fa786309ca956c75e2ec7e8"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/allocation-scan-gated.json",
+      "bytes": 6024,
+      "sha256": "fc50f6a0962e9129b31611b6206aebbb823752c893b64bab9c3770e83b3c60b2"
     },
     {
       "path": "topics/padua-argmax-alln-20261101/allocation-scan.json",
@@ -56,6 +62,51 @@
       "sha256": "6fe6dd72883701c05da03de2b97853193e022d60da24dfa573cca5f8c5b8e7e7"
     },
     {
+      "path": "topics/padua-argmax-alln-20261101/code/gated/d1_constants_r03.py",
+      "bytes": 2345,
+      "sha256": "3a50c4a7fe477eb41649b528ffbdfd5ed369454ccbf6761dec1078382a67e0f3"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/gated/d1_phase_r01.py",
+      "bytes": 2400,
+      "sha256": "adb3792a249aaf34b286e92936d846c9db1e23ab296e586463bf04d6d853d7ca"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/gated/d1_rows_r06.py",
+      "bytes": 3490,
+      "sha256": "a9decfcd7293bcfd50ec474b9adb72f16854cf9d24d3aa9979c9fcaf9f394329"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/gated/d1_screen_r01.py",
+      "bytes": 11002,
+      "sha256": "b8003e252d62147b19f1bc02116fe84434672c5cfdb91cd1cc835f9ba5d339e4"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/gated/d2_screen_r01.py",
+      "bytes": 12279,
+      "sha256": "1fb72190e9ea0ae53450ad5e379bfe2a74246520e8dd43ae50f7f6a65e0009d2"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/gated/d2_symbolic_r01.py",
+      "bytes": 2516,
+      "sha256": "922f3cadf20cd10b4b02197e01c797ab0b4dffbd440a922cc1221e3707abce97"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/gated/d3_edge_check.py",
+      "bytes": 6296,
+      "sha256": "5f43f69a427c415542848f8ae9e337c69b3a5b8f822e78db38e095a0a2c9a358"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/gated/d3_edge_common.py",
+      "bytes": 4418,
+      "sha256": "fd3b278f167999def5a8f43ddd83da258e5ce2452a76082d9256dcde93d01b92"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/gated/d3_edge_generate.py",
+      "bytes": 4350,
+      "sha256": "b0c2b98851dd8721bc876686fd388c62085938ff24d97308a132a7f14e9e3145"
+    },
+    {
       "path": "topics/padua-argmax-alln-20261101/code/interior.py",
       "bytes": 959,
       "sha256": "f826871ebaa0f69b9efa852057198f9fe0087a1405a1d777bdbdf710d1f296cf"
@@ -72,8 +123,8 @@
     },
     {
       "path": "topics/padua-argmax-alln-20261101/code/part3/check_evidence.py",
-      "bytes": 3776,
-      "sha256": "693ee9cb442de7c0cdd0ed904b7a357ed20bb6cdd4e9e3bf2128b8e176992c2b"
+      "bytes": 3874,
+      "sha256": "3457a19b00215bbb72f92c9b0a93a4b2875f994dc96945bc80b84bbcedb6cd10"
     },
     {
       "path": "topics/padua-argmax-alln-20261101/code/part3/finite_bernstein.py",
@@ -171,9 +222,214 @@
       "sha256": "22e7e8a576cdc1529b88d4c525ec31b876417e713b34e547b405571c38cf0212"
     },
     {
+      "path": "topics/padua-argmax-alln-20261101/gated/CANDIDATES.md",
+      "bytes": 11466,
+      "sha256": "19fee230cea67730cbf8da3c2012d380271358ee1747f2386c21515e6888e300"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/PACKAGING.md",
+      "bytes": 2167,
+      "sha256": "4fa9f6ea2f355f39a8a58f0d48b217a8f325188d235ce9b19c15801fad0dad85"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/PROTOCOL.md",
+      "bytes": 3546,
+      "sha256": "dff0d96ed950559ebaf06f226eaea8cc389fa6202a56cf71b3145235024775ca"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/REPORT.md",
+      "bytes": 8220,
+      "sha256": "47fd12289c1ee25d9543156388977504a336e37589cda69fa645e703ab579fae"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/ROUND_LEDGER.md",
+      "bytes": 3191,
+      "sha256": "c5d705c947e5c43822dbcd549c79aff69c6ef3ae4ec7ca97207b187c3f77a08d"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/checks/d1-r01.md",
+      "bytes": 11713,
+      "sha256": "f6b02093df9e6f16c036cab28dcd253cea0f06f31d5e11b82e4cc305becf73a9"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/checks/d1-r02.md",
+      "bytes": 15476,
+      "sha256": "9b9b42515a4e3d007624c226a7e5ced66c26a4b0a05a9bbb4b7d6400251c787a"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/checks/d1-r03.md",
+      "bytes": 10807,
+      "sha256": "6fb7820f4ca5c9230b74a3de00ace0fa15d26364d86deae11aaad22133a5e7ac"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/checks/d1-r04.md",
+      "bytes": 8383,
+      "sha256": "2054d07d44387bfc5b4c2a13ab167e8e364630d9d8b09421cea04a7be1a696fd"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/checks/d1-r05.md",
+      "bytes": 9052,
+      "sha256": "52ba58f80e5b75bd37339eb8fd349b0f93419f6d208581964a3a0655651b8178"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/checks/d1-r06.md",
+      "bytes": 10213,
+      "sha256": "1dc7bea32cd0aee67b343aa3225cd4d8ab4b2a21356aff476c16c231dfd0cc04"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/checks/d2-r01.md",
+      "bytes": 14322,
+      "sha256": "10af5987f3b91e3ea82f2de4d7b69fb8da712372f9bebf676f7f46354e061c7d"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/checks/d2-r02.md",
+      "bytes": 12735,
+      "sha256": "0aca73f25e518ca1690914befb69839c464e1317e72b1cbe34acf13064457b2d"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/checks/d3-r01.md",
+      "bytes": 15785,
+      "sha256": "f6733e2af13d2bd12f207d9876139ec58efdde958ee895401a1288bc9adbfad3"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d1/REPORT.md",
+      "bytes": 1717,
+      "sha256": "2153611ada0022356373572685845fed631f85cc0f6c33ce2691f9a3cec0cbdd"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d1/r01-phase.md",
+      "bytes": 18658,
+      "sha256": "9566c7abd0cf05ae718b89ed2b06f759901a944aa741ae085f8ec064b8dfbfc3"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d1/r01-screen.md",
+      "bytes": 10896,
+      "sha256": "9e0d9329fc0dd3cadf835a84f2163e71ec854dbe3697c1d70715535b28e5247e"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d1/r02-contract.md",
+      "bytes": 1687,
+      "sha256": "883072bb04ebfc0156789f926018d3da45d2b22246c20bf736d794b918afd9aa"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d1/r02-effectivity.md",
+      "bytes": 11201,
+      "sha256": "5ad890adc61d33952f2999af5b1aad33b80aad008b4bf9e8019a92bb4ea6659f"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d1/r03-contract.md",
+      "bytes": 1846,
+      "sha256": "eefa45fd0b54fc22d673b7047707af1980f7c5a6909a910874fe28c8abf4c246"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d1/r03-explicit-local.md",
+      "bytes": 14073,
+      "sha256": "a62c534cc42e4c36f28f21a2f0ada18f39587f695c60c4396d389396b3c9a952"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d1/r03-next-geometry.md",
+      "bytes": 1681,
+      "sha256": "c7676ec9a24a3fc512d33f41275451155ee8442663ae24d996620ec96f06dbc2"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d1/r04-adaptive-block.md",
+      "bytes": 6231,
+      "sha256": "da0ce1de852254b6e2e25d4c069a466f05c6dee97896810b16f4c8ab4b1ee979"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d1/r04-contract.md",
+      "bytes": 1484,
+      "sha256": "7cfb1e4a74d2c89e4711fdd3b29ec3f7966935d614ab4363858e591f8eb9c685"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d1/r04-next-lattice.md",
+      "bytes": 2053,
+      "sha256": "c3efa870f6766d802104c04f7fb8946b44408f0c22a9d99fa9042e2a50af81c6"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d1/r05-contract.md",
+      "bytes": 1681,
+      "sha256": "713dc103b09182571ca18af0a561da2637837f291ae606dfd13918b06fe41dcb"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d1/r05-lattice-lines.md",
+      "bytes": 5888,
+      "sha256": "8ce1db181e3256a76defbb30b0a813b07391f13b21b4f2f1130a6af55afa6b08"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d1/r05-next-row-sum.md",
+      "bytes": 1665,
+      "sha256": "ba091c8c5a1f0970b316aacff25f0861f76cf8b7aad63c46aa4cb36c90df6b83"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d1/r06-contract.md",
+      "bytes": 1521,
+      "sha256": "63c09ce893473c4f859b681b19754ed2e9f263e8059b8ed5193026fd468fa525"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d1/r06-row-sum.md",
+      "bytes": 5781,
+      "sha256": "af297222621f029a3f208e607013b9cabcda16c8a625509b3128a315a3375ee1"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d2/REPORT.md",
+      "bytes": 1878,
+      "sha256": "cf8dfac6f88b2c2f54f65bf3d1a89f44ac567e16a66d54bd30e4028117c8e8ed"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d2/r01-contract.md",
+      "bytes": 2707,
+      "sha256": "b383218c7cf41f16ef4deab9253f72e3fe4df11514c6648cabec677d2e3eeaa2"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d2/r01-next-reflection.md",
+      "bytes": 1494,
+      "sha256": "5c92b28239d8e932e35ba79b9f27625d94742386ee8c03bcd91ef83b809573c8"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d2/r01-screen.md",
+      "bytes": 11921,
+      "sha256": "af31f11fdb57c792ecb4f0a90846fdec258449403290fbfe293559e48a2811de"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d2/r01-structure.md",
+      "bytes": 5934,
+      "sha256": "c974346e4eeb202abd5a88b5c10087c3d568d5036d804269728c20c228daa42e"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d2/r02-contract.md",
+      "bytes": 3546,
+      "sha256": "57bdd5f5ad723e1baa3cb3c09ac2580e7a970be72998627f9508d3fa3c03fd66"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d2/r02-reflection.md",
+      "bytes": 6591,
+      "sha256": "d5434f29ad9ef688eb67ecee597ba1e57ab933b5cdf73aa2d8e8d9f04dd68d49"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d3/REPORT.md",
+      "bytes": 2432,
+      "sha256": "fbbab0b35834403ffd7361958a5cad9212a6071e93f89ea67d58e48f6636303d"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d3/r01-contract.md",
+      "bytes": 4596,
+      "sha256": "fe75aa75f2fe0b3e878b9ff07ed8ac71e2539fd180e81d014ebd00660e585184"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d3/r01-edge-analysis.md",
+      "bytes": 9357,
+      "sha256": "6114b8c8f4755833dfcd5163f67f086405f1c02f2f1ea620f3762eaa6615c358"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d3/r01-finite.md",
+      "bytes": 12195,
+      "sha256": "94e87303e0e08aecee3250e8108cfb4c97f56c1400bbbdabb286afca3ed9caa4"
+    },
+    {
       "path": "topics/padua-argmax-alln-20261101/ideas-codex-fallback.md",
-      "bytes": 10109,
-      "sha256": "94a29a32ef1a9035c141326f81b2e679745b6ae2bc2cc7c7eb4b85f9b42572b2"
+      "bytes": 11554,
+      "sha256": "f461379bd08a6b090049a43df16a5c40921f2709498058b501f829c60693db0e"
     },
     {
       "path": "topics/padua-argmax-alln-20261101/ideas.md",
@@ -344,6 +600,96 @@
       "path": "topics/padua-argmax-alln-20261101/outputs/environment.txt",
       "bytes": 40,
       "sha256": "e7fa4f5924bef6174af10afdb05b584e9e2784fc326c408db3d6fe685d0bf50e"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/gated/check_d1_r01_receipt.json",
+      "bytes": 9860,
+      "sha256": "0063d9e6db39d0f75fb4df792b4e4ac0e3d440ad8ae6875685da4d7becac391d"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/gated/check_d2_r01_receipt.json",
+      "bytes": 7348,
+      "sha256": "0d35b696ee0c3c1607e2e2fdac6d8fa4c011081e0d2ea4a50bab2e02d7476eb2"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/gated/check_d3_r01_receipt.json",
+      "bytes": 10932,
+      "sha256": "d77ee6d68926d3b19eaf663a6837a5fbcc9d9115fec0db36f26076cd37bf539b"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/gated/d1_constants_r03.json",
+      "bytes": 1310,
+      "sha256": "59e96b0827b4f038e61021b29e076d35c936cd5d54d3fba6ece8f4a3de8088f4"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/gated/d1_phase_r01_sanity.json",
+      "bytes": 1256,
+      "sha256": "d55db704251382e7f65f65acd62b08f01a509904c00266d89acc34c5ccc46297"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/gated/d1_phase_r01_sources.json",
+      "bytes": 3773,
+      "sha256": "d2561f2882814a8e31a79269636cec360755a09962a0d32acb22cf830d47b395"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/gated/d1_rows_r06.json",
+      "bytes": 6507,
+      "sha256": "560e2677d04a3ab6a2a6d0bbaa6e57ca5ab3e97835fefd15abb7d2e2c0ffb9dc"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/gated/d1_screen_r01.json.gz",
+      "bytes": 81843,
+      "sha256": "8b57766f8e0251cc6bbd2b772888846ba475f0c01025e17cdf124a90d6c0fc1d"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/gated/d1_screen_r01.out",
+      "bytes": 43818,
+      "sha256": "a5487a62de947062cd3e9b94bb2750c30d9d3019e2ffa2eaadb7aae554ce640c"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/gated/d2_screen_r01.json",
+      "bytes": 72838,
+      "sha256": "78dbf52b06c15d2ebae5f0fee5153236de28034ac8cc0fdf0d923de887ead5ad"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/gated/d2_screen_r01.out",
+      "bytes": 17010,
+      "sha256": "7b2ce3afb8a35510cf2351e70f714bec8c639795cbe4f661bf96c60e229ac1a7"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/gated/d2_screen_r01_weighted.json",
+      "bytes": 4675,
+      "sha256": "8250472c4d73a9ac9c8a74d2d587581fa2976e6f094efbe2829daab12b8dc43b"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/gated/d2_symbolic_r01.json",
+      "bytes": 891,
+      "sha256": "f3e85314788e6ca3fab6b06b7e420a23f42ae6adabd25f09092f42ca5d555262"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/gated/d3_edge_certificate.json",
+      "bytes": 13561,
+      "sha256": "0d660fc70e9db06624d6f8bd82371602c9f6d540b01124824e264624de0385b7"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/gated/d3_edge_check.json",
+      "bytes": 9696,
+      "sha256": "7fd1ca1b8c94ea1f1f2e699de1b9aa2a70f4e749d7fcf1dc34291bb376fe2f05"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/gated/d3_edge_check.out",
+      "bytes": 8086,
+      "sha256": "7ed591e7d4b55da00f13172398d49146bda88f3a146cd4df3981c6d68fe15a0f"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/gated/d3_edge_generate.out",
+      "bytes": 1916,
+      "sha256": "56dd95b333d6ceedb49434b9625bca50bcfde23f3d8fb57af0574c88665de314"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/gated/d3_ep_screen.json",
+      "bytes": 24993,
+      "sha256": "3215523e1a768ce7e81c76283ac18bf476f8162bdcd84e579a7b93388707d14c"
     },
     {
       "path": "topics/padua-argmax-alln-20261101/outputs/interior.out",
@@ -877,13 +1223,13 @@
     },
     {
       "path": "topics/padua-argmax-alln-20261101/proposed-record-changes.md",
-      "bytes": 8148,
-      "sha256": "556aa7e76a789823ef3468dcbebad3a2b3e5ce7fb2687a1c68d52b834092a55b"
+      "bytes": 10392,
+      "sha256": "dd42fa03a6bb76b95ca961bdc5633f1d4d68f59045cfe766ad841080bd593503"
     },
     {
       "path": "topics/padua-argmax-alln-20261101/report.md",
-      "bytes": 7349,
-      "sha256": "28fbff63924c087751e644fa26b4be9573149555eb7f93af0330da97675c401a"
+      "bytes": 9912,
+      "sha256": "34311eadda37c8a6f3ebe61ad3fb327fccef0392f36600878243c0435660b373"
     },
     {
       "path": "topics/padua-argmax-alln-20261101/theory/argmax-alln-claude-01-measured-observations.md",
@@ -941,9 +1287,104 @@
       "sha256": "b5e01d3992ceef524570da94f379d995e9bf71a29e7360e720a507be94b65a60"
     },
     {
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-01-pairwise-defect-projection.md",
+      "bytes": 7566,
+      "sha256": "4e35ff9890e329bc581ae9a68d2c33bb1a9eb8439fd2884d1f260eefdec167f0"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-02-two-phase-global-bound.md",
+      "bytes": 8491,
+      "sha256": "39c2f217f1ce1ca618033f0ac32852ad47933817a240911d085764cf1e3b17b7"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-03-two-phase-local-gain.md",
+      "bytes": 13527,
+      "sha256": "671353baf16d7237f6b7784a16b65607972375d81efc8d01a9a22a82e936ebd2"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-04-compact-complement-gap.md",
+      "bytes": 4759,
+      "sha256": "fd86232665442f56e39bd1614bd355acd7e4c9795ef1358bcc766c40511f9e4b"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-05-finite-projected-defect.md",
+      "bytes": 3612,
+      "sha256": "a54168c4281c1cba70c619e50eb9b71d2ccd6304681571947e6089baf41035cf"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-06-exact-primitive-cusp.md",
+      "bytes": 2797,
+      "sha256": "89de42bb684299c3b345377a06506debbbfeb46a2ba2aac4a527be6654c81774"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-07-explicit-local-envelope.md",
+      "bytes": 12467,
+      "sha256": "9f3a3edbc5ad9a6b327bc689e547fd997af00603943d2bac511aa45d0edc8ccb"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-08-adaptive-finite-defect.md",
+      "bytes": 10290,
+      "sha256": "04cd3c9f93a6be48e1c6215ce11675e8cbb711d2c738254842b49662a9b1c993"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-09-shrinking-corner-reduction.md",
+      "bytes": 7153,
+      "sha256": "c7018731a1a9139ba0b217818d6d241e579da6413be283b55c3f8143e5f00301"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-10-noncorner-coset-defect.md",
+      "bytes": 11239,
+      "sha256": "ee0408d648af83621f963de1ac0f8df03fc066d98142a56615ebaf9b067a1987"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-11-corner-phase-localization.md",
+      "bytes": 5868,
+      "sha256": "42372e7367ad21572544f38f281cb590d8e4b8ed07af3608fe64107c2f0dddae"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-12-row-primitive-identity.md",
+      "bytes": 9288,
+      "sha256": "94a0c89cc0d3b00d02b7669336d1fb343e2ea5f32514b514cd4dda73086e8d60"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-13-corner-first-variation.md",
+      "bytes": 12091,
+      "sha256": "c0b927c14ad281e2717fc626f3c8fa7f34a5b5d94f85420b31eec283ec5e7312"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-14-reflection-first-corner-bound.md",
+      "bytes": 12737,
+      "sha256": "9e46c6c4469087117f6cd09c0853181fb5f6366aaf81f13bb402ff127e4aead8"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-15-eventual-global-argmax.md",
+      "bytes": 6195,
+      "sha256": "def15397bed5342905367e9309ca851ed357e4d24aef2069e1d84b6dcae59b7e"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-16-horizontal-compact-envelope.md",
+      "bytes": 8579,
+      "sha256": "ac9e4ed55dccce721d325524cf31b5a33a3d6dbe1a55c43108bbe068bb53638c"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-17-finite-edge-cell-comparison.md",
+      "bytes": 11735,
+      "sha256": "3d7672e808626faee576de9fa28606e251a040eb19799aecc773e9e7ec5e1d1b"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-N01-majorant-coset-obstruction.md",
+      "bytes": 2024,
+      "sha256": "775c4135c5ae40ffad30b785cb4a0e5012a3ca1b490668c2f52d51d226e2a5c6"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-N02-pointwise-edge-translation-obstruction.md",
+      "bytes": 8293,
+      "sha256": "08c7f7ac59ea7b5284e5cb5fe05ee2f887a68da812be1afe7aa4cea926d022de"
+    },
+    {
       "path": "results/padua-argmax-alln-20261101.md",
-      "bytes": 2167,
-      "sha256": "698ba0edbad4daf812f84fd1675359903885ffaddd83c06dbb263046e8d09c4a"
+      "bytes": 3435,
+      "sha256": "bcfd5390eab37bb8c19a3a10b6faa4d4dd6b3317efa8412d3136bcde4b77c868"
     }
   ]
 }

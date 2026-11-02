@@ -1,7 +1,7 @@
 # All-degree Padua argmax (A4 / PD-T099): strategy topic
 
 - Branch: `claude/padua-argmax-alln-20261101` · Base: main `2b52b43` (merged in `280fea4`; initially `28aaa20`) · Developer: Claude (planning, MEASURED records); Codex (part 3 development, from handoff 02) · Auditor: Codex for Claude's records, Claude for Codex's
-- Stage: WORK · Active: [handoff04](handoffs/04-gated-development.md), AC-authorized sequential gated development; previous audit remains PENDING.
+- Stage: AUDIT · Authorized gated development complete; handoff04 closes after its output commit and the next numbered Claude audit handoff05 is published in the following status/handoff-only commit. Required Claude audit remains PENDING.
 - Permanent reserved ranges (no final IDs assigned): PD-T206–225, PD-N078–083, IDEA-316–335, LIT-460–465; first published405febab, [draft PR17](https://github.com/aacchhee/padua_research/pull/17), [ledger](ALLOCATIONS.md).
 - Claims:
   - PD-T?argmax-alln-claude-01 — float64 majorant/gap observations — MEASURED — [theory](theory/argmax-alln-claude-01-measured-observations.md).
@@ -106,6 +106,20 @@ AC authorizes at most7 rounds each in direction1 (defect domination), then2 (uni
 - Direction3 round1 is registered only after that independent PASS/STOP: exact whole-cell vertical E-C atn7,12, separately scoped E-P common-phase test, and identification of the horizontal primitive with the two-phase axis restriction. [Contract](gated/d3/r01-contract.md). No generating-curve/direction4 work is authorized.
 - Workflow's additional-range rule triggered when expanded theorem count exceeded20. Original reservations are unchanged/permanent; extra PD-T226–245 was reserved by fresh main/open-PR/retired scan in3aebb299a4154dac822974b7245a9d243f21374e and linked from PR17. No final IDs or shared scientific registry changed. [Additional scan](allocation-scan-gated.json).
 
-- Six prescribed independent replays: COMPLETE at the setup checkpoint; see independent-checks-claude-records.md. Standalone maj.py whole-square scans remain outside that replay's coverage.
-- Claude Opus5.5 xhigh topic audit under handoff03; complete state/IDEAS read required because the branch carries mechanisms and scoped negative content.
-- General-beta series, center-minimality, P2 primitive estimates, P3–P5 and a rigorous effective threshold remain unresolved. Further development follows audit/disposition; no additional finite discovery is implicitly claimed.
+### Gated direction3 closure and development output boundary
+
+- Direction3 closes after1 round. The exact corrected polynomial identity F^h(s)=-F(s,0) proves the missing horizontal primitive bounds and compact envelope, including both edges/parities and interval-boundary minimizers. Theory16 independently passes; no horizontal numerical scan was needed.
+- Exact univariate outward Bernstein certificates prove all10 eligible whole-cell E-C comparisons atn7,12, with20 complete source leaves. The distinct Astra xhigh worker actually regenerated the producer and reran the checker; every scientific value matches, the float E-P output is byte-identical and all17 malformed controls reject. Theory17 is PROVED in that finite scope; no additional global degree is certified.
+- The separately registered stronger common-phase E-P route is exactly refuted atn12,j0,k5→7,u=-1/2, with lambda(1,cos(9pi/26))-lambda(1,0)>39/1000. The scoped negative theoremN02 does not refute whole-cell E-C. Initial edge-sign prose was corrected to physical x=+1/-1 before accepted execution; the checker was strengthened before final replay to require the designated witness, uniqueness and malformed-witness controls. Histories remain in the finite/check records.
+- Developer, parent and independent checker support STOP after1: no concrete all-n phase-alignment or sign repair emerged. All authorized directions are complete in order6/2/1 (9 rounds); unused quota was not spent automatically. Direction4 was not started. [Consolidated report](gated/REPORT.md), [candidates](gated/CANDIDATES.md), [D3 closure](gated/d3/REPORT.md), [own results](../../results/padua-argmax-alln-20261101.md).
+- Strongest conclusion is eventual exact two-corner global argmax, with non-effective global threshold; finite range remains2–16 and the unknown finite bridge keeps PD-T099 OPEN. Compact P2 is now proved, while center-minimality, general-beta series and usable effectivity remain unresolved. No new degree>=17 global certificate or large scan was run.
+- Evidence manifest/checker is refreshed at this output boundary after the frozen WORK checkpoints. Command: `python topics/padua-argmax-alln-20261101/code/part3/check_evidence.py --refresh`, followed by plain integrity check. Small necessary evidence remains below repository limits; full duplicate independent raw runs stay under/tmp with committed compact receipts. Required Claude audit is still PENDING; all final-ID/shared-registry preparation remains deferred.
+- GitHub connector is used for all remote operations, with expected-head ref updates and no force/main mutation. Current main remains2b52b432fe59c9a50aef9deebe5152c5d6874465; rule blobs unchanged. Original workspace checkout remains intact. Configured/requested Sol xhigh and Astra xhigh settings are recorded; runtime metadata is not independently exposed. Connector's noreply author identity limitation remains as previously disclosed.
+- Development outputs are committed first. A following commit changes only handoff04's status and adds [handoff05](handoffs/05-audit.md) with the real output SHA. Superseded03 is not marked audited. Draft PR17 remains unready to merge; only AC merges.
+
+## Runs / work still needed after gated completion
+
+- Required Claude Opus5.5 xhigh audit under handoff05, including original part3 and all nine gated rounds; complete state/IDEAS read and explicit dispositions required. Supplementary Astra checks do not replace it.
+- A direct analytic finite-bridge comparison or an effective global threshold with complete remaining coverage; no such run/proof is claimed here. All-degree PD-T099 stays OPEN.
+- General-beta series and center-minimality remain unresolved, with no new execution planned under the closed round quota. Uniform slope/energy and row partial-sum alternatives remain deferred with their stated resumption conditions.
+- Six prescribed independent original-Claude replays are COMPLETE; standalone maj.py whole-square scans remain outside that replay's coverage. No new execution is implied by this list.

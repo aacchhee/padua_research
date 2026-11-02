@@ -32,11 +32,12 @@ def run(refresh=False):
         files = [{'path': str(p.relative_to(ROOT)), 'bytes': p.stat().st_size,
                   'sha256': sha(p.read_bytes())} for p in paths()]
         MANIFEST.write_text(json.dumps({
-            'format': 'padua-argmax-part3-evidence-v1',
+            'format': 'padua-argmax-part3-gated-evidence-v2',
             'input_head': '328be35e55143013047ec03a70e9906e82b95353',
+            'gated_input_head': '7d308b10d946b607ae0690454f6c0103690775a4',
             'base_main': '2b52b432fe59c9a50aef9deebe5152c5d6874465',
             'coverage': 'topic files and own results; excludes handoffs, this manifest and packaging receipt to avoid metadata cycles',
-            'status': 'scientific development complete; required Claude audit pending',
+            'status': 'part3 and authorized gated development complete; required Claude audit pending',
             'files': files}, indent=2) + '\n')
     data = json.loads(MANIFEST.read_text())
     expected = {str(p.relative_to(ROOT)) for p in paths()}

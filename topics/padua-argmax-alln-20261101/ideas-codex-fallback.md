@@ -74,3 +74,11 @@ Aliases: P4/P5 sufficient inequalities; phase-localized positive defect.
 - Actual results: no new quantitative run of this formulation; parent T2/T3/T4 outcomes motivate the distinction but do not establish its hypotheses.
 - Disposition: **deferred, OPEN** until an explicit phase estimate and uniform defect hypothesis are specified. P3 still requires a local sign/radius proof and original 1-D reading first.
 - Canonical record: conditional obligations in [the attempt](attempts/P3-P5-and-pairing.md); no new theorem/negative ID.
+
+## 2026-11-02 gated-campaign dispositions
+
+The preceding records preserve their original statements, pre-run criteria and historical outcomes. [Gated candidate records](gated/CANDIDATES.md) and [campaign report](gated/REPORT.md) supply the dated continuation.
+
+Fallback03 E-C now has an exact finite proof for all10 eligible whole-cell comparisons atn7,12, using complete outward Bernstein source bounds versus target-center lower bounds, with distinct producer/checker replay and17 malformed controls. [Gated theorem17](theory/gated-codex-17-finite-edge-cell-comparison.md). The all-degree E-C statement is still OPEN/deferred. Its separate stronger E-P fixed-phase translation is **REJECTED: refuted**, by the exact n12 witness in [gated-N02](theory/gated-codex-N02-pointwise-edge-translation-obstruction.md); this does not refute E-C. Resume E-C only with a concrete analytic comparison controlling different maximizing phases; none emerged in the bounded round. No larger scan is its next gate.
+
+Fallback04's two-phase/finite-defect hypotheses have now produced qualitative compact gaps and actual-corner phase localization (gated01–11), and reflection before absolute values gives a separate eventual exact global argmax theorem (gated14–15). The all-degree finite bridge/effectivity remains OPEN. No original failure or stronger unresolved target was silently relabeled. Required Claude audit remains PENDING for all new development.

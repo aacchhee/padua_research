@@ -11,7 +11,7 @@ OLD:
 
 NEW:
 ```
-| PD-T099 (PD-T?programme-ideas-claude-05) | Padua Lebesgue function attains its maximum at a non-node corner (conjecture) | OPEN | no counterexample at 75 tested degrees ≤ 200 (MEASURED); statement OPEN | OPEN target, not rejected; open target A4 | PD-T098 (definitions) | [record](topics/programme-ideas-20261031/theory/programme-ideas-claude-05-padua-corner-argmax.md) | [response-01](topics/programme-ideas-20261031/response-01.md); [Codex audit-01](topics/programme-ideas-20261031/audit-01.md); [Codex audit-02](topics/programme-ideas-20261031/audit-02.md) and [audit-03](topics/programme-ideas-20261031/audit-03.md): accepted at written scope; [integration audit-04](topics/programme-ideas-20261031/audit-04.md); PR12 dated split: Finite n3–7 globals PD-T162, PD-T166, PD-T169, PD-T174, PD-T177 and central-edge splits PD-T185, PD-T186, PD-T187, PD-T188, PD-T189, PD-T190, PD-T191, PD-T192 are PROVED; full-square all-n target remains OPEN. PR17 proposed additional splits: n2 (PD-T?argmax-alln-codex-02), n8 (codex-07), n9–16 (codex-08), compact vertical gap (codex-04) and horizontal supporting defect (codex-05); see topics/padua-argmax-alln-20261101/report.md. Apply only after accepted audit and final-ID substitution. |
+| PD-T099 (PD-T?programme-ideas-claude-05) | Padua Lebesgue function attains its maximum at a non-node corner (conjecture) | OPEN | no counterexample at 75 tested degrees ≤ 200 (MEASURED); statement OPEN | OPEN target, not rejected; open target A4 | PD-T098 (definitions) | [record](topics/programme-ideas-20261031/theory/programme-ideas-claude-05-padua-corner-argmax.md) | [response-01](topics/programme-ideas-20261031/response-01.md); [Codex audit-01](topics/programme-ideas-20261031/audit-01.md); [Codex audit-02](topics/programme-ideas-20261031/audit-02.md) and [audit-03](topics/programme-ideas-20261031/audit-03.md): accepted at written scope; [integration audit-04](topics/programme-ideas-20261031/audit-04.md); PR12 dated split: Finite n3–7 globals PD-T162, PD-T166, PD-T169, PD-T174, PD-T177 and central-edge splits PD-T185, PD-T186, PD-T187, PD-T188, PD-T189, PD-T190, PD-T191, PD-T192 are PROVED; full-square all-n target remains OPEN. PR17 proposed additional splits: finite n2/8/9–16 (codex-02/07/08), compact vertical gap (codex-04), horizontal supporting defect and compact envelope (codex-05 and gated-codex-16), two-phase/localization lemmas (gated-codex-01–13), reflection-first local corner bound (gated-codex-14), eventual exact two-corner global argmax with non-effective threshold (gated-codex-15), finite E-C comparisons (gated-codex-17) and narrowly scoped primitive/E-P obstructions (gated-N01/N02). The unknown finite bridge keeps the original all-degree target OPEN; see topics/padua-argmax-alln-20261101/report.md. Apply only after accepted audit and final-ID substitution. |
 ```
 
 ## PROOF_STATUS.md — PD-T181 supersession
@@ -40,6 +40,7 @@ Owner branch: `claude/padua-argmax-alln-20261101`. First publication:
 `405febab68fbe1d998bf894c2d21dfe23d689f96`, PR17, 2026-11-01.
 Import unchanged from [topic ledger](../padua-argmax-alln-20261101/ALLOCATIONS.md).
 PD-T206–225(count20), PD-N078–083(count6), IDEA-316–335(count20), LIT-460–465(count6).
+Additional disjoint PD-T226–245(count20), first publication3aebb299a4154dac822974b7245a9d243f21374e, PR17,2026-11-02; union scan at main2b52b432fe59c9a50aef9deebe5152c5d6874465 and topicfdee6511195632dcf368865edef87b31be40f95c, onlyPR17open and no closed-unmerged PR. Original ranges unchanged.
 Unused IDs remain permanent gaps. No re-reservation or accepted-ID renumbering.
 Heads checked before original publication: main2b52b432fe59c9a50aef9deebe5152c5d6874465,
 topic328be35e55143013047ec03a70e9906e82b95353; all15prior PRs merged.
@@ -55,7 +56,7 @@ NEW:
 ## Padua argmax all-degree part 3
 Reservation: topics/padua-argmax-alln-20261101/ALLOCATIONS.md; first publication405febab68fbe1d998bf894c2d21dfe23d689f96, PR17.
 No final IDs assigned at audit handoff. After final-ID assignment preserve mappings for all Claude/Codex provisional claims.
-PD-T099 splits into the finite degree2/8/9–16 and compact vertical claims listed in the topic report; full all-degree target stays OPEN.
+PD-T099 retains its original all-degree wording and OPEN status. Separately register the finite2/8/9–16 and eventual exact argmax theorem, compact edge envelopes, local/phase/finite-defect dependencies and scoped obstructions in the current topic report. Preserve every original-to-split and provisional-to-final mapping. Import additional PD-T226–245 reservation unchanged; first publication3aebb299a4154dac822974b7245a9d243f21374e, PR17.
 ```
 
 ## RESULTS.md — append own topic section
@@ -64,27 +65,26 @@ OLD: empty suffix (no section for this topic).
 
 NEW:
 ```
-# padua-argmax-alln-20261101 — part 3 results
+# padua-argmax-alln-20261101 — current results
 
 Branch: `claude/padua-argmax-alln-20261101`; [draft PR17](https://github.com/aacchhee/padua_research/pull/17).
-2026-11-01. Codex gpt-6.1-sol xhigh. Required Claude audit PENDING.
-IDs remain provisional; [reservation](../topics/padua-argmax-alln-20261101/ALLOCATIONS.md).
+2026-11-02. Codex gpt-6.1-sol xhigh development; distinct Astra supplementary checks. Required Claude Opus5.5 xhigh audit **PENDING**. All IDs provisional; [permanent reservations](../topics/padua-argmax-alln-20261101/ALLOCATIONS.md).
 
-- **PROVED, codex-02:** n2 maximum3, only at(±1,−1); rational proof and independent exact replay.
-- **PROVED, codex-03:** tensor Bernstein certificate correctness, strict corner leaves and outward integer arithmetic.
-- **PROVED, codex-07/08:** global argmax only at the two non-node corners for n8 and every n9–16. All new certificates independently replayed. With inherited n3–7, the certified finite range is **2≤n≤16**.
-- **PROVED, codex-04:** positive compact vertical-edge envelope gap, with continuous positive integral and explicit positive lower bound.
-- **PROVED, codex-05:** horizontal decomposition and compact positive defect limit. The P2 envelope remains OPEN.
-- **MEASURED, codex-01:** four-edge scans at selected degrees through400 retain the intended noncorner profile; raw interior/corner profile tests fail their planning criteria. Literal localization effectivity projection≈1.33×10^14 is inferred, not rigorous.
-- **PROVED, codex-N01:** a precise tie-inclusive finite pairing order fails at n4. This rejects only that formulation; the broader pairing suggestion remains unresolved. The separate geometric screens in codex-06 are MEASURED.
-- Claude observations01/02 remain MEASURED; all six prescribed independent replays match exactly.
+- **PROVED, gated-codex-15:** for every sufficiently large degree, the global maximizers are exactly the two physical nonnode corners. The existential threshold N_* is non-effective. [Eventual theorem](../topics/padua-argmax-alln-20261101/theory/gated-codex-15-eventual-global-argmax.md).
+- **PROVED, codex-02/03/07/08:** complete finite global argmax certification for every2<=n<=16, with exact/outward arithmetic and independent replay. No new degree>=17 global certificate was run.
+- **PROVED, gated-codex-01–11:** two-phase primitive bounds, finite pairwise cancellation and uniform actual-corner phase localization. Exact primitive cusp has its own theorem06 and scoped negative N01; it does not refute lambda's corner argmax.
+- **PROVED, gated-codex-12/13:** exact row identities and physical corner first variation/aggregate Taylor upper model. Sharper row partial-sum bounds and uniform slope/energy premises remain OPEN.
+- **PROVED, gated-codex-14:** reflection-first local bound with237000rho²log(n+1) remainder; strict local descent on physical radius2^-17/n² under coarse sufficient logn>=10^7. [Local theorem](../topics/padua-argmax-alln-20261101/theory/gated-codex-14-reflection-first-corner-bound.md).
+- **PROVED, codex-04/05 and gated-codex-16:** positive compact vertical and horizontal edge envelopes; horizontal primitive is exactly S(s,0). Neither center-minimality nor an effective remainder is claimed.
+- **PROVED, gated-codex-17:** all ten whole-cell centreward E-C comparisons atn7,12, with20 complete Bernstein leaves and distinct producer/checker replay;17 malformed controls reject. All-n E-C remains OPEN.
+- **PROVED, gated-codex-N02:** the stronger common-phase E-P translation fails atn12: lambda(1,cos(9pi/26))-lambda(1,0)>39/1000. E-C and other pairing maps are not refuted.
+- Earlier exact tie-inclusive O-Lt obstruction (codex-N01), finite MEASURED T1–T4/pairing screens and six original-Claude-script replays retain their scopes. The T4 projection is inferred, not a rigorous threshold.
 
-All record IDs have prefix `PD-T?argmax-alln-`, except N01 with `PD-N?`.
-[Report](../topics/padua-argmax-alln-20261101/report.md) links every proof, attempt and independent check.
+All-degree **PD-T099 remains OPEN**. Finite2–16 and eventualn>=N_* do not cover the unknown finite bridge17<=n<N_*. A complete proof needs an effective global threshold with matching coverage, or a direct comparison covering that range. General-beta series and defect center-minimality remain unresolved.
 
-PD-T099 remains **OPEN**. P0 and a positive-gap compact form of P1 are closed. P2 primitive bounds, P3 corner neighborhoods, P4 interior, P5 strips and P6 effective threshold remain OPEN. The general-β alternating series and center-minimality proof remain unfinished.
+The authorized gated campaign completed sequentially with **6 / 2 / 1 rounds** in directions1 / 2 / 3; unused quota was not spent without a concrete viable next lemma. All failed variants and resumption conditions are retained in [campaign report](../topics/padua-argmax-alln-20261101/gated/REPORT.md), [candidate records](../topics/padua-argmax-alln-20261101/gated/CANDIDATES.md) and [round ledger](../topics/padua-argmax-alln-20261101/gated/ROUND_LEDGER.md).
 
-Next: Claude Opus5.5 xhigh audit, then dispositions/PR preparation. No final IDs or shared scientific registries changed.
+Next: required Claude audit of part3 plus all gated development, then dispositions and final-ID/PR preparation. No final IDs assigned or shared scientific registries changed. [Topic report](../topics/padua-argmax-alln-20261101/report.md).
 ```
 
 At preparation, refresh this block from the topic-owned results file, preserving every other section. Likewise append only this topic's audited rows to IDEAS, PROOF_STATUS and topic/frontier indexes, with dispositions for each retained or failed precise formulation. No scientific registry has changed in this session.
