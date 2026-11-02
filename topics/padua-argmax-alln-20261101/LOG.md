@@ -93,6 +93,12 @@ AC authorizes at most7 rounds each in direction1 (defect domination), then2 (uni
 - The resulting qualitative theorem confines all global maximizers to actual non-node corner phases with uniformly vanishing scaled distance. This does not prove exact corner equality or an effective threshold; the global phase-entry/effectivity frontier remains OPEN.
 - GO to one bounded exact primitive row-resummation repair in round6, with a registered STOP if no sharper uniform bound emerges. No direction2/3 work has started. [Round ledger](gated/ROUND_LEDGER.md).
 
+### Gated direction1 closure / direction2 round1 checkpoint
+
+- Direction1 closes after6 rounds. Round6's exact row identities independently pass, but uncontrolled negative partial sums supply no sharper uniform bound. The specified repair stops; unused round7 is not a quota. The strongest retained conclusion is uniform vanishing scaled distance of all global maximizers from actual nonnode corners, with a non-effective threshold.
+- Direction2 round1 proves the exact corner zero mask, values, gradients, linear inward first variation and aggregate Taylor upper model even when nonzero cardinals change sign. Uniform slope/weighted-energy hypotheses remain OPEN. The declared screen at13 degrees through128 and5 directions, supplementary energy diagnostic and8 exact symbolic checks were independently replayed; numerical negativity/bounded energy are MEASURED only. [Check](gated/checks/d2-r01.md).
+- The concrete next candidate averages four reflected kernels before absolute values. [Round2 contract](gated/d2/r02-contract.md) is registered before execution; its exact normalization and full averaged Taylor remainder decide viability. An eventual theorem, if proved, will be split from the all-degree finite bridge. Direction3 has not started. Required Claude audit remains PENDING, stage WORK, handoff04 open.
+
 - Six prescribed independent replays: COMPLETE at the setup checkpoint; see independent-checks-claude-records.md. Standalone maj.py whole-square scans remain outside that replay's coverage.
 - Claude Opus5.5 xhigh topic audit under handoff03; complete state/IDEAS read required because the branch carries mechanisms and scoped negative content.
 - General-beta series, center-minimality, P2 primitive estimates, P3–P5 and a rigorous effective threshold remain unresolved. Further development follows audit/disposition; no additional finite discovery is implicitly claimed.
