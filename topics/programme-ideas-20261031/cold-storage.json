@@ -168,7 +168,7 @@
    "git_blob": "043a29eda249bbfd4e2e0551e47ff3d6c4f95763",
    "generating_command": "not script-generated: root-fetched provenance of 155 pinned files",
    "summary": "audit-01.md:124; LOG.md:102",
-   "notes": "AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
+   "notes": "Root-fetched provenance record (155 pinned files); no committed script reads it (searched every committed *.py, *.sh, *.js file for its name). Passive references: LOG.md:102, audit-01.md:124 (prose), audit-support/delivery-manifest.json:158 (hash listing) and COLD_STORAGE.md:14,61. Restore with `python tools/cold_storage.py restore programme-ideas-20261031` only to inspect or hash it. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
   },
   {
    "path": "topics/programme-ideas-20261031/lit/integration-map-pr10.json",
@@ -177,7 +177,7 @@
    "git_blob": "1fd383cd84c5b2e2c169e33778d0b35cac239cdf",
    "generating_command": "not script-generated: agent-produced literature dedupe data",
    "summary": "lit/integration-map-pr10.md (companion table)",
-   "notes": "Restore before running pr-prep/allocate.py and the audit-04 checkers. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
+   "notes": "Literature integration map (PR #10 comparison). Combined restoration prerequisites for the live allocator topics/programme-ideas-20261031/pr-prep/allocate.py (default read-only run; it reads the working tree at :30-31 and :59-62): `python tools/cold_storage.py restore lattice-unisolvence-20261031` (provisional-id-map.json, :30), `python tools/cold_storage.py restore bivariate-lanczos-20261031` (pr-prep/id-map.json, :31) and `python tools/cold_storage.py restore programme-ideas-20261031` (lit/integration-map.json, :59, and lit/integration-map-pr10.json, :62); each command restores the whole slug, and all three were needed (omitting any one stops the allocator with FileNotFoundError, checked in a disposable clone of the cleanup head). The retained topics/programme-ideas-20261031/pr-prep/id-map.json, lit/baseline.md, theory files and shared registries are not moved. Restoring is not a claim that point-in-time checkers pass at a later head. Working-tree readers: topics/programme-ideas-20261031/pr-prep/allocate.py:62, topics/programme-ideas-20261031/audit-04-support/literature-repair-check.py:38 (default revision WORKTREE, :16 and :23-24; also :120-122), topics/programme-ideas-20261031/audit-04-support/allocation-repair-check.py:49-50 (current() snapshot, :33-36). Historical Git readers (pinned revisions): topics/programme-ideas-20261031/audit-04-support/literature-check.py:37 (SHA 37820a528c863e5cfe2dc2f1f8879b4fd40cf210, :17 and :22-23), topics/programme-ideas-20261031/audit-04-support/allocation-check.py:90 and :178-186 (SOURCE and ALLOC^), topics/programme-ideas-20261031/audit-04-support/integration-repair-check.py:46-50 (git show at SOURCE and REPAIR).  AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
   },
   {
    "path": "topics/programme-ideas-20261031/lit/integration-map.json",
@@ -186,7 +186,7 @@
    "git_blob": "d5dedde399ec97ac2d48491bbbedb96ae57c8e5c",
    "generating_command": "not script-generated: agent-produced literature dedupe data",
    "summary": "lit/integration-map.md (companion table)",
-   "notes": "Restore before running pr-prep/allocate.py and the audit-04 checkers. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
+   "notes": "Literature integration map. Combined restoration prerequisites for the live allocator topics/programme-ideas-20261031/pr-prep/allocate.py (default read-only run; it reads the working tree at :30-31 and :59-62): `python tools/cold_storage.py restore lattice-unisolvence-20261031` (provisional-id-map.json, :30), `python tools/cold_storage.py restore bivariate-lanczos-20261031` (pr-prep/id-map.json, :31) and `python tools/cold_storage.py restore programme-ideas-20261031` (lit/integration-map.json, :59, and lit/integration-map-pr10.json, :62); each command restores the whole slug, and all three were needed (omitting any one stops the allocator with FileNotFoundError, checked in a disposable clone of the cleanup head). The retained topics/programme-ideas-20261031/pr-prep/id-map.json, lit/baseline.md, theory files and shared registries are not moved. Restoring is not a claim that point-in-time checkers pass at a later head. Working-tree readers: topics/programme-ideas-20261031/pr-prep/allocate.py:59, topics/programme-ideas-20261031/audit-04-support/literature-repair-check.py:37 (default revision WORKTREE, :16 and :23-24; also :120-122), topics/programme-ideas-20261031/audit-04-support/allocation-repair-check.py:49-50 (current() snapshot, :33-36). Historical Git readers (pinned revisions): topics/programme-ideas-20261031/audit-04-support/literature-check.py:36 (SHA 37820a528c863e5cfe2dc2f1f8879b4fd40cf210, :17 and :22-23), topics/programme-ideas-20261031/audit-04-support/allocation-check.py:90 and :178-186 (SOURCE and ALLOC^), topics/programme-ideas-20261031/audit-04-support/integration-repair-check.py:46-50 (git show at SOURCE and REPAIR).  AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
   }
  ],
  "total_bytes": 1503737

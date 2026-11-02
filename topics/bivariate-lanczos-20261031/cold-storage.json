@@ -438,7 +438,7 @@
    "git_blob": "c9a9e9f8660cb54ed2f73718a8d9a87c0d703614",
    "generating_command": "not script-generated: immutable ID allocation written once by the first pr-prep/allocate.py (commit 9a77f2b)",
    "summary": "ID_CROSSWALK.md rows for the 404 mappings (all mirrored); pr-prep/crosswalk.rows.md",
-   "notes": "Restore before running pr-prep/allocate.py, pr-prep/check_integration.py, audit-04/registries/check_registries.py or programme-ideas pr-prep/allocate.py. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
+   "notes": "Registry map (immutable allocation input). Restore with `python tools/cold_storage.py restore bivariate-lanczos-20261031`. Working-tree readers (read the checked-out file): topics/bivariate-lanczos-20261031/pr-prep/allocate.py:39 (and :42, which hashes it against registry-semantics.json), topics/bivariate-lanczos-20261031/pr-prep/check_integration.py:15, topics/bivariate-lanczos-20261031/audit-04/registries/check_registries.py:27, topics/bivariate-lanczos-20261031/audit-04/literature/check_literature.py:143-147 (worktree_matches_head comparison only), and, across topics, topics/programme-ideas-20261031/pr-prep/allocate.py:31 and topics/programme-ideas-20261031/audit-04-support/allocation-repair-check.py:49-50 (its current() snapshot, :33-36). Historical Git readers (git show at a pinned revision, so restoring the current file does not substitute for the pinned history and does not make them accept a later head): topics/bivariate-lanczos-20261031/response-04/check_impact.py:40 (CANDIDATE 98945cbcf10c4f8eb53f77c996db358392d42391, :9), topics/bivariate-lanczos-20261031/audit-04/literature/check_literature.py:78, topics/bivariate-lanczos-20261031/audit-04/science-impact/check_preservation.py:44 (HEAD a2dd845b8a231e1b00733e1361e2a9ad3bad222f, :14), topics/bivariate-lanczos-20261031/audit-05/check_integration_independent.py:66-68 (candidate argument and base), topics/programme-ideas-20261031/audit-04-support/allocation-check.py:149 and :178-186 (SOURCE 37820a528c863e5cfe2dc2f1f8879b4fd40cf210). AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
   },
   {
    "path": "topics/bivariate-lanczos-20261031/pr-prep/registry-semantics.json",
@@ -447,7 +447,7 @@
    "git_blob": "302f2527b9df363d50761b842f3d80e5195f92b0",
    "generating_command": "not script-generated: hand-authored reviewed registry semantics (commit d55504e)",
    "summary": "PROOF_STATUS.md and state/IDEAS.md rows; pr-prep/ideas.rows.md, proof_status.rows.md, negative.rows.md; response-04.md:15",
-   "notes": "Restore before running pr-prep/allocate.py. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
+   "notes": "Reviewed registry semantics for the allocator. Restore with `python tools/cold_storage.py restore bivariate-lanczos-20261031` (restore the whole slug: the allocator also needs pr-prep/id-map.json, whose SHA-256 it compares with this file at topics/bivariate-lanczos-20261031/pr-prep/allocate.py:42-43). Sole working-tree reader: topics/bivariate-lanczos-20261031/pr-prep/allocate.py:41. No Git-history reader found (searched every committed *.py, *.sh, *.js file). AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
   }
  ],
  "total_bytes": 2354054

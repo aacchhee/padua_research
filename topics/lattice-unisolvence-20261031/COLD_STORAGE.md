@@ -93,3 +93,15 @@ AC approved moving the files listed above as "kept on purpose" as well. They are
 | File | Actual storage path | Bytes | SHA-256 | Source commit | Frozen generating command | Script blob IDs | Checker command / result |
 |---|---|---|---|---|---|---|---|
 | `provisional-id-map.json` | Git blob `587ec106e9ea` at `2b52b432fe59`; AC cold storage PENDING | 19,769 | `3b04ce988f1e90f1b84aae1c91097e309aa4dbe982c71f8317b13efd8aac60c4` | `2b52b432fe59` | not script-generated: orchestrator-authored map of 66 provisional IDs | — | Summary: ID_CROSSWALK.md:235; topics/padua-batch-20261031/ALLOCATIONS.md:128,180. Restore before running check-response-01.py, response-review/check_response.py or programme-ideas allocation scripts. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well. |
+
+### Corrections 2026-11-02: complete commands and readers (response to the Codex cold-storage audit, F3/F4)
+
+These values replace the clipped or inaccurate ones in the tables above. The machine manifest [`cold-storage.json`](cold-storage.json) carries the same values.
+- No identity field changed (path, bytes, SHA-256, Git blob).
+- Commands are quoted verbatim from the cited records. Where a record gives no command, the row says so explicitly.
+- A "working-tree reader" reads the checked-out file and needs `restore` first. A "historical Git reader" reads pinned Git objects and does not.
+- Restoring files does not mean that point-in-time validators accept a later head.
+
+- `provisional-id-map.json`, **notes** (F4): Registry map. Restore with `python tools/cold_storage.py restore lattice-unisolvence-20261031`. Working-tree readers: topics/lattice-unisolvence-20261031/check-response-01.py:50, topics/lattice-unisolvence-20261031/response-review/check_response.py:31 and, across topics, topics/programme-ideas-20261031/pr-prep/allocate.py:30 and topics/programme-ideas-20261031/audit-04-support/allocation-repair-check.py:49-50 (current() snapshot; the same script also reads it from Git at :45). Historical Git readers (pinned revisions; restoring the current file does not replace that history): topics/programme-ideas-20261031/audit-04-support/allocation-check.py:56 and :178-186 (SOURCE 37820a528c863e5cfe2dc2f1f8879b4fd40cf210 and ALLOC^) and topics/programme-ideas-20261031/audit-04-support/integration-repair-check.py:46-50 (git show at SOURCE and REPAIR). The programme-ideas allocator needs further topics restored too: see the notes of topics/programme-ideas-20261031/lit/integration-map.json. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well.
+
+After any export, check the archive with `python tools/cold_storage.py verify-archive <DIR>/lattice-unisolvence-20261031 --manifest topics/lattice-unisolvence-20261031/cold-storage.json`, and run it again immediately before relying on the archive (for delivery acceptance, or before a history purge). The export receipt alone is not proof that the files are still present.

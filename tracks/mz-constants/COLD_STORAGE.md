@@ -37,3 +37,18 @@ These commands need a full clone. In a shallow clone, first run `git fetch origi
 **Retention**
 
 Permanent, with AC as custodian. The Git history copy lasts as long as history is not rewritten. The AC copy is created by `export`; commit its receipt hash here when that is done.
+
+### Corrections 2026-11-02: complete commands and readers (response to the Codex cold-storage audit, F3/F4)
+
+These values replace the clipped or inaccurate ones in the tables above. The machine manifest [`cold-storage.json`](cold-storage.json) carries the same values.
+- No identity field changed (path, bytes, SHA-256, Git blob).
+- Commands are quoted verbatim from the cited records. Where a record gives no command, the row says so explicitly.
+- A "working-tree reader" reads the checked-out file and needs `restore` first. A "historical Git reader" reads pinned Git objects and does not.
+- Restoring files does not mean that point-in-time validators accept a later head.
+
+- `evidence/protocol-check.json`, **generating_command** (F3): python tracks/mz-constants/evidence/protocol-check.py > tracks/mz-constants/evidence/protocol-check.json (topics/mz-constants/independent-protocol-01.md:13; recorded head 39f4785d48de7e77ff99e209bda954d632c61956)
+- `evidence/reproduction.json`, **generating_command** (F3): OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python tracks/mz-constants/code/reproduce.py --suite all --max-N 1280 --output tracks/mz-constants/evidence/reproduction.json (topics/mz-constants/reproduction.md:10; topics/mz-constants/cold-storage.md:17)
+- `evidence/reproduction.json`, **notes** (F3): Supports MEASURED claim PD-T026 and the manuscript tables; topics/mz-constants/cold-storage.md already asks to preserve the archived JSON for byte-for-byte retrieval. Source of the paper README link. Checker: identity check inline in topics/mz-constants/cold-storage.md (PASS: two staged files, all manifest artifacts, embedded runner identity); numeric replay by Astra Receipt: topics/mz-constants/cold-storage.md (checker result); tracks/mz-constants/evidence/astra-replay-comparison.json; tracks/mz-constants/evidence/reproduction-manifest.json (2084 B, pins SHA-256 b85b06fa9b3317d6ce84f9d354626b74edad4e8f9885341ecad39166d4fd6d40) Cost: ~1.25 s (elapsed_seconds; Python 3.12, NumPy 2.3.5, SciPy 1.17.0).
+- **Topic note** (F3): reproduction.json and astra-reproduction.json are MEASURED outputs of tracks/mz-constants/code/reproduce.py (1.25 s run; numbers deterministic, JSON bytes carry timestamps); the other three are auditor manifests/checks, only protocol-check.py has a committed generator. They are mutually hash-pinned (reproduction-manifest.json, astra-manifest.json, protocol-check.json, audit-targets.json, response-01-targets.json) and read at runtime by protocol-check.py and astra-final-check.py, so those scripts break unless the files are retrieved from history. Small committed counterparts remain: reproduction-manifest.json, astra-replay-comparison.json, astra-*-check.json, claude-audit-01-check.json, theory/reproduced-spectra.md (PD-T026). No proof dependency: all MEASURED/hygiene evidence. Abbreviations used in entries: K/ = tracks/mz-constants/evidence/, M/ = topics/mz-constants/.
+
+After any export, check the archive with `python tools/cold_storage.py verify-archive <DIR>/tracks_mz-constants --manifest tracks/mz-constants/cold-storage.json`, and run it again immediately before relying on the archive (for delivery acceptance, or before a history purge). The export receipt alone is not proof that the files are still present.

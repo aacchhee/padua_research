@@ -123,7 +123,7 @@
    "git_blob": "8e0c2a4a60602fa2f94ef780ccdda0a7a4851710",
    "generating_command": "written by protocol/final-assign.py --apply-approved (one-shot; do not repeat)",
    "summary": "ID_CROSSWALK.md rows for padua-mz-2d; results/padua-mz-2d-20261101.md:8; LOG.md:7",
-   "notes": "Restore before running protocol/final-validate.py. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
+   "notes": "Registry map written by the one-shot topics/padua-mz-2d-20261101/protocol/final-assign.py:114 (from final-id-map-draft.json). Working-tree reader: topics/padua-mz-2d-20261101/protocol/final-validate.py:4 (run from the repository root: R=Path(\".\")). The same script also needs final-assignment-checks.json (:4) and reads base 806cc7b4509fd93bae652f9545d32d95529f8281 (:7) through git show (:10), so it is a point-in-time validator. Restore with `python tools/cold_storage.py restore padua-mz-2d-20261101`. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
   }
  ],
  "total_bytes": 1551583

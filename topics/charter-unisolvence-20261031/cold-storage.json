@@ -5,7 +5,7 @@
  "threshold_bytes": 16384,
  "policy": "AC 2026-11-02: large regenerable outputs are not stored at the branch head; all code and short summaries stay. Each file is retrievable byte-exactly from Git history by its blob id; delivery to AC Padua cold storage is pending.",
  "delivery_to_AC_cold_storage": "PENDING (AC runs: python tools/cold_storage.py export charter-unisolvence-20261031 --dest C:\\Users\\andreyac\\Downloads\\padua\\cold_storage)",
- "topic_note": "The topic's existing cold-storage-manifest.json and COLD_STORAGE.md stay. Generators/checkers committed: claude-audit/{check_padua,gf}.py, directions/U1/exact_checker.py, independent/u1/check_symbolic_summary.py.",
+ "topic_note": "COLD_STORAGE.md stays. The earlier cold-storage-manifest.json was moved to cold storage under AC's 2026-11-02 approval (its entry below; it is not an input of verify_cold_storage.py, which reads <root>/bundle-manifest.json of the off-repository bundle). Generators/checkers committed: claude-audit/{check_padua,gf}.py, directions/U1/exact_checker.py, independent/u1/check_symbolic_summary.py.",
  "retained_above_threshold": [],
  "entries": [
   {
@@ -33,7 +33,7 @@
    "git_blob": "777adfbd1e3a79c5f80d15146f4305f02731d82e",
    "generating_command": "not script-generated: written by the independent U0 reviewer",
    "summary": "independent/u0/check-summary.json; independent/u0/audit.md:30-52",
-   "notes": "cold-storage-manifest.json delegates its command records to this file; restore both together. Read by independent/u0/check_evidence.py. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
+   "notes": "cold-storage-manifest.json delegates its command records to this file (COLD_STORAGE.md:139). Working-tree reader: topics/charter-unisolvence-20261031/independent/u0/check_evidence.py:5 (reads evidence-manifest.json from the script directory); the script then hashes every cold artifact and source input named in the manifest from their recorded paths (check_evidence.py:6-13), so it needs those files too; no Git-history reader. Restore with `python tools/cold_storage.py restore charter-unisolvence-20261031`. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
   },
   {
    "path": "topics/charter-unisolvence-20261031/integration-impact.json",
@@ -42,7 +42,7 @@
    "git_blob": "990ae732f9ed823062ed5167878b0f765b80ae99",
    "generating_command": "not script-generated: produced by the PR-preparation orchestrator",
    "summary": "integration-impact.md (schema and procedure); response-01.md:14",
-   "notes": "Restore before running independent/protocol/check_integration.py. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
+   "notes": "Working-tree reader: topics/charter-unisolvence-20261031/independent/protocol/check_integration.py:8 (reads integration-impact.json); the same script reads the retained final-id-map.json at :6, the old theory text by git show row[\"source_commit\"]:row[\"old_path\"] at :9 (historical Git objects at pinned commits) and the current text at :10, so restoring this file does not replace that history. Restore with `python tools/cold_storage.py restore charter-unisolvence-20261031`. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
   },
   {
    "path": "topics/charter-unisolvence-20261031/response-01-impact.json",
@@ -51,7 +51,7 @@
    "git_blob": "194a2ad302fdd087a1f702eed78200881d80c04d",
    "generating_command": "not script-generated: orchestrator-produced administrative comparison",
    "summary": "response-01.md:14,35ff; response-01-review.md:9; response-01-checks.json",
-   "notes": "AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
+   "notes": "Hand-produced administrative record; no committed script reads it (searched every committed *.py, *.sh, *.js file for its name). Passive provenance cited by response-01.md:14, response-01-review.md:9 and tracks/unisolvence/AUDIT_LOG.md:11. Restore with `python tools/cold_storage.py restore charter-unisolvence-20261031` only to inspect or hash it. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
   },
   {
    "path": "topics/charter-unisolvence-20261031/cold-storage-manifest.json",
@@ -60,7 +60,7 @@
    "git_blob": "b51913d99d131718391d6f9c304683e4751ef4ee",
    "generating_command": "not script-generated: the topic's earlier cold-storage manifest",
    "summary": "COLD_STORAGE.md (human manifest of the earlier items); cold-storage-check.json",
-   "notes": "Restore before running verify_cold_storage.py. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
+   "notes": "This repository file is NOT an input of verify_cold_storage.py and no committed script reads cold-storage-manifest.json by name. topics/charter-unisolvence-20261031/verify_cold_storage.py reads <root>/bundle-manifest.json (line 11), every file that manifest lists under <root> (relative_path, bytes, sha256; lines 12-16) and <root>/inputs/padua_unisolvence_inputs.zip with its SHA256SUMS.txt (lines 17-26), where <root> is the off-repository bundle in AC cold storage. The committed receipt cold-storage-check.json records manifest_sha256 bc519ed735cfccdb2102222be148556f19012acd6cdf3ed2bcc696257e00d13c, equal to the SHA-256 of this file, so the verified bundle-manifest.json had the same bytes as this file (104 files, 17 archive payloads verified). Restore with `python tools/cold_storage.py restore charter-unisolvence-20261031` for the manifest bytes and provenance (it is listed by hash in audit-targets.json:270 and response-01-checks.json:19 and linked from COLD_STORAGE.md:7,174 and cold-storage-disposition-01.md:16); copying the restored file to <root>/bundle-manifest.json would reproduce the manifest input, but the 104 bundle files and the inputs zip must come from the delivered bundle, not from Git. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
   }
  ],
  "total_bytes": 185606

@@ -16,7 +16,7 @@
 - **Policy applied.** Every generated data file of 16 KiB or more leaves the branch head. Two kinds of file stay:
   - cold-storage manifests;
   - hand- or agent-authored registry and source data that committed code reads, or that registries link (13 files, 0.43 MB, listed per topic with reasons).
-- **Moved.** 163 files, 15,419,537 bytes, from 9 directories:
+- **Moved.** 163 files, 15,418,937 bytes (corrected 2026-11-02 in response-01 F5; first written as 15,419,537), from 9 directories:
 
   | Directory | Files | Bytes |
   |---|---:|---:|
@@ -62,7 +62,7 @@
   - the provenance and impact records;
   - charter's earlier `cold-storage-manifest.json` and the U0 evidence manifest.
 
-  They are now moved too: 13 files, 377,215 bytes. Each is pinned in its directory's `cold-storage.json`, with a dated addendum in `COLD_STORAGE.md` naming the scripts that must restore it first.
+  They are now moved too: 13 files, 427,152 bytes (corrected in response-01 F5; first written as 377,215). Each is pinned in its directory's `cold-storage.json`, with a dated addendum in `COLD_STORAGE.md` naming the scripts that must restore it first.
 - **Links.** 17 more markdown link targets are redirected, in RESULTS.md, PROOF_STATUS.md, ID_CROSSWALK.md, the batch ALLOCATIONS ledger and topic records. Only the targets changed.
 - **Checks.** `verify` accepts all 176 entries. Generated data at the head is now 3,300,628 bytes, including 124,754 bytes of the new `cold-storage.json` manifests. No other generated file of 16 KiB or more remains.
 - **Force-push.** Approved by AC, but not yet executed. The prerequisite is in the 2026-11-02 reply, and the [handoff 02](handoffs/02-audit.md) scope notes record it:
@@ -83,3 +83,17 @@
 - Committed compact evidence and reproducible audit drivers: [audit-01/receipt.json](audit-01/receipt.json), [inventory.py](audit-01/inventory.py), [safety.py](audit-01/safety.py). Large raw reruns remain in `/tmp`; no Windows access, history rewrite, force-push, tag or main mutation.
 - Git transport works with the executor's network permission. The shell GitHub API call was Forbidden; PR metadata was read using the connected GitHub tools instead.
 - Next: [handoff 03](handoffs/03-response.md), Claude response to all findings, then focused Codex re-audit. PR #18 remains draft; coordinate the shared tool fix with PR #17. Only AC merges.
+
+## 2026-11-02 — Claude, claude-opus-5-5 high (configured) — response-01 (handoff 03)
+
+- **Trigger.** AC wrote "Continue both branches." Rules unchanged; main `2b52b43` unchanged.
+- **F1 and F2 (tool).** The tool now uses Codex's guarded repair from PR #17 (audited there by Claude audit-03), plus three additions of mine:
+  - export reads every destination file back before writing a v2 receipt;
+  - the receipt is read back too;
+  - a new offline `verify-archive` command.
+
+  23 tests pass. These are material code changes, so a focused Codex re-audit is required.
+- **F3 and F4 (metadata).** Complete commands and readers, gathered by a read-only Sonnet 5.5 high worker and spot-checked by me against the cited records. Applied to `cold-storage.json` values and to dated `COLD_STORAGE.md` correction sections. Identity fields unchanged.
+- **F5 (totals).** Measured from Git: 163 files = 15,418,937 B, 13 files = 427,152 B, 176 files = 15,846,089 B. The audit's own split was also off; see the response.
+- **Checks.** All nine manifests verify. Export → `verify-archive` → `verify --dest` passes on two directories.
+- **Handoffs.** Handoff 03 is done; [handoff 04](handoffs/04-reaudit.md) gives the re-audit to Codex.

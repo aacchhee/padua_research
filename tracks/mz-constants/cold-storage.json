@@ -5,7 +5,7 @@
  "threshold_bytes": 16384,
  "policy": "AC 2026-11-02: large regenerable outputs are not stored at the branch head; all code and short summaries stay. Each file is retrievable byte-exactly from Git history by its blob id; delivery to AC Padua cold storage is pending.",
  "delivery_to_AC_cold_storage": "PENDING (AC runs: python tools/cold_storage.py export tracks/mz-constants --dest C:\\Users\\andreyac\\Downloads\\padua\\cold_storage)",
- "topic_note": "reproduction.json and astra-reproduction.json are MEASURED outputs of tracks/mz-constants/code/reproduce.py (1.25 s run; numbers deterministic, JSON bytes carry timestamps); the other three are auditor manifests/checks, only protocol-check.py has a committed generator. They are mutually hash-pinned (reproduction-manifest.json, astra-manifest.json, protocol-check.json, audit-targets.json, response-01-targets.json) and read at runtime by protocol-check.py and astra-final-check.py, so those scripts break unless the files are retrieved from history. Small committed counterparts remain: reproduction-manifest.json, astra-replay-comparison.json, astra-*-check.json, claude-audit-01-check.json, theory/reproduced-spectra.md (PD-T026). No proof dependency: all MEASURED/hygiene evidence. Abbreviations in commands: T/ = topics/padua-proof-attempts-2-20261101/, O/ = T/outputs/, C/ = T/code/, K/ = tracks/mz-constants/evidence/, M/ = topics/mz-constants/, E = 'PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=<python-flint deps> python -B', E0 = 'PYTHONDONTWRITEBYTECODE=1 python -B'.",
+ "topic_note": "reproduction.json and astra-reproduction.json are MEASURED outputs of tracks/mz-constants/code/reproduce.py (1.25 s run; numbers deterministic, JSON bytes carry timestamps); the other three are auditor manifests/checks, only protocol-check.py has a committed generator. They are mutually hash-pinned (reproduction-manifest.json, astra-manifest.json, protocol-check.json, audit-targets.json, response-01-targets.json) and read at runtime by protocol-check.py and astra-final-check.py, so those scripts break unless the files are retrieved from history. Small committed counterparts remain: reproduction-manifest.json, astra-replay-comparison.json, astra-*-check.json, claude-audit-01-check.json, theory/reproduced-spectra.md (PD-T026). No proof dependency: all MEASURED/hygiene evidence. Abbreviations used in entries: K/ = tracks/mz-constants/evidence/, M/ = topics/mz-constants/.",
  "retained_above_threshold": [],
  "entries": [
   {
@@ -40,7 +40,7 @@
    "bytes": 37195,
    "sha256": "90d28fcedab0582ea76fee993be44834fe428775ca2b4247c83b50719fbe672d",
    "git_blob": "9364041f476dbdae6d639bea9e414bae591864cf",
-   "generating_command": "python K/protocol-check.py > K/protocol-check.json (independent-protocol-01.md:13; recorded head 39f4785d48de7e77ff99e209bda954d632c61956)",
+   "generating_command": "python tracks/mz-constants/evidence/protocol-check.py > tracks/mz-constants/evidence/protocol-check.json (topics/mz-constants/independent-protocol-01.md:13; recorded head 39f4785d48de7e77ff99e209bda954d632c61956)",
    "summary": "M/independent-protocol-01.md:13-38",
    "notes": "Protocol-hygiene review snapshot (not scientific). Pins final-id-map.json, reproduction*.json, batch-registry-resolution.patch hashes. Checker: is itself the checker output (read-only git queries, header/registry-status checks, input hashes, manifest classification, local link existence, public-size accounting) Receipt: M/independent-protocol-01.md:38 (PASS) Cost: seconds."
   },
@@ -49,9 +49,9 @@
    "bytes": 29202,
    "sha256": "b85b06fa9b3317d6ce84f9d354626b74edad4e8f9885341ecad39166d4fd6d40",
    "git_blob": "a6c19e29ced5fb66f6310628114646d83ebc59a9",
-   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python tracks/mz-constants/code/reproduce.py --suite all --max-N 1280 --output K/reproduction.json (M/reproduction.md:8; cold-storage.md Command R)",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python tracks/mz-constants/code/reproduce.py --suite all --max-N 1280 --output tracks/mz-constants/evidence/reproduction.json (topics/mz-constants/reproduction.md:10; topics/mz-constants/cold-storage.md:17)",
    "summary": "tracks/mz-constants/theory/reproduced-spectra.md:23-33 (PD-T026, MEASURED); M/reproduction.md:30-38; M/cold-storage.md",
-   "notes": "Supports MEASURED claim PD-T026 and the manuscript tables; cold-storage.md already asks to preserve the archived JSON for byte-for-byte retrieval. Source of the paper README link. Checker: identity check inline in M/cold-storage.md (PASS: two staged files, all manifest artifacts, embedded runner identity); numeric replay by Astra Receipt: M/cold-storage.md (checker result); K/astra-replay-comparison.json; K/reproduction-manifest.json (2084 B, pins sha b85b06fa...) Cost: ~1.25 s (elapsed_seconds; Python 3.12, NumPy 2.3.5, SciPy 1.17.0)."
+   "notes": "Supports MEASURED claim PD-T026 and the manuscript tables; topics/mz-constants/cold-storage.md already asks to preserve the archived JSON for byte-for-byte retrieval. Source of the paper README link. Checker: identity check inline in topics/mz-constants/cold-storage.md (PASS: two staged files, all manifest artifacts, embedded runner identity); numeric replay by Astra Receipt: topics/mz-constants/cold-storage.md (checker result); tracks/mz-constants/evidence/astra-replay-comparison.json; tracks/mz-constants/evidence/reproduction-manifest.json (2084 B, pins SHA-256 b85b06fa9b3317d6ce84f9d354626b74edad4e8f9885341ecad39166d4fd6d40) Cost: ~1.25 s (elapsed_seconds; Python 3.12, NumPy 2.3.5, SciPy 1.17.0)."
   }
  ],
  "total_bytes": 141753

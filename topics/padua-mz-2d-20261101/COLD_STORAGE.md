@@ -52,3 +52,15 @@ AC approved moving the files listed above as "kept on purpose" as well. They are
 | File | Actual storage path | Bytes | SHA-256 | Source commit | Frozen generating command | Script blob IDs | Checker command / result |
 |---|---|---|---|---|---|---|---|
 | `protocol/final-id-map.json` | Git blob `8e0c2a4a6060` at `2b52b432fe59`; AC cold storage PENDING | 26,582 | `6206c254e117585b56d389d98f46c692ffe5af6df19e6b35a240e2533e688a55` | `2b52b432fe59` | written by protocol/final-assign.py --apply-approved (one-shot; do not repeat) | — | Summary: ID_CROSSWALK.md rows for padua-mz-2d; results/padua-mz-2d-20261101.md:8; LOG.md:7. Restore before running protocol/final-validate.py. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well. |
+
+### Corrections 2026-11-02: complete commands and readers (response to the Codex cold-storage audit, F3/F4)
+
+These values replace the clipped or inaccurate ones in the tables above. The machine manifest [`cold-storage.json`](cold-storage.json) carries the same values.
+- No identity field changed (path, bytes, SHA-256, Git blob).
+- Commands are quoted verbatim from the cited records. Where a record gives no command, the row says so explicitly.
+- A "working-tree reader" reads the checked-out file and needs `restore` first. A "historical Git reader" reads pinned Git objects and does not.
+- Restoring files does not mean that point-in-time validators accept a later head.
+
+- `protocol/final-id-map.json`, **notes** (F4): Registry map written by the one-shot topics/padua-mz-2d-20261101/protocol/final-assign.py:114 (from final-id-map-draft.json). Working-tree reader: topics/padua-mz-2d-20261101/protocol/final-validate.py:4 (run from the repository root: R=Path(".")). The same script also needs final-assignment-checks.json (:4) and reads base 806cc7b4509fd93bae652f9545d32d95529f8281 (:7) through git show (:10), so it is a point-in-time validator. Restore with `python tools/cold_storage.py restore padua-mz-2d-20261101`. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well.
+
+After any export, check the archive with `python tools/cold_storage.py verify-archive <DIR>/padua-mz-2d-20261101 --manifest topics/padua-mz-2d-20261101/cold-storage.json`, and run it again immediately before relying on the archive (for delivery acceptance, or before a history purge). The export receipt alone is not proof that the files are still present.

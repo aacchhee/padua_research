@@ -240,7 +240,7 @@
    "git_blob": "587ec106e9ea808462b09683556a37e42c6f0b47",
    "generating_command": "not script-generated: orchestrator-authored map of 66 provisional IDs",
    "summary": "ID_CROSSWALK.md:235; topics/padua-batch-20261031/ALLOCATIONS.md:128,180",
-   "notes": "Restore before running check-response-01.py, response-review/check_response.py or programme-ideas allocation scripts. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
+   "notes": "Registry map. Restore with `python tools/cold_storage.py restore lattice-unisolvence-20261031`. Working-tree readers: topics/lattice-unisolvence-20261031/check-response-01.py:50, topics/lattice-unisolvence-20261031/response-review/check_response.py:31 and, across topics, topics/programme-ideas-20261031/pr-prep/allocate.py:30 and topics/programme-ideas-20261031/audit-04-support/allocation-repair-check.py:49-50 (current() snapshot; the same script also reads it from Git at :45). Historical Git readers (pinned revisions; restoring the current file does not replace that history): topics/programme-ideas-20261031/audit-04-support/allocation-check.py:56 and :178-186 (SOURCE 37820a528c863e5cfe2dc2f1f8879b4fd40cf210 and ALLOC^) and topics/programme-ideas-20261031/audit-04-support/integration-repair-check.py:46-50 (git show at SOURCE and REPAIR). The programme-ideas allocator needs further topics restored too: see the notes of topics/programme-ideas-20261031/lit/integration-map.json. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
   }
  ],
  "total_bytes": 2937448
