@@ -1,6 +1,6 @@
 # Handoff09 — Codex storage repair under AC continuation
 
-- Status: open
+- Status: done in b70edfcb4eadc52613f902caa730fe83d9130780
 - Previous handoff:08-response-review-and-storage-repair.md (superseded; instruction body preserved)
 - Next agent/model/effort:Codex,gpt-6.1-sol high
 - Role:storage developer; independent Claude review of Codex work remains separate/pending
