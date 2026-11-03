@@ -7,9 +7,12 @@ Stage: WORK. Required Claude audit: PENDING.
 ## T1 — degree-eight maxima
 
 In progress. Existing PD-T183 proves at least 44 strict interior maxima.
-The exact interior and closed-square counts remain OPEN pending complete
-finite checks. Fresh producer and boundary executions preserve the frozen
-acceptance predicates; independent replay is separate. See
+Two complete, separate replays of the retained historical interior proposal
+now verify all 153520 leaves and 541882 ordinary mask records, deriving 44
+interior maxima. Fresh generation and exact input identity remain task
+obligations. Fresh boundary generation proposes 16 edge and 2 corner maxima;
+its complete separate replays are in progress, so the closed count remains OPEN.
+All executions preserve the frozen acceptance predicates. See
 [attempt](attempts/T1.md) and [independent checks](independent-checks-t1.md).
 
 For the paper: do not replace the historical numerical total with a certified

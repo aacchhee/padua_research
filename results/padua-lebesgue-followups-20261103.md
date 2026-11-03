@@ -11,7 +11,9 @@ Four bounded targets, specified in [handoff 01](../topics/padua-lebesgue-followu
 - **T3:** a general-β series for them.
 - **T4:** the constant term c (κ = c − c₁²) of the corner expansion (PD-T098).
 
-Fresh T1 producer and boundary runs are in progress; exact counts remain OPEN.
+T1: two complete replays of the retained interior tree verify 44 maxima; fresh
+generation/input identity and complete boundary replays remain in progress.
+The closed-square count remains OPEN.
 T2–T4 core analytic targets are complete; required Claude audit is pending.
 
 - **PROVED, supplementary check accepted; Claude audit pending:** both limiting
