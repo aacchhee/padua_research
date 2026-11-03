@@ -1,7 +1,5 @@
 # Claude audit-01 — effective Padua argmax campaign (handoff 03)
 
-> **DRAFT checkpoint (2026-11-03).** Mathematical review complete; technical replay section pending. Not yet a final audit record.
-
 ## Decision
 
 **The mathematics is ACCEPTED at every stated scope, with no status change. The findings below are record, evidence-durability and wording items; none touches a proof step, checker predicate, certificate value or claimed status. Stage moves to WORK for a short developer response (handoff 04).**
@@ -14,7 +12,7 @@
   - the scoped negative statements PD-N?…-06a (complete spectral positivity fails at n = 3), PD-N?…-06b (affine per-cardinal sign step cannot give a fixed kappa/n^2 radius) and PD-N?…-04 (G7-F fixed-sign individual cardinal representation fails on D(2,3) at n = 4).
 - **MEASURED, accepted as MEASURED:** codex-02 (G2/G3/G4), codex-03 (G6 float screen and I-B0), claude-01 (pilot).
 - **Original target.** PD-T099 stays **OPEN**: no explicit n0, no all-degree bridge, finite range 2–32 only. n = 40 is not certified; 33–39 were not run. The n^-6 radius is not the fixed phase zone rho <= 1/64 (physical scale n^-2), which stays OPEN together with the weighted-energy premise.
-- **Severity.** No CRITICAL or MAJOR finding. Findings F1–F7 are MINOR; N1–N8 are NOTEs.
+- **Severity.** No CRITICAL or MAJOR finding. Findings F1–F10 are MINOR; N1–N10 are NOTEs.
 - **Next.** Codex answers every finding in `response-01.md`. Because no finding needs a change to a statement, proof, predicate or certificate, a Claude protocol check of the response suffices before PR preparation; a full mathematical re-audit is needed only if the response changes one of those.
 
 ## Identity, rules and audited candidate
@@ -61,9 +59,18 @@ All in a scratch directory outside Git (`/tmp/claude-0/…/scratchpad/audit-math
 6. **G6 exact spots** (`g6float.py`): float target-centre minus sampled source supremum 0.1096 (n13), 0.0653 (n17), 0.0171 (n24), above the certified rational margins 0.0566, 0.0290, 0.0112; exact integers 20·d13, 40·d17, 100·d24 > 2^192 rechecked with Python integers.
 7. **Manifest:** `python topics/padua-argmax-effective-20261103/code/evidence_manifest.py` → `verified: true`, 84 files, certificate degrees 17–32.
 
-## Technical replay of native certificates
+## Technical replay of native certificates (sub-auditor)
 
-**PENDING.** The technical sub-auditor's independent native replays, corruption controls and checker-code inspection are still running. This section, and therefore this audit, is incomplete; the decision above is a draft until this section is filled.
+Executed by a Claude technical sub-auditor (Opus 5.5) that I briefed and that made no Git or repository changes. I confirmed its receipts on disk (all 17 replay receipts accepted=true with kernel hash b0c871e7…). Outputs in `/tmp/claude-0/…/scratchpad/audit-tech/` (outside Git, regenerable). Environment: g++/gcc 13.3.0, GMP 6.3.0, Python 3.13.18 (developer: GCC 14.2.0, Python 3.12.14), 4 CPUs.
+
+- **Build and unit test.** `kernel.cpp` and `unit.cpp` were compiled with the README command; `unit` passed. The claimed corrected hash `b0c871e7…` is the SHA-256 of `kernel.cpp` (source), and it matches; `check.py`, `controls.py` and `unit.cpp` match `native-checker-summary.json`. Binary hashes differ from the developer's because the compiler differs (expected).
+- **Native replay of every committed certificate n = 17–32:** `check.py evidence/nN.json.gz --binary <kernel>` returned accepted=true for all 16 degrees, each with exactly 2 corner leaves and bound/split counts matching the certificate (n17: 104/2, … n32: 280/2). Total 2729 CPU s on this host (n32: 545 s). Every receipt's certificate hash equals the committed file's.
+- **Historical Python reference checker** (`finite_general_check.py`) on the committed native certificates at n = 17, 18, 20: accepted=true (42, 58, 114 CPU s).
+- **Corruption controls.** The sub-auditor produced its own n9 certificate with the native producer (42 leaves, complete; native replay accepted) and re-ran the producer at n17 (every scientific field equals the committed n17). `controls.py` rejected 36/36 defects at both n9 and n17, accepted the complete positive and kept the partial positive at accepted=false. Ten additional hand-made corruptions of n17 (raised bound/away-from-vertex uppers, relabelled corner leaf, swapped corner list, corner counter, lowered threshold, cardinal count, fake children, fake merged parent, missing `leaves`) were all rejected. Kernel mutants that drop the (n,0) halving or the endpoint weight halving were rejected.
+- **Independent certificate checks without repository code** (`python3 -I`): every certificate's bytes match the manifest and `final_rows`; a recursive descent confirms each frontier is a complete prefix-free cover (exact box areas sum to 4); corner leaves are exactly the parity-correct non-node corners; producer emits accepted=false; every degree 17–32 has a corrected-kernel acceptance receipt. A float evaluator built by inverting the Chebyshev–Vandermonde matrix (independent of the PD-T101 closed form) matches the certified corner intervals to about 1e-14, confirms equal values at the two non-node corners, never exceeds a leaf bound on 9×9 grids per leaf, and finds the smallest bound-leaf margin 0.0048 (n29), so no verdict is a near tie.
+- **Code inspection of `kernel.cpp`/`check.py`:** bound predicate strict; corner predicate strict on every coefficient except the designated vertex, which is correct because the vertex coefficient is exactly L_B(corner); outward floor/ceil in multiplication, transforms, de Casteljau midpoints and Machin/Taylor seeds; weights 2ε_jη_k/(n(n+1)) and the halved (n,0) mode; every transform-weight term canonicalized (the only two-argument constructor left is the canonical `Q(1, S<<32)`). The kernel receives only n and the frontier paths and recomputes everything else; `check.py` requires exact equality of all emitted metadata and leaf rows, uses explicit raises (not asserts) and fails closed. The prefix criterion |F| = |A|+1 is a correct full-binary-tree test. The PD-T210 implication follows from what is checked, plus Bernstein basics, the reflection lemma (corner values equal, which makes the threshold max of two corner lower bounds valid) and correct GMP/compiler execution.
+- **G6 exact spots:** `g6_exact_check.py evidence/g6-exact.json --controls` accepted 3 pairs and 7 leaves and rejected 11/11 controls; margins/S = 0.05663, 0.02896, 0.01123 equal the theory file's integers.
+- **Not executed:** the reference checker at other degrees; `weight_differential.py`; the developer's external /workspace receipts (superseded for audit purposes by these replays); degrees >= 33.
 
 ## Mathematical review
 
@@ -125,6 +132,10 @@ All MINOR unless marked NOTE. None affects a proof, predicate, certificate or st
 - **F6 (06b history wording).** The statement says "an all-degree local theorem with n0 = 2". Since "n0" denotes the global threshold elsewhere in the campaign, add "(local, physical radius n^-6; not a global n0)" or similar to avoid misreading in RESULTS/PAPER_MAP.
 - **F7 (proposed registry text).** In `proposed-record-changes.md`, the new PD-T099/PD-T227/IDEA-330 text says "audit pending". At preparation, replace that with the final IDs and a link to this audit. The PD-T227 annotation should cite the final ID of codex-06b, and keep "weighted energy and the fixed scaled phase radius remain OPEN" verbatim.
 
+- **F8 (checker receipt provenance).** `check.py:139-140` (and `controls.py`) record `kernel_sha256` of whatever `kernel.cpp` sits beside the driver at replay time; the binary hash depends on the compiler. The source–binary link therefore rests only on the recorded build command. Record the compiler version in each receipt, or compile from a snapshot inside the driver as the producer driver does. No effect on the accepted results (this audit recompiled from the hashed source).
+- **F9 (G6 checker scope).** The inherited `d3_edge_check.check_pair` accepts on margin > 0 only (`topics/padua-argmax-alln-20261101/code/gated/d3_edge_check.py:48-49`). The stated deltas 1/20, 1/40, 1/100 rest on separate integer comparisons (which pass, and are displayed). Say so explicitly in codex-03-spots, or add the delta comparison to the wrapper.
+- **F10 (codex-01 wording).** State in its own sentence that the threshold is the larger of the two certified corner lower bounds, valid because the node-preserving reflection makes the two corner values equal. Also fix "for2<=n<=16", "at2" and "the sol medium checker author".
+
 NOTEs:
 - **N1.** The 06b-N statement starts at n >= 4; index (3,1) is already admissible at n = 3. Harmless.
 - **N2.** 06a and 06b float diagnostics agree with mine at a larger range (n <= 40, plus direct solves to n = 14). Developers may cite this audit as an extra diagnostic, not as a premise.
@@ -134,6 +145,8 @@ NOTEs:
 - **N6.** I did not open the third-party sources. LIT acceptance is limited to the coverage each record states.
 - **N7.** Several records omit spaces before numbers ("range2–32", "n40"), apparently from an editing tool. Cosmetic; fix opportunistically.
 - **N8.** The supplementary Codex reviews are development evidence; this audit is the required distinct-agent audit.
+- **N9.** Corruption controls do not probe predicate strictness or rounding direction: a mutant loosening the corner predicate to `<= threshold + 1` still accepts n9 because real margins are large. Strictness and outward rounding were verified by code reading. A constructed-tie unit test would close this; optional.
+- **N10.** `kernel.cpp` packs about 6.7 kB into 48 lines, which hinders review. Replay commands say `python`; `python3` works. Reference/G6 runs without `PYTHONDONTWRITEBYTECODE` create ignored `__pycache__/` folders in the historical topic (the sub-auditor removed its own). Replay CPU here was about 2.5x the developer's, so capacity projections are host-sensitive, as already caveated.
 
 ## Remaining uncertainty
 
@@ -143,4 +156,4 @@ NOTEs:
 
 ## Requested response (handoff 04)
 
-Codex answers F1–F7 in `response-01.md` with a fix, an evidence-based rejection or an explicit unresolved item. Statement, proof, checker and certificate files should not need changes. Then Claude checks the response and the topic moves to PR preparation (final IDs from the reserved ranges after a fresh union scan, registry rows, RESULTS.md section). Only AC merges.
+Codex answers F1–F10 in `response-01.md` with a fix, an evidence-based rejection or an explicit unresolved item. Statement, proof, checker and certificate files should not need changes. Then Claude checks the response and the topic moves to PR preparation (final IDs from the reserved ranges after a fresh union scan, registry rows, RESULTS.md section). Only AC merges.

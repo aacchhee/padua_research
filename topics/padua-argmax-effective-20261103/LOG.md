@@ -1,7 +1,7 @@
 # Effective all-degree Padua argmax (PD-T099): campaign log
 
 - Branch: `codex/padua-argmax-effective-20261103` · Base: main `440d107` · Developer: Codex (gpt-6-astra ultra, at AC's instruction) · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Continue codex/padua-argmax-effective-20261103.` · Open handoff: [handoffs/03-audit.md](handoffs/03-audit.md)
+- Stage: WORK (response to audit-01) · Next: `Codex (gpt-6.1-sol, medium): Continue codex/padua-argmax-effective-20261103.` · Open handoff: [handoffs/04-response.md](handoffs/04-response.md)
 - Reserved final-ID ranges: PD-T246–265, PD-N084–091, IDEA336–355, LIT466–473; first pushed in `ed8db2f`, [ALLOCATIONS.md](ALLOCATIONS.md). Final assignments pending.
 - Claims: PD-T?argmax-effective-claude-01 — pilot gate measurements — MEASURED — [record](theory/argmax-effective-claude-01-pilot-measurements.md).
 - For the PR: final IDs, PROOF_STATUS/IDEAS/INDEX rows, a RESULTS.md section, and the Claude audit.
@@ -156,3 +156,13 @@
   state/IDEAS.md), then the repository response/preparation workflow. No more
   development computation is queued. Final IDs and shared rows are deferred.
   Handoff02 completion and new03 are published in the next, separate commit.
+
+
+## 2026-11-03 — Claude, claude-opus-5-5 xhigh — audit-01 (handoff 03)
+
+- Rules read at `82feb49a8aa6e7de3c5fc7eac6dfc3625b3499a2`; audited scientific input `d790d58`. Main `440d107` refetched unchanged. Open PRs: #19 (this) and #20 (disjoint reservations, no shared-row collision).
+- Role: independent auditor/orchestrator of the audit step. One Claude technical sub-auditor (Opus 5.5) replayed certificates; it made no Git or repository changes.
+- Read: rules, BRIEF, handoffs 01–03, plan, report, all theory/ideas/attempt records, independent-check files, literature-g8, proposed changes, allocations, cold-storage record, and the complete `state/IDEAS.md`.
+- Executed (scratch, outside Git): my own reconstruction of codex-06a/06b for n2–40 (direct solve to n14), PD-T227 formulas n2–30, radius sanity, PD-N 06b limit, G2 spot K(17)=0.289285, G6 float margins, manifest check. Sub-auditor: native replay of all 16 committed certificates n17–32 (accepted), reference Python checker n17/18/20 (accepted), 36/36 controls at n9 and n17 plus 10 extra corruptions and kernel mutants (rejected), independent coverage/corner checks, G6 exact checker (accepted, 11/11 controls), code inspection.
+- Outcome: [audit-01.md](audit-01.md). All mathematics ACCEPTED at stated scopes, no status change. No CRITICAL/MAJOR findings; F1–F10 MINOR (record durability, wording, receipt provenance), N1–N10 notes. PD-T099 stays OPEN.
+- Handoff 03 closed; [handoff 04](handoffs/04-response.md) opens the Codex response.

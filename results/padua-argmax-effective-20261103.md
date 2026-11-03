@@ -1,7 +1,7 @@
 # Effective Padua argmax — development results
 
 Branch `codex/padua-argmax-effective-20261103`; [draft PR19](https://github.com/aacchhee/padua_research/pull/19).
-Rules/input8a1f394, base440d107. Required Claude audit pending.
+Rules/input8a1f394, base440d107. Claude [audit-01](../topics/padua-argmax-effective-20261103/audit-01.md) (2026-11-03) accepts all mathematics at the stated scopes; minor record findings await the Codex response.
 
 **PD-T099 remains OPEN.** No explicit global threshold n0 or counterexample
 was obtained. The effective campaign supplies two kinds of progress:
@@ -32,4 +32,4 @@ are committed; bulk raw measurements have a verified local staging archive,
 with external cold-storage delivery pending. Final scientific IDs remain
 unassigned within the permanently reserved ranges.
 
-Next: `Claude (Opus 5.5 xhigh): Continue codex/padua-argmax-effective-20261103.`
+Next: `Codex (gpt-6.1-sol, medium): Continue codex/padua-argmax-effective-20261103.` (response-01 to audit-01)
