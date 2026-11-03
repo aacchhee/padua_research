@@ -1,0 +1,92 @@
+{
+  "format": "padua-lebesgue-evidence-manifest-v1",
+  "stage": "WORK; T1 in progress",
+  "input_sha": "3f5196cf3639407c25b021fa30f70cc1d3ae113a",
+  "base_sha": "440d1079e42c3ef21c40d1cf8870f5b206410c6a",
+  "completed_scope": "T2-T4 analytic proofs and independent exact/outward verification; required Claude audit pending",
+  "commands": "See attempts/T2.md, attempts/T3.md, attempts/T4.md and independent-checks-analytic.md for exact commands, environment and source identities. No unrun command is included as completed.",
+  "files": [
+    {
+      "path": "code/t3_quadrature.py",
+      "sha256": "7f8f5772576ed8fe765adb9bf5328e9f8b90b88f2499edf928b45d522a14f656",
+      "bytes": 6955
+    },
+    {
+      "path": "code/t3_series.py",
+      "sha256": "55e2a9760e52f3ce522dddc707f87f60ff1d71877695ad2804485edd72cec259",
+      "bytes": 7294
+    },
+    {
+      "path": "code/t4_constant.py",
+      "sha256": "b48d488e2229e7c60293673ffeeec0214fed344858f7ddaebe9975c0dd7347e5",
+      "bytes": 4582
+    },
+    {
+      "path": "code/t4_relations.py",
+      "sha256": "0861c4b156c5f515e2f8f37a7af036f5a718db8d4bc094cd44882874a8d35303",
+      "bytes": 1609
+    },
+    {
+      "path": "evidence/analytic-independent-t3.json",
+      "sha256": "b4fa13a819c451d0feb973445b6e28d38a34764c2a8a729591720909e50faebc",
+      "bytes": 8673
+    },
+    {
+      "path": "evidence/analytic-independent-t4.json",
+      "sha256": "74f3bf87293df345154d84bd1ef29deb7009f317c38507c9d94ef4a6c287e97f",
+      "bytes": 5285
+    },
+    {
+      "path": "evidence/t3-quadrature-developer.json",
+      "sha256": "99d3ed87fc421818ff58a6d083f5109236062da2835df6a443cb603043d77edb",
+      "bytes": 2473
+    },
+    {
+      "path": "evidence/t3-series-developer.json",
+      "sha256": "06de81671732b4d487e4cf0fe3463f55ac23dc10928b66ebcc89de2e5f45d3b8",
+      "bytes": 3613
+    },
+    {
+      "path": "evidence/t4-constant.json",
+      "sha256": "eff53b81ab76245d923846a80a10ae8116a29701bbefb8d34e8c8afa1ced78b9",
+      "bytes": 4736
+    },
+    {
+      "path": "evidence/t4-relations.json",
+      "sha256": "52dba38b1cc768af70a6556651ce01d4e0c0cfba3e1c637baa2afd9ab123fbb6",
+      "bytes": 871
+    },
+    {
+      "path": "theory/t2-01-edge-centre-minima.md",
+      "sha256": "5b1156c384dbf22b9d6749a840f4d78c36f0a1e60a2e8d5fc12e30af309b4c42",
+      "bytes": 9437
+    },
+    {
+      "path": "theory/t2-02-common-endpoint-expansion.md",
+      "sha256": "a61f3371445bae5bfa71f5b1947f63696697f97ac42c0f742c4eb4d587f98da3",
+      "bytes": 4950
+    },
+    {
+      "path": "theory/t3-01-general-position-series.md",
+      "sha256": "8eae6849e3a5c756356864bb97dcd3d9fd25b09d2ac58ec93bb96a9e054a3ce5",
+      "bytes": 10220
+    },
+    {
+      "path": "theory/t4-01-corner-defect-limit.md",
+      "sha256": "47e0a1b2476e125e4fa8582846f34b52d8fe2b559165941d54454f84445a7356",
+      "bytes": 8874
+    },
+    {
+      "path": "theory/t4-02-one-dimensional-remainder.md",
+      "sha256": "7f84cbd0d68dd90750173249d91a0464c05dc35751e7b8ea09dd74cee6214fa7",
+      "bytes": 3872
+    },
+    {
+      "path": "theory/t4-03-corner-constant.md",
+      "sha256": "f0fb0c2e313c316cb62248f433653e183c17f1b470ed70cba54b9f2021ec33d8",
+      "bytes": 3831
+    }
+  ],
+  "t1": "Pending complete receipts; frozen-source and executed-normal-mode records are evidence/t1-source-freeze*.json. Large regenerated artifacts stay in named sandbox scratch, with archival status pending.",
+  "protocol_qualification": "T2/T3 some linked full reads completed after mechanisms; independent report discloses timing deviation, not retroactive compliance."
+}

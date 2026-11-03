@@ -1,4 +1,6 @@
 """Literal component join; full frozen mathematical replay remains mandatory."""
+if not __debug__:
+    raise RuntimeError("optimized Python disables frozen producer assertions")
 import argparse,copy,gzip,hashlib,json,sys
 from pathlib import Path
 FROZEN=Path(__file__).resolve().parents[2]/'padua-proof-attempts-2-20261101'/'code'

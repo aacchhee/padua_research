@@ -28,6 +28,10 @@ Frozen `a5_checker_n8.py` SHA-256 `a9cff5748d6c40ee41ac76e4e8a0035e0d5dab95f4de1
 
 Finding I1 (receipt integrity, resolved): the initial count-only wrapper let the frozen CLI publish a success-looking receipt before the wrapper's after-run guards. Development revised `code/t1_check.py` to route the frozen output into an unpublished temporary file and atomically publish only after checker/cache/wrapper source guards and input before/after hashes pass. Revised SHA-256 `0345e62ef9bb88fa11640e135d211648611c9536b85fec528d694e94ef57a69f` was reviewed and independently exercised. Seven publication controls passed: success/rejection return codes and flags preserved; checker exception, post-source-guard failure, input mutation, wrapper mutation, and counterfeit input binding leave no published receipt. Temporary cleanup also passed. These use a fake checker and claim **no mathematical acceptance**.
 
+Finding I2 (optimized-mode guards, open): the parent noted that new entry wrappers use `assert` without refusing Python `-O`. Current executed commands use normal `python -B`, so the assertions are active and this does not invalidate those executions. Development must add an explicit optimized-mode refusal after in-flight jobs finish, preserve the exact executed old source hashes/blobs, and record/recheck the guard-only delta. Do not mutate sources while their running jobs guard them. In particular, `t1_join.py` binds the boundary wrapper to its physical source hash; a subsequent source edit must not silently relabel an older boundary artifact.
+
+`code/t1_join.py` SHA-256 `a88b18f2a617d7dac03a5db7ba2a89a32cae731cd2f7b6c5a0ea400e5b554b61` preserves literal interior/boundary mathematical components, delegates frozen structural validation, checks raw inputs and ancestry, and explicitly emits `count_certified:false`. Its expansion of the source allowlist concerns known physical source identities, not a new proof predicate. Independent full checker replay is still mandatory. Thirteen independent synthetic controls (one positive, twelve rejected) verify literal copies, source/raw hash checks, missing/pending/unresolved cases, count accounting and preservation of an existing different output.
+
 ## Completed executions
 
 All commands below ran from `/workspace/padua_research`; Python commands use `-B`. No seeds; fixtures and arithmetic are deterministic, timings are descriptive only.
@@ -74,9 +78,23 @@ All commands below ran from `/workspace/padua_research`; Python commands use `-B
 
    [Receipt](evidence/t1-independent-continuation-controls.json) checks unchanged helper/traversal AST, prefix accounting, exact restoration and malformed lineage/root/mask/node/leaf records. Synthetic fixtures only; no mathematical witness is accepted and no search advances.
 
+8. Native corner predicates against all frozen n4–7 certificates, exit 0:
+
+   `PYTHONPATH=/workspace/scratch/lebesgue-t1/deps timeout 600 python -B topics/padua-lebesgue-followups-20261103/code/t1_corner_certificate_controls.py --frozen-output-dir /workspace/scratch/lebesgue-t1-independent/cold/topics/padua-proof-attempts-2-20261101/outputs --output topics/padua-lebesgue-followups-20261103/evidence/t1-independent-corner-certificate-controls.json`
+
+   [Receipt](evidence/t1-independent-corner-certificate-controls.json): all four corner records exactly match the frozen certificate at each degree; independently checked 8, 8, 16 and 16 all-active masks respectively. This verifies the native classification implementation independently against the previously certified outputs; no n8 count is inherited.
+
+   An additional redundant direct symbolic `Poly.eval` comparison ran as `PYTHONPATH=/workspace/scratch/lebesgue-t1/deps timeout 600 python -B topics/padua-lebesgue-followups-20261103/code/t1_corner_crossvalidate.py --output topics/padua-lebesgue-followups-20261103/evidence/t1-independent-corner-crossvalidation.json`. Degrees 4–6 completed with 180/252/336 exact value/derivative equalities. The degree-seven phase was intentionally terminated, exit 143, to free the fourth-core budget for the consequential fresh runs and full replays after the all-degree certificate comparison above had passed. [Interrupted-run receipt](evidence/t1-independent-corner-crossvalidation-interrupted.json) preserves those partial outputs and source identity; no all-degree pass or missing completed receipt is claimed.
+
+9. New join wrapper, exit 0:
+
+   `python -B topics/padua-lebesgue-followups-20261103/evidence/t1-independent-join-controls.py --driver topics/padua-lebesgue-followups-20261103/code/t1_join.py --output topics/padua-lebesgue-followups-20261103/evidence/t1-independent-join-controls.json`
+
+   [Control source](evidence/t1-independent-join-controls.py), [receipt](evidence/t1-independent-join-controls.json): all thirteen synthetic structural controls passed, with no mathematical certificate acceptance.
+
 ## Runs in progress and needed
 
 - Historical reference whole-interior replay launched separately on the above pinned proposal, with a 10800-second outer cap: `PYTHONPATH=/workspace/scratch/lebesgue-t1/deps timeout 10800 python -B topics/padua-lebesgue-followups-20261103/code/t1_check.py /workspace/scratch/lebesgue-t1-independent/cold/topics/padua-proof-attempts-2-20261101/outputs/a5_n8_interior_candidate.json.gz --allow-partial --output topics/padua-lebesgue-followups-20261103/evidence/t1-independent-reference-interior-check.json`. Stdout/stderr live under scratch as `reference-interior-check.stdout` / `.stderr`. A launched or partially printed run is not yet a pass.
-- Independent native-corner value and certificate crossvalidations are running against n4–7. Their outcomes will be recorded only after completion.
+- Native-corner controls are complete within the explicitly recorded scopes above; the redundant symbolic run's unexecuted n7 remainder is not needed for the already completed certificate comparison.
 - Fresh producer interior and boundary artifacts are still in progress. Independently replay every fresh node/root/leaf/mask and all edge/corner candidates once complete, recording actual hashes, commands, source guards, exit codes and complete accounting. Neither partial-progress output nor an incomplete producer flag can close these obligations.
 - Preserve bounded small receipts; large certificates/logs remain scratch or manifested cold storage. PROVED requires the durable finite reduction, committed reviewed checker/evidence records, retrievable certificate identity and **completed** different-agent replay. This record presently authorizes no upgrade of PD-T180 or PD-T184.

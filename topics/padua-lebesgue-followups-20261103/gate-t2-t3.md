@@ -5,7 +5,12 @@ Rules/input HEAD: `3f5196cf3639407c25b021fa30f70cc1d3ae113a`; scientific base
 gpt-6.1-sol xhigh (runtime does not independently expose the effort).
 Ownership is restricted to T2/T3 attempts, this gate, and t2*/t3* files.
 
-## Gate before development
+## Gate record and coverage
+
+Timing qualification: the shortlist below records the final coverage. Some
+linked full candidate/attempt bodies were read later, as enumerated under
+"Final dispositions and coverage reconciliation". The initial screen preceded
+development; this record does not claim every required full read did so.
 
 Read AGENTS.md, agents/WORKFLOW.md, agents/codex/CODEX.md, handoff 01 and
 LOG. Scanned the complete state/IDEAS.md headings, identifiers, aliases

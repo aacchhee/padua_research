@@ -96,5 +96,12 @@ candidate hashes and actual enclosure reruns. Required cross-family Claude
 audit remains distinct and pending. Provisional IDs are retained during WORK;
 permanent reserved ranges are in [ALLOCATIONS.md](ALLOCATIONS.md).
 
+Protocol qualification: the T2/T3 worker completed some linked predecessor
+candidate/attempt reading after the first mechanisms, while the initial
+registry and inherited-theory screen preceded them. The gate and independent
+report disclose this timing deviation. Later reading and a clean mathematical
+check do not retroactively satisfy the prospective rule or grant clean protocol
+clearance; the required Claude audit must retain that distinction.
+
 No manuscript, all-degree finite bridge, author contact, merge, global registry
 rewrite or physical cold-storage delivery is part of this development step.

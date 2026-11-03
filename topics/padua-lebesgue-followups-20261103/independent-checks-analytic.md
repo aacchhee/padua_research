@@ -25,10 +25,13 @@ while a limit/rate requires the signed deformation and all endpoints.
 ## T2 analytic reconstruction — accepted within stated scope
 
 Reviewed `theory/t2-01-edge-centre-minima.md` at SHA-256
-`afc8585aa1482a3b4c88c7898efd54a1e84db32487150b7848fa408765ec1b6d`
+`5b1156c384dbf22b9d6749a840f4d78c36f0a1e60a2e8d5fc12e30af309b4c42`
 and `theory/t2-02-common-endpoint-expansion.md` at
-`ae2c2bdc80fa584a1308995df61a83c26b5bf967ee7a96b26e75fb46e532e4ac`.
+`a61f3371445bae5bfa71f5b1947f63696697f97ac42c0f742c4eb4d587f98da3`.
 No mathematical finding remains for these files at these identities.
+Final T2 metadata records completed supplementary checks and verification
+links; the initial identities are preserved in the T3 receipt. These
+documentation changes introduce no new mathematical claim.
 
 - Horizontal reduction: reflection replaces `1+B` by 1; the band
   substitution cancels its width factor. The phase integral has period
@@ -114,8 +117,109 @@ This accepts the constant and the explicit weak rate only. The `-1/N`
 term, sharper `O(log N/N²)` remainder, full PD-T098 target and global
 argmax claims are not established by these records.
 
-## Remaining review boundary
+## T3 formulas and separate numerical checks — accepted
 
-T3 general-position series and consequential evaluation code are still
-awaiting submission. Required Claude audit remains PENDING independently
-of the accepted supplementary scopes above.
+Reviewed `theory/t3-01-general-position-series.md` at
+`8eae6849e3a5c756356864bb97dcd3d9fd25b09d2ac58ec93bb96a9e054a3ce5`,
+`code/t3_series.py` at
+`55e2a9760e52f3ce522dddc707f87f60ff1d71877695ad2804485edd72cec259`,
+and `code/t3_quadrature.py` at
+`7f8f5772576ed8fe765adb9bf5328e9f8b90b88f2499edf928b45d522a14f656`.
+No mathematical or numerical-enclosure finding remains at these hashes.
+The final evaluator adds denominator-dependent sqrt precision for rational
+m extremely close to 1. Inspected this narrow change and reran both full
+series and Darboux commands against the final receipts: both exited 0 and
+matched exactly. A separate exact `m=1-2^(-300)` control confirmed sqrt
+containment and an upper endpoint strictly below 1.
+Final T3 metadata and `evidence/t3-verification.md` were also reviewed;
+they document the completed checks, numerical reduction and exact value
+table without changing the analytic statements or proofs.
+Full commands, versions and result identities are in
+[evidence/analytic-independent-t3.json](evidence/analytic-independent-t3.json).
+
+- Vertical: reconstructed the positive shifted binomial expansion,
+  its weighted polynomial average P_k, the recurrence for M_l, and the
+  exact remainder weight `1+p atanh(p)`. Ratio at most 1/2 holds for
+  every interior angle; the prefactor is correctly nonuniform near
+  endpoints. Central specialization is an exact identity with PD-T188.
+- Horizontal centre: the two tangent changes of variables produce the
+  stated logarithmic integral for I_k. Integration by parts gives its
+  exact finite binomial expression, and `I_k<=I_0` proves the stated
+  tail. The constant term is exactly 1, not a fitted normalization.
+- Horizontal endpoint: independently expanded the differential-equation
+  numerator and its total-derivative identity. The coefficient and d_k
+  recurrences are correct; the logarithmic estimate plus reduction of
+  order determines the integral-defined K uniquely. Checked positivity
+  of every bracket, endpoint logarithmic integrability, polynomial U/W
+  moments and the complete omitted-series majorant. The two charts cover
+  all interior angles with ratio at most 1/2.
+- Exact evaluator: reviewed interval signs, reciprocal ranges, integer
+  square roots, Machin/atanh tails, exact polynomial cancellation and
+  outward decimal floor/ceiling. A separate order72 run at m=0,1/4,1/2,
+  3/4,99/100 exited 0 and matched the developer JSON exactly. The central
+  vertical enclosure is `[0.5485148423995582,0.5485148423995583]`;
+  horizontal centre is the exact singleton 1.
+- Direct outward quadrature: separately reviewed and executed the
+  directed Decimal Darboux checker. Its F and K values do not use the
+  T3 series. Correctly rounded sqrt/ln are widened by adjacent Decimal
+  values; algebra, summation and negation preserve outward bounds.
+  Monotonicity supplies the vertical and inner-K endpoint sums; the
+  outer product is bounded factorwise and the remaining endpoint strip
+  has the stated explicit logarithmic upper bound. All five exact-series
+  intervals lie in the independent quadrature intervals; rerun JSON
+  equals the developer JSON exactly. These deliberately coarse intervals
+  are an implementation crosscheck, not the source of the reported digits.
+
+A separate checker-written floating diagnostic integrates the original
+inherited double integrals, split at their exact fraction switches, for
+those same five m. It agrees with the certified-series midpoints within
+`3.6e-15`; this is explicitly MEASURED only and supplies no proof premise.
+The small regeneration script is
+[evidence/analytic-independent-double-diagnostic.py](evidence/analytic-independent-double-diagnostic.py).
+
+## Final scope boundary
+
+Within the exact reviewed identities, T2's limiting-function minimum and
+endpoint theorems, T3's formulas/enclosures, and T4's constant with weak
+explicit rate have passed this supplementary check. These claims have
+written analytic proofs; numerical digits additionally have the executed
+outward/exact reductions and separate reruns recorded above. No finite-n
+edge ordering, effective argmax bridge, optimal corner remainder, or
+universal closed-form exclusion is accepted or implied. The required
+Claude audit remains PENDING and is not replaced by this report.
+
+## Protocol qualification — T2/T3 prospective-gate timing
+
+Follow-up review of the final [T2/T3 gate](gate-t2-t3.md), specifically
+“Final dispositions and coverage reconciliation”, finds a disclosed
+prospective-gate timing deviation. The developer reports completing the
+inherited-theory, registry and P1/P2-attempt screen before derivation,
+but reading some linked full predecessor bodies only during final
+coverage reconciliation: the IDEA-303–305 registration paragraphs, the
+full original T-A4a attempt, programme IDEA-206's detailed record and
+the shortlisted FINAL_CANDIDATES registration paragraphs.
+
+The applicable [workflow](../../agents/WORKFLOW.md), “Novelty gate and
+candidate discipline”, says “Then read the full shortlisted entries and
+their linked theory” and “Generate candidates only after that gate.”
+The later coverage completion therefore does not establish that the full
+required prospective gate was satisfied before mechanism development.
+The initial “Gate before development” reading summary must be interpreted
+subject to the explicit final timing correction; this check does not
+endorse an unqualified claim that all linked bodies were read beforehand.
+
+Disposition: acknowledged historical protocol deviation, preserved for
+the required Claude audit; not retroactively cured or waived by this
+supplementary mathematical acceptance. The later reading improves the
+recorded predecessor coverage and reports no changed mechanism or proof
+premise, but cannot change when that reading occurred. The report's
+“no mathematical finding” conclusions remain confined to the pinned
+proofs and numerical reductions; they are not clean protocol clearance.
+No new mathematical or priority claim follows from this qualification.
+
+The required Claude handoff must carry this timing qualification and ask
+the auditor to review its disclosure and readiness implications. No
+numerical rerun is called for: the final T2/T3 mathematical files remain
+pinned to `5b1156c384dbf22b9d6749a840f4d78c36f0a1e60a2e8d5fc12e30af309b4c42`,
+`a61f3371445bae5bfa71f5b1947f63696697f97ac42c0f742c4eb4d587f98da3` and
+`8eae6849e3a5c756356864bb97dcd3d9fd25b09d2ac58ec93bb96a9e054a3ce5`.
