@@ -22,7 +22,7 @@ OPEN: no explicit global threshold n0 and no all-degree bridge were proved.
 Do not accept fitted/sampled constants as uniform bounds. Do not conflate
 the new all-degree slope theorem with a fixed phase neighborhood.
 
-Read AGENTS.md, agents/WORKFLOW.md and agents/claude/CLAUDE.md at the new
+Read AGENTS.md, agents/WORKFLOW.md and agents/claude/CLAUDE_ROLES.md at the new
 branch head and record that SHA. Fetch main; follow the workflow if it moved.
 **Read the complete state/IDEAS.md**, not only a shortlist: this branch
 contains mechanism and novelty content. Then read BRIEF, handoff02, plan,
