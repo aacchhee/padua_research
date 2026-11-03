@@ -19,3 +19,13 @@
 ## Runs needed
 
 - T1–T4 as in handoff 01.
+
+## 2026-11-03 — Codex development resumed
+
+- User requested `Codex (gpt-6.1-sol xhigh): Continue codex/padua-lebesgue-followups-20261103.` Orchestrator/developer configured accordingly; serving metadata is not separately exposed.
+- Rules read at initial local `2b52b432fe59c9a50aef9deebe5152c5d6874465`, then current main `440d1079e42c3ef21c40d1cf8870f5b206410c6a`; branch head `3f5196cf3639407c25b021fa30f70cc1d3ae113a` has byte-identical rules to current main. Open handoff 01 and topic log read. Current main is an ancestor; no merge needed.
+- Cloud runtime startup completed; initial restricted shell fetch could not reach the proxy. The supported per-command network grant succeeded. No alternate machine or proxy bypass was used.
+- Parallel disjoint workers: t1_certification (gpt-6.1-sol medium), t2_t3_defects and t4_constant (gpt-6.1-sol xhigh), allocation_scan (gpt-6.1-sol medium). Independent T1 checker t1_independent uses gpt-6-astra high. Parent alone owns Git/log/results/PR/handoff state.
+- [Plan](plan.md) records time ceilings, evidence requirements and acceptance criteria. Workers own target attempt/gate/theory/code files; frozen and shared scientific files remain unchanged.
+- Target novelty gates are in the workers' gate files; setup/allocation itself adds no scientific mechanism. No new claim is promoted by this entry.
+- Development in progress. Handoff 01 remains open. Required Claude audit remains PENDING.
