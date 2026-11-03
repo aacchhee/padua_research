@@ -58,5 +58,29 @@
 
 ## Runs needed (continuation)
 
+### Development checkpoint — native arithmetic and bounded gates
+
+- Draft [PR19](https://github.com/aacchhee/padua_research/pull/19) opened;
+  audit PENDING. Permanent ranges reserved in `ed8db2fc364d0ba34c3c06815460b3b2971787b5`:
+  PD-T246–265, PD-N084–091, IDEA336–355, LIT466–473. No final assignments.
+- Independent C/GMP producer and C++/GMP checker implemented. Overlap and
+  independent reference runs are still in progress; no uncompleted degree
+  is claimed at this checkpoint. The independent reviewer found and the
+  producer fixed a start/end source-provenance race; final sources are
+  snapshotted before compilation. Record frozen hashes with each run.
+- G2/G3 pilots reproduced byte-for-byte by a separate worker. Extended
+  measurements remain MEASURED; complete receipts are still being finalized.
+  G6's float screen saw no reversal in1536 E-C comparisons n13–60; exact
+  spot checks are separate pending work.
+- The exact n4 fixed-sign-cardinal obstruction has a durable theory record
+  and supplementary independent analytic reconstruction. It does not refute
+  the undefined full G7 envelope class or PD-T099.
+- [R1/R2/R5 attempt](attempts/r1-r2-r5.md): G5 lacks a specified uniform
+  remainder model, R2 tail control remains unresolved, and the full-sign
+  coefficientwise dual Bernstein test is equivalent to the existing test.
+  These limitations are not fabricated threshold/negative-theorem claims.
+- [G8 source reading](literature-g8.md) records bounded primary coverage,
+  access gaps and a survey journal correction. No1-D proof is transferred.
+
 - Independent replay of the pilot (handoff step 0).
 - Gates G0–G8 and routes R1–R6, as in handoff 02.
