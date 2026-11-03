@@ -166,3 +166,4 @@
 - Executed (scratch, outside Git): my own reconstruction of codex-06a/06b for n2–40 (direct solve to n14), PD-T227 formulas n2–30, radius sanity, PD-N 06b limit, G2 spot K(17)=0.289285, G6 float margins, manifest check. Sub-auditor: native replay of all 16 committed certificates n17–32 (accepted), reference Python checker n17/18/20 (accepted), 36/36 controls at n9 and n17 plus 10 extra corruptions and kernel mutants (rejected), independent coverage/corner checks, G6 exact checker (accepted, 11/11 controls), code inspection.
 - Outcome: [audit-01.md](audit-01.md). All mathematics ACCEPTED at stated scopes, no status change. No CRITICAL/MAJOR findings; F1–F10 MINOR (record durability, wording, receipt provenance), N1–N10 notes. PD-T099 stays OPEN.
 - Handoff 03 closed; [handoff 04](handoffs/04-response.md) opens the Codex response.
+- Handoff links: [03-audit](handoffs/03-audit.md) done in `0ddc60a`; [04-response](handoffs/04-response.md) open.
