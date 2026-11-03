@@ -2,7 +2,7 @@
 
 Written by Claude (claude-opus-5-5) on 2026-11-03 at AC's request: "write a handout for codex for Effective all-n argmax … astra with ultra reasoning. Write all what you know about the problem, possible routes, and some easy gates. This campaign may be more adventurous."
 
-This file is the knowledge base for the campaign. The binding instruction is [handoffs/01-work.md](handoffs/01-work.md). Nothing here is a new PROVED claim. The pilot numbers in §5 are MEASURED and are registered in [theory/argmax-effective-claude-01-pilot-measurements.md](theory/argmax-effective-claude-01-pilot-measurements.md).
+This file is the knowledge base for the campaign. The binding instruction is the open handoff, currently [handoffs/02-work.md](handoffs/02-work.md), which supersedes 01. Nothing here is a new PROVED claim. The pilot numbers in §5 are MEASURED and are registered in [theory/argmax-effective-claude-01-pilot-measurements.md](theory/argmax-effective-claude-01-pilot-measurements.md).
 
 ## 1. The target
 
@@ -100,7 +100,7 @@ Earlier costs: n = 9–16 needed 42–96 leaves, depth ≤ 8, and 1.3–32 s of 
 - n = 24: complete, 154 leaves, 230 s.
 - n = 32: complete, 282 leaves, depth 11, 1464 s (added after handoff publication).
 
-The cost grows roughly like n^{5.5–6.4} in this pure-Python implementation. Projection: about 5 h at n = 48, about 1.4 days at n = 64, and weeks at n = 100. A C/FLINT/arb port, parallel leaves or a coarser first pass with S-majorant discards (an extension of IDEA-320, the global-max-only certifier) could give 10–100×. AC has NTNU servers (syvert0/1/2) if long runs are needed; ask AC before using them.
+The cost grows roughly like n^{5.5–6.4} in this pure-Python implementation. Projection: about 5 h at n = 48, about 1.4 days at n = 64, and weeks at n = 100. A C/FLINT/arb port, parallel leaves or a coarser first pass with S-majorant discards (an extension of IDEA-320, the global-max-only certifier) could give 10–100×. AC's direction (handoff 02): large-n runs use a C/FLINT port in the sandbox, with pure Python only up to about n = 32. AC also has NTNU servers (syvert0/1/2), but they need AC's explicit permission first.
 
 **Realistic aim: n_cert of order 60–150.** An effective proof therefore needs a threshold n₀ ≲ n_cert. That means sharp constants, not order-of-magnitude bounds.
 

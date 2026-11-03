@@ -1,7 +1,7 @@
 # Effective all-degree Padua argmax (PD-T099): campaign log
 
 - Branch: `codex/padua-argmax-effective-20261103` · Base: main `440d107` · Developer: Codex (gpt-6-astra ultra, at AC's instruction) · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: `Codex (gpt-6-astra ultra): Continue codex/padua-argmax-effective-20261103.` · Open handoff: [handoffs/01-work.md](handoffs/01-work.md)
+- Stage: WORK · Next: `Codex (gpt-6-astra ultra): Continue codex/padua-argmax-effective-20261103.` · Open handoff: [handoffs/02-work.md](handoffs/02-work.md)
 - Reserved final-ID ranges: none yet. Reserve when the draft PR opens (WORKFLOW fresh-range procedure).
 - Claims: PD-T?argmax-effective-claude-01 — pilot gate measurements — MEASURED — [record](theory/argmax-effective-claude-01-pilot-measurements.md).
 - For the PR: final IDs, PROOF_STATUS/IDEAS/INDEX rows, a RESULTS.md section, and the Claude audit.
@@ -32,7 +32,13 @@
 
 - Addendum after handoff 01 was published (`71cf7be`): the pilot n = 32 producer run completed (complete cover, 282 leaves, 1464 s). Its row was added to the pilot record and outputs/certifier_pilot.md. This is MEASURED timing only, with no change to the handoff instruction.
 
+- 2026-11-03 12:02, AC: "do you specify to focus on c/flint in sandbox if codex goes for big n?" Handoff 01 only said "port … if G1 shows that it pays". Per WORKFLOW redirection, handoff 01 is set to `superseded by 02`, and [handoff 02](handoffs/02-work.md) repeats the full instruction with step 4 and G1 amended:
+  - large-n certification uses a C/FLINT (or GMP/MPFR) port run in the sandbox, with pure Python only up to about n = 32;
+  - the port is validated against the reference checker on n = 9–24;
+  - an independent checker port is cross-validated with the corruption controls;
+  - no external machines without asking AC.
+
 ## Runs needed
 
 - Independent replay of the pilot (handoff step 0).
-- Gates G0–G8 and routes R1–R6, as in handoff 01.
+- Gates G0–G8 and routes R1–R6, as in handoff 02.

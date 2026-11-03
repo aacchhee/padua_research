@@ -5,7 +5,7 @@ This file is written only by the topic orchestrator. Branch `codex/padua-argmax-
 ## Status (2026-11-03): WORK, campaign set up
 
 - Target: PD-T099 for all n ≥ 2. Known: certified 2 ≤ n ≤ 16, and the non-effective eventual theorem PD-T229. Open: the bridge 17 ≤ n < N_*.
-- [Brief](../topics/padua-argmax-effective-20261103/BRIEF.md) and [handoff 01](../topics/padua-argmax-effective-20261103/handoffs/01-work.md): Codex, gpt-6-astra ultra, adventurous routes R1–R6, gates G0–G8 first.
+- [Brief](../topics/padua-argmax-effective-20261103/BRIEF.md) and [handoff 02](../topics/padua-argmax-effective-20261103/handoffs/02-work.md), which supersedes 01 with the C/FLINT large-n amendment: Codex, gpt-6-astra ultra, adventurous routes R1–R6, gates G0–G8 first.
 
 ## Results so far
 
