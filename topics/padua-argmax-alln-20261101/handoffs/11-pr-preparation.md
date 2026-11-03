@@ -1,6 +1,6 @@
 # Handoff 11 — padua-argmax-alln-20261101 — PR preparation
 
-- Status: open
+- Status: superseded by12: AC requires finalization in this pass with no further Claude round
 - Previous handoff: 10-claude-response-and-storage-review.md (done in the input commit)
 
 - Next agent / model / effort: Codex, `gpt-6.1-sol` high. The work is shared-registry, final-ID and record preparation with semantic content, so high rather than medium.
