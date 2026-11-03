@@ -1,6 +1,6 @@
 # Handoff 02 — padua-argmax-effective-20261103 — effective all-degree Padua argmax (adventurous campaign), with the large-n certification amendment
 
-- Status: open
+- Status: done in d790d58d8ecb5eb4ac455b2b7d638336d3bc0430
 - Previous handoff: 01-work.md (superseded by this file; the only change is AC's large-n certification requirement, in step 4 and gate G1)
 
 - Next agent / model / effort: Codex, **gpt-6-astra at ultra** for the orchestrator and all mathematics. This follows AC's explicit instruction (2026-11-03: "This looks like a topic that warrants astra with ultra reasoning"), which overrides the WORKFLOW allocation table for this campaign; record that justification in LOG. Use gpt-6.1-sol medium for code, ports, timing and replays. Use a separate gpt-6-astra high instance for supplementary independent checks.
