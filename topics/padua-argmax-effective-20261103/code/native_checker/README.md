@@ -55,3 +55,11 @@ comparisons are performed anew. Normal command-line replay does not cache.
 No Python assertions carry scientific validation, so Python `-O` does not
 remove the driver's explicit checks. Bulk regenerable outputs and binaries belong outside Git. The small essential
 per-degree certificates supporting new PROVED claims are retained in `../../evidence/`.
+
+For CPU cost, execute fresh normal replays at n17 and n24 and take
+`resource.getrusage(resource.RUSAGE_CHILDREN)` differences around each
+`subprocess.run` of the driver. The sum of user and system differences
+includes both the Python driver and its waited-for native child; it is
+separate from elapsed wall time under concurrent load. The campaign's
+executed benchmark script and raw receipts are retained externally as
+`cpu_bench.py`, `cpu-bench.json`, and `nN-cpu-benchmark-check.json`.

@@ -53,3 +53,14 @@ wall time including cold compilation. This single-threaded port uses fixed
 intervals widen, but success at a new degree is not guaranteed. Root plus one
 coefficient table per active depth gives O(n^4 depth) memory, and heavy loops
 remain high polynomial cost. No failed/partial certificate is a counterexample.
+
+`time_reference.py --work PATH` reproduces the same-clock Python CPU comparison
+at17 and24, with an explicit n<=32 guard. `receipt.py --folder FINAL
+--original ORIGINAL --independent INDEPENDENT --output RECEIPT` summarizes
+identity, actual replay status and limited cost fits; it reads only checker
+receipts, never imports the independently authored checker kernel.
+
+`time_native.py --work PATH` measures full-driver CPU as parent CPU plus child
+user/system CPU deltas, including a cold compiler. Its extra output work makes
+the reference-constructor/search versus full-driver ratio conservative for that
+overhead; hot-path setup/search timings remain a distinct series.

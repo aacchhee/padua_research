@@ -1,21 +1,32 @@
-# padua-argmax-effective-20261103 — effective all-degree Padua argmax
+# Effective Padua argmax — development results
 
-This file is written only by the topic orchestrator. Branch `codex/padua-argmax-effective-20261103`; no PR yet.
+Branch `codex/padua-argmax-effective-20261103`; [draft PR19](https://github.com/aacchhee/padua_research/pull/19).
+Rules/input8a1f394, base440d107. Required Claude audit pending.
 
-## Status (2026-11-03): WORK, campaign set up
+**PD-T099 remains OPEN.** No explicit global threshold n0 or counterexample
+was obtained. The effective campaign supplies two kinds of progress:
 
-- Target: PD-T099 for all n ≥ 2. Known: certified 2 ≤ n ≤ 16, and the non-effective eventual theorem PD-T229. Open: the bridge 17 ≤ n < N_*.
-- [Brief](../topics/padua-argmax-effective-20261103/BRIEF.md) and [handoff 02](../topics/padua-argmax-effective-20261103/handoffs/02-work.md), which supersedes 01 with the C/FLINT large-n amendment: Codex, gpt-6-astra ultra, adventurous routes R1–R6, gates G0–G8 first.
+- An exact corner-active spectrum proves, for every n>=2,
+  A_n,B_n<=-n^2 Lambda_c/8. Strict corner descent holds when
+  0<h_x+h_y<=1/(2[n(n+1)]^3). This closes the all-degree normalized slope
+  premise, while weighted energy and a fixed scaled phase zone remain OPEN.
+- A C/GMP producer and separately implemented C++/GMP checker extend exact
+  finite certification. The final degree set and acceptance evidence are
+  in the [finite theorem](../topics/padua-argmax-effective-20261103/theory/argmax-effective-codex-01-finite-global-argmax.md).
 
-## Results so far
+Three strict whole-cell edge comparisons are proved at n13,17,24.
+Scoped analytic obstructions refute a fixed-sign-cardinal envelope at n4,
+complete spectral positivity, and uniform per-cardinal affine sign
+preservation. These do not refute PD-T099 or aggregate/reflected approaches.
 
-- **PD-T?argmax-effective-claude-01 (MEASURED)**, [record](../topics/padua-argmax-effective-20261103/theory/argmax-effective-claude-01-pilot-measurements.md):
-  - The true local corner constant is about 0.24–0.29, against a budget of 0.75–0.92 and the proved 237000.
-  - The true global primitive constant is about 1.5–1.6.
-  - The far-coset majorant margin is 0.15–0.34.
-  - The PD-T210 certifier completes n = 17, 20, 24 and 32 (35 s to 24 min; cost about n^6).
-  - These degrees are not certified until an independent replay accepts them.
+G2/G3/G4 and the1536-comparison G6 screen remain MEASURED at finite sample
+scope. G5 cannot produce n0 without explicit uniform remainder and defect
+bounds. G8 source coverage is partial; no1-D theorem is transferred.
 
-## Next step
+The [report](../topics/padua-argmax-effective-20261103/report.md) gives route
+outcomes, costs, evidence and remaining obligations. Small exact witnesses
+are committed; bulk raw measurements have a verified local staging archive,
+with external cold-storage delivery pending. Final scientific IDs remain
+unassigned within the permanently reserved ranges.
 
-`Codex (gpt-6-astra ultra): Continue codex/padua-argmax-effective-20261103.`
+Next: `Claude (Opus 5.5 xhigh): Continue codex/padua-argmax-effective-20261103.`

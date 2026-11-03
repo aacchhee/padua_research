@@ -28,7 +28,7 @@ Exact real arithmetic, degree n=4, and the specified even checkerboard. No all-d
 
 ## Status by part
 
-Overall status: **PROVED**, by the elementary analytic calculation below; independent supplementary reconstruction and required Claude topic audit are pending.
+Overall status: **PROVED**, by the elementary analytic calculation below. Supplementary independent reconstruction by gpt-6-astra high accepted the stated scope; required Claude topic audit remains pending.
 
 | Mathematical part | Status | Evidence |
 |---|---|---|
@@ -74,6 +74,8 @@ The proof is self-contained exact algebra; the following executed calculations a
 
 No floating-point sign test or transcendental enclosure is used in the proof. No bulky evidence artifact is needed because every exact coefficient and comparison needed for reconstruction is displayed above.
 
+The distinct gpt-6-astra high checker independently reconstructed the kernel restriction without loading this worker's polynomial output, then checked the two exact values and strict shared-diamond membership. Its [supplementary analytic review](../independent-checks-01.md#exact-degree-four-sign-obstruction-supplementary-analytic-review) accepts the stated G7-F obstruction and its limited scope. This does not replace the required Claude audit.
+
 ## Sources
 
 Accepted local PD-T101 only. LIT-312's generating-curve context is motivation, not a transferred theorem. No 1-D maximum-location theorem is used.
@@ -86,7 +88,7 @@ For orientation, the brief's corner check has an elementary answer: if gamma(t)=
 
 ## Open items
 
-To make original G7 falsifiable, specify the allowed envelope/factor class, normalization, exact cells and what is required to have fixed sign. Retain IDEA-319 until that has been done. Independent analytic reconstruction and Claude audit remain pending; they should check especially the exceptional x-mode and strict diamond membership.
+To make original G7 falsifiable, specify the allowed envelope/factor class, normalization, exact cells and what is required to have fixed sign. Retain IDEA-319 until that has been done. Supplementary independent analytic reconstruction is complete; Claude audit remains pending.
 
 ## History
 

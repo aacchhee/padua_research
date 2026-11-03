@@ -39,5 +39,5 @@ Aliases: G7-F; positive common-factor cardinal representation; coarse cell sign 
 - Actual test results: L00(x,0)=(x²-1)(2x²+2x-1)/10. Values 4/405 and -11/4096 at x=1/3 and3/8, both in D(2,3), give a complete analytic obstruction.
 - Disposition: **REJECTED: refuted**, only for individual fixed signs / the displayed nonnegative-factor representation on these coarse cells.
 - Disposition reason: the two exact opposite signs make a cellwise fixed sign impossible. Regrouping, refined sign cells and the whole generating-curve route remain outside scope.
-- Canonical negative-result ID: [PD-N?argmax-effective-codex-04](../theory/argmax-effective-codex-04-coarse-cell-sign-obstruction.md), **PROVED**, analytic proof; independent supplementary reconstruction and Claude audit pending.
+- Canonical negative-result ID: [PD-N?argmax-effective-codex-04](../theory/argmax-effective-codex-04-coarse-cell-sign-obstruction.md), **PROVED**, analytic proof; supplementary independent gpt-6-astra high reconstruction accepted, required Claude audit pending.
 - Topic / audit / history: G7-F registered in the attempt before exact expansion. The result does not retroactively convert original G7 into a well-posed criterion.

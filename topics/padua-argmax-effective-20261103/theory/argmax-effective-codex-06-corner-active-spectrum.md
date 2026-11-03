@@ -53,7 +53,8 @@ they do not assert sign stability on an n-independent neighborhood.
 
 ## Status by part
 
-Overall status: **PROVED** (development proof; independent and Claude review pending).
+Overall status: **PROVED**. [Supplementary independent reconstruction](../independent-math-checks-01.md)
+is complete and accepted; required Claude audit remains pending.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -195,7 +196,7 @@ D_0=1 for n odd and 1-2/m for n even, as asserted. QED.
 Analytic proof. Exploratory float64 reconstruction against the full
 coefficient matrix at n=2,3,4,5,8,16,32,64 agreed within 4.2e-14;
 this is a diagnostic, not a premise. Reproducible diagnostic code and
-the precise pending independent review are recorded in the R6 attempt.
+the completed supplementary independent review are recorded in the R6 attempt.
 
 ## Sources and scope
 

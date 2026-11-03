@@ -37,7 +37,7 @@ The accepted cardinal formula and PD-T210's outward integer constructor are trus
 
 ## Status by part
 
-Overall status: **PROVED**, computer assisted at the three displayed finite instances. Written finite reduction, exact arithmetic, small certificate and actual different-agent checker execution with corruption controls are complete in the workspace; root owns committing the small evidence and manifest. Required Claude topic audit is pending.
+Overall status: **PROVED**, computer assisted at the three displayed finite instances. Written finite reduction, exact arithmetic, small repository certificate and actual different-agent checker execution with corruption controls are complete. Required Claude topic audit is pending.
 
 | Mathematical part | Status | Evidence |
 |---|---|---|
@@ -100,10 +100,10 @@ The independent mathematical worker additionally executed exact integer assertio
 
 | Essential artifact | Bytes | SHA256 |
 |---|---:|---|
-|`/workspace/padua-work/comparison/g6-exact.json`|4424|`496060af0278cbf973f967a4c3ddc325b8c9a6deb530c7fc39a77b1837a463d6`|
-|`/workspace/padua-work/comparison/g6-exact-independent.json`|2311|`e0fbb0fc0bf6a502e579cfb730e6dbdc6d67ee5d9a212ca4c7673301130520e7`|
+|[Certificate](../evidence/g6-exact.json)|4424|`496060af0278cbf973f967a4c3ddc325b8c9a6deb530c7fc39a77b1837a463d6`|
+|[Independent checker receipt](../evidence/g6-exact-independent.json)|2311|`e0fbb0fc0bf6a502e579cfb730e6dbdc6d67ee5d9a212ca4c7673301130520e7`|
 
-Root will place these small artifacts in the repository's selected evidence path; their bytes, not their placement, define the evidence identity. The full floating screen merely chose the pairs and is not a proof premise. The final producer binds its actual full-screen input hash `cd2718db479893d2c1f4027fb2e96c10b5045ac609af4bea8731b3bab5ce42da` for provenance.
+These small artifacts are preserved in the repository's `evidence/` directory with unchanged bytes. The full floating screen merely chose the pairs and is not a proof premise. The final producer binds its actual full-screen input hash `cd2718db479893d2c1f4027fb2e96c10b5045ac609af4bea8731b3bab5ce42da` for provenance. The checker can be rerun directly on `topics/padua-argmax-effective-20261103/evidence/g6-exact.json`; the earlier executed command above preserves the original working-output provenance.
 
 Producer and checker share the inherited outward arithmetic and cardinal-constructor kernel. This is an actual different-agent checker execution, not a separately implemented arithmetic kernel or a separate-source reconstruction. The limitation is the same type explicitly disclosed in PD-T210/231; no independent-arithmetic claim is made.
 
@@ -117,7 +117,7 @@ Only the three listed instances are proved. They are stronger than the correspon
 
 ## Open items
 
-All-degree E-C and a useful all-n phase-alignment comparison remain OPEN. Root must commit the small evidence with its manifest, and the required Claude topic audit remains pending. No additional exact scan is needed to support the finite statement above.
+All-degree E-C and a useful all-n phase-alignment comparison remain OPEN. The required Claude topic audit remains pending. No additional exact scan is needed to support the finite statement above.
 
 ## History
 

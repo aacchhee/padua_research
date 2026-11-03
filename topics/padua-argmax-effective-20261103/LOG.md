@@ -2,7 +2,7 @@
 
 - Branch: `codex/padua-argmax-effective-20261103` · Base: main `440d107` · Developer: Codex (gpt-6-astra ultra, at AC's instruction) · Auditor: Claude (Opus 5.5 xhigh)
 - Stage: WORK · Next: `Codex (gpt-6-astra ultra): Continue codex/padua-argmax-effective-20261103.` · Open handoff: [handoffs/02-work.md](handoffs/02-work.md)
-- Reserved final-ID ranges: none yet. Reserve when the draft PR opens (WORKFLOW fresh-range procedure).
+- Reserved final-ID ranges: PD-T246–265, PD-N084–091, IDEA336–355, LIT466–473; first pushed in `ed8db2f`, [ALLOCATIONS.md](ALLOCATIONS.md). Final assignments pending.
 - Claims: PD-T?argmax-effective-claude-01 — pilot gate measurements — MEASURED — [record](theory/argmax-effective-claude-01-pilot-measurements.md).
 - For the PR: final IDs, PROOF_STATUS/IDEAS/INDEX rows, a RESULTS.md section, and the Claude audit.
 - Open for AC: none at setup. Ask AC before using the NTNU servers.
@@ -37,8 +37,6 @@
   - the port is validated against the reference checker on n = 9–24;
   - an independent checker port is cross-validated with the corruption controls;
   - no external machines without asking AC.
-
-## Runs needed
 
 ## 2026-11-03 — Codex continuation of handoff 02: setup
 
@@ -84,3 +82,24 @@
 
 - Independent replay of the pilot (handoff step 0).
 - Gates G0–G8 and routes R1–R6, as in handoff 02.
+
+
+### Analytic and bounded-gate completion
+
+- Exact spectrum and all-degree normalized slopes proved in codex-06a/06b:
+  A_n,B_n<=-n^2 Lambda_c/8. Strict local decrease is explicit for
+  0<h_x+h_y<=1/(2[n(n+1)]^3); the fixed phase zone remains OPEN.
+- Two scoped analytic obstructions preserve failed candidate history:
+  all-positive spectrum fails at n3, and the (3,1) gradient/value ratio
+  grows like -5n^3/(2*pi^2), blocking only uniform affine sign preservation.
+- Supplementary astra high reviewer independently reconstructed all four
+  corner proofs, the n4 G7-F obstruction and the R5 coefficient equivalence.
+  The review is separate from required Claude audit.
+- G6 exact three-pair evidence and independent acceptance/control receipts
+  are committed; full floating samples remain outside Git. G2/G3/G4 and
+  G6 are MEASURED at their recorded finite sample scopes. G5 remains
+  undefined without a uniform remainder/margin model, not a failed theorem.
+- Native producer contiguous through32 complete; independently reconstructed
+  acceptance and fresh Python G0 continuation are being finalized. Only
+  final receipt-backed degrees will enter the finite theorem.
+- No new permissions, outside machine or third-party fulltext storage used.

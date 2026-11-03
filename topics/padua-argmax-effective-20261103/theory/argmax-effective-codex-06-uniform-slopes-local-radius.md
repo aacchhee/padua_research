@@ -45,7 +45,8 @@ assumed.
 
 ## Status by part
 
-Overall status: **PROVED** (development proof; independent and Claude review pending).
+Overall status: **PROVED**. [Supplementary independent reconstruction](../independent-math-checks-01.md)
+is complete and accepted; required Claude audit remains pending.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -74,8 +75,8 @@ sigma_j0=-(-1)^n. Therefore for every s,t>=0,
 
     D_(s,t)lambda_n(c)=D_(s,t)P_n(c)=s*A_n+t*B_n.
 
-Since dT_a(-cos xi)/dx at x=-1 contributes -a^2 in the inward cosine
-expansion, the coefficient formulas give
+Since x=-cos xi=-1+xi^2/2+O(xi^4), the endpoint derivative of cos(a xi)
+with respect to x is -a^2. The coefficient formulas therefore give
 
     -A_n=sum_a a^2 R_a,       -B_n=sum_b b^2 D_b.                  (4)
 
@@ -192,8 +193,9 @@ QED.
 
 ## Checks
 
-The proof is analytic. A separate agent is requested to reconstruct
-codex-06a/06b, including all n=2 endpoint cases. Floating slope matches
+The proof is analytic. A separate agent reconstructed
+codex-06a/06b, including all n=2 endpoint cases, and accepted the exact
+claims in [independent-math-checks-01.md](../independent-math-checks-01.md). Floating slope matches
 against the coefficient kernel are only diagnostics, recorded in the R6
 attempt. No new finite global certificate follows from these checks.
 
