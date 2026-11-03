@@ -1,0 +1,50 @@
+n=17 Lc=8.6179  K_true=max (lam-a*Lc)/(rho^2 log(n+1)) = 0.2893 at rho=0.00098 f=0.00 ; axis budget Lc/(4log(n+1))=0.745 (diagonal: K and budget both halve)
+    rho=0.01562 f=0.0 (lam-Lc)/rho^2=-1.3183 K=0.2893
+    rho=0.01562 f=0.5 (lam-Lc)/rho^2=-0.6600 K=0.1444
+    rho=0.01562 f=1.0 (lam-Lc)/rho^2=-1.3216 K=0.2881
+    rho=0.00391 f=0.0 (lam-Lc)/rho^2=-1.3183 K=0.2893
+    rho=0.00391 f=0.5 (lam-Lc)/rho^2=-0.6600 K=0.1444
+    rho=0.00391 f=1.0 (lam-Lc)/rho^2=-1.3216 K=0.2882
+    rho=0.00098 f=0.0 (lam-Lc)/rho^2=-1.3183 K=0.2893
+    rho=0.00098 f=0.5 (lam-Lc)/rho^2=-0.6600 K=0.1444
+    rho=0.00098 f=1.0 (lam-Lc)/rho^2=-1.3216 K=0.2882
+n=24 Lc=9.8725  K_true=max (lam-a*Lc)/(rho^2 log(n+1)) = 0.2775 at rho=0.00098 f=0.00 ; axis budget Lc/(4log(n+1))=0.767 (diagonal: K and budget both halve)
+    rho=0.01562 f=0.0 (lam-Lc)/rho^2=-1.5750 K=0.2775
+    rho=0.01562 f=0.5 (lam-Lc)/rho^2=-0.7881 K=0.1385
+    rho=0.01562 f=1.0 (lam-Lc)/rho^2=-1.5774 K=0.2767
+    rho=0.00391 f=0.0 (lam-Lc)/rho^2=-1.5750 K=0.2775
+    rho=0.00391 f=0.5 (lam-Lc)/rho^2=-0.7881 K=0.1385
+    rho=0.00391 f=1.0 (lam-Lc)/rho^2=-1.5774 K=0.2767
+    rho=0.00098 f=0.0 (lam-Lc)/rho^2=-1.5750 K=0.2775
+    rho=0.00098 f=0.5 (lam-Lc)/rho^2=-0.7881 K=0.1385
+    rho=0.00098 f=1.0 (lam-Lc)/rho^2=-1.5774 K=0.2767
+n=48 Lc=12.6888  K_true=max (lam-a*Lc)/(rho^2 log(n+1)) = 0.2593 at rho=0.00098 f=0.00 ; axis budget Lc/(4log(n+1))=0.815 (diagonal: K and budget both halve)
+    rho=0.01562 f=0.0 (lam-Lc)/rho^2=-2.1628 K=0.2593
+    rho=0.01562 f=0.5 (lam-Lc)/rho^2=-1.0817 K=0.1296
+    rho=0.01562 f=1.0 (lam-Lc)/rho^2=-2.1641 K=0.2590
+    rho=0.00391 f=0.0 (lam-Lc)/rho^2=-2.1629 K=0.2593
+    rho=0.00391 f=0.5 (lam-Lc)/rho^2=-1.0817 K=0.1296
+    rho=0.00391 f=1.0 (lam-Lc)/rho^2=-2.1641 K=0.2590
+    rho=0.00098 f=0.0 (lam-Lc)/rho^2=-2.1629 K=0.2593
+    rho=0.00098 f=0.5 (lam-Lc)/rho^2=-1.0817 K=0.1296
+    rho=0.00098 f=1.0 (lam-Lc)/rho^2=-2.1641 K=0.2590
+n=96 Lc=15.8985  K_true=max (lam-a*Lc)/(rho^2 log(n+1)) = 0.2464 at rho=0.00098 f=0.00 ; axis budget Lc/(4log(n+1))=0.869 (diagonal: K and budget both halve)
+    rho=0.01562 f=0.0 (lam-Lc)/rho^2=-2.8474 K=0.2464
+    rho=0.01562 f=0.5 (lam-Lc)/rho^2=-1.4239 K=0.1232
+    rho=0.01562 f=1.0 (lam-Lc)/rho^2=-2.8481 K=0.2462
+    rho=0.00391 f=0.0 (lam-Lc)/rho^2=-2.8475 K=0.2464
+    rho=0.00391 f=0.5 (lam-Lc)/rho^2=-1.4239 K=0.1232
+    rho=0.00391 f=1.0 (lam-Lc)/rho^2=-2.8481 K=0.2462
+    rho=0.00098 f=0.0 (lam-Lc)/rho^2=-2.8475 K=0.2464
+    rho=0.00098 f=0.5 (lam-Lc)/rho^2=-1.4239 K=0.1232
+    rho=0.00098 f=1.0 (lam-Lc)/rho^2=-2.8481 K=0.2462
+n=192 Lc=19.5010  K_true=max (lam-a*Lc)/(rho^2 log(n+1)) = 0.2367 at rho=0.00098 f=0.00 ; axis budget Lc/(4log(n+1))=0.926 (diagonal: K and budget both halve)
+    rho=0.01562 f=0.0 (lam-Lc)/rho^2=-3.6293 K=0.2367
+    rho=0.01562 f=0.5 (lam-Lc)/rho^2=-1.8147 K=0.1184
+    rho=0.01562 f=1.0 (lam-Lc)/rho^2=-3.6296 K=0.2367
+    rho=0.00391 f=0.0 (lam-Lc)/rho^2=-3.6293 K=0.2367
+    rho=0.00391 f=0.5 (lam-Lc)/rho^2=-1.8148 K=0.1184
+    rho=0.00391 f=1.0 (lam-Lc)/rho^2=-3.6297 K=0.2367
+    rho=0.00098 f=0.0 (lam-Lc)/rho^2=-3.6293 K=0.2367
+    rho=0.00098 f=0.5 (lam-Lc)/rho^2=-1.8148 K=0.1184
+    rho=0.00098 f=1.0 (lam-Lc)/rho^2=-3.6297 K=0.2367
