@@ -1,0 +1,23 @@
+{
+  "actual_root_boxes": 44,
+  "all_controls_passed": true,
+  "backend_sha256": "607f6016d35f1edc513d04f3a9e38dea3cb37f5c6cfb92a31767392687c75764",
+  "benchmark_leaves": 100,
+  "boxes": 10,
+  "cache": {
+    "currsize": 512,
+    "hits": 42743,
+    "maxsize": 512,
+    "misses": 852
+  },
+  "cached_over_native": 1.1888443539421205,
+  "cached_seconds": 2.3081905670001106,
+  "count_certified": false,
+  "exact_endpoint_equalities": 3594,
+  "input_sha256": "a3b4f278a322338fb65f60922b4251265288148e1a09fd22882215004e81c324",
+  "native_seconds": 1.9415414299999156,
+  "payload_sha256": "083a9aaab58eeeb2ce524f7c15467d3c4efa90bb8df4e92d5b0942c3a6257c97",
+  "polynomial_vectors": 333,
+  "seconds": 21.201670256999932,
+  "wrong_precision_refused": true
+}

@@ -1,0 +1,86 @@
+{
+  "binaries_sha256": {
+    "/workspace/scratch/lebesgue-t1-native/_t1_native.cpython-312-x86_64-linux-gnu.so": "f5d8f17d061d9da7b0220f8e003b69e2f1e1f0a3882a9b3c0b83ae9711895e41",
+    "/workspace/scratch/lebesgue-t1-native/reprobuild/_t1_native.cpython-312-x86_64-linux-gnu.so": "11d02f426e71862a593e7d7f36c1b610ac96eec5777b42683edae3e2a46f5f00"
+  },
+  "controls_sha256": {
+    "topics/padua-lebesgue-followups-20261103/evidence/t1-native-build.json": "1ade3cc04171688bb02f5a485d27d7cd4a9353e582c3142ddaf29e9bc3d17803",
+    "topics/padua-lebesgue-followups-20261103/evidence/t1-native-controls.json": "3b38e843aaa6f19f250652be5f4b5c62265a90ee0837d1b1940d001166efd3bd",
+    "topics/padua-lebesgue-followups-20261103/evidence/t1-native-edge-controls.json": "e41a336430ae1b5e91b5c121788f91a9ef6641a8aba0dabf9a5736db0bcb79d5",
+    "topics/padua-lebesgue-followups-20261103/evidence/t1-native-wrapper-controls.json": "7afe8d340d3d5370d3ed6b2dd31c73eb0f52628ac9e78ddf9825a58bea3004da"
+  },
+  "independent_review": "pending",
+  "live_installed": false,
+  "optimized_refusals": [
+    {
+      "entry": "topics/padua-lebesgue-followups-20261103/code/t1_native.py",
+      "flag": "-O",
+      "refused_before_imports": true
+    },
+    {
+      "entry": "topics/padua-lebesgue-followups-20261103/code/t1_native.py",
+      "flag": "-OO",
+      "refused_before_imports": true
+    },
+    {
+      "entry": "topics/padua-lebesgue-followups-20261103/code/t1_native_build.py",
+      "flag": "-O",
+      "refused_before_imports": true
+    },
+    {
+      "entry": "topics/padua-lebesgue-followups-20261103/code/t1_native_build.py",
+      "flag": "-OO",
+      "refused_before_imports": true
+    },
+    {
+      "entry": "topics/padua-lebesgue-followups-20261103/code/t1_native_controls.py",
+      "flag": "-O",
+      "refused_before_imports": true
+    },
+    {
+      "entry": "topics/padua-lebesgue-followups-20261103/code/t1_native_controls.py",
+      "flag": "-OO",
+      "refused_before_imports": true
+    },
+    {
+      "entry": "topics/padua-lebesgue-followups-20261103/code/t1_native_edge_controls.py",
+      "flag": "-O",
+      "refused_before_imports": true
+    },
+    {
+      "entry": "topics/padua-lebesgue-followups-20261103/code/t1_native_edge_controls.py",
+      "flag": "-OO",
+      "refused_before_imports": true
+    },
+    {
+      "entry": "topics/padua-lebesgue-followups-20261103/code/t1_native_produce.py",
+      "flag": "-O",
+      "refused_before_imports": true
+    },
+    {
+      "entry": "topics/padua-lebesgue-followups-20261103/code/t1_native_produce.py",
+      "flag": "-OO",
+      "refused_before_imports": true
+    },
+    {
+      "entry": "topics/padua-lebesgue-followups-20261103/code/t1_native_wrapper_controls.py",
+      "flag": "-O",
+      "refused_before_imports": true
+    },
+    {
+      "entry": "topics/padua-lebesgue-followups-20261103/code/t1_native_wrapper_controls.py",
+      "flag": "-OO",
+      "refused_before_imports": true
+    }
+  ],
+  "rules_read_head": "b604f0d19471f4b323d3eb89204eeb9b4ef6bcf1",
+  "sources_sha256": {
+    "topics/padua-lebesgue-followups-20261103/code/t1_native.c": "28afd0babb28f8a35c589900f212d62572fa7c74c5d7c59b5c2461e3c67d226f",
+    "topics/padua-lebesgue-followups-20261103/code/t1_native.py": "c50d8ef0923738a68cd14f5efa6778f00e9d22bb73745aadd5a7368c858891ba",
+    "topics/padua-lebesgue-followups-20261103/code/t1_native_build.py": "91ed2b64022a8808f6addc633fe96a055cc255b093f199c44f009c25f2ff3f80",
+    "topics/padua-lebesgue-followups-20261103/code/t1_native_controls.py": "b2f7758f469c63f993d644c9d9345a9d69e9fb220190e08f1fd59938396c34d5",
+    "topics/padua-lebesgue-followups-20261103/code/t1_native_edge_controls.py": "8df928b32df4262033083d9db2176fed9fe9154065434d587c70b495ac3add1c",
+    "topics/padua-lebesgue-followups-20261103/code/t1_native_produce.py": "6c69b3ed4e08ed238e5ab141c2280a954c37b0d66702ced4a32cbc9cc15b0e2c",
+    "topics/padua-lebesgue-followups-20261103/code/t1_native_wrapper_controls.py": "15adf30ed99e765d09629794719200b4d000b8052c13e3d645d29d9a2b1ad06d"
+  }
+}

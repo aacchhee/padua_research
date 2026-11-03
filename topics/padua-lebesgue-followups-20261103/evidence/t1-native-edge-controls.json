@@ -1,0 +1,107 @@
+{
+  "all_controls_passed": true,
+  "count_certified": false,
+  "endpoint_payload_sha256": "f99a7ab6701183f28a52dfbb1669f8de732d69a93b31c05a9590c73f9b977224",
+  "exact_endpoint_equalities": 3120,
+  "malformed_inputs_rejected": 8,
+  "optimized_refusals": [
+    [
+      "t1_native.py",
+      "-O"
+    ],
+    [
+      "t1_native.py",
+      "-OO"
+    ],
+    [
+      "t1_native_build.py",
+      "-O"
+    ],
+    [
+      "t1_native_build.py",
+      "-OO"
+    ],
+    [
+      "t1_native_produce.py",
+      "-O"
+    ],
+    [
+      "t1_native_produce.py",
+      "-OO"
+    ],
+    [
+      "t1_native_controls.py",
+      "-O"
+    ],
+    [
+      "t1_native_controls.py",
+      "-OO"
+    ],
+    [
+      "t1_native_edge_controls.py",
+      "-O"
+    ],
+    [
+      "t1_native_edge_controls.py",
+      "-OO"
+    ]
+  ],
+  "rows": [
+    {
+      "cache": {
+        "currsize": 6,
+        "hits": 618,
+        "maxsize": 512,
+        "misses": 6
+      },
+      "comparisons": 624,
+      "n": 4,
+      "precision": 96
+    },
+    {
+      "cache": {
+        "currsize": 6,
+        "hits": 618,
+        "maxsize": 512,
+        "misses": 6
+      },
+      "comparisons": 624,
+      "n": 5,
+      "precision": 96
+    },
+    {
+      "cache": {
+        "currsize": 6,
+        "hits": 618,
+        "maxsize": 512,
+        "misses": 6
+      },
+      "comparisons": 624,
+      "n": 6,
+      "precision": 112
+    },
+    {
+      "cache": {
+        "currsize": 6,
+        "hits": 618,
+        "maxsize": 512,
+        "misses": 6
+      },
+      "comparisons": 624,
+      "n": 7,
+      "precision": 128
+    },
+    {
+      "cache": {
+        "currsize": 6,
+        "hits": 618,
+        "maxsize": 512,
+        "misses": 6
+      },
+      "comparisons": 624,
+      "n": 8,
+      "precision": 160
+    }
+  ],
+  "seconds": 3.535596141000042
+}
