@@ -1,0 +1,162 @@
+{
+  "main": "440d1079e42c3ef21c40d1cf8870f5b206410c6a",
+  "topic_input": "688976ab20cba6342caff142df266951ae30f8cf",
+  "pull_requests": [
+    {
+      "number": 18,
+      "state": "closed",
+      "merged_at": "2026-11-03T09:29:48Z",
+      "head": "367c3167199bb3599e96c161136dfbdb72acb57b",
+      "ref": "claude/cold-storage-20261102"
+    },
+    {
+      "number": 17,
+      "state": "closed",
+      "merged_at": "2026-11-03T10:12:04Z",
+      "head": "ad6e3ff5339fbea4ec99b5d5ac13e7a8d559bf3f",
+      "ref": "claude/padua-argmax-alln-20261101"
+    },
+    {
+      "number": 16,
+      "state": "closed",
+      "merged_at": "2026-11-01T15:49:54Z",
+      "head": "060d29b7b0d4ef2dcd8d95b6a2ff942e11d79ba3",
+      "ref": "claude/results-in-repo-20261101"
+    },
+    {
+      "number": 15,
+      "state": "closed",
+      "merged_at": "2026-11-01T19:57:50Z",
+      "head": "c714c80a35ccaf9e0f7df6b96bc840eba8bd83b1",
+      "ref": "codex/padua-lanczos-drift-20261101"
+    },
+    {
+      "number": 14,
+      "state": "closed",
+      "merged_at": "2026-11-01T15:19:41Z",
+      "head": "635ba4fd537be9a4dbc060617fbc0535db4d72ad",
+      "ref": "codex/padua-mz-2d-20261101"
+    },
+    {
+      "number": 13,
+      "state": "closed",
+      "merged_at": "2026-11-01T10:25:55Z",
+      "head": "7ce4c36fb1494fee2dd3bdc1bf39fc241c5b9e21",
+      "ref": "claude/handoff-id-rules-20261101"
+    },
+    {
+      "number": 10,
+      "state": "closed",
+      "merged_at": "2026-11-01T09:37:12Z",
+      "head": "9fa30122fec9796ca718af210a2a13c7525038a2",
+      "ref": "claude/bivariate-lanczos-20261031"
+    },
+    {
+      "number": 9,
+      "state": "closed",
+      "merged_at": "2026-11-01T11:05:27Z",
+      "head": "752ba068589683afe644b505d673f8da1529cbf0",
+      "ref": "codex/padua-proof-attempts-20261101"
+    },
+    {
+      "number": 8,
+      "state": "closed",
+      "merged_at": "2026-11-01T09:17:10Z",
+      "head": "6eeec5b3a3d48c4bde198d9cc6c170dd92674bdb",
+      "ref": "claude/results-track-rule-20261101"
+    },
+    {
+      "number": 12,
+      "state": "closed",
+      "merged_at": "2026-11-01T21:03:20Z",
+      "head": "c1325c6da7ef2fb2c20760c3e020280eba1e5126",
+      "ref": "codex/padua-proof-attempts-2-20261101"
+    },
+    {
+      "number": 11,
+      "state": "closed",
+      "merged_at": "2026-11-01T10:47:08Z",
+      "head": "1406ef74a76d9160324596447a831470b93c398b",
+      "ref": "claude/mz-prior-art-20261101"
+    },
+    {
+      "number": 6,
+      "state": "closed",
+      "merged_at": "2026-11-01T10:19:03Z",
+      "head": "b46b4dea18ce2c933489a211b0b6819dfd32ca70",
+      "ref": "claude/programme-ideas-20261031"
+    },
+    {
+      "number": 5,
+      "state": "closed",
+      "merged_at": "2026-11-01T07:14:16Z",
+      "head": "da679224b50d2210689c92e5a69d5a4d181afe3c",
+      "ref": "codex/mz-postmerge-frontier-20261031"
+    },
+    {
+      "number": 4,
+      "state": "closed",
+      "merged_at": "2026-11-01T07:14:15Z",
+      "head": "a4331a13301ee4a9905c8204c26bff5f9fdf246e",
+      "ref": "codex/lattice-unisolvence-20261031"
+    },
+    {
+      "number": 3,
+      "state": "closed",
+      "merged_at": "2026-10-31T22:20:47Z",
+      "head": "8ee04f4e5db46dd25fe5752ce605dde27098aae6",
+      "ref": "codex/mz-constants-20261031"
+    },
+    {
+      "number": 2,
+      "state": "closed",
+      "merged_at": "2026-10-31T21:42:07Z",
+      "head": "317a26597dedc9adc9cfc6a26fa00078df7d29e4",
+      "ref": "codex/charter-unisolvence-20261031"
+    },
+    {
+      "number": 1,
+      "state": "closed",
+      "merged_at": "2026-10-31T13:51:13Z",
+      "head": "5a5f09f9768f4c2b28a82eb85ed5be8bd3c797e5",
+      "ref": "codex/initialize-padua"
+    }
+  ],
+  "files": [
+    {
+      "path": "PROOF_STATUS.md",
+      "sha256": "3dcd729917ac87f9e09bd9278c2e553017406c6ee8da1d9f0f43081840cfeeee"
+    },
+    {
+      "path": "state/IDEAS.md",
+      "sha256": "3a68050253cb96b03c92f3e899035b34deb48b3e331d05f87ced8477e425ba29"
+    },
+    {
+      "path": "literature/INDEX.md",
+      "sha256": "9b7759b44e6b4a4fa76d7cecc443ec1535b491ad477a1b46bd5adaeb27bdc579"
+    },
+    {
+      "path": "ID_CROSSWALK.md",
+      "sha256": "c049b783438efa8b916d75650d7cc29cb87ef25dcf7a2659cd486e3c0ea42110"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+      "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c"
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "sha256": "0951493e3f25b31d08fe5877207c3444093a44947b4b64d537b9374cb67fc520"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/ALLOCATIONS.md",
+      "sha256": "8395a86ac4260c5e3c6052244eb0ef3188ae2060199abc936bb703e33346fa76"
+    }
+  ],
+  "union_maxima": {
+    "PD-T": 245,
+    "PD-N": 83,
+    "IDEA": 335,
+    "LIT": 465
+  },
+  "note": "All returned PRs merged, no open or closed-unmerged reservations. Full ledger ranges including abbreviated endpoints reviewed."
+}
