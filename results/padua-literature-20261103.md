@@ -24,4 +24,4 @@ These are literature findings only. They carry no PD status changes and no new m
 
 ## Next step
 
-Codex (gpt-6-astra high) audit per handoff 02. Still needed from AC: Xu, Trans. AMS 343/342; Dunkl–Xu §3.5; print-only Mastroianni–Russo 2000 and DMV 1995 (see DOWNLOADS v3).
+Codex (gpt-6-astra high) audit per handoff 03. Still needed from AC: print-only Mastroianni–Russo 2000 and DMV 1995 (see DOWNLOADS v3).

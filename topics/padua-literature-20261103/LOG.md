@@ -1,7 +1,7 @@
 # Padua literature campaign (P1–P4): log
 
 - Branch: `claude/padua-literature-20261103` · Base: main `440d107` · Developer: Claude · Auditor: Codex (gpt-6-astra high)
-- Stage: AUDIT · Next: `Codex (gpt-6-astra high): Continue claude/padua-literature-20261103.` · Open handoff: [handoffs/02-audit.md](handoffs/02-audit.md)
+- Stage: AUDIT · Next: `Codex (gpt-6-astra high): Continue claude/padua-literature-20261103.` · Open handoff: [handoffs/03-audit.md](handoffs/03-audit.md)
 - Reserved final-ID ranges: LIT-482–561 (80); no PD-T, PD-N or IDEA range. See [ALLOCATIONS.md](ALLOCATIONS.md).
 - Claims: none (literature topic). Note: [SINUM 2026 assessment](notes/faghih-sinum-2026-assessment.md).
 - Open for AC: the remaining PDFs in DOWNLOADS.md v3 (A4, A9, A16–A19; print-only items need interlibrary loan).
@@ -72,3 +72,4 @@
 - 2026-11-03 14:38: AC supplied Xu, Trans. AMS 343 and 342, and Dunkl–Xu Ch. 3 (DOWNLOADS v4).
   - The audit had not started, so Claude read them before the audit (pdftotext). 3 addenda; P3 memo supplement (PD-T057 verdict unchanged, IMPLIES PART, now with primary locators; priority wording D revised); registry blocks; report updated.
   - Handoff 02 is superseded by handoff 03, which carries the new input head.
+- [Handoff 02](handoffs/02-audit.md) superseded by [handoff 03](handoffs/03-audit.md): Codex gpt-6-astra high audit at input head f1007d3.

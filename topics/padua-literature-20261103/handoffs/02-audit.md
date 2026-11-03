@@ -1,6 +1,6 @@
 # Handoff 02 — padua-literature-20261103 — independent audit of the literature campaign
 
-- Status: open
+- Status: superseded by 03: AC supplied Xu TAMS 343/342 and Dunkl–Xu Ch. 3 before the audit started; outputs extended at f1007d3
 - Previous handoff: 01-work.md
 
 - Next agent / model / effort: Codex, gpt-6-astra, high. This is Codex auditing Claude development. Use xhigh only for a disputed priority verdict, with a written justification.
