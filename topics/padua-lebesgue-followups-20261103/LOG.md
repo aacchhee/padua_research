@@ -1,7 +1,7 @@
 # Padua Lebesgue-function follow-ups (T1–T4): log
 
 - Branch: `codex/padua-lebesgue-followups-20261103` · Base: main `440d107` · Developer: Codex · Auditor: Claude (Opus 5.5)
-- Stage: AUDIT · Next: Claude (Opus 5.5 xhigh) audit; numbered handoff 02 follows the development-output commit. Handoff 01 remains open until that publication commit.
+- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Continue codex/padua-lebesgue-followups-20261103.` · Open handoff: [handoffs/02-audit.md](handoffs/02-audit.md)
 - Reserved final-ID ranges: PD-T266–285, PD-N092–099, IDEA356–375, LIT474–481; [reservation and pinned union scan](ALLOCATIONS.md). No final assignments before audited preparation.
 - Claims: all four core targets complete. T1 PD-T184/180 PROVED (44 interior, 62 total); six T2–T4 analytic records PROVED. Actual independent replays/checks accepted; required Claude audit PENDING. Full sharp PD-T098 remains OPEN; the T2/T3 protocol timing qualification remains unwaived.
 - Open for AC: none at setup. Ask AC before using any machine outside the sandbox.
@@ -101,3 +101,5 @@
 
 - Final boundary-producer optimization guard was added only after generation/joining completed. Distinct Astra confirmed exact old Git bytes, guard-only byte/AST identity and both optimized-mode refusals; I2 is resolved with historical source provenance intact.
 - Final integration checks parsed all topic JSON/Python, checked local prose links and control bytes, verified all manifest identities and write scope, and retained ordinary JSON receipts below 16 KiB. The conservative whole-repository generated-data bucket is about 4.21 MB, including existing manifests; no bulk tree or third-party text was added.
+
+- Development outputs committed as `5b2e36710144d5ab8dd1b8ee9dc2e8b0f1e13033`. [Handoff 01](handoffs/01-work.md) is done at that SHA; [handoff 02](handoffs/02-audit.md) requests the required Claude audit with exact scope, evidence, limitations and acceptance criteria.

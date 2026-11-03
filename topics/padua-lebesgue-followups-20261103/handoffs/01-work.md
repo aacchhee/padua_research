@@ -1,6 +1,6 @@
 # Handoff 01 — padua-lebesgue-followups-20261103 — small follow-ups for the Padua argmax / Lebesgue-function paper
 
-- Status: open
+- Status: done in 5b2e36710144d5ab8dd1b8ee9dc2e8b0f1e13033
 - Previous handoff: none
 
 - Next agent / model / effort: Codex. Mathematics: gpt-6.1-sol xhigh (ultra only with a written justification in LOG). Code, certification runs and replays: gpt-6.1-sol medium. Supplementary independent checks: gpt-6-astra high.
