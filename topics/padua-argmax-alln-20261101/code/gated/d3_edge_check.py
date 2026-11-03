@@ -1,4 +1,7 @@
 """Replay D3 whole-cell Bernstein partitions and exact E-P witnesses."""
+if not __debug__:
+    raise RuntimeError("Scientific verification requires Python assertions; do not use -O or PYTHONOPTIMIZE.")
+
 import argparse
 import copy
 from fractions import Fraction as F
@@ -7,6 +10,7 @@ from pathlib import Path
 import time
 
 import d3_edge_common as c
+from proof_runtime import guard_compatible_sources
 
 
 def check_pair(run, identity):
@@ -52,7 +56,10 @@ def check_pair(run, identity):
 def check(data):
     assert data['format'] == c.FORMAT and data['source_checkpoint'] == c.CHECKPOINT
     assert data['precision'] == c.g.PRECISION and data['scale'] == c.g.S
-    assert data['source_sha256'] == c.source_hashes()
+    assert guard_compatible_sources(data['source_sha256'], c.source_hashes(),
+                                    Path(c.b.__file__).with_name('finite_n2_exact.py'),
+                                    'code/part3/finite_n2_exact.py',
+                                    d3_checker_path=Path(__file__))
     assert data['complete'] is True and data['producer_accepted'] is False
     assert c.arithmetic_controls()
     expected = c.pairs()

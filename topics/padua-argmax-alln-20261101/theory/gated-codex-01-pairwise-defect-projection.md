@@ -1,4 +1,6 @@
-# PD-T?argmax-alln-gated-codex-01 — Pairwise defect projection away from corners
+# PD-T215 (PD-T?argmax-alln-gated-codex-01) — Pairwise defect projection away from corners
+
+Final registration: **PD-T215**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind:PD-T.
 Aliases: four-copy pairing lower bound; compact strip defect; projected edge cancellation.

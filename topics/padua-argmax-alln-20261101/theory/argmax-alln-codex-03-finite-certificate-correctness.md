@@ -1,4 +1,6 @@
-# PD-T?argmax-alln-codex-03 — Global-maximum Bernstein certificate correctness
+# PD-T210 (PD-T?argmax-alln-codex-03) — Global-maximum Bernstein certificate correctness
+
+Final registration: **PD-T210**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind: PD-T.
 Aliases: finite global-max-only certificate; positive-coefficient corner leaf; IDEA?argmax-alln-claude-05.

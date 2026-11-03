@@ -1,4 +1,6 @@
-# PD-N?argmax-alln-gated-codex-02 — Common-phase centreward edge translation fails
+# PD-N080 (PD-N?argmax-alln-gated-codex-02) — Common-phase centreward edge translation fails
+
+Final registration: **PD-N080**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind: PD-N.
 Aliases: direction3 round1 E-P obstruction; n12 k5-to7 common phase
@@ -46,7 +48,7 @@ execution completed at the declared scope. Codex configured gpt-6-astra
 xhigh independently reconstructed the evidence, checked all eight exact
 E-P witnesses, and passed the complete 17-case malformed-input controls.
 Its broader run also verified the separately stated ten E-C comparisons
-and twenty complete source leaves. Required Claude audit remains pending.
+and twenty complete source leaves. Required Claude audit remains pending at initial publication.
 
 | Mathematical part | Status | Evidence / limit |
 |---|---|---|
@@ -159,10 +161,21 @@ History: initial publication was CONDITIONAL while the distinct executed
 replay/controls were pending. The stated obligation is now closed by the
 Astra xhigh independent execution and mathematical assessment; the exact
 witness and frozen mathematical source code are unchanged. Required
-Claude audit remains pending.
+Claude audit remains pending at initial publication.
 
 The original E-P and E-C statements, earlier measured E-C support and
 other pairing failures remain intact. This record rejects only the
 specified pointwise translation mechanism;
 it gives no negative result about all-degree corner dominance,
 horizontal envelopes, whole-cell E-C or alternative phase maps.
+
+
+### Current review correction — 2026-11-03 (R1)
+
+The pending-Claude labels above describe the initial publication boundary.
+Claude [audit-01](../audit-01.md) accepted this record at its written
+mathematical or MEASURED scope; [response-review-01](../response-review-01.md)
+accepted the record/provenance response. Those completed reviews are the
+current state. This dated correction changes no statement, epistemic
+status, proof, numerical value, source pin or frozen receipt. All remaining
+mathematical open items retain their stated scopes.

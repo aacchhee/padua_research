@@ -6,7 +6,7 @@ Rules read at `9444c274d1ac06ef3b047e7bf2f9531d22b6d744`; final scientific head 
 
 ## Exact target and reproducible checks
 
-[Snapshot](snapshot.json), SHA-256 `062ad98a6cb689c6b78126f50e76763c0d1e0b21f9398227899d27755b171d3b`, records exact reviewed campaign and shared-registry file hashes/bytes. It excludes this protocol envelope to avoid self-reference. Its global-manifest digest records the **pre-envelope checkpoint**, not a claim that the later enclosing manifest is byte-identical. Root may regenerate that manifest without changing the frozen scientific ZIP. [Final checks](final-checks.json) records independently checked archive identity and branch/rules/stage results.
+[Snapshot](../COLD_STORAGE.md), SHA-256 `062ad98a6cb689c6b78126f50e76763c0d1e0b21f9398227899d27755b171d3b`, records exact reviewed campaign and shared-registry file hashes/bytes. It excludes this protocol envelope to avoid self-reference. Its global-manifest digest records the **pre-envelope checkpoint**, not a claim that the later enclosing manifest is byte-identical. Root may regenerate that manifest without changing the frozen scientific ZIP. [Final checks](final-checks.json) records independently checked archive identity and branch/rules/stage results.
 
 Actually executed:
 

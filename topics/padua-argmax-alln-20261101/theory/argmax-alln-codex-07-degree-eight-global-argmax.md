@@ -1,4 +1,6 @@
-# PD-T?argmax-alln-codex-07 — Degree-eight Padua global maximum
+# PD-T181 (PD-T?argmax-alln-codex-07) — Degree-eight Padua global maximum
+
+Final registration: **PD-T181**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind: PD-T.
 Aliases: n=8 global-max-only Bernstein certificate; P6 finite range.
@@ -45,7 +47,7 @@ the discovery summary alone is not accepted as proof.
 
 Overall status: **PROVED** (written finite reduction, exact complete
 certificate, developer and different-agent replay passed; required
-Claude topic audit PENDING).
+Claude topic audit PENDING at initial publication).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -129,3 +131,14 @@ OPEN; this finite global-maximum result is substantive and remains split.
 2026-11-01, Codex gpt-6.1-sol xhigh: discovered and developer-replayed
 the finite cover. Authorized after the T1–T5 first-pass outcomes;
 the final T1 high-degree extension completed while this finite work ran.
+
+
+### Current review correction — 2026-11-03 (R1)
+
+The pending-Claude labels above describe the initial publication boundary.
+Claude [audit-01](../audit-01.md) accepted this record at its written
+mathematical or MEASURED scope; [response-review-01](../response-review-01.md)
+accepted the record/provenance response. Those completed reviews are the
+current state. This dated correction changes no statement, epistemic
+status, proof, numerical value, source pin or frozen receipt. All remaining
+mathematical open items retain their stated scopes.

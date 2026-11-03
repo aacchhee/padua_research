@@ -138,6 +138,92 @@ class StorageControls(unittest.TestCase):
         self.assertEqual(receipt.read_bytes(), b'keep receipt')
         self.assertFalse((dest / 'demo/topics/demo/out/a.json').exists())
 
+    def test_export_receipt_v2_records_destination_readback(self):
+        dest = self.base / 'export-v2'
+        self.cli('export', 'demo', '--dest', dest)
+        receipt = json.loads((dest / 'demo/cold-storage-export-receipt.json').read_text())
+        self.assertEqual(receipt['format'], 'padua-cold-storage-export-v2')
+        self.assertTrue(receipt['destination_readback_matched'])
+        self.assertEqual(receipt['manifest_sha256'],
+                         hashlib.sha256(self.manifest_path.read_bytes()).hexdigest())
+        self.assertEqual(sorted(f['path'] for f in receipt['files']), sorted(self.payloads))
+
+    def test_export_corrupted_write_fails_without_receipt(self):
+        # Simulate destination corruption during writing (e.g. a faulty filesystem).
+        wrapper = self.repo / 'tools/corrupt_export.py'
+        wrapper.write_text(
+            'import sys, importlib.util\n'
+            'spec = importlib.util.spec_from_file_location("cs", sys.argv[1])\n'
+            'cs = importlib.util.module_from_spec(spec); spec.loader.exec_module(cs)\n'
+            'orig = cs.SafeTree.write_new\n'
+            'def bad(self, path, data):\n'
+            '    if path.endswith("b.json"):\n'
+            '        data = data[:-3]\n'
+            '    return orig(self, path, data)\n'
+            'cs.SafeTree.write_new = bad\n'
+            'sys.argv = [sys.argv[1]] + sys.argv[2:]\n'
+            'cs.main()\n')
+        dest = self.base / 'export-corrupt'
+        result = subprocess.run([sys.executable, '-B', str(wrapper), str(self.tool), 'export', 'demo',
+                                 '--dest', str(dest)], cwd=self.repo, capture_output=True, text=True)
+        self.assertNotEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn('readback failed', result.stderr)
+        self.assertFalse((dest / 'demo/cold-storage-export-receipt.json').exists())
+
+    def standalone_tool(self):
+        # A copy of the tool outside any Git repository: verify-archive needs no Git objects.
+        alone = self.base / 'standalone/tools/cold_storage.py'
+        alone.parent.mkdir(parents=True)
+        shutil.copyfile(TOOL, alone)
+        return alone
+
+    def archive_cli(self, tool, *args, accepted=True):
+        result = subprocess.run([sys.executable, '-B', str(tool), 'verify-archive', *map(str, args)],
+                                cwd=tool.parent, capture_output=True, text=True,
+                                env={**os.environ, 'GIT_DIR': str(self.base / 'no-such-git')})
+        if accepted:
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        else:
+            self.assertNotEqual(result.returncode, 0, result.stdout + result.stderr)
+        return result
+
+    def test_verify_archive_offline_after_transfer(self):
+        dest = self.base / 'export-offline'
+        self.cli('export', 'demo', '--dest', dest)
+        moved = self.base / 'transferred/demo'
+        shutil.copytree(dest / 'demo', moved)
+        manifest_copy = self.base / 'transferred/cold-storage.json'
+        shutil.copyfile(self.manifest_path, manifest_copy)
+        alone = self.standalone_tool()
+        out = json.loads(self.archive_cli(alone, moved).stdout)
+        self.assertEqual(out['files_verified'], len(self.payloads))
+        self.archive_cli(alone, moved, '--manifest', manifest_copy)
+
+    def test_verify_archive_rejects_missing_truncated_corrupt_and_stale(self):
+        dest = self.base / 'export-damage'
+        self.cli('export', 'demo', '--dest', dest)
+        root = dest / 'demo'
+        alone = self.standalone_tool()
+        a = root / 'topics/demo/out/a.json'
+        b = root / 'topics/demo/out/b.json'
+        original_a, original_b = a.read_bytes(), b.read_bytes()
+        a.write_bytes(original_a[:-1])                     # truncated
+        self.assertIn('mismatch', self.archive_cli(alone, root, accepted=False).stdout)
+        a.write_bytes(original_a[:-1] + b'X')              # corrupted, same size
+        self.assertIn('mismatch', self.archive_cli(alone, root, accepted=False).stdout)
+        a.write_bytes(original_a)
+        b.unlink()                                         # stale receipt, file missing
+        self.assertTrue((root / 'cold-storage-export-receipt.json').exists())
+        self.assertIn('missing', self.archive_cli(alone, root, accepted=False).stdout)
+        b.write_bytes(original_b)
+        self.archive_cli(alone, root)
+        changed = dict(self.manifest)
+        changed['entries'] = [dict(e) for e in self.manifest['entries']]
+        changed['entries'][0]['sha256'] = '0' * 64
+        bad_manifest = self.base / 'changed-manifest.json'
+        bad_manifest.write_text(json.dumps(changed))
+        self.archive_cli(alone, root, '--manifest', bad_manifest, accepted=False)
+
     def test_restore_rejects_parent_symlink(self):
         dest = self.base / 'parent-link'
         outside = self.base / 'outside'

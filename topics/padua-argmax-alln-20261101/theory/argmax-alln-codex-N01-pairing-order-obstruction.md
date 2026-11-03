@@ -1,4 +1,6 @@
-# PD-N?argmax-alln-codex-01 — tie-inclusive local-maxima ordering fails at n=4
+# PD-N078 (PD-N?argmax-alln-codex-01) — tie-inclusive local-maxima ordering fails at n=4
+
+Final registration: **PD-N078**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind: PD-N (provisional; allocate at PR preparation).
 Aliases: O-Lt; tie-inclusive IDEA03 reading; diamond-cell certified-list ordering.
@@ -26,7 +28,7 @@ The node convention and λ_n are those of PD-T101. Non-node corners for n=4 are 
 
 ## Status by part
 
-Overall status: **PROVED** (development result; independent exact checks PASS; required Claude audit pending). The orchestrator must publish the essential code/evidence/check records with this result before describing its computer-proof record as complete.
+Overall status: **PROVED** (development result; independent exact checks PASS; required Claude audit pending at initial publication). The orchestrator must publish the essential code/evidence/check records with this result before describing its computer-proof record as complete.
 
 | Part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -61,7 +63,7 @@ Frozen checker command, from repository root:
 python topics/padua-argmax-alln-20261101/code/part3/pairing_exact_check.py topics/padua-argmax-alln-20261101/outputs/part3/pairing_screens.json --output topics/padua-argmax-alln-20261101/outputs/part3/pairing_exact_check.json
 ```
 
-Developer result: PASS, 13 roots grouped into six cells, exact positive reversal lower bound as stated. Standard-library checker imports no numerical optimizer, inverse trigonometric function, NumPy or producer module. Independent agent `/root/pairing_check` executed the checker to `outputs/part3/pairing_exact_independent.json` (SHA-256 `e968b360b37ae9d66e876b90c8f273dd5e1b748a0a18b1b74a1ce4bddc1c8fb3`), PASS. Its separate implementation uses24 arctan terms, degree48 cosine Taylor bounds, and enumerates all15 odd cell centers to check all13 root assignments. Its result is `outputs/part3/pairing_independent_reconstruction.json`, PASS. See [independent check](../independent-checks-pairing.md). Neither execution reruns the original full n4 proof. The required cross-family Claude audit remains pending.
+Developer result: PASS, 13 roots grouped into six cells, exact positive reversal lower bound as stated. Standard-library checker imports no numerical optimizer, inverse trigonometric function, NumPy or producer module. Independent agent `/root/pairing_check` executed the checker to `outputs/part3/pairing_exact_independent.json` (SHA-256 `e968b360b37ae9d66e876b90c8f273dd5e1b748a0a18b1b74a1ce4bddc1c8fb3`), PASS. Its separate implementation uses24 arctan terms, degree48 cosine Taylor bounds, and enumerates all15 odd cell centers to check all13 root assignments. Its result is `outputs/part3/pairing_independent_reconstruction.json`, PASS. See [independent check](../independent-checks-pairing.md). Neither execution reruns the original full n4 proof. The required cross-family Claude audit remains pending at initial publication.
 
 ## Proof
 
@@ -98,3 +100,14 @@ Required Claude audit and publication of the essential code, input identities an
 2026-11-01, Codex, parent-assigned gpt-6.1-sol xhigh (runtime metadata not independently exposed). Original unique-nearest O-L grouping had zero eligible n4 comparisons; O-Lt was added as a separately dated formulation before its comparison was executed. The producer then found the exact witness above. No pre-existing criterion was overwritten.
 
 Independent correction: the checker agent noticed that an initially displayed V_b lower endpoint was one 2^−96 unit below the greatest inherited lower endpoint. The display now uses the exact greatest lower endpoint; the computed counterexample and claimed rational margin were already correct. Independent reconstruction and corrected prose checked PASS.
+
+
+### Current review correction — 2026-11-03 (R1)
+
+The pending-Claude labels above describe the initial publication boundary.
+Claude [audit-01](../audit-01.md) accepted this record at its written
+mathematical or MEASURED scope; [response-review-01](../response-review-01.md)
+accepted the record/provenance response. Those completed reviews are the
+current state. This dated correction changes no statement, epistemic
+status, proof, numerical value, source pin or frozen receipt. All remaining
+mathematical open items retain their stated scopes.

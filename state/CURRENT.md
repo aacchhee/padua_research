@@ -66,3 +66,23 @@ Finite-precision bivariate Lanczos span drift (draft PR15, stage PR after Codex 
 ## Second proof campaign — PR12 final registration
 
 The second proof campaign is accepted by Claude audit-01 with minor findings disposed in response-01. A2 PD-T156, PD-T157, PD-T158, PD-T159 proves the requested b-term with remainder≤68. A5 closed counts15,27,25,41,50 for n3–7 and separate corner-only globals are PROVED; degree-eight lowerPD-T183 proves≥44interior, while exactPD-T180, PD-T181, PD-T184 remain OPEN. A4 central-edge PD-T185, PD-T186, PD-T187, PD-T188, PD-T189, PD-T190, PD-T191, PD-T192 proves the positive gap envelope, not full-square/global-runner-up identification. B3 PD-N072 refutes only specified S(α) on genuine positive sections; PD-N073 is a scoped route failure. B1 PD-T194, PD-T195, PD-T196, PD-T197 proves the exterior real diagonal class/taper, not stability or every stored parameter. Remaining frontier: full A3, all-n full-square A4, exact n8, other B1 classes/parameters/stability. Completed proof/audit/preparation tasks are historical after merge. [Report](../topics/padua-proof-attempts-2-20261101/report.md), [results](../results/padua-proof-attempts-2-20261101.md). Only AC merges.
+
+## Repository cold-storage cleanup — finalized 2026-11-03
+
+[PR #18](https://github.com/aacchhee/padua_research/pull/18) is ready for AC's merge decision after [Codex audit-02](../topics/cold-storage-20261102/audit-02.md) accepts response-01. All 176 archived files (15,846,089 bytes) retain verified identities; guarded retrieval/export and offline archive verification pass 23 regression tests and 8 independent controls. No science, statuses or IDs change. Assigned repository work is complete; no further agent round. Physical archive delivery/history purge remain separate, and only AC merges. Later PR #17 integration must retain PR18's audited shared tool/test files; the conflict resolution was rehearsed. [Final results](../results/cold-storage-20261102.md).
+
+## Padua argmax — PR17 final registration, 2026-11-03
+
+[Current results](../results/padua-argmax-alln-20261101.md): PD-T229 proves
+eventual exact two-corner global argmax with non-effectiveN_*; finite2–16
+is proved byPD-T209/181/214 plus inherited3–7. PD-T181's earlier OPEN
+count-based proof attempt is historical; its identical global statement
+is now PROVED by the new independent Bernstein cover. PD-T180/184 counts
+remain OPEN. All-degreePD-T099 stays OPEN across unknown17<=n<N_*;
+center-minimality, effective entry and all-n slope/energy remain OPEN.
+Permanent registration:T206–235,N078–083,IDEA316–335; no new range.
+Campaign6/2/1 is closed and all failed variants retained. Preparation and
+checker hardening are completed in this pass under AC's no-further-Claude
+direction, with separate Astra final review; no later research run is
+scheduled. AC delivery/purge remain separate pending work, not a proof
+obligation for these committed finite certificates. Only AC merges.

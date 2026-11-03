@@ -1,4 +1,7 @@
 """Supplementary finite O-Lt audit; no imports from developer modules."""
+if not __debug__:
+    raise RuntimeError("Scientific verification requires Python assertions; do not use -O or PYTHONOPTIMIZE.")
+
 import gzip, hashlib, json, math
 from fractions import Fraction as F
 from pathlib import Path

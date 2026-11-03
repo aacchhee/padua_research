@@ -4,7 +4,7 @@ Actual staging root: `/workspace/padua-cold/charter-unisolvence-20261031/`. AC's
 
 Portable handoff ZIP: `/workspace/padua-cold/charter-unisolvence-20261031-handoff.zip`. Bytes: 210015; SHA256 `fdcc1ce22b0addabee97d01dfcb2bdb18be5b340091fda0c52b1608014d32eb3`. It includes the original user archive, exact scientific outputs/receipts, helper code and a portable integrity manifest/checker. It is outside Git; the original notes remain outside the public repository.
 
-Full generator/source/blob/identity details: [cold-storage-manifest.json](cold-storage-manifest.json), SHA256 `bc519ed735cfccdb2102222be148556f19012acd6cdf3ed2bcc696257e00d13c`. Individual U0/U1 developer and independent manifests preserve their exact executed commands, seeds, environments and success records. Statements with source_commit=null are supplied/packaging receipts, not assertions of a scientific run at an invented revision. Source helper commit/blobs are recorded where applicable.
+Full generator/source/blob/identity details: [cold-storage-manifest.json](COLD_STORAGE.md), SHA256 `bc519ed735cfccdb2102222be148556f19012acd6cdf3ed2bcc696257e00d13c`. Individual U0/U1 developer and independent manifests preserve their exact executed commands, seeds, environments and success records. Statements with source_commit=null are supplied/packaging receipts, not assertions of a scientific run at an invented revision. Source helper commit/blobs are recorded where applicable.
 
 | File | Actual storage path | Bytes | SHA256 | Source commit / identity | Frozen generating command | Checker command / result |
 |---|---|---|---|---|---|---|
@@ -124,3 +124,67 @@ Download the ZIP, extract its top-level folder into AC's chosen directory, and r
 ## Retention and retrieval
 
 Retain until AC directs otherwise; no expiry or deletion is authorized. AC/orchestrator is the custodian. Retrieve cloud-local files by the actual paths above while the workspace exists, or use the delivered ZIP. If the cloud workspace disappears before download, committed code/receipts support regeneration, while uncommitted original notes require the original upload/archive. Delivery at the Windows destination must be confirmed separately; no outside-network archival transfer was claimed.
+
+## Repository cleanup 2026-11-02 — large regenerable outputs moved off the branch head
+
+AC (2026-11-02): "I do not think that we have to store large outputs that can be regenerated. Make sure that all needed code is in the repo, some short summaries are stored and expunge the large data files (cold storage)"; "18 mb per repo is too much."
+
+Every generated data file of 16 KiB or more in this directory left the branch head: 2 files, 42,142 bytes. Machine manifest: [`cold-storage.json`](cold-storage.json). Tool: `tools/cold_storage.py`.
+
+These files have **not been delivered to AC's Padua cold storage yet** (PENDING). Until then, the only stored copy is Git history, pinned by blob id at the pushed main commit `2b52b432fe59c9a50aef9deebe5152c5d6874465`. Each file's SHA-256 is recorded alongside, so the bytes can be verified.
+
+Code, records, and small receipts and summaries stay. The topic's existing cold-storage-manifest.json and COLD_STORAGE.md stay. Generators/checkers committed: claude-audit/{check_padua,gf}.py, directions/U1/exact_checker.py, independent/u1/check_symbolic_summary.py.
+
+Files of 16 KiB or more kept on purpose (not generated output):
+- `independent/u0/evidence-manifest.json` (18,171 bytes): cold-storage-manifest.json delegates its command records to this file.
+- `integration-impact.json` (27,700 bytes): hand-produced integration record read by independent/protocol/check_integration.py; not generated output.
+- `response-01-impact.json` (20,313 bytes): hand-produced administrative impact record; not generated output.
+
+| File | Actual storage path | Bytes | SHA-256 | Source commit | Frozen generating command | Script blob IDs | Checker command / result |
+|---|---|---|---|---|---|---|---|
+| `claude-audit/outputs/padua.json` | Git blob `2ae2cc1f9ad3` at `2b52b432fe59`; AC cold storage PENDING | 23,494 | `2e7ba470954580d29fe3e8b6635cf830a3dbc445712ec0fd20cc5ad98519c146` | `2b52b432fe59` | python3 -I topics/charter-unisolvence-20261031/claude-audit/check_padua.py <out> (about 43 s) | committed at source commit | Summary: audit-01.md:110-118; claude-audit/MANIFEST.md:11. ALL PASS for PD-T004..T008, PD-T010 reproduction. |
+| `independent/u1/producer-final-symbolic.json` | Git blob `a500d4d58c88` at `2b52b432fe59`; AC cold storage PENDING | 18,648 | `df44efc4f554d14f825f6ec42eb917cd73b1e515e0da55193b8db52034728342` | `2b52b432fe59` | python3 topics/charter-unisolvence-20261031/directions/U1/exact_checker.py --symbolic --output <out> | committed at source commit | Summary: directions/U1/symbolic-factors.md; independent/u1/symbolic-summary-output.txt (PASS all 6); independent/u1/evidence.md:68-78. Byte-identical to independent-U1/producer-final-symbolic.json already in cold-storage-manifest.json; read by independent/u1/check_symbolic_summary.py. |
+
+`<out>`, `<work>`, `<deps>` and `<flint>` stand for scratch paths. Never write regenerated output over committed files.
+
+**Retrieval**
+
+```sh
+python tools/cold_storage.py verify  charter-unisolvence-20261031   # every entry against its Git object
+python tools/cold_storage.py restore charter-unisolvence-20261031   # put the files back in place, then run the recorded checkers
+python tools/cold_storage.py clean   charter-unisolvence-20261031   # remove the restored copies again
+python tools/cold_storage.py export  charter-unisolvence-20261031 --dest C:\Users\andreyac\Downloads\padua\cold_storage
+```
+
+These commands need a full clone. In a shallow clone, first run `git fetch origin 2b52b432fe59c9a50aef9deebe5152c5d6874465`.
+
+**Retention**
+
+Permanent, with AC as custodian. The Git history copy lasts as long as history is not rewritten. The AC copy is created by `export`; commit its receipt hash here when that is done.
+
+### Addendum 2026-11-02 — retained files also moved (AC approval)
+
+AC approved moving the files listed above as "kept on purpose" as well. They are now in [`cold-storage.json`](cold-storage.json), and that list no longer applies. Restore them before running the scripts named in each row.
+
+| File | Actual storage path | Bytes | SHA-256 | Source commit | Frozen generating command | Script blob IDs | Checker command / result |
+|---|---|---|---|---|---|---|---|
+| `independent/u0/evidence-manifest.json` | Git blob `777adfbd1e3a` at `2b52b432fe59`; AC cold storage PENDING | 18,171 | `604ece8c269814779870514ac0925e893a1e4f995a836296e81c8a3b59fa6c44` | `2b52b432fe59` | not script-generated: written by the independent U0 reviewer | — | Summary: independent/u0/check-summary.json; independent/u0/audit.md:30-52. cold-storage-manifest.json delegates its command records to this file; restore both together. Read by independent/u0/check_evidence.py. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well. |
+| `integration-impact.json` | Git blob `990ae732f9ed` at `2b52b432fe59`; AC cold storage PENDING | 27,700 | `6a784b9043c9075a6d750fa879f211e4a90f5f773357d980ee7f41c96d3f9262` | `2b52b432fe59` | not script-generated: produced by the PR-preparation orchestrator | — | Summary: integration-impact.md (schema and procedure); response-01.md:14. Restore before running independent/protocol/check_integration.py. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well. |
+| `response-01-impact.json` | Git blob `194a2ad302fd` at `2b52b432fe59`; AC cold storage PENDING | 20,313 | `794b62465ca1a6800a4e5c88d682015acbf3a7fca7e0e83d500f503aac464d9b` | `2b52b432fe59` | not script-generated: orchestrator-produced administrative comparison | — | Summary: response-01.md:14,35ff; response-01-review.md:9; response-01-checks.json. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well. |
+| `cold-storage-manifest.json` | Git blob `b51913d99d13` at `2b52b432fe59`; AC cold storage PENDING | 77,280 | `bc519ed735cfccdb2102222be148556f19012acd6cdf3ed2bcc696257e00d13c` | `2b52b432fe59` | not script-generated: the topic's earlier cold-storage manifest | — | Summary: COLD_STORAGE.md (human manifest of the earlier items); cold-storage-check.json. Restore before running verify_cold_storage.py. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well. |
+
+### Corrections 2026-11-02: complete commands and readers (response to the Codex cold-storage audit, F3/F4)
+
+These values replace the clipped or inaccurate ones in the tables above. The machine manifest [`cold-storage.json`](cold-storage.json) carries the same values.
+- No identity field changed (path, bytes, SHA-256, Git blob).
+- Commands are quoted verbatim from the cited records. Where a record gives no command, the row says so explicitly.
+- A "working-tree reader" reads the checked-out file and needs `restore` first. A "historical Git reader" reads pinned Git objects and does not.
+- Restoring files does not mean that point-in-time validators accept a later head.
+
+- `independent/u0/evidence-manifest.json`, **notes** (F4): cold-storage-manifest.json delegates its command records to this file (COLD_STORAGE.md:139). Working-tree reader: topics/charter-unisolvence-20261031/independent/u0/check_evidence.py:5 (reads evidence-manifest.json from the script directory); the script then hashes every cold artifact and source input named in the manifest from their recorded paths (check_evidence.py:6-13), so it needs those files too; no Git-history reader. Restore with `python tools/cold_storage.py restore charter-unisolvence-20261031`. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well.
+- `integration-impact.json`, **notes** (F4): Working-tree reader: topics/charter-unisolvence-20261031/independent/protocol/check_integration.py:8 (reads integration-impact.json); the same script reads the retained final-id-map.json at :6, the old theory text by git show row["source_commit"]:row["old_path"] at :9 (historical Git objects at pinned commits) and the current text at :10, so restoring this file does not replace that history. Restore with `python tools/cold_storage.py restore charter-unisolvence-20261031`. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well.
+- `response-01-impact.json`, **notes** (F4): Hand-produced administrative record; no committed script reads it (searched every committed *.py, *.sh, *.js file for its name). Passive provenance cited by response-01.md:14, response-01-review.md:9 and tracks/unisolvence/AUDIT_LOG.md:11. Restore with `python tools/cold_storage.py restore charter-unisolvence-20261031` only to inspect or hash it. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well.
+- `cold-storage-manifest.json`, **notes** (F4): This repository file is NOT an input of verify_cold_storage.py and no committed script reads cold-storage-manifest.json by name. topics/charter-unisolvence-20261031/verify_cold_storage.py reads <root>/bundle-manifest.json (line 11), every file that manifest lists under <root> (relative_path, bytes, sha256; lines 12-16) and <root>/inputs/padua_unisolvence_inputs.zip with its SHA256SUMS.txt (lines 17-26), where <root> is the off-repository bundle in AC cold storage. The committed receipt cold-storage-check.json records manifest_sha256 bc519ed735cfccdb2102222be148556f19012acd6cdf3ed2bcc696257e00d13c, equal to the SHA-256 of this file, so the verified bundle-manifest.json had the same bytes as this file (104 files, 17 archive payloads verified). Restore with `python tools/cold_storage.py restore charter-unisolvence-20261031` for the manifest bytes and provenance (it is listed by hash in audit-targets.json:270 and response-01-checks.json:19 and linked from COLD_STORAGE.md:7,174 and cold-storage-disposition-01.md:16); copying the restored file to <root>/bundle-manifest.json would reproduce the manifest input, but the 104 bundle files and the inputs zip must come from the delivered bundle, not from Git. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well.
+- **Topic note** (F4): COLD_STORAGE.md stays. The earlier cold-storage-manifest.json was moved to cold storage under AC's 2026-11-02 approval (its entry below; it is not an input of verify_cold_storage.py, which reads <root>/bundle-manifest.json of the off-repository bundle). Generators/checkers committed: claude-audit/{check_padua,gf}.py, directions/U1/exact_checker.py, independent/u1/check_symbolic_summary.py.
+
+After any export, check the archive with `python tools/cold_storage.py verify-archive <DIR>/charter-unisolvence-20261031 --manifest topics/charter-unisolvence-20261031/cold-storage.json`, and run it again immediately before relying on the archive (for delivery acceptance, or before a history purge). The export receipt alone is not proof that the files are still present.

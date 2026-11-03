@@ -1,4 +1,6 @@
-# PD-T?argmax-alln-gated-codex-06 — Exact primitive endpoint cusp
+# PD-T220 (PD-T?argmax-alln-gated-codex-06) — Exact primitive endpoint cusp
+
+Final registration: **PD-T220**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind:PD-T.
 Aliases: coset directional slope; shrinking nonquadratic majorant gain.

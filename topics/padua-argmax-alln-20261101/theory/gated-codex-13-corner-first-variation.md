@@ -1,4 +1,6 @@
-# PD-T?argmax-alln-gated-codex-13 — Exact physical corner variation and an aggregate radius reduction
+# PD-T227 (PD-T?argmax-alln-gated-codex-13) — Exact physical corner variation and an aggregate radius reduction
+
+Final registration: **PD-T227**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind: PD-T.
 Aliases: direction2 round1; canonical nonnode corner derivatives; zero-cardinal correction; weighted-gradient corner radius.

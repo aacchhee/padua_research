@@ -6,6 +6,8 @@
   restore SLUG [--dest DIR]       restore into DIR (default: repository root)
   clean   SLUG [--dest DIR]       remove matching, untracked restored copies
   export  SLUG --dest DIR         export to DIR/SLUG (slashes become underscores)
+  verify-archive DIR [--manifest M]  verify an exported directory from its own receipt,
+                                  without Git objects (missing/truncated/corrupt files fail)
 
 SLUG may also be a repository directory, e.g. tracks/mz-constants. Retrieval
 requires local source-commit objects (fetch the named commit if necessary).
@@ -33,6 +35,16 @@ These are not adversarial-concurrency guarantees. On an I/O error/interruption,
 completed copies remain and can be reused on rerun. A partially written new file
 may remain; inspect/remove that file manually before retrying. No rollback deletes
 preexisting files, and cleanup never removes directories or an export receipt.
+
+Export receipts (format v2): every payload is read back from the destination and
+compared with the manifest before the receipt is written; a mismatch writes no
+receipt. The receipt records what was verified at export time and the SHA-256 of
+the manifest used. It is NOT proof that the files are still present or intact
+later: a receipt survives later deletion or corruption, and a failed re-export
+cannot remove an earlier receipt. Anything that relies on an archive (delivery
+acceptance, a history purge) must first run `verify-archive` on that archive at
+that time. verify-archive needs only the exported directory (plus, optionally,
+the manifest) and reads every file listed in the receipt.
 """
 import argparse
 import contextlib
@@ -392,9 +404,18 @@ def write_entries(m, dest_root, receipt=None):
     if receipt is not None:
         payloads.append((RECEIPT, receipt))
     validate_paths([path for path, _ in payloads])
+    # The receipt is written only after every payload has been read back.
+    receipt_payload = payloads.pop() if receipt is not None else None
     tracked = tracked_paths()
     with SafeTree(dest_root, protect_worktrees=True) as tree:
         for path, data in payloads:
+            if tracked_collision(tree.root, path, tracked):
+                raise ValueError(f'refusing tracked destination {tree.root / path}; use --dest outside the repository')
+            copy = tree.read(path)
+            if copy is not None and copy[0] != data:
+                raise ValueError(f'refusing differing destination: {tree.root / path}')
+        if receipt_payload is not None:
+            path, data = receipt_payload
             if tracked_collision(tree.root, path, tracked):
                 raise ValueError(f'refusing tracked destination {tree.root / path}; use --dest outside the repository')
             copy = tree.read(path)
@@ -411,7 +432,24 @@ def write_entries(m, dest_root, receipt=None):
                     raise ValueError(f'destination changed after preflight: {tree.root / path}')
                 continue
             tree.write_new(path, data)
-    return [{'path': e['path'], 'bytes': e['bytes'], 'sha256': e['sha256']} for e, _ in sources]
+        # Destination readback: hashes come from the destination bytes themselves.
+        readback = []
+        for e, _ in sources:
+            copy = tree.read(e['path'])
+            if copy is None or not matches(copy[0], e):
+                raise ValueError(f'destination readback failed for {tree.root / e["path"]}; no receipt written')
+            readback.append({'path': e['path'], 'bytes': len(copy[0]), 'sha256': sha256(copy[0])})
+        if receipt_payload is not None:
+            path, data = receipt_payload
+            copy = tree.read(path)
+            if copy is None:
+                tree.write_new(path, data)
+            elif copy[0] != data:
+                raise ValueError(f'destination changed after preflight: {tree.root / path}')
+            copy = tree.read(path)
+            if copy is None or copy[0] != data:
+                raise ValueError(f'receipt readback failed: {tree.root / path}')
+    return readback
 
 
 def cmd_restore(a):
@@ -458,11 +496,72 @@ def cmd_export(a):
     safe_path(a.slug, 'slug/directory')
     dest = Path(a.dest) / a.slug.replace('/', '_')
     files = [{'path': e['path'], 'bytes': e['bytes'], 'sha256': e['sha256']} for e in m['entries']]
-    receipt = {'format': 'padua-cold-storage-export-v1', 'slug': a.slug,
-               'source_commit': m['source_commit'], 'files': files,
-               'bytes': sum(e['bytes'] for e in m['entries']), 'all_hashes_match_manifest': True}
-    write_entries(m, dest, (json.dumps(receipt, indent=1) + '\n').encode())
+    receipt = {'format': 'padua-cold-storage-export-v2', 'slug': a.slug,
+               'source_commit': m['source_commit'], 'manifest_sha256': manifest_sha256(a.slug),
+               'files': files, 'bytes': sum(e['bytes'] for e in m['entries']),
+               'destination_readback_matched': True,
+               'meaning': ('Every listed file was read back from this export directory and matched these '
+                           'sizes and SHA-256 values before this receipt was written. This receipt does not '
+                           'prove later presence or integrity; run verify-archive before relying on it.')}
+    readback = write_entries(m, dest, (json.dumps(receipt, indent=1) + '\n').encode())
+    if readback != files:
+        raise ValueError('internal error: readback summary differs from receipt')
     print(json.dumps({k: v for k, v in receipt.items() if k != 'files'}, indent=1))
+
+
+def manifest_sha256(slug):
+    path = manifest_path(slug).relative_to(ROOT).as_posix()
+    with SafeTree(ROOT) as tree:
+        return sha256(tree.read(path)[0])
+
+
+def cmd_verify_archive(a):
+    problems, checked = [], 0
+    with SafeTree(a.dir) as tree:
+        raw = tree.read(RECEIPT)
+        if raw is None:
+            raise ValueError(f'no {RECEIPT} in {tree.root}')
+        receipt = json.loads(raw[0], object_pairs_hook=unique_json)
+        fmt = receipt.get('format')
+        if fmt not in ('padua-cold-storage-export-v1', 'padua-cold-storage-export-v2'):
+            raise ValueError(f'unsupported receipt format: {fmt!r}')
+        files = receipt.get('files')
+        if not isinstance(files, list) or not files:
+            raise ValueError('receipt lists no files')
+        validate_paths([f['path'] for f in files])
+        if receipt.get('bytes') != sum(f['bytes'] for f in files):
+            problems.append('receipt byte total does not equal the sum of its files')
+        for f in files:
+            try:
+                copy = tree.read(f['path'])
+            except (OSError, ValueError) as exc:
+                problems.append(str(exc))
+                continue
+            if copy is None:
+                problems.append(f'missing: {f["path"]}')
+            elif len(copy[0]) != f['bytes'] or sha256(copy[0]) != f['sha256']:
+                problems.append(f'size/hash mismatch: {f["path"]}')
+            else:
+                checked += 1
+    if a.manifest:
+        mbytes = Path(a.manifest).read_bytes()
+        m = validate_manifest(json.loads(mbytes, object_pairs_hook=unique_json))
+        want = sorted((e['path'], e['bytes'], e['sha256']) for e in m['entries'])
+        have = sorted((f['path'], f['bytes'], f['sha256']) for f in files)
+        if want != have:
+            problems.append('receipt file list differs from the manifest entries')
+        if m['source_commit'] != receipt.get('source_commit'):
+            problems.append('receipt source_commit differs from the manifest')
+        if fmt.endswith('v2') and receipt.get('manifest_sha256') != sha256(mbytes):
+            problems.append('receipt manifest_sha256 differs from the given manifest (manifest changed since export)')
+    result = {'dir': str(Path(a.dir)), 'receipt_format': fmt, 'files': len(files), 'files_verified': checked,
+              'bytes': receipt.get('bytes'), 'manifest_checked': bool(a.manifest),
+              'accepted': not problems, 'problems': problems}
+    if fmt.endswith('v1'):
+        result['note'] = 'v1 receipt was written without destination readback; file checks above are current'
+    print(json.dumps(result, indent=1))
+    if problems:
+        raise SystemExit(1)
 
 
 def main():
@@ -475,10 +574,13 @@ def main():
         p = sub.add_parser(name)
         p.add_argument('slug')
         p.add_argument('--dest', required=name == 'export')
+    p = sub.add_parser('verify-archive')
+    p.add_argument('dir')
+    p.add_argument('--manifest')
     a = ap.parse_args()
     try:
         {'plan': cmd_plan, 'verify': cmd_verify, 'restore': cmd_restore,
-         'clean': cmd_clean, 'export': cmd_export}[a.cmd](a)
+         'clean': cmd_clean, 'export': cmd_export, 'verify-archive': cmd_verify_archive}[a.cmd](a)
     except (ValueError, OSError, subprocess.CalledProcessError) as exc:
         raise SystemExit(f'cold-storage: {exc}') from exc
 

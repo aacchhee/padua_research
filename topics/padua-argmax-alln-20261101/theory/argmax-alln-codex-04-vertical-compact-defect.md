@@ -1,4 +1,6 @@
-# PD-T?argmax-alln-codex-04 — Positive compact vertical-edge gap
+# PD-T211 (PD-T?argmax-alln-codex-04) — Positive compact vertical-edge gap
+
+Final registration: **PD-T211**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind: PD-T.
 Aliases: P1; macroscopic vertical triangle defect; compact-uniform extension of PD-T191.
@@ -215,10 +217,21 @@ Continuity and \(\operatorname{dist}(\beta_n,I)\le\pi/m\) imply
 
 P1 closes on every fixed compact strip, with a non-effective margin.
 There is no bound uniform as \(\delta\downarrow0\), center-minimality
-theorem, effective threshold, or P3–P6 conclusion. Claude audit pending.
+theorem, effective threshold, or P3–P6 conclusion. Claude audit pending at initial publication.
 
 ## History
 
 2026-11-01, Codex gpt-6.1-sol xhigh. Preparation preceded the parent's
 tests-done authorization; mathematical development followed it.
 The central PD-T191 statement is unchanged in its own record.
+
+
+### Current review correction — 2026-11-03 (R1)
+
+The pending-Claude labels above describe the initial publication boundary.
+Claude [audit-01](../audit-01.md) accepted this record at its written
+mathematical or MEASURED scope; [response-review-01](../response-review-01.md)
+accepted the record/provenance response. Those completed reviews are the
+current state. This dated correction changes no statement, epistemic
+status, proof, numerical value, source pin or frozen receipt. All remaining
+mathematical open items retain their stated scopes.

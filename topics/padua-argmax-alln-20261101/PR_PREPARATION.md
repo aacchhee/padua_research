@@ -1,5 +1,7 @@
 # Deferred preparation actions — response to audit-01
 
+Current disposition — 2026-11-03: these original proposals are applied by the final registration in [FINALIZATION.md](FINALIZATION.md), with final mappings and separate Astra review under AC's no-further-Claude direction. Earlier future/pending language below is retained as proposal history.
+
 2026-11-02. Proposals only: no final IDs, shared rows, claim statements or
 statuses are changed in this response. Apply after Claude's response check
 and independent closure of the cold-storage repairs. The PR-preparation
@@ -114,3 +116,15 @@ Owner: preparation orchestrator; preserve every alias and original wording.
 
 Only after these protocol gates pass should the PR-preparation stage apply
 the literal proposals, final IDs and shared rows. Only AC merges.
+
+## 2026-11-03 final disposition
+
+AC instructed finalization with no further Claude round. All preparation
+items above are applied in this pass: permanent mappings/registries,
+measured homes/failure scopes, candidate splits and scoped Claude-owned
+close-outs, checker optimization refusal, residue/platform notes, own
+results/root section and current indexes. Original proposal text remains
+historical. The separate Astra final audit replaces the future Claude
+preparation round under AC's direction. [Finalization](FINALIZATION.md)
+records exact verification and remaining delivery/purge-only conditions.
+No original all-degree statement is narrowed; PD-T099 remains OPEN.

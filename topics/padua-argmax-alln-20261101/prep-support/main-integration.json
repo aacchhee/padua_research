@@ -1,0 +1,79 @@
+{
+  "source_topic": "0441756471436253b70f2a37be1bb644351f8bc4",
+  "old_main": "2b52b432fe59c9a50aef9deebe5152c5d6874465",
+  "merged_main": "1acebf7af47885654dfd1ffe0b9c8cda19c8f2a6",
+  "pr18_audited_head": "36f345f0365ddc15d837492aa6da42a1ce6f9771",
+  "pr18_final_head": "367c3167199bb3599e96c161136dfbdb72acb57b",
+  "pr18_audit": "topics/cold-storage-20261102/audit-02.md",
+  "resolutions": [
+    {
+      "path": "PROOF_STATUS.md",
+      "resolution": "native three-way clean merge; incoming archived-link targets plus all PR17 rows/aliases retained"
+    },
+    {
+      "path": "ID_CROSSWALK.md",
+      "resolution": "native three-way clean merge; incoming archived-link targets plus all PR17 rows/aliases retained"
+    },
+    {
+      "path": "RESULTS.md",
+      "resolution": "retain incoming main content in full and append only the complete PR17 section"
+    },
+    {
+      "path": "state/CURRENT.md",
+      "resolution": "retain incoming main content in full and append only the complete PR17 section"
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "resolution": "retain incoming main content in full and append only the complete PR17 section"
+    },
+    {
+      "path": "tools/cold_storage.py",
+      "resolution": "take exact audited PR18/main blob; all PR17 guards retained plus audited destination readback/v2 receipt/offline verify"
+    },
+    {
+      "path": "tools/test_cold_storage.py",
+      "resolution": "take exact audited PR18/main blob; all PR17 guards retained plus audited destination readback/v2 receipt/offline verify"
+    }
+  ],
+  "locally_materialized_incoming_paths": [
+    "ID_CROSSWALK.md",
+    "PROOF_STATUS.md",
+    "RESULTS.md",
+    "agents/WORKFLOW.md",
+    "results/cold-storage-20261102.md",
+    "state/CURRENT.md",
+    "tools/cold_storage.py",
+    "tools/test_cold_storage.py",
+    "topics/bivariate-lanczos-20261031/COLD_STORAGE.md",
+    "topics/bivariate-lanczos-20261031/cold-storage.json",
+    "topics/charter-unisolvence-20261031/COLD_STORAGE.md",
+    "topics/charter-unisolvence-20261031/cold-storage.json",
+    "topics/cold-storage-20261102/LOG.md",
+    "topics/cold-storage-20261102/audit-02/faults.py",
+    "topics/cold-storage-20261102/audit-02/receipt.json",
+    "topics/cold-storage-20261102/audit-02.md",
+    "topics/cold-storage-20261102/response-01.md",
+    "topics/lattice-unisolvence-20261031/COLD_STORAGE.md",
+    "topics/lattice-unisolvence-20261031/cold-storage.json",
+    "topics/mz-constants/COLD_STORAGE.md",
+    "topics/mz-constants/cold-storage.json",
+    "topics/padua-batch-20261031/ALLOCATIONS.md",
+    "topics/padua-lanczos-drift-20261101/COLD_STORAGE.md",
+    "topics/padua-lanczos-drift-20261101/cold-storage.json",
+    "topics/padua-mz-2d-20261101/COLD_STORAGE.md",
+    "topics/padua-mz-2d-20261101/cold-storage.json",
+    "topics/padua-proof-attempts-2-20261101/COLD_STORAGE.md",
+    "topics/padua-proof-attempts-2-20261101/cold-storage.json",
+    "topics/padua-proof-attempts-2-20261101/pr-prep.md",
+    "topics/padua-proof-attempts-2-20261101/report.md",
+    "topics/programme-ideas-20261031/COLD_STORAGE.md",
+    "topics/programme-ideas-20261031/cold-storage.json",
+    "tracks/mz-constants/COLD_STORAGE.md",
+    "tracks/mz-constants/cold-storage.json"
+  ],
+  "tool_sha256": "287153916a35f4360fde2f689cdd624b14f050f7329a323d95d8a8764c455c62",
+  "test_sha256": "f5047aab7ea6434e344b38bcc1cd85738d3329ec65cf745faa59cb403f062991",
+  "archive_delivery": "PENDING",
+  "main_mutation": false,
+  "history_rewrite": false
+}

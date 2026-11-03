@@ -3,6 +3,9 @@
 The fresh exact constructor result is cached for these repeated defect
 checks only. Discovery/checker source files are never edited.
 """
+if not __debug__:
+    raise RuntimeError("Scientific verification requires Python assertions; do not use -O or PYTHONOPTIMIZE.")
+
 import argparse
 import copy
 import gzip

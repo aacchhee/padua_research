@@ -1,4 +1,6 @@
-# PD-T?argmax-alln-gated-codex-16 — Compact horizontal-edge envelope
+# PD-T230 (PD-T?argmax-alln-gated-codex-16) — Compact horizontal-edge envelope
+
+Final registration: **PD-T230**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind: PD-T.
 Aliases: direction3 round1 horizontal P2 envelope; horizontal primitive
@@ -84,7 +86,7 @@ below are exactly that theorem's previously proved statements.
 
 Overall status: **PROVED**, by the analytic argument below; distinct
 Astra xhigh independent mathematical reconstruction accepted at the stated
-scope. Required Claude audit remains pending. No numerical calculation
+scope. Required Claude audit remains pending at initial publication. No numerical calculation
 is a premise.
 
 | Mathematical part | Status | Evidence / limit |
@@ -216,4 +218,15 @@ change the prior supporting theorem, prove g_h(pi/2)=1, order whole edge
 cells, handle endpoint corner neighborhoods, or establish PD-T099.
 The completed supplementary reconstruction is recorded in
 [gated/checks/d3-r01.md](../gated/checks/d3-r01.md); required Claude audit
-remains pending.
+remains pending at initial publication.
+
+
+### Current review correction — 2026-11-03 (R1)
+
+The pending-Claude labels above describe the initial publication boundary.
+Claude [audit-01](../audit-01.md) accepted this record at its written
+mathematical or MEASURED scope; [response-review-01](../response-review-01.md)
+accepted the record/provenance response. Those completed reviews are the
+current state. This dated correction changes no statement, epistemic
+status, proof, numerical value, source pin or frozen receipt. All remaining
+mathematical open items retain their stated scopes.

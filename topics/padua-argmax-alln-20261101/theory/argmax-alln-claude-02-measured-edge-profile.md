@@ -1,4 +1,6 @@
-# PD-T?argmax-alln-claude-02 — Float64 corner-gap profiles along the edges and near-edge strips, and n = 2 scans
+# PD-T207 (PD-T?argmax-alln-claude-02) — Float64 corner-gap profiles along the edges and near-edge strips, and n = 2 scans
+
+Final registration: **PD-T207**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind: PD-T.
 Aliases: edge gap profile; horizontal-edge gap ≈ 1; n = 2 scan.

@@ -2,7 +2,7 @@
 
 Date: 2026-11-01. Auditor: independent Codex subagent `/root/audit_l3_certificates`; developer: Claude. Launch requested `gpt-6-astra`, reasoning effort `xhigh`, `fork_turns:none`, as recorded by the orchestrator; no independent runtime confirmation of model/effort is available to this subagent. No developer files or Git state were changed.
 
-Rules read at **50b0d304001b48607527e5086a67045f534d9472**. Scientific candidate: **075d4074017445a0fd4d7443ffac97cd7f8c106b**. Response baseline: **5f523313b7b388cb114103734028f0a850dfeaad**. This is a focused re-audit of the response to audit-01, not a replacement for the unchanged certificate audit. Full source/evidence hashes and commands are in [manifest.json](L3-formula-scope/manifest.json).
+Rules read at **50b0d304001b48607527e5086a67045f534d9472**. Scientific candidate: **075d4074017445a0fd4d7443ffac97cd7f8c106b**. Response baseline: **5f523313b7b388cb114103734028f0a850dfeaad**. This is a focused re-audit of the response to audit-01, not a replacement for the unchanged certificate audit. Full source/evidence hashes and commands are in [manifest.json](../COLD_STORAGE.md).
 
 ## Scoped verdict
 
@@ -132,6 +132,6 @@ T317 SHA-256: `49cf947440ca9e08f3422d563dc47eef836d3649f5dd798505956433f7888bdc`
 
 T319 SHA-256: `955dbfa15ad4c29d963586ef254bbc75e20d2af6ab8a4cad200264c93d4aaad7`.
 
-The original n=3 certificate-data log SHA-256 remains `287e8dd0bdaa60d93d728045fcd47c5c75832813657f4849081fe4b1e0629e8b`. The manifest records all other original certificate code/data identities. [The retained diff](L3-formula-scope/original-proof-scope.diff) shows that T312 is unchanged, T313's analytic proof and P_n are unchanged, N301/N303 retain their certificate reduction with scope/normalization/evidence edits, and T311's values are unchanged. No broad Padua certificate suite was repeated. The original all-n unisolvence assumption remains explicit in N303; no new literature acceptance is inferred.
+The original n=3 certificate-data log SHA-256 remains `287e8dd0bdaa60d93d728045fcd47c5c75832813657f4849081fe4b1e0629e8b`. The manifest records all other original certificate code/data identities. [The retained diff](../COLD_STORAGE.md) shows that T312 is unchanged, T313's analytic proof and P_n are unchanged, N301/N303 retain their certificate reduction with scope/normalization/evidence edits, and T311's values are unchanged. No broad Padua certificate suite was repeated. The original all-n unisolvence assumption remains explicit in N303; no new literature acceptance is inferred.
 
 The new theorem is independently checked but remains a developer result for AC's disposition. This report does not allocate final IDs, merge, approve a PR, or claim campaign-wide acceptance.

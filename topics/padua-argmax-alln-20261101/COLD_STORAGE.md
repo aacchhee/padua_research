@@ -174,3 +174,28 @@ Preflight avoids known collisions before writes. A later I/O error may leave com
 
 - 2026-11-02: initial archival move, preserving 36 source objects/2,526,191 bytes; AC delivery pending.
 - 2026-11-02: Codex storage-development response to CS3 and active/historical manifest integration. Replaced generic commands with pinned script identities, exact interface flags, scratch bootstrap/relocation and historical T1 prerequisites; classified unavailable historical inventories as retrieval-only. Added only the archived integrity row's historical-version role. Updated safe scratch/export/platform instructions and the foreign-worktree marker guard for the CS1/CS2 tool repair; empty `.git` sentinels are ignored and concurrent repository initialization remains excluded. Every archival path/size/hash/blob and source commit remains unchanged. Independent Claude protocol review and delivery to AC remain pending.
+
+## 2026-11-03 superseding tool integration — readback and offline verification
+
+Main1acebf7 merges PR18's independently accepted storage tool. It retains
+all guards above and reads every destination payload back before writing
+and reading back the deterministic v2 export receipt. S1's missing-readback
+implementation issue is resolved by [PR18 audit-02](../cold-storage-20261102/audit-02.md).
+All36archival identities and the machine-manifest bytes remain unchanged.
+
+Before relying on a delivered copy, use current verification against the
+trusted manifest (the verifier needs no Git objects):
+
+```sh
+python -B tools/cold_storage.py verify-archive /actual/authorized/Downloads/padua/cold_storage/padua-argmax-alln-20261101 --manifest topics/padua-argmax-alln-20261101/cold-storage.json
+```
+
+The v2 receipt states export-time integrity; it can survive later deletion
+or corruption and is not independent purge authorization. Reverify at the
+time of reliance, with the trusted manifest, and record the actual destination
+and receipt hash. The command above is a delivery instruction, not a claim
+of an execution on AC's machine. AC delivery remains PENDING. Native Windows
+fails closed; actual WSL/drvfs and AC's destination remain untested.
+The previous development/pending-review paragraphs are historical; Claude
+audit-03 accepted CS1–CS3, and the distinct current integration check is
+[recorded separately](prep-support/integration-audit.md).

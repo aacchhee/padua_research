@@ -33,11 +33,11 @@ audit:
 
 | Scope | Report | Essential new evidence |
 |---|---|---|
-| E1 scalar proof, classification and replay | [E1.md](checks/audit-03/E1.md) | [audit-03-e1-checks.json](evidence/audit-03-e1-checks.json) |
-| E3/E4 limit and parent repair | [E34.md](checks/audit-03/E34.md) | [audit-03-e34-checks.json](evidence/audit-03-e34-checks.json) |
+| E1 scalar proof, classification and replay | [E1.md](checks/audit-03/E1.md) | [audit-03-e1-checks.json](COLD_STORAGE.md) |
+| E3/E4 limit and parent repair | [E34.md](checks/audit-03/E34.md) | [audit-03-e34-checks.json](COLD_STORAGE.md) |
 | E5 endpoint labels and quantifiers | [E5.md](checks/audit-03/E5.md) | [audit-03-e5.json](evidence/audit-03-e5.json) |
 | E6 sampling, NumPy and falsifier | [E6.md](checks/audit-03/E6.md) | [audit-03-e6-checks.json](evidence/audit-03-e6-checks.json) |
-| Protocol, frozen objects and results rule | [Protocol.md](checks/audit-03/Protocol.md) | [audit-03-protocol-checks.json](evidence/audit-03-protocol-checks.json) |
+| Protocol, frozen objects and results rule | [Protocol.md](checks/audit-03/Protocol.md) | [audit-03-protocol-checks.json](COLD_STORAGE.md) |
 
 ## Findings
 

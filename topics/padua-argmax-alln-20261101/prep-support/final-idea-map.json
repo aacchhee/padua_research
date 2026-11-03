@@ -1,0 +1,335 @@
+{
+  "source_head": "cdb12257af24ea2542de707b9730f8278d69a168",
+  "date": "2026-11-03",
+  "allocation_scan": "prep-support/allocation-scan.json",
+  "rows": [
+    {
+      "id": "IDEA-316",
+      "aliases": [
+        "IDEA?argmax-alln-claude-01"
+      ],
+      "title": "Shifted-lattice primitive maximal at the coset",
+      "path": "topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md",
+      "anchor": "idea-316",
+      "source_path": "topics/padua-argmax-alln-20261101/ideas.md",
+      "disposition": "REJECTED: refuted",
+      "result_ids": [
+        "PD-N079",
+        "PD-T206"
+      ]
+    },
+    {
+      "id": "IDEA-317",
+      "aliases": [
+        "IDEA?argmax-alln-claude-02"
+      ],
+      "title": "Literal raw-profile and inferred-cutoff architecture",
+      "path": "topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md",
+      "anchor": "idea-317",
+      "source_path": "topics/padua-argmax-alln-20261101/ideas.md",
+      "disposition": "REJECTED: failed (MEASURED scope)",
+      "result_ids": [
+        "PD-N082",
+        "PD-N083",
+        "PD-T208"
+      ]
+    },
+    {
+      "id": "IDEA-318",
+      "aliases": [
+        "IDEA?argmax-alln-claude-03"
+      ],
+      "title": "Brutman-type maxima ordering umbrella",
+      "path": "topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md",
+      "anchor": "idea-318",
+      "source_path": "topics/padua-argmax-alln-20261101/ideas.md",
+      "disposition": "deferred / OPEN",
+      "result_ids": [
+        "PD-N078",
+        "PD-N080",
+        "PD-N081"
+      ]
+    },
+    {
+      "id": "IDEA-319",
+      "aliases": [
+        "IDEA?argmax-alln-claude-04"
+      ],
+      "title": "Generating-curve numerator factorization",
+      "path": "topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md",
+      "anchor": "idea-319",
+      "source_path": "topics/padua-argmax-alln-20261101/ideas.md",
+      "disposition": "deferred",
+      "result_ids": []
+    },
+    {
+      "id": "IDEA-320",
+      "aliases": [
+        "IDEA?argmax-alln-claude-05"
+      ],
+      "title": "Global-maximum-only finite certifier",
+      "path": "topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md",
+      "anchor": "idea-320",
+      "source_path": "topics/padua-argmax-alln-20261101/ideas.md",
+      "disposition": "retained in tested finite scope",
+      "result_ids": [
+        "PD-T209",
+        "PD-T210",
+        "PD-T181",
+        "PD-T214"
+      ]
+    },
+    {
+      "id": "IDEA-321",
+      "aliases": [
+        "IDEA?argmax-alln-codex-fallback-01"
+      ],
+      "title": "O-R whole-diamond monotonicity",
+      "path": "topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md",
+      "anchor": "idea-321",
+      "source_path": "topics/padua-argmax-alln-20261101/ideas-codex-fallback.md",
+      "disposition": "REJECTED: failed (MEASURED scope)",
+      "result_ids": [
+        "PD-N081",
+        "PD-T213"
+      ]
+    },
+    {
+      "id": "IDEA-322",
+      "aliases": [
+        "IDEA?argmax-alln-codex-fallback-02-OL"
+      ],
+      "title": "O-L unique-corner certified-list order",
+      "path": "topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md",
+      "anchor": "idea-322",
+      "source_path": "topics/padua-argmax-alln-20261101/ideas-codex-fallback.md",
+      "disposition": "deferred / OPEN",
+      "result_ids": [
+        "PD-T213"
+      ]
+    },
+    {
+      "id": "IDEA-323",
+      "aliases": [
+        "IDEA?argmax-alln-codex-fallback-02-OLt"
+      ],
+      "title": "O-Lt tie-inclusive certified-list order",
+      "path": "topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md",
+      "anchor": "idea-323",
+      "source_path": "topics/padua-argmax-alln-20261101/ideas-codex-fallback.md",
+      "disposition": "REJECTED: refuted",
+      "result_ids": [
+        "PD-N078"
+      ]
+    },
+    {
+      "id": "IDEA-324",
+      "aliases": [
+        "IDEA?argmax-alln-codex-fallback-03-EC"
+      ],
+      "title": "E-C centreward whole-edge-cell comparison",
+      "path": "topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md",
+      "anchor": "idea-324",
+      "source_path": "topics/padua-argmax-alln-20261101/ideas-codex-fallback.md",
+      "disposition": "deferred / OPEN in general",
+      "result_ids": [
+        "PD-T231",
+        "PD-T213"
+      ]
+    },
+    {
+      "id": "IDEA-325",
+      "aliases": [
+        "IDEA?argmax-alln-codex-fallback-03-EP"
+      ],
+      "title": "E-P common-phase centreward translation",
+      "path": "topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md",
+      "anchor": "idea-325",
+      "source_path": "topics/padua-argmax-alln-20261101/ideas-codex-fallback.md",
+      "disposition": "REJECTED: refuted",
+      "result_ids": [
+        "PD-N080",
+        "PD-T235"
+      ]
+    },
+    {
+      "id": "IDEA-326",
+      "aliases": [
+        "IDEA?argmax-alln-codex-fallback-04"
+      ],
+      "title": "Defect domination without raw-profile convergence",
+      "path": "topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md",
+      "anchor": "idea-326",
+      "source_path": "topics/padua-argmax-alln-20261101/ideas-codex-fallback.md",
+      "disposition": "retained reduction; quantitative continuation deferred",
+      "result_ids": [
+        "PD-T215",
+        "PD-T225",
+        "PD-T228",
+        "PD-T229"
+      ]
+    },
+    {
+      "id": "IDEA-327",
+      "aliases": [
+        "IDEA?argmax-alln-gated-codex-01"
+      ],
+      "title": "Two-phase primitive and projected defect",
+      "path": "topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md",
+      "anchor": "idea-327",
+      "source_path": "topics/padua-argmax-alln-20261101/gated/CANDIDATES.md",
+      "disposition": "retained positive lemmas",
+      "result_ids": [
+        "PD-T215",
+        "PD-T216",
+        "PD-T217",
+        "PD-T218",
+        "PD-T219",
+        "PD-T220",
+        "PD-T221"
+      ]
+    },
+    {
+      "id": "IDEA-328",
+      "aliases": [
+        "IDEA?argmax-alln-gated-codex-02"
+      ],
+      "title": "Adaptive finite lattice geometry",
+      "path": "topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md",
+      "anchor": "idea-328",
+      "source_path": "topics/padua-argmax-alln-20261101/gated/CANDIDATES.md",
+      "disposition": "retained accepted proofs",
+      "result_ids": [
+        "PD-T222",
+        "PD-T223",
+        "PD-T224",
+        "PD-T225"
+      ]
+    },
+    {
+      "id": "IDEA-329",
+      "aliases": [
+        "IDEA?argmax-alln-gated-codex-03"
+      ],
+      "title": "Exact row resummation quantitative repair",
+      "path": "topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md",
+      "anchor": "idea-329",
+      "source_path": "topics/padua-argmax-alln-20261101/gated/CANDIDATES.md",
+      "disposition": "deferred after STOP",
+      "result_ids": [
+        "PD-T226",
+        "PD-T234"
+      ]
+    },
+    {
+      "id": "IDEA-330",
+      "aliases": [
+        "IDEA?argmax-alln-gated-codex-04"
+      ],
+      "title": "Physical corner variation and weighted energy",
+      "path": "topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md",
+      "anchor": "idea-330",
+      "source_path": "topics/padua-argmax-alln-20261101/gated/CANDIDATES.md",
+      "disposition": "retained theorem; all-n hypotheses deferred / OPEN",
+      "result_ids": [
+        "PD-T227",
+        "PD-T228",
+        "PD-T233"
+      ]
+    },
+    {
+      "id": "IDEA-331",
+      "aliases": [
+        "IDEA?argmax-alln-gated-codex-05"
+      ],
+      "title": "Reflection before absolute values",
+      "path": "topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md",
+      "anchor": "idea-331",
+      "source_path": "topics/padua-argmax-alln-20261101/gated/CANDIDATES.md",
+      "disposition": "retained accepted proofs",
+      "result_ids": [
+        "PD-T228",
+        "PD-T229"
+      ]
+    },
+    {
+      "id": "IDEA-332",
+      "aliases": [
+        "IDEA?argmax-alln-gated-codex-06"
+      ],
+      "title": "Horizontal primitive identification",
+      "path": "topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md",
+      "anchor": "idea-332",
+      "source_path": "topics/padua-argmax-alln-20261101/gated/CANDIDATES.md",
+      "disposition": "retained accepted proof",
+      "result_ids": [
+        "PD-T230"
+      ]
+    },
+    {
+      "id": "IDEA-333",
+      "aliases": [
+        "IDEA?argmax-alln-gated-codex-01-quadratic"
+      ],
+      "title": "Purely quadratic local primitive gain",
+      "path": "topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md",
+      "anchor": "idea-333",
+      "source_path": "topics/padua-argmax-alln-20261101/gated/CANDIDATES.md",
+      "disposition": "REJECTED: refuted",
+      "result_ids": [
+        "PD-N079",
+        "PD-T220"
+      ]
+    },
+    {
+      "id": "IDEA-334",
+      "aliases": [
+        "IDEA?argmax-alln-claude-02-T2"
+      ],
+      "title": "Raw interior O(1) gap-profile planning form",
+      "path": "topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md",
+      "anchor": "idea-334",
+      "source_path": "topics/padua-argmax-alln-20261101/ideas.md",
+      "disposition": "REJECTED: failed (MEASURED scope)",
+      "result_ids": [
+        "PD-N082",
+        "PD-T208"
+      ]
+    },
+    {
+      "id": "IDEA-335",
+      "aliases": [
+        "IDEA?argmax-alln-claude-02-T3"
+      ],
+      "title": "Raw angular corner-profile planning form",
+      "path": "topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md",
+      "anchor": "idea-335",
+      "source_path": "topics/padua-argmax-alln-20261101/ideas.md",
+      "disposition": "REJECTED: failed (MEASURED scope)",
+      "result_ids": [
+        "PD-N083",
+        "PD-T208"
+      ]
+    }
+  ],
+  "historical_composites": [
+    {
+      "alias": "IDEA?argmax-alln-codex-fallback-02",
+      "split_into": [
+        "IDEA-322",
+        "IDEA-323"
+      ],
+      "qualification": "Unique-corner O-L versus tie-inclusive O-Lt; original combined record retained."
+    },
+    {
+      "alias": "IDEA?argmax-alln-codex-fallback-03",
+      "split_into": [
+        "IDEA-324",
+        "IDEA-325"
+      ],
+      "qualification": "Whole-cell E-C versus common-phase E-P; original combined record retained."
+    }
+  ],
+  "classification_only": true,
+  "new_research_or_priority_claim": false
+}

@@ -1,4 +1,6 @@
-# PD-T?argmax-alln-gated-codex-03 — Vanishing two-phase primitive gain
+# PD-T217 (PD-T?argmax-alln-gated-codex-03) — Vanishing two-phase primitive gain
+
+Final registration: **PD-T217**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind: PD-T.
 Aliases: direction1 round1 claim B; two-free-angle PD-T190 extension;

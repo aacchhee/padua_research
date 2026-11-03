@@ -1,4 +1,6 @@
-# PD-T?argmax-alln-gated-codex-05 — Explicit finite projected-defect block
+# PD-T219 (PD-T?argmax-alln-gated-codex-05) — Explicit finite projected-defect block
+
+Final registration: **PD-T219**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind:PD-T.
 Aliases: finite positive cancellation rectangle; explicit phase-radius defect.

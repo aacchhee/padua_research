@@ -59,7 +59,7 @@ not required to interpret these floating observations.
 
 Producer: [mz2d_spectra.py](../code/mz2d_spectra.py).
 Essential evidence:
-[d0-spectra.json](../../../topics/padua-mz-2d-20261101/evidence/d0-spectra.json).
+[d0-spectra.json](../../../topics/padua-mz-2d-20261101/COLD_STORAGE.md).
 Command, full source commit, code and definition hashes, environment,
 versions, seed, byte size, output hash and retention:
 [d0-manifest.json](../../../topics/padua-mz-2d-20261101/evidence/d0-manifest.json).

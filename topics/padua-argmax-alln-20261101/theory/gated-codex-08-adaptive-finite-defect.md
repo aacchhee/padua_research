@@ -1,4 +1,6 @@
-# PD-T?argmax-alln-gated-codex-08 — Adaptive finite projected-defect bound
+# PD-T222 (PD-T?argmax-alln-gated-codex-08) — Adaptive finite projected-defect bound
+
+Final registration: **PD-T222**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind: PD-T.
 Aliases: direction1 round4 adaptive rectangle; shrinking-strip finite
@@ -245,7 +247,7 @@ This theorem does not localize phases, bound the primitive excess, or
 settle any point inside a corner box whose two endpoint distances are
 less than 4pi/n. Those obligations are separate. The combined reduction
 is stated in gated-codex-09. Independent review and required Claude audit
-remain pending; no finite-degree numerical certificate is inferred.
+remain pending at initial publication; no finite-degree numerical certificate is inferred.
 
 ## History
 
@@ -256,3 +258,14 @@ numerator, reflection, collision or parity-count failure was found in
 development. Source/rules snapshot and protocol provenance are recorded
 in gated/d1/r04-adaptive-block.md. No new source, shared registry change,
 Git operation, future round, or direction-2 work by this worker.
+
+
+### Current review correction — 2026-11-03 (R1)
+
+The pending-Claude labels above describe the initial publication boundary.
+Claude [audit-01](../audit-01.md) accepted this record at its written
+mathematical or MEASURED scope; [response-review-01](../response-review-01.md)
+accepted the record/provenance response. Those completed reviews are the
+current state. This dated correction changes no statement, epistemic
+status, proof, numerical value, source pin or frozen receipt. All remaining
+mathematical open items retain their stated scopes.

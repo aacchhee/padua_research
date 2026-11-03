@@ -232,7 +232,7 @@ Same authoritative [batch ledger](topics/padua-batch-20261031/ALLOCATIONS.md); n
 
 **Final IDs allocated 2026-11-01** by Claude under AC's explicit authorisation, recorded in the [batch ledger](topics/padua-batch-20261031/ALLOCATIONS.md): PD-T081–PD-T094, PD-N032–PD-N038, IDEA-177–IDEA-189, LIT-300–LIT-331. Provisional IDs are kept in parentheses or as aliases for provenance; the full map is [id-map.json](topics/programme-ideas-20261031/pr-prep/id-map.json).
 
-Historical, before the 2026-11-01 final allocation above: all provisional reservations are enumerated below and in [provisional-id-map.json](topics/lattice-unisolvence-20261031/provisional-id-map.json). Existing charter/MZ final IDs remain unchanged; no final-range claim or owner acknowledgement is fabricated.
+Historical, before the 2026-11-01 final allocation above: all provisional reservations are enumerated below and in [provisional-id-map.json](topics/lattice-unisolvence-20261031/COLD_STORAGE.md). Existing charter/MZ final IDs remain unchanged; no final-range claim or owner acknowledgement is fabricated.
 
 | Provisional ID | Final ID | Source / owner | Canonical record | Allocation / audit |
 |---|---|---|---|---|
@@ -467,7 +467,7 @@ Original-to-split mappings (all originals were unregistered claims in campaign f
 
 ## Bivariate Lanczos campaign — final allocation (PR preparation 2026-11-01)
 
-Block allocated by Claude under AC's 2026-11-01 authorisation (see the [batch ledger](topics/padua-batch-20261031/ALLOCATIONS.md)): PD-T029–080, PD-N007–031, IDEA-077–176, LIT-066–292. Machine-readable map: [id-map.json](topics/bivariate-lanczos-20261031/pr-prep/id-map.json); generator: [allocate.py](topics/bivariate-lanczos-20261031/pr-prep/allocate.py). Provisional IDs remain in the topic's text as provenance. Local labels OBST?bivariate-lanczos-claude-01–15 (obstruction-table rows) are not a registry namespace and keep their labels.
+Block allocated by Claude under AC's 2026-11-01 authorisation (see the [batch ledger](topics/padua-batch-20261031/ALLOCATIONS.md)): PD-T029–080, PD-N007–031, IDEA-077–176, LIT-066–292. Machine-readable map: [id-map.json](topics/bivariate-lanczos-20261031/COLD_STORAGE.md); generator: [allocate.py](topics/bivariate-lanczos-20261031/pr-prep/allocate.py). Provisional IDs remain in the topic's text as provenance. Local labels OBST?bivariate-lanczos-claude-01–15 (obstruction-table rows) are not a registry namespace and keep their labels.
 
 | Provisional ID | Final ID | Source branch / commit | Canonical file | Allocating PR / batch |
 |---|---|---|---|---|
@@ -908,7 +908,7 @@ Original-to-split mapping: **PD-T098** (alias PD-T?programme-ideas-claude-04), e
 
 ## Padua MZ 2D campaign — PR14 final registration
 
-Reservation priority: `9f0c7710abd19ee5a0d61bce6384e7a399e838d2`; [map](topics/padua-mz-2d-20261101/protocol/final-id-map.json), [fresh union scan](topics/padua-mz-2d-20261101/protocol/final-reservation-recheck.json). No accepted ID is renumbered.
+Reservation priority: `9f0c7710abd19ee5a0d61bce6384e7a399e838d2`; [map](topics/padua-mz-2d-20261101/COLD_STORAGE.md), [fresh union scan](topics/padua-mz-2d-20261101/protocol/final-reservation-recheck.json). No accepted ID is renumbered.
 
 | Provisional ID | Final ID | Origin | Durable record / source coverage | Audit / provenance |
 |---|---|---|---|---|
@@ -1105,3 +1105,83 @@ Original-to-split relations: PD-T140 (formerly carrying the finite inequalities)
 | IDEA?proof-attempts-2-codex-b1-taper | IDEA-311 | codex/padua-proof-attempts-2-20261101 | [candidate](topics/padua-proof-attempts-2-20261101/preparation/ideas-registration.md) | retained; original attempt alias retained |
 
 Original-to-split: PD-T098 → PD-T156, PD-T157, PD-T158, PD-T159; PD-T099 → PD-T162, PD-T166, PD-T169, PD-T174, PD-T177, PD-T181, PD-T185, PD-T186, PD-T187, PD-T188, PD-T189, PD-T190, PD-T191, PD-T192; PD-T100 → PD-T160, PD-T161, PD-T163, PD-T164, PD-T165, PD-T167, PD-T168, PD-T170, PD-T171, PD-T172, PD-T173, PD-T175, PD-T176, PD-T178, PD-T179, PD-T180, PD-T181, PD-T182, PD-T183, PD-T184; PD-N039 → PD-N072, PD-N073, PD-T193; PD-N040 → PD-T194, PD-T195, PD-T196, PD-T197. Full A3 and all-n A4 stay OPEN; PD-T100 stays MEASURED. Permanent unused gaps PD-T198–205, PD-N074–077, IDEA-312–315. No LIT range.
+
+
+## Padua argmax all-degree part3 — final scientific mappings (2026-11-03)
+
+Owner branch `claude/padua-argmax-alln-20261101`; input/rules `cdb12257af24ea2542de707b9730f8278d69a168`. [Topic ledger](topics/padua-argmax-alln-20261101/ALLOCATIONS.md) reservations retain first publication405febab68fbe1d998bf894c2d21dfe23d689f96 and3aebb299a4154dac822974b7245a9d243f21374e. [Fresh union scan](topics/padua-argmax-alln-20261101/prep-support/allocation-scan.json) covers main and open PR17/18, with no closed-unmerged reservation to recover. No new range or accepted-ID renumbering. New scientific assignments:PD-T206–235 and PD-N078–083. Existing degree-eight PD-T181 is reused; PD-T236–245 and LIT-460–465 remain permanent unused gaps. IDEA mappings/splits are registered separately by the topic orchestrator. The distinct [Astra final preparation audit](topics/padua-argmax-alln-20261101/prep-support/final-audit.md) accepts these mappings; [actual-main integration](topics/padua-argmax-alln-20261101/prep-support/integration-audit.md) is checked separately.
+
+| Provisional / historical alias | Final ID | Owner / input | Canonical record | Disposition / mapping scope |
+|---|---|---|---|---|
+| PD-T?argmax-alln-claude-01 | PD-T206 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/argmax-alln-claude-01-measured-observations.md) | retained statement MEASURED |
+| PD-T?argmax-alln-claude-02 | PD-T207 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/argmax-alln-claude-02-measured-edge-profile.md) | retained statement MEASURED |
+| PD-T?argmax-alln-codex-01 | PD-T208 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/argmax-alln-codex-01-measured-tests.md) | retained statement MEASURED |
+| PD-T?argmax-alln-codex-02 | PD-T209 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/argmax-alln-codex-02-degree-two-global-argmax.md) | retained statement PROVED |
+| PD-T?argmax-alln-codex-03 | PD-T210 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/argmax-alln-codex-03-finite-certificate-correctness.md) | retained statement PROVED |
+| PD-T?argmax-alln-codex-04 | PD-T211 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/argmax-alln-codex-04-vertical-compact-defect.md) | retained statement PROVED |
+| PD-T?argmax-alln-codex-05 | PD-T212 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/argmax-alln-codex-05-horizontal-compact-defect.md) | retained statement PROVED |
+| PD-T?argmax-alln-codex-06 | PD-T213 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/argmax-alln-codex-06-measured-pairing.md) | retained statement MEASURED |
+| PD-T?argmax-alln-codex-07 | PD-T181 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/argmax-alln-codex-07-degree-eight-global-argmax.md) | same accepted degree-eight statement; original PD-T181 alias/history retained; no new ID |
+| PD-T?argmax-alln-codex-08 | PD-T214 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/argmax-alln-codex-08-degree-nine-through-sixteen-global-argmax.md) | retained statement PROVED |
+| PD-N?argmax-alln-codex-01 | PD-N078 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/argmax-alln-codex-N01-pairing-order-obstruction.md) | scoped negative statement PROVED |
+| PD-T?argmax-alln-gated-codex-01 | PD-T215 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/gated-codex-01-pairwise-defect-projection.md) | retained statement PROVED |
+| PD-T?argmax-alln-gated-codex-02 | PD-T216 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/gated-codex-02-two-phase-global-bound.md) | retained statement PROVED |
+| PD-T?argmax-alln-gated-codex-03 | PD-T217 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/gated-codex-03-two-phase-local-gain.md) | retained statement PROVED |
+| PD-T?argmax-alln-gated-codex-04 | PD-T218 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/gated-codex-04-compact-complement-gap.md) | retained statement PROVED |
+| PD-T?argmax-alln-gated-codex-05 | PD-T219 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/gated-codex-05-finite-projected-defect.md) | retained statement PROVED |
+| PD-T?argmax-alln-gated-codex-06 | PD-T220 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/gated-codex-06-exact-primitive-cusp.md) | retained statement PROVED |
+| PD-T?argmax-alln-gated-codex-07 | PD-T221 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/gated-codex-07-explicit-local-envelope.md) | retained statement PROVED |
+| PD-T?argmax-alln-gated-codex-08 | PD-T222 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/gated-codex-08-adaptive-finite-defect.md) | retained statement PROVED |
+| PD-T?argmax-alln-gated-codex-09 | PD-T223 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/gated-codex-09-shrinking-corner-reduction.md) | retained statement PROVED |
+| PD-T?argmax-alln-gated-codex-10 | PD-T224 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/gated-codex-10-noncorner-coset-defect.md) | retained statement PROVED |
+| PD-T?argmax-alln-gated-codex-11 | PD-T225 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/gated-codex-11-corner-phase-localization.md) | retained statement PROVED |
+| PD-T?argmax-alln-gated-codex-12 | PD-T226 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/gated-codex-12-row-primitive-identity.md) | retained statement PROVED |
+| PD-T?argmax-alln-gated-codex-13 | PD-T227 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/gated-codex-13-corner-first-variation.md) | retained statement PROVED |
+| PD-T?argmax-alln-gated-codex-14 | PD-T228 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/gated-codex-14-reflection-first-corner-bound.md) | retained statement PROVED |
+| PD-T?argmax-alln-gated-codex-15 | PD-T229 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/gated-codex-15-eventual-global-argmax.md) | retained statement PROVED |
+| PD-T?argmax-alln-gated-codex-16 | PD-T230 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/gated-codex-16-horizontal-compact-envelope.md) | retained statement PROVED |
+| PD-T?argmax-alln-gated-codex-17 | PD-T231 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/gated-codex-17-finite-edge-cell-comparison.md) | retained statement PROVED |
+| PD-N?argmax-alln-gated-codex-01 | PD-N079 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/gated-codex-N01-majorant-coset-obstruction.md) | scoped negative statement PROVED |
+| PD-N?argmax-alln-gated-codex-02 | PD-N080 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/gated-codex-N02-pointwise-edge-translation-obstruction.md) | scoped negative statement PROVED |
+| PD-T?argmax-alln-prep-codex-01 | PD-T232 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/prep-codex-01-d1-phase-defect-screen.md) | retained statement MEASURED |
+| PD-T?argmax-alln-prep-codex-02 | PD-T233 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/prep-codex-02-d2-corner-screen.md) | retained statement MEASURED |
+| PD-T?argmax-alln-prep-codex-03 | PD-T234 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/prep-codex-03-d1-row-grid.md) | retained statement MEASURED |
+| PD-T?argmax-alln-prep-codex-04 | PD-T235 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/prep-codex-04-d3-pointwise-screen.md) | retained statement MEASURED |
+| PD-N?argmax-alln-prep-codex-01 | PD-N081 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/prep-codex-N01-or-order-screen.md) | scoped negative statement MEASURED |
+| PD-N?argmax-alln-prep-codex-02 | PD-N082 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/prep-codex-N02-t2-profile-test.md) | scoped negative statement MEASURED |
+| PD-N?argmax-alln-prep-codex-03 | PD-N083 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/theory/prep-codex-N03-t3-profile-test.md) | scoped negative statement MEASURED |
+
+Original-to-split progress for **PD-T099** (original all-degree wording and **OPEN** status retained): n2→PD-T209; n3–7→inherited PD-T162/166/169/174/177; n8→existing PD-T181 with this topic's codex07 proof; n9–16→PD-T214; eventual n>=N_*→PD-T229, with non-effective N_* and unknown17<=n<N_* bridge. This is not a complete PARTIAL decomposition covering every parameter. PD-T210/211/212/215–228/230 are supporting certificate/edge/phase/defect/localization/local bounds, not additional covered degree ranges; PD-T231 is a separate finite edge-comparison statement. PD-N078/079/080 reject only O-Lt, primitive coset/pure-quadratic mechanisms, and E-P respectively; PD-N081/082/083 retain only measured O-R/T2/T3 planning failures. None rejects PD-T099.
+
+Measurement-home splits: the existing D1r01 screen→PD-T232, D2r01 slope/energy screen→PD-T233, D1r06 row-grid checks→PD-T234, D3r01 E-P screen→PD-T235; PD-T213's measured O-R failure→PD-N081; PD-T208's T2/T3 measured failed formulations→PD-N082/083. Original observation records retain their finite statements/history; the negative records do not strengthen numerical outcomes to exact universal obstructions.
+
+## PR17 candidate aliases and precise formulation splits — 2026-11-03
+
+| Provisional alias | Final ID | Input / ownership | Canonical record | Disposition / scope |
+|---|---|---|---|---|
+| IDEA?argmax-alln-claude-01 | IDEA-316 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md#idea-316) | REJECTED: refuted |
+| IDEA?argmax-alln-claude-02 | IDEA-317 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md#idea-317) | REJECTED: failed (MEASURED scope) |
+| IDEA?argmax-alln-claude-03 | IDEA-318 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md#idea-318) | deferred / OPEN |
+| IDEA?argmax-alln-claude-04 | IDEA-319 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md#idea-319) | deferred |
+| IDEA?argmax-alln-claude-05 | IDEA-320 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md#idea-320) | retained in tested finite scope |
+| IDEA?argmax-alln-codex-fallback-01 | IDEA-321 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md#idea-321) | REJECTED: failed (MEASURED scope) |
+| IDEA?argmax-alln-codex-fallback-02-OL | IDEA-322 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md#idea-322) | deferred / OPEN |
+| IDEA?argmax-alln-codex-fallback-02-OLt | IDEA-323 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md#idea-323) | REJECTED: refuted |
+| IDEA?argmax-alln-codex-fallback-03-EC | IDEA-324 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md#idea-324) | deferred / OPEN in general |
+| IDEA?argmax-alln-codex-fallback-03-EP | IDEA-325 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md#idea-325) | REJECTED: refuted |
+| IDEA?argmax-alln-codex-fallback-04 | IDEA-326 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md#idea-326) | retained reduction; quantitative continuation deferred |
+| IDEA?argmax-alln-gated-codex-01 | IDEA-327 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md#idea-327) | retained positive lemmas |
+| IDEA?argmax-alln-gated-codex-02 | IDEA-328 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md#idea-328) | retained accepted proofs |
+| IDEA?argmax-alln-gated-codex-03 | IDEA-329 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md#idea-329) | deferred after STOP |
+| IDEA?argmax-alln-gated-codex-04 | IDEA-330 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md#idea-330) | retained theorem; all-n hypotheses deferred / OPEN |
+| IDEA?argmax-alln-gated-codex-05 | IDEA-331 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md#idea-331) | retained accepted proofs |
+| IDEA?argmax-alln-gated-codex-06 | IDEA-332 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md#idea-332) | retained accepted proof |
+| IDEA?argmax-alln-gated-codex-01-quadratic | IDEA-333 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md#idea-333) | REJECTED: refuted |
+| IDEA?argmax-alln-claude-02-T2 | IDEA-334 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md#idea-334) | REJECTED: failed (MEASURED scope) |
+| IDEA?argmax-alln-claude-02-T3 | IDEA-335 | claude/padua-argmax-alln-20261101; cdb12257af24ea2542de707b9730f8278d69a168 | [record](topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md#idea-335) | REJECTED: failed (MEASURED scope) |
+
+Historical composite `IDEA?argmax-alln-codex-fallback-02` splits into **IDEA-322 / IDEA-323**. Unique-corner O-L versus tie-inclusive O-Lt; original combined record retained. This one-to-many provenance is not an atomic alias assigned twice.
+
+Historical composite `IDEA?argmax-alln-codex-fallback-03` splits into **IDEA-324 / IDEA-325**. Whole-cell E-C versus common-phase E-P; original combined record retained. This one-to-many provenance is not an atomic alias assigned twice.
+
+The pure-quadratic subform IDEA-333 splits from retained primitive candidate IDEA-327; raw-profile subforms IDEA-334/335 split from the measured failed literal architecture IDEA-317. Exact primitive obstruction PD-N079 supports IDEA-316/333 without a duplicate negative ID. All original candidate text and registration timing are preserved.

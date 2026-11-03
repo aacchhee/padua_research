@@ -1,5 +1,7 @@
 # Proposed shared-record changes — do not apply before audit/PR preparation
 
+Current disposition — 2026-11-03: these original proposals are applied by the final registration in [FINALIZATION.md](FINALIZATION.md), with final mappings and separate Astra review under AC's no-further-Claude direction. Earlier future/pending language below is retained as proposal history.
+
 These literal blocks preserve handoff02's topic-only write scope. All new result labels remain provisional. Final-ID substitution and a fresh reservation union scan are later PR-preparation work. Claude audit-01 accepts the mathematics; response/cold-storage protocol followup remains pending. Apply only at PR preparation after those checks.
 
 ## PROOF_STATUS.md — PD-T099 history/addendum

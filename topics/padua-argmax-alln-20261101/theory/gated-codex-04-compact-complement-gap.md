@@ -1,4 +1,6 @@
-# PD-T?argmax-alln-gated-codex-04 — Uniform gap outside fixed corner neighborhoods
+# PD-T218 (PD-T?argmax-alln-gated-codex-04) — Uniform gap outside fixed corner neighborhoods
+
+Final registration: **PD-T218**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind:PD-T.
 Aliases: compact-complement gap; two-phase assembly; moving-strip inclusion.

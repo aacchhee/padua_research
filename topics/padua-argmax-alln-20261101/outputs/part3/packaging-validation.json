@@ -1,11 +1,11 @@
 {
   "accepted": true,
-  "manifest_sha256": "68a472f3abbf3a1683beaa1b5013e82a1f769d99318136897f80e1384be65001",
-  "files": 458,
-  "generated_bytes": 715446,
+  "manifest_sha256": "d884f74f7a27d0da54bbc9391baaa3c07eab6ddba82d750fbfc3d19d32380a48",
+  "files": 510,
+  "generated_bytes": 825085,
   "largest_generated_file": 16344,
   "generated_file_limit_exclusive": 16384,
-  "json_files_parsed": 73,
+  "json_files_parsed": 86,
   "complete_certificates": 10,
   "accepted_finite_receipts": 19,
   "archive": {
@@ -19,18 +19,26 @@
     "method": "Read-only Git source-path/blob/SHA256 verification; no restore, clean or export."
   },
   "limitations": "Integrity only; mathematical predicates/replays are separate. Frozen audit scratch formats are opaque hashed bytes. No archive export to AC storage is claimed.",
-  "independent_final_plain_check": {
-    "agent": "distinct /root/cold_storage_audit",
-    "configured_model": "gpt-6-astra high",
-    "serving_metadata": "not independently exposed",
-    "command": "python -B topics/padua-argmax-alln-20261101/code/part3/check_evidence.py",
-    "exit_code": 0,
-    "checker_sha256": "97ebfdbb1ee86323b30c55cc7ead4880bc28fbbceec518ce434a45b448f81f8c",
-    "manifest_sha256": "68a472f3abbf3a1683beaa1b5013e82a1f769d99318136897f80e1384be65001",
-    "monitored_files": 460,
+  "independent_final_check": {
+    "agent": "distinct Codex /root/prep_final_audit",
+    "model": "gpt-6-astra high configured; serving metadata not independently exposed",
+    "base_main": "1acebf7af47885654dfd1ffe0b9c8cda19c8f2a6",
+    "commands": [
+      "python -B topics/padua-argmax-alln-20261101/code/part3/check_evidence.py",
+      "python -O -B topics/padua-argmax-alln-20261101/code/part3/check_evidence.py"
+    ],
+    "returncodes": [
+      0,
+      0
+    ],
+    "identical_stdout_sha256": "6551fde38e1f6204a35b2033f087d768c677500b1bf8bb28e1588e28837cb016",
+    "stderr": "empty",
+    "monitored_files": 512,
     "all_before_after_byte_hashes_unchanged": true,
-    "stdout_sha256": "76170a8a0a91c08b6bf18999424ca357c7d0d972f580d205a643ae9bba42bc36",
-    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "review_scope": "Supplementary check, not required independent Claude acceptance."
+    "path_hash_inventory_sha256": "b59ef8f642047e2144229d51712a2c075c54cf24a021bed112c1c8156ad53be5",
+    "manifest_sha256": "d884f74f7a27d0da54bbc9391baaa3c07eab6ddba82d750fbfc3d19d32380a48",
+    "frozen_audit_pairs_unchanged": true,
+    "scientific_source_hashes_unchanged": true,
+    "scope": "Final preparation + actual-main integration PASS; remote publication/ancestry/final whole-tree budget checked separately by orchestrator."
   }
 }

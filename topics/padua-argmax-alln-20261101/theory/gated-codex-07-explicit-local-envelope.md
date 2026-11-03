@@ -1,4 +1,6 @@
-# PD-T?argmax-alln-gated-codex-07 — Explicit two-phase local envelope
+# PD-T221 (PD-T?argmax-alln-gated-codex-07) — Explicit two-phase local envelope
+
+Final registration: **PD-T221**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind: PD-T.
 Aliases: direction1 round3 Q3-final; explicit square-root sign-change bound;
@@ -313,3 +315,14 @@ inequality with coefficient 240000. The Statement and proof claim only
 the final coefficient 242000. The complete analytic proof is preserved
 here independently of the round diagnosis. No shared registry or final
 ID allocation is made by this worker.
+
+
+### Current review correction — 2026-11-03 (R1)
+
+The pending-Claude labels above describe the initial publication boundary.
+Claude [audit-01](../audit-01.md) accepted this record at its written
+mathematical or MEASURED scope; [response-review-01](../response-review-01.md)
+accepted the record/provenance response. Those completed reviews are the
+current state. This dated correction changes no statement, epistemic
+status, proof, numerical value, source pin or frozen receipt. All remaining
+mathematical open items retain their stated scopes.

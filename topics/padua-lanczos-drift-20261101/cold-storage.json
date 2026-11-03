@@ -1,0 +1,283 @@
+{
+ "format": "padua-cold-storage-v1",
+ "slug": "padua-lanczos-drift-20261101",
+ "source_commit": "2b52b432fe59c9a50aef9deebe5152c5d6874465",
+ "threshold_bytes": 16384,
+ "policy": "AC 2026-11-02: large regenerable outputs are not stored at the branch head; all code and short summaries stay. Each file is retrievable byte-exactly from Git history by its blob id; delivery to AC Padua cold storage is pending.",
+ "delivery_to_AC_cold_storage": "PENDING (AC runs: python tools/cold_storage.py export padua-lanczos-drift-20261101 --dest C:\\Users\\andreyac\\Downloads\\padua\\cold_storage)",
+ "topic_note": "Committed checkers that load or hash-pin moved files (restore first): tracks/bivariate-lanczos/code/drift/e1_reproduce.py, e1_scalar_finite_check.py, check_independent_scalar.py, e1_check.py, e1_response_checks.py, e1_replay_n4.py, e6_offsample.py, e6_offsample_compare.py, e4_response02_check.py and checks/audit-0N scripts. External polyrat 0.2.2 (commit 6903d7af) is not in Git (see external-code.md). Not recorded as scripts: assemblers of e1-scalar-cgs2.json, e1-multinode-certificates.json, independent-*.json, audit-02-e34-checks.json; producers of allocation-scan.json, final-validation.json, protocol-check.json, checks/audit-02/manifest.json; exact command of e1-n12-directional-snapshot.json. The earlier 3.6 MB rotated capacity file remains outside Git as already recorded.",
+ "retained_above_threshold": [],
+ "entries": [
+  {
+   "path": "topics/padua-lanczos-drift-20261101/allocation-scan.json",
+   "bytes": 24675,
+   "sha256": "47481c936bce23b195e7cccc9330aad0f9cb54f8b24b26f30e23c89977da2ebf",
+   "git_blob": "7032dac589476e24412725d9aad0d7740aebffd6",
+   "generating_command": "none recorded (mechanical git ls-tree/git show scan by setup assistant; method text in file)",
+   "summary": "preparation/README.md 'Union and allocation'; topics/padua-batch-20261031/ALLOCATIONS.md:16",
+   "notes": "Historical reservation scan; not regenerable as-was."
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/checks/audit-02/manifest.json",
+   "bytes": 30974,
+   "sha256": "0da2a95e4199489df95da6bc6b308a3395c705361dc3ef638be8144d7dbbd1cd",
+   "git_blob": "0d1e6f5a5eacc7c5b70766f742154026a95096af",
+   "generating_command": "none committed (audit-02 has no manifest writer)",
+   "summary": "audit-02.md 'Verdict' and 'Executions and evidence'; checks/audit-02/Protocol.md",
+   "notes": "Codex audit-02 manifest: candidate cef79d66, CHANGES REQUIRED, 42 findings dispositioned; read via git blob by checks/audit-03/Protocol/check.py."
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/audit-02-e1-checks.json",
+   "bytes": 108115,
+   "sha256": "7bb3e3b566d7d25d369ee812c007b690b46bbdcc54b55ceb54f18fec9390d0ee",
+   "git_blob": "3e55e1ae08824fa181fdf9f7ddd711a80ca97d80",
+   "generating_command": "PYTHONPATH=<deps> OPENBLAS_NUM_THREADS=1 python3 topics/padua-lanczos-drift-20261101/checks/audit-02/E1/make_evidence.py (after the reruns listed in the file's 'commands')",
+   "summary": "checks/audit-02/E1.md; audit-02.md:33",
+   "notes": "Runtime input of e1_replay_n4.py and e1_scalar_finite_check.py (pinned)."
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/audit-02-e34-checks.json",
+   "bytes": 19752,
+   "sha256": "368c4e83d0e6ce13574d36b5a8bf283d6775142ee9ccff0b7693d8541058a12e",
+   "git_blob": "ffe05f9224e7d64ac740adf5cdf83d70c27d5c87",
+   "generating_command": "python3 -B tracks/bivariate-lanczos/code/drift/e4_closure_check.py --output <work>/producer-rerun.json; python3 -B topics/padua-lanczos-drift-20261101/checks/audit-02/E34/independent_exact.py --output <work>/independent-exact.json; receipt assembly not scripted",
+   "summary": "checks/audit-02/E34.md; audit-02.md:34",
+   "notes": ""
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/audit-02-e5.json",
+   "bytes": 25999,
+   "sha256": "476f05d272a85b438e6b0afcb136537c1cd1b90e3ce7b65b1c0489b66fdda10a",
+   "git_blob": "037427e0db26c2df17ae8d4288c7b9a36446845c",
+   "generating_command": "python3 -B topics/padua-lanczos-drift-20261101/checks/audit-02/E5/manifest_e5.py > <out> (after response01_e5_checks.py, e5_exact_checks.py, independent_e5.py reruns)",
+   "summary": "checks/audit-02/E5.md; audit-02.md:35",
+   "notes": "Receipt result PASS."
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/audit-02-e6-checks.json",
+   "bytes": 217139,
+   "sha256": "34ca7a1c29cd4fcaaea9b746a9408c97ad9b8070ee1fdc4d398d7faa98bdf1d9",
+   "git_blob": "4c9a5f861e7cc520af24376688b304ac16f6d635",
+   "generating_command": "PYTHONPATH=<deps> OPENBLAS_NUM_THREADS=1 python topics/padua-lanczos-drift-20261101/checks/audit-02/E6/check.py --work <work> --output <out>",
+   "summary": "checks/audit-02/E6.md; audit-02.md:36",
+   "notes": "all_numerical_checks_pass = true."
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/audit-02-protocol-artifacts.json",
+   "bytes": 152206,
+   "sha256": "6c91b3e29b92b1dfbab199283364bb93f01b525a128a092761e4f165677c9f24",
+   "git_blob": "5dd38295b9a12ce290b22ce877010384b6e10c1d",
+   "generating_command": "python topics/padua-lanczos-drift-20261101/checks/audit-02/Protocol/check_artifacts.py --output <out>",
+   "summary": "checks/audit-02/Protocol.md; audit-02.md:37",
+   "notes": "Workspace artifact integrity receipt."
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/audit-03-e1-checks.json",
+   "bytes": 32388,
+   "sha256": "6be52a46390441a6bb1e278653cc47f6b0a6b0a536d946a00a064fb49a93d33b",
+   "git_blob": "44bb8fc365e03b2c51c034f3edbd7597665b60ab",
+   "generating_command": "python3 topics/padua-lanczos-drift-20261101/checks/audit-03/E1/make_evidence.py (after the executions[] listed in the file)",
+   "summary": "checks/audit-03/E1.md; audit-03.md:36",
+   "notes": "finite_mathematics_pass true, degree4_replay_pass true."
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/audit-03-e34-checks.json",
+   "bytes": 32722,
+   "sha256": "891edfd04466a3c040c6e8c1b301e511c262cbe448c0a72bae2e0b1efdba4f99",
+   "git_blob": "5da82b2646d93009dedfb43dc75d8c0187678f0a",
+   "generating_command": "python3 -B topics/padua-lanczos-drift-20261101/checks/audit-03/E34/make_evidence.py (after e4_response02_check.py and audit-03/E34/independent_limits.py)",
+   "summary": "checks/audit-03/E34.md; audit-03.md:37",
+   "notes": ""
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/audit-03-protocol-checks.json",
+   "bytes": 39780,
+   "sha256": "b78d43061e6a81058d618e727aea2685ec0887a4d66f0a587b580127de8b713c",
+   "git_blob": "a90b3346a002f34c135a926e22d279c781f27148",
+   "generating_command": "python -B topics/padua-lanczos-drift-20261101/checks/audit-03/Protocol/check.py --output <out>",
+   "summary": "checks/audit-03/Protocol.md; audit-03.md:40",
+   "notes": "all_mechanical_checks_pass = true."
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/audit-04-checker.json",
+   "bytes": 19102,
+   "sha256": "15d1e3b7a73b3aaa3980bf281ee57c0c83ddf6da12e4e46c4060762a402986a4",
+   "git_blob": "afdb8095fc1db353ba1846a4bf06ada97fc92236",
+   "generating_command": "PYTHONPATH=<deps> OPENBLAS_NUM_THREADS=1 python3 topics/padua-lanczos-drift-20261101/checks/audit-04/check.py --work <work> --regenerate --output <out>",
+   "summary": "audit-04.md 'Actual executions and provenance'; evidence/audit-04-inventory.json",
+   "notes": "result PASS, 7 checker cases."
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/e1-exact-check.json",
+   "bytes": 20868,
+   "sha256": "d8488e9637210ae2e513eb4b99259ad37d617b24e2026e3743ac0e664e2caaba",
+   "git_blob": "1b9bfe0ac54e38569a0b8eb109de14e91081bc89",
+   "generating_command": "python tracks/bivariate-lanczos/code/drift/e1_check.py --evidence <e1-full-sweep.json> --output <out>",
+   "summary": "evidence/e1-summary.md; theory drift-codex-e1-04 (PD-T139); evidence/e1-manifest.json",
+   "notes": "88 records checked, all PASS."
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/e1-full-sweep.json",
+   "bytes": 616693,
+   "sha256": "0d9c236fe879879b7f546596c554d213b7b8c408d31dec08dd79146c7d629344",
+   "git_blob": "b252ae7c183756ef932df3b7332b90d65433f0ee",
+   "generating_command": "PYTHONPATH=<deps> python tracks/bivariate-lanczos/code/drift/e1_batch.py --output-dir <work>/full --summary <out> --workers 4 (88 e1_exact.py runs, up to 150 s each)",
+   "summary": "evidence/e1-summary.md; theory drift-codex-e1-04 (PD-T139); evidence/e1-manifest.json; code/drift/README.md",
+   "notes": "Runtime input of e1_check.py and e1_response_checks.py."
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/e1-multinode-certificates.json",
+   "bytes": 55328,
+   "sha256": "fae9c8743c78230ef0aa82c185d1efe0eee37be066982a37d39d920af95719f0",
+   "git_blob": "da3db41d9fa5e1f8deefb131ba44885cdfa16b6c",
+   "generating_command": "e1_scalar.py -> e1_cgs2_witness.py -> e1_cgs2_multinode.py chain (commands recorded in the witness records); regenerated/validated by tracks/bivariate-lanczos/code/drift/e1_reproduce.py --set triangle|rotated; compact assembler not scripted",
+   "summary": "theory drift-codex-e1-05 (PD-T140), drift-codex-e1-06 (PD-T141); evidence/e1-scalar-manifest.json",
+   "notes": "Essential runtime input of e1_reproduce.py, e1_scalar_finite_check.py, check_independent_scalar.py (hash-pinned)."
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/e1-n12-directional-snapshot.json",
+   "bytes": 103002,
+   "sha256": "385b96c2b710f53332133bfcd0575b29631351ea28ad73523213492847347f1f",
+   "git_blob": "f007e66866f93e7f0b72dc2988ab227c85e4462c",
+   "generating_command": "not recorded (early e1_exact.py degree-12 runs; code hashes listed in file)",
+   "summary": "checks/audit-01/E1-records-01-05.md:171; evidence/e1-summary.md",
+   "notes": "Early snapshot superseded by e1-full-sweep.json."
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/e1-scalar-cgs2.json",
+   "bytes": 444008,
+   "sha256": "e215556a01f9e169163b228dfe1b984d28e0cebd7f78e0d858f9a61a0de878c8",
+   "git_blob": "128bdee846faa4f7db9447823b81f0fe9b1fc60c",
+   "generating_command": "composite of e1_scalar.py, e1_cgs2.py and e1_cgs2_witness.py runs recorded inside the file; assembler not scripted",
+   "summary": "theory drift-codex-e1-05 (PD-T140), drift-codex-e1-06 (PD-T141, defines U_T, U_R); code/drift/README.md; evidence/e1-scalar-manifest.json",
+   "notes": "Essential runtime input of e1_reproduce.py and e1_scalar_finite_check.py (hash-pinned)."
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/e1-source-degree2-screen.json",
+   "bytes": 93265,
+   "sha256": "9f5c354ab2b73ece1aff4540d26256ee6d03cc39963ca493e863fa8502d34191",
+   "git_blob": "448751253eff0cbba830ebaaa8005ab09d90c6ac",
+   "generating_command": "PYTHONPATH=<deps> python tracks/bivariate-lanczos/code/drift/e1_batch.py --output-dir <work>/screen --summary <out> --degrees 2,8,12 --sources degree2 --workers 2",
+   "summary": "evidence/e1-summary.md; evidence/e1-manifest.json",
+   "notes": "24-run restricted-source screen, superseded by the full sweep."
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/e6-benchmarks.json",
+   "bytes": 239594,
+   "sha256": "e7a3f940c4bd79bbf84fbe4eeafca4186c9b969c92665fb972367becc23a3c58",
+   "git_blob": "58e901c4a94dc8bf65b19d63635eb46ba863fcc7",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 python tracks/bivariate-lanczos/code/drift/e6_benchmark.py --output <out> (needs external polyrat 0.2.2, numpy 2.3.5)",
+   "summary": "theory drift-codex-e6-50 (PD-T146); directions/E6.md 'Metrics and measured results'; evidence/e6-provenance.json",
+   "notes": "Runtime input of e6_offsample.py."
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/e6-frozen-grids.json",
+   "bytes": 16852,
+   "sha256": "8bb5ef149c5c6fa66e03b544f6588ff8e30c50e16490d9bf728f6447bf7b6f50",
+   "git_blob": "570bc939e52f54117181bb3917ec9a00ab58ecdc",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 python tracks/bivariate-lanczos/code/drift/e6_benchmark.py --sets T24 Q24 --grid-degree 16 --output <out>",
+   "summary": "theory drift-codex-e6-50; directions/E6.md",
+   "notes": "Read by checks/audit-02/E6/check.py."
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/independent-math-01.json",
+   "bytes": 161274,
+   "sha256": "1f2c3361d2e4f19aadef7e44f093643915eb445e7da21914eccb330bedd4026a",
+   "git_blob": "2470873b05faa376fb6656aa6a90d7ac8d78e84b",
+   "generating_command": "python tracks/bivariate-lanczos/code/drift/check_independent_math.py --output <out>, plus e1_verify.py and e1_check.py runs; receipt assembly not scripted",
+   "summary": "checks/independent-math-01.md 'Result and scope'",
+   "notes": ""
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/independent-scalar-01.json",
+   "bytes": 186681,
+   "sha256": "2d06b3b4e04956f9c9e2f4127c3937543dc92ee071de2926589d0a40c9bf6a10",
+   "git_blob": "4bc83fa25380bd7a9fe04c05d076a4cea35cba52",
+   "generating_command": "commands[] in the file (e1_cgs2.py, e1_cgs2_witness.py, e1_cgs2_multinode.py, e1_sign_check.py, e1_cgs2_verify.py); own checker check_independent_scalar.py",
+   "summary": "checks/independent-math-01.md 'Supplement 01'; theory drift-codex-e1-06",
+   "notes": "Runtime input of e1_scalar_finite_check.py (pinned)."
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/response-01-e1-checks.json",
+   "bytes": 76613,
+   "sha256": "0852581d7072cc81422fe5fded158c768a89ed838a882d3ac4c2dde71c49bb26",
+   "git_blob": "7f4cecda21e724b54427834a1e769fe88ffdea03",
+   "generating_command": "PYTHONPATH=<deps> OPENBLAS_NUM_THREADS=1 python3 tracks/bivariate-lanczos/code/drift/e1_response_checks.py --output <out> (about 4 min)",
+   "summary": "checks/response-01/E1-developer-report.md; response-01.md",
+   "notes": "overall PASS."
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/response-01-e4-closure.json",
+   "bytes": 30826,
+   "sha256": "956dfe71e8b6958f54e19f2d7fb30f04c5788351b7942bf8be21b41977d3599c",
+   "git_blob": "ee66b32f0daa60a80fd0e1e799ed65d1144f04ec",
+   "generating_command": "python3 tracks/bivariate-lanczos/code/drift/e4_closure_check.py --output <out> (about 3 s)",
+   "summary": "theory drift-codex-e4-15 (PD-N062) Checks; directions/E4.md",
+   "notes": "Runtime input of e4_response02_check.py."
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/response-01-e6-offsample.json",
+   "bytes": 22147,
+   "sha256": "12a5e7c713ec53b0a26fede8f2250a9ae8d02578df672ec11271ac450339b31d",
+   "git_blob": "95e8216f6f3151f55a873605c60238179a71c87a",
+   "generating_command": "PYTHONPATH=<deps> OPENBLAS_NUM_THREADS=1 python3 tracks/bivariate-lanczos/code/drift/e6_offsample.py --output <out> (needs e6-benchmarks.json)",
+   "summary": "directions/E6.md 'Response-01 off-sample results'; theory drift-codex-e6-50",
+   "notes": "Frozen; compared by sha in audit-03."
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/response-02-e1-replay-n4.json",
+   "bytes": 23800,
+   "sha256": "22093d9dff7e3981182d8dbe82095bde0a5db36566b4587fa4910c483b2e870b",
+   "git_blob": "b57781988e797f1f70a1699b3b0b5a072be0bdad",
+   "generating_command": "PYTHONPATH=<deps> OPENBLAS_NUM_THREADS=1 python3 tracks/bivariate-lanczos/code/drift/e1_replay_n4.py --output <out> (about 75 s)",
+   "summary": "checks/response-02/E1-developer-report.md; response-02.md",
+   "notes": "all_pass true."
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/response-02-e4-creator-limit.json",
+   "bytes": 86816,
+   "sha256": "a6faea9967747b9fe962ce58f5af55fe776bf4b5201f54cc364d738aa2da4526",
+   "git_blob": "c9078b93cc53e5d675678fabd0cb27355c5bf359",
+   "generating_command": "PYTHONPATH=<deps> OPENBLAS_NUM_THREADS=1 python3 -B tracks/bivariate-lanczos/code/drift/e4_response02_check.py --output <out> (about 2 s)",
+   "summary": "theory drift-codex-e4-15 (PD-N062) Checks; results/padua-lanczos-drift-20261101.md",
+   "notes": "25 exact instances, all assertions passed."
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/evidence/response-02-e6-offsample-rerun.json",
+   "bytes": 23663,
+   "sha256": "0d981dd1816b40833aed6d62d5f61e1d885f62104f125c6df2a7fed337f7a5fc",
+   "git_blob": "82e85306c98e71e378b5f973d969091c434c0513",
+   "generating_command": "PYTHONPATH=<deps> OPENBLAS_NUM_THREADS=1 python3 tracks/bivariate-lanczos/code/drift/e6_offsample.py --output <out>; python3 -I tracks/bivariate-lanczos/code/drift/e6_offsample_compare.py --embed",
+   "summary": "theory drift-codex-e6-50; directions/E6.md",
+   "notes": "Rerun equal in scientific fields."
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/final-validation.json",
+   "bytes": 17265,
+   "sha256": "4662da274bf52d6116d2c02b7ecd5090e84bbd35e56f6bad1de1ea371335b2f5",
+   "git_blob": "b0f887738ddff2e30054740f63fc2e304bfbf8ac",
+   "generating_command": "none committed (mechanical receipt at parent b09e1dbe)",
+   "summary": "audit-01.md (P-F2); response-01.md",
+   "notes": "Immutable final-validation receipt; own file identities."
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/preparation/prepare-receipt.json",
+   "bytes": 21902,
+   "sha256": "eafc24ff69bdcb4304c7d633114c103a186aac48aa64a9abcbba6ea62d973db6",
+   "git_blob": "b7aa6c91c8c0b66f73769fb7964ebeee32591b28",
+   "generating_command": "python topics/padua-lanczos-drift-20261101/preparation/prepare.py --apply",
+   "summary": "preparation/README.md 'What was done'",
+   "notes": "PR-preparation receipt."
+  },
+  {
+   "path": "topics/padua-lanczos-drift-20261101/protocol-check.json",
+   "bytes": 20255,
+   "sha256": "3ceb0af80d4bf25c7589051bf9721cd4da4674f3537e14e3ce98ab6d6b33b4b5",
+   "git_blob": "37d042a2a9957e3a187098ce0c26139f767d9e64",
+   "generating_command": "none committed (mechanical snapshot)",
+   "summary": "audit-01.md; checks/audit-01/E6-novelty-protocol.md",
+   "notes": "Immutable protocol snapshot."
+  }
+ ],
+ "total_bytes": 2963704
+}

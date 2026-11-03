@@ -32,3 +32,23 @@ Current main remains2b52b432fe59c9a50aef9deebe5152c5d6874465; branch head checke
 Priority is the first pushed commit publishing this additional reservation, linked from PR17. Add its locator in a following documentation update once known; do not infer priority from this date. Final assignment/readiness requires a further fresh reservation check. Shared registries and shared ledger remain deferred until audited PR preparation.
 
 Additional reservation first published in [3aebb299a4154dac822974b7245a9d243f21374e](https://github.com/aacchhee/padua_research/commit/3aebb299a4154dac822974b7245a9d243f21374e), linked from draft PR17. This locator fixes priority; the preceding description is its preregistration history.
+
+## Final assignments — 2026-11-03
+
+Fresh [union scan](prep-support/allocation-scan.json) at main2b52b432fe59c9a50aef9deebe5152c5d6874465,
+PR17cdb12257af24ea2542de707b9730f8278d69a168 and PR18
+36f345f0365ddc15d837492aa6da42a1ce6f9771 (no range), all15previous PRs
+merged/no closed-unmerged reservation. Existing permanent priority:
+405febab68fbe1d998bf894c2d21dfe23d689f96 and3aebb299a4154dac822974b7245a9d243f21374e.
+No new range and no re-reservation or accepted-ID renumbering.
+
+Assigned **PD-T206–235 (30)** and **PD-N078–083 (6)**; existing **PD-T181**
+is reused for codex07. All37canonical records (26PROVED,11MEASURED) are
+mapped in [theory map](prep-support/final-theory-map.json). Candidate
+**IDEA-316–335 (20)** and all atomic/composite aliases are mapped in
+[idea map](prep-support/final-idea-map.json). **PD-T236–245 (10)** and
+**LIT-460–465 (6)** remain permanent unused gaps, never reusable by another
+branch. No new source reading or literature/novelty clearance is claimed;
+inherited qualified citations retain their existing IDs.
+
+Final recheck after AC mergedPR18: main1acebf7af47885654dfd1ffe0b9c8cda19c8f2a6, onlyPR17open, PR18has no range; [recheck](prep-support/allocation-recheck.json). Original assignments/priorities/unused gaps unchanged, no collision.

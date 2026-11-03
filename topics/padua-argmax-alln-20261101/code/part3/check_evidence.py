@@ -42,7 +42,12 @@ def paths():
              and str(p.relative_to(ROOT)) not in archived]
     return sorted(found + [ROOT / 'results' / (TOPIC.name + '.md'),
                            ROOT / 'tools/cold_storage.py',
-                           ROOT / 'tools/test_cold_storage.py'])
+                           ROOT / 'tools/test_cold_storage.py'] + [ROOT / name for name in (
+        'PROOF_STATUS.md', 'ID_CROSSWALK.md', 'state/IDEAS.md', 'agents/WORKFLOW.md',
+        'state/CURRENT.md', 'PAPER_MAP.md', 'RESULTS.md',
+        'topics/padua-batch-20261031/ALLOCATIONS.md',
+        'topics/programme-ideas-20261031/theory/programme-ideas-claude-05-padua-corner-argmax.md',
+        'topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-62-degree-eight-global-argmax.md')])
 
 
 def verify_archives():
@@ -88,11 +93,11 @@ def run(refresh=False):
                   'sha256': sha(p.read_bytes())} for p in paths()]
         MANIFEST.write_text(json.dumps({
             'format': 'padua-argmax-current-and-cold-evidence-v3',
-            'input_head': '93169ab6e193fbbef91af16914cd1191e7564420',
+            'input_head': 'cdb12257af24ea2542de707b9730f8278d69a168',
             'accepted_scientific_input': 'c173fbf7ee66f02cc1d992e52edb43fdbd819474',
-            'base_main': '2b52b432fe59c9a50aef9deebe5152c5d6874465',
-            'coverage': 'Current topic files, own results, storage tool and its safety tests; excludes archived paths, handoffs, this manifest and packaging receipt to avoid cycles.',
-            'status': 'Mathematics accepted by Claude audit-01; response and cold-storage protocol findings require Claude review.',
+            'base_main': '1acebf7af47885654dfd1ffe0b9c8cda19c8f2a6',
+            'coverage': 'Current topic files, own results, storage tool/tests and the ten explicitly changed shared registration/history/rule files; excludes archived paths, handoffs, this manifest and packaging receipt to avoid cycles.',
+            'status': 'Mathematics accepted by Claude audit-01; responses accepted by response-review-01/audit-03. Final preparation review is recorded in prep-support/final-audit.md by a distinct Astra reviewer under AC no-further-Claude direction. PD-T099 OPEN; delivery/purge pending.',
             'integrity_manifest_exception': 'One current integrity manifest may exceed16KiB under handoff07. It stores hashes/paths, not split measurement payloads. Historical developer manifest remains pinned in cold-storage.json.',
             'archive': archive, 'files': files}, indent=2) + '\n')
     data = json.loads(MANIFEST.read_text())

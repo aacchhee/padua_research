@@ -4,6 +4,9 @@ This checker reconstructs the exact cardinals/embedding and outward
 coefficients; it does not trust stored bounds, counters, or complete flags.
 It shares arithmetic with the producer but does not call its search.
 """
+if not __debug__:
+    raise RuntimeError("Scientific verification requires Python assertions; do not use -O or PYTHONOPTIMIZE.")
+
 import argparse
 from collections import Counter
 from fractions import Fraction as F

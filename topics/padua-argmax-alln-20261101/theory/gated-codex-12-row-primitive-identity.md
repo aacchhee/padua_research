@@ -1,4 +1,6 @@
-# PD-T?argmax-alln-gated-codex-12 — Exact axis primitive row identities
+# PD-T226 (PD-T?argmax-alln-gated-codex-12) — Exact axis primitive row identities
+
+Final registration: **PD-T226**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind: PD-T.
 Aliases: direction1 round6 cotangent row resummation; signed row equals

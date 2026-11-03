@@ -5,6 +5,9 @@ checks all tensor Bernstein coefficients on four quadrants, and verifies
 that only the two non-node corners can attain the coefficient bound 3.
 No floating-point arithmetic enters any mathematical predicate.
 """
+if not __debug__:
+    raise RuntimeError("Scientific verification requires Python assertions; do not use -O or PYTHONOPTIMIZE.")
+
 import argparse
 from fractions import Fraction as F
 import hashlib

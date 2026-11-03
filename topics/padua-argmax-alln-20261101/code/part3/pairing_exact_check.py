@@ -2,6 +2,9 @@
 Uses supplied rational angular boxes; no numerical inverse trig, optimizer,
 NumPy, or imports from pairing_screens. Inherits the accepted n4 certificate.
 """
+if not __debug__:
+    raise RuntimeError("Scientific verification requires Python assertions; do not use -O or PYTHONOPTIMIZE.")
+
 import argparse, gzip, hashlib, json, math
 from fractions import Fraction as F
 from pathlib import Path

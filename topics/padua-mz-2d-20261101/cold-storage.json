@@ -1,0 +1,130 @@
+{
+ "format": "padua-cold-storage-v1",
+ "slug": "padua-mz-2d-20261101",
+ "source_commit": "2b52b432fe59c9a50aef9deebe5152c5d6874465",
+ "threshold_bytes": 16384,
+ "policy": "AC 2026-11-02: large regenerable outputs are not stored at the branch head; all code and short summaries stay. Each file is retrievable byte-exactly from Git history by its blob id; delivery to AC Padua cold storage is pending.",
+ "delivery_to_AC_cold_storage": "PENDING (AC runs: python tools/cold_storage.py export padua-mz-2d-20261101 --dest C:\\Users\\andreyac\\Downloads\\padua\\cold_storage)",
+ "topic_note": "Generators committed: tracks/mz-constants/code/{mz2d_exact,mz2d_independent_check,mz2d_spectra}.py, protocol/final-*.py, response-01-20261101-validate.py. mz2d_exact.py needs python-flint 0.9.0 (about 30 s). Restore before running mz2d_independent_check.py, audit/claude-audit-01/run_dev_independent_functions.py or the protocol validators (final-validate.py needs final-assignment-checks.json and final-input-manifest.json). mz2d-eta-counterexample.md pins exact-spectra.json by SHA-256; the manifest keeps exact bytes. Protocol receipts are point-in-time records of one-shot scripts. Small committed siblings: evidence/d0-manifest.json, exact-parity-scan.json, independent-additional-checks.json, protocol/input-manifest.json.",
+ "retained_above_threshold": [],
+ "entries": [
+  {
+   "path": "topics/padua-mz-2d-20261101/audit/claude-audit-01/claude-mz2d-spectra.json",
+   "bytes": 31818,
+   "sha256": "de3a6dc6726268ac5c0e61f46c79435e561be1514f76c60f6e79f17120f7bbbd",
+   "git_blob": "64ea8c7ec2a763bddbc372f0eaf9dfeed4493491",
+   "generating_command": "PYTHONPATH=<flint> OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 tracks/mz-constants/code/mz2d_exact.py --m 10 20 30 40 --output <out>",
+   "summary": "audit-01.md:68-72 (R1: results equal exact-spectra.json); audit/claude-audit-01/MANIFEST.md:16",
+   "notes": "Auditor rerun of the exact producer."
+  },
+  {
+   "path": "topics/padua-mz-2d-20261101/audit/claude-audit-01/final-validation.claude-rerun.json",
+   "bytes": 18087,
+   "sha256": "f8cc5398347a4e0961e39e8c1d952071ee42addd0d5b76fc6cfb1435b6fc14e9",
+   "git_blob": "ba3373a45764b8c5e7708aaa0db87ac669a4ef7c",
+   "generating_command": "python3 topics/padua-mz-2d-20261101/protocol/final-validate.py (disposable worktree at e847601)",
+   "summary": "audit-01.md:92 (R5: PASS); audit/claude-audit-01/MANIFEST.md:22",
+   "notes": ""
+  },
+  {
+   "path": "topics/padua-mz-2d-20261101/evidence/d0-spectra.json",
+   "bytes": 837344,
+   "sha256": "3c5c702ed964b240a9e96bb0be55a2a3e86c2c71eb5e49706b7c58680879e4f5",
+   "git_blob": "2530454a05f60c2fb05e031d13a3efc6e144ba68",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python tracks/mz-constants/code/mz2d_spectra.py --m 10 20 30 40 60 80 100 --crosscheck 10 20 30 40 --output <out>",
+   "summary": "tracks/mz-constants/theory/mz2d-measured-spectra.md (PD-T108 table); directions/D0.md; evidence/d0-manifest.json",
+   "notes": "MEASURED float64 evidence; no script reads it."
+  },
+  {
+   "path": "topics/padua-mz-2d-20261101/evidence/exact-spectra.json",
+   "bytes": 31822,
+   "sha256": "5456917afe8fea69b0a776270ef3ae79fdc33deb02d27f89648fc342f78b93de",
+   "git_blob": "42d88e6a18a03da4ee71c10024337a9a44871fce",
+   "generating_command": "PYTHONPATH=<flint> OPENBLAS_NUM_THREADS=1 python tracks/mz-constants/code/mz2d_exact.py --m 10 20 30 40 --output <out>",
+   "summary": "tracks/mz-constants/theory/mz2d-certified-spectra.md (PD-T107 enclosures, sha 5456917a); mz2d-eta-counterexample.md:25,127; directions/D6.md",
+   "notes": "Evidence of PROVED PD-T107 and the eta witness; checker tracks/mz-constants/code/mz2d_independent_check.py (restore first)."
+  },
+  {
+   "path": "topics/padua-mz-2d-20261101/evidence/independent-exact-spectra.json",
+   "bytes": 31834,
+   "sha256": "18c8623442664aa119d3581b701d200315d454071d6b8f6c89cbaf540fe34d9c",
+   "git_blob": "1b7c73f3267e87f7a05230fd10cf6ec3f406feba",
+   "generating_command": "PYTHONPATH=<flint> OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python tracks/mz-constants/code/mz2d_exact.py --m 10 20 30 40 --output <out>; then python tracks/mz-constants/code/mz2d_independent_check.py",
+   "summary": "independent-checks.md (hash 18c86234 at :73); mz2d-certified-spectra.md",
+   "notes": "Different-agent replay of the PD-T107 producer."
+  },
+  {
+   "path": "topics/padua-mz-2d-20261101/protocol/final-assignment-checks.json",
+   "bytes": 38294,
+   "sha256": "09a994c8e6e5e630c44febc2bc10719afb3f3e716fa9d95fb3d8b6c904dc4180",
+   "git_blob": "2860d12f2cfffe8244e01b4d570d87907393a60e",
+   "generating_command": "python3 topics/padua-mz-2d-20261101/protocol/final-assign.py --apply-approved (one-shot; do not repeat)",
+   "summary": "LOG.md:7 (assigned ranges); protocol/README.md",
+   "notes": "Point-in-time assignment receipt; input of final-validate.py."
+  },
+  {
+   "path": "topics/padua-mz-2d-20261101/protocol/final-assignment-dry-run.json",
+   "bytes": 38193,
+   "sha256": "a47fcdf45acc72ccd4e2ead40eeb1097a6cf154ca337a0f0543b6fa84a972732",
+   "git_blob": "a84f9beae76c12c6227b1727aa6c79d904862a3c",
+   "generating_command": "python3 topics/padua-mz-2d-20261101/protocol/final-assign.py (dry run)",
+   "summary": "protocol/README.md",
+   "notes": "Superseded by final-assignment-checks.json."
+  },
+  {
+   "path": "topics/padua-mz-2d-20261101/protocol/final-id-map-draft.json",
+   "bytes": 26384,
+   "sha256": "d48735e66834f3c845215af83c63084236e03024011769515969c325fff409b7",
+   "git_blob": "51ff243f93ce5bbc41d0a018743ec8b20adb965b",
+   "generating_command": "topics/padua-mz-2d-20261101/protocol/final-build.py (command not recorded)",
+   "summary": "protocol/README.md; LOG.md:7",
+   "notes": "Draft map superseded by final-id-map.json."
+  },
+  {
+   "path": "topics/padua-mz-2d-20261101/protocol/final-input-manifest.json",
+   "bytes": 56380,
+   "sha256": "647cf4c7bbe27691ad189ecf3373f98c2a71698070845bc601d226366a3c5ee3",
+   "git_blob": "b8d00293c18591074357866359cd19def574d158",
+   "generating_command": "topics/padua-mz-2d-20261101/protocol/final-build.py (point-in-time capture)",
+   "summary": "handoffs/02-audit.md:34; protocol/README.md",
+   "notes": "Input of final-validate.py, response-01-20261101-validate.py, integration-pr14-first-20261101-check.py."
+  },
+  {
+   "path": "topics/padua-mz-2d-20261101/protocol/final-validation.json",
+   "bytes": 18087,
+   "sha256": "e7f2cbd5a45f709461e5b8cb5c732e075dc69cc72849d64924bd593dfb39d22a",
+   "git_blob": "4afaf38c9e01ca01b87e85a9d47266d844ed59d9",
+   "generating_command": "python3 topics/padua-mz-2d-20261101/protocol/final-validate.py",
+   "summary": "audit-01.md:92; LOG.md:78",
+   "notes": "PASS; mechanical ID-registration validation."
+  },
+  {
+   "path": "topics/padua-mz-2d-20261101/protocol/response-01-20261101-reservation-recheck.json",
+   "bytes": 17005,
+   "sha256": "f2ff2f293e2f239bb5bb00de3bab9033a4292f8b3491929bb1ef58b584d90f0e",
+   "git_blob": "d5830692976c00156dc339ffdb3e351694b552bc",
+   "generating_command": "python3 topics/padua-mz-2d-20261101/protocol/response-01-20261101-validate.py",
+   "summary": "LOG.md:7; response-01.md:58",
+   "notes": "Reservation recheck PASS; point-in-time."
+  },
+  {
+   "path": "topics/padua-mz-2d-20261101/protocol/response-01-20261101-validation.json",
+   "bytes": 379753,
+   "sha256": "f69a2ae7c2a17c5535a2f68defb40b0f5ba33a46d21cfcdfdc4ccd1310d0f141",
+   "git_blob": "ef2244dd041ba687f81ae15515dae8663d5fa267",
+   "generating_command": "python3 topics/padua-mz-2d-20261101/protocol/response-01-20261101-validate.py",
+   "summary": "response-01.md:59",
+   "notes": "Documentation-only validation PASS; hash inventory."
+  },
+  {
+   "path": "topics/padua-mz-2d-20261101/protocol/final-id-map.json",
+   "bytes": 26582,
+   "sha256": "6206c254e117585b56d389d98f46c692ffe5af6df19e6b35a240e2533e688a55",
+   "git_blob": "8e0c2a4a60602fa2f94ef780ccdda0a7a4851710",
+   "generating_command": "written by protocol/final-assign.py --apply-approved (one-shot; do not repeat)",
+   "summary": "ID_CROSSWALK.md rows for padua-mz-2d; results/padua-mz-2d-20261101.md:8; LOG.md:7",
+   "notes": "Registry map written by the one-shot topics/padua-mz-2d-20261101/protocol/final-assign.py:114 (from final-id-map-draft.json). Working-tree reader: topics/padua-mz-2d-20261101/protocol/final-validate.py:4 (run from the repository root: R=Path(\".\")). The same script also needs final-assignment-checks.json (:4) and reads base 806cc7b4509fd93bae652f9545d32d95529f8281 (:7) through git show (:10), so it is a point-in-time validator. Restore with `python tools/cold_storage.py restore padua-mz-2d-20261101`. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well."
+  }
+ ],
+ "total_bytes": 1551583
+}

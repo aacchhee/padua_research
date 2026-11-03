@@ -70,7 +70,7 @@ Content identities:
 |---|---|
 | Frozen exact producer | `5d1f005e2307d3a26badc9c1a44ce313dc9126625a49fba5d59430c151cf9c70` |
 | Producer exact-spectra.json | `5456917afe8fea69b0a776270ef3ae79fdc33deb02d27f89648fc342f78b93de` |
-| [Independent producer receipt](evidence/independent-exact-spectra.json) | `18c8623442664aa119d3581b701d200315d454071d6b8f6c89cbaf540fe34d9c` |
+| [Independent producer receipt](COLD_STORAGE.md) | `18c8623442664aa119d3581b701d200315d454071d6b8f6c89cbaf540fe34d9c` |
 | [Additional checker](../../tracks/mz-constants/code/mz2d_independent_check.py) | `5e455d747dc5dca84c883ed900095ff4a2bb40767f4ebcb3261d7d583df7bdfc` |
 | [Additional receipt](evidence/independent-additional-checks.json) | `2da16fa5c8f2f480ab7c12270b8c9b95ec49028f9df6b1cf4062af4f11897717` |
 

@@ -1,5 +1,17 @@
 # PD-T?proof-attempts-2-codex-62 — Degree-eight global corner maximum
 
+## Current registration — 2026-11-03
+
+**PD-T181 is now PROVED** by the independently audited [global-only
+Bernstein proof](../../padua-argmax-alln-20261101/theory/argmax-alln-codex-07-degree-eight-global-argmax.md),
+accepted by [Claude audit-01](../../padua-argmax-alln-20261101/audit-01.md)
+and [response review](../../padua-argmax-alln-20261101/response-review-01.md).
+The statement/ID are unchanged; codex07 is a new proof/alias of this
+same theorem, not a second allocated theorem. The old count-based attempt
+below remains historical, with its OPEN obligations preserved: its count
+strategy was not completed. PD-T180/184 count/continuation targets stay
+OPEN. Read the new canonical proof for current assumptions/evidence.
+
 Final ID: **PD-T181**. Provisional ID `PD-T?proof-attempts-2-codex-62` is retained as an alias. Registered after accepted Claude audit-01 and response-01; historical pending-audit notes below are superseded.
 
 Canonical Split from (registration): PD-T099 and PD-T100 (OPEN degree-eight global obligation, without a completeness claim).

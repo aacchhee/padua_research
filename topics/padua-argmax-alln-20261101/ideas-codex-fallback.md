@@ -82,3 +82,34 @@ The preceding records preserve their original statements, pre-run criteria and h
 Fallback03 E-C now has an exact finite proof for all10 eligible whole-cell comparisons atn7,12, using complete outward Bernstein source bounds versus target-center lower bounds, with distinct producer/checker replay and17 malformed controls. [Gated theorem17](theory/gated-codex-17-finite-edge-cell-comparison.md). The all-degree E-C statement is still OPEN/deferred. Its separate stronger E-P fixed-phase translation is **REJECTED: refuted**, by the exact n12 witness in [gated-N02](theory/gated-codex-N02-pointwise-edge-translation-obstruction.md); this does not refute E-C. Resume E-C only with a concrete analytic comparison controlling different maximizing phases; none emerged in the bounded round. No larger scan is its next gate.
 
 Fallback04's two-phase/finite-defect hypotheses have now produced qualitative compact gaps and actual-corner phase localization (gated01–11), and reflection before absolute values gives a separate eventual exact global argmax theorem (gated14–15). The all-degree finite bridge/effectivity remains OPEN. No original failure or stronger unresolved target was silently relabeled. Required Claude audit remains PENDING for all new development.
+
+## Final registration — 2026-11-03
+
+The [final candidate register](FINAL_CANDIDATES.md) supplies the canonical
+atomic final-ID dispositions after the parent-approved reservation scan.
+Earlier wording and publication-time audit labels above are historical;
+Claude audit-01 accepted the mathematical scopes, response-review-01
+accepted the prior response, and final preparation has a distinct Astra
+review. No old contract, criterion, result or priority claim is rewritten.
+
+| Historical source | Atomic final IDs and current disposition |
+|---|---|
+| fallback01/O-R | IDEA-321, REJECTED: failed only in the MEASURED screen, PD-N081 |
+| fallback02 (composite) | Split into IDEA-322/O-L (deferred/OPEN) and IDEA-323/O-Lt (REJECTED: refuted, PD-N078) |
+| fallback03 (historical E-C, later E-C/E-P composite) | Split into IDEA-324/E-C (all-n deferred/OPEN; finite n7/12 subtask PD-T231 proved) and IDEA-325/E-P (REJECTED: refuted, PD-N080) |
+| fallback04 | IDEA-326, retained defect-domination reduction/qualitative results; effective all-degree continuation deferred |
+
+The atomic aliases are `IDEA?argmax-alln-codex-fallback-02-OL`,
+`IDEA?argmax-alln-codex-fallback-02-OLt`,
+`IDEA?argmax-alln-codex-fallback-03-EC`, and
+`IDEA?argmax-alln-codex-fallback-03-EP`. The unsuffixed original combined
+aliases remain composite history, not an unqualified alias assigned to one
+branch. [Final records322–325](FINAL_CANDIDATES.md#idea-322) retain each
+precise question, predecessor, test/kill criterion, result and scope.
+
+O-L uses unique nearest corners and had zero eligible n4comparisons;
+O-Lt permits ties and has an exact n4reversal. E-C compares whole-cell
+suprema and survives all10finite exact n7/12tests; E-P compares common
+phases and is exactly reversed atn12. No rejected branch is generalized
+to its surviving sibling. All earlier test-sequence/criterion wording
+above remains immutable history. No new pairing experiment was run.

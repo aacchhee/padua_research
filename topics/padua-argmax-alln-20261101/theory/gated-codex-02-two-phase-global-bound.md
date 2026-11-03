@@ -1,4 +1,6 @@
-# PD-T?argmax-alln-gated-codex-02 — Global two-phase primitive bound
+# PD-T216 (PD-T?argmax-alln-gated-codex-02) — Global two-phase primitive bound
+
+Final registration: **PD-T216**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind: PD-T.
 Aliases: direction1 round1 claim A; two-free-angle PD-T189 extension;

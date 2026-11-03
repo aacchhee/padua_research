@@ -1,4 +1,6 @@
-# PD-T?argmax-alln-gated-codex-11 — Maximizers approach the actual nonnode corner phases
+# PD-T225 (PD-T?argmax-alln-gated-codex-11) — Maximizers approach the actual nonnode corner phases
+
+Final registration: **PD-T225**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind: PD-T.
 Aliases: direction1 round5 actual-corner localization; nonnode-corner

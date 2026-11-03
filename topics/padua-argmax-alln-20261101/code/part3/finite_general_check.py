@@ -1,4 +1,7 @@
 """Replay a general-kernel Bernstein prefix certificate, including partial ones."""
+if not __debug__:
+    raise RuntimeError("Scientific verification requires Python assertions; do not use -O or PYTHONOPTIMIZE.")
+
 import argparse
 from collections import Counter
 from fractions import Fraction as F
@@ -8,14 +11,17 @@ from pathlib import Path
 import time
 import finite_bernstein as b
 import finite_general as g
+from proof_runtime import guard_compatible_sources
 
 
 def check(data):
     assert data["format"] == "padua-part3-general-certificate-v1"
     assert data["source_head"] == b.PINNED_HEAD
     folder = Path(__file__).parent
-    assert data["source_sha256"] == {name: b.digest(folder/name) for name in
-            ("finite_bernstein.py", "finite_general.py", "finite_general_run.py", "finite_n2_exact.py")}
+    source_map = {name: b.digest(folder/name) for name in
+                  ("finite_bernstein.py", "finite_general.py", "finite_general_run.py", "finite_n2_exact.py")}
+    assert guard_compatible_sources(data["source_sha256"], source_map,
+                                    folder / "finite_n2_exact.py", "finite_n2_exact.py")
     assert g.self_test()
     coeffs, metadata = g.setup(data["n"])
     assert all(data[key] == value for key, value in metadata.items())

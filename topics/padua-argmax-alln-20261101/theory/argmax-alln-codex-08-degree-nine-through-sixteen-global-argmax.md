@@ -1,4 +1,6 @@
-# PD-T?argmax-alln-codex-08 — Padua global argmax for degrees nine through sixteen
+# PD-T214 (PD-T?argmax-alln-codex-08) — Padua global argmax for degrees nine through sixteen
+
+Final registration: **PD-T214**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind: PD-T.
 Aliases: P6 finite range; global-maximum-only certificates n=9,…,16.
@@ -35,7 +37,7 @@ the box; a cap/pending path prevents acceptance.
 ## Status by part
 
 Overall status: **PROVED** (all eight complete exact covers accepted
-by developer and different-agent replays; required Claude audit PENDING).
+by developer and different-agent replays; required Claude audit PENDING at initial publication).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -135,7 +137,7 @@ accepted them; its receipt is
 It also ran its own four-defect mutation harness on n=12, with receipt
 `../outputs/part3/independent_general_controls.json`. All frozen source
 hashes remained unchanged. The full independent account is in
-`../independent-checks-part3.md`; Claude topic audit remains pending.
+`../independent-checks-part3.md`; Claude topic audit remains pending at initial publication.
 
 ## Sources
 
@@ -175,3 +177,14 @@ subtask. All-degree PD-T099, and quantitative P3–P6 assembly, remain OPEN.
 (runtime model metadata not independently exposed). The orchestrator
 authorized continuous extension through16 and then stopped discovery
 to reserve time for complete evidence replay and documentation.
+
+
+### Current review correction — 2026-11-03 (R1)
+
+The pending-Claude labels above describe the initial publication boundary.
+Claude [audit-01](../audit-01.md) accepted this record at its written
+mathematical or MEASURED scope; [response-review-01](../response-review-01.md)
+accepted the record/provenance response. Those completed reviews are the
+current state. This dated correction changes no statement, epistemic
+status, proof, numerical value, source pin or frozen receipt. All remaining
+mathematical open items retain their stated scopes.

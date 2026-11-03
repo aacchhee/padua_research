@@ -1,4 +1,6 @@
-# PD-T?argmax-alln-gated-codex-14 — Reflection-first uniform corner bound
+# PD-T228 (PD-T?argmax-alln-gated-codex-14) — Reflection-first uniform corner bound
+
+Final registration: **PD-T228**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind: PD-T.
 Aliases: direction2 round2; reflected-cardinal quadratic comparison; average before absolute values; 237000 corner remainder.

@@ -47,3 +47,9 @@ No manuscript has been drafted or accepted. The following is a development brief
 | Brief | Support | Remaining gaps | Readiness |
 |---|---|---|---|
 | [Second proof campaign](topics/padua-proof-attempts-2-20261101/report.md) | PD-T156–197, PD-N072–073 at their exact statuses | Full A3, degree-eight completeness/global, full-square A4, other B1 classes and stability OPEN | Claude audit-01 accepted; minor response complete; PR12 follows merged PR15; no manuscript or novelty claim |
+
+## Padua argmax — accepted scoped results, PR17
+
+| Brief | Question | Supporting results | Remaining gaps | Readiness |
+|---|---|---|---|---|
+| [Padua corner-argmax report](topics/padua-argmax-alln-20261101/report.md) | Global maximizers of the Padua Lebesgue function | PD-T209/181/214 finite2–16 plus inherited3–7; PD-T229 eventual exact corner equality; PD-T211/212/215–228/230 support; PD-T231 finite E-C; scoped PD-N078–083 | PD-T099 OPEN across unknown finite bridge; non-effective entry, center-minimality/all-n slope-energy and novelty/source coverage remain open | Registered scoped results and retained candidate histories; no manuscript or submission claim; only AC merges |

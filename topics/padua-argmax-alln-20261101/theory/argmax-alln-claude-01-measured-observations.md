@@ -1,4 +1,6 @@
-# PD-T?argmax-alln-claude-01 — Float64 observations on the Padua majorant and the O(1) argmax gaps
+# PD-T206 (PD-T?argmax-alln-claude-01) — Float64 observations on the Padua majorant and the O(1) argmax gaps
+
+Final registration: **PD-T206**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind: PD-T.
 Aliases: majorant excess; interior gap ≈ 1.75; O(1)-gap observation.

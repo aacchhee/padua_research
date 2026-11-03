@@ -1,4 +1,6 @@
-# PD-T?argmax-alln-codex-06 — measured pairing screens
+# PD-T213 (PD-T?argmax-alln-codex-06) — measured pairing screens
+
+Final registration: **PD-T213**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind: PD-T (provisional).
 Aliases: IDEA03 screen; O-R diamond ordering; E-C centreward edge ordering.

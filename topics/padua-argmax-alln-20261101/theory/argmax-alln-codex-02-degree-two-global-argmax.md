@@ -1,4 +1,6 @@
-# PD-T?argmax-alln-codex-02 — Exact degree-two Padua global maximum
+# PD-T209 (PD-T?argmax-alln-codex-02) — Exact degree-two Padua global maximum
+
+Final registration: **PD-T209**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind: PD-T.
 Aliases: P0; T5; n=2 global argmax; quadratic Bernstein certificate.
@@ -63,8 +65,7 @@ The JSON contains every cardinal and all 216 rational Bernstein coefficients, no
 The orchestrator reports a different-agent exact execution and independent
 mathematical/code inspection passed. The independently written output
 `../outputs/part3/finite_n2_independent.json` is byte-identical to the
-developer JSON (same SHA256 above). Required Claude topic audit remains
-pending; the independent Astra check supplements it.
+developer JSON (same SHA256 above). Required Claude topic audit remains pending at initial publication; the independent Astra check supplements it.
 
 ## Sources
 
@@ -149,3 +150,14 @@ Claude audit of the exact checker/proof package. PD-T099 for the remaining degre
 ## History
 
 2026-11-01, Codex development subagent, gpt-6.1-sol xhigh: developed the rational four-quadrant proof and executed the self-contained Fraction checker. Rules/source read at `328be35e55143013047ec03a70e9906e82b95353`; no Git operations performed by this subagent.
+
+
+### Current review correction — 2026-11-03 (R1)
+
+The pending-Claude labels above describe the initial publication boundary.
+Claude [audit-01](../audit-01.md) accepted this record at its written
+mathematical or MEASURED scope; [response-review-01](../response-review-01.md)
+accepted the record/provenance response. Those completed reviews are the
+current state. This dated correction changes no statement, epistemic
+status, proof, numerical value, source pin or frozen receipt. All remaining
+mathematical open items retain their stated scopes.

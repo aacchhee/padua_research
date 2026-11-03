@@ -101,3 +101,61 @@ Earlier instructions, tests and candidate history above are preserved. These dat
 - **Claude-05, global-max-only certifier:** retained. The sufficient tensor Bernstein correctness theorem codex-03 and independently replayed degree2/8–16 proofs codex-02/07/08 establish the finite goal in that range. Completed n12 discovery5.176281s, even including its two replay costs, is below10×the inherited fulln7 baseline3523.410076s. The timing kill is not triggered in the tested scope. No larger-degree runtime theorem or degree>=17 run is claimed.
 
 All new labels have provisional topic prefixes; the reservation is not a final-ID assignment. [Report](report.md) and [evidence](COLD_STORAGE.md) (evidence-manifest.json, cold storage) carry proof/measurement limits. Required Claude audit PENDING.
+
+## Final registration — 2026-11-03
+
+The [final candidate register](FINAL_CANDIDATES.md) supplies the canonical
+atomic final-ID dispositions after the parent-approved reservation scan.
+Earlier wording and publication-time audit labels above are historical;
+Claude audit-01 accepted the mathematical scopes, response-review-01
+accepted the prior response, and final preparation has a distinct Astra
+review. No old contract, criterion, result or priority claim is rewritten.
+
+IDEA?argmax-alln-claude-01…05 map respectively to IDEA-316…320.
+The raw-profile subforms T2/T3 are separately registered as IDEA-334/335.
+
+### Claude01 / IDEA-316 close-out
+
+The earlier disposition was **REJECTED: failed (MEASURED), retained as a
+sub-tool**. The accepted positive primitive cusp now proves
+[PD-N079](theory/gated-codex-N01-majorant-coset-obstruction.md): for each
+fixed n>=3, the coset origin is not a local maximum of this primitive.
+The stand-alone coset-maximality mechanism is therefore **REJECTED:
+refuted**. S remains a valid upper bound used with cancellation; physical
+lambda's corner argmax and PD-T099 are not refuted. AC's finalization
+instruction applies this previously assigned close-out in the present
+Codex preparation, with independent Astra review and no further Claude round.
+
+### Claude02 / IDEA-317 close-out
+
+The literal raw-profile/inferred-cutoff planning instantiation is
+**REJECTED: failed in the recorded MEASURED scope**. T2's recorded cell
+convention triggers the>.05 stabilization kill (IDEA-334,
+[PD-N082](theory/prep-codex-N02-t2-profile-test.md)); T3 fails raw angular
+profile stabilization for planning without proving nonconvergence
+(IDEA-335,[PD-N083](theory/prep-codex-N03-t3-profile-test.md)). T4's literal
+inferred projection exceeds60, but inferred constants and unbounded omitted
+errors make it no rigorous threshold. The unrestricted asymptotic strategy
+remains inconclusive, while defect domination without raw-profile convergence
+continues separately as IDEA-326 and its accepted descendants. No strict
+P3/P4 bound, effective reformulation, or all-degree target is rejected.
+
+### Atomic failed raw-profile subforms
+
+- **IDEA-334**, alias `IDEA?argmax-alln-claude-02-T2`: the recorded raw
+  interior O(1) gap-profile form. Scope/criterion:9x9macroscopic positions,
+  specified nearest complementary-cell/phase optimization, n32/64/128;
+  a gap change>.05 from64to128 kills this measured trial.32/81positions
+  trigger, maximum.382304500506. This is variant/subform of IDEA-317,
+  separated from strict interior upper bounds and from any convergence
+  theorem. Canonical measured negative PD-N082; original pre-run criterion,
+  dated operational convention and numerical limitations remain in
+  [T2](attempts/T1-T5.md). See the [full final record](FINAL_CANDIDATES.md#idea-334).
+- **IDEA-335**, alias `IDEA?argmax-alln-claude-02-T3`: the recorded raw
+  angular corner-profile form, n16/64/256 on the prescribed13x13grid.
+  The stabilization diagnosis kills the planning form; the separate1e-6
+  nearzero diagnostic reports no off-origin nearzero sample. Neither is a
+  nonconvergence/divergence theorem. A new normalization would be a separate
+  reformulation, not a pass of the original form. Canonical measured negative
+  PD-N083; original criterion and coordinate convention remain in
+  [T3](attempts/T1-T5.md). See the [full final record](FINAL_CANDIDATES.md#idea-335).

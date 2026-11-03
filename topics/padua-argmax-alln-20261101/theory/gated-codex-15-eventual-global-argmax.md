@@ -1,4 +1,6 @@
-# PD-T?argmax-alln-gated-codex-15 — Eventual global argmax at exactly the two nonnode corners
+# PD-T229 (PD-T?argmax-alln-gated-codex-15) — Eventual global argmax at exactly the two nonnode corners
+
+Final registration: **PD-T229**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind: PD-T.
 Aliases: direction2 round2 assembly; sufficiently-large-degree Padua corner argmax; eventual equality and equality classification.

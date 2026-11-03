@@ -1,4 +1,6 @@
-# PD-T?argmax-alln-gated-codex-17 — Strict whole-cell edge comparisons at n=7 and n=12
+# PD-T231 (PD-T?argmax-alln-gated-codex-17) — Strict whole-cell edge comparisons at n=7 and n=12
+
+Final registration: **PD-T231**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind: PD-T.
 Aliases: direction3 round1 finite E-C; centreward vertical-edge cells;

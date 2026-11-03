@@ -86,3 +86,44 @@ hypotheses deferred” meant all-n uniformity and energy; eventual slopes
 follow the already accepted theorem14. The earlier “after gated05” meant
 candidate05 (reflection first), not theory05's finite projected defect.
 No IDEA disposition or mathematical status changes in this clarification.
+
+## Final registration — 2026-11-03
+
+The [final candidate register](../FINAL_CANDIDATES.md) maps gated-codex01…06
+respectively to IDEA-327…332, retaining all original contracts, aliases,
+kill criteria and dated execution histories. Positive retained two-phase
+lemmas under IDEA-327 are separated from the rejected quadratic subform
+IDEA-333. The original combined record is not relabeled rejected as a whole.
+E-C/E-P remain the separate IDEA-324/325 descendants of historical fallback03,
+not duplicate D3 ideas. Claude audit-01 accepted the mathematical scopes;
+prior pending-audit wording above describes the publication boundary.
+Final preparation receives a distinct Astra review in this pass under AC's
+instruction to finalize without further Claude rounds. No research/priority
+claim or new gated round is added.
+
+### IDEA-333 — purely quadratic local primitive gain
+
+Aliases:`IDEA?argmax-alln-gated-codex-01-quadratic`; pure quadratic local
+envelope; endpoint-cusp repair. Split from the rejected subform in gated01.
+
+- Question/scope: for each fixed n>=3, can a finite C give
+  S_n(alpha,beta)<=a(alpha,beta)Lambda_c+C(alpha^2+beta^2)log(n+1)
+  on a full neighborhood of the odd-coset origin?
+- Mechanism/hypotheses: replace the primitive's local excess by a pure
+  quadratic remainder. Closest retained predecessor is IDEA-327, and
+  PD-T190 already preserves a linear cusp allowance; no novelty claim.
+- Separation/kill: a positive directional linear cusp kills any finite
+  quadratic coefficient, even at fixed n. This differs from merely
+  controlling vanishing excess with a valid linear/cusp allowance.
+- Cheapest decisive test and actual result: the accepted exact cusp formula
+  PD-T220 gives positive coefficient for every fixed n>=3; divide the
+  putative bound by absolute phase and take the inward limit. No new
+  numerical experiment or retrospective preregistration is claimed.
+- Disposition:**REJECTED: refuted**, exactly as
+  [PD-N079](../theory/gated-codex-N01-majorant-coset-obstruction.md).
+  This is the same scoped negative record that supports IDEA-316; no
+  duplicate PD-N is allocated. n2 is excluded. The primitive obstruction
+  is not transferred to the physical Lebesgue function or PD-T099.
+- Literature limits/history: existing predecessor citations/read limits
+  remain; original round3 contract and scoped proof preserve provenance.
+  [Full final registration](../FINAL_CANDIDATES.md#idea-333).

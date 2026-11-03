@@ -1,4 +1,6 @@
-# PD-T?argmax-alln-codex-01 — Pre-registered edge, interior, corner and effectivity measurements
+# PD-T208 (PD-T?argmax-alln-codex-01) — Pre-registered edge, interior, corner and effectivity measurements
+
+Final registration: **PD-T208**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind: PD-T.
 Aliases: part-3 T1–T4; profile kill tests; effectivity projection.
@@ -96,7 +98,7 @@ general-β integral evaluations. The full T1 degree range was **not**
 independently rerun. Coverage, commands, hashes and the no-unresolved-finding
 assessment are recorded in
 [independent-checks-part3.md](../independent-checks-part3.md). These are
-supplementary independent checks; required Claude audit remains pending.
+supplementary independent checks; required Claude audit remains pending at initial publication.
 
 ## Sources
 
@@ -145,3 +147,14 @@ shared registry edits were performed by this subagent.
 coverage for full T2–T4 and T1 n=12, retaining the unrerun full T1 scope and
 pending Claude audit explicitly. No numerical evidence or source code was
 changed, and no mathematical status was upgraded.
+
+
+### Current review correction — 2026-11-03 (R1)
+
+The pending-Claude labels above describe the initial publication boundary.
+Claude [audit-01](../audit-01.md) accepted this record at its written
+mathematical or MEASURED scope; [response-review-01](../response-review-01.md)
+accepted the record/provenance response. Those completed reviews are the
+current state. This dated correction changes no statement, epistemic
+status, proof, numerical value, source pin or frozen receipt. All remaining
+mathematical open items retain their stated scopes.

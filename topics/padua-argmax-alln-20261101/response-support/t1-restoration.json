@@ -99,5 +99,6 @@
     "sha256": "4d7792e69f2c7a7237e03e1343e0c65feddbdeb0a034c04878202b4e37cfe7c6",
     "source": "audit-01.md, measured replays",
     "limitation": "Separate replay timing metadata; its raw bytes were ephemeral. Reconstructed historical developer payload has its own exact identity above."
-  }
+  },
+  "analysis_comparison_platform_note": "The recorded developer comparison found 977 exactly equal leaves plus one evidence-pointer difference in that execution environment. Claude response-review-01 independently found the same 978-leaf structure, with 422 T2 least-squares fit leaves differing by at most 5.2e-14 on NumPy2.5.3/OpenBLAS0.3.34. Exact numerical leaf equality is platform-dependent; no new measurement or claim change."
 }

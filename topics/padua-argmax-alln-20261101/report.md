@@ -1,14 +1,14 @@
 # Part 3 and gated campaign — Padua corner argmax
 
-2026-11-02 · Codex gpt-6.1-sol xhigh. Part3 input328be35e55143013047ec03a70e9906e82b95353; gated input7d308b10d946b607ae0690454f6c0103690775a4. Rule blobs unchanged; distinct Astra checks supplement Claude audit-01, which accepts the mathematics; the current response/storage protocol review remains pending.
-[Draft PR17](https://github.com/aacchhee/padua_research/pull/17). Claude mathematical audit **ACCEPTED at stated scopes**; response/storage protocol followup **PENDING**.
+2026-11-02 · Codex gpt-6.1-sol xhigh. Part3 input328be35e55143013047ec03a70e9906e82b95353; gated input7d308b10d946b607ae0690454f6c0103690775a4. Rule blobs unchanged; distinct Astra checks supplement Claude audit-01, which accepts the mathematics; response/storage protocol review was subsequently accepted by response-review-01 and audit-03; final preparation review is separate.
+[Draft PR17](https://github.com/aacchhee/padua_research/pull/17). Claude mathematical audit **ACCEPTED at stated scopes**; response/storage protocol followup **ACCEPTED at recorded scope**; final preparation review is separate.
 The all-degree PD-T099 target remains **OPEN**.
 
 ## Results
 
-The strongest new result is **eventual exact global corner argmax**: there exists an integer N_* such that every n>=N_* has exactly the two nonnode-corner maximizers. [Gated theorem15](theory/gated-codex-15-eventual-global-argmax.md) combines uniform actual-corner phase localization with a reflection-first local comparison. N_* remains non-effective. The certified finite range stays **every n=2,…,16**; the unknown finite bridge beyond16 leaves PD-T099 OPEN. Claude audit-01 accepts this mathematical scope; response/storage protocol followup is pending.
+The strongest new result is **eventual exact global corner argmax**: there exists an integer N_* such that every n>=N_* has exactly the two nonnode-corner maximizers. [Gated theorem15](theory/gated-codex-15-eventual-global-argmax.md) combines uniform actual-corner phase localization with a reflection-first local comparison. N_* remains non-effective. The certified finite range stays **every n=2,…,16**; the unknown finite bridge beyond16 leaves PD-T099 OPEN. Claude audit-01 accepts this mathematical scope; response/storage protocol followup is accepted at its recorded scope.
 
-The [gated campaign report](gated/REPORT.md) records the sequential gates, retained failures and exact remaining obligations. The [local theorem14](theory/gated-codex-14-reflection-first-corner-bound.md) gives a quadratic-logarithmic remainder and explicit physical radius2^-17/n² under a very coarse sufficient local degree condition. Both compact vertical and horizontal edge-envelope gaps are now proved; [horizontal theorem16](theory/gated-codex-16-horizontal-compact-envelope.md) identifies its primitive exactly with S(s,0), retaining the corrected mode and both parities. Scientific IDs remain provisional.
+The [gated campaign report](gated/REPORT.md) records the sequential gates, retained failures and exact remaining obligations. The [local theorem14](theory/gated-codex-14-reflection-first-corner-bound.md) gives a quadratic-logarithmic remainder and explicit physical radius2^-17/n² under a very coarse sufficient local degree condition. Both compact vertical and horizontal edge-envelope gaps are now proved; [horizontal theorem16](theory/gated-codex-16-horizontal-compact-envelope.md) identifies its primitive exactly with S(s,0), retaining the corrected mode and both parities. Final scientific IDs are registered in the current crosswalk; original provisional identifiers remain aliases.
 
 Each new finite global degree has exact or outward-rounded arithmetic, a written reduction, small evidence and a distinct actual replay. The newer exact edge-cell comparisons are separate finite statements and certify no additional global degree. No degree>=17 global certificate was run.
 
@@ -56,7 +56,7 @@ The original P3–P5 obligations and fallback are retained in [their attempt](at
 
 n12 discovery took5.18s, below IDEA-05's10×n7 baseline threshold (~35234s), so this finite tool is retained in the tested scope. Runtime is a measurement, with no bound for larger degrees. Corrupted-certificate controls reject missing/duplicated leaves, wrong corners, forged bounds/thresholds, altered sources and other malformed inputs. The producer/checker share arithmetic; independent execution and code/proof review are separate from an independently implemented arithmetic kernel.
 
-Together with inherited accepted n3–7, these results give2≤n≤16. For F8, codex07 is proposed as the proof record of existing PD-T181, with its provisional label retained as an alias and no second ID for the same degree-eight statement. The shared row changes only at PR preparation.
+Together with inherited accepted n3–7, these results give2≤n≤16. For F8, codex07 is now the proof record of existing PD-T181, with its provisional label retained as an alias and no second ID for the same degree-eight statement. The shared row is registered in this preparation.
 
 ## Fallback and limits
 
@@ -72,14 +72,14 @@ No counterexample to PD-T099 was found. No planning-test failure is promoted to 
 [Codex audit of the original Claude observations](independent-checks-claude-observations-audit.md) accepts the replay-covered MEASURED claims with C-01 corrected: the strip runs cover separate one-cell-thick offset bands, not cumulative wider adjacent strips. Targeted optimizer-location checks confirm all six central-box runs ended inside the box. Standalone maj.py whole-square scans remain outside independent execution.
 All essential new finite evidence is small and committed; no Windows/cold-storage access is required for these claims. Trusted dependencies include Python integers/Fraction, SymPy for n8's algebraic field and the explicitly cited accepted PD-T101/179.
 
-Scope stays inside this topic and its own results file. [Shared-row/ledger proposals](proposed-record-changes.md) wait for audited PR preparation. No final IDs assigned.
+The original topic-only scope and [shared-row/ledger proposals](proposed-record-changes.md) are historical; final preparation now applies the accepted shared rows and permanent mappings.
 The GitHub connector uses Andrey Chesnokov's account noreply email and exposes no author-email override; the requested gmail email could not be selected. Published history is preserved.
 
-Next is independent Claude protocol review of response-01 and the Codex storage repair in response-02, followed by audited PR preparation. Supplementary checks do not replace the required cross-agent review.
+Claude response-review-01 and audit-03 subsequently accepted those response/storage scopes. AC directed this final preparation to finish in the same pass with a distinct Astra final audit and no further Claude round.
 
 The completed authorized sequence used6/2/1 rounds. [Gated report](gated/REPORT.md) and [ledger](gated/ROUND_LEDGER.md) state each stopping gate and resumption condition; unused quota was not spent automatically. The next numbered audit handoff includes the entire part3 and gated scope; superseded03 was never marked accepted.
 
-## Response/current protocol state — 2026-11-02
+## Historical response/protocol state — 2026-11-02 (superseded by final registration below)
 
 Claude audit-01 accepts every mathematical claim at its stated scope. Response-01 addresses F1–F15 and N1–N14 without new research or scientific checker/certificate changes. The eventual negative-slope premise is already a consequence of theorem14 for each fixed0<a<1/5; all-n uniformity and weighted energy remain OPEN. The active record/preparation fixes and manifest have distinct current identities, while old proof/evidence pins remain frozen.
 
@@ -88,3 +88,40 @@ Audit-02-cold-storage verifies all36historical identities, both exact tool revis
 One refreshed evidence-manifest.json is explicitly retained as the single integrity-manifest exception allowed by handoff07. It covers current small files and source-pinned historical cold blobs separately and its plain check is read-only. The archived older manifest has the same historical pathname but a different immutable version; never restore it over the active record. Response-02 implements that distinction in the storage helper; independent Claude review is pending. Response/cold-storage protocol followup precedes final-ID and shared-registry preparation.
 
 Codex response-02 repairs CS1/CS2/CS3 under AC's selected continuation, with targeted fixture controls and byte-exact real36 scratch checks. Distinct Astra storage rechecks supplement development; they do not replace independent Claude review. Native Windows fails closed; POSIX/WSL and quiescent destinations are required. AC delivery remains PENDING. No mathematical claim or scientific checker changed.
+
+## Final registration — 2026-11-03
+
+AC requires finalization with no further Claude round. Original mathematics,
+response-01 and CS1–CS3 storage repairs retain their accepted scopes under
+audit-01, response-review-01 and audit-03. Current permanent IDs are
+PD-T206–235,N078–083 andIDEA316–335, with existingPD-T181 reused. All37
+scientific records and20canonical candidate formulations are crosswalked;
+PD-T236–245 andLIT460–465 are permanent unused gaps. See [current final
+results](../../results/padua-argmax-alln-20261101.md), [candidates](FINAL_CANDIDATES.md)
+and [finalization record](FINALIZATION.md). Four finite MEASURED homes and
+three scoped measured failures rehome existing observations without new
+measurements or stronger conclusions.
+
+Active scientific checker entry points now refuse optimized Python modes;
+exact source-version compatibility is documented for historical frozen
+certificate pins. Mathematical assertions/arithmetic and frozen evidence
+remain unchanged. The distinct final Astra review covers preparation and
+actual independent replays in this pass. All-degreePD-T099 stays OPEN;
+finite2–16 plus non-effective eventual entry leave an unknown finite bridge.
+Campaign6/2/1 stays closed. No new proof, scan or literature claim is added.
+
+Audit-03 S1 remains a delivery/purge-only open condition while PR18 is
+unmerged: this branch leaves the accepted storage helper unchanged.
+AC delivery is PENDING; no purge or clone-size reduction is claimed.
+
+### Final base integration — 2026-11-03
+
+AC merged independently auditedPR18 during this pass as main1acebf7.
+The final branch integrates that base, preserving all current scientific
+rows and other-topic histories, with exact audited helper/tests retained.
+Destination readback and offline verification resolve S1's implementation
+issue; physical AC delivery/purge remain separate pending work. The old
+unmerged-PR18 statements above are historical and superseded here.
+[Actual integration](prep-support/main-integration.json) and [independent
+integration check](prep-support/integration-audit.md). No further Claude
+round is required by AC's instruction.

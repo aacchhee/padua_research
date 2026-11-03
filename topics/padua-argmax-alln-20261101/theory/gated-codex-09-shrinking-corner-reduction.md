@@ -1,4 +1,6 @@
-# PD-T?argmax-alln-gated-codex-09 — Reduction to four shrinking corner boxes
+# PD-T223 (PD-T?argmax-alln-gated-codex-09) — Reduction to four shrinking corner boxes
+
+Final registration: **PD-T223**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind: PD-T.
 Aliases: direction1 round4 shrinking-corner localization; first four

@@ -1,4 +1,6 @@
-# PD-T?argmax-alln-gated-codex-10 — Finite defect at every noncorner odd coset
+# PD-T224 (PD-T?argmax-alln-gated-codex-10) — Finite defect at every noncorner odd coset
+
+Final registration: **PD-T224**, 2026-11-03. The provisional identifier in the title remains an alias; mathematical statement and historical evidence are unchanged.
 
 ID kind: PD-T.
 Aliases: direction1 round5 middle lattice lines; first-four-cell defect;

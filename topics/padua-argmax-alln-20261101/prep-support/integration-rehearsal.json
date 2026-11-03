@@ -1,0 +1,23 @@
+{
+  "method": "Native git merge-tree on disposable local branches, synthetic fixture commits pointing to complete exact main/PR18 trees and current full candidate PR17 tree. Renames disabled; no published commit identity invented or shared ref/index changed. This is an integration rehearsal, not a merge of either PR.",
+  "main": "2b52b432fe59c9a50aef9deebe5152c5d6874465",
+  "pr18": "36f345f0365ddc15d837492aa6da42a1ce6f9771",
+  "pr17_input": "cdb12257af24ea2542de707b9730f8278d69a168",
+  "candidate_tree": "38a86bac06166d4b2d17d0abfe58e2d96f2c874e",
+  "fixture_repo": "/tmp/padua-pr17-integration-a7q03ddy/repo",
+  "checks": [
+    {
+      "order": "PR18 then PR17",
+      "returncode": 1,
+      "stdout": "096e3f073636b00861edf576390fda60ef5c19f8\n100644 06a0b3c3e263f0325d59b6eaa127c871bbdfc388 1\tRESULTS.md\n100644 8482065428a50a615552e3f84401a8447ae11dcd 2\tRESULTS.md\n100644 bbdd7bb91c84112a2497f8e5811bc1c02b0fc134 3\tRESULTS.md\n100644 f07cf016184deef2a98ce1ddbe8be1bb0f9ccdab 2\ttools/cold_storage.py\n100644 ba5114ac585de8b848e72f16b4ed00c501dd7f0b 3\ttools/cold_storage.py\n100644 ab28cb39542f2370bac1ea75c075142781e85977 2\ttools/test_cold_storage.py\n100644 2b10f9fb355b7f46de7af0c9f7223eb6eb087ff7 3\ttools/test_cold_storage.py\n100644 21a699dc6d4e12693ca5e811cdd741503f9a8782 1\ttopics/padua-batch-20261031/ALLOCATIONS.md\n100644 1ff65e92943751bef12e8c3ac40d3d35d9a29fce 2\ttopics/padua-batch-20261031/ALLOCATIONS.md\n100644 abc04941a57fd99acc994fa0af95fc3f244acbc8 3\ttopics/padua-batch-20261031/ALLOCATIONS.md\n\nAuto-merging ID_CROSSWALK.md\nAuto-merging PROOF_STATUS.md\nAuto-merging RESULTS.md\nCONFLICT (content): Merge conflict in RESULTS.md\nAuto-merging tools/cold_storage.py\nCONFLICT (add/add): Merge conflict in tools/cold_storage.py\nAuto-merging tools/test_cold_storage.py\nCONFLICT (add/add): Merge conflict in tools/test_cold_storage.py\nAuto-merging topics/padua-batch-20261031/ALLOCATIONS.md\nCONFLICT (content): Merge conflict in topics/padua-batch-20261031/ALLOCATIONS.md\n",
+      "stderr": ""
+    },
+    {
+      "order": "PR17 then PR18",
+      "returncode": 1,
+      "stdout": "d3471a12120ff143a8d92c8a754273400cf75d8e\n100644 06a0b3c3e263f0325d59b6eaa127c871bbdfc388 1\tRESULTS.md\n100644 bbdd7bb91c84112a2497f8e5811bc1c02b0fc134 2\tRESULTS.md\n100644 8482065428a50a615552e3f84401a8447ae11dcd 3\tRESULTS.md\n100644 ba5114ac585de8b848e72f16b4ed00c501dd7f0b 2\ttools/cold_storage.py\n100644 f07cf016184deef2a98ce1ddbe8be1bb0f9ccdab 3\ttools/cold_storage.py\n100644 2b10f9fb355b7f46de7af0c9f7223eb6eb087ff7 2\ttools/test_cold_storage.py\n100644 ab28cb39542f2370bac1ea75c075142781e85977 3\ttools/test_cold_storage.py\n100644 21a699dc6d4e12693ca5e811cdd741503f9a8782 1\ttopics/padua-batch-20261031/ALLOCATIONS.md\n100644 abc04941a57fd99acc994fa0af95fc3f244acbc8 2\ttopics/padua-batch-20261031/ALLOCATIONS.md\n100644 1ff65e92943751bef12e8c3ac40d3d35d9a29fce 3\ttopics/padua-batch-20261031/ALLOCATIONS.md\n\nAuto-merging ID_CROSSWALK.md\nAuto-merging PROOF_STATUS.md\nAuto-merging RESULTS.md\nCONFLICT (content): Merge conflict in RESULTS.md\nAuto-merging tools/cold_storage.py\nCONFLICT (add/add): Merge conflict in tools/cold_storage.py\nAuto-merging tools/test_cold_storage.py\nCONFLICT (add/add): Merge conflict in tools/test_cold_storage.py\nAuto-merging topics/padua-batch-20261031/ALLOCATIONS.md\nCONFLICT (content): Merge conflict in topics/padua-batch-20261031/ALLOCATIONS.md\n",
+      "stderr": ""
+    }
+  ],
+  "limits": "PR18 remains unmerged and its readback/offline changes await its separate re-audit. Conflicts are integration conditions, not silently resolved by taking unaccepted code. Real main remains unchanged."
+}

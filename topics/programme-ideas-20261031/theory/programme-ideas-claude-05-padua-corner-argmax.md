@@ -62,3 +62,25 @@ Dated finite-case update after accepted Part2 Claude audit-01: separate PD-T162,
 - 2026-11-01, decisive agent (claude-fable-5-1, xhigh): T1 run; Verdict said "true for all 75 degrees tested up to 200".
 - 2026-11-01, Codex audit-01 A9.3: replace by "no counterexample found at 75 tested degrees on finite meshes"; continuous/global statement remains OPEN.
 - 2026-11-01, response-01 (claude-opus-5-5, effort not exposed): this record; source wording corrected.
+
+## 2026-11-03 registered split progress — original target remains OPEN
+
+The original statement above is preserved. Split into parameter results:
+**PD-T209** degree2, inherited **PD-T162/166/169/174/177** degrees3–7,
+existing **PD-T181** degree8 (new proof record in PR17), **PD-T214**
+degrees9–16, and **PD-T229** eventual exact two-nonnode-corner argmax for
+all n>=N_* with a non-effective existential N_*.
+Finite2–16 and eventualn>=N_* leave an unknown finite bridge17<=n<N_*.
+Therefore the original all-degree PD-T099 remains **OPEN**; no PARTIAL
+status is inferred from an unknown threshold. Supporting compact envelopes,
+phase/localization and local-bound records PD-T211/212/215–228/230 support
+the route but are not themselves parameter cases that close the target.
+
+Current canonical proof/status inventory and exact scopes:
+[PR17 report](../../padua-argmax-alln-20261101/report.md),
+[finite n2](../../padua-argmax-alln-20261101/theory/argmax-alln-codex-02-degree-two-global-argmax.md),
+[n8](../../padua-argmax-alln-20261101/theory/argmax-alln-codex-07-degree-eight-global-argmax.md),
+[n9–16](../../padua-argmax-alln-20261101/theory/argmax-alln-codex-08-degree-nine-through-sixteen-global-argmax.md),
+[eventual theorem](../../padua-argmax-alln-20261101/theory/gated-codex-15-eventual-global-argmax.md).
+Claude audit-01 and response-review-01 accept these scientific scopes;
+this registration introduces no new proof or stronger quantified claim.
