@@ -38,8 +38,8 @@ Exact g_v/g_h definitions in PD-T211/212, and K as defined directly in
 
 ## Status by part
 
-Overall status: **PROVED**, analytical. Independent reconstruction and
-required Claude audit pending.
+Overall status: **PROVED**, analytical. Distinct supplementary
+reconstruction completed; required Claude audit pending.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -56,7 +56,9 @@ No elliptic-integral asymptotic is imported from a source.
 
 No numerical calculation is a proof premise. No external theorem used
 beyond elementary integration and the reciprocal-square identity proved
-in t2-01. Reproducible supplementary numerical checks are a T3 output.
+in t2-01. Distinct Astra supplementary reconstruction accepted the K
+estimate, logarithmic moment, common-band bound and endpoint interpretation;
+see [independent-checks-analytic.md](../independent-checks-analytic.md).
 
 ## Proof
 
@@ -156,7 +158,7 @@ macroscopic integral. No interchange with n->infinity is asserted.
 
 ## Open items
 
-Distinct supplementary reconstruction and required cross-family audit.
+Required cross-family audit.
 
 ## History
 

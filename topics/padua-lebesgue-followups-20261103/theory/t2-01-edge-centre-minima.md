@@ -68,8 +68,8 @@ monotonicity conjecture or formal audit is a premise.
 
 ## Status by part
 
-Overall status: **PROVED**, by the written analytical proof; distinct
-supplementary reconstruction and required Claude audit pending.
+Overall status: **PROVED**, by the written analytical proof. Distinct
+supplementary reconstruction completed; required Claude audit pending.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -89,8 +89,11 @@ read as standalone integral statements independent of finite-degree limits.
 
 The development scratch double-quadrature diagnostic was executed at
 beta=pi/2, pi/3, pi/4, pi/10 and .01. It suggested the formulas but supplies
-no proof premise. Frozen reproducible checks and outputs will be linked
-from T3. Independent reconstruction by a distinct agent is pending.
+no proof premise. Frozen reproducible exact-series and outward-quadrature
+commands are in [verification](../evidence/t3-verification.md). Distinct
+Astra supplementary reconstruction accepted the identities, factors,
+monotonicity and exact horizontal central value; see
+[independent-checks-analytic.md](../independent-checks-analytic.md).
 
 ## Sources
 
@@ -248,8 +251,9 @@ not consequences asserted here.
 
 ## Open items
 
-Distinct supplementary reconstruction, reproducible T3 evaluations and
-the required cross-family audit. No mathematical minimum case is left open.
+The required cross-family audit. No mathematical minimum case is left open.
+Supplementary reconstruction and reproducible T3 evaluations are completed
+at their explicitly recorded scopes.
 
 ## History
 

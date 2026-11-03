@@ -76,3 +76,28 @@ effective degree threshold or PD-T099 finite bridge is pursued.
 
 The records retain every route considered after this point, including
 failed, equivalent, deferred or abandoned routes, with scoped reasons.
+
+## Final dispositions and coverage reconciliation
+
+The pre-run gate read the inherited mathematical records in full, the
+registry entries and the P1/P2 attempt. During the final coverage check,
+the IDEA-303–305 registration paragraphs, the full original T-A4a attempt,
+programme IDEA-206's full detailed record and the full shortlist
+registration paragraphs in FINAL_CANDIDATES were also inspected. That
+later reading is a coverage completion, not a retrospective claim that
+every linked source body was read before derivation. It introduced no
+new mechanism or scientific premise. No predecessor already states the
+position comparison or the arbitrary-angle geometric series proved here;
+the bounded-search variant verdict is unchanged, with no priority claim.
+
+| Candidate / route | Final disposition and exact reason |
+|---|---|
+| T2 exact-switch integration/comparison | retained; both unique centre minima, strict monotonicity and endpoint behaviour proved in t2-01/02 |
+| T3 arbitrary-position evaluation | retained; 1D formulas and geometric series/tails proved in t3-01 |
+| PD-T188 unshifted central alternating Taylor route | equivalent existing central check, not pursued as a new mechanism; its slow tail is not called rapid |
+| Complementary K expansion as a single global numerical chart | valid but cost can degenerate near the centre; retained as endpoint chart and paired with a centre expansion |
+| Heavy interval mesh for centre-minimality | unused after exact proof; no failure or PD-N claimed |
+
+Detailed outcomes, finite evidence and exact limits are in attempts/T2.md,
+attempts/T3.md and evidence/t3-verification.md. All scientific development
+stopped at the completed T2/T3 done criteria; required Claude audit remains.

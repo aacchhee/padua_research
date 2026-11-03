@@ -12,7 +12,7 @@ Four bounded targets, specified in [handoff 01](../topics/padua-lebesgue-followu
 - **T4:** the constant term c (κ = c − c₁²) of the corner expansion (PD-T098).
 
 Fresh T1 producer and boundary runs are in progress; exact counts remain OPEN.
-T3 general-position series/evaluation is in development.
+T2–T4 core analytic targets are complete; required Claude audit is pending.
 
 - **PROVED, supplementary check accepted; Claude audit pending:** both limiting
   edge defects have unique centre minima, vertical `g` and horizontal exactly
@@ -20,6 +20,10 @@ T3 general-position series/evaluation is in development.
 - **PROVED, supplementary check accepted; Claude audit pending:** common
   logarithmic endpoint expansion with explicit errors.
   [Theory](../topics/padua-lebesgue-followups-20261103/theory/t2-02-common-endpoint-expansion.md).
+- **PROVED, supplementary check accepted; Claude audit pending:** general-position
+  geometric series with rigorous tails, exact-Fraction enclosures and direct
+  outward quadrature independently rerun at five positions.
+  [Theory](../topics/padua-lebesgue-followups-20261103/theory/t3-01-general-position-series.md).
 - **PROVED, supplementary check accepted; Claude audit pending:** parity-independent
   corner constant `c`, with an explicit vanishing remainder and independently
   reproduced enclosure
