@@ -1,6 +1,6 @@
 # Handoff 01 — padua-argmax-effective-20261103 — effective all-degree Padua argmax (adventurous campaign)
 
-- Status: open
+- Status: superseded by 02: AC added the requirement that large-n certification use a C/FLINT port run in the sandbox (2026-11-03)
 - Previous handoff: none
 
 - Next agent / model / effort: Codex, **gpt-6-astra at ultra** for the orchestrator and all mathematics. This follows AC's explicit instruction (2026-11-03: "This looks like a topic that warrants astra with ultra reasoning"), which overrides the WORKFLOW allocation table for this campaign; record that justification in LOG. Use gpt-6.1-sol medium for code, ports, timing and replays. Use a separate gpt-6-astra high instance for supplementary independent checks.
