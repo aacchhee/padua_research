@@ -1,0 +1,87 @@
+{
+ "baseline": {
+  "accepted": true,
+  "as_expected": true
+ },
+ "valid_deeper_partition_accepted": {
+  "accepted": true,
+  "as_expected": true
+ },
+ "deeper_partition_missing_sibling": {
+  "accepted": false,
+  "as_expected": true
+ },
+ "overlapping_leaf_ancestor_and_descendant": {
+  "accepted": false,
+  "as_expected": true
+ },
+ "root_only_leaf": {
+  "accepted": false,
+  "as_expected": true
+ },
+ "swap_pair_order": {
+  "accepted": false,
+  "as_expected": true
+ },
+ "swap_edges_n12": {
+  "accepted": false,
+  "as_expected": true
+ },
+ "extra_pair_appended": {
+  "accepted": false,
+  "as_expected": true
+ },
+ "leaf_extra_key": {
+  "accepted": false,
+  "as_expected": true
+ },
+ "pending_nonempty": {
+  "accepted": false,
+  "as_expected": true
+ },
+ "target_cosine_forged": {
+  "accepted": false,
+  "as_expected": true
+ },
+ "path_too_long": {
+  "accepted": false,
+  "as_expected": true
+ },
+ "nonreversed_true_witness_appended": {
+  "accepted": false,
+  "as_expected": true
+ },
+ "phase_noncanonical_repr": {
+  "accepted": false,
+  "as_expected": true
+ },
+ "precision_changed": {
+  "accepted": false,
+  "as_expected": true
+ },
+ "format_changed": {
+  "accepted": false,
+  "as_expected": true
+ },
+ "checkpoint_changed": {
+  "accepted": false,
+  "as_expected": true
+ },
+ "prereg_hash_changed_ACCEPTED_informational_only": {
+  "accepted": true,
+  "as_expected": true
+ },
+ "cpu_seconds_changed_accepted": {
+  "accepted": true,
+  "as_expected": true
+ },
+ "only_designated_witness_kept": {
+  "accepted": true,
+  "as_expected": true
+ },
+ "extra_key_in_pair_accepted": {
+  "accepted": true,
+  "as_expected": true
+ }
+}
+ALL_AS_EXPECTED True

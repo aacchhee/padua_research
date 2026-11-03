@@ -1,0 +1,39 @@
+{
+ "table": {
+  "f_grad": 1152,
+  "f_hess": 55296,
+  "g_val": 24,
+  "g_grad": 216,
+  "g_hess": 1080
+ },
+ "path_coefficient_rho_le_1": 58560.0,
+ "path_coefficient_rho_le_1_64_effective": 55537.26634259043,
+ "regular": 236000,
+ "near_rho2H": 2688,
+ "near_rho2_logm": 5376,
+ "near_lin_rhoH_over_n": 128,
+ "far_rho32": 2048,
+ "far_lin": 512,
+ "linear_total": 640,
+ "collision_over_log3": 9.102392266268373,
+ "quadratic_total": 241385.10239226627,
+ "below_242000": true,
+ "below_240000": false,
+ "B_family": {
+  "Dprime": 4.53125,
+  "Dprime_claim": 4.53125,
+  "Dsecond": 6.4921875,
+  "Dsecond_claim": 6.4921875,
+  "F0_lower": 0.13509491152311703,
+  "F_lower_after_grad": 0.08821991152311703,
+  "claim_lower": 0.06754745576155852,
+  "V2_at_n2": 11.9375
+ },
+ "sqrt_rho_log": 0.6448603854199589,
+ "scale": {
+  "first_term": 1.4843406974976e-23,
+  "d_delta": 1.8584098507986636e-05,
+  "rho_delta": 0.019030116872178315,
+  "W_check": true
+ }
+}

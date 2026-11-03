@@ -1,0 +1,10 @@
+check_evidence rc=0 secs=.108862403
+n2 rc=0 secs=.067773337
+pairing rc=0 secs=3.426792504
+d2_symbolic rc=0 secs=1.037163926
+d3_generate rc=0 secs=6.912406462
+d3_check rc=0 secs=8.007441976
+d3_check_regen rc=0 secs=7.384454990
+n12 rc=0 secs=5.889140854
+n8 rc=0 secs=47.076860371
+ALLDONE

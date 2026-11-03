@@ -1,0 +1,85 @@
+{
+  "input_head": "b8fbb5c5be374bf658d2970681c7cac0fb40d737",
+  "method": "GitHub connector GET commits?sha=HEAD&path=PATH&per_page=100; oldest entry checked against commit file status=added. Not a local full-history git-log run.",
+  "entries": [
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/PROTOCOL.md",
+      "first_published_commit": "2dde541f1e5af239cae6e93e4438b9be89d15d87",
+      "path_history_entries": 1,
+      "added_status_verified": true
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d1/r02-contract.md",
+      "first_published_commit": "98b56222def2dd4d9ec84bffa7f6564331a38f80",
+      "path_history_entries": 1,
+      "added_status_verified": true
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d1/r03-contract.md",
+      "first_published_commit": "68edd27e66afcd8c38aa12f7bea4bbc74a99fee2",
+      "path_history_entries": 1,
+      "added_status_verified": true
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d1/r03-next-geometry.md",
+      "first_published_commit": "68edd27e66afcd8c38aa12f7bea4bbc74a99fee2",
+      "path_history_entries": 1,
+      "added_status_verified": true
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d1/r04-contract.md",
+      "first_published_commit": "68edd27e66afcd8c38aa12f7bea4bbc74a99fee2",
+      "path_history_entries": 1,
+      "added_status_verified": true
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d1/r04-next-lattice.md",
+      "first_published_commit": "aa1883f2fd9a837bb931ce804cb4b210c7475886",
+      "path_history_entries": 1,
+      "added_status_verified": true
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d1/r05-contract.md",
+      "first_published_commit": "aa1883f2fd9a837bb931ce804cb4b210c7475886",
+      "path_history_entries": 1,
+      "added_status_verified": true
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d1/r05-next-row-sum.md",
+      "first_published_commit": "aa1883f2fd9a837bb931ce804cb4b210c7475886",
+      "path_history_entries": 1,
+      "added_status_verified": true
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d1/r06-contract.md",
+      "first_published_commit": "aa1883f2fd9a837bb931ce804cb4b210c7475886",
+      "path_history_entries": 1,
+      "added_status_verified": true
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d2/r01-contract.md",
+      "first_published_commit": "fdee6511195632dcf368865edef87b31be40f95c",
+      "path_history_entries": 1,
+      "added_status_verified": true
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d2/r01-next-reflection.md",
+      "first_published_commit": "fdee6511195632dcf368865edef87b31be40f95c",
+      "path_history_entries": 1,
+      "added_status_verified": true
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d2/r02-contract.md",
+      "first_published_commit": "fdee6511195632dcf368865edef87b31be40f95c",
+      "path_history_entries": 1,
+      "added_status_verified": true
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/gated/d3/r01-contract.md",
+      "first_published_commit": "71f49e5785c1ec7475e02dce887911c0e4466696",
+      "path_history_entries": 1,
+      "added_status_verified": true
+    }
+  ],
+  "timing_limit": "Publication order does not prove pre-execution timing for contracts committed with results."
+}

@@ -1,0 +1,64 @@
+{
+  "format": "padua-pr17-repository-budget-v1",
+  "base_main": "1acebf7af47885654dfd1ffe0b9c8cda19c8f2a6",
+  "method": "Complete recursive GitHub base tree sizes plus exact current topic/changed file bytes; no dependence on all blob payloads being locally materialized. Conservatively counts every non-record extension as data.",
+  "head_blob_count": 2912,
+  "data_files": 1128,
+  "data_bytes": 4317198,
+  "ordinary_data_bytes": 4012640,
+  "largest_ordinary_data_bytes": 16344,
+  "ordinary_data_files_at_or_above_16384": [],
+  "metadata_exceptions": [
+    {
+      "path": "topics/bivariate-lanczos-20261031/cold-storage.json",
+      "bytes": 28001
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/cold-storage-check.json",
+      "bytes": 181
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/cold-storage.json",
+      "bytes": 6954
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/cold-storage.json",
+      "bytes": 15743
+    },
+    {
+      "path": "topics/mz-constants/cold-storage.json",
+      "bytes": 6500
+    },
+    {
+      "path": "topics/padua-lanczos-drift-20261101/cold-storage.json",
+      "bytes": 17949
+    },
+    {
+      "path": "topics/padua-mz-2d-20261101/cold-storage.json",
+      "bytes": 8769
+    },
+    {
+      "path": "topics/padua-proof-attempts-2-20261101/cold-storage.json",
+      "bytes": 53124
+    },
+    {
+      "path": "topics/programme-ideas-20261031/cold-storage.json",
+      "bytes": 14490
+    },
+    {
+      "path": "tracks/mz-constants/cold-storage.json",
+      "bytes": 6169
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/evidence-manifest.json",
+      "bytes": 98728
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/cold-storage.json",
+      "bytes": 47950
+    }
+  ],
+  "limit_bytes_exclusive": 5000000,
+  "under_limit": true,
+  "scope": "Snapshot at this execution boundary; final manifest/receipt and audit files can change these exact totals; remote final tree is checked again before readiness."
+}

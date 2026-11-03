@@ -1,0 +1,144 @@
+{
+  "accepted": true,
+  "source_commit": "1cecd68ac0a64b01ed7b2d262b6263a955a7d4d7",
+  "archival_entries": 36,
+  "archival_bytes": 2526191,
+  "archival_identity_tuples_unchanged": true,
+  "full_source_byte_comparisons": 36,
+  "active_version_preserved": true,
+  "idempotent_payload_and_receipt_mtimes_unchanged": true,
+  "unrelated_scratch_file_preserved": true,
+  "repo_payload_writes": 0,
+  "tool_sha256": "d12fc95dc1fe6145ad0f82b225104cee568bab5586bcd247fe445c671f123bd5",
+  "runner_sha256": "18a20d44cca256ef0545f134d93b77454ae4bcf7d3edfbf87012cce175256875",
+  "manifest_sha256": "88871c2064aa300bcdbcfae93e7b9de528daf3d60241d608454d8ea420216908",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "commands": [
+    {
+      "arguments": [
+        "verify",
+        "padua-argmax-alln-20261101"
+      ],
+      "returncode": 0,
+      "stdout_sha256": "2ae3e590b25de9b53f0eceabd7191f974200bf464d0bce3de1139b91727f440b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "arguments": [
+        "verify",
+        "topics/padua-argmax-alln-20261101"
+      ],
+      "returncode": 0,
+      "stdout_sha256": "446a3b208c27ded1a2309868f298aa660381e7f143ac73f62ccd272c083bfad4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "arguments": [
+        "restore",
+        "padua-argmax-alln-20261101"
+      ],
+      "returncode": 1,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "dfabef4a055f2cb09343622a7e5baa3a3678eb834288b2c59af78742daa6d4a6"
+    },
+    {
+      "arguments": [
+        "restore",
+        "padua-argmax-alln-20261101",
+        "--dest",
+        "/tmp/padua-storage-real-check-jlxc3096/restored"
+      ],
+      "returncode": 0,
+      "stdout_sha256": "c50766d730876656098cb6be263b8cdc2a72a1e510aad41dabea2889cd38b955",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "arguments": [
+        "verify",
+        "padua-argmax-alln-20261101",
+        "--dest",
+        "/tmp/padua-storage-real-check-jlxc3096/restored"
+      ],
+      "returncode": 0,
+      "stdout_sha256": "3f4b82a86a01afdef605fd82b6f2cbcfa1f328f7c2eb2db9df9a12aa89c4974c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "arguments": [
+        "restore",
+        "padua-argmax-alln-20261101",
+        "--dest",
+        "/tmp/padua-storage-real-check-jlxc3096/restored"
+      ],
+      "returncode": 0,
+      "stdout_sha256": "c50766d730876656098cb6be263b8cdc2a72a1e510aad41dabea2889cd38b955",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "arguments": [
+        "clean",
+        "padua-argmax-alln-20261101",
+        "--dest",
+        "/tmp/padua-storage-real-check-jlxc3096/restored"
+      ],
+      "returncode": 0,
+      "stdout_sha256": "f4f519cfb230058f48c8a996d2c8cd98538784415e1d54352ffeb90be3c87312",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "arguments": [
+        "verify",
+        "padua-argmax-alln-20261101",
+        "--dest",
+        "/tmp/padua-storage-real-check-jlxc3096/restored"
+      ],
+      "returncode": 0,
+      "stdout_sha256": "662b64de72d4eb2f36b3ed122eaf7671e06b64959527dff911108a20c59b6391",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "arguments": [
+        "export",
+        "padua-argmax-alln-20261101",
+        "--dest",
+        "/tmp/padua-storage-real-check-jlxc3096/export"
+      ],
+      "returncode": 0,
+      "stdout_sha256": "d782b5bad5c079ee9aa7587ce74d58808cd31cd9099e7526072c10876198cb2e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "arguments": [
+        "verify",
+        "padua-argmax-alln-20261101",
+        "--dest",
+        "/tmp/padua-storage-real-check-jlxc3096/export/padua-argmax-alln-20261101"
+      ],
+      "returncode": 0,
+      "stdout_sha256": "3f4b82a86a01afdef605fd82b6f2cbcfa1f328f7c2eb2db9df9a12aa89c4974c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "arguments": [
+        "export",
+        "padua-argmax-alln-20261101",
+        "--dest",
+        "/tmp/padua-storage-real-check-jlxc3096/export"
+      ],
+      "returncode": 0,
+      "stdout_sha256": "d782b5bad5c079ee9aa7587ce74d58808cd31cd9099e7526072c10876198cb2e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "arguments": [
+        "verify",
+        "padua-argmax-alln-20261101"
+      ],
+      "returncode": 0,
+      "stdout_sha256": "2ae3e590b25de9b53f0eceabd7191f974200bf464d0bce3de1139b91727f440b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "delivery_to_AC_storage": "PENDING; exports here were scratch fixtures only"
+}

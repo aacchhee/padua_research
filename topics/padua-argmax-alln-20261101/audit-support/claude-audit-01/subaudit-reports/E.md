@@ -1,0 +1,21 @@
+# Worker E (claim 9: gated17 / N02) — returned report, saved by orchestrator
+
+Verdicts: theory17 ACCEPT WITH MINOR FINDINGS; N02 ACCEPT WITH MINOR FINDINGS. No CRITICAL/MAJOR.
+
+F1 MINOR provenance: certificate preregistration_note_sha256 03e877… equals sha256 of the first 86 lines (5115 bytes, ending "Required Claude audit remains pending.\n") of gated/d3/r01-finite.md (`head -n 86 … | sha256sum`). The post-run edit only appended lines 87–208 (completion record); no scope/stop limit/phase grid/threshold/acceptance/kill text changed after the final producer run. Disclosed at r01-finite.md:163-166 without the prefix rule. Limits: note first committed in c173fbf together with results, so hash attests only content at final frozen run; earlier development-only runs (r01-finite.md:141-144) and the (-1)^j typo fix rest on worker word; checker does not verify this field. Public preregistration r01-contract.md committed in 71f49e5, unchanged (sha fe75aa…), fixes degrees, 2/8 pairs, nine phases, -1e-6 threshold, two-degree cap. Response: document prefix relation/command and that note was not committed before execution.
+F2 NOTE: all checker predicates are `assert`; under `python -O` a forged certificate (no source cover, no witnesses, producer_accepted=True) is accepted rc0 (demonstrated). Recorded runs unaffected. Fix: explicit raises or refuse when not __debug__.
+F3 NOTE: r01-finite.md:22-24 says limits "per pair"; code uses one global 180 s deadline and leaf+stack cap. Immaterial.
+F4 NOTE: certificate source_checkpoint 3aebb29 lacks the D3 sources (first in c173fbf); identity correct by SHA-256; part3 modules byte-identical at 3aebb29.
+F5 NOTE: theorem17 depends on theory03 constructor lemma; producer/checker share kernel (disclosed); worker's independent kernel removes the risk at n=7,12.
+F6 NOTE: theory17:123 "interval roots" unclear; at even n j=0 and j=n rows bit-identical by symmetry, edge sign determined by code (d3_edge_common.py:58) and independent computation.
+
+Reconstruction: admissible centres 2<=k<=m-2, j+k odd; pairs k->k±2 strictly toward m/2: n7 j7 2->4, 6->4; n7 j0 none (equidistant 3,5); n12 both edges 3->5,5->7,9->7,11->9; total 10 matches certificate order. Bernstein eq.(2) verified symbolically (sympy) for i<=n at n=7,12; upper bound via nonnegative partition of unity; de Casteljau halves cover. Rounding outward on source (upper) and target (lower) sides; strict integer test at 2^192. Checker recomputes all values, rebuilds pair list, mandatory designated witness, rejects duplicates, prefix-free complete cover with depth cap 24. 21 extra probes behaved as expected.
+
+Independent kernel (own code): Chebyshev–Vandermonde with exact integer intervals at 2^160 via mpmath.iv; residual ||I-RV||<=1.3e-46; cardinal coefficients enclosed ~2e-46. PD-T101 corrected coefficients (h_{n0}=1) inside enclosures at n7,12 (max diff 3e-49); uncorrected h=2 excluded.
+N02: lambda12(1,cos 9pi/26)=4.854182190894031…, lambda12(1,0)=4.814805524149774…; certified lower bound of difference 0.0393766667442563 > 39/1000; also via x=-1 edge. Developer G reproduced: 1000G − 39·2^192 = 2364375474033594325937729872339945131431749557481721208056 > 0.
+Theorem17 independent rigorous recertification via second-order angle Taylor bounds on M subintervals: all 10 pass (M=16; 5->7 needs M=32). Margins n7 0.297; n12 3->5 0.173, 5->7 0.0189, 9->7 0.0156, 11->9 0.327 (both edges).
+MEASURED dense sampling: all margins positive; developer Bernstein bounds exceed measured sup by 0.055–0.112. E-P float screen reproduced: 90 samples, same 8 reversals, max diff 2.6e-14.
+
+Replays (orchestrator-run): committed cert/checker SHAs match; check accepts with 17/17 controls rejected; regenerated cert differs only in cpu/wall seconds and prereg hash; E-P screen byte-identical (3215523e…).
+Worker outputs: audit01/E/ (compare_certs.out e2f876b5…, n02_check.json dd5c7f01…, t17_check.json df00ae4f…, ep_screen_cross fcd3defd…, extra_controls 539ec058…, bernstein_formula_check 1e4c919b…, forged_check_O.json fa6aaf01…; scripts indep_padua.py a852cd0e…, n02_check.py 236f098a…, t17_check.py d808098b…).
+Residual: trusts mpmath.iv enclosures, Python ints, V^-1 bound; theory03 beyond constructor and PD-T101 proof not audited by this worker; timing of D3 runs vs 71f49e5 unestablishable from git.

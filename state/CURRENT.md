@@ -70,3 +70,19 @@ The second proof campaign is accepted by Claude audit-01 with minor findings dis
 ## Repository cold-storage cleanup — finalized 2026-11-03
 
 [PR #18](https://github.com/aacchhee/padua_research/pull/18) is ready for AC's merge decision after [Codex audit-02](../topics/cold-storage-20261102/audit-02.md) accepts response-01. All 176 archived files (15,846,089 bytes) retain verified identities; guarded retrieval/export and offline archive verification pass 23 regression tests and 8 independent controls. No science, statuses or IDs change. Assigned repository work is complete; no further agent round. Physical archive delivery/history purge remain separate, and only AC merges. Later PR #17 integration must retain PR18's audited shared tool/test files; the conflict resolution was rehearsed. [Final results](../results/cold-storage-20261102.md).
+
+## Padua argmax — PR17 final registration, 2026-11-03
+
+[Current results](../results/padua-argmax-alln-20261101.md): PD-T229 proves
+eventual exact two-corner global argmax with non-effectiveN_*; finite2–16
+is proved byPD-T209/181/214 plus inherited3–7. PD-T181's earlier OPEN
+count-based proof attempt is historical; its identical global statement
+is now PROVED by the new independent Bernstein cover. PD-T180/184 counts
+remain OPEN. All-degreePD-T099 stays OPEN across unknown17<=n<N_*;
+center-minimality, effective entry and all-n slope/energy remain OPEN.
+Permanent registration:T206–235,N078–083,IDEA316–335; no new range.
+Campaign6/2/1 is closed and all failed variants retained. Preparation and
+checker hardening are completed in this pass under AC's no-further-Claude
+direction, with separate Astra final review; no later research run is
+scheduled. AC delivery/purge remain separate pending work, not a proof
+obligation for these committed finite certificates. Only AC merges.

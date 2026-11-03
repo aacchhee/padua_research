@@ -1,0 +1,143 @@
+{
+  "status": "MEASURED",
+  "interpretation_date": "2026-11-01",
+  "T2": {
+    "criterion": "abs(gap128-gap64)>.05 at any fixed macro position",
+    "verdict": "KILL under documented complementary-cell convention",
+    "exceedances": 32,
+    "max_change": {
+      "a": 5,
+      "b": 5,
+      "change_64_128": 0.38230450050563114
+    }
+  },
+  "T3": {
+    "verdict": "KILL measured n-independent raw angular profile; convergence itself not decidable from three degrees",
+    "selected_rows": [
+      {
+        "xi": 0,
+        "eta": 0,
+        "lambda_minus_corner": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "xi": 0.25,
+        "eta": 0,
+        "lambda_minus_corner": [
+          -0.7617881467967891,
+          -1.4453288133153865,
+          -2.35788409791731
+        ]
+      },
+      {
+        "xi": 0.5,
+        "eta": 0.5,
+        "lambda_minus_corner": [
+          -5.176100972682537,
+          -9.707866456204172,
+          -15.912499857327827
+        ]
+      },
+      {
+        "xi": 1,
+        "eta": 1,
+        "lambda_minus_corner": [
+          -2.550325109264919,
+          -3.615806036138345,
+          -4.738611617770342
+        ]
+      },
+      {
+        "xi": 2,
+        "eta": 2,
+        "lambda_minus_corner": [
+          -2.503725687221814,
+          -3.6314152648063036,
+          -4.91241051792386
+        ]
+      },
+      {
+        "xi": 0,
+        "eta": 2,
+        "lambda_minus_corner": [
+          -1.5524726888764002,
+          -2.1566044798215227,
+          -2.891771038165544
+        ]
+      }
+    ],
+    "near_zero_threshold_dated": 1e-06,
+    "off_origin_near_zero_count": 0
+  },
+  "T4": {
+    "verdict": "KILL literal existing localization assembly; INCONCLUSIVE for unspecified improved asymptotic strategy",
+    "literal_projection": {
+      "C_global_inferred": 0.7548391146291837,
+      "local_window": 0.5235987755982988,
+      "corner_lower_bound": "(4/pi^2)*log(n)^2-54",
+      "log_n0": 32.52181593938803,
+      "n0_projected": 133059290678422.47,
+      "rigorous": false,
+      "criterion_n0_exceeds_60": true,
+      "scope": "sufficient threshold to enter PD-T190 local window via PD-T189 uniform C; unknown defect and global assembly errors omitted"
+    },
+    "optimistic_central_only": [
+      {
+        "law": "C/n",
+        "C_inferred": 0.9136082709529632,
+        "error_budget": 0.27425742119977703,
+        "n0_projected": 32,
+        "rigorous": false,
+        "scope": "central-envelope error only; no bound for unknown P1-P5 assembly errors"
+      },
+      {
+        "law": "C*log(n)/n",
+        "C_inferred": 0.2636116243637961,
+        "error_budget": 0.27425742119977703,
+        "n0_projected": 32,
+        "rigorous": false,
+        "scope": "central-envelope error only; no bound for unknown P1-P5 assembly errors"
+      }
+    ]
+  },
+  "T5": {
+    "verdict": "PASS via separate finite developer exact proof; replay/audit owned by that record",
+    "record": "theory/argmax-alln-codex-02-degree-two-global-argmax.md",
+    "checker": "code/part3/finite_n2_exact.py",
+    "test_owner_executed_checker": false
+  },
+  "T1": {
+    "literal_verdict": "TRIVIAL KILL when cells containing maximal corners are included; criterion ill-posed",
+    "dated_noncorner_cell_verdict": "RETAIN at sampled degrees and search resolution",
+    "minimum_noncorner_cell": {
+      "n": 399,
+      "edge": "v-",
+      "corner": 23.727489814093552,
+      "minimum_noncorner_cell": {
+        "cell": 199,
+        "argmax_angle": 1.5707963267948966,
+        "beta_over_pi": 0.5,
+        "gap": 0.5504404820229318
+      },
+      "minimum_all_cells": {
+        "cell": 399,
+        "argmax_angle": 3.141592653589793,
+        "beta_over_pi": 1.0,
+        "gap": -1.4921397450962104e-13
+      },
+      "cell_count": 400,
+      "cell_evidence": "tests_T1_n399.json"
+    },
+    "threshold": 0.538514842399554,
+    "breaches": 0,
+    "series_requirement": "NOT DONE: beta-general PD-T188 series not derived; positive integral compared instead",
+    "integral_comparison_max_abs_error_by_n": {
+      "100": 0.08444014420707369,
+      "200": 0.04554972577108862,
+      "400": 0.02421991733006812
+    }
+  }
+}

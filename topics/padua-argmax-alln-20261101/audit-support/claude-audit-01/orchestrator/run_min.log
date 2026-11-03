@@ -1,0 +1,110 @@
++ cd /home/user/padua_research
++ run check_evidence python3 -B topics/padua-argmax-alln-20261101/code/part3/check_evidence.py
++ name=check_evidence
++ shift
+++ date +%s.%N
++ s=1793606733.256001158
++ python3 -B topics/padua-argmax-alln-20261101/code/part3/check_evidence.py
++ rc=0
+++ date +%s.%N
++ e=1793606733.364863561
+++ echo '1793606733.364863561 - 1793606733.256001158'
+++ bc
++ echo 'check_evidence rc=0 secs=.108862403'
++ run n2 python3 -B topics/padua-argmax-alln-20261101/code/part3/finite_n2_exact.py --output /tmp/claude-0/-home-user-padua-research/efec27fb-ede8-54e4-a9c8-12b8741cbbba/scratchpad/audit01/padua_n2_claude.json
++ name=n2
++ shift
+++ date +%s.%N
++ s=1793606733.371959207
++ python3 -B topics/padua-argmax-alln-20261101/code/part3/finite_n2_exact.py --output /tmp/claude-0/-home-user-padua-research/efec27fb-ede8-54e4-a9c8-12b8741cbbba/scratchpad/audit01/padua_n2_claude.json
++ rc=0
+++ date +%s.%N
++ e=1793606733.439732544
+++ echo '1793606733.439732544 - 1793606733.371959207'
+++ bc
++ echo 'n2 rc=0 secs=.067773337'
++ run pairing python3 -B topics/padua-argmax-alln-20261101/code/part3/pairing_exact_check.py topics/padua-argmax-alln-20261101/outputs/part3/pairing_screens.json --output /tmp/claude-0/-home-user-padua-research/efec27fb-ede8-54e4-a9c8-12b8741cbbba/scratchpad/audit01/padua_pairing_claude.json
++ name=pairing
++ shift
+++ date +%s.%N
++ s=1793606733.444322249
++ python3 -B topics/padua-argmax-alln-20261101/code/part3/pairing_exact_check.py topics/padua-argmax-alln-20261101/outputs/part3/pairing_screens.json --output /tmp/claude-0/-home-user-padua-research/efec27fb-ede8-54e4-a9c8-12b8741cbbba/scratchpad/audit01/padua_pairing_claude.json
++ rc=0
+++ date +%s.%N
++ e=1793606736.871114753
+++ echo '1793606736.871114753 - 1793606733.444322249'
+++ bc
++ echo 'pairing rc=0 secs=3.426792504'
++ run d2_symbolic sh -c 'python3 -B topics/padua-argmax-alln-20261101/code/gated/d2_symbolic_r01.py > /tmp/claude-0/-home-user-padua-research/efec27fb-ede8-54e4-a9c8-12b8741cbbba/scratchpad/audit01/padua_d2_symbolic_claude.json'
++ name=d2_symbolic
++ shift
+++ date +%s.%N
++ s=1793606736.878297215
++ sh -c 'python3 -B topics/padua-argmax-alln-20261101/code/gated/d2_symbolic_r01.py > /tmp/claude-0/-home-user-padua-research/efec27fb-ede8-54e4-a9c8-12b8741cbbba/scratchpad/audit01/padua_d2_symbolic_claude.json'
++ rc=0
+++ date +%s.%N
++ e=1793606737.915461141
+++ echo '1793606737.915461141 - 1793606736.878297215'
+++ bc
++ echo 'd2_symbolic rc=0 secs=1.037163926'
++ run d3_generate python3 -B topics/padua-argmax-alln-20261101/code/gated/d3_edge_generate.py --output /tmp/claude-0/-home-user-padua-research/efec27fb-ede8-54e4-a9c8-12b8741cbbba/scratchpad/audit01/padua_d3_claude_certificate.json --ep-output /tmp/claude-0/-home-user-padua-research/efec27fb-ede8-54e4-a9c8-12b8741cbbba/scratchpad/audit01/padua_d3_claude_ep.json
++ name=d3_generate
++ shift
+++ date +%s.%N
++ s=1793606737.920220652
++ python3 -B topics/padua-argmax-alln-20261101/code/gated/d3_edge_generate.py --output /tmp/claude-0/-home-user-padua-research/efec27fb-ede8-54e4-a9c8-12b8741cbbba/scratchpad/audit01/padua_d3_claude_certificate.json --ep-output /tmp/claude-0/-home-user-padua-research/efec27fb-ede8-54e4-a9c8-12b8741cbbba/scratchpad/audit01/padua_d3_claude_ep.json
++ rc=0
+++ date +%s.%N
++ e=1793606744.832627114
+++ echo '1793606744.832627114 - 1793606737.920220652'
+++ bc
++ echo 'd3_generate rc=0 secs=6.912406462'
++ run d3_check python3 -B topics/padua-argmax-alln-20261101/code/gated/d3_edge_check.py topics/padua-argmax-alln-20261101/outputs/gated/d3_edge_certificate.json --output /tmp/claude-0/-home-user-padua-research/efec27fb-ede8-54e4-a9c8-12b8741cbbba/scratchpad/audit01/padua_d3_claude_check.json --controls
++ name=d3_check
++ shift
+++ date +%s.%N
++ s=1793606744.838989036
++ python3 -B topics/padua-argmax-alln-20261101/code/gated/d3_edge_check.py topics/padua-argmax-alln-20261101/outputs/gated/d3_edge_certificate.json --output /tmp/claude-0/-home-user-padua-research/efec27fb-ede8-54e4-a9c8-12b8741cbbba/scratchpad/audit01/padua_d3_claude_check.json --controls
++ rc=0
+++ date +%s.%N
++ e=1793606752.846431012
+++ echo '1793606752.846431012 - 1793606744.838989036'
+++ bc
++ echo 'd3_check rc=0 secs=8.007441976'
++ run d3_check_regen python3 -B topics/padua-argmax-alln-20261101/code/gated/d3_edge_check.py /tmp/claude-0/-home-user-padua-research/efec27fb-ede8-54e4-a9c8-12b8741cbbba/scratchpad/audit01/padua_d3_claude_certificate.json --output /tmp/claude-0/-home-user-padua-research/efec27fb-ede8-54e4-a9c8-12b8741cbbba/scratchpad/audit01/padua_d3_claude_check_regen.json --controls
++ name=d3_check_regen
++ shift
+++ date +%s.%N
++ s=1793606752.852992385
++ python3 -B topics/padua-argmax-alln-20261101/code/gated/d3_edge_check.py /tmp/claude-0/-home-user-padua-research/efec27fb-ede8-54e4-a9c8-12b8741cbbba/scratchpad/audit01/padua_d3_claude_certificate.json --output /tmp/claude-0/-home-user-padua-research/efec27fb-ede8-54e4-a9c8-12b8741cbbba/scratchpad/audit01/padua_d3_claude_check_regen.json --controls
++ rc=0
+++ date +%s.%N
++ e=1793606760.237447375
+++ echo '1793606760.237447375 - 1793606752.852992385'
+++ bc
++ echo 'd3_check_regen rc=0 secs=7.384454990'
++ run n12 python3 -B topics/padua-argmax-alln-20261101/code/part3/finite_general_check.py topics/padua-argmax-alln-20261101/outputs/part3/finite_n12_pilot.json.gz --output /tmp/claude-0/-home-user-padua-research/efec27fb-ede8-54e4-a9c8-12b8741cbbba/scratchpad/audit01/padua_n12_claude.json
++ name=n12
++ shift
+++ date +%s.%N
++ s=1793606760.243219492
++ python3 -B topics/padua-argmax-alln-20261101/code/part3/finite_general_check.py topics/padua-argmax-alln-20261101/outputs/part3/finite_n12_pilot.json.gz --output /tmp/claude-0/-home-user-padua-research/efec27fb-ede8-54e4-a9c8-12b8741cbbba/scratchpad/audit01/padua_n12_claude.json
++ rc=0
+++ date +%s.%N
++ e=1793606766.132360346
+++ echo '1793606766.132360346 - 1793606760.243219492'
+++ bc
++ echo 'n12 rc=0 secs=5.889140854'
++ run n8 python3 -B topics/padua-argmax-alln-20261101/code/part3/finite_bernstein_check.py topics/padua-argmax-alln-20261101/outputs/part3/finite_n8_pilot.json.gz --output /tmp/claude-0/-home-user-padua-research/efec27fb-ede8-54e4-a9c8-12b8741cbbba/scratchpad/audit01/padua_n8_claude.json
++ name=n8
++ shift
+++ date +%s.%N
++ s=1793606766.137451846
++ python3 -B topics/padua-argmax-alln-20261101/code/part3/finite_bernstein_check.py topics/padua-argmax-alln-20261101/outputs/part3/finite_n8_pilot.json.gz --output /tmp/claude-0/-home-user-padua-research/efec27fb-ede8-54e4-a9c8-12b8741cbbba/scratchpad/audit01/padua_n8_claude.json
++ rc=0
+++ date +%s.%N
++ e=1793606813.214312217
+++ echo '1793606813.214312217 - 1793606766.137451846'
+++ bc
++ echo 'n8 rc=0 secs=47.076860371'
++ echo ALLDONE

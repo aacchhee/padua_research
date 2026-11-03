@@ -1,0 +1,80 @@
+[
+  {
+    "script": "check.py",
+    "reference": "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/outputs/check.out",
+    "replay": "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/outputs/codex-replay/check.out",
+    "reference_sha256": "1311b34f092b2f6c954b571d7029bc532b095465a905c56ee0cc43df7618f4cc",
+    "replay_sha256": "1311b34f092b2f6c954b571d7029bc532b095465a905c56ee0cc43df7618f4cc",
+    "text_identical_after_outer_whitespace_strip": true,
+    "numeric_tokens": 47,
+    "same_numeric_token_count": true,
+    "max_abs_numeric_token_difference": 0.0,
+    "absolute_tolerance": 1e-10,
+    "numeric_comparison_pass": true
+  },
+  {
+    "script": "cell.py",
+    "reference": "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/outputs/cell.out",
+    "replay": "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/outputs/codex-replay/cell.out",
+    "reference_sha256": "a80346a05a0ca535500d73d1d2b07d5601ea2e7e672a8453eaf365ef5be7a528",
+    "replay_sha256": "a80346a05a0ca535500d73d1d2b07d5601ea2e7e672a8453eaf365ef5be7a528",
+    "text_identical_after_outer_whitespace_strip": true,
+    "numeric_tokens": 104,
+    "same_numeric_token_count": true,
+    "max_abs_numeric_token_difference": 0.0,
+    "absolute_tolerance": 1e-10,
+    "numeric_comparison_pass": true
+  },
+  {
+    "script": "interior.py",
+    "reference": "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/outputs/interior.out",
+    "replay": "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/outputs/codex-replay/interior.out",
+    "reference_sha256": "3d98432be0289bafaad3150560a06d12c768e60c8c61233206614648b0e61ab1",
+    "replay_sha256": "3d98432be0289bafaad3150560a06d12c768e60c8c61233206614648b0e61ab1",
+    "text_identical_after_outer_whitespace_strip": true,
+    "numeric_tokens": 84,
+    "same_numeric_token_count": true,
+    "max_abs_numeric_token_difference": 0.0,
+    "absolute_tolerance": 1e-10,
+    "numeric_comparison_pass": true
+  },
+  {
+    "script": "edgeprofile.py",
+    "reference": "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/outputs/edgeprofile.out",
+    "replay": "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/outputs/codex-replay/edgeprofile.out",
+    "reference_sha256": "2506fce17769ed37baf68594e729cfdc6e203905fc274894ff184f8d031884e1",
+    "replay_sha256": "2506fce17769ed37baf68594e729cfdc6e203905fc274894ff184f8d031884e1",
+    "text_identical_after_outer_whitespace_strip": true,
+    "numeric_tokens": 232,
+    "same_numeric_token_count": true,
+    "max_abs_numeric_token_difference": 0.0,
+    "absolute_tolerance": 1e-10,
+    "numeric_comparison_pass": true
+  },
+  {
+    "script": "strips.py",
+    "reference": "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/outputs/strips.out",
+    "replay": "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/outputs/codex-replay/strips.out",
+    "reference_sha256": "8fd9bf84a233fe1cc63b9175a950e3cda16739e00113c0d7e0a69be52e8865cc",
+    "replay_sha256": "8fd9bf84a233fe1cc63b9175a950e3cda16739e00113c0d7e0a69be52e8865cc",
+    "text_identical_after_outer_whitespace_strip": true,
+    "numeric_tokens": 104,
+    "same_numeric_token_count": true,
+    "max_abs_numeric_token_difference": 0.0,
+    "absolute_tolerance": 1e-10,
+    "numeric_comparison_pass": true
+  },
+  {
+    "script": "n2_edges.py",
+    "reference": "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/outputs/n2_edges.out",
+    "replay": "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/outputs/codex-replay/n2_edges.out",
+    "reference_sha256": "4e5ccd0adae74c89e3dabb8553bf7adc8f26d5aaca1a5d0900b85f65fea6c8e8",
+    "replay_sha256": "4e5ccd0adae74c89e3dabb8553bf7adc8f26d5aaca1a5d0900b85f65fea6c8e8",
+    "text_identical_after_outer_whitespace_strip": true,
+    "numeric_tokens": 24,
+    "same_numeric_token_count": true,
+    "max_abs_numeric_token_difference": 0.0,
+    "absolute_tolerance": 1e-10,
+    "numeric_comparison_pass": true
+  }
+]

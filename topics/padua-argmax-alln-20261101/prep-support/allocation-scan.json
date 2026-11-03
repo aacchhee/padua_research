@@ -1,0 +1,215 @@
+{
+  "date": "2026-11-03 Europe/Oslo",
+  "main": "2b52b432fe59c9a50aef9deebe5152c5d6874465",
+  "topic_head": "cdb12257af24ea2542de707b9730f8278d69a168",
+  "open_prs": [
+    {
+      "number": 17,
+      "head": "cdb12257af24ea2542de707b9730f8278d69a168"
+    },
+    {
+      "number": 18,
+      "head": "36f345f0365ddc15d837492aa6da42a1ce6f9771",
+      "allocation": "no range"
+    }
+  ],
+  "closed_unmerged_prs": [],
+  "merged_previous_pr_count": 15,
+  "union_maxima": {
+    "PD-T": 245,
+    "PD-N": 83,
+    "IDEA-": 335,
+    "LIT-": 465
+  },
+  "sources": [
+    {
+      "path": "PROOF_STATUS.md",
+      "label": "main/topic17 shared input",
+      "sha": "d85bd4ae56e115bb30872f777e0ca12c72193f64",
+      "max_ids": {
+        "PD-T": 197,
+        "PD-N": 73,
+        "IDEA-": 227,
+        "LIT-": 426
+      },
+      "distinct_ids": {
+        "PD-T": 170,
+        "PD-N": 57,
+        "IDEA-": 74,
+        "LIT-": 127
+      }
+    },
+    {
+      "path": "state/IDEAS.md",
+      "label": "main/topic17 shared input",
+      "sha": "ac0c4d133d412f32060e982b870850759f4352a6",
+      "max_ids": {
+        "PD-T": 197,
+        "PD-N": 73,
+        "IDEA-": 311,
+        "LIT-": 426
+      },
+      "distinct_ids": {
+        "PD-T": 142,
+        "PD-N": 57,
+        "IDEA-": 275,
+        "LIT-": 152
+      }
+    },
+    {
+      "path": "ID_CROSSWALK.md",
+      "label": "main/topic17 shared input",
+      "sha": "ad6ba3d30ad548b15f2077ac55ae0e712220669b",
+      "max_ids": {
+        "PD-T": 205,
+        "PD-N": 77,
+        "IDEA-": 315,
+        "LIT-": 459
+      },
+      "distinct_ids": {
+        "PD-T": 205,
+        "PD-N": 77,
+        "IDEA-": 315,
+        "LIT-": 452
+      }
+    },
+    {
+      "path": "literature/INDEX.md",
+      "label": "main/topic17 shared input",
+      "sha": "d4176c1e98a1088500782d8123516c48a9a3eeda",
+      "max_ids": {
+        "PD-T": 100,
+        "PD-N": 43,
+        "IDEA-": 209,
+        "LIT-": 428
+      },
+      "distinct_ids": {
+        "PD-T": 20,
+        "PD-N": 12,
+        "IDEA-": 33,
+        "LIT-": 428
+      }
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "label": "main/topic17 shared input",
+      "sha": "21a699dc6d4e12693ca5e811cdd741503f9a8782",
+      "max_ids": {
+        "PD-T": 205,
+        "PD-N": 77,
+        "IDEA-": 315,
+        "LIT-": 460
+      },
+      "distinct_ids": {
+        "PD-T": 205,
+        "PD-N": 77,
+        "IDEA-": 315,
+        "LIT-": 460
+      }
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+      "label": "main/topic17 shared input",
+      "sha": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+      "max_ids": {
+        "PD-T": 12,
+        "PD-N": 1,
+        "IDEA-": 51,
+        "LIT-": 41
+      },
+      "distinct_ids": {
+        "PD-T": 12,
+        "PD-N": 1,
+        "IDEA-": 51,
+        "LIT-": 41
+      }
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/ALLOCATIONS.md",
+      "label": "main/topic17 shared input",
+      "sha": "fee95d0ffcd1edfcbfbacefbe16b9019505a9fe4",
+      "max_ids": {
+        "PD-T": 245,
+        "PD-N": 83,
+        "IDEA-": 335,
+        "LIT-": 465
+      },
+      "distinct_ids": {
+        "PD-T": 41,
+        "PD-N": 7,
+        "IDEA-": 21,
+        "LIT-": 7
+      }
+    },
+    {
+      "path": "PROOF_STATUS.md",
+      "label": "pr18",
+      "sha": "93699fb94761e459a826746b050ceb48443f3116",
+      "max_ids": {
+        "PD-T": 197,
+        "PD-N": 73,
+        "IDEA-": 227,
+        "LIT-": 426
+      },
+      "distinct_ids": {
+        "PD-T": 170,
+        "PD-N": 57,
+        "IDEA-": 74,
+        "LIT-": 127
+      }
+    },
+    {
+      "path": "ID_CROSSWALK.md",
+      "label": "pr18",
+      "sha": "df2849891a3da582ee1e79df0ce82f549bdb7820",
+      "max_ids": {
+        "PD-T": 205,
+        "PD-N": 77,
+        "IDEA-": 315,
+        "LIT-": 459
+      },
+      "distinct_ids": {
+        "PD-T": 205,
+        "PD-N": 77,
+        "IDEA-": 315,
+        "LIT-": 452
+      }
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "label": "pr18",
+      "sha": "1ff65e92943751bef12e8c3ac40d3d35d9a29fce",
+      "max_ids": {
+        "PD-T": 205,
+        "PD-N": 77,
+        "IDEA-": 315,
+        "LIT-": 460
+      },
+      "distinct_ids": {
+        "PD-T": 205,
+        "PD-N": 77,
+        "IDEA-": 315,
+        "LIT-": 460
+      }
+    },
+    {
+      "path": "topics/cold-storage-20261102/LOG.md",
+      "label": "pr18",
+      "sha": "e6eb38bd4a0c5f5cc1b50f134b730603510bc671",
+      "max_ids": {
+        "PD-T": 0,
+        "PD-N": 0,
+        "IDEA-": 0,
+        "LIT-": 0
+      },
+      "distinct_ids": {
+        "PD-T": 0,
+        "PD-N": 0,
+        "IDEA-": 0,
+        "LIT-": 0
+      }
+    }
+  ],
+  "new_reservation": "none; unchanged permanent topic ranges only",
+  "provenance": "GitHub connector pinned tree/blob identities; unique content scanned once where shared blobs match. Prior retired reservations preserved in both ledgers; no closed-unmerged PR to reconstruct."
+}

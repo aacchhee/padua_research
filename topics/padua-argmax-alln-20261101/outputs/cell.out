@@ -1,0 +1,13 @@
+3 S(t*)=3.776142 cell grid max=3.776142 opt max=3.77751076 at (0.0181*pi/n, 1.0000*pi/(n+1)) excess=1.37e-03
+4 S(t*)=4.409725 cell grid max=4.409725 opt max=4.41091854 at (0.0152*pi/n, 1.0000*pi/(n+1)) excess=1.19e-03
+5 S(t*)=4.947806 cell grid max=4.947806 opt max=4.94910022 at (1.0145*pi/n, 0.0000*pi/(n+1)) excess=1.29e-03
+6 S(t*)=5.417499 cell grid max=5.417499 opt max=5.41857130 at (0.0124*pi/n, 1.0000*pi/(n+1)) excess=1.07e-03
+7 S(t*)=5.835658 cell grid max=5.835658 opt max=5.83663666 at (0.0112*pi/n, 1.0000*pi/(n+1)) excess=9.79e-04
+8 S(t*)=6.213460 cell grid max=6.213460 opt max=6.21428685 at (0.0099*pi/n, 1.0000*pi/(n+1)) excess=8.27e-04
+9 S(t*)=6.558714 cell grid max=6.558714 opt max=6.55945177 at (1.9910*pi/n, 1.0000*pi/(n+1)) excess=7.38e-04
+10 S(t*)=6.877100 cell grid max=6.877100 opt max=6.87773789 at (0.0081*pi/n, 1.0000*pi/(n+1)) excess=6.38e-04
+12 S(t*)=7.449377 cell grid max=7.449377 opt max=7.44987888 at (0.0068*pi/n, 1.0000*pi/(n+1)) excess=5.02e-04
+15 S(t*)=8.186632 cell grid max=8.186632 opt max=8.18699875 at (1.9945*pi/n, 1.0000*pi/(n+1)) excess=3.67e-04
+20 S(t*)=9.197091 cell grid max=9.197091 opt max=9.19732582 at (0.0041*pi/n, 1.0000*pi/(n+1)) excess=2.34e-04
+30 S(t*)=10.736194 cell grid max=10.736194 opt max=10.73631409 at (0.0026*pi/n, 1.0000*pi/(n+1)) excess=1.20e-04
+40 S(t*)=11.909859 cell grid max=11.909859 opt max=11.90995158 at (0.0033*pi/n, 1.0000*pi/(n+1)) excess=9.22e-05

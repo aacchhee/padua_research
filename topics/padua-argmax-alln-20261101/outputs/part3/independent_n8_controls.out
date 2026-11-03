@@ -1,0 +1,52 @@
+{
+  "status": "independent executed controls",
+  "source_sha256": {
+    "code/part3/finite_bernstein.py": "a3133c6c22a365380f6c2ab14f6d31f60153d0df902b325cfcfbeeccc1bed74f",
+    "code/part3/finite_bernstein_check.py": "096e60475252ebeff871efd3b87eab8029fef0971c0f3b94bfd1ad83a71f6fa1",
+    "code/part3/finite_bernstein_run.py": "d03b0830b4e23261ee82ea5265b3f5123956a083b34418e6124ea9e4bbb352ac",
+    "/workspace/padua-argmax-alln/topics/padua-proof-attempts-2-20261101/code/a5_n8_field.py": "764a7d7e50718c04f076ab3bbc86270adad1c47bc902d0b8d4eecf32ebbd2ec2",
+    "outputs/part3/finite_n8_pilot.json.gz": "92528fc9575407cfbb6c097a814327ebc8666a15fe736bc387044f6f6ff54f22"
+  },
+  "python": "3.12.14",
+  "positive": {
+    "accepted": true,
+    "complete_partition": true,
+    "all_supplied_bounds_verified": true,
+    "counts": {
+      "splits": 33,
+      "corner": 2,
+      "bound": 32
+    },
+    "verified_claim": "lambda_8 maximum occurs only at the two non-node corners"
+  },
+  "controls": [
+    {
+      "mutation": "missing_leaf_hole",
+      "rejected": true,
+      "assertion": "uncovered box"
+    },
+    {
+      "mutation": "wrong_corner",
+      "rejected": true,
+      "assertion": "invalid/relabelled bound"
+    },
+    {
+      "mutation": "altered_threshold",
+      "rejected": true,
+      "assertion": ""
+    },
+    {
+      "mutation": "duplicate_leaf",
+      "rejected": true,
+      "assertion": ""
+    },
+    {
+      "mutation": "producer_self_approval",
+      "rejected": true,
+      "assertion": ""
+    }
+  ],
+  "seconds": 49.89682959300001,
+  "sympy": "1.14.0",
+  "source_unchanged": true
+}

@@ -1,0 +1,25 @@
+# Worker C (claims 4–5: gated07–13) — returned report, saved by orchestrator
+
+Verdicts: 07 ACCEPT; 08 ACCEPT; 09 ACCEPT WITH MINOR (F1,F4); 10 ACCEPT WITH MINOR (F2); 11 ACCEPT WITH MINOR (F1); 12 ACCEPT; 13 ACCEPT WITH MINOR (F1,F2); d1 r03–r06 notes, d2 r01 contract/structure/next-reflection ACCEPT; d2 r01-screen ACCEPT (F3); 4 scripts + outputs ACCEPT (replays identical). No CRITICAL/MAJOR. Scope files identical at c173fbf.
+
+Key reconstruction:
+- 07: derivative coefficients, sums (1152H, 55296H, 24H, 216, 1080), sign-change and collision-family bounds re-derived by hand and exact rationals. Quadratic coefficient 236000 + 5376 + 10/log 3 = 241385.1 < 242000 (240000 trial insufficient, as recorded); linear 128+512=640. exp(10^7) scale correctly "sufficient" and unusable. (Q) implies theorem03 local bound (B) with rho0=1/64. Geometry b>=d/(2m), t>=L/(4m), |sin u|<=2.1b; path E''<=58560 rho^2 H; near/far sign-change parts; collision family factorisation via U_k(pi−z)=(−1)^{k+1}U_k, U_m−U_n=V_n; D'=145n/32, D''=831n/128 exact; F0>=4n/(3pi^2); scale analysis r03 §4 verified (1−a>=rho^2/10, W(L)>=L^2/100 for L>=10^7, 27B^4/(32A^3)=1.48e-23<d_delta=1.86e-5, rho_delta=0.019>1/64, N_delta=64).
+- 08: normalisation, formula (A), A>=223/512, small gamma 1/(128pi), middle gamma exactly 1/1536, horizontal mirrored (1+cos v>=0.74, m>=49), reflections exact.
+- 09: sequence argument sound, uniform in unused coordinate and orientation.
+- 10: numerator 223/4096>1/32; spans <26/m; 8 displacement rows; target angles in [pi/8,3pi/4]; parity both n parities and all endpoint sides; ranges; count 1/3328; exhaustion via 08 for s>=5. First 1–4 endpoint cells fully covered, including centres next to node corners.
+- 11: quantifiers correct. Every global maximizer and every odd-vertex representation with rho<=pi satisfies rho^2 <= 2pi^2 C log(n+1)/Lambda_c (depends only on n, →0), so one threshold for all maximizers (n>=48, rho<=min(1/64,rho0), local excess <1/4096). Node-corner, edge, interior, mesh-line maximizers all covered; node corners are even vertices, cannot be centres; no point has two small-phase representations. Uses Lambda_c as lower bound for max (trivial) and Lambda_c>=(4/pi^2)log^2 n − 54 (mis-cited, F1). Only unverified analytic dependency: theorem02 (claim 2, worker B).
+- 12: identities verified; no claim they imply the open cotangent partial-sum estimate; repair stops after round 6.
+- 13: zero mask, removable (0,0) value and gradients, gradient formulas (G_x = −(−1)^n n(2n^2+1)/3), inward linearity, zero contribution (n−1)/6 (Z_n=(n^2−1)/(6m)), endpoint functional (5)–(6), Taylor bound (7), aggregate (3) verified; copes with sign-changing cardinals; no fixed-sign or crude-Hessian substitute; uniform slope/energy premises (8) labelled OPEN.
+
+Findings:
+F1 MINOR gated-09:65, gated-11:61, gated-13:68 cite PD-T159 for Lambda_c>=(4/pi^2)log^2 n−54; PD-T159 states |Lambda_c−L_n^2|<=54 (squared Chebyshev comparison); the bound is PD-T156(1)/PD-T157(1). Theorem14 and d2/r02 were corrected; these not. Also gated-03:79,327, gated-04:29, d1/r01-phase.md:94,376 (orchestrator confirmed by grep). Documentation-only correction.
+F2 MINOR gated-13:57,172, gated-10:295 say supplementary review pending without "at initial publication" though d2-r01 and d1-r05 checks complete.
+F3 NOTE d2/r01-screen.md:96 quotes |a+b|<=|a|+sign(a)b+2b^2/|a| while theorem13 uses b^2/(2|a|); both true.
+F4 NOTE N_* means box-gap threshold in 09 but global-argmax threshold in 15/REPORT.
+F5 NOTE CANDIDATES.md:55 "after gated05" ambiguous (IDEA-05 vs theory05).
+F6 NOTE theory08's rho<=1/8 hypothesis essential (worker's misdesigned probe violated it; corrected probe passes).
+F7 NOTE d1_rows_r06 registered grid never hits interior collision nor evaluates (5)/(6) directly; worker's run covered both.
+
+Commands (all PASS): d1_constants_r03.py (identical except python field); d1_rows_r06.py (identical except python field); d2 main screen OPENBLAS/OMP=1 (all 1505 numbers identical; only argv/timing/env/note-hash differ); d2 energy inline (degrees identical); orchestrator symbolic JSON byte-identical (f3e85314…); own exact_corner.py (exact number-field Vandermonde cardinals n=2..8: theorem13 parts 1–3 exact; (n−1)/6 exact; n=2 slopes −7/3, −14/3); own numeric_checks.py MEASURED (kernel identity <=3e-14; Lobatto (5) n<=14; (6),(3) pass with Lambda_c; theorem12 identities <=3e-12 incl. 12 collisions; theorem10 points Delta>=1.6; theorem07 sublemmas); corrected theory08 probe Q>=0.557 at n=48,49,64,65; theory10 line constructions n=48–128 no failures (>=12.7x bound); exact-rational theory07 bookkeeping; theorem02 probe ~1.5–1.8 (MEASURED). Longest 91 s.
+Not checked: theorem02 analytically; theorem03 independently (covered via 07); PD-T156/157/185 statements only; finite_n2_exact/finite_general internals; exact checks only n<=8.
+Outputs: audit01/C/ (exact_corner.json, num_A/BC/DE/D_adaptive.json, thin_lines_10.json, bookkeeping_07.json, primitive_identity.json, global_bound_probe.json, replay outputs).

@@ -1,0 +1,385 @@
+{
+ "role": "Supplementary independent Codex recheck; required Claude review pending",
+ "rules_head": "93169ab6e193fbbef91af16914cd1191e7564420",
+ "input_hashes": {
+  "tools/cold_storage.py": "d12fc95dc1fe6145ad0f82b225104cee568bab5586bcd247fe445c671f123bd5",
+  "tools/test_cold_storage.py": "0aac0194efcd551a6ebe97216d2bf22992d9f3e86c8b0aa77e584285cf5fc3fe",
+  "topics/padua-argmax-alln-20261101/cold-storage.json": "88871c2064aa300bcdbcfae93e7b9de528daf3d60241d608454d8ea420216908",
+  "topics/padua-argmax-alln-20261101/COLD_STORAGE.md": "4ea56e5d2548a75e1ef1752c79e59a40d274c6efb7be07da3f01f0c482c34ce9"
+ },
+ "source_commit": "1cecd68ac0a64b01ed7b2d262b6263a955a7d4d7",
+ "all36_identity_tuples_unchanged": true,
+ "all36_source_identities_match": true,
+ "script_blob_pairs_verified": 19,
+ "script_blobs": {
+  "audit-support/claude-audit-01/files/A/indep/padua_indep.py": "5cc504d020cbbb5845cb5ec1d9f2c40de0bc35d2",
+  "audit-support/claude-audit-01/files/D/padlib.py": "29382a67b3b1f9ca2e29ca7a13291c0b35614ab5",
+  "audit-support/claude-audit-01/files/D/t1_local.py": "5f31c71ebc8fd508c38b4d11d9f5e32aaf612fc8",
+  "code/gated/d1_screen_r01.py": "cd1c6b42627e33f0aa82c1c966fc85799532d2e8",
+  "code/gated/d2_screen_r01.py": "d69931d9a3c0daf8350b147c39583c75ae1bfea9",
+  "code/gated/d3_edge_check.py": "a911769342d9ab1d52bb49a076d9c6752bca8f84",
+  "code/gated/d3_edge_common.py": "e5fb8420e5312aaa32ccdd4b4fd10330867ff3aa",
+  "code/gated/d3_edge_generate.py": "ea8c40233fe0dbc2c0ab69b8535fc5a180f5fa95",
+  "code/maj.py": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4",
+  "code/part3/check_evidence.py": "390ce6862ded0106f4fe54020523ee5f5622dff4",
+  "code/part3/finite_bernstein.py": "bdb485e76d41906b6b18a95db835e964a3c615da",
+  "code/part3/finite_general.py": "c71e9afd2f60afd12c0c2dcd20a3d28a878c9b0a",
+  "code/part3/finite_n2_exact.py": "0e64550ebdfa7a32b70c2c0624cf481457e649c4",
+  "code/part3/pairing_screens.py": "bc346c2c8d4f07fa4d58d7d825a2786419c82166",
+  "code/part3/tests_T1.py": "7472cd2a084e8a8d7bc5fbf59fb82f7fcf46ad9c",
+  "code/part3/tests_T2_T3.py": "272543f5b27749b18fb0bddaf38fac4999a156d0",
+  "code/part3/tests_T4.py": "16ae92dff66c2c71b618340b5d26070a154bcf5a",
+  "code/part3/tests_analyze.py": "3c5d3c6df5baec9e68026a8d839fc9559c4002b5",
+  "code/part3/tests_common.py": "fe93be375f907a8c402767c41a6b5bd7792921cd"
+ },
+ "scratch": "/tmp/padua-storage-supp-uvxsg5bi",
+ "commands": [
+  {
+   "args": [
+    "verify",
+    "padua-argmax-alln-20261101"
+   ],
+   "returncode": 0,
+   "stdout": {
+    "slug": "padua-argmax-alln-20261101",
+    "entries": 36,
+    "bytes": 2526191,
+    "restored_copies_present": 0,
+    "active_tracked_versions_present": 1,
+    "active_tracked_version_paths": [
+     "topics/padua-argmax-alln-20261101/evidence-manifest.json"
+    ],
+    "accepted": true,
+    "problems": []
+   },
+   "stderr": ""
+  },
+  {
+   "args": [
+    "restore",
+    "padua-argmax-alln-20261101"
+   ],
+   "returncode": 1,
+   "stdout": null,
+   "stderr": "cold-storage: refusing tracked destination /workspace/padua-storage-fix-20261102/topics/padua-argmax-alln-20261101/evidence-manifest.json; use --dest outside the repository"
+  },
+  {
+   "args": [
+    "restore",
+    "padua-argmax-alln-20261101",
+    "--dest",
+    "/tmp/padua-storage-supp-uvxsg5bi/restore"
+   ],
+   "returncode": 0,
+   "stdout": {
+    "slug": "padua-argmax-alln-20261101",
+    "restored": 36,
+    "dest": "/tmp/padua-storage-supp-uvxsg5bi/restore"
+   },
+   "stderr": ""
+  },
+  {
+   "args": [
+    "verify",
+    "padua-argmax-alln-20261101",
+    "--dest",
+    "/tmp/padua-storage-supp-uvxsg5bi/restore"
+   ],
+   "returncode": 0,
+   "stdout": {
+    "slug": "padua-argmax-alln-20261101",
+    "entries": 36,
+    "bytes": 2526191,
+    "restored_copies_present": 36,
+    "active_tracked_versions_present": 0,
+    "active_tracked_version_paths": [],
+    "accepted": true,
+    "problems": []
+   },
+   "stderr": ""
+  },
+  {
+   "args": [
+    "restore",
+    "padua-argmax-alln-20261101",
+    "--dest",
+    "/tmp/padua-storage-supp-uvxsg5bi/restore"
+   ],
+   "returncode": 0,
+   "stdout": {
+    "slug": "padua-argmax-alln-20261101",
+    "restored": 36,
+    "dest": "/tmp/padua-storage-supp-uvxsg5bi/restore"
+   },
+   "stderr": ""
+  },
+  {
+   "args": [
+    "clean",
+    "padua-argmax-alln-20261101",
+    "--dest",
+    "/tmp/padua-storage-supp-uvxsg5bi/restore"
+   ],
+   "returncode": 0,
+   "stdout": {
+    "slug": "padua-argmax-alln-20261101",
+    "removed_restored_copies": 36
+   },
+   "stderr": ""
+  },
+  {
+   "args": [
+    "verify",
+    "padua-argmax-alln-20261101",
+    "--dest",
+    "/tmp/padua-storage-supp-uvxsg5bi/restore"
+   ],
+   "returncode": 0,
+   "stdout": {
+    "slug": "padua-argmax-alln-20261101",
+    "entries": 36,
+    "bytes": 2526191,
+    "restored_copies_present": 0,
+    "active_tracked_versions_present": 0,
+    "active_tracked_version_paths": [],
+    "accepted": true,
+    "problems": []
+   },
+   "stderr": ""
+  },
+  {
+   "args": [
+    "export",
+    "padua-argmax-alln-20261101",
+    "--dest",
+    "/tmp/padua-storage-supp-uvxsg5bi/export"
+   ],
+   "returncode": 0,
+   "stdout": {
+    "format": "padua-cold-storage-export-v1",
+    "slug": "padua-argmax-alln-20261101",
+    "source_commit": "1cecd68ac0a64b01ed7b2d262b6263a955a7d4d7",
+    "bytes": 2526191,
+    "all_hashes_match_manifest": true
+   },
+   "stderr": ""
+  },
+  {
+   "args": [
+    "export",
+    "padua-argmax-alln-20261101",
+    "--dest",
+    "/tmp/padua-storage-supp-uvxsg5bi/export"
+   ],
+   "returncode": 0,
+   "stdout": {
+    "format": "padua-cold-storage-export-v1",
+    "slug": "padua-argmax-alln-20261101",
+    "source_commit": "1cecd68ac0a64b01ed7b2d262b6263a955a7d4d7",
+    "bytes": 2526191,
+    "all_hashes_match_manifest": true
+   },
+   "stderr": ""
+  },
+  {
+   "args": [
+    "plan",
+    "topics/padua-argmax-alln-20261101"
+   ],
+   "returncode": 0,
+   "stdout": {
+    "threshold": 16384,
+    "files": 1,
+    "bytes": 97046,
+    "entries": [
+     {
+      "path": "topics/padua-argmax-alln-20261101/evidence-manifest.json",
+      "bytes": 97046,
+      "git_blob": "68f923581af1cb2d3814ef3a7389cee2be765d34"
+     }
+    ]
+   },
+   "stderr": ""
+  }
+ ],
+ "real36_byte_comparisons_pass": true,
+ "restore_idempotent_mtimes": true,
+ "cleanup_preserves_unrelated": true,
+ "export_receipt_idempotent_bytes_and_mtime": true,
+ "active_manifest_and_shared_index_unchanged": true,
+ "additional_static_probes": [
+  {
+   "case": "destination root symlink rejected by restore/clean/verify",
+   "pass": true
+  },
+  {
+   "case": "FIFO target refused without blocking or writes",
+   "pass": true
+  },
+  {
+   "case": "export receipt symlink refused before payloads",
+   "pass": true
+  },
+  {
+   "case": "duplicate JSON object key rejected",
+   "pass": true
+  },
+  {
+   "case": "casefold destination alias rejected",
+   "pass": true
+  },
+  {
+   "case": "manifest file-directory prefix collision rejected",
+   "pass": true
+  },
+  {
+   "case": "absent but indexed destination refused before directory creation",
+   "pass": true
+  },
+  {
+   "case": "manifest-file symlink refused",
+   "pass": true
+  },
+  {
+   "case": "dangling final symlink refused",
+   "pass": true
+  },
+  {
+   "case": "tree object rejected as source commit",
+   "pass": true
+  },
+  {
+   "case": "unsupported descriptor primitives fail closed during load",
+   "pass": true
+  }
+ ],
+ "regeneration": {
+  "command": [
+   "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+   "-B",
+   "/tmp/padua-storage-supp-0vg39wkb/regen/topics/padua-argmax-alln-20261101/code/gated/d3_edge_generate.py",
+   "--output",
+   "/tmp/padua-storage-supp-0vg39wkb/regen-output/d3_edge_certificate.json",
+   "--ep-output",
+   "/tmp/padua-storage-supp-0vg39wkb/regen-output/d3_ep_screen.json"
+  ],
+  "thread_environment": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1",
+  "source_commit": "1cecd68ac0a64b01ed7b2d262b6263a955a7d4d7",
+  "sources": [
+   {
+    "path": "code/gated/d3_edge_generate.py",
+    "sha256": "b0c2b98851dd8721bc876686fd388c62085938ff24d97308a132a7f14e9e3145",
+    "same_as_current": true
+   },
+   {
+    "path": "code/gated/d3_edge_common.py",
+    "sha256": "fd3b278f167999def5a8f43ddd83da258e5ce2452a76082d9256dcde93d01b92",
+    "same_as_current": true
+   },
+   {
+    "path": "code/gated/d3_edge_check.py",
+    "sha256": "5f43f69a427c415542848f8ae9e337c69b3a5b8f822e78db38e095a0a2c9a358",
+    "same_as_current": true
+   },
+   {
+    "path": "code/part3/tests_common.py",
+    "sha256": "c17e4ed6473b90ed2fa887d0bd2d0b3cf5f6625bbf0d75153a6fa07e26e2a3b7",
+    "same_as_current": true
+   },
+   {
+    "path": "code/maj.py",
+    "sha256": "705139a65f225f66ed30f5c7f197cda9f54137c42fb10c8b6f452ab83c78909c",
+    "same_as_current": true
+   },
+   {
+    "path": "code/part3/finite_general.py",
+    "sha256": "b20b7f88ddfc0bbc92e68096063ef626664028c2a379c34d16dc9f84e17aa74a",
+    "same_as_current": true
+   },
+   {
+    "path": "code/part3/finite_bernstein.py",
+    "sha256": "a3133c6c22a365380f6c2ab14f6d31f60153d0df902b325cfcfbeeccc1bed74f",
+    "same_as_current": true
+   },
+   {
+    "path": "code/part3/finite_n2_exact.py",
+    "sha256": "a5f00e6039d6ec76660cac90fb5720e0d6721348ed34c9e62775e1125d3e87c2",
+    "same_as_current": true
+   },
+   {
+    "path": "gated/d3/r01-finite.md",
+    "sha256": "94e87303e0e08aecee3250e8108cfb4c97f56c1400bbbdabb286afca3ed9caa4",
+    "same_as_current": false
+   }
+  ],
+  "returncode": 0,
+  "bytes": 24993,
+  "sha256": "3215523e1a768ce7e81c76283ac18bf476f8162bdcd84e579a7b93388707d14c",
+  "byte_identical_to_historical": true,
+  "scope": "D3 E-P measurement only; certificate by-product not newly audited"
+ },
+ "metadata_checks": {
+  "human_rows_agree_with_machine": 36,
+  "all_script_blob_ids_in_human": true,
+  "historical_version_markers": 1,
+  "A_source_root_replacements": 3,
+  "A_json_records_have_declared_90dps_801grid_and_optional_checks": 8,
+  "D_explicit_degrees_match_21_defaults": true,
+  "T1_historical_prerequisites_documented": true,
+  "retrieval_only_inventory_provenance_distinguished": true,
+  "old_audit_and_response_review_files_unchanged": 10
+ },
+ "additional_static_probes_source_sha256": "d12fc95dc1fe6145ad0f82b225104cee568bab5586bcd247fe445c671f123bd5",
+ "developer_cli_suite": {
+  "command": "python -B tools/test_cold_storage.py",
+  "tests": 19,
+  "all_pass": true,
+  "stderr_sha256": "5d2337821c58a1a4d81cf1b38d1f71967b4e3977e9b19f4545bcdbe09da21d12"
+ },
+ "foreign_worktree_recheck": {
+  "helper_sha256": "d12fc95dc1fe6145ad0f82b225104cee568bab5586bcd247fe445c671f123bd5",
+  "results": [
+   {
+    "case": "external foreign repository root, tracked matching file",
+    "restore_clean_refused": true,
+    "existing_files_preserved": true
+   },
+   {
+    "case": "destination below external foreign ancestor",
+    "restore_clean_refused": true,
+    "existing_files_preserved": true
+   },
+   {
+    "case": "foreign nested checkout along payload path",
+    "restore_clean_refused": true,
+    "existing_files_preserved": true
+   },
+   {
+    "case": "linked-worktree-style .git file marker",
+    "restore_clean_refused": true,
+    "existing_files_preserved": true
+   }
+  ]
+ },
+ "foreign_worktree_extra_probes": [
+  {
+   "case": "empty",
+   "pass": true
+  },
+  {
+   "case": "symlink",
+   "pass": true
+  },
+  {
+   "case": "export-nested",
+   "pass": true
+  }
+ ],
+ "review_finding_disposition": {
+  "initial_helper_sha256": "416b03cb8e55f0f4bf8b75b1989d73b30e6f2fc16986d79f8b53baf37aa8c7d2",
+  "finding": "Source-repository-only tracking allowed deletion of three tracked files in an owned external checkout fixture.",
+  "developer_repair": "Foreign-worktree markers now cause mutating operations to refuse.",
+  "recheck": "PASS: existing files preserved in foreign root, ancestor, nested checkout and .git-file fixtures; nested export and .git symlink refused; empty sentinel allowed.",
+  "verdict": "Supplementary check passes within documented static/quiescent POSIX scope; independent Claude review pending."
+ }
+}

@@ -1,0 +1,49 @@
+{
+  "status": "MEASURED sanity only; no interval arithmetic or proof role",
+  "seed": 20261102,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "source_sha256": "adb3792a249aaf34b286e92936d846c9db1e23ab296e586463bf04d6d853d7ca",
+  "algebra_cases": 480,
+  "max_cleared_identity_abs_error": 4.1167069753100805e-13,
+  "collision_factor_cases": 135,
+  "max_factor_abs_error": 1.0786038728838321e-11,
+  "polynomial_collision_values": [
+    {
+      "n": 2,
+      "alpha": 1.0471975511965976,
+      "angle_difference": 0.0,
+      "finite_G": -1.5000000000000013
+    },
+    {
+      "n": 3,
+      "alpha": 0.7853981633974483,
+      "angle_difference": 0.0,
+      "finite_G": 2.292893218813453
+    },
+    {
+      "n": 8,
+      "alpha": 0.3490658503988659,
+      "angle_difference": 0.0,
+      "finite_G": -7.060307379214105
+    },
+    {
+      "n": 17,
+      "alpha": 0.17453292519943295,
+      "angle_difference": 0.0,
+      "finite_G": 16.015192246987777
+    },
+    {
+      "n": 31,
+      "alpha": 0.09817477042468103,
+      "angle_difference": -4.440892098500626e-16,
+      "finite_G": 30.004815273327523
+    },
+    {
+      "n": 64,
+      "alpha": 0.0483321946706122,
+      "angle_difference": 4.440892098500626e-16,
+      "finite_G": -63.001167773169904
+    }
+  ]
+}

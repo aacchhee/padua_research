@@ -1,0 +1,16 @@
+{
+  "accepted": true,
+  "all_supplied_bounds_verified": true,
+  "certificate_sha256": "f44e2897e5b9432720293bf0a9243d6a6bada6a4e33642bc7924a2f65d635a8e",
+  "checker_sha256": "f9d33648eb05f9539f32c7d8f9003ed61410c7acfff9095bf7ea665989ac8281",
+  "complete_partition": true,
+  "counts": {
+    "bound": 52,
+    "corner": 2,
+    "splits": 53
+  },
+  "format": "padua-part3-general-check-v1",
+  "n": 12,
+  "seconds": 6.278169897999987,
+  "verified_claim": "only the two non-node corners attain the global maximum"
+}

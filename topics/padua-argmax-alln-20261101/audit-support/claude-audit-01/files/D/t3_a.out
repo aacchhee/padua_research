@@ -1,0 +1,2 @@
+{"n": 17, "Lambda_c": 8.617947824993605, "grid_max": 8.617947824993605, "grid_argmax": [3.141592653589793, 3.141592653589793], "max_over_cands_minus_Lc": 0.0, "gap_Lc_minus_best_noncorner": 0.5905596210929129, "secs": 5.167344570159912} best_noncorner_at [0.0, 1.5707963261376814]
+{"n": 18, "Lambda_c": 8.819173252616165, "grid_max": 8.819173252616167, "grid_argmax": [0.0, 3.141592653589793], "max_over_cands_minus_Lc": 5.329070518200751e-15, "gap_Lc_minus_best_noncorner": 0.5906718843939522, "secs": 5.473269462585449} best_noncorner_at [3.141592653589793, 1.4875333598514742]

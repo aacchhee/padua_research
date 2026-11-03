@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-03 Europe/Oslo",
+  "base_main": "1acebf7af47885654dfd1ffe0b9c8cda19c8f2a6",
+  "topic_published_head": "0441756471436253b70f2a37be1bb644351f8bc4",
+  "open_prs": [
+    17
+  ],
+  "merged_pr18": "1acebf7af47885654dfd1ffe0b9c8cda19c8f2a6",
+  "merged_pr18_final_head": "367c3167199bb3599e96c161136dfbdb72acb57b",
+  "closed_unmerged_prs": [],
+  "main_sources": [
+    {
+      "path": "PROOF_STATUS.md",
+      "sha": "93699fb94761e459a826746b050ceb48443f3116",
+      "maxima": {
+        "PD-T": 197,
+        "PD-N": 73,
+        "IDEA-": 227,
+        "LIT-": 426
+      }
+    },
+    {
+      "path": "ID_CROSSWALK.md",
+      "sha": "df2849891a3da582ee1e79df0ce82f549bdb7820",
+      "maxima": {
+        "PD-T": 198,
+        "PD-N": 74,
+        "IDEA-": 312,
+        "LIT-": 445
+      }
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "sha": "1ff65e92943751bef12e8c3ac40d3d35d9a29fce",
+      "maxima": {
+        "PD-T": 205,
+        "PD-N": 77,
+        "IDEA-": 315,
+        "LIT-": 460
+      }
+    },
+    {
+      "path": "state/IDEAS.md",
+      "sha": "ac0c4d133d412f32060e982b870850759f4352a6",
+      "maxima": {
+        "PD-T": 197,
+        "PD-N": 73,
+        "IDEA-": 311,
+        "LIT-": 426
+      }
+    },
+    {
+      "path": "literature/INDEX.md",
+      "sha": "d4176c1e98a1088500782d8123516c48a9a3eeda",
+      "maxima": {
+        "PD-T": 100,
+        "PD-N": 43,
+        "IDEA-": 209,
+        "LIT-": 428
+      }
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+      "sha": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+      "maxima": {
+        "PD-T": 12,
+        "PD-N": 1,
+        "IDEA-": 51,
+        "LIT-": 41
+      }
+    }
+  ],
+  "same_permanent_topic_ranges": "T206\u2013245,N078\u2013083,IDEA316\u2013335,LIT460\u2013465",
+  "assigned": "T206\u2013235,N078\u2013083,IDEA316\u2013335;existingT181reused",
+  "unused_permanent_gaps": "T236\u2013245,LIT460\u2013465",
+  "new_reservations": false,
+  "collision": false,
+  "basis": "New main introduces no scientific ID or reservation; PR18 explicitly no range. Original union scan retained. Current assignments stay within previously published unchanged ranges."
+}

@@ -1,0 +1,135 @@
+[
+  {
+    "command": [
+      "python3",
+      "check.py"
+    ],
+    "cwd": "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/code",
+    "started_utc": "2026-11-01T21:17:38.634109+00:00",
+    "finished_utc": "2026-11-01T21:17:38.890497+00:00",
+    "wall_seconds": 0.2563984249999862,
+    "returncode": 0,
+    "environment_overrides": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "output": "check.out",
+    "output_sha256": "1311b34f092b2f6c954b571d7029bc532b095465a905c56ee0cc43df7618f4cc"
+  },
+  {
+    "command": [
+      "python3",
+      "cell.py",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "12",
+      "15",
+      "20",
+      "30",
+      "40"
+    ],
+    "cwd": "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/code",
+    "started_utc": "2026-11-01T21:17:38.634607+00:00",
+    "finished_utc": "2026-11-01T21:17:43.816790+00:00",
+    "wall_seconds": 5.182203689000005,
+    "returncode": 0,
+    "environment_overrides": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "output": "cell.out",
+    "output_sha256": "a80346a05a0ca535500d73d1d2b07d5601ea2e7e672a8453eaf365ef5be7a528"
+  },
+  {
+    "command": [
+      "python3",
+      "interior.py",
+      "8",
+      "12",
+      "16",
+      "24",
+      "32",
+      "48"
+    ],
+    "cwd": "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/code",
+    "started_utc": "2026-11-01T21:17:38.635448+00:00",
+    "finished_utc": "2026-11-01T21:17:56.580662+00:00",
+    "wall_seconds": 17.94524751299997,
+    "returncode": 0,
+    "environment_overrides": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "output": "interior.out",
+    "output_sha256": "3d98432be0289bafaad3150560a06d12c768e60c8c61233206614648b0e61ab1"
+  },
+  {
+    "command": [
+      "python3",
+      "edgeprofile.py",
+      "12",
+      "24",
+      "48",
+      "96"
+    ],
+    "cwd": "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/code",
+    "started_utc": "2026-11-01T21:17:38.635912+00:00",
+    "finished_utc": "2026-11-01T21:18:10.722116+00:00",
+    "wall_seconds": 32.086220142,
+    "returncode": 0,
+    "environment_overrides": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "output": "edgeprofile.out",
+    "output_sha256": "2506fce17769ed37baf68594e729cfdc6e203905fc274894ff184f8d031884e1"
+  },
+  {
+    "command": [
+      "python3",
+      "strips.py",
+      "24",
+      "48"
+    ],
+    "cwd": "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/code",
+    "started_utc": "2026-11-01T21:17:38.636645+00:00",
+    "finished_utc": "2026-11-01T21:18:04.988977+00:00",
+    "wall_seconds": 26.35235172,
+    "returncode": 0,
+    "environment_overrides": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "output": "strips.out",
+    "output_sha256": "8fd9bf84a233fe1cc63b9175a950e3cda16739e00113c0d7e0a69be52e8865cc"
+  },
+  {
+    "command": [
+      "python3",
+      "n2_edges.py"
+    ],
+    "cwd": "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/code",
+    "started_utc": "2026-11-01T21:17:38.642489+00:00",
+    "finished_utc": "2026-11-01T21:17:42.354520+00:00",
+    "wall_seconds": 3.712046473999976,
+    "returncode": 0,
+    "environment_overrides": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "output": "n2_edges.out",
+    "output_sha256": "4e5ccd0adae74c89e3dabb8553bf7adc8f26d5aaca1a5d0900b85f65fea6c8e8"
+  }
+]

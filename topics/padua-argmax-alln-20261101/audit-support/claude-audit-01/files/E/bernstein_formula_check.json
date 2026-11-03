@@ -1,0 +1,18 @@
+{
+ "eq2_symbolic_identity_n7": true,
+ "impl_matches_eq2_n7_k2": true,
+ "source_interval_n7_k2": [
+  0.3826834323650898,
+  0.9238795325112867,
+  0.38268343236508984,
+  0.9238795325112867
+ ],
+ "eq2_symbolic_identity_n12": true,
+ "impl_matches_eq2_n12_k5": true,
+ "source_interval_n12_k5": [
+  0.12053668025532305,
+  0.5680647467311558,
+  0.120536680255323,
+  0.5680647467311559
+ ]
+}

@@ -1,0 +1,27 @@
+{
+  "checker_sha256": "797506c7edbdc648ca9c4bddc32f9c8fa1779b9bb16e1c23dd401171770aed71",
+  "optimized_cli_rejection_controls": [
+    {
+      "case": "unsupported_format",
+      "rejected": true,
+      "returncode": 1,
+      "expected_reason": "unsupported current manifest format"
+    },
+    {
+      "case": "duplicate_inventory_row",
+      "rejected": true,
+      "returncode": 1,
+      "expected_reason": "duplicate or missing inventory row"
+    },
+    {
+      "case": "forged_current_file_hash",
+      "rejected": true,
+      "returncode": 1,
+      "expected_reason": "results/padua-argmax-alln-20261101.md"
+    }
+  ],
+  "plain_check_with_optimization_passed": true,
+  "plain_check_changed_files": [],
+  "historical_evidence_edited": false,
+  "scope": "Integrity inventory only; no scientific checker/certificate changes or reruns implied."
+}

@@ -1,0 +1,259 @@
+{
+  "role": "bounded developer registry preparation, not independent approval",
+  "configured_model": "gpt-6.1-sol high",
+  "serving_metadata": "not independently exposed",
+  "rules_input": "cdb12257af24ea2542de707b9730f8278d69a168",
+  "new_PD_T": 30,
+  "reused_PD_T181": 1,
+  "new_PD_N": 6,
+  "total_mapped_theory_records": 37,
+  "statuses": {
+    "PROVED": 26,
+    "MEASURED": 11
+  },
+  "all_unrelated_existing_PROOF_STATUS_rows_unchanged": true,
+  "PD_T099_original_statement_and_OPEN_preserved": true,
+  "all_topic_row_links_resolve": true,
+  "all_new_rows_eight_columns": true,
+  "all_scientific_aliases_one_final_ID": true,
+  "before_shared_sha256": {
+    "PROOF_STATUS.md": "4d93f5d010758735555d4910cab7a411711a025818023b2f4166c399e8276718",
+    "ID_CROSSWALK.md": "4b9e50d4d01dddeb7a67e0062de047bf090288f478c9d6ec51d9adfcb33e4cfa"
+  },
+  "worker_after_shared_sha256": {
+    "PROOF_STATUS.md": "902ba0f1cfcd2534dada6c16f2d44851ea5148e4bd96ac61455a29aa1e129111",
+    "ID_CROSSWALK.md": "2fed24c13849e1c3320b6b1f12dfe0b2451cdf5ffc41fea9d2804cf3817d896b"
+  },
+  "source_rows_before_parent_ID_substitution": [
+    [
+      "PD-T206",
+      "argmax-alln-claude-01-measured-observations.md",
+      "MEASURED",
+      "fdfe442afec91d70578b98524df2de63e632fa3786d7f6fd2e0eb4b224adff40"
+    ],
+    [
+      "PD-T207",
+      "argmax-alln-claude-02-measured-edge-profile.md",
+      "MEASURED",
+      "912aaa52d891d03ca9a08ad613318dfb5eda8bcf64f82f2ee7c58db1d5e93614"
+    ],
+    [
+      "PD-T208",
+      "argmax-alln-codex-01-measured-tests.md",
+      "MEASURED",
+      "657dda0442c77ccda6f03ac664939caf8b3f45adfa4813ed73ecd377dbe16b7d"
+    ],
+    [
+      "PD-T209",
+      "argmax-alln-codex-02-degree-two-global-argmax.md",
+      "PROVED",
+      "e428abe49d26ae07710cbd6056da79985ccf646acdb5e860de0f543f34f60e51"
+    ],
+    [
+      "PD-T210",
+      "argmax-alln-codex-03-finite-certificate-correctness.md",
+      "PROVED",
+      "088e4202112b67dece8bf61c21d426c7f85f041b6b6dd36391dea89fc93b0b6c"
+    ],
+    [
+      "PD-T211",
+      "argmax-alln-codex-04-vertical-compact-defect.md",
+      "PROVED",
+      "de69fecd7e906acfb1b9b80101549cdf9d88455b28977fd8353943aea1a811c2"
+    ],
+    [
+      "PD-T212",
+      "argmax-alln-codex-05-horizontal-compact-defect.md",
+      "PROVED",
+      "252d827446b61522f6b41a8885db32c0fe12a3c2e93fe291ede87d7662fd9d3a"
+    ],
+    [
+      "PD-T213",
+      "argmax-alln-codex-06-measured-pairing.md",
+      "MEASURED",
+      "a0c990bad199b6430b797be7696487fd1978629977a9f747a7384e6466e320b4"
+    ],
+    [
+      "PD-T181",
+      "argmax-alln-codex-07-degree-eight-global-argmax.md",
+      "PROVED",
+      "672832b16f0727aade801b2c071ae37e78b40c20d78c7e2d185addf98d9f2499"
+    ],
+    [
+      "PD-T214",
+      "argmax-alln-codex-08-degree-nine-through-sixteen-global-argmax.md",
+      "PROVED",
+      "1a9c3338e6d366d0a4c4b4d1b614ff45f92738fce6fb6c0590412be1f9e147ec"
+    ],
+    [
+      "PD-N078",
+      "argmax-alln-codex-N01-pairing-order-obstruction.md",
+      "PROVED",
+      "ec7474588a4c0529c4c76f76f1ac00a97f91e4b9c89da304c5f626f96eb40060"
+    ],
+    [
+      "PD-T215",
+      "gated-codex-01-pairwise-defect-projection.md",
+      "PROVED",
+      "2776bc4a7a7125230c0828a75879a280556fb0f375a2a3ccc89f8a62753b8ec2"
+    ],
+    [
+      "PD-T216",
+      "gated-codex-02-two-phase-global-bound.md",
+      "PROVED",
+      "81ef1d533c92cd5d60138c64c191e4a634cbbe6e439d8ef4b6b2fcdc81292673"
+    ],
+    [
+      "PD-T217",
+      "gated-codex-03-two-phase-local-gain.md",
+      "PROVED",
+      "2a69eb7ed3e470e7cef9f6fd8261046290d21631a1f1302f2dfd2672b3571da5"
+    ],
+    [
+      "PD-T218",
+      "gated-codex-04-compact-complement-gap.md",
+      "PROVED",
+      "2d28f8e5a2dfd0f1a6ac1e963e918fff9a41099fdaa030edd1fd9fbab3ac21c9"
+    ],
+    [
+      "PD-T219",
+      "gated-codex-05-finite-projected-defect.md",
+      "PROVED",
+      "e38e8f33b26606f2bcad398b22edd22f19af2924df92a951837bc02b1dba36d0"
+    ],
+    [
+      "PD-T220",
+      "gated-codex-06-exact-primitive-cusp.md",
+      "PROVED",
+      "865c0d3c2075b3aa7febd5b617b7e3f21bb566bde6d966bd635bf07d0b087b94"
+    ],
+    [
+      "PD-T221",
+      "gated-codex-07-explicit-local-envelope.md",
+      "PROVED",
+      "8d46f3a1fa4777c0f896619e89b258e7e48c01adfc458bfc8b2100a1b71ee17e"
+    ],
+    [
+      "PD-T222",
+      "gated-codex-08-adaptive-finite-defect.md",
+      "PROVED",
+      "db89d32a158951cf96e7a333bce5ed8716b95967acd97f7b3ca37b5d1494dfae"
+    ],
+    [
+      "PD-T223",
+      "gated-codex-09-shrinking-corner-reduction.md",
+      "PROVED",
+      "8d71da0596273e3b9fa195c831c52b99a89fdb224eb417f6e13d833ca3b0efe0"
+    ],
+    [
+      "PD-T224",
+      "gated-codex-10-noncorner-coset-defect.md",
+      "PROVED",
+      "a705fda7cf7f6f9a6551ec10d1875b4755ef8894ee441969c4eecc6d99aa449c"
+    ],
+    [
+      "PD-T225",
+      "gated-codex-11-corner-phase-localization.md",
+      "PROVED",
+      "eda0281a16bfc4b285497c03d4ad2289a927b464c439c71786af119fedfa5c17"
+    ],
+    [
+      "PD-T226",
+      "gated-codex-12-row-primitive-identity.md",
+      "PROVED",
+      "2692c28af71b4f5eeb129f3a2f32a24a5a3e7e8929279063e0c63f3edbaf3d92"
+    ],
+    [
+      "PD-T227",
+      "gated-codex-13-corner-first-variation.md",
+      "PROVED",
+      "4fecc40539284e11a543bc5547e7fb3ffb873246b9a755442d4147b47a5668aa"
+    ],
+    [
+      "PD-T228",
+      "gated-codex-14-reflection-first-corner-bound.md",
+      "PROVED",
+      "866511bc0d7bd27a942102554b27b849b55c60fd9deb1deb95e839aa066ccac4"
+    ],
+    [
+      "PD-T229",
+      "gated-codex-15-eventual-global-argmax.md",
+      "PROVED",
+      "ad78385f4b1c959e305898018f812ddee1caaf742ddc27a9c4bb38cba75a28e7"
+    ],
+    [
+      "PD-T230",
+      "gated-codex-16-horizontal-compact-envelope.md",
+      "PROVED",
+      "4769d46e0b9e77cc98efdacccd613dd939014b581573b4ec343270be2ef47b00"
+    ],
+    [
+      "PD-T231",
+      "gated-codex-17-finite-edge-cell-comparison.md",
+      "PROVED",
+      "9233ab051440d81e0f4d02ef6ef92a6a82f3dedf61152cf08678bce25d01bbf3"
+    ],
+    [
+      "PD-N079",
+      "gated-codex-N01-majorant-coset-obstruction.md",
+      "PROVED",
+      "a2a98f20f408c3b04405ec995d6120fe9d5d3a5091fe08fc3c26904a814759a0"
+    ],
+    [
+      "PD-N080",
+      "gated-codex-N02-pointwise-edge-translation-obstruction.md",
+      "PROVED",
+      "fee2230e6b595706db1dd60cd34fa5287ccad816ba41db1d80d672c6f3e2d17e"
+    ],
+    [
+      "PD-T232",
+      "prep-codex-01-d1-phase-defect-screen.md",
+      "MEASURED",
+      "1bb0a97aa23a142682165876f18ed6d43496d27ef2d0daeda2d071c1fc66c733"
+    ],
+    [
+      "PD-T233",
+      "prep-codex-02-d2-corner-screen.md",
+      "MEASURED",
+      "38726e35f144cac557ef9ef2caf0ad160552446470c4ff82fc2e0d751b5b9e0c"
+    ],
+    [
+      "PD-T234",
+      "prep-codex-03-d1-row-grid.md",
+      "MEASURED",
+      "22fa3f35a9e5716f795dfcaad992c7a8b85e97fb89a6ef725f97d16b2a5db187"
+    ],
+    [
+      "PD-T235",
+      "prep-codex-04-d3-pointwise-screen.md",
+      "MEASURED",
+      "70548e962476fa320ff2001a21726dce91eabd7b427204b70178b75ccf90e3bf"
+    ],
+    [
+      "PD-N081",
+      "prep-codex-N01-or-order-screen.md",
+      "MEASURED",
+      "09ef6883419bc833d901c17891582d23b71867c3b7bc3d7b3d4e7d8d288c914c"
+    ],
+    [
+      "PD-N082",
+      "prep-codex-N02-t2-profile-test.md",
+      "MEASURED",
+      "ce7390f48de573998ad0ad8caeda38347dfda525d0db8e4fd0c4d9cbfb9471f3"
+    ],
+    [
+      "PD-N083",
+      "prep-codex-N03-t3-profile-test.md",
+      "MEASURED",
+      "23d3256fc82a63c76654c1a49b412bbb867645deee53384ff3664b32c4121388"
+    ]
+  ],
+  "source_row_columns": [
+    "final_ID",
+    "topic_theory_basename",
+    "status",
+    "read_candidate_sha256"
+  ],
+  "independent_preparation_review": "PENDING in this worker output; parent coordinates distinct final audit",
+  "no_new_mathematics_or_measurement": true
+}

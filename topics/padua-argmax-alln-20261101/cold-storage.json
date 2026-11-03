@@ -1,0 +1,537 @@
+{
+ "format": "padua-cold-storage-v1",
+ "slug": "padua-argmax-alln-20261101",
+ "source_commit": "1cecd68ac0a64b01ed7b2d262b6263a955a7d4d7",
+ "threshold_bytes": 16384,
+ "policy": "AC 2026-11-02: large regenerable outputs are not stored at the branch head; code and short summaries stay. Files below are retrievable byte-exactly from Git history (blob ids) and pending export to AC Padua cold storage Downloads\\padua\\cold_storage\\padua-argmax-alln-20261101\\.",
+ "delivery_to_AC_cold_storage": "PENDING. Use a supported POSIX/WSL environment and the authorized Downloads\\padua\\cold_storage directory through its actual mounted POSIX path: python -B tools/cold_storage.py export padua-argmax-alln-20261101 --dest <authorized-POSIX-destination>. No delivery to AC has been performed or verified.",
+ "entries": [
+  {
+   "path": "topics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/out/indep_n10.json",
+   "bytes": 20446,
+   "sha256": "b9187b0832c9f3e88bd5d2c1e8d92811decd1aaff926b95f06c07097dfc28519",
+   "git_blob": "3446dcca1291b62c756bc3b7645d33208c7c26d8",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$OUT/padua_indep.py\" --n 10 --dps 90 --out \"$OUT\" --grid 801 --checker-compare --leaf-replay --leaf-containment",
+   "notes": "A relocation/bootstrap required (command_context and COLD_STORAGE.md). Flags match the archived JSON fields (90 dps, 801 grid, checker/leaf replay/containment); original process grouping is unrecorded. Rerun is a measurement with timing/environment differences; retrieve the Git blob for exact historical bytes. Retained summary: audit-support/claude-audit-01/subaudit-reports/A.md.",
+   "script_blobs": {
+    "audit-support/claude-audit-01/files/A/indep/padua_indep.py": "5cc504d020cbbb5845cb5ec1d9f2c40de0bc35d2",
+    "code/part3/finite_general.py": "c71e9afd2f60afd12c0c2dcd20a3d28a878c9b0a",
+    "code/part3/finite_bernstein.py": "bdb485e76d41906b6b18a95db835e964a3c615da",
+    "code/part3/finite_n2_exact.py": "0e64550ebdfa7a32b70c2c0624cf481457e649c4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/out/indep_n11.json",
+   "bytes": 21137,
+   "sha256": "1b274485a19949449b219da46c4f13a9bb2baecec83f71745a00595f3c4dae3e",
+   "git_blob": "6342dd6865d3a011f4b0ba163c466249da858d96",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$OUT/padua_indep.py\" --n 11 --dps 90 --out \"$OUT\" --grid 801 --checker-compare --leaf-replay --leaf-containment",
+   "notes": "A relocation/bootstrap required (command_context and COLD_STORAGE.md). Flags match the archived JSON fields (90 dps, 801 grid, checker/leaf replay/containment); original process grouping is unrecorded. Rerun is a measurement with timing/environment differences; retrieve the Git blob for exact historical bytes. Retained summary: audit-support/claude-audit-01/subaudit-reports/A.md.",
+   "script_blobs": {
+    "audit-support/claude-audit-01/files/A/indep/padua_indep.py": "5cc504d020cbbb5845cb5ec1d9f2c40de0bc35d2",
+    "code/part3/finite_general.py": "c71e9afd2f60afd12c0c2dcd20a3d28a878c9b0a",
+    "code/part3/finite_bernstein.py": "bdb485e76d41906b6b18a95db835e964a3c615da",
+    "code/part3/finite_n2_exact.py": "0e64550ebdfa7a32b70c2c0624cf481457e649c4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/out/indep_n12.json",
+   "bytes": 22438,
+   "sha256": "296a01d44259d9d6fb01023db400acd7ffc4f269a3568b2eecd6dd0c44982d2d",
+   "git_blob": "158a98f66388ae133be98ac3a0344a041101d785",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$OUT/padua_indep.py\" --n 12 --dps 90 --out \"$OUT\" --grid 801 --checker-compare --leaf-replay --leaf-containment",
+   "notes": "A relocation/bootstrap required (command_context and COLD_STORAGE.md). Flags match the archived JSON fields (90 dps, 801 grid, checker/leaf replay/containment); original process grouping is unrecorded. Rerun is a measurement with timing/environment differences; retrieve the Git blob for exact historical bytes. Retained summary: audit-support/claude-audit-01/subaudit-reports/A.md.",
+   "script_blobs": {
+    "audit-support/claude-audit-01/files/A/indep/padua_indep.py": "5cc504d020cbbb5845cb5ec1d9f2c40de0bc35d2",
+    "code/part3/finite_general.py": "c71e9afd2f60afd12c0c2dcd20a3d28a878c9b0a",
+    "code/part3/finite_bernstein.py": "bdb485e76d41906b6b18a95db835e964a3c615da",
+    "code/part3/finite_n2_exact.py": "0e64550ebdfa7a32b70c2c0624cf481457e649c4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/out/indep_n13.json",
+   "bytes": 23153,
+   "sha256": "214a9b46a605a8ebecc4e213bb077e5cfde2a9a485bd6839dea8d6e8e985a3c4",
+   "git_blob": "a4744cf830a5b43f6126f733f934e2571005acb8",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$OUT/padua_indep.py\" --n 13 --dps 90 --out \"$OUT\" --grid 801 --checker-compare --leaf-replay --leaf-containment",
+   "notes": "A relocation/bootstrap required (command_context and COLD_STORAGE.md). Flags match the archived JSON fields (90 dps, 801 grid, checker/leaf replay/containment); original process grouping is unrecorded. Rerun is a measurement with timing/environment differences; retrieve the Git blob for exact historical bytes. Retained summary: audit-support/claude-audit-01/subaudit-reports/A.md.",
+   "script_blobs": {
+    "audit-support/claude-audit-01/files/A/indep/padua_indep.py": "5cc504d020cbbb5845cb5ec1d9f2c40de0bc35d2",
+    "code/part3/finite_general.py": "c71e9afd2f60afd12c0c2dcd20a3d28a878c9b0a",
+    "code/part3/finite_bernstein.py": "bdb485e76d41906b6b18a95db835e964a3c615da",
+    "code/part3/finite_n2_exact.py": "0e64550ebdfa7a32b70c2c0624cf481457e649c4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/out/indep_n14.json",
+   "bytes": 23831,
+   "sha256": "afa1161f333228b1088d8355b7eb36f7b66f2228823085dfe3d4d12d8391c944",
+   "git_blob": "7e6801272a06dfc0050353ff4fd602d0a98a675b",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$OUT/padua_indep.py\" --n 14 --dps 90 --out \"$OUT\" --grid 801 --checker-compare --leaf-replay --leaf-containment",
+   "notes": "A relocation/bootstrap required (command_context and COLD_STORAGE.md). Flags match the archived JSON fields (90 dps, 801 grid, checker/leaf replay/containment); original process grouping is unrecorded. Rerun is a measurement with timing/environment differences; retrieve the Git blob for exact historical bytes. Retained summary: audit-support/claude-audit-01/subaudit-reports/A.md.",
+   "script_blobs": {
+    "audit-support/claude-audit-01/files/A/indep/padua_indep.py": "5cc504d020cbbb5845cb5ec1d9f2c40de0bc35d2",
+    "code/part3/finite_general.py": "c71e9afd2f60afd12c0c2dcd20a3d28a878c9b0a",
+    "code/part3/finite_bernstein.py": "bdb485e76d41906b6b18a95db835e964a3c615da",
+    "code/part3/finite_n2_exact.py": "0e64550ebdfa7a32b70c2c0624cf481457e649c4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/out/indep_n15.json",
+   "bytes": 32025,
+   "sha256": "bf77f40bab5df8da1bca79a7995b691d72285fc569ac4aaeff698828df7789a6",
+   "git_blob": "cc933530615b00d56dac09c6e39eec3fddc654a3",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$OUT/padua_indep.py\" --n 15 --dps 90 --out \"$OUT\" --grid 801 --checker-compare --leaf-replay --leaf-containment",
+   "notes": "A relocation/bootstrap required (command_context and COLD_STORAGE.md). Flags match the archived JSON fields (90 dps, 801 grid, checker/leaf replay/containment); original process grouping is unrecorded. Rerun is a measurement with timing/environment differences; retrieve the Git blob for exact historical bytes. Retained summary: audit-support/claude-audit-01/subaudit-reports/A.md.",
+   "script_blobs": {
+    "audit-support/claude-audit-01/files/A/indep/padua_indep.py": "5cc504d020cbbb5845cb5ec1d9f2c40de0bc35d2",
+    "code/part3/finite_general.py": "c71e9afd2f60afd12c0c2dcd20a3d28a878c9b0a",
+    "code/part3/finite_bernstein.py": "bdb485e76d41906b6b18a95db835e964a3c615da",
+    "code/part3/finite_n2_exact.py": "0e64550ebdfa7a32b70c2c0624cf481457e649c4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/out/indep_n16.json",
+   "bytes": 36804,
+   "sha256": "c2888ce3273c9691384d50f2dd6ab38da0f5b8151598634e80cc61cf407ae93d",
+   "git_blob": "8e847e58668fee9332f37353090e7b9de6597b56",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$OUT/padua_indep.py\" --n 16 --dps 90 --out \"$OUT\" --grid 801 --checker-compare --leaf-replay --leaf-containment",
+   "notes": "A relocation/bootstrap required (command_context and COLD_STORAGE.md). Flags match the archived JSON fields (90 dps, 801 grid, checker/leaf replay/containment); original process grouping is unrecorded. Rerun is a measurement with timing/environment differences; retrieve the Git blob for exact historical bytes. Retained summary: audit-support/claude-audit-01/subaudit-reports/A.md.",
+   "script_blobs": {
+    "audit-support/claude-audit-01/files/A/indep/padua_indep.py": "5cc504d020cbbb5845cb5ec1d9f2c40de0bc35d2",
+    "code/part3/finite_general.py": "c71e9afd2f60afd12c0c2dcd20a3d28a878c9b0a",
+    "code/part3/finite_bernstein.py": "bdb485e76d41906b6b18a95db835e964a3c615da",
+    "code/part3/finite_n2_exact.py": "0e64550ebdfa7a32b70c2c0624cf481457e649c4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/out/indep_n9.json",
+   "bytes": 18386,
+   "sha256": "6d2074c442cc7c79d9ce8ac7155a244a601ac887bae147c7f403f9e11a0e0d34",
+   "git_blob": "a2223ee483f139a696a2b608ac56dc625e02fbcc",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$OUT/padua_indep.py\" --n 9 --dps 90 --out \"$OUT\" --grid 801 --checker-compare --leaf-replay --leaf-containment",
+   "notes": "A relocation/bootstrap required (command_context and COLD_STORAGE.md). Flags match the archived JSON fields (90 dps, 801 grid, checker/leaf replay/containment); original process grouping is unrecorded. Rerun is a measurement with timing/environment differences; retrieve the Git blob for exact historical bytes. Retained summary: audit-support/claude-audit-01/subaudit-reports/A.md.",
+   "script_blobs": {
+    "audit-support/claude-audit-01/files/A/indep/padua_indep.py": "5cc504d020cbbb5845cb5ec1d9f2c40de0bc35d2",
+    "code/part3/finite_general.py": "c71e9afd2f60afd12c0c2dcd20a3d28a878c9b0a",
+    "code/part3/finite_bernstein.py": "bdb485e76d41906b6b18a95db835e964a3c615da",
+    "code/part3/finite_n2_exact.py": "0e64550ebdfa7a32b70c2c0624cf481457e649c4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/A/indep/run_8_12.log",
+   "bytes": 16610,
+   "sha256": "6a55f55bfe2fb252aa57bfb373e05ab390b37ba0e35f0db140020793a283ecb6",
+   "git_blob": "7df7207db7f825ebc504af32b672c50d5377d73b",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$OUT/padua_indep.py\" --n 8 9 10 11 12 --dps 90 --out \"$OUT\" --grid 801 --checker-compare --leaf-replay --leaf-containment > \"$OUT/run_8_12.log\"",
+   "notes": "Historical log records n=8..12 and includes shell real/user/sys timing. The original timing/redirection wrapper is unrecorded; the listed command reproduces the scientific stdout scope, not exact log bytes. Exact log recovery is retrieval-only. A relocation/bootstrap required; retained summary: subaudit-reports/A.md.",
+   "script_blobs": {
+    "audit-support/claude-audit-01/files/A/indep/padua_indep.py": "5cc504d020cbbb5845cb5ec1d9f2c40de0bc35d2",
+    "code/part3/finite_general.py": "c71e9afd2f60afd12c0c2dcd20a3d28a878c9b0a",
+    "code/part3/finite_bernstein.py": "bdb485e76d41906b6b18a95db835e964a3c615da",
+    "code/part3/finite_n2_exact.py": "0e64550ebdfa7a32b70c2c0624cf481457e649c4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/audit-support/claude-audit-01/files/D/t1_local.json",
+   "bytes": 55374,
+   "sha256": "5788e226f982ff6e8455620370dce67989976bbe48bc8a65e9362663884fc156",
+   "git_blob": "bf55958efd0bfb4b746fb3a19a0edd0285036c6b",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$OUT/D/t1_local.py\" 2,3,4,5,8,10,16,20,21,30,31,50,51,64,65,100,101,150,151,200,201 > \"$OUT/D/t1_local.out\"",
+   "notes": "D relocation/bootstrap required: copy both scripts to OUT/D before execution; JSON is written to OUT/D/t1_local.json beside the copied script. Explicit degrees equal the producer defaults. Float64 measurement rerun need not reproduce historical bytes. Retained scope/summary: subaudit-reports/D.md.",
+   "script_blobs": {
+    "audit-support/claude-audit-01/files/D/t1_local.py": "5f31c71ebc8fd508c38b4d11d9f5e32aaf612fc8",
+    "audit-support/claude-audit-01/files/D/padlib.py": "29382a67b3b1f9ca2e29ca7a13291c0b35614ab5"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/audit-support/claude-audit-01/manifest.json",
+   "bytes": 64406,
+   "sha256": "8f08622f5076114f74f8b9ffdabffe94bbf4f6a2e027c172ede9606b15900c69",
+   "git_blob": "6d6fac0e5135d29186173412c4c3826ff1a26ec2",
+   "generating_command": "git -C \"$REPO\" show \"$SOURCE:topics/padua-argmax-alln-20261101/audit-support/claude-audit-01/manifest.json\" > \"$OUT/audit-support-manifest.json\"",
+   "notes": "Historical audit inventory, including ephemeral unarchived scratch files. No known byte-exact manifest generator is committed, and those scratch bytes are unavailable; rerunning auditor scripts does not recreate this inventory. Retrieve the pinned blob. Provenance/limits: audit-support/claude-audit-01/README.md and subaudit-reports/F.md."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/evidence-manifest.json",
+   "bytes": 56546,
+   "sha256": "16eb0708715c3abb5b7ab7011cd9675ab8bcb12b9f371aef927edb1faf19d038",
+   "git_blob": "4605c7d78463f13baea5bf2a5b1d5bb999a942f1",
+   "generating_command": "git -C \"$REPO\" show \"$SOURCE:topics/padua-argmax-alln-20261101/evidence-manifest.json\" > \"$OUT/historical-evidence-manifest.json\"",
+   "notes": "Archived predecessor integrity inventory, originally generated by historical code/part3/check_evidence.py --refresh at output boundary c173fbf7ee66f02cc1d992e52edb43fdbd819474; refreshing a later tree is a different inventory. An active tracked current integrity manifest now occupies this pathname. Verify validates the archival source and distinguishes the active regular tracked file; in-place restore refuses tracked destinations. Use restore --dest scratch or export. Never overwrite the active manifest with this blob.",
+   "script_blobs": {
+    "code/part3/check_evidence.py": "390ce6862ded0106f4fe54020523ee5f5622dff4"
+   },
+   "worktree_role": "historical-version"
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/input-snapshot.json",
+   "bytes": 43980,
+   "sha256": "731bb44093219cf00bb160e730a90ce71879fda0571fc710209fd3312c5f3b59",
+   "git_blob": "96e8a8c15d020421749e35ce98de29606adedbcb",
+   "generating_command": "git -C \"$REPO\" show \"$SOURCE:topics/padua-argmax-alln-20261101/input-snapshot.json\" > \"$OUT/input-snapshot.json\"",
+   "notes": "Historical non-scripted input provenance written by the part-3 orchestrator from pinned inputs at 328be35; no byte-exact generator is known. Claude audit-01 subaudit F verified 236/236 input blobs. Retrieval preserves the historical record; a newly assembled snapshot is not the same record."
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/gated/d1_screen_r01.json.gz",
+   "bytes": 81843,
+   "sha256": "8b57766f8e0251cc6bbd2b772888846ba475f0c01025e17cdf124a90d6c0fc1d",
+   "git_blob": "52776ce47d53fddc5000e7d01b96f93bf88e663d",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$T/code/gated/d1_screen_r01.py\" \"$OUT/d1_screen_r01.json\" --cpu-budget 180 > \"$OUT/d1_screen_r01.out\"; gzip -n -9 -c \"$OUT/d1_screen_r01.json\" > \"$OUT/d1_screen_r01.json.gz\"",
+   "notes": "Replayed by Claude audit-01 sub-audit B: all 21,009 numeric leaves identical. Receipt: outputs/gated/check_d1_r01_receipt.json. Bootstrap the full source_commit tree and fresh OUT first. A rerun compares the recorded scientific scope; timing, argv, environment and embedded note hashes may differ. Git retrieval is the byte-exact authority.",
+   "script_blobs": {
+    "code/gated/d1_screen_r01.py": "cd1c6b42627e33f0aa82c1c966fc85799532d2e8",
+    "code/part3/tests_common.py": "fe93be375f907a8c402767c41a6b5bd7792921cd",
+    "code/maj.py": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/gated/d1_screen_r01.out",
+   "bytes": 43818,
+   "sha256": "a5487a62de947062cd3e9b94bb2750c30d9d3019e2ffa2eaadb7aae554ce640c",
+   "git_blob": "3e654429a59b1dc4fe6fe3707d1a991b7c9de1e0",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$T/code/gated/d1_screen_r01.py\" \"$OUT/d1_screen_r01.json\" --cpu-budget 180 > \"$OUT/d1_screen_r01.out\"",
+   "notes": "Stdout of the same run; differs only in timings on replay. Bootstrap the full source_commit tree and fresh OUT first. A rerun compares the recorded scientific scope; timing, argv, environment and embedded note hashes may differ. Git retrieval is the byte-exact authority.",
+   "script_blobs": {
+    "code/gated/d1_screen_r01.py": "cd1c6b42627e33f0aa82c1c966fc85799532d2e8",
+    "code/part3/tests_common.py": "fe93be375f907a8c402767c41a6b5bd7792921cd",
+    "code/maj.py": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/gated/d2_screen_r01.json",
+   "bytes": 72838,
+   "sha256": "78dbf52b06c15d2ebae5f0fee5153236de28034ac8cc0fdf0d923de887ead5ad",
+   "git_blob": "796f95b32077c9aca9fec1f8ef1418e0928cc6c6",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$T/code/gated/d2_screen_r01.py\" \"$OUT/d2_screen_r01.json\" > \"$OUT/d2_screen_r01.out\"",
+   "notes": "Replayed by Claude audit-01 sub-audit C: all 1505 numbers identical. Receipt: check_d2_r01_receipt.json; weighted summary d2_screen_r01_weighted.json. Bootstrap the full source_commit tree and fresh OUT first. A rerun compares the recorded scientific scope; timing, argv, environment and embedded note hashes may differ. Git retrieval is the byte-exact authority.",
+   "script_blobs": {
+    "code/gated/d2_screen_r01.py": "d69931d9a3c0daf8350b147c39583c75ae1bfea9",
+    "code/maj.py": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4",
+    "code/part3/finite_n2_exact.py": "0e64550ebdfa7a32b70c2c0624cf481457e649c4",
+    "code/part3/finite_general.py": "c71e9afd2f60afd12c0c2dcd20a3d28a878c9b0a",
+    "code/part3/finite_bernstein.py": "bdb485e76d41906b6b18a95db835e964a3c615da"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/gated/d2_screen_r01.out",
+   "bytes": 17010,
+   "sha256": "7b2ce3afb8a35510cf2351e70f714bec8c639795cbe4f661bf96c60e229ac1a7",
+   "git_blob": "b8e3ec844725ac1af6e1fb40e2c51fa32d7f5047",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$T/code/gated/d2_screen_r01.py\" \"$OUT/d2_screen_r01.json\" > \"$OUT/d2_screen_r01.out\"",
+   "notes": "Stdout of the same run. Bootstrap the full source_commit tree and fresh OUT first. A rerun compares the recorded scientific scope; timing, argv, environment and embedded note hashes may differ. Git retrieval is the byte-exact authority.",
+   "script_blobs": {
+    "code/gated/d2_screen_r01.py": "d69931d9a3c0daf8350b147c39583c75ae1bfea9",
+    "code/maj.py": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4",
+    "code/part3/finite_n2_exact.py": "0e64550ebdfa7a32b70c2c0624cf481457e649c4",
+    "code/part3/finite_general.py": "c71e9afd2f60afd12c0c2dcd20a3d28a878c9b0a",
+    "code/part3/finite_bernstein.py": "bdb485e76d41906b6b18a95db835e964a3c615da"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/gated/d3_ep_screen.json",
+   "bytes": 24993,
+   "sha256": "3215523e1a768ce7e81c76283ac18bf476f8162bdcd84e579a7b93388707d14c",
+   "git_blob": "d754979729e692305cb0e1513091407fd0aab541",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$T/code/gated/d3_edge_generate.py\" --output \"$OUT/d3_edge_certificate.json\" --ep-output \"$OUT/d3_ep_screen.json\"",
+   "notes": "Regenerated byte-identically by Claude audit-01 (sha256 3215523e...). Exact witnesses are in the committed d3_edge_certificate.json. Bootstrap the full source_commit tree and fresh OUT first. A rerun compares the recorded scientific scope; timing, argv, environment and embedded note hashes may differ. Git retrieval is the byte-exact authority.",
+   "script_blobs": {
+    "code/gated/d3_edge_generate.py": "ea8c40233fe0dbc2c0ab69b8535fc5a180f5fa95",
+    "code/gated/d3_edge_common.py": "e5fb8420e5312aaa32ccdd4b4fd10330867ff3aa",
+    "code/gated/d3_edge_check.py": "a911769342d9ab1d52bb49a076d9c6752bca8f84",
+    "code/part3/tests_common.py": "fe93be375f907a8c402767c41a6b5bd7792921cd",
+    "code/maj.py": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4",
+    "code/part3/finite_general.py": "c71e9afd2f60afd12c0c2dcd20a3d28a878c9b0a",
+    "code/part3/finite_bernstein.py": "bdb485e76d41906b6b18a95db835e964a3c615da",
+    "code/part3/finite_n2_exact.py": "0e64550ebdfa7a32b70c2c0624cf481457e649c4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/independent_T2.json",
+   "bytes": 69561,
+   "sha256": "bfc0197fb8c28f8b290337b5c25ce1ed83b289637a1a26292bb0c8a21e5ae0da",
+   "git_blob": "76352fa8ccb65e19f4dd40be76a4a0adda92bf7e",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$T/code/part3/tests_T2_T3.py\" T2 \"$OUT/independent_T2.json\"",
+   "notes": "Separate Astra execution of the same command; summary independent_T2.out. Bootstrap the full source_commit tree and fresh OUT first. A rerun compares the recorded scientific scope; timing, argv, environment and embedded note hashes may differ. Git retrieval is the byte-exact authority.",
+   "script_blobs": {
+    "code/part3/tests_T2_T3.py": "272543f5b27749b18fb0bddaf38fac4999a156d0",
+    "code/part3/tests_common.py": "fe93be375f907a8c402767c41a6b5bd7792921cd",
+    "code/maj.py": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/independent_T3.json",
+   "bytes": 83550,
+   "sha256": "4e4c94c497780962c2e9e354e0686a09387acdb3bbd1bc4d15ffa56818634ffa",
+   "git_blob": "aad94f76f866cbfce22d13cc22a029d95d0e77b6",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$T/code/part3/tests_T2_T3.py\" T3 \"$OUT/independent_T3.json\"",
+   "notes": "Separate Astra execution; summary independent_T3.out. Bootstrap the full source_commit tree and fresh OUT first. A rerun compares the recorded scientific scope; timing, argv, environment and embedded note hashes may differ. Git retrieval is the byte-exact authority.",
+   "script_blobs": {
+    "code/part3/tests_T2_T3.py": "272543f5b27749b18fb0bddaf38fac4999a156d0",
+    "code/part3/tests_common.py": "fe93be375f907a8c402767c41a6b5bd7792921cd",
+    "code/maj.py": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/pairing_screens.json",
+   "bytes": 106627,
+   "sha256": "f602acf48d82b91a26db422164836a4529828d027488f9f1b20e58497c8a93c2",
+   "git_blob": "9986a50d0b92b49ee9dbaa16cb83027ac7d19f40",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$T/code/part3/pairing_screens.py\" --degrees 4 7 12 24 50 --output \"$OUT/pairing_screens.json\"",
+   "notes": "Replayed by Claude audit-01: 2540 leaves exactly equal. Exact consequence checked by pairing_exact_check.json (committed). Bootstrap the full source_commit tree and fresh OUT first. A rerun compares the recorded scientific scope; timing, argv, environment and embedded note hashes may differ. Git retrieval is the byte-exact authority.",
+   "script_blobs": {
+    "code/part3/pairing_screens.py": "bc346c2c8d4f07fa4d58d7d825a2786419c82166",
+    "code/part3/tests_common.py": "fe93be375f907a8c402767c41a6b5bd7792921cd",
+    "code/maj.py": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1.json",
+   "bytes": 55302,
+   "sha256": "b80f8db44dfbdb2d48fab47bc40c6e9a3642e0bc2a3292b3e9c11d6bd06103bc",
+   "git_blob": "3756102854b795beb534ed1fe10a967b1c5d0d4d",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$T/code/part3/tests_T1.py\" \"$OUT/tests_T1.json\"; python -B \"$T/code/part3/tests_analyze.py\" \"$OUT\"",
+   "notes": "Raw tests_T1.py output replayed by Claude audit-01 (1,342,719 B, sha256 4d7792e6...) is leaf-equal to the committed split files and top-level fields; tests_analyze post-processing not replayed. Historical T1 setup requires T2/T3/T4 outputs in OUT before analyzer execution; use source_commit versions, not the current analyzer. Only the historical analyzer splits and rewrites T1; current analyzer preserves full input and reconstruct_t1.py reconstructs one complete artifact. Measurement reruns can differ in timing bytes; exact historical files are retrieved by blob.",
+   "script_blobs": {
+    "code/part3/tests_T1.py": "7472cd2a084e8a8d7bc5fbf59fb82f7fcf46ad9c",
+    "code/part3/tests_analyze.py": "3c5d3c6df5baec9e68026a8d839fc9559c4002b5",
+    "code/part3/tests_T2_T3.py": "272543f5b27749b18fb0bddaf38fac4999a156d0",
+    "code/part3/tests_T4.py": "16ae92dff66c2c71b618340b5d26070a154bcf5a",
+    "code/part3/tests_common.py": "fe93be375f907a8c402767c41a6b5bd7792921cd",
+    "code/maj.py": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n100.json",
+   "bytes": 68395,
+   "sha256": "156486bc9ab22cdc521e4b2dbfddca6bd6b7f6bde9f3b6a88a304fcabf3f516c",
+   "git_blob": "a4c67b5e2aabf0b2b2729dcb308ee68c0bfc1031",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$T/code/part3/tests_T1.py\" \"$OUT/tests_T1.json\"; python -B \"$T/code/part3/tests_analyze.py\" \"$OUT\"",
+   "notes": "Per-degree split written by tests_analyze.py; leaf-equal to the replayed raw tests_T1.py output (Claude audit-01). Audit finding F1 (split to evade the 1 MB limit) is resolved by moving these to cold storage. Historical T1 setup requires T2/T3/T4 outputs in OUT before analyzer execution; use source_commit versions, not the current analyzer. Only the historical analyzer splits and rewrites T1; current analyzer preserves full input and reconstruct_t1.py reconstructs one complete artifact. Measurement reruns can differ in timing bytes; exact historical files are retrieved by blob.",
+   "script_blobs": {
+    "code/part3/tests_T1.py": "7472cd2a084e8a8d7bc5fbf59fb82f7fcf46ad9c",
+    "code/part3/tests_analyze.py": "3c5d3c6df5baec9e68026a8d839fc9559c4002b5",
+    "code/part3/tests_T2_T3.py": "272543f5b27749b18fb0bddaf38fac4999a156d0",
+    "code/part3/tests_T4.py": "16ae92dff66c2c71b618340b5d26070a154bcf5a",
+    "code/part3/tests_common.py": "fe93be375f907a8c402767c41a6b5bd7792921cd",
+    "code/maj.py": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n101.json",
+   "bytes": 71096,
+   "sha256": "09241aaac1693791fcbbb685a5c60f6fbc33909f363a8fdda1b76699823230e2",
+   "git_blob": "bc50157c7b00f6a860ab20a4d31aad373570ca7e",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$T/code/part3/tests_T1.py\" \"$OUT/tests_T1.json\"; python -B \"$T/code/part3/tests_analyze.py\" \"$OUT\"",
+   "notes": "Per-degree split written by tests_analyze.py; leaf-equal to the replayed raw tests_T1.py output (Claude audit-01). Audit finding F1 (split to evade the 1 MB limit) is resolved by moving these to cold storage. Historical T1 setup requires T2/T3/T4 outputs in OUT before analyzer execution; use source_commit versions, not the current analyzer. Only the historical analyzer splits and rewrites T1; current analyzer preserves full input and reconstruct_t1.py reconstructs one complete artifact. Measurement reruns can differ in timing bytes; exact historical files are retrieved by blob.",
+   "script_blobs": {
+    "code/part3/tests_T1.py": "7472cd2a084e8a8d7bc5fbf59fb82f7fcf46ad9c",
+    "code/part3/tests_analyze.py": "3c5d3c6df5baec9e68026a8d839fc9559c4002b5",
+    "code/part3/tests_T2_T3.py": "272543f5b27749b18fb0bddaf38fac4999a156d0",
+    "code/part3/tests_T4.py": "16ae92dff66c2c71b618340b5d26070a154bcf5a",
+    "code/part3/tests_common.py": "fe93be375f907a8c402767c41a6b5bd7792921cd",
+    "code/maj.py": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n128.json",
+   "bytes": 87463,
+   "sha256": "37e44834102a1a1a0d830850384dcbbd77974d7cea8be907ec1fc0fce84a3f25",
+   "git_blob": "6de7e021264949a4596f0c86ec51d73245fc47b7",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$T/code/part3/tests_T1.py\" \"$OUT/tests_T1.json\"; python -B \"$T/code/part3/tests_analyze.py\" \"$OUT\"",
+   "notes": "Per-degree split written by tests_analyze.py; leaf-equal to the replayed raw tests_T1.py output (Claude audit-01). Audit finding F1 (split to evade the 1 MB limit) is resolved by moving these to cold storage. Historical T1 setup requires T2/T3/T4 outputs in OUT before analyzer execution; use source_commit versions, not the current analyzer. Only the historical analyzer splits and rewrites T1; current analyzer preserves full input and reconstruct_t1.py reconstructs one complete artifact. Measurement reruns can differ in timing bytes; exact historical files are retrieved by blob.",
+   "script_blobs": {
+    "code/part3/tests_T1.py": "7472cd2a084e8a8d7bc5fbf59fb82f7fcf46ad9c",
+    "code/part3/tests_analyze.py": "3c5d3c6df5baec9e68026a8d839fc9559c4002b5",
+    "code/part3/tests_T2_T3.py": "272543f5b27749b18fb0bddaf38fac4999a156d0",
+    "code/part3/tests_T4.py": "16ae92dff66c2c71b618340b5d26070a154bcf5a",
+    "code/part3/tests_common.py": "fe93be375f907a8c402767c41a6b5bd7792921cd",
+    "code/maj.py": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n199.json",
+   "bytes": 134768,
+   "sha256": "09eebe880c0f17ec0091612194128d7fc8ab878325a6a1853d50288952050a4e",
+   "git_blob": "8941c8557228a541a6ad81e6d192ed78cea4d09a",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$T/code/part3/tests_T1.py\" \"$OUT/tests_T1.json\"; python -B \"$T/code/part3/tests_analyze.py\" \"$OUT\"",
+   "notes": "Per-degree split written by tests_analyze.py; leaf-equal to the replayed raw tests_T1.py output (Claude audit-01). Audit finding F1 (split to evade the 1 MB limit) is resolved by moving these to cold storage. Historical T1 setup requires T2/T3/T4 outputs in OUT before analyzer execution; use source_commit versions, not the current analyzer. Only the historical analyzer splits and rewrites T1; current analyzer preserves full input and reconstruct_t1.py reconstructs one complete artifact. Measurement reruns can differ in timing bytes; exact historical files are retrieved by blob.",
+   "script_blobs": {
+    "code/part3/tests_T1.py": "7472cd2a084e8a8d7bc5fbf59fb82f7fcf46ad9c",
+    "code/part3/tests_analyze.py": "3c5d3c6df5baec9e68026a8d839fc9559c4002b5",
+    "code/part3/tests_T2_T3.py": "272543f5b27749b18fb0bddaf38fac4999a156d0",
+    "code/part3/tests_T4.py": "16ae92dff66c2c71b618340b5d26070a154bcf5a",
+    "code/part3/tests_common.py": "fe93be375f907a8c402767c41a6b5bd7792921cd",
+    "code/maj.py": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n200.json",
+   "bytes": 135422,
+   "sha256": "62c5a66c4497bb187bee01f3bc4048d11b205a3ab671d009cfa3a2ab2c188b46",
+   "git_blob": "3315bedd5861c12e4639340a3d3831c5d7782bff",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$T/code/part3/tests_T1.py\" \"$OUT/tests_T1.json\"; python -B \"$T/code/part3/tests_analyze.py\" \"$OUT\"",
+   "notes": "Per-degree split written by tests_analyze.py; leaf-equal to the replayed raw tests_T1.py output (Claude audit-01). Audit finding F1 (split to evade the 1 MB limit) is resolved by moving these to cold storage. Historical T1 setup requires T2/T3/T4 outputs in OUT before analyzer execution; use source_commit versions, not the current analyzer. Only the historical analyzer splits and rewrites T1; current analyzer preserves full input and reconstruct_t1.py reconstructs one complete artifact. Measurement reruns can differ in timing bytes; exact historical files are retrieved by blob.",
+   "script_blobs": {
+    "code/part3/tests_T1.py": "7472cd2a084e8a8d7bc5fbf59fb82f7fcf46ad9c",
+    "code/part3/tests_analyze.py": "3c5d3c6df5baec9e68026a8d839fc9559c4002b5",
+    "code/part3/tests_T2_T3.py": "272543f5b27749b18fb0bddaf38fac4999a156d0",
+    "code/part3/tests_T4.py": "16ae92dff66c2c71b618340b5d26070a154bcf5a",
+    "code/part3/tests_common.py": "fe93be375f907a8c402767c41a6b5bd7792921cd",
+    "code/maj.py": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n24.json",
+   "bytes": 17862,
+   "sha256": "cad4ab29aacef97a54c16f04b650c6f8fd85882fbf191702788a03dd0267dff1",
+   "git_blob": "4a46a97cd706ddf9a4e95ed9d43f79c0b469e610",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$T/code/part3/tests_T1.py\" \"$OUT/tests_T1.json\"; python -B \"$T/code/part3/tests_analyze.py\" \"$OUT\"",
+   "notes": "Per-degree split written by tests_analyze.py; leaf-equal to the replayed raw tests_T1.py output (Claude audit-01). Audit finding F1 (split to evade the 1 MB limit) is resolved by moving these to cold storage. Historical T1 setup requires T2/T3/T4 outputs in OUT before analyzer execution; use source_commit versions, not the current analyzer. Only the historical analyzer splits and rewrites T1; current analyzer preserves full input and reconstruct_t1.py reconstructs one complete artifact. Measurement reruns can differ in timing bytes; exact historical files are retrieved by blob.",
+   "script_blobs": {
+    "code/part3/tests_T1.py": "7472cd2a084e8a8d7bc5fbf59fb82f7fcf46ad9c",
+    "code/part3/tests_analyze.py": "3c5d3c6df5baec9e68026a8d839fc9559c4002b5",
+    "code/part3/tests_T2_T3.py": "272543f5b27749b18fb0bddaf38fac4999a156d0",
+    "code/part3/tests_T4.py": "16ae92dff66c2c71b618340b5d26070a154bcf5a",
+    "code/part3/tests_common.py": "fe93be375f907a8c402767c41a6b5bd7792921cd",
+    "code/maj.py": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n256.json",
+   "bytes": 173729,
+   "sha256": "cb6bf98fb2272016b537d9b493592a6d75329de7c30cf0aaa91386ff3b555136",
+   "git_blob": "9bf0a9621dd8af4a21a73c002011dbb612723ba9",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$T/code/part3/tests_T1.py\" \"$OUT/tests_T1.json\"; python -B \"$T/code/part3/tests_analyze.py\" \"$OUT\"",
+   "notes": "Per-degree split written by tests_analyze.py; leaf-equal to the replayed raw tests_T1.py output (Claude audit-01). Audit finding F1 (split to evade the 1 MB limit) is resolved by moving these to cold storage. Historical T1 setup requires T2/T3/T4 outputs in OUT before analyzer execution; use source_commit versions, not the current analyzer. Only the historical analyzer splits and rewrites T1; current analyzer preserves full input and reconstruct_t1.py reconstructs one complete artifact. Measurement reruns can differ in timing bytes; exact historical files are retrieved by blob.",
+   "script_blobs": {
+    "code/part3/tests_T1.py": "7472cd2a084e8a8d7bc5fbf59fb82f7fcf46ad9c",
+    "code/part3/tests_analyze.py": "3c5d3c6df5baec9e68026a8d839fc9559c4002b5",
+    "code/part3/tests_T2_T3.py": "272543f5b27749b18fb0bddaf38fac4999a156d0",
+    "code/part3/tests_T4.py": "16ae92dff66c2c71b618340b5d26070a154bcf5a",
+    "code/part3/tests_common.py": "fe93be375f907a8c402767c41a6b5bd7792921cd",
+    "code/maj.py": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n399.json",
+   "bytes": 269100,
+   "sha256": "63d4cd1ebf089cf99b0f4b65471d7032ce057fd4e393418971a92ecc11ed9d3e",
+   "git_blob": "ad2cb00835476e51ce34c3ad8bbaa394d0862015",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$T/code/part3/tests_T1.py\" \"$OUT/tests_T1.json\"; python -B \"$T/code/part3/tests_analyze.py\" \"$OUT\"",
+   "notes": "Per-degree split written by tests_analyze.py; leaf-equal to the replayed raw tests_T1.py output (Claude audit-01). Audit finding F1 (split to evade the 1 MB limit) is resolved by moving these to cold storage. Historical T1 setup requires T2/T3/T4 outputs in OUT before analyzer execution; use source_commit versions, not the current analyzer. Only the historical analyzer splits and rewrites T1; current analyzer preserves full input and reconstruct_t1.py reconstructs one complete artifact. Measurement reruns can differ in timing bytes; exact historical files are retrieved by blob.",
+   "script_blobs": {
+    "code/part3/tests_T1.py": "7472cd2a084e8a8d7bc5fbf59fb82f7fcf46ad9c",
+    "code/part3/tests_analyze.py": "3c5d3c6df5baec9e68026a8d839fc9559c4002b5",
+    "code/part3/tests_T2_T3.py": "272543f5b27749b18fb0bddaf38fac4999a156d0",
+    "code/part3/tests_T4.py": "16ae92dff66c2c71b618340b5d26070a154bcf5a",
+    "code/part3/tests_common.py": "fe93be375f907a8c402767c41a6b5bd7792921cd",
+    "code/maj.py": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n400.json",
+   "bytes": 269669,
+   "sha256": "b9ee1314d9c51e3cfeb5dd445dc94bcf7e336af9cc0c7dce7bb674b0e4491852",
+   "git_blob": "5af37b9ed643bd132cb89235145b77fde6613709",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$T/code/part3/tests_T1.py\" \"$OUT/tests_T1.json\"; python -B \"$T/code/part3/tests_analyze.py\" \"$OUT\"",
+   "notes": "Per-degree split written by tests_analyze.py; leaf-equal to the replayed raw tests_T1.py output (Claude audit-01). Audit finding F1 (split to evade the 1 MB limit) is resolved by moving these to cold storage. Historical T1 setup requires T2/T3/T4 outputs in OUT before analyzer execution; use source_commit versions, not the current analyzer. Only the historical analyzer splits and rewrites T1; current analyzer preserves full input and reconstruct_t1.py reconstructs one complete artifact. Measurement reruns can differ in timing bytes; exact historical files are retrieved by blob.",
+   "script_blobs": {
+    "code/part3/tests_T1.py": "7472cd2a084e8a8d7bc5fbf59fb82f7fcf46ad9c",
+    "code/part3/tests_analyze.py": "3c5d3c6df5baec9e68026a8d839fc9559c4002b5",
+    "code/part3/tests_T2_T3.py": "272543f5b27749b18fb0bddaf38fac4999a156d0",
+    "code/part3/tests_T4.py": "16ae92dff66c2c71b618340b5d26070a154bcf5a",
+    "code/part3/tests_common.py": "fe93be375f907a8c402767c41a6b5bd7792921cd",
+    "code/maj.py": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n48.json",
+   "bytes": 34628,
+   "sha256": "8e707e8c41725151ca5d54d5c81c86367846ba54399d0c0a1c899a7f806213dc",
+   "git_blob": "a817ed437ec52b82815d3b8a81154a84ebe02ec0",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$T/code/part3/tests_T1.py\" \"$OUT/tests_T1.json\"; python -B \"$T/code/part3/tests_analyze.py\" \"$OUT\"",
+   "notes": "Per-degree split written by tests_analyze.py; leaf-equal to the replayed raw tests_T1.py output (Claude audit-01). Audit finding F1 (split to evade the 1 MB limit) is resolved by moving these to cold storage. Historical T1 setup requires T2/T3/T4 outputs in OUT before analyzer execution; use source_commit versions, not the current analyzer. Only the historical analyzer splits and rewrites T1; current analyzer preserves full input and reconstruct_t1.py reconstructs one complete artifact. Measurement reruns can differ in timing bytes; exact historical files are retrieved by blob.",
+   "script_blobs": {
+    "code/part3/tests_T1.py": "7472cd2a084e8a8d7bc5fbf59fb82f7fcf46ad9c",
+    "code/part3/tests_analyze.py": "3c5d3c6df5baec9e68026a8d839fc9559c4002b5",
+    "code/part3/tests_T2_T3.py": "272543f5b27749b18fb0bddaf38fac4999a156d0",
+    "code/part3/tests_T4.py": "16ae92dff66c2c71b618340b5d26070a154bcf5a",
+    "code/part3/tests_common.py": "fe93be375f907a8c402767c41a6b5bd7792921cd",
+    "code/maj.py": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T1_n96.json",
+   "bytes": 67200,
+   "sha256": "e8879d94f2083984be0ba53de8d391c67e4e50a44d425b794bbe8bf3a9d61ff4",
+   "git_blob": "45b23e40aed54f0f410cf73efe4f7106305107c8",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$T/code/part3/tests_T1.py\" \"$OUT/tests_T1.json\"; python -B \"$T/code/part3/tests_analyze.py\" \"$OUT\"",
+   "notes": "Per-degree split written by tests_analyze.py; leaf-equal to the replayed raw tests_T1.py output (Claude audit-01). Audit finding F1 (split to evade the 1 MB limit) is resolved by moving these to cold storage. Historical T1 setup requires T2/T3/T4 outputs in OUT before analyzer execution; use source_commit versions, not the current analyzer. Only the historical analyzer splits and rewrites T1; current analyzer preserves full input and reconstruct_t1.py reconstructs one complete artifact. Measurement reruns can differ in timing bytes; exact historical files are retrieved by blob.",
+   "script_blobs": {
+    "code/part3/tests_T1.py": "7472cd2a084e8a8d7bc5fbf59fb82f7fcf46ad9c",
+    "code/part3/tests_analyze.py": "3c5d3c6df5baec9e68026a8d839fc9559c4002b5",
+    "code/part3/tests_T2_T3.py": "272543f5b27749b18fb0bddaf38fac4999a156d0",
+    "code/part3/tests_T4.py": "16ae92dff66c2c71b618340b5d26070a154bcf5a",
+    "code/part3/tests_common.py": "fe93be375f907a8c402767c41a6b5bd7792921cd",
+    "code/maj.py": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T2.json",
+   "bytes": 69566,
+   "sha256": "474a0aade64a06c2ec2976c40677189c93d369367bc3408482bdcf8fc40cb307",
+   "git_blob": "f32c67952f3ad5b6b21044938a48747ea9c0ef66",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$T/code/part3/tests_T2_T3.py\" T2 \"$OUT/tests_T2.json\"",
+   "notes": "Replayed by Claude audit-01: 2542 leaves exactly equal (timing excluded). Summary: tests_T2.out. Bootstrap the full source_commit tree and fresh OUT first. A rerun compares the recorded scientific scope; timing, argv, environment and embedded note hashes may differ. Git retrieval is the byte-exact authority.",
+   "script_blobs": {
+    "code/part3/tests_T2_T3.py": "272543f5b27749b18fb0bddaf38fac4999a156d0",
+    "code/part3/tests_common.py": "fe93be375f907a8c402767c41a6b5bd7792921cd",
+    "code/maj.py": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_T3.json",
+   "bytes": 83548,
+   "sha256": "964b22ae3d0dbf5f4bdc39cc57d6357a52beeba1beb3d16850c953ffceb5fc98",
+   "git_blob": "ed16e5ed2312bfcf69d397b56b7cfa998c5be8b5",
+   "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -B \"$T/code/part3/tests_T2_T3.py\" T3 \"$OUT/tests_T3.json\"",
+   "notes": "Replayed by Claude audit-01: 2548 leaves exactly equal. Summary: tests_T3.out. Bootstrap the full source_commit tree and fresh OUT first. A rerun compares the recorded scientific scope; timing, argv, environment and embedded note hashes may differ. Git retrieval is the byte-exact authority.",
+   "script_blobs": {
+    "code/part3/tests_T2_T3.py": "272543f5b27749b18fb0bddaf38fac4999a156d0",
+    "code/part3/tests_common.py": "fe93be375f907a8c402767c41a6b5bd7792921cd",
+    "code/maj.py": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4"
+   }
+  },
+  {
+   "path": "topics/padua-argmax-alln-20261101/outputs/part3/tests_summary.json",
+   "bytes": 53067,
+   "sha256": "0e05c612044fe59f92d50e86c518110d1b5fcfcac029dc72a0b65334cddf9a9c",
+   "git_blob": "7cd611500458be09a6e014f1c26edcabf2607a27",
+   "generating_command": "python -B \"$T/code/part3/tests_analyze.py\" \"$OUT\"",
+   "notes": "Historical postprocessor output, not a new measurement. Requires historical T1/T2/T3/T4 inputs and old analyzer; current analyzer no longer splits or rewrites T1. Summary: outputs/part3/tests_summary.out and attempts/T1-T5.md. Retrieve the pinned blob for byte-exact historical output.",
+   "script_blobs": {
+    "code/part3/tests_analyze.py": "3c5d3c6df5baec9e68026a8d839fc9559c4002b5",
+    "code/part3/tests_T1.py": "7472cd2a084e8a8d7bc5fbf59fb82f7fcf46ad9c",
+    "code/part3/tests_T2_T3.py": "272543f5b27749b18fb0bddaf38fac4999a156d0",
+    "code/part3/tests_T4.py": "16ae92dff66c2c71b618340b5d26070a154bcf5a",
+    "code/part3/tests_common.py": "fe93be375f907a8c402767c41a6b5bd7792921cd",
+    "code/maj.py": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4"
+   }
+  }
+ ],
+ "total_bytes": 2526191,
+ "command_context": {
+  "source_revision": "1cecd68ac0a64b01ed7b2d262b6263a955a7d4d7",
+  "scope": "Commands describe equivalent measurement reruns from the pinned historical source, not a promise of historical timing/stdout/argv bytes. Exact historical recovery uses the archived Git blobs. No new producer reruns are claimed by this metadata update.",
+  "setup": "COLD_STORAGE.md, Historical source bootstrap: REPO is the current full clone; SOURCE is source_commit; ROOT and OUT are fresh scratch directories outside the worktree; T=$ROOT/topics/padua-argmax-alln-20261101. Extract the complete pinned source tree before invoking commands. Python dependencies are in outputs/environment.txt at SOURCE.",
+  "A_setup": "COLD_STORAGE.md, A relocation: replace only /home/user/padua_research with ROOT in a scratch copy of the pinned padua_indep.py; leave the committed auditor source unchanged. The pinned code/part3 modules and outputs/part3 certificates must exist under ROOT. Create OUT before the command.",
+  "D_setup": "COLD_STORAGE.md, D relocation: copy the pinned t1_local.py and adjacent padlib.py into OUT/D; the producer writes beside its own script.",
+  "T1_setup": "COLD_STORAGE.md, Historical T1 postprocessing: first produce tests_T2.json, tests_T3.json and tests_T4.json in OUT with the pinned historical scripts, then run the listed T1 producer and historical analyzer. Current tests_analyze.py does not split; current reconstruct_t1.py creates one complete scratch artifact."
+ },
+ "storage_destination_safety": {
+  "destination": "Use fresh non-worktree scratch or storage directories for --dest; existing matching archival copies and the exact export receipt may be reused under the helper guards.",
+  "foreign_worktree_guard": "Restore/export/clean reject, at foreign destination ancestors and during payload traversal, nonempty .git directories and .git files, symlinks or other nonregular markers. Empty .git directories contain no index and are ignored (including the managed environment empty /tmp/.git and /workspace/.git sentinels). The helper source ROOT .git is allowed; source-root-subtree operations use its own index rather than treating outer ancestors as foreign, while nested worktrees are refused. Read-only verify keeps safe traversal and byte checks without this foreign-worktree mutation refusal.",
+  "concurrency_limit": "Keep destination directories and repository indexes quiescent throughout each operation. Do not initialize a repository concurrently; marker checks are not an adversarial-concurrency guarantee."
+ }
+}

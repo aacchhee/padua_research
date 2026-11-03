@@ -1,0 +1,264 @@
+{
+  "source_head": "cdb12257af24ea2542de707b9730f8278d69a168",
+  "rows": [
+    {
+      "id": "PD-T206",
+      "path": "topics/padua-argmax-alln-20261101/theory/argmax-alln-claude-01-measured-observations.md",
+      "aliases": [
+        "PD-T?argmax-alln-claude-01"
+      ]
+    },
+    {
+      "id": "PD-T207",
+      "path": "topics/padua-argmax-alln-20261101/theory/argmax-alln-claude-02-measured-edge-profile.md",
+      "aliases": [
+        "PD-T?argmax-alln-claude-02"
+      ]
+    },
+    {
+      "id": "PD-T208",
+      "path": "topics/padua-argmax-alln-20261101/theory/argmax-alln-codex-01-measured-tests.md",
+      "aliases": [
+        "PD-T?argmax-alln-codex-01"
+      ]
+    },
+    {
+      "id": "PD-T209",
+      "path": "topics/padua-argmax-alln-20261101/theory/argmax-alln-codex-02-degree-two-global-argmax.md",
+      "aliases": [
+        "PD-T?argmax-alln-codex-02"
+      ]
+    },
+    {
+      "id": "PD-T210",
+      "path": "topics/padua-argmax-alln-20261101/theory/argmax-alln-codex-03-finite-certificate-correctness.md",
+      "aliases": [
+        "PD-T?argmax-alln-codex-03"
+      ]
+    },
+    {
+      "id": "PD-T211",
+      "path": "topics/padua-argmax-alln-20261101/theory/argmax-alln-codex-04-vertical-compact-defect.md",
+      "aliases": [
+        "PD-T?argmax-alln-codex-04"
+      ]
+    },
+    {
+      "id": "PD-T212",
+      "path": "topics/padua-argmax-alln-20261101/theory/argmax-alln-codex-05-horizontal-compact-defect.md",
+      "aliases": [
+        "PD-T?argmax-alln-codex-05"
+      ]
+    },
+    {
+      "id": "PD-T213",
+      "path": "topics/padua-argmax-alln-20261101/theory/argmax-alln-codex-06-measured-pairing.md",
+      "aliases": [
+        "PD-T?argmax-alln-codex-06"
+      ]
+    },
+    {
+      "id": "PD-T181",
+      "path": "topics/padua-argmax-alln-20261101/theory/argmax-alln-codex-07-degree-eight-global-argmax.md",
+      "aliases": [
+        "PD-T?argmax-alln-codex-07"
+      ]
+    },
+    {
+      "id": "PD-T214",
+      "path": "topics/padua-argmax-alln-20261101/theory/argmax-alln-codex-08-degree-nine-through-sixteen-global-argmax.md",
+      "aliases": [
+        "PD-T?argmax-alln-codex-08"
+      ]
+    },
+    {
+      "id": "PD-N078",
+      "path": "topics/padua-argmax-alln-20261101/theory/argmax-alln-codex-N01-pairing-order-obstruction.md",
+      "aliases": [
+        "PD-N?argmax-alln-codex-01"
+      ]
+    },
+    {
+      "id": "PD-T215",
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-01-pairwise-defect-projection.md",
+      "aliases": [
+        "PD-T?argmax-alln-gated-codex-01"
+      ]
+    },
+    {
+      "id": "PD-T216",
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-02-two-phase-global-bound.md",
+      "aliases": [
+        "PD-T?argmax-alln-gated-codex-02"
+      ]
+    },
+    {
+      "id": "PD-T217",
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-03-two-phase-local-gain.md",
+      "aliases": [
+        "PD-T?argmax-alln-gated-codex-03"
+      ]
+    },
+    {
+      "id": "PD-T218",
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-04-compact-complement-gap.md",
+      "aliases": [
+        "PD-T?argmax-alln-gated-codex-04"
+      ]
+    },
+    {
+      "id": "PD-T219",
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-05-finite-projected-defect.md",
+      "aliases": [
+        "PD-T?argmax-alln-gated-codex-05"
+      ]
+    },
+    {
+      "id": "PD-T220",
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-06-exact-primitive-cusp.md",
+      "aliases": [
+        "PD-T?argmax-alln-gated-codex-06"
+      ]
+    },
+    {
+      "id": "PD-T221",
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-07-explicit-local-envelope.md",
+      "aliases": [
+        "PD-T?argmax-alln-gated-codex-07"
+      ]
+    },
+    {
+      "id": "PD-T222",
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-08-adaptive-finite-defect.md",
+      "aliases": [
+        "PD-T?argmax-alln-gated-codex-08"
+      ]
+    },
+    {
+      "id": "PD-T223",
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-09-shrinking-corner-reduction.md",
+      "aliases": [
+        "PD-T?argmax-alln-gated-codex-09"
+      ]
+    },
+    {
+      "id": "PD-T224",
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-10-noncorner-coset-defect.md",
+      "aliases": [
+        "PD-T?argmax-alln-gated-codex-10"
+      ]
+    },
+    {
+      "id": "PD-T225",
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-11-corner-phase-localization.md",
+      "aliases": [
+        "PD-T?argmax-alln-gated-codex-11"
+      ]
+    },
+    {
+      "id": "PD-T226",
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-12-row-primitive-identity.md",
+      "aliases": [
+        "PD-T?argmax-alln-gated-codex-12"
+      ]
+    },
+    {
+      "id": "PD-T227",
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-13-corner-first-variation.md",
+      "aliases": [
+        "PD-T?argmax-alln-gated-codex-13"
+      ]
+    },
+    {
+      "id": "PD-T228",
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-14-reflection-first-corner-bound.md",
+      "aliases": [
+        "PD-T?argmax-alln-gated-codex-14"
+      ]
+    },
+    {
+      "id": "PD-T229",
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-15-eventual-global-argmax.md",
+      "aliases": [
+        "PD-T?argmax-alln-gated-codex-15"
+      ]
+    },
+    {
+      "id": "PD-T230",
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-16-horizontal-compact-envelope.md",
+      "aliases": [
+        "PD-T?argmax-alln-gated-codex-16"
+      ]
+    },
+    {
+      "id": "PD-T231",
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-17-finite-edge-cell-comparison.md",
+      "aliases": [
+        "PD-T?argmax-alln-gated-codex-17"
+      ]
+    },
+    {
+      "id": "PD-N079",
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-N01-majorant-coset-obstruction.md",
+      "aliases": [
+        "PD-N?argmax-alln-gated-codex-01"
+      ]
+    },
+    {
+      "id": "PD-N080",
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-N02-pointwise-edge-translation-obstruction.md",
+      "aliases": [
+        "PD-N?argmax-alln-gated-codex-02"
+      ]
+    },
+    {
+      "id": "PD-T232",
+      "path": "topics/padua-argmax-alln-20261101/theory/prep-codex-01-d1-phase-defect-screen.md",
+      "aliases": [
+        "PD-T?argmax-alln-prep-codex-01"
+      ]
+    },
+    {
+      "id": "PD-T233",
+      "path": "topics/padua-argmax-alln-20261101/theory/prep-codex-02-d2-corner-screen.md",
+      "aliases": [
+        "PD-T?argmax-alln-prep-codex-02"
+      ]
+    },
+    {
+      "id": "PD-T234",
+      "path": "topics/padua-argmax-alln-20261101/theory/prep-codex-03-d1-row-grid.md",
+      "aliases": [
+        "PD-T?argmax-alln-prep-codex-03"
+      ]
+    },
+    {
+      "id": "PD-T235",
+      "path": "topics/padua-argmax-alln-20261101/theory/prep-codex-04-d3-pointwise-screen.md",
+      "aliases": [
+        "PD-T?argmax-alln-prep-codex-04"
+      ]
+    },
+    {
+      "id": "PD-N081",
+      "path": "topics/padua-argmax-alln-20261101/theory/prep-codex-N01-or-order-screen.md",
+      "aliases": [
+        "PD-N?argmax-alln-prep-codex-01"
+      ]
+    },
+    {
+      "id": "PD-N082",
+      "path": "topics/padua-argmax-alln-20261101/theory/prep-codex-N02-t2-profile-test.md",
+      "aliases": [
+        "PD-N?argmax-alln-prep-codex-02"
+      ]
+    },
+    {
+      "id": "PD-N083",
+      "path": "topics/padua-argmax-alln-20261101/theory/prep-codex-N03-t3-profile-test.md",
+      "aliases": [
+        "PD-N?argmax-alln-prep-codex-03"
+      ]
+    }
+  ]
+}

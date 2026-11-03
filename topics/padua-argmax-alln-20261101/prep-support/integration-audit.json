@@ -1,0 +1,272 @@
+{
+  "format": "padua-final-integration-audit-v1",
+  "accepted": true,
+  "verdict": "PASS within stated preparation/integration scope; final packaging plain-check follows report freeze",
+  "reviewer": "Distinct requested/configured gpt-6-astra high in the same finalization pass; serving metadata not independently exposed",
+  "source_input": "cdb12257af24ea2542de707b9730f8278d69a168",
+  "topic_parent": "0441756471436253b70f2a37be1bb644351f8bc4",
+  "old_main": "2b52b432fe59c9a50aef9deebe5152c5d6874465",
+  "integrated_main": "1acebf7af47885654dfd1ffe0b9c8cda19c8f2a6",
+  "pr18_final_head": "367c3167199bb3599e96c161136dfbdb72acb57b",
+  "working_copy_head": "cdb12257af24ea2542de707b9730f8278d69a168",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "frozen_prior_audit_unchanged": {
+    "prep-support/final-audit.md": "bb2010970704c80d2520b5ae87438ccf4848cf8362961b8bd8866e2190091f3f",
+    "prep-support/final-audit.json": "34cb36cf04b0b8dd09f42db01e79534bb7a8ba9e2472ce63c5d935a9f1a7ef04"
+  },
+  "preservation": {
+    "accepted": true,
+    "shared_preservation": [
+      {
+        "path": "RESULTS.md",
+        "complete_incoming_prefix": true
+      },
+      {
+        "path": "state/CURRENT.md",
+        "complete_incoming_prefix": true
+      },
+      {
+        "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+        "complete_incoming_prefix": true
+      },
+      {
+        "path": "PROOF_STATUS.md",
+        "exact_frozen_preparation_plus_main_delta": true,
+        "main_delta_hunks": 1
+      },
+      {
+        "path": "ID_CROSSWALK.md",
+        "exact_frozen_preparation_plus_main_delta": true,
+        "main_delta_hunks": 3
+      }
+    ],
+    "frozen84_unchanged_count": 72,
+    "frozen84_expected_changed": [
+      "ID_CROSSWALK.md",
+      "PROOF_STATUS.md",
+      "RESULTS.md",
+      "results/padua-argmax-alln-20261101.md",
+      "state/CURRENT.md",
+      "topics/padua-argmax-alln-20261101/FINALIZATION.md",
+      "topics/padua-argmax-alln-20261101/LOG.md",
+      "topics/padua-argmax-alln-20261101/code/part3/check_evidence.py",
+      "topics/padua-argmax-alln-20261101/report.md",
+      "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "tools/cold_storage.py",
+      "tools/test_cold_storage.py"
+    ],
+    "main_deleted_paths_retained": 176,
+    "incoming_changed_paths": 87,
+    "incoming_nonshared_index_identity_preserved": true,
+    "unmerged_index_entries": 0,
+    "frozen_final_reports_unchanged": true,
+    "theory_records": 37,
+    "candidate_records": 20
+  },
+  "exact_incoming_materialized_files": 31,
+  "inherited_code_theory_blobs_matching_main": 75,
+  "storage": {
+    "tool_sha256": "287153916a35f4360fde2f689cdd624b14f050f7329a323d95d8a8764c455c62",
+    "tests_sha256": "f5047aab7ea6434e344b38bcc1cd85738d3329ec65cf745faa59cb403f062991",
+    "unit_tests": 23,
+    "inherited_independent_fault_controls": {
+      "corruption_after_payload_write_rejected_without_receipt": true,
+      "stale_success_receipt_cannot_pass_current_verification_after_failed_reexport": true,
+      "transferred_archive_verifies_without_git": true,
+      "transferred_truncated_payload_rejected": true,
+      "transferred_missing_payload_rejected": true,
+      "semantically_equal_but_changed_manifest_bytes_rejected_v2": true,
+      "v1_receipt_checked_currently_and_damage_rejected": true,
+      "late_collision_does_not_overwrite_or_partially_restore": true
+    },
+    "actual_archive_entries": 36,
+    "actual_archive_bytes": 2526191,
+    "source_byte_comparisons": 36,
+    "restore_mtime_idempotence": true,
+    "v2_export_destination_readback": true,
+    "transferred_offline_git_unavailable": true,
+    "own_negative_controls": [
+      "same-size payload corruption",
+      "missing payload under surviving receipt",
+      "changed trusted manifest bytes"
+    ],
+    "all_negative_controls_rejected": true,
+    "protected_sources_unchanged": true,
+    "command_outcomes": [
+      {
+        "label": "unit23",
+        "returncode": 0
+      },
+      {
+        "label": "verify_source",
+        "returncode": 0
+      },
+      {
+        "label": "restore36",
+        "returncode": 0
+      },
+      {
+        "label": "verify_restored36",
+        "returncode": 0
+      },
+      {
+        "label": "restore_idempotent",
+        "returncode": 0
+      },
+      {
+        "label": "export_readback36",
+        "returncode": 0
+      },
+      {
+        "label": "verify_archive_manifest",
+        "returncode": 0
+      },
+      {
+        "label": "offline_without_manifest",
+        "returncode": 0
+      },
+      {
+        "label": "offline_with_manifest",
+        "returncode": 0
+      },
+      {
+        "label": "offline_corruption_rejected",
+        "returncode": 1
+      },
+      {
+        "label": "offline_stale_receipt_missing_rejected",
+        "returncode": 1
+      },
+      {
+        "label": "offline_changed_manifest_rejected",
+        "returncode": 1
+      },
+      {
+        "label": "offline_restored_pass",
+        "returncode": 0
+      }
+    ]
+  },
+  "science": {
+    "n4_archive": {
+      "manifest": "topics/padua-proof-attempts-2-20261101/cold-storage.json",
+      "manifest_sha256": "d11a054b07306feb5d155ba962bd325040f29f821a34833c0b0a332ad56b3551",
+      "source_commit": "2b52b432fe59c9a50aef9deebe5152c5d6874465",
+      "path": "topics/padua-proof-attempts-2-20261101/outputs/a5_n4_certificate.json.gz",
+      "bytes": 64360,
+      "sha256": "14a69a131b3c20416fd5521bd971efdadd4e3741f70546d0fc5f0d9f25a2cf61",
+      "git_blob": "d768d04857c580459547f090a1256fd4ed8bed58"
+    },
+    "commands": 40,
+    "optimization_refusals": 21,
+    "semantics": {
+      "n2": true,
+      "finite_certificates_replayed": 10,
+      "general_malformed_rejected": 14,
+      "field_malformed_rejected": 5,
+      "independent_general_malformed_rejected": 4,
+      "d3_malformed_rejected": 17,
+      "pairing": "PASS",
+      "d3_pairs": 10,
+      "d3_witnesses": 8
+    },
+    "mirror_scientific_inputs_unchanged": 242,
+    "source_files_unchanged": 17,
+    "newly_cold_direct_dependencies_restored_in_scratch": 1,
+    "cold_dependency_writes_to_source_worktree": 0,
+    "other_cold_entries_not_restored": 22,
+    "pd_t101_dependency_sha256": "ea59aa077a4d021fc69354383f69340f21d17d87d3a28c6ecaaf302cc763612c",
+    "frozen_runner_sha256": "0ddacfa270849e24ebb258814135d1f914ebe4c64fc2aec2b5d69a2cb0836136",
+    "frozen_receipt_sha256": "330b052e902c8517e4f3f2d0fd541abd77c6891ffc733f43b4d113b6ef8b09c5",
+    "inner_stdout_sha256": "154b9dc48acbc4118ed84476438499d4b72f4d2f8a28823b496dcf836e5d271d",
+    "inner_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "links": {
+    "local_links": 3092,
+    "unmaterialized_targets_in_candidate_index": 452,
+    "pending_own_integration_report_ignored": true,
+    "broken": []
+  },
+  "repository_budget_report": {
+    "format": "padua-pr17-repository-budget-v1",
+    "base_main": "1acebf7af47885654dfd1ffe0b9c8cda19c8f2a6",
+    "method": "Complete recursive GitHub base tree sizes plus exact current topic/changed file bytes; no dependence on all blob payloads being locally materialized. Conservatively counts every non-record extension as data.",
+    "head_blob_count": 2912,
+    "data_files": 1128,
+    "data_bytes": 4317198,
+    "ordinary_data_bytes": 4012640,
+    "largest_ordinary_data_bytes": 16344,
+    "ordinary_data_files_at_or_above_16384": [],
+    "limit_bytes_exclusive": 5000000,
+    "under_limit": true,
+    "scope": "Snapshot at this execution boundary; final manifest/receipt and audit files can change these exact totals; remote final tree is checked again before readiness."
+  },
+  "scratch_execution_hashes": {
+    "padua-integration-storage-audit.py": "6704622baefce745febfd12dd1146f0ee8158f4d2757eb60eddafec3499d02c5",
+    "padua-integration-storage-audit.json": "6b6e64a91512bd3368168e2a7f0b9b4db8ee463b1581468d42b44321dff07f60",
+    "padua-integration-preservation.py": "96c6b236ce1d8e25cbdc5b0de23330299b3aca9d43136e6c4a5423596392b15a",
+    "padua-integration-preservation.json": "235e5435e8129016739b60dc997203a6f5f7de3cc7c9f272ca9b227aa410eed4",
+    "padua-integration-independent-checker.json": "be1099e5d9951f037ec38997c6dd8a03318bbf0def4b7f337c97f9985b020304",
+    "padua-integration-inherited-faults.json": "2e4dacd75d665b12ad2ccf95b326da126b994ad4ca4ba323617e1ca1be419166"
+  },
+  "covered_sha256": {
+    "AGENTS.md": "c44a76f138fce01f02c06753b22fbc83fd5c1ee701785d49ba17cef5f8eee05b",
+    "ID_CROSSWALK.md": "c049b783438efa8b916d75650d7cc29cb87ef25dcf7a2659cd486e3c0ea42110",
+    "PROOF_STATUS.md": "3dcd729917ac87f9e09bd9278c2e553017406c6ee8da1d9f0f43081840cfeeee",
+    "RESULTS.md": "4e003cb87e90ece233f940e60bc47320abc8ea78fd9972b864efba2c4de8d2f5",
+    "agents/WORKFLOW.md": "423e1bc005d61aaaec38a9d38660f48644618850590c53110b595898a41bde21",
+    "agents/codex/CODEX.md": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+    "results/cold-storage-20261102.md": "e059322a4b47ef19736b7ce68887f357ba1dcedd354ab6c0ce2cb4fc344efa5c",
+    "results/padua-argmax-alln-20261101.md": "0abcdd40ccfb3fcb9e94da1f6b52ed30301ee3c0043ca6bfc373b194ca64c006",
+    "state/CURRENT.md": "b62d7debf203fc143cffce792bcec4514913ad40019c79a1fff58b920cdb68c8",
+    "tools/cold_storage.py": "287153916a35f4360fde2f689cdd624b14f050f7329a323d95d8a8764c455c62",
+    "tools/test_cold_storage.py": "f5047aab7ea6434e344b38bcc1cd85738d3329ec65cf745faa59cb403f062991",
+    "topics/bivariate-lanczos-20261031/COLD_STORAGE.md": "f9cf238a615160f82715a4766d0deaa9ff1d29441ff2c43395b4d1bf4c4aac3f",
+    "topics/bivariate-lanczos-20261031/cold-storage.json": "dd8c393f24cf97748d77d7fdbb48e4a5009bbde2321abb2e3f4aa0e849b72f1a",
+    "topics/charter-unisolvence-20261031/COLD_STORAGE.md": "f8ce2769f1869f2927b85d1a969f83b5ca5361560829082b2b1ac524587b4ef1",
+    "topics/charter-unisolvence-20261031/cold-storage.json": "4b4458d3f7fc2a1b077ccc3b491eac74d3dc7e986a4ef7e9d8a0c8d67a35ab3f",
+    "topics/cold-storage-20261102/LOG.md": "881f791f364d14e6f7858e958a31958bc523031aaee049820cb63edd82a33078",
+    "topics/cold-storage-20261102/audit-02.md": "cef07dfb09619febf1a340075570fba6a1c24853de8ebb66dce2a75a10125cc6",
+    "topics/cold-storage-20261102/audit-02/faults.py": "8618b6c6c952eb4a388a744ec0f899cf6321a79fe596915eaa43ee828fef62bd",
+    "topics/cold-storage-20261102/audit-02/receipt.json": "bc37c53670c2d05d34868e612b369ab0368ab5609e665bf98a6728b5c6ed8b60",
+    "topics/cold-storage-20261102/response-01.md": "ff621e4f39666b0b48d53dd9099aed126c864b770bda796dcd64e2e393d07ef3",
+    "topics/lattice-unisolvence-20261031/COLD_STORAGE.md": "276505dece2c00b73ded9bd911027002ac63feccebd2682687a6c0fd34807f2f",
+    "topics/lattice-unisolvence-20261031/cold-storage.json": "e7dc6a895aa53a6c93afc4e5997aa5c3a290aa12ff1494a370bebd5c19c0de84",
+    "topics/mz-constants/COLD_STORAGE.md": "39bc637d7efb7dfcb2e330294a3c959e8a3790bdcdb1ae8bdafca2c19ae3e62c",
+    "topics/mz-constants/cold-storage.json": "591402d7f0d18591e9ff2d3ab4526f0d03161dca9f4a9ab4f021a51b28a27781",
+    "topics/padua-argmax-alln-20261101/FINALIZATION.md": "22c2aaabe56327197d80450c258c20de28367227d1d11f6da4516b880cd1b464",
+    "topics/padua-argmax-alln-20261101/LOG.md": "6c7544c9d7dd07f8a3d6ccd4db6f57f6841c1667a52694787a74f45fd1f1c4a1",
+    "topics/padua-argmax-alln-20261101/code/part3/check_evidence.py": "71b3ae417d920a2c35d136b7a5f9fae09105cae721607ddb585ea46aebf2355e",
+    "topics/padua-argmax-alln-20261101/cold-storage.json": "88871c2064aa300bcdbcfae93e7b9de528daf3d60241d608454d8ea420216908",
+    "topics/padua-argmax-alln-20261101/prep-support/allocation-recheck.json": "1577d764a2d25d2158966df392352764d4dc3d88413886dc4ef848b30f7ca3f5",
+    "topics/padua-argmax-alln-20261101/prep-support/final-audit.json": "34cb36cf04b0b8dd09f42db01e79534bb7a8ba9e2472ce63c5d935a9f1a7ef04",
+    "topics/padua-argmax-alln-20261101/prep-support/final-audit.md": "bb2010970704c80d2520b5ae87438ccf4848cf8362961b8bd8866e2190091f3f",
+    "topics/padua-argmax-alln-20261101/prep-support/integration-checker-replay.json": "91e24ca589b28a20c885804f073a47c32bca1d338a45a97aef7188fc18534392",
+    "topics/padua-argmax-alln-20261101/prep-support/integration-checker-replay.md": "a803773465e2b5aff788e6d4dc39bae4b41664e35f35b03eb6a07e261ff834cd",
+    "topics/padua-argmax-alln-20261101/prep-support/integration-checker-replay.py": "ddcd27334d9a08ea53107a8909c9a771438bdc7b0b1efedd18f8cd745b4b2fad",
+    "topics/padua-argmax-alln-20261101/prep-support/main-integration.json": "607ab21cb62ba993fed596a026a61bfba84da915943a4e46c111a5820c51d495",
+    "topics/padua-argmax-alln-20261101/prep-support/repository-budget.json": "bfde1d41099b3d53a66fcbafc53a70d8762983d5e79f3f918320c228646f9bcb",
+    "topics/padua-argmax-alln-20261101/report.md": "bf0e514ab6e6c098db42734d85e4291413f54255b0d2e9560f3e556c0c5dbd4b",
+    "topics/padua-batch-20261031/ALLOCATIONS.md": "0951493e3f25b31d08fe5877207c3444093a44947b4b64d537b9374cb67fc520",
+    "topics/padua-lanczos-drift-20261101/COLD_STORAGE.md": "2dd6c04b060bb52ce142105c89209f89a0523ded2703b6141c1f361a393af0b9",
+    "topics/padua-lanczos-drift-20261101/cold-storage.json": "c23815a425dba56130444ad49ae72897c255dccf64e408a910234472757adb6f",
+    "topics/padua-mz-2d-20261101/COLD_STORAGE.md": "0ac65a1d512e19879c796b52cea7fb7e1508d3c67a10cdda0dc5bbf163fa535a",
+    "topics/padua-mz-2d-20261101/cold-storage.json": "c5741aad6277146ea3d1c65ca903b6d4fb49579a0dcd7a9fae77a05c0c36a25b",
+    "topics/padua-proof-attempts-2-20261101/COLD_STORAGE.md": "4a15135ea54b467ae990b2303bdb52053a3a44e82bb259e19374428d15ac63ff",
+    "topics/padua-proof-attempts-2-20261101/cold-storage.json": "d11a054b07306feb5d155ba962bd325040f29f821a34833c0b0a332ad56b3551",
+    "topics/padua-proof-attempts-2-20261101/pr-prep.md": "2fa7359096b640febe9eca02fa81b6ab110c61e5607f81a7e6144ab18467b99c",
+    "topics/padua-proof-attempts-2-20261101/report.md": "51819a02b2dec0cd5c2966b7ac44951cfe514fe84ae818da742f943696093f0d",
+    "topics/programme-ideas-20261031/COLD_STORAGE.md": "5657dc2abc081e715921b3dfe9802e143ead5b96f5b9be65b74e4eb8f36c0aa1",
+    "topics/programme-ideas-20261031/cold-storage.json": "7bdc1895c483687380cea2caba0c024172fd3c049f84f59a5e0694e7baf830ef",
+    "tracks/mz-constants/COLD_STORAGE.md": "c93e1510f22aeae98aceb993e82ce0c68e0fda2d0d9a9b38b8e0aba3b7a3910a",
+    "tracks/mz-constants/cold-storage.json": "a0df82628679b004676a7199bfbb5d7c7f01861ca33b9d4752b3449533604be4"
+  },
+  "limits": [
+    "No new mathematics, novelty review, degree>=17 global certificate or inherited n4 completeness reproof.",
+    "Only selected local Git objects are materialized; index/tree identity comparison is complete but full Git fsck/status is not certified.",
+    "Final normal/-O plain integrity checks follow parent metadata/manifest refresh; this frozen receipt does not claim a future result.",
+    "AC delivery, WSL/drvfs/native Windows testing and history purge are not performed.",
+    "Only AC merges PR17; publication/remote readiness are parent responsibilities."
+  ]
+}

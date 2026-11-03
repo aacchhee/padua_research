@@ -1,0 +1,206 @@
+{
+  "status": "MEASURED independent full replay; finite exact/outward controls separately identified, no uniform theorem",
+  "checker": "Codex, configured gpt-6-astra xhigh; runtime metadata not independently exposed",
+  "rules_admin_head": "aa1883f2fd9a837bb931ce804cb4b210c7475886",
+  "scientific_base": "7d308b10d946b607ae0690454f6c0103690775a4",
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-argmax-alln-20261101/code/gated/d2_screen_r01.py /tmp/padua-gated-check-d2-r01.json > /tmp/padua-gated-check-d2-r01.out",
+  "source_sha256_at_execution": {
+    "code/gated/d2_screen_r01.py": "1fb72190e9ea0ae53450ad5e379bfe2a74246520e8dd43ae50f7f6a65e0009d2",
+    "code/maj.py": "705139a65f225f66ed30f5c7f197cda9f54137c42fb10c8b6f452ab83c78909c",
+    "code/part3/finite_n2_exact.py": "a5f00e6039d6ec76660cac90fb5720e0d6721348ed34c9e62775e1125d3e87c2",
+    "code/part3/finite_general.py": "b20b7f88ddfc0bbc92e68096063ef626664028c2a379c34d16dc9f84e17aa74a",
+    "code/part3/finite_bernstein.py": "a3133c6c22a365380f6c2ab14f6d31f60153d0df902b325cfcfbeeccc1bed74f",
+    "gated/d2/r01-screen.md": "6234978f2215630444ebed37d8f6050fd9e475a8906290d17896a5697eab8d48",
+    "gated/d2/r01-contract.md": "b383218c7cf41f16ef4deab9253f72e3fe4df11514c6648cabec677d2e3eeaa2",
+    "theory/gated-codex-11-corner-phase-localization.md": "42372e7367ad21572544f38f281cb590d8e4b8ed07af3608fe64107c2f0dddae"
+  },
+  "rerun": {
+    "path": "/tmp/padua-gated-check-d2-r01.json",
+    "bytes": 72814,
+    "sha256": "d2713546e2ec054d58f610b9e886b8918e2a9d72803fc7047dcdeeff4a3026ac"
+  },
+  "developer": {
+    "path": "topics/padua-argmax-alln-20261101/outputs/gated/d2_screen_r01.json",
+    "bytes": 72838,
+    "sha256": "78dbf52b06c15d2ebae5f0fee5153236de28034ac8cc0fdf0d923de887ead5ad"
+  },
+  "rerun_stdout": {
+    "path": "/tmp/padua-gated-check-d2-r01.out",
+    "bytes": 17018,
+    "sha256": "ba7db4d05a6eeddc38943562b7fb0759d2a63c80ec53abd4c1aea464857ef2f0"
+  },
+  "comparison": {
+    "complete_raw_json_compared": true,
+    "scientific_and_environment_payload_equal": true,
+    "only_differences": [
+      {
+        "path": "/argv/1",
+        "rerun": "/tmp/padua-gated-check-d2-r01.json",
+        "developer": "topics/padua-argmax-alln-20261101/outputs/gated/d2_screen_r01.json"
+      },
+      {
+        "path": "/cpu_seconds",
+        "rerun": 0.37422437599999997,
+        "developer": 0.387388101
+      },
+      {
+        "path": "/wall_seconds",
+        "rerun": 0.3757829500000298,
+        "developer": 0.3891048300001785
+      }
+    ],
+    "canonical_payload_sha256": "ed646d0d9b0f828fd2d82bcd87d27e39b567dce9a3a5ddb864523815692f6a80",
+    "numeric_leaves_equal": 1503,
+    "other_leaves_equal": 203
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "numpy": "2.3.5",
+    "randomness": null
+  },
+  "registered_degrees": [
+    2,
+    3,
+    4,
+    5,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64,
+    96,
+    128
+  ],
+  "registered_direction_t": [
+    "0",
+    "1/4",
+    "1/2",
+    "3/4",
+    "1"
+  ],
+  "n2_rational_control": {
+    "arithmetic": "fractions.Fraction",
+    "determinant": "-27/2",
+    "corner_values": [
+      "1/3",
+      "-1/3",
+      "-2/3",
+      "2/3",
+      "0",
+      "1"
+    ],
+    "gx": [
+      "-1/2",
+      "0",
+      "4/3",
+      "2/3",
+      "-1/6",
+      "-4/3"
+    ],
+    "gy": [
+      "-5/6",
+      "5/6",
+      "5/3",
+      "-5/3",
+      "-1/6",
+      "1/6"
+    ],
+    "first_variations": [
+      "-14/3",
+      "-49/12",
+      "-7/2",
+      "-35/12",
+      "-7/3"
+    ],
+    "max_numerical_discrepancy": 8.049116928532385e-16
+  },
+  "outward_controls": [
+    {
+      "n": 3,
+      "precision": 192,
+      "all_five_direction_intervals_strictly_negative": true,
+      "max_numeric_discrepancy": 1.3322676295501878e-15
+    },
+    {
+      "n": 4,
+      "precision": 192,
+      "all_five_direction_intervals_strictly_negative": true,
+      "max_numeric_discrepancy": 1.887379141862766e-15
+    },
+    {
+      "n": 8,
+      "precision": 192,
+      "all_five_direction_intervals_strictly_negative": true,
+      "max_numeric_discrepancy": 2.6645352591003757e-14
+    }
+  ],
+  "screen_summary": {
+    "degree_count": 13,
+    "direction_count": 65,
+    "nonnegative_axis_candidate_flag": false,
+    "minimum_measured_axis_margin_n2_Lc": 0.19444444444444448,
+    "max_matrix_known_value_error": 2.0569830561090185e-13
+  },
+  "retention": "Full independent JSON/stdout are /tmp working artifacts, not cold storage. This compact receipt records hashes and a complete comparison; reproduce using the pinned source set. Developer raw JSON is retained separately. No duplicate large output added.",
+  "supplementary_energy_replay": {
+    "status": "MEASURED",
+    "command": "Registered inline Python command in gated/d2/r01-screen.md, unchanged operations, output redirected to /tmp/padua-gated-check-d2-r01-weighted.json; OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1",
+    "rerun": {
+      "path": "/tmp/padua-gated-check-d2-r01-weighted.json",
+      "bytes": 4675,
+      "sha256": "32060ae8a16d521be7e35b9d9039d7756651fc13ff49760d0488dc91e02e18b8"
+    },
+    "developer": {
+      "path": "topics/padua-argmax-alln-20261101/outputs/gated/d2_screen_r01_weighted.json",
+      "bytes": 4675,
+      "sha256": "8250472c4d73a9ac9c8a74d2d587581fa2976e6f094efbe2829daab12b8dc43b"
+    },
+    "full_payload_equal_excluding_documented_note_hash_and_cpu": true,
+    "only_differences": [
+      {
+        "field": "preregistration_note_sha256",
+        "rerun": "af31f11fdb57c792ecb4f0a90846fdec258449403290fbfe293559e48a2811de",
+        "developer": "f6532f0f6afca8f78609b9125693a671918f1e070f09202321177914299db26a"
+      },
+      {
+        "field": "cpu_seconds",
+        "rerun": 0.06636574699999999,
+        "developer": 0.06403977200000001
+      }
+    ],
+    "note_hash_difference_reason": "Developer hash is the pre-execution registration; checker hash includes the completed-results and command append inspected before this replay. Frozen main Python source hash is unchanged.",
+    "canonical_payload_sha256": "2fa92e16245a72a740fd0863701270f09b4afb32fe61cc59cc10794168b69c96",
+    "minimum_W_over_n4_Lc": 0.2946712648260867,
+    "maximum_W_over_n4_Lc": 0.383101851851852
+  },
+  "symbolic_replay": {
+    "status": "Exact symbolic verification evidence; analytic proof independent of execution",
+    "command": "python -B topics/padua-argmax-alln-20261101/code/gated/d2_symbolic_r01.py > /tmp/padua-gated-check-d2-r01-symbolic.json",
+    "rerun": {
+      "path": "/tmp/padua-gated-check-d2-r01-symbolic.json",
+      "bytes": 891,
+      "sha256": "f3e85314788e6ca3fab6b06b7e420a23f42ae6adabd25f09092f42ca5d555262"
+    },
+    "developer": {
+      "path": "topics/padua-argmax-alln-20261101/outputs/gated/d2_symbolic_r01.json",
+      "bytes": 891,
+      "sha256": "f3e85314788e6ca3fab6b06b7e420a23f42ae6adabd25f09092f42ca5d555262"
+    },
+    "full_raw_json_byte_identical": true,
+    "accepted": true,
+    "sympy_version": "1.14.0",
+    "checks": {
+      "quotient_second_x": true,
+      "quotient_second_y": true,
+      "zero_gradient_x": true,
+      "zero_gradient_y": true,
+      "gradient_difference": true,
+      "n2_axis_slopes": true,
+      "n2_single_zero": true,
+      "n2_zero_gradient_equal": true
+    }
+  }
+}

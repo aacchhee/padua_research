@@ -1,0 +1,27 @@
+/cpu_seconds (4.749713391, 7.267876166000001)
+/preregistration_note_sha256 ('03e8770164a201354aa2eb6e293cf6503f29e9ee4c07c681b4a9ad21deafb6c5', '94e87303e0e08aecee3250e8108cfb4c97f56c1400bbbdabb286afca3ed9caa4')
+/wall_seconds (4.749876562999816, 6.763342784999992)
+top keys ['complete', 'cpu_seconds', 'ep_exact_witnesses', 'format', 'pairs', 'precision', 'preregistration_note_sha256', 'producer_accepted', 'scale', 'source_checkpoint', 'source_sha256', 'wall_seconds']
+n pairs 10 leaves 20 witnesses 8
+7 7 2 4 ['0', '1'] []
+7 7 6 4 ['0', '1'] []
+12 0 3 5 ['0', '1'] []
+12 0 5 7 ['0', '1'] []
+12 0 9 7 ['0', '1'] []
+12 0 11 9 ['0', '1'] []
+12 12 3 5 ['0', '1'] []
+12 12 5 7 ['0', '1'] []
+12 12 9 7 ['0', '1'] []
+12 12 11 9 ['0', '1'] []
+12 0 5 7 -3/4 0.007486860619838176
+12 0 5 7 -1/2 0.039376666744256286
+12 0 5 7 -1/4 0.022791674792055027
+12 0 11 9 -3/4 0.010237235734045646
+12 12 5 7 -3/4 0.007486860619838176
+12 12 5 7 -1/2 0.039376666744256286
+12 12 5 7 -1/4 0.022791674792055027
+12 12 11 9 -3/4 0.010237235734045646
+padua_d3_claude_check.json True 0d660fc70e9db06624d6f8bd82371602c9f6d540b01124824e264624de0385b7 5f43f69a427c415542848f8ae9e337c69b3a5b8f822e78db38e095a0a2c9a358 17 ['missing_pair', 'wrong_pair', 'nonedge_index', 'missing_leaf', 'duplicate_leaf', 'invalid_path', 'forged_upper', 'forged_target_lower', 'changed_source_interval', 'target_sample_outside', 'changed_source', 'false_complete', 'producer_self_approval', 'missing_designated_EP_witness', 'duplicate_EP_witness', 'nonpositive_EP_reversal', 'unregistered_EP_phase'] 2 8
+padua_d3_claude_check_regen.json True c5a9f5fd696941220f2a540bab0e1d4e755e0bc9307ccad80df431aa77b2f9b8 5f43f69a427c415542848f8ae9e337c69b3a5b8f822e78db38e095a0a2c9a358 17 ['missing_pair', 'wrong_pair', 'nonedge_index', 'missing_leaf', 'duplicate_leaf', 'invalid_path', 'forged_upper', 'forged_target_lower', 'changed_source_interval', 'target_sample_outside', 'changed_source', 'false_complete', 'producer_self_approval', 'missing_designated_EP_witness', 'duplicate_EP_witness', 'nonpositive_EP_reversal', 'unregistered_EP_phase'] 2 8
+dev vs claude check diffs: [('/cpu_seconds', (6.095775444, 7.672205078))]
+dev vs regen check diffs: [('/certificate_sha256', ('0d660fc70e9db06624d6f8bd82371602c9f6d540b01124824e264624de0385b7', 'c5a9f5fd696941220f2a540bab0e1d4e755e0bc9307ccad80df431aa77b2f9b8')), ('/cpu_seconds', (6.095775444, 7.244323396))]

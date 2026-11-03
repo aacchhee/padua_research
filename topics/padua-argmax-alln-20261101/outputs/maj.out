@@ -1,0 +1,8 @@
+3 Lc=3.77614 grid max lam=3.77614 grid max maj=3.77751 maj-Lc=1.37e-03 grid interior lam max=3.7724 grid edge lam max(non-corner)=3.7747
+4 Lc=4.40973 grid max lam=4.40973 grid max maj=4.41042 maj-Lc=6.95e-04 grid interior lam max=4.4018 grid edge lam max(non-corner)=4.4066
+5 Lc=4.94781 grid max lam=4.94781 grid max maj=4.94781 maj-Lc=1.78e-15 grid interior lam max=4.9337 grid edge lam max(non-corner)=4.9420
+6 Lc=5.41750 grid max lam=5.41750 grid max maj=5.41857 maj-Lc=1.07e-03 grid interior lam max=5.3949 grid edge lam max(non-corner)=5.4079
+8 Lc=6.21346 grid max lam=6.21346 grid max maj=6.21346 maj-Lc=8.88e-16 grid interior lam max=6.1665 grid edge lam max(non-corner)=6.1926
+12 Lc=7.44938 grid max lam=7.44938 grid max maj=7.44938 maj-Lc=1.78e-15 grid interior lam max=7.3189 grid edge lam max(non-corner)=7.3892
+16 Lc=8.40744 grid max lam=8.40744 grid max maj=8.40744 maj-Lc=0.00e+00 grid interior lam max=8.1409 grid edge lam max(non-corner)=8.2819
+24 Lc=9.87251 grid max lam=9.87251 grid max maj=9.87251 maj-Lc=3.55e-15 grid interior lam max=9.1552 grid edge lam max(non-corner)=9.5265

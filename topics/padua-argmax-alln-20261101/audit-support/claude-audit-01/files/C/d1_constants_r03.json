@@ -1,0 +1,44 @@
+{
+  "status": "MEASURED scalar arithmetic only; analytic proof is in r03-explicit-local.md",
+  "python": "3.13.18",
+  "source_sha256": "3a50c4a7fe477eb41649b528ffbdfd5ed369454ccbf6761dec1078382a67e0f3",
+  "constants": {
+    "rho_star": 0.015625,
+    "C2": 242000,
+    "C3": 2048,
+    "Ce": 640
+  },
+  "regular_sum_constants": {
+    "f_gradient": 1152,
+    "f_hessian": 55296,
+    "g_value": 24,
+    "g_gradient": 216,
+    "g_hessian": 1080,
+    "path_second_derivative": 59000
+  },
+  "quadratic_bookkeeping": {
+    "regular": 236000,
+    "sign_changes": 5376,
+    "collision_family_over_log3": 9.102392266268373,
+    "sum": 241385.10239226627,
+    "preliminary_240000_covers_this_sum": false,
+    "final_242000_covers_this_sum": true
+  },
+  "defect_budget": {
+    "delta": 0.7853981633974483,
+    "rho_delta": 0.019030116872178315,
+    "n_delta": 64,
+    "d_delta": 1.8584098507986636e-05,
+    "local_radius_compatible": true
+  },
+  "comparison": {
+    "log_degree": 10000000,
+    "A": 1000000000000.0,
+    "quadratic_turnover_log_degree": 6050000.500022273,
+    "cubic_over_quadratic_maximum": 1.4843406974976e-23,
+    "endpoint_component_log10_upper": -8685882.32673491,
+    "first_component_below_defect": true,
+    "finite_degree_coverage_inferred": false,
+    "global_phase_entry_quantified": false
+  }
+}

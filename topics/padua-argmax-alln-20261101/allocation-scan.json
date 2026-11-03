@@ -1,0 +1,151 @@
+{
+  "date": "2026-11-01",
+  "main": "2b52b432fe59c9a50aef9deebe5152c5d6874465",
+  "topic": "328be35e55143013047ec03a70e9906e82b95353",
+  "open_prs": [],
+  "closed_unmerged_prs": [],
+  "prs": [
+    {
+      "number": 16,
+      "state": "closed",
+      "merged": true,
+      "head_sha": "060d29b7b0d4ef2dcd8d95b6a2ff942e11d79ba3"
+    },
+    {
+      "number": 15,
+      "state": "closed",
+      "merged": true,
+      "head_sha": "c714c80a35ccaf9e0f7df6b96bc840eba8bd83b1"
+    },
+    {
+      "number": 14,
+      "state": "closed",
+      "merged": true,
+      "head_sha": "635ba4fd537be9a4dbc060617fbc0535db4d72ad"
+    },
+    {
+      "number": 13,
+      "state": "closed",
+      "merged": true,
+      "head_sha": "7ce4c36fb1494fee2dd3bdc1bf39fc241c5b9e21"
+    },
+    {
+      "number": 10,
+      "state": "closed",
+      "merged": true,
+      "head_sha": "9fa30122fec9796ca718af210a2a13c7525038a2"
+    },
+    {
+      "number": 9,
+      "state": "closed",
+      "merged": true,
+      "head_sha": "752ba068589683afe644b505d673f8da1529cbf0"
+    },
+    {
+      "number": 8,
+      "state": "closed",
+      "merged": true,
+      "head_sha": "6eeec5b3a3d48c4bde198d9cc6c170dd92674bdb"
+    },
+    {
+      "number": 12,
+      "state": "closed",
+      "merged": true,
+      "head_sha": "c1325c6da7ef2fb2c20760c3e020280eba1e5126"
+    },
+    {
+      "number": 11,
+      "state": "closed",
+      "merged": true,
+      "head_sha": "1406ef74a76d9160324596447a831470b93c398b"
+    },
+    {
+      "number": 6,
+      "state": "closed",
+      "merged": true,
+      "head_sha": "b46b4dea18ce2c933489a211b0b6819dfd32ca70"
+    },
+    {
+      "number": 5,
+      "state": "closed",
+      "merged": true,
+      "head_sha": "da679224b50d2210689c92e5a69d5a4d181afe3c"
+    },
+    {
+      "number": 4,
+      "state": "closed",
+      "merged": true,
+      "head_sha": "a4331a13301ee4a9905c8204c26bff5f9fdf246e"
+    },
+    {
+      "number": 3,
+      "state": "closed",
+      "merged": true,
+      "head_sha": "8ee04f4e5db46dd25fe5752ce605dde27098aae6"
+    },
+    {
+      "number": 2,
+      "state": "closed",
+      "merged": true,
+      "head_sha": "317a26597dedc9adc9cfc6a26fa00078df7d29e4"
+    },
+    {
+      "number": 1,
+      "state": "closed",
+      "merged": true,
+      "head_sha": "5a5f09f9768f4c2b28a82eb85ed5be8bd3c797e5"
+    }
+  ],
+  "files": [
+    {
+      "path": "PROOF_STATUS.md",
+      "git_blob_sha": "d85bd4ae56e115bb30872f777e0ca12c72193f64"
+    },
+    {
+      "path": "state/IDEAS.md",
+      "git_blob_sha": "ac0c4d133d412f32060e982b870850759f4352a6"
+    },
+    {
+      "path": "literature/INDEX.md",
+      "git_blob_sha": "d4176c1e98a1088500782d8123516c48a9a3eeda"
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "git_blob_sha": "21a699dc6d4e12693ca5e811cdd741503f9a8782"
+    },
+    {
+      "path": "ID_CROSSWALK.md",
+      "git_blob_sha": "ad6ba3d30ad548b15f2077ac55ae0e712220669b"
+    }
+  ],
+  "highest_used_or_reserved": {
+    "PD-T": 205,
+    "PD-N": 77,
+    "IDEA": 315,
+    "LIT": 459
+  },
+  "reserved": {
+    "PD-T": [
+      206,
+      225
+    ],
+    "PD-N": [
+      78,
+      83
+    ],
+    "IDEA": [
+      316,
+      335
+    ],
+    "LIT": [
+      460,
+      465
+    ]
+  },
+  "notes": [
+    "All fifteen repository PRs returned; all closed and merged. No open or closed-unmerged reservation needs import.",
+    "Complete main ledger and all four registries read. Main registry blobs equal branch-head registry blobs.",
+    "No final IDs assigned; provisional labels remain until PR preparation.",
+    "Topic-local ledger used because this is a new single-topic PR and handoff02 forbids edits outside topic/results. Shared ledger and crosswalk proposal recorded for PR preparation."
+  ]
+}

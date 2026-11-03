@@ -217,3 +217,24 @@ Reservation priority is the pushed commit introducing this section, published in
 ## PR12 assignments after reservation publication
 
 Priority: published103ee71e101265ca4133c7ffea8c0e48fa840109 before assignment. Assigned PD-T156–197 (42), PD-N072–073 (2), IDEA-286–311 (26). Permanent unused headroom PD-T198–205, PD-N074–077, IDEA-312–315. No LIT assignment/range; source IDs312/379/388 reused. [Map](../padua-proof-attempts-2-20261101/COLD_STORAGE.md). All earlier reservations and gaps, especially merged PR15's, remain unchanged. PR15 is merged as67bd07c; PR12 follows on that base. Only AC merges.
+
+## PR17 Padua argmax — unchanged reservation import and assignments
+
+2026-11-03. Owner claude/padua-argmax-alln-20261101. Import the permanent
+reservation unchanged: PD-T206–225(20),PD-N078–083(6),IDEA316–335(20),
+LIT460–465(6), first publication405febab68fbe1d998bf894c2d21dfe23d689f96,
+PR17,2026-11-01; additional disjoint PD-T226–245(20), first publication
+3aebb299a4154dac822974b7245a9d243f21374e,PR17,2026-11-02.
+Original checked heads main2b52b432fe59c9a50aef9deebe5152c5d6874465 /
+topic328be35e55143013047ec03a70e9906e82b95353; additional reservation
+checked topicfdee6511195632dcf368865edef87b31be40f95c. Priority/history
+and old allocation scans remain in the [topic ledger](../padua-argmax-alln-20261101/ALLOCATIONS.md).
+Current union scans main and both open17/18, no closed-unmerged PR;
+PR18 requires no range. [Fresh scan](../padua-argmax-alln-20261101/prep-support/allocation-scan.json).
+
+Final assignments:T206–235(30),N078–083(6),IDEA316–335(20), existingT181
+reused. Permanent unused gaps:T236–245(10),LIT460–465(6). No source
+reading/novelty claim or new literature allocation. All prior/retired
+ranges and priority remain intact; this is import, not a reservation.
+[Scientific map](../padua-argmax-alln-20261101/prep-support/final-theory-map.json)
+and [candidate map](../padua-argmax-alln-20261101/prep-support/final-idea-map.json).

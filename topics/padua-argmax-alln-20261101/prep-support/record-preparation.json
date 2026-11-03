@@ -1,0 +1,149 @@
+{
+  "role": "Codex gpt-6.1-sol high record-preparation developer",
+  "input_head": "cdb12257af24ea2542de707b9730f8278d69a168",
+  "new_measurements_executed": false,
+  "novelty_gate": "Not applicable: rehoming already accepted finite observations; no new idea or negative mechanism is generated.",
+  "r1_changes": [
+    {
+      "path": "theory/argmax-alln-codex-01-measured-tests.md",
+      "old_sha256": "38515c79b2122e33dc6e69518475aa2f7f484c1064d918686b48a3c19de7e67c",
+      "new_sha256": "1c07e75cf42b76adb711910ead1491e4866ae73f3def3209768483ab78df107c",
+      "review_qualifiers_normalized": 1
+    },
+    {
+      "path": "theory/argmax-alln-codex-02-degree-two-global-argmax.md",
+      "old_sha256": "1040ea4c1083ea4925dc10c9772dd8ad49840df1884ce7f97cb58a5e0fd6a460",
+      "new_sha256": "2aff002f3b6db5b76e99e7089409801d728af08c9e06d51efbc6464308624ad2",
+      "review_qualifiers_normalized": 1
+    },
+    {
+      "path": "theory/argmax-alln-codex-04-vertical-compact-defect.md",
+      "old_sha256": "84c4b82e79041480fd9756f6d3b66c7119194c061cc0bdae472d16ce8d110bee",
+      "new_sha256": "729698c46c46899cc9e7be26cd256f5b563828c6f5d44346b9c7b53b0a0d1df6",
+      "review_qualifiers_normalized": 1
+    },
+    {
+      "path": "theory/argmax-alln-codex-07-degree-eight-global-argmax.md",
+      "old_sha256": "9906350e0389141cdf64cf70d19aaeea1d62c42cfe6c9d313ea52917f3b76917",
+      "new_sha256": "716aa3924ec6462799b4bb59ea9a7c97857e4cebb322d0c0e591df90340bbecd",
+      "review_qualifiers_normalized": 1
+    },
+    {
+      "path": "theory/argmax-alln-codex-08-degree-nine-through-sixteen-global-argmax.md",
+      "old_sha256": "a85f6b16c6690b22c72345f823c108b6a082f54690c577c7aa128b1bc4187d42",
+      "new_sha256": "9496595acd6e0a9f18f155750b80adb923205c828265ea7c1a924e63c638d767",
+      "review_qualifiers_normalized": 2
+    },
+    {
+      "path": "theory/argmax-alln-codex-N01-pairing-order-obstruction.md",
+      "old_sha256": "b5e01d3992ceef524570da94f379d995e9bf71a29e7360e720a507be94b65a60",
+      "new_sha256": "d964b152b4c907149f0c8c999ade33e7c9ca63348a6171e2c480b6e6ea1be034",
+      "review_qualifiers_normalized": 2
+    },
+    {
+      "path": "theory/gated-codex-07-explicit-local-envelope.md",
+      "old_sha256": "9f3a3edbc5ad9a6b327bc689e547fd997af00603943d2bac511aa45d0edc8ccb",
+      "new_sha256": "1c18ec2a359990d682a393fef6e901a13f440e540b0c3a90cdd5e6fd5f0e336c",
+      "review_qualifiers_normalized": 0
+    },
+    {
+      "path": "theory/gated-codex-08-adaptive-finite-defect.md",
+      "old_sha256": "04cd3c9f93a6be48e1c6215ce11675e8cbb711d2c738254842b49662a9b1c993",
+      "new_sha256": "bf873b64ab6923df412800f9746c6f5d3347582ebc6b60034f0cf53d8ac32a24",
+      "review_qualifiers_normalized": 1
+    },
+    {
+      "path": "theory/gated-codex-16-horizontal-compact-envelope.md",
+      "old_sha256": "ac9e4ed55dccce721d325524cf31b5a33a3d6dbe1a55c43108bbe068bb53638c",
+      "new_sha256": "f823a396456250fff8258994dc29b0bb19bcf667f119e5272a2bfa6709404fef",
+      "review_qualifiers_normalized": 2
+    },
+    {
+      "path": "theory/gated-codex-N02-pointwise-edge-translation-obstruction.md",
+      "old_sha256": "08c7f7ac59ea7b5284e5cb5fe05ee2f887a68da812be1afe7aa4cea926d022de",
+      "new_sha256": "2266be98d9281c6b973495fe058e8356c6d5b072ad4e02dcabe119dd714be8f1",
+      "review_qualifiers_normalized": 2
+    }
+  ],
+  "records": [
+    {
+      "path": "theory/prep-codex-01-d1-phase-defect-screen.md",
+      "id": "PD-T?argmax-alln-prep-codex-01",
+      "kind": "PD-T",
+      "title": "Finite two-phase primitive and pairwise-defect screen",
+      "status": "MEASURED",
+      "sha256": "48d0a54eced1e6372740b9176df87efd63c4e99a3ba50f1d766e19066da9c4a7",
+      "split_from": "the numerical claims in gated/d1/r01-screen.md (no original all-degree theorem is narrowed)",
+      "statement": "At n=16,32,64,128,256 the preregistered float64 screen evaluated, per degree,145global phase points,26near-zero points,117compact-coset points and48moving-strip points. Every registered finite kill flag was false. The largest normalized primitive remainder `(S-a*Lambda_c)/log(n+1)` decreases over the five degrees from1.5993457963 to1.4462486836. The compact minimum defect over all near phases decreases from1.8419070561 to1.7119286753. The finer h=1/n grid has a positive primitive excess at every tested degree, including0.0000176177240 at n256; this is a sampled value, not an enclosed supremum or an asymptotic assertion.",
+      "evidence": "Claude [audit-01](../audit-01.md) accepted the numerical claims at their recorded finite scopes; its F11 requested these durable homes. Historical payloads are pinned at source `1cecd68ac0a64b01ed7b2d262b6263a955a7d4d7` in [cold-storage.json](../cold-storage.json); retrieval is byte-exact, and the active integrity manifest must never be overwritten. Raw860,021B payload SHA256`15c9d29a3d2b166ee54dc8a91fe7bff4c117cc85dc99184fa7bc7640a888e9ef`; archived gzip81,843B SHA256`8b57766f8e0251cc6bbd2b772888846ba475f0c01025e17cdf124a90d6c0fc1d`. At n256 the compact minimum Qv=.5511542427,Qh=.9968386231. Moving-strip minima Delta increase from.6218790475 to.8212807013; those strips do not exhaust a continuum. Formula-validation maximum absolute error is5.329070518200751e-15, and periodic-S/four-copy discrepancy across production samples is4.263256414560601e-13."
+    },
+    {
+      "path": "theory/prep-codex-02-d2-corner-screen.md",
+      "id": "PD-T?argmax-alln-prep-codex-02",
+      "kind": "PD-T",
+      "title": "Finite corner slope and weighted-gradient-energy screen",
+      "status": "MEASURED",
+      "sha256": "7cdf32590e78de30faac714b5b6d67df117d9beb7fd4e7fdbb6c62ca7ff9878a",
+      "split_from": "numerical claims in gated/d2/r01-screen.md; exact structural identities remain in gated-codex-13",
+      "statement": "At n=2,3,4,5,8,12,16,24,32,48,64,96,128, the registered coefficient-matrix float64 calculation gives strictly negative inward first variations at each of v=(t,1-t),t=0,1/4,1/2,3/4,1. The measured normalized energy W/(n^4*Lambda_c) lies between.2946712648 and.3831018519 on this finite set. These finite observations do not establish uniform all-degree slope or energy estimates.",
+      "evidence": "Claude [audit-01](../audit-01.md) accepted the numerical claims at their recorded finite scopes; its F11 requested these durable homes. Historical payloads are pinned at source `1cecd68ac0a64b01ed7b2d262b6263a955a7d4d7` in [cold-storage.json](../cold-storage.json); retrieval is byte-exact, and the active integrity manifest must never be overwritten. Archived main72,838B SHA256`78dbf52b06c15d2ebae5f0fee5153236de28034ac8cc0fdf0d923de887ead5ad`. Committed weighted-energy4,675B SHA256`8250472c4d73a9ac9c8a74d2d587581fa2976e6f094efbe2829daab12b8dc43b`. At n128,Dx=-103567.8210693,Dy=-105175.9830741,Lambda_c=17.3460568001; W/(n^4 Lambda_c)=.3303843693. At n2,the separately exact axis controls are-7/3,-14/3. At n128 the closed-gradient comparison has maximum absolute discrepancy1.16001e-5 and relative1.19335e-7 after scaling bymax(1,|matrix gradient|); these cancellation-sensitive diagnostics are not enclosures."
+    },
+    {
+      "path": "theory/prep-codex-03-d1-row-grid.md",
+      "id": "PD-T?argmax-alln-prep-codex-03",
+      "kind": "PD-T",
+      "title": "Finite axis-row formula comparison grid",
+      "status": "MEASURED",
+      "sha256": "17ca5ccc19b262ddaace0cb76c356acc9221d32559149d3a6d661f1c6544b7e2",
+      "split_from": "numerical checks in gated/d1/r06-row-sum.md; the analytic identities remain gated-codex-12",
+      "statement": "On exactly n=2,3,4,8,16 and alpha=0,+.17,-.17,+.4,-.4,beta=0,the existing deterministic Python binary64 script compares380periodic second-row cases. Maximum absolute discrepancies are1.6928680679484387e-12 for cotangent terms versus finite kernel,8.86402062860725e-13 for complete signed rows versus the exact formula,and8.526512829121202e-13 for sign-interval/endpoint absolute rows versus the finite kernel. These are finite implementation checks.",
+      "evidence": "Claude [audit-01](../audit-01.md) accepted the numerical claims at their recorded finite scopes; its F11 requested these durable homes. Committed[output](../outputs/gated/d1_rows_r06.json),6,507B,SHA256`560e2677d04a3ab6a2a6d0bbaa6e57ca5ab3e97835fefd15abb7d2e2c0ffb9dc`. All380cases agree to the displayed measured discrepancies. The original note's no-independent-rerun wording is historical; the separate round6 report supplies the completed replay."
+    },
+    {
+      "path": "theory/prep-codex-04-d3-pointwise-screen.md",
+      "id": "PD-T?argmax-alln-prep-codex-04",
+      "kind": "PD-T",
+      "title": "Finite common-phase edge-translation screen",
+      "status": "MEASURED",
+      "sha256": "cb3a44d76b7de42da79d11fbe16778f1c94826c4297d93f4cf4303626ae70af2",
+      "split_from": "floating E-P observations in gated/d3/r01-finite.md; exact E-C and E-P statements remain gated-codex-17 and gated-codex-N02",
+      "statement": "At n7,12,on all ten registered directed centreward vertical-edge pairs and the nine common phases u=-1,-3/4,-1/2,-1/4,0,1/4,1/2,3/4,1,the float64 E-P screen evaluates90samples and finds eight target-minus-source values below-1e-6. All eight occur at n12: for each j=0,12, k5\u21927 at u=-3/4,-1/2,-1/4 and k11\u21929 at u=-3/4. This statement is the finite floating screen,kept separate from the later exact witnesses.",
+      "evidence": "Claude [audit-01](../audit-01.md) accepted the numerical claims at their recorded finite scopes; its F11 requested these durable homes. Historical payloads are pinned at source `1cecd68ac0a64b01ed7b2d262b6263a955a7d4d7` in [cold-storage.json](../cold-storage.json); retrieval is byte-exact, and the active integrity manifest must never be overwritten. Archived E-P screen24,993B SHA256`3215523e1a768ce7e81c76283ac18bf476f8162bdcd84e579a7b93388707d14c`. Its eight floating reversals each subsequently received exact outward witness checks,with designated source angle9pi/26 versus targetpi/2 atn12. That exact >39/1000 result belongs only to the separate PROVED negative record."
+    },
+    {
+      "path": "theory/prep-codex-N01-or-order-screen.md",
+      "id": "PD-N?argmax-alln-prep-codex-01",
+      "kind": "PD-N",
+      "title": "Measured failure of whole-diamond nearest-corner ordering screen",
+      "status": "MEASURED",
+      "sha256": "57fd0532a6b03524dadd99f6ae7af41b540c6829a9505bac85b692d363a3e0c1",
+      "split_from": "the O-R portion of PD-T?argmax-alln-codex-06; retained original combined measured record is not deleted",
+      "statement": "The existing float64 multistart O-R screen at n4,7,12 reports respectively6of10,16of42,and60of130nearest-corner neighbour comparisons reversing by more than10^-6. This crosses the chosen numerical kill threshold for pursuing that screened ordering. It does not prove the exact inequality between whole-diamond suprema fails,because an optimizer may miss a source maximum.",
+      "evidence": "Claude [audit-01](../audit-01.md) accepted the numerical claims at their recorded finite scopes; its F11 requested these durable homes. Historical payloads are pinned at source `1cecd68ac0a64b01ed7b2d262b6263a955a7d4d7` in [cold-storage.json](../cold-storage.json); retrieval is byte-exact, and the active integrity manifest must never be overwritten. Archived106,627B SHA256`f602acf48d82b91a26db422164836a4529828d027488f9f1b20e58497c8a93c2`. At n4,M_(3,0)-M_(4,1)\u2248.505255 using numerical maxima3.598293 and3.093038 away from corner(4,5). Interior-centre examples atn7have gains\u2248.226682 and.103182. These are sampled lower-value comparisons,not certified supremum reversals."
+    },
+    {
+      "path": "theory/prep-codex-N02-t2-profile-test.md",
+      "id": "PD-N?argmax-alln-prep-codex-02",
+      "kind": "PD-N",
+      "title": "Measured failure of the T2 fixed interior raw-profile planning test",
+      "status": "MEASURED",
+      "sha256": "fe4903c07bc8b2f8694ff286960e3f68f1c086a488732dbe993611bf8ad8c99f",
+      "split_from": "T2 portion of PD-T?argmax-alln-codex-01; original combined measured record retained",
+      "statement": "Under the fixed9\u00d79macroscopic lattice/complementary-cell rounding and local-search convention below,32of81positions have |gap128-gap64|>.05. The largest recorded change is.382304500506 at the macro centre. Thus the registered finite stabilization criterion for pursuing the n-independent raw interior O(1)gap-profile form triggers. These finite observations do not prove nonconvergence or disprove the strict interior upper bound P4.",
+      "evidence": "Historical payloads are pinned at source `1cecd68ac0a64b01ed7b2d262b6263a955a7d4d7` in [cold-storage.json](../cold-storage.json); retrieval is byte-exact, and the active integrity manifest must never be overwritten. Archived69,566B SHA256`474a0aade64a06c2ec2976c40677189c93d369367bc3408482bdcf8fc40cb307`. At the centre the n32/64/128gaps are2.723873455357,3.098285732820,3.480590233326. Fixed zero-phase antinode gaps also change from3.103690474295 to3.484493175867 between64and128,so that central threshold breach is not solely the optimizer shift. Three-degree fits describe only those points; platform-sensitive least-squares leaves can differ by about5e-14,as disclosed in response-review-01N-a."
+    },
+    {
+      "path": "theory/prep-codex-N03-t3-profile-test.md",
+      "id": "PD-N?argmax-alln-prep-codex-03",
+      "kind": "PD-N",
+      "title": "Measured failure of the T3 raw angular corner-profile planning test",
+      "status": "MEASURED",
+      "sha256": "6a635dc7a23d0e3490a3625c6cc3846a859a99e731984eb81efe2f82bdca6814",
+      "split_from": "T3 portion of PD-T?argmax-alln-codex-01; original combined measured record retained",
+      "statement": "At n16,64,256,on the registered13\u00d713angular-offset grid,the raw corner profile lambda_n-Lambda_c has substantial finite degree dependence. At(xi,eta)=(.25,0),values are-.761788147,-1.445328813,-2.357884098; at(.5,.5),-5.176100973,-9.707866456,-15.912499857. This is the recorded measured KILL of the assumed n-independent raw-profile planning form,not a proof of nonconvergence. No off-origin sampled gap has magnitude<1e-6.",
+      "evidence": "Historical payloads are pinned at source `1cecd68ac0a64b01ed7b2d262b6263a955a7d4d7` in [cold-storage.json](../cold-storage.json); retrieval is byte-exact, and the active integrity manifest must never be overwritten. Archived83,548B SHA256`964b22ae3d0dbf5f4bdc39cc57d6357a52beeba1beb3d16850c953ffceb5fc98`. At(1,1),the three gaps are-2.550325109,-3.615806036,-4.738611618. The nearest off-origin sample is(.25,0)at all3degrees. The exact origin has zero gap. Raw finite drift and absence of a sampled near-tie do not enclose the continuum."
+    }
+  ],
+  "limits": "All provisional scientific labels now have final mappings; worker hashes identify the earlier correction boundary. Four MEASURED homes and three scoped MEASURED negatives only; no new run or universal failure inference.",
+  "hash_boundary": "Worker record-correction hashes are before parent final-ID title registration; current final bytes are covered by evidence-manifest.json. No old evidence pin was changed."
+}

@@ -1,0 +1,328 @@
+{
+  "kind": "independent executed rerun and full JSON comparison",
+  "status": "MEASURED",
+  "checker": "Codex gpt-6-astra xhigh (configured; runtime metadata not independently exposed)",
+  "rules_head": "2dde541f1e5af239cae6e93e4438b9be89d15d87",
+  "scientific_input_head": "7d308b10d946b607ae0690454f6c0103690775a4",
+  "command": "python topics/padua-argmax-alln-20261101/code/gated/d1_screen_r01.py /tmp/padua-gated-check-d1-r01.json --cpu-budget 180 > /tmp/padua-gated-check-d1-r01.out",
+  "cwd": "/workspace/padua-argmax-alln",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "seed": null,
+    "arithmetic": "NumPy float64; no outward rounding"
+  },
+  "thread_environment": "Inherited environment; no OPENBLAS_NUM_THREADS or OMP_NUM_THREADS override added by checker. Developer command set each to 1. Every compared result agrees exactly.",
+  "source_sha256": {
+    "AGENTS.md": "c44a76f138fce01f02c06753b22fbc83fd5c1ee701785d49ba17cef5f8eee05b",
+    "agents/WORKFLOW.md": "a8927be27a1fe8166e5bcf59c7da8e70618ae0a5f17d56131724baffdad49353",
+    "agents/codex/CODEX.md": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+    "state/IDEAS.md": "40ec132f73e55f82944ae497d2405f345a9f251b99702055a2c7baec7a4426df",
+    "topics/padua-argmax-alln-20261101/gated/PROTOCOL.md": "dff0d96ed950559ebaf06f226eaea8cc389fa6202a56cf71b3145235024775ca",
+    "topics/padua-argmax-alln-20261101/theory/gated-codex-01-pairwise-defect-projection.md": "4e35ff9890e329bc581ae9a68d2c33bb1a9eb8439fd2884d1f260eefdec167f0",
+    "topics/padua-argmax-alln-20261101/gated/d1/r01-phase.md": "b83e6ad413c1951dec0d8b04cd278ba866026b45728ed8ca36fe65744d6e7e82",
+    "topics/padua-argmax-alln-20261101/code/gated/d1_screen_r01.py": "b8003e252d62147b19f1bc02116fe84434672c5cfdb91cd1cc835f9ba5d339e4",
+    "topics/padua-argmax-alln-20261101/code/part3/tests_common.py": "c17e4ed6473b90ed2fa887d0bd2d0b3cf5f6625bbf0d75153a6fa07e26e2a3b7",
+    "topics/padua-argmax-alln-20261101/code/maj.py": "705139a65f225f66ed30f5c7f197cda9f54137c42fb10c8b6f452ab83c78909c"
+  },
+  "developer": {
+    "path": "/workspace/padua-argmax-alln/topics/padua-argmax-alln-20261101/outputs/gated/d1_screen_r01.json",
+    "bytes": 860021,
+    "sha256": "15c9d29a3d2b166ee54dc8a91fe7bff4c117cc85dc99184fa7bc7640a888e9ef"
+  },
+  "replay": {
+    "path": "/tmp/padua-gated-check-d1-r01.json",
+    "bytes": 860021,
+    "sha256": "0a34a111830f561de25c7e8275843b22f7295baa570421356a4268376792d13b"
+  },
+  "replay_stdout": {
+    "path": "/tmp/padua-gated-check-d1-r01.out",
+    "bytes": 43819,
+    "sha256": "66101a79814fa7cbeb438d00ce6fe5c40364860289cad46f2a78f74adf3e01aa"
+  },
+  "comparison": {
+    "scope": "Complete parsed JSON, including every raw sample, validation, extrema and flags; exact Python equality of values. No tolerance comparison.",
+    "counts": {
+      "numeric_leaves": 20997,
+      "other_leaves": 1062
+    },
+    "differences": [],
+    "ignored_fields": [
+      {
+        "path": "/argv",
+        "developer": [
+          "topics/padua-argmax-alln-20261101/code/gated/d1_screen_r01.py",
+          "topics/padua-argmax-alln-20261101/outputs/gated/d1_screen_r01.json"
+        ],
+        "checker": [
+          "topics/padua-argmax-alln-20261101/code/gated/d1_screen_r01.py",
+          "/tmp/padua-gated-check-d1-r01.json",
+          "--cpu-budget",
+          "180"
+        ]
+      },
+      {
+        "path": "/cpu_seconds",
+        "developer": 17.18886217,
+        "checker": 18.112695128
+      },
+      {
+        "path": "/degrees/0/summary/cpu_seconds",
+        "developer": 0.11421563699999993,
+        "checker": 0.11609984100000004
+      },
+      {
+        "path": "/degrees/0/summary/wall_seconds",
+        "developer": 0.11421341699997356,
+        "checker": 0.11614881000014066
+      },
+      {
+        "path": "/degrees/1/summary/cpu_seconds",
+        "developer": 0.23726815099999998,
+        "checker": 0.23895638099999994
+      },
+      {
+        "path": "/degrees/1/summary/wall_seconds",
+        "developer": 0.23726375800004007,
+        "checker": 0.2389602040000227
+      },
+      {
+        "path": "/degrees/2/summary/cpu_seconds",
+        "developer": 0.733307728,
+        "checker": 0.7730795070000003
+      },
+      {
+        "path": "/degrees/2/summary/wall_seconds",
+        "developer": 0.7333134870000322,
+        "checker": 0.7732320620000337
+      },
+      {
+        "path": "/degrees/3/summary/cpu_seconds",
+        "developer": 3.0858883300000004,
+        "checker": 3.1584579560000003
+      },
+      {
+        "path": "/degrees/3/summary/wall_seconds",
+        "developer": 3.087174453999978,
+        "checker": 3.158786409999948
+      },
+      {
+        "path": "/degrees/4/summary/cpu_seconds",
+        "developer": 12.888604572000002,
+        "checker": 13.699847948
+      },
+      {
+        "path": "/degrees/4/summary/wall_seconds",
+        "developer": 12.891117228999974,
+        "checker": 13.182150783999987
+      },
+      {
+        "path": "/source_sha256/gated/d1/r01-screen.md",
+        "developer": "bc2e93a2fd22d1c550aabcc5726741585f5267ed48604ba83231fc4693260da2",
+        "checker": "9e0d9329fc0dd3cadf835a84f2163e71ec854dbe3697c1d70715535b28e5247e"
+      },
+      {
+        "path": "/wall_seconds",
+        "developer": 17.195102786999996,
+        "checker": 17.597249779000094
+      }
+    ],
+    "filtered_developer_sha256": "e1be4e34acb33127958587b95d3c11c04add5b92a2fce6f625f2f34e1cac40bb",
+    "filtered_replay_sha256": "e1be4e34acb33127958587b95d3c11c04add5b92a2fce6f625f2f34e1cac40bb"
+  },
+  "degrees_completed": [
+    16,
+    32,
+    64,
+    128,
+    256
+  ],
+  "sample_counts_per_degree": {
+    "global_phase_samples": 145,
+    "near_phase_samples": 26,
+    "compact_samples": 117,
+    "moving_strip_samples": 48
+  },
+  "validation": {
+    "existing_matrix_validation": [
+      {
+        "n": 2,
+        "max_abs_error": 4.440892098500626e-16
+      },
+      {
+        "n": 3,
+        "max_abs_error": 8.881784197001252e-16
+      },
+      {
+        "n": 4,
+        "max_abs_error": 1.3322676295501878e-15
+      },
+      {
+        "n": 8,
+        "max_abs_error": 4.440892098500626e-15
+      },
+      {
+        "n": 16,
+        "max_abs_error": 7.771561172376096e-15
+      }
+    ],
+    "periodic_checks": [
+      {
+        "n": 2,
+        "alpha": 0.0,
+        "beta": 0.0,
+        "max_abs_error": 8.881784197001252e-16
+      },
+      {
+        "n": 2,
+        "alpha": 0.17,
+        "beta": -0.11,
+        "max_abs_error": 8.881784197001252e-16
+      },
+      {
+        "n": 2,
+        "alpha": -0.23,
+        "beta": 0.07,
+        "max_abs_error": 4.440892098500626e-16
+      },
+      {
+        "n": 2,
+        "alpha": 0.09,
+        "beta": 0.19,
+        "max_abs_error": 4.440892098500626e-16
+      },
+      {
+        "n": 3,
+        "alpha": 0.0,
+        "beta": 0.0,
+        "max_abs_error": 8.881784197001252e-16
+      },
+      {
+        "n": 3,
+        "alpha": 0.17,
+        "beta": -0.11,
+        "max_abs_error": 4.440892098500626e-16
+      },
+      {
+        "n": 3,
+        "alpha": -0.23,
+        "beta": 0.07,
+        "max_abs_error": 8.881784197001252e-16
+      },
+      {
+        "n": 3,
+        "alpha": 0.09,
+        "beta": 0.19,
+        "max_abs_error": 4.440892098500626e-16
+      },
+      {
+        "n": 4,
+        "alpha": 0.0,
+        "beta": 0.0,
+        "max_abs_error": 8.881784197001252e-16
+      },
+      {
+        "n": 4,
+        "alpha": 0.17,
+        "beta": -0.11,
+        "max_abs_error": 8.881784197001252e-16
+      },
+      {
+        "n": 4,
+        "alpha": -0.23,
+        "beta": 0.07,
+        "max_abs_error": 4.440892098500626e-16
+      },
+      {
+        "n": 4,
+        "alpha": 0.09,
+        "beta": 0.19,
+        "max_abs_error": 0.0
+      },
+      {
+        "n": 8,
+        "alpha": 0.0,
+        "beta": 0.0,
+        "max_abs_error": 1.7763568394002505e-15
+      },
+      {
+        "n": 8,
+        "alpha": 0.17,
+        "beta": -0.11,
+        "max_abs_error": 8.881784197001252e-16
+      },
+      {
+        "n": 8,
+        "alpha": -0.23,
+        "beta": 0.07,
+        "max_abs_error": 3.552713678800501e-15
+      },
+      {
+        "n": 8,
+        "alpha": 0.09,
+        "beta": 0.19,
+        "max_abs_error": 3.552713678800501e-15
+      },
+      {
+        "n": 16,
+        "alpha": 0.0,
+        "beta": 0.0,
+        "max_abs_error": 3.552713678800501e-15
+      },
+      {
+        "n": 16,
+        "alpha": 0.17,
+        "beta": -0.11,
+        "max_abs_error": 1.7763568394002505e-15
+      },
+      {
+        "n": 16,
+        "alpha": -0.23,
+        "beta": 0.07,
+        "max_abs_error": 3.552713678800501e-15
+      },
+      {
+        "n": 16,
+        "alpha": 0.09,
+        "beta": 0.19,
+        "max_abs_error": 5.329070518200751e-15
+      }
+    ]
+  },
+  "flags": {
+    "assessed": true,
+    "global_values_n64_128_256": [
+      1.5014532910852039,
+      1.4702777187981575,
+      1.4462486836457311
+    ],
+    "global_kill_flag": false,
+    "local": {
+      "inverse_log_squared": {
+        "values_n64_128_256": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "kill_flag": false
+      },
+      "inverse_n": {
+        "values_n64_128_256": [
+          5.988090813247027e-05,
+          2.9340808129774132e-05,
+          1.7617724001439683e-05
+        ],
+        "kill_flag": false
+      }
+    },
+    "compact_defect_values_n64_128_256": [
+      1.739296724710254,
+      1.7186690469312182,
+      1.7119286753398413
+    ],
+    "compact_defect_kill_flag": false
+  },
+  "retention": "Full replay JSON and stdout remain transient /tmp working outputs; only this compact receipt is proposed for Git. No cold-storage destination was supplied. Reproduce using the pinned source and command. This is not a computer proof."
+}

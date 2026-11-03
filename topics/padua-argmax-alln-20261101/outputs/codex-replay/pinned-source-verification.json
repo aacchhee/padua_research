@@ -1,0 +1,128 @@
+[
+  {
+    "path": "AGENTS.md",
+    "actual_git_blob_sha": "07cd8c8920fabccc16dce4a63fe853a2f3a26f3d",
+    "pinned_git_blob_sha": "07cd8c8920fabccc16dce4a63fe853a2f3a26f3d",
+    "match": true
+  },
+  {
+    "path": "agents/WORKFLOW.md",
+    "actual_git_blob_sha": "52ca0630b69a8759e2e418c669bc35855bc9ea66",
+    "pinned_git_blob_sha": "52ca0630b69a8759e2e418c669bc35855bc9ea66",
+    "match": true
+  },
+  {
+    "path": "agents/codex/CODEX.md",
+    "actual_git_blob_sha": "16a4ecfea89acd5b1d9cd09c9213094bce144caf",
+    "pinned_git_blob_sha": "16a4ecfea89acd5b1d9cd09c9213094bce144caf",
+    "match": true
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/handoffs/02-part3-work.md",
+    "actual_git_blob_sha": "b371e38cc90aaf4c048cc709dfb18e8dd55cde6c",
+    "pinned_git_blob_sha": "b371e38cc90aaf4c048cc709dfb18e8dd55cde6c",
+    "match": true
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/code/cell.py",
+    "actual_git_blob_sha": "954c4f097f510d27d84241c46a0462412255cdd1",
+    "pinned_git_blob_sha": "954c4f097f510d27d84241c46a0462412255cdd1",
+    "match": true
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/code/check.py",
+    "actual_git_blob_sha": "68a5804dfe14a82885efda87075058d22048b1d5",
+    "pinned_git_blob_sha": "68a5804dfe14a82885efda87075058d22048b1d5",
+    "match": true
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/code/edgeprofile.py",
+    "actual_git_blob_sha": "0276103724e3af4fb99cb929dcf8097d571f4a9b",
+    "pinned_git_blob_sha": "0276103724e3af4fb99cb929dcf8097d571f4a9b",
+    "match": true
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/code/interior.py",
+    "actual_git_blob_sha": "3165a96065b50f297ea88da44cd67dc4157bdf6a",
+    "pinned_git_blob_sha": "3165a96065b50f297ea88da44cd67dc4157bdf6a",
+    "match": true
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/code/maj.py",
+    "actual_git_blob_sha": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4",
+    "pinned_git_blob_sha": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4",
+    "match": true
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/code/n2_edges.py",
+    "actual_git_blob_sha": "0bae7d5f3cbb01daad6db3ce055e1e1a91b5b89d",
+    "pinned_git_blob_sha": "0bae7d5f3cbb01daad6db3ce055e1e1a91b5b89d",
+    "match": true
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/code/strips.py",
+    "actual_git_blob_sha": "bcc31980c15ea6a67d6ea642eb43848613c8a888",
+    "pinned_git_blob_sha": "bcc31980c15ea6a67d6ea642eb43848613c8a888",
+    "match": true
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/theory/argmax-alln-claude-01-measured-observations.md",
+    "actual_git_blob_sha": "2bcfe44ca4d190752184a22cae177fea8b45fed4",
+    "pinned_git_blob_sha": "2bcfe44ca4d190752184a22cae177fea8b45fed4",
+    "match": true
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/theory/argmax-alln-claude-02-measured-edge-profile.md",
+    "actual_git_blob_sha": "1906d35cdf178925a3590ee338af3adcb57ef820",
+    "pinned_git_blob_sha": "1906d35cdf178925a3590ee338af3adcb57ef820",
+    "match": true
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/outputs/maj.out",
+    "actual_git_blob_sha": "12bcbb418e20eb88121b0a899237ce331d7ddc4c",
+    "pinned_git_blob_sha": "12bcbb418e20eb88121b0a899237ce331d7ddc4c",
+    "match": true
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/outputs/cell.out",
+    "actual_git_blob_sha": "955877c099876c4e7fdf1041dc2735a56d6cec1f",
+    "pinned_git_blob_sha": "955877c099876c4e7fdf1041dc2735a56d6cec1f",
+    "match": true
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/outputs/strips.out",
+    "actual_git_blob_sha": "98369149144b61d81f3078707f14252ae0f8c752",
+    "pinned_git_blob_sha": "98369149144b61d81f3078707f14252ae0f8c752",
+    "match": true
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/outputs/n2_edges.out",
+    "actual_git_blob_sha": "de2c617828deb300a595dd5d61c269780268ab15",
+    "pinned_git_blob_sha": "de2c617828deb300a595dd5d61c269780268ab15",
+    "match": true
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/outputs/edgeprofile.out",
+    "actual_git_blob_sha": "116a98c6bd50b4954d81666b59627f94496972b3",
+    "pinned_git_blob_sha": "116a98c6bd50b4954d81666b59627f94496972b3",
+    "match": true
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/outputs/maj_n2.out",
+    "actual_git_blob_sha": "3f51d4cf6b20cadf663d5c9a678e59efb535bf4b",
+    "pinned_git_blob_sha": "3f51d4cf6b20cadf663d5c9a678e59efb535bf4b",
+    "match": true
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/outputs/check.out",
+    "actual_git_blob_sha": "367e7c0abdefc6874604e718c6ba5c163d0d85ad",
+    "pinned_git_blob_sha": "367e7c0abdefc6874604e718c6ba5c163d0d85ad",
+    "match": true
+  },
+  {
+    "path": "topics/padua-argmax-alln-20261101/outputs/interior.out",
+    "actual_git_blob_sha": "65039d751da63601a22b76fc5ac7a36e86734b62",
+    "pinned_git_blob_sha": "65039d751da63601a22b76fc5ac7a36e86734b62",
+    "match": true
+  }
+]

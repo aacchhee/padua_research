@@ -1,0 +1,144 @@
+{
+  "source_commit": "328be35e55143013047ec03a70e9906e82b95353",
+  "model": "gpt-6.1-sol",
+  "effort": "medium (requested allocation; runtime does not expose effort metadata)",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "snapshot_repair": "Initial materialization had one extra final newline per fetched file; orchestrator repaired files by removing exactly that newline only when resulting Git blob matched pinned source. All six scripts rerun after repair; current evidence replaces initial run.",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "c44a76f138fce01f02c06753b22fbc83fd5c1ee701785d49ba17cef5f8eee05b",
+      "git_blob_sha1": "07cd8c8920fabccc16dce4a63fe853a2f3a26f3d",
+      "bytes": 3572
+    },
+    {
+      "path": "agents/WORKFLOW.md",
+      "sha256": "a8927be27a1fe8166e5bcf59c7da8e70618ae0a5f17d56131724baffdad49353",
+      "git_blob_sha1": "52ca0630b69a8759e2e418c669bc35855bc9ea66",
+      "bytes": 26615
+    },
+    {
+      "path": "agents/codex/CODEX.md",
+      "sha256": "28ca2976171a34860e2bf8d24292af6b92bee34ce22ba1e497891b366533083b",
+      "git_blob_sha1": "16a4ecfea89acd5b1d9cd09c9213094bce144caf",
+      "bytes": 4969
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/handoffs/02-part3-work.md",
+      "sha256": "0928623b4e19dd10471d1e54117e44d49ca710f548d3917a410f2eb2e46667e2",
+      "git_blob_sha1": "b371e38cc90aaf4c048cc709dfb18e8dd55cde6c",
+      "bytes": 7270
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/input-snapshot.json",
+      "sha256": "fe6b7ff0caf1a3b15119a8f02e07774f633f7570183fcd4b1adfa39c5ee0a844",
+      "git_blob_sha1": "9edfd91b5aa2bd0978822ec809ce6f2fd3814a4d",
+      "bytes": 43032
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/cell.py",
+      "sha256": "f163fa22d6a591e66aa2dc243566f15a914c313d8b9af16b721c620cfdb58341",
+      "git_blob_sha1": "954c4f097f510d27d84241c46a0462412255cdd1",
+      "bytes": 916
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/check.py",
+      "sha256": "a2be104c3aa3e7c792d69d7fae61f0bd23cab1e4cebae5ed376678720604ea5d",
+      "git_blob_sha1": "68a5804dfe14a82885efda87075058d22048b1d5",
+      "bytes": 1107
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/edgeprofile.py",
+      "sha256": "6fe6dd72883701c05da03de2b97853193e022d60da24dfa573cca5f8c5b8e7e7",
+      "git_blob_sha1": "0276103724e3af4fb99cb929dcf8097d571f4a9b",
+      "bytes": 1580
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/interior.py",
+      "sha256": "f826871ebaa0f69b9efa852057198f9fe0087a1405a1d777bdbdf710d1f296cf",
+      "git_blob_sha1": "3165a96065b50f297ea88da44cd67dc4157bdf6a",
+      "bytes": 959
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/maj.py",
+      "sha256": "705139a65f225f66ed30f5c7f197cda9f54137c42fb10c8b6f452ab83c78909c",
+      "git_blob_sha1": "bdae2bf3b265cd7f9f7d63d67f7210c39ff95db4",
+      "bytes": 3064
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/n2_edges.py",
+      "sha256": "69b6fcddc3e89e6dd3596204cbc54538fd7c997d426d136c3ef126f051d19557",
+      "git_blob_sha1": "0bae7d5f3cbb01daad6db3ce055e1e1a91b5b89d",
+      "bytes": 407
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/strips.py",
+      "sha256": "5ea3ba36837b8b9af7bc78320fd5312f168aefc3592bacf8338d5865114ed11f",
+      "git_blob_sha1": "bcc31980c15ea6a67d6ea642eb43848613c8a888",
+      "bytes": 1663
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/theory/argmax-alln-claude-01-measured-observations.md",
+      "sha256": "c93593e0530f80cd4b7ede1803f959f9ffbe49dcd6c319ad2eb0aed8a2c67be2",
+      "git_blob_sha1": "2bcfe44ca4d190752184a22cae177fea8b45fed4",
+      "bytes": 4003
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/theory/argmax-alln-claude-02-measured-edge-profile.md",
+      "sha256": "05852443203822c3aa311064f6c4ff04cbba30f4d40cc397b22858dc483aaf16",
+      "git_blob_sha1": "1906d35cdf178925a3590ee338af3adcb57ef820",
+      "bytes": 3674
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/maj.out",
+      "sha256": "8af4436586d4a7541bf0525c1c1c3b3cde945de3066d72121c25db7210df376c",
+      "git_blob_sha1": "12bcbb418e20eb88121b0a899237ce331d7ddc4c",
+      "bytes": 1099
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/cell.out",
+      "sha256": "a80346a05a0ca535500d73d1d2b07d5601ea2e7e672a8453eaf365ef5be7a528",
+      "git_blob_sha1": "955877c099876c4e7fdf1041dc2735a56d6cec1f",
+      "bytes": 1429
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/strips.out",
+      "sha256": "8fd9bf84a233fe1cc63b9175a950e3cda16739e00113c0d7e0a69be52e8865cc",
+      "git_blob_sha1": "98369149144b61d81f3078707f14252ae0f8c752",
+      "bytes": 693
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/n2_edges.out",
+      "sha256": "4e5ccd0adae74c89e3dabb8553bf7adc8f26d5aaca1a5d0900b85f65fea6c8e8",
+      "git_blob_sha1": "de2c617828deb300a595dd5d61c269780268ab15",
+      "bytes": 216
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/edgeprofile.out",
+      "sha256": "2506fce17769ed37baf68594e729cfdc6e203905fc274894ff184f8d031884e1",
+      "git_blob_sha1": "116a98c6bd50b4954d81666b59627f94496972b3",
+      "bytes": 1922
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/maj_n2.out",
+      "sha256": "11de2020830eab4d5bf9d4f4665de7f53607f504bc4fc15007533cfeeb0a0180",
+      "git_blob_sha1": "3f51d4cf6b20cadf663d5c9a678e59efb535bf4b",
+      "bytes": 137
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/check.out",
+      "sha256": "1311b34f092b2f6c954b571d7029bc532b095465a905c56ee0cc43df7618f4cc",
+      "git_blob_sha1": "367e7c0abdefc6874604e718c6ba5c163d0d85ad",
+      "bytes": 622
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/outputs/interior.out",
+      "sha256": "3d98432be0289bafaad3150560a06d12c768e60c8c61233206614648b0e61ab1",
+      "git_blob_sha1": "65039d751da63601a22b76fc5ac7a36e86734b62",
+      "bytes": 675
+    }
+  ]
+}

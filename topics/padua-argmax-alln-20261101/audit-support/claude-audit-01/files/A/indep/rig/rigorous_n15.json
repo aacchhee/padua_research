@@ -1,0 +1,55 @@
+{
+ "n": 15,
+ "nonnode_corners": [
+  [
+   -1,
+   -1
+  ],
+  [
+   -1,
+   1
+  ]
+ ],
+ "unisolvence_residual_inf_norm_upper": 6.497791159988977e-88,
+ "inverse_inf_norm": 1.6921950646014767,
+ "delta_entrywise": 1.0995530131744452e-87,
+ "corner_value_enclosures": {
+  "(-1, -1)": [
+   8.186632075912858,
+   8.186632075912858,
+   3.9627891473074506e-83
+  ],
+  "(-1, 1)": [
+   8.186632075912858,
+   8.186632075912858,
+   3.9627890961910355e-83
+  ]
+ },
+ "C_minus": 8.186632075912858,
+ "certificates": {
+  "finite_n15_general.json.gz": {
+   "leaves": 82,
+   "prefix_free": true,
+   "kraft_sum": "1",
+   "complete_partition": true,
+   "failures": [],
+   "corner_leaves_cover": [
+    [
+     -1,
+     -1
+    ],
+    [
+     -1,
+     1
+    ]
+   ],
+   "all_leaf_predicates_rigorously_verified": true,
+   "worst_relative_margin": 0.0028179057571661374,
+   "conclusion_holds": true
+  }
+ },
+ "seconds": 26.630320072174072,
+ "mpmath_version": "1.3.0",
+ "dps": 90,
+ "K": 320
+}
