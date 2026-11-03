@@ -24,9 +24,11 @@ In the runs listed under Checks (Padua conventions of PD-T101; corner c = (−1,
    | 17 | 106 (104 + 2) | 8 | 35.0 s | `finite_general_check.py` accepted = true, complete partition, 32.4 s |
    | 20 | 132 (130 + 2) | 10 | 87.0 s | not run |
    | 24 | 154 (152 + 2) | 10 | 229.6 s | not run |
-   | 32 | PENDING | PENDING | PENDING | not run |
+   | 32 | 282 (280 + 2) | 11 | 1464.0 s (setup 134 s) | not run |
 
-   The fitted cost exponent between n = 17 and 24 is about 5.5 (single process, shared container).
+   The fitted cost exponent is about 5.5 between n = 17 and 24, and about 6.4 between n = 24 and 32 (single process, shared container).
+
+   A naive projection at exponent 6.4 gives roughly 5 h at n = 48, 1.4 days at n = 64 and 3–4 weeks at n = 100 for the current pure-Python code. This is a projection, not a measurement.
 
 No degree is certified by this record. Producer and checker were run by the same agent (Claude), and there has been no independent replay. Under AGENTS.md these are MEASURED runs only.
 
@@ -88,4 +90,4 @@ These are planning measurements for handoff 01's gates. G0 certification of n = 
 
 ## History
 
-2026-11-03, Claude (claude-opus-5-5): created at campaign setup.
+2026-11-03, Claude (claude-opus-5-5): created at campaign setup. Addendum in the commit after handoff 01's publication: the n = 32 row, which completed after the handoff input head. No other change.

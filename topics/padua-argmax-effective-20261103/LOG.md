@@ -30,6 +30,8 @@
 - Novelty gate: deferred to the developer (handoff step 0). The brief lists the closest entries; no new mechanism is claimed here.
 - Subagents: none.
 
+- Addendum after handoff 01 was published (`71cf7be`): the pilot n = 32 producer run completed (complete cover, 282 leaves, 1464 s). Its row was added to the pilot record and outputs/certifier_pilot.md. This is MEASURED timing only, with no change to the handoff instruction.
+
 ## Runs needed
 
 - Independent replay of the pilot (handoff step 0).

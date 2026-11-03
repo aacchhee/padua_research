@@ -7,4 +7,6 @@ Unchanged PD-T210 producer `topics/padua-argmax-alln-20261101/code/part3/finite_
 | 17 | true | 106 (104+2) | 8 | 211 | 35.0 s | accepted, complete partition, 32.4 s; certificate sha256 2f07c866…6c08 |
 | 20 | true | 132 (130+2) | 10 | 263 | 87.0 s | not run |
 | 24 | true | 154 (152+2) | 10 | 307 | 229.6 s | not run |
-| 32 | PENDING | | | | | not run |
+| 32 | true | 282 (280+2) | 11 | 563 | 1464.0 s (setup 134 s, search 1330 s) | not run |
+
+Fitted exponents: about 5.5 (n 17→24) and 6.4 (n 24→32).

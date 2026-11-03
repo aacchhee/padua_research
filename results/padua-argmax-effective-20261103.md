@@ -13,7 +13,7 @@ This file is written only by the topic orchestrator. Branch `codex/padua-argmax-
   - The true local corner constant is about 0.24–0.29, against a budget of 0.75–0.92 and the proved 237000.
   - The true global primitive constant is about 1.5–1.6.
   - The far-coset majorant margin is 0.15–0.34.
-  - The PD-T210 certifier completes n = 17, 20 and 24 (35 s to 230 s; cost about n^5.5).
+  - The PD-T210 certifier completes n = 17, 20, 24 and 32 (35 s to 24 min; cost about n^6).
   - These degrees are not certified until an independent replay accepts them.
 
 ## Next step

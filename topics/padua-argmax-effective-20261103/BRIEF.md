@@ -97,9 +97,10 @@ Earlier costs: n = 9–16 needed 42–96 leaves, depth ≤ 8, and 1.3–32 s of 
 **Claude pilot** (MEASURED; scratch only; no independent replay, so these degrees are **not** certified):
 - n = 17: complete cover, 106 leaves (104 bound, 2 corner), depth 8, producer 35 s. `finite_general_check.py` returned accepted = true in 32 s.
 - n = 20: complete, 132 leaves, depth 10, 87 s.
-- n = 24 and 32: see the pilot record (still running when this brief was first written).
+- n = 24: complete, 154 leaves, 230 s.
+- n = 32: complete, 282 leaves, depth 11, 1464 s (added after handoff publication).
 
-The cost grows roughly like n^{5–6} in this pure-Python implementation. Projection: n ≈ 32 in minutes, n ≈ 64 in hours, n ≈ 100 in days. A C/FLINT/arb port, parallel leaves or a coarser first pass with S-majorant discards (an extension of IDEA-320, the global-max-only certifier) could give 10–100×. AC has NTNU servers (syvert0/1/2) if long runs are needed; ask AC before using them.
+The cost grows roughly like n^{5.5–6.4} in this pure-Python implementation. Projection: about 5 h at n = 48, about 1.4 days at n = 64, and weeks at n = 100. A C/FLINT/arb port, parallel leaves or a coarser first pass with S-majorant discards (an extension of IDEA-320, the global-max-only certifier) could give 10–100×. AC has NTNU servers (syvert0/1/2) if long runs are needed; ask AC before using them.
 
 **Realistic aim: n_cert of order 60–150.** An effective proof therefore needs a threshold n₀ ≲ n_cert. That means sharp constants, not order-of-magnitude bounds.
 
