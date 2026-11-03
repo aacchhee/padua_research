@@ -62,3 +62,4 @@
     - Wu AML 2026, Don–Gottlieb journal and Dencker–Erb journal gaps are closed;
     - König–Nielsen journal body: De Gruyter showed "Unlicensed", so it is still unread.
   - Orchestrator rerun of check/svz_table1.py: reproduced (see check/README.md). PDF text extracts are kept off-repo.
+- 2026-11-03 ~14:25: draft [PR #21](https://github.com/aacchhee/padua_research/pull/21) opened, with WORK, AUDIT (PENDING) and PR sections and the reservation (fe946c9). Results file updated.
