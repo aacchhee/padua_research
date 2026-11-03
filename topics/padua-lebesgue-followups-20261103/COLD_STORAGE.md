@@ -10,7 +10,7 @@ promised retention period; its paths alone are not durable retrieval locators.
 | Artifact | Actual path | Bytes | SHA-256 | Status |
 |---|---|---:|---|---|
 | Historical full-interior proposal, restored from pinned Git history | `/workspace/scratch/lebesgue-frozen-reference/topics/padua-proof-attempts-2-20261101/outputs/a5_n8_interior_candidate.json.gz` | 637163 | `a3b4f278a322338fb65f60922b4251265288148e1a09fd22882215004e81c324` | Both complete interior replays finished; historical archive notes describe its earlier unverified status. |
-| Fresh full-boundary proposal | `/workspace/scratch/lebesgue-t1/fresh-boundary-v1.json` | 4822048 | `adfe1107a326d17cfdd083a2ef9b8ab7ce0aeaa6b906f7a825c53a4fa1da6f08` | Generation complete; complete developer and independent boundary replays in progress. |
+| Fresh full-boundary proposal | `/workspace/scratch/lebesgue-t1/fresh-boundary-v1.json` | 4822048 | `adfe1107a326d17cfdd083a2ef9b8ab7ce0aeaa6b906f7a825c53a4fa1da6f08` | Generation and both complete original-method boundary replays finished, with identical verified facts. |
 | Fresh first-phase interior checkpoint | `/workspace/scratch/lebesgue-t1/fresh-interior-memo-v1.json.gz` | 248930 | `5d7771a8248ee95d27ce45bf9dd8faec34986b200c63dcd19ad35998eba0973c` | Partial: 35591 leaves, 9 pending paths, zero unresolved. Actual exit 0; continuation input only, not a complete proof. |
 
 Fresh continuation and final joined artifacts will be added only after they

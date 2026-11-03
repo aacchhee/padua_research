@@ -20,7 +20,8 @@ historical PD-T183 lower bound is preserved. Thus 44 is a certified candidate
 correction to this version's numerical interior entry 38, subject to the
 required Claude audit of this development.
 
-The complete boundary replays and assigned fresh interior reproduction remain
-in progress. No exact replacement whole-square total is certified here yet.
+Both complete boundary replays have now verified 16 edge and 2 corner maxima.
+The registered fresh interior identity/join/accounting steps remain in progress;
+the final whole-square candidate-correction record awaits those steps.
 The comparison does not claim an accepted erratum, author contact, later-version
 coverage, or any correction of the separate Morrow–Patterson table.

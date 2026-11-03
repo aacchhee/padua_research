@@ -6,21 +6,23 @@ Stage: WORK. Required Claude audit: PENDING.
 
 ## T1 — degree-eight maxima
 
-PD-T184 is **PROVED** from the two complete reference replays; PD-T180 is
-**PARTIAL**, with its interior conjunct proved and boundary conjunct OPEN.
-The existing PD-T183 lower bound is preserved separately.
-Two complete, separate replays of the retained historical interior proposal
-now verify all 153520 leaves and 541882 ordinary mask records, deriving 44
-interior maxima. Fresh generation and exact input identity remain task
-obligations. Fresh boundary generation proposes 16 edge and 2 corner maxima;
-its complete separate replays are in progress, so the closed count remains OPEN.
-All executions preserve the frozen acceptance predicates. See
+PD-T184 is **PROVED** from the two complete reference replays. Both full
+boundary replays have also completed and agree: 16 strict edge maxima and
+2 strict corner maxima. They cover 492 edge sign patterns and 32 active corner
+masks, with all source/input guards intact. The existing PD-T183 lower bound
+is preserved separately.
+
+The interior replays verify all 153520 leaves and 541882 ordinary mask records,
+deriving 44 interior maxima. Fresh generation, exact input identity, literal
+joining and the original final accounting remain registered T1 obligations.
+The final closed-count completion record is pending those steps. All actual
+executions preserve the frozen acceptance predicates. See
 [attempt](attempts/T1.md) and [independent checks](independent-checks-t1.md).
 
 For the paper: exactly 44 strict interior maxima can be stated under
 PD-T184 and the inherited finite-reduction dependencies. This gives a certified
 candidate correction of LIT-388's interior entry 38. Do not replace its numerical
-whole-square total until the complete edge and corner checks pass. The bounded
+whole-square total until the registered final composition checks pass. The bounded
 [primary-source comparison](literature-comparison.md) preserves that distinction.
 
 ## T2 — centre minima and endpoint behaviour

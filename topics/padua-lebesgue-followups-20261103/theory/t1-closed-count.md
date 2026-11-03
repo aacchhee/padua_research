@@ -19,12 +19,9 @@ Complete independent verification of every interior leaf/root/node predicate, fo
 
 ## Status by part
 
-Overall status: **PARTIAL** by explicit target decomposition: the44-interior conjunct is PROVED under PD-T184, while the remaining boundary conjunct (18 maxima, split16 on open edges and2 at non-node corners) remains OPEN pending complete independent boundary replay. No measured claim is a part of this decomposition. Existing PD-T183 lower bound and PD-T181 global result retain their separate PROVED scopes.
+Overall status: **OPEN at the registered final completion gate**. PD-T184 retains its separate PROVED interior-count statement. Both complete original boundary-method replays have passed, and their full verified facts agree; those are completed verification records. Fresh proof-input identity, the literal join and all original final accounting predicates remain required before this record declares the full closed-square target complete.
 
-| Target conjunct | Status | Evidence / outstanding obligation |
-|---|---|---|
-| exactly44 strict interior maxima | PROVED under separate PD-T184 | two actual complete archived-input replays, recorded in t1-interior-count.md |
-| exactly18 strict boundary maxima, split16 edge/2 corner | OPEN | complete fresh proposal exists; original boundary-method replays running |
+The earlier interim PARTIAL label mixed procedural completion gates with mathematical target conjuncts. That classification is withdrawn; the mathematical statement is unchanged. The separate PROVED interior theorem and completed boundary verification records are preserved without inventing a mathematical conjunct for reproduction or bookkeeping.
 
 ## Depends on
 
@@ -44,7 +41,7 @@ The generic finite reduction is PD-T170. The separate accepted interior certific
 
 Frozen dispositions exclude candidates only by being outside the open edge, a nonzero selected-embedding derivative, incompatible cardinal sign, strictly positive tangent second derivative, or strictly positive physical inward derivative. An accepted edge root has strict cardinal signs, strictly negative tangent curvature, endpoint derivative sign change and strictly negative inward derivative, proving a strict relative maximum. Zero normal/curvature and unresolved cases never disappear. Distinct accepted intervals identify distinct edge roots.
 
-Node corners have λ=1≤λ everywhere. At each non-node corner, every active sign choice must have both physical inward derivatives strictly negative. The finite maximum of these active polynomials then strictly decreases along every small nonzero inward segment, proving a strict corner maximum. All strata exhaust the square, and their distinct verified IDs add. The interior obligations are now discharged under separate PD-T184. Complete fresh boundary generation produced16 edge and2 corner proposals with no unresolved cases, but the two complete boundary-method replays remain pending, so the exact62 closed-square conclusion is not promoted yet.
+Node corners have λ=1≤λ everywhere. At each non-node corner, every active sign choice must have both physical inward derivatives strictly negative. The finite maximum of these active polynomials then strictly decreases along every small nonzero inward segment, proving a strict corner maximum. All strata exhaust the square, and their distinct verified IDs add. The interior obligations are now discharged under separate PD-T184. Complete fresh boundary generation produced16 edge and2 corner proposals with no unresolved cases, and both original boundary-method replays now passed every predicate. The exact62 closed-square conclusion remains gated on the registered fresh identity, literal component join and original final accounting; no monolithic full-run execution is claimed.
 
 ## Scope
 
@@ -52,10 +49,12 @@ Degree8 strict local count only. No repeat of global-value certification, no non
 
 ## Open items
 
-Complete fresh interior generation and typed proof-input identity to the now-verified archived certificate; otherwise a full fresh interior replay. Complete original boundary-method executions by both distinct agents on the already generated fresh boundary artifact, followed by literal join/component identity and all original summary/accounting predicates under the independently accepted composition protocol. Small essential receipts and precise regeneration/retrieval manifest, plus required Claude audit. Runtime caps or missing serialization remain operational obstructions rather than mathematical refutations.
+Complete fresh interior generation and typed proof-input identity to the now-verified archived certificate; otherwise a full fresh interior replay. The two complete original boundary-method executions have passed and their full verified facts agree. Remaining: literal join/component identity and all original summary/accounting predicates under the independently accepted composition protocol. Small essential receipts and precise regeneration/retrieval manifest, plus required Claude audit. Runtime caps or missing serialization remain operational obstructions rather than mathematical refutations.
 
 ## History
 
 2026-11-03, Codex /root/t1_certification, configured gpt-6.1-sol medium per parent, rules3f5196cf3639407c25b021fa30f70cc1d3ae113a. Original target and OPEN status retained before computations finish.
 
-2026-11-03 checkpoint: PD-T184 completed by two actual full exact archived-input replays; closed-square target is PARTIAL in the precise two-conjunct sense above. Fresh generation remains required reproduction work, and no fresh proof-input equality or complete boundary count has yet been claimed.
+2026-11-03 checkpoint: PD-T184 completed by two actual full exact archived-input replays; the record used an interim PARTIAL label at that checkpoint, superseded by the classification correction in Status by part above. Fresh generation remains required reproduction work, and no fresh proof-input equality or complete boundary count has yet been claimed.
+
+2026-11-03 boundary verification checkpoint: own original-method replay exited0 in1973.479216s, receipt d274ab0fe861f80e84c128d1e6bfd51c63e067700ec8f96ccd757904614d97d5; distinct-agent replay exited0 in1711.843284s, receipt bfe1d5cba9f0cf57c264902636440e722c00df5a363b4bcb649258e77d99d288. Each checks492 edge patterns,16 edge maxima,32 active corner masks and2 corners with source/input after-guards intact. Exact typed boundary facts, including all intervals/values/dispositions, agree at SHA f4f1e9905d1b4a28e795367bda74ad791068a3091cc0a39a83e6735a95605d91 (evidence/t1-independent-actual-boundary-comparison.json). Fresh generation/identity, literal join and final original accounting remain assigned acceptance obligations before final composed certification.

@@ -3,7 +3,7 @@
 - Branch: `codex/padua-lebesgue-followups-20261103` · Base: main `440d107` · Developer: Codex · Auditor: Claude (Opus 5.5)
 - Stage: WORK · Next: `Codex (gpt-6.1-sol xhigh): Continue codex/padua-lebesgue-followups-20261103.` · Open handoff: [handoffs/01-work.md](handoffs/01-work.md)
 - Reserved final-ID ranges: PD-T266–285, PD-N092–099, IDEA356–375, LIT474–481; [reservation and pinned union scan](ALLOCATIONS.md). No final assignments during WORK.
-- Claims: T2–T4 core theorems PROVED with accepted supplementary independent checks; T1 exact interior count PD-T184 PROVED on complete reference replays; closed target PD-T180 PARTIAL, with its boundary conjunct OPEN. Fresh reproduction work continues. Required Claude audit PENDING.
+- Claims: T2–T4 core theorems PROVED with accepted supplementary independent checks; T1 exact interior count PD-T184 PROVED; all separate interior and boundary replays complete. Fresh identity/join/final accounting remain before the T1 completion record. Required Claude audit PENDING.
 - Open for AC: none at setup. Ask AC before using any machine outside the sandbox.
 
 ## 2026-11-03 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
@@ -80,3 +80,9 @@
 - A bounded mechanical follow-up (allocation_scan, configured gpt-6.1-sol medium) prepared concrete literal additive registry/index/state proposals for the six analytic records and three retained candidates. Root reviewed their scopes and retained provisional IDs; no final assignments or shared-file edits occurred.
 - Stale T4 supplementary-check wording was synchronized with the accepted independent report, and an existing literal carriage-return byte in the odd-index TeX annotation was repaired. Distinct Astra reviewed every diff hunk, recorded old→new theory hashes, and transferred acceptance at unchanged mathematical scope. The code did not change; no numerical rerun was needed. The T2/T3 timing qualification remains unwaived.
 - Six inactive legacy T1 entries now explicitly reject optimized Python before imports. Exact executed source blobs remain pinned; independent guard-delta review verified AST identity after removing only the new guard, twelve optimized-mode refusals and normal-mode wrapper/memo controls. The historical 0345 checker entry is passed explicitly when composing its actual receipts. The boundary producer remains unchanged until its literal join completes. Live native continuation and boundary replay sources were not edited.
+
+## 2026-11-03 — both complete boundary replays agree
+
+- Developer boundary replay actually exited 0 in 1973.47922 seconds; distinct-agent replay actually exited 0 in 1711.84328 seconds. The unchanged original boundary method checked all four open edges and all four corners: 492 edge sign patterns, 16 strict edge maxima, 32 active corner masks and 2 strict corner maxima. Every source/input after-guard passed.
+- The full typed verified facts agree independently, canonical fact hash `f4f1e9905d1b4a28e795367bda74ad791068a3091cc0a39a83e6735a95605d91`. Receipts are `evidence/t1-boundary-check.json` and `evidence/t1-independent-boundary-check.json`; the independent actual comparison is retained separately. Their false interior/full-count flags correctly describe boundary-only execution.
+- Both original mathematical predicate blocks are now fully replayed. Fresh continuation, typed proof-input identity, literal join and the original final accounting remain registered obligations before the final completion record. No monolithic joined run is claimed.

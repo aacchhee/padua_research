@@ -11,10 +11,10 @@ Four bounded targets, specified in [handoff 01](../topics/padua-lebesgue-followu
 - **T3:** a general-β series for them.
 - **T4:** the constant term c (κ = c − c₁²) of the corner expansion (PD-T098).
 
-T1: two complete replays of the retained interior tree verify 44 maxima; fresh
-generation/input identity and complete boundary replays remain in progress.
-PD-T184 is PROVED; the registered closed-square target PD-T180 is PARTIAL
-(44-interior conjunct proved, 16-edge/2-corner conjunct still OPEN).
+T1: both complete interior replays verify 44 maxima, and both complete boundary
+replays verify 16 edge and 2 corner maxima. PD-T184 is PROVED. Fresh generation,
+input identity, joining and final accounting remain before the closed-count
+completion record.
 T2–T4 core analytic targets are complete; required Claude audit is pending.
 
 - **PROVED, supplementary check accepted; Claude audit pending:** both limiting
