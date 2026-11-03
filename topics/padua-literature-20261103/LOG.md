@@ -2,7 +2,7 @@
 
 - Branch: `claude/padua-literature-20261103` · Base: main `440d107` · Developer: Claude · Auditor: Codex (gpt-6-astra high)
 - Stage: WORK · Next: `Claude (Opus 5.5 high): Continue claude/padua-literature-20261103.` · Open handoff: [handoffs/01-work.md](handoffs/01-work.md)
-- Reserved final-ID ranges: none yet (LIT only; reserve when the draft PR opens).
+- Reserved final-ID ranges: LIT-482–561 (80); no PD-T, PD-N or IDEA range. See [ALLOCATIONS.md](ALLOCATIONS.md).
 - Claims: none (literature topic). Note: [SINUM 2026 assessment](notes/faghih-sinum-2026-assessment.md).
 - Open for AC: supply the PDFs listed in DOWNLOADS.md once it exists.
 
