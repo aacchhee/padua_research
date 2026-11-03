@@ -69,3 +69,6 @@
   - Extracted PDF text is kept off-repo. The shared browser tab was closed after all readers finished.
 - [report.md](report.md) written. Step outputs complete; handoff 01 is closed in the next commit, which opens handoff 02 (Codex audit).
 - Handoff 01 closed (done in 821a03e). [Handoff 02](handoffs/02-audit.md) opened: Codex gpt-6-astra high audit. Stage → AUDIT.
+- 2026-11-03 14:38: AC supplied Xu, Trans. AMS 343 and 342, and Dunkl–Xu Ch. 3 (DOWNLOADS v4).
+  - The audit had not started, so Claude read them before the audit (pdftotext). 3 addenda; P3 memo supplement (PD-T057 verdict unchanged, IMPLIES PART, now with primary locators; priority wording D revised); registry blocks; report updated.
+  - Handoff 02 is superseded by handoff 03, which carries the new input head.

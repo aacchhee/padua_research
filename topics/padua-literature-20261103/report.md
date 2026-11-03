@@ -57,7 +57,9 @@ Claude (claude-opus-5-5, high), topic orchestrator, 2026-11-03.
 
 - **IMPLIES PART:**
   - PD-T031: the single-operator case is in Sinha 2026, Thm 7.
-  - PD-T057: the commuting conditions and the full-sequence Favard converse are in Xu 1993 and in Liu–Narayan, who credit Dunkl–Xu Thm 3.5.1. The truncated form, the words formula and the manifold structure were not found.
+  - PD-T057: the commuting conditions and the full-sequence Favard converse are in Xu 1993 and in Liu–Narayan, who credit Dunkl–Xu Thm 3.5.1.
+    - Supplement (14:50; AC supplied Xu, Trans. AMS 343 and 342 and Dunkl–Xu Ch. 3, all read): (a) is implicit in Xu 342, proof of Thm 3.4 (p. 859); the converse is in Xu 343 Thm 2.2 and Dunkl–Xu Thm 3.5.1 (p. 88).
+    - The truncated form, the words formula and the manifold structure were not found.
 - **RELATED, DIFFERENT SETTING:** PD-T034, T051, T053, T056(G), T058, T059, T076, T142/143. The usual mismatch: one operator, 1-D, or informal statements only.
 - **No matching result found:** PD-T060, PD-T069/N303 (Padua obstruction), PD-T144 (ρ_n = O(n⁻⁵)), PD-T145, PD-T136/137/141, and the span drift (N201/PD-T146).
 - **Corrections from page-level reading.**
@@ -89,7 +91,7 @@ Claude (claude-opus-5-5, high), topic orchestrator, 2026-11-03.
    - Do not claim the leading corner term; credit Kolomoitsev–Lomako 2021 and Kuznetsova 1995.
    - "Powell 1965", as cited by Białas-Cież et al., should read Powell 1967, or Ehlich–Zeller 1966.
 2. **PD-T106.** The signed rule and its degree-m exactness are SVZ 2008's; only the "precisely m" exactness, the alias formulas and the pencil are ours. Footnote the misprint in eq. (25).
-3. **PD-T057.** Limit the novelty sentence to the truncated version, the words formula and the manifold structure.
+3. **PD-T057.** Limit the novelty sentence to the truncated version, the words formula and the manifold structure. Cite Xu 342 Thm 3.4, Xu 343 Thm 2.2 and Dunkl–Xu Thm 3.5.1 for the classical parts, and say the proof follows Dunkl–Xu's induction (revised wording D in p3-comparison.md).
 4. **P3 note.**
    - Do not compare our √ε rate (exact representation of given perturbations) with the O(ε) 1-D rates of Greenbaum and Chen (actual runs) as one quantity.
    - Always name the Greenbaum branch when quoting a width.
@@ -103,8 +105,6 @@ Claude (claude-opus-5-5, high), topic orchestrator, 2026-11-03.
   - Brutman 1997 survey (Ann. Numer. Math. 4);
   - Feldheim 1936 (C. R. 203, [zbMATH](https://zbmath.org/3023405)).
 - **Bot-checked; AC to download:**
-  - Xu, [Trans. AMS 343 (1994)](https://doi.org/10.1090/S0002-9947-1994-1169912-X) and [342 (1994)](https://doi.org/10.1090/S0002-9947-1994-1258289-7);
-  - Dunkl–Xu, [Orthogonal Polynomials of Several Variables, 2nd ed.](https://doi.org/10.1017/CBO9781107786134), §3.5;
   - König–Nielsen [journal version](https://doi.org/10.1515/form.1994.6.183) (De Gruyter: "Unlicensed").
 - **Leads to read later (free):**
   - Erb, AMC 289 (2016), [arXiv 1503.00895](https://arxiv.org/abs/1503.00895);

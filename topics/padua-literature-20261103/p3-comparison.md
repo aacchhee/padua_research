@@ -65,3 +65,14 @@ One row per (our result, closest published statement). Verdict words as in the h
 - Dunkl–Xu, Orthogonal Polynomials of Several Variables (2nd ed. 2014), Thm 3.5.1 (cited by Liu–Narayan for the converse). Bears on row 3 (record `dunkl-xu-2014` exists; check whether AC has the book).
 - Version-of-record checks if exact wording is quoted: ZN (IMA JNA 46(4) 2072–2106), Šimonová–Tichý (BIT 65(4) art. 47), BNT (SIAM Rev. 63(2) 405–415), Liu–Narayan (SISC 45(3) A1125–A1147). Links in `bib-p3.bib`.
 - Paige 2019 (SIMAX 40(4) 1371–1398, [doi:10.1137/17M1133725](https://doi.org/10.1137/17M1133725); author PDF https://www.cs.mcgill.ca/~chris/pub/Pai19.pdf) was not read; no INDEX row (candidate new row if the note cites it).
+
+## Addendum 2026-11-03 ~14:50 (orchestrator, Claude claude-opus-5-5 high): Xu Trans. AMS 343, 342 and Dunkl–Xu Chapter 3 read
+
+AC supplied the three missing sources. Addenda: [xu-tams-1994-operator](addenda/xu-tams-1994-operator.addendum.md), [xu-tams-1994-blockjacobi](addenda/xu-tams-1994-blockjacobi.addendum.md), [dunkl-xu-2014](addenda/dunkl-xu-2014.addendum.md).
+
+- **Row 3 (PD-T057): verdict unchanged, IMPLIES PART, with the split now located at primary pages.**
+  - (a) The commutator support of sections is implicit in Xu, Trans. AMS 342, proof of Thm 3.4 (p. 859), for sections of full orthonormal sequences.
+  - (b) The converse for infinite sequences: Xu, Trans. AMS 343, Thm 2.2 (pp. 195–196), and Dunkl–Xu Thm 3.5.1 (p. 88). Liu–Narayan's attribution is confirmed.
+  - Not found: the truncated converse on Π_{2n+1} with the last block free, uniqueness of the truncated functional, the words formula (whose infinite analogue is the spectral representation in Xu 343 Thm 4.1, p. 198), and the manifold structure (c).
+- **Priority wording D, revised for PD-T057.** "The commuting conditions, the joint-eigenvalue characterisation and the Favard-type converse are classical for full orthonormal sequences [Xu, Trans. AMS 342 (1994), Thms 3.2, 3.4; Xu, Trans. AMS 343 (1994), Thm 2.2, Cor. 2.3; Dunkl–Xu, Thm 3.5.1]. We need, and prove, the truncated version: a functional on Π_{2n+1}, the last block free, uniqueness, and the words formula. Its proof follows the degree-by-degree induction of Dunkl–Xu Thm 3.5.1. The free last-block commutator is the quantity in Möller's bound [Dunkl–Xu (3.9.1)] and in Xu's Gaussian-cubature criterion [Trans. AMS 342, Thm 3.4]." The novelty sentence must not claim more.
+- **Row 15**: unaffected.

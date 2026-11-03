@@ -1027,3 +1027,13 @@ Append to the *Reading coverage* cell, with a leading " · ", the text shown. Th
 - The LIT-213 conflict about interval widths is resolved on the original: both widths are branches of Greenbaum's Theorem 1′ (p. 51).
 - The LIT-090 / F9 conflict about the ZN sentence is resolved: the sentence is in v2, Remark 5.1(5), p. 20.
 - Liu–Narayan credit the commuting conditions to zu Castell–Filbir–Forster and the Favard converse to Dunkl–Xu Thm 3.5.1. Any note citing "Xu's commuting conditions" should cite Xu TAMS 343 Cor. 2.3, which still needs a page-level reading because AMS was blocked.
+
+## P3 supplement (orchestrator, 2026-11-03 ~14:50): AC-supplied Xu Trans. AMS 343, 342 and Dunkl–Xu Chapter 3
+
+Append to the addenda list of literature/INDEX.md:
+
+```
+- **LIT-237 / LIT-238 / LIT-239 — 2026-11-03 primary-reading addendum (padua-literature-20261103):** Xu, Trans. AMS 343 (1994) was read from an AC-supplied PDF. Thm 2.1 (p. 195), Thm 2.2 (pp. 195–196), Cor. 2.3 (p. 196), Thm 3.1 (p. 197) and Thm 4.1 (p. 198) are confirmed at these locators; the rows move from online-pass/digest to primary reading. All results are for infinite sequences; there is no truncated statement. [addendum](../topics/padua-literature-20261103/addenda/xu-tams-1994-operator.addendum.md).
+- **LIT-240 — 2026-11-03 primary-reading addendum (padua-literature-20261103):** Xu, Trans. AMS 342 (1994) §3 was read. Thm 3.2 (pp. 858–859): zeros of P_n ↔ joint eigenvalues of the truncated block Jacobi matrices. Thm 3.4 (p. 859): dim Π_{n−1} zeros ⇔ A_{n−1,i}A_{n−1,j}ᵀ symmetric in i, j ⇔ the truncated matrices commute; d = 2 credited to Mysovskikh. The row moves from digest to primary reading. [addendum](../topics/padua-literature-20261103/addenda/xu-tams-1994-blockjacobi.addendum.md).
+- **LIT-292 — 2026-11-03 primary-reading addendum (padua-literature-20261103):** Dunkl–Xu, 2nd ed. (2014), Ch. 3 was read from an AC-supplied chapter PDF. Favard: Thms 3.3.7–3.3.8 (pp. 74–76). Commuting conditions: Thm 3.4.1 (pp. 82–83). Recursion converse: Thm 3.5.1 (p. 88; degree-by-degree proof pp. 92–93). Möller bound in matrix form: (3.9.1), p. 113. Liu–Narayan's attribution of the converse to Thm 3.5.1 is confirmed. [addendum](../topics/padua-literature-20261103/addenda/dunkl-xu-2014.addendum.md).
+```
