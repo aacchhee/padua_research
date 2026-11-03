@@ -40,5 +40,23 @@
 
 ## Runs needed
 
+## 2026-11-03 — Codex continuation of handoff 02: setup
+
+- Rules and input head: `8a1f394739293953e1566fd24a0a193cc78ff26f`.
+- Fetched main `440d1079e42c3ef21c40d1cf8870f5b206410c6a`, unchanged
+  from the branch base and already an ancestor; no merge needed.
+- Role: orchestrator/developer. AC's explicit gpt-6-astra ultra request
+  and handoff 02 override the usual allocation for difficult mathematics.
+  Requested worker models/efforts and disjoint ownership are in [plan.md](plan.md).
+- The selected managed sandbox started successfully. Network commands use
+  its supported network permission and inherited proxy. GCC/GMP are available;
+  no NTNU or other external machines are used.
+- [Plan](plan.md) records the unmodified gate criteria and bounded first round.
+  Producer/checker ports have separate arithmetic implementations; independent
+  pilot/G0 replays are assigned. Runtime model metadata is not independently
+  exposed beyond configured/requested tool settings.
+
+## Runs needed (continuation)
+
 - Independent replay of the pilot (handoff step 0).
 - Gates G0–G8 and routes R1–R6, as in handoff 02.
