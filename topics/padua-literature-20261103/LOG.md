@@ -48,3 +48,9 @@
   - [p1-comparison.md](p1-comparison.md);
   - P1 blocks in [proposed-record-changes.md](proposed-record-changes.md).
 - P2, P3 and P4 reading runs as three Opus 5.5 high subagents (one browser tab each). Their outputs go to scratch first; the orchestrator integrates them.
+- 2026-11-03 ~14:10: P4 integrated, from the P4 reader subagent (Claude Opus 5.5 high).
+  - [p4-memo.md](p4-memo.md) for AC.
+  - 8 new records in literature/records/ (provisional LIT?padua-literature-claude-70…84).
+  - 4 addenda for existing records in [addenda/](addenda/).
+  - P4 blocks in proposed-record-changes.md; [bib/leuven-iep.bib](bib/leuven-iep.bib).
+  - Orchestrator check: memo and records spot-read; no verbatim third-party passages beyond titles. Keyword search of all P4 sources for bivariate/multivariate/Padua/Chesnokov: zero hits.
