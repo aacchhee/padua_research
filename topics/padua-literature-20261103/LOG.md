@@ -20,3 +20,9 @@
 ## Runs needed
 
 - Steps 0–5 of handoff 01.
+
+## 2026-11-03 — Claude, claude-opus-5-5 (configured; effort high per handoff, runtime effort not exposed) — handoff 01 steps 0–2
+
+- Rules read at branch head `0a173a29ec938c47f8a5a1942208edf03ab2f767` (AGENTS.md, agents/WORKFLOW.md, agents/claude/CLAUDE_ROLES.md). Role: topic orchestrator and literature developer. `origin/main` = `440d1079e42c` (unchanged since the branch was cut; no merge needed).
+- Step 1 inventory: AC granted access to `Downloads\padua` and `Downloads\bttb` (an earlier automatic request was refused; AC then authorised it in chat at 13:28). Listed `Downloads\padua\papers` (24 PDFs) and `Downloads\bttb\papers` (≈230 files). Filenames only are recorded in [inventory.md](inventory.md); citation matching is delegated (Sonnet 5.5 medium).
+- Step 2 search and verify: delegated per pack to Sonnet 5.5 high subagents (P1, P2, P3, P4), with Crossref (`api.crossref.org/works/<doi>` via WebFetch) as the DOI check. The shell cannot reach doi.org, Crossref or arXiv (proxy refuses); WebFetch can.
