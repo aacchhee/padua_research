@@ -28,3 +28,18 @@ Listed 2026-11-03 through the link to AC's computer. No file contents are commit
 - `s11075-018-0592-1.pdf`
 - `thesis_Humet_v01.pdf`
 - `TW629.pdf`
+
+## Arrivals 2026-11-03 ~13:58 (re-inventory after AC's message)
+
+- `0524048.pdf` — Xu, SIAM J. Math. Anal. 24 (1993) (C1)
+- `0715046.pdf` — Brutman, SINUM 15 (1978) (A1)
+- `0717043.pdf` — Günttner, SINUM 17 (1980) (A5)
+- `0725030.pdf` — Günttner, SINUM 25 (1988) (A6)
+- `0731079.pdf` — Don–Gottlieb, SINUM 31 (1994) (A7)
+- `1-s2.0-0024379580901676-main.pdf` — Paige, LAA 34 (1980) (C3)
+- `1-s2.0-0024379589902851-main.pdf` — Greenbaum, LAA 113 (1989) (C2)
+- `1-s2.0-S0021904517300345-main.pdf` — Dencker–Erb, JAT 219 (2017) (A8)
+- `1-s2.0-S0096300321002824-main.pdf` — Kolomoitsev–Lomako, AMC 403 (2021) (A3)
+- `1-s2.0-S0893965926001643-main.pdf` — Wu, AML 182 (2026) (A2)
+- `10.33205-cma.1070020-2240064.pdf` — De Marchi, CMA 5(1) (2022)
+- `2605.23299v1.pdf` — Białas-Cież–De Marchi–Suder, arXiv v1 (browser download during access testing)

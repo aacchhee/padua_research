@@ -40,3 +40,11 @@
   - Kuznetsova, Ukrainian Math. J. 47 (1995): complete; Thm 1 checked on the page image.
   - Pimenova, Dokl. 249 (1979): OCR text only.
   - Corner statements: CDMSV 5ECM poster 2008 (Conjecture); De Marchi, CMA 5(1) 2022 §3.3(2) p. 23; BCDMV, Computing 76 (2006) pp. 318–319 (Xu points).
+- 2026-11-03 ~14:00: AC supplied 10 PDFs (DOWNLOADS v2), staged into the cloud workspace and read with pdftotext.
+  - P1 (Claude): Brutman 1978 complete; Günttner 1980/1988 statements; published KL AMC numbering identical to arXiv v1.
+  - P2 and P3 files were passed to their reader subagents.
+- Step 4 for P1 is done:
+  - records (new): kuznetsova-1995, pimenova-1979, ehlich-zeller-1966, cdmsv-poster-2008, bcdmv-computing-2006, kolomoitsev-lomako-2021, bialas-ciez-demarchi-suder-2026, brutman-1978, guenttner-1980-1988;
+  - [p1-comparison.md](p1-comparison.md);
+  - P1 blocks in [proposed-record-changes.md](proposed-record-changes.md).
+- P2, P3 and P4 reading runs as three Opus 5.5 high subagents (one browser tab each). Their outputs go to scratch first; the orchestrator integrates them.
