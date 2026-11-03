@@ -1,0 +1,234 @@
+{
+  "date": "2026-11-03",
+  "rules_and_published_candidate": "36f345f0365ddc15d837492aa6da42a1ce6f9771",
+  "technical_candidate": "8c3a2c466ef0f7c2a7a5b4bf454df9ea7d52687c",
+  "base": "2b52b432fe59c9a50aef9deebe5152c5d6874465",
+  "model": "Codex, gpt-6-astra high requested/configured by AC; backend metadata not separately exposed",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "tool_sha256": "287153916a35f4360fde2f689cdd624b14f050f7329a323d95d8a8764c455c62",
+  "tests_sha256": "f5047aab7ea6434e344b38bcc1cd85738d3329ec65cf745faa59cb403f062991",
+  "developer_tests": {
+    "command": "python -B tools/test_cold_storage.py",
+    "tests": 23,
+    "passed": 23
+  },
+  "independent_faults": {
+    "candidate_tool_sha256": "287153916a35f4360fde2f689cdd624b14f050f7329a323d95d8a8764c455c62",
+    "controls": {
+      "corruption_after_payload_write_rejected_without_receipt": true,
+      "stale_success_receipt_cannot_pass_current_verification_after_failed_reexport": true,
+      "transferred_archive_verifies_without_git": true,
+      "transferred_truncated_payload_rejected": true,
+      "transferred_missing_payload_rejected": true,
+      "semantically_equal_but_changed_manifest_bytes_rejected_v2": true,
+      "v1_receipt_checked_currently_and_damage_rejected": true,
+      "late_collision_does_not_overwrite_or_partially_restore": true
+    },
+    "passed": true,
+    "count": 8
+  },
+  "integration": {
+    "head": "36f345f0365ddc15d837492aa6da42a1ce6f9771",
+    "verify": [
+      {
+        "slug": "bivariate-lanczos-20261031",
+        "entries": 49,
+        "bytes": 2354054,
+        "restored_copies_present": 0,
+        "active_tracked_versions_present": 0,
+        "active_tracked_version_paths": [],
+        "accepted": true,
+        "problems": []
+      },
+      {
+        "slug": "charter-unisolvence-20261031",
+        "entries": 6,
+        "bytes": 185606,
+        "restored_copies_present": 0,
+        "active_tracked_versions_present": 0,
+        "active_tracked_version_paths": [],
+        "accepted": true,
+        "problems": []
+      },
+      {
+        "slug": "lattice-unisolvence-20261031",
+        "entries": 26,
+        "bytes": 2937448,
+        "restored_copies_present": 0,
+        "active_tracked_versions_present": 0,
+        "active_tracked_version_paths": [],
+        "accepted": true,
+        "problems": []
+      },
+      {
+        "slug": "mz-constants",
+        "entries": 4,
+        "bytes": 152567,
+        "restored_copies_present": 0,
+        "active_tracked_versions_present": 0,
+        "active_tracked_version_paths": [],
+        "accepted": true,
+        "problems": []
+      },
+      {
+        "slug": "padua-lanczos-drift-20261101",
+        "entries": 30,
+        "bytes": 2963704,
+        "restored_copies_present": 0,
+        "active_tracked_versions_present": 0,
+        "active_tracked_version_paths": [],
+        "accepted": true,
+        "problems": []
+      },
+      {
+        "slug": "padua-mz-2d-20261101",
+        "entries": 13,
+        "bytes": 1551583,
+        "restored_copies_present": 0,
+        "active_tracked_versions_present": 0,
+        "active_tracked_version_paths": [],
+        "accepted": true,
+        "problems": []
+      },
+      {
+        "slug": "padua-proof-attempts-2-20261101",
+        "entries": 23,
+        "bytes": 4055637,
+        "restored_copies_present": 0,
+        "active_tracked_versions_present": 0,
+        "active_tracked_version_paths": [],
+        "accepted": true,
+        "problems": []
+      },
+      {
+        "slug": "programme-ideas-20261031",
+        "entries": 20,
+        "bytes": 1503737,
+        "restored_copies_present": 0,
+        "active_tracked_versions_present": 0,
+        "active_tracked_version_paths": [],
+        "accepted": true,
+        "problems": []
+      },
+      {
+        "slug": "tracks/mz-constants",
+        "entries": 5,
+        "bytes": 141753,
+        "restored_copies_present": 0,
+        "active_tracked_versions_present": 0,
+        "active_tracked_version_paths": [],
+        "accepted": true,
+        "problems": []
+      }
+    ],
+    "cycles": [
+      {
+        "slug": "charter-unisolvence-20261031",
+        "export_readback": true,
+        "archive_verification": true,
+        "verify_destination": true,
+        "git_show_comparisons": 6,
+        "clean_removed": 6,
+        "stale_receipt_rejected_after_clean": true
+      },
+      {
+        "slug": "tracks/mz-constants",
+        "export_readback": true,
+        "archive_verification": true,
+        "verify_destination": true,
+        "git_show_comparisons": 5,
+        "clean_removed": 5,
+        "stale_receipt_rejected_after_clean": true
+      }
+    ],
+    "identities": [
+      {
+        "manifest": "topics/bivariate-lanczos-20261031/cold-storage.json",
+        "unchanged_identities": 49
+      },
+      {
+        "manifest": "topics/charter-unisolvence-20261031/cold-storage.json",
+        "unchanged_identities": 6
+      },
+      {
+        "manifest": "topics/lattice-unisolvence-20261031/cold-storage.json",
+        "unchanged_identities": 26
+      },
+      {
+        "manifest": "topics/mz-constants/cold-storage.json",
+        "unchanged_identities": 4
+      },
+      {
+        "manifest": "topics/padua-lanczos-drift-20261101/cold-storage.json",
+        "unchanged_identities": 30
+      },
+      {
+        "manifest": "topics/padua-mz-2d-20261101/cold-storage.json",
+        "unchanged_identities": 13
+      },
+      {
+        "manifest": "topics/padua-proof-attempts-2-20261101/cold-storage.json",
+        "unchanged_identities": 23
+      },
+      {
+        "manifest": "topics/programme-ideas-20261031/cold-storage.json",
+        "unchanged_identities": 20
+      },
+      {
+        "manifest": "tracks/mz-constants/cold-storage.json",
+        "unchanged_identities": 5
+      }
+    ],
+    "human_correction_fields": {
+      "changed_fields": 62,
+      "matched_in_superseding_human_sections": 62
+    }
+  },
+  "squash_rehearsal": {
+    "base": "2b52b432fe59c9a50aef9deebe5152c5d6874465",
+    "pr18_candidate": "36f345f0365ddc15d837492aa6da42a1ce6f9771",
+    "pr17_reference_head": "cdb12257af24ea2542de707b9730f8278d69a168",
+    "order": [
+      "PR18",
+      "PR17"
+    ],
+    "conflicts": [
+      "tools/cold_storage.py",
+      "tools/test_cold_storage.py"
+    ],
+    "rehearsed_resolution": "retain PR18 audited tools/cold_storage.py and tools/test_cold_storage.py",
+    "combined_storage_tests": {
+      "returncode": 0,
+      "summary": [
+        "----------------------------------------------------------------------",
+        "Ran 23 tests in 3.438s",
+        "",
+        "OK"
+      ]
+    },
+    "source_or_remote_branches_modified": false
+  },
+  "git_deleted_byte_totals": [
+    {
+      "from": "2b52b43",
+      "to": "b26acf6",
+      "files": 163,
+      "bytes": 15418937
+    },
+    {
+      "from": "b26acf6",
+      "to": "b519233",
+      "files": 13,
+      "bytes": 427152
+    },
+    {
+      "from": "2b52b43",
+      "to": "b519233",
+      "files": 176,
+      "bytes": 15846089
+    }
+  ],
+  "identity_change_count": 0,
+  "machine_manifest_ellipsis_values": 0
+}

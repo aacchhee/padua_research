@@ -2,8 +2,8 @@
 
 - Branch: `claude/cold-storage-20261102` · Base: main `2b52b432fe59c9a50aef9deebe5152c5d6874465`
 - Orchestrator/developer: Claude. Auditor: Codex (required protocol audit).
-- Stage: WORK · [audit-01](audit-01.md) requires a Claude response. [Handoff 03](handoffs/03-response.md) carries that step after completion of handoff 02; 01 was superseded by AC's approvals.
-- Claims: none. This topic changes no theory record, no status and no ID. Its only rule change is the evidence-size paragraph of `agents/WORKFLOW.md`, which AC approved on 2026-11-02 (audit still required).
+- Stage: PR · [audit-02](audit-02.md) accepted F1–F5; repository work finalized on AC's 2026-11-03 instruction. Ready for AC's merge decision; no further agent round.
+- Claims: none. This topic changes no theory record, no status and no ID. Its only rule change is the evidence-size paragraph of `agents/WORKFLOW.md`, which AC approved on 2026-11-02 (audit-01 and focused audit-02 completed).
 - Final IDs and reservations: none needed ("no range").
 
 ## 2026-11-02 — Claude, claude-opus-5-5 xhigh (configured)
@@ -97,3 +97,16 @@
 - **F5 (totals).** Measured from Git: 163 files = 15,418,937 B, 13 files = 427,152 B, 176 files = 15,846,089 B. The audit's own split was also off; see the response.
 - **Checks.** All nine manifests verify. Export → `verify-archive` → `verify --dest` passes on two directories.
 - **Handoffs.** Handoff 03 is done; [handoff 04](handoffs/04-reaudit.md) gives the re-audit to Codex.
+
+
+## 2026-11-03 — Codex, AC-requested/configured gpt-6-astra high — audit 02 and finalization
+
+- Rules and published candidate: `36f345f0365ddc15d837492aa6da42a1ce6f9771`; technical response: `8c3a2c466ef0f7c2a7a5b4bf454df9ea7d52687c`; fetched main/base still `2b52b432fe59c9a50aef9deebe5152c5d6874465`, already an ancestor. Backend model/effort metadata is not separately exposed. Role: independent auditor, then final PR preparation orchestrator.
+- AC steered this session: “you have to finalize this, no more claude rounds”. The independent audit continues, then this session completes PR preparation. The generic successor-handoff instruction in handoff 04 is replaced by closing the last handoff on completion; no further agent round remains. Only AC merges.
+- **Audit-02 ACCEPTED**, all F1–F5 resolved within the scoped storage/metadata review. No developer code was repaired by its accepting auditor. [Report](audit-02.md), [receipt](audit-02/receipt.json), [independent fault driver](audit-02/faults.py).
+- Ran the 23 developer storage tests independently and eight new auditor controls; all pass. All nine manifests / 176 artifact identities verify unchanged. Charter and track-MZ scratch export → archive verification with trusted manifest → destination verification → clean cycles pass, with 11 direct Git-byte comparisons; stale receipts are rejected after clean. No AC delivery is inferred.
+- F5 correction: audit-01's total was correct but its split was wrong. Git gives 15,418,937 + 427,152 = 15,846,089 bytes (163 + 13 files). Accepted Claude's correction explicitly in audit-02; earlier immutable reports/handoffs were not rewritten.
+- All 62 corrected entry fields match their superseding human sections, with no ellipsis in any machine manifest string. Sampled n3–n8 command/reader records retain environment and unavailable-input limits. No mathematical content or ID allocation; novelty gate inapplicable, no range.
+- PR #17 reference context fetched at `cdb12257af24ea2542de707b9730f8278d69a168`. Disposable ordered squash rehearsal: PR18 integrates cleanly; then PR17 conflicts only in tools/cold_storage.py and tools/test_cold_storage.py. Keeping PR18's audited versions resolves both and passes all 23 storage tests. Actual sibling branch/main remained untouched. Record this resolution in PR18 so PR17's later main integration preserves the fixes.
+- Updated this topic's results and only its own newly appended RESULTS.md / state/CURRENT.md sections. The prior other-topic sections are preserved. Repository cleanup/audit/preparation is complete; no new scientific checks or global registry allocation are implied.
+- Physical AC archive delivery and any history purge remain separate. No force-push, rewrite, tag, main mutation, settings or .github change. No new handoff is needed after closing 04 because all assigned repository work is complete.

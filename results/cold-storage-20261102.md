@@ -1,16 +1,11 @@
-# cold-storage-20261102 — current results
+# cold-storage-20261102 — final repository results
 
-Branch: `claude/cold-storage-20261102`. 2026-11-02. Claude, Opus 5.5 xhigh. Codex protocol [audit-01](../topics/cold-storage-20261102/audit-01.md), AC-requested/configured gpt-6-astra high, requires changes; Stage WORK.
+Branch: `claude/cold-storage-20261102`. Finalized 2026-11-03; Stage PR, ready for AC's merge decision. Claude developed the cleanup/response; Codex (AC-requested/configured gpt-6-astra high) independently accepted [audit-02](../topics/cold-storage-20261102/audit-02.md). Backend model/effort metadata is not separately exposed.
 
-- **What changed.** On AC's instruction, every large regenerable generated output (16 KiB or more) left the branch head: 163 files, 15.4 MB, from 9 topic and track directories. Generated data at the head falls from 19.15 MB to 3.60 MB.
-- **How it is recorded.** Each moved file is pinned by SHA-256 and by its Git blob at main `2b52b43`. Its generating command and its short summary are given in the owning directory's `cold-storage.json` and `COLD_STORAGE.md`.
-- **Tool.** `tools/cold_storage.py` verifies, restores, cleans and exports the moved files.
-- **What did not change.** No theory record, status or ID changed. Code and small receipts stay. The 13 registry/source data files first kept were also moved on AC's approval (176 files, 15,846,089 bytes in total); generated data at the head is 3.30 MB, including the new manifests.
-- **Pending.**
-  - Export to AC's Padua cold storage.
-  - The rule paragraph in `agents/WORKFLOW.md` is approved by AC.
-  - History purge with force-push is approved by AC but waits until AC's cold-storage export is verified (Git history is the only copy now).
+- **Cleanup.** 176 files, **15,846,089 bytes**, archived from nine topic/track directories. Git-measured batches: 163 / 15,418,937 bytes and 13 / 427,152 bytes. Every artifact retains its exact source commit/path/blob, size and SHA-256; all 176 identities verify. No mathematical claim, status or ID changes.
+- **Retrieval.** Complete command/reader metadata and superseding human correction sections remain committed. The POSIX tool preflights collisions, protects tracked/local files, uses no-follow traversal, reads exported payloads back before issuing v2 receipts and verifies transferred archives without Git using `verify-archive DIR --manifest M`.
+- **Validation.** 23 storage tests and 8 independently written fault controls pass; all nine manifests verify. Charter and track-MZ export/verify/clean cycles pass with 11 direct source-byte comparisons. Audit-01's three scientific outputs and historical patch remain byte-identically reproduced; audit-02 changes no science.
+- **Integration.** PR #18 first. A disposable squash rehearsal against PR #17 reference head `cdb12257af24ea2542de707b9730f8278d69a168` finds two later conflicts, both shared tool files; keeping PR #18's audited versions resolves them and passes all 23 storage tests. PR #17's branch was not changed or declared ready here.
+- **Separate archival work.** AC delivery is unconfirmed, native Windows is unsupported, WSL/drvfs is untested, and no history purge was performed. Current retrieval uses Git objects. A purge needs independently verified physical archives, preserved code/metadata and migrated locators; an export receipt alone is insufficient.
 
-Audit result: all 176 files retain exact retrievable bytes; three scientific artifacts and one historical patch regenerate byte-identically. Fix export destination verification, restore overwrite protection, clipped commands and metadata/tally errors (F1–F5). AC delivery and the separately planned purge remain pending.
-
-Claude [response-01](../topics/cold-storage-20261102/response-01.md) fixes the Codex audit-01 findings F1–F5: destination readback, offline `verify-archive`, complete commands, reader lists and measured totals (176 files, 15,846,089 B). Next: focused Codex re-audit ([handoff 04](../topics/cold-storage-20261102/handoffs/04-reaudit.md)). Only AC merges.
+All assigned repository work is complete under AC's instruction to finalize without more Claude rounds. No further agent continuation is requested. [PR #18](https://github.com/aacchhee/padua_research/pull/18) is for AC alone to merge. [Log](../topics/cold-storage-20261102/LOG.md) · [audit evidence](../topics/cold-storage-20261102/audit-02/receipt.json).
