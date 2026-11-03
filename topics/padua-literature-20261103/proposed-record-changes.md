@@ -502,3 +502,528 @@ New:
 - Row 6a, 6f, 3, 4b: status "read" (journal for 6a, 3, 4b; arXiv v1 for 6f).
 - Row 8.3: published version is Dolomites Res. Notes Approx. 18(1) (2025) 135–145, DOI 10.25430/pupj-DRNA-2025-1-11 (doi.org resolves to the DRNA page with matching metadata).
 - New leads: De Marchi–Kroó 2018 (DOI 10.1007/s10474-017-0769-4, read in part); Erb, Appl. Math. Comput. 289 (2016) 409–425 (source of the KLP Lemma 5.1 MZ inequalities; DOI not verified; unread).
+
+## P3 (from the P3 reader, Claude Opus 5.5 high; integrated by the orchestrator)
+
+Addenda for existing records are under [addenda/](addenda/).
+
+
+Prepared by the P3 literature reader (Claude Opus 5.5 high), 2026-11-03, against branch head `af1ac9fde6b23cb9cd826a33d5611680566c52cb`. These are literal old→new blocks for shared files. The orchestrator applies them at PR preparation, after allocating final IDs for `LIT?padua-literature-claude-40` … `-67` by the fresh-range procedure. Nothing here changes a PD status.
+
+Files in `p3/records/`: one new record (`xu-sima-1993.md`) and eleven addenda (`<key>.addendum.md`). Each addendum is meant to be appended to `literature/records/<key>.md` as a section "## Addendum — padua-literature-20261103 (P3, 2026-11-03)", followed by one History line. Alternatively it can be kept as a separate topic-owned file linked from the record.
+
+## 1. literature/records — appends
+
+| Target record | Append | History line to add |
+|---|---|---|
+| simonova-tichy-2025.md | `p3/records/simonova-tichy-2025.addendum.md` (statements 44–47) | 2026-11-03: P3 addendum; arXiv v1 pp. 1–5, 10–20, 23–26 read; LIT-081/082/234/235 upgraded. |
+| zhu-nakatsukasa-2026.md | `zhu-nakatsukasa-2026.addendum.md` (48–50) | 2026-11-03: P3 addendum; arXiv v2 read; LIT-090 verified (Rem. 5.1(5) p. 20), the 2026-11-01 "not in v2" annotation withdrawn; LIT-284 locators corrected for v2; LIT-361 verified. |
+| hokanson-2020.md | `hokanson-2020.addendum.md` (51–52) | 2026-11-03: P3 addendum; arXiv v1 pp. 1–7, 11–12 read; LIT-098/280/281/360 verified. |
+| brubeck-nakatsukasa-trefethen-2021.md | `brubeck-nakatsukasa-trefethen-2021.addendum.md` (53) | 2026-11-03: P3 addendum; LIT-099/285 verified (p. 5, arXiv v1). |
+| liu-narayan-2023.md | `liu-narayan-2023.addendum.md` (54–56) | 2026-11-03: P3 addendum; LIT-096 and LIT-362 corrected (d = 3 solved directly; source of non-convexity). |
+| greenbaum-1989.md | `greenbaum-1989.addendum.md` (57–59) | 2026-11-03: P3 addendum; AC copy read; LIT-213 conflict resolved (Theorem 1′ has √ε and ε^{1/4} branches). |
+| paige-1980-lanczos.md | `paige-1980-lanczos.addendum.md` (60–61) | 2026-11-03: P3 addendum; AC copy read; LIT-069/209 verified, LIT-210 corrected. |
+| paige-2010-augmented.md | `paige-2010-augmented.addendum.md` (62) | 2026-11-03: P3 addendum; LIT-254 verified on the author PDF. |
+| meurant-strakos-2006.md | `meurant-strakos-2006.addendum.md` (63) | 2026-11-03: P3 addendum; LIT-272 verified, pp. 510–512. |
+| sinha-2026.md | `sinha-2026.addendum.md` (64–65) | 2026-11-03: P3 addendum; Theorems 6–8 statements read; LIT-083 verified. |
+| chen-2026.md | `chen-2026.addendum.md` (66–67) | 2026-11-03: P3 addendum; arXiv **v2** (18 Oct 2026) read; LIT-289 renumbered (Thm 5.7 in v2). |
+| (new) xu-sima-1993.md | `p3/records/xu-sima-1993.md` (40–43) | new record |
+| austin-et-al-2021.md | Add to Search and attribution notes: "2026-11-03 (P3): Hokanson arXiv 2009.10803v1, reference [2] (p. 11), cites this work as A. P. Austin, M. Krishnamoorthy, S. Leyffer, S. Mrenna, J. Müller, H. Schulz, *Multivariate rational approximation*, 2019, arXiv:1912.02272v1, and credits the multivariate V+A to its Subsec. 3.2 (pp. 4–5). This bibliographic evidence links the arXiv number to the CPC paper; the arXiv metadata page itself was not verified." | 2026-11-03: P3 attribution note. |
+| zhu-nakatsukasa-2026.md, History | Old: `2026-11-01: orchestrator annotation — the L2 developer (response-recon-01, finding F9) reports that the sentence quoted for LIT?bivariate-lanczos-claude-025 was not found in arXiv v2 of this paper;` → New: keep the line unchanged as history and add below it: `2026-11-03 (P3): the sentence IS in arXiv v2, Remark 5.1 item 5, p. 20 (pdf.js text read); finding F9's "not found" is withdrawn for v2.` | — |
+
+No addendum is proposed for `xu-tams-1994-operator` or `xu-tams-1994-blockjacobi`: both AMS PDFs returned a bot-verification page on 2026-11-03, so they were not read, and the records stay at digest level.
+
+## 2. literature/INDEX.md — row replacements (old → new)
+
+Each block replaces one existing row, and the old row text is literal. Only the status-type, statement, locator and coverage cells change. Every coverage change is an append that starts with "· P3 2026-11-03:", so the history stays readable.
+
+### INDEX.md — LIT-069
+
+Old:
+
+```
+| LIT-069 (LIT?bivariate-lanczos-claude-004) | reported / UNVERIFIED / mechanism of loss of orthogonality (as characterised by the inputs) | As characterised by the supplying agent: in finite precision, loss of orthogonality of Lanczos vectors occurs in the direction of converged Ritz vectors; the component of q_k along a Ritz vector is bounded by roughly u*\|\|A\|\| divided by the Ritz residual, via Paige's perturbed local relations and the identity relating the strictly upper part of Q^T Q to the section T. | paige-1980-lanczos | no theorem number supplied | [record](records/paige-1980-lanczos.md) | supplied secondary account only; original fulltext NOT inspected Online pass 2026-10-31: form supported by three secondary accounts (see 205); Paige original not read. |
+```
+
+New:
+
+```
+| LIT-069 (LIT?bivariate-lanczos-claude-004) | reported → verified on the original (P3 2026-11-03) / mechanism of loss of orthogonality | As characterised by the supplying agent: in finite precision, loss of orthogonality of Lanczos vectors occurs in the direction of converged Ritz vectors; the component of q_k along a Ritz vector is bounded by roughly u*\|\|A\|\| divided by the Ritz residual, via Paige's perturbed local relations and the identity relating the strictly upper part of Q^T Q to the section T. | paige-1980-lanczos | Paige 1980 (2.17)–(2.18) p. 239; (3.11)–(3.13) p. 241 | [record](records/paige-1980-lanczos.md) | supplied secondary account only; original fulltext NOT inspected Online pass 2026-10-31: form supported by three secondary accounts (see 205); Paige original not read. · P3 2026-11-03: verified against AC's copy of the original (pp. 238–239, 241); see `p3` addendum to paige-1980-lanczos, LIT?padua-literature-claude-60. |
+```
+
+### INDEX.md — LIT-071
+
+Old:
+
+```
+| LIT-071 (LIT?bivariate-lanczos-claude-006) | reported / UNVERIFIED / backward-stability model (indirect) | Greenbaum's 1989 model: finite-precision Lanczos results are exact Lanczos results for a slightly larger matrix whose eigenvalues lie close to those of the original (indirect description from the Simonova-Tichy abstract page). | greenbaum-1989 | no theorem number obtained | [record](records/greenbaum-1989.md) | supplied secondary account only; original fulltext NOT inspected Online pass 2026-10-31: Greenbaum LAA 113 metadata and abstract confirmed on ScienceDirect (see 207-209). |
+```
+
+New:
+
+```
+| LIT-071 (LIT?bivariate-lanczos-claude-006) | reported / UNVERIFIED / backward-stability model (indirect) | Greenbaum's 1989 model: finite-precision Lanczos results are exact Lanczos results for a slightly larger matrix whose eigenvalues lie close to those of the original (indirect description from the Simonova-Tichy abstract page). | greenbaum-1989 | Greenbaum 1989 §4 pp. 20–23; Theorem 1 p. 23 | [record](records/greenbaum-1989.md) | supplied secondary account only; original fulltext NOT inspected Online pass 2026-10-31: Greenbaum LAA 113 metadata and abstract confirmed on ScienceDirect (see 207-209). · P3 2026-11-03: verified against AC's copy of the original (Theorem 1 p. 23, Theorem 1′ p. 51); see greenbaum-1989 addendum, LIT?padua-literature-claude-58. |
+```
+
+### INDEX.md — LIT-081
+
+Old:
+
+```
+| LIT-081 (LIT?bivariate-lanczos-claude-016) | abstract-checked / Greenbaum-type result for block Lanczos (abstract) | Extends Greenbaum's 1989 model to block Lanczos: a continuation process terminating after finitely many steps gives perturbations such that the computed block tridiagonal matrices are exact block Lanczos for a larger model matrix; sufficient conditions keep the perturbations small. In the single-vector case the conditions can always be met; whether they can always be met in the block case is stated open. | simonova-tichy-2025 | abstract | [record](records/simonova-tichy-2025.md) | abstract page checked 2026-10-31 only; fulltext NOT inspected Online pass 2026-10-31: BIT 65(4) art. 47 confirmed; Theorems 1-4 digested (see 229-230). |
+```
+
+New:
+
+```
+| LIT-081 (LIT?bivariate-lanczos-claude-016) | abstract-checked / Greenbaum-type result for block Lanczos (abstract) | Extends Greenbaum's 1989 model to block Lanczos: a continuation process terminating after finitely many steps gives perturbations such that the computed block tridiagonal matrices are exact block Lanczos for a larger model matrix; sufficient conditions keep the perturbations small. In the single-vector case the conditions can always be met; whether they can always be met in the block case is stated open. | simonova-tichy-2025 | abstract | [record](records/simonova-tichy-2025.md) | abstract page checked 2026-10-31 only; fulltext NOT inspected Online pass 2026-10-31: BIT 65(4) art. 47 confirmed; Theorems 1-4 digested (see 229-230). · P3 2026-11-03: arXiv v1 PDF text read (pp. 1–5, 10–20, 23–26); statement verified (abstract p. 1; §5 pp. 13–19); see simonova-tichy-2025 addendum, LIT?padua-literature-claude-44/45. |
+```
+
+### INDEX.md — LIT-082
+
+Old:
+
+```
+| LIT-082 (LIT?bivariate-lanczos-claude-017) | reported / UNVERIFIED / author statements on difficulty and free parameter (reported) | Reported quotations: generalizing Paige's analysis to the block case 'is challenging and requires further research'; a comprehensive finite-precision block Lanczos theory 'is still lacking'; a key open question is how to select the free matrix parameter W_k. | simonova-tichy-2025 | locators not supplied | [record](records/simonova-tichy-2025.md) | supplied secondary account only; original fulltext NOT inspected Online pass 2026-10-31: both phrases located, Sections 1 and 5 (see 231). |
+```
+
+New:
+
+```
+| LIT-082 (LIT?bivariate-lanczos-claude-017) | reported → page-located (P3 2026-11-03) / author statements on difficulty and free parameter | Reported quotations: generalizing Paige's analysis to the block case 'is challenging and requires further research'; a comprehensive finite-precision block Lanczos theory 'is still lacking'; a key open question is how to select the free matrix parameter W_k. | simonova-tichy-2025 | §1 p. 3; §5 p. 13; §7 p. 24 (arXiv v1) | [record](records/simonova-tichy-2025.md) | supplied secondary account only; original fulltext NOT inspected Online pass 2026-10-31: both phrases located, Sections 1 and 5 (see 231). · P3 2026-11-03: both statements located in the arXiv v1 text (pp. 3, 13); W_k open question p. 24. |
+```
+
+### INDEX.md — LIT-083
+
+Old:
+
+```
+| LIT-083 (LIT?bivariate-lanczos-claude-018) | abstract-checked / block Paige identity; block Lanczos with truncation (abstract) | The paper includes a block form of Paige's identity, relates its results to the frameworks of Paige and Greenbaum, and analyses block Lanczos with Householder orthogonalization and singular-value truncation. The abstract does not mention several operators. | sinha-2026 | abstract | [record](records/sinha-2026.md) | abstract page checked 2026-10-31 only; fulltext NOT inspected |
+```
+
+New:
+
+```
+| LIT-083 (LIT?bivariate-lanczos-claude-018) | abstract-checked / block Paige identity; block Lanczos with truncation (abstract) | The paper includes a block form of Paige's identity, relates its results to the frameworks of Paige and Greenbaum, and analyses block Lanczos with Householder orthogonalization and singular-value truncation. The abstract does not mention several operators. | sinha-2026 | abstract | [record](records/sinha-2026.md) | abstract page checked 2026-10-31 only; fulltext NOT inspected · P3 2026-11-03: verified on arXiv v1: abstract p. 1; Theorem 6 (enlarged problem I_k ⊗ A + Δ) p. 39; Theorem 7 (block Paige identities) p. 42; see sinha-2026 addendum, LIT?padua-literature-claude-64/65. |
+```
+
+### INDEX.md — LIT-085
+
+Old:
+
+```
+| LIT-085 (LIT?bivariate-lanczos-claude-020) | abstract-checked / simplified Paige/Greenbaum-type stability (abstract) | Self-contained analysis of symmetric Lanczos without reorthogonalization: effect of rounding on the three-term recurrence, a known identity for the loss of orthogonality, bounds on where computed Ritz values lie, where stabilized Ritz values cluster, and a Greenbaum-type backward stability theorem; the proofs are said to be simpler than Paige's and Greenbaum's but to hide polynomial factors in the number of iterations. | chen-2026 | abstract | [record](records/chen-2026.md) | abstract page checked 2026-10-31 only; fulltext NOT inspected |
+```
+
+New:
+
+```
+| LIT-085 (LIT?bivariate-lanczos-claude-020) | abstract-checked / simplified Paige/Greenbaum-type stability (abstract) | Self-contained analysis of symmetric Lanczos without reorthogonalization: effect of rounding on the three-term recurrence, a known identity for the loss of orthogonality, bounds on where computed Ritz values lie, where stabilized Ritz values cluster, and a Greenbaum-type backward stability theorem; the proofs are said to be simpler than Paige's and Greenbaum's but to hide polynomial factors in the number of iterations. | chen-2026 | abstract | [record](records/chen-2026.md) | abstract page checked 2026-10-31 only; fulltext NOT inspected · P3 2026-11-03: abstract confirmed in arXiv v2 (18 Oct 2026), p. 1; main theorems read (Thm 4.1 p. 14, Thm 5.7 pp. 20–21, Thm 5.11 p. 22); see chen-2026 addendum. |
+```
+
+### INDEX.md — LIT-089
+
+Old:
+
+```
+| LIT-089 (LIT?bivariate-lanczos-claude-024) | abstract-checked / multivariate Vandermonde with Arnoldi (abstract) | Extends Vandermonde with Arnoldi to several dimensions via least squares with Stieltjes orthogonalization using sample points only; about O(N^2) equispaced or O(N^2 log N) random points give a well-conditioned near-optimal approximation on many irregular domains; a weighted variant needs O(N log N) points. | zhu-nakatsukasa-2026 | abstract | [record](records/zhu-nakatsukasa-2026.md) | abstract page checked 2026-10-31 only; fulltext NOT inspected |
+```
+
+New:
+
+```
+| LIT-089 (LIT?bivariate-lanczos-claude-024) | abstract-checked / multivariate Vandermonde with Arnoldi (abstract) | Extends Vandermonde with Arnoldi to several dimensions via least squares with Stieltjes orthogonalization using sample points only; about O(N^2) equispaced or O(N^2 log N) random points give a well-conditioned near-optimal approximation on many irregular domains; a weighted variant needs O(N log N) points. | zhu-nakatsukasa-2026 | abstract | [record](records/zhu-nakatsukasa-2026.md) | abstract page checked 2026-10-31 only; fulltext NOT inspected · P3 2026-11-03: abstract confirmed in arXiv v2, p. 1. |
+```
+
+### INDEX.md — LIT-090
+
+Old:
+
+```
+| LIT-090 (LIT?bivariate-lanczos-claude-025) | reported / UNVERIFIED / full orthogonalization and loss of orthogonality (reported) | Reported: the implementation uses full two-pass classical Gram-Schmidt at cost O(M N^2); the authors state multivariate V+A orthogonalization 'is subject to a loss of orthogonality due to numerical cancellation'. The 2024-2026 follow-ups are reported to be applications without truncation or rounding analysis. | zhu-nakatsukasa-2026 | locators not supplied | [record](records/zhu-nakatsukasa-2026.md) | supplied secondary account only; original fulltext NOT inspected |
+```
+
+New:
+
+```
+| LIT-090 (LIT?bivariate-lanczos-claude-025) | reported → verified against arXiv v2 (P3 2026-11-03) / full orthogonalization and loss of orthogonality | Reported: the implementation uses full two-pass classical Gram-Schmidt at cost O(M N^2); the authors state multivariate V+A orthogonalization 'is subject to a loss of orthogonality due to numerical cancellation'. The 2024-2026 follow-ups are reported to be applications without truncation or rounding analysis. | zhu-nakatsukasa-2026 | Algorithm 3 p. 8; cost p. 21; Remark 5.1(5) pp. 20–21 (arXiv v2) | [record](records/zhu-nakatsukasa-2026.md) | supplied secondary account only; original fulltext NOT inspected · P3 2026-11-03: verified in arXiv v2: two-pass CGS (Alg. 3, p. 8), O(MN²) (p. 21), loss-of-orthogonality-by-cancellation sentence in Remark 5.1(5), p. 20. The 2026-11-01 annotation that the sentence is absent from v2 is withdrawn. Follow-up statement not checked. |
+```
+
+### INDEX.md — LIT-096
+
+Old:
+
+```
+| LIT-096 (LIT?bivariate-lanczos-claude-031) | reported / UNVERIFIED / any-d truncated Stieltjes from moments; origin of the non-convex step | The multivariate Stieltjes procedure is a truncated block three-term procedure in any dimension working from moments by quadrature, with no complexity analysis, citing neither HL nor the seed. The non-convex (weighted orthogonal Procrustes) step arises from fitting each direction separately (section 5.2.6), not from the canonical form imposed afterwards by one symmetric eigendecomposition (section 3.2). | liu-narayan-2023 | sections 3.2, 5.2.1-5.2.7, eq. 22, eq. 35 | [record](records/liu-narayan-2023.md) | supplied secondary account only; original fulltext NOT inspected |
+```
+
+New:
+
+```
+| LIT-096 (LIT?bivariate-lanczos-claude-031) | reported / UNVERIFIED / any-d truncated Stieltjes from moments; origin of the non-convex step | The multivariate Stieltjes procedure is a truncated block three-term procedure working from moments (by quadrature or Monte Carlo); no complexity analysis was seen in the pages read. In d = 2 the remaining block is fixed by orthonormality and the commuting conditions need not be imposed. For d > 2 the remaining blocks are determined from the commuting condition (6c), orthonormality and mixed moments, which leaves unitary unknowns in a non-convex generalised weighted orthogonal Procrustes problem (§5.2.6, eqs. (31)–(35)); d = 3 is solved directly (§5.2.7). The canonical form is imposed by one symmetric eigendecomposition per degree (§3.2). [Corrected P3 2026-11-03; original wording: non-convex step 'arises from fitting each direction separately (section 5.2.6)'.] | liu-narayan-2023 | §3.2 p. 6; §5.2.4–5.2.7 pp. 11–13; eqs. (31)–(36) (arXiv v2) | [record](records/liu-narayan-2023.md) | supplied secondary account only; original fulltext NOT inspected · P3 2026-11-03: arXiv v2 read, pp. 1–2, 4–6, 9–13, 19, 21–22; statement corrected as shown; see liu-narayan-2023 addendum, LIT?padua-literature-claude-56. |
+```
+
+### INDEX.md — LIT-098
+
+Old:
+
+```
+| LIT-098 (LIT?bivariate-lanczos-claude-033) | reported / UNVERIFIED / full-orthogonalization multivariate V+A | Builds each column by multiplying a previous column by one coordinate, orthogonalizes by two-pass classical Gram-Schmidt against ALL previous columns at cost O(M N^2), and notes that many orderings do not satisfy the required span property; reported to be one fixed instance of the seed's ordering scheme. | hokanson-2020 | Alg. 2.1 | [record](records/hokanson-2020.md) | supplied secondary account only; original fulltext NOT inspected |
+```
+
+New:
+
+```
+| LIT-098 (LIT?bivariate-lanczos-claude-033) | reported / UNVERIFIED / full-orthogonalization multivariate V+A | Builds each column by multiplying a previous column by one coordinate, orthogonalizes by two-pass classical Gram-Schmidt against ALL previous columns at cost O(M N^2), and notes that many orderings do not satisfy the required span property; reported to be one fixed instance of the seed's ordering scheme. | hokanson-2020 | §2 pp. 5–6, Alg. 2.1 (arXiv v1) | [record](records/hokanson-2020.md) | supplied secondary account only; original fulltext NOT inspected · P3 2026-11-03: verified in arXiv v1, pp. 5–6 (the 'instance of the seed's ordering scheme' phrase is the supplier's interpretation, not the paper's). |
+```
+
+### INDEX.md — LIT-099
+
+Old:
+
+```
+| LIT-099 (LIT?bivariate-lanczos-claude-034) | reported / UNVERIFIED / Arnoldi = Lanczos for real nodes; risk of orthogonality loss | For real nodes the recurrence reduces to three terms (H tridiagonal, Arnoldi equivalent to Lanczos) and there is 'a risk of reduced accuracy' since the columns may lose orthogonality; univariate; cites neither HL nor the seed. | brubeck-nakatsukasa-trefethen-2021 | section 4 | [record](records/brubeck-nakatsukasa-trefethen-2021.md) | supplied secondary account only; original fulltext NOT inspected |
+```
+
+New:
+
+```
+| LIT-099 (LIT?bivariate-lanczos-claude-034) | reported / UNVERIFIED / Arnoldi = Lanczos for real nodes; risk of orthogonality loss | For real nodes the recurrence reduces to three terms (H tridiagonal, Arnoldi equivalent to Lanczos) and there is 'a risk of reduced accuracy' since the columns may lose orthogonality; univariate; cites neither HL nor the seed. | brubeck-nakatsukasa-trefethen-2021 | §4 p. 5 (arXiv v1) | [record](records/brubeck-nakatsukasa-trefethen-2021.md) | supplied secondary account only; original fulltext NOT inspected · P3 2026-11-03: verified in arXiv v1, p. 5. |
+```
+
+### INDEX.md — LIT-209
+
+Old:
+
+```
+| LIT-209 (LIT?bivariate-lanczos-claude-205) | online pass / secondary / loss-of-orthogonality mechanism | With Ritz pair (theta_j, y_j = V_k s_j) of T_k and zeta_{kj} the last component of s_j: y_j^T v_{k+1} = -(eps_{jj}) / (eta_{k+1} \|zeta_{kj}\|), where \|eps_{jj}\| <= k eps2 ‖A‖ (a quantity of rounding size). Consequently orthogonality of v_{k+1} to the Krylov basis can be lost only in the directions of Ritz vectors whose last component is small (converged), and not before the first Ritz pair converges. The secondary text adds that loss is not proved to occur in every such direction because the numerator can vanish. | paige-1980-lanczos | Meurant-Strakos Theorem 4.3 (~p. 504), consequence ~p. 508; Paige (2019) Remark 3.2 and 3.4 cite eq. (3.18) of the 1980 paper; Carson-Demmel eqs. (5.9)-(5.11), (5.22). | [record](records/paige-1980-lanczos.md) | metadata + secondary accounts; Original NOT read (author's scan, 80LAIA001.pdf, has no text layer) |
+```
+
+New:
+
+```
+| LIT-209 (LIT?bivariate-lanczos-claude-205) | online pass / secondary / loss-of-orthogonality mechanism | With Ritz pair (theta_j, y_j = V_k s_j) of T_k and zeta_{kj} the last component of s_j: y_j^T v_{k+1} = -(eps_{jj}) / (eta_{k+1} \|zeta_{kj}\|), where \|eps_{jj}\| <= k eps2 ‖A‖ (a quantity of rounding size). Consequently orthogonality of v_{k+1} to the Krylov basis can be lost only in the directions of Ritz vectors whose last component is small (converged), and not before the first Ritz pair converges. The secondary text adds that loss is not proved to occur in every such direction because the numerator can vanish. | paige-1980-lanczos | Meurant-Strakos Theorem 4.3 (~p. 504), consequence ~p. 508; Paige (2019) Remark 3.2 and 3.4 cite eq. (3.18) of the 1980 paper; Carson-Demmel eqs. (5.9)-(5.11), (5.22). | [record](records/paige-1980-lanczos.md) | metadata + secondary accounts; Original NOT read (author's scan, 80LAIA001.pdf, has no text layer) · P3 2026-11-03: verified on the original, p. 241, (3.11)–(3.13): z_iᵀv_{k+1} = −ε_ii/(β_{k+1}η_{ki}), |ε_ij| ≤ kσε₂ (Paige's notation; σ = ‖A‖₂). |
+```
+
+### INDEX.md — LIT-210
+
+Old:
+
+```
+| LIT-210 (LIT?bivariate-lanczos-claude-206) | online pass / secondary / accuracy and convergence | Paige 1980 Lemma 3.1: each eigenpair of T_m has an earlier 'stabilized' Ritz value nearby. Theorem 3.1: a stabilized Ritz value (delta <= sqrt(3) m^2 sigma^2 u in the report's notation) lies within (m+1)^3 sigma^2 u of an eigenvalue of A. Corollary 3.1: a stabilized Ritz pair is an exact eigenpair of a matrix within ~5 t^2 sigma^2 u of A (the report has 6 t^2). Theorem 4.1: at least one eigenvalue of T_n is within (n+1)^3 sigma^2 u of an eigenvalue of A. Theorems 4.2-4.3 concern the Krylov-space perturbation and eigenpair results (not detailed in the digest). Assumptions adopted from Paige: computed betas nonzero, m(30 + eps1) <= 1, eps0 < 1/12. Paige (2019, Section 1.1) cites section 8.7 of the 1971 thesis for the growth of Ritz-value error bounds (possibly like k^2 in bounds, proportional to k in practice for well separated eigenvalues). | paige-1980-lanczos | Paige (1980) Lemma 3.1, Theorems 3.1, 4.1-4.3, Corollary 3.1 as cited by Carson-Demmel; Paige (2019) Remark 3.3 cites Theorem 3.1. | [record](records/paige-1980-lanczos.md) | metadata + secondary accounts; Original NOT read |
+```
+
+New:
+
+```
+| LIT-210 (LIT?bivariate-lanczos-claude-206) | online pass / secondary / accuracy and convergence | Paige 1980 (original read P3 2026-11-03): with σ = ‖A‖₂ and ε₂ = √2 max(6ε₀, ε₁) ((2.10), (2.20)), Lemma 3.1 (p. 245): every eigenpair of T_k has an earlier nearby Ritz value controlled by k²σε₂/|y_jᵀR_ky_j|. Theorem 3.1 (p. 246): if β_{k+1}|η_{kj}| ≤ √3k²σε₂ (stabilized), some eigenvalue of A is within (k+1)³σε₂. Corollary 3.1 (p. 248): the final Ritz pair is an exact eigenpair of a matrix within 5t²σε₂ of A. Theorem 4.1 (p. 250): if n(3ε₀+ε₁) < 1, at least one eigenvalue of T_n is within (n+1)³σε₂ of an eigenvalue of A. Assumptions (2.16): β_{j+1} ≠ 0, k(3ε₀+ε₁) < 1, ε₀ = 2(n+4)ε < 1/12, ε₁ = 2(7+mα)ε. Theorems 4.2–4.3 not read. [Corrected P3 2026-11-03; the earlier secondary wording used 'sigma^2 u', 'm(30 + eps1) <= 1' and '6 t^2'.] | paige-1980-lanczos | Paige (1980) pp. 238–239 (2.10)–(2.21); Lemma 3.1 p. 245; Theorem 3.1 p. 246; Corollary 3.1 p. 248; Theorem 4.1 p. 250 | [record](records/paige-1980-lanczos.md) | metadata + secondary accounts; Original NOT read · P3 2026-11-03: original read (AC copy, page images) for the statements listed; Theorems 4.2–4.3 still unread. |
+```
+
+### INDEX.md — LIT-211
+
+Old:
+
+```
+| LIT-211 (LIT?bivariate-lanczos-claude-207) | online pass / abstract-checked / backward-stability model | Lanczos and conjugate gradients generate polynomials by a three-term recurrence whose roots give approximate eigenvalues. Under small perturbations (such as rounding) the computed polynomials remain orthogonal, but with respect to a slightly different measure whose weights sit on points very near the eigenvalues of A. This explains the behaviour of Ritz values in perturbed Lanczos and the convergence of perturbed CG. The Chebyshev error bound holds approximately for perturbed CG, and a sharper bound follows from a minimax polynomial over small intervals around the eigenvalues. | greenbaum-1989 | Abstract of LAA 113 (1989) 7-63, February 1989, doi:10.1016/0024-3795(89)90285-1 (page marks the article open archive). | [record](records/greenbaum-1989.md) | metadata + abstract; ScienceDirect open-archive landing page read (metadata and abstract); full text NOT reached |
+```
+
+New:
+
+```
+| LIT-211 (LIT?bivariate-lanczos-claude-207) | online pass / abstract-checked / backward-stability model | Lanczos and conjugate gradients generate polynomials by a three-term recurrence whose roots give approximate eigenvalues. Under small perturbations (such as rounding) the computed polynomials remain orthogonal, but with respect to a slightly different measure whose weights sit on points very near the eigenvalues of A. This explains the behaviour of Ritz values in perturbed Lanczos and the convergence of perturbed CG. The Chebyshev error bound holds approximately for perturbed CG, and a sharper bound follows from a minimax polynomial over small intervals around the eigenvalues. | greenbaum-1989 | Abstract of LAA 113 (1989) 7-63, February 1989, doi:10.1016/0024-3795(89)90285-1 (page marks the article open archive). | [record](records/greenbaum-1989.md) | metadata + abstract; ScienceDirect open-archive landing page read (metadata and abstract); full text NOT reached · P3 2026-11-03: abstract confirmed on AC's copy (p. 7). |
+```
+
+### INDEX.md — LIT-212
+
+Old:
+
+```
+| LIT-212 (LIT?bivariate-lanczos-claude-208) | online pass / secondary / theorem form | Fix a step k of finite precision Lanczos on the n x n matrix A with start vector v_1. Greenbaum's construction picks k - m_k mutually orthogonal vectors in the span of the computed vectors that are nearly orthogonal to v_{k+1}, avoiding well-separated converged Ritz directions, and continues the recurrence to length n + m_k - k. The conclusion: T_k equals the matrix generated by exact Lanczos applied to an (n+m_k) x (n+m_k) matrix B whose eigenvalues lie within O((n+m_k)^3 max{u ‖A‖, f_k, ..., f_{n+m_k}}) of eigenvalues of A, where the f_j are the smallest perturbations making some eta_{j+1} vanish by step n+m_k. Strakos (1991, Thm 4.2) is cited for the necessity that B has an eigenvalue near each eigenvalue of A with nonzero weight in v_1. | greenbaum-1989 | Meurant-Strakos, Acta Numerica 15 (2006), Theorem 4.9 (~pp. 511-512); Simonova-Tichy refer to a 'Lemma (Paige)' at Greenbaum p. 32 (see simonova-tichy-2025). | [record](records/greenbaum-1989.md) | secondary account (survey); Original theorem NOT read |
+```
+
+New:
+
+```
+| LIT-212 (LIT?bivariate-lanczos-claude-208) | online pass / secondary / theorem form | Fix a step k of finite precision Lanczos on the n x n matrix A with start vector v_1. Greenbaum's construction picks k - m_k mutually orthogonal vectors in the span of the computed vectors that are nearly orthogonal to v_{k+1}, avoiding well-separated converged Ritz directions, and continues the recurrence to length n + m_k - k. The conclusion: T_k equals the matrix generated by exact Lanczos applied to an (n+m_k) x (n+m_k) matrix B whose eigenvalues lie within O((n+m_k)^3 max{u ‖A‖, f_k, ..., f_{n+m_k}}) of eigenvalues of A, where the f_j are the smallest perturbations making some eta_{j+1} vanish by step n+m_k. Strakos (1991, Thm 4.2) is cited for the necessity that B has an eigenvalue near each eigenvalue of A with nonzero weight in v_1. | greenbaum-1989 | Meurant-Strakos, Acta Numerica 15 (2006), Theorem 4.9 (~pp. 511-512); Simonova-Tichy refer to a 'Lemma (Paige)' at Greenbaum p. 32 (see simonova-tichy-2025). | [record](records/greenbaum-1989.md) | secondary account (survey); Original theorem NOT read · P3 2026-11-03: original read: Theorem 1, p. 23, (4.7), matches this account (n + m_k = Greenbaum's N + m); the 'k − m_k vectors' description is Meurant–Strakoš's. |
+```
+
+### INDEX.md — LIT-213
+
+Old:
+
+```
+| LIT-213 (LIT?bivariate-lanczos-claude-209) | online pass / attribution note / unresolved | (a) Simonova-Tichy (arXiv 2507.16484): Greenbaum's proof gives eigenvalue intervals of size about sqrt(u)‖A‖ and experiments suggest u‖A‖ suffices. (b) Chen (arXiv 2608.21268): the bound depends on the fourth root of the accuracy parameter and carries hidden polynomial factors, proofs 'gory'; Chen's own Theorem 4.6 (not Greenbaum's) gives symmetric N x N matrices S and T-tilde with N = nk, T-tilde tridiagonal with leading k x k block exactly the computed T_k, and ‖S - T-tilde‖ of order u‖A‖ up to polynomial factors in k, with starting weights preserved exactly. (c) Meurant-Strakos: cubic polynomial factor times a max of u‖A‖ and the f_j. These are mutually inconsistent as stated, so the exponent of u in Greenbaum's published width cannot be read off the secondary literature. | greenbaum-1989 | Simonova-Tichy Section 1 (as digested); Chen 2608.21268 Section 8, eq. (7.10), Theorem 4.6, Lemmas 4.1-4.5; Meurant-Strakos Theorem 4.9. | [record](records/greenbaum-1989.md) | secondary accounts; UNVERIFIED: three secondary accounts, none the original. |
+```
+
+New:
+
+```
+| LIT-213 (LIT?bivariate-lanczos-claude-209) | online pass / attribution note / resolved on the original (P3 2026-11-03) | (a) Simonova-Tichy (arXiv 2507.16484): Greenbaum's proof gives eigenvalue intervals of size about sqrt(u)‖A‖ and experiments suggest u‖A‖ suffices. (b) Chen (arXiv 2608.21268): the bound depends on the fourth root of the accuracy parameter and carries hidden polynomial factors, proofs 'gory'; Chen's own Theorem 4.6 (not Greenbaum's) gives symmetric N x N matrices S and T-tilde with N = nk, T-tilde tridiagonal with leading k x k block exactly the computed T_k, and ‖S - T-tilde‖ of order u‖A‖ up to polynomial factors in k, with starting weights preserved exactly. (c) Meurant-Strakos: cubic polynomial factor times a max of u‖A‖ and the f_j. These are mutually inconsistent as stated, so the exponent of u in Greenbaum's published width cannot be read off the secondary literature. RESOLUTION (P3 2026-11-03, original read): Greenbaum's Theorem 1′ (p. 51, (7.31)) has two branches: σ(N+m)³O(J²γ√ε‖A‖) when converged Ritz vectors are defined by (7.9) and the unconverged Ritz values are well separated, and σ(N+m)³O(c_max^{3/2}Jε^{1/4}‖A‖) with (7.10). Account (a) quotes the first branch, (b) the second (citing (7.10)), and (c) the unquantified Theorem 1 (p. 23). Chen's own model is Theorem 5.7 in arXiv v2. | greenbaum-1989 | Simonova-Tichy Section 1 (as digested); Chen 2608.21268 Section 8, eq. (7.10), Theorem 4.6, Lemmas 4.1-4.5; Meurant-Strakos Theorem 4.9. | [record](records/greenbaum-1989.md) | secondary accounts; UNVERIFIED: three secondary accounts, none the original. · P3 2026-11-03: resolved against AC's copy of the original, pp. 23, 43–44, 50–51. |
+```
+
+### INDEX.md — LIT-234
+
+Old:
+
+```
+| LIT-234 (LIT?bivariate-lanczos-claude-230) | online pass / read / block Greenbaum model | Scalar case: the paper summarizes Greenbaum's 1989 result without numbering it (intervals of size about sqrt(u)‖A‖ from the proof, u‖A‖ suggested by experiments; a 'Lemma (Paige)' at Greenbaum p. 32 is invoked). Block case: Theorem 1: if the perturbations are at most eps2‖A‖ and a Ritz-vector condition holds with some eps1, every eigenvalue of T_N is within 3 max(sqrt(N) eps2, eps1)‖A‖ of an eigenvalue of A; the condition asks that every Ritz pair with a small-norm eigenvector have a nearby Ritz pair of norm at least 0.5. Theorem 2: the continuation vectors q_{k+j} are orthonormal to W_k and to each other and beta_{k+j} = q_{k+j}^T A q_{k+j-1} for j >= 3. Theorem 3: the continuation can be written as a perturbed three-term recurrence (21). Theorem 4: the perturbations are expressed through W_k with rho_k = ‖R_k^{-1}‖; if the Ritz vectors are sufficiently independent (rho_k = O(1)) two terms (35) and one term (36) dominate, and their smallness is the sufficient condition. W_k is the only free parameter, the Q-factor of a QR factorization of m selected Ritz vectors chosen by a heuristic criterion delta_{k,i} > mu‖A‖ (Section 6.1). The abstract says the conditions are always satisfiable in the single-vector case (Greenbaum, based on Paige); Section 5.2 says bounding the second term in (35) in the block case 'remains open'. | simonova-tichy-2025 | Theorems 1-4; Section 5.2; Section 6.1 (digest; abstract also gives the open question). | [record](records/simonova-tichy-2025.md) | full text (tool digest); arXiv 2507.16484 (PDF) read via tool digest; proofs and the sufficiency conditions in detail NOT checked |
+```
+
+New:
+
+```
+| LIT-234 (LIT?bivariate-lanczos-claude-230) | online pass / read / block Greenbaum model | Scalar case: the paper summarizes Greenbaum's 1989 result without numbering it (intervals of size about sqrt(u)‖A‖ from the proof, u‖A‖ suggested by experiments; a 'Lemma (Paige)' at Greenbaum p. 32 is invoked). Block case: Theorem 1: if the perturbations are at most eps2‖A‖ and a Ritz-vector condition holds with some eps1, every eigenvalue of T_N is within 3 max(sqrt(N) eps2, eps1)‖A‖ of an eigenvalue of A; the condition asks that every Ritz pair with a small-norm eigenvector have a nearby Ritz pair of norm at least 0.5. Theorem 2: the continuation vectors q_{k+j} are orthonormal to W_k and to each other and beta_{k+j} = q_{k+j}^T A q_{k+j-1} for j >= 3. Theorem 3: the continuation can be written as a perturbed three-term recurrence (21). Theorem 4: the perturbations are expressed through W_k with rho_k = ‖R_k^{-1}‖; if the Ritz vectors are sufficiently independent (rho_k = O(1)) two terms (35) and one term (36) dominate, and their smallness is the sufficient condition. W_k is the only free parameter, the Q-factor of a QR factorization of m selected Ritz vectors chosen by a heuristic criterion delta_{k,i} > mu‖A‖ (Section 6.1). The abstract says the conditions are always satisfiable in the single-vector case (Greenbaum, based on Paige); Section 5.2 says bounding the second term in (35) in the block case 'remains open'. | simonova-tichy-2025 | Theorems 1-4; Section 5.2; Section 6.1 (digest; abstract also gives the open question). | [record](records/simonova-tichy-2025.md) | full text (tool digest); arXiv 2507.16484 (PDF) read via tool digest; proofs and the sufficiency conditions in detail NOT checked · P3 2026-11-03: arXiv v1 pdf.js text, pp. 13–20: confirmed; Theorem 4 assumes local bounds (9), (11), (12) that the paper credits to unpublished Carson–Chen work; (21), (35), (36) seen. |
+```
+
+### INDEX.md — LIT-254
+
+Old:
+
+```
+| LIT-254 (LIT?bivariate-lanczos-claude-411) | PR-prep consolidation 2026-11-01 / WebFetch digest / finite-precision Lanczos computed vectors span a Krylov space of an augmented matrix | Thm 3.1 and Cor. 3.2–3.4: the computed Lanczos vectors span a Krylov space of an augmented matrix built from A. The paper gives no distance from the computed vectors' span to the Krylov space of A itself (explicitly, as digested). Hypotheses: Hermitian A, finite-precision Lanczos without reorthogonalization. | paige-2010-augmented | Thm 3.1, Cor. 3.2–3.4 (as digested). | [record](records/paige-2010-augmented.md) | WebFetch digest of Thm 3.1, Cor. 3.2–3.4; UNVERIFIED |
+```
+
+New:
+
+```
+| LIT-254 (LIT?bivariate-lanczos-claude-411) | PR-prep consolidation 2026-11-01 / WebFetch digest / finite-precision Lanczos computed vectors span a Krylov space of an augmented matrix | Thm 3.1 and Cor. 3.2–3.4: the computed Lanczos vectors span a Krylov space of an augmented matrix built from A. The paper gives no distance from the computed vectors' span to the Krylov space of A itself (explicitly, as digested). Hypotheses: Hermitian A, finite-precision Lanczos without reorthogonalization. | paige-2010-augmented | Thm 3.1, Cor. 3.2–3.4 (as digested). | [record](records/paige-2010-augmented.md) | WebFetch digest of Thm 3.1, Cor. 3.2–3.4; UNVERIFIED · P3 2026-11-03: verified on the author PDF (Thm 3.1 pp. 2353–2354; Cors 3.2–3.4 pp. 2355–2357); the paper says the result cannot be turned into standard backward stability (p. 2348). |
+```
+
+### INDEX.md — LIT-272
+
+Old:
+
+```
+| LIT-272 (LIT?bivariate-lanczos-claude-429) | PR-prep consolidation 2026-11-01 / WebFetch digest / Greenbaum's model as stated in the survey: extended matrix B with eigenvalues near those of A, width with unquantified f_j | §4.3, Thm 4.9, p. 511 (as digested): the eigenvalues of the extended matrix B, of order n + m_k, lie within O((n + m_k)^3 max{eps‖A‖, f_k, ..., f_{n+m_k}}) of eigenvalues of A. The f_j are the smallest perturbations that make a recurrence coefficient eta_{j+1} vanish; their size is not quantified in the returned text. Block Lanczos is excluded (p. 476). Hypotheses: Single symmetric A, single start vector. | meurant-strakos-2006 | §4.3, Thm 4.9, p. 511; p. 476 (as digested, text partly garbled). | [record](records/meurant-strakos-2006.md) | WebFetch digest, text partly garbled; UNVERIFIED |
+```
+
+New:
+
+```
+| LIT-272 (LIT?bivariate-lanczos-claude-429) | PR-prep consolidation 2026-11-01 / WebFetch digest / Greenbaum's model as stated in the survey: extended matrix B with eigenvalues near those of A, width with unquantified f_j | §4.3, Thm 4.9, p. 511 (as digested): the eigenvalues of the extended matrix B, of order n + m_k, lie within O((n + m_k)^3 max{eps‖A‖, f_k, ..., f_{n+m_k}}) of eigenvalues of A. The f_j are the smallest perturbations that make a recurrence coefficient eta_{j+1} vanish; their size is not quantified in the returned text. Block Lanczos is excluded (p. 476). Hypotheses: Single symmetric A, single start vector. | meurant-strakos-2006 | §4.3, Thm 4.9, p. 511; p. 476 (as digested, text partly garbled). | [record](records/meurant-strakos-2006.md) | WebFetch digest, text partly garbled; UNVERIFIED · P3 2026-11-03: verified on the author PDF, pp. 510–512. |
+```
+
+### INDEX.md — LIT-280
+
+Old:
+
+```
+| LIT-280 (LIT?bivariate-lanczos-claude-437) | PR-prep consolidation 2026-11-01 / WebFetch digest / §2: the multivariate monomial-ordered basis is not a Krylov subspace; Alg. 2.1 orthogonalizes twice against all previous columns | §2 (as digested): the basis no longer corresponds to a Krylov subspace in the multivariate case. Alg. 2.1 builds each column by multiplying a previous column by one coordinate and orthogonalizes by classical Gram–Schmidt twice against all previous columns. Hypotheses: Multivariate Vandermonde-with-Arnoldi inside a rational-approximation iteration. | hokanson-2020 | §2; Alg. 2.1. | [record](records/hokanson-2020.md) | WebFetch digest; UNVERIFIED |
+```
+
+New:
+
+```
+| LIT-280 (LIT?bivariate-lanczos-claude-437) | PR-prep consolidation 2026-11-01 / WebFetch digest / §2: the multivariate monomial-ordered basis is not a Krylov subspace; Alg. 2.1 orthogonalizes twice against all previous columns | §2 (as digested): the basis no longer corresponds to a Krylov subspace in the multivariate case. Alg. 2.1 builds each column by multiplying a previous column by one coordinate and orthogonalizes by classical Gram–Schmidt twice against all previous columns. Hypotheses: Multivariate Vandermonde-with-Arnoldi inside a rational-approximation iteration. | hokanson-2020 | §2; Alg. 2.1. | [record](records/hokanson-2020.md) | WebFetch digest; UNVERIFIED · P3 2026-11-03: verified in arXiv v1, pp. 5–6. |
+```
+
+### INDEX.md — LIT-281
+
+Old:
+
+```
+| LIT-281 (LIT?bivariate-lanczos-claude-438) | PR-prep consolidation 2026-11-01 / WebFetch digest / §2.1 selection rule 'smallest k' for the parent column; no rounding-error claims | §2.1, Alg. 2.1 (as digested): the parent of the new column is chosen by the smallest-index rule, the smallest k such that I[k] + e_j = I[l+1]; the text and the algorithm differ (l versus l+1). The text remarks that many orderings do not satisfy this constraint, which concerns the exact-arithmetic span property. The paper makes no claim about rounding error, the accuracy of the recurrence matrices, or the span in floating point. The multivariate extension is credited to Austin et al. (see austin-et-al-2021). Hypotheses: Multi-index ordering I; exact conventions not extracted. | hokanson-2020 | §2.1, Alg. 2.1. | [record](records/hokanson-2020.md) | WebFetch digest; UNVERIFIED |
+```
+
+New:
+
+```
+| LIT-281 (LIT?bivariate-lanczos-claude-438) | PR-prep consolidation 2026-11-01 / WebFetch digest / §2.1 selection rule 'smallest k' for the parent column; no rounding-error claims | §2.1, Alg. 2.1 (as digested): the parent of the new column is chosen by the smallest-index rule, the smallest k such that I[k] + e_j = I[l+1]; the text and the algorithm differ (l versus l+1). The text remarks that many orderings do not satisfy this constraint, which concerns the exact-arithmetic span property. The paper makes no claim about rounding error, the accuracy of the recurrence matrices, or the span in floating point. The multivariate extension is credited to Austin et al. (see austin-et-al-2021). Hypotheses: Multi-index ordering I; exact conventions not extracted. | hokanson-2020 | §2.1, Alg. 2.1. | [record](records/hokanson-2020.md) | WebFetch digest; UNVERIFIED · P3 2026-11-03: verified in arXiv v1, p. 6 (ℓ vs ℓ+1 inconsistency confirmed; no rounding claims in §2, pp. 5–7). |
+```
+
+### INDEX.md — LIT-283
+
+Old:
+
+```
+| LIT-283 (LIT?bivariate-lanczos-claude-440) | PR-prep consolidation 2026-11-01 / WebFetch digest / §3: the multivariate monomial basis does not correspond to a Krylov subspace | §3 (as digested): unlike 1D Arnoldi, the multivariate monomial basis does not correspond to a Krylov subspace. Hypotheses: Multivariate V+A on irregular domains. | zhu-nakatsukasa-2026 | §3 (arXiv 2301.12241). | [record](records/zhu-nakatsukasa-2026.md) | WebFetch digest; UNVERIFIED |
+```
+
+New:
+
+```
+| LIT-283 (LIT?bivariate-lanczos-claude-440) | PR-prep consolidation 2026-11-01 / WebFetch digest / §3: the multivariate monomial basis does not correspond to a Krylov subspace | §3 (as digested): unlike 1D Arnoldi, the multivariate monomial basis does not correspond to a Krylov subspace. Hypotheses: Multivariate V+A on irregular domains. | zhu-nakatsukasa-2026 | §3 (arXiv 2301.12241). | [record](records/zhu-nakatsukasa-2026.md) | WebFetch digest; UNVERIFIED · P3 2026-11-03: verified in arXiv v2, §3 p. 7. |
+```
+
+### INDEX.md — LIT-284
+
+Old:
+
+```
+| LIT-284 (LIT?bivariate-lanczos-claude-441) | PR-prep consolidation 2026-11-01 / WebFetch digest / rounding content of multivariate V+A: CGS2 orthogonality bound feeding the fit bound; basis accuracy evidence is 1D | No backward-stability or forward-error theorem for multivariate V+A and no analysis of the computed Hessenberg matrices was found. §2 states in exact arithmetic that the discrete orthogonal basis spans the polynomial space (univariate wording). §2.1 and Remark 3 (§5.1) give the CGS2 loss-of-orthogonality bound eps_m = O(M N^{3/2} u) on ‖Q*Q - I‖, citing Higham Thm 19.4 and '[15, Thm 2]'; eps_m enters only the near-optimality (fit) bound. Thm 6 ('stable with high probability') is about sampling, not rounding. §5.2 says the discrete orthogonal polynomials generated by V+A are unaffected by the ill-conditioning of A; the only basis-versus-exact comparisons (phi_30 against scaled Legendre, §2.3.1, Fig. 2 and Fig. 10) are 1D, and the 2D evidence is fit error on tensor and elliptical domains. No triangles or rotated domains appear and commutativity is not discussed. Remark 3 is also reported (L1 review) to say that orthogonalization is subject to a loss of orthogonality due to numerical cancellation. Hypotheses: As digested. | zhu-nakatsukasa-2026 | §2, §2.1, §2.3.1 (Figs 2, 10), Remark 3 (§5.1), Thm 6, §5.2. | [record](records/zhu-nakatsukasa-2026.md) | WebFetch digest, Appendix B not seen; UNVERIFIED |
+```
+
+New:
+
+```
+| LIT-284 (LIT?bivariate-lanczos-claude-441) | PR-prep consolidation 2026-11-01 / WebFetch digest / rounding content of multivariate V+A: CGS2 orthogonality bound feeding the fit bound; basis accuracy evidence is 1D | No backward-stability or forward-error theorem for multivariate V+A and no analysis of the computed Hessenberg matrices was found. §2 states in exact arithmetic that the discrete orthogonal basis spans the polynomial space (univariate wording). §2.1 and Remark 3 (§5.1) give the CGS2 loss-of-orthogonality bound eps_m = O(M N^{3/2} u) on ‖Q*Q - I‖, citing Higham Thm 19.4 and '[15, Thm 2]'; eps_m enters only the near-optimality (fit) bound. Thm 6 ('stable with high probability') is about sampling, not rounding. §5.2 says the discrete orthogonal polynomials generated by V+A are unaffected by the ill-conditioning of A; the only basis-versus-exact comparisons (phi_30 against scaled Legendre, §2.3.1, Fig. 2 and Fig. 10) are 1D, and the 2D evidence is fit error on tensor and elliptical domains. No triangles or rotated domains appear and commutativity is not discussed. Remark 3 is also reported (L1 review) to say that orthogonalization is subject to a loss of orthogonality due to numerical cancellation. Hypotheses: As digested. | zhu-nakatsukasa-2026 | §2, §2.1, §2.3.1 (Figs 2, 10), Remark 3 (§5.1), Thm 6, §5.2. | [record](records/zhu-nakatsukasa-2026.md) | WebFetch digest, Appendix B not seen; UNVERIFIED · P3 2026-11-03 (arXiv v2): locators for v2: Remark 5.1(5) pp. 20–21 (not 'Remark 3'); probabilistic stability = Theorem 5.1 p. 21 (phrase also p. 2); 1D basis-vs-Legendre comparison = Fig. 13 p. 23 cited in §5.2 p. 22; Giraud et al. citation is [19]. v2 has no appendix (Algorithm 4 p. 8, Algorithm 5 p. 20); the remaining gap is the IMA version of record. Substance confirmed: no statement on the computed span or H in 2D. |
+```
+
+### INDEX.md — LIT-285
+
+Old:
+
+```
+| LIT-285 (LIT?bivariate-lanczos-claude-442) | PR-prep consolidation 2026-11-01 / WebFetch digest / §4: two-pass variant called an 'extremely stable alternative' (asserted); Lanczos caveat; univariate only | §4 (as digested): the two-pass variant is called an extremely stable alternative, asserted without proof; the Lanczos caveat of the Step 0 statement 034 is confirmed. Accuracy is measured end to end (the fit only). There is no multivariate section; §6 is complex 1D. Hypotheses: Univariate nodes. | brubeck-nakatsukasa-trefethen-2021 | §4; §6. | [record](records/brubeck-nakatsukasa-trefethen-2021.md) | WebFetch digest; UNVERIFIED |
+```
+
+New:
+
+```
+| LIT-285 (LIT?bivariate-lanczos-claude-442) | PR-prep consolidation 2026-11-01 / WebFetch digest / §4: two-pass variant called an 'extremely stable alternative' (asserted); Lanczos caveat; univariate only | §4 (as digested): the two-pass variant is called an extremely stable alternative, asserted without proof; the Lanczos caveat of the Step 0 statement 034 is confirmed. Accuracy is measured end to end (the fit only). There is no multivariate section; §6 is complex 1D. Hypotheses: Univariate nodes. | brubeck-nakatsukasa-trefethen-2021 | §4; §6. | [record](records/brubeck-nakatsukasa-trefethen-2021.md) | WebFetch digest; UNVERIFIED · P3 2026-11-03: verified in arXiv v1, p. 5; context: the 'extremely stable alternative' remark concerns computing d = Qᵀf/m after two orthogonalisation passes. |
+```
+
+### INDEX.md — LIT-289
+
+Old:
+
+```
+| LIT-289 (LIT?bivariate-lanczos-claude-446) | PR-prep consolidation 2026-11-01 / WebFetch digest / Thm 4.6: Greenbaum-type model with N = nk and ‖S - T-tilde‖ of order eps‖A‖ up to a polynomial factor in k | Thm 4.6 (as digested): there are symmetric N x N matrices S and T-tilde with N = nk, T-tilde tridiagonal with the computed T_k as its leading block, S = U-hat^T (I_k tensor A) U-hat, and ‖S - T-tilde‖ bounded by a polynomial-in-k factor times eps‖A‖. The paper contrasts this with Greenbaum's bound, which it says depends on the fourth root of the accuracy parameter ([Gre89, eq. (7.10)]). No block or multivariate content. Hypotheses: Symmetric A, single start vector; preprint of Aug 2026. | chen-2026 | §4, Thm 4.6; remark on [Gre89, eq. (7.10)]. | [record](records/chen-2026.md) | WebFetch digest of the PDF; UNVERIFIED |
+```
+
+New:
+
+```
+| LIT-289 (LIT?bivariate-lanczos-claude-446) | PR-prep consolidation 2026-11-01 / WebFetch digest / Thm 4.6: Greenbaum-type model with N = nk and ‖S - T-tilde‖ of order eps‖A‖ up to a polynomial factor in k | Thm 4.6 (as digested): there are symmetric N x N matrices S and T-tilde with N = nk, T-tilde tridiagonal with the computed T_k as its leading block, S = U-hat^T (I_k tensor A) U-hat, and ‖S - T-tilde‖ bounded by a polynomial-in-k factor times eps‖A‖. The paper contrasts this with Greenbaum's bound, which it says depends on the fourth root of the accuracy parameter ([Gre89, eq. (7.10)]). No block or multivariate content. Hypotheses: Symmetric A, single start vector; preprint of Aug 2026. | chen-2026 | §4, Thm 4.6; remark on [Gre89, eq. (7.10)]. | [record](records/chen-2026.md) | WebFetch digest of the PDF; UNVERIFIED · P3 2026-11-03: superseded numbering: in arXiv v2 (18 Oct 2026) the model is Theorem 5.7 (pp. 20–21): Ã = I_{k+1} ⊗ A + Δ of dimension n(k+1), ‖Δ‖ ≲_k ε‖A‖, exact reproduction of T_k; fourth-root remark located in v2 §5 pp. 14–15. |
+```
+
+### INDEX.md — LIT-290
+
+Old:
+
+```
+| LIT-290 (LIT?bivariate-lanczos-claude-447) | PR-prep consolidation 2026-11-01 / talk abstract / author's talk abstract: the old interval bound is not as small as one might hope; width of order eps‖A‖ argued | Greenbaum's own talk abstract (Prague, undated; seminar-nm.karlin.mff.cuni.cz, praguetalk1abs.pdf) confirms LAA 113 (1989) 7–63 and says the interval bound of the 1989 paper was not as small as one might hope, and sets out to argue that the widths are of order eps‖A‖. The L3 review lists the secondary accounts of the proven width as in conflict: sqrt(eps)‖A‖ (Šimonová–Tichý), the fourth root of the accuracy parameter (Chen, citing eq. (7.10)), and a max-form with unquantified f_j (Meurant–Strakoš). Hypotheses: Perturbed Lanczos/CG recurrences. | greenbaum-1989 | LAA 113 (1989) 7–63 (talk abstract); eq. (7.10) cited by Chen. | [record](records/greenbaum-1989.md) | talk abstract plus secondary reports; UNVERIFIED |
+```
+
+New:
+
+```
+| LIT-290 (LIT?bivariate-lanczos-claude-447) | PR-prep consolidation 2026-11-01 / talk abstract / author's talk abstract: the old interval bound is not as small as one might hope; width of order eps‖A‖ argued | Greenbaum's own talk abstract (Prague, undated; seminar-nm.karlin.mff.cuni.cz, praguetalk1abs.pdf) confirms LAA 113 (1989) 7–63 and says the interval bound of the 1989 paper was not as small as one might hope, and sets out to argue that the widths are of order eps‖A‖. The L3 review lists the secondary accounts of the proven width as in conflict: sqrt(eps)‖A‖ (Šimonová–Tichý), the fourth root of the accuracy parameter (Chen, citing eq. (7.10)), and a max-form with unquantified f_j (Meurant–Strakoš). Hypotheses: Perturbed Lanczos/CG recurrences. | greenbaum-1989 | LAA 113 (1989) 7–63 (talk abstract); eq. (7.10) cited by Chen. | [record](records/greenbaum-1989.md) | talk abstract plus secondary reports; UNVERIFIED · P3 2026-11-03: consistent with the paper's own conclusion (p. 61) that its theorems need excessively small ε. |
+```
+
+### INDEX.md — LIT-360
+
+Old:
+
+```
+| LIT-360 (LIT?programme-ideas-claude-41) | Coverage-qualified LITERATURE; fact | Hokanson (arXiv 2009.10803): multivariate Vandermonde with Arnoldi builds each column by multiplying the smallest earlier index with I[k] + e_j = I[l] and orthogonalises with two-pass classical Gram–Schmidt against all previous columns (O(MN²)); notes that many orderings fail the span property. No truncation by degree blocks. | hokanson-2020 | Alg. 2.1 (as reported) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | UNVERIFIED (input: reports/Padua points research since 2010.md, "Vandermonde with Arnoldi reinvented the recurrence densely"); secondary; new source statement; overlaps LIT-098, LIT-280, LIT-281 (PR #10); flag in integration-map-pr10 |
+```
+
+New:
+
+```
+| LIT-360 (LIT?programme-ideas-claude-41) | Coverage-qualified LITERATURE; fact — verified (P3 2026-11-03) | Hokanson (arXiv 2009.10803): multivariate Vandermonde with Arnoldi builds each column by multiplying the smallest earlier index with I[k] + e_j = I[l] and orthogonalises with two-pass classical Gram–Schmidt against all previous columns (O(MN²)); notes that many orderings fail the span property. No truncation by degree blocks. | hokanson-2020 | Alg. 2.1 p. 6; §2 pp. 5–6 (arXiv v1) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | UNVERIFIED (input: reports/Padua points research since 2010.md, "Vandermonde with Arnoldi reinvented the recurrence densely"); secondary; new source statement; overlaps LIT-098, LIT-280, LIT-281 (PR #10); flag in integration-map-pr10 · P3 2026-11-03: verified in arXiv v1 (pp. 5–6); the paper credits the multivariate extension to Austin et al. [2, Subsec. 3.2] (arXiv 1912.02272). |
+```
+
+### INDEX.md — LIT-361
+
+Old:
+
+```
+| LIT-361 (LIT?programme-ideas-claude-42) | Coverage-qualified LITERATURE; fact / open problem | Zhu–Nakatsukasa (IMA JNA 46(4), 2026, doi 10.1093/imanum/draf055; arXiv 2301.12241): near-optimality bound for multivariate V+A least squares on irregular domains; O(N²) equispaced or O(N² log N) random samples, O(N log N) for the weighted variant; they state the orthogonalisation is subject to loss of orthogonality by cancellation and that optimal sampling in high-dimensional irregular domains is open. | zhu-nakatsukasa-2026 | abstract and main theorem (as reported) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | UNVERIFIED beyond abstract (input: round-1 report; branch record records_lanczos/zhu-nakatsukasa-2026.md, -024/-025, abstract-level; journal data corrected in reports/Open problems verification.md §4); metadata+abstract (branch); new source statement; overlaps LIT-089, LIT-090, LIT-284 (PR #10); flag in integration-map-pr10 |
+```
+
+New:
+
+```
+| LIT-361 (LIT?programme-ideas-claude-42) | Coverage-qualified LITERATURE; fact / open problem — verified against arXiv v2 (P3 2026-11-03) | Zhu–Nakatsukasa (IMA JNA 46(4), 2026, doi 10.1093/imanum/draf055; arXiv 2301.12241): near-optimality bound for multivariate V+A least squares on irregular domains; O(N²) equispaced or O(N² log N) random samples, O(N log N) for the weighted variant; they state the orthogonalisation is subject to loss of orthogonality by cancellation and that optimal sampling in high-dimensional irregular domains is open. | zhu-nakatsukasa-2026 | abstract; Thm 4.3 p. 14; Thm 4.4 p. 15; Rem. 5.1(5) p. 20; Thm 5.1 p. 21; open problem pp. 2, 23 (arXiv v2) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | UNVERIFIED beyond abstract (input: round-1 report; branch record records_lanczos/zhu-nakatsukasa-2026.md, -024/-025, abstract-level; journal data corrected in reports/Open problems verification.md §4); metadata+abstract (branch); new source statement; overlaps LIT-089, LIT-090, LIT-284 (PR #10); flag in integration-map-pr10 · P3 2026-11-03: verified against arXiv v2; IMA version of record not read. |
+```
+
+### INDEX.md — LIT-362
+
+Old:
+
+```
+| LIT-362 (LIT?programme-ideas-claude-43) | Coverage-qualified LITERATURE; open problem | Liu–Narayan (SISC 2023, doi 10.1137/22M1477131): multivariate Stieltjes computes Xu's block recurrence matrices from moments under an SVD canonical form (ΣB_{n,i}ᵀB_{n,i} diagonal); explicit in d = 2, a weighted orthogonal Procrustes problem in d = 3, and a non-convex optimisation for d > 3, whose investigation is said to be a natural extension; "far more stable" than moment/Gram–Schmidt methods; no complexity analysis; neither HL nor the seed cited. | liu-narayan-2023 | §5.2.1 and conclusions (as reported) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | UNVERIFIED (input: reports/Padua points research since 2010.md Problem 4; round 2 §2 row 4 finds the non-convexity avoidable by one eigendecomposition — MEASURED in RESULTS.md); secondary; new source statement; overlaps LIT-096, LIT-279 (PR #10); flag in integration-map-pr10 |
+```
+
+New:
+
+```
+| LIT-362 (LIT?programme-ideas-claude-43) | Coverage-qualified LITERATURE; open problem | Liu–Narayan (SISC 2023, doi 10.1137/22M1477131): multivariate Stieltjes computes the block recurrence matrices from moments under a canonical form (Σ_i B_{n,i}ᵀB_{n,i} diagonal); explicit in d = 2; in d = 3 the remaining step is a weighted orthogonal Procrustes instance that the paper solves directly; for d > 3 a non-convex generalised Procrustes problem whose investigation is called a natural extension; 'far more stable' than direct Gram–Schmidt (empirical); no complexity analysis seen in the pages read; neither HL nor the seed cited. [Corrected P3 2026-11-03: d = 3 is solved directly, not left as an open WOPP.] | liu-narayan-2023 | abstract; §5.2.4–5.2.7 pp. 11–13; §7 p. 21 (arXiv v2) | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | UNVERIFIED (input: reports/Padua points research since 2010.md Problem 4; round 2 §2 row 4 finds the non-convexity avoidable by one eigendecomposition — MEASURED in RESULTS.md); secondary; new source statement; overlaps LIT-096, LIT-279 (PR #10); flag in integration-map-pr10 · P3 2026-11-03: verified against arXiv v2 for the items stated; commuting conditions in the paper are credited to zu Castell–Filbir–Forster. |
+```
+
+### INDEX.md — LIT-364
+
+Old:
+
+```
+| LIT-364 (LIT?programme-ideas-claude-46) | Coverage-qualified LITERATURE; fact | Finite-precision Lanczos theory for comparison: Paige 1976/1980 (single Hermitian operator), Simon 1984 (partial reorthogonalisation, semi-orthogonality), Greenbaum 1989 (nearby larger matrix), Jia–Li 2021 (joint bidiagonalisation with partial reorthogonalisation), Šimonová–Tichý BIT 2025 (block Lanczos), T. Chen 2026 (simplified Paige/Greenbaum), Sinha 2026 (block Paige identities, variable blocks), Amsel et al. 2026 (Simons list, Problem 2.19 on Paige's analysis for block Lanczos). All treat one operator (with block starts); none treats one start and two commuting operators. | paige-1976; paige-1980-lanczos; simon-1984-mathcomp; greenbaum-1989; jia-li-2021; simonova-tichy-2025; chen-2026; sinha-2026; amsel-et-al-2026 | as in the branch records | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | UNVERIFIED (input: reports/Round 3 … F1; research_notes/Recent open problems 2023 2026/adv_F1_F6_F3.md §1; branch records listed in §4, all non-fulltext); metadata/abstract or secondary; new source statement; overlaps LIT-068, LIT-207, LIT-069, LIT-210, LIT-073, LIT-074, LIT-215, LIT-071, LIT-211, LIT-212, LIT-077, LIT-287, LIT-288, LIT-081, LIT-082, LIT-233, LIT-234, LIT-083, LIT-084, LIT-085, LIT-289, LIT-086, LIT-236 (PR #10); flag in integration-map-pr10 |
+```
+
+New:
+
+```
+| LIT-364 (LIT?programme-ideas-claude-46) | Coverage-qualified LITERATURE; fact | Finite-precision Lanczos theory for comparison: Paige 1976/1980 (single Hermitian operator), Simon 1984 (partial reorthogonalisation, semi-orthogonality), Greenbaum 1989 (nearby larger matrix), Jia–Li 2021 (joint bidiagonalisation with partial reorthogonalisation), Šimonová–Tichý BIT 2025 (block Lanczos), T. Chen 2026 (simplified Paige/Greenbaum), Sinha 2026 (block Paige identities, variable blocks), Amsel et al. 2026 (Simons list, Problem 2.19 on Paige's analysis for block Lanczos). All treat one operator (with block starts); none treats one start and two commuting operators. | paige-1976; paige-1980-lanczos; simon-1984-mathcomp; greenbaum-1989; jia-li-2021; simonova-tichy-2025; chen-2026; sinha-2026; amsel-et-al-2026 | as in the branch records | [baseline](../topics/programme-ideas-20261031/lit/baseline.md) | UNVERIFIED (input: reports/Round 3 … F1; research_notes/Recent open problems 2023 2026/adv_F1_F6_F3.md §1; branch records listed in §4, all non-fulltext); metadata/abstract or secondary; new source statement; overlaps LIT-068, LIT-207, LIT-069, LIT-210, LIT-073, LIT-074, LIT-215, LIT-071, LIT-211, LIT-212, LIT-077, LIT-287, LIT-288, LIT-081, LIT-082, LIT-233, LIT-234, LIT-083, LIT-084, LIT-085, LIT-289, LIT-086, LIT-236 (PR #10); flag in integration-map-pr10 · P3 2026-11-03: the Šimonová–Tichý, Sinha, Chen (v2), Paige 1980, Paige 2010, Greenbaum and Meurant–Strakoš readings now have page-level coverage (see p3 addenda); all treat one symmetric/Hermitian operator with a single or block start; the 'none treats one start and two commuting operators' statement is confirmed within those pages (bounded reading). |
+```
+
+## 3. literature/INDEX.md — new rows
+
+Insert a new section after the last table (before "### Reused-source coverage addenda (2026-11-01)"), or wherever the orchestrator places the campaign's rows. Final IDs replace the provisional ones.
+
+```
+### padua-literature-20261103 — P3 primary readings
+
+| LIT ID | Claim type / keywords | Published statement and hypotheses | Source key | Page / theorem | Record | Reading coverage |
+|---|---|---|---|---|---|---|
+| LIT?padua-literature-claude-40 | LITERATURE / primary reading / Favard-type (Kowalski) | Theorem K: a sequence of polynomial vectors is an orthogonal basis for some quasi-inner product iff a stacked three-term relation with rank A_k = r_{k+1} holds and a stated recursion yields nonsingular symmetric matrices. Quasi-inner products (no positivity); full sequences. | xu-sima-1993 | p. 785, Theorem K | [record](records/xu-sima-1993.md) | AC copy, pp. 783–790; displays garbled in text layer |
+| LIT?padua-literature-claude-41 | LITERATURE / primary reading / coordinate three-term relation | Theorem 1: x_iP_k = A_{k,i}P_{k+1} + B_{k,i}P_k + C_{k,i}P_{k−1} with moment identities and A_{k,i}H_{k+1} = H_kC_{k+1,i}ᵀ; Kowalski-type recursion with non-unique D_{k,i}; Corollary 1: stacked A_k, C_{k+1} have rank r_{k+1}, each A_{k,i}, C_{k+1,i} rank r_k. | xu-sima-1993 | pp. 785–787, Thm 1, Cor. 1, (3.2)–(3.11) | [record](records/xu-sima-1993.md) | AC copy |
+| LIT?padua-literature-claude-42 | LITERATURE / primary reading / Favard theorem (quasi-inner) | Theorem 2: a sequence {P_k} is an orthogonal basis for some quasi-inner product iff coordinate-wise three-term relations hold with rank A_k = rank C_{k+1} = r_{k+1}. No positivity, full sequences; no commuting conditions stated. | xu-sima-1993 | pp. 787–788, Thm 2 | [record](records/xu-sima-1993.md) | AC copy |
+| LIT?padua-literature-claude-43 | LITERATURE / primary reading / Christoffel–Darboux, kernel | Theorem 3 (multivariate Christoffel–Darboux) and Theorem 4 (kernel depends only on the spaces V_k). | xu-sima-1993 | pp. 788–790 | [record](records/xu-sima-1993.md) | statements only |
+| LIT?padua-literature-claude-44 | LITERATURE / primary reading / block Greenbaum model, conditional | Theorem 1: perturbed block Lanczos extension T_N with perturbations ≤ ε₂‖A‖ and a Ritz-vector condition (ε₁) has every eigenvalue within 3max(√Nε₂, ε₁)‖A‖ of A's. One symmetric A, block start. | simonova-tichy-2025 | arXiv v1 p. 13, Thm 1, (14)–(16) | [record](records/simonova-tichy-2025.md) | arXiv v1 PDF pp. 1–5, 10–20, 23–26 |
+| LIT?padua-literature-claude-45 | LITERATURE / primary reading / continuation; open step | Continuation process (19); Theorems 2–4 (orthonormality, perturbed three-term form, perturbation formulas with ρ_k = ‖R_k^{−1}‖); sufficient conditions (35)–(36); bounding the second term of (35) open in the block case; local bounds (9), (11), (12) credited to unpublished Carson–Chen. | simonova-tichy-2025 | pp. 14–20 | [record](records/simonova-tichy-2025.md) | as above |
+| LIT?padua-literature-claude-46 | LITERATURE / primary reading / experiments; open questions | Block CG matches ε‖A‖-interval model systems; continuation experiments: conditions met to ~1e-5, spreads typically O(√ε)‖A‖; key open question: choice of W_k; block analogues of Paige's results needed. | simonova-tichy-2025 | pp. 10, 23–25 | [record](records/simonova-tichy-2025.md) | as above |
+| LIT?padua-literature-claude-47 | LITERATURE / location check | Author statements on difficulty located: §1 p. 3, §4 p. 10, §5 p. 13. | simonova-tichy-2025 | pp. 3, 10, 13 | [record](records/simonova-tichy-2025.md) | as above |
+| LIT?padua-literature-claude-48 | LITERATURE / primary reading / multivariate V+A algorithm | Algorithm 3: smallest-k parent rule with grevlex, CGS twice against all previous columns, cost O(MN²); monomial basis not Krylov (§3). | zhu-nakatsukasa-2026 | arXiv v2 pp. 7–8, 21 | [record](records/zhu-nakatsukasa-2026.md) | arXiv v2 PDF pp. 1–8, 10–11, 13–15, 18–25 |
+| LIT?padua-literature-claude-49 | LITERATURE / primary reading / rounding content | Remark 5.1(5): loss of orthogonality by cancellation; CGS2 gives ε_m ∼ O(MN^{3/2})u; ε_m enters Theorem 5.1 (reduced Gram matrix, in probability). No statement on the computed span or H. | zhu-nakatsukasa-2026 | pp. 20–22 | [record](records/zhu-nakatsukasa-2026.md) | as above |
+| LIT?padua-literature-claude-50 | LITERATURE / primary reading / near-optimality; open problem | Theorem 4.4: ‖f − L(f)‖ ≤ (1 + O(N))‖f − p*‖ with M = O(N²) equispaced points (exact arithmetic); Theorem 4.3 random sampling; §5.2 'unaffected by ill-conditioning' with 1D evidence (Fig. 13); optimal sampling in high-dimensional irregular domains stated open. | zhu-nakatsukasa-2026 | pp. 2, 14–15, 22–25 | [record](records/zhu-nakatsukasa-2026.md) | as above |
+| LIT?padua-literature-claude-51 | LITERATURE / primary reading / Alg. 2.1 | Multivariate V+A credited to Austin et al.; smallest-k parent rule; many orderings fail the span property; grevlex (total) and lex (max) work; CGS with two refinement steps against all previous columns; weight start vector; complex points allowed. | hokanson-2020 | arXiv v1 pp. 4–7 | [record](records/hokanson-2020.md) | arXiv v1 PDF pp. 1–7, 11–12 |
+| LIT?padua-literature-claude-52 | LITERATURE / bibliographic | Reference [2] = Austin et al., Multivariate rational approximation, 2019, arXiv:1912.02272v1. | hokanson-2020 | p. 11 | [record](records/hokanson-2020.md) | as above |
+| LIT?padua-literature-claude-53 | LITERATURE / primary reading / 1D stability remarks | V+A keeps H only; for real nodes Arnoldi = Lanczos with a stated risk of reduced accuracy from loss of orthogonality; two-pass orthogonalisation makes d = Qᵀf/m an 'extremely stable alternative' (asserted). Univariate. | brubeck-nakatsukasa-trefethen-2021 | arXiv v1 §4 pp. 3–5; §7 pp. 8–9 | [record](records/brubeck-nakatsukasa-trefethen-2021.md) | arXiv v1 PDF pp. 1, 3–5, 8–9 |
+| LIT?padua-literature-claude-54 | LITERATURE / primary reading / commuting conditions, Favard (cited) | Theorem 2.1: commuting conditions (6a)–(6c) (credited to zu Castell–Filbir–Forster); Theorem 3.2 (credited to Dunkl–Xu Thm 3.5.1): generated sequence orthonormal for a positive-definite functional iff symmetric A, rank and commuting conditions; finite n used. | liu-narayan-2023 | arXiv v2 pp. 4, 6 | [record](records/liu-narayan-2023.md) | arXiv v2 PDF pp. 1–2, 4–6, 9–13, 19, 21–22 |
+| LIT?padua-literature-claude-55 | LITERATURE / primary reading / canonical form | Definition 3.1, Theorem 3.1 (stacked consistent recurrence, Λ_{n+1} ≻ 0), §3.2 (one eigendecomposition per degree). | liu-narayan-2023 | pp. 5–6 | [record](records/liu-narayan-2023.md) | as above |
+| LIT?padua-literature-claude-56 | LITERATURE / primary reading / MS algorithm; empirical stability | MS steps (25)–(28); d = 2 needs no commuting conditions; d > 2 non-convex generalised WOPP (35); d = 3 solved directly; stability claims empirical (§6.3). | liu-narayan-2023 | pp. 9–13, 19, 21 | [record](records/liu-narayan-2023.md) | as above |
+| LIT?padua-literature-claude-57 | LITERATURE / primary reading / setting; Paige theorem as used | Perturbed recurrence (3) with ‖f^j‖ ≤ ε‖A‖; Paige's theorem as quoted: β_{N+m} = 0 with perturbations ≤ ξ‖A‖ gives eigenvalues within σ(N+m)³ξ‖A‖. | greenbaum-1989 | pp. 13–14, 22 | [record](records/greenbaum-1989.md) | AC copy, pp. 13–14, 20–24, 30, 43–44, 50–51, 60–62 |
+| LIT?padua-literature-claude-58 | LITERATURE / primary reading / main theorems | Theorem 1 (p. 23): T_J = exact Lanczos output for a matrix with eigenvalues within σ(N+m)³max{ε‖A‖, ‖f^J‖, …}; Theorem 1′ (p. 51): widths σ(N+m)³O(J²γ√ε‖A‖) under (7.9) and separation, else σ(N+m)³O(c_max^{3/2}Jε^{1/4}‖A‖) with (7.10). | greenbaum-1989 | pp. 21–23, 43–44, 50–51 | [record](records/greenbaum-1989.md) | as above |
+| LIT?padua-literature-claude-59 | LITERATURE / primary reading / caveat | The theorems need excessively small ε; observed to hold for larger ε; precise bound unknown (conclusions). | greenbaum-1989 | pp. 60–61 | [record](records/greenbaum-1989.md) | as above |
+| LIT?padua-literature-claude-60 | LITERATURE / primary reading / rounding relations | (2.10)–(2.21): computed relation, local orthogonality, assumptions (2.16), ‖δR_k‖_F ≤ kσε₂; (3.13): z_iᵀv_{k+1} = −ε_ii/(β_{k+1}η_{ki}). | paige-1980-lanczos | pp. 238–239, 241 | [record](records/paige-1980-lanczos.md) | AC copy, pp. 237–239, 241, 245–246, 248, 250 |
+| LIT?padua-literature-claude-61 | LITERATURE / primary reading / accuracy theorems | Lemma 3.1; Theorem 3.1 ((k+1)³σε₂ for stabilized values); Corollary 3.1 (5t²σε₂); Theorem 4.1. | paige-1980-lanczos | pp. 245–246, 248, 250 | [record](records/paige-1980-lanczos.md) | as above |
+| LIT?padua-literature-claude-62 | LITERATURE / primary reading / augmented stability | Theorem 3.1, Corollaries 3.2–3.4: computed T_{k+1,k} and vectors are exact Lanczos for diag(T_k, A) + H^{(k)}, ‖H^{(k)}‖ ≤ 4(‖E_k‖ + ‖F_k‖); not standard backward stability. | paige-2010-augmented | pp. 2348, 2353–2357 | [record](records/paige-2010-augmented.md) | author PDF pp. 2347–2358 |
+| LIT?padua-literature-claude-63 | LITERATURE / primary reading (survey) | Theorems 4.4–4.5 (Paige) and 4.9 (Greenbaum) as stated in the survey; rigorous a-priori blurred model incomplete. | meurant-strakos-2006 | pp. 505–506, 510–512 | [record](records/meurant-strakos-2006.md) | author PDF, those pages |
+| LIT?padua-literature-claude-64 | LITERATURE / primary reading / block backward model | Theorem 6: (I_k ⊗ A + Δ)V̂ = V̂T + ŴHE_kᵀ with ‖Δ‖ ≤ 2(2√k e + 4√k(√k + k − 1)μ); one symmetric A; block sizes from deflation. | sinha-2026 | arXiv v1 pp. 37–39 | [record](records/sinha-2026.md) | statements only: PDF pp. 1, 27, 37–39, 42, 45, 49 |
+| LIT?padua-literature-claude-65 | LITERATURE / primary reading / block Paige identities | Theorem 7: g_iᵀw_i = −s_iᵀMs_i, |g_iᵀw_i| ≤ μ, pairwise relation (120)–(121); Theorem 8: extra Ritz values from overlap. | sinha-2026 | pp. 42, 45 | [record](records/sinha-2026.md) | as above |
+| LIT?padua-literature-claude-66 | LITERATURE / primary reading / Greenbaum-type model, O(ε) | Theorem 5.7 (v2): Ã = I_{k+1} ⊗ A + Δ, ‖Δ‖ ≲_k ε‖A‖, exact reproduction of T_k from (v̄₁, 0, …); Remark 5.8 (eigenvalues within ‖Δ‖; Wasserstein-close spectral measures); Theorem 5.11 (containment). | chen-2026 | arXiv v2 pp. 14–16, 20–22 | [record](records/chen-2026.md) | statements only: v2 PDF pp. 1, 10–11, 14–16, 20–22 |
+| LIT?padua-literature-claude-67 | LITERATURE / primary reading / Paige bound | Theorem 4.1 (v2): |xᵀv_{k+1}|·β_k|e_kᵀy| ≲_k ε‖A‖ for every Ritz pair. | chen-2026 | p. 14 | [record](records/chen-2026.md) | as above |
+```
+
+## 4. literature/CORPUS.md
+
+### 4a. New row (insert in the Lanczos block, after `chen-2026`)
+
+```
+| xu-sima-1993 | Y. Xu, On multivariate orthogonal polynomials, SIAM J. Math. Anal. 24(3) (1993) 783–794 | [doi:10.1137/0524048](https://doi.org/10.1137/0524048) (Crossref-checked 2026-11-03, p3-links item 8c); AC copy `~/Downloads/padua/papers/0524048.pdf` | have (AC local copy) | exact pages 783–790 (P3 2026-11-03) | [record](records/xu-sima-1993.md) | pp. 790–794; display transcription |
+```
+
+### 4b. Coverage-cell appends for existing rows
+
+Append to the *Reading coverage* cell, with a leading " · ", the text shown. The old cell text stays in place. Use the coverage lines given in each addendum:
+
+- `greenbaum-1989`: "P3 2026-11-03: AC copy `1-s2.0-0024379589902851-main.pdf` read, pp. 13–14, 20–24, 30, 43–44, 50–51, 60–62 (Theorems 1, 1′)". Also change *Availability* to append "· have (AC local copy, 2026-11-03)".
+- `paige-1980-lanczos`: "P3 2026-11-03: AC copy `1-s2.0-0024379580901676-main.pdf` read, pp. 237–239, 241, 245–246, 248, 250". *Availability* append "· have (AC local copy)". *Gaps*: replace "Whole source; pending-reference. Online pass: Whole source (scan)." with "Theorems 4.2–4.3 (pp. 252–253) and pp. 242–244 unread (P3 2026-11-03)."
+- `simonova-tichy-2025`: "P3 2026-11-03: arXiv v1 PDF (pdf.js) pp. 1–5, 10–20, 23–26".
+- `zhu-nakatsukasa-2026`: "P3 2026-11-03: arXiv v2 PDF (pdf.js) pp. 1–8, 10–11, 13–15, 18–25; v2 has no appendix (Alg. 4 p. 8, Alg. 5 p. 20); IMA version not read".
+- `hokanson-2020`: "P3 2026-11-03: arXiv v1 PDF pp. 1–7, 11–12". *Availability*: replace "supplied account; fulltext pending" with "open (arXiv)".
+- `brubeck-nakatsukasa-trefethen-2021`: "P3 2026-11-03: arXiv v1 PDF pp. 1, 3–5, 8–9".
+- `liu-narayan-2023`: "P3 2026-11-03: arXiv v2 PDF pp. 1–2, 4–6, 9–13, 19, 21–22".
+- `paige-2010-augmented`: "P3 2026-11-03: author PDF pp. 2347–2358 (statements)".
+- `meurant-strakos-2006`: "P3 2026-11-03: author PDF pp. 505–506, 510–512".
+- `sinha-2026`: "P3 2026-11-03: arXiv v1 PDF pp. 1, 27, 37–39, 42, 45, 49 (statements)".
+- `chen-2026`: "P3 2026-11-03: arXiv v2 (18 Oct 2026) PDF pp. 1, 10–11, 14–16, 20–22 (statements); v1 numbering superseded". In *Citation*, append "(v2 18 Oct 2026)".
+
+(The CORPUS rows are long, so I give appends rather than full-row literals. The orchestrator should apply them with the same " · " convention the file already uses.)
+
+## 5. Shared notes for the report
+
+- The LIT-213 conflict about interval widths is resolved on the original: both widths are branches of Greenbaum's Theorem 1′ (p. 51).
+- The LIT-090 / F9 conflict about the ZN sentence is resolved: the sentence is in v2, Remark 5.1(5), p. 20.
+- Liu–Narayan credit the commuting conditions to zu Castell–Filbir–Forster and the Favard converse to Dunkl–Xu Thm 3.5.1. Any note citing "Xu's commuting conditions" should cite Xu TAMS 343 Cor. 2.3, which still needs a page-level reading because AMS was blocked.

@@ -1,6 +1,6 @@
 # Download list — padua-literature-20261103
 
-Version 2, 2026-11-03 (Claude, claude-opus-5-5). Packs P1 (Padua Lebesgue function) and P2 (MZ) are complete; P3/P4 are listed in Part C.
+Version 3, 2026-11-03 (Claude, claude-opus-5-5). Packs P1 (Padua Lebesgue function) and P2 (MZ) are complete; P3/P4 are listed in Part C.
 
 **v2 (14:00):** AC supplied A1, A2, A3, A5, A6, A7, A8 and C1, C2, C3; they are marked "have" below. Two other files are also present now: `2605.23299v1.pdf` (a browser download) and `10.33205-cma.1070020-2240064.pdf` (De Marchi 2022).
 
@@ -40,6 +40,17 @@ Local status was checked against `Downloads\padua\papers` (24 files; see [invent
 | A14 | L. Bos, M. Caliari, S. De Marchi, M. Vianello, Y. Xu, Bivariate Lagrange interpolation at the Padua points: the generating curve approach, J. Approx. Theory 143 (2006) 15–25 | [10.1016/j.jat.2006.03.008](https://doi.org/10.1016/j.jat.2006.03.008) | [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0021904506000505) | [author PDF](https://profs.scienze.univr.it/caliari/pdf/BCDMVX06.pdf) | P1 background (O(log² n)) | journal pagination | need (low) |
 | A15 | E. Feldheim, Sur l'orthogonalité des fonctions fondamentales de l'interpolation de Lagrange, C. R. Acad. Sci. Paris 203 (1936) 650–652 | no DOI | [zbMATH 0015.06302](https://zbmath.org/3023405) | Gallica volume not located automatically. The expanded version, [Bull. SMF 65 (1937) 1–40 on Numdam](http://www.numdam.org/item?id=BSMF_1937__65__1_0), is free. | P2: node convention (low) | pp. 650–652 | need (low) |
 
+## Part A2 — v3 additions (found blocked during reading; please download)
+
+| Pri | Citation | DOI | Journal page | Free version | Bears on | Needed | Local |
+|---|---|---|---|---|---|---|---|
+| A16 | Y. Xu, Multivariate orthogonal polynomials and operator theory, Trans. Amer. Math. Soc. 343(1) (1994) 193–202 | [10.1090/S0002-9947-1994-1169912-X](https://doi.org/10.1090/S0002-9947-1994-1169912-X) | [AMS](https://www.ams.org/journals/tran/1994-343-01/S0002-9947-1994-1169912-X/) | none (the AMS PDF loaded earlier for the link checker, but ams.org now shows a bot check to Claude) | P3: block-Jacobi and commuting-operator theory (PD-T057) | §§2–3 | need |
+| A17 | Y. Xu, Block Jacobi matrices and zeros of multivariate orthogonal polynomials, Trans. Amer. Math. Soc. 342(2) (1994) 855–866 | [10.1090/S0002-9947-1994-1258289-7](https://doi.org/10.1090/S0002-9947-1994-1258289-7) | [AMS PDF](https://www.ams.org/tran/1994-342-02/S0002-9947-1994-1258289-7/S0002-9947-1994-1258289-7.pdf) | as above | P3 (PD-T057) | Thm 3.2 | need |
+| A18 | C. F. Dunkl, Y. Xu, Orthogonal Polynomials of Several Variables, 2nd ed., Cambridge Univ. Press, 2014 | [10.1017/CBO9781107786134](https://doi.org/10.1017/CBO9781107786134) | via the DOI (Cambridge Core) | none | P3: the Favard-type converse that Liu–Narayan credit (Thm 3.5.1) | §3.5 (a few pages; NTNU may have the e-book) | need |
+| A19 | H. König, N. J. Nielsen, Forum Math. 6 (1994) 183–207, journal version | [10.1515/form.1994.6.183](https://doi.org/10.1515/form.1994.6.183) | [De Gruyter](https://www.degruyter.com/document/doi/10.1515/form.1994.6.183/html) | [arXiv math/9208201](https://arxiv.org/abs/math/9208201) (read) | P2: PD-T017/018. De Gruyter showed "Unlicensed" for this article, despite NTNU sign-in. | Thm 1, eqs (18)–(19) | need (low: arXiv agrees on p. 183) |
+
+New leads Claude can read itself, no action: W. Erb, Appl. Math. Comput. 289 (2016) 409–425 ([10.1016/j.amc.2016.05.019](https://doi.org/10.1016/j.amc.2016.05.019); free at [arXiv 1503.00895](https://arxiv.org/abs/1503.00895)), the source of the MZ lemma in KLP 2018; and De Marchi–Kroó, Acta Math. Hungar. 154 (2018) 69–89 (read by the P2 reader).
+
 ## Part B — P1/P2 items Claude reads online (no action)
 
 | Citation | DOI / page | Free version | Status |
@@ -77,7 +88,7 @@ Already local, so not requested: Barrio–Peña–Sauer JAT 162 (2010) (`1-s2.0-
 | — | Brubeck–Nakatsukasa–Trefethen, Vandermonde with Arnoldi, SIAM Rev. 63(2) (2021) 405–415 | [10.1137/19M130100X](https://doi.org/10.1137/19M130100X) | [arXiv 1911.09988](https://arxiv.org/abs/1911.09988) | P3 | Claude |
 | — | Hokanson, Multivariate rational approximation using a stabilized Sanathanan–Koerner iteration, arXiv 2009.10803 (V+A in §2); polyrat code [GitHub](https://github.com/jeffrey-hokanson/polyrat) | arXiv only | [arXiv](https://arxiv.org/abs/2009.10803) | P3 (LIT-360) | Claude |
 | — | Liu–Narayan, A Stieltjes algorithm for generating multivariate orthogonal polynomials, SIAM J. Sci. Comput. 45(3) (2023) A1125–A1147 | [10.1137/22M1477131](https://doi.org/10.1137/22M1477131) | [arXiv 2202.04843](https://arxiv.org/abs/2202.04843) | P3 | Claude |
-| — | Xu, Multivariate orthogonal polynomials and operator theory, Trans. AMS 343 (1994) 193–202; Xu, Block Jacobi matrices and zeros of multivariate orthogonal polynomials, Trans. AMS 342 (1994) 855–866 | [10.1090/S0002-9947-1994-1169912-X](https://doi.org/10.1090/S0002-9947-1994-1169912-X); [10.1090/S0002-9947-1994-1258289-7](https://doi.org/10.1090/S0002-9947-1994-1258289-7) | AMS PDFs load | P3 | Claude |
+| — | Xu, Trans. AMS 343 (1994) and 342 (1994) | see A16, A17 | — | P3 | **moved to Part A2** (bot check) |
 | — | Paige, SIMAX 31 (2010) 2347–2359; Paige, SIMAX 40 (2019) 1371–1398 | [10.1137/090761343](https://doi.org/10.1137/090761343); [10.1137/17M1133725](https://doi.org/10.1137/17M1133725) | [Pai10.pdf](https://www.cs.mcgill.ca/~chris/pub/Pai10.pdf); [Pai19.pdf](https://www.cs.mcgill.ca/~chris/pub/Pai19.pdf) | P3 | Claude |
 | — | Meurant–Strakoš, Acta Numerica 15 (2006) 471–542 | [10.1017/S096249290626001X](https://doi.org/10.1017/S096249290626001X) | [author PDF](https://www.karlin.mff.cuni.cz/~strakos/download/2006_MeSt.pdf) | P3 | Claude |
 | — | Šimonová–Tichý, On finite precision block Lanczos computations, BIT 65(4) (2025) 47 | [10.1007/s10543-025-01089-2](https://doi.org/10.1007/s10543-025-01089-2) | [arXiv 2507.16484](https://arxiv.org/abs/2507.16484) | P3 (closest block result) | Claude |

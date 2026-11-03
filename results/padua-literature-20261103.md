@@ -2,7 +2,7 @@
 
 This file is written only by the topic orchestrator. Branch `claude/padua-literature-20261103`; [draft PR #21](https://github.com/aacchhee/padua_research/pull/21); reserved LIT-482–561.
 
-## Status (2026-11-03): WORK. P1, P2 and P4 integrated; P3 in progress
+## Status (2026-11-03): WORK complete; AUDIT next. Final report: [report.md](../topics/padua-literature-20261103/report.md)
 
 These are literature findings only. They carry no PD status changes and no new mathematical claims.
 
@@ -17,8 +17,11 @@ These are literature findings only. They carry no PD status changes and no new m
   - PD-T106 is now IMPLIES PART: the signed rule and degree-m exactness are published, while "precisely m", the aliases and the pencil are not.
   - Gaps closed: Wu AML 2026, Don–Gottlieb journal version, Dencker–Erb journal version.
 - **P4 (Leuven IEP/MOP)**: [memo for AC](../topics/padua-literature-20261103/p4-memo.md). No Leuven work treats two variables or cites Van Barel–Chesnokov 2010. Three joint questions are proposed for a later topic; none is registered.
-- **P3 (Lanczos / V+A)**: reader running.
+- **P3 (Lanczos / V+A)**, [comparison](../topics/padua-literature-20261103/p3-comparison.md):
+  - IMPLIES PART for PD-T031 (Sinha 2026, single operator) and PD-T057 (Xu 1993; Liu–Narayan/Dunkl–Xu). For the truncated form and the manifold structure, no matching result.
+  - No matching result for the Padua obstruction (PD-T069/N303), ρ_n = O(n⁻⁵) (PD-T144) or the span drift.
+  - Greenbaum width conflict (LIT-213) resolved; LIT-096, LIT-210 and LIT-362 corrected.
 
 ## Next step
 
-Integrate P3, write report.md, then hand off to the Codex audit (handoff 02).
+Codex (gpt-6-astra high) audit per handoff 02. Still needed from AC: Xu, Trans. AMS 343/342; Dunkl–Xu §3.5; print-only Mastroianni–Russo 2000 and DMV 1995 (see DOWNLOADS v3).
