@@ -36,11 +36,6 @@ def receipt(folder, original, independent):
         if reference.exists():
             checked=read(reference);prior=original/f'n{n}.json.gz'
             r['reference_accepted']=checked['accepted'] and checked['certificate_sha256']==digest(prior) and math_hash(read(prior))==r['mathematical_sha256']
-        native_check=original.parent/'checker'/f'n{n}-final-producer.json'
-        if native_check.exists():
-            checked=read(native_check)
-            r['independent_accepted']=checked['accepted'] and checked['certificate_sha256']==r['certificate_sha256']
-            r['independent_receipt_sha256']=digest(native_check)
         q=independent/f'reference-n{n}.json'
         if q.exists():
             pd=read(q)
@@ -61,7 +56,7 @@ def receipt(folder, original, independent):
             ref=next((r for r in python_cpu if r['n']==n),None)
             native_full.append(dict(n=n,full_driver_cpu_seconds=q['full_driver_cpu_seconds'],parent_cpu_seconds=q['parent_cpu_seconds'],child_cpu_seconds=q['child_cpu_seconds'],cold_compile_included=True,reference_cpu_over_full_native=(ref['cpu_seconds']/q['full_driver_cpu_seconds'] if ref else None)))
     pipeline=[]
-    bench=original.parent/'checker'/'cpu-bench.json'
+    bench=original.parent/'checker'/'cpu-bench-corrected.json'
     if bench.exists():
         for q in read(bench)['rows']:
             native=next((r for r in native_full if r['n']==q['n']),None)
@@ -75,7 +70,7 @@ def receipt(folder, original, independent):
     if len(python_cpu)>1:fits['python_cpu17_24_two_point']=fit(python_cpu,'cpu_seconds')
     for label,subset,field in [('native_hotpath_cpu17_24',[r for r in rows if 17<=r['n']<=24],'native_hotpath_cpu'),('native_hotpath_cpu17plus',[r for r in rows if r['n']>=17 and r['complete']],'native_hotpath_cpu'),('python_wall17_24',[r for r in python if 17<=r['n']<=24],'total_wall')]:
         if len(subset)>1:fits[label]=fit(subset,field)
-    return dict(status='MEASURED',rows=rows,fits=fits,python_producer_wall=python,python_producer_cpu=python_cpu,native_full_driver_cpu=native_full,native_producer_plus_checker_cpu=pipeline,
+    return dict(status='MEASURED',scope='Producer implementation/performance and reference validation only; corrected checker summaries govern independent acceptance.',environment=dict(python='3.12.14',gcc='14.2.0',gmp='6.3.0'),checker_cpu_benchmark_sha256=(digest(bench) if bench.exists() else None),rows=rows,fits=fits,python_producer_wall=python,python_producer_cpu=python_cpu,native_full_driver_cpu=native_full,native_producer_plus_checker_cpu=pipeline,
                 native_source_sha256=sorted({x['source_sha256'] for x in provenance}),
                 driver_sha256=sorted({x['driver_sha256'] for x in provenance}),
                 limits='Fits are heuristic. Native per-row CPU is hotpath only; native_full_driver_cpu includes cold gcc, Python setup and certificate output. Reference CPU covers constructor+search only, omitting final compression/write; the primary full-driver ratio therefore conservatively charges extra native work. Python wall fits reflect shared contention. All projections ignore memory, fixed192-bit enclosure growth, and n<=100 cap; they do not validate any projected degree. Python CPU/wall fits are producer-only, not certification-pipeline costs; native_producer_plus_checker is a separate provisional two-point pipeline fit.')

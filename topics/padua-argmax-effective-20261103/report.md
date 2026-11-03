@@ -1,16 +1,17 @@
 # Effective Padua argmax campaign — development report
 
-**Integration checkpoint:** corrected native revalidation is in progress after
-a GMP rational canonicalization contract issue was found. Earlier native
-acceptances below are historical until replaced by corrected receipts;
-reference-Python17–24 and analytic proofs are unaffected.
-
 Rules/input `8a1f394739293953e1566fd24a0a193cc78ff26f`; base `440d107`.
 Branch `codex/padua-argmax-effective-20261103`; [draft PR19](https://github.com/aacchhee/padua_research/pull/19).
 Development results below await the required Claude Opus 5.5 xhigh audit.
 
 The exact finite global range now reaches **2<=n<=32**, with the new
 cases17–32 in the [finite theorem](theory/argmax-effective-codex-01-finite-global-argmax.md).
+The isolated n40 producer completed352 leaves (286.38CPU seconds), but
+its corrected independent checker reached the authorized600CPU-second
+limit without an acceptance receipt. Degree40 is **not certified** here;
+this is a capacity checkpoint, not a mathematical counterexample or a
+rejected certificate. Degrees33–39 were not run.
+
 The all-degree global conjecture PD-T099 remains **OPEN**. No effective
 global threshold n0 and no counterexample were obtained. The principal
 analytic advance is an exact corner-active spectrum giving, for every
@@ -59,9 +60,9 @@ native implementation extra work. Separate hot-path fits must not be
 mistaken for full-driver times.
 
 The native producer-plus-independent-checker CPU sums at17 and24 are
-7.601892s and49.220506s. Their two-point power fit has exponent5.4167
+7.138904s and48.715504s. Their two-point power fit has exponent5.5691
 and projects cumulative production and one replay for degrees17..N to
-N=62 in24h or84 in7days. The Python producer-only two-point exponent is
+N=61 in24h or82 in7days. These use the corrected canonical-rational checker. The Python producer-only two-point exponent is
 5.3677, with cumulative projections51 and70; Python checker CPU was not
 measured, so those are not complete Python certification-pipeline budgets.
 The broader native hot-path fit, including the isolated40 probe, has
@@ -104,6 +105,14 @@ Attempt and idea records retain the earlier targets and explain each
 scope reduction. No historical priority or globally novel method is
 claimed. The independent native arithmetic implementations improve
 finite capacity; they do not change the PD-T210 certificate implication.
+
+Final inspection found noncanonical GMP rational operands in the checker.
+The corrected kernel canonicalizes every transform-weight summand before
+arithmetic. All23,816 weights at2–40 matched independent Fraction values,
+and every new finite case17–32 was fully replayed with the corrected kernel.
+The36 malformed controls also passed after correction. Earlier native
+receipts are explicitly historical and do not supply the final proof
+premises. See [the correction review](independent-checks-canonical.md).
 
 ## Evidence, reservations and audit
 

@@ -1,7 +1,7 @@
 # Effective all-degree Padua argmax (PD-T099): campaign log
 
 - Branch: `codex/padua-argmax-effective-20261103` · Base: main `440d107` · Developer: Codex (gpt-6-astra ultra, at AC's instruction) · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: `Codex (gpt-6-astra ultra): Continue codex/padua-argmax-effective-20261103.` · Open handoff: [handoffs/02-work.md](handoffs/02-work.md)
+- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Continue codex/padua-argmax-effective-20261103.` · Open handoff: [handoffs/03-audit.md](handoffs/03-audit.md)
 - Reserved final-ID ranges: PD-T246–265, PD-N084–091, IDEA336–355, LIT466–473; first pushed in `ed8db2f`, [ALLOCATIONS.md](ALLOCATIONS.md). Final assignments pending.
 - Claims: PD-T?argmax-effective-claude-01 — pilot gate measurements — MEASURED — [record](theory/argmax-effective-claude-01-pilot-measurements.md).
 - For the PR: final IDs, PROOF_STATUS/IDEAS/INDEX rows, a RESULTS.md section, and the Claude audit.
@@ -54,7 +54,7 @@
   pilot/G0 replays are assigned. Runtime model metadata is not independently
   exposed beyond configured/requested tool settings.
 
-## Runs needed (continuation)
+## Development checkpoints
 
 ### Development checkpoint — native arithmetic and bounded gates
 
@@ -118,3 +118,41 @@
 - Producer inspection found explicit canonicalization of imported weights;
   a targeted unreduced-weight input control at2 reproduced every scientific
   field. Producer source and all canonical certificates remain unchanged.
+
+
+### Development complete — corrected finite evidence and audit assembly
+
+- Final corrected kernel `b0c871e7711219edfe3ce01480d8d1de3503a20d9b59f82b63a00eff248bc6e0`
+  accepted every canonical certificate9–32. Different-agent execution:
+  checker worker9–24 and29–31; gates worker25–28; supplementary reviewer32.
+  Fresh independent Python G0 accepted17–24 with identical mathematical
+  payloads; original Python checker also accepted every native overlap9–24.
+- Corrected36-case corruption controls at9 and17, optimized-mode controls,
+  compiled units and all23,816 canonical transform weights at2–40 passed.
+  Earlier noncanonical-kernel receipts are explicitly historical/non-supporting.
+- Native40 completed352leaves, but its corrected independent checker reached
+  the authorized600CPU-second cap without acceptance. Degree40 is not
+  certified;33–39 unrun. This is a capacity limit, not a mathematical failure.
+- Finite global range is now2–32; all-degree normalized slopes and an explicit
+  n^-6 physical local radius are proved. Three exact edge comparisons and
+  three narrowly scoped analytic obstructions are retained. PD-T099 remains
+  OPEN, with no explicit global n0; G5 lacks a uniform quantitative model.
+- Primary producer speedup is11.6–11.9x on measured overlap degrees. Corrected
+  producer+checker two-point capacity projections are61/82 for24h/7days,
+  explicitly heuristic and constrained by precision/memory/support limits.
+  Python producer-only projections51/70 omit checker CPU; no false pipeline
+  comparison or certified-degree extrapolation is made.
+- Small exact witnesses/receipts and the source/evidence inventory are retained
+  in Git. Bulk raw gates/comparisons have a verified local archive87815bytes,
+  SHA2567aafe2207be329528e39015fa233e96011050869efd00f1ebbd41cfbf4db2ae9;
+  external/Windows delivery remains pending. No third-party fulltext stored.
+- Final checks: exact replay/control results as above; evidence inventory and
+  certificate-to-acceptance associations; Python syntax, JSON parsing, local
+  Markdown links, git diff whitespace and allowed-path scope. No new math
+  test is inferred from integrity checks.
+- Main refetched unchanged at440d107. Concurrent draftPR20 honors this topic's
+  reservation and uses the next disjoint ranges. No shared registry mutation.
+- Current runs needed: required Claude Opus5.5 xhigh audit (including complete
+  state/IDEAS.md), then the repository response/preparation workflow. No more
+  development computation is queued. Final IDs and shared rows are deferred.
+  Handoff02 completion and new03 are published in the next, separate commit.

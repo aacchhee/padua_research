@@ -1,0 +1,10 @@
+{
+  "n": 2,
+  "unreduced_denominator_factor": 7,
+  "all_scientific_output_identical": true,
+  "inputs_sha256": [
+    "3d147274a170653469845890bf143d89fbbe5690101b08e6b82742c13ee988b1",
+    "4278ea0476dfe7369ced290760f0d370c4d7cd474bc9dbf7e0ae73ea234b21e1"
+  ],
+  "binary_sha256": "5d288fa3af75641e74b6ead67ab28b65eee6f7d144bf134c981eeebb4241e312"
+}

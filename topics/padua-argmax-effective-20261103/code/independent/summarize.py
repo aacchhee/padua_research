@@ -1,4 +1,7 @@
 """Compact, hash-bound independent evidence receipt; never invent pending runs."""
+if not __debug__:
+    raise RuntimeError("Scientific verification requires assertions; do not use -O or PYTHONOPTIMIZE.")
+
 import gzip
 import hashlib
 import json
@@ -26,6 +29,10 @@ def mathematical(data):
 
 
 def main():
+    # This summarizes the original execution, not later corrected kernels.
+    # Never relabel old native receipts with a new current source hash.
+    assert digest(TOPIC/'code/native_checker/kernel.cpp') == 'ae4f20b69c5e676a5d2fefa55c903c8b3efd87a5807a5c5617ca21390a1cab3d', \
+        'Historical native summary: use canonical impact records for corrected source.'
     reference = []
     native = []
     controls = []

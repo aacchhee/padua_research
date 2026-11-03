@@ -63,3 +63,11 @@ includes both the Python driver and its waited-for native child; it is
 separate from elapsed wall time under concurrent load. The campaign's
 executed benchmark script and raw receipts are retained externally as
 `cpu_bench.py`, `cpu-bench.json`, and `nN-cpu-benchmark-check.json`.
+
+The corrected kernel explicitly canonicalizes each rational Bernstein
+weight term before adding it to a GMP rational accumulator. GMP's two
+integer rational constructor does not perform that reduction itself.
+The earlier matching candidate violated GMP's canonical-operand contract;
+its receipts are historical and are superseded for proof use. The two
+remaining direct rational constructors have numerator one and positive
+power-of-two denominator, so they are already canonical.

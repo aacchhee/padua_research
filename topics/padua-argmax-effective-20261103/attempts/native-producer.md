@@ -52,8 +52,10 @@ budget and independent replay is required before any finite theorem upgrade.
 
 ## Runs needed
 
-Finish one bounded n=40 capacity probe (no48 this round), independent replay
-through32, and the compact receipt; summarize final timings and hashes. All large
+Remaining publication work: independent n40 replay and cold-storage archival.
+Reference overlap9..24, independent G0reference17..24, independent final9..32
+acceptance and compact receipt freeze are complete.
+Producer computation is finished; no48 or larger run is planned this round. All large
 or regenerable artifacts remain under `/workspace/padua-work/producer/` outside
 Git; orchestrator owns cold-storage manifest/publication and independent status.
 
@@ -105,8 +107,11 @@ not validated n_cert: fixed192-bit widths, n<=100 cap, memory growth and checker
 cost are excluded. Single-degree projections are separately labeled in the
 receipt; they must not be mistaken for a contiguous finite bridge.
 
-Current finite result: no degree outside the actual certificates is certified;
-33..39 remain unrun. The n=40 capacity probe is pending. No n>=48 run is planned
+Current producer result: complete covers exist for9..32 and40;
+33..39 remain unrun. The n=40 capacity probe completed352leaves
+(350bound,2corner), depth12, CPU35.141881setup+251.237701search,
+wall300.524294s. Its independent replay is pending at this worker checkpoint.
+No degree outside actual, independently accepted certificates is certified. No n>=48 run is planned
 this round. Failure to complete within a budget would be an implementation/
 capacity limitation, not a counterexample to PD-T099.
 
@@ -147,3 +152,66 @@ complexity and storage assumptions. No additional benchmark runs are planned.
 An obsolete duplicate n=28 run was interrupted before completion once final
 frozen-source regeneration was selected. It contributes neither a certificate
 nor a failed mathematical claim; the final n=28 run completed independently.
+
+The full-pipeline fit is only an input to gateG5. This worker supplies no explicit
+n0 and makes no all-degree comparison between n0 and projected certification
+capacity. PD-T099 and all bridge degrees without accepted certificates remain
+OPEN; there is no new all-n proof or counterexample here.
+
+## Final worker checkpoint
+
+- Complete native covers: every degree9..32, plus isolated40. Gap33..39 is unrun.
+- Unmodified reference Python checker accepted all16overlap degrees9..24.
+- Different agent independently ran reference producer+checker for17..24; all
+  complete payloads equal canonical native after excluding only timings and
+  native provenance. Independent compiled checker accepted every final9..32
+  certificate. These are executed validation facts; final theorem/audit/archival
+  status belongs to the orchestrator.
+- n40 producer complete352leaves; independent n40 replay pending at this freeze.
+- Compact receipt: `evidence/native-producer-summary.json`,15747bytes, SHA256
+  `a69e3f855d0aab6d56533f12ab1b9e8ddf4af6dc8e38235a9b84f71793ea564c`.
+  It pins raw certificate and deterministic mathematical-payload hashes, exact
+  acceptance snapshots, source identities, timing clocks and fits.
+- Final native hot-path fit17..32plus40 exponent5.826416; unconstrained producer
+  budget projections70/94 remain unchanged. The full pipeline two-point62/84
+  projection is the certification-budget estimate, with all stated limitations.
+- No n>=48 computation, no pure-Python computation above32, no external
+  machines, no installs, no proxy changes, and no Git mutations by this worker.
+- Bulk outputs remain under `/workspace/padua-work/producer/`; cold-storage
+  handoff/manifest is pending with the orchestrator.
+
+
+## Dated integration finding: checker rational contract
+
+After this worker's initial freeze, the checker author identified noncanonical
+GMP rational summands in the independent C++ transform weights. The old native
+acceptance snapshot above is historical and does not by itself support the
+final25+ proof. Corrected checker replays and summaries supersede it. Root
+removed duplicated native acceptance fields from the producer summary;
+producer performance and reference-Python validation remain valid.
+
+The producer has no analogous issue: every imported W is canonicalized before
+arithmetic; combine temporaries start canonical or use mpq_set_z. A targeted
+n2 run multiplied every rational input numerator and denominator by7 and
+reproduced every scientific output field. Frozen producer sources and all
+canonical certificate bytes are unchanged. Corrected checker CPU benchmarks
+supersede the historical pipeline timings above for future capacity estimates.
+
+
+Corrected checker CPU benchmarks (kernelb0c871e7…, independently executed
+within the corrected overlap replay) are5.010504s at17 and34.778060s at24.
+Adding the unchanged full producer CPU gives7.138904s and48.715504s.
+The updated two-point pipeline fit has exponent5.569062 and cumulative
+projections N=61 for24h and82 for7days. This replaces the earlier62/84
+pipeline projection; the sensitivity illustrates why these are only
+heuristic cost estimates. Producer-only timing series and speedups do
+not change. The final native-producer-summary.json is regenerated from
+cpu-bench-corrected.json and intentionally omits native acceptance flags;
+corrected checker evidence governs those claims.
+
+
+Final integration outcome: corrected independent acceptance covers9–32.
+The corrected n40 checker reached the authorized600CPU-second cap
+(SIGXCPU;605.562s wall) without an acceptance receipt. Therefore n40
+remains a producer-only capacity checkpoint, not a certified degree or
+counterexample;33–39 remain unrun. No further production/replay is launched.

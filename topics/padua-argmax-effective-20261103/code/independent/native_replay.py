@@ -1,4 +1,7 @@
 """Supplementary final-native replay with per-file source and output identity."""
+if not __debug__:
+    raise RuntimeError("Scientific verification requires assertions; do not use -O or PYTHONOPTIMIZE.")
+
 import hashlib
 import json
 from pathlib import Path
@@ -17,6 +20,10 @@ def digest(p):
 
 
 def main():
+    assert digest(CHECK/'kernel.cpp') == 'ae4f20b69c5e676a5d2fefa55c903c8b3efd87a5807a5c5617ca21390a1cab3d', \
+        'Historical replay harness; use canonical_replay.py for the corrected kernel.'
+    assert digest(BINARY) == '6ba308759192b977453cfd7373a629106998b66d2cd86babb6d7dd5bab1f15e9', \
+        'Historical binary identity mismatch.'
     pins = {str(p): digest(p) for p in (CHECK/'check.py', CHECK/'kernel.cpp', BINARY)}
     records = []
     for name in sys.argv[1:]:

@@ -1,0 +1,295 @@
+{
+  "binary_sha256": "d95664c49cd1a1a8fa6c3c0ed41edd5c6b61bfbadf8e98d9ff4553c0e10bdae8",
+  "build_command": [
+    "g++",
+    "-O3",
+    "-std=c++17",
+    "/workspace/padua-work/independent/canonical-weight-probe.cpp",
+    "-lgmpxx",
+    "-lgmp",
+    "-o",
+    "/workspace/padua-work/independent/canonical-weight-probe"
+  ],
+  "degrees": [
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 2,
+      "stdout_sha256": "bd7a151d41dddc89f5947ec3141f66d043685d1d23558e70df143f69d76191e8",
+      "weights": 9
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 3,
+      "stdout_sha256": "46cf6f7a1f6fe31a5da1be7ac7b71064697f9d9064991e1359e1656184b90727",
+      "weights": 16
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 4,
+      "stdout_sha256": "29841002beb2db3f6af6d768ba0ca135909e31aef8af4db2cf52cf12344a470b",
+      "weights": 25
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 5,
+      "stdout_sha256": "19226119d2f894603963bbc09514e8a6d34ae81fe5811a11b2830d46c7ad55ff",
+      "weights": 36
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 6,
+      "stdout_sha256": "cd29688f2d5d160c31d50309ab868fb7958ebbfdd4237463be94380fb5f0d1c1",
+      "weights": 49
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 7,
+      "stdout_sha256": "56a8726388f1a59a9da201a4e6e19763c27ee06240e224c9006a730e2f777286",
+      "weights": 64
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 8,
+      "stdout_sha256": "51eefbc59f6614aacd8150b9a2d6296aa0a23da17d4a8ed1b28cb586e9e59f1a",
+      "weights": 81
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 9,
+      "stdout_sha256": "a2e7f651078b027d17a52aedffd6a09f58e7c423bcfb0663260ccbc7cc870f0f",
+      "weights": 100
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 10,
+      "stdout_sha256": "2d108cb6a9bd86f736a168a0041ff82210d5fde6ac09f082d4a5882c55f54485",
+      "weights": 121
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 11,
+      "stdout_sha256": "9ccfaba8dd5b7188d7c6b15180c40e424d411149916a12c1e2eed6f81f6cc7d1",
+      "weights": 144
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 12,
+      "stdout_sha256": "0d93942c28a104aa7a9098935e771acb92b58a92c143f2b5aa7af10f0e5658ca",
+      "weights": 169
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 13,
+      "stdout_sha256": "ec33117ec3b026ce9a04350a7b962ae6b96cfafacc0b7be075a89c7ccdb01553",
+      "weights": 196
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 14,
+      "stdout_sha256": "d375dd0b4b5d75fa17ab362c34ed792e9ccff1b9c514a6f3a044ced7edd714aa",
+      "weights": 225
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 15,
+      "stdout_sha256": "a317cae4570bb82992333030741b6b56b483f646af70a09d72bc0aad8b93c797",
+      "weights": 256
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 16,
+      "stdout_sha256": "b5dc240ca17c9647838a4929760cc5238c6a0ac329c1174e57620c9c1df1db84",
+      "weights": 289
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 17,
+      "stdout_sha256": "bc05fc6a3c9b05133c360b28d43d1b1b1f5cb8e648a2b9c9a715f2ec81ae0c55",
+      "weights": 324
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 18,
+      "stdout_sha256": "99450412fa714327e3ee70345c0fb218c9a976e1b625f9294eaa5549f2d73601",
+      "weights": 361
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 19,
+      "stdout_sha256": "81298b33f6cd557e0bd6d0671e896245a2aec9a1c34507e790bc921e24e6737d",
+      "weights": 400
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 20,
+      "stdout_sha256": "f34badac0df19e613eff32cf57341a84314f1f8109df870a23d1baa5c437653a",
+      "weights": 441
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 21,
+      "stdout_sha256": "6495596bbf6872ece07d21e1663df62047ebf33d0134b9e88d4364f54baae518",
+      "weights": 484
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 22,
+      "stdout_sha256": "39260937a6f74c877a8c2cbd931d89afb80c16eb83c75076ff3c3d934c8fd185",
+      "weights": 529
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 23,
+      "stdout_sha256": "71c656acecb9e101e564cb843f56dc83a631a3540838c148654b305b2c980612",
+      "weights": 576
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 24,
+      "stdout_sha256": "d1fbb1a1a905ace37101ab6e2cdb1f58d8c7a26b97d87b040cf40ac83465e9b9",
+      "weights": 625
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 25,
+      "stdout_sha256": "b338680a99fbb2b52aac043eceba3ea6b63e51366db33ef13cc2aa5d1b05cbb6",
+      "weights": 676
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 26,
+      "stdout_sha256": "98dd1fe0de0f9f0342f7fbb3a2b72bb9d04a9fcc0001d6cc05eb264ace860cdf",
+      "weights": 729
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 27,
+      "stdout_sha256": "20f102281766a236adf29eae90a820d1e553edaafccda423c4b73b499d7ddcd7",
+      "weights": 784
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 28,
+      "stdout_sha256": "7ac6f09922751222c4c5707e4ccef9f569fba499a1b72701020419446dac3936",
+      "weights": 841
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 29,
+      "stdout_sha256": "8f51825ee068226159b830890c5514b44ae6909d4d8ad308b6f775df0e48dab8",
+      "weights": 900
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 30,
+      "stdout_sha256": "85ad67ef1643cfe38814ead88839a7872a57505ead51cfc1ebd4399b0d027e67",
+      "weights": 961
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 31,
+      "stdout_sha256": "588a26b75137e842165a89a080911d1d7ce9dd47cc19651ca7132dddd0c1c0ad",
+      "weights": 1024
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 32,
+      "stdout_sha256": "364b2011c9cfb4ad9b4b371790acd5f92a94e31cf8df3511f3863a019ac05d51",
+      "weights": 1089
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 33,
+      "stdout_sha256": "e01e1287fbb2ee6556380cc0d6f1ac03c6e2f6cb616d0c4aa0bfd6ec6c506b4e",
+      "weights": 1156
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 34,
+      "stdout_sha256": "0ce5566bde5e32fc9d5e6c15407e03df35d6a207464de75a524762846e814e29",
+      "weights": 1225
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 35,
+      "stdout_sha256": "76148ecc27f92abd86392eb0e607b8d3935c8cde9de1a825302043be23aaacd6",
+      "weights": 1296
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 36,
+      "stdout_sha256": "72714200f642ae3fc63b3c8bd2e96e8f24e9268018a10b9be91a7fbc4df5056b",
+      "weights": 1369
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 37,
+      "stdout_sha256": "26bfe7c20700fa813681aec33b17fcf30db35950bf38ff7c684c73c866e14dbd",
+      "weights": 1444
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 38,
+      "stdout_sha256": "5b6386fe363a5568fea5394af9dc7ac927fae9d761670be0c91e7ab908f07ecf",
+      "weights": 1521
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 39,
+      "stdout_sha256": "a2555fd31f2d655a1241373b70961042f3d762c98c932bf3fafcd964f0174ffa",
+      "weights": 1600
+    },
+    {
+      "all_canonical": true,
+      "exact_match": true,
+      "n": 40,
+      "stdout_sha256": "2f1c04f4b00d88f5080c7b6acc2433c7e2d0057ee68eab6c216b063f47219517",
+      "weights": 1681
+    }
+  ],
+  "expected_weights": "independent standard-library Fraction/binomial formula; no reference imports",
+  "format": "padua-canonical-weight-differential-v1",
+  "instrumentation": "print w immediately after unchanged production construction and exit",
+  "instrumented_source_sha256": "8d7f4ac863c0b6b37011b356d6f0e97760e2d49b2076d4bf0663186545c16178",
+  "seconds": 1.6540270440000313,
+  "source_sha256": "b0c871e7711219edfe3ce01480d8d1de3503a20d9b59f82b63a00eff248bc6e0",
+  "total_weights": 23816
+}

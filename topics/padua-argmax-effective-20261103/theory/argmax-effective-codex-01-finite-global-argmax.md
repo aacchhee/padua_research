@@ -3,7 +3,7 @@
 ID kind: PD-T.
 Aliases: G0 exact bridge; native finite continuation of PD-T214.
 Split from: PD-T099, finite parameter cases only.
-Split into: none; isolated capacity probes are listed separately below.
+Split into: none; the unverified n40 capacity probe is explicitly excluded.
 
 ## Statement
 
@@ -25,15 +25,13 @@ computer-assisted premise. No floating comparison enters a leaf verdict.
 
 ## Status by part
 
-Overall status: **OPEN at the full finite range pending corrected native replay**.
-The17–24 cases have independent reference-Python acceptance. A final
-inspection found noncanonical GMP rational operands in the native checker
-transform weights. Corrected exact native replays are in progress; earlier
-native acceptances alone are not used to close25–32. Claude audit remains pending.
+Overall status: **PROVED**, computer assisted. Every listed finite premise
+has an actual corrected-kernel acceptance by a different agent and a
+retained exact witness. Required Claude topic audit remains pending.
 
 | Part | Status | Evidence |
 |---|---|---|
-| Finite global equality and exact equality set,17<=n<=32 | OPEN pending corrected replay | Complete canonical certificates under evidence/, independently reconstructed bounds and covers recorded in native-checker-summary.json |
+| Finite global equality and exact equality set,17<=n<=32 | PROVED | Complete canonical certificates under evidence/, independently reconstructed bounds and covers recorded in native-checker-summary.json |
 
 Disposition: finite parameter continuation and implementation variant of
 IDEA-320/PD-T210, with no new mathematical criterion or novelty claim.
@@ -92,13 +90,23 @@ their own arithmetic, as previously disclosed.
 Validation includes every degree9–24 against the unchanged reference
 Python checker, exact mathematical-payload comparison after canonical
 source regeneration, and a different agent's fresh reference production
-and checking at17–24. The supplementary astra high agent rebuilt and replayed the final
-native overlap9–24 and endpoint32. The separate sol medium checker author
-accepted final9–31; degree32 is explicitly attributed to the supplementary
-reviewer, rather than a nonexistent duplicate checker-author execution. The native checker's14 historical and22 additional
-malformed controls reject all36 defects; complete and partial positive
+and checking at17–24. After the canonical-rational correction, the sol
+medium checker author accepted9–24 and29–31; the separate sol medium gates worker accepted25–28;
+the astra high supplementary reviewer accepted32. The isolated40 capacity
+probe reached its600CPU-second checker cap without acceptance and is not
+certified;33–39 were not run.
+Only completed acceptance rows enter this statement. Earlier
+supplementary native overlap9–24 is preserved as historical evidence,
+rather than relabeled as execution of the corrected kernel. The native
+checker's14 inherited and22 additional malformed controls reject all36 defects; complete and partial positive
 cases are distinguished. Source-provenance races found during development
-were fixed before the canonical artifacts were regenerated.
+were fixed before the canonical producer artifacts were regenerated. A
+later checker finding concerned GMP rational summands not canonicalized
+before addition. The corrected kernel canonicalizes each summand first;
+independent exact Fraction comparisons verify all23,816 production weights
+at degrees2–40, and full corrected replays replace every native proof
+premise. Old native replays are not used to bypass this correction.
+See [canonicalization impact and checks](../independent-checks-canonical.md).
 
 The precise executed scopes, source/binary hashes and acceptance hashes
 are in [native checker summary](../evidence/native-checker-summary.json),

@@ -1,9 +1,13 @@
 # Supplementary independent finite-certificate check 01
 
 Rules/input: `8a1f394739293953e1566fd24a0a193cc78ff26f`.
-Checker: Codex, gpt-6-astra high, assigned by handoff 02. This is a
+Checker: Codex, configured gpt-6-astra high, assigned by handoff 02. This is a
 supplementary independent check, **not the required Claude audit**.
-Date: 2026-11-03. Status: **IN PROGRESS**.
+Runtime internals beyond that configuration are not independently exposed.
+Date: 2026-11-03. **Complete as amended by the canonicalization impact
+check below**: reference G0 and analytic checks remain valid; fresh
+corrected n=32 accepted, n=40 capped and unverified. Historical native
+receipts alone no longer support proof acceptance.
 
 ## Scope and independence
 
@@ -57,11 +61,35 @@ certificate/checker SHA-256 values in
 `/workspace/padua-work/independent/reference-g0-receipt.json` and pins
 reference source bytes in `reference-g0-status.json` on exit.
 These working files are not cold-storage locators.
+The full eight-degree sweep plus reference n=17 controls finished in
+1589.879 seconds, within its original 1800-second wall-clock cap.
 
-Completed so far: n=17, 106 leaves (104 bound, 2 corner), depth 8,
-producer 24.783 s and reference checker 39.459 s, accepted. The leaf/depth
-counts agree with Claude's pilot. Wall timings are measured under shared
-container load, not isolated single-core benchmark observations.
+**All eight independent reference producer/checker runs completed and
+were accepted.** Every cover has two corner leaves and zero pending boxes.
+
+| n | Leaves | Depth | Producer seconds | Checker seconds | Result |
+|---:|---:|---:|---:|---:|---|
+| 17 | 106 | 8 | 24.783 | 39.459 | accepted |
+| 18 | 116 | 9 | 43.935 | 43.419 | accepted |
+| 19 | 122 | 9 | 92.032 | 54.710 | accepted |
+| 20 | 132 | 10 | 83.365 | 127.891 | accepted |
+| 21 | 134 | 10 | 116.217 | 84.004 | accepted |
+| 22 | 142 | 10 | 110.732 | 94.752 | accepted |
+| 23 | 152 | 10 | 132.620 | 132.958 | accepted |
+| 24 | 154 | 10 | 159.748 | 147.187 | accepted |
+
+The n=17/20/24 leaf/depth counts reproduce Claude's pilot. These are
+wall timings measured under shared container load, not isolated
+single-core CPU observations. The environment is Python 3.12.14,
+Linux 6.18.57 x86-64, glibc 2.41, GCC/G++ 14.2.0; no network or external
+machine was used.
+
+Compared each entire reference certificate against the canonical final
+native certificate, excluding **only** setup/search/total timing fields
+and native producer provenance. All remaining fields agree exactly for
+every n=17,...,24. This includes every exact integer bound, full prefix
+partition, threshold and source/dependency field. It is not merely
+agreement of leaf counts or floating maxima.
 
 ## Native replay and remaining work
 
@@ -77,6 +105,8 @@ accepted and all 36 negative controls were rejected, with complete and
 partial positives handled correctly. This initial candidate was then
 superseded by the outward-division optimization below. The native checker
 imports no producer/reference arithmetic module.
+Both native paths trust the GMP library, but their constructor,
+subdivision and predicate code is separately implemented.
 
 Final checker arithmetic source:
 `ae4f20b69c5e676a5d2fefa55c903c8b3efd87a5807a5c5617ca21390a1cab3d`;
@@ -106,6 +136,11 @@ The reference checker's original fourteen negative controls were also
 independently repeated on the fresh final-native n=9 certificate: all
 rejected, complete positive accepted and partial positive not accepted,
 5.340 s; receipt `native-final-n9-reference-controls.json`.
+Finally repeated those fourteen original controls on the independently
+regenerated reference n=17 certificate: all rejected, complete positive
+accepted and partial positive not accepted, 100.548 s. Receipt
+`reference-n17-controls.json`, SHA-256
+`6c50e3177a91966c8921243682b4bc352787102952959fd73c66b3c5047469da`.
 
 Independently ran final producer sources at n=9 and n=24:
 `producer.c` hash `ae3002a995c199660ad8c31dd2c7577a8416208ab8b3868c0795ebe728ab72ff`,
@@ -116,13 +151,28 @@ paths, threshold, corners, pi brackets, Machin terms, cosine seeds and all
 search statistics. Timing/provenance fields naturally differ. n=24 uses
 2.638 s setup CPU, 11.422 s search CPU, 36.252 s total wall time.
 
-Pending: finish reference G0 at n=24 and its n=17 controls; deliver the compact
-hash-bound receipt to the orchestrator for durable retention and
-degree-specific claim records. All reference/native mathematical fields
-match exactly through the already completed reference n=23. Canonical
-final-native n=9–24 acceptance and both corruption suites are complete.
-No unexecuted receipt is counted, and local scratch paths alone are not
-treated as durable evidence locators.
+Canonical final-native n=9–24 and n=32 acceptance, reference G0 and all
+listed corruption suites are complete. No acceptance at n=25–31 or n=40
+is attributed to this worker. No unexecuted receipt is counted, and local
+scratch paths alone are not treated as durable evidence locators.
+
+The frozen compact receipt is
+`/workspace/padua-work/independent/independent-summary.json`, 11501 bytes,
+SHA-256 `01df7fd5e61793e49a13eb216ba1a0a4402d6b799f87b94682677058459feeaf`.
+It includes actual source/binary hashes, per-degree accepted certificate
+and checker-receipt hashes, runtimes, leaves/depths, full mathematical
+payload identity hashes, and corruption controls. Regenerate with
+`python topics/padua-argmax-effective-20261103/code/independent/summarize.py`.
+The orchestrator copies this short receipt and canonical small certificates
+into the repository evidence record. Bulky regenerable logs stay outside
+Git with their archival status disclosed separately; they are not needed
+instead of the canonical checked covers. The harnesses reject Python -O;
+the summarizer's rejection was actually checked.
+
+At the original review boundary no unresolved correctness finding had
+been identified. The later GMP contract finding below supersedes that
+native-checker assessment. Claude topic audit and the global all-degree
+obligations remain separate.
 
 ## Mathematical check scope
 
@@ -143,4 +193,38 @@ the final source hashes above. Earlier independently checked
 mathematical payloads remain usable as arithmetic observations, but their
 producer-source attribution must not be upgraded from a possibly raced
 receipt. No developer source was silently repaired by this checker.
+
+## Later GMP operand-contract blocker — historical receipts preserved
+
+The checker developer subsequently identified that `mpq_class(num,den)`
+does not automatically reduce a rational. The original transform loop
+added such unreduced temporary weights even though GMP rational
+arithmetic requires canonical operands. Prior numerical agreement did
+not establish compliance with this API precondition. **The old native
+n=9–24 and n=32 receipts are historical observations, not supporting
+proof evidence after this finding.** Their bytes and the original
+11501-byte summary are preserved unchanged; no old receipt is relabeled
+with the corrected source hash. The separately executed Python reference
+G0 producer/checker runs are unaffected and remain valid.
+
+The corrected kernel explicitly canonicalizes each rational weight
+before addition. Its source SHA-256 is
+`b0c871e7711219edfe3ce01480d8d1de3503a20d9b59f82b63a00eff248bc6e0`;
+the separately rebuilt binary is
+`f17fed2e69a98c952d1ad5e72de03c08b2ceb07970c49fc0db1b35396fe3e605`.
+Independent inspection verified that the remaining two direct rational
+constructors have numerator 1 and positive power-of-two denominators,
+so are already canonical. See the dedicated
+[canonicalization impact check](independent-checks-canonical.md) for the
+actual corrected replays and disposition; old results are not reused as
+their acceptance evidence.
+
+Final correction outcome: the API precondition is repaired and verified;
+this worker's fresh corrected n=32 replay accepted, while n=40 hit its
+600-second CPU cap without acceptance. The current repository
+`evidence/independent-summary.json` is the versioned corrective summary,
+8995 bytes, SHA-256
+`5bb29c15077b4e0a8246b8b949cb50d4ae10ad2ceab20539dca035c866259401`.
+The original 11501-byte summary remains unchanged externally as history.
+See the linked impact report for complete source-version attribution.
 

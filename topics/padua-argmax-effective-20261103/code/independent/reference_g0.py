@@ -1,4 +1,7 @@
 """Independent bounded reference G0 replay; outputs remain outside Git."""
+if not __debug__:
+    raise RuntimeError("Scientific verification requires assertions; do not use -O or PYTHONOPTIMIZE.")
+
 import hashlib
 import json
 from pathlib import Path

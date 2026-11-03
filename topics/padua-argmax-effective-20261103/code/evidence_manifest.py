@@ -1,10 +1,38 @@
 """Write or verify the small durable evidence inventory from the repository tree."""
 import argparse
+import gzip
 import hashlib
 import json
 from pathlib import Path
 
 TOPIC = Path(__file__).resolve().parents[1]
+
+
+def verify_certificate_links():
+    summary = json.loads((TOPIC / 'evidence/native-checker-summary.json').read_text())
+    if not summary.get('acceptance_usable_for_proof'):
+        raise SystemExit('FAIL: native acceptance summary is historical or incomplete')
+    for name, expected in summary['code_sha256'].items():
+        current = TOPIC / 'code/native_checker' / name
+        if hashlib.sha256(current.read_bytes()).hexdigest() != expected:
+            raise SystemExit(f'FAIL: checker source differs from acceptance pin: {name}')
+    rows = {row['n']: row for row in
+            (dict(zip(summary['final_rows_columns'], values))
+             for values in summary['final_rows'])}
+    degrees = []
+    for path in sorted((TOPIC / 'evidence').glob('n*.json.gz')):
+        data = json.loads(gzip.decompress(path.read_bytes()))
+        n = data['n']
+        row = rows[n]
+        if (hashlib.sha256(path.read_bytes()).hexdigest() != row['certificate_sha256']
+                or not data['complete'] or data['pending']
+                or len(data['leaves']) != row['bound'] + row['corner']
+                or row['corner'] != 2):
+            raise SystemExit(f'FAIL: certificate/acceptance association at n={n}')
+        degrees.append(n)
+    if not set(range(17, 33)).issubset(degrees):
+        raise SystemExit('FAIL: missing essential continuous-range certificate')
+    return sorted(degrees)
 
 
 def inventory():
@@ -26,6 +54,7 @@ def main():
     parser.add_argument('--write', action='store_true')
     args = parser.parse_args()
     target = TOPIC / 'evidence-manifest.json'
+    degrees = verify_certificate_links()
     files = inventory()
     if args.write:
         data = dict(format='padua-effective-durable-evidence-v1',
@@ -40,6 +69,7 @@ def main():
         if data['files'] != files:
             raise SystemExit('FAIL: current evidence files differ from the recorded inventory')
     print(json.dumps(dict(verified=True, files=len(files),
+                         certificate_degrees=degrees,
                          payload_bytes=sum(row['bytes'] for row in files),
                          manifest_bytes=target.stat().st_size)))
 

@@ -24,3 +24,10 @@ linked from draft [PR19](https://github.com/aacchhee/padua_research/pull/19). Un
 The workflow's fresh-range rule supersedes historical single-owner prose;
 all older reservations, including unassigned PD-T236–245 and LIT460–465,
 remain intact. No mathematical status follows from this reservation.
+
+
+Completion recheck2026-11-03: open PRs are19 and20. PR20 head
+`1b7ebd88bf95b4ef123f24bde3ec724ef1128a09` explicitly honors this reservation
+and reserves PD-T266–285, PD-N092–099, IDEA356–375, LIT474–481 from its
+first pushed514e376. No overlap with this topic. This recheck does not
+assign final IDs or replace the mandatory fresh scan at preparation.

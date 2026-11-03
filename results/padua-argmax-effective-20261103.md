@@ -1,10 +1,5 @@
 # Effective Padua argmax — development results
 
-**Integration checkpoint:** corrected native revalidation is in progress after
-a GMP rational canonicalization contract issue was found. Earlier native
-acceptances below are historical until replaced by corrected receipts;
-reference-Python17–24 and analytic proofs are unaffected.
-
 Branch `codex/padua-argmax-effective-20261103`; [draft PR19](https://github.com/aacchhee/padua_research/pull/19).
 Rules/input8a1f394, base440d107. Required Claude audit pending.
 
@@ -18,6 +13,9 @@ was obtained. The effective campaign supplies two kinds of progress:
 - A C/GMP producer and separately implemented C++/GMP checker extend exact
   finite certification to every degree17–32, giving the continuous range2–32. The final degree set and acceptance evidence are
   in the [finite theorem](../topics/padua-argmax-effective-20261103/theory/argmax-effective-codex-01-finite-global-argmax.md).
+
+The n40 producer completed, but its corrected checker reached a600CPU-second
+limit without acceptance; n40 is not certified and33–39 were not run.
 
 Three strict whole-cell edge comparisons are proved at n13,17,24.
 Scoped analytic obstructions refute a fixed-sign-cardinal envelope at n4,
