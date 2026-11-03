@@ -29,3 +29,12 @@
 - [Plan](plan.md) records time ceilings, evidence requirements and acceptance criteria. Workers own target attempt/gate/theory/code files; frozen and shared scientific files remain unchanged.
 - Target novelty gates are in the workers' gate files; setup/allocation itself adds no scientific mechanism. No new claim is promoted by this entry.
 - Development in progress. Handoff 01 remains open. Required Claude audit remains PENDING.
+
+## 2026-11-03 — T2/T4 checked analytic checkpoint
+
+- First plan/reservation checkpoint `514e3763a827c106c5170eecd55d849b39265da2` pushed; draft [PR20](https://github.com/aacchhee/padua_research/pull/20) opened and attached to this chat. T2 first proof/pre-run gates pushed in `4cfad03`.
+- T2 gives exact representations of both inherited limiting defects, strict centreward monotonicity and unique minima: vertical g, horizontal exactly 1. A separate theorem gives the common endpoint expansion with coefficient `8 log(2)/pi^2` and constant `1/3+12 log(2)^2/pi^2`, with explicit errors. These do not establish finite-degree ordering or effective convergence.
+- T4 proves the parity-independent signed corner defect limit, an integral/geometrically convergent series, an explicit coarse `604 n^(-1/5)` comparison, the local one-dimensional bound `|L_n-A_n|<=1/(4n^2)`, and the corner constant with an explicit vanishing remainder. The full PD-T098 sharper expansion stays OPEN.
+- Distinct gpt-6-astra high reconstruction accepted the T2 and T4 proofs at the hashes in [independent-checks-analytic.md](independent-checks-analytic.md). T4 enclosure code was actually rerun at order64/bits320 and order80/bits384; the rational brackets for kappa and c agree. This supplementary acceptance does not replace Claude audit.
+- Primary source LIT-388 was reread in complete extracted fulltext for the bounded numerical-table comparison; see [literature-comparison.md](literature-comparison.md). No author contact or external priority claim.
+- T1 remains in progress: fresh producer, repaired boundary persistence/native evaluation, independent frozen-predicate controls and exact memoization equivalence checks. Partial progress is not count certification. T3 series/evaluation remains in development.

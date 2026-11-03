@@ -11,10 +11,26 @@ Four bounded targets, specified in [handoff 01](../topics/padua-lebesgue-followu
 - **T3:** a general-β series for them.
 - **T4:** the constant term c (κ = c − c₁²) of the corner expansion (PD-T098).
 
-Fresh T1 producer and boundary runs are in progress. T2–T4 analytic candidates
-are under development and distinct-agent review; no new result is promoted by
-this progress entry. Required Claude audit remains PENDING. The initial plan
-and permanent reservation are pushed at `514e376`.
+Fresh T1 producer and boundary runs are in progress; exact counts remain OPEN.
+T3 general-position series/evaluation is in development.
+
+- **PROVED, supplementary check accepted; Claude audit pending:** both limiting
+  edge defects have unique centre minima, vertical `g` and horizontal exactly
+  `1`. [Theory](../topics/padua-lebesgue-followups-20261103/theory/t2-01-edge-centre-minima.md).
+- **PROVED, supplementary check accepted; Claude audit pending:** common
+  logarithmic endpoint expansion with explicit errors.
+  [Theory](../topics/padua-lebesgue-followups-20261103/theory/t2-02-common-endpoint-expansion.md).
+- **PROVED, supplementary check accepted; Claude audit pending:** parity-independent
+  corner constant `c`, with an explicit vanishing remainder and independently
+  reproduced enclosure
+  `1.846160310423926079759838737947 < c < 1.846160310423926079759838737948`.
+  [Constant](../topics/padua-lebesgue-followups-20261103/theory/t4-03-corner-constant.md),
+  [defect limit and series](../topics/padua-lebesgue-followups-20261103/theory/t4-01-corner-defect-limit.md),
+  [one-dimensional bound](../topics/padua-lebesgue-followups-20261103/theory/t4-02-one-dimensional-remainder.md).
+
+The new records currently use their provisional IDs in the linked titles.
+The full PD-T098 expansion, including `-1/N` and the sharper remainder, stays
+OPEN. No finite-degree or all-degree argmax conclusion is added here.
 
 ## Next step
 

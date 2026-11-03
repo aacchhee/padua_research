@@ -21,9 +21,9 @@ Aliases: odd-offset Cauchy deformation; parity-free corner defect integral.
 - Kill criterion: as in attempts/T4.md, recorded before substantive computations.
 - Test discriminability: the limit distinguishes an actual asymptotic constant from mere boundedness; finite matching is regression only.
 - Actual test: cheap 40-digit non-certified quadrature gives 0.9197101183884925350995182257902367461092; proof pending at registration.
-- Disposition: active.
-- Canonical theory: provisional `PD-T?lebesgue-followups-codex-t4-01` (to be written).
+- Disposition: retained; signed-offset limit, summable endpoint control, explicit rate and pole-canceled geometric series written in the canonical theory. [Supplementary independent proof/rerun](independent-checks-analytic.md) accepted the analytic scope and reproduced the exact decimal brackets at two precision/order settings. Required Claude audit remains pending.
+- Canonical theory: provisional `PD-T?lebesgue-followups-codex-t4-01`, with one-dimensional and c-term splits t4-02–03.
 
 ## Deferred stretch routes
 
-No separate mechanism generated yet for optimal remainder or closed form. Any later integer-relation output is MEASURED and cannot establish independence from standard constants.
+No separate sharp-remainder mechanism was generated after the core done criterion. The finite PSLQ search in `evidence/t4-relations.json` found no relation in the two preregistered bases at coefficient height10⁶, tolerance1e-85, max1000steps, using110digits. It is MEASURED and supplies no independence or universal closed-form exclusion. The -1/N and O(log N/N²) targets remain OPEN, deferred rather than rejected.
