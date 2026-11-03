@@ -6,7 +6,9 @@ Stage: WORK. Required Claude audit: PENDING.
 
 ## T1 — degree-eight maxima
 
-In progress. Existing PD-T183 proves at least 44 strict interior maxima.
+PD-T184 is **PROVED** from the two complete reference replays; PD-T180 is
+**PARTIAL**, with its interior conjunct proved and boundary conjunct OPEN.
+The existing PD-T183 lower bound is preserved separately.
 Two complete, separate replays of the retained historical interior proposal
 now verify all 153520 leaves and 541882 ordinary mask records, deriving 44
 interior maxima. Fresh generation and exact input identity remain task
@@ -15,10 +17,11 @@ its complete separate replays are in progress, so the closed count remains OPEN.
 All executions preserve the frozen acceptance predicates. See
 [attempt](attempts/T1.md) and [independent checks](independent-checks-t1.md).
 
-For the paper: do not replace the historical numerical total with a certified
-total until the complete interior, edge and corner checks pass. The existing
-lower bound already exceeds LIT-388's numerical interior entry; the bounded
-[primary-source comparison](literature-comparison.md) preserves this distinction.
+For the paper: exactly 44 strict interior maxima can be stated under
+PD-T184 and the inherited finite-reduction dependencies. This gives a certified
+candidate correction of LIT-388's interior entry 38. Do not replace its numerical
+whole-square total until the complete edge and corner checks pass. The bounded
+[primary-source comparison](literature-comparison.md) preserves that distinction.
 
 ## T2 — centre minima and endpoint behaviour
 

@@ -3,7 +3,7 @@
 - Branch: `codex/padua-lebesgue-followups-20261103` · Base: main `440d107` · Developer: Codex · Auditor: Claude (Opus 5.5)
 - Stage: WORK · Next: `Codex (gpt-6.1-sol xhigh): Continue codex/padua-lebesgue-followups-20261103.` · Open handoff: [handoffs/01-work.md](handoffs/01-work.md)
 - Reserved final-ID ranges: PD-T266–285, PD-N092–099, IDEA356–375, LIT474–481; [reservation and pinned union scan](ALLOCATIONS.md). No final assignments during WORK.
-- Claims: T2–T4 core theorems PROVED with accepted supplementary independent checks; T1 exact counts OPEN while complete runs continue. Required Claude audit PENDING.
+- Claims: T2–T4 core theorems PROVED with accepted supplementary independent checks; T1 exact interior count PD-T184 PROVED on complete reference replays; closed target PD-T180 PARTIAL, with its boundary conjunct OPEN. Fresh reproduction work continues. Required Claude audit PENDING.
 - Open for AC: none at setup. Ask AC before using any machine outside the sandbox.
 
 ## 2026-11-03 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
@@ -68,3 +68,9 @@
 - The raw reference is the durable historical proposal `a3b4f278a322338fb65f60922b4251265288148e1a09fd22882215004e81c324`; new completed receipts are `evidence/t1-reference-interior-check.json` and `evidence/t1-independent-reference-interior-check.json`. These resolve its previously unexecuted full-interior obligations. Fresh generation and exact proof-input identity are still required by the current task.
 - Fresh boundary generation actually exited 0 after 3242.35756 seconds, proposing 16 edge and 2 corner maxima with no unresolved records. Both full original-method boundary replays are now in progress. Generation alone supplies no boundary proof. [Retention/regeneration notes](COLD_STORAGE.md) bind actual working artifacts and preserve the pending physical-delivery limitation.
 - Boundary timeout/resume was considered while the fourth edge ran, then abandoned when the complete original run finished. No resume execution or acceptance predicate was used; the worker retains its disposition and scratch-only diagnostic identities.
+
+## 2026-11-03 — exact interior theorem and fresh continuation
+
+- PD-T184 is PROVED from the two complete actual archived-input replays; distinct Astra review affirmed the written theorem and its separate fresh-reproduction obligation. PD-T180 is PARTIAL by its original registered decomposition: 44 interior PROVED under PD-T184, with the 16-edge/2-corner conjunct still OPEN. The topic's literal proposed PD-T184 row and LIT-388 interior candidate correction are updated; no shared registry changed.
+- Fresh first phase actually exited 0 at its 3600.419-second cap: 71190 visits, 35591 disposed leaves, 9 pending paths (8 left), zero unresolved. Its preserved raw checkpoint is 248930 bytes, SHA-256 `5d7771a8248ee95d27ce45bf9dd8faec34986b200c63dcd19ad35998eba0973c`. Frozen structural continuation preflight passed; it is not full mathematical acceptance.
+- A new reviewed native exact continuation has started with a preregistered 2400-second inner cap. Existing Python-cache boundary checkers remain unchanged. The overall 17:15 UTC ceiling is not renewed.

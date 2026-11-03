@@ -14,10 +14,13 @@ Morrow–Patterson table is made. No third-party PDF/text is committed.
 
 ## Local status
 
-Existing PD-T183 already proves at least 44 distinct strict interior maxima.
-That contradicts 38 as an exact count for the same Padua interpolation problem.
-This topic is attempting the complete degree-eight count with exact predicates
-and independent replay. Until those executions complete, no exact replacement
-total is certified by this topic. A final successful count will be worded as a
-certified candidate correction to this version's numerical table, without
-claiming an accepted erratum, author contact or later-version coverage.
+PD-T184 is now PROVED by complete exact developer and independent replays of
+the retained interior certificate: exactly 44 strict interior maxima. The
+historical PD-T183 lower bound is preserved. Thus 44 is a certified candidate
+correction to this version's numerical interior entry 38, subject to the
+required Claude audit of this development.
+
+The complete boundary replays and assigned fresh interior reproduction remain
+in progress. No exact replacement whole-square total is certified here yet.
+The comparison does not claim an accepted erratum, author contact, later-version
+coverage, or any correction of the separate Morrow–Patterson table.

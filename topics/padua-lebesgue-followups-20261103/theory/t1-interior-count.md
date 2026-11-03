@@ -19,7 +19,7 @@ Frozen A5 finite predicates under PD-T167, PD-T170 and PD-T178; complete supplie
 
 ## Status by part
 
-Overall status: OPEN. No complete fresh tree or replay yet. The existing independently proved lower bound PD-T183 is unchanged; supporting lemmas do not promote this target.
+Overall status: **PROVED**, by two actual complete exact replays of the self-contained archived proposal; required Claude audit pending. PD-T183 retains its separate lower-bound statement. Fresh generation remains an assigned reproduction obligation and its output has no acceptance yet.
 
 ## Depends on
 
@@ -28,6 +28,8 @@ PD-T179 (field), PD-T167 (node-cone exclusion), PD-T170 (generic spatial-certifi
 ## Checks
 
 [Attempt](../attempts/T1.md), [pre-run gate](../gate-t1.md), frozen-schema `topics/padua-proof-attempts-2-20261101/code/a5_n8_schema.md`, and new count-only driver `../code/t1_check.py`. Source/environment receipts under evidence/t1*. Mathematical predicates remain frozen; runtime monomial memoization is bit-identical and separately crossvalidated on frozen n4–7 certificates.
+
+Actual complete archived input SHAa3b4f278a322338fb65f60922b4251265288148e1a09fd22882215004e81c324 is retrievable through the existing canonical cold-storage Git-blob manifest. Developer replay exited0 in2933.331171s, receipt evidence/t1-reference-interior-check.json SHAb009c46a0da82b6d03c5d870e788e8a6d8b9a6210b2193a7265c7c4a771c0a5c. The different agent independently exited0 in2759.5401s, receipt evidence/t1-independent-reference-interior-check.json SHA3971aee06d6bc63d82d1f284312f012788452b4f75f38bd9abf08462d625fcd0. Each verified153520 leaves,541882 ordinary mask records,44 disjoint strict root enclosures,45 node records and3474 direction breakpoints; complete prefix/interior and source/input after-hash guards passed. Both retain false closed-square count flags because no boundary was supplied. The comparison evidence/t1-archived-interior-comparison.json verifies typed equality of their complete mathematical facts. Its separate input-identity record gives canonical proof-payload SHAe22a9b5592d26756aa63bf143ae19f7c55fd56d1d5ecd5860088c0f2587089a1, retaining every proof object and summary count.
 
 ## Sources
 
@@ -39,7 +41,7 @@ The written finite reduction is inherited from PD-T184, not re-proposed. Given a
 
 A verified universal-gradient leaf contradicts stationarity for every compatible mask. A node-cone leaf excludes strict maxima by the complete breakpoint gap/radial remainder/geometry proof. In an ordinary leaf, each compatible mask is disposed by the frozen exact predicate: nonzero gradient, strictly incompatible Hessian, exact regular-point or factor exclusion, flat polynomial exclusion from strict maxima, or a reference to an accepted strict root. Root references verify injectivity on a convex box containing the entire leaf and root enclosure, so any surviving stationary maximum equals that accepted root. No singular-Hessian-only exclusion, Newton-location assumption, symmetry shortcut or unverified progress prefix is used.
 
-Every accepted root box supplies existence, uniqueness, negative-definite Hessian and strict cardinal signs. Pairwise-disjoint root boxes establish distinctness. Thus the number derived from complete verified root records is exactly the strict interior count. At present those finite hypotheses remain unverified for the new complete run, so no promotion is made.
+Every accepted root box supplies existence, uniqueness, negative-definite Hessian and strict cardinal signs. Pairwise-disjoint root boxes establish distinctness. Thus the number derived from complete verified root records is exactly the strict interior count. Both complete archived-input replays now discharge every finite hypothesis: the derived root count is44, hence exactly44 strict interior maxima. This conclusion uses the archived proposal after its actual full acceptance, and does not assign acceptance to a different fresh artifact before exact typed proof-input identity or a full fresh replay.
 
 ## Scope
 
@@ -47,8 +49,10 @@ Degree8 strict interior maxima only; includes x=0. No boundary, global-value or 
 
 ## Open items
 
-Complete fresh producer/continuation, complete direct frozen checker run, independent full replay and required Claude audit. Retain any failed/capped artifact and actual source hashes.
+Required Claude audit. Complete fresh producer/continuation and either exact proof-input identity to the accepted archived proposal or complete fresh replay remain assigned T1 reproduction work; the closed-square boundary count is separate. Retain every failed/capped artifact, actual source hashes and the existing retrievable essential archived tree.
 
 ## History
 
 2026-11-03, Codex /root/t1_certification, configured gpt-6.1-sol medium (parent-reported), rules3f5196cf3639407c25b021fa30f70cc1d3ae113a; unchanged target and OPEN status before finite completion.
+
+2026-11-03 completion checkpoint: actual developer and distinct-agent full exact replays passed as above. This follow-up supplies the dated completion of PD-T184; merged historical theory/registry files remain untouched and parent will propose their updates.

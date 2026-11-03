@@ -1,0 +1,77 @@
+{
+  "bytes": 248930,
+  "command": "PYTHONPATH=/workspace/scratch/lebesgue-t1/deps timeout 3900 python -B topics/padua-lebesgue-followups-20261103/code/t1_produce.py --phase fresh --seconds 3600 --output /workspace/scratch/lebesgue-t1/fresh-interior-memo-v1.json.gz",
+  "count_certified": false,
+  "execution": {
+    "backend": "bit-identical frozen power/products with bounded monomial reuse",
+    "cache": {
+      "currsize": 512,
+      "hits": 15375033,
+      "maxsize": 512,
+      "misses": 206468
+    },
+    "driver_sha256": "1ac5cbb83302d12006f35f042954fd6c76881e263ed6de065ca22c5302a77664",
+    "frozen_sources_unchanged": true,
+    "memo_source_sha256": "d910cb5857a0c09288330925ca833f820690ef76553d8e66402c3e5e352b7e35"
+  },
+  "exit_code": 0,
+  "field_roots_restored": 10,
+  "frozen_sources": {
+    "a5_n8_boundary.py": "6088db34cce2952332bd22e560c8b02e90446236f994dc2bac79b33717e769cb",
+    "a5_n8_boxes.py": "e9d763d409dab8568e4b6c3452ac51283e36b708d8aa733e3f4ac3dda923f958",
+    "a5_n8_field.py": "764a7d7e50718c04f076ab3bbc86270adad1c47bc902d0b8d4eecf32ebbd2ec2",
+    "a5_n8_global.py": "f730b4cc3db102e8615326c60c6a26f28ff4d4ab4815e28aca88c55e05c08c7a",
+    "a5_n8_nodes.py": "c59018d0f17e6d5b9c803e0344cc878e6b067fe8ba457cd4a623bc649b65056b",
+    "a5_n8_schema.md": "1ca5289329359833859960d216b103284457495d6326d35463e18a761d43ed24"
+  },
+  "input_path": "/workspace/scratch/lebesgue-t1/fresh-interior-memo-v1.json.gz",
+  "left_pending": 8,
+  "pending_paths": [
+    "1",
+    "01",
+    "0011",
+    "00101111",
+    "0010111011",
+    "001011101011",
+    "001011101010111",
+    "0010111010101101",
+    "0010111010101100"
+  ],
+  "raw_sha256": "5d7771a8248ee95d27ce45bf9dd8faec34986b200c63dcd19ad35998eba0973c",
+  "recorded_utc": "2026-11-03T12:24:17.084741+00:00",
+  "scope": "actual capped fresh V3; incomplete with retained pending paths; only structural continuation preflight",
+  "structural_continuation_preflight_passed": true,
+  "summary": {
+    "Pcache": 8000,
+    "all_gradient_leaves": 33922,
+    "complete": false,
+    "depth": 30,
+    "interior": 10,
+    "interior_complete": false,
+    "leaf_counts": {
+      "all_gradient": 33922,
+      "gradient": 81332,
+      "hessian": 840,
+      "node_cone": 66,
+      "root": 146
+    },
+    "leaf_pattern_records": 82318,
+    "maximum_ambiguity": 45,
+    "node_leaves": 66,
+    "pending": 9,
+    "seconds": 3600.418962240219,
+    "stats": {
+      "all_gradient": 33922,
+      "discard": 35591,
+      "failedmask": 10940,
+      "gradient": 116564,
+      "hessian": 1913,
+      "mask_checks": 118771,
+      "node_cone": 66,
+      "root": 294,
+      "visited": 71190
+    },
+    "unresolved": 0
+  },
+  "tool_session": 91160
+}

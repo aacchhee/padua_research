@@ -6,8 +6,23 @@ subject to required Claude audit and later preparation. Replace descriptive
 provisional paths by the actual assigned IDs at preparation, preserving all
 original-to-split mappings and histories.
 
-T1 PD-T180/184 changes will be proposed only after complete evidence exists.
+T1 PD-T184 now has complete interior evidence and a proposed row below.
+The PD-T180 total change awaits complete boundary evidence.
 PD-T181 (global degree-eight argmax) and PD-T099 are not changed here.
+
+## PD-T184 — proposed PROOF_STATUS row
+
+Old:
+
+```text
+| PD-T184 (PD-T?proof-attempts-2-codex-65) | Exactly44 strict interior maxima at degree8 | OPEN | Target retained OPEN; supporting results do not discharge completeness/global obligations | OPEN, not rejected; deadline failures are not passes | Exact dependencies and assumptions in the linked record; accepted earlier results retain their IDs | [record](topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-65-degree-eight-exact-interior-count.md) | [Claude audit-01](topics/padua-proof-attempts-2-20261101/audit-01.md); [response-01](topics/padua-proof-attempts-2-20261101/response-01.md) |
+```
+
+New (after required audit):
+
+```text
+| PD-T184 (PD-T?proof-attempts-2-codex-65) | Exactly44 strict interior maxima at degree8 | PROVED | Complete exact developer and distinct-agent replays of the retained self-contained interior tree: 153520 leaves, 541882 ordinary mask records, 44 roots, all node/partition/source obligations checked | Dated completion of the unchanged interior target; boundary and global-value claims are separate | PD-T179, PD-T167, PD-T170, PD-T178; PD-T183 retained separately | [completion record](topics/padua-lebesgue-followups-20261103/theory/t1-interior-count.md); [historical record](topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-65-degree-eight-exact-interior-count.md) | [actual independent replay and source records](topics/padua-lebesgue-followups-20261103/independent-checks-t1.md); required Claude audit must be linked before applying this proposal |
+```
 
 ## PD-T098 — proposed PROOF_STATUS row
 

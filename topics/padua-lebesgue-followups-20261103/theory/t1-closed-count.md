@@ -19,7 +19,12 @@ Complete independent verification of every interior leaf/root/node predicate, fo
 
 ## Status by part
 
-Overall status: OPEN. Interior PD-T184 is OPEN pending complete fresh replay; open-edge/corner finite certificates are still in progress. Existing PD-T183 lower bound and PD-T181 global result retain their separate PROVED scopes.
+Overall status: **PARTIAL** by explicit target decomposition: the44-interior conjunct is PROVED under PD-T184, while the remaining boundary conjunct (18 maxima, split16 on open edges and2 at non-node corners) remains OPEN pending complete independent boundary replay. No measured claim is a part of this decomposition. Existing PD-T183 lower bound and PD-T181 global result retain their separate PROVED scopes.
+
+| Target conjunct | Status | Evidence / outstanding obligation |
+|---|---|---|
+| exactly44 strict interior maxima | PROVED under separate PD-T184 | two actual complete archived-input replays, recorded in t1-interior-count.md |
+| exactly18 strict boundary maxima, split16 edge/2 corner | OPEN | complete fresh proposal exists; original boundary-method replays running |
 
 ## Depends on
 
@@ -31,7 +36,7 @@ See [T1 attempt](../attempts/T1.md), [pre-run gate](../gate-t1.md), count-only c
 
 ## Sources
 
-Existing registered A5 target and LIT-388, arXiv2605.23299v1 §3.3 Table3. Its n8 reported interior38/total56 remain attributed numerical literature facts, not proof inputs. Any completed discrepancy will be worded as a certified candidate correction; no accepted erratum or author contact is claimed. Fulltext reading by this worker remains to be completed before a final source comparison.
+Existing registered A5 target and LIT-388, arXiv2605.23299v1 §3.3 Table3. Its n8 reported interior38/total56 remain attributed numerical literature facts, not proof inputs. Any completed discrepancy will be worded as a certified candidate correction; no accepted erratum or author contact is claimed. Root freshly read the complete13-page v1 source, with Table3 on page9; that reading is recorded in ../literature-comparison.md. This worker's shell request received proxy CONNECT403 and supplies no separate fresh reading.
 
 ## Proof or evidence
 
@@ -39,7 +44,7 @@ The generic finite reduction is PD-T170. The separate accepted interior certific
 
 Frozen dispositions exclude candidates only by being outside the open edge, a nonzero selected-embedding derivative, incompatible cardinal sign, strictly positive tangent second derivative, or strictly positive physical inward derivative. An accepted edge root has strict cardinal signs, strictly negative tangent curvature, endpoint derivative sign change and strictly negative inward derivative, proving a strict relative maximum. Zero normal/curvature and unresolved cases never disappear. Distinct accepted intervals identify distinct edge roots.
 
-Node corners have λ=1≤λ everywhere. At each non-node corner, every active sign choice must have both physical inward derivatives strictly negative. The finite maximum of these active polynomials then strictly decreases along every small nonzero inward segment, proving a strict corner maximum. All strata exhaust the square, and their distinct verified IDs add. These finite obligations remain unfulfilled for the new run, so this record supplies no count proof yet.
+Node corners have λ=1≤λ everywhere. At each non-node corner, every active sign choice must have both physical inward derivatives strictly negative. The finite maximum of these active polynomials then strictly decreases along every small nonzero inward segment, proving a strict corner maximum. All strata exhaust the square, and their distinct verified IDs add. The interior obligations are now discharged under separate PD-T184. Complete fresh boundary generation produced16 edge and2 corner proposals with no unresolved cases, but the two complete boundary-method replays remain pending, so the exact62 closed-square conclusion is not promoted yet.
 
 ## Scope
 
@@ -47,8 +52,10 @@ Degree8 strict local count only. No repeat of global-value certification, no non
 
 ## Open items
 
-Fresh complete interior and boundary artifacts; direct full checker acceptance; actual different-agent full replay; small essential committed evidence/cold-storage manifest and required Claude audit. Runtime cap or missing serialization is an operational obstruction, not a mathematical refutation.
+Complete fresh interior generation and typed proof-input identity to the now-verified archived certificate; otherwise a full fresh interior replay. Complete original boundary-method executions by both distinct agents on the already generated fresh boundary artifact, followed by literal join/component identity and all original summary/accounting predicates under the independently accepted composition protocol. Small essential receipts and precise regeneration/retrieval manifest, plus required Claude audit. Runtime caps or missing serialization remain operational obstructions rather than mathematical refutations.
 
 ## History
 
 2026-11-03, Codex /root/t1_certification, configured gpt-6.1-sol medium per parent, rules3f5196cf3639407c25b021fa30f70cc1d3ae113a. Original target and OPEN status retained before computations finish.
+
+2026-11-03 checkpoint: PD-T184 completed by two actual full exact archived-input replays; closed-square target is PARTIAL in the precise two-conjunct sense above. Fresh generation remains required reproduction work, and no fresh proof-input equality or complete boundary count has yet been claimed.
