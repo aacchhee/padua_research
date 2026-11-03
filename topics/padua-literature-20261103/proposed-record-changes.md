@@ -360,3 +360,145 @@ In `### LIT-117 …` and `### LIT-118 …`: set Verification to VERIFIED-fulltex
 - IDEA?bivariate-lanczos-claude-041 (deferred, coordinate with Leuven): the source's stated future work (LIT?…-74; SINUM §7) still lists nearest-neighbour recurrences as open. No change to the IDEA status; P4 registers nothing.
 - Bivariate Lanczos / V+A briefs: cite LIT-347 (corrected) and LIT?…-71/72 as 1-D comparators, as proposed in the assessment note.
 
+
+## P2 (from the P2 reader, Claude Opus 5.5 high; integrated by the orchestrator)
+
+Addenda for existing records are under [addenda/](addenda/).
+
+
+Claude, Opus 5.5, high, 2026-11-03, rules `af1ac9fde6b23cb9cd826a33d5611680566c52cb`. To be applied by the orchestrator at PR preparation only. Provisional IDs `LIT?padua-literature-claude-20…24` get final IDs from the topic's reserved range. Old strings below are copied from the files at `af1ac9f`.
+
+## 1. literature/INDEX.md — existing rows
+
+### LIT-014 (line 20)
+
+Old:
+```
+| LIT-014 | reported / UNVERIFIED | Multidimensional Lissajous–Chebyshev interpolation/discrete orthogonality is relevant predecessor; characteristic transfer is an unverified proposed derivation. | dencker-erb-2017 | exact theorem pending | [record](records/dencker-erb-2017.md) | supplied secondary account only; original fulltext NOT inspected |
+```
+New:
+```
+| LIT-014 | LITERATURE / primary reading (2026-11-03) | Dencker–Erb JAT 219 (2017): discrete Chebyshev orthogonality on Lissajous–Chebyshev nodes (Prop. 2.5, Thm 2.7), interpolation (Thm 2.8) and positive Chebyshev quadrature (Thm 2.10); Padua case n=(m,m+1). The 2026-10-31 "characteristic transfer" remains an unverified proposed derivation. | dencker-erb-2017 | journal pp. 23–34: (2.1), (2.4), (2.12)–(2.14), (2.19), (2.25), (2.32), (2.36); Prop 2.5 p. 28, Thm 2.7 p. 30, Thm 2.8 p. 32, Thm 2.10 p. 34 | [record](records/dencker-erb-2017.md) | journal §§2.1–2.3 read from AC-supplied PDF and compared with arXiv v2 (identical on inspected items); other sections not read |
+```
+
+### LIT-046 (line 57)
+
+Old:
+```
+| LIT-046 | source statement / discovery | explicitly conditional CC application; exact hypotheses and limitations in record | mz-an-wu-2022 | record-specific locator | [mz-an-wu-2022.md](records/mz-an-wu-2022.md) | selected text, abstract, metadata or UNVERIFIED as individually labeled; no blanket fulltext claim |
+```
+New:
+```
+| LIT-046 | source statement / discovery | explicitly conditional CC application; exact hypotheses and limitations in record; 2026-11-03 screen: no Padua, square or 2-D Chebyshev-type MZ statement in published or arXiv v3 text | mz-an-wu-2022 | record-specific locator | [mz-an-wu-2022.md](records/mz-an-wu-2022.md) | selected text, abstract, metadata or UNVERIFIED as individually labeled; no blanket fulltext claim |
+```
+
+### LIT-058 (line 69)
+
+Old:
+```
+| LIT-058 | source statement / discovery | PDE-method ancestor, unresolved norm comparison; exact hypotheses and limitations in record | mz-don-gottlieb-1994 | record-specific locator | [mz-don-gottlieb-1994.md](records/mz-don-gottlieb-1994.md) | selected text, abstract, metadata or UNVERIFIED as individually labeled; no blanket fulltext claim |
+```
+New:
+```
+| LIT-058 | source statement / discovery | PDE-method ancestor: L² stability via GLL ghost points; nodal form = pull-back of discrete GLL energy; no norm-equivalence constants | mz-don-gottlieb-1994 | journal Thm 3.1.1 p. 1524, Thm 3.1.2 pp. 1524–1525, Lemma 4.1/Thm 4.1 pp. 1528–1529 | [mz-don-gottlieb-1994.md](records/mz-don-gottlieb-1994.md) | ICASE 93-40 report and journal (AC-supplied, OCR) read; identical on items used |
+```
+
+### LIT-294 (line 92)
+
+Old:
+```
+| LIT-294 | converse MZ, Jacobi nodes | König–Nielsen: same-weight Jacobi node/Christoffel/measure characterization, p in (μ,M); log growth of test norms at p=M | mz-prior-art-2026-additions | Thm 1 (arXiv math/9208201) | [record](records/mz-prior-art-2026-additions.md) | arXiv v1 via extraction; journal version not compared |
+```
+New:
+```
+| LIT-294 | converse MZ, Jacobi nodes | König–Nielsen: same-weight Jacobi node/Christoffel/measure characterization, p in (μ,M), M=4(a+1)/(2a+1) for a=max(α,β)>−1/2 and M=∞ otherwise; log growth of test norms at p=M; Remark (1): degree ≤ n/2 holds for all p | mz-prior-art-2026-additions | Thm 1 arXiv v1 pp. 3–4; (18)–(19) p. 15; Remark (1) p. 16 | [record](records/mz-prior-art-2026-additions.md) | arXiv v1 read directly 2026-11-03; journal: only p. 183 preview (matches); journal body unlicensed, not compared |
+```
+
+### LIT-427 (line 499)
+
+Old:
+```
+| LIT-427 | LITERATURE / selected primary reading | Sommariva–Vianello–Zanovello, Nontensorial Clenshaw–Curtis cubature, Numer.Algorithms49 (2008),409–427 | Campaign primary record | Exact equations/pages in source record | [record](records/mz2d-sommariva-vianello-zanovello-2008.md) | Selected author-text reading; named final-version gaps remain |
+```
+New:
+```
+| LIT-427 | LITERATURE / primary reading (journal, 2026-11-03) | Sommariva–Vianello–Zanovello, Nontensorial Clenshaw–Curtis cubature, Numer.Algorithms49 (2008),409–427: signed interpolatory Padua rule (33)/(36), exactness n, Σ|λ|→4 (Thm 1; asserted for λ*), negative weights p. 421 / Table 1; eq. (25) misprints the denominator in preprint and journal | Campaign primary record | journal pp. 413 (Thm 1), 415 ((16)–(19)), 417 ((24)–(25)), 418–420 ((26)–(36)), 421 (Table 1) | [record](records/mz2d-sommariva-vianello-zanovello-2008.md) | journal pp. 409–421 read, 422–427 screened |
+```
+
+## 2. literature/INDEX.md — new rows (append to the topic's section)
+
+```
+| LIT?padua-literature-claude-20 | LITERATURE / primary reading (arXiv) | Kolomoitsev–Lomako–Prestin JAT 229 (2018): two-sided L^p MZ at Lissajous–Chebyshev/Padua nodes, positive Chebyshev weights, Chebyshev-weighted L^p, unspecified constants (Lemma 5.1, from Erb 2016); L^p interpolation error bounds (Thms 4.1–4.5) | kolomoitsev-lomako-prestin-2018 | arXiv v1 Lemma 5.1 p. 11; Thms 4.1–4.5 pp. 7–11 | [record](records/kolomoitsev-lomako-prestin-2018.md) | arXiv v1 pp. 1–12, 16, 19; journal not read |
+| LIT?padua-literature-claude-21 | LITERATURE / complete reading | Wu AML 182 (2026) 110033: MZ condition ⇒ discrete Riesz map spectral equivalence and Galerkin stability with error ∝ MZ defect; no CC/Padua example | wu-aml-2026 | Prop 2.1, Lemma 2.1 p. 2; Thm 3.1 p. 3; Cor 3.1 p. 4 | [record](records/wu-aml-2026.md) | complete (AC-supplied PDF) |
+| LIT?padua-literature-claude-22 | LITERATURE / screen | An–Ran–Wu survey, DRNA 18(1) (2025) 135–145: no MZ statement for Padua/square/Chebyshev rules; calls Padua-set hyperinterpolation open (positive-weight sense); multivariate MZ "relatively limited" | an-ran-wu-2025 | arXiv v1 §2.3 pp. 3–4, §3.1 p. 5 | [record](records/an-ran-wu-2025.md) | arXiv v1 keyword screen + sections; journal body not read |
+| LIT?padua-literature-claude-23 | LITERATURE / selected reading | De Marchi–Kroó, Acta Math. Hungar. 154 (2018) 69–89: MZ meshes on multivariate domains with unspecified oversampling/constants; explicit 1-D CGL Lemma 1 (constants 2/3, 2) only for m ≥ 18pk+1 | demarchi-kroo-2018 | Lemma 1 pp. 72–73; Thm 1 p. 73; Thm 2 p. 77; Remark pp. 88–89 | [record](records/demarchi-kroo-2018.md) | journal pp. 69–75 + screened statements |
+| LIT?padua-literature-claude-24 | LITERATURE / selected reading | Wu arXiv 2411.16584v3: MZ for scattered data on triangles/polygons (positive triangulation weights, mesh-controlled degree) | wu-polygons-2024 | Thms 3.1–3.6 pp. 4–11 | [record](records/wu-polygons-2024.md) | abstract + theorem statements |
+```
+
+## 3. literature/CORPUS.md
+
+### dencker-erb-2017 (line 20)
+
+Old:
+```
+| dencker-erb-2017 | Dencker–Erb, Multivariate polynomial interpolation on Lissajous–Chebyshev nodes, JAT (2017) | https://arxiv.org/abs/1511.04564 | supplied account; fulltext pending | supplied secondary account only; original fulltext NOT inspected | [record](records/dencker-erb-2017.md) | original fulltext/hypotheses |
+```
+New:
+```
+| dencker-erb-2017 | Dencker–Erb, Multivariate polynomial interpolation on Lissajous–Chebyshev nodes, JAT 219 (2017) 15–45 | https://doi.org/10.1016/j.jat.2017.03.003 ; https://arxiv.org/abs/1511.04564 | journal PDF supplied by AC (Downloads\padua\papers); arXiv v2 open | journal §§2.1–2.3 (pp. 23–34) read and compared with arXiv v2 | [record](records/dencker-erb-2017.md) | §§1, 3 not read |
+```
+
+### mz-don-gottlieb-1994 (line 58)
+
+Old:
+```
+| mz-don-gottlieb-1994 | mz-don-gottlieb-1994 — Chebyshev–Legendre method | https://doi.org/10.1137/0731079 | see exact per-statement coverage | [mz-don-gottlieb-1994.md](records/mz-don-gottlieb-1994.md) | named gaps retained in record; historical fulltexts may be pending-reference |
+```
+New:
+```
+| mz-don-gottlieb-1994 | mz-don-gottlieb-1994 — Chebyshev–Legendre method | https://doi.org/10.1137/0731079 | see exact per-statement coverage; journal PDF supplied by AC 2026-11-03 | [mz-don-gottlieb-1994.md](records/mz-don-gottlieb-1994.md) | journal-vs-report gap closed 2026-11-03 (OCR text; formulas not image-checked) |
+```
+
+### mz-prior-art-2026-additions (line 65) — gaps column only
+
+Old (end of row):
+```
+| König–Nielsen journal version; Hadronic Press 2000 Mastroianni–Russo (Xu I/II read later, LIT-296; Mastroianni–Milovanović–Notarangelo 2012 added as LIT-299, https://doi.org/10.2298/PIM1205163M) |
+```
+New:
+```
+| König–Nielsen journal body (De Gruyter "Unlicensed" 2026-11-03; only p. 183 preview read; https://doi.org/10.1515/form.1994.6.183); Hadronic Press 2000 Mastroianni–Russo (Xu I/II read later, LIT-296; Mastroianni–Milovanović–Notarangelo 2012 added as LIT-299, https://doi.org/10.2298/PIM1205163M) |
+```
+
+### New CORPUS rows
+
+```
+| kolomoitsev-lomako-prestin-2018 | Kolomoitsev–Lomako–Prestin, On L_p-error of bivariate polynomial interpolation on the square, JAT 229 (2018) 13–35 | https://doi.org/10.1016/j.jat.2018.02.005 ; https://arxiv.org/abs/1712.06075 | arXiv v1 open | arXiv pp. 1–12, 16, 19 | [record](records/kolomoitsev-lomako-prestin-2018.md) | journal body; arXiv pp. 13–15, 17–18 |
+| wu-aml-2026 | H.-N. Wu, Marcinkiewicz–Zygmund stability of quadrature-based Galerkin schemes, Appl. Math. Lett. 182 (2026) 110033 | https://doi.org/10.1016/j.aml.2026.110033 | publisher PDF supplied by AC | complete | [record](records/wu-aml-2026.md) | none |
+| an-ran-wu-2025 | An–Ran–Wu, The path of hyperinterpolation: a survey, Dolomites Res. Notes Approx. 18(1) (2025) 135–145 | https://doi.org/10.25430/pupj-DRNA-2025-1-11 ; https://arxiv.org/abs/2510.04904 | arXiv v1 open | keyword screen + §§2.3, 3.1–3.2 | [record](records/an-ran-wu-2025.md) | journal body; full read |
+| demarchi-kroo-2018 | De Marchi–Kroó, Marcinkiewicz–Zygmund type results in multivariate domains, Acta Math. Hungar. 154 (2018) 69–89 | https://doi.org/10.1007/s10474-017-0769-4 | publisher PDF via institutional access (browser) | pp. 69–75 + screened statements | [record](records/demarchi-kroo-2018.md) | proofs pp. 76–88 |
+| wu-polygons-2024 | H.-N. Wu, Marcinkiewicz–Zygmund inequalities for scattered data on polygons, arXiv 2411.16584v3 (2024); no journal DOI known | https://arxiv.org/abs/2411.16584 | arXiv open | abstract + theorem statements | [record](records/wu-polygons-2024.md) | proofs, numerics, publication status |
+```
+
+## 4. Existing records — append sections
+
+- `literature/records/mz2d-sommariva-vianello-zanovello-2008.md`: replace the paragraph beginning "**Preprint-specific discrepancy:**" by the "New" text in `records/mz2d-sommariva-vianello-zanovello-2008.addendum.md` §"Old → new corrections"; replace "Publisher access was subscription-preview only." accordingly; append the whole addendum as a dated section "## 2026-11-03 journal-body reading (topic padua-literature-20261103)"; History line: "2026-11-03: journal body read; (25) misprint confirmed in journal; locators added."
+- `literature/records/mz-prior-art-2026-additions.md`, LIT-294 section: apply the three Old→New replacements listed in `records/mz-prior-art-2026-additions.addendum.md` and append it as a dated subsection.
+- `literature/records/mz-don-gottlieb-1994.md`: append `records/mz-don-gottlieb-1994.addendum.md` as "## 2026-11-03 journal-version comparison".
+- `literature/records/dencker-erb-2017.md`: change header "Reading coverage: supplied secondary account only; original fulltext NOT inspected." to "Reading coverage: 2026-10-31 supplied secondary account; 2026-11-03 journal §§2.1–2.3 read (see dated section)."; append `records/dencker-erb-2017.addendum.md`.
+- `literature/records/mz-an-wu-2022.md`: append `records/mz-an-wu-2022.addendum.md`.
+- New record files: copy `records/kolomoitsev-lomako-prestin-2018.md`, `wu-aml-2026.md`, `an-ran-wu-2025.md`, `demarchi-kroo-2018.md`, `wu-polygons-2024.md` into `literature/records/` after final-ID substitution.
+
+## 5. Merged topic files (historical; add dated notes, do not rewrite)
+
+- `topics/padua-mz-2d-20261101/literature.md`, LIT-427 section: after the "Preprint-specific discrepancy" paragraph add: "2026-11-03 note (padua-literature-20261103): the journal body (p. 417) prints the same (n+2)(n+3) denominator; the misprint is in both versions. See literature/records/mz2d-sommariva-vianello-zanovello-2008.md." LIT-014 section: add "Journal body compared 2026-11-03: identical to arXiv v2 on the inspected items."
+- `topics/padua-mz-2d-20261101/report.md`, "Missing independent final-version comparisons": add a dated note "SVZ, Dencker–Erb journal bodies read 2026-11-03 (padua-literature-20261103); KLP read from arXiv v1; Xu 1996, Kolomoitsev–Lomako 2021 and ASV published bodies remain unread by this P2 reader."
+- `topics/mz-prior-art-20261101/comparison.md`, row "Forward citations 2010–2026": add a dated note "Wu, Appl. Math. Lett. 182 (2026) 110033 read in full 2026-11-03: abstract MZ ⇒ Galerkin stability, no CC constants; verdict unchanged."; row "König–Nielsen": add "parameter restriction confirmed from arXiv pp. 3, 15; journal body not accessible (unlicensed) 2026-11-03."; row "Don–Gottlieb": add "journal version compared 2026-11-03: identical on items used."
+
+## 6. Link-table corrections (p2-links.md / DOWNLOADS.md)
+
+- Row 4a: the publisher page title is "Vector-valued Lp-convergence …" (hyphen), as is the arXiv PDF title; the arXiv abs page has a journal-ref "Forum Math. 6 (1994), 183-207", which confirms the page range. Access status: De Gruyter "Unlicensed" in AC's browser on 2026-11-03 → keep on AC's list.
+- Row 6b: arXiv 1511.04564v2 does carry a journal reference to J. Approx. Theory 219 (2017) (abs page, 2026-11-03); the "no journal-ref" note is wrong. Journal now read (AC-supplied).
+- Row 6a, 6f, 3, 4b: status "read" (journal for 6a, 3, 4b; arXiv v1 for 6f).
+- Row 8.3: published version is Dolomites Res. Notes Approx. 18(1) (2025) 135–145, DOI 10.25430/pupj-DRNA-2025-1-11 (doi.org resolves to the DRNA page with matching metadata).
+- New leads: De Marchi–Kroó 2018 (DOI 10.1007/s10474-017-0769-4, read in part); Erb, Appl. Math. Comput. 289 (2016) 409–425 (source of the KLP Lemma 5.1 MZ inequalities; DOI not verified; unread).

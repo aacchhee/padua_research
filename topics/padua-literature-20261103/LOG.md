@@ -54,3 +54,11 @@
   - 4 addenda for existing records in [addenda/](addenda/).
   - P4 blocks in proposed-record-changes.md; [bib/leuven-iep.bib](bib/leuven-iep.bib).
   - Orchestrator check: memo and records spot-read; no verbatim third-party passages beyond titles. Keyword search of all P4 sources for bivariate/multivariate/Padua/Chesnokov: zero hits.
+- 2026-11-03 ~14:15: P2 integrated, from the P2 reader subagent (Claude Opus 5.5 high).
+  - [p2-comparison.md](p2-comparison.md); 5 new records (LIT?padua-literature-claude-20…24); 5 addenda; P2 blocks in proposed-record-changes.md; [bib/padua-mz.bib](bib/padua-mz.bib); [check/](check/).
+  - Main findings:
+    - the SVZ eq. (25) denominator misprint is also in the journal version (p. 417, page image), and Table 1 confirms the correct form;
+    - PD-T106 is now IMPLIES PART;
+    - Wu AML 2026, Don–Gottlieb journal and Dencker–Erb journal gaps are closed;
+    - König–Nielsen journal body: De Gruyter showed "Unlicensed", so it is still unread.
+  - Orchestrator rerun of check/svz_table1.py: reproduced (see check/README.md). PDF text extracts are kept off-repo.
