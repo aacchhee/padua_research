@@ -26,3 +26,17 @@
 - Rules read at branch head `0a173a29ec938c47f8a5a1942208edf03ab2f767` (AGENTS.md, agents/WORKFLOW.md, agents/claude/CLAUDE_ROLES.md). Role: topic orchestrator and literature developer. `origin/main` = `440d1079e42c` (unchanged since the branch was cut; no merge needed).
 - Step 1 inventory: AC granted access to `Downloads\padua` and `Downloads\bttb` (an earlier automatic request was refused; AC then authorised it in chat at 13:28). Listed `Downloads\padua\papers` (24 PDFs) and `Downloads\bttb\papers` (≈230 files). Filenames only are recorded in [inventory.md](inventory.md); citation matching is delegated (Sonnet 5.5 medium).
 - Step 2 search and verify: delegated per pack to Sonnet 5.5 high subagents (P1, P2, P3, P4), with Crossref (`api.crossref.org/works/<doi>` via WebFetch) as the DOI check. The shell cannot reach doi.org, Crossref or arXiv (proxy refuses); WebFetch can.
+- Steps 1–3 done (2026-11-03, about 13:30–14:25 local):
+  - Inventory: all 24 `Downloads\padua\papers` files matched to citations (21 Crossref-confirmed, 1 partial, 2 offline-only: TW629, Humet thesis).
+  - Link verification: four Sonnet 5.5 high subagents, one per pack. Claude spot-checked the load-bearing items and read the key ones itself (see step-4 notes below).
+  - [DOWNLOADS.md](DOWNLOADS.md) v1 written and sent to AC.
+- Access method: text extraction with pdf.js in the built-in browser on AC's computer.
+  - Works: arXiv, Springer (NTNU), Math-Net.ru, UMJ, DergiPark, author pages.
+  - ScienceDirect and SIAM stop at a bot check, which is not bypassed. Those items are in DOWNLOADS Part A.
+  - Browser downloads do not land in a connected folder, so no PDFs were saved on AC's machine.
+- Step-4 readings so far, by Claude (opus); paraphrase notes are kept off-repo until the records are written:
+  - Białas-Cież–De Marchi–Suder arXiv 2605.23299v1: complete.
+  - Kolomoitsev–Lomako arXiv 2009.07114v1: locator check for audit F6. Thm 2.1 p. 4; Lemma 3.5/(3.20) pp. 10–11; Lemma 3.6/(3.29) pp. 11–12. Confirmed against the printed running heads. (3.27)–(3.30) are imported from Kuznetsova 1995.
+  - Kuznetsova, Ukrainian Math. J. 47 (1995): complete; Thm 1 checked on the page image.
+  - Pimenova, Dokl. 249 (1979): OCR text only.
+  - Corner statements: CDMSV 5ECM poster 2008 (Conjecture); De Marchi, CMA 5(1) 2022 §3.3(2) p. 23; BCDMV, Computing 76 (2006) pp. 318–319 (Xu points).
