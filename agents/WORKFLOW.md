@@ -104,7 +104,19 @@ Generated outputs remain off-repository by default. AC chooses a Padua-specific 
 
 Results tracking is repository-only. Each topic keeps its results file `results/<topic-slug>.md` in the repository, committed on the topic branch. Only that topic's orchestrator writes it, appending or revising its own entries: meaningful results with status, final or provisional IDs and links to the durable records and evidence, plus the current next step. The repository-root `RESULTS.md` is the merged view: it holds one section per topic, headed by the topic slug. A topic changes only its own section there, and only at PR preparation, in its own PR, by appending or replacing that section from its own results file. Never rewrite another topic's section or regenerate `RESULTS.md` from an older copy. A conflict in it is reconciled at integration like any shared registry, keeping every topic's section. A lost section is restored from that topic's results file. These are short hand-written summaries, not generated outputs. All agent work, including results, logs, handoffs, registries, code and committed evidence, must be possible from a cloud session with only the repository and the network. AC's computer (`Downloads\padua`) is needed only for reference papers that cannot be fetched (`Downloads\padua\papers`) and for the Padua cold storage of large artifacts (`Downloads\padua\cold_storage\<slug>\`). Agents write to it only through the cold-storage procedure above, or at AC's explicit request; when it is unreachable, they record the pending item and continue. Local files carrying third-party text or private material stay out of Git.
 
-A committed generated file must be necessary and no larger than 1 MB; all committed generated outputs together must remain under 5 MB. If evidence exceeds these limits, store it in cold storage and commit its manifest, small checker, and checker output/result. Such a verified, retrievable artifact may supply the large evidence component; state any resulting verification limitation. Do not claim a computer proof is complete while required code, evidence records, or independent checks are absent. Do not split files to evade limits. These limits do not authorize deleting historical artifacts.
+Do not store large outputs that can be regenerated (AC, 2026-11-02). Commit all code needed to regenerate and check outputs. Commit only short summaries, receipts and small essential evidence (normally under 16 KiB per file). Committed generated outputs of the whole repository together stay well below 5 MB; AC judged 18 MB too much.
+
+Move larger outputs to cold storage, including logs, raw screens, reruns and copies, bulk certificates and large manifests. Record each moved file in `<topic>/cold-storage.json` and `<topic>/COLD_STORAGE.md` with:
+- its SHA-256 and byte size;
+- its Git blob at a pushed source commit, or its cold-storage locator;
+- its frozen generating command and checker command;
+- where its short summary lives.
+
+`tools/cold_storage.py` plans, verifies, restores, cleans and exports these files.
+
+A verified, retrievable artifact may supply the large evidence component of a claim; state any resulting verification limitation. Do not claim a computer proof is complete while required code, evidence records, or independent checks are absent.
+
+Do not split files to evade limits. Moving a file to cold storage with its pinned bytes is not deleting a historical artifact. Rewriting Git history to purge blobs is AC's decision alone.
 
 ## Audit and PR records
 

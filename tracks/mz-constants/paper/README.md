@@ -11,7 +11,7 @@ This is a complete development draft with proofs and bibliography (17 pages afte
 - [Development/readiness record](../../../topics/mz-constants/directions/M7/manuscript-record.md)
 - [Independent scientific audit and source-reading coverage](../../../topics/mz-constants/independent-astra-01.md)
 - [Literature search and unresolved full-text gaps](../../../topics/mz-constants/literature-search.md)
-- [Final ID allocation map](../../../topics/mz-constants/final-id-map.json)
+- [Final ID allocation map](../../../topics/mz-constants/COLD_STORAGE.md)
 
 Only final PD/LIT identifiers occur in the manuscript and bibliography. The manuscript synthesizes the accepted analytic claims; writing it does not upgrade audit, historical novelty, or the OPEN sharpenings. No private theorem or third-party full-text extract is included.
 
@@ -52,7 +52,7 @@ The original v1 artifact SHA-256 identities and byte sizes are recorded in `manu
 
 ## Numerical provenance
 
-Tables are transcribed, rounded, and checked against [the bounded reproduction](../evidence/reproduction.json) and [its durable measured record](../theory/reproduced-spectra.md). The manuscript worker reviewed these existing outputs; it did not rerun the numerical suite and does not call that review an independent execution.
+Tables are transcribed, rounded, and checked against [the bounded reproduction](../COLD_STORAGE.md) and [its durable measured record](../theory/reproduced-spectra.md). The manuscript worker reviewed these existing outputs; it did not rerun the numerical suite and does not call that review an independent execution.
 
 The producer command, already executed by the reproduction developer and separately replayed by Astra, is:
 

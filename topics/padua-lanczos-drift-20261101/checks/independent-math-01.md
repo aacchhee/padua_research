@@ -2,7 +2,7 @@
 
 Role: independent supplementary Codex adversarial mathematical checker. This is not the required Claude audit and does not authorize merging. Requested audit allocation is gpt-6-astra, xhigh; the exact runtime model/effort is not independently exposed to this worker. No Git operations or changes to developer-owned files were performed.
 
-Rules read at `6920ba632843597c37e1493d077c1df2e89f54cb`; parent synchronized base `806cc7b4509fd93bae652f9545d32d95529f8281`. The working branch remained under the parent orchestrator's control. Files were changing during review, so the authoritative reviewed content identities are the SHA-256/size entries in [independent-math-01.json](../evidence/independent-math-01.json), rather than a claim that every reviewed byte belonged to the initial head. The evidence contains all five independently regenerated degree-12 records, not only local output locators.
+Rules read at `6920ba632843597c37e1493d077c1df2e89f54cb`; parent synchronized base `806cc7b4509fd93bae652f9545d32d95529f8281`. The working branch remained under the parent orchestrator's control. Files were changing during review, so the authoritative reviewed content identities are the SHA-256/size entries in [independent-math-01.json](../COLD_STORAGE.md), rather than a claim that every reviewed byte belonged to the initial head. The evidence contains all five independently regenerated degree-12 records, not only local output locators.
 
 ## Result and scope
 
@@ -82,7 +82,7 @@ The finite exact computations trust CPython integer arithmetic and python-flint.
 
 ## Supplement 01 — formal scalar graph and later proof impact
 
-This supplement extends the original snapshot above; it does not overwrite its provenance. Its exact content identities and essential regenerated outputs are in [independent-scalar-01.json](../evidence/independent-scalar-01.json), 186681 bytes at this receipt, SHA-256 `2d06b3b4e04956f9c9e2f4127c3937543dc92ee071de2926589d0a40c9bf6a10`. The independently authored receipt checker is `tracks/bivariate-lanczos/code/drift/check_independent_scalar.py`, SHA-256 `b711a1035d0709232b1854b3fb9334fe4e4a11cde26810dda08505d97f7d9aa4`. It checks rational equality/enclosures and records provenance; it is not a second implementation of the degree-12 scalar graph.
+This supplement extends the original snapshot above; it does not overwrite its provenance. Its exact content identities and essential regenerated outputs are in [independent-scalar-01.json](../COLD_STORAGE.md), 186681 bytes at this receipt, SHA-256 `2d06b3b4e04956f9c9e2f4127c3937543dc92ee071de2926589d0a40c9bf6a10`. The independently authored receipt checker is `tracks/bivariate-lanczos/code/drift/check_independent_scalar.py`, SHA-256 `b711a1035d0709232b1854b3fb9334fe4e4a11cde26810dda08505d97f7d9aa4`. It checks rational equality/enclosures and records provenance; it is not a second implementation of the degree-12 scalar graph.
 
 **Executed scalar checks.** Independently reran both full-graph comparator uppers, both coherent-node BJ lower witnesses, and both BJ multi-node capacity/greedy-sign generators at degree 12. The triangle target is 86 and the rotated target is 90. The prior scalar-source records only select candidate nodes; each run rebuilds the exact basis and relevant responses. The multi-node run uses the independently regenerated coherent-node output. Independently reran the explicit final-normal-projection checker on both regenerated multi-node artifacts. Thus the latter checks did not rely on unregenerated developer capacities.
 

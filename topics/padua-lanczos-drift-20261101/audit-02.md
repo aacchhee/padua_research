@@ -30,11 +30,11 @@ The detailed reports and actual commands are part of this audit:
 
 | Scope | Reviewer record | Essential evidence |
 |---|---|---|
-| E1 | [E1.md](checks/audit-02/E1.md) | [audit-02-e1-checks.json](evidence/audit-02-e1-checks.json) |
-| E3/E4 | [E34.md](checks/audit-02/E34.md) | [audit-02-e34-checks.json](evidence/audit-02-e34-checks.json) |
-| E5 | [E5.md](checks/audit-02/E5.md) | [audit-02-e5.json](evidence/audit-02-e5.json) |
-| E6 | [E6.md](checks/audit-02/E6.md) | [audit-02-e6-checks.json](evidence/audit-02-e6-checks.json) |
-| Protocol/artifacts | [Protocol.md](checks/audit-02/Protocol.md) | [artifact receipt](evidence/audit-02-protocol-artifacts.json), [text receipt](evidence/audit-02-protocol-text.json) |
+| E1 | [E1.md](checks/audit-02/E1.md) | [audit-02-e1-checks.json](COLD_STORAGE.md) |
+| E3/E4 | [E34.md](checks/audit-02/E34.md) | [audit-02-e34-checks.json](COLD_STORAGE.md) |
+| E5 | [E5.md](checks/audit-02/E5.md) | [audit-02-e5.json](COLD_STORAGE.md) |
+| E6 | [E6.md](checks/audit-02/E6.md) | [audit-02-e6-checks.json](COLD_STORAGE.md) |
+| Protocol/artifacts | [Protocol.md](checks/audit-02/Protocol.md) | [artifact receipt](COLD_STORAGE.md), [text receipt](evidence/audit-02-protocol-text.json) |
 
 ## New findings
 

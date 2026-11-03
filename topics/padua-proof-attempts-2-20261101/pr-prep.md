@@ -20,7 +20,7 @@ Stage **PR**. AC explicitly authorized final IDs and shared updates after mergin
 | B3 | PD-N072 PROVED; specified S(α) REJECTED: refuted in genuine positive computed sections at fixedn1,p1/10,M4. PD-T193/PD-N073 support only the scoped common-cluster route obstruction. Other F/reference-existence questions remain OPEN. |
 | B1 | PD-T194–197 PROVED for exterior real parallel diagonal poles, every fixed admissible sample/finiteT; literal source taper except finitely many parameters. Other classes, individual stored parameters and stability remain OPEN. |
 
-[Exact map](preparation/final-id-map.json): 42 PD-T records (156–197), two PD-N (072–073), 26 IDEA records (286–311). Provisional aliases remain in durable files and crosswalks. Permanent unused headroom: PD-T198–205, PD-N074–077, IDEA-312–315. No LIT range: reuse existing LIT-312/379/388.
+[Exact map](COLD_STORAGE.md): 42 PD-T records (156–197), two PD-N (072–073), 26 IDEA records (286–311). Provisional aliases remain in durable files and crosswalks. Permanent unused headroom: PD-T198–205, PD-N074–077, IDEA-312–315. No LIT range: reuse existing LIT-312/379/388.
 
 The [candidate catalogue](preparation/ideas-registration.md) retains successful, abandoned, consolidated and deferred routes, including both original n4 aliases, all B3 candidates and the incomplete degree-eight continuations. No failed route rejects a parent theorem. No measured fit or census becomes a proof. Primary Table3 readings remain LITERATURE and the count discrepancies remain scoped candidate corrections, not accepted errata; no author contact.
 

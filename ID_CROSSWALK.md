@@ -232,7 +232,7 @@ Same authoritative [batch ledger](topics/padua-batch-20261031/ALLOCATIONS.md); n
 
 **Final IDs allocated 2026-11-01** by Claude under AC's explicit authorisation, recorded in the [batch ledger](topics/padua-batch-20261031/ALLOCATIONS.md): PD-T081–PD-T094, PD-N032–PD-N038, IDEA-177–IDEA-189, LIT-300–LIT-331. Provisional IDs are kept in parentheses or as aliases for provenance; the full map is [id-map.json](topics/programme-ideas-20261031/pr-prep/id-map.json).
 
-Historical, before the 2026-11-01 final allocation above: all provisional reservations are enumerated below and in [provisional-id-map.json](topics/lattice-unisolvence-20261031/provisional-id-map.json). Existing charter/MZ final IDs remain unchanged; no final-range claim or owner acknowledgement is fabricated.
+Historical, before the 2026-11-01 final allocation above: all provisional reservations are enumerated below and in [provisional-id-map.json](topics/lattice-unisolvence-20261031/COLD_STORAGE.md). Existing charter/MZ final IDs remain unchanged; no final-range claim or owner acknowledgement is fabricated.
 
 | Provisional ID | Final ID | Source / owner | Canonical record | Allocation / audit |
 |---|---|---|---|---|
@@ -467,7 +467,7 @@ Original-to-split mappings (all originals were unregistered claims in campaign f
 
 ## Bivariate Lanczos campaign — final allocation (PR preparation 2026-11-01)
 
-Block allocated by Claude under AC's 2026-11-01 authorisation (see the [batch ledger](topics/padua-batch-20261031/ALLOCATIONS.md)): PD-T029–080, PD-N007–031, IDEA-077–176, LIT-066–292. Machine-readable map: [id-map.json](topics/bivariate-lanczos-20261031/pr-prep/id-map.json); generator: [allocate.py](topics/bivariate-lanczos-20261031/pr-prep/allocate.py). Provisional IDs remain in the topic's text as provenance. Local labels OBST?bivariate-lanczos-claude-01–15 (obstruction-table rows) are not a registry namespace and keep their labels.
+Block allocated by Claude under AC's 2026-11-01 authorisation (see the [batch ledger](topics/padua-batch-20261031/ALLOCATIONS.md)): PD-T029–080, PD-N007–031, IDEA-077–176, LIT-066–292. Machine-readable map: [id-map.json](topics/bivariate-lanczos-20261031/COLD_STORAGE.md); generator: [allocate.py](topics/bivariate-lanczos-20261031/pr-prep/allocate.py). Provisional IDs remain in the topic's text as provenance. Local labels OBST?bivariate-lanczos-claude-01–15 (obstruction-table rows) are not a registry namespace and keep their labels.
 
 | Provisional ID | Final ID | Source branch / commit | Canonical file | Allocating PR / batch |
 |---|---|---|---|---|
@@ -908,7 +908,7 @@ Original-to-split mapping: **PD-T098** (alias PD-T?programme-ideas-claude-04), e
 
 ## Padua MZ 2D campaign — PR14 final registration
 
-Reservation priority: `9f0c7710abd19ee5a0d61bce6384e7a399e838d2`; [map](topics/padua-mz-2d-20261101/protocol/final-id-map.json), [fresh union scan](topics/padua-mz-2d-20261101/protocol/final-reservation-recheck.json). No accepted ID is renumbered.
+Reservation priority: `9f0c7710abd19ee5a0d61bce6384e7a399e838d2`; [map](topics/padua-mz-2d-20261101/COLD_STORAGE.md), [fresh union scan](topics/padua-mz-2d-20261101/protocol/final-reservation-recheck.json). No accepted ID is renumbered.
 
 | Provisional ID | Final ID | Origin | Durable record / source coverage | Audit / provenance |
 |---|---|---|---|---|

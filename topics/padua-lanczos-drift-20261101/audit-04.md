@@ -54,7 +54,7 @@ executions, with two concurrent workers and single-thread BLAS, followed by
 seven checker cases: none, absent, complete and four omissions. Commands,
 timestamps, elapsed times, source/input hashes, raw output hashes and complete
 regeneration comparison fields are in
-[audit-04-checker.json](evidence/audit-04-checker.json). Exact comparator uppers
+[audit-04-checker.json](COLD_STORAGE.md). Exact comparator uppers
 equal committed U_T/U_R; both reproductions and explicit-projection checks PASS
 with correct producer/certificate pins. All65 committed finite checks pass in
 each invocation, including intentional missing-regeneration failures.

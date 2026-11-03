@@ -12,7 +12,7 @@ Actually executed from `/workspace/padua_research`:
 - Bounded `cat`, `sed` and `rg` reads of the files named above; `git ls-files '*.pdf' '*.txt' '*.out'` for the retention boundary.
 - `python tracks/mz-constants/evidence/protocol-check.py > tracks/mz-constants/evidence/protocol-check.json`. The checker performs read-only Git queries, canonical-header and registry-status checks, input hashes, current/historical manifest classification, local Markdown target existence and conservative public-file size accounting. It does not prove mathematical claims, validate HTTP sources, or certify Markdown anchors.
 
-Exact hashes of checked current files and checker bytes are recorded in [protocol-check.json](../../tracks/mz-constants/evidence/protocol-check.json). Files may still be edited concurrently; final refresh and disposition follow below. No Git mutation was performed by this reviewer.
+Exact hashes of checked current files and checker bytes are recorded in [protocol-check.json](../../tracks/mz-constants/COLD_STORAGE.md). Files may still be edited concurrently; final refresh and disposition follow below. No Git mutation was performed by this reviewer.
 
 ## Findings returned for developer disposition
 

@@ -32,7 +32,7 @@ The duplicate is carried into `literature/CORPUS.md:29` and `:151`, and into the
 
 ## Preservation and mapping results
 
-The independent checker is [check_literature.py](literature/check_literature.py); full receipts are [checks.json](literature/checks.json), [run.log](literature/run.log) and [input-manifest.json](literature/input-manifest.json). It uses read-only Git plumbing at the pins above and compares the inspected worktree bytes with HEAD.
+The independent checker is [check_literature.py](literature/check_literature.py); full receipts are [checks.json](../COLD_STORAGE.md), [run.log](literature/run.log) and [input-manifest.json](../COLD_STORAGE.md). It uses read-only Git plumbing at the pins above and compares the inspected worktree bytes with HEAD.
 
 | Check actually executed | Result |
 |---|---|

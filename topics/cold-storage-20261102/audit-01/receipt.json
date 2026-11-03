@@ -1,0 +1,239 @@
+{
+  "audited_head": "1d90af5d58fca87f240a04c18c427e8f59e2d6b8",
+  "base": "2b52b432fe59c9a50aef9deebe5152c5d6874465",
+  "date": "2026-11-02",
+  "agent": "Codex",
+  "model": "gpt-6-astra high requested/configured by AC; backend model/effort not separately exposed",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "sympy": "1.14.0"
+  },
+  "candidate_tool_sha256": "62ea9e0da86ef8a72a2298f093ed4c54691cc8cc1bd2850974248eebcaa43b58",
+  "inventory": {
+    "base": "2b52b432fe59c9a50aef9deebe5152c5d6874465",
+    "audited_head": "1d90af5d58fca87f240a04c18c427e8f59e2d6b8",
+    "deleted_files": 176,
+    "unique_entries": 176,
+    "deleted_bytes": 15846089,
+    "all_source_blob_sha_size_checks": true,
+    "generated_before": 19021963,
+    "generated_after": 3300628,
+    "remaining_large_nonmanifests": {},
+    "target_only_modified_files": 51,
+    "target_changes_non_cold_docs": 91,
+    "prior_cold_docs_preserved_modulo_targets": [
+      "topics/bivariate-lanczos-20261031/COLD_STORAGE.md",
+      "topics/charter-unisolvence-20261031/COLD_STORAGE.md",
+      "topics/lattice-unisolvence-20261031/COLD_STORAGE.md",
+      "topics/padua-lanczos-drift-20261101/COLD_STORAGE.md"
+    ],
+    "other_modified_files": [
+      "agents/WORKFLOW.md"
+    ],
+    "verify": [
+      {
+        "slug": "bivariate-lanczos-20261031",
+        "entries": 49,
+        "bytes": 2354054,
+        "restored_copies_present": 0,
+        "accepted": true,
+        "problems": []
+      },
+      {
+        "slug": "charter-unisolvence-20261031",
+        "entries": 6,
+        "bytes": 185606,
+        "restored_copies_present": 0,
+        "accepted": true,
+        "problems": []
+      },
+      {
+        "slug": "lattice-unisolvence-20261031",
+        "entries": 26,
+        "bytes": 2937448,
+        "restored_copies_present": 0,
+        "accepted": true,
+        "problems": []
+      },
+      {
+        "slug": "mz-constants",
+        "entries": 4,
+        "bytes": 152567,
+        "restored_copies_present": 0,
+        "accepted": true,
+        "problems": []
+      },
+      {
+        "slug": "padua-lanczos-drift-20261101",
+        "entries": 30,
+        "bytes": 2963704,
+        "restored_copies_present": 0,
+        "accepted": true,
+        "problems": []
+      },
+      {
+        "slug": "padua-mz-2d-20261101",
+        "entries": 13,
+        "bytes": 1551583,
+        "restored_copies_present": 0,
+        "accepted": true,
+        "problems": []
+      },
+      {
+        "slug": "padua-proof-attempts-2-20261101",
+        "entries": 23,
+        "bytes": 4055637,
+        "restored_copies_present": 0,
+        "accepted": true,
+        "problems": []
+      },
+      {
+        "slug": "programme-ideas-20261031",
+        "entries": 20,
+        "bytes": 1503737,
+        "restored_copies_present": 0,
+        "accepted": true,
+        "problems": []
+      },
+      {
+        "slug": "tracks/mz-constants",
+        "entries": 5,
+        "bytes": 141753,
+        "restored_copies_present": 0,
+        "accepted": true,
+        "problems": []
+      }
+    ]
+  },
+  "roundtrips": [
+    {
+      "slug": "charter-unisolvence-20261031",
+      "restore": {
+        "slug": "charter-unisolvence-20261031",
+        "restored": 6,
+        "dest": "/workspace/padua_research"
+      },
+      "git_show_comparisons": 6,
+      "all_equal": true,
+      "clean": {
+        "slug": "charter-unisolvence-20261031",
+        "removed_restored_copies": 6
+      }
+    },
+    {
+      "slug": "lattice-unisolvence-20261031",
+      "restore": {
+        "slug": "lattice-unisolvence-20261031",
+        "restored": 26,
+        "dest": "/workspace/padua_research"
+      },
+      "git_show_comparisons": 26,
+      "all_equal": true,
+      "clean": {
+        "slug": "lattice-unisolvence-20261031",
+        "removed_restored_copies": 26
+      }
+    }
+  ],
+  "regeneration": [
+    {
+      "path": "topics/lattice-unisolvence-20261031/directions/C0/catalogue.json",
+      "byte_identical": true,
+      "content_equal_except_metadata": true,
+      "metadata_differences": {},
+      "new_sha256": "21cd7610051d7f51e8578051da164f73ef112d9081765cea7156b26f01441430"
+    },
+    {
+      "path": "topics/lattice-unisolvence-20261031/directions/C0/count-trials.json",
+      "byte_identical": true,
+      "content_equal_except_metadata": true,
+      "metadata_differences": {},
+      "new_sha256": "8d9d213e0725e6cc8d32b53fd71ea5220678fcb99dec0e22cd6149b8ca37b0c9"
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/independent/u1/producer-final-symbolic.json",
+      "byte_identical": true,
+      "six_symbolic_records_identical": true,
+      "other_differences": {}
+    },
+    {
+      "path": "topics/mz-constants/batch-registry-resolution.patch",
+      "byte_identical": true,
+      "sha256": "ae7a38b0e8942033d10de9e244d8dc1bc95a9a59ba360f3edd7a83ee52e61735",
+      "command": "git diff --unified=0 08fafe62d9798385dfafaacc9a41344272737e68 2cc1918b39d191ce233d44d9a33dbe83d697dbb0 -- ID_CROSSWALK.md PAPER_MAP.md PROOF_STATUS.md literature/CORPUS.md literature/INDEX.md state/CURRENT.md state/IDEAS.md topics/README.md topics/padua-batch-20261031/ALLOCATIONS.md tracks/README.md"
+    }
+  ],
+  "safety": {
+    "fixture": "isolated temporary Git repository; no real repository files modified",
+    "checks": {
+      "clean_preserves_differing_copy": true,
+      "restore_overwrites_differing_copy": true,
+      "clean_preserves_tracked_copy": true,
+      "restore_overwrites_tracked_modification": true,
+      "clean_removes_matching_untracked_copy": true,
+      "export_reports_match_with_corrupt_destination": true,
+      "ordinary_export_matches": true
+    },
+    "all_expected_behaviors_reproduced": true
+  },
+  "cloud_scratch_export": [
+    {
+      "slug": "bivariate-lanczos-20261031",
+      "files": 49,
+      "independent_destination_readback": true
+    },
+    {
+      "slug": "charter-unisolvence-20261031",
+      "files": 6,
+      "independent_destination_readback": true
+    },
+    {
+      "slug": "lattice-unisolvence-20261031",
+      "files": 26,
+      "independent_destination_readback": true
+    },
+    {
+      "slug": "mz-constants",
+      "files": 4,
+      "independent_destination_readback": true
+    },
+    {
+      "slug": "padua-lanczos-drift-20261101",
+      "files": 30,
+      "independent_destination_readback": true
+    },
+    {
+      "slug": "padua-mz-2d-20261101",
+      "files": 13,
+      "independent_destination_readback": true
+    },
+    {
+      "slug": "padua-proof-attempts-2-20261101",
+      "files": 23,
+      "independent_destination_readback": true
+    },
+    {
+      "slug": "programme-ideas-20261031",
+      "files": 20,
+      "independent_destination_readback": true
+    },
+    {
+      "slug": "tracks/mz-constants",
+      "files": 5,
+      "independent_destination_readback": true
+    }
+  ],
+  "links": {
+    "method": "unique source/target inline relative Markdown pairs; exclude anchors, URLs and absolute paths",
+    "base_unresolved": 308,
+    "candidate_unresolved": 308,
+    "new_unresolved": [],
+    "redirects_in_non_cold_docs": 91,
+    "redirects_in_prior_cold_doc_text": 2
+  },
+  "human_manifest_rows": {
+    "entries_checked": 176,
+    "path_blob_prefix_sha256_size_match": true
+  }
+}
