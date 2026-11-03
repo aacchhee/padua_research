@@ -223,3 +223,33 @@ numerical rerun is called for: the final T2/T3 mathematical files remain
 pinned to `5b1156c384dbf22b9d6749a840f4d78c36f0a1e60a2e8d5fc12e30af309b4c42`,
 `a61f3371445bae5bfa71f5b1947f63696697f97ac42c0f742c4eb4d587f98da3` and
 `8eae6849e3a5c756356864bb97dcd3d9fd25b09d2ac58ec93bb96a9e054a3ce5`.
+
+## T4 editorial impact check — 2026-11-03
+
+Compared the current three T4 theory files byte-for-byte with the parent's
+raw-byte exports from commit `66eaf855ffd6c68f929996df0621032c4364af7d` in
+`/workspace/scratch/lebesgue-analytic-editorial-baseline/`. All baseline
+hashes equal the previously accepted hashes. Inspected every diff hunk.
+
+| File | Previously accepted SHA-256 | Current SHA-256 |
+|---|---|---|
+| t4-01-corner-defect-limit.md | `47e0a1b2476e125e4fa8582846f34b52d8fe2b559165941d54454f84445a7356` | `ea514179f51e2208ef8b5566e5557625afd7ec518fc928f6c6592eb07f51d706` |
+| t4-02-one-dimensional-remainder.md | `7f84cbd0d68dd90750173249d91a0464c05dc35751e7b8ea09dd74cee6214fa7` | `71ce5102541c5c7cdc2b4993195087652f1c76829b6b88e5a039464af83284b3` |
+| t4-03-corner-constant.md | `f0fb0c2e313c316cb62248f433653e183c17f1b470ed70cba54b9f2021ec33d8` | `b7ffd40e6544d0c22ec9c1e35a35ad895b6acb1fa58e09f01347ce4bc1188398` |
+
+The only mathematical-notation edit replaces the single carriage-return
+byte before `m odd` in t4-01's first displayed sum with the literal TeX
+`\rm odd` command. This restores the already intended odd-index condition,
+which the definitions and proof explicitly use; it changes no domain,
+coefficient, estimate, or proof obligation. All other edits update stale
+supplementary-check status or add the completed-check link. Required Claude
+audit and the sharper open targets remain explicitly pending/open.
+
+Both T4 code hashes still equal their executed and accepted identities:
+`t4_constant.py` is `b48d488e2229e7c60293673ffeeec0214fed344858f7ddaebe9975c0dd7347e5`;
+`t4_relations.py` is `0861c4b156c5f515e2f8f37a7af036f5a718db8d4bc094cd44882874a8d35303`.
+The earlier execution receipts retain their historical theory pins.
+Acceptance transfers to the current theory hashes at exactly the prior
+mathematical and numerical scopes; no fresh computation was required or
+performed for these editorial changes. This impact check does not alter
+or waive the explicit T2/T3 prospective-gate timing qualification above.

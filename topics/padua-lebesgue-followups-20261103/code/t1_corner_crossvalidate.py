@@ -1,4 +1,6 @@
 """Native ANP corner-evaluation equality against frozen Poly.eval, n4--7."""
+if not __debug__:
+    raise RuntimeError('T1 refuses optimized Python: t1_corner_crossvalidate.py')
 import argparse, hashlib, importlib, json, sys, time
 from pathlib import Path
 FROZEN=Path(__file__).resolve().parents[2]/'padua-proof-attempts-2-20261101'/'code'

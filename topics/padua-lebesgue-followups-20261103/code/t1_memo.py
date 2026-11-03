@@ -4,6 +4,8 @@ Cache only frozen power/multiply results, then perform the same ordered sum of
 outward per-term coefficient products. No field/interval/acceptance precision
 changes. A factory binds the exact scale and power implementation of its module.
 """
+if not __debug__:
+    raise RuntimeError('T1 refuses optimized Python: t1_memo.py')
 from functools import lru_cache
 
 def evaluator(module):

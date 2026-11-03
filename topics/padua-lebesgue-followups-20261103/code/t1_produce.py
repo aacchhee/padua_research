@@ -3,6 +3,8 @@
 No source/predicate change. Metadata records every runtime replacement. All
 frozen mathematical functions other than proven-identical evaluate are intact.
 """
+if not __debug__:
+    raise RuntimeError('T1 refuses optimized Python: t1_produce.py')
 import argparse,hashlib,importlib,sys
 from pathlib import Path
 from t1_memo import evaluator

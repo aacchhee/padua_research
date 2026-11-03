@@ -13,7 +13,7 @@ For the Padua corner value Λ_c(n) and same-mesh sum L_n of PD-T159,
  \lim_{n\to\infty}(\Lambda_c(n)-L_n^2)=\kappa,
  \qquad
  \kappa={8\over\pi}\int_0^1 t^2\cot{\pi t\over2}
-       \sum_{\substack{l\ge1\\l\ {m odd}}}{dt\over l(l^2-t^2)}.       \tag{1}
+       \sum_{\substack{l\ge1\\l\ {\rm odd}}}{dt\over l(l^2-t^2)}.       \tag{1}
 \]
 
 The limit is over all integers, hence the even and odd limits agree. More explicitly, for n≥32,
@@ -59,7 +59,7 @@ Exactly the Padua convention and exact identities of PD-T159. No argmax or asymp
 
 ## Status by part
 
-Overall status: **PROVED**, written analytic proof; supplementary independent check and required Claude audit pending.
+Overall status: **PROVED**, written analytic proof; supplementary independent reconstruction accepted; required Claude audit pending.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -74,7 +74,7 @@ PD-T159, specifically its exact positive corner sum, exact same-mesh square, and
 
 ## Checks
 
-The proof has no computational dependency. Enclosure code: `../code/t4_constant.py`; developer receipt: `../evidence/t4-constant.json`. Independent execution/check remains pending until recorded separately.
+The proof has no computational dependency. Enclosure code: `../code/t4_constant.py`; developer receipt: `../evidence/t4-constant.json`. Distinct Astra reconstruction and independent enclosure reruns are recorded in [independent-checks-analytic.md](../independent-checks-analytic.md).
 
 ## Sources
 
@@ -203,7 +203,7 @@ Corner constant only. Rate (2) is deliberately weak; it does not establish the c
 
 ## Open items
 
-Supplementary independent proof/rerun and required Claude audit. Sharper finite-n asymptotics remain separate stretch targets. PD-T098's full expansion remains OPEN.
+Required Claude audit; supplementary reconstruction and reruns are complete. Sharper finite-n asymptotics remain separate stretch targets. PD-T098's full expansion remains OPEN.
 
 ## History
 

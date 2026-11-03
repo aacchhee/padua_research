@@ -1,4 +1,6 @@
 """Native all-active corner predicates versus frozen n4--7 certificates."""
+if not __debug__:
+    raise RuntimeError('T1 refuses optimized Python: t1_corner_certificate_controls.py')
 import argparse,gzip,lzma,json,sys,hashlib,importlib,time
 from pathlib import Path
 FROZEN=Path(__file__).resolve().parents[2]/'padua-proof-attempts-2-20261101'/'code'

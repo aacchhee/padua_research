@@ -29,7 +29,7 @@ Exact real arithmetic, integer n≥1. No parity restriction.
 
 ## Status by part
 
-Overall status: **PROVED**, written analytic proof; supplementary independent check and required Claude audit pending.
+Overall status: **PROVED**, written analytic proof; supplementary independent reconstruction accepted; required Claude audit pending.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -111,7 +111,7 @@ Both parities, with an explicit quadratic error. This bound does not identify L_
 
 ## Open items
 
-Supplementary independent check and required Claude audit. Optional sharper Euler–Maclaurin coefficients are outside this result.
+Required Claude audit; supplementary reconstruction is complete. Optional sharper Euler–Maclaurin coefficients are outside this result.
 
 ## History
 

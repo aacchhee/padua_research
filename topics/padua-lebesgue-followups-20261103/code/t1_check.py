@@ -3,6 +3,8 @@
 No verifier predicate or run method changes. Successful receipt is published
 atomically only after frozen and wrapper source/input after-hashes pass.
 """
+if not __debug__:
+    raise RuntimeError('T1 refuses optimized Python: t1_check.py')
 import hashlib,json,os,sys,tempfile
 from pathlib import Path
 FROZEN=Path(__file__).resolve().parents[2]/'padua-proof-attempts-2-20261101'/'code'

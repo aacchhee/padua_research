@@ -1,4 +1,6 @@
 """Compare cached/frozen exact endpoints on frozen n4--7 certificate data."""
+if not __debug__:
+    raise RuntimeError('T1 refuses optimized Python: t1_memo_controls.py')
 import argparse,gzip,lzma,json,sys,hashlib,importlib,time
 from pathlib import Path
 from fractions import Fraction

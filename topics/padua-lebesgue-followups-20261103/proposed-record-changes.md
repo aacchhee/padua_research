@@ -68,6 +68,12 @@ New (after required audit and final-ID preparation):
 
 ## New records and index links to prepare after audit
 
+Concrete literal additions for PROOF_STATUS, IDEAS, the crosswalk, topic index,
+CURRENT and PAPER_MAP are in
+[proposed registry additions](preparation/proposed-registry-additions.md).
+They retain provisional IDs and require the actual audit and preparation stage
+before application. Shared files remain unchanged.
+
 - Centre-minima theorem: provisional `PD-T?lebesgue-followups-codex-t2-01`.
 - Common endpoint expansion: provisional `PD-T?lebesgue-followups-codex-t2-02`.
 - General-position geometric series: provisional `PD-T?lebesgue-followups-codex-t3-01`; supplementary independent proof review and enclosure reruns accepted, required Claude audit pending.
