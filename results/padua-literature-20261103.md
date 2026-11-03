@@ -6,7 +6,7 @@ This file is written only by the topic orchestrator. Branch `claude/padua-litera
 
 These are literature findings only. They carry no PD status changes and no new mathematical claims.
 
-- **Download list** with verified clickable links: [DOWNLOADS.md](../topics/padua-literature-20261103/DOWNLOADS.md), v2. AC supplied 10 of the requested PDFs. Still needed: Mastroianni–Russo 2000 and Della Vecchia–Mastroianni–Vértesi 1995 (print only, interlibrary loan), plus low-priority journal versions.
+- **Download list** with verified clickable links: [DOWNLOADS.md](../topics/padua-literature-20261103/DOWNLOADS.md), v3. AC supplied 10 of the requested PDFs; the items still needed are in Part A and A2.
 - **P1 (Lebesgue function)**, [comparison](../topics/padua-literature-20261103/p1-comparison.md):
   - The corner-argmax statement was a published conjecture (CDMSV 5ECM poster 2008) and observation (De Marchi, [CMA 5 (2022)](https://doi.org/10.33205/cma.1070020) §3.3(2), p. 23), with no proof. Our PD-T209/162/166/169/174/177/181/214 (n = 2–16) and PD-T229 (n ≥ N_*) prove it in those ranges.
   - The leading corner term is due to Kolomoitsev–Lomako 2021, built on [Kuznetsova 1995](https://doi.org/10.1007/BF01056716), with Pimenova 1979 as a special case. The b log n term with explicit remainder (PD-T158) and the exact corner formula (PD-T101): no matching result found.

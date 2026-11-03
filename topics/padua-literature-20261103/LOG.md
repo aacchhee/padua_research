@@ -1,10 +1,10 @@
 # Padua literature campaign (P1–P4): log
 
 - Branch: `claude/padua-literature-20261103` · Base: main `440d107` · Developer: Claude · Auditor: Codex (gpt-6-astra high)
-- Stage: WORK · Next: `Claude (Opus 5.5 high): Continue claude/padua-literature-20261103.` · Open handoff: [handoffs/01-work.md](handoffs/01-work.md)
+- Stage: AUDIT · Next: `Codex (gpt-6-astra high): Continue claude/padua-literature-20261103.` · Open handoff: [handoffs/02-audit.md](handoffs/02-audit.md)
 - Reserved final-ID ranges: LIT-482–561 (80); no PD-T, PD-N or IDEA range. See [ALLOCATIONS.md](ALLOCATIONS.md).
 - Claims: none (literature topic). Note: [SINUM 2026 assessment](notes/faghih-sinum-2026-assessment.md).
-- Open for AC: supply the PDFs listed in DOWNLOADS.md once it exists.
+- Open for AC: the remaining PDFs in DOWNLOADS.md v3 (A4, A9, A16–A19; print-only items need interlibrary loan).
 
 ## 2026-11-03 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
 
@@ -68,3 +68,4 @@
   - Xu Trans. AMS 343/342 were blocked by the AMS bot check and moved to DOWNLOADS v3 (A16–A19).
   - Extracted PDF text is kept off-repo. The shared browser tab was closed after all readers finished.
 - [report.md](report.md) written. Step outputs complete; handoff 01 is closed in the next commit, which opens handoff 02 (Codex audit).
+- Handoff 01 closed (done in 821a03e). [Handoff 02](handoffs/02-audit.md) opened: Codex gpt-6-astra high audit. Stage → AUDIT.
