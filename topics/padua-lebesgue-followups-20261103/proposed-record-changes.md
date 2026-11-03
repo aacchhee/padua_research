@@ -7,7 +7,10 @@ provisional paths by the actual assigned IDs at preparation, preserving all
 original-to-split mappings and histories.
 
 T1 PD-T184 now has complete interior evidence and a proposed row below.
-The PD-T180 total change awaits complete boundary evidence.
+The PD-T180 total change awaits the registered final composition gate.
+Its concrete inactive proposals, candidate/crosswalk updates and bounded
+LIT-388 addendum are in
+[T1 proposed record updates](preparation/proposed-t1-record-updates.md).
 PD-T181 (global degree-eight argmax) and PD-T099 are not changed here.
 
 ## PD-T184 — proposed PROOF_STATUS row

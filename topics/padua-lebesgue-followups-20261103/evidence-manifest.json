@@ -51,6 +51,7 @@
   ["evidence/t1-composition-source-freeze-v2.json","35e32e64d5837767db16be32047d00c5196d5b4b1882cef4b100e1cfe7dc651f",797],
   ["evidence/t1-composition-source-freeze.json","26bc7562441d5f36e02bfd4c63c0c6ed36866d2473f7c04544a64d76efcb0496",968],
   ["evidence/t1-corner-certificate-controls.json","00fed8f1d49565625ac478aa30a9e8a0b93cee1b056a115a21a2ca6bd501e8df",1070],
+  ["evidence/t1-fresh-native-v4-cap.json","e00dadcad006d41b1de567b9381a98e855319950d7f9a8133822d6ff2b7a4fe3",4476],
   ["evidence/t1-fresh-v3-cap.json","08608ef6a3ad6ae0f9b8add732131257cc1ee029907251827b35ae5998a76196",2683],
   ["evidence/t1-guarded-memo-comparison.json","88bb8fce5d9cc0a2af375d919b6a73aad0c24e1553b2c6e8c264ee0a073f877c",649],
   ["evidence/t1-guarded-memo-controls.json","8dfb3d16851beccc7421ac0b56ef7325be3f893900589e8988b83a69f1479974",2607],
