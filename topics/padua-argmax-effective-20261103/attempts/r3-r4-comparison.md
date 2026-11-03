@@ -1,0 +1,39 @@
+# R3/R4 bounded comparison round
+
+2026-11-03. Codex mathematics worker, assigned gpt-6-astra ultra by handoff02 (AC's explicit hard-mathematics exception). Rules/input `8a1f394739293953e1566fd24a0a193cc78ff26f`; base `440d107`. No Git authority. Technical G6 code is delegated to the parent's gpt-6.1-sol medium gates worker.
+
+## Pre-execution contracts
+
+**G6 / E-C.** Retain IDEA-324's exact convention: degree n, m=n+1, j in {0,n}, eligible k in {2,...,n-1} with j+k odd. Let E(j,k) be the supremum of lambda on the vertical edge over mesh t in [k-1,k+1]. Compare k to k'=k±2 only when both are eligible and k' lies strictly nearer m/2. Screen every n=13,...,60. For each cell use 65 equally spaced samples, preserve endpoints, and refine every local grid maximum. A target-minus-source value below -1e-6 triggers exact investigation; only a rigorous whole-source upper bound below a target witness kills E-C. No finite positive screen proves it.
+
+**G6 / I-B0, dated operationalization.** The brief does not specify the interior cells or boundary map. Freeze a deliberately limited first-strip test before execution: for each eligible (j,k) above compare E(j,k) with the numerical maximum on the rectangle qx in [0,1] (j=0) or [n-1,n] (j=n), qy in [k-1,k+1], where qx=n theta/pi and qy=m phi/pi. Use a 9 by 17 grid, include the optimized edge point, and refine the best three distinct starts by bounded Nelder–Mead (maxiter180, xatol1e-8, fatol1e-10). Rectangle-minus-edge above 1e-6 triggers investigation. This test covers neither all interior cells nor horizontal strips. Sampling and local optimization are MEASURED.
+
+**G7 original criterion, preserved.** “Kill if no cell-wise sign-stable envelope exists at n = 4.” IDEA-319 specifies neither the allowed envelope class, the factors that must have fixed sign, nor a fixed partition. Its unrestricted existential negation cannot be decided by a test of one guessed factorization: an unrestricted positive envelope is trivial, and subdivision by all cardinal zero sets makes sign stability tautological. The original G7 is therefore ill-posed as a yes/no kill gate; the whole generating-curve route is retained OPEN.
+
+**G7-F, dated operationalization before exact computation.** Test the sufficient, stronger concrete mechanism that each individual cardinal has fixed sign throughout every standard complementary rhombus cell D(j,k)={|qx-j|+|qy-k|<1}, j+k odd. A single cardinal with opposite exact signs at two points of the same D kills only this fixed-sign-cardinal mechanism. This does not kill envelopes formed after regrouping, absolute values, finer sign partitions or a different phase map. Start at n=4 using the corner-node cardinal L00, whose coefficients are rational by PD-T101.
+
+## Novelty and dependency gate
+
+Scanned headings, identifiers, aliases and summaries across the complete state/IDEAS.md and read its obstruction/disposition tables. Full shortlisted records: original alln ideas.md, ideas-codex-fallback.md, FINAL_CANDIDATES.md (IDEA-316–335), part2 IDEA-303–305 registration, and the corresponding E-C statement/proof PD-T231, exact cardinal/kernel derivation PD-T101, and measured strip scope PD-T207. Search terms across registry, topic ideas/attempts/theory/code/logs and literature INDEX included generating curve, numerator, factorization, sign stable, envelope, E-C, centreward/centerward, pairing, interior-to-boundary, strip maxima and majorization. Closest existing candidate is IDEA-324 for E-C, IDEA-318/206 for I-B0, and IDEA-319 for G7-F. These are scoped variants/continuations with no historical novelty claim.
+
+Obstructions retained: PD-N078 concerns tie-inclusive certified-list ordering; PD-N080 concerns common-phase E-P only; PD-N081 concerns a numerical whole-diamond ordering screen; PD-N079 prevents coset-maximality of the separate primitive. None rejects E-C, I-B0 or every generating-curve regrouping. The whole-cell screen uses varying maximizing phases and cannot silently reintroduce E-P.
+
+Literature INDEX and LIT-312/379/388 entries/addenda were inspected. No 1-D theorem or technique is transferred in this round; G8 is a prerequisite for any future transfer, not a proved source bridge. Parent owns the campaign's fresh literature work.
+
+## Dated budget amendment
+
+After the initial contract and during the first run, the parent retained I-B0 only at n=13,17,24,32,48,60 for this bounded round. E-C still covers every degree from 13 through 60. The six-degree I-B0 result must not be described as the initially intended full-range screen. The technical worker used four Nelder–Mead starts: the three grid starts plus the optimized edge point, preserving the boundary lower bound.
+
+## Completed runs and outcomes
+
+- **G6 E-C: no kill.** All 1536 comparisons at n=13,...,60 have positive numerical target-minus-source gains; minimum 0.0027806941162857868 at n=60. Final full output `/workspace/padua-work/comparison/g6.json` is 577726 bytes, SHA256 `cd2718db479893d2c1f4027fb2e96c10b5045ac609af4bea8731b3bab5ce42da`. Code, commands and versions: [measured record](../theory/argmax-effective-codex-03-comparison-screen.md). No float reversal arose, so no reversal-specific exact confirmation was needed.
+- **I-B0: retained at its sampled scope.** At the six selected degrees, 182 rectangles; maximum numerical excess 3.412381488487881e-12, no excess above 1e-6 and no optimizer nonconvergence. All-n and unsampled regions remain OPEN.
+- **Different-agent numerical replay.** The mathematics worker reran E-C at n=13,17,24,60 in a separate process: all 96 comparison rows match exactly. Receipt `/workspace/padua-work/comparison/g6-independent-ec.json`, 32537 bytes, SHA256 `5f2d90212d3dc69f71bbef2872ac1886c274af356e2d1d323efbae642bf0c4bf`. No independent I-B0 replay claimed.
+- **Three exact G6 spots: PROVED finite comparisons.** Parent authorized the producer at n=13,17,24 after the screen. The selected identities are (n,j,k,k')=(13,0,9,7),(17,0,11,9),(24,24,11,13). All source upper bounds lie strictly below the target-center values by more than 1/20,1/40,1/100 respectively. The separate [exact theorem](../theory/argmax-effective-codex-03-exact-edge-spots.md) gives the finite reduction, seven leaves, exact margins, commands, hashes and actual different-agent checker acceptance with all 11 corruption controls. The producer and checker share inherited outward arithmetic; this limitation is explicit. This does not upgrade the full measured screen.
+- **G7: original gate ill-posed; G7-F refuted.** The exact identity L00(x,0)=(x²-1)(2x²+2x-1)/10 at n=4 gives opposite values 4/405 and -11/4096 at x=1/3 and3/8. Both lie strictly inside D(2,3), as proved using 3/8<sin(pi/8). [Scoped analytic negative](../theory/argmax-effective-codex-04-coarse-cell-sign-obstruction.md); [retained and rejected R4 candidates](../ideas/comparison-r4.md). This kills only individual-cardinal fixed signs on coarse diamonds, not IDEA-319 or every envelope.
+
+All generated output remains in the assigned Padua working storage. The parent owns final evidence placement, manifest, Git and archival handoff. The three exact certificate/checker files are small enough for essential committed evidence; full numerical outputs should remain external.
+
+## Runs needed and stopping condition
+
+This bounded R3/R4 development round is complete. Any usable all-n E-C comparison or uniform interior-to-boundary map remains OPEN. A fresh R4 round must first specify the admissible envelope/factor class and fixed cells. A new 1-D source transfer requires G8. Required Claude audit remains pending; parent controls the handoff.

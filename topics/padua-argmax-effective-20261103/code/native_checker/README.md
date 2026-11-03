@@ -41,8 +41,8 @@ Build and replay from the repository root:
 ```sh
 mkdir -p /workspace/padua-work/checker
 g++ -O3 -std=c++17 topics/padua-argmax-effective-20261103/code/native_checker/kernel.cpp -lgmpxx -lgmp -o /workspace/padua-work/checker/kernel
-python topics/padua-argmax-effective-20261103/code/native_checker/check.py /workspace/padua-work/producer/n17.json.gz --binary /workspace/padua-work/checker/kernel --output /workspace/padua-work/checker/n17-producer.json
-python topics/padua-argmax-effective-20261103/code/native_checker/controls.py /workspace/padua-work/producer/n17.json.gz --binary /workspace/padua-work/checker/kernel --output /workspace/padua-work/checker/controls-n17.json
+python topics/padua-argmax-effective-20261103/code/native_checker/check.py /workspace/padua-work/producer/final/n17.json.gz --binary /workspace/padua-work/checker/kernel --output /workspace/padua-work/checker/n17-producer.json
+python topics/padua-argmax-effective-20261103/code/native_checker/controls.py /workspace/padua-work/producer/final/n17.json.gz --binary /workspace/padua-work/checker/kernel --output /workspace/padua-work/checker/controls-n17.json
 g++ -O3 -std=c++17 topics/padua-argmax-effective-20261103/code/native_checker/unit.cpp -lgmpxx -lgmp -o /workspace/padua-work/checker/unit
 /workspace/padua-work/checker/unit
 ```
@@ -53,5 +53,5 @@ the historical constructor. Source/bin hashes are written in receipts.
 and entire frontier during corruption controls; all metadata and verdict
 comparisons are performed anew. Normal command-line replay does not cache.
 No Python assertions carry scientific validation, so Python `-O` does not
-remove the driver's explicit checks. Regenerable certificates, binaries,
-and receipts belong outside Git.
+remove the driver's explicit checks. Bulk regenerable outputs and binaries belong outside Git. The small essential
+per-degree certificates supporting new PROVED claims are retained in `../../evidence/`.

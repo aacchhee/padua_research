@@ -19,8 +19,8 @@ Union maxima including permanent unused reservations: PD-T245, PD-N083,
 IDEA-335, LIT-465. Historical external provisional aliases are not final IDs.
 The complete PR-state and file-identity receipt is [allocation-scan.json](allocation-scan.json).
 
-Priority is the first pushed commit adding this ledger, linked from the draft
-PR. Unused IDs remain permanent gaps. Recheck before assignment and readiness.
+Reservation priority: first pushed commit `ed8db2fc364d0ba34c3c06815460b3b2971787b5`,
+linked from draft [PR19](https://github.com/aacchhee/padua_research/pull/19). Unused IDs remain permanent gaps. Recheck before assignment and readiness.
 The workflow's fresh-range rule supersedes historical single-owner prose;
 all older reservations, including unassigned PD-T236–245 and LIT460–465,
 remain intact. No mathematical status follows from this reservation.
