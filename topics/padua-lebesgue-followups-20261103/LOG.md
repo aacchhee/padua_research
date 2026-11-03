@@ -1,9 +1,9 @@
 # Padua Lebesgue-function follow-ups (T1–T4): log
 
 - Branch: `codex/padua-lebesgue-followups-20261103` · Base: main `440d107` · Developer: Codex · Auditor: Claude (Opus 5.5)
-- Stage: WORK · Next: `Codex (gpt-6.1-sol xhigh): Continue codex/padua-lebesgue-followups-20261103.` · Open handoff: [handoffs/01-work.md](handoffs/01-work.md)
-- Reserved final-ID ranges: PD-T266–285, PD-N092–099, IDEA356–375, LIT474–481; [reservation and pinned union scan](ALLOCATIONS.md). No final assignments during WORK.
-- Claims: T2–T4 core theorems PROVED with accepted supplementary independent checks; T1 exact interior count PD-T184 PROVED; all separate interior and boundary replays complete. Fresh identity/join/final accounting remain before the T1 completion record. Required Claude audit PENDING.
+- Stage: AUDIT · Next: Claude (Opus 5.5 xhigh) audit; numbered handoff 02 follows the development-output commit. Handoff 01 remains open until that publication commit.
+- Reserved final-ID ranges: PD-T266–285, PD-N092–099, IDEA356–375, LIT474–481; [reservation and pinned union scan](ALLOCATIONS.md). No final assignments before audited preparation.
+- Claims: all four core targets complete. T1 PD-T184/180 PROVED (44 interior, 62 total); six T2–T4 analytic records PROVED. Actual independent replays/checks accepted; required Claude audit PENDING. Full sharp PD-T098 remains OPEN; the T2/T3 protocol timing qualification remains unwaived.
 - Open for AC: none at setup. Ask AC before using any machine outside the sandbox.
 
 ## 2026-11-03 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
@@ -18,7 +18,7 @@
 
 ## Runs needed
 
-- T1–T4 as in handoff 01.
+- No development run remains for the four core targets. Claude must select and record independent audit checks. Full sharp PD-T098 is an unattempted stretch beyond the completed constant-term target; physical cold-storage delivery remains pending.
 
 ## 2026-11-03 — Codex development resumed
 
@@ -91,3 +91,13 @@
 
 - Native V4 actually exited 0 at 2401.14228 seconds with 145085 visits, 72539 leaves, 8 pending paths and zero unresolved. Its 377094-byte checkpoint has SHA-256 `2f08f3b3f29e3b69d3846b71601ddf40d77e275a4f706115905c8b045c17f642`. Original V5 structural/lineage preflight verified 7 active left paths and 1 parked right path. The unchanged bounded V5 is running; no fallback wrapper was needed.
 - Root reviewed the bounded mechanical T1 shared-record proposals: existing PD-T180/184 and IDEA-299 retain IDs; PD-T100's source observation remains MEASURED; old failed attempts remain dated history; the LIT-388 candidate correction is restricted to the inspected v1 table. These proposals remain inactive pending actual final gates and Claude audit. No shared files or final assignments changed.
+
+## 2026-11-03 — all core targets completed; Claude audit next
+
+- Fresh native V5 completed the negative half in 420.532652 seconds; frozen reflection actually exited 0 and produced the complete ordinary interior tree. Developer and distinct-agent typed comparisons independently confirmed exact equality of all 18969878 mathematical proof-input bytes to the fully replayed archive, canonical SHA `e22a9b5592d26756aa63bf143ae19f7c55fd56d1d5ecd5860088c0f2587089a1`. Metadata and timing exclusions are separately bound.
+- Literal boundary joining actually completed, and both actual final composition executions passed every original final accounting predicate, component identity and source/input guard. PD-T180 is now PROVED at 62=44+16+2; PD-T184 remains PROVED. No monolithic joined Verifier.run was executed or claimed. See final composition receipts and the independent report. All target work completed inside the original six-hour ceiling.
+- The final report and literal unapplied proposals now reflect completed T1–T4 scope. The candidate correction is 44/62 versus inspected LIT-388 v1 Table 3's numerical 38/56. Shared records/frozen sources remain untouched; reservations remain permanent but unassigned.
+- Stage AUDIT: required Claude cross-family review is pending. Supplementary Astra checks are complete at their declared scopes. The acknowledged T2/T3 prospective-gate timing deviation is retained for an explicit protocol disposition, not waived or retrospectively cured. Physical cold-storage delivery is pending; source blobs, receipts and regeneration/retrieval instructions are durable.
+
+- Final boundary-producer optimization guard was added only after generation/joining completed. Distinct Astra confirmed exact old Git bytes, guard-only byte/AST identity and both optimized-mode refusals; I2 is resolved with historical source provenance intact.
+- Final integration checks parsed all topic JSON/Python, checked local prose links and control bytes, verified all manifest identities and write scope, and retained ordinary JSON receipts below 16 KiB. The conservative whole-repository generated-data bucket is about 4.21 MB, including existing manifests; no bulk tree or third-party text was added.

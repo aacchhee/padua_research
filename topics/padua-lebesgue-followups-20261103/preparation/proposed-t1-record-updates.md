@@ -1,33 +1,26 @@
-# Proposed T1 shared-record updates — inactive until completion
+# Proposed T1 shared-record updates — development complete; unapplied
 
-**CONDITIONAL ON COMPLETION OF THE REGISTERED FRESH-GENERATION, TYPED-IDENTITY,
-LITERAL-JOIN AND ORIGINAL FINAL-ACCOUNTING GATES AND REQUIRED CLAUDE AUDIT.**
-This is an editing proposal, not a current mathematical acceptance or an
-invocation of the mathematical status CONDITIONAL. Do not copy its future
-PROVED language into live shared records while any gate is pending.
+**ALL REGISTERED DEVELOPMENT GATES COMPLETED; APPLICATION STILL REQUIRES
+CLAUDE AUDIT AND LATER PREPARATION.** This is an unapplied editing proposal.
+Its mathematical completion claims now have actual supporting receipts; the
+remaining application condition is administrative, not status CONDITIONAL.
 
 Bounded mechanical preparation, 2026-11-03; configured Codex gpt-6.1-sol medium.
 Rules read at `3f5196cf3639407c25b021fa30f70cc1d3ae113a`. Shared-file old text
 captured at working head `d5e937ad2278c91b463ac737e6f6700622a63176`; the shared
 base is `440d1079e42c3ef21c40d1cf8870f5b206410c6a`.
 
-Current completed facts: two actual complete archived-interior replays derived
-44 strict interior maxima; two actual complete fresh-boundary original-method
-replays derived 16 open-edge and 2 corner maxima, including all original
-predicates at those scopes. The full PD-T180 target remains OPEN at the final
-registered completion gate. Fresh generation, typed identity, literal component
-join and original final accounting are still running, and Claude audit is
-PENDING. A successful partial execution, aggregate agreement or this proposal
-cannot discharge those conditions. The completed component replays must retain
-all source/input guards and their actual provenance.
+Current completed facts: both actual complete archived-interior replays,
+both fresh-boundary original-method replays, fresh interior generation, both
+typed proof-input identities, literal component join and both original final
+accounting executions passed. PD-T184 and PD-T180 are PROVED in their local
+completion records. See [actual evidence](../independent-checks-t1.md) and the
+[manifest](../evidence-manifest.json). All source/input guards and actual
+provenance remain preserved; no monolithic joined run is claimed.
 
-Activation requires actual complete fresh generation; typed equality of every
-fresh interior proof object to the separately replayed archived input (or actual
-full fresh replay if equality fails); literal joined-component identity; every
-original final-accounting predicate; independent acceptance of the composition
-protocol and executed controls; durable pinned evidence/manifest; and the required
-Claude audit with findings disposed. Link the actual completion and audit
-receipts at activation. Do not invent their filenames or execution times.
+Required Claude audit is PENDING. Application requires that audit and findings
+disposition, plus the later fresh allocation/readiness scan. Link the actual
+completion and audit evidence when applying; never invent audit acceptance.
 
 The root's [proposed-record-changes.md](../proposed-record-changes.md) owns the
 PD-T184 row update; do not duplicate it here. Accepted PD-T181 global theorem,

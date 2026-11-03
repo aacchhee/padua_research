@@ -4,6 +4,8 @@ The frozen source is never modified. The edge-loop AST is copied verbatim, with
 one persistence callback inserted after each finished edge. Corner evaluation
 uses the same all-active strict inward tests, evaluating native ANP coefficients.
 """
+if not __debug__:
+    raise RuntimeError('T1 boundary producer refuses optimized Python')
 import argparse, ast, hashlib, json, os, sys, tempfile, time
 from pathlib import Path
 FROZEN = Path(__file__).resolve().parents[2] / 'padua-proof-attempts-2-20261101' / 'code'

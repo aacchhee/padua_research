@@ -20,8 +20,11 @@ historical PD-T183 lower bound is preserved. Thus 44 is a certified candidate
 correction to this version's numerical interior entry 38, subject to the
 required Claude audit of this development.
 
-Both complete boundary replays have now verified 16 edge and 2 corner maxima.
-The registered fresh interior identity/join/accounting steps remain in progress;
-the final whole-square candidate-correction record awaits those steps.
+Both complete boundary replays verified 16 edge and 2 corner maxima. The
+registered fresh-generation, typed identity, literal join and both original
+final-accounting executions have now passed. PD-T180 is PROVED: 62 strict
+relative maxima on the closed square. Thus the inspected table receives the
+certified candidate correction 44 interior / 62 total, versus its numerical
+38 / 56, with required Claude audit pending.
 The comparison does not claim an accepted erratum, author contact, later-version
 coverage, or any correction of the separate Morrow–Patterson table.

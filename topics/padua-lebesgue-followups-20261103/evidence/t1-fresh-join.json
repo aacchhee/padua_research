@@ -1,0 +1,15 @@
+{
+  "base_joiner_sha256": "bee99288a67fd7fd007bf587ea62cb5e4a91cbf000c60d2fe0eb81d465179581",
+  "boundary_sha256": "adfe1107a326d17cfdd083a2ef9b8ab7ce0aeaa6b906f7a825c53a4fa1da6f08",
+  "corner": 2,
+  "count_certified": false,
+  "edge": 16,
+  "interior": 44,
+  "interior_sha256": "c5cdcfed9f19f2161b1d55d4f2154bc06a1cd5bd51e28c5c2187ca57c67cc45f",
+  "joiner_sha256": "a88b18f2a617d7dac03a5db7ba2a89a32cae731cd2f7b6c5a0ea400e5b554b61",
+  "output_bytes": 1696013,
+  "output_sha256": "033e851676969bde6a730f76ee1b4819b87de26b79aac775de6d487dade27fdf",
+  "scope": "mechanical join only; all original finite predicates still require independent replay",
+  "structural_complete": true,
+  "total": 62
+}

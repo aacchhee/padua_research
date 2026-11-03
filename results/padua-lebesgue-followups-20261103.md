@@ -2,19 +2,20 @@
 
 This file is written only by the topic orchestrator. Branch `codex/padua-lebesgue-followups-20261103`; [draft PR #20](https://github.com/aacchhee/padua_research/pull/20).
 
-## Status (2026-11-03): WORK, development and independent checks running
+## Status (2026-11-03): AUDIT, core development complete; Claude review pending
 
 Four bounded targets, specified in [handoff 01](../topics/padua-lebesgue-followups-20261103/handoffs/01-work.md):
 
-- **T1:** certified n = 8 maxima count (PD-T180/184; MEASURED 44/16/2 = 62 against the reported 38/56).
+- **T1:** certified n = 8 maxima count (PD-T180/184; PROVED 44/16/2 = 62 against the numerical source 38/56).
 - **T2:** centre-minimality of the edge-defect integrals g_v and g_h.
 - **T3:** a general-β series for them.
 - **T4:** the constant term c (κ = c − c₁²) of the corner expansion (PD-T098).
 
-T1: both complete interior replays verify 44 maxima, and both complete boundary
-replays verify 16 edge and 2 corner maxima. PD-T184 is PROVED. Fresh generation,
-input identity, joining and final accounting remain before the closed-count
-completion record.
+T1: PD-T184 and PD-T180 are PROVED: exactly 44 interior and 62 total strict
+maxima. Both complete original interior and boundary predicate blocks were
+independently replayed; fresh generation, exact proof identity, literal joining
+and both original-accounting compositions completed. No monolithic joined run
+is claimed. [Count proof](../topics/padua-lebesgue-followups-20261103/theory/t1-closed-count.md).
 T2–T4 core analytic targets are complete; required Claude audit is pending.
 
 - **PROVED, supplementary check accepted; Claude audit pending:** both limiting
@@ -39,6 +40,11 @@ The new records currently use their provisional IDs in the linked titles.
 The full PD-T098 expansion, including `-1/N` and the sharper remainder, stays
 OPEN. No finite-degree or all-degree argmax conclusion is added here.
 
+Protocol qualification: some linked full T2/T3 candidate/attempt reads were
+completed after the first mechanisms. Later reading and supplementary review
+do not retroactively cure that timing deviation; Claude must give an explicit
+protocol disposition. Physical cold-storage delivery remains pending.
+
 ## Next step
 
-`Codex (gpt-6.1-sol xhigh): Continue codex/padua-lebesgue-followups-20261103.`
+`Claude (Opus 5.5 xhigh): Continue codex/padua-lebesgue-followups-20261103.`

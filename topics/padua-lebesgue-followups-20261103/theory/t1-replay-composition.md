@@ -1,7 +1,7 @@
 # T1 verification record — identity and disjoint-stratum replay composition
 
 Record kind: verification equivalence for existing PD-T170/PD-T184/PD-T180, not a new exclusion predicate or separately registered mathematical claim.
-Status: proposed execution protocol; no completed-count claim. Independent Astra acceptance and actual complete receipts required before use as a proof basis.
+Status: **accepted and actually executed verification record** supporting the existing PD-T184/PD-T180 proofs. Independent Astra adversarial review accepted the final protocol before consequential execution; both complete strata replays and both final compositions have passed. This is a verification-equivalence record, not a newly registered theorem.
 
 ## Exact obligations
 
@@ -24,6 +24,12 @@ Finally, the open square, four open edges and four corners are disjoint and exha
 
 Frozen `a5_checker_n8_staged.py` already executes the literal original run tail after validating unchanged interior data, while retaining the live Stage1 Verifier. Current count-only runs cannot be modified mid-flight or recover their live state after exit. This protocol uses explicit proved strata and exact data identity instead; it does **not** reconstruct counters in a fake Verifier and call that a full run. It retains all the original summary predicates separately. Future replay can always fall back to the unmodified full joined checker.
 
-## Evidence and pending review
+## Actual evidence and independent review
 
-Boundary-only driver: `../code/t1_check_boundary.py`. Payload identity helper: `../code/t1_payload.py`. Full historical replay driver: `../code/t1_check.py`. Literal join: `../code/t1_join.py`. Parent owns the final manifest, raw/blob identities, report and status decision. All relevant actual executions, independent review and final accounting checks remain necessary; this file alone establishes no finite count.
+Boundary-only driver: `../code/t1_check_boundary.py`. Payload identity helper: `../code/t1_payload.py`. Full historical replay driver: `../code/t1_check.py`. Literal join: `../code/t1_join.py`. Parent owns the final manifest, raw/blob identities, report and status decision. The actual evidence below discharges those obligations; this explanatory file alone does not replace their finite checks.
+
+The two [developer interior](../evidence/t1-reference-interior-check.json) / [independent interior](../evidence/t1-independent-reference-interior-check.json) runs each checked153520 leaves,541882 ordinary masks,44 roots,45 nodes and3474 breakpoints. Both [developer boundary](../evidence/t1-boundary-check.json) / [independent boundary](../evidence/t1-independent-boundary-check.json) runs checked492 edge patterns,16 edge roots,32 active corner masks and2 corners. Their [full typed boundary facts agree](../evidence/t1-independent-actual-boundary-comparison.json).
+
+[Developer fresh identity](../evidence/t1-fresh-payload-identity.json) and [independent fresh identity](../evidence/t1-independent-fresh-payload-identity.json) both establish canonical proof payload18,969,878bytes SHAe22a9b5592d26756aa63bf143ae19f7c55fd56d1d5ecd5860088c0f2587089a1. Only present metadata and summary.seconds are excluded and separately hashed. [Actual literal join](../evidence/t1-fresh-join.json) binds fresh raw interior c5cdcfed9f19f2161b1d55d4f2154bc06a1cd5bd51e28c5c2187ca57c67cc45f, boundary adfe1107a326d17cfdd083a2ef9b8ab7ce0aeaa6b906f7a825c53a4fa1da6f08 and joined artifact033e851676969bde6a730f76ee1b4819b87de26b79aac775de6d487dade27fdf.
+
+[Developer composition](../evidence/t1-final-composition.json) actually exited0/session26873; [independent composition](../evidence/t1-independent-final-composition.json) actually exited0/session82688. Both executed accepted composition source0a4f6a3fde72fb07365ab97e5ed79372cfbe69d1c6a81bbc07cf916bd9746e83, explicitly binding retained executed interior driver0345e62ef9bb88fa11640e135d211648611c9536b85fec528d694e94ef57a69f. Every original final summary predicate passed; actual strata sum44+16+2=62. All source/input after-guards passed. Scoped receipts explicitly say original_complete_run_executed:false and count_certified:false; the completed proof is the disjoint-stratum reduction above. Independent review and fault controls are in [independent checks](../independent-checks-t1.md). Required Claude audit remains pending.

@@ -1,4 +1,4 @@
-# Proposed shared-record changes — not applied during WORK
+# Proposed shared-record changes — unapplied; Claude audit pending
 
 The handoff restricts writes to this topic and its results file. Shared records
 and merged theory bodies are untouched. These literal old→new rows are proposals,
@@ -7,8 +7,8 @@ provisional paths by the actual assigned IDs at preparation, preserving all
 original-to-split mappings and histories.
 
 T1 PD-T184 now has complete interior evidence and a proposed row below.
-The PD-T180 total change awaits the registered final composition gate.
-Its concrete inactive proposals, candidate/crosswalk updates and bounded
+PD-T180 now also has completed fresh-generation/identity/join/accounting evidence.
+Its unapplied proposals, candidate/crosswalk updates and bounded
 LIT-388 addendum are in
 [T1 proposed record updates](preparation/proposed-t1-record-updates.md).
 PD-T181 (global degree-eight argmax) and PD-T099 are not changed here.

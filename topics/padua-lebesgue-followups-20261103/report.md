@@ -2,28 +2,35 @@
 
 Development branch: `codex/padua-lebesgue-followups-20261103`.
 Base: `440d1079e42c3ef21c40d1cf8870f5b206410c6a`.
-Stage: WORK. Required Claude audit: PENDING.
+Stage: AUDIT. Core development complete; required Claude audit: PENDING.
 
 ## T1 — degree-eight maxima
 
-PD-T184 is **PROVED** from the two complete reference replays. Both full
-boundary replays have also completed and agree: 16 strict edge maxima and
-2 strict corner maxima. They cover 492 edge sign patterns and 32 active corner
-masks, with all source/input guards intact. The existing PD-T183 lower bound
-is preserved separately.
+PD-T184 and PD-T180 are **PROVED**: exactly 44 strict interior maxima and
+62 strict relative maxima on the closed square, comprising 44 interior,
+16 open-edge and 2 non-node-corner maxima. Two distinct executors completed
+every original interior predicate (153520 leaves and 541882 ordinary mask
+records), and separately every original boundary predicate (492 edge sign
+patterns and 32 active corner masks), with matching complete verified facts.
 
-The interior replays verify all 153520 leaves and 541882 ordinary mask records,
-deriving 44 interior maxima. Fresh generation, exact input identity, literal
-joining and the original final accounting remain registered T1 obligations.
-The final closed-count completion record is pending those steps. All actual
-executions preserve the frozen acceptance predicates. See
+The fresh V3/V4/V5 continuation and frozen reflection completed. Both actual
+typed proof-input comparisons match all 18969878 canonical mathematical bytes
+to the independently replayed archive. Literal joining and two actual final
+composition executions passed every original summary/accounting condition
+and raw/source/component guard. No acceptance predicate changed. This is a
+proved composition of separately executed original predicates under PD-T170;
+no monolithic joined Verifier.run execution is claimed. Its false machine
+full-run/count flags preserve that execution distinction. See the
+[composition record](theory/t1-replay-composition.md),
 [attempt](attempts/T1.md) and [independent checks](independent-checks-t1.md).
 
-For the paper: exactly 44 strict interior maxima can be stated under
-PD-T184 and the inherited finite-reduction dependencies. This gives a certified
-candidate correction of LIT-388's interior entry 38. Do not replace its numerical
-whole-square total until the registered final composition checks pass. The bounded
-[primary-source comparison](literature-comparison.md) preserves that distinction.
+For the paper: the [interior](theory/t1-interior-count.md) and
+[closed-square](theory/t1-closed-count.md) completion records, with their
+inherited finite-reduction dependencies, certify 44/62. This gives a certified
+candidate correction to LIT-388 v1 Table 3's numerical 38/56. The bounded
+[primary-source comparison](literature-comparison.md) claims neither an accepted
+erratum nor later-version coverage. PD-T183's lower bound and PD-T181's global
+maximum theorem remain separate.
 
 ## T2 — centre minima and endpoint behaviour
 
@@ -101,7 +108,7 @@ that is MEASURED evidence and does not exclude a closed form.
 
 [Analytic independent check](independent-checks-analytic.md) records exact
 candidate hashes and actual enclosure reruns. Required cross-family Claude
-audit remains distinct and pending. Provisional IDs are retained during WORK;
+audit remains distinct and pending. Provisional IDs are retained pending audited preparation;
 permanent reserved ranges are in [ALLOCATIONS.md](ALLOCATIONS.md).
 
 Protocol qualification: the T2/T3 worker completed some linked predecessor

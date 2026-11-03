@@ -19,7 +19,7 @@ Frozen A5 finite predicates under PD-T167, PD-T170 and PD-T178; complete supplie
 
 ## Status by part
 
-Overall status: **PROVED**, by two actual complete exact replays of the self-contained archived proposal; required Claude audit pending. PD-T183 retains its separate lower-bound statement. Fresh generation remains an assigned reproduction obligation and its output has no acceptance yet.
+Overall status: **PROVED**, by two actual complete exact replays of the self-contained archived proposal; required Claude audit pending. PD-T183 retains its separate lower-bound statement. Fresh reproduction is complete: two actual typed proof-input comparisons match every proof input to this accepted archived certificate.
 
 ## Depends on
 
@@ -49,7 +49,7 @@ Degree8 strict interior maxima only; includes x=0. No boundary, global-value or 
 
 ## Open items
 
-Required Claude audit. Complete fresh producer/continuation and either exact proof-input identity to the accepted archived proposal or complete fresh replay remain assigned T1 reproduction work; the closed-square boundary count is separate. Retain every failed/capped artifact, actual source hashes and the existing retrievable essential archived tree.
+Required Claude audit. Retention and retrieval are recorded in [COLD_STORAGE](../COLD_STORAGE.md) and [evidence manifest](../evidence-manifest.json). Fresh V3→V4→V5 generation and ordinary reflection completed; developer and independent typed comparisons passed with canonical proof payload18,969,878bytes SHAe22a9b5592d26756aa63bf143ae19f7c55fd56d1d5ecd5860088c0f2587089a1. See [fresh identity](../evidence/t1-fresh-payload-identity.json) and [independent identity](../evidence/t1-independent-fresh-payload-identity.json). All proof fields are identical; only separately bound metadata and summary.seconds differ. Failed/capped artifacts and truthful source identities remain recorded. The closed-square conclusion is separate.
 
 ## History
 
