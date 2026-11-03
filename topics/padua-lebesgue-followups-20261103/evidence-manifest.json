@@ -5,88 +5,95 @@
   "base_sha": "440d1079e42c3ef21c40d1cf8870f5b206410c6a",
   "completed_scope": "T2-T4 analytic proofs and independent exact/outward verification; required Claude audit pending",
   "commands": "See attempts/T2.md, attempts/T3.md, attempts/T4.md and independent-checks-analytic.md for exact commands, environment and source identities. No unrun command is included as completed.",
-  "files": [
-    {
-      "path": "code/t3_quadrature.py",
-      "sha256": "7f8f5772576ed8fe765adb9bf5328e9f8b90b88f2499edf928b45d522a14f656",
-      "bytes": 6955
-    },
-    {
-      "path": "code/t3_series.py",
-      "sha256": "55e2a9760e52f3ce522dddc707f87f60ff1d71877695ad2804485edd72cec259",
-      "bytes": 7294
-    },
-    {
-      "path": "code/t4_constant.py",
-      "sha256": "b48d488e2229e7c60293673ffeeec0214fed344858f7ddaebe9975c0dd7347e5",
-      "bytes": 4582
-    },
-    {
-      "path": "code/t4_relations.py",
-      "sha256": "0861c4b156c5f515e2f8f37a7af036f5a718db8d4bc094cd44882874a8d35303",
-      "bytes": 1609
-    },
-    {
-      "path": "evidence/analytic-independent-t3.json",
-      "sha256": "b4fa13a819c451d0feb973445b6e28d38a34764c2a8a729591720909e50faebc",
-      "bytes": 8673
-    },
-    {
-      "path": "evidence/analytic-independent-t4.json",
-      "sha256": "74f3bf87293df345154d84bd1ef29deb7009f317c38507c9d94ef4a6c287e97f",
-      "bytes": 5285
-    },
-    {
-      "path": "evidence/t3-quadrature-developer.json",
-      "sha256": "99d3ed87fc421818ff58a6d083f5109236062da2835df6a443cb603043d77edb",
-      "bytes": 2473
-    },
-    {
-      "path": "evidence/t3-series-developer.json",
-      "sha256": "06de81671732b4d487e4cf0fe3463f55ac23dc10928b66ebcc89de2e5f45d3b8",
-      "bytes": 3613
-    },
-    {
-      "path": "evidence/t4-constant.json",
-      "sha256": "eff53b81ab76245d923846a80a10ae8116a29701bbefb8d34e8c8afa1ced78b9",
-      "bytes": 4736
-    },
-    {
-      "path": "evidence/t4-relations.json",
-      "sha256": "52dba38b1cc768af70a6556651ce01d4e0c0cfba3e1c637baa2afd9ab123fbb6",
-      "bytes": 871
-    },
-    {
-      "path": "theory/t2-01-edge-centre-minima.md",
-      "sha256": "5b1156c384dbf22b9d6749a840f4d78c36f0a1e60a2e8d5fc12e30af309b4c42",
-      "bytes": 9437
-    },
-    {
-      "path": "theory/t2-02-common-endpoint-expansion.md",
-      "sha256": "a61f3371445bae5bfa71f5b1947f63696697f97ac42c0f742c4eb4d587f98da3",
-      "bytes": 4950
-    },
-    {
-      "path": "theory/t3-01-general-position-series.md",
-      "sha256": "8eae6849e3a5c756356864bb97dcd3d9fd25b09d2ac58ec93bb96a9e054a3ce5",
-      "bytes": 10220
-    },
-    {
-      "path": "theory/t4-01-corner-defect-limit.md",
-      "sha256": "47e0a1b2476e125e4fa8582846f34b52d8fe2b559165941d54454f84445a7356",
-      "bytes": 8874
-    },
-    {
-      "path": "theory/t4-02-one-dimensional-remainder.md",
-      "sha256": "7f84cbd0d68dd90750173249d91a0464c05dc35751e7b8ea09dd74cee6214fa7",
-      "bytes": 3872
-    },
-    {
-      "path": "theory/t4-03-corner-constant.md",
-      "sha256": "f0fb0c2e313c316cb62248f433653e183c17f1b470ed70cba54b9f2021ec33d8",
-      "bytes": 3831
-    }
+  "t1": "Pending complete receipts. Included controls are finite implementation checks, not count acceptance. Frozen-source and executed-normal-mode records are evidence/t1-source-freeze*.json. Large regenerated artifacts stay in named sandbox scratch; physical cold delivery pending.",
+  "protocol_qualification": "T2/T3 some linked full reads completed after mechanisms; independent report discloses timing deviation, not retroactive compliance.",
+  "file_columns": [
+    "path_relative_to_topic",
+    "sha256",
+    "bytes"
   ],
-  "t1": "Pending complete receipts; frozen-source and executed-normal-mode records are evidence/t1-source-freeze*.json. Large regenerated artifacts stay in named sandbox scratch, with archival status pending.",
-  "protocol_qualification": "T2/T3 some linked full reads completed after mechanisms; independent report discloses timing deviation, not retroactive compliance."
+  "files": [
+    ["code/t1_boundary.py", "7753e4ba8bc440133a46e6f5325e8b5531f20e5a20d8d0aa6778a32bacbdb7f0", 4622],
+    ["code/t1_check.py", "0345e62ef9bb88fa11640e135d211648611c9536b85fec528d694e94ef57a69f", 2215],
+    ["code/t1_corner_certificate_controls.py", "cf237404ee914a8d14255638506ace31d626aa42ca77f76934427faac361738d", 2346],
+    ["code/t1_corner_crossvalidate.py", "291ce1a3683cba42f0811c2d378840b5bc3ff6bdd034805d2504cf9d010d6948", 1649],
+    ["code/t1_join.py", "a88b18f2a617d7dac03a5db7ba2a89a32cae731cd2f7b6c5a0ea400e5b554b61", 4052],
+    ["code/t1_memo.py", "d910cb5857a0c09288330925ca833f820690ef76553d8e66402c3e5e352b7e35", 1084],
+    ["code/t1_memo_controls.py", "e5c146fd8a85fecf642c98cd0c92c62d2594c3d2a65846a197fe0757f853b098", 3461],
+    ["code/t1_native.c", "28afd0babb28f8a35c589900f212d62572fa7c74c5d7c59b5c2461e3c67d226f", 3788],
+    ["code/t1_native.py", "c50d8ef0923738a68cd14f5efa6778f00e9d22bb73745aadd5a7368c858891ba", 1207],
+    ["code/t1_native_build.py", "91ed2b64022a8808f6addc633fe96a055cc255b093f199c44f009c25f2ff3f80", 1714],
+    ["code/t1_native_check.py", "c6d6fe6c7772764c706277a00b8575a3f70774dc65fa90a1a26f330eaa39409e", 3285],
+    ["code/t1_native_check_backend.py", "607f6016d35f1edc513d04f3a9e38dea3cb37f5c6cfb92a31767392687c75764", 1134],
+    ["code/t1_native_check_controls.py", "60da37e17c2d2b64edeb0aae002867c615e2852250daebb2fe348f5f4882f824", 3871],
+    ["code/t1_native_check_wrapper_controls.py", "cdebe10c75484cf22824726fddbe5d3140038c24a330209179c04ffe067c51fc", 2781],
+    ["code/t1_native_controls.py", "b2f7758f469c63f993d644c9d9345a9d69e9fb220190e08f1fd59938396c34d5", 3920],
+    ["code/t1_native_edge_controls.py", "8df928b32df4262033083d9db2176fed9fe9154065434d587c70b495ac3add1c", 3555],
+    ["code/t1_native_produce.py", "6c69b3ed4e08ed238e5ab141c2280a954c37b0d66702ced4a32cbc9cc15b0e2c", 3611],
+    ["code/t1_native_wrapper_controls.py", "15adf30ed99e765d09629794719200b4d000b8052c13e3d645d29d9a2b1ad06d", 2185],
+    ["code/t1_payload.py", "49552101a9af61fad4624093d2666307234e718e11a28ed2aaf0d4b4f3ceb8be", 2804],
+    ["code/t1_produce.py", "1ac5cbb83302d12006f35f042954fd6c76881e263ed6de065ca22c5302a77664", 2659],
+    ["code/t3_quadrature.py", "7f8f5772576ed8fe765adb9bf5328e9f8b90b88f2499edf928b45d522a14f656", 6955],
+    ["code/t3_series.py", "55e2a9760e52f3ce522dddc707f87f60ff1d71877695ad2804485edd72cec259", 7294],
+    ["code/t4_constant.py", "b48d488e2229e7c60293673ffeeec0214fed344858f7ddaebe9975c0dd7347e5", 4582],
+    ["code/t4_relations.py", "0861c4b156c5f515e2f8f37a7af036f5a718db8d4bc094cd44882874a8d35303", 1609],
+    ["evidence/analytic-independent-double-diagnostic.py", "8ce0fe4516d6f8e076ba0ed35648879b024a981400c1fa4a4358589a3beb1953", 1020],
+    ["evidence/analytic-independent-t3.json", "b4fa13a819c451d0feb973445b6e28d38a34764c2a8a729591720909e50faebc", 8673],
+    ["evidence/analytic-independent-t4.json", "74f3bf87293df345154d84bd1ef29deb7009f317c38507c9d94ef4a6c287e97f", 5285],
+    ["evidence/t1-baseline-interrupt.json", "468fc0833477490056d9ffc3ec817366f2b14e1b62779f2d2229384e6057ffc6", 390],
+    ["evidence/t1-corner-certificate-controls.json", "00fed8f1d49565625ac478aa30a9e8a0b93cee1b056a115a21a2ca6bd501e8df", 1070],
+    ["evidence/t1-independent-cache-controls.json", "9b68a74b0a493aa9befc2d09284f186091cf216a1ecab9eb7850cadba6a8bf16", 1549],
+    ["evidence/t1-independent-continuation-controls.json", "ed0b5af2766d7f6198753e08b7ea2bfb80b23ffc6b13767d7dc30743a1deaa03", 2996],
+    ["evidence/t1-independent-corner-certificate-controls.json", "b732fa3ed9800ab1fc1a3334546c6854808f2dade4a131cc148796f34314dfd5", 1069],
+    ["evidence/t1-independent-corner-crossvalidation-interrupted.json", "22121cf668706b9d5b0b79248959b0b21941e32c79a51f9372f1987b5a7ef719", 1739],
+    ["evidence/t1-independent-corner-preflight.json", "0b765a94c59de0f0b21a9b3b37d230c779d77cfc9bf1b8eff5f3f93bcd6db864", 1886],
+    ["evidence/t1-independent-corner-preflight.py", "2155fc8363ccd017596d1a2462a2351fe222cf2c0e7f2cbd941bffbeda25d325", 3103],
+    ["evidence/t1-independent-frozen-controls.json", "25a112364da3a7700dcd900e9f26e9210876a5104e8b5a71f4508da3a7c9bfdc", 6498],
+    ["evidence/t1-independent-join-controls.json", "eb84a4cc18edcb935033a89a9e4c5ee985288734356894c2c17889f55990ae10", 2480],
+    ["evidence/t1-independent-join-controls.py", "ab53b816bdacd627d23c9d1c8baf9a1593fc7d861f67f962aed1940107f8939c", 4658],
+    ["evidence/t1-independent-memo-controls.json", "9caa92d150b3cb6c0cb63e0b226eca41f28fb243eabd6e21315ff1cabbba0dc8", 2362],
+    ["evidence/t1-independent-memo-controls.py", "e95d38850b8c0eef33bdb1c0785088b84ad3bdddd841570e623bfac16dc54857", 2938],
+    ["evidence/t1-independent-memo-crossvalidation.json", "75d140fa7b652fd1cc6164d8948485245192bc70b37c4c2eb97a194e6b7c0701", 2604],
+    ["evidence/t1-independent-native-build.json", "1eb9474ec298064bb96ffff912ad7a0c342e5066f34d51a0b5bab6994f15b546", 2162],
+    ["evidence/t1-independent-native-check-controls.json", "63e6f58327d02697d98e5646a0484c5b415842929e27b809d119c64f716553e5", 745],
+    ["evidence/t1-independent-native-check-wrapper-controls.json", "92cfd665e69a81d83d24f25c36cf6f40e2ef8d7ffcae886e5a731bf04dbdb62d", 719],
+    ["evidence/t1-independent-native-crossvalidation.json", "1d0bd1616f48892709710ea63b4ef652997b6d2556bea3ff667487c10d826a58", 3245],
+    ["evidence/t1-independent-native-edge-controls.json", "dd4c28a4341116501ac2c4b354573223f5f0012b4004b48c8066ad19b109d702", 1795],
+    ["evidence/t1-independent-native-ownership-controls.json", "91afde662fdfb270008ba9f6ecd2074a227966c2c1674a9bf3a6a3298f92fb47", 761],
+    ["evidence/t1-independent-native-ownership-controls.py", "7ad4dd4ef91558299738d1b37dcf1fa20da4a88542f558e4e9907e988b8ac651", 4107],
+    ["evidence/t1-independent-native-review-freeze.json", "09a38ba7e63eacae4749427b735f8690e1d4159578cf7ec34bf549c332ffb769", 2016],
+    ["evidence/t1-independent-native-wrapper-controls.json", "7afe8d340d3d5370d3ed6b2dd31c73eb0f52628ac9e78ddf9825a58bea3004da", 480],
+    ["evidence/t1-independent-payload-controls.json", "c2e267fafbed2de9bf7b5d372a09466322fd9e0f37ff8c291dca0546ee134761", 2010],
+    ["evidence/t1-independent-payload-controls.py", "2cde8073df93d2cc0121c68e26b92e4c1dce025bafb3c8dfa5d5028dbd1fa5cf", 3026],
+    ["evidence/t1-independent-wrapper-controls.json", "f2be8d66f285e05e0758ee5995e37631860dbd10502d6f67344297d6a583b288", 1508],
+    ["evidence/t1-independent-wrapper-controls.py", "5fb33dda8ae6a235a31528a3d81005d464cc208eab227d3c03d7fa8aa4577c3c", 3747],
+    ["evidence/t1-memo-controls.json", "1ce97668293b41c5fdf447d4c062b5d4a40085f4c2ccc82b1432cd067821e5ed", 2603],
+    ["evidence/t1-native-build.json", "1ade3cc04171688bb02f5a485d27d7cd4a9353e582c3142ddaf29e9bc3d17803", 1354],
+    ["evidence/t1-native-check-controls.json", "f02e742b680eaa20e0e28db48ba513dd0951e924eef453b7c38abf48b98a9cb9", 747],
+    ["evidence/t1-native-check-source-freeze.json", "9eb69edc0523e340b362c0ad6f2f9af54e37f7da665cd58a732332a78948ff95", 2460],
+    ["evidence/t1-native-check-wrapper-controls.json", "92cfd665e69a81d83d24f25c36cf6f40e2ef8d7ffcae886e5a731bf04dbdb62d", 719],
+    ["evidence/t1-native-controls.json", "3b38e843aaa6f19f250652be5f4b5c62265a90ee0837d1b1940d001166efd3bd", 3246],
+    ["evidence/t1-native-edge-controls.json", "e41a336430ae1b5e91b5c121788f91a9ef6641a8aba0dabf9a5736db0bcb79d5", 1795],
+    ["evidence/t1-native-source-freeze.json", "7fcac384b2bf0fac26503fd19919f0fefd7729b9d5115bc5ce2468bd85a29be5", 4038],
+    ["evidence/t1-native-wrapper-controls.json", "7afe8d340d3d5370d3ed6b2dd31c73eb0f52628ac9e78ddf9825a58bea3004da", 480],
+    ["evidence/t1-prefix-accounting-comparison.json", "4b477c6ec1f028ff444d09c7140f56f473cc49512104ff66e70f3931f28833ec", 333],
+    ["evidence/t1-preimport-guards-current.json", "bd85bfa6a038500206da65978e8d8bfe172dc378aef3e3cfcce123f937846e5d", 1532],
+    ["evidence/t1-reference-payload.json", "0cae94803c269ef7fe686e8e246080c634df21298ee3cbf2b277883aeb3d6870", 803],
+    ["evidence/t1-source-freeze-preoptimization.json", "002523449b4d51c8bbf04657594feac6abd2755dc9ea4775304957c84c1bc86e", 1704],
+    ["evidence/t1-source-freeze.json", "cbdedc9a15088bcc1b2082f419e7a006547a35904b8833108e14e87f8b2d4e0f", 5791],
+    ["evidence/t1-symbolic-corner-interrupt.json", "d4cf09754265b946a06f12baa53156fbb115312b584f23d70a5d1abbd58092b6", 376],
+    ["evidence/t3-quadrature-developer.json", "99d3ed87fc421818ff58a6d083f5109236062da2835df6a443cb603043d77edb", 2473],
+    ["evidence/t3-series-developer.json", "06de81671732b4d487e4cf0fe3463f55ac23dc10928b66ebcc89de2e5f45d3b8", 3613],
+    ["evidence/t3-verification.md", "be9d9c55d96aa068c52601937372fca3bddf820cbbf56cc09609dd8f2a583804", 5455],
+    ["evidence/t4-constant.json", "eff53b81ab76245d923846a80a10ae8116a29701bbefb8d34e8c8afa1ced78b9", 4736],
+    ["evidence/t4-relations.json", "52dba38b1cc768af70a6556651ce01d4e0c0cfba3e1c637baa2afd9ab123fbb6", 871],
+    ["theory/t1-closed-count.md", "8916649f421c0f9b12e217d2e373a5cecf533495dc093a3c2e3516e56d5c64fc", 5226],
+    ["theory/t1-interior-count.md", "48a65639a61beedd52f03cf90582ae5d0c00ec55fbe2305ab84969bb9d3e066c", 4532],
+    ["theory/t2-01-edge-centre-minima.md", "5b1156c384dbf22b9d6749a840f4d78c36f0a1e60a2e8d5fc12e30af309b4c42", 9437],
+    ["theory/t2-02-common-endpoint-expansion.md", "a61f3371445bae5bfa71f5b1947f63696697f97ac42c0f742c4eb4d587f98da3", 4950],
+    ["theory/t3-01-general-position-series.md", "8eae6849e3a5c756356864bb97dcd3d9fd25b09d2ac58ec93bb96a9e054a3ce5", 10220],
+    ["theory/t4-01-corner-defect-limit.md", "47e0a1b2476e125e4fa8582846f34b52d8fe2b559165941d54454f84445a7356", 8874],
+    ["theory/t4-02-one-dimensional-remainder.md", "7f84cbd0d68dd90750173249d91a0464c05dc35751e7b8ea09dd74cee6214fa7", 3872],
+    ["theory/t4-03-corner-constant.md", "f0fb0c2e313c316cb62248f433653e183c17f1b470ed70cba54b9f2021ec33d8", 3831]
+  ]
 }

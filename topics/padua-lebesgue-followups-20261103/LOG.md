@@ -2,8 +2,8 @@
 
 - Branch: `codex/padua-lebesgue-followups-20261103` · Base: main `440d107` · Developer: Codex · Auditor: Claude (Opus 5.5)
 - Stage: WORK · Next: `Codex (gpt-6.1-sol xhigh): Continue codex/padua-lebesgue-followups-20261103.` · Open handoff: [handoffs/01-work.md](handoffs/01-work.md)
-- Reserved final-ID ranges: none yet. Reserve when the draft PR opens, checking the parallel effective-argmax branch too.
-- Claims: none yet.
+- Reserved final-ID ranges: PD-T266–285, PD-N092–099, IDEA356–375, LIT474–481; [reservation and pinned union scan](ALLOCATIONS.md). No final assignments during WORK.
+- Claims: T2–T4 core theorems PROVED with accepted supplementary independent checks; T1 exact counts OPEN while complete runs continue. Required Claude audit PENDING.
 - Open for AC: none at setup. Ask AC before using any machine outside the sandbox.
 
 ## 2026-11-03 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
@@ -48,3 +48,10 @@
 - Parent identified absent explicit optimized-Python refusal in new T1 wrappers. Current runs use normal `python -B`; executed sources remain frozen. Add/test refusal after active runs, retain exact executed source blobs and a guard-only mapping rather than changing artifact provenance. This hardening item is not a failed mathematical predicate in the active executions.
 - T2/T3's final gate discloses later completion of some linked full candidate/attempt reads. Distinct Astra review records this as an acknowledged prospective-gate timing deviation, not retroactively cured by later reading. Mathematical acceptance is scoped separately; clean protocol clearance is not asserted. Carry this qualification into the Claude handoff.
 - T1 remaining runtime justified a bounded fifteen-minute `t1_native_loop` technical subtask (configured gpt-6.1-sol medium): compiled exact Python-integer endpoint summation, disjoint new files only, crossvalidated against frozen n4–7 and edge cases. No live source or acceptance predicate may change; independent checking is required before use. Existing jobs continue.
+
+## 2026-11-03 — T1 exact backend and verification checkpoint
+
+- Native exact-integer endpoint sums and optional producer/checker wrappers pushed in `1b7ebd8`. Distinct Astra high rebuilt and checked the backend against frozen historical n4–7 endpoints, actual n8 evaluator/leaf cases, arbitrary-size integer rounding, ownership/refcounts, and malformed/publication failures. The native evaluator preserves ordered per-term rounding; it changes no acceptance predicate. Its modest speed gain does not justify restarting active runs.
+- Existing normal-mode producer, boundary and two independent full interior replays remain in flight with their executed source bytes frozen. The archived proposal is a reference input, not mislabeled fresh generation. Fresh generation and full final acceptance are still required.
+- New native entry points and the unused join/payload entries explicitly reject optimized Python. The live legacy-wrapper guard hardening remains pending until those processes end; `f346d99261aa695a55d118f6d543b8fb417c2bb7` retains their executed source blobs.
+- The main evidence manifest now includes completed technical control/source records as well as analytic evidence. Controls establish only their stated finite equivalence/failure cases, not a complete degree-eight count. No temporary unpublished receipt is treated as an output.
