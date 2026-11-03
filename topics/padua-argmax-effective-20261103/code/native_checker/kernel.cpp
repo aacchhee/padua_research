@@ -18,6 +18,7 @@ I grid(Q x){return {down(x*S),up(x*S)};}
 I add(I a,I b){return {a.l+b.l,a.h+b.h};}
 I scale(I a,Z k){return k>=0?I{a.l*k,a.h*k}:I{a.h*k,a.l*k};}
 I mul(I a,I b){std::vector<Z> v={a.l*b.l,a.l*b.h,a.h*b.l,a.h*b.h};return {floor_pow2(*std::min_element(v.begin(),v.end()),192),ceil_pow2(*std::max_element(v.begin(),v.end()),192)};}
+Q ratio(Z a,Z b){Q q(a,b);q.canonicalize();return q;}
 Q frac(long a,long b){Q q(a,b);q.canonicalize();return q;}
 std::pair<std::pair<Q,Q>,int> atanb(int d){Q t=frac(1,d),sum=0,x2=frac(1,d*d),tol=Q(1,S<<32);int k=0;for(;;){Q v=t/(2*k+1);sum+=(k%2?-v:v);++k;t*=x2;Q r=t/(2*k+1);if(r<tol){Q o=sum+(k%2?-r:r);return {{std::min(sum,o),std::max(sum,o)},k};}}}
 std::pair<Q,Q> cosb(Q x){Q t=1,sum=1,tol=Q(1,S<<32);int k=0;for(;;){++k;t*=x*x/((2*k-1)*(2*k));sum+=(k%2?-t:t);Q r=t*x*x/((2*k+1)*(2*k+2));if(r<tol){Q o=sum+(k%2?r:-r);return {std::min(sum,o),std::max(sum,o)};}}}
@@ -38,7 +39,7 @@ void walk(const Coeff& c,int n,Z threshold,std::string p,int flags){
  if(!ancestors.count(p))throw std::runtime_error("uncovered partition");auto halves=split(c,n,p.size()%2);int axis=p.size()%2;walk(halves.first,n,threshold,p+"0",flags&~(axis==0?2:8));walk(halves.second,n,threshold,p+"1",flags&~(axis==0?1:4));
 }
 int main(int argc,char**argv){try{if(argc!=2)throw std::runtime_error("degree required");int n=std::stoi(argv[1]);if(n<2||n>100)throw std::runtime_error("degree outside supported range");auto a=atanb(5),b=atanb(239);Q pl=16*a.first.first-4*b.first.second,ph=16*a.first.second-4*b.first.first;auto x=axis(n,pl,ph),y=axis(n+1,pl,ph);int m=n+1;std::vector<std::vector<Z>> t(m,std::vector<Z>(m));t[0][0]=1;t[1][1]=1;for(int p=2;p<=n;++p)for(int i=0;i<=n;++i)t[p][i]=(i?2*t[p-1][i-1]:Z(0))-t[p-2][i];
- std::vector<std::vector<Q>> w(m,std::vector<Q>(m));for(int k=0;k<=n;++k)for(int i=0;i<=n;++i)for(int r=0;r<=std::min(k,i);++r)w[k][i]+=Q(choose(i,r)*choose(k,r)*(Z(1)<<r)*( ((i-r)%2)?-1:1),choose(n,r));
+ std::vector<std::vector<Q>> w(m,std::vector<Q>(m));for(int k=0;k<=n;++k)for(int i=0;i<=n;++i)for(int r=0;r<=std::min(k,i);++r)w[k][i]+=ratio(choose(i,r)*choose(k,r)*(Z(1)<<r)*( ((i-r)%2)?-1:1),choose(n,r));
  Coeff coeff;I cb[2];for(int j=0;j<=n;++j)for(int k=0;k<=n+1;++k)if((j+k)%2==0){Table poly(m*m);Q weight=frac(2,n*(n+1));if(j==0||j==n)weight/=2;if(k==0||k==n+1)weight/=2;for(int p=0;p<=n;++p)for(int q=0;q<=n-p;++q){int h=(p?2:1)*(q?2:1);if(p==n&&q==0)h=1;I z=mul(mul(mode(x,j,p),mode(y,k,q)),grid(weight*h));for(int u=0;u<=p;++u)if(t[p][u]!=0)for(int v=0;v<=q;++v)if(t[q][v]!=0)poly[u*m+v]=add(poly[u*m+v],scale(z,t[p][u]*t[q][v]));}
  for(int e=0;e<2;++e){I z;int cx=(e&&n%2==0)?1:-1,cy=(e&&n%2)?1:-1;for(int u=0;u<=n;++u)for(int v=0;v<=n;++v)z=add(z,scale(poly[u*m+v],((cx<0&&u%2)^(cy<0&&v%2))?-1:1));Z low=(z.l>0?z.l:(z.h<0?-z.h:Z(0)));cb[e].l+=low;cb[e].h+=absmax(z);}
  Table mid(m*m),out(m*m);for(int v=0;v<=n;++v){std::vector<I> vals;std::vector<int> powers;for(int u=0;u<=n;++u)if(poly[u*m+v].l!=0||poly[u*m+v].h!=0){vals.push_back(poly[u*m+v]);powers.push_back(u);}for(int r=0;r<=n;++r){std::vector<Q> weights;for(int u:powers)weights.push_back(w[r][u]);mid[r*m+v]=linear(vals,weights);}}for(int r=0;r<=n;++r){std::vector<I> vals;for(int v=0;v<=n;++v)vals.push_back(mid[r*m+v]);for(int s=0;s<=n;++s)out[r*m+s]=linear(vals,w[s]);}coeff.push_back(std::move(out));}

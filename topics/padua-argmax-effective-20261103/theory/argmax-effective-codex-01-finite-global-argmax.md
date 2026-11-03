@@ -25,11 +25,15 @@ computer-assisted premise. No floating comparison enters a leaf verdict.
 
 ## Status by part
 
-Overall status: **PENDING FINAL REPLAY** during assembly.
+Overall status: **OPEN at the full finite range pending corrected native replay**.
+The17–24 cases have independent reference-Python acceptance. A final
+inspection found noncanonical GMP rational operands in the native checker
+transform weights. Corrected exact native replays are in progress; earlier
+native acceptances alone are not used to close25–32. Claude audit remains pending.
 
 | Part | Status | Evidence |
 |---|---|---|
-| Finite global equality and exact equality set,17<=n<=32 | PENDING FINAL REPLAY | Complete canonical certificates under evidence/, independently reconstructed bounds and covers recorded in native-checker-summary.json |
+| Finite global equality and exact equality set,17<=n<=32 | OPEN pending corrected replay | Complete canonical certificates under evidence/, independently reconstructed bounds and covers recorded in native-checker-summary.json |
 
 Disposition: finite parameter continuation and implementation variant of
 IDEA-320/PD-T210, with no new mathematical criterion or novelty claim.
@@ -88,8 +92,10 @@ their own arithmetic, as previously disclosed.
 Validation includes every degree9–24 against the unchanged reference
 Python checker, exact mathematical-payload comparison after canonical
 source regeneration, and a different agent's fresh reference production
-and checking at17–24. A separate agent rebuilt and replayed the final
-native overlap. The native checker's14 historical and22 additional
+and checking at17–24. The supplementary astra high agent rebuilt and replayed the final
+native overlap9–24 and endpoint32. The separate sol medium checker author
+accepted final9–31; degree32 is explicitly attributed to the supplementary
+reviewer, rather than a nonexistent duplicate checker-author execution. The native checker's14 historical and22 additional
 malformed controls reject all36 defects; complete and partial positive
 cases are distinguished. Source-provenance races found during development
 were fixed before the canonical artifacts were regenerated.

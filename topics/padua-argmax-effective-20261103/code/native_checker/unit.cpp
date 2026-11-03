@@ -7,7 +7,7 @@ int main() {
     require(down(frac(-5,2)) == -3 && up(frac(-5,2)) == -2);
     require(down(frac(5,2)) == 2 && up(frac(5,2)) == 3);
     I negative = grid(frac(-1,3));
-    require(Q(negative.l,S) <= frac(-1,3) && Q(negative.h,S) >= frac(-1,3));
+    require(ratio(negative.l,S) <= frac(-1,3) && ratio(negative.h,S) >= frac(-1,3));
     I product = mul({-S,2*S},{-3*S,4*S});
     require(product.l == -6*S && product.h == 8*S);
     I weighted = linear({{-2,3}},{frac(-1,3)});

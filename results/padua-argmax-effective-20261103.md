@@ -1,5 +1,10 @@
 # Effective Padua argmax — development results
 
+**Integration checkpoint:** corrected native revalidation is in progress after
+a GMP rational canonicalization contract issue was found. Earlier native
+acceptances below are historical until replaced by corrected receipts;
+reference-Python17–24 and analytic proofs are unaffected.
+
 Branch `codex/padua-argmax-effective-20261103`; [draft PR19](https://github.com/aacchhee/padua_research/pull/19).
 Rules/input8a1f394, base440d107. Required Claude audit pending.
 
@@ -11,7 +16,7 @@ was obtained. The effective campaign supplies two kinds of progress:
   0<h_x+h_y<=1/(2[n(n+1)]^3). This closes the all-degree normalized slope
   premise, while weighted energy and a fixed scaled phase zone remain OPEN.
 - A C/GMP producer and separately implemented C++/GMP checker extend exact
-  finite certification. The final degree set and acceptance evidence are
+  finite certification to every degree17–32, giving the continuous range2–32. The final degree set and acceptance evidence are
   in the [finite theorem](../topics/padua-argmax-effective-20261103/theory/argmax-effective-codex-01-finite-global-argmax.md).
 
 Three strict whole-cell edge comparisons are proved at n13,17,24.

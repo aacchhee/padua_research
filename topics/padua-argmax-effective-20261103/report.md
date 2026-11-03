@@ -1,9 +1,16 @@
 # Effective Padua argmax campaign — development report
 
+**Integration checkpoint:** corrected native revalidation is in progress after
+a GMP rational canonicalization contract issue was found. Earlier native
+acceptances below are historical until replaced by corrected receipts;
+reference-Python17–24 and analytic proofs are unaffected.
+
 Rules/input `8a1f394739293953e1566fd24a0a193cc78ff26f`; base `440d107`.
 Branch `codex/padua-argmax-effective-20261103`; [draft PR19](https://github.com/aacchhee/padua_research/pull/19).
 Development results below await the required Claude Opus 5.5 xhigh audit.
 
+The exact finite global range now reaches **2<=n<=32**, with the new
+cases17–32 in the [finite theorem](theory/argmax-effective-codex-01-finite-global-argmax.md).
 The all-degree global conjecture PD-T099 remains **OPEN**. No effective
 global threshold n0 and no counterexample were obtained. The principal
 analytic advance is an exact corner-active spectrum giving, for every
@@ -24,7 +31,7 @@ required Claude audit remains separate.
 
 | Gate | Outcome and scope |
 |---|---|
-| G0 | Exact finite continuation and independent reference replay are documented in the finite theorem and acceptance receipts. |
+| G0 | PASS: fresh independent Python production/checking17–24, identical mathematical payloads to canonical native certificates, and actual independent native acceptance. Finite continuation17–32 also accepted. |
 | G1 | Separate C/GMP producer and C++/GMP checker implement the exact 192-bit arithmetic. Measured timing fits and speedups are in the producer receipt/attempt; extrapolations are capacity estimates, not certified degrees. |
 | G2 | MEASURED local K decreases from about .2893 at n17 to .2215 at n1000; no continuous remainder bound follows. |
 | G3 | MEASURED sampled primitive constant about1.594 at n17 and1.454 at n200; sampled far margins positive. |
@@ -41,6 +48,32 @@ The numerical detail, diagnostics and sample limitations are in
 [n4 obstruction](theory/argmax-effective-codex-04-coarse-cell-sign-obstruction.md),
 and [source reading](literature-g8.md). Floating maxima/minima in these
 records are finite sampled extrema, never universal bounds.
+
+## Measured capacity and its limits
+
+Fresh full native-driver CPU runs, including cold compilation and output,
+used2.1284s at17 and13.9374s at24, against25.3967s and161.6771s for the
+Python constructor/search: about11.93x and11.60x. The Python boundary
+omits final output compression/write, so this comparison charges the
+native implementation extra work. Separate hot-path fits must not be
+mistaken for full-driver times.
+
+The native producer-plus-independent-checker CPU sums at17 and24 are
+7.601892s and49.220506s. Their two-point power fit has exponent5.4167
+and projects cumulative production and one replay for degrees17..N to
+N=62 in24h or84 in7days. The Python producer-only two-point exponent is
+5.3677, with cumulative projections51 and70; Python checker CPU was not
+measured, so those are not complete Python certification-pipeline budgets.
+The broader native hot-path fit, including the isolated40 probe, has
+exponent about5.8264 and producer-only projections70 and94.
+
+These are heuristic **MEASURED cost extrapolations**, not proved or
+validated n_cert. Sparse-fit uncertainty, fixed192-bit enclosure growth,
+memory and the implementation's n<=100 cap all remain constraints.
+Single-degree projections in the receipt are separate from cumulative
+bridge costs. None supplies the missing G5 remainder model or an n0,
+and the pre-registered factor-two/10-times-capacity decision rule has
+not been silently replaced by these fit values.
 
 ## Route decisions and remaining obligations
 

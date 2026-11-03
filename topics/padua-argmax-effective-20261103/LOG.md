@@ -103,3 +103,18 @@
   acceptance and fresh Python G0 continuation are being finalized. Only
   final receipt-backed degrees will enter the finite theorem.
 - No new permissions, outside machine or third-party fulltext storage used.
+
+
+### Final inspection finding — GMP rational canonicalization
+
+- Native checker author found that `mpq_class(num,den)` operands in the
+  Bernstein transform weights were added before canonicalization, contrary
+  to GMP's arithmetic contract. Earlier numerical agreement and acceptance
+  are retained as historical observations, not treated as resolving this.
+- Reopened native25+ acceptance and corrected the weight construction.
+  Independent exact Fraction comparison of production weights and corrected
+  full replays are assigned across checker/gates/supplementary workers.
+  Original Python G0 and analytic corner/obstruction proofs are unaffected.
+- Producer inspection found explicit canonicalization of imported weights;
+  a targeted unreduced-weight input control at2 reproduced every scientific
+  field. Producer source and all canonical certificates remain unchanged.
