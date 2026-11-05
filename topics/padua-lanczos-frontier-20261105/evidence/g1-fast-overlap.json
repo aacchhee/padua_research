@@ -1,0 +1,498 @@
+{
+  "label": "EXACT_COMMON_DENOMINATOR_G1_OVERLAP_CHECKPOINT",
+  "code": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_fast.py",
+    "bytes": 10647,
+    "sha256": "7dbc7ecb609ee5db9ebcb9a52bf39f13e5273ccfebc330791223ca2923f49f3b"
+  },
+  "prospective_plan": {
+    "path": "/tmp/padua-lanczos-frontier-g1-fast/plan-prospective.md",
+    "bytes": 5143,
+    "sha256": "ebc09e7ba4d69d80a489882ae137a5dec1e1f24f644b7202390212a5ceb444eb"
+  },
+  "rules_head": "02a465b",
+  "integration_head": "bb67c1ee830d468fa33007e15008d5574d00ccf4",
+  "frozen_source_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+  "old_sweep_sha256": "0d9c236fe879879b7f546596c554d213b7b8c408d31dec08dd79146c7d629344",
+  "small_fresh_cases": 8,
+  "small_endpoint_rows": 24,
+  "legacy_overlap_cases": 8,
+  "legacy_overlap_rows": 88,
+  "case_cap_seconds": 120,
+  "max_workers": 2,
+  "all_original_nodes_and_sources": true,
+  "cases": [
+    {
+      "set": "triangle",
+      "rule": "bj",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast/triangle-bj-d12.json",
+        "bytes": 2638,
+        "sha256": "7fd1d85535e460a648c9d32d5a451c8c2ef900a7ed4da4e81e4975e03e4d1850"
+      },
+      "endpoints": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast/overlap/triangle-bj-d12/endpoints.json",
+        "bytes": 15589,
+        "sha256": "9af9f415a39754cb79e1ace53c588895449971256f517c30f776c59b049da9bf"
+      },
+      "baseline": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast/overlap/triangle-bj-d12/baseline.jsonl.gz",
+        "bytes": 75592,
+        "sha256": "bb19208c389f338c9d73323b1914724d21e3cbe6de5aa6c115b1c89d39880363"
+      },
+      "timing": {
+        "wall_seconds": 14.162804253999639,
+        "process_cpu_seconds": 14.15969688,
+        "basis_wall_seconds": 0.2762166190004791,
+        "basis_cpu_seconds": 0.27619715899999997
+      },
+      "fresh_scalar_basis_degrees": [
+        2,
+        3,
+        4
+      ],
+      "full_new_column_Gram": true,
+      "all11legacy_endpoints_and_choices_match": true,
+      "basis_integer_bit_sizes": {
+        "max_numerator": 33,
+        "max_denominator": 49
+      },
+      "final_endpoint_bits": [
+        {
+          "endpoint": "Knode_squared",
+          "numerator_bits": 130,
+          "denominator_bits": 82
+        },
+        {
+          "endpoint": "KHS_squared",
+          "numerator_bits": 202,
+          "denominator_bits": 149
+        },
+        {
+          "endpoint": "Urow_squared",
+          "numerator_bits": 174,
+          "denominator_bits": 120
+        },
+        {
+          "endpoint": "upper_squared",
+          "numerator_bits": 202,
+          "denominator_bits": 149
+        }
+      ]
+    },
+    {
+      "set": "triangle",
+      "rule": "mirror",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast/triangle-mirror-d12.json",
+        "bytes": 2652,
+        "sha256": "dbdcfdc3ca36fac854a51c160af5e48f77465aae9c78c33ac15e592a7211a0ac"
+      },
+      "endpoints": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast/overlap/triangle-mirror-d12/endpoints.json",
+        "bytes": 15705,
+        "sha256": "47acfdd0176da66efaaa25966d9798c8989782161f30100b6a0579acda278502"
+      },
+      "baseline": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast/overlap/triangle-mirror-d12/baseline.jsonl.gz",
+        "bytes": 73969,
+        "sha256": "eecc120e7419ad4817444812c96c3623f1489d1a2b0171d89c8eba5a1b14b018"
+      },
+      "timing": {
+        "wall_seconds": 6.074804083000345,
+        "process_cpu_seconds": 6.074429162,
+        "basis_wall_seconds": 0.17680233600185602,
+        "basis_cpu_seconds": 0.1767667
+      },
+      "fresh_scalar_basis_degrees": [
+        2,
+        3,
+        4
+      ],
+      "full_new_column_Gram": true,
+      "all11legacy_endpoints_and_choices_match": true,
+      "basis_integer_bit_sizes": {
+        "max_numerator": 33,
+        "max_denominator": 49
+      },
+      "final_endpoint_bits": [
+        {
+          "endpoint": "Knode_squared",
+          "numerator_bits": 107,
+          "denominator_bits": 79
+        },
+        {
+          "endpoint": "KHS_squared",
+          "numerator_bits": 209,
+          "denominator_bits": 175
+        },
+        {
+          "endpoint": "Urow_squared",
+          "numerator_bits": 151,
+          "denominator_bits": 116
+        },
+        {
+          "endpoint": "upper_squared",
+          "numerator_bits": 209,
+          "denominator_bits": 175
+        }
+      ]
+    },
+    {
+      "set": "triangle",
+      "rule": "alt",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast/triangle-alt-d12.json",
+        "bytes": 2637,
+        "sha256": "98743b986dda53316f8be3567da7531128501d3e34ef8d742c5ce5e8050af9c2"
+      },
+      "endpoints": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast/overlap/triangle-alt-d12/endpoints.json",
+        "bytes": 16420,
+        "sha256": "37f391cb95c81dd44c67f5a3226d38829657d8fb78753872d025c813f0fa488d"
+      },
+      "baseline": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast/overlap/triangle-alt-d12/baseline.jsonl.gz",
+        "bytes": 75048,
+        "sha256": "9a32e570b9648780ea95d3cf03c3508f6c210ab3849a87c0e612dda70db964d6"
+      },
+      "timing": {
+        "wall_seconds": 11.686456125000404,
+        "process_cpu_seconds": 11.670601863,
+        "basis_wall_seconds": 0.33109283699741354,
+        "basis_cpu_seconds": 0.33071535
+      },
+      "fresh_scalar_basis_degrees": [
+        2,
+        3,
+        4
+      ],
+      "full_new_column_Gram": true,
+      "all11legacy_endpoints_and_choices_match": true,
+      "basis_integer_bit_sizes": {
+        "max_numerator": 33,
+        "max_denominator": 49
+      },
+      "final_endpoint_bits": [
+        {
+          "endpoint": "Knode_squared",
+          "numerator_bits": 213,
+          "denominator_bits": 179
+        },
+        {
+          "endpoint": "KHS_squared",
+          "numerator_bits": 259,
+          "denominator_bits": 220
+        },
+        {
+          "endpoint": "Urow_squared",
+          "numerator_bits": 225,
+          "denominator_bits": 184
+        },
+        {
+          "endpoint": "upper_squared",
+          "numerator_bits": 259,
+          "denominator_bits": 220
+        }
+      ]
+    },
+    {
+      "set": "triangle",
+      "rule": "pivot",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast/triangle-pivot-d12.json",
+        "bytes": 2658,
+        "sha256": "01afa6d7ae4bc739db6e6447151cbd746534fb72ab694ac7f153c297cf272622"
+      },
+      "endpoints": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast/overlap/triangle-pivot-d12/endpoints.json",
+        "bytes": 16498,
+        "sha256": "3905833f1b581c22ec855b3e005eda0adc30e8cf52fc1b7d4d6f27205b5ba09c"
+      },
+      "baseline": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast/overlap/triangle-pivot-d12/baseline.jsonl.gz",
+        "bytes": 74714,
+        "sha256": "6041734e3b4447ad16003f6d524b1b0c5ec0052a24b10d020620e83826df2781"
+      },
+      "timing": {
+        "wall_seconds": 10.116391608000413,
+        "process_cpu_seconds": 10.107377006,
+        "basis_wall_seconds": 0.47101463500075624,
+        "basis_cpu_seconds": 0.47066311599999994
+      },
+      "fresh_scalar_basis_degrees": [
+        2,
+        3,
+        4
+      ],
+      "full_new_column_Gram": true,
+      "all11legacy_endpoints_and_choices_match": true,
+      "basis_integer_bit_sizes": {
+        "max_numerator": 33,
+        "max_denominator": 49
+      },
+      "final_endpoint_bits": [
+        {
+          "endpoint": "Knode_squared",
+          "numerator_bits": 247,
+          "denominator_bits": 223
+        },
+        {
+          "endpoint": "KHS_squared",
+          "numerator_bits": 249,
+          "denominator_bits": 221
+        },
+        {
+          "endpoint": "Urow_squared",
+          "numerator_bits": 221,
+          "denominator_bits": 191
+        },
+        {
+          "endpoint": "upper_squared",
+          "numerator_bits": 249,
+          "denominator_bits": 221
+        }
+      ]
+    },
+    {
+      "set": "rotated",
+      "rule": "bj",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast/rotated-bj-d12.json",
+        "bytes": 2623,
+        "sha256": "5daf0c6b2d10207d1740fd930b26c812392e31254a89ef0304468e68d597a8b3"
+      },
+      "endpoints": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast/overlap/rotated-bj-d12/endpoints.json",
+        "bytes": 94581,
+        "sha256": "1ee168b063b42a49201875639f93edc364d38311423a4b2f790a869db43d43eb"
+      },
+      "baseline": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast/overlap/rotated-bj-d12/baseline.jsonl.gz",
+        "bytes": 796341,
+        "sha256": "50234c9952256a3fb97023e648ab2741c77c568e1829ce5d21349e805fad93e3"
+      },
+      "timing": {
+        "wall_seconds": 92.94803186899662,
+        "process_cpu_seconds": 92.783674852,
+        "basis_wall_seconds": 2.217844704999152,
+        "basis_cpu_seconds": 2.21692355
+      },
+      "fresh_scalar_basis_degrees": [
+        2,
+        3,
+        4
+      ],
+      "full_new_column_Gram": true,
+      "all11legacy_endpoints_and_choices_match": true,
+      "basis_integer_bit_sizes": {
+        "max_numerator": 331,
+        "max_denominator": 343
+      },
+      "final_endpoint_bits": [
+        {
+          "endpoint": "Knode_squared",
+          "numerator_bits": 534,
+          "denominator_bits": 498
+        },
+        {
+          "endpoint": "KHS_squared",
+          "numerator_bits": 14225,
+          "denominator_bits": 14182
+        },
+        {
+          "endpoint": "Urow_squared",
+          "numerator_bits": 14178,
+          "denominator_bits": 14138
+        },
+        {
+          "endpoint": "upper_squared",
+          "numerator_bits": 14178,
+          "denominator_bits": 14138
+        }
+      ]
+    },
+    {
+      "set": "rotated",
+      "rule": "mirror",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast/rotated-mirror-d12.json",
+        "bytes": 2650,
+        "sha256": "d06f2d5e45ff00406334dc3240f04f3ea6ecb7340d3e8c8c257df93ecd0f241b"
+      },
+      "endpoints": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast/overlap/rotated-mirror-d12/endpoints.json",
+        "bytes": 100174,
+        "sha256": "5e25ded85c133a799335bbf97b2003125de78d848c02c534a1c0e0957b1ee95a"
+      },
+      "baseline": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast/overlap/rotated-mirror-d12/baseline.jsonl.gz",
+        "bytes": 788882,
+        "sha256": "106ecf998121d50a3a7e0f4a1c96f8017cf651d91dc599bf8457019a05890d94"
+      },
+      "timing": {
+        "wall_seconds": 90.49965419699947,
+        "process_cpu_seconds": 90.313116038,
+        "basis_wall_seconds": 1.9420975520006323,
+        "basis_cpu_seconds": 1.941962164
+      },
+      "fresh_scalar_basis_degrees": [
+        2,
+        3,
+        4
+      ],
+      "full_new_column_Gram": true,
+      "all11legacy_endpoints_and_choices_match": true,
+      "basis_integer_bit_sizes": {
+        "max_numerator": 331,
+        "max_denominator": 343
+      },
+      "final_endpoint_bits": [
+        {
+          "endpoint": "Knode_squared",
+          "numerator_bits": 1060,
+          "denominator_bits": 1021
+        },
+        {
+          "endpoint": "KHS_squared",
+          "numerator_bits": 14755,
+          "denominator_bits": 14712
+        },
+        {
+          "endpoint": "Urow_squared",
+          "numerator_bits": 14712,
+          "denominator_bits": 14670
+        },
+        {
+          "endpoint": "upper_squared",
+          "numerator_bits": 14712,
+          "denominator_bits": 14670
+        }
+      ]
+    },
+    {
+      "set": "rotated",
+      "rule": "alt",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast/rotated-alt-d12.json",
+        "bytes": 2632,
+        "sha256": "f3317fb017848c4cb83ec3e83e915e321d0092688aecdf5882b54c201f740f05"
+      },
+      "endpoints": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast/overlap/rotated-alt-d12/endpoints.json",
+        "bytes": 112272,
+        "sha256": "5f710a4837b610bb8e0f4cc8cfac5846a0f1bbef65ac68f3f63b174133aaaa3b"
+      },
+      "baseline": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast/overlap/rotated-alt-d12/baseline.jsonl.gz",
+        "bytes": 797044,
+        "sha256": "574b92d23209e155cb301d41fbcfcf21b46790007f455e7ac291cb48b8550026"
+      },
+      "timing": {
+        "wall_seconds": 97.22754358399834,
+        "process_cpu_seconds": 97.003163035,
+        "basis_wall_seconds": 1.8068067789972702,
+        "basis_cpu_seconds": 1.804935497
+      },
+      "fresh_scalar_basis_degrees": [
+        2,
+        3,
+        4
+      ],
+      "full_new_column_Gram": true,
+      "all11legacy_endpoints_and_choices_match": true,
+      "basis_integer_bit_sizes": {
+        "max_numerator": 331,
+        "max_denominator": 343
+      },
+      "final_endpoint_bits": [
+        {
+          "endpoint": "Knode_squared",
+          "numerator_bits": 2530,
+          "denominator_bits": 2505
+        },
+        {
+          "endpoint": "KHS_squared",
+          "numerator_bits": 16239,
+          "denominator_bits": 16209
+        },
+        {
+          "endpoint": "Urow_squared",
+          "numerator_bits": 16202,
+          "denominator_bits": 16172
+        },
+        {
+          "endpoint": "upper_squared",
+          "numerator_bits": 16202,
+          "denominator_bits": 16172
+        }
+      ]
+    },
+    {
+      "set": "rotated",
+      "rule": "pivot",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast/rotated-pivot-d12.json",
+        "bytes": 2644,
+        "sha256": "103c3919e6ec247187ac74715f43a8963c9b9bc4dacc89dff0f001ac49e130c9"
+      },
+      "endpoints": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast/overlap/rotated-pivot-d12/endpoints.json",
+        "bytes": 108634,
+        "sha256": "1d7f466c27c388221fd4704ca12717aa6e7e9a90cabee734f3b28afc9bcc955d"
+      },
+      "baseline": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast/overlap/rotated-pivot-d12/baseline.jsonl.gz",
+        "bytes": 793493,
+        "sha256": "4739f44be317a7e7960d210c5a2d7a6ff306f2ed93f0e448daa62c34b4f246f2"
+      },
+      "timing": {
+        "wall_seconds": 93.46175342399874,
+        "process_cpu_seconds": 93.279314293,
+        "basis_wall_seconds": 3.3212423639997724,
+        "basis_cpu_seconds": 3.316674723
+      },
+      "fresh_scalar_basis_degrees": [
+        2,
+        3,
+        4
+      ],
+      "full_new_column_Gram": true,
+      "all11legacy_endpoints_and_choices_match": true,
+      "basis_integer_bit_sizes": {
+        "max_numerator": 331,
+        "max_denominator": 343
+      },
+      "final_endpoint_bits": [
+        {
+          "endpoint": "Knode_squared",
+          "numerator_bits": 2217,
+          "denominator_bits": 2187
+        },
+        {
+          "endpoint": "KHS_squared",
+          "numerator_bits": 15912,
+          "denominator_bits": 15877
+        },
+        {
+          "endpoint": "Urow_squared",
+          "numerator_bits": 15852,
+          "denominator_bits": 15818
+        },
+        {
+          "endpoint": "upper_squared",
+          "numerator_bits": 15852,
+          "denominator_bits": 15818
+        }
+      ]
+    }
+  ],
+  "benchmark14": "Prospectively authorized single rotatedBJ14 cap180s is executing; no20producer run.",
+  "limits": [
+    "Per-case exact argv and input identities are in referenced raw receipts.",
+    "Timing is measured under current concurrency; oldwallcomparisons are context, not controlled universal speedups.",
+    "No parity/gauge/source/node compression, fitting, targetdecision or asymptotic claim.",
+    "Independent implementation/comparison remains separately recorded; this is developer evidence.",
+    "Allbulkoutputs temporary outsideGit; retention/delivery pending."
+  ]
+}
