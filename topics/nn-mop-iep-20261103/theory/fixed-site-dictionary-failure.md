@@ -1,6 +1,6 @@
 # PD-N?nn-mop-iep-codex-02 — standard transfers do not commute at a fixed site
 
-ID kind: PD-N. Aliases: C2 literal dictionary; fixed-site versus shifted products.
+ID kind: PD-N. Aliases: C2 literal fixed-site dictionary counterexamples.
 Split from: none. Split into: none.
 
 ## Statement
@@ -25,8 +25,10 @@ REJECTED: refuted for C2's literal identification on these samples.
 
 ## Negative-result scope
 
-Attempted mechanism: identify these same-site transfers with the commuting
-finite symmetric coordinate sections of PD-T057. The negative statement does
+Attempted mechanism: literally identify these same-site transfers with a
+commuting pair. This tests only that particular dictionary. PD-T057's interior
+commuting conditions themselves couple adjacent degree blocks, so "shifted
+versus fixed-site" is not the feature that separates these theories. The negative statement does
 not exclude a global covariant-shift operator realization, a redundant lift,
 another gauge, or any stable nearest-neighbour update.
 
@@ -41,11 +43,19 @@ finite MEASURED evidence, not a claimed computer-assisted general theorem.
 ## Sources / proof or evidence
 
 The shifted transfer interpretation is existing literature, documented in
-../gate.md and ../literature.md. The two multiplication operators of PD-T057
-are a different precise object; mere lattice indexing gives no dictionary.
+../gate.md and ../literature.md. The decisive mismatch with PD-T057 is
+spectral: the two NN difference operators
+H_j f(nu)=f(nu+e_j)+b_(nu,j)f(nu)+sum_s a_(nu,s)f(nu-e_s)
+both have eigenvalue x on a consistent MOP state. Thus H_1-H_2 annihilates
+that state. Bivariate coordinate multiplication instead has joint node
+eigenvalues (x_l,y_l) on the full node space. A second index direction gives
+no independent second spectral coordinate.
 The recorded exact counterexamples give the evidence for the statement.
 
 ## Scope / open items / history
 
 No universal impossibility or novelty claim. Other encodings remain outside
-scope. Claude audit PENDING; 2026-11-05, Codex, metadata in LOG.md.
+scope. Claude audit-01 accepted the finite counts/status and requested this
+F2 wording correction; response-01 re-audit PENDING. The full-lattice H_j
+are not identified with the transfer matrices; no new full-lattice measurement
+is added here. 2026-11-05, Codex, metadata in LOG.md.

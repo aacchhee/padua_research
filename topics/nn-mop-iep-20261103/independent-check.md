@@ -165,6 +165,14 @@ retained artifacts.
 
 ## Remaining limits
 
+Response-01 provenance addendum (F4, not a change to the original independent
+review): the emitted JSON contains `python` and, in the small checker, `sympy`
+version fields. Raw output SHA-256 is environment-dependent. Across
+environments compare after removing or normalising those version fields only;
+retain code/input hashes and mathematical values. Claude audit-01 R2 obtained
+the recorded hash after normalising its Python version. This does not claim
+that its raw output bytes were identical before normalisation.
+
 This check supplies no performance/stability benchmark, complete inverse
 characterization of coefficient arrays, exhaustive counterexample search,
 or literature novelty decision. The small checker adds a SymPy trusted

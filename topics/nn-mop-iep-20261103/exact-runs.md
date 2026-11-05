@@ -143,8 +143,9 @@ entries; it is counted once, not nine times.
 All tested degree-N moment matrices are nonsingular, but their monic solutions
 coincide with `prod_k(x-x_k)`. The h values then vanish, all tested degree-(N+1)
 moment matrices are singular, and d=0 already at degree N-1 because both
-successors coincide. In particular formulas dividing by d cannot be applied
-naively at that final layer. No beyond-support NN recurrence is asserted or
+successors coincide. For reconstruction of coefficient layer N-1, these zero d values are not
+used as divisors: the A/B layer recursion uses d only through degree N-2.
+A terminal division would enter only in an out-of-domain next layer. No beyond-support NN recurrence is asserted or
 tested. Nonsingularity at the terminal layer does not make the finite measure
 pair perfect at every degree.
 
@@ -156,6 +157,13 @@ every monic solution. This counterexample is a separate modified input, not a
 failure of either primary family's tests.
 
 ## Limits and runs needed
+
+Cross-environment provenance (audit-01 F4): the raw JSON embeds the Python
+version. Its byte hash therefore depends on that version as well as code and
+inputs. Compare mathematical payloads after removing or normalising only the
+`python` field, while retaining source/input hashes and all result fields.
+Claude reproduced the recorded final hash after normalising 3.13.18 to
+3.12.14; see audit-01 R1. Raw and normalised identity are distinct checks.
 
 The labels “generic” and “binomial” name these explicit finite test inputs;
 they imply no genericity theorem. Positivity alone is not taken as a normality

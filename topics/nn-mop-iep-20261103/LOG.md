@@ -1,7 +1,7 @@
 # Nearest-neighbour MOPs as a commuting-pair IEP (IDEA-117): log
 
-- Branch: `codex/nn-mop-iep-20261103` · Base: main `440d107` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK (audit-01 findings) · Next: `Codex (gpt-6.1-sol, xhigh): Continue codex/nn-mop-iep-20261103.` · Open handoff: [handoffs/03-response.md](handoffs/03-response.md)
+- Branch: `codex/nn-mop-iep-20261103` · Base: main `5db1e01` (original `440d107`) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
+- Stage: AUDIT (response-01 re-audit pending) · Next: `Claude (Opus 5.5 xhigh): Continue codex/nn-mop-iep-20261103.` · Next open handoff: [handoffs/04-reaudit.md](handoffs/04-reaudit.md)
 - Reserved final-ID ranges: T286–293, N100–103, IDEA376–383, LIT562–573;
   first pushed in a0abe8b, [draft PR22](https://github.com/aacchhee/padua_research/pull/22).
   No final assignments yet.
@@ -95,12 +95,14 @@
 
 ## Runs needed / remaining work
 
-- Required Claude audit: completed as audit-01 (findings F1–F4). Developer
-  response-01 is required per handoff03.
+- Required initial Claude audit completed as audit-01 (findings F1–F4);
+  response-01 is now produced. The next required step is Claude re-audit
+  under handoff04.
 - If that audit finds a gap, developer responds to every finding before
   readiness. Final assignment and shared registries wait for PR preparation,
-  including a fresh live reservation scan. No expensive numerical run is
-  pending for a method that has not been defined.
+  including a fresh live reservation scan. The C4-only numerical baseline is independently executable without C3;
+  it is now recorded and executed in c4-baseline-01.md. The earlier omission
+  was corrected under F3.
 - Any future stable coupled NN updater needs an explicit new scope, maintained
   invariant, terminal/breakdown handling and measurable comparison criterion.
   Large output archival is not needed for the reproducible summaries retained
@@ -111,3 +113,62 @@ executed `python topics/nn-mop-iep-20261103/code/independent_nn_mop.py > /tmp/nn
 (exit 0), reproducing the independent small output SHA-256
 `9790542877736255d0b56d3b2285ff0d5334a4f3504587ffc0be6a96dbaee430`.
 This additional integration run is not counted as a third independent check.
+
+## 2026-11-05 — Codex response-01 to audit findings
+
+- User requested Codex continuation; fetched topic44c4d5a1aeb31307613e892a5b67c7cb968e4ee9
+  and read the unchanged rules/log/open handoff03 at that head. The newly
+  available Claude audit, not the previous supplementary check, supplies the
+  F1–F4 findings. [Response](response-01.md) dispositions every finding and N1/N2.
+- Main moved to5db1e01dcd2258f45de2adcaef43859e59734618. Merged it into
+  the already-published branch at9ec2a54c5b6af56514feaf11c9fc329f19a88820,
+  without conflict or rewriting history. Topic science/code bytes unchanged
+  by that merge; inherited registry additions remain intact. Rules unchanged.
+- Role: orchestrator/developer. User requested gpt-6.1-sol xhigh; exact
+  orchestrator backend/effort metadata remains unexposed. Bounded allocations:
+  gpt-6.1-sol xhigh (F1 mathematics/primary sources), gpt-6.1-sol medium
+  (C4 numerical baseline), gpt-6-astra high (supplementary independent check).
+- No new candidate/novelty claim: F1 corrects the interpretation of known exact
+  compatibility and splits existing positive content. The prior complete gate
+  remains recorded; newly rechecked locators and IDEA-197 shortlist addition
+  are in literature.md/source-recheck-01.md and gate.md. Full registry
+  regeneration or a new novelty campaign was not undertaken.
+- F1 accepted after primary FHV/VanAssche recheck. Reconstruction through
+  N-1 divides only through N-2. The former PD-N?…01 failed-mechanism
+  classification is withdrawn, while its complete wording stays historical.
+  Positive substantive interior lemma T?…03 and reconstruction T?…04 have
+  written proofs, axes/N=1 treatment and a local split map. Terminal equality
+  remains a necessary final boundary condition, not a C4 obstruction.
+- Developer replay of Claude's existing checker: 24 cases,467 coefficient
+  sites,809 nonzero divisions, maximum divisor degree N-2. Full command,
+  environment/code/output identities and limits are in response-01.md.
+- F2 accepted: same spectral eigenvalue x for both NN directions is the
+  decisive mismatch; PD-T057 itself has coupled adjacent-level conditions.
+  Fixed-site tests retain their exact limited scope and unchanged counts.
+- F3 accepted and executed: [baseline receipt](c4-baseline-01.md) and
+  [MEASURED T?…05](theory/c4-baseline-measurements.md). Source-family
+  Kravchuk/Hahn N4,8,12,16,24,32; binary64 Stieltjes+A/B versus140/220dps,
+  with exact moment checks atN4. All final references converge; fieldwise
+  coefficient errors become greater than one in several cases. No C3
+  comparison, general instability theorem or source residual reproduction.
+- F4 version-field provenance notes added; raw hashes and normalised payload
+  identity are distinguished. New pilot raw hashes also depend on timing.
+- [Supplementary response check](response-independent-01.md) reviews the
+  new proof and replays the new pilot separately; its final coverage/status
+  is authoritative for what was actually checked. It does not replace the
+  required Claude re-audit. Current step returns WORK→AUDIT.
+- Next [handoff04](handoffs/04-reaudit.md): Claude Opus5.5 xhigh re-audit.
+  No final allocation, shared topic registry writes or readiness declaration.
+
+### Current Runs needed
+
+- Required independent Claude re-audit, including the two exact planned
+  baseline commands already executed by development, repeated separately by
+  the auditor. Exact commands/outputs/input metric and scope are in
+  c4-baseline-01.md and handoff04; only N4 has an independent exact reference
+  formulation, while the larger references use precision convergence.
+- Wider C4 sizes, error-source decomposition, other normalisations and any
+  C3 comparison remain open beyond this bounded pilot; none was executed.
+  A coupled new updater still needs a concrete invariant and separation test.
+- Fresh union scan, same-source deduplication, final IDs and additive shared
+  registry preparation follow a clean audit. Existing reservations unchanged.

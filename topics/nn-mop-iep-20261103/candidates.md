@@ -40,8 +40,11 @@ by the gate). No claim of exhaustive novelty clearance.
 - Aliases: fixed-site transfer commutator; zero curvature versus multiplication.
 - Question / scope: identify the two usual 3-by-3 NN transfer matrices at one
   lattice site with the commuting coordinate pair of PD-T057.
-- Mechanism and hypotheses: identify index increments with independent
-  polynomial variables. Precise standard transfer state/matrices: exact-runs.md.
+- Mechanism and hypotheses: the tested literal proposal identifies the usual
+  same-site transfers with a commuting pair. The real spectral question is
+  whether there are two independent coordinate multiplications. Both NN
+  difference operators instead have eigenvalue x on the MOP state. Precise
+  standard transfer state/matrices: exact-runs.md.
 - Closest full records: IDEA-117/193 and PD-T057; Van Assche/FHV zero curvature
   and integrable-systems predecessors in literature.md.
 - Separation / kill criterion: the actual matrices must commute at the same
@@ -50,8 +53,11 @@ by the gate). No claim of exhaustive novelty clearance.
 - Literature baseline / search limitations: gate.md. Global covariant lattice
   shifts can commute under flatness; their entries and state spaces are not
   PD-T057's finite symmetric multiplication sections.
-- Applicable obstruction: one x and two functionals versus two variables and
-  one positive functional; shifted compatibility is not fixed-site commutation.
+- Applicable obstruction: both NN directions have the same eigenvalue x,
+  versus independent joint coordinate values (x_l,y_l). PD-T057 blockwise
+  interior commutativity also couples adjacent levels. The fixed-site test
+  therefore rejects only the named literal dictionary, not every lattice
+  encoding or an analogy based on coupled identities.
 - Novelty verdict: existing zero-curvature interpretation, no new mechanism.
 - Cheapest decisive test: rational transfer multiplication at x=0.
 - Test discriminability: distinguishes the named matrices only; not a
@@ -80,8 +86,9 @@ by the gate). No claim of exhaustive novelty clearance.
 - Literature baseline / limitations: gate.md and literature.md. Numerical
   stability remains a research question; literature residual reports are not
   local experiments or comparative proofs.
-- Applicable obstruction: C2's literal dictionary fails; terminal d=0;
-  nonnormal input cannot be cured by positivity or changing path names.
+- Applicable limits: C2's literal dictionary fails; terminal d=0 is a final
+  boundary condition, not a C4 obstruction. Nonnormal input cannot be cured
+  by positivity or changing path names.
 - Novelty verdict: no separated new method survives this gate.
 - Cheapest decisive test: write exact objects and invariant before an update
   implementation. This test is conceptual; no C3 implementation was run.
@@ -100,7 +107,7 @@ by the gate). No claim of exhaustive novelty clearance.
   known marginal recurrences or recursively generated shifted step-lines.
 - Mechanism and hypotheses: FHV's reconstruction with all required shifts,
   actual second-measure boundary information, normality and nonzero divisors;
-  compute terminal common node polynomials directly when needed.
+  stop at coefficient degree N-1. Its terminal b equality is automatic.
 - Closest full records: IDEA-117/193 and FHV2015; newer finite-support
   compatibility/inverse literature, carefully qualified in gate.md.
 - Separation / kill criterion: if known conversion plus the actual input
@@ -109,16 +116,20 @@ by the gate). No claim of exhaustive novelty clearance.
 - Literature baseline / limits: the step-line alone loses part of the second
   measure. There are arbitrarily indexed shifted lines. No comparison of cost
   or floating-point stability is implied by exact reconstruction.
-- Applicable obstruction: b2-b1=0 at common-support degree N-1; infinite or
-  nondegenerate reconstruction formulas cannot be applied there unchanged.
+- Applicable domain limit: b2-b1=0 at common-support degree N-1, but C4
+  through that coefficient layer divides only by d of degree <=N-2. No
+  terminal modification is needed under full normality through degree N.
 - Novelty verdict: known exact baseline after the stated corrections.
 - Cheapest decisive test: inspect FHV's shift and boundary requirements, then
   check exact finite terminal behavior. Both performed before any new solver.
 - Test discriminability: source formulas settle needed data; exact checks
-  detect an invalid divisor but cannot prove numerical stability.
-- Actual results: gate source reading and terminal proof/checks.
-- Disposition: equivalent/background exact reconstruction. The naive
-  all-layer nonzero-division submechanism is REJECTED: failed, with its own
-  scoped negative record; corrected reconstruction is not rejected.
-- Canonical negative record: PD-N?nn-mop-iep-codex-01.
+  identify the divisor degrees used and cannot prove numerical stability.
+- Actual results: primary layer-formula recheck, positive reconstruction
+  proof and exact layer-recursion rerun; see source-recheck-01.md.
+- Disposition: equivalent/background exact reconstruction, complete on the
+  stated normal triangle. The former failed-submechanism classification is
+  withdrawn under F1: the terminal division would produce out-of-domain
+  degree-N coefficients and is not used by C4.
+- Canonical record: PD-T?nn-mop-iep-codex-04; former PD-N?nn-mop-iep-codex-01
+  survives only as a historical redirect, with no final negative allocation.
 - History: 2026-11-05, corrected interpretation of prescribed C4.

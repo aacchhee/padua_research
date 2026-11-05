@@ -319,3 +319,31 @@ embeddings.
 2026-11-05: initial bounded gate ledger. Provisional IDs only; final
 allocation and any INDEX/CORPUS changes belong to the orchestrator at PR
 preparation. No external messages sent and no Git mutation performed.
+
+## Response-01 primary recheck — F1 / N1, 2026-11-05
+
+New developer primary reading is recorded in [source-recheck-01.md](source-recheck-01.md),
+with exact coverage and residual gaps. Same-source provisional IDs are reused:
+
+- LIT?nn-mop-iep-codex-01: FHV arXiv1406.0364v2 §3.1, Theorem3.1,
+  (3.3)–(3.10), pp16–18, full induction; §3.3, Theorem3.3,
+  (3.11)–(3.15), pp20–21, full induction. To produce layer t the lower
+  coefficients divide at t−2 and the diagonal coefficients at t−1. This
+  corrects the earlier claim that terminal zeros obstruct in-domain C4.
+- LIT?nn-mop-iep-codex-02: Van Assche arXiv1104.3778v1 Thm3.1,
+  (3.1)–(3.5), pp9–10 and its compatibility proof; normality/determinant
+  context, (2.12), pp2–3 and9. The local finite proof states its own domain.
+- LIT?nn-mop-iep-codex-09: Kozhan–Vaktnäs arXiv2407.13946v2 §2.2 p5,
+  Def2.8 p8, Lemma2.18(b) and proof p11, Thm3.6 and proof plus
+  Remarks3.7–3.8 pp16–17. Perfectness requires the marginal-size rectangle;
+  opposite-corner normality guarantees every difference used by CC.
+- LIT?nn-mop-iep-codex-12: Faghih–Van Barel–Vandebril arXiv2608.25758v1,
+  §5.1 Examples5.1–5.2 p20, exact input weights/parameters and N nodes
+  0,...,N−1. Both mathematical and baseline workers checked the primary
+  page; this recheck validates inputs, not source algorithm/error reproduction.
+
+No new literature IDs or novelty assertion. Page locators are arXiv printed
+pages. Earlier source coverage not listed above remains attributed to its
+original reader. In particular tree/Toda/inverse reports and KV Thm3.19 were
+not all reverified in this response. This is a developer recheck, not a
+retroactive primary-source clearance by Claude audit-01. Re-audit is pending.

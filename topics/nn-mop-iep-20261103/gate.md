@@ -8,14 +8,14 @@ This is a novelty/attribution assessment, not a new theorem or an audit.
 
 ## Decision
 
-**Reduces to known exact MOP constructions, with a finite common-support
-boundary qualification.** Nearest-neighbour (NN) compatibility and its
+**Reduces to known exact MOP constructions on the normal common-support
+triangle.** Nearest-neighbour (NN) compatibility and its
 inverse/boundary-data formulations are established literature. They do not
 identify the NN problem with the Van Barel–Chesnokov bivariate commuting-pair
 IEP. A new stable path updating method has not been specified or established.
 Stop the proposed new-method campaign at this gate; preserve the exact
-finite clarification and scoped failed division rule as background/negative
-records. This does not close the broader stability or updating questions.
+finite clarification as positive background records; the former C4 failure
+classification is withdrawn under response-01 F1. This does not close the broader stability or updating questions.
 
 The reason for stopping is the known exact reduction and failure of the
 suggested commuting-pair identification. It is **not** an assertion that C4
@@ -67,6 +67,7 @@ C3 with C4 would require a distinct, fully specified C3 algorithm first.
 | IDEA-090 = seed 014 | MOP conditioning through block-Krylov angles; separate univariate problem | Conditioning remains outside the present exact reduction. |
 | IDEA-111 = seed 035 | Humet vector-weight/generalised implicit-Q context; unpublished proof gaps | Cannot import a uniqueness theorem for a proposed new coupled update. |
 | IDEA-193 | Toda/qd on bivariate block Jacobi pairs judged equivalent to measure modification | Do not rebrand known transformations as a new mechanism. The one-variable MOP Toda literature supplies additional, different prior art. |
+| IDEA-197; PD-T095/PD-N042/PD-T102 | Structure theory and commutants of commuting generalized-Hessenberg pairs | Closest structured-pair neighbour; it concerns two bivariate sections, rather than one spectral variable with two MOP measures. Its chart and commutant results supply no missing second spectral coordinate here. |
 | IDEA-034; IDEA-085/172; PD-T057/076 | Moment/flat-extension background; one-operator versus genuinely graded two-operator distinctions | Their hypotheses matter. PD-T076 concerns reproduction of bivariate graded spaces, not impossibility of univariate MOP block Krylov methods. |
 
 The full obstruction/disposition tables also warn against transferring
@@ -140,15 +141,19 @@ univariate Jacobi recurrences, then use FHV §3.1/Thm 3.3 on a regular
 region. Alternatively use the complete recursive shift construction with
 the required boundary data. These are known algebraic conversions.
 
-Their division hypotheses cannot be extended unchanged through a shared
-finite-support terminal layer. On N common nodes, each normal total-degree
-N polynomial equals \(F(z)=\prod_l(z-x_l)\). Thus two normal successors
-of a degree N−1 index coincide and their NN diagonal coefficients agree.
-The divisor \(b_{\nu,2}-b_{\nu,1}\) is then zero. This is a failure of a
-specified unmodified propagation rule, not a failure of the finite moment
-systems, nor a counterexample to FHV under its hypotheses. See
-[finite formulation](theory/finite-moment-formulation.md) and
-[terminal division record](theory/terminal-division-obstruction.md).
+On the common-support triangle C4 needs no boundary modification. Under
+normality through total degree N, producing coefficient layer K+1 uses
+d differences at layers K-1 for lower coefficients and K for diagonals.
+The final requested layer is N-1, so every divisor has degree at most N-2
+and is nonzero by normality of the opposite corner. All normal degree-N
+polynomials equal the common node polynomial; d=0 on coefficient layer
+N-1 is a final boundary condition, not an obstruction to that computation.
+Primary FHV formulas and the independent local proof are recorded in
+[source-recheck-01.md](source-recheck-01.md) and
+[PD-T?nn-mop-iep-codex-04](theory/marginal-reconstruction.md), supported by the
+separate [interior lemma](theory/interior-divisor-nonvanishing.md).
+The original negative classification is preserved only in the
+[historical redirect](theory/terminal-division-obstruction.md).
 
 Kozhan–Vaktnäs, arXiv:2407.13946v2 / JCAM 2026, is especially relevant:
 §3.2 extends the compatibility algorithm to finite perfect systems, and
@@ -169,8 +174,10 @@ that without claiming novelty.
 | C1 finite exact data | Equivalent/background, with an explicit common-support domain qualification | A new result must go beyond defining moment systems/known NN relations; changing finite notation does not suffice. |
 | C2 NN as the bivariate commuting pair | Proposed literal identification fails; preserve the scoped mismatch | Supply a common space, two operators, basis/weight conditions and a faithful dictionary. Site-shifted flatness alone fails this test. No impossibility of every artificial embedding is claimed. |
 | C3 path-wise node updating | Deferred, rather than declared impossible or algorithmically equivalent | Specify a coupled representation, every maintained weight/biorthogonality/compatibility/boundary invariant, update and breakdown rules, then prove a cost or stability advantage over a corrected known baseline. A single-path step-line update is already prior art. |
-| C4 exact baseline | Known after correction; literal two-lines/all-divisors version is insufficient | Full finite coefficients must be produced with the actual marginal/boundary data. Comparable floating-point stability and cost remain unproved, not assumed. |
+| C4 exact baseline | Known and complete on the normal finite triangle; two fixed lines alone remain insufficient | Marginal-data layer reconstruction uses only nonzero interior divisors. Comparable floating-point stability and cost remain unproved, not assumed. |
 
+A C4-only floating-point baseline can be measured without specifying C3;
+its plan/run status is recorded in LOG.md and c4-baseline-01.md.
 No distinct C3 mechanism survives this gate in a form that can be tested.
 Further stability or path updating work requires a new, explicitly scoped
 question; the source authors' future-work lists are motivation, not an

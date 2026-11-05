@@ -1,3 +1,33 @@
+# Historical redirect — former terminal-division obstruction record
+
+Former provisional label: `PD-N?nn-mop-iep-codex-01`. Its failure-mechanism
+classification is **withdrawn** in response-01 F1; no final PD-N ID was assigned.
+This file preserves the original text, rather than registering an administrative
+negative result. The mathematical equalities remain valid.
+
+The interior nonvanishing assertion has its own PROVED record
+[PD-T?nn-mop-iep-codex-03](interior-divisor-nonvanishing.md). The terminal
+successor/b equality is a necessary final boundary condition in
+[PD-T?nn-mop-iep-codex-04](marginal-reconstruction.md), which proves that C4
+reconstructs all coefficients through degree N-1 without a terminal division.
+
+The earlier failed rule would require division to produce degree-N
+coefficients, beyond the normal NN coefficient domain. No actual in-domain
+C4 step uses it. Thus its description as a failed C4 submechanism was
+misleading, and WORKFLOW's L5 discipline favours withdrawing that classification
+rather than allocating a negative result for a hypothetical extra step.
+
+Split from: the two mathematical assertions formerly co-located below.
+Split into: PD-T?nn-mop-iep-codex-03 (interior divisor lemma) and
+PD-T?nn-mop-iep-codex-04 (complete finite reconstruction and final boundary).
+No accepted ID or existing reservation changes; see ../SPLITS.md.
+
+## History — original wording at ae7e6187e8731b6f83aa444d4d702a0ef779c564
+
+The following complete text is historical, including its former status,
+classification and failure wording; it is not the current disposition.
+
+```markdown
 # PD-N?nn-mop-iep-codex-01 — common finite support forces a terminal zero divisor
 
 ID kind: PD-N. Aliases: finite support boundary; terminal FHV division; C4 limit.
@@ -78,3 +108,5 @@ no numerical stability is asserted for either option here.
 
 2026-11-05: Codex, rules/head 320fe07f5231ac7e72a4da45e64a38e5ff381b4a.
 Model metadata as disclosed in finite-moment-formulation.md.
+
+```

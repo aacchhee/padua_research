@@ -22,9 +22,16 @@ For the standard three-component state the relation is
 
     L2(nu+e1;x) L1(nu;x) = L1(nu+e2;x) L2(nu;x).
 
-This compares products at different sites. It does not assert commutation
-of L1(nu;x), L2(nu;x) at one site. Exact examples exhibit shifted flatness
-and nonzero fixed-site commutators. [Matrices and scope](exact-runs.md).
+This compares products at different sites. Exact examples also have nonzero
+same-site transfer commutators, which refute only a literal identification
+of these matrices with a commuting pair. PD-T057's blockwise interior
+commuting conditions also couple adjacent degree levels; the shifted/fixed-site
+contrast does not itself distinguish the theories. [Matrices and scope](exact-runs.md).
+The decisive difference is spectral. Define the natural NN lattice operators
+H_j f(nu)=f(nu+e_j)+b_(nu,j)f(nu)+sum_s a_(nu,s)f(nu-e_s).
+On the MOP state both satisfy H_j P(x)=x P(x), with the same eigenvalue x;
+H_1-H_2 annihilates consistent states. Bivariate multiplication has two
+coordinate functions and joint values (x_l,y_l) on the full node space.
 Covariant shifts on a suitable lattice state space can encode commuting
 transport, but that known zero-curvature description still needs a state
 space, boundary and gauge. It does not supply PD-T057's finite positive
@@ -39,13 +46,18 @@ information, or the two marginal recurrence families, under the algorithm's
 nonzero-divisor hypotheses. A single step-line loses some information about
 the second measure. [Primary source coverage](literature.md).
 
-For shared finite support all normal degree-N polynomials are the common
-node polynomial F. At |nu|=N-1 both successors coincide and b2-b1=0.
-A rule requiring division by this difference at every site therefore fails,
-even on a normal finite triangle. Direct moment systems still give the
-terminal polynomials and coefficients. The [boundary proof](theory/terminal-division-obstruction.md)
-refutes only this unmodified division rule, not solvability or the published
-theorem under its own nondegeneracy assumptions.
+For common finite support, marginal-data reconstruction is complete on the
+normal coefficient triangle |nu|<=N-1 without a terminal modification.
+Producing coefficient layer K+1 uses d=b2-b1 from layers K-1 for lower
+coefficients and K for diagonals. Thus every divisor used has degree <=N-2
+and is nonzero by normality through degree N. This is the
+[interior divisor lemma](theory/interior-divisor-nonvanishing.md) and
+[finite reconstruction proof](theory/marginal-reconstruction.md), checked
+against the [primary formulas](source-recheck-01.md).
+All normal degree-N polynomials equal the common node polynomial, so d=0
+on coefficient layer N-1 is a necessary final boundary condition. C4 does
+not divide by those values. The former negative-result classification is
+[withdrawn with its original wording preserved](theory/terminal-division-obstruction.md).
 
 Kozhan–Vaktnäs also treat finite-support inverse/compatibility questions.
 Their perfect finite-rectangle hypotheses are not silently substituted for
@@ -66,21 +78,32 @@ not an all-N normality theorem or computer-assisted general proof.
 A separate Astra agent reran the original checker and independently
 implemented small determinant/coefficient calculations, including N=1 and
 a different N=4 input. Its [receipt](independent-check.md) found no substantive
-gap in the two elementary proofs and identified one comment error, corrected
-with a new hash and rerun. The required Claude audit remains PENDING.
+gap in the two original elementary proofs and identified one comment error,
+corrected with a new hash and rerun. Claude [audit-01](audit-01.md) accepted
+their mathematics but identified the erroneous significance attached to the
+terminal equality. [Response-01](response-01.md) corrects it and addresses
+all findings; a required Claude re-audit is pending.
 
 [All four prescribed candidates](candidates.md) are retained: C1 is the
 standard formulation; C2's literal fixed-site dictionary is refuted within
 the finite scope; C3 is deferred because no distinct algorithm and preserved
-invariant have been specified; C4 is retained as a corrected known algebraic
-baseline, with its naive terminal division scoped separately.
+invariant have been specified; C4 is retained as a known algebraic baseline
+which is well defined on the entire stated normal triangle.
 
 Apply the handoff's early gate stop to new method development. There is no
-surviving new C3 implementation to compare against C4. No floating-point
-comparison, digits-lost table, comparable-cost result or comparable-stability
-claim was produced. The source papers' Kravchuk/Hahn accuracy reports remain
-attributed literature, not local runs. This stop does not settle whether a
-better numerical NN updater exists.
+surviving new C3 implementation to compare against C4. C4 alone is an
+executable numerical baseline, as audit F3 observed; its local pilot and
+remaining runs are recorded separately in [c4-baseline-01.md](c4-baseline-01.md).
+The bounded pilot uses monic Stieltjes marginals and A/B recursion in
+binary64, checked against 140/220-digit references on N=4,8,12,16,24,32.
+The maximum fieldwise normwise coefficient error exceeds one at N24/32
+for Kravchuk and N16/24/32 for Hahn. Reference precision convergence is
+checked; an exact independent moment formulation is used at N4 only. These
+are MEASURED finite observations, not a proof of instability or an error-source
+decomposition. No C3/C4 cost or stability equivalence is claimed. The source papers'
+Kravchuk/Hahn accuracy reports remain attributed literature with their own
+metrics; they are not reproduced by merely measuring local coefficient errors.
+This stop does not settle whether a better numerical NN updater exists.
 
 ## Possible Leuven question and next step
 
@@ -91,8 +114,9 @@ maintaining both directions improves accuracy or cost over repeated known
 reconstruction on identical input families. The zero-curvature interpretation
 is established background; an algorithmic advantage needs separate evidence.
 
-Draft [PR22](https://github.com/aacchhee/padua_research/pull/22), rules/input
-320fe07f5231ac7e72a4da45e64a38e5ff381b4a, base/main
-440d1079e42c3ef21c40d1cf8870f5b206410c6a. Only topic files changed;
-registries and final assignments await audited PR preparation. Next is
-Claude Opus 5.5 xhigh audit of the scoped results and literature gate.
+Draft [PR22](https://github.com/aacchhee/padua_research/pull/22). Response
+rules/input: 44c4d5a1aeb31307613e892a5b67c7cb968e4ee9. Current main/base
+5db1e01dcd2258f45de2adcaef43859e59734618 was merged without rewriting
+history. Response changes are topic-owned; inherited registry changes from
+main are retained. Final IDs and topic registry integration await audited PR
+preparation. Next is Claude Opus 5.5 xhigh re-audit of response-01.
