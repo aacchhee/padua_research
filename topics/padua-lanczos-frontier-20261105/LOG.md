@@ -15,3 +15,12 @@
 ## Runs needed
 
 - G0–G4 and L1–L7 as in handoff 01.
+
+## 2026-11-05 — Codex, requested gpt-6.1-sol xhigh — WORK start
+
+- Read rules at full branch head `8359bf7a047d9a212bd841224fb97a458cb7435e`; unchanged from base `440d1079e42c3ef21c40d1cf8870f5b206410c6a`. Fetched main and topic; main is already an ancestor. No range reserved or assigned.
+- Started the explicit handoff, including its parallel-subagent authorization. Independent G0 checker uses gpt-6-astra high, with no Git authority and one owned record. Replay introduces no new mechanism and needs no novelty claim.
+- Added [plan.md](plan.md) and [gates.md](gates.md) before new scientific runs. Full novelty gate and target preregistrations remain due.
+
+- Delegated disjoint L1/L2, L3/L4 and L5/L6 mathematical development to gpt-6.1-sol xhigh and L7 code/study to gpt-6.1-sol medium. All new experiments wait for G0; preregistration and analytic reading may proceed. Ownership is restricted to each direction's attempts, candidate records, theory/code prefixes and compact receipts; integration remains orchestrator-owned.
+- Refreshed PR population through GitHub connector: open19–22, all returned closed PRs merged. Read the full pinned ledger/registry union including the newly published MZ frontier reservation. Reserved disjoint T324–363/N116–131/IDEA414–453/LIT582–593, no assignments. See ALLOCATIONS.md and reproducible allocation-scan.json.
