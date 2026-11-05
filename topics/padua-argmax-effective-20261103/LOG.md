@@ -1,7 +1,7 @@
 # Effective all-degree Padua argmax (PD-T099): campaign log
 
 - Branch: `codex/padua-argmax-effective-20261103` · Base: main `440d107` · Developer: Codex (gpt-6-astra ultra, at AC's instruction) · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK (response to audit-01; response check follows) · Next: `Codex (gpt-6.1-sol, medium): Continue codex/padua-argmax-effective-20261103.` · Open handoff: [handoffs/04-response.md](handoffs/04-response.md)
+- Stage: AUDIT (response protocol check) · Next: `Claude (Opus 5.5 high): Continue codex/padua-argmax-effective-20261103.` · Open handoff: [handoffs/05-response-check.md](handoffs/05-response-check.md)
 - Reserved final-ID ranges: PD-T246–265, PD-N084–091, IDEA336–355, LIT466–473; first pushed in `ed8db2f`, [ALLOCATIONS.md](ALLOCATIONS.md). Final assignments pending.
 - Claims: PD-T?argmax-effective-claude-01 — pilot gate measurements — MEASURED — [record](theory/argmax-effective-claude-01-pilot-measurements.md).
 - For the PR: final IDs, PROOF_STATUS/IDEAS/INDEX rows, a RESULTS.md section, and the Claude audit.
@@ -178,3 +178,4 @@
 - Next: Claude Opus 5.5 high response protocol check, then PR preparation. No claim of completing that separate-agent check; only AC merges.
 - F8 disclosure uses a separate linked provenance note: the native README is hash-pinned by the retained acceptance summary and is preserved with all receipt bytes. The derived evidence inventory is refreshed for documentation changes; audit-01 retains its original audited manifest identity.
 - Verification executed: evidence inventory verified (84 files, degrees17–32), documentation links and allowed-path/protected-file checks, all F1–F10 response rows, and `git diff --check`. The inventory changes only four documentation entries; no scientific replay was performed or required.
+- Handoff04 done in `6d73a6a482aa293f37db510f270205440a621a7c`; [handoff05](handoffs/05-response-check.md) opens the distinct Claude protocol check.
