@@ -1,0 +1,135 @@
+{
+  "stage": "N3 round1 frozen; no complete outward cover claimed",
+  "rules_input": "98d6c00d8a474cf97602c9cfdea631a837191ac0",
+  "developer": "Codex requested Sol medium; serving metadata not independently exposed",
+  "B2": "INCOMPLETE; no pass or growth/radius kill",
+  "float_outcome": {
+    "33": {
+      "complete": true,
+      "visited": 2796,
+      "cpu_seconds": 16.36814581
+    },
+    "64": {
+      "complete": true,
+      "visited": 3634,
+      "cpu_seconds": 92.965623811
+    },
+    "128": {
+      "complete": false,
+      "visited": 5512,
+      "pending": 344,
+      "cpu_seconds": 600.140029403
+    }
+  },
+  "native": "33\u201336 complete exact producer outputs; producer accepted=false; separate-agent checker owns acceptance",
+  "files": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/attempts/N3.md",
+      "bytes": 5688,
+      "sha256": "06d593aaf8aa4f0be2b7ae5d018397a0ee93bf445579dc7a833758979d479404"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/novelty-gate-N3.md",
+      "bytes": 2464,
+      "sha256": "2e7c7ff857bc21b7c458a495c18d1a5d2052a0b17a512a940a2dbbb94aae12c2"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/ideas/N3-variant.md",
+      "bytes": 1428,
+      "sha256": "4436a20ab6800585829e9b86ddc9163b56557829ebd520afa9fb87c819e7f559"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/N3-enclosure-spec.md",
+      "bytes": 2982,
+      "sha256": "afa3fedbeea8e7dc1994280c9b13be0391e2ad18613dbddd3a9cf0cd3b5c932f"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_float.py",
+      "bytes": 9150,
+      "sha256": "cf70f439da6a5832292ab5a828b19e7a006639e171d015b400af93b89763c3d0"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_gradient_controls.py",
+      "bytes": 2925,
+      "sha256": "dcab8806bfd472fb2bb12e5977af728c5e737117dfeb7029fb48b681e20c0b0c"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_meanvalue.c",
+      "bytes": 3606,
+      "sha256": "4739e36d05d75ce4389118364a2e2a693d2b14d87a8b79e84aa5199d6bb6a86a"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_native_receipt.py",
+      "bytes": 2979,
+      "sha256": "44990cb6b9e65ee8fe788663be91e7bde71ee6ce77dec7b228d56825f7209577"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_outward.c",
+      "bytes": 4830,
+      "sha256": "cfeae9fe2b61e9c7ec2c4d943762ac988e64fa02652ccfe4342430c4ee5f22dd"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_outward_calibration.py",
+      "bytes": 2619,
+      "sha256": "d56c0f8d88fdd1574a586f129eb7679ef9057a97b0327401545c79c53e179bce"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_outward_interval.h",
+      "bytes": 4215,
+      "sha256": "6dca513ddbd94264d454872c9f5e753e355d15b49152dc4b19d51cff7635131b"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_outward_run.py",
+      "bytes": 4885,
+      "sha256": "24933da02235194423435125967b41c39e21e397ba7a3989c50253558a0d6740"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n3-native-producer.json",
+      "bytes": 9822,
+      "sha256": "730906f59667e0257b31ae66c595f033ac94370bc9dafb9282ea4f7c5d10cf5d"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n3-float-v1.json",
+      "bytes": 5951,
+      "sha256": "ce90044d1caad51a8a06e17c31a0b9b8ad7ec1171f6a35a65dc66b597322078d"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n3-gradient-controls.json",
+      "bytes": 2070,
+      "sha256": "9ec9739d3b407e22c3411621075839d6379ecc39028d31738cb115eb842c7ed5"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n3-outward-calibration.json",
+      "bytes": 2506,
+      "sha256": "b1c9483f0607f75988cd5090e25bf56f923130367c799585918309b8c786f454"
+    }
+  ],
+  "essential_native_certificates": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n33.json.gz",
+      "bytes": 8141,
+      "sha256": "090f650ae5d52d72716857e8a67a8fac7c330fa208ff81487368e1ef89d82f90"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n34.json.gz",
+      "bytes": 8253,
+      "sha256": "8c4866e2bda66e331e4940f17ace71b9caeb8ecf0bdd091bf026d215b21acb2d"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n35.json.gz",
+      "bytes": 8485,
+      "sha256": "cdf5058f476692d1fc3847b8b59ca44ffe9cecd9ffc3271a2d47b733464935bb"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n36.json.gz",
+      "bytes": 8679,
+      "sha256": "067fcf2af8eb2f112f65f2689ecd7102b87f1b2cb31b2508d97ba09be0d9f22c"
+    }
+  ],
+  "limits": [
+    "Native certificate copies were preserved by coordinator; this worker has not independently replayed them.",
+    "Outward files are prospective candidate draft plus one-box/derivative diagnostics; no complete outward campaign executed.",
+    "Frozen float receipt H3-only wording is imprecise; actual code uses max(PD-T251,PD-T369), explained in attempts/N3.md.",
+    "Next campaign waits for coordinator first-stage publication; stop native block after36."
+  ]
+}

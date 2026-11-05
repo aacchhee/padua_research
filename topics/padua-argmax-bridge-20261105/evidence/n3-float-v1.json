@@ -1,0 +1,175 @@
+{
+  "status": "MEASURED floating whole-sum mean-value pilot only",
+  "rules_sha": "98d6c00d8a474cf97602c9cfdea631a837191ac0",
+  "command": "OPENBLAS_NUM_THREADS=1 python topics/padua-argmax-bridge-20261105/code/n3_float.py",
+  "compile_command": [
+    "cc",
+    "-O3",
+    "-std=c11",
+    "-shared",
+    "-fPIC",
+    "/workspace/padua_research/topics/padua-argmax-effective-2-20261105/code/phase_probe.c",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/n3_meanvalue.c",
+    "-lm",
+    "-o",
+    "/workspace/padua_research/local-output/argmax-bridge-20261105/N3/float-v1/box_pilot.so"
+  ],
+  "compiler": "cc (Debian 14.2.0-19) 14.2.0",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "caps": {
+    "visited_boxes": 1000000,
+    "CPU_seconds_per_degree": 600
+  },
+  "policy": "four quadrants; breadth-first; longest-side bisection",
+  "sources": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_meanvalue.c",
+      "bytes": 3606,
+      "sha256": "4739e36d05d75ce4389118364a2e2a693d2b14d87a8b79e84aa5199d6bb6a86a"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_float.py",
+      "bytes": 9150,
+      "sha256": "cf70f439da6a5832292ab5a828b19e7a006639e171d015b400af93b89763c3d0"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/code/box_pilot.c",
+      "bytes": 4359,
+      "sha256": "92f111e0c58c59de32490118a30d88b26de356a93e0ec7251928059e1f2f4d0b"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/code/phase_probe.c",
+      "bytes": 1510,
+      "sha256": "692d4afd89d3bbda3bac3daaeef7c56aa4ecdde0f9cdd32b9fefa0e296adc365"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/code/phase_probe.py",
+      "bytes": 7620,
+      "sha256": "a2d85ffd293c50095fc6e451a6a4473b17b63bbb54123f397dcec148b08495d9"
+    }
+  ],
+  "mathematical_inputs": [
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/attempts/H1.md",
+      "bytes": 8653,
+      "sha256": "05ee5522c80b00ffd76f844042d5515dfba6a19f0c86183fad0b8f792b3835cf"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/theory/phase-structure.md",
+      "bytes": 17238,
+      "sha256": "378548a0635206c8e61111c8ddb24b51f4b7ef1bf3cb16640da16dcf94a9e718"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/theory/defect-radius-extension.md",
+      "bytes": 11139,
+      "sha256": "243077d9af371f8b19c1e28b9872e44900d73daafe4d509a0d6a5a3815403d97"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/theory/corner-n2-local-radius.md",
+      "bytes": 7735,
+      "sha256": "fc358b11db799b272a89f8910797ffdf2fb03309161ae2cdfc5a4dfb24aeb045"
+    }
+  ],
+  "validation": {
+    "points": 412,
+    "max_violation": 1.1368683772161603e-13,
+    "diagnostic_tolerance": "1e-10*(1+abs(reference))",
+    "accepted": true
+  },
+  "degrees": [
+    {
+      "n": 33,
+      "Lambda_corner": 11.117523283576109,
+      "eps": 1.2117523283576109e-11,
+      "visited": 2796,
+      "counts": {
+        "split": 1396,
+        "outside": 32,
+        "far": 555,
+        "corner-orbit-plus-defect": 801,
+        "universal-H3-plus-defect": 12
+      },
+      "unresolved_frontier": 0,
+      "complete_float_cover": true,
+      "stop_reason": "complete",
+      "wall_seconds": 16.369678757000088,
+      "cpu_seconds": 16.36814581,
+      "deepest_bisections": 29,
+      "minimum_visited_maxwidth": 0.00019174759848570515,
+      "profile_boxes": 857,
+      "frontier_maxwidth_min": 0,
+      "frontier_maxwidth_max": 0
+    },
+    {
+      "n": 64,
+      "Lambda_corner": 13.973207805351175,
+      "eps": 1.4973207805351175e-11,
+      "visited": 3634,
+      "counts": {
+        "split": 1815,
+        "outside": 28,
+        "far": 528,
+        "corner-orbit-plus-defect": 1235,
+        "universal-H3-plus-defect": 28
+      },
+      "unresolved_frontier": 0,
+      "complete_float_cover": true,
+      "stop_reason": "complete",
+      "wall_seconds": 92.994718734,
+      "cpu_seconds": 92.965623811,
+      "deepest_bisections": 41,
+      "minimum_visited_maxwidth": 2.9960562263391327e-06,
+      "profile_boxes": 1287,
+      "frontier_maxwidth_min": 0,
+      "frontier_maxwidth_max": 0
+    },
+    {
+      "n": 128,
+      "Lambda_corner": 17.34605680007003,
+      "eps": 1.834605680007003e-11,
+      "visited": 5512,
+      "counts": {
+        "split": 2926,
+        "outside": 24,
+        "far": 584,
+        "corner-orbit-plus-defect": 1938,
+        "universal-H3-plus-defect": 40
+      },
+      "unresolved_frontier": 344,
+      "complete_float_cover": false,
+      "stop_reason": "CPU-cap",
+      "wall_seconds": 692.7052986070001,
+      "cpu_seconds": 600.140029403,
+      "deepest_bisections": 51,
+      "minimum_visited_maxwidth": 9.362675707305385e-08,
+      "profile_boxes": 2002,
+      "frontier_maxwidth_min": 4.6813378536526926e-08,
+      "frontier_maxwidth_max": 9.362675707310806e-08
+    }
+  ],
+  "raw": [
+    {
+      "path": "local-output/argmax-bridge-20261105/N3/float-v1/box-trace.jsonl",
+      "bytes": 2926774,
+      "sha256": "ccd9130a9f348e027fa291921c29f610d74c64c2c12d663cf79d68d5d07a3a27"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/N3/float-v1/box-frontiers.json",
+      "bytes": 33092,
+      "sha256": "e036f44c16e30faef970208811a4a4637f2efcad7a1131a16a73d1c42d2de1ee"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/N3/float-v1/box-validation.json",
+      "bytes": 69331,
+      "sha256": "14e6f43a4595239c6cdd96b73065f107c5a32f14f4a5feb9c36ed36049593dc9"
+    }
+  ],
+  "limits": [
+    "No directed rounding; eps is a diagnostic budget, not an error bound.",
+    "First-order mean-value variant only; capped frontier is unresolved, not a box-growth kill criterion.",
+    "No energy-based corner-radius enlargement; only universal H3 radius.",
+    "No independent agent checker, corruption controls, exact certificate or exact timing projection."
+  ]
+}

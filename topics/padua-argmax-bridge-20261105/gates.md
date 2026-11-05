@@ -7,7 +7,7 @@ An operational clarification is recorded separately rather than editing them.
 |---|---|---|
 | B0 | PASS | [Fresh replay](independent-checks-b0.md): both n24 certificates accepted/exact; all n32 pilot deterministic counts match; later prose-pin changes traced to frozen originals |
 | B1 | FINITE MAP COMPLETE; CONTINUOUS EXTREMA OPEN | [Margin anatomy](margin-anatomy.md), seven degrees; no pass/kill attached to B1 |
-| B2 | NOT RUN | Complete n64 float cover within 10 CPU-min; complete n33/64/128 box counts required |
+| B2 | INCOMPLETE | First-order float33/64 complete;128 capped with344 pending; no growth/radius kill or outward proof |
 | B3 | OPEN | N1 has explicit degree-dependent row error, but no compact phase/log model or proved onset |
 | B4 | BLOCKED ON INPUTS | No proved explicit analytic n1 or measured new-certifier throughput yet |
 | B5 | UNRESTRICTED EQUIVALENCE; CLASS-ONLY OBSTRUCTION | N4 proves unrestricted iff norm bound and mode-diagonal positivity iff complementary grid; general N4 OPEN, original kill retained |
