@@ -1,6 +1,6 @@
 # Handoff 01 — nn-mop-stability-20261105 — conditioning and stable algorithms for the nearest-neighbour MOP inverse eigenvalue problem
 
-- Status: open
+- Status: done in ff783d59587100ab291cb83d690ef27a09f0f154
 - Previous handoff: none (new topic; predecessor `topics/nn-mop-iep-20261103/`, merged as PR #22)
 
 - Next agent / model / effort: Codex. This follows the allocation AC set for the argmax bridge on 2026-11-05 ("Run the coordinator on Astra High, easier jobs on Sol and raise to Astra Ultra only when things get serious"):
