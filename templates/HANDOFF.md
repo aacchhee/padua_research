@@ -1,6 +1,6 @@
 # Handoff NN — <topic slug> — <step>
 
-A new numbered file for each step, opened by the orchestrator holding the previous handoff. Never overwrite an earlier handoff or alter its body; only the status line changes. AC starts the step with `<Agent> (<model, effort>): Continue <branch>.`
+A new numbered file each time work passes to another agent or session, opened by the orchestrator holding the previous handoff. Never overwrite an earlier handoff or alter its body; only the status line changes. AC starts the step with `<Agent> (<model, effort>): Continue <branch>.`
 
 - Status: open  <!-- open while in progress; then: done in <output-commit-sha> | superseded by NN: <reason> | withdrawn: <reason> -->
 - Previous handoff: <NN-<step>.md, or none>

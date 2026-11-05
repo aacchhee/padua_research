@@ -1,6 +1,6 @@
 # Proportionate audit and records — workflow change: log
 
-- Branch: `claude/elegant-lamport-wkozfa` · Base: main `b4d292eea5eed373002506d5e16a3761bd7ae10e` · Developer: Claude (Opus 5.5 high) · Stage: PR
+- Branch: `claude/elegant-lamport-wkozfa` · Base: main `b4d292eea5eed373002506d5e16a3761bd7ae10e` · Developer: Claude (Opus 5.5 high) · Auditor: Codex · Stage: AUDIT · Open handoff: [handoffs/01-audit.md](handoffs/01-audit.md)
 - Scope: `agents/WORKFLOW.md`, `agents/claude/CLAUDE_ROLES.md`, `agents/codex/CODEX.md`. No scientific record, registry or ID is touched; no range is reserved.
 
 ## 2026-11-05 — Claude, Opus 5.5 high (claude-opus-5-5) — rules change at AC's request
@@ -22,4 +22,29 @@
   - New handoffs only when work passes to another agent or session.
 - **Matching exceptions** were added to the auditor-fix prohibitions in CODEX.md and CLAUDE_ROLES.md.
 - **Novelty gate:** not applicable. No idea, candidate or scientific claim.
-- **Audit:** an independent Claude subagent reviewed the diff (see PR). A cross-family Codex audit of a rules change is normally required. It was not run, under AC's "proceed … without asking"; AC may request it before merging. Only AC merges.
+- **Audit:** a cross-family Codex audit is required. When the rules note above was first written it said that audit had not been run; AC then confirmed: "Well this rules change should be audited by codex yes". The PR stays draft with AUDIT PENDING until Codex audits it. Only AC merges.
+
+## 2026-11-05 — supplementary Claude review and revisions
+
+- A separate Claude Opus 5.5 high subagent reviewed `b4d292e..c049f51` read-only. Verdict REVISE: three MAJOR wording issues and several MINOR ones.
+- This review is supplementary. It does not replace the Codex audit.
+- All findings were applied in the following commit:
+  1. "Material change" now has one tight definition, used by the re-audit rule, step 5 and the auditor-fix limits. In doubt, a change is material.
+  2. Registries may still carry links to theory, evidence and completed audit records. Only pending or in-progress process is excluded.
+  3. "Disclose once" covers protocol and process limitations only. A claim's scope and limitations stay in its theory record.
+  4. A response that changes no claim and rejects a finding with reasons proceeds to PR, with the disagreement preserved. A MINOR-only response that turns out to contain a material change returns to AUDIT.
+  5. The in-place auditor fixes are limited to:
+     - wording and formatting;
+     - links;
+     - stale process text;
+     - recording an already documented decision.
+
+     They are committed separately from the audit report. The developer may dispute them, and uncertain cases return as MAJOR.
+  6. The general disagreement and draft sentences are back in their own paragraph.
+  7. The handoff rules are aligned throughout: the opening sentence, the HANDOFF template, and a definition of "passes work on".
+  8. The hash-pin rule no longer contradicts itself. Evidence may be pinned whatever its format, audited prose is identified by SHA, and an already pinned record is corrected by re-pin or companion.
+  9. The severity scale is defined.
+  10. The readiness recheck is a full rerun of steps 1–3, repeated if heads change before AC merges.
+  11. This log no longer reports the review before it existed.
+  12. "Batch" is defined.
+  13. The IDEA template no longer invites pending process stage into the shared registry.

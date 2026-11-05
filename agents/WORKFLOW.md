@@ -23,7 +23,7 @@ Use agentic orchestration: delegate bounded development, independent checks, or 
 
 One topic is one branch (`codex/<slug>` or `claude/<slug>`) and one PR, with a log at `topics/<slug>/LOG.md`. `New topic: <objective>.` starts WORK; `Continue <branch>.` means: read the rules, the log (if the topic has one) and the open handoff in `topics/<slug>/handoffs/` at the branch head, and carry out that handoff. A small job explicitly requested with `no audit` may omit the audit and log, while retaining branch and PR rules. It does not waive a numbered handoff when further agent work remains; without a log, the necessary context and the handoff chain live in the handoff files. This exemption must not add or upgrade any `PD-T`, `PD-N`, `IDEA`, or `LIT` entry, or change rules, templates or registry schemas; such work follows the ordinary audit cycle.
 
-**Handoff files.** Each topic keeps numbered handoffs in `topics/<slug>/handoffs/NN-<step>.md` (`01-audit.md`, `02-response.md`, …), following `templates/HANDOFF.md`. The orchestrator of the session that ends a step opens a **new** handoff with the next number. That orchestrator is the developer's, the auditor's or the topic orchestrator, whoever holds the open handoff. The handoff contains the complete instruction for the next step:
+**Handoff files.** Each topic keeps numbered handoffs in `topics/<slug>/handoffs/NN-<step>.md` (`01-audit.md`, `02-response.md`, …), following `templates/HANDOFF.md`. The orchestrator of the session that passes work to another agent or session opens a **new** handoff with the next number. That orchestrator is the developer's, the auditor's or the topic orchestrator, whoever holds the open handoff. The handoff contains the complete instruction for the next step:
 - the next agent, model and effort;
 - the branch and the input head SHA, i.e. the existing commit being handed off, as distinct from the later commit that publishes the handoff;
 - the stage, scope and inputs to read;
@@ -41,10 +41,14 @@ Never overwrite or delete an earlier handoff, and never alter its instruction bo
 - **Before replying.** Commit and push the new handoff before replying to AC. The reply then ends only with the short `Continue <branch>.` prompt. The log links each handoff with one line.
 
 Record the stage in the topic log: WORK → AUDIT → PR. The developer sets AUDIT when development is complete; the other agent (Claude for Codex development, Codex for Claude development) writes `audit-NN.md`. An accepted audit sets PR; findings set WORK. The developer answers every finding in `response-NN.md`. Audit rounds are limited as follows (see **Proportionate audit and records** below):
-- One substantive independent audit per batch, with independent reruns of consequential computation.
-- A **material change** returns to AUDIT for a focused re-audit of that change only. A material change is a new or changed claim, statement, proof, status, threshold, or code/evidence that a result depends on.
-- A response that only fixes MINOR findings proceeds to PR. The readiness check confirms those fixes by diff; no new audit round is needed.
-- From the third audit round of a topic onward, the auditor fixes every MINOR finding in place, lists each fix in its audit report, and returns only BLOCKING and MAJOR findings to the developer. Preserve disagreements for AC. Never edit the auditor's report to resolve it. An independent subagent check supplements this handoff. A draft PR may preserve work before the handoff is complete, with audit marked PENDING.
+- One substantive independent audit per batch, with independent reruns of consequential computation. A batch is the set of changes submitted together for one audit: a topic's candidate head, or several PRs audited together.
+- A **material change** returns to AUDIT for a focused re-audit of that change only. A material change is any change to a claim's statement, assumptions, definitions, quantifiers, scope, dependencies, proof, status or disposition; to a threshold, final ID or ID mapping; to result-bearing code, inputs or evidence; or to rules, templates or registry structure. In doubt, treat a change as material.
+- A response that only fixes MINOR findings proceeds to PR; the readiness check confirms those fixes by diff, and no new audit round is needed. If that diff shows any material change, the topic returns to AUDIT.
+- A response that changes no claim and rejects, or leaves unresolved, a finding with documented reasons also proceeds to PR. The disagreement is preserved for AC.
+- From the third audit round of a topic onward, the auditor fixes each MINOR finding it can fix within the limits in **Proportionate audit and records**, lists each fix in its audit report, and returns all other findings to the developer.
+- Severities are BLOCKING, MAJOR, MINOR and NOTE. BLOCKING means a claimed status or result is not supported; MAJOR must be fixed before PR; MINOR is wording or record hygiene; NOTE needs no action.
+
+Preserve disagreements for AC. Never edit the auditor's report to resolve it. An independent subagent check supplements this handoff. A draft PR may preserve work before the handoff is complete, with audit marked PENDING.
 
 At session start, fetch current `main` and the topic head and reconcile the base before developing, recording the base SHA. Rebase unpublished local work when appropriate; merge `origin/main` into an already-pushed branch when updating it. Never rewrite published history. Checkpoint and push substantial checked results promptly, including honestly labeled unfinished work at step boundaries after roughly ten minutes of changes. Commits use `proof:`, `refute:`, `test:`, `code:`, `exp:`, `lit:` or `docs:` and trailers `Agent: <Codex | Claude>` and `Model: <actual model and effort>`; disclose any runtime-unexposed metadata.
 
@@ -52,7 +56,7 @@ At session start, fetch current `main` and the topic head and reconcile the base
 2. Run the novelty gate below before generating ideas. For a task that adds no novelty content, record why the gate does not apply.
 3. Develop, test, and checkpoint substantial results. Record unsuccessful approaches and pending runs as they arise. Keep durable theory and evidence files synchronized with the actual result.
 4. Request an independent audit with the exact candidate SHA or file hashes, scope, claimed statuses, dependencies, and reproducible commands. Respond to each finding with a fix, evidence-based rejection, or explicit unresolved item.
-5. Prepare the PR, updating shared state and registries once at this stage. Commit and push the topic branch; open the PR yourself. A draft may be opened earlier with audit explicitly pending. Reaudit material changes to claims, proof, code, evidence, rules, templates, or registry structure. Registry application, final-ID assignment and the reservation check are verified in one readiness check by the auditor (a reviewed `git diff` of the shared files plus the reservation refresh). This is not a separate audit round, unless the application changes a status or statement beyond the audited ones. Before requesting merge, remove completed initialization/preparation tasks from the shared frontier or describe their post-merge state; retain the detailed pre-merge stage in the topic log and PR.
+5. Prepare the PR, updating shared state and registries once at this stage. Commit and push the topic branch; open the PR yourself. A draft may be opened earlier with audit explicitly pending. Reaudit material changes to claims, proof, code, evidence, rules, templates, or registry structure. Registry application, final-ID assignment and the reservation check are verified in one readiness check by the auditor (a reviewed `git diff` of the shared files plus the reservation refresh). This is not a separate audit round, unless the application makes a material change (see **Work cycle**) beyond the audited scope. Before requesting merge, remove completed initialization/preparation tasks from the shared frontier or describe their post-merge state; retain the detailed pre-merge stage in the topic log and PR.
 
 ## Novelty gate and candidate discipline
 
@@ -130,7 +134,7 @@ Use three visible PR sections:
 - `AUDIT`: auditor identity/model/effort, audited SHA or hashes, files and novelty scope read, independent reruns, findings by severity, dispositions, and remaining uncertainty. Say `PENDING` until the audit actually finishes.
 - `PR`: base and head SHAs, scope, readiness, shared registry updates, verification commands, unresolved items, and the exact decision requested from AC.
 
-Update `state/IDEAS.md`, shared state, global IDs, topic indexes, and allocation records at PR preparation after checking current `main` and active PRs. During exploration keep local records without repeatedly mutating shared registries. Do not let concurrent writers allocate the same ID or overwrite state. Material divergence from the audited SHA requires a recorded impact check and, where needed, a fresh audit.
+Update `state/IDEAS.md`, shared state, global IDs, topic indexes, and allocation records at PR preparation after checking current `main` and active PRs. During exploration keep local records without repeatedly mutating shared registries. Do not let concurrent writers allocate the same ID or overwrite state. Material divergence from the audited SHA requires a recorded impact check and, where needed, a focused re-audit.
 
 Use provisional IDs `<namespace>?<topic-slug>-<agent>-<local-number>` for all four namespaces: `PD-T?charter-codex-01`, `PD-N?charter-codex-01`, `IDEA?charter-codex-01`, and `LIT?charter-codex-01`. Final IDs are assigned during PR preparation from the topic's reserved ranges (below). Retain every provisional-to-final mapping.
 
@@ -141,7 +145,7 @@ Use provisional IDs `<namespace>?<topic-slug>-<agent>-<local-number>` for all fo
 4. Record the reservation at once in the ledger on the reserving branch and in its PR body: namespace, range, count, branch, date, and the heads checked. Size each range with headroom; unused IDs remain permanent gaps.
 5. If a topic needs more IDs later, it reserves a new range by the same procedure; it never shifts existing ranges.
 6. After a merge, other branches merge `main` and keep their own reservations.
-7. Recheck current reservations at readiness (merge time). If a new PR or ledger change appeared since the last check, compare it before marking the PR ready.
+7. At readiness, repeat steps 1–3 against current heads, including newly closed unmerged PRs, and record the heads checked. If `main` or any open PR's ledger changes between readiness and AC's merge, repeat the check before the merge.
 
 **Priority and collisions.** A reservation's priority is the pushed commit that records it, as linked from the PR. A date alone does not establish priority. On a genuine collision:
 - preserve accepted IDs and the earlier published reservation;
@@ -166,12 +170,28 @@ When several PRs share registries or allocations, use a single ledger at `topics
 
 These rules keep the checks that find real problems and drop process that only maintains itself. They apply from each open topic's next continuation. Existing records need not be rewritten.
 
-- **Audit rounds.** One substantive independent audit per batch, with independent reruns, plus the readiness check (registry diff and reservation refresh). Re-audit only material changes. From the third audit round onward the auditor fixes MINOR findings in place; see **Work cycle**.
-- **Auditor fixes.** An in-place fix by the auditor is limited to MINOR findings: wording, labels, links, record hygiene, stale text, missing records of decisions. It never changes a claim, statement, proof, status, threshold, ID or result-bearing code/evidence. The audit report lists every such fix with its location; these listed fixes count as reviewed by the auditor who made them.
-- **No process stage in shared registries.** `PROOF_STATUS.md`, `state/IDEAS.md`, `state/CURRENT.md`, `ID_CROSSWALK.md`, `RESULTS.md` and literature records carry claim content, status, dependencies and dispositions only. Audit stage, pending reviews and PR state belong in the topic log, the handoff and the PR body.
-- **Hash-pin code and data, not prose.** Checkers may pin the hashes of code, inputs, certificates and evidence. Do not hash-pin Markdown records. Correct prose with a dated addendum in place; no companion files are needed. Records already pinned stay pinned; new checkers do not pin prose.
+- **Audit rounds.** One substantive independent audit per batch, with independent reruns, plus the readiness check (registry diff and reservation refresh). Re-audit only material changes. From the third audit round onward the auditor fixes MINOR findings in place within the limits below; see **Work cycle**.
+- **Auditor fixes.** An in-place fix by the auditor is limited to MINOR findings:
+  - wording and formatting;
+  - links;
+  - stale process text;
+  - recording an already documented decision, with a link to it.
+
+  It never makes a material change (see **Work cycle**). The audit report lists every such fix with its location, and the fixes are committed separately from the report so the readiness diff shows them on their own. Listed fixes need no further audit round. The developer may dispute any of them; disputes go to AC. A finding that cannot be fixed within these limits, or whose classification is in doubt, is returned as MAJOR.
+- **No process stage in shared registries.** `PROOF_STATUS.md`, `state/IDEAS.md`, `state/CURRENT.md`, `ID_CROSSWALK.md`, `RESULTS.md` and literature records carry only:
+  - claim content and status;
+  - dependencies and dispositions;
+  - links to the durable theory, evidence and completed audit records.
+
+  Pending or in-progress process belongs in the topic log, the handoff and the PR body. That covers audit pending, response due, draft or PR state, and preparation tasks.
+- **Hash-pin code and data, not prose.** Checkers may pin the hashes of code, inputs, certificates and evidence, whatever their file format. New checkers do not pin prose records: logs, theory, handoffs, audits and registries. Audit requests and reports still identify audited prose by commit SHA or file hash. Correct prose with a dated addendum in place. To correct an already pinned prose record, either update the pin in the same reviewed commit or add a dated companion note.
 - **Registry application by reviewed diff.** At PR preparation edit the shared registries directly. The readiness check reviews the resulting `git diff`. Literal OLD→NEW proposal files, re-application scripts and application receipts are not required.
-- **Disclose once.** A protocol deviation, limitation or AC decision is recorded in one canonical place (the topic log or one named record). Other records link to it in at most one line instead of repeating it.
-- **Handoffs.** Write a new numbered handoff only when work passes to a different agent or session. A session that continues with the next step itself needs no intermediate handoff. The rules for numbering, status lines and one open handoff otherwise stay as above.
+- **Disclose once.** A protocol deviation, process limitation or AC decision is recorded in one canonical place: the topic log or one named record. Other records link to it in at most one line instead of repeating it. A claim's scope, limitations and verification limitations always stay in its own theory record; registries link to it.
+- **Handoffs.** Write a new numbered handoff only when work passes to a different agent or session.
+  - Ending a session, or replying to AC with a `Continue` prompt, always passes work on.
+  - Subagents of the current orchestrator are not a different agent for this purpose.
+  - While one session carries several steps, the open handoff stays open and is closed `done in <sha>` when work passes on.
+
+  The rules for numbering, status lines and one open handoff otherwise stay as above.
 
 Rehearse the intended sequential squash integration in a disposable local branch without touching `main`, record resulting conflicts and semantic checks, and repair the topic branches before requesting AC's merge sequence. This batch rehearsal is required only for relevant multi-PR work and never authorizes merging, force-pushing, or rewriting published history. AC integrates ready PRs by squash merge; agents never perform that merge.
