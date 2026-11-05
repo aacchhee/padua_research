@@ -1,0 +1,11 @@
+{
+  "actual_guarded_exit_code": 0,
+  "all_controls_passed": true,
+  "count_certified": false,
+  "guarded_memo_source_sha256": "0e433e088236a44e5fe711aff532f8200703172497f6606bc8c68922e5371f2e",
+  "guarded_receipt_sha256": "8dfb3d16851beccc7421ac0b56ef7325be3f893900589e8988b83a69f1479974",
+  "matching_endpoint_identities": 41172,
+  "original_memo_source_sha256": "d910cb5857a0c09288330925ca833f820690ef76553d8e66402c3e5e352b7e35",
+  "original_receipt_sha256": "1ce97668293b41c5fdf447d4c062b5d4a40085f4c2ccc82b1432cd067821e5ed",
+  "scope": "guard-only canonical source preserves all41172 frozen n4\u20137 endpoint-control results; no count claim"
+}

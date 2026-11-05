@@ -136,3 +136,200 @@ for replay. **AC delivery remains PENDING**; current archive verification
 against the trusted manifest is required before reliance/purge. Supported
 POSIX/WSL requires quiescent storage/index; no native Windows or hostile
 concurrency guarantee. No history rewrite/clone shrink. Only AC merges.
+
+## padua-argmax-effective-20261103 — effective Padua argmax (PR #19)
+
+Branch `codex/padua-argmax-effective-20261103`; [PR19](https://github.com/aacchhee/padua_research/pull/19).
+Rules/input8a1f394, base440d107. Claude [audit-01](topics/padua-argmax-effective-20261103/audit-01.md) (2026-11-03) accepts all mathematics at the stated scopes; the [developer response](topics/padua-argmax-effective-20261103/response-01.md) to F1–F10 is accepted by the Claude [response check](topics/padua-argmax-effective-20261103/response-check-01.md) (2026-11-05).
+
+**PD-T099 remains OPEN.** No explicit global threshold n0 or counterexample
+was obtained. The effective campaign supplies two kinds of progress:
+
+- PD-T250’s exact corner-active spectrum and PD-T251 prove, for every n>=2,
+  A_n,B_n<=-n^2 Lambda_c/8. Strict corner descent holds when
+  0<h_x+h_y<=1/(2[n(n+1)]^3). This closes the all-degree normalized slope
+  premise; weighted energy and the fixed scaled phase radius remain OPEN.
+- PD-T246: a C/GMP producer and separately implemented C++/GMP checker extend exact
+  finite certification to every degree17–32, giving the continuous range2–32. The final degree set and acceptance evidence are
+  in the [finite theorem](topics/padua-argmax-effective-20261103/theory/argmax-effective-codex-01-finite-global-argmax.md).
+
+The n40 producer completed, but its corrected checker reached a600CPU-second
+limit without acceptance; n40 is not certified and33–39 were not run.
+
+PD-T249: three strict whole-cell edge comparisons are proved at n13,17,24.
+PD-N084–086: scoped analytic obstructions refute a fixed-sign-cardinal envelope at n4,
+complete spectral positivity, and uniform per-cardinal affine sign
+preservation. These do not refute PD-T099 or aggregate/reflected approaches.
+
+PD-T247/248: G2/G3/G4 and the1536-comparison G6 screen remain MEASURED at finite sample
+scope. G5 cannot produce n0 without explicit uniform remainder and defect
+bounds. G8 source coverage is partial; no1-D theorem is transferred.
+
+The [report](topics/padua-argmax-effective-20261103/report.md) gives route
+outcomes, costs, evidence and remaining obligations. Small exact witnesses
+are committed; the historical bulk archive and all 16 raw payload paths are absent in this
+session, with no verified delivery or durable locator. These outputs are
+regenerable-only; regeneration does not recover their original bytes. [Final ID map](topics/padua-argmax-effective-20261103/final-id-map.json): PD-T246–252, PD-N084–086, IDEA-336–348, LIT-466–470; the existing LIT-379 rereading retains its ID. Pilot-only measurements remain MEASURED under PD-T252.
+
+PR preparation registers the accepted scopes; completed preparation is historical after merge. AC alone decides whether to merge. No further Claude round is requested under AC’s 2026-11-05 direction. The missing developer per-receipt compiler/GMP mapping remains an accepted documented limitation in the [response check](topics/padua-argmax-effective-20261103/response-check-01.md); raw archive delivery remains unverified. No research run is scheduled.
+
+## padua-lebesgue-followups-20261103 — small follow-ups for the Padua Lebesgue-function paper
+
+This file is written only by the topic orchestrator. Branch `codex/padua-lebesgue-followups-20261103`; [PR #20](https://github.com/aacchhee/padua_research/pull/20).
+
+### Status (2026-11-05): PR ready — generated-output archival verified
+
+Four bounded targets, specified in [handoff 01](topics/padua-lebesgue-followups-20261103/handoffs/01-work.md):
+
+- **T1:** certified n = 8 maxima count (PD-T180/184; PROVED 44/16/2 = 62; certified candidate correction of LIT-388 v1 Table 3’s numerical 38/56).
+- **T2:** centre-minimality of the edge-defect integrals g_v and g_h.
+- **T3:** a general-β series for them.
+- **T4:** the constant term c (κ = c − c₁²) of the corner expansion (PD-T098).
+
+T1: PD-T184 and PD-T180 are PROVED: exactly 44 interior and 62 total strict
+maxima. Both complete original interior and boundary predicate blocks were
+independently replayed; fresh generation, exact proof identity, literal joining
+and both original-accounting compositions completed. No developer monolithic joined run
+is claimed; Claude subsequently completed one as audit evidence. [Count proof](topics/padua-lebesgue-followups-20261103/theory/t1-closed-count.md).
+T2–T4 core analytic targets are complete and accepted by Claude audit-01.
+
+- **PROVED PD-T266, Claude audit-01 accepted:** both limiting
+  edge defects have unique centre minima, vertical `g` and horizontal exactly
+  `1`. [Theory](topics/padua-lebesgue-followups-20261103/theory/t2-01-edge-centre-minima.md).
+- **PROVED PD-T267, Claude audit-01 accepted:** common
+  logarithmic endpoint expansion with explicit errors.
+  [Theory](topics/padua-lebesgue-followups-20261103/theory/t2-02-common-endpoint-expansion.md).
+- **PROVED PD-T268, Claude audit-01 accepted:** general-position
+  geometric series with rigorous tails, exact-Fraction enclosures and direct
+  outward quadrature independently rerun at five positions.
+  [Theory](topics/padua-lebesgue-followups-20261103/theory/t3-01-general-position-series.md).
+- **PROVED PD-T271, Claude audit-01 accepted:** parity-independent
+  corner constant `c`, with an explicit vanishing remainder and independently
+  reproduced enclosure
+  `1.846160310423926079759838737947 < c < 1.846160310423926079759838737948`.
+  [Constant](topics/padua-lebesgue-followups-20261103/theory/t4-03-corner-constant.md),
+  [PD-T269 defect limit and series](topics/padua-lebesgue-followups-20261103/theory/t4-01-corner-defect-limit.md),
+  [PD-T270 one-dimensional bound](topics/padua-lebesgue-followups-20261103/theory/t4-02-one-dimensional-remainder.md), sharpening the predecessor PD-T158 estimate.
+
+Final registration assigns PD-T266–271 to t2-01/02, t3-01 and t4-01/02/03,
+respectively; every provisional alias is retained. IDEA-356/357/358 retain the
+T2/T3/T4 candidates; T1 reuses IDEA-299 and existing PD-T180/184.
+The full PD-T098 expansion, including `-1/N` and `O(log N/N²)`, stays
+OPEN. No finite-degree or all-degree argmax conclusion is added here.
+
+Protocol qualification: some linked full T2/T3 candidate/attempt reads were
+completed after the first mechanisms. Later reading and supplementary review
+do not retroactively cure that timing deviation. Claude confirmed minor impact,
+with acceptance of the recorded deviation left to AC. Physical cold-storage delivery remains pending.
+
+### Claude audit-01 (2026-11-05)
+
+Mathematics ACCEPTED for all four targets ([audit-01](topics/padua-lebesgue-followups-20261103/audit-01.md)). Independent auditor evidence:
+- a monolithic original n=8 `Verifier.run` (archived interior + independently regenerated boundary) certified 44 + 16 + 2 = 62 in one process;
+- an Arb digamma-route enclosure of κ confirmed the κ and c brackets.
+
+All nine MINOR findings (wording, proposal format, provenance/budget notes) are answered by editorial fixes in [response-01](topics/padua-lebesgue-followups-20261103/response-01.md). Registration, fresh reservation checks, integration rehearsal and independent preparation review are complete. AC-directed archival resolves the storage finding; PR20 is ready for AC’s merge decision. The T2/T3 gate-timing deviation is recorded with minor impact and left for AC's decision.
+
+### Current boundary and post-merge frontier
+
+Stage: PR ready for AC’s merge decision. AC directed generated outputs to cold
+storage; 326 raw captures (1,155,908 bytes) were exported and separately restored
+with exact hashes before removal from the tracked tree. Including all new
+retrieval manifests, the conservative count is now **3,859,377 bytes**.
+[Independent storage review](topics/padua-lebesgue-followups-20261103/preparation/cold-storage-review.md)
+accepts the migration and resolves S1 by reduction, without a waiver.
+Small essential receipts and all code remain tracked; source blobs stay retrievable.
+Physical AC delivery remains pending; local verified staging is not delivery.
+The mathematics is unchanged. No further agent research or preparation is queued.
+
+Dated 2026-11-05 supersession: earlier CURRENT/RESULTS center-minimality and
+general-β-series OPEN clauses are historical and superseded only at the proved
+limiting-integral scopes PD-T266/268. Earlier exact n8 count OPEN clauses are
+superseded only by PD-T184/180; failed/deadline attempts remain history.
+PD-T100 remains MEASURED, PD-T183 remains the separate lower bound, and
+PD-T181 remains the separate accepted global theorem. After merge, these
+registrations and completed results remain the topic's outcome; PD-T098's sharp
+expansion and PD-T099's all-degree bridge retain their separate OPEN scopes.
+Finite PSLQ nulls remain MEASURED. No finite-degree ordering, broader count,
+priority, manuscript or author-contact claim follows. The certified 44/62 is
+only a candidate correction of the inspected LIT-388 v1 Table 3 numerical 38/56;
+no accepted erratum or later-version coverage is claimed.
+
+The T2/T3 prospective-gate deviation remains confirmed, not waived or cured;
+[audit-01](topics/padua-lebesgue-followups-20261103/audit-01.md) and
+[response-01](topics/padua-lebesgue-followups-20261103/response-01.md) preserve
+its minor-impact assessment for AC's decision. Physical cold-storage delivery
+remains pending. Only AC merges.
+
+## padua-mz-2d-frontier-20261105
+
+[PR23](https://github.com/aacchhee/padua_research/pull/23), branch `codex/padua-mz-2d-frontier-20261105`. Development complete2026-11-05. [Claude audit-01](topics/padua-mz-2d-frontier-20261105/audit-01.md) (Opus5.5 xhigh): mathematics ACCEPTED at stated scopes, all statuses accepted; seven P3 documentation findings answered in [response-01](topics/padua-mz-2d-frontier-20261105/response-01.md): A1–A6 fixed, optionalA7 declined. StagePR, preparation complete for AC’s review; no re-audit required for the permitted wording response. AC decision: PD-T028/110/116 keep Status OPEN with `REJECTED: refuted` disposition. Final IDs T294–300/N104–107/IDEA384–397 and shared records are prepared on this branch; no LIT assignment. [Full report](topics/padua-mz-2d-frontier-20261105/report.md).
+
+- **PROVED analytic refutations in development, F1/F2/F3:** along evenm, signed Padua lambda_min→−infinity and lambda_max→+infinity, already on Pi_floor(theta*m) for every fixedtheta>1/2. Thus universal positivity, upper threshold below2, positive endpoint log-orders and eta→1 are false. At theta<=1/2, exactness gives eta=0. Explicit polynomial carriers have signed energies/logm→−16ab/9 and+8ab/9 with bounded continuous norms. [Weight lemma](topics/padua-mz-2d-frontier-20261105/theory/f12-local-weight-asymptotic.md), [negative carrier](topics/padua-mz-2d-frontier-20261105/theory/f12-eventual-negative-carrier.md), [upper carrier](topics/padua-mz-2d-frontier-20261105/theory/f12-eventual-upper-carrier.md), [sharp threshold](topics/padua-mz-2d-frontier-20261105/theory/f3-fixed-ratio-threshold.md). No effective finite onset, odd-m classification or sharp extremal growth law is claimed.
+- **PROVED in development, F4:** every m>=2,n<m has `2<=||H_(m,n)||_(C→L2)<=C*=28.3763348311…<30`, independent of signed spectral positivity. [Weighted-L1 proof](topics/padua-mz-2d-frontier-20261105/theory/f4-uniform-density-bound.md). Positive-reference smooth diamond equivalence is a separate proved theorem; failed absolute-Gram majorants remain failed.
+- **PROVED computer-assisted finite cases:** m60 strict minimum(0.188593,0.188594), maximum(1.802011,1.802012); m80 minimum(0.172730,0.172731), maximum(1.816497,1.816498). Producer times46.9s/302.4s; independent whole-pencil reconstructions/fresh-transform acceptances232.6s/569.1s. Producer coverage every integer2..60 plus80; independent acceptance specifically10/20/30/40/60/80. No complete independently certified2..80 range; m100 stopped without acceptance.
+- **MEASURED:** G3 kills the originally specified localized upper model; G2 fits INCONCLUSIVE because heldout upper grid is incomplete. Floating every-integer2..239 screen at n=m−1/m−2 has no hits. Posthoc m1600,n1599 has minimum≈−0.02341441659, residual1.95e−13, saved vector; this specific point remains uncertified and is not the proof of the analytic refutations. G5 numerical screen NOT RUN because the analytic uniform norm theorem resolves boundedness directly.
+- **OPEN:** 1-D PD-T027 sharp upper limit/uniform gap; effective first violating degrees, exact finite certification of the m1600 hit, sharp signed spectral growth constants and odd-m behavior.
+
+Supplementary Astra high reconstructed all new analytic results with no gap found and separately ran exact/float checks; required Claude audit remains distinct. All development aliases and final results/candidates, including failed/equivalent/deferred routes, are retained. Bulk output is regenerable temporary staging; external Padua cold-storage delivery is pending. Registration uses the fresh live union scan at main d9b7cb8 and all open PR21–24; impact checks, nine clean disposable squash rehearsals and the independent protocol review passed, with AC’s display decision unchanged. No subsequent mathematical campaign is assigned by preparation. Only AC merges.
+
+Registered homes: PD-T294 harmonic profile,295 weights,296 positive reference,297 uniform norm,298/299 exact m60/m80,300 finite MEASURED observations; PD-N104 sign-discard intermediary,105/106 opposite carrier energies,107 sharp signed ratio threshold. Permanent unused gaps T301–323/N108–115/IDEA398–413/LIT574–581; no accepted ID renumbered.
+
+Preparation preserves all accepted scientific source/receipt/auditor identities; no mathematical rerun. Core registration candidate05ccb20 passed the distinct Astra medium protocol check. Main and foreign heads remained unchanged at the final reservation recheck. This PR’s readiness does not approve the other draft PRs or prescribe AC’s merge order.
+
+## nn-mop-iep-20261103 — nearest-neighbour MOPs as a commuting-pair IEP
+
+This file is written only by the topic orchestrator. Branch `codex/nn-mop-iep-20261103`;
+draft [PR22](https://github.com/aacchhee/padua_research/pull/22).
+
+### Status (2026-11-05): prepared and protocol-checked; ready for AC's merge decision
+
+- PROVED, standard formulation: under explicit normality, moment systems
+  uniquely give the finite polynomial triangle and both NN coefficient arrays.
+  [PD-T286](topics/nn-mop-iep-20261103/theory/finite-moment-formulation.md).
+- PROVED, positive split: the interior diagonal differences are nonzero under
+  opposite-corner normality; the marginal Jacobi data reconstruct the full
+  coefficient triangle through degree N-1 using only divisors through N-2.
+  Terminal d=0 is a final boundary condition. The former PD-N?…01 failure
+  classification is withdrawn; its original wording remains historical.
+  [PD-T288](topics/nn-mop-iep-20261103/theory/interior-divisor-nonvanishing.md),
+  [PD-T289](topics/nn-mop-iep-20261103/theory/marginal-reconstruction.md),
+  [split map](topics/nn-mop-iep-20261103/SPLITS.md).
+- MEASURED: 14 exact cases N=2,...,8; 476 recurrences and 70 shifted flatness
+  squares pass. Independent rerun plus separate small checker completed.
+  [PD-T287](topics/nn-mop-iep-20261103/theory/finite-checks.md).
+- MEASURED negative: all 112 tested fixed-site transfer pairs fail to commute
+  at x=0; no universal impossibility of alternative encodings is claimed.
+  [PD-N100](topics/nn-mop-iep-20261103/theory/fixed-site-dictionary-failure.md).
+- Known exact reduction; numerical question OPEN: lattice zero curvature
+  differs from PD-T057's multiplication sections. The marginal route needs
+  only marginal Jacobi data; the shifted step-line route needs the shift
+  family plus boundary information. No distinct new updater
+  survives the gate, so no C3 comparison or stability
+  equivalence is claimed. [Report](topics/nn-mop-iep-20261103/report.md),
+  [gate](topics/nn-mop-iep-20261103/gate.md),
+  [candidates](topics/nn-mop-iep-20261103/candidates.md).
+
+- MEASURED C4-only pilot: source Kravchuk/Hahn weights, N4,8,12,16,24,32;
+  binary64 Stieltjes plus A/B layers versus 140/220-digit references. All
+  coefficients remain finite without zero division, but fieldwise normwise
+  relative errors exceed one at Kravchuk N24/32 and Hahn N16/24/32.
+  This is a finite implementation observation, not general instability or
+  a source residual/C3 comparison. [PD-T290](topics/nn-mop-iep-20261103/theory/c4-baseline-measurements.md).
+- Claude [audit-01](topics/nn-mop-iep-20261103/audit-01.md) accepted the
+  original formulation and finite counts, returned F1–F4 and N1/N2.
+  [Response-01](topics/nn-mop-iep-20261103/response-01.md) accepts all
+  findings, rechecks primary formulas, corrects the C4 interpretation and
+  executes the baseline. [Supplementary check](topics/nn-mop-iep-20261103/response-independent-01.md)
+  supplies additional independent evidence. Claude audit-02 accepted the response.
+
+- Claude [audit-02](topics/nn-mop-iep-20261103/audit-02.md) accepts response-01:
+  PD-T288/289 PROVED, PD-T290 MEASURED and the provisional negative withdrawal.
+  Auditor exact-reference checks cover sampled N4,8,12,16,24; N32 retains
+  precision convergence. Approved E1/E2/X1 edits and final registration are
+  complete. Claude [protocol check](topics/nn-mop-iep-20261103/preparation/protocol-check-01.md)
+  passed; PR22 is ready for AC's merge decision.
+
+### Next step
+
+AC: merge decision on PR22 (handoff07). After the merge, `Claude (Sonnet 5.5 medium): Continue codex/nn-mop-iep-20261103.` closes the topic.

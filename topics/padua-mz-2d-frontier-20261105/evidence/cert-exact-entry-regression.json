@@ -1,0 +1,55 @@
+{
+ "kind": "developer full-entry exact regression; not independent checker",
+ "frozen_sha256": "5d1f005e2307d3a26badc9c1a44ce313dc9126625a49fba5d59430c151cf9c70",
+ "results": [
+  {
+   "m": 2,
+   "checked_exact_entries": 10,
+   "checked_offblock_upper_entries": 2,
+   "seconds": 0.0034826899999416128,
+   "equal": true
+  },
+  {
+   "m": 3,
+   "checked_exact_entries": 40,
+   "checked_offblock_upper_entries": 8,
+   "seconds": 0.005037936000007903,
+   "equal": true
+  },
+  {
+   "m": 10,
+   "checked_exact_entries": 3050,
+   "checked_offblock_upper_entries": 750,
+   "seconds": 0.06701667200002248,
+   "equal": true
+  },
+  {
+   "m": 11,
+   "checked_exact_entries": 4392,
+   "checked_offblock_upper_entries": 1080,
+   "seconds": 0.09872414799997387,
+   "equal": true
+  },
+  {
+   "m": 20,
+   "checked_exact_entries": 44200,
+   "checked_offblock_upper_entries": 11000,
+   "seconds": 1.238444383000001,
+   "equal": true
+  },
+  {
+   "m": 30,
+   "checked_exact_entries": 216450,
+   "checked_offblock_upper_entries": 54000,
+   "seconds": 4.9968390699999645,
+   "equal": true
+  },
+  {
+   "m": 40,
+   "checked_exact_entries": 672800,
+   "checked_offblock_upper_entries": 168000,
+   "seconds": 17.737633105999976,
+   "equal": true
+  }
+ ]
+}

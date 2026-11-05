@@ -1,0 +1,22 @@
+{
+  "all_controls_passed": true,
+  "count_certified": false,
+  "rows": [
+    {
+      "mode": "success",
+      "passed": true,
+      "scientific_solve_executed": false
+    },
+    {
+      "mode": "source-fault",
+      "passed": true,
+      "scientific_solve_executed": false
+    },
+    {
+      "mode": "runtime-fault",
+      "passed": true,
+      "scientific_solve_executed": false
+    }
+  ],
+  "wrapper_sha256": "6c69b3ed4e08ed238e5ab141c2280a954c37b0d66702ced4a32cbc9cc15b0e2c"
+}

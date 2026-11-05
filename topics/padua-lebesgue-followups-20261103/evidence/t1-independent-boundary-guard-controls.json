@@ -1,0 +1,24 @@
+{
+  "all_controls_passed": true,
+  "control_sha256": "dc1de3c0d6448af8c110f1b1ad285cd423f42ebe090fa7b0a80995d78a54c5cf",
+  "controls": [
+    {
+      "exit_code": 1,
+      "flag": "-O",
+      "refused_before_imports": true
+    },
+    {
+      "exit_code": 1,
+      "flag": "-OO",
+      "refused_before_imports": true
+    }
+  ],
+  "count_certified": false,
+  "development_delta_sha256": "2f90a0de6046270357c6a20d3a599f6f47ddf5605aec7c5ce288b801d99bb681",
+  "new_sha256": "a70e25326e513e65554c197c62d3fe684d45f6e54aa72e2e6df68bc5a25510bb",
+  "old_git_blob": "011b8c4174bf1506479021f306c65da71f173e1e",
+  "old_sha256": "7753e4ba8bc440133a46e6f5325e8b5531f20e5a20d8d0aa6778a32bacbdb7f0",
+  "original_ast_unchanged": true,
+  "original_bytes_restored_by_removing_only_guard": true,
+  "scope": "exact final guard-only byte/AST delta and pre-import optimized-mode refusals; executed scientific artifact keeps old source identity"
+}

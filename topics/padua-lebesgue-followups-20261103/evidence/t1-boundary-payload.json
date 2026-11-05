@@ -1,0 +1,17 @@
+{
+  "count_certified": false,
+  "primary": {
+    "excluded_fields": [
+      "metadata",
+      "summary.seconds"
+    ],
+    "excluded_fields_sha256": "242db8bee9bb5c8dd044be8e94e16898d8310fb7319cb7e7a5abe2d91708dd2a",
+    "mathematical_payload_bytes": 4821831,
+    "mathematical_payload_sha256": "1316b929ec142e0274f8c68a37e59a85b2136f8b322077ecd8172918719b54f2",
+    "path": "/workspace/scratch/lebesgue-t1/fresh-boundary-v1.json",
+    "raw_bytes": 4822048,
+    "raw_sha256": "adfe1107a326d17cfdd083a2ef9b8ab7ce0aeaa6b906f7a825c53a4fa1da6f08"
+  },
+  "scope": "exact complete proof-input identity only; full mathematical replay still required",
+  "source_sha256": "49552101a9af61fad4624093d2666307234e718e11a28ed2aaf0d4b4f3ceb8be"
+}

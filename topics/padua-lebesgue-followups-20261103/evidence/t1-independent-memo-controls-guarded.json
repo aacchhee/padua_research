@@ -1,0 +1,56 @@
+{
+  "all_controls_passed": true,
+  "count_certified": false,
+  "rows": [
+    {
+      "cache_bounded": true,
+      "cache_immutable": true,
+      "changed_scale_rejected": true,
+      "exact_endpoint_equalities": 558,
+      "n": 4,
+      "noninteger_endpoints_rejected": true
+    },
+    {
+      "cache_bounded": true,
+      "cache_immutable": true,
+      "changed_scale_rejected": true,
+      "exact_endpoint_equalities": 774,
+      "n": 5,
+      "noninteger_endpoints_rejected": true
+    },
+    {
+      "cache_bounded": true,
+      "cache_immutable": true,
+      "changed_scale_rejected": true,
+      "exact_endpoint_equalities": 1026,
+      "n": 6,
+      "noninteger_endpoints_rejected": true
+    },
+    {
+      "cache_bounded": true,
+      "cache_immutable": true,
+      "changed_scale_rejected": true,
+      "exact_endpoint_equalities": 1314,
+      "n": 7,
+      "noninteger_endpoints_rejected": true
+    },
+    {
+      "cache_bounded": true,
+      "cache_immutable": true,
+      "changed_scale_rejected": true,
+      "exact_endpoint_equalities": 1638,
+      "n": 8,
+      "noninteger_endpoints_rejected": true
+    }
+  ],
+  "scope": "exact cache endpoint identities and fault controls only",
+  "source_sha256": {
+    "/workspace/padua_research/topics/padua-lebesgue-followups-20261103/code/t1_memo.py": "0e433e088236a44e5fe711aff532f8200703172497f6606bc8c68922e5371f2e",
+    "/workspace/padua_research/topics/padua-lebesgue-followups-20261103/evidence/t1-independent-memo-controls.py": "e95d38850b8c0eef33bdb1c0785088b84ad3bdddd841570e623bfac16dc54857",
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n4_boxes.py": "1d389bedef41bc08cf9cd008012870d9dc25eb4960c029020d235324b0afa4c0",
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n5_boxes.py": "20817eb6ec086dd0c3b81ec8313223a5a53fc3f13feecf7593ef186e13c90b52",
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n6_boxes.py": "fed35e7ef6efe13df5d0df150550abbe9ddaf186a3f8d1f07884e04711a2bdd9",
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n7_boxes.py": "d668e607df8f0b869887065816ef649468eca468a43b164ec2b913227f334e69",
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_n8_boxes.py": "e9d763d409dab8568e4b6c3452ac51283e36b708d8aa733e3f4ac3dda923f958"
+  }
+}

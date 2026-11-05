@@ -1,0 +1,52 @@
+{
+  "bytes": 637165,
+  "count_certified": false,
+  "exit_code": 0,
+  "frozen_helper_result": {
+    "acceptance_predicate_added": false,
+    "enlarged_reference_hulls": 1,
+    "exact_cardinal_identities": 45,
+    "fixture_only": false,
+    "left_complete": true,
+    "mirrored_leaves": 76760,
+    "mirrored_ordinary_records": 270941,
+    "proposed_roots": 44,
+    "reference_rechecks": 261,
+    "retained_axis_roots": 4,
+    "retained_left_roots": 20,
+    "source_left_leaves": 76760
+  },
+  "input_sha256": "d6642d630ea387486e1a685fd0cce1c3df3fc0d1e4d6f16d7a6d2cee11920a43",
+  "raw_path": "/workspace/scratch/lebesgue-t1/fresh-interior-reflected-v1.json.gz",
+  "raw_sha256": "c5cdcfed9f19f2161b1d55d4f2154bc06a1cd5bd51e28c5c2187ca57c67cc45f",
+  "recorded_utc": "2026-11-03T13:20:09.459087+00:00",
+  "scope": "actual full ordinary fresh interior proposal; mathematical acceptance through exact full proof-input identity/old replays still separately recorded",
+  "source_sha256": "f77056651bb1bbf8eb3b154190eadad47ce33cbb3b793b4f32ae31f0834497e5",
+  "summary": {
+    "all_gradient_leaves": 144902,
+    "complete": false,
+    "depth": 34,
+    "interior": 44,
+    "interior_complete": true,
+    "leaf_counts": {
+      "all_gradient": 144902,
+      "gradient": 534358,
+      "hessian": 7002,
+      "node_cone": 346,
+      "root": 522
+    },
+    "leaf_pattern_records": 541882,
+    "maximum_ambiguity": 45,
+    "node_leaves": 346,
+    "pending": 0,
+    "seconds": 0,
+    "stats": {
+      "all_gradient": 144902,
+      "discard": 153520,
+      "node_cone": 346,
+      "visited": 307039
+    },
+    "unresolved": 0
+  },
+  "tool_session": 1193
+}

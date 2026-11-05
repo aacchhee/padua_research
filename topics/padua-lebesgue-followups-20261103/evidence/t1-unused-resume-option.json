@@ -1,0 +1,22 @@
+{
+  "disposition": "unused operational contingency removed from final code surface after complete boundary generation",
+  "independent_controls_attributed": "prefix restore4 positives/16 negatives/actual3edge validation; resumed join13 controls; no proof depends on this unused code",
+  "numerical_resume_executed": false,
+  "reason": "original fresh boundary completed all4 edges and corners before3600s cap",
+  "recorded_utc": "2026-11-03T12:15:06.031258+00:00",
+  "scientific_claim": false,
+  "sources": [
+    {
+      "bytes": 6820,
+      "path": "topics/padua-lebesgue-followups-20261103/code/t1_boundary_resume.py",
+      "scratch_copy": "/workspace/scratch/lebesgue-t1/unused-resume/t1_boundary_resume.py",
+      "sha256": "b738c01c32d608a2963a95c164b328bc21acc8bdcc91090cac8716c162da3b13"
+    },
+    {
+      "bytes": 4294,
+      "path": "topics/padua-lebesgue-followups-20261103/code/t1_join_resumed.py",
+      "scratch_copy": "/workspace/scratch/lebesgue-t1/unused-resume/t1_join_resumed.py",
+      "sha256": "7802f3342be8b84fc2cd324ec4ad8ec6b981e6c13887a70cd1361cd14be7b365"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+ "status": "ABANDONED by orchestrator scope decision; no m100 acceptance claim",
+ "date_utc": "2026-11-05 10:15:54 UTC",
+ "reason": "Orchestrator requested stop after independent m80 PASS and resolution of universal question by a separate analytic mechanism; further isolated finite cases not needed",
+ "pid": 2538,
+ "phase_at_stop": "Native exact/float pencil complete; first block not completed (no first-transform output). Congruence phase inferred from runtime and code order; internal operation not instrumented.",
+ "process_elapsed_seconds": 1175.8799999999999,
+ "process_cpu_seconds": 868.32,
+ "elapsed_since_preceding_m80_receipt_seconds": 868.5358278751373,
+ "observed_rss_kib": 4309660,
+ "observed_cgroup_memory_bytes": 8143167488,
+ "accepted_m100_receipt_exists": false,
+ "signal": "SIGTERM; matrix calculation has no external side effects and emits receipt only after full acceptance",
+ "source_sha256": {
+  "cert_pencil.c": "95993b761794306b41b67f6e7741fd9cd38817c08e5ec218c2f21fb08846d51e",
+  "cert_native.py": "6651de795706c0e2aa2689a58b9dd928835e2dbe9de0740b237b377d68b095ae"
+ },
+ "artifacts": [
+  {
+   "path": "/tmp/padua-cert-native-large/m100-R0.txt",
+   "bytes": 78438566,
+   "sha256": "0c2be50e83436b82ec0485c877e0a34b8ceac38364858e4a46662dc62a8fdb3c"
+  },
+  {
+   "path": "/tmp/padua-cert-native-large/m100.float",
+   "bytes": 204040000,
+   "sha256": "e5b1b058b74ae5bb7b7d095a78e2d825a6d9447c76b0ad61c22553150f24416d"
+  },
+  {
+   "path": "/tmp/padua-cert-native-large/m100.exact",
+   "bytes": 2104841592,
+   "sha256": "9eb630ec8a1f0a5b99539f9377fbbda370aea7dd39eb6ee80acf506cbec3d5ea"
+  }
+ ],
+ "producer_command": [
+  "/workspace/padua_research/topics/padua-mz-2d-frontier-20261105/code/cert_native.py",
+  "--m",
+  "80",
+  "100",
+  "--scratch",
+  "/tmp/padua-cert-native-large",
+  "--output-dir",
+  "/workspace/padua_research/topics/padua-mz-2d-frontier-20261105/evidence"
+ ],
+ "environment": {
+  "OPENBLAS_NUM_THREADS": "1",
+  "OMP_NUM_THREADS": "1",
+  "MKL_NUM_THREADS": null
+ },
+ "exit_code": 143,
+ "timing_scope": "Observed interval since preceding m80 receipt write; not a completed per-target acceptance timing."
+}

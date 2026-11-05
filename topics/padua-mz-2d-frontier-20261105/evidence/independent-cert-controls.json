@@ -1,0 +1,12 @@
+{
+  "zero": "dominance check failed",
+  "boundary": "dominance check failed",
+  "nonsymmetric": "not symmetric square",
+  "indefinite_without_dominance": "dominance check failed",
+  "mixed_sign_dominant": {
+    "negative": 1,
+    "zero": 0,
+    "positive": 1,
+    "minimum_margin": "2"
+  }
+}

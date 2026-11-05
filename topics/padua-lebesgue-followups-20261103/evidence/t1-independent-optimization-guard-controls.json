@@ -1,0 +1,117 @@
+{
+  "all_controls_passed": true,
+  "changes": [
+    {
+      "exact_guard_only_bytes": true,
+      "new_sha256": "13fdfa85a4bcaa76e5e5b6ba3d3ede9d80e3ae006f20855f14fa82b581f5859a",
+      "old_git_blob": "59ebc4f5ede28a769f1726a5422ab08d859ee3a9",
+      "old_sha256": "0345e62ef9bb88fa11640e135d211648611c9536b85fec528d694e94ef57a69f",
+      "optimization_refusals": [
+        {
+          "exit_code": 1,
+          "flag": "-O"
+        },
+        {
+          "exit_code": 1,
+          "flag": "-OO"
+        }
+      ],
+      "original_ast_unchanged": true,
+      "path": "topics/padua-lebesgue-followups-20261103/code/t1_check.py"
+    },
+    {
+      "exact_guard_only_bytes": true,
+      "new_sha256": "b52cdec4daf0b67c1dcee2fb0ea7242740b7c4c2987654aa9a02c4a72ba515bc",
+      "old_git_blob": "cd78c69852b8500d0e16e5fe26f7ee9bc09ecc3f",
+      "old_sha256": "1ac5cbb83302d12006f35f042954fd6c76881e263ed6de065ca22c5302a77664",
+      "optimization_refusals": [
+        {
+          "exit_code": 1,
+          "flag": "-O"
+        },
+        {
+          "exit_code": 1,
+          "flag": "-OO"
+        }
+      ],
+      "original_ast_unchanged": true,
+      "path": "topics/padua-lebesgue-followups-20261103/code/t1_produce.py"
+    },
+    {
+      "exact_guard_only_bytes": true,
+      "new_sha256": "0e433e088236a44e5fe711aff532f8200703172497f6606bc8c68922e5371f2e",
+      "old_git_blob": "90a84a680e1eeb695fbd8a56efef4181c5a884d9",
+      "old_sha256": "d910cb5857a0c09288330925ca833f820690ef76553d8e66402c3e5e352b7e35",
+      "optimization_refusals": [
+        {
+          "exit_code": 1,
+          "flag": "-O"
+        },
+        {
+          "exit_code": 1,
+          "flag": "-OO"
+        }
+      ],
+      "original_ast_unchanged": true,
+      "path": "topics/padua-lebesgue-followups-20261103/code/t1_memo.py"
+    },
+    {
+      "exact_guard_only_bytes": true,
+      "new_sha256": "ac4c1364ea632136ce57ab22d518bf913ba2ab7c54cc41b1dd6c0f025ceb8c0f",
+      "old_git_blob": "f26724d64e853dd87ca213a62ae6e6c04a45b195",
+      "old_sha256": "e5c146fd8a85fecf642c98cd0c92c62d2594c3d2a65846a197fe0757f853b098",
+      "optimization_refusals": [
+        {
+          "exit_code": 1,
+          "flag": "-O"
+        },
+        {
+          "exit_code": 1,
+          "flag": "-OO"
+        }
+      ],
+      "original_ast_unchanged": true,
+      "path": "topics/padua-lebesgue-followups-20261103/code/t1_memo_controls.py"
+    },
+    {
+      "exact_guard_only_bytes": true,
+      "new_sha256": "9b0f7d4be27121b7893a3855a5c8a4f590e3e1f2f11925bd2073fc6fb1d1b8bf",
+      "old_git_blob": "6e7d5cb5cdb9924d5b5e64ade3f93a2358d91f1d",
+      "old_sha256": "cf237404ee914a8d14255638506ace31d626aa42ca77f76934427faac361738d",
+      "optimization_refusals": [
+        {
+          "exit_code": 1,
+          "flag": "-O"
+        },
+        {
+          "exit_code": 1,
+          "flag": "-OO"
+        }
+      ],
+      "original_ast_unchanged": true,
+      "path": "topics/padua-lebesgue-followups-20261103/code/t1_corner_certificate_controls.py"
+    },
+    {
+      "exact_guard_only_bytes": true,
+      "new_sha256": "f1a9c73fe3070c51b09800c321368210b8efb79bd0699a575f2d7c51373a18c0",
+      "old_git_blob": "c3f42881537b47e7e11f3e38ca25fb206a445e47",
+      "old_sha256": "291ce1a3683cba42f0811c2d378840b5bc3ff6bdd034805d2504cf9d010d6948",
+      "optimization_refusals": [
+        {
+          "exit_code": 1,
+          "flag": "-O"
+        },
+        {
+          "exit_code": 1,
+          "flag": "-OO"
+        }
+      ],
+      "original_ast_unchanged": true,
+      "path": "topics/padua-lebesgue-followups-20261103/code/t1_corner_crossvalidate.py"
+    }
+  ],
+  "control_sha256": "3db6aa212f830e84d7d554aa4301c10d0e94357c3e6bb05f9e9708ddd6224e90",
+  "count_certified": false,
+  "development_delta_sha256": "5fd46ae99b2caf2c68397ebf54a6aa48644909f90894cb0348439cd62538f55f",
+  "scope": "guard-only source delta and actual pre-import optimized-mode refusals; no mathematical replay"
+}

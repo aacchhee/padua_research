@@ -1,0 +1,104 @@
+== Step 1: density identity w = rho*d_m (two independent solves) ==
+m=  2 nodes=    6 sum w=4.000000000000 |wLeg-rho d|=4.44e-16 |wCheb-rho d|=4.63e-16 |d-d(t-form)|=8.88e-16 min w=+0.000e+00
+m=  3 nodes=   10 sum w=4.000000000000 |wLeg-rho d|=3.33e-16 |wCheb-rho d|=3.05e-16 |d-d(t-form)|=1.78e-15 min w=-5.556e-02
+m=  4 nodes=   15 sum w=4.000000000000 |wLeg-rho d|=6.66e-16 |wCheb-rho d|=4.44e-16 |d-d(t-form)|=8.88e-16 min w=-8.889e-03
+m=  5 nodes=   21 sum w=4.000000000000 |wLeg-rho d|=4.44e-16 |wCheb-rho d|=5.27e-16 |d-d(t-form)|=1.78e-15 min w=-1.037e-02
+m=  6 nodes=   28 sum w=4.000000000000 |wLeg-rho d|=4.16e-16 |wCheb-rho d|=6.77e-16 |d-d(t-form)|=1.78e-15 min w=-3.023e-03
+m=  7 nodes=   36 sum w=4.000000000000 |wLeg-rho d|=5.55e-16 |wCheb-rho d|=6.80e-16 |d-d(t-form)|=3.55e-15 min w=-3.288e-03
+m=  8 nodes=   45 sum w=4.000000000000 |wLeg-rho d|=1.45e-15 |wCheb-rho d|=1.75e-15 |d-d(t-form)|=2.66e-15 min w=-1.270e-03
+m=  9 nodes=   55 sum w=4.000000000000 |wLeg-rho d|=1.29e-15 |wCheb-rho d|=7.20e-16 |d-d(t-form)|=3.11e-15 min w=-1.369e-03
+m= 10 nodes=   66 sum w=4.000000000000 |wLeg-rho d|=1.30e-15 |wCheb-rho d|=7.87e-16 |d-d(t-form)|=4.00e-15 min w=-6.241e-04
+m= 11 nodes=   78 sum w=4.000000000000 |wLeg-rho d|=6.33e-16 |wCheb-rho d|=4.14e-16 |d-d(t-form)|=5.33e-15 min w=-6.731e-04
+m= 12 nodes=   91 sum w=4.000000000000 |wLeg-rho d|=6.96e-16 |wCheb-rho d|=5.37e-16 |d-d(t-form)|=4.00e-15 min w=-3.428e-04
+m= 15 nodes=  136 sum w=4.000000000000 |wLeg-rho d|=6.11e-16 |wCheb-rho d|=1.05e-15 |d-d(t-form)|=5.33e-15 min w=-2.215e-04
+m= 20 nodes=  231 sum w=4.000000000000 |wLeg-rho d|=1.26e-15 |wCheb-rho d|=5.76e-16 |d-d(t-form)|=1.24e-14 min w=-5.980e-05
+m= 25 nodes=  351 sum w=4.000000000000 |wLeg-rho d|=1.56e-15 |wCheb-rho d|=3.81e-16 |d-d(t-form)|=1.42e-14 min w=-3.441e-05
+m= 30 nodes=  496 sum w=4.000000000000 |wLeg-rho d|=5.42e-15 |wCheb-rho d|=2.23e-15 |d-d(t-form)|=1.42e-14 min w=-1.420e-05
+m= 35 nodes=  666 sum w=4.000000000000 |wLeg-rho d|=5.08e-15 |wCheb-rho d|=6.26e-16 |d-d(t-form)|=1.78e-14 min w=-9.922e-06
+m= 40 nodes=  861 sum w=4.000000000000 |wLeg-rho d|=3.59e-15 |wCheb-rho d|=8.29e-16 |d-d(t-form)|=2.13e-14 min w=-5.021e-06
+m= 45 nodes= 1081 sum w=4.000000000000 |wLeg-rho d|=2.46e-15 |wCheb-rho d|=9.26e-16 |d-d(t-form)|=2.31e-14 min w=-3.892e-06
+== Step 1b: m*||d_m - g x g||_inf on nodes and dense angle grid; bound 68/3=22.6667 ==
+m=   2 m*sup_grid= 10.6667 m*max_nodes=  8.0000 m*(tail+exc exact)= 16.0000 68/3=22.6667
+m=   3 m*sup_grid= 12.0000 m*max_nodes= 12.0000 m*(tail+exc exact)= 20.0000 68/3=22.6667
+m=   4 m*sup_grid=  7.1407 m*max_nodes=  6.4839 m*(tail+exc exact)= 16.3556 68/3=22.6667
+m=   5 m*sup_grid=  7.5926 m*max_nodes=  7.5556 m*(tail+exc exact)= 19.1111 68/3=22.6667
+m=   6 m*sup_grid=  7.6190 m*max_nodes=  6.6375 m*(tail+exc exact)= 16.6095 68/3=22.6667
+m=   7 m*sup_grid=  8.0889 m*max_nodes=  8.0889 m*(tail+exc exact)= 18.5778 68/3=22.6667
+m=   8 m*sup_grid=  6.9077 m*max_nodes=  6.4020 m*(tail+exc exact)= 16.7010 68/3=22.6667
+m=   9 m*sup_grid=  7.1997 m*max_nodes=  7.1898 m*(tail+exc exact)= 18.2171 68/3=22.6667
+m=  10 m*sup_grid=  7.0834 m*max_nodes=  6.4809 m*(tail+exc exact)= 16.7265 68/3=22.6667
+m=  11 m*sup_grid=  7.3473 m*max_nodes=  7.3473 m*(tail+exc exact)= 17.9547 68/3=22.6667
+m=  12 m*sup_grid=  6.7675 m*max_nodes=  6.3767 m*(tail+exc exact)= 16.7239 68/3=22.6667
+m=  20 m*sup_grid=  6.6129 m*max_nodes=  6.3490 m*(tail+exc exact)= 16.6437 68/3=22.6667
+m=  40 m*sup_grid=  6.4647 m*max_nodes=  6.3207 m*(tail+exc exact)= 16.4686 68/3=22.6667
+m=  64 m*sup_grid=  6.4007 m*max_nodes=  6.3078 m*(tail+exc exact)= 16.3551 68/3=22.6667
+m= 128 m*sup_grid=  6.3436 m*max_nodes=  6.2960 m*(tail+exc exact)= 16.2229 68/3=22.6667
+m= 256 m*sup_grid=  6.3139 m*max_nodes=  6.2897 m*(tail+exc exact)= 16.1338 68/3=22.6667
+m= 400 m*sup_grid=  6.3030 m*max_nodes=  6.2874 m*(tail+exc exact)= 16.0948 68/3=22.6667
+m= 401 m*sup_grid=  6.3087 m*max_nodes=  6.3087 m*(tail+exc exact)= 16.1250 68/3=22.6667
+worst m*sup over tested m: 12.0
+== Step 2: 1D lambda_max(int q^2 dnu / int q^2 dx), deg<=m-1, vs kappa*m ==
+m=   2 lam1D=    0.7500 kappa*m=    1.6366 ratio=0.4583  sup|q|^2/||q||^2 <= m^2/2 check: 2.0 vs 2.0
+m=   3 lam1D=    1.0120 kappa*m=    2.4549 ratio=0.4122  sup|q|^2/||q||^2 <= m^2/2 check: 4.5 vs 4.5
+m=   4 lam1D=    1.2788 kappa*m=    3.2732 ratio=0.3907  sup|q|^2/||q||^2 <= m^2/2 check: 8.0 vs 8.0
+m=   5 lam1D=    1.5480 kappa*m=    4.0915 ratio=0.3783  sup|q|^2/||q||^2 <= m^2/2 check: 12.5 vs 12.5
+m=   6 lam1D=    1.8188 kappa*m=    4.9099 ratio=0.3704  sup|q|^2/||q||^2 <= m^2/2 check: 18.0 vs 18.0
+m=   8 lam1D=    2.3628 kappa*m=    6.5465 ratio=0.3609  sup|q|^2/||q||^2 <= m^2/2 check: 32.0 vs 32.0
+m=  10 lam1D=    2.9088 kappa*m=    8.1831 ratio=0.3555  sup|q|^2/||q||^2 <= m^2/2 check: 50.0 vs 50.0
+m=  16 lam1D=    4.5518 kappa*m=   13.0930 ratio=0.3477  sup|q|^2/||q||^2 <= m^2/2 check: 128.0 vs 128.0
+m=  32 lam1D=    8.9442 kappa*m=   26.1859 ratio=0.3416  sup|q|^2/||q||^2 <= m^2/2 check: 512.0 vs 512.0
+m=  64 lam1D=   17.7382 kappa*m=   52.3718 ratio=0.3387  sup|q|^2/||q||^2 <= m^2/2 check: 2048.0 vs 2048.0
+m= 128 lam1D=   35.3316 kappa*m=  104.7437 ratio=0.3373  sup|q|^2/||q||^2 <= m^2/2 check: 8192.0 vs 8192.0
+m= 256 lam1D=   70.5218 kappa*m=  209.4873 ratio=0.3366  sup|q|^2/||q||^2 <= m^2/2 check: 32768.0 vs 32768.0
+m= 512 lam1D=  140.9038 kappa*m=  418.9747 ratio=0.3363  sup|q|^2/||q||^2 <= m^2/2 check: 131072.0 vs 131072.0
+== Step 2b: discrete exactness sum rho p^2 = int p^2 d(nu x nu) on Pi_{m-1}; 2D lambda_max vs (kappa m)^2 ==
+m=  2 cheb-exactness err=1.2e-16 disc-vs-cont Legendre Gram err=2.8e-16 sqrt(lam)=  0.6124 kappa*m=  1.6366
+m=  3 cheb-exactness err=1.4e-16 disc-vs-cont Legendre Gram err=3.9e-16 sqrt(lam)=  0.7841 kappa*m=  2.4549
+m=  4 cheb-exactness err=1.1e-16 disc-vs-cont Legendre Gram err=3.9e-16 sqrt(lam)=  0.9344 kappa*m=  3.2732
+m=  5 cheb-exactness err=2.2e-16 disc-vs-cont Legendre Gram err=3.3e-16 sqrt(lam)=  1.1109 kappa*m=  4.0915
+m=  6 cheb-exactness err=4.4e-16 disc-vs-cont Legendre Gram err=4.4e-16 sqrt(lam)=  1.2770 kappa*m=  4.9099
+m=  7 cheb-exactness err=3.3e-16 disc-vs-cont Legendre Gram err=5.6e-16 sqrt(lam)=  1.4544 kappa*m=  5.7282
+m=  8 cheb-exactness err=3.1e-16 disc-vs-cont Legendre Gram err=5.6e-16 sqrt(lam)=  1.6260 kappa*m=  6.5465
+m=  9 cheb-exactness err=4.4e-16 disc-vs-cont Legendre Gram err=5.6e-16 sqrt(lam)=  1.8036 kappa*m=  7.3648
+m= 10 cheb-exactness err=3.3e-16 disc-vs-cont Legendre Gram err=1.0e-15 sqrt(lam)=  1.9776 kappa*m=  8.1831
+m= 15 cheb-exactness err=1.1e-15 disc-vs-cont Legendre Gram err=2.8e-15 sqrt(lam)=  2.8624 kappa*m= 12.2746
+m= 16 cheb-exactness err=2.7e-15 disc-vs-cont Legendre Gram err=2.4e-15 sqrt(lam)=  3.0389 kappa*m= 13.0930
+m= 25 cheb-exactness err=1.8e-15 disc-vs-cont Legendre Gram err=5.0e-15 sqrt(lam)=  4.6372 kappa*m= 20.4577
+m= 32 cheb-exactness err=2.3e-15 disc-vs-cont Legendre Gram err=6.4e-15 sqrt(lam)=  5.8814 kappa*m= 26.1859
+m= 40 cheb-exactness err=2.0e-15 disc-vs-cont Legendre Gram err=8.4e-15 sqrt(lam)=  7.3044 kappa*m= 32.7324
+m= 50 cheb-exactness err=3.8e-15 disc-vs-cont Legendre Gram err=1.5e-14 sqrt(lam)=  9.0836 kappa*m= 40.9155
+m= 64 cheb-exactness err=3.1e-15 disc-vs-cont Legendre Gram err=3.6e-14 sqrt(lam)= 11.5752 kappa*m= 52.3718
+== Step 3a: CC weights: exactness, positivity, floor W >= (pi-4/3) sin/N ==
+min over N=2..1200 interior of W*N/(a sin) = 1.474715 at (N,j)=(2, 1) (>=1 required)
+== Step 3b: PD-T022 lambda_max of C_N Gram on deg<=N-1 vs 1+(1-2/N)^2 <2 ==
+N=   2 lam+=1.000000 bound=1.000000
+N=   3 lam+=1.000000 bound=1.111111
+N=   4 lam+=1.000000 bound=1.250000
+N=   5 lam+=1.005589 bound=1.360000
+N=   6 lam+=1.009126 bound=1.444444
+N=   7 lam+=1.003127 bound=1.510204
+N=   8 lam+=1.005469 bound=1.562500
+N=  10 lam+=1.005591 bound=1.640000
+N=  16 lam+=1.004516 bound=1.765625
+N=  31 lam+=1.004425 bound=1.875130
+N=  32 lam+=1.004491 bound=1.878906
+N=  64 lam+=1.004458 bound=1.938477
+N=  65 lam+=1.004438 bound=1.939408
+N= 128 lam+=1.004443 bound=1.968994
+N= 200 lam+=1.004438 bound=1.980100
+== Step 3c: main density mass (12) and main Gram (11) ==
+m=  2 sum v=2.849109 formula=2.849109 (<=4) lam_main=1.2465 (<= 8pi^2/a^2=24.1473) tensorCC lam=1.0000 (<=4)
+m=  3 sum v=3.439179 formula=3.439179 (<=4) lam_main=1.3221 (<= 8pi^2/a^2=24.1473) tensorCC lam=1.0000 (<=4)
+m=  4 sum v=3.666649 formula=3.666649 (<=4) lam_main=1.4020 (<= 8pi^2/a^2=24.1473) tensorCC lam=1.0000 (<=4)
+m=  5 sum v=3.778766 formula=3.778766 (<=4) lam_main=1.4615 (<= 8pi^2/a^2=24.1473) tensorCC lam=1.0056 (<=4)
+m=  6 sum v=3.842374 formula=3.842374 (<=4) lam_main=1.5216 (<= 8pi^2/a^2=24.1473) tensorCC lam=1.0091 (<=4)
+m=  7 sum v=3.881965 formula=3.881965 (<=4) lam_main=1.5650 (<= 8pi^2/a^2=24.1473) tensorCC lam=1.0055 (<=4)
+m=  8 sum v=3.908289 formula=3.908289 (<=4) lam_main=1.6006 (<= 8pi^2/a^2=24.1473) tensorCC lam=1.0055 (<=4)
+m= 10 sum v=3.940045 formula=3.940045 (<=4) lam_main=1.6497 (<= 8pi^2/a^2=24.1473) tensorCC lam=1.0056 (<=4)
+m= 16 sum v=3.975787 formula=3.975787 (<=4) lam_main=1.7194 (<= 8pi^2/a^2=24.1473) tensorCC lam=1.0045 (<=4)
+m= 25 sum v=3.989873 formula=3.989873 (<=4) lam_main=1.7621 (<= 8pi^2/a^2=24.1473) tensorCC lam=1.0045 (<=4)
+m= 32 sum v=3.993768 formula=3.993768 (<=4) lam_main=1.7805 (<= 8pi^2/a^2=24.1473) tensorCC lam=1.0045 (<=4)
+m= 40 sum v=3.995987 formula=3.995987 (<=4) lam_main=1.7949 (<= 8pi^2/a^2=24.1473) tensorCC lam=1.0045 (<=4)
+m= 50 sum v=3.997419 formula=3.997419 (<=4) lam_main=1.8077 (<= 8pi^2/a^2=24.1473) tensorCC lam=1.0045 (<=4)
+m= 64 sum v=3.998418 formula=3.998418 (<=4) lam_main=1.8202 (<= 8pi^2/a^2=24.1473) tensorCC lam=1.0045 (<=4)
+elapsed 241.40917301177979

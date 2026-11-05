@@ -1,5 +1,13 @@
 # PD-T116 — signed Padua MZ at every fixed degree ratio
 
+## Current resolution — 2026-11-05
+
+Registry Status: **OPEN**, preserving AC's display for the historical positive formulation. Disposition: **REJECTED: refuted** for the positive universal assertion, by the separate **PROVED** [PD-N107 sharp-threshold record](../../../topics/padua-mz-2d-frontier-20261105/theory/f3-fixed-ratio-threshold.md). Every fixed theta>1/2 fails signed strong MZ along even m; the two spectral extremes diverge in opposite directions. Its alternative counterexample question is resolved. Half-degree exactness gives eta=0 for theta<=1/2. The [PD-T296 positive-reference smooth diamond theorem](../../../topics/padua-mz-2d-frontier-20261105/theory/f3-smooth-diamond-reference.md) is a separate supporting statement, never a signed transfer.
+
+The original statement and history below remain verbatim; their OPEN/deferred wording and unresolved-counterexample table are historical and superseded here. The historical positive assertion is not usable as a dependency. Split into: PD-N107. No effective onset, odd-m classification or sharp growth law is claimed; the explicit carriers prove existence only and do not explain or certify m1600. [Claude audit-01](../../../topics/padua-mz-2d-frontier-20261105/audit-01.md) accepted candidate `dee638408505c9977f3febd98fdd42c9bc512c92`; [response-01](../../../topics/padua-mz-2d-frontier-20261105/response-01.md) records the permitted editorial dispositions.
+
+## Preserved original statement and history
+
 Provisional alias: `PD-T?mz2d-codex-41`. Final ID assigned at PR preparation, 2026-11-01; required Claude audit PENDING.
 
 ID kind: PD-T. Aliases: D4 target; eta(theta) below one for signed Lebesgue

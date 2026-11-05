@@ -1,0 +1,31 @@
+{
+  "c1_ball": "[0.96252282676071300779813206836317368376724153642329 +/- 3.43e-51]",
+  "corner_c_ball": "[1.8461603104239260797598387379478119440185 +/- 5.88e-41]",
+  "corner_c_certified_decimal_bracket": [
+    "1.846160310423926079759838737947",
+    "1.846160310423926079759838737948"
+  ],
+  "kappa_ball": "[0.9197101183884925350995182257902367461092 +/- 3.39e-41]",
+  "kappa_certified_decimal_bracket": [
+    "0.919710118388492535099518225790",
+    "0.919710118388492535099518225791"
+  ],
+  "method": "Arb zeta coefficient arithmetic plus analytic rational tail",
+  "order_inclusive": 64,
+  "precision_bits": 320,
+  "python_flint_version": "0.9.0",
+  "python_version": "3.13.18",
+  "rational_bracket_checks": true,
+  "script_sha256": "b48d488e2229e7c60293673ffeeec0214fed344858f7ddaebe9975c0dd7347e5",
+  "status": "OUTWARD_ENCLOSURE_DEVELOPER_RUN",
+  "tail_bound_ball": "[2.9684200778340593635574154980359739338855190827578e-41 +/- 3.24e-92]",
+  "tail_bound_exact": {
+    "denominator": 269503634601383263062992689085960423473152,
+    "numerator": 8
+  },
+  "theory_sha256": {
+    "t4-01-corner-defect-limit.md": "ea514179f51e2208ef8b5566e5557625afd7ec518fc928f6c6592eb07f51d706",
+    "t4-02-one-dimensional-remainder.md": "71ce5102541c5c7cdc2b4993195087652f1c76829b6b88e5a039464af83284b3",
+    "t4-03-corner-constant.md": "b7ffd40e6544d0c22ec9c1e35a35ad895b6acb1fa58e09f01347ce4bc1188398"
+  }
+}

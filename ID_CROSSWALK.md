@@ -1057,11 +1057,11 @@ Original-to-split relations: PD-T140 (formerly carrying the finite inequalities)
 | PD-T?proof-attempts-2-codex-52 | PD-T177 | codex/padua-proof-attempts-2-20261101 | [record](topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-52-degree-seven-global-argmax.md) | [Claude audit-01](topics/padua-proof-attempts-2-20261101/audit-01.md); [response-01](topics/padua-proof-attempts-2-20261101/response-01.md); PROVED |
 | PD-T?proof-attempts-2-codex-53 | PD-T178 | codex/padua-proof-attempts-2-20261101 | [record](topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-53-uniform-gradient-leaf.md) | [Claude audit-01](topics/padua-proof-attempts-2-20261101/audit-01.md); [response-01](topics/padua-proof-attempts-2-20261101/response-01.md); PROVED |
 | PD-T?proof-attempts-2-codex-60 | PD-T179 | codex/padua-proof-attempts-2-20261101 | [record](topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-60-degree-eight-principal-field.md) | [Claude audit-01](topics/padua-proof-attempts-2-20261101/audit-01.md); [response-01](topics/padua-proof-attempts-2-20261101/response-01.md); PROVED |
-| PD-T?proof-attempts-2-codex-61 | PD-T180 | codex/padua-proof-attempts-2-20261101 | [record](topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-61-degree-eight-maxima-count.md) | [Claude audit-01](topics/padua-proof-attempts-2-20261101/audit-01.md); [response-01](topics/padua-proof-attempts-2-20261101/response-01.md); OPEN |
+| PD-T?proof-attempts-2-codex-61 | PD-T180 | codex/padua-proof-attempts-2-20261101 | [record](topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-61-degree-eight-maxima-count.md) | [Claude audit-01](topics/padua-proof-attempts-2-20261101/audit-01.md); [response-01](topics/padua-proof-attempts-2-20261101/response-01.md); OPEN Dated2026-11-03 same-target completion PROVED:62=44interior+16open-edge+2corner; historical OPEN/deadline text retained; [completion](topics/padua-lebesgue-followups-20261103/theory/t1-closed-count.md), [actual gates/replays](topics/padua-lebesgue-followups-20261103/independent-checks-t1.md); [Claude audit-01](topics/padua-lebesgue-followups-20261103/audit-01.md); [response-01](topics/padua-lebesgue-followups-20261103/response-01.md) |
 | PD-T?proof-attempts-2-codex-62 | PD-T181 | codex/padua-proof-attempts-2-20261101 | [record](topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-62-degree-eight-global-argmax.md) | [Claude audit-01](topics/padua-proof-attempts-2-20261101/audit-01.md); [response-01](topics/padua-proof-attempts-2-20261101/response-01.md); OPEN |
 | PD-T?proof-attempts-2-codex-63 | PD-T182 | codex/padua-proof-attempts-2-20261101 | [record](topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-63-degree-eight-reflection.md) | [Claude audit-01](topics/padua-proof-attempts-2-20261101/audit-01.md); [response-01](topics/padua-proof-attempts-2-20261101/response-01.md); PROVED |
 | PD-T?proof-attempts-2-codex-64 | PD-T183 | codex/padua-proof-attempts-2-20261101 | [record](topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-64-degree-eight-interior-lower-bound.md) | [Claude audit-01](topics/padua-proof-attempts-2-20261101/audit-01.md); [response-01](topics/padua-proof-attempts-2-20261101/response-01.md); PROVED |
-| PD-T?proof-attempts-2-codex-65 | PD-T184 | codex/padua-proof-attempts-2-20261101 | [record](topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-65-degree-eight-exact-interior-count.md) | [Claude audit-01](topics/padua-proof-attempts-2-20261101/audit-01.md); [response-01](topics/padua-proof-attempts-2-20261101/response-01.md); OPEN |
+| PD-T?proof-attempts-2-codex-65 | PD-T184 | codex/padua-proof-attempts-2-20261101 | [record](topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-65-degree-eight-exact-interior-count.md) | [Claude audit-01](topics/padua-proof-attempts-2-20261101/audit-01.md); [response-01](topics/padua-proof-attempts-2-20261101/response-01.md); OPEN Dated 2026-11-05 same-target completion PROVED: exactly44 strict interior maxima; original OPEN/deadline history retained. [Completion](topics/padua-lebesgue-followups-20261103/theory/t1-interior-count.md); [actual replays](topics/padua-lebesgue-followups-20261103/independent-checks-t1.md); [Claude audit-01](topics/padua-lebesgue-followups-20261103/audit-01.md); [response-01](topics/padua-lebesgue-followups-20261103/response-01.md) |
 | PD-T?proof-attempts-2-codex-70 | PD-T185 | codex/padua-proof-attempts-2-20261101 | [record](topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-70-all-edge-kernel-formula.md) | [Claude audit-01](topics/padua-proof-attempts-2-20261101/audit-01.md); [response-01](topics/padua-proof-attempts-2-20261101/response-01.md); PROVED |
 | PD-T?proof-attempts-2-codex-71 | PD-T186 | codex/padua-proof-attempts-2-20261101 | [record](topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-71-complementary-edge-grid-gap.md) | [Claude audit-01](topics/padua-proof-attempts-2-20261101/audit-01.md); [response-01](topics/padua-proof-attempts-2-20261101/response-01.md); PROVED |
 | PD-T?proof-attempts-2-codex-72 | PD-T187 | codex/padua-proof-attempts-2-20261101 | [record](topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-72-central-grid-positive-gap.md) | [Claude audit-01](topics/padua-proof-attempts-2-20261101/audit-01.md); [response-01](topics/padua-proof-attempts-2-20261101/response-01.md); PROVED |
@@ -1090,7 +1090,7 @@ Original-to-split relations: PD-T140 (formerly carrying the finite inequalities)
 | IDEA?proof-attempts-2-codex-n7-field | IDEA-296 | codex/padua-proof-attempts-2-20261101 | [candidate](topics/padua-proof-attempts-2-20261101/preparation/ideas-registration.md) | retained; original attempt alias retained |
 | IDEA?proof-attempts-2-codex-n7-roots | IDEA-297 | codex/padua-proof-attempts-2-20261101 | [candidate](topics/padua-proof-attempts-2-20261101/preparation/ideas-registration.md) | retained; original attempt alias retained |
 | IDEA?proof-attempts-2-codex-n8-field | IDEA-298 | codex/padua-proof-attempts-2-20261101 | [candidate](topics/padua-proof-attempts-2-20261101/preparation/ideas-registration.md) | retained; original attempt alias retained |
-| IDEA?proof-attempts-2-codex-n8-cover | IDEA-299 | codex/padua-proof-attempts-2-20261101 | [candidate](topics/padua-proof-attempts-2-20261101/preparation/ideas-registration.md) | deferred; original attempt alias retained |
+| IDEA?proof-attempts-2-codex-n8-cover | IDEA-299 | codex/padua-proof-attempts-2-20261101 | [candidate](topics/padua-proof-attempts-2-20261101/preparation/ideas-registration.md) | deferred; original attempt alias retained Dated2026-11-03 retained/completed n8 count continuation; earlier deferred history preserved; same existing IDEA-299, PD-T180/184 counts completed separately from already accepted PD-T181; [record](topics/padua-lebesgue-followups-20261103/theory/t1-closed-count.md); [Claude audit-01](topics/padua-lebesgue-followups-20261103/audit-01.md); [response-01](topics/padua-lebesgue-followups-20261103/response-01.md) |
 | IDEA?proof-attempts-2-codex-n8-gradient | IDEA-300 | codex/padua-proof-attempts-2-20261101 | [candidate](topics/padua-proof-attempts-2-20261101/preparation/ideas-registration.md) | retained; original attempt alias retained |
 | IDEA?proof-attempts-2-codex-n8-reflect | IDEA-301 | codex/padua-proof-attempts-2-20261101 | [candidate](topics/padua-proof-attempts-2-20261101/preparation/ideas-registration.md) | retained; original attempt alias retained |
 | IDEA?proof-attempts-2-codex-n8-witness | IDEA-302 | codex/padua-proof-attempts-2-20261101 | [candidate](topics/padua-proof-attempts-2-20261101/preparation/ideas-registration.md) | retained; original attempt alias retained |
@@ -1185,3 +1185,148 @@ Historical composite `IDEA?argmax-alln-codex-fallback-02` splits into **IDEA-322
 Historical composite `IDEA?argmax-alln-codex-fallback-03` splits into **IDEA-324 / IDEA-325**. Whole-cell E-C versus common-phase E-P; original combined record retained. This one-to-many provenance is not an atomic alias assigned twice.
 
 The pure-quadratic subform IDEA-333 splits from retained primitive candidate IDEA-327; raw-profile subforms IDEA-334/335 split from the measured failed literal architecture IDEA-317. Exact primitive obstruction PD-N079 supports IDEA-316/333 without a duplicate negative ID. All original candidate text and registration timing are preserved.
+
+## Effective Padua argmax — PR19 final assignments, 2026-11-05
+
+Owner:`codex/padua-argmax-effective-20261103`; rules/input `37ff693c03a1c0c85b865d27b15403b03e5b3fec`. [Shared ledger](topics/padua-batch-20261031/ALLOCATIONS.md), [topic ledger](topics/padua-argmax-effective-20261103/ALLOCATIONS.md), [fresh union scan](topics/padua-argmax-effective-20261103/allocation-scan.json), [machine map](topics/padua-argmax-effective-20261103/final-id-map.json). Reservation first pushed `ed8db2fc364d0ba34c3c06815460b3b2971787b5`, [PR19](https://github.com/aacchhee/padua_research/pull/19); all unused IDs remain permanent gaps.
+
+| Provisional alias | Final ID | Input / ownership | Canonical record | Disposition / scope |
+|---|---|---|---|---|
+| PD-T?argmax-effective-codex-01 | PD-T246 | codex/padua-argmax-effective-20261103; PR19 | [PD-T246](topics/padua-argmax-effective-20261103/theory/argmax-effective-codex-01-finite-global-argmax.md) | PROVED; Exact global maximum and exact two-corner equality set for every 17<=n<=32; together with inherited results, finite2–32 |
+| PD-T?argmax-effective-codex-02 | PD-T247 | codex/padua-argmax-effective-20261103; PR19 | [PD-T247](topics/padua-argmax-effective-20261103/theory/argmax-effective-codex-02-gate-measurements.md) | MEASURED; G2:17 sampled degrees17–1000,714 local and816 radial evaluations; G3:11 phase grids; G4:3458 centers/25365 offsets; finite samples only |
+| PD-T?argmax-effective-codex-03 | PD-T248 | codex/padua-argmax-effective-20261103; PR19 | [PD-T248](topics/padua-argmax-effective-20261103/theory/argmax-effective-codex-03-comparison-screen.md) | MEASURED; G6:1536 E-C comparisons,n13–60; I-B0:182 rectangles at n13,17,24,32,48,60; no threshold reversal found |
+| PD-T?argmax-effective-codex-03-spots | PD-T249 | codex/padua-argmax-effective-20261103; PR19 | [PD-T249](topics/padua-argmax-effective-20261103/theory/argmax-effective-codex-03-exact-edge-spots.md) | PROVED; Three whole-cell E-C comparisons at n13,17,24 with strict rational margins1/20,1/40,1/100; seven exact leaves |
+| PD-T?argmax-effective-codex-06a | PD-T250 | codex/padua-argmax-effective-20261103; PR19 | [PD-T250](topics/padua-argmax-effective-20261103/theory/argmax-effective-codex-06-corner-active-spectrum.md) | PROVED; Exact inward corner-active spectrum for all n>=2; positive a>0 coefficients and row/column sums; row symmetry and diagonal/lower bounds |
+| PD-T?argmax-effective-codex-06b | PD-T251 | codex/padua-argmax-effective-20261103; PR19 | [PD-T251](topics/padua-argmax-effective-20261103/theory/argmax-effective-codex-06-uniform-slopes-local-radius.md) | PROVED; For all n>=2,A_n,B_n<=-n^2 Lambda_c/8; strict decrease for0<h_x+h_y<=1/(2[n(n+1)]^3), physical radius order n^-6 |
+| PD-T?argmax-effective-claude-01 | PD-T252 | codex/padua-argmax-effective-20261103; PR19 | [PD-T252](topics/padua-argmax-effective-20261103/theory/argmax-effective-claude-01-pilot-measurements.md) | MEASURED; Pilot G2 at n17,24,48,96,192; G3 at n17,48,96; Python producer timings17,20,24,32; certifies no degree |
+| PD-N?argmax-effective-codex-06a | PD-N084 | codex/padua-argmax-effective-20261103; PR19 | [PD-N084](topics/padua-argmax-effective-20261103/theory/argmax-effective-codex-06-negative-spectrum.md) | PROVED; Complete transformed coefficient positivity fails: n3,C_01=(1-2sqrt(2))/6<0 |
+| PD-N?argmax-effective-codex-06b | PD-N085 | codex/padua-argmax-effective-20261103; PR19 | [PD-N085](topics/padua-argmax-effective-20261103/theory/argmax-effective-codex-06-affine-sign-obstruction.md) | PROVED; For n>=4,index(3,1),q_n/n^3 tends to -5/(2pi^2); every fixed kappa/n^2 affine sign box eventually fails |
+| PD-N?argmax-effective-codex-04 | PD-N086 | codex/padua-argmax-effective-20261103; PR19 | [PD-N086](topics/padua-argmax-effective-20261103/theory/argmax-effective-codex-04-coarse-cell-sign-obstruction.md) | PROVED; At n4,L00(1/3,0)>0 and L00(3/8,0)<0 inside D(2,3); individual fixed-sign nonnegative-factor representation impossible there |
+| IDEA?argmax-effective-codex-01 | IDEA-336 | codex/padua-argmax-effective-20261103; PR19 | [IDEA-336](topics/padua-argmax-effective-20261103/ideas/r1-r2-r5.md#idea-336) | deferred / OPEN; Quantitative variant of IDEA-326/331; missing explicit E,d,f and uniform zones; resume with a feasible certified error budget |
+| IDEA?argmax-effective-codex-02 | IDEA-337 | codex/padua-argmax-effective-20261103; PR19 | [IDEA-337](topics/padua-argmax-effective-20261103/ideas/r1-r2-r5.md#idea-337) | deferred / OPEN; Variant of IDEA-317/326/327; no uniform summable tail lemma or interval run; resume with a precise tail below the defect budget |
+| IDEA?argmax-effective-codex-05 | IDEA-338 | codex/padua-argmax-effective-20261103; PR19 | [IDEA-338](topics/padua-argmax-effective-20261103/ideas/r1-r2-r5.md#idea-338) | equivalent; Same coefficient l1 predicate as IDEA-320/PD-T210; consolidated there; structured alternatives deferred until specified |
+| IDEA?argmax-effective-codex-03-ec | IDEA-339 | codex/padua-argmax-effective-20261103; PR19 | [IDEA-339](topics/padua-argmax-effective-20261103/ideas/comparison-r3.md#idea-339) | retained / OPEN; Continuation of IDEA-324;1536 comparisons show no reversal; exact three spots do not settle all-n E-C |
+| IDEA?argmax-effective-codex-03-strip | IDEA-340 | codex/padua-argmax-effective-20261103; PR19 | [IDEA-340](topics/padua-argmax-effective-20261103/ideas/comparison-r3.md#idea-340) | retained / OPEN; Matched rectangle-to-edge variant;182 finite sampled rectangles only; needs rigorous rectangle comparison |
+| IDEA?argmax-effective-codex-04-envelope | IDEA-341 | codex/padua-argmax-effective-20261103; PR19 | [IDEA-341](topics/padua-argmax-effective-20261103/ideas/comparison-r4.md#idea-341) | deferred / OPEN; No specified admissible factor class/partition; resume after a concrete identity and separating test; no universal G7 impossibility |
+| IDEA?argmax-effective-codex-04-fixed-sign | IDEA-342 | codex/padua-argmax-effective-20261103; PR19 | [IDEA-342](topics/padua-argmax-effective-20261103/ideas/comparison-r4.md#idea-342) | REJECTED: refuted; Specified G7-F submechanism has exact opposite cardinal signs in D(2,3),n4; regrouping and finer cells survive |
+| IDEA?argmax-effective-native-producer | IDEA-343 | codex/padua-argmax-effective-20261103; PR19 | [IDEA-343](topics/padua-argmax-effective-20261103/ideas/finite-native.md#idea-343) | retained implementation variant; Same PD-T210 criterion; validated finite evidence belongs to PD-T246; no new mathematics or all-n threshold |
+| IDEA?argmax-effective-native-checker | IDEA-344 | codex/padua-argmax-effective-20261103; PR19 | [IDEA-344](topics/padua-argmax-effective-20261103/ideas/finite-native.md#idea-344) | retained verification machinery; Separate arithmetic implementation shares formulas/schema/rounding; completed per-certificate acceptance only; no blanket n<=100 acceptance |
+| IDEA?argmax-effective-r6-01 | IDEA-345 | codex/padua-argmax-effective-20261103; PR19 | [IDEA-345](topics/padua-argmax-effective-20261103/ideas/r6-spectrum.md#idea-345) | REJECTED: refuted; Exact n3 negative nonconstant mode kills complete positivity only; mixed row/column positivity retained |
+| IDEA?argmax-effective-r6-02 | IDEA-346 | codex/padua-argmax-effective-20261103; PR19 | [IDEA-346](topics/padua-argmax-effective-20261103/ideas/r6-spectrum.md#idea-346) | retained; Quantitative variant of IDEA-330/331; exact formulas and positive row/column groups retain negative a=0 modes |
+| IDEA?argmax-effective-r6-03 | IDEA-347 | codex/padua-argmax-effective-20261103; PR19 | [IDEA-347](topics/padua-argmax-effective-20261103/ideas/r6-slopes-affine.md#idea-347) | REJECTED: failed; Superquadratic negative gradient/value ratio blocks this fixed-scale affine step; aggregate/reflected control survives |
+| IDEA?argmax-effective-r6-04 | IDEA-348 | codex/padua-argmax-effective-20261103; PR19 | [IDEA-348](topics/padua-argmax-effective-20261103/ideas/r6-slopes-affine.md#idea-348) | retained theorem / fixed-phase target OPEN; Closes the recorded normalized slope premise; explicit physical n^-6 radius leaves the fixed phase zone and weighted energy OPEN |
+| LIT?argmax-effective-codex-01 | LIT-466 | codex/padua-argmax-effective-20261103; PR19 | [LIT-466](topics/padua-argmax-effective-20261103/literature-g8.md#lit-466) | LITERATURE; abstract and bibliography only; full proof unread |
+| LIT?argmax-effective-codex-02 | LIT-467 | codex/padua-argmax-effective-20261103; PR19 | [LIT-467](topics/padua-argmax-effective-20261103/literature-g8.md#lit-467) | LITERATURE; search-returned publisher abstract only; direct open timed out |
+| LIT?argmax-effective-codex-03 | LIT-468 | codex/padua-argmax-effective-20261103; PR19 | [LIT-468](topics/padua-argmax-effective-20261103/literature-g8.md#lit-468) | LITERATURE; PDF header/search text only; no complete-paper read |
+| LIT?argmax-effective-codex-04 | LIT-469 | codex/padua-argmax-effective-20261103; PR19 | [LIT-469](topics/padua-argmax-effective-20261103/literature-g8.md#lit-469) | LITERATURE; definitions/equations(1)–(12),Lemma1 reflected-pair proof,Theorem1/proof,printed pp1–5 |
+| LIT?argmax-effective-codex-05 | LIT-470 | codex/padua-argmax-effective-20261103; PR19 | [LIT-470](topics/padua-argmax-effective-20261103/literature-g8.md#lit-470) | LITERATURE; bibliographic/access record only; original full text unread; PDF URL returned404 |
+| Existing LIT379 — current primary rereading | LIT-379 | codex/padua-argmax-effective-20261103; PR19 | [LIT-379](topics/padua-argmax-effective-20261103/literature-g8.md#lit-379-rereading) | LITERATURE; Introduction; Lemmas3.4–3.7 statements; Lemma3.5 proof; equations(3.17)–(3.24),(3.27)–(3.32); existing-source reading addendum, not a new source ID |
+
+Original-to-split mapping: **PD-T099 → PD-T246**, exactly finite degrees17–32, extends the inherited2–16 coverage to2–32. Original global wording and OPEN status retained; PD-T229 remains eventual with non-effective N_* and the unresolved bridge now begins at33. **PD-T250 → PD-T251** is a supporting spectrum-to-slope dependency, not a parameter split or completion of PD-T099. PD-T248 measured comparisons and PD-T249 exact three spots retain separate claims. PD-N084 preserves the rejected complete-spectrum candidate while PD-T250 retains the mixed-spectrum variant. These dependencies do not make PD-T099 PARTIAL.
+
+Assigned:T246–252,N084–086,IDEA336–348,LIT466–470; existing-source rereading reusesLIT379. Permanent unused gaps:T253–265,N087–091,IDEA349–355,LIT471–473. No accepted ID renumbered or reservation reused.
+
+## Padua Lebesgue follow-ups — T2–T4 aliases and scoped splits
+
+Owner branch `codex/padua-lebesgue-followups-20261103`; scientific base `440d1079e42c3ef21c40d1cf8870f5b206410c6a`; rules/input `3f5196cf3639407c25b021fa30f70cc1d3ae113a`. [Permanent topic reservation](topics/padua-lebesgue-followups-20261103/ALLOCATIONS.md). Final assignments follow the [fresh union recheck](topics/padua-lebesgue-followups-20261103/preparation/reservation-recheck.md); unused reserved IDs remain permanent gaps. Claude mathematics accepted; minor findings answered: [Claude audit-01](topics/padua-lebesgue-followups-20261103/audit-01.md); [response-01](topics/padua-lebesgue-followups-20261103/response-01.md); T2/T3 timing qualification remains in the [gate](topics/padua-lebesgue-followups-20261103/gate-t2-t3.md).
+
+| Provisional alias | Final ID | Input / ownership | Canonical record | Disposition / scope |
+|---|---|---|---|---|
+| PD-T?lebesgue-followups-codex-t2-01 | PD-T266 | codex/padua-lebesgue-followups-20261103 | [record](topics/padua-lebesgue-followups-20261103/theory/t2-01-edge-centre-minima.md) | PROVED limiting-integral centre minima only |
+| PD-T?lebesgue-followups-codex-t2-02 | PD-T267 | codex/padua-lebesgue-followups-20261103 | [record](topics/padua-lebesgue-followups-20261103/theory/t2-02-common-endpoint-expansion.md) | PROVED endpoint expansion of limiting integrals |
+| PD-T?lebesgue-followups-codex-t3-01 | PD-T268 | codex/padua-lebesgue-followups-20261103 | [record](topics/padua-lebesgue-followups-20261103/theory/t3-01-general-position-series.md) | PROVED general-position series/tails |
+| PD-T?lebesgue-followups-codex-t4-01 | PD-T269 | codex/padua-lebesgue-followups-20261103 | [record](topics/padua-lebesgue-followups-20261103/theory/t4-01-corner-defect-limit.md) | PROVED parity-independent defect limit/rate/series |
+| PD-T?lebesgue-followups-codex-t4-02 | PD-T270 | codex/padua-lebesgue-followups-20261103 | [record](topics/padua-lebesgue-followups-20261103/theory/t4-02-one-dimensional-remainder.md) | PROVED one-dimensional all-n quadratic error |
+| PD-T?lebesgue-followups-codex-t4-03 | PD-T271 | codex/padua-lebesgue-followups-20261103 | [record](topics/padua-lebesgue-followups-20261103/theory/t4-03-corner-constant.md) | PROVED c-term and explicit vanishing error; full PD-T098 OPEN |
+| IDEA?lebesgue-followups-codex-t2-01 | IDEA-356 | codex/padua-lebesgue-followups-20261103 | [record](topics/padua-lebesgue-followups-20261103/gate-t2-t3.md) | retained variant; gate timing qualification applies |
+| IDEA?lebesgue-followups-codex-t3-01 | IDEA-357 | codex/padua-lebesgue-followups-20261103 | [record](topics/padua-lebesgue-followups-20261103/gate-t2-t3.md) | retained arbitrary-position variant; gate timing qualification applies |
+| IDEA?lebesgue-followups-codex-t4-01 | IDEA-358 | codex/padua-lebesgue-followups-20261103 | [record](topics/padua-lebesgue-followups-20261103/gate-t4.md) | retained constant-term variant; sharper target deferred |
+
+Original-to-split history: PD-T098's constant-term portion → PD-T271; its substantive supporting defect-limit and one-dimensional estimates → PD-T269/PD-T270. PD-T098 retains its exact original sharp expansion, including -1/N and O(log N/N^2), and remains OPEN. Excluded limiting-integral centre-minimality in PD-T211/212/230 → PD-T266, with separate endpoint obligation → PD-T267; their inherited finite-degree envelope statements are preserved. General-position evaluation extends PD-T188 → PD-T268 without replacing or weakening PD-T188. These links confer no finite-n ordering, effective threshold, global argmax result or all-degree bridge. T1 PD-T180/184 completion/splits are recorded below, reusing IDEA-299. Bounded registration of already audited claims introduces no new mechanism or priority claim; no fresh novelty gate is performed.
+
+### Padua Lebesgue follow-ups — T1 count completion, 2026-11-03
+
+Existing aliases retain exactly the same final IDs: PD-T?proof-attempts-2-codex-61 → PD-T180; PD-T?proof-attempts-2-codex-65 → PD-T184; IDEA?proof-attempts-2-codex-n8-cover → IDEA-299. No new final ID or second allocation. PD-T100's original measured n3–8 observations remain MEASURED, while separate degree-eight finite proofs now establish44interior (PD-T184) and62total=44interior+16open-edge+2corner (PD-T180). The original-to-split mapping is retained; this is completion of existing targets, not a renumbering or a retroactive upgrade of the search. Earlier OPEN/deadline entries remain historical and are superseded only at those exact count scopes. PD-T181 global equality stays its separate accepted PR17 theorem; PD-T183 remains its separate accepted lower bound. No PD-T099 bridge or all-degree assertion is changed. [Completion](topics/padua-lebesgue-followups-20261103/theory/t1-closed-count.md), [actual separate replays and final gates](topics/padua-lebesgue-followups-20261103/independent-checks-t1.md). [Claude audit-01](topics/padua-lebesgue-followups-20261103/audit-01.md); [response-01](topics/padua-lebesgue-followups-20261103/response-01.md).
+
+## Signed Padua MZ frontier — audited final registration, 2026-11-05
+
+Source: [audit-01](topics/padua-mz-2d-frontier-20261105/audit-01.md) and [response-01](topics/padua-mz-2d-frontier-20261105/response-01.md). [Topic reservation](topics/padua-mz-2d-frontier-20261105/ALLOCATIONS.md) is imported unchanged into the [shared ledger](topics/padua-batch-20261031/ALLOCATIONS.md). No existing ID is renumbered; original aliases and audited source hashes remain historical provenance.
+
+| Development alias | Final ID | Scope / durable home |
+|---|---|---|
+| PD-T?mz2d-frontier-codex-11 | PD-T294 | PROVED; [record](topics/padua-mz-2d-frontier-20261105/theory/f12-harmonic-boundary-escape.md) |
+| PD-T?mz2d-frontier-codex-12 | PD-T295 | PROVED; [record](topics/padua-mz-2d-frontier-20261105/theory/f12-local-weight-asymptotic.md) |
+| PD-T?mz2d-frontier-codex-f3-01 | PD-T296 | PROVED; [record](topics/padua-mz-2d-frontier-20261105/theory/f3-smooth-diamond-reference.md) |
+| PD-T?mz2d-frontier-codex-f4-01 | PD-T297 | PROVED; [record](topics/padua-mz-2d-frontier-20261105/theory/f4-uniform-density-bound.md) |
+| PD-T?mz2d-frontier-codex-90 | PD-T298 | PROVED; [record](topics/padua-mz-2d-frontier-20261105/theory/cert-finite-extension.md) |
+| PD-T?mz2d-frontier-codex-91 | PD-T299 | PROVED; [record](topics/padua-mz-2d-frontier-20261105/theory/cert-finite-extension-m80.md) |
+| PD-T?mz2d-frontier-codex-92 | PD-T300 | MEASURED; [record](topics/padua-mz-2d-frontier-20261105/theory/frontier-measurements.md) |
+| PD-N?mz2d-frontier-codex-10 | PD-N104 | PROVED; [record](topics/padua-mz-2d-frontier-20261105/theory/f12-1d-sign-discard-obstruction.md) |
+| PD-N?mz2d-frontier-codex-13 | PD-N105 | PROVED; [record](topics/padua-mz-2d-frontier-20261105/theory/f12-eventual-negative-carrier.md) |
+| PD-N?mz2d-frontier-codex-14 | PD-N106 | PROVED; [record](topics/padua-mz-2d-frontier-20261105/theory/f12-eventual-upper-carrier.md) |
+| PD-N?mz2d-frontier-codex-f3-01 | PD-N107 | PROVED; [record](topics/padua-mz-2d-frontier-20261105/theory/f3-fixed-ratio-threshold.md) |
+| IDEA?mz2d-frontier-codex-10 | IDEA-384 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f12.md) |
+| IDEA?mz2d-frontier-codex-11 | IDEA-385 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f12.md) |
+| IDEA?mz2d-frontier-codex-12 | IDEA-386 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f12.md) |
+| IDEA?mz2d-frontier-codex-13 | IDEA-387 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f12.md) |
+| IDEA?mz2d-frontier-codex-14 | IDEA-388 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f12.md) |
+| IDEA?mz2d-frontier-codex-15 | IDEA-389 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f12.md) |
+| IDEA?mz2d-frontier-codex-16 | IDEA-390 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f12.md) |
+| IDEA?mz2d-frontier-codex-f3-01 | IDEA-391 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f3.md) |
+| IDEA?mz2d-frontier-codex-f3-02 | IDEA-392 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f3.md) |
+| IDEA?mz2d-frontier-codex-f3-03 | IDEA-393 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f3.md) |
+| IDEA?mz2d-frontier-codex-f3-04 | IDEA-394 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f3.md) |
+| IDEA?mz2d-frontier-codex-f4-01 | IDEA-395 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f4.md) |
+| IDEA?mz2d-frontier-codex-f4-02 | IDEA-396 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f4.md) |
+| IDEA?mz2d-frontier-codex-f4-03 | IDEA-397 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f4.md) |
+
+Original-target mapping: PD-T028 positivity/endpoint-order/eta assertions are refuted by PD-N105/106; PD-T110 upper assertion by PD-N106; PD-T116 universal fixed-ratio assertion by PD-N107. Per AC, all three Status cells remain exactly OPEN with REJECTED: refuted disposition, while their negative statements are PROVED under the new IDs. PD-T114 is PROVED at its unchanged endpoint target via the stronger all-n<m PD-T297 theorem. The positive reference PD-T296 is supporting context, not a signed transfer or proved parameter slice. Historical f3-signed-target-open remains the existing PD-T116 continuation and receives no duplicate ID. PD-T027 remains OPEN.
+
+Permanent unused gaps: T301–323,N108–115,IDEA398–413,LIT574–581. No new LIT assignment, no reuse of another topic’s reservation, and no effective finite onset or exact m1600 certificate.
+
+## NN MOP IEP — PR22 final aliases and withdrawn split
+
+[Topic ledger](topics/nn-mop-iep-20261103/ALLOCATIONS.md),
+[union scan](topics/nn-mop-iep-20261103/preparation/reservation-check.md),
+[exact mapping](topics/nn-mop-iep-20261103/preparation/final-id-map.json).
+Audited scientific content5b36f8f; audit-02 accepted. Labels/registries do not
+change mathematical scope. All reservations and unused gaps remain permanent.
+
+| Provisional alias | Final ID | Canonical record | Disposition / scope |
+|---|---|---|---|
+| PD-T?nn-mop-iep-codex-01 | PD-T286 | [record](topics/nn-mop-iep-20261103/theory/finite-moment-formulation.md) | PROVED |
+| PD-T?nn-mop-iep-codex-02 | PD-T287 | [record](topics/nn-mop-iep-20261103/theory/finite-checks.md) | MEASURED |
+| PD-T?nn-mop-iep-codex-03 | PD-T288 | [record](topics/nn-mop-iep-20261103/theory/interior-divisor-nonvanishing.md) | PROVED |
+| PD-T?nn-mop-iep-codex-04 | PD-T289 | [record](topics/nn-mop-iep-20261103/theory/marginal-reconstruction.md) | PROVED |
+| PD-T?nn-mop-iep-codex-05 | PD-T290 | [record](topics/nn-mop-iep-20261103/theory/c4-baseline-measurements.md) | MEASURED |
+| PD-N?nn-mop-iep-codex-02 | PD-N100 | [record](topics/nn-mop-iep-20261103/theory/fixed-site-dictionary-failure.md) | MEASURED |
+| IDEA?nn-mop-iep-codex-01 | IDEA-376 | [record](topics/nn-mop-iep-20261103/candidates.md) | equivalent/background |
+| IDEA?nn-mop-iep-codex-02 | IDEA-377 | [record](topics/nn-mop-iep-20261103/candidates.md) | REJECTED: refuted (literal dictionary only) |
+| IDEA?nn-mop-iep-codex-03 | IDEA-378 | [record](topics/nn-mop-iep-20261103/candidates.md) | deferred |
+| IDEA?nn-mop-iep-codex-04 | IDEA-379 | [record](topics/nn-mop-iep-20261103/candidates.md) | equivalent/background |
+| PD-N?nn-mop-iep-codex-01 | withdrawn, no final ID | [historical redirect](topics/nn-mop-iep-20261103/theory/terminal-division-obstruction.md) | failure classification withdrawn; interior assertion → PD-T288; terminal equality → PD-T289; full original wording retained |
+| LIT?nn-mop-iep-codex-01 | LIT-420 | [source coverage](topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-01) | LITERATURE; same-source ID reused |
+| LIT?nn-mop-iep-codex-02 | LIT-562 | [source coverage](topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-02) | LITERATURE; new source, bounded coverage |
+| LIT?nn-mop-iep-codex-03 | LIT-420 | [source coverage](topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-03) | LITERATURE; same-source ID reused |
+| LIT?nn-mop-iep-codex-04 | LIT-563 | [source coverage](topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-04) | LITERATURE; new source, bounded coverage |
+| LIT?nn-mop-iep-codex-05 | LIT-564 | [source coverage](topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-05) | LITERATURE; new source, bounded coverage |
+| LIT?nn-mop-iep-codex-06 | LIT-565 | [source coverage](topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-06) | LITERATURE; new source, bounded coverage |
+| LIT?nn-mop-iep-codex-07 | LIT-566 | [source coverage](topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-07) | LITERATURE; new source, bounded coverage |
+| LIT?nn-mop-iep-codex-08 | LIT-567 | [source coverage](topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-08) | LITERATURE; new source, bounded coverage |
+| LIT?nn-mop-iep-codex-09 | LIT-568 | [source coverage](topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-09) | LITERATURE; new source, bounded coverage |
+| LIT?nn-mop-iep-codex-10 | LIT-346 | [source coverage](topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-10) | LITERATURE; same-source ID reused |
+| LIT?nn-mop-iep-codex-11 | LIT-119 | [source coverage](topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-11) | LITERATURE; same-source ID reused |
+| LIT?nn-mop-iep-codex-12 | LIT-348 | [source coverage](topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-12) | LITERATURE; same-source ID reused |
+
+LIT-420 is an existing compound entry: topic alias01 adds FHV coverage and
+alias03 adds ADY coverage; their scopes are not conflated. Reused LIT119
+also relates to347, and reused348 to117/118; no accepted ID is renumbered.
+PR21 at890f56ccde35431b70b43141c224b0b8817fea7f has no final assignments.
+Its same-source provisional aliases are explicitly pinned in the dedup ledger;
+no offset into its LIT482–561 range was inferred and no duplicate final source
+ID was allocated. Essential statements/coverage live locally on this branch.
+
+Assigned T286–290, N100, IDEA376–379, LIT562–568. Permanent unused gaps:
+T291–293, N101–103, IDEA380–383, LIT569–573. The withdrawn provisional
+negative never had a final ID. [SPLITS.md](topics/nn-mop-iep-20261103/SPLITS.md)
+retains original-to-split provenance; this is not a status downgrade.

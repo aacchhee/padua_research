@@ -1,5 +1,11 @@
 # Paper map
 
+Dated signed-Padua supersession (2026-11-05): the positive signed-Padua OPEN
+clauses in the historical MZ/PR14 briefs below are superseded by the
+[accepted frontier brief](#signed-padua-mz-frontier--accepted-scoped-results-pr23).
+PD-T028/110/116 retain AC’s registry Status OPEN with binding REJECTED: refuted
+dispositions; they are not unresolved positive assertions. PD-T027 remains OPEN.
+
 No manuscript has been drafted or accepted. The following is a development brief only; publication-level overlap remains unverified.
 
 | Manuscript / brief | Research question | Track / draft | Supporting result IDs | Gaps | Readiness |
@@ -52,4 +58,70 @@ No manuscript has been drafted or accepted. The following is a development brief
 
 | Brief | Question | Supporting results | Remaining gaps | Readiness |
 |---|---|---|---|---|
-| [Padua corner-argmax report](topics/padua-argmax-alln-20261101/report.md) | Global maximizers of the Padua Lebesgue function | PD-T209/181/214 finite2–16 plus inherited3–7; PD-T229 eventual exact corner equality; PD-T211/212/215–228/230 support; PD-T231 finite E-C; scoped PD-N078–083 | PD-T099 OPEN across unknown finite bridge; non-effective entry, center-minimality/all-n slope-energy and novelty/source coverage remain open | Registered scoped results and retained candidate histories; no manuscript or submission claim; only AC merges |
+| [Padua corner-argmax report](topics/padua-argmax-alln-20261101/report.md) | Global maximizers of the Padua Lebesgue function | PD-T209/181/214 finite2–16 plus inherited3–7; PD-T229 eventual exact corner equality; PD-T211/212/215–228/230 support; PD-T231 finite E-C; scoped PD-N078–083 | PD-T099 OPEN across unknown finite bridge; non-effective entry, center-minimality/weighted energy and novelty/source coverage remain open; normalized all-n slopes now PD-T251 | Registered scoped results and retained candidate histories; no manuscript or submission claim; only AC merges |
+
+## Effective Padua argmax — PR19 accepted scoped progress
+
+| Brief | Question | Supporting results | Remaining gaps | Readiness |
+|---|---|---|---|---|
+| [Effective argmax report](topics/padua-argmax-effective-20261103/report.md) | Effective all-degree global Padua corner argmax | PD-T246 finite17–32, continuous2–32 with inherited cases; PD-T250 exact spectrum; PD-T251 all-n normalized slopes and explicit physical n^-6 local radius; PD-T249 three finite E-C comparisons; PD-T247/248/252 MEASURED; scoped PD-N084–086 | PD-T099 OPEN; no effective global n0 or complete33<=n<N_* bridge; degree40 uncertified,33–39 unrun; weighted energy and the fixed scaled phase radius remain OPEN; G8 transfer/novelty coverage incomplete | Existing scopes accepted by [audit-01](topics/padua-argmax-effective-20261103/audit-01.md) and [response-check-01](topics/padua-argmax-effective-20261103/response-check-01.md); registration prepared for AC decision after mechanical checks; completed preparation historical after merge; no manuscript, submission or further Claude round |
+
+## Padua Lebesgue follow-ups — scoped count completion and analytic brief
+
+| Brief | Question | Supporting results | Remaining gaps | Readiness |
+|---|---|---|---|---|
+| [Lebesgue follow-ups](topics/padua-lebesgue-followups-20261103/report.md) | Degree-eight strict local maxima; limiting edge-defect shape/evaluation; corner constant | Existing PD-T184: 44 interior; existing PD-T180: 62 total = 44+16+2; PD-T266/267 centre minima and endpoint expansion; PD-T268 general-position series/tails; PD-T269/270/271 parity-independent defect limit, quadratic one-dimensional estimate and corner constant | Full sharp PD-T098 OPEN; finite-degree ordering/effective argmax bridge excluded; historical novelty/source limits retained | Mathematics accepted by [Claude audit-01](topics/padua-lebesgue-followups-20261103/audit-01.md); minor findings answered in [response-01](topics/padua-lebesgue-followups-20261103/response-01.md); registration/rehearsal and archival checked; PR20 ready for AC decision; conservative budget reduced to 3,859,377 B; T2/T3 gate-timing deviation disclosed for AC; no manuscript or submission claim |
+
+Dated 2026-11-05 supersession: the earlier briefs' degree-eight completeness/global
+OPEN wording is historical. PD-T181's global statement was separately proved in
+PR17; this follow-up completes unchanged PD-T184/180 count targets after every
+registered gate ([actual verification](topics/padua-lebesgue-followups-20261103/independent-checks-t1.md)).
+Earlier center-minimality/general-beta OPEN clauses are superseded only at the
+limiting-integral PD-T266/268 scopes; finite-degree ordering remains excluded.
+PD-T100 stays MEASURED, PD-T183 stays separate, and PD-T098's -1/N and sharp
+remainder and PD-T099's all-degree bridge remain OPEN. LIT-388 v1 Table 3 receives
+only the scoped certified candidate correction 44/62 versus numerical 38/56,
+with no accepted erratum or author contact. After merge, completed registration
+is historical preparation; the scoped results above are the outcome, with no
+further mathematical campaign assigned. Physical cold-storage delivery remains
+pending; T2/T3 prospective-gate timing is not waived or cured.
+
+## Signed Padua MZ frontier — accepted scoped results, PR23
+
+| Brief | Question | Supporting results | Remaining gaps | Readiness |
+|---|---|---|---|---|
+| [Signed frontier report](topics/padua-mz-2d-frontier-20261105/report.md) | Signed Lebesgue Padua spectra and actual continuous-input coefficient norm | PD-T295 fixed-node weights; PD-N105/106 even-m extrema to minus/plus infinity; PD-N107 sharp half-degree threshold; PD-T297 uniform C→L2 norm below30 for all m>=2,n<m, resolving PD-T114; PD-T296 positive-reference diamond estimate; PD-T298/299 finite m60/80; PD-T300 finite MEASURED observations | No effective carrier onset, odd-m classification or sharp growth; m1600 float hit uncertified; genuine 1-D PD-T027 sharp upper-limit/gap OPEN | Claude audit-01 accepted mathematics/statuses; response-01 disposes of editorial findings; PR23 registration/preparation checked for AC’s review; no other draft readiness inferred; no manuscript, submission or priority claim |
+
+For every fixed 1/2<theta<1, the signed extrema diverge in opposite directions
+along even m at n=floor(theta*m); for 0<=theta<=1/2, exactness gives eta=0.
+PD-T028/110/116 preserve historical Status OPEN and binding REJECTED: refuted
+links to PD-N105/106/107. The positive-reference theorem supplies no signed
+transfer; the uniform C→L2 bound is consistent with divergent polynomial L2
+Gram spectra. PD-N104's sign-discard obstruction and PD-T294's harmonic-boundary
+result do not resolve PD-T027.
+
+The carriers prove existence only, supply no effective finite onset and do not
+explain the separate uncertified m1600 float observation. Independently accepted
+finite cases are exactly10/20/30/40/60/80; producer2..60 plus80 is not an
+independently certified gap-free2..80 range. m100 stopped without acceptance.
+G2 fits remain INCONCLUSIVE, G4 original scope INCOMPLETE through239, G5 NOT RUN.
+Detailed preparation stays in the [topic log](topics/padua-mz-2d-frontier-20261105/LOG.md);
+after merge, the scoped results and mathematical gaps above replace preparation
+as the frontier. External cold-storage delivery remains pending and nonblocking;
+no accepted claim requires retained bulk because the checker regenerates exact
+pencils. Only AC merges.
+
+## NN MOP IEP — PR22 exact note and deferred numerical question
+
+| Brief | Scope and supporting results | Remaining gaps | Publication / review limits |
+|---|---|---|---|
+| [NN MOP report](topics/nn-mop-iep-20261103/report.md) | Standard finite moment formulation PD-T286; nonzero interior differences PD-T288; complete marginal reconstruction PD-T289; finite checks PD-T287 and literal dictionary counterexamples PD-N100; bounded C4 pilot PD-T290 | Stable coupled NN updating and error-source decomposition remain OPEN/deferred; no C3 comparator exists; N32 references rely on precision convergence | Known exact algebra; no new updater, priority claim, manuscript or submission. Claude audit-02 accepted science; preparation protocol check follows separately. |
+
+The marginal route uses only marginal Jacobi data; the shifted step-line route
+requires a recursive family of shifts and boundary information. Terminal b1=b2
+is a final condition and does not obstruct the in-domain recursion. Shared
+spectral eigenvalue x is the distinction from two coordinate multiplications;
+no universal impossibility of lifted encodings is claimed. The earlier
+provisional negative classification is withdrawn, with its text and split
+history retained. After merge these scoped results and deferred questions
+replace the completed gate/registration tasks; only AC merges.
