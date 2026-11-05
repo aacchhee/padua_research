@@ -1,0 +1,162 @@
+{
+  "status": "PASS independent exact all88 old overlap comparison",
+  "rules_sha": "9825d184517db81d0aad8542fbd6639f2164b803",
+  "code": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_batch_independent_overlap.py",
+    "bytes": 4217,
+    "sha256": "299d6845c704e86e0541f2de9766b3bf9886ba2579fb80048885de13f3749b62"
+  },
+  "comparison_dependency": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_batch_independent_compare.py",
+    "bytes": 6386,
+    "sha256": "7dfd517188274b67c48a7171b3812d1c43dc69bcca72ec08775eba244d44f928"
+  },
+  "source": {
+    "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/source-fused.py",
+    "bytes": 14342,
+    "sha256": "49b45df9c2c28e3e63e9b886ff873a744ea0f0a44cd5f51fe2e3a345eec81552"
+  },
+  "old": {
+    "path": "/tmp/padua-lanczos-frontier-g1/inputs/e1-full-sweep.json",
+    "bytes": 616693,
+    "sha256": "0d9c236fe879879b7f546596c554d213b7b8c408d31dec08dd79146c7d629344"
+  },
+  "rows": 88,
+  "rational_endpoint_comparisons": 352,
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_batch_independent_overlap.py",
+    "--directory",
+    "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap",
+    "--source",
+    "/tmp/padua-lanczos-frontier-g1-batch/fused/source-fused.py",
+    "--old",
+    "/tmp/padua-lanczos-frontier-g1/inputs/e1-full-sweep.json",
+    "--receipt",
+    "topics/padua-lanczos-frontier-20261105/evidence/g1-batch-independent-fused-overlap.json"
+  ],
+  "cases": [
+    {
+      "grid": "triangle",
+      "rule": "bj",
+      "rows": 11,
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/triangle-bj-d12.json",
+        "bytes": 3012,
+        "sha256": "e8498085aaab07fb6fe6fc01ee260caf5b974aa662340c794a12a7775a35f22f"
+      },
+      "endpoints": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/triangle-bj-d12/endpoints.json",
+        "bytes": 15589,
+        "sha256": "9af9f415a39754cb79e1ace53c588895449971256f517c30f776c59b049da9bf"
+      }
+    },
+    {
+      "grid": "triangle",
+      "rule": "mirror",
+      "rows": 11,
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/triangle-mirror-d12.json",
+        "bytes": 3038,
+        "sha256": "7bf7408a77022a0fda705ba587961af295ee36700c7aa61bbedad8bb693a1a6a"
+      },
+      "endpoints": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/triangle-mirror-d12/endpoints.json",
+        "bytes": 15705,
+        "sha256": "47acfdd0176da66efaaa25966d9798c8989782161f30100b6a0579acda278502"
+      }
+    },
+    {
+      "grid": "triangle",
+      "rule": "alt",
+      "rows": 11,
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/triangle-alt-d12.json",
+        "bytes": 3019,
+        "sha256": "1ab1ba9b29c13f03b7cb568fc68fc89106112bf38cf5a682babeff2617557a24"
+      },
+      "endpoints": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/triangle-alt-d12/endpoints.json",
+        "bytes": 16420,
+        "sha256": "37f391cb95c81dd44c67f5a3226d38829657d8fb78753872d025c813f0fa488d"
+      }
+    },
+    {
+      "grid": "triangle",
+      "rule": "pivot",
+      "rows": 11,
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/triangle-pivot-d12.json",
+        "bytes": 3031,
+        "sha256": "673140a0bbab64a9d8a012c98c4d0455020b33f1be14989cf3a30695d3e19ecf"
+      },
+      "endpoints": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/triangle-pivot-d12/endpoints.json",
+        "bytes": 16498,
+        "sha256": "3905833f1b581c22ec855b3e005eda0adc30e8cf52fc1b7d4d6f27205b5ba09c"
+      }
+    },
+    {
+      "grid": "rotated",
+      "rule": "bj",
+      "rows": 11,
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/rotated-bj-d12.json",
+        "bytes": 3014,
+        "sha256": "41efdb22bb95b5c8b31fa4628070acfd72290e29984680ce2c724d9f22d3975b"
+      },
+      "endpoints": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/rotated-bj-d12/endpoints.json",
+        "bytes": 94581,
+        "sha256": "1ee168b063b42a49201875639f93edc364d38311423a4b2f790a869db43d43eb"
+      }
+    },
+    {
+      "grid": "rotated",
+      "rule": "mirror",
+      "rows": 11,
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/rotated-mirror-d12.json",
+        "bytes": 3025,
+        "sha256": "bc50075ed18b88cdecdade67e5f95b00d8e5b4b1fa6906a82c70450d838e8649"
+      },
+      "endpoints": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/rotated-mirror-d12/endpoints.json",
+        "bytes": 100174,
+        "sha256": "5e25ded85c133a799335bbf97b2003125de78d848c02c534a1c0e0957b1ee95a"
+      }
+    },
+    {
+      "grid": "rotated",
+      "rule": "alt",
+      "rows": 11,
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/rotated-alt-d12.json",
+        "bytes": 3012,
+        "sha256": "6520060b6b7019f75f633669f9a54dbc6fb055f2f2775119de67a251d4c174ac"
+      },
+      "endpoints": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/rotated-alt-d12/endpoints.json",
+        "bytes": 112272,
+        "sha256": "5f710a4837b610bb8e0f4cc8cfac5846a0f1bbef65ac68f3f63b174133aaaa3b"
+      }
+    },
+    {
+      "grid": "rotated",
+      "rule": "pivot",
+      "rows": 11,
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/rotated-pivot-d12.json",
+        "bytes": 3025,
+        "sha256": "3279c938bc80778e3229ab32390687bb3f04444f287a1b316372de84308e028a"
+      },
+      "endpoints": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/rotated-pivot-d12/endpoints.json",
+        "bytes": 108634,
+        "sha256": "1d7f466c27c388221fd4704ca12717aa6e7e9a90cabee734f3b28afc9bcc955d"
+      }
+    }
+  ],
+  "limits": "Actual read-only comparison; no scientific rerun or fits."
+}

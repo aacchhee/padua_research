@@ -111,3 +111,75 @@ raw outputs remain temporary outside Git and Windows archive delivery is
 pending. Initial missing-PYTHONPATH failures, before-source and batch-source
 snapshots, plan bytes, per-run exact argv/environment/source hashes and
 completed exact endpoint/baseline outputs are retained.
+
+## One further root-authorized fused-energy revision: prospective plan
+
+Registered after the actual79.050s BJ14 cost stop and degree8 normalization
+profile, before changing source or executing a new run. Source4b705ac8 and all
+prior receipts remain preserved; root is checkpointing them before edits.
+This is one bounded implementation round only; failure stops without an
+automatic loop. No new scientific mechanism or novelty claim is introduced.
+
+Let S=z/D, g=y/E, and c=a/b be exact rationals with D,E,b>0. The pointwise
+update S+c*g^2 equals the integer row
+
+    z*(L/D) + (y pointwise squared)*a*(L/(b*E^2)),
+    L=lcm(D,b*E^2),
+
+with common denominator L. Construct that integer row and normalize once
+at the completed update. Zero/negative c and exact cancellation are handled
+by the same formula; dimensions are checked before zero shortcuts.
+
+The frozen source-scaled energy identity is
+S_h += tau_h^2*g_k^2/d_k, with tau_h^2=sigma_h from the exact base recurrence.
+Current code stores E_h=S_h/tau_h^2, updates E_h+=g_k^2/d_k, and applies
+sigma_h at collect. This organization will remain: fuse only the existing
+response-energy square/scale/add into one primitive with c=1/d_k. The
+initial energy1/d_h and collect's source scaling, normal diagonal, peaks,
+basis/response column batching, all nodes/sources, ties and endpoint formulas
+remain unchanged. No other fusion is included in this prospective round.
+
+Validate the new primitive against direct fmpq pointwise arithmetic with
+signed/zero/non-coprime/cancellation values and malformed dimensions. Then
+repeat all eight small cases/fresh scalar degree2/3/4 controls and all88 old
+rows, at120s per case/max2 workers. Compare complete baseline bytes to the
+prior stable implementation. Only after these pass, run one rotated BJ14
+cap180s comparing every old row including13/14. The unchanged root condition
+allows one BJ20 cap600s only if this same source completes14 in<=60s and
+agrees exactly; compare all19 rows with retained native BJ20. Otherwise stop.
+Record all source hashes, exact commands/environment and results before runs,
+retain all failures/cost stops, and perform no fitting before all152 rows.
+
+Fused-energy source SHA-256
+`49b45df9c2c28e3e63e9b886ff873a744ea0f0a44cd5f51fe2e3a345eec81552`
+was recorded before new runs and copied to scratch `fused/source-fused.py`.
+New direct rational signed/zero/cancellation controls pass and12 malformed
+controls reject. All8 small cases pass fresh scalar degree2/3/4 and24 old
+endpoint rows. Distinct technical checker inspected the primitive, exact
+source-weight placement and single call site, reporting no defect. Old88
+and new14 are pending at this checkpoint; no20 has been launched.
+
+Fused round old88 validation completes under120s/max2workers. Every full
+baseline is byte-equal to v2 (and hence to prior4b705ac8); all old endpoint,
+choice and tie rows agree. Rotated12 times27.499–37.441s; T24 times3.068–4.334s.
+Compact receipt: `evidence/g1-batch-fused-overlap.json`. The planned stable-
+source14 benchmark is now running after these passes.
+
+## Final fused round outcome: stop under unchanged cost condition
+
+Stable49b45df9 completes rotated BJ14 in72.526631s wall/72.503146s CPU,
+basis1.454791s. All13 endpoint/choice/tie rows, including frozen13/14, agree
+exactly with the retained old benchmark. Receipt:
+`evidence/g1-batch-fused-benchmark14.json`. The unchanged <=60s prerequisite
+fails again, so **no producer20 was run and no further optimization loop was
+started**. Prior4b705ac8 and both older cost stops remain preserved.
+
+The observed79.050->72.527s change is a finite measurement in this environment,
+not a controlled universal speedup or complexity bound. The prior degree8
+profile motivated energy fusion; this round did not execute a new profile,
+so no new precise hotspot percentages are claimed. Remaining normalization
+and native/vector arithmetic are possible next implementation costs, but
+further diagnosis/development needs a separate root scope. This bounded
+assignment is complete at the honest cost stop. No scientific target is
+rejected, no152row completion or fresh native20 agreement is claimed, and
+all preregistered fit/operational rules remain unexecuted.

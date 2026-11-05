@@ -1,0 +1,81 @@
+{
+  "status": "PASS fresh producer/native exact BJ14 comparison",
+  "rules_sha": "9825d184517db81d0aad8542fbd6639f2164b803",
+  "checker": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_batch_independent_compare.py",
+    "bytes": 6386,
+    "sha256": "7dfd517188274b67c48a7171b3812d1c43dc69bcca72ec08775eba244d44f928"
+  },
+  "python": "3.12.14",
+  "producer_source": {
+    "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/source-fused.py",
+    "bytes": 14342,
+    "sha256": "49b45df9c2c28e3e63e9b886ff873a744ea0f0a44cd5f51fe2e3a345eec81552"
+  },
+  "native_source": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_fast_independent.cpp",
+    "bytes": 9215,
+    "sha256": "b6434df51d3df7e04136b1da9f8ee63e6c5f599e609625f415718766db0480dc"
+  },
+  "producer_receipt": {
+    "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/benchmark14/rotated-bj-d14.json",
+    "bytes": 3414,
+    "sha256": "646a6490433a4744199ee64f497826e245332ffef10f6af9e94ce8d011ea9e6f"
+  },
+  "native_receipt": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/evidence/g1-fast-independent-pilot20-bj.json",
+    "bytes": 3608,
+    "sha256": "03162bdcc5f454e4fe5a14355967d69a292b8ce6e25be98ac37071aab7aac081"
+  },
+  "producer_endpoints": {
+    "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/benchmark14/rotated-bj-d14/endpoints.json",
+    "bytes": 180480,
+    "sha256": "dc29c087cab8447601811c9db27b38ac7c96132d90889970a218e24176591ed6"
+  },
+  "native_endpoints": {
+    "path": "/tmp/padua-lanczos-frontier-g1-fast-independent/pilot20-bj/rotated-bj-d20.jsonl",
+    "bytes": 915817,
+    "sha256": "0f7c1475a0484aa0905bcdfddf938b4ea2154f58322228e17bb7a91955ca3cf7"
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_batch_independent_compare.py",
+    "--degree",
+    "14",
+    "--producer-receipt",
+    "/tmp/padua-lanczos-frontier-g1-batch/fused/benchmark14/rotated-bj-d14.json",
+    "--producer-source",
+    "/tmp/padua-lanczos-frontier-g1-batch/fused/source-fused.py",
+    "--native-receipt",
+    "topics/padua-lanczos-frontier-20261105/evidence/g1-fast-independent-pilot20-bj.json",
+    "--receipt",
+    "topics/padua-lanczos-frontier-20261105/evidence/g1-batch-independent-fused-bj14.json"
+  ],
+  "matched_degrees": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "rational_endpoint_comparisons": 52,
+  "all_original_nodes": 625,
+  "all_source_columns_at_max_degree": 119,
+  "metadata": [
+    "choices",
+    "ties",
+    "source/node/basis counts",
+    "normal trace"
+  ],
+  "wall_seconds": 0.07296999400205095,
+  "limits": "Read-only comparison actually executed; native run reused, not rerun. No fit, remaining-rule execution or asymptotic claim. Native emits no maximizing witness, so witness identity is outside this comparison."
+}

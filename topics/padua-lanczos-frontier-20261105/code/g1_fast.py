@@ -61,6 +61,13 @@ class V:
  def mul(self,o):
   assert self.z.ncols()==o.z.ncols()
   return V(IM([[x*y for x,y in zip(self.a,o.a)]]),self.D*o.D)
+ def add_square_scaled(self,g,c):
+  """Return self+c*g^2 with one final common-content normalization."""
+  assert self.z.ncols()==g.z.ncols()
+  c=Q(c);den=g.D*g.D*c.denominator;D=self.D.lcm(den)
+  row=self.z*(D//self.D)
+  if c:row=row+IM([[x*x for x in g.a]])*(c.numerator*(D//den))
+  return V(row,D)
  def square(self):return V(IM([[x*x for x in self.a]]),self.D*self.D)
  def dot(self,o):
   assert self.z.ncols()==o.z.ncols()
@@ -97,18 +104,22 @@ def arithmetic_controls():
   got=V.linear_combination(6,terms)
   assert got.asq()==[sum((c*v.asq()[i] for c,v in terms),Q(0)) for i in range(6)]
   if not any(got.a):assert got.D==1
+ for base,g,c in [(a,b,Q(-7,11)),(b,a,Q(0)),(a,a,Q(13,21)),(a.square().scale(-1),a,Q(1)),(V.const(6,0),b,Q(5,17))]:
+  fused=base.add_square_scaled(g,c)
+  assert fused.asq()==[u+c*v*v for u,v in zip(base.asq(),g.asq())]
+  if not any(fused.a):assert fused.D==1
  peaks=Peaks(6);peaks.add(a.a,a.D,2);peaks.add(b.a,b.D,5)
  assert [Q(n,d) for n,d in zip(peaks.num,peaks.den)]==[max(Q(0),u,v) for u,v in zip(x,y)] and peaks.who[-1]==2
  peaks.add([2*z for z in b.a],2*b.D,9);assert peaks.who[-1]==2
  gain,witness=peaks.best(V.qs([Q(i) for i in range(1,7)]));assert gain==18 and witness==(5,3)
  assert (a-a).D==1 and (a-a).z.is_zero()
  assert V(IM([[6,-9,0]]),-15).asq()==[Q(-2,5),Q(3,5),Q(0)]
- bad=[lambda:V.linear_combination(0,[]),lambda:V.linear_combination(6,[(0,V.const(5,1))]),lambda:V(IM([[1]]),0),lambda:V(IM([[1,2],[3,4]])),lambda:a.mul(V.const(5,1)),lambda:a.dot(V.const(5,1)),lambda:Peaks(0),lambda:peaks.add([Z(1)]*6,0,1),lambda:peaks.add([Z(1)]*6,-1,1),lambda:peaks.add([Z(1)]*5,1,1),lambda:peaks.add([Z(1)]*6,1,0)]
+ bad=[lambda:a.add_square_scaled(V.const(5,1),0),lambda:V.linear_combination(0,[]),lambda:V.linear_combination(6,[(0,V.const(5,1))]),lambda:V(IM([[1]]),0),lambda:V(IM([[1,2],[3,4]])),lambda:a.mul(V.const(5,1)),lambda:a.dot(V.const(5,1)),lambda:Peaks(0),lambda:peaks.add([Z(1)]*6,0,1),lambda:peaks.add([Z(1)]*6,-1,1),lambda:peaks.add([Z(1)]*5,1,1),lambda:peaks.add([Z(1)]*6,1,0)]
  for fn in bad:
   try:fn()
   except AssertionError:continue
   raise AssertionError('Malformed primitive was accepted')
- return {'batched_signed_zero_repeated_terms_and_cancellation_controls':True,'signed_zero_common_content_add_mul_dot_square_max_controls':True,'control_vector_length':6,'unreduced_peak_pairs_and_strict_ties':True,'malformed_primitive_controls_rejected':len(bad)}
+ return {'fused_energy_signed_zero_cancellation_controls':True,'batched_signed_zero_repeated_terms_and_cancellation_controls':True,'signed_zero_common_content_add_mul_dot_square_max_controls':True,'control_vector_length':6,'unreduced_peak_pairs_and_strict_ties':True,'malformed_primitive_controls_rejected':len(bad)}
 
 def build(coords,n,rule,state):
  M=len(coords[0].a);b=[V.const(M,1)];d=[Q(M)];rec=[None];meta=[(0,0)];pos={(0,0):0};ties=[]
@@ -172,7 +183,7 @@ def run(a,out,state):
   for k in range(h+1,len(b)):
    axis,p,alpha,_=rec[k];v=coords[axis].mul(g[p]) if p>=h else V.const(M,0)
    v=V.linear_combination(M,[(1,v)]+[(-alpha[l],g[l]) for l in range(h,k)])
-   g[k]=v;energy=energy+v.square().scale(1/d[k])
+   g[k]=v;energy=energy.add_square_scaled(v,1/d[k])
    if k in ends:collect(ends[k],h,energy)
   state['last_source']=h
   if h in ends:finish(ends[h])
