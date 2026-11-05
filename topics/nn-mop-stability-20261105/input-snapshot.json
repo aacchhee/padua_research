@@ -225,7 +225,17 @@
     "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-317-first-order-commutator-rank-measurements.md",
     "tracks/bivariate-lanczos/theory/bivariate-lanczos-claude-318-first-order-commutator-formula.md",
     "tracks/bivariate-lanczos/theory/drift-codex-e1-01-span-derivative.md",
-    "tracks/bivariate-lanczos/theory/drift-codex-e1-02-rational-span-bounds.md"
+    "tracks/bivariate-lanczos/theory/drift-codex-e1-02-rational-span-bounds.md",
+    "templates/COLD_STORAGE.md",
+    "tools/cold_storage.py"
   ],
-  "note": "Complete fetched input list. Each local file was verified byte-for-byte against its source Git blob; a materialization-only extra final LF was corrected before final runs. No inherited scientific content changed."
+  "note": "Complete GitHub-connector repository-file input list at source_commit, preserving repository paths. The initial unchanged source files were verified against source Git blobs after correcting one transport-only final LF. Topic LOG/results are subsequently edited outputs; source_commit still identifies their original inputs. The final two storage-administration files were fetched later at the same pinned source. Allocation-specific peer reads are inventoried separately in allocation-scan.json.",
+  "reconciled_main": "5adc3e2b7226e2c3c5577335058823a8e5cc3629",
+  "supplemental_source_files": [
+    {
+      "path": "topics/padua-lanczos-frontier-20261105/theory/l6-N02-frozen-n1-raw-data-nonrealizability.md",
+      "source_commit": "5adc3e2b7226e2c3c5577335058823a8e5cc3629",
+      "git_blob": "b61e99e96c32181e49091c59a1a6c61f6d9324a4"
+    }
+  ]
 }

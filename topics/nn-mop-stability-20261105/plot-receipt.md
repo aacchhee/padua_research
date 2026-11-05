@@ -46,3 +46,20 @@ python topics/nn-mop-stability-20261105/code/plot_conditioning.py --krawtchouk /
 ```
 
 This command is **not yet executed**. Recheck the theorem source if its explicit hash changes; no automatic fallback is permitted. All exports and raw manifests stay under /tmp, off Git, with archival transfer pending the coordinator’s cold-storage procedure. Code and this short receipt are the durable regeneration artifacts.
+
+## Dated completion — full every-integer grid, 2026-11-05
+
+The deferred full-grid command printed above was now executed exactly as recorded and returned exit 0. The earlier pending statements describe the sampled-figure stage and are retained as history; this addendum completes that plotting step. Both explicit 260-dps input JSON files contain all 61 integer sizes N=4,...,64. The manifest records exactly that size grid, `fullgrid61`, and caption “Every integer size N = 4,...,64.” No alternative files, extra experiments or data substitutions were used.
+
+The full-grid PNG was visually inspected: both family titles, NN/monic step-line legends, logarithmic condition-number axis, integer-grid caption and the analytic lower-bound audit qualification are readable and unclipped. The same plotting code and frozen lower-bound source were used unchanged.
+
+| Full-grid artifact | Bytes | SHA-256 |
+|---|---:|---|
+| `/tmp/conditioning-full-krawtchouk260.json` | 1762900 | `eca8cd52130467cf8e0cb446053751a37d9bc6db227b8fa20ecf7dc28b63df83` |
+| `/tmp/conditioning-full-hahn260.json` | 1764070 | `6b4745430e2bad7a99b89e72ec72631b343e20bc83aa6981294a9d50c857634e` |
+| `/tmp/nn-mop-conditioning-plots-full/conditioning-fullgrid61.png` | 178595 | `5532ce4bc8e6f37f91b0bdb2f8f07d873c7b48b580344be4c99b995fc690a19f` |
+| `/tmp/nn-mop-conditioning-plots-full/conditioning-fullgrid61.pdf` | 22104 | `2ff392f34aa1fb6fe5e74a323fc13f47ae64ddfb0b1442bc88e3ca594273dcfb` |
+| `/tmp/nn-mop-conditioning-plots-full/conditioning-fullgrid61.svg` | 35181 | `ab7cb72448f5ad65653cf2ac883f5e86f7433e70d7ca0495571971d62a927125` |
+| `/tmp/nn-mop-conditioning-plots-full/conditioning-fullgrid61-manifest.json` | 3384 | `642b4c5606323a7bc72566331f53e273c11ee1d7730222e7bec56f4a1cab147f` |
+
+All PNG/PDF/SVG exports and their manifest remain local under `/tmp/nn-mop-conditioning-plots-full/`, off Git. Existing sampled exports are preserved. No D2 scientific files, shared files or Git state were changed.

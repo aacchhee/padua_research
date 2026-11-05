@@ -74,3 +74,7 @@ certified nearest-minimum claim. N4 passes the dated finite mixed100u
 test for LU/nodeqr; N8 does not. These dispositions are retained in
 the complete candidate memory and D5, with failed precision-limited
 iterations preserved. A uniform algorithmic stability theorem is OPEN.
+
+## Coordinator integration addendum — main5adc3e2
+
+After development, main incorporated PD-N118, whose full bivariate raw-slot nonrealizability record was read at5adc3e2b7226e2c3c5577335058823a8e5cc3629. It uses a necessary symmetry identity; the NN dyadic B2 witness is a different scoped example of that standard exact-consistency obstruction, not a new general mechanism. No dependency, exhaustive historical novelty claim or retrospective gate clearance is added. Input/source metadata and impact are recorded once in LOG's final reconciliation entry.

@@ -1,9 +1,9 @@
 # NN MOP IEP: conditioning and stable algorithms: log
 
-- Branch: `codex/nn-mop-stability-20261105` · Base: main `b4d292e` (PR #21 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: `Codex (gpt-6-astra high): Continue codex/nn-mop-stability-20261105.` · Open handoff: [handoffs/01-work.md](handoffs/01-work.md)
-- Reserved final-ID ranges: T432–471, N162–177, IDEA530–569, LIT614–629; reservation only, no assignments. See ALLOCATIONS.md.
-- Claims: none yet.
+- Branch: `codex/nn-mop-stability-20261105` · Initial base: main `b4d292e`; reconciled main `5adc3e2` (PR #24 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
+- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Continue codex/nn-mop-stability-20261105.` · Next handoff: [handoffs/02-audit.md](handoffs/02-audit.md), published immediately after the scientific output commit.
+- Reserved final-ID ranges: T432–471, N=162–177, IDEA530–569, LIT614–629; reservation only, no assignments. See ALLOCATIONS.md.
+- Claims: provisional analytic/exact PROVED and floating MEASURED records in theory/; general solver stability and matching sharp growth remain OPEN. Mandatory Claude audit pending.
 - Open for AC: none at setup. Ask AC before using Syvert.
 
 ## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
@@ -30,27 +30,27 @@
 - Rules and source read at full head `823cf6a4ef7c01b4ef3d2a6fec3e9f19d4b4f6f1`. Current main/base checked via connector: `b4d292eea5eed373002506d5e16a3761bd7ae10e`; no base reconciliation needed. Serving model/effective effort metadata are not independently exposed.
 - Shell Git fetch fails before HTTP because the inherited proxy port8080 is unreachable. Used the authorized GitHub connector and isolated pinned snapshot; [complete fetched list](input-snapshot.json). Local old `work` checkout is unchanged. No network policy bypass.
 - Wrote [plan.md](plan.md), including G3 prediction, before any experiment. Delegated disjoint D1–D7 scopes under handoff01's explicit parallel/model allocation; [round ledger](rounds.md). Workers read gate and predecessor evidence before generating candidates. Coordinator does not claim novel science from setup.
-- Refreshed main/all open PR24/27 and all 44 ledger/registry copies; no closed-unmerged PR. [Reservation](ALLOCATIONS.md) is strictly above unionT431/N161/IDEA529/LIT613, including permanent gaps. No final assignment/shared-registry change.
+- Refreshed main/all open PR24/27 and all 44 ledger/registry copies; no closed-unmerged PR. [Reservation](ALLOCATIONS.md) is strictly above unionT431/N=161/IDEA529/LIT613, including permanent gaps. No final assignment/shared-registry change.
 - Current outputs are development in progress. Audit PENDING. Only AC merges.
 
 
-- Snapshot transport correction: the initial materializer appended one extra final LF to each fetched file. Restored all222 unchanged inputs byte-for-byte (the topic LOG is already being updated) against their pinned Git blob SHA before final evidence collection; this changes no scientific content. Initial replay values matched exactly; code-hash receipts are refreshed after correction.
+- Snapshot transport correction: the initial materializer appended one extra final LF to each fetched file. Restored all 222 unchanged inputs byte-for-byte (the topic LOG is already being updated) against their pinned Git blob SHA before final evidence collection; this changes no scientific content. Initial replay values matched exactly; code-hash receipts are refreshed after correction.
 
 - Operational clarification: default shell sandbox networking could not reach the proxy; explicitly enabled-network execution reaches GitHub but has no CLI credentials. The connector is authenticated. AC explicitly allowed its verified GitHub noreply author address for this campaign, resolving handoff01's email requirement. Setup/reservation first published as d87925630e9e460031df319f3994ca2e7fad8ca0; draft PR28 opened. Refreshed peer heads PR27 3dda890 / PR24 0299fcf: no reservation change or collision.
 - Astra ultra escalation justification (D1 hard step): the sampled induced condition norms grow by many orders while the requested all-N growth law remains unresolved; a bounded independent analytic lower-bound attempt is a decisive hard mathematics step, not a fit or routine table generation. A separate Astra ultra worker owns only D1-hard files and cannot replace Claude audit.
 
 ## Round1 checkpoint — D1, D2, D6 and D7
 
-- D1 sampledN={4,8,12,16,24,32,48,64}, both families,180/260dps. Exact induced row-sum formula is proved; numerical norm evaluations are MEASURED, with precision agreement, not interval certification. Independent exact Fraction derivative checks agree4416entries atN3/4/6. Supporting local derivative and coarse allN Kraw upper-bound records are separate from the OPEN sharp-growth target.
+- D1 sampledN={4,8,12,16,24,32,48,64}, both families,180/260 dps. Exact induced row-sum formula is proved; numerical norm evaluations are MEASURED, with precision agreement, not interval certification. Independent exact Fraction derivative checks agree4416entries at N=3/4/6. Supporting local derivative and coarse allN Kraw upper-bound records are separate from the OPEN sharp-growth target.
 - D2 G0PASS12/12; G1 finite threshold fails and G2 fails in HahnN8/16. Stable Lanczos marginals remain near rounding precision but layer amplification persists. Path diagnostics preserve the second-measure anchor; no full-array backward claim. See attempts/D2.md.
-- D6 graph mixed-test identity is elementary background with scoped standard-grading obstructions; no faithful fullNN-to-bivariate recurrence dictionary or stability transfer. The worker discloses late completion of some gate-summary reads after the prescribed probe; no retrospective prospective novelty clearance is claimed. D7 source retrieval is BLOCKED through both repository and publisher supplement routes, not reproduced.
+- D6 graph mixed-test identity is elementary background with scoped standard-grading obstructions; no faithful full NN-to-bivariate recurrence dictionary or stability transfer. The worker discloses late completion of some gate-summary reads after the prescribed probe; no retrospective prospective novelty clearance is claimed. D7 source retrieval is BLOCKED through both repository and publisher supplement routes, not reproduced.
 - D3/D4/D5 and supplementary independent reports remain in progress. No scientific result is registered and Claude audit remains PENDING.
 
 ## Round1 checkpoint — D3, D4 and D5
 
-- D3 implements direct mixed solves in an orthogonal coefficient basis and node-space constraint QR, retaining both designs and LU/QR/SVD variants. Both avoid C4 propagation; finite forward gains exceed2digits in attainable cases, but no general new stable-algorithm theorem or novelty claim. See attempts/D3.md.
-- D5 proves local gauge-fixed full-image geometry and unique nearby SPD nearest projection; a five-field dyadic certificate proves strict backward error infinite for one raw N4LU array. Actual positive common-data correction witnesses are measured, not minima or backward-stability proofs. The original gate is preserved and a separate dated mixed metric is explicit. See attempts/D5.md.
-- D4 rederives finite Christoffel transport and Toda closure, with finite boundary and normality assumptions. An exact positive three-node pair loses normality under an exterior Christoffel change and under a common exponential path. Common multipliers preserve the weight ratio and cannot reach arbitrary pairs. The predivide-C4-restore design loses atN16 in both families and is stopped. Accurate-source transforms/flows do not solve initialization. See attempts/D4.md.
+- D3 implements direct mixed solves in an orthogonal coefficient basis and node-space constraint QR, retaining both designs and LU/QR/SVD variants. Both avoid C4 propagation; finite forward gains exceed2 digits in attainable cases, but no general new stable-algorithm theorem or novelty claim. See attempts/D3.md.
+- D5 proves local gauge-fixed full-image geometry and unique nearby SPD nearest projection; a five-field dyadic certificate proves strict backward error infinite for one raw N=4LU array. Actual positive common-data correction witnesses are measured, not minima or backward-stability proofs. The original gate is preserved and a separate dated mixed metric is explicit. See attempts/D5.md.
+- D4 rederives finite Christoffel transport and Toda closure, with finite boundary and normality assumptions. An exact positive three-node pair loses normality under an exterior Christoffel change and under a common exponential path. Common multipliers preserve the weight ratio and cannot reach arbitrary pairs. The predivide-C4-restore design loses at N=16 in both families and is stopped. Accurate-source transforms/flows do not solve initialization. See attempts/D4.md.
 - Supplementary Astra exact checks have reproduced derivative, transform, path-diagnostic traps and the dyadic obstruction within their stated finite scopes. Final written check report and Claude audit remain pending.
 
 ## Hard conditioning step and supplementary verification checkpoint
@@ -62,5 +62,15 @@
 
 ## Native/projection round2 completion
 
-- Full-Jacobian least-squares fits atN4/8, both families, C4/LU/nodeqr,100/160dps completed. Actual rational positive common-data witnesses were rebuilt; numerical stationarity is separated from rounding the returned witness. N4 finite native pairs are small; N8 does not meet100u. No global-nearest or backward-stable solver theorem is claimed.
+- Full-Jacobian least-squares fits at N=4/8, both families, C4/LU/nodeqr,100/160 dps completed. Actual rational positive common-data witnesses were rebuilt; numerical stationarity is separated from rounding the returned witness. N=4 finite native pairs are small; N=8 does not meet100u. No global-nearest or backward-stable solver theorem is claimed.
 - The independent checker reran final projection code9deb74ef at fourN4 cases, checked exact40-field moment rebuilds, and verified returned-witness stationarity. The reporting fix changes labels/added returned-stage diagnostics, not the rational witnesses or numerical pair values. Final report02 hash a4cf80cd2695c3233f49b6e1b7dc8ec6f702f925d19e4066305ba8a671bc1b23. D3/D5 close their two-round scope; general stability remains OPEN.
+
+## Final development and main reconciliation
+
+- All four full Jacobian runs completed every integer N=4–64 at180/260 dps, both families. The six NN/step-line input-model norm comparisons passed1e-60. Worst relative disagreements: Kraw1.7632664201e-115; Hahn1.2841742107e-93. The single61-row table, frozen commands and raw hashes are in attempts/D1.md. Timed expansion CPU5630.383305s; maximum individual wall1512.192064s, all exits0. Earlier untimed experiments are not assigned invented CPU totals.
+- Coordinator executed conditioning_compare.py on the complete inputs, independently checking coverage/content identities as an integration check, not as an independent derivative rerun. It produced /tmp/conditioning-full-compare-coordinator.json, SHA977a0441f487466acb1c7d3ee4e1fadcae05bf193159d48125bca9a34b8ebc2f. The finite normality receipt verifier was also actually executed (its --help argument is ignored), PASS61/43676.
+- The full61-grid PNG/PDF/SVG was generated and inspected; sampled history is retained in plot-receipt.md. No output or plot is smuggled into Git; large working artifacts remain local, with no claimed cold-storage delivery.
+- Current main advanced to5adc3e2b7226e2c3c5577335058823a8e5cc3629. Topic merge e6926754cca8c9dbe0c9c75d5c350036128f115c preserves main's unrelated blobs and all existing topic blobs without rewriting history. Initial source/base provenance remains823cf6a/b4d292e; only PROOF_STATUS.md and state/IDEAS.md among initial scientific inputs changed on main. All imported NN code and rule blobs are unchanged.
+- Main/open-foreign reservation refresh read44 complete ledger/registry copies at main5adc3e2, PR27c000899 and PR29 60a493a. PR29 is an unmerged rules proposal with no range; it is not applied to this task. Main's mentions of our own range are acknowledgments, not another owner's allocation. Own permanent reservation/priority is unchanged and no final IDs are assigned.
+- New main PD-N118 is a related bivariate raw-array necessary-symmetry obstruction. Its full record was read at main5adc3e2. Our NN B2 dyadic witness is a separate scoped instance of the same general exact-consistency mechanism, with no historical novelty claim or proof dependency. See the integration addendum in novelty-gate-D3-D5.md.
+- All direction outputs and supplementary reports are complete within their declared bounds; G5 remains objectively blocked. Development passes to mandatory Claude Opus 5.5 xhigh audit in [handoff02](handoffs/02-audit.md). The scientific output SHA will be that handoff's input SHA, distinct from its publication commit. Only AC merges.

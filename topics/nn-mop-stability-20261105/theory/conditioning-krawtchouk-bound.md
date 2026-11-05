@@ -128,8 +128,9 @@ cannot distinguish intrinsic growth mechanisms or predict digits lost.
 
 ## Open items
 
-An explicit exponential lower bound, sharp upper bound, and a formula
-with usable constants predicting the observed growth. The local derivative
+The separate [terminal parity theorem](conditioning-lower-krawtchouk.md)
+now proves an explicit exponential lower bound. A sharp upper bound and a
+matching rate with usable constants remain OPEN. The local derivative
 and this coarse bound are substantive supporting results, not a PARTIAL
 classification of that unresolved target.
 

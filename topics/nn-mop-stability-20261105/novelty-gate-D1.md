@@ -57,8 +57,9 @@ known differentiation is not a new mechanism. Verdict: standard variant.
 Cheapest kill test: independently differentiated moments disagree at N4,
 or precision escalation changes the induced norm materially. Actual result:
 N4 AD-moment comparisons agree to more than250 absolute digits; full
-N4,8,12,16,24,32,48,64 tables converge at180/260dps. Independent Fraction
-check requested separately. Disposition: retained measured quantification
+round-1 sampled tables converge at180/260dps. Round 2 completed every integer
+N4..64 at both precisions; independent Fraction checks match all4416 entries
+at both families N3,4,6 exactly. Disposition: retained measured quantification
 and a standard PROVED local derivative theorem. No stability theorem.
 
 ### IDEA?nn-mop-stability-codex-D1-02 — all-N rational-height bound
@@ -114,3 +115,48 @@ full-output condition is infinite whenever a zero output has nonzero
 derivative, as already happens at Krawtchouk b2_(0,0). Componentwise-input
 conditioning remains well-defined and separately tabulated. No theorem
 or candidate was rejected merely because this reporting diagnostic failed.
+
+## Round 2 continuation after f75964b
+
+The exact opposite-corner converse gives a noncircular normality certificate:
+see theory/conditioning-normality-certificate.md. Its closest predecessor is
+PD-T288, reversing the last bordered-determinant implication after requiring
+nonzero exact d. Verdict: standard converse variant, not a new mechanism.
+Kill test: any circular use of target-degree normality invalidates the reduction;
+the degree induction is written explicitly and independently checked. The exact
+Hahn checker passes all61 sizes; finite verification is distinct from an all-N
+Hahn theorem. The developer and a separate worker reran it independently.
+
+The D1-04 growth candidate now has a successful explicit lower-bound result
+in conditioning-lower-krawtchouk.md, developed by the separately allocated
+hard-step agent. D1 read and independently re-derived that written proof;
+no D1 edit was made to it. Sharp exponential rate and matching upper bounds
+remain OPEN; the original round1 deferral is preserved above as history.
+
+G3 Angelesco probe: NOT APPLICABLE in the current domain. Strictly positive
+weights on the sameN nodes cannot be disjoint. Allowing disjoint nonnegative
+supports gives a marginal with fewer thanN nodes, making an axis moment
+matrix singular at degree support-size+1<=N. A normal rectangle would be a
+different target and is not a pending experiment under the current metric.
+
+
+## Final round 2 disposition
+
+Every requested integer N=4,...,64 completed for both families at both180/260
+precisions. All six NN/path and input-model norms pass the1e-60 convergence
+screen; maximum relative differences are1.764e-115 Krawtchouk and1.285e-93 Hahn.
+The unique compact61-row table, actual commands, timing and frozen hashes are
+in attempts/D1.md. Status remains MEASURED; no outward enclosure is claimed.
+
+The finite Hahn claim is now its own PROVED finite computer-assisted theorem,
+conditioning-hahn-normality-finite.md. All61 exact input/coefficient hashes,
+43,676 interior checks, source pins and written reduction were independently
+replayed and separately table-parsed in independent-checks-03.md. This closes
+preciselyN4..64, not allN. Mandatory Claude audit remains pending.
+
+The separately allocated hard-step worker also supplied a written fixed-N
+Krawtchouk proximity obstruction in conditioning-lower-proximity.md. That
+scoped theorem rejects O(1/min|d|) as the second parameter tends to the first;
+the finite G3 screen above was only measurement and is not its proof premise.
+The successful lower-law subtarget and this negative mechanism result do not
+supply a sharp matching upper growth law or an algorithmic stability theorem.

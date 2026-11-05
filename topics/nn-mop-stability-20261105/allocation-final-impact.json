@@ -1,0 +1,260 @@
+{
+  "date": "2026-11-05",
+  "scope": "Final main/open-foreign reservation impact check only; no new range, assignment or readiness claim.",
+  "refs": [
+    {
+      "name": "main-final",
+      "sha": "5adc3e2b7226e2c3c5577335058823a8e5cc3629"
+    },
+    {
+      "name": "PR29-final",
+      "sha": "60a493a6d5f1c34a9a1b2cd9ca81a00ffe1d80c5"
+    },
+    {
+      "name": "PR27-final",
+      "sha": "c000899f3fb10d6ba0f1725341a045fe11ec943a"
+    }
+  ],
+  "files": [
+    {
+      "ref": "main-final",
+      "path": "ID_CROSSWALK.md",
+      "git_blob": "d4fa1542d3b3d47f103825daa9162ca74b340aea"
+    },
+    {
+      "ref": "main-final",
+      "path": "PROOF_STATUS.md",
+      "git_blob": "c61c3bfc7e16a6b46d6b181a6419c1b4ea55dbf5"
+    },
+    {
+      "ref": "main-final",
+      "path": "literature/INDEX.md",
+      "git_blob": "a3d19dc9836a665ea2db4f79ffdc676818a9db62"
+    },
+    {
+      "ref": "main-final",
+      "path": "state/IDEAS.md",
+      "git_blob": "283e3c0de9ffb65740fceb864bc461c7be9d0f89"
+    },
+    {
+      "ref": "main-final",
+      "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+      "git_blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97"
+    },
+    {
+      "ref": "main-final",
+      "path": "topics/nn-mop-iep-20261103/ALLOCATIONS.md",
+      "git_blob": "f010176b6a502709b58287461b88cf2803ecdb86"
+    },
+    {
+      "ref": "main-final",
+      "path": "topics/padua-argmax-alln-20261101/ALLOCATIONS.md",
+      "git_blob": "52455748cf152e1a31b714799f60434748b4c8b4"
+    },
+    {
+      "ref": "main-final",
+      "path": "topics/padua-argmax-effective-2-20261105/ALLOCATIONS.md",
+      "git_blob": "daab1cc422cdcdcabb957e75bac565bee1fc6690"
+    },
+    {
+      "ref": "main-final",
+      "path": "topics/padua-argmax-effective-20261103/ALLOCATIONS.md",
+      "git_blob": "dc68d401bef9131f87224207b76cd3eefc2df354"
+    },
+    {
+      "ref": "main-final",
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "git_blob": "5af1fe21668db3b3a688883b0110146a200b98cb"
+    },
+    {
+      "ref": "main-final",
+      "path": "topics/padua-lanczos-frontier-20261105/ALLOCATIONS.md",
+      "git_blob": "4ccc67e6b608f631efa0aebfd89d8796097a5254"
+    },
+    {
+      "ref": "main-final",
+      "path": "topics/padua-lebesgue-followups-20261103/ALLOCATIONS.md",
+      "git_blob": "63eb14b3f32326e1fc595302aa0c61b892141643"
+    },
+    {
+      "ref": "main-final",
+      "path": "topics/padua-literature-20261103/ALLOCATIONS.md",
+      "git_blob": "911a974da14c4fafb962d44342e8480c01577c01"
+    },
+    {
+      "ref": "main-final",
+      "path": "topics/padua-mz-2d-frontier-20261105/ALLOCATIONS.md",
+      "git_blob": "541113a98f6115d2993e23d6f136e274028077b3"
+    },
+    {
+      "ref": "main-final",
+      "path": "topics/padua-mz-cleanup-20261105/ALLOCATIONS.md",
+      "git_blob": "3804b990fa8ab9722d8f4dc9867948d87e6a58ce"
+    },
+    {
+      "ref": "PR29-final",
+      "path": "ID_CROSSWALK.md",
+      "git_blob": "0022797ebe466c01b1ca16c111a75549ed98eb67"
+    },
+    {
+      "ref": "PR29-final",
+      "path": "PROOF_STATUS.md",
+      "git_blob": "723d415cf4fc3eaf313c84143fa148220139f372"
+    },
+    {
+      "ref": "PR29-final",
+      "path": "literature/INDEX.md",
+      "git_blob": "a3d19dc9836a665ea2db4f79ffdc676818a9db62"
+    },
+    {
+      "ref": "PR29-final",
+      "path": "state/IDEAS.md",
+      "git_blob": "badf876b327f50fc306186e0061ba6dd0223284a"
+    },
+    {
+      "ref": "PR29-final",
+      "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+      "git_blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97"
+    },
+    {
+      "ref": "PR29-final",
+      "path": "topics/nn-mop-iep-20261103/ALLOCATIONS.md",
+      "git_blob": "f010176b6a502709b58287461b88cf2803ecdb86"
+    },
+    {
+      "ref": "PR29-final",
+      "path": "topics/padua-argmax-alln-20261101/ALLOCATIONS.md",
+      "git_blob": "52455748cf152e1a31b714799f60434748b4c8b4"
+    },
+    {
+      "ref": "PR29-final",
+      "path": "topics/padua-argmax-effective-2-20261105/ALLOCATIONS.md",
+      "git_blob": "daab1cc422cdcdcabb957e75bac565bee1fc6690"
+    },
+    {
+      "ref": "PR29-final",
+      "path": "topics/padua-argmax-effective-20261103/ALLOCATIONS.md",
+      "git_blob": "dc68d401bef9131f87224207b76cd3eefc2df354"
+    },
+    {
+      "ref": "PR29-final",
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "git_blob": "c30ee46cfd2a9ee9ee99c5ebf7d10288cc2cabe7"
+    },
+    {
+      "ref": "PR29-final",
+      "path": "topics/padua-lebesgue-followups-20261103/ALLOCATIONS.md",
+      "git_blob": "63eb14b3f32326e1fc595302aa0c61b892141643"
+    },
+    {
+      "ref": "PR29-final",
+      "path": "topics/padua-literature-20261103/ALLOCATIONS.md",
+      "git_blob": "911a974da14c4fafb962d44342e8480c01577c01"
+    },
+    {
+      "ref": "PR29-final",
+      "path": "topics/padua-mz-2d-frontier-20261105/ALLOCATIONS.md",
+      "git_blob": "541113a98f6115d2993e23d6f136e274028077b3"
+    },
+    {
+      "ref": "PR29-final",
+      "path": "topics/padua-mz-cleanup-20261105/ALLOCATIONS.md",
+      "git_blob": "3804b990fa8ab9722d8f4dc9867948d87e6a58ce"
+    },
+    {
+      "ref": "PR27-final",
+      "path": "ID_CROSSWALK.md",
+      "git_blob": "0022797ebe466c01b1ca16c111a75549ed98eb67"
+    },
+    {
+      "ref": "PR27-final",
+      "path": "PROOF_STATUS.md",
+      "git_blob": "723d415cf4fc3eaf313c84143fa148220139f372"
+    },
+    {
+      "ref": "PR27-final",
+      "path": "literature/INDEX.md",
+      "git_blob": "a3d19dc9836a665ea2db4f79ffdc676818a9db62"
+    },
+    {
+      "ref": "PR27-final",
+      "path": "state/IDEAS.md",
+      "git_blob": "badf876b327f50fc306186e0061ba6dd0223284a"
+    },
+    {
+      "ref": "PR27-final",
+      "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+      "git_blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97"
+    },
+    {
+      "ref": "PR27-final",
+      "path": "topics/nn-mop-iep-20261103/ALLOCATIONS.md",
+      "git_blob": "f010176b6a502709b58287461b88cf2803ecdb86"
+    },
+    {
+      "ref": "PR27-final",
+      "path": "topics/padua-argmax-alln-20261101/ALLOCATIONS.md",
+      "git_blob": "52455748cf152e1a31b714799f60434748b4c8b4"
+    },
+    {
+      "ref": "PR27-final",
+      "path": "topics/padua-argmax-bridge-20261105/ALLOCATIONS.md",
+      "git_blob": "02e33805a60dbf6dac3afe094791d40217a1c2d6"
+    },
+    {
+      "ref": "PR27-final",
+      "path": "topics/padua-argmax-effective-2-20261105/ALLOCATIONS.md",
+      "git_blob": "daab1cc422cdcdcabb957e75bac565bee1fc6690"
+    },
+    {
+      "ref": "PR27-final",
+      "path": "topics/padua-argmax-effective-20261103/ALLOCATIONS.md",
+      "git_blob": "dc68d401bef9131f87224207b76cd3eefc2df354"
+    },
+    {
+      "ref": "PR27-final",
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "git_blob": "c30ee46cfd2a9ee9ee99c5ebf7d10288cc2cabe7"
+    },
+    {
+      "ref": "PR27-final",
+      "path": "topics/padua-lebesgue-followups-20261103/ALLOCATIONS.md",
+      "git_blob": "63eb14b3f32326e1fc595302aa0c61b892141643"
+    },
+    {
+      "ref": "PR27-final",
+      "path": "topics/padua-literature-20261103/ALLOCATIONS.md",
+      "git_blob": "911a974da14c4fafb962d44342e8480c01577c01"
+    },
+    {
+      "ref": "PR27-final",
+      "path": "topics/padua-mz-2d-frontier-20261105/ALLOCATIONS.md",
+      "git_blob": "541113a98f6115d2993e23d6f136e274028077b3"
+    },
+    {
+      "ref": "PR27-final",
+      "path": "topics/padua-mz-cleanup-20261105/ALLOCATIONS.md",
+      "git_blob": "3804b990fa8ab9722d8f4dc9867948d87e6a58ce"
+    }
+  ],
+  "own_range": {
+    "first_publication": "d87925630e9e460031df319f3994ca2e7fad8ca0",
+    "PD-T": [
+      432,
+      471
+    ],
+    "PD-N": [
+      162,
+      177
+    ],
+    "IDEA": [
+      530,
+      569
+    ],
+    "LIT": [
+      614,
+      629
+    ]
+  },
+  "conclusion": "No foreign ownership collision found. New main acknowledges PR28's own ranges; mentions do not allocate them to another owner. PR29 is an unmerged rules proposal with no reservation. Fresh assignment/readiness union remains required later."
+}
