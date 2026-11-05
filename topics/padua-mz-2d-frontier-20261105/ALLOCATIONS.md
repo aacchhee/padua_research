@@ -25,3 +25,6 @@ above its namespace maximum. Unused IDs remain permanent gaps.
 Priority is the first pushed commit containing this file, linked from the
 draft PR. Recheck live reservations before assignments/readiness. Do not
 infer priority from the date; record the pushed commit in a later addendum.
+
+First publication: [e79c5767ff1e354b018861d827f67a481ee65cdf](https://github.com/aacchhee/padua_research/commit/e79c5767ff1e354b018861d827f67a481ee65cdf),
+linked from [draft PR23](https://github.com/aacchhee/padua_research/pull/23).
