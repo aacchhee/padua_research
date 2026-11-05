@@ -64,7 +64,7 @@ No manuscript has been drafted or accepted. The following is a development brief
 
 | Brief | Question | Supporting results | Remaining gaps | Readiness |
 |---|---|---|---|---|
-| [Effective argmax report](topics/padua-argmax-effective-20261103/report.md) | Effective all-degree global Padua corner argmax | PD-T246 finite17–32, continuous2–32 with inherited cases; PD-T250 exact spectrum; PD-T251 all-n normalized slopes and explicit physical n^-6 local radius; PD-T249 three finite E-C comparisons; PD-T247/248/252 MEASURED; scoped PD-N084–086 | PD-T099 OPEN; no effective global n0 or complete33<=n<N_* bridge; degree40 uncertified,33–39 unrun; weighted energy and the fixed scaled phase radius remain OPEN; G8 transfer/novelty coverage incomplete | Existing scopes accepted by [audit-01](topics/padua-argmax-effective-20261103/audit-01.md) and [response-check-01](topics/padua-argmax-effective-20261103/response-check-01.md); registration prepared for AC decision after mechanical checks; completed preparation historical after merge; no manuscript, submission or further Claude round |
+| [Effective argmax report](topics/padua-argmax-effective-20261103/report.md) | Effective all-degree global Padua corner argmax | PD-T246 finite17–32, continuous2–32 with inherited cases; PD-T250 exact spectrum; PD-T251 all-n normalized slopes and explicit physical n^-6 local radius; PD-T249 three finite E-C comparisons; PD-T247/248/252 MEASURED; scoped PD-N084–086 | PD-T099 OPEN; no effective global n0 or complete33<=n<N_* bridge; degree40 uncertified,33–39 unrun; weighted-energy scale and an explicit physical n^-2 corner radius for every n>=2 are proved in phase 2 by instantiating PD-T227 Scope (8); PD-T228 already gives an eventual 2^-17/n^2 radius, in particular for log n>=10^7. The usable all-degree strict-descent radius is max(1/(2[n(n+1)]^3),10^-11/n^2), combining PD-T251 and PD-T369 without extending either loss estimate. PD-T369's radius exceeds PD-T251's only for n>=473. PD-T368 is an explicit-constant re-derivation of the known O(log^2 n) norm theorem (LIT-312/LIT-379), not a priority claim. Useful constants, full-diamond asymptotics, complete phase-box certificates and an effective bridge remain OPEN; G8 transfer/novelty coverage incomplete | Existing scopes accepted by [audit-01](topics/padua-argmax-effective-20261103/audit-01.md) and [response-check-01](topics/padua-argmax-effective-20261103/response-check-01.md); registration prepared for AC decision after mechanical checks; completed preparation historical after merge; no manuscript, submission or further Claude round |
 
 ## Padua Lebesgue follow-ups — scoped count completion and analytic brief
 
@@ -125,3 +125,9 @@ no universal impossibility of lifted encodings is claimed. The earlier
 provisional negative classification is withdrawn, with its text and split
 history retained. After merge these scoped results and deferred questions
 replace the completed gate/registration tasks; only AC merges.
+
+## Effective Padua argmax phase2 — scoped paper statements
+
+| Record | Accepted scientific content | Remaining gap / limit |
+|---|---|---|
+| [Phase2 report](topics/padua-argmax-effective-2-20261105/report.md) | PD-T364 finite sufficiency; PD-T365 closed phase-boundary profile; PD-T366 wider noncorner defect; PD-T367 aggregate energy; PD-T368 explicit constants for known norm order; PD-T369 all-degree local descent; PD-T370 MEASURED finite diagnostics; PD-N132 only a*b_n obstruction | PD-T099 OPEN; global2–32 unchanged; no full-diamond N1, complete phase cover or finite bridge. Local/boundary supports are not a PARTIAL decomposition. Audit-01/response-check-01 accepted scopes; preparation audit pending. External priority remains unverified; no manuscript/submission action. |
