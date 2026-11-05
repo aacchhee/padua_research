@@ -1,6 +1,6 @@
 # Handoff 02 — nearest-neighbour MOP IEP — independent Claude audit
 
-- Status: open
+- Status: done in 48f7479700cfe3966c4e3fe4bf72122a30ddb6e6
 - Previous handoff: 01-work.md
 - Next agent / model / effort: Claude, Opus 5.5, xhigh.
 - Role: independent auditor (Claude audits Codex development).
