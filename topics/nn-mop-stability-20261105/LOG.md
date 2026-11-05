@@ -52,3 +52,15 @@
 - D5 proves local gauge-fixed full-image geometry and unique nearby SPD nearest projection; a five-field dyadic certificate proves strict backward error infinite for one raw N4LU array. Actual positive common-data correction witnesses are measured, not minima or backward-stability proofs. The original gate is preserved and a separate dated mixed metric is explicit. See attempts/D5.md.
 - D4 rederives finite Christoffel transport and Toda closure, with finite boundary and normality assumptions. An exact positive three-node pair loses normality under an exterior Christoffel change and under a common exponential path. Common multipliers preserve the weight ratio and cannot reach arbitrary pairs. The predivide-C4-restore design loses atN16 in both families and is stopped. Accurate-source transforms/flows do not solve initialization. See attempts/D4.md.
 - Supplementary Astra exact checks have reproduced derivative, transform, path-diagnostic traps and the dyadic obstruction within their stated finite scopes. Final written check report and Claude audit remain pending.
+
+## Hard conditioning step and supplementary verification checkpoint
+
+- Astra ultra produced the self-contained parity/terminal-jet proof of the explicit all-N lower bound, including a stronger positive-coefficient sum bound with base5+2sqrt(6). A separate analytic specialization refutes the G3 O(1/d_min) prediction at fixedN>=4 as measures approach proportionality. Matching upper/sharp rate remain OPEN. Scope/failed routes retained in attempts/D1-hard.md and novelty-gate-D1-hard.md.
+- Sol D1 independently reconstructed the algebra, and distinct Astra high reconstructed the final proofs and executed exact direct-moment witnesses. These supplement the still-required Claude audit.
+- Supplementary reports independent-checks-01.md and independent-checks-02.md separate actual round1 and follow-up scopes. Each identifies hashes, commands, coverage and remaining limitations. Numerical projection stationarity must distinguish the optimizer from the returned rounded rational witness; developer is making that stage explicit.
+- A reproducible sampled conditioning figure was rendered off Git and inspected; its code and receipt are committed. Full61-point figures await the running two-precision expansion.
+
+## Native/projection round2 completion
+
+- Full-Jacobian least-squares fits atN4/8, both families, C4/LU/nodeqr,100/160dps completed. Actual rational positive common-data witnesses were rebuilt; numerical stationarity is separated from rounding the returned witness. N4 finite native pairs are small; N8 does not meet100u. No global-nearest or backward-stable solver theorem is claimed.
+- The independent checker reran final projection code9deb74ef at fourN4 cases, checked exact40-field moment rebuilds, and verified returned-witness stationarity. The reporting fix changes labels/added returned-stage diagnostics, not the rational witnesses or numerical pair values. Final report02 hash a4cf80cd2695c3233f49b6e1b7dc8ec6f702f925d19e4066305ba8a671bc1b23. D3/D5 close their two-round scope; general stability remains OPEN.

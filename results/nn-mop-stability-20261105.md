@@ -13,3 +13,6 @@ Stage WORK; draft [PR28](https://github.com/aacchhee/padua_research/pull/28); Cl
 - **PROVED / MEASURED, separate records:** finite Christoffel/Toda algebra, positivity-to-normality and fixed-orbit obstructions; the particular reconstruction design fails the N16 test. [D4](../topics/nn-mop-stability-20261105/attempts/D4.md).
 
 Next: finish every-integer N4–64 conditioning, the hard exponential lower-bound proof, measured nearest-compatible fitting and independent checks; then hand to Claude Opus 5.5 xhigh. No merge request.
+
+- **PROVED (developer; Claude audit pending):** explicit all-N Krawtchouk lower bound with limiting base at least5+2sqrt(6); fixed-N proximity theorem refutes O(1/d_min) in the stated metric. [Hard step](../topics/nn-mop-stability-20261105/attempts/D1-hard.md).
+- **MEASURED:** full-array fitting separates coefficient correction and input perturbation. N4 native witnesses can be small; N8 misses100u. [Follow-up](../topics/nn-mop-stability-20261105/theory/backward-projection-measurements.md).

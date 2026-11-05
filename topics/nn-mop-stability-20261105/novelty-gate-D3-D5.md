@@ -61,3 +61,16 @@ rational input identities and 140/220-digit frozen references. Report all
 variants including losses. G4 accuracy needs matching D1 kappa*u<=1e-4 and
 two-digit gain plus a stated backward measurement. No stability theorem
 follows from these finite measurements.
+
+## Round2 authorized continuation
+
+After round1 publication at929ef787c74afc2bedcc8327d44dddc2c3409f46,
+coordinator authorized C's high-precision full-Jacobian fits at N4/8 both
+families. No new mechanism or literature novelty claim was introduced.
+Candidate C now has measured stationary fits and exact rational positive
+common-data witnesses. Full-array corrections and input perturbations are
+reported separately; no raw strict backward metric substitution and no
+certified nearest-minimum claim. N4 passes the dated finite mixed100u
+test for LU/nodeqr; N8 does not. These dispositions are retained in
+the complete candidate memory and D5, with failed precision-limited
+iterations preserved. A uniform algorithmic stability theorem is OPEN.

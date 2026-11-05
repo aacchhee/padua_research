@@ -91,9 +91,21 @@ none earns a new-algorithm or priority claim without primary comparison.
   A feasible positive common-data pair and whole-array correction measured
   for all methods N4/8/12/16; rational input normality checked exactly
   through N8. This witness is not the nearest minimizer.
-- Disposition: geometry retained, numerical nearest projection deferred.
-  Resume with a converged full Jacobian nonlinear fit and an explicit
-  optimization/certification residual. Joint stability remains OPEN.
+- Round2 result: full analytic-Jacobian Gauss–Newton fits executed N4/8
+  both families for C4/LU/nodeqr at100/160dps. All160dps fits meet numerical
+  stationarity; exact rational positive mass-one common-data witnesses
+  have all14/44 mixed systems nonsingular. The full array is rebuilt, not
+  only marginal axes. N4 LU pair components<=3.07u and nodeqr<=30u;
+  N8 both native variants miss100u. Three100dps line-search precision
+  stalls retained. The fit is not a certified nearest minimizer.
+  Independent checker replayed all four N4 native fits and exactly rebuilt
+  all40 fields/objectives from their identical rational inputs; no N8
+  independent fit or minimizer certification is claimed.
+- Disposition: local geometry retained; finite mixed-pair success only at
+  N4 under the dated amendment. Certified nearest fitting and general
+  joint stability remain OPEN. Round1's numerical deferral is superseded
+  by this measured implementation, not by an optimization theorem.
+  Record: [backward-projection-measurements.md](theory/backward-projection-measurements.md).
 
 ## IDEA?nn-mop-stability-codex-34 — literal input-only backward interpretation
 

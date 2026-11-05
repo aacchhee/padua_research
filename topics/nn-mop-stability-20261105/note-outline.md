@@ -45,3 +45,13 @@ A contact-ready note would require the actual conditioning/algorithm results,
 the external source/configuration check, complete provenance and required
 independent audit. This outline does not assert that any of those gates has
 been cleared, and author contact remains AC's decision.
+
+## 2026-11-05 development update for AC — not a message
+
+The campaign now has a self-contained Krawtchouk lower bound
+
+    kappa_N >= 5/(2M^2) * [(5+2sqrt(6))^(M-1)+(5-2sqrt(6))^(M-1)], M=N-1,
+
+and a separate fixed-N proximity obstruction to the proposed inverse-minimum-divisor law. Both received supplementary independent reconstruction; mandatory Claude audit is pending. Cite the precise norms and normality proof rather than claiming historical priority. The upper bound remains coarse and the sharp rate OPEN.
+
+Native whole-triangle variants show bounded forward gains. Strict raw-array backward error can be infinite despite those gains; use the actual-image geometry and a separately declared correction/input metric. Numerical fitted witnesses are not certified nearest points, and the100u mixed target fails atN8 in the completed fits. Public implementation comparison remains blocked, so no numerical equivalence to the Leuven algorithms or reproduction claim belongs in a note. No contact has been made.
