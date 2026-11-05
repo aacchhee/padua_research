@@ -30,7 +30,7 @@ These are literature findings only. They carry no PD status changes and no new m
 
 ## Next step
 
-Codex (gpt-6-astra high) re-audit per handoff 07, at input head d9366d0. Still needed from AC: print-only DMV 1995 (see DOWNLOADS v5).
+Codex (gpt-6-astra high) re-audit per handoff 08, at input head 10aa5d3. Still needed from AC: print-only DMV 1995 (see DOWNLOADS v5).
 
 ## 2026-11-05 — independent audit disposition
 
@@ -43,3 +43,4 @@ All six audit-01 findings were accepted and answered with changes; see [response
 - **F2–F6.** Record corrections: Mastroianni–Russo Thm 9 hypothesis and scoped negative; Möller dim Π²_{n−1}; downdating question scoped against IDEA-094/095; Laurie awareness statement kept.
 - **Primary checks.** Xu 1996 journal Thm 3.3 has 1 < p < ∞ (version difference from the preprint), De Marchi p. 23 and SVZ (25)/Table 1 confirmed; 10/10 direct Crossref matches.
 - **Supplement.** Pimenova (constant 2/π²), Kuznetsova p. 259 and SVZ pp. 417/421 confirmed on page images; no verdict changes.
+- **MathSciNet citation check.** One citer of KL 2021 (Kolomoitsev–Liflyand 2021, Fourier simplex constants; RELATED), none of De Marchi 2022, nine of SVZ 2008 (Padua2DM restates "not all positive" weights). No verdict changes.

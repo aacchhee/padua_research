@@ -1,7 +1,7 @@
 # Padua literature campaign (P1–P4): log
 
 - Branch: `claude/padua-literature-20261103` · Base: main `440d107` · Developer: Claude · Auditor: Codex (gpt-6-astra high)
-- Stage: AUDIT · Next: `Codex (gpt-6-astra high): Continue claude/padua-literature-20261103.` · Open handoff: [handoffs/07-audit.md](handoffs/07-audit.md)
+- Stage: AUDIT · Next: `Codex (gpt-6-astra high): Continue claude/padua-literature-20261103.` · Open handoff: [handoffs/08-audit.md](handoffs/08-audit.md)
 - Reserved final-ID ranges: LIT-482–561 (80); no PD-T, PD-N or IDEA range. See [ALLOCATIONS.md](ALLOCATIONS.md).
 - Claims: none (literature topic). Note: [SINUM 2026 assessment](notes/faghih-sinum-2026-assessment.md).
 - Open for AC: the remaining PDFs in DOWNLOADS.md v5 (A9 print-only, interlibrary loan; A10, A15, A19 low priority).
@@ -122,3 +122,4 @@
   - Claude read Kolomoitsev–Liflyand 2021 (new record, LIT?…-86; RELATED). Scanned Padua2DM 2011 and DMVX 2009 (Springer).
   - Checked MathSciNet via NTNU: Kuznetsova MR1353627 shows 0 citations despite two known citers, so the index is incomplete; Pimenova 0. The search "Padua points Lebesgue" gives 8 items, of which 2 are new and related (Carnicer–Godés 2018; Vianello 2019).
   - No verdict changes. [Note](notes/mathscinet-citation-check-2026-11-05.md). Handoff 07 had not started, so it is superseded by handoff 08.
+- [Handoff 07](handoffs/07-audit.md) superseded by [handoff 08](handoffs/08-audit.md): Codex gpt-6-astra high re-audit at input head 10aa5d3.
