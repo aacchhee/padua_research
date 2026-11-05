@@ -276,3 +276,60 @@ Supplementary Astra high reconstructed all new analytic results with no gap foun
 Registered homes: PD-T294 harmonic profile,295 weights,296 positive reference,297 uniform norm,298/299 exact m60/m80,300 finite MEASURED observations; PD-N104 sign-discard intermediary,105/106 opposite carrier energies,107 sharp signed ratio threshold. Permanent unused gaps T301–323/N108–115/IDEA398–413/LIT574–581; no accepted ID renumbered.
 
 Preparation preserves all accepted scientific source/receipt/auditor identities; no mathematical rerun. Core registration candidate05ccb20 passed the distinct Astra medium protocol check. Main and foreign heads remained unchanged at the final reservation recheck. This PR’s readiness does not approve the other draft PRs or prescribe AC’s merge order.
+
+## nn-mop-iep-20261103 — nearest-neighbour MOPs as a commuting-pair IEP
+
+This file is written only by the topic orchestrator. Branch `codex/nn-mop-iep-20261103`;
+draft [PR22](https://github.com/aacchhee/padua_research/pull/22).
+
+### Status (2026-11-05): prepared and protocol-checked; ready for AC's merge decision
+
+- PROVED, standard formulation: under explicit normality, moment systems
+  uniquely give the finite polynomial triangle and both NN coefficient arrays.
+  [PD-T286](topics/nn-mop-iep-20261103/theory/finite-moment-formulation.md).
+- PROVED, positive split: the interior diagonal differences are nonzero under
+  opposite-corner normality; the marginal Jacobi data reconstruct the full
+  coefficient triangle through degree N-1 using only divisors through N-2.
+  Terminal d=0 is a final boundary condition. The former PD-N?…01 failure
+  classification is withdrawn; its original wording remains historical.
+  [PD-T288](topics/nn-mop-iep-20261103/theory/interior-divisor-nonvanishing.md),
+  [PD-T289](topics/nn-mop-iep-20261103/theory/marginal-reconstruction.md),
+  [split map](topics/nn-mop-iep-20261103/SPLITS.md).
+- MEASURED: 14 exact cases N=2,...,8; 476 recurrences and 70 shifted flatness
+  squares pass. Independent rerun plus separate small checker completed.
+  [PD-T287](topics/nn-mop-iep-20261103/theory/finite-checks.md).
+- MEASURED negative: all 112 tested fixed-site transfer pairs fail to commute
+  at x=0; no universal impossibility of alternative encodings is claimed.
+  [PD-N100](topics/nn-mop-iep-20261103/theory/fixed-site-dictionary-failure.md).
+- Known exact reduction; numerical question OPEN: lattice zero curvature
+  differs from PD-T057's multiplication sections. The marginal route needs
+  only marginal Jacobi data; the shifted step-line route needs the shift
+  family plus boundary information. No distinct new updater
+  survives the gate, so no C3 comparison or stability
+  equivalence is claimed. [Report](topics/nn-mop-iep-20261103/report.md),
+  [gate](topics/nn-mop-iep-20261103/gate.md),
+  [candidates](topics/nn-mop-iep-20261103/candidates.md).
+
+- MEASURED C4-only pilot: source Kravchuk/Hahn weights, N4,8,12,16,24,32;
+  binary64 Stieltjes plus A/B layers versus 140/220-digit references. All
+  coefficients remain finite without zero division, but fieldwise normwise
+  relative errors exceed one at Kravchuk N24/32 and Hahn N16/24/32.
+  This is a finite implementation observation, not general instability or
+  a source residual/C3 comparison. [PD-T290](topics/nn-mop-iep-20261103/theory/c4-baseline-measurements.md).
+- Claude [audit-01](topics/nn-mop-iep-20261103/audit-01.md) accepted the
+  original formulation and finite counts, returned F1–F4 and N1/N2.
+  [Response-01](topics/nn-mop-iep-20261103/response-01.md) accepts all
+  findings, rechecks primary formulas, corrects the C4 interpretation and
+  executes the baseline. [Supplementary check](topics/nn-mop-iep-20261103/response-independent-01.md)
+  supplies additional independent evidence. Claude audit-02 accepted the response.
+
+- Claude [audit-02](topics/nn-mop-iep-20261103/audit-02.md) accepts response-01:
+  PD-T288/289 PROVED, PD-T290 MEASURED and the provisional negative withdrawal.
+  Auditor exact-reference checks cover sampled N4,8,12,16,24; N32 retains
+  precision convergence. Approved E1/E2/X1 edits and final registration are
+  complete. Claude [protocol check](topics/nn-mop-iep-20261103/preparation/protocol-check-01.md)
+  passed; PR22 is ready for AC's merge decision.
+
+### Next step
+
+AC: merge decision on PR22 (handoff07). After the merge, `Claude (Sonnet 5.5 medium): Continue codex/nn-mop-iep-20261103.` closes the topic.
