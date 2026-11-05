@@ -1,6 +1,6 @@
 # Handoff 04 — NN MOP response-01 re-audit
 
-- Status: open
+- Status: done in a1ff14f8e89be268f0e0cfdd50d0f47bd319c708
 - Previous handoff: 03-response.md
 - Next agent / model / effort: Claude, Opus 5.5, xhigh.
 - Role: independent auditor of Codex response-01.
