@@ -239,3 +239,9 @@ Late reservation refresh: PR24 advanced to79c3d6a211325eca6e8311b3ae03187c100a1d
 ledger/registry copies: shared files are exactly current-main bytes, and its
 own permanent reservation ledger is unchanged. Main21dbfc9 and PR21 890f56c
 remain unchanged. No collision or changed literature mapping results.
+
+Scoped squash rehearsal at checkpointfcb3a6a: main→PR22 matches the
+checkpoint tree exactly; independently PR22→PR24(79c3d6a) and PR22→PR21
+(890f56c) squash cleanly, preserving topic/results and all own registry
+sections. [Receipt](preparation/squash-rehearsal.json); disposable worktree
+removed, no live merge/order approval. Mechanical registration check passes.

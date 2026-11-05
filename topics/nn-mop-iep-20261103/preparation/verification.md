@@ -67,3 +67,30 @@ for PR21/24 or AC merge order is inferred. Only AC merges.
 The scoped local squash-rehearsal result is recorded below after the frozen
 preparation checkpoint. Any later main change requires another impact check;
 this receipt is not approval of a different base or unrelated branch.
+
+## Completed final mechanical validation and squash rehearsal
+
+The registration checker and `git diff --check` both passed. Its JSON reports
+10 assignments,12 literature aliases,7 new sources, no final withdrawn-negative
+ID, unchanged accepted proof/evidence sections and executable bytes. No science
+was rerun. The temporary handoff06 draft existed for link checking; it was
+excluded from the preparation checkpoint and its final input SHA is filled
+only after the output commit, before publication.
+
+[Squash receipt](squash-rehearsal.json) pins preparation checkpoint
+fcb3a6af326a8a9540849fcdbe9a5c4f1b222d3c and main21dbfc9. In a detached
+throwaway worktree, `git merge --squash --no-commit <PR22 checkpoint>` plus
+`git write-tree` exactly matched its tree19c4370e4959f0e382973a1260650344ef1f7dcd.
+After a disposable local squash commit, separately squashing current PR24
+79c3d6a or PR21 890f56c completed without conflicts. Exact topic records/results
+and all eight PR22 shared-registration sections were preserved in both trees.
+The receipt records source/commit/tree identities. The worktree was reset and
+removed; main, remote refs and other topic branches were not changed.
+
+Rehearsal commands use `git worktree add --detach <temporary> <base>`,
+`git -C <temporary> merge --squash --no-commit <head>`, `write-tree` and a
+local disposable commit, then repeat each second-head squash from the same
+base/PR22 checkpoint. Topic path diffs and literal shared-section comparisons
+verify preservation. It is a scoped proposed sequence check, not readiness
+or scientific approval of PR21/24, nor an AC merge-order decision. Later
+changes to those heads require another check before relying on that sequence.
