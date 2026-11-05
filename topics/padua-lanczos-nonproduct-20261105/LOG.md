@@ -22,3 +22,18 @@
 ## Runs needed
 
 - N0–N4 and P1–P6 as in handoff 01.
+
+## 2026-11-05 — continuation setup — Codex, requested gpt-6-astra high
+
+- Role: coordinator/developer. Serving metadata not independently exposed.
+- Rules/input head: `cafb74ab6f7738c8af83d0cd0f518b81af16f253`.
+  Fetched main: `be9a8318150204711d5446d2ea26284cf1ed0819`, already an
+  ancestor; no merge needed. Working tree was clean.
+- Read AGENTS, WORKFLOW, Codex role, LOG and open handoff 01. Its explicit
+  model allocation and six parallel directions govern this campaign.
+- Initial network attempt failed with an unavailable proxy; retry with the
+  execution tool's network permission succeeded. No credential changes.
+- Wrote [plan.md](plan.md) before new experiments, including exact N2 slope
+  conventions and the distinction between sufficient and maximal N4 radii.
+- Assigned predecessor replay to a Sol medium worker; direction workers wait
+  for N0. No scientific claim or novelty content is added by this setup.
