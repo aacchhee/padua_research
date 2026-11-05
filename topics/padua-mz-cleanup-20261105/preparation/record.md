@@ -80,3 +80,26 @@ payload identities remain separately recorded; delivery remains pending.
 
 Integration rehearsal and distinct Astra medium protocol review are the
 remaining release gates. No ready/merge decision is claimed at this checkpoint.
+
+## Live-head refresh and integration completed
+
+A second live fetch/query found main and PR21 unchanged, PR24 advanced
+to b81a1a1dcd6a633dcfd27429dc6ee22e74849d14 and PR25 advanced to
+22e8540cf90278dad2eba3eb51f129ca10a9dd9e. Open PR population is still
+21/24/25/26; closed-unmerged remains empty. Every required ledger and
+canonical-registry **path and blob** at each advanced head is exactly the
+same as the complete read used for assignment. No new ledger/path/range
+or changed registry bytes are omitted. [Live receipt](live-recheck.json).
+
+Nine actual disposable squash sequences pass against the refreshed
+foreign heads: PR26 alone; both orders with each of PR21/24/25; and two
+opposite all-four orders. No conflicts; own shared/theory bytes match the
+registration candidate and each included foreign topic/results subtree
+matches its pinned head. Main and live branch refs are untouched; the
+worktree was removed. [Rehearsal](integration-rehearsal.json), reproducible
+with rehearse_integration.py. The tiny later sharp-target footer records
+only final registration provenance; its complete prior body stays exact.
+
+The independent Astra medium reviewer is completing the ordinary
+registration/readiness decision against these actual receipts. Final
+inventory/readiness packaging follows that result; no merge is authorized.

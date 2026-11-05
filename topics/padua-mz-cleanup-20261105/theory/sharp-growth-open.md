@@ -79,3 +79,12 @@ narrowing it to packet bounds. During development the separate -04 file
 used “Split from: C3's sharp-growth target” without a durable target ID.
 This response supplies that OPEN home and explicit relationship; it
 adds no claim that a sharp limit exists and changes no accepted formula.
+
+## Final registration
+
+2026-11-05: registered as PD-T381 (OPEN), with separate PROVED support
+PD-T379 and candidate IDEA-470's deferred route. The response-stage
+mapping/preparation-pending sentence above is historical and is now
+satisfied by the [final map](../preparation/final-id-map.json) and
+[registration record](../preparation/record.md). No target statement,
+hypothesis, proof or mathematical status changes.
