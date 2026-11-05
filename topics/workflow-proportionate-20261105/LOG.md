@@ -1,6 +1,6 @@
 # Proportionate audit and records — workflow change: log
 
-- Branch: `claude/elegant-lamport-wkozfa` · Base: main `b4d292eea5eed373002506d5e16a3761bd7ae10e` · Developer: Claude (Opus 5.5 high) · Auditor: Codex · Stage: AUDIT · Open handoff: [handoffs/02-audit.md](handoffs/02-audit.md)
+- Branch: `claude/elegant-lamport-wkozfa` · Base: main `b4d292eea5eed373002506d5e16a3761bd7ae10e` · Developer: Claude (Opus 5.5 high) · Auditor: Codex · Stage: PR · Agent work complete; handoff 02 closes after the audit output commit
 - Scope: `agents/WORKFLOW.md`, both role files, `templates/HANDOFF.md`, `templates/IDEA.md`, and this topic’s records. No scientific record, registry or ID is touched; no range.
 
 ## 2026-11-05 — Claude, Opus 5.5 high (claude-opus-5-5) — rules change at AC's request
@@ -56,3 +56,12 @@
   - draft-time reservation is dropped, in favour of reserving when final IDs are first needed and the full recheck at readiness.
 - The rules text already implements both, so no rules file changes.
 - Handoff 01 had not been started by Codex and is superseded by [handoff 02](handoffs/02-audit.md), which drops the request for Codex's view on these two choices. The Codex audit remains required.
+
+
+## 2026-11-05 — Codex independent protocol audit and readiness
+
+- Rules SHA: `60a493a6d5f1c34a9a1b2cd9ca81a00ffe1d80c5`; requested model/effort `gpt-6-astra` medium, serving metadata not independently exposed. Role: independent auditor and orchestrator.
+- Audited candidate `2218530058a4571e1ec70ba7380b56395cb0980c`; reconciled current main `5adc3e2b7226e2c3c5577335058823a8e5cc3629` in clean merge `299581f6dc3861f0d9848cfb19292cadc518a8fd`.
+- [audit-01.md](audit-01.md): ACCEPT; no blocking/major findings. One minor inventory fix committed separately in `1f31f97`. Rule/template bytes remain identical to the candidate. Independent byte/scope/protection checks and diff whitespace checks passed.
+- Novelty gate: not applicable, protocol-only change. No range; no scientific result, ID, ledger or registry changed relative to current main. No scientific reruns needed.
+- PR29 is ready for AC after publication of the audit and closure of [handoff 02](handoffs/02-audit.md). No successor or additional agent round is required. Only AC merges.
