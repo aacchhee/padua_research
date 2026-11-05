@@ -1,6 +1,6 @@
 # Handoff 07 — padua-argmax-effective-2-20261105 — final readiness bookkeeping
 
-- Status: open
+- Status: done in c094182a223da10c9f97ec7e832b8914594dce2a
 - Previous handoff: 06-preparation-audit.md (done in 205fcb644559409501dc94a0a11ba66721977ecb)
 
 - Next agent / model / effort: Codex, gpt-6.1-sol medium. This is mechanical bookkeeping; no mathematics. If a registry or classification decision unexpectedly arises, stop and use gpt-6-astra ultra per AC's standing instruction. Record the actual models.
