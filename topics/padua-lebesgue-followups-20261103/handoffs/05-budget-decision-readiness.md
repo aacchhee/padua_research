@@ -1,6 +1,6 @@
 # Handoff 05 — Padua Lebesgue follow-ups — budget decision and readiness
 
-- Status: open
+- Status: done in b9227bab61cf2a65db66c84a0b7d9552939eaac9
 - Previous handoff: [04-pr-preparation.md](04-pr-preparation.md)
 - Next agent / model / effort: Codex, gpt-6.1-sol medium (bounded readiness/lifecycle work); distinct gpt-6-astra medium only if a changed preparation scope requires a follow-up check
 - Role: topic orchestrator
