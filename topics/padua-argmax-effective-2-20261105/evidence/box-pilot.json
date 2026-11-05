@@ -1,0 +1,211 @@
+{
+  "status": "MEASURED floating natural-interval pilot only",
+  "rules_sha": "2fb2f7502bb8d1b46c0fe1089588c46a06df258d",
+  "command": "OPENBLAS_NUM_THREADS=1 python topics/padua-argmax-effective-2-20261105/code/box_pilot.py",
+  "compile_command": [
+    "cc",
+    "-O3",
+    "-std=c11",
+    "-shared",
+    "-fPIC",
+    "/workspace/padua_research/topics/padua-argmax-effective-2-20261105/code/phase_probe.c",
+    "/workspace/padua_research/topics/padua-argmax-effective-2-20261105/code/box_pilot.c",
+    "-lm",
+    "-o",
+    "/workspace/padua_research/local-output/argmax-effective-2-20261105/phase-probe/box_pilot.so"
+  ],
+  "compiler": "cc (Debian 14.2.0-19) 14.2.0",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "caps": {
+    "visited_boxes": 2000,
+    "CPU_seconds_per_degree": 60
+  },
+  "policy": "four quadrants; breadth-first; longest-side bisection",
+  "sources": [
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/code/box_pilot.c",
+      "bytes": 4359,
+      "sha256": "92f111e0c58c59de32490118a30d88b26de356a93e0ec7251928059e1f2f4d0b"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/code/box_pilot.py",
+      "bytes": 8581,
+      "sha256": "22443511c1bb98f0f76a06cef6f222d9c7a428848af063443ab179afe473d800"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/code/phase_probe.c",
+      "bytes": 1510,
+      "sha256": "692d4afd89d3bbda3bac3daaeef7c56aa4ecdde0f9cdd32b9fefa0e296adc365"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/code/phase_probe.py",
+      "bytes": 7620,
+      "sha256": "a2d85ffd293c50095fc6e451a6a4473b17b63bbb54123f397dcec148b08495d9"
+    }
+  ],
+  "mathematical_inputs": [
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/attempts/H1.md",
+      "bytes": 6967,
+      "sha256": "624d65e861c0f2d0afbcae7cd867d247d68bce54ef9b2d372292640a6c50a1aa"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/theory/phase-structure.md",
+      "bytes": 14394,
+      "sha256": "130820b34725a58e3dfd78602917d4eb77eb45d9476cae62532aa2579c42cbe4"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/theory/defect-radius-extension.md",
+      "bytes": 9311,
+      "sha256": "a56fedfb1897c7bdbd1d761d7016e2bd0a016ccc7264440d05aa35a0d5d60a0d"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/theory/corner-n2-local-radius.md",
+      "bytes": 3893,
+      "sha256": "280cfe73bc4ca82485a5f8df58ebbb864fd471a91403ac1b7849cdb4065bb5ad"
+    }
+  ],
+  "validation": {
+    "points": 412,
+    "max_violation": 1.1368683772161603e-13,
+    "diagnostic_tolerance": "1e-10*(1+abs(reference))",
+    "accepted": true
+  },
+  "degrees": [
+    {
+      "n": 17,
+      "Lambda_corner": 8.617947824993603,
+      "eps": 9.617947824993604e-10,
+      "visited": 2000,
+      "counts": {
+        "split": 1438,
+        "outside": 44,
+        "far": 363,
+        "corner-orbit-plus-defect": 155
+      },
+      "unresolved_frontier": 880,
+      "complete_float_cover": false,
+      "stop_reason": "box-cap",
+      "wall_seconds": 0.7419349179999699,
+      "cpu_seconds": 0.741786222,
+      "deepest_bisections": 11,
+      "minimum_visited_maxwidth": 0.09817477042468103,
+      "profile_boxes": 227,
+      "frontier_maxwidth_min": 0.04908738521234046,
+      "frontier_maxwidth_max": 0.09817477042468103
+    },
+    {
+      "n": 32,
+      "Lambda_corner": 10.99359454110044,
+      "eps": 1.199359454110044e-09,
+      "visited": 2000,
+      "counts": {
+        "split": 1449,
+        "outside": 32,
+        "far": 374,
+        "corner-orbit-plus-defect": 145
+      },
+      "unresolved_frontier": 902,
+      "complete_float_cover": false,
+      "stop_reason": "box-cap",
+      "wall_seconds": 2.439438407000125,
+      "cpu_seconds": 2.4390277780000003,
+      "deepest_bisections": 11,
+      "minimum_visited_maxwidth": 0.09817477042468103,
+      "profile_boxes": 197,
+      "frontier_maxwidth_min": 0.04908738521234046,
+      "frontier_maxwidth_max": 0.09817477042468103
+    },
+    {
+      "n": 64,
+      "Lambda_corner": 13.973207805351175,
+      "eps": 1.4973207805351175e-09,
+      "visited": 2000,
+      "counts": {
+        "split": 1385,
+        "outside": 32,
+        "far": 421,
+        "corner-orbit-plus-defect": 162
+      },
+      "unresolved_frontier": 774,
+      "complete_float_cover": false,
+      "stop_reason": "box-cap",
+      "wall_seconds": 9.14209466300008,
+      "cpu_seconds": 9.140718672,
+      "deepest_bisections": 12,
+      "minimum_visited_maxwidth": 0.04908738521234046,
+      "profile_boxes": 234,
+      "frontier_maxwidth_min": 0.04908738521234046,
+      "frontier_maxwidth_max": 0.04908738521234057
+    },
+    {
+      "n": 128,
+      "Lambda_corner": 17.34605680007003,
+      "eps": 1.834605680007003e-09,
+      "visited": 2000,
+      "counts": {
+        "split": 1399,
+        "outside": 28,
+        "far": 395,
+        "corner-orbit-plus-defect": 178
+      },
+      "unresolved_frontier": 802,
+      "complete_float_cover": false,
+      "stop_reason": "box-cap",
+      "wall_seconds": 38.389084495000134,
+      "cpu_seconds": 38.384132650000005,
+      "deepest_bisections": 12,
+      "minimum_visited_maxwidth": 0.04908738521234052,
+      "profile_boxes": 222,
+      "frontier_maxwidth_min": 0.04908738521234046,
+      "frontier_maxwidth_max": 0.04908738521234057
+    },
+    {
+      "n": 256,
+      "Lambda_corner": 21.111257233386183,
+      "eps": 2.2111257233386184e-09,
+      "visited": 802,
+      "counts": {
+        "split": 553,
+        "outside": 28,
+        "far": 195,
+        "corner-orbit-plus-defect": 26
+      },
+      "unresolved_frontier": 308,
+      "complete_float_cover": false,
+      "stop_reason": "CPU-cap",
+      "wall_seconds": 60.0366928819999,
+      "cpu_seconds": 60.031124347,
+      "deepest_bisections": 9,
+      "minimum_visited_maxwidth": 0.19634954084936207,
+      "profile_boxes": 81,
+      "frontier_maxwidth_min": 0.09817477042468103,
+      "frontier_maxwidth_max": 0.19634954084936207
+    }
+  ],
+  "raw": [
+    {
+      "path": "local-output/argmax-effective-2-20261105/phase-probe/box-trace.jsonl",
+      "bytes": 2011603,
+      "sha256": "21b795f6e22621ea13f45a3f5153f611b6c3dd4e42ce8f27e884ba87900a49e8"
+    },
+    {
+      "path": "local-output/argmax-effective-2-20261105/phase-probe/box-frontiers.json",
+      "bytes": 301422,
+      "sha256": "a91a94067458d56847a8d1f0bc776daa4955a850476832c05afd0f49194ea48f"
+    },
+    {
+      "path": "local-output/argmax-effective-2-20261105/phase-probe/box-validation.json",
+      "bytes": 69331,
+      "sha256": "14e6f43a4595239c6cdd96b73065f107c5a32f14f4a5feb9c36ed36049593dc9"
+    }
+  ],
+  "limits": [
+    "No directed rounding; eps is a diagnostic budget, not an error bound.",
+    "Natural interval variant only; capped frontier is unresolved, not a box-growth kill criterion.",
+    "No energy-based corner-radius enlargement; only universal H3 radius.",
+    "No independent agent checker, corruption controls, exact certificate or exact timing projection."
+  ]
+}

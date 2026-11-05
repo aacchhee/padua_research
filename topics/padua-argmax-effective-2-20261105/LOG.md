@@ -1,9 +1,9 @@
 # Effective all-degree Padua argmax, phase 2 (PD-T099): log
 
 - Branch: `codex/padua-argmax-effective-2-20261105` · Base: main `5db1e01` (PR #19 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: `Codex (gpt-6-astra ultra): Continue codex/padua-argmax-effective-2-20261105.` · Open handoff: [handoffs/01-work.md](handoffs/01-work.md)
-- Reserved final-ID ranges: none yet. Reserve when the draft PR opens: main, open PRs #20–#24, and phase 1's retired gaps.
-- Claims: none yet.
+- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Continue codex/padua-argmax-effective-2-20261105.` · Open handoff: [handoffs/02-audit.md](handoffs/02-audit.md)
+- Permanent reservation: T364–375/N132–137/IDEA454–465/LIT594–597, first published ce17564; no final assignments. [Ledger](ALLOCATIONS.md).
+- Scoped claims: analytic T01/T03–T07 and N01; T02 CONDITIONAL diagnostic. Full-diamond H2, complete H1 certification and PD-T099 remain OPEN; see report.md and gates.md.
 - Open for AC: the sandbox compute allowance in handoff 01 (6 h per run, about 48 h cumulative CPU) is Claude's proposal; AC may change it. Ask AC before using any machine outside the sandbox.
 
 ## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
@@ -48,3 +48,17 @@
 - Initial full finite-class projection samples are complete: all admissible odd centers at 49 phases each of n48/96/192. Positive measured margins are not continuum bounds. See projection-probe.md.
 - A bounded floating interval box pilot is being implemented to test actual cover behavior, with preregistered caps rather than inferred box counts. One worker dispatch hit transient model capacity; retry uses the same assigned Sol medium model, with no silent substitute. No external machine or expanded compute requested.
 - [Literal shared-record proposals](proposed-record-changes.md) preserve PD-T099 OPEN and global2–32; no merged registry edited.
+
+## 2026-11-05 — bounded-cover outcome and record integration
+
+- The natural floating interval variant reached its preregistered2000-box cap at n17/32/64/128 and60-CPU-second cap at n256, with incomplete frontiers. It is neither a complete cover nor a measured asymptotic growth law, and does not kill H1's other enclosures. A final source-identity-preserving rerun adds conservative invalid-interval guards after code review; no parameters or broader degree scope are changed.
+- Mathematical T01 orbit-formula impact check accepted at frozen hash130820b34725a58e3dfd78602917d4eb77eb45d9476cae62532aa2579c42cbe4; the checker extended its separate spectral program and reran175 orbit comparisons. All10 reviewed hashes now match.
+- Root report, gate synthesis and repository-only results preserve PD-T099 OPEN and global2–32. Remaining H1/H2 work is explicit; no planned run is recorded as executed.
+- Integration mergeed21cc0 used Git's standard merge message and lacks the typed prefix/Agent/Model trailers. It is already published and is not rewritten; subsequent scoped development/checkpoint commits contain the required trailers. This metadata deviation is retained for protocol audit, not silently corrected by history rewriting.
+
+## 2026-11-05 — final development outcome / AUDIT
+
+- Final guarded box pilot: n17/32/64/128 each2000 visited, unresolved880/902/774/802; n256802 visited at60.0311 CPU seconds,308 unresolved. All8,802 trace rows have finite nonnegative predicate bounds and reconciled counts;412 finite validation comparisons stayed within the diagnostic margin. No full cover, exact time projection, new global degree or original A1 kill verdict. [Actual run record](box-pilot.md).
+- The guarded code rerun is the final source/receipt pair. The earlier run is disclosed but not mislabeled as using the final source. Its different CPU-limited stopping count is normal; bounds/counts at completed2000-box degrees match.
+- Development checkpoint is ready for independent Claude Opus5.5 xhigh audit of the exact scoped claims and protocol. This does not declare the original all-degree goal solved. [Handoff02](handoffs/02-audit.md) names the audit scope, explicit remaining H1/H2 work and prospective-gate qualifications. The auditor's next disposition must preserve that remaining research rather than treating this checkpoint as a complete bridge.
+- No main push, live merge, force-push, tag, settings/workflow/.github change or canonical scientific-registry edit. All allocated reservations remain unchanged; PR25 stays a draft.
