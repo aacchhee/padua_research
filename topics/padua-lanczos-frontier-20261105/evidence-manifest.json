@@ -3,10 +3,10 @@
   "source_rules_commit": "9825d184517db81d0aad8542fbd6639f2164b803",
   "scope": "All tracked topic/results files except LOG, handoffs and this manifest; identities only, not scientific acceptance.",
   "inventory": {
-    "path": "/tmp/padua-lanczos-frontier-storage/files-79e4b00257a5f8335f6f2b3942d8be205b14f4dee357b9dd1fbbf24c759c34b8.json",
-    "bytes": 20579,
-    "sha256": "79e4b00257a5f8335f6f2b3942d8be205b14f4dee357b9dd1fbbf24c759c34b8",
-    "files": 196
+    "path": "/tmp/padua-lanczos-frontier-storage/files-8566bc7b18a75364d17b29490506bb5977274feead120f2043b919ef1fa6bb0f.json",
+    "bytes": 21319,
+    "sha256": "8566bc7b18a75364d17b29490506bb5977274feead120f2043b919ef1fa6bb0f",
+    "files": 203
   },
   "verification": "Recompute the entire canonical file inventory from repository bytes; external inventory is not an acceptance dependency. Individual rows remain in the external content-addressed inventory and can be regenerated with this committed helper.",
   "build_command": "python -B topics/padua-lanczos-frontier-20261105/code/check_manifest.py --write --rules 9825d184517db81d0aad8542fbd6639f2164b803",
