@@ -36,6 +36,20 @@ class V:
   D=Z(1)
   for q in qs:D=D.lcm(q.denominator)
   return cls(IM([[q.numerator*(D//q.denominator) for q in qs]]),D)
+ @classmethod
+ def linear_combination(cls,M,terms):
+  """Exact integer lcm-weighted sum, canonicalized only after all terms."""
+  assert M>0
+  weighted=[];D=Z(1)
+  for c,v in terms:
+   assert v.z.nrows()==1 and v.z.ncols()==M
+   c=Q(c)
+   if c:
+    den=v.D*c.denominator;D=D.lcm(den)
+    weighted.append((c.numerator,den,v.z))
+  row=IM(1,M)
+  for num,den,z in weighted:row=row+z*(num*(D//den))
+  return cls(row,D)
  def scale(self,c):
   c=Q(c)
   if not c:return V.const(len(self.a),0)
@@ -79,18 +93,22 @@ def arithmetic_controls():
  assert a.mul(b).asq()==[u*v for u,v in zip(x,y)]
  assert a.square().asq()==[u*u for u in x]
  assert a.dot(b)==sum((u*v for u,v in zip(x,y)),Q(0))
+ for terms in [[],[(Q(0),a)],[(Q(1),a),(Q(-1),a)],[(Q(-7,11),a),(Q(5,13),b),(Q(2,9),a)],[(Q(3,2),a),(Q(-6,4),a),(Q(0),b)]]:
+  got=V.linear_combination(6,terms)
+  assert got.asq()==[sum((c*v.asq()[i] for c,v in terms),Q(0)) for i in range(6)]
+  if not any(got.a):assert got.D==1
  peaks=Peaks(6);peaks.add(a.a,a.D,2);peaks.add(b.a,b.D,5)
  assert [Q(n,d) for n,d in zip(peaks.num,peaks.den)]==[max(Q(0),u,v) for u,v in zip(x,y)] and peaks.who[-1]==2
  peaks.add([2*z for z in b.a],2*b.D,9);assert peaks.who[-1]==2
  gain,witness=peaks.best(V.qs([Q(i) for i in range(1,7)]));assert gain==18 and witness==(5,3)
  assert (a-a).D==1 and (a-a).z.is_zero()
  assert V(IM([[6,-9,0]]),-15).asq()==[Q(-2,5),Q(3,5),Q(0)]
- bad=[lambda:V(IM([[1]]),0),lambda:V(IM([[1,2],[3,4]])),lambda:a.mul(V.const(5,1)),lambda:a.dot(V.const(5,1)),lambda:Peaks(0),lambda:peaks.add([Z(1)]*6,0,1),lambda:peaks.add([Z(1)]*6,-1,1),lambda:peaks.add([Z(1)]*5,1,1),lambda:peaks.add([Z(1)]*6,1,0)]
+ bad=[lambda:V.linear_combination(0,[]),lambda:V.linear_combination(6,[(0,V.const(5,1))]),lambda:V(IM([[1]]),0),lambda:V(IM([[1,2],[3,4]])),lambda:a.mul(V.const(5,1)),lambda:a.dot(V.const(5,1)),lambda:Peaks(0),lambda:peaks.add([Z(1)]*6,0,1),lambda:peaks.add([Z(1)]*6,-1,1),lambda:peaks.add([Z(1)]*5,1,1),lambda:peaks.add([Z(1)]*6,1,0)]
  for fn in bad:
   try:fn()
   except AssertionError:continue
   raise AssertionError('Malformed primitive was accepted')
- return {'signed_zero_common_content_add_mul_dot_square_max_controls':True,'control_vector_length':6,'unreduced_peak_pairs_and_strict_ties':True,'malformed_primitive_controls_rejected':len(bad)}
+ return {'batched_signed_zero_repeated_terms_and_cancellation_controls':True,'signed_zero_common_content_add_mul_dot_square_max_controls':True,'control_vector_length':6,'unreduced_peak_pairs_and_strict_ties':True,'malformed_primitive_controls_rejected':len(bad)}
 
 def build(coords,n,rule,state):
  M=len(coords[0].a);b=[V.const(M,1)];d=[Q(M)];rec=[None];meta=[(0,0)];pos={(0,0):0};ties=[]
@@ -102,9 +120,8 @@ def build(coords,n,rule,state):
     axes=[wanted if wanted in axes else axes[0]]
    candidates=[]
    for axis in axes:
-    p=pos[t-1,j-(axis==1)];u=coords[axis].mul(b[p]);sigma=u.dot(u);alpha=[v.dot(u)/dk for v,dk in zip(b,d)];r=u
-    for c,v in zip(alpha,b):
-     if c:r=r-v.scale(c)
+    p=pos[t-1,j-(axis==1)];u=coords[axis].mul(b[p]);sigma=u.dot(u);alpha=[v.dot(u)/dk for v,dk in zip(b,d)]
+    r=V.linear_combination(M,[(1,u)]+[(-c,v) for c,v in zip(alpha,b)])
     dk=r.dot(r);assert dk>0 and sigma>0
     candidates.append((dk/sigma,axis,p,alpha,sigma,r,dk))
    if len(candidates)==2 and candidates[0][0]==candidates[1][0]:ties.append([t,j])
@@ -154,8 +171,7 @@ def run(a,out,state):
   if h in ends:collect(ends[h],h,energy)
   for k in range(h+1,len(b)):
    axis,p,alpha,_=rec[k];v=coords[axis].mul(g[p]) if p>=h else V.const(M,0)
-   for l in range(h,k):
-    if alpha[l]:v=v-g[l].scale(alpha[l])
+   v=V.linear_combination(M,[(1,v)]+[(-alpha[l],g[l]) for l in range(h,k)])
    g[k]=v;energy=energy+v.square().scale(1/d[k])
    if k in ends:collect(ends[k],h,energy)
   state['last_source']=h
@@ -191,5 +207,5 @@ def main():
  signal.signal(signal.SIGALRM,expire);signal.alarm(a.seconds)
  try:r=run(a,out,state)
  except TimeoutError:r={'result':'INCOMPLETE_COST_CAP','set':a.set,'rule':a.rule,'max_degree':a.degree,'code_sha256':sha(__file__),'state':state,'wall_seconds':time.monotonic()-start,'process_cpu_seconds':time.process_time()-cpu,'limits':'No missing-source endpoint or completed-case claim.'}
- signal.alarm(0);r['rules_head']='02a465b';r['command']=[sys.executable,'-B',str(pathlib.Path(__file__).resolve()),*sys.argv[1:]];pathlib.Path(a.receipt).write_text(json.dumps(r,indent=2)+'\n');event(event='complete',result=r['result'])
+ signal.alarm(0);r['rules_head']='9825d184517db81d0aad8542fbd6639f2164b803';r['command']=[sys.executable,'-B',str(pathlib.Path(__file__).resolve()),*sys.argv[1:]];pathlib.Path(a.receipt).write_text(json.dumps(r,indent=2)+'\n');event(event='complete',result=r['result'])
 if __name__=='__main__':main()
