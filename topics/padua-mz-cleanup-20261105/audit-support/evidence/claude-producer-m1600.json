@@ -1,0 +1,65 @@
+{
+  "kind": "rigorous fixed-point Padua polynomial energy",
+  "m": 1600,
+  "n": 1599,
+  "bits": 56,
+  "table_precision": 3416,
+  "arithmetic": "FLINT fmpz/fmpq exact; Arb outward balls; NumPy proposal only",
+  "dependencies": {
+    "python": "3.13.18 (main, Oct 26 2026, 14:08:19) [Clang 23.1.3 ]",
+    "flint": "0.9.0",
+    "numpy": "2.5.4",
+    "platform": "Linux-6.18.44-fc-v236-x86_64-with-glibc2.39"
+  },
+  "command": [
+    "topics/padua-mz-cleanup-20261105/code/rigorous_witness.py",
+    "--m",
+    "1600",
+    "--vector",
+    "/tmp/claude-0/-home-user-padua-research/756d1664-f3c3-5fdc-b9da-9c321a950f9c/scratchpad/audit/vectors/m1600-n1599-min.npy",
+    "--scratch",
+    "/tmp/claude-0/-home-user-padua-research/756d1664-f3c3-5fdc-b9da-9c321a950f9c/scratchpad/audit/cert-m1600",
+    "--output",
+    "/tmp/claude-0/-home-user-padua-research/756d1664-f3c3-5fdc-b9da-9c321a950f9c/scratchpad/audit/producer-m1600.json"
+  ],
+  "code_sha256": "11f7cabcfb3c431a26224eb0d8df49db5d7de65c4685f979a9037d835a1cd498",
+  "definitions_sha256": "4ac0e391859a14e4d6f752f1244df0701e99d9b3d8ab8570bd632520f517c7db",
+  "witness": {
+    "path": "/tmp/claude-0/-home-user-padua-research/756d1664-f3c3-5fdc-b9da-9c321a950f9c/scratchpad/audit/cert-m1600/witness.json.gz",
+    "sha256": "69cbcf9713635158dcbca0f5f47af4a968595ba8951f06502271523c9e5a8205",
+    "bytes": 8788834,
+    "source_vector_sha256": "90a8c0cd7b8cb59a4975ebf65d2cf160edee6a46921204cfa4cfd6c472ee1b26"
+  },
+  "exact_norm": {
+    "path": "/tmp/claude-0/-home-user-padua-research/756d1664-f3c3-5fdc-b9da-9c321a950f9c/scratchpad/audit/cert-m1600/exact-norm.txt",
+    "sha256": "56bdaffa31e72d02a31d519c4bd6710ee86d1466e7697d1478a7cd46e69a024c",
+    "bytes": 4192,
+    "sign": "positive",
+    "numerator_bits": 6960,
+    "denominator_bits": 6960,
+    "enclosure": "[1.0000000000000015894556262076389246786 +/- 9.75e-39]",
+    "rational_value_sha256": "ecf91ae3c343d7a6fbf8a9fed322aef3d9cf78752d75123782f2f8895622ed16"
+  },
+  "weight_sum_enclosure": "[4.00000000000 +/- 1.12e-12]",
+  "energy_enclosure": "[-0.0234144 +/- 4.95e-8]",
+  "rayleigh_enclosure": "[-0.0234144 +/- 4.96e-8]",
+  "sign": "negative",
+  "absolute_energy_enclosure": "[0.023476061393239748747302919032799414187 +/- 2.31e-40]",
+  "reference_energy_enclosure": "[29430.308209698800888380128225256406322 +/- 1.64e-34]",
+  "coefficient_l1_enclosure": "[323246.94534127962492391084037279824770 +/- 6.08e-34]",
+  "kernel_l1_bound": "[15.989980811103605707776147269792543651 +/- 9.01e-38]",
+  "polynomial_pointwise_error_bound": "[8.9719050339409530438718770278271467417e-12 +/- 9.08e-50]",
+  "kernel_pointwise_error_bound": "[1.1154957756604559017704904919406445653e-12 +/- 5.90e-51]",
+  "energy_error_bound": "[3.2840378378599199899958443683949431778e-8 +/- 6.11e-46]",
+  "relative_width_upper": "[2.805141710435901011156921363318862180e-6 +/- 3.25e-43]",
+  "seconds": 107.33180800499997,
+  "phase_seconds": {
+    "proposal_and_exact_norm": 6.540621821999935,
+    "legendre_tables": 33.91819590099999,
+    "integer_polynomial_tensor": 16.44049691700002,
+    "certified_weight_tensor": 46.4820412549999,
+    "exact_contraction_and_enclosure": 3.8349770849999913
+  },
+  "peak_rss_kib": 831136,
+  "status": "rigorous producer sign accepted; independent check required"
+}

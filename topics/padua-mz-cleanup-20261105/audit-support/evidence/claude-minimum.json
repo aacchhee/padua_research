@@ -1,0 +1,100 @@
+{
+  "status": "MEASURED",
+  "rigorous_enclosures": false,
+  "command": [
+    "topics/padua-mz-cleanup-20261105/code/g1_minimum.py",
+    "--m",
+    "60",
+    "400",
+    "1101",
+    "1240",
+    "1600",
+    "--output",
+    "/tmp/claude-0/-home-user-padua-research/756d1664-f3c3-5fdc-b9da-9c321a950f9c/scratchpad/audit/minimum.json",
+    "--vector-dir",
+    "/tmp/claude-0/-home-user-padua-research/756d1664-f3c3-5fdc-b9da-9c321a950f9c/scratchpad/audit/vectors"
+  ],
+  "code_sha256": "247bf4fa323abf2668fd4575b3ee8b363afa9ff75ecc1884eb41eda2a8433cb3",
+  "operator_code_sha256": "f246b7a436fa9e6133153a87fd5af887d80f6fb0ab12dc2208fbd9ade223c241",
+  "seed": 20261105,
+  "tolerance": 2e-11,
+  "ncv": 40,
+  "exploratory_scope": "m>1000 requested post hoc by orchestrator on 2026-11-05 after lower corner branch observed",
+  "results": [
+    {
+      "m": 60,
+      "n": 59,
+      "dimension": 1830,
+      "minimum": 0.18859348048909821,
+      "residual_2_float": 1.0789033893453027e-12,
+      "matvecs": 342,
+      "seconds": 0.10429346299997633,
+      "peak_rss_kib": 70272,
+      "vector": {
+        "path": "/tmp/claude-0/-home-user-padua-research/756d1664-f3c3-5fdc-b9da-9c321a950f9c/scratchpad/audit/vectors/m60-n59-min.npy",
+        "sha256": "62838be1a8a2e47d9e8dd95fe64483f6f6edcd242578bbe88e824f57c976a188",
+        "bytes": 14768
+      }
+    },
+    {
+      "m": 400,
+      "n": 399,
+      "dimension": 80200,
+      "minimum": 0.10281890623386823,
+      "residual_2_float": 7.410893526491918e-13,
+      "matvecs": 302,
+      "seconds": 8.044727590999997,
+      "peak_rss_kib": 113828,
+      "vector": {
+        "path": "/tmp/claude-0/-home-user-padua-research/756d1664-f3c3-5fdc-b9da-9c321a950f9c/scratchpad/audit/vectors/m400-n399-min.npy",
+        "sha256": "d2429dbe1aa5af39afae983f7f3fba854d8315dac9bc629290ce2d1883f8c3d6",
+        "bytes": 641728
+      }
+    },
+    {
+      "m": 1101,
+      "n": 1100,
+      "dimension": 606651,
+      "minimum": -0.035066834333174535,
+      "residual_2_float": 1.5084360498071429e-15,
+      "matvecs": 122,
+      "seconds": 37.023454222,
+      "peak_rss_kib": 385304,
+      "vector": {
+        "path": "/tmp/claude-0/-home-user-padua-research/756d1664-f3c3-5fdc-b9da-9c321a950f9c/scratchpad/audit/vectors/m1101-n1100-min.npy",
+        "sha256": "37d5d2eb84aefe4ab2812352d09bc011a702018bf1f2cb48773b53730004069b",
+        "bytes": 4853336
+      }
+    },
+    {
+      "m": 1240,
+      "n": 1239,
+      "dimension": 769420,
+      "minimum": -2.7148067991784307e-05,
+      "residual_2_float": 1.5417293143550946e-15,
+      "matvecs": 162,
+      "seconds": 69.23244369600002,
+      "peak_rss_kib": 479924,
+      "vector": {
+        "path": "/tmp/claude-0/-home-user-padua-research/756d1664-f3c3-5fdc-b9da-9c321a950f9c/scratchpad/audit/vectors/m1240-n1239-min.npy",
+        "sha256": "06803f674dc3ff81ceb13b4c68fd6cb7b430a78480c9a14f13d99be9b7c34699",
+        "bytes": 6155488
+      }
+    },
+    {
+      "m": 1600,
+      "n": 1599,
+      "dimension": 1280800,
+      "minimum": -0.023414416590671543,
+      "residual_2_float": 1.94895690698448e-13,
+      "matvecs": 122,
+      "seconds": 117.22087398299999,
+      "peak_rss_kib": 720888,
+      "vector": {
+        "path": "/tmp/claude-0/-home-user-padua-research/756d1664-f3c3-5fdc-b9da-9c321a950f9c/scratchpad/audit/vectors/m1600-n1599-min.npy",
+        "sha256": "90a8c0cd7b8cb59a4975ebf65d2cf160edee6a46921204cfa4cfd6c472ee1b26",
+        "bytes": 10246528
+      }
+    }
+  ]
+}
