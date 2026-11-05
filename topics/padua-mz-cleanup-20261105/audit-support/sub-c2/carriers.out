@@ -1,0 +1,47 @@
+finite identities (8),(10) at odd m, (a,b)=(0.1,0.2):
+ m=101 {'sum eps U - D_s/m': 2.776e-17, 'alt sum eps U': -3.717e-18, 'sum eta V- - M D_r/(2m^2)': 0.0, 'max |V-| on odd k': 5.059e-33, 'sum eta V+ - M d_r/(2m^2)': 0.0, 'max |V+| on even k': 6.48e-34, 'scale D_s/m': 0.1388, 'scale M D_r/(2m^2)': 0.03681}
+ m=1001 {'sum eps U - D_s/m': 2.776e-17, 'alt sum eps U': -1.7e-17, 'sum eta V- - M D_r/(2m^2)': 1.388e-17, 'max |V-| on odd k': 6.263e-33, 'sum eta V+ - M d_r/(2m^2)': 0.0, 'max |V+| on even k': 7.795e-33, 'scale D_s/m': 0.1339, 'scale M D_r/(2m^2)': 0.03367}
+ m=10001 {'sum eps U - D_s/m': 5.551e-17, 'alt sum eps U': -5.25e-18, 'sum eta V- - M D_r/(2m^2)': 0.0, 'max |V-| on odd k': 2.097e-32, 'sum eta V+ - M d_r/(2m^2)': -6.939e-18, 'max |V+| on even k': 1.136e-33, 'scale D_s/m': 0.1334, 'scale M D_r/(2m^2)': 0.03337}
+cross-check DCT route vs direct node sum (weights from formula (3)):
+ m=101 p- a=0.2 b=0.2: Q_dct=+3.476897986960e+00 Q_direct=+3.476897986960e+00 rel.diff=7.7e-16
+ m=101 p+ a=0.1 b=0.2: Q_dct=+2.361980259819e+00 Q_direct=+2.361980259819e+00 rel.diff=1.5e-15
+ m=201 p- a=0.2 b=0.2: Q_dct=+3.440426566716e+00 Q_direct=+3.440426566716e+00 rel.diff=2.1e-15
+ m=201 p+ a=0.1 b=0.2: Q_dct=+2.319368708177e+00 Q_direct=+2.319368708177e+00 rel.diff=3.8e-16
+ m=301 p- a=0.2 b=0.2: Q_dct=+3.416116458036e+00 Q_direct=+3.416116458036e+00 rel.diff=6.2e-14
+ m=301 p+ a=0.1 b=0.2: Q_dct=+2.307451623802e+00 Q_direct=+2.307451623802e+00 rel.diff=8.7e-15
+p- a=0.2 b=0.2: predicted -0.071111; degree<=m-1 for all odd m>=7 (scanned to 3999)
+    m=1001: Q=+3.33750 Q/log m=+0.48308
+    m=10001: Q=+3.17713 Q/log m=+0.34495 slope=-0.069676
+    m=100001: Q=+3.01384 Q/log m=+0.26178 slope=-0.070917
+    m=1000001: Q=+2.85016 Q/log m=+0.20630 slope=-0.071087
+    m=10000001: Q=+2.68643 Q/log m=+0.16667 slope=-0.071108
+p- a=0.3 b=0.1: predicted -0.053333; degree<=m-1 for all odd m>=3 (scanned to 3999)
+    m=1001: Q=+3.39195 Q/log m=+0.49096
+    m=10001: Q=+3.27237 Q/log m=+0.35529 slope=-0.051950
+    m=100001: Q=+3.15001 Q/log m=+0.27361 slope=-0.053143
+    m=1000001: Q=+3.02726 Q/log m=+0.21912 slope=-0.053309
+    m=10000001: Q=+2.90447 Q/log m=+0.18020 slope=-0.053330
+p- a=0.05 b=0.4: predicted -0.035556; degree<=m-1 for all odd m>=7 (scanned to 3999)
+    m=1001: Q=+3.30946 Q/log m=+0.47902
+    m=10001: Q=+3.23184 Q/log m=+0.35089 slope=-0.033719
+    m=100001: Q=+3.15053 Q/log m=+0.27365 slope=-0.035314
+    m=1000001: Q=+3.06873 Q/log m=+0.22212 slope=-0.035525
+    m=10000001: Q=+2.98687 Q/log m=+0.18531 slope=-0.035552
+p+ a=0.1 b=0.2: predicted +0.017778; degree<=m-1 for all odd m>=11 (scanned to 3999)
+    m=1001: Q=+2.30215 Q/log m=+0.33322
+    m=10001: Q=+2.33299 Q/log m=+0.25330 slope=+0.013400
+    m=100001: Q=+2.37290 Q/log m=+0.20611 slope=+0.017335
+    m=1000001: Q=+2.41373 Q/log m=+0.17471 slope=+0.017732
+    m=10000001: Q=+2.45466 Q/log m=+0.15229 slope=+0.017773
+p+ a=0.2 b=0.05: predicted +0.008889; degree<=m-1 for all odd m>=7 (scanned to 3999)
+    m=1001: Q=+2.16684 Q/log m=+0.31364
+    m=10001: Q=+2.18242 Q/log m=+0.23695 slope=+0.006771
+    m=100001: Q=+2.20236 Q/log m=+0.19129 slope=+0.008658
+    m=1000001: Q=+2.22277 Q/log m=+0.16089 slope=+0.008864
+    m=10000001: Q=+2.24323 Q/log m=+0.13917 slope=+0.008886
+p+ a=0.05 b=0.3: predicted +0.013333; degree<=m-1 for all odd m>=21 (scanned to 3999)
+    m=1001: Q=+2.34976 Q/log m=+0.34011
+    m=10001: Q=+2.36007 Q/log m=+0.25624 slope=+0.004482
+    m=100001: Q=+2.38879 Q/log m=+0.20749 slope=+0.012472
+    m=1000001: Q=+2.41929 Q/log m=+0.17511 slope=+0.013246
+    m=10000001: Q=+2.44997 Q/log m=+0.15200 slope=+0.013324

@@ -319,3 +319,37 @@ has no final ID; positive content maps to T288/T289.
 Permanent unused gaps: T291–293, N101–103, IDEA380–383, LIT569–573.
 [Exact map](../nn-mop-iep-20261103/preparation/final-id-map.json).
 No merge order is inferred and only AC merges.
+
+## PR26 MZ cleanup — unchanged reservation import and audited assignments
+
+2026-11-05; owner `codex/padua-mz-cleanup-20261105`. Fresh-range procedure
+supersedes historical single-owner prose; all earlier allocations, retired
+reservations and permanent gaps above remain in force. Import unchanged
+T376–391 (16), N138–145 (8), IDEA466–489 (24), no LIT, first published
+[ee490356ce51d5e2f4a84f2c45e6ccb98a19bd90](https://github.com/aacchhee/padua_research/commit/ee490356ce51d5e2f4a84f2c45e6ccb98a19bd90),
+linked from [PR26](https://github.com/aacchhee/padua_research/pull/26).
+[Topic ledger](../padua-mz-cleanup-20261105/ALLOCATIONS.md) retains the original
+range counts, checked heads and priority. No re-reservation or extra headroom.
+
+[Current full-file union](../padua-mz-cleanup-20261105/preparation/reservation-check.md)
+reads main aff30e8 and every open PR21/24/25/26 at pinned heads; no
+closed-unmerged PR is returned. Union maxima including cleanup are
+T391/N145/IDEA489/LIT597; every foreign range ends below cleanup's start
+in the assigned namespaces. No accepted or reserved identifier is renumbered.
+
+Acknowledged unchanged foreign PR25 reservation: T364–375 (12), N132–137 (6),
+IDEA454–465 (12), LIT594–597 (4), owner
+`codex/padua-argmax-effective-2-20261105`, first published
+[ce17564ea1c185fea0be109b8ebb38efe25bceec](https://github.com/aacchhee/padua_research/commit/ce17564ea1c185fea0be109b8ebb38efe25bceec),
+[PR25](https://github.com/aacchhee/padua_research/pull/25). It is acknowledged,
+not assigned or modified by this topic. PR21 LIT482–561 and PR24's
+T324–363/N116–131/IDEA414–453/LIT582–593 remain unchanged; this section
+approves none of those draft PRs and infers no AC merge sequence.
+
+Assigned PD-T376–381 (four PROVED, one MEASURED, one OPEN) and IDEA466–471
+(four active PROVED outcomes, one deferred, one abandoned), no PD-N or LIT.
+[Exact map](../padua-mz-cleanup-20261105/preparation/final-id-map.json).
+Permanent unused gaps: T382–391, N138–145, IDEA472–489.
+PD-T381 retains the OPEN sharp-growth target; separate PROVED PD-T379 is
+supporting one-sided bounds, not a proved target conjunct. Earlier result
+statuses and historical scopes remain intact. Only AC merges.

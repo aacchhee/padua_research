@@ -1,0 +1,52 @@
+{
+  "status": "MEASURED",
+  "rigorous_enclosures": false,
+  "command": [
+    "topics/padua-mz-cleanup-20261105/code/g1_minimum.py",
+    "--m",
+    "1238",
+    "1239",
+    "--output",
+    "/tmp/claude-0/-home-user-padua-research/756d1664-f3c3-5fdc-b9da-9c321a950f9c/scratchpad/audit/minimum-window.json",
+    "--vector-dir",
+    "/tmp/claude-0/-home-user-padua-research/756d1664-f3c3-5fdc-b9da-9c321a950f9c/scratchpad/audit/vectors-window"
+  ],
+  "code_sha256": "247bf4fa323abf2668fd4575b3ee8b363afa9ff75ecc1884eb41eda2a8433cb3",
+  "operator_code_sha256": "f246b7a436fa9e6133153a87fd5af887d80f6fb0ab12dc2208fbd9ade223c241",
+  "seed": 20261105,
+  "tolerance": 2e-11,
+  "ncv": 40,
+  "exploratory_scope": "m>1000 requested post hoc by orchestrator on 2026-11-05 after lower corner branch observed",
+  "results": [
+    {
+      "m": 1238,
+      "n": 1237,
+      "dimension": 766941,
+      "minimum": 0.00012076189966751023,
+      "residual_2_float": 1.4967365672921201e-15,
+      "matvecs": 162,
+      "seconds": 74.31657446099996,
+      "peak_rss_kib": 442668,
+      "vector": {
+        "path": "/tmp/claude-0/-home-user-padua-research/756d1664-f3c3-5fdc-b9da-9c321a950f9c/scratchpad/audit/vectors-window/m1238-n1237-min.npy",
+        "sha256": "53687aad02c3cf6c573778ea4e13a547ecd53fe51d2a4dc1e75978668c281977",
+        "bytes": 6135656
+      }
+    },
+    {
+      "m": 1239,
+      "n": 1238,
+      "dimension": 768180,
+      "minimum": -0.045942496436395225,
+      "residual_2_float": 1.6249825179460813e-15,
+      "matvecs": 122,
+      "seconds": 52.709041788000036,
+      "peak_rss_kib": 470592,
+      "vector": {
+        "path": "/tmp/claude-0/-home-user-padua-research/756d1664-f3c3-5fdc-b9da-9c321a950f9c/scratchpad/audit/vectors-window/m1239-n1238-min.npy",
+        "sha256": "86a5d20d5ff0c173c60e0d0310490edd49aac33db1d8d48db3fc4506cf01d98f",
+        "bytes": 6145568
+      }
+    }
+  ]
+}
