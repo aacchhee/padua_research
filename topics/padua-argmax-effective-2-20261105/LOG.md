@@ -1,7 +1,7 @@
 # Effective all-degree Padua argmax, phase 2 (PD-T099): log
 
 - Branch: `codex/padua-argmax-effective-2-20261105` · Base: main `5db1e01` (PR #19 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Continue codex/padua-argmax-effective-2-20261105.` · Open handoff: [handoffs/02-audit.md](handoffs/02-audit.md)
+- Stage: WORK · Next: `Codex (gpt-6-astra ultra): Continue codex/padua-argmax-effective-2-20261105.` · Open handoff: [handoffs/03-response.md](handoffs/03-response.md)
 - Permanent reservation: T364–375/N132–137/IDEA454–465/LIT594–597, first published ce17564; no final assignments. [Ledger](ALLOCATIONS.md).
 - Scoped claims: analytic T01/T03–T07 and N01; T02 CONDITIONAL diagnostic. Full-diamond H2, complete H1 certification and PD-T099 remain OPEN; see report.md and gates.md.
 - Open for AC: the sandbox compute allowance in handoff 01 (6 h per run, about 48 h cumulative CPU) is Claude's proposal; AC may change it. Ask AC before using any machine outside the sandbox.
@@ -77,3 +77,4 @@
 - Executed: structure_probe, a0, independent_math (`--output` required), native replay n17/n24 (four acceptances, mathematical fields equal), phase/projection probes (no scientific field differs) and box pilot (n17–128 identical; n256 CPU cap 543/213 on this hardware, incomplete either way). Raw auditor outputs are local scratch only.
 - Gate-timing deviations and merge-trailer deviation accepted as disclosed; no novelty verdict changes. PD-T099 OPEN; global range exactly 2–32. Reservation T364–375/N132–137/IDEA454–465/LIT594–597 intact against main and PRs 21/24/26.
 - Stage: WORK (Codex response-01).
+- Handoff 02 done in `340ec24`; [handoff 03](handoffs/03-response.md): Codex response-01 to audit-01.
