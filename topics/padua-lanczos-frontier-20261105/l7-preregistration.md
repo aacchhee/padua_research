@@ -34,3 +34,9 @@ An accuracy loss is resolved only on an accepted reference, with method error >2
 ## Resource and retention plan
 
 24 domain/seed/degree cases, 10 method variants, 4 or 5 targets, two test distributions. Upstream/own arithmetic equality, reference screens and recurrence replay are inspected before interpreting errors. Work ceiling six hours, not claimed elapsed work. Large full JSON and source/PDF archives stay in /tmp/padua-lanczos-frontier-l7; committed receipts normally <16KiB with hashes, bytes, exact commands and concise aggregates. Windows cold-storage delivery pending. No PDFs or third-party code in Git.
+
+## Additive implementation/gate clarification — 2026-11-05
+
+At rules/input bb67c1ee830d468fa33007e15008d5574d00ccf4, G0's additive RESOLVED disposition permits mandatory G4 execution; the original G0 FAIL is preserved. G4 developer replay of both prescribed rows now ran and revealed significant mismatches. The original G4 explanation criterion and above saved diagnostics are unchanged; no numeric threshold supplies an acceptance waiver. L7 remains stopped pending explanation, distinct review and root acceptance. See g4-methods.md and evidence/g4-replay.json.
+
+The saved skeleton's full-mode Q[:,W] advanced-index operands differed from L2.run_sel's Q[:,:k] slice and failed exact validation. They are corrected to the actual L2 slice arithmetic; degree6/M80 validation now reproduces all8 Q outputs and parent paths exactly. This is an implementation correction to realize the unchanged preregistration, not a new method or test/target choice. Recurrence replay, longdouble QR/solve and Jacobi checks are bounded primitive validation, not execution of the natural-target suite.

@@ -60,3 +60,7 @@ Aliases: ZN actual code; irregular-domain Vandermonde Arnoldi.
 - Cheapest test/result: source discovery only; no attributable implementation identified in this bounded search.
 - Disposition/reason: deferred pending identifiable source and passed gates.
 - Canonical theory ID: none.
+
+## Additive G4 status — 2026-11-05
+
+At bb67c1ee830d468fa33007e15008d5574d00ccf4, prescribed G4 developer replay executed both historical rows after G0 resolution. Matching source/input/order/ranks did not reproduce numeric gaps; all12 method gap screens failed, so all four empirical questions above remain deferred and no natural target was run. See g4-methods.md for unchanged criterion, measured discrepancies, source-layout correction/primitive validation and prospectively specified bounded attribution. This is routine explanation of an existing implementation measurement, not a newly proposed mechanism or negative theorem. Distinct review/root disposition remain required.

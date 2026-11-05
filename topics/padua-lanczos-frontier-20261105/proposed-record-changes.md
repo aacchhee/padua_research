@@ -68,3 +68,11 @@ New (proposed):
 
 - Add PD-T?lanczos-frontier-codex-L2-03, PROVED analytic positive-weight embedding, theory/l2-positive-weight-embedding.md. Keep the original uniform L2-01 theorem unchanged; this is its explicit extension.
 - Add PD-T?lanczos-frontier-codex-L2-04, PROVED analytic saved W target C_n>=2^(n-4) for all n>=2 on SH_n, theory/l2-sh-worst-case-closure-growth.md; and L2-05, PROVED analytic saved full-law R target E_n>=2^(n-8), theory/l2-sh-random-closure-growth.md. Separate substantive statements and dependency mapping are mandatory. Original PD-T055 remains OPEN with links to these restricted formalizations, without silently replacing its wording or quantifiers.
+
+## Handoff04 additions — remain unapplied
+
+- Add PD-T?lanczos-frontier-codex-L3-01, PROVED analytic explicit finite-error bound, tolerance selection and adaptive-prefix completion under the stronger aggregate full-projection model, theory/l3-finite-u-selection.md. Split the finite-u item; preserve broader degree-uniform useful radii, polynomial-score and efficient-selection obligations. Do not extend PD-T143's Hres-only hypotheses.
+- Add PD-T?lanczos-frontier-codex-L5a, PROVED analytic full-kernel finite positive-spanning upper/localTaylor lower reduction, theory/l5-01-finite-optimal-radius-certificates.md. Its standard predecessor mechanisms and no-novelty qualification remain. Actual finite n3 bracket has a separate record after distinct exact execution; U2 stays OPEN and G3 n3–8 incomplete.
+- Record G4 additive explanation resolution separately from the historical PD-T146 measurements. No historic row is replaced, no actual arithmetic trajectory reconstructed, and no new natural-target result is inferred. G1 remains incomplete with measured implementation costs; fit specification is unexecuted preparation.
+
+- Add PD-T?lanczos-frontier-codex-L5b, PROVED finite computer-assisted `1/512 <= delta_obs(3) <= 1/2`, theory/l5-02-n3-bracket.md, split from the finite n3 part of G3, with full real coefficient class and full Euclidean node balls. U2 remains OPEN; no n4–8/trend or exact optimal value is claimed.

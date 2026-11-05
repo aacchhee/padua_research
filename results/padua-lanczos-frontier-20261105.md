@@ -12,3 +12,5 @@
 - Original PD-T140 experiment remains INCONCLUSIVE/MEASURED. L3/L5/L6 and L7/G3/G4 remain open/unrun as scoped in [report](../topics/padua-lanczos-frontier-20261105/report.md). Relevant L1/L2 and L3/L4 source gates are complete; earlier prospective timing deviation remains for Claude disposition.
 
 Next: design a bounded G1 implementation improvement and continue L3/L5/L6/L7; required Claude scientific/protocol audit remains pending. Large raw arrays stay off Git; archival delivery pending.
+
+Handoff04: finite-error selection theorem PROVED under its explicit aggregate model, with independent mathematical reconstruction. L5 finite upper/lower certificate reduction is also PROVED; the independently checked finite n3 bracket is `1/512 <= delta_obs(3) <= 1/2`; n4–8 and the asymptotic U2 target remain open. G4 both-row replay discrepancy is RESOLVED by independently checked high-degree reference/residual/kernel controls, preserving original failed screens and missing historical trajectories. The natural suite remains unrun. See the current report for exact scope.

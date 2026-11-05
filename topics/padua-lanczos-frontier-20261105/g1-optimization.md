@@ -186,3 +186,95 @@ same-source accepted benchmark receipt and that comparator. No other20 rule
 or larger cost cap is authorized. If the condition fails, report the measured
 cost and next plan before20. Source hashes and actual commands will again be
 recorded before each new scientific execution.
+
+### Second revision actual outcome — source 963d61bc
+
+Source SHA-256
+`963d61bc13e4bfe90776be3d76f1b613a3191f3447e3ce0b918c0cdca1be5a22`
+was recorded before its first run and remained unchanged throughout. A copy
+is preserved as `/tmp/padua-lanczos-frontier-g1-fast/source-v2-963d61bc.py`.
+All eight fresh degree4 cases and all88 old maxdegree12 overlap rows pass;
+nine malformed primitive controls are rejected in each case. The full12
+baseline/norm/recurrence dumps match v1 byte-for-byte after decompression.
+Rotated12 wall times are70.1–72.9s; T24 times4.1–10.1s. See the separate
+`evidence/g1-fast-v2-overlap.json` checkpoint.
+
+The stable-source rotated BJ14 run completed all625 nodes/all119 sources in
+170.857s (CPU170.760s, basis2.621s), below its180s case cap. All13 endpoints,
+including original13/14, exactly match the retained old benchmark. The
+conditional60s prerequisite for a producer20 run is **not met**. Therefore
+no producer20 pilot has been run or silently substituted. Its source guards
+also reject20 without an accepted same-source fast benchmark. The cost result
+is in `evidence/g1-fast-v2-benchmark14.json`; the independent native BJ20
+execution remains separate.
+
+Static inspection of the retained exact rotated12 recurrence counts34,654
+nonzero scalar-vector subtraction uses across all source responses. The
+current Python implementation constructs/canonicalizes a scaled vector and
+a difference for each term, despite the common-denominator representation.
+A prospective next cost change is one lcm-weighted integer linear combination
+per formed column, with common-content normalization only after the full sum;
+energy updates could use the same exact sum identity. This reorders only
+finite rational arithmetic, never drops coefficients or changes scientific
+criteria. A short degree8 profile (cap30s), primitive/small controls, all88
+old overlaps and BJ14 at the same bounds were proposed to root. No such
+revision/profile or further scientific run has occurred at this boundary.
+
+## Final bounded stop and unexecuted batched-sum follow-up
+
+Root explicitly stops this round at the completed revision2 boundary. No
+further optimization, profile, benchmark or20 run is authorized now. Current
+scientific source remains963d61bc and all prior receipts remain unchanged.
+The distinct native pilot's completion does not satisfy this producer's
+unmet60s prerequisite. The following is a proposed next-handoff implementation,
+not work performed in this round.
+
+For rational coefficients a_j=A_j/B_j, B_j>0, and complete node vectors
+v_j=n_j/d_j, d_j>0, form
+
+    D = lcm_j(B_j*d_j),
+    n = sum_j A_j*(D/(B_j*d_j))*n_j.
+
+Then componentwise `n/D=sum_j a_j v_j`. One final division by the common
+content preserves every component. Cancelling gcd(A_j,d_j) before computing
+term denominators is also exact; any further cancellation/caching change
+needs its own explicit invariant. Zero terms/empty sums must produce the
+correct full-length zero row. Negative coefficients and strict peak ties
+must remain supported. This identity uses only arbitrary-precision integers
+and positive denominators, introduces no overflow assumption and changes
+neither source/output gauges nor any mathematical recurrence coefficient.
+
+Proposed applications are the complete formed basis column
+`u-sum_l alpha_l b_l`, frozen response
+`coordinate*g_parent-sum_l alpha_l g_l`, and exact energy update
+`energy+g_k^2/d_k`. Do not omit any term, coordinate, source or degree. All
+maxima remain the already checked per-node positive-denominator pairs.
+The proposed batched sum removes intermediate Python vector creation and
+canonicalization; it may also enlarge temporary integer heights. Record
+intermediate denominator/numerator bit sizes and memory/cost rather than
+assuming a speedup.
+
+A bounded next plan for root to authorize prospectively:
+
+1. Preserve the full963d61bc source/receipts and record the next source hash.
+   Obtain a brief degree8 current-source cProfile diagnostic, cap30s, only to
+   identify arithmetic/allocation cost. Profiled timing is not a speedup
+   benchmark or scientific fit.
+2. Implement the integer batched linear combination independently of the
+   separate native port. Check signed, zero, common-content, cross-denominator,
+   malformed-dimension and peak-tie cases against direct FLINT rational sums.
+   Have the mathematical/implementation reviewer verify the component invariant.
+3. Repeat fresh scalar degree2/3/4 basis/norm/recurrence controls and all88 old
+   rows, max120s per case and at most two workers. Check full Gram pairings,
+   exact choices/X ties, complete source counts and all endpoint equalities.
+4. Only after those pass, one rotated BJ14 benchmark, cap180s, comparing all13
+   exact rows with the retained original benchmark and independent native result.
+   Record unprofiled wall/process CPU time and phase/bit-size evidence.
+5. Report measured feasibility before any new20 authorization. The prior goal
+   remains BJ14<=60s followed by at most one BJ20 cap600s with exact independent
+   all19-row comparison; root must carry or amend that budget explicitly in the
+   next handoff. Other20 rules and unchanged1800s retries remain unauthorized.
+
+No G1 fit or operational verdict can use the incomplete two-grid scan, and
+no finite computation proves an all-degree rate. This implementation follow-up
+adds no new scientific mechanism or novelty claim.

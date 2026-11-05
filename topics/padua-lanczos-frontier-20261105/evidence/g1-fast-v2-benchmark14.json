@@ -1,0 +1,57 @@
+{
+  "label": "REVISION2_ROTATED_BJ14_EXACT_BENCHMARK",
+  "result": "EXACT_CASE_COMPLETED",
+  "code_sha256": "963d61bc13e4bfe90776be3d76f1b613a3191f3447e3ce0b918c0cdca1be5a22",
+  "cap_seconds": 180,
+  "timing": {
+    "wall_seconds": 170.85718650700073,
+    "process_cpu_seconds": 170.75976808,
+    "basis_wall_seconds": 2.6210171120001178,
+    "basis_cpu_seconds": 2.616413621
+  },
+  "old_exact_comparison_degrees": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "old_benchmark": {
+    "path": "/tmp/padua-lanczos-frontier-g1/benchmark14/rotated-bj/endpoints.json",
+    "bytes": 182234,
+    "sha256": "0ecedcd23e7fce677f204aeed326847ef18c095ee3dd0d63ecffd3c9778e6287"
+  },
+  "receipt": {
+    "path": "/tmp/padua-lanczos-frontier-g1-fast/v2/benchmark14-bj.json",
+    "bytes": 3183,
+    "sha256": "a0cedd8d0b688398fe7ef604d1e5ff4986572e9d78e552cb142ffb284d2c2ddf"
+  },
+  "endpoints": {
+    "path": "/tmp/padua-lanczos-frontier-g1-fast/v2/benchmark14-bj/endpoints.json",
+    "bytes": 180480,
+    "sha256": "dc29c087cab8447601811c9db27b38ac7c96132d90889970a218e24176591ed6"
+  },
+  "baseline": {
+    "path": "/tmp/padua-lanczos-frontier-g1-fast/v2/benchmark14-bj/baseline.jsonl.gz",
+    "bytes": 1434576,
+    "sha256": "8f8050b25d0a2855c7e341c295a3619650fe5cd8309075e94c8a9ee09c8a5443"
+  },
+  "high20_precondition": {
+    "required_BJ14_wall_at_most_seconds": 60,
+    "met": false,
+    "producer20_executed": false
+  },
+  "limits": [
+    "Full625nodes119sources; exactcomparisonall13rowsincludingold13/14.",
+    "Measuredcost170.857sdoesnotmeetrootconditional20preauthorization; no20run.",
+    "No fits/operational/asymptoticverdict; independentnative20runseparate."
+  ]
+}

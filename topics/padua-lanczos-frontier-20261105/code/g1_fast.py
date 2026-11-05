@@ -15,16 +15,20 @@ def ident(p):return {'path':str(p),'bytes':p.stat().st_size,'sha256':sha(p)}
 def event(**v):print(json.dumps(v),flush=True)
 class V:
  def __init__(self,row,den=1):
-  den=Z(den);assert den
+  den=Z(den);assert den and row.nrows()==1 and row.ncols()>0
   if den<0:row=-row;den=-den
   if row.is_zero():den=Z(1)
   elif den!=1:
    g=den
-   for z in row.entries():
-    g=g.gcd(z)
+   for j in range(row.ncols()):
+    g=g.gcd(row[0,j])
     if g==1:break
    if g!=1:row=IM([[z//g for z in row.entries()]]);den//=g
-  self.z=row;self.D=den;self.a=tuple(row.entries())
+  self.z=row;self.D=den;self._a=None
+ @property
+ def a(self):
+  if self._a is None:self._a=tuple(self.z.entries())
+  return self._a
  @classmethod
  def const(cls,M,n):return cls(IM([[n]*M]))
  @classmethod
@@ -40,17 +44,32 @@ class V:
   D=self.D.lcm(o.D);return V(self.z*(D//self.D)+o.z*(D//o.D),D)
  def __sub__(self,o):
   D=self.D.lcm(o.D);return V(self.z*(D//self.D)-o.z*(D//o.D),D)
- def mul(self,o):return V(IM([[x*y for x,y in zip(self.a,o.a)]]),self.D*o.D)
+ def mul(self,o):
+  assert self.z.ncols()==o.z.ncols()
+  return V(IM([[x*y for x,y in zip(self.a,o.a)]]),self.D*o.D)
  def square(self):return V(IM([[x*x for x in self.a]]),self.D*self.D)
- def dot(self,o):return Q((self.z*o.z.transpose())[0,0],self.D*o.D)
+ def dot(self,o):
+  assert self.z.ncols()==o.z.ncols()
+  return Q((self.z*o.z.transpose())[0,0],self.D*o.D)
  def eq(self,other):return self.z*other.D==other.z*self.D
  def asq(self):return [Q(z,self.D) for z in self.a]
- def maxwith(self,o,previous,h):
-  D=self.D.lcm(o.D);a=self.z*(D//self.D);b=o.z*(D//o.D);aa=a.entries();bb=b.entries();vals=[];who=[]
-  for x,y,old in zip(aa,bb,previous):
-   if y>x:vals.append(y);who.append(h)
-   else:vals.append(x);who.append(old)
-  return V(IM([vals]),D),who
+
+class Peaks:
+ """One unreduced positive-denominator pair per ORIGINAL node; strict ties."""
+ def __init__(self,M):
+  assert M>0
+  self.num=[Z(0)]*M;self.den=[Z(1)]*M;self.who=[0]*M
+ def add(self,nums,den,h):
+  den=Z(den);assert den>0 and h>0 and len(nums)==len(self.num)
+  for i,x in enumerate(nums):
+   if x*self.den[i]>self.num[i]*den:self.num[i]=x;self.den[i]=den;self.who[i]=h
+ def best(self,normal):
+  assert len(normal.a)==len(self.num) and min(normal.a)>=0
+  num=Z(0);den=Z(1);witness=(0,0)
+  for i,(z,x,D,h) in enumerate(zip(normal.a,self.num,self.den,self.who)):
+   nn=z*x;dd=normal.D*D;left=nn*den;right=num*dd
+   if left>right or (left==right and (h,i)<witness):num,den,witness=nn,dd,(h,i)
+  return Q(num,den),witness
 
 def arithmetic_controls():
  x=[Q(-2,3),Q(0),Q(4,9),Q(7,12),Q(-10,21),Q(2,3)];y=[Q(1,5),Q(-3,7),Q(0),Q(9,2),Q(-1,4),Q(2,3)];a=V.qs(x);b=V.qs(y)
@@ -60,10 +79,18 @@ def arithmetic_controls():
  assert a.mul(b).asq()==[u*v for u,v in zip(x,y)]
  assert a.square().asq()==[u*u for u in x]
  assert a.dot(b)==sum((u*v for u,v in zip(x,y)),Q(0))
- p,w=a.maxwith(b,[2]*6,5);assert p.asq()==[max(u,v) for u,v in zip(x,y)] and w[-1]==2
+ peaks=Peaks(6);peaks.add(a.a,a.D,2);peaks.add(b.a,b.D,5)
+ assert [Q(n,d) for n,d in zip(peaks.num,peaks.den)]==[max(Q(0),u,v) for u,v in zip(x,y)] and peaks.who[-1]==2
+ peaks.add([2*z for z in b.a],2*b.D,9);assert peaks.who[-1]==2
+ gain,witness=peaks.best(V.qs([Q(i) for i in range(1,7)]));assert gain==18 and witness==(5,3)
  assert (a-a).D==1 and (a-a).z.is_zero()
  assert V(IM([[6,-9,0]]),-15).asq()==[Q(-2,5),Q(3,5),Q(0)]
- return {'signed_zero_common_content_add_mul_dot_square_max_controls':True,'control_vector_length':6}
+ bad=[lambda:V(IM([[1]]),0),lambda:V(IM([[1,2],[3,4]])),lambda:a.mul(V.const(5,1)),lambda:a.dot(V.const(5,1)),lambda:Peaks(0),lambda:peaks.add([Z(1)]*6,0,1),lambda:peaks.add([Z(1)]*6,-1,1),lambda:peaks.add([Z(1)]*5,1,1),lambda:peaks.add([Z(1)]*6,1,0)]
+ for fn in bad:
+  try:fn()
+  except AssertionError:continue
+  raise AssertionError('Malformed primitive was accepted')
+ return {'signed_zero_common_content_add_mul_dot_square_max_controls':True,'control_vector_length':6,'unreduced_peak_pairs_and_strict_ties':True,'malformed_primitive_controls_rejected':len(bad)}
 
 def build(coords,n,rule,state):
  M=len(coords[0].a);b=[V.const(M,1)];d=[Q(M)];rec=[None];meta=[(0,0)];pos={(0,0):0};ties=[]
@@ -111,11 +138,11 @@ def run(a,out,state):
   pdiag=pdiag+bk.square().scale(1/d[k])
   if k in ends:
    norm=V.const(M,1)-pdiag;assert min(norm.a)>=0 and norm.dot(V.const(M,1))==M-k-1;normal[ends[k]]=norm
- sums={n:V.const(M,0) for n in stages};peaks={n:V.const(M,0) for n in stages};which={n:[0]*M for n in stages};records=[]
+ sums={n:V.const(M,0) for n in stages};peaks={n:Peaks(M) for n in stages};records=[]
  def collect(n,h,energy):
-  val=energy.scale(rec[h][3]);sums[n]=sums[n]+val;peaks[n],which[n]=peaks[n].maxwith(val,which[n],h)
+  val=energy.scale(rec[h][3]);sums[n]=sums[n]+val;peaks[n].add(val.a,val.D,h)
  def finish(n):
-  values=[x*y for x,y in zip(normal[n].a,peaks[n].a)];m=max(values);L=Q(m,normal[n].D*peaks[n].D);w=min((which[n][i],i) for i,v in enumerate(values) if v==m)
+  L,w=peaks[n].best(normal[n])
   H=normal[n].dot(sums[n]);R=Q(max(sums[n].a),sums[n].D);U=min(H,R);assert 0<L<=U
   r={'set':a.set,'rule':a.rule,'degree':n,'sources':'all','source_count':N(n)-1,'point_count':M,'basis_count':N(n),'Knode_squared':{'exact':str(L),'float':float(L)},'KHS_squared':{'exact':str(H),'float':float(H)},'Urow_squared':{'exact':str(R),'float':float(R)},'upper_squared':{'exact':str(U),'float':float(U)},'pivot_choices':['XY'[v[0]] for v in rec[1:N(n)]],'pivot_ties':[v for v in ties if v[0]<=n],'normal_trace_exact':str(M-N(n)),'witness':{'source':w[0],'node':w[1]}}
   if n<=12:
@@ -135,17 +162,30 @@ def run(a,out,state):
   if h in ends:finish(ends[h])
   event(event='source',source=h,total=len(b)-1)
  assert len(records)==a.degree-1
- comparison=None
+ comparison=None;compared=[]
  if a.compare:
-  other={r['degree']:r for r in json.loads(pathlib.Path(a.compare).read_text())['runs']}
+  text=pathlib.Path(a.compare).read_text()
+  try:otherrows=json.loads(text)['runs']
+  except json.JSONDecodeError:otherrows=[json.loads(line) for line in text.splitlines() if line.strip()]
+  other={r['degree']:r for r in otherrows}
   for r in records:
    if r['degree'] in other:
-    o=other[r['degree']];assert all(r[f]['exact']==o[f]['exact'] for f in FIELDS) and r['pivot_choices']==o['pivot_choices'] and r['pivot_ties']==o['pivot_ties']
+    o=other[r['degree']];compared.append(r['degree']);assert all(r[f]['exact']==o[f]['exact'] for f in FIELDS) and r['pivot_choices']==o['pivot_choices'] and r['pivot_ties']==o['pivot_ties']
   comparison=ident(pathlib.Path(a.compare))
- return {'result':'EXACT_CASE_COMPLETED','set':a.set,'rule':a.rule,'max_degree':a.degree,'code_sha256':sha(__file__),'frozen_source_sha256':PIN,'old_sweep':ident(pathlib.Path(a.old_sweep)),'controls':{**controls,'fresh_scalar_basis_degrees':fresh,'every_new_column_exact_Gram_pairings':True,'every_old_endpoint_and_choice_matched':a.degree<=12,'X_tie_break_and_recording':True},'normal_trace_role':'consistency only; full exact Gram pairings are separately checked','all_original_nodes':M,'all_source_columns':len(b)-1,'complete_degrees':stages,'endpoint_file':ident(out/'endpoints.json'),'baseline':ident(raw),'additional_exact_comparison':comparison,'timing':{'wall_seconds':time.monotonic()-t0,'process_cpu_seconds':time.process_time()-c0,'basis_wall_seconds':tb-t0,'basis_cpu_seconds':cb-c0},'runtime':{'python':platform.python_version(),'python_flint':flint.__version__},'limits':['Exact vector representation optimization only; no nodes/source/gauge change.','No fits, operational verdict or asymptotic claim.','Independent implementation/check remains separate.','Bulk outputs temporary outside Git; no archive delivery claimed.']}
+  assert compared
+  if a.degree==14:assert {13,14}<=set(compared)
+  if a.degree==20:assert compared==list(range(2,21))
+ return {'result':'EXACT_CASE_COMPLETED','set':a.set,'rule':a.rule,'max_degree':a.degree,'code_sha256':sha(__file__),'frozen_source_sha256':PIN,'old_sweep':ident(pathlib.Path(a.old_sweep)),'controls':{**controls,'fresh_scalar_basis_degrees':fresh,'every_new_column_exact_Gram_pairings':True,'every_old_endpoint_and_choice_matched':a.degree<=12,'X_tie_break_and_recording':True},'normal_trace_role':'consistency only; full exact Gram pairings are separately checked','all_original_nodes':M,'all_source_columns':len(b)-1,'complete_degrees':stages,'endpoint_file':ident(out/'endpoints.json'),'baseline':ident(raw),'additional_exact_comparison':comparison,'additional_exact_comparison_degrees':compared,'timing':{'wall_seconds':time.monotonic()-t0,'process_cpu_seconds':time.process_time()-c0,'basis_wall_seconds':tb-t0,'basis_cpu_seconds':cb-c0},'runtime':{'python':platform.python_version(),'python_flint':flint.__version__},'limits':['Exact vector representation optimization only; no nodes/source/gauge change.','No fits, operational verdict or asymptotic claim.','Independent implementation/check remains separate.','Bulk outputs temporary outside Git; no archive delivery claimed.']}
 
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('--set',choices=['triangle','rotated'],required=True);ap.add_argument('--rule',choices=['bj','mirror','alt','pivot'],required=True);ap.add_argument('--degree',type=int,required=True);ap.add_argument('--old-sweep',required=True);ap.add_argument('--output-dir',required=True);ap.add_argument('--receipt',required=True);ap.add_argument('--seconds',type=int,default=120);ap.add_argument('--compare');a=ap.parse_args();assert 4<=a.degree<=14 and 0<a.seconds<=180
+ ap=argparse.ArgumentParser();ap.add_argument('--set',choices=['triangle','rotated'],required=True);ap.add_argument('--rule',choices=['bj','mirror','alt','pivot'],required=True);ap.add_argument('--degree',type=int,required=True);ap.add_argument('--old-sweep',required=True);ap.add_argument('--output-dir',required=True);ap.add_argument('--receipt',required=True);ap.add_argument('--seconds',type=int,default=120);ap.add_argument('--compare');ap.add_argument('--high20-approved-benchmark');a=ap.parse_args();assert (4<=a.degree<=14 or a.degree==20) and a.seconds>0
+ if a.degree<=12:assert a.seconds<=120
+ elif a.degree<=14:assert a.seconds<=180
+ else:
+  assert a.set=='rotated' and a.rule=='bj' and a.seconds<=600 and a.compare and a.high20_approved_benchmark
+  guard=json.loads(pathlib.Path(a.high20_approved_benchmark).read_text())
+  assert guard['result']=='EXACT_CASE_COMPLETED' and guard['max_degree']==14 and guard['set']=='rotated' and guard['rule']=='bj'
+  assert guard['code_sha256']==sha(__file__) and guard['timing']['wall_seconds']<=60 and {13,14}<=set(guard['additional_exact_comparison_degrees'])
  out=pathlib.Path(a.output_dir);out.mkdir(parents=True,exist_ok=False);state={'basis_degree':0,'last_source':0,'completed_degrees':[]};start=time.monotonic();cpu=time.process_time()
  def expire(*_):raise TimeoutError('Prospective bounded case cap')
  signal.signal(signal.SIGALRM,expire);signal.alarm(a.seconds)

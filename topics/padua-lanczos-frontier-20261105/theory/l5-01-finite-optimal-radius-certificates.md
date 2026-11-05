@@ -12,6 +12,8 @@ Fix a finite real algebraic node set Z={z_1,...,z_M} in R², integer D>=2 and V=
     Delta(Z,D)=sup{t>=0: some nonzero p in V vanishes on Z
                                       and p>=0 on K_t}.
 
+The supremum is taken in the extended nonnegative reals [0,+infinity], with sup(empty set)=0. This convention covers arbitrary node sets with no nonzero degree-D vanisher; the Padua n3--8 application has positive feasible radii from the stated predecessor certificates.
+
 Let F be a specified subfield of the real algebraic numbers containing all node coordinates, with its real embedding fixed. In the full monomial basis of V let J be the value/first-partial evaluation matrix, and let B have columns an F-basis of ker_F J; d=number of columns. Write s_1,...,s_d for those polynomials and v(w)=(s_1(w),...,s_d(w)).
 
 **Upper certificate.** For U>0, suppose exact finite data specify W={w_1,...,w_q} contained in K_U and real numbers lambda_a>0 such that
@@ -49,7 +51,7 @@ Exact real algebraic arithmetic with an explicitly certified embedding/sign conv
 
 ## Status by part
 
-Overall status: PROVED (written elementary analytic reduction; independent reconstruction and required Claude audit pending).
+Overall status: PROVED (written elementary analytic reduction; distinct supplementary Astra high reconstruction and convention impact accepted; required Claude scientific/protocol audit pending).
 
 | Part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -64,7 +66,9 @@ Elementary finite-dimensional linear algebra, compactness and separating hyperpl
 
 ## Checks
 
-No numerical, symbolic or exact scientific run executed. This is an analytic verifier reduction, not a completed computer-assisted finite bracket. Actual use requires committed exact producer/checker code, small exact certificate data or retrievable manifests, and independent execution. Proposed implementation and costs remain unrun in ideas-l5-continuation.md. That file identifies the existing lower-helper implementation and recoverable n3 polynomial input; reading them is not rerunning them. Only root can delegate code/Git work.
+This mathematics developer executed no numerical, symbolic or exact scientific run. This is an analytic verifier reduction, not a completed computer-assisted finite bracket. Actual use requires committed exact producer/checker code, small exact certificate data or retrievable manifests, and independent execution. The original prospective implementation is in ideas-l5-continuation.md; subsequent root-delegated technical work has its own g3-methods.md and independent-checks-g3-04.md records and supplies no premise of this analytic proof. The candidate record identifies the existing lower-helper implementation and recoverable n3 polynomial input; reading them is not rerunning them. Only root can delegate code/Git work.
+
+Supplementary [independent analytic review](../independent-checks-frontier-04.md#l5-analytic-finite-certificate-reduction) by distinct Codex `/root/g0_review`, assigned gpt-6-astra high, accepts original input SHA256 `c684b6bbbedc44a8d23730dd9a43ef5aaf75d8f63848c282c4306a2bf20a26ce` and the subsequent empty-set convention/history update at SHA256 `8a43ca4dcf1283fd7b9fcab8a6d0713696daff2167fd8402547b92d7646e84db`. The complete proof and verifier inequalities were preserved. This metadata reports that bounded acceptance without importing any finite endpoint, technical execution, G3 verdict or all-degree result. Runtime model metadata is not independently exposed. Required later Claude audit and original gate-timing disposition remain pending.
 
 ## Sources
 
@@ -118,8 +122,12 @@ Finite certificate construction/validation for a fixed node set and degree. At P
 
 ## Open items
 
-Distinct mathematical check of this reduction; root-delegated medium implementation of the bounded n3 prototype and a distinct exact port/execution; full G3 n3--8 brackets and its original trend/otherwise decision; later required Claude audit including earlier gate-timing disposition. U2 and all asymptotic attempts remain blocked by G3.
+Distinct mathematical check of this reduction is accepted as recorded above. Actual root-delegated n3 producer/checker work, full G3 n3--8 brackets and its original trend/otherwise decision, and later required Claude audit including earlier gate-timing disposition remain separate obligations. U2 and all asymptotic attempts remain blocked by G3.
 
 ## History
 
 2026-11-05, Codex `/root/l1_l2`, assigned gpt-6.1-sol xhigh, runtime metadata not independently exposed. Rules/input headbb67c1ee830d468fa33007e15008d5574d00ccf4. Completed source/delta gate before this finite development. Saved positive-spanning proposal was previously an unfinished G0-blocked draft; this record supplies an explicit analytic reduction and exact verification obligations, without claiming any executed bracket. No code, scientific run, Git mutation, final ID or self-audit.
+
+2026-11-05: after distinct Astra high analytic acceptance of input SHA256 `c684b6bbbedc44a8d23730dd9a43ef5aaf75d8f63848c282c4306a2bf20a26ce`, added the reviewer's general-definition hygiene convention sup(empty set)=0 in [0,+infinity]. No proof argument, certificate inequality or Padua application changed. The reviewer was asked to confirm this limited impact; durable review metadata will be linked when available. Actual G3 endpoints/independent execution are separate and are not claimed here.
+
+2026-11-05: distinct reviewer accepted the convention/history update at8a43ca4d; linked the durable section and corrected current pending-review metadata only. No further scientific definition, proof or certificate inequality changed. Original accepted hashes and the earlier history are retained.

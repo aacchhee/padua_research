@@ -35,3 +35,11 @@ G3/G4 remain NOT RUN. The saved SH_n aggregate span theorem is a separate analyt
 ### Post-G2 analytic outcome
 
 After G2 acceptance, the separately written weighted extension and original SH_n W/R targets were proved analytically and reconstructed independently. Both original all-degree thresholds hold. These proofs discharge the saved formal readings, not F or unrestricted working-precision PD-T055. G1 remains incomplete and G3/G4 unrun; no later analytic success relabels those computations as completed.
+
+## Handoff04 G4 replay and additive resolution
+
+Both prescribed rows executed; all12 saved numerical gap screens failed, so L7 stopped. After prospective all-class fixed-input kernel/precision and residual-propagation controls, distinct independent execution validates the explanation on both actual high-degree cases. [Disposition04](g4-disposition-04.md) records G4 RESOLVED under its unchanged explanation criterion. Original failure and missing historical Q/H/dispatch remain; no tolerance waiver or historical reconstruction. Natural suite remains NOT RUN pending its bounded plan/casewise screens.
+
+## Handoff04 G3 n3 finite boundary
+
+Exact n3 producer and distinct algebraic checker establish `1/512 <= delta_obs(3) <= 1/2`: full degree7 jet rank30/kernel6, whole-ball Taylor lower and12point positive full-kernel upper. Nine malformed controls reject. This executes only n3; original n3–8 trend gate remains INCOMPLETE, and no all-degree attempt is authorized from one bracket.

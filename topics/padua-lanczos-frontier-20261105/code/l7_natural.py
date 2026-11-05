@@ -1,6 +1,6 @@
-"""UNVALIDATED / NOT EXECUTED: preregistered natural-fit study skeleton.
-G0 FAIL stops G4 and all suite runs. Syntax compilation only was performed.
-Third-party sources remain external. Do not interpret this as a tested producer.
+"""Preregistered natural-fit study; full suite NOT EXECUTED.
+Bounded primitive validation is recorded separately under G4.
+Third-party sources remain external. G4 review precedes any suite execution.
 """
 import argparse, hashlib, json, os, pathlib, platform, sys, time
 import numpy as np
@@ -84,14 +84,15 @@ def own(P,n,selection,full):
   best=None
   for op,par in options:
    p=pos[par];axis=0 if op=='X' else 1;a=P[:,axis]*Q[:,p];na=np.sqrt(a@a)
-   h=Q[:,W].T@a;r=a-Q[:,W]@h
+   Qw=Q[:,:k] if full else Q[:,W]
+   h=Qw.T@a;r=a-Qw@h
    if full:
-    h2=Q[:,W].T@r;r=r-Q[:,W]@h2;h=h+h2
+    h2=Qw.T@r;r=r-Qw@h2;h=h+h2
    score=np.sqrt(r@r)/na
    if best is None or score>best[0]:best=(score,axis,p,r,h)
   _,axis,p,r,h=best
   if not full:
-   h2=Q[:,W].T@r;r=r-Q[:,W]@h2;h=h+h2
+   h2=Qw.T@r;r=r-Qw@h2;h=h+h2
   beta=np.sqrt(r@r);Q[:,k]=r/beta;rec.append((axis,p,W,h,beta))
  return Q,rec
 
