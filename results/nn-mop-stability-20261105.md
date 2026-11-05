@@ -1,21 +1,11 @@
-# nn-mop-stability-20261105 — conditioning and stable algorithms for the NN MOP IEP
+# nn-mop-stability-20261105
 
-This file is written only by the topic orchestrator. Branch `codex/nn-mop-stability-20261105`; no PR yet.
+Stage WORK; draft [PR28](https://github.com/aacchhee/padua_research/pull/28); Claude audit PENDING. Source/rules823cf6a4ef7c01b4ef3d2a6fec3e9f19d4b4f6f1; baseb4d292eea5eed373002506d5e16a3761bd7ae10e. Provisional records only.
 
-## Status (2026-11-05): WORK, topic set up
+- **MEASURED:** G0 reproduces all12 baseline errors exactly. D1 eight-size condition table through64 separates data sensitivity from C4 excess loss; all-integer expansion running next. [D1](../topics/nn-mop-stability-20261105/attempts/D1.md).
+- **MEASURED:** stable Lanczos marginals do not clear C4 layers; G2 fails at HahnN8/16. Fixed-path plus anchor recovery remains a diagnostic, not full joint backward error. [D2](../topics/nn-mop-stability-20261105/attempts/D2.md).
+- **PROVED (developer; audit pending):** local analytic derivative/induced-norm formula and a coarse explicit allN Kraw upper bound, with sharp growth OPEN. [Theory](../topics/nn-mop-stability-20261105/theory/conditioning-local.md).
+- **PROVED (developer; audit pending):** positive ratio-graph encoding of mixed tests; literal total-degree identification has scoped obstructions. Full bivariate transfer OPEN. [D6](../topics/nn-mop-stability-20261105/attempts/D6.md).
+- **BLOCKED execution:** public IEP-MOP code retrieval; G5 not run. [D7](../topics/nn-mop-stability-20261105/attempts/D7.md).
 
-PR #22 settled the exact theory and measured binary64 forward errors that lose all accuracy by N ≈ 16–24. Conditioning was never separated from instability. Directions are specified in [handoff 01](../topics/nn-mop-stability-20261105/handoffs/01-work.md):
-
-- **D1:** conditioning theory for the NN map.
-- **D2:** stage isolation.
-- **D3:** native NN algorithms.
-- **D4:** Christoffel, Toda and lattice-Schrödinger routes.
-- **D5:** backward error.
-- **D6:** a bounded bivariate probe.
-- **D7:** comparison with IEP-MOP and an outline of a note for Leuven.
-
-No results yet.
-
-## Next step
-
-`Codex (gpt-6-astra high): Continue codex/nn-mop-stability-20261105.`
+Next: finishD3–D5, fullN4–64 conditioning, bounded hard growth attempt and independent checks; preserve all gate limits, then hand to ClaudeOpus5.5xhigh. No merge request.

@@ -35,3 +35,13 @@
 
 
 - Snapshot transport correction: the initial materializer appended one extra final LF to each fetched file. Restored all222 unchanged inputs byte-for-byte (the topic LOG is already being updated) against their pinned Git blob SHA before final evidence collection; this changes no scientific content. Initial replay values matched exactly; code-hash receipts are refreshed after correction.
+
+- Operational clarification: default shell sandbox networking could not reach the proxy; explicitly enabled-network execution reaches GitHub but has no CLI credentials. The connector is authenticated. AC explicitly allowed its verified GitHub noreply author address for this campaign, resolving handoff01's email requirement. Setup/reservation first published as d87925630e9e460031df319f3994ca2e7fad8ca0; draft PR28 opened. Refreshed peer heads PR27 3dda890 / PR24 0299fcf: no reservation change or collision.
+- Astra ultra escalation justification (D1 hard step): the sampled induced condition norms grow by many orders while the requested all-N growth law remains unresolved; a bounded independent analytic lower-bound attempt is a decisive hard mathematics step, not a fit or routine table generation. A separate Astra ultra worker owns only D1-hard files and cannot replace Claude audit.
+
+## Round1 checkpoint — D1, D2, D6 and D7
+
+- D1 sampledN={4,8,12,16,24,32,48,64}, both families,180/260dps. Exact induced row-sum formula is proved; numerical norm evaluations are MEASURED, with precision agreement, not interval certification. Independent exact Fraction derivative checks agree4416entries atN3/4/6. Supporting local derivative and coarse allN Kraw upper-bound records are separate from the OPEN sharp-growth target.
+- D2 G0PASS12/12; G1 finite threshold fails and G2 fails in HahnN8/16. Stable Lanczos marginals remain near rounding precision but layer amplification persists. Path diagnostics preserve the second-measure anchor; no full-array backward claim. See attempts/D2.md.
+- D6 graph mixed-test identity is elementary background with scoped standard-grading obstructions; no faithful fullNN-to-bivariate recurrence dictionary or stability transfer. The worker discloses late completion of some gate-summary reads after the prescribed probe; no retrospective prospective novelty clearance is claimed. D7 source retrieval is BLOCKED through both repository and publisher supplement routes, not reproduced.
+- D3/D4/D5 and supplementary independent reports remain in progress. No scientific result is registered and Claude audit remains PENDING.

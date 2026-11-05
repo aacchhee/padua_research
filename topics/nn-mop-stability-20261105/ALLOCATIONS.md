@@ -14,3 +14,5 @@ Read all 44 full ledger/registry copies at current main `b4d292eea5eed373002506d
 The union endpoints are T431/N161/IDEA529/LIT613, including all permanent gaps. PR27 owns T392–431/N146–161/IDEA490–529/LIT598–613; PR24 owns T324–363/N116–131/IDEA414–453/LIT582–593. Main includes merged PR21/22/23/25/26 and older allocations. New ranges start strictly above this union. No foreign range is assigned, renumbered or modified.
 
 Priority is the first pushed commit containing this file, to be linked in the draft PR. The date is not priority. Recheck live heads before final assignment or readiness; unused headroom stays permanent.
+
+First publication: [d87925630e9e460031df319f3994ca2e7fad8ca0](https://github.com/aacchhee/padua_research/commit/d87925630e9e460031df319f3994ca2e7fad8ca0), linked from [draft PR28](https://github.com/aacchhee/padua_research/pull/28). Post-publication peer refresh at PR27 3dda890275a7599caa707b0fb8c0b6e6f6a80643 and PR24 0299fcf4d3d3f23eacb69a09fb790ab653e0a724 reread changed full ledger/registry content; reservations unchanged, same union, no collision. No final assignment.
