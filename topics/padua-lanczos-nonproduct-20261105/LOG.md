@@ -339,3 +339,24 @@ recorded by the final inventory.
   their explicit models/quantifiers, and no final IDs/shared registries were
   changed. The single substantive Claude Opus5.5 xhigh audit is next;
   supplementary acceptance does not replace it or waive canonical issues.
+
+## 2026-11-05 — final evidence inventory
+
+- Generated from committed source head
+  `62668c194ea510907f7a2a9d47c33d7c67f7a4dc`:40 code files,70 receipts,
+  317 unique external paths and497 references. Checked every chunk's bytes,
+  SHA256, record count and source head; largest JSON16,240 bytes. All990
+  available declared byte/hash comparisons MATCH; four comparisons on two
+  inherited paths are unavailable because those paths lie outside the
+  explicitly read campaign root. No new campaign path is unavailable.
+- Two unread inherited references are the original frontier G1 full input
+  manifest and source report; the accepted compact evidence/reanalysis and
+  its limits remain recorded. No external archival delivery is claimed.
+- The18 inventory/index JSON files add238,041 bytes. Final broad repository
+  JSON/compressed-data count is5,489,510 bytes in1,087 files; this topic
+  contributes661,295 bytes. This updates the canonical storage-budget
+  observation above and leaves its audit obligation explicit. The inventory
+  is an observational local index, not a retrievable archive/export receipt.
+- Development outputs, report and small evidence are complete. Handoff02
+  requests the single substantive Claude audit, including canonical protocol
+  and storage-budget issues, before final IDs/registration/readiness.
