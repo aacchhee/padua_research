@@ -1,5 +1,44 @@
 # Current frontier
 
+## Signed Padua MZ — accepted frontier, 2026-11-05
+
+[Report](../topics/padua-mz-2d-frontier-20261105/report.md),
+[results](../results/padua-mz-2d-frontier-20261105.md): PD-N105/106 prove that
+signed minimum/maximum eigenvalues tend to minus/plus infinity along even m;
+PD-N107 extends this to every fixed 1/2<theta<1 at n=floor(theta*m).
+For 0<=theta<=1/2, exactness gives Gram identity and eta=0.
+PD-T295 supplies the fixed-node weight asymptotics. PD-T297 proves
+2<=||H_(m,n)||_(C→L2)<=28.3763348311…<30 for every m>=2 and 0<=n<m,
+resolving PD-T114 at its unchanged endpoint target. The positive-reference
+PD-T296 diamond theorem is separate and supplies no signed transfer.
+
+This dated statement supersedes only the signed-Padua positive OPEN clauses
+in the historical MZ/PR14 sections below. AC retains Status OPEN for
+PD-T028/110/116 with binding **REJECTED: refuted** dispositions via
+PD-N105/106/107; those historical positive assertions are neither unresolved
+conjectures nor usable dependencies. The genuine 1-D sharp upper-limit/gap
+target PD-T027 remains OPEN; PD-N104 and PD-T294 do not settle it.
+
+PD-T298/299 prove the new finite m60/80 cases. Independent exact acceptance is
+exactly m10/20/30/40/60/80; producer coverage 2..60 plus80 is not a gap-free
+independently certified 2..80 range. PD-T300 retains only finite MEASURED
+observations: m100 stopped without acceptance and the m1600 negative float hit
+is uncertified. The analytic carriers prove existence only, give no effective
+finite onset, and do not explain that float hit. Odd-m classification and sharp
+extremal growth remain open. G2 is INCONCLUSIVE, the G4 original screen is
+INCOMPLETE through239, and G5 was NOT RUN.
+
+[Claude audit-01](../topics/padua-mz-2d-frontier-20261105/audit-01.md) accepted
+the mathematics and statuses; [response-01](../topics/padua-mz-2d-frontier-20261105/response-01.md)
+disposes of the editorial findings. Shared registration and preparation checks are complete for
+PR23; it is prepared for AC’s review/merge decision, without approving another draft PR. Detailed preparation stage and checks
+remain in the [topic log](../topics/padua-mz-2d-frontier-20261105/LOG.md), rather
+than becoming a continuing research task. After merge, the scoped results and
+remaining mathematical questions above are the frontier. External cold-storage
+delivery remains pending and nonblocking: no accepted claim requires retained
+bulk, since the checker regenerates exact pencils. No manuscript, submission or
+historical-priority claim is added. Only AC merges.
+
 Updated: 2026-11-01. Owner: AC. Current integration: AC confirmed PR #10 next (2026-11-01); all other drafts will adjust after PR #10 merges. The original [charter](../topics/charter-unisolvence-20261031/LOG.md) and its historical pre-merge notes are preserved below.
 
 ## Campaign charter

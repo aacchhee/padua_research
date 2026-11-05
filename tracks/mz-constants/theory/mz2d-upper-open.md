@@ -1,5 +1,13 @@
 # PD-T110 — endpoint Padua upper spectrum remains open
 
+## Current resolution — 2026-11-05
+
+Registry Status: **OPEN**, preserving AC's display for the historical positive formulation. Disposition: **REJECTED: refuted**, by the separate **PROVED** [PD-N106 upper carrier](../../../topics/padua-mz-2d-frontier-20261105/theory/f12-eventual-upper-carrier.md). Its explicit admitted polynomial sequence has bounded continuous norm and positive logarithmic signed energy, giving lambda_plus→+infinity along even m. The original all-m upper threshold is therefore false. The title and original formulation, proofs and failed/deferred route history below are preserved verbatim; their OPEN wording is historical, not an unresolved or usable positive assertion. This answers the unchanged target. No effective finite onset, odd-m classification or sharp growth law follows; the carriers prove existence only and do not explain or certify m1600.
+
+Split into: PD-N106. [Claude audit-01](../../../topics/padua-mz-2d-frontier-20261105/audit-01.md) accepted candidate `dee638408505c9977f3febd98fdd42c9bc512c92`; [response-01](../../../topics/padua-mz-2d-frontier-20261105/response-01.md) records the permitted editorial dispositions.
+
+## Preserved original statement and history
+
 Provisional alias: `PD-T?mz2d-codex-10`. Final ID assigned at PR preparation, 2026-11-01; required Claude audit PENDING.
 
 ID kind: PD-T.

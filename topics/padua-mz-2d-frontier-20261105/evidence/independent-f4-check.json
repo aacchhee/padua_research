@@ -1,0 +1,188 @@
+{
+  "status": "MEASURED float checks; exact rational finite tail regression",
+  "proof_dependency": false,
+  "rules_input_sha": "83cf6f1ee244f2e72057332a7ec04ee74db1f0de",
+  "command": [
+    "/workspace/padua_research/topics/padua-mz-2d-frontier-20261105/code/independent_f4_check.py",
+    "/workspace/padua_research/topics/padua-mz-2d-frontier-20261105/evidence/independent-f4-check.json"
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "seed": null,
+  "inputs": {
+    "topics/padua-mz-2d-frontier-20261105/code/independent_f4_check.py": "3e4b8cd3dfa0b3ff555c7774899b2c79f054ddcccfa19d1839d9efd428f7704f",
+    "topics/padua-mz-2d-frontier-20261105/code/g1_spectral.py": "f246b7a436fa9e6133153a87fd5af887d80f6fb0ab12dc2208fbd9ade223c241",
+    "tracks/mz-constants/code/mz2d_spectra.py": "623acdf06e4ad1c50c3c0562f47f037b8efa15fcc332c2f1ee7a7d0f88ee8b76",
+    "topics/padua-mz-2d-20261101/definitions.md": "4ac0e391859a14e4d6f752f1244df0701e99d9b3d8ab8570bd632520f517c7db",
+    "topics/padua-mz-2d-frontier-20261105/theory/f4-uniform-density-bound.md": "cee004269514e238499885ae32154deb0f6616e56d2e52806d37b282df8621b2"
+  },
+  "rational_tail_R_range": [
+    1,
+    100
+  ],
+  "rows": [
+    {
+      "m": 2,
+      "nodes": 6,
+      "moment_solve_residual": 5.366077952354924e-16,
+      "density_weight_max_error": 4.625929269271486e-16,
+      "g1_dct_weight_max_error": 4.810966440042345e-16,
+      "density_error_times_m_nodes": 8.000000000000002,
+      "main_mass": 2.8491093788820274,
+      "main_mass_formula_error": 1.3322676295501878e-15,
+      "raw_gram_max_over_m2": 0.09375,
+      "main_gram_max": 1.2464853532608875,
+      "chebyshev_discrete_gram_max_error": 1.249000902703301e-16,
+      "signed_eigenvalues": [
+        0.9999999999999993,
+        1.0000000000000004
+      ],
+      "enumerated_sign_vertices": 32,
+      "float_operator_norm_all_signs": 2.0000000000000004
+    },
+    {
+      "m": 3,
+      "nodes": 10,
+      "moment_solve_residual": 6.661338147750939e-16,
+      "density_weight_max_error": 3.0531133177191805e-16,
+      "g1_dct_weight_max_error": 2.914335439641036e-16,
+      "density_error_times_m_nodes": 11.999999999999998,
+      "main_mass": 3.4391792515906885,
+      "main_mass_formula_error": 4.440892098500626e-16,
+      "raw_gram_max_over_m2": 0.0683189901224635,
+      "main_gram_max": 1.3220973689107236,
+      "chebyshev_discrete_gram_max_error": 1.3877787807814457e-16,
+      "signed_eigenvalues": [
+        0.46875000000000133,
+        1.2499999999999998
+      ],
+      "enumerated_sign_vertices": 512,
+      "float_operator_norm_all_signs": 2.4355900240869963
+    },
+    {
+      "m": 4,
+      "nodes": 15,
+      "moment_solve_residual": 1.2420620087993939e-15,
+      "density_weight_max_error": 4.2500725161431774e-16,
+      "g1_dct_weight_max_error": 4.440892098500626e-16,
+      "density_error_times_m_nodes": 6.483935280888819,
+      "main_mass": 3.6666494947242905,
+      "main_mass_formula_error": 0.0,
+      "raw_gram_max_over_m2": 0.05456971697322662,
+      "main_gram_max": 1.4020411043052565,
+      "chebyshev_discrete_gram_max_error": 1.1102230246251565e-16,
+      "signed_eigenvalues": [
+        0.522976621066901,
+        1.4221918327092562
+      ],
+      "enumerated_sign_vertices": 16384,
+      "float_operator_norm_all_signs": 2.3392876408570777
+    },
+    {
+      "m": 5,
+      "nodes": 21,
+      "moment_solve_residual": 9.471590178833367e-16,
+      "density_weight_max_error": 4.440892098500626e-16,
+      "g1_dct_weight_max_error": 4.440892098500626e-16,
+      "density_error_times_m_nodes": 7.555555555555555,
+      "main_mass": 3.7787660051103753,
+      "main_mass_formula_error": 8.881784197001252e-16,
+      "raw_gram_max_over_m2": 0.04936327393932077,
+      "main_gram_max": 1.4614965303020995,
+      "chebyshev_discrete_gram_max_error": 2.220446049250313e-16,
+      "signed_eigenvalues": [
+        0.41111197332764277,
+        1.4620854384261692
+      ]
+    },
+    {
+      "m": 6,
+      "nodes": 28,
+      "moment_solve_residual": 1.2923689896027213e-15,
+      "density_weight_max_error": 5.551115123125783e-16,
+      "g1_dct_weight_max_error": 5.542441505745899e-16,
+      "density_error_times_m_nodes": 6.637501869492804,
+      "main_mass": 3.842373981795026,
+      "main_mass_formula_error": 4.440892098500626e-16,
+      "raw_gram_max_over_m2": 0.04529897611980811,
+      "main_gram_max": 1.5216278251145718,
+      "chebyshev_discrete_gram_max_error": 4.440892098500626e-16,
+      "signed_eigenvalues": [
+        0.43794991210508,
+        1.5155260860672854
+      ]
+    },
+    {
+      "m": 9,
+      "nodes": 55,
+      "moment_solve_residual": 2.1250362580715887e-15,
+      "density_weight_max_error": 6.591949208711867e-16,
+      "g1_dct_weight_max_error": 6.574601973952099e-16,
+      "density_error_times_m_nodes": 7.18980972068556,
+      "main_mass": 3.926683980097581,
+      "main_mass_formula_error": 4.440892098500626e-16,
+      "raw_gram_max_over_m2": 0.040162257223489456,
+      "main_gram_max": 1.6280180033552043,
+      "chebyshev_discrete_gram_max_error": 4.440892098500626e-16,
+      "signed_eigenvalues": [
+        0.3599277449654462,
+        1.6060425348454956
+      ]
+    },
+    {
+      "m": 10,
+      "nodes": 66,
+      "moment_solve_residual": 2.0539125955565396e-15,
+      "density_weight_max_error": 8.881784197001252e-16,
+      "g1_dct_weight_max_error": 8.951173136040325e-16,
+      "density_error_times_m_nodes": 6.4809208657334185,
+      "main_mass": 3.9400453424871946,
+      "main_mass_formula_error": 4.440892098500626e-16,
+      "raw_gram_max_over_m2": 0.03910994459708483,
+      "main_gram_max": 1.6497490326970108,
+      "chebyshev_discrete_gram_max_error": 3.3306690738754696e-16,
+      "signed_eigenvalues": [
+        0.3561913826298185,
+        1.6348566147837873
+      ]
+    },
+    {
+      "m": 15,
+      "nodes": 136,
+      "moment_solve_residual": 3.219646771412954e-15,
+      "density_weight_max_error": 4.77048955893622e-16,
+      "g1_dct_weight_max_error": 4.822531263215524e-16,
+      "density_error_times_m_nodes": 7.036582465153893,
+      "main_mass": 3.972555391054377,
+      "main_mass_formula_error": 4.440892098500626e-16,
+      "raw_gram_max_over_m2": 0.036415828783059774,
+      "main_gram_max": 1.7117307383473133,
+      "chebyshev_discrete_gram_max_error": 1.1102230246251565e-15,
+      "signed_eigenvalues": [
+        0.30913716808692865,
+        1.6880314860628922
+      ]
+    },
+    {
+      "m": 20,
+      "nodes": 231,
+      "moment_solve_residual": 2.220446049250313e-15,
+      "density_weight_max_error": 5.360295540768334e-16,
+      "g1_dct_weight_max_error": 5.32993787993874e-16,
+      "density_error_times_m_nodes": 6.34900944025675,
+      "main_mass": 3.9843244939829763,
+      "main_mass_formula_error": 4.440892098500626e-16,
+      "raw_gram_max_over_m2": 0.03513108057335682,
+      "main_gram_max": 1.7425911793793176,
+      "chebyshev_discrete_gram_max_error": 2.4424906541753444e-15,
+      "signed_eigenvalues": [
+        0.2722330049580638,
+        1.7233137316697744
+      ]
+    }
+  ],
+  "constant": 28.37633483112321,
+  "seconds": 0.7117580060000819
+}

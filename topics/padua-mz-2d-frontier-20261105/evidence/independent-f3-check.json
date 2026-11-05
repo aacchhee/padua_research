@@ -1,0 +1,23 @@
+{
+  "status": "Exact rational finite regression, not an all-m computer proof",
+  "pass": true,
+  "rules_input_sha": "83cf6f1ee244f2e72057332a7ec04ee74db1f0de",
+  "command": [
+    "/workspace/padua_research/topics/padua-mz-2d-frontier-20261105/code/independent_f3_check.py",
+    "/workspace/padua_research/topics/padua-mz-2d-frontier-20261105/evidence/independent-f3-check.json"
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "inputs": {
+    "topics/padua-mz-2d-frontier-20261105/code/independent_f3_check.py": "f46d0297cc00d3848a5df0378115fcb12989257b12256a00dd35308a474361a4",
+    "topics/padua-mz-2d-frontier-20261105/theory/f3-smooth-diamond-reference.md": "a55b401d450fe3e0510eb605051fd7ea99ee59743a1a3fc46ee14de992773aaa"
+  },
+  "scalar_and_diamond_scope": "m=1..24, every n=0..m-1",
+  "degree_pairs": 300,
+  "frequency_tests": 379900,
+  "lift_scope": "counts m=1..24; all pairwise torus separations m=1..8",
+  "lift_pair_tests": 92064,
+  "alias_scope": "m=1..10, every n=0..m-1, every input/output supported frequency",
+  "alias_pair_tests": 205311,
+  "seconds": 2.9987728259999358
+}

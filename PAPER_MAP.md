@@ -1,5 +1,11 @@
 # Paper map
 
+Dated signed-Padua supersession (2026-11-05): the positive signed-Padua OPEN
+clauses in the historical MZ/PR14 briefs below are superseded by the
+[accepted frontier brief](#signed-padua-mz-frontier--accepted-scoped-results-pr23).
+PD-T028/110/116 retain AC’s registry Status OPEN with binding REJECTED: refuted
+dispositions; they are not unresolved positive assertions. PD-T027 remains OPEN.
+
 No manuscript has been drafted or accepted. The following is a development brief only; publication-level overlap remains unverified.
 
 | Manuscript / brief | Research question | Track / draft | Supporting result IDs | Gaps | Readiness |
@@ -79,3 +85,28 @@ with no accepted erratum or author contact. After merge, completed registration
 is historical preparation; the scoped results above are the outcome, with no
 further mathematical campaign assigned. Physical cold-storage delivery remains
 pending; T2/T3 prospective-gate timing is not waived or cured.
+
+## Signed Padua MZ frontier — accepted scoped results, PR23
+
+| Brief | Question | Supporting results | Remaining gaps | Readiness |
+|---|---|---|---|---|
+| [Signed frontier report](topics/padua-mz-2d-frontier-20261105/report.md) | Signed Lebesgue Padua spectra and actual continuous-input coefficient norm | PD-T295 fixed-node weights; PD-N105/106 even-m extrema to minus/plus infinity; PD-N107 sharp half-degree threshold; PD-T297 uniform C→L2 norm below30 for all m>=2,n<m, resolving PD-T114; PD-T296 positive-reference diamond estimate; PD-T298/299 finite m60/80; PD-T300 finite MEASURED observations | No effective carrier onset, odd-m classification or sharp growth; m1600 float hit uncertified; genuine 1-D PD-T027 sharp upper-limit/gap OPEN | Claude audit-01 accepted mathematics/statuses; response-01 disposes of editorial findings; PR23 registration/preparation checked for AC’s review; no other draft readiness inferred; no manuscript, submission or priority claim |
+
+For every fixed 1/2<theta<1, the signed extrema diverge in opposite directions
+along even m at n=floor(theta*m); for 0<=theta<=1/2, exactness gives eta=0.
+PD-T028/110/116 preserve historical Status OPEN and binding REJECTED: refuted
+links to PD-N105/106/107. The positive-reference theorem supplies no signed
+transfer; the uniform C→L2 bound is consistent with divergent polynomial L2
+Gram spectra. PD-N104's sign-discard obstruction and PD-T294's harmonic-boundary
+result do not resolve PD-T027.
+
+The carriers prove existence only, supply no effective finite onset and do not
+explain the separate uncertified m1600 float observation. Independently accepted
+finite cases are exactly10/20/30/40/60/80; producer2..60 plus80 is not an
+independently certified gap-free2..80 range. m100 stopped without acceptance.
+G2 fits remain INCONCLUSIVE, G4 original scope INCOMPLETE through239, G5 NOT RUN.
+Detailed preparation stays in the [topic log](topics/padua-mz-2d-frontier-20261105/LOG.md);
+after merge, the scoped results and mathematical gaps above replace preparation
+as the frontier. External cold-storage delivery remains pending and nonblocking;
+no accepted claim requires retained bulk because the checker regenerates exact
+pencils. Only AC merges.

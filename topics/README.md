@@ -47,3 +47,33 @@ T2/T3 prospective-gate timing remains a confirmed, unwaived deviation of minor
 assessed impact for AC's decision; physical cold-storage delivery remains pending.
 Completed results and registration are the post-merge outcome; no further
 mathematical campaign, manuscript or priority claim is assigned. Only AC merges.
+
+## Signed Padua MZ frontier — PR23 accepted scoped preparation
+
+[padua-mz-2d-frontier-20261105](padua-mz-2d-frontier-20261105/LOG.md),
+branch `codex/padua-mz-2d-frontier-20261105`:
+[report](padua-mz-2d-frontier-20261105/report.md),
+[results](../results/padua-mz-2d-frontier-20261105.md),
+[reservation](padua-mz-2d-frontier-20261105/ALLOCATIONS.md).
+PD-T294–300 and PD-N104–107 register the accepted analytic/warmup, finite
+computer-assisted and MEASURED scopes separately; IDEA-384–397 retain the
+candidates and dispositions. PD-N105/106/107 prove signed extrema to
+minus/plus infinity along even m at every fixed 1/2<theta<1; theta<=1/2 is exact.
+PD-T297 proves the actual C→L2 norm below30 for every m>=2,n<m and resolves
+PD-T114; PD-T296 is a separate positive-reference theorem. AC’s Status OPEN
+cells for PD-T028/110/116 remain with binding REJECTED: refuted dispositions,
+not unresolved positive conjectures. This supersedes those signed-target
+clauses in the historical PR14 description; genuine 1-D PD-T027 remains OPEN.
+
+[Claude audit-01](padua-mz-2d-frontier-20261105/audit-01.md) accepted mathematics
+and statuses; [response-01](padua-mz-2d-frontier-20261105/response-01.md) disposes
+of the editorial findings. Shared registration and preparation checks are complete; PR23 is prepared
+for AC’s review/merge decision. Detailed preparation stage stays in the topic log. After
+merge, the scoped results and remaining mathematical gaps are the outcome:
+no effective finite carrier onset, odd-m classification or sharp growth law;
+m1600 remains an uncertified float hit unrelated to the existence proof.
+Independent exact cases are exactly10/20/30/40/60/80, not a gap-free2..80 range;
+m100 stopped without acceptance. G2 INCONCLUSIVE, G4 original scope INCOMPLETE
+through239 and G5 NOT RUN remain unchanged. External cold-storage delivery
+remains pending and nonblocking because no accepted claim needs retained bulk.
+No manuscript, submission or historical-priority claim is added. Only AC merges.

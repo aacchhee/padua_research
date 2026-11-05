@@ -1,0 +1,27 @@
+{
+  "candidate": "05ccb20da1058cade31abc3615264bd4881fa8bf",
+  "response_input": "7a8d8dd313b5370589810f4efd910ed65744f865",
+  "main": "d9b7cb89460d4e46e44bbaa66ff766aa499b95ee",
+  "verdict": "PASS",
+  "protected_files": 70,
+  "unchanged_unrelated_registry_ids": 273,
+  "registered_results": 11,
+  "retained_ideas": 14,
+  "allocation_source_hashes": 43,
+  "inventory_entries": 108,
+  "inventory_bytes": 11614,
+  "proof_section_sha256": {
+    "PD-T294": "a67fd5545a063f059141ccf437108169de0797bd7f436e833da600eeb8ddfbf8",
+    "PD-T295": "24f898a6969ef8d7481bff2a10b47b99bf929d799653fca24c38e0c5099cb1a1",
+    "PD-T296": "d71f8c8e9755480e727c7d0805d81e5f2c123a3c53fb3693436185e4c42d9e61",
+    "PD-T297": "a4684fcde2ad6577cecb1fa76da74e68836c3bb1f5dcca1ba0c7bb3da92d21e9",
+    "PD-T298": "137e721819e17931253175bd12c8076946160ca8cdf06719d35e6b5238247101",
+    "PD-T299": "0ebaba92e6a7f58efab53176fdbcdb85cfd1e69d02eaa7b1980077c92ad15790",
+    "PD-N104": "1fa240e44e2ace0b99c553302e5773c18a476e931b68962e82f122602abefbb0",
+    "PD-N105": "c8f1a42b93dd603075464118b9633a88abb302468613e33cd64b56571ce69043",
+    "PD-N106": "04675d5ff2a8c550ea61e3418e7e531f33275fd694fbf890ea5cd48e0a5aee95",
+    "PD-N107": "f9cb70eae854da0c5d7bb2a538e46588c67abf8a27bfab1a10e172be7ba038b4"
+  },
+  "measurement_sha256": "7fd484077cee88afcb6a3d6a3efb5588c754de7c86d1f7ebb96297a2bd99f8d9",
+  "limits": "Pinned mechanical scope only; no new mathematical audit or scientific execution; later integration and readiness records excluded."
+}
