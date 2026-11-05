@@ -1,5 +1,13 @@
 # PD-T028 — two-dimensional Padua upper and endpoint targets
 
+## Current resolution — 2026-11-05
+
+Registry Status: **OPEN**, preserving AC's display for the historical positive formulation. Disposition: **REJECTED: refuted**, by the separate **PROVED** [PD-N105 negative carrier](../../../topics/padua-mz-2d-frontier-20261105/theory/f12-eventual-negative-carrier.md) and [PD-N106 upper carrier](../../../topics/padua-mz-2d-frontier-20261105/theory/f12-eventual-upper-carrier.md). Along even m the minimum tends to minus infinity, the maximum to plus infinity, and eta diverges; the positive endpoint orders and eta→1 are false. The earlier OPEN formulation below is historical, not an unresolved positive conjecture or usable dependency. No effective onset, odd-m classification or sharp extremal growth law is claimed. These carriers prove existence only and do not explain or certify the separate m1600 float observation.
+
+Split into: PD-N105/106 preserve their own negative statements and proofs; supporting PD-T021 remains unchanged. [Claude audit-01](../../../topics/padua-mz-2d-frontier-20261105/audit-01.md) accepted candidate `dee638408505c9977f3febd98fdd42c9bc512c92`; [response-01](../../../topics/padua-mz-2d-frontier-20261105/response-01.md) records the permitted editorial dispositions.
+
+## Preserved original statement and history
+
 Review update, 2026-10-31: final ID allocation and scoped independent Astra review are complete; see topics/mz-constants/independent-astra-01.md and ID_CROSSWALK.md. The original development-stage pending-review wording below is historical. Required Claude audit and unresolved literature/novelty coverage remain PENDING. This administrative update changes no mathematical claim or proof.
 
 ID kind: PD-T. Aliases: signed Padua weak MZ; two-dimensional log-squared endpoint.

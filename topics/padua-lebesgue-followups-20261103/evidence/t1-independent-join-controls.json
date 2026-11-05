@@ -1,0 +1,88 @@
+{
+  "all_controls_passed": true,
+  "control_sha256": "ab53b816bdacd627d23c9d1c8baf9a1593fc7d861f67f962aed1940107f8939c",
+  "controls": [
+    {
+      "case": "valid",
+      "failure": null,
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "case": "pending_interior",
+      "failure": "ValueError: interior still has pending/unresolved cases",
+      "passed": true,
+      "returncode": 1
+    },
+    {
+      "case": "missing_leaf_subtree",
+      "failure": "ValueError: interior prefix partition incomplete",
+      "passed": true,
+      "returncode": 1
+    },
+    {
+      "case": "false_leaf_accounting",
+      "failure": "ValueError: direct leaf accounting mismatch",
+      "passed": true,
+      "returncode": 1
+    },
+    {
+      "case": "counterfeit_interior_source",
+      "failure": "ValueError: unsupported interior proposal source",
+      "passed": true,
+      "returncode": 1
+    },
+    {
+      "case": "missing_edge",
+      "failure": "ValueError: four edges required",
+      "passed": true,
+      "returncode": 1
+    },
+    {
+      "case": "missing_corner",
+      "failure": "ValueError: physical corner list/order mismatch",
+      "passed": true,
+      "returncode": 1
+    },
+    {
+      "case": "unresolved_boundary",
+      "failure": "ValueError: boundary has unresolved cases",
+      "passed": true,
+      "returncode": 1
+    },
+    {
+      "case": "counterfeit_boundary_wrapper",
+      "failure": "AssertionError: wrong boundary producer identity",
+      "passed": true,
+      "returncode": 1
+    },
+    {
+      "case": "counterfeit_boundary_frozen_ancestry",
+      "failure": "AssertionError: wrong boundary frozen ancestry",
+      "passed": true,
+      "returncode": 1
+    },
+    {
+      "case": "wrong_raw_interior_hash",
+      "failure": "AssertionError: wrong raw input hash",
+      "passed": true,
+      "returncode": 1
+    },
+    {
+      "case": "wrong_raw_boundary_hash",
+      "failure": "AssertionError: wrong raw input hash",
+      "passed": true,
+      "returncode": 1
+    },
+    {
+      "case": "existing_output_preserved",
+      "failure": "ValueError: refusing to overwrite different output",
+      "passed": true,
+      "returncode": 1
+    }
+  ],
+  "count_certified": false,
+  "driver_sha256": "a88b18f2a617d7dac03a5db7ba2a89a32cae731cd2f7b6c5a0ea400e5b554b61",
+  "driver_sha256_after": "a88b18f2a617d7dac03a5db7ba2a89a32cae731cd2f7b6c5a0ea400e5b554b61",
+  "scope": "synthetic structural fixtures; no mathematical certificate accepted"
+}

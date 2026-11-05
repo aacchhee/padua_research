@@ -1,0 +1,83 @@
+{
+  "checker_sha256": "a9cff5748d6c40ee41ac76e4e8a0035e0d5dab95f4de1233dfcc26902cb085a2",
+  "corner_active_patterns": 32,
+  "corner_roots": [
+    {
+      "id": 0,
+      "point": [
+        -1,
+        -1
+      ],
+      "value": [
+        "9080981447447065247946713045998135749247273950501/1461501637330902918203684832716283019655932542976",
+        "1135122680930883155993339130749766968655909243829/182687704666362864775460604089535377456991567872"
+      ]
+    },
+    {
+      "id": 1,
+      "point": [
+        1,
+        -1
+      ],
+      "value": [
+        "9080981447447065247946713045998135749247273950501/1461501637330902918203684832716283019655932542976",
+        "1135122680930883155993339130749766968655909243829/182687704666362864775460604089535377456991567872"
+      ]
+    }
+  ],
+  "corner_tail_ast_sha256": "1d922a139259225cff082e3a8786a333f834313515afaa2b23002c14ca0db8bf",
+  "corners": [
+    {
+      "id": 0,
+      "kind": "max",
+      "point": [
+        -1,
+        -1
+      ],
+      "zeros": [
+        10,
+        20,
+        30,
+        40
+      ]
+    },
+    {
+      "kind": "node",
+      "point": [
+        -1,
+        1
+      ]
+    },
+    {
+      "id": 1,
+      "kind": "max",
+      "point": [
+        1,
+        -1
+      ],
+      "zeros": [
+        0,
+        10,
+        20,
+        30
+      ]
+    },
+    {
+      "kind": "node",
+      "point": [
+        1,
+        1
+      ]
+    }
+  ],
+  "count_certified": false,
+  "driver_sha256": "2155fc8363ccd017596d1a2462a2351fe222cf2c0e7f2cbd941bffbeda25d325",
+  "edge_dispositions": {},
+  "edge_roots": [],
+  "input_sha256": "a3b4f278a322338fb65f60922b4251265288148e1a09fd22882215004e81c324",
+  "scope": "corner predicates only; empty edge accumulators are placeholders, not edge evidence",
+  "seconds": 69.75750652299985,
+  "verified_corner_maxima": 2,
+  "verified_edge_maxima_enclosures": 0,
+  "verified_edge_patterns": 0
+}

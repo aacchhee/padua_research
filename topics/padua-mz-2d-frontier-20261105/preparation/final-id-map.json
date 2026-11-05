@@ -1,0 +1,156 @@
+{
+  "source_input": "7a8d8dd313b5370589810f4efd910ed65744f865",
+  "allocation_scan": "allocation-scan.json",
+  "records": [
+    {
+      "provisional": "PD-T?mz2d-frontier-codex-11",
+      "final": "PD-T294",
+      "path": "theory/f12-harmonic-boundary-escape.md",
+      "status": "PROVED"
+    },
+    {
+      "provisional": "PD-T?mz2d-frontier-codex-12",
+      "final": "PD-T295",
+      "path": "theory/f12-local-weight-asymptotic.md",
+      "status": "PROVED"
+    },
+    {
+      "provisional": "PD-T?mz2d-frontier-codex-f3-01",
+      "final": "PD-T296",
+      "path": "theory/f3-smooth-diamond-reference.md",
+      "status": "PROVED"
+    },
+    {
+      "provisional": "PD-T?mz2d-frontier-codex-f4-01",
+      "final": "PD-T297",
+      "path": "theory/f4-uniform-density-bound.md",
+      "status": "PROVED"
+    },
+    {
+      "provisional": "PD-T?mz2d-frontier-codex-90",
+      "final": "PD-T298",
+      "path": "theory/cert-finite-extension.md",
+      "status": "PROVED"
+    },
+    {
+      "provisional": "PD-T?mz2d-frontier-codex-91",
+      "final": "PD-T299",
+      "path": "theory/cert-finite-extension-m80.md",
+      "status": "PROVED"
+    },
+    {
+      "provisional": "PD-T?mz2d-frontier-codex-92",
+      "final": "PD-T300",
+      "path": "theory/frontier-measurements.md",
+      "status": "MEASURED"
+    },
+    {
+      "provisional": "PD-N?mz2d-frontier-codex-10",
+      "final": "PD-N104",
+      "path": "theory/f12-1d-sign-discard-obstruction.md",
+      "status": "PROVED"
+    },
+    {
+      "provisional": "PD-N?mz2d-frontier-codex-13",
+      "final": "PD-N105",
+      "path": "theory/f12-eventual-negative-carrier.md",
+      "status": "PROVED"
+    },
+    {
+      "provisional": "PD-N?mz2d-frontier-codex-14",
+      "final": "PD-N106",
+      "path": "theory/f12-eventual-upper-carrier.md",
+      "status": "PROVED"
+    },
+    {
+      "provisional": "PD-N?mz2d-frontier-codex-f3-01",
+      "final": "PD-N107",
+      "path": "theory/f3-fixed-ratio-threshold.md",
+      "status": "PROVED"
+    }
+  ],
+  "ideas": [
+    {
+      "provisional": "IDEA?mz2d-frontier-codex-10",
+      "final": "IDEA-384"
+    },
+    {
+      "provisional": "IDEA?mz2d-frontier-codex-11",
+      "final": "IDEA-385"
+    },
+    {
+      "provisional": "IDEA?mz2d-frontier-codex-12",
+      "final": "IDEA-386"
+    },
+    {
+      "provisional": "IDEA?mz2d-frontier-codex-13",
+      "final": "IDEA-387"
+    },
+    {
+      "provisional": "IDEA?mz2d-frontier-codex-14",
+      "final": "IDEA-388"
+    },
+    {
+      "provisional": "IDEA?mz2d-frontier-codex-15",
+      "final": "IDEA-389"
+    },
+    {
+      "provisional": "IDEA?mz2d-frontier-codex-16",
+      "final": "IDEA-390"
+    },
+    {
+      "provisional": "IDEA?mz2d-frontier-codex-f3-01",
+      "final": "IDEA-391"
+    },
+    {
+      "provisional": "IDEA?mz2d-frontier-codex-f3-02",
+      "final": "IDEA-392"
+    },
+    {
+      "provisional": "IDEA?mz2d-frontier-codex-f3-03",
+      "final": "IDEA-393"
+    },
+    {
+      "provisional": "IDEA?mz2d-frontier-codex-f3-04",
+      "final": "IDEA-394"
+    },
+    {
+      "provisional": "IDEA?mz2d-frontier-codex-f4-01",
+      "final": "IDEA-395"
+    },
+    {
+      "provisional": "IDEA?mz2d-frontier-codex-f4-02",
+      "final": "IDEA-396"
+    },
+    {
+      "provisional": "IDEA?mz2d-frontier-codex-f4-03",
+      "final": "IDEA-397"
+    }
+  ],
+  "existing_targets": {
+    "PD-T028": "OPEN; REJECTED: refuted via PD-N105/106",
+    "PD-T110": "OPEN; REJECTED: refuted via PD-N106",
+    "PD-T116": "OPEN; REJECTED: refuted via PD-N107",
+    "PD-T114": "PROVED via PD-T297",
+    "PD-T027": "OPEN unchanged"
+  },
+  "unused_permanent_gaps": {
+    "PD-T": [
+      301,
+      323
+    ],
+    "PD-N": [
+      108,
+      115
+    ],
+    "IDEA": [
+      398,
+      413
+    ],
+    "LIT": [
+      574,
+      581
+    ]
+  },
+  "qualification": "PD-T300 transcribes only audited report/numerical-results finite MEASURED observations into their durable registered home; no new execution or stronger mathematical statement. Historical continuation f3-signed-target-open.md remains the existing PD-T116 record, no new ID."
+}

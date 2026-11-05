@@ -1,0 +1,122 @@
+{
+ "rules_input_sha": "83cf6f1ee244f2e72057332a7ec04ee74db1f0de",
+ "command": [
+  "topics/padua-mz-2d-frontier-20261105/code/independent_cert.py",
+  "--producer-receipt",
+  "topics/padua-mz-2d-frontier-20261105/evidence/cert-m20.json",
+  "--scratch",
+  "/tmp/padua-independent-cert",
+  "--output",
+  "topics/padua-mz-2d-frontier-20261105/evidence/independent-cert-m20.json"
+ ],
+ "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+ "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+ "numpy": "2.3.5",
+ "scipy": "1.17.0",
+ "python_flint": "0.9.0",
+ "flint": "3.6.0",
+ "checker_sha256": "28228bf2fe412d13c9a581e907aed56385a914b3e51227126b110a9c6b4348cc",
+ "definitions_sha256": "4ac0e391859a14e4d6f752f1244df0701e99d9b3d8ab8570bd632520f517c7db",
+ "independence": "Python Fraction reconstruction and repeated reflections; fresh transforms; shared FLINT and signed-dominance predicate",
+ "result": {
+  "m": 20,
+  "n": 19,
+  "dimension": 210,
+  "offblock_pairs_checked": 11000,
+  "native_integer_entries_compared_as_rationals": 44200,
+  "blocks": [
+   {
+    "dimension": 110,
+    "endpoints": [
+     {
+      "negative": 0,
+      "zero": 0,
+      "positive": 110,
+      "minimum_margin": "1204028098444324718785028748485929356478392888",
+      "endpoint": "272233/1000000",
+      "positive_common_denominator": "2429286507410688300375000000"
+     },
+     {
+      "negative": 1,
+      "zero": 0,
+      "positive": 109,
+      "minimum_margin": "120861884957770698977420997897934225147851201872",
+      "endpoint": "136117/500000",
+      "positive_common_denominator": "1214643253705344150187500000"
+     },
+     {
+      "negative": 110,
+      "zero": 0,
+      "positive": 0,
+      "minimum_margin": "718595933200755069786699722487102566998151536500408",
+      "endpoint": "1723313/1000000",
+      "positive_common_denominator": "2429286507410688300375000000"
+     },
+     {
+      "negative": 110,
+      "zero": 0,
+      "positive": 0,
+      "minimum_margin": "359419430925747761345743904543733524778211059965112",
+      "endpoint": "861657/500000",
+      "positive_common_denominator": "1214643253705344150187500000"
+     }
+    ],
+    "transform_scale": "10000000000000",
+    "transform_path": "/tmp/padua-independent-cert/independent-m20-R0.txt",
+    "transform_sha256": "d09113c885f6bdf597fa68b574759a54e823a4d736b11c1bdc56ab19a3b30512",
+    "measured_extrema": [
+     0.2722330049580584,
+     1.720354946549141
+    ]
+   },
+   {
+    "dimension": 100,
+    "endpoints": [
+     {
+      "negative": 0,
+      "zero": 0,
+      "positive": 100,
+      "minimum_margin": "452259817958982678947440305435377720064394753892716",
+      "endpoint": "272233/1000000",
+      "positive_common_denominator": "2429286507410688300375000000"
+     },
+     {
+      "negative": 0,
+      "zero": 0,
+      "positive": 100,
+      "minimum_margin": "226008444654121066715830198217261461134879337011484",
+      "endpoint": "136117/500000",
+      "positive_common_denominator": "1214643253705344150187500000"
+     },
+     {
+      "negative": 99,
+      "zero": 0,
+      "positive": 1,
+      "minimum_margin": "177743179098683827857400169280984919139140543928",
+      "endpoint": "1723313/1000000",
+      "positive_common_denominator": "2429286507410688300375000000"
+     },
+     {
+      "negative": 100,
+      "zero": 0,
+      "positive": 0,
+      "minimum_margin": "32592365490405001110660933141048159218846906904",
+      "endpoint": "861657/500000",
+      "positive_common_denominator": "1214643253705344150187500000"
+     }
+    ],
+    "transform_scale": "10000000000000",
+    "transform_path": "/tmp/padua-independent-cert/independent-m20-R1.txt",
+    "transform_sha256": "76cb4342b854f43549b89d785f7c2eba09b9e326fe90ad6de5e219e9efb3a727",
+    "measured_extrema": [
+     0.2740946981445455,
+     1.723313731669768
+    ]
+   }
+  ],
+  "seconds": 2.205096201999936,
+  "producer_receipt_sha256": "9c5392c3f34b54bd7666720baf38ed9fa8a6cf86fdc30ed640d8a8b9d2d860c3",
+  "native_exact_sha256": "044d90a7c5b43f0bc4cb37bcd00067a576e6ec6705a4956613f4a2b8c1296b68",
+  "verdict": "PASS"
+ }
+}

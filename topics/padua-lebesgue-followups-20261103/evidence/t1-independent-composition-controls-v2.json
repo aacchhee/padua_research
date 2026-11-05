@@ -1,0 +1,170 @@
+{
+  "all_controls_passed": true,
+  "control_sha256": "b3223a883cf599c073d4403b72b9d38533fc26a1f95bf5bad3ae9c6cd152495b",
+  "count_certified": false,
+  "driver_sha256": "0a4f6a3fde72fb07365ab97e5ed79372cfbe69d1c6a81bbc07cf916bd9746e83",
+  "driver_sha256_after": "0a4f6a3fde72fb07365ab97e5ed79372cfbe69d1c6a81bbc07cf916bd9746e83",
+  "optimized_refusals": [
+    "-O",
+    "-OO"
+  ],
+  "original_summary_ast_sha256": "61812bc064c96305324af5a2a52746da8a65e675b0340da792042c026aedf3ca",
+  "rows": [
+    {
+      "case": "metadata_and_timing_only_positive",
+      "failure": null,
+      "passed": true
+    },
+    {
+      "case": "fresh_root_edit",
+      "failure": "fresh interior proof-input identity failed: full fresh replay required",
+      "passed": true
+    },
+    {
+      "case": "fresh_embedding_edit",
+      "failure": "fresh interior proof-input identity failed: full fresh replay required",
+      "passed": true
+    },
+    {
+      "case": "fresh_leaf_edit",
+      "failure": "fresh interior proof-input identity failed: full fresh replay required",
+      "passed": true
+    },
+    {
+      "case": "fresh_integer_to_float",
+      "failure": "fresh interior proof-input identity failed: full fresh replay required",
+      "passed": true
+    },
+    {
+      "case": "fresh_non_diagnostic_summary_edit",
+      "failure": "fresh interior proof-input identity failed: full fresh replay required",
+      "passed": true
+    },
+    {
+      "case": "joined_leaf_edit",
+      "failure": "interior field changed: leaves",
+      "passed": true
+    },
+    {
+      "case": "joined_total_edit",
+      "failure": "complete count summary mismatch",
+      "passed": true
+    },
+    {
+      "case": "joined_boundary_edit",
+      "failure": "joined boundary differs from checked artifact",
+      "passed": true
+    },
+    {
+      "case": "joined_incomplete_flag",
+      "failure": "final complete flag absent",
+      "passed": true
+    },
+    {
+      "case": "interior_missing_flag",
+      "failure": "missing positive interior obligation: verified_supplied_witnesses",
+      "passed": true
+    },
+    {
+      "case": "interior_boolean_to_integer",
+      "failure": "missing positive interior obligation: interior_complete",
+      "passed": true
+    },
+    {
+      "case": "interior_wrong_input",
+      "failure": "interior input binding",
+      "passed": true
+    },
+    {
+      "case": "interior_wrong_source",
+      "failure": "interior execution entry identity",
+      "passed": true
+    },
+    {
+      "case": "interior_false_count_flag",
+      "failure": "wrong interior-only flag: count_certified",
+      "passed": true
+    },
+    {
+      "case": "interior_wrong_dispositions",
+      "failure": "interior leaf dispositions mismatch",
+      "passed": true
+    },
+    {
+      "case": "boundary_missing_flag",
+      "failure": "missing positive boundary obligation: all_boundary_predicates_replayed",
+      "passed": true
+    },
+    {
+      "case": "boundary_true_total_flag",
+      "failure": "wrong boundary-only flag: complete_closed_count",
+      "passed": true
+    },
+    {
+      "case": "boundary_wrong_field",
+      "failure": "boundary field binding",
+      "passed": true
+    },
+    {
+      "case": "boundary_wrong_method_ast",
+      "failure": "boundary method AST identity",
+      "passed": true
+    },
+    {
+      "case": "boundary_wrong_source",
+      "failure": "boundary source identity",
+      "passed": true
+    },
+    {
+      "case": "boundary_wrong_count",
+      "failure": "complete count summary mismatch",
+      "passed": true
+    },
+    {
+      "case": "boundary_wrong_dispositions",
+      "failure": "boundary summary mismatch",
+      "passed": true
+    },
+    {
+      "case": "duplicate_receipts",
+      "failure": "two distinct pinned interior receipts required",
+      "passed": true
+    },
+    {
+      "case": "raw_input_hash_fault",
+      "failure": "wrong raw hash: /tmp/t1-independent-composition-9hgthec9/raw_input_hash_fault/fresh-interior.json",
+      "passed": true
+    },
+    {
+      "case": "source_changed_after",
+      "failure": "composition/helper source changed",
+      "passed": true
+    },
+    {
+      "case": "input_changed_after",
+      "failure": "input changed after identity checks",
+      "passed": true
+    },
+    {
+      "case": "receipt_changed_after",
+      "failure": "receipt changed",
+      "passed": true
+    },
+    {
+      "case": "join_boundary_raw_provenance",
+      "failure": "join boundary raw/source provenance mismatch",
+      "passed": true
+    },
+    {
+      "case": "join_boundary_byte_provenance",
+      "failure": "join boundary raw/source provenance mismatch",
+      "passed": true
+    },
+    {
+      "case": "join_boundary_source_provenance",
+      "failure": "join boundary raw/source provenance mismatch",
+      "passed": true
+    }
+  ],
+  "scope": "synthetic identity/accounting receipts only; no actual mathematical replay claimed"
+}

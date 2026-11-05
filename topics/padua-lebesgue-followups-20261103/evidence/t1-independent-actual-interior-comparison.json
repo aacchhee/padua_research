@@ -1,0 +1,25 @@
+{
+  "all_facts_agree": true,
+  "archive_sha256": "a3b4f278a322338fb65f60922b4251265288148e1a09fd22882215004e81c324",
+  "canonical_verified_facts_sha256": "020deb8cfdd3afb7090626efefda75d53b7b97269d9ef6c2c2d58bfab2f33875",
+  "count_certified": false,
+  "driver_sha256": "0345e62ef9bb88fa11640e135d211648611c9536b85fec528d694e94ef57a69f",
+  "fact_contract_source_sha256": "0a4f6a3fde72fb07365ab97e5ed79372cfbe69d1c6a81bbc07cf916bd9746e83",
+  "format": "t1-independent-actual-interior-facts-comparison-v1",
+  "replay_receipts": [
+    {
+      "bytes": 12709,
+      "path": "topics/padua-lebesgue-followups-20261103/evidence/t1-reference-interior-check.json",
+      "sha256": "b009c46a0da82b6d03c5d870e788e8a6d8b9a6210b2193a7265c7c4a771c0a5c"
+    },
+    {
+      "bytes": 12709,
+      "path": "topics/padua-lebesgue-followups-20261103/evidence/t1-independent-reference-interior-check.json",
+      "sha256": "3971aee06d6bc63d82d1f284312f012788452b4f75f38bd9abf08462d625fcd0"
+    }
+  ],
+  "scope": "actual completed archived interior replays; no fresh/boundary acceptance",
+  "verified_interior_roots": 44,
+  "verified_leaves": 153520,
+  "verified_patterns": 541882
+}

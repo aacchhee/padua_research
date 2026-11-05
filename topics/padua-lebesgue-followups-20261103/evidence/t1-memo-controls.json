@@ -1,0 +1,80 @@
+{
+  "all_controls_passed": true,
+  "count_certified": false,
+  "memo_source_sha256": "d910cb5857a0c09288330925ca833f820690ef76553d8e66402c3e5e352b7e35",
+  "rows": [
+    {
+      "boxes": 57,
+      "cache": {
+        "currsize": 57,
+        "hits": 5151,
+        "maxsize": 512,
+        "misses": 57
+      },
+      "cached_seconds": 0.05990099999900167,
+      "cardinal_derivative_vectors": 90,
+      "certificate_sha256": "14a69a131b3c20416fd5521bd971efdadd4e3741f70546d0fc5f0d9f25a2cf61",
+      "endpoint_payload_sha256": "ad684458ff8bed097f1dd468d6a71ce81842357cda2bae327401e8bb6f32b3d6",
+      "exact_endpoint_equalities": 5208,
+      "n": 4,
+      "old_seconds": 0.1130301800004645,
+      "seconds": 2.856269646000044,
+      "speedup": 1.8869498005433682
+    },
+    {
+      "boxes": 58,
+      "cache": {
+        "currsize": 58,
+        "hits": 7334,
+        "maxsize": 512,
+        "misses": 58
+      },
+      "cached_seconds": 0.1953863650002745,
+      "cardinal_derivative_vectors": 126,
+      "certificate_sha256": "a1238d59781733cc0d380dc513a0a642d0e24b985aeb9b90bb7233756273386e",
+      "endpoint_payload_sha256": "7d5449e98c6ea2917644efed9001a62564b6d6182a493b06b3910c3b8062d5e3",
+      "exact_endpoint_equalities": 7392,
+      "n": 5,
+      "old_seconds": 0.5064087000002928,
+      "seconds": 6.095651517000022,
+      "speedup": 2.591832342034621
+    },
+    {
+      "boxes": 69,
+      "cache": {
+        "currsize": 69,
+        "hits": 11673,
+        "maxsize": 512,
+        "misses": 69
+      },
+      "cached_seconds": 0.451039795001293,
+      "cardinal_derivative_vectors": 168,
+      "certificate_sha256": "c7a113b9b623c47309fd186c19ee2dddb2d5a0270c01b118bd11ee1ee069f0f5",
+      "endpoint_payload_sha256": "898e7f1b16e1647b5e085f08f57d40bfbfce0aaaca438a42d194c31965df08ab",
+      "exact_endpoint_equalities": 11742,
+      "n": 6,
+      "old_seconds": 1.246436765000908,
+      "seconds": 4.603112948000046,
+      "speedup": 2.7634740411260936
+    },
+    {
+      "boxes": 77,
+      "cache": {
+        "currsize": 77,
+        "hits": 16753,
+        "maxsize": 512,
+        "misses": 77
+      },
+      "cached_seconds": 0.8674037219954016,
+      "cardinal_derivative_vectors": 216,
+      "certificate_sha256": "9338e01c89482acd4e3e948812a62b5511ca6d9afcf87672fad053ee28cfaa85",
+      "endpoint_payload_sha256": "544980c1e8983d3df2a6aeb935a063525a94243abd71c31d384ce3295a22117c",
+      "exact_endpoint_equalities": 16830,
+      "n": 7,
+      "old_seconds": 2.47091972600208,
+      "seconds": 12.348953337000012,
+      "speedup": 2.8486386020086494
+    }
+  ],
+  "seconds": 25.904489118999948
+}

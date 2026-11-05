@@ -199,3 +199,13 @@ fails closed; actual WSL/drvfs and AC's destination remain untested.
 The previous development/pending-review paragraphs are historical; Claude
 audit-03 accepted CS1–CS3, and the distinct current integration check is
 [recorded separately](prep-support/integration-audit.md).
+
+## 2026-11-05 raw-output archival addendum
+
+AC directed generated outputs to cold storage. Additional raw transcripts and
+analysis captures from this topic are now pinned at source40347d1 in separate
+component manifests; all older manifests/identities above are unchanged. See
+[the migration index](../padua-lebesgue-followups-20261103/preparation/cold-storage-migration.md)
+for exact file counts, manifest paths, verified export/restore commands and
+receipt hashes. Small essential proof receipts, summaries and code remain in Git.
+Physical delivery to AC remains pending; staging is not a delivery claim.

@@ -1,0 +1,31 @@
+{
+  "all_facts_agree": true,
+  "canonical_retained_facts_sha256": "075741b1b34ce69f4a93862aba6a0a5a8f6027527c98422c7e5d342c9d42f6ad",
+  "count_certified": false,
+  "counts_from_verified_strata": {
+    "corner": 2,
+    "edge": 16,
+    "interior": 44,
+    "total": 62
+  },
+  "excluded_path_fields": [
+    "inputs.archived_interior.path"
+  ],
+  "excluded_paths": [
+    "/workspace/scratch/lebesgue-frozen-reference/topics/padua-proof-attempts-2-20261101/outputs/a5_n8_interior_candidate.json.gz",
+    "/workspace/scratch/lebesgue-t1-independent/cold/topics/padua-proof-attempts-2-20261101/outputs/a5_n8_interior_candidate.json.gz"
+  ],
+  "replay_receipts": [
+    {
+      "bytes": 5014,
+      "path": "topics/padua-lebesgue-followups-20261103/evidence/t1-final-composition.json",
+      "sha256": "171f2a676861469bc7e187ed1f328ebb556cd3386e45cd6c558fa4770b222abe"
+    },
+    {
+      "bytes": 5017,
+      "path": "topics/padua-lebesgue-followups-20261103/evidence/t1-independent-final-composition.json",
+      "sha256": "044c67d88e7822079fcfb3b87bad29766fa7bf01efc0e88764914a3e97611bf3"
+    }
+  ],
+  "scope": "complete actual composition receipts differ only in separately restored archived-input local path; all source/input identities and proof accounting retained"
+}

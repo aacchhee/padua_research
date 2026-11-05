@@ -1,0 +1,402 @@
+{
+  "schema": "padua-fresh-range-scan-v1",
+  "date_utc": "2026-11-03T11:18:07.922930+00:00",
+  "role": "bounded mechanical subagent; no Git mutations; no reservation made",
+  "rules_sha": "3f5196cf3639407c25b021fa30f70cc1d3ae113a",
+  "novelty_gate": "Not applicable: allocation-only scan, no mathematical or novelty claim.",
+  "heads_checked": {
+    "main": "440d1079e42c3ef21c40d1cf8870f5b206410c6a",
+    "PR19": "ed8db2fc364d0ba34c3c06815460b3b2971787b5"
+  },
+  "topic_input_head": "3f5196cf3639407c25b021fa30f70cc1d3ae113a",
+  "pr_population": {
+    "source": "Parent orchestrator supplied live GitHub classification; not independently queried by subagent",
+    "merged_prs": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "open_prs": [
+      19
+    ],
+    "closed_unmerged_prs": []
+  },
+  "coverage": "Read every byte of every ALLOCATIONS.md and all four named registries at both pinned heads using git show. Reviewed full distinct ledger prose and all above-boundary ID occurrences. Shared ledgers/registries are byte-identical across these heads; PR19 adds one ledger.",
+  "files": [
+    {
+      "head": "main",
+      "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+      "git_blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+      "bytes": 2271,
+      "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+      "whole_file_token_maxima": {
+        "PD-T": 12,
+        "PD-N": 1,
+        "IDEA": 51,
+        "LIT": 41
+      },
+      "first_table_cell_token_maxima": {
+        "PD-T": null,
+        "PD-N": null,
+        "IDEA": null,
+        "LIT": null
+      }
+    },
+    {
+      "head": "main",
+      "path": "topics/padua-argmax-alln-20261101/ALLOCATIONS.md",
+      "git_blob": "52455748cf152e1a31b714799f60434748b4c8b4",
+      "bytes": 4177,
+      "sha256": "8395a86ac4260c5e3c6052244eb0ef3188ae2060199abc936bb703e33346fa76",
+      "whole_file_token_maxima": {
+        "PD-T": 245,
+        "PD-N": 83,
+        "IDEA": 335,
+        "LIT": 465
+      },
+      "first_table_cell_token_maxima": {
+        "PD-T": null,
+        "PD-N": null,
+        "IDEA": null,
+        "LIT": null
+      }
+    },
+    {
+      "head": "main",
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "git_blob": "063e3ce7a47c421f42d69569aef4833d166d9476",
+      "bytes": 29851,
+      "sha256": "0951493e3f25b31d08fe5877207c3444093a44947b4b64d537b9374cb67fc520",
+      "whole_file_token_maxima": {
+        "PD-T": 226,
+        "PD-N": 78,
+        "IDEA": 315,
+        "LIT": 460
+      },
+      "first_table_cell_token_maxima": {
+        "PD-T": null,
+        "PD-N": null,
+        "IDEA": null,
+        "LIT": null
+      }
+    },
+    {
+      "head": "main",
+      "path": "PROOF_STATUS.md",
+      "git_blob": "b50fa18deb2efee1fe0ecabb234c09cd6f53925f",
+      "bytes": 169671,
+      "sha256": "3dcd729917ac87f9e09bd9278c2e553017406c6ee8da1d9f0f43081840cfeeee",
+      "whole_file_token_maxima": {
+        "PD-T": 235,
+        "PD-N": 83,
+        "IDEA": 335,
+        "LIT": 426
+      },
+      "first_table_cell_token_maxima": {
+        "PD-T": 235,
+        "PD-N": 83,
+        "IDEA": null,
+        "LIT": null
+      }
+    },
+    {
+      "head": "main",
+      "path": "state/IDEAS.md",
+      "git_blob": "291447361278125c9e123b68366a259ebe911a81",
+      "bytes": 202445,
+      "sha256": "3a68050253cb96b03c92f3e899035b34deb48b3e331d05f87ced8477e425ba29",
+      "whole_file_token_maxima": {
+        "PD-T": 231,
+        "PD-N": 83,
+        "IDEA": 335,
+        "LIT": 1729
+      },
+      "first_table_cell_token_maxima": {
+        "PD-T": null,
+        "PD-N": 73,
+        "IDEA": 335,
+        "LIT": null
+      }
+    },
+    {
+      "head": "main",
+      "path": "literature/INDEX.md",
+      "git_blob": "d4176c1e98a1088500782d8123516c48a9a3eeda",
+      "bytes": 269974,
+      "sha256": "9b7759b44e6b4a4fa76d7cecc443ec1535b491ad477a1b46bd5adaeb27bdc579",
+      "whole_file_token_maxima": {
+        "PD-T": 100,
+        "PD-N": 43,
+        "IDEA": 209,
+        "LIT": 1750
+      },
+      "first_table_cell_token_maxima": {
+        "PD-T": null,
+        "PD-N": null,
+        "IDEA": null,
+        "LIT": 428
+      }
+    },
+    {
+      "head": "main",
+      "path": "ID_CROSSWALK.md",
+      "git_blob": "00da995c936144cad3e1d80ec40bea224b2cfbb7",
+      "bytes": 312016,
+      "sha256": "c049b783438efa8b916d75650d7cc29cb87ef25dcf7a2659cd486e3c0ea42110",
+      "whole_file_token_maxima": {
+        "PD-T": 236,
+        "PD-N": 83,
+        "IDEA": 335,
+        "LIT": 460
+      },
+      "first_table_cell_token_maxima": {
+        "PD-T": 69,
+        "PD-N": 22,
+        "IDEA": 10,
+        "LIT": null
+      }
+    },
+    {
+      "head": "PR19",
+      "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+      "git_blob": "7a8a696f10d5b2d1272cc5c6fac4e9809bea2e97",
+      "bytes": 2271,
+      "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+      "whole_file_token_maxima": {
+        "PD-T": 12,
+        "PD-N": 1,
+        "IDEA": 51,
+        "LIT": 41
+      },
+      "first_table_cell_token_maxima": {
+        "PD-T": null,
+        "PD-N": null,
+        "IDEA": null,
+        "LIT": null
+      }
+    },
+    {
+      "head": "PR19",
+      "path": "topics/padua-argmax-alln-20261101/ALLOCATIONS.md",
+      "git_blob": "52455748cf152e1a31b714799f60434748b4c8b4",
+      "bytes": 4177,
+      "sha256": "8395a86ac4260c5e3c6052244eb0ef3188ae2060199abc936bb703e33346fa76",
+      "whole_file_token_maxima": {
+        "PD-T": 245,
+        "PD-N": 83,
+        "IDEA": 335,
+        "LIT": 465
+      },
+      "first_table_cell_token_maxima": {
+        "PD-T": null,
+        "PD-N": null,
+        "IDEA": null,
+        "LIT": null
+      }
+    },
+    {
+      "head": "PR19",
+      "path": "topics/padua-argmax-effective-20261103/ALLOCATIONS.md",
+      "git_blob": "4d3fc48adf678bb0e7724a6bf28259e38beea008",
+      "bytes": 1480,
+      "sha256": "3045ec13fc09d26bf64fbd8404ebfc7d85344a5060c84e197b3d135e0d88946d",
+      "whole_file_token_maxima": {
+        "PD-T": 265,
+        "PD-N": 91,
+        "IDEA": 355,
+        "LIT": 473
+      },
+      "first_table_cell_token_maxima": {
+        "PD-T": null,
+        "PD-N": null,
+        "IDEA": null,
+        "LIT": null
+      }
+    },
+    {
+      "head": "PR19",
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "git_blob": "063e3ce7a47c421f42d69569aef4833d166d9476",
+      "bytes": 29851,
+      "sha256": "0951493e3f25b31d08fe5877207c3444093a44947b4b64d537b9374cb67fc520",
+      "whole_file_token_maxima": {
+        "PD-T": 226,
+        "PD-N": 78,
+        "IDEA": 315,
+        "LIT": 460
+      },
+      "first_table_cell_token_maxima": {
+        "PD-T": null,
+        "PD-N": null,
+        "IDEA": null,
+        "LIT": null
+      }
+    },
+    {
+      "head": "PR19",
+      "path": "PROOF_STATUS.md",
+      "git_blob": "b50fa18deb2efee1fe0ecabb234c09cd6f53925f",
+      "bytes": 169671,
+      "sha256": "3dcd729917ac87f9e09bd9278c2e553017406c6ee8da1d9f0f43081840cfeeee",
+      "whole_file_token_maxima": {
+        "PD-T": 235,
+        "PD-N": 83,
+        "IDEA": 335,
+        "LIT": 426
+      },
+      "first_table_cell_token_maxima": {
+        "PD-T": 235,
+        "PD-N": 83,
+        "IDEA": null,
+        "LIT": null
+      }
+    },
+    {
+      "head": "PR19",
+      "path": "state/IDEAS.md",
+      "git_blob": "291447361278125c9e123b68366a259ebe911a81",
+      "bytes": 202445,
+      "sha256": "3a68050253cb96b03c92f3e899035b34deb48b3e331d05f87ced8477e425ba29",
+      "whole_file_token_maxima": {
+        "PD-T": 231,
+        "PD-N": 83,
+        "IDEA": 335,
+        "LIT": 1729
+      },
+      "first_table_cell_token_maxima": {
+        "PD-T": null,
+        "PD-N": 73,
+        "IDEA": 335,
+        "LIT": null
+      }
+    },
+    {
+      "head": "PR19",
+      "path": "literature/INDEX.md",
+      "git_blob": "d4176c1e98a1088500782d8123516c48a9a3eeda",
+      "bytes": 269974,
+      "sha256": "9b7759b44e6b4a4fa76d7cecc443ec1535b491ad477a1b46bd5adaeb27bdc579",
+      "whole_file_token_maxima": {
+        "PD-T": 100,
+        "PD-N": 43,
+        "IDEA": 209,
+        "LIT": 1750
+      },
+      "first_table_cell_token_maxima": {
+        "PD-T": null,
+        "PD-N": null,
+        "IDEA": null,
+        "LIT": 428
+      }
+    },
+    {
+      "head": "PR19",
+      "path": "ID_CROSSWALK.md",
+      "git_blob": "00da995c936144cad3e1d80ec40bea224b2cfbb7",
+      "bytes": 312016,
+      "sha256": "c049b783438efa8b916d75650d7cc29cb87ef25dcf7a2659cd486e3c0ea42110",
+      "whole_file_token_maxima": {
+        "PD-T": 236,
+        "PD-N": 83,
+        "IDEA": 335,
+        "LIT": 460
+      },
+      "first_table_cell_token_maxima": {
+        "PD-T": 69,
+        "PD-N": 22,
+        "IDEA": 10,
+        "LIT": null
+      }
+    }
+  ],
+  "semantic_maxima": {
+    "main": {
+      "PD-T": 245,
+      "PD-N": 83,
+      "IDEA": 335,
+      "LIT": 465
+    },
+    "PR19": {
+      "PD-T": 265,
+      "PD-N": 91,
+      "IDEA": 355,
+      "LIT": 473
+    },
+    "union": {
+      "PD-T": 265,
+      "PD-N": 91,
+      "IDEA": 355,
+      "LIT": 473
+    }
+  },
+  "highest_reservation_witness": {
+    "head": "PR19",
+    "path": "topics/padua-argmax-effective-20261103/ALLOCATIONS.md",
+    "ranges": {
+      "PD-T": [
+        246,
+        265
+      ],
+      "PD-N": [
+        84,
+        91
+      ],
+      "IDEA": [
+        336,
+        355
+      ],
+      "LIT": [
+        466,
+        473
+      ]
+    }
+  },
+  "recommended_only_not_reserved": {
+    "PD-T": {
+      "start": 266,
+      "end": 285,
+      "count": 20
+    },
+    "PD-N": {
+      "start": 92,
+      "end": 99,
+      "count": 8
+    },
+    "IDEA": {
+      "start": 356,
+      "end": 375,
+      "count": 20
+    },
+    "LIT": {
+      "start": 474,
+      "end": 481,
+      "count": 8
+    }
+  },
+  "retired_and_unused": "No separately named retired reservation exceeds the recorded maxima. All historical reservations and permanent gaps were included. No closed-unmerged PR requiring recovery in the parent-supplied PR population. In particular PD-T236\u2013245 and LIT460\u2013465 remain reserved permanent gaps, not available IDs.",
+  "parsing_caveats": [
+    "Raw regex maxima are diagnostic, not allocation maxima. Provisional IDs containing ? are excluded.",
+    "Ranges use en dashes and sometimes omit the namespace or hyphen at the second endpoint; e.g. PD-T236\u2013245 and LIT460\u2013465. Explicit semantic ledger ranges supply endpoints; regex token maxima alone undercount.",
+    "Historical next-unreserved columns/prose are boundaries, not reservations; do not reserve their values based on a raw maximum.",
+    "External bttb-research aliases LIT-1160,1185,1317,1325,1586,1658,1729,1750 are source-catalogue citations, not Padua final IDs. They occur in the body of canonical rows LIT-072,140,398,406,411,412 and an obstruction-table citation; exclude them from Padua allocation maxima.",
+    "Namespace-only table rows sometimes contain bare ranges; full ledger prose/table review, rather than prefixed tokens only, determines semantic reservation maxima.",
+    "First-table-cell token maxima are not necessarily all assignments (crosswalk cells can contain aliases/ranges); they are provided only as diagnostics."
+  ],
+  "reproduction": "Run git ls-tree -r --name-only HEAD for each pinned head; select all paths ending /ALLOCATIONS.md plus PROOF_STATUS.md,state/IDEAS.md,literature/INDEX.md,ID_CROSSWALK.md; git show HEAD:path reads full bytes; git rev-parse HEAD:path gives Git blob. Token diagnostics use (PD-T|PD-N|IDEA-|LIT-)(\\d+)(?![\\w]). Review reservation tables, bare range endpoints, next-unreserved context and external aliases as above.",
+  "limitation": "Fresh only for pinned main/PR19 and parent-supplied PR population; orchestrator must recheck live heads/PR population before assigning final IDs or declaring readiness."
+}

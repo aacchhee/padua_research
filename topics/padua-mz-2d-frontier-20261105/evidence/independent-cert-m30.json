@@ -1,0 +1,122 @@
+{
+ "rules_input_sha": "83cf6f1ee244f2e72057332a7ec04ee74db1f0de",
+ "command": [
+  "topics/padua-mz-2d-frontier-20261105/code/independent_cert.py",
+  "--producer-receipt",
+  "topics/padua-mz-2d-frontier-20261105/evidence/cert-m30.json",
+  "--scratch",
+  "/tmp/padua-independent-cert",
+  "--output",
+  "topics/padua-mz-2d-frontier-20261105/evidence/independent-cert-m30.json"
+ ],
+ "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+ "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+ "numpy": "2.3.5",
+ "scipy": "1.17.0",
+ "python_flint": "0.9.0",
+ "flint": "3.6.0",
+ "checker_sha256": "28228bf2fe412d13c9a581e907aed56385a914b3e51227126b110a9c6b4348cc",
+ "definitions_sha256": "4ac0e391859a14e4d6f752f1244df0701e99d9b3d8ab8570bd632520f517c7db",
+ "independence": "Python Fraction reconstruction and repeated reflections; fresh transforms; shared FLINT and signed-dominance predicate",
+ "result": {
+  "m": 30,
+  "n": 29,
+  "dimension": 465,
+  "offblock_pairs_checked": 54000,
+  "native_integer_entries_compared_as_rationals": 216450,
+  "blocks": [
+   {
+    "dimension": 240,
+    "endpoints": [
+     {
+      "negative": 0,
+      "zero": 0,
+      "positive": 240,
+      "minimum_margin": "9758330112398891153466613531642491440713186731107358504493580",
+      "endpoint": "47341/200000",
+      "positive_common_denominator": "8816615843391267242841130356610875000000"
+     },
+     {
+      "negative": 0,
+      "zero": 0,
+      "positive": 240,
+      "minimum_margin": "22191671320161246958201401268636024368208837904802917761006140",
+      "endpoint": "118353/500000",
+      "positive_common_denominator": "22041539608478168107102825891527187500000"
+     },
+     {
+      "negative": 239,
+      "zero": 0,
+      "positive": 1,
+      "minimum_margin": "3773255713071734922574212872565144491461786472017046193898376",
+      "endpoint": "1757929/1000000",
+      "positive_common_denominator": "44083079216956336214205651783054375000000"
+     },
+     {
+      "negative": 240,
+      "zero": 0,
+      "positive": 0,
+      "minimum_margin": "63501239449984172773357682030994355997184289107362852709768",
+      "endpoint": "175793/100000",
+      "positive_common_denominator": "4408307921695633621420565178305437500000"
+     }
+    ],
+    "transform_scale": "10000000000000",
+    "transform_path": "/tmp/padua-independent-cert/independent-m30-R0.txt",
+    "transform_sha256": "dce9617013873606cd9f2476d32b33bbebe229dc4fddec42262abdec7ea53cde",
+    "measured_extrema": [
+     0.23671606811746335,
+     1.7579298559464742
+    ]
+   },
+   {
+    "dimension": 225,
+    "endpoints": [
+     {
+      "negative": 0,
+      "zero": 0,
+      "positive": 225,
+      "minimum_margin": "467603312462254736248173220519204066133012573255927957840528",
+      "endpoint": "47341/200000",
+      "positive_common_denominator": "8816615843391267242841130356610875000000"
+     },
+     {
+      "negative": 1,
+      "zero": 0,
+      "positive": 224,
+      "minimum_margin": "1035127777375203683618442538430931959066477479716722888738064",
+      "endpoint": "118353/500000",
+      "positive_common_denominator": "22041539608478168107102825891527187500000"
+     },
+     {
+      "negative": 225,
+      "zero": 0,
+      "positive": 0,
+      "minimum_margin": "7836360310651269066666147290088909914365606645373831215517440944",
+      "endpoint": "1757929/1000000",
+      "positive_common_denominator": "44083079216956336214205651783054375000000"
+     },
+     {
+      "negative": 225,
+      "zero": 0,
+      "positive": 0,
+      "minimum_margin": "784076861857294455717334599791842342769492900001198709331472048",
+      "endpoint": "175793/100000",
+      "positive_common_denominator": "4408307921695633621420565178305437500000"
+     }
+    ],
+    "transform_scale": "10000000000000",
+    "transform_path": "/tmp/padua-independent-cert/independent-m30-R1.txt",
+    "transform_sha256": "37d5c8455547f9aef2eac3fb2cffe030c8eea2b5e7f59fd5c9a7d601c515dc17",
+    "measured_extrema": [
+     0.23670553037004333,
+     1.7561513654822956
+    ]
+   }
+  ],
+  "seconds": 28.772210915000073,
+  "producer_receipt_sha256": "12cdeec967cac91497f80f13d9b7c12a3ce6a5d3d518c1b5335a39cc640344c9",
+  "native_exact_sha256": "f3c718ec807995dbcb738c3e126b92fcf9675226b8b54d01273ad116f81346ab",
+  "verdict": "PASS"
+ }
+}

@@ -1,0 +1,122 @@
+{
+ "rules_input_sha": "83cf6f1ee244f2e72057332a7ec04ee74db1f0de",
+ "command": [
+  "topics/padua-mz-2d-frontier-20261105/code/independent_cert.py",
+  "--producer-receipt",
+  "topics/padua-mz-2d-frontier-20261105/evidence/cert-m60.json",
+  "--scratch",
+  "/tmp/padua-independent-cert",
+  "--output",
+  "topics/padua-mz-2d-frontier-20261105/evidence/independent-cert-m60.json"
+ ],
+ "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+ "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+ "numpy": "2.3.5",
+ "scipy": "1.17.0",
+ "python_flint": "0.9.0",
+ "flint": "3.6.0",
+ "checker_sha256": "28228bf2fe412d13c9a581e907aed56385a914b3e51227126b110a9c6b4348cc",
+ "definitions_sha256": "4ac0e391859a14e4d6f752f1244df0701e99d9b3d8ab8570bd632520f517c7db",
+ "independence": "Python Fraction reconstruction and repeated reflections; fresh transforms; shared FLINT and signed-dominance predicate",
+ "result": {
+  "m": 60,
+  "n": 59,
+  "dimension": 1830,
+  "offblock_pairs_checked": 837000,
+  "native_integer_entries_compared_as_rationals": 3349800,
+  "blocks": [
+   {
+    "dimension": 930,
+    "endpoints": [
+     {
+      "negative": 0,
+      "zero": 0,
+      "positive": 930,
+      "minimum_margin": "217320787946094118738673329913254591364512558914341827225158594250185116941162013835915183715392368",
+      "endpoint": "188593/1000000",
+      "positive_common_denominator": "4523064441817869690255029812069264682132724136511035705374422622403531875000000"
+     },
+     {
+      "negative": 1,
+      "zero": 0,
+      "positive": 929,
+      "minimum_margin": "117485301752487450012811834503330292946658527819083870951086290290122677826278368917660075660402088",
+      "endpoint": "94297/500000",
+      "positive_common_denominator": "2261532220908934845127514906034632341066362068255517852687211311201765937500000"
+     },
+     {
+      "negative": 930,
+      "zero": 0,
+      "positive": 0,
+      "minimum_margin": "337848384154481871763443376721933163189679558858553590234161279627210764438332639564194733431676183728",
+      "endpoint": "1802011/1000000",
+      "positive_common_denominator": "4523064441817869690255029812069264682132724136511035705374422622403531875000000"
+     },
+     {
+      "negative": 930,
+      "zero": 0,
+      "positive": 0,
+      "minimum_margin": "84575172649663493232153752341453144755708351910635785053016730311064848724371086213315581854697279744",
+      "endpoint": "450503/250000",
+      "positive_common_denominator": "1130766110454467422563757453017316170533181034127758926343605655600882968750000"
+     }
+    ],
+    "transform_scale": "10000000000000",
+    "transform_path": "/tmp/padua-independent-cert/independent-m60-R0.txt",
+    "transform_sha256": "11c4c926f1cb61a7bbf5e6a0d5ef307c2d38ad78d3db5c499d5280143ff1094e",
+    "measured_extrema": [
+     0.18859348048909585,
+     1.801264054215176
+    ]
+   },
+   {
+    "dimension": 900,
+    "endpoints": [
+     {
+      "negative": 0,
+      "zero": 0,
+      "positive": 900,
+      "minimum_margin": "5319447153201754801303075960937167986643183170629106672208683883154240964865011696676439214692311444",
+      "endpoint": "188593/1000000",
+      "positive_common_denominator": "4523064441817869690255029812069264682132724136511035705374422622403531875000000"
+     },
+     {
+      "negative": 0,
+      "zero": 0,
+      "positive": 900,
+      "minimum_margin": "2433570354514404235256704046895632291073138702781590337711740260886876014746061320323598085633922676",
+      "endpoint": "94297/500000",
+      "positive_common_denominator": "2261532220908934845127514906034632341066362068255517852687211311201765937500000"
+     },
+     {
+      "negative": 899,
+      "zero": 0,
+      "positive": 1,
+      "minimum_margin": "67801934634889807907445049390142427631724669386048646426163367502503482042536529913965300984022616",
+      "endpoint": "1802011/1000000",
+      "positive_common_denominator": "4523064441817869690255029812069264682132724136511035705374422622403531875000000"
+     },
+     {
+      "negative": 900,
+      "zero": 0,
+      "positive": 0,
+      "minimum_margin": "96122544053956198723622074128408710081224409067582917198169350795251337064645935478545590154621944",
+      "endpoint": "450503/250000",
+      "positive_common_denominator": "1130766110454467422563757453017316170533181034127758926343605655600882968750000"
+     }
+    ],
+    "transform_scale": "10000000000000",
+    "transform_path": "/tmp/padua-independent-cert/independent-m60-R1.txt",
+    "transform_sha256": "d2671d31ab0a58e88f30ab4f2a229ce6b809a345ad6b6c41b2da7858fd3da705",
+    "measured_extrema": [
+     0.18860476073128463,
+     1.8020111499184952
+    ]
+   }
+  ],
+  "seconds": 232.59440326699985,
+  "producer_receipt_sha256": "d853b8f24c52317c9e36904c0d344a2306e636ca67789f095d85ea6fdb2234a6",
+  "native_exact_sha256": "3e5acfd31360b877eb48556a3c1c3c6db7e4c5bcb002bef221ef8d0d5a37fb69",
+  "verdict": "PASS"
+ }
+}
