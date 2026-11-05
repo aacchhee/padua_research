@@ -10,7 +10,7 @@ import tempfile
 
 ROOT = Path(__file__).resolve().parents[3]
 BASE = '330fab835f43e5ba5b24e320c2d7e9647e6cbd60'
-FOREIGN = {'21': '3ed6c94246f21353350f82712b6628b39db6f65a',
+FOREIGN = {'21': '67b3e01e0109793e34d43b8c98d5f9064dc568f0',
            '24': '3a179f68ecbed20dc7e15862da842ed6116aa375'}
 SLUG = 'padua-argmax-effective-2-20261105'
 SHARED = ['PROOF_STATUS.md', 'state/IDEAS.md', 'ID_CROSSWALK.md',

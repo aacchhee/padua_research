@@ -94,3 +94,15 @@ No accepted identifier or earlier reservation is renumbered or recycled.
 
 The orchestrator must refresh the live population and heads again immediately
 before assignment/readiness; PASS applies to the pins above only.
+
+## Completion refresh — 2026-11-05
+
+PR21 advanced from3ed6c94246f21353350f82712b6628b39db6f65a to
+67b3e01e0109793e34d43b8c98d5f9064dc568f0 during preparation. The complete
+ledger path set and every ledger/four-registry byte are identical at both
+heads; only its own results, LOG, audit03/input receipt and handoffs changed.
+The original full-file union therefore still applies without a range/ID
+change. Main330fab8 and PR24 3a179f6 remain unchanged. See
+[live-recheck.json](live-recheck.json) for the complete compared-file identities,
+changed path list, current population and exact pins. Actual integration
+rehearsals are refreshed to the new PR21 head; no foreign branch is edited.

@@ -137,3 +137,8 @@
 
 - First actual rehearsal attempt at registered source11ba17e stopped at the broad BASE..HEAD whitespace check on the already-existing foreign path results/padua-literature-20261103.md:55 (new blank line at EOF). The process-created worktree/branch were cleaned in finally; no live branch was changed. This was a checker-scope issue, not a merge conflict or loss of scientific rows.
 - Corrected only our rehearsal helper: require owned paths' whitespace to pass, retain the complete foreign byte-identity check, and record pre-existing foreign whitespace notes rather than editing another topic or falsely declaring them absent. Disposable commit trailers distinguish the requested Astra-ultra allocation from unexposed serving metadata. No science/code/evidence kernel changed. Rerun all seven orders at the corrected helper source below.
+
+## 2026-11-05 — completion refresh of moving foreign draft
+
+- Actual seven-case rehearsal at af3c73c passed without merge conflicts; own and foreign bytes were exact. Before completion, live connector/ref refresh found PR21 advanced3ed6c94→67b3e01 (accepted audit/metadata handoff). Main330fab8 and PR24 3a179f6 remain unchanged; population still3 open/22 closed-merged, none closed-unmerged.
+- Read and compared every complete PR21 ledger and four-registry file at both heads: exact equality and identical path set. No range/status/ID changed, so the full reservation union remains valid. live-recheck.json records all identities and changed paths. Retained the prior successful rehearsal receipt locally and updated only the rehearsal's foreign pin for a fresh actual seven-case run; no foreign files/branches changed.
