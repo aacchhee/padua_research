@@ -90,8 +90,11 @@ reconstruction complete, required Claude mathematical audit pending.
 Candidate disposition: retained, `IDEA?mz2d-frontier-codex-f3-01`.
 This is a variant of classical smoothing and PD-T115, with explicit
 weighted localization previously unproved there. No historical novelty
-claim. The original signed target PD-T116 remains OPEN; the theorem is
-a supporting dependency, not a resolved part of that target's statement.
+claim. This theorem initially left signed PD-T116 OPEN and is not a
+resolved parameter part of that target. Subsequent separate carrier
+countersequences refute its positive assertion above half-exactness;
+see `f3-fixed-ratio-threshold.md`. The positive reference theorem here
+remains valid and is not used as a signed comparison.
 
 ## Depends on
 
@@ -374,9 +377,10 @@ norm equivalence is claimed.
 - Required Claude audit. Supplementary reconstruction of the lift,
   packing constant, weight ratio and normalized Schur bounds found
   no gap; its finite exact regression has the scope stated above.
-- Signed comparison on the restricted polynomial value space, with a
-  positive lower endpoint and a separate upper endpoint below two.
-  This is preserved OPEN in `f3-signed-target-open.md` and PD-T116.
+- The initial intended signed comparison is superseded by the separate
+  negative classification in `f3-fixed-ratio-threshold.md`. There is
+  no uniform positive signed extension above half-exactness. The
+  positive-reference statement and proof here are unchanged.
 - Primary-source attribution and possible historical overlap; no
   exhaustive novelty clearance is supplied by the local gate.
 

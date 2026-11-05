@@ -1,4 +1,4 @@
-# PD-T?mz2d-frontier-codex-91 — Candidate signed Padua spectrum at m80
+# PD-T?mz2d-frontier-codex-91 — Certified signed Padua spectrum at m80
 
 ID kind: PD-T (provisional; orchestrator assigns final ID).
 Aliases: G1 m80 native extension; finite m80 signed-dominance certificate.
@@ -19,11 +19,11 @@ Precisely m80,n79. Trust: recorded C compiler/executable, canonical GMP rational
 
 ## Status by part
 
-Overall status: **CONDITIONAL** — all four exact producer endpoint checks passed; separate independent m80 checker/rerun is running, not yet completed. The m60 independent completion does not establish this case.
+Overall status: **PROVED** (computer-assisted development; actual independent exact checker/rerun complete; required Claude audit remains pending). This case has its own completed independent reconstruction and acceptance, separate from m60.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
-| Two strict m80 extreme-eigenvalue intervals | CONDITIONAL | Exact producer acceptance complete; independent reconstruction/rerun pending |
+| Two strict m80 extreme-eigenvalue intervals | PROVED | Exact producer and independently reconstructed checker accepted all endpoints |
 
 Candidate / claim disposition: retained implementation-only extension of existing PD-T107; no new mechanism or novelty claim.
 
@@ -41,7 +41,15 @@ Executed producer command:
 PYTHONPATH=/tmp/padua-g0-deps OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-mz-2d-frontier-20261105/code/cert_native.py --m 80 100 --scratch /tmp/padua-cert-native-large --output-dir topics/padua-mz-2d-frontier-20261105/evidence
 ```
 
-m80 completed in302.437s wall, peak Python-process RSS2663896KiB; native-child peak RSS unmeasured. m100 remains pending in the same invocation and is not claimed here. Negative endpoint counts are0,1,3239,3240, with no zeros and positive strict margins in every block. No floating tolerance enters acceptance.
+m80 completed in302.437s recorded per-target wall, peak Python-process RSS2663896KiB; native-child peak RSS unmeasured. Timing excludes common startup/compilation and final hashing/receipt serialization. m100 was later stopped by the orchestrator's scope decision without completing an accepted endpoint check; it is not claimed here. Negative endpoint counts are0,1,3239,3240, with no zeros and positive strict margins in every block. No floating tolerance enters acceptance.
+
+Separate worker `/root/replay` actually executed the following command; this developer inspected its source, report and actual receipt after completion:
+
+```sh
+PYTHONPATH=/tmp/padua-g0-deps OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-mz-2d-frontier-20261105/code/independent_cert.py --producer-receipt topics/padua-mz-2d-frontier-20261105/evidence/cert-m80.json --scratch /tmp/padua-independent-cert --output topics/padua-mz-2d-frontier-20261105/evidence/independent-cert-m80.json
+```
+
+The independent checker reconstructs rational moments with Python Fraction and repeated reflection, compares all10,499,200 within-block H/Q entries exactly and checks2,624,000 off-block pairs. Fresh scale10¹³ transforms differ from the producer's10¹²; producer transforms and floating matrices are not read. Every independently computed exact margin was positive; endpoint negative counts were0,1,3239,3240. Actual wall569.136s; sampled Python RSS about2.1GiB, not a measured peak. Source `independent_cert.py` SHA-256 `28228bf2fe412d13c9a581e907aed56385a914b3e51227126b110a9c6b4348cc`; receipt `independent-cert-m80.json` SHA-256 `7b57e74e0e3e919a79262067427e35afa97a637d5d39e0cc17620c93e99cd5fe` (5300 bytes), PASS. Shared FLINT arithmetic and the same mathematical signed-dominance predicate remain explicit trust limitations. Full record: `../independent-checks-cert.md`.
 
 ## Sources
 
@@ -49,7 +57,7 @@ Local PD-T106/PD-T107. No literature-priority claim or imported finite proof.
 
 ## Proof or evidence
 
-The exact reduction is the unchanged PD-T107 reduction, also written explicitly in the Proof section of `cert-finite-extension.md`. Briefly, the canonically constructed rational matrices become H0=DH,Q0=DQ with D>0. Native FLINT computes BH=RᵀH0R,BQ=RᵀQ0R. For rational t=tn/td, td>0, B=td BQ−tn BH equals Rᵀ[D td(Q−tH)]R exactly. Exact symmetry and strict signed diagonal dominance prove B nonsingular with diagonal-sign inertia; this proves R invertible and transfers inertia to Q−tH. Positive definiteness of continuous H turns negative inertia into the generalized eigenvalue count below t. Counts0,1 at minimum endpoints and3239,3240 at maximum endpoints imply the stated strict brackets. The producer accepted all required checks; completion of the independently implemented execution is the remaining finite verification obligation.
+The exact reduction is the unchanged PD-T107 reduction, also written explicitly in the Proof section of `cert-finite-extension.md`. Briefly, the canonically constructed rational matrices become H0=DH,Q0=DQ with D>0. Native FLINT computes BH=RᵀH0R,BQ=RᵀQ0R. For rational t=tn/td, td>0, B=td BQ−tn BH equals Rᵀ[D td(Q−tH)]R exactly. Exact symmetry and strict signed diagonal dominance prove B nonsingular with diagonal-sign inertia; this proves R invertible and transfers inertia to Q−tH. Positive definiteness of continuous H turns negative inertia into the generalized eigenvalue count below t. Counts0,1 at minimum endpoints and3239,3240 at maximum endpoints imply the stated strict brackets. Both producer and independently implemented exact execution accepted every required m80 check. The displayed finite result follows under the stated computational trust.
 
 ## Scope
 
@@ -57,10 +65,12 @@ Only the displayed m80 case. No contiguous integer interval, all-m bound, endpoi
 
 ## Open items
 
-- Separate worker `/root/replay` has started `code/independent_cert.py` with `--producer-receipt evidence/cert-m80.json`; await actual PASS/FAIL receipt and document exact scope before changing status.
+- The separate m80 checker/rerun is complete; independently checked degrees are exactly10,20,30,40,60,80, not every integer below80.
 - Required Claude audit remains separate.
 - Native and fresh independent transforms/pencils remain regenerable scratch under `/tmp`; AC cold-storage delivery/retrieval pending.
 
 ## History
 
 2026-11-05, Codex certifier worker, assigned gpt-6.1-sol medium: preserved the exact m80 candidate as a separate CONDITIONAL record after actual independent m60 completion allowed the m60 case to become PROVED. This split records the original two-case statement without silently discarding its pending part.
+
+2026-11-05, after actual independent m80 PASS and inspection of source/receipt/report: upgraded this separate case to PROVED computer-assisted development. Required Claude audit remains pending. No additional integer size is inherited from the status change.

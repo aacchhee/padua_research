@@ -6,18 +6,28 @@ an additional independent check of Codex development, **not the required
 Claude audit and not PR readiness approval**. Only the orchestrator owns
 Git and shared records; this checker performed no Git operation.
 
+Final supplementary verdict: no unresolved mathematical finding in the
+reviewed F1/F2 countersequences, exact F3 half-degree classification,
+positive reference theorem, or F4 uniform norm bound. The signed spectral
+assertions are refuted along even degrees; required Claude audit remains
+pending. Full proof hashes, independent derivations and executed checks
+appear below.
+
 Rules read: `AGENTS.md`, `agents/WORKFLOW.md`, `agents/codex/CODEX.md` at
 orchestrator-supplied input/rules SHA
 `83cf6f1ee244f2e72057332a7ec04ee74db1f0de`. Also read handoff 01 and plan.
 Review binds to the file hashes below; no claim that working files had
 already been committed is made.
 
-## Scope and disposition
+## Initial scope and disposition
+
+The first review boundary below preceded the signed carrier results.
+The final scope and signed-target verdict are in the addendum below.
 
 | Record | Reviewed SHA-256 | Supplementary outcome |
 |---|---|---|
 | `theory/f4-uniform-density-bound.md` | `cee004269514e238499885ae32154deb0f6616e56d2e52806d37b282df8621b2` | No mathematical gap found; complete analytic uniform bound reconstructed, including all integer m>=2 and 0<=n<m |
-| `theory/f3-smooth-diamond-reference.md` | `a55b401d450fe3e0510eb605051fd7ea99ee59743a1a3fc46ee14de992773aaa` | No mathematical gap found in the positive reference equivalence; signed PD-T116 remains OPEN |
+| `theory/f3-smooth-diamond-reference.md` | `a55b401d450fe3e0510eb605051fd7ea99ee59743a1a3fc46ee14de992773aaa` | No gap in the positive reference equivalence; signed PD-T116 was OPEN at this first boundary and is refuted in the final addendum |
 | `code/g1_spectral.py` | `f246b7a436fa9e6133153a87fd5af887d80f6fb0ab12dc2208fbd9ade223c241` | Limited distinct numerical validation of DCT weights against direct moment solves; not an audit of large-degree runs, fits, localization, or certification |
 
 One minor notation collision was reported: `c_0` denoted both the
@@ -168,6 +178,163 @@ The full native GMP/FLINT certificate port, high-degree spectral runs,
 scaling selection and localization results are **not independently
 certified by this report**. The G1 comparison here tests DCT weight
 construction only. F1/F2 theory files were not yet available at the
-initial review boundary and are outside the verdict above. The required
+initial review boundary. The decisive signed results were subsequently
+reviewed in full as recorded below. The required
 cross-model Claude audit must inspect the final candidate SHA and any
 subsequent material changes. Literature overlap remains qualified.
+
+## Final addendum: signed logarithmic countersequences
+
+Later on 2026-11-05 the orchestrator extended this same supplementary
+review to the consequential F1/F2 carrier proofs and F3 classification.
+The checker remained at the handoff's **gpt-6-astra high** allocation;
+this does not constitute the required Claude xhigh mathematical audit.
+
+**Verdict: no mathematical gap found in the complete proofs below.**
+The earlier OPEN description of signed F3 is historical and superseded:
+these analytic arguments refute the all-m upper threshold and positivity,
+refute the proposed positive endpoint orders and eta->1, and refute
+uniform strong signed MZ at every fixed theta>1/2. Divergence is proved
+along even m; no effective onset or first finite crossing is supplied.
+The F4 uniform C-to-L2 bound is compatible with these L2 Rayleigh results.
+
+| Fully reviewed file under `theory/` | SHA-256 |
+|---|---|
+| `f12-local-weight-asymptotic.md` | `ec60d98c4bbaefe5daf3281efb5a32fe742687ee4ac8fc7a789f2d0a66867b8d` |
+| `f12-eventual-negative-carrier.md` | `0ef7c078dc8a71bac882e6d61669211b89e1295b33be7f51f0488073b5bae09d` |
+| `f12-eventual-upper-carrier.md` | `b57334029a4676c5ddea0827e9c34e5c07cc931fdc2dbe8457340380439cd3fb` |
+| `f3-fixed-ratio-threshold.md` | `3dbde58f88a2c96c7239b701a03d812006ad2aac06f79b6bb539255bc0e6dbc4` |
+
+Read the common lemma and both packet files in full, independently
+reconstructed their coefficient and limit calculations, and read the
+complete F3 corollary. Current candidate memory `ideas-f12.md` was also
+read; the relevant inherited registry/obstruction coverage is above.
+The parity carrier and complete signed sum escape the precise
+hypotheses of PD-N047/048: neither a product of two critical CC packets
+nor subtraction of a divergent unsigned corner estimate is used.
+No historical novelty or priority claim is accepted by this review.
+
+### Common lemma: the load-bearing limit and majorant
+
+For m=2R the integrated cardinal formula gives the signed density as
+`S_R-2h_m cos(m theta_j)`. Independently expanded the finite triangle as
+
+`S_R=f(t)f(s)-f(t)T_R(s)-f(s)T_R(t)+T_R(t)T_R(s)-V_R(t,s)`.
+
+The zero-index axes are absent from V_R. The global estimate splits its
+indices into a<=R/2, b<=R/2, and both>R/2. The first two regions each
+have bound `64 H_floor(R/2)/(9R²)`; the third has bound `256/(9R²)`.
+The stated constants in the subsequent weight inequality, including
+`260+16/3` for the constant term, are valid, and C=4096 suffices.
+
+For fixed j,k and fixed 0<delta<1/2, a<=delta R has exactly a choices
+of b near R. Its uniform expansion is
+`R² t_b cos(2b phi_k)=-(-1)^k+O_k(delta)+o_R(1)`.
+Multiplication by t_a and summation uses
+`sum_(a<=delta R) a t_a=-log R+O_delta(1)`.
+The accumulated uniform errors are O(delta log R), which vanish after
+normalization and the subsequent delta->0 limit. The swapped strip
+gives (-1)^j. The remaining middle has absolute size
+`O_delta(R^-2)`, hence vanishes after R²/log R normalization. Thus the
+limit coefficient is the sum of these two endpoint phases. The order
+of limits R->infinity first, delta->0 second is essential and explicit.
+
+All remaining product/tail terms and the exceptional cardinal correction
+are O_(j,k)(m^-2), without a logarithm. Checkerboard parity and the
+prefactor therefore give precisely
+`m^4 w_(j,k)/log m -> -16 e_j e_k (-1)^j`.
+The moving endpoint halfweights are correctly distinguished from e_j.
+
+### Packet consequences and their normalization
+
+The degree-r convention is explicit: F_r has amplitude r+1 and degree r.
+The elementary bound `F_r/m<=C_a(1+j)^-2` holds on the **entire** x grid,
+with the adjacent y denominator changing only the constant. After
+multiplication by the global weight bound, every normalized energy
+summand is dominated by a constant times
+`(1+j)^-3(1+k)^-3`. Zero extension to the integer quadrant and dominated
+convergence therefore apply; no merely local asymptotic is summed
+without control of the far nodes.
+
+For the negative carrier, cos²(j*pi/2) selects even j. The exact DCT
+constant of F_r² is `D_r=1+r(2r+1)/(3(r+1))`. Degree 2r<m makes its
+alternating trapezoid sum zero, so the selected x profile has limiting
+halfweighted mass a/3. The y profile has mass 2b/3 and zero alternating
+mass, leaving b/3 on even k. The signed logarithmic energy coefficient
+is consequently **-16ab/9**.
+
+For the positive carrier, the difference of two Chebyshev polynomials
+is exactly `sin(mt/2)sin(rt)`, a polynomial despite the individual sine
+notation. It selects odd j. The auxiliary polynomial
+`h_r=sin²(rt)F_r²` has degree 4r<m; its constant coefficient is
+`D_r/2-1/[2(r+1)²]`. The correction follows from the top Chebyshev
+coefficient `2/(r+1)²` of F_r² and the product-to-sum factor one half.
+Its ordinary mass, followed by odd-j selection, tends to a/6. The y
+odd mass is b/3. The coefficient is therefore **+8ab/9**.
+
+Both carriers are bounded in modulus by one on the continuous domain.
+Splitting the Fejer integral at 1/(r+1) proves
+`0<||p||²<=[(1+pi^4)/2]²`. Total degrees are respectively
+m/2+r+s and m/2+2r+s, so the stated strict parameter conditions ensure
+membership in Pi_(m-1) eventually. Dividing a negative numerator by this
+norm upper bound gives an **upper** bound on its Rayleigh quotient;
+dividing a positive numerator gives a **lower** bound. Thus the two
+spectral endpoints diverge to opposite infinities along even m.
+
+The F3 choice a=b=(theta-1/2)/4 is admissible and gives the exact
+negative energy limit `-(theta-1/2)²/9`. Its degree is below theta*m,
+hence at most floor(theta*m). This proves failure for every fixed ratio
+above one half. Its subsequently added upper specialization was also
+checked: 2a+b=3(theta-1/2)/4<1/2, degree<theta*m, and logarithmic
+energy coefficient +(theta-1/2)^2/18. Both spectral endpoints therefore
+diverge at each such fixed ratio along even m. At or below one half,
+exactness proves eta=0. The positive reference theorem does not conflict
+with this classification.
+
+### Separate executed check and limits
+
+Ran the following independent command (equivalent absolute paths are
+in its receipt):
+
+```sh
+OPENBLAS_NUM_THREADS=1 python topics/padua-mz-2d-frontier-20261105/code/independent_carrier_check.py topics/padua-mz-2d-frontier-20261105/evidence/independent-carrier-check.json
+```
+
+**PASS**, about 9.28 s. Exact Fraction Fourier arithmetic checked both
+carrier ordinary/alternating DCT identities, the top coefficient and
+the h_r correction for every even m=8..64 and integer 1<=r with 4r<m
+(239 cases). Distinct direct triangular-sum float probes checked seven
+fixed node indices at m=128,256,...,8192. The final doubling slopes of
+m^4 w were approximately -4.016, -8.002, +16.112, -8.002, -15.757,
++16.224, -7.979, against predicted coefficients -4,-8,+16,-8,-16,+16,-8.
+Those slope probes are **MEASURED only**, not a convergence proof or
+finite signed spectral counterexample. Source hashes and environment
+are recorded in the small receipt; the analytic verdict uses the proofs.
+
+The independent checker did not certify a finite violating spectrum,
+sharp logarithmic extremal constants, the odd-m branch, or the 1-D
+upper-gap target. A minor candidate-memory mismatch in the harmonic mass bound was
+reported to the developer for synchronization; it does not concern the
+carrier proofs. Required Claude review remains pending on the final
+published candidate and its full dependency chain.
+
+Finally inspected both warmup files in full, with no mathematical gap
+found: `f12-1d-sign-discard-obstruction.md` at SHA-256
+`79763179157fc5db651ea30b7ab9c299dc4356aeeb622ef38db261cadbc60bf3`,
+and `f12-harmonic-boundary-escape.md` at
+`665c853d0575160d57e3f7adbbb46a8f3ec1daa79c4385d907d8f92047529249`.
+The first comparison uses ||q_L||^2=O(log N) and
+||p_L||^2>=L/16, with the constant in its displayed ratio correct.
+The second uses |p_N(cos t)|<=pi*N, endpoint mass<=pi^2*K^2,
+and the inherited norm lower bound log^3(N)/512. Read the complete
+PD-T018 and PD-T021 dependency proofs; the marginal and y-edge factor
+1-cos(K/m) are correct. These are analytic inspections, with no separate
+program run or statement about actual extremal eigenvector localization.
+
+The positive-reference F3 file subsequently received review/status
+metadata updates, with the signed target now cross-referenced as refuted;
+its current full-file hash is
+`dfbc44a3ec0589f794457fe14c3212b730d62a26c66bffa3e1d4a7295e62550d`.
+The executed F3 receipt correctly retains its earlier input hash. No
+mathematical change to that positive-reference estimate was reported;
+the new signed classification was reviewed separately above.

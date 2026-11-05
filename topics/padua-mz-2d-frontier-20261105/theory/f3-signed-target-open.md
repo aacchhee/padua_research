@@ -1,4 +1,33 @@
-# PD-T116 continuation — signed Padua fixed-ratio target remains OPEN
+# PD-T116 continuation — positive assertion refuted above half-exactness
+
+## Current resolution — supersedes the historical OPEN continuation below
+
+The original positive assertion is **REJECTED: refuted**, via the
+separate **PROVED** negative result
+[`PD-N?mz2d-frontier-codex-f3-01`](f3-fixed-ratio-threshold.md).
+For every fixed `1/2<theta<1`, its explicit carrier/Fejér polynomials
+have degree at most `floor(theta*m)` and negative signed Q_m energy
+for all sufficiently large even m. Their continuous norms are bounded;
+the minimum Gram endpoint tends to minus infinity. A separate
+odd-node carrier in the same ratio window makes the maximum endpoint
+tend to plus infinity. Half-exactness
+theta<=1/2 remains exact. No effective first violating m is asserted.
+
+Thus PD-T116's counterexample alternative is resolved analytically;
+the positive lower and strong eta(theta)<1 assertions above one half
+cannot hold. The positive reference theorem is unchanged and supplies
+no signed comparison. Supplementary independent reconstruction of
+the new classification found no gap; required Claude audit is pending.
+
+The filename and following original text are retained to preserve the
+initial OPEN state and its exact proof obligations. Their OPEN/deferred
+wording is historical and is superseded by this resolution, not a
+current status. The full negative proof depends on the separately
+written fixed-node weight lemma `PD-T?mz2d-frontier-codex-12`, and uses
+finite exact trapezoid identities and a uniform continuous norm bound.
+The F3 developer executed no mathematical computation for it.
+
+## Historical continuation — preserved verbatim after the resolution
 
 ID kind: PD-T (existing PD-T116; no duplicate global claim allocated).
 Aliases: F3 actual signed eta(theta); restricted signed-energy comparison.

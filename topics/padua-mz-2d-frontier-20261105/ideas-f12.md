@@ -114,7 +114,7 @@ Padua coordinate edge escape.
 - Test discriminability: proves or refutes the exact witness profile;
   it cannot pass or kill campaign G3 for actual eigenvectors.
 - Actual test results: endpoint mass is at most
-  `pi^2 K^2(K+1)^2/8` for fixed K and sufficiently large N, while total
+  `pi^2 K^2` for fixed K and sufficiently large N, while total
   norm squared is at least `log^3(N)/512`. The Padua lift has vanishing
   mass in the union of all K/m edge neighborhoods.
 - Disposition: retained PROVED supporting statement; no F1/F2 target
@@ -293,7 +293,7 @@ Aliases: T_(m/2) Fejer carrier; even-even signed packet.
   total continuous squared norms are uniformly bounded. Thus the signed
   minimum tends to minus infinity on every containing admitted space.
 - Disposition and reason: retained PROVED countersequence, pending
-  independent/Claude audit; original positivity target is refuted by
+  required Claude audit; original positivity target is refuted by
   this analytic asymptotic, with no named finite violating degree yet.
 - Canonical record: PD-N?mz2d-frontier-codex-13,
   theory/f12-eventual-negative-carrier.md.
@@ -340,4 +340,5 @@ Aliases: sine-product polynomial carrier; odd-odd signed packet.
 - Canonical record: PD-N?mz2d-frontier-codex-14,
   theory/f12-eventual-upper-carrier.md.
 - Topic / audit / history: 2026-11-05; exact degree-r Fejer convention
-  fixed in both packet records; independent/Claude review pending.
+  fixed in both packet records; supplementary Astra full-file review
+  found no gap; required Claude audit pending.

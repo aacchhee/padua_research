@@ -78,8 +78,8 @@ pieces disjoint except on a null boundary.
 
 ## Status by part
 
-Overall status: **PROVED** (analytic development; independent/Claude
-audit pending).
+Overall status: **PROVED** (analytic development; supplementary Astra
+review found no gap; required Claude audit pending).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -104,6 +104,9 @@ The exact PD-T018 polynomial and its full norm proof were reread.
 No mathematical computation, numerical integration or independent rerun
 was executed by this worker. The proof needs none. Gate G3 data
 reported separately by the parent are not used as proof evidence here.
+A distinct gpt-6-astra high supplementary checker read this file and its
+PD-T018/021 dependencies in full, finding no mathematical gap; exact
+scope and final hashes belong in ../independent-checks-math.md.
 
 ## Sources
 
@@ -180,10 +183,12 @@ K_N windows remain possible and require a separate statement.
 
 ## Open items
 
-Independent analytic reconstruction and required Claude audit. Relate
-an actual extremal-vector family to a distributed or localized limiting
-operator with quantitative errors. All-m F1 upper threshold and F2
-positivity, endpoint lower order, and eta convergence remain OPEN.
+Required Claude audit. Relate an actual extremal-vector family to a
+distributed or localized limiting operator with quantitative errors.
+This profile theorem does not decide the 2D spectral targets; the
+separate signed carrier theorems now refute the all-m upper threshold,
+positivity, positive endpoint lower orders, and eta convergence. Sharp
+growth constants and odd-m behavior remain unresolved.
 
 ## History
 

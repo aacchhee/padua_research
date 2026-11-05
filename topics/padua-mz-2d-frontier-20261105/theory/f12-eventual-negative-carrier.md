@@ -260,8 +260,8 @@ only even k. Equation (1) of -12 and (12) therefore give
 
 \[
  \lim\frac{Q_m((p^-_m)^2)}{\log m}
- =-16\left(\sum_{j\ {m even}}e_ju_j\right)
-       \left(\sum_{k\ {m even}}e_kv_k\right)
+ =-16\left(\sum_{j\ \text{ even}}e_ju_j\right)
+       \left(\sum_{k\ \text{ even}}e_kv_k\right)
  =-16\frac a3\frac b3=-\frac{16ab}{9}.
 \]
 

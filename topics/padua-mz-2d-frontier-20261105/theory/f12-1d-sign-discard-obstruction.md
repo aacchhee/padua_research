@@ -60,8 +60,8 @@ to refute the all-N quantifier in (1).
 
 ## Status by part
 
-Overall status: **PROVED** (analytic development; independent/Claude
-audit pending).
+Overall status: **PROVED** (analytic development; supplementary Astra
+review found no gap; required Claude audit pending).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -99,9 +99,11 @@ appears in PD-T019.
 Rules/input `83cf6f1ee244f2e72057332a7ec04ee74db1f0de`.
 The cheapest test was written in ideas-f12.md before this proof record.
 No numerical or exact-arithmetic mathematical program was executed by
-this worker. No independent check or rerun is claimed. This is an
-analytic countersequence, so no computer-assisted proof obligation is
-being substituted for the proof.
+this worker. A distinct gpt-6-astra high supplementary checker read this
+file in full and found no mathematical gap; exact scope and final hashes
+belong in ../independent-checks-math.md. No independent rerun by this
+developer is claimed. This is an analytic countersequence, so no
+computer-assisted proof obligation is being substituted for the proof.
 
 ## Sources
 
@@ -196,9 +198,10 @@ from a one-dimensional obstruction to this proof route.
 
 ## Open items
 
-Independent analytic reconstruction; required Claude audit. A successful
-uniform-gap proof must bypass the specific intermediary (1). The full
-1D PD-T027 and signed 2D PD-T110 targets remain unchanged and OPEN.
+Required Claude audit. A successful 1D uniform-gap proof must bypass the
+specific intermediary (1); PD-T027 remains OPEN. This scoped obstruction
+does not decide the signed 2D target. Its separate refutation is proved
+in f12-eventual-upper-carrier.md, using the signed local-weight lemma.
 
 ## History
 

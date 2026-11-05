@@ -2,8 +2,8 @@
 
 ID kind: PD-T (provisional; orchestrator assigns final ID).
 Aliases: G1 hybrid native certificate; C GMP pencil and FLINT signed-dominance congruence; finite m60 extension.
-Split from: verification support for PD-T028/PD-T110; their universal targets remain unchanged and OPEN.
-Split into: m80 remains a separate CONDITIONAL record, PD-T?mz2d-frontier-codex-91 in `cert-finite-extension-m80.md`.
+Split from: verification support for PD-T028/PD-T110; their separate universal questions are not narrowed or decided by this finite result.
+Split into: m80 is a separate independently completed record, PD-T?mz2d-frontier-codex-91 in `cert-finite-extension-m80.md`.
 
 ## Statement
 
@@ -78,9 +78,9 @@ Only m60, n59. Positivity and upper bound2 in this case follow from the interval
 
 ## Open items
 
-- m60 independent checker/rerun is complete; m80 remains separate and pending in `cert-finite-extension-m80.md`.
+- m60 independent checker/rerun is complete; m80 is separately completed in `cert-finite-extension-m80.md`.
 - Required Claude audit remains separate from supplementary independent checking.
-- m100 result pending at this checkpoint. All-integer2..60 batch incomplete at this checkpoint.
+- m100 was stopped at the orchestrator's scope decision without acceptance; cost/phase receipt `../evidence/cert-m100-stopped.json`. All-integer2..60 producer acceptance is complete (`../evidence/cert-range-3-60.json` plus m2 identity), but independent coverage is explicitly limited to10,20,30,40,60,80. This file claims only60.
 - Bulk scratch pencils/transforms are regenerable and hashed in receipts; AC cold-storage export/retrieval is pending. No scratch locator is represented as archived storage.
 
 ## History

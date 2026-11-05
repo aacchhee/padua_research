@@ -1,5 +1,13 @@
 {
- "status": "exact development identity check; separate independent checker pending",
+ "status": "exact development identity check; independent regeneration of this case pending",
+ "rules_input_sha": "83cf6f1ee244f2e72057332a7ec04ee74db1f0de",
+ "command": [
+  "/workspace/padua_research/topics/padua-mz-2d-frontier-20261105/code/cert_identity.py",
+  "--scratch",
+  "/tmp/padua-cert-identity",
+  "--output",
+  "/workspace/padua_research/topics/padua-mz-2d-frontier-20261105/evidence/cert-m2-identity.json"
+ ],
  "m": 2,
  "n": 1,
  "dimension": 3,
@@ -7,20 +15,24 @@
   "1",
   "1"
  ],
- "negative_Q_minus_H": 0,
  "blocks": [
   {
    "dimension": 2,
-   "positive_common_denominator": 3,
+   "positive_common_denominator": "3",
    "scaled_H_equals_Q": true
   },
   {
    "dimension": 1,
-   "positive_common_denominator": 3,
+   "positive_common_denominator": "3",
    "scaled_H_equals_Q": true
   }
  ],
  "native_input_sha256": "85964d8c7a84c5b25688901a4c50e6f33f32e2e0f6780a50694530e9f22bc694",
- "method": "C GMP pencil compared entrywise H=Q; positive definiteness of continuous H inherited from PD-T106",
- "regression": "Full native pencil equality with frozen Fraction pencil also executed in cert-exact-entry-regression.json"
+ "native_stderr": "GMP 6.3.0; m=2; dimensions=2,1; checked_offblock=2",
+ "source_sha256": {
+  "cert_pencil.c": "95993b761794306b41b67f6e7741fd9cd38817c08e5ec218c2f21fb08846d51e",
+  "cert_identity.py": "89994c5e09ddb73cc34b7275ef46326a19c26eb5ef639249ef607e6a1c3f8625"
+ },
+ "method": "Entrywise exact H=Q; H positive definite by the continuous Gram identity PD-T106",
+ "regression": "Native pencil also matched frozen Fraction pencil in cert-exact-entry-regression.json"
 }

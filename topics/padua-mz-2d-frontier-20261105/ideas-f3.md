@@ -216,6 +216,44 @@ critical-diagonal logarithmic trial screen.
 - Canonical target: existing PD-T116; retained here to avoid dropping
   an unsuccessful or untested direction from the candidate memory.
 
+## Dated resolution after the initial F3 boundary
+
+Later in the same session, the F1/F2 developer produced the common
+fixed-node weight lemma `PD-T?mz2d-frontier-codex-12` and the exact
+parity-selecting carrier. The F3 developer read and reconstructed the
+complete supporting proof, checked domination, and evaluated the carrier
+profile sums using finite exact trapezoid identities. This changes the
+actual signed target's disposition; it is not an inference from the
+positive reference theorem or a promotion of a finite numerical probe.
+
+- Candidate f3-01 remains **retained, PROVED**: its reference form S_m
+  is positive and is different from Q_m. Its proof is unaffected.
+- Candidate f3-02's intended uniform signed-positive completion is
+  **REJECTED: refuted** above half-exactness by
+  `PD-N?mz2d-frontier-codex-f3-01`. The earlier deferred wording records
+  its pre-countersequence state. This is now an actual theorem
+  refutation, not rejection due to failure to find a proof.
+- Candidate f3-03's proposed uniform near-half small-defect modulus
+  cannot hold: for every fixed delta>0 the signed minimum tends to
+  minus infinity on the corresponding even-m sequence. That precise
+  uniform modulus assertion is **REJECTED: refuted** by the same
+  negative record. Its exact compression observation remains valid.
+- Candidate f3-04 is **retained in a specified successful variant**:
+  `T_(m/2)(x) F_floor(am)(x) F_floor(am)(y)` has exact zero samples
+  at odd x indices. The original unformed packet was not executed or
+  retrospectively claimed preregistered; the concrete carrier was
+  supplied independently by F1/F2. The fixed-node alternating weight
+  asymptotic and exact finite trapezoid cancellation establish negative
+  signed energy, escaping the corner-divergence-only obstruction.
+
+The [classification theorem](theory/f3-fixed-ratio-threshold.md) is a
+known-mechanism synthesis of that new common lemma and carrier packet,
+with the new precise quantified conclusion: theta<=1/2 is exact, while
+every theta>1/2 fails signed strong MZ eventually. Its provisional ID is
+`PD-N?mz2d-frontier-codex-f3-01`; no duplicate negative is allocated for
+the two failed positive-proof candidates. The historical novelty
+classification remains qualified; no primary-literature claim is made.
+
 ## Supplementary check receipt
 
 The independent mathematical checker separately reconstructed the

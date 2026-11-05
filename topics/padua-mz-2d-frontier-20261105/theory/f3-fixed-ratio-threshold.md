@@ -52,6 +52,23 @@ Consequently Q_m(p_m^2)<0 for all sufficiently large even m, and
  \quad\text{along even }m.                           \tag{3}
 \]
 
+The upper endpoint also diverges at the same fixed ratio. For all
+sufficiently large even m, the nonzero admitted polynomial
+
+\[
+ p_m^+(x,y)=\tfrac12\{T_{m/2-r_m}(x)-T_{m/2+r_m}(x)\}
+             \mathcal F_{r_m}(x)\mathcal F_{s_m}(y)
+\]
+
+satisfies
+
+\[
+ \frac{Q_m((p_m^+)^2)}{\log m}\longrightarrow
+       \frac{8a^2}{9}=\frac{\delta^2}{18}>0,
+ \qquad \lambda_{\max}(m,n_m)\longrightarrow+\infty
+ \quad\text{along even }m.                          \tag{U}
+\]
+
 In particular no uniform eta(theta)<1 exists at any theta>1/2.
 The entire positive strong-MZ assertion of PD-T116 is **REJECTED:
 refuted**; its counterexample alternative is resolved analytically.
@@ -86,6 +103,7 @@ weight lemma and packet argument is recorded separately by its checker.
 |---|---|---|
 | Failure at every fixed theta>1/2, explicit countersequence (1)–(2) | PROVED | Fixed-node weight limit with a global summable majorant, plus exact finite trapezoid identities |
 | Divergent negative Gram endpoint (3) | PROVED | Explicit uniform continuous-norm upper bound |
+| Divergent positive Gram endpoint (U) at the same fixed ratio | PROVED | Direct parameter specialization of the separate upper-carrier theorem |
 | Exactness at theta<=1/2 | PROVED, routine inherited context | Degree-m exactness; not a newly allocated positive result |
 
 Candidate / claim disposition: the proposed uniform signed positive
@@ -108,8 +126,13 @@ diamond theorem is unaffected; it is not Q_m.
 whose complete proof was read and independently reconstructed by this
 F3 developer before the corollary. Its derivation uses the locally
 proved cardinal identity PD-T101/111 and elementary Fourier tails.
-The carrier mechanism was supplied by the F1/F2 developer; the full
-packet theorem is also retained in that developer's separate record.
+The carrier mechanism was supplied by the F1/F2 developer; its full
+negative packet theorem is
+[`PD-N?mz2d-frontier-codex-13`](f12-eventual-negative-carrier.md).
+The positive endpoint in (U) depends on the full separate upper-carrier
+theorem [`PD-N?mz2d-frontier-codex-14`](f12-eventual-upper-carrier.md),
+also read and reconstructed by this developer. Only its parameter and
+degree specialization is needed below; its core proof is not duplicated.
 The elementary finite trapezoid and norm calculations are given below.
 No numerical spectrum, external MZ theorem or unverified asymptotic fit
 is used.
@@ -282,7 +305,28 @@ In fact
 No nonnegative, uniformly coercive signed form—and in particular no
 eta(theta)<1—can hold at this theta. For theta<=1/2, degree-m exactness
 applies to every square in the target space. This proves the stated
-threshold and its negative consequences. ∎
+threshold and its negative consequences.
+
+### 5. The same degree window admits the upper countersequence
+
+Apply the separate PROVED upper-carrier theorem
+`PD-N?mz2d-frontier-codex-14` with its parameters a=b=delta/4.
+Its assumption `2a+b<1/2` holds because `3delta/4<3/8<1/2`.
+For sufficiently large m, r_m>=1 so its sine-product polynomial is
+nonzero, and its degree obeys
+
+`m/2+2r_m+s_m <= (1/2+3delta/4)m < theta*m`.
+
+Thus it belongs to the same `Pi_floor(theta*m)` as the negative packet.
+That theorem gives `Q_m((p_m^+)^2)/log m -> 8a^2/9` and
+`0<||p_m^+||_2^2<=C_0^2`. The positive-numerator Rayleigh inequality
+therefore yields
+
+`liminf lambda_max(m,n_m)/log m >= delta^2/(18 C_0^2)>0`
+
+along even m, proving (U). The opposite-sign sampled parities are
+essential; the two trial polynomials and their limits remain distinct.
+No finite-m crossing is inferred from the asymptotics. ∎
 
 ## Scope
 

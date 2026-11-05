@@ -13,7 +13,7 @@ All16 float extrema agree with PD-T108 within1e-12. Commands, hashes,
 versions and short receipt: [independent-checks-g0.md](independent-checks-g0.md).
 No mismatch found; later gates released after receipt completion.
 
-## G1 — 2026-11-05 — m60 cost PASS; extension running
+## G1 — 2026-11-05 — m60 cost PASS; sparse extension complete
 
 The hybrid C/GMP pencil and native FLINT integer-congruence port accepted
 m10/20/30/40 with the frozen exact brackets; m60 accepted in46.912s wall,
@@ -32,10 +32,15 @@ The float operator passed independent dense-assembly comparisons and
 continuous localization completed through400. Larger maxima remain costly;
 actual completed scope is retained, never inferred from requested jobs.
 
-## G2 — PRE-REGISTERED, RUNNING
+## G2 — INCONCLUSIVE, incomplete heldout grid
 
 Candidate laws, grid, training/heldout division and winner rule were written
-in numerical-plan.md before m>100 execution. Fits are MEASURED only.
+in numerical-plan.md before m>100 execution. Upper600 was stopped for cost
+without a completed row; upper800/1000 were not run. Therefore the frozen
+fit rule returns INCONCLUSIVE, never a fitted order. Completed paired
+extrema60..400 and minimum-only800/1000 are retained; minimum1200/1600
+are dated exploratory runs. The separate analytic upper countersequence
+refutes a finite limiting upper bound without using a fit.
 
 ## G3 — 2026-11-05 — KILL original R1 localization
 

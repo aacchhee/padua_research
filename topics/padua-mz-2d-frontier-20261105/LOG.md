@@ -1,9 +1,9 @@
 # Signed Padua MZ frontier (PD-T110, PD-T028, PD-T116, PD-T114; 1-D PD-T027): log
 
 - Branch: `codex/padua-mz-2d-frontier-20261105` · Base: main `440d107` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: `Codex (gpt-6.1-sol xhigh): Continue codex/padua-mz-2d-frontier-20261105.` · Open handoff: [handoffs/01-work.md](handoffs/01-work.md)
-- Reserved final-ID ranges: none yet. Reserve when the draft PR opens, checking open PRs #19–#22 and the parallel `codex/padua-lanczos-frontier-20261105`.
-- Claims: none yet.
+- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Continue codex/padua-mz-2d-frontier-20261105.` · Work outputs complete; handoff01 closes and handoff02 publishes in the following commit.
+- Permanent reservations: T294–323, N104–115, IDEA384–413, LIT574–581, first pushed e79c576; no final assignments. [Ledger](ALLOCATIONS.md).
+- Claims: analytic signed spectral countersequences and sharp half-degree threshold; uniform C→L2 norm below30; positive-reference diamond estimate; finite independently certifiedm60/m80; scoped warmups. Required Claude audit pending. [Report](report.md).
 - Open for AC: none at setup. Ask AC before using any machine outside the sandbox.
 
 ## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
@@ -34,3 +34,6 @@
 - Supplementary Astra full-file reconstruction found no gap in both carrier theorems: negative−16ab/9 and positive8ab/9, finite DCT constants, polynomiality/degrees, global domination and Rayleigh signs checked. Required Claude audit remains pending. F3 classifies the exact half-degree threshold; F4 uniform bound is consistent because its domain norm is C, not polynomial L2.
 - Numerical work complete/stopped at actual scopes: full spectra60..400; G2 fit INCONCLUSIVE incompleteheldout; G4 every integer2..239 at both degrees (476rows) nohits; exploratory minimum800/1000/1200/1600, with1600negativeuncertified. No unrun numerical gate is credited. Original criteria retained and dated analytic alternatives recorded.
 - Independent80PASS569.136s: all10499200H/Q entries,2624000offblock pairs, freshscale1e13integercongruences and strictinertia endpoints. m80 is now a separate proved finite computer-assisted case; no gap-free2..80 claim. Native100 is stopped without acceptance because the universal questions are analytically resolved and its observed cost is high.
+- Development complete at the checked analytic countersequence boundary; F1/F2/F3 resolved negatively, F4 positively,1D027 remainsOPEN. Ceilings were not claimed as consumed hours. All workers finished; no active jobs remain.
+- Final verification:84 inventory identities; all compact JSON files parse and remain below16KiB; source control characters, documentation links (excluding fenced literal registry replacements), scope/protected-path checks and git diff --check pass. Standard cold-storage tool finds zero tracked bulk outputs and verifies an empty Git-backed entry set; actual12-file local staging inventory is separate, external delivery pending. Initial link scan treated fenced literal registry rows as document-relative links; rerun correctly excluded those literal blocks, preserving their exact old/new text.
+- Required next step: distinct Claude Opus5.5 xhigh audit of the exact output candidate and complete IDEAS/novelty scope. Shared registry edits/final IDs deferred; proposed-record-changes.md retains literal replacements, including explicit refuted dispositions. DraftPR23 remains unready; no merge approval requested.
