@@ -164,3 +164,9 @@
 
 - Subsequent read-only Astra-medium review PASS: all69 topic and10 repository identities match both preparation sourceab4cd00 and current bytes; index10,188bytes below16KiB. Both prior-index generations verified against commit/blob/size/hash and nested provenance; eight historical review/response/report/receipt files remain byte-identical. Every tracked topic file outside documented lifecycle/self-index exclusions is covered.
 - No file was modified by that subsequent check. Original scientific bodies/code/evidence remain unchanged, and the required Claude preparation audit remains pending. The source/template and actual final PR body will resolve the concrete preparation-output/handoff SHAs after the numbered transition commit.
+
+## 2026-11-05 — Claude preparation-audit-01 (Claude, claude-opus-5-5 configured, high requested)
+
+- Rules read at `b301f530a621528f77724401e572977586982651`. Main `330fab8`. Live open PRs: #21 `67b3e01`, #24 `45646d7` (advanced from the `3a179f6` pin; own-topic files only), #25 `b301f53`.
+- [preparation-audit-01](preparation-audit-01.md): ACCEPTED. Executed: check_registration PASS (3648 checks); an own shared-diff scan (only the PD-T099 insertion and the two accepted CURRENT/PAPER_MAP anchors change existing lines); a collision scan at the live heads (acknowledgements only); an own squash rehearsal of seven orders at the live heads (0 conflicts, order-independent trees, no new duplicate rows, every RESULTS section kept); theory-body prefix preservation; 69+10 index rows; JSON/16 KiB/5 MB limits; PR-body/template match.
+- Finding P1 (minor): the PR body's PR24 pin is stale. Handoff 07 refreshes the live pins, the reservation union and the results "pending" sentence (both copies, with a re-pin). PD-T099 OPEN; range 2–32.
