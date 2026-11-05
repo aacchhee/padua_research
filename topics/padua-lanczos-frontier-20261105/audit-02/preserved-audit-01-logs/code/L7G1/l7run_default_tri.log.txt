@@ -1,0 +1,7 @@
+triangle 2026110501 seconds 17.6 trusted [True, True, True]
+triangle 2026110502 seconds 16.9 trusted [True, True, True]
+
+real	0m35.280s
+user	0m33.419s
+sys	0m1.502s
+EXIT 0

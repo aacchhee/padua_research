@@ -1,0 +1,7 @@
+{"m": 7, "s": 2, "BJ_witness_gain2": "42", "stated_bj_lower2": "42", "mirror_HS2": "2414", "stated_mirror_upper2": 48600}
+{"m": 7, "s": 3, "BJ_witness_gain2": "170", "stated_bj_lower2": "170", "mirror_HS2": "7043", "stated_mirror_upper2": 497664}
+{"m": 7, "s": 4, "BJ_witness_gain2": "682", "stated_bj_lower2": "682", "mirror_HS2": "14729", "stated_mirror_upper2": 2940000}
+{"m": 7, "s": 5, "BJ_witness_gain2": "2730", "stated_bj_lower2": "2730", "mirror_HS2": "23968", "stated_mirror_upper2": 12441600}
+{"m": 8, "s": 2, "BJ_witness_gain2": "42", "stated_bj_lower2": "42", "mirror_HS2": "3291", "stated_mirror_upper2": 48600}
+{"m": 8, "s": 3, "BJ_witness_gain2": "170", "stated_bj_lower2": "170", "mirror_HS2": "9998", "stated_mirror_upper2": 497664}
+FIXED_GRID_ASSERTIONS_PASSED
