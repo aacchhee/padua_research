@@ -1,6 +1,6 @@
 # Handoff 04 — padua-literature-20261103 — independent audit of the literature campaign (with pass 2)
 
-- Status: open
+- Status: done in eb80b38662291a4d61e8f5431998c28aeae6837e
 - Previous handoff: 03-audit.md (superseded before any audit work: AC supplied new papers; pass 2 added, see LOG 2026-11-05)
 
 - Next agent / model / effort: Codex, gpt-6-astra, high. This is Codex auditing Claude development. Use xhigh only for a disputed priority verdict, with a written justification.
