@@ -2,7 +2,7 @@
 
 This file is written only by the topic orchestrator. Branch `claude/padua-literature-20261103`; [draft PR #21](https://github.com/aacchhee/padua_research/pull/21); reserved LIT-482–561.
 
-## Status (2026-11-05): response 01 to audit-01 done; Codex re-audit next. Final report: [report.md](../topics/padua-literature-20261103/report.md)
+## Status (2026-11-05): audit-02 accepted F1–F6; response 02 answers F7; short Codex check next. Final report: [report.md](../topics/padua-literature-20261103/report.md)
 
 These are literature findings only. They carry no PD status changes and no new mathematical claims.
 
@@ -30,7 +30,7 @@ These are literature findings only. They carry no PD status changes and no new m
 
 ## Next step
 
-Codex (gpt-6-astra high) re-audit per handoff 08, at input head 10aa5d3. Still needed from AC: print-only DMV 1995 (see DOWNLOADS v5).
+Codex (gpt-6-astra high) short check of F7 per handoff 10, then PR preparation by Claude. Still needed from AC: print-only DMV 1995 (see DOWNLOADS v5).
 
 ## 2026-11-05 — independent audit disposition
 
@@ -43,8 +43,13 @@ All six audit-01 findings were accepted and answered with changes; see [response
 - **F2–F6.** Record corrections: Mastroianni–Russo Thm 9 hypothesis and scoped negative; Möller dim Π²_{n−1}; downdating question scoped against IDEA-094/095; Laurie awareness statement kept.
 - **Primary checks.** Xu 1996 journal Thm 3.3 has 1 < p < ∞ (version difference from the preprint), De Marchi p. 23 and SVZ (25)/Table 1 confirmed; 10/10 direct Crossref matches.
 - **Supplement.** Pimenova (constant 2/π²), Kuznetsova p. 259 and SVZ pp. 417/421 confirmed on page images; no verdict changes.
-- **MathSciNet citation check.** One citer of KL 2021 (Kolomoitsev–Liflyand 2021, Fourier simplex constants; RELATED), none of De Marchi 2022, nine of SVZ 2008 (Padua2DM restates "not all positive" weights). No verdict changes.
+- **MathSciNet citation check.** One citer of KL 2021 (Kolomoitsev–Liflyand 2021, Fourier simplex constants; RELATED), no indexed citing item returned for De Marchi 2022 (an index-query result, not publication absence; response-02), nine of SVZ 2008 (Padua2DM restates "not all positive" weights). No verdict changes.
 
 ## 2026-11-05 — audit 02 of response and supplements
 
 Original six findings are resolved in the bounded re-audit. One new P2 F7 requires narrowing the MathSciNet zero-citation inference; stage WORK and PR remains draft. Source reading closures are developer-verified where independent journal/image access failed, and are not presented as auditor verification. Actual literal checker rerun at reconciled main:60/60; merge-preservation and reservation checks pass within recorded scope. No scientific verdict/status or final ID changes. [Audit02](../topics/padua-literature-20261103/audit-02.md); [handoff09](../topics/padua-literature-20261103/handoffs/09-response.md).
+
+## 2026-11-05 — response 02 (Claude)
+
+Audit-02 F7 is fixed. A zero MathSciNet count for De Marchi 2022 is now reported only as "AC's check returned no indexed citing item", not as publication absence, in the note, the P1 comparison and the summary above. No verdict changes. Next: a short Codex check of F7, then PR preparation. [Response-02](../topics/padua-literature-20261103/response-02.md).
+

@@ -5,7 +5,7 @@ Purpose: harden the "no matching result found in the documented search" verdicts
 ## Forward citations
 
 - **Kolomoitsev–Lomako 2021** (AMC 403, 126192): AC found one citing paper in MathSciNet, namely Y. Kolomoitsev, E. Liflyand, *Asymptotics of the Lebesgue constants for a d-dimensional simplex*, Proc. AMS 149(7) (2021) 2911–2926, [doi:10.1090/proc/15438](https://doi.org/10.1090/proc/15438). AC supplied it as `S0002-9939-2021-15438-5.pdf`; Claude read it. Record [kolomoitsev-liflyand-2021](../../../literature/records/kolomoitsev-liflyand-2021.md). Verdict: RELATED, DIFFERENT SETTING (Fourier partial sums over a simplex; not interpolation, not pointwise, remainder O(log log n₁ · log n₂)).
-- **De Marchi 2022** (CMA 5, MR4410201): **0 citations** (AC). So nothing has been published citing the open-problems list that holds the corner observation.
+- **De Marchi 2022** (CMA 5, MR4410201): **0 citations** (AC, 2026-11-05). AC's MathSciNet check returned no indexed citing item for the open-problems list that holds the corner observation. This is a statement about that index query only, not evidence that no citing work exists: the index is incomplete (see Kuznetsova below), and Google Scholar and zbMATH were not searched. (Wording narrowed in response-02 to audit-02 F7; the earlier sentence inferred that nothing citing it had been published.)
 - **SVZ 2008** (Numer. Algorithms 49): 9 citing items (AC's MathSciNet list). Triage:
 
   | Citing item | Check | Bearing |
