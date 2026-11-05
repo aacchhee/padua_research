@@ -1,6 +1,6 @@
 # Lanczos frontier — aggregate separation and checked closure certificates
 
-Stage WORK. [Draft PR24](https://github.com/aacchhee/padua_research/pull/24), not ready for merge. Rules read at5e5081e991fc48f033d3ef51ee2b6e42f892d29d; current main21dbfc90257b952d8923f6d01739d12aa8d6e0a1 merged without changing the frozen Lanczos sources. No final IDs assigned or canonical registries changed; [literal proposed changes](proposed-record-changes.md) await audited preparation.
+Stage WORK. [Draft PR24](https://github.com/aacchhee/padua_research/pull/24), not ready for merge. Rules read at02a465bea0339f20278ba4888e28f9e9b6041603; current mainaff30e8ad5542c94fab642ae024dc9aab4fa7ad7 merged without changing the frozen Lanczos sources. No final IDs assigned or canonical registries changed; [literal proposed changes](proposed-record-changes.md) await audited preparation.
 
 ## L1: analytic separation on the saved sheared family
 
