@@ -56,3 +56,16 @@
 - Clarification for P1: coordinate-swap symmetry alone does not identify BJ
   and mirror capacities while keeping the within-degree Gram–Schmidt order
   fixed. Any equality or separation needs a derivation in the actual model.
+
+### Canonical protocol disclosure — P3 gate timing
+
+The P3 worker sent the coordinator a precise high-mode nonmultiplicative
+weight candidate and a moment-cancellation observation before finishing all
+required shortlisted and full-table reads. No new experiment or file had yet
+been written. The coordinator stopped further derivation/testing until those
+reads were completed and required preservation of the chronology. Later
+reading cannot make that proposal prospective. The older campaign's AC
+acceptance does not cover this new deviation; retain it for the independent
+audit and AC's disposition. Other records refer to this paragraph rather than
+repeating the process limitation. This does not establish or refute the
+candidate's mathematics.
