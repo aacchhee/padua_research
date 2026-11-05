@@ -1,6 +1,6 @@
 # Handoff 06 — PR22 preparation protocol check
 
-- Status: open
+- Status: done in 751d47debdfd716eb4054d69e4a47c6e50dcdf65
 - Previous handoff: 05-pr-preparation.md
 - Next agent / model / effort: Claude, Sonnet 5.5 high for protocol review;
   Opus 5.5 high is also allowed at the auditor's choice.
