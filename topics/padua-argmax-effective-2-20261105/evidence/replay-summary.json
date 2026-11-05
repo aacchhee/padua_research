@@ -1,0 +1,293 @@
+{
+  "checker_binary_sha256": "f17fed2e69a98c952d1ad5e72de03c08b2ceb07970c49fc0db1b35396fe3e605",
+  "commands": [
+    {
+      "command": [
+        "g++",
+        "-O3",
+        "-std=c++17",
+        "/workspace/padua_research/topics/padua-argmax-effective-20261103/code/native_checker/kernel.cpp",
+        "-lgmpxx",
+        "-lgmp",
+        "-o",
+        "/workspace/padua_research/local-output/argmax-effective-2-20261105/replay/checker"
+      ],
+      "name": "build-checker",
+      "returncode": 0,
+      "system_seconds": 0.251664,
+      "user_seconds": 2.187771,
+      "wall_seconds": 2.473587997999971
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/padua_research/topics/padua-argmax-effective-20261103/code/native_producer/run.py",
+        "--n",
+        "17",
+        "--output",
+        "/workspace/padua_research/local-output/argmax-effective-2-20261105/replay/n17.json.gz",
+        "--work",
+        "/workspace/padua_research/local-output/argmax-effective-2-20261105/replay/build-n17"
+      ],
+      "name": "produce-n17",
+      "returncode": 0,
+      "system_seconds": 0.08257399999999998,
+      "user_seconds": 4.077717,
+      "wall_seconds": 4.177815639000016
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/padua_research/topics/padua-argmax-effective-20261103/code/native_checker/check.py",
+        "/workspace/padua_research/local-output/argmax-effective-2-20261105/replay/n17.json.gz",
+        "--binary",
+        "/workspace/padua_research/local-output/argmax-effective-2-20261105/replay/checker",
+        "--output",
+        "/workspace/padua_research/local-output/argmax-effective-2-20261105/replay/n17-regenerated-check.json"
+      ],
+      "name": "check-n17-regenerated",
+      "returncode": 0,
+      "system_seconds": 0.10744700000000001,
+      "user_seconds": 9.437933,
+      "wall_seconds": 9.599790761999998
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/padua_research/topics/padua-argmax-effective-20261103/code/native_checker/check.py",
+        "/workspace/padua_research/topics/padua-argmax-effective-20261103/evidence/n17.json.gz",
+        "--binary",
+        "/workspace/padua_research/local-output/argmax-effective-2-20261105/replay/checker",
+        "--output",
+        "/workspace/padua_research/local-output/argmax-effective-2-20261105/replay/n17-committed-check.json"
+      ],
+      "name": "check-n17-committed",
+      "returncode": 0,
+      "system_seconds": 0.042329000000000006,
+      "user_seconds": 9.131089,
+      "wall_seconds": 9.195374146000006
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/padua_research/topics/padua-argmax-effective-20261103/code/native_producer/run.py",
+        "--n",
+        "24",
+        "--output",
+        "/workspace/padua_research/local-output/argmax-effective-2-20261105/replay/n24.json.gz",
+        "--work",
+        "/workspace/padua_research/local-output/argmax-effective-2-20261105/replay/build-n24"
+      ],
+      "name": "produce-n24",
+      "returncode": 0,
+      "system_seconds": 0.10052099999999997,
+      "user_seconds": 27.219828000000003,
+      "wall_seconds": 27.37269352499999
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/padua_research/topics/padua-argmax-effective-20261103/code/native_checker/check.py",
+        "/workspace/padua_research/local-output/argmax-effective-2-20261105/replay/n24.json.gz",
+        "--binary",
+        "/workspace/padua_research/local-output/argmax-effective-2-20261105/replay/checker",
+        "--output",
+        "/workspace/padua_research/local-output/argmax-effective-2-20261105/replay/n24-regenerated-check.json"
+      ],
+      "name": "check-n24-regenerated",
+      "returncode": 0,
+      "system_seconds": 0.311674,
+      "user_seconds": 60.664929,
+      "wall_seconds": 61.018936163000035
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/padua_research/topics/padua-argmax-effective-20261103/code/native_checker/check.py",
+        "/workspace/padua_research/topics/padua-argmax-effective-20261103/evidence/n24.json.gz",
+        "--binary",
+        "/workspace/padua_research/local-output/argmax-effective-2-20261105/replay/checker",
+        "--output",
+        "/workspace/padua_research/local-output/argmax-effective-2-20261105/replay/n24-committed-check.json"
+      ],
+      "name": "check-n24-committed",
+      "returncode": 0,
+      "system_seconds": 0.32046299999999994,
+      "user_seconds": 59.53406600000001,
+      "wall_seconds": 59.871247761999996
+    }
+  ],
+  "excluded_comparison_fields": [
+    "producer_provenance",
+    "search_seconds",
+    "setup_seconds",
+    "total_seconds"
+  ],
+  "format": "padua-phase2-native-replay-v1",
+  "identity": "Codex independent replay subagent; requested gpt-6.1-sol medium; runtime model metadata unavailable",
+  "input_head": "ed21cc0bf205549936fccde90244a291bc6de324",
+  "limitations": [
+    "Only n=17,24; no new finite range or all-degree claim.",
+    "No fresh corruption-control or reference-Python replay; uses frozen independent C++ checker.",
+    "Bulk outputs local and pending archival; no historical environment inferred from current versions."
+  ],
+  "process_group_wall_cap_seconds": 900,
+  "rows": [
+    {
+      "accepted": {
+        "committed": {
+          "accepted": true,
+          "all_supplied_bounds_verified": true,
+          "binary_sha256": "f17fed2e69a98c952d1ad5e72de03c08b2ceb07970c49fc0db1b35396fe3e605",
+          "certificate_sha256": "7ec44ce35cc20b12386e115749ef21c073b4362f066f4d92063ae43da7d756f8",
+          "checker_sha256": "b6c7320db2f7cfebf27fe33aa38ffdd45ff719870e3d23e15f845b6e8026eb2e",
+          "complete_partition": true,
+          "counts": {
+            "bound": 104,
+            "corner": 2,
+            "splits": 105
+          },
+          "format": "padua-native-independent-check-v1",
+          "kernel_sha256": "b0c871e7711219edfe3ce01480d8d1de3503a20d9b59f82b63a00eff248bc6e0",
+          "n": 17,
+          "receipt_sha256": "1ceee18ca4be7a8cd947da1d3caa74f4cc2fad033cd06d62422fe37f3e511cad",
+          "seconds": 9.137727364
+        },
+        "regenerated": {
+          "accepted": true,
+          "all_supplied_bounds_verified": true,
+          "binary_sha256": "f17fed2e69a98c952d1ad5e72de03c08b2ceb07970c49fc0db1b35396fe3e605",
+          "certificate_sha256": "e644eabfeb97f9586a431ffab5ca31cbe185661523e40f78b66b85b77cc6aa8b",
+          "checker_sha256": "b6c7320db2f7cfebf27fe33aa38ffdd45ff719870e3d23e15f845b6e8026eb2e",
+          "complete_partition": true,
+          "counts": {
+            "bound": 104,
+            "corner": 2,
+            "splits": 105
+          },
+          "format": "padua-native-independent-check-v1",
+          "kernel_sha256": "b0c871e7711219edfe3ce01480d8d1de3503a20d9b59f82b63a00eff248bc6e0",
+          "n": 17,
+          "receipt_sha256": "23dba9c3f9b0952eb1591eee8e559166b0da4f94b181bc7f4a6354557bc4036e",
+          "seconds": 9.510382645999982
+        }
+      },
+      "committed_certificate_sha256": "7ec44ce35cc20b12386e115749ef21c073b4362f066f4d92063ae43da7d756f8",
+      "complete": true,
+      "frontier_and_bounds_equal": true,
+      "leaves": 106,
+      "mathematical_fields_equal": true,
+      "mathematical_sha256": "0257c171a148d7aa5a29f56c50e7e0d9be1a36ba42a14835c758f7ed35cd9472",
+      "n": 17,
+      "previous_producer_math_hash_matches": true,
+      "previous_receipt_certificate_hash_matches": true,
+      "producer_binary_sha256": "5d288fa3af75641e74b6ead67ab28b65eee6f7d144bf134c981eeebb4241e312",
+      "regenerated_certificate_sha256": "e644eabfeb97f9586a431ffab5ca31cbe185661523e40f78b66b85b77cc6aa8b",
+      "regenerated_input_sha256": "7ce4501f3d8cb99988ca77a74540b5f54d55f797c488c9f0354403c6968dbbc0",
+      "statistics": {
+        "bound": 104,
+        "corner": 2,
+        "maximum_depth": 8,
+        "splits": 105,
+        "visited": 211
+      },
+      "threshold_interval": [
+        54095735247739205566179396650828746407885724082612082595175,
+        54095735247739205566179396650828746407885724106614444308096
+      ]
+    },
+    {
+      "accepted": {
+        "committed": {
+          "accepted": true,
+          "all_supplied_bounds_verified": true,
+          "binary_sha256": "f17fed2e69a98c952d1ad5e72de03c08b2ceb07970c49fc0db1b35396fe3e605",
+          "certificate_sha256": "1f64d40557604a83565d1b995a181cd8636ea75ebc42eb86e6e94b65c70e5c5e",
+          "checker_sha256": "b6c7320db2f7cfebf27fe33aa38ffdd45ff719870e3d23e15f845b6e8026eb2e",
+          "complete_partition": true,
+          "counts": {
+            "bound": 152,
+            "corner": 2,
+            "splits": 153
+          },
+          "format": "padua-native-independent-check-v1",
+          "kernel_sha256": "b0c871e7711219edfe3ce01480d8d1de3503a20d9b59f82b63a00eff248bc6e0",
+          "n": 24,
+          "receipt_sha256": "3fe6c177b5d0ab2623269ba9a2bf42c131e8902edd41148bafec73de70f90876",
+          "seconds": 59.828149259999975
+        },
+        "regenerated": {
+          "accepted": true,
+          "all_supplied_bounds_verified": true,
+          "binary_sha256": "f17fed2e69a98c952d1ad5e72de03c08b2ceb07970c49fc0db1b35396fe3e605",
+          "certificate_sha256": "21b7eee9bfd3fbd8ea58b83b93b0943b4e66a024a1be47c6afa6b3af352544c6",
+          "checker_sha256": "b6c7320db2f7cfebf27fe33aa38ffdd45ff719870e3d23e15f845b6e8026eb2e",
+          "complete_partition": true,
+          "counts": {
+            "bound": 152,
+            "corner": 2,
+            "splits": 153
+          },
+          "format": "padua-native-independent-check-v1",
+          "kernel_sha256": "b0c871e7711219edfe3ce01480d8d1de3503a20d9b59f82b63a00eff248bc6e0",
+          "n": 24,
+          "receipt_sha256": "f08652361f0f3aeb0589a87e722aed5a0b7ca6423064b57517f24c0025ae8ce8",
+          "seconds": 60.974705400000005
+        }
+      },
+      "committed_certificate_sha256": "1f64d40557604a83565d1b995a181cd8636ea75ebc42eb86e6e94b65c70e5c5e",
+      "complete": true,
+      "frontier_and_bounds_equal": true,
+      "leaves": 154,
+      "mathematical_fields_equal": true,
+      "mathematical_sha256": "c352f9a2c9516aae04e1a956b5d4216a7c83273bcc714a20c212d387a2e9039b",
+      "n": 24,
+      "previous_producer_math_hash_matches": true,
+      "previous_receipt_certificate_hash_matches": true,
+      "producer_binary_sha256": "5d288fa3af75641e74b6ead67ab28b65eee6f7d144bf134c981eeebb4241e312",
+      "regenerated_certificate_sha256": "21b7eee9bfd3fbd8ea58b83b93b0943b4e66a024a1be47c6afa6b3af352544c6",
+      "regenerated_input_sha256": "554b93326f26939c173a0d12431d8cbaab8b6384f9845d70cd31796dbdb455c6",
+      "statistics": {
+        "bound": 152,
+        "corner": 2,
+        "maximum_depth": 10,
+        "splits": 153,
+        "visited": 307
+      },
+      "threshold_interval": [
+        61970765571072749655247652247848632273766466586499774586382,
+        61970765571072749655247652247848632273772437818283802469882
+      ]
+    }
+  ],
+  "source_sha256": {
+    "topics/padua-argmax-alln-20261101/code/part3/finite_bernstein.py": "a3133c6c22a365380f6c2ab14f6d31f60153d0df902b325cfcfbeeccc1bed74f",
+    "topics/padua-argmax-alln-20261101/code/part3/finite_bernstein_check.py": "687eb644a314e2488bfed99deb3a8519b353235282a670ceacdb4fb36ef66988",
+    "topics/padua-argmax-alln-20261101/code/part3/finite_bernstein_run.py": "d03b0830b4e23261ee82ea5265b3f5123956a083b34418e6124ea9e4bbb352ac",
+    "topics/padua-argmax-alln-20261101/code/part3/finite_general.py": "b20b7f88ddfc0bbc92e68096063ef626664028c2a379c34d16dc9f84e17aa74a",
+    "topics/padua-argmax-alln-20261101/code/part3/finite_general_check.py": "d2edd6bc5c1ef1193ad44a8fb5decd859e92d960717e1a696743e43c77f337cb",
+    "topics/padua-argmax-alln-20261101/code/part3/finite_general_controls.py": "81022c0a1477454f177e99665fe0b720f5bacb35c2fd1a826fd591eccf77e884",
+    "topics/padua-argmax-alln-20261101/code/part3/finite_general_run.py": "fe1647086b2db5c47d75e24d386cc6456782bb6ea36bc25acd39b75bd4752511",
+    "topics/padua-argmax-alln-20261101/code/part3/finite_n2_exact.py": "8c74170cadee19cfd805734c13182e47734958d7495a8a0109c582631fc7cab0",
+    "topics/padua-argmax-effective-2-20261105/code/replay.py": "040050e76b6a39e7a03f35d28eee15a6607061a28aa0b63b0db1bf8a54579d3c",
+    "topics/padua-argmax-effective-20261103/code/native_checker/check.py": "b6c7320db2f7cfebf27fe33aa38ffdd45ff719870e3d23e15f845b6e8026eb2e",
+    "topics/padua-argmax-effective-20261103/code/native_checker/kernel.cpp": "b0c871e7711219edfe3ce01480d8d1de3503a20d9b59f82b63a00eff248bc6e0",
+    "topics/padua-argmax-effective-20261103/code/native_producer/producer.c": "ae3002a995c199660ad8c31dd2c7577a8416208ab8b3868c0795ebe728ab72ff",
+    "topics/padua-argmax-effective-20261103/code/native_producer/receipt.py": "a29abf7f619fab36872987bcc278785b667cc15db3de5f5d0e44fdfa4bae8595",
+    "topics/padua-argmax-effective-20261103/code/native_producer/run.py": "718cf9fc39653766c86fe862398a4670d4426215a994f2cb9063d482554fa934",
+    "topics/padua-argmax-effective-20261103/code/native_producer/time_native.py": "04f10af81cd6037c390a6dc3123cff86771a3938949ffc3e417f80dcf2abbc5f",
+    "topics/padua-argmax-effective-20261103/code/native_producer/time_reference.py": "8ac0cf97fe579e6c0f43bf241f95f50b11cc4bc231e1625fa763847e4c8eb5f3",
+    "topics/padua-argmax-effective-20261103/code/native_producer/validate.py": "5cfd0b2217f7b21f0a406148bb0fd7362c9fff02d7eb3782f5b6bfb86efae411"
+  },
+  "status": "MEASURED independent bounded replay",
+  "utc": "2026-11-05T14:08:02.082167+00:00",
+  "versions": {
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
+    "g++": "g++ (Debian 14.2.0-19) 14.2.0",
+    "gcc": "gcc (Debian 14.2.0-19) 14.2.0",
+    "gmp": "6.3.0",
+    "gmpxx": "6.3.0",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  }
+}
