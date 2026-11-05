@@ -37,3 +37,22 @@
   conventions and the distinction between sufficient and maximal N4 radii.
 - Assigned predecessor replay to a Sol medium worker; direction workers wait
   for N0. No scientific claim or novelty content is added by this setup.
+
+## 2026-11-05 — N0 PASS and parallel launch
+
+- [N0 replay](n0-replay.md), Sol medium: six SH degree/rule cases, 88 symbolic
+  identities and all four requested degree-12 endpoints match exactly. All 44
+  native degree-2–12 prefix rows also match. Actual native wall seconds:
+  triangle BJ/mirror 3.54/1.66; rotated BJ/mirror 87.21/96.23.
+- Receipt-only missing legacy `pivot_ties` handling was corrected; unchanged
+  completed native outputs were then verified without rerunning the native
+  cases. No mathematical mismatch. Full provenance remains in N0's record.
+- Opened [draft PR #30](https://github.com/aacchhee/padua_research/pull/30),
+  audit pending, no final-ID reservation and no shared registry change.
+- After N0 passed, dispatched P1–P5 to distinct Sol xhigh mathematics workers
+  and P6 to Sol medium, disjoint ownership as in plan. P4 owns the common
+  affine-product definition; each direction owns its full prospective novelty
+  gate and family admissions. No new family scan is authorized before N1.
+- Clarification for P1: coordinate-swap symmetry alone does not identify BJ
+  and mirror capacities while keeping the within-degree Gram–Schmidt order
+  fixed. Any equality or separation needs a derivation in the actual model.
