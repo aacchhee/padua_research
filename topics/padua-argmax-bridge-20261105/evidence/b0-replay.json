@@ -1,0 +1,295 @@
+{
+  "b0_verdict": "PASS",
+  "checker_binary_sha256": "f17fed2e69a98c952d1ad5e72de03c08b2ceb07970c49fc0db1b35396fe3e605",
+  "commands": [
+    {
+      "command": [
+        "g++",
+        "-O3",
+        "-std=c++17",
+        "/workspace/padua_research/topics/padua-argmax-effective-20261103/code/native_checker/kernel.cpp",
+        "-lgmpxx",
+        "-lgmp",
+        "-o",
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/b0/replay-20261105/checker"
+      ],
+      "name": "build-checker",
+      "resumed_native_from_prior_execution": true,
+      "returncode": 0,
+      "timing": "not retained after preflight failure; checker own seconds retained in acceptance receipts"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/padua_research/topics/padua-argmax-effective-20261103/code/native_producer/run.py",
+        "--n",
+        "24",
+        "--output",
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/b0/replay-20261105/n24.json.gz",
+        "--work",
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/b0/replay-20261105/build-n24"
+      ],
+      "name": "produce-n24",
+      "resumed_native_from_prior_execution": true,
+      "returncode": 0,
+      "timing": "not retained after preflight failure; checker own seconds retained in acceptance receipts"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/padua_research/topics/padua-argmax-effective-20261103/code/native_checker/check.py",
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/b0/replay-20261105/n24.json.gz",
+        "--binary",
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/b0/replay-20261105/checker",
+        "--output",
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/b0/replay-20261105/n24-regenerated-check.json"
+      ],
+      "name": "check-n24-regenerated",
+      "resumed_native_from_prior_execution": true,
+      "returncode": 0,
+      "timing": "not retained after preflight failure; checker own seconds retained in acceptance receipts"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/padua_research/topics/padua-argmax-effective-20261103/code/native_checker/check.py",
+        "/workspace/padua_research/topics/padua-argmax-effective-20261103/evidence/n24.json.gz",
+        "--binary",
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/b0/replay-20261105/checker",
+        "--output",
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/b0/replay-20261105/n24-committed-check.json"
+      ],
+      "name": "check-n24-committed",
+      "resumed_native_from_prior_execution": true,
+      "returncode": 0,
+      "timing": "not retained after preflight failure; checker own seconds retained in acceptance receipts"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/b0/replay-20261105/pilot_n32.py"
+      ],
+      "name": "pilot-n32",
+      "returncode": 0,
+      "system_seconds": 0.094481,
+      "user_seconds": 2.690271,
+      "wall_seconds": 2.8224495950000232
+    }
+  ],
+  "excluded_comparison_fields": [
+    "producer_provenance",
+    "search_seconds",
+    "setup_seconds",
+    "total_seconds"
+  ],
+  "format": "padua-bridge-b0-replay-v1",
+  "identity": "Codex independent replay subagent; requested gpt-6.1-sol medium; runtime model metadata unavailable",
+  "input_head": "274630887938c573a041cacb306d59c6c0cb2e18",
+  "limitations": [
+    "Only native n=24 and floating pilot n=32; no new scientific claim.",
+    "No fresh corruption-control or reference-Python replay; uses frozen independent C++ checker.",
+    "Bulk outputs local and pending archival; no historical environment inferred from current versions."
+  ],
+  "pilot": {
+    "adapted_driver_sha256": "81fb9097f568f6763d07ca61b5c28febd925f8c6bce5b2d71a7e0ce804dbbe83",
+    "comparison_scope": "All committed n32 degree fields except CPU/wall timing; validation fields equal. Committed frontier bulk is not available, so frontier count/width fields compared; new ordered frontier retained locally.",
+    "deterministic_fields_equal": true,
+    "ignored_fields": [
+      "cpu_seconds",
+      "wall_seconds"
+    ],
+    "mathematical_input_pins": [
+      {
+        "current_sha256": "05ee5522c80b00ffd76f844042d5515dfba6a19f0c86183fad0b8f792b3835cf",
+        "historical_sha256": "624d65e861c0f2d0afbcae7cd867d247d68bce54ef9b2d372292640a6c50a1aa",
+        "path": "topics/padua-argmax-effective-2-20261105/attempts/H1.md"
+      },
+      {
+        "current_sha256": "378548a0635206c8e61111c8ddb24b51f4b7ef1bf3cb16640da16dcf94a9e718",
+        "historical_sha256": "130820b34725a58e3dfd78602917d4eb77eb45d9476cae62532aa2579c42cbe4",
+        "path": "topics/padua-argmax-effective-2-20261105/theory/phase-structure.md"
+      },
+      {
+        "current_sha256": "243077d9af371f8b19c1e28b9872e44900d73daafe4d509a0d6a5a3815403d97",
+        "historical_sha256": "a56fedfb1897c7bdbd1d761d7016e2bd0a016ccc7264440d05aa35a0d5d60a0d",
+        "path": "topics/padua-argmax-effective-2-20261105/theory/defect-radius-extension.md"
+      },
+      {
+        "current_sha256": "fc358b11db799b272a89f8910797ffdf2fb03309161ae2cdfc5a4dfb24aeb045",
+        "historical_sha256": "280cfe73bc4ca82485a5f8df58ebbb864fd471a91403ac1b7849cdb4065bb5ad",
+        "path": "topics/padua-argmax-effective-2-20261105/theory/corner-n2-local-radius.md"
+      }
+    ],
+    "raw": [
+      {
+        "bytes": 457873,
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/pilot/box-trace.jsonl",
+        "sha256": "4d318801d1694e832ac7ec14872ff43cb67a072bc395fe6db1b85ca4109c98be"
+      },
+      {
+        "bytes": 74279,
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/pilot/box-frontiers.json",
+        "sha256": "7e3c9b50d9eed480ed50341a72630e6c34c170993b321e3292844ce7f2cb4f80"
+      },
+      {
+        "bytes": 69331,
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/pilot/box-validation.json",
+        "sha256": "14e6f43a4595239c6cdd96b73065f107c5a32f14f4a5feb9c36ed36049593dc9"
+      }
+    ],
+    "receipt_sha256": "7cc2ba079954f83fab45fba01bd9917b899f9dc0db3f9c45f7a3fd5ab0767950",
+    "result": {
+      "Lambda_corner": 10.99359454110044,
+      "complete_float_cover": false,
+      "counts": {
+        "corner-orbit-plus-defect": 145,
+        "far": 374,
+        "outside": 32,
+        "split": 1449
+      },
+      "cpu_seconds": 2.243470402,
+      "deepest_bisections": 11,
+      "eps": 1.199359454110044e-09,
+      "frontier_maxwidth_max": 0.09817477042468103,
+      "frontier_maxwidth_min": 0.04908738521234046,
+      "minimum_visited_maxwidth": 0.09817477042468103,
+      "n": 32,
+      "profile_boxes": 197,
+      "stop_reason": "box-cap",
+      "unresolved_frontier": 902,
+      "visited": 2000,
+      "wall_seconds": 2.243505642999992
+    },
+    "source_pins_verified": true,
+    "validation": {
+      "accepted": true,
+      "diagnostic_tolerance": "1e-10*(1+abs(reference))",
+      "max_violation": 1.1368683772161603e-13,
+      "points": 412
+    }
+  },
+  "process_group_wall_cap_seconds": 900,
+  "replay_history": {
+    "diff_path": "local-output/argmax-bridge-20261105/b0/frozen-7d394fd/current-docs.diff",
+    "diff_sha256": "0bd8b2111a0d04836bb35592aece65b19f41ccc363f21f9665d602d06c16948a",
+    "explanation": "Four executable pilot sources remain byte-identical to original receipt. Four mathematical prose inputs changed in audited record response and registration: attribution/review/notation/proof explanation/test-scope/limitations; original Statements, displayed formulas and constants unchanged. Frozen original files at scientific source commit match all four receipt pins exactly; those pins were enforced on resume. No scientific mismatch remains.",
+    "historical_source_commit": "7d394fd9c45495a32ff91961a5d91942aa59e250",
+    "initial_command": "PYTHONDONTWRITEBYTECODE=1 python topics/padua-argmax-bridge-20261105/code/replay_b0.py --work local-output/argmax-bridge-20261105/b0/replay-20261105 --summary topics/padua-argmax-bridge-20261105/evidence/b0-replay.json",
+    "initial_outcome": "Native producer plus both independent checker calls completed; pilot preflight stopped on current historical prose-input pin mismatch, before any pilot execution.",
+    "metadata_note": "Verdict and replay-history explanation appended after successful resumed command; raw driver source hash retained unchanged.",
+    "resolution_sources": [
+      "response-01.md",
+      "response-check-01.md",
+      "evidence/response-impact.json",
+      "preparation/final-id-map.json"
+    ],
+    "resume_options": [
+      "--reuse-native",
+      "--frozen-inputs",
+      "local-output/argmax-bridge-20261105/b0/frozen-7d394fd"
+    ]
+  },
+  "rows": [
+    {
+      "accepted": {
+        "committed": {
+          "accepted": true,
+          "all_supplied_bounds_verified": true,
+          "binary_sha256": "f17fed2e69a98c952d1ad5e72de03c08b2ceb07970c49fc0db1b35396fe3e605",
+          "certificate_sha256": "1f64d40557604a83565d1b995a181cd8636ea75ebc42eb86e6e94b65c70e5c5e",
+          "checker_sha256": "b6c7320db2f7cfebf27fe33aa38ffdd45ff719870e3d23e15f845b6e8026eb2e",
+          "complete_partition": true,
+          "counts": {
+            "bound": 152,
+            "corner": 2,
+            "splits": 153
+          },
+          "format": "padua-native-independent-check-v1",
+          "kernel_sha256": "b0c871e7711219edfe3ce01480d8d1de3503a20d9b59f82b63a00eff248bc6e0",
+          "n": 24,
+          "receipt_sha256": "e6361ed919ff517461a385ee18bbc2e2b553d1358dfb41075cb237f978ac137e",
+          "seconds": 60.57378222900002
+        },
+        "regenerated": {
+          "accepted": true,
+          "all_supplied_bounds_verified": true,
+          "binary_sha256": "f17fed2e69a98c952d1ad5e72de03c08b2ceb07970c49fc0db1b35396fe3e605",
+          "certificate_sha256": "769829898cd2a101a91252da072095858fbc68d998101f463a068b29ff08b1fb",
+          "checker_sha256": "b6c7320db2f7cfebf27fe33aa38ffdd45ff719870e3d23e15f845b6e8026eb2e",
+          "complete_partition": true,
+          "counts": {
+            "bound": 152,
+            "corner": 2,
+            "splits": 153
+          },
+          "format": "padua-native-independent-check-v1",
+          "kernel_sha256": "b0c871e7711219edfe3ce01480d8d1de3503a20d9b59f82b63a00eff248bc6e0",
+          "n": 24,
+          "receipt_sha256": "fb909d8c35de7fc6715fee9b792bacbf79fe6b285d4d524dc5ba0a959d55339c",
+          "seconds": 64.301729448
+        }
+      },
+      "committed_certificate_sha256": "1f64d40557604a83565d1b995a181cd8636ea75ebc42eb86e6e94b65c70e5c5e",
+      "complete": true,
+      "frontier_and_bounds_equal": true,
+      "leaves": 154,
+      "mathematical_fields_equal": true,
+      "mathematical_sha256": "c352f9a2c9516aae04e1a956b5d4216a7c83273bcc714a20c212d387a2e9039b",
+      "n": 24,
+      "previous_producer_math_hash_matches": true,
+      "previous_receipt_certificate_hash_matches": true,
+      "producer_binary_sha256": "5d288fa3af75641e74b6ead67ab28b65eee6f7d144bf134c981eeebb4241e312",
+      "regenerated_certificate_sha256": "769829898cd2a101a91252da072095858fbc68d998101f463a068b29ff08b1fb",
+      "regenerated_input_sha256": "554b93326f26939c173a0d12431d8cbaab8b6384f9845d70cd31796dbdb455c6",
+      "statistics": {
+        "bound": 152,
+        "corner": 2,
+        "maximum_depth": 10,
+        "splits": 153,
+        "visited": 307
+      },
+      "threshold_interval": [
+        61970765571072749655247652247848632273766466586499774586382,
+        61970765571072749655247652247848632273772437818283802469882
+      ]
+    }
+  ],
+  "source_sha256": {
+    "topics/padua-argmax-alln-20261101/code/part3/finite_bernstein.py": "a3133c6c22a365380f6c2ab14f6d31f60153d0df902b325cfcfbeeccc1bed74f",
+    "topics/padua-argmax-alln-20261101/code/part3/finite_bernstein_check.py": "687eb644a314e2488bfed99deb3a8519b353235282a670ceacdb4fb36ef66988",
+    "topics/padua-argmax-alln-20261101/code/part3/finite_bernstein_run.py": "d03b0830b4e23261ee82ea5265b3f5123956a083b34418e6124ea9e4bbb352ac",
+    "topics/padua-argmax-alln-20261101/code/part3/finite_general.py": "b20b7f88ddfc0bbc92e68096063ef626664028c2a379c34d16dc9f84e17aa74a",
+    "topics/padua-argmax-alln-20261101/code/part3/finite_general_check.py": "d2edd6bc5c1ef1193ad44a8fb5decd859e92d960717e1a696743e43c77f337cb",
+    "topics/padua-argmax-alln-20261101/code/part3/finite_general_controls.py": "81022c0a1477454f177e99665fe0b720f5bacb35c2fd1a826fd591eccf77e884",
+    "topics/padua-argmax-alln-20261101/code/part3/finite_general_run.py": "fe1647086b2db5c47d75e24d386cc6456782bb6ea36bc25acd39b75bd4752511",
+    "topics/padua-argmax-alln-20261101/code/part3/finite_n2_exact.py": "8c74170cadee19cfd805734c13182e47734958d7495a8a0109c582631fc7cab0",
+    "topics/padua-argmax-bridge-20261105/code/replay_b0.py": "387df3cf28ffae933f1e6fd8c106da1730540c63681aa86768eef0556ca763ab",
+    "topics/padua-argmax-effective-2-20261105/code/box_pilot.c": "92f111e0c58c59de32490118a30d88b26de356a93e0ec7251928059e1f2f4d0b",
+    "topics/padua-argmax-effective-2-20261105/code/box_pilot.py": "22443511c1bb98f0f76a06cef6f222d9c7a428848af063443ab179afe473d800",
+    "topics/padua-argmax-effective-2-20261105/code/phase_probe.c": "692d4afd89d3bbda3bac3daaeef7c56aa4ecdde0f9cdd32b9fefa0e296adc365",
+    "topics/padua-argmax-effective-2-20261105/code/phase_probe.py": "a2d85ffd293c50095fc6e451a6a4473b17b63bbb54123f397dcec148b08495d9",
+    "topics/padua-argmax-effective-2-20261105/evidence/box-pilot.json": "56d33b2b16cb11faa1dd39e5aa30f8ff4d07f8a2e888a5de2a54c809bdd012bc",
+    "topics/padua-argmax-effective-20261103/code/native_checker/check.py": "b6c7320db2f7cfebf27fe33aa38ffdd45ff719870e3d23e15f845b6e8026eb2e",
+    "topics/padua-argmax-effective-20261103/code/native_checker/kernel.cpp": "b0c871e7711219edfe3ce01480d8d1de3503a20d9b59f82b63a00eff248bc6e0",
+    "topics/padua-argmax-effective-20261103/code/native_producer/producer.c": "ae3002a995c199660ad8c31dd2c7577a8416208ab8b3868c0795ebe728ab72ff",
+    "topics/padua-argmax-effective-20261103/code/native_producer/receipt.py": "a29abf7f619fab36872987bcc278785b667cc15db3de5f5d0e44fdfa4bae8595",
+    "topics/padua-argmax-effective-20261103/code/native_producer/run.py": "718cf9fc39653766c86fe862398a4670d4426215a994f2cb9063d482554fa934",
+    "topics/padua-argmax-effective-20261103/code/native_producer/time_native.py": "04f10af81cd6037c390a6dc3123cff86771a3938949ffc3e417f80dcf2abbc5f",
+    "topics/padua-argmax-effective-20261103/code/native_producer/time_reference.py": "8ac0cf97fe579e6c0f43bf241f95f50b11cc4bc231e1625fa763847e4c8eb5f3",
+    "topics/padua-argmax-effective-20261103/code/native_producer/validate.py": "5cfd0b2217f7b21f0a406148bb0fd7362c9fff02d7eb3782f5b6bfb86efae411",
+    "topics/padua-argmax-effective-20261103/evidence/n24.json.gz": "1f64d40557604a83565d1b995a181cd8636ea75ebc42eb86e6e94b65c70e5c5e",
+    "topics/padua-argmax-effective-20261103/evidence/native-checker-summary.json": "caeaf733c68fd0cce5ac1e8f8125f78ed4c1149c595f937a3107a67fc8262997",
+    "topics/padua-argmax-effective-20261103/evidence/native-producer-summary.json": "71de0b159c6e8bc64ef473a87acacfcb17e271121377b3decd93641394529ab9"
+  },
+  "status": "MEASURED independent bounded replay",
+  "utc": "2026-11-05T20:36:35.077578+00:00",
+  "versions": {
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
+    "g++": "g++ (Debian 14.2.0-19) 14.2.0",
+    "gcc": "gcc (Debian 14.2.0-19) 14.2.0",
+    "gmp": "6.3.0",
+    "gmpxx": "6.3.0",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  }
+}

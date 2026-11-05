@@ -63,3 +63,18 @@
 - Fetched current topic and main. Merged main `b4d292eea5eed373002506d5e16a3761bd7ae10e` into the published topic lineage without conflicts. Original base remains `9322fba`. PR21 is now merged; literature reads use current main records.
 - Shell network requires the execution tool's additional network permission; ordinary Git initially failed to connect to the proxy. The authorized network-enabled fetch succeeded. No credential values read or printed.
 - Written pre-run plan: [plan.md](plan.md). B0 fresh replay is first; no new mathematical claim or final-ID range.
+
+## 2026-11-05 — permanent reservation and early draft
+
+- Complete pinned inventory: all 27 ledger/registry copies at current main and sole foreign open PR24, 20 distinct versions. Live all-state listing: 25 PRs, 24 closed-merged, one open, none closed-unmerged. Union reserved upper endpoints T391/N145/IDEA489/LIT597 include permanent headroom.
+- Published reservation `f708a83c705a8e8c61ce8fc9ff94e2e531b62951`: T392–431(40), N146–161(16), IDEA490–529(40), LIT598–613(16). No final IDs assigned; [ALLOCATIONS.md](ALLOCATIONS.md).
+- Opened [draft PR27](https://github.com/aacchhee/padua_research/pull/27), clearly WORK and AUDIT PENDING. Topic-only scope; shared registry/crosswalk import deferred to audited preparation.
+- Independent B0 worker, B1 preparation worker and novelty-input scanner use requested Sol medium. No new mechanism has been developed. B1's ambiguous 'true maximum' wording is operationally refined before execution in [gates.md](gates.md), retaining continuous extrema as unresolved.
+
+## 2026-11-05 — B0 PASS and novelty-input checkpoint
+
+- Fresh Sol-medium worker regenerated n24 and submitted regenerated and committed certificates separately to the frozen C++/GMP checker. Both accepted; every mathematical field agrees: 307 visited,153 splits,152 strict bound leaves and2 corner leaves. Mathematical SHA256 `c352f9a2c9516aae04e1a956b5d4216a7c83273bcc714a20c212d387a2e9039b`.
+- Initial pilot preflight STOP: four prose-input hashes no longer matched the historical receipt. Parent fetched the exact historical scientific source `7d394fd9c45495a32ff91961a5d91942aa59e250`; all original hashes then matched. Exact diffs contain accepted audit-response/registration clarifications; executable pins are unchanged. No mismatch was ignored. The initial failed driver's transient timing journal was unavailable; the worker records that limit and preserves checker timings rather than inventing combined timings.
+- Resumed n32 pilot matches all deterministic receipt fields:2000 visits,1449 splits,32 outside,374 far,145 corner-orbit-plus-defect,frontier902,depth11,197 profile boxes. New frontier raw identity is retained; historical raw frontier identity is unavailable. Floating pilot remains incomplete and MEASURED.
+- [B0 record](independent-checks-b0.md), [receipt](evidence/b0-replay.json), [runner](code/replay_b0.py). No new degree. B1 now released.
+- [Novelty baseline](novelty-gate-baseline.md): full1015-line registry scan and all obstruction/disposition tables, mechanism searches across1470 Markdown files, full canonical shortlist with explicit linked-proof/source-reading limits. Each direction must finish its own precise gate before new development. N4 unrestricted LP equivalence and N6 curve coverage are first discriminating obligations.
