@@ -1,0 +1,84 @@
+{
+  "status": "MEASURED",
+  "rigorous_enclosures": false,
+  "command": [
+    "topics/padua-mz-cleanup-20261105/code/g1_minimum.py",
+    "--m",
+    "60",
+    "400",
+    "800",
+    "1600",
+    "--output",
+    "/tmp/mz-cleanup/replay.json",
+    "--vector-dir",
+    "/tmp/mz-cleanup/vectors"
+  ],
+  "code_sha256": "247bf4fa323abf2668fd4575b3ee8b363afa9ff75ecc1884eb41eda2a8433cb3",
+  "operator_code_sha256": "f246b7a436fa9e6133153a87fd5af887d80f6fb0ab12dc2208fbd9ade223c241",
+  "seed": 20261105,
+  "tolerance": 2e-11,
+  "ncv": 40,
+  "exploratory_scope": "m>1000 requested post hoc by orchestrator on 2026-11-05 after lower corner branch observed",
+  "results": [
+    {
+      "m": 60,
+      "n": 59,
+      "dimension": 1830,
+      "minimum": 0.18859348048909821,
+      "residual_2_float": 1.0789033893453027e-12,
+      "matvecs": 342,
+      "seconds": 0.04155772199999319,
+      "peak_rss_kib": 51376,
+      "vector": {
+        "path": "/tmp/mz-cleanup/vectors/m60-n59-min.npy",
+        "sha256": "62838be1a8a2e47d9e8dd95fe64483f6f6edcd242578bbe88e824f57c976a188",
+        "bytes": 14768
+      }
+    },
+    {
+      "m": 400,
+      "n": 399,
+      "dimension": 80200,
+      "minimum": 0.10281890623388915,
+      "residual_2_float": 7.411222702083063e-13,
+      "matvecs": 302,
+      "seconds": 5.306698464999982,
+      "peak_rss_kib": 94536,
+      "vector": {
+        "path": "/tmp/mz-cleanup/vectors/m400-n399-min.npy",
+        "sha256": "83d97d9664d578621a7b01b688a815235f84c33fe113f077c3a88712b8a631e3",
+        "bytes": 641728
+      }
+    },
+    {
+      "m": 800,
+      "n": 799,
+      "dimension": 320400,
+      "minimum": 0.04002526215157158,
+      "residual_2_float": 2.473016091030122e-14,
+      "matvecs": 162,
+      "seconds": 18.555541465000005,
+      "peak_rss_kib": 223492,
+      "vector": {
+        "path": "/tmp/mz-cleanup/vectors/m800-n799-min.npy",
+        "sha256": "7731a533ebbf57d17f2b349dd88a0a12eb911f89d1d6c3af6a9c412ee123c226",
+        "bytes": 2563328
+      }
+    },
+    {
+      "m": 1600,
+      "n": 1599,
+      "dimension": 1280800,
+      "minimum": -0.02341441659034573,
+      "residual_2_float": 1.9495891181726347e-13,
+      "matvecs": 122,
+      "seconds": 93.35719114200003,
+      "peak_rss_kib": 690416,
+      "vector": {
+        "path": "/tmp/mz-cleanup/vectors/m1600-n1599-min.npy",
+        "sha256": "a23cb0e6e241993e5458474c64f153c965e8dc5047c2f1dfe08c7bc293e0a338",
+        "bytes": 10246528
+      }
+    }
+  ]
+}

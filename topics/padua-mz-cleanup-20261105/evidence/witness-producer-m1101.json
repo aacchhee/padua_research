@@ -1,0 +1,65 @@
+{
+  "kind": "rigorous fixed-point Padua polynomial energy",
+  "m": 1101,
+  "n": 1100,
+  "bits": 56,
+  "table_precision": 2418,
+  "arithmetic": "FLINT fmpz/fmpq exact; Arb outward balls; NumPy proposal only",
+  "dependencies": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "flint": "0.9.0",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+  },
+  "command": [
+    "topics/padua-mz-cleanup-20261105/code/rigorous_witness.py",
+    "--m",
+    "1101",
+    "--vector",
+    "/tmp/mz-cleanup/vectors/m1101-n1100-min.npy",
+    "--scratch",
+    "/tmp/mz-cleanup/cert-m1101",
+    "--output",
+    "/tmp/mz-cleanup/cert-m1101.json"
+  ],
+  "code_sha256": "11f7cabcfb3c431a26224eb0d8df49db5d7de65c4685f979a9037d835a1cd498",
+  "definitions_sha256": "4ac0e391859a14e4d6f752f1244df0701e99d9b3d8ab8570bd632520f517c7db",
+  "witness": {
+    "path": "/tmp/mz-cleanup/cert-m1101/witness.json.gz",
+    "sha256": "22913a3271c0cd826ff062a1f880c3539ef937b0141820dab381b53181662813",
+    "bytes": 4196078,
+    "source_vector_sha256": "a407bd0cc499a2a86b892cf5d834a2d6217c4d97b91a4205a7f0ae309572592a"
+  },
+  "exact_norm": {
+    "path": "/tmp/mz-cleanup/cert-m1101/exact-norm.txt",
+    "sha256": "f651dff771fd67b5b3a9afb89e8f8c01c9b7a842a93cbe3b7658b04e69270f14",
+    "bytes": 2904,
+    "sign": "positive",
+    "numerator_bits": 4819,
+    "denominator_bits": 4819,
+    "enclosure": "[1.0000000000000011319899305395503915644 +/- 4.75e-38]",
+    "rational_value_sha256": "ddeb852b047fca3bd96f74e123f3cec9d55fc2eae40b0a5f8a1d3fa55b7763bd"
+  },
+  "weight_sum_enclosure": "[4.000000000000 +/- 5.28e-13]",
+  "energy_enclosure": "[-0.0350668 +/- 4.18e-8]",
+  "rayleigh_enclosure": "[-0.0350668 +/- 4.18e-8]",
+  "sign": "negative",
+  "absolute_energy_enclosure": "[0.035201002370963964362959615794334041256 +/- 4.58e-40]",
+  "reference_energy_enclosure": "[13954.708455876112351685509878827626679 +/- 2.12e-34]",
+  "coefficient_l1_enclosure": "[153085.35097743242864282153803401342884 +/- 1.72e-33]",
+  "kernel_l1_bound": "[15.985419749083142877644585682895631051 +/- 3.08e-37]",
+  "polynomial_pointwise_error_bound": "[4.2489720346992174067353316898825669510e-12 +/- 6.49e-50]",
+  "kernel_pointwise_error_bound": "[5.2799679006621392193692664580327396838e-13 +/- 4.41e-51]",
+  "energy_error_bound": "[7.3744158785418607799347859401560993855e-9 +/- 8.57e-47]",
+  "relative_width_upper": "[4.2059205037327650974889490168999758541e-7 +/- 7.54e-45]",
+  "seconds": 40.290186076000055,
+  "phase_seconds": {
+    "proposal_and_exact_norm": 2.970713756000009,
+    "legendre_tables": 13.38326481699994,
+    "integer_polynomial_tensor": 4.853928913999994,
+    "certified_weight_tensor": 17.359232963000068,
+    "exact_contraction_and_enclosure": 1.67426771800001
+  },
+  "peak_rss_kib": 410356,
+  "status": "rigorous producer sign accepted; independent check required"
+}

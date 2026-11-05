@@ -1,43 +1,48 @@
 # Current frontier
 
-## Signed Padua MZ — accepted frontier, 2026-11-05
+## Signed Padua MZ — accepted frontier and cleanup
 
-[Report](../topics/padua-mz-2d-frontier-20261105/report.md),
-[results](../results/padua-mz-2d-frontier-20261105.md): PD-N105/106 prove that
-signed minimum/maximum eigenvalues tend to minus/plus infinity along even m;
-PD-N107 extends this to every fixed 1/2<theta<1 at n=floor(theta*m).
-For 0<=theta<=1/2, exactness gives Gram identity and eta=0.
-PD-T295 supplies the fixed-node weight asymptotics. PD-T297 proves
-2<=||H_(m,n)||_(C→L2)<=28.3763348311…<30 for every m>=2 and 0<=n<m,
-resolving PD-T114 at its unchanged endpoint target. The positive-reference
-PD-T296 diamond theorem is separate and supplies no signed transfer.
+The accepted [PR23 report](../topics/padua-mz-2d-frontier-20261105/report.md)
+and [results](../results/padua-mz-2d-frontier-20261105.md) prove opposite
+signed spectral divergence along even m (PD-N105/106), and its extension to
+every fixed 1/2<theta<1 (PD-N107). Exactness gives Gram identity for
+0<=theta<=1/2. PD-T295 supplies even-m fixed-node logarithmic weights.
+PD-T297 proves 2<=||H_(m,n)||_(C→L2)<=28.3763348311…<30 for every
+m>=2,0<=n<m, resolving PD-T114. PD-T296 is a separate positive-reference
+diamond theorem and never a signed transfer.
 
-This dated statement supersedes only the signed-Padua positive OPEN clauses
-in the historical MZ/PR14 sections below. AC retains Status OPEN for
-PD-T028/110/116 with binding **REJECTED: refuted** dispositions via
-PD-N105/106/107; those historical positive assertions are neither unresolved
-conjectures nor usable dependencies. The genuine 1-D sharp upper-limit/gap
-target PD-T027 remains OPEN; PD-N104 and PD-T294 do not settle it.
+AC retains registry Status OPEN for PD-T028/110/116 with binding
+**REJECTED: refuted** dispositions via PD-N105/106/107. Their historical
+positive statements are neither unresolved conjectures nor usable dependencies.
+PD-T020 and the genuine one-dimensional PD-T027 remain OPEN; the scoped
+PD-N104 intermediary obstruction and PD-T294 do not resolve PD-T027.
 
-PD-T298/299 prove the new finite m60/80 cases. Independent exact acceptance is
-exactly m10/20/30/40/60/80; producer coverage 2..60 plus80 is not a gap-free
-independently certified 2..80 range. PD-T300 retains only finite MEASURED
-observations: m100 stopped without acceptance and the m1600 negative float hit
-is uncertified. The analytic carriers prove existence only, give no effective
-finite onset, and do not explain that float hit. Odd-m classification and sharp
-extremal growth remain open. G2 is INCONCLUSIVE, the G4 original screen is
-INCOMPLETE through239, and G5 was NOT RUN.
+PD-T298/299 certify m60/80; independent inherited coverage is exactly
+m10/20/30/40/60/80, not a gap-free independently certified 2..80 range.
+PD-T300 is finite MEASURED evidence only. Its original m1600 negative hit
+was uncertified in PR23; original G2 is INCONCLUSIVE, G4 is INCOMPLETE
+through239, and G5 was NOT RUN. Those historical scopes remain unchanged.
 
-[Claude audit-01](../topics/padua-mz-2d-frontier-20261105/audit-01.md) accepted
-the mathematics and statuses; [response-01](../topics/padua-mz-2d-frontier-20261105/response-01.md)
-disposes of the editorial findings. Shared registration and preparation checks are complete for
-PR23; it is prepared for AC’s review/merge decision, without approving another draft PR. Detailed preparation stage and checks
-remain in the [topic log](../topics/padua-mz-2d-frontier-20261105/LOG.md), rather
-than becoming a continuing research task. After merge, the scoped results and
-remaining mathematical questions above are the frontier. External cold-storage
-delivery remains pending and nonblocking: no accepted claim requires retained
-bulk, since the checker regenerates exact pencils. No manuscript, submission or
-historical-priority claim is added. Only AC merges.
+The separate [cleanup report](../topics/padua-mz-cleanup-20261105/report.md)
+and [results](../results/padua-mz-cleanup-20261105.md) record subsequent finite
+witness, parity and growth-constant work at their individual statuses, plus
+[manuscript integration](../topics/padua-mz-cleanup-20261105/manuscript-changes.md).
+PD-T376 certifies finite negative trial directions at m=1101,1240,1600;
+PD-T377 supplies the odd-m weight limit and PD-T378 the all-integer
+spectral divergence above half-exactness. PD-T379 gives exact continuous
+carrier norms and explicit normalized one-sided bounds. PD-T380 keeps
+the 23 scans/fits MEASURED; PD-T381 retains the original sharp-growth
+target OPEN, with PD-T379 as separate support, not a proved conjunct.
+
+Claude [cleanup audit-01](../topics/padua-mz-cleanup-20261105/audit-01.md)
+accepts the new mathematics at its stated scope; the response resolves
+its record findings. Registration/verification details live in the
+[preparation record](../topics/padua-mz-cleanup-20261105/preparation/record.md),
+rather than a continuing initialization task. No finite positivity range,
+first crossing theorem, sharp spectral constant or novelty clearance follows
+from a float scan. The [manuscript README](../tracks/mz-constants/paper/README.md)
+is the current scope/build record. Cold-storage delivery remains pending.
+Only AC merges.
 
 Updated: 2026-11-01. Owner: AC. Current integration: AC confirmed PR #10 next (2026-11-01); all other drafts will adjust after PR #10 merges. The original [charter](../topics/charter-unisolvence-20261031/LOG.md) and its historical pre-merge notes are preserved below.
 
