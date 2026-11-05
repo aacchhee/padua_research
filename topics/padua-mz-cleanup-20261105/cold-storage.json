@@ -1,7 +1,7 @@
 {
   "format": "padua-cold-storage-v1",
   "slug": "padua-mz-cleanup-20261105",
-  "source_commit": "ad503cb0603fc017444b0aa732240981eefa4d24",
+  "source_commit": "39479ffca76052ea79f90c2e5e0c4bfc80bf1584",
   "entries": [],
   "total_bytes": 0,
   "destination": "Downloads\\padua\\cold_storage\\padua-mz-cleanup-20261105\\",
@@ -16,92 +16,7 @@
       "files": 13,
       "bytes": 1551583,
       "kind": "Git-backed historical payload",
-      "artifact_identity_columns": [
-        "path",
-        "bytes",
-        "sha256",
-        "git_blob_or_null"
-      ],
-      "artifacts": [
-        [
-          "topics/padua-mz-2d-20261101/audit/claude-audit-01/claude-mz2d-spectra.json",
-          31818,
-          "de3a6dc6726268ac5c0e61f46c79435e561be1514f76c60f6e79f17120f7bbbd",
-          "64ea8c7ec2a763bddbc372f0eaf9dfeed4493491"
-        ],
-        [
-          "topics/padua-mz-2d-20261101/audit/claude-audit-01/final-validation.claude-rerun.json",
-          18087,
-          "f8cc5398347a4e0961e39e8c1d952071ee42addd0d5b76fc6cfb1435b6fc14e9",
-          "ba3373a45764b8c5e7708aaa0db87ac669a4ef7c"
-        ],
-        [
-          "topics/padua-mz-2d-20261101/evidence/d0-spectra.json",
-          837344,
-          "3c5c702ed964b240a9e96bb0be55a2a3e86c2c71eb5e49706b7c58680879e4f5",
-          "2530454a05f60c2fb05e031d13a3efc6e144ba68"
-        ],
-        [
-          "topics/padua-mz-2d-20261101/evidence/exact-spectra.json",
-          31822,
-          "5456917afe8fea69b0a776270ef3ae79fdc33deb02d27f89648fc342f78b93de",
-          "42d88e6a18a03da4ee71c10024337a9a44871fce"
-        ],
-        [
-          "topics/padua-mz-2d-20261101/evidence/independent-exact-spectra.json",
-          31834,
-          "18c8623442664aa119d3581b701d200315d454071d6b8f6c89cbaf540fe34d9c",
-          "1b7c73f3267e87f7a05230fd10cf6ec3f406feba"
-        ],
-        [
-          "topics/padua-mz-2d-20261101/protocol/final-assignment-checks.json",
-          38294,
-          "09a994c8e6e5e630c44febc2bc10719afb3f3e716fa9d95fb3d8b6c904dc4180",
-          "2860d12f2cfffe8244e01b4d570d87907393a60e"
-        ],
-        [
-          "topics/padua-mz-2d-20261101/protocol/final-assignment-dry-run.json",
-          38193,
-          "a47fcdf45acc72ccd4e2ead40eeb1097a6cf154ca337a0f0543b6fa84a972732",
-          "a84f9beae76c12c6227b1727aa6c79d904862a3c"
-        ],
-        [
-          "topics/padua-mz-2d-20261101/protocol/final-id-map-draft.json",
-          26384,
-          "d48735e66834f3c845215af83c63084236e03024011769515969c325fff409b7",
-          "51ff243f93ce5bbc41d0a018743ec8b20adb965b"
-        ],
-        [
-          "topics/padua-mz-2d-20261101/protocol/final-input-manifest.json",
-          56380,
-          "647cf4c7bbe27691ad189ecf3373f98c2a71698070845bc601d226366a3c5ee3",
-          "b8d00293c18591074357866359cd19def574d158"
-        ],
-        [
-          "topics/padua-mz-2d-20261101/protocol/final-validation.json",
-          18087,
-          "e7f2cbd5a45f709461e5b8cb5c732e075dc69cc72849d64924bd593dfb39d22a",
-          "4afaf38c9e01ca01b87e85a9d47266d844ed59d9"
-        ],
-        [
-          "topics/padua-mz-2d-20261101/protocol/response-01-20261101-reservation-recheck.json",
-          17005,
-          "f2ff2f293e2f239bb5bb00de3bab9033a4292f8b3491929bb1ef58b584d90f0e",
-          "d5830692976c00156dc339ffdb3e351694b552bc"
-        ],
-        [
-          "topics/padua-mz-2d-20261101/protocol/response-01-20261101-validation.json",
-          379753,
-          "f69a2ae7c2a17c5535a2f68defb40b0f5ba33a46d21cfcdfdc4ccd1310d0f141",
-          "ef2244dd041ba687f81ae15515dae8663d5fa267"
-        ],
-        [
-          "topics/padua-mz-2d-20261101/protocol/final-id-map.json",
-          26582,
-          "6206c254e117585b56d389d98f46c692ffe5af6df19e6b35a240e2533e688a55",
-          "8e0c2a4a60602fa2f94ef780ccdda0a7a4851710"
-        ]
-      ]
+      "identity_retrieval": "Read the SHA-pinned historical manifest at the source commit; every artifact path/size/SHA/blob remains there unchanged."
     },
     {
       "topic": "PR14 raw audit",
@@ -111,50 +26,7 @@
       "files": 6,
       "bytes": 991,
       "kind": "Git-backed historical payload",
-      "artifact_identity_columns": [
-        "path",
-        "bytes",
-        "sha256",
-        "git_blob_or_null"
-      ],
-      "artifacts": [
-        [
-          "topics/padua-mz-2d-20261101/audit/claude-audit-01/check-t110.log",
-          61,
-          "f7e14f332dc0a1061901eee7df25d5a32e0c0f22dad2c1aec530f6968ccceaa2",
-          "7cf16666ef1be09952bbcd7cd3990c9e3ad53c20"
-        ],
-        [
-          "topics/padua-mz-2d-20261101/audit/claude-audit-01/claude-audit-check.log",
-          276,
-          "eeb36c5a578bccbcc10c74096440a6866cc0bb7eb81617112cceb863bb05cc50",
-          "475c1bd2b79b45e29ac38f09b6c23bc05d5012b2"
-        ],
-        [
-          "topics/padua-mz-2d-20261101/audit/claude-audit-01/claude-audit-extra.log",
-          86,
-          "bf2f2e8b3cbe01f6fbf51b36bfb0f453928d0e09dde76990b52dba7da04abec5",
-          "5354ebb0a48deb1131c07ff943c85e9d040b59f2"
-        ],
-        [
-          "topics/padua-mz-2d-20261101/audit/claude-audit-01/claude-m40-cholesky.log",
-          378,
-          "cfd5680c7f9b00842b75b2f6a7060852e53a759607045a477cca04b59a6e3305",
-          "388da90e062231b8c679a788f8743eee8ee2e589"
-        ],
-        [
-          "topics/padua-mz-2d-20261101/audit/claude-audit-01/dev-indep.log",
-          62,
-          "ec4f39327520e619c5d419756a07b761b6eaab6f820d5c4d0ba72eb9523af80e",
-          "d693c58b6b78a78d26924a0cff670f43c5d3937b"
-        ],
-        [
-          "topics/padua-mz-2d-20261101/audit/claude-audit-01/exact-run.log",
-          128,
-          "038fbddc6bf9b098a1b42df095caf9b88afc814bf090c2843190b816cf168908",
-          "342335e5738cced5722118d8c2ffd2959958cbea"
-        ]
-      ]
+      "identity_retrieval": "Read the SHA-pinned historical manifest at the source commit; every artifact path/size/SHA/blob remains there unchanged."
     },
     {
       "topic": "PR23",
@@ -164,86 +36,7 @@
       "files": 12,
       "bytes": 10783037,
       "kind": "historical ephemeral inventory; not an archive",
-      "artifact_identity_columns": [
-        "path",
-        "bytes",
-        "sha256",
-        "git_blob_or_null"
-      ],
-      "artifacts": [
-        [
-          "/tmp/padua-g0/exact.json",
-          3965,
-          "2e6ff00636922e9d53ee3703e837a61ae49c69959cb76eeef2fd29f0795a134e",
-          null
-        ],
-        [
-          "/tmp/padua-g0/spectra.json",
-          147046,
-          "04b161a14ef3b690e15843981795c0da692ba374f3ec23aa89ed80658a3e936f",
-          null
-        ],
-        [
-          "/tmp/padua-g0/independent.json",
-          983,
-          "30bf0ef9badbf5868363977d3dc447dd4207d024a2a4475fc4c250e61c210e9f",
-          null
-        ],
-        [
-          "/tmp/g1-frontier/validation.json",
-          5092,
-          "1a7f1aa4c1a1b2d485d0f4e453f4ee4440d39333cf9336f0a3808557f541cc4e",
-          null
-        ],
-        [
-          "/tmp/g1-frontier/scaling.json",
-          11329,
-          "7d299dc81cfaa7f6bfa60e2c42300cad54fefd25719ba4b3193334bd6d45a919",
-          null
-        ],
-        [
-          "/tmp/g1-frontier/localization.json",
-          10605,
-          "9a46bc12b06eb61728e98dbff0ddd7f0ec3572ebd428630d1e1f4f9957237830",
-          null
-        ],
-        [
-          "/tmp/g1-frontier/screen.json",
-          334800,
-          "8923d6570ba6b99dca917f9ce83437c72b46806af8cb350efaf3a475da475745",
-          null
-        ],
-        [
-          "/tmp/g1-frontier/minimum-only.json",
-          2547,
-          "a0742d962cee5326872ae859c8d448852dfc1cfd8a242d938bc5164f663a6805",
-          null
-        ],
-        [
-          "/tmp/g1-frontier/carrier.json",
-          7741,
-          "5513830aa20eb5ead8b35c80f00d80cb1c360ba58b7d1426813651b047f6af02",
-          null
-        ],
-        [
-          "/tmp/g1-frontier/corner-trial.json",
-          4867,
-          "59cfc04ee1c50c496d4338d2c81a0e5a133c1a6383bef436124fdb2fe19c57ef",
-          null
-        ],
-        [
-          "/tmp/g1-frontier/fejer.json",
-          7534,
-          "849426325fb5112edea7414a2e3a5c1be23a20973fe93da89b7c0771eb92f0a2",
-          null
-        ],
-        [
-          "/tmp/g1-frontier/minimum-only-vectors/m1600-n1599-min.npy",
-          10246528,
-          "a23cb0e6e241993e5458474c64f153c965e8dc5047c2f1dfe08c7bc293e0a338",
-          null
-        ]
-      ]
+      "identity_retrieval": "Read the SHA-pinned historical manifest at the source commit; every artifact path/size/SHA/blob remains there unchanged."
     }
   ],
   "local_staging": [
@@ -312,5 +105,140 @@
     "topics/padua-mz-2d-frontier-20261105/numerical-results.md",
     "topics/padua-mz-2d-frontier-20261105/certifier-results.md"
   ],
-  "pending_current": "Root must append final C1 dyadic witness/vector and final enclosure receipt identities after producer and independent check finish. This initial C5 snapshot does not claim proof acceptance."
+  "pending_current": "Root may add completed scan/growth snapshots after this package. All five final C1 witness/norm/producer/independent artifacts are packaged. External delivery remains pending.",
+  "package": {
+    "path": "/tmp/mz-cleanup/transfer-stage/padua-mz-cleanup-20261105/c1-package-39479ff.tar.gz",
+    "bytes": 159265962,
+    "sha256": "ac6a628153746729688851baa3aa50f41dc31509d9ce4058dc221fb0550982b1",
+    "source_commit": "39479ffca76052ea79f90c2e5e0c4bfc80bf1584",
+    "payload_files": 71,
+    "payload_bytes": 164319751,
+    "inventory_path": "/tmp/mz-cleanup/transfer-stage/padua-mz-cleanup-20261105/checkpoint-39479ff/PACKAGE-INVENTORY.json",
+    "inventory_bytes": 19557,
+    "inventory_sha256": "21e49393aa139cafa87c166520fe7478ee767694ee056356ef080f53c254170c",
+    "verification": "PASS: all captured copies read back; entire finished tar.gz reopened and every member size/SHA matched inventory; no extraction or external delivery",
+    "snapshot_utc": "2026-11-05T14:22:23.886059+00:00",
+    "raw_scan_scope": "snapshot of actual files only; active scans may extend afterward",
+    "skipped_unfinished": []
+  },
+  "final_witnesses": [
+    {
+      "m": 60,
+      "n": 59,
+      "witness": {
+        "bytes": 11853,
+        "sha256": "9a1bb58cce8d8179840a024f045e8bbb32aafe9ad58d7545af4ec74278d566e9",
+        "source_vector_sha256": "62838be1a8a2e47d9e8dd95fe64483f6f6edcd242578bbe88e824f57c976a188"
+      },
+      "exact_norm": {
+        "bytes": 214,
+        "sha256": "04e78a32440f8b276d88ab812794af14a034963d3d361c772fd650efbccf66c4",
+        "sign": "positive"
+      },
+      "package_paths": [
+        "cert-m60/witness.json.gz",
+        "cert-m60/exact-norm.txt",
+        "receipts/cert-m60.json",
+        "receipts/independent-m60.json"
+      ],
+      "producer_sign": "positive",
+      "independent_sign": "positive"
+    },
+    {
+      "m": 400,
+      "n": 399,
+      "witness": {
+        "bytes": 532189,
+        "sha256": "b433ab66e1d7e971629c58b4c56839a013bf1bfb64e021ccac09b84bd1bb094d",
+        "source_vector_sha256": "83d97d9664d578621a7b01b688a815235f84c33fe113f077c3a88712b8a631e3"
+      },
+      "exact_norm": {
+        "bytes": 1082,
+        "sha256": "6dc2c74a7a45ce061467482b4187ac2950a144bc49367090409a9cc538870c2f",
+        "sign": "positive"
+      },
+      "package_paths": [
+        "cert-m400/witness.json.gz",
+        "cert-m400/exact-norm.txt",
+        "receipts/cert-m400.json",
+        "receipts/independent-m400.json"
+      ],
+      "producer_sign": "positive",
+      "independent_sign": "positive"
+    },
+    {
+      "m": 1101,
+      "n": 1100,
+      "witness": {
+        "bytes": 4196078,
+        "sha256": "22913a3271c0cd826ff062a1f880c3539ef937b0141820dab381b53181662813",
+        "source_vector_sha256": "a407bd0cc499a2a86b892cf5d834a2d6217c4d97b91a4205a7f0ae309572592a"
+      },
+      "exact_norm": {
+        "bytes": 2904,
+        "sha256": "f651dff771fd67b5b3a9afb89e8f8c01c9b7a842a93cbe3b7658b04e69270f14",
+        "sign": "positive"
+      },
+      "package_paths": [
+        "cert-m1101/witness.json.gz",
+        "cert-m1101/exact-norm.txt",
+        "receipts/cert-m1101.json",
+        "receipts/independent-m1101.json"
+      ],
+      "producer_sign": "negative",
+      "independent_sign": "negative"
+    },
+    {
+      "m": 1240,
+      "n": 1239,
+      "witness": {
+        "bytes": 5365436,
+        "sha256": "1a9faac5677ac4dde63749a6acac38d95ee88a5082445e6ba6b59cc297d35e4e",
+        "source_vector_sha256": "b8f1520220565635c4601c8cc5f0cd3e24d986aecbe559dcc25033fe19e47c7d"
+      },
+      "exact_norm": {
+        "bytes": 3298,
+        "sha256": "a9895473f6a97a3bca7a4b20144326a118f85d74157e00a32291eb11241f7daf",
+        "sign": "positive"
+      },
+      "package_paths": [
+        "cert-m1240/witness.json.gz",
+        "cert-m1240/exact-norm.txt",
+        "receipts/cert-m1240.json",
+        "receipts/independent-m1240.json"
+      ],
+      "producer_sign": "negative",
+      "independent_sign": "negative"
+    },
+    {
+      "m": 1600,
+      "n": 1599,
+      "witness": {
+        "bytes": 8692559,
+        "sha256": "16d89f2c8600364aac3962c4164f0e0875c4fa866fc61269fd6f849e8f1fdad6",
+        "source_vector_sha256": "a23cb0e6e241993e5458474c64f153c965e8dc5047c2f1dfe08c7bc293e0a338"
+      },
+      "exact_norm": {
+        "bytes": 4200,
+        "sha256": "d6b405a856e735ac4df1d9db0295fbc093af66ee620d29c52ef553d6c1d3f6fa",
+        "sign": "positive"
+      },
+      "package_paths": [
+        "cert-m1600/witness.json.gz",
+        "cert-m1600/exact-norm.txt",
+        "receipts/cert-m1600.json",
+        "receipts/independent-m1600.json"
+      ],
+      "producer_sign": "negative",
+      "independent_sign": "negative"
+    }
+  ],
+  "frozen_commands": {
+    "environment": "PYTHONPATH=<python-flint0.9.0> OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1",
+    "proposal": "python topics/padua-mz-cleanup-20261105/code/g1_minimum.py --m <grid in actual raw receipt> --output <scratch>/scan.json --vector-dir <scratch>/vectors",
+    "producer": "python topics/padua-mz-cleanup-20261105/code/rigorous_witness.py --m M --vector <scratch>/vectors/mM-nN-min.npy --scratch <scratch>/cert-mM --output <scratch>/cert-mM.json",
+    "checker": "python topics/padua-mz-cleanup-20261105/code/independent_witness.py --witness <package>/cert-mM/witness.json.gz --output <fresh>/independent-mM.json",
+    "producer_replay_without_eigensolver": "python topics/padua-mz-cleanup-20261105/code/rigorous_witness.py --m M --witness <package>/cert-mM/witness.json.gz --scratch <fresh>/cert-mM --output <fresh>/producer-mM.json",
+    "notes": "M in60,400,1101,1240,1600; N=M-1. Frozen actual commands and exact source code hashes are retained in packaged receipts. Commands shown here are parameterized recipes, not new executions."
+  }
 }
