@@ -123,7 +123,7 @@ def run_case(family, size):
     for (n, m), p in polys.items():
         if n+m >= size:
             continue
-        # h ratios fix a,c separately even when predecessor polynomials depend.
+        # h ratios fix the canonical a,c; under normality both predecessors are independent.
         a = moment(p, 0, n)/moment(polys[n-1, m], 0, n-1) if n else Q(0)
         c = moment(p, 1, m)/moment(polys[n, m-1], 1, m-1) if m else Q(0)
         sub = p[-2] if n+m else Q(0)

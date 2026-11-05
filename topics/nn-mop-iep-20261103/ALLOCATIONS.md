@@ -28,3 +28,7 @@ Maximum reserved IDs: T285, N099, IDEA375, LIT561. In particular PR21's
 LIT482–561 and all permanent unused gaps remain untouched. Recheck live
 heads before assignment/readiness. Shared crosswalk and ledger links wait for
 audited PR preparation, within handoff01's scope limit.
+
+First publication: [a0abe8b7b5af6e8c53dc8b0353934537f891f1c9](https://github.com/aacchhee/padua_research/commit/a0abe8b7b5af6e8c53dc8b0353934537f891f1c9),
+linked from [draft PR22](https://github.com/aacchhee/padua_research/pull/22).
+The reservation is unchanged; it is not assigned by this provenance update.

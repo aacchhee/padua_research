@@ -68,9 +68,9 @@ b_j(n,m) = [x^(D-1)]P_nm - [x^D]P_(alpha+e_j)
 ```
 
 The first subleading coefficient of P_00 is defined as zero. These ratios fix a
-and c separately, including low-degree sites where the two predecessor
-polynomials are linearly dependent and polynomial coefficient matching alone
-would not determine them. All divisions are exact, with a nonzero denominator
+and c in the canonical moment convention. Under normality at an interior
+index, the two predecessor polynomials are independent, including (1,1);
+there is only one predecessor on an axis. All divisions are exact, with a nonzero denominator
 required by successful execution. Missing predecessor terms are omitted on axes.
 Both full polynomial identities are checked coefficient by coefficient:
 
@@ -167,3 +167,18 @@ does not certify a general finite reduction or a computer-assisted proof.
   as completed here.
 - No floating-point experiment or C3/C4 performance comparison was run by this
   subagent. Any such experiment requires its own defined algorithms and receipt.
+
+## Supplementary review correction
+
+Astra identified an inaccurate comment about dependent predecessors. The
+comment and its explanation above were corrected; all executable code is
+unchanged. The original developer-run hash above identifies the original bytes.
+The independent rerun receipt is [independent-check.md](independent-check.md);
+it is additional evidence, not the required Claude audit.
+
+Final comment-corrected rerun (orchestrator), executed from the repository:
+`python topics/nn-mop-iep-20261103/code/exact_nn_mop.py > /tmp/nn-mop-final-exact.json`.
+Exit 0; every count above reproduced. Code SHA-256
+`8e420d166f82b3ec7730357a31dcbd684bf8694e3499f5803556a097e745cc7c`;
+output SHA-256 `92e41630aa81a6e9071c2a1a325b353a968f6b15104142206e79ccbb8e2f44f6`.
+JSON differs from the developer output only in its embedded code hash.
