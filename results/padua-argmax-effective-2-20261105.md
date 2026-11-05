@@ -5,8 +5,10 @@ Mathematical development complete at the scoped checkpoint below. Claude
 [audit-01](../topics/padua-argmax-effective-2-20261105/audit-01.md) accepts
 the mathematics at every stated scope with no status change; record findings
 (attribution of T06/T07, scope wording, dispositions) are addressed in
-[response-01](../topics/padua-argmax-effective-2-20261105/response-01.md);
-the required Claude response check is pending.
+[response-01](../topics/padua-argmax-effective-2-20261105/response-01.md),
+and Claude [response-check-01](../topics/padua-argmax-effective-2-20261105/response-check-01.md)
+accepts that response with no change to any statement, proof or status.
+Next: Codex PR preparation.
 All IDs provisional; no canonical registry changes.
 
 - **PROVED analytic T05/T06/T07:** W_n<=10^10 n^4 Lambda_c,
@@ -43,7 +45,7 @@ All IDs provisional; no canonical registry changes.
 n>32, explicit full-diamond N1 or completed bridge33<=n<N_* is supplied.
 [Report](../topics/padua-argmax-effective-2-20261105/report.md) and
 [gate verdicts](../topics/padua-argmax-effective-2-20261105/gates.md).
-Next: Claude response check of response-01, then audited PR preparation;
+Next: Codex PR preparation (response check accepted);
 practical H1/full-diamond H2 remain OPEN research. All40 original bulk files
 were reverified byte-identical in the Codex sandbox; physical archival is
 pending and no delivery or durable retention is claimed.
