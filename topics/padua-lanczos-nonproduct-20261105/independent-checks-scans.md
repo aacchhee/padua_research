@@ -410,3 +410,129 @@ recorded harness start2026-11-05 23:17:43UTC and native starts23:17:49UTC.
 Those processes were neither relaunched nor overwritten by this reviewer.
 Their completion and subsequent comparisons are recorded separately below
 when available; this paragraph itself claims no completed high-degree row.
+
+### Retained primary completion and independent disk N2 reconstruction
+
+**PASS focused recovery review.** The primary native ALT/PIVOT outputs
+completed, but the original primary receipt retained only seven cases and
+INCOMPLETE status. The new artifact-only adapter
+[primary harvest](code/p6_harvest_reflection.py), SHA-256
+`00ab0de9c7a630773f296cb5a7a1647ab9bfbfa6ca75b0f5fadb29c510922410`,
+preserves that original receipt and constructs the separate
+[recovered acceptance](evidence/p6-disk16-recovered-acceptance.json), SHA-256
+`aefa709edb828fd3157218c974b22cd09525f5909ca6d192cba858e7a0b95877`.
+The native PIVOT harness wall time was not saved; the adapter keeps it
+unknown and labels the rounded native timer separately. The original
+parent's stop cause is unknown. Artifact collection is not another native
+execution.
+
+I inspected the adapter and independently verified all60 exact full-field
+producer/checker row pairs, the seven unchanged original case records,
+both reflection guard logs, source/input/output links and all three actual
+native source hashes. BJ/mirror use the original scalar source
+`58480a866b56e22c61add95d01f90774726b5f90e32186354ef1ab8f87b10b72`;
+ALT/PIVOT use the reviewed reflection source `09d524f…`; all producers use
+`41c11190b7b15bb5acd5070ccfdb1b66a4bad3739e02d727aba4a506cee2ed6d`.
+The [focused review receipt](evidence/check-scans-continuation-recovery-review.json)
+pins the complete hashes, recovery code and accepted data. This check has
+no unresolved finding and does not replace the earlier incomplete receipt.
+
+From these completed all-rule rows I separately reconstructed the two
+squared BJ/best endpoint ratios at each degree8–16, computed rational
+half-logarithm bounds and enumerated all32 signed OLS corners in each
+window. All18 independent logarithm bounds lie inside the reported primary
+bounds; independent slope extrema lie inside both original rational-log
+paths. The unchanged N2 decision is **INCONCLUSIVE**. Decimal outward
+summaries of my independent slope enclosures are:
+
+| Window | Lower | Upper |
+|---|---:|---:|
+| 8–12 | -0.507848236139249 | 1.061047505157414 |
+| 12–16 | -0.887372978742640 | 1.162463772216736 |
+
+The exact [independent N2 receipt](evidence/check-scans-continuation-fits.json)
+is authoritative. This verifies a finite endpoint-box screen, not exact
+capacities, an asymptotic rate, or a disk-family rejection. The independent
+high ALT/PIVOT replay collection remains a separately recorded obligation.
+
+Executed continuation commands, without native launches:
+
+```sh
+python -B topics/padua-lanczos-nonproduct-20261105/code/check_scans_continuation.py --primary topics/padua-lanczos-nonproduct-20261105/evidence/p6-disk16-recovered-acceptance.json --mode recovery-review
+python -B topics/padua-lanczos-nonproduct-20261105/code/check_scans_continuation.py --primary topics/padua-lanczos-nonproduct-20261105/evidence/p6-disk16-recovered-acceptance.json --mode fits
+```
+
+### Final D36 compact validation and completed supplementary high replay
+
+**PASS D36 compact table.** The same independent compact reviewer executed
+on D36x9 after complete primary acceptance. All120 raw endpoint logarithm
+enclosures,60 nonelapsed producer/checker row pairs, eight source/output
+provenance entries and32 OLS corners per window pass. The compact intervals
+enclose both higher-precision N2 slope paths and retain **INCONCLUSIVE**.
+The [D36 compact review](evidence/check-scans-compact-D36x9.json) records26.08s
+and table SHA-256
+`6e9d31615ee5660752724018c9175a19c554c007fee71decc807dbfce829471d`.
+
+**PASS collected earlier independent ALT/PIVOT degree16 executions.** Both
+native runs started by the earlier distinct reviewer have now finished;
+each emitted15 complete degree2–16 rows, all152 source progress records,
+the complete reflection guards and its final finish marker. Their harness
+ended with only PIVOT saved in the original execution receipt, whose
+INCOMPLETE status is preserved. The new
+[continuation collection receipt](evidence/check-scans-continuation-collect.json)
+checks the completed raw files without relaunching either case and links
+the original execution receipt, binary, source, input and producer bundle.
+The native source remains the frozen `09d524f…` variant and the input remains
+SHA-256 `48977eefea1c662c3ef23c8ed17d49e3cb0310a6d53321add8c51c91866313f6`.
+
+All30 supplementary rows agree exactly with both the frozen original
+producer bundle and the completed primary checker outputs. **Every
+nonelapsed field is included**, particularly the full11628 Gram-pair count,
+parent choices, pivot ties, all squared endpoints and exact normal trace.
+The primary's all60 producer/checker row pairs were also rechecked. No
+partial row or partial source prefix was accepted.
+
+| Guard | ALT | PIVOT |
+|---|---:|---:|
+| Original nodes / representatives | 324 / 90 | 324 / 90 |
+| Size2 / size4 orbits | 18 / 72 | 18 / 72 |
+| Full basis parity scalar checks | 99144 | 99144 |
+| Candidate parent checks | 152 | 272 |
+| Candidate alpha slots | 11628 | 21488 |
+| Verified cross-parity zeros | 8748 | 16200 |
+| Original nonconstant source positions | 152 | 152 |
+| Expanded node/source/prefix snapshots | 307800 | 307800 |
+
+Each original case had a3600s cap, with at most two supplementary native
+processes. PIVOT has the saved subprocess exit0 and harness wall time
+1177.545742999s. ALT's subprocess return code and harness wall time were
+not saved; they are not invented here. Its native phase timers report
+106.769s basis,1462.76s source and22.0192s finishing, approximately1591.55s
+in total. These rounded native times establish observed progress timing,
+not a replacement for missing harness metadata or a controlled speed
+benchmark. The complete output/guard validation is the acceptance evidence.
+The parent was observed closed after native completion; the cause of its
+incomplete harvesting remains unknown.
+
+Fresh high-degree supplementary execution coverage is **ALT and PIVOT
+only**, launched by the earlier reviewer. This resumed reviewer collected
+and checked those executions; it did not launch them. BJ/mirror degree16
+are reviewed primary artifacts, not fresh high supplementary reruns.
+The separately documented earlier Hahn16/all-rule disk8 replays, formula
+reconstructions and malformed-input controls retain exactly their earlier
+coverage. No large endpoint job was repeated during this continuation.
+
+Additional commands actually executed in this continuation:
+
+```sh
+python -B topics/padua-lanczos-nonproduct-20261105/code/check_scans_compact.py --family D36x9
+python -B topics/padua-lanczos-nonproduct-20261105/code/check_scans_continuation.py --primary topics/padua-lanczos-nonproduct-20261105/evidence/p6-disk16-recovered-acceptance.json --mode collect
+```
+
+All continuation receipts are below16KiB and pin their actual checker code
+and data. Raw native outputs/logs remain under the named task-local `/tmp`
+directories; no external archive delivery is claimed. No BLOCKING or MAJOR
+finding remains within this supplementary finite implementation/evidence
+scope. The required later Claude Opus5.5 xhigh substantive audit remains
+pending; supplementary acceptance does not establish PR readiness or any
+new all-degree theorem.

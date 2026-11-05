@@ -1,7 +1,7 @@
 # Span drift on genuinely non-product families: log
 
 - Branch: `codex/padua-lanczos-nonproduct-20261105` · Base: main `be9a831` (PR #29 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: `Codex (gpt-6-astra high): Continue codex/padua-lanczos-nonproduct-20261105.` · Open handoff: [handoffs/01-work.md](handoffs/01-work.md)
+- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Continue codex/padua-lanczos-nonproduct-20261105.` · Open handoff: [handoffs/02-audit.md](handoffs/02-audit.md)
 - Reserved final-ID ranges: none. Under the PR #29 rules, reserve when first needed (normally at PR preparation).
 - Claims: P3 all-degree non-affine-product weight separation and uniform sufficient radius; P5 polynomial Padua capacities; P4 model/transfer lemmas and scoped covariance obstruction. Provisional IDs only; see [report](report.md).
 
@@ -21,7 +21,7 @@
 
 ## Runs needed
 
-- Current development remainder: finish the separately launched D36x9 supplementary replay and evidence inventory; primary disk16 acceptance and N2 are complete. Unrun algebraic bulk scans and unresolved rates are listed in the [report](report.md); they are not premises of the analytic proofs.
+- Development runs are complete. The next independent substantive audit is specified in handoff02. Unrun algebraic bulk scans and unresolved rates are listed in the [report](report.md); they are not premises of the analytic proofs. External archival delivery remains pending.
 
 ## 2026-11-05 — continuation setup — Codex, requested gpt-6-astra high
 
@@ -321,3 +321,21 @@ recorded by the final inventory.
   logarithm paths and32-corner OLS agree. No family rate follows.
 - P6 round6 closes the planned finite completion step; unrun SH/Padua bulk
   scans remain outside the analytic theorem premises.
+
+## 2026-11-05 — supplementary replay accepted; development complete
+
+- The distinct Astra high reviewer collected its earlier separately launched
+  disk16 alternating/pivot execution:30 rows match every nonelapsed field
+  against both producer and primary checker, including Gram counts, choices,
+  ties and trace. Both cases retain152 sources and all reflection guards.
+  The reviewer did not freshly rerun disk16 BJ/mirror; its actual high scope
+  and earlier low controls remain distinguished.
+- The reviewer's original collector remains INCOMPLETE after saving pivot
+  (exit0,1177.55s wall). A separate artifact-only collection verifies complete
+  alternating output; its unsaved subprocess exit/timing metadata is not
+  reconstructed. No native case was restarted. Distinct exact log/OLS and
+  compact-table validations accept all three finite N2 outcomes.
+- P1/P2/general growth targets remain OPEN, P3/P5 analytical results retain
+  their explicit models/quantifiers, and no final IDs/shared registries were
+  changed. The single substantive Claude Opus5.5 xhigh audit is next;
+  supplementary acceptance does not replace it or waive canonical issues.

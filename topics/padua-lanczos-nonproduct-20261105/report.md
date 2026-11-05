@@ -171,8 +171,15 @@ true rate was computed and rejected.
 the P3/P4/P5 proofs in its recorded scope and actually reruns exact checks.
 [Distinct scan review](independent-checks-scans.md) reproduces the60 Hahn
 and28 disk row pairs, independently reconstructs12 small cases with Fraction
-arithmetic, verifies the two N2 outcomes and exercises malformed controls.
-These supplement the required subsequent Claude substantive audit.
+arithmetic, verifies all three N2 outcomes and exercises malformed controls.
+The separately launched disk16 alternating/pivot replay also matches all30
+rows against both producer and primary checker, including Gram counts and
+all reflection guards. Disk16 BJ/mirror were reviewed from completed primary
+artifacts; they were not freshly rerun by this supplementary reviewer. The
+reviewer's interrupted collector is retained separately: its saved pivot
+exit/timing and unsaved alternating metadata are distinguished from validated
+complete scientific artifacts. These checks supplement the required
+subsequent Claude substantive audit.
 The mathematical review also accepts the P1/P2 admission and covariance
 proofs in its dated additions. Registry readiness remains outside these supplementary review scopes.
 

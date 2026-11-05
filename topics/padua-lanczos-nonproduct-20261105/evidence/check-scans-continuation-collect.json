@@ -1,0 +1,194 @@
+{
+  "status": "PASS collected earlier independent ALT/PIVOT executions and primary comparison",
+  "original_execution_receipt": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/evidence/check-scans-reflection-full-execution.json",
+    "bytes": 3813,
+    "sha256": "339b03e65244f202d3a11d35e51e8b5fac7bdc1ec4c7f17f6d45b50c6203a050"
+  },
+  "original_status": "INCOMPLETE independent high ALT/PIVOT execution",
+  "primary_receipt": {
+    "path": "topics/padua-lanczos-nonproduct-20261105/evidence/p6-disk16-recovered-acceptance.json",
+    "bytes": 13568,
+    "sha256": "aefa709edb828fd3157218c974b22cd09525f5909ca6d192cba858e7a0b95877"
+  },
+  "producer_bundle": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/evidence/p6-disk16-producer-bundle.json",
+    "bytes": 6135,
+    "sha256": "eabf69410837e23729b3ac41e935724d97c6c0dce3938938851162bc839427b6"
+  },
+  "launched_by": "earlier distinct scan reviewer before UI reconnection",
+  "collected_by": "resumed supplementary reviewer; no native command launched",
+  "source": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_reflection_scalar.cpp",
+    "bytes": 11085,
+    "sha256": "09d524f915076105b04fb196ee98c6c6cd4cecbc6b6e49bcfacb541ffc999088"
+  },
+  "input": {
+    "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+    "bytes": 5734,
+    "sha256": "48977eefea1c662c3ef23c8ed17d49e3cb0310a6d53321add8c51c91866313f6"
+  },
+  "binary": {
+    "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review-reflection16/reflection",
+    "bytes": 84224,
+    "sha256": "a3c9193a82846f97f7c4e23afa4b5eba5b8867e043eabea16716d74816f8e559"
+  },
+  "per_case_cap_seconds": 3600,
+  "max_concurrent_cases": 2,
+  "runs": [
+    {
+      "rule": "alt",
+      "rows": 15,
+      "output": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review-reflection16/alt.jsonl",
+        "bytes": 1967155,
+        "sha256": "d2a9933329a1e94795beb94b18d180eff1e1af6c4fe53bddec29561859032295"
+      },
+      "log": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review-reflection16/alt.log",
+        "bytes": 2896,
+        "sha256": "7994e2888d5ae73989c34b61f5f5d4de2ebcdfa5b604b09902172793cdb59068"
+      },
+      "guard_records": {
+        "reflection_orbits": {
+          "nodes": 324,
+          "representatives": 90,
+          "size1": 0,
+          "size2": 18,
+          "size4": 72
+        },
+        "reflection_guards": {
+          "basis_parity_scalar_checks": 99144,
+          "parent_exponent_checks": 152,
+          "alpha_slots_checked": 11628,
+          "cross_parity_zeros_checked": 8748,
+          "source_positions": 152,
+          "expanded_node_source_snapshots": 307800,
+          "expected_expanded_node_source_snapshots": 307800
+        }
+      },
+      "phase_seconds_reported": {
+        "basis": 106.769,
+        "source": 1462.76,
+        "finish": 22.0192
+      },
+      "phase_total_seconds_approximate": 1591.5482,
+      "original_subprocess_record": null,
+      "subprocess_metadata": "not saved by original harness; no fresh exit-code or wall-time claim"
+    },
+    {
+      "rule": "pivot",
+      "rows": 15,
+      "output": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review-reflection16/pivot.jsonl",
+        "bytes": 1767297,
+        "sha256": "619ec018d03a78adcbb0da13e45a398402bde9680749e1b613af86063793c653"
+      },
+      "log": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review-reflection16/pivot.log",
+        "bytes": 2929,
+        "sha256": "76f17daf87ced6033dfb76a420a493be9acb66656df5c28c3049c9cc1de8d72c"
+      },
+      "guard_records": {
+        "reflection_orbits": {
+          "nodes": 324,
+          "representatives": 90,
+          "size1": 0,
+          "size2": 18,
+          "size4": 72
+        },
+        "reflection_guards": {
+          "basis_parity_scalar_checks": 99144,
+          "parent_exponent_checks": 272,
+          "alpha_slots_checked": 21488,
+          "cross_parity_zeros_checked": 16200,
+          "source_positions": 152,
+          "expanded_node_source_snapshots": 307800,
+          "expected_expanded_node_source_snapshots": 307800
+        }
+      },
+      "phase_seconds_reported": {
+        "basis": 155.582,
+        "source": 996.199,
+        "finish": 23.9797
+      },
+      "phase_total_seconds_approximate": 1175.7607,
+      "original_subprocess_record": {
+        "rule": "pivot",
+        "command": [
+          "/tmp/padua-lanczos-nonproduct-20261105/scan-review-reflection16/reflection",
+          "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+          "16",
+          "pivot",
+          "D36x9"
+        ],
+        "cap_seconds": 3600,
+        "status": "PASS fresh15rows all nonelapsed fields including Gram",
+        "exit_code": 0,
+        "rows": 15,
+        "producer_reference": {
+          "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/producer-pivot.jsonl",
+          "bytes": 1767299,
+          "sha256": "529e38d19863a9eeb2fde6f98a8f45081125bddb4290705e95cd7730f3137dc5"
+        },
+        "guard_records": {
+          "reflection_orbits": {
+            "nodes": 324,
+            "representatives": 90,
+            "size1": 0,
+            "size2": 18,
+            "size4": 72
+          },
+          "reflection_guards": {
+            "basis_parity_scalar_checks": 99144,
+            "parent_exponent_checks": 272,
+            "alpha_slots_checked": 21488,
+            "cross_parity_zeros_checked": 16200,
+            "source_positions": 152,
+            "expanded_node_source_snapshots": 307800,
+            "expected_expanded_node_source_snapshots": 307800
+          }
+        },
+        "wall_seconds": 1177.5457429990001,
+        "output": {
+          "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review-reflection16/pivot.jsonl",
+          "bytes": 1767297,
+          "sha256": "619ec018d03a78adcbb0da13e45a398402bde9680749e1b613af86063793c653"
+        },
+        "log": {
+          "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review-reflection16/pivot.log",
+          "bytes": 2929,
+          "sha256": "76f17daf87ced6033dfb76a420a493be9acb66656df5c28c3049c9cc1de8d72c"
+        }
+      },
+      "subprocess_metadata": "original saved exit0/wall record retained"
+    }
+  ],
+  "independent_rows_compared": 30,
+  "primary_producer_checker_rows_compared": 60,
+  "scope": "Fresh earlier ALT/PIVOT2..16 only. BJ/mirror16 are primary artifact checks, not fresh supplementary reruns.",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "topics/padua-lanczos-nonproduct-20261105/code/check_scans_continuation.py",
+    "--primary",
+    "topics/padua-lanczos-nonproduct-20261105/evidence/p6-disk16-recovered-acceptance.json",
+    "--mode",
+    "collect"
+  ],
+  "collector": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/check_scans_continuation.py",
+    "bytes": 9694,
+    "sha256": "ea1ab6185e31496e750193a107e1688bc80b92e65c2878c9a04bde83e279300f"
+  },
+  "earlier_harness": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/check_scans_reflection_full.py",
+    "bytes": 10232,
+    "sha256": "0f16e38acc4840659c92c61fd5fecc8b724e3bb20c12f77a6d3157f32f954c46"
+  },
+  "independent_arithmetic": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/check_scans_review.py",
+    "bytes": 12172,
+    "sha256": "ca9c40ccdf17df450ed6411287b143d08ca33e26b093a7b1a0a0ebcfbd84b289"
+  }
+}

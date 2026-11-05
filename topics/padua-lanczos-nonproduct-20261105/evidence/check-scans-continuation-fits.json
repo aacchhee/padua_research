@@ -1,0 +1,52 @@
+{
+  "status": "PASS independent D36x9 rational logs and signed OLS extrema",
+  "primary_receipt": {
+    "path": "topics/padua-lanczos-nonproduct-20261105/evidence/p6-disk16-recovered-acceptance.json",
+    "bytes": 13568,
+    "sha256": "aefa709edb828fd3157218c974b22cd09525f5909ca6d192cba858e7a0b95877"
+  },
+  "N2_receipt": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/evidence/p6-n2-D36x9.json",
+    "bytes": 5164,
+    "sha256": "e78aef097a86801d43d716033aea5561a970bd2f8e2075280a0a373683dfb444"
+  },
+  "independent_log_bounds_contained": 18,
+  "corners_per_window": 32,
+  "windows_outward": [
+    [
+      "-507848236139249/1000000000000000",
+      "530523752578707/500000000000000"
+    ],
+    [
+      "-11092162234283/12500000000000",
+      "36326992881773/31250000000000"
+    ]
+  ],
+  "N2_verdict": "INCONCLUSIVE",
+  "method": "Independent192-bit mantissa/96-term rational atanh bounds;32 OLS corners/window",
+  "scope": "Finite endpoint interval screen, not exact capacity or an asymptotic rate",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "topics/padua-lanczos-nonproduct-20261105/code/check_scans_continuation.py",
+    "--primary",
+    "topics/padua-lanczos-nonproduct-20261105/evidence/p6-disk16-recovered-acceptance.json",
+    "--mode",
+    "fits"
+  ],
+  "collector": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/check_scans_continuation.py",
+    "bytes": 9694,
+    "sha256": "ea1ab6185e31496e750193a107e1688bc80b92e65c2878c9a04bde83e279300f"
+  },
+  "earlier_harness": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/check_scans_reflection_full.py",
+    "bytes": 10232,
+    "sha256": "0f16e38acc4840659c92c61fd5fecc8b724e3bb20c12f77a6d3157f32f954c46"
+  },
+  "independent_arithmetic": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/check_scans_review.py",
+    "bytes": 12172,
+    "sha256": "ca9c40ccdf17df450ed6411287b143d08ca33e26b093a7b1a0a0ebcfbd84b289"
+  }
+}

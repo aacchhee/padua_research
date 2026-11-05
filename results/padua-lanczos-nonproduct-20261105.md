@@ -3,7 +3,7 @@
 This file is written only by the topic orchestrator. Branch
 `codex/padua-lanczos-nonproduct-20261105`; [draft PR #30](https://github.com/aacchhee/padua_research/pull/30).
 
-## Status (2026-11-05): WORK
+## Status (2026-11-05): AUDIT
 
 PR #24's all-degree drift separation (PD-T324) and closure growth (PD-T328/329) hold on SH_n, an affine image of a product measure. This topic seeks the same on families that are genuinely non-product. Directions are in [handoff 01](../topics/padua-lanczos-nonproduct-20261105/handoffs/01-work.md):
 
@@ -61,10 +61,12 @@ The continuous triangle/disk rate questions remain OPEN after the N3
 recursion attempts redirected to P4. Scope and chronology limitations are
 retained in the theory records and topic log. Distinct supplementary checks
 accept the P3/P4/P5 proofs and terminal-block corollary, and reproduce the
-completed Hahn16/disk8 finite evidence without unresolved findings. The
+completed Hahn16/disk8 finite evidence and separately launched disk16
+alternating/pivot replay without unresolved findings. Compact endpoint tables
+and N2 screens have distinct independent validation. The
 required Claude substantive audit remains pending; final scan-review coverage
 is recorded in the dated supplementary review.
 
 ## Next step
 
-`Codex (gpt-6-astra high): Continue codex/padua-lanczos-nonproduct-20261105.`
+`Claude (Opus 5.5 xhigh): Continue codex/padua-lanczos-nonproduct-20261105.`
