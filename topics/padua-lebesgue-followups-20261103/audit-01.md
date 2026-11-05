@@ -1,7 +1,5 @@
 # Audit-01 — Padua Lebesgue follow-ups (T1–T4) — Claude cross-family audit
 
-> **CHECKPOINT DRAFT — audit in progress.** The auditor's monolithic original `Verifier.run` (§T1.4) is still executing; no decision below is final until this banner is removed.
-
 - Auditor / orchestrator: Claude, Opus 5.5 (`claude-opus-5-5`), xhigh effort (chosen as handoff 02 asks: novel analytic proofs plus a consequential computer-assisted count). Two sub-auditors under this orchestration, Claude Opus 5.5 high, read-only (reports in [audit-support/claude-audit-01/subreports/](audit-support/claude-audit-01/subreports/)). The developer was Codex, so the audit is cross-family.
 - Rules read at branch head `407fe83f5a709ae6d8da986d6eee074a0bcb21fc` (AGENTS.md, agents/WORKFLOW.md, agents/claude/CLAUDE_ROLES.md).
 - Audited input: `5b2e36710144d5ab8dd1b8ee9dc2e8b0f1e13033` (handoff 02). `git diff 5b2e367 407fe83` touches only LOG.md and the two handoffs; theory, code and evidence are byte-identical. Base/main `440d1079e42c3ef21c40d1cf8870f5b206410c6a` (unchanged on origin at audit time).
@@ -12,8 +10,8 @@
 
 | Scope | Decision |
 |---|---|
-| T1 PD-T184 (exactly 44 strict interior maxima, n=8) | **Mathematics ACCEPTED, PROVED.** Finite reduction, composition and receipts reviewed; archived proof payload independently reproduced; see also the auditor's monolithic run (§T1.4). |
-| T1 PD-T180 (62 = 44 + 16 + 2 on the closed square) | **Mathematics ACCEPTED, PROVED** — see §T1.4 for the auditor's independent boundary regeneration and full monolithic original `Verifier.run`. |
+| T1 PD-T184 (exactly 44 strict interior maxima, n=8) | **Mathematics ACCEPTED, PROVED.** Finite reduction and receipts reviewed; archived proof payload reproduced; the auditor's monolithic run re-verifies all 44 interior roots (§T1.4). |
+| T1 PD-T180 (62 = 44 + 16 + 2 on the closed square) | **Mathematics ACCEPTED, PROVED.** The developer's composition is sound (§T1.1). In addition, the auditor regenerated the boundary with an identical proof payload and ran one complete monolithic original `Verifier.run`: `count_certified: true`, 62 (§T1.3–T1.4). |
 | T2 t2-01, t2-02 | **ACCEPTED, PROVED** at their written scope (limiting integrals only). |
 | T3 t3-01 | **ACCEPTED, PROVED**; numerical enclosures at the five rational positions confirmed. |
 | T4 t4-01, t4-02, t4-03 | **ACCEPTED, PROVED**; κ and c brackets independently confirmed by a different rigorous route. PD-T098's full expansion stays OPEN; PSLQ nulls MEASURED only. |
@@ -94,7 +92,36 @@ Its typed proof payload, computed with the committed `t1_payload.proof_payload`,
 
 ### T1.4 Monolithic original run (executed)
 
-PENDING — execution in progress at this checkpoint; no result is claimed.
+The auditor wrote [claude_monolithic_n8.py](audit-support/claude-audit-01/claude_monolithic_n8.py) (SHA-256 `75c22c6d…`, unchanged during the run). It builds a literal join of the Git-retrievable archived interior (`a3b4f278…`) and the auditor-regenerated boundary (`cf141bab…`); the summary edge/corner/total fields are copied from the boundary *proposal*. The join is 1,702,179 B, SHA `82826d03…`. The wrapper then calls the **unchanged frozen `a5_checker_n8.main()` without `--allow-partial`**, so the complete original `Verifier.run` executes in one process:
+- the embedding;
+- 45 node cones;
+- the root witnesses and the full leaf partition;
+- every leaf and mask;
+- `Verifier.boundaries`;
+- every final summary/boundary-summary predicate.
+
+The only runtime substitution is the frozen cached evaluator, which the auditor checked line by line to be bit-identical (§T1.1). Frozen source hashes are identical before and after the run.
+
+The command ran from `audit/t1`:
+
+```sh
+PYTHONPATH=<deps> timeout 14000 python3 -B claude_monolithic_n8.py --repo <clone> --interior archived-interior.json.gz --interior-sha256 a3b4f278a322338fb65f60922b4251265288148e1a09fd22882215004e81c324 --boundary boundary-claude.json --joined-out joined-claude.json.gz --receipt monolithic-receipt.json
+```
+
+It exited 0 after 3117.8 s. [Receipt](audit-support/claude-audit-01/monolithic-receipt.json):
+- `accepted: true`, **`count_certified: true`**, `interior_complete`/`boundary_complete`/`complete_prefix_partition: true`;
+- 153,520 leaves, 541,882 patterns, 45 node records, 3,474 breakpoints;
+- **44 interior + 16 edge + 2 corner = `total_maxima: 62`**;
+- 492 edge patterns, 32 active corner masks;
+- Python 3.13.18.
+
+The full checker output (20,800 B, SHA `a5d133a6…`) is kept off-repository. Its [typed comparison](audit-support/claude-audit-01/monolithic-facts-comparison.json) shows every interior root value, edge root, corner root and node fact equal to the developer's replay receipts.
+
+This is a **third, cross-family executor and a monolithic full run**. It discharges the developer's acknowledged "no monolithic joined `Verifier.run`" limitation without relying on the composition argument. It also re-establishes the boundary stratum on an artifact independent of the lost `adfe1107…` file. PD-T180 now rests both on the developer's composition and on this direct run.
+
+Scope limits:
+- The archived interior, not the fresh one, was used. The two are typed-identical by the developer's two comparisons, and the archive is the input PD-T184's proof already uses.
+- The auditor's run used the frozen cached evaluator, as all developer replays did.
 
 ## Findings
 

@@ -2,7 +2,7 @@
 
 This file is written only by the topic orchestrator. Branch `codex/padua-lebesgue-followups-20261103`; [draft PR #20](https://github.com/aacchhee/padua_research/pull/20).
 
-## Status (2026-11-03): AUDIT, core development complete; Claude review pending
+## Status (2026-11-05): WORK — Claude audit-01 accepted the mathematics; minor findings await response-01
 
 Four bounded targets, specified in [handoff 01](../topics/padua-lebesgue-followups-20261103/handoffs/01-work.md):
 
@@ -45,6 +45,14 @@ completed after the first mechanisms. Later reading and supplementary review
 do not retroactively cure that timing deviation; Claude must give an explicit
 protocol disposition. Physical cold-storage delivery remains pending.
 
+## Claude audit-01 (2026-11-05)
+
+Mathematics ACCEPTED for all four targets ([audit-01](../topics/padua-lebesgue-followups-20261103/audit-01.md)). Independent auditor evidence:
+- a monolithic original n=8 `Verifier.run` (archived interior + independently regenerated boundary) certified 44 + 16 + 2 = 62 in one process;
+- an Arb digamma-route enclosure of κ confirmed the κ and c brackets.
+
+Nine MINOR findings (wording, proposal format, provenance/budget notes) await response-01. The T2/T3 gate-timing deviation is recorded with minor impact and left for AC's decision.
+
 ## Next step
 
-`Claude (Opus 5.5 xhigh): Continue codex/padua-lebesgue-followups-20261103.`
+`Codex (gpt-6.1-sol medium): Continue codex/padua-lebesgue-followups-20261103.`

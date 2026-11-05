@@ -1,0 +1,65 @@
+{
+ "allow_partial": false,
+ "boundary_input_bytes": 4822048,
+ "boundary_input_sha256": "cf141babf23d1178c0fe6b250d7569c9529bdc2cf23b6e4192b9deb58ae64357",
+ "checker_exit": 0,
+ "checker_result": {
+  "FLINT": "3.6.0",
+  "accepted": true,
+  "boundary_complete": true,
+  "checker_sha256": "a9cff5748d6c40ee41ac76e4e8a0035e0d5dab95f4de1233dfcc26902cb085a2",
+  "checker_source_unchanged": true,
+  "complete_prefix_partition": true,
+  "corner_active_patterns": 32,
+  "count_certified": true,
+  "dispositions": {
+   "all_gradient": 144902,
+   "gradient": 534358,
+   "hessian": 7002,
+   "node_cone": 346,
+   "root": 522
+  },
+  "edge_dispositions": {
+   "derivative": 27142,
+   "minimum": 1472,
+   "outside": 4454,
+   "root": 16,
+   "sign": 1404
+  },
+  "error": null,
+  "interior_complete": true,
+  "python": "3.13.18",
+  "python_flint": "0.9.0",
+  "seconds": 3117.68978485,
+  "sympy": "1.14.0",
+  "total_maxima": 62,
+  "verified_corner_maxima": 2,
+  "verified_direction_breakpoints": 3474,
+  "verified_edge_maxima_enclosures": 16,
+  "verified_edge_patterns": 492,
+  "verified_interior_maxima_enclosures": 44,
+  "verified_leaves": 153520,
+  "verified_node_leaves": 346,
+  "verified_node_records": 45,
+  "verified_patterns": 541882
+ },
+ "evaluator": "frozen a5_checker_n8_staged_cached.cached_evaluate (bit-identical cached monomials)",
+ "format": "claude-audit-01-monolithic-n8-v1",
+ "frozen_sources_after": {
+  "a5_checker_n8.py": "a9cff5748d6c40ee41ac76e4e8a0035e0d5dab95f4de1233dfcc26902cb085a2",
+  "a5_checker_n8_staged.py": "82385dd392513c476e83ed7c5a59c63e602e77d50279fb51a3976ac5857021ef",
+  "a5_checker_n8_staged_cached.py": "996c8f4dede1a3d8efed79b982dc53a7c12136c7c9e6e7e3872c67f8007168e9"
+ },
+ "frozen_sources_before": {
+  "a5_checker_n8.py": "a9cff5748d6c40ee41ac76e4e8a0035e0d5dab95f4de1233dfcc26902cb085a2",
+  "a5_checker_n8_staged.py": "82385dd392513c476e83ed7c5a59c63e602e77d50279fb51a3976ac5857021ef",
+  "a5_checker_n8_staged_cached.py": "996c8f4dede1a3d8efed79b982dc53a7c12136c7c9e6e7e3872c67f8007168e9"
+ },
+ "interior_input_bytes": 637163,
+ "interior_input_sha256": "a3b4f278a322338fb65f60922b4251265288148e1a09fd22882215004e81c324",
+ "joined_bytes": 1702179,
+ "joined_sha256": "82826d033cbb2f337ca98fb134fb3b73dc829ddb7dae7935a0938da11398d897",
+ "wall_seconds": 3117.769831451,
+ "wrapper_sha256": "75c22c6d565ad5fa063d690f0725a75835902df01c34d7e1d68e0b8474c6a37c",
+ "wrapper_sha256_after": "75c22c6d565ad5fa063d690f0725a75835902df01c34d7e1d68e0b8474c6a37c"
+}

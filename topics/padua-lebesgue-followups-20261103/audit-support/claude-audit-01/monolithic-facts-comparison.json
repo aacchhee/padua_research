@@ -1,0 +1,8 @@
+{
+ "checker_output_bytes": 20800,
+ "checker_output_sha256": "a5d133a63abcb371e3e8ec9cc03cd3a83790f163b0ec50c8a450d682443e570b",
+ "corner_roots_equal_developer_boundary_receipt": true,
+ "edge_roots_equal_developer_boundary_receipt": true,
+ "node_facts_equal": true,
+ "root_values_equal_developer_interior_receipt": true
+}

@@ -1,9 +1,9 @@
 # Padua Lebesgue-function follow-ups (T1–T4): log
 
 - Branch: `codex/padua-lebesgue-followups-20261103` · Base: main `440d107` · Developer: Codex · Auditor: Claude (Opus 5.5)
-- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Continue codex/padua-lebesgue-followups-20261103.` · Open handoff: [handoffs/02-audit.md](handoffs/02-audit.md)
+- Stage: WORK (audit-01 findings, all MINOR) · Next: `Codex (gpt-6.1-sol medium): Continue codex/padua-lebesgue-followups-20261103.` · Open handoff: [handoffs/03-response.md](handoffs/03-response.md)
 - Reserved final-ID ranges: PD-T266–285, PD-N092–099, IDEA356–375, LIT474–481; [reservation and pinned union scan](ALLOCATIONS.md). No final assignments before audited preparation.
-- Claims: all four core targets complete. T1 PD-T184/180 PROVED (44 interior, 62 total); six T2–T4 analytic records PROVED. Actual independent replays/checks accepted; required Claude audit PENDING. Full sharp PD-T098 remains OPEN; the T2/T3 protocol timing qualification remains unwaived.
+- Claims: all four core targets complete. T1 PD-T184/180 PROVED (44 interior, 62 total); six T2–T4 analytic records PROVED. Claude audit-01 ACCEPTED the mathematics of all four targets; nine MINOR findings await response-01. Full sharp PD-T098 remains OPEN; the T2/T3 protocol timing qualification remains unwaived.
 - Open for AC: none at setup. Ask AC before using any machine outside the sandbox.
 
 ## 2026-11-03 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
@@ -103,3 +103,17 @@
 - Final integration checks parsed all topic JSON/Python, checked local prose links and control bytes, verified all manifest identities and write scope, and retained ordinary JSON receipts below 16 KiB. The conservative whole-repository generated-data bucket is about 4.21 MB, including existing manifests; no bulk tree or third-party text was added.
 
 - Development outputs committed as `5b2e36710144d5ab8dd1b8ee9dc2e8b0f1e13033`. [Handoff 01](handoffs/01-work.md) is done at that SHA; [handoff 02](handoffs/02-audit.md) requests the required Claude audit with exact scope, evidence, limitations and acceptance criteria.
+
+## 2026-11-05 — Claude audit-01 (Claude, claude-opus-5-5, xhigh)
+
+- Rules read at `407fe83f5a709ae6d8da986d6eee074a0bcb21fc`. Audited input `5b2e36710144d5ab8dd1b8ee9dc2e8b0f1e13033`; head differs only in LOG/handoffs. Base `440d107` unchanged on origin. Role: independent auditor and topic orchestrator. Two Claude Opus 5.5 high sub-auditors (novelty/literature/protocol; T1 evidence/protocol) worked read-only.
+- [audit-01.md](audit-01.md): mathematics ACCEPTED for PD-T184, PD-T180 and the six T2–T4 records; no BLOCKER and no open MAJOR; nine MINOR findings (F1–F9) and four NOTEs. T2/T3 gate timing deviation confirmed, not waived; impact minor (F1); preserved for AC.
+- Auditor executions, all completed:
+  - Arb ball integration of κ by a digamma route; c and κ lie strictly inside the claimed brackets.
+  - Original double integrals and 40-digit 1D checks at all five T3 positions.
+  - Developer T3/T4 evaluator reruns, identical.
+  - Independent n=8 boundary regeneration: exit 0, 2250.7 s, proof payload identical to the developer's lost `adfe1107…`.
+  - One monolithic original `Verifier.run` on archived interior + regenerated boundary: exit 0, 3117.8 s, `count_certified: true`, 44+16+2=62.
+
+  Support files: [audit-support/claude-audit-01/](audit-support/claude-audit-01/).
+- Stage WORK. [Handoff 03](handoffs/03-response.md) asks Codex for response-01.
