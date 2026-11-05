@@ -1,9 +1,9 @@
 # Effective all-degree Padua argmax, phase 2 (PD-T099): log
 
-- Branch: `codex/padua-argmax-effective-2-20261105` · Base: main `5db1e01` (PR #19 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: PR · Next: `Codex (gpt-6-astra ultra): Continue codex/padua-argmax-effective-2-20261105.` · Open handoff: [handoffs/05-pr-preparation.md](handoffs/05-pr-preparation.md)
-- Permanent reservation: T364–375/N132–137/IDEA454–465/LIT594–597, first published ce17564; no final assignments. [Ledger](ALLOCATIONS.md).
-- Scoped claims: T01 narrow finite sufficiency; analytic T03–T07 and N01; T08 existing MEASURED observations; T02 remains an unregistered CONDITIONAL diagnostic. Full-diamond H2, complete H1 certification and PD-T099 remain OPEN; see report.md and gates.md.
+- Branch: `codex/padua-argmax-effective-2-20261105` · Base: main `330fab835f43e5ba5b24e320c2d7e9647e6cbd60` (original topic base5db1e01) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
+- Stage: PR (preparation audit pending) · Next: `Claude (Opus 5.5 high): Continue codex/padua-argmax-effective-2-20261105.` · Open handoff: [handoffs/06-preparation-audit.md](handoffs/06-preparation-audit.md)
+- Permanent reservation: T364–375/N132–137/IDEA454–465/LIT594–597, first published ce17564; assigned T364–370/N132/IDEA454–461, no LIT, unused gaps permanent. [Ledger](ALLOCATIONS.md).
+- Final scoped IDs: PD-T364–369 PROVED; PD-T370 MEASURED; PD-N132 PROVED scoped obstruction; IDEA454–461 all dispositions. Exact provisional aliases retained; T02 remains an unregistered CONDITIONAL diagnostic. Full-diamond H2, complete H1 certification and PD-T099 remain OPEN; see report.md and gates.md.
 - Open for AC: the sandbox compute allowance in handoff 01 (6 h per run, about 48 h cumulative CPU) is Claude's proposal; AC may change it. Ask AC before using any machine outside the sandbox.
 
 ## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
@@ -154,3 +154,13 @@
 - Added preparation/record.md and the explicit PR-body template, carrying R1–R4 unchanged and keeping PR25 draft for Claude preparation audit. The final body resolves only the two commit placeholders after the enclosing candidate and handoff commits exist.
 - The corrected first rehearsal and the subsequent refreshed seven-case execution are both recorded honestly. Current foreign pin PR21 67b3e01 has identical reservation/registry bytes to the original full scan. Old raw/cache receipt stays local; no foreign whitespace or unrelated scientific file was edited.
 - Final registration source and checks are concrete; the following commit re-pins the enclosing evidence index to this source while retaining historical reviewer hashes. No further registry/science change is planned. Source/fulltext, AC interpretation and physical archival limitations remain explicit; only AC merges.
+
+## 2026-11-05 — final enclosing preparation candidate
+
+- Source `ab4cd003d952e5b49355bc9fdb38e35c8a3a98b5` contains the registered records, refreshed actual seven-case rehearsal, independent protocol review and complete PR-body template. Re-pinned the enclosing index to every current topic record/code/receipt except lifecycle metadata, and to all changed shared registries plus unchanged literature INDEX and own results. Prior index commit/blob/hash chain and historical review pins are retained. No proof/status/constant/body changed.
+- [Handoff06](handoffs/06-preparation-audit.md) requests Claude Opus5.5 high registry/allocation/rehearsal/PR-body audit of the concrete candidate. PR25 remains draft, no AC merge decision requested before that acceptance. R1–R4 decision/coverage/storage notes remain unchanged.
+
+## 2026-11-05 — final index preservation review
+
+- Subsequent read-only Astra-medium review PASS: all69 topic and10 repository identities match both preparation sourceab4cd00 and current bytes; index10,188bytes below16KiB. Both prior-index generations verified against commit/blob/size/hash and nested provenance; eight historical review/response/report/receipt files remain byte-identical. Every tracked topic file outside documented lifecycle/self-index exclusions is covered.
+- No file was modified by that subsequent check. Original scientific bodies/code/evidence remain unchanged, and the required Claude preparation audit remains pending. The source/template and actual final PR body will resolve the concrete preparation-output/handoff SHAs after the numbered transition commit.
