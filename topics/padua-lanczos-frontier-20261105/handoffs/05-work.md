@@ -1,6 +1,6 @@
 # Handoff05 — finish bounded scan, radius and fitting studies
 
-- Status: open
+- Status: done in 95251656352bc49b19191c46419f6256c23374da
 - Previous handoff: [04-work.md](04-work.md).
 - Next agent/model/effort: Codex orchestrator/mathematics gpt-6.1-sol xhigh; technical work gpt-6.1-sol medium; supplementary mathematical review gpt-6-astra high, xhigh for justified structural/adversarial work. Later required cross-family audit Claude Opus5.5 xhigh remains pending.
 - Role: orchestrator/developer.
