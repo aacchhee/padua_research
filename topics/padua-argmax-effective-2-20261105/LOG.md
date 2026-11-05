@@ -26,3 +26,9 @@
 - Shell Git networking requires the supported per-command network grant; initial calls without it failed to reach the proxy. Fetch succeeds with that grant. GitHub CLI GraphQL returned Forbidden; the available GitHub connector provides PR metadata. No credential inspection or destination-policy bypass.
 - Initial PR-state scan: open PR21 `890f56ccde35431b70b43141c224b0b8817fea7f`, PR22 `f4c41acb665f4ea35b5db05ec45ae8ba34fe6b96`, PR24 `79c3d6a211325eca6e8311b3ae03187c100a1d8a`; all returned closed PRs merged. No final allocation yet; fresh-range procedure adopted unchanged. Complete ledger/registry union scan is required before any reservation.
 - Scope remains topic-local; the main merge imports accepted changes but no merged scientific file is edited by this development.
+
+## 2026-11-05 — setup replay completed / draft reservation
+
+- Fresh Sol medium [replay](independent-replay.md): regenerated and committed n17/n24 certificates all independently accepted by the frozen C++/GMP checker. Frontiers, exact bounds and mathematical hashes match phase1; only timing fields differ. No new certified degree, fresh corruption controls or theorem upgrade.
+- [Allocation review](allocation-review.md): complete ledgers and four registry inventories at main and all open foreign PRs; reviewed 11 full ledger versions. Immediately before publication, connector and Git refs confirm unchanged scan heads. Reserved T364–375/N132–137/IDEA454–465/LIT594–597 with headroom; no final IDs assigned. Topic-local ledger honors handoff01 scope; shared import remains preparation work.
+- Supplementary independent Astra high mathematics review dispatched separately. Claude audit remains PENDING.

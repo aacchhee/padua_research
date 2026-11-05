@@ -1,0 +1,235 @@
+{
+  "schema": "padua-allocation-scan-v1",
+  "date_utc": "2026-11-05",
+  "purpose": "Review only; no reservation or final-ID assignment",
+  "rules_sha": "2fb2f7502bb8d1b46c0fe1089588c46a06df258d",
+  "pr_population": {
+    "source": "orchestrator live GitHub connector all-state scan",
+    "open": [
+      21,
+      22,
+      24
+    ],
+    "closed_merged_count": 21,
+    "closed_unmerged": []
+  },
+  "snapshots": {
+    "origin/main": {
+      "sha": "21dbfc90257b952d8923f6d01739d12aa8d6e0a1",
+      "files": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "PR21": {
+      "sha": "890f56ccde35431b70b43141c224b0b8817fea7f",
+      "files": [
+        0,
+        1,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "PR22": {
+      "sha": "1de5891ee622e826d7553819152aa261b02faaa9",
+      "files": [
+        0,
+        16,
+        1,
+        2,
+        17,
+        4,
+        5,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "PR24": {
+      "sha": "79c3d6a211325eca6e8311b3ae03187c100a1d8a",
+      "files": [
+        0,
+        1,
+        2,
+        3,
+        22,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  },
+  "files_read": 40,
+  "blobs": [
+    {
+      "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+      "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+      "bytes": 2271
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/ALLOCATIONS.md",
+      "sha256": "8395a86ac4260c5e3c6052244eb0ef3188ae2060199abc936bb703e33346fa76",
+      "bytes": 4177
+    },
+    {
+      "path": "topics/padua-argmax-effective-20261103/ALLOCATIONS.md",
+      "sha256": "25a84c861561cf383453aa784c57fda97e9f53139398fe4d5b8552005e5ccc8c",
+      "bytes": 3246
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "sha256": "ad4b99b25daeff950cdcb285a94647fc16a4672f9f3eafb73e506b9b5bd4c676",
+      "bytes": 34255
+    },
+    {
+      "path": "topics/padua-lebesgue-followups-20261103/ALLOCATIONS.md",
+      "sha256": "6467929d5b06a9ef0663e16594d8ea4fe297e64f21fa34b9b128d3412f384759",
+      "bytes": 2906
+    },
+    {
+      "path": "topics/padua-mz-2d-frontier-20261105/ALLOCATIONS.md",
+      "sha256": "6bab02444f5371fe1e7771aa1f951c6ba6646e9bf438dd3ecb7083c282eaf215",
+      "bytes": 2755
+    },
+    {
+      "path": "PROOF_STATUS.md",
+      "sha256": "53a76ee6154ae618ff5f18103751fd5697ab47a89c127d0095449a6bd399487c",
+      "bytes": 197539
+    },
+    {
+      "path": "state/IDEAS.md",
+      "sha256": "908ffa8bc71ec21dc74f7cf7bd626c16d3fd4af65fbbfe313432bec59193f01c",
+      "bytes": 226050
+    },
+    {
+      "path": "literature/INDEX.md",
+      "sha256": "c5342f00f6a4604076d1f89b2a2b6003e8374460548b7ca6e7685ac6c8858a16",
+      "bytes": 274511
+    },
+    {
+      "path": "ID_CROSSWALK.md",
+      "sha256": "069b1785c527603aacdd0af0c61be8b7787d0f91288625432223ec239566243a",
+      "bytes": 333817
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "sha256": "0951493e3f25b31d08fe5877207c3444093a44947b4b64d537b9374cb67fc520",
+      "bytes": 29851
+    },
+    {
+      "path": "topics/padua-literature-20261103/ALLOCATIONS.md",
+      "sha256": "500cf00b63931965272b66fb5dc9e7299066a53af9dcfc8f6b2b841e2e618919",
+      "bytes": 1476
+    },
+    {
+      "path": "PROOF_STATUS.md",
+      "sha256": "3dcd729917ac87f9e09bd9278c2e553017406c6ee8da1d9f0f43081840cfeeee",
+      "bytes": 169671
+    },
+    {
+      "path": "state/IDEAS.md",
+      "sha256": "3a68050253cb96b03c92f3e899035b34deb48b3e331d05f87ced8477e425ba29",
+      "bytes": 202445
+    },
+    {
+      "path": "literature/INDEX.md",
+      "sha256": "9b7759b44e6b4a4fa76d7cecc443ec1535b491ad477a1b46bd5adaeb27bdc579",
+      "bytes": 269974
+    },
+    {
+      "path": "ID_CROSSWALK.md",
+      "sha256": "c049b783438efa8b916d75650d7cc29cb87ef25dcf7a2659cd486e3c0ea42110",
+      "bytes": 312016
+    },
+    {
+      "path": "topics/nn-mop-iep-20261103/ALLOCATIONS.md",
+      "sha256": "899ff280fe38cf4e4cdb1a8c53905cddf2d09f3b95462286392389db71a60d33",
+      "bytes": 3072
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "sha256": "a49e424fe26abca579610d33818fee7a2e6ab581009889ad921dadc06025f5c3",
+      "bytes": 35777
+    },
+    {
+      "path": "PROOF_STATUS.md",
+      "sha256": "ce07c9a0aa82207edf5b564b478fee72d89c4e5f8ebba7d9309bd2bbdda09eef",
+      "bytes": 201376
+    },
+    {
+      "path": "state/IDEAS.md",
+      "sha256": "60d5dbcd4e216926c23202ae08998da2643f3acf3e59c88b2b517b041543728e",
+      "bytes": 228413
+    },
+    {
+      "path": "literature/INDEX.md",
+      "sha256": "81ddad033717177f2703368dc553b6a89027123802051ff9edf90b747159277c",
+      "bytes": 279755
+    },
+    {
+      "path": "ID_CROSSWALK.md",
+      "sha256": "198bdcf7f2608c5d0ad911bebc853a1d26f387727e160015edc0abf44d75314a",
+      "bytes": 338519
+    },
+    {
+      "path": "topics/padua-lanczos-frontier-20261105/ALLOCATIONS.md",
+      "sha256": "964821f8d27a680512320a1798ae77ae37d8dd8dc684f3eab7f7f49e0cf7a85a",
+      "bytes": 1951
+    }
+  ],
+  "registry_qualified_mention_max": {
+    "PD-T": 300,
+    "PD-N": 107,
+    "IDEA": 397,
+    "LIT": 568
+  },
+  "human_reviewed_reserved_max": {
+    "PD-T": 363,
+    "PD-N": 131,
+    "IDEA": 453,
+    "LIT": 593
+  },
+  "suggested_only": {
+    "PD-T": [
+      364,
+      375
+    ],
+    "PD-N": [
+      132,
+      137
+    ],
+    "IDEA": [
+      454,
+      465
+    ],
+    "LIT": [
+      594,
+      597
+    ]
+  },
+  "qualifications": [
+    "Every complete ledger version reviewed; shared copies reconstructed by exact diff against the fully read main ledger.",
+    "Namespace-column numeric ranges and abbreviated namespace/range endpoints reviewed manually.",
+    "Permanent unused headroom and retired-reservation prose included; no closed-unmerged PR reported by parent scan.",
+    "Explicit provisional IDs are not final IDs; old next-unreserved prose does not itself reserve a range.",
+    "Foreign BTTB literature aliases excluded after context review: 1160,1185,1317,1325,1586,1658,1729,1750",
+    "Scientific registries read completely by scanner for ID inventory; no novelty or mathematical audit is claimed.",
+    "Pinned snapshot only; orchestrator must refresh population and heads immediately before publishing a reservation."
+  ]
+}
