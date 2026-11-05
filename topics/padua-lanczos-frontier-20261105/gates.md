@@ -19,3 +19,7 @@ New experiments and further campaign development stopped. G1/G2/G3/G4 NOT RUN. W
 ## 2026-11-05 — additive G0 RESOLVED
 
 [Disposition02](g0-disposition-02.md) and [independent resolution check](independent-checks-g0-resolution.md) resolve the numerical mismatch as arithmetic sensitivity of the existing recurrence, with a separately quantified reference-noise contribution for the smallest gaps. Identical-input high-precision projection, measured local residuals, frozen inverse propagation and kernel/precision controls were independently executed. The historical Q/H and exact dispatch remain unavailable; old alternating7.301e-12 is scale-consistent, not reconstructed or enclosed by kernel samples. The original FAIL and criterion remain intact. No tolerance change. G1–G4 still NOT RUN; research may resume only after its mandatory gates.
+
+## 2026-11-05 — L4 separate finite experiment (not G1–G4)
+
+After the completed direction gate, all nine preregistered envelope upper proposals fail with the old BJlower. A separately labeled exact Rayleigh diagnostic proves a scoped obstruction to that fixed pairing. The saved full-output same-sign witness continuation then passes its first rational readout: L2041704913997>100B1346295626600. Distinct exact regeneration/checks and a portable fixed-vector recheck pass. Original PD-T140 experiment remains INCONCLUSIVE. This does not execute or waive G1,G2,G3,G4, and does not imply actual IEEE activation, finite-u control or an all-degree rate.

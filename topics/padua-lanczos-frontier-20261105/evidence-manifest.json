@@ -1,12 +1,12 @@
 {
   "source_rules_commit": "f85c7b5c83822ff60b62c84bed1ec6ae31628422",
-  "scope": "G0 explanation/replay checkpoint; file identities, no new claim-level proof",
+  "scope": "G0 resolved and checked finite full-scalar L4 certificate; identities only, scientific checks in independent receipts",
   "excluded": "Mutable log, handoff chain and manifest itself",
   "files": [
     {
       "path": "results/padua-lanczos-frontier-20261105.md",
-      "bytes": 1802,
-      "sha256": "b401f8b12064b97a0f4a0e1c772aa1cbae91281f869ba28894d4975e6e15aaed"
+      "bytes": 1767,
+      "sha256": "aecd0f69a9549d306eef92a9fa2f14593c54f0873affcbbd850f4d441f785428"
     },
     {
       "path": "topics/padua-lanczos-frontier-20261105/ALLOCATIONS.md",
@@ -15,8 +15,8 @@
     },
     {
       "path": "topics/padua-lanczos-frontier-20261105/COLD_STORAGE.md",
-      "bytes": 2441,
-      "sha256": "63cb9cb61020389fd728ed3301c86f5aa344098312abeaa67435510f526a3538"
+      "bytes": 6116,
+      "sha256": "93d10e2f0fdf3703f320cefa284d981cbdd0f059928badd816242390b55196cd"
     },
     {
       "path": "topics/padua-lanczos-frontier-20261105/allocation-scan.json",
@@ -25,23 +25,23 @@
     },
     {
       "path": "topics/padua-lanczos-frontier-20261105/attempts/L1.md",
-      "bytes": 9439,
-      "sha256": "66fba037e64b69c6bca152a0e7f46ebeee94a3034e2d3b81fd691ce60fb6a24e"
+      "bytes": 11522,
+      "sha256": "27b65589a14afc3631b1885d04886c83365d8e3a359f19858887af2c64669e1b"
     },
     {
       "path": "topics/padua-lanczos-frontier-20261105/attempts/L2.md",
-      "bytes": 9854,
-      "sha256": "997a7de16c3cb0205262ee8d8df25333d9e3ac8ac551a9a708b13c87f1ddbb85"
+      "bytes": 12081,
+      "sha256": "5eaa6cc7bf78b2ed9b1ee692effa62ef1855f3fd383518545bb7ad5ff160722c"
     },
     {
       "path": "topics/padua-lanczos-frontier-20261105/attempts/L3.md",
-      "bytes": 7001,
-      "sha256": "0f61d3699e8b8578a9cbc268c03aea291e36324c62cf18b68c5a3ebc2436b386"
+      "bytes": 8025,
+      "sha256": "91993a859f841bd14ad27407be1595c3545721938e53b84a4555b0e819ecd8bd"
     },
     {
       "path": "topics/padua-lanczos-frontier-20261105/attempts/L4.md",
-      "bytes": 4586,
-      "sha256": "1e864a0afaa9c8103f0fa4afc133a82a8a0c567e857749fb6d236f052fe902d4"
+      "bytes": 14529,
+      "sha256": "f3a54a7d95fcaf67c7a223a3c6a1322a7e28153335f7ca8c3532d85127e4c46f"
     },
     {
       "path": "topics/padua-lanczos-frontier-20261105/attempts/L5.md",
@@ -84,14 +84,39 @@
       "sha256": "e93abe9118ba1c8360d2733b0b497d9c3a5fb0335d60e429ca2993c82f6f660a"
     },
     {
+      "path": "topics/padua-lanczos-frontier-20261105/code/l4_envelope.py",
+      "bytes": 7683,
+      "sha256": "0da27e69ddd3cff5ca23e3fcac764f53891ad164ffab20324540fd67d2faf901"
+    },
+    {
+      "path": "topics/padua-lanczos-frontier-20261105/code/l4_full_witness.py",
+      "bytes": 6870,
+      "sha256": "9f56bf92aa5883aaf6895327044406b7fdccb57e3c26199391fcaf61d873d2cf"
+    },
+    {
+      "path": "topics/padua-lanczos-frontier-20261105/code/l4_independent.py",
+      "bytes": 16473,
+      "sha256": "491be4db86f4a0c1ff369f4b51043d63944562d7ca522e60cd794ed4d70248ac"
+    },
+    {
+      "path": "topics/padua-lanczos-frontier-20261105/code/l4_rayleigh.py",
+      "bytes": 4349,
+      "sha256": "54399e4e2dea3a19d943130bf67e7549b16c98aac600e196ba932ba512069551"
+    },
+    {
+      "path": "topics/padua-lanczos-frontier-20261105/code/l4_recheck_fixed.py",
+      "bytes": 10206,
+      "sha256": "858490e2fe820c4fbb4325283414c3110b321ecb10c1921fec11e04a42e49f61"
+    },
+    {
       "path": "topics/padua-lanczos-frontier-20261105/code/l7_natural.py",
       "bytes": 9004,
       "sha256": "eeb253ae62b92f9972f4e7a929217c2361d7fae8e7e92d831e17da52dc69c7ca"
     },
     {
       "path": "topics/padua-lanczos-frontier-20261105/cold-storage.json",
-      "bytes": 9548,
-      "sha256": "8b5cfd0a51eb201604247ba8f1ed897cd1bbb9c22cfb4b5427a6346b503acf04"
+      "bytes": 16209,
+      "sha256": "a4d4724f91257693ebb9ec400a3478743b64579f31b30ec0f6b053a4baaf23f5"
     },
     {
       "path": "topics/padua-lanczos-frontier-20261105/evidence/g0-attribution.json",
@@ -112,6 +137,41 @@
       "path": "topics/padua-lanczos-frontier-20261105/evidence/g0-summary.json",
       "bytes": 11011,
       "sha256": "263ec293bec7249b3b33494a318c684227228342568ff981cc7b22070c6e6c0a"
+    },
+    {
+      "path": "topics/padua-lanczos-frontier-20261105/evidence/l4-envelope.json",
+      "bytes": 7245,
+      "sha256": "0ddc935bed63d22546eb12ef9a00765a4ebceaf70c69c7fe61afbb2979e0e6c5"
+    },
+    {
+      "path": "topics/padua-lanczos-frontier-20261105/evidence/l4-fixed-certificate.json",
+      "bytes": 12631,
+      "sha256": "d07d5c89200c188b25052a2f9a844b3271232bf9c78bb0296bfcded46a99cadb"
+    },
+    {
+      "path": "topics/padua-lanczos-frontier-20261105/evidence/l4-fixed-recheck.json",
+      "bytes": 4419,
+      "sha256": "964532802067f43b878aec62fbbcb041912baf88e2b55da46e60957ad61c3e5f"
+    },
+    {
+      "path": "topics/padua-lanczos-frontier-20261105/evidence/l4-full-witness.json",
+      "bytes": 3353,
+      "sha256": "918a168ef7960aef1e7b10fdff6637fc0d5d74473be2bac9ca8e264bbd52d847"
+    },
+    {
+      "path": "topics/padua-lanczos-frontier-20261105/evidence/l4-independent.json",
+      "bytes": 10311,
+      "sha256": "7c3c89a0f52a6cfbab4b98e8b00185932adf18e2f310330a942ca2e45a2abb3b"
+    },
+    {
+      "path": "topics/padua-lanczos-frontier-20261105/evidence/l4-rayleigh.json",
+      "bytes": 3759,
+      "sha256": "3309c5dba3bee00c4e93a166cfa626e1986f657010202d74b8c78692c69f4492"
+    },
+    {
+      "path": "topics/padua-lanczos-frontier-20261105/evidence/l4-readout-certificate.json",
+      "bytes": 3180,
+      "sha256": "1208f11acdc92a599645f68770621f77d44c8e87e0ef2c69cfdbbd12e43e046d"
     },
     {
       "path": "topics/padua-lanczos-frontier-20261105/evidence/l7-preparation.json",
@@ -135,18 +195,18 @@
     },
     {
       "path": "topics/padua-lanczos-frontier-20261105/gates.md",
-      "bytes": 2764,
-      "sha256": "6f790e46c8f3297a856bb9c2fd3191deda930090a5e85d10ee42c11e5b419b1f"
+      "bytes": 3418,
+      "sha256": "f5e3ff68bb5ba9b4ceb46b3c0c65776424db8e10af77b811c6f89e510bf0a07d"
     },
     {
       "path": "topics/padua-lanczos-frontier-20261105/ideas-l1-l2.md",
-      "bytes": 14672,
-      "sha256": "7bebefb070a51267d642291cdcbf15668b323eafa4177e9c16e2cf010ce0a1d3"
+      "bytes": 33622,
+      "sha256": "7d649daa3e78e0313eaaff67511ef867f18d0e75c9b2ff1c1dc970511ef16b98"
     },
     {
       "path": "topics/padua-lanczos-frontier-20261105/ideas-l3-l4.md",
-      "bytes": 15825,
-      "sha256": "c4a87edf4fd9b3e3923dc3aa04da6144697cee23789735883eebfaca9a0d3037"
+      "bytes": 27250,
+      "sha256": "7b092393c3ba6b2e57c9599973f1a1b921b547da7b74127bfe8eb1b622e020f9"
     },
     {
       "path": "topics/padua-lanczos-frontier-20261105/ideas-l5-l6.md",
@@ -169,6 +229,16 @@
       "sha256": "dc5207fc41be2dced520e874e34e4e5ea6a29758f0d6fa499e9c04c0b4566e9b"
     },
     {
+      "path": "topics/padua-lanczos-frontier-20261105/independent-checks-l4.md",
+      "bytes": 19491,
+      "sha256": "5f29a6409c96dd682caf9419bef8936de6dc43361366f57c06e24bb6859a5053"
+    },
+    {
+      "path": "topics/padua-lanczos-frontier-20261105/l4-producer-methods.md",
+      "bytes": 12653,
+      "sha256": "bf68c18708f274c5ac9fb7bf1119fe75df37f736f5cd83fc742b21704e236862"
+    },
+    {
       "path": "topics/padua-lanczos-frontier-20261105/l7-preregistration.md",
       "bytes": 6231,
       "sha256": "c42a8e6600b1e6d83a0c53f649ee849e5ab502dd67d4be55de13708f775a84bd"
@@ -179,9 +249,24 @@
       "sha256": "73d00f3ad5368594e986c24f29bac3f709d1eedc1608ba5f0cc04b9ca6cbd446"
     },
     {
+      "path": "topics/padua-lanczos-frontier-20261105/proposed-record-changes.md",
+      "bytes": 6169,
+      "sha256": "f715b0dcc434adbb13ce2fca07125707cb7f18329143be72a56a8b884203ca0a"
+    },
+    {
       "path": "topics/padua-lanczos-frontier-20261105/report.md",
-      "bytes": 4577,
-      "sha256": "cb4d7fec7a318b100cf3b04064d67b842817a64239718dbd0ece4c73ea745a06"
+      "bytes": 8335,
+      "sha256": "e4af96b47ff8867ae03621795ea840187b3b2b4b14d8b33c39142e5a8512c04f"
+    },
+    {
+      "path": "topics/padua-lanczos-frontier-20261105/theory/l4-N01-fixed-lower-envelope-obstruction.md",
+      "bytes": 10527,
+      "sha256": "03c244625280232a2b596e8ba044f1a60ca2216e5424776c1c9e1d6d1df2b049"
+    },
+    {
+      "path": "topics/padua-lanczos-frontier-20261105/theory/l4-envelope-bound.md",
+      "bytes": 19609,
+      "sha256": "24efe5aa0162f302be159ea75433dfbf7150751f204a6fb61e7d6529a7c4c78b"
     }
   ]
 }
