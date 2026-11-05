@@ -1,6 +1,6 @@
 # Handoff 04 — signed Padua MZ frontier — audited PR preparation
 
-- Status: open
+- Status: done in 64e2cd0bc9a6916dd4711af0d18898d51fbaff8b
 - Previous handoff: [03-response.md](03-response.md), done in 8fc9c1da776f85a784eead3591c02fcf4b642250
 - Next agent / model / effort: Codex, gpt-6.1-sol medium (mechanical preparation and integration checks). Mathematical changes require the workflow’s appropriate development model and a distinct audit; do not silently introduce them here.
 - Role: topic orchestrator for audited PR preparation

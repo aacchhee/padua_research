@@ -1,7 +1,7 @@
 # Signed Padua MZ frontier (PD-T110, PD-T028, PD-T116, PD-T114; 1-D PD-T027): log
 
 - Branch: `codex/padua-mz-2d-frontier-20261105` · Development base: `440d107`; integrated main: `d9b7cb8` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: PR (preparation complete; ready for AC review) · Next: `Codex (gpt-6.1-sol, medium): Continue codex/padua-mz-2d-frontier-20261105.` · Handoff04 output complete; handoff05 publishes next.
+- Stage: PR (ready for AC review/merge decision) · Next: `Codex (gpt-6.1-sol, medium): Continue codex/padua-mz-2d-frontier-20261105.` · Open handoff: [handoffs/05-readiness.md](handoffs/05-readiness.md)
 - Permanent reservations: T294–323, N104–115, IDEA384–413, LIT574–581, first pushed e79c576; no final assignments. [Ledger](ALLOCATIONS.md).
 - Claims: analytic signed spectral countersequences and sharp half-degree threshold; uniform C→L2 norm below30; positive-reference diamond estimate; finite independently certifiedm60/m80; scoped warmups. [Report](report.md). Claude [audit-01](audit-01.md): mathematics ACCEPTED at stated scopes; seven P3 documentation findings (A1–A7).
 - Open for AC: none at setup. Ask AC before using any machine outside the sandbox. AC decision 2026-11-05 (audit session): keep registry Status OPEN with `REJECTED: refuted` disposition for PD-T028/110/116.
@@ -75,3 +75,4 @@
 - Clarification: earlier “273 unrelated rows” meant distinct IDs; there are274 physical rows because PD-T140 has two inherited labelled claims. Both physical rows survive byte-for-byte, and preparation/verify.py now checks this explicitly.
 - Preparation complete: canonical registrations/current supersession, exact own RESULTS section, proof impact, live reservations, integration rehearsals, compact current inventory, storage size and protocol checks passed. Ready for AC review/merge decision only; no new scientific campaign or Claude mathematical re-audit is required by this mechanical preparation.
 - Final prospective conservative budget:1013 non-record files /4,088,421bytes, margin911,579bytes(18.23158%) below5,000,000; sorted size/path SHA2569a6ae673da9c005982aa41f451c74f06d92dad1c6eb0aa12f67dd18910478736. Current compact inventory116 identities; all new JSON files<=16KiB. Physical delivery pending remains nonblocking under the accepted audit scope.
+- Final actual squash of preparation output `64e2cd0bc9a6916dd4711af0d18898d51fbaff8b` onto main `d9b7cb89460d4e46e44bbaa66ff766aa499b95ee` was clean and exactly matched candidate tree `f1e0722a9b59a2a550721a6a56fcdd636318e0cf`. [Handoff04](handoffs/04-preparation.md) done in that output; [handoff05](handoffs/05-readiness.md) preserves AC decision/lifecycle check only, with no new scientific campaign assigned.
