@@ -60,7 +60,9 @@ audit follows development. No shared registry or final allocation changed.
 The continuous triangle/disk rate questions remain OPEN after the N3
 recursion attempts redirected to P4. Scope and chronology limitations are
 retained in the theory records and topic log. Distinct supplementary checks
-are underway; the required Claude audit has not yet occurred.
+accept the P3/P4/P5 proofs and terminal-block corollary, and reproduce the
+completed Hahn16/disk8 finite evidence without unresolved findings. The
+required Claude audit and disk16 completion check have not yet occurred.
 
 ## Next step
 

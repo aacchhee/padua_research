@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "scope": "tiny exact terminal-degree model check",
+  "input": "L=n+1 triangular lattice; weights proportional to 1+i+2j",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "code_sha256": {
+    "p4_terminal_check.py": "59b692fdf001fcb63af6f6f034f29ebec9dc4a020ca45e1e40470b79883fe539",
+    "p4_weighted_check.py": "97d6bfaab41e9eb480bf3da116e5341745f0865ddd35e4bd8402bb525c045006"
+  },
+  "rows": [
+    {
+      "degree": 2,
+      "rule": "BJ",
+      "nodes": 10,
+      "block_size": 3,
+      "source_vectors": 5,
+      "normal_response_and_generalized_rayleigh": "PASS"
+    },
+    {
+      "degree": 2,
+      "rule": "mirror",
+      "nodes": 10,
+      "block_size": 3,
+      "source_vectors": 5,
+      "normal_response_and_generalized_rayleigh": "PASS"
+    },
+    {
+      "degree": 3,
+      "rule": "BJ",
+      "nodes": 15,
+      "block_size": 4,
+      "source_vectors": 6,
+      "normal_response_and_generalized_rayleigh": "PASS"
+    },
+    {
+      "degree": 3,
+      "rule": "mirror",
+      "nodes": 15,
+      "block_size": 4,
+      "source_vectors": 6,
+      "normal_response_and_generalized_rayleigh": "PASS"
+    }
+  ],
+  "source_vectors": 22,
+  "spectral_maximum_computation": "NOT RUN; equality proved analytically",
+  "cross_family_degree_12_16_gate": "NOT RUN",
+  "independent_rerun": "NOT CLAIMED"
+}

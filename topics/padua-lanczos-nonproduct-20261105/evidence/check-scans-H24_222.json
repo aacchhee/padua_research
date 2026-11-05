@@ -1,0 +1,299 @@
+{
+  "status": "PASS exact two-path weighted finite scan",
+  "family": "H24_222",
+  "max_degree": 16,
+  "per_case_seconds": 600,
+  "head": "698802430d333d559668d990123a317f33485064",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "topics/padua-lanczos-nonproduct-20261105/code/p6_scan.py",
+    "--family",
+    "H24_222",
+    "--max-degree",
+    "16",
+    "--seconds",
+    "600",
+    "--work-dir",
+    "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222",
+    "--receipt",
+    "topics/padua-lanczos-nonproduct-20261105/evidence/check-scans-H24_222.json"
+  ],
+  "input": {
+    "family": "H24_222",
+    "admission": "theory/p1-triangle-admission.md",
+    "point_count": 325,
+    "supplied_weight_sum": "1",
+    "native_weight_sum": "1",
+    "native_input_bytes": 5873,
+    "native_input_sha256": "b54d4a053d4d0c86c7f00715d309015126760ecc55be40435072caca7e900b61",
+    "parameters": {
+      "N": 24,
+      "a_b_c": [
+        2,
+        2,
+        2
+      ],
+      "weights": "normalized rational"
+    },
+    "model": "positive finite measure; weighted Euclidean aggregate source norm"
+  },
+  "harness": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_scan.py",
+    "bytes": 6551,
+    "sha256": "cbb3314d917dbfbdff63e92175fa9338840979f6af5dcfb9d42015c09125f912"
+  },
+  "input_generator": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_families.py",
+    "bytes": 2362,
+    "sha256": "6bf4e94219853c5878b8580d9250cf007e2224e10c1785a021098d18e9f0b38c"
+  },
+  "input_preparer": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_inputs.py",
+    "bytes": 2207,
+    "sha256": "7b9729664cd9c68aa2362c004e256aa29d3326703494536ad5899ab90bda893a"
+  },
+  "row_guard": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_rows.py",
+    "bytes": 2202,
+    "sha256": "53728ef0f1db483280371de7726454e301fd386b66072157f99f016fba9f2eaf"
+  },
+  "python": "3.12.14",
+  "runs": [
+    {
+      "backend": "producer",
+      "rule": "bj",
+      "command": [
+        "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/producer",
+        "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/input.txt",
+        "16",
+        "bj",
+        "H24_222"
+      ],
+      "status": "PASS exact row guards",
+      "rows": 15,
+      "elapsed_seconds": 4.6179825050001,
+      "output": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/producer-bj.jsonl",
+        "bytes": 13338,
+        "sha256": "7e1e46aca6b40c936060a7e61cfc530b98fa04cc0ef3598c5aa09644cca88919"
+      },
+      "log": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/producer-bj.log",
+        "bytes": 2483,
+        "sha256": "829250896c2bb36b7cfbe36ed663329b40b29af185702bfd5b1aa0c4b26b6308"
+      }
+    },
+    {
+      "backend": "producer",
+      "rule": "mirror",
+      "command": [
+        "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/producer",
+        "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/input.txt",
+        "16",
+        "mirror",
+        "H24_222"
+      ],
+      "status": "PASS exact row guards",
+      "rows": 15,
+      "elapsed_seconds": 3.001205243999948,
+      "output": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/producer-mirror.jsonl",
+        "bytes": 13196,
+        "sha256": "77aeb38426944a709fe218724542d4e73ac9f1e3ee0b6395535a422fd0ac8a44"
+      },
+      "log": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/producer-mirror.log",
+        "bytes": 2547,
+        "sha256": "a42771e91f5c918c88781fb676fcc4099ac04eede9eb0bb65c3664077b98fe59"
+      }
+    },
+    {
+      "backend": "producer",
+      "rule": "alt",
+      "command": [
+        "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/producer",
+        "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/input.txt",
+        "16",
+        "alt",
+        "H24_222"
+      ],
+      "status": "PASS exact row guards",
+      "rows": 15,
+      "elapsed_seconds": 4.710003947000132,
+      "output": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/producer-alt.jsonl",
+        "bytes": 14882,
+        "sha256": "f67a8c05afea070fa20dc3ec2862c20441fb16e3988369919d2a7f0465d08f0d"
+      },
+      "log": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/producer-alt.log",
+        "bytes": 2499,
+        "sha256": "ea7dfdbc8cd8824fc934687bd0eea9ebee4b7da2ef00b72e815d65b573de2d1e"
+      }
+    },
+    {
+      "backend": "producer",
+      "rule": "pivot",
+      "command": [
+        "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/producer",
+        "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/input.txt",
+        "16",
+        "pivot",
+        "H24_222"
+      ],
+      "status": "PASS exact row guards",
+      "rows": 15,
+      "elapsed_seconds": 5.0342212210000525,
+      "output": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/producer-pivot.jsonl",
+        "bytes": 15062,
+        "sha256": "3477bc9bd5328762164c57b1c61c77e0604318f854ba08dcd339dc8ac6cfe651"
+      },
+      "log": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/producer-pivot.log",
+        "bytes": 2531,
+        "sha256": "3a51d2ba567abf58a1d5d8f9caf98b2249ecef7e0d92b4aa3ba01a1b33619fb2"
+      }
+    },
+    {
+      "backend": "checker",
+      "rule": "bj",
+      "command": [
+        "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/checker",
+        "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/input.txt",
+        "16",
+        "bj",
+        "H24_222"
+      ],
+      "status": "PASS exact row guards",
+      "rows": 15,
+      "elapsed_seconds": 14.402468860999988,
+      "output": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/checker-bj.jsonl",
+        "bytes": 13334,
+        "sha256": "6e52a011b74679647ef8c2d9b8c4a910af95fc6ad91c8ba6b023da7998c15c0d"
+      },
+      "log": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/checker-bj.log",
+        "bytes": 2483,
+        "sha256": "829250896c2bb36b7cfbe36ed663329b40b29af185702bfd5b1aa0c4b26b6308"
+      }
+    },
+    {
+      "backend": "checker",
+      "rule": "mirror",
+      "command": [
+        "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/checker",
+        "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/input.txt",
+        "16",
+        "mirror",
+        "H24_222"
+      ],
+      "status": "PASS exact row guards",
+      "rows": 15,
+      "elapsed_seconds": 11.758944695999844,
+      "output": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/checker-mirror.jsonl",
+        "bytes": 13194,
+        "sha256": "675b865c6786714052e9f479866da41e7d566e656f0de074382beb992c8d929b"
+      },
+      "log": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/checker-mirror.log",
+        "bytes": 2547,
+        "sha256": "a42771e91f5c918c88781fb676fcc4099ac04eede9eb0bb65c3664077b98fe59"
+      }
+    },
+    {
+      "backend": "checker",
+      "rule": "alt",
+      "command": [
+        "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/checker",
+        "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/input.txt",
+        "16",
+        "alt",
+        "H24_222"
+      ],
+      "status": "PASS exact row guards",
+      "rows": 15,
+      "elapsed_seconds": 13.594430594999949,
+      "output": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/checker-alt.jsonl",
+        "bytes": 14881,
+        "sha256": "0ea58288cbc127153814461cfe5e9de7b8b89950429c94093509ab1e29ff4e3f"
+      },
+      "log": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/checker-alt.log",
+        "bytes": 2499,
+        "sha256": "ea7dfdbc8cd8824fc934687bd0eea9ebee4b7da2ef00b72e815d65b573de2d1e"
+      }
+    },
+    {
+      "backend": "checker",
+      "rule": "pivot",
+      "command": [
+        "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/checker",
+        "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/input.txt",
+        "16",
+        "pivot",
+        "H24_222"
+      ],
+      "status": "PASS exact row guards",
+      "rows": 15,
+      "elapsed_seconds": 14.194580603000077,
+      "output": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/checker-pivot.jsonl",
+        "bytes": 15061,
+        "sha256": "ae12ba6d03d8835f91bdd0bae8cdfb3eda07f1f1cfc99aa0020b2bbfc7e5dd6d"
+      },
+      "log": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/checker-pivot.log",
+        "bytes": 2531,
+        "sha256": "3a51d2ba567abf58a1d5d8f9caf98b2249ecef7e0d92b4aa3ba01a1b33619fb2"
+      }
+    }
+  ],
+  "backends": {
+    "producer": {
+      "source": {
+        "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_native.cpp",
+        "bytes": 9914,
+        "sha256": "41c11190b7b15bb5acd5070ccfdb1b66a4bad3739e02d727aba4a506cee2ed6d"
+      },
+      "compile_command": [
+        "g++",
+        "-O3",
+        "-std=c++17",
+        "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_native.cpp",
+        "-lgmpxx",
+        "-lgmp",
+        "-o",
+        "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/producer"
+      ],
+      "compile_seconds": 2.3695471780001753
+    },
+    "checker": {
+      "source": {
+        "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_scalar_check.cpp",
+        "bytes": 5495,
+        "sha256": "58480a866b56e22c61add95d01f90774726b5f90e32186354ef1ab8f87b10b72"
+      },
+      "compile_command": [
+        "g++",
+        "-O3",
+        "-std=c++17",
+        "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_scalar_check.cpp",
+        "-lgmpxx",
+        "-lgmp",
+        "-o",
+        "/tmp/padua-lanczos-nonproduct-20261105/scan-review/H24_222/checker"
+      ],
+      "compile_seconds": 1.6877680469999632
+    }
+  },
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "gmp_version": "6.3.0",
+  "exact_rows_compared": 60,
+  "independence_limit": "Two arithmetic paths adapted by the same worker; distinct-agent rerun/audit remains separate.",
+  "model": "P4-02 all-source aggregate Hilbert input, spectral normal output; endpoints bound capacity, no asymptotic inference"
+}

@@ -69,6 +69,7 @@ Overall status: PROVED (analytic weighted model extension).
 | Part | Status | Evidence |
 |---|---|---|
 | Weighted derivative and endpoint formulas | PROVED | Written proof below |
+| Routine attained terminal-degree block corollary | PROVED | Constant inverse and common normal source below; no separate ID |
 
 Candidate disposition: retained model lemma; no family growth law claimed.
 
@@ -91,6 +92,19 @@ node weight. Code hash and Python/platform identity are in the compact
 [receipt](../evidence/p4-weighted-check.json). This is the developer's
 execution, not an independent rerun or a finite reduction of the analytic
 theorem. Bulk degree12–16 structural controls remain incomplete.
+
+The routine terminal-degree corollary below also has a supplementary
+exact check:
+
+    python3 topics/padua-lanczos-nonproduct-20261105/code/p4_terminal_check.py > topics/padua-lanczos-nonproduct-20261105/evidence/p4-terminal-check.json
+
+All22 simultaneous source vectors passed on the same four n=2/3,
+BJ/mirror weighted-triangle cases. Independently differentiated full
+sequential projection agrees with the constant terminal block on a common
+normal vector, including the generalized Rayleigh quotient and zero
+earlier-degree responses. [Receipt](../evidence/p4-terminal-check.json)
+pins both source files. This is developer execution; no independent
+rerun, spectral maximum computation or cross-family gate pass is claimed.
 
 ## Sources
 
@@ -138,6 +152,66 @@ Cauchy–Schwarz and spectral<=Frobenius give
 Weights enter d,sigma and P; the source coordinate e_i is Euclidean unit
 length and contributes no additional w_i. This completes the proof.
 
+## Routine corollary: attained terminal-degree block
+
+This is a PROVED corollary of the displayed normal quotient, consolidated
+with PD-T324's common-normal-source construction. It has no new theorem
+ID or historical-mechanism claim. The same statement holds in the compact
+L2 model of [P4-03](p4-continuous-capacity.md), without requiring atomlessness,
+provided the polynomial normal space is nonzero.
+
+Fix s>=1 and let T={N_(s-1),...,N_s-1} be exactly the s+1 final-degree
+columns. Define square matrices indexed by T:
+
+    A_kk=1, A_kl=alpha_kl for l<k, A_kl=0 for l>k,
+    G=A^(-1), D_T=diag(d_k), S_T=diag(sigma_h^2),
+    M_T=D_T^(-1/2) G S_T^(1/2).
+
+If ran(R_s) is nonzero, the **restricted** capacity is exactly
+
+    kappa_s(T)=||M_T||_2.                                  (3)
+
+In particular (3) is a lower bound for the all-source capacity. For finite
+positive measures U(s) and M>N_s ensure the required nonzero normal space.
+For atomless compact measures it follows from infinite-dimensional L2
+and the finite dimension of Pi_s. If ran(R_s)=0 the restricted capacity
+is zero instead; the positive matrix norm in (3) must not be used.
+
+To prove (3), set all earlier sources to zero. Causality makes every
+frozen response before T zero. Each terminal parent has degree s-1,
+so its response is zero as well. The frozen terminal recurrence becomes
+
+    V_k+sum_(l in T,l<k)alpha_kl V_l=f_k.
+
+Thus V=Gf, with constant coefficients and no coordinate dependence.
+Write f_h=sigma_h u_h and let U:R^(s+1)->H have columns u_h. Its
+Hilbert–Schmidt norm equals the source norm. The normalized output is
+
+    W=R_s U M_T^T,
+
+so ||W||_2<=||U||_HS||M_T||_2. Conversely choose a unit e in ran(R_s)
+and a unit right singular vector v for the largest singular value of
+M_T. Put u_h=v_h e. The source norm is one, and W=e(M_T v)^T has
+spectral norm exactly ||M_T||_2. This proves (3), with attainment.
+
+Equivalently, its squared norm is the largest generalized Rayleigh
+quotient
+
+    max_(r!=0) [r^T G^T D_T^(-1) G r]/[r^T S_T^(-1) r].    (4)
+
+The two matrices in (4) are rational for rational nodes/weights. Their
+maximum need not be rational. Formula (4) fixes the source and output
+gauges explicitly; it does not identify a raw unscaled inverse norm.
+
+Unlike a single-node impulse, the maximizing sources share a normal
+vector across the ambient coordinates. Unlike PD-T142/143's inverse
+upper score, (3) is an attained capacity for this declared restricted
+source set. These are routine consequences of the already available
+quotient and normal-source argument, not a new growth mechanism. The
+SH topchain of PD-T324 is a one-source subchannel of this block; its
+proved lower need not equal the entire block norm. No bound for earlier
+sources or polynomial all-source comparator follows from (3).
+
 ## Scope
 
 This is the finite M-dimensional source model. Matching polynomial moments
@@ -159,3 +233,6 @@ bounds and atomless model are proved separately in
 - 2026-11-05: Codex P4 developer, gpt-6.1-sol xhigh allocation, runtime
   metadata unexposed; rules head ed5515ed84e0e7b12163175dce9f22a859c89c99.
   Written after the prospective gate. No execution claimed at creation.
+- 2026-11-05 round3: after boundary dbe5c81 and the prospective terminal
+  delta gate, appended the routine attained-block corollary and executed
+  its tiny exact check. No new ID, growth criterion or independent audit.

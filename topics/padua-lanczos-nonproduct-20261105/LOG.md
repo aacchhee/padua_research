@@ -173,3 +173,33 @@ candidate's mathematics.
   started case as cancelled/partial. Retain the complete independently
   matched degree8 coverage and an honest incomplete N2 mask. Per-case limits
   are not shortened because of elapsed waiting.
+
+## 2026-11-05 — final model/source rounds and supplementary checks
+
+- P1 round3 completed its bounded primary-source search/read within ten
+  minutes: the complete Xu preprint is read, other fulltext/access limits
+  are in the [source checkpoint](theory/p1-literature-checkpoint.md). The
+  triangle rate target stays OPEN; no theorem is imported from an unread
+  source. P1 pauses after three productive rounds.
+- P4 round3 consolidated a routine attained terminal-degree block norm
+  into its existing weighted quotient record, without a new ID. It supplies
+  a restricted capacity, hence an all-source lower only. Twenty-two exact
+  simultaneous-source tests pass; P4 pauses with the general criterion OPEN.
+- [Distinct Astra high mathematical review](independent-checks-math.md)
+  accepts P3/P4/P5 and the focused terminal-block addition without unresolved
+  mathematical findings. Four actual separate exact reruns pass. The
+  [distinct scan review](independent-checks-scans.md) reproduces H24 through16,
+  disk through8, independently reconstructs12 small formula cases and both
+  N2 outcomes, and checks malformed inputs. Disk16 is outside that scope.
+- Disk16 BJ/mirror fast producers completed in277.84/313.87s; other fast
+  cases and independent arithmetic remain in progress. Given AC's6h/run,
+  ~48h CPU authorization, prospectively extend only missing disk cases to
+  3600s in a separate successor, up to four native processes. Preserve the
+  original600s outcomes and source/harness hashes. Unstarted scalar600s
+  cases may be superseded directly; any automatically started case is
+  recorded as cancelled if stopped. This is a resource-plan extension,
+  with no N2 threshold/input/model change or fabricated completion.
+- A bounded Sol medium technical worker investigates exact-zero fast paths
+  in the scalar checker. It owns disjoint source/note files and may not
+  replace the accepted path without measured benefit and focused review.
+  Current native source arithmetic and in-flight identities stay unchanged.

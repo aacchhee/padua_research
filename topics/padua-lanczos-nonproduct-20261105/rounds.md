@@ -6,10 +6,10 @@ progress stop that direction.
 
 | Direction | Completed rounds | Current work |
 |---|---:|---|
-| P1 triangle | 2 | Round 2: exact creator probe complete; N3 redirects to P4. Round 3: bounded primary-source search/read |
+| P1 triangle | 3 | Round 3 complete: Xu full preprint read; access limits recorded. Triangle rate target remains OPEN |
 | P2 disk | 2 | Round 2: symmetry covariance and finite probe interpretation complete; paused at N3 redirect, rate question OPEN |
 | P3 perturbed SH | 2 | Round 2: unchanged exponential BJ / polynomial mirror inequalities and uniform eta certificate proved analytically |
-| P4 structural criterion | 2 | Round 2:370 exact derivative directions pass; covariance-only absolute-capacity bound refuted. Round 3: bounded final-degree block candidate gate |
+| P4 structural criterion | 3 | Round 3 complete: terminal-block routine corollary consolidated;22 exact tests and distinct rerun pass. General criterion OPEN |
 | P5 Padua | 1 | Round 1 complete: nonproduct admission and two-sided polynomial BJ/mirror bounds proved; exact supplementary checks pass |
 | P6 exact scans | 3 | Round 3: H24 complete through16 and two N2 screens INCONCLUSIVE; disk8 matched, disk16 running under cap. Round 4: disk resource disposition |
 
@@ -63,3 +63,10 @@ progress stop that direction.
   T24 inherited and H24 fresh [N2 screens](theory/p6-n2-screen.md) are
   INCONCLUSIVE. Disk degree8 has28 matched rows; degree16 remains running,
   with no full-window or completion claim at this boundary.
+- P1 round 3: [bounded source checkpoint](theory/p1-literature-checkpoint.md),
+  complete Xu preprint read, other source/access limitations retained. No
+  literature theorem supplies a new capacity rate or N3 success.
+- P4 round 3: terminal-degree restricted capacity is a routine exact
+  triangular-block norm corollary in the existing weighted record. No new
+  result ID;22 simultaneous-source checks and distinct rerun pass. It is
+  an all-source lower only, with no full-source upper or family rate.

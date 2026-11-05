@@ -85,3 +85,15 @@ Tratnik/Xu/Griffiths discrete sources remain acquisition/reading tasks before
 any citation or dependence. Source discovery and access attempts, if executed,
 will be appended with exact URLs, outcomes and coverage. No priority or
 exhaustive novelty claim is made.
+
+### Round 3 source checkpoint (after derivation, not part of the prospective gate)
+
+[The bounded source record](theory/p1-literature-checkpoint.md) documents this
+worker's complete read of Xu's arXiv:1309.1510v1 and distinguishes acquired
+but unread Griffiths–Spanò text, a preview-only Dunkl–Xu chapter, and failed
+Tratnik DOI retrieval. The standard simplex/Hahn families and bases are
+literature antecedents; no historical novelty is claimed for them. The
+ordered creator-capacity comparison remains a campaign obligation. Neither
+external formulas nor source proofs were used to generate the first two
+rounds' local results. The earlier paragraph describes the pre-derivation
+state; this appendix records the later reading without backdating it.

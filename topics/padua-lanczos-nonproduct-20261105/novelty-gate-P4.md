@@ -61,3 +61,26 @@ all-degree family proof, carry out the explicit handoff's exact cross-family
 tests through degree12–16; incomplete controls stay incomplete. General
 definition/admission and model-translation lemmas do not assert a family
 growth law. Bulk finite tests belong to P6.
+
+## Round 3 terminal-degree delta gate
+
+After round2 boundary dbe5c81, reread PD-T136/137/142/143 and PD-T324
+in full, recovering the truncated combined view of PD-T142/143 separately.
+PD-T136 already gives every frozen response and its normal quotient;
+PD-T137 gives restricted-source capacity and norm bounds. PD-T142/143
+provide inverse upper certificates, not unrestricted attainment. PD-T324
+already realizes a scalar terminal-degree chain with one common normal
+source. The contemplated full terminal-degree block combines exactly
+these ingredients: lower-degree responses vanish and its constant
+triangular inverse is attained using a common normal source.
+
+Verdict before development: **consolidate as a routine corollary**, retaining
+its alias under P4-03; do not allocate a new theorem/negative ID or claim
+a new mechanism. The limited useful distinction is an exact attained
+restricted block norm, including finite source spaces with nonzero normal
+space, rather than a trace upper or single-column lower. Cheapest check:
+weighted triangle n=2/3, BJ/mirror, exact block response versus full dual
+projection for simultaneous terminal sources proportional to one normal
+vector. Any missing source/output gauge or residual lower-degree
+dependence kills the proposed formula. It cannot upper-bound all-source
+capacity or pass the pending cross-family growth gate.
