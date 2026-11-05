@@ -152,3 +152,24 @@ candidate's mathematics.
 - A second distinct Astra high checker independently verifies P6 code,
   actual scans and signed-OLS interval screens. These supplementary checks
   do not replace the required later Claude audit.
+
+## 2026-11-05 — P4 round 2 and P6 round 3
+
+- P4 executed an exact weighted normal-derivative comparison over370 source
+  directions, then proved the scoped [fixed-covariance absolute-capacity
+  obstruction](theory/p4-covariance-capacity-obstruction.md), corroborated
+  by eight rational moment/Gram cases. Distinct fixed principal axes do not
+  control absolute degree-two capacity. This says nothing about the original
+  all-degree BJ/best ratio iff, which remains OPEN. A final bounded round
+  screens a restricted final-degree block-norm candidate for duplication.
+- P6 cost benchmarks matched both arithmetic paths through8 on H24_222
+  and D36x9. Fresh H24 degree2–16 then completed60 rows, all four rules,
+  maximum producer/checker case times3.24/10.20s. [N2 reanalysis](theory/p6-n2-screen.md)
+  on inherited T24 and fresh H24 is INCONCLUSIVE under unchanged thresholds;
+  signed-OLS interval extrema and independently implemented corner checks
+  agree. No exact capacity or asymptotic rate was calculated.
+- Disk16 is in progress under600s per case. If initial BJ/mirror cases hit
+  the cap, stop remaining similar-cost cases, recording any automatically
+  started case as cancelled/partial. Retain the complete independently
+  matched degree8 coverage and an honest incomplete N2 mask. Per-case limits
+  are not shortened because of elapsed waiting.

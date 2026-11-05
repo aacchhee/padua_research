@@ -108,3 +108,14 @@ Further perturbed-SH/Padua exact grids remain unscanned pending viable specs.
 metadata not independently exposed. P6 round1 gate/schema preceded all P6
 runs. Coordinator pushed round1 `3d49d32` and authorized round2 before the
 pilots. P4-02 formula proof and P1/P2 admissions were read before execution.
+
+### Round3 additive coverage — H24_222 through16
+
+The H24_222 statement now additionally covers every degree2–16 and all four
+rules (60 exact rows), all-source, with two-path exact agreement. Status
+remains MEASURED. Actual cap600seconds/case; max producer3.231s/checker10.195s.
+`../evidence/p6-full16-H24_222.json` pins every command, input/source and
+output identity. Degree8 cost benchmarks for H24_222/D36x9 also matched all
+28 rows per family, with evidence `p6-benchmark8-*.json`. These finite
+completions do not broaden the underlying model or imply a rate. Disk16
+is running, explicitly not yet included in complete coverage.

@@ -9,9 +9,9 @@ progress stop that direction.
 | P1 triangle | 2 | Round 2: exact creator probe complete; N3 redirects to P4. Round 3: bounded primary-source search/read |
 | P2 disk | 2 | Round 2: symmetry covariance and finite probe interpretation complete; paused at N3 redirect, rate question OPEN |
 | P3 perturbed SH | 2 | Round 2: unchanged exponential BJ / polynomial mirror inequalities and uniform eta certificate proved analytically |
-| P4 structural criterion | 1 | Round 1: common definition, weighted quotient, exact atomless capacity and proved moment transfer. Round 2: exact model sanity checks and criterion gate |
+| P4 structural criterion | 2 | Round 2:370 exact derivative directions pass; covariance-only absolute-capacity bound refuted. Round 3: bounded final-degree block candidate gate |
 | P5 Padua | 1 | Round 1 complete: nonproduct admission and two-sided polynomial BJ/mirror bounds proved; exact supplementary checks pass |
-| P6 exact scans | 2 | Round 2: 36 exact weighted pilot rows match two arithmetic paths. Round 3: inherited N2 reanalysis and degree-eight cost benchmarks before sixteen |
+| P6 exact scans | 3 | Round 3: H24 complete through16 and two N2 screens INCONCLUSIVE; disk8 matched, disk16 running under cap. Round 4: disk resource disposition |
 
 ## Round outcomes
 
@@ -55,3 +55,11 @@ progress stop that direction.
   [capacity](theory/p5-02-padua-polynomial-capacity.md). For every m>s>=1,
   both BJ/mirror lie between sqrt(ceil(s/2)) and2sqrt(2)(s+1)(N_s-1).
   Exact algebraic supplementary m2–5 checks pass; no fitted rate premise.
+- P4 round 2: [weighted exact check](evidence/p4-weighted-check.json) passes
+  370 source directions. [Covariance limitation](theory/p4-covariance-capacity-obstruction.md)
+  proves fixed covariance/principal axes do not bound absolute degree-two
+  capacity; it does not refute the original asymptotic ratio iff.
+- P6 round 3: H24_222 has60 complete exact two-path rows through16. Both
+  T24 inherited and H24 fresh [N2 screens](theory/p6-n2-screen.md) are
+  INCONCLUSIVE. Disk degree8 has28 matched rows; degree16 remains running,
+  with no full-window or completion claim at this boundary.

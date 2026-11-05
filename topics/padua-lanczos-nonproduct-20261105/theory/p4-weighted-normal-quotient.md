@@ -79,9 +79,18 @@ weights here. No reliance on their uniform-weight statement outside scope.
 
 ## Checks
 
-No computer-assisted proof component. A supplementary tiny rational dual
-check is planned in attempts/P4.md; it has not yet executed at this file's
-creation. Bulk degree12–16 structural controls remain incomplete.
+No computer-assisted proof component. Supplementary exact Fraction
+dual-number graph check executed:
+
+    python3 topics/padua-lanczos-nonproduct-20261105/code/p4_weighted_check.py --output topics/padua-lanczos-nonproduct-20261105/evidence/p4-weighted-check.json
+
+It passed all370 separate source-column/node directions for BJ/mirror at
+degrees2/3 on L=n+1 triangular lattices with weights proportional to
+1+i+2j. It also verified the impulse/source/leverage scaling with no extra
+node weight. Code hash and Python/platform identity are in the compact
+[receipt](../evidence/p4-weighted-check.json). This is the developer's
+execution, not an independent rerun or a finite reduction of the analytic
+theorem. Bulk degree12–16 structural controls remain incomplete.
 
 ## Sources
 
@@ -140,8 +149,10 @@ M>N_s and U(s) are separate admission requirements.
 
 ## Open items
 
-Supplementary exact derivative check; complete cross-family tests; tighter
-row spectral bounds; atomless model and any rigorously justified transfer.
+Complete cross-family tests and independent check. Tighter row spectral
+bounds and atomless model are proved separately in
+[p4-continuous-capacity.md](p4-continuous-capacity.md); moment transfer in
+[p4-moment-capacity-transfer.md](p4-moment-capacity-transfer.md).
 
 ## History
 

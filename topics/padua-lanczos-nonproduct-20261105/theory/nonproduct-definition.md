@@ -5,7 +5,8 @@ Aliases: genuinely non-product; invertible-affine independence; support-hull
 admission; nonmultiplicative rectangular weights.
 Split from: the P4 structural-family target, which remains OPEN.
 Split into: weighted aggregate model in p4-weighted-normal-quotient.md;
-continuous-source comparison, when established, in its separate P4 record.
+continuous model in p4-continuous-capacity.md; moment/source transfer in
+p4-moment-capacity-transfer.md.
 
 ## Statement
 
@@ -59,6 +60,17 @@ N_n=(n+1)(n+2)/2. All weights used for admission are strictly positive.
 The coordinate order used for capacities is separately fixed; affine
 invariance of the *admission class* does not imply affine invariance of a
 specific BJ or mirror capacity.
+
+The finite exact model is a positive atomic measure with arbitrary
+represented Euclidean vector sources and M>N_n plus U(n). The continuous
+exact model is H=L2(mu), bounded coordinate multiplication on compact
+support and arbitrary H-valued sources. Its polynomial dimension is N_n,
+while H is infinite-dimensional for the atomless families considered
+here. Exact cubature may identify polynomial moments and recurrence
+coefficients; transfer of arbitrary-source capacity is a separate
+theorem, as proved in the linked P4 model/transfer records. In particular
+finite cubature is never identified silently with the atomless source
+space.
 
 ## Assumptions
 

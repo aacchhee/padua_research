@@ -80,3 +80,14 @@ predecessor T24 machinery remains separate and supplies frozen baseline
 comparison; generic input support changes only the node/weight interface
 and the P4-proved weighted inner products/projector diagonal. No extra
 weight is inserted into the Euclidean-source v_hi formula.
+
+## Round3 prospective cost refinement
+
+Coordinator instruction after round2: before degree16, benchmark H24_222 and
+D36x9 through degree8 on all four rules, producer first and scalar checker
+afterward if affordable, with120 seconds per native case. This is a cost
+screen, not N2. Only then launch feasible degree16 cases with600 seconds per
+case, prioritizing H24_222. Python's rational integer-string cap is raised
+before these runs; no endpoint truncation or approximate arithmetic is used.
+Keep every timeout and exact completion mask. Inherited T24 N2 reanalysis
+uses the accepted compact outward log enclosures, without duplicate scans.

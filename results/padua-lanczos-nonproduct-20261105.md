@@ -37,6 +37,10 @@ audit follows development. No shared registry or final allocation changed.
   degrees2–4 agree between two arithmetic implementations. This is one
   worker's execution, with distinct-agent checking separate.
   [Finite record](../topics/padua-lanczos-nonproduct-20261105/theory/p6-finite-scans.md).
+- **MEASURED:** fresh reweighted-triangle H24_222 scan has60 matched exact
+  rows through16. Its N2 interval screen and the inherited T24 reanalysis
+  are both INCONCLUSIVE; disk8 is matched and disk16 remains in progress.
+  [Screens](../topics/padua-lanczos-nonproduct-20261105/theory/p6-n2-screen.md).
 
 - **PROVED, all-degree separation:** an explicit n-dependent rank-two
   positive reweighting of SH is not affine-product and retains the original

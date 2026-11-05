@@ -13,6 +13,8 @@ from p6_families import specification
 from p6_inputs import prepare
 from p6_rows import compare, validate, FIELDS
 
+sys.set_int_max_str_digits(1000000)
+
 ROOT = Path(__file__).resolve().parents[3]
 CODE = Path(__file__).resolve().parent
 
@@ -27,10 +29,11 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--family', choices=('T24', 'H24_222', 'D36x9'), required=True)
     parser.add_argument('--max-degree', type=int, choices=range(4, 21), required=True)
-    parser.add_argument('--seconds', type=int, choices=(60, 600), required=True)
+    parser.add_argument('--seconds', type=int, choices=(60, 120, 600), required=True)
     parser.add_argument('--work-dir', type=Path, required=True)
     parser.add_argument('--receipt', type=Path, required=True)
     args = parser.parse_args()
+    assert args.family != 'D36x9' or args.max_degree <= 16, 'D36x9 scan admission stops at16'
     args.work_dir.mkdir(parents=True, exist_ok=False)
     spec = specification(args.family)
     assert (CODE.parent / spec['admission']).is_file()

@@ -118,6 +118,15 @@ every z, hence the atomless formula gives a strictly positive capacity.
 This demonstrates why arbitrary-source moment transfer cannot be
 asserted without retaining the ambient model.
 
+This zero-normal-space obstruction is realized, not merely hypothetical:
+take n=1 and nu uniform on the standard triangle, with density2. Give the
+three nodes (1/6,1/6),(2/3,1/6),(1/6,2/3) weight1/3 each. Direct summation
+matches mass1, E x=E y=1/3, E x^2=E y^2=1/6 and E xy=1/12, the triangle's
+degree2 moments. Its noncollinear three nodes give U(1) and M=N_1=3,
+so its finite capacity is zero and the triangle L2 capacity is positive.
+This is a model-distinction example outside finite N1's M>N_n admission
+gate; it does not kill any admitted oversampled family.
+
 ## Scope
 
 If a density perturbation preserves the moments through2n and stays
