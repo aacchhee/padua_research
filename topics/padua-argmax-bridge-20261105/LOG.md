@@ -47,6 +47,12 @@
 - AC: "Syvert1: 16 cores with 256gb memory, syvet2: 32 core with 128gb memory, use all this if necessary".
 - The handoff 01 compute limits and the pack table now name both hosts, with up to all of both for about a week under gate B4. syvert0 still needs a separate ask.
 
+## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — parallelism
+
+- AC: "Run as much as possible in parallel".
+- Handoff 01 task 2 now starts all six directions in parallel after task 0 and B1. It also parallelizes independent work inside each direction.
+- Only the coordinator writes shared files, and only real dependencies are serialized.
+
 ## Runs needed
 
 - B0–B6 and N1–N6 as in handoff 01.

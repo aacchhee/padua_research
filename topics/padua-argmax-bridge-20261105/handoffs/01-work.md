@@ -130,7 +130,15 @@ R3, the all-degree E-C comparison (PD-T248/249/231), stays available for coverin
    - Read the rules at the branch head and record the SHA.
    - In a fresh subagent, replay the native producer and checker at n = 24 and the PR #25 pilot at n = 32, against the committed receipts.
 1. **Gates B0–B6** (below). Write `plan.md` with time boxes before the first run.
-2. **N3 and N1/N2 in parallel**, in separate subagents with disjoint files. Run N4 and N5/N6 as side probes under the same round rule (below).
+2. **Run all directions in parallel from the start** (AC, 2026-11-05: "Run as much as possible in parallel").
+   - Spawn one subagent per direction, N1, N2, N3, N4, N5 and N6, each with disjoint file ownership. They all start right after task 0 and gate B1.
+   - Inside a direction, run independent pieces in parallel too: separate lemmas, the producer and the independent checker, degree blocks, calibration runs, and the literature reads.
+   - Only the coordinator writes the shared files: LOG, `rounds.md`, `gates.md`, results and the report.
+   - Serialize only real dependencies:
+     - B3 needs B1's margins;
+     - B4 needs numbers from both N1/N2 and N3;
+     - an independent check needs the finished producer output.
+   - Each direction runs under the round rule below.
 
    **Round budget (AC, 2026-11-05: "I'd allow more rounds if there is progress, let's say 15 rounds per direction").**
    - Each direction N1–N6 gets up to **15 rounds**.
