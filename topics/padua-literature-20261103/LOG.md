@@ -93,3 +93,19 @@
 - Shell Git fetch failed connecting to configured proxy8080; used GitHub connector pinned reads/publication. Current main refreshed to `21dbfc90257b952d8923f6d01739d12aa8d6e0a1`, three commits beyond the audit base; reconcile in the developer response before further development/preparation. Audit remains pinned to unchanged source head.
 - Fresh main/open-PR21/22/24 registry/ledger scan: unchanged LIT482–561 remains disjoint through593; all returned closed PRs merged. No range or final ID assigned; scientific registries unchanged.
 - Stage → WORK. [Handoff05](handoffs/05-response.md): Claude response, propagation fixes, current-main reconciliation and return to independent Codex review after material edits.
+
+## 2026-11-05 — Claude, claude-opus-5-5 high — response 01 (handoff 05)
+
+- Rules re-read at `ca358a9` (unchanged). Main `aff30e8` merged into the branch as `77f5db2` (clean).
+- [response-01.md](response-01.md): F1–F6 all accepted and answered with changes:
+  - F1: PD-T156/157 split into an upper half (IMPLIES PART) and a corner lower half (no matching result); 4/π² is not claimed as new.
+  - F2: Thm 9 hypothesis (u/√(wφ))^p ∈ A_p.
+  - F3: negative scoped to the borderline MZ-constant estimate.
+  - F4: Möller dim Π²_{n−1}.
+  - F5: downdating question scoped against IDEA-094/095.
+  - F6: Laurie awareness statement kept (published intro p. 1192), with the §7 proposal added.
+- Outstanding checks closed on page images: Dunkl–Xu p. 113, M–R copy pp. 18 and 22–23, Xu 1996 journal p. 231 (1 < p < ∞), De Marchi p. 23.
+- Closed by text layer: SVZ journal pp. 417/421; SINUM p. 1192; running-head locators for Xu TAMS 343/342, Dunkl–Xu and Greenbaum.
+- Direct Crossref: 10/10 matched.
+- Still open: the Pimenova image; an independent Kuznetsova recheck.
+- Old-block checker: 60/60 at 440d107 and at aff30e8. Reservation LIT-482–561 rechecked against main and PRs #24–#26. Receipt: [check/response-01-checks.json](check/response-01-checks.json).

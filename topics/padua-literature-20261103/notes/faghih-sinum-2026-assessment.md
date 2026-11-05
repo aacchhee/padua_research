@@ -29,7 +29,7 @@
 ## Corrections to existing records (proposed for PR preparation)
 
 - **LIT-347 / LIT-119.** The record says IEP_CORE "appears backward stable only for N < 25". The published §6.2 (p. 1211) states this for **both** IEP_CORE **and** IEP_KRYLREORTH(full), "for most values of N < 25", with instability for N ≥ 25. IEP_KRYL is never backward stable. Coverage can be upgraded from UNVERIFIED to fulltext-verified for these statements, with the locators above. Add the journal pages and the code URL.
-- The record's "authors know no extension of Laurie's approach to MOPs" should be reworded. §7 says extending Laurie's approach is a possibility the paper did not discuss, and points to vector and branched continued fractions. That is not a statement that no extension is known.
+- The record's "authors know no extension of Laurie's approach to MOPs" should be reworded. §7 says extending Laurie's approach is a possibility the paper did not discuss, and points to vector and branched continued fractions. That is not a statement that no extension is known. **Correction 2026-11-05 (response-01, audit-01 F6):** the introduction (p. 1192) does state that the authors are not aware of any extension of Laurie's approach to MOPs. The record's wording is therefore accurate as an author-limited statement and should be kept, with the §7 proposal added. The suggestion above to reword it was wrong.
 
 ## Relevance to the Padua IEP / bivariate-recurrence plans
 

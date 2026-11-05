@@ -114,7 +114,7 @@ Old:
 New:
 
 ```
-| LIT-347 (LIT?programme-ideas-claude-22) | Coverage-qualified LITERATURE; fact | Faghih–Rinelli–Van Barel–Vandebril–Vermeiren (SIAM J. Numer. Anal. 64(4) (2026) 1190–1216, arXiv 2506.19796): for discrete multiple OPs (step-line, banded Hessenberg with r superdiagonals) two IEP solvers are compared, biorthogonal Lanczos with multiple starting vectors (IEP_KRYL and reorthogonalized variants) and non-unitary core transformations (IEP_CORE). IEP_CORE and IEP_KRYLREORTH(full) are backward stable for most N < 25 and lose it for N ≥ 25; IEP_KRYL is not backward stable for any N considered; on Kravchuk/Hahn all methods are weakly stable. §7 future work: IEP conditioning; updating/downdating; extending Laurie's approach via vector or branched continued fractions (named as a possibility not discussed, not a claim that none is known); nearest-neighbour recurrences; comparison with Filipuk–Haneczok–Van Assche 2015. | faghih-et-al-2025 | Alg. 4.1 p. 1199; Alg. 5.1 p. 1205; §6.2 p. 1211; §7 p. 1213 | [record](records/faghih-et-al-2025.md) | VERIFIED-fulltext (published PDF read 2026-11-03, topics/padua-literature-20261103/notes/faghih-sinum-2026-assessment.md); §2/§4.1 proofs not read line by line; overlaps LIT-119 (PR #10) |
+| LIT-347 (LIT?programme-ideas-claude-22) | Coverage-qualified LITERATURE; fact | Faghih–Rinelli–Van Barel–Vandebril–Vermeiren (SIAM J. Numer. Anal. 64(4) (2026) 1190–1216, arXiv 2506.19796): for discrete multiple OPs (step-line, banded Hessenberg with r superdiagonals) two IEP solvers are compared, biorthogonal Lanczos with multiple starting vectors (IEP_KRYL and reorthogonalized variants) and non-unitary core transformations (IEP_CORE). IEP_CORE and IEP_KRYLREORTH(full) are backward stable for most N < 25 and lose it for N ≥ 25; IEP_KRYL is not backward stable for any N considered; on Kravchuk/Hahn all methods are weakly stable. §7 future work: IEP conditioning; updating/downdating; extending Laurie's approach via vector or branched continued fractions (named as a possibility not discussed; separately, the introduction, p. 1192, states that the authors are not aware of any extension of Laurie's approach to MOPs; neither statement asserts that none exists); nearest-neighbour recurrences; comparison with Filipuk–Haneczok–Van Assche 2015. | faghih-et-al-2025 | Alg. 4.1 p. 1199; Alg. 5.1 p. 1205; §6.2 p. 1211; §7 p. 1213 | [record](records/faghih-et-al-2025.md) | VERIFIED-fulltext (published PDF read 2026-11-03, topics/padua-literature-20261103/notes/faghih-sinum-2026-assessment.md); §2/§4.1 proofs not read line by line; overlaps LIT-119 (PR #10) |
 ```
 
 ### LIT-348 (INDEX.md line 175 at 2a9d02f)
@@ -184,7 +184,7 @@ Old:
 New:
 
 ```
-| LIT-119 (LIT?bivariate-lanczos-claude-054) | LITERATURE / VERIFIED-fulltext / IEP variants for MOPs | IEP_KRYL (biorthogonal Lanczos, several starts) is not backward stable for any N considered; IEP_CORE (non-unitary eliminators) and IEP_KRYLREORTH(full) are backward stable for most N < 25 and lose it for N ≥ 25; on Kravchuk/Hahn all methods are weakly stable. §7 names extending Laurie's approach via vector/branched continued fractions as a possibility not discussed (not a claim that none is known). | faghih-et-al-2025 | Alg. 4.1 p. 1199; Alg. 5.1 p. 1205; §6.2 p. 1211; §7 p. 1213 | [record](records/faghih-et-al-2025.md) | published PDF read 2026-11-03 (topics/padua-literature-20261103/notes/faghih-sinum-2026-assessment.md); §2/§4.1 proofs not read line by line |
+| LIT-119 (LIT?bivariate-lanczos-claude-054) | LITERATURE / VERIFIED-fulltext / IEP variants for MOPs | IEP_KRYL (biorthogonal Lanczos, several starts) is not backward stable for any N considered; IEP_CORE (non-unitary eliminators) and IEP_KRYLREORTH(full) are backward stable for most N < 25 and lose it for N ≥ 25; on Kravchuk/Hahn all methods are weakly stable. Introduction p. 1192: the authors are not aware of any extension of Laurie's approach to MOPs. §7 p. 1213 names extending it via vector/branched continued fractions as a possibility not discussed. Author-limited awareness, not universal nonexistence. | faghih-et-al-2025 | Alg. 4.1 p. 1199; Alg. 5.1 p. 1205; §6.2 p. 1211; §7 p. 1213 | [record](records/faghih-et-al-2025.md) | published PDF read 2026-11-03 (topics/padua-literature-20261103/notes/faghih-sinum-2026-assessment.md); §2/§4.1 proofs not read line by line |
 ```
 
 ## 2. literature/INDEX.md — new rows (append to the statement table, after the P1–P3 rows)
@@ -317,10 +317,10 @@ New:
 - Reading coverage: published PDF read 2026-11-03 (topics/padua-literature-20261103/notes/faghih-sinum-2026-assessment.md): §1, §3.2, §4.2–4.4, §5 opening + Alg. 5.1, §6.2–6.3, §7, references. Earlier: supplied secondary account only.
 ```
 
-In `### LIT-119 …`: replace the Verification, Statement and Page lines by the new LIT-119 row content above (backward stable for most N < 25 for IEP_CORE **and** IEP_KRYLREORTH(full); Laurie wording; locators Alg. 4.1 p. 1199, Alg. 5.1 p. 1205, §6.2 p. 1211, §7 p. 1213). Append to `## History`:
+In `### LIT-119 …`: replace the Verification, Statement and Page lines by the new LIT-119 row content above (backward stable for most N < 25 for IEP_CORE **and** IEP_KRYLREORTH(full); Laurie wording: introduction p. 1192 awareness statement kept, §7 p. 1213 proposal added; locators Alg. 4.1 p. 1199, Alg. 5.1 p. 1205, §6.2 p. 1211, §7 p. 1213). Append to `## History`:
 
 ```
-2026-11-03: fulltext corrections (padua-literature-20261103 P4, from the assessment note): stability statement covers IEP_CORE and IEP_KRYLREORTH(full); Laurie sentence reworded; journal citation, locators and code URL added.
+2026-11-03: fulltext corrections (padua-literature-20261103 P4, from the assessment note): stability statement covers IEP_CORE and IEP_KRYLREORTH(full); Laurie wording: introduction p. 1192 author-awareness statement kept, §7 p. 1213 extension proposal added (corrected 2026-11-05, response-01 F6); journal citation, locators and code URL added.
 ```
 
 ### literature/records/faghih-vanbarel-vandebril-2026.md
@@ -1096,7 +1096,7 @@ the first step and defers to Bos–De Marchi–Vianello, JAT 141 (2006).
 
 New row (final ID from LIT-482–561 at PR preparation):
 ```
-| LIT-??? (LIT?padua-literature-claude-85) | LITERATURE; fact | Mastroianni–Russo (Hadronic Press 2000, pp. 149–182): weighted algebraic Marcinkiewicz inequalities with uniform constants under doubling/A_p hypotheses (forward Thm 8; converse Thms 9–12; Lagrange-operator bounds Cors 13, 18). No rates. The CC nodes (even N) are an instance of Thm 11 with w Chebyshev first kind, μ = ν = 1, P ∈ Π_N; for u ≡ 1, p = 2 its hypothesis (1−x²) ∈ A_2 fails exactly at the power-weight endpoint. | mastroianni-russo-2000 | copy pp. 17, 18, 22–23 (book pp. 165, 166, 170–171, inferred) | [record](records/mastroianni-russo-2000.md) | AC-supplied copy read 2026-11-05 |
+| LIT-??? (LIT?padua-literature-claude-85) | LITERATURE; fact | Mastroianni–Russo (Hadronic Press 2000, pp. 149–182): weighted algebraic Marcinkiewicz inequalities with uniform constants under doubling/A_p hypotheses (forward Thm 8; converse Thms 9–12, Thm 9 under (u/√(wφ))^p ∈ A_p; Lagrange-operator bounds Cors 13, 18; Sobolev/Besov approximation rates m^{−r}, Thms 14–17). No quantitative borderline estimate for the lower MZ constant. The CC nodes (even N) are an instance of Thm 11 with w Chebyshev first kind, μ = ν = 1, P ∈ Π_N; for u ≡ 1, p = 2 its hypothesis (1−x²) ∈ A_2 fails exactly at the power-weight endpoint. | mastroianni-russo-2000 | copy pp. 17, 18, 22–23 (book pp. 165, 166, 170–171, inferred) | [record](records/mastroianni-russo-2000.md) | AC-supplied copy read 2026-11-05 |
 ```
 Addenda to append:
 ```

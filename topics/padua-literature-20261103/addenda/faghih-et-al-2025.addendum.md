@@ -8,7 +8,10 @@ A. Faghih, M. Rinelli, M. Van Barel, R. Vandebril, R. Vermeiren, "Krylov and Cor
 ## Corrections (old → new)
 
 1. **LIT-347 / LIT-119, stability.** Old: "the core-transformation (LU-eliminator) variant appears backward stable for N < 25 and loses it beyond" (LIT-347), and "IEP_CORE … appears backward stable only for N < 25" (LIT-119). New: **IEP_CORE and IEP_KRYLREORTH(full) are backward stable for most N < 25** and lose backward stability for N ≥ 25. IEP_KRYL is not backward stable for any N considered. Backward errors on nodes and weights come from the eigen-decomposition of the computed H in quadruple precision (§6.2, p. 1211). For the Kravchuk and Hahn IEPs all methods are weakly stable (§6.2, p. 1211). On the better-conditioned random-weight IEPs (§6.3), IEP_KRYLREORTH(full) is the most accurate, at a higher cost (§7, p. 1213).
-2. **LIT-347 / LIT-119, Laurie.** Old: "authors … know no extension of Laurie's approach to MOPs" / "authors not aware of an extension of Laurie's approach to MOPs". New: §7 (p. 1213) names extending Laurie's approach, via vector or branched continued fractions, as a possibility not discussed in the paper. It is **not** a statement that no extension is known.
+2. **LIT-347 / LIT-119, Laurie.** (Corrected 2026-11-05, response-01 F6; checked in the AC-supplied published PDF.) Old: "authors … know no extension of Laurie's approach to MOPs" / "authors not aware of an extension of Laurie's approach to MOPs". New: keep the author-limited statement and add the future-work proposal. Both are in the published version:
+   - Introduction, p. 1192: the authors say they are not aware of any extension of Laurie's approach to MOPs, and refer to §7. The same sentence is in the arXiv v2 introduction, per audit-01 F6.
+   - §7, p. 1213: extending Laurie's approach, via vector or branched continued fractions, is named as a possibility the paper did not discuss.
+   These coexist. Neither the authors' unawareness nor the proposal establishes that no extension exists. The 2026-11-03 version of this item wrongly rejected the awareness statement.
 3. **LIT-347, "systematic comparison would be interesting".** This is kept as a paraphrase of §7, together with the full future-work list: IEP conditioning theory; updating and downdating (now arXiv 2608.25758, LIT-348); Laurie extension via vector or branched continued fractions; other recurrences, notably nearest-neighbour; comparison with Filipuk–Haneczok–Van Assche 2015 and ref. [35] (§7, p. 1213).
 4. **Locators and citation.** Old LIT-119 locator: "no locator". New: Alg. 4.1 p. 1199 (IEP_KRYL), §4.3 (reorthogonalized variants), Alg. 5.1 p. 1205 (IEP_CORE), §6.2 p. 1211 (stability), §7 p. 1213 (future work). Add the journal citation SINUM 64(4) (2026) 1190–1216 and the code URL (cited, not loaded).
 5. **Coverage.** Old: "UNVERIFIED … secondary". New: "VERIFIED-fulltext for the statements above (published PDF; assessment note 2026-11-03); §2 and §4.1 proofs and the full §5 example not read line by line".
@@ -22,3 +25,5 @@ A. Faghih, M. Rinelli, M. Van Barel, R. Vandebril, R. Vermeiren, "Krylov and Cor
 ## History
 
 2026-11-03: P4 addendum, carrying over the assessment-note corrections. No new provisional ID: the statements remain LIT-347 / LIT-119, corrected.
+
+2026-11-05: item 2 corrected (response-01 F6).

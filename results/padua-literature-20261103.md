@@ -2,14 +2,14 @@
 
 This file is written only by the topic orchestrator. Branch `claude/padua-literature-20261103`; [draft PR #21](https://github.com/aacchhee/padua_research/pull/21); reserved LIT-482–561.
 
-## Status (2026-11-03): WORK complete; AUDIT next. Final report: [report.md](../topics/padua-literature-20261103/report.md)
+## Status (2026-11-05): response 01 to audit-01 done; Codex re-audit next. Final report: [report.md](../topics/padua-literature-20261103/report.md)
 
 These are literature findings only. They carry no PD status changes and no new mathematical claims.
 
 - **Download list** with verified clickable links: [DOWNLOADS.md](../topics/padua-literature-20261103/DOWNLOADS.md), v3. AC supplied 10 of the requested PDFs; the items still needed are in Part A and A2.
 - **P1 (Lebesgue function)**, [comparison](../topics/padua-literature-20261103/p1-comparison.md):
   - The corner-argmax statement was a published conjecture (CDMSV 5ECM poster 2008) and observation (De Marchi, [CMA 5 (2022)](https://doi.org/10.33205/cma.1070020) §3.3(2), p. 23), with no proof. Our PD-T209/162/166/169/174/177/181/214 (n = 2–16) and PD-T229 (n ≥ N_*) prove it in those ranges.
-  - The leading corner term is due to Kolomoitsev–Lomako 2021, built on [Kuznetsova 1995](https://doi.org/10.1007/BF01056716), with Pimenova 1979 as a special case. The b log n term with explicit remainder (PD-T158) and the exact corner formula (PD-T101): no matching result found.
+  - The coefficient 4/π² is published as the global constant (Kolomoitsev–Lomako 2021, built on [Kuznetsova 1995](https://doi.org/10.1007/BF01056716), with Pimenova 1979 as a special case). The corner value is bounded above by it; for the matching lower bound at the corner itself, no published statement was found (response-01 F1). The b log n term with explicit remainder (PD-T158) and the exact corner formula (PD-T101): no matching result found.
   - 1-D context and attribution: [Ehlich–Zeller 1966](https://doi.org/10.1007/BF01429047) and [Brutman 1978](https://doi.org/10.1137/0715046). "Powell 1965" should be cited as [Powell 1967](https://doi.org/10.1093/comjnl/9.4.404).
   - Audit F6 (KL locators) resolved.
 - **P2 (MZ)**, [comparison](../topics/padua-literature-20261103/p2-comparison.md):

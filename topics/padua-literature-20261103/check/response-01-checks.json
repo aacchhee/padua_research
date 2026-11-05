@@ -1,0 +1,72 @@
+{
+ "by": "Claude, claude-opus-5-5 high (response-01)",
+ "date": "2026-11-05",
+ "old_blocks": {
+  "440d107": {
+   "base": "440d1079e42c3ef21c40d1cf8870f5b206410c6a",
+   "old_blocks": 60,
+   "missing": [],
+   "multi_match_lines": [
+    47,
+    72,
+    1080
+   ]
+  },
+  "aff30e8": {
+   "base": "aff30e8ad5542c94fab642ae024dc9aab4fa7ad7",
+   "old_blocks": 60,
+   "missing": [],
+   "multi_match_lines": [
+    47,
+    72,
+    1080
+   ]
+  }
+ },
+ "old_blocks_command": "python3 -I topics/padua-literature-20261103/check/audit_old_blocks.py --repo . --proposal topics/padua-literature-20261103/proposed-record-changes.md --base <sha>",
+ "crossref_direct_sample": {
+  "method": "WebFetch https://api.crossref.org/works/<doi>, one at a time",
+  "ok": [
+   "10.1007/s11075-008-9203-x",
+   "10.1137/0715046",
+   "10.1007/BF01429047",
+   "10.33205/cma.1070020",
+   "10.1006/jath.1996.0102",
+   "10.1016/0024-3795(89)90285-1",
+   "10.1090/S0002-9947-1994-1258289-7",
+   "10.1007/s11075-015-9959-8",
+   "10.1016/j.apnum.2023.07.009",
+   "10.1016/j.aml.2026.110033"
+  ],
+  "failed": {
+   "10.1016/j.jat.2006.03.008": "client_error (also failed for the 2026-11-03 link checker; previously confirmed via ?filter=doi:)"
+  },
+  "all_ok_matched": "title, first author, container, volume, pages, year as recorded"
+ },
+ "reservation_recheck": {
+  "main": "aff30e8ad5542c94fab642ae024dc9aab4fa7ad7",
+  "open_prs": {
+   "21": "ca358a9871",
+   "24": "79c3d6a211",
+   "25": "d98613ed22",
+   "26": "4f9d86fa3c"
+  },
+  "result": "LIT-482–561 recorded as this topic's on main and all open PR ledgers; no overlap; highest other range LIT-594–597"
+ },
+ "page_image_checks": [
+  "Dunkl–Xu p.113 (3.9.1): dim Π²_{n−1} (F4)",
+  "Mastroianni–Russo copy p.18 Thm 9: (u/√(wφ))^p ∈ A_p, 1<p<∞ (F2)",
+  "Mastroianni–Russo copy pp.22–23 Thm 11 and node construction: unchanged",
+  "Xu JAT 87 (1996) p.231 Thm 3.3: 1<p<∞ (journal; author preprint has 1<p≤∞)",
+  "De Marchi CMA 5 (2022) p.23 item (2)"
+ ],
+ "text_layer_checks": [
+  "SINUM 64(4) p.1192 intro: authors not aware of extension of Laurie's approach to MOPs; p.1213 §7 proposal (F6)",
+  "SVZ 2008 journal p.417 (24)-(25) printed denominator (n+2)(n+3) with card X_n=(n+2)(n+3)/2; p.421 Table 1 Padua row 4.1E-2 … 2.0E-5 (born-digital text layer via pdf.js, Springer/NTNU)",
+  "Running-head locators: Xu TAMS 343 pp.195–198; 342 pp.858–859; Dunkl–Xu pp.74,75,82,88,92; Greenbaum Thm 1′ p.51"
+ ],
+ "not_done": [
+  "Pimenova 1979 Thm 1 constant: page image not obtained (hidden browser pane renders blank; download did not reach a connected folder); stays UNCONFIRMED",
+  "Kuznetsova 1995 p.259: no new check this session; relies on the 2026-11-03 page-image check by Claude"
+ ]
+}

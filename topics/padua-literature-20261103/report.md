@@ -29,8 +29,8 @@ Claude (claude-opus-5-5, high), topic orchestrator, 2026-11-03.
   - Wording: "proves the conjecture of …".
   - The analogous Xu-points conjecture ([Computing 76 (2006)](https://doi.org/10.1007/s00607-005-0137-z), Conj. (17)) remains open.
 - **Corner asymptotics.**
-  - The leading term (4/π²) log² n is not new: Kolomoitsev–Lomako 2021 rest on [Kuznetsova, Ukr. Math. J. 47 (1995)](https://doi.org/10.1007/BF01056716), whose Thm 1 gives pointwise rhombic Lebesgue-function asymptotics. [Pimenova, Dokl. 249 (1979)](https://www.mathnet.ru/eng/dan43113) is an earlier special case.
-  - PD-T156/157 is IMPLIES PART for the leading term.
+  - The coefficient 4/π² is not new, as the coefficient of the global constant: Kolomoitsev–Lomako 2021 rest on [Kuznetsova, Ukr. Math. J. 47 (1995)](https://doi.org/10.1007/BF01056716), whose Thm 1 gives pointwise rhombic Lebesgue-function asymptotics. [Pimenova, Dokl. 249 (1979)](https://www.mathnet.ru/eng/dan43113) is an earlier special case.
+  - PD-T156/157: IMPLIES PART for the upper half only (Λ_c ≤ Λ_n and KL's global theorem). For the lower bound at the corner itself, no matching result was found: KL's lower estimate is at the non-corner point (cos(π/m), 1), and no transfer was checked. The coefficient 4/π² is published as the global constant and is not claimed as new. (Revised 2026-11-05, response-01 F1.)
   - No matching result was found for the b log n term with explicit remainder (PD-T158), for PD-T159, or for the exact corner formula (PD-T101).
 - **Edges.** Kuznetsova's leading factor equals 1 on whole lines, so the leading term cannot separate edges from corners. No published edge-versus-corner gap was found (PD-T185–192, T211/212/230).
 - **1-D context.**
@@ -82,13 +82,13 @@ Claude (claude-opus-5-5, high), topic orchestrator, 2026-11-03.
 - **Proposed joint questions**, for a later topic and not registered:
   - (A) what the MOP IEP conditioning actually measures;
   - (B) nearest-neighbour MOPs as a commuting-pair IEP;
-  - (C) bivariate downdating.
+  - (C) bivariate downdating by structured perfect-shift IEP steps on the pair (H_x, H_y), as distinct from the classical stored-Q and R-factor routes already settled at IDEA-094/095.
 
 ## Merged claims whose wording should be narrowed or re-attributed
 
 1. **P1 paper and manuscripts.**
    - Do not present the corner argmax as a new *statement*; present it as a proof of the 2008 conjecture and the 2022 observation.
-   - Do not claim the leading corner term; credit Kolomoitsev–Lomako 2021 and Kuznetsova 1995.
+   - Do not claim the coefficient 4/π² as new; credit Kolomoitsev–Lomako 2021 and Kuznetsova 1995. Do not attribute the corner lower bound to them either (their lower estimate is at a non-corner point; response-01 F1).
    - "Powell 1965", as cited by Białas-Cież et al., should read Powell 1967, or Ehlich–Zeller 1966.
 2. **PD-T106.** The signed rule and its degree-m exactness are SVZ 2008's; only the "precisely m" exactness, the alias formulas and the pencil are ours. Footnote the misprint in eq. (25).
 3. **PD-T057.** Limit the novelty sentence to the truncated version, the words formula and the manifold structure. Cite Xu 342 Thm 3.4, Xu 343 Thm 2.2 and Dunkl–Xu Thm 3.5.1 for the classical parts, and say the proof follows Dunkl–Xu's induction (revised wording D in p3-comparison.md).
@@ -100,7 +100,7 @@ Claude (claude-opus-5-5, high), topic orchestrator, 2026-11-03.
 ## Pass 2 (2026-11-05): AC-supplied A4 and A11–A14
 
 - **Mastroianni–Russo 2000 (A4)**, read from AC's 34-page copy; record `mastroianni-russo-2000.md` (LIT?…-85). This was the MZ prior-art report's "most likely remaining place" for a quantitative borderline converse-MZ result. It contains none:
-  - The paper gives uniform-constant forward (Thm 8) and converse (Thms 9–12) weighted Marcinkiewicz inequalities under doubling/A_p hypotheses, with no rates and no necessity statements. The only "log" in the text is in a funding line.
+  - The paper gives uniform-constant forward (Thm 8) and converse (Thms 9–12) weighted Marcinkiewicz inequalities under doubling/A_p hypotheses. It has no quantitative borderline estimate for the lower MZ constant and no necessity statements; its approximation-error rates (Thms 14–17, order m^{−r}) concern a different quantity. The only "log" in the text is in a funding line. (Scope corrected 2026-11-05, audit-01 F3.)
   - The CC nodes for even N are an instance of its "extended" Theorem 11: zeros of T_{m+1}U_m plus ±1, on the full space Π_N.
   - For u ≡ 1 and p = 2, the hypothesis (1−x²) ∈ A_2 fails exactly at the power-weight endpoint, so the theorem is silent there. This is consistent with PD-T019 and MMN 2012.
   - Verdicts: RELATED, DIFFERENT SETTING (PD-T017–019); RELATED (PD-T014/T022, uniform boundedness only, as in LMN 1987).
