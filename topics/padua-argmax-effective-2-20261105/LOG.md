@@ -1,9 +1,9 @@
 # Effective all-degree Padua argmax, phase 2 (PD-T099): log
 
 - Branch: `codex/padua-argmax-effective-2-20261105` · Base: main `5db1e01` (PR #19 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: `Codex (gpt-6-astra ultra): Continue codex/padua-argmax-effective-2-20261105.` · Open handoff: [handoffs/03-response.md](handoffs/03-response.md)
+- Stage: AUDIT · Next: `Claude (Opus 5.5 high): Continue codex/padua-argmax-effective-2-20261105.` · Open handoff: [handoffs/04-response-check.md](handoffs/04-response-check.md)
 - Permanent reservation: T364–375/N132–137/IDEA454–465/LIT594–597, first published ce17564; no final assignments. [Ledger](ALLOCATIONS.md).
-- Scoped claims: analytic T01/T03–T07 and N01; T02 CONDITIONAL diagnostic. Full-diamond H2, complete H1 certification and PD-T099 remain OPEN; see report.md and gates.md.
+- Scoped claims: T01 narrow finite sufficiency; analytic T03–T07 and N01; T08 existing MEASURED observations; T02 remains an unregistered CONDITIONAL diagnostic. Full-diamond H2, complete H1 certification and PD-T099 remain OPEN; see report.md and gates.md.
 - Open for AC: the sandbox compute allowance in handoff 01 (6 h per run, about 48 h cumulative CPU) is Claude's proposal; AC may change it. Ask AC before using any machine outside the sandbox.
 
 ## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
@@ -99,3 +99,8 @@
 - Actual impact checks:8 original Statement sections, displayed formulas and original overall statuses unchanged;22 original audit/supplementary/code/receipt/allocation files immutable;3 historical handoff instruction bodies unchanged; exact472/473 crossover;40 original local files (118,964,704bytes) read and hash-matched;95 relative links resolved. Two wording suggestions were returned and corrected before the frozen snapshot. No scientific campaign rerun.
 - Source/fulltext priority coverage, AC's optional broader A0 interpretation, physical archival and original H1/H2 research remain explicitly unresolved. The response changes no accepted mathematical statement, premise, proof argument, constant or status. Added E6/E7/F9 prose explains existing accepted steps; T08 only transcribes accepted measurements. Under audit-01's explicit disposition the next step is Claude Opus5.5 high record response check, not a new mathematical campaign.
 - This commit is the response source checkpoint; the following metadata commit re-pins the evidence index, then a separate numbered-handoff commit closes03 and opens04. No final ID allocation, protected-registry edit or merge readiness is claimed.
+
+## 2026-11-05 — response identity index / numbered response check
+
+- Response source is `5d47621168921c45cf486a5ea783d7832cad0820`. Re-pinned evidence-manifest.json to every current topic record/code/receipt except lifecycle metadata, and to the topic results summary; retained original index commit/blob/hash and the actual older run identities. Historical auditor/supplementary reports and original source/evidence receipts are unchanged; changed record hashes are separately attested by response-impact.json.
+- [Handoff04](handoffs/04-response-check.md) requests Claude Opus5.5 high record response check under audit-01's explicit disposition, then PR preparation only if accepted. No new mathematical campaign or final allocation is authorized by this step. The source/fulltext, AC criterion interpretation and physical archival limitations remain explicit.
