@@ -149,3 +149,7 @@
 - No new source search, numerical run or checker rerun: the change is wording only, and audit02's independent checks/limits remain intact. Pinned input receipt: check/audit-03-inputs.json.
 - Main refreshed to `330fab835f43e5ba5b24e320c2d7e9647e6cbd60` (new MZ-cleanup registration; no rule/topic-file change). Merge and fresh reservation/dedup refresh belong to preparation; no allocation/readiness declared by this check.
 - Stage→PR, preparation pending and PR remains draft. Corrected the stale working LOG pointer. [Handoff11](handoffs/11-prepare.md): Claude audited PR preparation. Only AC merges.
+
+## 2026-11-05 — AC directs Codex to finalize PR21
+
+AC: “Codex (gpt-6-astra high): Continue claude/padua-literature-20261103. Finalize PR”. This explicit instruction overrides handoff11's Claude preparation assignment. Codex takes the preparation/orchestrator role with the requested model/effort; actual serving metadata remain unexposed. Handoff11 is superseded by12 with the same audited scope. The redirection record is published after initial mechanical mapping/application began; no retroactive timing compliance is claimed. Main330fab8 and subsequently AC-reported merged PR25 at9322fba were incorporated through c1a99f8 and65b2497, preserving audited topic files.

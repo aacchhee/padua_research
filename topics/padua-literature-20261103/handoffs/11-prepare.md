@@ -1,6 +1,6 @@
 # Handoff 11 — padua-literature-20261103 — audited PR preparation
 
-- Status: open
+- Status: superseded by 12: AC explicitly assigned Codex finalization
 - Previous handoff: 10-audit.md (done in f15b1f1bd063ee518ba97d7c8e6833e07392b70f)
 - Next agent / model / effort: Claude, Opus 5.5 high
 - Role: topic orchestrator / PR preparation
