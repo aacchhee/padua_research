@@ -67,8 +67,8 @@ clauses in the historical PR14 description; genuine 1-D PD-T027 remains OPEN.
 
 [Claude audit-01](padua-mz-2d-frontier-20261105/audit-01.md) accepted mathematics
 and statuses; [response-01](padua-mz-2d-frontier-20261105/response-01.md) disposes
-of the editorial findings. Shared registration is in preparation; PR23 readiness
-is not yet asserted. Detailed preparation stage stays in the topic log. After
+of the editorial findings. Shared registration and preparation checks are complete; PR23 is prepared
+for AC’s review/merge decision. Detailed preparation stage stays in the topic log. After
 merge, the scoped results and remaining mathematical gaps are the outcome:
 no effective finite carrier onset, odd-m classification or sharp growth law;
 m1600 remains an uncertified float hit unrelated to the existence proof.

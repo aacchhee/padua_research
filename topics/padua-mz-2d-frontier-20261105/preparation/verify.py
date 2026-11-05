@@ -32,7 +32,7 @@ def main():
  for path in git('ls-tree','-r','--name-only',BASE).decode().splitlines():
   if not path.startswith(str(R.relative_to(REPO))+'/'):continue
   relative=path.split(R.name+'/',1)[1]
-  check=relative.startswith(('code/','evidence/','audit-01-support/','independent-checks')) or relative=='audit-01.md'
+  check=relative.startswith(('code/','evidence/','audit-01-support/','independent-checks')) or relative in ('audit-01.md','response-01.md')
   if relative=='code/evidence_manifest.py':check=False
   if check:
    assert (REPO/path).read_bytes()==git('show',BASE+':'+path),path
@@ -44,6 +44,9 @@ def main():
  registry=(REPO/'PROOF_STATUS.md').read_text();old_registry=previous(REPO/'PROOF_STATUS.md','origin/main')
  def rows(s):return {re.match(r'^\| (PD-[TN]\d{3})(?:\s|\()',l).group(1):l for l in s.splitlines() if re.match(r'^\| (PD-[TN]\d{3})(?:\s|\()',l)}
  old,new=rows(old_registry),rows(registry);targets={'PD-T028','PD-T110','PD-T114','PD-T116'}
+ physical=[line for line in old_registry.splitlines() if re.match(r'^\| (PD-[TN]\d{3})(?:\s|\()',line)]
+ unrelated_physical=[line for line in physical if re.match(r'^\| (PD-[TN]\d{3})',line).group(1) not in targets]
+ assert all(line in registry.splitlines() for line in unrelated_physical)
  for key,row in old.items():
   if key not in targets:assert new[key]==row,key
  assert set(new)-set(old)=={x['final'] for x in m['records']}
@@ -82,5 +85,5 @@ def main():
  allowed+=['tracks/mz-constants/theory/'+f for f in ['open-padua-target.md','mz2d-upper-open.md','mz2d-fixed-ratio.md','mz2d-hyperinterpolation-uniform-open.md']]
  for p in git('diff','--name-only','origin/main').decode().splitlines():assert p.startswith(str(R.relative_to(REPO))+'/') or p=='results/'+R.name+'.md' or p in allowed,p
  assert not git('diff','origin/main','--name-only','--','.github/','AGENTS.md','agents/')
- print(json.dumps({'protected_paths':len(protected),'unchanged_other_registry_rows':len(old)-4,'registered_results':len(m['records']),'ideas':len(m['ideas']),'normalized_proof_hashes':proof_hashes,'links':'PASS','finite_scope':'PASS','AC_status_cells':'PASS','scope':'PASS'},indent=1))
+ print(json.dumps({'protected_paths':len(protected),'unchanged_other_registry_ids':len(old)-4,'unchanged_physical_rows':len(unrelated_physical),'registered_results':len(m['records']),'ideas':len(m['ideas']),'normalized_proof_hashes':proof_hashes,'links':'PASS','finite_scope':'PASS','AC_status_cells':'PASS','scope':'PASS'},indent=1))
 if __name__=='__main__':main()

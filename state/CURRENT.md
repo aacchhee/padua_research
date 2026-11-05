@@ -30,8 +30,8 @@ INCOMPLETE through239, and G5 was NOT RUN.
 
 [Claude audit-01](../topics/padua-mz-2d-frontier-20261105/audit-01.md) accepted
 the mathematics and statuses; [response-01](../topics/padua-mz-2d-frontier-20261105/response-01.md)
-disposes of the editorial findings. Shared registration is being prepared for
-PR23; readiness is not yet asserted here. Detailed preparation stage and checks
+disposes of the editorial findings. Shared registration and preparation checks are complete for
+PR23; it is prepared for AC’s review/merge decision, without approving another draft PR. Detailed preparation stage and checks
 remain in the [topic log](../topics/padua-mz-2d-frontier-20261105/LOG.md), rather
 than becoming a continuing research task. After merge, the scoped results and
 remaining mathematical questions above are the frontier. External cold-storage

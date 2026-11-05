@@ -1,6 +1,6 @@
 # Signed Padua MZ frontier — development report
 
-Branch `codex/padua-mz-2d-frontier-20261105`, [draft PR23](https://github.com/aacchhee/padua_research/pull/23). Rules/input83cf6f1ee244f2e72057332a7ec04ee74db1f0de; development base440d1079e42c3ef21c40d1cf8870f5b206410c6a; response base5db1e01dcd2258f45de2adcaef43859e59734618 (merged without conflicts). Codex development: gpt-6.1-sol xhigh mathematics, medium technical work; distinct supplementary reconstruction: gpt-6-astra high. **Claude Opus5.5 xhigh [audit-01](audit-01.md): mathematics ACCEPTED at stated scopes; P3 editorial findings answered in [response-01](response-01.md).** Claims below have accepted scopes and final IDs registered in this preparation; shared changes remain on this PR branch until AC merges. Preparation base: d9b7cb89460d4e46e44bbaa66ff766aa499b95ee.
+Branch `codex/padua-mz-2d-frontier-20261105`, [PR23](https://github.com/aacchhee/padua_research/pull/23). Rules/input83cf6f1ee244f2e72057332a7ec04ee74db1f0de; development base440d1079e42c3ef21c40d1cf8870f5b206410c6a; response base5db1e01dcd2258f45de2adcaef43859e59734618 (merged without conflicts). Codex development: gpt-6.1-sol xhigh mathematics, medium technical work; distinct supplementary reconstruction: gpt-6-astra high. **Claude Opus5.5 xhigh [audit-01](audit-01.md): mathematics ACCEPTED at stated scopes; P3 editorial findings answered in [response-01](response-01.md).** Claims below have accepted scopes and final IDs registered in this preparation; shared changes remain on this PR branch until AC merges. Preparation base: d9b7cb89460d4e46e44bbaa66ff766aa499b95ee.
 
 ## Outcomes
 
@@ -55,8 +55,10 @@ A signed-Padua MZ note can state the even-m fixed-node logarithmic weight theore
 
 ## Remaining obligations
 
-Claude xhigh audit-01 accepted the mathematics and statuses; response-01 records A1–A7 dispositions. Final-ID/shared-registry registration now uses T294–300/N104–107/IDEA384–397 after a fresh union scan, preserving AC’s OPEN-plus-refuted display for PD-T028/110/116. Preparation checks and independent protocol review determine readiness; no new mathematical audit or campaign is inferred. Constructive finite thresholds, exact certification of the m1600 hit, sharp growth constants, odd-m behavior and the1-D PD-T027 question remain separate open tasks. Only AC merges.
+Claude xhigh audit-01 accepted the mathematics and statuses; response-01 records A1–A7 dispositions. Final-ID/shared-registry registration now uses T294–300/N104–107/IDEA384–397 after a fresh union scan, preserving AC’s OPEN-plus-refuted display for PD-T028/110/116. Preparation impact checks, nine clean disposable squash rehearsals and the distinct Astra medium protocol review passed; no new mathematical audit or campaign is inferred. Constructive finite thresholds, exact certification of the m1600 hit, sharp growth constants, odd-m behavior and the1-D PD-T027 question remain separate open tasks. Only AC merges.
 
 ## Final registration
 
 [Map](preparation/final-id-map.json): PD-T294 harmonic profile, PD-T295 fixed-node weights, PD-T296 positive reference, PD-T297 uniform norm, PD-T298/299 exact m60/m80, PD-T300 finite MEASURED numerical summary; PD-N104 intermediary obstruction, PD-N105/106 spectral countersequences, PD-N107 sharp ratio classification. IDEA384–397 preserve all fourteen candidates. No new LIT assignment; all unused reserved IDs remain permanent gaps. The MEASURED record only transcribes previously audited finite reports.
+
+Preparation completed for AC’s review under unchanged main d9b7cb8 and the final live foreign-head recheck. The independent protocol check is pinned to registration candidate05ccb20; later readiness/integration metadata was verified separately by the orchestrator. No other draft is declared ready and no AC merge order is inferred. See [preparation record](preparation/record.md).
