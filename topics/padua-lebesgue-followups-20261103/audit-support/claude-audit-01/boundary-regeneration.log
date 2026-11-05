@@ -1,5 +1,0 @@
-{"edge": [0, -1], "patterns": 107, "Enormdegree": 125, "seconds": 631.6168067455292, "edgecount": 4, "unresolved": 0, "stats": {"outside": 1072, "derivative": 5750, "minimum": 331, "sign": 312, "root": 4}}
-{"edge": [0, 1], "patterns": 107, "Enormdegree": 125, "seconds": 720.9039611816406, "edgecount": 8, "unresolved": 0, "stats": {"outside": 2144, "derivative": 11500, "minimum": 662, "sign": 624, "root": 8}}
-{"edge": [1, -1], "patterns": 155, "Enormdegree": 171, "seconds": 1588.2080700397491, "edgecount": 12, "unresolved": 0, "stats": {"outside": 3468, "derivative": 20064, "minimum": 1104, "sign": 1078, "root": 12}}
-{"edge": [1, 1], "patterns": 123, "Enormdegree": 131, "seconds": 2250.378107070923, "edgecount": 16, "unresolved": 0, "stats": {"outside": 4454, "derivative": 27142, "minimum": 1472, "sign": 1404, "root": 16}}
-{"edge": 16, "corner": 2, "counts": {"outside": 4454, "derivative": 27142, "minimum": 1472, "sign": 1404, "root": 16}, "unresolved": 0, "complete": true, "seconds": 2250.6610271930695}

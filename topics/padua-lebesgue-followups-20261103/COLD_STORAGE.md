@@ -158,3 +158,13 @@ executed sources to bypass a rejection. This is an AST serialization constraint,
 not a different mathematical predicate. Claude's independent monolithic wrapper
 successfully used Python 3.13.18 and does not reuse the 3.12 composition pins;
 see audit-01 F6 and §T1.4. Old source/receipt hashes retain their original meaning.
+
+## 2026-11-05 raw-output archival addendum
+
+AC directed generated outputs to cold storage. Additional raw transcripts and
+analysis captures from this topic are now pinned at source40347d1 in separate
+component manifests; all older manifests/identities above are unchanged. See
+[the migration index](preparation/cold-storage-migration.md)
+for exact file counts, manifest paths, verified export/restore commands and
+receipt hashes. Small essential proof receipts, summaries and code remain in Git.
+Physical delivery to AC remains pending; staging is not a delivery claim.
