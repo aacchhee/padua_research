@@ -85,3 +85,17 @@ candidate's mathematics.
   owns the shared continuous-source reduction so it is not duplicated.
 - Candidate/theory records retain provisional IDs only. No shared registries
   or final allocations changed.
+
+## 2026-11-05 — P2 round 1 checkpoint
+
+- Completed [P2 prospective gate](novelty-gate-P2.md), then proved
+  [continuous radial disk and D36x9 admission](theory/p2-01-family-admission.md).
+  The finite 324-point rational ring grid is injective through17, has36
+  convex-hull vertices and only D4 symmetry. It is a distinct finite measure,
+  with no asserted cubature relation to the continuous radial disk.
+- P2's preregistered cheapest exact moment/creator reconstruction through8
+  executed successfully in0.154s before the coordinator separated admission
+  and structural interpretation into round boundaries. Code and compact
+  evidence are preserved; interpretation is round2, not an N2 rate claim.
+- No external fulltext or published recurrence theorem was used for these
+  elementary admission/moment proofs. No priority claim.
