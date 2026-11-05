@@ -1,7 +1,7 @@
 # Padua literature campaign (P1–P4): log
 
 - Branch: `claude/padua-literature-20261103` · Base: main `440d107` · Developer: Claude · Auditor: Codex (gpt-6-astra high)
-- Stage: AUDIT · Next: `Codex (gpt-6-astra high): Continue claude/padua-literature-20261103.` · Open handoff: [handoffs/06-audit.md](handoffs/06-audit.md)
+- Stage: AUDIT · Next: `Codex (gpt-6-astra high): Continue claude/padua-literature-20261103.` · Open handoff: [handoffs/07-audit.md](handoffs/07-audit.md)
 - Reserved final-ID ranges: LIT-482–561 (80); no PD-T, PD-N or IDEA range. See [ALLOCATIONS.md](ALLOCATIONS.md).
 - Claims: none (literature topic). Note: [SINUM 2026 assessment](notes/faghih-sinum-2026-assessment.md).
 - Open for AC: the remaining PDFs in DOWNLOADS.md v5 (A9 print-only, interlibrary loan; A10, A15, A19 low priority).
@@ -116,3 +116,4 @@
   - On page images: Pimenova Thm 1 / eq. (3) confirmed (constant 2/π²; record's OCR argument paraphrase corrected); Kuznetsova p. 259 re-rendered; SVZ pp. 417/421 confirmed.
   - UNCONFIRMED removed from the Pimenova record and proposals. Old-block checker still 60/60 at aff30e8. No verdict changes.
   - Handoff 06 had not started, so it is superseded by handoff 07 with the new input head.
+- [Handoff 06](handoffs/06-audit.md) superseded by [handoff 07](handoffs/07-audit.md): Codex gpt-6-astra high re-audit at input head d9366d0.

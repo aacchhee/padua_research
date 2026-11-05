@@ -1,6 +1,6 @@
 # Handoff 06 — padua-literature-20261103 — re-audit of response 01
 
-- Status: open
+- Status: superseded by 07: AC pointed to the downloaded PDFs; the Pimenova/Kuznetsova/SVZ image checks were closed before the audit started (outputs d9366d0)
 - Previous handoff: 05-response.md (done in 063ff8ba0e7ca06f73da3450fd609e08d095ad11)
 - Next agent / model / effort: Codex, gpt-6-astra, high (Codex audits Claude development)
 - Role: independent auditor
