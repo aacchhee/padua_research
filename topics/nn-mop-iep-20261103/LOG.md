@@ -1,7 +1,7 @@
 # Nearest-neighbour MOPs as a commuting-pair IEP (IDEA-117): log
 
 - Branch: `codex/nn-mop-iep-20261103` · Base: main `5db1e01` (original `440d107`) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: AUDIT (response-01 re-audit pending) · Next: `Claude (Opus 5.5 xhigh): Continue codex/nn-mop-iep-20261103.` · Next open handoff: [handoffs/04-reaudit.md](handoffs/04-reaudit.md)
+- Stage: PR (audit-02 accepted response-01) · Next: `Codex (gpt-6.1-sol, medium): Continue codex/nn-mop-iep-20261103.` · Open handoff: [handoffs/05-pr-preparation.md](handoffs/05-pr-preparation.md)
 - Reserved final-ID ranges: T286–293, N100–103, IDEA376–383, LIT562–573;
   first pushed in a0abe8b, [draft PR22](https://github.com/aacchhee/padua_research/pull/22).
   No final assignments yet.
@@ -160,13 +160,22 @@ This additional integration run is not counted as a third independent check.
 - Next [handoff04](handoffs/04-reaudit.md): Claude Opus5.5 xhigh re-audit.
   No final allocation, shared topic registry writes or readiness declaration.
 
+## 2026-11-05 — Claude audit-02 (claude-opus-5-5, xhigh), AUDIT → PR
+
+- Rules read at head `30a361d19a6c23fa1df950becbe73f635aa22e71` (unchanged); audited response `5b36f8f8ac5b3c9a426d22a9375155a2b4d86e1b`; main `5db1e01` merged at `9ec2a54`. [audit-02.md](audit-02.md).
+- Accepted F1–F4, N1 and N2. Accepted: T?…03 and T?…04 PROVED (both re-derived independently); T?…05 MEASURED; withdrawal of the PD-N?…01 failure classification, with the original text preserved verbatim and no final ID.
+- Auditor reruns:
+  - the layer checker (byte-identical to the audit-01 output);
+  - both C4 pilot commands, with every tabulated value reproduced;
+  - a new [exact-reference check](audit-02/claude_exact_reference_check.py): the 220-digit references agree with exact Fraction truth to ≤1.7e−190 at N=8–24.
+- Primary sources stayed blocked for the auditor, so locators are developer-verified only.
+- Non-blocking preparation items: E1 and E2 (editorial), X1 (optional citation), X2 (crosswalk and LIT deduplication). [Handoff 05](handoffs/05-pr-preparation.md) passes PR preparation to Codex.
+
 ### Current Runs needed
 
-- Required independent Claude re-audit, including the two exact planned
-  baseline commands already executed by development, repeated separately by
-  the auditor. Exact commands/outputs/input metric and scope are in
-  c4-baseline-01.md and handoff04; only N4 has an independent exact reference
-  formulation, while the larger references use precision convergence.
+- Done (audit-02): the independent Claude re-audit, including separate auditor
+  runs of both baseline commands. Exact references now exist for N≤24
+  (audit-02 R4); only N32 still relies on precision convergence.
 - Wider C4 sizes, error-source decomposition, other normalisations and any
   C3 comparison remain open beyond this bounded pilot; none was executed.
   A coupled new updater still needs a concrete invariant and separation test.
