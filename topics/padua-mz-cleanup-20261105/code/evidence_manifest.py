@@ -3,6 +3,7 @@
 import argparse
 import hashlib
 import json
+import os
 from pathlib import Path
 
 
@@ -31,20 +32,31 @@ def main():
                   root/'tracks/mz-constants/code/mz2d_spectra.py',
                   root/'topics/padua-mz-2d-20261101/definitions.md',
                   root/'topics/padua-mz-2d-frontier-20261105/evidence/g1-minimum-only.json']
-        rows=[[str(p.relative_to(root)),p.stat().st_size,digest(p)]
+        rows=[[os.path.relpath(p,topic),p.stat().st_size,digest(p)]
               for p in sorted(set(files))]
-        out=dict(format='padua-mz-cleanup-small-inventory-v1',
-            columns=['repository_path','bytes','sha256'],files=rows,
+        out=dict(format='padua-mz-cleanup-small-inventory-v2',
+            path_base=str(topic.relative_to(root)),
+            columns=['path_relative_to_base','bytes','sha256'],files=rows,
             bulk='Large witnesses/norms/vectors and raw runs are separately manifested in cold-storage.json. No delivery is claimed.',
             excludes='LOG and numbered handoffs are orchestration metadata; no scientific file is excluded on size grounds.')
+        provenance=topic/'evidence/witness-payload-identities.json'
+        if provenance.exists():
+            identities=json.loads(provenance.read_text())
+            out['witness_payload_columns']=['m','gzip_sha256','payload_sha256','payload_bytes']
+            out['witness_payload_identities']=[
+                [r['m'],r.get('gzip_sha256'),r.get('payload_sha256'),r.get('payload_bytes')]
+                for r in identities['witnesses']]
+            out['witness_container_note']=identities['container_note']
         target.write_text(json.dumps(out,separators=(',',':'))+'\n')
     data=json.loads(target.read_text())
+    base=root/data.get('path_base','')
     for name,size,expected in data['files']:
-        path=root/name
+        path=base/name
         if not path.is_file() or path.stat().st_size!=size or digest(path)!=expected:
             raise ValueError(f'inventory mismatch: {name}')
     # Scientific receipts must pin the actual producer/checker source.
-    for receipt in (topic/'evidence').glob('witness-*.json'):
+    for receipt in [*(topic/'evidence').glob('witness-producer-m*.json'),
+                    *(topic/'evidence').glob('witness-independent-m*.json')]:
         r=json.loads(receipt.read_text())
         code=topic/'code'/('rigorous_witness.py' if 'producer' in receipt.name else 'independent_witness.py')
         if r['code_sha256']!=digest(code):

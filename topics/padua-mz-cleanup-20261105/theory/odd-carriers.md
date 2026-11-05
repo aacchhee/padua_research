@@ -2,8 +2,8 @@
 
 ID kind: PD-T.
 Aliases: even-y-mesh carrier; all-integer half-exactness classification.
-Split from: the explicitly missing odd-m parameter cases of PD-N105/106/107.
-Split into: exact norm limits and quantitative one-sided coefficients
+Extends: the explicitly missing odd-m parameter cases of PD-N105/106/107.
+Related separate result: exact norm limits and quantitative one-sided coefficients
 are separate PD-T?mz-cleanup-codex-04.
 
 ## Statement
@@ -41,7 +41,10 @@ Consequently, over **all integers** m tending to infinity,
 More generally, for each fixed theta with 1/2<theta<1, (5) holds
 with m-1 replaced by floor(theta m). For 0<=theta<=1/2, the latter
 Gram matrix is exactly I for every m for which the space is defined.
-No effective onset or sharp extremal coefficient is asserted.
+No effective onset or sharp extremal coefficient is asserted. These carriers
+prove existence only; they are not usable finite witnesses at feasible
+degrees and do not identify the separately certified finite minimizing
+branch.
 
 ## Definitions and assumptions
 
@@ -54,7 +57,7 @@ rotation symmetry or equality of full y and x marginals is assumed.
 ## Status by part
 
 Overall status: **PROVED** (analytic development; [supplementary independent
-check completed](../independent-checks-math.md); required Claude audit pending).
+check completed](../independent-checks-math.md); [Claude audit-01 accepted the mathematics at its stated scope](../audit-01.md)).
 
 | Part | Status | Evidence |
 |---|---|---|
@@ -75,8 +78,7 @@ existing even-m conclusions with the newly proved odd-m conclusions.
 
 Analytic, no computer-assisted premise. Rules/input
 ad503cb0603fc017444b0aa732240981eefa4d24. [Independent reconstruction
-completed](../independent-checks-math.md); required Claude audit remains
-pending. This author claims no executed
+completed](../independent-checks-math.md); [Claude audit-01 accepted the stated mathematics](../audit-01.md). This author claims no executed
 spectral scan; the parent's scans remain separately MEASURED.
 
 ## Sources
@@ -149,7 +151,9 @@ For every fixed index the normalized Fejer profiles converge to
     f_a(i)=a (i=0),
     f_a(i)=sin²(a pi i/2)/[a (pi i/2)²] (i>0).
 
-Using M/m->1 gives this same formula for the y mesh. The uniform
+Using M/m->1 gives this same formula for the y mesh. For p^+ one also
+has sin²(r k pi/M) -> sin²(a k pi) at every fixed k, because
+r/M -> a; this bounded factor is included in the pointwise limit. The uniform
 bounds |F_r(cos(k pi/M))|/m<=C_a(1+k)^(-2) and
 |F_s(cos(j pi/m))|/m<=C_b(1+j)^(-2) hold on their entire grids:
 use the endpoint bound at zero, and sin(k pi/(2M))>=k/M elsewhere.
@@ -202,9 +206,20 @@ uniform bound PD-T297 is compatible with this divergence.
 Finite onset, spectral growth limits and first crossings remain separate;
 this proof does not identify the parent's finite minimizing branch.
 [Supplementary independent check completed](../independent-checks-math.md);
-required Claude audit pending.
+[Claude audit-01 accepted the mathematics at its stated scope](../audit-01.md).
 
 ## History
 
 2026-11-05, Codex, inherited gpt-6.1-sol xhigh; input/rules ad503cb.
 New odd-parity argument and all-m synthesis; accepted even files unchanged.
+
+### Audit-response wording — 2026-11-05
+
+F4 makes the already-used positive-carrier pointwise sine limit explicit;
+F5 repeats the accepted even-carrier feasibility caveat. F11 labels this
+as an extension, not a crosswalk split of accepted records. F6's optional
+split is not adopted: the separately labeled all-parity synthesis is a
+routine combination of two PROVED parity statements, as audit-01 notes.
+No statement, quantitative bound or status changes.
+
+Editorial dispositions for this response are collected in [response-01](../response-01.md).

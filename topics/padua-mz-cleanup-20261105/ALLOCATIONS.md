@@ -20,8 +20,9 @@ unchanged registries were read before this reservation. Therefore the
 live union maxima are T375/N137/IDEA465/LIT597. Every new range above
 starts strictly above its namespace maximum. No literature range needed.
 
-The first pushed commit containing this ledger establishes priority; its
-SHA is recorded in the draft PR. Unused IDs remain permanent gaps.
+First publication: [`ee490356ce51d5e2f4a84f2c45e6ccb98a19bd90`](https://github.com/aacchhee/padua_research/commit/ee490356ce51d5e2f4a84f2c45e6ccb98a19bd90), linked from [draft PR26](https://github.com/aacchhee/padua_research/pull/26).
+That first pushed commit containing this ledger establishes priority.
+Unused IDs remain permanent gaps.
 No accepted or reserved identifier is renumbered. Shared batch/crosswalk
 updates wait for audited PR preparation under handoff01's write scope.
 The fresh-range procedure supersedes historical single-owner prose;

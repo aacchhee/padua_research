@@ -1,9 +1,9 @@
 # MZ cleanup (certified indefiniteness witness, odd m, growth constants, manuscript integration): log
 
 - Branch: `codex/padua-mz-cleanup-20261105` · Base: main `21dbfc9` (PR #23 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK (response) · Next: `Codex (gpt-6.1-sol, xhigh): Continue codex/padua-mz-cleanup-20261105.` · Open handoff: [handoffs/03-response.md](handoffs/03-response.md)
+- Stage: PR (preparation pending) · Next: `Codex (gpt-6.1-sol, xhigh): Continue codex/padua-mz-cleanup-20261105.` · Open handoff: [handoffs/04-pr-preparation.md](handoffs/04-pr-preparation.md)
 - Reserved final-ID ranges: T376–391/N138–145/IDEA466–489, no LIT; first publication ee49035, draft PR26. No final assignments.
-- Claims: finite indefiniteness at1101/1240/1600, odd-parity completion and normalized one-sided bounds PROVED in development;23 finite observations MEASURED. Claude audit-01: no correctness issue, findings await response-01.
+- Claims: finite indefiniteness at1101/1240/1600, odd-parity completion and normalized one-sided bounds PROVED in development;23 finite observations MEASURED. Claude audit-01: no correctness issue; response-01 resolves all 26 findings with no material scientific change.
 - Open for AC: none. The sandbox compute allowance in handoff 01 (4 h wall per run, about 24 h cumulative CPU) is approved by AC (2026-11-05). Ask AC before using any machine outside the sandbox.
 
 ## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
@@ -61,3 +61,14 @@
 - C2/C3/novelty/manuscript/inventory checks were run by Claude Opus subagents, spot-checked by the orchestrator. Their scripts are in `audit-support/sub-*`.
 - Sandbox only, about 1 CPU hour. No shared registry or final ID touched.
 - Handoff 02 done in a399e3c; [handoff 03](handoffs/03-response.md) opens the Codex response to audit-01.
+
+## 2026-11-05 — Codex, gpt-6.1-sol xhigh — response-01 complete
+
+- Rules read at a64ef3582ee24b0f3503c49569ccd7e7daa7c6e3; unchanged. Fetched topic a64ef35 and main aff30e8ad5542c94fab642ae024dc9aab4fa7ad7; topic fast-forwarded, base already integrated. Read handoff03 and full audit-01. Three bounded response workers owned disjoint mathematical records, manuscript translation and proposals; only orchestrator changed Git.
+- [response-01](response-01.md) answers F1–F26; optional F6/F26 declined. Exact formulas, statements, hypotheses, statuses, acceptance code, original receipts and all audit files are preserved. F4 makes an already-used routine limit explicit; F11 restores the original OPEN target and separate supporting-result mapping. No new mechanism or historical claim.
+- All five original staged gzip witnesses remained available. Hashed exact decompressed JSON payloads and preserved existing container identities; no certificate rerun or replacement. Added portable payload metadata only. Actual cold-storage delivery remains pending.
+- Current evidence inventory uses compact topic-relative paths to include all audit additions and payload identities without splitting outputs; v1 remains readable. This metadata helper changes no certificate predicate. Historical 54-file inventory verified at its pinned candidate.
+- Manuscript response build is 25 A4 pages, clean logs, no provisional TeX IDs; source SHA256 9e10c6353fd625807bfca98fc1f868f1db37cc1eaea89c66751cfbd27c4ba28d. M7 history remains append-only. Exact commands and build hashes are in manuscript-changes.md.
+- All eight literal old replacement blocks reverified against HEAD/main; AC owner/charter line preserved. Proposed six provisional theory rows, six IDEA dispositions and historical qualifiers are not applied now. Reservations remain unchanged and need a fresh live union scan at preparation.
+- Nonmaterial response classification follows audit-01's explicit allowance: stage PR, preparation pending, no fresh mathematical audit required. Original scientific code/receipt identities, displayed formulas, shared-file preservation, local links, helper syntax, evidence sizes and diff checks verified.
+- Handoff03 completes in the response output commit; [handoff04](handoffs/04-pr-preparation.md) requests final-ID/shared-record and protocol preparation. PR26 remains draft; only AC merges.

@@ -2,7 +2,8 @@
 
 ID kind: PD-T.
 Aliases: normalized Fejer packet constants; Rayleigh normalization repair.
-Split from: C3's sharp-growth target, which remains OPEN.
+Split from: [PD-T?mz-cleanup-codex-06](sharp-growth-open.md), C3's
+original sharp-growth target, which remains OPEN.
 Split into: none. This supplies only explicit one-sided bounds.
 
 ## Statement
@@ -58,7 +59,7 @@ coordinate; s belongs to the other coordinate.
 ## Status by part
 
 Overall status: **PROVED** (analytic development; [supplementary independent
-check completed](../independent-checks-math.md); required Claude audit pending).
+check completed](../independent-checks-math.md); [Claude audit-01 accepted the stated mathematics](../audit-01.md)).
 
 | Part | Status | Evidence |
 |---|---|---|
@@ -80,10 +81,14 @@ below is proved independently of any spectral fit or measured crossing.
 Rules/input ad503cb0603fc017444b0aa732240981eefa4d24.
 Analytic proof. A Python 3 `math` evaluation of (1),(2),(5) executed by
 this author printed A=2.772588722239781, J_-(1/4)=1.3528830227442048,
-J_+(1/8)=0.7840053676911357 and the decimals above. This arithmetic
-was only a display check, not a proof premise. The [separate independent
+J_+(1/8)=0.7840053676911357 and the decimals above. Those are recorded
+binary64 outputs, not high-precision values: cancellation in C(q) limits
+their last digits. For accurate display, Claude audit-01 independently
+computed c_-=0.02962182359685996308 and
+c_+=0.01277888643955839765. Exact formulas (1),(2),(5) define the
+constants; neither display evaluation is a proof premise. The [separate independent
 checker verified the integral identity and normalization](../independent-checks-math.md);
-required Claude audit remains pending.
+[Claude audit-01 accepted the stated mathematics](../audit-01.md).
 
 ## Sources
 
@@ -211,10 +216,19 @@ Existence and values of the two spectral limits, matching logarithmic
 upper/lower controls in the opposite directions, and optimal normalized
 packet parameters remain OPEN. Further variants need a new recorded
 gate. [Supplementary independent check completed](../independent-checks-math.md);
-required Claude audit pending.
+[Claude audit-01 accepted the stated mathematics](../audit-01.md).
 
 ## History
 
 2026-11-05, Codex, inherited gpt-6.1-sol xhigh; input/rules ad503cb.
 C3 exact-norm calculation preserves the accepted raw carrier formulas
 and corrects only their conversion into proposed spectral bounds.
+
+### Audit-response wording — 2026-11-05
+
+F9 distinguishes the historical binary64 display check from accurate
+values; all exact formulas and bounds are unchanged. F11 supplies the
+durable OPEN target link and future crosswalk relationship, without
+reclassifying its supporting one-sided bounds as a resolved sharp limit.
+
+Editorial dispositions for this response are collected in [response-01](../response-01.md).

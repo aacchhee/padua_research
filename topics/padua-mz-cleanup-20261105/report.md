@@ -5,7 +5,9 @@ Rules/input ad503cb0603fc017444b0aa732240981eefa4d24; source/base
 21dbfc90257b952d8923f6d01739d12aa8d6e0a1. Current main aff30e8ad5542c94fab642ae024dc9aab4fa7ad7
 was merged without conflicts in ef9723b. Rules did not change. Codex
 development: user-requested gpt-6.1-sol xhigh; supplementary mathematical
-reviews: distinct gpt-6-astra high. Required Claude audit is **PENDING**.
+reviews: distinct gpt-6-astra high. Claude [audit-01](audit-01.md) accepted the mathematics, finite reduction
+and measured scopes without a correctness finding. Editorial/provenance
+dispositions are in [response-01](response-01.md); PR preparation follows.
 
 ## Outcomes and exact scope
 
@@ -49,10 +51,10 @@ locally with identities and regenerating commands, pending delivery.
 
 Every even integer1230..1240 was scanned, along with coarse even probes
 1100,1200,1280,1400. The largest scanned positive float minimum is
-0.00012076189285820084 at1238; the next even degree1240 has
+0.00012076189285820084 at 1238; the next even degree1240 has
 -0.000027148072763036893. The local measured even crossing window
 is thus1238–1240. The smallest even degree **certified negative in this
-campaign** is1240. No earlier positivity, global first crossing or
+campaign** is 1240. No earlier positivity, global first crossing or
 spectral monotonicity is proved. Odd probes1101,1201,1241,1281,1401,1601
 are all negative; only1101 has a separately certified odd witness.
 The odd first crossing is not located.
@@ -70,13 +72,18 @@ lambda_plus to plus infinity on all integers, at the endpoint and
 at every fixed ratio theta>1/2. Exactness still gives identity at
 theta<=1/2.
 
-The handoff's raw extrema1/9 and1/36 are correct suprema of unnormalized
+The handoff's raw extrema1/9 and 1/36 are correct suprema of unnormalized
 sampled-energy coefficients. They are not spectral constants. Exact
 continuous envelope/carrier norm limits supply the missing denominator.
 The resulting rigorous bounds are
 
-    limsup lambda_minus(m,m-1)/log m <= -0.02962182360...,
-    liminf lambda_plus(m,m-1)/log m >=  0.01277888644... .
+    limsup lambda_minus(m,m-1)/log m <= -c_minus,
+    liminf lambda_plus(m,m-1)/log m >= c_plus,
+    c_minus = 1/[9 A J_minus(1/4)],
+    c_plus = 1/[36 A J_plus(1/8)].
+
+Here c_minus ≈ 0.02962182360 and c_plus ≈ 0.01277888644. Rounded
+display values do not define the inequalities; the exact formulas do.
 
 Their exact logarithmic formulas, not the display decimals, define the
 constants. No matching opposite bound, optimal normalized parameters,
@@ -95,7 +102,7 @@ is a diagnostic observation only, after the normalization caveat.
 K0 PASS: float m800 agrees within3e-17 and a fresh exact m60 producer
 accepted the recorded strict endpoints. K1 PASS: m400 fixed-point
 producer3.375s and alternate checker1.89s, with relative widths below
-2.54e-9 and5.854e-8 respectively. K2 was preregistered before any
+2.54e-9 and 5.854e-8 respectively. K2 was preregistered before any
 m>1600 execution. Gates and actual receipts are in [gates](gates.md).
 No killed or unexecuted gate is relabeled a successful mathematical result.
 
@@ -107,7 +114,7 @@ verified the three large artifact identities and rational bracket
 implications. It did not rerun the large tensors. [Independent witness runs](independent-checks-witness.md)
 actually did execute those alternate large arithmetic paths. Shared
 FLINT/Arb dependencies and the independent checker's IEEE/BLAS assumption
-are explicit. These reviews supplement the required Claude audit.
+are explicit. These supplementary reviews preceded the completed Claude audit-01.
 
 The manuscript retains the exact compression and adds weight asymptotics,
 both carriers, the sharp signed threshold, the uniform C-to-L2 bound,
@@ -121,10 +128,10 @@ The PDF remains outside Git and the preserved earlier PDFs are untouched.
 
 ## Artifact delivery and remaining work
 
-The verified local C1 package is159,265,962 bytes, SHA-256
+The verified local C1 package is 159,265,962 bytes, SHA-256
 `ac6a628153746729688851baa3aa50f41dc31509d9ce4058dc221fb0550982b1`,
-with71 members and its off-repository full inventory. It includes final
-witnesses/norms and a dated scan/vector snapshot. The completed final scan supplement is44,618,351 bytes, SHA-256
+with 71 members and its off-repository full inventory. It includes final
+witnesses/norms and a dated scan/vector snapshot. The completed final scan supplement is 44,618,351 bytes, SHA-256
 `257fa21a83b5bb74b93483e371efcc87cf5e0ac965bb32fab2ddfadd808bc338`;
 it is separately recorded and verified in the storage manifest.
 PR14 and PR23 historical pending deliveries retain their original
@@ -132,6 +139,18 @@ identities/provenance; nothing is claimed recovered or delivered merely
 because an old scratch locator exists. See COLD_STORAGE.md for AC's
 Padua-specific destination, sizes and hashes. No external machine used.
 
-Next is Claude Opus5.5 xhigh audit of the pushed development candidate.
+Claude Opus 5.5 audit-01 accepted the scientific scopes; response-01
+addresses every minor/editorial finding. Next is audited PR preparation.
 Final-ID assignment, shared-record application, fresh reservation recheck
 and PR readiness remain a later audited preparation step. Only AC merges.
+
+## Candidate records
+
+The three primary completion/normalization candidates are
+IDEA?mz-cleanup-codex-02, -03 and -04 in
+[the candidate and predecessor record](novelty-gate-math.md). The same
+record retains the certifier variant (-01), deferred sharp-localization
+route (-05), and abandoned raw-slope interpretation (-06), including
+scoped dispositions and resume conditions. These remain provisional until
+preparation; no new mechanism or historical-priority claim is introduced
+by completing their records.

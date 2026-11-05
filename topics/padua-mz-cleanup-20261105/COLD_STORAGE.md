@@ -125,3 +125,17 @@ No historical purge, external-machine access or delivery is performed here.
 ## Final scan supplement
 
 All23 scan rows completed. Final local supplement `/tmp/mz-cleanup/transfer-stage/padua-mz-cleanup-20261105/final-scan-supplement.tar.gz`: 44,618,351 bytes, SHA-256 `257fa21a83b5bb74b93483e371efcc87cf5e0ac965bb32fab2ddfadd808bc338`. Its13 members include the final raw receipts/logs, small summary, summary code, and vectors absent from the prior snapshot. Full inventory `/tmp/mz-cleanup/transfer-stage/padua-mz-cleanup-20261105/final-scan-supplement/INVENTORY.json` (1955 bytes, SHA-256 `0b2e20c0f668219720cef76f54a59262b63c04d046a7a86472d2ce746aac0f6c`) stays off-repository. Every archived member was reopened and its bytes/hash verified. These are MEASURED observations, not extra certificates. Same Padua destination; delivery remains PENDING.
+
+## Audit response F1 — portable payload identities
+
+The original staged gzip files remain available in this cloud session. Their existing container hashes are preserved; they identify environment-specific compressed bytes, and a different Python/zlib build can produce a different container for the same payload. The following identities hash the exact decompressed UTF-8 JSON bytes, without reserialization. Each payload also matched the frozen producer encoding (`json.dumps` with compact separators). No witness, certificate, receipt or arithmetic was regenerated or replaced.
+
+| m | Gzip container SHA-256 | Decompressed JSON SHA-256 | JSON bytes |
+|---|---|---|---:|
+| 60 | `9a1bb58cce8d8179840a024f045e8bbb32aafe9ad58d7545af4ec74278d566e9` | `476ef7b7e277d13756c724cd769a0db89181cbffa5169d25fb47706abfe47146` | 25831 |
+| 400 | `b433ab66e1d7e971629c58b4c56839a013bf1bfb64e021ccac09b84bd1bb094d` | `94a64e01a117a267277ebe45b32d28e66dfecec23f185c60042887a8e09f1ed3` | 1264192 |
+| 1101 | `22913a3271c0cd826ff062a1f880c3539ef937b0141820dab381b53181662813` | `71bcbc676272a19765c2e859c9116856ae7b5e2680eee332d042f4a3cf62e19e` | 9956905 |
+| 1240 | `1a9faac5677ac4dde63749a6acac38d95ee88a5082445e6ba6b59cc297d35e4e` | `899c680efe9fdd6ea013ce28e906bb273fbcc10633ee949df0fc47403abd9b3d` | 12801774 |
+| 1600 | `16d89f2c8600364aac3962c4164f0e0875c4fa866fc61269fd6f849e8f1fdad6` | `6bcf531c197b828cd67e1e3518a5404c6aa9bffeb456a9d26ee1b7ee96b1ec0f` | 20861351 |
+
+Machine record: [payload identities](evidence/witness-payload-identities.json). The original package inventories and hashes remain historical byte identities; this sidecar adds provenance without repacking them. External delivery is still PENDING.

@@ -36,8 +36,9 @@ statements and response within their recorded scopes. The prior-art corrections
 are closed by Codex audit~03. The even-degree signed Padua results and
 uniform operator bound were accepted in the PR~23 audit; the present
 odd-degree extensions,
-normalized growth bounds, finite witnesses and manuscript integration are
-pending review.
+normalized growth bounds, finite witnesses and manuscript integration
+were accepted at their stated scopes in Claude cleanup audit~01.
+The accompanying editorial dispositions are recorded in the cleanup response.
 No historical novelty clearance is claimed.
 Historical priority: \textbf{screened, not cleared} (documented, non-exhaustive search; some fulltexts pending); see Section~\ref{sec:context}.
 \end{center}
@@ -1525,7 +1526,7 @@ $N$ & $\lambda_-$ & $\lambda_+$ & $\eta$\\\midrule
 \caption{Measured signed Padua spectra on total degree $n=m-1$;
 $m$ is the Padua construction degree in this table.}\label{tab:padua}
 \begin{tabular}{rrcccc}\toprule
-$m$ & $n$ & $\lambda_-$ & $\lambda_+$ & $\eta$ & negative weights\\\midrule
+$m$ & $n$ & $\lamin(G^\Pa_{m,n})$ & $\lamax(G^\Pa_{m,n})$ & $\eta$ & negative weights\\\midrule
 10 & 9  & .356191383 & 1.634856615 & .643808617 & 2\\
 20 & 19 & .272233005 & 1.723313732 & .727766995 & 2\\
 30 & 29 & .236705530 & 1.757929856 & .763294470 & 2\\
@@ -1545,7 +1546,7 @@ strict finite brackets, independently reconstructed with exact arithmetic
 (\id{PD-T298}, \id{PD-T299}):
 \begin{center}
 \begin{tabular}{rccc}\toprule
-$m$ & $n$ & $\lambda_-$ & $\lambda_+$\\\midrule
+$m$ & $n$ & $\lamin(G^\Pa_{m,n})$ & $\lamax(G^\Pa_{m,n})$\\\midrule
 60 & 59 & $(0.188593,0.188594)$ & $(1.802011,1.802012)$\\
 80 & 79 & $(0.172730,0.172731)$ & $(1.816497,1.816498)$\\\bottomrule
 \end{tabular}
@@ -1582,16 +1583,16 @@ $m$ & $n$ & $Q_m^\Pa(p^2)/\int_{[-1,1]^2}p^2$\\\midrule
 \end{center}
 Consequently the signed Gram form on $\mathcal P_{m-1}$ is indefinite
 at each displayed construction degree.
-This is a computer-assisted development result; the required Claude
-audit is pending.
+This computer-assisted result was accepted at its stated scope in
+Claude cleanup audit~01.
 \end{proposition}
 \begin{proof}[Certificate reduction and trust]
 The stored witness consists of dyadic coefficients multiplying
 unnormalized Legendre products, hence is an exact rational polynomial.
 Its exact continuous squared norm is computed by Legendre orthogonality
 and is positive. The producer encloses its sampled signed energy using
-outward Arb tables, exact fixed-point integer tensor contractions and
-explicit table-error bounds. The weight density is exactly
+outward Arb tables, FLINT exact integer/rational arithmetic for
+fixed-point tensor contractions and norms, and explicit table-error bounds. The weight density is exactly
 \eqref{eq:padua-density}, including its exceptional mode.
 For $m=1600$ its accepted energy enclosure is
 $[-0.0234144\pm4.95\cdot10^{-8}]$, with norm enclosed near
@@ -1603,8 +1604,10 @@ bounds; it obtains a strictly negative enclosure independently.
 This latter path assumes the recorded IEEE binary64 rounding and
 standard BLAS dot-product error model. The exact witness, producer,
 checker, receipts and computational assumptions are identified in the
-repository evidence record. No eigensolver accuracy is an acceptance
-premise. The variational principle gives a negative Gram direction,
+repository evidence record. Only the small evidence receipts are
+committed; the witness arrays and exact norm files are staged separately,
+with external cold-storage delivery pending. No eigensolver accuracy is
+an acceptance premise. The variational principle gives a negative Gram direction,
 whereas the constant one has positive energy $Q_m^\Pa(1)=4$.
 Thus each form is indefinite. The displayed intervals bound trial
 Rayleigh quotients, not minimum eigenvalues. The degree $m=1240$ is

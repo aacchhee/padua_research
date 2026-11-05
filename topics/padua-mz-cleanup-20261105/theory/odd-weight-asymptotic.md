@@ -2,8 +2,8 @@
 
 ID kind: PD-T.
 Aliases: odd-m boundary logarithm; floor-half spectral triangle.
-Split from: the missing odd-m case of PD-T295; its even-m statement is unchanged.
-Split into: odd-m spectral consequences are in PD-T?mz-cleanup-codex-03.
+Extends: the missing odd-m case of PD-T295; its even-m statement is unchanged.
+Related separate result: odd-m spectral consequences are in PD-T?mz-cleanup-codex-03.
 
 ## Statement
 
@@ -39,7 +39,7 @@ before the asymptotic limit. No weight sign classification assumed.
 ## Status by part
 
 Overall status: **PROVED** (analytic development; [supplementary independent
-check completed](../independent-checks-math.md); required Claude audit pending).
+check completed](../independent-checks-math.md); [Claude audit-01 accepted the stated mathematics](../audit-01.md)).
 
 | Part | Status | Evidence |
 |---|---|---|
@@ -59,7 +59,7 @@ proved in PD-T295. No even-m asymptotic is assumed at odd m.
 Rules/input ad503cb0603fc017444b0aa732240981eefa4d24.
 This is an analytic proof without computational premises. [Independent
 mathematical reconstruction completed](../independent-checks-math.md);
-required Claude audit remains pending.
+[Claude audit-01 accepted the stated mathematics](../audit-01.md).
 No executed numerical evidence is claimed by this author.
 
 ## Sources
@@ -142,9 +142,17 @@ alone still do not imply signed-form indefiniteness.
 
 Effective remainders, named onset degrees and sharp spectral constants
 remain separate. [Supplementary independent check completed](../independent-checks-math.md);
-required Claude audit pending.
+[Claude audit-01 accepted the stated mathematics](../audit-01.md).
 
 ## History
 
 2026-11-05, Codex, inherited gpt-6.1-sol xhigh; input/rules ad503cb.
 New odd-parity proof; accepted even-parity files remain untouched.
+
+### Audit-response wording — 2026-11-05
+
+F11 changes the historical relationship label to Extends. F26's optional
+reflected-corner remark is not added: the fixed-corner theorem already
+has its accepted precise scope, and no extra mathematical claim is needed.
+
+Editorial dispositions for this response are collected in [response-01](../response-01.md).

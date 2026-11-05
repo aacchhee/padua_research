@@ -254,5 +254,49 @@
     "generating_command": "Frozen g1_minimum.py commands in final raw receipts; summarize_scans.py --scratch /tmp/mz-cleanup --output topics/padua-mz-cleanup-20261105/evidence/scan-summary.json",
     "checker": "All archived members reopened; exact sizes and SHA-256 compared with inventory. Float data remain MEASURED.",
     "delivery": "PENDING"
-  }
+  },
+  "payload_identity_record": "evidence/witness-payload-identities.json",
+  "payload_identity_note": "Gzip container hashes identify staged bytes and may differ across Python/zlib environments even for the same payload.",
+  "witness_payload_identities": [
+    {
+      "m": 60,
+      "status": "verified original staged bytes",
+      "gzip_sha256": "9a1bb58cce8d8179840a024f045e8bbb32aafe9ad58d7545af4ec74278d566e9",
+      "gzip_bytes": 11853,
+      "payload_sha256": "476ef7b7e277d13756c724cd769a0db89181cbffa5169d25fb47706abfe47146",
+      "payload_bytes": 25831
+    },
+    {
+      "m": 400,
+      "status": "verified original staged bytes",
+      "gzip_sha256": "b433ab66e1d7e971629c58b4c56839a013bf1bfb64e021ccac09b84bd1bb094d",
+      "gzip_bytes": 532189,
+      "payload_sha256": "94a64e01a117a267277ebe45b32d28e66dfecec23f185c60042887a8e09f1ed3",
+      "payload_bytes": 1264192
+    },
+    {
+      "m": 1101,
+      "status": "verified original staged bytes",
+      "gzip_sha256": "22913a3271c0cd826ff062a1f880c3539ef937b0141820dab381b53181662813",
+      "gzip_bytes": 4196078,
+      "payload_sha256": "71bcbc676272a19765c2e859c9116856ae7b5e2680eee332d042f4a3cf62e19e",
+      "payload_bytes": 9956905
+    },
+    {
+      "m": 1240,
+      "status": "verified original staged bytes",
+      "gzip_sha256": "1a9faac5677ac4dde63749a6acac38d95ee88a5082445e6ba6b59cc297d35e4e",
+      "gzip_bytes": 5365436,
+      "payload_sha256": "899c680efe9fdd6ea013ce28e906bb273fbcc10633ee949df0fc47403abd9b3d",
+      "payload_bytes": 12801774
+    },
+    {
+      "m": 1600,
+      "status": "verified original staged bytes",
+      "gzip_sha256": "16d89f2c8600364aac3962c4164f0e0875c4fa866fc61269fd6f849e8f1fdad6",
+      "gzip_bytes": 8692559,
+      "payload_sha256": "6bcf531c197b828cd67e1e3518a5404c6aa9bffeb456a9d26ee1b7ee96b1ec0f",
+      "payload_bytes": 20861351
+    }
+  ]
 }
