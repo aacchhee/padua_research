@@ -1,0 +1,36 @@
+{
+  "status": "MEASURED",
+  "command": [
+    "topics/padua-mz-2d-frontier-20261105/code/g1_fit.py",
+    "/tmp/g1-frontier/scaling.json",
+    "--output",
+    "/tmp/g1-frontier/fits.json"
+  ],
+  "code_sha256": "63387eb1810c35871aa1a26912866d94633c12fd1ae71f9ba0e5fd0b31455750",
+  "input_hashes": {
+    "/tmp/g1-frontier/scaling.json": "7d299dc81cfaa7f6bfa60e2c42300cad54fefd25719ba4b3193334bd6d45a919"
+  },
+  "training": [
+    60,
+    80,
+    100,
+    120,
+    150,
+    200,
+    250,
+    300,
+    400
+  ],
+  "heldout": [
+    600,
+    800,
+    1000
+  ],
+  "quantities": {},
+  "verdict": "inconclusive: incomplete preregistered grid",
+  "missing": [
+    600,
+    800,
+    1000
+  ]
+}

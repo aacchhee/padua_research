@@ -1,0 +1,97 @@
+{
+  "all_inputs_unchanged": true,
+  "boundary_fields_present": true,
+  "checker_sha256": "a9cff5748d6c40ee41ac76e4e8a0035e0d5dab95f4de1233dfcc26902cb085a2",
+  "complete_prefix_partition": true,
+  "composition_accounting_passed": true,
+  "count_certified": false,
+  "counts_from_verified_strata": {
+    "corner": 2,
+    "edge": 16,
+    "interior": 44,
+    "total": 62
+  },
+  "excluded_fresh_fields": [
+    "metadata",
+    "summary.seconds"
+  ],
+  "excluded_fresh_fields_sha256": "c65fa79eb5ce9e5ceed3c83cb6d3f611c6db75c60f8c5d466a49ac265da6881a",
+  "excluded_old_fields": [
+    "metadata",
+    "summary.seconds"
+  ],
+  "excluded_old_fields_sha256": "aed95ef8a0b0a5eac53cc16633bf3a861e0bc78c4970a7daac88dcfed28164ab",
+  "execution_driver_source_sha256": {
+    "boundary": "844b27cf5294cf8494d63707f9862db5a7165fea00e29f8bdd6a6145523457f2",
+    "interior": "0345e62ef9bb88fa11640e135d211648611c9536b85fec528d694e94ef57a69f"
+  },
+  "format": "t1-proof-identity-accounting-composition-v1",
+  "fresh_interior_mathematical_payload_identical": true,
+  "inputs": {
+    "archived_interior": {
+      "bytes": 637163,
+      "path": "/workspace/scratch/lebesgue-t1-independent/cold/topics/padua-proof-attempts-2-20261101/outputs/a5_n8_interior_candidate.json.gz",
+      "sha256": "a3b4f278a322338fb65f60922b4251265288148e1a09fd22882215004e81c324"
+    },
+    "boundary": {
+      "bytes": 4822048,
+      "path": "/workspace/scratch/lebesgue-t1/fresh-boundary-v1.json",
+      "sha256": "adfe1107a326d17cfdd083a2ef9b8ab7ce0aeaa6b906f7a825c53a4fa1da6f08"
+    },
+    "fresh_interior": {
+      "bytes": 637165,
+      "path": "/workspace/scratch/lebesgue-t1/fresh-interior-reflected-v1.json.gz",
+      "sha256": "c5cdcfed9f19f2161b1d55d4f2154bc06a1cd5bd51e28c5c2187ca57c67cc45f"
+    },
+    "joined": {
+      "bytes": 1696013,
+      "path": "/workspace/scratch/lebesgue-t1/fresh-closed-square-v1.json.gz",
+      "sha256": "033e851676969bde6a730f76ee1b4819b87de26b79aac775de6d487dade27fdf"
+    }
+  },
+  "interior_structurally_complete": true,
+  "literal_join_components_identical": true,
+  "mathematical_interior_payload_sha256": "e22a9b5592d26756aa63bf143ae19f7c55fd56d1d5ecd5860088c0f2587089a1",
+  "original_complete_run_executed": false,
+  "original_summary_ast_sha256": "61812bc064c96305324af5a2a52746da8a65e675b0340da792042c026aedf3ca",
+  "replay_receipts": [
+    {
+      "bytes": 12709,
+      "kind": "interior",
+      "path": "topics/padua-lebesgue-followups-20261103/evidence/t1-reference-interior-check.json",
+      "sha256": "b009c46a0da82b6d03c5d870e788e8a6d8b9a6210b2193a7265c7c4a771c0a5c"
+    },
+    {
+      "bytes": 12709,
+      "kind": "interior",
+      "path": "topics/padua-lebesgue-followups-20261103/evidence/t1-independent-reference-interior-check.json",
+      "sha256": "3971aee06d6bc63d82d1f284312f012788452b4f75f38bd9abf08462d625fcd0"
+    },
+    {
+      "bytes": 11413,
+      "kind": "boundary",
+      "path": "topics/padua-lebesgue-followups-20261103/evidence/t1-boundary-check.json",
+      "sha256": "d274ab0fe861f80e84c128d1e6bfd51c63e067700ec8f96ccd757904614d97d5"
+    },
+    {
+      "bytes": 11413,
+      "kind": "boundary",
+      "path": "topics/padua-lebesgue-followups-20261103/evidence/t1-independent-boundary-check.json",
+      "sha256": "bfe1d5cba9f0cf57c264902636440e722c00df5a363b4bcb649258e77d99d288"
+    }
+  ],
+  "requires_actual_distinct_agent_execution_record": true,
+  "scope": "typed identity and original summary predicates compose separately executed complete interior and boundary proofs; not an executed full joined Verifier.run",
+  "source_sha256": "0a4f6a3fde72fb07365ab97e5ed79372cfbe69d1c6a81bbc07cf916bd9746e83",
+  "source_unchanged": true,
+  "used_source_sha256": {
+    "/workspace/padua_research/topics/padua-lebesgue-followups-20261103/code/t1_check_boundary.py": "844b27cf5294cf8494d63707f9862db5a7165fea00e29f8bdd6a6145523457f2",
+    "/workspace/padua_research/topics/padua-lebesgue-followups-20261103/code/t1_compose.py": "0a4f6a3fde72fb07365ab97e5ed79372cfbe69d1c6a81bbc07cf916bd9746e83",
+    "/workspace/padua_research/topics/padua-lebesgue-followups-20261103/code/t1_payload.py": "49552101a9af61fad4624093d2666307234e718e11a28ed2aaf0d4b4f3ceb8be",
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_checker_n8.py": "a9cff5748d6c40ee41ac76e4e8a0035e0d5dab95f4de1233dfcc26902cb085a2",
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_checker_n8_staged.py": "82385dd392513c476e83ed7c5a59c63e602e77d50279fb51a3976ac5857021ef",
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_checker_n8_staged_cached.py": "996c8f4dede1a3d8efed79b982dc53a7c12136c7c9e6e7e3872c67f8007168e9",
+    "/workspace/padua_research/topics/padua-proof-attempts-2-20261101/code/a5_checker_n8_staged_cached_controls.py": "e0baeaf38c69261cd20ede3c0d5df00ad78311ee4af5f844ee6f2f0ba6859ad4",
+    "/workspace/scratch/lebesgue-t1/executed-sources/t1_check.py": "0345e62ef9bb88fa11640e135d211648611c9536b85fec528d694e94ef57a69f"
+  }
+}

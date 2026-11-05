@@ -1,0 +1,8 @@
+100 neg Q/logm=0.76039 (lim -0.07111) pos Q/logm=0.51168 (lim 0.01778)
+200 neg Q/logm=0.65506 (lim -0.07111) pos Q/logm=0.43637 (lim 0.01778) slopes per log2: neg -0.04472 pos -0.06392
+400 neg Q/logm=0.57264 (lim -0.07111) pos Q/logm=0.38302 (lim 0.01778) slopes per log2: neg -0.05732 pos -0.02480
+800 neg Q/logm=0.50666 (lim -0.07111) pos Q/logm=0.34295 (lim 0.01778) slopes per log2: neg -0.06372 pos -0.00340
+1600 neg Q/logm=0.45275 (lim -0.07111) pos Q/logm=0.31142 (lim 0.01778) slopes per log2: neg -0.06712 pos 0.00733
+3200 neg Q/logm=0.40795 (lim -0.07111) pos Q/logm=0.28576 (lim 0.01778) slopes per log2: neg -0.06895 pos 0.01260
+6400 neg Q/logm=0.37015 (lim -0.07111) pos Q/logm=0.26436 (lim 0.01778) slopes per log2: neg -0.06994 pos 0.01519
+12800 neg Q/logm=0.33785 (lim -0.07111) pos Q/logm=0.24619 (lim 0.01778) slopes per log2: neg -0.07048 pos 0.01648

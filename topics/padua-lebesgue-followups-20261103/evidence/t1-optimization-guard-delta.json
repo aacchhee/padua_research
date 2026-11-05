@@ -1,0 +1,146 @@
+{
+  "all_controls_passed": true,
+  "changes": [
+    {
+      "after_sha256": "13fdfa85a4bcaa76e5e5b6ba3d3ede9d80e3ae006f20855f14fa82b581f5859a",
+      "executed_before_sha256": "0345e62ef9bb88fa11640e135d211648611c9536b85fec528d694e94ef57a69f",
+      "old_git_blob": "59ebc4f5ede28a769f1726a5422ab08d859ee3a9",
+      "old_source_bytes": 2215,
+      "old_source_commit": "05cca840c714a065d4e7be0ce5b4ebaaa5207668",
+      "only_preimport_guard_added": true,
+      "optimization_refusals": [
+        {
+          "error": "RuntimeError: T1 refuses optimized Python: t1_check.py",
+          "exit_code": 1,
+          "flag": "-O"
+        },
+        {
+          "error": "RuntimeError: T1 refuses optimized Python: t1_check.py",
+          "exit_code": 1,
+          "flag": "-OO"
+        }
+      ],
+      "original_module_ast_unchanged": true,
+      "path": "topics/padua-lebesgue-followups-20261103/code/t1_check.py",
+      "preserved_byte_blob": "/workspace/scratch/lebesgue-t1/executed-sources/t1_check.py"
+    },
+    {
+      "after_sha256": "b52cdec4daf0b67c1dcee2fb0ea7242740b7c4c2987654aa9a02c4a72ba515bc",
+      "executed_before_sha256": "1ac5cbb83302d12006f35f042954fd6c76881e263ed6de065ca22c5302a77664",
+      "old_git_blob": "cd78c69852b8500d0e16e5fe26f7ee9bc09ecc3f",
+      "old_source_bytes": 2659,
+      "old_source_commit": "05cca840c714a065d4e7be0ce5b4ebaaa5207668",
+      "only_preimport_guard_added": true,
+      "optimization_refusals": [
+        {
+          "error": "RuntimeError: T1 refuses optimized Python: t1_produce.py",
+          "exit_code": 1,
+          "flag": "-O"
+        },
+        {
+          "error": "RuntimeError: T1 refuses optimized Python: t1_produce.py",
+          "exit_code": 1,
+          "flag": "-OO"
+        }
+      ],
+      "original_module_ast_unchanged": true,
+      "path": "topics/padua-lebesgue-followups-20261103/code/t1_produce.py",
+      "preserved_byte_blob": "/workspace/scratch/lebesgue-t1/executed-sources/t1_produce.py"
+    },
+    {
+      "after_sha256": "0e433e088236a44e5fe711aff532f8200703172497f6606bc8c68922e5371f2e",
+      "executed_before_sha256": "d910cb5857a0c09288330925ca833f820690ef76553d8e66402c3e5e352b7e35",
+      "old_git_blob": "90a84a680e1eeb695fbd8a56efef4181c5a884d9",
+      "old_source_bytes": 1084,
+      "old_source_commit": "05cca840c714a065d4e7be0ce5b4ebaaa5207668",
+      "only_preimport_guard_added": true,
+      "optimization_refusals": [
+        {
+          "error": "RuntimeError: T1 refuses optimized Python: t1_memo.py",
+          "exit_code": 1,
+          "flag": "-O"
+        },
+        {
+          "error": "RuntimeError: T1 refuses optimized Python: t1_memo.py",
+          "exit_code": 1,
+          "flag": "-OO"
+        }
+      ],
+      "original_module_ast_unchanged": true,
+      "path": "topics/padua-lebesgue-followups-20261103/code/t1_memo.py",
+      "preserved_byte_blob": "/workspace/scratch/lebesgue-t1/executed-sources/t1_memo.py"
+    },
+    {
+      "after_sha256": "ac4c1364ea632136ce57ab22d518bf913ba2ab7c54cc41b1dd6c0f025ceb8c0f",
+      "executed_before_sha256": "e5c146fd8a85fecf642c98cd0c92c62d2594c3d2a65846a197fe0757f853b098",
+      "old_git_blob": "f26724d64e853dd87ca213a62ae6e6c04a45b195",
+      "old_source_bytes": 3461,
+      "old_source_commit": "05cca840c714a065d4e7be0ce5b4ebaaa5207668",
+      "only_preimport_guard_added": true,
+      "optimization_refusals": [
+        {
+          "error": "RuntimeError: T1 refuses optimized Python: t1_memo_controls.py",
+          "exit_code": 1,
+          "flag": "-O"
+        },
+        {
+          "error": "RuntimeError: T1 refuses optimized Python: t1_memo_controls.py",
+          "exit_code": 1,
+          "flag": "-OO"
+        }
+      ],
+      "original_module_ast_unchanged": true,
+      "path": "topics/padua-lebesgue-followups-20261103/code/t1_memo_controls.py",
+      "preserved_byte_blob": "/workspace/scratch/lebesgue-t1/executed-sources/t1_memo_controls.py"
+    },
+    {
+      "after_sha256": "9b0f7d4be27121b7893a3855a5c8a4f590e3e1f2f11925bd2073fc6fb1d1b8bf",
+      "executed_before_sha256": "cf237404ee914a8d14255638506ace31d626aa42ca77f76934427faac361738d",
+      "old_git_blob": "6e7d5cb5cdb9924d5b5e64ade3f93a2358d91f1d",
+      "old_source_bytes": 2346,
+      "old_source_commit": "05cca840c714a065d4e7be0ce5b4ebaaa5207668",
+      "only_preimport_guard_added": true,
+      "optimization_refusals": [
+        {
+          "error": "RuntimeError: T1 refuses optimized Python: t1_corner_certificate_controls.py",
+          "exit_code": 1,
+          "flag": "-O"
+        },
+        {
+          "error": "RuntimeError: T1 refuses optimized Python: t1_corner_certificate_controls.py",
+          "exit_code": 1,
+          "flag": "-OO"
+        }
+      ],
+      "original_module_ast_unchanged": true,
+      "path": "topics/padua-lebesgue-followups-20261103/code/t1_corner_certificate_controls.py",
+      "preserved_byte_blob": "/workspace/scratch/lebesgue-t1/executed-sources/t1_corner_certificate_controls.py"
+    },
+    {
+      "after_sha256": "f1a9c73fe3070c51b09800c321368210b8efb79bd0699a575f2d7c51373a18c0",
+      "executed_before_sha256": "291ce1a3683cba42f0811c2d378840b5bc3ff6bdd034805d2504cf9d010d6948",
+      "old_git_blob": "c3f42881537b47e7e11f3e38ca25fb206a445e47",
+      "old_source_bytes": 1649,
+      "old_source_commit": "05cca840c714a065d4e7be0ce5b4ebaaa5207668",
+      "only_preimport_guard_added": true,
+      "optimization_refusals": [
+        {
+          "error": "RuntimeError: T1 refuses optimized Python: t1_corner_crossvalidate.py",
+          "exit_code": 1,
+          "flag": "-O"
+        },
+        {
+          "error": "RuntimeError: T1 refuses optimized Python: t1_corner_crossvalidate.py",
+          "exit_code": 1,
+          "flag": "-OO"
+        }
+      ],
+      "original_module_ast_unchanged": true,
+      "path": "topics/padua-lebesgue-followups-20261103/code/t1_corner_crossvalidate.py",
+      "preserved_byte_blob": "/workspace/scratch/lebesgue-t1/executed-sources/t1_corner_crossvalidate.py"
+    }
+  ],
+  "count_certified": false,
+  "recorded_utc": "2026-11-03T12:28:31.918024+00:00",
+  "scope": "inactive legacy T1 entrypoints only; no active native producer or boundary replay source touched; t1_boundary deferred until literal join"
+}

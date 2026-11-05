@@ -1,0 +1,26 @@
+C* = 28.3763348311
+== exact sign-vertex enumeration (n=m-1), plus all n<m ==
+m=2 nodes=6 tau=4.0000000000 tau/2=2.0000000000 norms n=0..m-1: 2.0000000000, 2.0000000000 [0.0s]
+m=3 nodes=10 tau=4.2222222222 tau/2=2.1111111111 norms n=0..m-1: 2.1111111111, 2.1198648920, 2.4355900241 [0.0s]
+m=4 nodes=15 tau=4.0355555556 tau/2=2.0177777778 norms n=0..m-1: 2.0177777778, 2.0180127127, 2.0224157069, 2.3392876409 [0.0s]
+m=5 nodes=21 tau=4.0414814815 tau/2=2.0207407407 norms n=0..m-1: 2.0207407407, 2.0210600378, 2.0221239971, 2.0507357856, 2.3659446501 [3.5s]
+m=6 nodes=28 tau=4.0120937264 tau/2=2.0060468632 norms n=0..m-1: 2.0060468632, 2.0060742038, 2.0061653363, 2.0063658133, 2.0601532516, 2.3358237445 [561.8s]
+== ascent lower bounds (n=m-1), proof-derived per-m upper bound, sqrt(tau*beta_abs) ==
+m=  7 lower(ascent)=2.316817 per-m proof bound=4.1454 sqrt(tau*beta_abs)=2.6710 tau=4.01315193 C*=28.3763 [561.8s]
+m=  8 lower(ascent)=2.284199 per-m proof bound=3.8023 sqrt(tau*beta_abs)=2.5645 tau=4.00507937 C*=28.3763 [561.8s]
+m=  9 lower(ascent)=2.284385 per-m proof bound=3.9693 sqrt(tau*beta_abs)=2.7107 tau=4.00547443 C*=28.3763 [561.8s]
+m= 10 lower(ascent)=2.277685 per-m proof bound=3.8312 sqrt(tau*beta_abs)=2.6034 tau=4.00249631 C*=28.3763 [561.8s]
+m= 11 lower(ascent)=2.273475 per-m proof bound=4.0058 sqrt(tau*beta_abs)=2.7429 tau=4.00269244 C*=28.3763 [561.8s]
+m= 12 lower(ascent)=2.285180 per-m proof bound=3.8180 sqrt(tau*beta_abs)=2.6351 tau=4.00137114 C*=28.3763 [561.8s]
+m= 15 lower(ascent)=2.249958 per-m proof bound=3.9505 sqrt(tau*beta_abs)=2.7914 tau=4.00088599 C*=28.3763 [561.9s]
+m= 16 lower(ascent)=2.294582 per-m proof bound=3.8226 sqrt(tau*beta_abs)=2.6852 tau=4.00051832 C*=28.3763 [561.9s]
+m= 20 lower(ascent)=2.312440 per-m proof bound=3.8250 sqrt(tau*beta_abs)=2.7236 tau=4.00023920 C*=28.3763 [561.9s]
+m= 21 lower(ascent)=2.259311 per-m proof bound=3.8976 sqrt(tau*beta_abs)=2.8427 tau=4.00026085 C*=28.3763 [561.9s]
+m= 25 lower(ascent)=2.273529 per-m proof bound=3.8879 sqrt(tau*beta_abs)=2.8688 tau=4.00013762 C*=28.3763 [562.0s]
+m= 30 lower(ascent)=2.315558 per-m proof bound=3.8314 sqrt(tau*beta_abs)=2.7922 tau=4.00005681 C*=28.3763 [562.1s]
+m= 31 lower(ascent)=2.279142 per-m proof bound=3.8847 sqrt(tau*beta_abs)=2.9009 tau=4.00006223 C*=28.3763 [562.2s]
+m= 40 lower(ascent)=2.321071 per-m proof bound=3.8323 sqrt(tau*beta_abs)=2.8399 tau=4.00002008 C*=28.3763 [562.6s]
+m= 41 lower(ascent)=2.288950 per-m proof bound=3.8698 sqrt(tau*beta_abs)=2.9421 tau=4.00002203 C*=28.3763 [562.9s]
+m= 50 lower(ascent)=2.321852 per-m proof bound=3.8361 sqrt(tau*beta_abs)=2.8763 tau=4.00000889 C*=28.3763 [563.5s]
+m= 60 lower(ascent)=2.323965 per-m proof bound=3.8377 sqrt(tau*beta_abs)=2.9057 tau=4.00000454 C*=28.3763 [565.0s]
+elapsed 564.9649922847748

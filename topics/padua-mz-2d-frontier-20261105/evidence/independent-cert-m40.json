@@ -1,0 +1,122 @@
+{
+ "rules_input_sha": "83cf6f1ee244f2e72057332a7ec04ee74db1f0de",
+ "command": [
+  "topics/padua-mz-2d-frontier-20261105/code/independent_cert.py",
+  "--producer-receipt",
+  "topics/padua-mz-2d-frontier-20261105/evidence/cert-m40.json",
+  "--scratch",
+  "/tmp/padua-independent-cert",
+  "--output",
+  "topics/padua-mz-2d-frontier-20261105/evidence/independent-cert-m40.json"
+ ],
+ "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+ "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+ "numpy": "2.3.5",
+ "scipy": "1.17.0",
+ "python_flint": "0.9.0",
+ "flint": "3.6.0",
+ "checker_sha256": "28228bf2fe412d13c9a581e907aed56385a914b3e51227126b110a9c6b4348cc",
+ "definitions_sha256": "4ac0e391859a14e4d6f752f1244df0701e99d9b3d8ab8570bd632520f517c7db",
+ "independence": "Python Fraction reconstruction and repeated reflections; fresh transforms; shared FLINT and signed-dominance predicate",
+ "result": {
+  "m": 40,
+  "n": 39,
+  "dimension": 820,
+  "offblock_pairs_checked": 168000,
+  "native_integer_entries_compared_as_rationals": 672800,
+  "blocks": [
+   {
+    "dimension": 420,
+    "endpoints": [
+     {
+      "negative": 0,
+      "zero": 0,
+      "positive": 420,
+      "minimum_margin": "249270990380081500949212177306230862889408747628576047773844399668499780",
+      "endpoint": "214817/1000000",
+      "positive_common_denominator": "84615179143749594364127314838533028117777656875000000"
+     },
+     {
+      "negative": 1,
+      "zero": 0,
+      "positive": 419,
+      "minimum_margin": "4106056265731553970987656218198678544937022113350516246458353316218967620",
+      "endpoint": "107409/500000",
+      "positive_common_denominator": "42307589571874797182063657419266514058888828437500000"
+     },
+     {
+      "negative": 420,
+      "zero": 0,
+      "positive": 0,
+      "minimum_margin": "1311586997771127362407995514059022239310891886774800051669373158749012344640",
+      "endpoint": "222261/125000",
+      "positive_common_denominator": "10576897392968699295515914354816628514722207109375000"
+     },
+     {
+      "negative": 420,
+      "zero": 0,
+      "positive": 0,
+      "minimum_margin": "10501157500083309523669819435709211991791817840394974576743367002344156439360",
+      "endpoint": "1778089/1000000",
+      "positive_common_denominator": "84615179143749594364127314838533028117777656875000000"
+     }
+    ],
+    "transform_scale": "10000000000000",
+    "transform_path": "/tmp/padua-independent-cert/independent-m40-R0.txt",
+    "transform_sha256": "03bcdcd5e4173dea207f113a072829eb51cd1dacbb4f2dad0ceef81c55c0cddc",
+    "measured_extrema": [
+     0.21481702946731193,
+     1.7768479510924595
+    ]
+   },
+   {
+    "dimension": 400,
+    "endpoints": [
+     {
+      "negative": 0,
+      "zero": 0,
+      "positive": 400,
+      "minimum_margin": "286766820484871230264613210457885227052959264071496228367795064639113049768",
+      "endpoint": "214817/1000000",
+      "positive_common_denominator": "84615179143749594364127314838533028117777656875000000"
+     },
+     {
+      "negative": 0,
+      "zero": 0,
+      "positive": 400,
+      "minimum_margin": "139152651285282751401173948941647644873086745737367335069445768246711348136",
+      "endpoint": "107409/500000",
+      "positive_common_denominator": "42307589571874797182063657419266514058888828437500000"
+     },
+     {
+      "negative": 399,
+      "zero": 0,
+      "positive": 1,
+      "minimum_margin": "659868052019814108447319443377847071353528320417949007022153137496276948",
+      "endpoint": "222261/125000",
+      "positive_common_denominator": "10576897392968699295515914354816628514722207109375000"
+     },
+     {
+      "negative": 400,
+      "zero": 0,
+      "positive": 0,
+      "minimum_margin": "3182455129605191646005375096024738283705329136258223623045316200207461108",
+      "endpoint": "1778089/1000000",
+      "positive_common_denominator": "84615179143749594364127314838533028117777656875000000"
+     }
+    ],
+    "transform_scale": "10000000000000",
+    "transform_path": "/tmp/padua-independent-cert/independent-m40-R1.txt",
+    "transform_sha256": "8daf3ad0658e8ef271d9bfe347c2eb8e50d447446acaf8358ecd4b0aa32f23c4",
+    "measured_extrema": [
+     0.21485089071302985,
+     1.7780886238837577
+    ]
+   }
+  ],
+  "seconds": 24.799641898999994,
+  "producer_receipt_sha256": "5cacc62a24b817c82cb448fad7d3eb53ca1b598b15f915255b3c2cb2ee4fcf36",
+  "native_exact_sha256": "b754db4c31b0210ed375a0a5084547a4b8051b61e08ae58c59dc34a611a43a6f",
+  "verdict": "PASS"
+ }
+}

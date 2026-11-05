@@ -1,0 +1,49 @@
+{
+  "all_controls_passed": true,
+  "control_sha256": "2cde8073df93d2cc0121c68e26b92e4c1dce025bafb3c8dfa5d5028dbd1fa5cf",
+  "controls": [
+    "top_level_retained:field_embedding",
+    "top_level_retained:format",
+    "top_level_retained:interior_roots",
+    "top_level_retained:leaves",
+    "top_level_retained:n",
+    "top_level_retained:node_cones",
+    "top_level_retained:pattern_order",
+    "top_level_retained:pending_paths",
+    "top_level_retained:precision",
+    "top_level_retained:summary",
+    "top_level_retained:unresolved",
+    "retained:summary.all_gradient_leaves",
+    "retained:summary.complete",
+    "retained:summary.depth",
+    "retained:summary.interior",
+    "retained:summary.interior_complete",
+    "retained:summary.leaf_counts",
+    "retained:summary.leaf_pattern_records",
+    "retained:summary.maximum_ambiguity",
+    "retained:summary.node_leaves",
+    "retained:summary.pending",
+    "excluded:summary.seconds",
+    "retained:summary.stats",
+    "retained:summary.unresolved"
+  ],
+  "count_certified": false,
+  "duplicate_json_rejected": true,
+  "input": {
+    "excluded_fields": [
+      "metadata",
+      "summary.seconds"
+    ],
+    "excluded_fields_sha256": "aed95ef8a0b0a5eac53cc16633bf3a861e0bc78c4970a7daac88dcfed28164ab",
+    "mathematical_payload_bytes": 18969878,
+    "mathematical_payload_sha256": "e22a9b5592d26756aa63bf143ae19f7c55fd56d1d5ecd5860088c0f2587089a1",
+    "path": "/workspace/scratch/lebesgue-t1-independent/cold/topics/padua-proof-attempts-2-20261101/outputs/a5_n8_interior_candidate.json.gz",
+    "raw_bytes": 637163,
+    "raw_sha256": "a3b4f278a322338fb65f60922b4251265288148e1a09fd22882215004e81c324"
+  },
+  "integer_float_boolean_distinguished": true,
+  "metadata_separately_bound": true,
+  "scope": "typed full payload identity and separate excluded provenance only",
+  "source_sha256": "49552101a9af61fad4624093d2666307234e718e11a28ed2aaf0d4b4f3ceb8be",
+  "source_sha256_after": "49552101a9af61fad4624093d2666307234e718e11a28ed2aaf0d4b4f3ceb8be"
+}

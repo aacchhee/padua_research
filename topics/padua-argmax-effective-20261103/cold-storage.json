@@ -1,0 +1,261 @@
+{
+  "format": "padua-scratch-inventory-v1",
+  "topic": "padua-argmax-effective-20261103",
+  "date_utc": "2026-11-03",
+  "input_head": "8a1f394739293953e1566fd24a0a193cc78ff26f",
+  "status": "local scratch inventory; not an exported archive or delivery receipt",
+  "tool_compatibility": "Not padua-cold-storage-v1: tools/cold_storage.py requires existing committed source blobs. These scratch files have never been committed; no git_blob/source_commit is invented.",
+  "delivery": {
+    "windows_ac": "PENDING; no destination selected or transfer/verification performed",
+    "export_performed": false,
+    "archive_verified": false
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "working_directory": "/workspace/padua_research"
+  },
+  "exact_byte_retrieval": "While local files survive, copy them to an AC-chosen durable archive and verify every manifest byte count and SHA256 at the destination; see COLD_STORAGE.md. Regeneration is scientific replay, not guaranteed byte restoration because timing/provenance/log fields vary.",
+  "excluded_small_exact_evidence": [
+    "comparison/g6-exact.json",
+    "comparison/g6-exact-independent.json"
+  ],
+  "excluded_reason": "Root owns copying these small essential exact certificate/checker receipts into committed evidence/. Logs remain listed here.",
+  "generators": {
+    "g2": {
+      "command": "python3 topics/padua-argmax-effective-20261103/code/gates/screens.py g2 --output /workspace/padua-work/gates/g2.json > /workspace/padua-work/gates/g2.log",
+      "source": "code/gates/screens.py",
+      "helpers": [
+        "code/gates/evaluator.py"
+      ]
+    },
+    "g3": {
+      "command": "python3 topics/padua-argmax-effective-20261103/code/gates/screens.py g3 --output /workspace/padua-work/gates/g3.json > /workspace/padua-work/gates/g3.log",
+      "source": "code/gates/screens.py",
+      "helpers": [
+        "code/gates/evaluator.py"
+      ]
+    },
+    "g4": {
+      "command": "python3 topics/padua-argmax-effective-20261103/code/gates/screens.py g4 --output /workspace/padua-work/gates/g4.json > /workspace/padua-work/gates/g4.log",
+      "source": "code/gates/screens.py",
+      "helpers": [
+        "code/gates/evaluator.py"
+      ]
+    },
+    "g2-replay": {
+      "command": "python3 topics/padua-argmax-effective-20261103/code/g2_pilot.py 17 24 48 96 192 > /workspace/padua-work/gates/g2-replay.out",
+      "source": "code/g2_pilot.py",
+      "helpers": [
+        "../padua-argmax-alln-20261101/code/maj.py"
+      ]
+    },
+    "g3-replay": {
+      "command": "python3 topics/padua-argmax-effective-20261103/code/g3_pilot.py 17 48 96 > /workspace/padua-work/gates/g3-replay.out",
+      "source": "code/g3_pilot.py",
+      "helpers": [
+        "../padua-argmax-alln-20261101/code/maj.py"
+      ]
+    },
+    "stability": {
+      "command": "python3 topics/padua-argmax-effective-20261103/code/gates/validate.py > /workspace/padua-work/gates/stability.json",
+      "source": "code/gates/validate.py",
+      "helpers": [
+        "code/gates/evaluator.py",
+        "../padua-argmax-alln-20261101/code/maj.py"
+      ]
+    },
+    "replay-receipt": {
+      "command": null,
+      "source": "inline subprocess timing wrapper (not retained as a file)",
+      "regeneration_note": "Execute the two pilot commands and record actual elapsed times/output hashes; original timing JSON bytes cannot be regenerated exactly."
+    },
+    "g6": {
+      "command": "python3 topics/padua-argmax-effective-20261103/code/comparison/g6_screen.py --output /workspace/padua-work/comparison/g6.json > /workspace/padua-work/comparison/g6.log",
+      "source": "code/comparison/g6_screen.py",
+      "helpers": [
+        "../padua-argmax-alln-20261101/code/part3/tests_common.py",
+        "../padua-argmax-alln-20261101/code/maj.py"
+      ]
+    },
+    "g6-independent-ec": {
+      "command": "python3 topics/padua-argmax-effective-20261103/code/comparison/g6_screen.py --degrees 13 17 24 60 --ib-degrees --output /workspace/padua-work/comparison/g6-independent-ec.json > /workspace/padua-work/comparison/g6-independent-ec.log",
+      "source": "code/comparison/g6_screen.py",
+      "helpers": [
+        "../padua-argmax-alln-20261101/code/part3/tests_common.py",
+        "../padua-argmax-alln-20261101/code/maj.py"
+      ]
+    },
+    "g6-exact": {
+      "command": "python3 topics/padua-argmax-effective-20261103/code/comparison/g6_exact_spots.py --float-input /workspace/padua-work/comparison/g6.json --output /workspace/padua-work/comparison/g6-exact.json > /workspace/padua-work/comparison/g6-exact.log",
+      "source": "code/comparison/g6_exact_spots.py"
+    },
+    "g6-exact-independent": {
+      "command": "python3 topics/padua-argmax-effective-20261103/code/comparison/g6_exact_check.py /workspace/padua-work/comparison/g6-exact.json --controls --output /workspace/padua-work/comparison/g6-exact-independent.json > /workspace/padua-work/comparison/g6-exact-independent.log",
+      "source": "code/comparison/g6_exact_check.py"
+    }
+  },
+  "source_sha256": {
+    "topics/padua-argmax-effective-20261103/code/gates/screens.py": "620b37f6d68fe626db8828eda03da4c7199f1491a2cc03126ba5ae0c0e525049",
+    "topics/padua-argmax-effective-20261103/code/gates/evaluator.py": "41868058578b476e9321da98f6cee35750351f62730e7253b053e58e2a516465",
+    "topics/padua-argmax-effective-20261103/code/g2_pilot.py": "2df259e81f9e3d8fe250b15f3d5a900fc5d9b1a0c07fc02403120b02c7847456",
+    "topics/padua-argmax-alln-20261101/code/maj.py": "705139a65f225f66ed30f5c7f197cda9f54137c42fb10c8b6f452ab83c78909c",
+    "topics/padua-argmax-effective-20261103/code/g3_pilot.py": "a8168a59a68dac7365d0b0a5f1a83ff31d866be09c1ef314d7355ea7bf338108",
+    "topics/padua-argmax-effective-20261103/code/gates/validate.py": "133b6d9141a5c33f316abd7087861205942967c7164533d77eb0f807c0750630",
+    "topics/padua-argmax-effective-20261103/code/comparison/g6_screen.py": "8e5ccfcf2dda1b1eb168bb1f8eeae15da4e3af33ee09743f52e4f977cff24896",
+    "topics/padua-argmax-alln-20261101/code/part3/tests_common.py": "c17e4ed6473b90ed2fa887d0bd2d0b3cf5f6625bbf0d75153a6fa07e26e2a3b7",
+    "topics/padua-argmax-effective-20261103/code/comparison/g6_exact_spots.py": "a35096d3614a0e9413a8bf8e24cfed48912da79e61120a044224464d69a0e2f6",
+    "topics/padua-argmax-effective-20261103/code/comparison/g6_exact_check.py": "74b0255f467b0d045f614e4486b7c60d54e6da2df5e6e3ee2ead73197c463caa"
+  },
+  "entries": [
+    {
+      "path": "gates/g2-replay.out",
+      "current_local_path": "/workspace/padua-work/gates/g2-replay.out",
+      "bytes": 3219,
+      "sha256": "e523689a41c4e17e2b335566381b861619beb933653ef87cbf1c7da80d334249",
+      "generator": "g2-replay",
+      "availability": "present_in_current_workspace_only",
+      "git_blob": null
+    },
+    {
+      "path": "gates/g2.json",
+      "current_local_path": "/workspace/padua-work/gates/g2.json",
+      "bytes": 32461,
+      "sha256": "6dbfe4da8f6256a65aae372f6d137ea94d46ecbf9d59e3be4bcd3f3827525ab6",
+      "generator": "g2",
+      "availability": "present_in_current_workspace_only",
+      "git_blob": null
+    },
+    {
+      "path": "gates/g2.log",
+      "current_local_path": "/workspace/padua-work/gates/g2.log",
+      "bytes": 440,
+      "sha256": "8ea97a9c032f8d6a88edde12bc0882d832d1819d00bda728d5a4484e183d583a",
+      "generator": "g2",
+      "availability": "present_in_current_workspace_only",
+      "git_blob": null
+    },
+    {
+      "path": "gates/g3-replay.out",
+      "current_local_path": "/workspace/padua-work/gates/g3-replay.out",
+      "bytes": 365,
+      "sha256": "091f26984d03fa0b01fe755e5b86138dfde71c1d3bca34709bdde8222b896f2c",
+      "generator": "g3-replay",
+      "availability": "present_in_current_workspace_only",
+      "git_blob": null
+    },
+    {
+      "path": "gates/g3.json",
+      "current_local_path": "/workspace/padua-work/gates/g3.json",
+      "bytes": 4986,
+      "sha256": "c15ed4fe3e25f5fe7a7c721b1a69d2f3de1f42b9f53b80ce10e29859e273a40a",
+      "generator": "g3",
+      "availability": "present_in_current_workspace_only",
+      "git_blob": null
+    },
+    {
+      "path": "gates/g3.log",
+      "current_local_path": "/workspace/padua-work/gates/g3.log",
+      "bytes": 268,
+      "sha256": "4385dc83ef3b328cb95b9d47c36788422ddb1761cffd85e85caa2ee81e9e2415",
+      "generator": "g3",
+      "availability": "present_in_current_workspace_only",
+      "git_blob": null
+    },
+    {
+      "path": "gates/g4.json",
+      "current_local_path": "/workspace/padua-work/gates/g4.json",
+      "bytes": 36206,
+      "sha256": "fe286bd25c6ca56500d52a8b95cdb2e3643a4da509baa25a1b280466ee16d535",
+      "generator": "g4",
+      "availability": "present_in_current_workspace_only",
+      "git_blob": null
+    },
+    {
+      "path": "gates/g4.log",
+      "current_local_path": "/workspace/padua-work/gates/g4.log",
+      "bytes": 274,
+      "sha256": "c3292d43eca42c476ced4d0b23735fe56b29a9952e0b0711bfaf75ecc4157b18",
+      "generator": "g4",
+      "availability": "present_in_current_workspace_only",
+      "git_blob": null
+    },
+    {
+      "path": "gates/replay-receipt.json",
+      "current_local_path": "/workspace/padua-work/gates/replay-receipt.json",
+      "bytes": 887,
+      "sha256": "223325f83dde91ebeebc631ecb6f6ca92f2cd9851a68638128b2ac97d4d27814",
+      "generator": "replay-receipt",
+      "availability": "present_in_current_workspace_only",
+      "git_blob": null
+    },
+    {
+      "path": "gates/stability.json",
+      "current_local_path": "/workspace/padua-work/gates/stability.json",
+      "bytes": 1215,
+      "sha256": "6057cf5a4a8e1dfc346c5410ec1769e8378cbb678a0e5917358cca4da91fed58",
+      "generator": "stability",
+      "availability": "present_in_current_workspace_only",
+      "git_blob": null
+    },
+    {
+      "path": "comparison/g6-exact-independent.log",
+      "current_local_path": "/workspace/padua-work/comparison/g6-exact-independent.log",
+      "bytes": 2039,
+      "sha256": "5fd696715c21d550bcb3adc58d270632383c278d0995d770ed2f55e2a4a66c75",
+      "generator": "g6-exact-independent",
+      "availability": "present_in_current_workspace_only",
+      "git_blob": null
+    },
+    {
+      "path": "comparison/g6-exact.log",
+      "current_local_path": "/workspace/padua-work/comparison/g6-exact.log",
+      "bytes": 107,
+      "sha256": "2d1a59f400b069af8e79d13ccb4fd25579604cb24e128a124ee0f5aeb4f5b900",
+      "generator": "g6-exact",
+      "availability": "present_in_current_workspace_only",
+      "git_blob": null
+    },
+    {
+      "path": "comparison/g6-independent-ec.json",
+      "current_local_path": "/workspace/padua-work/comparison/g6-independent-ec.json",
+      "bytes": 32537,
+      "sha256": "5f2d90212d3dc69f71bbef2872ac1886c274af356e2d1d323efbae642bf0c4bf",
+      "generator": "g6-independent-ec",
+      "availability": "present_in_current_workspace_only",
+      "git_blob": null
+    },
+    {
+      "path": "comparison/g6-independent-ec.log",
+      "current_local_path": "/workspace/padua-work/comparison/g6-independent-ec.log",
+      "bytes": 192,
+      "sha256": "866e62d134b9f3290348839af425b4d4ca2753a8403ecd074b59303f94799d06",
+      "generator": "g6-independent-ec",
+      "availability": "present_in_current_workspace_only",
+      "git_blob": null
+    },
+    {
+      "path": "comparison/g6.json",
+      "current_local_path": "/workspace/padua-work/comparison/g6.json",
+      "bytes": 577726,
+      "sha256": "cd2718db479893d2c1f4027fb2e96c10b5045ac609af4bea8731b3bab5ce42da",
+      "generator": "g6",
+      "availability": "present_in_current_workspace_only",
+      "git_blob": null
+    },
+    {
+      "path": "comparison/g6.log",
+      "current_local_path": "/workspace/padua-work/comparison/g6.log",
+      "bytes": 2424,
+      "sha256": "2d3ae709693f0e62a88612532bc79c732d734b1d7e102f46128925b92baa3173",
+      "generator": "g6",
+      "availability": "present_in_current_workspace_only",
+      "git_blob": null
+    }
+  ],
+  "total_bytes": 695346,
+  "scope_exclusions": "Producer/checker bulk directories are not inventoried here; their owner/root records govern those artifacts."
+}

@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-05",
+  "reservation_publication": "514e3763a827c106c5170eecd55d849b39265da2",
+  "scan": "reservation-recheck.json",
+  "assignments": {
+    "PD-T?lebesgue-followups-codex-t2-01": "PD-T266",
+    "PD-T?lebesgue-followups-codex-t2-02": "PD-T267",
+    "PD-T?lebesgue-followups-codex-t3-01": "PD-T268",
+    "PD-T?lebesgue-followups-codex-t4-01": "PD-T269",
+    "PD-T?lebesgue-followups-codex-t4-02": "PD-T270",
+    "PD-T?lebesgue-followups-codex-t4-03": "PD-T271",
+    "IDEA?lebesgue-followups-codex-t2-01": "IDEA-356",
+    "IDEA?lebesgue-followups-codex-t3-01": "IDEA-357",
+    "IDEA?lebesgue-followups-codex-t4-01": "IDEA-358"
+  },
+  "reused": [
+    "PD-T180",
+    "PD-T184",
+    "IDEA-299",
+    "LIT-388"
+  ],
+  "permanent_unused": {
+    "PD-T": "272\u2013285",
+    "PD-N": "092\u2013099",
+    "IDEA": "359\u2013375",
+    "LIT": "474\u2013481"
+  }
+}
