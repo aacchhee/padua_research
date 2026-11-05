@@ -1,0 +1,401 @@
+{
+  "status": "MEASURED finite floating samples; profiles are not enclosures",
+  "rho1_preregistered": 0.1,
+  "rules_sha": "2fb2f7502bb8d1b46c0fe1089588c46a06df258d",
+  "command": "OPENBLAS_NUM_THREADS=1 python topics/padua-argmax-effective-2-20261105/code/projection_probe.py",
+  "compile_command": [
+    "cc",
+    "-O3",
+    "-std=c11",
+    "-shared",
+    "-fPIC",
+    "/workspace/padua_research/topics/padua-argmax-effective-2-20261105/code/phase_probe.c",
+    "/workspace/padua_research/topics/padua-argmax-effective-2-20261105/code/projection_probe.c",
+    "-lm",
+    "-o",
+    "/workspace/padua_research/local-output/argmax-effective-2-20261105/phase-probe/projection_probe.so"
+  ],
+  "compiler": "cc (Debian 14.2.0-19) 14.2.0",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "sources": [
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/code/projection_probe.c",
+      "bytes": 1310,
+      "sha256": "b27b82c2a29cf3b5a337729562f79b07878a8d4d115792be72fe40755153203e"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/code/projection_probe.py",
+      "bytes": 7242,
+      "sha256": "54f3290f5d784f9c4c5721bfe1583129649ae64c4e54e97a5ac9f8b43c5fe7dc"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/code/phase_probe.c",
+      "bytes": 1510,
+      "sha256": "692d4afd89d3bbda3bac3daaeef7c56aa4ecdde0f9cdd32b9fefa0e296adc365"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/code/phase_probe.py",
+      "bytes": 7620,
+      "sha256": "a2d85ffd293c50095fc6e451a6a4473b17b63bbb54123f397dcec148b08495d9"
+    }
+  ],
+  "validation": {
+    "points": 262,
+    "max_projection_minus_direct_delta": 6.661338147750939e-15,
+    "S_max_abs_error": 1.2434497875801753e-14
+  },
+  "degrees": [
+    {
+      "n": 48,
+      "phases": 49,
+      "center_phase_samples": 58255,
+      "distance_classes": 625,
+      "wall_seconds": 0.4106775400000515,
+      "cpu_seconds": 0.41064040100000004,
+      "all_phase_groups": {
+        "edge-distance-1": {
+          "points": 124,
+          "min_projection": 2.050004690412416,
+          "min_margin": 2.198626446480938
+        },
+        "edge-distance-3": {
+          "points": 124,
+          "min_projection": 1.6681426727763378,
+          "min_margin": 1.7549023034929538
+        },
+        "edge-distance-rest": {
+          "points": 2573,
+          "min_projection": 0.5460349016561179,
+          "min_margin": 0.5665473459850193
+        },
+        "edge-distance-2": {
+          "points": 124,
+          "min_projection": 1.8845790519961203,
+          "min_margin": 1.9767616128438894
+        },
+        "corner": {
+          "points": 38,
+          "min_projection": 0.0,
+          "min_margin": 4.442142987537725e-14
+        },
+        "interior-min-distance-1": {
+          "points": 4557,
+          "min_projection": 2.050004690412416,
+          "min_margin": 2.198626446480938
+        },
+        "interior-min-distance-2": {
+          "points": 4361,
+          "min_projection": 1.8845790519961203,
+          "min_margin": 1.9767616128438894
+        },
+        "interior-min-distance-3": {
+          "points": 4165,
+          "min_projection": 1.6681426727763378,
+          "min_margin": 1.7549023034929538
+        },
+        "interior-min-distance-rest": {
+          "points": 42189,
+          "min_projection": 0.9631919657405993,
+          "min_margin": 0.9844423552026519
+        }
+      },
+      "rho_le_point1_groups": {
+        "edge-distance-1": {
+          "points": 84,
+          "min_projection": 2.2725092035489354,
+          "min_margin": 2.2853575633386676
+        },
+        "edge-distance-3": {
+          "points": 84,
+          "min_projection": 1.7420539437032216,
+          "min_margin": 1.7549023034929538
+        },
+        "edge-distance-rest": {
+          "points": 1743,
+          "min_projection": 0.5632182897620351,
+          "min_margin": 0.5665473459850193
+        },
+        "edge-distance-2": {
+          "points": 84,
+          "min_projection": 1.9645226764308397,
+          "min_margin": 1.9767616128438894
+        },
+        "corner": {
+          "points": 26,
+          "min_projection": 0.0,
+          "min_margin": 4.442142987537725e-14
+        },
+        "interior-min-distance-1": {
+          "points": 3069,
+          "min_projection": 2.2725092035489354,
+          "min_margin": 2.2853575633386676
+        },
+        "interior-min-distance-2": {
+          "points": 2937,
+          "min_projection": 1.9645226764308397,
+          "min_margin": 1.9767616128438894
+        },
+        "interior-min-distance-3": {
+          "points": 2805,
+          "min_projection": 1.7420539437032216,
+          "min_margin": 1.7549023034929538
+        },
+        "interior-min-distance-rest": {
+          "points": 28413,
+          "min_projection": 0.9821525020953683,
+          "min_margin": 0.9844423552026519
+        }
+      },
+      "worst_noncorner": {
+        "margin": 0.5665473459850193,
+        "projection": 0.5665473459849749,
+        "S_excess": -4.440892098500626e-14,
+        "J": 0,
+        "K": 25,
+        "alpha": 0.0,
+        "beta": 0.0
+      }
+    },
+    {
+      "n": 96,
+      "phases": 49,
+      "center_phase_samples": 229399,
+      "distance_classes": 2401,
+      "wall_seconds": 1.921416716000067,
+      "cpu_seconds": 1.921286468,
+      "all_phase_groups": {
+        "edge-distance-1": {
+          "points": 124,
+          "min_projection": 2.5257702339916985,
+          "min_margin": 2.730549890578313
+        },
+        "edge-distance-3": {
+          "points": 124,
+          "min_projection": 2.0376506132095002,
+          "min_margin": 2.1463847990212774
+        },
+        "edge-distance-rest": {
+          "points": 5549,
+          "min_projection": 0.536972026472567,
+          "min_margin": 0.5570827234297723
+        },
+        "edge-distance-2": {
+          "points": 124,
+          "min_projection": 2.232962998005756,
+          "min_margin": 2.352050325141659
+        },
+        "corner": {
+          "points": 38,
+          "min_projection": 0.0,
+          "min_margin": -1.1900368767924718e-13
+        },
+        "interior-min-distance-1": {
+          "points": 9261,
+          "min_projection": 2.5257702339916985,
+          "min_margin": 2.730549890578313
+        },
+        "interior-min-distance-2": {
+          "points": 9065,
+          "min_projection": 2.2329629980057417,
+          "min_margin": 2.352050325141659
+        },
+        "interior-min-distance-3": {
+          "points": 8869,
+          "min_projection": 2.0376506132095002,
+          "min_margin": 2.1463847990212774
+        },
+        "interior-min-distance-rest": {
+          "points": 196245,
+          "min_projection": 0.9704250849147054,
+          "min_margin": 0.9922296456321645
+        }
+      },
+      "rho_le_point1_groups": {
+        "edge-distance-1": {
+          "points": 84,
+          "min_projection": 2.785269440009136,
+          "min_margin": 2.8042037100510853
+        },
+        "edge-distance-3": {
+          "points": 84,
+          "min_projection": 2.127450528979328,
+          "min_margin": 2.1463847990212774
+        },
+        "edge-distance-rest": {
+          "points": 3759,
+          "min_projection": 0.5539106235560503,
+          "min_margin": 0.5570827234297723
+        },
+        "edge-distance-2": {
+          "points": 84,
+          "min_projection": 2.333174936998971,
+          "min_margin": 2.352050325141659
+        },
+        "corner": {
+          "points": 26,
+          "min_projection": 0.0,
+          "min_margin": -1.1900368767924718e-13
+        },
+        "interior-min-distance-1": {
+          "points": 6237,
+          "min_projection": 2.785269440009136,
+          "min_margin": 2.8042037100510853
+        },
+        "interior-min-distance-2": {
+          "points": 6105,
+          "min_projection": 2.333174936998971,
+          "min_margin": 2.352050325141659
+        },
+        "interior-min-distance-3": {
+          "points": 5973,
+          "min_projection": 2.127450528979328,
+          "min_margin": 2.1463847990212774
+        },
+        "interior-min-distance-rest": {
+          "points": 132165,
+          "min_projection": 0.9898240736212445,
+          "min_margin": 0.9922296456321645
+        }
+      },
+      "worst_noncorner": {
+        "margin": 0.5570827234297723,
+        "projection": 0.5570827234298913,
+        "S_excess": 1.1901590823981678e-13,
+        "J": 0,
+        "K": 49,
+        "alpha": 0.0,
+        "beta": 0.0
+      }
+    },
+    {
+      "n": 192,
+      "phases": 49,
+      "center_phase_samples": 910375,
+      "distance_classes": 9409,
+      "wall_seconds": 8.228053907999993,
+      "cpu_seconds": 8.227347539,
+      "all_phase_groups": {
+        "edge-distance-1": {
+          "points": 124,
+          "min_projection": 3.0177152692472258,
+          "min_margin": 3.2804176232980744
+        },
+        "edge-distance-3": {
+          "points": 124,
+          "min_projection": 2.423064124118674,
+          "min_margin": 2.548802892854132
+        },
+        "edge-distance-rest": {
+          "points": 11501,
+          "min_projection": 0.5328487036214148,
+          "min_margin": 0.5526332887050501
+        },
+        "edge-distance-2": {
+          "points": 124,
+          "min_projection": 2.5771121272813096,
+          "min_margin": 2.726481904440752
+        },
+        "corner": {
+          "points": 38,
+          "min_projection": 0.0,
+          "min_margin": -1.8116477661729775e-13
+        },
+        "interior-min-distance-1": {
+          "points": 18669,
+          "min_projection": 3.0177152692472258,
+          "min_margin": 3.2804176232980744
+        },
+        "interior-min-distance-2": {
+          "points": 18473,
+          "min_projection": 2.5771121272813096,
+          "min_margin": 2.726481904440752
+        },
+        "interior-min-distance-3": {
+          "points": 18277,
+          "min_projection": 2.423064124118674,
+          "min_margin": 2.548802892854132
+        },
+        "interior-min-distance-rest": {
+          "points": 843045,
+          "min_projection": 0.9740516272553575,
+          "min_margin": 0.9961337750673054
+        }
+      },
+      "rho_le_point1_groups": {
+        "edge-distance-1": {
+          "points": 84,
+          "min_projection": 3.3132923633944342,
+          "min_margin": 3.3394383826940546
+        },
+        "edge-distance-3": {
+          "points": 84,
+          "min_projection": 2.5240216660046704,
+          "min_margin": 2.548802892854132
+        },
+        "edge-distance-rest": {
+          "points": 7791,
+          "min_projection": 0.5496029967369847,
+          "min_margin": 0.5526332887050501
+        },
+        "edge-distance-2": {
+          "points": 84,
+          "min_projection": 2.702603249830738,
+          "min_margin": 2.726481904440752
+        },
+        "corner": {
+          "points": 26,
+          "min_projection": 0.0,
+          "min_margin": -1.8116477661729775e-13
+        },
+        "interior-min-distance-1": {
+          "points": 12573,
+          "min_projection": 3.3132923633944342,
+          "min_margin": 3.3394383826940546
+        },
+        "interior-min-distance-2": {
+          "points": 12441,
+          "min_projection": 2.702603249830738,
+          "min_margin": 2.726481904440752
+        },
+        "interior-min-distance-3": {
+          "points": 12309,
+          "min_projection": 2.5240216660046704,
+          "min_margin": 2.548802892854132
+        },
+        "interior-min-distance-rest": {
+          "points": 567765,
+          "min_projection": 0.9936624159767896,
+          "min_margin": 0.9961337750673054
+        }
+      },
+      "worst_noncorner": {
+        "margin": 0.5526332887050501,
+        "projection": 0.5526332887052313,
+        "S_excess": 1.8118839761882555e-13,
+        "J": 0,
+        "K": 97,
+        "alpha": 0.0,
+        "beta": 0.0
+      }
+    }
+  ],
+  "raw": [
+    {
+      "path": "local-output/argmax-effective-2-20261105/phase-probe/projection-classes.jsonl",
+      "bytes": 115058253,
+      "sha256": "02bb40b2fba9e94203d337654b15361bd52798b57305389c50de1e1155a4eb4b"
+    },
+    {
+      "path": "local-output/argmax-effective-2-20261105/phase-probe/projection-validation.json",
+      "bytes": 82154,
+      "sha256": "adee2a8737237e03523fc55d02b4d9c6019930950d9a1c7613562046ec9c501d"
+    }
+  ],
+  "limits": [
+    "All admissible centers at sampled phases only; no phase-continuum minimum.",
+    "Triangle inequality is exact algebra; evaluated projections have no floating error bounds.",
+    "No gate pass, cover or certificate. Developer validation is not independent agent rerun."
+  ]
+}

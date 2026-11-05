@@ -25,3 +25,7 @@ L2 search #16 (Austin et al. practical algorithms). Key `austin-et-al-2021` repl
 ## History
 
 2026-11-01: record created at PR-preparation consolidation (audit-01 protocol finding P2) from L2-prior-art-01.md. Provisional IDs only; final `LIT-nnn` allocated at PR preparation. No source was re-read by the consolidator; bibliographic checks (if any) are logged in `topics/bivariate-lanczos-20261031/lit/search-log.md`, section 'PR-preparation consolidation 2026-11-01'.
+
+## 2026-11-03 P3 attribution note
+
+Hokanson arXiv 2009.10803v1, reference [2] (p. 11), cites A. P. Austin, M. Krishnamoorthy, S. Leyffer, S. Mrenna, J. Müller, H. Schulz, Multivariate rational approximation (2019), arXiv:1912.02272v1, and credits multivariate V+A to its Subsec. 3.2 (pp. 4–5). This bibliographic evidence links the arXiv number to the CPC paper; the arXiv metadata page itself was not verified.

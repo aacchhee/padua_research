@@ -133,7 +133,7 @@ obligation for these committed finite certificates. Only AC merges.
 
 ## Effective Padua argmax — PR19 post-merge frontier, 2026-11-05
 
-[Accepted results](../results/padua-argmax-effective-20261103.md): PD-T246 extends finite exact global argmax to every degree2–32, with precisely the parity-correct nonnode corners. PD-T250/251 prove all-degree normalized slopes and strict local decrease for0<h_x+h_y<=1/(2[n(n+1)]^3), a physical radius of order n^-6. This supersedes the historical PR17 all-n-slope gap above; weighted energy and the fixed scaled phase radius remain OPEN.
+[Accepted results](../results/padua-argmax-effective-20261103.md): PD-T246 extends finite exact global argmax to every degree2–32, with precisely the parity-correct nonnode corners. PD-T250/251 prove all-degree normalized slopes and strict local decrease for0<h_x+h_y<=1/(2[n(n+1)]^3), a physical radius of order n^-6. This supersedes the historical PR17 all-n-slope gap above. Phase 2 proves W_n<=10^10 n^4 Lambda_c and instantiates PD-T227 Scope (8) with an explicit physical corner radius 10^-11/n^2 for every n>=2, allowing individual cardinal sign changes. PD-T228 already gives an eventual radius 2^-17/n^2, in particular for log n>=10^7; the phase-2 distinction is its every-n>=2 scope. Combining PD-T251 with PD-T369 gives the usable all-degree strict-descent radius max(1/(2[n(n+1)]^3),10^-11/n^2), applying each theorem's loss bound only on its own domain. PD-T369's radius exceeds PD-T251's only for n>=473. A larger practical corner zone, the complete phase-box certifier and the effective all-degree bridge remain OPEN; the finite global range remains exactly 2–32.
 
 PD-T099 stays OPEN: no effective global n0, unknown bridge33<=n<N_*, degree40 uncertified,33–39 unrun. PD-T249 adds three exact finite E-C comparisons; all-n E-C, interior-to-boundary comparison and uniform remainder/defect control remain OPEN. PD-T247/248/252 stay MEASURED; PD-N084–086 kill only their specified mechanisms. G8 coverage is partial, with no1-D proof transfer or novelty claim.
 
@@ -207,3 +207,22 @@ until there is a concrete coupled update, preserved invariants and a measurable
 comparison criterion. This is the post-merge mathematical frontier, not a new
 assigned campaign or novelty/priority claim. Claude audit-02 accepted science;
 preparation/protocol history stays in the topic log. Only AC merges.
+
+## Effective Padua argmax phase2 — PR25 scoped registration
+
+[Accepted scopes](../results/padua-argmax-effective-2-20261105.md): PD-T364–369
+are six PROVED analytic results; PD-T370 is finite MEASURED evidence;
+PD-N132 rejects only IDEA-456's leading-factor-only a*b_n trial. The current
+[report](../topics/padua-argmax-effective-2-20261105/report.md) distinguishes the
+known O(log²n) baseline, the all-degree local constant and the earlier eventual
+n^-2 radius. PD-T099 stays OPEN;2–32 is the complete certified global range,
+not an effective all-degree bridge. Claude audit-01/response-check-01 accept
+the scoped mathematics/records; preparation audit remains pending, PR25 draft.
+After merge the registrations are completed historical work; remaining practical
+H1/full-diamond H2 research is not scheduled by this preparation. AC's broader
+A0 reading, physical archival and external fulltext priority coverage remain
+separate decision/coverage items; no priority or delivery claim. Only AC merges.
+
+## Literature footing — PR21 audited registration
+
+The [literature report](../topics/padua-literature-20261103/report.md) and [source map](../topics/padua-literature-20261103/preparation/final-id-map.json) register the accepted bounded P1–P4 comparisons and corrections:31 new source-statement IDs482–512 and27 reused aliases. Completed preparation replaces the earlier initialization/download-list task at this scope. Source gaps, search-negative limits and developer-only journal/image/NTNU/Crossref checks remain explicit; no further source campaign or manuscript is assigned here. No mathematical frontier, PD status or accepted PR25/26 result is changed. Only AC merges.

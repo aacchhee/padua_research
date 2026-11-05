@@ -1,0 +1,60 @@
+{
+  "baseline": "5821c3f130ec0b1e33ad1d01620b67620e1f0be1",
+  "result": "PASS",
+  "scope": "mechanical registration and baseline preservation; no scientific rerun or Claude approval",
+  "checks_count": 3648,
+  "immutable_files_checked": 3285,
+  "failed_checks": [],
+  "proof_body_hashes": {
+    "phase-structure.md": {
+      "preserved_body_sha256": "9c60dc82fe11732d5d969c4ceb6043ffb51ba15d4d48eb25c9fe73f3a5bd99c8",
+      "registered_file_sha256": "378548a0635206c8e61111c8ddb24b51f4b7ef1bf3cb16640da16dcf94a9e718"
+    },
+    "profile-boundary-cotangent.md": {
+      "preserved_body_sha256": "5e1824be51565a8de87b9161a716679f32445e89bbed5deb959d3002de51b551",
+      "registered_file_sha256": "045ffa224dbaef9a37db4f30f6773419f804dc55b553fd0efc37f660e9992f42"
+    },
+    "defect-radius-extension.md": {
+      "preserved_body_sha256": "790cc6a231f83e82ec8a82f780da71d02b5ca76c9c516a886e857d473a08fa76",
+      "registered_file_sha256": "243077d9af371f8b19c1e28b9872e44900d73daafe4d509a0d6a5a3815403d97"
+    },
+    "corner-weighted-energy.md": {
+      "preserved_body_sha256": "8282ec1c0e5245cacd9473c497333412f044e7edddf690c23504b91ff40c2f29",
+      "registered_file_sha256": "b704c22eef1b4eb103142ed8deea6aeb25a0aed13158a7176cf0c6538f52a4a6"
+    },
+    "corner-global-norm-ratio.md": {
+      "preserved_body_sha256": "266f91b01a631da5a1af01e89f13f27cbf63dbeae30cf90812150bbf3b9131f7",
+      "registered_file_sha256": "59030239728c51ac9c4cdcb39998277f4b42dd3ad02f0f1bbe71223ae6d243dc"
+    },
+    "corner-n2-local-radius.md": {
+      "preserved_body_sha256": "f9201e6efc460467335b039693d483eea14fe78919df8f967a6d015b63a0ee63",
+      "registered_file_sha256": "fc358b11db799b272a89f8910797ffdf2fb03309161ae2cdfc5a4dfb24aeb045"
+    },
+    "phase2-measurements.md": {
+      "preserved_body_sha256": "5a7dd1d326278ef57881fb129a6c96c763a74db988d2857553114202b8b38426",
+      "registered_file_sha256": "1ab379a5d1aa06ea350c2bd54ff770a4c5cf99a08094ee9e7dccd7f6a38079df"
+    },
+    "profile-leading-only-obstruction.md": {
+      "preserved_body_sha256": "62190154490ae7c0d1c679af5e866fb61d9368249d06df658e9627fa07357d70",
+      "registered_file_sha256": "5cf554b0a787c436bf510f57ddf0c47a892a0c7e8c2a36e5a286ffbf764faf96"
+    }
+  },
+  "checked_shared_sha256": {
+    "ID_CROSSWALK.md": "3445d13f4c329713dc2d9c56998e11bb6f1b334fb30602f62731c9712b29b3c1",
+    "PAPER_MAP.md": "e5783f1f388b9c483b7b022ac836167987f81cf4f946bc90ed0ff4334f77b7e0",
+    "PROOF_STATUS.md": "a1536bc32f5609340fdccdda5e3d8893abe34d24d9bff6832156aadddb134bb5",
+    "RESULTS.md": "6cd5be4e43ac901722b5dc42cf8b2b1247efc78af8055b18111b491448aa4010",
+    "results/padua-argmax-effective-2-20261105.md": "704f1b026762ea00a4145d2338de04eb80c0fa9915bfa281df1038eb1befd8c1",
+    "state/CURRENT.md": "ad3a5fe04ad7f299c6223732077f78aadc6a048c05806573406d05ecfaa5673e",
+    "state/IDEAS.md": "948c30b35cdb3ffacefe398acfb35439fc7e69f8be33fd94bc605b052b8d03c6",
+    "topics/README.md": "e4a87cea1b58387fe50486e948b9b2c63c264743bb72a20d95722409c4cb4d6e",
+    "topics/padua-argmax-effective-2-20261105/ALLOCATIONS.md": "8d07b47ba17ee6152e0f85f8b658478c24cb6e804d3e229d3489947dfcbf4fb2",
+    "topics/padua-argmax-effective-2-20261105/COLD_STORAGE.md": "8af7843ba5ec57f238abce2092312b813d716b6b0fd64eff93fd920efafabc41",
+    "topics/padua-argmax-effective-2-20261105/LOG.md": "e35f90b0fe469d3ec1762793511013b4401298688fdd1ffa310476a9954eea8d",
+    "topics/padua-argmax-effective-2-20261105/cold-storage.json": "38e5287f33e712a8978386711ad574359015682a2248c7e07e5e3e054b7fe7e4",
+    "topics/padua-argmax-effective-2-20261105/ideas/H1.md": "495ac34e5990a87141859101d5f801906ac98e2059a0f916c24f65b727cb884e",
+    "topics/padua-argmax-effective-2-20261105/ideas/H2-H3.md": "b59a615052ee79ec675b05be704be678526bdc7cac70c7ae9d6c7fdb39d69030",
+    "topics/padua-argmax-effective-2-20261105/report.md": "558bd53e0bf2d64cbc92251a01b31a332d90e6a9d85a6fb6124bd7fef8d59b9f",
+    "topics/padua-batch-20261031/ALLOCATIONS.md": "1af904e038bb689817d89880e18e8f4c87b845e310ce69f08218d8403b876d5c"
+  }
+}

@@ -77,3 +77,23 @@ m100 stopped without acceptance. G2 INCONCLUSIVE, G4 original scope INCOMPLETE
 through239 and G5 NOT RUN remain unchanged. External cold-storage delivery
 remains pending and nonblocking because no accepted claim needs retained bulk.
 No manuscript, submission or historical-priority claim is added. Only AC merges.
+
+## Effective Padua argmax phase2 — PR25 accepted scoped registration
+
+[padua-argmax-effective-2-20261105](padua-argmax-effective-2-20261105/LOG.md),
+branch `codex/padua-argmax-effective-2-20261105`:
+[report](padua-argmax-effective-2-20261105/report.md),
+[final ID map](padua-argmax-effective-2-20261105/preparation/final-id-map.json),
+[reservation](padua-argmax-effective-2-20261105/ALLOCATIONS.md).
+PD-T364–369 are six PROVED analytic scopes; PD-T370 retains finite MEASURED
+observations and incomplete covers; PD-N132 refutes only the a*b_n trial;
+IDEA454–461 retain all eight candidate dispositions. PD-T099 remains OPEN,
+with certified global degrees exactly2–32 and no effective full-diamond bridge.
+Claude audit-01 and response-check-01 accepted mathematics/records; the required
+Claude preparation audit remains pending and PR25 stays draft. After merge,
+these scoped registrations replace completed preparation tasks; remaining H1/H2
+research belongs to a later topic, with no scientific run queued here.
+
+## Padua literature campaign — audited PR21 registration
+
+[Report](padua-literature-20261103/report.md), [final source map](padua-literature-20261103/preparation/final-id-map.json), [results](../results/padua-literature-20261103.md). Source attribution/coverage campaign completed at its bounded audited scope; no new mathematical claim or source-proof status.31 new LIT482–512,27 reused aliases;513–561 permanent gaps. Preparation/readiness evidence in the topic record; only AC merges. Source gaps remain disclosed, not a queued new campaign.

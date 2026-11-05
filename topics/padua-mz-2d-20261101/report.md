@@ -69,3 +69,7 @@ Their work supplies the numerical question and weak/strong distinction. This cam
 - Missing independent final-version comparisons: SVZ DOI10.1007/s11075-008-9203-x; Dencker–Erb DOI10.1016/j.jat.2017.03.003; Kolomoitsev–Lomako DOI10.1016/j.amc.2021.126192; Xu1996 DOI10.1006/jath.1996.0102; ASV published body DOI10.1016/j.matcom.2026.10.001. KLP2018 body DOI10.1016/j.jat.2018.02.005 was unreachable. [Source review](literature.md) supplies journal links, inspected versions and locators; unread bodies are not theorem dependencies.
 - No Windows bridge: copy this report and the audit handoff to `C:\Users\andreyac\Downloads\padua\results\padua-mz-2d-20261101.md`. No local delivery is claimed. All essential evidence fits Git limits; no large artifact requires cold-storage export.
 - No separate2D manuscript section was added because the signed D2/D3 spectral targets did not reach their success criterion. The merged manuscript is unchanged.
+
+## 2026-11-03 source-reading update — padua-literature-20261103
+
+SVZ and Dencker–Erb journal bodies were read 2026-11-03; KLP from arXiv v1. Xu1996, KL2021 and ASV published bodies remained unread by that P2 reader at that pass. The later pass2 journal-version addendum records the subsequent supplied-copy checks and their developer-only audit qualification. No scientific status changes.

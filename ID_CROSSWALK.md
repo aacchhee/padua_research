@@ -1351,3 +1351,94 @@ Reservation first published ee490356ce51d5e2f4a84f2c45e6ccb98a19bd90, [PR26](htt
 | IDEA?mz-cleanup-codex-06 | IDEA-471 | [candidate](topics/padua-mz-cleanup-20261105/novelty-gate-math.md); abandoned |
 
 Original C3 target PD-T381 remains OPEN; split/support PD-T379 is PROVED. These supporting bounds are not a proved conjunct of the target and do not make it PARTIAL. PD-T377/378 extend PD-T295/PD-N105–107 without splitting or narrowing accepted statements. Permanent unused gaps: T382–391, N138–145, IDEA472–489; no LIT assignment.
+
+
+## Effective Padua argmax phase2 — final mapping
+
+Owner `codex/padua-argmax-effective-2-20261105`, [PR25](https://github.com/aacchhee/padua_research/pull/25). Unchanged reservation first published `ce17564ea1c185fea0be109b8ebb38efe25bceec`. [Fresh union](topics/padua-argmax-effective-2-20261105/preparation/reservation-check.md); [exact map](topics/padua-argmax-effective-2-20261105/preparation/final-id-map.json); [topic ledger](topics/padua-argmax-effective-2-20261105/ALLOCATIONS.md); [shared batch ledger](topics/padua-batch-20261031/ALLOCATIONS.md). No accepted ID is renumbered.
+
+| Provisional alias | Final ID | Durable record / disposition |
+|---|---|---|
+| PD-T?argmax-effective-2-codex-01 | PD-T364 | [record](topics/padua-argmax-effective-2-20261105/theory/phase-structure.md); PROVED finite sufficiency only; inherited identities are verification/routine lemmas |
+| PD-T?argmax-effective-2-codex-03 | PD-T365 | [record](topics/padua-argmax-effective-2-20261105/theory/profile-boundary-cotangent.md); PROVED boundary profile only |
+| PD-T?argmax-effective-2-codex-04 | PD-T366 | [record](topics/padua-argmax-effective-2-20261105/theory/defect-radius-extension.md); PROVED noncorner rho<=1/10, n>=48 |
+| PD-T?argmax-effective-2-codex-05 | PD-T367 | [record](topics/padua-argmax-effective-2-20261105/theory/corner-weighted-energy.md); PROVED all-degree aggregate energy |
+| PD-T?argmax-effective-2-codex-06 | PD-T368 | [record](topics/padua-argmax-effective-2-20261105/theory/corner-global-norm-ratio.md); PROVED explicit-constant re-derivation of known order |
+| PD-T?argmax-effective-2-codex-07 | PD-T369 | [record](topics/padua-argmax-effective-2-20261105/theory/corner-n2-local-radius.md); PROVED every-n>=2 local radius, original loss/domain |
+| PD-T?argmax-effective-2-codex-08 | PD-T370 | [record](topics/padua-argmax-effective-2-20261105/theory/phase2-measurements.md); MEASURED finite observations; all pilot covers incomplete |
+| PD-N?argmax-effective-2-codex-01 | PD-N132 | [record](topics/padua-argmax-effective-2-20261105/theory/profile-leading-only-obstruction.md); PROVED scoped obstruction; only a*b_n candidate REJECTED: refuted |
+| IDEA?argmax-effective-2-codex-01 | IDEA-454 | [candidate](topics/padua-argmax-effective-2-20261105/ideas/H1.md); retained/OPEN; pilot incomplete |
+| IDEA?argmax-effective-2-codex-02 | IDEA-455 | [candidate](topics/padua-argmax-effective-2-20261105/ideas/H2-H3.md); retained boundary result |
+| IDEA?argmax-effective-2-codex-03 | IDEA-456 | [candidate](topics/padua-argmax-effective-2-20261105/ideas/H2-H3.md); REJECTED: refuted, a*b_n only; PD-N132 |
+| IDEA?argmax-effective-2-codex-04 | IDEA-457 | [candidate](topics/padua-argmax-effective-2-20261105/ideas/H2-H3.md); retained aggregate continuation |
+| IDEA?argmax-effective-2-codex-05 | IDEA-458 | [candidate](topics/padua-argmax-effective-2-20261105/ideas/H1.md); retained quantitative defect variant |
+| IDEA?argmax-effective-2-codex-06 | IDEA-459 | [candidate](topics/padua-argmax-effective-2-20261105/ideas/H2-H3.md); deferred with resume condition |
+| IDEA?argmax-effective-2-codex-07 | IDEA-460 | [candidate](topics/padua-argmax-effective-2-20261105/ideas/H2-H3.md); equivalent to PD-T227(6)–(7), no PD-N |
+| IDEA?argmax-effective-2-codex-08 | IDEA-461 | [candidate](topics/padua-argmax-effective-2-20261105/ideas/H2-H3.md); deferred cell-envelope route with resume condition |
+
+T02 (`PD-T?argmax-effective-2-codex-02`) is **not registered**: local CONDITIONAL A0 evidence only. No LIT ID assigned. Permanent unused gaps: PD-T371–375, PD-N133–137, IDEA462–465 and LIT594–597. PD-T099 stays OPEN and global certified degrees stay2–32.
+
+## Padua literature campaign — PR21 final source-statement mapping
+
+Owner `claude/padua-literature-20261103`; permanent LIT-482–561 first published `fe946c9701916dce042af48c0e2705eac9d87db9`. [Topic ledger](topics/padua-literature-20261103/ALLOCATIONS.md); [shared batch ledger](topics/padua-batch-20261031/ALLOCATIONS.md); [fresh union](topics/padua-literature-20261103/preparation/allocation-scan.json); [deduplication](topics/padua-literature-20261103/preparation/literature-dedup.md). No accepted ID is renumbered. New statement IDs482–512; unused513–561 permanent. Existing broad/overlapping IDs117/118/348,119/347,346,420 and the other reused statements remain distinct where historically registered; coverage addenda do not erase earlier provenance or become independent source verification.
+
+| Provisional alias | Final statement ID | Decision |
+|---|---|---|
+| LIT?padua-literature-claude-01 | LIT-482 | new within own reservation |
+| LIT?padua-literature-claude-02 | LIT-483 | new within own reservation |
+| LIT?padua-literature-claude-03 | LIT-484 | new within own reservation |
+| LIT?padua-literature-claude-04 | LIT-470 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-05 | LIT-485 | new within own reservation |
+| LIT?padua-literature-claude-06 | LIT-486 | new within own reservation |
+| LIT?padua-literature-claude-07 | LIT-466 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-08 | LIT-487 | new within own reservation |
+| LIT?padua-literature-claude-20 | LIT-488 | new within own reservation |
+| LIT?padua-literature-claude-21 | LIT-489 | new within own reservation |
+| LIT?padua-literature-claude-22 | LIT-387 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-23 | LIT-490 | new within own reservation |
+| LIT?padua-literature-claude-24 | LIT-491 | new within own reservation |
+| LIT?padua-literature-claude-40 | LIT-492 | new within own reservation |
+| LIT?padua-literature-claude-41 | LIT-493 | new within own reservation |
+| LIT?padua-literature-claude-42 | LIT-494 | new within own reservation |
+| LIT?padua-literature-claude-43 | LIT-495 | new within own reservation |
+| LIT?padua-literature-claude-44 | LIT-234 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-45 | LIT-234 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-46 | LIT-496 | new within own reservation |
+| LIT?padua-literature-claude-47 | LIT-235 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-48 | LIT-090 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-49 | LIT-284 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-50 | LIT-361 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-51 | LIT-098 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-52 | LIT-281 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-53 | LIT-285 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-54 | LIT-497 | new within own reservation |
+| LIT?padua-literature-claude-55 | LIT-278 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-56 | LIT-096 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-57 | LIT-498 | new within own reservation |
+| LIT?padua-literature-claude-58 | LIT-212 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-59 | LIT-499 | new within own reservation |
+| LIT?padua-literature-claude-60 | LIT-069 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-61 | LIT-210 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-62 | LIT-254 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-63 | LIT-272 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-64 | LIT-500 | new within own reservation |
+| LIT?padua-literature-claude-65 | LIT-083 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-66 | LIT-289 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-67 | LIT-501 | new within own reservation |
+| LIT?padua-literature-claude-70 | LIT-348 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-71 | LIT-502 | new within own reservation |
+| LIT?padua-literature-claude-72 | LIT-503 | new within own reservation |
+| LIT?padua-literature-claude-73 | LIT-117 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-74 | LIT-118 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-75 | LIT-346 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-76 | LIT-346 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-77 | LIT-504 | new within own reservation |
+| LIT?padua-literature-claude-78 | LIT-505 | new within own reservation |
+| LIT?padua-literature-claude-79 | LIT-506 | new within own reservation |
+| LIT?padua-literature-claude-80 | LIT-507 | new within own reservation |
+| LIT?padua-literature-claude-81 | LIT-508 | new within own reservation |
+| LIT?padua-literature-claude-82 | LIT-420 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-83 | LIT-509 | new within own reservation |
+| LIT?padua-literature-claude-84 | LIT-510 | new within own reservation |
+| LIT?padua-literature-claude-85 | LIT-511 | new within own reservation |
+| LIT?padua-literature-claude-86 | LIT-512 | new within own reservation |

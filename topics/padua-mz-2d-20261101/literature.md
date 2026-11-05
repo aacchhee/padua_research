@@ -201,7 +201,7 @@ Theory 87 (1996), 220--238.
 
 Coverage: introduction, node/space definitions (2.14),(2.19), §3 Theorems
 3.1/3.3 and Lemma 3.5, author-PDF pp. 10--13; selected proof text, not a
-full proof audit. Theorem 3.3 gives, for `1<p<=infinity`, a continuous
+full proof audit. Theorem 3.3 gives, for `1<p<infinity` (journal p. 231, checked 2026-11-05; only Lemma 3.5 extends to p = infinity), a continuous
 product-Chebyshev `Lp` norm bounded by the equally weighted nodal `lp` norm
 on the specified Xu interpolation space `V_n`. Lemma 3.5 supplies the forward
 inequality for `Pi_n`. Theorem 3.1 is continuous-input mean convergence.
@@ -264,3 +264,7 @@ Kolomoitsev--Lomako journal comparison; Xu journal comparison; independently
 readable ASV published body. Each DOI and journal locator is supplied above.
 These gaps do not prevent use of the directly inspected author-version
 formulas with their stated provenance. No exhaustive novelty clearance follows.
+
+## 2026-11-03 source-reading update — padua-literature-20261103
+
+LIT-427: the journal body (p. 417) prints the same (n+2)(n+3) denominator; the misprint is in both versions. See literature/records/mz2d-sommariva-vianello-zanovello-2008.md. LIT-014: journal body compared 2026-11-03, identical to arXiv v2 on inspected items. These are developer source readings with audit02/03 verification limits; no PD status changes.
