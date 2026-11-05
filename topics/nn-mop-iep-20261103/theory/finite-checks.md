@@ -1,4 +1,6 @@
-# PD-T?nn-mop-iep-codex-02 — exact finite NN sanity checks
+# PD-T287 — exact finite NN sanity checks
+
+Final ID: **PD-T287**. Provisional alias: `PD-T?nn-mop-iep-codex-02`.
 
 ID kind: PD-T. Aliases: moment-system checker; shifted flatness samples.
 Split from: none. Split into: none.
@@ -46,5 +48,5 @@ digits-lost experiment or stability comparison is asserted.
 
 ## Open items / history
 
-Claude audit PENDING. 2026-11-05, Codex; code worker allocated gpt-6.1-sol
+Claude audit-01 accepted; preparation protocol check pending. 2026-11-05, Codex; code worker allocated gpt-6.1-sol
 medium, supplementary checker gpt-6-astra high. Runtime disclosure in LOG.md.

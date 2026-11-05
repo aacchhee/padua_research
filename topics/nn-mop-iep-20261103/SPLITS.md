@@ -1,7 +1,9 @@
 # Local result disposition and split map — response-01 F1
 
-Provisional labels only; global ID_CROSSWALK/PROOF_STATUS updates wait for
-audited PR preparation. Reservations and accepted final IDs do not change.
+Original provisional labels below are retained as split provenance. Final
+preparation maps T?…03→PD-T288 and T?…04→PD-T289, with the withdrawn
+negative receiving no final ID; see ../../ID_CROSSWALK.md and
+preparation/final-id-map.json. Reservations and accepted IDs do not change.
 
 | Original local record | Current disposition / mathematical home |
 | --- | --- |

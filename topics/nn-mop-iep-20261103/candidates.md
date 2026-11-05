@@ -1,11 +1,13 @@
 # Candidate dispositions — the four candidates prescribed by handoff01
 
-Provisional IDs only. These are retained interpretations of the supplied C1–C4,
+Final IDs assigned at audited PR preparation; provisional aliases retained. These are retained interpretations of the supplied C1–C4,
 not a fresh family of generated algorithms. Gate: [gate.md](gate.md).
 Parent/home: IDEA-117 (and IDEA-031/090/111/193 aliases/predecessors identified
 by the gate). No claim of exhaustive novelty clearance.
 
-## IDEA?nn-mop-iep-codex-01 — C1: finite discrete formulation
+## IDEA-376 — C1: finite discrete formulation
+
+Provisional alias: `IDEA?nn-mop-iep-codex-01`.
 
 - Aliases: normal moment triangle; common-support nearest-neighbour IEP.
 - Question / scope: N distinct common real nodes, two positive weight vectors;
@@ -35,7 +37,9 @@ by the gate). No claim of exhaustive novelty clearance.
 - Canonical record: PD-T?nn-mop-iep-codex-01.
 - History: 2026-11-05, Codex; prescribed candidate from handoff01.
 
-## IDEA?nn-mop-iep-codex-02 — C2: literal commuting-pair interpretation
+## IDEA-377 — C2: literal commuting-pair interpretation
+
+Provisional alias: `IDEA?nn-mop-iep-codex-02`.
 
 - Aliases: fixed-site transfer commutator; zero curvature versus multiplication.
 - Question / scope: identify the two usual 3-by-3 NN transfer matrices at one
@@ -69,7 +73,9 @@ by the gate). No claim of exhaustive novelty clearance.
 - Canonical negative record: PD-N?nn-mop-iep-codex-02.
 - History: 2026-11-05, prescribed C2; no universal impossibility claim.
 
-## IDEA?nn-mop-iep-codex-03 — C3: a new path-wise node update
+## IDEA-378 — C3: a new path-wise node update
+
+Provisional alias: `IDEA?nn-mop-iep-codex-03`.
 
 - Aliases: Van Barel–Chesnokov-style NN update; coupled path transport.
 - Question / scope: add a common node with two weights, maintaining a chosen
@@ -100,7 +106,9 @@ by the gate). No claim of exhaustive novelty clearance.
 - Canonical theory / PD-N: none for deferral; underlying update question OPEN.
 - History: 2026-11-05, prescribed C3; gate stopping condition applied.
 
-## IDEA?nn-mop-iep-codex-04 — C4: known algebraic reconstruction baseline
+## IDEA-379 — C4: known algebraic reconstruction baseline
+
+Provisional alias: `IDEA?nn-mop-iep-codex-04`.
 
 - Aliases: shifted step-lines; marginal Jacobi data; FHV compatibility.
 - Question / scope: reconstruct NN data from the actual two measures, using

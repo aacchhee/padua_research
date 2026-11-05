@@ -1,4 +1,6 @@
-# PD-T?nn-mop-iep-codex-03 — nonzero NN differences on a normal interior square
+# PD-T288 — nonzero NN differences on a normal interior square
+
+Final ID: **PD-T288**. Provisional alias: `PD-T?nn-mop-iep-codex-03`.
 
 ID kind: PD-T.
 Aliases: interior divisor; opposite-corner normality; successor difference.
@@ -40,7 +42,7 @@ alone is not being used as a replacement for them.
 
 ## Status by part
 
-Overall status: PROVED. Independent Claude re-audit PENDING.
+Overall status: PROVED. Claude audit-02 accepted; preparation protocol check pending.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -106,7 +108,7 @@ normality of arbitrary positive inputs or nonvanishing at the last
 coefficient layer |nu|=N-1. The latter has d_nu=0 under full triangular
 normality; its role is a boundary condition in
 [PD-T?nn-mop-iep-codex-04](marginal-reconstruction.md).
-Independent re-audit and final registry allocation remain pending.
+Claude audit-02 accepted; final IDs are assigned and the preparation protocol check remains pending.
 
 ## History
 

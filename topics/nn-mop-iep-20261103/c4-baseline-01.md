@@ -112,8 +112,8 @@ subtraction ratio (|b1|+|b2|)/|d| is:
 These ratios describe subtraction cancellation at the divisors; they
 are not a condition number of reconstruction. Binary64 corrupted
 coefficients can produce much larger apparent ratios. Terminal max |d|
-is recorded separately in the raw receipts and grows to 33.86 (Krawtchouk
-N32) and 6.47 (Hahn N32); exact terminal equality is a boundary diagnostic,
+is recorded separately in the raw receipts and reaches 33.86 (Krawtchouk
+N32) and 71.15 (Hahn N24); it is not monotone. Exact terminal equality is a boundary diagnostic,
 not a division requirement. The pilot exhibits large errors in this
 implementation on these finite inputs. It does not isolate input
 conditioning, marginal Stieltjes error and propagation amplification.
@@ -159,3 +159,14 @@ support the bounded statement. Larger N, independent explicit-family
 coefficient formulas and C3 comparisons are outside this pilot; no such
 execution is claimed. Audit F3's planned comparator has now been executed
 within this finite scope; broader numerical comparison remains open.
+
+## Accepted audit-02 evidence addendum (X1)
+
+Claude audit-02 R4 separately compared the 220-digit references against exact
+Fraction moment ground truth at N=8,12,16,24 in both families, with distance
+<=1.7e-190; the binary64 errors agree with this receipt. Combined with the
+developer's N4 exact checks, independent-formulation exact-reference evidence
+therefore covers the sampled N=4,8,12,16,24. N32 still relies on precision
+convergence. This is auditor-executed MEASURED evidence, not a new execution
+by the preparation agent or a gap-free all-size certification. See
+[audit-02 R4/X1](audit-02.md) and its unchanged checker.

@@ -1,4 +1,6 @@
-# PD-T?nn-mop-iep-codex-04 — marginal Jacobi data reconstruct the normal finite NN triangle
+# PD-T289 — marginal Jacobi data reconstruct the normal finite NN triangle
+
+Final ID: **PD-T289**. Provisional alias: `PD-T?nn-mop-iep-codex-04`.
 
 ID kind: PD-T.
 Aliases: finite CC algorithm; finite FHV layer recursion; terminal boundary equality.
@@ -54,7 +56,7 @@ this theorem does not characterize arbitrary proposed arrays.
 
 ## Status by part
 
-Overall status: PROVED. Independent Claude re-audit PENDING.
+Overall status: PROVED. Claude audit-02 accepted; preparation protocol check pending.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -242,7 +244,7 @@ optimal complexity claim, or converse positive-measure characterization.
 The terminal equality is necessary, not a sufficient inverse criterion.
 It neither determines arbitrary marginal masses nor covers partially
 normal inputs. Stability and coupled updating remain outside this record.
-Independent Claude re-audit and final-ID/registry preparation are pending.
+Claude audit-02 accepted; final IDs and registry entries are prepared, with the protocol check pending.
 
 ## History
 

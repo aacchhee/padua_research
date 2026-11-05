@@ -295,3 +295,27 @@ Import permanent T294–323(30),N104–115(12),IDEA384–413(30),LIT574–581(8)
 [Current union scan](../padua-mz-2d-frontier-20261105/preparation/allocation-scan.json) reads main d9b7cb8 and every open PR21–24 at pinned heads; no closed-unmerged reservation missing. PR24’s unchanged T324–363/N116–131/IDEA414–453/LIT582–593 is acknowledged, not assigned or modified here. PR21LIT482–561 and PR22T286–293/N100–103/IDEA376–383/LIT562–573 remain intact. Existing merged PR19/20 assignments and gaps are untouched.
 
 Assigned T294–300(7),N104–107(4),IDEA384–397(14), no LIT; [map](../padua-mz-2d-frontier-20261105/preparation/final-id-map.json). Permanent unused gaps:T301–323,N108–115,IDEA398–413,LIT574–581. Recheck live heads before readiness; no accepted ID renumbered. No AC merge order is inferred and only AC merges.
+
+## NN MOP IEP — PR22 unchanged reservation import and final assignments
+
+2026-11-05; owner codex/nn-mop-iep-20261103. Fresh-range procedure supersedes
+historical single-owner prose; every older/retired reservation and gap survives.
+Import unchanged T286–293(8), N100–103(4), IDEA376–383(8), LIT562–573(12),
+first published [a0abe8b7b5af6e8c53dc8b0353934537f891f1c9](https://github.com/aacchhee/padua_research/commit/a0abe8b7b5af6e8c53dc8b0353934537f891f1c9),
+linked from [PR22](https://github.com/aacchhee/padua_research/pull/22).
+[Topic ledger](../nn-mop-iep-20261103/ALLOCATIONS.md) retains original heads/date.
+This is import and assignment from that range, not a new reservation.
+
+[Fresh full-file scan](../nn-mop-iep-20261103/preparation/reservation-check.md)
+reads main21dbfc9 and every open PR21/22/24 at pinned heads. All returned
+closed PRs are merged; no closed-unmerged reservation is missing. Union
+maxima are T363/N131/IDEA453/LIT593. PR21 LIT482–561 and PR24's ranges
+remain untouched. Main includes merged PR19/20/23 allocations and gaps.
+
+Assigned T286–290(5), N100(1), IDEA376–379(4), LIT562–568(7).
+Five literature aliases reuse existing IDs (LIT420 twice,346,119,348),
+not new allocations. The withdrawn provisional PD-N?nn-mop-iep-codex-01
+has no final ID; positive content maps to T288/T289.
+Permanent unused gaps: T291–293, N101–103, IDEA380–383, LIT569–573.
+[Exact map](../nn-mop-iep-20261103/preparation/final-id-map.json).
+No merge order is inferred and only AC merges.

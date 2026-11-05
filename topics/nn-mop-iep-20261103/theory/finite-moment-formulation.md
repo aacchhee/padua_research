@@ -1,4 +1,6 @@
-# PD-T?nn-mop-iep-codex-01 — finite discrete nearest-neighbour data from moment systems
+# PD-T286 — finite discrete nearest-neighbour data from moment systems
+
+Final ID: **PD-T286**. Provisional alias: `PD-T?nn-mop-iep-codex-01`.
 
 ID kind: PD-T. Aliases: normal finite MOP triangle; direct moment baseline; C1.
 Split from: none. Split into: none.
@@ -38,7 +40,7 @@ consequence of positivity or a claim about all positive inputs.
 ## Status by part
 
 Overall status: PROVED. Standard defining linear algebra and recurrence
-derivation, with no priority or new-algorithm claim. Independent audit PENDING.
+derivation, with no priority or new-algorithm claim. Claude audit-01 accepted; preparation protocol check pending.
 
 ## Depends on
 

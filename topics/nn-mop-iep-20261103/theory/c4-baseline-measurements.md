@@ -1,4 +1,6 @@
-# PD-T?nn-mop-iep-codex-05 — bounded C4 floating-point pilot
+# PD-T290 — bounded C4 floating-point pilot
+
+Final ID: **PD-T290**. Provisional alias: `PD-T?nn-mop-iep-codex-05`.
 
 ID kind: PD-T.
 Aliases: C4 marginal Stieltjes plus A/B layer baseline; digits lost pilot.
@@ -95,8 +97,9 @@ claim, new algorithm, or optimality/complexity conclusion is supplied.
 
 Supplementary independent replay of both full commands completed;
 [response-independent-01.md](../response-independent-01.md) records its own
-outputs and exact case-payload comparison. Required Claude re-audit remains
-pending; this attribution-only receipt update changes no executable or result.
+outputs and exact case-payload comparison. Claude audit-02 accepted this
+record; the preparation protocol check is pending. This attribution-only
+update changes no executable or result.
 No cold-storage transfer of local regenerable JSON is claimed; the code and
 receipt suffice to reproduce this bounded observation. Larger runs and detailed error-source analysis
 are not required for this finite statement and have not been executed.
@@ -109,3 +112,13 @@ backend runtime model/effort metadata not exposed. Rules/input head
 pilot for audit-01 F3; reference raised from 100/160 to 140/220 dps after
 Hahn N32 missed the chosen convergence threshold in an intermediate run.
 No Git operation or shared-file edit by this worker.
+
+## Accepted evidence addendum — audit-02 X1
+
+Claude audit-02 R4 supplies auditor-executed exact Fraction comparisons at
+N=8,12,16,24 for both families (reference distance<=1.7e-190 and reported
+binary64 errors reproduced). Together with N4, the sampled exact-reference
+scope is N=4,8,12,16,24; N32 uses precision convergence. The earlier
+only-N4 limitation describes developer coverage, now strengthened by that
+separate MEASURED audit evidence. No all-N or general stability claim follows.
+No new run was executed during PR preparation.

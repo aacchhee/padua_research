@@ -82,7 +82,8 @@ gap in the two original elementary proofs and identified one comment error,
 corrected with a new hash and rerun. Claude [audit-01](audit-01.md) accepted
 their mathematics but identified the erroneous significance attached to the
 terminal equality. [Response-01](response-01.md) corrects it and addresses
-all findings; a required Claude re-audit is pending.
+all findings. Claude [audit-02](audit-02.md) accepts the response;
+preparation now assigns final IDs without changing mathematical content.
 
 [All four prescribed candidates](candidates.md) are retained: C1 is the
 standard formulation; C2's literal fixed-site dictionary is refuted within
@@ -114,9 +115,12 @@ maintaining both directions improves accuracy or cost over repeated known
 reconstruction on identical input families. The zero-curvature interpretation
 is established background; an algorithmic advantage needs separate evidence.
 
-Draft [PR22](https://github.com/aacchhee/padua_research/pull/22). Response
-rules/input: 44c4d5a1aeb31307613e892a5b67c7cb968e4ee9. Current main/base
-5db1e01dcd2258f45de2adcaef43859e59734618 was merged without rewriting
-history. Response changes are topic-owned; inherited registry changes from
-main are retained. Final IDs and topic registry integration await audited PR
-preparation. Next is Claude Opus 5.5 xhigh re-audit of response-01.
+[PR22](https://github.com/aacchhee/padua_research/pull/22) has completed
+audited registration against main21dbfc90257b952d8923f6d01739d12aa8d6e0a1.
+The topic ledger and [final map](preparation/final-id-map.json) assign
+PD-T286–290, PD-N100, IDEA376–379 and LIT562–568, with same-source
+reading addenda reusing existing IDs. The former provisional negative has
+no final ID. Claude audit-02 accepted the science; approved E1/E2/X1 edits
+are applied. The remaining step is a short Claude preparation protocol check.
+The exact study is complete; stable coupled updating remains deferred,
+with no further mathematical campaign assigned and only AC deciding merge.

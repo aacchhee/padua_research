@@ -1,10 +1,12 @@
 # Nearest-neighbour MOPs as a commuting-pair IEP (IDEA-117): log
 
-- Branch: `codex/nn-mop-iep-20261103` · Base: main `5db1e01` (original `440d107`) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: PR (audit-02 accepted response-01) · Next: `Codex (gpt-6.1-sol, medium): Continue codex/nn-mop-iep-20261103.` · Open handoff: [handoffs/05-pr-preparation.md](handoffs/05-pr-preparation.md)
+- Branch: `codex/nn-mop-iep-20261103` · Base: main `21dbfc9` (original `440d107`) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
+- Stage: PR (preparation complete; protocol check pending) · Next: `Claude (Sonnet 5.5 high): Continue codex/nn-mop-iep-20261103.` · Next handoff: [handoffs/06-protocol-check.md](handoffs/06-protocol-check.md)
 - Reserved final-ID ranges: T286–293, N100–103, IDEA376–383, LIT562–573;
   first pushed in a0abe8b, [draft PR22](https://github.com/aacchhee/padua_research/pull/22).
-  No final assignments yet.
+  Final assignments: PD-T286–290, PD-N100, IDEA376–379, LIT562–568;
+  same-source aliases additionally reuse LIT420/346/119/348. Permanent gaps
+  remain; [map](preparation/final-id-map.json).
 - Claims and precise statuses: [report](report.md), [results](../../results/nn-mop-iep-20261103.md).
 
 ## 2026-11-03 — Claude, claude-opus-5-5 high — topic setup at AC's request
@@ -181,3 +183,59 @@ This additional integration run is not counted as a third independent check.
   A coupled new updater still needs a concrete invariant and separation test.
 - Fresh union scan, same-source deduplication, final IDs and additive shared
   registry preparation follow a clean audit. Existing reservations unchanged.
+
+## 2026-11-05 — PR preparation after audit-02 acceptance
+
+- User requested Codex gpt-6.1-sol medium continuation. Rules/log/handoff05
+  read at f4c41acb665f4ea35b5db05ec45ae8ba34fe6b96. Runtime backend/effort
+  remains unexposed to this orchestrator; no exact backend attestation.
+  Roles: topic orchestrator; bounded gpt-6.1-sol medium reservation/dedup
+  workers; gpt-6-astra medium supplementary integration checker.
+- Main advanced to21dbfc90257b952d8923f6d01739d12aa8d6e0a1 (PR20/23
+  merged after PR19). Merged without conflict at4270d34abffdb83f33bbb811fb5b18e71809b14c;
+  rules unchanged. Inherited results/registries and all foreign reservations
+  remain intact. No new scientific candidate, run, primary reading or novelty
+  claim in this mechanical preparation; accepted gate/science not reopened.
+- E1 corrected nonmonotone terminal diagnostic wording (Hahn N24=71.15).
+  E2 distinguishes marginal-only Jacobi route from shifted-line family plus
+  boundary data, and says no C3 comparison. X1 credits auditor-executed exact
+  references on sampled N4,8,12,16,24, not a gap-free all-size certification;
+  N32 remains precision convergence. No code/value/proof change.
+- [Fresh union scan](preparation/reservation-check.md) and
+  [PR population](preparation/pr-population.json) read main and every open
+  PR21/22/24; all closed PRs returned are merged. Topic reservation remains
+  uncontested; no new ranges. All35 file copies/23unique blobs are hashed.
+  [Dedup](preparation/literature-dedup.md) finds PR21 has no final IDs at
+  890f56c; no offset inferred. Seven new sources assigned562–568; five
+  reading aliases reuse420 twice,346,119,348. Source coverage/gaps preserved.
+- Final IDs from unchanged ranges: T286–290 (3PROVED,2MEASURED), N100
+  (MEASURED literal counterexamples), IDEA376–379 (equivalent/refuted/deferred/
+  equivalent). Withdrawn provisional N?…01 gets no final ID; content splits
+  to T288/T289 with full history. Unused T291–293,N101–103,IDEA380–383,
+  LIT569–573 remain permanent gaps. Header/alias assignments and additive
+  registry/index/corpus/crosswalk/batch/frontier/results entries preserve
+  accepted epistemic statuses. IDEA-117 records AC's resume and gate outcome.
+- [Mechanical check](preparation/check_registration.py) validates IDs/map,
+  crosswalk, unchanged executable/auditor/proof sections, shared-prefix
+  preservation (only the authorised IDEA117 row changes), source anchors,
+  and literal own-section RESULTS copying. [Verification](preparation/verification.md)
+  records actual commands and limits; no scientific checker rerun is claimed.
+- The [optional supplementary integration check](preparation/integration-check.md)
+  did not execute: gpt-6-astra medium returned a capacity error. No substitute
+  or independent approval is claimed. The orchestrator mechanical check is
+  separate from the required Claude review of registration. PR22 stays draft pending [handoff06](handoffs/06-protocol-check.md),
+  with scientific acceptance already recorded in audit-02. Only AC merges.
+
+### Preparation remainder
+
+The exact reconstruction study and assigned preparation are complete.
+A short Claude protocol check covers editorial/ID/registry work; no further
+mathematical campaign is assigned. Stable coupled updating, error-source
+separation and wider measurements remain deferred questions. Do not treat
+preparation or a protocol check as approval of PR21/24 or an AC merge order.
+
+Late reservation refresh: PR24 advanced to79c3d6a211325eca6e8311b3ae03187c100a1d8a.
+[Fresh receipt](preparation/reservation-refresh.json) reads all11 of its
+ledger/registry copies: shared files are exactly current-main bytes, and its
+own permanent reservation ledger is unchanged. Main21dbfc9 and PR21 890f56c
+remain unchanged. No collision or changed literature mapping results.

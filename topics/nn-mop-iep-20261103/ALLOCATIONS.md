@@ -32,3 +32,24 @@ audited PR preparation, within handoff01's scope limit.
 First publication: [a0abe8b7b5af6e8c53dc8b0353934537f891f1c9](https://github.com/aacchhee/padua_research/commit/a0abe8b7b5af6e8c53dc8b0353934537f891f1c9),
 linked from [draft PR22](https://github.com/aacchhee/padua_research/pull/22).
 The reservation is unchanged; it is not assigned by this provenance update.
+
+## Final assignment — 2026-11-05 audited preparation
+
+Fresh scan: main21dbfc90257b952d8923f6d01739d12aa8d6e0a1; open
+PR21=890f56ccde35431b70b43141c224b0b8817fea7f,
+PR22=f4c41acb665f4ea35b5db05ec45ae8ba34fe6b96,
+PR24=5e5081e991fc48f033d3ef51ee2b6e42f892d29d. All returned closed
+PRs are merged, none closed-unmerged.
+[Full pinned scan](preparation/reservation-check.md) confirms no collision.
+
+Assigned **PD-T286–290 (5), PD-N100 (1), IDEA376–379 (4), LIT562–568 (7)**.
+[Exact map](preparation/final-id-map.json). Same-source aliases additionally
+reuse LIT420 (FHV and ADY halves), LIT346, LIT119 (related347), LIT348
+(related117/118). PR21 has no final IDs at the checked head; its provisional
+correspondences are pinned in the dedup note, with no inferred offsets.
+
+Unused permanent gaps: **T291–293, N101–103, IDEA380–383, LIT569–573**.
+Original ranges/priority are unchanged. Former provisional N?…01 has no
+final ID: its failure classification was withdrawn, positive contents map
+to T288/T289. The reservation is imported unchanged into the shared batch
+ledger; original scan paragraphs above remain historical provenance.

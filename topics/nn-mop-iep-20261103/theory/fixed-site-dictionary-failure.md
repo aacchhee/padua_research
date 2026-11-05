@@ -1,4 +1,6 @@
-# PD-N?nn-mop-iep-codex-02 — standard transfers do not commute at a fixed site
+# PD-N100 — standard transfers do not commute at a fixed site
+
+Final ID: **PD-N100**. Provisional alias: `PD-N?nn-mop-iep-codex-02`.
 
 ID kind: PD-N. Aliases: C2 literal fixed-site dictionary counterexamples.
 Split from: none. Split into: none.
@@ -56,6 +58,6 @@ The recorded exact counterexamples give the evidence for the statement.
 
 No universal impossibility or novelty claim. Other encodings remain outside
 scope. Claude audit-01 accepted the finite counts/status and requested this
-F2 wording correction; response-01 re-audit PENDING. The full-lattice H_j
+F2 wording correction; Claude audit-02 accepted. Preparation protocol check pending. The full-lattice H_j
 are not identified with the transfer matrices; no new full-lattice measurement
 is added here. 2026-11-05, Codex, metadata in LOG.md.
