@@ -1,7 +1,7 @@
 # Effective all-degree Padua argmax, phase 2 (PD-T099): log
 
 - Branch: `codex/padua-argmax-effective-2-20261105` · Base: main `5db1e01` (PR #19 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: AUDIT · Next: `Claude (Opus 5.5 high): Continue codex/padua-argmax-effective-2-20261105.` · Open handoff: [handoffs/04-response-check.md](handoffs/04-response-check.md)
+- Stage: PR · Next: `Codex (gpt-6-astra ultra): Continue codex/padua-argmax-effective-2-20261105.` · Open handoff: [handoffs/05-pr-preparation.md](handoffs/05-pr-preparation.md)
 - Permanent reservation: T364–375/N132–137/IDEA454–465/LIT594–597, first published ce17564; no final assignments. [Ledger](ALLOCATIONS.md).
 - Scoped claims: T01 narrow finite sufficiency; analytic T03–T07 and N01; T08 existing MEASURED observations; T02 remains an unregistered CONDITIONAL diagnostic. Full-diamond H2, complete H1 certification and PD-T099 remain OPEN; see report.md and gates.md.
 - Open for AC: the sandbox compute allowance in handoff 01 (6 h per run, about 48 h cumulative CPU) is Claude's proposal; AC may change it. Ask AC before using any machine outside the sandbox.
@@ -111,3 +111,4 @@
 - [response-check-01](response-check-01.md): ACCEPTED. All F1–F12/E1–E8 resolved. F3 broader A0 reading stays an AC decision item. F12's local-byte presence is Codex-attested and could not be read from the Claude session.
 - Executed: an own Statement/display/status preservation script (8/8 Statements byte-identical, no display lost or added, statuses unchanged); the impact helper minus its local-artifact block (all other checks pass and match Codex's receipt); 52-row manifest verification; T08 transcription versus committed receipts (exact); git diff --check.
 - No mathematical re-audit needed. PD-T099 OPEN; global range 2–32. Stage: PR (Codex preparation).
+- Handoff 04 done in `d574603`; [handoff 05](handoffs/05-pr-preparation.md): Codex PR preparation.
