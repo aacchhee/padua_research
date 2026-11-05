@@ -139,3 +139,38 @@ the4cores. `p6_cost_case.py` records the explicit single-rule coverage and
 every completed/partial prefix; if both finish, compare all11 exact rows.
 This remains cost screening and cannot establish N2's all-four-rule window.
 The original D36 successor source/input identities and3600s caps stay fixed.
+
+For the coordinator's bounded alternative-checker resource experiment,
+`p6_basis_export.cpp` exports exact basis/creator data only and never source
+propagation. Independent FLINT reconstruction must verify fullweightedGram,
+all creator relations/source scales and pivot/tie legality before computing
+any inverse response. The separate helper's prospective schema,60second
+pilot caps, actual runs, dependency/runtime setup and final no-override
+decision live in `flint-check-notes.md`; they are not new P6 high endpoints.
+
+## New dated reflection-method successor, before reduced experiments
+
+The earlier no-symmetry runs/plans and their source hashes remain intact.
+After the bounded FLINT cost screen failed, the coordinator requested one
+last separate implementation variant, proved in `p6-reflection-methods.md`:
+reuse squared responses only under the two independent sign flips. No
+coordinate swap, measure change, removed node/source, or changed endpoint
+formula is permitted. The new source is `p6_reflection_scalar.cpp`; original
+producer/scalar sources and in-flight3600s jobs remain unchanged.
+
+Before any reduced pilot, require the written proof and distinct math
+review. The implementation must check exact reflected weighted permutations,
+full324-node basis/Gram/creators/scales, basis parity, every mismatched-parity
+coefficient zero and parent character relation. Its only reduced arrays are
+source responses/energies at exact(abs(x),abs(y)) representatives. Expand
+them to every original node, using each actual full-node normal diagonal
+for all L/H/Urow/upper/trace calculations. All152 sourcepositions at16 and
+all degree prefixes remain. Any guard failure rejects the shortcut.
+
+After that gate, run exact degree6/8 full-field comparisons for all four
+rules,60seconds per native case, one extra serial process sharing4cores.
+Same-maximum-degree baseline comparisons must retain Gram-count equality;
+cross-maximum-degree reference slices must separately check Gram coverage
+and disclose the count difference. No degree16 adoption before successful
+pilots, actual cost report and focused distinct scan/code review. This is a
+new dated resource-method variant; N2's data/model/thresholds are unchanged.

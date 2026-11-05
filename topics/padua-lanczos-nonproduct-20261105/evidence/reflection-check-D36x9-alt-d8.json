@@ -1,0 +1,140 @@
+{
+  "status": "PASS full-field original/reflection equality and accepted-path comparison",
+  "family": "D36x9",
+  "max_degree": 8,
+  "rule": "alt",
+  "method_record": "p6-reflection-methods.md",
+  "method_approval": "distinct mathematical review and explicit coordinator approval received before all experiments",
+  "input": {
+    "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+    "bytes": 5734,
+    "sha256": "48977eefea1c662c3ef23c8ed17d49e3cb0310a6d53321add8c51c91866313f6"
+  },
+  "sources": {
+    "p6_scalar_check.cpp": {
+      "path": "topics/padua-lanczos-nonproduct-20261105/code/p6_scalar_check.cpp",
+      "bytes": 5495,
+      "sha256": "58480a866b56e22c61add95d01f90774726b5f90e32186354ef1ab8f87b10b72"
+    },
+    "p6_reflection_scalar.cpp": {
+      "path": "topics/padua-lanczos-nonproduct-20261105/code/p6_reflection_scalar.cpp",
+      "bytes": 11085,
+      "sha256": "09d524f915076105b04fb196ee98c6c6cd4cecbc6b6e49bcfacb541ffc999088"
+    }
+  },
+  "binaries": {
+    "original": {
+      "path": "/tmp/padua-lanczos-nonproduct-20261105/reflection-check/original",
+      "bytes": 56712,
+      "sha256": "7dfd011fdafb0c8db94aa933f97407278dd3ea789f7ff0265d61cc4d12a72960"
+    },
+    "reflection": {
+      "path": "/tmp/padua-lanczos-nonproduct-20261105/reflection-check/reflection",
+      "bytes": 84224,
+      "sha256": "a3c9193a82846f97f7c4e23afa4b5eba5b8867e043eabea16716d74816f8e559"
+    }
+  },
+  "per_process_seconds": 60,
+  "concurrency": "serial one extra CPU process",
+  "runs": [
+    {
+      "backend": "original",
+      "command": [
+        "/tmp/padua-lanczos-nonproduct-20261105/reflection-check/original",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+        "8",
+        "alt",
+        "D36x9"
+      ],
+      "status": "completed",
+      "returncode": 0,
+      "wall_seconds": 12.745870519000164,
+      "output": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/reflection-check/D36x9-alt-d8-original.jsonl",
+        "bytes": 67814,
+        "sha256": "0ed98290f594a2558fcfb2e6c97a02117c90a78ce5eab094517520fcde30ea5b"
+      },
+      "log": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/reflection-check/D36x9-alt-d8-original.log",
+        "bytes": 707,
+        "sha256": "eda08e5bc684162cd47e5e9e0fe638977485c63440662ed9233f48cf60771be5"
+      }
+    },
+    {
+      "backend": "reflection",
+      "command": [
+        "/tmp/padua-lanczos-nonproduct-20261105/reflection-check/reflection",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+        "8",
+        "alt",
+        "D36x9"
+      ],
+      "status": "completed",
+      "returncode": 0,
+      "wall_seconds": 5.733225334000053,
+      "output": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/reflection-check/D36x9-alt-d8-reflection.jsonl",
+        "bytes": 67815,
+        "sha256": "e19cd45f7d16ba5ef8ea88b0cb48cff7e18643fb119261fbea95b8716ff03eb2"
+      },
+      "log": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/reflection-check/D36x9-alt-d8-reflection.log",
+        "bytes": 1129,
+        "sha256": "7879204309c391e1a0430bbdb48a38489540d5b36d2d9ea73377ddb2006d13cb"
+      }
+    }
+  ],
+  "reflection_orbits": {
+    "nodes": 324,
+    "representatives": 90,
+    "size1": 0,
+    "size2": 18,
+    "size4": 72
+  },
+  "reflection_guards": {
+    "basis_parity_scalar_checks": 29160,
+    "parent_exponent_checks": 44,
+    "alpha_slots_checked": 990,
+    "cross_parity_zeros_checked": 750,
+    "source_positions": 44,
+    "expanded_node_source_snapshots": 49896,
+    "expected_expanded_node_source_snapshots": 49896
+  },
+  "phase_seconds": {
+    "basis": 1.78691,
+    "source": 3.49444,
+    "finish": 0.40711
+  },
+  "comparisons": [
+    {
+      "reference": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/benchmark8-D36x9/producer-alt.jsonl",
+        "bytes": 67817,
+        "sha256": "80bf61ecddc35252f49ba74e32b76774dad7ecfa971f8701385bd2c0f359c25c"
+      },
+      "backend": "producer",
+      "status": "PASS all scientific fields; full-build Gramcounts separately verified",
+      "reference_max_degree": 8,
+      "comparison_prefix": [
+        2,
+        8
+      ]
+    },
+    {
+      "reference": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/benchmark8-D36x9/checker-alt.jsonl",
+        "bytes": 67814,
+        "sha256": "8158d4d61b71dea59a10427c9795033f34a3e6f7f06c60c652b9c572bf69987e"
+      },
+      "backend": "checker",
+      "status": "PASS all scientific fields; full-build Gramcounts separately verified",
+      "reference_max_degree": 8,
+      "comparison_prefix": [
+        2,
+        8
+      ]
+    }
+  ],
+  "fresh_original_comparison": "every field except elapsed_seconds, including exact_gram_pairs_checked",
+  "python": "3.12.14"
+}

@@ -386,3 +386,86 @@ This supersedes the earlier exclusion of P1/P2 only for these four named
 records. P1's continuous creator probe, P2's finite recurrence probe,
 P6 endpoints/fits and new-family scan remain outside this assessment.
 The required Claude substantive audit and protocol limits remain.
+
+
+## Focused reflection-method assessment — 2026-11-05
+
+**Accepted mathematical scope:** the conditional exact endpoint-computation
+identity in `p6-reflection-methods.md`, solely for the named D36x9 and
+D65x9 inputs with all seven mandatory guards. No BLOCKING, MAJOR or MINOR
+mathematical finding. This is independent supplementary reconstruction
+before coordinator authorization of a reduced experiment, not a code audit,
+executed pilot, capacity equality, or replacement for the required Claude
+substantive audit.
+
+Read the complete method record and Round4 prospective delta gate, and
+rechecked the weighted quotient's frozen response, source convention and
+endpoint definitions against the previously reviewed P2 covariance record.
+Checkout HEAD was `1753d3215a50ea3b908c592a3494d6df399bafa0`; the reviewed
+method working-file SHA-256 was
+`a9b75c0c3597119f2305c659179025e531c072a516dc45f96873b1aedeba2f28`.
+This is **prose audit identity**, not a newly executed code pin. The method
+is a new dated variant; the earlier no-symmetry pilot and its outcomes
+remain separate. No new theorem ID or historical novelty assertion is
+needed for this consequence of the existing normal quotient.
+
+For each independent sign flip, the entire earlier ordered monomial span
+is invariant. Multiplying the reflected monic GS polynomial by its seed
+character gives the same leading monomial and earlier support and retains
+orthogonality. U(n) and uniqueness therefore prove the character identity
+without changing the monomial order. Every admissible selected raw
+product has its target seed's character, since its parent differs by one
+unit in the selected coordinate. Its inner product with a different
+character is zero. This establishes the selected alpha parity even when
+the parent was chosen by a pivot rule: the proof uses its actual frozen
+choice and does not reselect or transport ties.
+
+In the full unit-lower recurrence matrix, a nonzero alpha term has equal
+row/column characters, while the parent entry acquires exactly the sign
+of its coordinate multiplier. These statements continue to hold when the
+terms share an entry. Thus A(ez)=S A(z) S and its inverse has the same
+similarity. Column h>=1 of that inverse solves the original scalar impulse
+recursion with diagonal response one and zero earlier entries. Including
+column0 in the matrix introduces no start source. Consequently
+
+    g_kh(ez)=chi_k(e) chi_h(e) g_kh(z).
+
+Both signs disappear on squaring. The full-run constants sigma_h and d_k
+are unchanged, so every v_hi for every original h and every completed
+prefix is orbit invariant. At an axis node, fixed-point odd characters
+force the corresponding response to vanish; no division or exception is
+needed. Equal reflected weights are essential for the basis proof and
+represented-vector parity, even though no additional weight belongs in
+v_hi under the Euclidean represented-source convention.
+
+Copying each representative energy to every original index leaves each
+R_ii v_hi term, each source sum, each maximum, and the complete H sum
+unchanged. The full-node R construction and trace remain those of the
+original measure. This is sufficient for equality of the stated rational
+L/H/U endpoints; it does not reconstruct signed response vectors or
+restrict arbitrary sources to orbit-constant vectors. No ambient-space
+compression, coordinate interchange, or BJ/mirror identification follows.
+At degree16, N_16=153 and all152 nonconstant source positions remain.
+Ninety energy representatives being fewer than153 causes no rank issue,
+because the basis, Gram matrix and projector still use324 original nodes.
+
+The construction count is independently consistent: per positive radius,
+two axis orbits have size2 and eight nonaxis orbits have size4. Nine radii
+give18 size2 plus72 size4 orbits, hence90 representatives and324 nodes.
+The declared exact permutation/orbit guards, rather than this family
+count alone, must establish the actual input partition.
+
+All seven guards are needed as stated: exact positive weighted reflection
+permutations; full-node basis/candidate/scale/Gram construction and retained
+ties; checked basis characters; checked alpha and parent/index parity;
+verified orbit partition; propagation of every original source and prefix
+followed by expansion to every original node; and full-node projector,
+trace and endpoint checks. The fail-closed policy is appropriate. I found
+no additional mathematical guard necessary within this scope. A later
+implementation must actually enforce these checks and retain the original
+outputs; the planned bounded comparison must check every original
+non-timing field against the unreduced scalar checker. That comparison,
+its frozen code/input identities and any measured timing remain a separate
+code/experimental assessment. No reflection checker or reduced experiment
+was executed as part of this focused proof review, and no speedup or
+completed degree16 row is certified here.

@@ -233,3 +233,35 @@ candidate's mathematics.
   code/receipts are committed. It indexes committed code/data, actual local
   artifacts and unavailable paths, without claiming external delivery or
   hash-pinning prose. Final manifest generation remains pending.
+
+## 2026-11-05 — bounded checker cost gates and exact reflection method
+
+- D65 alternating12 producer completed32.90s; scalar checker timed out120s
+  with no endpoint rows. This is a cost-only incomplete probe, not an N2
+  result or a rejection of that measure's growth behavior.
+- Installed python-flint0.9.0/FLINT3.6.0 only under campaign `/tmp/deps`,
+  after runtime/network checks. The independent matrix-inverse checker
+  verifies the complete exported basis/creators/source scales before its
+  own all-source inversion. Small cases agree, and distinct malformed-
+  export controls pass, but generic and block variants time out at8 and
+  are slower than the original scalar path. [Notes](flint-check-notes.md).
+  Neither was promoted to16. Original native source hashes stay unchanged.
+- P4 wrote the [new dated reflection method](p6-reflection-methods.md),
+  distinguished from every earlier no-symmetry plan/outcome. A distinct
+  Astra high mathematical reviewer accepted its sign-similarity proof and
+  all seven guards before the coordinator authorized experiments. It is
+  exact scalar-energy reuse, not compression of the measure or source
+  domain: all324 node/normal contributions and every source position are
+  retained. No coordinate swap or growth classifier is inferred.
+- New scalar source `p6_reflection_scalar.cpp` is individually pinned.
+  Developer paired6/8 pilots pass all ten cases and all original nonelapsed
+  fields, including Gram counts. The distinct Astra scan reviewer freshly
+  verifies56 degree2–8 rows on both disks against both accepted paths,
+  112 full-field comparisons; malformed closure/weight cases reject.
+  Actual degree8 wall-time gains are about1.7–2.2x; no16 gain is presumed.
+- After those gates, authorized a separate3600s/case reflection16 successor
+  for missing original D36 validations. Reuse completed producer and scalar
+  cases. Old scalar alt/pivot may be superseded with explicit cancellation
+  masks; BJ/mirror continue until complete/cap/replaced. Every final case
+  must retain its actual checker-source identity; no incomplete original
+  receipt is relabeled PASS. Disk N2 waits for all60 matched rows.

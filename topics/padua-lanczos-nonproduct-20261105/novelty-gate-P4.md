@@ -84,3 +84,32 @@ projection for simultaneous terminal sources proportional to one normal
 vector. Any missing source/output gauge or residual lower-degree
 dependence kills the proposed formula. It cannot upper-bound all-source
 capacity or pass the pending cross-family growth gate.
+
+## Round 4 sign-reflection method delta gate — 2026-11-05
+
+Coordinator requested one bounded verification round after the initial
+P4 close, before any symmetry-reduced experiment. Read in full P2-02
+(`theory/p2-02-rotation-covariance.md`), the weighted quotient, the current
+scalar checker, both disk input generators and p6-speed-notes.md. The
+old speed pilot explicitly excluded orbit/parity reduction; this is a
+**new dated method variant**, not a reinterpretation of those runs.
+
+P2-02 transports the entire algorithm and warns that coordinate swap
+mixes the fixed GS order. Independent x/y reflections instead multiply
+each ordered seed by one sign, so the fixed order can be retained.
+P4-02/PD-T136 already supply the exact frozen response and endpoint sums.
+The contemplated reduction is a routine sign-character application of
+these predecessors, with no new theorem ID or historical claim.
+
+Separation criterion: show exact diagonal-sign similarity of the frozen
+matrix for the unchanged ordered computation, giving g_kh^2 constant on
+each sign orbit. Preserve all original source indices and every original
+node contribution after expansion. Any failed weighted reflection
+permutation, basis parity, coefficient parity or parent parity guard
+rejects this method for that run. A coordinate swap or restriction to
+orbit-constant source vectors is outside this variant.
+
+Written proof and mandatory implementation guards are in
+[p6-reflection-methods.md](p6-reflection-methods.md). No reduced scan was
+executed by P4 before writing that proof. The initial P4 all-degree
+criterion remains OPEN; finite method equivalence does not change it.

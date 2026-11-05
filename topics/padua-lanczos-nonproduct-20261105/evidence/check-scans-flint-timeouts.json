@@ -1,0 +1,147 @@
+{
+  "status": "INCOMPLETE bounded generic-FLINT replays; not mathematical mismatches",
+  "per_case_seconds": 120,
+  "contention": "Two supplementary cases overlapped briefly with helper and four long native cases before slot-coordination message; subsequent cases held. No speed inference from these contended wall times.",
+  "code": [
+    {
+      "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/check_scans_flint_replay.py",
+      "bytes": 2657,
+      "sha256": "44c69edae74e21ea6bb9e13b5a31dc61080cebb8622f9f4c989d513d388470c0"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_basis_export.cpp",
+      "bytes": 9144,
+      "sha256": "aa4c74c57e150b748f1d225f3cfad5c2bbbe3d55e61d3c7702fbe8edd3414e44"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/flint_disk_check.py",
+      "bytes": 13351,
+      "sha256": "49a09bc0ddf12a95c1810c47f939a6596657d23e722a72608f60489c75dddf73"
+    }
+  ],
+  "runs": [
+    {
+      "family": "D36x9",
+      "degree": 8,
+      "rule": "alt",
+      "status": "INCOMPLETE timeout120; no completed endpoint output",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/flint_disk_check.py",
+        "--input",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/benchmark8-D36x9/input.txt",
+        "--basis",
+        "/tmp/padua-lanczos-nonproduct-20261105/scan-review/flint-D36x9-d8/D36x9-alt-d8.basis.json",
+        "--output",
+        "/tmp/padua-lanczos-nonproduct-20261105/scan-review/flint-D36x9-d8/D36x9-alt-d8.jsonl",
+        "--receipt",
+        "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/evidence/check-scans-flint-D36x9-alt-d8.json",
+        "--export-source",
+        "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_basis_export.cpp",
+        "--export-binary",
+        "/tmp/padua-lanczos-nonproduct-20261105/scan-review/flint-D36x9-d8/exporter",
+        "--reference",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/benchmark8-D36x9/producer-alt.jsonl",
+        "--reference",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/benchmark8-D36x9/checker-alt.jsonl"
+      ],
+      "export_command": [
+        "/tmp/padua-lanczos-nonproduct-20261105/scan-review/flint-D36x9-d8/exporter",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/benchmark8-D36x9/input.txt",
+        "8",
+        "alt",
+        "D36x9"
+      ],
+      "input": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/benchmark8-D36x9/input.txt",
+        "bytes": 5734,
+        "sha256": "48977eefea1c662c3ef23c8ed17d49e3cb0310a6d53321add8c51c91866313f6"
+      },
+      "basis": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review/flint-D36x9-d8/D36x9-alt-d8.basis.json",
+        "bytes": 2527526,
+        "sha256": "2a0970b2af23285e683622e33404fd020f0569cf2488b4c0c4485de9df8106f0"
+      },
+      "exporter": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review/flint-D36x9-d8/exporter",
+        "bytes": 69864,
+        "sha256": "14432bb379fba07129ab94a28f9d8269da11fa64979b8b1da37eac8091503f7e"
+      },
+      "log": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review/flint-D36x9-d8/D36x9-alt-d8.check.log",
+        "bytes": 44,
+        "sha256": "84f403e89314b70d1912d418a5cf4157b3e238d3c8d8e31ad4aba1666fe0e871"
+      },
+      "last_progress": [
+        "verified_basis_seconds 8.709099",
+        "node 32/324"
+      ],
+      "output_exists": false,
+      "pivot_case_launched": false
+    },
+    {
+      "family": "D65x9",
+      "degree": 8,
+      "rule": "alt",
+      "status": "INCOMPLETE timeout120; no completed endpoint output",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/flint_disk_check.py",
+        "--input",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/pilot8-D65x9/input.txt",
+        "--basis",
+        "/tmp/padua-lanczos-nonproduct-20261105/scan-review/flint-D65x9-d8/D65x9-alt-d8.basis.json",
+        "--output",
+        "/tmp/padua-lanczos-nonproduct-20261105/scan-review/flint-D65x9-d8/D65x9-alt-d8.jsonl",
+        "--receipt",
+        "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/evidence/check-scans-flint-D65x9-alt-d8.json",
+        "--export-source",
+        "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_basis_export.cpp",
+        "--export-binary",
+        "/tmp/padua-lanczos-nonproduct-20261105/scan-review/flint-D65x9-d8/exporter",
+        "--reference",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/pilot8-D65x9/producer-alt.jsonl",
+        "--reference",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/pilot8-D65x9/checker-alt.jsonl"
+      ],
+      "export_command": [
+        "/tmp/padua-lanczos-nonproduct-20261105/scan-review/flint-D65x9-d8/exporter",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/pilot8-D65x9/input.txt",
+        "8",
+        "alt",
+        "D65x9"
+      ],
+      "input": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/pilot8-D65x9/input.txt",
+        "bytes": 5950,
+        "sha256": "94cca6d83b3c918840e13d097faa70a3a64877811b293f120e39b3c2e55fbaa0"
+      },
+      "basis": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review/flint-D65x9-d8/D65x9-alt-d8.basis.json",
+        "bytes": 1413623,
+        "sha256": "97c19c8fd1aa457fead4088f4ae8942ba423d03b77961c06c90fd1fc3bce137b"
+      },
+      "exporter": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review/flint-D65x9-d8/exporter",
+        "bytes": 69864,
+        "sha256": "14432bb379fba07129ab94a28f9d8269da11fa64979b8b1da37eac8091503f7e"
+      },
+      "log": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review/flint-D65x9-d8/D65x9-alt-d8.check.log",
+        "bytes": 81,
+        "sha256": "51b42719237d16ddcdff5169e1a91d5861f8a36620dbc0393562611c7564ba00"
+      },
+      "last_progress": [
+        "verified_basis_seconds 2.895686",
+        "node 32/324",
+        "node 64/324",
+        "node 96/324",
+        "node 128/324"
+      ],
+      "output_exists": false,
+      "pivot_case_launched": false
+    }
+  ]
+}

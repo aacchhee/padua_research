@@ -175,6 +175,17 @@ These supplement the required subsequent Claude substantive audit.
 P1/P2/source/registry readiness and any later disk16 additions remain outside
 those completed review scopes unless explicitly added.
 
+The bounded generic/block inverse-checker performance attempts are retained
+in [FLINT notes](flint-check-notes.md); no degree16 result used them.
+The separately proved [reflection method](p6-reflection-methods.md) reuses
+equal squared responses at90 sign-orbit representatives, then expands them
+over all324 original node/normal contributions. It retains every source
+position and full basis/Gram calculation. Distinct proof review preceded
+experiments; a fresh distinct56-row pilot matches all nonelapsed fields.
+It is a new dated method variant, not a silent change to earlier plans.
+Any subsequent full16 completion must explicitly identify this checker and
+its guards before a disk N2 verdict is reported.
+
 ## Remaining scope and paper consequence
 
 For the bivariate Lanczos/V+A note, the all-degree separation theorem can

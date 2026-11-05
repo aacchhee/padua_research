@@ -163,3 +163,203 @@ instead of overwriting completed evidence.
 No requested developer correction arose within this scope. The independently
 executed checks strengthen the finite evidence while leaving the stated
 scientific and storage limits intact.
+
+## Focused addition: untrusted basis export and generic FLINT inverse
+
+Requested after published head `1753d3215a50ea3b908c592a3494d6df399bafa0`;
+this addition preserves the earlier completed scope. Reviewed the working
+sources `p6_basis_export.cpp` and `flint_disk_check.py`, plus the new explicit
+specification route in `p6_scan.py` and D65x9 admission P2-04. Source/data hashes
+are pinned in [generic timeouts](evidence/check-scans-flint-timeouts.json) and
+[basis rejection controls](evidence/check-scans-flint-guards.json).
+The original native mathematical kernels remain unchanged. D65x9 is a
+separate324-point measure; it is never substituted for D36x9 in the results.
+
+**Static reduction accepted; new degree8 endpoint replay incomplete.**
+There is no mathematical mismatch or BLOCKING/MAJOR finding in this reviewed
+variant. Generic inversion was not promoted to degree16. Both fresh
+supplementary degree8 alternating cases timed out at their frozen120s cap,
+without emitting completed endpoint rows; therefore this addition does not
+claim an independent successful FLINT endpoint replay at degree8. The
+subsequent pivot cases in those two harnesses never launched.
+
+The basis exporter is derived from the producer and is consequently an
+untrusted certificate supplier, not an independent arithmetic implementation.
+The verifier independently reads all input points/positive normalized weights,
+checks distinctness, exact start, grading, M>N_s, positive norms, every entry
+of the weighted Gram identity, and every selected creator identity using
+recomputed weighted inner products. For the adaptive rule it reconstructs
+both admissible creators and compares exact source scales/scores, including
+X-on-tie metadata. The selected alphas and squared source scales are checked
+against those recomputed values.
+
+Here is why those checks suffice without trusting the producer's basis.
+Inductively b_0=1 and the admissible relation
+`b_k=a_k b_parent−sum_(l<k)alpha_kl b_l` express every column as a polynomial
+with the prescribed leading monomial and only earlier ordered monomials.
+The coordinate/parent order has this triangular property. The full weighted
+Gram identity makes b_k orthogonal to every earlier column; positivity and
+triangularity identify the earlier span with earlier monomials. Hence the
+column is the unique monic Gram–Schmidt residual. Recomputed inner products
+certify its alphas, d_k and sigma². For an alternative admissible creator,
+its leading monomial is the same, so the verified residual equality to b_k
+certifies the candidate's residual norm too. Thus shared exported values
+are acceptable only after these checks, rather than by a shared-source
+assumption. The independently admitted input remains the external family
+identity; arbitrary text in a JSON family label alone is no admission.
+
+At each original node the verifier constructs the exact unit lower
+triangular matrix `A=I+alpha−coordinate·parent`. Its inverse is unique;
+checking `A*G=I` certifies the frozen response coefficients for every source.
+The constant source column is omitted from the budget, while all
+nonconstant source columns and every completed-degree prefix are retained.
+Normal leverage, source scaling and endpoint formulas are unchanged from
+the already reviewed P4-02 model. Full Gram certification is not a capacity
+claim by itself, and an inverse computed for only some nodes is insufficient.
+
+I actually executed15 malicious-export controls using a fresh pivot degree4
+export and the verifier. These reject changed basis values, norms, constant
+start, input coordinates/weights, parents, axes, alphas, scales, grading,
+prefixes, choices, ties and rule. A coherent rescaling of a basis column and
+its squared norm preserves Gram orthogonality but is rejected by the creator
+identity, directly testing the monic-uniqueness safeguard. A separate exact
+set reconstruction of the D65x9 input from integer pairs
+(16,63),(25,60),(33,56),(39,52), axes and nine radii matches all324 actual
+native nodes/weights. This is included in the same compact receipt.
+
+Fresh replay commands were:
+
+```sh
+python -B topics/padua-lanczos-nonproduct-20261105/code/check_scans_flint_replay.py --family D36x9 --degree 8 --seconds 120
+python -B topics/padua-lanczos-nonproduct-20261105/code/check_scans_flint_replay.py --family D65x9 --degree 8 --seconds 120
+PYTHONPATH=/tmp/padua-lanczos-nonproduct-20261105/deps python -B topics/padua-lanczos-nonproduct-20261105/code/check_scans_flint_guards.py
+```
+
+Both replay harnesses independently compiled the exporter. The timeout
+receipt preserves the expanded commands, source/binary/input/basis/log
+hashes and last progress: D36x9 verified its basis then reached node32/324;
+D65x9 verified its basis then reached node128/324. All displayed progress is
+partial. Python-flint0.9.0 / FLINT3.6.0 was loaded from the task-local deps
+installation, one FLINT thread per process. No dependency was installed by
+this checker.
+
+Resource chronology: the two short supplementary jobs launched before the
+coordinator's one-extra-process coordination message arrived, overlapping
+with the helper and four long native cases. They finished by timeout and
+no later case was launched. This contention is recorded, and their wall
+times are not presented as an isolated speed benchmark. The coordinator
+subsequently declined generic degree16 scaling and allowed the helper one
+separate block-inverse cost experiment. That different implementation is
+outside this addition until explicitly inspected and replayed.
+
+### Block-inverse variant disposition
+
+Subsequently inspected the exact diff for `flint_disk_block_check.py`:
+only inversion, phase timing and method labels change. The recursion uses
+`[[L,0],[C,R]]^-1=[[L^-1,0],[-R^-1 C L^-1,R^-1]]`, ending at the verified
+unit diagonal singleton. Its slicing/reassembly agrees with this formula
+for odd and even sizes. A is constructed unit lower triangular, and the
+unchanged `A*G=I` check remains a separate exact certificate. Full basis,
+source, node and prefix guards are retained. The generic reference reader's
+later prefix support also checks contiguous degree coverage, requires the
+reference reach the tested degree, and compares every resulting prefix row;
+it does not accept missing tested degrees.
+
+[Static review identities](evidence/check-scans-flint-block-static.json)
+identify the inspected block source and developer receipts. I did not
+independently execute this block endpoint path. The developer's BJ6 run
+completed and its alt8 run timed out60s; both are correctly distinguished in
+[flint-check-notes.md](flint-check-notes.md). The coordinator's bounded cost
+screen therefore provides no reason to repeat degree8 or attempt degree16
+on this variant. No further replay was launched here after the two generic
+timeouts. This is an accepted static identity/guard review with successful
+malformed-export executions, not a promoted disk16 checker or an independent
+successful block endpoint rerun. The earlier native replay verdicts remain
+unchanged.
+
+## Focused addition: exact sign-reflection response reuse
+
+**PASS conformity review and independently executed degree8 pilots.** This
+is a new dated method variant, separate from the preserved generic/block
+FLINT performance failures and original no-symmetry executions. The
+coordinator provided the distinct mathematical review's acceptance of
+[p6-reflection-methods.md](p6-reflection-methods.md), SHA-256
+`a9b75c0c3597119f2305c659179025e531c072a516dc45f96873b1aedeba2f28`,
+before these experiments. This checker inspected that proof and the frozen
+`p6_reflection_scalar.cpp`, SHA-256
+`09d524f915076105b04fb196ee98c6c6cd4cecbc6b6e49bcfacb541ffc999088`.
+No new mechanism/priority claim is made by this implementation review.
+
+All seven mandatory guards conform on inspection and execution:
+
+| Proof requirement | Actual implementation checked |
+|---|---|
+| Original normalized weighted measure and exact reflection group | Full input read, positive weights, sum1, distinct nodes, coordinate/weight matches, bijective/involutive/commuting sign permutations |
+| Full-node basis and selection | Raw products, all candidate coefficients/scales/norms, selected diagonal/off-diagonal Gram, fixed rules and exact pivot ties on all324 nodes |
+| Basis parity | Every column and original node tested under both generators, including fixed axis points |
+| Coefficient and parent parity | Every candidate alpha slot tested; nonmatching parity forced exactly zero; actual parent exponent and axis relation checked |
+| Exact orbit partition | Absolute-coordinate classes equal the generated sign orbit; actual representative, disjoint/full membership and size1/2/4 checks |
+| All source snapshots and full expansion | Every original source h retained; representative v snapshots copied to every original i before totals/maxima; aggregate snapshot count checked |
+| Original projector and endpoints | Actual full-node weighted normal diagonals, [0,1] bounds, trace M−N_s and lower/upper guards retained |
+
+The only recurrence arrays shortened to90 representatives are g and its
+squared energy. The code neither identifies reflected source coordinates
+nor compresses the ambient projector. It uses no coordinate interchange.
+Every original node/source contribution is restored before the unchanged
+sum and maximum operations. Thus the proof's squared-response invariance
+is applied exactly at its stated interface, not to the spectral capacity
+itself or to a different source budget.
+
+I compiled the frozen variant independently and executed all four rules
+through8 on each of D36x9 and D65x9. The helper first finished and explicitly
+released the shared extra CPU slot; these fresh executions were serial,
+one native process at a time, with60s per-case caps. Original degree8
+producer and scalar files supplied the comparisons. D36x9 references are
+from my earlier independently executed full-node replay; D65x9 references
+are the developer's accepted full-node degree8 run, on the separately
+reconstructed/admitted D65 input. No D36 result is attributed to D65.
+
+All56 computed prefix rows match both original paths:112 exact reference
+comparisons. **Every original nonelapsed JSON field is compared, including
+Gram count**, because each reference and fresh case has the same maximum
+degree8. Counts per case are45 basis columns,29,160 basis-parity scalar
+checks,44 original nonconstant source positions, and49,896 expanded
+node/source/prefix snapshots. All cases have90 exact orbits:18 size2 and
+72 size4, covering324 original nodes. Fixed-rule cases check44 parent
+relations and990 alpha slots,750 of them cross-parity zeros; adaptive
+cases check72 candidate parent relations and1,704 alpha slots,1,300 of them
+cross-parity zeros. These counts are checked independently in the replay
+harness against the declared degree and node count.
+
+For each family I also executed two malformed full-input controls, retaining
+324 nodes, positive weights and total mass1: a perturbed node breaking exact
+reflection closure, and unequal reflected weights. Both reject with their
+specific reflection diagnostics before basis/source propagation. The
+binary's three internal reflection/parity rejection controls also pass.
+Raw malformed inputs and commands are hashed in the receipts; these are
+actual negative executions, not assertions that guards ought to reject.
+
+Fresh case wall times: D36x9 BJ4.076s, mirror4.476s, alternating5.579s,
+pivot6.084s; D65x9 BJ2.120s, mirror2.320s, alternating2.671s, pivot2.872s.
+These are observed under the recorded shared-load setting, not a controlled
+speed-factor theorem. The arithmetic equality and passed mandatory guards
+support the coordinator's decision to attempt a separately bounded degree16
+run. **No degree16 reflection run, completion or N2 disk result is claimed
+by this supplementary addition.** The preregistered N2 model and thresholds
+remain unchanged.
+
+Executed commands, from the repository root:
+
+```sh
+python -B topics/padua-lanczos-nonproduct-20261105/code/check_scans_reflection.py --family D36x9
+python -B topics/padua-lanczos-nonproduct-20261105/code/check_scans_reflection.py --family D65x9
+```
+
+[Replay driver](code/check_scans_reflection.py) and compact receipts
+[D36x9](evidence/check-scans-reflection-D36x9.json) and
+[D65x9](evidence/check-scans-reflection-D65x9.json) record compiler, GMP,
+Python, head, full commands, frozen source/binary/input/output/log hashes,
+references, negative controls and actual guard counts. Both receipts are
+under16KiB. Raw data stay in the task-local scan-review reflection
+directories; no external archive delivery is asserted. No developer code,
+proof, shared registry or Git state was edited by this checker.
