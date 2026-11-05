@@ -1,10 +1,10 @@
 # Effective all-degree Padua argmax (PD-T099): campaign log
 
 - Branch: `codex/padua-argmax-effective-20261103` · Base: main `440d107` · Developer: Codex (gpt-6-astra ultra, at AC's instruction) · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: PR (finalization checks) · Open handoff: [handoffs/07-finalization.md](handoffs/07-finalization.md)
+- Stage: PR — assigned work complete; ready for AC merge decision. No open agent handoff.
 - Reserved final-ID ranges: PD-T246–265, PD-N084–091, IDEA336–355, LIT466–473; first pushed in `ed8db2f`, [ALLOCATIONS.md](ALLOCATIONS.md). Final assignments: PD-T246–252, PD-N084–086, IDEA336–348, LIT466–470; [map](final-id-map.json).
 - Claims: PD-T?argmax-effective-claude-01 — pilot gate measurements — MEASURED — [record](theory/argmax-effective-claude-01-pilot-measurements.md).
-- For the PR: final IDs, PROOF_STATUS/IDEAS/INDEX rows, a RESULTS.md section, and the Claude audit.
+- PR preparation complete: final IDs, PROOF_STATUS/IDEAS/INDEX/crosswalk rows, RESULTS section, accepted audits and integration verification are recorded.
 - Open for AC: none at setup. Ask AC before using the NTNU servers.
 
 ## 2026-11-03 — Claude, claude-opus-5-5 (configured; effort not exposed) — campaign setup
@@ -201,3 +201,4 @@
 - Root independently verified all33 mathematical Statement/Definitions/Assumptions/Proof sections in ten records against37ff693 after ID substitution only. Final preparation-file targets and map anchors also resolve.
 - Actual sequential squash rehearsal: main440d107 → PR19d45ffdc → pinned PR20/21/22/23/24. All six squash steps clean, zero conflicts; final shared registries byte-identical to prepared PR19. [Receipt](integration-rehearsal.json) records sources and trees; [verification](preparation-verification.md) records scope and limitations. Later peer registration changes require a refreshed rehearsal at integration.
 - Preparation checks pass with no MAJOR issue. AC's no-further-Claude direction is applied. PR19 can be marked ready for AC's merge decision; no agent merge, force-push, tag or live-main mutation occurred.
+- Final main recheck remains440d107. Assigned preparation/finalization completed in `b4606d7979de5ba7694d6d4a3fb2b14581c966f6`; [handoff07](handoffs/07-finalization.md) closed. No further agent step is queued. AC alone decides the merge; the broader PD-T099 research target remains OPEN.

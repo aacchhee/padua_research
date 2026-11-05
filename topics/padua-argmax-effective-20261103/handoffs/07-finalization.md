@@ -1,6 +1,6 @@
 # Handoff 07 — effective Padua argmax — preparation and finalization
 
-- Status: open
+- Status: done in b4606d7979de5ba7694d6d4a3fb2b14581c966f6
 - Previous handoff: [06-pr-preparation.md](06-pr-preparation.md), superseded by AC direction
 - Next agent / model / effort: Codex, gpt-6.1-sol medium
 - Role: topic orchestrator, mechanical PR finalization
