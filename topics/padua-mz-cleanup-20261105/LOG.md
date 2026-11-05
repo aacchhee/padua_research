@@ -1,8 +1,8 @@
 # MZ cleanup (certified indefiniteness witness, odd m, growth constants, manuscript integration): log
 
 - Branch: `codex/padua-mz-cleanup-20261105` · Base: main `21dbfc9` (PR #23 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: PR (preparation pending) · Next: `Codex (gpt-6.1-sol, xhigh): Continue codex/padua-mz-cleanup-20261105.` · Open handoff: [handoffs/04-pr-preparation.md](handoffs/04-pr-preparation.md)
-- Reserved final-ID ranges: T376–391/N138–145/IDEA466–489, no LIT; first publication ee49035, draft PR26. No final assignments.
+- Stage: PR (ready for AC review; assigned agent work complete). Next: AC review/merge decision. No open agent handoff after handoff04 completion.
+- Reserved final-ID ranges: T376–391/N138–145/IDEA466–489, no LIT; first publication ee49035, draft PR26. Final assignments T376–381 and IDEA466–471; unused gaps remain permanent.
 - Claims: finite indefiniteness at1101/1240/1600, odd-parity completion and normalized one-sided bounds PROVED in development;23 finite observations MEASURED. Claude audit-01: no correctness issue; response-01 resolves all 26 findings with no material scientific change.
 - Open for AC: none. The sandbox compute allowance in handoff 01 (4 h wall per run, about 24 h cumulative CPU) is approved by AC (2026-11-05). Ask AC before using any machine outside the sandbox.
 
@@ -80,3 +80,12 @@
 - Applied eight literal replacements, six theory/six IDEA registrations, crosswalk, ledger import and only our RESULTS section. Checker:75 passed, zero failed; six theories preserved under substitution,72 scientific/auditor files unchanged, ten old RESULTS sections exact. Original OPEN-plus-refuted displays and PD-T300 historical measurement scope preserved.
 - Manuscript final identifiers are seven comment-only edits; fresh25-page build clean, comment-stripped source and extracted PDF text unchanged. No bibliography, scientific code, original receipt or PDF committed change.
 - Current complete inventory refreshed; cold-storage metadata check accepts with zero Git-backed payloads, not a delivery claim. Next gates: disposable sequential integrations, independent Astra medium protocol review, final live reservation/head check and readiness metadata. Only AC merges.
+
+## 2026-11-05 — Codex, gpt-6.1-sol xhigh — preparation complete
+
+- Final live refresh preserved main/PR21 heads; PR24 advanced to b81a1a1 and PR25 to22e8540. All complete ledger/canonical path/blob sets are unchanged, so no new ranges/collision. Current population21/24/25/26; no closed-unmerged PR returned. Receipt in preparation/live-recheck.json.
+- Nine actual refreshed-head disposable sequential squash integrations pass without conflicts. Own scientific/shared bytes and every included foreign topic/results subtree are exact; main/live refs untouched and disposable worktree removed.
+- Distinct Astra medium protocol review PASS at f2ddd6b registration + ec6a181 packaging, no unresolved finding. It independently checked union identities, all nine final trees, scientific/registry/results preservation, payload identities and25-page build. Final packaging changes only metadata and includes that report in the complete inventory.
+- All6 theory/final IDEA records registered; original target PD-T381 stays OPEN with PD-T379 supporting bounds. No PD-N/LIT assigned; unused gaps preserved. No old status upgraded. Manuscript source is comment-only final-ID preparation; rendered text, bibliography, accepted code and scientific receipts unchanged.
+- Final small-file inventory,75-check preservation suite, local links, JSON/output sizes, cold-storage metadata check and clean diff/worktree checks pass. Original local packages/delivery limits remain unchanged; physical delivery remains pending. No mathematical campaign rerun or new priority claim.
+- Stage PR, prepared for AC review; all assigned agent work complete. Close [handoff04](handoffs/04-pr-preparation.md) at the final output commit, without opening a fictional successor. PR26 is marked ready only after these passed gates. Requested decision: AC reviews and decides whether to squash-merge this PR; no other draft or merge sequence is approved. Only AC merges.

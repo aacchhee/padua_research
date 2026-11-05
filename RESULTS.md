@@ -339,7 +339,7 @@ AC: merge decision on PR22 (handoff07). After the merge, `Claude (Sonnet 5.5 med
 `codex/padua-mz-cleanup-20261105`. Codex gpt-6.1-sol xhigh;
 Claude audit-01 accepts the scientific scopes, and response-01 resolves
 all 26 minor/editorial findings without material scientific changes.
-Final registration is complete; independent preparation checks are recorded
+Final registration and independent preparation checks are complete (PASS), recorded
 in [the preparation record](topics/padua-mz-cleanup-20261105/preparation/record.md).
 
 | Result | Status and scope | Durable record |
@@ -377,5 +377,7 @@ or historical novelty clearance is claimed.
 
 ### Next step
 
-AC reviews PR26 after the completed preparation/protocol record; only AC
-merges. This topic approves no other draft PR or merge sequence.
+AC reviews ready PR26 and decides whether to squash-merge it; only AC
+merges. The independent [protocol review](topics/padua-mz-cleanup-20261105/preparation/protocol-check-01.md)
+passes with no unresolved finding. All assigned agent work is complete.
+This topic approves no other draft PR or merge sequence.

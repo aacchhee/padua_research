@@ -142,8 +142,8 @@ Padua-specific destination, sizes and hashes. No external machine used.
 
 Claude Opus 5.5 audit-01 accepted the scientific scopes; response-01
 addresses every minor/editorial finding. Final-ID assignment and scoped
-shared registration now use the checked original reservation; preparation
-verification and independent protocol review are recorded separately in
+shared registration now use the checked original reservation; completed preparation
+verification and independent protocol PASS are recorded separately in
 [the preparation record](preparation/record.md). Only AC merges.
 
 ## Candidate records and remaining mathematical frontier
@@ -163,3 +163,13 @@ conjunct or a PARTIAL resolution. Global first crossings, opposite-direction
 sharp logarithmic estimates, optimal normalized packet parameters and
 PD-T027 remain separate unresolved questions. Completed registration and
 build tasks are retained in the preparation record instead of the frontier.
+
+## Preparation outcome
+
+Final registration and validation are complete. The independent Astra
+medium [protocol review](preparation/protocol-check-01.md) passes with no
+unresolved finding; all nine refreshed-head integration rehearsals pass.
+The source/receipt identities, other topics' results/registries and AC's
+owner line are preserved. PR26 is ready for AC review; assigned agent work
+is complete. Only AC decides whether to squash-merge this PR. No other
+branch, mathematical OPEN target, delivery or novelty status is closed.

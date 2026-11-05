@@ -1,5 +1,9 @@
 # Audited preparation — 2026-11-05
 
+**Status: prepared for AC review; all assigned agent work complete.**
+Earlier plan/checkpoint statements below are historical; the final release
+decision and verification follow at the end.
+
 Orchestrator: Codex, inherited user-requested gpt-6.1-sol xhigh.
 Rules read at a930f32fbf4568fbc431ddcf0b0fd689f5fa8201; unchanged.
 Input response29b404792c9cdd8d728ead3e3865f5794a3edd85;
@@ -103,3 +107,37 @@ only final registration provenance; its complete prior body stays exact.
 The independent Astra medium reviewer is completing the ordinary
 registration/readiness decision against these actual receipts. Final
 inventory/readiness packaging follows that result; no merge is authorized.
+
+## Independent protocol decision and final readiness
+
+Distinct Codex gpt-6-astra medium ordinary protocol review: **PASS, no
+unresolved finding**. The reviewer independently verified registration
+candidate f2ddd6b86433c64c36d0306ae9516c977c2c1ab3 plus packaging checkpoint
+ec6a1818721d256fa9db7951198b9472a80dcc3f, the refreshed allocation file/blob
+sets, all nine updated disposable squash trees, accepted content/foreign
+row preservation, exact payload identities, and final 25-page build.
+[Protocol report](protocol-check-01.md). It is registration/readiness
+review, not a replacement mathematical audit or merge permission.
+
+Final packaging adds that report to the refreshed complete inventory and
+updates only status/results/log metadata. No canonical scientific row,
+proof, code, receipt, manuscript source or artifact identity changes after
+the reviewed packaging checkpoint. The preservation checker and small
+inventory are rerun, local links and one-topic RESULTS correspondence
+checked, and all generated JSON stays below 16 KiB. The conservative
+repository output snapshot is about 4.03 MB, below 5 MB. Actual commands
+and source identities remain in the dedicated receipts.
+
+PR26 is prepared for AC's review after accepted Claude audit-01 and the
+nonmaterial response. Requested decision: review and, if satisfied,
+squash-merge this PR only. No other draft is approved and no merge order,
+submission or historical priority is implied. All assigned agent work is
+complete; handoff04 closes at the final output commit, with no fictional
+successor task. Only AC merges. External Padua artifact delivery remains
+pending and the original sharp spectral-limit target PD-T381 stays OPEN.
+
+Final readiness metadata updates the paper README/M7 current checkpoint,
+this record, LOG and only our own RESULTS section. The [packaging impact
+receipt](readiness-impact.json) verifies the allowed file set against the
+reviewed ec6a181 checkpoint. Canonical mathematical rows, all theory bodies,
+scientific code/receipts and the final manuscript source are unchanged.

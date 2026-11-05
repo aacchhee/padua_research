@@ -1,1 +1,1 @@
-{"method":"Conservative sum of tracked/unignored files with JSON,OUT,TXT,CSV,LOG,NPY,NPZ,PDF,PNG,DAT,BIN,CERT suffixes; source Markdown and code excluded. Local /tmp outputs not in Git.","files":942,"bytes":4016308,"limit":5000000,"passes":true}
+{"method":"Conservative sum of tracked/unignored files with JSON,OUT,TXT,CSV,LOG,NPY,NPZ,PDF,PNG,DAT,BIN,CERT suffixes; source Markdown and code excluded. Local /tmp outputs not in Git.","files":945,"bytes":4023113,"limit":5000000,"passes":true}
