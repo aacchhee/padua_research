@@ -25,3 +25,10 @@
 ## Runs needed
 
 - K0–K2 and C1–C6 as in handoff 01.
+
+## 2026-11-05 — Codex, gpt-6.1-sol xhigh — continuation and K0
+
+- Rules read at ad503cb0603fc017444b0aa732240981eefa4d24; unchanged. Fetched main/base 21dbfc90257b952d8923f6d01739d12aa8d6e0a1 and topic ad503cb; base already reconciled. Git access needs the execution tool network permission; connector retrieval also succeeded.
+- Plan and K2 diagnostic fit were written before any new computation. Replay K0 PASS with exact m60 regeneration and float m800 agreement; m1600 negative float regenerated. Commands are frozen in the scripts and receipts.
+- Parallel agents own C2/C3 mathematics, C4 manuscript, C1 producer, independent witness checker, C5 housekeeping and supplementary Astra high math reconstruction. Only orchestrator controls Git.
+- C3 scope correction: the handoff optima are unnormalized energies, not established Rayleigh constants. No spectral slope is inferred from them. New mechanisms are gated by the mathematics worker; numeric replay adds no novelty claim.
