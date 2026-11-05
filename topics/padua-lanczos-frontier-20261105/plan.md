@@ -28,3 +28,7 @@ G1 exact overlap and T24 scan accepted; rotated high-degree implementation hit t
 ## Handoff04 prospective bounded round
 
 Main aff30e8 is merged; all existing theorem inputs remain pinned. Parallel ownership and gates are in LOG. G1 requires a changed exact implementation with small/old controls and a moderate cost benchmark before20. L3 resumes the saved finite-u analytic draft only after its gate; L5 completes the missing gate and proves an executable finite reduction before certified G3 work. L7 validates the saved code/reference and reproduces both G4 rows before any new natural suite. L6 remains lower-priority original scope while these tasks run. Accepted proofs are not rerun without a material change or unresolved concern. Persist actual outcomes and costs at boundaries; no numerical or asymptotic status is inferred from a plan.
+
+## Handoff05 bounded execution
+
+Current main/topic unchanged. G1 batched exactsum implementation must pass old controls and <=60s moderate benchmark before one600s20pilot. L7 writes unchanged-suite staging plan and begins one600s domain/seed pilot before remaining seven. G3n4 field/reduction/cost review precedes one bounded prototype. L6 finishes reading gate then checks saved analytic necessary condition, with no actual recurrence result inferred. Independent checks and measured costs determine expansion; accepted prior scientific checks are reused. Ownership/provenance in LOG.
