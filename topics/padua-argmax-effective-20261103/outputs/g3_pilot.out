@@ -1,0 +1,3 @@
+n=17 Lc=8.618  C_true=sup(S-a*Lc)/log(n+1)=1.5937 at (a,b)=(1.57,-1.57);  sup S-Lc=0.00e+00; sup_{rho>=0.5}(S-Lc)=-0.147
+n=48 Lc=12.689  C_true=sup(S-a*Lc)/log(n+1)=1.5172 at (a,b)=(1.57,-1.57);  sup S-Lc=0.00e+00; sup_{rho>=0.5}(S-Lc)=-0.253
+n=96 Lc=15.899  C_true=sup(S-a*Lc)/log(n+1)=1.4822 at (a,b)=(1.57,-1.57);  sup S-Lc=0.00e+00; sup_{rho>=0.5}(S-Lc)=-0.340
