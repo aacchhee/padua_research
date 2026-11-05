@@ -1,7 +1,7 @@
 # Signed Padua MZ frontier (PD-T110, PD-T028, PD-T116, PD-T114; 1-D PD-T027): log
 
-- Branch: `codex/padua-mz-2d-frontier-20261105` · Base: main `440d107` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: PR (preparation pending) · Next: `Codex (gpt-6.1-sol, medium): Continue codex/padua-mz-2d-frontier-20261105.` · Response outputs complete; handoff03 closes and handoff04 publishes in the next commit.
+- Branch: `codex/padua-mz-2d-frontier-20261105` · Development base: `440d107`; integrated main: `5db1e01` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
+- Stage: PR (preparation pending) · Next: `Codex (gpt-6.1-sol, medium): Continue codex/padua-mz-2d-frontier-20261105.` · Open handoff: [handoffs/04-preparation.md](handoffs/04-preparation.md)
 - Permanent reservations: T294–323, N104–115, IDEA384–413, LIT574–581, first pushed e79c576; no final assignments. [Ledger](ALLOCATIONS.md).
 - Claims: analytic signed spectral countersequences and sharp half-degree threshold; uniform C→L2 norm below30; positive-reference diamond estimate; finite independently certifiedm60/m80; scoped warmups. [Report](report.md). Claude [audit-01](audit-01.md): mathematics ACCEPTED at stated scopes; seven P3 documentation findings (A1–A7).
 - Open for AC: none at setup. Ask AC before using any machine outside the sandbox. AC decision 2026-11-05 (audit session): keep registry Status OPEN with `REJECTED: refuted` disposition for PD-T028/110/116.
@@ -57,3 +57,4 @@
 - Finding edits committed in e6b80405cc1d9ab06f1c0f3269f53ed7189b7964: A1–A6 fixed; optionalA7 declined with a recorded reason. [response-01](response-01.md) cites every disposition and file. AC’s OPEN plus REJECTED:refuted display for028/110/116 is unchanged. No code, evidence, audit file or mathematical statement changed.
 - Verification: historical84-entry inventory matches the audited dee6384085 tree, unchanged evidence manifest; nine proof bodies unchanged and F4 displayed math reversibly renamed, diamond formulas unchanged; protected source/evidence/auditor/old-handoff identities, response scope, proposed OPEN cells, local links and whitespace checked. No scientific rerun performed. Current inventory refresh is deferred to preparation because this step preserves evidence files.
 - Audit-01 explicitly permits this documentation-only response to proceed without re-audit. StagePR for preparation only; PR23 remains draft. Handoff04 will carry the fresh reservation scan, final-ID/shared-state work, inventory refresh and integration impact check.
+- [Handoff03](handoffs/03-response.md) done in `8fc9c1da776f85a784eead3591c02fcf4b642250`; [handoff04](handoffs/04-preparation.md) opens audited preparation. Response verification protected71 paths and confirmed reversible F4 notation, unchanged diamond equations, original old-row blocks/OPEN cells, historical continuation and local links.
