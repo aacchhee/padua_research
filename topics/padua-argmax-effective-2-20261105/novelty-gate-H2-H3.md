@@ -44,3 +44,16 @@ positivity; N085 rejects uniform affine sign preservation; N086 rejects
 individual fixed signs on coarse diamonds. None refutes the boundary
 identity, aggregate sign-change control, or PD-T099. No fitted constant is
 used, and no A3 fit was run.
+
+## Later full-record coverage qualification
+
+After the first H2/H3 files were written, read the complete
+`padua-lebesgue-followups-20261103/gate-t4.md`, the original IDEA-358
+candidate body. Its registry summary and all three linked T4 theory
+files, including the load-bearing T270 proof, had been read before H2
+derivation; the original candidate wrapper had not. This later read
+confirms the distinction (corner signed deformation versus boundary
+phase cancellation) but does not retroactively complete that part of
+the prospective full-entry gate. The timing is preserved explicitly;
+no exhaustive novelty or priority conclusion is claimed. The separate
+child H3 gate timing qualification is in `attempts/H3.md`.

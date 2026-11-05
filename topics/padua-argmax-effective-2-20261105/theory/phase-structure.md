@@ -142,6 +142,8 @@ Every physical point belongs to an accepted class/box pair. Predicates 1 and 2 g
 
 The existing Δ≥1/4096 is available only for n≥48, ρ≤1/64 and noncorner physical odd centers (PD-T224). It gives no bound on 1/64<ρ≤0.1. The existing physical n⁻⁶ corner radius (PD-T251) can be used within its exact domain, but does not supply H1's desired physical n⁻² corner box. Those are unresolved implementation obligations, not extra hypotheses silently accepted by this theorem.
 
+Dated continuation in this topic: `defect-radius-extension.md` supplies the rigorous pair (ρ,d)=(1/10,1/8192) for n≥48; `corner-n2-local-radius.md` supplies an explicit physical 10⁻¹¹/n² corner radius. These close those mathematical existence ingredients in the displayed scopes, while the practical box construction and larger per-degree corner radii remain to be validated. They do not change the sufficient reduction.
+
 ### All-center projected-defect screen
 
 At fixed phases define H_rs=G_n((rπ+α)/n,(sπ+β)/m) on Γ⁻. Periodic indices below are taken modulo 2n or 2m. With d(x,y)=|x|+|y|−|x+y|, exact reflection gives
@@ -155,6 +157,15 @@ At fixed phases define H_rs=G_n((rπ+α)/n,(sπ+β)/m) on Γ⁻. Periodic indice
 For example, first periodicizing the j mesh gives Q_v=(2N)⁻¹Σ_k f_k Σ_r d(H_(r,K+k),H_(r,K−k)), with the required parity. Periodicizing k counts each nonfixed pair twice; the endpoint/fixed pairs have d(x,x)=0. This yields the factor 1/(4N). Both index reflections preserve Γ⁻. **The phase β is unchanged** in H_(r,2K−s), and α is unchanged in the horizontal partner; only the integer lattice index is reflected.
 
 Consequently an all-center lower screen at fixed phases needs the m+1 vertical profiles and n+1 horizontal profiles, followed by min over admissible noncorner centers of max(Q_v(K),Q_h(J)). Precomputing H costs O(n²) kernel calls; computing every profile directly costs O(n³) arithmetic operations. This is a pointwise algebraic algorithm, not a rigorous lower bound throughout a phase box. It cannot be replaced by a minimum over a few representative centers without a proof of that reduction.
+
+One can also reconstruct the full Lebesgue function without losing reflection cancellation:
+
+\[
+ \lambda_{JK}(\alpha,\beta)=\frac1{8N}\sum_{\Gamma^-}
+ |H_{rs}+H_{2J-r,s}+H_{r,2K-s}+H_{2J-r,2K-s}|.
+\]
+
+An interior physical node has four periodic representatives, a single-endpoint node two, and a double-endpoint node one. Their coefficients 4/(8N), 2/(8N) and 1/(8N) equal respectively e_jf_k/(2N), proving the formula including endpoints. At actual corner centers the index reflections reduce to r↦−r, s↦−s. For interval bounds the four terms must be added before taking the absolute-value upper bound; summing their absolute bounds recreates S.
 
 ### Implementable primitive enclosure, without a complexity claim
 
@@ -183,7 +194,7 @@ Internal dependencies above. The delegated novelty scan read the literature inde
 
 ## Scope and open items
 
-The inherited structural identity survives A1. The **cost gate remains unevaluated** until a complete corner predicate, classwise defect bounds, arithmetic margins and a genuine box cover are specified. A float point grid supplies none of the missing cover proof. No maximum certificate at n>32 or effective all-degree threshold follows from this record. PD-T099 remains OPEN.
+The inherited structural identity survives A1. The **cost gate remains unevaluated** until the now-available local corner theorem is implemented alongside classwise box bounds, arithmetic margins and a genuine box cover. A float point grid supplies none of the missing cover proof. No maximum certificate at n>32 or effective all-degree threshold follows from this record. PD-T099 remains OPEN.
 
 ## History
 
