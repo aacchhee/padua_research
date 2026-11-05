@@ -1,7 +1,7 @@
 # Effective Padua argmax — development results
 
 Branch `codex/padua-argmax-effective-20261103`; [draft PR19](https://github.com/aacchhee/padua_research/pull/19).
-Rules/input8a1f394, base440d107. Claude [audit-01](../topics/padua-argmax-effective-20261103/audit-01.md) (2026-11-03) accepts all mathematics at the stated scopes; minor record findings await the Codex response.
+Rules/input8a1f394, base440d107. Claude [audit-01](../topics/padua-argmax-effective-20261103/audit-01.md) (2026-11-03) accepts all mathematics at the stated scopes; the [developer response](../topics/padua-argmax-effective-20261103/response-01.md) answers F1–F10 and awaits the Claude response protocol check.
 
 **PD-T099 remains OPEN.** No explicit global threshold n0 or counterexample
 was obtained. The effective campaign supplies two kinds of progress:
@@ -28,8 +28,12 @@ bounds. G8 source coverage is partial; no1-D theorem is transferred.
 
 The [report](../topics/padua-argmax-effective-20261103/report.md) gives route
 outcomes, costs, evidence and remaining obligations. Small exact witnesses
-are committed; bulk raw measurements have a verified local staging archive,
-with external cold-storage delivery pending. Final scientific IDs remain
+are committed; the historical bulk archive and all 16 raw payload paths are absent in this
+session, with no verified delivery or durable locator. These outputs are
+regenerable-only; regeneration does not recover their original bytes. Final scientific IDs remain
 unassigned within the permanently reserved ranges.
 
-Next: `Codex (gpt-6.1-sol, medium): Continue codex/padua-argmax-effective-20261103.` (response-01 to audit-01)
+Next: Claude (Opus 5.5 high) response protocol check, then PR preparation.
+Final-ID-dependent audit citations remain deferred to preparation; the
+missing developer receipt-level compiler/GMP mapping is documented in the
+response as unresolved provenance.

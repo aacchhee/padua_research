@@ -2,7 +2,7 @@
 
 Rules/input `8a1f394739293953e1566fd24a0a193cc78ff26f`; base `440d107`.
 Branch `codex/padua-argmax-effective-20261103`; [draft PR19](https://github.com/aacchhee/padua_research/pull/19).
-Development results below await the required Claude Opus 5.5 xhigh audit.
+Claude [audit-01](audit-01.md) accepts the mathematics at the stated scopes; the [developer response](response-01.md) to minor record findings awaits the Claude response protocol check.
 
 The exact finite global range now reaches **2<=n<=32**, with the new
 cases17–32 in the [finite theorem](theory/argmax-effective-codex-01-finite-global-argmax.md).
@@ -65,6 +65,9 @@ and projects cumulative production and one replay for degrees17..N to
 N=61 in24h or82 in7days. These use the corrected canonical-rational checker. The Python producer-only two-point exponent is
 5.3677, with cumulative projections51 and70; Python checker CPU was not
 measured, so those are not complete Python certification-pipeline budgets.
+The Python full-pipeline n_cert was not measured: G1 is answered only for
+the native port and Python producer-only, and is partly unanswered for
+the reference pipeline.
 The broader native hot-path fit, including the isolated40 probe, has
 exponent about5.8264 and producer-only projections70 and94.
 
@@ -112,7 +115,8 @@ arithmetic. All23,816 weights at2–40 matched independent Fraction values,
 and every new finite case17–32 was fully replayed with the corrected kernel.
 The36 malformed controls also passed after correction. Earlier native
 receipts are explicitly historical and do not supply the final proof
-premises. See [the correction review](independent-checks-canonical.md).
+premises. See [the correction review](independent-checks-canonical.md) and the
+[recorded build provenance limits](checker-provenance-01.md).
 
 ## Evidence, reservations and audit
 
@@ -129,8 +133,8 @@ remain until audit and final registration; unused reservations stay gaps.
 Shared ledgers and earlier records were not edited. Proposed dated
 updates are in [proposed-record-changes.md](proposed-record-changes.md).
 
-The next audit must read the complete `state/IDEAS.md`, review all new
-analytic reductions and independently assess the ports/evidence. In
-particular, preserve the distinction between the proved slope bound,
+The completed [audit-01](audit-01.md) records its full read coverage and
+independent analytic and certificate checks. The response now awaits a
+Claude protocol check before final registration. Preserve the distinction between the proved slope bound,
 the smaller radius, finite global cases, sampled gates and the still-open
 all-degree global maximum problem.

@@ -77,3 +77,16 @@ codex/padua-argmax-effective-20261103 | PD-T246–265; PD-N084–091; IDEA336–
 
 The shared crosswalk file is intentionally not created/edited here because
 handoff02 permits writes only in this topic and its dedicated result file.
+
+## Response-stage preparation obligations (2026-11-05)
+
+[Claude audit-01](audit-01.md) accepts the mathematics at the written scopes.
+The literal proposed rows above remain preparation drafts: their historical
+"audit pending" wording must not be copied into final registries. Handoff 04
+allows this final-ID-dependent update to remain at PR preparation. At that
+step replace that wording with final IDs and an audit-01 link; the PD-T227
+annotation must cite the final ID of codex-06b and retain the clause
+"weighted energy and the fixed scaled phase radius remain OPEN" verbatim.
+Also replace stale required-Claude-audit-pending wording in theory and
+idea records with audit-01 citations. No final ID or shared registry is
+changed by the response.

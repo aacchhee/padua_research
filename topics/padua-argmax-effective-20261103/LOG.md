@@ -1,7 +1,7 @@
 # Effective all-degree Padua argmax (PD-T099): campaign log
 
 - Branch: `codex/padua-argmax-effective-20261103` · Base: main `440d107` · Developer: Codex (gpt-6-astra ultra, at AC's instruction) · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK (response to audit-01) · Next: `Codex (gpt-6.1-sol, medium): Continue codex/padua-argmax-effective-20261103.` · Open handoff: [handoffs/04-response.md](handoffs/04-response.md)
+- Stage: WORK (response to audit-01; response check follows) · Next: `Codex (gpt-6.1-sol, medium): Continue codex/padua-argmax-effective-20261103.` · Open handoff: [handoffs/04-response.md](handoffs/04-response.md)
 - Reserved final-ID ranges: PD-T246–265, PD-N084–091, IDEA336–355, LIT466–473; first pushed in `ed8db2f`, [ALLOCATIONS.md](ALLOCATIONS.md). Final assignments pending.
 - Claims: PD-T?argmax-effective-claude-01 — pilot gate measurements — MEASURED — [record](theory/argmax-effective-claude-01-pilot-measurements.md).
 - For the PR: final IDs, PROOF_STATUS/IDEAS/INDEX rows, a RESULTS.md section, and the Claude audit.
@@ -167,3 +167,14 @@
 - Outcome: [audit-01.md](audit-01.md). All mathematics ACCEPTED at stated scopes, no status change. No CRITICAL/MAJOR findings; F1–F10 MINOR (record durability, wording, receipt provenance), N1–N10 notes. PD-T099 stays OPEN.
 - Handoff 03 closed; [handoff 04](handoffs/04-response.md) opens the Codex response.
 - Handoff links: [03-audit](handoffs/03-audit.md) done in `0ddc60a`; [04-response](handoffs/04-response.md) open.
+
+
+## 2026-11-05 — Codex — documentation response to audit-01 (handoff 04)
+
+- Rules read at `e5149eadfe49692ed67f84ba483c9737e2a649d3`; role: topic orchestrator/developer response. Bounded mechanical edits delegated to configured `gpt-6.1-sol`, medium. Orchestrator runtime identifies itself as GPT-6; a more specific serving-model/effort receipt is not exposed, so none is inferred.
+- Fetched main `440d1079e42c3ef21c40d1cf8870f5b206410c6a`, unchanged and already an ancestor. Refreshed live PR heads: #19 `e5149eadfe49692ed67f84ba483c9737e2a649d3`, #20 `407fe83f5a709ae6d8da986d6eee074a0bcb21fc`, #21 `d669363c9bce16da2af0f3b7db05a031b911edd5`. No allocation, registry edit or integration rehearsal is needed in this response step; preparation must refresh the union again.
+- Scope: answer F1–F10 in [response-01.md](response-01.md) with documentation fixes, explicit preparation deferrals and provenance limitations. No new mechanism, novelty/priority claim or mathematical development; the novelty gate is inapplicable to this mechanical response. The accepted statements, proof steps, statuses, checker code and certificates remain unchanged.
+- Scratch artifacts are not assumed to survive workspace loss. Delivery to AC remains unverified; committed regeneration commands support remeasurement, not recovery of original raw bytes.
+- Next: Claude Opus 5.5 high response protocol check, then PR preparation. No claim of completing that separate-agent check; only AC merges.
+- F8 disclosure uses a separate linked provenance note: the native README is hash-pinned by the retained acceptance summary and is preserved with all receipt bytes. The derived evidence inventory is refreshed for documentation changes; audit-01 retains its original audited manifest identity.
+- Verification executed: evidence inventory verified (84 files, degrees17–32), documentation links and allowed-path/protected-file checks, all F1–F10 response rows, and `git diff --check`. The inventory changes only four documentation entries; no scientific replay was performed or required.

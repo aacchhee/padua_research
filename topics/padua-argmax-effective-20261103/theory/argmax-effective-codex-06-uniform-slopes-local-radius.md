@@ -31,8 +31,8 @@ one has the explicit strict comparison
     lambda_n(c+(h_x,h_y)) <= Lambda_c-(n^2/6)*H < Lambda_c.          (3)
 
 The same statements hold in inward coordinates at the other nonnode
-corner. This proves an all-degree local theorem with n0=2, on a physical
-radius of order n^(-6). It does **not** prove the requested fixed scaled
+corner. This proves an all-degree local theorem starting at n=2
+(local, physical radius of order n^(-6); not a global n0). It does **not** prove the requested fixed scaled
 phase zone rho<=1/64, whose physical scale is n^(-2).
 
 ## Definitions and assumptions

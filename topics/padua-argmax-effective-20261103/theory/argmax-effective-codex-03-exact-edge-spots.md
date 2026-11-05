@@ -96,6 +96,11 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-argmax-effective-20
 
 The parent's gpt-6.1-sol medium gates worker wrote and actually ran the producer; CPU times were0.506741203,1.624429368,8.512108619 seconds. The gpt-6-astra ultra comparison mathematics worker inspected the inherited checker and wrapper, then actually executed the second command in a separate process: accepted=true, all three pairs and seven leaves,11.364958529 CPU seconds. All11 malformed controls were rejected: missing row/leaf, duplicate leaf, nonedge index, wrong target, invalid path, forged upper bound, forged target, changed source hash, forged scale and pending leaf. The wrapper pins exactly the three identities, scale, producer and inherited source hashes; it does not invoke the old top-level checker, which correctly remains specific to n=7/12 and its E-P witnesses.
 
+The inherited `d3_edge_check.check_pair` checks only that the reconstructed
+margin is strictly positive; its acceptance alone does not check the
+displayed deltas 1/20, 1/40 and 1/100. Those deltas rest on the separate
+exact integer comparisons displayed above.
+
 The independent mathematical worker additionally executed exact integer assertions `20*d13>S`, `40*d17>S` and `100*d24>S`; all passed. This arithmetic is also checkable from the displayed integers without trusting another artifact.
 
 | Essential artifact | Bytes | SHA256 |

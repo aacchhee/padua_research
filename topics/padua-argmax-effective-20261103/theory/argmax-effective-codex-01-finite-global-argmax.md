@@ -11,8 +11,8 @@ For every integer 17<=n<=32, the even-checkerboard Padua Lebesgue function
 of PD-T101 attains its global maximum Lambda_c(n) at exactly
 (-1,-1),(1,-1) for even n and (-1,-1),(-1,1) for odd n.
 
-Together with the inherited results for2<=n<=16 this gives the continuous
-finite range2<=n<=32. No assertion about n>=33 follows from this range.
+Together with the inherited results for 2<=n<=16 this gives the continuous
+finite range 2<=n<=32. No assertion about n>=33 follows from this range.
 
 ## Definitions and assumptions
 
@@ -41,7 +41,7 @@ IDEA-320/PD-T210, with no new mathematical criterion or novelty claim.
 - PD-T101: corrected cardinal formula, weights and unisolvence.
 - PD-T210: rational trigonometric constructor, outward arithmetic,
   tensor Bernstein leaf implication and equality-set argument.
-- For the combined range only: PD-T209 at2, inherited PD-T162/166/169/174/177
+- For the combined range only: PD-T209 at 2, inherited PD-T162/166/169/174/177
   at3–7, PD-T181 at8 and PD-T214 at9–16.
 
 The eventual theorem PD-T229 and new corner slopes/radius are not premises.
@@ -55,6 +55,10 @@ closed square. Midpoint de Casteljau subdivision retains outward bounds.
 Every certificate supplies a finite prefix-free binary frontier. The
 checker verifies full coverage, including common split boundaries, and
 rejects pending paths, missing children and forged metadata/bounds.
+
+The threshold is the larger of the two certified corner lower bounds;
+this is a lower bound for their common value because the node-preserving
+reflection makes the two corner values equal.
 
 On a bound leaf every coefficient absolute sum is strictly below a
 certified lower bound for Lambda_c. Nonnegative Bernstein weights sum
@@ -90,8 +94,8 @@ their own arithmetic, as previously disclosed.
 Validation includes every degree9–24 against the unchanged reference
 Python checker, exact mathematical-payload comparison after canonical
 source regeneration, and a different agent's fresh reference production
-and checking at17–24. After the canonical-rational correction, the sol
-medium checker author accepted9–24 and29–31; the separate sol medium gates worker accepted25–28;
+and checking at17–24. After the canonical-rational correction, the gpt-6.1-sol medium
+checker author accepted 9–24 and 29–31; the separate gpt-6.1-sol medium gates worker accepted 25–28;
 the astra high supplementary reviewer accepted32. The isolated40 capacity
 probe reached its600CPU-second checker cap without acceptance and is not
 certified;33–39 were not run.
