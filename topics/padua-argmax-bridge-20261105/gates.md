@@ -8,9 +8,9 @@ An operational clarification is recorded separately rather than editing them.
 | B0 | PASS | [Fresh replay](independent-checks-b0.md): both n24 certificates accepted/exact; all n32 pilot deterministic counts match; later prose-pin changes traced to frozen originals |
 | B1 | FINITE MAP COMPLETE; CONTINUOUS EXTREMA OPEN | [Margin anatomy](margin-anatomy.md), seven degrees; no pass/kill attached to B1 |
 | B2 | NOT RUN | Complete n64 float cover within 10 CPU-min; complete n33/64/128 box counts required |
-| B3 | NOT RUN | Profile and proved remainder must precede fits; compare with B1 budgets |
+| B3 | OPEN | N1 has explicit degree-dependent row error, but no compact phase/log model or proved onset |
 | B4 | BLOCKED ON INPUTS | No proved explicit analytic n1 or measured new-certifier throughput yet |
-| B5 | FORMULATION REVIEW PENDING | Unrestricted matrix feasibility may be equivalent to the desired norm inequality; original kill retained |
+| B5 | UNRESTRICTED EQUIVALENCE; CLASS-ONLY OBSTRUCTION | N4 proves unrestricted iff norm bound and mode-diagonal positivity iff complementary grid; general N4 OPEN, original kill retained |
 | B6 | NO CONFIRMED COUNTEREXAMPLE | A failed sufficient predicate is not a counterexample |
 
 ## 2026-11-05 operational clarification before B1 execution
@@ -27,3 +27,13 @@ continuum verification or mathematical change to a predecessor.
 No gate is passed on timing projections, samples, incomplete frontiers or
 unexecuted commands. Current global certified range remains 2–32 and PD-T099
 remains OPEN. The inherited eventual theorem retains its existential N_*.
+
+## N4 B5 formulation clarification — 2026-11-05
+
+The original B5 is unchanged. Unrestricted feasibility is exactly the scalar
+norm inequality under partition of unity; it is no independent structural test.
+[Attempt N4](attempts/N4.md) preserves the original wording and separately
+proposes B5-R1: specify a target-independent operator class, prove transport and
+normalization, then test positivity. Failure rejects only that class. The mode-
+diagonal class fails off the complementary checkerboard. No unrestricted
+infeasibility or general N4 kill is claimed.

@@ -1,0 +1,134 @@
+{
+  "arithmetic": "QQ[X]/Phi_(2*n*(n+1)); exact rational coefficient arithmetic",
+  "command": "topics/padua-argmax-bridge-20261105/code/n4_exact_invariants.py",
+  "embedding": "X=exp(i*pi/[n(n+1)]); squared distances positive by written real proof",
+  "independent_rerun": "PENDING; parent-coordinated distinct review",
+  "lp_runs": 0,
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "process_cpu_seconds": 0.18180373899999996,
+  "python": "3.12.14",
+  "random_seed": null,
+  "raw_artifact": {
+    "archival_transfer": "PENDING",
+    "bytes": 70298,
+    "path": "local-output/argmax-bridge-20261105/N4/exact-invariants.json",
+    "sha256": "125b40d81ea8ea707fff01135fe1db03c065c6e2efebba65229c45bd1784d36c"
+  },
+  "rows": [
+    {
+      "M_00_00_at_center": "-1/8",
+      "all_node_squared_distances_nonzero": true,
+      "coordinate_moments_zero": true,
+      "coordinate_square_moments_zero": true,
+      "cyclotomic_order": 24,
+      "field_degree": 8,
+      "n": 3,
+      "negative_cardinal_exists_by_written_real_variance_invariant": true,
+      "node_count": 10,
+      "partition_unity": true,
+      "point": [
+        "0",
+        "0"
+      ],
+      "positive_translation_columns_checked": 100,
+      "positive_translation_grid_centers": 10
+    },
+    {
+      "all_node_squared_distances_nonzero": true,
+      "coordinate_moments_zero": true,
+      "coordinate_square_moments_zero": true,
+      "cyclotomic_order": 40,
+      "field_degree": 16,
+      "n": 4,
+      "negative_cardinal_exists_by_written_real_variance_invariant": true,
+      "node_count": 15,
+      "partition_unity": true,
+      "point": [
+        "0",
+        "0"
+      ],
+      "positive_translation_columns_checked": 225,
+      "positive_translation_grid_centers": 15
+    },
+    {
+      "all_node_squared_distances_nonzero": true,
+      "coordinate_moments_zero": true,
+      "coordinate_square_moments_zero": true,
+      "cyclotomic_order": 60,
+      "field_degree": 16,
+      "n": 5,
+      "negative_cardinal_exists_by_written_real_variance_invariant": true,
+      "node_count": 21,
+      "partition_unity": true,
+      "point": [
+        "0",
+        "0"
+      ],
+      "positive_translation_columns_checked": 441,
+      "positive_translation_grid_centers": 21
+    },
+    {
+      "all_node_squared_distances_nonzero": true,
+      "coordinate_moments_zero": true,
+      "coordinate_square_moments_zero": true,
+      "cyclotomic_order": 84,
+      "field_degree": 24,
+      "n": 6,
+      "negative_cardinal_exists_by_written_real_variance_invariant": true,
+      "node_count": 28,
+      "partition_unity": true,
+      "point": [
+        "0",
+        "0"
+      ],
+      "positive_translation_columns_checked": 784,
+      "positive_translation_grid_centers": 28
+    },
+    {
+      "all_node_squared_distances_nonzero": true,
+      "coordinate_moments_zero": true,
+      "coordinate_square_moments_zero": true,
+      "cyclotomic_order": 112,
+      "field_degree": 48,
+      "n": 7,
+      "negative_cardinal_exists_by_written_real_variance_invariant": true,
+      "node_count": 36,
+      "partition_unity": true,
+      "point": [
+        "0",
+        "0"
+      ],
+      "positive_translation_columns_checked": 1296,
+      "positive_translation_grid_centers": 36
+    },
+    {
+      "all_node_squared_distances_nonzero": true,
+      "coordinate_moments_zero": true,
+      "coordinate_square_moments_zero": true,
+      "cyclotomic_order": 144,
+      "field_degree": 48,
+      "n": 8,
+      "negative_cardinal_exists_by_written_real_variance_invariant": true,
+      "node_count": 45,
+      "partition_unity": true,
+      "point": [
+        "0",
+        "0"
+      ],
+      "positive_translation_columns_checked": 2025,
+      "positive_translation_grid_centers": 45
+    }
+  ],
+  "rules_sha": "98d6c00d8a474cf97602c9cfdea631a837191ac0",
+  "run_parent_head": "0bca52bc1b8edf2e91d3749b710d2df285dc3e6b",
+  "schema": "n4-exact-invariants-v1",
+  "source_hashes": {
+    "topics/padua-argmax-bridge-20261105/code/n4_exact_invariants.py": "9418fcb52b6020fecc771e38fddd1bb8aba6b6272d2d4fc116edf76b218cd56b",
+    "topics/padua-argmax-bridge-20261105/theory/N4-diagonal-translation-obstruction.md": "3fe6e396e37c523166d6da98ce46974cfb0e3b5a031c461466cf25c979b167e8",
+    "topics/padua-argmax-bridge-20261105/theory/N4-unrestricted-transport.md": "e7835c5fef239c72e3758caef6d7ec640487c29444df7583f0a72a013e5eec89",
+    "topics/padua-argmax-bridge-20261105/theory/N4-variance-rigidity.md": "f32de9ecd18c8d39ad04bdd1758cd0edc1839936fc331fe0d1800e63a2c3ff68"
+  },
+  "status": "supplementary exact verification; analytic proofs do not depend on this run",
+  "sympy": "1.14.0",
+  "utc": "2026-11-05T20:49:45.983324+00:00"
+}

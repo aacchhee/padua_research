@@ -1,0 +1,47 @@
+{
+  "kind": "MEASURED developer sanity verification; analytic proof independent",
+  "rules_read_sha": "98d6c00d8a474cf97602c9cfdea631a837191ac0",
+  "python": "3.12.14",
+  "mpmath": "1.3.0",
+  "decimal_digits": 110,
+  "sources": {
+    "code/n5_partial_cotangent.py": "290d0417fe62e631e885cdeba3a4ee5a45be20c0144cb1865c38bcf7b9a5caf2",
+    "theory/N5-partial-cotangent.md": "4b8438e820a5255b9c40d7a4530fa7143bd3a22218024291b6e3533bcbc00c6c",
+    "novelty-gate-N5.md": "22511530ed753f7fce37eb2009f793b156acd9f2a915a6299b3964ada1d1321b"
+  },
+  "cases": 130,
+  "degrees": [
+    2,
+    3,
+    7,
+    33,
+    128
+  ],
+  "offsets": [
+    "1e-30",
+    "0.142857142857142857142857142857",
+    "0.5",
+    "0.875",
+    "0.999999999999999999999999999999"
+  ],
+  "all_within_analytic_bound": true,
+  "max_error_over_bound": "0.110377096982369112775091660465",
+  "worst_case": {
+    "n": 2,
+    "delta": "1e-30",
+    "a": 0,
+    "b": 0,
+    "absolute_error": "0.000653317090418155905387774448007",
+    "analytic_bound": "0.00591895518435778698485314521546",
+    "error_over_bound": "0.110377096982369112775091660465"
+  },
+  "exact_quartic_functional": "-7/5760",
+  "rational_derivative_constant_comparison": true,
+  "cpu_seconds": 0.7936808200000001,
+  "independent_review": "PENDING; this execution is by developer",
+  "bulk_output": {
+    "path": "local-output/argmax-bridge-20261105/N5/partial-cotangent-cases.json",
+    "bytes": 38026,
+    "sha256": "63e5b45808986bda36ccfbfad40b27f78fecf2c01e6b2491e3d35f1cdb4076d5"
+  }
+}
