@@ -1,7 +1,7 @@
 # Padua literature campaign (P1–P4): log
 
 - Branch: `claude/padua-literature-20261103` · Base: main `440d107` · Developer: Claude · Auditor: Codex (gpt-6-astra high)
-- Stage: AUDIT · Next: `Codex (gpt-6-astra high): Continue claude/padua-literature-20261103.` · Open handoff: [handoffs/04-audit.md](handoffs/04-audit.md)
+- Stage: WORK · Next: `Claude (Opus 5.5 high): Continue claude/padua-literature-20261103.` · Next handoff: [handoffs/05-response.md](handoffs/05-response.md)
 - Reserved final-ID ranges: LIT-482–561 (80); no PD-T, PD-N or IDEA range. See [ALLOCATIONS.md](ALLOCATIONS.md).
 - Claims: none (literature topic). Note: [SINUM 2026 assessment](notes/faghih-sinum-2026-assessment.md).
 - Open for AC: the remaining PDFs in DOWNLOADS.md v5 (A9 print-only, interlibrary loan; A10, A15, A19 low priority).
@@ -83,3 +83,13 @@
   - The audit had not started, so Claude read them before the audit (pdftotext). 3 addenda; P3 memo supplement (PD-T057 verdict unchanged, IMPLIES PART, now with primary locators; priority wording D revised); registry blocks; report updated.
   - Handoff 02 is superseded by handoff 03, which carries the new input head.
 - [Handoff 02](handoffs/02-audit.md) superseded by [handoff 03](handoffs/03-audit.md): Codex gpt-6-astra high audit at input head f1007d3.
+
+## 2026-11-05 — Codex — audit 01 of handoff 04
+
+- Requested model/effort gpt-6-astra high; serving identity/effective effort not independently exposed. Role: independent auditor of Claude development. Rules read at full head `890f56ccde35431b70b43141c224b0b8817fea7f`; scientific input `a6302fb59f7b24242ca3b850fdd78c15753878b6`; original base `440d1079e42c3ef21c40d1cf8870f5b206410c6a`.
+- [audit-01.md](audit-01.md): CHANGES REQUESTED, six P2 findings (corner attribution bridge, Theorem9 powered hypothesis, scoped rates wording, Möller dimension term, bivariate-downdating absence scope, Laurie/version reconciliation). Findings are recorded without editing developer files.
+- Bounded primary-source review by four inherited-configuration readers; full state/IDEAS.md read across P1/P3 readers. Detailed sources, queries and coverage in audit-support/. Mandatory unavailable journal/theorem/image/Crossref checks remain explicitly incomplete. No substitute acceptance claimed.
+- Independently reran SVZ floating-point checker (Python3.12.14/NumPy2.3.5); values reproduced and agree with the author preprint Table1. Literal checker:60 Old blocks, zero missing at base440d107; appends/full application not certified. Small receipts and complete fetched-file identities in check/audit-*.json; checker code committed. No third-party PDFs/text extracts committed.
+- Shell Git fetch failed connecting to configured proxy8080; used GitHub connector pinned reads/publication. Current main refreshed to `21dbfc90257b952d8923f6d01739d12aa8d6e0a1`, three commits beyond the audit base; reconcile in the developer response before further development/preparation. Audit remains pinned to unchanged source head.
+- Fresh main/open-PR21/22/24 registry/ledger scan: unchanged LIT482–561 remains disjoint through593; all returned closed PRs merged. No range or final ID assigned; scientific registries unchanged.
+- Stage → WORK. [Handoff05](handoffs/05-response.md): Claude response, propagation fixes, current-main reconciliation and return to independent Codex review after material edits.

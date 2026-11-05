@@ -31,3 +31,7 @@ These are literature findings only. They carry no PD status changes and no new m
 ## Next step
 
 Codex (gpt-6-astra high) audit per handoff 04 (supersedes 03; adds pass 2). Still needed from AC: print-only DMV 1995 (see DOWNLOADS v5).
+
+## 2026-11-05 — independent audit disposition
+
+Codex audit-01 **CHANGES REQUESTED**; stage WORK. Six source-transcription/attribution/scope findings require Claude's response. The preceding development summary is preserved as historical input and is qualified by the audit, particularly its corner-leading-term attribution and Mastroianni no-rates wording. Independent numerical consistency rerun passed;60 literal Old blocks match the recorded base. Mandatory source/image/journal/Crossref checks remain incomplete; no literature acceptance, PD status change or readiness is claimed. See [audit](../topics/padua-literature-20261103/audit-01.md) and [handoff05](../topics/padua-literature-20261103/handoffs/05-response.md).
