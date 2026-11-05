@@ -61,7 +61,10 @@ New (proposed):
 
 ## Handoff03 additions — unapplied provisional records
 
-- Add PD-T?lanczos-frontier-codex-L1-01, PROVED analytic: SH_n all-degree BJ/mirror aggregate-source span separation. Exact claim and model are in theory/l1-01-sheared-U-aggregate-separation.md. E2's broader scalar-operation/working-precision target remains OPEN; a formal aggregate result is not silently substituted for it.
+- Add PD-T?lanczos-frontier-codex-L1-01, PROVED analytic: SH_n all-degree BJ/mirror aggregate-source span separation. Exact claim and model are in theory/l1-01-sheared-U-aggregate-separation.md. This satisfies handoff01 L1’s aggregate-model option. The inherited E2 finite-epsilon matching-rate extension and scalar/IEEE questions remain separate; preserve their original wording and scope.
 - Add PD-T?lanczos-frontier-codex-L2-01, PROVED analytic: finite smooth exact-base rule invariance and nested-projector X-closure reduction, theory/l2-smooth-rule-closure-reduction.md. Preserve original PD-T055 wording/status and distinguish the restricted formal W/R readings.
-- Preserve G2 finite certificates under separate substantive theory records once finalized; the lower bounds pass the saved W/R thresholds on both grids with full global source normalization. No exact full expectation or arbitrary-rule/IEEE result is implied.
+- Add PD-T?lanczos-frontier-codex-L2-02, PROVED finite computer-assisted, theory/l2-g2-degree12-certificates.md; the lower bounds pass the saved W/R thresholds on both grids with full global source normalization. No exact full expectation or arbitrary-rule/IEEE result is implied.
 - Preserve the new idea continuation and deferred scalar bridge, with source-gate chronology and no unqualified novelty claim. G1 partial scan receives no all-degree inference or completed-fit claim.
+
+- Add PD-T?lanczos-frontier-codex-L2-03, PROVED analytic positive-weight embedding, theory/l2-positive-weight-embedding.md. Keep the original uniform L2-01 theorem unchanged; this is its explicit extension.
+- Add PD-T?lanczos-frontier-codex-L2-04, PROVED analytic saved W target C_n>=2^(n-4) for all n>=2 on SH_n, theory/l2-sh-worst-case-closure-growth.md; and L2-05, PROVED analytic saved full-law R target E_n>=2^(n-8), theory/l2-sh-random-closure-growth.md. Separate substantive statements and dependency mapping are mandatory. Original PD-T055 remains OPEN with links to these restricted formalizations, without silently replacing its wording or quantifiers.

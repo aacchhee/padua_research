@@ -12,6 +12,8 @@ import argparse
 import hashlib
 import json
 import platform
+import shlex
+import sys
 from fractions import Fraction
 from pathlib import Path
 
@@ -19,7 +21,7 @@ import numpy as np
 import sympy as sy
 
 
-PROOF_HASH = "9f59217da265a433470bb6030074acf76e63e4ffb0a6590add800666a64de90d"
+PROOF_HASH = "f27a22c4c6f13d03710750f52eef4dc9bac31f27bd009beaa536866fbbe24d9f"
 
 
 def ordered(n):
@@ -215,7 +217,7 @@ def main():
         "environment": {"python": platform.python_version(), "numpy": np.__version__,
                         "sympy": sy.__version__},
         "arithmetic": "Python arbitrary-precision integers in NumPy object arrays; SymPy rational polynomials",
-        "command": "python topics/padua-lanczos-frontier-20261105/code/sh_independent.py --output topics/padua-lanczos-frontier-20261105/evidence/sh-independent.json",
+        "command": shlex.join(["python", *sys.argv]),
         "representation": "Tensor Jacobi basis: 2S and 2T are path adjacency matrices, equivalent via the exact discrete sine transform to the weighted SH_n node basis.",
         "rows": rows,
         "symbolic": symbolic,

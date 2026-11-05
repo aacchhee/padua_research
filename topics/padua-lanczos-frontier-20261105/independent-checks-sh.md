@@ -117,3 +117,34 @@ The predecessor obstructions remain respected: physical product-factorization hy
 No scientific dependency on the G1 experiment or finite L2 predicate is needed. G1's frozen cases/thresholds remain separate. Original L1's broader target and PD-T055's universal reorthogonalization/closure target remain OPEN to the extent stated in their own records. The free aggregate adversarial source does not establish scalar realizability, deterministic IEEE activation, every-error behavior, every-rule behavior, or a degree-uniform finite-epsilon regime.
 
 The required later Claude audit must still examine scientific/protocol readiness, including the retained original pre-gate timing deviation and the scope of the novelty review. This supplementary mathematical acceptance does not clear that deviation or confer historical novelty. Root owns registry allocation, evidence manifest/integration, Git operations, and final handoff. The reviewer changed only the three owned SH review/check artifacts and performed no Git mutation.
+
+## Metadata-only impact review — 2026-11-05
+
+At root's request, this reviewer checked the subsequent SH record with whole-file SHA256 `f27a22c4c6f13d03710750f52eef4dc9bac31f27bd009beaa536866fbbe24d9f`. **The existing scoped mathematical acceptance extends to this metadata-only update.** The original audited input remains `9f59217da265a433470bb6030074acf76e63e4ffb0a6590add800666a64de90d`; it is not retroactively replaced in the executed-check receipt or checker.
+
+The reviewer inspected the revised status, verification addendum, open-item wording and history. Reversing only these metadata changes in memory, using the original audited wording retained in the review record, reproduced the complete original input SHA256 exactly. Direct comparison also confirmed that all seven named mathematical sections—Statement, Definitions, Assumptions, Depends on, Sources, Proof or evidence, and Scope—are byte-identical. This establishes the update's bounded impact independently of the author's reported concatenated-section digest `13325943c81b8f21760a2ed79f77ddf442bdf42609007aa108f4e4589bb7ac05`.
+
+The revised metadata accurately distinguishes the developer's analytic proof from this reviewer's separate finite executions and retains the later Claude audit and original timing-deviation disposition. No mathematical computation was rerun, no checker or receipt was changed, and no Git mutation was performed. The pinned checker intentionally still requires the original audited proof bytes; running it against the revised whole file would fail its input-hash guard unless that original input were supplied. This metadata review does not claim a fresh execution against the revised file.
+
+## Current-checker packaging and separate rerun — 2026-11-05
+
+After that metadata-only review, root requested a bounded packaging repair so the current repository's checker could run against its current theorem. This subsequent step supersedes the preceding paragraph's description of the active checker guard. Root authorized changing the accepted proof hash and the recorded invocation metadata, preserving the scientific calculations and the original receipt.
+
+The checker now requires accepted theorem SHA256 `f27a22c4c6f13d03710750f52eef4dc9bac31f27bd009beaa536866fbbe24d9f`. Its receipt command is constructed with `shlex.join(["python", *sys.argv])`, rather than hardcoding the historical output filename. These changes add only the standard-library `shlex`/`sys` imports, replace `PROOF_HASH`, and replace that command-metadata expression. Reversing exactly those edits in memory reproduced original checker SHA256 `3d996f0f85f006350f5a29af72fd1cf26c25c8894b18db1cf451444f908230b8`; all scientific calculations are unchanged.
+
+The reviewer then actually executed this command once from the repository root:
+
+```sh
+python topics/padua-lanczos-frontier-20261105/code/sh_independent.py --output topics/padua-lanczos-frontier-20261105/evidence/sh-independent-current.json
+```
+
+The process exited with code 0 and printed `PASS_SUPPLEMENTAL_EXACT_FINITE_CHECKS`: six exact Jacobian cases at n=2,3,4 for both rules, plus all 88 symbolic creator identities through degree 8. The new receipt's complete `rows`, `symbolic`, and `environment` objects were compared with the historical receipt and agree exactly. Its recorded command matches the actual invocation above. This is a new executed finite verification against the accepted metadata update, justified by the packaging repair; it remains supplementary to the analytic proof.
+
+| Current or preserved artifact | Bytes | SHA256 |
+|---|---:|---|
+| Current theorem | 20,813 | `f27a22c4c6f13d03710750f52eef4dc9bac31f27bd009beaa536866fbbe24d9f` |
+| Current `code/sh_independent.py` | 9,244 | `db4df9f967e00c5d73168263526365c4d66199ff922b02e58953d046cf2daaba` |
+| New [evidence/sh-independent-current.json](evidence/sh-independent-current.json) | 3,692 | `c31e23273316adcc15833076818eb0458c5d473114bfb1236af65506ef31a260` |
+| Preserved historical `evidence/sh-independent.json` | 3,684 | `776b97a5e213c0125f49bac2355bc6f4e48dd628b4c21d31cf7a9adc2ec6cbbd` |
+
+The historical proof/checker pins and receipt above remain records of the original execution; they are not replaced with current hashes. No external raw SH artifact was produced: the exact arrays remained in memory. The storage owner `/root/g0_attribution` was sent the new invocation, sizes, hashes and portable external-output recipe before finalizing its storage records. No Git mutation was performed, and no additional scientific scope or audit clearance is claimed.

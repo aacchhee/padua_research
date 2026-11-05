@@ -20,3 +20,7 @@ Large regenerable outputs stay in `/tmp/padua-lanczos-frontier-*` or a Padua-spe
 ## Handoff03 execution round — 2026-11-05
 
 Current main21dbfc90257b952d8923f6d01739d12aa8d6e0a1 merged as0e493be; rule/frozen Lanczos source bytes unchanged. G0 resolved and finite L4 result preserved. Three disjoint tasks progress: exact G1 implementation/overlap/cost, SH_n hypothesis/gauge/normal-channel check, and finite L2 rule-invariance/closure observable reduction. Exact G1 producer and independently implemented native port run separate processes. First bound the cost with completed low-degree/overlap cases, then scale; no complete scan or fit is claimed before execution. No all-degree L2 work before G2. Full ownership/provenance is in LOG.
+
+## Handoff03 bounded-round outcomes
+
+G1 exact overlap and T24 scan accepted; rotated high-degree implementation hit the recorded1800s limits. No repeated expensive round or fit authorized on incomplete data. A prospective optimization/cost comparison must precede continuation. Saved SH_n aggregate span theorem accepted by a separate Astra xhigh mathematical check; finite exact diagnostics are supplemental. L2 finite reduction and both-grid G2 W/R certificates accepted independently, after which a separate positive-weight bridge and split all-degree W/R proofs were authorized. Preserve working-precision/scalar-model distinctions. See the current report and next numbered handoff for the remaining work; no time ceiling is reported as elapsed time.

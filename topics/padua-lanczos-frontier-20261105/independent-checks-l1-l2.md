@@ -1,21 +1,24 @@
-# Supplementary finite L2 mathematical review — handoff03
+# Supplementary L2 mathematical review — handoff03
 
 Rules/read head: `0e493be7f9883e00e6260cf6b081c607a230177f`; continuation
 head: `79c3d6a211325eca6e8311b3ae03187c100a1d8a`.
 Reviewer: supplementary gpt-6-astra, configured high effort. No Git mutations.
-Ownership is this report only. This is independent mathematical reconstruction,
-not a fresh numerical or exact-arithmetic execution.
+Initial ownership was this report only; root later authorized
+`code/g2_independent.py` and `evidence/g2-independent*.json`. Mathematical
+reconstruction and actual exact-arithmetic executions are distinguished below.
 
 ## Scope and current disposition
 
-**FINITE ANALYTIC REDUCTION AND BOTH GRID W/R G2 CHECKS PASS.**
-G1 remains outside this acceptance.
-There is no L2 all-degree claim. The parent assigned
+**FINITE REDUCTION, BOTH GRID W/R G2 PREDICATES, THE WEIGHTED BRIDGE,
+AND THE SAVED FORMAL ALL-DEGREE W/R THEOREMS PASS REVIEW.**
+G1 remains outside this acceptance. All-degree review occurred only after
+actual G2 acceptance and separate authorization. The parent assigned
 the new SH_n structural theorem to a separate gpt-6-astra xhigh adversarial
-reviewer. This report does not approve that theorem. Its present scope is the
+reviewer. This report does not approve that theorem. Its initial scope was the
 finite W/R rule-class reduction, the genuine X-closure observable, normalized
 versus monic source factors, and the interpretation of subsequent finite
-certificates. The stable finite developer text and actual independent G2 computations
+certificates. The later authorized all-degree L2 review is recorded separately
+below. The stable finite developer text and actual independent G2 computations
 have now been checked as recorded below. The original
 PD-T055 remains OPEN.
 
@@ -182,9 +185,9 @@ sufficient to proceed to the separately authorized G2 producer and distinct
 independent computation. It does not certify any degree12 predicate.
 No theorem or source edit was made by this reviewer to obtain this result.
 
-## Remaining computational and audit boundary
+## Pre-execution computational boundary (historical checkpoint)
 
-Review producer/checker coverage, exact identities and actual independent
+At the analytic-only checkpoint the following remained pending. Review producer/checker coverage, exact identities and actual independent
 execution when available. No code, certificate or G2 run was produced by
 this reviewer during this mathematical reconstruction. The G1 endpoint and
 fit interpretation remains limited to the frozen finite predicate; no G1
@@ -297,3 +300,145 @@ Final immutable execution identities:
   Actual final regeneration elapsed 1.76s; fixed-certificate controls passed.
 - `evidence/g2-independent-rotated.json`: SHA256 `ba85d9e9b79c4d61dd96b4141a4675e952f83e57b96077c57f08a7708f5e7d12`.
   Actual final regeneration elapsed 99.90s; fixed-certificate controls passed.
+
+## Bounded post-G2 mathematical review: finite record and positive weights
+
+After root accepted the actual G2 executions, read the complete finite
+certificate record and the positive-weight bridge. This review used the same
+configured gpt-6-astra high allocation; there was no silent model substitution
+and no scientific rerun. The already accepted G2 code and receipts are unchanged.
+
+- `theory/l2-g2-degree12-certificates.md`, final reviewed SHA256
+  `d002cffdb9f874796983dbc5b9696c221dbf08a563b1810b88f9ee9f94648ecd`:
+  mathematical statement agrees with the actual independently checked integer
+  lower certificates, full source law and finite analytic reduction. Both W/R
+  finite conclusions pass review. One minor provenance finding was sent to the
+  developer and root: the removal control deletes top-level nonessential keys,
+  while ignored nested historical receipt objects remain. The initial wording
+  suggested broader deletion. The developer corrected that wording, and the
+  correction was read. No source, arithmetic or acceptance criterion changed;
+  the checker never reads those historical objects or their paths.
+- `theory/l2-positive-weight-embedding.md`, reviewed SHA256
+  `c84368610d33030f6f50480488fc9135c34c275e3bdab91dfbfb4b8e81e2949e`:
+  analytic mathematical check passes. Positive diagonal embedding is invertible
+  and commutes with coordinate multiplication, so the entire polynomial-error
+  induction survives. Parent norm factors in the monic source conversion are
+  unchanged. The Euclidean projector derivative still has both terms, and the
+  same pointwise argument removes the rule infimum. Arbitrary positive weights
+  need not sum to one; the stated initial normalized vector handles this.
+
+The weighted random law remains isotropic in represented-node coordinates;
+it acquires neither an extra sqrt(weight) factor nor diagonal weight covariance.
+Cross-source contributions are discarded only after taking expectation.
+Rational weights/nodes yield rational monic coefficients, norms, scalar response
+functions and normal projector diagonals, hence rational ell/trace endpoints.
+Off-diagonal Euclidean projector entries can contain square roots; the bridge
+correctly refrains from declaring them rational. Its optional substitution
+r=Wz gives rational weighted quadratic forms without losing test directions,
+since W is invertible. No substantive mathematical finding remains.
+
+For the later all-degree review, additionally read the full checked SH theorem
+(hash9f59217da265a433470bb6030074acf76e63e4ffb0a6590add800666a64de90d)
+and the separate xhigh SH audit report as dependency/context, and completed
+full PD-T042/043 reading to maintain the distinction between coefficient/Gram
+noise measurements and the present closure/source-law theorem. Those older
+experiments were not rerun. The new post-G2 prospective W/R entries in attempts
+and ideas-l2-continuation were read. The SH theorem retains its separate
+reviewer's acceptance; this report does not duplicate that approval. Actual
+all-degree L2 statements still await complete stable developer text and their
+own independent check. No unresolved difficulty in this finite bridge required
+an additional xhigh allocation.
+
+
+## Independent all-degree L2 mathematical reconstruction after G2
+
+Read the complete separate stable proofs:
+
+- `theory/l2-sh-worst-case-closure-growth.md`, SHA256
+  `30cc4c6bab3c7dfd9dc617379f63e1a62f76bf4c0a098dbb0f5940beee9a3b74`;
+- `theory/l2-sh-random-closure-growth.md`, SHA256
+  `6a96b9e001e1e359aca4be418bb799f4bd284c3e39c1688014fe69c129b0e045`.
+
+**Mathematical disposition: both pass in exactly their stated formal model.**
+No new numerical/symbolic run was performed for these analytic results. The
+same high allocation sufficed for this bounded reconstruction: the new closure
+block is an explicit consequence of the already reviewed creator identities
+and two-projector formula, with no unresolved structural step warranting
+another xhigh allocation. The separate SH family/selection theorem retains
+its own xhigh audit.
+
+The reconstruction is as follows. For the sole normalized raw source f at
+h=(n,0), every earlier frozen response is zero. The final-degree BJ chain has
+columns `2*(-2)^j f`, j=0,...,n. Quotient invariance therefore gives
+`Z_(n-1)=0` and the corresponding normal final-degree columns of Z_n. This
+statement does not force earlier tangential stored-column derivatives to
+vanish for every permissible rule.
+
+In the actual closure derivative
+`R_n X Z_(n-1)-Z_n H_X,n-1`, the first term vanishes for this source. For
+input column `(n-1-j,j)`, physical X=S raises the first tensor index with
+coefficient1/2; its other term has lower degree and hence zero Z_n response.
+Thus the output column is `-(-2)^j R_n f` for j=0,...,n-1. Inputs of lower
+degree have zero output. The last degree-n response `(0,n)` is not in the
+raising image of an admissible X parent, which is why the geometric sum
+ends at n-1, not n. This directly proves the closure block without reversing
+any span-to-closure estimate or dropping a nonzero projector term.
+
+For W, `e=q_(n+1,0)` is a represented unit normal vector, since m=n+2
+includes this highest permitted U mode and weighted evaluation is injective
+through n+1. The source `f=e/sqrt(2)` has exactly unit relative budget:
+its BJ raw-product scale squared is1/2 for every n>=2. Its rank-one closure
+matrix has squared spectral gain `(4^n-1)/6`. Dividing by
+`||X||=cos(pi/(n+3))` gives the stated lower for C_n. The source works
+pointwise for every saved smooth exact-base rule by the weighted quotient
+proof, so the every-rule infimum is respected. The comparison to2^(n-4)
+reduces to `250*4^n>=256`, valid throughout the stated range.
+
+For R, use the same source-block linear map but retain its original random
+block from the full law. It has covariance `I/(2 H M)`, where
+`H=N_n-1`, rather than covariance for a newly normalized one-source law.
+Independent centered blocks remove cross terms only after expectation;
+other blocks may cancel in a particular realization. The selected block
+therefore contributes
+`(4^n-1)(M-N_n)/(6 H M ||X||^2)` to the nonnegative expected trace. This
+uses `trace(R_n)=M-N_n` in the Euclidean represented space. It does not
+rotate the Rademacher law or assume rotation invariance of its distribution;
+isotropic second moments are sufficient.
+
+For this exact family,
+`(M-N_n)/(H M)=1/[n(n+2)]`, giving the stated expectation lower. The induction
+`2^n>=n(n+2)/2` starts with equality at n=2 and advances because n^2-3>=0.
+Together with `4^n-1>=(3/4)4^n`, it yields the stronger intermediate
+`E_n>=2^n/16`, hence the unchanged target2^(n-8). The sum over stages in R
+and the maximum in W are never interchanged. No exact full expectation,
+per-realization lower or probability statement follows from this proof.
+
+A minor provenance wording suggestion was sent to the developer and root:
+W's phrase “metadata-only acceptance” for the SH report can be read as
+understating that report's full analytic and executed supplementary review.
+It does not affect the proof or mathematical disposition; any clarification
+is recorded below with its final hash. No substantive mathematical finding
+remains. Original literal working-precision PD-T055, deterministic F, IEEE
+activation and finite-epsilon uniformity remain outside these acceptances.
+The later Claude scientific/protocol audit, including the earlier timing
+deviation, remains required.
+
+
+Final metadata impact review: the developer clarified the SH acceptance wording
+and recorded the accepted supplementary checks in the weighted/W/R theorem
+metadata. The complete final three files were read again; statements, source
+laws and proofs are unchanged. The minor provenance wording suggestion is
+closed. Accepted final immutable file hashes are:
+
+| Record | Final SHA256 |
+|---|---|
+| Finite G2, `l2-g2-degree12-certificates.md` | `d002cffdb9f874796983dbc5b9696c221dbf08a563b1810b88f9ee9f94648ecd` |
+| Weighted bridge, `l2-positive-weight-embedding.md` | `62ad28fa8b0fb8ca392cffa6f093ba9ba89d52bd10cfae090142e2d7fcec1c6c` |
+| W, `l2-sh-worst-case-closure-growth.md` | `84dd00ec23e52dd9d73a86379dbfd30daef0bdc0cdba9834618b4db6f69fd8c5` |
+| R, `l2-sh-random-closure-growth.md` | `f9320ca0ebed3134e8183e95c352d56086ba0edb9ae459b761b0b6ca37f94138` |
+
+No further scientific execution was performed during this bounded review.
+The finite uniform reduction remains at44498c... and the accepted G2 checker,
+receipts and fixed certificate retain their already recorded final hashes.
+All mathematical findings are closed within the stated formal scope; required
+Claude review and original working-precision PD-T055 remain separate.

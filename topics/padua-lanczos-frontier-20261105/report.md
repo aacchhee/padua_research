@@ -8,11 +8,11 @@ Stage WORK. [Draft PR24](https://github.com/aacchhee/padua_research/pull/24), no
 
 The distinct [Astra xhigh adversarial reconstruction](independent-checks-sh.md) accepted the analytic proof at its recorded hash. Supplemental exact checks cover all1618 source-coordinate directions for n=2,3,4 and88 symbolic creator/gauge identities through degree8. These finite diagnostics supplement the written all-degree proof; they do not supply an extrapolation argument or a computer-assisted all-degree reduction. The scalar bridge remains a separately recorded deferred candidate.
 
-## L2: finite rule reduction and G2 acceptance
+## L2: finite certificates and analytic all-degree closure growth
 
 The [finite analytic reduction](theory/l2-smooth-rule-closure-reduction.md) proves first-order invariance across the saved smooth exact-base rule class. It differentiates both nested projectors in the actual X-closure observable, eliminates the infimum over that class pointwise, and gives rational impulse/trace bounds. The original unrestricted working-precision PD-T055 remains OPEN.
 
-Both unchanged degree12 G2 predicates pass on each frozen rational grid, with full90-source budgets and the original independent-sign law:
+The separate [finite computer-assisted theorem](theory/l2-g2-degree12-certificates.md) establishes both unchanged degree12 G2 predicates on each frozen rational grid, with full90-source budgets and the original independent-sign law:
 
 | Grid | Certified integer lower on C_12 squared | Certified integer lower on E_12 |
 |---|---:|---:|
@@ -20,6 +20,13 @@ Both unchanged degree12 G2 predicates pass on each frozen rational grid, with fu
 | rotQ24 | 6324995264 | 2606606 |
 
 The W threshold is65536 after squaring; R is16. These are lower certificates, not exact capacities or full expectations. The prospective single-source/stage screen sufficed on both grids. R sums its nonnegative all-node contribution with the original global normalization; omitted sources are dropped only after taking expectation. [Producer methods](g2-methods.md), [fixed certificate](evidence/g2-fixed-certificate.json) and [independent execution/reconstruction](independent-checks-l1-l2.md) preserve the exact scope. The standalone checker regenerates from repository sources without historic temporary artifacts; both final executions passed, including eight malformed controls per grid and separate complete-projector/trace controls.
+
+After actual G2 acceptance, the separately written [positive-weight embedding theorem](theory/l2-positive-weight-embedding.md) extends the finite reduction to the represented Euclidean coordinates of SH_n. The split analytic results are now **PROVED** for every n>=2:
+
+- [Worst-case X-closure](theory/l2-sh-worst-case-closure-growth.md): `C_n >= sqrt((4^n-1)/6)/cos(pi/(n+3)) >= 2^(n-4)`.
+- [Full-law mean-square X-closure](theory/l2-sh-random-closure-growth.md): `E_n >= (4^n-1)/(6n(n+2)cos²(pi/(n+3))) >= 2^(n-8)`.
+
+The proof computes the actual stage n-1 closure response of the final-degree source; it does not infer closure from a span lower. The mean-square bound keeps the original full independent-sign law and uses its isotropic covariance only after expectation removes cross terms. Distinct Astra high reconstruction accepted both complete analytic proofs and the weighted bridge. These settle the saved formal W/R readings; original PD-T055, deterministic F, high-probability claims and uniform finite-error control remain separate open obligations.
 
 ## G1: finite scan remains incomplete
 
@@ -58,8 +65,8 @@ Large exact arrays remain local and regenerable outside Git, with [manifest and 
 
 | Direction | Status and next obligation |
 |---|---|
-| [L1](attempts/L1.md) | Saved SH_n aggregate separation PROVED under its explicit model; G1 scan incomplete. Scalar-operation/IEEE bridge remains open. |
-| [L2](attempts/L2.md) | Smooth exact-base finite reduction and both-grid W/R predicates accepted. Weighted all-degree extension is separate work; original working-precision PD-T055 stays OPEN. |
+| [L1](attempts/L1.md) | Handoff01 aggregate-model theorem option PROVED on SH_n. G1 scan remains incomplete; scalar-operation/IEEE and uniform finite-error extensions remain open. |
+| [L2](attempts/L2.md) | Saved smooth exact-base W/R formalizations PROVED on every SH_n after both-grid G2 acceptance. Original working-precision PD-T055 and F stay OPEN. |
 | [L3](attempts/L3.md) | OPEN. Explicit-radius and adaptive-branch drafts remain unchecked; no unconditional selection theorem. |
 | [L4](attempts/L4.md) | PROVED finite formal comparison above. Actual IEEE activation, finite-u behavior and all-degree growth remain outside it. |
 | [L5](attempts/L5.md) | OPEN. G3 exact small-n optimal-radius certificates unrun; no inference from the named P_n radius to the optimal obstruction radius. |
@@ -68,7 +75,7 @@ Large exact arrays remain local and regenerable outside Git, with [manifest and 
 
 ## For the paper and protocol
 
-The finite full-scalar factor-ten theorem and its explicit witness can enter a bivariate Lanczos/V+A note after the required audit. It closes a finite comparison, not E2's all-degree result or a universal IEEE instability statement. The fixed-old-lower route obstruction explains the certificate improvement. Primary-source coverage/priority wording remains qualified by the pinned **PR21 (unmerged)** P3 comparison and its stated reading limits; no publication-level novelty is claimed.
+The SH_n aggregate separation, actual-closure W/R growth theorems and finite full-scalar factor-ten certificate can enter a bivariate Lanczos/V+A note after the required audit, with their different source models stated separately. The first satisfies handoff01 L1’s aggregate-model option; uniform finite-error matching-rate extensions remain open. The finite L4 theorem and its explicit witness close its separate comparison. L4 alone supplies no all-degree or universal IEEE instability statement. The fixed-old-lower route obstruction explains the certificate improvement. Primary-source coverage/priority wording remains qualified by the pinned **PR21 (unmerged)** P3 comparison and its stated reading limits; no publication-level novelty is claimed.
 
 Some initial candidate formulas preceded completion of all mandatory shortlisted reading. That prospective novelty-gate timing deviation remains explicitly disclosed; later reading does not cure it. Claude must give a protocol disposition at the later audit. No waiver, merge readiness or final-ID assignment is implied. Next development is the remaining frontier under a new numbered handoff; only AC merges.
 

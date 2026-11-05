@@ -109,3 +109,51 @@ weighted-vector source covariance. Assuming the uniform theorem already
 covered DST weights would fail this obligation. No new random law or
 claimed historical mechanism is introduced. The uniform theorem's body
 and hash44498c... remain unchanged.
+
+## Prospective saved all-degree W/R continuation after G2
+
+The unchanged targets `C_n>=2^(n-4)` and `E_n>=2^(n-8)` for all n>=2
+on the frozen SH_n family are now restated before proof in attempts/L2.md.
+This continuation follows actual independent G2 acceptance and a separately
+written positive-weight bridge. Closest proof inputs are the checked L1
+family/creator identities and the finite two-projector closure reduction;
+the old span lower is not a closure theorem. The proposed distinction is
+an explicit X-closure response valid for every saved smooth exact-base
+rule, plus the full-law covariance calculation for R. These are continuations
+of IDEA255 and the saved W/R formalizations, not new historical mechanisms.
+
+The final-degree source/block is the cheapest analytic test. A unit normal
+direction can give W; the R calculation must retain isotropic Euclidean
+represented-coordinate covariance and can discard other source blocks only
+after expectation. The original constants, degree range, source law and
+rule class are unchanged. W and R substantive results will be separate.
+
+## Final continuation dispositions
+
+The saved W and R formalization variants survive and are PROVED on the
+frozen SH_n family, in separate L2-04/L2-05 analytic records. W has
+`C_n>=sqrt((4^n-1)/6)/cos(pi/(n+3))`; R has
+`E_n>=(4^n-1)/(6n(n+2)cos²(pi/(n+3)))`. These imply exactly their
+original targets for every n>=2. Distinct mathematical reconstruction
+accepted the complete finite, weighted, W and R drafts; final verification
+metadata identifies the actual review and preserves the original input hashes.
+
+The successful distinction from the closest predecessors is the actual
+two-projector X-closure calculation, together with proved smooth-rule
+quotient invariance and the unchanged full-law expectation. PD-T136's
+span map and PD-N062's fixed-degree lemma were not silently treated as
+those results. The R lower discards nonnegative trace contributions after
+expectation; no realized-block monotonicity, rotated-sign law or new source
+normalization is used. Uniform L2-01 remains byte-identical at44498c...
+and its positive-weight extension is a separate substantive record.
+
+All four fixed-grid G2 predicates passed by actual exact independent
+executions before all-degree development. The fixed compact certificate
+and separate finite record preserve their lower-only scope and fresh-
+verification recipe. No new failed candidate or PD-N was needed in this
+continuation; the old IDEA253 duplicate remains disposed of as before.
+F remains deferred/unrun. Original working-precision PD-T055 stays OPEN,
+and there is no IEEE, high-probability, implicit-section or finite-u theorem.
+Required Claude audit and explicit disposition of the earlier timing
+deviation remain pending; no publication-priority claim or shared-state/
+Git mutation is made.

@@ -1,1 +1,160 @@
-{"topic":"padua-lanczos-frontier-20261105","state":"LOCAL_ONLY_NOT_DELIVERED","destination_requested_by_handoff":"Downloads/padua/cold_storage/padua-lanczos-frontier-20261105/","commands":{"original_g0":"Exact per-run command inventory in independent-checks-g0.md and evidence/g0-summary.json","attribution":"OPENBLAS_NUM_THREADS=1 OPENBLAS_CORETYPE=Haswell PYTHONPATH=/tmp/padua-lanczos-frontier-g0/deps python -B topics/padua-lanczos-frontier-20261105/code/g0_attribution.py --external /tmp/padua-lanczos-frontier-g0/polyrat --snapshot /tmp/padua-lanczos-frontier-g0/replay --output-dir /tmp/padua-lanczos-frontier-g0/attribution-pinned --receipt topics/padua-lanczos-frontier-20261105/evidence/g0-attribution.json","independent":"Both fresh-kernel commands and independent attribution rerun in independent-checks-g0-resolution.md and evidence/g0-independent.json","l4_upper":{"argv":["/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python","-B","/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/l4_envelope.py","--frozen-evidence","/tmp/padua-lanczos-frontier-g0/replay/topics/padua-lanczos-drift-20261101/evidence","--output-dir","/tmp/padua-lanczos-frontier-l4/producer","--receipt","topics/padua-lanczos-frontier-20261105/evidence/l4-envelope.json"],"environment":"PYTHONPATH=/tmp/padua-lanczos-frontier-g0/deps OPENBLAS_NUM_THREADS=1","source_code_sha256":"0da27e69ddd3cff5ca23e3fcac764f53891ad164ffab20324540fd67d2faf901","frozen_input_commit":"8359bf7a047d9a212bd841224fb97a458cb7435e"},"l4_rayleigh":{"argv":["/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python","-B","/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/l4_rayleigh.py","--upper-receipt","topics/padua-lanczos-frontier-20261105/evidence/l4-envelope.json","--frozen-evidence","/tmp/padua-lanczos-frontier-g0/replay/topics/padua-lanczos-drift-20261101/evidence","--output-dir","/tmp/padua-lanczos-frontier-l4/rayleigh-durable","--receipt","topics/padua-lanczos-frontier-20261105/evidence/l4-rayleigh.json"],"environment":"PYTHONPATH=/tmp/padua-lanczos-frontier-g0/deps OPENBLAS_NUM_THREADS=1","source_code_sha256":"54399e4e2dea3a19d943130bf67e7549b16c98aac600e196ba932ba512069551","frozen_input_commit":"8359bf7a047d9a212bd841224fb97a458cb7435e"},"l4_witness":{"argv":["/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python","-B","/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/l4_full_witness.py","--frozen-evidence","/tmp/padua-lanczos-frontier-g0/replay/topics/padua-lanczos-drift-20261101/evidence","--upper-receipt","topics/padua-lanczos-frontier-20261105/evidence/l4-envelope.json","--output-dir","/tmp/padua-lanczos-frontier-l4/full-witness","--receipt","topics/padua-lanczos-frontier-20261105/evidence/l4-full-witness.json"],"environment":"PYTHONPATH=/tmp/padua-lanczos-frontier-g0/deps OPENBLAS_NUM_THREADS=1","source_code_sha256":"9f56bf92aa5883aaf6895327044406b7fdccb57e3c26199391fcaf61d873d2cf","frozen_input_commit":"8359bf7a047d9a212bd841224fb97a458cb7435e"},"l4_independent":{"argv":["/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python","-B","/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/l4_independent.py","--regeneration","/tmp/padua-lanczos-frontier-l4/astra.json","--developer","topics/padua-lanczos-frontier-20261105/evidence/l4-envelope.json","--frozen-evidence","/tmp/padua-lanczos-frontier-g0/replay/topics/padua-lanczos-drift-20261101/evidence","--bj-reproduction","/tmp/padua-lanczos-frontier-l4-bj-independent.json","--witness-regeneration","/tmp/padua-lanczos-frontier-l4/full-witness-astra.json","--witness-developer","topics/padua-lanczos-frontier-20261105/evidence/l4-full-witness.json","--fixed-certificate","topics/padua-lanczos-frontier-20261105/evidence/l4-readout-certificate.json","--output","topics/padua-lanczos-frontier-20261105/evidence/l4-independent.json"],"environment":"PYTHONPATH=/tmp/padua-lanczos-frontier-g0/deps OPENBLAS_NUM_THREADS=1","source_code_sha256":"491be4db86f4a0c1ff369f4b51043d63944562d7ca522e60cd794ed4d70248ac","frozen_input_commit":"8359bf7a047d9a212bd841224fb97a458cb7435e"},"l4_portable":"Exact argv and source SHA in evidence/l4-fixed-recheck.json; fresh-machine recipe in COLD_STORAGE.md"},"checkers":{"original_g0":"evidence/g0-summary.json, evidence/g0-kernel-probes.json; exact replays pass, original numerical difference stop retained","independent":"evidence/g0-independent.json, independent-checks-g0-resolution.md; separately executed source08b9f18d and384-bit projector, additive resolution accepted","l4_exact":"evidence/l4-independent.json and independent-checks-l4.md: distinct full source regeneration, rational upper/readout/Rayleigh checks,13 malformed controls rejected; supplementary, Claude audit pending","l4_portable":"PORTABLE_FIXED_CERTIFICATE_PASSES; seven malformed controls reject; lineage-field-removal control passes; no old temporary artifacts or floating proposals are acceptance inputs"},"retention":"Sandbox local only, no durable delivery promised; hashes identify actual bytes, regeneration timestamps/path may differ","entries":[{"path":"reproduce-triangle.json","bytes":927,"sha256":"d2622612ba90f903e2b716ae17a6a4ec0e7045ed99d0b0ddcb7ae524c596df7d","command_id":"original_g0","root":"g0"},{"path":"reproduce-rotated.json","bytes":925,"sha256":"b9e2caec4a9e36e4f26ec51c3ccff6f79827503aed33c5b200ebc96fd41fbc7b","command_id":"original_g0","root":"g0"},{"path":"scalar-finite.json","bytes":7066,"sha256":"71356c807f496deb439199f57834e7f2b107b9c3fa4d1fea4e40ea2563d263ad","command_id":"original_g0","root":"g0"},{"path":"e5-exact.json","bytes":854,"sha256":"ba6efdcd1dfd4f10c5b27cd1574689c1500f37abb834bf8a2910b76a448dacd3","command_id":"original_g0","root":"g0"},{"path":"e6-T24.json","bytes":6465,"sha256":"47215d4cc60807445fa5b31d4acb00ac89f2065b8353a1a18218f4bd14f260f6","command_id":"original_g0","root":"g0"},{"path":"restored-inputs.json","bytes":2869,"sha256":"3bd54364f0641e982fc2bdf229c934df5560c425699046417bdca330d317c944","command_id":"original_g0","root":"g0"},{"path":"environment.json","bytes":770,"sha256":"e45a08ebf99b46773da765e245214e35a4224c94b8f781ec2c7c965ac98cfc64","command_id":"original_g0","root":"g0"},{"path":"run-receipts.json","bytes":3965,"sha256":"614bb7993e40e3e804975e83f52de19b6ebab081bc0de84f08a1ae7661d48797","command_id":"original_g0","root":"g0"},{"path":"comparison.json","bytes":2692,"sha256":"d353fc5a15d735bab9af4ea7e4508f03f78020f9f9c331067cd29fe8b908d5df","command_id":"original_g0","root":"g0"},{"path":"blas-config.txt","bytes":5006,"sha256":"422d0bd02b411c8f589a14ea472bd325616a5f9e67a169b9854ee129e78c0bad","command_id":"original_g0","root":"g0"},{"path":"e6-coretype-probes.json","bytes":2119,"sha256":"b84c979a243c99f082235957f7e2feab04e5200d392f7fa60f46387ed6b4f581","command_id":"original_g0","root":"g0"},{"path":"e6-T24-fresh.json","bytes":6465,"sha256":"47215d4cc60807445fa5b31d4acb00ac89f2065b8353a1a18218f4bd14f260f6","command_id":"original_g0","root":"g0"},{"path":"e6-T24-Sandybridge.json","bytes":6476,"sha256":"75ab3067279a3f70ff4905c31e87208fa1da5272d0fa499fc4503d571f5d0526","command_id":"original_g0","root":"g0"},{"path":"e6-T24-Nehalem.json","bytes":6456,"sha256":"cba76d5744d32cd55ac7a52e728d159b170d4cc94accba8bc9dfe65c010ec6b5","command_id":"original_g0","root":"g0"},{"path":"e6-T24-Prescott.json","bytes":6462,"sha256":"26cbda145407ea01a57c383d954d43b86b6dbc716617beeee268d79d5a989a34","command_id":"original_g0","root":"g0"},{"path":"validation/g0-summary.json","bytes":9940,"sha256":"22d72ac57a97674c9018459b237b56da200d84ee0a689c3c9bea762b17c50c5a","command_id":"original_g0","root":"g0"},{"path":"validation/g0-kernel-probes.json","bytes":4311,"sha256":"5134b53c87a0aabbedf78f46f9b3f81b6e4f9def57d36848f6f16a2ec6474a84","command_id":"original_g0","root":"g0"},{"path":"attribution-pinned/Haswell-alt-propagation.npz","bytes":946890,"sha256":"1c8e41402dd9e1ea50e030d9325af03d98c64b7f83cd1178bed01979ca0ec755","command_id":"attribution","root":"g0"},{"path":"attribution-pinned/Haswell-xy-propagation.npz","bytes":946890,"sha256":"8eecbf377022581a3fa79a8c82f4856fba4aae61f93ca9366bdcd52e1e46aa9f","command_id":"attribution","root":"g0"},{"path":"attribution-pinned/Haswell-yx-propagation.npz","bytes":946890,"sha256":"9ec5b76d2ef74f782bf971d4fb6fcb0265625aeb23cfa40648a05e2772ae0b63","command_id":"attribution","root":"g0"},{"path":"attribution-pinned/Haswell.npz","bytes":4152790,"sha256":"8f9c52b93c0d6bcf3c7b57eb357c1c1dc3b591dfd256487f370cf252dc558173","command_id":"attribution","root":"g0"},{"path":"attribution-pinned/Haswell.npz.runtime.json","bytes":896,"sha256":"19184353fafc3975429843352027ae80905240babe6e514b3cf4c5070a9e3e58","command_id":"attribution","root":"g0"},{"path":"attribution-pinned/Nehalem-alt-propagation.npz","bytes":946890,"sha256":"10dca6f26208bf0cc055b3b6fc085d99a480c07b1635e8cadfc1a62242f85b2a","command_id":"attribution","root":"g0"},{"path":"attribution-pinned/Nehalem-xy-propagation.npz","bytes":946890,"sha256":"6dd229a4001c6753c68ea4a20afbe1ee08b0c4e9ce38b7ba624628d2800202be","command_id":"attribution","root":"g0"},{"path":"attribution-pinned/Nehalem-yx-propagation.npz","bytes":946890,"sha256":"98a3d0641aa1cb2808c0d89c92b6a387e54ea0cba866b36a5846da2ea0a0944a","command_id":"attribution","root":"g0"},{"path":"attribution-pinned/Nehalem.npz","bytes":4152790,"sha256":"9ec5d8dd5c9a70d4d370f8bfec659179ce0ec1ab4f174462c377f935d14ac1ab","command_id":"attribution","root":"g0"},{"path":"attribution-pinned/Nehalem.npz.runtime.json","bytes":896,"sha256":"670456de447bfc46b73ff696a6959760d166e98b7120da5def4c3996f686ade3","command_id":"attribution","root":"g0"},{"path":"attribution-pinned/references.npz","bytes":1893766,"sha256":"07d3f36baa888d972f511625e06061dc62676875d909a8d1ae78162c4b52aa04","command_id":"attribution","root":"g0"},{"path":"padua-lanczos-frontier-g0-review/baseline/fresh-bases.npz","sha256":"37192409a5aba52121c678f83e2581b5d1ad4df501833e01b3f06ae42aa3dcdc","bytes":1162481,"command_id":"independent","root":"tmp"},{"path":"padua-lanczos-frontier-g0-review/nehalem/fresh-bases.npz","sha256":"25b4c723ab5cedf112dbc3de3369d664d055d5ff9e3efc1e6516057d1b342e5f","bytes":1162410,"command_id":"independent","root":"tmp"},{"path":"producer/candidate-00.json","bytes":17333,"sha256":"f02da0499a4949b176eb32582fbbc61b95a7d9fa268445751f08372b595a3c45","command_id":"l4_upper","root":"l4"},{"path":"producer/candidate-01.json","bytes":21175,"sha256":"7e888b34814a6ae520c7c1f4bc7782e30498e10c40af925e3cae3620d8e7318c","command_id":"l4_upper","root":"l4"},{"path":"producer/candidate-02.json","bytes":21106,"sha256":"30deda1d6c75854ba7f4617be7ae4379efcbbb945414b752682dcd2a31e1919a","command_id":"l4_upper","root":"l4"},{"path":"producer/candidate-03.json","bytes":21110,"sha256":"7192059c23df523d4a4caebdabc1f2435bc9e3f07703fb3c3405bea32e1f4a99","command_id":"l4_upper","root":"l4"},{"path":"producer/candidate-04.json","bytes":21114,"sha256":"81dee28e68c4af9d305d9076eeee922869c73fa9356cc56a32f3917ce437580a","command_id":"l4_upper","root":"l4"},{"path":"producer/candidate-05.json","bytes":21116,"sha256":"0017fde6f611abb804e723154696373695647f2741d32faf46d9f47c39a01383","command_id":"l4_upper","root":"l4"},{"path":"producer/candidate-06.json","bytes":21116,"sha256":"7461baec1a7378160cbdfbf6f0f6dc43d1f2202317d863cf5d20ba88ff0b1080","command_id":"l4_upper","root":"l4"},{"path":"producer/candidate-07.json","bytes":21116,"sha256":"a97b43d4b8ee157a352d6c72e68e83d7ffd750bcabbe040b60b3a2b95e323d8a","command_id":"l4_upper","root":"l4"},{"path":"producer/candidate-08.json","bytes":21116,"sha256":"e1dcd19421a900b0597016a1ba057e969f6c4301a854ac1f78f7c9e3dd288275","command_id":"l4_upper","root":"l4"},{"path":"producer/full-envelope.jsonl.gz","bytes":49329865,"sha256":"fef9cb00b58a709d0ed952fbb09bc00263eae0fdc8102c5b6f2ff322722364fc","command_id":"l4_upper","root":"l4"},{"path":"rayleigh-durable/rayleigh-03-exact.txt","bytes":12808,"sha256":"0c4f9f2bfab8bd3fe65c6c44313d52448c39738ec5ddb4c567b729203dd73da6","command_id":"l4_rayleigh","root":"l4"},{"path":"rayleigh-durable/rayleigh-08-exact.txt","bytes":12806,"sha256":"43012699b0f49cfdb186ffff2d38624ad89f6e09e39a1a27a872c63be2e7a61d","command_id":"l4_rayleigh","root":"l4"},{"path":"full-witness/readout-1000000.json","bytes":17811,"sha256":"b8fe56537694c2deb80965c4b042fa8966b2e95716ba10066090059b77564d68","command_id":"l4_witness","root":"l4"},{"path":"full-witness/full-witness.jsonl.gz","bytes":43591444,"sha256":"9e33ba871d485734ae3f277ec0350d408998848cdd7dc54a8c9f095ac413b551","command_id":"l4_witness","root":"l4"},{"path":"astra.json","bytes":7189,"sha256":"13210d31f6533a267fb03877775da659a220aaf1d2cac071a7ae28e75675f565","command_id":"l4_independent","root":"l4"},{"path":"astra/candidate-00.json","bytes":17333,"sha256":"f02da0499a4949b176eb32582fbbc61b95a7d9fa268445751f08372b595a3c45","command_id":"l4_independent","root":"l4"},{"path":"astra/candidate-01.json","bytes":21175,"sha256":"7e888b34814a6ae520c7c1f4bc7782e30498e10c40af925e3cae3620d8e7318c","command_id":"l4_independent","root":"l4"},{"path":"astra/candidate-02.json","bytes":21106,"sha256":"30deda1d6c75854ba7f4617be7ae4379efcbbb945414b752682dcd2a31e1919a","command_id":"l4_independent","root":"l4"},{"path":"astra/candidate-03.json","bytes":21110,"sha256":"7192059c23df523d4a4caebdabc1f2435bc9e3f07703fb3c3405bea32e1f4a99","command_id":"l4_independent","root":"l4"},{"path":"astra/candidate-04.json","bytes":21114,"sha256":"81dee28e68c4af9d305d9076eeee922869c73fa9356cc56a32f3917ce437580a","command_id":"l4_independent","root":"l4"},{"path":"astra/candidate-05.json","bytes":21116,"sha256":"0017fde6f611abb804e723154696373695647f2741d32faf46d9f47c39a01383","command_id":"l4_independent","root":"l4"},{"path":"astra/candidate-06.json","bytes":21116,"sha256":"7461baec1a7378160cbdfbf6f0f6dc43d1f2202317d863cf5d20ba88ff0b1080","command_id":"l4_independent","root":"l4"},{"path":"astra/candidate-07.json","bytes":21116,"sha256":"a97b43d4b8ee157a352d6c72e68e83d7ffd750bcabbe040b60b3a2b95e323d8a","command_id":"l4_independent","root":"l4"},{"path":"astra/candidate-08.json","bytes":21116,"sha256":"e1dcd19421a900b0597016a1ba057e969f6c4301a854ac1f78f7c9e3dd288275","command_id":"l4_independent","root":"l4"},{"path":"astra/full-envelope.jsonl.gz","bytes":49329865,"sha256":"ab4b4c9e2e37ac5ef6422959015a9e926c8d87820b3493612917d9df89e26c7f","command_id":"l4_independent","root":"l4"},{"path":"padua-lanczos-frontier-l4-bj-independent.json","bytes":925,"sha256":"dc34a320a340f1a1b8dfab6f41f49e4f71bae6db297306795aa08819c3691c9e","command_id":"l4_independent","root":"tmp"},{"path":"full-witness-astra.json","bytes":3357,"sha256":"f87d7a1c5d5c97d5077fb3cac5ddb07d812a6583980cdcca534a5861488b9b53","command_id":"l4_independent","root":"l4"},{"path":"full-witness-astra/readout-1000000.json","bytes":17811,"sha256":"b8fe56537694c2deb80965c4b042fa8966b2e95716ba10066090059b77564d68","command_id":"l4_independent","root":"l4"},{"path":"full-witness-astra/full-witness.jsonl.gz","bytes":43591444,"sha256":"0ab86efe20c73dcb6ff6fe48ad5ffd973693548d0f5fcc760a2487571ada67dc","command_id":"l4_independent","root":"l4"}],"source_input_commits":{"original_g0":"8359bf7a047d9a212bd841224fb97a458cb7435e","attribution":"f85c7b5c83822ff60b62c84bed1ec6ae31628422","independent":"f85c7b5c83822ff60b62c84bed1ec6ae31628422","l4_upper":"8359bf7a047d9a212bd841224fb97a458cb7435e","l4_rayleigh":"8359bf7a047d9a212bd841224fb97a458cb7435e","l4_witness":"8359bf7a047d9a212bd841224fb97a458cb7435e","l4_independent":"8359bf7a047d9a212bd841224fb97a458cb7435e"},"path_roots":{"g0":"/tmp/padua-lanczos-frontier-g0","l4":"/tmp/padua-lanczos-frontier-l4","tmp":"/tmp"},"path_resolution":"Each entry names an actual local file at path_roots[root]/path; command and checker provenance resolve through their identifiers. Entry command_id also selects command_checker_ids and then checkers; repeated checker metadata is normalized, not omitted.","command_checker_ids":{"original_g0":"original_g0","attribution":"independent","independent":"independent","l4_upper":"l4_exact","l4_rayleigh":"l4_exact","l4_witness":"l4_exact","l4_independent":"l4_exact"}}
+{
+  "schema": "frontier-storage-index-v1",
+  "topic": "padua-lanczos-frontier-20261105",
+  "state": "LOCAL_ONLY_NOT_DELIVERED",
+  "complete_external_inventory": {
+    "path": "/tmp/padua-lanczos-frontier-storage/full-inventory.json",
+    "bytes": 91574,
+    "sha256": "2490be33b705109a09849d2efb2db3fd880041f5050534bd9bdf8efd7ee2932e",
+    "artifact_entries": 281
+  },
+  "historical_inventory": {
+    "source_commit": "aab7bbe97899b0216d60a015c1a0d2cb2d7cbd99",
+    "path": "topics/padua-lanczos-frontier-20261105/cold-storage.json",
+    "git_blob": "11103cf9de039f226c9c9b0cac355d442308562c",
+    "bytes": 16209,
+    "sha256": "a4d4724f91257693ebb9ec400a3478743b64579f31b30ec0f6b053a4baaf23f5",
+    "entry_count": 59,
+    "read_only_retrieval": "git show aab7bbe97899b0216d60a015c1a0d2cb2d7cbd99:topics/padua-lanczos-frontier-20261105/cold-storage.json"
+  },
+  "builder": {
+    "path": "topics/padua-lanczos-frontier-20261105/code/storage_inventory.py",
+    "bytes": 17247,
+    "sha256": "95f6c576802d471cce97e020247aeea5fc1c8775606066a22bfefd8c7ffe34a8"
+  },
+  "executed_build_command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/storage_inventory.py",
+    "--build",
+    "--output",
+    "/tmp/padua-lanczos-frontier-storage/full-inventory.json",
+    "--index",
+    "topics/padua-lanczos-frontier-20261105/cold-storage.json"
+  ],
+  "validation_command": "python -B topics/padua-lanczos-frontier-20261105/code/storage_inventory.py --check-index topics/padua-lanczos-frontier-20261105/cold-storage.json",
+  "source_pins": {
+    "g1_flint": [
+      {
+        "path": "topics/padua-lanczos-frontier-20261105/code/g1_exact_prefix.py",
+        "bytes": 8707,
+        "sha256": "c2102db6e627781085869cbb3a7d69d27fb6243f19d9291c41e32bd58a3b0624"
+      }
+    ],
+    "g1_native": [
+      {
+        "path": "topics/padua-lanczos-frontier-20261105/code/g1_independent.cpp",
+        "bytes": 5104,
+        "sha256": "0d8aed21b9ee3c6c4ef6899fd429ac55b2d200a439cce38ea71ad2448cc1fc77"
+      },
+      {
+        "path": "topics/padua-lanczos-frontier-20261105/code/g1_independent_run.py",
+        "bytes": 6795,
+        "sha256": "388c70c0d3af25f33d67c967a5bcf94e45ee6060412be45c4a5430048a9451ae"
+      }
+    ],
+    "g1_compare": [
+      {
+        "path": "topics/padua-lanczos-frontier-20261105/code/g1_independent_compare.py",
+        "bytes": 1530,
+        "sha256": "64ee9f3fefdbba8f944f9ec1580352d46b70bc18e332dc715032db11b462fb5e"
+      }
+    ],
+    "g2_screen": [
+      {
+        "path": "topics/padua-lanczos-frontier-20261105/code/g2_screen.py",
+        "bytes": 8791,
+        "sha256": "2e8c87db119b407a884bc089a5a7e69addfc674b94ebc499236a18307ca1c57d"
+      }
+    ],
+    "g2_partial_r": [
+      {
+        "path": "topics/padua-lanczos-frontier-20261105/code/g2_partial_r.py",
+        "bytes": 3304,
+        "sha256": "8b2b992f1c941fa3f49febe7d5b3e870582e78c8b6ac6189933262ee3932af5a"
+      }
+    ],
+    "g2_independent": [
+      {
+        "path": "topics/padua-lanczos-frontier-20261105/code/g2_independent.py",
+        "bytes": 15778,
+        "sha256": "e88536c7156256de09f907923d7a51437055b685f3ccbaee62fcff4b50589ca8"
+      }
+    ],
+    "frozen_baseline": {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_exact.py",
+      "sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f"
+    },
+    "SH_checker": [
+      {
+        "path": "topics/padua-lanczos-frontier-20261105/code/sh_independent.py",
+        "bytes": 9244,
+        "sha256": "db4df9f967e00c5d73168263526365c4d66199ff922b02e58953d046cf2daaba"
+      }
+    ],
+    "SH_proof": [
+      {
+        "path": "topics/padua-lanczos-frontier-20261105/theory/l1-01-sheared-U-aggregate-separation.md",
+        "bytes": 20813,
+        "sha256": "f27a22c4c6f13d03710750f52eef4dc9bac31f27bd009beaa536866fbbe24d9f"
+      }
+    ],
+    "SH_checker_historical": {
+      "sha256": "3d996f0f85f006350f5a29af72fd1cf26c25c8894b18db1cf451444f908230b8",
+      "bytes": 9334,
+      "repository_path": "topics/padua-lanczos-frontier-20261105/code/sh_independent.py",
+      "source_commit": "b81c374722a5eaf3441cb36c970d6f6da8a58230"
+    },
+    "SH_proof_historical": {
+      "sha256": "9f59217da265a433470bb6030074acf76e63e4ffb0a6590add800666a64de90d",
+      "bytes": 17273,
+      "note": "Historical proof hash retained in original receipt; original proof bytes were not separately archived. Current metadata-only revision is the active reproduction input."
+    }
+  },
+  "turn_status": {
+    "G1": {
+      "legacy_overlap_rows": 88,
+      "triangle_degree2_to20_rows": 76,
+      "additional_FLINT_rotated_BJ_degrees": [
+        13,
+        14
+      ],
+      "best_completed_unique_preregistered_rows": 122,
+      "required_rows": 152,
+      "pending_rows": 30,
+      "native_rotated20_timeouts": {
+        "seconds_per_case": 1800,
+        "last_completed_source_of230": {
+          "bj": 37,
+          "mirror": 29,
+          "alt": 12,
+          "pivot": 13
+        }
+      },
+      "fits": "NOT_RUN_INCOMPLETE_SCOPE"
+    },
+    "G2": {
+      "W_and_R_saved_predicates": "BOTH_GRIDS_PASS_BY_CHECKED_LOWER_CERTIFICATES",
+      "R": "partial lower on original full law, not exact full expectation",
+      "portable_certificate": "evidence/g2-fixed-certificate.json"
+    },
+    "SH": {
+      "external_raw_artifacts": 0,
+      "supplemental_checks": "committed small receipt only; analytic theorem acceptance separate"
+    }
+  },
+  "checker_reports": [
+    "independent-checks-g1.md",
+    "independent-checks-l1-l2.md",
+    "independent-checks-sh.md"
+  ],
+  "retention": "Local temporary artifacts only; no durable delivery or Windows transfer promised. All newly added file identities were checked. Regeneration can change log timing/path/gzip metadata and need not recover historical bytes.",
+  "destination_requested_by_handoff": "Downloads/padua/cold_storage/padua-lanczos-frontier-20261105/",
+  "limits": [
+    "The single complete inventory stays external because it is large; no manifest is split to evade limits.",
+    "Historical59 identities and commands remain recoverable from the pinned prior Git manifest; this index does not erase them.",
+    "If temporary artifacts disappear, reconstruct fresh scientific outputs and a new inventory; regenerated path/timing/gzip bytes need not equal historical bytes.",
+    "--allow-missing reports missing retention explicitly; it never accepts a hash mismatch.",
+    "SH created no external raw artifact: its finite arrays were in memory and its small receipt remains committed."
+  ]
+}

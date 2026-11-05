@@ -1,9 +1,9 @@
 # Bivariate Lanczos / V+A round 2 (E2, PD-T055, selection, PD-T140 rotQ24, PD-T075(U2), PD-T056(G), V+A study): log
 
 - Branch: `codex/padua-lanczos-frontier-20261105` · Base: main `21dbfc90257b952d8923f6d01739d12aa8d6e0a1` (reconciled 2026-11-05; prior result inputs remain pinned) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK (G0 resolved; research gates pending) · Next: `Codex (gpt-6.1-sol xhigh): Continue codex/padua-lanczos-frontier-20261105.` · Open handoff at next published boundary: [handoffs/03-work.md](handoffs/03-work.md)
+- Stage: WORK (G0 resolved; G2 W/R pass; G1 incomplete) · Next: `Codex (gpt-6.1-sol xhigh): Continue codex/padua-lanczos-frontier-20261105.` · Open handoff at next published boundary: [handoffs/04-work.md](handoffs/04-work.md)
 - Permanent reservation: PD-T324–363, PD-N116–131, IDEA414–453, LIT582–593; first pushed40b3eb6, draft PR24. No final IDs assigned; recheck union before future assignment/readiness.
-- Checked provisional claims: PD-T?lanczos-frontier-codex-L4a finite full-scalar factor-ten separation; PD-N?lanczos-frontier-codex-L4-01 scoped fixed-old-lower envelope obstruction. Claude audit pending.
+- Checked provisional claims: L1-01 all-degree aggregate separation; L2-01 through L2-05 finite rule reduction, G2 certificates, weighted extension and all-degree W/R closure growth; L4a finite full-scalar factor-ten separation and L4-01 scoped fixed-old-lower envelope obstruction. All under their stated models. Claude audit pending.
 - Open for AC: no waiver requested. G0 explanation resolved in additive disposition02; historical rounding trajectory remains unverified. Scientific/protocol Claude audit pending. Compute remains sandbox-only.
 
 ## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
@@ -14,7 +14,7 @@
 
 ## Runs needed
 
-- Resolve/disposition G0 as in handoff02; then G1–G4 and L1–L7 as in handoff01. Exact G0 witness/identity replays already completed; original FAIL and its limits are retained.
+- Continue incomplete G1 with a new bounded implementation/cost plan, and remaining L3/L5/L6/L7 under handoff01. G2 W/R passed; G3/G4 remain unrun. G0 is resolved under disposition02, preserving its original FAIL and historical limits. Current L2 analytic continuation and next handoff are recorded below.
 
 ## 2026-11-05 — Codex, requested gpt-6.1-sol xhigh — WORK start
 
@@ -102,3 +102,18 @@ Workers recorded preliminary candidate mechanisms/formulas while some mandatory 
 - G1 actual coverage: producer122/152 rows; independently checked120 unique rows, including all88 legacy and all76 T24 high rows. Rotated BJ13/14 benchmark is producer-only at703.35s. Native rotated20 cases all reached1800s caps with incomplete source propagation and no high endpoints; no extra heavy round authorized, no fit/verdict. This is a measured cost limit for these implementations, not an impossibility result.
 - Model-capacity errors interrupted the L2 developer and reviewer; both were retried at their same assigned model/effort with no silent substitution. Already completed stable evidence remains valid; pending extension work is not counted as completed.
 - Current main21dbfc remains integrated. No final IDs/canonical registry changes or readiness claim. Required Claude audit and the earlier prospective-gate timing disposition remain pending; supplementary Astra checks do not replace that audit. Raw storage remains local/pending archival.
+
+### Handoff03 final analytic boundary
+
+- L2 finite G2 theorem, weighted extension and separate W/R growth records are complete. The saved targets C_n>=2^(n-4) and E_n>=2^(n-8) hold for every n>=2 on SH_n, under the unchanged smooth exact-base aggregate model and full represented-coordinate sign law. Actual X-closure uses both moving-projector terms. Cross-source terms vanish under expectation before omitting nonnegative blocks. Original PD-T055 working-precision/F and finite-error questions remain OPEN.
+- Distinct Astra high accepted all final L2 hashes after full mathematical reconstruction; two minor provenance-wording findings were corrected and closed, with no scientific rerun. Report SHA317febbf993ce42273c08628856c57c07da28d99db7d51bd837d86e89c2a4e41. The uniform reduction remains exactly44498c6230d0a59bbd0cfc4bc96600f0b401eb92ba9302b5c1d54cc569c8d5f9; its creation-time pending wording is historical, with subsequent acceptance in the independent report.
+- SH metadata-only theorem update was independently checked by reversing the metadata changes and reproducing the original whole-file hash exactly. Its old checker then exposed a real reproduction issue: the guard expected the old whole-file hash. Updated only that guard and accurate command metadata, and executed once against the current theorem into evidence/sh-independent-current.json. All scientific rows/symbolic results match the original, which is preserved. This extra run addresses the actual packaging change, not a repeated unchanged scientific search.
+- Checkpoint b81c374722a5eaf3441cb36c970d6f6da8a58230 was pushed before final integration; its84-file index was verified against staged bytes. Same-model retries resolved both transient model-capacity failures; no substitute was used. No further heavy G1 run occurred after the recorded cost limits.
+- Complete281-artifact inventory moved outside Git with content-addressed small index and rebuild/verification code; all identities were actually checked. No split to evade output limits, no Windows delivery and no guaranteed scratch retention. SH finite arrays lived only in memory. Fresh-machine commands and executed component commands remain distinguished.
+- [Handoff04](handoffs/04-work.md) continues bounded G1 optimization and remaining L3/L5/L6/L7 work, preserving the completed L1 aggregate and L2 formal W/R goals. Required later Claude audit and gate-timing protocol disposition remain pending. Output commit precedes the separate two-file handoff publication commit.
+
+### Final publication verification for handoff03
+
+- Final evidence inventory:90 file identities,15642bytes; `python -B topics/padua-lanczos-frontier-20261105/code/check_manifest.py` PASS. All30 generated topic JSON files are below16KiB. The single91574byte full raw inventory is external; its small index is6621bytes. Root separately executed the inventory validator:281 matching retained artifacts,0 missing/0 mismatched, exit0.
+- JSON parsing, all20 Python source syntax trees and128 rendered local Markdown links pass. Literal fenced proposals for future root registry rows were excluded from relative rendered-link validation, since their paths intentionally target their future registry locations. `git diff --check` passes. No extra scientific assembly was run for publication checks.
+- Scientific evidence remains the separately executed G1/G2/SH/L4 checks and analytic reconstructions in their reports, not the hash/link checks. Every source edit is topic-local or the topic results file; no final-ID/shared scientific registry changes. Handoff04 is excluded from the output commit and will receive that exact commit SHA in its separate publication commit.
