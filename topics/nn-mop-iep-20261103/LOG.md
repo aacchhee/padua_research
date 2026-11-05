@@ -1,7 +1,7 @@
 # Nearest-neighbour MOPs as a commuting-pair IEP (IDEA-117): log
 
 - Branch: `codex/nn-mop-iep-20261103` · Base: main `21dbfc9` (original `440d107`) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: PR (preparation complete; protocol check pending) · Next: `Claude (Sonnet 5.5 high): Continue codex/nn-mop-iep-20261103.` · Next handoff: [handoffs/06-protocol-check.md](handoffs/06-protocol-check.md)
+- Stage: PR (prepared; protocol check passed) · Next: AC merge decision, then `Claude (Sonnet 5.5 medium): Continue codex/nn-mop-iep-20261103.` for closure · Open handoff: [handoffs/07-merge.md](handoffs/07-merge.md)
 - Reserved final-ID ranges: T286–293, N100–103, IDEA376–383, LIT562–573;
   first pushed in a0abe8b, [draft PR22](https://github.com/aacchhee/padua_research/pull/22).
   Final assignments: PD-T286–290, PD-N100, IDEA376–379, LIT562–568;
@@ -245,3 +245,14 @@ checkpoint tree exactly; independently PR22→PR24(79c3d6a) and PR22→PR21
 (890f56c) squash cleanly, preserving topic/results and all own registry
 sections. [Receipt](preparation/squash-rehearsal.json); disposable worktree
 removed, no live merge/order approval. Mechanical registration check passes.
+
+## 2026-11-05 — Claude protocol check 01 (claude-opus-5-5), handoff06 → PASS
+
+- Rules read at `1de5891` (unchanged). Checked preparation at `7881e1c` against the audited science `5b36f8f` and live main `21dbfc9`. Sonnet 5.5 high was requested; this session runs on Opus 5.5, which handoff06 allows.
+- [Receipt](preparation/protocol-check-01.md). Verified:
+  - E1/E2/X1 applied as worded; only ID and status metadata otherwise changed;
+  - the final-ID map, the withdrawn negative with no final ID, the IDEA-117 row and LIT deduplication against main and PR21;
+  - additive-only shared registries;
+  - live PR population and reservation refresh unchanged (PR21 `890f56c`, PR24 `79c3d6a`);
+  - the registration checker passes; squash rehearsal replayed at `1de5891`, clean with PR21 and PR24 afterwards.
+- No finding. PR22 marked ready for review. [Handoff 07](handoffs/07-merge.md) asks for AC's merge decision and then closure. Only AC merges.

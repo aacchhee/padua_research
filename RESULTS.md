@@ -282,7 +282,7 @@ Preparation preserves all accepted scientific source/receipt/auditor identities;
 This file is written only by the topic orchestrator. Branch `codex/nn-mop-iep-20261103`;
 draft [PR22](https://github.com/aacchhee/padua_research/pull/22).
 
-### Status (2026-11-05): preparation complete; Claude protocol check pending
+### Status (2026-11-05): prepared and protocol-checked; ready for AC's merge decision
 
 - PROVED, standard formulation: under explicit normality, moment systems
   uniquely give the finite polynomial triangle and both NN coefficient arrays.
@@ -327,8 +327,9 @@ draft [PR22](https://github.com/aacchhee/padua_research/pull/22).
   PD-T288/289 PROVED, PD-T290 MEASURED and the provisional negative withdrawal.
   Auditor exact-reference checks cover sampled N4,8,12,16,24; N32 retains
   precision convergence. Approved E1/E2/X1 edits and final registration are
-  complete. The remaining step is a short Claude preparation protocol check.
+  complete. Claude [protocol check](topics/nn-mop-iep-20261103/preparation/protocol-check-01.md)
+  passed; PR22 is ready for AC's merge decision.
 
 ### Next step
 
-`Claude (Sonnet 5.5 high): Continue codex/nn-mop-iep-20261103.` (protocol check, handoff06)
+AC: merge decision on PR22 (handoff07). After the merge, `Claude (Sonnet 5.5 medium): Continue codex/nn-mop-iep-20261103.` closes the topic.
