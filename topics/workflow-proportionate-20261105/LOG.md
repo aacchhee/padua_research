@@ -1,6 +1,6 @@
 # Proportionate audit and records — workflow change: log
 
-- Branch: `claude/elegant-lamport-wkozfa` · Base: main `b4d292eea5eed373002506d5e16a3761bd7ae10e` · Developer: Claude (Opus 5.5 high) · Auditor: Codex · Stage: AUDIT · Open handoff: [handoffs/01-audit.md](handoffs/01-audit.md)
+- Branch: `claude/elegant-lamport-wkozfa` · Base: main `b4d292eea5eed373002506d5e16a3761bd7ae10e` · Developer: Claude (Opus 5.5 high) · Auditor: Codex · Stage: AUDIT · Open handoff: [handoffs/02-audit.md](handoffs/02-audit.md)
 - Scope: `agents/WORKFLOW.md`, `agents/claude/CLAUDE_ROLES.md`, `agents/codex/CODEX.md`. No scientific record, registry or ID is touched; no range is reserved.
 
 ## 2026-11-05 — Claude, Opus 5.5 high (claude-opus-5-5) — rules change at AC's request
@@ -48,3 +48,11 @@
   11. This log no longer reports the review before it existed.
   12. "Batch" is defined.
   13. The IDEA template no longer invites pending process stage into the shared registry.
+
+## 2026-11-05 — AC confirms the interpretations
+
+- AC: "Confirm the readings". Two readings of AC's request are now confirmed:
+  - "after 3rd" includes the third audit round, so the auditor fixes MINOR findings in place from round three onward;
+  - draft-time reservation is dropped, in favour of reserving when final IDs are first needed and the full recheck at readiness.
+- The rules text already implements both, so no rules file changes.
+- Handoff 01 had not been started by Codex and is superseded by [handoff 02](handoffs/02-audit.md), which drops the request for Codex's view on these two choices. The Codex audit remains required.

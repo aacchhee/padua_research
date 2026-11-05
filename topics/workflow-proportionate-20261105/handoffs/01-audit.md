@@ -1,6 +1,6 @@
 # Handoff 01 — workflow-proportionate-20261105 — Codex audit of the rules change
 
-- Status: open
+- Status: superseded by 02: AC confirmed both interpretations before the audit started
 - Previous handoff: none
 
 - Next agent / model / effort: Codex. Use `gpt-6-astra` medium for this protocol audit (WORKFLOW allocation row). The auditor may raise it to high if it finds an integrity risk.
