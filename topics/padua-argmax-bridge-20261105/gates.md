@@ -37,3 +37,7 @@ proposes B5-R1: specify a target-independent operator class, prove transport and
 normalization, then test positivity. Failure rejects only that class. The mode-
 diagonal class fails off the complementary checkerboard. No unrestricted
 infeasibility or general N4 kill is claimed.
+
+## 2026-11-05 round3 update
+
+Global exact range is now2–36 (the earlier2–32 line is historical). B2 finite floating scope still passes; the first complete outward n17 candidate has1288 leaves but independent Arb replay rejects364 insufficient enclosures. Outward B2 remains OPEN. B3 remains OPEN despite a new endpoint residual estimate uniform in both degree and log-degree; the compact model/onset is absent. The independently reconstructed common local corner patch covers every degree2–128; it supplies no global coverage by itself. N5 all-edge-center margin is a developer proof pending distinct review. B4 remains blocked; B6 has no confirmed counterexample.

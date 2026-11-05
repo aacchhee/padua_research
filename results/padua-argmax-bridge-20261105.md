@@ -40,3 +40,7 @@ Next: full outward overlap/replay and practical cost, sharper actual-lambda
 control, and a compact uniform-degree profile with a proved effective onset.
 No Syvert pack until B4's analytic/throughput condition is met. Small evidence
 stays in Git; raw outputs/libraries stay local with physical archival pending.
+
+Round3 adds a degree/log-degree-independent joint endpoint residual bound ([N1-05](../topics/padua-argmax-bridge-20261105/theory/N1-joint-endpoint-profile.md)); full compact profile/onset remain OPEN. The common finite local corner patch is independently reconstructed for every n2–128 ([range check](../topics/padua-argmax-bridge-20261105/independent-checks-corner-range.md)). All interior complementary vertical-edge centers now have a developer deficit bound for n>=64 ([N5-03](../topics/padua-argmax-bridge-20261105/theory/N5-all-edge-defect.md)); distinct review pending.
+
+The first whole outward n17 phase candidate is complete, but independent replay leaves364/1288 predicates unverified. Acceptance=false; this adds no globally certified degree. [Calibration](../topics/padua-argmax-bridge-20261105/theory/N3-phase-n17.md).

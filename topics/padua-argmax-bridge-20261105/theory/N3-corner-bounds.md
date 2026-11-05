@@ -1,4 +1,4 @@
-# PD-T?padua-argmax-bridge-20261105-codex-corner-02 — Pending finite corner bounds at n33/64/128
+# PD-T?padua-argmax-bridge-20261105-codex-corner-02 — Certified finite corner bounds at n33/64/128
 
 ID kind: PD-T. Aliases: N3 actual outward weighted energy; practical corner endpoint data.
 Split from: none; finite implementation of IDEA-330/457.
@@ -12,9 +12,9 @@ For each n in {33,64,128}, the exact rational ell,E,u,kappa in
     0<ell<=Lambda_c, W_n<=E, Lambda_n<=u,
     kappa=min(1,1/[8(E/(n^4 ell)+3u/ell)]) > 1/12500.
 
-Consequently the preceding analytic reduction would give strict local
+Consequently the preceding analytic reduction gives strict local
 descent with loss n^2 Lambda_c H/16 for 0<H<=1/(12500 n^2), and at
-both parity-correct nonnode corners. It would cover the symmetric scaled
+both parity-correct nonnode corners. It covers the symmetric scaled
 phase square |alpha|,|beta|<=1/128 by sin(t)^2<=t^2.
 
 ## Definitions and assumptions
@@ -28,15 +28,17 @@ and execution environment. These dependencies are explicit even after replay.
 
 ## Status by part
 
-Overall status: **CONDITIONAL**, pending independent exact/outward replay
-of the finite endpoint inequalities. The producer completed and the
-developer's diagnostics passed; neither is an independent acceptance.
-The analytic implication is separately PROVED and uses no computed premise.
+Overall status: **PROVED**, computer-assisted finite endpoint verification.
+The corrected independent GMP checker actually rebuilt/replayed n2,33,64,128
+and certified the producer endpoints and exact radius inequalities. Required
+Claude audit remains pending. The analytic implication is separately PROVED.
+The initial conditional input is preserved in source snapshot c000899; its
+receipt and conditional floating-run labels remain unchanged.
 
 | Part | Status | Evidence / gap |
 |---|---|---|
-| Bounds ell<=Lambda_c and W_n<=E for the three degrees | CONDITIONAL | Directed producer output frozen; distinct replay pending |
-| Exact rational kappa assembly and phase-radius inequality | Developer verification record | Fraction checks passed; does not independently verify energy |
+| Bounds ell<=Lambda_c and W_n<=E for the three degrees | PROVED | Corrected separate GMP replay verifies both interval containments exactly |
+| Exact rational kappa assembly and phase-radius inequality | PROVED | Separate exact replay and Fraction comparisons pass |
 | Small n2–8 direct corrected-kernel comparison | MEASURED diagnostic only | 145 nonzero cardinals, maximum relative midpoint error <9.4e-75 |
 
 Candidate disposition: retained quantitative implementation; no new
@@ -93,7 +95,8 @@ are not the endpoints used for proof predicates.
 Compared with max(1/[2(n(n+1))^3],10^-11/n^2), the respective candidate
 physical-radius gains are approximately 222.89,2906.50,44568.48.
 The old and new loss estimates each remain confined to their own domains.
-No throughput/box-count benefit has yet been measured for the new radius.
+Subsequent finite floating throughput measurements are recorded separately in
+phase-cover-measurements.md; they do not supply this endpoint proof.
 
 ## Checks, reproducibility and sources
 
@@ -107,13 +110,19 @@ No external source theorem is transferred.
 
 ## Scope and open items
 
-Independent replay must reconstruct the corner mass and energy through a
-separately implemented exact/outward arithmetic path and verify the exact
-endpoint inequalities. Code inspection and reading this receipt are not
-a replay. Parent coordinates that work; this developer shares no arithmetic
-kernel with the checker. Until it passes, use of the larger radius in
-floating covers must be explicitly hypothetical. A full cover, B2 verdict,
-required Claude audit and all-degree PD-T099 remain separate and unresolved.
+The separate exact replay reconstructed corner mass and energy with512-bit
+integer intervals, Machin pi and degree200 cosine Taylor bounds, then verified
+all four producer endpoints and the exact common radius. It imports no
+producer arithmetic kernel. [Independent record](../independent-checks-corner.md),
+[corrected receipt](../evidence/independent-corner-replay.json), and committed
+check_corner_exact.cpp/check_corner_receipt.py supply the code and evidence.
+Only corrected checker SHA3646f4e8... and receipt573afc5d... restore acceptance;
+the initial noncanonical-GMP-operand execution is withdrawn.
+
+The original floating run remains labeled conditional as launched. Its later
+strict input-impact check verifies the corrected premise without repeating
+the numerical campaign. Full outward covers, required Claude audit and
+all-degree PD-T099 remain separate obligations.
 
 ## History
 
@@ -122,3 +131,10 @@ required Claude audit and all-degree PD-T099 remain separate and unresolved.
 First producer build failed only on two compiler indentation warnings;
 they were fixed before any completed run. All reported finite results
 come from the frozen successful runner receipt.
+
+2026-11-05 accepted-instance status update by coordinator, requested Astra high.
+Original input at c000899 had CONDITIONAL status pending a distinct replay; the
+statement, constants, producer source/data and analytic radius implication are
+unchanged. The corrected distinct replay supplies the missing finite obligation,
+so the same exact-instance statement is now PROVED. Historical receipt hashes
+refer to that committed input snapshot, not this later status-only prose.

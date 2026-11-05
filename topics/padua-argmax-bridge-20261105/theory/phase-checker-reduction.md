@@ -173,3 +173,46 @@ O(n³) arithmetic. There is no measured O(n²) claim. Full phase covers
 and new degrees are unexecuted. Independent source/math inspection,
 a different-agent replay, and any larger corner-patch proof remain
 requirements before a consequential computer-proof claim.
+
+## Authorized finite-instance extension and provenance follow-up
+
+The original checkpoint above used inherited radii only. After the corrected
+independent corner replay and parent authorization at published c000899,
+the implementation additionally accepts the **fixed** degrees {33,64,128}
+under the separately published finite-instance theorem in
+`N3-corner-bounds.md` and analytic `N3-corner-radius-reduction.md`.
+The premise is frozen corrected receipt
+573afc5d5ae229b0fa1d47df9b6bf334e47e0e437288a3543826838e5403cb4b,
+whose checker source is 3646f4e8b6b16957b9e1114f95ad2f0a7c18eec4687b49d5e6f1947a25eea6e3.
+Every source pin is verified, using the exact c000899 historical prose when
+the current status paragraph differs. No supplied candidate field selects,
+widens or asserts success of this mathematical premise.
+
+The guard requires maxabs(alpha),maxabs(beta)<=1/128 and checks exactly
+
+    a²/2 + n² b²/[2(n+1)²] <= 1/12500.
+
+Dividing by n² supplies the physical-distance bound required by that
+finite-instance theorem. Equality in this geometric guard is allowed,
+while strict descent away from H=0 is supplied by the theorem. Defect
+comparison remains strict; only the two actual nonnode corners retain
+equality. Neither the fixed guard nor any metadata converts a partial
+cover into a complete certificate. A possible future common bound at
+other degrees is not implemented or assumed.
+
+For source/input provenance, revised `check.py` consumes one immutable
+candidate byte snapshot and `build_snapshot.py` always constructs a fresh
+library in a unique directory. The receipt pins the exact source snapshot,
+preprocessed translation unit, flags/toolchain, header closure, runtime
+closure, loaded mappings and binary. Source/closure stability checks reject
+changes observed during build/replay. This repairs the original R1
+provenance defect; it is independent of the mathematical enclosure lemma.
+The unchanged Arb kernel remains subject to separate source/math review.
+
+Actual full-overlap test: the complete outward n17 tree was replayed over
+all1288leaves, yielding364failed enclosure predicates and acceptancefalse.
+The finite polynomial remains a valid but insufficient enclosure on those
+broad boxes; no finite degree is proved by this run. See
+`../evidence/phase-checker-full-n17.json` for pinned input/output identities.
+Any stronger formula/refinement is a subsequent implementation change that
+requires its own review; it is not silently inherited from this reduction.

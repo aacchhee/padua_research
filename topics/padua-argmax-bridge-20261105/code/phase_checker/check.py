@@ -4,11 +4,12 @@
 Certificate numbers S_upper/corner_upper/defect_lower are diagnostic only.
 Acceptance is recomputed with this backend's bounds, not supplied numbers.
 """
-import argparse, ctypes, hashlib, json, math, pathlib, time
+import argparse, ctypes, hashlib, json, math, pathlib, time, sys, subprocess
+sys.path.insert(0,str(pathlib.Path(__file__).resolve().parent))
+import build_snapshot
 from fractions import Fraction as F
 
 ROOT=pathlib.Path(__file__).resolve().parents[4]
-LIB=ROOT/'local-output/argmax-bridge-20261105/phase-checker/libphase_checker.so'
 class Invalid(ValueError): pass
 
 def rational(x):
@@ -17,13 +18,47 @@ def rational(x):
 
 class Kernel:
     def __init__(self):
-        self.lib=ctypes.CDLL(str(LIB)); self.fn=self.lib.phase_bounds
+        binary,self.provenance=build_snapshot.build()
+        self.lib=ctypes.CDLL(str(binary)); self.fn=self.lib.phase_bounds
+        self.provenance['loaded_dependency_closure']=build_snapshot.loaded_closure(self.provenance)
         self.fn.argtypes=[ctypes.c_int]+[ctypes.c_double]*4+[ctypes.POINTER(ctypes.c_double)]
         self.fn.restype=ctypes.c_int
     def bounds(self,n,b):
         out=(ctypes.c_double*7)()
         if self.fn(n,*b,out): raise Invalid('kernel rejected inputs')
         return list(out)
+
+CORNER_RECEIPT_SHA='573afc5d5ae229b0fa1d47df9b6bf334e47e0e437288a3543826838e5403cb4b'
+CORNER_PIN_COMMIT='c000899f3fb10d6ba0f1725341a045fe11ec943a'
+
+def published_corner_premise():
+    # Fixed published finite-instance theorem, not an input assertion or a
+    # caller-provided success bit. Every source pin is resolved and verified.
+    path=ROOT/'topics/padua-argmax-bridge-20261105/evidence/independent-corner-replay.json'
+    raw=path.read_bytes()
+    if hashlib.sha256(raw).hexdigest()!=CORNER_RECEIPT_SHA:raise Invalid('published corner receipt identity mismatch')
+    receipt=strict_json(raw);sources=[]
+    for entry in receipt['sources']:
+        target=ROOT/entry['path'];current=target.read_bytes()
+        if hashlib.sha256(current).hexdigest()==entry['sha256']:
+            source=current;location='working source snapshot'
+        else:
+            result=subprocess.run(['git','show',CORNER_PIN_COMMIT+':'+entry['path']],cwd=ROOT,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+            if result.returncode:raise Invalid('unavailable historical corner source pin: '+entry['path'])
+            source=result.stdout;location=CORNER_PIN_COMMIT
+        if hashlib.sha256(source).hexdigest()!=entry['sha256'] or len(source)!=entry['bytes']:
+            raise Invalid('unresolved corner source identity: '+entry['path'])
+        sources.append({'path':entry['path'],'sha256':entry['sha256'],'bytes':len(source),'snapshot':location})
+    return {'receipt_sha256':CORNER_RECEIPT_SHA,'degrees':[33,64,128],
+            'kappa':'1/12500','phase_square':'1/128','source_pins':sources,
+            'dependency_scope':'published finite-instance theorem; no arbitrary caller assertion'}
+
+def local_fixed_instance(n,b):
+    # Called only after the fixed published premise has been verified.
+    if n not in (33,64,128):return False
+    a=maxabs(*b[:2]);beta=maxabs(*b[2:])
+    if max(a,beta)>F(1,128):return False
+    return a*a/2+F(n*n,(n+1)**2)*beta*beta/2<=F(1,12500)
 
 def tree_partition(items):
     groups=[set() for _ in range(4)]
@@ -80,6 +115,7 @@ def check(data,kernel,max_leaves=None):
     if not isinstance(leaves,list) or not isinstance(pending,list):raise Invalid('bad leaf lists')
     tree_partition(leaves+pending)
     if type(data.get('complete')) is not bool or data['complete'] != (not pending):raise Invalid('false completion flag')
+    premise=published_corner_premise() if n in (33,64,128) else None
     checked=[];failed=[]
     for item in leaves[:max_leaves]:
         b=box_for(expected,item['root'],item['path']);kind=item.get('kind')
@@ -90,7 +126,7 @@ def check(data,kernel,max_leaves=None):
             # T366 applies only on the full box's |a|+|b|<=1/10 region.
             if n>=48 and maxabs(*b[:2])+maxabs(*b[2:])<=F(1,10):dl=max(dl,F(1,8192))
             if kind=='far':ok=su<lc
-            elif kind=='local-corner-plus-defect':ok=local_inherited(n,b) and su-dl<lc
+            elif kind=='local-corner-plus-defect':ok=(local_inherited(n,b) or (premise is not None and local_fixed_instance(n,b))) and su-dl<lc
             else:ok=cu<lc and su-dl<lc
         else:raise Invalid('unknown leaf predicate')
         result={'root':item['root'],'path':item['path'],'kind':kind,'valid':bool(ok),'bounds':bounds}
@@ -102,14 +138,45 @@ def check(data,kernel,max_leaves=None):
             'failed_leaves':failed,'replay':checked,'independent_constants':own[3:],
             'arithmetic':'FLINT 3.1.3 Arb 160-bit balls; exact rational acceptance/geometry',
             'supplied_numeric_leaf_bounds':'ignored; predicates recomputed independently',
-            'local_patch':'inherited T251/T369 only; no new kappa accepted'}
+            'local_patch':'T251/T369; published kappa=1/12500 only n33/64/128 and phase-square 1/128',
+            'fixed_corner_premise':premise}
+
+def strict_json(raw):
+    def pairs(items):
+        result={}
+        for key,value in items:
+            if key in result:raise Invalid('duplicate JSON key: '+key)
+            result[key]=value
+        return result
+    def bad(value):raise Invalid('nonfinite JSON constant: '+value)
+    data=json.loads(raw,object_pairs_hook=pairs,parse_constant=bad)
+    def validate(value):
+        if isinstance(value,float) and not math.isfinite(value):raise Invalid('nonfinite JSON number')
+        if isinstance(value,dict):
+            for item in value.values():validate(item)
+        elif isinstance(value,list):
+            for item in value:validate(item)
+    validate(data)
+    if not isinstance(data,dict):raise Invalid('top-level JSON must be an object')
+    return data
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('candidate',type=pathlib.Path);ap.add_argument('--output',type=pathlib.Path)
     ap.add_argument('--max-leaves',type=int);args=ap.parse_args();t=time.process_time()
-    try:report=check(json.loads(args.candidate.read_text()),Kernel(),args.max_leaves)
-    except (Invalid,ValueError,KeyError,TypeError) as e:report={'accepted':False,'error':str(e)}
-    report['candidate_sha256']=hashlib.sha256(args.candidate.read_bytes()).hexdigest()
+    # One byte snapshot supplies both the checked object and its identity.
+    raw=args.candidate.read_bytes();candidate_sha=hashlib.sha256(raw).hexdigest()
+    provenance=None
+    python_paths=[pathlib.Path(__file__),pathlib.Path(build_snapshot.__file__)]
+    python_sources=[build_snapshot.identity(p) for p in python_paths]
+    try:
+        data=strict_json(raw);kernel=Kernel();provenance=kernel.provenance
+        report=check(data,kernel,args.max_leaves)
+        if python_sources!=[build_snapshot.identity(p) for p in python_paths]:raise Invalid('checker Python source changed during replay')
+        if build_snapshot.identity(pathlib.Path(provenance['checker_binary']['path']))!=provenance['checker_binary']:raise Invalid('checker binary changed during replay')
+    except (Invalid,ValueError,KeyError,TypeError,RuntimeError) as e:report={'accepted':False,'error':str(e)}
+    report['candidate_sha256']=candidate_sha;report['candidate_bytes']=len(raw)
+    report['build_provenance']=provenance
+    report['checker_python_sources']=python_sources
     report['cpu_seconds']=time.process_time()-t
     text=json.dumps(report,indent=2)
     if args.output:args.output.write_text(text+'\n')

@@ -1,0 +1,109 @@
+{
+  "finding": "R1 build/input provenance",
+  "status": "focused regression PASS; mathematical review pending",
+  "rules_sha": "c000899f3fb10d6ba0f1725341a045fe11ec943a",
+  "strict_json_rejections": [
+    "duplicate",
+    "nested duplicate",
+    "NaN",
+    "Infinity",
+    "overflow"
+  ],
+  "input_snapshot_replacement_control": true,
+  "parallel_unique_workdirs": [
+    "/workspace/padua_research/local-output/argmax-bridge-20261105/phase-checker/check-m5j36i0i",
+    "/workspace/padua_research/local-output/argmax-bridge-20261105/phase-checker/check-2bd_fj04"
+  ],
+  "obsolete_shared_binary_unused": true,
+  "fixed_instance_guards": [
+    {
+      "n": 17,
+      "phase_square_guard": false
+    },
+    {
+      "n": 32,
+      "phase_square_guard": false
+    },
+    {
+      "n": 33,
+      "phase_square_guard": true
+    },
+    {
+      "n": 64,
+      "phase_square_guard": true
+    },
+    {
+      "n": 128,
+      "phase_square_guard": true
+    },
+    {
+      "n": 129,
+      "phase_square_guard": false
+    }
+  ],
+  "corner_receipt_sha256": "573afc5d5ae229b0fa1d47df9b6bf334e47e0e437288a3543826838e5403cb4b",
+  "historical_source_pins": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/N3-corner-bounds.md",
+      "sha256": "7241cd4221643473cf34c9a36e502d1095a916a0b2f67075d2fb4093d2142fe6",
+      "bytes": 6319,
+      "snapshot": "c000899f3fb10d6ba0f1725341a045fe11ec943a"
+    }
+  ],
+  "fresh_replays": [
+    {
+      "path": "local-output/argmax-bridge-20261105/phase-checker/r1-isolated-replay-0.json",
+      "bytes": 46983,
+      "sha256": "45b0379203d57346918f30dcd20f15817a03aa2ee93eccab9817e38b61e083ae",
+      "binary_sha256": "052e015fc0820e58e8d51ab80cb9e18c03b36fc653ad908decec501e7335cd72",
+      "candidate_sha256": "c9b48003767936f5b29ef5e941944b57c6a3487b6757542e6281280dd577609a",
+      "preprocessed_sha256": "504f72819cff06df076a2907229d9f9ff72348d838e13fc9023eaf6ef8237a6c"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/phase-checker/r1-isolated-replay-1.json",
+      "bytes": 46993,
+      "sha256": "3b729a279f2e39896e88ac790160946f86093fbb74f427d2e017ae06e028dfc4",
+      "binary_sha256": "2b3b6ddae67d35390fea1f630259e331a553606290703f08f08e5b547e36a595",
+      "candidate_sha256": "c9b48003767936f5b29ef5e941944b57c6a3487b6757542e6281280dd577609a",
+      "preprocessed_sha256": "30954b7d5adf4b131163aef7bf8c571c0b4ff708e478dcba550a0858b4bf0db6"
+    }
+  ],
+  "sources": [
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/arb_kernel.cpp",
+      "bytes": 5635,
+      "sha256": "236116452dc7aae66e39cbf8800fe847cffe931ac0ce8a9682397313de7c43a6"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/build.sh",
+      "bytes": 475,
+      "sha256": "d406128df4c836f49ca65531fb43ab17f8f575e22abfd3c3a11d88e3349fd7b4"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot.py",
+      "bytes": 5284,
+      "sha256": "a8a805ba27e880a3a5cf1db7d0707dab4a982d7a988b493c822015518ee2e2c2"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/check.py",
+      "bytes": 9994,
+      "sha256": "8713026a1b5a872f0e8dd33c311eafef2cf310f42ae2eebb4055ad224b8acfae"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/controls.py",
+      "bytes": 5452,
+      "sha256": "564ab1cacd0606d3fd3e7f71eec2621c8f1eb7c6a78b003acbc4676de89568ff"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/provenance_controls.py",
+      "bytes": 3658,
+      "sha256": "983a63abddbcb2f83f22116070be9af956d89a9fc4b8df445787da57293ca810"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/setup.py",
+      "bytes": 1131,
+      "sha256": "ff6babcf65f90c42d35353bd306f89d96ac293c6783508b03bef175ab5a60391"
+    }
+  ],
+  "unchanged_campaign": "original phase-checker-calibration.json preserved; no full-cover claim"
+}

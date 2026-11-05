@@ -52,3 +52,33 @@ must remain OPEN unless a separate uniform tail/compactification argument
 is supplied. N132's leading-only obstruction is escaped by retaining all
 phase-dependent cotangent and harmonic terms; N079's cusp is retained by
 the actual negative sets. No sign-fixed diamond is assumed.
+
+## Round 3: joint endpoint tail gate, 2026-11-05
+
+Parent authorized this round after pushed boundary `c000899`. The full
+baseline and full shortlisted entries above remain the campaign scan.
+The round-2 gate and T269 full proof are retained; this continuation also
+read the full T270 one-dimensional remainder proof. A supplemental search
+across IDEAS, the literature INDEX, argmax topics and Lebesgue follow-ups
+used `cot.*log.*sin|log.*sin.*cot|endpoint.*cancellation|cancellation.*endpoint|two.pole.*(tail|perturb)|pole.*coefficient.*zero`.
+The matching substantive predecessors were T365's boundary profile,
+T269's fixed-offset dominated tail and T270's cotangent pole subtraction.
+N1-02 is the exact immediate predecessor. No external source or historical
+novelty assertion is involved.
+
+The precise candidate is a quantitative continuation, **variant with
+difference**: isolate the equal-opposite-channel cancellation integral
+and prove that the remaining endpoint contribution has a uniform
+integrable logarithmic envelope even when a=(cos alpha+cos beta)/2 tends
+to zero. The proposed distinguishing property is an explicit bound for
+the *whole outer endpoint tail*, with no number of degree-dependent rows
+in the bound. T270 treats one channel and T269 a different corner
+deformation; N1-02's variation bound instead has an O(1/R) endpoint cost.
+The difference is killed if the residual needs an inverse-a constant,
+has a nonintegrable pole, or depends on an unproved sign/root separation.
+
+The exact proposed bound, alternatives, first proof test and surviving
+full-profile obligations are recorded in [N1-endpoint](ideas/N1-endpoint.md)
+before further proof development or computation. The original B3 kill
+and one-correction limit remain unchanged. This supporting tail alone
+cannot pass B3 or establish an argmax onset.

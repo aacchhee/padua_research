@@ -124,3 +124,39 @@ The actual-lambda/profile margin is proved in
 supplementary only. This advances the stated domain/constants, while
 whole-cell ordering and the full central envelope remain OPEN. No round 3
 starts before the parent publishes/reviews this checkpoint.
+
+## Round 3 gate — 2026-11-05, input c000899
+
+Parent published round 2 at `c000899f3fb10d6ba0f1725341a045fe11ec943a`
+and explicitly authorized round 3. Rules were re-read/compared at this
+head; round-1/2 theory, code and receipts remain frozen. T222/T224/T366
+were read in full in round 2; the exact T224/T366 vertical bands are
+re-read for this extension. No external source transfer or new fetch.
+
+The exact candidate is **all noncorner complementary vertical-edge
+centers**, n>=64, |s|<=1/2, with actual lambda<=S_n(0,s)-1/8192 or a
+better explicit constant. This is a quantitative domain variant of
+T222/T224/T366 and N5-02, not a new mechanism. It removes N5-02's
+central physical strip and widens T366's phase radius, while restricting
+to exact vertical physical endpoints.
+
+Candidate/kill are recorded in `ideas/N5-all-edge-defect.md` before
+developing the finite endpoint lines or running new diagnostics. The
+cheapest decisive gate is simultaneous exact band/parity/numerator
+control for endpoint-distance indices 1..4, followed by adaptive far
+blocks. A failed near-endpoint sign or count at any n>=64 kills the
+proposed uniform constants, not E-C or a larger class of proofs. The
+candidate must also retain an actual-lambda margin after N1's model
+error. More finite ordering samples do not satisfy this gate.
+
+Round-3 outcome: the analytic gate survives with the stronger uniform
+constant d=1/1024, for every stated center and phase. The tightened
+endpoint folded targets stay in [3pi/10,3pi/5], giving both baselines
+>2/5 and numerator >=1/8 even at phase budget 1/2. The exact physical
+parity/weights give endpoint floor >1/864; both far constructions clear
+1/1024 as well. N1/N5 error subtraction leaves margin 511/524288.
+All claims are written in `theory/N5-all-edge-defect.md` with developer
+PROVED status and independent review pending. Fifty-six selected-block
+diagnostics supplement the proof without an ordering claim. Round-1/2
+theory/code/receipts remain frozen. Parent must publish/review this result
+before any N5 round 4.
