@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "scope": "finite rational identities and nonrigorous 75-digit weight diagnostics",
+  "python": "3.13.18",
+  "mpmath": "1.4.1",
+  "exact_carrier_cases": 176,
+  "moment_solves": [
+    {
+      "m": 2,
+      "nodes": 6,
+      "maximum_absolute_error": "2.2508014e-76",
+      "corner_exact": "0"
+    },
+    {
+      "m": 3,
+      "nodes": 10,
+      "maximum_absolute_error": "1.7569205e-76",
+      "corner_exact": "-1/18"
+    },
+    {
+      "m": 4,
+      "nodes": 15,
+      "maximum_absolute_error": "4.4422292e-76",
+      "corner_exact": "-2/225"
+    },
+    {
+      "m": 5,
+      "nodes": 21,
+      "maximum_absolute_error": "4.5093619e-76",
+      "corner_exact": "-7/675"
+    },
+    {
+      "m": 7,
+      "nodes": 36,
+      "maximum_absolute_error": "2.7575016e-76",
+      "corner_exact": "-29/8820"
+    },
+    {
+      "m": 9,
+      "nodes": 55,
+      "maximum_absolute_error": "2.2828497e-76",
+      "corner_exact": "-97/70875"
+    }
+  ],
+  "continuous_norms": [
+    {
+      "m": 32,
+      "minus_squared_norm_exact_then_decimal": "3.701402707413481",
+      "plus_squared_norm_exact_then_decimal": "2.390485857526717"
+    },
+    {
+      "m": 33,
+      "minus_squared_norm_exact_then_decimal": "3.716128337710115",
+      "plus_squared_norm_exact_then_decimal": "2.391399274002171"
+    },
+    {
+      "m": 64,
+      "minus_squared_norm_exact_then_decimal": "3.731642871157386",
+      "plus_squared_norm_exact_then_decimal": "2.29990496023293"
+    },
+    {
+      "m": 65,
+      "minus_squared_norm_exact_then_decimal": "3.739014148585302",
+      "plus_squared_norm_exact_then_decimal": "2.300659551761518"
+    },
+    {
+      "m": 128,
+      "minus_squared_norm_exact_then_decimal": "3.743021013865303",
+      "plus_squared_norm_exact_then_decimal": "2.2385720232782"
+    },
+    {
+      "m": 129,
+      "minus_squared_norm_exact_then_decimal": "3.746266969718412",
+      "plus_squared_norm_exact_then_decimal": "2.2387514474677"
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 # MZ cleanup (certified indefiniteness witness, odd m, growth constants, manuscript integration): log
 
 - Branch: `codex/padua-mz-cleanup-20261105` · Base: main `21dbfc9` (PR #23 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Continue codex/padua-mz-cleanup-20261105.` · Open handoff: [handoffs/02-audit.md](handoffs/02-audit.md)
+- Stage: WORK (response) · Next: `Codex (gpt-6.1-sol, xhigh): Continue codex/padua-mz-cleanup-20261105.` · Open handoff: [handoffs/03-response.md](handoffs/03-response.md)
 - Reserved final-ID ranges: T376–391/N138–145/IDEA466–489, no LIT; first publication ee49035, draft PR26. No final assignments.
-- Claims: finite indefiniteness at1101/1240/1600, odd-parity completion and normalized one-sided bounds PROVED in development;23 finite observations MEASURED. Required Claude audit pending.
+- Claims: finite indefiniteness at1101/1240/1600, odd-parity completion and normalized one-sided bounds PROVED in development;23 finite observations MEASURED. Claude audit-01: no correctness issue, findings await response-01.
 - Open for AC: none. The sandbox compute allowance in handoff 01 (4 h wall per run, about 24 h cumulative CPU) is approved by AC (2026-11-05). Ask AC before using any machine outside the sandbox.
 
 ## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
@@ -51,3 +51,12 @@
 - Final verified local supplement44,618,351B, SHA256257fa21a83b5bb74b93483e371efcc87cf5e0ac965bb32fab2ddfadd808bc338, supplements the159,265,962B witness package. Delivery remains pending. Shared-record literal old blocks reverified against main aff30e8. No shared registries/final IDs edited, no merge performed.
 - Current small evidence inventory generated and verified; scientific receipt/source identities, local links, code syntax and diff checks passed. Exact commands/results are in report, attempt records, inventories and receipts.
 - Development handoff01 completes in the output commit; [handoff02](handoffs/02-audit.md) requests Claude Opus5.5 xhigh audit of that exact candidate. Final-ID/shared-record preparation follows only after audit.
+
+## 2026-11-05 — Claude, claude-opus-5-5 (configured; xhigh requested, effort not exposed) — audit 01
+
+- Rules read at 902360d26edabc348d1a2b687f3ea44bb33f28e9 (unchanged). Fetched main aff30e8 (an ancestor of the head) and topic 902360d; candidate 10898ad. Role: independent auditor and orchestrator for handoff 02.
+- [audit-01](audit-01.md): no correctness finding, so no status change. 12 minor and 14 editorial findings, which set WORK.
+- C1 was regenerated here with new witnesses: both paths strict negative at 1101/1240/1600, inside the stated brackets. The kernel convention matches the moment equations for m≤13; a third float path is MEASURED.
+- Original large artifacts are absent here and not claimed retrieved. Auditor receipts and code are in `audit-support/`.
+- C2/C3/novelty/manuscript/inventory checks were run by Claude Opus subagents, spot-checked by the orchestrator. Their scripts are in `audit-support/sub-*`.
+- Sandbox only, about 1 CPU hour. No shared registry or final ID touched.

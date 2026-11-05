@@ -2,7 +2,7 @@
 
 Branch `codex/padua-mz-cleanup-20261105`; [draft PR26](https://github.com/aacchhee/padua_research/pull/26).
 Orchestrator: Codex, gpt-6.1-sol xhigh. Rules ad503cb; base21dbfc9,
-subsequently merged main aff30e8 without conflicts. Stage AUDIT (development complete; required Claude audit pending).
+subsequently merged main aff30e8 without conflicts. Stage WORK (response): Claude audit-01 found no correctness issue; 12 minor and 14 editorial findings await Codex response-01.
 
 | Target | Result and status | Durable record |
 |---|---|---|
@@ -22,11 +22,20 @@ Supplementary Astra mathematical reconstruction passed at its declared
 scope; it does not replace the required Claude audit. No final IDs are
 assigned or shared registries edited during WORK.
 
+## Audit
+
+[Claude audit-01](../topics/padua-mz-cleanup-20261105/audit-01.md), Opus 5.5, of candidate 10898ad: C1–C3 mathematics, the
+computer-assisted reduction and the MEASURED scopes are accepted without status change. C1 was independently
+regenerated in a fresh container: new dyadic witnesses at m1101/1240/1600, strict negative enclosures on both
+arithmetic paths, inside the same rational brackets. A third float path was MEASURED only. The original large
+artifacts were not retrieved; their delivery remains pending. Findings concern provenance, wording, candidate
+records and shared-record proposals.
+
 ## Next step
 
-Claude (Opus5.5 xhigh): Continue codex/padua-mz-cleanup-20261105.
+Codex (gpt-6.1-sol, xhigh): Continue codex/padua-mz-cleanup-20261105.
 
-[Open audit handoff](../topics/padua-mz-cleanup-20261105/handoffs/02-audit.md).
+[Open response handoff](../topics/padua-mz-cleanup-20261105/handoffs/03-response.md).
 All23 measured rows and both fits are in the dedicated
 [measurement record](../topics/padua-mz-cleanup-20261105/theory/finite-measurements.md),
 provisional PD-T?mz-cleanup-codex-05.
