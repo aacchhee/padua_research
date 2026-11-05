@@ -1,6 +1,6 @@
 # Handoff 02 — resolve G0 before resuming Lanczos frontier
 
-- Status: open
+- Status: done in aab7bbe97899b0216d60a015c1a0d2cb2d7cbd99
 - Previous handoff: [01-work.md](01-work.md), stopped at its mandatory G0 kill; L1–L7 remain unfinished.
 - Next agent / model / effort: Codex, gpt-6.1-sol xhigh for numerical reasoning; gpt-6.1-sol medium for technical diagnostics; supplementary independent replay gpt-6-astra high. Required later scientific/protocol audit: Claude Opus 5.5 xhigh, still pending.
 - Role: orchestrator/developer; only orchestrator mutates Git.
