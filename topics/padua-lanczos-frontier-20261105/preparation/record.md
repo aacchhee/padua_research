@@ -58,3 +58,27 @@ Astra preparation check identified stale target-only OPEN/PARTIAL statements in 
 Root's applied registration checker passes all28 literal pairs and exact five-file reconstruction after the guarded metadata refresh. The refresh preserved the original merged base/map and every unaffected output, archived the original receipt identity, and changed only PD-T140's audit-stage attribution and visible L1/L2 companion links. [Supplementary check](independent-check.md) independently resolves its two findings; it remains supplementary to Claude preparation audit.
 
 Executed packaging checks pass129 immutable audit/handoff files,3 hard-frozen theorem/contract SHA256 pins,263 unchanged scientific code/evidence/specification files,62 Python ASTs,138 topic JSON files (maximum15773bytes),165 newly introduced rendered local links, and three additive inherited source prefixes. Conservative repository-wide JSON total4678954bytes/968files. No science rerun. Final integration/inventory checks follow this checkpoint and are recorded below once executed.
+
+## Executed integration rehearsal — 2026-11-05
+
+Root pushed checked preparation checkpoint `e5fbd85d06f806213c14d4cdfd18b525ef57e79f`, then executed:
+
+```sh
+python -B topics/padua-lanczos-frontier-20261105/preparation/rehearse_integration.py --base b4d292eea5eed373002506d5e16a3761bd7ae10e --head e5fbd85d06f806213c14d4cdfd18b525ef57e79f --output /tmp/padua-lanczos-frontier-preparation/squash-rehearsal-e5fbd85.json
+```
+
+**PASS.** The disposable branch starts at current integrated main; `git merge --squash --no-commit` has no conflicts and produces exactly candidate tree `0080469a8eea68e6a3ea9d35e291dd03f5a88423`. Root branch/HEAD, staged and unstaged diffs, status and main refs are unchanged; absent local main remains absent. The owned disposable worktree/branch are removed. [Complete compact receipt](integration-receipt.json) is8475bytes and records every executed Git command. An earlier short-SHA invocation was rejected before mutation by the helper's full-SHA guard; only the successful full-SHA invocation is this PASS.
+
+No multi-PR prepared registry sequence is invented: peerPR27 has no diff in the five shared application files against main at either the preassignment pin or latest checked head. PR25/21/26 are already integrated. Only AC may perform an actual squash merge.
+
+### Post-checkpoint live reservation impact
+
+Read-only Git refs and all-state GitHub population refresh still show26 PRs, open drafts24/27,24 closed merged and no closed-unmerged PR. Main remainsb4d292e and remote own checkpoint is e5fbd85. PR27 advanced to `714f3cad18859c07cd13f31561f2a185f9591a7f`; root fetched it and compared the full path set and bytes of all15 ledger/registry files to prior95366c1. All are identical, so the preassignment57-copy union and maximaT431/N161/IDEA529/LIT613 remain valid for the unchanged reservations. [Exact peer impact receipt](peer-head-recheck.json) preserves full file identities. The original scanner/population receipt remains pinned to the actual preassignment snapshot rather than rewriting history after own assignments.
+
+This result is preparation evidence, not readiness. Claude must refresh live main/reservations before its readiness decision and audit the final output against checkpoint e5fbd85; only publication/report/storage/integration metadata follows the supplementary semantic review. No scientific source, proof, criterion, final map or applied registry output changes after that review.
+
+## Final publication scope and verification
+
+Final packaging check passes129 immutable audit/old-handoff files,263 unchanged scientific files,three frozen theorem/contract pins,63 Python ASTs,140 topic JSON files (maximum15773bytes; all<16KiB),171 introduced rendered local links and three append-only inherited source prefixes. Conservative repository-wide JSON total is4690920bytes across970files. These are mechanical checks, not science reruns or replacement audits.
+
+The final helper adds a complete external log-file inventory and compact identity to its receipt. Its tree comparison/ownership/cleanup behavior is unchanged. The final exact-output squash command executes after the output commit exists and is recorded in handoff11 alongside the exact input/output/tree and log-inventory identities. Final staged manifest verification and whitespace checks run before committing outputs. PR24's WORK/AUDIT/PR body is then updated to this preparation, final IDs, accurate AC acceptance and explicit pending Claude audit; it stays draft. Handoff10 closes only after outputs are committed, in a separate two-file handoff publication.

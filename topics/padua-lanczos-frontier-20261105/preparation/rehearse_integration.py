@@ -83,6 +83,28 @@ def main():
             data[name + "_sha256"] = hashlib.sha256(value.encode("utf-8", "surrogateescape")).hexdigest()
         return data
 
+    def inventory_logs():
+        # Freeze only after the final Git/snapshot command. The index identifies
+        # itself through the receipt, avoiding an impossible self-hash entry.
+        index_path = logs / "file-inventory.json"
+        files = []
+        for path in sorted(logs.iterdir()):
+            if path == index_path:
+                continue
+            require(path.is_file() and not path.is_symlink(), "Unexpected log entry: " + str(path))
+            content = path.read_bytes()
+            files.append({"filename": path.relative_to(logs).as_posix(),
+                          "bytes": len(content), "sha256": hashlib.sha256(content).hexdigest()})
+        index = {"schema": 1, "scope": "All files in this log directory except this inventory",
+                 "count": len(files), "files": files}
+        content = (json.dumps(index, separators=(",", ":")) + "\n").encode()
+        index_path.write_bytes(content)
+        return {"path": str(index_path), "bytes": len(content),
+                "sha256": hashlib.sha256(content).hexdigest(), "count": len(files),
+                "retention": "Local temporary files; no archival or lifetime guarantee. "
+                             "Regenerate by rerunning this helper at the recorded base/head; "
+                             "unique paths and resulting log bytes may differ."}
+
     before = None
     branch_owned = False
     wt_owned = False
@@ -150,11 +172,13 @@ def main():
         require(not worktree.exists(), "Disposable worktree remains")
         require(not git(root, "rev-parse", "--verify", "--quiet", "refs/heads/" + branch,
                         allowed=(0, 1)), "Disposable branch remains")
+        log_inventory = inventory_logs()
         receipt = {"result": "PASS", "base": args.base, "head": args.head,
                    "base_tree": base_tree, "head_tree": head_tree, "squash_tree": tree,
                    "base_is_ancestor": True, "root_before": before, "root_after": after,
                    "root_unchanged": True, "cleanup": "PASS", "disposable_branch": branch,
                    "disposable_worktree": str(worktree), "logs": str(logs), "commands": commands,
+                   "log_inventory": log_inventory,
                    "scope": "Mechanical squash/tree equivalence only; no scientific validation"}
         payload = (json.dumps(receipt, separators=(",", ":")) + "\n").encode()
         require(len(payload) < 16384, "Receipt exceeds 16 KiB")
@@ -167,6 +191,7 @@ def main():
         failure = {"result": "FAIL", "error": error, "validation_error": str(exc),
                    "cleanup_errors": cleanup_errors, "commands": commands}
         (logs / "failure.json").write_text(json.dumps(failure, indent=2) + "\n")
+        inventory_logs()
         print(f"FAIL: {exc}; raw logs and failure.json: {logs}", file=sys.stderr)
         return 1
 
