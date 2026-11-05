@@ -21,3 +21,20 @@ No results yet.
 ## Next step
 
 `Codex (gpt-6-astra high): Continue codex/padua-argmax-bridge-20261105.`
+
+## 2026-11-05 development checkpoint
+
+B0 PASS: fresh native n24 regeneration and separate checker replays of both
+regenerated/committed certificates agree exactly; the n32 floating pilot
+reproduces all deterministic counts and its unresolved902-box frontier.
+[Replay record](../topics/padua-argmax-bridge-20261105/independent-checks-b0.md).
+
+B1 **MEASURED diagnostics**: seven-degree finite map,33/48/64/96/128/192/256,
+with all admissible noncorner centers at161 near phases per degree. The expanded
+small-phase grid recovers positive primitive excess at128/256. Continuous
+region extrema and tiny-shell signs remain unresolved.
+[Margin anatomy](../topics/padua-argmax-bridge-20261105/margin-anatomy.md).
+
+N1–N6 first rounds are running in parallel; [draft PR27](https://github.com/aacchhee/padua_research/pull/27).
+No new degree or effective onset is claimed at this checkpoint. PD-T099 stays
+OPEN and the inherited certified global range stays2–32.

@@ -6,7 +6,7 @@ An operational clarification is recorded separately rather than editing them.
 | Gate | Current verdict | Evidence / remaining obligation |
 |---|---|---|
 | B0 | PASS | [Fresh replay](independent-checks-b0.md): both n24 certificates accepted/exact; all n32 pilot deterministic counts match; later prose-pin changes traced to frozen originals |
-| B1 | RUNNING | [Margin anatomy](margin-anatomy.md); finite floating map only |
+| B1 | FINITE MAP COMPLETE; CONTINUOUS EXTREMA OPEN | [Margin anatomy](margin-anatomy.md), seven degrees; no pass/kill attached to B1 |
 | B2 | NOT RUN | Complete n64 float cover within 10 CPU-min; complete n33/64/128 box counts required |
 | B3 | NOT RUN | Profile and proved remainder must precede fits; compare with B1 budgets |
 | B4 | BLOCKED ON INPUTS | No proved explicit analytic n1 or measured new-certifier throughput yet |
