@@ -155,3 +155,18 @@ proof already reviewed. No degree16 run has been launched by this worker.
 The existing original scalar3600jobs remain unchanged. Full16 reuse may be
 scheduled only by the coordinator after reviewing these actual timings and
 the distinct code/finite checks; success at8 does not certify16 rows.
+
+## Dated full16 closure — 2026-11-05
+
+After distinct proof/code/pilot acceptance, the coordinator's separate
+D36x9 degree16 execution completed the missing ALT/PIVOT checks with this
+frozen source. Final all-four-rule coverage is60 degree2–16 row pairs: the
+original full-node scalar is retained for BJ/mirror, while ALT/PIVOT use
+reviewed reflection reuse with every source and all324node contributions.
+The [recovered acceptance](evidence/p6-disk16-recovered-acceptance.json)
+validates all nonelapsed fields and guards without a native rerun; prior
+interrupted/timeout/cancellation receipts remain unchanged. Timing and
+resumption limits are recorded once in [P6](attempts/P6.md). The resulting
+finite [N2 screen](theory/p6-n2-screen.md) is INCONCLUSIVE, with no growth
+claim or D65full16 promotion. This addendum describes subsequent coordinator
+execution, not a full16 launch by the original implementation worker.

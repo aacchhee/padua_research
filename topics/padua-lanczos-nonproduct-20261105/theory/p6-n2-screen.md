@@ -6,8 +6,8 @@ Split into: none.
 
 ## Statement
 
-Under the coordinator's unchanged preregistered N2 convention, both the
-inherited uniform T24 scan and the fresh H24_222 scan give **INCONCLUSIVE**
+Under the coordinator's unchanged preregistered N2 convention, the
+inherited uniform T24 scan and fresh H24_222/D36x9 scans give **INCONCLUSIVE**
 finite interval screens. The deterministic least-squares slopes of
 log(kappa_BJ/min_R kappa_R) against degree, with R ranging over BJ,mirror,
 alternating,pivot, have the following certified enclosures from the computed
@@ -17,10 +17,11 @@ capacity endpoint intervals:
 |---|---|---|---|
 | T24 / inherited PD-T338 | [.1373737422163122,1.8023568778512298] | [-.2164776234101806,1.8228133707405016] | INCONCLUSIVE |
 | H24_222 / fresh complete two-path2–16 | [.05530690191334968,1.5395035055842174] | [-.22020241645825334,1.651201929678248] | INCONCLUSIVE |
+| D36x9 / recovered complete two-path2–16 | [-.5078482361392485,1.061047505157413] | [-.8873729787426399,1.1624637722167357] | INCONCLUSIVE |
 
 Displayed decimals are approximate summaries; exact rational outward bounds
-in the receipts are authoritative. Neither family passes both lower slopes
->.1; neither has both upper slopes<.02. INCONCLUSIVE is not a family
+in the receipts are authoritative. No family passes both lower slopes
+>.1 or has both upper slopes<.02. INCONCLUSIVE is not a family
 rejection, an asymptotic result or a polynomial-bound proof.
 
 ## Definitions
@@ -45,12 +46,12 @@ Overall status: MEASURED.
 
 | Part | Status | Evidence |
 |---|---|---|
-| Two finite INCONCLUSIVE screen outcomes | MEASURED | Exact receipts and separate arithmetic algorithms |
+| Three finite INCONCLUSIVE screen outcomes | MEASURED | Exact receipts and separate arithmetic algorithms |
 
 ## Depends on
 
 P6-01 fresh weighted endpoint rows, inherited accepted PD-T338 T24 compact
-log-enclosure evidence, P1 admission and P4-02. The new screen differs from
+log-enclosure evidence, P1/P2 admissions and P4-02. The new screen differs from
 the historical PD-T338 universal interval kill predicate; no old verdict
 is rewritten.
 
@@ -62,7 +63,7 @@ agree exactly. Logarithm enclosures are inherited, not freshly recomputed.
 The source compact input has SHA256
 `2c99758edf1888f2cdd8a0fcd7563512a1466407bb6659f630d7838abad37f38`.
 
-H24: the complete two-path scan receipt and all pinned raw endpoint outputs
+H24 and D36: the complete two-path scan receipts and all pinned raw endpoint outputs
 are checked before logarithms. The unchanged accepted predecessor
 `g1_fit.logq` and `g1_fit_independent.logq` independently compute outward
 128-bit rational logarithms. Signed Fraction OLS and32-corner enumeration
@@ -78,6 +79,12 @@ No external source/priority claim. Frozen convention: `../plan.md` and
 - `../code/p6_n2_compact.py`, `../evidence/p6-n2-inherited-T24.json`.
 - `../code/p6_n2_exact.py`, `../evidence/p6-n2-H24_222.json`.
 - Raw H24 provenance: `../evidence/p6-full16-H24_222.json`.
+- D36: `../evidence/p6-n2-D36x9.json`, using complete
+  `../evidence/p6-disk16-recovered-acceptance.json`.
+- Compact endpoint-log tables: `../evidence/p6-log-endpoints-H24_222.json`
+  and `../evidence/p6-log-endpoints-D36x9.json`; standalone integer replay
+  receipts `../evidence/p6-compact-n2-H24_222.json` and
+  `../evidence/p6-compact-n2-D36x9.json`.
 
 The receipts contain exact commands, source/input/output hashes, precision,
 comparator set and exact rational window enclosures. No prose hash is pinned
@@ -92,8 +99,8 @@ continuous-simplex transfer or every selection's stability.
 
 ## Open items
 
-Disk16 scan and N2 screen; any useful tightening of broad capacity intervals;
-distinct-agent reruns/audit. No new scan is required merely to duplicate the
+Any useful tightening of broad capacity intervals; cross-family substantive
+audit. D65x9 lacks a complete all-four-rule high window and has no N2 claim. No new scan is required merely to duplicate the
 inherited T24 evidence.
 
 ## History
@@ -101,3 +108,23 @@ inherited T24 evidence.
 2026-11-05, Codex technical developer, requested gpt-6.1-sol medium; serving
 metadata not independently exposed. New-plan conventions and family
 admission preceded execution. Full degree windows were checked before fits.
+
+### Round6 completion and compact replay
+
+Only after all60 D36 degree2–16/four-rule rows matched, the resumed worker
+actually ran the unchanged rational-log/two-path OLS program on the recovered
+acceptance receipt. Both signed slope intervals overlap the unresolved
+threshold region, giving INCONCLUSIVE under exactly the frozen strict
+>.1 / <.02 convention. Original scalar BJ/mirror and reviewed reflection
+ALT/PIVOT remain individually identified in P6-01 and the receipt chain;
+there is no source model or rate redefinition.
+
+For both H24_222 and D36x9, compact tables enclose all120 endpoint logs
+(two per60 rows) using floor/ceiling at scale10^15 after two128-bit exact
+rational log algorithms. The independent standalone integer replay checks
+all32 OLS corners per window, contains the higher-precision original slope
+intervals and reproduces INCONCLUSIVE. These committed tables support
+interval-to-N2 replay without raw native outputs; regenerating or verifying
+the underlying exact endpoints/log generation still requires the pinned raw
+files or a full exact rerun. No true-capacity equality or asymptotic growth
+conclusion follows from any finite screen.

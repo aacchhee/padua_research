@@ -11,7 +11,7 @@ progress stop that direction.
 | P3 perturbed SH | 2 | Round 2: unchanged exponential BJ / polynomial mirror inequalities and uniform eta certificate proved analytically |
 | P4 structural criterion | 4 | Round 4: sign-reflection endpoint-energy reuse proved and distinctly reviewed; general growth criterion OPEN |
 | P5 Padua | 1 | Round 1 complete: nonproduct admission and two-sided polynomial BJ/mirror bounds proved; exact supplementary checks pass |
-| P6 exact scans | 5 | Round 5: bounded inverse-checker cost attempts fail; reflection method passes developer/distinct8-pilots. Round 6: missing disk16 validations |
+| P6 exact scans | 6 | Round 6: all60 D36 degree2–16 rows matched; N2 INCONCLUSIVE; compact evidence and supplementary completion checks |
 
 ## Round outcomes
 
@@ -87,3 +87,10 @@ progress stop that direction.
   sign-similarity corollary. All324 nodes/normal diagonals and all source
   contributions remain in the endpoints; only equal scalar energies are
   reused. Distinct proof review precedes every reduced experiment.
+
+- P6 round 6: original scalar BJ/mirror and reviewed reflection alt/pivot
+  complete all60 D36 degree2–16 comparisons. The unchanged N2 screen is
+  INCONCLUSIVE. A separate artifact-only recovery preserves the interrupted
+  collector, unavailable pivot collector wall time and original raw guards.
+  Compact Hahn/D36 tables support exact repository-only screen replay;
+  distinct high replay and final inventory are recorded in their own receipts.

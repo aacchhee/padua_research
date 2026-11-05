@@ -21,7 +21,7 @@
 
 ## Runs needed
 
-- Current development remainder: collect the already-running D36x9 degree16 reflection checks and their separately launched supplementary replay, then close N2 and the evidence inventory. Unrun algebraic bulk scans and unresolved rates are listed in the [report](report.md); they are not premises of the analytic proofs.
+- Current development remainder: finish the separately launched D36x9 supplementary replay and evidence inventory; primary disk16 acceptance and N2 are complete. Unrun algebraic bulk scans and unresolved rates are listed in the [report](report.md); they are not premises of the analytic proofs.
 
 ## 2026-11-05 — continuation setup — Codex, requested gpt-6-astra high
 
@@ -303,3 +303,21 @@ reported zero tracked candidate files and zero bytes at its16,384-byte
 threshold. This is a planning result, not external delivery or archive
 verification. Raw arrays stay in local working storage with availability
 recorded by the final inventory.
+
+## 2026-11-05 — D36 full acceptance and N2 closure
+
+- All60 D36x9 four-rule degree2–16 rows now match exactly, including Gram
+  counts. BJ/mirror use original scalar GMP checks (1883.13/1980.34s);
+  alternating/pivot use reviewed reflection GMP. Alternating collector wall
+  time is1611.67s; pivot's retained native rounded elapsed is1172.1s, with
+  its collector wall time unavailable. All reflection guards pass.
+- The original collector saved seven cases and remains INCOMPLETE. Its
+  precise interruption cause is unknown; an earlier output-stream hypothesis
+  is not established. A separate artifact-only recovery validates the full
+  retained pivot rows/guards without rerunning native code. Distinct focused
+  review accepts that recovery and all60 comparisons.
+- D36 N2 is INCONCLUSIVE: slope boxes are approximately
+  [-.50785,1.06105] on8–12 and[-.88738,1.16247] on12–16. Both rational
+  logarithm paths and32-corner OLS agree. No family rate follows.
+- P6 round6 closes the planned finite completion step; unrun SH/Padua bulk
+  scans remain outside the analytic theorem premises.

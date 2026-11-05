@@ -37,9 +37,9 @@ audit follows development. No shared registry or final allocation changed.
   degrees2–4 agree between two arithmetic implementations. This is one
   worker's execution, with distinct-agent checking separate.
   [Finite record](../topics/padua-lanczos-nonproduct-20261105/theory/p6-finite-scans.md).
-- **MEASURED:** fresh reweighted-triangle H24_222 scan has60 matched exact
-  rows through16. Its N2 interval screen and the inherited T24 reanalysis
-  are both INCONCLUSIVE; disk8 is matched and disk16 remains in progress.
+- **MEASURED:** H24_222 and D36x9 each have60 matched exact rows through16.
+  Their N2 screens and the inherited T24 reanalysis are INCONCLUSIVE; D65 has degree8 pilots and an incomplete
+  degree12 cost probe.
   [Screens](../topics/padua-lanczos-nonproduct-20261105/theory/p6-n2-screen.md).
 
 - **PROVED, all-degree separation:** an explicit n-dependent rank-two
@@ -62,7 +62,8 @@ recursion attempts redirected to P4. Scope and chronology limitations are
 retained in the theory records and topic log. Distinct supplementary checks
 accept the P3/P4/P5 proofs and terminal-block corollary, and reproduce the
 completed Hahn16/disk8 finite evidence without unresolved findings. The
-required Claude audit and disk16 completion check have not yet occurred.
+required Claude substantive audit remains pending; final scan-review coverage
+is recorded in the dated supplementary review.
 
 ## Next step
 

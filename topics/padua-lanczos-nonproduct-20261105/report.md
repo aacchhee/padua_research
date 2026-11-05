@@ -98,7 +98,7 @@ all-degree BJ/best ratio iff. A useful general growth criterion remains OPEN.
 |---|---|---|
 | N0 | PASS | Fresh exact predecessor replay: six SH cases,88 symbolic identities,44 native prefix rows |
 | N1 | PASS in recorded scopes | Triangle, rational ring grid, SH reweighting and unsaturated Padua have written admission/injectivity proofs |
-| N2 | T24/H24 INCONCLUSIVE; disk in progress | Finite interval screens do not establish or refute an asymptotic rate |
+| N2 | T24/H24/D36 INCONCLUSIVE | Finite interval screens do not establish or refute an asymptotic rate |
 | N3 | P1/P2 redirect to P4 | No bounded-order full-capacity recursion obtained through8; not a nonexistence theorem |
 | N4 | PASS analytically | Uniform sufficient eta_0=1/2; not a numerical scan or optimal radius |
 
@@ -154,14 +154,15 @@ complete scan. H24_222 uses normalized rational weights proportional to
 |---|---|---|
 | Uniform T24 | inherited2–20; fresh pilots/replay | INCONCLUSIVE |
 | H24_222 | fresh2–16, four rules,60 exact rows | INCONCLUSIVE |
-| D36x9 | fresh2–8, four rules,28 exact rows;16 running | No completed16-window verdict |
+| D36x9 | fresh2–16, four rules,60 exact matched rows | INCONCLUSIVE |
 | D65x9 | fresh2–8 pilot, four rules,28 exact rows; cost12 checker timed out | No completed16-window verdict |
 | SH reweighting | analytic all-degree proof; no bulk algebraic scan | UNRUN |
 | Positive Padua | analytic all-degree bounds; algebraic m2–5 checks | UNRUN |
 
 T24 slope intervals on8–12 and12–16 are approximately
 [.1374,1.8024] and[-.2165,1.8228]; H24 intervals are
-[.0553,1.5395] and[-.2202,1.6512]. Exact outward rational receipts are
+[.0553,1.5395] and[-.2202,1.6512]. D36x9 intervals are
+[-.5078,1.0611] and[-.8874,1.1625]. Exact outward rational receipts are
 authoritative. Independent signed-OLS/corner calculations agree. These
 screens are inconclusive because of interval uncertainty, not because a
 true rate was computed and rejected.
@@ -173,8 +174,7 @@ and28 disk row pairs, independently reconstructs12 small cases with Fraction
 arithmetic, verifies the two N2 outcomes and exercises malformed controls.
 These supplement the required subsequent Claude substantive audit.
 The mathematical review also accepts the P1/P2 admission and covariance
-proofs in its dated additions. Registry readiness and pending disk16
-additions remain outside completed review scopes unless explicitly added.
+proofs in its dated additions. Registry readiness remains outside these supplementary review scopes.
 
 The bounded generic/block inverse-checker performance attempts are retained
 in [FLINT notes](flint-check-notes.md); no degree16 result used them.
@@ -184,8 +184,22 @@ over all324 original node/normal contributions. It retains every source
 position and full basis/Gram calculation. Distinct proof review preceded
 experiments; a fresh distinct56-row pilot matches all nonelapsed fields.
 It is a new dated method variant, not a silent change to earlier plans.
-Any subsequent full16 completion must explicitly identify this checker and
-its guards before a disk N2 verdict is reported.
+The completed disk16 acceptance uses the original scalar checker for
+BJ/mirror and this reflection checker for alternating/pivot, with per-case
+source identities. All60 rows match the common-denominator producer, including
+Gram counts. Both reflection cases retain152 sources,99,144 parity checks
+and307,800 expanded node/source snapshots. The interrupted seven-case
+collector remains INCOMPLETE; a separately reviewed artifact-only recovery
+record validates the retained complete pivot output. Its collector wall time
+is unavailable and the interruption's cause is not established. No native
+case was restarted or inferred from a partial output.
+
+Compact committed endpoint-log tables for Hahn and D36 retain outward bounds
+for every degree/rule row; standalone exact OLS replay needs only those tables.
+Raw rational arrays remain local working artifacts. The final inventory and
+[COLD_STORAGE.md](COLD_STORAGE.md) record identity, availability and regeneration;
+external archival delivery is pending. The [aggregate evidence-size observation](LOG.md#canonical-storage-budget-observation)
+is a separate audit issue.
 
 ## Remaining scope and paper consequence
 

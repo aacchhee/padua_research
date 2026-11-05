@@ -12,8 +12,9 @@ measures, exact all-source aggregate capacity endpoint rows for each degree
 were computed by two rational arithmetic paths and match exactly (36 rows).
 The four endpoints are the rational squared L,H,Urow,U bounds of P4-02.
 They bound the spectral-normal-output capacity; no endpoint equality with
-that capacity is asserted. This is finite **MEASURED** evidence and does
-not establish an asymptotic growth law or a complete N2 window.
+that capacity is asserted. The completed extensions below also cover every
+degree2–16 and all four rules for H24_222 and D36x9 (60 matched rows per
+family). This is finite **MEASURED** evidence, without an asymptotic law.
 
 ## Definitions
 
@@ -37,6 +38,8 @@ Overall status: MEASURED.
 | Part | Status | Evidence |
 |---|---|---|
 | All36 finite pilot rows and two-path exact equality | MEASURED | Three compact receipts linked below |
+| H24_222 and D36x9, all60 rows per family through16 | MEASURED | Full scan/recovered acceptance receipts below |
+| Distinct D65x9 degree2–8 four-rule pilot,28 matched rows | MEASURED | p6-pilot8-D65x9.json |
 
 ## Depends on
 
@@ -98,8 +101,9 @@ source/projector model, as P4-02 states explicitly.
 
 ## Open items
 
-Admitted H24_222 and D36x9 complete degree2–16 scans under the prospective
-600-second case cap; separate N2 interval reanalysis; distinct-agent checks.
+Cross-family substantive audit and archival delivery of large raw outputs.
+H24_222 and D36x9 degree2–16 coverage is complete under the recorded original
+and separately preregistered successor caps; N2 is recorded separately.
 Further perturbed-SH/Padua exact grids remain unscanned pending viable specs.
 
 ## History
@@ -117,5 +121,50 @@ remains MEASURED. Actual cap600seconds/case; max producer3.231s/checker10.195s.
 `../evidence/p6-full16-H24_222.json` pins every command, input/source and
 output identity. Degree8 cost benchmarks for H24_222/D36x9 also matched all
 28 rows per family, with evidence `p6-benchmark8-*.json`. These finite
-completions do not broaden the underlying model or imply a rate. Disk16
-is running, explicitly not yet included in complete coverage.
+completions do not broaden the underlying model or imply a rate. The later
+D36 completion is recorded in the dated addendum below.
+
+### Round6 completion — D36x9 and bounded D65x9 scope
+
+D36x9 now has every degree2–16, all four rules and every original source
+matched exactly:60 producer/checker row pairs, including all nonelapsed
+fields, choices/ties and full Gram counts. Final accepted evidence is
+`../evidence/p6-disk16-recovered-acceptance.json`. The producer is the
+original full-node common-denominator GMP code. BJ/mirror use completed
+original full-node scalar GMP checks (1883.126099577/1980.343642943seconds);
+ALT/PIVOT use the reviewed scalar reflection implementation, SHA256
+`09d524f915076105b04fb196ee98c6c6cd4cecbc6b6e49bcfacb541ffc999088`.
+ALT's saved harness wall time is1611.668965790seconds. PIVOT's native
+timer reports approximately1172.1seconds before final JSON emission; its
+harness wall time was not saved and is not reconstructed. Both native
+outputs retain completed phase logs, all152 source positions and all15
+prefix rows. The separately admitted reflection method retains324 original
+nodes,90 verified representatives,99144 exact basis parity checks and
+307800 expanded original-node/source snapshots per rule. Full-node normal
+diagonals, all-source budgets and all endpoint formulas are unchanged.
+
+The original reflection parent closed after saving ALT, leaving its own
+seven-case receipt INCOMPLETE. The artifact-only recovery adapter validates
+retained PIVOT output/guards and all60 full-field pairs without any native
+rerun. It preserves that interrupted receipt's bytes and hash, the full
+per-case source catalog and earlier resource receipts. The exact parent
+exception is unavailable; no cause is asserted. Original600second failures
+and cancelled scalar cases remain separately INCOMPLETE, with actual masks
+and timings in their original receipts. Canonical resumption chronology is
+in `../attempts/P6.md`.
+
+D65x9 remains a distinct measure: its degree2–8 four-rule pilot has28 matched
+rows. Its ALT-only degree12 producer completed32.901309618seconds, but the
+scalar check timed out120.002498008seconds with zero emitted endpoint rows.
+That paired cost probe remains INCOMPLETE; no D65 full16 or N2 is claimed.
+The bounded generic/block FLINT attempts and scalar optimization failures
+remain retained cost outcomes, with small exact successes and no promoted
+high-degree result; see `../flint-check-notes.md` and `../p6-speed-notes.md`.
+
+H24_222/D36x9 compact outward-log tables preserve all60 completed rows and
+all eight source/output identities per family. Each is below16KiB and uses
+fixed10^15 outward rounding after two exact rational log routines. The
+standalone integer N2 replay needs only these tables. Rechecking their log
+generation still requires the pinned raw exact rows or regenerating them;
+large artifacts remain temporary, with archival delivery pending. This is
+MEASURED finite evidence, not a complete computer proof of any growth law.
