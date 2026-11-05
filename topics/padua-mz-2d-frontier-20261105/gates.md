@@ -21,8 +21,9 @@ well below the original2h sandbox limit. A different worker independently
 reconstructed every m60 pencil entry with Fraction/repeated-reflection
 aliases and accepted fresh integer congruences at all four endpoints in
 232.594s. Thus m60 is a new independently replayed finite computer-assisted
-claim. m80 development acceptance completed in302.437s; its independent
-replay is running. m100 producer is running. Contiguous2..60 development
+claim. m80 development acceptance completed in302.437s; independent replay
+accepted all10499200 matrix entries and2624000 offblock zeros in569.136s.
+No m100 acceptance is claimed; its costly incomplete producer was stopped. Contiguous2..60 development
 acceptance is tracked separately and is not automatically an independently
 replayed all-integer extension. See certifier-results.md,
 independent-checks-cert.md and theory/cert-finite-extension.md.
@@ -49,10 +50,22 @@ at most6.48e-11. See numerical-results.md and evidence/g1-localization.json.
 Continuous L2 angular corner/edge definitions and quadrature were frozen
 before profiles; the original criterion is preserved in handoff01.
 
-## G4 — PLANNED
+## G4 — 2026-11-05 — PARTIAL finite screen; analytic alternative
 
-Complete scan every integer m2..300, n=m−1/m−2 planned; actual coverage
-will be stated separately. Any float hit requires exact acceptance.
+Float coverage is every integer m2..239 at n=m−1 andm−2 (476 rows),
+no threshold hit, maximum residual3.70e−11. The requested240..300
+portion was not run. Exact development acceptance covers every integer
+2..60 plus80; independent acceptance specifically10/20/30/40/60/80.
+There is no complete independently certified2..80 range.
+
+Dated pivot: the analytic carrier proofs refute the universal assertions
+without a positive asymptotic-plus-finite closure. Continuing that proposed
+finite complement is unnecessary; retain the actual finite scope rather
+than credit unrun cases. Posthoc minimum-onlym1600 gave−0.02341441659,
+residual1.95e−13, an uncertified MEASURED finite hit. No finite PD-N is
+claimed from it. The analytic countersequence is a separate theorem and
+does not identify its effective onset. See numerical-results.md and
+independent-checks-math.md.
 
 ## G5 — 2026-11-05 — NOT RUN; analytic resolution
 

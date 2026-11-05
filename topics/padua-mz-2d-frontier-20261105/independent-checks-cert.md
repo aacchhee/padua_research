@@ -106,6 +106,7 @@ performance comparison.
 | 30 | 465 | 54000 | 216450 | 28.772 |
 | 40 | 820 | 168000 | 672800 | 24.800 |
 | 60 | 1830 | 837000 | 3349800 | 232.594 |
+| 80 | 3240 | 2624000 | 10499200 | 569.136 |
 
 | Small receipt | Bytes | SHA-256 |
 | --- | --- | --- |
@@ -114,6 +115,7 @@ performance comparison.
 | independent-cert-m30.json | 4260 | `c69afa7dacb0712d8f120fb37459a6e62baf15dff83c3230e6d2ac8b3bbf16c3` |
 | independent-cert-m40.json | 4467 | `603124a88c8ca9f22534f4e46c7f553ef8d66d79e7563831911dd99319c3c0f3` |
 | independent-cert-m60.json | 4878 | `931f2c632943af1bd5d0772d3d7218f8883d08504c7c7bb2e949d616f4dcae23` |
+| independent-cert-m80.json | 5300 | `7b57e74e0e3e919a79262067427e35afa97a637d5d39e0cc17620c93e99cd5fe` |
 
 **PASS m60 independent certification.** The exact strict intervals are
 `(188593/1000000,188594/1000000)` and
@@ -129,9 +131,25 @@ claim-level integration remain the orchestrator's separate obligations.
 After m60 passed, the orchestrator requested m80 if cost remained reasonable.
 Observed m60 memory during execution was about 255 MiB; projected m80 cost
 was 10–25 minutes / roughly 0.6–1 GiB under shared load, reported before the
-run. This estimate is not an observed result. The following command has
-been started; m80 remains pending and is not independently certified yet:
+run. The observed completed wall time was 569.136 seconds (9.49 minutes).
+The memory estimate was low: sampled RSS reached approximately 2.1 GiB
+during the second block, because prior FLINT congruences coexist with the
+next Fraction reconstruction. This is a sampled observation, not a measured
+peak. Available sandbox memory was checked; the run stayed within its
+16 GiB limit. The following command completed with exit 0:
 
 ```sh
 PYTHONPATH=/tmp/padua-g0-deps OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-mz-2d-frontier-20261105/code/independent_cert.py --producer-receipt topics/padua-mz-2d-frontier-20261105/evidence/cert-m80.json --scratch /tmp/padua-independent-cert --output topics/padua-mz-2d-frontier-20261105/evidence/independent-cert-m80.json > /tmp/padua-independent-cert-m80.log 2>&1
 ```
+
+**PASS m80 independent certification.** All 2624000 offblock pairs were
+zero and all 10499200 H/Q entries matched the C producer as exact rationals.
+Fresh transforms in blocks of dimensions 1640 and 1600 passed exact
+strict-dominance acceptance at each endpoint. The summed negative counts
+were `(0,1,3239,3240)`, with no zero eigenvalues at the endpoints, proving
+the strict finite brackets `(0.172730,0.172731)` and
+`(1.816497,1.816498)` through PD-T107's existing reduction. No mismatch
+was observed. The independently checked degree set is exactly
+`{10,20,30,40,60,80}`; this is not an independent replay of every integer
+below 80. Required audit, registry claims and cold-storage integration
+remain separate. No m>100 computation was performed by this worker.
