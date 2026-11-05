@@ -23,10 +23,18 @@ No new certified range claimed yet.
 Candidate laws, grid, training/heldout division and winner rule were written
 in numerical-plan.md before m>100 execution. Fits are MEASURED only.
 
-## G3 — PRE-REGISTERED, RUNNING
+## G3 — 2026-11-05 — KILL original R1 localization
 
-Continuous L2 angular corner/edge regions, K2/5/10 and degree-sufficient
-Gauss integration with convergence check defined before profiles.
+At m400 the maximum eigenvector has K10 edge-union continuous L2 mass
+0.2934515682, below the original 50% kill threshold. This is a MEASURED
+route verdict, not a theorem excluding other limits. At m100/200 the
+upper fractions are0.44014/0.35776, so the90% pass criterion also fails.
+The minimum changes family: its m400 corner/edge fractions are
+0.77751/0.88134, unlike its diffuse m100/200 profiles. No asymptotic
+concentration statement follows. Gauss refinement changes fractions by
+at most6.48e-11. See numerical-results.md and evidence/g1-localization.json.
+Continuous L2 angular corner/edge definitions and quadrature were frozen
+before profiles; the original criterion is preserved in handoff01.
 
 ## G4 — PLANNED
 
