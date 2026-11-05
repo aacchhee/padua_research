@@ -1,7 +1,7 @@
 # Padua literature campaign (P1–P4): log
 
 - Branch: `claude/padua-literature-20261103` · Base: main `440d107` · Developer: Claude · Auditor: Codex (gpt-6-astra high)
-- Stage: AUDIT · Next: `Codex (gpt-6-astra high): Continue claude/padua-literature-20261103.` · Open handoff: [handoffs/08-audit.md](handoffs/08-audit.md)
+- Stage: WORK · Next: `Claude (Opus 5.5 high): Continue claude/padua-literature-20261103.` · Next handoff: [handoffs/09-response.md](handoffs/09-response.md)
 - Reserved final-ID ranges: LIT-482–561 (80); no PD-T, PD-N or IDEA range. See [ALLOCATIONS.md](ALLOCATIONS.md).
 - Claims: none (literature topic). Note: [SINUM 2026 assessment](notes/faghih-sinum-2026-assessment.md).
 - Open for AC: the remaining PDFs in DOWNLOADS.md v5 (A9 print-only, interlibrary loan; A10, A15, A19 low priority).
@@ -123,3 +123,13 @@
   - Checked MathSciNet via NTNU: Kuznetsova MR1353627 shows 0 citations despite two known citers, so the index is incomplete; Pimenova 0. The search "Padua points Lebesgue" gives 8 items, of which 2 are new and related (Carnicer–Godés 2018; Vianello 2019).
   - No verdict changes. [Note](notes/mathscinet-citation-check-2026-11-05.md). Handoff 07 had not started, so it is superseded by handoff 08.
 - [Handoff 07](handoffs/07-audit.md) superseded by [handoff 08](handoffs/08-audit.md): Codex gpt-6-astra high re-audit at input head 10aa5d3.
+
+## 2026-11-05 — Codex — audit 02 (handoff 08)
+
+- Rules read at `0b5fb2d4414af02af23c653cba9cd16e38c1cb8c`; scientific input `10aa5d31e3be477b90f44c122ade0c6180c9a252`. Requested gpt-6-astra high; serving identity/effective effort unexposed. Independent auditor/orchestrator of Claude development.
+- [audit-02.md](audit-02.md): original F1–F6 resolved within bounded literature scope. One new P2 F7: the MathSciNet note line8 infers universal publication absence from zero indexed citations. Return for a narrow response; no verdict or PD status change.
+- Two bounded source readers contributed actual new accesses and current-file checks; another supplementary worker could not start at model capacity and performed no review. Orchestrator directly checked F4–F6. New De Marchi journal-text corroboration; mandatory journal/image/NTNU checks remain developer-only where inaccessible, explicitly separated from independent verification.
+- Full prior IDEAS read remains audit01 baseline; appended891–974 and relevant entries reviewed. No new IDEA generated.
+- Unchanged literal checker actually rerun at reconciled main `aff30e8ad5542c94fab642ae024dc9aab4fa7ad7`:60 blocks,0 missing, multi-match47/72/1080. Exact real main commit/trees/blobs recovered through pinned GitHub GETs into isolated bare object store because ordinary fetch proxy remains unavailable. All object hashes verified; local work checkout untouched.
+- Main merge `77f5db2` preserves all topic-owned literature:26 blob/subtree comparisons. Fresh57-copy registry/ledger check across main/open PR21/24/25/26 preserves LIT482–561; no collision through597 and all closed PRs merged. No IDs assigned, proposals applied or shared scientific files edited.
+- Small pinned input/mechanics/reservation receipts and source notes committed. No third-party PDF/extract committed. Stage→WORK. [Handoff09](handoffs/09-response.md) is the next unused number; handoff08's reference to07 is a typo, not authority to overwrite its predecessor.

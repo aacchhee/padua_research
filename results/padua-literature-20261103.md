@@ -44,3 +44,7 @@ All six audit-01 findings were accepted and answered with changes; see [response
 - **Primary checks.** Xu 1996 journal Thm 3.3 has 1 < p < ∞ (version difference from the preprint), De Marchi p. 23 and SVZ (25)/Table 1 confirmed; 10/10 direct Crossref matches.
 - **Supplement.** Pimenova (constant 2/π²), Kuznetsova p. 259 and SVZ pp. 417/421 confirmed on page images; no verdict changes.
 - **MathSciNet citation check.** One citer of KL 2021 (Kolomoitsev–Liflyand 2021, Fourier simplex constants; RELATED), none of De Marchi 2022, nine of SVZ 2008 (Padua2DM restates "not all positive" weights). No verdict changes.
+
+## 2026-11-05 — audit 02 of response and supplements
+
+Original six findings are resolved in the bounded re-audit. One new P2 F7 requires narrowing the MathSciNet zero-citation inference; stage WORK and PR remains draft. Source reading closures are developer-verified where independent journal/image access failed, and are not presented as auditor verification. Actual literal checker rerun at reconciled main:60/60; merge-preservation and reservation checks pass within recorded scope. No scientific verdict/status or final ID changes. [Audit02](../topics/padua-literature-20261103/audit-02.md); [handoff09](../topics/padua-literature-20261103/handoffs/09-response.md).
