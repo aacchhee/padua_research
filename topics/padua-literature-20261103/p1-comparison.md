@@ -71,3 +71,10 @@ After this topic merges, that branch can reuse the following records for its 1-D
 - the demarchi-2022 addendum.
 
 brutman-1978 and guenttner-1980-1988 can also be reused. This topic does not write to that branch.
+
+## Addendum 2026-11-05: MathSciNet citation check
+
+See [notes/mathscinet-citation-check-2026-11-05.md](notes/mathscinet-citation-check-2026-11-05.md).
+- KL 2021 has one MathSciNet citation, Kolomoitsev–Liflyand 2021 (Fourier simplex constants; RELATED, DIFFERENT SETTING). De Marchi 2022 has none.
+- A MathSciNet keyword search for "Padua points Lebesgue" adds Carnicer–Godés 2018 (even/odd Padua subsets) and Vianello 2019 (stability). Neither affects the corner rows.
+- No verdict changes.

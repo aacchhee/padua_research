@@ -117,3 +117,8 @@
   - UNCONFIRMED removed from the Pimenova record and proposals. Old-block checker still 60/60 at aff30e8. No verdict changes.
   - Handoff 06 had not started, so it is superseded by handoff 07 with the new input head.
 - [Handoff 06](handoffs/06-audit.md) superseded by [handoff 07](handoffs/07-audit.md): Codex gpt-6-astra high re-audit at input head d9366d0.
+- 2026-11-05 ~15:45 — MathSciNet citation check.
+  - AC reported: KL 2021 has 1 citing paper (supplied); De Marchi 2022 has 0; SVZ 2008 has 9 (list pasted).
+  - Claude read Kolomoitsev–Liflyand 2021 (new record, LIT?…-86; RELATED). Scanned Padua2DM 2011 and DMVX 2009 (Springer).
+  - Checked MathSciNet via NTNU: Kuznetsova MR1353627 shows 0 citations despite two known citers, so the index is incomplete; Pimenova 0. The search "Padua points Lebesgue" gives 8 items, of which 2 are new and related (Carnicer–Godés 2018; Vianello 2019).
+  - No verdict changes. [Note](notes/mathscinet-citation-check-2026-11-05.md). Handoff 07 had not started, so it is superseded by handoff 08.

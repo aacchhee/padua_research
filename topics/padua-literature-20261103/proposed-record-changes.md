@@ -1118,3 +1118,17 @@ New:
 Della Vecchia–Mastroianni–Vértesi 1995 (IDOMAT proceedings), [Mastroianni–Russo 2000 was read on 2026-11-05 in padua-literature-20261103: no quantitative borderline result; at CC/Lebesgue/p = 2 its Theorem 11 hypothesis fails exactly at the A_2 endpoint],
 ```
 Apply this one only if AC wants merged reports annotated. Otherwise the P2 comparison carries the update.
+
+## Supplement 2026-11-05: MathSciNet citation check (Claude)
+
+Append to the literature/INDEX.md statement table:
+
+```
+| LIT?padua-literature-claude-86 | LITERATURE; theorem (read, statement level) | Kolomoitsev–Liflyand (Proc. AMS 149 (2021) 2911–2926), eq. (1.3): Lebesgue constant of Fourier partial sums over the anisotropically dilated simplex in 2-D = (4/π³) log n₁ log n₂ + (2/π³) log² n₁ + 𝔉_n + O(log log n₁ · log n₂); d-dimensional version in Thm 2.1. Not interpolation, not pointwise. Only MathSciNet citation of KL 2021 (2026-11-05). | kolomoitsev-liflyand-2021 | (1.3) p. 2914; history p. 2912 | [record](records/kolomoitsev-liflyand-2021.md) | intro, (1.3) and keyword search; proofs not read |
+```
+
+Append to the literature/CORPUS.md main table:
+
+```
+| kolomoitsev-liflyand-2021 | Kolomoitsev–Liflyand, Asymptotics of the Lebesgue constants for a d-dimensional simplex, Proc. AMS 149(7) (2021) 2911–2926 | https://doi.org/10.1090/proc/15438 | AC-supplied PDF | intro and (1.3) | [record](records/kolomoitsev-liflyand-2021.md) | Thm 2.1 and proofs |
+```

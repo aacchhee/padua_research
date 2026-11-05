@@ -63,3 +63,4 @@ Still absent: A9 (Della Vecchia–Mastroianni–Vértesi 1995), A10 (Brutman 199
 - `pimenova-1979-dan43113.pdf` — Pimenova, Dokl. 249 (1979), Math-Net.ru scan
 - `s11075-008-9203-x.pdf` — Sommariva–Vianello–Zanovello, Numer. Algorithms 49 (2008), journal version (Springer via NTNU)
 - `BF01056716-kuznetsova-1995.pdf` — Kuznetsova, Ukr. Math. J. 47 (1995), English translation (Springer via NTNU)
+- `S0002-9939-2021-15438-5.pdf` — Kolomoitsev–Liflyand, Proc. AMS 149 (2021) (AC, ~15:36; the MathSciNet citer of KL 2021)
