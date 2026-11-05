@@ -1,0 +1,17 @@
+{
+  "main": "9322fba83eb8d942e04209bb3262ad15d52bfb1e",
+  "pr21_input": "4a8acf76eccd5287650136d3990799585fa32596",
+  "candidate_tree": "70422cd36f48ec07ca249fdec6926707954e9dd9",
+  "pr24_latest": "a64b866e25a3b117c9ce87410e9b511f428881da",
+  "main_squash": "PASS; identical candidate tree",
+  "latest_pr24_squash": "PASS; actual commit ancestry, zero conflicts; all78 preparation files byte-preserved; PROOF_STATUS and IDEAS unchanged",
+  "commands": [
+    "git merge --squash <candidate> on disposable main checkout",
+    "git merge --squash a64b866e25a3b117c9ce87410e9b511f428881da after disposable PR21 squash commit",
+    "git diff --check",
+    "git ls-files -u",
+    "byte comparisons of78 own files, PROOF_STATUS and state/IDEAS"
+  ],
+  "limits": "No main/PR24 remote mutation or draft readiness inferred. An earlier whole-union checker run against PR24 old45646d7 stopped on8 foreign PR24 broken links; PR21-only checker passes. A discarded synthetic-ancestry snapshot generated artificial conflicts; actual hash-verified commit ancestry passed.",
+  "latest_allocation_impact": "PR24 advanced45646d7\u2192a64b866; full GitHub comparison inspected. INDEX/CORPUS and own reservation unchanged. Only ledger delta imports already merged PR26 allocation; no new LIT reservation. Latest main unchanged; only open PRs21/24. Prior full allocation receipt remains applicable."
+}

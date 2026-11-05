@@ -380,3 +380,7 @@ T01 registration is finite sufficiency only, T02 unregistered, no LIT assigned.
 Permanent unused gaps T371–375, N133–137, IDEA462–465, LIT594–597 remain
 unavailable forever. PD-T099 stays OPEN with global finite range exactly2–32.
 Only AC merges; preparation audit is pending and no merge order is inferred.
+
+## PR21 audited literature registration — 2026-11-05
+
+Unchanged reservation LIT-482–561 (80), owner claude/padua-literature-20261103, first published fe946c9701916dce042af48c0e2705eac9d87db9. [Topic ledger](../padua-literature-20261103/ALLOCATIONS.md), [fresh union](../padua-literature-20261103/preparation/allocation-scan.json), [exact map](../padua-literature-20261103/preparation/final-id-map.json). Main9322fba and open PR21/24 checked, including every inherited/retired ledger and four canonical registries; all returned closed PRs merged. New31 statement IDs482–512;27 aliases reuse accepted statements. LIT513–561 remain permanent gaps. No PD-T/PD-N/IDEA range or assignment. Other topics' reservations and final assignments remain intact; no source-verification upgrade or mathematical status change.

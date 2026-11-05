@@ -131,3 +131,7 @@ replace the completed gate/registration tasks; only AC merges.
 | Record | Accepted scientific content | Remaining gap / limit |
 |---|---|---|
 | [Phase2 report](topics/padua-argmax-effective-2-20261105/report.md) | PD-T364 finite sufficiency; PD-T365 closed phase-boundary profile; PD-T366 wider noncorner defect; PD-T367 aggregate energy; PD-T368 explicit constants for known norm order; PD-T369 all-degree local descent; PD-T370 MEASURED finite diagnostics; PD-N132 only a*b_n obstruction | PD-T099 OPEN; global2–32 unchanged; no full-diamond N1, complete phase cover or finite bridge. Local/boundary supports are not a PARTIAL decomposition. Audit-01/response-check-01 accepted scopes; preparation audit pending. External priority remains unverified; no manuscript/submission action. |
+
+## Audited literature footing — PR21
+
+The [P1–P4 report](topics/padua-literature-20261103/report.md), [comparisons](topics/padua-literature-20261103/p1-comparison.md) and [final source map](topics/padua-literature-20261103/preparation/final-id-map.json) supply bounded literature attribution for later manuscript revisions. They distinguish historical conjectures, global versus corner estimates, classical signed cubature/Favard machinery and scoped Leuven proposals. Inaccessible source checks remain developer-verified; no exhaustive novelty, local source-theorem proof, manuscript acceptance or submission readiness follows. Mathematical source statuses and newer accepted scientific campaigns remain authoritative and unchanged.

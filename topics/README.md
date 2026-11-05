@@ -93,3 +93,7 @@ Claude audit-01 and response-check-01 accepted mathematics/records; the required
 Claude preparation audit remains pending and PR25 stays draft. After merge,
 these scoped registrations replace completed preparation tasks; remaining H1/H2
 research belongs to a later topic, with no scientific run queued here.
+
+## Padua literature campaign — audited PR21 registration
+
+[Report](padua-literature-20261103/report.md), [final source map](padua-literature-20261103/preparation/final-id-map.json), [results](../results/padua-literature-20261103.md). Source attribution/coverage campaign completed at its bounded audited scope; no new mathematical claim or source-proof status.31 new LIT482–512,27 reused aliases;513–561 permanent gaps. Preparation/readiness evidence in the topic record; only AC merges. Source gaps remain disclosed, not a queued new campaign.

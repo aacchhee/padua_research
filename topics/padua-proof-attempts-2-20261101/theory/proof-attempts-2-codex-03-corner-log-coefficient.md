@@ -57,7 +57,7 @@ The proof has no computational dependency. Route agent `/root/a2_independent_rou
 
 ## Sources
 
-Page-locator qualification (audit-01 F6): printed page numbers below are per developer reading; the auditor confirmed theorem/equation content through page-less text, without confirming PDF pagination. LIT-379 identifies KL2021 and LIT-312 identifies Bos2006.
+Page-locator qualification (audit-01 F6): printed page numbers below are per developer reading; the auditor confirmed theorem/equation content through page-less text, without confirming PDF pagination. LIT-379 identifies KL2021 and LIT-312 identifies Bos2006. Update 2026-11-03 (padua-literature-20261103): the KL2021 arXiv v1 locators (Thm 2.1 p. 4; Lemma 3.5 (3.20) pp. 10–11; Lemma 3.6 (3.29) pp. 11–12) were confirmed against the printed running heads. The published AMC version has the same numbering (PDF pp. 4, 8, 9); (3.29) is imported by KL from Kuznetsova 1995 (literature/records/kuznetsova-1995.md). The Bos2006 locators remain per developer reading.
 
 LITERATURE: Kolomoitsev–Lomako, arXiv:2009.07114v1 (2020 preprint; Appl. Math. Comput.403,2021), introductory one-dimensional expansion printed p.1 and Theorem2.1 printed p.4; discretization Lemma3.5(3.20), printed pp.10–11, and parity Lemma3.6(3.29), printed pp.11–12. Full16-page paper read before method use. It reports the same one-dimensional c₁ and proves the global Padua leading term with O(log n), without a corner b-term. Bos et al.2006 Theorem3, author preprint printed pp.10–12, gives global O(log² n). Exact reading scope and URLs: `../attempts/T-A2.md`. No claim that the present target was historically open follows from this bounded literature check.
 
