@@ -2,7 +2,7 @@
 
 Rules/input `8a1f394739293953e1566fd24a0a193cc78ff26f`; base `440d107`.
 Branch `codex/padua-argmax-effective-20261103`; [draft PR19](https://github.com/aacchhee/padua_research/pull/19).
-Claude [audit-01](audit-01.md) accepts the mathematics at the stated scopes; the [developer response](response-01.md) to minor record findings awaits the Claude response protocol check.
+Claude [audit-01](audit-01.md) accepts the mathematics at the stated scopes; [response-check-01](response-check-01.md) accepts the documentation response. Final registration follows AC's instruction to resolve remaining preparation issues in Codex without another Claude check unless MAJOR.
 
 The exact finite global range now reaches **2<=n<=32**, with the new
 cases17–32 in the [finite theorem](theory/argmax-effective-codex-01-finite-global-argmax.md).
@@ -128,13 +128,17 @@ Git, with inventory and pending delivery disclosed in
 No third-party fulltext or external-machine computation is included.
 
 Permanent reservations were first pushed in `ed8db2fc364d0ba34c3c06815460b3b2971787b5`:
-PD-T246–265, PD-N084–091, IDEA336–355, LIT466–473. Provisional aliases
-remain until audit and final registration; unused reservations stay gaps.
-Shared ledgers and earlier records were not edited. Proposed dated
-updates are in [proposed-record-changes.md](proposed-record-changes.md).
+PD-T246–265, PD-N084–091, IDEA336–355, LIT466–473. Final assignments
+PD-T246–252, PD-N084–086, IDEA336–348 and LIT466–470 preserve every
+provisional alias in [the final map](final-id-map.json). Unused reservations
+stay permanent gaps. Shared registries contain dated annotations and new
+rows at the audited scopes; historical statements are preserved. The fresh
+union scan covers main and PRs19–24, with no reservation collision.
 
 The completed [audit-01](audit-01.md) records its full read coverage and
-independent analytic and certificate checks. The response now awaits a
-Claude protocol check before final registration. Preserve the distinction between the proved slope bound,
+independent analytic and certificate checks. The accepted
+[response check](response-check-01.md) confirms the minor-finding dispositions.
+[Final preparation verification](preparation-verification.md) records ID,
+registry, content-preservation and integration checks. Preserve the distinction between the proved slope bound,
 the smaller radius, finite global cases, sampled gates and the still-open
 all-degree global maximum problem.

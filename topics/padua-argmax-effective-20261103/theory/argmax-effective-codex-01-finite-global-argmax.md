@@ -1,7 +1,7 @@
-# PD-T?argmax-effective-codex-01 — Finite global argmax continuation
+# PD-T246 — Finite global argmax continuation
 
 ID kind: PD-T.
-Aliases: G0 exact bridge; native finite continuation of PD-T214.
+Aliases: G0 exact bridge; native finite continuation of PD-T214. PD-T?argmax-effective-codex-01.
 Split from: PD-T099, finite parameter cases only.
 Split into: none; the unverified n40 capacity probe is explicitly excluded.
 
@@ -27,7 +27,7 @@ computer-assisted premise. No floating comparison enters a leaf verdict.
 
 Overall status: **PROVED**, computer assisted. Every listed finite premise
 has an actual corrected-kernel acceptance by a different agent and a
-retained exact witness. Required Claude topic audit remains pending.
+retained exact witness. Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the stated scope.
 
 | Part | Status | Evidence |
 |---|---|---|
@@ -141,8 +141,7 @@ native implementation is the intended larger-degree acceptance path.
 Only the explicitly listed finite cases. No exact count of local maxima,
 all-n comparison, explicit global threshold or complete eventual bridge
 is proved. Original PD-T099 remains OPEN. No external one-dimensional
-theorem is used. Required Claude topic audit and final registration remain
-pending, distinct from completed supplementary checks.
+theorem is used. Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the stated scope; final registration is recorded in [id-map](../final-id-map.json).
 
 ## History
 
@@ -151,3 +150,7 @@ producer/checker technical workers gpt-6.1-sol medium; supplementary
 independent worker gpt-6-astra high. Rules/input8a1f394, base440d107.
 Handoff02 explicitly requested compiled large-degree certification and
 independent arithmetic paths. No outside machine was used.
+
+## Final registration — 2026-11-05
+
+Final IDs and preserved provisional aliases: [id-map](../final-id-map.json). Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the existing stated scopes; no claim, proof or epistemic status changes at registration.

@@ -1,7 +1,7 @@
-# PD-T?argmax-effective-claude-01 — Pilot gate measurements for the effective Padua argmax
+# PD-T252 — Pilot gate measurements for the effective Padua argmax
 
 ID kind: PD-T.
-Aliases: pilot G0–G3; true local corner constant; true global primitive constant; certifier timings n = 17–32.
+Aliases: pilot G0–G3; true local corner constant; true global primitive constant; certifier timings n = 17–32. PD-T?argmax-effective-claude-01.
 Split from: none (supporting evidence for the OPEN target PD-T099).
 Split into: none.
 
@@ -91,3 +91,7 @@ These are planning measurements for handoff 01's gates. G0 certification of n = 
 ## History
 
 2026-11-03, Claude (claude-opus-5-5): created at campaign setup. Addendum in the commit after handoff 01's publication: the n = 32 row, which completed after the handoff input head. No other change.
+
+## Final registration — 2026-11-05
+
+Final IDs and preserved provisional aliases: [id-map](../final-id-map.json). Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the existing stated scopes; no claim, proof or epistemic status changes at registration.

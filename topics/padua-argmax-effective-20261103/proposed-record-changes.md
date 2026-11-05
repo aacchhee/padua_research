@@ -1,9 +1,10 @@
-# Proposed shared-record changes — defer until audit and PR preparation
+# Shared-record changes — preparation applied 2026-11-05
 
-No shared record is changed by this development branch. These are dated
-annotations, not replacements of historical mathematical statements.
-Final IDs must be assigned from ALLOCATIONS.md only after a fresh union
-scan. Keep the original all-degree conjecture OPEN.
+The following old/new development proposal is retained as provenance.
+Preparation applied the dated annotations using PD-T246 (finite range),
+PD-T250 (spectrum) and PD-T251 (slopes/local radius), with links to accepted
+audit-01 and response-check-01. The fresh union scan and final-id-map.json
+record collision-free assignments; the original all-degree conjecture stays OPEN.
 
 ## PROOF_STATUS.md: PD-T099 (
 
@@ -16,7 +17,7 @@ Old (literal complete row):
 New (literal complete row):
 
 ```text
-| PD-T099 (PD-T?programme-ideas-claude-05) | Padua Lebesgue function attains its maximum at a non-node corner (conjecture) | OPEN | no counterexample at 75 tested degrees ≤ 200 (MEASURED); statement OPEN | OPEN target, not rejected; open target A4 | PD-T098 (definitions) | [record](topics/programme-ideas-20261031/theory/programme-ideas-claude-05-padua-corner-argmax.md) | [response-01](topics/programme-ideas-20261031/response-01.md); [Codex audit-01](topics/programme-ideas-20261031/audit-01.md); [Codex audit-02](topics/programme-ideas-20261031/audit-02.md) and [audit-03](topics/programme-ideas-20261031/audit-03.md): accepted at written scope; [integration audit-04](topics/programme-ideas-20261031/audit-04.md); PR12 dated split: Finite n3–7 globals PD-T162, PD-T166, PD-T169, PD-T174, PD-T177 and central-edge splits PD-T185, PD-T186, PD-T187, PD-T188, PD-T189, PD-T190, PD-T191, PD-T192 are PROVED; full-square all-n target remains OPEN. PR17 dated progress (2026-11-03): finite n2 PD-T209, inherited n3–7 PD-T162/166/169/174/177, existing n8 PD-T181 and n9–16 PD-T214 cover2–16; PD-T229 proves exact two-corner equality for every sufficiently large n with non-effective N_*. Unknown17<=n<N_* keeps this original all-degree target OPEN. Supporting edge/phase/localization records PD-T211/212/215–228/230 and finite E-C PD-T231 are not a completed all-degree decomposition. [Accepted mathematical audit](topics/padua-argmax-alln-20261101/audit-01.md), [accepted response review](topics/padua-argmax-alln-20261101/response-review-01.md); current final registration accepted by [distinct Astra preparation audit](topics/padua-argmax-alln-20261101/prep-support/final-audit.md).  Dated effective-campaign progress (2026-11-03, audit pending): compiled exact finite continuation gives2<=n<=32 and is recorded separately in topics/padua-argmax-effective-20261103/theory/argmax-effective-codex-01-finite-global-argmax.md. All-degree normalized inward corner slopes and an explicit n^-6 physical local radius are proved in codex-06a/06b. No explicit global threshold or complete bridge; PD-T099 remains OPEN. |
+| PD-T099 (PD-T?programme-ideas-claude-05) | Padua Lebesgue function attains its maximum at a non-node corner (conjecture) | OPEN | no counterexample at 75 tested degrees ≤ 200 (MEASURED); statement OPEN | OPEN target, not rejected; open target A4 | PD-T098 (definitions) | [record](topics/programme-ideas-20261031/theory/programme-ideas-claude-05-padua-corner-argmax.md) | [response-01](topics/programme-ideas-20261031/response-01.md); [Codex audit-01](topics/programme-ideas-20261031/audit-01.md); [Codex audit-02](topics/programme-ideas-20261031/audit-02.md) and [audit-03](topics/programme-ideas-20261031/audit-03.md): accepted at written scope; [integration audit-04](topics/programme-ideas-20261031/audit-04.md); PR12 dated split: Finite n3–7 globals PD-T162, PD-T166, PD-T169, PD-T174, PD-T177 and central-edge splits PD-T185, PD-T186, PD-T187, PD-T188, PD-T189, PD-T190, PD-T191, PD-T192 are PROVED; full-square all-n target remains OPEN. PR17 dated progress (2026-11-03): finite n2 PD-T209, inherited n3–7 PD-T162/166/169/174/177, existing n8 PD-T181 and n9–16 PD-T214 cover2–16; PD-T229 proves exact two-corner equality for every sufficiently large n with non-effective N_*. Unknown17<=n<N_* keeps this original all-degree target OPEN. Supporting edge/phase/localization records PD-T211/212/215–228/230 and finite E-C PD-T231 are not a completed all-degree decomposition. [Accepted mathematical audit](topics/padua-argmax-alln-20261101/audit-01.md), [accepted response review](topics/padua-argmax-alln-20261101/response-review-01.md); current final registration accepted by [distinct Astra preparation audit](topics/padua-argmax-alln-20261101/prep-support/final-audit.md).  Dated effective-campaign progress (2026-11-05, [accepted audit](topics/padua-argmax-effective-20261103/audit-01.md), [accepted response check](topics/padua-argmax-effective-20261103/response-check-01.md)): compiled exact finite continuation gives2<=n<=32 and is recorded separately in topics/padua-argmax-effective-20261103/theory/argmax-effective-codex-01-finite-global-argmax.md. All-degree normalized inward corner slopes and an explicit n^-6 physical local radius are proved in codex-06a/06b. No explicit global threshold or complete bridge; PD-T099 remains OPEN. |
 ```
 
 ## PROOF_STATUS.md: PD-T227 (
@@ -30,7 +31,7 @@ Old (literal complete row):
 New (literal complete row):
 
 ```text
-| PD-T227 (PD-T?argmax-alln-gated-codex-13) | Exact corner zero/sign mask, cardinal gradients, linear inward first variation and aggregate Taylor upper model | PROVED | All n>=2; initially zero-cardinal contributions included; no all-n slope negativity or bounded normalized energy asserted | Retained supporting identities/upper model; stronger slope/energy premises remain OPEN | PD-T101; proposed applications separately PD-T216/225 and PD-T156/157 | [record](topics/padua-argmax-alln-20261101/theory/gated-codex-13-corner-first-variation.md) | Written finite algebra and endpoint-functional proof; [Claude audit-01](topics/padua-argmax-alln-20261101/audit-01.md)  Dated effective-campaign progress (2026-11-03, audit pending): codex-06a/06b prove A_n,B_n<=-n^2 Lambda_c/8 for all n>=2. The weighted-energy bound and fixed scaled phase radius remain OPEN. Original theorem statement and historical scope are unchanged. |
+| PD-T227 (PD-T?argmax-alln-gated-codex-13) | Exact corner zero/sign mask, cardinal gradients, linear inward first variation and aggregate Taylor upper model | PROVED | All n>=2; initially zero-cardinal contributions included; no all-n slope negativity or bounded normalized energy asserted | Retained supporting identities/upper model; stronger slope/energy premises remain OPEN | PD-T101; proposed applications separately PD-T216/225 and PD-T156/157 | [record](topics/padua-argmax-alln-20261101/theory/gated-codex-13-corner-first-variation.md) | Written finite algebra and endpoint-functional proof; [Claude audit-01](topics/padua-argmax-alln-20261101/audit-01.md)  Dated effective-campaign progress (2026-11-05, [accepted audit](topics/padua-argmax-effective-20261103/audit-01.md), [accepted response check](topics/padua-argmax-effective-20261103/response-check-01.md)): codex-06a/06b prove A_n,B_n<=-n^2 Lambda_c/8 for all n>=2. The weighted-energy bound and fixed scaled phase radius remain OPEN. Original theorem statement and historical scope are unchanged. |
 ```
 
 ## state/IDEAS.md: IDEA-330;
@@ -44,7 +45,7 @@ Old (literal complete row):
 New (literal complete row):
 
 ```text
-| IDEA-330; IDEA?argmax-alln-gated-codex-04 | Physical corner variation and weighted energy; physical inward/sign-change-controlled variant of IDEA-326. Kill: A fixed-degree negativity observation without an aggregate n^4 Lambda_c scale fails the uniform-radius gate. | **retained theorem; all-n hypotheses deferred / OPEN**. PD-T227 retained; finite slopes/energies MEASURED. Eventual slopes follow PD-T228 for each fixed0<a<1/5 with an a-dependent threshold. All-n slope uniformity and weighted energy remain OPEN. ; [IDEA-330 record](../topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md#idea-330)  Dated effective-campaign progress (2026-11-03, audit pending): codex-06a/06b close the all-degree normalized slope premise, with an explicit smaller n^-6 physical radius. Aggregate weighted energy and the n^-2 physical radius remain OPEN; retain the original uniform-radius target. |
+| IDEA-330; IDEA?argmax-alln-gated-codex-04 | Physical corner variation and weighted energy; physical inward/sign-change-controlled variant of IDEA-326. Kill: A fixed-degree negativity observation without an aggregate n^4 Lambda_c scale fails the uniform-radius gate. | **retained theorem; all-n hypotheses deferred / OPEN**. PD-T227 retained; finite slopes/energies MEASURED. Eventual slopes follow PD-T228 for each fixed0<a<1/5 with an a-dependent threshold. All-n slope uniformity and weighted energy remain OPEN. ; [IDEA-330 record](../topics/padua-argmax-alln-20261101/FINAL_CANDIDATES.md#idea-330)  Dated effective-campaign progress (2026-11-05, [accepted audit](topics/padua-argmax-effective-20261103/audit-01.md), [accepted response check](topics/padua-argmax-effective-20261103/response-check-01.md)): codex-06a/06b close the all-degree normalized slope premise, with an explicit smaller n^-6 physical radius. Aggregate weighted energy and the n^-2 physical radius remain OPEN; retain the original uniform-radius target. |
 ```
 
 ## Additions after audit
@@ -90,3 +91,13 @@ annotation must cite the final ID of codex-06b and retain the clause
 Also replace stale required-Claude-audit-pending wording in theory and
 idea records with audit-01 citations. No final ID or shared registry is
 changed by the response.
+
+
+## Preparation disposition — 2026-11-05
+
+F5/F7 are applied in the canonical registries and topic records. Final IDs
+are in [final-id-map.json](final-id-map.json). PD-T227's dated annotation
+cites PD-T251 and retains "weighted energy and the fixed scaled phase radius remain OPEN".
+The historical proposal and checklist above document the intended change;
+current registry rows are authoritative. AC waived the additional Claude
+preparation check unless MAJOR; no accepted audit is edited or impersonated.

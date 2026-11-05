@@ -1,7 +1,7 @@
-# PD-T?argmax-effective-codex-03-spots — Three strict whole-cell edge comparisons
+# PD-T249 — Three strict whole-cell edge comparisons
 
 ID kind: PD-T.
-Aliases: G6 exact spots; degree 13/17/24 E-C instances; target-center comparison.
+Aliases: G6 exact spots; degree 13/17/24 E-C instances; target-center comparison. PD-T?argmax-effective-codex-03-spots.
 Split from: none. These are finite instances of IDEA-324, separate from the measured G6 screen.
 Split into: none. All-degree E-C and PD-T099 remain OPEN.
 
@@ -37,7 +37,7 @@ The accepted cardinal formula and PD-T210's outward integer constructor are trus
 
 ## Status by part
 
-Overall status: **PROVED**, computer assisted at the three displayed finite instances. Written finite reduction, exact arithmetic, small repository certificate and actual different-agent checker execution with corruption controls are complete. Required Claude topic audit is pending.
+Overall status: **PROVED**, computer assisted at the three displayed finite instances. Written finite reduction, exact arithmetic, small repository certificate and actual different-agent checker execution with corruption controls are complete. Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the stated scope.
 
 | Mathematical part | Status | Evidence |
 |---|---|---|
@@ -122,8 +122,12 @@ Only the three listed instances are proved. They are stronger than the correspon
 
 ## Open items
 
-All-degree E-C and a useful all-n phase-alignment comparison remain OPEN. The required Claude topic audit remains pending. No additional exact scan is needed to support the finite statement above.
+All-degree E-C and a useful all-n phase-alignment comparison remain OPEN. Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the stated scope. No additional exact scan is needed to support the finite statement above.
 
 ## History
 
 2026-11-03, rules/input `8a1f394739293953e1566fd24a0a193cc78ff26f`, base `440d107`. Parent authorized three exact spots after the larger measured screen. Pair selection was informed by measured minimum gains, not preregistered blindly. A first producer used a partial float-output snapshot; it was rerun against the completed full output before the frozen independent acceptance. The three inequalities and exact leaves were unchanged. No old topic or registry was edited.
+
+## Final registration — 2026-11-05
+
+Final IDs and preserved provisional aliases: [id-map](../final-id-map.json). Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the existing stated scopes; no claim, proof or epistemic status changes at registration.

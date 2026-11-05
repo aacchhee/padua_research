@@ -2,7 +2,11 @@
 
 2026-11-03. Rules/input `8a1f394739293953e1566fd24a0a193cc78ff26f`; Codex, assigned gpt-6-astra ultra for mathematics. Full gate/search scope and pre-execution sequence: [attempt](../attempts/r3-r4-comparison.md). No historical novelty claim.
 
-## IDEA?argmax-effective-codex-04-envelope — Precisely formulate IDEA-319's envelope class
+<a id="idea-341"></a>
+
+## IDEA-341 — Precisely formulate IDEA-319's envelope class
+
+Provisional alias: `IDEA?argmax-effective-codex-04-envelope`.
 
 Aliases: G7; generating-curve numerator factorization; envelope times convex sum.
 
@@ -20,9 +24,13 @@ Aliases: G7; generating-curve numerator factorization; envelope times convex sum
 - Disposition: **deferred / OPEN**. Resume with a concrete identity, allowed factors, normalization and fixed partition, before spending on larger-degree signs.
 - Disposition reason: deferred because no mathematical predicate presently distinguishes the intended useful class from trivial envelopes. No administrative PD-N is created for the ill-posedness diagnosis.
 - Canonical theory / negative-result ID: none for this broad target; separate scoped obstruction below.
-- Topic / audit / history: inherited original criterion preserved; dated operationalization and exact result retained, Claude audit pending.
+- Topic / audit / history: inherited original criterion preserved; dated operationalization and exact result retained, Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the stated scope.
 
-## IDEA?argmax-effective-codex-04-fixed-sign — Fixed signs of individual cardinals on coarse complementary diamonds
+<a id="idea-342"></a>
+
+## IDEA-342 — Fixed signs of individual cardinals on coarse complementary diamonds
+
+Provisional alias: `IDEA?argmax-effective-codex-04-fixed-sign`.
 
 Aliases: G7-F; positive common-factor cardinal representation; coarse cell sign elimination.
 
@@ -39,5 +47,9 @@ Aliases: G7-F; positive common-factor cardinal representation; coarse cell sign 
 - Actual test results: L00(x,0)=(x²-1)(2x²+2x-1)/10. Values 4/405 and -11/4096 at x=1/3 and3/8, both in D(2,3), give a complete analytic obstruction.
 - Disposition: **REJECTED: refuted**, only for individual fixed signs / the displayed nonnegative-factor representation on these coarse cells.
 - Disposition reason: the two exact opposite signs make a cellwise fixed sign impossible. Regrouping, refined sign cells and the whole generating-curve route remain outside scope.
-- Canonical negative-result ID: [PD-N?argmax-effective-codex-04](../theory/argmax-effective-codex-04-coarse-cell-sign-obstruction.md), **PROVED**, analytic proof; supplementary independent gpt-6-astra high reconstruction accepted, required Claude audit pending.
+- Canonical negative-result ID: [PD-N086](../theory/argmax-effective-codex-04-coarse-cell-sign-obstruction.md), **PROVED**, analytic proof; supplementary independent gpt-6-astra high reconstruction accepted, Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the stated scope.
 - Topic / audit / history: G7-F registered in the attempt before exact expansion. The result does not retroactively convert original G7 into a well-posed criterion.
+
+## Final registration — 2026-11-05
+
+Final IDs and preserved provisional aliases: [id-map](../final-id-map.json). Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the existing stated scopes; no claim, proof or epistemic status changes at registration.

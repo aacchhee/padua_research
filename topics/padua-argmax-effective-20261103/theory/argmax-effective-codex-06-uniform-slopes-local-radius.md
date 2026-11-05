@@ -1,7 +1,7 @@
-# PD-T?argmax-effective-codex-06b — All-degree negative corner slopes and an explicit local radius
+# PD-T251 — All-degree negative corner slopes and an explicit local radius
 
 ID kind: PD-T.
-Aliases: R6 all-n corner descent; exact spectral slope bound; shrinking physical corner certificate.
+Aliases: R6 all-n corner descent; exact spectral slope bound; shrinking physical corner certificate. PD-T?argmax-effective-codex-06b.
 Split from: R6 fixed scaled corner-zone comparison remains OPEN.
 Split into: none; the exact spectral identity is the separate codex-06a.
 
@@ -46,7 +46,7 @@ assumed.
 ## Status by part
 
 Overall status: **PROVED**. [Supplementary independent reconstruction](../independent-math-checks-01.md)
-is complete and accepted; required Claude audit remains pending.
+is complete and accepted; Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the stated scope.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -60,7 +60,7 @@ rho target remains OPEN outside this theorem's statement.
 
 PD-T101 exact cardinal formula and positive weights summing to one.
 PD-T227 corner values, gradients, zero mask and inward linearity.
-PD-T?argmax-effective-codex-06a exact spectrum, positivity and lower bounds.
+PD-T250 exact spectrum, positivity and lower bounds.
 The elementary endpoint derivative bound used below is also proved in
 PD-T227; its recurrence is restated here. No external theorem is imported.
 
@@ -220,3 +220,7 @@ unresolved. All-degree global PD-T099 stays OPEN.
 rules/input 8a1f394739293953e1566fd24a0a193cc78ff26f, base 440d107.
 New all-n slope proof; no assertion that an n-dependent radius resolves
 the earlier fixed-phase target.
+
+## Final registration — 2026-11-05
+
+Final IDs and preserved provisional aliases: [id-map](../final-id-map.json). Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the existing stated scopes; no claim, proof or epistemic status changes at registration.

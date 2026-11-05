@@ -5,7 +5,11 @@ before opening sources; existing LIT312/379/388 reading addenda retained.
 This file records LITERATURE coverage, never locally PROVED source claims.
 No original PDF or third-party full text is stored in Git.
 
-## LIT?argmax-effective-codex-01 — Brutman 1978
+<a id="lit-466"></a>
+
+## LIT-466 — Brutman 1978
+
+Provisional alias: `LIT?argmax-effective-codex-01`.
 
 - Citation: L. Brutman, *On the Lebesgue Function for Polynomial
   Interpolation*, SIAM J. Numer. Anal. 15 (1978), 694–704.
@@ -20,7 +24,11 @@ No original PDF or third-party full text is stored in Git.
 - Relation/limit: this direction does not itself establish the Padua E-C
   ordering. No proof technique or bound is transferred; full proof unread.
 
-## LIT?argmax-effective-codex-02 — Günttner 1980
+<a id="lit-467"></a>
+
+## LIT-467 — Günttner 1980
+
+Provisional alias: `LIT?argmax-effective-codex-02`.
 
 - Citation: R. Günttner, *Evaluation of Lebesgue Constants*.
 - DOI/publisher: https://doi.org/10.1137/0717043 .
@@ -31,7 +39,11 @@ No original PDF or third-party full text is stored in Git.
 - Gaps: full proof, exact node conventions and theorem locators unread.
   No transfer is made. This source remains an access/reading task.
 
-## LIT?argmax-effective-codex-03 — Brutman survey bibliographic correction
+<a id="lit-468"></a>
+
+## LIT-468 — Brutman survey bibliographic correction
+
+Provisional alias: `LIT?argmax-effective-codex-03`.
 
 - Citation: L. Brutman, *Lebesgue functions for polynomial interpolation—
   a survey*, **Annals of Numerical Mathematics 4 (1997), 111–127**.
@@ -43,7 +55,11 @@ No original PDF or third-party full text is stored in Git.
   historically and use this corrected citation in future work.
 - Gaps: full Chebyshev-section proof reading; no theorem is imported here.
 
-## LIT?argmax-effective-codex-04 — Da Fies–Vianello comparison context
+<a id="lit-469"></a>
+
+## LIT-469 — Da Fies–Vianello comparison context
+
+Provisional alias: `LIT?argmax-effective-codex-04`.
 
 - Citation: G. Da Fies and M. Vianello, *On the Lebesgue constant of
   subperiodic trigonometric interpolation*, author version dated 2012-11-14.
@@ -60,7 +76,11 @@ No original PDF or third-party full text is stored in Git.
   Ehlich–Zeller. This attribution is read, but that older proof is not.
   No Padua pairwise formula satisfying these hypotheses is established.
 
-## LIT?argmax-effective-codex-05 — Ehlich–Zeller access record
+<a id="lit-470"></a>
+
+## LIT-470 — Ehlich–Zeller access record
+
+Provisional alias: `LIT?argmax-effective-codex-05`.
 
 - Citation: H. Ehlich and K. Zeller, *Auswertung der Normen von
   Interpolationsoperatoren*, Math. Ann.164 (1966),105–112.
@@ -72,7 +92,11 @@ No original PDF or third-party full text is stored in Git.
 - Midpoint assertion: attributed in the preceding Da Fies–Vianello record,
   not independently extracted here from Ehlich–Zeller. No inherited proof.
 
-## Existing LIT379 — current primary rereading
+<a id="lit-379-rereading"></a>
+
+## LIT-379 — current primary rereading (existing source)
+
+Provisional alias: `Existing LIT379 — current primary rereading`.
 
 - Source: https://arxiv.org/html/2009.07114v1 .
 - Coverage: introduction, Lemmas3.4–3.7 statements, Lemma3.5 proof,
@@ -101,3 +125,6 @@ use accepted local formulas, so no unread 1-D technique is required by them.
 Before a future transfer, obtain/read the exact source proof and verify a
 map of spaces, kernels, signs, parity and equality cases. The unavailable
 source links above identify the remaining reading targets for AC/auditor.
+
+
+Registration2026-11-05: [id-map](final-id-map.json); [audit-01](audit-01.md) and [response-check-01](response-check-01.md) accept records only at their stated reading coverage. No source proof or source-transfer claim is added.

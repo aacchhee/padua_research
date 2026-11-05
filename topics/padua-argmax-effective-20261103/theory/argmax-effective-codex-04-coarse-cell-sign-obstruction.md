@@ -1,7 +1,7 @@
-# PD-N?argmax-effective-codex-04 — Individual cardinal signs change inside a degree-four complementary cell
+# PD-N086 — Individual cardinal signs change inside a degree-four complementary cell
 
 ID kind: PD-N.
-Aliases: G7-F; fixed-sign-cardinal envelope; coarse diamond sign obstruction.
+Aliases: G7-F; fixed-sign-cardinal envelope; coarse diamond sign obstruction. PD-N?argmax-effective-codex-04.
 Split from: none. This is a dated, precisely specified sufficient submechanism of the undefined envelope-existence criterion G7; it does not replace IDEA-319.
 Split into: none.
 
@@ -28,13 +28,13 @@ Exact real arithmetic, degree n=4, and the specified even checkerboard. No all-d
 
 ## Status by part
 
-Overall status: **PROVED**, by the elementary analytic calculation below. Supplementary independent reconstruction by gpt-6-astra high accepted the stated scope; required Claude topic audit remains pending.
+Overall status: **PROVED**, by the elementary analytic calculation below. Supplementary independent reconstruction by gpt-6-astra high accepted the stated scope; Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the stated scope.
 
 | Mathematical part | Status | Evidence |
 |---|---|---|
 | Explicit opposite signs within D(2,3), and impossibility of the displayed fixed-sign representation | PROVED | Exact polynomial identity, rational substitutions and radical comparison below |
 
-Candidate disposition: **REJECTED: refuted** for G7-F only (`IDEA?argmax-effective-codex-04-fixed-sign`). The original IDEA-319 and the effective all-degree target remain **OPEN**. “No cell-wise sign-stable envelope exists” is not the negative statement proved here.
+Candidate disposition: **REJECTED: refuted** for G7-F only (`IDEA-342`). The original IDEA-319 and the effective all-degree target remain **OPEN**. “No cell-wise sign-stable envelope exists” is not the negative statement proved here.
 
 ## Negative-result scope
 
@@ -88,8 +88,12 @@ For orientation, the brief's corner check has an elementary answer: if gamma(t)=
 
 ## Open items
 
-To make original G7 falsifiable, specify the allowed envelope/factor class, normalization, exact cells and what is required to have fixed sign. Retain IDEA-319 until that has been done. Supplementary independent analytic reconstruction is complete; Claude audit remains pending.
+To make original G7 falsifiable, specify the allowed envelope/factor class, normalization, exact cells and what is required to have fixed sign. Retain IDEA-319 until that has been done. Supplementary independent analytic reconstruction is complete; Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the stated scope.
 
 ## History
 
 2026-11-03, Codex mathematics worker, assigned gpt-6-astra ultra under handoff02's explicit AC exception. Rules/input `8a1f394739293953e1566fd24a0a193cc78ff26f`; base `440d107`. The attempt recorded original G7 unchanged, diagnosed its undefined quantifier domain, then registered G7-F before the exact polynomial expansion. Opposite rational signs were found afterwards. No original mechanism was silently widened or rejected in full.
+
+## Final registration — 2026-11-05
+
+Final IDs and preserved provisional aliases: [id-map](../final-id-map.json). Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the existing stated scopes; no claim, proof or epistemic status changes at registration.

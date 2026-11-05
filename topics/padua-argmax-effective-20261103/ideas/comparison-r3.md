@@ -2,7 +2,11 @@
 
 2026-11-03. Rules/input `8a1f394739293953e1566fd24a0a193cc78ff26f`, base `440d107`; Codex mathematics assigned gpt-6-astra ultra. G6 code by the parent's gpt-6.1-sol medium gates worker. Gate, precise conventions and original pre-execution criteria: [attempt](../attempts/r3-r4-comparison.md).
 
-## IDEA?argmax-effective-codex-03-ec — Extended whole-cell E-C gate
+<a id="idea-339"></a>
+
+## IDEA-339 — Extended whole-cell E-C gate
+
+Provisional alias: `IDEA?argmax-effective-codex-03-ec`.
 
 Aliases: IDEA-324 continuation; centreward complementary vertical-edge cells; G6.
 
@@ -19,10 +23,14 @@ Aliases: IDEA-324 continuation; centreward complementary vertical-edge cells; G6
 - Actual test results: the final full run reports 1536 comparisons, no reversal, and minimum target-minus-source 0.0027806941162857868 at n=60. A different agent replayed 96 comparisons at n=13,17,24,60 with exact float-row agreement. Three further whole-cell comparisons at n=13,17,24 were certified with actual different-agent checker acceptance; their rational margins exceed 1/20,1/40,1/100. The measured record and separate exact theorem carry final hashes.
 - Disposition: **retained / OPEN**; no G6 kill. Positive finite evidence supplies no all-degree proof or effective threshold.
 - Disposition reason: no numerical reversal in the executed finite scope; analytic control of different maximizing phases remains missing.
-- Canonical theory / negative-result ID: [PD-T?argmax-effective-codex-03](../theory/argmax-effective-codex-03-comparison-screen.md), MEASURED; [PD-T?argmax-effective-codex-03-spots](../theory/argmax-effective-codex-03-exact-edge-spots.md), PROVED finite cases. No negative record for passing a screen.
-- Topic / audit / history: the new handoff explicitly authorizes this larger screen despite the prior campaign's stop after n7/12. Original E-C and E-P dispositions remain unchanged. Claude audit pending.
+- Canonical theory / negative-result ID: [PD-T248](../theory/argmax-effective-codex-03-comparison-screen.md), MEASURED; [PD-T249](../theory/argmax-effective-codex-03-exact-edge-spots.md), PROVED finite cases. No negative record for passing a screen.
+- Topic / audit / history: the new handoff explicitly authorizes this larger screen despite the prior campaign's stop after n7/12. Original E-C and E-P dispositions remain unchanged. Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the stated scope.
 
-## IDEA?argmax-effective-codex-03-strip — First-strip domination by the matching vertical-edge cell
+<a id="idea-340"></a>
+
+## IDEA-340 — First-strip domination by the matching vertical-edge cell
+
+Provisional alias: `IDEA?argmax-effective-codex-03-strip`.
 
 Aliases: I-B0; rectangle-to-edge supremum comparison; bounded interior-to-boundary gate.
 
@@ -39,5 +47,9 @@ Aliases: I-B0; rectangle-to-edge supremum comparison; bounded interior-to-bounda
 - Actual test results: final run covered 182 rectangles at n=13,17,24,32,48,60; maximum reported excess 3.412381488487881e-12, no threshold crossing and no optimizer nonconvergence. The parent narrowed this run to representative degrees for the bounded-round budget; the original larger intended scope remains in the attempt's dated history.
 - Disposition: **retained / OPEN**, representative measurement only; no statement for every degree13…60, other strips, horizontal edges or all interior cells.
 - Disposition reason: the specified finite search found no reversal. Resume with a rigorous rectangle bound/comparison or explicit map, not by treating these samples as a proof.
-- Canonical theory / negative-result ID: `PD-T?argmax-effective-codex-03`, measured screen record; no PD-N.
+- Canonical theory / negative-result ID: `PD-T248`, measured screen record; no PD-N.
 - Topic / audit / history: precise rectangle geometry registered before testing; parent-directed degree reduction disclosed afterwards. No retrospective enlargement of the measurements.
+
+## Final registration — 2026-11-05
+
+Final IDs and preserved provisional aliases: [id-map](../final-id-map.json). Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the existing stated scopes; no claim, proof or epistemic status changes at registration.

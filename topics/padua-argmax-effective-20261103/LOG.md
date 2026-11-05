@@ -1,8 +1,8 @@
 # Effective all-degree Padua argmax (PD-T099): campaign log
 
 - Branch: `codex/padua-argmax-effective-20261103` · Base: main `440d107` · Developer: Codex (gpt-6-astra ultra, at AC's instruction) · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: PR (preparation) · Next: `Codex (gpt-6.1-sol, medium): Continue codex/padua-argmax-effective-20261103.` · Open handoff: [handoffs/06-pr-preparation.md](handoffs/06-pr-preparation.md)
-- Reserved final-ID ranges: PD-T246–265, PD-N084–091, IDEA336–355, LIT466–473; first pushed in `ed8db2f`, [ALLOCATIONS.md](ALLOCATIONS.md). Final assignments pending.
+- Stage: PR (finalization checks) · Open handoff: [handoffs/07-finalization.md](handoffs/07-finalization.md)
+- Reserved final-ID ranges: PD-T246–265, PD-N084–091, IDEA336–355, LIT466–473; first pushed in `ed8db2f`, [ALLOCATIONS.md](ALLOCATIONS.md). Final assignments: PD-T246–252, PD-N084–086, IDEA336–348, LIT466–470; [map](final-id-map.json).
 - Claims: PD-T?argmax-effective-claude-01 — pilot gate measurements — MEASURED — [record](theory/argmax-effective-claude-01-pilot-measurements.md).
 - For the PR: final IDs, PROOF_STATUS/IDEAS/INDEX rows, a RESULTS.md section, and the Claude audit.
 - Open for AC: none at setup. Ask AC before using the NTNU servers.
@@ -194,3 +194,7 @@
 - AC steering: "no more claude, fix everything yourself unless MAJOR" overrides handoff06's planned additional Claude preparation check. Handoff06 is superseded by [handoff07](handoffs/07-finalization.md); accepted audit-01 and response-check-01 remain unchanged. Resolve minor preparation findings locally and escalate only MAJOR issues.
 - Scope is mechanical final-ID substitution and registration of already audited claims, with no new mechanism, novelty or priority claim; no new novelty gate or literature reading is required.
 - Refreshed all-state PR population: open19–24; every closed PR is merged. Fresh full-file union scan covers55 ledger/registry copies and finds no range collision. Permanent reservations and gaps are preserved.
+- Final registration:7 theory records (4 PROVED,3 MEASURED),3 PROVED scoped negative statements,13 idea dispositions,5 bounded literature records and the existing LIT379 addendum. F5/F7 completed; PD-T099 stays OPEN. No scientific status is upgraded.
+- Checks executed: worker structural/link checks independently rerun by root (29 unique mapped records,3271 local link targets across25 files, exact RESULTS copy after link rebasing); root checked historical primary registry-row preservation except the three requested dated annotations and unchanged theory statuses. Existing historical duplicate PD-T140 rows are unchanged; no duplicate is introduced by this topic.
+- Root diff review confirms only final-ID/alias/reference substitution and audit/registration metadata in theory records; no mathematical statement, proof step or domain change. Code, pinned native README, certificates, receipts, audit-01 and response-check-01 are byte-identical to the accepted input. No scientific replay is needed for mechanical registration.
+- Evidence inventory regenerated and verified:84 files, degrees17–32,500421 payload bytes,11467 manifest bytes. Historical audit manifest identity remains in audit-01. `git diff --check` passes. Remaining disclosed limitations: original raw archive delivery unverified and original bytes unavailable; developer receipt-level compiler/GMP mapping incomplete, accepted as a documented limitation by response-check-01.

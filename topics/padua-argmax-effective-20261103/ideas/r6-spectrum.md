@@ -1,4 +1,8 @@
-# IDEA?argmax-effective-r6-01 — Complete positive corner-active spectrum
+<a id="idea-345"></a>
+
+# IDEA-345 — Complete positive corner-active spectrum
+
+Provisional alias: `IDEA?argmax-effective-r6-01`.
 
 Aliases: all-positive inward cosine coefficients; spectral corner comparison.
 
@@ -28,12 +32,16 @@ Aliases: all-positive inward cosine coefficients; spectral corner comparison.
 - Disposition and precise rejected scope: **REJECTED: refuted**, complete
   positivity of the specified polynomial, not local or global argmax.
 - Disposition reason: refuted by an exact degree-three nonconstant mode.
-- Canonical theory / negative-result ID: PD-N?argmax-effective-codex-06a,
+- Canonical theory / negative-result ID: PD-N084,
   theory/argmax-effective-codex-06-negative-spectrum.md.
 - Topic / audit / history: pretest scope in the R6 attempt; 2026-11-03,
-  Codex gpt-6-astra ultra; [supplementary independent review](../independent-math-checks-01.md) accepted; Claude audit pending.
+  Codex gpt-6-astra ultra; [supplementary independent review](../independent-math-checks-01.md) accepted; Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the stated scope.
 
-# IDEA?argmax-effective-r6-02 — Positive mixed spectrum and exact edge symmetries
+<a id="idea-346"></a>
+
+# IDEA-346 — Positive mixed spectrum and exact edge symmetries
+
+Provisional alias: `IDEA?argmax-effective-r6-02`.
 
 Aliases: diagonal-sign DCT; positive x-degree coefficients; row/column grouping.
 
@@ -64,8 +72,12 @@ Aliases: diagonal-sign DCT; positive x-degree coefficients; row/column grouping.
   finite range but is not a proof premise.
 - Disposition and precise rejected scope: retained.
 - Disposition reason: exact finite-sum proof survives the narrower criterion.
-- Canonical theory / negative-result ID: PD-T?argmax-effective-codex-06a,
+- Canonical theory / negative-result ID: PD-T250,
   theory/argmax-effective-codex-06-corner-active-spectrum.md.
 - Topic / audit / history: 2026-11-03, Codex gpt-6-astra ultra; distinct
   independent reconstruction completed in conversation, durable receipt
-  owned by the independent worker; Claude audit remains pending.
+  owned by the independent worker; Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the stated scope.
+
+## Final registration — 2026-11-05
+
+Final IDs and preserved provisional aliases: [id-map](../final-id-map.json). Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the existing stated scopes; no claim, proof or epistemic status changes at registration.

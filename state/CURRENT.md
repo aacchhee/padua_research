@@ -86,3 +86,11 @@ checker hardening are completed in this pass under AC's no-further-Claude
 direction, with separate Astra final review; no later research run is
 scheduled. AC delivery/purge remain separate pending work, not a proof
 obligation for these committed finite certificates. Only AC merges.
+
+## Effective Padua argmax — PR19 post-merge frontier, 2026-11-05
+
+[Accepted results](../results/padua-argmax-effective-20261103.md): PD-T246 extends finite exact global argmax to every degree2–32, with precisely the parity-correct nonnode corners. PD-T250/251 prove all-degree normalized slopes and strict local decrease for0<h_x+h_y<=1/(2[n(n+1)]^3), a physical radius of order n^-6. This supersedes the historical PR17 all-n-slope gap above; weighted energy and the fixed scaled phase radius remain OPEN.
+
+PD-T099 stays OPEN: no effective global n0, unknown bridge33<=n<N_*, degree40 uncertified,33–39 unrun. PD-T249 adds three exact finite E-C comparisons; all-n E-C, interior-to-boundary comparison and uniform remainder/defect control remain OPEN. PD-T247/248/252 stay MEASURED; PD-N084–086 kill only their specified mechanisms. G8 coverage is partial, with no1-D proof transfer or novelty claim.
+
+[audit-01](../topics/padua-argmax-effective-20261103/audit-01.md) and [response-check-01](../topics/padua-argmax-effective-20261103/response-check-01.md) accept the existing scopes. Final registration/preparation are completed work after merge; no subsequent Claude check or computation is queued. Raw archive delivery and developer per-receipt compiler/GMP mapping remain disclosed limitations, not new proof obligations. Only AC merges.

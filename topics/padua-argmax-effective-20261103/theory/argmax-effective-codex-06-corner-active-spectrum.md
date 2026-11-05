@@ -1,7 +1,7 @@
-# PD-T?argmax-effective-codex-06a — Exact spectrum of the inward corner-active polynomial
+# PD-T250 — Exact spectrum of the inward corner-active polynomial
 
 ID kind: PD-T.
-Aliases: R6 diagonal-sign DCT; corner-active cosine coefficients; positive mixed spectrum.
+Aliases: R6 diagonal-sign DCT; corner-active cosine coefficients; positive mixed spectrum. PD-T?argmax-effective-codex-06a.
 Split from: R6 effective local comparison, which remains OPEN on a fixed scaled phase neighborhood.
 Split into: quantitative slopes and a smaller explicit physical radius are in codex-06b.
 
@@ -54,7 +54,7 @@ they do not assert sign stability on an n-independent neighborhood.
 ## Status by part
 
 Overall status: **PROVED**. [Supplementary independent reconstruction](../independent-math-checks-01.md)
-is complete and accepted; required Claude audit remains pending.
+is complete and accepted; Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the stated scope.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -215,3 +215,7 @@ zone rho<=1/64. Codex-06b uses a smaller explicit physical radius.
 2026-11-03, Codex gpt-6-astra ultra, handoff02 explicit allocation.
 Rules/input 8a1f394739293953e1566fd24a0a193cc78ff26f, base 440d107.
 New quantitative variant; no prior claim silently narrowed.
+
+## Final registration — 2026-11-05
+
+Final IDs and preserved provisional aliases: [id-map](../final-id-map.json). Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the existing stated scopes; no claim, proof or epistemic status changes at registration.

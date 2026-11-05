@@ -1,14 +1,14 @@
-# PD-N?argmax-effective-codex-06a — Complete corner-active spectral positivity fails
+# PD-N084 — Complete corner-active spectral positivity fails
 
 ID kind: PD-N.
-Aliases: R6 all-positive cosine coefficients; corner-active spectral majorant.
+Aliases: R6 all-positive cosine coefficients; corner-active spectral majorant. PD-N?argmax-effective-codex-06a.
 Split from: R6 initial coefficientwise-positivity candidate.
-Split into: the retained positive mixed spectrum is PD-T?argmax-effective-codex-06a.
+Split into: the retained positive mixed spectrum is PD-T250.
 
 ## Statement
 
 For the canonical inward corner-active polynomial defined in
-PD-T?argmax-effective-codex-06a, complete nonnegativity of its transformed
+PD-T250, complete nonnegativity of its transformed
 Chebyshev coefficients fails. In degree n=3 its nonconstant coefficient is
 
     C_01=(1-2*sqrt(2))/6 < 0.
@@ -24,7 +24,7 @@ degree n=3. This concerns the signed polynomial P_n, not lambda itself.
 ## Status by part
 
 Overall status: **PROVED**. [Supplementary independent reconstruction](../independent-math-checks-01.md)
-is complete and accepted; required Claude audit remains pending.
+is complete and accepted; Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the stated scope.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -42,7 +42,7 @@ grouped coefficients, local comparison or global PD-T099 follows.
 
 ## Depends on
 
-PD-T?argmax-effective-codex-06a exact coefficient formula, derived from
+PD-T250 exact coefficient formula, derived from
 PD-T101 and PD-T227.
 
 ## Proof or evidence
@@ -70,3 +70,7 @@ all-degree negative corner slopes despite this negative coefficient.
 2026-11-03, Codex gpt-6-astra ultra, rules/input
 8a1f394739293953e1566fd24a0a193cc78ff26f. Failed initial candidate retained;
 no change to the all-degree global conjecture.
+
+## Final registration — 2026-11-05
+
+Final IDs and preserved provisional aliases: [id-map](../final-id-map.json). Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the existing stated scopes; no claim, proof or epistemic status changes at registration.

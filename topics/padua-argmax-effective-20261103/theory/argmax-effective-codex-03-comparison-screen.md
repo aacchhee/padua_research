@@ -1,9 +1,9 @@
-# PD-T?argmax-effective-codex-03 — Bounded whole-cell and first-strip comparison screen
+# PD-T248 — Bounded whole-cell and first-strip comparison screen
 
 ID kind: PD-T.
-Aliases: G6; extended E-C numerical gate; I-B0 representative rectangle screen.
+Aliases: G6; extended E-C numerical gate; I-B0 representative rectangle screen. PD-T?argmax-effective-codex-03.
 Split from: none; continuation of IDEA-324's measured support, with separately defined I-B0 variant.
-Split into: exact spot inequalities have a separate record; the n4 sign obstruction is PD-N?argmax-effective-codex-04.
+Split into: exact spot inequalities have a separate record; the n4 sign obstruction is PD-N086.
 
 ## Statement
 
@@ -77,8 +77,12 @@ The test neither proves nor refutes a universal ordering. A missed source or tar
 
 ## Open items
 
-Find an exact comparison handling the distinct maximizing phases for E-C, and a uniform interior-to-boundary map or rigorous bound for I-B0. Exact spot results are kept separate and do not upgrade this measurement. Required Claude audit and full independent numerical replay remain pending; any bounded different-agent replay is reported at its actual scope.
+Find an exact comparison handling the distinct maximizing phases for E-C, and a uniform interior-to-boundary map or rigorous bound for I-B0. Exact spot results are kept separate and do not upgrade this measurement. Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the stated scope. Full independent numerical replay remains uncompleted; any bounded different-agent replay is reported at its actual scope.
 
 ## History
 
 2026-11-03. Mathematics assigned gpt-6-astra ultra; technical worker gpt-6.1-sol medium. Rules/input `8a1f394739293953e1566fd24a0a193cc78ff26f`, base `440d107`. The attempt froze E-C and I-B0 definitions before execution. The parent subsequently retained representative I-B0 degrees for the bounded resource budget, while keeping every E-C degree13…60. The earlier intended broader I-B0 range is preserved in the attempt; it is not reported as executed.
+
+## Final registration — 2026-11-05
+
+Final IDs and preserved provisional aliases: [id-map](../final-id-map.json). Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the existing stated scopes; no claim, proof or epistemic status changes at registration.

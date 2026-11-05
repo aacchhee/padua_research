@@ -1,4 +1,8 @@
-# IDEA?argmax-effective-r6-03 — Uniform per-cardinal affine sign preservation
+<a id="idea-347"></a>
+
+# IDEA-347 — Uniform per-cardinal affine sign preservation
+
+Provisional alias: `IDEA?argmax-effective-r6-03`.
 
 Aliases: termwise O(n-squared) gradient/value bound; fixed scaled sign radius.
 
@@ -33,12 +37,16 @@ Aliases: termwise O(n-squared) gradient/value bound; fixed scaled sign radius.
   stated affine sign-preservation/termwise ratio mechanism.
 - Disposition reason: proved superquadratic negative gradient/value ratio.
   True-cardinal sign stability, aggregate control and argmax are not refuted.
-- Canonical theory / negative-result ID: PD-N?argmax-effective-codex-06b,
+- Canonical theory / negative-result ID: PD-N085,
   theory/argmax-effective-codex-06-affine-sign-obstruction.md.
 - Topic / audit / history: registered before first test in the R6 attempt;
-  2026-11-03, Codex gpt-6-astra ultra; [supplementary independent review](../independent-math-checks-01.md) accepted; Claude audit pending.
+  2026-11-03, Codex gpt-6-astra ultra; [supplementary independent review](../independent-math-checks-01.md) accepted; Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the stated scope.
 
-# IDEA?argmax-effective-r6-04 — Exact spectral proof of all-degree normalized slopes
+<a id="idea-348"></a>
+
+# IDEA-348 — Exact spectral proof of all-degree normalized slopes
+
+Provisional alias: `IDEA?argmax-effective-r6-04`.
 
 Aliases: corner derivative moment bound; edge-mode pairing; explicit shrinking radius.
 
@@ -72,8 +80,12 @@ Aliases: corner derivative moment bound; edge-mode pairing; explicit shrinking r
   fixed phase-zone comparison remains OPEN, not rejected.
 - Disposition reason: slope premise is proved; the explicit radius has
   physical scale n^-6, insufficient to replace the fixed-phase bound.
-- Canonical theory / negative-result ID: PD-T?argmax-effective-codex-06b,
+- Canonical theory / negative-result ID: PD-T251,
   theory/argmax-effective-codex-06-uniform-slopes-local-radius.md.
 - Topic / audit / history: 2026-11-03, Codex gpt-6-astra ultra; separate
   analytic reviewer has checked the proof; [durable independent receipt](../independent-math-checks-01.md)
-  accepted and required Claude audit remains pending.
+  accepted and Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the stated scope.
+
+## Final registration — 2026-11-05
+
+Final IDs and preserved provisional aliases: [id-map](../final-id-map.json). Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the existing stated scopes; no claim, proof or epistemic status changes at registration.

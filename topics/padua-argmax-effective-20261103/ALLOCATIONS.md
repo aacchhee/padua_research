@@ -31,3 +31,25 @@ Completion recheck2026-11-03: open PRs are19 and20. PR20 head
 and reserves PD-T266–285, PD-N092–099, IDEA356–375, LIT474–481 from its
 first pushed514e376. No overlap with this topic. This recheck does not
 assign final IDs or replace the mandatory fresh scan at preparation.
+
+
+## Final preparation union scan — 2026-11-05
+
+The [fresh scan](allocation-scan.json) reads 55 complete ledger/registry files
+at main `440d1079e42c3ef21c40d1cf8870f5b206410c6a` and open PRs19–24.
+All returned closed PRs are merged; no closed-unmerged reservation is missing.
+The machine-readable receipt pins each head and each full file's SHA256/size;
+all ledger copies include inherited reservations, retired-range information
+and permanent gaps. The qualified namespace maxima including reservations
+are PD-T363, PD-N131, IDEA453, LIT593. PR23 reserves T294–323/N104–115/
+IDEA384–413/LIT574–581; PR24 reserves T324–363/N116–131/IDEA414–453/
+LIT582–593. No range overlaps this topic or another live topic.
+
+Assign from this topic's existing first-published reservation only:
+PD-T246–252 (7), PD-N084–086 (3), IDEA336–348 (13), LIT466–470 (5).
+Reuse existing LIT-379 only for its explicitly bounded rereading addendum.
+The exact provisional-to-final mapping is in final-id-map.json. Permanent
+unused gaps: PD-T253–265, PD-N087–091, IDEA349–355, LIT471–473.
+No range shifts, new reservations or accepted-ID renumbering occur.
+The historical initial scan is preserved by the Git blob recorded in the
+fresh receipt. Shared import: [batch ledger](../padua-batch-20261031/ALLOCATIONS.md).

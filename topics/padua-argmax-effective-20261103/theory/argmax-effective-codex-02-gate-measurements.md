@@ -1,7 +1,7 @@
-# PD-T?argmax-effective-codex-02 — Finite G2/G3/G4 gate measurements
+# PD-T247 — Finite G2/G3/G4 gate measurements
 
 ID kind: PD-T.
-Aliases: extended local corner constant; global primitive phase-grid screen; representative odd-center defect screen.
+Aliases: extended local corner constant; global primitive phase-grid screen; representative odd-center defect screen. PD-T?argmax-effective-codex-02.
 Split from: none; supporting measurements for OPEN PD-T099.
 Split into: none. No theorem or range of PD-T099 is proved by this record.
 
@@ -74,3 +74,7 @@ Bound variation between phase/direction samples; control cancellation rigorously
 ## History
 
 2026-11-03: Codex gates worker, gpt-6.1-sol medium, created as a durable MEASURED home for completed G2/G3/G4 extensions. Original pilot results and their smaller finite scope remain in the Claude pilot record. Supplementary checks do not replace the required Claude audit.
+
+## Final registration — 2026-11-05
+
+Final IDs and preserved provisional aliases: [id-map](../final-id-map.json). Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the existing stated scopes; no claim, proof or epistemic status changes at registration.

@@ -1,7 +1,7 @@
-# PD-N?argmax-effective-codex-06b — An affine per-cardinal corner sign test cannot give a fixed phase radius
+# PD-N085 — An affine per-cardinal corner sign test cannot give a fixed phase radius
 
 ID kind: PD-N.
-Aliases: R6 termwise ratio obstruction; source index (3,1); n-cubed gradient/value ratio.
+Aliases: R6 termwise ratio obstruction; source index (3,1); n-cubed gradient/value ratio. PD-N?argmax-effective-codex-06b.
 Split from: R6 uniform per-cardinal scaled-gradient candidate.
 Split into: none.
 
@@ -35,7 +35,7 @@ Taylor terms, whose signs are not claimed by this result.
 ## Status by part
 
 Overall status: **PROVED**. [Supplementary independent reconstruction](../independent-math-checks-01.md)
-is complete and accepted; required Claude audit remains pending.
+is complete and accepted; Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the stated scope.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -96,3 +96,7 @@ aggregate control is the outstanding local obligation.
 rules/input 8a1f394739293953e1566fd24a0a193cc78ff26f, base440d107.
 The scope is an affine proof-step failure, not a local-maximizer
 counterexample or a rejection of the reflection-first route.
+
+## Final registration — 2026-11-05
+
+Final IDs and preserved provisional aliases: [id-map](../final-id-map.json). Claude [audit-01](../audit-01.md) and [response-check-01](../response-check-01.md) accept the existing stated scopes; no claim, proof or epistemic status changes at registration.
