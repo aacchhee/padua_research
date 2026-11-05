@@ -1,4 +1,6 @@
-# PD-T?mz2d-frontier-codex-91 — Certified signed Padua spectrum at m80
+# PD-T299 — Certified signed Padua spectrum at m80
+
+Development alias: `PD-T?mz2d-frontier-codex-91`. Final ID assigned during audited preparation; [mapping](../preparation/final-id-map.json).
 
 ID kind: PD-T (provisional; orchestrator assigns final ID).
 Aliases: G1 m80 native extension; finite m80 signed-dominance certificate.
@@ -78,3 +80,5 @@ Only the displayed m80 case. No contiguous integer interval, all-m bound, endpoi
 2026-11-05, after actual independent m80 PASS and inspection of source/receipt/report: upgraded this separate case to PROVED computer-assisted development. Required Claude audit remains pending. No additional integer size is inherited from the status change.
 
 2026-11-05, documentation response to audit-01: the pending wording in the earlier dated history above records the development state at that time. Claude audit-01 subsequently accepted the mathematics; response-01 records the permitted editorial changes. No earlier execution or statement is relabeled.
+
+2026-11-05: mechanical final-ID registration after accepted Claude audit-01 and response-01. The earlier audited source/receipt identities are historical; proof content changes only by ID substitution.

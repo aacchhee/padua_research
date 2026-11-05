@@ -5,7 +5,9 @@ Codex mathematical worker; requested gpt-6.1-sol xhigh; resolved runtime
 metadata not independently exposed. Gate scope and G5 preregistration:
 `attempts/F4.md`. No numerical computation at registration.
 
-## IDEA?mz2d-frontier-codex-f4-01 — density tail in the actual weighted L1 norm
+## IDEA-395 — density tail in the actual weighted L1 norm
+
+Original provisional ID: `IDEA?mz2d-frontier-codex-f4-01`.
 
 Aliases: signed-cardinal density; triangular Chebyshev density truncation;
 positive main density plus endpoint-controlled remainder.
@@ -48,11 +50,13 @@ positive main density plus endpoint-controlled remainder.
 - Disposition: retained; PROVED in development, supplementary independent
   review and required Claude audit pending. Canonical record:
   `theory/f4-uniform-density-bound.md`,
-  `PD-T?mz2d-frontier-codex-f4-01`. No PD-N is generated.
+  `PD-T297`. No PD-N is generated.
 - Topic / audit / history: F4; supplementary check and required Claude
   audit pending.
 
-## IDEA?mz2d-frontier-codex-f4-02 — numerical sign-pattern lower witnesses
+## IDEA-396 — numerical sign-pattern lower witnesses
+
+Original provisional ID: `IDEA?mz2d-frontier-codex-f4-02`.
 
 Aliases: infinity-to-two quadratic maximization; alternating signed input;
 continuous disjoint-tent realization.
@@ -76,7 +80,9 @@ continuous disjoint-tent realization.
   proof's uniform result kept separate from finite lower witnesses.
 - Canonical record: preregistration `attempts/F4.md`; no PD-N.
 
-## IDEA?mz2d-frontier-codex-f4-03 — sharper raw Chebyshev L1 comparison
+## IDEA-397 — sharper raw Chebyshev L1 comparison
+
+Original provisional ID: `IDEA?mz2d-frontier-codex-f4-03`.
 
 Aliases: endpoint-cutoff logarithmic comparison; possible vanishing error.
 
@@ -97,3 +103,22 @@ Aliases: endpoint-cutoff logarithmic comparison; possible vanishing error.
 - Actual result: not tested or used.
 - Disposition: deferred to avoid unnecessary dependence in the uniform proof.
 - Canonical record: none; no PD-N for deferral.
+
+
+## Audited preparation — current dispositions (2026-11-05)
+
+Final allocation follows the cleared live union scan and [final-ID map](preparation/final-id-map.json). Original provisional IDs and all descriptive aliases are preserved. Earlier development-time pending, OPEN and deferred wording above is historical wherever superseded by the dated resolution or this table. [Claude audit-01](audit-01.md) accepted the mathematics and dispositions at candidate `dee638408505c9977f3febd98fdd42c9bc512c92`; [response-01](response-01.md) resolves its documentation findings. This mechanical registration adds no proof, execution, novelty claim or status upgrade.
+
+AC’s display remains binding: PD-T028/110/116 keep Status OPEN with REJECTED: refuted disposition and PROVED negative links. Their original positive formulations are historical, not unresolved or usable assertions; PD-T027’s genuine 1D gap/limit target remains OPEN.
+
+| Final candidate / original alias | Current disposition and exact scope |
+|---|---|
+| IDEA-395; `IDEA?mz2d-frontier-codex-f4-01` | Retained PROVED, [PD-T297](theory/f4-uniform-density-bound.md): every m>=2 and 0<=n<m, 2<=||H_(m,n)||<30. Resolves unchanged PD-T114; PD-N052’s failed absolute-Gram majorants remain unchanged. |
+| IDEA-396; `IDEA?mz2d-frontier-codex-f4-02` | Deferred / equivalent application of PD-T112; G5 NOT RUN. The uniform theorem supersedes the boundedness-screen purpose; resume only for sharper finite measurements, kept separate from the theorem. No PD-N. |
+| IDEA-397; `IDEA?mz2d-frontier-codex-f4-03` | Deferred, not tested or used; resume with the actual forward weighted-L1 sampling proof. No PD-N and no dependence of the uniform theorem on this proposed sharpening. |
+
+Result aliases retained after mechanical reference substitution:
+
+| Original provisional result | Final ID |
+|---|---|
+| `PD-T?mz2d-frontier-codex-f4-01` | PD-T297 |

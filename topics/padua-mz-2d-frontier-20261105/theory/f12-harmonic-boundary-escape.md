@@ -1,9 +1,11 @@
-# PD-T?mz2d-frontier-codex-11 — a low-Rayleigh harmonic family escapes every fixed microscopic edge layer
+# PD-T294 — a low-Rayleigh harmonic family escapes every fixed microscopic edge layer
+
+Development alias: `PD-T?mz2d-frontier-codex-11`. Final ID assigned during audited preparation; [mapping](../preparation/final-id-map.json).
 
 ID kind: PD-T.
 Aliases: mesoscopic harmonic mass; endpoint escape of the PD-T018
 witness; Padua marginal edge escape.
-Split from: IDEA?mz2d-frontier-codex-11's supporting localization question.
+Split from: IDEA-385's supporting localization question.
 Split into: none. This is not a split-off case of F1/F2's spectral targets.
 
 ## Statement
@@ -197,3 +199,5 @@ growth constants and odd-m behavior remain unresolved.
 2026-11-05, Codex F1/F2 developer, requested gpt-6.1-sol xhigh; runtime
 model metadata unexposed. The predecessor witness is retained unchanged;
 only its stated mass profile is new in this local development. No Git.
+
+2026-11-05: mechanical final-ID registration after accepted Claude audit-01 and response-01. The earlier audited source/receipt identities are historical; proof content changes only by ID substitution.

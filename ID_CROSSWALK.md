@@ -1247,3 +1247,39 @@ Original-to-split history: PD-T098's constant-term portion → PD-T271; its subs
 ### Padua Lebesgue follow-ups — T1 count completion, 2026-11-03
 
 Existing aliases retain exactly the same final IDs: PD-T?proof-attempts-2-codex-61 → PD-T180; PD-T?proof-attempts-2-codex-65 → PD-T184; IDEA?proof-attempts-2-codex-n8-cover → IDEA-299. No new final ID or second allocation. PD-T100's original measured n3–8 observations remain MEASURED, while separate degree-eight finite proofs now establish44interior (PD-T184) and62total=44interior+16open-edge+2corner (PD-T180). The original-to-split mapping is retained; this is completion of existing targets, not a renumbering or a retroactive upgrade of the search. Earlier OPEN/deadline entries remain historical and are superseded only at those exact count scopes. PD-T181 global equality stays its separate accepted PR17 theorem; PD-T183 remains its separate accepted lower bound. No PD-T099 bridge or all-degree assertion is changed. [Completion](topics/padua-lebesgue-followups-20261103/theory/t1-closed-count.md), [actual separate replays and final gates](topics/padua-lebesgue-followups-20261103/independent-checks-t1.md). [Claude audit-01](topics/padua-lebesgue-followups-20261103/audit-01.md); [response-01](topics/padua-lebesgue-followups-20261103/response-01.md).
+
+## Signed Padua MZ frontier — audited final registration, 2026-11-05
+
+Source: [audit-01](topics/padua-mz-2d-frontier-20261105/audit-01.md) and [response-01](topics/padua-mz-2d-frontier-20261105/response-01.md). [Topic reservation](topics/padua-mz-2d-frontier-20261105/ALLOCATIONS.md) is imported unchanged into the [shared ledger](topics/padua-batch-20261031/ALLOCATIONS.md). No existing ID is renumbered; original aliases and audited source hashes remain historical provenance.
+
+| Development alias | Final ID | Scope / durable home |
+|---|---|---|
+| PD-T?mz2d-frontier-codex-11 | PD-T294 | PROVED; [record](topics/padua-mz-2d-frontier-20261105/theory/f12-harmonic-boundary-escape.md) |
+| PD-T?mz2d-frontier-codex-12 | PD-T295 | PROVED; [record](topics/padua-mz-2d-frontier-20261105/theory/f12-local-weight-asymptotic.md) |
+| PD-T?mz2d-frontier-codex-f3-01 | PD-T296 | PROVED; [record](topics/padua-mz-2d-frontier-20261105/theory/f3-smooth-diamond-reference.md) |
+| PD-T?mz2d-frontier-codex-f4-01 | PD-T297 | PROVED; [record](topics/padua-mz-2d-frontier-20261105/theory/f4-uniform-density-bound.md) |
+| PD-T?mz2d-frontier-codex-90 | PD-T298 | PROVED; [record](topics/padua-mz-2d-frontier-20261105/theory/cert-finite-extension.md) |
+| PD-T?mz2d-frontier-codex-91 | PD-T299 | PROVED; [record](topics/padua-mz-2d-frontier-20261105/theory/cert-finite-extension-m80.md) |
+| PD-T?mz2d-frontier-codex-92 | PD-T300 | MEASURED; [record](topics/padua-mz-2d-frontier-20261105/theory/frontier-measurements.md) |
+| PD-N?mz2d-frontier-codex-10 | PD-N104 | PROVED; [record](topics/padua-mz-2d-frontier-20261105/theory/f12-1d-sign-discard-obstruction.md) |
+| PD-N?mz2d-frontier-codex-13 | PD-N105 | PROVED; [record](topics/padua-mz-2d-frontier-20261105/theory/f12-eventual-negative-carrier.md) |
+| PD-N?mz2d-frontier-codex-14 | PD-N106 | PROVED; [record](topics/padua-mz-2d-frontier-20261105/theory/f12-eventual-upper-carrier.md) |
+| PD-N?mz2d-frontier-codex-f3-01 | PD-N107 | PROVED; [record](topics/padua-mz-2d-frontier-20261105/theory/f3-fixed-ratio-threshold.md) |
+| IDEA?mz2d-frontier-codex-10 | IDEA-384 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f12.md) |
+| IDEA?mz2d-frontier-codex-11 | IDEA-385 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f12.md) |
+| IDEA?mz2d-frontier-codex-12 | IDEA-386 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f12.md) |
+| IDEA?mz2d-frontier-codex-13 | IDEA-387 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f12.md) |
+| IDEA?mz2d-frontier-codex-14 | IDEA-388 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f12.md) |
+| IDEA?mz2d-frontier-codex-15 | IDEA-389 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f12.md) |
+| IDEA?mz2d-frontier-codex-16 | IDEA-390 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f12.md) |
+| IDEA?mz2d-frontier-codex-f3-01 | IDEA-391 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f3.md) |
+| IDEA?mz2d-frontier-codex-f3-02 | IDEA-392 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f3.md) |
+| IDEA?mz2d-frontier-codex-f3-03 | IDEA-393 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f3.md) |
+| IDEA?mz2d-frontier-codex-f3-04 | IDEA-394 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f3.md) |
+| IDEA?mz2d-frontier-codex-f4-01 | IDEA-395 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f4.md) |
+| IDEA?mz2d-frontier-codex-f4-02 | IDEA-396 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f4.md) |
+| IDEA?mz2d-frontier-codex-f4-03 | IDEA-397 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f4.md) |
+
+Original-target mapping: PD-T028 positivity/endpoint-order/eta assertions are refuted by PD-N105/106; PD-T110 upper assertion by PD-N106; PD-T116 universal fixed-ratio assertion by PD-N107. Per AC, all three Status cells remain exactly OPEN with REJECTED: refuted disposition, while their negative statements are PROVED under the new IDs. PD-T114 is PROVED at its unchanged endpoint target via the stronger all-n<m PD-T297 theorem. The positive reference PD-T296 is supporting context, not a signed transfer or proved parameter slice. Historical f3-signed-target-open remains the existing PD-T116 continuation and receives no duplicate ID. PD-T027 remains OPEN.
+
+Permanent unused gaps: T301–323,N108–115,IDEA398–413,LIT574–581. No new LIT assignment, no reuse of another topic’s reservation, and no effective finite onset or exact m1600 certificate.

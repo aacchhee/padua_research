@@ -38,7 +38,9 @@ construction; primary-literature comparison remains a separate obligation.
 The parent reported G0 PASS before any mathematical program execution by
 this worker. The work below is analytic and uses no computed evidence.
 
-## IDEA?mz2d-frontier-codex-f3-01 — quartic diamond localization
+## IDEA-391 — quartic diamond localization
+
+Original provisional ID: `IDEA?mz2d-frontier-codex-f3-01`.
 
 Aliases: squared-Fejér plateau; smooth diamond reconstruction; lifted
 checkerboard packing; positive product-sine sampled norm.
@@ -88,10 +90,12 @@ checkerboard packing; positive product-sine sampled norm.
 - Disposition: **retained**, analytic supporting result PROVED in
   development, independent/Claude audit pending. The signed fixed-ratio
   target remains OPEN; no theta above one half is claimed solved.
-- Canonical result: `PD-T?mz2d-frontier-codex-f3-01`.
+- Canonical result: `PD-T296`.
 - History: 2026-11-05, F3 after full gate; no numerical computation.
 
-## IDEA?mz2d-frontier-codex-f3-02 — cancellation relative to the positive reference
+## IDEA-392 — cancellation relative to the positive reference
+
+Original provisional ID: `IDEA?mz2d-frontier-codex-f3-02`.
 
 Aliases: restricted signed correction; signed residual in a regularized
 sampling metric; smooth-diamond signed completion.
@@ -134,7 +138,9 @@ sampling metric; smooth-diamond signed completion.
   in [the F3 target record](theory/f3-signed-target-open.md).
 - History: 2026-11-05, analytic continuation, no spectra run.
 
-## IDEA?mz2d-frontier-codex-f3-03 — thin-shell perturbation near half-exactness
+## IDEA-393 — thin-shell perturbation near half-exactness
+
+Original provisional ID: `IDEA?mz2d-frontier-codex-f3-03`.
 
 Aliases: high-total-degree defect compression; narrow active shell;
 near-half continuity candidate.
@@ -176,7 +182,9 @@ near-half continuity candidate.
   signed target remains existing PD-T116. No new substantive theorem
   or negative-result ID is allocated for this routine observation.
 
-## IDEA?mz2d-frontier-codex-f3-04 — carrier/envelope corner trial
+## IDEA-394 — carrier/envelope corner trial
+
+Original provisional ID: `IDEA?mz2d-frontier-codex-f3-04`.
 
 Aliases: high-x carrier with low-y envelope; near-half corner packet;
 critical-diagonal logarithmic trial screen.
@@ -219,7 +227,7 @@ critical-diagonal logarithmic trial screen.
 ## Dated resolution after the initial F3 boundary
 
 Later in the same session, the F1/F2 developer produced the common
-fixed-node weight lemma `PD-T?mz2d-frontier-codex-12` and the exact
+fixed-node weight lemma `PD-T295` and the exact
 parity-selecting carrier. The F3 developer read and reconstructed the
 complete supporting proof, checked domination, and evaluated the carrier
 profile sums using finite exact trapezoid identities. This changes the
@@ -230,7 +238,7 @@ positive reference theorem or a promotion of a finite numerical probe.
   is positive and is different from Q_m. Its proof is unaffected.
 - Candidate f3-02's intended uniform signed-positive completion is
   **REJECTED: refuted** above half-exactness by
-  `PD-N?mz2d-frontier-codex-f3-01`. The earlier deferred wording records
+  `PD-N107`. The earlier deferred wording records
   its pre-countersequence state. This is now an actual theorem
   refutation, not rejection due to failure to find a proof.
 - Candidate f3-03's proposed uniform near-half small-defect modulus
@@ -250,7 +258,7 @@ The [classification theorem](theory/f3-fixed-ratio-threshold.md) is a
 known-mechanism synthesis of that new common lemma and carrier packet,
 with the new precise quantified conclusion: theta<=1/2 is exact, while
 every theta>1/2 fails signed strong MZ eventually. Its provisional ID is
-`PD-N?mz2d-frontier-codex-f3-01`; no duplicate negative is allocated for
+`PD-N107`; no duplicate negative is allocated for
 the two failed positive-proof candidates. The historical novelty
 classification remains qualified; no primary-literature claim is made.
 
@@ -267,3 +275,27 @@ lifts were checked through m=24. The input proof SHA-256 was
 This is separate supplementary verification of the supporting result;
 it is not a signed-spectrum computation, an all-m computer proof, or
 the required Claude audit. The F3 developer did not rerun that checker.
+
+
+## Audited preparation — current dispositions (2026-11-05)
+
+Final allocation follows the cleared live union scan and [final-ID map](preparation/final-id-map.json). Original provisional IDs and all descriptive aliases are preserved. Earlier development-time pending, OPEN and deferred wording above is historical wherever superseded by the dated resolution or this table. [Claude audit-01](audit-01.md) accepted the mathematics and dispositions at candidate `dee638408505c9977f3febd98fdd42c9bc512c92`; [response-01](response-01.md) resolves its documentation findings. This mechanical registration adds no proof, execution, novelty claim or status upgrade.
+
+AC’s display remains binding: PD-T028/110/116 keep Status OPEN with REJECTED: refuted disposition and PROVED negative links. Their original positive formulations are historical, not unresolved or usable assertions; PD-T027’s genuine 1D gap/limit target remains OPEN.
+
+| Final candidate / original alias | Current disposition and exact scope |
+|---|---|
+| IDEA-391; `IDEA?mz2d-frontier-codex-f3-01` | Retained PROVED positive-reference result, [PD-T296](theory/f3-smooth-diamond-reference.md), for every fixed ratio below one. This is not a signed comparison or a completion of IDEA-226’s signed obligation. |
+| IDEA-392; `IDEA?mz2d-frontier-codex-f3-02` | REJECTED: refuted for the intended uniform signed-positive completion above half-exactness by PROVED [PD-N107](theory/f3-fixed-ratio-threshold.md). The earlier deferred record is historical; no blanket rejection of signed-comparison techniques. |
+| IDEA-393; `IDEA?mz2d-frontier-codex-f3-03` | REJECTED: refuted for the proposed uniform near-half small-defect modulus by PROVED [PD-N107](theory/f3-fixed-ratio-threshold.md). Exact compression remains valid; no separate PD-N for that routine observation or the dimension-only shortcut. |
+| IDEA-394; `IDEA?mz2d-frontier-codex-f3-04` | Retained in the independently supplied successful exact-parity variant, [PD-N105](theory/f12-eventual-negative-carrier.md)/[PD-N107](theory/f3-fixed-ratio-threshold.md), consolidated with IDEA-389. Original unformed trial remains historically unexecuted; no retrospective preregistration or duplicate negative. |
+
+Result aliases retained after mechanical reference substitution:
+
+| Original provisional result | Final ID |
+|---|---|
+| `PD-T?mz2d-frontier-codex-12` | PD-T295 |
+| `PD-T?mz2d-frontier-codex-f3-01` | PD-T296 |
+| `PD-N?mz2d-frontier-codex-f3-01` | PD-N107 |
+
+The supplementary receipt above pins an uncommitted metadata version `a55b401…`. Audit-01 records its actual PASS rerun on committed diamond version `dfbc44a3ec0589f794457fe14c3212b730d62a26c66bffa3e1d4a7295e62550d`; no checker was rerun for preparation. Positive-reference and signed claims remain separate.

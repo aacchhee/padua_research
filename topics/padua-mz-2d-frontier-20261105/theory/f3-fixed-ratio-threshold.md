@@ -1,11 +1,13 @@
-# PD-N?mz2d-frontier-codex-f3-01 — half-exactness is the exact threshold for uniform signed strong MZ
+# PD-N107 — half-exactness is the exact threshold for uniform signed strong MZ
+
+Development alias: `PD-N?mz2d-frontier-codex-f3-01`. Final ID assigned during audited preparation; [mapping](../preparation/final-id-map.json).
 
 ID kind: PD-N.
 Aliases: F3 exact ratio threshold; every super-half ratio fails;
 even-carrier Fejér countersequence.
 Split from: the positive-inequality assertion in existing PD-T116.
 Split into: none. The common fixed-node weight lemma is separately
-PROVED as `PD-T?mz2d-frontier-codex-12`.
+PROVED as `PD-T295`.
 
 ## Statement
 
@@ -121,16 +123,16 @@ diamond theorem is unaffected; it is not Q_m.
 
 ## Depends on
 
-`PD-T?mz2d-frontier-codex-12`,
+`PD-T295`,
 [fixed-node weight limit and global majorant](f12-local-weight-asymptotic.md),
 whose complete proof was read and independently reconstructed by this
 F3 developer before the corollary. Its derivation uses the locally
 proved cardinal identity PD-T101/111 and elementary Fourier tails.
 The carrier mechanism was supplied by the F1/F2 developer; its full
 negative packet theorem is
-[`PD-N?mz2d-frontier-codex-13`](f12-eventual-negative-carrier.md).
+[`PD-N105`](f12-eventual-negative-carrier.md).
 The positive endpoint in (U) depends on the full separate upper-carrier
-theorem [`PD-N?mz2d-frontier-codex-14`](f12-eventual-upper-carrier.md),
+theorem [`PD-N106`](f12-eventual-upper-carrier.md),
 also read and reconstructed by this developer. Only its parameter and
 degree specialization is needed below; its core proof is not duplicated.
 The elementary finite trapezoid and norm calculations are given below.
@@ -312,7 +314,7 @@ threshold and its negative consequences.
 ### 5. The same degree window admits the upper countersequence
 
 Apply the separate PROVED upper-carrier theorem
-`PD-N?mz2d-frontier-codex-14` with its parameters a=b=delta/4.
+`PD-N106` with its parameters a=b=delta/4.
 Its assumption `2a+b<1/2` holds because `3delta/4<3/8<1/2`.
 For sufficiently large m, r_m>=1 so its sine-product polynomial is
 nonzero, and its degree obeys
@@ -357,3 +359,5 @@ new fixed-node/carrying-packet mechanism then supplied a genuine
 countersequence. This corollary records the exact theta classification
 without deleting the earlier incomplete proof routes. No mathematical
 program was executed by this developer and no final ID allocated.
+
+2026-11-05: mechanical final-ID registration after accepted Claude audit-01 and response-01. The earlier audited source/receipt identities are historical; proof content changes only by ID substitution.

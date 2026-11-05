@@ -1,11 +1,13 @@
-# PD-T?mz2d-frontier-codex-12 — logarithmic fixed-node weights with a global summable majorant
+# PD-T295 — logarithmic fixed-node weights with a global summable majorant
+
+Development alias: `PD-T?mz2d-frontier-codex-12`. Final ID assigned during audited preparation; [mapping](../preparation/final-id-map.json).
 
 ID kind: PD-T.
 Aliases: spectral-corner weight asymptotic; carrier-packet domination;
 even-m Padua boundary weight limit.
 Split from: the common supporting lemma for F1/F2 carrier packets.
 Split into: signed negative and positive packet consequences are separate
-PD-N?mz2d-frontier-codex-13 and -14.
+PD-N105 and -14.
 
 ## Statement
 
@@ -251,3 +253,5 @@ from this proof alone.
 metadata unexposed. G0 PASS was received before mathematical tests were
 authorized. This proof is analytic. Parent and two independent workers
 received the delicate decomposition and domination before publication.
+
+2026-11-05: mechanical final-ID registration after accepted Claude audit-01 and response-01. The earlier audited source/receipt identities are historical; proof content changes only by ID substitution.

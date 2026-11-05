@@ -1,4 +1,6 @@
-# PD-T?mz2d-frontier-codex-f4-01 — uniform signed Padua coefficient norm
+# PD-T297 — uniform signed Padua coefficient norm
+
+Development alias: `PD-T?mz2d-frontier-codex-f4-01`. Final ID assigned during audited preparation; [mapping](../preparation/final-id-map.json).
 
 ID kind: PD-T. Aliases: weighted-L1 density-tail bound; signed Padua
 hyperinterpolation stability. Split from: PD-T114, whose unchanged target
@@ -56,7 +58,7 @@ steps of (1); they are not separate asymptotic targets.
 |---|---|---|
 | Uniform norm bound (1), every m>=2 and 0<=n<m | PROVED in development | Analytic proof below; Claude audit-01 accepted |
 
-Candidate disposition: retained, IDEA?mz2d-frontier-codex-f4-01.
+Candidate disposition: retained, IDEA-395.
 No negative candidate or global novelty claim is asserted.
 
 ## Depends on
@@ -281,3 +283,5 @@ PD-T114 is preserved, with this proposed substantive resolution pending
 independent audit and final-ID integration.
 
 2026-11-05, documentation response to audit-01: the pending wording in the earlier dated history above records the development state at that time. Claude audit-01 subsequently accepted the mathematics; response-01 records the permitted editorial changes. No earlier execution or statement is relabeled.
+
+2026-11-05: mechanical final-ID registration after accepted Claude audit-01 and response-01. The earlier audited source/receipt identities are historical; proof content changes only by ID substitution.

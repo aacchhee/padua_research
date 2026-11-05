@@ -285,3 +285,13 @@ PR19 is already merged. PR20 is prepared next against current main; other
 PR21–24 remain drafts and must refresh before their own readiness. A disposable
 sequential squash rehearsal checks preservation, not approval of those drafts.
 Only AC merges.
+
+## PR23 signed Padua MZ frontier — unchanged reservation import and assignments
+
+2026-11-05; owner codex/padua-mz-2d-frontier-20261105. Fresh-range procedure supersedes historical single-owner prose; all accepted allocations, retired reservations and permanent gaps above remain unchanged.
+
+Import permanent T294–323(30),N104–115(12),IDEA384–413(30),LIT574–581(8), first published [e79c5767ff1e354b018861d827f67a481ee65cdf](https://github.com/aacchhee/padua_research/commit/e79c5767ff1e354b018861d827f67a481ee65cdf), linked from [PR23](https://github.com/aacchhee/padua_research/pull/23); [topic ledger](../padua-mz-2d-frontier-20261105/ALLOCATIONS.md). This is import, not a re-reservation. Original scan/main/heads and counts remain in that ledger.
+
+[Current union scan](../padua-mz-2d-frontier-20261105/preparation/allocation-scan.json) reads main d9b7cb8 and every open PR21–24 at pinned heads; no closed-unmerged reservation missing. PR24’s unchanged T324–363/N116–131/IDEA414–453/LIT582–593 is acknowledged, not assigned or modified here. PR21LIT482–561 and PR22T286–293/N100–103/IDEA376–383/LIT562–573 remain intact. Existing merged PR19/20 assignments and gaps are untouched.
+
+Assigned T294–300(7),N104–107(4),IDEA384–397(14), no LIT; [map](../padua-mz-2d-frontier-20261105/preparation/final-id-map.json). Permanent unused gaps:T301–323,N108–115,IDEA398–413,LIT574–581. Recheck live heads before readiness; no accepted ID renumbered. No AC merge order is inferred and only AC merges.

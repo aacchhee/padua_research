@@ -1,6 +1,6 @@
-# Proposed shared-record changes — NOT APPLIED
+# Shared-record change plan — applied during audited preparation
 
-Apply only after the required Claude audit and its findings are disposed, during PR preparation with fresh reservation scan. Final IDs come from this topic’s unchanged reservations; never renumber prior IDs. The original positive statements and every earlier proof/history body remain visible. REJECTED is a disposition, never an epistemic status. The OPEN cells below preserve the old positive assertions as historical labels; their disposition makes them unusable as hypotheses and the separate PD-N records carry PROVED refutations. AC confirmed this display on 2026-11-05 (audit-01); the preparer must preserve the Status OPEN cells; it is not a claim that the refuted assertions remain unresolved.
+Applied during preparation after audit-01 accepted and response-01 disposed the findings, using the fresh reservation scan in preparation/allocation-scan.json. The literal old/new blocks below remain historical proposals; canonical rows now use final mapped IDs and live audit links. Final IDs come from this topic’s unchanged reservations; never renumber prior IDs. The original positive statements and every earlier proof/history body remain visible. REJECTED is a disposition, never an epistemic status. The OPEN cells below preserve the old positive assertions as historical labels; their disposition makes them unusable as hypotheses and the separate PD-N records carry PROVED refutations. AC confirmed this display on 2026-11-05 (audit-01); the preparer must preserve the Status OPEN cells; it is not a claim that the refuted assertions remain unresolved.
 
 ## Literal PROOF_STATUS replacements
 

@@ -1,6 +1,6 @@
 # Signed Padua MZ frontier — development report
 
-Branch `codex/padua-mz-2d-frontier-20261105`, [draft PR23](https://github.com/aacchhee/padua_research/pull/23). Rules/input83cf6f1ee244f2e72057332a7ec04ee74db1f0de; development base440d1079e42c3ef21c40d1cf8870f5b206410c6a; response base5db1e01dcd2258f45de2adcaef43859e59734618 (merged without conflicts). Codex development: gpt-6.1-sol xhigh mathematics, medium technical work; distinct supplementary reconstruction: gpt-6-astra high. **Claude Opus5.5 xhigh [audit-01](audit-01.md): mathematics ACCEPTED at stated scopes; P3 editorial findings answered in [response-01](response-01.md).** Claims below are development results, with provisional IDs; merged registries are untouched.
+Branch `codex/padua-mz-2d-frontier-20261105`, [draft PR23](https://github.com/aacchhee/padua_research/pull/23). Rules/input83cf6f1ee244f2e72057332a7ec04ee74db1f0de; development base440d1079e42c3ef21c40d1cf8870f5b206410c6a; response base5db1e01dcd2258f45de2adcaef43859e59734618 (merged without conflicts). Codex development: gpt-6.1-sol xhigh mathematics, medium technical work; distinct supplementary reconstruction: gpt-6-astra high. **Claude Opus5.5 xhigh [audit-01](audit-01.md): mathematics ACCEPTED at stated scopes; P3 editorial findings answered in [response-01](response-01.md).** Claims below have accepted scopes and final IDs registered in this preparation; shared changes remain on this PR branch until AC merges. Preparation base: d9b7cb89460d4e46e44bbaa66ff766aa499b95ee.
 
 ## Outcomes
 
@@ -8,17 +8,17 @@ For the actual signed interpolatory Lebesgue Padua rule, the universal spectral 
 
 | Target | Development result | Durable record |
 |---|---|---|
-| F1 / PD-T110, endpoint upper threshold below2 | **Refuted analytically:** lambda_plus(m,m−1)→+infinity along evenm. Opposite-parity polynomial carrier has Q(p²)/logm→8ab/9>0 and bounded continuous norm. | [Upper carrier](theory/f12-eventual-upper-carrier.md), provisional PD-N…14 |
-| F2 / PD-T028, universal positivity, positive log-order and eta→1 | **Refuted analytically:** lambda_minus(m,m−1)→−infinity along evenm. Negative carrier has Q(p²)/logm→−16ab/9 and bounded continuous norm; hence eta diverges on that subsequence. | [Negative carrier](theory/f12-eventual-negative-carrier.md), provisional PD-N…13 |
-| F3 / PD-T116, signed strong MZ at every fixed ratio | **Sharp threshold classification:** eta=0 for0<=theta<=1/2 by exactness. For every1/2<theta<1, negative and positive carriers fit Pi_floor(theta*m) eventually; signed extrema diverge in opposite directions along evenm. | [Threshold](theory/f3-fixed-ratio-threshold.md), provisional PD-N…f3-01; both carrier records |
-| F4 / PD-T114, actual C→L2 norm | **PROVED:** every m>=2,0<=n<m satisfies2<=||H_(m,n)||<=C*=28.3763348311…<30. | [Weighted-L1 density proof](theory/f4-uniform-density-bound.md), provisional PD-T…f4-01 |
+| F1 / PD-T110, endpoint upper threshold below2 | **Refuted analytically:** lambda_plus(m,m−1)→+infinity along evenm. Opposite-parity polynomial carrier has Q(p²)/logm→8ab/9>0 and bounded continuous norm. | [Upper carrier](theory/f12-eventual-upper-carrier.md), PD-N106 |
+| F2 / PD-T028, universal positivity, positive log-order and eta→1 | **Refuted analytically:** lambda_minus(m,m−1)→−infinity along evenm. Negative carrier has Q(p²)/logm→−16ab/9 and bounded continuous norm; hence eta diverges on that subsequence. | [Negative carrier](theory/f12-eventual-negative-carrier.md), PD-N105 |
+| F3 / PD-T116, signed strong MZ at every fixed ratio | **Sharp threshold classification:** eta=0 for0<=theta<=1/2 by exactness. For every1/2<theta<1, negative and positive carriers fit Pi_floor(theta*m) eventually; signed extrema diverge in opposite directions along evenm. | [Threshold](theory/f3-fixed-ratio-threshold.md), PD-N107; both carrier records |
+| F4 / PD-T114, actual C→L2 norm | **PROVED:** every m>=2,0<=n<m satisfies2<=norm(H_(m,n), C→L2)<=C*=28.3763348311…<30. | [Weighted-L1 density proof](theory/f4-uniform-density-bound.md), PD-T297 |
 | 1-D sibling PD-T027 | **OPEN:** sharp CC upper limit and uniform gap remain unresolved. The absolute-coefficient intermediary cannot supply a uniform gap. | [Scoped obstruction](theory/f12-1d-sign-discard-obstruction.md), [boundary escape](theory/f12-harmonic-boundary-escape.md) |
 
 No explicit finite onset or smallest violating degree follows from the analytic carrier proofs. The new finite m1600 negative float hit is a separate uncertified observation. No odd-m classification or sharp extremal growth law is claimed.
 
 ## Why the spectral conclusion changes
 
-The common [weight theorem](theory/f12-local-weight-asymptotic.md), provisional PD-T…12, derives at every fixed retained near-corner index j,k, along evenm,
+The common [weight theorem](theory/f12-local-weight-asymptotic.md), PD-T295, derives at every fixed retained near-corner index j,k, along evenm,
 
 `m^4 w_jk/logm → −16 e_j e_k (−1)^j`, with e_0=1/2 and e_j=1 otherwise.
 
@@ -45,7 +45,7 @@ The posthoc float minimum at m1600,n1599 is approximately−0.0234144165903, res
 
 [Supplementary Astra reconstruction](independent-checks-math.md) records exact file hashes and actual separate analytic and finite checks. It supplements the completed required [Claude audit-01](audit-01.md); its P3 documentation response is [response-01](response-01.md). [Independent exact replay](independent-checks-cert.md) shares FLINT and the signed-dominance predicate but reconstructs the full pencil in a different language and alias implementation, uses fresh transform proposals, and actually executes every listed acceptance.
 
-The 84-entry evidence-manifest.json remains the frozen development inventory at dee638408505c9977f3febd98fdd42c9bc512c92; auditor additions and this documentation response are outside that historical inventory. It was verified against that exact Git candidate, rather than represented as a current-tree inventory; audited preparation must refresh the derived inventory. Scientific code, receipts and auditor records are unchanged by response-01.
+The original 84-entry inventory at dee638408505c9977f3febd98fdd42c9bc512c92 remains accessible in Git and pins the audited development candidate. Preparation refreshes the derived current-tree inventory with compact entries; original scientific receipts and auditor files remain byte-identical. The inventory helper change is metadata-only, not a certificate predicate change. Proof text is preserved under reversible ID substitution from the accepted response input.
 
 Code, short receipts and durable proofs are committed. Bulk exact matrices, eigenvectors and large screens are regenerable scratch output, with identities and commands; Padua cold-storage delivery is pending. No Windows access, external-machine computation or archival durability is claimed. [COLD_STORAGE.md](COLD_STORAGE.md) and the inventory distinguish actual staging from future delivery.
 
@@ -55,4 +55,8 @@ A signed-Padua MZ note can state the even-m fixed-node logarithmic weight theore
 
 ## Remaining obligations
 
-Claude xhigh audit-01 accepted the mathematics and statuses; response-01 records A1–A7 dispositions. Next is final-ID/shared-registry preparation with a fresh reservation union scan, preserving AC’s OPEN-plus-refuted display for PD-T028/110/116. Constructive finite thresholds, exact certification of the m1600 hit, sharp growth constants, odd-m behavior and the1-D PD-T027 question remain separate open tasks. Only AC merges.
+Claude xhigh audit-01 accepted the mathematics and statuses; response-01 records A1–A7 dispositions. Final-ID/shared-registry registration now uses T294–300/N104–107/IDEA384–397 after a fresh union scan, preserving AC’s OPEN-plus-refuted display for PD-T028/110/116. Preparation checks and independent protocol review determine readiness; no new mathematical audit or campaign is inferred. Constructive finite thresholds, exact certification of the m1600 hit, sharp growth constants, odd-m behavior and the1-D PD-T027 question remain separate open tasks. Only AC merges.
+
+## Final registration
+
+[Map](preparation/final-id-map.json): PD-T294 harmonic profile, PD-T295 fixed-node weights, PD-T296 positive reference, PD-T297 uniform norm, PD-T298/299 exact m60/m80, PD-T300 finite MEASURED numerical summary; PD-N104 intermediary obstruction, PD-N105/106 spectral countersequences, PD-N107 sharp ratio classification. IDEA384–397 preserve all fourteen candidates. No new LIT assignment; all unused reserved IDs remain permanent gaps. The MEASURED record only transcribes previously audited finite reports.

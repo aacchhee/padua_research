@@ -1,9 +1,11 @@
-# PD-T?mz2d-frontier-codex-90 — Certified signed Padua spectrum at m60
+# PD-T298 — Certified signed Padua spectrum at m60
+
+Development alias: `PD-T?mz2d-frontier-codex-90`. Final ID assigned during audited preparation; [mapping](../preparation/final-id-map.json).
 
 ID kind: PD-T (provisional; orchestrator assigns final ID).
 Aliases: G1 hybrid native certificate; C GMP pencil and FLINT signed-dominance congruence; finite m60 extension.
 Split from: verification support for PD-T028/PD-T110; their separate universal questions are not narrowed or decided by this finite result.
-Split into: m80 is a separate independently completed record, PD-T?mz2d-frontier-codex-91 in `cert-finite-extension-m80.md`.
+Split into: m80 is a separate independently completed record, PD-T299 in `cert-finite-extension-m80.md`.
 
 ## Statement
 
@@ -90,3 +92,5 @@ Only m60, n59. Positivity and upper bound2 in this case follow from the interval
 2026-11-05, Codex certifier worker, assigned gpt-6.1-sol medium: implementation-only native pencil port, frozen full-entry validation, exact m60/m80 producer acceptance; initial combined statement CONDITIONAL pending independent replay. The existing PD-T107 statement is unchanged.
 
 2026-11-05, after inspecting the separate replay worker's actual m60 receipt and record: split the initial statement by case. This file retains m60 with PROVED computer-assisted development status; m80 moved to separate provisional91 with CONDITIONAL status and its exact pending obligation preserved. Neither the universal nor the contiguous-range target is narrowed or relabeled.
+
+2026-11-05: mechanical final-ID registration after accepted Claude audit-01 and response-01. The earlier audited source/receipt identities are historical; proof content changes only by ID substitution.

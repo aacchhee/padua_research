@@ -1,12 +1,14 @@
-# PD-N?mz2d-frontier-codex-13 — an admissible carrier has eventual negative Padua energy
+# PD-N105 — an admissible carrier has eventual negative Padua energy
+
+Development alias: `PD-N?mz2d-frontier-codex-13`. Final ID assigned during audited preparation; [mapping](../preparation/final-id-map.json).
 
 ID kind: PD-N.
 Aliases: even-even carrier countersequence; signed Padua positivity
 failure; negative logarithmic sampled energy.
-Split from: IDEA?mz2d-frontier-codex-15. Original PD-T028 positivity
+Split from: IDEA-389. Original PD-T028 positivity
 and endpoint-order targets are preserved; this proves a countersequence.
-Split into: the common weight lemma is PD-T?mz2d-frontier-codex-12;
-the opposite-sign upper sequence is separate PD-N?...-14.
+Split into: the common weight lemma is PD-T295;
+the opposite-sign upper sequence is separate PD-N106.
 
 ## Statement
 
@@ -96,7 +98,7 @@ F3 synthesis, not duplicated here.
 
 ## Depends on
 
-PD-T?mz2d-frontier-codex-12: the exact fixed-node weight asymptotic and
+PD-T295: the exact fixed-node weight asymptotic and
 its whole-grid majorant. Elementary finite cosine orthogonality below.
 The argument uses no inherited positive Padua form, eigenvalue fit,
 external theorem or unproved weight-sign classification.
@@ -303,3 +305,5 @@ questions are refuted, rather than silently narrowed to a finite range.
 metadata unexposed. The original unmodulated Fejer packet was retained
 as measured/deferred, and replaced here by an exact parity carrier.
 This proof makes no use of a floating eigenvalue crossing. No Git.
+
+2026-11-05: mechanical final-ID registration after accepted Claude audit-01 and response-01. The earlier audited source/receipt identities are historical; proof content changes only by ID substitution.

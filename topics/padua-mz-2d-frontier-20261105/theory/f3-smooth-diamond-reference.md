@@ -1,4 +1,6 @@
-# PD-T?mz2d-frontier-codex-f3-01 — explicit positive reference MZ from a smooth diamond filter
+# PD-T296 — explicit positive reference MZ from a smooth diamond filter
+
+Development alias: `PD-T?mz2d-frontier-codex-f3-01`. Final ID assigned during audited preparation; [mapping](../preparation/final-id-map.json).
 
 ID kind: PD-T.
 Aliases: squared-Fejér diamond plateau; quartic diagonal localization;
@@ -87,7 +89,7 @@ reconstruction complete, Claude mathematical audit-01 accepted.
 | Positive-reference equivalence (1), including explicit constants | PROVED | Analytic proof below |
 | Exactly reconstructing smooth diamond kernel with weighted localization | PROVED | Constructive steps of the same supporting theorem |
 
-Candidate disposition: retained, `IDEA?mz2d-frontier-codex-f3-01`.
+Candidate disposition: retained, `IDEA-391`.
 This is a variant of classical smoothing and PD-T115, with explicit
 weighted localization previously unproved there. No historical novelty
 claim. This theorem initially left signed PD-T116 OPEN and is not a
@@ -401,3 +403,5 @@ norm equivalence is claimed.
 complete documented novelty gate. No Git, numerical program, claimed
 independent verification or final-ID allocation. The original signed
 target is retained verbatim in its own OPEN continuation record.
+
+2026-11-05: mechanical final-ID registration after accepted Claude audit-01 and response-01. The earlier audited source/receipt identities are historical; proof content changes only by ID substitution.

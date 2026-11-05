@@ -40,7 +40,9 @@ was searched for CC, MZ, Mastroianni/Russo, Hankel, Widom and localization;
 this is a bounded local predecessor screen, not an exhaustive literature
 search or primary fulltext reading. No PDF was opened.
 
-## IDEA?mz2d-frontier-codex-10 — limits of the absolute-coefficient intermediary
+## IDEA-384 — limits of the absolute-coefficient intermediary
+
+Original provisional ID: `IDEA?mz2d-frontier-codex-10`.
 
 Aliases: 1D uniform-gap Z-matrix barrier; central Dirichlet test;
 sign-discard comparison.
@@ -77,12 +79,14 @@ sign-discard comparison.
   targets remain OPEN.
 - Disposition reason: failed uniform sign-discard intermediary, with
   the exact quantifiers in the PD-N; no claim against other comparisons.
-- Canonical record: PD-N?mz2d-frontier-codex-10,
+- Canonical record: PD-N104,
   theory/f12-1d-sign-discard-obstruction.md.
 - Topic / audit / history: 2026-11-05; analytic, no computation needed;
   independent/Claude review pending.
 
-## IDEA?mz2d-frontier-codex-11 — mesoscopic mass of the admissible harmonic witness
+## IDEA-385 — mesoscopic mass of the admissible harmonic witness
+
+Original provisional ID: `IDEA?mz2d-frontier-codex-11`.
 
 Aliases: fixed-width endpoint escape; distributed logarithmic quasimode;
 Padua coordinate edge escape.
@@ -120,11 +124,13 @@ Padua coordinate edge escape.
 - Disposition: retained PROVED supporting statement; no F1/F2 target
   upgraded, no extremal-vector or eigenvalue-order conclusion.
 - Disposition reason: successful analytic supporting result.
-- Canonical record: PD-T?mz2d-frontier-codex-11,
+- Canonical record: PD-T294,
   theory/f12-harmonic-boundary-escape.md.
 - Topic / audit / history: 2026-11-05; analytic; review pending.
 
-## IDEA?mz2d-frontier-codex-12 — reflected Hankel core and transition remainder
+## IDEA-386 — reflected Hankel core and transition remainder
+
+Original provisional ID: `IDEA?mz2d-frontier-codex-12`.
 
 Aliases: 1D upper core-tail split; positive full reflection kernel.
 
@@ -162,7 +168,9 @@ Aliases: 1D upper core-tail split; positive full reflection kernel.
   precise missing inequality.
 - Topic / audit / history: 2026-11-05; no experiment performed.
 
-## IDEA?mz2d-frontier-codex-13 — inverse nodal compression by degree-m constraints
+## IDEA-387 — inverse nodal compression by degree-m constraints
+
+Original provisional ID: `IDEA?mz2d-frontier-codex-13`.
 
 Aliases: reciprocal-weight inertia reduction; codimension m+1 test.
 
@@ -196,7 +204,9 @@ Aliases: reciprocal-weight inertia reduction; codimension m+1 test.
 - Canonical theory: existing PD-T028 OPEN and IDEA-217 resumption point.
 - Topic / audit / history: 2026-11-05; no computation performed.
 
-## IDEA?mz2d-frontier-codex-14 — separated endpoint Fejer packet across an alias threshold
+## IDEA-388 — separated endpoint Fejer packet across an alias threshold
+
+Original provisional ID: `IDEA?mz2d-frontier-codex-14`.
 
 Aliases: localized signed-negative witness; asymmetric endpoint packet.
 
@@ -246,7 +256,7 @@ Aliases: localized signed-negative witness; asymmetric endpoint packet.
   follow-up was not executed; the other two ratios were distinct
   parent-requested probes. Positive values with a declining trend do
   not fire the stated combined kill. An exact local-weight asymptotic
-  was subsequently proved in PD-T?mz2d-frontier-codex-12. The original
+  was subsequently proved in PD-T295. The original
   packet's explicit sinc-sum asymptotic was derived informally but is
   not needed or promoted here; simpler exact-parity carriers below
   provide rigorous countersequences without Poisson summation.
@@ -259,7 +269,9 @@ Aliases: localized signed-negative witness; asymmetric endpoint packet.
   minimum-eigenvector branch at m400/600. This report is not a rerun by
   this worker and is not a dependency for any theorem.
 
-## IDEA?mz2d-frontier-codex-15 — exact even-node carrier exposes negative logarithmic mass
+## IDEA-389 — exact even-node carrier exposes negative logarithmic mass
+
+Original provisional ID: `IDEA?mz2d-frontier-codex-15`.
 
 Aliases: T_(m/2) Fejer carrier; even-even signed packet.
 
@@ -295,13 +307,15 @@ Aliases: T_(m/2) Fejer carrier; even-even signed packet.
 - Disposition and reason: retained PROVED countersequence, pending
   required Claude audit; original positivity target is refuted by
   this analytic asymptotic, with no named finite violating degree yet.
-- Canonical record: PD-N?mz2d-frontier-codex-13,
+- Canonical record: PD-N105,
   theory/f12-eventual-negative-carrier.md.
 - Topic / audit / history: 2026-11-05; analytic. Astra and F3 developers
   independently reconstructed the common lemma and carrier constants;
   completed reports must identify their actual scope and hashes.
 
-## IDEA?mz2d-frontier-codex-16 — exact odd-node carrier exposes positive logarithmic mass
+## IDEA-390 — exact odd-node carrier exposes positive logarithmic mass
+
+Original provisional ID: `IDEA?mz2d-frontier-codex-16`.
 
 Aliases: sine-product polynomial carrier; odd-odd signed packet.
 
@@ -337,8 +351,35 @@ Aliases: sine-product polynomial carrier; odd-odd signed packet.
 - Disposition and reason: retained PROVED analytic upper countersequence,
   pending audit. The eventual upper threshold is refuted; an explicit
   finite crossing is not named by the asymptotic proof.
-- Canonical record: PD-N?mz2d-frontier-codex-14,
+- Canonical record: PD-N106,
   theory/f12-eventual-upper-carrier.md.
 - Topic / audit / history: 2026-11-05; exact degree-r Fejer convention
   fixed in both packet records; supplementary Astra full-file review
   found no gap; required Claude audit pending.
+
+
+## Audited preparation — current dispositions (2026-11-05)
+
+Final allocation follows the cleared live union scan and [final-ID map](preparation/final-id-map.json). Original provisional IDs and all descriptive aliases are preserved. Earlier development-time pending, OPEN and deferred wording above is historical wherever superseded by the dated resolution or this table. [Claude audit-01](audit-01.md) accepted the mathematics and dispositions at candidate `dee638408505c9977f3febd98fdd42c9bc512c92`; [response-01](response-01.md) resolves its documentation findings. This mechanical registration adds no proof, execution, novelty claim or status upgrade.
+
+AC’s display remains binding: PD-T028/110/116 keep Status OPEN with REJECTED: refuted disposition and PROVED negative links. Their original positive formulations are historical, not unresolved or usable assertions; PD-T027’s genuine 1D gap/limit target remains OPEN.
+
+| Final candidate / original alias | Current disposition and exact scope |
+|---|---|
+| IDEA-384; `IDEA?mz2d-frontier-codex-10` | REJECTED: failed for the proposed uniform intermediary estimate; the scoped negative statement is PROVED as [PD-N104](theory/f12-1d-sign-discard-obstruction.md). The genuine 1D target PD-T027 stays OPEN. |
+| IDEA-385; `IDEA?mz2d-frontier-codex-11` | Retained PROVED supporting profile, [PD-T294](theory/f12-harmonic-boundary-escape.md); no conclusion about actual extremal eigenvectors or their eigenvalue order. |
+| IDEA-386; `IDEA?mz2d-frontier-codex-12` | Deferred: resume with a quantitative mass-normalized transition-remainder estimate or a specified distributed limit model; no PD-N, and PD-T027 stays OPEN. |
+| IDEA-387; `IDEA?mz2d-frontier-codex-13` | Equivalent to IDEA-217’s constrained-form obligation; not pursued, no duplicate theorem or PD-N. The original positive target PD-T028 is refuted by [PD-N105](theory/f12-eventual-negative-carrier.md)/[PD-N106](theory/f12-eventual-upper-carrier.md); the equivalence itself is retained. |
+| IDEA-388; `IDEA?mz2d-frontier-codex-14` | Deferred as the original unmodulated packet; audited finite positive float probes are retained in [PD-T300](theory/frontier-measurements.md). Resume only for an explicit finite witness or a separately audited exact asymptotic; no whole-family rejection. |
+| IDEA-389; `IDEA?mz2d-frontier-codex-15` | Retained PROVED countersequence, [PD-N105](theory/f12-eventual-negative-carrier.md): even m, negative logarithmic signed energy and bounded continuous norm. Existence only; no feasible finite witness/onset and no explanation of the uncertified m1600 float hit. |
+| IDEA-390; `IDEA?mz2d-frontier-codex-16` | Retained PROVED upper countersequence, [PD-N106](theory/f12-eventual-upper-carrier.md): even m, positive logarithmic signed energy and bounded continuous norm. Existence only; no effective finite crossing or sharp extremal rate. |
+
+Result aliases retained after mechanical reference substitution:
+
+| Original provisional result | Final ID |
+|---|---|
+| `PD-T?mz2d-frontier-codex-11` | PD-T294 |
+| `PD-T?mz2d-frontier-codex-12` | PD-T295 |
+| `PD-N?mz2d-frontier-codex-10` | PD-N104 |
+| `PD-N?mz2d-frontier-codex-13` | PD-N105 |
+| `PD-N?mz2d-frontier-codex-14` | PD-N106 |

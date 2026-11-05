@@ -1,17 +1,19 @@
-# PD-N?mz2d-frontier-codex-14 — an admissible odd-node carrier has unbounded upper Padua quotient
+# PD-N106 — an admissible odd-node carrier has unbounded upper Padua quotient
+
+Development alias: `PD-N?mz2d-frontier-codex-14`. Final ID assigned during audited preparation; [mapping](../preparation/final-id-map.json).
 
 ID kind: PD-N.
 Aliases: sine-product upper countersequence; odd-odd logarithmic energy;
 failure of the universal signed Padua upper threshold.
-Split from: IDEA?mz2d-frontier-codex-16 and the PD-T110 upper target.
-Split into: the common weight lemma is PD-T?...-12, the negative carrier
-is PD-N?...-13. This is a separate upper countersequence.
+Split from: IDEA-390 and the PD-T110 upper target.
+Split into: the common weight lemma is PD-T295, the negative carrier
+is PD-N105. This is a separate upper countersequence.
 
 ## Statement
 
 Fix a,b>0 with 2a+b<1/2. Let m tend to infinity through even integers,
 put `r=floor(a*m)`, `s=floor(b*m)`, and let F_r be exactly the degree-r
-Fejer polynomial in PD-N?mz2d-frontier-codex-13 equation (1), with
+Fejer polynomial in PD-N105 equation (1), with
 endpoint value r+1. Define
 
 \[
@@ -86,8 +88,8 @@ recorded in the separate F3 synthesis.
 
 ## Depends on
 
-PD-T?mz2d-frontier-codex-12: fixed-node weight asymptotic and global
-majorant. PD-N?mz2d-frontier-codex-13 supplies only the Fejer definition,
+PD-T295: fixed-node weight asymptotic and global
+majorant. PD-N105 supplies only the Fejer definition,
 elementary bounded-norm proof and finite DCT conventions (not its negative
 spectral conclusion). All necessary new coefficient calculations are
 written below.
@@ -231,3 +233,5 @@ unresolved; the original all-m threshold is refuted.
 metadata unexposed. Opposite sample parity was isolated after the
 negative carrier. The polynomial sine-product repair is explicit;
 no nonpolynomial trial or floating crossing enters the proof. No Git.
+
+2026-11-05: mechanical final-ID registration after accepted Claude audit-01 and response-01. The earlier audited source/receipt identities are historical; proof content changes only by ID substitution.

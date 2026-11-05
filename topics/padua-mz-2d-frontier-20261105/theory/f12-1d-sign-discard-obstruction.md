@@ -1,9 +1,11 @@
-# PD-N?mz2d-frontier-codex-10 — the 1D sign-discard intermediary has no uniform mass floor
+# PD-N104 — the 1D sign-discard intermediary has no uniform mass floor
+
+Development alias: `PD-N?mz2d-frontier-codex-10`. Final ID assigned during audited preparation; [mapping](../preparation/final-id-map.json).
 
 ID kind: PD-N.
 Aliases: absolute-coefficient uniform-gap barrier; central Dirichlet
 coefficient test; limitation of the PD-T014 intermediary.
-Split from: IDEA?mz2d-frontier-codex-10, a proposed uniform-gap sharpening
+Split from: IDEA-384, a proposed uniform-gap sharpening
 of the 1D sign-discard argument. The original PD-T027 target is unchanged.
 Split into: none.
 
@@ -74,7 +76,7 @@ its best possible mass-normalized constant tend to zero.
 
 ## Negative-result scope
 
-Attempted mechanism: IDEA?mz2d-frontier-codex-10, retaining exactly the
+Attempted mechanism: IDEA-384, retaining exactly the
 absolute-coefficient lower-bound intermediary from IDEA-062/PD-T014
 and improving only its comparison with the *original* continuous norm.
 Parameter range: a subsequence of all odd N>=3; conclusion forbids one
@@ -210,3 +212,5 @@ in f12-eventual-upper-carrier.md, using the signed local-weight lemma.
 2026-11-05, Codex F1/F2 developer, requested gpt-6.1-sol xhigh; runtime
 model metadata unexposed. Rules/input SHA above. No Git operations;
 scoped obstruction separated from the unresolved spectral target.
+
+2026-11-05: mechanical final-ID registration after accepted Claude audit-01 and response-01. The earlier audited source/receipt identities are historical; proof content changes only by ID substitution.
