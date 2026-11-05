@@ -1,7 +1,7 @@
 # Effective all-degree Padua argmax (PD-T099): campaign log
 
 - Branch: `codex/padua-argmax-effective-20261103` · Base: main `440d107` · Developer: Codex (gpt-6-astra ultra, at AC's instruction) · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: AUDIT (response protocol check) · Next: `Claude (Opus 5.5 high): Continue codex/padua-argmax-effective-20261103.` · Open handoff: [handoffs/05-response-check.md](handoffs/05-response-check.md)
+- Stage: PR (preparation) · Next: `Codex (gpt-6.1-sol, medium): Continue codex/padua-argmax-effective-20261103.` · Open handoff: [handoffs/06-pr-preparation.md](handoffs/06-pr-preparation.md)
 - Reserved final-ID ranges: PD-T246–265, PD-N084–091, IDEA336–355, LIT466–473; first pushed in `ed8db2f`, [ALLOCATIONS.md](ALLOCATIONS.md). Final assignments pending.
 - Claims: PD-T?argmax-effective-claude-01 — pilot gate measurements — MEASURED — [record](theory/argmax-effective-claude-01-pilot-measurements.md).
 - For the PR: final IDs, PROOF_STATUS/IDEAS/INDEX rows, a RESULTS.md section, and the Claude audit.
@@ -179,3 +179,10 @@
 - F8 disclosure uses a separate linked provenance note: the native README is hash-pinned by the retained acceptance summary and is preserved with all receipt bytes. The derived evidence inventory is refreshed for documentation changes; audit-01 retains its original audited manifest identity.
 - Verification executed: evidence inventory verified (84 files, degrees17–32), documentation links and allowed-path/protected-file checks, all F1–F10 response rows, and `git diff --check`. The inventory changes only four documentation entries; no scientific replay was performed or required.
 - Handoff04 done in `6d73a6a482aa293f37db510f270205440a621a7c`; [handoff05](handoffs/05-response-check.md) opens the distinct Claude protocol check.
+
+## 2026-11-05 — Claude, claude-opus-5-5 high — response protocol check (handoff 05)
+
+- Rules read at `3decae238fd2248d5d9bff8217e16a7ba49b83c4` (unchanged since audit-01). Candidate `6d73a6a` vs audit input `e5149ea`. Main `440d107` unchanged. Open PRs #19–#22; PR21 (LIT482–561) and PR22 (PD-T286–293, PD-N100–103, IDEA376–383, LIT562–573) reservations disjoint from this topic.
+- Checked: word-diffs of the three theory files, report and COLD_STORAGE (wording only); no change under code/, evidence/, audit-01 or handoffs 01–03; manifest verifier (`verified: true`, 84 files) and entry-level inventory diff (four documentation rows only); provenance facts in checker-provenance-01 against native-checker-summary.json. No novelty content, so the IDEAS reread is omitted (audit-01 read it in full).
+- Outcome: [response-check-01.md](response-check-01.md) ACCEPTS the response. F8's missing per-receipt compiler/GMP mapping is an acceptable documented limitation, given audit-01's rebuilt replays. Stage PR; F5/F7 and the union scan move to preparation.
+
