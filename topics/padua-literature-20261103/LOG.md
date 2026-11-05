@@ -1,10 +1,10 @@
 # Padua literature campaign (P1–P4): log
 
 - Branch: `claude/padua-literature-20261103` · Base: main `440d107` · Developer: Claude · Auditor: Codex (gpt-6-astra high)
-- Stage: AUDIT · Next: `Codex (gpt-6-astra high): Continue claude/padua-literature-20261103.` · Open handoff: [handoffs/03-audit.md](handoffs/03-audit.md)
+- Stage: AUDIT · Next: `Codex (gpt-6-astra high): Continue claude/padua-literature-20261103.` · Open handoff: [handoffs/04-audit.md](handoffs/04-audit.md)
 - Reserved final-ID ranges: LIT-482–561 (80); no PD-T, PD-N or IDEA range. See [ALLOCATIONS.md](ALLOCATIONS.md).
 - Claims: none (literature topic). Note: [SINUM 2026 assessment](notes/faghih-sinum-2026-assessment.md).
-- Open for AC: the remaining PDFs in DOWNLOADS.md v3 (A4, A9, A16–A19; print-only items need interlibrary loan).
+- Open for AC: the remaining PDFs in DOWNLOADS.md v5 (A9 print-only, interlibrary loan; A10, A15, A19 low priority).
 
 ## 2026-11-03 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
 
@@ -16,6 +16,16 @@
   - Read with pdftotext: §1, §3.2, §4.2–4.4, §5 opening with Alg. 5.1, §6.2–6.3, §7 and the references.
   - Assessment and record corrections: [note](notes/faghih-sinum-2026-assessment.md). Verdict: moderate interest (related work, a test-methodology template, the open IEP-conditioning question matching our sensitivity tools, and the analogy between multi-index paths and selection rules). Not a campaign by itself.
 - Wrote handoff 01 (packs P1–P4, with clickable-link download lists as AC's hard requirement), this LOG and the results stub. No records or registries edited.
+
+## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — pass 2 ingest
+
+- AC: "some papers have arrived. ingest, update the literature branch", then "I authorize all branch updates related to literature".
+- Re-inventory of `Downloads\padua\papers` (44 files) through the link to AC's computer. New: A4 (Mastroianni–Russo 2000) and A11–A14 (journal versions); see [inventory.md](inventory.md).
+- A4 read by the orchestrator: text layer for §1 and §3, page images of copy pp. 22–23 for the Theorem 11 hypotheses. New record `literature/records/mastroianni-russo-2000.md`; P2 comparison row added; report "Pass 2".
+- A11–A14: a Sonnet 5.5 subagent mapped every cited locator onto journal pages (read-only, no git). The orchestrator spot-checked Xu 1996 Thm 3.3 (rendered p. 231), CDMV (13) p. 80, and BCDMVX Thm 1 p. 19 / Thm 2 p. 20. Results are in [addenda/journal-versions-2026-11-05.addendum.md](addenda/journal-versions-2026-11-05.addendum.md); the KLP record (topic-owned) gained a journal-version section; bib notes were updated.
+- proposed-record-changes.md: "Pass 2" blocks, each old block verified to occur exactly once in the current files.
+- DOWNLOADS v5. Checkpoint commit `f47b6a5`.
+- Handoff 03 had not started (the branch had no audit commits), so it is superseded by handoff 04, which keeps the same audit task and adds the pass-2 scope at the new input head.
 
 ## Runs needed
 

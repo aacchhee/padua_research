@@ -97,6 +97,20 @@ Claude (claude-opus-5-5, high), topic orchestrator, 2026-11-03.
    - Always name the Greenbaum branch when quoting a width.
 5. **Registry text corrections.** LIT-096, LIT-118, LIT-210, LIT-213, LIT-284, LIT-346, LIT-347/119, LIT-362, LIT-377 (corner item now VERIFIED, p. 23), LIT-379 (locators), LIT-388 (complete reading) and LIT-420. All are given as literal blocks in [proposed-record-changes.md](proposed-record-changes.md).
 
+## Pass 2 (2026-11-05): AC-supplied A4 and A11–A14
+
+- **Mastroianni–Russo 2000 (A4)**, read from AC's 34-page copy; record `mastroianni-russo-2000.md` (LIT?…-85). This was the MZ prior-art report's "most likely remaining place" for a quantitative borderline converse-MZ result. It contains none:
+  - The paper gives uniform-constant forward (Thm 8) and converse (Thms 9–12) weighted Marcinkiewicz inequalities under doubling/A_p hypotheses, with no rates and no necessity statements. The only "log" in the text is in a funding line.
+  - The CC nodes for even N are an instance of its "extended" Theorem 11: zeros of T_{m+1}U_m plus ±1, on the full space Π_N.
+  - For u ≡ 1 and p = 2, the hypothesis (1−x²) ∈ A_2 fails exactly at the power-weight endpoint, so the theorem is silent there. This is consistent with PD-T019 and MMN 2012.
+  - Verdicts: RELATED, DIFFERENT SETTING (PD-T017–019); RELATED (PD-T014/T022, uniform boundedness only, as in LMN 1987).
+  - The "no matching result found in the documented search" negative for the two-sided order now also covers this source. See the P2 comparison, row added in pass 2.
+- **A11–A14 journal versions** (KLP 2018, Xu 1996, CDMV 2007, BCDMVX 2006), recorded in [addenda/journal-versions-2026-11-05.addendum.md](addenda/journal-versions-2026-11-05.addendum.md). A Sonnet subagent mapped the locators; the orchestrator spot-checked three items on the PDFs.
+  - All theorem, lemma and equation labels coincide with the free versions used earlier. Wording was not diffed.
+  - One correction: LIT-314 says Xu 1996 Theorem 3.3 holds for 1 < p ≤ ∞; the journal (p. 231) has 1 < p < ∞.
+  - Additions: CDMV 2007's explicit bound (13), p. 80; KLP's Lemma 5.1 sources; BCDMVX Theorem 3 is an order bound only.
+- Proposed shared-file edits for pass 2: [proposed-record-changes.md](proposed-record-changes.md), section "Pass 2". DOWNLOADS is now v5.
+
 ## What remains missing (clickable)
 
 - **Print only (interlibrary loan):**

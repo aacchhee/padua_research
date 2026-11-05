@@ -1037,3 +1037,84 @@ Append to the addenda list of literature/INDEX.md:
 - **LIT-240 — 2026-11-03 primary-reading addendum (padua-literature-20261103):** Xu, Trans. AMS 342 (1994) §3 was read. Thm 3.2 (pp. 858–859): zeros of P_n ↔ joint eigenvalues of the truncated block Jacobi matrices. Thm 3.4 (p. 859): dim Π_{n−1} zeros ⇔ A_{n−1,i}A_{n−1,j}ᵀ symmetric in i, j ⇔ the truncated matrices commute; d = 2 credited to Mysovskikh. The row moves from digest to primary reading. [addendum](../topics/padua-literature-20261103/addenda/xu-tams-1994-blockjacobi.addendum.md).
 - **LIT-292 — 2026-11-03 primary-reading addendum (padua-literature-20261103):** Dunkl–Xu, 2nd ed. (2014), Ch. 3 was read from an AC-supplied chapter PDF. Favard: Thms 3.3.7–3.3.8 (pp. 74–76). Commuting conditions: Thm 3.4.1 (pp. 82–83). Recursion converse: Thm 3.5.1 (p. 88; degree-by-degree proof pp. 92–93). Möller bound in matrix form: (3.9.1), p. 113. Liu–Narayan's attribution of the converse to Thm 3.5.1 is confirmed. [addendum](../topics/padua-literature-20261103/addenda/dunkl-xu-2014.addendum.md).
 ```
+
+## Pass 2 (orchestrator, 2026-11-05): AC-supplied Mastroianni–Russo 2000 and the journal versions of A11–A14
+
+Evidence: `literature/records/mastroianni-russo-2000.md` (new; LIT?padua-literature-claude-85) and `addenda/journal-versions-2026-11-05.addendum.md`.
+
+### 1. topics/padua-mz-2d-20261101/literature.md (LIT-314; merged PR #14 file)
+
+Old:
+```
+full proof audit. Theorem 3.3 gives, for `1<p<=infinity`, a continuous
+```
+New:
+```
+full proof audit. Theorem 3.3 gives, for `1<p<infinity` (journal p. 231, checked 2026-11-05; only Lemma 3.5 extends to p = infinity), a continuous
+```
+
+### 2. literature/lattice-unisolvence/records/xu-1996.md (coverage line)
+
+Old:
+```
+- Reading coverage: Author preprint abstract/introduction pp.1–2; §2.2–2.3 pp.4–8 excerpts, including eq2.11–2.20; not complete.
+```
+New:
+```
+- Reading coverage: Author preprint abstract/introduction pp.1–2; §2.2–2.3 pp.4–8 excerpts, including eq2.11–2.20; not complete. 2026-11-05 (padua-literature-20261103): AC-supplied journal PDF JAT 87 (1996) 220–238 read in full; journal pages for every cited item are in that topic's addenda/journal-versions-2026-11-05.addendum.md (A12). Theorem 3.3 is stated for 1 < p < ∞ (p. 231).
+```
+
+### 3. literature/lattice-unisolvence/records/padua-2006.md (coverage line)
+
+Old:
+```
+- Reading coverage: Author preprint abstract and theorem excerpts: Lemma1 pp.5–6, Theorem1 p.6, Theorem2 p.8, Theorem3 p.10. Not complete.
+```
+New:
+```
+- Reading coverage: Author preprint abstract and theorem excerpts: Lemma1 pp.5–6, Theorem1 p.6, Theorem2 p.8, Theorem3 p.10. Not complete. 2026-11-05 (padua-literature-20261103): AC-supplied journal PDF JAT 143 (2006) 15–25 read in full; journal pages: Lemma 1 and Theorem 1 p. 19, Theorem 2 pp. 20–21, Theorem 3 statement p. 22 with proof pp. 23–24 (addenda/journal-versions-2026-11-05.addendum.md, A14). Theorem 3 is an order bound only, with no 4/π².
+```
+
+### 4. literature/records/mz2d-caliari-demarchi-vianello-2007.md (LIT-428; lines 27–28)
+
+Old:
+```
+copy agrees with the earlier preprint on these hypotheses; final pagination
+was verified through journal metadata, not a separate final PDF comparison.
+```
+New:
+```
+copy agrees with the earlier preprint on these hypotheses. 2026-11-05: the
+AC-supplied journal PDF (JCAM 210 (2007) 78–83) was read in full; equation
+and theorem numbering coincide, and the journal pages are in
+topics/padua-literature-20261103/addenda/journal-versions-2026-11-05.addendum.md
+(A13). Theorem 1's explicit bound is eq. (13), p. 80; its proof gives only
+the first step and defers to Bos–De Marchi–Vianello, JAT 141 (2006).
+```
+
+### 5. literature/INDEX.md: new row and addenda
+
+New row (final ID from LIT-482–561 at PR preparation):
+```
+| LIT-??? (LIT?padua-literature-claude-85) | LITERATURE; fact | Mastroianni–Russo (Hadronic Press 2000, pp. 149–182): weighted algebraic Marcinkiewicz inequalities with uniform constants under doubling/A_p hypotheses (forward Thm 8; converse Thms 9–12; Lagrange-operator bounds Cors 13, 18). No rates. The CC nodes (even N) are an instance of Thm 11 with w Chebyshev first kind, μ = ν = 1, P ∈ Π_N; for u ≡ 1, p = 2 its hypothesis (1−x²) ∈ A_2 fails exactly at the power-weight endpoint. | mastroianni-russo-2000 | copy pp. 17, 18, 22–23 (book pp. 165, 166, 170–171, inferred) | [record](records/mastroianni-russo-2000.md) | AC-supplied copy read 2026-11-05 |
+```
+Addenda to append:
+```
+- **LIT-312, LIT-314, LIT-428 and LIT?padua-literature-claude-20 (KLP 2018) — 2026-11-05 journal-version addendum (padua-literature-20261103):** AC-supplied journal PDFs read; labels and numbering coincide with the free versions used earlier; journal pages in the topic's addenda/journal-versions-2026-11-05.addendum.md. LIT-314 correction: Xu 1996 Thm 3.3 is for 1 < p < ∞ (p. 231).
+```
+
+### 6. literature/CORPUS.md: availability appends
+
+Mastroianni–Russo 2000, KLP 2018, Xu 1996, CDMV 2007, BCDMVX 2006: append " · have (AC local copy, 2026-11-05)".
+
+### 7. topics/mz-prior-art-20261101/report.md (merged PR #11; "What remains missing" paragraph)
+
+Old (beginning of the paragraph):
+```
+Mastroianni–Russo 2000 (Hadronic Press, no online copy), Della Vecchia–Mastroianni–Vértesi 1995 (IDOMAT proceedings),
+```
+New:
+```
+Della Vecchia–Mastroianni–Vértesi 1995 (IDOMAT proceedings), [Mastroianni–Russo 2000 was read on 2026-11-05 in padua-literature-20261103: no quantitative borderline result; at CC/Lebesgue/p = 2 its Theorem 11 hypothesis fails exactly at the A_2 endpoint],
+```
+Apply this one only if AC wants merged reports annotated. Otherwise the P2 comparison carries the update.

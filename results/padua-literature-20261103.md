@@ -22,6 +22,12 @@ These are literature findings only. They carry no PD status changes and no new m
   - No matching result for the Padua obstruction (PD-T069/N303), ρ_n = O(n⁻⁵) (PD-T144) or the span drift.
   - Greenbaum width conflict (LIT-213) resolved; LIT-096, LIT-210 and LIT-362 corrected.
 
+## Pass 2 (2026-11-05)
+
+- **Mastroianni–Russo 2000** ([zbMATH](https://zbmath.org/1594022); AC copy) is read. It has no quantitative borderline converse-MZ result: uniform constants under A_p hypotheses, and the CC/Lebesgue/p = 2 case is exactly the excluded A_2 endpoint of its Theorem 11. This closes the MZ prior-art report's named gap; the "no matching result" verdict for the two-sided endpoint order (PD-T017/T018) stands, with wider coverage.
+- **Journal versions** of [KLP 2018](https://doi.org/10.1016/j.jat.2018.02.005), [Xu 1996](https://doi.org/10.1006/jath.1996.0102), [CDMV 2007](https://doi.org/10.1016/j.cam.2006.10.058) and [BCDMVX 2006](https://doi.org/10.1016/j.jat.2006.03.008) are checked: numbering coincides with the free versions, and journal pages are recorded. One correction: Xu 1996 Thm 3.3 is for 1 < p < ∞ (LIT-314 said ≤ ∞).
+- Still missing: Della Vecchia–Mastroianni–Vértesi 1995 ([zbMATH](https://zbmath.org/854180), print only); low priority Brutman 1997 survey, Feldheim 1936 ([zbMATH](https://zbmath.org/3023405)) and König–Nielsen journal version ([doi](https://doi.org/10.1515/form.1994.6.183)).
+
 ## Next step
 
-Codex (gpt-6-astra high) audit per handoff 03. Still needed from AC: print-only Mastroianni–Russo 2000 and DMV 1995 (see DOWNLOADS v3).
+Codex (gpt-6-astra high) audit per handoff 04 (supersedes 03; adds pass 2). Still needed from AC: print-only Mastroianni–Russo 2000 and DMV 1995 (see DOWNLOADS v3).

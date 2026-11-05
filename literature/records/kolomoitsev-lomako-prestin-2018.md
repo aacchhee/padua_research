@@ -25,6 +25,13 @@
 - Lead from p2-links (row 6f, 8.7). Earlier campaign: body retrieval failed (Lübeck author PDF 502, ScienceDirect not reached); now read from arXiv.
 - New lead surfaced: W. Erb, *Bivariate Lagrange interpolation at the node points of Lissajous curves – the degenerate case*, Appl. Math. Comput. 289 (2016) 409–425 (KLP ref. [10]; arXiv 1503.00895 per p2-links 8.8), named by KLP as the source of the L^p MZ inequalities (5.1)–(5.2) for 1 < p < ∞. Not read; DOI not verified.
 
+## Journal version (2026-11-05)
+
+AC supplied the journal PDF (`Downloads\padua\papers\1-s2.0-S0021904518300194-main.pdf`, JAT 229 (2018) 13–35). Every theorem, lemma and equation label cited above (arXiv v1) has the same number in the journal. The journal page for each locator is in `topics/padua-literature-20261103/addenda/journal-versions-2026-11-05.addendum.md` (A11); for example Lemma 5.1 is on p. 25 and Lemma 5.3 on p. 26.
+- Attribution refinement: (5.1) for all p, and (5.2) for 1 < p < ∞, are quoted from [10] (Erb 2016). The p = 1 case uses (5.4), itself quoted "from [10] (see also [7])".
+- Wording was not diffed against arXiv v1.
+
 ## History
 
 2026-11-03: created (P2 reader, padua-literature-20261103). Provisional ID LIT?padua-literature-claude-20.
+2026-11-05: journal-version pagination added (pass 2 ingest; Sonnet subagent mapping, orchestrator spot-check).
