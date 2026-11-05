@@ -1,6 +1,6 @@
 # Lanczos frontier — aggregate separation and checked closure certificates
 
-Stage WORK. [Draft PR24](https://github.com/aacchhee/padua_research/pull/24), not ready for merge. Rules read at02a465bea0339f20278ba4888e28f9e9b6041603; current mainaff30e8ad5542c94fab642ae024dc9aab4fa7ad7 merged without changing the frozen Lanczos sources. No final IDs assigned or canonical registries changed; [literal proposed changes](proposed-record-changes.md) await audited preparation.
+Stage WORK. [Draft PR24](https://github.com/aacchhee/padua_research/pull/24), not ready for merge. Rules read at9825d184517db81d0aad8542fbd6639f2164b803; current mainaff30e8ad5542c94fab642ae024dc9aab4fa7ad7 merged without changing the frozen Lanczos sources. No final IDs assigned or canonical registries changed; [literal proposed changes](proposed-record-changes.md) await audited preparation.
 
 ## L1: analytic separation on the saved sheared family
 
@@ -32,13 +32,13 @@ The proof computes the actual stage n-1 closure response of the final-degree sou
 
 The [finite-error selection theorem](theory/l3-finite-u-selection.md) is PROVED analytically with distinct mathematical reconstruction: an explicit positive radius, uniform quadratic remainder, finite tolerance acceptance and adaptive prefix completion under the stated bounded aggregate full-projection model. Degree-uniform useful bounds and efficient online selection remain open.
 
-The [L5 finite certificate reduction](theory/l5-01-finite-optimal-radius-certificates.md) is PROVED analytically and independently reconstructed. It controls the complete real first-jet kernel for upper certificates and whole balls for Taylor lower certificates. The [separate finite n3 theorem](theory/l5-02-n3-bracket.md), based on the executed exact producer and distinct checker, establishes `1/512 <= delta_obs(3) <= 1/2` with full first-jet rank30/kernel6 and12positive upper-certificate points. The complete n3–8 gate remains incomplete; no all-degree U2 conclusion follows.
+The [L5 finite certificate reduction](theory/l5-01-finite-optimal-radius-certificates.md) is PROVED analytically and independently reconstructed. It controls the complete real first-jet kernel for upper certificates and whole balls for Taylor lower certificates. The [separate finite n3 theorem](theory/l5-02-n3-bracket.md), based on the executed exact producer and distinct checker, establishes `1/512 <= delta_obs(3) <= 1/2` with full first-jet rank30/kernel6 and12positive upper-certificate points. The [n4 lower theorem](theory/l5-03-n4-lower.md) separately proves delta_obs(4)>=1/2048 by distinct exact execution. Its upper search remains INCONCLUSIVE: q2 completed and q4/q8 reached their registered caps. The complete n3–8 gate remains incomplete; no all-degree U2 conclusion follows.
 
-Both G4 high-degree rows ran and differed from historical span gaps. The [additive disposition](g4-disposition-04.md) resolves the discrepancy at the independently checked arithmetic-sensitivity scope, preserving the failed numeric screens and historical limitations. The natural suite remains unrun.
+Both G4 high-degree rows ran and differed from historical span gaps. The [additive disposition](g4-disposition-04.md) resolves the discrepancy at the independently checked arithmetic-sensitivity scope, preserving the failed numeric screens and historical limitations. The [natural suite](theory/l7-natural-suite-measurements.md) now ran all eight domain/seed cases and passed distinct all-case checking plus a separate full triangle rerun. References accept16/24 degree cases;20/1280 accepted-reference method/target/distribution cells meet the saved loss rule, all on triangle24. Six paired-seed advantages occur for triangle24/tanh/boundary. Large recurrence replay defects are preserved, so this is measured end-to-end fitting behavior, not evidence isolating span error as the cause.
 
 ## G1: finite scan remains incomplete
 
-The exact producer and independently implemented native C++/GMP checker match all88 inherited degree2–12 rows and all76 T24 degree2–20 rows. The producer's rotated BJ degree14 benchmark adds degrees13/14, giving122 of152 planned rows;120 unique rows have independent agreement. Handoff04 native common-denominator arithmetic independently verifies the old BJ13/14 benchmark and completes BJ20 in329.175s; those new15–20 rows still await fresh producer agreement. The other rotated rules remain due. All four native rotated degree20 cases hit their1800-second caps after partial source propagation; none emitted completed high-degree endpoints. No fit or operational G1 verdict is claimed. See [methods](g1-methods.md), [independent report](independent-checks-g1.md) and [cost receipt](evidence/g1-independent-high20.json). A new implementation/cost plan must precede another expensive round; the saved source domain, endpoints and fit/kill rules stay fixed.
+The exact producer and independently implemented native C++/GMP checker match all88 inherited degree2–12 rows and all76 T24 degree2–20 rows. The producer's rotated BJ degree14 benchmark adds degrees13/14, giving122 of152 planned rows;122 unique rows now have independent agreement. Handoff04 native common-denominator arithmetic independently verifies the old BJ13/14 benchmark and completes BJ20 in329.175s; those new15–20 rows still await fresh producer agreement. The other rotated rules remain due. All four native rotated degree20 cases hit their1800-second caps after partial source propagation; none emitted completed high-degree endpoints. No fit or operational G1 verdict is claimed. See [methods](g1-methods.md), [independent report](independent-checks-g1.md) and [cost receipt](evidence/g1-independent-high20.json). A new implementation/cost plan must precede another expensive round; the saved source domain, endpoints and fit/kill rules stay fixed.
 
 ## Main result — L4
 
@@ -77,9 +77,9 @@ Large exact arrays remain local and regenerable outside Git, with [manifest and 
 | [L2](attempts/L2.md) | Saved smooth exact-base W/R formalizations PROVED on every SH_n after both-grid G2 acceptance. Original working-precision PD-T055 and F stay OPEN. |
 | [L3](attempts/L3.md) | Finite-error explicit-radius/tolerance/adaptive theorem PROVED; broader degree-uniform/efficient selection remains OPEN. |
 | [L4](attempts/L4.md) | PROVED finite formal comparison above. Actual IEEE activation, finite-u behavior and all-degree growth remain outside it. |
-| [L5](attempts/L5.md) | Finite n3 bracket PROVED computer-assisted; n4–8/G3 trend and U2 remain OPEN. No optimal upper follows from the named P_n radius. |
+| [L5](attempts/L5.md) | Finite n3 bracket and n4 lower PROVED computer-assisted; optimal n4 upper, n5–8/G3 trend and U2 remain OPEN. |
 | [L6](attempts/L6.md) | OPEN. Actual recurrence/moment consistency and complete omitted-operator residual control remain unresolved. |
-| [L7](attempts/L7.md) | G4 replay/explanation resolved; implementation primitives checked. Natural-target suite remains NOT RUN, with casewise reference checks still required. |
+| [L7](attempts/L7.md) | Frozen polyrat/own natural suite completed and independently checked, with16/24 accepted references. Findings remain MEASURED; missing external-code/literature tasks remain disclosed. |
 
 ## For the paper and protocol
 

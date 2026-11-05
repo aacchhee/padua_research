@@ -1,0 +1,71 @@
+{
+ "input_head": "9825d184517db81d0aad8542fbd6639f2164b803",
+ "stage": "pilot",
+ "python": "3.12.14",
+ "source_sha256": {
+  "topics/padua-lanczos-frontier-20261105/code/l7_suite_stage.py": "06e29d1cfd3f9b5e8d6d60abc413e920fee7726dcf488d09fd3dabacc06421f0",
+  "topics/padua-lanczos-frontier-20261105/code/l7_natural.py": "ba2beac1ea8041dd035d8072a1533592deb8c209bc54e801af54906d7f533fb7",
+  "topics/padua-lanczos-frontier-20261105/l7-preregistration.md": "2395cd943563d0380941bbde7adc80d7a00ea8d503b514fe214c91db7b4e54fd",
+  "topics/padua-lanczos-frontier-20261105/l7-suite-methods.md": "e248a7746057983caef66157c69e181b89e195035a4190d61413cb21a9e26c8b",
+  "tracks/bivariate-lanczos/code/L2/l2_core.py": "e8c8fa3378b3531f4fc13faac9902757b97c92c281b2bcd2c02875e0b1c5638d",
+  "tracks/bivariate-lanczos/code/drift/e6_benchmark.py": "e328b7d5d965637e986285cafe596ac15cdd9320c195d6f02162d883267baafe"
+ },
+ "environment": {
+  "PYTHONPATH": "/tmp/padua-lanczos-frontier-g0/deps",
+  "OPENBLAS_NUM_THREADS": "1",
+  "OMP_NUM_THREADS": "1"
+ },
+ "cases": [
+  {
+   "domain": "disk",
+   "seed": 2026110501,
+   "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/l7_natural.py",
+    "--external",
+    "/tmp/padua-lanczos-frontier-g0/polyrat",
+    "--output-dir",
+    "/tmp/padua-lanczos-frontier-l7-suite/pilot/disk-2026110501",
+    "--domains",
+    "disk",
+    "--seeds",
+    "2026110501"
+   ],
+   "exit_code": 0,
+   "elapsed_seconds": 14.568158864974976,
+   "artifacts": [
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/pilot/disk-2026110501/disk-2026110501-inputs.npz",
+     "sha256": "93a18a39e3b223759560a25a8c7344e9b14ed92c753b885f8adc91579e6b6bad",
+     "bytes": 90364
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/pilot/disk-2026110501/disk-2026110501-raw.npz",
+     "sha256": "ff47428d1e1d74554789dabbc4354e91ae2aa67ddd2c4280b99cc41b2407623b",
+     "bytes": 60259640
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/pilot/disk-2026110501/disk-2026110501.json",
+     "sha256": "d066a3ea4d86cd12322f0e1864a72791f4bb30adff489cc9b3ef643d05d14792",
+     "bytes": 93147
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/pilot/disk-2026110501/metadata.json",
+     "sha256": "bdd631b3eb8b03add006737e3c10a6e8deee87a1654927fe9cd3f9eb5e002ce2",
+     "bytes": 1116
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/pilot/disk-2026110501/stderr.log",
+     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "bytes": 0
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/pilot/disk-2026110501/stdout.log",
+     "sha256": "88bdd374edd5027eb194ee57132a13f5586a9336e89a1e4f7367d55d451fac44",
+     "bytes": 57
+    }
+   ]
+  }
+ ],
+ "timeout_per_case_seconds": 600
+}
