@@ -20,4 +20,4 @@ No results yet.
 
 ## Next step
 
-`Codex (gpt-6-astra ultra): Continue codex/padua-argmax-bridge-20261105.`
+`Codex (gpt-6-astra high): Continue codex/padua-argmax-bridge-20261105.`

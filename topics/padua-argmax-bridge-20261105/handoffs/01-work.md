@@ -3,7 +3,11 @@
 - Status: open
 - Previous handoff: none (new topic; predecessors `topics/padua-argmax-effective-20261103/` (PR #19) and `topics/padua-argmax-effective-2-20261105/` (PR #25), both merged)
 
-- Next agent / model / effort: Codex. Use **gpt-6-astra at ultra** for the orchestrator and all mathematics; AC asked for it on 2026-11-05 ("How about an astra ultra round on that?"), continuing his 2026-11-03 instruction for this problem. Use gpt-6.1-sol medium for code, ports and replays, and a distinct gpt-6-astra high instance for supplementary independent checks.
+- Next agent / model / effort: Codex. Allocation per AC, 2026-11-05: "Run the coordinator on Astra High, easier jobs on Sol and raise to Astra Ultra only when things get serious". This replaces the ultra-throughout wording first published here.
+  - **Coordinator:** gpt-6-astra high.
+  - **Easier jobs:** gpt-6.1-sol. Medium for code, ports, replays, scans and bookkeeping; xhigh for routine mathematics.
+  - **gpt-6-astra ultra:** only for a step that is genuinely hard and decisive. Examples: a proof of the remainder bound r(n), the uniform-in-n reduction, an N4 structure theorem, or a lemma on which a gate verdict hangs. Record each escalation in LOG, one line each: what, why, and why sol or high did not suffice.
+  - **Supplementary independent checks:** a distinct gpt-6-astra high instance.
 - Role: orchestrator and developer
 - Branch: codex/padua-argmax-bridge-20261105
 - Input head SHA: `9322fba` (main, PR #25 merged; this branch adds only this handoff, LOG and the results stub)
@@ -126,7 +130,19 @@ R3, the all-degree E-C comparison (PD-T248/249/231), stays available for coverin
    - Read the rules at the branch head and record the SHA.
    - In a fresh subagent, replay the native producer and checker at n = 24 and the PR #25 pilot at n = 32, against the committed receipts.
 1. **Gates B0–B6** (below). Write `plan.md` with time boxes before the first run.
-2. **N3 and N1/N2 in parallel**, in separate subagents with disjoint files. Run N4 and N5/N6 as bounded side probes; stop each at its box.
+2. **N3 and N1/N2 in parallel**, in separate subagents with disjoint files. Run N4 and N5/N6 as side probes under the same round rule (below).
+
+   **Round budget (AC, 2026-11-05: "I'd allow more rounds if there is progress, let's say 15 rounds per direction").**
+   - Each direction N1–N6 gets up to **15 rounds**.
+   - A round is one development step of that direction, ending in a pushed LOG entry that states its outcome. A step is, for example, one proof attempt, one certifier version with its run, or one model with its remainder bound.
+   - A direction continues to its next round only if the round made **recorded progress**:
+     - a new proved lemma or finite certificate;
+     - a strictly larger certified range;
+     - a strictly smaller proved n₁ or remainder bound;
+     - or a gate verdict that narrows the route.
+   - Two consecutive rounds without such progress end the direction early, with its obstacle recorded.
+   - Kills at gates B2–B5 still apply and end a direction regardless of the budget.
+   - Keep a per-direction round counter in `rounds.md`.
 3. **Meet-in-the-middle arithmetic** (B4), as soon as both sides have numbers.
 4. **Assembly.**
    - If the certified range reaches n₁, write the all-degree theorem PD-T099 with its full dependency list, and the finite certificate inventory.
@@ -152,7 +168,11 @@ If a criterion proves ill-posed, record why and add a new criterion as a separat
   - **Kill (that model):** r(n) ≥ half the margin for every n ≤ 10⁶. Then add the next correction term once, and stop N1 with that model if it still fails.
 - **B4, meet in the middle.**
   - If the projected n₁ is within the range N3 can certify in about 48 h of sandbox CPU, proceed.
-  - If it is within a range that needs more compute, **stop at a checkpoint and ask AC** about NTNU (syvert0/1/2), with exact commands and projected times.
+  - If it needs more than the sandbox but at most about **20 cores × 7 days**, it is pre-approved on Syvert (AC, 2026-11-05: "Syvert has approx same power, no problem to run 20 cores for a week there if that would meet the analytic N").
+    - The condition is that the projection shows that compute would meet the proved (or nearly proved) n₁.
+    - Codex has no access to Syvert. Prepare a self-contained run package: scripts, build commands, argv per degree block, expected outputs and checker commands, and a projected time per block.
+    - Ask AC in the chat to launch it. AC returns the outputs, or stages them to cold storage, for the independent checker.
+    - Anything beyond 20 cores × 7 days, or used for another purpose, needs a separate ask.
   - If it is beyond any plausible compute, record the gap and put effort into sharpening r(n).
 - **B5, N4 LP test.** Exact rational LP at n = 3–8.
   - **Pass:** a structured class of M(x) is feasible at all critical x for every tested n.
@@ -195,9 +215,9 @@ If a criterion proves ill-posed, record why and add a new criterion as a separat
   - Never infer a constant from a fit.
 - **Storage** (WORKFLOW, PR #18): commit code and small evidence, normally under 16 KiB per file. Certificates, box trees and sweeps go to cold storage via `tools/cold_storage.py`, with `cold-storage.json` and `COLD_STORAGE.md`, under `Downloads\padua\cold_storage\padua-argmax-bridge-20261105\`.
 - **Compute.**
-  - Sandbox only: up to 6 h wall per run and about 48 h of cumulative CPU. Claude proposes these limits; AC may change them.
+  - Sandbox: up to 6 h wall per run and about 48 h of cumulative CPU per direction-round batch. AC approved these limits on 2026-11-05.
   - Large runs use compiled code (C with Arb/FLINT, or MPFR). Python is for prototypes only.
-  - Do not use AC's NTNU servers or any other machine without asking AC in the chat first (gate B4).
+  - **Syvert (NTNU):** pre-approved up to about 20 cores × 7 days under the B4 condition, launched by AC from Codex's run package. Use no other machine, and no Syvert use beyond that, without asking AC.
 - **Literature.**
   - You may open any public page holding relevant literature. Cite only after a fulltext read, and record LIT entries.
   - List unreachable fulltexts for AC with clickable DOI and journal links.

@@ -1,10 +1,10 @@
 # Padua argmax bridge 33 ≤ n < N_* (PD-T099): log
 
 - Branch: `codex/padua-argmax-bridge-20261105` · Base: main `9322fba` (PR #25 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: `Codex (gpt-6-astra ultra): Continue codex/padua-argmax-bridge-20261105.` · Open handoff: [handoffs/01-work.md](handoffs/01-work.md)
+- Stage: WORK · Next: `Codex (gpt-6-astra high): Continue codex/padua-argmax-bridge-20261105.` · Open handoff: [handoffs/01-work.md](handoffs/01-work.md)
 - Reserved final-ID ranges: none yet. Reserve when the draft PR opens: main, open PRs #21 and #24, and retired gaps.
 - Claims: none yet.
-- Open for AC: the sandbox allowance in handoff 01 (6 h per run, about 48 h cumulative CPU) is Claude's proposal. Gate B4 asks AC before any use of NTNU.
+- Open for AC: none at setup. The sandbox allowance is approved. Syvert is pre-approved up to about 20 cores × 7 days under gate B4, and AC launches it from Codex's run package.
 
 ## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
 
@@ -17,6 +17,15 @@
   - N5/N6: 1-D Ehlich–Zeller/Brutman analysis and the Lissajous generating curve.
 - Claude's relaxed scan of state/IDEAS.md found no entry for N1–N4's mechanisms. IDEA-318 covers Brutman-type ordering. This scan is a pointer only; Codex runs the novelty gate.
 - Rules read at `9322fba` (unchanged since `440d107`). Branch created from main `9322fba`. Only this LOG, handoff 01 and the results stub were added. No computation was run and no claim made.
+
+## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — AC's budget and model allocation
+
+- AC wrote: "I'd allow more rounds if there is progress, let's say 15 rounds per direction. Run the coordinator on Astra High, easier jobs on Sol and raise to Astra Ultra only when things get serious. Sandbox limits are okey, and Syvert has approx same power, no problem to run 20 cores for a week there if that would meet the analytic N."
+- Handoff 01 was amended in place before any Codex work (the branch had no commits after setup):
+  - model allocation;
+  - a round rule of up to 15 rounds per direction, continued only on recorded progress, with two empty rounds ending a direction early;
+  - sandbox limits approved;
+  - Syvert pre-approved up to about 20 cores × 7 days under the B4 condition, launched by AC.
 
 ## Runs needed
 
