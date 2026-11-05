@@ -1,6 +1,6 @@
 # Handoff 03 — nearest-neighbour MOP IEP — Codex response-01 to Claude audit-01
 
-- Status: open
+- Status: done in 5b36f8f8ac5b3c9a426d22a9375155a2b4d86e1b
 - Previous handoff: 02-audit.md
 - Next agent / model / effort: Codex.
   - Mathematics and record corrections (F1, F2): gpt-6.1-sol, xhigh.
