@@ -27,4 +27,9 @@ in 39.393 s. Receipts: evidence/k0-float-replay.json and
 evidence/k0-exact-m60.json. The m1600 minimum regenerates as
 -0.02341441659034573, still MEASURED until an outward certificate.
 
-K1 pending: fixed-point interval witness producer is being implemented.
+K1 PASS. Final-code producer at m400 certified positive energy in3.34s
+(the receipt gives exact timing), relative width <2.54e-9. Independent
+alternate arithmetic accepted in1.89s, relative width <5.854e-8. Both
+are below ten minutes and1e-6. Sources, timings and exact enclosures:
+evidence/witness-producer-m400.json and witness-independent-m400.json.
+Later m1101,1240,1600 are strictly negative on both arithmetic paths.

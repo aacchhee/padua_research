@@ -1,0 +1,26 @@
+{
+  "code_sha256": "11f7cabcfb3c431a26224eb0d8df49db5d7de65c4685f979a9037d835a1cd498",
+  "status": "PASS",
+  "controls": [
+    {
+      "control": "zero",
+      "expected_accept": false,
+      "exit_code": 1,
+      "diagnostic": "ValueError: zero witness"
+    },
+    {
+      "control": "above-degree",
+      "expected_accept": false,
+      "exit_code": 1,
+      "diagnostic": "ValueError: total degree violated"
+    },
+    {
+      "control": "constant",
+      "expected_accept": true,
+      "exit_code": 0,
+      "diagnostic": "positive constant energy accepted"
+    }
+  ],
+  "command": "PYTHONPATH=/tmp/mz-cleanup-deps python: construct m2 constant, zero and above-degree dyadic artifacts; execute committed producer per artifact",
+  "scratch": "/tmp/mz-cleanup/controls"
+}
