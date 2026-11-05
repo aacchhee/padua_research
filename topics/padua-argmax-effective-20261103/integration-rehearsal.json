@@ -1,0 +1,62 @@
+{
+  "base": "440d1079e42c3ef21c40d1cf8870f5b206410c6a",
+  "order": [
+    {
+      "label": "PR19",
+      "source": "d45ffdc916148dd0b4768f4f7eeeb838f61d14c2",
+      "merge_returncode": 0,
+      "conflicts": [],
+      "tree": "a2fe60fa31c3c2aac8f5dd713d2e38acfd62c59c"
+    },
+    {
+      "label": "PR20",
+      "source": "545c8de93120360ea45fb686637ff9b10bad5f66",
+      "merge_returncode": 0,
+      "conflicts": [],
+      "tree": "20b1393437d7798ff6150efd0318d579d86d6710"
+    },
+    {
+      "label": "PR21",
+      "source": "890f56ccde35431b70b43141c224b0b8817fea7f",
+      "merge_returncode": 0,
+      "conflicts": [],
+      "tree": "2f89c4abb60d737bc87759510b02c6714f78bc60"
+    },
+    {
+      "label": "PR22",
+      "source": "6ec5768ef90aeebc918e1a126e2497258e61f507",
+      "merge_returncode": 0,
+      "conflicts": [],
+      "tree": "3d09d0051b4b730810aedbefd6e2d07d60ba2b4f"
+    },
+    {
+      "label": "PR23",
+      "source": "ed9aaa9fc2546a54d7822b31f39dac7e141a9238",
+      "merge_returncode": 0,
+      "conflicts": [],
+      "tree": "79b15a3f6dc85ee0c904cd0984ec67e97e7c08c7"
+    },
+    {
+      "label": "PR24",
+      "source": "f85c7b5c83822ff60b62c84bed1ec6ae31628422",
+      "merge_returncode": 0,
+      "conflicts": [],
+      "tree": "9c87297b8de672911077354b19fd3f457bad8cf6"
+    }
+  ],
+  "shared_registry_bytes_equal_PR19": {
+    "PROOF_STATUS.md": true,
+    "state/IDEAS.md": true,
+    "literature/INDEX.md": true,
+    "ID_CROSSWALK.md": true,
+    "RESULTS.md": true,
+    "state/CURRENT.md": true,
+    "PAPER_MAP.md": true,
+    "topics/padua-batch-20261031/ALLOCATIONS.md": true
+  },
+  "no_live_branch_changed": true,
+  "disposable_branch": "codex/padua-argmax-prep-rehearsal-20261105",
+  "disposable_worktree": "/tmp/padua-argmax-prep-rehearsal-20261105",
+  "conflicts": 0,
+  "peer_scope": "PR20\u201324 currently change no shared registries; future preparation may create new conflicts requiring refresh."
+}
