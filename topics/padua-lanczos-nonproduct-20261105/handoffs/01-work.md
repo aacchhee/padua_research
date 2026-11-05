@@ -1,6 +1,6 @@
 # Handoff 01 — padua-lanczos-nonproduct-20261105 — span drift on genuinely non-product families
 
-- Status: open
+- Status: done in 38237fecb45f672f20a25d9989a90c31f3ff02a6
 - Previous handoff: none (new topic; predecessors `topics/padua-lanczos-drift-20261101/` (PR #15) and `topics/padua-lanczos-frontier-20261105/` (PR #24), both merged)
 
 - Next agent / model / effort: Codex. This follows the allocation AC set on 2026-11-05 ("Run the coordinator on Astra High, easier jobs on Sol and raise to Astra Ultra only when things get serious"):
