@@ -238,3 +238,27 @@ reading/novelty claim or new literature allocation. All prior/retired
 ranges and priority remain intact; this is import, not a reservation.
 [Scientific map](../padua-argmax-alln-20261101/prep-support/final-theory-map.json)
 and [candidate map](../padua-argmax-alln-20261101/prep-support/final-idea-map.json).
+
+
+## PR19 effective Padua argmax — unchanged reservation import and assignments
+
+2026-11-05. Owner `codex/padua-argmax-effective-20261103`; original reservation
+published 2026-11-03 in `ed8db2fc364d0ba34c3c06815460b3b2971787b5`,
+[PR19](https://github.com/aacchhee/padua_research/pull/19).
+Import unchanged PD-T246–265 (20), PD-N084–091 (8), IDEA336–355 (20),
+LIT466–473 (8); no re-reservation or retrospective headroom.
+Original checked heads and priority remain in the
+[topic ledger](../padua-argmax-effective-20261103/ALLOCATIONS.md).
+The [fresh union scan](../padua-argmax-effective-20261103/allocation-scan.json)
+covers main and all open PRs19–24, every ledger copy and the four registries;
+all closed PRs are merged. Other live ranges through T363/N131/IDEA453/LIT593
+remain owned by their separate branches and are not assigned here.
+
+Final assignments: PD-T246–252 (7), PD-N084–086 (3), IDEA336–348 (13),
+LIT466–470 (5), existing LIT379 reused for bounded rereading.
+Permanent unused gaps: PD-T253–265, PD-N087–091, IDEA349–355, LIT471–473.
+[Exact map](../padua-argmax-effective-20261103/final-id-map.json).
+Every earlier accepted reservation, unused gap and priority remains intact.
+AC's 2026-11-05 instruction removes the planned further Claude check;
+the accepted mathematical audit and response check retain their stated scopes.
+Only AC merges.
