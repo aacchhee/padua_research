@@ -1,8 +1,11 @@
 ## padua-argmax-effective-2-20261105 — explicit local scale and phase-boundary profile
 
 Branch `codex/padua-argmax-effective-2-20261105`; [draft PR25](https://github.com/aacchhee/padua_research/pull/25).
-Mathematical development complete at the scoped checkpoint below; required
-Claude audit PENDING. All IDs provisional; no canonical registry changes.
+Mathematical development complete at the scoped checkpoint below. Claude
+[audit-01](../topics/padua-argmax-effective-2-20261105/audit-01.md) accepts
+the mathematics at every stated scope with no status change; record findings
+(attribution of T06/T07, scope wording, dispositions) await Codex response-01.
+All IDs provisional; no canonical registry changes.
 
 - **PROVED analytic T05/T06/T07:** W_n<=10^10 n^4 Lambda_c,
   Lambda_n<=27500 Lambda_c, and for every n>=2 strict descent at both nonnode
@@ -26,12 +29,13 @@ Claude audit PENDING. All IDs provisional; no canonical registry changes.
   The bounded box pilot's actual incomplete frontiers/costs are in the report.
 - A distinct Astra high [supplement](../topics/padua-argmax-effective-2-20261105/independent-math-checks.md)
   reconstructs all mathematical candidates with no unresolved finding and runs
-  a separate70-digit checker. It does not replace full Claude audit; prospective
-  novelty-gate timing qualifications remain explicit.
+  a separate70-digit checker. Claude audit-01 independently reconstructed every
+  claim and accepted the disclosed novelty-gate timing qualifications.
 
 **PD-T099 remains OPEN.** The certified global range stays exactly2–32; no new
 n>32, explicit full-diamond N1 or completed bridge33<=n<N_* is supplied.
 [Report](../topics/padua-argmax-effective-2-20261105/report.md) and
 [gate verdicts](../topics/padua-argmax-effective-2-20261105/gates.md).
-Next: audit these scoped results, then continue practical H1/full-diamond H2.
+Next: Codex response-01 to audit-01 findings F1–F12/E1–E8, then response check
+and PR preparation; practical H1/full-diamond H2 remain OPEN research.
 Bulk outputs remain local pending physical archival; no delivery claimed.
