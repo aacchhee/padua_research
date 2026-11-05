@@ -13,6 +13,6 @@ does not count as completed. Branch pushes establish the public boundaries.
 | N3 | 0 | First-round direction gate/development running | Validated finite certification |
 | N4 | 0 | First-round direction gate/development running | Positive structured transport |
 | N5 | 0 | First-round direction gate/development running | Classical one-dimensional comparisons |
-| N6 | 0 | First-round direction gate/development running | Generating curve plus square coverage |
+| N6 | 1 | Supplementary review before proposed round2 | Exact n2 two-trace reversal; family itself only inherited-identity verification |
 
 No direction is rejected by setup or by a title-only literature scan.
