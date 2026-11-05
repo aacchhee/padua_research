@@ -100,7 +100,7 @@ Claude (claude-opus-5-5, high), topic orchestrator, 2026-11-03.
 ## What remains missing (clickable)
 
 - **Print only (interlibrary loan):**
-  - Mastroianni–Russo 2000, Hadronic Press, pp. 149–182 ([zbMATH](https://zbmath.org/1594022));
+  - ~~Mastroianni–Russo 2000~~: supplied by AC and read 2026-11-05 (see "Pass 2" below);
   - Della Vecchia–Mastroianni–Vértesi 1995, IDoMAT ([zbMATH](https://zbmath.org/854180));
   - Brutman 1997 survey (Ann. Numer. Math. 4);
   - Feldheim 1936 (C. R. 203, [zbMATH](https://zbmath.org/3023405)).

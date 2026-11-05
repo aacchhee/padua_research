@@ -43,3 +43,17 @@ Listed 2026-11-03 through the link to AC's computer. No file contents are commit
 - `1-s2.0-S0893965926001643-main.pdf` — Wu, AML 182 (2026) (A2)
 - `10.33205-cma.1070020-2240064.pdf` — De Marchi, CMA 5(1) (2022)
 - `2605.23299v1.pdf` — Białas-Cież–De Marchi–Suder, arXiv v1 (browser download during access testing)
+
+## Arrivals 2026-11-05 ~10:20 (re-inventory after AC's message "some papers have arrived")
+
+Listed through the link to AC's computer: 44 files in `Downloads\padua\papers`. New since the 2026-11-03 arrivals:
+
+- `MastroianniRussoVolRassias.pdf` — Mastroianni–Russo 2000, Hadronic Press, pp. 149–182 (A4; 34-page typeset copy without printed page numbers)
+- `1-s2.0-S0021904518300194-main.pdf` — Kolomoitsev–Lomako–Prestin, JAT 229 (2018) (A11)
+- `1-s2.0-S0021904596901021-main.pdf` — Xu, JAT 87 (1996) (A12)
+- `1-s2.0-S0377042706006509-main.pdf` — Caliari–De Marchi–Vianello, JCAM 210 (2007) (A13)
+- `1-s2.0-S0021904506000505-main.pdf` — Bos–Caliari–De Marchi–Vianello–Xu, JAT 143 (2006) (A14)
+
+Present since 2026-11-03 but not yet listed above: `S0002-9947-1994-1169912-X.pdf` (A16), `S0002-9947-1994-1258289-7.pdf` (A17), `general_properties_of_orthogonal_polynomials_in_several_variables.pdf` (A18, Dunkl–Xu Ch. 3). These were read in the f1007d3 pass.
+
+Still absent: A9 (Della Vecchia–Mastroianni–Vértesi 1995), A10 (Brutman 1997 survey), A15 (Feldheim 1936) and A19 (König–Nielsen journal version).
