@@ -1,0 +1,156 @@
+{
+  "date": "2026-11-05",
+  "main": "21dbfc90257b952d8923f6d01739d12aa8d6e0a1",
+  "open_prs": {
+    "21": "890f56ccde35431b70b43141c224b0b8817fea7f",
+    "22": "f4c41acb665f4ea35b5db05ec45ae8ba34fe6b96",
+    "24": "79c3d6a211325eca6e8311b3ae03187c100a1d8a"
+  },
+  "previous_pr24": "5e5081e991fc48f033d3ef51ee2b6e42f892d29d",
+  "files": [
+    {
+      "path": "ID_CROSSWALK.md",
+      "sha256": "069b1785c527603aacdd0af0c61be8b7787d0f91288625432223ec239566243a",
+      "bytes": 333817,
+      "unchanged": false,
+      "mentions_of_nn_reserved_ids": {
+        "PD-T": [],
+        "PD-N": [],
+        "IDEA-": [],
+        "LIT-": []
+      },
+      "same_as_current_main": true
+    },
+    {
+      "path": "PROOF_STATUS.md",
+      "sha256": "53a76ee6154ae618ff5f18103751fd5697ab47a89c127d0095449a6bd399487c",
+      "bytes": 197539,
+      "unchanged": false,
+      "mentions_of_nn_reserved_ids": {
+        "PD-T": [],
+        "PD-N": [],
+        "IDEA-": [],
+        "LIT-": []
+      },
+      "same_as_current_main": true
+    },
+    {
+      "path": "literature/INDEX.md",
+      "sha256": "c5342f00f6a4604076d1f89b2a2b6003e8374460548b7ca6e7685ac6c8858a16",
+      "bytes": 274511,
+      "unchanged": false,
+      "mentions_of_nn_reserved_ids": {
+        "PD-T": [],
+        "PD-N": [],
+        "IDEA-": [],
+        "LIT-": []
+      },
+      "same_as_current_main": true
+    },
+    {
+      "path": "state/IDEAS.md",
+      "sha256": "908ffa8bc71ec21dc74f7cf7bd626c16d3fd4af65fbbfe313432bec59193f01c",
+      "bytes": 226050,
+      "unchanged": false,
+      "mentions_of_nn_reserved_ids": {
+        "PD-T": [],
+        "PD-N": [],
+        "IDEA-": [],
+        "LIT-": []
+      },
+      "same_as_current_main": true
+    },
+    {
+      "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+      "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+      "bytes": 2271,
+      "unchanged": true,
+      "mentions_of_nn_reserved_ids": {
+        "PD-T": [],
+        "PD-N": [],
+        "IDEA-": [],
+        "LIT-": []
+      },
+      "same_as_current_main": true
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/ALLOCATIONS.md",
+      "sha256": "8395a86ac4260c5e3c6052244eb0ef3188ae2060199abc936bb703e33346fa76",
+      "bytes": 4177,
+      "unchanged": true,
+      "mentions_of_nn_reserved_ids": {
+        "PD-T": [],
+        "PD-N": [],
+        "IDEA-": [],
+        "LIT-": []
+      },
+      "same_as_current_main": true
+    },
+    {
+      "path": "topics/padua-argmax-effective-20261103/ALLOCATIONS.md",
+      "sha256": "25a84c861561cf383453aa784c57fda97e9f53139398fe4d5b8552005e5ccc8c",
+      "bytes": 3246,
+      "unchanged": false,
+      "mentions_of_nn_reserved_ids": {
+        "PD-T": [],
+        "PD-N": [],
+        "IDEA-": [],
+        "LIT-": []
+      },
+      "same_as_current_main": true
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "sha256": "ad4b99b25daeff950cdcb285a94647fc16a4672f9f3eafb73e506b9b5bd4c676",
+      "bytes": 34255,
+      "unchanged": false,
+      "mentions_of_nn_reserved_ids": {
+        "PD-T": [],
+        "PD-N": [],
+        "IDEA-": [],
+        "LIT-": []
+      },
+      "same_as_current_main": true
+    },
+    {
+      "path": "topics/padua-lanczos-frontier-20261105/ALLOCATIONS.md",
+      "sha256": "964821f8d27a680512320a1798ae77ae37d8dd8dc684f3eab7f7f49e0cf7a85a",
+      "bytes": 1951,
+      "unchanged": true,
+      "mentions_of_nn_reserved_ids": {
+        "PD-T": [],
+        "PD-N": [],
+        "IDEA-": [],
+        "LIT-": []
+      }
+    },
+    {
+      "path": "topics/padua-lebesgue-followups-20261103/ALLOCATIONS.md",
+      "sha256": "6467929d5b06a9ef0663e16594d8ea4fe297e64f21fa34b9b128d3412f384759",
+      "bytes": 2906,
+      "unchanged": false,
+      "mentions_of_nn_reserved_ids": {
+        "PD-T": [],
+        "PD-N": [],
+        "IDEA-": [],
+        "LIT-": []
+      },
+      "same_as_current_main": true
+    },
+    {
+      "path": "topics/padua-mz-2d-frontier-20261105/ALLOCATIONS.md",
+      "sha256": "6bab02444f5371fe1e7771aa1f951c6ba6646e9bf438dd3ecb7083c282eaf215",
+      "bytes": 2755,
+      "unchanged": false,
+      "mentions_of_nn_reserved_ids": {
+        "PD-T": [],
+        "PD-N": [],
+        "IDEA-": [],
+        "LIT-": []
+      },
+      "same_as_current_main": true
+    }
+  ],
+  "qualification": "Mentions of NN reserved IDs in imported ledgers acknowledge ownership; they are not allocations to PR24. New main-ledger imports and inherited main registry entries are compared separately.",
+  "conclusion": "PR24 advance is merged-main reconciliation plus topic-only work: every ledger/registry copy shared with current main equals main byte-for-byte, and PR24 own reservation ledger is unchanged. No final IDs on PR24, no collision or changed source-dedup conclusion."
+}

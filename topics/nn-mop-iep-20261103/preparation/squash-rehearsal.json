@@ -1,0 +1,43 @@
+{
+  "status": "MEASURED mechanical squash rehearsal, no scientific approval or merge authorization",
+  "date": "2026-11-05",
+  "cases": [
+    {
+      "case": "main-to-PR22",
+      "base": "21dbfc90257b952d8923f6d01739d12aa8d6e0a1",
+      "pr22": "fcb3a6af326a8a9540849fcdbe9a5c4f1b222d3c",
+      "pr22_squash_tree": "19c4370e4959f0e382973a1260650344ef1f7dcd",
+      "matches_pr22_tree": true,
+      "pr22_squash_commit": "6980f18c39a93116b8f1fb366d98633116fa5478"
+    },
+    {
+      "case": "PR22-then-PR24",
+      "base": "21dbfc90257b952d8923f6d01739d12aa8d6e0a1",
+      "pr22": "fcb3a6af326a8a9540849fcdbe9a5c4f1b222d3c",
+      "pr22_squash_tree": "19c4370e4959f0e382973a1260650344ef1f7dcd",
+      "matches_pr22_tree": true,
+      "pr22_squash_commit": "c7fe234dd9a497a135ee07f44a3541866220f9c8",
+      "second_head": "79c3d6a211325eca6e8311b3ae03187c100a1d8a",
+      "second_exit": 0,
+      "conflicts": [],
+      "pr22_topic_records_preserved": true,
+      "second_tree": "8850caf0ce9ba33bc8f599f8c012bc8e1076921b",
+      "all_pr22_shared_registration_sections_preserved": true
+    },
+    {
+      "case": "PR22-then-PR21",
+      "base": "21dbfc90257b952d8923f6d01739d12aa8d6e0a1",
+      "pr22": "fcb3a6af326a8a9540849fcdbe9a5c4f1b222d3c",
+      "pr22_squash_tree": "19c4370e4959f0e382973a1260650344ef1f7dcd",
+      "matches_pr22_tree": true,
+      "pr22_squash_commit": "c7fe234dd9a497a135ee07f44a3541866220f9c8",
+      "second_head": "890f56ccde35431b70b43141c224b0b8817fea7f",
+      "second_exit": 0,
+      "conflicts": [],
+      "pr22_topic_records_preserved": true,
+      "second_tree": "6cee554cce3f02b1eae52b9552f91f857470b1d5",
+      "all_pr22_shared_registration_sections_preserved": true
+    }
+  ],
+  "limits": "Detached disposable worktree only; no main/remote branch changed. PR21/24 are unaudited/current development snapshots for preservation checking, not readiness or merge order. Later heads require replay."
+}
