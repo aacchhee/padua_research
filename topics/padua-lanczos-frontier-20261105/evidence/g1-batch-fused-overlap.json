@@ -1,0 +1,256 @@
+{
+  "label": "FUSED_ENERGY_EXACT_OVERLAP",
+  "rules_sha": "9825d184517db81d0aad8542fbd6639f2164b803",
+  "code_sha256": "49b45df9c2c28e3e63e9b886ff873a744ea0f0a44cd5f51fe2e3a345eec81552",
+  "all_88_old_endpoint_choice_tie_rows_match": true,
+  "eight_fresh_d4_cases_all_scalar_d2_d3_d4_prefix_controls": true,
+  "small_launches": {
+    "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/small-launches.json",
+    "bytes": 9799,
+    "sha256": "7392985d5b10de68697578a7f4ebeeb7b0a91832efa03c1b4916bd59821669ad"
+  },
+  "overlap_launches": {
+    "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap-launches.json",
+    "bytes": 9855,
+    "sha256": "68381cb1e28e633d7d265eb5293ff0f297769040e60a802362ea781e4f93bad5"
+  },
+  "primitive_controls": {
+    "code_sha256": "49b45df9c2c28e3e63e9b886ff873a744ea0f0a44cd5f51fe2e3a345eec81552",
+    "python": "3.12.14",
+    "python_flint": "0.9.0",
+    "PYTHONPATH": "/tmp/padua-lanczos-frontier-g0/deps",
+    "controls": {
+      "fused_energy_signed_zero_cancellation_controls": true,
+      "batched_signed_zero_repeated_terms_and_cancellation_controls": true,
+      "signed_zero_common_content_add_mul_dot_square_max_controls": true,
+      "control_vector_length": 6,
+      "unreduced_peak_pairs_and_strict_ties": true,
+      "malformed_primitive_controls_rejected": 12
+    }
+  },
+  "max_workers": 2,
+  "case_cap_seconds": 120,
+  "cases": [
+    {
+      "set": "triangle",
+      "rule": "bj",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/triangle-bj-d12.json",
+        "bytes": 3012,
+        "sha256": "e8498085aaab07fb6fe6fc01ee260caf5b974aa662340c794a12a7775a35f22f"
+      },
+      "endpoint": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/triangle-bj-d12/endpoints.json",
+        "bytes": 15589,
+        "sha256": "9af9f415a39754cb79e1ace53c588895449971256f517c30f776c59b049da9bf"
+      },
+      "timing": {
+        "wall_seconds": 4.333906093001133,
+        "process_cpu_seconds": 4.331106492,
+        "basis_wall_seconds": 0.1512138899997808,
+        "basis_cpu_seconds": 0.15121317199999998
+      },
+      "full_baseline_equal_v2": true,
+      "baseline": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/triangle-bj-d12/baseline.jsonl.gz",
+        "bytes": 75592,
+        "sha256": "cb5ce0fdaee40c3608e4430c3be9e2a8de609c7e8c647d547e3d583ad83f42eb"
+      },
+      "uncompressed_baseline_sha256": "621c69c8fcd449e186669c2bd0a1af8cc6b401f8575df19e553bf0d44e97eaa6"
+    },
+    {
+      "set": "triangle",
+      "rule": "mirror",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/triangle-mirror-d12.json",
+        "bytes": 3038,
+        "sha256": "7bf7408a77022a0fda705ba587961af295ee36700c7aa61bbedad8bb693a1a6a"
+      },
+      "endpoint": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/triangle-mirror-d12/endpoints.json",
+        "bytes": 15705,
+        "sha256": "47acfdd0176da66efaaa25966d9798c8989782161f30100b6a0579acda278502"
+      },
+      "timing": {
+        "wall_seconds": 3.0679576210022788,
+        "process_cpu_seconds": 3.063207711,
+        "basis_wall_seconds": 0.10684927400143351,
+        "basis_cpu_seconds": 0.10684983599999999
+      },
+      "full_baseline_equal_v2": true,
+      "baseline": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/triangle-mirror-d12/baseline.jsonl.gz",
+        "bytes": 73969,
+        "sha256": "b9a3d06cbd891f00d91fb1438dafc4058fdb4393565c99dde95e587314c7ae3e"
+      },
+      "uncompressed_baseline_sha256": "d5af3747b35a22f06b9e6ad6772f127beaaadb0a9eb704cdfc0aec46cfa79f97"
+    },
+    {
+      "set": "triangle",
+      "rule": "alt",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/triangle-alt-d12.json",
+        "bytes": 3019,
+        "sha256": "1ab1ba9b29c13f03b7cb568fc68fc89106112bf38cf5a682babeff2617557a24"
+      },
+      "endpoint": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/triangle-alt-d12/endpoints.json",
+        "bytes": 16420,
+        "sha256": "37f391cb95c81dd44c67f5a3226d38829657d8fb78753872d025c813f0fa488d"
+      },
+      "timing": {
+        "wall_seconds": 4.033785170999181,
+        "process_cpu_seconds": 4.029585984,
+        "basis_wall_seconds": 0.12781145800181548,
+        "basis_cpu_seconds": 0.12758550200000002
+      },
+      "full_baseline_equal_v2": true,
+      "baseline": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/triangle-alt-d12/baseline.jsonl.gz",
+        "bytes": 75048,
+        "sha256": "8433512c9a2dd8a9d1da832298b5945cb8ab1bac9fce24d314a8f2981c44fddd"
+      },
+      "uncompressed_baseline_sha256": "bc2d7a06cedc2326dfbd342ef86c4bd2114c1721942165cf8b73b467ccc3fcd9"
+    },
+    {
+      "set": "triangle",
+      "rule": "pivot",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/triangle-pivot-d12.json",
+        "bytes": 3031,
+        "sha256": "673140a0bbab64a9d8a012c98c4d0455020b33f1be14989cf3a30695d3e19ecf"
+      },
+      "endpoint": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/triangle-pivot-d12/endpoints.json",
+        "bytes": 16498,
+        "sha256": "3905833f1b581c22ec855b3e005eda0adc30e8cf52fc1b7d4d6f27205b5ba09c"
+      },
+      "timing": {
+        "wall_seconds": 4.032661000001099,
+        "process_cpu_seconds": 4.030707566,
+        "basis_wall_seconds": 0.12084431600305834,
+        "basis_cpu_seconds": 0.12084442499999999
+      },
+      "full_baseline_equal_v2": true,
+      "baseline": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/triangle-pivot-d12/baseline.jsonl.gz",
+        "bytes": 74714,
+        "sha256": "06b10390d23ceabaac71a606d7f2d230c70143f58143e447fd71f3bda614d93f"
+      },
+      "uncompressed_baseline_sha256": "6b510337d8ee5babd2dcf52bb8181a30fd82e180bed459092a3e755d4ec80d2b"
+    },
+    {
+      "set": "rotated",
+      "rule": "bj",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/rotated-bj-d12.json",
+        "bytes": 3014,
+        "sha256": "41efdb22bb95b5c8b31fa4628070acfd72290e29984680ce2c724d9f22d3975b"
+      },
+      "endpoint": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/rotated-bj-d12/endpoints.json",
+        "bytes": 94581,
+        "sha256": "1ee168b063b42a49201875639f93edc364d38311423a4b2f790a869db43d43eb"
+      },
+      "timing": {
+        "wall_seconds": 27.498766908000107,
+        "process_cpu_seconds": 27.386809329000002,
+        "basis_wall_seconds": 0.5249662679998437,
+        "basis_cpu_seconds": 0.5245964240000001
+      },
+      "full_baseline_equal_v2": true,
+      "baseline": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/rotated-bj-d12/baseline.jsonl.gz",
+        "bytes": 796341,
+        "sha256": "6f9146affb9407d5d3816e94e483957b7f810d070916291ffe03433d538b1691"
+      },
+      "uncompressed_baseline_sha256": "49bddf2eda9927c46bda858cb8d650c92bfccbbddf8849bb4a17154eb8739a51"
+    },
+    {
+      "set": "rotated",
+      "rule": "mirror",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/rotated-mirror-d12.json",
+        "bytes": 3025,
+        "sha256": "bc50075ed18b88cdecdade67e5f95b00d8e5b4b1fa6906a82c70450d838e8649"
+      },
+      "endpoint": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/rotated-mirror-d12/endpoints.json",
+        "bytes": 100174,
+        "sha256": "5e25ded85c133a799335bbf97b2003125de78d848c02c534a1c0e0957b1ee95a"
+      },
+      "timing": {
+        "wall_seconds": 29.78027805199963,
+        "process_cpu_seconds": 29.675985457,
+        "basis_wall_seconds": 0.6683316720009316,
+        "basis_cpu_seconds": 0.668257062
+      },
+      "full_baseline_equal_v2": true,
+      "baseline": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/rotated-mirror-d12/baseline.jsonl.gz",
+        "bytes": 788882,
+        "sha256": "d3a69f576b54f5d948689d92d680a4dcfba004f75a1cd4904691810cf2a01a70"
+      },
+      "uncompressed_baseline_sha256": "e27f735b5d220868523eeff3a389bc839682a7d3c8adaa972389b264c21b2a4c"
+    },
+    {
+      "set": "rotated",
+      "rule": "alt",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/rotated-alt-d12.json",
+        "bytes": 3012,
+        "sha256": "6520060b6b7019f75f633669f9a54dbc6fb055f2f2775119de67a251d4c174ac"
+      },
+      "endpoint": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/rotated-alt-d12/endpoints.json",
+        "bytes": 112272,
+        "sha256": "5f710a4837b610bb8e0f4cc8cfac5846a0f1bbef65ac68f3f63b174133aaaa3b"
+      },
+      "timing": {
+        "wall_seconds": 37.440736352000386,
+        "process_cpu_seconds": 37.224543471000004,
+        "basis_wall_seconds": 0.8723259550024522,
+        "basis_cpu_seconds": 0.8705448
+      },
+      "full_baseline_equal_v2": true,
+      "baseline": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/rotated-alt-d12/baseline.jsonl.gz",
+        "bytes": 797044,
+        "sha256": "5e8f4a003869dc5cae9ce0658116cea49166d661c18d51a898715140d84917fe"
+      },
+      "uncompressed_baseline_sha256": "6192274735afba30dd780011dabfcfb476850aa6889673c4c4241b1c7395ecbe"
+    },
+    {
+      "set": "rotated",
+      "rule": "pivot",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/rotated-pivot-d12.json",
+        "bytes": 3025,
+        "sha256": "3279c938bc80778e3229ab32390687bb3f04444f287a1b316372de84308e028a"
+      },
+      "endpoint": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/rotated-pivot-d12/endpoints.json",
+        "bytes": 108634,
+        "sha256": "1d7f466c27c388221fd4704ca12717aa6e7e9a90cabee734f3b28afc9bcc955d"
+      },
+      "timing": {
+        "wall_seconds": 33.51161818900073,
+        "process_cpu_seconds": 33.300596019000004,
+        "basis_wall_seconds": 1.3072699470030784,
+        "basis_cpu_seconds": 1.299800041
+      },
+      "full_baseline_equal_v2": true,
+      "baseline": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/fused/overlap/rotated-pivot-d12/baseline.jsonl.gz",
+        "bytes": 793493,
+        "sha256": "64fae115cb15dfd66b355236d7cdbd69b78186fce46e855d80296d609c5ad2d9"
+      },
+      "uncompressed_baseline_sha256": "186eedca7a3fb87d475241ba6c20efddede045ead38559e1047e5d367e8e4f64"
+    }
+  ],
+  "failure_retained": "No execution failures in fused round; prior batch import failure and79.050s cost stop preserved unchanged.",
+  "limits": [
+    "Exact representation implementation only. All original nodes/all sources/frozen endpoints preserved.",
+    "Temporary raw outputs outside Git; archival pending. No fit/operational/asymptotic claim."
+  ]
+}

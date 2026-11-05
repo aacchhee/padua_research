@@ -1,0 +1,99 @@
+{
+  "scope": "primitive validation only, seed9107/9108, degree6, M80; no natural targets",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "longdouble_nmant": 63,
+  "l7_sha256": "99ce8a75a8306ef58c6eef5f5e9fd105d6e0b0164b141bc00f7f1207bda61986",
+  "validator_sha256": "12bb7df7d83336d017e19f3c27def3352fc57f93d5bce87bba42803383cb993f",
+  "own": [
+    {
+      "selection": "dev",
+      "full": true,
+      "old_Q_entry_max": 0.0,
+      "parent_path_equal": true,
+      "training_replay_max": 1.3739009929736312e-15
+    },
+    {
+      "selection": "dev",
+      "full": false,
+      "old_Q_entry_max": 0.0,
+      "parent_path_equal": true,
+      "training_replay_max": 1.0269562977782698e-15
+    },
+    {
+      "selection": "mirror",
+      "full": true,
+      "old_Q_entry_max": 0.0,
+      "parent_path_equal": true,
+      "training_replay_max": 6.314393452555578e-16
+    },
+    {
+      "selection": "mirror",
+      "full": false,
+      "old_Q_entry_max": 0.0,
+      "parent_path_equal": true,
+      "training_replay_max": 8.049116928532385e-16
+    },
+    {
+      "selection": "alt",
+      "full": true,
+      "old_Q_entry_max": 0.0,
+      "parent_path_equal": true,
+      "training_replay_max": 9.853229343548264e-16
+    },
+    {
+      "selection": "alt",
+      "full": false,
+      "old_Q_entry_max": 0.0,
+      "parent_path_equal": true,
+      "training_replay_max": 1.4710455076283324e-15
+    },
+    {
+      "selection": "adapt",
+      "full": true,
+      "old_Q_entry_max": 0.0,
+      "parent_path_equal": true,
+      "training_replay_max": 8.604228440844963e-16
+    },
+    {
+      "selection": "adapt",
+      "full": false,
+      "old_Q_entry_max": 0.0,
+      "parent_path_equal": true,
+      "training_replay_max": 1.0755285551056204e-15
+    }
+  ],
+  "Jacobi_max_difference_vs_scipy": 1.269384597435419e-11,
+  "references": [
+    {
+      "domain": "disk",
+      "degree": 6,
+      "longdouble_gram_max": 4.336808689942018e-19,
+      "QR_residual_max": 5.421010862427522e-20,
+      "known_coeff_solve_max": 5.488773498207866e-19
+    },
+    {
+      "domain": "lshape",
+      "degree": 6,
+      "longdouble_gram_max": 3.2526065174565133e-19,
+      "QR_residual_max": 5.421010862427522e-20,
+      "known_coeff_solve_max": 1.782157321023048e-18
+    },
+    {
+      "domain": "triangle",
+      "degree": 6,
+      "longdouble_gram_max": 4.336808689942018e-19,
+      "QR_residual_max": 8.809142651444724e-20,
+      "known_coeff_solve_max": 2.439454888092385e-19
+    },
+    {
+      "domain": "sector",
+      "degree": 6,
+      "longdouble_gram_max": 5.421010862427522e-19,
+      "QR_residual_max": 5.421010862427522e-20,
+      "known_coeff_solve_max": 1.1180834903756764e-18
+    }
+  ],
+  "status": "PASS_BOUNDED_PRIMITIVES"
+}

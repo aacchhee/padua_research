@@ -1,0 +1,277 @@
+{
+  "status": "MEASURED_SUPPLEMENTARY_G0_REVIEW",
+  "reviewer": "Codex, requested gpt-6-astra high; serving metadata not independently exposed",
+  "rules_sha": "f85c7b5c83822ff60b62c84bed1ec6ae31628422",
+  "source_commit": "8359bf7a047d9a212bd841224fb97a458cb7435e",
+  "upstream_commit": "6903d7af9995c9d88e661fb229626696e00fdfba",
+  "input_sha256": "bd2a98cab06f16494f95d89697091aeacebd3a87fdbd760ffaac707bfc57a929",
+  "independent_code_sha256": "9742f3fe95f77f6142aad56dc7176e256241a32c7ef1106fc632ec6c6ee64c7f",
+  "attribution_code_sha256": "08b9f18d6ac1c7c90546763ac330fff754030fcb6e1561989d764990ed3dd984",
+  "scope": "T24 n12 G0 discrepancy diagnosis only; no new scientific claim, novelty, G1-G4 or L1-L7 target run",
+  "disposition": "RESOLVED_ARITHMETIC_SENSITIVITY_CLASS",
+  "unchanged_gate": "Any unexplained mismatch stops the campaign until it is explained.",
+  "basis": "Independent fresh executions, independent Arb monomial projection, local-residual propagation, controlled kernels, and higher-precision original-algorithm controls explain arithmetic-sensitive recurrence variation at observed scales. No tolerance or bit-equality criterion is introduced.",
+  "historical_limit": "Exact historical runtime and Q/H unavailable; old alternating gap is scale-consistent, not reproduced or enclosed by empirical kernel probes.",
+  "commands": [
+    [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "topics/padua-lanczos-frontier-20261105/code/g0_independent.py",
+      "--snapshot",
+      "/tmp/padua-lanczos-frontier-g0/validation/replay",
+      "--external",
+      "/tmp/padua-lanczos-frontier-g0/polyrat",
+      "--output-dir",
+      "/tmp/padua-lanczos-frontier-g0-review/baseline"
+    ],
+    [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "topics/padua-lanczos-frontier-20261105/code/g0_independent.py",
+      "--snapshot",
+      "/tmp/padua-lanczos-frontier-g0/validation/replay",
+      "--external",
+      "/tmp/padua-lanczos-frontier-g0/polyrat",
+      "--output-dir",
+      "/tmp/padua-lanczos-frontier-g0-review/nehalem"
+    ],
+    [
+      "env",
+      "PYTHONPATH=/tmp/padua-lanczos-frontier-g0/deps",
+      "OPENBLAS_NUM_THREADS=1",
+      "OPENBLAS_CORETYPE=Haswell",
+      "python",
+      "-B",
+      "topics/padua-lanczos-frontier-20261105/code/g0_attribution.py",
+      "--external",
+      "/tmp/padua-lanczos-frontier-g0/polyrat",
+      "--snapshot",
+      "/tmp/padua-lanczos-frontier-g0/replay",
+      "--output-dir",
+      "/tmp/padua-lanczos-frontier-g0-review/attribution",
+      "--receipt",
+      "/tmp/padua-lanczos-frontier-g0-review/attribution.json"
+    ]
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OPENBLAS_CORETYPE": null,
+    "PYTHONPATH": "/tmp/padua-lanczos-frontier-g0/deps"
+  },
+  "source_pins": {
+    "tracks/bivariate-lanczos/code/drift/e6_benchmark.py": "e328b7d5d965637e986285cafe596ac15cdd9320c195d6f02162d883267baafe",
+    "tracks/bivariate-lanczos/code/drift/e6_smooth.py": "de624205e6909a114521a6e166b212ce05dc84343956e2cbae93a1e515189a1e",
+    "tracks/bivariate-lanczos/code/L2/l2_core.py": "e8c8fa3378b3531f4fc13faac9902757b97c92c281b2bcd2c02875e0b1c5638d",
+    "tracks/bivariate-lanczos/code/L1/l1_recurrence.py": "4b6014359d6cf50d2977ace0524846a5d0bf5498528a382e1c6abde2cb05b884",
+    "tracks/bivariate-lanczos/code/L1/l1_r04_checkerboard.py": "1a53cdc4c187edf5ae1e14a60d125b7e2846009134d2d390a68ceb8345506c20"
+  },
+  "upstream_pins": {
+    "arnoldi.py": "e51f356170dc5e1403f1065daf5bc331e7ce470cac1b9161f5ecb9efccf68d86",
+    "index.py": "84df400c73a2aacf922ff38c0a591b525c2ac1f9b7a9f958f4111d4ceb88d10d",
+    "basis.py": "9ce50feba7cfaa706db3bb94bbe2b34f065d9dbde28a18a3eee021d11e8ec478",
+    "version.py": "1d13b63cb7af46b37f80ac0d695be5f795c2db5ce6e66dea34143da4cb434439"
+  },
+  "arb_precision_bits": 384,
+  "runs": {
+    "baseline": {
+      "start_utc": "2026-11-05T10:30:25Z",
+      "elapsed_seconds": 2.2729551792144775,
+      "environment_overrides": {
+        "OPENBLAS_CORETYPE": null
+      },
+      "max_arb_entry_radius": 1.433937024659643e-88,
+      "reference_U_outside_polynomial_space": 1.3353172364210852e-14,
+      "methods": {
+        "upstream_xy": {
+          "Q_sha256": "ccaf7329e630bc19de78a31dde6004e291b1d2c3bd08b9fff51378d191468f27",
+          "historical_gap": 3.390860522907935e-10,
+          "frozen_diagnostic_gap": 7.595275418606441e-10,
+          "arb_residual_norm": 7.595276965077752e-10
+        },
+        "upstream_yx": {
+          "Q_sha256": "edfa65e4e0174e9f1e59d8d52f40cbdb68331cfd0a0816d78986426600155c88",
+          "historical_gap": 2.4812027022747904e-10,
+          "frozen_diagnostic_gap": 2.7558694937119657e-10,
+          "arb_residual_norm": 2.7558698675789863e-10
+        },
+        "dev": {
+          "Q_sha256": "edfa65e4e0174e9f1e59d8d52f40cbdb68331cfd0a0816d78986426600155c88",
+          "historical_gap": 2.4812027022747904e-10,
+          "frozen_diagnostic_gap": 2.7558694937119657e-10,
+          "arb_residual_norm": 2.7558698675789863e-10
+        },
+        "mirror": {
+          "Q_sha256": "6926d7da3db33516fde5f1576cac155464065b9e7c74d1e4e7ca9ae3799ba4ef",
+          "historical_gap": 1.3221174301815153e-14,
+          "frozen_diagnostic_gap": 1.4562450797784627e-14,
+          "arb_residual_norm": 1.2399895991078874e-14
+        },
+        "alt": {
+          "Q_sha256": "b385365bfa678fcef0aab6a16718bb3dc11b92caf525397fd242773bff559be5",
+          "historical_gap": 7.301022248971358e-12,
+          "frozen_diagnostic_gap": 1.3027152069570486e-12,
+          "arb_residual_norm": 1.3021560891671946e-12
+        },
+        "adapt": {
+          "Q_sha256": "1807882ab48c927b0569273b80344fbaf1a81dbab77aa52c5af63c1f92df31f7",
+          "historical_gap": 8.656095412273413e-14,
+          "frozen_diagnostic_gap": 7.681630418458321e-14,
+          "arb_residual_norm": 7.624786906041357e-14
+        }
+      }
+    },
+    "Nehalem": {
+      "start_utc": "2026-11-05T10:31:18Z",
+      "elapsed_seconds": 3.113393545150757,
+      "environment_overrides": {
+        "OPENBLAS_CORETYPE": "Nehalem"
+      },
+      "max_arb_entry_radius": 1.433937024659643e-88,
+      "reference_U_outside_polynomial_space": 1.3375065875516095e-14,
+      "methods": {
+        "upstream_xy": {
+          "Q_sha256": "7b302d435d6570523270687004bb642ea24e29cb7f9f8909eac575f30ff9a51b",
+          "historical_gap": 3.390860522907935e-10,
+          "frozen_diagnostic_gap": 2.2543047511689457e-10,
+          "arb_residual_norm": 2.2543024139199024e-10
+        },
+        "upstream_yx": {
+          "Q_sha256": "ac55d9ea976929e0f296835a912ee0961e42d7d67ccb600228e0ac5bc7d03f6f",
+          "historical_gap": 2.4812027022747904e-10,
+          "frozen_diagnostic_gap": 3.2401085783355763e-10,
+          "arb_residual_norm": 3.240107688254557e-10
+        },
+        "dev": {
+          "Q_sha256": "ac55d9ea976929e0f296835a912ee0961e42d7d67ccb600228e0ac5bc7d03f6f",
+          "historical_gap": 2.4812027022747904e-10,
+          "frozen_diagnostic_gap": 3.2401085783355763e-10,
+          "arb_residual_norm": 3.240107688254557e-10
+        },
+        "mirror": {
+          "Q_sha256": "6bbc16a67a905b2310571d1f4c820bd9f1961e2ca37c190e9ee2f6a6b5131bf7",
+          "historical_gap": 1.3221174301815153e-14,
+          "frozen_diagnostic_gap": 2.462815786295884e-14,
+          "arb_residual_norm": 2.4506508675394524e-14
+        },
+        "alt": {
+          "Q_sha256": "d75bfd4a0dadbe2506fae18c85438577682664d75401731843f3a8c86628d4a2",
+          "historical_gap": 7.301022248971358e-12,
+          "frozen_diagnostic_gap": 3.0245497546707835e-12,
+          "arb_residual_norm": 3.024053032854603e-12
+        },
+        "adapt": {
+          "Q_sha256": "694719da9a414bd62473ed87576672f08bf1115a28af9243dd9550bccd5cba5a",
+          "historical_gap": 8.656095412273413e-14,
+          "frozen_diagnostic_gap": 7.432849533496004e-14,
+          "arb_residual_norm": 7.584115512322647e-14
+        }
+      }
+    }
+  },
+  "independent_propagation": {
+    "Haswell": {
+      "xy": {
+        "max_local_residual": 1.0113393154049814e-16,
+        "local_residual_fro": 7.613236282822063e-16,
+        "max_local_residual_over_u": 0.9109334728006013,
+        "frozen_inverse_50dps_normal_error": 7.595276965077749e-10,
+        "frozen_inverse_50dps_reconstruction_discrepancy": 2.7372159357746393e-18,
+        "extended_original_algorithm_gap": 1.9447035481887587e-13
+      },
+      "yx": {
+        "max_local_residual": 1.1874751714083322e-16,
+        "local_residual_fro": 7.659821072203084e-16,
+        "max_local_residual_over_u": 1.0695825478932561,
+        "frozen_inverse_50dps_normal_error": 2.755869867578985e-10,
+        "frozen_inverse_50dps_reconstruction_discrepancy": 2.728858829081113e-18,
+        "extended_original_algorithm_gap": 2.3013317545493946e-13
+      },
+      "alt": {
+        "max_local_residual": 1.1355756930431166e-16,
+        "local_residual_fro": 7.005542709499237e-16,
+        "max_local_residual_over_u": 1.0228356536079946,
+        "frozen_inverse_50dps_normal_error": 1.3021560891671944e-12,
+        "frozen_inverse_50dps_reconstruction_discrepancy": 2.7278032926257676e-18,
+        "extended_original_algorithm_gap": 2.584510813048319e-15
+      },
+      "mirror": {
+        "extended_original_algorithm_gap": 3.9748604952325426e-18
+      },
+      "adapt": {
+        "extended_original_algorithm_gap": 4.81349958211085e-17
+      }
+    },
+    "Nehalem": {
+      "xy": {
+        "max_local_residual": 1.1764437819685004e-16,
+        "local_residual_fro": 8.134433935784679e-16,
+        "max_local_residual_over_u": 1.0596463556191351,
+        "frozen_inverse_50dps_normal_error": 2.2543024139199031e-10,
+        "frozen_inverse_50dps_reconstruction_discrepancy": 2.725626451224435e-18,
+        "extended_original_algorithm_gap": 1.9447035481887587e-13
+      },
+      "yx": {
+        "max_local_residual": 1.2017499197755027e-16,
+        "local_residual_fro": 8.098379750756844e-16,
+        "max_local_residual_over_u": 1.0824400981786955,
+        "frozen_inverse_50dps_normal_error": 3.2401076882545556e-10,
+        "frozen_inverse_50dps_reconstruction_discrepancy": 2.7517374550290246e-18,
+        "extended_original_algorithm_gap": 2.3013317545493946e-13
+      },
+      "alt": {
+        "max_local_residual": 9.388989273076969e-17,
+        "local_residual_fro": 7.401448368470673e-16,
+        "max_local_residual_over_u": 0.8456849718323004,
+        "frozen_inverse_50dps_normal_error": 3.024053032854603e-12,
+        "frozen_inverse_50dps_reconstruction_discrepancy": 2.7505940897857135e-18,
+        "extended_original_algorithm_gap": 2.584510813048319e-15
+      },
+      "mirror": {
+        "extended_original_algorithm_gap": 3.9748604952325426e-18
+      },
+      "adapt": {
+        "extended_original_algorithm_gap": 4.81349958211085e-17
+      }
+    }
+  },
+  "raw_receipts": [
+    {
+      "path": "/tmp/padua-lanczos-frontier-g0-review/baseline/receipt.json",
+      "sha256": "b9e7d8f3589f341a6da5b7c8c688535514aeffbc101a4dd62edaaabb85dd45fa",
+      "bytes": 6149
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-g0-review/nehalem/receipt.json",
+      "sha256": "7cecaa304e2da61c8e907ce0dcb18e95d3747672753a2c5c5bf446dc176256cb",
+      "bytes": 6148
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-g0-review/attribution.json",
+      "sha256": "152d094ce999fd8200df44f5d7966e5f8999b6a592efc20090f1c6708fcd4bb8",
+      "bytes": 15519
+    }
+  ],
+  "raw_basis_artifacts": [
+    {
+      "path": "/tmp/padua-lanczos-frontier-g0-review/baseline/fresh-bases.npz",
+      "sha256": "37192409a5aba52121c678f83e2581b5d1ad4df501833e01b3f06ae42aa3dcdc",
+      "bytes": 1162481
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-g0-review/nehalem/fresh-bases.npz",
+      "sha256": "25b4c723ab5cedf112dbc3de3369d664d055d5ff9e3efc1e6516057d1b342e5f",
+      "bytes": 1162410
+    }
+  ],
+  "limits": [
+    "Arb enclosures support reference accuracy, but final SVD/norm displays use binary64. This is a MEASURED diagnostic, not a computer-assisted proof.",
+    "Prior exact E1/E5 results are inherited independent-checks-g0 evidence, not freshly rerun here.",
+    "Original FAIL remains historical; this is an additive explanation under handoff02, not an edit of the original criterion.",
+    "Claude scientific/protocol audit remains separate and pending."
+  ],
+  "propagation_rerun_elapsed_seconds": 49.0592679977417
+}

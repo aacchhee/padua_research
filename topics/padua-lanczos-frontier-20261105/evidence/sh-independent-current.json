@@ -1,0 +1,99 @@
+{
+  "status": "PASS_SUPPLEMENTAL_EXACT_FINITE_CHECKS",
+  "scope": "Exact finite diagnostics only; no all-degree finite reduction or IEEE run.",
+  "proof_sha256": "f27a22c4c6f13d03710750f52eef4dc9bac31f27bd009beaa536866fbbe24d9f",
+  "checker_sha256": "db4df9f967e00c5d73168263526365c4d66199ff922b02e58953d046cf2daaba",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "sympy": "1.14.0"
+  },
+  "arithmetic": "Python arbitrary-precision integers in NumPy object arrays; SymPy rational polynomials",
+  "command": "python topics/padua-lanczos-frontier-20261105/code/sh_independent.py --output topics/padua-lanczos-frontier-20261105/evidence/sh-independent-current.json",
+  "representation": "Tensor Jacobi basis: 2S and 2T are path adjacency matrices, equivalent via the exact discrete sine transform to the weighted SH_n node basis.",
+  "rows": [
+    {
+      "n": 2,
+      "rule": "BJ",
+      "M": 16,
+      "N": 6,
+      "source_coordinate_directions": 80,
+      "exact_full_projection_derivative_matches_normal_frozen_map": true,
+      "degree_bounded_correction_and_orthonormal_tangent": true,
+      "degree_compatible_source_kernel": true,
+      "largest_integer_derivative_entry": 8,
+      "unit_relative_source_bj_gain_squared": 42
+    },
+    {
+      "n": 2,
+      "rule": "mirror",
+      "M": 16,
+      "N": 6,
+      "source_coordinate_directions": 80,
+      "exact_full_projection_derivative_matches_normal_frozen_map": true,
+      "degree_bounded_correction_and_orthonormal_tangent": true,
+      "degree_compatible_source_kernel": true,
+      "largest_integer_derivative_entry": 4,
+      "all_source_mirror_closed_form": true,
+      "relative_source_hilbert_schmidt_squared": "515",
+      "stated_upper_squared": 48600
+    },
+    {
+      "n": 3,
+      "rule": "BJ",
+      "M": 25,
+      "N": 10,
+      "source_coordinate_directions": 225,
+      "exact_full_projection_derivative_matches_normal_frozen_map": true,
+      "degree_bounded_correction_and_orthonormal_tangent": true,
+      "degree_compatible_source_kernel": true,
+      "largest_integer_derivative_entry": 64,
+      "unit_relative_source_bj_gain_squared": 170
+    },
+    {
+      "n": 3,
+      "rule": "mirror",
+      "M": 25,
+      "N": 10,
+      "source_coordinate_directions": 225,
+      "exact_full_projection_derivative_matches_normal_frozen_map": true,
+      "degree_bounded_correction_and_orthonormal_tangent": true,
+      "degree_compatible_source_kernel": true,
+      "largest_integer_derivative_entry": 4,
+      "all_source_mirror_closed_form": true,
+      "relative_source_hilbert_schmidt_squared": "2442",
+      "stated_upper_squared": 497664
+    },
+    {
+      "n": 4,
+      "rule": "BJ",
+      "M": 36,
+      "N": 15,
+      "source_coordinate_directions": 504,
+      "exact_full_projection_derivative_matches_normal_frozen_map": true,
+      "degree_bounded_correction_and_orthonormal_tangent": true,
+      "degree_compatible_source_kernel": true,
+      "largest_integer_derivative_entry": 328,
+      "unit_relative_source_bj_gain_squared": 682
+    },
+    {
+      "n": 4,
+      "rule": "mirror",
+      "M": 36,
+      "N": 15,
+      "source_coordinate_directions": 504,
+      "exact_full_projection_derivative_matches_normal_frozen_map": true,
+      "degree_bounded_correction_and_orthonormal_tangent": true,
+      "degree_compatible_source_kernel": true,
+      "largest_integer_derivative_entry": 4,
+      "all_source_mirror_closed_form": true,
+      "relative_source_hilbert_schmidt_squared": "8461",
+      "stated_upper_squared": 2940000
+    }
+  ],
+  "symbolic": {
+    "n": 8,
+    "creator_identities": 88,
+    "physical_polynomial_triangularity_pivots_scales_and_monic_factors": true
+  }
+}

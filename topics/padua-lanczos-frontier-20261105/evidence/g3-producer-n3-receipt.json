@@ -1,0 +1,465 @@
+{
+  "n": 3,
+  "D": 7,
+  "scientific_status": "n3 finite certificates; independent verification PENDING",
+  "source_sha256": "d5973f6302038e1ad2b6b5ccc7db3a133757e08817f8e3019c166cd43c5efc7b",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "topics/padua-lanczos-frontier-20261105/code/g3_producer.py",
+    "--out",
+    "/tmp/padua-lanczos-frontier-g3/producer-n3"
+  ],
+  "cwd": "/workspace/padua_research",
+  "git_head": "12879b5666a93f2ca88d89c3deaa7a152f883cc3",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "input": {
+    "git_blob": "c88017135d020db69ecf438794f0710dc5a09fda",
+    "sha256": "287e8dd0bdaa60d93d728045fcd47c5c75832813657f4849081fe4b1e0629e8b",
+    "bytes": 3963
+  },
+  "kernel": {
+    "rank_J": 30,
+    "dimension": 6,
+    "rank_B": 6,
+    "pivots_J": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      32
+    ],
+    "elapsed": 0.3573715109996556
+  },
+  "lower": "EXACT ACCEPTED",
+  "grids": [
+    {
+      "q": 2,
+      "records": [
+        {
+          "j": 0,
+          "rows": 90,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 1,
+          "rows": 116,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 2,
+          "rows": 120,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 3,
+          "rows": 120,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 4,
+          "rows": 120,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 5,
+          "rows": 120,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 6,
+          "rows": 120,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 7,
+          "rows": 120,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 8,
+          "rows": 120,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 9,
+          "rows": 120,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 10,
+          "rows": 120,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 11,
+          "rows": 120,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 12,
+          "rows": 120,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 13,
+          "rows": 120,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 14,
+          "rows": 120,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 15,
+          "rows": 120,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 16,
+          "rows": 120,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 17,
+          "rows": 120,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 18,
+          "rows": 120,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 19,
+          "rows": 120,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 20,
+          "rows": 120,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        }
+      ],
+      "status": "COMPLETED"
+    },
+    {
+      "q": 4,
+      "records": [
+        {
+          "j": 0,
+          "rows": 371,
+          "lp_status": 0,
+          "status": "EXACT ACCEPTED"
+        },
+        {
+          "j": 1,
+          "rows": 476,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 2,
+          "rows": 480,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 3,
+          "rows": 480,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 4,
+          "rows": 480,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 5,
+          "rows": 480,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 6,
+          "rows": 480,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 7,
+          "rows": 480,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 8,
+          "rows": 480,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 9,
+          "rows": 480,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 10,
+          "rows": 480,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 11,
+          "rows": 480,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 12,
+          "rows": 480,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 13,
+          "rows": 480,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 14,
+          "rows": 480,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 15,
+          "rows": 480,
+          "lp_status": 4,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 16,
+          "rows": 480,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 17,
+          "rows": 480,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 18,
+          "rows": 480,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 19,
+          "rows": 480,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 20,
+          "rows": 480,
+          "lp_status": 4,
+          "status": "INCONCLUSIVE"
+        }
+      ],
+      "status": "COMPLETED"
+    },
+    {
+      "q": 8,
+      "records": [
+        {
+          "j": 0,
+          "rows": 1523,
+          "lp_status": 0,
+          "status": "EXACT ACCEPTED"
+        },
+        {
+          "j": 1,
+          "rows": 1956,
+          "lp_status": 0,
+          "status": "EXACT ACCEPTED"
+        },
+        {
+          "j": 2,
+          "rows": 1960,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 3,
+          "rows": 1960,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 4,
+          "rows": 1960,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 5,
+          "rows": 1960,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 6,
+          "rows": 1960,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 7,
+          "rows": 1960,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 8,
+          "rows": 1960,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 9,
+          "rows": 1960,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 10,
+          "rows": 1960,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 11,
+          "rows": 1960,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 12,
+          "rows": 1960,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 13,
+          "rows": 1960,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 14,
+          "rows": 1960,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 15,
+          "rows": 1960,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 16,
+          "rows": 1960,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 17,
+          "rows": 1960,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 18,
+          "rows": 1960,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 19,
+          "rows": 1960,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        },
+        {
+          "j": 20,
+          "rows": 1960,
+          "lp_status": 2,
+          "status": "INCONCLUSIVE"
+        }
+      ],
+      "status": "COMPLETED"
+    }
+  ],
+  "upper": "EXACT ACCEPTED",
+  "elapsed_seconds": 171.4898018310014,
+  "peak_rss_KiB": 75008
+}

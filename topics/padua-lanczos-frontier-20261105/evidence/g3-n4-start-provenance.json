@@ -1,0 +1,25 @@
+{
+  "source_files": {
+    "topics/padua-lanczos-frontier-20261105/code/g3_n4_producer.py": {
+      "sha256": "15b1e8803bd74d3b7da7f134c1bdbc46cc5abde54183ba93be4e779913e00fcb",
+      "bytes": 14841
+    },
+    "topics/padua-lanczos-frontier-20261105/g3-n4-methods.md": {
+      "sha256": "488d87ed2193447859ebd05072719331afec2d878ebdd7fca2b308997db97e4e",
+      "bytes": 4918
+    },
+    "tracks/bivariate-lanczos/code/review_L3b/padua_turan_check.py": {
+      "sha256": "c1896577dcf9683b75e1ffa6ea481f1c498107ce482df97381e8462c0fe108ff",
+      "bytes": 15491
+    }
+  },
+  "head": "5f6fa3181d99750ede801cc5d758891c596e31b9",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "command": "timeout 900s python3 topics/padua-lanczos-frontier-20261105/code/g3_n4_producer.py --out /tmp/padua-lanczos-frontier-g3-n4/producer",
+  "approval": "root /root and reviewer /root/reviewer approved n4-only documented plan before this start"
+}

@@ -1,0 +1,237 @@
+{
+  "status": "PASS independent exact n3 lower/full-kernel upper checks",
+  "rules_sha": "12879b5666a93f2ca88d89c3deaa7a152f883cc3",
+  "code": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g3_independent.py",
+    "bytes": 10387,
+    "sha256": "ec595ad0effc0df8c4a6e1a0ca95d0d2632bc00ea8eb2126fc3a25629fcfa2f4"
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g3_independent.py",
+    "--lower",
+    "/tmp/padua-lanczos-frontier-g3-independent/inputs/lower.json",
+    "--upper",
+    "/tmp/padua-lanczos-frontier-g3-independent/inputs/upper.json",
+    "--baseline",
+    "/tmp/padua-lanczos-frontier-g3-independent/inputs/pstar-source.json",
+    "--out",
+    "/tmp/padua-lanczos-frontier-g3-independent/check-n3",
+    "--receipt",
+    "/tmp/padua-lanczos-frontier-g3-independent/receipt.json"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "sympy": "1.14.0"
+  },
+  "inputs": [
+    {
+      "path": "/tmp/padua-lanczos-frontier-g3-independent/inputs/lower.json",
+      "bytes": 2704,
+      "sha256": "48ea29641bde627b69a069ffa01687089f6decc0258ab0afa516ca69863b7e3c"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-g3-independent/inputs/upper.json",
+      "bytes": 2136,
+      "sha256": "5c0c70e976711b31d0eed6c91b1c422fd8247ec9805a630e669618b47b9ef2a3"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-g3-independent/inputs/pstar-source.json",
+      "bytes": 3963,
+      "sha256": "287e8dd0bdaa60d93d728045fcd47c5c75832813657f4849081fe4b1e0629e8b"
+    }
+  ],
+  "trusted_dependencies": "Sympy QQ(sqrt2) exact domain arithmetic/elimination; Python exact rational/integer comparison; positive sqrt2 embedding independently sign-checked",
+  "scope": "n3 only; D7/full36monomials/10nodes/fullR2balls; no n4-8/G3trend/U2 status",
+  "jet_matrix_shape": [
+    30,
+    36
+  ],
+  "jet_rank": 30,
+  "full_kernel_dimension": 6,
+  "kernel_identity": "J*B^T=0 and rank(B)=36-rank(J), exact",
+  "kernel_artifact": {
+    "path": "/tmp/padua-lanczos-frontier-g3-independent/check-n3/independent-kernel.json",
+    "bytes": 4639,
+    "sha256": "3441ac16fa2a98772826c9d1e5354d59f7ae4d13ea496f0e48d1a6f384511f06"
+  },
+  "lower": {
+    "L": "1/512",
+    "nonzero_terms": 20,
+    "degree": 7,
+    "exact_jet_zeros": 30,
+    "node_certificates": [
+      {
+        "node": 0,
+        "mu": [
+          "5988527262/53801065625",
+          "0"
+        ],
+        "Taylor_margin": [
+          "2647995195619742268276533/302873073876107001856000000",
+          "0"
+        ]
+      },
+      {
+        "node": 1,
+        "mu": [
+          "27934411041/102599843750",
+          "0"
+        ],
+        "Taylor_margin": [
+          "7431020466130333898982171/57758577260096389120000000",
+          "0"
+        ]
+      },
+      {
+        "node": 2,
+        "mu": [
+          "5988527262/53801065625",
+          "0"
+        ],
+        "Taylor_margin": [
+          "2647995195619742268276533/302873073876107001856000000",
+          "0"
+        ]
+      },
+      {
+        "node": 3,
+        "mu": [
+          "12604475547/125855500000",
+          "0"
+        ],
+        "Taylor_margin": [
+          "217958155818400203085279/4428146741425995776000000",
+          "-2605802892153/687194767360000"
+        ]
+      },
+      {
+        "node": 4,
+        "mu": [
+          "12604475547/125855500000",
+          "0"
+        ],
+        "Taylor_margin": [
+          "217958155818400203085279/4428146741425995776000000",
+          "-2605802892153/687194767360000"
+        ]
+      },
+      {
+        "node": 5,
+        "mu": [
+          "246658530321/391997312500",
+          "0"
+        ],
+        "Taylor_margin": [
+          "33021505463911401677618357/110337434406577242112000000",
+          "0"
+        ]
+      },
+      {
+        "node": 6,
+        "mu": [
+          "30117029139/323425750000",
+          "0"
+        ],
+        "Taylor_margin": [
+          "202580616626499811111483/4551812772443822489600000",
+          "0"
+        ]
+      },
+      {
+        "node": 7,
+        "mu": [
+          "246658530321/391997312500",
+          "0"
+        ],
+        "Taylor_margin": [
+          "33021505463911401677618357/110337434406577242112000000",
+          "0"
+        ]
+      },
+      {
+        "node": 8,
+        "mu": [
+          "127691454339/1188585250000",
+          "0"
+        ],
+        "Taylor_margin": [
+          "3485129178837877045519749/83639251390594809856000000",
+          "-92468510786001/17179869184000000"
+        ]
+      },
+      {
+        "node": 9,
+        "mu": [
+          "127691454339/1188585250000",
+          "0"
+        ],
+        "Taylor_margin": [
+          "3485129178837877045519749/83639251390594809856000000",
+          "-92468510786001/17179869184000000"
+        ]
+      }
+    ],
+    "whole_ball_criterion": "PASS all10 exact finite Taylor inequalities"
+  },
+  "upper": {
+    "U": "1/2",
+    "q": 8,
+    "retained_points": 12,
+    "strict_positive_weights": 12,
+    "full_kernel_evaluation_rank": 6,
+    "exact_balance_coordinates": 6,
+    "ball_membership": "PASS every point in its full R2 ball",
+    "points_outside_square": 6
+  },
+  "malformed_controls": [
+    {
+      "control": "changed actual polynomial",
+      "rejected": true,
+      "reason": "polynomial is not the actual recovered pstar"
+    },
+    {
+      "control": "oversized lower radius violates Taylor bound",
+      "rejected": true,
+      "reason": "lower Taylor full-ball inequality failure"
+    },
+    {
+      "control": "negative retained weight",
+      "rejected": true,
+      "reason": "nonpositive retained weight"
+    },
+    {
+      "control": "positive but unbalanced weights",
+      "rejected": true,
+      "reason": "upper positive dependence failure"
+    },
+    {
+      "control": "off-ball point",
+      "rejected": true,
+      "reason": "point outside full Euclidean node ball"
+    },
+    {
+      "control": "rank-deficient point set",
+      "rejected": true,
+      "reason": "upper evaluation rank does not span full kernel"
+    },
+    {
+      "control": "invalid node index",
+      "rejected": true,
+      "reason": "invalid node index"
+    },
+    {
+      "control": "invalid field encoding",
+      "rejected": true,
+      "reason": "invalid quadratic-field encoding"
+    },
+    {
+      "control": "proper kernel subspace",
+      "rejected": true,
+      "reason": "incomplete first-jet kernel dimension"
+    }
+  ],
+  "positive_control_after_mutations": "PASS original lower and upper rechecked",
+  "elapsed_seconds": 1.330798088998563
+}

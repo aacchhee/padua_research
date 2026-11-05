@@ -1,0 +1,86 @@
+{
+  "result": "FULL_OUTPUT_READOUT_PASSES",
+  "scope": {
+    "set": "rotated Q24",
+    "degree": 12,
+    "rule": "bj",
+    "sources": 90,
+    "outputs": 90,
+    "target_signs": 90,
+    "node_signs": "identical inherited625signs",
+    "local_error": "s_i sign(g90,h(i)) rho_hi; same frozen formal cube witness"
+  },
+  "rules_head": "684849d7d19ac2604213ae3d4f499d3436f58b3d",
+  "source_sha256": {
+    "e1_exact.py": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+    "e1_cgs2.py": "426630eb916e13bb14409f6f7b8ea310eaeb1bf7949de10866d163aad31c7b4b"
+  },
+  "lower_input": {
+    "path": "/tmp/padua-lanczos-frontier-g0/replay/topics/padua-lanczos-drift-20261101/evidence/e1-multinode-certificates.json",
+    "bytes": 55328,
+    "sha256": "fae9c8743c78230ef0aa82c185d1efe0eee37be066982a37d39d920af95719f0"
+  },
+  "upper_input": {
+    "path": "topics/padua-lanczos-frontier-20261105/evidence/l4-envelope.json",
+    "bytes": 7245,
+    "sha256": "0ddc935bed63d22546eb12ef9a00765a4ebceaf70c69c7fe61afbb2979e0e6c5"
+  },
+  "code_sha256": "9f56bf92aa5883aaf6895327044406b7fdccb57e3c26199391fcaf61d873d2cf",
+  "old_target_projection_exactly_reproduced": true,
+  "fixed_comparator_upper_integer": 13462956266,
+  "required_lower_strict_threshold": 1346295626600,
+  "float_proposal_only": {
+    "largest_singular_value_display": 1428882.4175657185,
+    "normalization": "monicx=a/sqrt(d), maxabs=1",
+    "quantizations": [
+      1000000,
+      1000000000,
+      1000000000000
+    ]
+  },
+  "readouts": [
+    {
+      "scale": 1000000,
+      "lower_float_display": 2041704913997.443,
+      "lower_integer_floor": 2041704913997,
+      "pass_exact": true,
+      "pass_integer_floor": true,
+      "artifact": {
+        "path": "/tmp/padua-lanczos-frontier-l4/full-witness/readout-1000000.json",
+        "bytes": 17811,
+        "sha256": "b8fe56537694c2deb80965c4b042fa8966b2e95716ba10066090059b77564d68"
+      }
+    }
+  ],
+  "raw_full_witness": {
+    "path": "/tmp/padua-lanczos-frontier-l4/full-witness/full-witness.jsonl.gz",
+    "bytes": 43591444,
+    "sha256": "9e33ba871d485734ae3f277ec0350d408998848cdd7dc54a8c9f095ac413b551"
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/l4_full_witness.py",
+    "--frozen-evidence",
+    "/tmp/padua-lanczos-frontier-g0/replay/topics/padua-lanczos-drift-20261101/evidence",
+    "--upper-receipt",
+    "topics/padua-lanczos-frontier-20261105/evidence/l4-envelope.json",
+    "--output-dir",
+    "/tmp/padua-lanczos-frontier-l4/full-witness",
+    "--receipt",
+    "topics/padua-lanczos-frontier-20261105/evidence/l4-full-witness.json"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "python_flint": "0.9.0",
+    "numpy": "2.3.5",
+    "elapsed_seconds": 217.2247303869999
+  },
+  "retention": "Temporary external working artifacts; archive/delivery pending orchestrator cold-storage process. Reproduce with a new output directory.",
+  "limits": [
+    "Same formal relative-error witness; no new node/source sign search.",
+    "Failure of this readout gives no upper on BJ capacity and does not kill true factor-ten target.",
+    "No actual IEEE lower, finite-epsilon or all-degree conclusion.",
+    "Developer computation; independent regeneration/check remains separate."
+  ]
+}

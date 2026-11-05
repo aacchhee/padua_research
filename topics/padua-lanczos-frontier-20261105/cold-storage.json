@@ -1,0 +1,160 @@
+{
+  "schema": "frontier-storage-index-v1",
+  "topic": "padua-lanczos-frontier-20261105",
+  "state": "LOCAL_ONLY_NOT_DELIVERED",
+  "complete_external_inventory": {
+    "path": "/tmp/padua-lanczos-frontier-storage/full-inventory.json",
+    "bytes": 91574,
+    "sha256": "2490be33b705109a09849d2efb2db3fd880041f5050534bd9bdf8efd7ee2932e",
+    "artifact_entries": 281
+  },
+  "historical_inventory": {
+    "source_commit": "aab7bbe97899b0216d60a015c1a0d2cb2d7cbd99",
+    "path": "topics/padua-lanczos-frontier-20261105/cold-storage.json",
+    "git_blob": "11103cf9de039f226c9c9b0cac355d442308562c",
+    "bytes": 16209,
+    "sha256": "a4d4724f91257693ebb9ec400a3478743b64579f31b30ec0f6b053a4baaf23f5",
+    "entry_count": 59,
+    "read_only_retrieval": "git show aab7bbe97899b0216d60a015c1a0d2cb2d7cbd99:topics/padua-lanczos-frontier-20261105/cold-storage.json"
+  },
+  "builder": {
+    "path": "topics/padua-lanczos-frontier-20261105/code/storage_inventory.py",
+    "bytes": 17247,
+    "sha256": "95f6c576802d471cce97e020247aeea5fc1c8775606066a22bfefd8c7ffe34a8"
+  },
+  "executed_build_command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/storage_inventory.py",
+    "--build",
+    "--output",
+    "/tmp/padua-lanczos-frontier-storage/full-inventory.json",
+    "--index",
+    "topics/padua-lanczos-frontier-20261105/cold-storage.json"
+  ],
+  "validation_command": "python -B topics/padua-lanczos-frontier-20261105/code/storage_inventory.py --check-index topics/padua-lanczos-frontier-20261105/cold-storage.json",
+  "source_pins": {
+    "g1_flint": [
+      {
+        "path": "topics/padua-lanczos-frontier-20261105/code/g1_exact_prefix.py",
+        "bytes": 8707,
+        "sha256": "c2102db6e627781085869cbb3a7d69d27fb6243f19d9291c41e32bd58a3b0624"
+      }
+    ],
+    "g1_native": [
+      {
+        "path": "topics/padua-lanczos-frontier-20261105/code/g1_independent.cpp",
+        "bytes": 5104,
+        "sha256": "0d8aed21b9ee3c6c4ef6899fd429ac55b2d200a439cce38ea71ad2448cc1fc77"
+      },
+      {
+        "path": "topics/padua-lanczos-frontier-20261105/code/g1_independent_run.py",
+        "bytes": 6795,
+        "sha256": "388c70c0d3af25f33d67c967a5bcf94e45ee6060412be45c4a5430048a9451ae"
+      }
+    ],
+    "g1_compare": [
+      {
+        "path": "topics/padua-lanczos-frontier-20261105/code/g1_independent_compare.py",
+        "bytes": 1530,
+        "sha256": "64ee9f3fefdbba8f944f9ec1580352d46b70bc18e332dc715032db11b462fb5e"
+      }
+    ],
+    "g2_screen": [
+      {
+        "path": "topics/padua-lanczos-frontier-20261105/code/g2_screen.py",
+        "bytes": 8791,
+        "sha256": "2e8c87db119b407a884bc089a5a7e69addfc674b94ebc499236a18307ca1c57d"
+      }
+    ],
+    "g2_partial_r": [
+      {
+        "path": "topics/padua-lanczos-frontier-20261105/code/g2_partial_r.py",
+        "bytes": 3304,
+        "sha256": "8b2b992f1c941fa3f49febe7d5b3e870582e78c8b6ac6189933262ee3932af5a"
+      }
+    ],
+    "g2_independent": [
+      {
+        "path": "topics/padua-lanczos-frontier-20261105/code/g2_independent.py",
+        "bytes": 15778,
+        "sha256": "e88536c7156256de09f907923d7a51437055b685f3ccbaee62fcff4b50589ca8"
+      }
+    ],
+    "frozen_baseline": {
+      "path": "tracks/bivariate-lanczos/code/drift/e1_exact.py",
+      "sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f"
+    },
+    "SH_checker": [
+      {
+        "path": "topics/padua-lanczos-frontier-20261105/code/sh_independent.py",
+        "bytes": 9244,
+        "sha256": "db4df9f967e00c5d73168263526365c4d66199ff922b02e58953d046cf2daaba"
+      }
+    ],
+    "SH_proof": [
+      {
+        "path": "topics/padua-lanczos-frontier-20261105/theory/l1-01-sheared-U-aggregate-separation.md",
+        "bytes": 20813,
+        "sha256": "f27a22c4c6f13d03710750f52eef4dc9bac31f27bd009beaa536866fbbe24d9f"
+      }
+    ],
+    "SH_checker_historical": {
+      "sha256": "3d996f0f85f006350f5a29af72fd1cf26c25c8894b18db1cf451444f908230b8",
+      "bytes": 9334,
+      "repository_path": "topics/padua-lanczos-frontier-20261105/code/sh_independent.py",
+      "source_commit": "b81c374722a5eaf3441cb36c970d6f6da8a58230"
+    },
+    "SH_proof_historical": {
+      "sha256": "9f59217da265a433470bb6030074acf76e63e4ffb0a6590add800666a64de90d",
+      "bytes": 17273,
+      "note": "Historical proof hash retained in original receipt; original proof bytes were not separately archived. Current metadata-only revision is the active reproduction input."
+    }
+  },
+  "turn_status": {
+    "G1": {
+      "legacy_overlap_rows": 88,
+      "triangle_degree2_to20_rows": 76,
+      "additional_FLINT_rotated_BJ_degrees": [
+        13,
+        14
+      ],
+      "best_completed_unique_preregistered_rows": 122,
+      "required_rows": 152,
+      "pending_rows": 30,
+      "native_rotated20_timeouts": {
+        "seconds_per_case": 1800,
+        "last_completed_source_of230": {
+          "bj": 37,
+          "mirror": 29,
+          "alt": 12,
+          "pivot": 13
+        }
+      },
+      "fits": "NOT_RUN_INCOMPLETE_SCOPE"
+    },
+    "G2": {
+      "W_and_R_saved_predicates": "BOTH_GRIDS_PASS_BY_CHECKED_LOWER_CERTIFICATES",
+      "R": "partial lower on original full law, not exact full expectation",
+      "portable_certificate": "evidence/g2-fixed-certificate.json"
+    },
+    "SH": {
+      "external_raw_artifacts": 0,
+      "supplemental_checks": "committed small receipt only; analytic theorem acceptance separate"
+    }
+  },
+  "checker_reports": [
+    "independent-checks-g1.md",
+    "independent-checks-l1-l2.md",
+    "independent-checks-sh.md"
+  ],
+  "retention": "Local temporary artifacts only; no durable delivery or Windows transfer promised. All newly added file identities were checked. Regeneration can change log timing/path/gzip metadata and need not recover historical bytes.",
+  "destination_requested_by_handoff": "Downloads/padua/cold_storage/padua-lanczos-frontier-20261105/",
+  "limits": [
+    "The single complete inventory stays external because it is large; no manifest is split to evade limits.",
+    "Historical59 identities and commands remain recoverable from the pinned prior Git manifest; this index does not erase them.",
+    "If temporary artifacts disappear, reconstruct fresh scientific outputs and a new inventory; regenerated path/timing/gzip bytes need not equal historical bytes.",
+    "--allow-missing reports missing retention explicitly; it never accepts a hash mismatch.",
+    "SH created no external raw artifact: its finite arrays were in memory and its small receipt remains committed."
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "result": "PORTABLE_FIXED_CERTIFICATE_PASSES",
+  "checker": {
+    "path": "/tmp/claude-0/-home-user-padua-research/4e9db0f4-c32d-5606-95a7-0413431483a5/scratchpad/L4/repo/topics/padua-lanczos-frontier-20261105/code/l4_recheck_fixed.py",
+    "bytes": 10206,
+    "sha256": "858490e2fe820c4fbb4325283414c3110b321ecb10c1921fec11e04a42e49f61"
+  },
+  "certificate": {
+    "path": "/tmp/claude-0/-home-user-padua-research/4e9db0f4-c32d-5606-95a7-0413431483a5/scratchpad/L4/repo/topics/padua-lanczos-frontier-20261105/evidence/l4-fixed-certificate.json",
+    "bytes": 12631,
+    "sha256": "d07d5c89200c188b25052a2f9a844b3271232bf9c78bb0296bfcded46a99cadb"
+  },
+  "fresh_envelope_receipt": {
+    "path": "/tmp/claude-0/-home-user-padua-research/4e9db0f4-c32d-5606-95a7-0413431483a5/scratchpad/L4/fresh-upper.json",
+    "bytes": 8024,
+    "sha256": "5104af7f3ffc439928c4b7772b6ef5f5b0004b596481eaf2d2bb5425bf08b3c2"
+  },
+  "fresh_witness_receipt": {
+    "path": "/tmp/claude-0/-home-user-padua-research/4e9db0f4-c32d-5606-95a7-0413431483a5/scratchpad/L4/fresh-witness.json",
+    "bytes": 3628,
+    "sha256": "3c3898b979f132643e7d7f87298812df57ac0ad394be7cdf5af844b269952662"
+  },
+  "fresh_envelope": {
+    "path": "/tmp/claude-0/-home-user-padua-research/4e9db0f4-c32d-5606-95a7-0413431483a5/scratchpad/L4/fresh-upper/full-envelope.jsonl.gz",
+    "bytes": 49329865,
+    "sha256": "e0f4f3e983358d571bbeb3923eeb1a056b1f8a419387872193591c0eccdbf63d"
+  },
+  "fresh_witness": {
+    "path": "/tmp/claude-0/-home-user-padua-research/4e9db0f4-c32d-5606-95a7-0413431483a5/scratchpad/L4/fresh-witness/full-witness.jsonl.gz",
+    "bytes": 43591444,
+    "sha256": "ce4f5be6eef652f78040df5e43c2e36e6ef24961c034861aa62a12a0b922950d"
+  },
+  "source_sha256": {
+    "e1_exact.py": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+    "e1_cgs2.py": "426630eb916e13bb14409f6f7b8ea310eaeb1bf7949de10866d163aad31c7b4b"
+  },
+  "frozen_evidence_sha256": {
+    "e1-scalar-cgs2.json": "e215556a01f9e169163b228dfe1b984d28e0cebd7f78e0d858f9a61a0de878c8",
+    "e1-multinode-certificates.json": "fae9c8743c78230ef0aa82c185d1efe0eee37be066982a37d39d920af95719f0"
+  },
+  "full_source_count": 90,
+  "nodes": 625,
+  "columns": 91,
+  "full_Frobenius_exactly_reproduced": true,
+  "all_Cv_le_Bv_exact": true,
+  "B": 13462956266,
+  "Rayleigh_integer_floor": 13462955378,
+  "exact_floor_le_R_lt_floor_plus_one": true,
+  "exact_100_floor_ge_old_G": true,
+  "exact_basis_Gram_diagonal": true,
+  "old_target90_exactly_reproduced": true,
+  "L": 2041704913997,
+  "exact_L_le_Q_lt_L_plus_one": true,
+  "strict_L_gt_100B": true,
+  "fixed_gain_sha256": "bc2fb280ce39d9f7e740bd29bf0abb0fee122ba30c28eecb2c64010774c1994f",
+  "malformed_controls": [
+    {
+      "name": "short upper vector",
+      "result": "REJECTED"
+    },
+    {
+      "name": "zero upper coordinate",
+      "result": "REJECTED"
+    },
+    {
+      "name": "underestimated upper B-1",
+      "result": "REJECTED"
+    },
+    {
+      "name": "zero lower readout",
+      "result": "REJECTED"
+    },
+    {
+      "name": "nonzero constant readout",
+      "result": "REJECTED"
+    },
+    {
+      "name": "inflated lower L+1",
+      "result": "REJECTED"
+    },
+    {
+      "name": "equality instead of strict target",
+      "result": "REJECTED"
+    }
+  ],
+  "lineage_fields_removed_control": "PASS; same mathematical certificate without historical artifact paths/identities",
+  "historical_artifacts_opened": false,
+  "new_float_proposals_consulted": false,
+  "command": [
+    "/usr/local/bin/python3",
+    "-B",
+    "/tmp/claude-0/-home-user-padua-research/4e9db0f4-c32d-5606-95a7-0413431483a5/scratchpad/L4/repo/topics/padua-lanczos-frontier-20261105/code/l4_recheck_fixed.py",
+    "--certificate",
+    "topics/padua-lanczos-frontier-20261105/evidence/l4-fixed-certificate.json",
+    "--fresh-envelope-receipt",
+    "/tmp/claude-0/-home-user-padua-research/4e9db0f4-c32d-5606-95a7-0413431483a5/scratchpad/L4/fresh-upper.json",
+    "--fresh-witness-receipt",
+    "/tmp/claude-0/-home-user-padua-research/4e9db0f4-c32d-5606-95a7-0413431483a5/scratchpad/L4/fresh-witness.json",
+    "--frozen-evidence",
+    "/tmp/claude-0/-home-user-padua-research/4e9db0f4-c32d-5606-95a7-0413431483a5/scratchpad/L4/inputs",
+    "--output",
+    "/tmp/claude-0/-home-user-padua-research/4e9db0f4-c32d-5606-95a7-0413431483a5/scratchpad/L4/fresh-check.json"
+  ],
+  "runtime": {
+    "python": "3.13.18",
+    "flint": "0.9.0",
+    "elapsed_seconds": 23.927451872000006
+  },
+  "trust_scope": [
+    "Fresh array generation uses approved exact producers; this checker verifies their outputs and fixed vectors, not a second source-graph implementation.",
+    "Executed using the already completed distinct independent full regenerations; no claim of another source rerun.",
+    "Fresh gzip/artifact hashes protect this execution only; historical compressed bytes are not acceptance inputs.",
+    "Only the frozen finite formal first-order scalar model; separate Claude audit remains pending."
+  ]
+}
