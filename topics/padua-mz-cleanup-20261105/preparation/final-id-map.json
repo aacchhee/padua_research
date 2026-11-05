@@ -1,0 +1,102 @@
+{
+  "source_head": "a930f32fbf4568fbc431ddcf0b0fd689f5fa8201",
+  "base": "aff30e8ad5542c94fab642ae024dc9aab4fa7ad7",
+  "reservation_first_publication": "ee490356ce51d5e2f4a84f2c45e6ccb98a19bd90",
+  "allocation_check": "allocation-scan.json",
+  "theory": [
+    {
+      "alias": "PD-T?mz-cleanup-codex-01",
+      "final": "PD-T376",
+      "path": "theory/finite-indefiniteness.md",
+      "status": "PROVED"
+    },
+    {
+      "alias": "PD-T?mz-cleanup-codex-02",
+      "final": "PD-T377",
+      "path": "theory/odd-weight-asymptotic.md",
+      "status": "PROVED"
+    },
+    {
+      "alias": "PD-T?mz-cleanup-codex-03",
+      "final": "PD-T378",
+      "path": "theory/odd-carriers.md",
+      "status": "PROVED"
+    },
+    {
+      "alias": "PD-T?mz-cleanup-codex-04",
+      "final": "PD-T379",
+      "path": "theory/growth-carrier-bounds.md",
+      "status": "PROVED"
+    },
+    {
+      "alias": "PD-T?mz-cleanup-codex-05",
+      "final": "PD-T380",
+      "path": "theory/finite-measurements.md",
+      "status": "MEASURED"
+    },
+    {
+      "alias": "PD-T?mz-cleanup-codex-06",
+      "final": "PD-T381",
+      "path": "theory/sharp-growth-open.md",
+      "status": "OPEN"
+    }
+  ],
+  "ideas": [
+    {
+      "alias": "IDEA?mz-cleanup-codex-01",
+      "final": "IDEA-466",
+      "path": "novelty-gate-math.md",
+      "disposition": "active (PROVED outcome)"
+    },
+    {
+      "alias": "IDEA?mz-cleanup-codex-02",
+      "final": "IDEA-467",
+      "path": "novelty-gate-math.md",
+      "disposition": "active (PROVED outcome)"
+    },
+    {
+      "alias": "IDEA?mz-cleanup-codex-03",
+      "final": "IDEA-468",
+      "path": "novelty-gate-math.md",
+      "disposition": "active (PROVED outcome)"
+    },
+    {
+      "alias": "IDEA?mz-cleanup-codex-04",
+      "final": "IDEA-469",
+      "path": "novelty-gate-math.md",
+      "disposition": "active (PROVED outcome)"
+    },
+    {
+      "alias": "IDEA?mz-cleanup-codex-05",
+      "final": "IDEA-470",
+      "path": "novelty-gate-math.md",
+      "disposition": "deferred"
+    },
+    {
+      "alias": "IDEA?mz-cleanup-codex-06",
+      "final": "IDEA-471",
+      "path": "novelty-gate-math.md",
+      "disposition": "abandoned"
+    }
+  ],
+  "aliases": {
+    "PD-T?mz-cleanup-codex-01": "PD-T376",
+    "PD-T?mz-cleanup-codex-02": "PD-T377",
+    "PD-T?mz-cleanup-codex-03": "PD-T378",
+    "PD-T?mz-cleanup-codex-04": "PD-T379",
+    "PD-T?mz-cleanup-codex-05": "PD-T380",
+    "PD-T?mz-cleanup-codex-06": "PD-T381",
+    "IDEA?mz-cleanup-codex-01": "IDEA-466",
+    "IDEA?mz-cleanup-codex-02": "IDEA-467",
+    "IDEA?mz-cleanup-codex-03": "IDEA-468",
+    "IDEA?mz-cleanup-codex-04": "IDEA-469",
+    "IDEA?mz-cleanup-codex-05": "IDEA-470",
+    "IDEA?mz-cleanup-codex-06": "IDEA-471"
+  },
+  "unused_permanent_gaps": {
+    "T": "PD-T382\u2013391",
+    "N": "PD-N138\u2013145",
+    "IDEA": "IDEA-472\u2013489"
+  },
+  "LIT": "no range or assignment"
+}

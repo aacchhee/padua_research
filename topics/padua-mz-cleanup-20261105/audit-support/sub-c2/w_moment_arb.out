@@ -1,0 +1,13 @@
+m=  3 nodes=  10 max|solve-formula|<= 5.88e-75  |sum w-4|<= 1.19e-74  max|w_jk-w_j,m+1-k|<= 6.77e-75  #neg=2  w00=-0.0555555555556
+m=  5 nodes=  21 max|solve-formula|<= 8.97e-72  |sum w-4|<= 1.79e-71  max|w_jk-w_j,m+1-k|<= 9.99e-72  #neg=2  w00=-0.0103703703704
+m=  7 nodes=  36 max|solve-formula|<= 1.95e-76  |sum w-4|<= 3.93e-75  max|w_jk-w_j,m+1-k|<= 2.56e-76  #neg=2  w00=-0.00328798185941
+m=  9 nodes=  55 max|solve-formula|<= 1.52e-76  |sum w-4|<= 5.09e-75  max|w_jk-w_j,m+1-k|<= 1.83e-76  #neg=2  w00=-0.00136860670194
+m= 11 nodes=  78 max|solve-formula|<= 1.38e-76  |sum w-4|<= 8.18e-75  max|w_jk-w_j,m+1-k|<= 2.04e-76  #neg=2  w00=-0.000673109157958
+m= 13 nodes= 105 max|solve-formula|<= 1.80e-76  |sum w-4|<= 1.58e-74  max|w_jk-w_j,m+1-k|<= 2.91e-76  #neg=2  w00=-0.000370662537068
+m= 15 nodes= 136 max|solve-formula|<= 1.23e-76  |sum w-4|<= 1.42e-74  max|w_jk-w_j,m+1-k|<= 1.87e-76  #neg=2  w00=-0.000221498078641
+m= 17 nodes= 171 max|solve-formula|<= 1.42e-76  |sum w-4|<= 2.13e-74  max|w_jk-w_j,m+1-k|<= 2.24e-76  #neg=2  w00=-0.000140814468637
+m= 19 nodes= 210 max|solve-formula|<= 1.49e-76  |sum w-4|<= 2.89e-74  max|w_jk-w_j,m+1-k|<= 2.50e-76  #neg=2  w00=-9.39730842506e-5
+m= 21 nodes= 253 max|solve-formula|<= 1.54e-76  |sum w-4|<= 3.60e-74  max|w_jk-w_j,m+1-k|<= 2.68e-76  #neg=2  w00=-6.52131072007e-5
+m=  4 nodes=  15 max|solve-formula|<= 1.43e-72  max|solve-formula_without_exc|<= 0.0267  |sum w-4|<= 2.86e-72  #neg=2  w00=-0.00888888888889
+m=  6 nodes=  28 max|solve-formula|<= 1.95e-76  max|solve-formula_without_exc|<= 0.00544  |sum w-4|<= 2.58e-75  #neg=2  w00=-0.00302343159486
+m=  8 nodes=  45 max|solve-formula|<= 1.27e-76  max|solve-formula_without_exc|<= 0.00176  |sum w-4|<= 3.58e-75  #neg=2  w00=-0.00126984126984

@@ -1,0 +1,25 @@
+(i) ||G_{m,n}-I||_2 at n=floor(m/2) (2n<=m) and n=floor(m/2)+1:
+  m=  5 (odd): n=2: 7.94e-16;  n=3: 1.029e-01
+  m=  7 (odd): n=3: 5.95e-16;  n=4: 4.380e-02
+  m=  9 (odd): n=4: 8.77e-16;  n=5: 2.106e-02
+  m= 21 (odd): n=10: 5.15e-15;  n=11: 3.581e-03
+  m= 31 (odd): n=15: 7.75e-15;  n=16: 1.641e-03
+  m= 51 (odd): n=25: 4.05e-14;  n=26: 6.064e-04
+  m=  6 (even): n=3: 9.48e-16;  n=4: 1.398e-01
+  m= 20 (even): n=10: 4.31e-15;  n=11: 7.044e-03
+/tmp/claude-0/subC2/gram_norms.py:31: RuntimeWarning: divide by zero encountered in divide
+  h = np.where(l % 2 == 0, 2.0 / (1 - l * l + 0.0), 0.0)
+(ii) C0=49.204546, C0^2=2421.0873; max_u<=2000 ||F_u||^2 = 2.772588597363187
+  m=33 p- a=0.25 b=0.2: ||p||^2=3.716128337710 (<= C0^2: True, >0: True)
+  m=33 p+ a=0.125 b=0.2: ||p||^2=2.391399274002 (<= C0^2: True, >0: True)
+  m=65 p- a=0.25 b=0.2: ||p||^2=3.739014148585 (<= C0^2: True, >0: True)
+  m=65 p+ a=0.125 b=0.2: ||p||^2=2.300659551762 (<= C0^2: True, >0: True)
+  m=129 p- a=0.25 b=0.2: ||p||^2=3.746266969718 (<= C0^2: True, >0: True)
+  m=129 p+ a=0.125 b=0.2: ||p||^2=2.238751447468 (<= C0^2: True, >0: True)
+  m=257 p- a=0.25 b=0.2: ||p||^2=3.749027041847 (<= C0^2: True, >0: True)
+  m=257 p+ a=0.125 b=0.2: ||p||^2=2.205696400531 (<= C0^2: True, >0: True)
+(iii) diagnostic extreme eigenvalues at n=m-1 (float64, formula weights):
+  m=21: lambda_-=0.271537 lambda_+=1.725073
+  m=41: lambda_-=0.214607 lambda_+=1.778458
+  m=61: lambda_-=0.188473 lambda_+=1.802152
+  m=81: lambda_-=0.172647 lambda_+=1.816565

@@ -1,0 +1,37 @@
+{
+  "status": "rigorous forward-error sign enclosure under stated IEEE BLAS model",
+  "accepted": true,
+  "sign": "positive",
+  "m": 60,
+  "n": 59,
+  "witness_sha256": "662491797ba699dcdeaa2d17c9407d626de3778393879b6d47243386407fd4df",
+  "code_sha256": "60c1e6db62fbd1c422fae2fa29476afad2796aa503a1225d7f507745fa08361f",
+  "command": [
+    "topics/padua-mz-cleanup-20261105/code/independent_witness.py",
+    "--witness",
+    "/tmp/claude-0/-home-user-padua-research/756d1664-f3c3-5fdc-b9da-9c321a950f9c/scratchpad/audit/cert-m60/witness.json.gz",
+    "--output",
+    "/tmp/claude-0/-home-user-padua-research/756d1664-f3c3-5fdc-b9da-9c321a950f9c/scratchpad/audit/independent-m60.json"
+  ],
+  "python": "3.13.18",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "q_center": 0.18859348048909605,
+  "q_enclosure": "[0.18859348049 +/- 2.24e-12]",
+  "q_absolute_error": "[1.333933808038984734443e-12 +/- 1.58e-34]",
+  "relative_width_upper": "[1.4146128536e-11 +/- 2.47e-22]",
+  "polynomial_error_max": "[3.90860081886101868412503e-12 +/- 9.76e-36]",
+  "weight_error_max": "[1.214881662265861132826e-16 +/- 3.51e-38]",
+  "coefficient_l1": "[190.30025071743017621439530984162047389 +/- 3.67e-37]",
+  "positive_norm_summand_lower": "[6.9333477997940490710015205933057383467e-33 +/- 3.72e-71]",
+  "retained_nodes": 1891,
+  "ball_table_seconds": 0.024826042000029247,
+  "total_seconds": 0.04584913400003643,
+  "arithmetic_assumptions": [
+    "Arb outward intervals",
+    "binary64 round-to-nearest scalar operations",
+    "each BLAS dot product satisfies standard gamma_k error model; FMA permitted",
+    "no overflow; absolute underflow allowance included"
+  ],
+  "independent_path": "ball node tables plus floating tensor contractions with analytic l1 forward bounds"
+}
