@@ -140,4 +140,4 @@
 - F7 accepted. The MathSciNet note line 8 now says only that AC's dated check returned no indexed citing item for De Marchi 2022, not that nothing citing it was published. The same narrowing is applied to p1-comparison line 78 and the topic results summary. Other hits searched and kept, with reasons, in [response-02](response-02.md).
 - No verdict, PD status, IDEA, final ID or registry change. F1–F6 corrections and developer-only verification qualifications unchanged.
 - Old-block checker rerun at main aff30e8: 60/60, 0 missing.
-
+- [Handoff 09](handoffs/09-response.md) done in afd765e; [handoff 10](handoffs/10-audit.md) opened: short Codex gpt-6-astra high check of F7. Stage → AUDIT.
