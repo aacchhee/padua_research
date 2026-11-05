@@ -17,3 +17,12 @@
 ## Runs needed
 
 - A0–A5 and H1–H3 as in handoff 01.
+
+## 2026-11-05 — Codex continuation / setup
+
+- Input topic head: `50cc7effde11fc9cc875cf2b8275a76458c75152`. Rules read there and at integration `ed21cc0bf205549936fccde90244a291bc6de324`; full rule files unchanged. Fetched main advanced to `21dbfc90257b952d8923f6d01739d12aa8d6e0a1` (merged PR20 and PR23); merged it without rewriting topic history.
+- Role: orchestrator/developer. AC explicitly requests gpt-6-astra ultra; handoff01 gives the stalled proof as justification for that allocation. Dispatched mathematical workers use gpt-6-astra ultra, fresh replay uses gpt-6.1-sol medium; supplementary independent review will use gpt-6-astra high. Parent serving model/effort metadata is unexposed and is not asserted.
+- [Execution plan](plan.md) written before research runs. Disjoint ownership: replay agent owns its code/receipt/check report; structure agent owns A0/A1 theory/novelty/attempt records; profile agent owns H2/H3 records; root owns log, gates integration, results, reservations, handoffs and Git.
+- Shell Git networking requires the supported per-command network grant; initial calls without it failed to reach the proxy. Fetch succeeds with that grant. GitHub CLI GraphQL returned Forbidden; the available GitHub connector provides PR metadata. No credential inspection or destination-policy bypass.
+- Initial PR-state scan: open PR21 `890f56ccde35431b70b43141c224b0b8817fea7f`, PR22 `f4c41acb665f4ea35b5db05ec45ae8ba34fe6b96`, PR24 `79c3d6a211325eca6e8311b3ae03187c100a1d8a`; all returned closed PRs merged. No final allocation yet; fresh-range procedure adopted unchanged. Complete ledger/registry union scan is required before any reservation.
+- Scope remains topic-local; the main merge imports accepted changes but no merged scientific file is edited by this development.
