@@ -103,3 +103,72 @@ readiness. The orchestrator must refresh changed heads/population before
 readiness. All final mapping, shared-record edits, manifest updates and Git
 operations remain with the orchestrator. No repair, renumbering or collision
 referral is needed for the proposed six-plus-three assignment.
+
+## Final live-population recheck — 2026-11-05
+
+**PASS after assignment.** The orchestrator repeated the live all-state query:
+still 23 returned PRs, open PR20–24, all returned closed PRs merged, no
+closed-unmerged recovery needed. The supplied compact final population has
+SHA-256 `eb83758a5202f6ee718aac2f2ee1baa5a39e2d82d9d5e83ae06abb9b1c93ee63`.
+I independently reread every complete ledger and all four registries from the
+refreshed pinned trees using the same read-only Git method. The original JSON
+receipt remains immutable; this dated entry records the new pins and changes.
+
+Main remains `5db1e01dcd2258f45de2adcaef43859e59734618`. PR21, PR22 and PR24
+remain at the exact pins in the original table. PR23 has advanced from
+`2b489d01d443b6780ac034f4d6c20d50fffee2a6` to
+`8fc9c1da776f85a784eead3591c02fcf4b642250`, importing main. Published PR20 is
+now `d8bc03ae06b8d0cec6442716a0d3f7a6f8c7f6f9`; the additional checked own
+candidate is `871e25bf918116f95a37f8c3dda3d1533810f4b3`. Every selected
+ledger/registry file is byte-identical between those two own heads.
+
+The current main/open-head union comprises **51 complete file copies**; the
+additional candidate check reads nine more. The following digest pins every
+selected full-file SHA-256, byte count and path without duplicating the initial
+receipt. For each head select sorted `*/ALLOCATIONS.md` paths, followed in order
+by PROOF_STATUS.md, state/IDEAS.md, literature/INDEX.md and ID_CROSSWALK.md;
+concatenate `<sha256>\t<decimal-bytes>\t<path>\n`, then SHA-256 that UTF-8 list.
+
+| Input | Files | Full-file inventory digest |
+|---|---:|---|
+| main | 8 | 65aefd240f41b5000c5b0f5bc7452776ddc9525b8f1660ad8fd0c9af4023c86a |
+| PR20 / candidate | 9 each | e8fcd7d982107232d0025bb11a7d42f7b7b9b60cd90b6af29360471454295d9f |
+| PR21 | 8 | 0fd263189a49455ec61232c9b99456fde1eebb752ec27409323c64e9c9a2d5a8 |
+| PR22 | 9 | d2a93d4d53f922ade6e8058cf18853de3bb0deeda78f380a73bd0a66070a1ae2 |
+| PR23 refreshed | 9 | 91913198e7eabe4259a2081d185bf53ba74f4fc17653dcbd021e4354c702045c |
+| PR24 | 8 | e997be9324ca4f10665b58347fc9c4447df1259f05ef7e1db1e7f57b50560775 |
+
+PR23's topic allocation ledger is **byte-identical to its former head**, SHA-256
+`e9002fd2b725bdb035ee0650ed529a3f05149e27634ed890b0667d2a14352052`.
+Its four registries and shared batch ledger are now byte-identical to current
+main (identities already listed under main in the original JSON). Its extra
+ledger copy is main's PR19 topic ledger. This import preserves PR19's ranges
+and adds no reservation. All unchanged-head selections also remain exactly
+those of the original receipt.
+
+PR20 now has six canonical PROOF_STATUS rows PD-T266–271, three canonical
+IDEAS rows IDEA-356–358 and all nine exact alias mappings in ID_CROSSWALK.
+These same IDs occur in **none** of the four registries on main or any other
+open head. LIT allocation is unchanged. The own ledger and shared batch ledger
+record the same existing permanent ranges, assignments and unused gaps. The
+batch ledger retains main's entire previous bytes as an exact prefix and adds
+only PR20's import; the topic ledger likewise keeps its previous reservation
+and dated final assignment. All owner intervals from the earlier semantic
+union remain unchanged and disjoint; maxima stay T363/N131/IDEA453/LIT593.
+
+For preservation, the 1,024 distinct qualified final-ID mentions across main's
+four registries are a subset of the candidate's 1,033; the exact difference
+is only the six T IDs and three IDEA IDs above. Every old table-row key
+survives. The seven changed existing PROOF_STATUS rows are T098, T100, T180,
+T184, T211, T212 and T230; the two existing IDEA rows are 206/299; the three
+changed old crosswalk mappings are the existing aliases for T180/T184/IDEA299.
+They retain IDs and provenance, with dated completion/supersession text;
+T098 remains OPEN and T100 MEASURED. No old literature table row changed;
+the bounded LIT388 addendum is additive. Earlier PR19 records, all permanent
+gaps and all other owners' reservation text remain intact. This is a bounded
+mechanical preservation check, not a new mathematical audit.
+
+The original reservation-recheck.json SHA-256 remains
+`2d886e2e4336453bf7a87bce354f601adac2a6f130d4e57e8d2d4a2bd17a93b3`.
+No JSON, code, evidence, shared record or Git state was modified by this final
+recheck. This appended Markdown leaves the non-record budget unchanged.

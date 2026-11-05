@@ -2,7 +2,7 @@
 
 Development branch: `codex/padua-lebesgue-followups-20261103`.
 Base: `440d1079e42c3ef21c40d1cf8870f5b206410c6a`.
-Stage: PR preparation; final registrations applied, readiness check in progress. Claude audit-01 accepts the mathematics; editorial/provenance findings F1–F9 are answered in [response-01](response-01.md).
+Stage: PR; final registrations and preparation checks complete. Draft PR20 awaits AC decision on the 4,851,736-byte aggregate storage budget; no exception to “well below 5 MB” is inferred. Claude audit-01 accepts the mathematics; editorial/provenance findings F1–F9 are answered in [response-01](response-01.md).
 
 Final registrations: PD-T266–271 and IDEA-356–358; existing PD-T180/184, IDEA-299 and LIT-388 reused. See the [exact alias map](preparation/final-id-map.json) and [fresh reservation scan](preparation/reservation-recheck.md).
 

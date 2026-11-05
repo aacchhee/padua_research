@@ -67,3 +67,26 @@ Claude assesses minor impact after F1's response; mathematical acceptance does
 not waive it. Physical delivery to AC's Padua cold storage remains pending;
 scratch retention is not promised and all generation/checking sources remain
 available. Only AC decides whether to merge; no GitHub merge is authorized.
+
+## Final preparation disposition
+
+The [final reservation refresh](reservation-recheck.md) passes after PR23's
+advance to `8fc9c1da776f85a784eead3591c02fcf4b642250`. Main and the other
+heads are unchanged. The [repeated sequential rehearsal](integration-rehearsal.md)
+passes merge/preservation checks at all five stages; PR24's two existing EOF
+whitespace warnings are disclosed and not repaired on this branch.
+
+The distinct configured gpt-6-astra medium [independent review](independent-review.md)
+finds no registration, scope, history or evidence-integrity defect. Its **MAJOR S1**
+is accepted and remains unresolved: the [conservative storage count](storage-assessment.md)
+is **4,851,736 bytes**, leaving **148,264 bytes (2.97%)**. Even the defensible
+C/C++ source exclusion leaves 4,814,410 bytes. This does not establish the
+workflow's “well below 5 MB.” No inferred waiver, arbitrary classification,
+metadata split, evidence deletion or unrelated cleanup is used to claim a pass.
+
+**PR20 stays draft.** AC must explicitly accept this exact budget as an
+exception/interpretation, or authorize a separately scoped reduction. The
+readiness transition is not performed. The requested next action concerns
+this concrete, reviewable preparation; mathematics is accepted and unchanged.
+A budget acceptance would leave only refreshed readiness/lifecycle bookkeeping,
+not another research or Claude-audit round. Only AC merges.

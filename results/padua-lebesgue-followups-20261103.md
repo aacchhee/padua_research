@@ -2,7 +2,7 @@
 
 This file is written only by the topic orchestrator. Branch `codex/padua-lebesgue-followups-20261103`; [draft PR #20](https://github.com/aacchhee/padua_research/pull/20).
 
-## Status (2026-11-05): PR preparation authorized — mathematics accepted; minor findings answered
+## Status (2026-11-05): registration checked — draft awaiting AC budget decision
 
 Four bounded targets, specified in [handoff 01](../topics/padua-lebesgue-followups-20261103/handoffs/01-work.md):
 
@@ -53,14 +53,17 @@ Mathematics ACCEPTED for all four targets ([audit-01](../topics/padua-lebesgue-f
 - a monolithic original n=8 `Verifier.run` (archived interior + independently regenerated boundary) certified 44 + 16 + 2 = 62 in one process;
 - an Arb digamma-route enclosure of κ confirmed the κ and c brackets.
 
-All nine MINOR findings (wording, proposal format, provenance/budget notes) are answered by editorial fixes in [response-01](../topics/padua-lebesgue-followups-20261103/response-01.md). PR20 remains draft pending preparation, fresh reservation checks and integration rehearsal. The T2/T3 gate-timing deviation is recorded with minor impact and left for AC's decision.
+All nine MINOR findings (wording, proposal format, provenance/budget notes) are answered by editorial fixes in [response-01](../topics/padua-lebesgue-followups-20261103/response-01.md). Registration, fresh reservation checks, integration rehearsal and independent preparation review are complete. PR20 remains draft because the aggregate storage budget needs an explicit AC decision. The T2/T3 gate-timing deviation is recorded with minor impact and left for AC's decision.
 
 ## Current boundary and post-merge frontier
 
-Stage: PR preparation. Final registration and shared summaries are applied;
-PR20 remains draft while the orchestrator completes the fresh readiness scan,
-integration rehearsal and independent preparation check. The accepted mathematics
-is unchanged. No further mathematical campaign is assigned.
+Stage: PR, readiness blocked by the aggregate storage budget. Final registration,
+fresh reservation checks, integration rehearsal and independent preparation review
+are complete. The conservative non-record total is 4,851,736 bytes, only 2.97%
+below 5 MB; the workflow requires “well below.” [Independent review](../topics/padua-lebesgue-followups-20261103/preparation/independent-review.md)
+records this as the sole readiness blocker. AC must explicitly accept this budget
+or authorize a scoped reduction before readiness. The accepted mathematics is
+unchanged. No further mathematical campaign is assigned.
 
 Dated 2026-11-05 supersession: earlier CURRENT/RESULTS center-minimality and
 general-β-series OPEN clauses are historical and superseded only at the proved

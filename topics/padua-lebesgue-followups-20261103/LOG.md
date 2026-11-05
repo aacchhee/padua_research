@@ -1,10 +1,10 @@
 # Padua Lebesgue-function follow-ups (T1–T4): log
 
 - Branch: `codex/padua-lebesgue-followups-20261103` · Original base: main `440d107`; reconciled main `5db1e01` · Developer: Codex · Auditor: Claude (Opus 5.5)
-- Stage: PR preparation authorized (editorial audit response complete; not ready) · Next: `Codex (gpt-6.1-sol medium): Continue codex/padua-lebesgue-followups-20261103.` · Open handoff: [handoffs/04-pr-preparation.md](handoffs/04-pr-preparation.md)
-- Reserved final-ID ranges: PD-T266–285, PD-N092–099, IDEA356–375, LIT474–481; [reservation and pinned union scan](ALLOCATIONS.md). No final assignments before audited preparation.
+- Stage: PR — registration checked; readiness blocked on AC aggregate-budget decision · Next: `Codex (gpt-6.1-sol medium): Continue codex/padua-lebesgue-followups-20261103.` · Open handoff: [handoffs/04-pr-preparation.md](handoffs/04-pr-preparation.md)
+- Reserved final-ID ranges: PD-T266–285, PD-N092–099, IDEA356–375, LIT474–481; [reservation and pinned union scan](ALLOCATIONS.md). Final assignments: PD-T266–271 and IDEA-356–358; all unused headroom remains permanent gaps.
 - Claims: all four core targets complete. T1 PD-T184/180 PROVED (44 interior, 62 total); six T2–T4 analytic records PROVED. Claude audit-01 ACCEPTED the mathematics of all four targets; nine MINOR findings answered in response-01. Full sharp PD-T098 remains OPEN; the T2/T3 protocol timing qualification remains unwaived.
-- Open for AC: none at setup. Ask AC before using any machine outside the sandbox.
+- Open for AC: accept the 4,851,736-byte conservative total as an explicit budget exception/interpretation, or authorize a scoped reduction. PR20 stays draft; no outside machine is used.
 
 ## 2026-11-03 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
 
@@ -18,7 +18,7 @@
 
 ## Runs needed
 
-- No development run remains for the four core targets. Claude must select and record independent audit checks. Full sharp PD-T098 is an unattempted stretch beyond the completed constant-term target; physical cold-storage delivery remains pending.
+- No development or mathematical audit run remains for the four core targets. Preparation review and integration checks are complete; readiness awaits the explicit AC budget decision. Full sharp PD-T098 is an unattempted stretch beyond the completed constant-term target; physical cold-storage delivery remains pending.
 
 ## 2026-11-03 — Codex development resumed
 
@@ -138,3 +138,10 @@
 - [Preparation record](preparation/record.md), [reservation recheck](preparation/reservation-recheck.md), [exact map](preparation/final-id-map.json). Applied corrected registry/state/history proposals within handoff04 scope. No new mathematics/novelty claim; bounded registration exception recorded.
 - Three disjoint sol medium workers supplied allocation, registry/history and state/results work. The 138 immutable-input/9 mathematical-body/123 manifest/mapping/link preservation checks pass. Code, executed receipts and auditor files are unchanged.
 - PR20 remains draft at this checkpoint, pending independent Astra medium preparation review, storage-budget assessment, final refresh and integration rehearsal. Confirmed T2/T3 timing deviation remains unwaived; physical storage delivery remains pending.
+
+## 2026-11-05 — preparation review and readiness boundary
+
+- Registration checkpoint `d8bc03ae06b8d0cec6442716a0d3f7a6f8c7f6f9` pushed; initial rehearsal record `871e25bf918116f95a37f8c3dda3d1533810f4b3`. [Fresh final reservation recheck](preparation/reservation-recheck.md) includes PR23 advance `8fc9c1da776f85a784eead3591c02fcf4b642250`; all nine assignments remain unique and all prior ranges/rows survive.
+- [Repeated sequential squash rehearsal](preparation/integration-rehearsal.md) passed all five merges and byte-preservation checks on detached local commits. Other PRs remain drafts; two PR24 EOF whitespace warnings are recorded without foreign-file edits or readiness approval.
+- Distinct configured gpt-6-astra medium [preparation review](preparation/independent-review.md) reports no mathematical/registration/history/evidence issue, but MAJOR S1: the aggregate 4,851,736-byte conservative count leaves only 2.97% margin and does not establish the workflow's “well below 5 MB.” Original code/evidence remains immutable; no unrelated cleanup is authorized. No exception is inferred.
+- Disposition: S1 accepted as an unresolved readiness blocker. PR20 remains draft. The sole decision requested now is explicit AC acceptance/interpretation of this measured budget, or authorization of a scoped compliant reduction. T2/T3 timing remains confirmed/unwaived, physical archival delivery pending. No new math or further Claude round is queued. Final lifecycle handoff records the bounded remaining step.

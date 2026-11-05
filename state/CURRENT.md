@@ -132,7 +132,9 @@ the mathematics; [response-01](../topics/padua-lebesgue-followups-20261103/respo
 answers all nine minor findings. The T2/T3 prospective-gate timing deviation
 remains confirmed, not waived or cured, with minor impact assessed by Claude and
 acceptance left to AC; see the [qualified gate](../topics/padua-lebesgue-followups-20261103/gate-t2-t3.md).
-Stage PR preparation: PR20 remains draft pending the orchestrator's readiness
-checks. After merge, the completed results above replace preparation tasks as
+Registration, fresh reservation checks and integration rehearsal are complete.
+The independent preparation review leaves one readiness blocker: the conservative
+4,851,736-byte storage total needs an explicit AC exception/interpretation of
+“well below 5 MB,” or an authorized reduction. PR20 remains draft. After merge, the completed results above replace preparation tasks as
 this topic's outcome; no further mathematical campaign is assigned. Physical
 cold-storage delivery remains pending. Only AC merges.

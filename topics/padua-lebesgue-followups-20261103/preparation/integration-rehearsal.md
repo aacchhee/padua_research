@@ -47,3 +47,27 @@ Future draft changes require their own refreshed allocation, storage and
 integration checks; this record does not preapprove those changes. Disposable
 commits are local diagnostic identities, not durable evidence dependencies;
 the exact published input heads and commands suffice to repeat the rehearsal.
+
+## Final live refresh rehearsal
+
+The later live refresh returned the same 23 PRs, open20–24 and every closed
+PR merged. Main/PR21/22/24 are unchanged. PR23 advanced by reconciling main
+and updating its topic records. Repeated the entire sequential rehearsal in
+`/workspace/scratch/lebesgue-prep-integration-final`, detached from the same
+main, using current PR20 candidate and the refreshed PR23 head:
+
+| PR | Input head | Disposable squash commit | Result tree | New paths checked |
+|---|---|---|---|---:|
+| 20 | `871e25bf918116f95a37f8c3dda3d1533810f4b3` | `22bac3e8d130c19018a4c97b2fd83c42955d48dc` | `3e74f77b10efa68c0aa6afc90621b1fe46618925` | 177 |
+| 21 | `890f56ccde35431b70b43141c224b0b8817fea7f` | `2605a8b76449b39dae37b8eabe5cb59f3abedb63` | `167413d5e612cd0dd918e2e3942477c306162eea` | 70 |
+| 22 | `30a361d19a6c23fa1df950becbe73f635aa22e71` | `79e8201e3ba4927b0775ae1615d54d4db3cb5cbd` | `510c458717bddfe8849049f98894c61fee0f7af6` | 31 |
+| 23 | `8fc9c1da776f85a784eead3591c02fcf4b642250` | `c0fd9314ee1bf7e7a8cc1da320fe8064da8c210b` | `92cd410ceb6b07dd205a6a62aac577c4cc6a05cf` | 106 |
+| 24 | `5e5081e991fc48f033d3ef51ee2b6e42f892d29d` | `fc821af2cc0faf2cf7d3b12233b0ab323ef417e8` | `c6589dd5d6ee143c1f1687fa57299d5f0c5fd5dc` | 58 |
+
+All merges remain conflict-free, the first squash tree equals the PR20
+candidate, all nine shared-file byte checks pass at every stage, and every
+input's new paths match its published bytes. The same two PR24 EOF whitespace
+warnings are recorded; PR20–23 pass the whitespace check. No remote branch
+was modified. The only changes after the tested PR20 candidate are preparation
+review/disposition/refresh documentation and lifecycle status; no scientific
+registration or proof change is introduced by that bookkeeping.
