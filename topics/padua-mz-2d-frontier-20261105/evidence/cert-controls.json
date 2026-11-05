@@ -1,0 +1,63 @@
+{
+ "kind": "executed producer rejection controls",
+ "date_utc": "2026-11-05",
+ "source_sha256": {
+  "cert_pencil.c": "95993b761794306b41b67f6e7741fd9cd38817c08e5ec218c2f21fb08846d51e",
+  "cert_native.py": "6651de795706c0e2aa2689a58b9dd928835e2dbe9de0740b237b377d68b095ae"
+ },
+ "synthetic_controls": [
+  {
+   "case": "zero",
+   "rejected": "strict diagonal dominance rejected"
+  },
+  {
+   "case": "boundary",
+   "rejected": "strict diagonal dominance rejected"
+  },
+  {
+   "case": "nonsymmetric",
+   "rejected": "nonsymmetric congruence"
+  },
+  {
+   "case": "indefinite_nondominant",
+   "rejected": "strict diagonal dominance rejected"
+  },
+  {
+   "case": "mixed_sign_dominant",
+   "accepted": {
+    "negative": 1,
+    "zero": 0,
+    "positive": 1,
+    "minimum_strict_dominance_margin": "2"
+   }
+  }
+ ],
+ "real_transform_control": {
+  "command": [
+   "python",
+   "/workspace/padua_research/topics/padua-mz-2d-frontier-20261105/code/cert_native.py",
+   "--m",
+   "10",
+   "--scale",
+   "1",
+   "--scratch",
+   "/tmp/padua-cert-bad-transform",
+   "--output-dir",
+   "/tmp/padua-cert-bad-transform/receipts"
+  ],
+  "environment": {
+   "PYTHONPATH": "/tmp/padua-g0-deps",
+   "OPENBLAS_NUM_THREADS": "1",
+   "OMP_NUM_THREADS": "1"
+  },
+  "exit_code": 1,
+  "observed_exception": "ValueError: strict diagonal dominance rejected",
+  "accepted_receipt_emitted": false
+ },
+ "endpoint_grid_control": {
+  "m": 2,
+  "width": "1/1000000",
+  "observed_exception": "ValueError: strict diagonal dominance rejected",
+  "reason": "Coincident rational endpoint at triple eigenvalue1; exact identity checked separately"
+ }
+}

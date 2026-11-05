@@ -13,10 +13,23 @@ All16 float extrema agree with PD-T108 within1e-12. Commands, hashes,
 versions and short receipt: [independent-checks-g0.md](independent-checks-g0.md).
 No mismatch found; later gates released after receipt completion.
 
-## G1 — RUNNING
+## G1 — 2026-11-05 — m60 cost PASS; extension running
 
-Matrix-free extension and hybrid native GMP/FLINT exact port in development.
-No new certified range claimed yet.
+The hybrid C/GMP pencil and native FLINT integer-congruence port accepted
+m10/20/30/40 with the frozen exact brackets; m60 accepted in46.912s wall,
+well below the original2h sandbox limit. A different worker independently
+reconstructed every m60 pencil entry with Fraction/repeated-reflection
+aliases and accepted fresh integer congruences at all four endpoints in
+232.594s. Thus m60 is a new independently replayed finite computer-assisted
+claim. m80 development acceptance completed in302.437s; its independent
+replay is running. m100 producer is running. Contiguous2..60 development
+acceptance is tracked separately and is not automatically an independently
+replayed all-integer extension. See certifier-results.md,
+independent-checks-cert.md and theory/cert-finite-extension.md.
+
+The float operator passed independent dense-assembly comparisons and
+continuous localization completed through400. Larger maxima remain costly;
+actual completed scope is retained, never inferred from requested jobs.
 
 ## G2 — PRE-REGISTERED, RUNNING
 
