@@ -56,3 +56,10 @@
 ## Runs needed
 
 - B0–B6 and N1–N6 as in handoff 01.
+
+## 2026-11-05 — Codex continuation setup
+
+- Requested coordinator model/effort: gpt-6-astra high; serving identity and effective effort unexposed. Rules read at full input SHA `db922627395faf6ad888dfaecbf5d7c2108b06c3`, reread at reconciled head `cdd5cdd4ff683e65fb6451006c997e1f2c0cb6be`; rule contents unchanged.
+- Fetched current topic and main. Merged main `b4d292eea5eed373002506d5e16a3761bd7ae10e` into the published topic lineage without conflicts. Original base remains `9322fba`. PR21 is now merged; literature reads use current main records.
+- Shell network requires the execution tool's additional network permission; ordinary Git initially failed to connect to the proxy. The authorized network-enabled fetch succeeded. No credential values read or printed.
+- Written pre-run plan: [plan.md](plan.md). B0 fresh replay is first; no new mathematical claim or final-ID range.
