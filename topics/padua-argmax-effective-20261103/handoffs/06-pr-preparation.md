@@ -1,6 +1,6 @@
 # Handoff 06 — padua-argmax-effective-20261103 — PR preparation
 
-- Status: open
+- Status: superseded by 07: AC requests no further Claude check unless MAJOR
 - Previous handoff: [05-response-check.md](05-response-check.md), done in 99553c5f10246e3b39c432ea7b6527703dae8291
 
 - Next agent / model / effort: Codex, gpt-6.1-sol medium. This is mechanical registry and ID work under the WORKFLOW allocation table. Use gpt-6-astra medium only if a protocol question arises.

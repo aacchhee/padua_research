@@ -186,3 +186,11 @@
 - Checked: word-diffs of the three theory files, report and COLD_STORAGE (wording only); no change under code/, evidence/, audit-01 or handoffs 01–03; manifest verifier (`verified: true`, 84 files) and entry-level inventory diff (four documentation rows only); provenance facts in checker-provenance-01 against native-checker-summary.json. No novelty content, so the IDEAS reread is omitted (audit-01 read it in full).
 - Outcome: [response-check-01.md](response-check-01.md) ACCEPTS the response. F8's missing per-receipt compiler/GMP mapping is an acceptable documented limitation, given audit-01's rebuilt replays. Stage PR; F5/F7 and the union scan move to preparation.
 - Handoff links: [05-response-check](handoffs/05-response-check.md) done in `99553c5`; [06-pr-preparation](handoffs/06-pr-preparation.md) open.
+
+
+## 2026-11-05 — Codex — PR preparation and AC-directed finalization
+
+- Rules read at `37ff693c03a1c0c85b865d27b15403b03e5b3fec`; main unchanged `440d1079e42c3ef21c40d1cf8870f5b206410c6a`, already an ancestor. Mechanical registry work delegated to configured gpt-6.1-sol medium; root retains Git and PR control. Specific serving metadata beyond configured workers is not exposed.
+- AC steering: "no more claude, fix everything yourself unless MAJOR" overrides handoff06's planned additional Claude preparation check. Handoff06 is superseded by [handoff07](handoffs/07-finalization.md); accepted audit-01 and response-check-01 remain unchanged. Resolve minor preparation findings locally and escalate only MAJOR issues.
+- Scope is mechanical final-ID substitution and registration of already audited claims, with no new mechanism, novelty or priority claim; no new novelty gate or literature reading is required.
+- Refreshed all-state PR population: open19–24; every closed PR is merged. Fresh full-file union scan covers55 ledger/registry copies and finds no range collision. Permanent reservations and gaps are preserved.
