@@ -1,6 +1,6 @@
 # Handoff06 — independent scientific and protocol audit of the frontier batch
 
-- Status: open
+- Status: done in 3f1e74cc73cd09351e673341ddf2ba73f5d46633
 - Previous handoff: [05-work.md](05-work.md).
 - Next agent/model/effort: Claude Opus5.5 xhigh, distinct cross-family scientific/protocol auditor. No Codex/Astra supplementary review substitutes for this audit.
 - Role: auditor/orchestrator for this step.
