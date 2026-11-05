@@ -1,4 +1,4 @@
-# PD-T?argmax-effective-2-codex-06 — An explicit global-to-corner norm ratio
+# PD-T368 (PD-T?argmax-effective-2-codex-06) — An explicit global-to-corner norm ratio
 
 ID kind: PD-T.
 Aliases: rotated-bin kernel bound; global logarithmic norm with explicit constants.
@@ -178,3 +178,21 @@ re-derivation, define the kernel and fix the reflection/lower-bound
 citations. The original no-import description concerns proof dependence,
 not absence of known literature. Statement, proof body, constants and
 PROVED status are unchanged. Historical source-reading limits are retained.
+
+## Registration — 2026-11-05
+
+Final ID: **PD-T368**. Preserved provisional alias: `PD-T?argmax-effective-2-codex-06`.
+Registration input/rules: `5821c3f130ec0b1e33ad1d01620b67620e1f0be1`.
+
+The explicit-constant re-derivation and all-degree norm ratio are registered. The O(log^2 n) order is known through LIT-312/LIT-379; no first-explicit-constant or priority claim is made, and external fulltext comparison remains pending.
+
+[Claude audit-01](../audit-01.md) accepted the mathematical scope;
+[response-check-01](../response-check-01.md) accepted the record response.
+Earlier provisional/no-final-ID and pending-response-check wording above
+is retained as history and is superseded only administratively by this
+registration. Every pre-existing paragraph after the heading, including
+Statement, proof, status, displays and History, is preserved byte for byte.
+The [final-ID map](../preparation/final-id-map.json) and
+[registration notes](../preparation/registration-notes.md) record the mapping
+and preparation limits. PD-T099 remains OPEN; the global certified range
+remains exactly 2–32.

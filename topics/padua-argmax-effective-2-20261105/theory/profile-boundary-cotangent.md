@@ -1,4 +1,4 @@
-# PD-T?argmax-effective-2-codex-03 — Exact boundary primitive and uniform profile
+# PD-T365 (PD-T?argmax-effective-2-codex-03) — Exact boundary primitive and uniform profile
 
 ID kind: PD-T.
 Aliases: diamond-edge CRT; shifted cotangent boundary profile;
@@ -244,3 +244,21 @@ documented gate and before any fits. No final ID allocated.
 N and L_M and cite the csc definition and cotangent identity separately.
 The first-writing pending-review description is superseded by audit-01's
 acceptance at the original scope. Statement, proof and status are unchanged.
+
+## Registration — 2026-11-05
+
+Final ID: **PD-T365**. Preserved provisional alias: `PD-T?argmax-effective-2-codex-03`.
+Registration input/rules: `5821c3f130ec0b1e33ad1d01620b67620e1f0be1`.
+
+The exact diamond-boundary primitive and its existing uniform remainder are registered at the written boundary-only scope; the full-diamond H2 target remains OPEN.
+
+[Claude audit-01](../audit-01.md) accepted the mathematical scope;
+[response-check-01](../response-check-01.md) accepted the record response.
+Earlier provisional/no-final-ID and pending-response-check wording above
+is retained as history and is superseded only administratively by this
+registration. Every pre-existing paragraph after the heading, including
+Statement, proof, status, displays and History, is preserved byte for byte.
+The [final-ID map](../preparation/final-id-map.json) and
+[registration notes](../preparation/registration-notes.md) record the mapping
+and preparation limits. PD-T099 remains OPEN; the global certified range
+remains exactly 2–32.

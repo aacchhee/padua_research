@@ -1,4 +1,4 @@
-# PD-T?argmax-effective-2-codex-07 — All-degree physical corner descent at scale n^-2
+# PD-T369 (PD-T?argmax-effective-2-codex-07) — All-degree physical corner descent at scale n^-2
 
 ID kind: PD-T.
 Aliases: H3 fixed scaled local radius; aggregate sign-change corner comparison.
@@ -142,3 +142,21 @@ registration or an extension of (1)'s loss bound. F9 and E1/E2 add the
 existing reflection justification, accepted-dependency review note and
 notation. The original Statement, constants and PROVED status remain
 unchanged; the sole proof-body addition explains the already cited symmetry.
+
+## Registration — 2026-11-05
+
+Final ID: **PD-T369**. Preserved provisional alias: `PD-T?argmax-effective-2-codex-07`.
+Registration input/rules: `5821c3f130ec0b1e33ad1d01620b67620e1f0be1`.
+
+The explicit every-n>=2 instantiation of PD-T227 Scope (8) is registered, with its loss bound confined to radius 10^-11/n^2. PD-T228 already gives an eventual n^-2 radius; combining strict-descent domains with PD-T251 does not extend either loss estimate.
+
+[Claude audit-01](../audit-01.md) accepted the mathematical scope;
+[response-check-01](../response-check-01.md) accepted the record response.
+Earlier provisional/no-final-ID and pending-response-check wording above
+is retained as history and is superseded only administratively by this
+registration. Every pre-existing paragraph after the heading, including
+Statement, proof, status, displays and History, is preserved byte for byte.
+The [final-ID map](../preparation/final-id-map.json) and
+[registration notes](../preparation/registration-notes.md) record the mapping
+and preparation limits. PD-T099 remains OPEN; the global certified range
+remains exactly 2–32.

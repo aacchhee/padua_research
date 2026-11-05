@@ -1,4 +1,4 @@
-# PD-N?argmax-effective-2-codex-01 — Leading phase factor alone has a divergent absolute error
+# PD-N132 (PD-N?argmax-effective-2-codex-01) — Leading phase factor alone has a divergent absolute error
 
 ID kind: PD-N.
 Aliases: omitted boundary logarithm; leading-factor-only profile obstruction.
@@ -87,3 +87,21 @@ boundary-profile discussion as a remark and supplies its T03 attribution.
 The earlier unqualified wording attributed too much to the midpoint
 obstruction alone. The negative statement, proof, constants, PROVED
 status and scoped REJECTED: refuted disposition are unchanged.
+
+## Registration — 2026-11-05
+
+Final ID: **PD-N132**. Preserved provisional alias: `PD-N?argmax-effective-2-codex-01`.
+Registration input/rules: `5821c3f130ec0b1e33ad1d01620b67620e1f0be1`.
+
+The negative statement is PROVED; IDEA-456 is REJECTED: refuted only for the specified leading-factor-only a*b_n vanishing-remainder form. Neither PD-T099 nor the full H2 target is refuted.
+
+[Claude audit-01](../audit-01.md) accepted the mathematical scope;
+[response-check-01](../response-check-01.md) accepted the record response.
+Earlier provisional/no-final-ID and pending-response-check wording above
+is retained as history and is superseded only administratively by this
+registration. Every pre-existing paragraph after the heading, including
+Statement, proof, status, displays and History, is preserved byte for byte.
+The [final-ID map](../preparation/final-id-map.json) and
+[registration notes](../preparation/registration-notes.md) record the mapping
+and preparation limits. PD-T099 remains OPEN; the global certified range
+remains exactly 2–32.

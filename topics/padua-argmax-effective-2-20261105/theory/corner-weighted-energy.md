@@ -1,4 +1,4 @@
-# PD-T?argmax-effective-2-codex-05 — Uniform aggregate corner gradient energy
+# PD-T367 (PD-T?argmax-effective-2-codex-05) — Uniform aggregate corner gradient energy
 
 ID kind: PD-T.
 Aliases: H3 weighted-energy closure; diagonal cancellation and off-diagonal summation.
@@ -260,3 +260,21 @@ Statement and every numbered proof assertion are unchanged; these are
 explanations of the accepted proof, not a new mathematical result or premise.
 First-writing pending-review notes in Checks describe that historical stage;
 audit-01 accepts the original scope, and the record response check is pending.
+
+## Registration — 2026-11-05
+
+Final ID: **PD-T367**. Preserved provisional alias: `PD-T?argmax-effective-2-codex-05`.
+Registration input/rules: `5821c3f130ec0b1e33ad1d01620b67620e1f0be1`.
+
+The existing every-n>=2 weighted-energy estimate is registered as completion of the PD-T227 premise. PD-T233 is a measured predecessor only, not a proof premise.
+
+[Claude audit-01](../audit-01.md) accepted the mathematical scope;
+[response-check-01](../response-check-01.md) accepted the record response.
+Earlier provisional/no-final-ID and pending-response-check wording above
+is retained as history and is superseded only administratively by this
+registration. Every pre-existing paragraph after the heading, including
+Statement, proof, status, displays and History, is preserved byte for byte.
+The [final-ID map](../preparation/final-id-map.json) and
+[registration notes](../preparation/registration-notes.md) record the mapping
+and preparation limits. PD-T099 remains OPEN; the global certified range
+remains exactly 2–32.

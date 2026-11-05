@@ -353,3 +353,30 @@ Permanent unused gaps: T382–391, N138–145, IDEA472–489.
 PD-T381 retains the OPEN sharp-growth target; separate PROVED PD-T379 is
 supporting one-sided bounds, not a proved target conjunct. Earlier result
 statuses and historical scopes remain intact. Only AC merges.
+
+## Effective Padua argmax phase2 — PR25 final assignment import, 2026-11-05
+
+Import unchanged owner reservation `codex/padua-argmax-effective-2-20261105`,
+first published `ce17564ea1c185fea0be109b8ebb38efe25bceec` in
+[PR25](https://github.com/aacchhee/padua_research/pull/25): T364–375(12),
+N132–137(6), IDEA454–465(12), LIT594–597(4). The earlier PR26 acknowledgment
+of these exact ranges remains historical; no second reservation is made.
+[Topic ledger](../padua-argmax-effective-2-20261105/ALLOCATIONS.md),
+[full-file union check](../padua-argmax-effective-2-20261105/preparation/reservation-check.md),
+[file-identity receipt](../padua-argmax-effective-2-20261105/preparation/reservation-scan.json),
+[final map](../padua-argmax-effective-2-20261105/preparation/final-id-map.json).
+
+Heads checked: main330fab835f43e5ba5b24e320c2d7e9647e6cbd60; open PR21
+3ed6c94246f21353350f82712b6628b39db6f65a, PR24
+3a179f68ecbed20dc7e15862da842ed6116aa375; own integration
+5821c3f130ec0b1e33ad1d01620b67620e1f0be1. All22 returned closed PRs are
+merged; no closed-unmerged reservation is missing. The immediate preassignment
+ref recheck matched. Union maxima T391/N145/IDEA489/LIT597 include PR26 and
+all older permanent gaps; no range overlap or accepted-ID renumbering.
+
+Assigned PD-T364–370: six PROVED analytic records and one MEASURED record;
+PD-N132: one PROVED scoped obstruction; IDEA454–461: all eight candidates.
+T01 registration is finite sufficiency only, T02 unregistered, no LIT assigned.
+Permanent unused gaps T371–375, N133–137, IDEA462–465, LIT594–597 remain
+unavailable forever. PD-T099 stays OPEN with global finite range exactly2–32.
+Only AC merges; preparation audit is pending and no merge order is inferred.

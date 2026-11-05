@@ -1,4 +1,4 @@
-# PD-T?argmax-effective-2-codex-01 — Exact common primitive and finite phase-cover reduction
+# PD-T364 (PD-T?argmax-effective-2-codex-01) — Exact common primitive and finite phase-cover reduction
 
 ID kind: PD-T.
 Aliases: A1 structural gate; endpoint-weighted reflection; common phase diamond; full versus projected defect.
@@ -230,3 +230,21 @@ review wording described first writing; audit-01 now accepts the original
 scope. Both original Statement paragraphs and the mathematical proof are
 unchanged. The orbit formula is a routine generalization of PD-T228 (3),
 not a new primitive identity or separately registrable dependency.
+
+## Registration — 2026-11-05
+
+Final ID: **PD-T364**. Preserved provisional alias: `PD-T?argmax-effective-2-codex-01`.
+Registration input/rules: `5821c3f130ec0b1e33ad1d01620b67620e1f0be1`.
+
+Only the finite phase-chart sufficiency reduction is registered. Inherited identities remain verification material and the orbit/profile formulas remain routine lemmas, with PD-T210 as the finite-cover predecessor.
+
+[Claude audit-01](../audit-01.md) accepted the mathematical scope;
+[response-check-01](../response-check-01.md) accepted the record response.
+Earlier provisional/no-final-ID and pending-response-check wording above
+is retained as history and is superseded only administratively by this
+registration. Every pre-existing paragraph after the heading, including
+Statement, proof, status, displays and History, is preserved byte for byte.
+The [final-ID map](../preparation/final-id-map.json) and
+[registration notes](../preparation/registration-notes.md) record the mapping
+and preparation limits. PD-T099 remains OPEN; the global certified range
+remains exactly 2–32.

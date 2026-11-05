@@ -112,3 +112,23 @@
 - Executed: an own Statement/display/status preservation script (8/8 Statements byte-identical, no display lost or added, statuses unchanged); the impact helper minus its local-artifact block (all other checks pass and match Codex's receipt); 52-row manifest verification; T08 transcription versus committed receipts (exact); git diff --check.
 - No mathematical re-audit needed. PD-T099 OPEN; global range 2–32. Stage: PR (Codex preparation).
 - Handoff 04 done in `d574603`; [handoff 05](handoffs/05-pr-preparation.md): Codex PR preparation.
+
+## 2026-11-05 — PR preparation start (handoff05)
+
+- Rules read unchanged at input `22e8540cf90278dad2eba3eb51f129ca10a9dd9e`. Claude response-check-01 ACCEPTED every F1–F12/E1–E8 disposition; no mathematical re-audit needed. Role: preparation orchestrator/developer, under AC's standing Astra-ultra allocation for classification/wording; parent serving metadata remains unexposed.
+- Initial fetch found mainaff30e8; the subsequent live all-PR scan and complete ref fetch found PR26 merged and mainadvanced to `330fab835f43e5ba5b24e320c2d7e9647e6cbd60`. Merged it without rewriting history as `5821c3f130ec0b1e33ad1d01620b67620e1f0be1`, with typed message and trailers. Rules unchanged. Preparation baseline export is an exact local archive of that integration head.
+- Plan before final assignment: mechanical Sol-medium union scan of every complete ledger/four registries at main and all open heads; only then authorize Astra-ultra registry/heading registration of the seven accepted PD-T records, one scoped negative and eight IDEA dispositions. Root owns crosswalk/ledger, CURRENT/PAPER_MAP, own RESULTS section, storage, manifest, Git and PR. Workers have disjoint writes and no Git mutation authority.
+- Live PR population: open21/24/25, all returned closed PRs merged. Foreign heads21=`3ed6c94246f21353350f82712b6628b39db6f65a`,24=`3a179f68ecbed20dc7e15862da842ed6116aa375`; own remote25=`22e8540cf90278dad2eba3eb51f129ca10a9dd9e`. Compact source population saved under preparation/.
+- No new scientific mechanism, claim, constant or execution. Novelty-generation gate does not apply to audited registration; retain all accepted predecessor/coverage/disposition limits. PD-T099 stays OPEN, finite global range exactly2–32. R1–R4 residual notes of response-check-01 bind this step; no final assignment before union confirmation.
+
+## 2026-11-05 — final assignment and shared import
+
+- Full reservation union PASS:49 complete copies,33 ledger copies/12 distinct ledger blobs,16 canonical registries, at main/PR21/PR24/own integration; maximaT391/N145/IDEA489/LIT597. Population3 open/22 closed-merged, no closed-unmerged. Immediate ls-remote recheck unchanged, then root authorized exact assignment inside original ranges.
+- Assigned PD-T364–370 (six PROVED, one MEASURED), PD-N132 (PROVED scoped a*b_n obstruction), IDEA454–461 (all eight dispositions). T02 stays unregistered CONDITIONAL gate evidence; no LIT. Permanent unused gaps T371–375/N133–137/IDEA462–465/LIT594–597. Every exact provisional alias remains in headings/map/crosswalk; no accepted ID or reservation renumbered.
+- Shared record integration applies accepted CURRENT/PAPER_MAP anchors to current main, appends only this topic's crosswalk/ledger/IDEA/status rows and own RESULTS section, and retains PD-T099 OPEN with2–32 global range and unresolved bridge. Preparation audit remains pending; no merge readiness or new scientific execution claimed.
+- R2 retention recheck:40 original files118,964,704bytes remain present and hash-identical in this Codex sandbox at the recorded UTC time; physical delivery/durable retention still unverified. R1/ R4 residual interpretation/fulltext and historical-review-pin limits remain unchanged.
+
+## 2026-11-05 — registered-source checkpoint
+
+- Supplementary Astra-medium preparation protocol core check PASS: exact accepted scopes/dispositions, all old rows/sections, theory body prefixes, normalized IDEA bodies and unrelated files preserved. The concrete RESULTS relative-path finding was fixed only in our new root section; canonical results links remain relative to results/. Current report changes are stage/registration metadata only. Final rehearsal/manifest review remains pending.
+- Added the root-operated disposable integration script with pinned current-main/foreign heads. Both open foreign drafts currently change no shared registry path; actual pair orders and two three-PR orders will still be exercised after this source checkpoint. No actual rehearsal result is claimed in this checkpoint.

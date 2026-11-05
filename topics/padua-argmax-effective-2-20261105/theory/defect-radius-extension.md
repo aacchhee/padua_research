@@ -1,4 +1,4 @@
-# PD-T?argmax-effective-2-codex-04 — Noncorner reflection defect through phase radius 1/10
+# PD-T366 (PD-T?argmax-effective-2-codex-04) — Noncorner reflection defect through phase radius 1/10
 
 ID kind: PD-T.
 Aliases: A2 radius enlargement; finite middle-line defect; rho 0.1 cancellation bound.
@@ -180,3 +180,21 @@ first-writing description above. The baseline improves from 1/16 to
 the later angle-ordering check and the horizontal row-count step explicit.
 These explain estimates already used in the accepted proof; no statement,
 proof step, constant or epistemic status is changed.
+
+## Registration — 2026-11-05
+
+Final ID: **PD-T366**. Preserved provisional alias: `PD-T?argmax-effective-2-codex-04`.
+Registration input/rules: `5821c3f130ec0b1e33ad1d01620b67620e1f0be1`.
+
+The quantitative PD-T224 variant is registered only for noncorner odd centers, n>=48 and phase radius at most 1/10, with defect at least 1/8192.
+
+[Claude audit-01](../audit-01.md) accepted the mathematical scope;
+[response-check-01](../response-check-01.md) accepted the record response.
+Earlier provisional/no-final-ID and pending-response-check wording above
+is retained as history and is superseded only administratively by this
+registration. Every pre-existing paragraph after the heading, including
+Statement, proof, status, displays and History, is preserved byte for byte.
+The [final-ID map](../preparation/final-id-map.json) and
+[registration notes](../preparation/registration-notes.md) record the mapping
+and preparation limits. PD-T099 remains OPEN; the global certified range
+remains exactly 2–32.

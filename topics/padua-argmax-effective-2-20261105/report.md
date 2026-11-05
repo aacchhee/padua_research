@@ -8,7 +8,8 @@ Mathematics used AC-requested Astra ultra; code/replays used Sol medium;
 a distinct Astra high agent supplied the mathematical supplement.
 Parent serving metadata is unexposed. Claude [audit-01](audit-01.md) ACCEPTS
 the mathematics at every stated scope. This response corrects records and
-attribution; its required Claude response check is pending.
+attribution; Claude [response-check-01](response-check-01.md) accepted them.
+Final registration is complete; the required Claude preparation audit is pending.
 
 ## Main result: H3 has an explicit physical n^-2 radius
 
@@ -134,9 +135,13 @@ submission or new literature-transfer claim is made.
 
 ## Protocol and storage limits
 
-Scientific registrations remain provisional; permanent reservation is in
+Final records are PD-T364–370, PD-N132 and IDEA454–461, with exact provisional
+aliases retained in [the final map](preparation/final-id-map.json). T02 stays
+unregistered and no LIT is assigned. The permanent reservation is in
 [ALLOCATIONS.md](ALLOCATIONS.md). [Literal shared-record proposals](proposed-record-changes.md)
-are not applied to merged state. Complete prospective-gate timing qualifications
+have been applied once at preparation, resolving local T06/T07 aliases to
+PD-T368/369 and preserving every unrelated row/section. The proposal file
+remains the historical accepted instruction, not a second requested write. Complete prospective-gate timing qualifications
 for the energy child and IDEA358 wrapper are explicitly retained in H3/H2 gate
 records for Claude's disposition (accepted as disclosed in audit-01). The H1 record-order
 and delegated-read qualifications are also retained; no retrospective full
@@ -154,9 +159,9 @@ old timing bytes and hardware-dependent CPU-capped frontiers are not guaranteed.
 ## 2026-11-05 response record and reproduction corrections
 
 T01's inherited identities are verification, with only the finite sufficiency
-reduction proposed for registration. T02 stays CONDITIONAL gate-A0 evidence and
+reduction registered as PD-T364. T02 stays CONDITIONAL gate-A0 evidence and
 will not be registered. The existing accepted finite measurements are collected
-in the proposed scoped MEASURED T08 record; no scientific field or scope is
+in the scoped MEASURED T08 record, now PD-T370; no scientific field or scope is
 expanded. Optional degree40 cross-check: not attempted in this phase2 campaign.
 
 The historical handoff02 body is immutable. Its missing required output flag
@@ -174,3 +179,23 @@ Python's -I flag. The structure_probe exact checks cover PD-T101's direct kernel
 expansion and reflection/multiset identities, including tested shifts ±π/4;
 they do not test the full-orbit or Q formulas, continuum cover lemma or sinc
 interval chart. Those require their separately documented proofs/checks.
+
+
+## Final registration / preparation audit — 2026-11-05
+
+[Final-ID map](preparation/final-id-map.json): PD-T364 finite sufficiency;
+PD-T365 boundary profile; PD-T366 wider noncorner defect; PD-T367 weighted
+energy; PD-T368 explicit constants for known norm order; PD-T369 all-degree
+local radius; PD-T370 existing MEASURED diagnostics; PD-N132 scoped leading-only
+obstruction; IDEA454–461 all eight dispositions. T02 unregistered, no LIT.
+Statements, proofs, constants and statuses retain the accepted scopes; theory
+changes are title/alias and dated registration metadata only. Historical audit
+and response reports keep their original reviewed byte hashes.
+
+The fresh reservation union, actual integration rehearsal and final verification
+are recorded under preparation/. PR25 stays draft until Claude Opus5.5 high
+preparation audit accepts. The broader A0 interpretation, physical cold-storage
+delivery and external fulltext priority for T06/T03 remain separate AC decision
+or coverage items. No mathematical campaign or new run is assigned by this
+preparation. After merge these registrations are completed historical work;
+remaining practical H1/full-diamond H2 requires a later topic. Only AC merges.

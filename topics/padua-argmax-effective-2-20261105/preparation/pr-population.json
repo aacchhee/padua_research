@@ -1,0 +1,233 @@
+{
+  "format": "padua-pr-population-v1",
+  "observed_date": "2026-11-05",
+  "source": "live GitHub connector all-state search, topn100",
+  "issues": [
+    {
+      "number": 26,
+      "state": "closed",
+      "merged": true,
+      "draft": false,
+      "head": "codex/padua-mz-cleanup-20261105",
+      "head_sha": "ca341df3cc2965d11c017da6d9cb05ce9f8b6002",
+      "url": "https://github.com/aacchhee/padua_research/pull/26"
+    },
+    {
+      "number": 25,
+      "state": "open",
+      "merged": false,
+      "draft": true,
+      "head": "codex/padua-argmax-effective-2-20261105",
+      "head_sha": "22e8540cf90278dad2eba3eb51f129ca10a9dd9e",
+      "url": "https://github.com/aacchhee/padua_research/pull/25"
+    },
+    {
+      "number": 24,
+      "state": "open",
+      "merged": false,
+      "draft": true,
+      "head": "codex/padua-lanczos-frontier-20261105",
+      "head_sha": "3a179f68ecbed20dc7e15862da842ed6116aa375",
+      "url": "https://github.com/aacchhee/padua_research/pull/24"
+    },
+    {
+      "number": 23,
+      "state": "closed",
+      "merged": true,
+      "draft": false,
+      "head": "codex/padua-mz-2d-frontier-20261105",
+      "head_sha": "4278b7e5eecc0bdb3eb3bce1f386520b2b3a63c6",
+      "url": "https://github.com/aacchhee/padua_research/pull/23"
+    },
+    {
+      "number": 22,
+      "state": "closed",
+      "merged": true,
+      "draft": false,
+      "head": "codex/nn-mop-iep-20261103",
+      "head_sha": "905ea46a7f6a537a23a8dfc0c4d769e7afeb376c",
+      "url": "https://github.com/aacchhee/padua_research/pull/22"
+    },
+    {
+      "number": 21,
+      "state": "open",
+      "merged": false,
+      "draft": true,
+      "head": "claude/padua-literature-20261103",
+      "head_sha": "3ed6c94246f21353350f82712b6628b39db6f65a",
+      "url": "https://github.com/aacchhee/padua_research/pull/21"
+    },
+    {
+      "number": 20,
+      "state": "closed",
+      "merged": true,
+      "draft": false,
+      "head": "codex/padua-lebesgue-followups-20261103",
+      "head_sha": "aeb1ff8fad5fee00f69ebd6b2513b1001007e2d6",
+      "url": "https://github.com/aacchhee/padua_research/pull/20"
+    },
+    {
+      "number": 19,
+      "state": "closed",
+      "merged": true,
+      "draft": false,
+      "head": "codex/padua-argmax-effective-20261103",
+      "head_sha": "d49ab6a8c1e70c93cddf82eb7187f38118fd30a2",
+      "url": "https://github.com/aacchhee/padua_research/pull/19"
+    },
+    {
+      "number": 18,
+      "state": "closed",
+      "merged": true,
+      "draft": false,
+      "head": "claude/cold-storage-20261102",
+      "head_sha": "367c3167199bb3599e96c161136dfbdb72acb57b",
+      "url": "https://github.com/aacchhee/padua_research/pull/18"
+    },
+    {
+      "number": 17,
+      "state": "closed",
+      "merged": true,
+      "draft": false,
+      "head": "claude/padua-argmax-alln-20261101",
+      "head_sha": "ad6e3ff5339fbea4ec99b5d5ac13e7a8d559bf3f",
+      "url": "https://github.com/aacchhee/padua_research/pull/17"
+    },
+    {
+      "number": 16,
+      "state": "closed",
+      "merged": true,
+      "draft": false,
+      "head": "claude/results-in-repo-20261101",
+      "head_sha": "060d29b7b0d4ef2dcd8d95b6a2ff942e11d79ba3",
+      "url": "https://github.com/aacchhee/padua_research/pull/16"
+    },
+    {
+      "number": 15,
+      "state": "closed",
+      "merged": true,
+      "draft": false,
+      "head": "codex/padua-lanczos-drift-20261101",
+      "head_sha": "c714c80a35ccaf9e0f7df6b96bc840eba8bd83b1",
+      "url": "https://github.com/aacchhee/padua_research/pull/15"
+    },
+    {
+      "number": 14,
+      "state": "closed",
+      "merged": true,
+      "draft": false,
+      "head": "codex/padua-mz-2d-20261101",
+      "head_sha": "635ba4fd537be9a4dbc060617fbc0535db4d72ad",
+      "url": "https://github.com/aacchhee/padua_research/pull/14"
+    },
+    {
+      "number": 13,
+      "state": "closed",
+      "merged": true,
+      "draft": false,
+      "head": "claude/handoff-id-rules-20261101",
+      "head_sha": "7ce4c36fb1494fee2dd3bdc1bf39fc241c5b9e21",
+      "url": "https://github.com/aacchhee/padua_research/pull/13"
+    },
+    {
+      "number": 10,
+      "state": "closed",
+      "merged": true,
+      "draft": false,
+      "head": "claude/bivariate-lanczos-20261031",
+      "head_sha": "9fa30122fec9796ca718af210a2a13c7525038a2",
+      "url": "https://github.com/aacchhee/padua_research/pull/10"
+    },
+    {
+      "number": 9,
+      "state": "closed",
+      "merged": true,
+      "draft": false,
+      "head": "codex/padua-proof-attempts-20261101",
+      "head_sha": "752ba068589683afe644b505d673f8da1529cbf0",
+      "url": "https://github.com/aacchhee/padua_research/pull/9"
+    },
+    {
+      "number": 8,
+      "state": "closed",
+      "merged": true,
+      "draft": false,
+      "head": "claude/results-track-rule-20261101",
+      "head_sha": "6eeec5b3a3d48c4bde198d9cc6c170dd92674bdb",
+      "url": "https://github.com/aacchhee/padua_research/pull/8"
+    },
+    {
+      "number": 12,
+      "state": "closed",
+      "merged": true,
+      "draft": false,
+      "head": "codex/padua-proof-attempts-2-20261101",
+      "head_sha": "c1325c6da7ef2fb2c20760c3e020280eba1e5126",
+      "url": "https://github.com/aacchhee/padua_research/pull/12"
+    },
+    {
+      "number": 11,
+      "state": "closed",
+      "merged": true,
+      "draft": false,
+      "head": "claude/mz-prior-art-20261101",
+      "head_sha": "1406ef74a76d9160324596447a831470b93c398b",
+      "url": "https://github.com/aacchhee/padua_research/pull/11"
+    },
+    {
+      "number": 6,
+      "state": "closed",
+      "merged": true,
+      "draft": false,
+      "head": "claude/programme-ideas-20261031",
+      "head_sha": "b46b4dea18ce2c933489a211b0b6819dfd32ca70",
+      "url": "https://github.com/aacchhee/padua_research/pull/6"
+    },
+    {
+      "number": 5,
+      "state": "closed",
+      "merged": true,
+      "draft": false,
+      "head": "codex/mz-postmerge-frontier-20261031",
+      "head_sha": "da679224b50d2210689c92e5a69d5a4d181afe3c",
+      "url": "https://github.com/aacchhee/padua_research/pull/5"
+    },
+    {
+      "number": 4,
+      "state": "closed",
+      "merged": true,
+      "draft": false,
+      "head": "codex/lattice-unisolvence-20261031",
+      "head_sha": "a4331a13301ee4a9905c8204c26bff5f9fdf246e",
+      "url": "https://github.com/aacchhee/padua_research/pull/4"
+    },
+    {
+      "number": 3,
+      "state": "closed",
+      "merged": true,
+      "draft": false,
+      "head": "codex/mz-constants-20261031",
+      "head_sha": "8ee04f4e5db46dd25fe5752ce605dde27098aae6",
+      "url": "https://github.com/aacchhee/padua_research/pull/3"
+    },
+    {
+      "number": 2,
+      "state": "closed",
+      "merged": true,
+      "draft": false,
+      "head": "codex/charter-unisolvence-20261031",
+      "head_sha": "317a26597dedc9adc9cfc6a26fa00078df7d29e4",
+      "url": "https://github.com/aacchhee/padua_research/pull/2"
+    },
+    {
+      "number": 1,
+      "state": "closed",
+      "merged": true,
+      "draft": false,
+      "head": "codex/initialize-padua",
+      "head_sha": "5a5f09f9768f4c2b28a82eb85ed5be8bd3c797e5",
+      "url": "https://github.com/aacchhee/padua_research/pull/1"
+    }
+  ],
+  "closed_unmerged": []
+}

@@ -1,0 +1,180 @@
+{
+  "source_head": "5821c3f130ec0b1e33ad1d01620b67620e1f0be1",
+  "date": "2026-11-05",
+  "allocation_check": "preparation/reservation-scan.json",
+  "allocation_review": "preparation/reservation-check.md",
+  "authority": "Root authorized assignment after fresh complete reservation union PASS and immediate unchanged-head recheck; reserved ranges remain unchanged.",
+  "records": [
+    {
+      "provisional": "PD-T?argmax-effective-2-codex-01",
+      "final": "PD-T364",
+      "path": "theory/phase-structure.md",
+      "status": "PROVED",
+      "scope": "Only the finite phase-chart sufficiency reduction is registered. Inherited identities remain verification material and the orbit/profile formulas remain routine lemmas, with PD-T210 as the finite-cover predecessor.",
+      "baseline_sha256": "8831c3881f9ee183940f222d2969185c3aec0364fe51c53af0fc2951b79a2ec8",
+      "registered_sha256": "378548a0635206c8e61111c8ddb24b51f4b7ef1bf3cb16640da16dcf94a9e718",
+      "preserved_body_sha256": "9c60dc82fe11732d5d969c4ceb6043ffb51ba15d4d48eb25c9fe73f3a5bd99c8"
+    },
+    {
+      "provisional": "PD-T?argmax-effective-2-codex-03",
+      "final": "PD-T365",
+      "path": "theory/profile-boundary-cotangent.md",
+      "status": "PROVED",
+      "scope": "The exact diamond-boundary primitive and its existing uniform remainder are registered at the written boundary-only scope; the full-diamond H2 target remains OPEN.",
+      "baseline_sha256": "ff6f2567e7d61c5b11b0cc0e8abff735888b15cb2e883d696da922448325463e",
+      "registered_sha256": "045ffa224dbaef9a37db4f30f6773419f804dc55b553fd0efc37f660e9992f42",
+      "preserved_body_sha256": "5e1824be51565a8de87b9161a716679f32445e89bbed5deb959d3002de51b551"
+    },
+    {
+      "provisional": "PD-T?argmax-effective-2-codex-04",
+      "final": "PD-T366",
+      "path": "theory/defect-radius-extension.md",
+      "status": "PROVED",
+      "scope": "The quantitative PD-T224 variant is registered only for noncorner odd centers, n>=48 and phase radius at most 1/10, with defect at least 1/8192.",
+      "baseline_sha256": "43b87299de898a95670860f6fd6eda8648d24ed0d35bda36920cada7ad856a8b",
+      "registered_sha256": "243077d9af371f8b19c1e28b9872e44900d73daafe4d509a0d6a5a3815403d97",
+      "preserved_body_sha256": "790cc6a231f83e82ec8a82f780da71d02b5ca76c9c516a886e857d473a08fa76"
+    },
+    {
+      "provisional": "PD-T?argmax-effective-2-codex-05",
+      "final": "PD-T367",
+      "path": "theory/corner-weighted-energy.md",
+      "status": "PROVED",
+      "scope": "The existing every-n>=2 weighted-energy estimate is registered as completion of the PD-T227 premise. PD-T233 is a measured predecessor only, not a proof premise.",
+      "baseline_sha256": "2392930a813bbe3f17e6f72efc0741e82bc5932d8d6366d41ff685d6f3baffdc",
+      "registered_sha256": "b704c22eef1b4eb103142ed8deea6aeb25a0aed13158a7176cf0c6538f52a4a6",
+      "preserved_body_sha256": "8282ec1c0e5245cacd9473c497333412f044e7edddf690c23504b91ff40c2f29"
+    },
+    {
+      "provisional": "PD-T?argmax-effective-2-codex-06",
+      "final": "PD-T368",
+      "path": "theory/corner-global-norm-ratio.md",
+      "status": "PROVED",
+      "scope": "The explicit-constant re-derivation and all-degree norm ratio are registered. The O(log^2 n) order is known through LIT-312/LIT-379; no first-explicit-constant or priority claim is made, and external fulltext comparison remains pending.",
+      "baseline_sha256": "42bc229f5ab6e5113a4e8367396608e7827fe4c12e8ecf2a9152f6238fd72b4d",
+      "registered_sha256": "59030239728c51ac9c4cdcb39998277f4b42dd3ad02f0f1bbe71223ae6d243dc",
+      "preserved_body_sha256": "266f91b01a631da5a1af01e89f13f27cbf63dbeae30cf90812150bbf3b9131f7"
+    },
+    {
+      "provisional": "PD-T?argmax-effective-2-codex-07",
+      "final": "PD-T369",
+      "path": "theory/corner-n2-local-radius.md",
+      "status": "PROVED",
+      "scope": "The explicit every-n>=2 instantiation of PD-T227 Scope (8) is registered, with its loss bound confined to radius 10^-11/n^2. PD-T228 already gives an eventual n^-2 radius; combining strict-descent domains with PD-T251 does not extend either loss estimate.",
+      "baseline_sha256": "f84e0b98d85fb434f6670bd071a9f74f1b8671a83246de6664537cb42e2e06e2",
+      "registered_sha256": "fc358b11db799b272a89f8910797ffdf2fb03309161ae2cdfc5a4dfb24aeb045",
+      "preserved_body_sha256": "f9201e6efc460467335b039693d483eea14fe78919df8f967a6d015b63a0ee63"
+    },
+    {
+      "provisional": "PD-T?argmax-effective-2-codex-08",
+      "final": "PD-T370",
+      "path": "theory/phase2-measurements.md",
+      "status": "MEASURED",
+      "scope": "Only the already accepted finite phase/projection observations and INCOMPLETE capped-box pilot are registered. This supplies no continuous bound, new certified degree, A1 pass/kill, inferred global constant or analytic proof dependency.",
+      "baseline_sha256": "896104aabfb352065928cbcd6f6c00c21d9cf72bf661d8b89c91b47461f36300",
+      "registered_sha256": "1ab379a5d1aa06ea350c2bd54ff770a4c5cf99a08094ee9e7dccd7f6a38079df",
+      "preserved_body_sha256": "5a7dd1d326278ef57881fb129a6c96c763a74db988d2857553114202b8b38426"
+    },
+    {
+      "provisional": "PD-N?argmax-effective-2-codex-01",
+      "final": "PD-N132",
+      "path": "theory/profile-leading-only-obstruction.md",
+      "status": "PROVED",
+      "scope": "The negative statement is PROVED; IDEA-456 is REJECTED: refuted only for the specified leading-factor-only a*b_n vanishing-remainder form. Neither PD-T099 nor the full H2 target is refuted.",
+      "baseline_sha256": "65f61251665de98a3a36f6ff1c691086249aef963a9e07995cf535e7e64b3445",
+      "registered_sha256": "5cf554b0a787c436bf510f57ddf0c47a892a0c7e8c2a36e5a286ffbf764faf96",
+      "preserved_body_sha256": "62190154490ae7c0d1c679af5e866fb61d9368249d06df658e9627fa07357d70"
+    }
+  ],
+  "ideas": [
+    {
+      "provisional": "IDEA?argmax-effective-2-codex-01",
+      "final": "IDEA-454",
+      "path": "ideas/H1.md",
+      "disposition": "retained; certifier OPEN"
+    },
+    {
+      "provisional": "IDEA?argmax-effective-2-codex-02",
+      "final": "IDEA-455",
+      "path": "ideas/H2-H3.md",
+      "disposition": "retained boundary theorem"
+    },
+    {
+      "provisional": "IDEA?argmax-effective-2-codex-03",
+      "final": "IDEA-456",
+      "path": "ideas/H2-H3.md",
+      "disposition": "REJECTED: refuted; leading-factor-only a*b_n form"
+    },
+    {
+      "provisional": "IDEA?argmax-effective-2-codex-04",
+      "final": "IDEA-457",
+      "path": "ideas/H2-H3.md",
+      "disposition": "retained continuation of IDEA-330/PD-T227"
+    },
+    {
+      "provisional": "IDEA?argmax-effective-2-codex-05",
+      "final": "IDEA-458",
+      "path": "ideas/H1.md",
+      "disposition": "retained quantitative variant of IDEA-328/PD-T224"
+    },
+    {
+      "provisional": "IDEA?argmax-effective-2-codex-06",
+      "final": "IDEA-459",
+      "path": "ideas/H2-H3.md",
+      "disposition": "deferred; target OPEN"
+    },
+    {
+      "provisional": "IDEA?argmax-effective-2-codex-07",
+      "final": "IDEA-460",
+      "path": "ideas/H2-H3.md",
+      "disposition": "equivalent to PD-T227 (6)-(7)"
+    },
+    {
+      "provisional": "IDEA?argmax-effective-2-codex-08",
+      "final": "IDEA-461",
+      "path": "ideas/H2-H3.md",
+      "disposition": "deferred; cell-integral envelope route"
+    }
+  ],
+  "aliases": {
+    "PD-T?argmax-effective-2-codex-01": "PD-T364",
+    "PD-T?argmax-effective-2-codex-03": "PD-T365",
+    "PD-T?argmax-effective-2-codex-04": "PD-T366",
+    "PD-T?argmax-effective-2-codex-05": "PD-T367",
+    "PD-T?argmax-effective-2-codex-06": "PD-T368",
+    "PD-T?argmax-effective-2-codex-07": "PD-T369",
+    "PD-T?argmax-effective-2-codex-08": "PD-T370",
+    "PD-N?argmax-effective-2-codex-01": "PD-N132",
+    "IDEA?argmax-effective-2-codex-01": "IDEA-454",
+    "IDEA?argmax-effective-2-codex-02": "IDEA-455",
+    "IDEA?argmax-effective-2-codex-03": "IDEA-456",
+    "IDEA?argmax-effective-2-codex-04": "IDEA-457",
+    "IDEA?argmax-effective-2-codex-05": "IDEA-458",
+    "IDEA?argmax-effective-2-codex-06": "IDEA-459",
+    "IDEA?argmax-effective-2-codex-07": "IDEA-460",
+    "IDEA?argmax-effective-2-codex-08": "IDEA-461"
+  },
+  "unregistered": [
+    {
+      "provisional": "PD-T?argmax-effective-2-codex-02",
+      "path": "theory/localization-diagnosis.md",
+      "status": "CONDITIONAL",
+      "reason": "Local A0 evidence only; no final ID."
+    }
+  ],
+  "existing_target": {
+    "PD-T099": "OPEN; only a dated progress note; global certified range exactly 2–32; bridge 33<=n<N_* unresolved."
+  },
+  "unused_permanent_gaps": {
+    "PD-T": "PD-T371–PD-T375",
+    "PD-N": "PD-N133–PD-N137",
+    "IDEA": "IDEA-462–IDEA-465",
+    "LIT": "LIT-594–LIT-597"
+  },
+  "counts": {
+    "PD-T": 7,
+    "PD-N": 1,
+    "IDEA": 8,
+    "LIT": 0
+  }
+}

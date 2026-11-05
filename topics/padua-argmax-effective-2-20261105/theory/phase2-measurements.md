@@ -1,4 +1,4 @@
-# PD-T?argmax-effective-2-codex-08 — Finite phase, projection and capped-box measurements
+# PD-T370 (PD-T?argmax-effective-2-codex-08) — Finite phase, projection and capped-box measurements
 
 ID kind: PD-T (provisional T08; registration proposed, no final ID assigned).
 Aliases: phase-2 finite diagnostics; A1 capped pilot; A2 all-center projection samples.
@@ -182,3 +182,21 @@ Created for audit-01 F6 from the three already accepted MEASURED records.
 No new statement beyond those finite observations, proof step, constant,
 scientific status, code, evidence payload or execution was introduced.
 Final registration is proposed only in `../proposed-record-changes.md`.
+
+## Registration — 2026-11-05
+
+Final ID: **PD-T370**. Preserved provisional alias: `PD-T?argmax-effective-2-codex-08`.
+Registration input/rules: `5821c3f130ec0b1e33ad1d01620b67620e1f0be1`.
+
+Only the already accepted finite phase/projection observations and INCOMPLETE capped-box pilot are registered. This supplies no continuous bound, new certified degree, A1 pass/kill, inferred global constant or analytic proof dependency.
+
+[Claude audit-01](../audit-01.md) accepted the mathematical scope;
+[response-check-01](../response-check-01.md) accepted the record response.
+Earlier provisional/no-final-ID and pending-response-check wording above
+is retained as history and is superseded only administratively by this
+registration. Every pre-existing paragraph after the heading, including
+Statement, proof, status, displays and History, is preserved byte for byte.
+The [final-ID map](../preparation/final-id-map.json) and
+[registration notes](../preparation/registration-notes.md) record the mapping
+and preparation limits. PD-T099 remains OPEN; the global certified range
+remains exactly 2–32.
