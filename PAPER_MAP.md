@@ -110,3 +110,18 @@ after merge, the scoped results and mathematical gaps above replace preparation
 as the frontier. External cold-storage delivery remains pending and nonblocking;
 no accepted claim requires retained bulk because the checker regenerates exact
 pencils. Only AC merges.
+
+## NN MOP IEP — PR22 exact note and deferred numerical question
+
+| Brief | Scope and supporting results | Remaining gaps | Publication / review limits |
+|---|---|---|---|
+| [NN MOP report](topics/nn-mop-iep-20261103/report.md) | Standard finite moment formulation PD-T286; nonzero interior differences PD-T288; complete marginal reconstruction PD-T289; finite checks PD-T287 and literal dictionary counterexamples PD-N100; bounded C4 pilot PD-T290 | Stable coupled NN updating and error-source decomposition remain OPEN/deferred; no C3 comparator exists; N32 references rely on precision convergence | Known exact algebra; no new updater, priority claim, manuscript or submission. Claude audit-02 accepted science; preparation protocol check follows separately. |
+
+The marginal route uses only marginal Jacobi data; the shifted step-line route
+requires a recursive family of shifts and boundary information. Terminal b1=b2
+is a final condition and does not obstruct the in-domain recursion. Shared
+spectral eigenvalue x is the distinction from two coordinate multiplications;
+no universal impossibility of lifted encodings is claimed. The earlier
+provisional negative classification is withdrawn, with its text and split
+history retained. After merge these scoped results and deferred questions
+replace the completed gate/registration tasks; only AC merges.
