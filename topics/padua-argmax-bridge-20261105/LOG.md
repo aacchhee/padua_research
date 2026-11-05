@@ -27,6 +27,21 @@
   - sandbox limits approved;
   - Syvert pre-approved up to about 20 cores × 7 days under the B4 condition, launched by AC.
 
+## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — Syvert pack structure
+
+- AC: "If you go for building Syvert packs, check latest bttb Syvert campaigns and use same structure, do not overengineer", then "A B C rounds had especially nice structure".
+- Claude read the private bttb A/B/C campaign pack (and the later GMRF2D and offline C+D packs) and added a "Syvert run pack" section to handoff 01 in its own words. Nothing from the private repository was copied.
+- The structure:
+  - one fresh directory and deterministic ZIP per campaign, with a host/workers/limits table;
+  - `plans.py` with a frozen job list;
+  - `build_pack.py` with a manifest;
+  - `run`, `finished_cases` and `collect_data` through `beregning`, with `--workers`, `--resume` and `--retry-interrupted`;
+  - typed failures;
+  - a sandbox calibration ladder, freezing against the budget, and a guard of twice the longest job;
+  - an offline bundled runtime with a preflight against PD-T246;
+  - the returned ZIP checked independently before any degree counts.
+- Codex had not started; the handoff was amended in place.
+
 ## Runs needed
 
 - B0–B6 and N1–N6 as in handoff 01.

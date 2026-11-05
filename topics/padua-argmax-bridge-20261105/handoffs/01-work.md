@@ -170,7 +170,7 @@ If a criterion proves ill-posed, record why and add a new criterion as a separat
   - If the projected n₁ is within the range N3 can certify in about 48 h of sandbox CPU, proceed.
   - If it needs more than the sandbox but at most about **20 cores × 7 days**, it is pre-approved on Syvert (AC, 2026-11-05: "Syvert has approx same power, no problem to run 20 cores for a week there if that would meet the analytic N").
     - The condition is that the projection shows that compute would meet the proved (or nearly proved) n₁.
-    - Codex has no access to Syvert. Prepare a self-contained run package: scripts, build commands, argv per degree block, expected outputs and checker commands, and a projected time per block.
+    - Codex has no access to Syvert. Prepare the run pack exactly as in "Syvert run pack" below.
     - Ask AC in the chat to launch it. AC returns the outputs, or stages them to cold storage, for the independent checker.
     - Anything beyond 20 cores × 7 days, or used for another purpose, needs a separate ask.
   - If it is beyond any plausible compute, record the gap and put effort into sharpening r(n).
@@ -178,6 +178,44 @@ If a criterion proves ill-posed, record why and add a new criterion as a separat
   - **Pass:** a structured class of M(x) is feasible at all critical x for every tested n.
   - **Kill:** infeasibility at a certified x for some n, for the unrestricted class. That kills N4 entirely and is recorded as a scoped PD-N.
 - **B6, counterexample.** Any box where a predicate fails beyond its error bound is re-examined exactly. A confirmed non-corner point with λ_n ≥ Λ_c is a scoped PD-N disproving PD-T099 at that n.
+
+## Syvert run pack (only when gate B4 calls for it)
+
+AC (2026-11-05): "If you go for building Syvert packs, check latest bttb Syvert campaigns and use same structure, do not overengineer", and "A B C rounds had especially nice structure". The bttb repository is private: do not copy its text here. Its A/B/C campaign structure is described below in Claude's words. Follow it, and add nothing it does not have.
+
+- **One pack is one campaign.**
+  - Each pack is a fresh directory plus a deterministic ZIP: fixed timestamps, so a rebuild reproduces the same bytes.
+  - Never unpack it over an older run, and never reuse an output directory.
+  - The README has one table row per campaign: campaign, intended host (AC chooses among syvert0/1/2), workers, per-worker address-space limit and supervisor limit.
+  - Split by degree block, for example A = n 33–64 and B = n 65–128, with the sum within about 20 cores × 7 days.
+- **Files, all in the topic's `syvert/` folder:**
+  - `README.md`: the table, commands, scope, and expected time and memory, labelled as estimates;
+  - `plans.py`: the frozen job list. One job is one degree n (or one degree block) with its literal argv. Schedule the longest estimate first;
+  - `test_plans.py`;
+  - `build_pack.py`: copies the committed closure and the bundled runtime, and writes `runtime_manifest.json` with the SHA-256 of every file and the source commit. Build only from committed code; an uncommitted build is a smoke test, not evidence;
+  - the launchers `run`, `finished_cases` and `collect_data`, plus `server.py`, which implements them.
+- **`run`.**
+  - Launch through `beregning`, falling back to `module load beregning`. Accept either an executable or a shell function.
+  - Verify the manifest and record host context (hostname, lscpu, memory, affinity, OS, runtime versions).
+  - Run a preflight and a tiny smoke test, then the jobs, each in a fresh process with its resource limit.
+  - Options: `--workers k`, `--resume` (keep completed jobs and run the missing ones in their original order) and `--retry-interrupted`. A `run_small`/`run_large` split is optional.
+  - `beregning` owns queueing and CPU allocation. Add no global queue, idle-core probe, aggregate deadline or cross-campaign lock.
+- **Outcomes and outputs.** A timeout, memory error or kill is a typed outcome, not a crash. Raw outputs are immutable once written.
+- **`finished_cases`** prints total / running / finished / pending / outcomes, then one row per job.
+- **`collect_data`** writes one ZIP named with the actual hostname, the campaign and a UTC timestamp. It holds raw outputs, logs, context and the listing.
+- **Calibration before freezing.**
+  - Run a small sandbox ladder (for example three degrees, each capped at 180 s) and write a reviewed `calibration.json`: measured times and the extrapolation rationale per job.
+  - Freezing checks total CPU and the longest job against the budget.
+  - Set one guard timeout to twice the longest expected job. It is runaway protection, not a budget.
+  - List excluded jobs explicitly.
+- **Runtime.**
+  - Assume syvert0 has no internet and no pip (Ubuntu 24.04, CPython 3.12). Treat the other hosts the same unless AC says otherwise.
+  - Bundle the compiled certifier and its libraries (GMP/MPFR/FLINT/Arb) under `runtime/`. Build them in the sandbox against a compatible glibc, or statically.
+  - The preflight reruns the bundled binary at a small certified degree (for example n = 17) and compares it with the committed PD-T246 receipt before any job starts.
+- **Return.**
+  - AC returns the `collect_data` ZIP; it goes to cold storage.
+  - Commit its manifest and the **independent checker's** output: Codex runs the checker on the returned certificates, on its own arithmetic path.
+  - No certified degree counts until that is committed.
 
 ## Read first
 
