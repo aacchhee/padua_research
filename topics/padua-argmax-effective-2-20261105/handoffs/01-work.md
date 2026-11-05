@@ -1,6 +1,6 @@
 # Handoff 01 — padua-argmax-effective-2-20261105 — effective all-degree Padua argmax, phase 2
 
-- Status: open
+- Status: done in 352daad8c164617331c34ae81a7ce7331f501bb9
 - Previous handoff: none (new topic; phase 1 is `topics/padua-argmax-effective-20261103/`, merged as PR #19)
 
 - Next agent / model / effort: Codex. Use **gpt-6-astra at ultra** for the orchestrator and all mathematics. This continues AC's instruction for this problem (2026-11-03: "This looks like a topic that warrants astra with ultra reasoning"), which overrides the WORKFLOW allocation table for this campaign; record that justification in LOG. Use gpt-6.1-sol medium for code, ports, timing and replays, and a separate gpt-6-astra high instance for supplementary independent checks.
