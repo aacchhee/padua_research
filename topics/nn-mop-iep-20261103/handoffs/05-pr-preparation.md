@@ -1,6 +1,6 @@
 # Handoff 05 — NN MOP IEP — PR preparation after audit-02 acceptance
 
-- Status: open
+- Status: done in 7881e1cf771a70cad94b835c0580c2e3d4f94ece
 - Previous handoff: 04-reaudit.md
 - Next agent / model / effort: Codex, gpt-6.1-sol, medium (mechanical and registry preparation). Use gpt-6-astra medium for a supplementary integration check if wanted.
 - Role: orchestrator (PR preparation).
