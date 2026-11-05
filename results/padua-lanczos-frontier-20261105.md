@@ -1,10 +1,13 @@
-# padua-lanczos-frontier-20261105 — finite scalar separation
+# padua-lanczos-frontier-20261105 — aggregate separation and closure certificates
 
 [Draft PR24](https://github.com/aacchhee/padua_research/pull/24). Stage WORK; canonical registries/final IDs unchanged, required Claude audit pending.
 
 - **PROVED, computer-assisted:** rotQ24 degree12 full formal scalar-CGS2 comparison, all90 sources: `K_BJ² >= 2041704913997 > 100 * 13462956266 >= 100 K_alt²`. Thus the factor-ten target holds. [Theory](../topics/padua-lanczos-frontier-20261105/theory/l4-envelope-bound.md), [fixed rational readout](../topics/padua-lanczos-frontier-20261105/evidence/l4-readout-certificate.json), [independent execution/checks](../topics/padua-lanczos-frontier-20261105/independent-checks-l4.md). Same inherited error-sign witness, stronger full-output readout; no IEEE/all-degree claim.
 - **PROVED, scoped route obstruction:** the same absolute envelope cannot prove factor ten with the fixed old BJ lower. [Negative record](../topics/padua-lanczos-frontier-20261105/theory/l4-N01-fixed-lower-envelope-obstruction.md). The stronger lower escapes it; the true capacity target is not rejected.
 - **G0 RESOLVED:** independently checked arithmetic-sensitivity explanation, preserving original FAIL and missing historical trajectory. [Disposition](../topics/padua-lanczos-frontier-20261105/g0-disposition-02.md).
-- Original PD-T140 experiment remains INCONCLUSIVE/MEASURED. G1–G4 and L1–L3/L5–L7 scientific work remain open/unrun as scoped in [report](../topics/padua-lanczos-frontier-20261105/report.md). Relevant L1/L2 and L3/L4 source gates are complete; earlier prospective timing deviation remains for Claude disposition.
+- **PROVED, analytic:** all-degree BJ/mirror aggregate-source span separation on the saved positive weighted SH_n family, with exponential BJ lower and polynomial mirror upper. [Theory](../topics/padua-lanczos-frontier-20261105/theory/l1-01-sheared-U-aggregate-separation.md), [independent adversarial check](../topics/padua-lanczos-frontier-20261105/independent-checks-sh.md). No scalar-operation or IEEE conclusion.
+- **PROVED finite reduction; G2 W/R PASS:** smooth exact-base rule invariance and actual X-closure derivative; exact fixed certificates independently regenerated on T24 and rotQ24. [Reduction](../topics/padua-lanczos-frontier-20261105/theory/l2-smooth-rule-closure-reduction.md), [evidence](../topics/padua-lanczos-frontier-20261105/independent-checks-l1-l2.md). Original working-precision PD-T055 stays OPEN.
+- **G1 INCOMPLETE:**122/152 producer rows,120 independently matched; all T24 degrees2–20 complete. Four native rotated20 cases hit1800s caps. No fits or G1 verdict.
+- Original PD-T140 experiment remains INCONCLUSIVE/MEASURED. L3/L5/L6 and L7/G3/G4 remain open/unrun as scoped in [report](../topics/padua-lanczos-frontier-20261105/report.md). Relevant L1/L2 and L3/L4 source gates are complete; earlier prospective timing deviation remains for Claude disposition.
 
-Next: continue the all-degree/well-posedness and other frontier obligations. Large raw arrays stay off Git; archival delivery pending.
+Next: finish the scoped L2 extension and design the next bounded G1 implementation round; continue the remaining frontier obligations. Large raw arrays stay off Git; archival delivery pending.

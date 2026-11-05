@@ -1,0 +1,190 @@
+{
+  "status": "INCOMPLETE bounded native round; no RotQ13\u201320 endpoint claim",
+  "date_utc": "2026-11-05T14:29:08.182350+00:00",
+  "rules_sha": "0e493be7f9883e00e6260cf6b081c607a230177f",
+  "implementation": "independent C++ GMP mpq_class; no producer imports",
+  "native_code_sha256": "0d8aed21b9ee3c6c4ef6899fd429ac55b2d200a439cce38ea71ad2448cc1fc77",
+  "executed_harness_sha256": "388c70c0d3af25f33d67c967a5bcf94e45ee6060412be45c4a5430048a9451ae",
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "GMP_package_version": "2:6.3.0+dfsg-3 (Debian libgmp10 and libgmp-dev)",
+  "command": [
+    "topics/padua-lanczos-frontier-20261105/code/g1_independent_run.py",
+    "--old",
+    "/tmp/padua-lanczos-frontier-g1/inputs/e1-full-sweep.json",
+    "--out",
+    "/tmp/padua-lanczos-frontier-g1-independent/high20",
+    "--degree",
+    "20",
+    "--workers",
+    "4",
+    "--timeout",
+    "1800",
+    "--validated-overlap",
+    "/tmp/padua-lanczos-frontier-g1-independent/overlap-receipt.json",
+    "--receipt",
+    "/tmp/padua-lanczos-frontier-g1-independent/high20-receipt.json"
+  ],
+  "raw_receipt": {
+    "path": "/tmp/padua-lanczos-frontier-g1-independent/high20-receipt.json",
+    "bytes": 12845,
+    "sha256": "bfa6297545860afccfa384d928ecd8e0f59cb78c912d1a6122592a242347d454"
+  },
+  "fresh_small_builds_passed": 24,
+  "completed_triangle_fresh_small_vs_max20_prefix_checks": 12,
+  "completed_unique_endpoint_rows": 76,
+  "completed_scope": "T24 both native and fresh producer degrees2\u201320 all4rules; exact endpoint identities PASS",
+  "overlap_scope": "Bothgrids degrees2\u201312 all4rules independently regenerated and old/fresh identities PASS; separate overlap receipts",
+  "completed_cases": [
+    {
+      "case": [
+        "triangle",
+        "bj",
+        20
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 66.61708100400028,
+      "rows": 19,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/high20/triangle-bj-d20.jsonl",
+      "sha256": "0e046a58ae330cd4402bf4050958f302a49b9d8e0ea2701c0c7325802661b1bc",
+      "bytes": 19643,
+      "progress_log": {
+        "path": "/tmp/padua-lanczos-frontier-g1-independent/high20/triangle-bj-d20.log",
+        "bytes": 3753,
+        "sha256": "3098baf8646da75e1b10a3f688ba936d3eda30ed9b0b7c4749b9e5f8e416da9a",
+        "last_event": "source 230/230"
+      }
+    },
+    {
+      "case": [
+        "triangle",
+        "mirror",
+        20
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 24.602471074998903,
+      "rows": 19,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/high20/triangle-mirror-d20.jsonl",
+      "sha256": "1a45faebd668b8ce8c841e1ee69f2bd1abb1d8fb7758b75babc10f831cb07c6e",
+      "bytes": 19846,
+      "progress_log": {
+        "path": "/tmp/padua-lanczos-frontier-g1-independent/high20/triangle-mirror-d20.log",
+        "bytes": 3833,
+        "sha256": "36d6cfe4b8805868e9b605a0fd6c7e55cb0dda257649c561af8b61c6549a2169",
+        "last_event": "source 230/230"
+      }
+    },
+    {
+      "case": [
+        "triangle",
+        "alt",
+        20
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 49.00150969199967,
+      "rows": 19,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/high20/triangle-alt-d20.jsonl",
+      "sha256": "57f284cac4b1b5cc3ad63454ef00057eb884a93d8833a18be35921e36fecf38c",
+      "bytes": 22880,
+      "progress_log": {
+        "path": "/tmp/padua-lanczos-frontier-g1-independent/high20/triangle-alt-d20.log",
+        "bytes": 3773,
+        "sha256": "8b0d5a6f6055ee0df7d85ef7e4732124a0f02bb3833dc67d75a977d8d6634e4e",
+        "last_event": "source 230/230"
+      }
+    },
+    {
+      "case": [
+        "triangle",
+        "pivot",
+        20
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 78.95395376499982,
+      "rows": 19,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/high20/triangle-pivot-d20.jsonl",
+      "sha256": "11f5ea7b7726a975664646b6276d78b8201e44e9c34edc3e21a9bf425a96c9f7",
+      "bytes": 23193,
+      "progress_log": {
+        "path": "/tmp/padua-lanczos-frontier-g1-independent/high20/triangle-pivot-d20.log",
+        "bytes": 3813,
+        "sha256": "524a437ae781041c5fc30b965f4f9f321b265c9f5797d16c0fe70538ab0d8d63",
+        "last_event": "source 230/230"
+      }
+    }
+  ],
+  "incomplete_cases": [
+    {
+      "case": [
+        "rotated",
+        "bj",
+        20
+      ],
+      "status": "FAIL_OR_INCOMPLETE",
+      "elapsed_seconds": 1800.018627970001,
+      "error": "TimeoutExpired(['/tmp/padua-lanczos-frontier-g1-independent/high20/g1_independent', 'rotated', '20', 'bj'], 1799.999981936)",
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/high20/rotated-bj-d20.jsonl",
+      "progress_log": {
+        "path": "/tmp/padua-lanczos-frontier-g1-independent/high20/rotated-bj-d20.log",
+        "bytes": 900,
+        "sha256": "c644ed29cf0cbbb52b460047c2b9ea80e3f94b1246eb73929aaf7e10d46f0a3c",
+        "last_event": "source 37/230"
+      },
+      "result": "INCOMPLETE after existing1800-second cap; no endpoint row emitted"
+    },
+    {
+      "case": [
+        "rotated",
+        "mirror",
+        20
+      ],
+      "status": "FAIL_OR_INCOMPLETE",
+      "elapsed_seconds": 1800.0063817130012,
+      "error": "TimeoutExpired(['/tmp/padua-lanczos-frontier-g1-independent/high20/g1_independent', 'rotated', '20', 'mirror'], 1799.9999882679967)",
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/high20/rotated-mirror-d20.jsonl",
+      "progress_log": {
+        "path": "/tmp/padua-lanczos-frontier-g1-independent/high20/rotated-mirror-d20.log",
+        "bytes": 868,
+        "sha256": "3a33164d72d3c882c13078a89019d9b223cf972b4771d16184cc2c0a273c0b61",
+        "last_event": "source 29/230"
+      },
+      "result": "INCOMPLETE after existing1800-second cap; no endpoint row emitted"
+    },
+    {
+      "case": [
+        "rotated",
+        "alt",
+        20
+      ],
+      "status": "FAIL_OR_INCOMPLETE",
+      "elapsed_seconds": 1800.0143306550017,
+      "error": "TimeoutExpired(['/tmp/padua-lanczos-frontier-g1-independent/high20/g1_independent', 'rotated', '20', 'alt'], 1799.9999836090028)",
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/high20/rotated-alt-d20.jsonl",
+      "progress_log": {
+        "path": "/tmp/padua-lanczos-frontier-g1-independent/high20/rotated-alt-d20.log",
+        "bytes": 570,
+        "sha256": "ee4efd1669eb455021a5cb6241ea1d5fdb0ecfea65bd3f774e74308033eb1441",
+        "last_event": "source 12/230"
+      },
+      "result": "INCOMPLETE after existing1800-second cap; no endpoint row emitted"
+    },
+    {
+      "case": [
+        "rotated",
+        "pivot",
+        20
+      ],
+      "status": "FAIL_OR_INCOMPLETE",
+      "elapsed_seconds": 1800.012920903002,
+      "error": "TimeoutExpired(['/tmp/padua-lanczos-frontier-g1-independent/high20/g1_independent', 'rotated', '20', 'pivot'], 1799.999988227999)",
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/high20/rotated-pivot-d20.jsonl",
+      "progress_log": {
+        "path": "/tmp/padua-lanczos-frontier-g1-independent/high20/rotated-pivot-d20.log",
+        "bytes": 624,
+        "sha256": "780fcefe109947eb711848cf3a23e75ef5bfd4a06cd77854455875661b72a451",
+        "last_event": "source 13/230"
+      },
+      "result": "INCOMPLETE after existing1800-second cap; no endpoint row emitted"
+    }
+  ],
+  "limits": "No fitting, target disposition, growth-rate or actual rounding claim; no new heavy round authorized."
+}

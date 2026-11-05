@@ -1,6 +1,6 @@
 # Proposed shared-record changes — not applied
 
-Source: unchanged main/base440d1079e42c3ef21c40d1cf8870f5b206410c6a.
+Original proposal source: main440d1079e42c3ef21c40d1cf8870f5b206410c6a. Current main21dbfc90257b952d8923f6d01739d12aa8d6e0a1 is merged; frozen Lanczos records are unchanged.
 These literal proposals are for later audited PR preparation only. Obtain the
 required Claude scientific/protocol audit, refresh all active/retired ID
 reservations, assign final IDs from this topic's permanent ranges, replace
@@ -58,3 +58,10 @@ New (proposed):
 - Retain L4a-fixed-old-lower candidate disposition with that precise negative scope and L4b full-output same-witness successful variant. Preserve the prospective-gate timing deviation for explicit Claude disposition.
 - Add this topic's own RESULTS.md section from its results file only at PR preparation, and links from ID_CROSSWALK/shared batch ledger to ALLOCATIONS.md. No ranges are shifted or reused; no final ID is assigned by this proposal.
 - Update the inherited PD-T140 theory's target part and IDEA-250 current frontier additively after audit, preserving original wording, experimental INCONCLUSIVE outcome and history. Do not edit past auditor reports or claim the old sufficient test passed.
+
+## Handoff03 additions — unapplied provisional records
+
+- Add PD-T?lanczos-frontier-codex-L1-01, PROVED analytic: SH_n all-degree BJ/mirror aggregate-source span separation. Exact claim and model are in theory/l1-01-sheared-U-aggregate-separation.md. E2's broader scalar-operation/working-precision target remains OPEN; a formal aggregate result is not silently substituted for it.
+- Add PD-T?lanczos-frontier-codex-L2-01, PROVED analytic: finite smooth exact-base rule invariance and nested-projector X-closure reduction, theory/l2-smooth-rule-closure-reduction.md. Preserve original PD-T055 wording/status and distinguish the restricted formal W/R readings.
+- Preserve G2 finite certificates under separate substantive theory records once finalized; the lower bounds pass the saved W/R thresholds on both grids with full global source normalization. No exact full expectation or arbitrary-rule/IEEE result is implied.
+- Preserve the new idea continuation and deferred scalar bridge, with source-gate chronology and no unqualified novelty claim. G1 partial scan receives no all-degree inference or completed-fit claim.

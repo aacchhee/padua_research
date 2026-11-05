@@ -1,6 +1,29 @@
-# Lanczos frontier — checked finite scalar separation and resolved replay gate
+# Lanczos frontier — aggregate separation and checked closure certificates
 
-Stage WORK. [Draft PR24](https://github.com/aacchhee/padua_research/pull/24), not ready for merge. Rules read at f85c7b5c83822ff60b62c84bed1ec6ae31628422; base/main440d1079e42c3ef21c40d1cf8870f5b206410c6a. No final IDs assigned or canonical registries changed; [literal proposed changes](proposed-record-changes.md) await audited preparation.
+Stage WORK. [Draft PR24](https://github.com/aacchhee/padua_research/pull/24), not ready for merge. Rules read at5e5081e991fc48f033d3ef51ee2b6e42f892d29d; current main21dbfc90257b952d8923f6d01739d12aa8d6e0a1 merged without changing the frozen Lanczos sources. No final IDs assigned or canonical registries changed; [literal proposed changes](proposed-record-changes.md) await audited preparation.
+
+## L1: analytic separation on the saved sheared family
+
+[PD-T?lanczos-frontier-codex-L1-01](theory/l1-01-sheared-U-aggregate-separation.md) is **PROVED, analytic**, for every n>=2 on the positive weighted, physically nonproduct SH_n grid. In the stated first-order aggregate-source model with exact full projection, the BJ span capacity is at least `sqrt(2(4^(n+1)-1)/3)`, whereas the mirror capacity is at most `2sqrt(6)(n+1)^2(N_n-1)`. Thus the named-rule capacity ratio has an exponential lower divided by a polynomial. The proof verifies the orthonormal/monic gauge, exact pivots, complete-level normal quotient, a final-degree BJ source and the all-source mirror bound. It does not assert scalar-operation realizability, working-precision instability or a uniform finite-error radius.
+
+The distinct [Astra xhigh adversarial reconstruction](independent-checks-sh.md) accepted the analytic proof at its recorded hash. Supplemental exact checks cover all1618 source-coordinate directions for n=2,3,4 and88 symbolic creator/gauge identities through degree8. These finite diagnostics supplement the written all-degree proof; they do not supply an extrapolation argument or a computer-assisted all-degree reduction. The scalar bridge remains a separately recorded deferred candidate.
+
+## L2: finite rule reduction and G2 acceptance
+
+The [finite analytic reduction](theory/l2-smooth-rule-closure-reduction.md) proves first-order invariance across the saved smooth exact-base rule class. It differentiates both nested projectors in the actual X-closure observable, eliminates the infimum over that class pointwise, and gives rational impulse/trace bounds. The original unrestricted working-precision PD-T055 remains OPEN.
+
+Both unchanged degree12 G2 predicates pass on each frozen rational grid, with full90-source budgets and the original independent-sign law:
+
+| Grid | Certified integer lower on C_12 squared | Certified integer lower on E_12 |
+|---|---:|---:|
+| T24 | 17525752205103 | 6457695691 |
+| rotQ24 | 6324995264 | 2606606 |
+
+The W threshold is65536 after squaring; R is16. These are lower certificates, not exact capacities or full expectations. The prospective single-source/stage screen sufficed on both grids. R sums its nonnegative all-node contribution with the original global normalization; omitted sources are dropped only after taking expectation. [Producer methods](g2-methods.md), [fixed certificate](evidence/g2-fixed-certificate.json) and [independent execution/reconstruction](independent-checks-l1-l2.md) preserve the exact scope. The standalone checker regenerates from repository sources without historic temporary artifacts; both final executions passed, including eight malformed controls per grid and separate complete-projector/trace controls.
+
+## G1: finite scan remains incomplete
+
+The exact producer and independently implemented native C++/GMP checker match all88 inherited degree2–12 rows and all76 T24 degree2–20 rows. The producer's rotated BJ degree14 benchmark adds degrees13/14, giving122 of152 planned rows;120 unique rows have independent agreement. The30 remaining rotated rows and independent checks of the two benchmark rows remain due. All four native rotated degree20 cases hit their1800-second caps after partial source propagation; none emitted completed high-degree endpoints. No fit or operational G1 verdict is claimed. See [methods](g1-methods.md), [independent report](independent-checks-g1.md) and [cost receipt](evidence/g1-independent-high20.json). A new implementation/cost plan must precede another expensive round; the saved source domain, endpoints and fit/kill rules stay fixed.
 
 ## Main result — L4
 
@@ -29,14 +52,14 @@ Large exact arrays remain local and regenerable outside Git, with [manifest and 
 ## Gates
 
 - **G0 RESOLVED**, additively under its unchanged explanation criterion: [disposition02](g0-disposition-02.md), [methods](g0-attribution-methods.md), [independent review](independent-checks-g0-resolution.md). Existing exact witness/certificate and symbolic replays pass. For numerical replay variation, independent high-precision projection, u-scale local residual propagation and kernel/precision controls explain arithmetic sensitivity. Historical Q/H/dispatch remain missing; old alternating7.301e-12 is scale-consistent, not reconstructed or bounded by a kernel envelope. The original dated FAIL remains unchanged.
-- **G1/G2/G3/G4 NOT RUN.** The L4 exact experiments above do not stand in for all-degree growth scans, PD-T055 closure predicates, optimal Padua-radius brackets or high-degree polyrat replay. The L1/L2 and L3/L4 relevant mandatory repository-reading gates are now complete for the saved routes; no primary-fulltext/priority clearance is implied.
+- **G1 INCOMPLETE; G2 W/R PASS on both grids; G3/G4 NOT RUN.** G1 has no completed fit or verdict; F is deferred. The L4 and aggregate-model results do not stand in for optimal Padua-radius brackets or high-degree polyrat replay. The L1/L2 and L3/L4 relevant mandatory repository-reading gates are now complete for the saved routes; no primary-fulltext/priority clearance is implied.
 
 ## Remaining directions
 
 | Direction | Status and next obligation |
 |---|---|
-| [L1](attempts/L1.md) | OPEN. Implement preregistered G1 exact growth scan and independently check it; verify saved sheared-product family hypotheses/gauge before any all-degree claim. |
-| [L2](attempts/L2.md) | OPEN. Freeze a well-posed predicate/rule class and obtain G2 exact degree12 truth before an all-degree attempt; span capacity alone does not decide closure defects. |
+| [L1](attempts/L1.md) | Saved SH_n aggregate separation PROVED under its explicit model; G1 scan incomplete. Scalar-operation/IEEE bridge remains open. |
+| [L2](attempts/L2.md) | Smooth exact-base finite reduction and both-grid W/R predicates accepted. Weighted all-degree extension is separate work; original working-precision PD-T055 stays OPEN. |
 | [L3](attempts/L3.md) | OPEN. Explicit-radius and adaptive-branch drafts remain unchecked; no unconditional selection theorem. |
 | [L4](attempts/L4.md) | PROVED finite formal comparison above. Actual IEEE activation, finite-u behavior and all-degree growth remain outside it. |
 | [L5](attempts/L5.md) | OPEN. G3 exact small-n optimal-radius certificates unrun; no inference from the named P_n radius to the optimal obstruction radius. |
