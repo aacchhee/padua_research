@@ -1,0 +1,225 @@
+{
+  "status": "PASS all88 independently regenerated/fresh producer overlap rows identical",
+  "row_count": 88,
+  "compared": "exact L\u00b2,H\u00b2,Urow\u00b2,U\u00b2; dimensions,source_count,source_class,choices,ties,normal_trace",
+  "comparisons": [
+    {
+      "set": "triangle",
+      "rule": "bj",
+      "degrees": [
+        2,
+        12
+      ],
+      "row_count": 11,
+      "status": "PASS exact independent/producer row identities",
+      "input_files": [
+        {
+          "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/triangle-bj-d12.jsonl",
+          "bytes": 7726,
+          "sha256": "e9426a1c9f4436d1264f8c72f40b4c37807efbffa25494f3e528c64e369e35e9"
+        },
+        {
+          "path": "/tmp/padua-lanczos-frontier-g1/overlap/triangle-bj/endpoints.json",
+          "bytes": 17068,
+          "sha256": "a484974f3255e790d9546c30dc0c3af06f1d9162494f5631f7d107f60c65c420"
+        }
+      ],
+      "comparison_receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-independent/triangle-bj-fresh-comparison.json",
+        "bytes": 1571,
+        "sha256": "ad5b665fe8f57d2c5d5d7823f1e5eeb263068070b4acb5df3760b7720f6b2673"
+      }
+    },
+    {
+      "set": "triangle",
+      "rule": "mirror",
+      "degrees": [
+        2,
+        12
+      ],
+      "row_count": 11,
+      "status": "PASS exact independent/producer row identities",
+      "input_files": [
+        {
+          "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/triangle-mirror-d12.jsonl",
+          "bytes": 7833,
+          "sha256": "f9b6e53e98a5a554b629ba325cfb3f3c5490076a771ba534b076e9bc5c15f906"
+        },
+        {
+          "path": "/tmp/padua-lanczos-frontier-g1/overlap/triangle-mirror/endpoints.json",
+          "bytes": 17156,
+          "sha256": "3b13e0c51ebdb6783dd1a7f64a02a067ff29ff71d518f8daf32e961ffc1c7f2d"
+        }
+      ],
+      "comparison_receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-independent/triangle-mirror-fresh-comparison.json",
+        "bytes": 1635,
+        "sha256": "17358cb9c9fac63d8a28bde5545951a6a87bd3b2d2d47c8eb1132b0a3d6ef5f9"
+      }
+    },
+    {
+      "set": "triangle",
+      "rule": "alt",
+      "degrees": [
+        2,
+        12
+      ],
+      "row_count": 11,
+      "status": "PASS exact independent/producer row identities",
+      "input_files": [
+        {
+          "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/triangle-alt-d12.jsonl",
+          "bytes": 8570,
+          "sha256": "42800244842ff00c6e0edfa80053b53d91fa734f63d8a3f6032e6fde36cb733c"
+        },
+        {
+          "path": "/tmp/padua-lanczos-frontier-g1/overlap/triangle-alt/endpoints.json",
+          "bytes": 17895,
+          "sha256": "044664e602a8846e1720f304a44d5aff4cd32dc0efad88a43eaf38385ea52d9c"
+        }
+      ],
+      "comparison_receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-independent/triangle-alt-fresh-comparison.json",
+        "bytes": 1587,
+        "sha256": "b70690730e5c5c228f9e75b78a4de514972117e28c73fc6943b5e0787562119f"
+      }
+    },
+    {
+      "set": "triangle",
+      "rule": "pivot",
+      "degrees": [
+        2,
+        12
+      ],
+      "row_count": 11,
+      "status": "PASS exact independent/producer row identities",
+      "input_files": [
+        {
+          "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/triangle-pivot-d12.jsonl",
+          "bytes": 8642,
+          "sha256": "9182ea093287e33bc3ee521e0f61143260ec5ce7b378c1595e3c47f3fe6f5053"
+        },
+        {
+          "path": "/tmp/padua-lanczos-frontier-g1/overlap/triangle-pivot/endpoints.json",
+          "bytes": 17969,
+          "sha256": "5d07cb256d8b7bb0ceae59da3c6465e660aea6d3057722e8e8995971f44baf00"
+        }
+      ],
+      "comparison_receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-independent/triangle-pivot-fresh-comparison.json",
+        "bytes": 1619,
+        "sha256": "fc9dcdef2a050cb683c150d45a9584a3404057efea38c1b09e99aa9b979e5822"
+      }
+    },
+    {
+      "set": "rotated",
+      "rule": "bj",
+      "degrees": [
+        2,
+        12
+      ],
+      "row_count": 11,
+      "status": "PASS exact independent/producer row identities",
+      "input_files": [
+        {
+          "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/rotated-bj-d12.jsonl",
+          "bytes": 86739,
+          "sha256": "2ced01e065d8eeec52c98324dc8abef2d52e0d98f99dde3a89059246cbe8ad24"
+        },
+        {
+          "path": "/tmp/padua-lanczos-frontier-g1/overlap/rotated-bj/endpoints.json",
+          "bytes": 96062,
+          "sha256": "1ee4c3c743af4f9564336d367515601bcbb7b1cfa94e3c083a7268dd71db8f87"
+        }
+      ],
+      "comparison_receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-independent/rotated-bj-fresh-comparison.json",
+        "bytes": 1556,
+        "sha256": "f4f5cf9680e8e655e5e2beddb324c9ffdfc0901aebb889c56db9803ac8f6c717"
+      }
+    },
+    {
+      "set": "rotated",
+      "rule": "mirror",
+      "degrees": [
+        2,
+        12
+      ],
+      "row_count": 11,
+      "status": "PASS exact independent/producer row identities",
+      "input_files": [
+        {
+          "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/rotated-mirror-d12.jsonl",
+          "bytes": 92320,
+          "sha256": "c6e94cded0c61fe9000672aa4a030a04433c195bc65cb43ec8adfe9ab12088d7"
+        },
+        {
+          "path": "/tmp/padua-lanczos-frontier-g1/overlap/rotated-mirror/endpoints.json",
+          "bytes": 101666,
+          "sha256": "5b3896d9bb405ba59f7fa2d59d444c4ff14d02ddd5c2a99ea1b140103bf2a36f"
+        }
+      ],
+      "comparison_receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-independent/rotated-mirror-fresh-comparison.json",
+        "bytes": 1621,
+        "sha256": "b34e241c16fae51868eec12f9a6057f0528e2719aa23bd3b437ce745b4774c16"
+      }
+    },
+    {
+      "set": "rotated",
+      "rule": "alt",
+      "degrees": [
+        2,
+        12
+      ],
+      "row_count": 11,
+      "status": "PASS exact independent/producer row identities",
+      "input_files": [
+        {
+          "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/rotated-alt-d12.jsonl",
+          "bytes": 104429,
+          "sha256": "e616df02be4e98b07d0770830e6c3fd20ef4ff8a75c922e1a8bb3536ecacdade"
+        },
+        {
+          "path": "/tmp/padua-lanczos-frontier-g1/overlap/rotated-alt/endpoints.json",
+          "bytes": 113750,
+          "sha256": "1cb4b0b28bc91b0c71d89297f8ab9ac6c1d6284dcc310ec83775aa1c3ee149ce"
+        }
+      ],
+      "comparison_receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-independent/rotated-alt-fresh-comparison.json",
+        "bytes": 1574,
+        "sha256": "62dd01bb53d5709a249fbc64654ae503336e9f97127226dcebec23ab92400a04"
+      }
+    },
+    {
+      "set": "rotated",
+      "rule": "pivot",
+      "degrees": [
+        2,
+        12
+      ],
+      "row_count": 11,
+      "status": "PASS exact independent/producer row identities",
+      "input_files": [
+        {
+          "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/rotated-pivot-d12.jsonl",
+          "bytes": 100264,
+          "sha256": "72fb5b1c70e6e24a8253d63c1bcd1e6ab6627b0ae34816d482b7fe29b7c72453"
+        },
+        {
+          "path": "/tmp/padua-lanczos-frontier-g1/overlap/rotated-pivot/endpoints.json",
+          "bytes": 110129,
+          "sha256": "ebda11a2b850093b02a50076eef74ca79ee70fe76c28f038fbe44fe8ebb3ceae"
+        }
+      ],
+      "comparison_receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-independent/rotated-pivot-fresh-comparison.json",
+        "bytes": 1606,
+        "sha256": "3e40b997ee128190a851dfea74da8686b2f43e779c33f46ec6ed87c1919fcbf7"
+      }
+    }
+  ],
+  "checker": "code/g1_independent_compare.py",
+  "checker_sha256": "64ee9f3fefdbba8f944f9ec1580352d46b70bc18e332dc715032db11b462fb5e"
+}

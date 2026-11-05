@@ -1,0 +1,48 @@
+{
+  "status": "PASS independent n5 malformed controls",
+  "code": {
+    "path": "topics/padua-lanczos-frontier-20261105/code/g3_n5_independent.py",
+    "bytes": 9777,
+    "sha256": "40ec8b62636665aa8ff83102c3fdb0fe2c841d85ee50a16287106d7bf448acea"
+  },
+  "input": {
+    "path": "/tmp/padua-lanczos-frontier-g3-n5/producer/lower.json",
+    "bytes": 7912,
+    "sha256": "35e804b2a25e693e616e909ca61897b0958f0d990fd590ded1bc649a5ca66311"
+  },
+  "controls": [
+    {
+      "control": "changed actual P5 coefficient",
+      "rejected": true,
+      "reason": "polynomial is not the actual rational P5"
+    },
+    {
+      "control": "oversized Taylor radius",
+      "rejected": true,
+      "reason": "lower Taylor full-ball inequality failure"
+    },
+    {
+      "control": "nonpositive radius",
+      "rejected": true,
+      "reason": "nonpositive lower radius"
+    },
+    {
+      "control": "malformed field encoding",
+      "rejected": true,
+      "reason": "invalid quartic-field encoding"
+    },
+    {
+      "control": "proper kernel subspace",
+      "rejected": true,
+      "reason": "incomplete first-jet kernel dimension"
+    }
+  ],
+  "positive_original_rechecked": true,
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "-c",
+    "import importlib.util, pathlib, json, copy\np=pathlib.Path(\"topics/padua-lanczos-frontier-20261105/code/g3_n5_independent.py\")\ns=importlib.util.spec_from_file_location(\"check\",p);m=importlib.util.module_from_spec(s);s.loader.exec_module(m)\nlower=json.loads(pathlib.Path(\"/tmp/padua-lanczos-frontier-g3-n5/producer/lower.json\").read_text())\nz=m.nodes();poly=m.baseline();J,B,rank=m.jet_and_kernel(z);result=[]\ndef reject(label,fn):\n try:fn()\n except ValueError as e:result.append(dict(control=label,rejected=True,reason=str(e)));return\n raise RuntimeError(\"malformed accepted: \"+label)\nc=copy.deepcopy(lower);c[\"polynomial\"][0][2][0]=str(m.rat(c[\"polynomial\"][0][2][0])+1);reject(\"changed actual P5 coefficient\",lambda:m.lower_check(c,z,poly))\nc=copy.deepcopy(lower);c[\"L\"]=\"1\";reject(\"oversized Taylor radius\",lambda:m.lower_check(c,z,poly))\nc=copy.deepcopy(lower);c[\"L\"]=\"0\";reject(\"nonpositive radius\",lambda:m.lower_check(c,z,poly))\nc=copy.deepcopy(lower);c[\"polynomial\"][0][2].append(\"0\");reject(\"malformed field encoding\",lambda:m.lower_check(c,z,poly))\nsmall=m.DM(B.to_list()[:-1],(B.shape[0]-1,78),m.F);reject(\"proper kernel subspace\",lambda:m.validate_kernel(J,small,rank))\nm.lower_check(lower,z,poly)\nprint(json.dumps(dict(status=\"PASS independent n5 malformed controls\",code=m.identity(p),input=m.identity(\"/tmp/padua-lanczos-frontier-g3-n5/producer/lower.json\"),controls=result,positive_original_rechecked=True)))\n"
+  ],
+  "scope": "n5 checker controls only; no upper certificate, no optimal bracket/no n6."
+}

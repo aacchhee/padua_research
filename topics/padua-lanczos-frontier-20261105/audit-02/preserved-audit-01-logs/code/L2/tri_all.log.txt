@@ -1,0 +1,3 @@
+{"event": "basis", "set": "triangle", "M": 325, "X2": "1", "tau2_h6": "5083/432", "secs": 0.14}
+{"event": "formula", "set": "triangle", "argmax_node": 22, "point": ["-1", "5/6"], "W_lower_floor": 17525752205103, "R_partial_floor": 6457695691, "W_lower_sha": "b96c43b37b3d1dae78743ba5c56ace5770b105c619b0efa31d7cdad539566f4d", "R_partial_sha": "f0d30f0a4f3806f47d165b7831b658c422d2f604bb65efc48b65285256e82d86", "secs": 0.58}
+{"event": "dual_allnodes", "set": "triangle", "all_nodes_match_ell": true, "R_partial_floor_dual": 6457695691, "R_partial_sha_dual": "f0d30f0a4f3806f47d165b7831b658c422d2f604bb65efc48b65285256e82d86", "secs": 523.99}

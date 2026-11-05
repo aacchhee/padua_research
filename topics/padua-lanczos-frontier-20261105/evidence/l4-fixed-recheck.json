@@ -1,0 +1,115 @@
+{
+  "result": "PORTABLE_FIXED_CERTIFICATE_PASSES",
+  "checker": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/l4_recheck_fixed.py",
+    "bytes": 10206,
+    "sha256": "858490e2fe820c4fbb4325283414c3110b321ecb10c1921fec11e04a42e49f61"
+  },
+  "certificate": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/evidence/l4-fixed-certificate.json",
+    "bytes": 12631,
+    "sha256": "d07d5c89200c188b25052a2f9a844b3271232bf9c78bb0296bfcded46a99cadb"
+  },
+  "fresh_envelope_receipt": {
+    "path": "/tmp/padua-lanczos-frontier-l4/astra.json",
+    "bytes": 7189,
+    "sha256": "13210d31f6533a267fb03877775da659a220aaf1d2cac071a7ae28e75675f565"
+  },
+  "fresh_witness_receipt": {
+    "path": "/tmp/padua-lanczos-frontier-l4/full-witness-astra.json",
+    "bytes": 3357,
+    "sha256": "f87d7a1c5d5c97d5077fb3cac5ddb07d812a6583980cdcca534a5861488b9b53"
+  },
+  "fresh_envelope": {
+    "path": "/tmp/padua-lanczos-frontier-l4/astra/full-envelope.jsonl.gz",
+    "bytes": 49329865,
+    "sha256": "ab4b4c9e2e37ac5ef6422959015a9e926c8d87820b3493612917d9df89e26c7f"
+  },
+  "fresh_witness": {
+    "path": "/tmp/padua-lanczos-frontier-l4/full-witness-astra/full-witness.jsonl.gz",
+    "bytes": 43591444,
+    "sha256": "0ab86efe20c73dcb6ff6fe48ad5ffd973693548d0f5fcc760a2487571ada67dc"
+  },
+  "source_sha256": {
+    "e1_exact.py": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+    "e1_cgs2.py": "426630eb916e13bb14409f6f7b8ea310eaeb1bf7949de10866d163aad31c7b4b"
+  },
+  "frozen_evidence_sha256": {
+    "e1-scalar-cgs2.json": "e215556a01f9e169163b228dfe1b984d28e0cebd7f78e0d858f9a61a0de878c8",
+    "e1-multinode-certificates.json": "fae9c8743c78230ef0aa82c185d1efe0eee37be066982a37d39d920af95719f0"
+  },
+  "full_source_count": 90,
+  "nodes": 625,
+  "columns": 91,
+  "full_Frobenius_exactly_reproduced": true,
+  "all_Cv_le_Bv_exact": true,
+  "B": 13462956266,
+  "Rayleigh_integer_floor": 13462955378,
+  "exact_floor_le_R_lt_floor_plus_one": true,
+  "exact_100_floor_ge_old_G": true,
+  "exact_basis_Gram_diagonal": true,
+  "old_target90_exactly_reproduced": true,
+  "L": 2041704913997,
+  "exact_L_le_Q_lt_L_plus_one": true,
+  "strict_L_gt_100B": true,
+  "fixed_gain_sha256": "bc2fb280ce39d9f7e740bd29bf0abb0fee122ba30c28eecb2c64010774c1994f",
+  "malformed_controls": [
+    {
+      "name": "short upper vector",
+      "result": "REJECTED"
+    },
+    {
+      "name": "zero upper coordinate",
+      "result": "REJECTED"
+    },
+    {
+      "name": "underestimated upper B-1",
+      "result": "REJECTED"
+    },
+    {
+      "name": "zero lower readout",
+      "result": "REJECTED"
+    },
+    {
+      "name": "nonzero constant readout",
+      "result": "REJECTED"
+    },
+    {
+      "name": "inflated lower L+1",
+      "result": "REJECTED"
+    },
+    {
+      "name": "equality instead of strict target",
+      "result": "REJECTED"
+    }
+  ],
+  "lineage_fields_removed_control": "PASS; same mathematical certificate without historical artifact paths/identities",
+  "historical_artifacts_opened": false,
+  "new_float_proposals_consulted": false,
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/l4_recheck_fixed.py",
+    "--certificate",
+    "topics/padua-lanczos-frontier-20261105/evidence/l4-fixed-certificate.json",
+    "--fresh-envelope-receipt",
+    "/tmp/padua-lanczos-frontier-l4/astra.json",
+    "--fresh-witness-receipt",
+    "/tmp/padua-lanczos-frontier-l4/full-witness-astra.json",
+    "--frozen-evidence",
+    "/tmp/padua-lanczos-frontier-g0/replay/topics/padua-lanczos-drift-20261101/evidence",
+    "--output",
+    "topics/padua-lanczos-frontier-20261105/evidence/l4-fixed-recheck.json"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "flint": "0.9.0",
+    "elapsed_seconds": 31.59644721999939
+  },
+  "trust_scope": [
+    "Fresh array generation uses approved exact producers; this checker verifies their outputs and fixed vectors, not a second source-graph implementation.",
+    "Executed using the already completed distinct independent full regenerations; no claim of another source rerun.",
+    "Fresh gzip/artifact hashes protect this execution only; historical compressed bytes are not acceptance inputs.",
+    "Only the frozen finite formal first-order scalar model; separate Claude audit remains pending."
+  ]
+}

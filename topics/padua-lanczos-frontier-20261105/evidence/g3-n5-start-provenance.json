@@ -1,0 +1,52 @@
+{
+  "rules_input_sha": "9825d184517db81d0aad8542fbd6639f2164b803",
+  "actual_git_head": "b81a1a1dcd6a633dcfd27429dc6ee22e74849d14",
+  "inputs": {
+    "producer": {
+      "path": "topics/padua-lanczos-frontier-20261105/code/g3_n5_producer.py",
+      "bytes": 15071,
+      "sha256": "1656c7225a5c297e08d095ad9a6bcd9b25d99cc303cc62fcaac73b57271b3c25"
+    },
+    "plan": {
+      "path": "topics/padua-lanczos-frontier-20261105/g3-n5-methods.md",
+      "bytes": 5622,
+      "sha256": "8e31431fd9721e39aa4fd97cdf112e96477d61402bbf4544b853164d748ce662"
+    },
+    "reduction": {
+      "path": "topics/padua-lanczos-frontier-20261105/theory/l5-01-finite-optimal-radius-certificates.md",
+      "bytes": 15294,
+      "sha256": "6beeb3f07eaa7fd0e401f94257c3afa9902d556324dc7cb18bc234ebe2cdfde6"
+    },
+    "P_formula_source": {
+      "path": "tracks/bivariate-lanczos/code/review_L3b/padua_turan_check.py",
+      "bytes": 15491,
+      "sha256": "c1896577dcf9683b75e1ffa6ea481f1c498107ce482df97381e8462c0fe108ff"
+    }
+  },
+  "command": [
+    "timeout",
+    "900s",
+    "python3",
+    "topics/padua-lanczos-frontier-20261105/code/g3_n5_producer.py",
+    "--out",
+    "/tmp/padua-lanczos-frontier-g3-n5/producer"
+  ],
+  "caps": {
+    "external_seconds": 900,
+    "internal_global_seconds": 890,
+    "address_space_GiB": 2,
+    "initial_seconds": 10,
+    "kernel_seconds": 150,
+    "lower_seconds": 60,
+    "each_grid_seconds": 210,
+    "each_LP_seconds": 5,
+    "stage_limits": "cooperative checks; preserve slight overruns and incomplete radii"
+  },
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "approval": "root NEW n5-only allocation; distinct reviewer final scoped field/math/source PASS1656c722 under plan8e31431f; root conditional release satisfied by this persisted prelaunch record. No n6+/cap extension."
+}

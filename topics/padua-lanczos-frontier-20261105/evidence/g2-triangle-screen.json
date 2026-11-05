@@ -1,0 +1,91 @@
+{
+  "result": "W_LOWER_SCREEN_PASSES",
+  "scope": {
+    "set": "triangle",
+    "degree": 12,
+    "rule": "bj",
+    "global_source_count": 90,
+    "global_source_range": [
+      1,
+      90
+    ],
+    "stage": 11,
+    "screen_source_order": [
+      6,
+      4,
+      3,
+      5
+    ],
+    "screen_source_role": "subset LOWER only; no screened-source upper or R expectation",
+    "node_coverage": 325,
+    "saved_W_threshold": 256,
+    "squared_W_threshold": 65536,
+    "saved_R_threshold": 16,
+    "R_status": "NOT_RUN"
+  },
+  "rules_head": "0e493be7f9883e00e6260cf6b081c607a230177f",
+  "frozen_source_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+  "analytic_reduction_sha256": "44498c6230d0a59bbd0cfc4bc96600f0b401eb92ba9302b5c1d54cc569c8d5f9",
+  "code_sha256": "2e8c87db119b407a884bc089a5a7e69addfc674b94ebc499236a18307ca1c57d",
+  "controls": {
+    "generic_rational_nodes": 10,
+    "degree": 2,
+    "stage_source_controls": 4,
+    "full_projector_derivative_agrees": true,
+    "alternative_coefficient_and_beta_derivatives_agree": true,
+    "full_degree12_Gram_diagonal": true,
+    "full_X_expansion_with_top_degree": true,
+    "positive_d_and_tau_squared": true,
+    "normal_diag_in_unit_interval": true,
+    "normal_trace_exact": "234",
+    "X_formed_child_omega_sign_identity": true
+  },
+  "baseline": {
+    "path": "/tmp/padua-lanczos-frontier-g2/triangle-screen/baseline.jsonl.gz",
+    "bytes": 92374,
+    "sha256": "546e0b7bc99bbfb6af36305de0d60e60455b65292b0bcda169775a7b8026d24a"
+  },
+  "screens": [
+    {
+      "stage": 11,
+      "source": 6,
+      "node": 22,
+      "point": [
+        "-1",
+        "5/6"
+      ],
+      "normalized_squared_lower_floor": 17525752205103,
+      "normalized_squared_lower_display": 17525752205103.797,
+      "passes_saved_W_threshold": true,
+      "direct_projected_pulse_exactly_agrees": true,
+      "artifact": {
+        "path": "/tmp/padua-lanczos-frontier-g2/triangle-screen/impulse-h6.json",
+        "bytes": 17035,
+        "sha256": "5028b3b3fbc34b4307601379c4ffa868234747062c69697e0e3f5ec8dbd5de19"
+      }
+    }
+  ],
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g2_screen.py",
+    "--set",
+    "triangle",
+    "--output-dir",
+    "/tmp/padua-lanczos-frontier-g2/triangle-screen",
+    "--receipt",
+    "topics/padua-lanczos-frontier-20261105/evidence/g2-triangle-screen.json"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "python_flint": "0.9.0",
+    "elapsed_seconds": 2.0313912559995515
+  },
+  "limits": [
+    "Formal first-order smooth exact-base rule class only; original working-precision PD-T055 remains distinct.",
+    "No span-condition substitution, actual IEEE or all-degree conclusion.",
+    "A failed lower screen is inconclusive, not W FAIL. R requires all sources/stages and is not computed here.",
+    "Developer result; independent checker/execution remains separate.",
+    "Bulk arrays are external temporary working evidence; archive/delivery pending."
+  ]
+}

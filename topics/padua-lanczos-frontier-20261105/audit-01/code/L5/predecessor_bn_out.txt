@@ -1,0 +1,4 @@
+n4 L= 0.000563 all certified >0: True min margin 4.9203754369450075e-05
+n4 L= 0.0005631 all certified >0: False min margin -0.0002211958544115255
+n5 L= 0.0001022 all certified >0: True min margin 0.00036043740681820225
+n5 L= 0.00010226 all certified >0: False min margin -7.691434290725058e-05

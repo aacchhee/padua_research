@@ -1,0 +1,84 @@
+{
+  "result": "FIXED_OLD_LOWER_ENVELOPE_ROUTE_CANNOT_PASS",
+  "label": "POST_HOC_ENVELOPE_DIAGNOSTIC_ONLY",
+  "rules_head": "684849d7d19ac2604213ae3d4f499d3436f58b3d",
+  "code_sha256": "54399e4e2dea3a19d943130bf67e7549b16c98aac600e196ba932ba512069551",
+  "envelope_producer_source_sha256": "0da27e69ddd3cff5ca23e3fcac764f53891ad164ffab20324540fd67d2faf901",
+  "upper_receipt": {
+    "path": "topics/padua-lanczos-frontier-20261105/evidence/l4-envelope.json",
+    "bytes": 7245,
+    "sha256": "0ddc935bed63d22546eb12ef9a00765a4ebceaf70c69c7fe61afbb2979e0e6c5"
+  },
+  "envelope_input": {
+    "path": "/tmp/padua-lanczos-frontier-l4/producer/full-envelope.jsonl.gz",
+    "bytes": 49329865,
+    "sha256": "fef9cb00b58a709d0ed952fbb09bc00263eae0fdc8102c5b6f2ff322722364fc"
+  },
+  "frozen_BJ_lower_input": {
+    "path": "/tmp/padua-lanczos-frontier-g0/replay/topics/padua-lanczos-drift-20261101/evidence/e1-multinode-certificates.json",
+    "bytes": 55328,
+    "sha256": "fae9c8743c78230ef0aa82c185d1efe0eee37be066982a37d39d920af95719f0"
+  },
+  "checks": [
+    {
+      "candidate": 3,
+      "candidate_input": {
+        "path": "/tmp/padua-lanczos-frontier-l4/producer/candidate-03.json",
+        "bytes": 21110,
+        "sha256": "7192059c23df523d4a4caebdabc1f2435bc9e3f07703fb3c3405bea32e1f4a99"
+      },
+      "rayleigh_float_display": 13462955378.504082,
+      "rayleigh_integer_lower": 13462955378,
+      "integer_lower_exactly_checked": true,
+      "exact_100lower_ge_frozen_G": true,
+      "exact_rayleigh": {
+        "path": "/tmp/padua-lanczos-frontier-l4/rayleigh-durable/rayleigh-03-exact.txt",
+        "bytes": 12808,
+        "sha256": "0c4f9f2bfab8bd3fe65c6c44313d52448c39738ec5ddb4c567b729203dd73da6"
+      }
+    },
+    {
+      "candidate": 8,
+      "candidate_input": {
+        "path": "/tmp/padua-lanczos-frontier-l4/producer/candidate-08.json",
+        "bytes": 21116,
+        "sha256": "e1dcd19421a900b0597016a1ba057e969f6c4301a854ac1f78f7c9e3dd288275"
+      },
+      "rayleigh_float_display": 13462955378.504196,
+      "rayleigh_integer_lower": 13462955378,
+      "integer_lower_exactly_checked": true,
+      "exact_100lower_ge_frozen_G": true,
+      "exact_rayleigh": {
+        "path": "/tmp/padua-lanczos-frontier-l4/rayleigh-durable/rayleigh-08-exact.txt",
+        "bytes": 12806,
+        "sha256": "43012699b0f49cfdb186ffff2d38624ad89f6e09e39a1a27a872c63be2e7a61d"
+      }
+    }
+  ],
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/l4_rayleigh.py",
+    "--upper-receipt",
+    "topics/padua-lanczos-frontier-20261105/evidence/l4-envelope.json",
+    "--frozen-evidence",
+    "/tmp/padua-lanczos-frontier-g0/replay/topics/padua-lanczos-drift-20261101/evidence",
+    "--output-dir",
+    "/tmp/padua-lanczos-frontier-l4/rayleigh-durable",
+    "--receipt",
+    "topics/padua-lanczos-frontier-20261105/evidence/l4-rayleigh.json"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "python_flint": "0.9.0",
+    "elapsed_seconds": 4.099386522999339
+  },
+  "limits": [
+    "This lower-bounds the nonnegative envelope eigenvalue, not the actual formal scalar capacity.",
+    "Obstruction applies only to a valid upper on this same envelope combined with the fixed old BJlower.",
+    "True factor-ten capacity target remains undecided; stronger lower witnesses or sharper non-envelope uppers remain possible.",
+    "Post hoc diagnostic executed after all nine preregistered vector uppers failed.",
+    "Developer execution; distinct independent verification remains separate."
+  ],
+  "retention": "Exact Rayleigh rationals remain temporary outsideGit with hashes; archive/delivery pending prescribed cold-storage process."
+}

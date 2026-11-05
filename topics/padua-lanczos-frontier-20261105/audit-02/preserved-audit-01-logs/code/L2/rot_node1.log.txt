@@ -1,0 +1,3 @@
+{"event": "basis", "set": "rotated", "M": 625, "X2": "49/25", "tau2_h6": "45028763/414720", "secs": 2.79}
+{"event": "formula", "set": "rotated", "argmax_node": 1, "point": ["2/15", "-27/20"], "W_lower_floor": 6324995264, "R_partial_floor": 2606606, "W_lower_sha": "52e3953d4b8b79b47ec4db7f0b37d05dcf9558e9214f9e94d97ccaac7dcd7703", "R_partial_sha": "22e2adfb47f0c514d3a52ec7c718b8c82be03e4f0d0c267a62bce4ada9a32abf", "secs": 8.85}
+{"event": "dual", "set": "rotated", "node": 1, "rank_W": 1, "rules_identical_derivative": true, "tau2_fro_equals_ell": true, "gain_floor": 6324995264, "secs": 361.74}

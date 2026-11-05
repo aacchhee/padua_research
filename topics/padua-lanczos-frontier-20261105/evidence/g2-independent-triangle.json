@@ -1,0 +1,248 @@
+{
+  "schema": "g2-independent-W-pulse-v1",
+  "code_sha256": "e88536c7156256de09f907923d7a51437055b685f3ccbaee62fcff4b50589ca8",
+  "baseline_builder_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+  "model": "saved R_smooth aggregate normalized raw sources; finite uniform-grid reduction",
+  "set": "triangle",
+  "degree": 12,
+  "M": 325,
+  "N": 91,
+  "global_source_columns": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90
+  ],
+  "screen_order": [
+    6,
+    4,
+    3,
+    5
+  ],
+  "result": "EXACT_W_LOWER_PASSES",
+  "winning": {
+    "screen": {
+      "stage": 11,
+      "source": 6,
+      "node": 22,
+      "point": [
+        "-1",
+        "5/6"
+      ],
+      "all_node_count": 325,
+      "squared_capacity_lower_floor": 17525752205103,
+      "exact_lower_sha256": "b96c43b37b3d1dae78743ba5c56ace5770b105c619b0efa31d7cdad539566f4d",
+      "threshold_squared": 65536,
+      "passes": true
+    },
+    "direct_controls": {
+      "actual_two_projector_derivative_squared_equal": true,
+      "direct_frozen_closure_squared_equal": true,
+      "current_projector_term_nonzero": true,
+      "next_projector_term_nonzero": true,
+      "global_source_count": 90,
+      "nonzero_source_count": 1,
+      "source_budget_squared_exact": "1",
+      "sigma_squared_sha256": "0ecd5fa52c1d6b3c260c0bd92d9c2cad3564420a12752f7595301149f48ef976",
+      "tau_squared_sha256": "3de2e22e7e609030976371853a80fdd69bf0ff0be9edd8fc2f8c6740487c4a57"
+    },
+    "exact_artifact": {
+      "path": "/tmp/padua-lanczos-frontier-g2/independent-triangle-exact.json",
+      "bytes": 21285,
+      "sha256": "7f8c93d7d59ff68b03cf4ff17c9a88baba4a426f903f3ddb385b46b9aa9de0aa"
+    }
+  },
+  "screens": [
+    {
+      "stage": 11,
+      "source": 6,
+      "node": 22,
+      "point": [
+        "-1",
+        "5/6"
+      ],
+      "all_node_count": 325,
+      "squared_capacity_lower_floor": 17525752205103,
+      "exact_lower_sha256": "b96c43b37b3d1dae78743ba5c56ace5770b105c619b0efa31d7cdad539566f4d",
+      "threshold_squared": 65536,
+      "passes": true
+    }
+  ],
+  "basis_controls": {
+    "full_Gram_exact": true,
+    "full_X_expansion_exact": true,
+    "normal_trace_exact": "234",
+    "positive_pivots": true,
+    "positive_source_scales": true
+  },
+  "small_degree_controls": {
+    "small_full_trace_control": {
+      "all_source_node_directions": 45,
+      "all_stages": [
+        0,
+        1
+      ],
+      "dense_projector_trace_equals_omega_trace": true,
+      "expectation_exact": "43/135",
+      "global_denominator": 45,
+      "not_a_degree12_result": true
+    },
+    "grid": "3x3 rational product",
+    "degree": 2,
+    "stages": [
+      {
+        "stage": 0,
+        "direct_projector_derivative_equal": true,
+        "alternative_beta_and_coefficient_derivatives_equal": true
+      },
+      {
+        "stage": 1,
+        "direct_projector_derivative_equal": true,
+        "alternative_beta_and_coefficient_derivatives_equal": true
+      }
+    ],
+    "rejected_controls": [
+      "omit next-projector derivative",
+      "omit current-projector derivative",
+      "reverse next-projector sign"
+    ],
+    "scope": "exact finite derivative controls; no n12 threshold decision"
+  },
+  "fixed_certificate_controls": {
+    "fixed_mathematical_data_verified": true,
+    "malformed_fixed_fields_rejected": [
+      "global_source_count",
+      "R_global_denominator_exact",
+      "W_fixed_node",
+      "W_squared_lower_integer_floor",
+      "R_partial_expectation_lower_integer_floor"
+    ],
+    "historical_top_level_lineage_removed_successfully": true,
+    "certificate_sha256": "6bec42971911fb3f86081a13042b6c7029290702c2536c128c0a6f1bf0b746cf"
+  },
+  "R_partial_lower": {
+    "stage": 11,
+    "source": 6,
+    "all_nodes": 325,
+    "global_source_count": 90,
+    "global_variance_denominator": 29250,
+    "xnorm_squared_exact": "1",
+    "partial_lower_floor": 6457695691,
+    "partial_lower_sha256": "f0d30f0a4f3806f47d165b7831b658c422d2f604bb65efc48b65285256e82d86",
+    "threshold": 16,
+    "result": "EXACT_R_LOWER_PASSES",
+    "full_expectation_computed": false,
+    "omitted_trace_terms_nonnegative": true
+  },
+  "R_status": "PARTIAL LOWER ONLY; full expectation not computed",
+  "limits": [
+    "One exact source pulse lower for W; no all-source upper. Optional R partial trace is only a lower for the unchanged full law.",
+    "No all-degree L2 result, SH_n extension, finite-epsilon or IEEE assertion.",
+    "Independent execution shares pinned baseline builder only; no producer import."
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "python_flint": "0.9.0",
+    "seconds": 1.7576875250015291
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g2_independent.py",
+    "--set",
+    "triangle",
+    "--partial-r",
+    "--fixed-certificate",
+    "topics/padua-lanczos-frontier-20261105/evidence/g2-fixed-certificate.json",
+    "--output",
+    "topics/padua-lanczos-frontier-20261105/evidence/g2-independent-triangle.json",
+    "--exact-output",
+    "/tmp/padua-lanczos-frontier-g2/independent-triangle-exact.json"
+  ]
+}

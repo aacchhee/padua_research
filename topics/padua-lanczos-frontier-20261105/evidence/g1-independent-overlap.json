@@ -1,0 +1,496 @@
+{
+  "status": "PASS finite independent exact endpoint rerun",
+  "implementation": "independent C++ GMP mpq_class; no producer imports",
+  "code_sha256": "0d8aed21b9ee3c6c4ef6899fd429ac55b2d200a439cce38ea71ad2448cc1fc77",
+  "old_sha256": "0d9c236fe879879b7f546596c554d213b7b8c408d31dec08dd79146c7d629344",
+  "command": [
+    "topics/padua-lanczos-frontier-20261105/code/g1_independent_run.py",
+    "--old",
+    "/tmp/padua-lanczos-frontier-g1/inputs/e1-full-sweep.json",
+    "--out",
+    "/tmp/padua-lanczos-frontier-g1-independent/overlap",
+    "--degree",
+    "12",
+    "--workers",
+    "4",
+    "--timeout",
+    "1800",
+    "--receipt",
+    "/tmp/padua-lanczos-frontier-g1-independent/overlap-receipt.json"
+  ],
+  "runs": [
+    {
+      "case": [
+        "triangle",
+        "bj",
+        2
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.018052445999273914,
+      "rows": 1,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/triangle-bj-d2.jsonl",
+      "sha256": "56010ee3d250c1448b1e4577266417b9719b23d7a7dc5473cb2489640269292f",
+      "bytes": 415
+    },
+    {
+      "case": [
+        "triangle",
+        "mirror",
+        2
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.018853032999686548,
+      "rows": 1,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/triangle-mirror-d2.jsonl",
+      "sha256": "2b847d53697f03532586b25f154643d51a8beac419ea2e153de333d559a7d15e",
+      "bytes": 414
+    },
+    {
+      "case": [
+        "triangle",
+        "alt",
+        2
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.019777432999035227,
+      "rows": 1,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/triangle-alt-d2.jsonl",
+      "sha256": "9a424fd37384eb6700cbcc429a594aef8b503382cab732d83a6a9a5905fb45b6",
+      "bytes": 415
+    },
+    {
+      "case": [
+        "triangle",
+        "pivot",
+        2
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.021319375000530272,
+      "rows": 1,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/triangle-pivot-d2.jsonl",
+      "sha256": "8677025347c66238443eb4bd44d2b98765d71b8902850dc7618724cbb4a950cd",
+      "bytes": 413
+    },
+    {
+      "case": [
+        "rotated",
+        "bj",
+        2
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.034284479999769246,
+      "rows": 1,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/rotated-bj-d2.jsonl",
+      "sha256": "342e5fd5c2981717811621535c7180f988b572a609e54edfc2bb37bd05bdb44f",
+      "bytes": 457
+    },
+    {
+      "case": [
+        "rotated",
+        "mirror",
+        2
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.03508036200037168,
+      "rows": 1,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/rotated-mirror-d2.jsonl",
+      "sha256": "e4fc09b8a243cf2a56388e95b137eb861580884b2cddea482491bde2bbe20caa",
+      "bytes": 461
+    },
+    {
+      "case": [
+        "rotated",
+        "alt",
+        2
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.0667565210005705,
+      "rows": 1,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/rotated-alt-d2.jsonl",
+      "sha256": "a9f31c0a2f8a5aa39deb96b88c53165881bda2dbe6061f433101cf21b261f9d2",
+      "bytes": 458
+    },
+    {
+      "case": [
+        "rotated",
+        "pivot",
+        2
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.03235008500087133,
+      "rows": 1,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/rotated-pivot-d2.jsonl",
+      "sha256": "6ff98d1d623eaa3103b52de2496d7bfb7bfca5cb12c956455a78c61de80ab972",
+      "bytes": 465
+    },
+    {
+      "case": [
+        "triangle",
+        "bj",
+        3
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.0655023399995116,
+      "rows": 2,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/triangle-bj-d3.jsonl",
+      "sha256": "edcb9eba1d7b9eabebac0b6a0a2b2d3804acc9b57dcac0dd15d02eed4fe3d5a4",
+      "bytes": 870
+    },
+    {
+      "case": [
+        "triangle",
+        "mirror",
+        3
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.033137387999886414,
+      "rows": 2,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/triangle-mirror-d3.jsonl",
+      "sha256": "4f8693001f9bc4d65e6867f798d30c38450a91a76e0b3eb29e817b91784f9f47",
+      "bytes": 860
+    },
+    {
+      "case": [
+        "triangle",
+        "alt",
+        3
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.06527528300102858,
+      "rows": 2,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/triangle-alt-d3.jsonl",
+      "sha256": "190ee04f50fbf6da883de8ec78717b55b6c0eba48cdb41167aa63dd9e0d986d9",
+      "bytes": 879
+    },
+    {
+      "case": [
+        "triangle",
+        "pivot",
+        3
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.0668346010006644,
+      "rows": 2,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/triangle-pivot-d3.jsonl",
+      "sha256": "8ed9c01b9344c7c14d34eb54abbebfe760b257e42dc87d14bc70ed6d591ad4b9",
+      "bytes": 866
+    },
+    {
+      "case": [
+        "rotated",
+        "bj",
+        3
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.11677986699942267,
+      "rows": 2,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/rotated-bj-d3.jsonl",
+      "sha256": "801f4392b68a5f27acbcb43ec53678404227b644509cb5d49dc03c5ca4fe772b",
+      "bytes": 1056
+    },
+    {
+      "case": [
+        "rotated",
+        "mirror",
+        3
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.11485513300067396,
+      "rows": 2,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/rotated-mirror-d3.jsonl",
+      "sha256": "1bacd843b947d60c25ee928128a98020cf94eea692cbe24db0aa4e69a1922d72",
+      "bytes": 1129
+    },
+    {
+      "case": [
+        "rotated",
+        "alt",
+        3
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.11500370500107238,
+      "rows": 2,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/rotated-alt-d3.jsonl",
+      "sha256": "f4529c600bb70b2d61bb087d15a456cc61a337278978c9143015988e0f09059e",
+      "bytes": 1106
+    },
+    {
+      "case": [
+        "rotated",
+        "pivot",
+        3
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.11532590299975709,
+      "rows": 2,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/rotated-pivot-d3.jsonl",
+      "sha256": "ce8ed89106dce7aae3daeeaedecfcbbe40362611cfb420be2b283087d07908fd",
+      "bytes": 1137
+    },
+    {
+      "case": [
+        "triangle",
+        "bj",
+        4
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.1202072500000213,
+      "rows": 3,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/triangle-bj-d4.jsonl",
+      "sha256": "267c726a5a87aa687834c8ec5d1147293d05583f66ea4aca2335ef64d3d36ac3",
+      "bytes": 1368
+    },
+    {
+      "case": [
+        "triangle",
+        "mirror",
+        4
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.12071235899929889,
+      "rows": 3,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/triangle-mirror-d4.jsonl",
+      "sha256": "5a34cbd7996b7415eb6dcecb01d590e0ef174d33a2d33dac7cff67dd59b928c0",
+      "bytes": 1376
+    },
+    {
+      "case": [
+        "triangle",
+        "alt",
+        4
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.12221784400026081,
+      "rows": 3,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/triangle-alt-d4.jsonl",
+      "sha256": "19805186d7c2e3323894dfc3cd61522e279133ead3ccee54bc6aeeb52095095a",
+      "bytes": 1401
+    },
+    {
+      "case": [
+        "triangle",
+        "pivot",
+        4
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.1197912740008178,
+      "rows": 3,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/triangle-pivot-d4.jsonl",
+      "sha256": "bce7d4113a96012a7f69d8c60ae54567c2c6550217edd440e6da058151a32381",
+      "bytes": 1380
+    },
+    {
+      "case": [
+        "rotated",
+        "bj",
+        4
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.2704841300001135,
+      "rows": 3,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/rotated-bj-d4.jsonl",
+      "sha256": "ceeb52eee72e56103070c6952a605436b97cd592831360d341e1b4dc9d58dfd1",
+      "bytes": 1987
+    },
+    {
+      "case": [
+        "rotated",
+        "mirror",
+        4
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.21927424000023166,
+      "rows": 3,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/rotated-mirror-d4.jsonl",
+      "sha256": "a276b55263246ffb6e6c14db448ba9c4f90ffb3f592835b1510271e72696ca28",
+      "bytes": 2148
+    },
+    {
+      "case": [
+        "rotated",
+        "alt",
+        4
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.3178596190009557,
+      "rows": 3,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/rotated-alt-d4.jsonl",
+      "sha256": "d39a3a8114708e834a1a61d683826b4d3577d379e9170db8dd01672ff799f19f",
+      "bytes": 2152
+    },
+    {
+      "case": [
+        "rotated",
+        "pivot",
+        4
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.2665843049999239,
+      "rows": 3,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/rotated-pivot-d4.jsonl",
+      "sha256": "a4d4caec626d952efb52047c34d8a6b4c4fd5ebb44bb17b6498a0ede75ca09c5",
+      "bytes": 2159
+    },
+    {
+      "case": [
+        "triangle",
+        "bj",
+        12
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 4.284589436001625,
+      "rows": 11,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/triangle-bj-d12.jsonl",
+      "sha256": "e9426a1c9f4436d1264f8c72f40b4c37807efbffa25494f3e528c64e369e35e9",
+      "bytes": 7726
+    },
+    {
+      "case": [
+        "triangle",
+        "mirror",
+        12
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 2.5784257220002473,
+      "rows": 11,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/triangle-mirror-d12.jsonl",
+      "sha256": "f9b6e53e98a5a554b629ba325cfb3f3c5490076a771ba534b076e9bc5c15f906",
+      "bytes": 7833
+    },
+    {
+      "case": [
+        "triangle",
+        "alt",
+        12
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 4.487890802000038,
+      "rows": 11,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/triangle-alt-d12.jsonl",
+      "sha256": "42800244842ff00c6e0edfa80053b53d91fa734f63d8a3f6032e6fde36cb733c",
+      "bytes": 8570
+    },
+    {
+      "case": [
+        "triangle",
+        "pivot",
+        12
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 4.3838676499999565,
+      "rows": 11,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/triangle-pivot-d12.jsonl",
+      "sha256": "9182ea093287e33bc3ee521e0f61143260ec5ce7b378c1595e3c47f3fe6f5053",
+      "bytes": 8642
+    },
+    {
+      "case": [
+        "rotated",
+        "bj",
+        12
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 163.2119405279991,
+      "rows": 11,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/rotated-bj-d12.jsonl",
+      "sha256": "2ced01e065d8eeec52c98324dc8abef2d52e0d98f99dde3a89059246cbe8ad24",
+      "bytes": 86739
+    },
+    {
+      "case": [
+        "rotated",
+        "mirror",
+        12
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 196.01543119300004,
+      "rows": 11,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/rotated-mirror-d12.jsonl",
+      "sha256": "c6e94cded0c61fe9000672aa4a030a04433c195bc65cb43ec8adfe9ab12088d7",
+      "bytes": 92320
+    },
+    {
+      "case": [
+        "rotated",
+        "alt",
+        12
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 311.11924055500094,
+      "rows": 11,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/rotated-alt-d12.jsonl",
+      "sha256": "e616df02be4e98b07d0770830e6c3fd20ef4ff8a75c922e1a8bb3536ecacdade",
+      "bytes": 104429
+    },
+    {
+      "case": [
+        "rotated",
+        "pivot",
+        12
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 285.6246445379984,
+      "rows": 11,
+      "path": "/tmp/padua-lanczos-frontier-g1-independent/overlap/rotated-pivot-d12.jsonl",
+      "sha256": "72fb5b1c70e6e24a8253d63c1bcd1e6ab6627b0ae34816d482b7fe29b7c72453",
+      "bytes": 100264
+    }
+  ],
+  "prefix_checks": 24,
+  "malformed_controls": [
+    {
+      "control": "omitted source",
+      "rejected": true
+    },
+    {
+      "control": "wrong point count",
+      "rejected": true
+    },
+    {
+      "control": "wrong basis dimension",
+      "rejected": true
+    },
+    {
+      "control": "negative endpoint",
+      "rejected": true
+    },
+    {
+      "control": "bad upper minimum",
+      "rejected": true
+    },
+    {
+      "control": "missing pivot tie",
+      "rejected": true
+    },
+    {
+      "control": "Y tie break",
+      "rejected": true
+    },
+    {
+      "control": "wrong trace",
+      "rejected": true
+    },
+    {
+      "control": "no Gram checks",
+      "rejected": true
+    },
+    {
+      "control": "invalid native arguments ('triangle', '21', 'bj')",
+      "rejected": true
+    },
+    {
+      "control": "invalid native arguments ('triangle', '2', 'bad')",
+      "rejected": true
+    },
+    {
+      "control": "invalid native arguments ('bad', '2', 'bj')",
+      "rejected": true
+    }
+  ],
+  "rules_sha": "0e493be7f9883e00e6260cf6b081c607a230177f",
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "native_code_unchanged_during_run": true,
+  "higher_degrees": "not covered by this overlap receipt",
+  "harness_note": "Executed initial harness before higher-degree gate, new-tie generalization and provenance metadata additions; native source unchanged, final harness retained.",
+  "GMP_package_version": "2:6.3.0+dfsg-3 (Debian libgmp10 and libgmp-dev)"
+}

@@ -1,0 +1,190 @@
+{
+  "scope": {
+    "set": "rotated Q24",
+    "degree": 12,
+    "rule": "alt",
+    "M": 625,
+    "N": 91,
+    "all_source_columns": 90,
+    "source_range": [
+      1,
+      90
+    ],
+    "row_zero": "identically zero",
+    "rho": "coordinate product + all first matvec products + all partial sums l>=1 + 3abs(bk)",
+    "model": "PD-T138 full formal relative-error scalar-CGS2 graph"
+  },
+  "result": "INCONCLUSIVE_CERTIFICATE",
+  "rules_head": "684849d7d19ac2604213ae3d4f499d3436f58b3d",
+  "source_sha256": {
+    "e1_exact.py": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+    "e1_cgs2.py": "426630eb916e13bb14409f6f7b8ea310eaeb1bf7949de10866d163aad31c7b4b"
+  },
+  "frozen_evidence_sha256": {
+    "e1-scalar-cgs2.json": "e215556a01f9e169163b228dfe1b984d28e0cebd7f78e0d858f9a61a0de878c8",
+    "e1-multinode-certificates.json": "fae9c8743c78230ef0aa82c185d1efe0eee37be066982a37d39d920af95719f0"
+  },
+  "code_sha256": "0da27e69ddd3cff5ca23e3fcac764f53891ad164ffab20324540fd67d2faf901",
+  "old_frobenius_exactly_reproduced": true,
+  "old_ratio_G_over_U_display": 62.08553668985878,
+  "old_factor_ten": "INCONCLUSIVE original endpoints; unchanged",
+  "new_upper_integer": 13462956266,
+  "strict_exact_comparison": "No tested upper passes; no conclusion about true capacity ratio",
+  "candidates": [
+    {
+      "step": 0,
+      "proposal": "ones",
+      "U_integer_upper": 37165812233,
+      "U_float_display": 37165812232.14695,
+      "maximizing_node": 0,
+      "pass_exact_100U_lt_G": false,
+      "pass_100_integer_upper_lt_G": false,
+      "candidate": {
+        "path": "/tmp/padua-lanczos-frontier-l4/producer/candidate-00.json",
+        "bytes": 17333,
+        "sha256": "f02da0499a4949b176eb32582fbbc61b95a7d9fa268445751f08372b595a3c45"
+      }
+    },
+    {
+      "step": 1,
+      "proposal": "float power step, normalize max=1, round times1e9, floor1",
+      "U_integer_upper": 13529772583,
+      "U_float_display": 13529772582.346474,
+      "maximizing_node": 0,
+      "pass_exact_100U_lt_G": false,
+      "pass_100_integer_upper_lt_G": false,
+      "candidate": {
+        "path": "/tmp/padua-lanczos-frontier-l4/producer/candidate-01.json",
+        "bytes": 21175,
+        "sha256": "7e888b34814a6ae520c7c1f4bc7782e30498e10c40af925e3cae3620d8e7318c"
+      }
+    },
+    {
+      "step": 2,
+      "proposal": "float power step, normalize max=1, round times1e9, floor1",
+      "U_integer_upper": 13463203624,
+      "U_float_display": 13463203623.161737,
+      "maximizing_node": 0,
+      "pass_exact_100U_lt_G": false,
+      "pass_100_integer_upper_lt_G": false,
+      "candidate": {
+        "path": "/tmp/padua-lanczos-frontier-l4/producer/candidate-02.json",
+        "bytes": 21106,
+        "sha256": "30deda1d6c75854ba7f4617be7ae4379efcbbb945414b752682dcd2a31e1919a"
+      }
+    },
+    {
+      "step": 3,
+      "proposal": "float power step, normalize max=1, round times1e9, floor1",
+      "U_integer_upper": 13462956266,
+      "U_float_display": 13462956265.146723,
+      "maximizing_node": 0,
+      "pass_exact_100U_lt_G": false,
+      "pass_100_integer_upper_lt_G": false,
+      "candidate": {
+        "path": "/tmp/padua-lanczos-frontier-l4/producer/candidate-03.json",
+        "bytes": 21110,
+        "sha256": "7192059c23df523d4a4caebdabc1f2435bc9e3f07703fb3c3405bea32e1f4a99"
+      }
+    },
+    {
+      "step": 4,
+      "proposal": "float power step, normalize max=1, round times1e9, floor1",
+      "U_integer_upper": 13462964839,
+      "U_float_display": 13462964838.552881,
+      "maximizing_node": 261,
+      "pass_exact_100U_lt_G": false,
+      "pass_100_integer_upper_lt_G": false,
+      "candidate": {
+        "path": "/tmp/padua-lanczos-frontier-l4/producer/candidate-04.json",
+        "bytes": 21114,
+        "sha256": "81dee28e68c4af9d305d9076eeee922869c73fa9356cc56a32f3917ce437580a"
+      }
+    },
+    {
+      "step": 5,
+      "proposal": "float power step, normalize max=1, round times1e9, floor1",
+      "U_integer_upper": 13462964836,
+      "U_float_display": 13462964835.58304,
+      "maximizing_node": 261,
+      "pass_exact_100U_lt_G": false,
+      "pass_100_integer_upper_lt_G": false,
+      "candidate": {
+        "path": "/tmp/padua-lanczos-frontier-l4/producer/candidate-05.json",
+        "bytes": 21116,
+        "sha256": "0017fde6f611abb804e723154696373695647f2741d32faf46d9f47c39a01383"
+      }
+    },
+    {
+      "step": 6,
+      "proposal": "float power step, normalize max=1, round times1e9, floor1",
+      "U_integer_upper": 13462964836,
+      "U_float_display": 13462964835.58304,
+      "maximizing_node": 261,
+      "pass_exact_100U_lt_G": false,
+      "pass_100_integer_upper_lt_G": false,
+      "candidate": {
+        "path": "/tmp/padua-lanczos-frontier-l4/producer/candidate-06.json",
+        "bytes": 21116,
+        "sha256": "7461baec1a7378160cbdfbf6f0f6dc43d1f2202317d863cf5d20ba88ff0b1080"
+      }
+    },
+    {
+      "step": 7,
+      "proposal": "float power step, normalize max=1, round times1e9, floor1",
+      "U_integer_upper": 13462964836,
+      "U_float_display": 13462964835.58304,
+      "maximizing_node": 261,
+      "pass_exact_100U_lt_G": false,
+      "pass_100_integer_upper_lt_G": false,
+      "candidate": {
+        "path": "/tmp/padua-lanczos-frontier-l4/producer/candidate-07.json",
+        "bytes": 21116,
+        "sha256": "a97b43d4b8ee157a352d6c72e68e83d7ffd750bcabbe040b60b3a2b95e323d8a"
+      }
+    },
+    {
+      "step": 8,
+      "proposal": "float power step, normalize max=1, round times1e9, floor1",
+      "U_integer_upper": 13462964836,
+      "U_float_display": 13462964835.58304,
+      "maximizing_node": 261,
+      "pass_exact_100U_lt_G": false,
+      "pass_100_integer_upper_lt_G": false,
+      "candidate": {
+        "path": "/tmp/padua-lanczos-frontier-l4/producer/candidate-08.json",
+        "bytes": 21116,
+        "sha256": "e1dcd19421a900b0597016a1ba057e969f6c4301a854ac1f78f7c9e3dd288275"
+      }
+    }
+  ],
+  "envelope": {
+    "path": "/tmp/padua-lanczos-frontier-l4/producer/full-envelope.jsonl.gz",
+    "bytes": 49329865,
+    "sha256": "fef9cb00b58a709d0ed952fbb09bc00263eae0fdc8102c5b6f2ff322722364fc"
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/l4_envelope.py",
+    "--frozen-evidence",
+    "/tmp/padua-lanczos-frontier-g0/replay/topics/padua-lanczos-drift-20261101/evidence",
+    "--output-dir",
+    "/tmp/padua-lanczos-frontier-l4/producer",
+    "--receipt",
+    "topics/padua-lanczos-frontier-20261105/evidence/l4-envelope.json"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "python_flint": "0.9.0",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "elapsed_seconds": 287.84863038599997
+  },
+  "retention": "Temporary external working artifacts; cold-storage archival/delivery pending. Regenerate with recorded command and new output directory.",
+  "limits": [
+    "Formal first-order scalar relative-error capacity only; no actual IEEE lower or finite-epsilon conclusion.",
+    "No all-degree claim, theorem status, ID assignment, or kill of target on certificate failure.",
+    "Developer execution; independent checker/rerun remains separate."
+  ]
+}

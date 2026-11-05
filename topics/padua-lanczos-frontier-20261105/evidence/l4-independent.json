@@ -1,0 +1,291 @@
+{
+  "result": "INDEPENDENT_FINITE_FACTOR_TEN_PASSES",
+  "scope": {
+    "set": "rotated Q24",
+    "degree": 12,
+    "rule": "alt",
+    "nodes": 625,
+    "columns": 91,
+    "full_sources": 90,
+    "model": "PD-T138 full formal scalar relative-error CGS2"
+  },
+  "producer_sha256": "0da27e69ddd3cff5ca23e3fcac764f53891ad164ffab20324540fd67d2faf901",
+  "independent_checker": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/l4_independent.py",
+    "bytes": 16473,
+    "sha256": "491be4db86f4a0c1ff369f4b51043d63944562d7ca522e60cd794ed4d70248ac"
+  },
+  "regeneration_receipt": {
+    "path": "/tmp/padua-lanczos-frontier-l4/astra.json",
+    "bytes": 7189,
+    "sha256": "13210d31f6533a267fb03877775da659a220aaf1d2cac071a7ae28e75675f565"
+  },
+  "developer_receipt": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/evidence/l4-envelope.json",
+    "bytes": 7245,
+    "sha256": "0ddc935bed63d22546eb12ef9a00765a4ebceaf70c69c7fe61afbb2979e0e6c5"
+  },
+  "regenerated_envelope": {
+    "path": "/tmp/padua-lanczos-frontier-l4/astra/full-envelope.jsonl.gz",
+    "bytes": 49329865,
+    "sha256": "ab4b4c9e2e37ac5ef6422959015a9e926c8d87820b3493612917d9df89e26c7f"
+  },
+  "canonical_envelope_sha256": "382e31499b1867775b7e536d513be08a4ca7f8382e96d5ed93b4313c8673d3a1",
+  "exact_full_envelope_matches_developer": true,
+  "regenerated_power_proposal_equality_diagnostic": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "saved_rational_upper_vectors_verified_independently_of_new_float_proposals": true,
+  "exact_old_frobenius_reproduced": true,
+  "old_frobenius_display": 13532944864.274591,
+  "G_R_display": 840200144892.756,
+  "old_G_over_trace_display": 62.08553668985878,
+  "fresh_BJ_reproduction": {
+    "path": "/tmp/padua-lanczos-frontier-l4-bj-independent.json",
+    "bytes": 925,
+    "sha256": "dc34a320a340f1a1b8dfab6f41f49e4f71bae6db297306795aa08819c3691c9e"
+  },
+  "BJ_checks": {
+    "set": "rotated",
+    "result": "PASS",
+    "regenerated_target_capacities_and_signs": "matched compact certificate",
+    "explicit_projection_check": {
+      "set": "rotated",
+      "degree": 12,
+      "rule": "bj",
+      "result": "PASS",
+      "checks": [
+        "explicit final normal projection squared norm",
+        "random-sign diagonal expectation",
+        "explicit>=expected",
+        "all node signs unit magnitude"
+      ],
+      "trust_limit": "Target capacities are trusted input to this checker; independent generator rerun needed to check source propagation.",
+      "input_sha256": "6c9552895c92c3ae093a3b4fa386f85a3b07dc80473ef1e026d17686cdf40d7c"
+    },
+    "generator_sha256": "32b9e82756a38387ce5a9f2d596d3f6d59282eeec30b5a25afe96f514abe5553",
+    "certificate_sha256": "fae9c8743c78230ef0aa82c185d1efe0eee37be066982a37d39d920af95719f0",
+    "source_record_sha256": "e215556a01f9e169163b228dfe1b984d28e0cebd7f78e0d858f9a61a0de878c8"
+  },
+  "candidates": [
+    {
+      "step": 0,
+      "B": 37165812233,
+      "U_sha256": "77bd69ca4c685a4ee70549b0cf74c5f3ffdb06f9417dbd5c75cc0b9eb75a7efd",
+      "exact_100U_lt_G": false,
+      "exact_100B_lt_G": false
+    },
+    {
+      "step": 1,
+      "B": 13529772583,
+      "U_sha256": "27353be343aeeda133bb0cc2bb234763169cccd0a8387afd85d9869d1a4700a5",
+      "exact_100U_lt_G": false,
+      "exact_100B_lt_G": false
+    },
+    {
+      "step": 2,
+      "B": 13463203624,
+      "U_sha256": "0d4a8196e0e1e33b724e3571f1e94d3c4837938711e236979ef3cc61b549fe39",
+      "exact_100U_lt_G": false,
+      "exact_100B_lt_G": false
+    },
+    {
+      "step": 3,
+      "B": 13462956266,
+      "U_sha256": "d292fe312d0333c65aa040b4a8e300d18b704b5cc1abd3f93f8fe5c4885b8633",
+      "exact_100U_lt_G": false,
+      "exact_100B_lt_G": false
+    },
+    {
+      "step": 4,
+      "B": 13462964839,
+      "U_sha256": "20af0444a2a5cb069c21bacacc090b7759e3cbd6815c17d9c547eddfc6b2ceca",
+      "exact_100U_lt_G": false,
+      "exact_100B_lt_G": false
+    },
+    {
+      "step": 5,
+      "B": 13462964836,
+      "U_sha256": "8f5a5821c40836901112e92684f441cccd8fd2bfa31b7326341a36126eab2c07",
+      "exact_100U_lt_G": false,
+      "exact_100B_lt_G": false
+    },
+    {
+      "step": 6,
+      "B": 13462964836,
+      "U_sha256": "8f5a5821c40836901112e92684f441cccd8fd2bfa31b7326341a36126eab2c07",
+      "exact_100U_lt_G": false,
+      "exact_100B_lt_G": false
+    },
+    {
+      "step": 7,
+      "B": 13462964836,
+      "U_sha256": "8f5a5821c40836901112e92684f441cccd8fd2bfa31b7326341a36126eab2c07",
+      "exact_100U_lt_G": false,
+      "exact_100B_lt_G": false
+    },
+    {
+      "step": 8,
+      "B": 13462964836,
+      "U_sha256": "8f5a5821c40836901112e92684f441cccd8fd2bfa31b7326341a36126eab2c07",
+      "exact_100U_lt_G": false,
+      "exact_100B_lt_G": false
+    }
+  ],
+  "best_step": 3,
+  "best_B": 13462956266,
+  "best_U_display": 13462956265.146723,
+  "best_Gram_product_scalar_loop_agrees": true,
+  "rayleigh_diagnostic": {
+    "value_display": 13462955378.504082,
+    "exact_integer_floor": 13462955378,
+    "exact_floor_le_R_lt_floor_plus_one": true,
+    "exact_100_floor_ge_G_R": true,
+    "exact_value_sha256": "456c9d1e22aaff327c9b9039862a37d4918df27b1deb3a416b3271fe8c533ae3",
+    "exact_100_Rayleigh_gt_G_R": true,
+    "scope": "Obstruction only to this fixed absolute envelope with this frozen BJ lower; not to true scalar capacities or the target."
+  },
+  "malformed_controls": [
+    {
+      "name": "missing source despite valid dimensions",
+      "result": "REJECTED"
+    },
+    {
+      "name": "zero norm",
+      "result": "REJECTED"
+    },
+    {
+      "name": "negative envelope entry",
+      "result": "REJECTED"
+    },
+    {
+      "name": "nonzero constant response",
+      "result": "REJECTED"
+    },
+    {
+      "name": "missing response row",
+      "result": "REJECTED"
+    },
+    {
+      "name": "zero vector coordinate",
+      "result": "REJECTED"
+    },
+    {
+      "name": "one unit underestimated outward bound",
+      "result": "REJECTED"
+    },
+    {
+      "name": "false factor ten acceptance",
+      "result": "REJECTED"
+    },
+    {
+      "name": "omitted positive envelope entry with full-source header",
+      "result": "REJECTED"
+    },
+    {
+      "name": "artifact hash mismatch",
+      "result": "REJECTED"
+    }
+  ],
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/l4_independent.py",
+    "--regeneration",
+    "/tmp/padua-lanczos-frontier-l4/astra.json",
+    "--developer",
+    "topics/padua-lanczos-frontier-20261105/evidence/l4-envelope.json",
+    "--frozen-evidence",
+    "/tmp/padua-lanczos-frontier-g0/replay/topics/padua-lanczos-drift-20261101/evidence",
+    "--bj-reproduction",
+    "/tmp/padua-lanczos-frontier-l4-bj-independent.json",
+    "--witness-regeneration",
+    "/tmp/padua-lanczos-frontier-l4/full-witness-astra.json",
+    "--witness-developer",
+    "topics/padua-lanczos-frontier-20261105/evidence/l4-full-witness.json",
+    "--fixed-certificate",
+    "topics/padua-lanczos-frontier-20261105/evidence/l4-readout-certificate.json",
+    "--output",
+    "topics/padua-lanczos-frontier-20261105/evidence/l4-independent.json"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "flint": "0.9.0",
+    "elapsed_seconds": 68.445283432
+  },
+  "limitations": [
+    "Same approved producer independently executed; checker is a separately written implementation, not a second derivation of the inherited scalar graph.",
+    "Exact arithmetic trusts Python/FLINT and inherited proved reduction.",
+    "L4a with old BJ lower and the original PD-T140 experiment remain inconclusive; L4b is an additive result.",
+    "Large external artifacts are temporary and require archival or regeneration.",
+    "Separate Claude scientific/protocol audit remains pending."
+  ],
+  "L4a_result": "INDEPENDENTLY_VERIFIED_INCONCLUSIVE",
+  "L4b": {
+    "result": "INDEPENDENT_FULL_OUTPUT_CERTIFICATE_PASSES",
+    "producer_sha256": "9f56bf92aa5883aaf6895327044406b7fdccb57e3c26199391fcaf61d873d2cf",
+    "regeneration_receipt": {
+      "path": "/tmp/padua-lanczos-frontier-l4/full-witness-astra.json",
+      "bytes": 3357,
+      "sha256": "f87d7a1c5d5c97d5077fb3cac5ddb07d812a6583980cdcca534a5861488b9b53"
+    },
+    "developer_receipt": {
+      "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/evidence/l4-full-witness.json",
+      "bytes": 3353,
+      "sha256": "918a168ef7960aef1e7b10fdff6637fc0d5d74473be2bac9ca8e264bbd52d847"
+    },
+    "raw_full_witness": {
+      "path": "/tmp/padua-lanczos-frontier-l4/full-witness-astra/full-witness.jsonl.gz",
+      "bytes": 43591444,
+      "sha256": "0ab86efe20c73dcb6ff6fe48ad5ffd973693548d0f5fcc760a2487571ada67dc"
+    },
+    "exact_full_witness_matches_developer": true,
+    "exact_basis_Gram_diagonal": true,
+    "exact_old_target_projection_reproduced": true,
+    "independent_projection_formula": "||Vt||^2 - sum_l (b_l dot Vt)^2/d_l; denominator sum_k d_k t_k^2",
+    "fixed_readout_certificate": {
+      "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/evidence/l4-readout-certificate.json",
+      "bytes": 3180,
+      "sha256": "1208f11acdc92a599645f68770621f77d44c8e87e0ef2c69cfdbbd12e43e046d"
+    },
+    "fixed_vector_checked_independently_of_new_float_proposal": true,
+    "fixed_lower_integer_L": 2041704913997,
+    "fixed_exact_L_le_Q_lt_L_plus_one": true,
+    "fixed_exact_L_gt_100B": true,
+    "fixed_alt_upper_B": 13462956266,
+    "strict_squared_threshold": 1346295626600,
+    "readouts": [
+      {
+        "scale": 1000000,
+        "gain_display": 2041704913997.443,
+        "floor": 2041704913997,
+        "exact_gain_sha256": "bc2fb280ce39d9f7e740bd29bf0abb0fee122ba30c28eecb2c64010774c1994f",
+        "exact_pass": true,
+        "integer_floor_pass": true
+      }
+    ],
+    "malformed_controls": [
+      {
+        "name": "zero full-output readout",
+        "result": "REJECTED"
+      },
+      {
+        "name": "nonzero constant readout",
+        "result": "REJECTED"
+      },
+      {
+        "name": "inflated attained lower",
+        "result": "REJECTED"
+      }
+    ],
+    "scope": "Same frozen formal scalar witness, all90sources/outputs; no new delta sign search or actual IEEE assertion."
+  }
+}

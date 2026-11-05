@@ -1,0 +1,237 @@
+{
+  "base": "a3f03be58be6819d833523ef26ccff69f5bc184a",
+  "proposal_sha256": "aeb09ac1de69d8bf02cd9c9a1384474ad61ab00ed9cffb6a17a528b17ee3db91",
+  "map_sha256": "65fcfbcc106741f9aa1ca7dc72be047648ae050c72f04084da000ece4769eb47",
+  "operations": [
+    {
+      "file": "PROOF_STATUS.md",
+      "title": "## PROOF_STATUS.md \u2014 PD-T055",
+      "append": false,
+      "old_sha256": "b4c1671c3f89316df00b42dfba80c7a7d5da0350bca4810e4c58b0f00f4e0151",
+      "new_sha256": "46b5ac42ec658b0537af9591dfdf95951fb26f6b038bb6e0681144c18a559555"
+    },
+    {
+      "file": "PROOF_STATUS.md",
+      "title": "## PROOF_STATUS.md \u2014 PD-T056",
+      "append": false,
+      "old_sha256": "6cdcee5fb2588da45f11f6ed4e998792c4a91f9e006e2fd799aacda110d40f15",
+      "new_sha256": "6c8039364eb0de50ee4f26e17b46b247b614cbb32e88c8601c8f51fdf3d406f1"
+    },
+    {
+      "file": "PROOF_STATUS.md",
+      "title": "## PROOF_STATUS.md \u2014 PD-T075",
+      "append": false,
+      "old_sha256": "6d68472ac671d3cadc15bb848fb86ee08153d294508a041a52d2eb520c85968e",
+      "new_sha256": "bee5f96d15edbdba8978227e744075506ef8637d59b2a3b2b22f83ca1d40b2be"
+    },
+    {
+      "file": "PROOF_STATUS.md",
+      "title": "## PROOF_STATUS.md \u2014 PD-T143",
+      "append": false,
+      "old_sha256": "0ff26b60e86eca74b45de2d2def096788b8e3b533706c757fb4c74d8a7c675b1",
+      "new_sha256": "630a24c9c704b63b46c063c5473d89d632ba25063785288a800bc7a1600c1282"
+    },
+    {
+      "file": "PROOF_STATUS.md",
+      "title": "## PROOF_STATUS.md \u2014 PD-T146",
+      "append": false,
+      "old_sha256": "149a43adf3ef4bec72716fd00fb7fcff408a2731ee7c4639d4961b9d3f626685",
+      "new_sha256": "a63cd10f431109fdcf979080e626fb691eb6f6f6e42a3fa1bbd49f1ae4c53002"
+    },
+    {
+      "file": "PROOF_STATUS.md",
+      "title": "## PROOF_STATUS.md \u2014 PD-T140 experiment (explicit no-op)",
+      "append": false,
+      "old_sha256": "ab365d5b3a2814f8aa1af9ce96f4a6f5851975c48a11f32f0a521fac8d468a31",
+      "new_sha256": "ab365d5b3a2814f8aa1af9ce96f4a6f5851975c48a11f32f0a521fac8d468a31"
+    },
+    {
+      "file": "PROOF_STATUS.md",
+      "title": "## PROOF_STATUS.md \u2014 PD-T140 target part",
+      "append": false,
+      "old_sha256": "26fa18f3e4a474dbfd3cab9a1eb679fd05960afd5e6075b3a706715894b35890",
+      "new_sha256": "c4b4849ec35d17b6726e90f45f6764565e4e220359416b0a8cc8e4c59020ffc0"
+    },
+    {
+      "file": "PROOF_STATUS.md",
+      "title": "## PROOF_STATUS.md \u2014 PD-T141",
+      "append": false,
+      "old_sha256": "744f62af03575f361c60e831b48751923c4dae4604a81d95ffe8eca9163faa5a",
+      "new_sha256": "342f42bd29a3381b11fb24c3c39e458148b8e57a6e7ac7159d5e57d92fb8c73f"
+    },
+    {
+      "file": "state/IDEAS.md",
+      "title": "## state/IDEAS.md \u2014 IDEA-248",
+      "append": false,
+      "old_sha256": "fe6f25a9df84f960d7870af96de179206766165be10a6a5c4b3a2fb14bb0ba19",
+      "new_sha256": "db259b1ecb7c99ac2be02c67181a07785385d37947d947f909145c2ba837e315"
+    },
+    {
+      "file": "state/IDEAS.md",
+      "title": "## state/IDEAS.md \u2014 IDEA-250",
+      "append": false,
+      "old_sha256": "edea73fe913e6730d41f650e1a520b7d7feaca76009e034a5585edafb1c11ee1",
+      "new_sha256": "fc6b3f6aa11ae509bd08e0b10600929efec78694b748c3d82de3d264aeabf3e2"
+    },
+    {
+      "file": "state/IDEAS.md",
+      "title": "## state/IDEAS.md \u2014 IDEA-251",
+      "append": false,
+      "old_sha256": "9c63c674c91253df2b8d6a494fb473b0eb6b5e22e303f97dd60b9438b238ae10",
+      "new_sha256": "d0dcdc79d135aef3635ce116239b91ca881214a6a066f72d5a1f9a96225a6adc"
+    },
+    {
+      "file": "state/IDEAS.md",
+      "title": "## state/IDEAS.md \u2014 IDEA-255",
+      "append": false,
+      "old_sha256": "390b5c3b5bab4275dc245cb8cfa49ec6e05d8ee89539991ead6031ac7ed573b3",
+      "new_sha256": "f21950060d071fdce9f2818314fe60984822114effb031318589bcd7db004b97"
+    },
+    {
+      "file": "state/IDEAS.md",
+      "title": "## state/IDEAS.md \u2014 IDEA-262",
+      "append": false,
+      "old_sha256": "0889956ff14b494e2d499828a030854f9cc929a647bc9dcddeedd703cb882420",
+      "new_sha256": "52ddd7e54012595eec67dcf5493756682c0bb77c192681964d1faa30240a0ba6"
+    },
+    {
+      "file": "state/IDEAS.md",
+      "title": "## state/IDEAS.md \u2014 IDEA-263",
+      "append": false,
+      "old_sha256": "698f2872efb95534b8b197caf5893a12ecbf8f554e78d6264f622f69b1dd2cc9",
+      "new_sha256": "4394ff88d4698c9a2116b754e6d90d5854730790093bda5b921c2b474dfc8398"
+    },
+    {
+      "file": "state/IDEAS.md",
+      "title": "## state/IDEAS.md \u2014 IDEA-264",
+      "append": false,
+      "old_sha256": "0ef11251465daec07ff2042e3aa25b8b3ff5b9f508c61b8674394a78c8b0b611",
+      "new_sha256": "2d41c18902c6f1204b81c69de37868628265f60c98e868b7f42a431e7eaf060e"
+    },
+    {
+      "file": "state/IDEAS.md",
+      "title": "## state/IDEAS.md \u2014 IDEA-265",
+      "append": false,
+      "old_sha256": "fd205839e80e3d16f41360906e7e3be22ed8974923d0d6752e58a4e319e742d5",
+      "new_sha256": "5299f95353ba9109845d6d1f8478e6b23742241cfe997630eacdefcc5553758c"
+    },
+    {
+      "file": "state/IDEAS.md",
+      "title": "## state/IDEAS.md \u2014 IDEA-266",
+      "append": false,
+      "old_sha256": "e5d179da8da18ebb46a6683cc24b2df99b2655065237828c1042538142f554c7",
+      "new_sha256": "627400e8a9de5d1154fecb2c631fc3c09259c559ef4009c49ddc7de5b7e0f8ad"
+    },
+    {
+      "file": "state/IDEAS.md",
+      "title": "## state/IDEAS.md \u2014 IDEA-267",
+      "append": false,
+      "old_sha256": "5031de4a2c38f5deaa696e90f5e8b543d4ef621dbe38c4c7e3f2559864bf8c5b",
+      "new_sha256": "f32d4938983d3cd845c25b003a2b2b7c9029d7f06e0392bb8d9a77e6dd5b74eb"
+    },
+    {
+      "file": "state/IDEAS.md",
+      "title": "## state/IDEAS.md \u2014 IDEA-158",
+      "append": false,
+      "old_sha256": "e48aadf5f6dbda33d1e2f111817465d17413fc451a72b6b2eb8c5ecb2fc1597f",
+      "new_sha256": "03be471d6b28e2acac6bc2874a327605227832cae80f79a951260af5db43c770"
+    },
+    {
+      "file": "state/IDEAS.md",
+      "title": "## state/IDEAS.md \u2014 IDEA-160",
+      "append": false,
+      "old_sha256": "3927f6567daed84aca38e0441d1bae90579162fc1e80ec7f0c1a3ea6fe85a9bb",
+      "new_sha256": "241e65d4c997b5b04550b7105192e6b4379e0eb1b6fad242ff43f4998f61cbdf"
+    },
+    {
+      "file": "state/IDEAS.md",
+      "title": "## state/IDEAS.md \u2014 IDEA-162",
+      "append": false,
+      "old_sha256": "e6412d1d9acab2e7d60dbe47306443d6b727897f313d65c291ae890d70e8586e",
+      "new_sha256": "a41c3cc3019579c34e12d4a014fa1baefe84e14bf4a1dafd3a27434f6fe23398"
+    },
+    {
+      "file": "state/IDEAS.md",
+      "title": "## state/IDEAS.md \u2014 IDEA-253",
+      "append": false,
+      "old_sha256": "4cfbd8fb262e4a7c7219bc7057be2ded5775b76a84940bfdd1696ff6b2d6165a",
+      "new_sha256": "96536e443ca00ee1cc0522ba33716c2aa1caad9db6d57b87d3bd14f237b20d8c"
+    },
+    {
+      "file": "state/IDEAS.md",
+      "title": "## state/IDEAS.md \u2014 append all19 explicit frontier candidates",
+      "append": true,
+      "old_sha256": "6bd120e27ea6938d57e64a9a1ea5bb7c64872f77fa97283fe3de970640bd2a6d",
+      "new_sha256": "d55cbe8abcf3a02906038628302dd6810620b4a2c0a6de8454ad71b66cc10a8e",
+      "extra_parent_updates": [
+        {
+          "id": "IDEA-168",
+          "before": "| IDEA-168 | IDEA?bivariate-lanczos-claude-313 | Two-term Tur\u00e1n certificate for all Padua n \u2265 4 (R05) | Survives for all Padua n \u2265 4 (PD-T068/PD-T069, PROVED; obstruction PD-N022 under unisolvence). This trial fails for n \u2264 3; n = 3 has a different certificate PD-N020. | [L3/candidates.md](../topics/bivariate-lanczos-20261031/directions/L3/candidates.md) |",
+          "after": "| IDEA-168 | IDEA?bivariate-lanczos-claude-313; IDEA?lanczos-frontier-codex-L5-02; square covering/global nonnegativity; horizontal/vertical double-root counting; generating-curve multiplicity; IDEA?lanczos-frontier-codex-L5-03; named-certificate decay implies optimal decay; rho_n versus delta_obs | Two-term Tur\u00e1n certificate for all Padua n \u2265 4 (R05) | Survives for all Padua n \u2265 4 (PD-T068/PD-T069, PROVED; obstruction PD-N022 under unisolvence). This trial fails for n \u2264 3; n = 3 has a different certificate PD-N020. 2026-11-05 frontier consolidated continuation: deferred/OPEN existing PD-T075 open-item route; no degree contradiction. Resume with an exact inequality excluding all admissible nonnegative polynomials; square covering or SOS-only reasoning insufficient; no PD-N. Timing: saved family draft first committed0574c47 preceded full shortlisted reading; later gate/development does not cure or waive deviation; gate-timing-response-01.md records checkpoints; AC accepted the disclosed deviation on 2026-11-05; disclosed, not waived and not cured. 2026-11-05 frontier consolidated continuation: abandoned as equivalent/duplicate invalid inference; rho_n<=delta_obs(n) has the wrong direction for an optimal upper bound. No new PD-N; U2 not rejected. Timing: saved family draft first committed0574c47 preceded full shortlisted reading; later gate/development does not cure or waive deviation; gate-timing-response-01.md records checkpoints; AC accepted the disclosed deviation on 2026-11-05; disclosed, not waived and not cured. | [L3/candidates.md](../topics/bivariate-lanczos-20261031/directions/L3/candidates.md) |"
+        }
+      ]
+    },
+    {
+      "file": "PROOF_STATUS.md",
+      "title": "## PROOF_STATUS.md \u2014 append19 separate theory/negative records",
+      "append": true,
+      "old_sha256": "fdfb34ecf8bff8396dcb4a5af88477b5421264cd3bc0e50487d0a39be4a70296",
+      "new_sha256": "721ba6c68bc2118ed68ea79cedcab8d2df962343fe631708e39f3d915f8c6650"
+    },
+    {
+      "file": "state/CURRENT.md",
+      "title": "## state/CURRENT.md \u2014 Lanczos paragraph (old line103)",
+      "append": false,
+      "old_sha256": "445c567c822a470232c96466026971b3eb333054c62a344740193015ad801626",
+      "new_sha256": "b9289b0a1cd4d214a581c7942344a6aecb8412f02d7dfbcc21c9c49144562052"
+    },
+    {
+      "file": "ID_CROSSWALK.md",
+      "title": "## ID_CROSSWALK.md \u2014 inherited original-to-split paragraph (old line1030)",
+      "append": false,
+      "old_sha256": "8087cc35fa9361eb34712f32db3c7c8d983da36aa9c281c866411daffd418cdf",
+      "new_sha256": "1e82ebe15ae2f87c3fc560a80f1243e8a97c0ad4575061b5ed9083b69354c744"
+    },
+    {
+      "file": "ID_CROSSWALK.md",
+      "title": "## ID_CROSSWALK.md \u2014 append complete provisional table and ledger links",
+      "append": true,
+      "old_sha256": "05b678ea154704f3deb8da6a9f71ce64e2bbf80666421b26d487cbc2ec157425",
+      "new_sha256": "a0d16c12ef6c1352c7b4d572b7aa523a7cd763102864df6e35732560a621e53f"
+    },
+    {
+      "file": "RESULTS.md",
+      "title": "## RESULTS.md \u2014 append this topic section only",
+      "append": true,
+      "old_sha256": "864e067354d5935de52211d83acaeb87f5132887999a7c203b3a0c8e382b13ef",
+      "new_sha256": "7738c5d961d1716da2b0aeb81c0c355a5991a6494155b6b0fcadb2442bd358e8"
+    }
+  ],
+  "files": {
+    "PROOF_STATUS.md": {
+      "before": "a1536bc32f5609340fdccdda5e3d8893abe34d24d9bff6832156aadddb134bb5",
+      "after": "a696f9f6461d7a5d3002cb798f85228457edefe40cec7bef54950e84904e07e5"
+    },
+    "state/IDEAS.md": {
+      "before": "948c30b35cdb3ffacefe398acfb35439fc7e69f8be33fd94bc605b052b8d03c6",
+      "after": "a3405f6e24deee3390b46cfc51c269b54ef70e41c2517a84b0cd7d11ddc3726f"
+    },
+    "state/CURRENT.md": {
+      "before": "63221cd1d9f0161e12d1f6faa6b6d0e086c0c67ffe8854301c57451a218348db",
+      "after": "b8995375a5a9e2421fa0ad63722538b6205e4f89d04813ac2b2c6460e764e0ea"
+    },
+    "ID_CROSSWALK.md": {
+      "before": "f447d05a7f9895169c59a028efe387918d1a90258b34e3bc7e661dab1ff826d9",
+      "after": "ec3cb89f2e99587e362a89f2095feb4a94d27c3fd142fc675c42e98437b8517e"
+    },
+    "RESULTS.md": {
+      "before": "df4fea5e62bea3d893ec181afa16ee8bcaca6b0b188bd82db976a080d06cce12",
+      "after": "b4ef648250801b685ee8aa3355c4e826395e493054a85b891ee305663d1a1a76"
+    }
+  },
+  "previous_receipt": {
+    "path": "/tmp/padua-lanczos-frontier-preparation/application-before-metadata-refresh.json",
+    "sha256": "6deaa2de6febaf2958b6b09649261e63e8100f268999c9535ecfef320512ef90",
+    "base": "a3f03be58be6819d833523ef26ccff69f5bc184a"
+  }
+}
