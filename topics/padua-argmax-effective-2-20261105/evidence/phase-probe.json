@@ -1,0 +1,461 @@
+{
+  "status": "MEASURED; floating class sampling only",
+  "rho1_preregistered": 0.1,
+  "rules_sha": "2fb2f7502bb8d1b46c0fe1089588c46a06df258d",
+  "command": "python topics/padua-argmax-effective-2-20261105/code/phase_probe.py",
+  "compile_command": [
+    "cc",
+    "-O3",
+    "-std=c11",
+    "-shared",
+    "-fPIC",
+    "/workspace/padua_research/topics/padua-argmax-effective-2-20261105/code/phase_probe.c",
+    "-lm",
+    "-o",
+    "/workspace/padua_research/local-output/argmax-effective-2-20261105/phase-probe/phase_probe.so"
+  ],
+  "compiler": "cc (Debian 14.2.0-19) 14.2.0",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "sources": [
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/code/phase_probe.c",
+      "bytes": 1510,
+      "sha256": "692d4afd89d3bbda3bac3daaeef7c56aa4ecdde0f9cdd32b9fefa0e296adc365"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/code/phase_probe.py",
+      "bytes": 7620,
+      "sha256": "a2d85ffd293c50095fc6e451a6a4473b17b63bbb54123f397dcec148b08495d9"
+    }
+  ],
+  "raw": [
+    {
+      "path": "local-output/argmax-effective-2-20261105/phase-probe/samples.jsonl",
+      "bytes": 1104384,
+      "sha256": "c7527bf5c7695258fc0b56a96040b55d336107ea03a27ee533bca2ed091644aa"
+    },
+    {
+      "path": "local-output/argmax-effective-2-20261105/phase-probe/degree-details.json",
+      "bytes": 69169,
+      "sha256": "b262b1d7db84292f52147bd4c93b071f64a7e5b5afba3515495036aefedfb1f2"
+    },
+    {
+      "path": "local-output/argmax-effective-2-20261105/phase-probe/validation.json",
+      "bytes": 11576,
+      "sha256": "ec7c46e80a260451b66788f05ffb476fe2f52f46c69364f8104b033fe6350260"
+    }
+  ],
+  "validation": {
+    "points": 71,
+    "lambda_max_abs_error": 7.105427357601002e-15,
+    "S_max_abs_error": 1.2434497875801753e-14
+  },
+  "degrees": [
+    {
+      "n": 17,
+      "Lambda_corner": 8.617947824993603,
+      "centers": 19,
+      "points": 655,
+      "S_points": 49,
+      "wall_seconds": 0.09928979100004653,
+      "cpu_seconds": 0.099278275,
+      "S_eval_seconds_median": 0.00010294599996996112,
+      "S_excess_min": -0.11612052903607051,
+      "S_excess_max": 0.000268455590124006,
+      "class_sample_extrema": {
+        "edge-distance-1": {
+          "points": 124,
+          "defect_min": 1.3988917244930716,
+          "defect_max": 2.3343818621079,
+          "lambda_excess_max": -1.4817184290568166
+        },
+        "edge-distance-3": {
+          "points": 124,
+          "defect_min": 1.1649547482205609,
+          "defect_max": 1.281796075474169,
+          "lambda_excess_max": -1.2238275776918144
+        },
+        "nearcorner-interior": {
+          "points": 196,
+          "defect_min": 2.8070647735981,
+          "defect_max": 3.4468186093589512,
+          "lambda_excess_max": -2.8842765905892715
+        },
+        "central-interior": {
+          "points": 49,
+          "defect_min": 2.3665907196963065,
+          "defect_max": 2.470282751891963,
+          "lambda_excess_max": -2.427578555324211
+        },
+        "edge-distance-2": {
+          "points": 124,
+          "defect_min": 1.3526276229433654,
+          "defect_max": 1.5272431469098775,
+          "lambda_excess_max": -1.4178110002744742
+        },
+        "corner": {
+          "points": 38,
+          "defect_min": -5.329070518200751e-15,
+          "defect_max": 0.03554679219472234,
+          "lambda_excess_max": 1.7763568394002505e-15
+        }
+      }
+    },
+    {
+      "n": 32,
+      "Lambda_corner": 10.99359454110044,
+      "centers": 19,
+      "points": 655,
+      "S_points": 49,
+      "wall_seconds": 0.25422619699997995,
+      "cpu_seconds": 0.25400883300000004,
+      "S_eval_seconds_median": 0.0003423279999879014,
+      "S_excess_min": -0.1572453234680804,
+      "S_excess_max": 0.00010391133282539045,
+      "class_sample_extrema": {
+        "edge-distance-1": {
+          "points": 124,
+          "defect_min": 1.7842043420686888,
+          "defect_max": 2.729102209732341,
+          "lambda_excess_max": -1.9043274593094424
+        },
+        "edge-distance-3": {
+          "points": 124,
+          "defect_min": 1.46219031433764,
+          "defect_max": 1.6190366043506774,
+          "lambda_excess_max": -1.5367789392356777
+        },
+        "edge-distance-2": {
+          "points": 124,
+          "defect_min": 1.6803782554623883,
+          "defect_max": 1.8338611145036694,
+          "lambda_excess_max": -1.7572358033282622
+        },
+        "corner": {
+          "points": 38,
+          "defect_min": -8.881784197001252e-15,
+          "defect_max": 0.04186156016504583,
+          "lambda_excess_max": 0.0
+        },
+        "nearcorner-interior": {
+          "points": 196,
+          "defect_min": 3.409525606104836,
+          "defect_max": 4.1567071857758915,
+          "lambda_excess_max": -3.498401572159996
+        },
+        "central-interior": {
+          "points": 49,
+          "defect_min": 2.624831020408525,
+          "defect_max": 2.7447602050961954,
+          "lambda_excess_max": -2.724264377666989
+        }
+      }
+    },
+    {
+      "n": 48,
+      "Lambda_corner": 12.688784049140628,
+      "centers": 19,
+      "points": 655,
+      "S_points": 49,
+      "wall_seconds": 0.5032527580000306,
+      "cpu_seconds": 0.502886866,
+      "S_eval_seconds_median": 0.0006796559999884266,
+      "S_excess_min": -0.1862086367868283,
+      "S_excess_max": 7.997643234425311e-05,
+      "class_sample_extrema": {
+        "edge-distance-1": {
+          "points": 124,
+          "defect_min": 2.0500046904124023,
+          "defect_max": 3.006892741173356,
+          "lambda_excess_max": -2.1986264464809313
+        },
+        "edge-distance-3": {
+          "points": 124,
+          "defect_min": 1.668142672776339,
+          "defect_max": 1.8493542045853673,
+          "lambda_excess_max": -1.7549023034929228
+        },
+        "edge-distance-2": {
+          "points": 124,
+          "defect_min": 1.8845790519961074,
+          "defect_max": 2.0531974532479538,
+          "lambda_excess_max": -1.9767616128439318
+        },
+        "corner": {
+          "points": 38,
+          "defect_min": -3.552713678800501e-15,
+          "defect_max": 0.045110968970643484,
+          "lambda_excess_max": 0.0
+        },
+        "nearcorner-interior": {
+          "points": 196,
+          "defect_min": 3.822929983936465,
+          "defect_max": 4.642006270157848,
+          "lambda_excess_max": -3.9426184532720843
+        },
+        "central-interior": {
+          "points": 49,
+          "defect_min": 2.8379376322967396,
+          "defect_max": 2.9617254738404046,
+          "lambda_excess_max": -2.941749457583107
+        }
+      }
+    },
+    {
+      "n": 64,
+      "Lambda_corner": 13.973207805351175,
+      "centers": 19,
+      "points": 655,
+      "S_points": 49,
+      "wall_seconds": 0.87140642199995,
+      "cpu_seconds": 0.869907013,
+      "S_eval_seconds_median": 0.0012141540000811801,
+      "S_excess_min": -0.2085933403520741,
+      "S_excess_max": 4.766823632884609e-05,
+      "class_sample_extrema": {
+        "edge-distance-1": {
+          "points": 124,
+          "defect_min": 2.2449537833435667,
+          "defect_max": 3.2128853974791802,
+          "lambda_excess_max": -2.4157479483052633
+        },
+        "edge-distance-3": {
+          "points": 124,
+          "defect_min": 1.8190236617990614,
+          "defect_max": 2.0166774413705717,
+          "lambda_excess_max": -1.915070737205843
+        },
+        "edge-distance-2": {
+          "points": 124,
+          "defect_min": 2.031248911699903,
+          "defect_max": 2.2123535813382986,
+          "lambda_excess_max": -2.1327840916743366
+        },
+        "corner": {
+          "points": 38,
+          "defect_min": -1.2434497875801753e-14,
+          "defect_max": 0.0472675412439969,
+          "lambda_excess_max": 0.0
+        },
+        "nearcorner-interior": {
+          "points": 196,
+          "defect_min": 4.132419219046636,
+          "defect_max": 4.998642649900162,
+          "lambda_excess_max": -4.275545815752194
+        },
+        "central-interior": {
+          "points": 49,
+          "defect_min": 2.9916942351929645,
+          "defect_max": 3.118019446994209,
+          "lambda_excess_max": -3.0983028466519915
+        }
+      }
+    },
+    {
+      "n": 96,
+      "Lambda_corner": 15.898513997081436,
+      "centers": 19,
+      "points": 655,
+      "S_points": 49,
+      "wall_seconds": 1.8713184700000056,
+      "cpu_seconds": 1.869826774,
+      "S_eval_seconds_median": 0.002705015999936222,
+      "S_excess_min": -0.24228069196262858,
+      "S_excess_max": 1.5085901511113775e-05,
+      "class_sample_extrema": {
+        "edge-distance-1": {
+          "points": 124,
+          "defect_min": 2.5257702339917003,
+          "defect_max": 3.5146102800854155,
+          "lambda_excess_max": -2.730549890578411
+        },
+        "edge-distance-3": {
+          "points": 124,
+          "defect_min": 2.037650613209488,
+          "defect_max": 2.254469610200319,
+          "lambda_excess_max": -2.146384799021382
+        },
+        "edge-distance-2": {
+          "points": 124,
+          "defect_min": 2.2329629980057533,
+          "defect_max": 2.4367307737803774,
+          "lambda_excess_max": -2.3520503251417004
+        },
+        "corner": {
+          "points": 38,
+          "defect_min": -2.4868995751603507e-14,
+          "defect_max": 0.05010641325836396,
+          "lambda_excess_max": 2.1316282072803006e-14
+        },
+        "nearcorner-interior": {
+          "points": 196,
+          "defect_min": 4.585071209423003,
+          "defect_max": 5.52432974320366,
+          "lambda_excess_max": -4.762937216731581
+        },
+        "central-interior": {
+          "points": 49,
+          "defect_min": 3.2116800173753752,
+          "defect_max": 3.3396875248482765,
+          "lambda_excess_max": -3.3216986911739514
+        }
+      }
+    },
+    {
+      "n": 128,
+      "Lambda_corner": 17.34605680007003,
+      "centers": 19,
+      "points": 655,
+      "S_points": 49,
+      "wall_seconds": 3.1144999809999945,
+      "cpu_seconds": 3.1117683149999995,
+      "S_eval_seconds_median": 0.004735834000030081,
+      "S_excess_min": -0.26788258465521153,
+      "S_excess_max": -3.552713678800501e-15,
+      "class_sample_extrema": {
+        "edge-distance-1": {
+          "points": 124,
+          "defect_min": 2.7286638807869235,
+          "defect_max": 3.7355011915861294,
+          "lambda_excess_max": -2.9589696172743007
+        },
+        "edge-distance-3": {
+          "points": 124,
+          "defect_min": 2.1963777280111376,
+          "defect_max": 2.4229236166258836,
+          "lambda_excess_max": -2.3128680139327997
+        },
+        "edge-distance-2": {
+          "points": 124,
+          "defect_min": 2.374434854957519,
+          "defect_max": 2.5963226774910027,
+          "lambda_excess_max": -2.5073849087184588
+        },
+        "corner": {
+          "points": 38,
+          "defect_min": -1.4210854715202004e-14,
+          "defect_max": 0.052494767227941,
+          "lambda_excess_max": 1.0658141036401503e-14
+        },
+        "nearcorner-interior": {
+          "points": 196,
+          "defect_min": 4.915458536324673,
+          "defect_max": 5.907074449461909,
+          "lambda_excess_max": -5.118520271177738
+        },
+        "central-interior": {
+          "points": 49,
+          "defect_min": 3.369129369863181,
+          "defect_max": 3.4981640277661707,
+          "lambda_excess_max": -3.480861509741196
+        }
+      }
+    },
+    {
+      "n": 192,
+      "Lambda_corner": 19.500992539058846,
+      "centers": 19,
+      "points": 655,
+      "S_points": 49,
+      "wall_seconds": 6.76707761199998,
+      "cpu_seconds": 6.762141453,
+      "S_eval_seconds_median": 0.010432680000008077,
+      "S_excess_min": -0.306410866776055,
+      "S_excess_max": -1.7763568394002505e-14,
+      "class_sample_extrema": {
+        "edge-distance-1": {
+          "points": 124,
+          "defect_min": 3.017715269247187,
+          "defect_max": 4.055031652991028,
+          "lambda_excess_max": -3.280417623298181
+        },
+        "edge-distance-3": {
+          "points": 124,
+          "defect_min": 2.4230641241186284,
+          "defect_max": 2.662869279019084,
+          "lambda_excess_max": -2.5488028928541304
+        },
+        "edge-distance-2": {
+          "points": 124,
+          "defect_min": 2.577112127281193,
+          "defect_max": 2.821068116032791,
+          "lambda_excess_max": -2.726481904440771
+        },
+        "corner": {
+          "points": 38,
+          "defect_min": -2.1316282072803006e-14,
+          "defect_max": 0.05581664078255244,
+          "lambda_excess_max": 0.0
+        },
+        "nearcorner-interior": {
+          "points": 196,
+          "defect_min": 5.389651475764712,
+          "defect_max": 6.456157485790747,
+          "lambda_excess_max": -5.629802148064158
+        },
+        "central-interior": {
+          "points": 49,
+          "defect_min": 3.592423320864084,
+          "defect_max": 3.7228245682091554,
+          "lambda_excess_max": -3.7061590994375777
+        }
+      }
+    },
+    {
+      "n": 256,
+      "Lambda_corner": 21.111257233386183,
+      "centers": 19,
+      "points": 655,
+      "S_points": 49,
+      "wall_seconds": 11.973485516999972,
+      "cpu_seconds": 11.968626252999998,
+      "S_eval_seconds_median": 0.018338553000035063,
+      "S_excess_min": -0.3355028321532316,
+      "S_excess_max": 4.263256414560601e-14,
+      "class_sample_extrema": {
+        "edge-distance-1": {
+          "points": 124,
+          "defect_min": 3.224488469284168,
+          "defect_max": 4.2862700305421555,
+          "lambda_excess_max": -3.5076778305335843
+        },
+        "edge-distance-3": {
+          "points": 124,
+          "defect_min": 2.5854890784529374,
+          "defect_max": 2.8348316457642007,
+          "lambda_excess_max": -2.7173362729860777
+        },
+        "edge-distance-2": {
+          "points": 124,
+          "defect_min": 2.7226749616536168,
+          "defect_max": 2.9805321501816486,
+          "lambda_excess_max": -2.882041064861472
+        },
+        "corner": {
+          "points": 38,
+          "defect_min": -6.039613253960852e-14,
+          "defect_max": 0.05825788841151791,
+          "lambda_excess_max": 5.684341886080802e-14
+        },
+        "nearcorner-interior": {
+          "points": 196,
+          "defect_min": 5.73062430639369,
+          "defect_max": 6.851293673300335,
+          "lambda_excess_max": -5.997988712378859
+        },
+        "central-interior": {
+          "points": 49,
+          "defect_min": 3.7515590202491147,
+          "defect_max": 3.882801989102905,
+          "lambda_excess_max": -3.866578967201125
+        }
+      }
+    }
+  ],
+  "limits": [
+    "Not an interval enclosure or certificate.",
+    "No box counts or exhaustive minima. A1/A2/A5 do not pass from these samples."
+  ]
+}
