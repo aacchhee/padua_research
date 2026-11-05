@@ -1,0 +1,78 @@
+"""Write or verify the small durable evidence inventory from the repository tree."""
+import argparse
+import gzip
+import hashlib
+import json
+from pathlib import Path
+
+TOPIC = Path(__file__).resolve().parents[1]
+
+
+def verify_certificate_links():
+    summary = json.loads((TOPIC / 'evidence/native-checker-summary.json').read_text())
+    if not summary.get('acceptance_usable_for_proof'):
+        raise SystemExit('FAIL: native acceptance summary is historical or incomplete')
+    for name, expected in summary['code_sha256'].items():
+        current = TOPIC / 'code/native_checker' / name
+        if hashlib.sha256(current.read_bytes()).hexdigest() != expected:
+            raise SystemExit(f'FAIL: checker source differs from acceptance pin: {name}')
+    rows = {row['n']: row for row in
+            (dict(zip(summary['final_rows_columns'], values))
+             for values in summary['final_rows'])}
+    degrees = []
+    for path in sorted((TOPIC / 'evidence').glob('n*.json.gz')):
+        data = json.loads(gzip.decompress(path.read_bytes()))
+        n = data['n']
+        row = rows[n]
+        if (hashlib.sha256(path.read_bytes()).hexdigest() != row['certificate_sha256']
+                or not data['complete'] or data['pending']
+                or len(data['leaves']) != row['bound'] + row['corner']
+                or row['corner'] != 2):
+            raise SystemExit(f'FAIL: certificate/acceptance association at n={n}')
+        degrees.append(n)
+    if not set(range(17, 33)).issubset(degrees):
+        raise SystemExit('FAIL: missing essential continuous-range certificate')
+    return sorted(degrees)
+
+
+def inventory():
+    paths = []
+    for directory in ('code', 'theory', 'ideas', 'attempts', 'evidence'):
+        paths.extend(p for p in (TOPIC / directory).rglob('*')
+                     if p.is_file() and '__pycache__' not in p.parts)
+    paths.extend(TOPIC.glob('independent*.md'))
+    paths.extend(TOPIC / name for name in (
+        'outputs/gates-summary.json', 'cold-storage.json', 'COLD_STORAGE.md',
+        'literature-g8.md'))
+    return [{'path': str(p.relative_to(TOPIC)), 'bytes': p.stat().st_size,
+             'sha256': hashlib.sha256(p.read_bytes()).hexdigest()}
+            for p in sorted(set(paths))]
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--write', action='store_true')
+    args = parser.parse_args()
+    target = TOPIC / 'evidence-manifest.json'
+    degrees = verify_certificate_links()
+    files = inventory()
+    if args.write:
+        data = dict(format='padua-effective-durable-evidence-v1',
+                    rules_input='8a1f394739293953e1566fd24a0a193cc78ff26f',
+                    base='440d1079e42c3ef21c40d1cf8870f5b206410c6a',
+                    hash='sha256', paths_relative_to='this topic', files=files,
+                    external='Bulk raw samples: cold-storage.json and COLD_STORAGE.md; external delivery pending.',
+                    proof_scope='Only listed exact degrees and analytic statements; no global all-n threshold.')
+        target.write_text(json.dumps(data, sort_keys=True, separators=(',', ':')) + '\n')
+    else:
+        data = json.loads(target.read_text())
+        if data['files'] != files:
+            raise SystemExit('FAIL: current evidence files differ from the recorded inventory')
+    print(json.dumps(dict(verified=True, files=len(files),
+                         certificate_degrees=degrees,
+                         payload_bytes=sum(row['bytes'] for row in files),
+                         manifest_bytes=target.stat().st_size)))
+
+
+if __name__ == '__main__':
+    main()

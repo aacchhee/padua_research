@@ -1,0 +1,141 @@
+{
+  "format": "padua-effective-g6-spots-v1",
+  "status": "exact producer output; checker pending",
+  "python": "3.12.14",
+  "invocation": [
+    "topics/padua-argmax-effective-20261103/code/comparison/g6_exact_spots.py",
+    "--float-input",
+    "/workspace/padua-work/comparison/g6.json",
+    "--output",
+    "/workspace/padua-work/comparison/g6-exact.json"
+  ],
+  "float_input_sha256": "cd2718db479893d2c1f4027fb2e96c10b5045ac609af4bea8731b3bab5ce42da",
+  "producer_sha256": "a35096d3614a0e9413a8bf8e24cfed48912da79e61120a044224464d69a0e2f6",
+  "inherited_source_sha256": {
+    "code/gated/d3_edge_common.py": "fd3b278f167999def5a8f43ddd83da258e5ce2452a76082d9256dcde93d01b92",
+    "code/gated/d3_edge_generate.py": "b0c2b98851dd8721bc876686fd388c62085938ff24d97308a132a7f14e9e3145",
+    "code/gated/d3_edge_check.py": "09165fcf6b05de17667db1e109ab06d09c1bea600649ec6d404342ea085e0308",
+    "code/part3/finite_general.py": "b20b7f88ddfc0bbc92e68096063ef626664028c2a379c34d16dc9f84e17aa74a",
+    "code/part3/finite_bernstein.py": "a3133c6c22a365380f6c2ab14f6d31f60153d0df902b325cfcfbeeccc1bed74f",
+    "code/part3/finite_n2_exact.py": "8c74170cadee19cfd805734c13182e47734958d7495a8a0109c582631fc7cab0"
+  },
+  "precision": 192,
+  "scale": 6277101735386680763835789423207666416102355444464034512896,
+  "rows": [
+    {
+      "identity": [
+        13,
+        0,
+        9,
+        7
+      ],
+      "cpu_seconds": 0.5067412029999999,
+      "wall_seconds": 0.8482801640000162,
+      "certificate": {
+        "n": 13,
+        "j": 0,
+        "source": 9,
+        "target": 7,
+        "source_interval": [
+          -3913708917243353982187743699934953259418026730962010636118,
+          -1396786540697046126079042634410082350687112865153187221080
+        ],
+        "target_mesh": "7",
+        "target_cosine_interval": [
+          0,
+          0
+        ],
+        "target_lower": 44508037845866247262617246329783236539545435978826777257578,
+        "leaves": [
+          {
+            "path": "0",
+            "upper": 44152562771792989710679177538722214922497906409021857212740
+          },
+          {
+            "path": "1",
+            "upper": 43523874488946010457299305133890451927180163613955615288238
+          }
+        ],
+        "pending": []
+      }
+    },
+    {
+      "identity": [
+        17,
+        0,
+        11,
+        9
+      ],
+      "cpu_seconds": 1.624429368,
+      "wall_seconds": 1.9911775269999907,
+      "certificate": {
+        "n": 17,
+        "j": 0,
+        "source": 11,
+        "target": 9,
+        "source_interval": [
+          -3138550867693340381917894711603833208051177722232017280574,
+          -1090007277379823154880207193037157407000835549928702438220
+        ],
+        "target_mesh": "9",
+        "target_cosine_interval": [
+          0,
+          0
+        ],
+        "target_lower": 50388732425327594912965127386247532160196048571599553966319,
+        "leaves": [
+          {
+            "path": "0",
+            "upper": 50206941672726440544434764348748371922881476213890081324224
+          },
+          {
+            "path": "1",
+            "upper": 49829905299050280550142086019396846093263758900167487922916
+          }
+        ],
+        "pending": []
+      }
+    },
+    {
+      "identity": [
+        24,
+        24,
+        11,
+        13
+      ],
+      "cpu_seconds": 8.512108619000001,
+      "wall_seconds": 10.55649462100007,
+      "certificate": {
+        "n": 24,
+        "j": 24,
+        "source": 11,
+        "target": 13,
+        "source_interval": [
+          394142479103284262379726774817699889424937565644899056672,
+          1939731111654958643789431340004115740150632454500446718398
+        ],
+        "target_mesh": "13",
+        "target_cosine_interval": [
+          -394142479103284262379726774817699889424937565644899139782,
+          -394142479103284262379726774817699889424937565644899022423
+        ],
+        "target_lower": 58309310120648229605478864945198253069525293359778965683692,
+        "leaves": [
+          {
+            "path": "0",
+            "upper": 58167817645580948677637126828150144264852270987235771526344
+          },
+          {
+            "path": "10",
+            "upper": 58238845388816380834573290581189450314353872527182307063248
+          },
+          {
+            "path": "11",
+            "upper": 40727835197994913426492823404657209059139561842645555999360
+          }
+        ],
+        "pending": []
+      }
+    }
+  ]
+}

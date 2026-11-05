@@ -1,0 +1,60 @@
+{
+  "accepted": true,
+  "pairs": [
+    {
+      "n": 13,
+      "j": 0,
+      "source": 9,
+      "target": 7,
+      "leaves": 2,
+      "margin_lower_scaled": 355475074073257551938068791061021617047529569804920044838,
+      "source_upper_scaled": 44152562771792989710679177538722214922497906409021857212740,
+      "target_lower_scaled": 44508037845866247262617246329783236539545435978826777257578
+    },
+    {
+      "n": 17,
+      "j": 0,
+      "source": 11,
+      "target": 9,
+      "leaves": 2,
+      "margin_lower_scaled": 181790752601154368530363037499160237314572357709472642095,
+      "source_upper_scaled": 50206941672726440544434764348748371922881476213890081324224,
+      "target_lower_scaled": 50388732425327594912965127386247532160196048571599553966319
+    },
+    {
+      "n": 24,
+      "j": 24,
+      "source": 11,
+      "target": 13,
+      "leaves": 3,
+      "margin_lower_scaled": 70464731831848770905574364008802755171420832596658620444,
+      "source_upper_scaled": 58238845388816380834573290581189450314353872527182307063248,
+      "target_lower_scaled": 58309310120648229605478864945198253069525293359778965683692
+    }
+  ],
+  "certificate_sha256": "496060af0278cbf973f967a4c3ddc325b8c9a6deb530c7fc39a77b1837a463d6",
+  "checker_sha256": "74b0255f467b0d045f614e4486b7c60d54e6da2df5e6e3ee2ead73197c463caa",
+  "inherited_source_sha256": {
+    "code/gated/d3_edge_common.py": "fd3b278f167999def5a8f43ddd83da258e5ce2452a76082d9256dcde93d01b92",
+    "code/gated/d3_edge_generate.py": "b0c2b98851dd8721bc876686fd388c62085938ff24d97308a132a7f14e9e3145",
+    "code/gated/d3_edge_check.py": "09165fcf6b05de17667db1e109ab06d09c1bea600649ec6d404342ea085e0308",
+    "code/part3/finite_general.py": "b20b7f88ddfc0bbc92e68096063ef626664028c2a379c34d16dc9f84e17aa74a",
+    "code/part3/finite_bernstein.py": "a3133c6c22a365380f6c2ab14f6d31f60153d0df902b325cfcfbeeccc1bed74f",
+    "code/part3/finite_n2_exact.py": "8c74170cadee19cfd805734c13182e47734958d7495a8a0109c582631fc7cab0"
+  },
+  "shared_arithmetic_kernel": true,
+  "malformed_controls_rejected": [
+    "missing_row",
+    "missing_leaf",
+    "duplicate_leaf",
+    "nonedge_j",
+    "wrong_target",
+    "bad_path",
+    "forged_bound",
+    "forged_target",
+    "forged_source_hash",
+    "forged_scale",
+    "pending_leaf"
+  ],
+  "cpu_seconds": 11.364958529
+}
