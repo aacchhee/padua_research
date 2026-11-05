@@ -1,0 +1,14 @@
+float64 moment solve m=31: max|solve-formula|=1.132e-15, sum w-4=-1.33e-15
+float64 moment solve m=41: max|solve-formula|=3.494e-15, sum w-4=3.55e-15
+float64 moment solve m=61: max|solve-formula|=3.070e-15, sum w-4=1.78e-15
+m=   5: max m^4|w|/[(1+j)(1+k)+log(m+1)] =   32.0912 (bound 8192);  max m^2|S_R|/RHS(6) = 0.1773 (bound 1)
+m=   7: max m^4|w|/[(1+j)(1+k)+log(m+1)] =   42.9069 (bound 8192);  max m^2|S_R|/RHS(6) = 0.2311 (bound 1)
+m=   9: max m^4|w|/[(1+j)(1+k)+log(m+1)] =   54.6455 (bound 8192);  max m^2|S_R|/RHS(6) = 0.2799 (bound 1)
+m=  11: max m^4|w|/[(1+j)(1+k)+log(m+1)] =   63.0327 (bound 8192);  max m^2|S_R|/RHS(6) = 0.3368 (bound 1)
+m=  21: max m^4|w|/[(1+j)(1+k)+log(m+1)] =   94.5450 (bound 8192);  max m^2|S_R|/RHS(6) = 0.5021 (bound 1)
+m=  51: max m^4|w|/[(1+j)(1+k)+log(m+1)] =  132.2818 (bound 8192);  max m^2|S_R|/RHS(6) = 0.7076 (bound 1)
+m= 101: max m^4|w|/[(1+j)(1+k)+log(m+1)] =  153.4083 (bound 8192);  max m^2|S_R|/RHS(6) = 0.8209 (bound 1)
+m= 201: max m^4|w|/[(1+j)(1+k)+log(m+1)] =  168.1848 (bound 8192);  max m^2|S_R|/RHS(6) = 0.8947 (bound 1)
+m= 401: max m^4|w|/[(1+j)(1+k)+log(m+1)] =  177.9751 (bound 8192);  max m^2|S_R|/RHS(6) = 0.9394 (bound 1)
+m= 601: max m^4|w|/[(1+j)(1+k)+log(m+1)] =  181.9873 (bound 8192);  max m^2|S_R|/RHS(6) = 0.9563 (bound 1)
+over odd m=5..601: worst ratio for (2) = 181.9873 at m=601; worst ratio for (6) = 0.9563 at m=601
