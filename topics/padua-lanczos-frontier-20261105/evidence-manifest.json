@@ -1,0 +1,14 @@
+{
+  "format": "regenerable-file-inventory-v1",
+  "source_rules_commit": "1fb21c1a021642b76f0c60a68efde83e8024b595",
+  "scope": "All tracked topic/results files except LOG, handoffs and this manifest; identities only, not scientific acceptance.",
+  "inventory": {
+    "path": "/tmp/claude-0/-home-user-padua-research/4e9db0f4-c32d-5606-95a7-0413431483a5/scratchpad/ORCH/storage/files-08762713717d28772030e3760bbfad6e33b1c99c076672d937fd8a0a06cbffd8.json",
+    "bytes": 42269,
+    "sha256": "08762713717d28772030e3760bbfad6e33b1c99c076672d937fd8a0a06cbffd8",
+    "files": 390
+  },
+  "verification": "Recompute the entire canonical file inventory from repository bytes; external inventory is not an acceptance dependency. Individual rows remain in the external content-addressed inventory and can be regenerated with this committed helper.",
+  "build_command": "python -B topics/padua-lanczos-frontier-20261105/code/check_manifest.py --write --rules 1fb21c1a021642b76f0c60a68efde83e8024b595",
+  "retention": "Local temporary inventory only; no archival delivery or retention promised."
+}

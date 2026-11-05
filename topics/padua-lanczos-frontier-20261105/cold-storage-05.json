@@ -1,0 +1,76 @@
+{
+  "state": "LOCAL_ONLY_NOT_DELIVERED",
+  "inventory": {
+    "path": "/tmp/padua-lanczos-frontier-storage/handoff05-inventory.json",
+    "bytes": 90836,
+    "sha256": "f667850c82c56b9fca214673cdbfd2bc5e9c48cf4cb3aa6bcb1ab1b380bcecc4",
+    "entries": 570
+  },
+  "roots": {
+    "n4_diagnostic": {
+      "path": "/tmp/padua-lanczos-frontier-g3-n4-diagnostic",
+      "commands_and_checks": "g3-n4-diagnostic-methods.md; evidence/g3-n4-diagnostic*.json"
+    },
+    "l6_n1": {
+      "path": "/tmp/padua-lanczos-frontier-l6-n1",
+      "commands_and_checks": "l6-n1-methods.md; evidence/l6-n1*.json"
+    },
+    "l6_independent": {
+      "path": "/tmp/padua-lanczos-frontier-l6-n1-independent",
+      "commands_and_checks": "independent-checks-frontier-05.md; evidence/l6-n1-independent.json"
+    },
+    "fit": {
+      "path": "/tmp/padua-lanczos-frontier-g1-fit",
+      "commands_and_checks": "g1-fit-methods.md; synthetic controls and actual complete-scan report; executions separately labeled"
+    },
+    "fit_independent": {
+      "path": "/tmp/padua-lanczos-frontier-g1-fit-independent",
+      "commands_and_checks": "independent-checks-g1-fit.md; synthetic controls and actual complete-scan report; executions separately labeled"
+    },
+    "g1_native_remaining": {
+      "path": "/tmp/padua-lanczos-frontier-g1-native-remaining",
+      "commands_and_checks": "g1-remaining-scan.md; independent-checks-g1-05.md; evidence/g1-batch-independent-native*.json"
+    },
+    "n5_producer": {
+      "path": "/tmp/padua-lanczos-frontier-g3-n5",
+      "commands_and_checks": "g3-n5-methods.md; evidence/g3-n5*.json"
+    },
+    "n5_independent": {
+      "path": "/tmp/padua-lanczos-frontier-g3-n5-independent",
+      "commands_and_checks": "independent-checks-g3-06.md; evidence/g3-n5-independent*.json"
+    },
+    "g1_batch": {
+      "path": "/tmp/padua-lanczos-frontier-g1-batch",
+      "commands_and_checks": "g1-batching.md; evidence/g1-batch*.json; independent-checks-g1-05.md"
+    },
+    "g1_check": {
+      "path": "/tmp/padua-lanczos-frontier-g1-check05",
+      "commands_and_checks": "independent-checks-g1-05.md; evidence/g1-batch-independent*.json"
+    },
+    "l7_suite": {
+      "path": "/tmp/padua-lanczos-frontier-l7-suite",
+      "commands_and_checks": "l7-suite-methods.md; evidence/l7-suite*.json"
+    },
+    "l7_independent": {
+      "path": "/tmp/padua-lanczos-frontier-l7-independent",
+      "commands_and_checks": "independent-checks-frontier-05.md; evidence/l7-independent.json"
+    },
+    "n4_producer": {
+      "path": "/tmp/padua-lanczos-frontier-g3-n4",
+      "commands_and_checks": "g3-n4-methods.md; evidence/g3-n4*.json"
+    },
+    "n4_independent": {
+      "path": "/tmp/padua-lanczos-frontier-g3-n4-independent",
+      "commands_and_checks": "independent-checks-g3-05.md; evidence/g3-n4-independent*.json"
+    }
+  },
+  "builder": {
+    "path": "code/storage_inventory_05.py",
+    "bytes": 4453,
+    "sha256": "19057cc9e2e9488fe0a2aa0e86f5e8cf8f6b755ffcca3c8079c081f6a2870178"
+  },
+  "command": "python -B topics/padua-lanczos-frontier-20261105/code/storage_inventory_05.py",
+  "check_command": "python -B topics/padua-lanczos-frontier-20261105/code/storage_inventory_05.py --check",
+  "prior_inventory": "cold-storage.json and cold-storage-04.json (unchanged historical indices)",
+  "retention": "Temporary local files; no Windows delivery or retention guarantee. Scientific regeneration commands/source and input pins in the linked methods and per-run receipts. Full raw inventory stays outside Git; rebuilding after regeneration records new bytes."
+}

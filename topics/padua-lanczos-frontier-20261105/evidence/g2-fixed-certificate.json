@@ -1,0 +1,94 @@
+{
+  "label": "FIXED_G2_W_AND_R_LOWER_CERTIFICATES",
+  "frozen_source_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+  "analytic_reduction_sha256": "44498c6230d0a59bbd0cfc4bc96600f0b401eb92ba9302b5c1d54cc569c8d5f9",
+  "W_producer_code_sha256": "2e8c87db119b407a884bc089a5a7e69addfc674b94ebc499236a18307ca1c57d",
+  "R_lower_helper_code_sha256": "8b2b992f1c941fa3f49febe7d5b3e870582e78c8b6ac6189933262ee3932af5a",
+  "saved_predicates": {
+    "W": "C_12>=256",
+    "W_squared_threshold": 65536,
+    "R": "E_12>=16",
+    "R_threshold": 16
+  },
+  "common_model": {
+    "source_norm": "sum_h ||F_h||\u00b2/tau_h\u00b2=1, tau_h\u00b2=||A_h b_parent||\u00b2",
+    "W_role": "single-source single-node LOWER for actual first-order X-closure capacity, normalized by ||X||\u00b2",
+    "R_law": "all90*M independent signs, u_hi=xi_hi/sqrt(90*M)",
+    "R_role": "partial trace LOWER sum_i ell_(s11,h6,i)/(90*M*||X||\u00b2) on full original E12",
+    "closure_response": "omega=x*g_jh-sum_l C_X(l,j)*g_lh, signed subtraction before squaring"
+  },
+  "cases": [
+    {
+      "set": "triangle",
+      "degree": 12,
+      "rule": "bj",
+      "stage": 11,
+      "source": 6,
+      "source_degree_index": [
+        3,
+        0
+      ],
+      "global_source_count": 90,
+      "global_node_count": 325,
+      "W_fixed_node": 22,
+      "W_fixed_point": [
+        "-1",
+        "5/6"
+      ],
+      "W_squared_lower_integer_floor": 17525752205103,
+      "R_partial_expectation_lower_integer_floor": 6457695691,
+      "R_partial_node_coverage": 325,
+      "R_global_denominator_exact": "29250",
+      "Xnorm_squared_exact": "1",
+      "W_original_receipt": {
+        "path": "topics/padua-lanczos-frontier-20261105/evidence/g2-triangle-screen.json",
+        "bytes": 3096,
+        "sha256": "9820f90c02188541a195e49944905f87b679d2f00a0d3c49665011c60dcecd3f"
+      },
+      "R_original_receipt": {
+        "path": "topics/padua-lanczos-frontier-20261105/evidence/g2-triangle-r-lower.json",
+        "bytes": 2661,
+        "sha256": "71edbe4a3871a110ba945d18bc6f912e482cd26bbd1c17be1f21d3ac7237a6ba"
+      }
+    },
+    {
+      "set": "rotated",
+      "degree": 12,
+      "rule": "bj",
+      "stage": 11,
+      "source": 6,
+      "source_degree_index": [
+        3,
+        0
+      ],
+      "global_source_count": 90,
+      "global_node_count": 625,
+      "W_fixed_node": 1,
+      "W_fixed_point": [
+        "2/15",
+        "-27/20"
+      ],
+      "W_squared_lower_integer_floor": 6324995264,
+      "R_partial_expectation_lower_integer_floor": 2606606,
+      "R_partial_node_coverage": 625,
+      "R_global_denominator_exact": "110250",
+      "Xnorm_squared_exact": "49/25",
+      "W_original_receipt": {
+        "path": "topics/padua-lanczos-frontier-20261105/evidence/g2-rotated-screen.json",
+        "bytes": 3091,
+        "sha256": "076de7f59ba33589bd4beaa78f8fe973aa25fa6f524eaf5e32366fec8b00bcb7"
+      },
+      "R_original_receipt": {
+        "path": "topics/padua-lanczos-frontier-20261105/evidence/g2-rotated-r-lower.json",
+        "bytes": 2660,
+        "sha256": "2b276d64478f35a81076808cb99addc49034c0b95f2e28d755f27a03fbd72ea5"
+      }
+    }
+  ],
+  "limits": [
+    "No full E12 value, source-subset expectation, or screened-source upper is asserted.",
+    "Fresh scientific verification regenerates the fixed rational baseline and actual closure responses; original temporary artifacts/extraction receipts are lineage only.",
+    "These finite formal smooth exact-base predicates are distinct from actual working-precision PD-T055 and all-degree claims.",
+    "Extraction adds no new numerical execution or theorem status."
+  ]
+}

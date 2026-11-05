@@ -1,0 +1,224 @@
+{
+  "status": "PASS tiny exact backend controls",
+  "rules_sha": "bb67c1ee830d468fa33007e15008d5574d00ccf4",
+  "mode": "tiny",
+  "native_source": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_fast_independent.cpp",
+    "bytes": 9215,
+    "sha256": "b6434df51d3df7e04136b1da9f8ee63e6c5f599e609625f415718766db0480dc"
+  },
+  "harness": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_fast_independent_run.py",
+    "bytes": 4255,
+    "sha256": "d99b579e6800b4545b899572aa1e7b758bbbb58edfad9f7a223a18f8bff1e884"
+  },
+  "old_input": {
+    "path": "/tmp/padua-lanczos-frontier-g1/inputs/e1-full-sweep.json",
+    "bytes": 616693,
+    "sha256": "0d9c236fe879879b7f546596c554d213b7b8c408d31dec08dd79146c7d629344"
+  },
+  "compile_command": [
+    "g++",
+    "-O3",
+    "-std=c++17",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_fast_independent.cpp",
+    "-lgmpxx",
+    "-lgmp",
+    "-o",
+    "/tmp/padua-lanczos-frontier-g1-fast-independent/tiny/g1_fast_independent"
+  ],
+  "command": [
+    "topics/padua-lanczos-frontier-20261105/code/g1_fast_independent_run.py",
+    "--out",
+    "/tmp/padua-lanczos-frontier-g1-fast-independent/tiny",
+    "--old",
+    "/tmp/padua-lanczos-frontier-g1/inputs/e1-full-sweep.json",
+    "--mode",
+    "tiny",
+    "--receipt",
+    "/tmp/padua-lanczos-frontier-g1-fast-independent/tiny-receipt.json"
+  ],
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "GMP_package_version": "2:6.3.0+dfsg-3",
+  "nodes": "All original625/325 explicit; no symmetry reduction",
+  "runs": [
+    {
+      "set": "rotated",
+      "rule": "bj",
+      "degree": 4,
+      "cap_seconds": 30,
+      "command": [
+        "/tmp/padua-lanczos-frontier-g1-fast-independent/tiny/g1_fast_independent",
+        "rotated",
+        "4",
+        "bj"
+      ],
+      "status": "PASS exact independent endpoint identities",
+      "rows": 3,
+      "elapsed_seconds": 0.06570875699981116,
+      "endpoint_file": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast-independent/tiny/rotated-bj-d4.jsonl",
+        "bytes": 1989,
+        "sha256": "816cd35b0224d9d213267fa1fe7b9026eb9860697a329aafc176b9764171b362"
+      },
+      "progress_log": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast-independent/tiny/rotated-bj-d4.log",
+        "bytes": 249,
+        "sha256": "7e3aefc1ae780c7655d2ebb5cd8e63c480432c19be58e32bc6f30ff0422fa7d6"
+      }
+    },
+    {
+      "set": "rotated",
+      "rule": "mirror",
+      "degree": 4,
+      "cap_seconds": 30,
+      "command": [
+        "/tmp/padua-lanczos-frontier-g1-fast-independent/tiny/g1_fast_independent",
+        "rotated",
+        "4",
+        "mirror"
+      ],
+      "status": "PASS exact independent endpoint identities",
+      "rows": 3,
+      "elapsed_seconds": 0.066113848999521,
+      "endpoint_file": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast-independent/tiny/rotated-mirror-d4.jsonl",
+        "bytes": 2149,
+        "sha256": "7c4a42a66f6fd292083985afc2ecdefa4f966838c401a34f15cbaf0e09d2e940"
+      },
+      "progress_log": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast-independent/tiny/rotated-mirror-d4.log",
+        "bytes": 265,
+        "sha256": "5b9de17bbb4d66bca4cf66e60d7831a131903545c61a8942bce4f1c79aec63eb"
+      }
+    },
+    {
+      "set": "rotated",
+      "rule": "alt",
+      "degree": 4,
+      "cap_seconds": 30,
+      "command": [
+        "/tmp/padua-lanczos-frontier-g1-fast-independent/tiny/g1_fast_independent",
+        "rotated",
+        "4",
+        "alt"
+      ],
+      "status": "PASS exact independent endpoint identities",
+      "rows": 3,
+      "elapsed_seconds": 0.06599964400083991,
+      "endpoint_file": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast-independent/tiny/rotated-alt-d4.jsonl",
+        "bytes": 2155,
+        "sha256": "e12d85d2fe99832a233729b31363db52b702ea9eea31c9267e585d0cd83d52ca"
+      },
+      "progress_log": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast-independent/tiny/rotated-alt-d4.log",
+        "bytes": 253,
+        "sha256": "7671c3bca03aaaf2b3e15d6540bf873944f0dcf4c0dc7f3b7c3bbf32f0a7538e"
+      }
+    },
+    {
+      "set": "rotated",
+      "rule": "pivot",
+      "degree": 4,
+      "cap_seconds": 30,
+      "command": [
+        "/tmp/padua-lanczos-frontier-g1-fast-independent/tiny/g1_fast_independent",
+        "rotated",
+        "4",
+        "pivot"
+      ],
+      "status": "PASS exact independent endpoint identities",
+      "rows": 3,
+      "elapsed_seconds": 0.06578387799891061,
+      "endpoint_file": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast-independent/tiny/rotated-pivot-d4.jsonl",
+        "bytes": 2164,
+        "sha256": "0fc2a3d355b89769ce0b796b5b88bc41117ec040fc54ad59e1b9f58d930e4ecb"
+      },
+      "progress_log": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast-independent/tiny/rotated-pivot-d4.log",
+        "bytes": 261,
+        "sha256": "b864d652db4f6675adec81f8e7c333e5bca2ed5cddd345237a17315e89f87ab0"
+      }
+    },
+    {
+      "set": "triangle",
+      "rule": "bj",
+      "degree": 4,
+      "cap_seconds": 30,
+      "command": [
+        "/tmp/padua-lanczos-frontier-g1-fast-independent/tiny/g1_fast_independent",
+        "triangle",
+        "4",
+        "bj"
+      ],
+      "status": "PASS exact independent endpoint identities",
+      "rows": 3,
+      "elapsed_seconds": 0.03376743199987686,
+      "endpoint_file": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast-independent/tiny/triangle-bj-d4.jsonl",
+        "bytes": 1369,
+        "sha256": "650b6a1f84f1df4456abcb79084649314b6c98d2a69e72bfb81417689a965628"
+      },
+      "progress_log": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast-independent/tiny/triangle-bj-d4.log",
+        "bytes": 253,
+        "sha256": "0317ae90672d9fbe832ea813584c988c0d7e152da5a7c9344da00a9965799926"
+      }
+    },
+    {
+      "set": "triangle",
+      "rule": "pivot",
+      "degree": 4,
+      "cap_seconds": 30,
+      "command": [
+        "/tmp/padua-lanczos-frontier-g1-fast-independent/tiny/g1_fast_independent",
+        "triangle",
+        "4",
+        "pivot"
+      ],
+      "status": "PASS exact independent endpoint identities",
+      "rows": 3,
+      "elapsed_seconds": 0.0334395250029047,
+      "endpoint_file": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast-independent/tiny/triangle-pivot-d4.jsonl",
+        "bytes": 1381,
+        "sha256": "3fb1f181575933a7834bf5fb9da9298b3a0d5bbb3ede6276a10543998e0a9635"
+      },
+      "progress_log": {
+        "path": "/tmp/padua-lanczos-frontier-g1-fast-independent/tiny/triangle-pivot-d4.log",
+        "bytes": 265,
+        "sha256": "74c40006c7964ef09364aa2a1ee4ce4d7ada15b6d090c470d80e1a2800fd5ebf"
+      }
+    }
+  ],
+  "native_primitive_controls": {
+    "command": [
+      "/tmp/padua-lanczos-frontier-g1-fast-independent/tiny/g1_fast_independent",
+      "--self-test"
+    ],
+    "result": {
+      "primitive_tests": "PASS exact scalar-GMP cross-check",
+      "malformed_native_controls_rejected": 8
+    }
+  },
+  "invocation": [
+    "python",
+    "-B",
+    "topics/padua-lanczos-frontier-20261105/code/g1_fast_independent_run.py",
+    "--out",
+    "/tmp/padua-lanczos-frontier-g1-fast-independent/tiny",
+    "--old",
+    "/tmp/padua-lanczos-frontier-g1/inputs/e1-full-sweep.json",
+    "--mode",
+    "tiny",
+    "--receipt",
+    "/tmp/padua-lanczos-frontier-g1-fast-independent/tiny-receipt.json"
+  ],
+  "raw_receipt": {
+    "path": "/tmp/padua-lanczos-frontier-g1-fast-independent/tiny-receipt.json",
+    "bytes": 7031,
+    "sha256": "69b328f7b17630dd0ac64741c61f6d47acd0a2c0a10b68bdb2e5a397071a5159"
+  }
+}

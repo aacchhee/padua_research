@@ -1,0 +1,62 @@
+{
+  "result": "R_PARTIAL_LOWER_PASSES",
+  "scope": {
+    "set": "rotated",
+    "degree": 12,
+    "stage": 11,
+    "source": 6,
+    "selected_node_count": 625,
+    "global_source_count": 90,
+    "global_source_law": "independent signs, u_hi=xi_hi/sqrt(90*M)",
+    "original_R_threshold": 16,
+    "role": "lower on full E12 only; not exact E12 or a subset-law expectation"
+  },
+  "source_screen": {
+    "path": "topics/padua-lanczos-frontier-20261105/evidence/g2-rotated-screen.json",
+    "bytes": 3091,
+    "sha256": "076de7f59ba33589bd4beaa78f8fe973aa25fa6f524eaf5e32366fec8b00bcb7"
+  },
+  "source_impulse": {
+    "path": "/tmp/padua-lanczos-frontier-g2/rotated-screen/impulse-h6.json",
+    "bytes": 193033,
+    "sha256": "865228563ed6c1fffe9955e6faa91c6cdafc6e34cb0323404579a420f2421500"
+  },
+  "screen_code_sha256": "2e8c87db119b407a884bc089a5a7e69addfc674b94ebc499236a18307ca1c57d",
+  "frozen_source_sha256": "19ce7b774e5a6fa56108eebca3b2ef81f5237328e518d95225adf9f8835e060f",
+  "analytic_reduction_sha256": "44498c6230d0a59bbd0cfc4bc96600f0b401eb92ba9302b5c1d54cc569c8d5f9",
+  "Xnorm_squared_exact": "49/25",
+  "global_denominator_exact": "110250",
+  "partial_lower_integer_floor": 2606606,
+  "partial_lower_display": 2606606.3895145985,
+  "exact_lower_ge_16": true,
+  "integer_floor_ge_16": true,
+  "exact_partial_lower": {
+    "path": "/tmp/padua-lanczos-frontier-g2/rotated-partial-r/partial-expectation-lower-exact.txt",
+    "bytes": 306,
+    "sha256": "f2c44c025d0533a695e3ca1f5ac2a2c4230ed30fb58a05c6a9b4f78ba0649f93"
+  },
+  "code_sha256": "8b2b992f1c941fa3f49febe7d5b3e870582e78c8b6ac6189933262ee3932af5a",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g2_partial_r.py",
+    "--screen-receipt",
+    "topics/padua-lanczos-frontier-20261105/evidence/g2-rotated-screen.json",
+    "--output-dir",
+    "/tmp/padua-lanczos-frontier-g2/rotated-partial-r",
+    "--receipt",
+    "topics/padua-lanczos-frontier-20261105/evidence/g2-rotated-r-lower.json"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "python_flint": "0.9.0",
+    "elapsed_seconds": 0.030525453999871388
+  },
+  "limits": [
+    "All omitted stage/source contributions are nonnegative under the full original law.",
+    "If this lower does not reach16, original R is inconclusive, not false.",
+    "No probability, actual IEEE, original PD-T055 or all-degree conclusion.",
+    "Developer arithmetic on screened exact data; independent reconstruction remains separate.",
+    "External artifacts are temporary working evidence; archive/delivery pending."
+  ]
+}

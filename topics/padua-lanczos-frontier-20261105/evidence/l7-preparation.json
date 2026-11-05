@@ -1,0 +1,48 @@
+{
+  "status": "PREPARATION ONLY; G0 FAIL; G4 NOT RUN; L7 suite NOT RUN",
+  "rules_sha": "8359bf7a047d9a212bd841224fb97a458cb7435e",
+  "agent": "Codex gpt-6.1-sol medium",
+  "source_acquisition": "Python urllib.request.urlopen(url,timeout=25), preserving inherited proxy; source/HTML bytes unchanged",
+  "artifacts": [
+    {
+      "path": "/tmp/padua-lanczos-frontier-l7/bnt.m",
+      "bytes": 5657,
+      "sha256": "625f29c9f58c26699b664e9f88b7734d4ba74d29cfe9f7faefb314e5bc49d003"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-l7/zhu-gh.html",
+      "bytes": 138975,
+      "sha256": "463938562308fbe01bfb72837870f9dbd5404e96257c10aa35d8a6fe8d9eeb54"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-l7/zhu-gh2.html",
+      "bytes": 136236,
+      "sha256": "a1ff28cb39e944cadcbd40e07db4230a232a75803731d6b2037bd49ae42f9c0b"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-l7/zhu-gh3.html",
+      "bytes": 138975,
+      "sha256": "d2bc1aff6655910eba5d9aa3e894ddfb87a86946429f6bfbe92937067be2be0c"
+    }
+  ],
+  "preparation_files": [
+    {
+      "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/l7-preregistration.md",
+      "bytes": 6231,
+      "sha256": "c42a8e6600b1e6d83a0c53f649ee849e5ab502dd67d4be55de13708f775a84bd"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/l7_natural.py",
+      "bytes": 9004,
+      "sha256": "eeb253ae62b92f9972f4e7a929217c2361d7fae8e7e92d831e17da52dc69c7ca"
+    }
+  ],
+  "code_validation": "Only python -m py_compile executed (exit0); no experimental code run; bytecode deleted. Final docstring labeling not recompiled.",
+  "archive": "Pending AC-selected Padua cold storage; external artifacts stay outside Git",
+  "scope_limits": [
+    "No full paper PDF received or read",
+    "BNT source/tutorial inspection is not numerical execution",
+    "Bounded repository searches do not establish absence of authors code",
+    "No G4 reproduction, reference or natural-fitting result exists"
+  ]
+}

@@ -1,0 +1,331 @@
+{
+ "date": "2026-11-05",
+ "authority": "handoff10; audit01/02; AC accepted disclosed A-P1 on 2026-11-05",
+ "base": "a3f03be58be6819d833523ef26ccff69f5bc184a",
+ "reservation_check": "preparation/reservation-check.md",
+ "idea_disposition": "preparation/idea-id-disposition.md",
+ "new_counts": {
+  "PD-T": 16,
+  "PD-N": 3,
+  "IDEA": 11,
+  "LIT": 0
+ },
+ "permanent_unused": {
+  "PD-T": "340-363",
+  "PD-N": "119-131",
+  "IDEA": "425-453",
+  "LIT": "582-593"
+ },
+ "theory": [
+  {
+   "alias": "PD-T?lanczos-frontier-codex-L1-01",
+   "final": "PD-T324",
+   "path": "theory/l1-01-audit-response-20261105.md",
+   "primary_path": "theory/l1-01-sheared-U-aggregate-separation.md",
+   "status": "PROVED",
+   "new": true,
+   "frozen_primary": true
+  },
+  {
+   "alias": "PD-T?lanczos-frontier-codex-L2-01",
+   "final": "PD-T325",
+   "path": "theory/l2-01-audit-response-20261105.md",
+   "primary_path": "theory/l2-smooth-rule-closure-reduction.md",
+   "status": "PROVED",
+   "new": true,
+   "frozen_primary": true
+  },
+  {
+   "alias": "PD-T?lanczos-frontier-codex-L2-02",
+   "final": "PD-T326",
+   "path": "theory/l2-g2-degree12-certificates.md",
+   "primary_path": "theory/l2-g2-degree12-certificates.md",
+   "status": "PROVED",
+   "new": true
+  },
+  {
+   "alias": "PD-T?lanczos-frontier-codex-L2-03",
+   "final": "PD-T327",
+   "path": "theory/l2-positive-weight-embedding.md",
+   "primary_path": "theory/l2-positive-weight-embedding.md",
+   "status": "PROVED",
+   "new": true
+  },
+  {
+   "alias": "PD-T?lanczos-frontier-codex-L2-04",
+   "final": "PD-T328",
+   "path": "theory/l2-sh-worst-case-closure-growth.md",
+   "primary_path": "theory/l2-sh-worst-case-closure-growth.md",
+   "status": "PROVED",
+   "new": true
+  },
+  {
+   "alias": "PD-T?lanczos-frontier-codex-L2-05",
+   "final": "PD-T329",
+   "path": "theory/l2-sh-random-closure-growth.md",
+   "primary_path": "theory/l2-sh-random-closure-growth.md",
+   "status": "PROVED",
+   "new": true
+  },
+  {
+   "alias": "PD-T?lanczos-frontier-codex-L3-01",
+   "final": "PD-T330",
+   "path": "theory/l3-finite-u-selection.md",
+   "primary_path": "theory/l3-finite-u-selection.md",
+   "status": "PROVED",
+   "new": true
+  },
+  {
+   "alias": "PD-T?lanczos-frontier-codex-L4-01",
+   "final": "PD-T331",
+   "path": "theory/l4-envelope-bound.md",
+   "primary_path": "theory/l4-envelope-bound.md",
+   "status": "PROVED",
+   "new": true
+  },
+  {
+   "alias": "PD-N?lanczos-frontier-codex-L4-01",
+   "final": "PD-N116",
+   "path": "theory/l4-N01-fixed-lower-envelope-obstruction.md",
+   "primary_path": "theory/l4-N01-fixed-lower-envelope-obstruction.md",
+   "status": "PROVED",
+   "new": true
+  },
+  {
+   "alias": "PD-T?lanczos-frontier-codex-L5-01",
+   "final": "PD-T332",
+   "path": "theory/l5-01-finite-optimal-radius-certificates.md",
+   "primary_path": "theory/l5-01-finite-optimal-radius-certificates.md",
+   "status": "PROVED",
+   "new": true
+  },
+  {
+   "alias": "PD-T?lanczos-frontier-codex-L5-02",
+   "final": "PD-T333",
+   "path": "theory/l5-02-n3-bracket.md",
+   "primary_path": "theory/l5-02-n3-bracket.md",
+   "status": "PROVED",
+   "new": true
+  },
+  {
+   "alias": "PD-T?lanczos-frontier-codex-L5-03",
+   "final": "PD-T334",
+   "path": "theory/l5-03-n4-lower.md",
+   "primary_path": "theory/l5-03-n4-lower.md",
+   "status": "PROVED",
+   "new": true
+  },
+  {
+   "alias": "PD-T?lanczos-frontier-codex-L5-04",
+   "final": "PD-T335",
+   "path": "theory/l5-04-n5-lower.md",
+   "primary_path": "theory/l5-04-n5-lower.md",
+   "status": "PROVED",
+   "new": true
+  },
+  {
+   "alias": "PD-T?lanczos-frontier-codex-L6-01",
+   "final": "PD-T336",
+   "path": "theory/l6-01-full-square-residual-bound.md",
+   "primary_path": "theory/l6-01-full-square-residual-bound.md",
+   "status": "PROVED",
+   "new": true
+  },
+  {
+   "alias": "PD-N?lanczos-frontier-codex-L6-01",
+   "final": "PD-N117",
+   "path": "theory/l6-N01-complete-residual-realization-obstruction.md",
+   "primary_path": "theory/l6-N01-complete-residual-realization-obstruction.md",
+   "status": "PROVED",
+   "new": true
+  },
+  {
+   "alias": "PD-T?lanczos-frontier-codex-L6-03",
+   "final": "PD-T337",
+   "path": "theory/l6-03-frozen-n1-output.md",
+   "primary_path": "theory/l6-03-frozen-n1-output.md",
+   "status": "MEASURED",
+   "new": true
+  },
+  {
+   "alias": "PD-N?lanczos-frontier-codex-L6-02",
+   "final": "PD-N118",
+   "path": "theory/l6-N02-frozen-n1-raw-data-nonrealizability.md",
+   "primary_path": "theory/l6-N02-frozen-n1-raw-data-nonrealizability.md",
+   "status": "PROVED",
+   "new": true
+  },
+  {
+   "alias": "PD-T?lanczos-frontier-codex-G1-01",
+   "final": "PD-T338",
+   "path": "theory/g1-finite-growth-measurements.md",
+   "primary_path": "theory/g1-finite-growth-measurements.md",
+   "status": "MEASURED",
+   "new": true
+  },
+  {
+   "alias": "PD-T?lanczos-frontier-codex-L7-01",
+   "final": "PD-T339",
+   "path": "theory/l7-natural-suite-measurements.md",
+   "primary_path": "theory/l7-natural-suite-measurements.md",
+   "status": "MEASURED",
+   "new": true
+  }
+ ],
+ "ideas": [
+  {
+   "alias": "IDEA?lanczos-frontier-codex-l1-02",
+   "final": "IDEA-414",
+   "new": true
+  },
+  {
+   "alias": "IDEA?lanczos-frontier-codex-l1-03",
+   "final": "IDEA-415",
+   "new": true
+  },
+  {
+   "alias": "IDEA?lanczos-frontier-codex-l2-01",
+   "final": "IDEA-416",
+   "new": true
+  },
+  {
+   "alias": "IDEA?lanczos-frontier-codex-l2-02",
+   "final": "IDEA-417",
+   "new": true
+  },
+  {
+   "alias": "IDEA?lanczos-frontier-codex-l2-03",
+   "final": "IDEA-418",
+   "new": true
+  },
+  {
+   "alias": "IDEA?lanczos-frontier-codex-L3-01",
+   "final": "IDEA-419",
+   "new": true
+  },
+  {
+   "alias": "IDEA?lanczos-frontier-codex-L4-01",
+   "final": "IDEA-420",
+   "new": true
+  },
+  {
+   "alias": "IDEA?lanczos-frontier-codex-L5-01",
+   "final": "IDEA-421",
+   "new": true
+  },
+  {
+   "alias": "IDEA?lanczos-frontier-codex-L6-01",
+   "final": "IDEA-422",
+   "new": true
+  },
+  {
+   "alias": "IDEA?lanczos-frontier-codex-L7-01",
+   "final": "IDEA-423",
+   "new": true
+  },
+  {
+   "alias": "IDEA?lanczos-frontier-codex-L7-02",
+   "final": "IDEA-424",
+   "new": true
+  },
+  {
+   "alias": "IDEA?lanczos-frontier-codex-l1-01",
+   "final": "IDEA-248",
+   "new": false
+  },
+  {
+   "alias": "IDEA?lanczos-frontier-codex-L3-02",
+   "final": "IDEA-251",
+   "new": false
+  },
+  {
+   "alias": "IDEA?lanczos-frontier-codex-L4-02",
+   "final": "IDEA-250",
+   "new": false
+  },
+  {
+   "alias": "IDEA?lanczos-frontier-codex-L5-02",
+   "final": "IDEA-168",
+   "new": false
+  },
+  {
+   "alias": "IDEA?lanczos-frontier-codex-L5-03",
+   "final": "IDEA-168",
+   "new": false
+  },
+  {
+   "alias": "IDEA?lanczos-frontier-codex-L6-02",
+   "final": "IDEA-262",
+   "new": false
+  },
+  {
+   "alias": "IDEA?lanczos-frontier-codex-L7-03",
+   "final": "IDEA-266",
+   "new": false
+  },
+  {
+   "alias": "IDEA?lanczos-frontier-codex-L7-04",
+   "final": "IDEA-267",
+   "new": false
+  }
+ ],
+ "aliases": {
+  "PD-T?lanczos-frontier-codex-L1-01": "PD-T324",
+  "PD-T?lanczos-frontier-codex-L2-01": "PD-T325",
+  "PD-T?lanczos-frontier-codex-L2-02": "PD-T326",
+  "PD-T?lanczos-frontier-codex-L2-03": "PD-T327",
+  "PD-T?lanczos-frontier-codex-L2-04": "PD-T328",
+  "PD-T?lanczos-frontier-codex-L2-05": "PD-T329",
+  "PD-T?lanczos-frontier-codex-L3-01": "PD-T330",
+  "PD-T?lanczos-frontier-codex-L4-01": "PD-T331",
+  "PD-N?lanczos-frontier-codex-L4-01": "PD-N116",
+  "PD-T?lanczos-frontier-codex-L5-01": "PD-T332",
+  "PD-T?lanczos-frontier-codex-L5-02": "PD-T333",
+  "PD-T?lanczos-frontier-codex-L5-03": "PD-T334",
+  "PD-T?lanczos-frontier-codex-L5-04": "PD-T335",
+  "PD-T?lanczos-frontier-codex-L6-01": "PD-T336",
+  "PD-N?lanczos-frontier-codex-L6-01": "PD-N117",
+  "PD-T?lanczos-frontier-codex-L6-03": "PD-T337",
+  "PD-N?lanczos-frontier-codex-L6-02": "PD-N118",
+  "PD-T?lanczos-frontier-codex-G1-01": "PD-T338",
+  "PD-T?lanczos-frontier-codex-L7-01": "PD-T339",
+  "IDEA?lanczos-frontier-codex-l1-02": "IDEA-414",
+  "IDEA?lanczos-frontier-codex-l1-03": "IDEA-415",
+  "IDEA?lanczos-frontier-codex-l2-01": "IDEA-416",
+  "IDEA?lanczos-frontier-codex-l2-02": "IDEA-417",
+  "IDEA?lanczos-frontier-codex-l2-03": "IDEA-418",
+  "IDEA?lanczos-frontier-codex-L3-01": "IDEA-419",
+  "IDEA?lanczos-frontier-codex-L4-01": "IDEA-420",
+  "IDEA?lanczos-frontier-codex-L5-01": "IDEA-421",
+  "IDEA?lanczos-frontier-codex-L6-01": "IDEA-422",
+  "IDEA?lanczos-frontier-codex-L7-01": "IDEA-423",
+  "IDEA?lanczos-frontier-codex-L7-02": "IDEA-424",
+  "IDEA?lanczos-frontier-codex-l1-01": "IDEA-248",
+  "IDEA?lanczos-frontier-codex-L3-02": "IDEA-251",
+  "IDEA?lanczos-frontier-codex-L4-02": "IDEA-250",
+  "IDEA?lanczos-frontier-codex-L5-02": "IDEA-168",
+  "IDEA?lanczos-frontier-codex-L5-03": "IDEA-168",
+  "IDEA?lanczos-frontier-codex-L6-02": "IDEA-262",
+  "IDEA?lanczos-frontier-codex-L7-03": "IDEA-266",
+  "IDEA?lanczos-frontier-codex-L7-04": "IDEA-267",
+  "PD-T?lanczos-frontier-codex-L1a": "PD-T324",
+  "PD-T?lanczos-frontier-codex-L3a": "PD-T330",
+  "PD-T?lanczos-frontier-codex-L4a": "PD-T331",
+  "PD-T?lanczos-frontier-codex-L5a": "PD-T332",
+  "PD-T?lanczos-frontier-codex-L5b": "PD-T333",
+  "PD-T?lanczos-frontier-codex-L5c": "PD-T334",
+  "PD-T?lanczos-frontier-codex-L5d": "PD-T335",
+  "PD-T?lanczos-frontier-codex-G1-fit": "PD-T338",
+  "PD-T?lanczos-frontier-codex-L7": "PD-T339",
+  "PD-T?lanczos-frontier-G1-fit": "PD-T338",
+  "PD-T?lanczos-frontier-L7": "PD-T339",
+  "IDEA?lanczos-frontier-codex-L3a": "IDEA-419",
+  "IDEA?lanczos-frontier-codex-L3b": "IDEA-251",
+  "IDEA?lanczos-frontier-codex-L4a": "IDEA-420",
+  "IDEA?lanczos-frontier-codex-L4b": "IDEA-250",
+  "IDEA?frontier-l7-01": "IDEA-423",
+  "IDEA?frontier-l7-02": "IDEA-424",
+  "IDEA?frontier-l7-03": "IDEA-266",
+  "IDEA?frontier-l7-04": "IDEA-267"
+ }
+}

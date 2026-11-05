@@ -1,0 +1,371 @@
+{
+ "input_head": "9825d184517db81d0aad8542fbd6639f2164b803",
+ "stage": "remaining",
+ "python": "3.12.14",
+ "source_sha256": {
+  "topics/padua-lanczos-frontier-20261105/code/l7_suite_stage.py": "06e29d1cfd3f9b5e8d6d60abc413e920fee7726dcf488d09fd3dabacc06421f0",
+  "topics/padua-lanczos-frontier-20261105/code/l7_natural.py": "ba2beac1ea8041dd035d8072a1533592deb8c209bc54e801af54906d7f533fb7",
+  "topics/padua-lanczos-frontier-20261105/l7-preregistration.md": "2395cd943563d0380941bbde7adc80d7a00ea8d503b514fe214c91db7b4e54fd",
+  "topics/padua-lanczos-frontier-20261105/l7-suite-methods.md": "e248a7746057983caef66157c69e181b89e195035a4190d61413cb21a9e26c8b",
+  "tracks/bivariate-lanczos/code/L2/l2_core.py": "e8c8fa3378b3531f4fc13faac9902757b97c92c281b2bcd2c02875e0b1c5638d",
+  "tracks/bivariate-lanczos/code/drift/e6_benchmark.py": "e328b7d5d965637e986285cafe596ac15cdd9320c195d6f02162d883267baafe"
+ },
+ "environment": {
+  "PYTHONPATH": "/tmp/padua-lanczos-frontier-g0/deps",
+  "OPENBLAS_NUM_THREADS": "1",
+  "OMP_NUM_THREADS": "1"
+ },
+ "cases": [
+  {
+   "domain": "disk",
+   "seed": 2026110502,
+   "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/l7_natural.py",
+    "--external",
+    "/tmp/padua-lanczos-frontier-g0/polyrat",
+    "--output-dir",
+    "/tmp/padua-lanczos-frontier-l7-suite/remaining/disk-2026110502",
+    "--domains",
+    "disk",
+    "--seeds",
+    "2026110502"
+   ],
+   "exit_code": 0,
+   "elapsed_seconds": 15.017251253128052,
+   "artifacts": [
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/disk-2026110502/disk-2026110502-inputs.npz",
+     "sha256": "c9426f32d18c48d90f1f6e2c0693f6621ed3e40ed657a4d7b044b59ae1d916e3",
+     "bytes": 90364
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/disk-2026110502/disk-2026110502-raw.npz",
+     "sha256": "3aed08864ce896e3610786080b1d80b7ae172dd1ff522b9d53bed9d13d11b088",
+     "bytes": 60259640
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/disk-2026110502/disk-2026110502.json",
+     "sha256": "08b1373d5dd1b4269fa195c04d7f031289a9363459a3fa59eda166a33db5a70b",
+     "bytes": 93167
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/disk-2026110502/metadata.json",
+     "sha256": "4210408a186c953fcf09f7d22f2297068d51c6eda6a35a07228594c7ee4d00f3",
+     "bytes": 1120
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/disk-2026110502/stderr.log",
+     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "bytes": 0
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/disk-2026110502/stdout.log",
+     "sha256": "ae8be802f75a5a178f3bc5e5c8150cda2851838e61061b4533a37bd1314b8ee7",
+     "bytes": 57
+    }
+   ]
+  },
+  {
+   "domain": "lshape",
+   "seed": 2026110501,
+   "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/l7_natural.py",
+    "--external",
+    "/tmp/padua-lanczos-frontier-g0/polyrat",
+    "--output-dir",
+    "/tmp/padua-lanczos-frontier-l7-suite/remaining/lshape-2026110501",
+    "--domains",
+    "lshape",
+    "--seeds",
+    "2026110501"
+   ],
+   "exit_code": 0,
+   "elapsed_seconds": 13.674927234649658,
+   "artifacts": [
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/lshape-2026110501/lshape-2026110501-inputs.npz",
+     "sha256": "92fb88f744b01598cf07844ee50a3a2c1dc49988b6db31bd5d8655aaa1829cbb",
+     "bytes": 90364
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/lshape-2026110501/lshape-2026110501-raw.npz",
+     "sha256": "01d104403e49f74a66c6f659b8f741f4cc32c1331fe2e0bf79e247a175ecb916",
+     "bytes": 60259640
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/lshape-2026110501/lshape-2026110501.json",
+     "sha256": "bc84c50b8771b3609acc43e10c2a9062cefac9e688c6f52037fef202079f7963",
+     "bytes": 93092
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/lshape-2026110501/metadata.json",
+     "sha256": "9f323eff226a6fa05df9f08f732e5da3e55b4116190b5c85bbf46968ada37aa9",
+     "bytes": 1124
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/lshape-2026110501/stderr.log",
+     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "bytes": 0
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/lshape-2026110501/stdout.log",
+     "sha256": "7dc77d4244764432972c24ba3b37bfe33309c394a2ff42e7554ec63a05f2117c",
+     "bytes": 59
+    }
+   ]
+  },
+  {
+   "domain": "lshape",
+   "seed": 2026110502,
+   "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/l7_natural.py",
+    "--external",
+    "/tmp/padua-lanczos-frontier-g0/polyrat",
+    "--output-dir",
+    "/tmp/padua-lanczos-frontier-l7-suite/remaining/lshape-2026110502",
+    "--domains",
+    "lshape",
+    "--seeds",
+    "2026110502"
+   ],
+   "exit_code": 0,
+   "elapsed_seconds": 13.527056694030762,
+   "artifacts": [
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/lshape-2026110502/lshape-2026110502-inputs.npz",
+     "sha256": "b1ea2ac42a78e74018c3c8eb67abcb361e8d21b028c73320fdac7498e753a6a3",
+     "bytes": 90364
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/lshape-2026110502/lshape-2026110502-raw.npz",
+     "sha256": "d289c6fc6539f89b1290a0f87ee6ff83ff4f460fdc4d0983faeecd4b7abd387e",
+     "bytes": 60259640
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/lshape-2026110502/lshape-2026110502.json",
+     "sha256": "30f51038bead9010d8708e26856a0bbee2ffd1a1597e5f3a5f484e1e8b84cab0",
+     "bytes": 92964
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/lshape-2026110502/metadata.json",
+     "sha256": "0372d882d649b916246ac270c2b5ee55b913b3ba3f97f1c9e6344fd8299ea870",
+     "bytes": 1124
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/lshape-2026110502/stderr.log",
+     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "bytes": 0
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/lshape-2026110502/stdout.log",
+     "sha256": "c8aaecad31d8d12b8009a1a4ed8289c8580c70e37442665d85896ec3a711453b",
+     "bytes": 59
+    }
+   ]
+  },
+  {
+   "domain": "triangle",
+   "seed": 2026110501,
+   "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/l7_natural.py",
+    "--external",
+    "/tmp/padua-lanczos-frontier-g0/polyrat",
+    "--output-dir",
+    "/tmp/padua-lanczos-frontier-l7-suite/remaining/triangle-2026110501",
+    "--domains",
+    "triangle",
+    "--seeds",
+    "2026110501"
+   ],
+   "exit_code": 0,
+   "elapsed_seconds": 17.10524010658264,
+   "artifacts": [
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/triangle-2026110501/metadata.json",
+     "sha256": "f5f26b18171290914a90545d75800646f69f6b1ede8a7535afccd41d3a9b8c57",
+     "bytes": 1128
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/triangle-2026110501/stderr.log",
+     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "bytes": 0
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/triangle-2026110501/stdout.log",
+     "sha256": "2f3470c175177d9189294470b82ed8089656d1f4ecddb078fdd53cff4c1d3863",
+     "bytes": 60
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/triangle-2026110501/triangle-2026110501-inputs.npz",
+     "sha256": "dbaeaf4e419deddb9a532a2530bb1c15400b37aa3f6009f045952c34646f3041",
+     "bytes": 90364
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/triangle-2026110501/triangle-2026110501-raw.npz",
+     "sha256": "0e29b075c0f5910f2c8c3fd016306ba077016579381fbb3d70f682090142bf95",
+     "bytes": 60259640
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/triangle-2026110501/triangle-2026110501.json",
+     "sha256": "3cb09698bfc564bc060263c77d22442121b580c8225589a440caf3b8c4450d59",
+     "bytes": 93576
+    }
+   ]
+  },
+  {
+   "domain": "triangle",
+   "seed": 2026110502,
+   "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/l7_natural.py",
+    "--external",
+    "/tmp/padua-lanczos-frontier-g0/polyrat",
+    "--output-dir",
+    "/tmp/padua-lanczos-frontier-l7-suite/remaining/triangle-2026110502",
+    "--domains",
+    "triangle",
+    "--seeds",
+    "2026110502"
+   ],
+   "exit_code": 0,
+   "elapsed_seconds": 17.09437346458435,
+   "artifacts": [
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/triangle-2026110502/metadata.json",
+     "sha256": "6b3050f10948cf6dc4086a600f49b483af9f1c8825e8c29a8f76292f40d265b2",
+     "bytes": 1128
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/triangle-2026110502/stderr.log",
+     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "bytes": 0
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/triangle-2026110502/stdout.log",
+     "sha256": "cb4f60c04e04682cc3cca4ab5bc2c5510bdb4d40d545d27244f67b832bd98e29",
+     "bytes": 60
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/triangle-2026110502/triangle-2026110502-inputs.npz",
+     "sha256": "f412e3570aede88014c5397a30007f6cefa4d3107f313615fcbcee4c530a9b11",
+     "bytes": 90364
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/triangle-2026110502/triangle-2026110502-raw.npz",
+     "sha256": "a439aebaf7c805f4c83af36aebd541a4d23a3921c7a5f449e0368f0d8b22c016",
+     "bytes": 60259640
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/triangle-2026110502/triangle-2026110502.json",
+     "sha256": "1784e300bc7a66a7d18f3456957964983953e92e30b74360c6a70f3b4af9c9bb",
+     "bytes": 93530
+    }
+   ]
+  },
+  {
+   "domain": "sector",
+   "seed": 2026110501,
+   "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/l7_natural.py",
+    "--external",
+    "/tmp/padua-lanczos-frontier-g0/polyrat",
+    "--output-dir",
+    "/tmp/padua-lanczos-frontier-l7-suite/remaining/sector-2026110501",
+    "--domains",
+    "sector",
+    "--seeds",
+    "2026110501"
+   ],
+   "exit_code": 0,
+   "elapsed_seconds": 14.020283699035645,
+   "artifacts": [
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/sector-2026110501/metadata.json",
+     "sha256": "4ad2d27d0cb5cbe1464bfe258050425ae88330206ed9f258643866d643b3b8cc",
+     "bytes": 1124
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/sector-2026110501/sector-2026110501-inputs.npz",
+     "sha256": "eb64e830298545b7431ce9a16696969aca5fd8a750859b01ca19e32e6b5a46bf",
+     "bytes": 90364
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/sector-2026110501/sector-2026110501-raw.npz",
+     "sha256": "0e085158cd347f705d99ca6c1d0d5820880778b756208a9e28bd144254de895f",
+     "bytes": 60259640
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/sector-2026110501/sector-2026110501.json",
+     "sha256": "517b875a729d6c33229e5b1f2d068846de3ddddae3a089ab6220c4719bcaf659",
+     "bytes": 93466
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/sector-2026110501/stderr.log",
+     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "bytes": 0
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/sector-2026110501/stdout.log",
+     "sha256": "ad93d70f2e396866048e8cd90799ce0f968e9ea692ec45ed45df70f44e4ee40e",
+     "bytes": 60
+    }
+   ]
+  },
+  {
+   "domain": "sector",
+   "seed": 2026110502,
+   "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/l7_natural.py",
+    "--external",
+    "/tmp/padua-lanczos-frontier-g0/polyrat",
+    "--output-dir",
+    "/tmp/padua-lanczos-frontier-l7-suite/remaining/sector-2026110502",
+    "--domains",
+    "sector",
+    "--seeds",
+    "2026110502"
+   ],
+   "exit_code": 0,
+   "elapsed_seconds": 14.672100305557251,
+   "artifacts": [
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/sector-2026110502/metadata.json",
+     "sha256": "743ecea28c5247f8b12fc7410163bf2440e118773d4dc6d734d10b60d8501070",
+     "bytes": 1124
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/sector-2026110502/sector-2026110502-inputs.npz",
+     "sha256": "06957e5a9b27f7c0a1100c68c2292da02f6382ed9f7848f8782893daf28411e7",
+     "bytes": 90364
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/sector-2026110502/sector-2026110502-raw.npz",
+     "sha256": "f5ae5955ac44cc76059f8c36a2e13490473a43321f151079634eaf3225ec8f7a",
+     "bytes": 60259640
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/sector-2026110502/sector-2026110502.json",
+     "sha256": "c63822cc48ff8c65c6618d11a2d5f21930bc6bad941eb353db581c76ca547a11",
+     "bytes": 93451
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/sector-2026110502/stderr.log",
+     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "bytes": 0
+    },
+    {
+     "path": "/tmp/padua-lanczos-frontier-l7-suite/remaining/sector-2026110502/stdout.log",
+     "sha256": "da89ef2161265fe1f4fe048563eb7744ee214ea29802e15a7fe3c06d8242c9eb",
+     "bytes": 60
+    }
+   ]
+  }
+ ],
+ "timeout_per_case_seconds": 600
+}

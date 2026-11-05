@@ -1,0 +1,206 @@
+{
+ "numpy": "2.5.4",
+ "cores": [
+  "default",
+  "Haswell",
+  "Nehalem",
+  "SkylakeX"
+ ],
+ "cases": {
+  "default": {
+   "dev": {
+    "max_local_residual": 1.2905635823629211e-16,
+    "local_residual_fro": 7.693054445242756e-16,
+    "max_local_residual_over_u": 1.1624363337255168,
+    "normalized_source_fro": 2.9745564005177024e-15,
+    "propagated_error_norm": 1.346075830081702e-09,
+    "normal_error": 2.4812089883189503e-10,
+    "propagated_normal_error": 2.481414751117032e-10,
+    "normal_reconstruction_discrepancy": 1.7677071291589946e-13,
+    "frozen_inverse_50dps_normal_error": 2.4812089884398443e-10,
+    "frozen_inverse_50dps_reconstruction_discrepancy": 2.718203279452825e-18,
+    "ld_vs_50dps_propagation_discrepancy": 5.679420700310993e-13,
+    "normal_amplification_over_residual_fro": 322552.6049216373,
+    "q0_constant": true,
+    "gap_50dps_ref": 2.481208988259087e-10,
+    "extended_gap_50dps_ref": 2.3013317545493946e-13
+   },
+   "alt": {
+    "max_local_residual": 9.45053071014668e-17,
+    "local_residual_fro": 6.877970109860337e-16,
+    "max_local_residual_over_u": 0.8512281316934004,
+    "normalized_source_fro": 1.8121416114082946e-15,
+    "propagated_error_norm": 1.64802905735792e-11,
+    "normal_error": 7.301052403891458e-12,
+    "propagated_normal_error": 7.300431303951318e-12,
+    "normal_reconstruction_discrepancy": 1.7034093769159569e-15,
+    "frozen_inverse_50dps_normal_error": 7.30105240140891e-12,
+    "frozen_inverse_50dps_reconstruction_discrepancy": 2.722377372757697e-18,
+    "ld_vs_50dps_propagation_discrepancy": 5.531698514902198e-15,
+    "normal_amplification_over_residual_fro": 10614.223655152753,
+    "q0_constant": true,
+    "gap_50dps_ref": 7.3010523980668e-12,
+    "extended_gap_50dps_ref": 2.584510813048319e-15
+   }
+  },
+  "Haswell": {
+   "dev": {
+    "max_local_residual": 1.1874751714083322e-16,
+    "local_residual_fro": 7.659821072203084e-16,
+    "max_local_residual_over_u": 1.0695825478932561,
+    "normalized_source_fro": 2.929975561599546e-15,
+    "propagated_error_norm": 1.2647044362591465e-09,
+    "normal_error": 2.75586986762849e-10,
+    "propagated_normal_error": 2.757396669849763e-10,
+    "normal_reconstruction_discrepancy": 2.75931129524347e-13,
+    "frozen_inverse_50dps_normal_error": 2.755869867578985e-10,
+    "frozen_inverse_50dps_reconstruction_discrepancy": 2.728858829081113e-18,
+    "ld_vs_50dps_propagation_discrepancy": 4.3294538394257543e-13,
+    "normal_amplification_over_residual_fro": 359981.86430961796,
+    "q0_constant": true,
+    "gap_50dps_ref": 2.755869867635581e-10,
+    "extended_gap_50dps_ref": 2.3013317545493946e-13
+   },
+   "alt": {
+    "max_local_residual": 1.1355756930431166e-16,
+    "local_residual_fro": 7.005542709499237e-16,
+    "max_local_residual_over_u": 1.0228356536079946,
+    "normalized_source_fro": 1.825190171135752e-15,
+    "propagated_error_norm": 5.3851126976798616e-12,
+    "normal_error": 1.3021561039390399e-12,
+    "propagated_normal_error": 1.3020162607344082e-12,
+    "normal_reconstruction_discrepancy": 1.903256823119045e-15,
+    "frozen_inverse_50dps_normal_error": 1.3021560891671946e-12,
+    "frozen_inverse_50dps_reconstruction_discrepancy": 2.7278032926257676e-18,
+    "ld_vs_50dps_propagation_discrepancy": 3.83527306598911e-15,
+    "normal_amplification_over_residual_fro": 1858.5515993913307,
+    "q0_constant": true,
+    "gap_50dps_ref": 1.3021561006919381e-12,
+    "extended_gap_50dps_ref": 2.584510813048319e-15
+   }
+  },
+  "Nehalem": {
+   "dev": {
+    "max_local_residual": 1.2017499197755027e-16,
+    "local_residual_fro": 8.098379750756844e-16,
+    "max_local_residual_over_u": 1.0824400981786955,
+    "normalized_source_fro": 3.1664709096319236e-15,
+    "propagated_error_norm": 5.501536521423792e-10,
+    "normal_error": 3.240107688128248e-10,
+    "propagated_normal_error": 3.240199636744969e-10,
+    "normal_reconstruction_discrepancy": 1.35521617998511e-13,
+    "frozen_inverse_50dps_normal_error": 3.2401076882545556e-10,
+    "frozen_inverse_50dps_reconstruction_discrepancy": 2.7517374550290246e-18,
+    "ld_vs_50dps_propagation_discrepancy": 6.12969081299826e-13,
+    "normal_amplification_over_residual_fro": 400104.6797592015,
+    "q0_constant": true,
+    "gap_50dps_ref": 3.2401076881545045e-10,
+    "extended_gap_50dps_ref": 2.3013317545493946e-13
+   },
+   "alt": {
+    "max_local_residual": 9.388989273076969e-17,
+    "local_residual_fro": 7.401448368470673e-16,
+    "max_local_residual_over_u": 0.8456849718323004,
+    "normalized_source_fro": 1.9519938618654242e-15,
+    "propagated_error_norm": 1.2414276091870954e-11,
+    "normal_error": 3.02405303249846e-12,
+    "propagated_normal_error": 3.0232241730752966e-12,
+    "normal_reconstruction_discrepancy": 1.6407382424225562e-15,
+    "frozen_inverse_50dps_normal_error": 3.024053032854603e-12,
+    "frozen_inverse_50dps_reconstruction_discrepancy": 2.7505940897857135e-18,
+    "ld_vs_50dps_propagation_discrepancy": 1.1307870216561943e-14,
+    "normal_amplification_over_residual_fro": 4084.6386039168865,
+    "q0_constant": true,
+    "gap_50dps_ref": 3.024053032996529e-12,
+    "extended_gap_50dps_ref": 2.584510813048319e-15
+   }
+  },
+  "SkylakeX": {
+   "dev": {
+    "max_local_residual": 1.2905635823629211e-16,
+    "local_residual_fro": 7.693054445242756e-16,
+    "max_local_residual_over_u": 1.1624363337255168,
+    "normalized_source_fro": 2.9745564005177024e-15,
+    "propagated_error_norm": 1.346075830081702e-09,
+    "normal_error": 2.4812089883189503e-10,
+    "propagated_normal_error": 2.481414751117032e-10,
+    "normal_reconstruction_discrepancy": 1.7677071291589946e-13,
+    "frozen_inverse_50dps_normal_error": 2.4812089884398443e-10,
+    "frozen_inverse_50dps_reconstruction_discrepancy": 2.718203279452825e-18,
+    "ld_vs_50dps_propagation_discrepancy": 5.679420700310993e-13,
+    "normal_amplification_over_residual_fro": 322552.6049216373,
+    "q0_constant": true,
+    "gap_50dps_ref": 2.481208988259087e-10,
+    "extended_gap_50dps_ref": 2.3013317545493946e-13
+   },
+   "alt": {
+    "max_local_residual": 9.45053071014668e-17,
+    "local_residual_fro": 6.877970109860337e-16,
+    "max_local_residual_over_u": 0.8512281316934004,
+    "normalized_source_fro": 1.8121416114082946e-15,
+    "propagated_error_norm": 1.64802905735792e-11,
+    "normal_error": 7.301052403891458e-12,
+    "propagated_normal_error": 7.300431303951318e-12,
+    "normal_reconstruction_discrepancy": 1.7034093769159569e-15,
+    "frozen_inverse_50dps_normal_error": 7.30105240140891e-12,
+    "frozen_inverse_50dps_reconstruction_discrepancy": 2.722377372757697e-18,
+    "ld_vs_50dps_propagation_discrepancy": 5.531698514902198e-15,
+    "normal_amplification_over_residual_fro": 10614.223655152753,
+    "q0_constant": true,
+    "gap_50dps_ref": 7.3010523980668e-12,
+    "extended_gap_50dps_ref": 2.584510813048319e-15
+   }
+  }
+ },
+ "kernel_span_pairs": {
+  "dev:default-Haswell": {
+   "Q_bytes_equal": false,
+   "span_distance": 2.942684100495867e-10
+  },
+  "dev:default-Nehalem": {
+   "Q_bytes_equal": false,
+   "span_distance": 4.472000446887145e-10
+  },
+  "dev:default-SkylakeX": {
+   "Q_bytes_equal": true,
+   "span_distance": 1.186273517645186e-18
+  },
+  "dev:Haswell-Nehalem": {
+   "Q_bytes_equal": false,
+   "span_distance": 4.217073871361679e-10
+  },
+  "dev:Haswell-SkylakeX": {
+   "Q_bytes_equal": false,
+   "span_distance": 2.9426841005448195e-10
+  },
+  "dev:Nehalem-SkylakeX": {
+   "Q_bytes_equal": false,
+   "span_distance": 4.472000446908952e-10
+  },
+  "alt:default-Haswell": {
+   "Q_bytes_equal": false,
+   "span_distance": 7.936646706815615e-12
+  },
+  "alt:default-Nehalem": {
+   "Q_bytes_equal": false,
+   "span_distance": 9.975398729434631e-12
+  },
+  "alt:default-SkylakeX": {
+   "Q_bytes_equal": true,
+   "span_distance": 1.1783621584700667e-18
+  },
+  "alt:Haswell-Nehalem": {
+   "Q_bytes_equal": false,
+   "span_distance": 2.764079307387946e-12
+  },
+  "alt:Haswell-SkylakeX": {
+   "Q_bytes_equal": false,
+   "span_distance": 7.936646717333168e-12
+  },
+  "alt:Nehalem-SkylakeX": {
+   "Q_bytes_equal": false,
+   "span_distance": 9.975398736058125e-12
+  }
+ },
+ "elapsed_seconds": 36.37110877037048
+}

@@ -1,0 +1,69 @@
+{
+  "label": "COMMON_DENOMINATOR_ROTATED_BJ14_COST_BOUNDARY",
+  "rules_head": "02a465b",
+  "code_sha256": "7dbc7ecb609ee5db9ebcb9a52bf39f13e5273ccfebc330791223ca2923f49f3b",
+  "prospective_cap_seconds": 180,
+  "result": "INCOMPLETE_COST_CAP",
+  "actual_state": {
+    "basis_degree": 14,
+    "last_source": 83,
+    "completed_degrees": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "timing": {
+    "wall_seconds": 180.00033470299968,
+    "process_cpu_seconds": 179.932724249
+  },
+  "actual_command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_fast.py",
+    "--set",
+    "rotated",
+    "--rule",
+    "bj",
+    "--degree",
+    "14",
+    "--old-sweep",
+    "/tmp/padua-lanczos-frontier-g1/inputs/e1-full-sweep.json",
+    "--output-dir",
+    "/tmp/padua-lanczos-frontier-g1-fast/benchmark14-bj",
+    "--receipt",
+    "/tmp/padua-lanczos-frontier-g1-fast/benchmark14-bj.json",
+    "--seconds",
+    "180",
+    "--compare",
+    "/tmp/padua-lanczos-frontier-g1/benchmark14/rotated-bj/endpoints.json"
+  ],
+  "receipt": {
+    "path": "/tmp/padua-lanczos-frontier-g1-fast/benchmark14-bj.json",
+    "bytes": 1177,
+    "sha256": "9f551e78594eb6eac91a43d6a376c3db0fdc55c18247140406e86e229b7beb39"
+  },
+  "partial_endpoints": {
+    "path": "/tmp/padua-lanczos-frontier-g1-fast/benchmark14-bj/endpoints.json",
+    "bytes": 66804,
+    "sha256": "90d641c4477aac43350babdf30441b867ecca2f1b4be6b9880fadd46db50629d"
+  },
+  "raw_baseline": {
+    "path": "/tmp/padua-lanczos-frontier-g1-fast/benchmark14-bj/baseline.jsonl.gz",
+    "bytes": 1434576,
+    "sha256": "205f2e4d7b894d4bb2b9a3d9693cbd668775e3ec297fd8164c02290c6a3f251b"
+  },
+  "limits": [
+    "All original625nodes/fullplanned119sources; only83sourcescompletedbeforecap.",
+    "No completeddegree12,13or14 endpoint fromthisbenchmark; priorall88legacyoverlapremainsvalid.",
+    "No20runbyproducer and nofit/targetverdict.",
+    "Costlimitdoesnotrefutemathematicaltarget or provecomputationalimpossibility."
+  ]
+}

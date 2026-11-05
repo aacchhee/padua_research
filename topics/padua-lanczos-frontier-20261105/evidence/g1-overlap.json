@@ -1,0 +1,433 @@
+{
+  "label": "EXACT_G1_PRODUCER_INVENTORY_NO_FIT_OR_GATE_VERDICT",
+  "phase": "overlap",
+  "full_required_scope": {
+    "sets": [
+      "triangle",
+      "rotated"
+    ],
+    "rules": [
+      "bj",
+      "mirror",
+      "alt",
+      "pivot"
+    ],
+    "degrees": [
+      2,
+      20
+    ],
+    "source_class": "all",
+    "expected_rows": 152
+  },
+  "phase_completed_rows": 88,
+  "missing_cases": [],
+  "cases": [
+    {
+      "set": "triangle",
+      "rule": "bj",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1/overlap-triangle-bj.json",
+        "bytes": 4279,
+        "sha256": "2dda706752d247539309c3282ebe42ac5164f1d4530d20e799794d5f27355f0d"
+      },
+      "result": "EXACT_OVERLAP_PASS",
+      "max_degree": 12,
+      "endpoint_file": {
+        "path": "/tmp/padua-lanczos-frontier-g1/overlap/triangle-bj/endpoints.json",
+        "bytes": 17068,
+        "sha256": "a484974f3255e790d9546c30dc0c3af06f1d9162494f5631f7d107f60c65c420"
+      },
+      "basis_recurrence": {
+        "path": "/tmp/padua-lanczos-frontier-g1/overlap/triangle-bj/basis-recurrence.jsonl.gz",
+        "bytes": 92556,
+        "sha256": "b04b90d4d77e823b65695b4ba0f2f8c38c35f09ab5d3909a0e426c076a13679a"
+      },
+      "completed_degrees": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "all_2_through_12_overlap_pass": true,
+      "pivot_ties": [],
+      "independent_degree_controls": [
+        2,
+        3,
+        4
+      ],
+      "elapsed_seconds": 3.46316779100016,
+      "final_displays": {
+        "Knode_squared": 204938793592638.8,
+        "KHS_squared": 1.085972874503294e+16,
+        "Urow_squared": 1.2136770516616376e+16,
+        "upper_squared": 1.085972874503294e+16
+      }
+    },
+    {
+      "set": "triangle",
+      "rule": "mirror",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1/overlap-triangle-mirror.json",
+        "bytes": 4297,
+        "sha256": "3a756b02cbd563de2a89df6021f22cd43b2db1e677155cf83958274c5aa9210c"
+      },
+      "result": "EXACT_OVERLAP_PASS",
+      "max_degree": 12,
+      "endpoint_file": {
+        "path": "/tmp/padua-lanczos-frontier-g1/overlap/triangle-mirror/endpoints.json",
+        "bytes": 17156,
+        "sha256": "3b13e0c51ebdb6783dd1a7f64a02a067ff29ff71d518f8daf32e961ffc1c7f2d"
+      },
+      "basis_recurrence": {
+        "path": "/tmp/padua-lanczos-frontier-g1/overlap/triangle-mirror/basis-recurrence.jsonl.gz",
+        "bytes": 90895,
+        "sha256": "6b26ac13143f574d9891a12da671c206b1af8527e18390dc726af85c0c051287"
+      },
+      "completed_degrees": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "all_2_through_12_overlap_pass": true,
+      "pivot_ties": [],
+      "independent_degree_controls": [
+        2,
+        3,
+        4
+      ],
+      "elapsed_seconds": 3.8400090710001678,
+      "final_displays": {
+        "Knode_squared": 365508019.7517858,
+        "KHS_squared": 16316358690.532324,
+        "Urow_squared": 31986777753.88804,
+        "upper_squared": 16316358690.532324
+      }
+    },
+    {
+      "set": "triangle",
+      "rule": "alt",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1/overlap-triangle-alt.json",
+        "bytes": 4271,
+        "sha256": "56f63bc410ea51c9fe41742b18f9575171e4eee4ffd5773862150d0f68f5ef0b"
+      },
+      "result": "EXACT_OVERLAP_PASS",
+      "max_degree": 12,
+      "endpoint_file": {
+        "path": "/tmp/padua-lanczos-frontier-g1/overlap/triangle-alt/endpoints.json",
+        "bytes": 17895,
+        "sha256": "044664e602a8846e1720f304a44d5aff4cd32dc0efad88a43eaf38385ea52d9c"
+      },
+      "basis_recurrence": {
+        "path": "/tmp/padua-lanczos-frontier-g1/overlap/triangle-alt/basis-recurrence.jsonl.gz",
+        "bytes": 91972,
+        "sha256": "4100181bc82321a5e9f816aa7e645724dc67c0c74c725d8b17a36ad25d574dda"
+      },
+      "completed_degrees": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "all_2_through_12_overlap_pass": true,
+      "pivot_ties": [],
+      "independent_degree_controls": [
+        2,
+        3,
+        4
+      ],
+      "elapsed_seconds": 12.891002953998395,
+      "final_displays": {
+        "Knode_squared": 19412657630.443222,
+        "KHS_squared": 339923620993.30145,
+        "Urow_squared": 1253688622727.9944,
+        "upper_squared": 339923620993.30145
+      }
+    },
+    {
+      "set": "triangle",
+      "rule": "pivot",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1/overlap-triangle-pivot.json",
+        "bytes": 4286,
+        "sha256": "25023a53dbf4b16059ae80bc9db2098ac05d1b3fc95cd235ae15473fb36dacbe"
+      },
+      "result": "EXACT_OVERLAP_PASS",
+      "max_degree": 12,
+      "endpoint_file": {
+        "path": "/tmp/padua-lanczos-frontier-g1/overlap/triangle-pivot/endpoints.json",
+        "bytes": 17969,
+        "sha256": "5d07cb256d8b7bb0ceae59da3c6465e660aea6d3057722e8e8995971f44baf00"
+      },
+      "basis_recurrence": {
+        "path": "/tmp/padua-lanczos-frontier-g1/overlap/triangle-pivot/basis-recurrence.jsonl.gz",
+        "bytes": 91652,
+        "sha256": "95d74ee54f859d95f3a3603aef18fe3eacebdbe33129ba2b18ba73048dfe5156"
+      },
+      "completed_degrees": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "all_2_through_12_overlap_pass": true,
+      "pivot_ties": [],
+      "independent_degree_controls": [
+        2,
+        3,
+        4
+      ],
+      "elapsed_seconds": 5.716872533999776,
+      "final_displays": {
+        "Knode_squared": 12479403.793464156,
+        "KHS_squared": 161459771.1335607,
+        "Urow_squared": 1082621358.5143547,
+        "upper_squared": 161459771.1335607
+      }
+    },
+    {
+      "set": "rotated",
+      "rule": "bj",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1/overlap-rotated-bj.json",
+        "bytes": 4267,
+        "sha256": "da14af01553f535a77c83c2012dd640afa20f6b05dfc998f5554b8f7a093dfbe"
+      },
+      "result": "EXACT_OVERLAP_PASS",
+      "max_degree": 12,
+      "endpoint_file": {
+        "path": "/tmp/padua-lanczos-frontier-g1/overlap/rotated-bj/endpoints.json",
+        "bytes": 96062,
+        "sha256": "1ee4c3c743af4f9564336d367515601bcbb7b1cfa94e3c083a7268dd71db8f87"
+      },
+      "basis_recurrence": {
+        "path": "/tmp/padua-lanczos-frontier-g1/overlap/rotated-bj/basis-recurrence.jsonl.gz",
+        "bytes": 1151105,
+        "sha256": "5c96de1e3b0ea888e9ef8ced39d7dc05febad761c5f7dbd378a04c4bddb58c81"
+      },
+      "completed_degrees": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "all_2_through_12_overlap_pass": true,
+      "pivot_ties": [],
+      "independent_degree_controls": [
+        2,
+        3,
+        4
+      ],
+      "elapsed_seconds": 268.7073902150005,
+      "final_displays": {
+        "Knode_squared": 88170667576.16072,
+        "KHS_squared": 6567173753187.64,
+        "Urow_squared": 1284116602066.878,
+        "upper_squared": 1284116602066.878
+      }
+    },
+    {
+      "set": "rotated",
+      "rule": "mirror",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1/overlap-rotated-mirror.json",
+        "bytes": 4292,
+        "sha256": "22fa5c9399119739b9240e798058d3bce912cd25515730ff6b353f22fc52c2b6"
+      },
+      "result": "EXACT_OVERLAP_PASS",
+      "max_degree": 12,
+      "endpoint_file": {
+        "path": "/tmp/padua-lanczos-frontier-g1/overlap/rotated-mirror/endpoints.json",
+        "bytes": 101666,
+        "sha256": "5b3896d9bb405ba59f7fa2d59d444c4ff14d02ddd5c2a99ea1b140103bf2a36f"
+      },
+      "basis_recurrence": {
+        "path": "/tmp/padua-lanczos-frontier-g1/overlap/rotated-mirror/basis-recurrence.jsonl.gz",
+        "bytes": 1144521,
+        "sha256": "1ab4f0fc2d7be1536e0d4eda730afce506209ab68e6686b8f375ccebae60af98"
+      },
+      "completed_degrees": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "all_2_through_12_overlap_pass": true,
+      "pivot_ties": [],
+      "independent_degree_controls": [
+        2,
+        3,
+        4
+      ],
+      "elapsed_seconds": 275.111826149001,
+      "final_displays": {
+        "Knode_squared": 365917141884.32367,
+        "KHS_squared": 7235820820325.677,
+        "Urow_squared": 3564187201875.422,
+        "upper_squared": 3564187201875.422
+      }
+    },
+    {
+      "set": "rotated",
+      "rule": "alt",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1/overlap-rotated-alt.json",
+        "bytes": 4274,
+        "sha256": "d1797a37221c509d9511f9f713caba0e33803d03f72a2fd5e444f073e8c0fb43"
+      },
+      "result": "EXACT_OVERLAP_PASS",
+      "max_degree": 12,
+      "endpoint_file": {
+        "path": "/tmp/padua-lanczos-frontier-g1/overlap/rotated-alt/endpoints.json",
+        "bytes": 113750,
+        "sha256": "1cb4b0b28bc91b0c71d89297f8ab9ac6c1d6284dcc310ec83775aa1c3ee149ce"
+      },
+      "basis_recurrence": {
+        "path": "/tmp/padua-lanczos-frontier-g1/overlap/rotated-alt/basis-recurrence.jsonl.gz",
+        "bytes": 1151436,
+        "sha256": "2e94c3e715ecb8474572a41fffe0091429f889dd57a76f8dc50898cb5a490a29"
+      },
+      "completed_degrees": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "all_2_through_12_overlap_pass": true,
+      "pivot_ties": [],
+      "independent_degree_controls": [
+        2,
+        3,
+        4
+      ],
+      "elapsed_seconds": 358.15042510999956,
+      "final_displays": {
+        "Knode_squared": 39414606.24234048,
+        "KHS_squared": 1418364662.7640908,
+        "Urow_squared": 641872542.4236447,
+        "upper_squared": 641872542.4236447
+      }
+    },
+    {
+      "set": "rotated",
+      "rule": "pivot",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1/overlap-rotated-pivot.json",
+        "bytes": 4319,
+        "sha256": "86c795924c01c5e58c6c2b199976aa796c57f69e1853f7f07eb86c78bd527ac3"
+      },
+      "result": "EXACT_OVERLAP_PASS",
+      "max_degree": 12,
+      "endpoint_file": {
+        "path": "/tmp/padua-lanczos-frontier-g1/overlap/rotated-pivot/endpoints.json",
+        "bytes": 110129,
+        "sha256": "ebda11a2b850093b02a50076eef74ca79ee70fe76c28f038fbe44fe8ebb3ceae"
+      },
+      "basis_recurrence": {
+        "path": "/tmp/padua-lanczos-frontier-g1/overlap/rotated-pivot/basis-recurrence.jsonl.gz",
+        "bytes": 1148064,
+        "sha256": "5b77fc716d7671fc5763cd6716e42d8cbb46557cf524dafe6e342bd4e05f3673"
+      },
+      "completed_degrees": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "all_2_through_12_overlap_pass": true,
+      "pivot_ties": [
+        [
+          2,
+          1
+        ]
+      ],
+      "independent_degree_controls": [
+        2,
+        3,
+        4
+      ],
+      "elapsed_seconds": 302.38070061100007,
+      "final_displays": {
+        "Knode_squared": 1487755434.911109,
+        "KHS_squared": 35812349833.04376,
+        "Urow_squared": 18969265960.52245,
+        "upper_squared": 18969265960.52245
+      }
+    }
+  ],
+  "manifest_code_sha256": "7244ca3e82cf8287a7bf5750e7860229dd5e8f4f325b9cdab1121c191114a4d7",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_manifest.py",
+    "--receipt-dir",
+    "/tmp/padua-lanczos-frontier-g1",
+    "--prefix",
+    "overlap",
+    "--output",
+    "topics/padua-lanczos-frontier-20261105/evidence/g1-overlap.json"
+  ],
+  "limits": [
+    "This receipt inventories actual completed producer work; pending degrees/cases are not completed.",
+    "No descriptive fitting until the full152-row scope is complete.",
+    "Exact finite endpoints give no all-degree conclusion; independent port/checking remains separate.",
+    "Bulk exact endpoints/recurrence arrays remain external temporary evidence with archive/delivery pending."
+  ]
+}

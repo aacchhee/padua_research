@@ -1,0 +1,309 @@
+{
+  "rules_head": "bb67c1ee830d468fa33007e15008d5574d00ccf4",
+  "status": "G4_DEVELOPER_REPLAY_DIFFERENCES_L7_STOP_REVIEW_PENDING",
+  "code_sha256": "cdae3268039fda7f420f948d32c849f8c496a6eeb8255588264c50a162150543",
+  "source_sha256": {
+    "tracks/bivariate-lanczos/code/drift/e6_benchmark.py": "e328b7d5d965637e986285cafe596ac15cdd9320c195d6f02162d883267baafe",
+    "tracks/bivariate-lanczos/code/drift/e6_smooth.py": "de624205e6909a114521a6e166b212ce05dc84343956e2cbae93a1e515189a1e",
+    "tracks/bivariate-lanczos/code/L2/l2_core.py": "e8c8fa3378b3531f4fc13faac9902757b97c92c281b2bcd2c02875e0b1c5638d",
+    "tracks/bivariate-lanczos/code/L1/l1_recurrence.py": "4b6014359d6cf50d2977ace0524846a5d0bf5498528a382e1c6abde2cb05b884",
+    "tracks/bivariate-lanczos/code/L1/l1_r04_checkerboard.py": "1a53cdc4c187edf5ae1e14a60d125b7e2846009134d2d390a68ceb8345506c20"
+  },
+  "upstream_sha256": {
+    "arnoldi.py": "e51f356170dc5e1403f1065daf5bc331e7ce470cac1b9161f5ecb9efccf68d86",
+    "index.py": "84df400c73a2aacf922ff38c0a591b525c2ac1f9b7a9f958f4111d4ceb88d10d",
+    "basis.py": "9ce50feba7cfaa706db3bb94bbe2b34f065d9dbde28a18a3eee021d11e8ec478",
+    "version.py": "1d13b63cb7af46b37f80ac0d695be5f795c2db5ce6e66dea34143da4cb434439"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "cases": [
+    {
+      "name": "rotpi4",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/padua_research/tracks/bivariate-lanczos/code/drift/e6_benchmark.py",
+        "--external",
+        "/tmp/padua-lanczos-frontier-g0/polyrat",
+        "--sets",
+        "rotpi4",
+        "--output",
+        "/tmp/padua-lanczos-frontier-l7/g4/rotpi4.json"
+      ],
+      "environment": {
+        "PYTHONPATH": "/tmp/padua-lanczos-frontier-g0/deps",
+        "OPENBLAS_NUM_THREADS": "1",
+        "OPENBLAS_CORETYPE": null
+      },
+      "start_utc": "2026-11-05T14:59:52Z",
+      "elapsed_seconds": 2.572693347930908,
+      "exit_code": 0,
+      "output": {
+        "path": "/tmp/padua-lanczos-frontier-l7/g4/rotpi4.json",
+        "bytes": 14331,
+        "sha256": "9ddd57deaaa8b165a15199114caf799acae1fbd6f0678bb44adcfd8b3e98b320"
+      },
+      "difference_count": 367,
+      "comparison": {
+        "path": "/tmp/padua-lanczos-frontier-l7/g4/rotpi4-differences.json",
+        "sha256": "dd3831551c586fb2cdecec2d16a54ce8fdb0a4b2027c5063edf5434daecbb3ac"
+      },
+      "checks": {
+        "reference_kappa_relative_difference": 2.842170943040401e-14,
+        "methods": {
+          "upstream_xy": {
+            "old_gap": 0.013618252745799302,
+            "new_gap": 0.016891692260998417,
+            "gap_abs_difference": 0.0032734395151991155,
+            "gap_screen": false,
+            "orth_screen": true,
+            "old_orth_max": 6.8833827526759706e-15,
+            "new_orth_max": 1.5543122344752192e-15,
+            "old_fit_test": 0.0034290594672715304,
+            "new_fit_test": 0.0024021122885635312
+          },
+          "upstream_yx": {
+            "old_gap": 0.004105469352253462,
+            "new_gap": 0.0056337846089631,
+            "gap_abs_difference": 0.0015283152567096376,
+            "gap_screen": false,
+            "orth_screen": true,
+            "old_orth_max": 6.8833827526759706e-15,
+            "new_orth_max": 1.5543122344752192e-15,
+            "old_fit_test": 0.0010138608616164946,
+            "new_fit_test": 0.0015492016699484236
+          },
+          "dev": {
+            "old_gap": 0.004105469352253462,
+            "new_gap": 0.0056337846089631,
+            "gap_abs_difference": 0.0015283152567096376,
+            "gap_screen": false,
+            "orth_screen": true,
+            "old_orth_max": 6.8833827526759706e-15,
+            "new_orth_max": 1.5543122344752192e-15,
+            "old_fit_test": null,
+            "new_fit_test": null
+          },
+          "mirror": {
+            "old_gap": 0.9379680454186219,
+            "new_gap": 0.9736553042686196,
+            "gap_abs_difference": 0.03568725884999768,
+            "gap_screen": false,
+            "orth_screen": true,
+            "old_orth_max": 6.8833827526759706e-15,
+            "new_orth_max": 1.5543122344752192e-15,
+            "old_fit_test": null,
+            "new_fit_test": null
+          },
+          "alt": {
+            "old_gap": 2.122043754569406e-08,
+            "new_gap": 1.527256566237612e-08,
+            "gap_abs_difference": 5.9478718833179395e-09,
+            "gap_screen": false,
+            "orth_screen": true,
+            "old_orth_max": 6.8833827526759706e-15,
+            "new_orth_max": 1.5543122344752192e-15,
+            "old_fit_test": null,
+            "new_fit_test": null
+          },
+          "adapt": {
+            "old_gap": 1.8592487265547192e-06,
+            "new_gap": 3.389604975887575e-06,
+            "gap_abs_difference": 1.5303562493328558e-06,
+            "gap_screen": false,
+            "orth_screen": true,
+            "old_orth_max": 6.8833827526759706e-15,
+            "new_orth_max": 1.5543122344752192e-15,
+            "old_fit_test": null,
+            "new_fit_test": null
+          }
+        },
+        "reference_kappa_screen": true
+      },
+      "all_scalar_differences_retained_externally": true
+    },
+    {
+      "name": "triangle",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/padua_research/tracks/bivariate-lanczos/code/drift/e6_benchmark.py",
+        "--external",
+        "/tmp/padua-lanczos-frontier-g0/polyrat",
+        "--sets",
+        "triangle",
+        "--output",
+        "/tmp/padua-lanczos-frontier-l7/g4/triangle.json"
+      ],
+      "environment": {
+        "PYTHONPATH": "/tmp/padua-lanczos-frontier-g0/deps",
+        "OPENBLAS_NUM_THREADS": "1",
+        "OPENBLAS_CORETYPE": null
+      },
+      "start_utc": "2026-11-05T14:59:54Z",
+      "elapsed_seconds": 1.5692009925842285,
+      "exit_code": 0,
+      "output": {
+        "path": "/tmp/padua-lanczos-frontier-l7/g4/triangle.json",
+        "bytes": 11165,
+        "sha256": "8a082480e20650bb5e5f9c61ffd92daf02fcfedfe006e5febc7c3b36caebc55f"
+      },
+      "difference_count": 271,
+      "comparison": {
+        "path": "/tmp/padua-lanczos-frontier-l7/g4/triangle-differences.json",
+        "sha256": "c3217ee4c9a1f5e5567a679a39af4d9f662dd825cfef9a1200a406464016f62b"
+      },
+      "checks": {
+        "reference_kappa_relative_difference": 0.0,
+        "methods": {
+          "upstream_xy": {
+            "old_gap": 0.002893472595147739,
+            "new_gap": 0.001758290873382346,
+            "gap_abs_difference": 0.001135181721765393,
+            "gap_screen": false,
+            "orth_screen": true,
+            "old_orth_max": 6.8833827526759706e-15,
+            "new_orth_max": 1.5543122344752192e-15,
+            "old_fit_test": 0.00019875232040771944,
+            "new_fit_test": 0.00012137554585108704
+          },
+          "upstream_yx": {
+            "old_gap": 0.010163571396223751,
+            "new_gap": 0.01549619648976448,
+            "gap_abs_difference": 0.005332625093540728,
+            "gap_screen": false,
+            "orth_screen": true,
+            "old_orth_max": 6.8833827526759706e-15,
+            "new_orth_max": 1.5543122344752192e-15,
+            "old_fit_test": 0.0015694263047789933,
+            "new_fit_test": 0.0026283016443062798
+          },
+          "dev": {
+            "old_gap": 0.010163571396223751,
+            "new_gap": 0.01549619648976448,
+            "gap_abs_difference": 0.005332625093540728,
+            "gap_screen": false,
+            "orth_screen": true,
+            "old_orth_max": 6.8833827526759706e-15,
+            "new_orth_max": 1.5543122344752192e-15,
+            "old_fit_test": null,
+            "new_fit_test": null
+          },
+          "mirror": {
+            "old_gap": 1.7289700153511147e-07,
+            "new_gap": 2.467806749731822e-07,
+            "gap_abs_difference": 7.388367343807073e-08,
+            "gap_screen": false,
+            "orth_screen": true,
+            "old_orth_max": 6.8833827526759706e-15,
+            "new_orth_max": 1.5543122344752192e-15,
+            "old_fit_test": null,
+            "new_fit_test": null
+          },
+          "alt": {
+            "old_gap": 7.602150159701751e-08,
+            "new_gap": 8.73656594357459e-08,
+            "gap_abs_difference": 1.1344157838728397e-08,
+            "gap_screen": false,
+            "orth_screen": true,
+            "old_orth_max": 6.8833827526759706e-15,
+            "new_orth_max": 1.5543122344752192e-15,
+            "old_fit_test": null,
+            "new_fit_test": null
+          },
+          "adapt": {
+            "old_gap": 9.519397852923627e-10,
+            "new_gap": 5.322539568708177e-10,
+            "gap_abs_difference": 4.1968582842154507e-10,
+            "gap_screen": false,
+            "orth_screen": true,
+            "old_orth_max": 6.8833827526759706e-15,
+            "new_orth_max": 1.5543122344752192e-15,
+            "old_fit_test": null,
+            "new_fit_test": null
+          }
+        },
+        "reference_kappa_screen": true
+      },
+      "all_scalar_differences_retained_externally": true
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/tmp/padua-lanczos-frontier-l7/g4/environment.json",
+      "bytes": 1953,
+      "sha256": "122032e858fcaab71114646418b7b110bbc2c1c61585ca19ea0a8c20a5d6d3b1"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-l7/g4/historical.json",
+      "bytes": 239594,
+      "sha256": "e7a3f940c4bd79bbf84fbe4eeafca4186c9b969c92665fb972367becc23a3c58"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-l7/g4/rotpi4-differences.json",
+      "bytes": 78397,
+      "sha256": "dd3831551c586fb2cdecec2d16a54ce8fdb0a4b2027c5063edf5434daecbb3ac"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-l7/g4/rotpi4-receipt.json",
+      "bytes": 13261,
+      "sha256": "0202ca2dcd98e8264304f95abe22ee27b6a2631f56084661d8cecf156b692dc4"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-l7/g4/rotpi4.json",
+      "bytes": 14331,
+      "sha256": "9ddd57deaaa8b165a15199114caf799acae1fbd6f0678bb44adcfd8b3e98b320"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-l7/g4/rotpi4.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-l7/g4/rotpi4.stdout",
+      "bytes": 189,
+      "sha256": "18693601900a729618a694f892c0405441a019629cd7899e703168d8d013c929"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-l7/g4/summary.json",
+      "bytes": 30640,
+      "sha256": "9ff241b877d0fd5ef4336005864419ddd8698141570e5587c37785b00b4103e1"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-l7/g4/triangle-differences.json",
+      "bytes": 57549,
+      "sha256": "c3217ee4c9a1f5e5567a679a39af4d9f662dd825cfef9a1200a406464016f62b"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-l7/g4/triangle-receipt.json",
+      "bytes": 12868,
+      "sha256": "20d76965c2451e61cf06874989c057d3a6495279c0f5c37ad69771e7bb1ad256"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-l7/g4/triangle.json",
+      "bytes": 11165,
+      "sha256": "8a082480e20650bb5e5f9c61ffd92daf02fcfedfe006e5febc7c3b36caebc55f"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-l7/g4/triangle.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-l7/g4/triangle.stdout",
+      "bytes": 182,
+      "sha256": "dbf93e82140b4bd564645e208503ef411bb1a877b876bd209a787c5bc5a80c77"
+    }
+  ],
+  "limitations": [
+    "Historical Q/H and exact BLAS dispatch unavailable.",
+    "Numeric screens are unchanged saved diagnostics, not explanation or blanket acceptance.",
+    "Both executions are developer replay; distinct review and root acceptance required before suite.",
+    "No natural-target suite executed."
+  ]
+}

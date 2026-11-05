@@ -1,0 +1,99 @@
+{
+  "label": "BATCH_ROTATED_BJ14_COST_STOP",
+  "result": "EXACT_CASE_COMPLETED",
+  "code_sha256": "4b705ac8b6f4dced7d08e049d3b4f62fa4cf712a1f5ed34f0627f37875a386ee",
+  "rules_sha": "9825d184517db81d0aad8542fbd6639f2164b803",
+  "cap_seconds": 180,
+  "timing": {
+    "wall_seconds": 79.05013877999954,
+    "process_cpu_seconds": 79.006265684,
+    "basis_wall_seconds": 1.1800675420017797,
+    "basis_cpu_seconds": 1.179742545
+  },
+  "old_exact_comparison_degrees": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "all625_nodes_all119_sources": true,
+  "receipt": {
+    "path": "/tmp/padua-lanczos-frontier-g1-batch/benchmark14/rotated-bj-d14.json",
+    "bytes": 3330,
+    "sha256": "5da66ed85716844dd9609919b9f5e025f7ac44ccadc52c1c1291542b7baedc9a"
+  },
+  "pre_run_launch": {
+    "path": "/tmp/padua-lanczos-frontier-g1-batch/benchmark14/rotated-bj-d14-launch.json",
+    "bytes": 1220,
+    "sha256": "a2e13cbd9695d627ccc0a91c9d21a3f0b9f5458d692d6eaac3b2f8bf6933d67a"
+  },
+  "endpoint_file": {
+    "path": "/tmp/padua-lanczos-frontier-g1-batch/benchmark14/rotated-bj-d14/endpoints.json",
+    "bytes": 180480,
+    "sha256": "dc29c087cab8447601811c9db27b38ac7c96132d90889970a218e24176591ed6"
+  },
+  "baseline": {
+    "path": "/tmp/padua-lanczos-frontier-g1-batch/benchmark14/rotated-bj-d14/baseline.jsonl.gz",
+    "bytes": 1434576,
+    "sha256": "51656f8df4962bb306b72bdb7ecd1b8fabe85a53c3dae87575f0877c42780500"
+  },
+  "old_benchmark": {
+    "path": "/tmp/padua-lanczos-frontier-g1/benchmark14/rotated-bj/endpoints.json",
+    "bytes": 182234,
+    "sha256": "0ecedcd23e7fce677f204aeed326847ef18c095ee3dd0d63ecffd3c9778e6287"
+  },
+  "high20_precondition": {
+    "required_BJ14_wall_at_most_seconds": 60,
+    "met": false,
+    "producer20_executed": false
+  },
+  "authorized_profile8": {
+    "receipt": {
+      "path": "/tmp/padua-lanczos-frontier-g1-batch/profile8/receipt.json",
+      "bytes": 2864,
+      "sha256": "868d4b102856c1883d668da8d4430cb70d4df044a4f2312ef391ad4d796a73d8"
+    },
+    "pre_run_launch": {
+      "path": "/tmp/padua-lanczos-frontier-g1-batch/profile8/launch.json",
+      "bytes": 951,
+      "sha256": "60839c9867140491984eeb10e4ce725c9e6e72cf19c1b84ff6cf444ce64ae483"
+    },
+    "cap_seconds": 30,
+    "result": "EXACT_CASE_COMPLETED",
+    "timing": {
+      "wall_seconds": 5.661659110002802,
+      "process_cpu_seconds": 5.6475614499999995,
+      "basis_wall_seconds": 0.22502456000074744,
+      "basis_cpu_seconds": 0.22423074299999998
+    },
+    "pstats": {
+      "path": "/tmp/padua-lanczos-frontier-g1-batch/profile8/profile.pstats",
+      "bytes": 91103,
+      "sha256": "1d80286e54ba656d243f041696ddb8fee9212a03057a5f48359fcb860541f896"
+    },
+    "text": {
+      "path": "/tmp/padua-lanczos-frontier-g1-batch/profile8/profile.txt",
+      "bytes": 3024,
+      "sha256": "197309197a733fe3a99a639c05dce456e13335465b7683280a5edca9a9407320"
+    },
+    "total_profile_seconds": 5.7342477409999955,
+    "V_constructor_calls": 5446,
+    "V_constructor_self_seconds": 3.4208566900000004,
+    "V_constructor_self_fraction": 0.596565904458714
+  },
+  "next_cost_bottleneck": "Measured degree8: V.__init__ common-content normalization consumes ~60% of total self time. Basis only1.180s of BJ14 79.050s. The complete degree8 run invokes5446 vector constructors (including controls and basis), with response/energy construction the remaining main phase. No further optimization or20 run performed.",
+  "limits": [
+    "All13 old benchmark rows agree exactly; cost stop is not scientific rejection.",
+    "Profile scope degree8 only; high-degree hotspot extrapolation is not a timing proof.",
+    "No fits or operational/asymptotic claim. Raw artifacts temporary; archival pending."
+  ]
+}

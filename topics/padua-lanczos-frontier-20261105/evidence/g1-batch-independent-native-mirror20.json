@@ -1,0 +1,118 @@
+{
+  "authorization": "Root explicit allocation after accepted BJ20: new mirror/alt/pivot20 native cases, each900s hardcap, at most2 workers.",
+  "rules_sha": "9825d184517db81d0aad8542fbd6639f2164b803",
+  "launcher": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_batch_independent_remaining.py",
+    "bytes": 7336,
+    "sha256": "11c5ce4e4f0888f76a7b826317920abc9725c55996711c28c02d9c93d2767fad"
+  },
+  "native_source": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_fast_independent.cpp",
+    "bytes": 9215,
+    "sha256": "b6434df51d3df7e04136b1da9f8ee63e6c5f599e609625f415718766db0480dc"
+  },
+  "old_sweep": {
+    "path": "/tmp/padua-lanczos-frontier-g1/inputs/e1-full-sweep.json",
+    "bytes": 616693,
+    "sha256": "0d9c236fe879879b7f546596c554d213b7b8c408d31dec08dd79146c7d629344"
+  },
+  "accepted_BJ20": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/evidence/g1-batch-independent-bj20.json",
+    "bytes": 3068,
+    "sha256": "f8f819f1e41b5fe106572e39479e58a6713ada3e7f7aeaac6e06c0ba52ef089d"
+  },
+  "validation_dependency": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_independent_run.py",
+    "bytes": 6795,
+    "sha256": "388c70c0d3af25f33d67c967a5bcf94e45ee6060412be45c4a5430048a9451ae"
+  },
+  "executable": {
+    "path": "/tmp/padua-lanczos-frontier-g1-native-remaining/run/g1_fast_independent",
+    "bytes": 78464,
+    "sha256": "a9a0a9b81b123cd4835e7c035bfe82e619426decc35f2c7c733e1ebb0d407d60"
+  },
+  "compile_command": [
+    "g++",
+    "-O3",
+    "-std=c++17",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_fast_independent.cpp",
+    "-lgmpxx",
+    "-lgmp",
+    "-o",
+    "/tmp/padua-lanczos-frontier-g1-native-remaining/run/g1_fast_independent"
+  ],
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "runtime": {
+    "python": "3.12.14",
+    "GMP_package_version": "2:6.3.0+dfsg-3"
+  },
+  "max_workers": 2,
+  "cap_seconds_per_case": 900,
+  "invocation": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_batch_independent_remaining.py",
+    "--out",
+    "/tmp/padua-lanczos-frontier-g1-native-remaining/run",
+    "--old",
+    "/tmp/padua-lanczos-frontier-g1/inputs/e1-full-sweep.json",
+    "--accepted-bj20",
+    "topics/padua-lanczos-frontier-20261105/evidence/g1-batch-independent-bj20.json"
+  ],
+  "status": "PASS native exact remaining-rule20; fresh producer comparison pending",
+  "rule": "mirror",
+  "grid": "rotated",
+  "command": [
+    "/tmp/padua-lanczos-frontier-g1-native-remaining/run/g1_fast_independent",
+    "rotated",
+    "20",
+    "mirror"
+  ],
+  "elapsed_seconds": 435.95768520899946,
+  "completed_degrees": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "node_count": 625,
+  "source_count_at20": 230,
+  "endpoint_file": {
+    "path": "/tmp/padua-lanczos-frontier-g1-native-remaining/run/rotated-mirror-d20.jsonl",
+    "bytes": 943312,
+    "sha256": "e08a759eac1724fb7d7c7a34aa4d4695e1f740560fcd796dbf47b844d15e63b8"
+  },
+  "progress_log": {
+    "path": "/tmp/padua-lanczos-frontier-g1-native-remaining/run/rotated-mirror-d20.log",
+    "bytes": 3813,
+    "sha256": "bbc2779e5f8a85d1cd539db848b7788b93ef6d42d00df0ceb1f7f6574a262451"
+  },
+  "invalid_trailing_suffix": null,
+  "error": null,
+  "limits": "All sources/all625 nodes/full exact Gram required; no missing-source completion claim. New endpoints need fresh producer comparison. No fit or automatic retry.",
+  "raw_receipt": {
+    "path": "/tmp/padua-lanczos-frontier-g1-native-remaining/run/mirror-receipt.json",
+    "bytes": 3713,
+    "sha256": "0184f6afe680cb5543ddb37727821d230274ddf0086c31fb0ca949d6594bb358"
+  },
+  "actual_GMP_package_observation": {
+    "path": "/tmp/padua-lanczos-frontier-g1-native-remaining/run/gmp-package-observation.json",
+    "bytes": 422,
+    "sha256": "74c9841c3ccbc7196f656c1416c119d8d18126ccb4b78e4a652730f148a6139e"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "state": "LOCAL_ONLY_NOT_DELIVERED",
+  "inventory": {
+    "path": "/tmp/padua-lanczos-frontier-storage/handoff04-inventory.json",
+    "bytes": 42298,
+    "sha256": "e50e9ece9bd6ddb8282838d94af331ee6c482de2b6179d782a089c5a0dde230c",
+    "entries": 275
+  },
+  "roots": {
+    "g1_flint": {
+      "path": "/tmp/padua-lanczos-frontier-g1-fast",
+      "commands_and_checks": "g1-optimization.md; evidence/g1-fast*.json; independent-checks-g1-04.md"
+    },
+    "g1_native": {
+      "path": "/tmp/padua-lanczos-frontier-g1-fast-independent",
+      "commands_and_checks": "independent-checks-g1-04.md; evidence/g1-fast-independent*.json"
+    },
+    "g4": {
+      "path": "/tmp/padua-lanczos-frontier-l7",
+      "commands_and_checks": "g4-methods.md; evidence/g4-*.json; independent-checks-frontier-04.md"
+    },
+    "g3_independent": {
+      "path": "/tmp/padua-lanczos-frontier-g3-independent",
+      "commands_and_checks": "independent-checks-g3-04.md; evidence/g3-independent.json"
+    },
+    "g3": {
+      "path": "/tmp/padua-lanczos-frontier-g3",
+      "commands_and_checks": "g3-methods.md; independent-checks-g3-04.md; evidence/g3-*.json"
+    }
+  },
+  "builder": {
+    "path": "code/storage_inventory_04.py",
+    "bytes": 2969,
+    "sha256": "21509163bea970885fe844caf593fa632bc98748ea38096035c3ea73d6d9c02c"
+  },
+  "command": "python -B topics/padua-lanczos-frontier-20261105/code/storage_inventory_04.py",
+  "check_command": "python -B topics/padua-lanczos-frontier-20261105/code/storage_inventory_04.py --check",
+  "prior_inventory": "cold-storage.json (unchanged historical index)",
+  "retention": "Temporary local files; no Windows delivery or retention guarantee. Scientific regeneration commands/source and input pins in the linked methods and per-run receipts. Full raw inventory stays outside Git; rebuilding after regeneration records new bytes."
+}
