@@ -91,3 +91,51 @@ case, prioritizing H24_222. Python's rational integer-string cap is raised
 before these runs; no endpoint truncation or approximate arithmetic is used.
 Keep every timeout and exact completion mask. Inherited T24 N2 reanalysis
 uses the accepted compact outward log enclosures, without duplicate scans.
+
+## Prospective disk16 resource successor
+
+After observing fast disk16 BJ/mirror completion at277.843/313.868seconds,
+the coordinator invoked the user's existing6h/run,48hCPU authorization:
+preserve original600s producer outcomes, then defer unstarted scalar600s
+cases and cancel any that auto-start at that boundary. Record every such
+case as actually cancelled/partial or unstarted, with its output identity.
+A separate wrapper `p6_disk_successor.py` may select only missing disk16
+cases, use3600seconds per case and at most4native processes, and reuse
+completed original producer rows without rerunning them. The original
+in-flight harness/source hashes stay unchanged. Dataset, source class,
+arithmetic/model, all60required rows and N2 scientific thresholds remain
+unchanged. A checker speed variant requires a separately pinned exact
+equivalence-control receipt and its own code hash before successor use.
+
+The machine reports4cgroup CPU cores and18GBRAM, with~17GBfree and current
+producer RSS114–140MB each, so4native processes fit the observed resources.
+This is a prospective resource-plan extension, not a retrospective change
+to old caps or a new mathematical family/growth criterion.
+
+## Prospective distinct D65x9 pilot
+
+P2's new `theory/p2-04-low-denominator-rings.md` and its delta gate were read
+fully before preparation/execution. This separately admitted family has36
+directions with common hypotenuse65, nine radii k/9 and equal mass1/324;
+its common coordinate denominator is585. It is a different finite measure
+from D36x9, whose data/attempts remain intact. New exact generator:
+`p6_d65_input.py`; generic explicit-spec route in `p6_scan.py` records exact
+specification/native-input hashes and an N1 link at the recorded head.
+It constrains the explicit family's max_scan_degree and admission path to
+the topic's theory directory; no mathematical checker pins a prose hash.
+
+Run a fresh degree8 cost pilot, four rules and both native paths, sequential
+one-worker execution,60seconds per case. The coordinator explicitly permits
+this short fifth native process sharing4cores while the original successor
+has4active cases; do not pause any old case or change its wall cap. No full
+D65x9 degree16 run starts before actual pilot costs and scheduling are
+reported. Scientific source model, exact arithmetic and N2 thresholds are
+unchanged; runtime benefit is not assumed from denominator reduction.
+
+After the D65x9 degree8 pilot actually passed all28 rows, the coordinator
+requested a separate degree12 worst-rule cost benchmark: alternating only,
+both backends sequentially,120seconds per case, one extra process sharing
+the4cores. `p6_cost_case.py` records the explicit single-rule coverage and
+every completed/partial prefix; if both finish, compare all11 exact rows.
+This remains cost screening and cannot establish N2's all-four-rule window.
+The original D36 successor source/input identities and3600s caps stay fixed.

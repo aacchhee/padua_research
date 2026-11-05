@@ -45,3 +45,16 @@ fixed pivot choices at a tie do not establish differentiated adaptive safety.
 The weighted implementation is held at its formula gate until the written
 proof arrives. Uniform scans are held at N1 until family admission arrives.
 No new final IDEA or PD-N is requested for implementation reuse or deferral.
+
+## Prospective D65x9 implementation delta
+
+Before the new pilot, read P2-04 and P2's full new delta gate. This is a
+routine finite-family/input variant of D36x9/IDEA-248 and the same weighted
+quotient implementation, with no new geometry or priority mechanism. The
+distinction is exact common coordinate denominator585 versus49,725 while
+retaining36directions/nine circles; actual cost and capacity values are
+unmeasured before execution. The precise new point set and N1 proof are
+fixed first, with a new family ID and input hash. Count/unit-radius/LCM or
+exact-basis failure kills this implementation specification. No runtime
+advantage follows from the denominator proof alone. The original D36x9
+timeouts/cancelled cases and incomplete high validation remain separate.

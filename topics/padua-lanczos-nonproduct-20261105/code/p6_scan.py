@@ -27,25 +27,37 @@ def identity(path):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--family', choices=('T24', 'H24_222', 'D36x9'), required=True)
+    selection = parser.add_mutually_exclusive_group(required=True)
+    selection.add_argument('--family', choices=('T24', 'H24_222', 'D36x9'))
+    selection.add_argument('--spec', type=Path, help='Explicit exact JSON specification with an N1 admission link')
     parser.add_argument('--max-degree', type=int, choices=range(4, 21), required=True)
     parser.add_argument('--seconds', type=int, choices=(60, 120, 600), required=True)
     parser.add_argument('--work-dir', type=Path, required=True)
     parser.add_argument('--receipt', type=Path, required=True)
+    parser.add_argument('--workers', type=int, choices=(1, 2), default=2)
     args = parser.parse_args()
+    spec = json.loads(args.spec.read_text()) if args.spec else specification(args.family)
+    args.family = spec['family']
+    if args.spec:
+        assert isinstance(spec.get('max_scan_degree'), int)
+        assert args.max_degree <= spec['max_scan_degree'], 'outside explicit family admission'
     assert args.family != 'D36x9' or args.max_degree <= 16, 'D36x9 scan admission stops at16'
     args.work_dir.mkdir(parents=True, exist_ok=False)
-    spec = specification(args.family)
-    assert (CODE.parent / spec['admission']).is_file()
+    admission = (CODE.parent / spec['admission']).resolve()
+    assert admission.is_relative_to((CODE.parent/'theory').resolve()) and admission.is_file()
     data, input_receipt = prepare(spec)
     inp = args.work_dir / 'input.txt'
     inp.write_bytes(data)
     (args.work_dir / 'spec.json').write_text(json.dumps(spec, indent=2)+'\n')
     receipt = {'status': 'INCOMPLETE', 'family': args.family,
                'max_degree': args.max_degree, 'per_case_seconds': args.seconds,
+               'workers': args.workers,
                'head': subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip(),
                'command': [sys.executable, '-B', *sys.argv], 'input': input_receipt,
-               'harness': identity(__file__), 'input_generator': identity(CODE/'p6_families.py'),
+               'harness': identity(__file__),
+               'input_generator': None if args.spec else identity(CODE/'p6_families.py'),
+               'explicit_specification': identity(args.spec) if args.spec else None,
+               'admission_link': str(admission),
                'input_preparer': identity(CODE/'p6_inputs.py'), 'row_guard': identity(CODE/'p6_rows.py'),
                'python': platform.python_version(), 'runs': []}
     def save():
@@ -84,7 +96,7 @@ def main():
         result.update(elapsed_seconds=time.monotonic()-t0, output=identity(output), log=identity(log))
         return result
     cases = [(backend, rule) for backend in ('producer', 'checker') for rule in ('bj', 'mirror', 'alt', 'pivot')]
-    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as pool:
         for result in pool.map(run, cases):
             receipt['runs'].append(result)
             save()

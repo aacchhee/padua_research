@@ -68,7 +68,7 @@ Thus both are unbounded but polynomially bounded, uniformly in m>s. Every
 fixed admissible rule has capacity at least1, so BJ/best also has a polynomial
 upper for any finite collection of those rules. This supplies neither a
 matching polynomial exponent nor an upper for alternating/pivot capacities.
-The square stage s=m is excluded; its normal space is zero.
+The full stage s=m is outside this theorem.
 
 Proofs: [Padua admission](theory/p5-01-padua-admission.md),
 [capacity classification](theory/p5-02-padua-polynomial-capacity.md).
@@ -133,6 +133,13 @@ It therefore does not identify fixed-order BJ and mirror. The
 [finite probe](theory/p2-03-finite-recurrence-probe.md) gives restricted
 witness information only. **The disk rate question remains OPEN.**
 
+A separately admitted [D65x9 variant](theory/p2-04-low-denominator-rings.md)
+uses36 integer-circle directions with hypotenuse65 and nine radii. Its
+coordinate denominator is585 instead of49,725; it is a distinct measure,
+not a replacement identity for D36x9. Its exact2–8 pilot matches both
+arithmetic paths. The change was motivated by arithmetic cost before
+observing a high-degree capacity result; N2 thresholds are unchanged.
+
 ## Exact scans and verification
 
 Four rules are BJ, mirror, alternating and exact pivot (X wins ties), with
@@ -148,6 +155,7 @@ complete scan. H24_222 uses normalized rational weights proportional to
 | Uniform T24 | inherited2–20; fresh pilots/replay | INCONCLUSIVE |
 | H24_222 | fresh2–16, four rules,60 exact rows | INCONCLUSIVE |
 | D36x9 | fresh2–8, four rules,28 exact rows;16 running | No completed16-window verdict |
+| D65x9 | fresh2–8 pilot, four rules,28 exact rows; cost12 probe running | No completed16-window verdict |
 | SH reweighting | analytic all-degree proof; no bulk algebraic scan | UNRUN |
 | Positive Padua | analytic all-degree bounds; algebraic m2–5 checks | UNRUN |
 

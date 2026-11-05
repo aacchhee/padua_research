@@ -280,3 +280,109 @@ its exact attainment was reconstructed analytically. The updated
 [rerun receipt](evidence/check-math-reruns.json) pins this script, its
 `p4_weighted_check.py` dependency, inputs and fresh output identity.
 The required Claude audit and original scope/protocol limits remain.
+
+## Focused admission addendum — D65x9 and P1/P2 supporting proofs
+
+2026-11-05, same distinct reviewer and allocation. **Accepted with no
+unresolved mathematical finding.** Read and reconstructed the following
+four full proofs at checkout `84f1794c899b3d792c4b3b741555e90fb20d49c6`
+plus working D65x9 additions. Also read P2's common-denominator delta gate,
+original finite-family candidate, new candidate, preserved subroutes and
+Round3 attempt. The general novelty/obstruction coverage recorded above
+remains applicable; this extends the mathematical scope, not a historical
+priority claim. Rules remained unchanged.
+
+| Reviewed file in `theory/` | SHA-256 |
+|---|---|
+| p1-triangle-admission.md | 353bb42b956142a64849678f2c6f57e87d477078a047eb16de7f861b8e6e6b18 |
+| p2-01-family-admission.md | f8427f579f482d8dccb27ec2e334f736eada513744376d90491c9438e8e329e7 |
+| p2-02-rotation-covariance.md | 1a09641c4ddbd79de6ba79f1419d2f8d9e2d2cbe9356aa4fdc426549d63368c0 |
+| p2-04-low-denominator-rings.md | e2deafacd96874c4af856ec12e1a2bd986d194266e52a11cbbc9f3ef3536b476 |
+
+For D65x9 each of the four distinct positive unordered pairs lies on the
+integer circle of radius65. Their sign/swap orbits each have eight members
+and avoid the four axes, giving36 distinct directions. Nine distinct
+positive radii give324 distinct nodes. All coordinates have denominator
+dividing585, and 16/585 is reduced, proving the exact LCD. For D36x9 the
+reduced coordinates7/225,5/117,8/153 force LCD49,725; it also suffices.
+Their quotient is85. This does not compare individual coordinate
+denominators or establish an arithmetic cost advantage.
+
+On any fixed radius circle a polynomial of total degree<=17 restricts
+to a trigonometric polynomial with frequencies -17,...,17. Multiplying
+by exp(17i theta) gives an ordinary polynomial of degree<=34;36 distinct
+roots force identical vanishing. Division by y^2+x^2-r^2 leaves an affine
+remainder in y; evaluating at both circle branches forces that remainder
+to vanish. Repeating for nine distinct positive radii yields degree18
+unless the polynomial is zero. This proves injectivity through17 for
+both ring families, independently of a matrix-rank experiment. Each of
+36 outer nodes is uniquely exposed by its own dot-product functional,
+so the hull cannot be an affine-product parallelogram. Positive rational
+weights give positive rational Gram data and algebraic normalized data.
+N_16=153<324 verifies the requested finite admission range.
+
+The new and old measures are distinct: for example(16/65,63/65) is absent
+from the old support. Two sign/swap orbits are shared, which does not
+identify the supports, moments or capacities. Neither finite measure is
+identified with a continuous radial disk law, and no cubature or full
+rotation invariance is asserted. The unchanged finite N2 thresholds
+apply to a fresh family separately. No measured runtime or capacity
+advantage follows from this admission.
+
+For P1, the triangular hull excludes affine products. The falling-factorial
+basis evaluation is triangular with diagonal one on the lattice through
+N, proving injectivity; strict oversampling holds exactly below N.
+The generalized binomial convolution normalizes the displayed weights,
+with positivity/rationality for positive rational a,b,c and the uniform
+specialization a=b=c=1. Continuous positive interior density has full
+triangle support. The fixed T24 admission is correctly distinguished
+from an unbounded-degree family.
+
+For P2's continuous disk, the density has total mass one for mu>-1;
+polar beta integrals yield the displayed factorial/rising-factorial
+moments, rational for rational mu. Positive interior density gives U(n),
+and the disk hull excludes affine products. For algorithm covariance,
+radial invariance makes U_O unitary and intertwines multiplication with
+the transported coordinate. Exact projection, normalization and additive
+sources commute with that transport. The source budget and projector
+norms are preserved, including finite-epsilon runs where defined. This
+requires transport of the entire order and parent graph. Independently
+recomputing the mu=0 degree-two Gram subtraction gives norms1/16,1/24,
+1/18 and the stated swap block with diagonal entries -1/3,1/3 and
+off-diagonal entries2sqrt(2)/3. Thus coordinate swap mixes the first and
+third GS columns; it supplies no fixed-original-order BJ/mirror equality.
+
+### Actual independent D65x9 implementation rerun
+
+No separate developer checker file was created. I inspected and extracted
+only the Python code in P2-04's frozen shell block to
+`/tmp/padua-lanczos-nonproduct-20261105/math-review/p2-low-denominator-check.py`
+(with one trailing newline), then actually executed:
+
+```text
+python3 -B /tmp/padua-lanczos-nonproduct-20261105/math-review/p2-low-denominator-check.py
+```
+
+Stdout was saved separately to
+`/tmp/padua-lanczos-nonproduct-20261105/math-review/p2-low-denominator-check.json`.
+Exit0; fresh JSON equals every field of the embedded developer output.
+It verifies36 directions,324 nodes,nine radii,D4 closure, equality with
+an independent enumeration of the integer circle, LCD585 versus49,725,
+and distinct old/new supports. Sorted coordinate-text identity is
+`1e86eb8db994e48f395fb357ddee77102bc386053237296931bfcd6026d315b7`
+(4,002 bytes). Extracted **code** SHA-256:
+`60a4e5632fe617bb4112b331ad08ee49f1c0dd4d20f868b71c0066ee719da90e`.
+Fresh output SHA-256:
+`0af58f081ab31c7cc5b90052838ade6237e67fa83ef4f284c2125e23f880059a`
+(421 bytes). Deterministic standard-library Fraction arithmetic,
+Python3.12.14, no random seeds or external input files. This pins the
+executed code snippet, not its surrounding prose. It is a separate-agent
+execution of the same small implementation check, not a capacity scan or
+a finite reduction of injectivity. The receipt's rank_scope17 is an
+analytic label; no rank matrix was evaluated. No additional P1/P2
+creator-probe or scan execution is claimed by this addendum.
+
+This supersedes the earlier exclusion of P1/P2 only for these four named
+records. P1's continuous creator probe, P2's finite recurrence probe,
+P6 endpoints/fits and new-family scan remain outside this assessment.
+The required Claude substantive audit and protocol limits remain.

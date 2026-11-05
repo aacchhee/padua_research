@@ -203,3 +203,33 @@ candidate's mathematics.
   in the scalar checker. It owns disjoint source/note files and may not
   replace the accepted path without measured benefit and focused review.
   Current native source arithmetic and in-flight identities stay unchanged.
+
+## 2026-11-05 — disk resource response and P2/P6 checkpoints
+
+- The original D36x9 producer outcomes are exact: BJ277.84s, mirror313.87s,
+  pivot572.90s completed; alternating timed out at600.01s with its2–9
+  prefixes completed. Auto-started scalar BJ/mirror were stopped during
+  basis construction, with no completed rows; scalar alt/pivot were
+  deferred unstarted. [Closure receipt](evidence/p6-disk-original-cancellation.json)
+  preserves actual attempted/unstarted masks and raw identities. The
+  3600s successor reuses completed producers and runs only missing cases.
+- P2 admitted a [distinct lower-denominator D65x9 family](theory/p2-04-low-denominator-rings.md)
+  before execution, under its delta gate. Same36 directions/nine radii
+  cardinality and rank proof, changed support, denominator585 instead of
+  49,725. The original family and its cost evidence are never overwritten.
+  A distinct Astra high reviewer accepts this admission and independently
+  repeats the exact count/LCM check.
+- P6's fresh D65 pilot2–8, all four rules and both arithmetic paths, matches
+  28 rows. It ran as one short extra native process sharing the existing
+  four-core quota, without pausing old wall-timed cases. A degree12
+  alternating-only cost probe is the next step; it does not claim all-rule
+  coverage or an N2 window. Full16 scheduling awaits that cost evidence.
+- The [bounded scalar-checker optimization experiment](p6-speed-notes.md)
+  found no useful gain: BJ8 approximately7.34 to7.29s, pivot8 approximately
+  10.09 to12.47s. Exact-zero variants and six equality checks are retained
+  as finite implementation evidence; they were not adopted. No independent
+  representation/source reduction or negative mathematical theorem follows.
+- Prepared an inventory generator for the coordinator to run after final
+  code/receipts are committed. It indexes committed code/data, actual local
+  artifacts and unavailable paths, without claiming external delivery or
+  hash-pinning prose. Final manifest generation remains pending.

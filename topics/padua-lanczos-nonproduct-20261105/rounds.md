@@ -7,11 +7,11 @@ progress stop that direction.
 | Direction | Completed rounds | Current work |
 |---|---:|---|
 | P1 triangle | 3 | Round 3 complete: Xu full preprint read; access limits recorded. Triangle rate target remains OPEN |
-| P2 disk | 2 | Round 2: symmetry covariance and finite probe interpretation complete; paused at N3 redirect, rate question OPEN |
+| P2 disk | 3 | Round 3: distinct D65x9 low-denominator ring family admitted; tiny exact input check passes. Rate question OPEN |
 | P3 perturbed SH | 2 | Round 2: unchanged exponential BJ / polynomial mirror inequalities and uniform eta certificate proved analytically |
 | P4 structural criterion | 3 | Round 3 complete: terminal-block routine corollary consolidated;22 exact tests and distinct rerun pass. General criterion OPEN |
 | P5 Padua | 1 | Round 1 complete: nonproduct admission and two-sided polynomial BJ/mirror bounds proved; exact supplementary checks pass |
-| P6 exact scans | 3 | Round 3: H24 complete through16 and two N2 screens INCONCLUSIVE; disk8 matched, disk16 running under cap. Round 4: disk resource disposition |
+| P6 exact scans | 4 | Round 4: original disk600s outcomes preserved,3600s successor running; distinct D65 pilot8 passes. Round 5: cost12 benchmark and missing disk cases |
 
 ## Round outcomes
 
@@ -70,3 +70,12 @@ progress stop that direction.
   triangular-block norm corollary in the existing weighted record. No new
   result ID;22 simultaneous-source checks and distinct rerun pass. It is
   an all-source lower only, with no full-source upper or family rate.
+- P2 round 3: [D65x9](theory/p2-04-low-denominator-rings.md) is a distinct
+  324-node rational ring measure, with coordinate denominator585 instead
+  of49,725, proved injective through17 and genuinely non-product. No
+  capacity or runtime advantage follows from admission alone.
+- P6 round 4: original D36x9 fast BJ/mirror/pivot16 completed; alternating
+  hit600s. Initial scalar cases were cancelled/deferred explicitly, then
+  missing cases moved to a separately pinned3600s successor. D65x9's
+  separate two-path pilot2–8 passes28 rows; degree12 worst-rule cost probe
+  follows. Neither unfinished full16 family has an N2 verdict.

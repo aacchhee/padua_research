@@ -66,3 +66,52 @@ Cheapest first steps are elementary family admission and a low-degree
 exact recurrence/symmetry test. N2 and N3 must be disposed before any
 all-degree P2 capacity theorem attempt. No capacity ratio, symmetry
 classification of every ordering, or all-degree bound is asserted here.
+
+## Round3 delta gate — common-denominator ring implementation
+
+2026-11-05, after pushed Round2 `13c3146`; written before any new
+direction/rank check or scan. Coordinator requests a bounded resource
+response to expensive original D36x9 degree16 cases: a separate ring
+measure with smaller common coordinate denominator. The original complete
+registry/full-shortlist gate above remains the mechanism gate. This
+delta is an implementation variant, not a new geometry, capacity method,
+rate conjecture or priority claim.
+
+Re-read the full P2-01 admission, P2 candidate memory, attempts and current
+topic LOG. Searched `hypotenuse`, `Pythagorean`, `common denominator`,
+`denominator65` and `C65x9` in the topic/state/literature-index scope.
+The first broad display included generated evidence and was truncated;
+the Markdown-only follow-up recovered the bounded new-family terms.
+Two guessed top-level theory/negative directories did not exist; no
+absence claim is based on those unsuccessful path arguments. No external
+fulltext is imported. Closest canonical entry is the existing D36x9
+candidate IDEA?P2-02 and P2-01, with the inherited IDEA-248/PD-T338 exact
+scan model and normal-source distinctions unchanged.
+
+The proposed delta is to take four sign/swap orbits with a common
+hypotenuse, retaining nine radii k/9 and equal positive weights. Admission
+uses exactly the prior root-count/divisibility and support-extreme-point
+proofs. The falsifiable implementation distinction is a strictly smaller
+least common coordinate denominator than D36x9's 49,725, with at least
+34 distinct unit directions and injectivity through16. A denominator
+comparison alone predicts no runtime or capacity improvement. Fewer than
+34 directions, fewer than nine distinct positive radii, a rank-proof
+failure or no denominator reduction kills this particular response.
+
+Cheapest test, after the exact set and proof are recorded: enumerate the
+specified integer direction orbits, check unit norms/distinctness/D4 and
+the denominator LCM, and verify the generic analytic rank hypotheses.
+No numerical matrix rank or full capacity run is needed for admission.
+P6 alone will implement and preregister fresh scan controls with unchanged
+N2 thresholds. A new family gets a new name and input hash; its data never
+overwrite D36x9, imply equal capacities, or represent the continuous ν_μ.
+Original timeout/cancellation and partial-prefix evidence remain intact.
+
+Verdict: cleared as a routine exact-family implementation variant of
+P2-01, conditional only on writing/checking its explicit admission next.
+
+Round3 outcome: P2-04's explicit D65x9 set and analytic admission were
+written before the cheap check. The check then passed36 directions,
+324 nodes, D4/radii and exact denominator reduction49,725→585. This
+closes the implementation gate, not N2 or N3. The new measure and its
+input hash remain separate from the original D36x9 records.
