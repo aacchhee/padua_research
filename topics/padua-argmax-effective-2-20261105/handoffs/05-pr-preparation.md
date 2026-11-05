@@ -1,6 +1,6 @@
 # Handoff 05 — padua-argmax-effective-2-20261105 — PR preparation
 
-- Status: open
+- Status: done in d3ea84344b459b6b6cb07430a452af7dfc53b000
 - Previous handoff: 04-response-check.md (done in d574603d1635d5f4eca72bcf4fe7d7e8b1d4350e)
 
 - Next agent / model / effort: Codex. Orchestrator: gpt-6-astra ultra, under AC's 2026-11-03 standing instruction for this topic. Registry classification and wording should use that model. Purely mechanical registry/ledger edits may use gpt-6.1-sol medium. Record the actual models.
