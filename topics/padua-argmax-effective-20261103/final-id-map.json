@@ -1,0 +1,302 @@
+{
+  "topic": "padua-argmax-effective-20261103",
+  "date": "2026-11-05",
+  "rules_head": "37ff693c03a1c0c85b865d27b15403b03e5b3fec",
+  "allocation_scan": "allocation-scan.json",
+  "allocation_ledger": "ALLOCATIONS.md",
+  "audit": "audit-01.md",
+  "response_check": "response-check-01.md",
+  "records": [
+    {
+      "provisional": "PD-T?argmax-effective-codex-01",
+      "final": "PD-T246",
+      "path": "topics/padua-argmax-effective-20261103/theory/argmax-effective-codex-01-finite-global-argmax.md",
+      "status": "PROVED",
+      "scope": "Exact global maximum and exact two-corner equality set for every 17<=n<=32; together with inherited results, finite2–32",
+      "depends_on": "PD-T101; PD-T210; inherited PD-T209/162/166/169/174/177/181/214 for combined range",
+      "disposition": "Retained finite parameter split of OPEN PD-T099; implementation variant of IDEA-320"
+    },
+    {
+      "provisional": "PD-T?argmax-effective-codex-02",
+      "final": "PD-T247",
+      "path": "topics/padua-argmax-effective-20261103/theory/argmax-effective-codex-02-gate-measurements.md",
+      "status": "MEASURED",
+      "scope": "G2:17 sampled degrees17–1000,714 local and816 radial evaluations; G3:11 phase grids; G4:3458 centers/25365 offsets; finite samples only",
+      "depends_on": "PD-T101; PD-T215/216; PD-T228 context",
+      "disposition": "Retained finite gate measurements; no continuous bound or all-degree conclusion"
+    },
+    {
+      "provisional": "PD-T?argmax-effective-codex-03",
+      "final": "PD-T248",
+      "path": "topics/padua-argmax-effective-20261103/theory/argmax-effective-codex-03-comparison-screen.md",
+      "status": "MEASURED",
+      "scope": "G6:1536 E-C comparisons,n13–60; I-B0:182 rectangles at n13,17,24,32,48,60; no threshold reversal found",
+      "depends_on": "PD-T101; PD-T185; PD-T231 definitions",
+      "disposition": "IDEA-339/340 retained OPEN; no certified supremum ordering inferred"
+    },
+    {
+      "provisional": "PD-T?argmax-effective-codex-03-spots",
+      "final": "PD-T249",
+      "path": "topics/padua-argmax-effective-20261103/theory/argmax-effective-codex-03-exact-edge-spots.md",
+      "status": "PROVED",
+      "scope": "Three whole-cell E-C comparisons at n13,17,24 with strict rational margins1/20,1/40,1/100; seven exact leaves",
+      "depends_on": "PD-T101; PD-T210; PD-T231 reduction",
+      "disposition": "Retained finite E-C cases; all-degree E-C remains OPEN; shared arithmetic kernel disclosed"
+    },
+    {
+      "provisional": "PD-T?argmax-effective-codex-06a",
+      "final": "PD-T250",
+      "path": "topics/padua-argmax-effective-20261103/theory/argmax-effective-codex-06-corner-active-spectrum.md",
+      "status": "PROVED",
+      "scope": "Exact inward corner-active spectrum for all n>=2; positive a>0 coefficients and row/column sums; row symmetry and diagonal/lower bounds",
+      "depends_on": "PD-T101; PD-T227",
+      "disposition": "Retained mixed-spectrum variant; no complete coefficient positivity or global envelope"
+    },
+    {
+      "provisional": "PD-T?argmax-effective-codex-06b",
+      "final": "PD-T251",
+      "path": "topics/padua-argmax-effective-20261103/theory/argmax-effective-codex-06-uniform-slopes-local-radius.md",
+      "status": "PROVED",
+      "scope": "For all n>=2,A_n,B_n<=-n^2 Lambda_c/8; strict decrease for0<h_x+h_y<=1/(2[n(n+1)]^3), physical radius order n^-6",
+      "depends_on": "PD-T101; PD-T227; PD-T250",
+      "disposition": "Retained slope theorem and elementary local-radius corollary; weighted energy and the fixed scaled phase radius remain OPEN"
+    },
+    {
+      "provisional": "PD-T?argmax-effective-claude-01",
+      "final": "PD-T252",
+      "path": "topics/padua-argmax-effective-20261103/theory/argmax-effective-claude-01-pilot-measurements.md",
+      "status": "MEASURED",
+      "scope": "Pilot G2 at n17,24,48,96,192; G3 at n17,48,96; Python producer timings17,20,24,32; certifies no degree",
+      "depends_on": "PD-T101; PD-T210; PD-T206 evaluator",
+      "disposition": "Retained pilot-only measurements; separate later finite acceptance is PD-T246"
+    },
+    {
+      "provisional": "PD-N?argmax-effective-codex-06a",
+      "final": "PD-N084",
+      "path": "topics/padua-argmax-effective-20261103/theory/argmax-effective-codex-06-negative-spectrum.md",
+      "status": "PROVED",
+      "scope": "Complete transformed coefficient positivity fails: n3,C_01=(1-2sqrt(2))/6<0",
+      "depends_on": "PD-T250; PD-T101; PD-T227",
+      "disposition": "IDEA-345 REJECTED: refuted by PD-N084; grouped positivity and PD-T099 survive"
+    },
+    {
+      "provisional": "PD-N?argmax-effective-codex-06b",
+      "final": "PD-N085",
+      "path": "topics/padua-argmax-effective-20261103/theory/argmax-effective-codex-06-affine-sign-obstruction.md",
+      "status": "PROVED",
+      "scope": "For n>=4,index(3,1),q_n/n^3 tends to -5/(2pi^2); every fixed kappa/n^2 affine sign box eventually fails",
+      "depends_on": "PD-T227",
+      "disposition": "IDEA-347 REJECTED: failed by PD-N085; true-cardinal signs, aggregate/reflected routes and PD-T099 outside scope"
+    },
+    {
+      "provisional": "PD-N?argmax-effective-codex-04",
+      "final": "PD-N086",
+      "path": "topics/padua-argmax-effective-20261103/theory/argmax-effective-codex-04-coarse-cell-sign-obstruction.md",
+      "status": "PROVED",
+      "scope": "At n4,L00(1/3,0)>0 and L00(3/8,0)<0 inside D(2,3); individual fixed-sign nonnegative-factor representation impossible there",
+      "depends_on": "PD-T101",
+      "disposition": "IDEA-342 REJECTED: refuted by PD-N086; regrouping/refinement and broad undefined G7 outside scope"
+    },
+    {
+      "provisional": "IDEA?argmax-effective-codex-01",
+      "final": "IDEA-336",
+      "path": "topics/padua-argmax-effective-20261103/ideas/r1-r2-r5.md",
+      "anchor": "idea-336",
+      "title": "sharp effective primitive/defect assembly",
+      "disposition": "deferred / OPEN",
+      "reason": "Quantitative variant of IDEA-326/331; missing explicit E,d,f and uniform zones; resume with a feasible certified error budget",
+      "result": "none"
+    },
+    {
+      "provisional": "IDEA?argmax-effective-codex-02",
+      "final": "IDEA-337",
+      "path": "topics/padua-argmax-effective-20261103/ideas/r1-r2-r5.md",
+      "anchor": "idea-337",
+      "title": "uniform near/far-field Taylor enclosure",
+      "disposition": "deferred / OPEN",
+      "reason": "Variant of IDEA-317/326/327; no uniform summable tail lemma or interval run; resume with a precise tail below the defect budget",
+      "result": "none"
+    },
+    {
+      "provisional": "IDEA?argmax-effective-codex-05",
+      "final": "IDEA-338",
+      "path": "topics/padua-argmax-effective-20261103/ideas/r1-r2-r5.md",
+      "anchor": "idea-338",
+      "title": "dual full-sign-family Bernstein envelope",
+      "disposition": "equivalent",
+      "reason": "Same coefficient l1 predicate as IDEA-320/PD-T210; consolidated there; structured alternatives deferred until specified",
+      "result": "PD-T210"
+    },
+    {
+      "provisional": "IDEA?argmax-effective-codex-03-ec",
+      "final": "IDEA-339",
+      "path": "topics/padua-argmax-effective-20261103/ideas/comparison-r3.md",
+      "anchor": "idea-339",
+      "title": "Extended whole-cell E-C gate",
+      "disposition": "retained / OPEN",
+      "reason": "Continuation of IDEA-324;1536 comparisons show no reversal; exact three spots do not settle all-n E-C",
+      "result": "PD-T248; PD-T249"
+    },
+    {
+      "provisional": "IDEA?argmax-effective-codex-03-strip",
+      "final": "IDEA-340",
+      "path": "topics/padua-argmax-effective-20261103/ideas/comparison-r3.md",
+      "anchor": "idea-340",
+      "title": "First-strip domination by the matching vertical-edge cell",
+      "disposition": "retained / OPEN",
+      "reason": "Matched rectangle-to-edge variant;182 finite sampled rectangles only; needs rigorous rectangle comparison",
+      "result": "PD-T248"
+    },
+    {
+      "provisional": "IDEA?argmax-effective-codex-04-envelope",
+      "final": "IDEA-341",
+      "path": "topics/padua-argmax-effective-20261103/ideas/comparison-r4.md",
+      "anchor": "idea-341",
+      "title": "Precisely formulate IDEA-319’s envelope class",
+      "disposition": "deferred / OPEN",
+      "reason": "No specified admissible factor class/partition; resume after a concrete identity and separating test; no universal G7 impossibility",
+      "result": "none"
+    },
+    {
+      "provisional": "IDEA?argmax-effective-codex-04-fixed-sign",
+      "final": "IDEA-342",
+      "path": "topics/padua-argmax-effective-20261103/ideas/comparison-r4.md",
+      "anchor": "idea-342",
+      "title": "Fixed signs of individual cardinals on coarse complementary diamonds",
+      "disposition": "REJECTED: refuted",
+      "reason": "Specified G7-F submechanism has exact opposite cardinal signs in D(2,3),n4; regrouping and finer cells survive",
+      "result": "PD-N086"
+    },
+    {
+      "provisional": "IDEA?argmax-effective-native-producer",
+      "final": "IDEA-343",
+      "path": "topics/padua-argmax-effective-20261103/ideas/finite-native.md",
+      "anchor": "idea-343",
+      "title": "Compiled exact heavy path for IDEA-320",
+      "disposition": "retained implementation variant",
+      "reason": "Same PD-T210 criterion; validated finite evidence belongs to PD-T246; no new mathematics or all-n threshold",
+      "result": "PD-T246; PD-T210"
+    },
+    {
+      "provisional": "IDEA?argmax-effective-native-checker",
+      "final": "IDEA-344",
+      "path": "topics/padua-argmax-effective-20261103/ideas/finite-native.md",
+      "anchor": "idea-344",
+      "title": "Independently implemented compiled replay",
+      "disposition": "retained verification machinery",
+      "reason": "Separate arithmetic implementation shares formulas/schema/rounding; completed per-certificate acceptance only; no blanket n<=100 acceptance",
+      "result": "PD-T246; PD-T210"
+    },
+    {
+      "provisional": "IDEA?argmax-effective-r6-01",
+      "final": "IDEA-345",
+      "path": "topics/padua-argmax-effective-20261103/ideas/r6-spectrum.md",
+      "anchor": "idea-345",
+      "title": "Complete positive corner-active spectrum",
+      "disposition": "REJECTED: refuted",
+      "reason": "Exact n3 negative nonconstant mode kills complete positivity only; mixed row/column positivity retained",
+      "result": "PD-N084"
+    },
+    {
+      "provisional": "IDEA?argmax-effective-r6-02",
+      "final": "IDEA-346",
+      "path": "topics/padua-argmax-effective-20261103/ideas/r6-spectrum.md",
+      "anchor": "idea-346",
+      "title": "Positive mixed spectrum and exact edge symmetries",
+      "disposition": "retained",
+      "reason": "Quantitative variant of IDEA-330/331; exact formulas and positive row/column groups retain negative a=0 modes",
+      "result": "PD-T250"
+    },
+    {
+      "provisional": "IDEA?argmax-effective-r6-03",
+      "final": "IDEA-347",
+      "path": "topics/padua-argmax-effective-20261103/ideas/r6-slopes-affine.md",
+      "anchor": "idea-347",
+      "title": "Uniform per-cardinal affine sign preservation",
+      "disposition": "REJECTED: failed",
+      "reason": "Superquadratic negative gradient/value ratio blocks this fixed-scale affine step; aggregate/reflected control survives",
+      "result": "PD-N085"
+    },
+    {
+      "provisional": "IDEA?argmax-effective-r6-04",
+      "final": "IDEA-348",
+      "path": "topics/padua-argmax-effective-20261103/ideas/r6-slopes-affine.md",
+      "anchor": "idea-348",
+      "title": "Exact spectral proof of all-degree normalized slopes",
+      "disposition": "retained theorem / fixed-phase target OPEN",
+      "reason": "Closes the recorded normalized slope premise; explicit physical n^-6 radius leaves the fixed phase zone and weighted energy OPEN",
+      "result": "PD-T251"
+    },
+    {
+      "provisional": "LIT?argmax-effective-codex-01",
+      "final": "LIT-466",
+      "path": "topics/padua-argmax-effective-20261103/literature-g8.md",
+      "anchor": "lit-466",
+      "source": "Brutman1978",
+      "claim": "Abstract: univariate Chebyshev-root relative maxima decrease toward the middle; no Padua transfer",
+      "coverage": "abstract and bibliography only; full proof unread",
+      "locator": "publisher abstract"
+    },
+    {
+      "provisional": "LIT?argmax-effective-codex-02",
+      "final": "LIT-467",
+      "path": "topics/padua-argmax-effective-20261103/literature-g8.md",
+      "anchor": "lit-467",
+      "source": "Guenttner1980",
+      "claim": "Abstract reports Chebyshev asymptotic constants/error and local-maxima variation bounds; exact node conventions unread",
+      "coverage": "search-returned publisher abstract only; direct open timed out",
+      "locator": "publisher abstract"
+    },
+    {
+      "provisional": "LIT?argmax-effective-codex-03",
+      "final": "LIT-468",
+      "path": "topics/padua-argmax-effective-20261103/literature-g8.md",
+      "anchor": "lit-468",
+      "source": "Brutman1997",
+      "claim": "Survey citation corrected to Annals of Numerical Mathematics4(1997),111–127; BRIEF journal attribution historical",
+      "coverage": "PDF header/search text only; no complete-paper read",
+      "locator": "printed header"
+    },
+    {
+      "provisional": "LIT?argmax-effective-codex-04",
+      "final": "LIT-469",
+      "path": "topics/padua-argmax-effective-20261103/literature-g8.md",
+      "anchor": "lit-469",
+      "source": "DaFies–Vianello2012",
+      "claim": "Reflected cardinal-pair comparison for specified1-D subperiodic interpolation; endpoints/full-period comparison; no Padua map",
+      "coverage": "definitions/equations(1)–(12),Lemma1 reflected-pair proof,Theorem1/proof,printed pp1–5",
+      "locator": "eqs(1)–(12),Lemma1,Theorem1"
+    },
+    {
+      "provisional": "LIT?argmax-effective-codex-05",
+      "final": "LIT-470",
+      "path": "topics/padua-argmax-effective-20261103/literature-g8.md",
+      "anchor": "lit-470",
+      "source": "Ehlich–Zeller1966",
+      "claim": "Midpoint result attributed by Da Fies–Vianello; not extracted from original; no inherited proof",
+      "coverage": "bibliographic/access record only; original full text unread; PDF URL returned404",
+      "locator": "bibliography only"
+    },
+    {
+      "provisional": "Existing LIT379 — current primary rereading",
+      "final": "LIT-379",
+      "path": "topics/padua-argmax-effective-20261103/literature-g8.md",
+      "anchor": "lit-379-rereading",
+      "coverage": "Introduction; Lemmas3.4–3.7 statements; Lemma3.5 proof; equations(3.17)–(3.24),(3.27)–(3.32); existing-source reading addendum, not a new source ID"
+    }
+  ],
+  "unused_permanent_gaps": {
+    "PD-T": [
+      "PD-T253–PD-T265"
+    ],
+    "PD-N": [
+      "PD-N087–PD-N091"
+    ],
+    "IDEA": [
+      "IDEA-349–IDEA-355"
+    ],
+    "LIT": [
+      "LIT-471–LIT-473"
+    ]
+  }
+}

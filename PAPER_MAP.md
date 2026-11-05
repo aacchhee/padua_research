@@ -52,4 +52,10 @@ No manuscript has been drafted or accepted. The following is a development brief
 
 | Brief | Question | Supporting results | Remaining gaps | Readiness |
 |---|---|---|---|---|
-| [Padua corner-argmax report](topics/padua-argmax-alln-20261101/report.md) | Global maximizers of the Padua Lebesgue function | PD-T209/181/214 finite2–16 plus inherited3–7; PD-T229 eventual exact corner equality; PD-T211/212/215–228/230 support; PD-T231 finite E-C; scoped PD-N078–083 | PD-T099 OPEN across unknown finite bridge; non-effective entry, center-minimality/all-n slope-energy and novelty/source coverage remain open | Registered scoped results and retained candidate histories; no manuscript or submission claim; only AC merges |
+| [Padua corner-argmax report](topics/padua-argmax-alln-20261101/report.md) | Global maximizers of the Padua Lebesgue function | PD-T209/181/214 finite2–16 plus inherited3–7; PD-T229 eventual exact corner equality; PD-T211/212/215–228/230 support; PD-T231 finite E-C; scoped PD-N078–083 | PD-T099 OPEN across unknown finite bridge; non-effective entry, center-minimality/weighted energy and novelty/source coverage remain open; normalized all-n slopes now PD-T251 | Registered scoped results and retained candidate histories; no manuscript or submission claim; only AC merges |
+
+## Effective Padua argmax — PR19 accepted scoped progress
+
+| Brief | Question | Supporting results | Remaining gaps | Readiness |
+|---|---|---|---|---|
+| [Effective argmax report](topics/padua-argmax-effective-20261103/report.md) | Effective all-degree global Padua corner argmax | PD-T246 finite17–32, continuous2–32 with inherited cases; PD-T250 exact spectrum; PD-T251 all-n normalized slopes and explicit physical n^-6 local radius; PD-T249 three finite E-C comparisons; PD-T247/248/252 MEASURED; scoped PD-N084–086 | PD-T099 OPEN; no effective global n0 or complete33<=n<N_* bridge; degree40 uncertified,33–39 unrun; weighted energy and the fixed scaled phase radius remain OPEN; G8 transfer/novelty coverage incomplete | Existing scopes accepted by [audit-01](topics/padua-argmax-effective-20261103/audit-01.md) and [response-check-01](topics/padua-argmax-effective-20261103/response-check-01.md); registration prepared for AC decision after mechanical checks; completed preparation historical after merge; no manuscript, submission or further Claude round |

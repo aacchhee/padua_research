@@ -1,0 +1,161 @@
+{
+  "status": "independent executed replay complete; all four accepted",
+  "rules_input": "8a1f394739293953e1566fd24a0a193cc78ff26f",
+  "worker": "Codex gates, gpt-6.1-sol medium, different agent from native producer and checker developers",
+  "python": "3.12.14",
+  "scope": "Sequential corrected native-checker normal CLI replay of canonical final certificates n25..28; no new production, no arithmetic edits, no corruption controls rerun in this worker.",
+  "patch_review": "Reviewed ratio(Z,Z) helper canonicalizing mpq_class before use as Bernstein weight summand; w[k][i] accumulation now uses ratio(...). Canonicalizing only downstream sums cannot repair a noncanonical operand already used in GMP rational addition. This replay checks actual corrected outputs against supplied integer certificate metadata and every leaf. No universal implementation proof or all-n theorem is inferred.",
+  "shared_dependencies": "Native checker independently implemented from producer; mathematical formulas/schema/prescribed rounding sequence shared. This worker independently compiled checker, not a third arithmetic implementation.",
+  "build": {
+    "command": [
+      "g++",
+      "-O3",
+      "-std=c++17",
+      "/workspace/padua-work/gates/corrected-checker/kernel.cpp",
+      "-lgmpxx",
+      "-lgmp",
+      "-o",
+      "/workspace/padua-work/gates/corrected-checker/kernel"
+    ],
+    "source_sha256": "b0c871e7711219edfe3ce01480d8d1de3503a20d9b59f82b63a00eff248bc6e0",
+    "binary_sha256": "f17fed2e69a98c952d1ad5e72de03c08b2ceb07970c49fc0db1b35396fe3e605",
+    "gxx": "g++ (Debian 14.2.0-19) 14.2.0"
+  },
+  "driver_sha256": "b6c7320db2f7cfebf27fe33aa38ffdd45ff719870e3d23e15f845b6e8026eb2e",
+  "runner_sha256": "7d85c5f4ed6cd0af39de96a2ddfdda08e2ba8de558493845b1894d74a577a420",
+  "rows": [
+    {
+      "n": 25,
+      "accepted": true,
+      "counts": {
+        "bound": 162,
+        "corner": 2,
+        "splits": 163
+      },
+      "certificate_path": "/workspace/padua-work/producer/final/n25.json.gz",
+      "certificate_bytes": 5316,
+      "certificate_sha256": "c721bc4f0747a002bc9e9a37228ce1a33afa2aab547a08373f4126fe830a2a01",
+      "receipt_path": "/workspace/padua-work/gates/corrected-checker/n25.json",
+      "receipt_bytes": 612,
+      "receipt_sha256": "7604ea58d1ab9b20119db4c8e7a2f6bc44b34c3077bda1498c2a08819af06375",
+      "stdout_path": "/workspace/padua-work/gates/corrected-checker/n25.stdout",
+      "stdout_sha256": "e6f0c4bada9b8fdb72122cabcf96a953cad658eda069cc778c417144a454e970",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/padua_research/topics/padua-argmax-effective-20261103/code/native_checker/check.py",
+        "/workspace/padua-work/producer/final/n25.json.gz",
+        "--binary",
+        "/workspace/padua-work/gates/corrected-checker/kernel",
+        "--output",
+        "/workspace/padua-work/gates/corrected-checker/n25.json"
+      ],
+      "wall_seconds": 44.99074015100041,
+      "checker_seconds": 44.962529057999745,
+      "committed_evidence_certificate_path": "topics/padua-argmax-effective-20261103/evidence/n25.json.gz",
+      "evidence_copy_hash_matches": true,
+      "all_supplied_bounds_verified": true,
+      "complete_partition": true
+    },
+    {
+      "n": 26,
+      "accepted": true,
+      "counts": {
+        "bound": 162,
+        "corner": 2,
+        "splits": 163
+      },
+      "certificate_path": "/workspace/padua-work/producer/final/n26.json.gz",
+      "certificate_bytes": 5329,
+      "certificate_sha256": "21ccc394eeb3e6f0546365502df8f1c04192c29ccf4f6602f8f8827279fd8f2b",
+      "receipt_path": "/workspace/padua-work/gates/corrected-checker/n26.json",
+      "receipt_bytes": 612,
+      "receipt_sha256": "a6e5ad96e24d6d8e152069245d05241e5b2962ff79527e25dd48c0e1425c8563",
+      "stdout_path": "/workspace/padua-work/gates/corrected-checker/n26.stdout",
+      "stdout_sha256": "7bb4d443de76f7672462eba7f7e4b49cc2d1be04478e3cfae4f6e0b94a99ab5b",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/padua_research/topics/padua-argmax-effective-20261103/code/native_checker/check.py",
+        "/workspace/padua-work/producer/final/n26.json.gz",
+        "--binary",
+        "/workspace/padua-work/gates/corrected-checker/kernel",
+        "--output",
+        "/workspace/padua-work/gates/corrected-checker/n26.json"
+      ],
+      "wall_seconds": 53.74137715000006,
+      "checker_seconds": 53.714894025000376,
+      "committed_evidence_certificate_path": "topics/padua-argmax-effective-20261103/evidence/n26.json.gz",
+      "evidence_copy_hash_matches": true,
+      "all_supplied_bounds_verified": true,
+      "complete_partition": true
+    },
+    {
+      "n": 27,
+      "accepted": true,
+      "counts": {
+        "bound": 166,
+        "corner": 2,
+        "splits": 167
+      },
+      "certificate_path": "/workspace/padua-work/producer/final/n27.json.gz",
+      "certificate_bytes": 5399,
+      "certificate_sha256": "50ad3151f0a6f155b78f4d030e2a59b5d57fba8780a54fe3c43dd7cab0a4db59",
+      "receipt_path": "/workspace/padua-work/gates/corrected-checker/n27.json",
+      "receipt_bytes": 611,
+      "receipt_sha256": "d3b3eaaef0b7beaf2c6198264b8eab294f95b4b7ef2373cfc6658f30f7d9dbbb",
+      "stdout_path": "/workspace/padua-work/gates/corrected-checker/n27.stdout",
+      "stdout_sha256": "e771627d3d59c715eb4dd894bd76c31d8d5e24e7cf90d17b34c953950876b720",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/padua_research/topics/padua-argmax-effective-20261103/code/native_checker/check.py",
+        "/workspace/padua-work/producer/final/n27.json.gz",
+        "--binary",
+        "/workspace/padua-work/gates/corrected-checker/kernel",
+        "--output",
+        "/workspace/padua-work/gates/corrected-checker/n27.json"
+      ],
+      "wall_seconds": 64.71719938699971,
+      "checker_seconds": 64.69038652399968,
+      "committed_evidence_certificate_path": "topics/padua-argmax-effective-20261103/evidence/n27.json.gz",
+      "evidence_copy_hash_matches": true,
+      "all_supplied_bounds_verified": true,
+      "complete_partition": true
+    },
+    {
+      "n": 28,
+      "accepted": true,
+      "counts": {
+        "bound": 174,
+        "corner": 2,
+        "splits": 175
+      },
+      "certificate_path": "/workspace/padua-work/producer/final/n28.json.gz",
+      "certificate_bytes": 5626,
+      "certificate_sha256": "6fc8a749fb74240c0ca3665c88351d0c6ea79866435073076e36288bc1b5d95a",
+      "receipt_path": "/workspace/padua-work/gates/corrected-checker/n28.json",
+      "receipt_bytes": 611,
+      "receipt_sha256": "01300a9d1683f2da266cf73f34e4952174901c3c529edf59dafafb3c5a2bd537",
+      "stdout_path": "/workspace/padua-work/gates/corrected-checker/n28.stdout",
+      "stdout_sha256": "5064c65f57179b17c0f6be96a8142ce5c6fdd210d0977f053ad622ca78267752",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/padua_research/topics/padua-argmax-effective-20261103/code/native_checker/check.py",
+        "/workspace/padua-work/producer/final/n28.json.gz",
+        "--binary",
+        "/workspace/padua-work/gates/corrected-checker/kernel",
+        "--output",
+        "/workspace/padua-work/gates/corrected-checker/n28.json"
+      ],
+      "wall_seconds": 78.82832593700005,
+      "checker_seconds": 78.80012006199968,
+      "committed_evidence_certificate_path": "topics/padua-argmax-effective-20261103/evidence/n28.json.gz",
+      "evidence_copy_hash_matches": true,
+      "all_supplied_bounds_verified": true,
+      "complete_partition": true
+    }
+  ],
+  "total_wall_seconds": 242.27868979000004,
+  "patch_baseline_sha256": "ae4f20b69c5e676a5d2fefa55c903c8b3efd87a5807a5c5617ca21390a1cab3d",
+  "patch_review_exact_diff": "Compared frozen kernel-precanonical.cpp to corrected kernel: one added ratio(Z,Z) helper with q.canonicalize(), and one substitution Q(numerator,denominator)->ratio(numerator,denominator) in Bernstein weights; no other differences.",
+  "build_receipt_path": "/workspace/padua-work/gates/corrected-checker/build-receipt.json",
+  "build_receipt_sha256": "6f65e4624c10fbacfcf5a46bdd6f9ec47a37731c8913332227d57bcbb7a11e75"
+}
