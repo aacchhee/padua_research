@@ -33,8 +33,11 @@
 \textbf{Development status.} Independent Astra reconstruction accepted the analytic
 M1--M3 results within its stated scope. Claude audits~01--02 accepted the scientific
 statements and response within their recorded scopes. The prior-art corrections
-are closed by Codex audit~03. The signed Padua results added in Section~\ref{sec:padua}
-were accepted in the PR~23 audit; their manuscript integration is pending review.
+are closed by Codex audit~03. The even-degree signed Padua results and
+uniform operator bound were accepted in the PR~23 audit; the present
+odd-degree extensions,
+normalized growth bounds, finite witnesses and manuscript integration are
+pending review.
 No historical novelty clearance is claimed.
 Historical priority: \textbf{screened, not cleared} (documented, non-exhaustive search; some fulltexts pending); see Section~\ref{sec:context}.
 \end{center}
@@ -59,7 +62,8 @@ covering that endpoint case, without contradicting a conditional theorem
 of An and Wu. For signed Lebesgue Padua rules, we prove the exact
 factor-two Clenshaw--Curtis marginal and its spectral compression consequence;
 the actual signed Gram form has divergent negative and positive extrema
-along even construction degrees, at every fixed degree ratio above one half.
+as the construction degree tends to infinity, at every fixed degree ratio
+above one half.
 Explicit parity carriers and logarithmic boundary-weight asymptotics prove
 this sharp half-exactness threshold. Nevertheless the direct signed
 coefficient hyperinterpolant has a uniform $C\to L^2$ norm below thirty.
@@ -140,7 +144,7 @@ of the degree-sensitive estimate \eqref{eq:main-ratio}; it equals the
 exact quotient one when $N=2$, and the upper inequality is strict for $N\ge3$.
 At full degree $N$ the upper threshold fails, as an explicit $T_N$
 test shows below. For the signed Padua rule the picture is different: Section~\ref{sec:padua}
-proves divergence of both spectral extrema along even construction degrees
+proves divergence of both spectral extrema along all construction degrees
 above half-exactness, alongside a uniform bound for its direct coefficient
 operator. These results do not depend on a finite eigenvalue fit.
 
@@ -1123,6 +1127,34 @@ $\epsilon_j\gamma_k=e_je_k$ eventually, proves
 \eqref{eq:padua-weight-limit}.
 \end{proof}
 
+% Source: topics/padua-mz-cleanup-20261105/theory/odd-weight-asymptotic.md
+\begin{proposition}[Odd construction degrees]\label{prop:padua-odd-weights}
+The fixed-index limit \eqref{eq:padua-weight-limit} also holds as $m$
+tends to infinity through odd integers. For every odd $m\ge5$, the
+whole-grid bound \eqref{eq:padua-weight-majorant} holds with $8192$
+in place of $4096$.
+\end{proposition}
+\begin{proof}
+Put $R=(m-1)/2$. Formula~\eqref{eq:padua-density} still gives
+\eqref{eq:padua-weight-exact} with this $R$, and the exceptional term
+is zero since $h_m=0$. The decomposition
+\eqref{eq:padua-triangle} and its bounds hold for every integer $R\ge2$,
+independently of the relation between $m$ and $R$. Now $m/R\le5/2$,
+so
+\[
+ m^2|S_R(\theta_j,\phi_k)|\le\pi^4jk+
+ \frac{5\pi^2}2(j+k)+\frac{25}4+400(1+\log R).
+\]
+Multiplication by $2\epsilon_j\gamma_k/[m(m+1)]\le2/m^2$
+proves the asserted majorant. In the thin-corner limit,
+$2R\theta_j=j\pi(m-1)/m\to j\pi$ and
+$2R\phi_k=k\pi(m-1)/(m+1)\to k\pi$.
+Thus the two strips again give $(-1)^j+(-1)^k$ after normalization
+by $R^2/\log R$, with the same negligible middle. Since
+$m/R\to2$, \eqref{eq:padua-weight-limit} follows. No coordinate
+interchange in the cardinal density is used.
+\end{proof}
+
 \subsection{Two signed carriers and the exact ratio threshold}
 
 Define the degree-$r$ Fej\'er polynomial by
@@ -1219,22 +1251,67 @@ the variational principle then gives the two divergences. No finite
 threshold is inferred from these limits.
 \end{proof}
 
-\begin{corollary}[Sharp half-degree threshold; \id{PD-N107}]\label{cor:padua-ratio}
+% Source: topics/padua-mz-cleanup-20261105/theory/odd-carriers.md
+\begin{proposition}[Odd-degree carriers]\label{prop:padua-odd-carriers}
+For odd $m$ put $M=m+1$, $r=\lfloor am\rfloor$, $s=\lfloor bm\rfloor$.
+Under the respective parameter conditions of
+Theorem~\ref{thm:padua-carriers}, replace its polynomials by
+\[
+ \widetilde p_m^-(x,y)=T_{M/2}(y)F_r(y)F_s(x),
+\]
+\[
+ \widetilde p_m^+(x,y)=\tfrac12
+    \{T_{M/2-r}(y)-T_{M/2+r}(y)\}F_r(y)F_s(x).
+\]
+Their degrees are at most $m-1$ eventually, their squared norms are
+positive and at most $C_0^2$, and their signed-energy limits divided
+by $\log m$ are respectively $-16ab/9$ and $8ab/9$.
+Consequently both spectral divergences of
+Theorem~\ref{thm:padua-carriers} hold over all integers $m\to\infty$.
+\end{proposition}
+\begin{proof}
+The even mesh denominator is now $M$ in the $y$ coordinate. The
+carrier values there are exactly $\cos(k\pi/2)$ and
+$\sin(k\pi/2)\sin(r\phi_k)$. Their degrees are
+$M/2+r+s$ and $M/2+2r+s$; the extra half in $M/2=m/2+1/2$ is
+absorbed by the strict parameter inequalities. Polynomiality,
+nonvanishing and the norm bounds follow just as before.
+
+On the $y$ mesh the weighted profile sums are
+$MD_r/(2m^2)\to a/3$ for the negative carrier, supported on even $k$,
+and $M\{D_r/2-1/[2(r+1)^2]\}/(2m^2)\to a/6$ for the positive
+carrier, supported on odd $k$. The unmodulated $x$ envelope has
+weighted sum $D_s/m\to2b/3$ and alternating sum zero, so each of
+its parity sums tends to $b/3$. These identities follow from
+\eqref{eq:padua-trapezoid}, since $2s<m$ and respectively $2r<M$
+or $4r<M$ eventually. The same profile decay and
+Proposition~\ref{prop:padua-odd-weights} justify dominated convergence
+in the complete signed sums. Even-even samples give
+$-16(b/3)(a/3)$, and odd-odd samples give $16(b/3)(a/6)$.
+The positive bounded norm and variational principle give both
+odd-degree divergences. Combining the two parity subsequences proves
+the all-integer conclusions.
+\end{proof}
+
+% Sources: PD-N107 and topics/padua-mz-cleanup-20261105/theory/odd-carriers.md
+\begin{corollary}[Sharp half-degree threshold]\label{cor:padua-ratio}
 For $0\le\theta\le1/2$ and $n\le\theta m$, exactness gives
 $G^\Pa_{m,n}=I$. For every fixed $1/2<\theta<1$,
 \[
  \lamin(G^\Pa_{m,\lfloor\theta m\rfloor})\to-\infty,\qquad
  \lamax(G^\Pa_{m,\lfloor\theta m\rfloor})\to+\infty
- \quad(m\text{ even}).
+ \quad(m\to\infty\text{ through all integers}).
 \]
 Thus there is no uniform strong signed MZ constant $\eta_\theta<1$
 above half-exactness.
 \end{corollary}
 \begin{proof}
 For the first statement $2n\le m$. For the second set
-$a=b=(\theta-1/2)/4$ in the two carriers. Their degrees are bounded
-respectively by $(1/2+2a)m<\theta m$ and
-$(1/2+3a)m<\theta m$. The preceding proof and norm bounds apply.
+$a=b=(\theta-1/2)/4$ in the two carriers. Their even-m degrees are
+bounded respectively by $(1/2+2a)m<\theta m$ and
+$(1/2+3a)m<\theta m$; on odd $m$ add $1/2$ to each bound.
+This overhead is harmless eventually because both inequalities are strict.
+The even-m proof and its odd-m extension therefore apply.
 \end{proof}
 
 The positivity and upper-threshold assertions formerly posed in
@@ -1242,6 +1319,72 @@ The positivity and upper-threshold assertions formerly posed in
 rule. Their retained registry status \texttt{OPEN} does not override
 the binding \texttt{REJECTED: refuted} dispositions. The conclusions do
 not apply to positive Chebyshev Padua cubature or tensor CC rules.
+
+% Source: topics/padua-mz-cleanup-20261105/theory/growth-carrier-bounds.md
+\begin{proposition}[Normalized one-sided growth bounds]\label{prop:padua-growth}
+Put
+\[
+ g(u)=\left(\frac{\sin(u/2)}{u/2}\right)^4,\quad g(0)=1,
+ \qquad A=\int_0^\infty u g(u)\dd u=4\log2,
+\]
+\[
+ J_-(a)=\int_0^\infty u g(u)\cos^2(u/(2a))\dd u,\qquad
+ J_+(a)=\int_0^\infty u g(u)\sin^2(u/(2a))\sin^2u\dd u.
+\]
+These are finite and positive. The carriers on either parity have
+squared continuous norms tending to $A J_-(a)$ and $A J_+(a)$.
+In particular, over all integers $m$,
+\begin{equation}\label{eq:padua-growth-bounds}
+ \limsup_{m\to\infty}\frac{\lamin(G^\Pa_{m,m-1})}{\log m}
+ \le-\frac1{9A J_-(1/4)},\qquad
+ \liminf_{m\to\infty}\frac{\lamax(G^\Pa_{m,m-1})}{\log m}
+ \ge\frac1{36A J_+(1/8)}.
+\end{equation}
+No matching bound, sharp constant, or existence of an extremal spectral
+limit is asserted.
+\end{proposition}
+\begin{proof}
+Let $L=r+1$ and substitute $u=Lt$ in the continuous envelope norm.
+The exact identity
+\[
+ F_r(\cos(u/L))/L=
+ \left\{\frac{\sin(u/2)}{L\sin(u/(2L))}\right\}^2
+\]
+gives a squared-norm integrand tending to $u g(u)$ and bounded by
+$u\min(1,\pi^4/u^4)$, extended by zero beyond $L\pi$.
+The carrier mesh denominator is $D_m=m$ for even $m$ and $D_m=m+1$
+for odd $m$. As $D_m/L\to1/a$ and $r/L\to1$, its factors tend to
+$\cos(u/(2a))$ and $\sin(u/(2a))\sin u$. They have modulus at most
+one. Dominated convergence and product integration prove the norm
+limits. The integrands are continuous and positive on nonempty
+intervals, so their integrals are positive.
+For completeness, $u g(u)=2(3-4\cos u+\cos2u)/u^3$.
+Two integrations by parts give
+\[
+ A=4\int_0^\infty\frac{\cos u-\cos2u}{u}\dd u=4\log2.
+\]
+The last identity follows by inserting $e^{-\varepsilon u}$,
+differentiating with respect to the positive cosine frequency,
+integrating back, and letting $\varepsilon\downarrow0$;
+Dirichlet tail estimates identify the ordinary improper integral.
+The cancellations at zero and the decay at infinity justify the
+integrations by parts.
+
+The signed-energy limits divided by these norm limits give carrier
+Rayleigh coefficients $-16ab/[9A J_-(a)]$ and $8ab/[9A J_+(a)]$.
+The variational principle applies on each parity. Fix $a=1/4$ and
+let $b\uparrow1/4$ through admissible values for the negative
+carrier; fix $a=1/8$ and let $b\uparrow1/4$ for the positive one.
+Their denominators are independent of $b>0$, which gives
+\eqref{eq:padua-growth-bounds}. No boundary-value packet is assumed
+admissible.
+\end{proof}
+
+The raw energy suprema are $1/9$ and $1/36$, obtained on the closures
+of $a+b<1/2$ and $2a+b<1/2$ respectively. They are not normalized
+spectral constants: the nonunit continuous packet norms must be
+divided out as above. Nor is the chosen parameter pair claimed to
+optimize the normalized packet quotient.
 
 \subsection{A uniform signed hyperinterpolation norm}
 
@@ -1424,6 +1567,52 @@ neither positivity between untested degrees nor an all-degree bound.
 The finite brackets are compatible with the later divergence in
 Theorem~\ref{thm:padua-carriers}.
 
+% Source: topics/padua-mz-cleanup-20261105/theory/finite-indefiniteness.md
+\begin{proposition}[Finite negative witnesses]\label{prop:padua-finite-negative}
+For each row there is a nonzero rational-coefficient polynomial
+$p\in\mathcal P_{m-1}$ whose signed Rayleigh quotient belongs to the
+displayed strict rational interval:
+\begin{center}
+\begin{tabular}{rrc}\toprule
+$m$ & $n$ & $Q_m^\Pa(p^2)/\int_{[-1,1]^2}p^2$\\\midrule
+1101 & 1100 & $(-35067/10^6,-35066/10^6)$\\
+1240 & 1239 & $(-273/10^7,-270/10^7)$\\
+1600 & 1599 & $(-23415/10^6,-23414/10^6)$\\\bottomrule
+\end{tabular}
+\end{center}
+Consequently the signed Gram form on $\mathcal P_{m-1}$ is indefinite
+at each displayed construction degree.
+This is a computer-assisted development result; the required Claude
+audit is pending.
+\end{proposition}
+\begin{proof}[Certificate reduction and trust]
+The stored witness consists of dyadic coefficients multiplying
+unnormalized Legendre products, hence is an exact rational polynomial.
+Its exact continuous squared norm is computed by Legendre orthogonality
+and is positive. The producer encloses its sampled signed energy using
+outward Arb tables, exact fixed-point integer tensor contractions and
+explicit table-error bounds. The weight density is exactly
+\eqref{eq:padua-density}, including its exceptional mode.
+For $m=1600$ its accepted energy enclosure is
+$[-0.0234144\pm4.95\cdot10^{-8}]$, with norm enclosed near
+$1.00000000000000031419$. The same producer and independent-check
+construction at $m=1101$ and $1240$ gives the other displayed intervals.
+A separate checker evaluates the same pinned witness through outward
+node tables and floating tensor contractions with analytic forward-error
+bounds; it obtains a strictly negative enclosure independently.
+This latter path assumes the recorded IEEE binary64 rounding and
+standard BLAS dot-product error model. The exact witness, producer,
+checker, receipts and computational assumptions are identified in the
+repository evidence record. No eigensolver accuracy is an acceptance
+premise. The variational principle gives a negative Gram direction,
+whereas the constant one has positive energy $Q_m^\Pa(1)=4$.
+Thus each form is indefinite. The displayed intervals bound trial
+Rayleigh quotients, not minimum eigenvalues. The degree $m=1240$ is
+the smallest even construction degree certified negative in this
+campaign; this is not a proof of positivity at every smaller degree
+or an identification of the first mathematical crossing.
+\end{proof}
+
 Several sharper questions remain separate from the proved comparisons.
 First, neither existence nor value of
 $\lim_{N\to\infty}(\log N)^2\lambda_-(N,N-1)$ is proved
@@ -1434,9 +1623,13 @@ the supplied $N=20480$ output has not been reproduced and supplies no
 claim here. Third, for the signed Padua rule, Theorem~\ref{thm:padua-carriers}
 refutes the universal positivity and upper-threshold conjectures and the
 proposed positive endpoint orders and convergence of the defect to one.
-The first finite negative witness, odd-construction-degree classification,
-and sharp growth constants are separate quantitative questions; the
-accepted even-degree carriers give no explicit onset. Sharp direct-operator
+The sharp growth constants and effective onset estimates remain separate
+quantitative questions. The present odd-degree extension completes the
+qualitative parity classification; Proposition~\ref{prop:padua-growth}
+gives only one-sided normalized logarithmic bounds. The analytic carriers
+give no explicit onset. Proposition~\ref{prop:padua-finite-negative}
+supplies a separate finite certificate, without claiming the first crossing.
+Sharp direct-operator
 norms and endpoint fixed-function convergence also remain separate.
 These mathematical questions are distinct from historical priority and
 the review of the present manuscript integration.

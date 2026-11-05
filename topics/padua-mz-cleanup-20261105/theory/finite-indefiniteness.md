@@ -24,9 +24,9 @@ a first negative degree or positivity at smaller degrees.
 
 ## Definitions and assumptions
 
-The exact witness is sum C_ab P_a(x)P_b(y)/2^56 over a+b<=1599,
-where P_a(1)=1 (replace1599 by m-1 for the other degrees). Coefficients are integers in the deterministic gzip JSON
-artifact identified by SHA-256
+The exact witness is sum C_ab P_a(x)P_b(y)/2^56 over a+b<=m-1,
+where P_a(1)=1. Coefficients are integers in deterministic gzip JSON.
+The m1600 artifact is identified by SHA-256
 `16d89f2c8600364aac3962c4164f0e0875c4fa866fc61269fd6f849e8f1fdad6`.
 For m1240 the witness identity is
 `1a9faac5677ac4dde63749a6acac38d95ee88a5082445e6ba6b59cc297d35e4e`;

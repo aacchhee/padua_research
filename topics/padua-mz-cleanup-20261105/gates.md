@@ -27,7 +27,7 @@ in 39.393 s. Receipts: evidence/k0-float-replay.json and
 evidence/k0-exact-m60.json. The m1600 minimum regenerates as
 -0.02341441659034573, still MEASURED until an outward certificate.
 
-K1 PASS. Final-code producer at m400 certified positive energy in3.34s
+K1 PASS. Final-code producer at m400 certified positive energy in3.375s
 (the receipt gives exact timing), relative width <2.54e-9. Independent
 alternate arithmetic accepted in1.89s, relative width <5.854e-8. Both
 are below ten minutes and1e-6. Sources, timings and exact enclosures:

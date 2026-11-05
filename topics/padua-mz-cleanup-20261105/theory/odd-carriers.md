@@ -53,8 +53,8 @@ rotation symmetry or equality of full y and x marginals is assumed.
 
 ## Status by part
 
-Overall status: **PROVED** (analytic development; supplementary and
-required Claude audits pending).
+Overall status: **PROVED** (analytic development; [supplementary independent
+check completed](../independent-checks-math.md); required Claude audit pending).
 
 | Part | Status | Evidence |
 |---|---|---|
@@ -74,8 +74,9 @@ existing even-m conclusions with the newly proved odd-m conclusions.
 ## Checks
 
 Analytic, no computer-assisted premise. Rules/input
-ad503cb0603fc017444b0aa732240981eefa4d24. Independent reconstruction
-and required Claude audit are pending. This author claims no executed
+ad503cb0603fc017444b0aa732240981eefa4d24. [Independent reconstruction
+completed](../independent-checks-math.md); required Claude audit remains
+pending. This author claims no executed
 spectral scan; the parent's scans remain separately MEASURED.
 
 ## Sources
@@ -200,7 +201,8 @@ uniform bound PD-T297 is compatible with this divergence.
 
 Finite onset, spectral growth limits and first crossings remain separate;
 this proof does not identify the parent's finite minimizing branch.
-Required supplementary/Claude checks pending.
+[Supplementary independent check completed](../independent-checks-math.md);
+required Claude audit pending.
 
 ## History
 

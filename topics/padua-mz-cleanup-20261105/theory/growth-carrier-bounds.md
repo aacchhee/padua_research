@@ -57,8 +57,8 @@ coordinate; s belongs to the other coordinate.
 
 ## Status by part
 
-Overall status: **PROVED** (analytic development; supplementary and
-required Claude audits pending).
+Overall status: **PROVED** (analytic development; [supplementary independent
+check completed](../independent-checks-math.md); required Claude audit pending).
 
 | Part | Status | Evidence |
 |---|---|---|
@@ -81,8 +81,9 @@ Rules/input ad503cb0603fc017444b0aa732240981eefa4d24.
 Analytic proof. A Python 3 `math` evaluation of (1),(2),(5) executed by
 this author printed A=2.772588722239781, J_-(1/4)=1.3528830227442048,
 J_+(1/8)=0.7840053676911357 and the decimals above. This arithmetic
-was only a display check, not a proof premise. The separate independent
-checker is asked to verify the integral identity and normalization.
+was only a display check, not a proof premise. The [separate independent
+checker verified the integral identity and normalization](../independent-checks-math.md);
+required Claude audit remains pending.
 
 ## Sources
 
@@ -209,7 +210,8 @@ negative degree and makes no inference from an observed slope.
 Existence and values of the two spectral limits, matching logarithmic
 upper/lower controls in the opposite directions, and optimal normalized
 packet parameters remain OPEN. Further variants need a new recorded
-gate. Required supplementary/Claude audits pending.
+gate. [Supplementary independent check completed](../independent-checks-math.md);
+required Claude audit pending.
 
 ## History
 

@@ -38,8 +38,8 @@ before the asymptotic limit. No weight sign classification assumed.
 
 ## Status by part
 
-Overall status: **PROVED** (analytic development; supplementary and
-required Claude audits pending).
+Overall status: **PROVED** (analytic development; [supplementary independent
+check completed](../independent-checks-math.md); required Claude audit pending).
 
 | Part | Status | Evidence |
 |---|---|---|
@@ -57,8 +57,9 @@ proved in PD-T295. No even-m asymptotic is assumed at odd m.
 ## Checks
 
 Rules/input ad503cb0603fc017444b0aa732240981eefa4d24.
-This is an analytic proof without computational premises. Independent
-mathematical reconstruction is requested from the separate checker.
+This is an analytic proof without computational premises. [Independent
+mathematical reconstruction completed](../independent-checks-math.md);
+required Claude audit remains pending.
 No executed numerical evidence is claimed by this author.
 
 ## Sources
@@ -140,7 +141,8 @@ alone still do not imply signed-form indefiniteness.
 ## Open items
 
 Effective remainders, named onset degrees and sharp spectral constants
-remain separate. Required independent/Claude audits pending.
+remain separate. [Supplementary independent check completed](../independent-checks-math.md);
+required Claude audit pending.
 
 ## History
 

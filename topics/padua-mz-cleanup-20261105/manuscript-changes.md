@@ -54,3 +54,52 @@ An initial BibTeX invocation from the repository root with the absolute `/tmp/ma
 | `/tmp/padua-mz-cleanup-paper/manuscript.pdf` | 491835 | `ee2d0c1f674ce9a07e14c512416c4401ec031511360e16ee14a960bd7717510d` |
 
 PDF bytes may change with TeX timestamps/output identifiers. These hashes pin this accepted-result pass, before possible orchestrator additions. Build products are scratch, not archived retrieval or cold-storage delivery; no PDF is committed.
+
+## 2026-11-05 — cleanup-result extension (current build)
+
+At the orchestrator's request, after the accepted-result pass was committed as `58a3d15` and main `aff30e8` was merged, the manuscript worker read the complete new local theory files and the actual m1600 producer and independent-checker receipts. Input head inspected: `ef9723bef6dd061109db1237f3338626093e1052`; rules still read at `ad503cb0603fc017444b0aa732240981eefa4d24`. Same inherited user-requested gpt-6.1-sol xhigh; runtime model/effort not independently exposed. No Git operations or shared-registry edits by this worker.
+
+The original accepted-result source/PDF hashes above identify that historical pass and are not overwritten. The current extension adds:
+
+| Location | Statement and scope | Source |
+|---|---|---|
+| Status, abstract, §1 | All-integer divergence now stated; old accepted results distinguished from cleanup results awaiting Claude audit | Odd-carrier development plus accepted even carriers |
+| §6.2 odd-degree proposition | Same fixed-index limit for odd m, global majorant8192, floor-half proof with both phase limits | `theory/odd-weight-asymptotic.md` |
+| §6.3 odd-carrier proposition | Correct even y mesh M=m+1; polynomial degrees with +1/2 overhead, parity sums and all-integer divergence | `theory/odd-carriers.md` |
+| §6.3 ratio corollary | Both extrema diverge on all integers at every fixed theta>1/2; exactness through half-degree remains unchanged | Existing PD-N107 and odd-carrier extension |
+| §6.3 normalized-bound proposition | Exact integral definitions of A,J_minus,J_plus, rescaled dominated-convergence proof, A=4log2, one-sided normalized coefficients; raw1/9 and1/36 are not spectral constants | `theory/growth-carrier-bounds.md` |
+| §7 finite-witness proposition | m1600,n1599 exact dyadic polynomial has Rayleigh quotient in (-23415/10^6,-23414/10^6); indefinite by positive constant direction; this is not an eigenvalue bracket | `theory/finite-indefiniteness.md` (orchestrator-owned); actual `/tmp/mz-cleanup/cert-m1600.json` and `/tmp/mz-cleanup/independent-m1600.json` inspected |
+| §7 certificate reduction/trust | Exact Legendre norm, outward Arb node tables, integer fixed-point tensors/error enclosure; separate forward-error path under documented IEEE/BLAS assumptions; no eigensolver accuracy premise | Actual producer/checker source and receipts |
+| §7 open questions, README | Parity classification complete; first crossing, sharp growth limits and sharp operator norms remain distinct | Above exact scopes |
+
+Only final IDs occur in the manuscript. New results use source-path comments without provisional or invented final IDs, pending orchestrator preparation. No new external source, idea, novelty claim, or priority sentence is introduced by translation. Bibliography unchanged. The long cosine-transform closed form in the growth record is not duplicated: the manuscript defines its exact constants by convergent positive integrals and proves the norm limit and one-sided bounds directly.
+
+Actual build: incremental pdfLaTeX twice with output directory `/tmp/padua-mz-cleanup-paper`, after the previously successful BibTeX pass (bibliography unchanged). `pdfinfo` reports24 A4 pages. Both final logs have zero warning/error/undefined-reference/overfull/underfull markers. `git diff --check` passed. Page22 was rendered with `pdftoppm -f 22 -l 22 -scale-to 1300 -png -singlefile ...` and visually checked: proposition, quotient interval and certificate discussion fit the page. No eigenvalue/certificate computation was rerun by the manuscript worker. The source receipts were inspected, not independently executed here.
+
+| Current artifact | Bytes | SHA-256 |
+|---|---:|---|
+| `tracks/mz-constants/paper/manuscript.tex` | 72502 | `6d28fe6cecaa9fee32267b068670d4a41243baf6de27746d7375937acc5fd063` |
+| `tracks/mz-constants/paper/refs.bib` (unchanged) | 8810 | `9901ae3dba63af176a1ced7c066da559588bd762ee8fe7bf25602e0a48c7da63` |
+| `/tmp/padua-mz-cleanup-paper/manuscript.pdf` | 507863 | `fb7c737d0f50d0aa404e4a76c3d83d7963f8bf9e5a8ba15faf176b98fee63917` |
+
+This pin predates any final-ID substitution or later m1240 addition. No m1240 certificate or first-crossing claim is in the current source. The PDF remains scratch; no cold-storage delivery is claimed.
+
+## 2026-11-05 — three finite witnesses (final current pass)
+
+The orchestrator confirmed completed producer and independent acceptance at m1101,1240,1600; all six short receipts and the finite theory were committed in `39479ff`. This worker inspected `theory/finite-indefiniteness.md` and the additional actual producer/checker JSONs at1101 and1240. Section7's finite proposition now has all three exact rational trial-Rayleigh intervals:
+
+- m1101: `(-35067/10^6,-35066/10^6)`;
+- m1240: `(-273/10^7,-270/10^7)`;
+- m1600: `(-23415/10^6,-23414/10^6)`.
+
+The text states only that1240 is the smallest even construction degree certified negative **in this campaign**. No lower-degree positivity theorem, earliest mathematical crossing, or unfinished fine-scan result is claimed. Earlier m1600-only receipt text is historical. Current proof/trust and all other C2/C3 integrations are unchanged from the preceding extension.
+
+Actual final incremental pdfLaTeX build:25 A4 pages, zero final LaTeX/BibTeX warning/error/undefined-reference/overfull/underfull markers. `git diff --check` passed. Final page22, containing the three-witness table and certificate reduction, was rendered and visually checked; formulas/table fit the margins. Numerical and certificate runs belong to their separate producer/checker agents. The manuscript worker performed only source/receipt review and document compilation.
+
+| Current artifact | Bytes | SHA-256 |
+|---|---:|---|
+| `tracks/mz-constants/paper/manuscript.tex` | 73027 | `d0da06adcad1f6d9aa6bcf6add2631c5a065d104fc3327ebee234632a6c8e04f` |
+| `tracks/mz-constants/paper/refs.bib` (unchanged) | 8810 | `9901ae3dba63af176a1ced7c066da559588bd762ee8fe7bf25602e0a48c7da63` |
+| `/tmp/padua-mz-cleanup-paper/manuscript.pdf` | 510003 | `4f58e5b9a1d2fa0e0295502eb70e414fbffec3962cc4149190b158ade7d419fa` |
+
+These hashes identify the final manuscript-worker pass before orchestrator final-ID substitution. All generated products remain scratch; preserved v1/response-01 artifacts were untouched. No PDF is committed or claimed delivered. Claude audit is pending.
