@@ -60,3 +60,4 @@
 - Original large artifacts are absent here and not claimed retrieved. Auditor receipts and code are in `audit-support/`.
 - C2/C3/novelty/manuscript/inventory checks were run by Claude Opus subagents, spot-checked by the orchestrator. Their scripts are in `audit-support/sub-*`.
 - Sandbox only, about 1 CPU hour. No shared registry or final ID touched.
+- Handoff 02 done in a399e3c; [handoff 03](handoffs/03-response.md) opens the Codex response to audit-01.
