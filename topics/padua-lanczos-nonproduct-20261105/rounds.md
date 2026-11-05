@@ -6,11 +6,11 @@ progress stop that direction.
 
 | Direction | Completed rounds | Current work |
 |---|---:|---|
-| P1 triangle | 1 | Round 1: gate complete; triangle support/injectivity/rational-weight admission proved. Round 2: exact continuous recurrence probe |
-| P2 disk | 1 | Round 1: gate and disk/D36x9 admissions proved; degree-eight exact probe executed. Round 2: interpret structural probe |
-| P3 perturbed SH | 1 | Round 1: gate completed with disclosed timing limitation; positive rank-two weight family admitted. Round 2: moment/witness/radius proof |
+| P1 triangle | 2 | Round 2: exact creator probe complete; N3 redirects to P4. Round 3: bounded primary-source search/read |
+| P2 disk | 2 | Round 2: symmetry covariance and finite probe interpretation complete; paused at N3 redirect, rate question OPEN |
+| P3 perturbed SH | 2 | Round 2: unchanged exponential BJ / polynomial mirror inequalities and uniform eta certificate proved analytically |
 | P4 structural criterion | 1 | Round 1: common definition, weighted quotient, exact atomless capacity and proved moment transfer. Round 2: exact model sanity checks and criterion gate |
-| P5 Padua | 0 | Round 1: prospective gate, exactness/admission and cutoff test |
+| P5 Padua | 1 | Round 1 complete: nonproduct admission and two-sided polynomial BJ/mirror bounds proved; exact supplementary checks pass |
 | P6 exact scans | 2 | Round 2: 36 exact weighted pilot rows match two arithmetic paths. Round 3: inherited N2 reanalysis and degree-eight cost benchmarks before sixteen |
 
 ## Round outcomes
@@ -40,3 +40,18 @@ progress stop that direction.
   Three admitted measures, four rules and degrees2–4 give36 complete-source
   exact rows; common-denominator GMP and scalar-rational GMP paths agree.
   Two implementations by one worker are not distinct-agent approval.
+- P1 round 2: [finite creator probe](theory/p1-continuous-creator-probe.md)
+  checks45 basis polynomials,132 creator identities and45 norm identities
+  through8. N3 redirects; no full-capacity bounded-order recursion obtained.
+- P2 round 2: [rotation covariance](theory/p2-02-rotation-covariance.md)
+  proved; [finite probe](theory/p2-03-finite-recurrence-probe.md) interpreted
+  at its restricted scope. Whole-algorithm symmetry does not identify the
+  named fixed-order rules. N3 redirects; disk rate question stays OPEN.
+- P3 round 2: [moment/normal witness](theory/p3-02-exact-moments-creators.md)
+  and [capacity/radius](theory/p3-03-uniform-capacity-radius.md) proved. All
+  n>=2 and0<|eta|<1 retain PD-T324 constants; eta_0=1/2 is an analytic
+  sufficient certificate, not a maximal radius or strict small-n ordering.
+- P5 round 1: [admission](theory/p5-01-padua-admission.md) and
+  [capacity](theory/p5-02-padua-polynomial-capacity.md). For every m>s>=1,
+  both BJ/mirror lie between sqrt(ceil(s/2)) and2sqrt(2)(s+1)(N_s-1).
+  Exact algebraic supplementary m2–5 checks pass; no fitted rate premise.

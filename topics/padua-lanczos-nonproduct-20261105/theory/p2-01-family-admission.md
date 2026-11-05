@@ -63,9 +63,11 @@ polynomial root counting and linear algebra are used explicitly.
 
 ## Checks
 
-The proof is independent of computation. A small rational checker is
-planned to verify point distinctness, radii, D4 closure and moments.
-Its finite output will be a supplementary check, not a degree reduction.
+The proof is independent of computation. The small rational checker in
+code/p2_disk_probe.py executed and verified point distinctness, radii and
+D4 closure, recorded in evidence/p2-disk-probe.json. Its continuous disk
+moment reconstruction is a separate finite check through degree8. These
+outputs supplement the proof; they do not supply its degree reduction.
 
 ## Sources
 

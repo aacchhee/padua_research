@@ -1,0 +1,267 @@
+{
+  "model": "nonatomic continuous uniform physical triangle",
+  "source": "relative raw-product aggregate Hilbert norm",
+  "scope": "exact creators and sampled pointwise data; no N2/N3 pass",
+  "max_degree": 8,
+  "basis_count": 45,
+  "checks": {
+    "orthogonality": true,
+    "moment_identity_count": 153,
+    "creator_identity_count": 132,
+    "norm_formula_count": 45,
+    "same_degree_creator_count": 44,
+    "final_degree_chain": true
+  },
+  "norms_final_degree": [
+    "16384/1329696225",
+    "256/159563547",
+    "256/969249645",
+    "256/3769304175",
+    "1024/35128130625",
+    "64/2838926475",
+    "64/1804295493",
+    "1024/7180359615",
+    "16384/6335611425"
+  ],
+  "final_degree_chain": [
+    "1",
+    "1/2",
+    "1/6",
+    "1/20",
+    "1/70",
+    "1/252",
+    "1/924",
+    "1/3432",
+    "1/12870"
+  ],
+  "elapsed_seconds": 1.228929962000052,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "source_sha256": "877b77c025734b1a20801f8b4d4f63d53c466b532f22419b79221fb39aab5ff0",
+  "raw_output_sha256": "080c84ee3518ed8407de599f48114d1bec711342d8cc4f9dfcb70de79a1a890f",
+  "raw_output_bytes": 33434,
+  "sampled_spectral_maxima_exploratory": {
+    "BJ": [
+      {
+        "degree": 1,
+        "point": [
+          "-1",
+          "-1"
+        ],
+        "trace2": "4",
+        "spectral_exploratory": 1.7320508075688776
+      },
+      {
+        "degree": 2,
+        "point": [
+          "-1",
+          "1"
+        ],
+        "trace2": "547/6",
+        "spectral_exploratory": 8.832724364134735
+      },
+      {
+        "degree": 3,
+        "point": [
+          "-1",
+          "1"
+        ],
+        "trace2": "658897/450",
+        "spectral_exploratory": 35.608037371015065
+      },
+      {
+        "degree": 4,
+        "point": [
+          "-1",
+          "1"
+        ],
+        "trace2": "42051517/1575",
+        "spectral_exploratory": 156.224258774899
+      },
+      {
+        "degree": 5,
+        "point": [
+          "-1",
+          "1"
+        ],
+        "trace2": "3875872123223/6615000",
+        "spectral_exploratory": 747.5079014361382
+      },
+      {
+        "degree": 6,
+        "point": [
+          "-1",
+          "1"
+        ],
+        "trace2": "864061570097344373/60031125000",
+        "spectral_exploratory": 3737.856423393978
+      },
+      {
+        "degree": 7,
+        "point": [
+          "-1",
+          "1"
+        ],
+        "trace2": "1135171493791185775721/3012834825000",
+        "spectral_exploratory": 19200.513810917244
+      },
+      {
+        "degree": 8,
+        "point": [
+          "-1",
+          "1"
+        ],
+        "trace2": "8340616126225266643711223/811958985337500",
+        "spectral_exploratory": 100477.77297625504
+      }
+    ],
+    "mirror": [
+      {
+        "degree": 1,
+        "point": [
+          "-1",
+          "-1"
+        ],
+        "trace2": "4",
+        "spectral_exploratory": 1.7320508075688776
+      },
+      {
+        "degree": 2,
+        "point": [
+          "1",
+          "-1"
+        ],
+        "trace2": "647/8",
+        "spectral_exploratory": 8.28870369377843
+      },
+      {
+        "degree": 3,
+        "point": [
+          "1",
+          "-1"
+        ],
+        "trace2": "13453607/16200",
+        "spectral_exploratory": 24.986895890931446
+      },
+      {
+        "degree": 4,
+        "point": [
+          "1",
+          "-1"
+        ],
+        "trace2": "773269757/117600",
+        "spectral_exploratory": 61.43162283167268
+      },
+      {
+        "degree": 5,
+        "point": [
+          "1",
+          "-1"
+        ],
+        "trace2": "1723694587301/37044000",
+        "spectral_exploratory": 164.86712141454302
+      },
+      {
+        "degree": 6,
+        "point": [
+          "1",
+          "-1"
+        ],
+        "trace2": "6267496237074403/20170458000",
+        "spectral_exploratory": 413.9343469613077
+      },
+      {
+        "degree": 7,
+        "point": [
+          "1",
+          "-1"
+        ],
+        "trace2": "25217928018956270083/12498960474000",
+        "spectral_exploratory": 989.4904425528517
+      },
+      {
+        "degree": 8,
+        "point": [
+          "1",
+          "-1"
+        ],
+        "trace2": "268182607672040574389/20633204592000",
+        "spectral_exploratory": 2481.3044270355
+      }
+    ],
+    "alternating": [
+      {
+        "degree": 1,
+        "point": [
+          "-1",
+          "-1"
+        ],
+        "trace2": "4",
+        "spectral_exploratory": 1.7320508075688776
+      },
+      {
+        "degree": 2,
+        "point": [
+          "-1",
+          "1"
+        ],
+        "trace2": "547/6",
+        "spectral_exploratory": 8.832724364134735
+      },
+      {
+        "degree": 3,
+        "point": [
+          "-1",
+          "1"
+        ],
+        "trace2": "2677187/2430",
+        "spectral_exploratory": 32.072912054632646
+      },
+      {
+        "degree": 4,
+        "point": [
+          "-1",
+          "1"
+        ],
+        "trace2": "6970938563/762048",
+        "spectral_exploratory": 93.60801534470377
+      },
+      {
+        "degree": 5,
+        "point": [
+          "-1",
+          "1"
+        ],
+        "trace2": "320785734962107/4762800000",
+        "spectral_exploratory": 253.75077232954766
+      },
+      {
+        "degree": 6,
+        "point": [
+          "-1",
+          "1"
+        ],
+        "trace2": "204828406798509136019/389001690000000",
+        "spectral_exploratory": 711.5148405272043
+      },
+      {
+        "degree": 7,
+        "point": [
+          "-1",
+          "1"
+        ],
+        "trace2": "1849121771610087342869/393323931000000",
+        "spectral_exploratory": 2143.6532785258178
+      },
+      {
+        "degree": 8,
+        "point": [
+          "-1",
+          "1"
+        ],
+        "trace2": "85448180811953824399529782841/1795923362128896000000",
+        "spectral_exploratory": 6862.092716788881
+      }
+    ]
+  }
+}

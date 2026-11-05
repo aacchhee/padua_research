@@ -2,7 +2,8 @@
 
 ID kind: PD-T.
 Aliases: sign checkerboard reweighting; full-support rank-two SH measure.
-Split from: P3-01 non-affine-product capacity/radius target, still OPEN.
+Split from: IDEA?lanczos-nonproduct-codex-P3-01 combined target; capacity/
+radius is separately proved in P3-03.
 Split into: none.
 
 ## Statement
@@ -46,8 +47,8 @@ Overall status: PROVED (analytic admission; independent audit pending).
 | Distinct nodes, injectivity, M>N_s | PROVED | Tensor interpolation argument below |
 | Not affine-product | PROVED | Convex hull rigidity and a nonzero weight minor |
 
-Candidate disposition: retained. Capacity and uniform separation are
-separate OPEN targets at this round-1 boundary.
+Candidate disposition: retained. At the round-1 boundary capacity and
+uniform separation remained OPEN; the later P3-03 proves that separate target.
 
 ## Depends on
 
@@ -131,9 +132,10 @@ a nonlinear node map, or capacity equivalence follows from this admission.
 
 ## Open items
 
-The original P3 capacity/radius target stays OPEN pending moment/creator/
-source verification and the actual normal-projected derivative bound.
-Independent audit and final result-ID allocation belong to the coordinator.
+The later [P3-02](p3-02-exact-moments-creators.md) supplies matched moments/
+creators and [P3-03](p3-03-uniform-capacity-radius.md) supplies the actual
+normal-projected capacity/radius theorem. Independent audit and final
+result-ID allocation belong to the coordinator.
 
 ## History
 
@@ -141,3 +143,5 @@ Independent audit and final result-ID allocation belong to the coordinator.
   ed5515ed84e0e7b12163175dce9f22a859c89c99. Gate followed proposal and
   preceded further pursuit; [canonical protocol disclosure](../LOG.md#canonical-protocol-disclosure--p3-gate-timing).
   Round-1 analytic admission, before capacity development.
+- 2026-11-05: after round-2 development, linked the separate P3-02/03
+  results; admission statement and proof unchanged.

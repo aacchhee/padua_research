@@ -122,3 +122,33 @@ candidate's mathematics.
   120s per backend/rule, then scale only feasible cases within the original
   600s per-case high-scan cap. N2 thresholds/windows are unchanged. Reanalyze
   inherited T24 certified log intervals separately from new experiments.
+
+## 2026-11-05 — P1/P2/P3 round 2 and P5 round 1
+
+- P1's exact continuous triangle probe verified45 monic basis polynomials,
+  132 creators and45 norms through8 (1.23s). This does not close the full
+  capacity recursion; N3 redirects to P4. A bounded ten-minute public-source
+  discovery/read round follows; no theorem is imported from an unread source.
+- P2 proved whole-algorithm orthogonal covariance and an explicit degree-two
+  basis-mixing obstruction to the symmetry-only BJ/mirror identification.
+  Its exact finite recurrence probe remains MEASURED and restricted. Paused
+  at N3 redirect, with the disk rate question OPEN rather than inventing
+  redundant rounds; P4 owns the common criterion route.
+- P3 proved [exact moments/creators and actual normal witness](theory/p3-02-exact-moments-creators.md),
+  then the [all-degree separation and uniform sufficient eta range](theory/p3-03-uniform-capacity-radius.md).
+  For every n>=2 and0<|eta|<1, original PD-T324 BJ and mirror bounds survive
+  unchanged. In particular eta_0(n)=1/2 passes N4 analytically. This is the
+  authorized nonmultiplicative-weight route, with n-dependent frequency;
+  no fixed-density/node-map claim, empirical N2 pass, maximal radius or
+  strict small-n ordering is asserted. The direct proof does not use N2
+  fits as a premise. Supplementary distinct Astra high review is underway.
+- P5 proved exact Padua admission/cubature, then two-sided polynomial
+  BJ/mirror capacity bounds for all m>s>=1, independently of fitted trends.
+  Exact algebraic m2–5 supplementary checks pass (1.90s), including124
+  source-coordinate derivative comparisons. Sharp exponent, alternating/
+  pivot uppers and switching remain OPEN. Development stops after this
+  substantive first round; a distinct Astra high reviewer is reconstructing
+  the proof and rerunning checks.
+- A second distinct Astra high checker independently verifies P6 code,
+  actual scans and signed-OLS interval screens. These supplementary checks
+  do not replace the required later Claude audit.

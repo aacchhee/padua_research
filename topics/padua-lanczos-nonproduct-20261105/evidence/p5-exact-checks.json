@@ -1,0 +1,142 @@
+{
+  "status": "PASS supplementary exact finite checks",
+  "scope": "analytic theorem corroboration, not a finite proof reduction",
+  "sympy_version": "1.14.0",
+  "source_sha256": "640317101fa847e8e63f8680f90918a474fe0ae2b8dcc3d9cef479b1bb2a3e7a",
+  "symbolic_univariate_identities_through_degree_8": 44,
+  "orders": [
+    {
+      "m": 2,
+      "stage": 1,
+      "nodes": 6,
+      "columns": 3,
+      "normal_dimension": 3,
+      "field": "QQ",
+      "exact_cubature_moments": 10,
+      "sharp_T_2m_failure": true,
+      "exact_gram_entries": 6,
+      "rules": [
+        {
+          "rule": "BJ",
+          "exact_creators": 2,
+          "normal_x_readout_squares": [
+            1
+          ],
+          "lower_capacity_squared": 1
+        },
+        {
+          "rule": "mirror",
+          "exact_creators": 2,
+          "normal_x_readout_squares": [
+            1
+          ],
+          "lower_capacity_squared": 1
+        }
+      ],
+      "dual_source_coordinate_directions": 24
+    },
+    {
+      "m": 3,
+      "stage": 2,
+      "nodes": 10,
+      "columns": 6,
+      "normal_dimension": 4,
+      "field": "QQ<sqrt(2)>",
+      "exact_cubature_moments": 21,
+      "sharp_T_2m_failure": true,
+      "exact_gram_entries": 21,
+      "rules": [
+        {
+          "rule": "BJ",
+          "exact_creators": 5,
+          "normal_x_readout_squares": [
+            1,
+            0
+          ],
+          "lower_capacity_squared": 1
+        },
+        {
+          "rule": "mirror",
+          "exact_creators": 5,
+          "normal_x_readout_squares": [
+            1,
+            0
+          ],
+          "lower_capacity_squared": 1
+        }
+      ],
+      "dual_source_coordinate_directions": 100
+    },
+    {
+      "m": 4,
+      "stage": 3,
+      "nodes": 15,
+      "columns": 10,
+      "normal_dimension": 5,
+      "field": "QQ<sqrt(2) + sqrt(5)>",
+      "exact_cubature_moments": 36,
+      "sharp_T_2m_failure": true,
+      "exact_gram_entries": 55,
+      "rules": [
+        {
+          "rule": "BJ",
+          "exact_creators": 9,
+          "normal_x_readout_squares": [
+            1,
+            0,
+            1
+          ],
+          "lower_capacity_squared": 2
+        },
+        {
+          "rule": "mirror",
+          "exact_creators": 9,
+          "normal_x_readout_squares": [
+            1,
+            0,
+            1
+          ],
+          "lower_capacity_squared": 2
+        }
+      ],
+      "dual_source_coordinate_directions": 0
+    },
+    {
+      "m": 5,
+      "stage": 4,
+      "nodes": 21,
+      "columns": 15,
+      "normal_dimension": 6,
+      "field": "QQ<sqrt(3) + sqrt(5)>",
+      "exact_cubature_moments": 55,
+      "sharp_T_2m_failure": true,
+      "exact_gram_entries": 120,
+      "rules": [
+        {
+          "rule": "BJ",
+          "exact_creators": 14,
+          "normal_x_readout_squares": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "lower_capacity_squared": 2
+        },
+        {
+          "rule": "mirror",
+          "exact_creators": 14,
+          "normal_x_readout_squares": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "lower_capacity_squared": 2
+        }
+      ],
+      "dual_source_coordinate_directions": 0
+    }
+  ],
+  "elapsed_seconds": 1.90127149500006
+}
