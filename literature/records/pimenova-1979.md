@@ -1,5 +1,7 @@
 # pimenova-1979 — L. M. Pimenova, On Lebesgue functions for some interpolation polynomials in two variables, Dokl. Akad. Nauk SSSR 249(1) (1979) 52–54 (Russian)
 
+Registration (2026-11-05 PR21 final registration): LIT-484. Original provisional aliases remain below; [exact map](../../topics/padua-literature-20261103/preparation/final-id-map.json). Source statements, versions, reader attribution and reading limits are unchanged. Developer-only source checks remain qualified by audit02/03; no independent auditor page-image verification is inferred.
+
 - DOI / URL / supplied location: no DOI. [Math-Net.ru dan43113](https://www.mathnet.ru/eng/dan43113), which hosts a free PDF scan. MR 0553982; zbMATH 0485.42003, per the Math-Net page.
 - Access and reading date: 2026-11-03, built-in browser on AC's computer with pdf.js text extraction. No copy is kept.
 - Reading coverage: all 3 pages through the OCR text layer (2026-11-03). Pages 52–53 then read on rendered page images on 2026-11-05 (pdftoppm, 130 dpi), from the Math-Net PDF downloaded to AC's `Downloads\padua\papers\pimenova-1979-dan43113.pdf`.
@@ -8,7 +10,7 @@
 
 ## Extracted published statements
 
-### LIT?padua-literature-claude-03 — pointwise asymptotics of the Lebesgue function of two-variable trigonometric interpolation (rhombic frequencies)
+### LIT-484 (LIT?padua-literature-claude-03) — pointwise asymptotics of the Lebesgue function of two-variable trigonometric interpolation (rhombic frequencies)
 
 - Statement in faithful paraphrase: This is trigonometric interpolation on the uniform (2n+1)² grid, step h = 2π/(2n+1), with rhombic frequencies |k| + |l| ≤ n.
   - Theorem 1, eq. (2), p. 52 (page image): L̃ⁿ(x,y) = (2/π²){|sin(n(x+y)/2) sin(n(x−y)/2)| + |cos(n(x+y)/2) cos(n(x−y)/2)|} ln² n + O(ln n). The grid is x_μ = μh, y_ν = νh, h = 2π/(2n+1), with sums over μ, ν = 1, …, 2n+1. (The text above (2) prints the index range as 0, …, n.) This is Kuznetsova 1995 eq. (1) at m = n. On p. 52, (1) quotes Daugavet's rhombic Lebesgue constant as (16/π⁴) ln² n + O(ln n). (Corrected 2026-11-05: the 2026-11-03 OCR paraphrase gave the arguments as (n+½)(x ± y).)

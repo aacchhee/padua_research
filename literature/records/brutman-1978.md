@@ -1,5 +1,7 @@
 # brutman-1978 — L. Brutman, On the Lebesgue function for polynomial interpolation, SIAM J. Numer. Anal. 15(4) (1978) 694–704
 
+Registration (2026-11-05 PR21 final registration): LIT-466. Original provisional aliases remain below; [exact map](../../topics/padua-literature-20261103/preparation/final-id-map.json). Source statements, versions, reader attribution and reading limits are unchanged. Developer-only source checks remain qualified by audit02/03; no independent auditor page-image verification is inferred.
+
 - DOI / URL / supplied location: [10.1137/0715046](https://doi.org/10.1137/0715046) (Crossref checked 2026-11-03). AC-supplied PDF `Downloads\padua\papers\0715046.pdf` (11 pp.).
 - Access and reading date: 2026-11-03, PDF staged into the cloud workspace and read with pdftotext. No copy committed.
 - Reading coverage: complete text pp. 694–704, through the text layer. Formulas are partly garbled; the statements rely on the prose and on Theorem statements.
@@ -8,7 +10,7 @@
 
 ## Extracted published statements
 
-### LIT?padua-literature-claude-07 — local maxima of 1-D Lebesgue functions at Chebyshev-type nodes; attribution of the endpoint maximum
+### LIT-466 (LIT?padua-literature-claude-07) — local maxima of 1-D Lebesgue functions at Chebyshev-type nodes; attribution of the endpoint maximum
 
 - Statement in faithful paraphrase:
   - p. 695: Luttmann–Rivlin conjectured that for Chebyshev zeros T the Lebesgue constant equals the value of the Lebesgue function at x = 1. Ehlich–Zeller proved it, "see also Powell" (Comput. J. 9 (1967) 404–407).

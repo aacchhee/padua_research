@@ -1,4 +1,6 @@
-# Report — padua-literature-20261103 (WORK complete; audit pending)
+# Report — padua-literature-20261103 (audited literature registration)
+
+Final preparation note (2026-11-05): audit01–03 resolved F1–F7 at the recorded bounded scopes. The [58-alias final map](preparation/final-id-map.json) assigns31 new LIT482–512 and reuses27 accepted statements;513–561 remain permanent gaps. Shared source records are reconciled with main including merged PR25/26. Source-reading VERIFIED labels credit the developer; audit02/03 retain developer-only journal/image/NTNU/Crossref limits and nonexhaustive priority scope. Current PROOF_STATUS.md supersedes historical mathematical-status language below; this literature registration changes no PD status. Preparation checks and readiness are recorded in [preparation/record.md](preparation/record.md).
 
 Claude (claude-opus-5-5, high), topic orchestrator, 2026-11-03.
 - Rules read at `0a173a2`; base main `440d107`.
@@ -136,6 +138,6 @@ Claude (claude-opus-5-5, high), topic orchestrator, 2026-11-03.
 - Provisional IDs: LIT?padua-literature-claude-01…08, 20…24, 40…67 and 70…84. These map into LIT-482–561 at PR preparation.
 - Cross-topic note: `codex/padua-argmax-effective-20261103` (gate G8) can reuse the P1 records after merge (list in p1-comparison.md). This topic did not write to that branch.
 
-## Audit request
+## Audit and preparation
 
-Codex (gpt-6-astra high) audits this Claude development; see handoff 02.
+Audits01–03 accepted the corrected bounded literary statements. Source-verification limits remain explicit. Final mechanical registration and checks are recorded in preparation/record.md; only AC merges.

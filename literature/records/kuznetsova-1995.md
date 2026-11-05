@@ -1,5 +1,7 @@
 # kuznetsova-1995 — O. I. Kuznetsova, Asymptotic behavior of Lebesgue functions of two variables, Ukrainian Math. J. 47(2) (1995) 259–266
 
+Registration (2026-11-05 PR21 final registration): LIT-482, LIT-483. Original provisional aliases remain below; [exact map](../../topics/padua-literature-20261103/preparation/final-id-map.json). Source statements, versions, reader attribution and reading limits are unchanged. Developer-only source checks remain qualified by audit02/03; no independent auditor page-image verification is inferred.
+
 - DOI / URL / supplied location: [10.1007/BF01056716](https://doi.org/10.1007/BF01056716) (Crossref checked 2026-11-03); [Springer](https://link.springer.com/article/10.1007/BF01056716). Russian original: Ukr. Mat. Zh. 47(2) (1995) 220–226, free at the [UMJ archive](https://umj.imath.kiev.ua/index.php/umj/article/view/5406).
 - Access and reading date: 2026-11-03. The Springer English translation was opened through NTNU access in the built-in browser on AC's computer and its text extracted with pdf.js. No copy is kept.
 - Reading coverage: complete full text, pp. 259–266, from the OCR text layer of the scan. Theorem 1 and the setting paragraph on p. 259 were checked against the rendered page image; the other formulas were seen only through garbled OCR.
@@ -8,7 +10,7 @@
 
 ## Extracted published statements
 
-### LIT?padua-literature-claude-01 — pointwise asymptotics of the two-variable Lebesgue function of discrete rhombic Fourier sums
+### LIT-482 (LIT?padua-literature-claude-01) — pointwise asymptotics of the two-variable Lebesgue function of discrete rhombic Fourier sums
 
 - Statement in faithful paraphrase: Let the rhombic (ℓ¹) partial Fourier sums S_mn have frequencies |k|/m + |l|/n ≤ 1 on T² = [−π, π)². Replace their coefficients by the rectangle rule on the uniform mesh (πμ/m, πν/n), −m ≤ μ ≤ m−1, −n ≤ ν ≤ n−1, and let L_mn(x, y) be the Lebesgue function of the resulting discrete operator. Then, uniformly over pairs with n/m ∈ ℕ,
   L_mn(x, y) = (2/π²) · { |sin((mx+ny)/2) sin((mx−ny)/2)| + |cos((mx+ny)/2) cos((mx−ny)/2)| } · (2 log m log n − log² m) + O(log n).
@@ -17,7 +19,7 @@
 - Reading evidence and limitations: eq. (1) was read on the page image, including both absolute values. The rest comes from OCR. Rechecked 2026-11-05 on a fresh 110-dpi pdftoppm render of p. 259, from the Springer PDF downloaded to AC's `Downloads\padua\papers\BF01056716-kuznetsova-1995.pdf`: unchanged.
 - Relation to campaign claims (no inherited proof status): Kolomoitsev–Lomako 2021 (LIT-379) cite this paper as their ref. [17] for their Lemma 3.6, eqs. (3.27)–(3.30) (arXiv v1 p. 12). That lemma is background for PD-T157–159. See [P1 comparison](../../topics/padua-literature-20261103/p1-comparison.md).
 
-### LIT?padua-literature-claude-02 — historical attribution recorded by the source
+### LIT-483 (LIT?padua-literature-claude-02) — historical attribution recorded by the source
 
 - Statement in faithful paraphrase:
   - For m = n and the odd mesh (2πμ/(2m+1), 2πν/(2n+1)), eq. (1) had been obtained earlier, by a different method, by L. M. Pimenova (Dokl. Akad. Nauk SSSR 249 (1979) 52–54).

@@ -1,5 +1,7 @@
 # cdmsv-poster-2008 — M. Caliari, S. De Marchi, A. Sommariva, M. Vianello, Near-optimal interpolation and quadrature in two variables: the Padua points, poster, 5th European Congress of Mathematics, Amsterdam, 14–18 July 2008
 
+Registration (2026-11-05 PR21 final registration): LIT-485. Original provisional aliases remain below; [exact map](../../topics/padua-literature-20261103/preparation/final-id-map.json). Source statements, versions, reader attribution and reading limits are unchanged. Developer-only source checks remain qualified by audit02/03; no independent auditor page-image verification is inferred.
+
 - DOI / URL / supplied location: no DOI; [poster PDF on M. Vianello's page](https://www.math.unipd.it/~marcov/pdf/poster5ecm.pdf).
 - Access and reading date: 2026-11-03 (built-in browser on AC's computer; text extracted with pdf.js; no copy kept).
 - Reading coverage: complete (one page), born-digital text layer.
@@ -8,7 +10,7 @@
 
 ## Extracted published statements
 
-### LIT?padua-literature-claude-05 — conjectured corner location of the Padua Lebesgue maximum
+### LIT-485 (LIT?padua-literature-claude-05) — conjectured corner location of the Padua Lebesgue maximum
 
 - Statement in faithful paraphrase: Section "The Lebesgue constant" gives two results.
   - Theorem (credited to the authors' ref. [1]): the Padua Lebesgue constant is O(log² n).

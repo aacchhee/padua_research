@@ -47,3 +47,7 @@ PR-preparation consolidation 2026-11-01 (audit-01 protocol finding P2): the addi
 2026-10-31: Step 0 baseline record (AC-requested; not a novelty gate). Provisional IDs only; final `LIT-nnn` allocated at PR preparation.
 
 2026-11-01 (PR-preparation consolidation, audit-01 protocol finding P2): coverage upgraded from abstract-only to a WebFetch digest read up to §7.1 (L1 prior-art review); statement 443 added; Thm 7, Cor. 4 and E^inj named as required re-reading.
+
+## Addendum — padua-literature-20261103 (P3, 2026-11-03)
+
+Campaign primary-reading addendum: [statement-level coverage, locators and limits](../../topics/padua-literature-20261103/addenda/sinha-2026.addendum.md). Reader/model and source version are recorded there. This is literature attribution, not a local proof or an independent auditor source-page check. Audit-02 and audit-03 retain the explicit developer-only verification qualifications where applicable.

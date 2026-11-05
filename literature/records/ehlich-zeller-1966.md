@@ -1,5 +1,7 @@
 # ehlich-zeller-1966 — H. Ehlich, K. Zeller, Auswertung der Normen von Interpolationsoperatoren, Math. Ann. 164 (1966) 105–112
 
+Registration (2026-11-05 PR21 final registration): LIT-470. Original provisional aliases remain below; [exact map](../../topics/padua-literature-20261103/preparation/final-id-map.json). Source statements, versions, reader attribution and reading limits are unchanged. Developer-only source checks remain qualified by audit02/03; no independent auditor page-image verification is inferred.
+
 - DOI / URL / supplied location: [10.1007/BF01429047](https://doi.org/10.1007/BF01429047) (Crossref checked 2026-11-03).
 - Access and reading date: 2026-11-03. Springer PDF via NTNU access, text extracted with pdf.js; no copy is kept.
 - Reading coverage: complete full text (pp. 105–112), read from the OCR text layer. Formulas are partly garbled; the statements below rest on the prose and on the structure of the proofs.
@@ -8,7 +10,7 @@
 
 ## Extracted published statements
 
-### LIT?padua-literature-claude-04 — location of the maximum of 1-D Lebesgue functions (four classical cases)
+### LIT-470 (LIT?padua-literature-claude-04) — location of the maximum of 1-D Lebesgue functions (four classical cases)
 
 - Statement in faithful paraphrase:
   - (a) Trigonometric interpolation at 2n+1 or 2n equispaced nodes: the Lebesgue function is periodic with the node spacing. On each node interval it is one trigonometric polynomial with fixed signs, even about the midpoint, and a two-hump shape is excluded by counting extrema. So the maximum on every interval is at its midpoint, which gives explicit Lebesgue constants.

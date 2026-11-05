@@ -1377,3 +1377,68 @@ Owner `codex/padua-argmax-effective-2-20261105`, [PR25](https://github.com/aacch
 | IDEA?argmax-effective-2-codex-08 | IDEA-461 | [candidate](topics/padua-argmax-effective-2-20261105/ideas/H2-H3.md); deferred cell-envelope route with resume condition |
 
 T02 (`PD-T?argmax-effective-2-codex-02`) is **not registered**: local CONDITIONAL A0 evidence only. No LIT ID assigned. Permanent unused gaps: PD-T371–375, PD-N133–137, IDEA462–465 and LIT594–597. PD-T099 stays OPEN and global certified degrees stay2–32.
+
+## Padua literature campaign — PR21 final source-statement mapping
+
+Owner `claude/padua-literature-20261103`; permanent LIT-482–561 first published `fe946c9701916dce042af48c0e2705eac9d87db9`. [Topic ledger](topics/padua-literature-20261103/ALLOCATIONS.md); [shared batch ledger](topics/padua-batch-20261031/ALLOCATIONS.md); [fresh union](topics/padua-literature-20261103/preparation/allocation-scan.json); [deduplication](topics/padua-literature-20261103/preparation/literature-dedup.md). No accepted ID is renumbered. New statement IDs482–512; unused513–561 permanent. Existing broad/overlapping IDs117/118/348,119/347,346,420 and the other reused statements remain distinct where historically registered; coverage addenda do not erase earlier provenance or become independent source verification.
+
+| Provisional alias | Final statement ID | Decision |
+|---|---|---|
+| LIT?padua-literature-claude-01 | LIT-482 | new within own reservation |
+| LIT?padua-literature-claude-02 | LIT-483 | new within own reservation |
+| LIT?padua-literature-claude-03 | LIT-484 | new within own reservation |
+| LIT?padua-literature-claude-04 | LIT-470 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-05 | LIT-485 | new within own reservation |
+| LIT?padua-literature-claude-06 | LIT-486 | new within own reservation |
+| LIT?padua-literature-claude-07 | LIT-466 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-08 | LIT-487 | new within own reservation |
+| LIT?padua-literature-claude-20 | LIT-488 | new within own reservation |
+| LIT?padua-literature-claude-21 | LIT-489 | new within own reservation |
+| LIT?padua-literature-claude-22 | LIT-387 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-23 | LIT-490 | new within own reservation |
+| LIT?padua-literature-claude-24 | LIT-491 | new within own reservation |
+| LIT?padua-literature-claude-40 | LIT-492 | new within own reservation |
+| LIT?padua-literature-claude-41 | LIT-493 | new within own reservation |
+| LIT?padua-literature-claude-42 | LIT-494 | new within own reservation |
+| LIT?padua-literature-claude-43 | LIT-495 | new within own reservation |
+| LIT?padua-literature-claude-44 | LIT-234 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-45 | LIT-234 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-46 | LIT-496 | new within own reservation |
+| LIT?padua-literature-claude-47 | LIT-235 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-48 | LIT-090 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-49 | LIT-284 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-50 | LIT-361 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-51 | LIT-098 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-52 | LIT-281 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-53 | LIT-285 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-54 | LIT-497 | new within own reservation |
+| LIT?padua-literature-claude-55 | LIT-278 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-56 | LIT-096 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-57 | LIT-498 | new within own reservation |
+| LIT?padua-literature-claude-58 | LIT-212 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-59 | LIT-499 | new within own reservation |
+| LIT?padua-literature-claude-60 | LIT-069 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-61 | LIT-210 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-62 | LIT-254 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-63 | LIT-272 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-64 | LIT-500 | new within own reservation |
+| LIT?padua-literature-claude-65 | LIT-083 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-66 | LIT-289 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-67 | LIT-501 | new within own reservation |
+| LIT?padua-literature-claude-70 | LIT-348 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-71 | LIT-502 | new within own reservation |
+| LIT?padua-literature-claude-72 | LIT-503 | new within own reservation |
+| LIT?padua-literature-claude-73 | LIT-117 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-74 | LIT-118 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-75 | LIT-346 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-76 | LIT-346 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-77 | LIT-504 | new within own reservation |
+| LIT?padua-literature-claude-78 | LIT-505 | new within own reservation |
+| LIT?padua-literature-claude-79 | LIT-506 | new within own reservation |
+| LIT?padua-literature-claude-80 | LIT-507 | new within own reservation |
+| LIT?padua-literature-claude-81 | LIT-508 | new within own reservation |
+| LIT?padua-literature-claude-82 | LIT-420 | same-statement reuse; coverage addendum |
+| LIT?padua-literature-claude-83 | LIT-509 | new within own reservation |
+| LIT?padua-literature-claude-84 | LIT-510 | new within own reservation |
+| LIT?padua-literature-claude-85 | LIT-511 | new within own reservation |
+| LIT?padua-literature-claude-86 | LIT-512 | new within own reservation |

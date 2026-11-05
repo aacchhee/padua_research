@@ -47,3 +47,7 @@ Online resolution pass 2026-10-31: DOI first guessed wrongly (10.1016/0024-3795(
 2026-10-31: Step 0 baseline record (AC-requested; not a novelty gate). Provisional IDs only; final `LIT-nnn` allocated at PR preparation.
 
 2026-10-31 (online pass): metadata and DOI confirmed; secondary theorem accounts added as statements 205-206; coverage still 'original not read'.
+
+## Addendum — padua-literature-20261103 (P3, 2026-11-03)
+
+Campaign primary-reading addendum: [statement-level coverage, locators and limits](../../topics/padua-literature-20261103/addenda/paige-1980-lanczos.addendum.md). Reader/model and source version are recorded there. This is literature attribution, not a local proof or an independent auditor source-page check. Audit-02 and audit-03 retain the explicit developer-only verification qualifications where applicable.

@@ -222,3 +222,7 @@ After merge the registrations are completed historical work; remaining practical
 H1/full-diamond H2 research is not scheduled by this preparation. AC's broader
 A0 reading, physical archival and external fulltext priority coverage remain
 separate decision/coverage items; no priority or delivery claim. Only AC merges.
+
+## Literature footing — PR21 audited registration
+
+The [literature report](../topics/padua-literature-20261103/report.md) and [source map](../topics/padua-literature-20261103/preparation/final-id-map.json) register the accepted bounded P1–P4 comparisons and corrections:31 new source-statement IDs482–512 and27 reused aliases. Completed preparation replaces the earlier initialization/download-list task at this scope. Source gaps, search-negative limits and developer-only journal/image/NTNU/Crossref checks remain explicit; no further source campaign or manuscript is assigned here. No mathematical frontier, PD status or accepted PR25/26 result is changed. Only AC merges.

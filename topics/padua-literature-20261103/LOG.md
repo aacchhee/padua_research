@@ -1,7 +1,7 @@
 # Padua literature campaign (P1–P4): log
 
 - Branch: `claude/padua-literature-20261103` · Base: main `440d107` · Developer: Claude · Auditor: Codex (gpt-6-astra high)
-- Stage: PR (preparation pending; PR draft) · Next: `Claude (Opus 5.5 high): Continue claude/padua-literature-20261103.` · Next handoff: [handoffs/11-prepare.md](handoffs/11-prepare.md)
+- Stage: PR (preparation complete; ready for AC review after publication) · Final [handoff12](handoffs/12-finalize.md) closes in the following commit; no further agent step.
 - Reserved final-ID ranges: LIT-482–561 (80); no PD-T, PD-N or IDEA range. See [ALLOCATIONS.md](ALLOCATIONS.md).
 - Claims: none (literature topic). Note: [SINUM 2026 assessment](notes/faghih-sinum-2026-assessment.md).
 - Open for AC: the remaining PDFs in DOWNLOADS.md v5 (A9 print-only, interlibrary loan; A10, A15, A19 low priority).
@@ -29,7 +29,7 @@
 
 ## Runs needed
 
-- Steps 0–5 of handoff 01.
+The original handoff01 reading campaign is completed at its audited bounded scope. No new scientific run is required for final registration. Remaining optional source/version/print-only gaps stay in DOWNLOADS and the source records; preparation checks are recorded below.
 
 ## 2026-11-03 — Claude, claude-opus-5-5 (configured; effort high per handoff, runtime effort not exposed) — handoff 01 steps 0–2
 
@@ -153,3 +153,10 @@
 ## 2026-11-05 — AC directs Codex to finalize PR21
 
 AC: “Codex (gpt-6-astra high): Continue claude/padua-literature-20261103. Finalize PR”. This explicit instruction overrides handoff11's Claude preparation assignment. Codex takes the preparation/orchestrator role with the requested model/effort; actual serving metadata remain unexposed. Handoff11 is superseded by12 with the same audited scope. The redirection record is published after initial mechanical mapping/application began; no retroactive timing compliance is claimed. Main330fab8 and subsequently AC-reported merged PR25 at9322fba were incorporated through c1a99f8 and65b2497, preserving audited topic files.
+
+## 2026-11-05 — Codex final preparation complete
+
+- Requested gpt-6-astra high; serving identity/effective effort unexposed. Rules67b3e01 unchanged. Mechanical registration only; audits01–03 and developer-only source-verification limits preserved. No new scientific development or novelty candidate.
+- All58 aliases mapped:31 new LIT482–512,27 same-statement reuses;513–561 permanent unused. Applied60 audited blocks across35 targets and preserved accepted PR22/25/26 content. See [preparation record](preparation/record.md).
+- Registration/body/link/foreign-prefix/status/rule/size checks pass. Independent preparation review accepted the three presentation fixes. Current main9322fba remains incorporated; actual latest PR24 a64b866 squash rehearsal passed with78 own files and protected statuses byte-preserved. Foreign draft broken-link limitations are recorded in the integration receipt.
+- All assigned work complete. Publish outputs first, close handoff12 in the following commit, and mark PR21 ready for AC review. No next agent handoff. Only AC merges.

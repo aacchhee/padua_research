@@ -1,5 +1,7 @@
 # an-ran-wu-2025 — C. An, J. Ran, H.-N. Wu, The path of hyperinterpolation: a survey, Dolomites Res. Notes Approx. 18(1) (2025) 135–145
 
+Registration (2026-11-05 PR21 final registration): LIT-387. Original provisional aliases remain below; [exact map](../../topics/padua-literature-20261103/preparation/final-id-map.json). Source statements, versions, reader attribution and reading limits are unchanged. Developer-only source checks remain qualified by audit02/03; no independent auditor page-image verification is inferred.
+
 - DOI / URL / supplied location: DOI <https://doi.org/10.25430/pupj-DRNA-2025-1-11>, resolved 2026-11-03 via doi.org to the journal page <https://drna.padovauniversitypress.it/2025/1/11>, which shows title, authors An–Ran–Wu, DRNA vol. 18, issue 1, pp. 135–145, 2025 (Crossref API not reachable from the tool; DOI resolution and landing-page metadata checked instead). Venue first learned from Wu AML 2026 ref. [1]. Free version: arXiv 2510.04904v1 (7 Oct 2025), <https://arxiv.org/abs/2510.04904>.
 - Access and reading date: 2026-11-03. arXiv v1 PDF (15 pp.) text layer via pdf.js in AC's built-in browser.
 - Reading coverage: keyword screen of the complete arXiv v1 text for Padua, square, Chebyshev, Clenshaw, Marcinkiewicz, Xu, Lissajous; read in context: §2.3 square (arXiv pp. 3–4), §3.1–3.2 opening (p. 5), references. The DRNA published body was not read; arXiv-vs-journal differences unchecked.
@@ -7,7 +9,7 @@
 
 ## Extracted published statements
 
-### LIT?padua-literature-claude-22 — survey statements on square/Padua hyperinterpolation and on multivariate MZ coverage
+### LIT-387 (LIT?padua-literature-claude-22) — survey statements on square/Padua hyperinterpolation and on multivariate MZ coverage
 
 - Statement in faithful paraphrase:
   - §2.3 (arXiv pp. 3–4): on the square, hyperinterpolation uses Chebyshev–Lobatto/Xu (MPX) points with a rule of exactness 2n+1, at more points than dim Π_n. Padua points of size dim Π_n give a rule exact only on degree-2n polynomials orthogonal to the exceptional degree-2n Chebyshev polynomial in one variable, not on all of Π_{2n}; the authors conclude that hyperinterpolation built directly on (that) Padua set is an open problem.

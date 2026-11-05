@@ -43,3 +43,7 @@ Online resolution pass 2026-10-31: key chosen to match the AMS metadata (1994, v
 ## History
 
 2026-10-31: record created in the online resolution pass (statements 233-235).
+
+## 2026-11-03 P3 supplement primary-reading addendum
+
+Campaign primary-reading addendum: [statement-level coverage, locators and limits](../../topics/padua-literature-20261103/addenda/xu-tams-1994-operator.addendum.md). Reader/model and source version are recorded there. This is literature attribution, not a local proof or an independent auditor source-page check. Audit-02 and audit-03 retain the explicit developer-only verification qualifications where applicable.

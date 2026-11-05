@@ -1,5 +1,7 @@
 # vermeiren-2026 — R. Vermeiren, "Constructing Orthogonal Rational Function Vectors with an application in Rational Approximation", arXiv:2601.11317v2 [math.NA], 20 Jan 2026 (v1 16 Jan 2026)
 
+Registration (2026-11-05 PR21 final registration): LIT-510. Original provisional aliases remain below; [exact map](../../topics/padua-literature-20261103/preparation/final-id-map.json). Source statements, versions, reader attribution and reading limits are unchanged. Developer-only source checks remain qualified by audit02/03; no independent auditor page-image verification is inferred.
+
 - DOI / URL: https://arxiv.org/abs/2601.11317 . No journal version found.
 - Access and reading date: 2026-11-03, arXiv v2 PDF (20 pp.) via pdf.js.
 - Reading coverage: abstract and introduction (pp. 1–2), "Conclusion and future work" (p. 18), start of the references (p. 19), section-heading list; keyword searches over all pages. Body not read, as instructed.
@@ -8,7 +10,7 @@
 
 ## Extracted published statements
 
-### LIT?padua-literature-claude-84 — vector ORF IEP with k-Hessenberg pencils; stated future work
+### LIT-510 (LIT?padua-literature-claude-84) — vector ORF IEP with k-Hessenberg pencils; stated future work
 
 - Statement in faithful paraphrase: Orthonormal bases of vectors of k rational functions, for a discrete inner product, are characterized by an IEP whose recurrence is a pencil (H, K) of **k-Hessenberg** matrices (up to k nonzero subdiagonals). This generalizes the Van Buggenhout–Van Barel–Vandebril 2022 pencil IEP and the Bultheel–Van Barel vector-polynomial IEP. Two solvers are given: an updating algorithm using rotations and a rational-Arnoldi-type Krylov algorithm. The application is lightning-plus-polynomial approximation of √z on [0, 1], where the optimal rate is recovered (pp. 1–2). The conclusion reports that updating is more accurate than the Krylov-type method. As future work it proposes designing a **downdating** procedure, possibly by manipulating a factorization of K_k, with possible gains in stability and efficiency (p. 18). The introduction mentions the MOP IEP of the SINUM paper as a related extension (p. 1).
 - Page / theorem / equation: abstract and §1 pp. 1–2; conclusion p. 18.

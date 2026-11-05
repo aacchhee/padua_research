@@ -1,5 +1,7 @@
 # demarchi-kroo-2018 — S. De Marchi, A. Kroó, Marcinkiewicz–Zygmund type results in multivariate domains, Acta Math. Hungar. 154(1) (2018) 69–89
 
+Registration (2026-11-05 PR21 final registration): LIT-490. Original provisional aliases remain below; [exact map](../../topics/padua-literature-20261103/preparation/final-id-map.json). Source statements, versions, reader attribution and reading limits are unchanged. Developer-only source checks remain qualified by audit02/03; no independent auditor page-image verification is inferred.
+
 - DOI / URL / supplied location: <https://doi.org/10.1007/s10474-017-0769-4> (DOI as printed on the journal PDF read; not Crossref-checked); journal page <https://link.springer.com/article/10.1007/s10474-017-0769-4>. First published online 20 Oct 2017. No free version searched.
 - Access and reading date: 2026-11-03. Publisher PDF (21 pp.) via link.springer.com in AC's built-in browser (institutional access active there), text layer via pdf.js. Not stored.
 - Reading coverage: journal pp. 69–75 read (abstract, §1 introduction and setting, statement of the univariate Mastroianni–Totik-type relation (3), Theorem 1 and Lemma 1 with proof, start of the proof of Theorem 1); keyword screen of the remaining pages for square, cube, Chebyshev, Padua, Xu, Lissajous, Theorem, mesh, polytope; read in context: Theorem 2 (p. 77), Propositions 1–4 and Examples (pp. 80–86), final Remark (pp. 88–89). Proof details beyond p. 75 not read.
@@ -8,7 +10,7 @@
 
 ## Extracted published statements
 
-### LIT?padua-literature-claude-23 — oversampled MZ meshes with unspecified oversampling and constants; explicit univariate Lemma 1
+### LIT-490 (LIT?padua-literature-claude-23) — oversampled MZ meshes with unspecified oversampling and constants; explicit univariate Lemma 1
 
 - Statement in faithful paraphrase:
   - Setting (pp. 69–70): an MZ mesh for a compact K ⊂ R^d is a point set of cardinality ≍ n^d with positive weights giving two-sided equivalence of ‖g‖^p_{L^p(w)} and the weighted nodal ℓ^p sum on P^d_n, with constants depending on p, K, w only.

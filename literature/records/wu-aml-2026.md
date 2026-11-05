@@ -1,5 +1,7 @@
 # wu-aml-2026 — H.-N. Wu, Marcinkiewicz–Zygmund stability of quadrature-based Galerkin schemes, Appl. Math. Lett. 182 (2026) 110033
 
+Registration (2026-11-05 PR21 final registration): LIT-489. Original provisional aliases remain below; [exact map](../../topics/padua-literature-20261103/preparation/final-id-map.json). Source statements, versions, reader attribution and reading limits are unchanged. Developer-only source checks remain qualified by audit02/03; no independent auditor page-image verification is inferred.
+
 - DOI / URL / supplied location: <https://doi.org/10.1016/j.aml.2026.110033> (Crossref-checked in p2-links); journal page <https://www.sciencedirect.com/science/article/pii/S0893965926001643>. Publisher PDF supplied by AC (`Downloads\padua\papers\1-s2.0-S0893965926001643-main.pdf`, staged to the session at /mnt/user-data/uploads/padua/papers/), read with `pdftotext -layout`. Not stored in Git.
 - Access and reading date: 2026-11-03.
 - Reading coverage: complete full text, 6 pp. (journal pages are article pp. 1–6), including the reference list. Received 23 Apr 2026, revised 8 Jun 2026, accepted 8 Jun 2026, online 13 Jun 2026.
@@ -8,7 +10,7 @@
 
 ## Extracted published statements
 
-### LIT?padua-literature-claude-21 — abstract MZ-to-Galerkin stability transfer; no node-specific constants
+### LIT-489 (LIT?padua-literature-claude-21) — abstract MZ-to-Galerkin stability transfer; no node-specific constants
 
 - Statement in faithful paraphrase:
   - Definition 2.1 / eq. (1.3) (pp. 1–2): a positive-weight rule satisfies the MZ condition on a finite-dimensional space P_n if (1−η)‖p‖² ≤ ⟨p,p⟩_m ≤ (1+η)‖p‖² for some η in (0,1), in L²(dx).

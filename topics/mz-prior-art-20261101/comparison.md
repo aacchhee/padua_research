@@ -71,3 +71,7 @@ Separate assertions:
 - **Fixed ratio:** Mastroianni–Totik gives nothing beyond exactness in its documented form (T4). No explicit beyond-half-exactness constants were found.
 - **Upper side:** Lubinsky–Máté–Nevai gives classical boundedness λ_+≤C_l. No threshold below 2 was found.
 - **Still unread:** Mastroianni–Russo 2000 (Hadronic Press), Della Vecchia–Mastroianni–Vértesi 1995, Wu AML 2026, Feldheim C. R. 203 p. 650. Mastroianni–Russo 2000 is the most likely remaining place for a quantitative borderline statement.
+
+## 2026-11-03 source-reading update — padua-literature-20261103
+
+Forward citations: Wu, Appl. Math. Lett. 182 (2026) 110033 read in full 2026-11-03: abstract MZ ⇒ Galerkin stability, no CC constants; verdict unchanged. König–Nielsen: parameter restriction confirmed from arXiv pp. 3,15; journal body inaccessible (unlicensed). Don–Gottlieb: journal version compared, identical on items used. These dated notes do not change the original comparison verdicts or proof statuses.

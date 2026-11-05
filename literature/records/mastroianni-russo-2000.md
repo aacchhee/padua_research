@@ -1,5 +1,7 @@
 # mastroianni-russo-2000 — G. Mastroianni, M. G. Russo, Weighted Marcinkiewicz inequalities and boundedness of the Lagrange operator
 
+Registration (2026-11-05 PR21 final registration): LIT-511. Original provisional aliases remain below; [exact map](../../topics/padua-literature-20261103/preparation/final-id-map.json). Source statements, versions, reader attribution and reading limits are unchanged. Developer-only source checks remain qualified by audit02/03; no independent auditor page-image verification is inferred.
+
 - Citation: in Th. M. Rassias (ed.), *Mathematical Analysis and Applications*, Hadronic Press, Palm Harbor FL, 2000, pp. 149–182. No DOI. [zbMATH 0997.42001](https://zbmath.org/1594022).
 - DOI / URL / supplied location: print-only volume. AC supplied a 34-page typeset copy, `Downloads\padua\papers\MastroianniRussoVolRassias.pdf`, staged to the session on 2026-11-05. The copy carries no printed page numbers. Its 34 pages match the 34-page range 149–182, so the page locators below are given as "copy p. k (book p. 148+k, inferred)".
 - Access and reading date: 2026-11-05.
@@ -13,7 +15,7 @@
 
 ## Extracted published statements
 
-### LIT?padua-literature-claude-85 — weighted algebraic Marcinkiewicz inequalities with uniform constants under doubling / A_p hypotheses; no quantitative borderline MZ-constant estimate
+### LIT-511 (LIT?padua-literature-claude-85) — weighted algebraic Marcinkiewicz inequalities with uniform constants under doubling / A_p hypotheses; no quantitative borderline MZ-constant estimate
 
 - Statements in faithful paraphrase:
   - **Theorem 8** (copy p. 17, book p. 165 inferred). Forward inequality. For u^p doubling, 1 ≤ p < ∞, and nodes −1 = y₁ < … < y_m = 1 with angular gaps ∼ 1/m (endpoints included), the sum Σ λ_m(u^p, y_i)|P(y_i)|^p is at most C ∫|Pu|^p for every P of degree ≤ lm (l fixed). C depends on the doubling constant. The paper credits the type to Askey, Nevai and Lubinsky–Máté–Nevai.

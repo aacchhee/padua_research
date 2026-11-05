@@ -24,8 +24,12 @@ has exactness `2n+1`, interior weights `2/(n+1)^2` and boundary weights
 `1/(n+1)^2`, and yields degree-`n` hyperinterpolation. Theorem 1 bounds its
 uniform-norm Lebesgue constant by `O(log^2 n)`. This paper is not a Padua
 signed-Lebesgue hyperinterpolation theorem. The six-page article-in-press
-copy agrees with the earlier preprint on these hypotheses; final pagination
-was verified through journal metadata, not a separate final PDF comparison.
+copy agrees with the earlier preprint on these hypotheses. 2026-11-05: the
+AC-supplied journal PDF (JCAM 210 (2007) 78–83) was read in full; equation
+and theorem numbering coincide, and the journal pages are in
+topics/padua-literature-20261103/addenda/journal-versions-2026-11-05.addendum.md
+(A13). Theorem 1's explicit bound is eq. (13), p. 80; its proof gives only
+the first step and defers to Bos–De Marchi–Vianello, JAT 141 (2006).
 
 - Statement in faithful paraphrase: the source statements above retain their attributed scope.
 - Hypotheses and notation: positive Chebyshev/Xu or signed Lebesgue conventions exactly as distinguished above.

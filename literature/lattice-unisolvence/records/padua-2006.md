@@ -2,7 +2,7 @@
 
 - DOI / URL: https://www.math.unipd.it/~marcov/pdf/PaduaCurve3.pdf
 - Access and reading date: 2026-10-31.
-- Reading coverage: Author preprint abstract and theorem excerpts: Lemma1 pp.5–6, Theorem1 p.6, Theorem2 p.8, Theorem3 p.10. Not complete.
+- Reading coverage: Author preprint abstract and theorem excerpts: Lemma1 pp.5–6, Theorem1 p.6, Theorem2 p.8, Theorem3 p.10. Not complete. 2026-11-05 (padua-literature-20261103): AC-supplied journal PDF JAT 143 (2006) 15–25 read in full; journal pages: Lemma 1 and Theorem 1 p. 19, Theorem 2 pp. 20–21, Theorem 3 statement p. 22 with proof pp. 23–24 (addenda/journal-versions-2026-11-05.addendum.md, A14). Theorem 3 is an order bound only, with no 4/π².
 - Reader, model and effort: Codex literature developer; assigned gpt-6.1-sol high; actual runtime metadata unexposed.
 - Rules SHA: e949ef06895acd5463cdf8df7e0e5f795218f70f.
 - Named gaps: No arbitrary-axis theorem is taken from this paper. The sharper leading constant 4/π² is UNVERIFIED here; the inspected statement is an order bound. Preprint page numbers differ from journal pagination.

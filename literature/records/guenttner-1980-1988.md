@@ -1,5 +1,7 @@
 # guenttner-1980-1988 — R. Günttner, Evaluation of Lebesgue constants, SIAM J. Numer. Anal. 17(4) (1980) 512–520; R. Günttner, On asymptotics for the uniform norms of the Lagrange interpolation polynomials corresponding to extended Chebyshev nodes, SIAM J. Numer. Anal. 25(2) (1988) 461–469
 
+Registration (2026-11-05 PR21 final registration): LIT-487. Original provisional aliases remain below; [exact map](../../topics/padua-literature-20261103/preparation/final-id-map.json). Source statements, versions, reader attribution and reading limits are unchanged. Developer-only source checks remain qualified by audit02/03; no independent auditor page-image verification is inferred.
+
 - DOI / URL / supplied location: [10.1137/0717043](https://doi.org/10.1137/0717043) and [10.1137/0725030](https://doi.org/10.1137/0725030), both Crossref checked on 2026-11-03. Crossref spells the 1988 author "Güntner". AC-supplied PDFs `0717043.pdf` and `0725030.pdf`.
 - Access and reading date: 2026-11-03; pdftotext in the cloud workspace; no copy committed.
 - Reading coverage: abstracts, §§1–2 theorem statements and keyword-located passages. NOT a complete read.
@@ -8,7 +10,7 @@
 
 ## Extracted published statements
 
-### LIT?padua-literature-claude-08 — asymptotic expansions of 1-D Lebesgue constants and deviation between local maxima
+### LIT-487 (LIT?padua-literature-claude-08) — asymptotic expansions of 1-D Lebesgue constants and deviation between local maxima
 
 - Statement in faithful paraphrase:
   - 1980, abstract and §2, about Lebesgue constants of the form (2/π) log n + c + r_n:

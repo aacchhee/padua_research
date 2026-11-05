@@ -19,3 +19,7 @@ Procedure: agents/WORKFLOW.md, "Reserve fresh ranges; never reallocate". Reserve
 - Maximum in the LIT namespace: 481. This range therefore starts at 482.
 
 Priority is the pushed commit that adds this file, as linked from the draft PR.
+
+## Final assignment — 2026-11-05
+
+Fresh union at main9322fba and open PR21/24: [receipt](preparation/allocation-scan.json). Assigned31 new statement IDs LIT-482–512;27 provisional aliases reuse existing statement IDs. [Exact58-alias map](preparation/final-id-map.json), [deduplication](preparation/literature-dedup.md). Permanent unused gaps LIT-513–561. No new reservation, no renumbering and no PD-T/PD-N/IDEA assignment. Original first-publication priority is unchanged. Earlier “no final IDs” prose is historical and superseded only by this preparation entry.

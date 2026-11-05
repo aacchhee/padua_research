@@ -57,3 +57,9 @@ PR-preparation consolidation 2026-11-01 (audit-01 protocol finding P2): the addi
 2026-11-01: orchestrator annotation — the L2 developer (response-recon-01, finding F9) reports that the sentence quoted for LIT?bivariate-lanczos-claude-025 was not found in arXiv v2 of this paper; treat that statement's wording as UNVERIFIED until checked against the published version. The identification of BJ + CGS2-against-all with this paper's multivariate V+A is also UNVERIFIED (paper digest only; code not checked).
 
 2026-11-01 (PR-preparation consolidation, audit-01 protocol finding P2): coverage upgraded from abstract-only to fulltext via WebFetch digests of arXiv 2301.12241 (L1, L2 prior-art reviews); statements 440, 441 added; Appendix B (Algorithms 4–5) named as an unseen gap; conflict with the 2026-11-01 orchestrator annotation on statement 025 recorded, not resolved.
+
+## Addendum — padua-literature-20261103 (P3, 2026-11-03)
+
+Campaign primary-reading addendum: [statement-level coverage, locators and limits](../../topics/padua-literature-20261103/addenda/zhu-nakatsukasa-2026.addendum.md). Reader/model and source version are recorded there. This is literature attribution, not a local proof or an independent auditor source-page check. Audit-02 and audit-03 retain the explicit developer-only verification qualifications where applicable.
+
+2026-11-03 (P3): the sentence IS in arXiv v2, Remark 5.1 item 5, p. 20 (pdf.js text read); finding F9's "not found" is withdrawn for v2. The old annotation stays as history.

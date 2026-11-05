@@ -1,5 +1,7 @@
 # bcdmv-computing-2006 — L. Bos, M. Caliari, S. De Marchi, M. Vianello, A numerical study of the Xu polynomial interpolation formula in two variables, Computing 76 (2006) 311–324
 
+Registration (2026-11-05 PR21 final registration): LIT-486. Original provisional aliases remain below; [exact map](../../topics/padua-literature-20261103/preparation/final-id-map.json). Source statements, versions, reader attribution and reading limits are unchanged. Developer-only source checks remain qualified by audit02/03; no independent auditor page-image verification is inferred.
+
 - DOI / URL / supplied location: [10.1007/s00607-005-0137-z](https://doi.org/10.1007/s00607-005-0137-z) (Crossref checked 2026-11-03). Author PDF with journal pagination: https://profs.scienze.univr.it/caliari/pdf/BCDMV06C.pdf
 - Access and reading date: 2026-11-03, author PDF, text extracted with pdf.js; no copy kept.
 - Reading coverage: keyword-located passages on pp. 318, 319, 321 and 324. The author PDF prints the journal page numbers. This is not a complete read.
@@ -8,7 +10,7 @@
 
 ## Extracted published statements
 
-### LIT?padua-literature-claude-06 — vertex location of the Lebesgue maximum for XU points (observation and conjecture)
+### LIT-486 (LIT?padua-literature-claude-06) — vertex location of the Lebesgue maximum for XU points (observation and conjecture)
 
 - Statement in faithful paraphrase:
   - p. 318: for Xu interpolation points the crude bound (16) overestimates the constant. The Lebesgue function is symmetric and appears to attain its maximum at the four vertices (Fig. 1, n = 6), and wide numerical experiments confirm this.
