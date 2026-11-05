@@ -1,7 +1,7 @@
 # Proportionate audit and records — workflow change: log
 
 - Branch: `claude/elegant-lamport-wkozfa` · Base: main `b4d292eea5eed373002506d5e16a3761bd7ae10e` · Developer: Claude (Opus 5.5 high) · Auditor: Codex · Stage: AUDIT · Open handoff: [handoffs/02-audit.md](handoffs/02-audit.md)
-- Scope: `agents/WORKFLOW.md`, `agents/claude/CLAUDE_ROLES.md`, `agents/codex/CODEX.md`. No scientific record, registry or ID is touched; no range is reserved.
+- Scope: `agents/WORKFLOW.md`, both role files, `templates/HANDOFF.md`, `templates/IDEA.md`, and this topic’s records. No scientific record, registry or ID is touched; no range.
 
 ## 2026-11-05 — Claude, Opus 5.5 high (claude-opus-5-5) — rules change at AC's request
 
