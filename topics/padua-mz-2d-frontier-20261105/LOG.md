@@ -15,3 +15,9 @@
 ## Runs needed
 
 - G0–G5 and F1–F4 as in handoff 01.
+
+## 2026-11-05 — Codex continuation
+
+- Rules read at topic input 83cf6f1ee244f2e72057332a7ec04ee74db1f0de; rule files byte-identical to main/base 440d1079e42c3ef21c40d1cf8870f5b206410c6a. Both heads fetched before development. Role: orchestrator/developer; user requests gpt-6.1-sol xhigh.
+- Read handoff01 and wrote plan.md before computational runs. Handoff explicitly authorizes parallel subagents and model allocation. Git network requires the execution tool's additional network permission; ordinary sandbox calls cannot reach the proxy. Connector reads succeeded; no network bypass used.
+- Fresh reservation scan read 46 ledger/registry files at main, PRs19–22 and parallel Lanczos head; no closed-unmerged PR. Reserve T294–323/N104–115/IDEA384–413/LIT574–581 before early draft creation; no final assignments, shared registries untouched. Local ledger and receipt preserve exact heads/hashes.
