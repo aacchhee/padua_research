@@ -63,7 +63,7 @@ The proof is analytic and does not depend on finite computations. Developer actu
 
 ## Sources
 
-Page-locator qualification (audit-01 F6): printed page numbers below are per developer reading; the auditor confirmed theorem/equation content through page-less text, without confirming PDF pagination. LIT-379 identifies KL2021 and LIT-312 identifies Bos2006.
+Page-locator qualification (audit-01 F6): printed page numbers below are per developer reading; the auditor confirmed theorem/equation content through page-less text, without confirming PDF pagination. LIT-379 identifies KL2021 and LIT-312 identifies Bos2006. Update 2026-11-03 (padua-literature-20261103): the KL2021 arXiv v1 locators (Thm 2.1 p. 4; Lemma 3.5 (3.20) pp. 10–11; Lemma 3.6 (3.29) pp. 11–12) were confirmed against the printed running heads. The published AMC version has the same numbering (PDF pp. 4, 8, 9); (3.29) is imported by KL from Kuznetsova 1995 (literature/records/kuznetsova-1995.md). The Bos2006 locators remain per developer reading.
 
 LITERATURE background: Kolomoitsev–Lomako2021, arXiv:2009.07114v1, Theorem2.1 printed p.4; Lemma3.5, especially(3.20), printed pp.10–11; parity-subgrid Lemma3.6(3.29), printed pp.11–12. Full16-page paper read before method use; no source theorem supplies(1). Bos–Caliari–De Marchi–Vianello–Xu2006, author preprint `PaduaCurve3.pdf`, Theorem3 printed pp.10–12, gives the background global O(log² n) order. Primary links and reading record: `../attempts/T-A2.md`.
 

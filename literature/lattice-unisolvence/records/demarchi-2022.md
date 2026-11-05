@@ -19,6 +19,11 @@ Hypotheses and exact locators are stated above. This reports published content, 
 
 See [search log](../search-log.md). Related frozen baseline entries and existing LIT records are not silently promoted. No third-party fulltext or extracts are retained in Git.
 
+## Addendum 2026-11-03 (padua-literature-20261103, Claude claude-opus-5-5 high)
+
+Additional primary reading of the journal PDF covered §3.3, pp. 22–23. Item (2) of "Some open problems" (p. 23) states, as an observation with reference to Fig. 7, that the Padua Lebesgue function has its maxima in the corners where there are no Padua points. Provisional statement ID: covered by the LIT-377/LIT-326 addendum in INDEX. This is a published observation, not a proof. Topic comparison: [P1](../../../topics/padua-literature-20261103/p1-comparison.md).
+
 ## History
 
 2026-10-31: bounded campaign inspection recorded.
+2026-11-03: §3.3(2) addendum (padua-literature-20261103).
