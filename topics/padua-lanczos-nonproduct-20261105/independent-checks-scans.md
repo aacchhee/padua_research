@@ -363,3 +363,50 @@ references, negative controls and actual guard counts. Both receipts are
 under16KiB. Raw data stay in the task-local scan-review reflection
 directories; no external archive delivery is asserted. No developer code,
 proof, shared registry or Git state was edited by this checker.
+
+## Continuation after UI reconnection: compact H24 evidence
+
+Rules and role were reread at supplied head
+`697863b9085f8e326e7b0c0c502e93127c318749`. The resumed supplementary reviewer
+retains the assigned Codex Astra high role; serving metadata is not
+independently exposed. This continuation inspects existing finite evidence
+and introduces no novelty claim; the full IDEAS read remains outside scope.
+The cloud-environment runtime skill and current readiness were also read.
+No Git, developer source, proof, shared log, registry or handoff was changed.
+
+**PASS H24 compact table.** The new
+[compact reviewer](code/check_scans_compact.py) imports only the previous
+supplementary reviewer's independent rational logarithm and corner routines.
+It checks all120 endpoint half-logarithms against the actual accepted raw
+rational rows, using192-bit mantissa bounds and96-term atanh series. Every
+logarithm interval is enclosed by the table's outward integer bounds at
+scale10^15. All60 producer/checker rows match in every nonelapsed field,
+including Gram counts; all eight raw-output/source/digest provenance entries
+are verified. The two compact N2 window extrema agree with a separate
+32-corner enumeration and enclose both higher-precision primary slope paths.
+The unchanged verdict is **INCONCLUSIVE**.
+
+Actually executed in this continuation:
+
+```sh
+python -B topics/padua-lanczos-nonproduct-20261105/code/check_scans_compact.py --family H24_222
+```
+
+The final [receipt](evidence/check-scans-compact-H24_222.json) records27.40s,
+source/data hashes and precise coverage. Its compact table SHA-256 is
+`634f55266aa61a13ce095526c6b1c842de41e66b557a8b14e46c814bdb49ea57`.
+An initial reviewer-only linkage assertion compared a relative path with
+an absolute path after all120 logarithm checks passed. The reviewer fixed
+that assertion to compare resolved paths after byte/hash checks and reran
+successfully; no developer or mathematical mismatch was found. These
+compact intervals permit repository-only N2 replay; rechecking their
+original endpoint generation still needs the pinned raw rows or regeneration.
+
+The earlier distinct reviewer had launched the supplementary D36 degree16
+ALT/PIVOT runs before reconnection. On continuation, harness PID9491 and
+native PIDs9506/9507 were still running with their original source/input
+bytes and3600s per-case caps, maximum two native processes. Process metadata
+recorded harness start2026-11-05 23:17:43UTC and native starts23:17:49UTC.
+Those processes were neither relaunched nor overwritten by this reviewer.
+Their completion and subsequent comparisons are recorded separately below
+when available; this paragraph itself claims no completed high-degree row.

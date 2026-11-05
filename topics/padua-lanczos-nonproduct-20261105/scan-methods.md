@@ -174,3 +174,22 @@ cross-maximum-degree reference slices must separately check Gram coverage
 and disclose the count difference. No degree16 adoption before successful
 pilots, actual cost report and focused distinct scan/code review. This is a
 new dated resource-method variant; N2's data/model/thresholds are unchanged.
+
+## Compact replay evidence after complete scan acceptance
+
+For each fully accepted H24_222/D36x9 degree2–16 scan, the compact endpoint
+table stores all60 rule/degree rows. For each lower/upper endpoint it
+computes natural-log enclosures with the two accepted exact rational
+routines, divides by2 because native endpoints are squared, then rounds
+outward using floor/ceiling at the fixed scale10^15. Source receipts,
+input hashes, all eight case output/source identities and scientific-row
+digests remain pinned. This is a serialization of completed evidence,
+not a new experiment, tighter endpoint bound or changed N2 convention.
+
+`code/p6_compact_n2_check.py` needs only that table and Python's standard
+library. It reconstructs the BJ/best logratio boxes and checks signed OLS
+extrema against all32 integer corners per window. Its outward rounded
+slopes must contain the original128-bit rational-log slopes and agree
+on the strict>.1/<.02 gate verdict. Raw exact endpoint/log generation
+still requires the linked temporary outputs or regenerating them; the
+standalone replay verifies only the committed interval-to-N2 arithmetic.
