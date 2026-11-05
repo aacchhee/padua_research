@@ -16,3 +16,7 @@ Rules and input head: `8359bf7a047d9a212bd841224fb97a458cb7435e`; base/main: `44
 ## Storage
 
 Large regenerable outputs stay in `/tmp/padua-lanczos-frontier-*` or a Padua-specific workspace directory. Windows cold-storage delivery is pending; no external machine is authorized. Commit short receipts and regeneration code only.
+
+## Handoff03 execution round — 2026-11-05
+
+Current main21dbfc90257b952d8923f6d01739d12aa8d6e0a1 merged as0e493be; rule/frozen Lanczos source bytes unchanged. G0 resolved and finite L4 result preserved. Three disjoint tasks progress: exact G1 implementation/overlap/cost, SH_n hypothesis/gauge/normal-channel check, and finite L2 rule-invariance/closure observable reduction. Exact G1 producer and independently implemented native port run separate processes. First bound the cost with completed low-degree/overlap cases, then scale; no complete scan or fit is claimed before execution. No all-degree L2 work before G2. Full ownership/provenance is in LOG.
