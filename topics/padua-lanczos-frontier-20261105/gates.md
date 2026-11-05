@@ -43,3 +43,7 @@ Both prescribed rows executed; all12 saved numerical gap screens failed, so L7 s
 ## Handoff04 G3 n3 finite boundary
 
 Exact n3 producer and distinct algebraic checker establish `1/512 <= delta_obs(3) <= 1/2`: full degree7 jet rank30/kernel6, whole-ball Taylor lower and12point positive full-kernel upper. Nine malformed controls reject. This executes only n3; original n3–8 trend gate remains INCOMPLETE, and no all-degree attempt is authorized from one bracket.
+
+## Handoff05 execution boundary
+
+G1 has144/152 independently matched rows, with full T24 and rotatedBJ/mirror/alternating2–20 accepted. Pivot producer remains within its allocated1800s cap; no actual fit before all152. G3 has a separate exact n4 lower1/2048 and n5 lower1/16384, with full kernels and independent execution; n4 upper exhausted/capped inconclusive, n5 upper reaches all three210s caps with20/63 proposals completed inconclusive and43 uncompleted. These lower endpoints do not decide the n3–8 optimal-radius trend. G4 remains resolved; the frozen natural suite actually completes all8cases,16accepted/8rejected references and distinct checks, retaining measured/end-to-end interpretation. The exact raw n1 branch is now a completed INCONSISTENT outcome, with general corrected G open.

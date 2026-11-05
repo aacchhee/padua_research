@@ -603,3 +603,42 @@ stops upper work. Partial/capped proposals remain incomplete, with no retry,
 extra radius/grid or n6+ execution. An actual distinct exact checker is still
 required for every accepted endpoint; this review itself executed no n5
 scientific calculation. U2 and the full n3--8 G3 decision remain OPEN.
+
+## G3 n5 lower-only statement integration review
+
+After the distinct checker actually completed its n5 lower/full-kernel check,
+root requested a short integration review without another scientific run.
+I read the complete `theory/l5-04-n5-lower.md`, SHA256
+`300df212321e0581ba43ebbef27fd46c7a15f6a5bdb639c2f57da2bd751b9d05`,
+the entire independent checker source/report and both execution/control receipts.
+I verified the stated certificate/source byte hashes against their saved files.
+
+Integration PASS. The actual distinct main execution is attributed to its
+owner, not this reviewer:35.255533s,52808KiB, Python3.12.14/SymPy1.14.0,
+complete63x78 jet rank63, full kernel dimension/rank15 and exact annihilation.
+Its independently constructed33-term degree11 P5 agrees with the producer
+certificate, all63 jets vanish, all21 Hessians are positive definite and all
+complete Taylor remainder inequalities hold at1/16384. The entire saved21-radius
+list identifies1/16384 as the largest passing saved Taylor endpoint. Five actual
+malformed controls reject changed coefficients, oversized/nonpositive radii,
+bad field encoding and a proper kernel subspace; the original passes again.
+
+The producer lower certificate is7912bytes, SHA256
+`35e804b2a25e693e616e909ca61897b0958f0d990fd590ded1bc649a5ca66311`;
+distinct checker source SHA256
+`40ec8b62636665aa8ff83102c3fdb0fe2c841d85ee50a16287106d7bf448acea`;
+saved main receipt SHA256
+`b6ed8d5dbe35b21321b501af373c1c8d8401181faf0e773c501ba5d26d05c860`;
+saved malformed-controls receipt SHA256
+`144514c6ad29adac12af23a0af76e776b56fdc4c25b9f815be641f4c78cb49e0`.
+
+The written proof correctly applies the accepted L5a Taylor implication to
+the full closed Euclidean balls in R²: the quadratic term is at least
+mu_i*||h||²/2 and the complete higher-order absolute sum is at most that value.
+Thus the exact finite statement delta_obs(5)>=1/16384 is supported. Its
+PROVED computer-assisted status does not claim the polynomial's maximal
+positivity radius, an optimal upper bound, a bracket, n6--8 values, a trend
+or an asymptotic U2 conclusion. The separate upper pilot was still running
+when this integration review was requested; no upper certificate or completed
+upper outcome is inferred here. Required later Claude audit remains pending.
+I performed no additional scientific execution for this review.

@@ -82,3 +82,5 @@ New (proposed):
 - Add L5c PROVED finite lower delta_obs(4)>=1/2048, theory/l5-03-n4-lower.md; upper search inconclusive, no bracket/U2 upgrade.
 - Add provisional L7 MEASURED reference-conditioned natural fitting record, theory/l7-natural-suite-measurements.md,16/24 acceptedreferences,20/1280 resolved-loss cells, six paired-seed advantages, severe replay retained and no causal/universal claim.
 - Add L6-01 PROVED complete-square residual theorem and separate PD-N L6-01 PROVED scoped unbounded e/u obstruction; preserve original G OPEN. Add L6-03 MEASURED frozen actual n1 execution and PD-N L6-02 PROVED exact unchanged14slot nonrealizability, with byte witness and distinct executed trace. No corrected/toleranced/G target rejection. All final-ID/shared registry changes wait audited preparation.
+
+- Add L5d PROVED finite lower delta_obs(5)>=1/16384, theory/l5-04-n5-lower.md, independently reconstructed in the full real embedding. All three upper grids cap without a certificate; no n5 bracket, n6–8 trend or U2 upgrade.
