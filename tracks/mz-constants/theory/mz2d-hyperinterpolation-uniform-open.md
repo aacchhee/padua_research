@@ -1,5 +1,13 @@
 # PD-T114 — uniform signed Padua hyperinterpolation norm target
 
+## Current resolution — 2026-11-05
+
+Overall status: **PROVED**, resolved at the unchanged endpoint target by [PD-T297 weighted-L1 density-tail theorem](../../../topics/padua-mz-2d-frontier-20261105/theory/f4-uniform-density-bound.md): every m>=2 and 0<=n<m has `2<=||H_(m,n)||_(C→L2)<=C*=28.3763348311…<30`. The theorem uses PD-T101/111/112/113/013/017/022, including the operator definition and CC positivity. Split into: PD-T297 supplies the complete all-n<m proof; this retained target is its endpoint corollary.
+
+The earlier OPEN/deferred formulation below is historical and superseded here. Its statement and failed sufficient-majorant history are preserved verbatim; absolute-Gram divergence [PD-N052](mz2d-hyperinterpolation-absolute-obstruction.md) remains valid. Uniform C→L2 stability is compatible with unbounded polynomial L2 Gram spectra and does not assert endpoint reproduction or a signed spectral bound. [Claude audit-01](../../../topics/padua-mz-2d-frontier-20261105/audit-01.md) accepted candidate `dee638408505c9977f3febd98fdd42c9bc512c92`; [response-01](../../../topics/padua-mz-2d-frontier-20261105/response-01.md) records the permitted editorial dispositions.
+
+## Preserved original statement and history
+
 Provisional alias: `PD-T?mz2d-codex-32`. Final ID assigned at PR preparation, 2026-11-01; required Claude audit PENDING.
 
 ID kind: PD-T. Aliases: endpoint signed operator stability; absolute-Gram

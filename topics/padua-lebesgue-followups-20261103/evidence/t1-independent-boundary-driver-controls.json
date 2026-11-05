@@ -1,0 +1,64 @@
+{
+  "all_controls_passed": true,
+  "control_sha256": "7c19f6466cd353b2e7ebb435447c9ad0c46e0607bb91a57f24f9cc1a8c75df1e",
+  "count_certified": false,
+  "driver_sha256": "844b27cf5294cf8494d63707f9862db5a7165fea00e29f8bdd6a6145523457f2",
+  "driver_sha256_after": "844b27cf5294cf8494d63707f9862db5a7165fea00e29f8bdd6a6145523457f2",
+  "optimized_refusals": [
+    "-O",
+    "-OO"
+  ],
+  "rows": [
+    {
+      "mode": "success",
+      "passed": true,
+      "scientific_method_executed": false
+    },
+    {
+      "mode": "summary_fault",
+      "passed": true,
+      "scientific_method_executed": false
+    },
+    {
+      "mode": "unresolved",
+      "passed": true,
+      "scientific_method_executed": false
+    },
+    {
+      "mode": "exception",
+      "passed": true,
+      "scientific_method_executed": false
+    },
+    {
+      "mode": "input_fault",
+      "passed": true,
+      "scientific_method_executed": false
+    },
+    {
+      "mode": "source_fault",
+      "passed": true,
+      "scientific_method_executed": false
+    },
+    {
+      "mode": "method_fault",
+      "passed": true,
+      "scientific_method_executed": false
+    },
+    {
+      "mode": "existing_output",
+      "passed": true,
+      "scientific_method_executed": false
+    },
+    {
+      "mode": "raw_hash_fault",
+      "passed": true,
+      "scientific_method_executed": false
+    },
+    {
+      "mode": "field_hash_fault",
+      "passed": true,
+      "scientific_method_executed": false
+    }
+  ],
+  "scope": "mock boundary method publication only"
+}

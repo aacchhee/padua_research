@@ -1,0 +1,243 @@
+{
+ "status": "exact development execution; separate independent checker and rerun required",
+ "rules_input_sha": "83cf6f1ee244f2e72057332a7ec04ee74db1f0de",
+ "command": [
+  "/workspace/padua_research/topics/padua-mz-2d-frontier-20261105/code/cert_native.py",
+  "--m",
+  "10",
+  "20",
+  "30",
+  "40",
+  "60",
+  "--scratch",
+  "/tmp/padua-cert-native",
+  "--output-dir",
+  "/workspace/padua_research/topics/padua-mz-2d-frontier-20261105/evidence"
+ ],
+ "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+ "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+ "numpy": "2.3.5",
+ "scipy": "1.17.0",
+ "python_flint": "0.9.0",
+ "flint": "3.6.0",
+ "environment": {
+  "OPENBLAS_NUM_THREADS": "1",
+  "OMP_NUM_THREADS": "1",
+  "MKL_NUM_THREADS": null
+ },
+ "source_sha256": {
+  "cert_pencil.c": "95993b761794306b41b67f6e7741fd9cd38817c08e5ec218c2f21fb08846d51e",
+  "cert_native.py": "6651de795706c0e2aa2689a58b9dd928835e2dbe9de0740b237b377d68b095ae"
+ },
+ "binary_sha256": "9c6279e143303697ca6a857846bea80f3612db97120069651c90137b91ff4fdf",
+ "frozen_producer_sha256": "5d1f005e2307d3a26badc9c1a44ce313dc9126625a49fba5d59430c151cf9c70",
+ "definitions_sha256": "4ac0e391859a14e4d6f752f1244df0701e99d9b3d8ab8570bd632520f517c7db",
+ "compiler": "cc (Debian 14.2.0-19) 14.2.0",
+ "compile_command": [
+  "cc",
+  "-O3",
+  "-std=c11",
+  "-Wall",
+  "-Wextra",
+  "/workspace/padua_research/topics/padua-mz-2d-frontier-20261105/code/cert_pencil.c",
+  "-lgmp",
+  "-o",
+  "/tmp/padua-cert-native/cert_pencil"
+ ],
+ "compile_warnings": "",
+ "controls": [
+  {
+   "case": "zero",
+   "rejected": "strict diagonal dominance rejected"
+  },
+  {
+   "case": "boundary",
+   "rejected": "strict diagonal dominance rejected"
+  },
+  {
+   "case": "nonsymmetric",
+   "rejected": "nonsymmetric congruence"
+  },
+  {
+   "case": "indefinite_nondominant",
+   "rejected": "strict diagonal dominance rejected"
+  },
+  {
+   "case": "mixed_sign_dominant",
+   "accepted": {
+    "negative": 1,
+    "zero": 0,
+    "positive": 1,
+    "minimum_strict_dominance_margin": "2"
+   }
+  }
+ ],
+ "result": {
+  "m": 20,
+  "n": 19,
+  "dimension": 210,
+  "measured_extrema": [
+   0.2722330049580586,
+   1.7233137316697673
+  ],
+  "checked_offblock_upper_entries": 11000,
+  "integer_transform_rounding_scale": "1000000000000",
+  "checks": [
+   {
+    "extremum": "minimum",
+    "open_interval": [
+     "272233/1000000",
+     "136117/500000"
+    ],
+    "lower": {
+     "endpoint": "272233/1000000",
+     "negative": 0,
+     "zero": 0,
+     "positive": 210,
+     "blocks": [
+      {
+       "negative": 0,
+       "zero": 0,
+       "positive": 110,
+       "minimum_strict_dominance_margin": "11998926467984086010833922982390066427532164",
+       "dimension": 110,
+       "positive_common_denominator": "2429286507410688300375000000",
+       "integer_transform_sha256": "76c0d27204182e1e88672a8b4da6ccf6ba41b733d5f88e0a8d7f8f3024c5911e"
+      },
+      {
+       "negative": 0,
+       "zero": 0,
+       "positive": 100,
+       "minimum_strict_dominance_margin": "4522598145094846606384471638865808766465404448812",
+       "dimension": 100,
+       "positive_common_denominator": "2429286507410688300375000000",
+       "integer_transform_sha256": "c80dc223a22b2096d489ad63c3e85901199d6ccafc8b105795cff9b2dfe9278c"
+      }
+     ],
+     "seconds": 0.015052404000016395
+    },
+    "upper": {
+     "endpoint": "136117/500000",
+     "negative": 1,
+     "zero": 0,
+     "positive": 209,
+     "blocks": [
+      {
+       "negative": 1,
+       "zero": 0,
+       "positive": 109,
+       "minimum_strict_dominance_margin": "1208598172347453483645559001053875260915433172",
+       "dimension": 110,
+       "positive_common_denominator": "1214643253705344150187500000",
+       "integer_transform_sha256": "76c0d27204182e1e88672a8b4da6ccf6ba41b733d5f88e0a8d7f8f3024c5911e"
+      },
+      {
+       "negative": 0,
+       "zero": 0,
+       "positive": 100,
+       "minimum_strict_dominance_margin": "2260084429293746192247195516143270941805208890588",
+       "dimension": 100,
+       "positive_common_denominator": "1214643253705344150187500000",
+       "integer_transform_sha256": "c80dc223a22b2096d489ad63c3e85901199d6ccafc8b105795cff9b2dfe9278c"
+      }
+     ],
+     "seconds": 0.014314778000027673
+    }
+   },
+   {
+    "extremum": "maximum",
+    "open_interval": [
+     "1723313/1000000",
+     "861657/500000"
+    ],
+    "lower": {
+     "endpoint": "1723313/1000000",
+     "negative": 209,
+     "zero": 0,
+     "positive": 1,
+     "blocks": [
+      {
+       "negative": 110,
+       "zero": 0,
+       "positive": 0,
+       "minimum_strict_dominance_margin": "7185959286568518360509853539463400319466990102636",
+       "dimension": 110,
+       "positive_common_denominator": "2429286507410688300375000000",
+       "integer_transform_sha256": "76c0d27204182e1e88672a8b4da6ccf6ba41b733d5f88e0a8d7f8f3024c5911e"
+      },
+      {
+       "negative": 99,
+       "zero": 0,
+       "positive": 1,
+       "minimum_strict_dominance_margin": "1777392956514484956967502499923252299553975848",
+       "dimension": 100,
+       "positive_common_denominator": "2429286507410688300375000000",
+       "integer_transform_sha256": "c80dc223a22b2096d489ad63c3e85901199d6ccafc8b105795cff9b2dfe9278c"
+      }
+     ],
+     "seconds": 0.01739987299998802
+    },
+    "upper": {
+     "endpoint": "861657/500000",
+     "negative": 210,
+     "zero": 0,
+     "positive": 0,
+     "blocks": [
+      {
+       "negative": 110,
+       "zero": 0,
+       "positive": 0,
+       "minimum_strict_dominance_margin": "3594194286537930569930626552019503014760884444204",
+       "dimension": 110,
+       "positive_common_denominator": "1214643253705344150187500000",
+       "integer_transform_sha256": "76c0d27204182e1e88672a8b4da6ccf6ba41b733d5f88e0a8d7f8f3024c5911e"
+      },
+      {
+       "negative": 100,
+       "zero": 0,
+       "positive": 0,
+       "minimum_strict_dominance_margin": "325904237641720800823354141469724609001645728",
+       "dimension": 100,
+       "positive_common_denominator": "1214643253705344150187500000",
+       "integer_transform_sha256": "c80dc223a22b2096d489ad63c3e85901199d6ccafc8b105795cff9b2dfe9278c"
+      }
+     ],
+     "seconds": 0.012411904000032337
+    }
+   }
+  ],
+  "times": {
+   "native_pencil_seconds": 0.12415866899999628,
+   "block0_proposal_seconds": 0.0029426450000187288,
+   "block0_congruence_seconds": 0.02015110900003947,
+   "block1_proposal_seconds": 0.0013749990000064827,
+   "block1_congruence_seconds": 0.014392605000011827
+  },
+  "wall_seconds": 0.2764745049999533,
+  "peak_self_rss_kib": 64060,
+  "native_stderr": "GMP 6.3.0; m=20; dimensions=110,100; checked_offblock=11000",
+  "native_exit_code": 0,
+  "bulk": [
+   {
+    "path": "/tmp/padua-cert-native/m20.exact",
+    "sha256": "044d90a7c5b43f0bc4cb37bcd00067a576e6ec6705a4956613f4a2b8c1296b68",
+    "bytes": 636595
+   },
+   {
+    "path": "/tmp/padua-cert-native/m20.float",
+    "sha256": "86a819214947a044ac6df9348793c4b9d081ab5bde0863258af132a38a0085d4",
+    "bytes": 353600
+   },
+   {
+    "path": "/tmp/padua-cert-native/m20-R0.txt",
+    "sha256": "76c0d27204182e1e88672a8b4da6ccf6ba41b733d5f88e0a8d7f8f3024c5911e",
+    "bytes": 151890
+   },
+   {
+    "path": "/tmp/padua-cert-native/m20-R1.txt",
+    "sha256": "c80dc223a22b2096d489ad63c3e85901199d6ccafc8b105795cff9b2dfe9278c",
+    "bytes": 126780
+   }
+  ]
+ }
+}

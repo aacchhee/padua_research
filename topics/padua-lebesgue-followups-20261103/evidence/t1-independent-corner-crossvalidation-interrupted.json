@@ -1,0 +1,37 @@
+{
+  "all_degrees_completed": false,
+  "command": "PYTHONPATH=/workspace/scratch/lebesgue-t1/deps timeout 600 python -B topics/padua-lebesgue-followups-20261103/code/t1_corner_crossvalidate.py --output topics/padua-lebesgue-followups-20261103/evidence/t1-independent-corner-crossvalidation.json",
+  "completed_rows": [
+    {
+      "cardinals": 15,
+      "exact_value_derivative_equalities": 180,
+      "n": 4,
+      "payload_sha256": "633ef2b5afcb93079231cbe0101935f529d9c42a79d7b60a0a984cc2d8458ffd",
+      "seconds": 3.555052896999996,
+      "source_sha256": "4cba7f4c8acb97127cc6ffa12a53bce88a093acfcb36b9ba1aba3b19dd9b70cb"
+    },
+    {
+      "cardinals": 21,
+      "exact_value_derivative_equalities": 252,
+      "n": 5,
+      "payload_sha256": "381966bd95a507ddf46b7a8e89e943ba5eb5cb30dd86915ff6ee2386cb667c31",
+      "seconds": 5.865740026999902,
+      "source_sha256": "604483eb40362b43dcfbd211ceafbc9bfc417b201866c2b943d283c17592d1ec"
+    },
+    {
+      "cardinals": 28,
+      "exact_value_derivative_equalities": 336,
+      "n": 6,
+      "payload_sha256": "358927e2e42ae74766c7e3173cd2a2d8f0a4e91ee022d16a3064e558377695ad",
+      "seconds": 33.41339890799998,
+      "source_sha256": "e0d16de330aff00060beff7a9d4be94f80079f326a37e675448f22dc6c3e696a"
+    }
+  ],
+  "count_certified": false,
+  "exit_code": 143,
+  "reason": "Independent all-corner certificate comparison already passed n4-7; stopped redundant symbolic n7 work to preserve four-core budget for fresh producer/boundary and two full replays.",
+  "source_sha256": "291ce1a3683cba42f0811c2d378840b5bc3ff6bdd034805d2504cf9d010d6948",
+  "status": "interrupted",
+  "stdout_bytes": 807,
+  "stdout_sha256": "232d3f96381be490a630f3c29a34b7dc98a8072c9f84edf7248767ded3597e78"
+}

@@ -1,0 +1,30 @@
+{
+  "comparison": {
+    "excluded_fields": [
+      "metadata",
+      "summary.seconds"
+    ],
+    "excluded_fields_sha256": "c65fa79eb5ce9e5ceed3c83cb6d3f611c6db75c60f8c5d466a49ac265da6881a",
+    "mathematical_payload_bytes": 18969878,
+    "mathematical_payload_sha256": "e22a9b5592d26756aa63bf143ae19f7c55fd56d1d5ecd5860088c0f2587089a1",
+    "path": "/workspace/scratch/lebesgue-t1/fresh-interior-reflected-v1.json.gz",
+    "raw_bytes": 637165,
+    "raw_sha256": "c5cdcfed9f19f2161b1d55d4f2154bc06a1cd5bd51e28c5c2187ca57c67cc45f"
+  },
+  "count_certified": false,
+  "mathematical_payload_identical": true,
+  "primary": {
+    "excluded_fields": [
+      "metadata",
+      "summary.seconds"
+    ],
+    "excluded_fields_sha256": "aed95ef8a0b0a5eac53cc16633bf3a861e0bc78c4970a7daac88dcfed28164ab",
+    "mathematical_payload_bytes": 18969878,
+    "mathematical_payload_sha256": "e22a9b5592d26756aa63bf143ae19f7c55fd56d1d5ecd5860088c0f2587089a1",
+    "path": "/workspace/scratch/lebesgue-t1-independent/cold/topics/padua-proof-attempts-2-20261101/outputs/a5_n8_interior_candidate.json.gz",
+    "raw_bytes": 637163,
+    "raw_sha256": "a3b4f278a322338fb65f60922b4251265288148e1a09fd22882215004e81c324"
+  },
+  "scope": "exact complete proof-input identity only; full mathematical replay still required",
+  "source_sha256": "49552101a9af61fad4624093d2666307234e718e11a28ed2aaf0d4b4f3ceb8be"
+}

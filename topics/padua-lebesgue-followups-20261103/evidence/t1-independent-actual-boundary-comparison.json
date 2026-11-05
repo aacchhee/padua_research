@@ -1,0 +1,27 @@
+{
+  "all_facts_agree": true,
+  "boundary_sha256": "adfe1107a326d17cfdd083a2ef9b8ab7ce0aeaa6b906f7a825c53a4fa1da6f08",
+  "canonical_verified_facts_sha256": "f4f1e9905d1b4a28e795367bda74ad791068a3091cc0a39a83e6735a95605d91",
+  "corner_active_patterns": 32,
+  "count_certified": false,
+  "driver_sha256": "844b27cf5294cf8494d63707f9862db5a7165fea00e29f8bdd6a6145523457f2",
+  "fact_contract_source_sha256": "0a4f6a3fde72fb07365ab97e5ed79372cfbe69d1c6a81bbc07cf916bd9746e83",
+  "field_certificate_sha256": "a3b4f278a322338fb65f60922b4251265288148e1a09fd22882215004e81c324",
+  "format": "t1-independent-actual-boundary-facts-comparison-v1",
+  "replay_receipts": [
+    {
+      "bytes": 11413,
+      "path": "topics/padua-lebesgue-followups-20261103/evidence/t1-boundary-check.json",
+      "sha256": "d274ab0fe861f80e84c128d1e6bfd51c63e067700ec8f96ccd757904614d97d5"
+    },
+    {
+      "bytes": 11413,
+      "path": "topics/padua-lebesgue-followups-20261103/evidence/t1-independent-boundary-check.json",
+      "sha256": "bfe1d5cba9f0cf57c264902636440e722c00df5a363b4bcb649258e77d99d288"
+    }
+  ],
+  "scope": "actual published complete boundary receipts; exit records separately attributed; no fresh-interior or full joined execution claim",
+  "verified_corner_maxima": 2,
+  "verified_edge_maxima_enclosures": 16,
+  "verified_edge_patterns": 492
+}

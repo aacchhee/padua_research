@@ -1,0 +1,16 @@
+{
+  "all_controls_passed": true,
+  "binary_path": "/workspace/scratch/lebesgue-t1-independent/native-build/_t1_native.cpython-312-x86_64-linux-gnu.so",
+  "binary_sha256": "11d02f426e71862a593e7d7f36c1b610ac96eec5777b42683edae3e2a46f5f00",
+  "control_sha256": "7ad4dd4ef91558299738d1b37dcf1fa20da4a88542f558e4e9907e988b8ac651",
+  "count_certified": false,
+  "large_endpoint_decimal_digits": 501,
+  "late_failure_ownership_iterations": 10000,
+  "malformed_refusals": 19,
+  "objects_observed": 23,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "rational_rounding_comparisons": 3379,
+  "reference_counts_unchanged": true,
+  "scope": "native exact primitive controls only; no count certificate",
+  "successful_ownership_iterations": 10000
+}

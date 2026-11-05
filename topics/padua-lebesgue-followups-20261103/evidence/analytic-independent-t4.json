@@ -1,0 +1,133 @@
+{
+  "ancillary_measured_pslq": {
+    "command": "python topics/padua-lebesgue-followups-20261103/code/t4_relations.py",
+    "exit_code": 0,
+    "matches_developer_json_exactly": true,
+    "rerun_sha256": "52dba38b1cc768af70a6556651ce01d4e0c0cfba3e1c637baa2afd9ab123fbb6",
+    "result": [
+      {
+        "basis": [
+          "kappa",
+          "1",
+          "pi^2",
+          "log(2)",
+          "log(2)^2",
+          "zeta(3)",
+          "Catalan"
+        ],
+        "relation": null
+      },
+      {
+        "basis": [
+          "kappa",
+          "1",
+          "zeta(3)/pi^2",
+          "log(2)^2/pi^2",
+          "Catalan/pi",
+          "log(2)"
+        ],
+        "relation": null
+      }
+    ],
+    "scope": "Only these two finite floating PSLQ searches, digits110, order180, tolerance1e-85, maxcoeff1000000, maxsteps1000. No theorem of absence or independence.",
+    "scratch_path": "/workspace/scratch/lebesgue-analytic-check/t4-relations-rerun.json",
+    "script_sha256": "0861c4b156c5f515e2f8f37a7af036f5a718db8d4bc094cd44882874a8d35303"
+  },
+  "c_certified_bracket": [
+    "1.846160310423926079759838737947",
+    "1.846160310423926079759838737948"
+  ],
+  "checker": "Codex gpt-6-astra high",
+  "code_sha256": "b48d488e2229e7c60293673ffeeec0214fed344858f7ddaebe9975c0dd7347e5",
+  "commands": [
+    "PYTHONPATH=/workspace/scratch/lebesgue-t1/deps python topics/padua-lebesgue-followups-20261103/code/t4_constant.py --order 64 --bits 320 --regressions",
+    "PYTHONPATH=/workspace/scratch/lebesgue-t1/deps python topics/padua-lebesgue-followups-20261103/code/t4_constant.py --order 80 --bits 384",
+    "PYTHONPATH=/workspace/scratch/lebesgue-t1/deps python topics/padua-lebesgue-followups-20261103/code/t4_constant.py --order 64 --bits 320 --regressions"
+  ],
+  "date_utc": "2026-11-03T11:23:37.335488+00:00",
+  "exit_codes": [
+    0,
+    0,
+    0
+  ],
+  "final_theory_change_impact": "t4-03 adds the already verified exact decimal enclosure and trusted-base account; analytic rate unchanged. Full final replay executed separately and agrees with regenerated developer JSON.",
+  "initial_theory_sha256": {
+    "t4-01-corner-defect-limit.md": "47e0a1b2476e125e4fa8582846f34b52d8fe2b559165941d54454f84445a7356",
+    "t4-02-one-dimensional-remainder.md": "7f84cbd0d68dd90750173249d91a0464c05dc35751e7b8ea09dd74cee6214fa7",
+    "t4-03-corner-constant.md": "8d131330032c73f8a3539c94d135d25ce8456d2054845200617c4990ac047576"
+  },
+  "kappa_certified_bracket": [
+    "0.919710118388492535099518225790",
+    "0.919710118388492535099518225791"
+  ],
+  "kind": "supplementary independent execution, not required Claude audit",
+  "measured_regression_n": [
+    2,
+    3,
+    8,
+    9,
+    16,
+    17,
+    32,
+    33,
+    64,
+    65
+  ],
+  "original_rerun_matches_developer_json_exactly": true,
+  "python": "3.12.14",
+  "python_flint": "0.9.0",
+  "reruns": [
+    {
+      "bits": 320,
+      "bracket_checks": true,
+      "bytes": 4736,
+      "c_ball": "[1.8461603104239260797598387379478119440185 +/- 5.88e-41]",
+      "kappa_ball": "[0.9197101183884925350995182257902367461092 +/- 3.39e-41]",
+      "order_inclusive": 64,
+      "scratch_path": "/workspace/scratch/lebesgue-analytic-check/t4-original-rerun.json",
+      "sha256": "bd0a5f617decd390747f9b27ef30902334ff2acf7cb5c0f21146ca2e12ea9c35",
+      "tail_exact": {
+        "denominator": 269503634601383263062992689085960423473152,
+        "numerator": 8
+      }
+    },
+    {
+      "bits": 384,
+      "bracket_checks": true,
+      "bytes": 1428,
+      "c_ball": "[1.8461603104239260797598387379478119440185350673413 +/- 8.96e-51]",
+      "kappa_ball": "[0.91971011838849253509951822579023674610921012698249 +/- 8.16e-51]",
+      "order_inclusive": 80,
+      "scratch_path": "/workspace/scratch/lebesgue-analytic-check/t4-order80-rerun.json",
+      "sha256": "df4ed8b1c5f548756f6062b37f4141b48caba7c76a6c5605b7f10058dd9d6dd4",
+      "tail_exact": {
+        "denominator": 1438117611133608471512425875392822491341437622288384,
+        "numerator": 8
+      }
+    },
+    {
+      "bits": 320,
+      "bracket_checks": true,
+      "bytes": 4736,
+      "final_theory_pin": {
+        "t4-01-corner-defect-limit.md": "47e0a1b2476e125e4fa8582846f34b52d8fe2b559165941d54454f84445a7356",
+        "t4-02-one-dimensional-remainder.md": "7f84cbd0d68dd90750173249d91a0464c05dc35751e7b8ea09dd74cee6214fa7",
+        "t4-03-corner-constant.md": "f0fb0c2e313c316cb62248f433653e183c17f1b470ed70cba54b9f2021ec33d8"
+      },
+      "matches_final_developer_json_exactly": true,
+      "order_inclusive": 64,
+      "scratch_path": "/workspace/scratch/lebesgue-analytic-check/t4-final-rerun.json",
+      "sha256": "eff53b81ab76245d923846a80a10ae8116a29701bbefb8d34e8c8afa1ced78b9"
+    }
+  ],
+  "theory_sha256": {
+    "t4-01-corner-defect-limit.md": "47e0a1b2476e125e4fa8582846f34b52d8fe2b559165941d54454f84445a7356",
+    "t4-02-one-dimensional-remainder.md": "7f84cbd0d68dd90750173249d91a0464c05dc35751e7b8ea09dd74cee6214fa7",
+    "t4-03-corner-constant.md": "f0fb0c2e313c316cb62248f433653e183c17f1b470ed70cba54b9f2021ec33d8"
+  },
+  "trusted_dependencies": [
+    "Python integer arithmetic",
+    "python-flint 0.9.0 / Arb outward elementary and zeta arithmetic",
+    "written analytic finite truncation and rational tail bound, independently reconstructed"
+  ]
+}

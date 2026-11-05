@@ -1,0 +1,37 @@
+{
+  "coefficient_order": 180,
+  "digits": 110,
+  "kappa": "0.91971011838849253509951822579023674610921012698248852761313239029906701714817875520850643341316393615928279786",
+  "limitation": "Finite bases and height only; no independence or universal closed-form exclusion.",
+  "maxcoeff": 1000000,
+  "maxsteps": 1000,
+  "mpmath_version": "1.3.0",
+  "script_sha256": "0861c4b156c5f515e2f8f37a7af036f5a718db8d4bc094cd44882874a8d35303",
+  "searches": [
+    {
+      "basis": [
+        "kappa",
+        "1",
+        "pi^2",
+        "log(2)",
+        "log(2)^2",
+        "zeta(3)",
+        "Catalan"
+      ],
+      "relation": null
+    },
+    {
+      "basis": [
+        "kappa",
+        "1",
+        "zeta(3)/pi^2",
+        "log(2)^2/pi^2",
+        "Catalan/pi",
+        "log(2)"
+      ],
+      "relation": null
+    }
+  ],
+  "status": "MEASURED_ONLY",
+  "tolerance": "1e-85"
+}

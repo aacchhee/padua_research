@@ -125,3 +125,13 @@ These values replace the clipped or inaccurate ones in the tables above. The mac
 - `pr-prep/registry-semantics.json`, **notes** (F4): Reviewed registry semantics for the allocator. Restore with `python tools/cold_storage.py restore bivariate-lanczos-20261031` (restore the whole slug: the allocator also needs pr-prep/id-map.json, whose SHA-256 it compares with this file at topics/bivariate-lanczos-20261031/pr-prep/allocate.py:42-43). Sole working-tree reader: topics/bivariate-lanczos-20261031/pr-prep/allocate.py:41. No Git-history reader found (searched every committed *.py, *.sh, *.js file). AC 2026-11-02 approved moving the retained registry/source files to cold storage as well.
 
 After any export, check the archive with `python tools/cold_storage.py verify-archive <DIR>/bivariate-lanczos-20261031 --manifest topics/bivariate-lanczos-20261031/cold-storage.json`, and run it again immediately before relying on the archive (for delivery acceptance, or before a history purge). The export receipt alone is not proof that the files are still present.
+
+## 2026-11-05 raw-output archival addendum
+
+AC directed generated outputs to cold storage. Additional raw transcripts and
+analysis captures from this topic are now pinned at source40347d1 in separate
+component manifests; all older manifests/identities above are unchanged. See
+[the migration index](../padua-lebesgue-followups-20261103/preparation/cold-storage-migration.md)
+for exact file counts, manifest paths, verified export/restore commands and
+receipt hashes. Small essential proof receipts, summaries and code remain in Git.
+Physical delivery to AC remains pending; staging is not a delivery claim.

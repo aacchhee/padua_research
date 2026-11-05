@@ -52,3 +52,13 @@ These values replace the clipped or inaccurate ones in the tables above. The mac
 - **Topic note** (F3): reproduction.json and astra-reproduction.json are MEASURED outputs of tracks/mz-constants/code/reproduce.py (1.25 s run; numbers deterministic, JSON bytes carry timestamps); the other three are auditor manifests/checks, only protocol-check.py has a committed generator. They are mutually hash-pinned (reproduction-manifest.json, astra-manifest.json, protocol-check.json, audit-targets.json, response-01-targets.json) and read at runtime by protocol-check.py and astra-final-check.py, so those scripts break unless the files are retrieved from history. Small committed counterparts remain: reproduction-manifest.json, astra-replay-comparison.json, astra-*-check.json, claude-audit-01-check.json, theory/reproduced-spectra.md (PD-T026). No proof dependency: all MEASURED/hygiene evidence. Abbreviations used in entries: K/ = tracks/mz-constants/evidence/, M/ = topics/mz-constants/.
 
 After any export, check the archive with `python tools/cold_storage.py verify-archive <DIR>/tracks_mz-constants --manifest tracks/mz-constants/cold-storage.json`, and run it again immediately before relying on the archive (for delivery acceptance, or before a history purge). The export receipt alone is not proof that the files are still present.
+
+## 2026-11-05 raw-output archival addendum
+
+AC directed generated outputs to cold storage. Additional raw transcripts and
+analysis captures from this topic are now pinned at source40347d1 in separate
+component manifests; all older manifests/identities above are unchanged. See
+[the migration index](../../topics/padua-lebesgue-followups-20261103/preparation/cold-storage-migration.md)
+for exact file counts, manifest paths, verified export/restore commands and
+receipt hashes. Small essential proof receipts, summaries and code remain in Git.
+Physical delivery to AC remains pending; staging is not a delivery claim.

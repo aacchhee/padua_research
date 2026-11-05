@@ -64,3 +64,13 @@ These values replace the clipped or inaccurate ones in the tables above. The mac
 - `protocol/final-id-map.json`, **notes** (F4): Registry map written by the one-shot topics/padua-mz-2d-20261101/protocol/final-assign.py:114 (from final-id-map-draft.json). Working-tree reader: topics/padua-mz-2d-20261101/protocol/final-validate.py:4 (run from the repository root: R=Path(".")). The same script also needs final-assignment-checks.json (:4) and reads base 806cc7b4509fd93bae652f9545d32d95529f8281 (:7) through git show (:10), so it is a point-in-time validator. Restore with `python tools/cold_storage.py restore padua-mz-2d-20261101`. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well.
 
 After any export, check the archive with `python tools/cold_storage.py verify-archive <DIR>/padua-mz-2d-20261101 --manifest topics/padua-mz-2d-20261101/cold-storage.json`, and run it again immediately before relying on the archive (for delivery acceptance, or before a history purge). The export receipt alone is not proof that the files are still present.
+
+## 2026-11-05 raw-output archival addendum
+
+AC directed generated outputs to cold storage. Additional raw transcripts and
+analysis captures from this topic are now pinned at source40347d1 in separate
+component manifests; all older manifests/identities above are unchanged. See
+[the migration index](../padua-lebesgue-followups-20261103/preparation/cold-storage-migration.md)
+for exact file counts, manifest paths, verified export/restore commands and
+receipt hashes. Small essential proof receipts, summaries and code remain in Git.
+Physical delivery to AC remains pending; staging is not a delivery claim.

@@ -1,0 +1,58 @@
+{
+  "all_controls_passed": true,
+  "control_sha256": "5fb33dda8ae6a235a31528a3d81005d464cc208eab227d3c03d7fa8aa4577c3c",
+  "controls": [
+    {
+      "case": "success",
+      "error": null,
+      "passed": true,
+      "published": true,
+      "returncode": 0
+    },
+    {
+      "case": "checker_reject",
+      "error": null,
+      "passed": true,
+      "published": true,
+      "returncode": 1
+    },
+    {
+      "case": "checker_exception",
+      "error": "injected checker exception",
+      "passed": true,
+      "published": false,
+      "returncode": null
+    },
+    {
+      "case": "post_guard_failure",
+      "error": "injected source guard",
+      "passed": true,
+      "published": false,
+      "returncode": null
+    },
+    {
+      "case": "input_changed",
+      "error": "input changed during replay",
+      "passed": true,
+      "published": false,
+      "returncode": null
+    },
+    {
+      "case": "wrapper_changed",
+      "error": "wrapper source changed",
+      "passed": true,
+      "published": false,
+      "returncode": null
+    },
+    {
+      "case": "receipt_wrong_input",
+      "error": "frozen receipt input binding mismatch",
+      "passed": true,
+      "published": false,
+      "returncode": null
+    }
+  ],
+  "driver_sha256": "13fdfa85a4bcaa76e5e5b6ba3d3ede9d80e3ae006f20855f14fa82b581f5859a",
+  "driver_sha256_after": "13fdfa85a4bcaa76e5e5b6ba3d3ede9d80e3ae006f20855f14fa82b581f5859a",
+  "scope": "publication structure using fake checker; no mathematical certificate accepted"
+}

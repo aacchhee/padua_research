@@ -1,0 +1,38 @@
+{
+  "all_controls_passed": true,
+  "cases": [
+    {
+      "error": "RuntimeError: optimized Python disables frozen producer assertions",
+      "exit_code": 1,
+      "flag": "-O",
+      "refused_before_imports": true,
+      "source": "topics/padua-lebesgue-followups-20261103/code/t1_join.py",
+      "source_sha256": "a88b18f2a617d7dac03a5db7ba2a89a32cae731cd2f7b6c5a0ea400e5b554b61"
+    },
+    {
+      "error": "RuntimeError: optimized Python disables frozen producer assertions",
+      "exit_code": 1,
+      "flag": "-OO",
+      "refused_before_imports": true,
+      "source": "topics/padua-lebesgue-followups-20261103/code/t1_join.py",
+      "source_sha256": "a88b18f2a617d7dac03a5db7ba2a89a32cae731cd2f7b6c5a0ea400e5b554b61"
+    },
+    {
+      "error": "RuntimeError: optimized Python disables T1 integrity guards",
+      "exit_code": 1,
+      "flag": "-O",
+      "refused_before_imports": true,
+      "source": "topics/padua-lebesgue-followups-20261103/code/t1_payload.py",
+      "source_sha256": "49552101a9af61fad4624093d2666307234e718e11a28ed2aaf0d4b4f3ceb8be"
+    },
+    {
+      "error": "RuntimeError: optimized Python disables T1 integrity guards",
+      "exit_code": 1,
+      "flag": "-OO",
+      "refused_before_imports": true,
+      "source": "topics/padua-lebesgue-followups-20261103/code/t1_payload.py",
+      "source_sha256": "49552101a9af61fad4624093d2666307234e718e11a28ed2aaf0d4b4f3ceb8be"
+    }
+  ],
+  "scope": "unexecuted join and payload entrypoints only; active older entries deferred until source release"
+}
