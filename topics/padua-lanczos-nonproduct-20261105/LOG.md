@@ -69,3 +69,19 @@ acceptance does not cover this new deviation; retain it for the independent
 audit and AC's disposition. Other records refer to this paragraph rather than
 repeating the process limitation. This does not establish or refute the
 candidate's mathematics.
+
+## 2026-11-05 — P1/P6 round 1 checkpoint
+
+- P1 completed its prospective gate and proved [triangle admission](theory/p1-triangle-admission.md),
+  including a self-contained falling-factorial injectivity proof and positive
+  rational weight normalization. T24 uniform and a=b=c=2 reweighting meet N1
+  throughout proposed scan degrees. No new P1 experiment or growth claim.
+- P6 completed the [implementation gate](novelty-gate-P6.md) and froze its
+  [weighted input/endpoint schema and costs](scan-methods.md). Existing
+  uniform T24 degree-2–20 evidence is reused rather than regenerated; this
+  will be labelled inherited-scan reanalysis. New weighted pilots remain
+  gated on P4's written weighted-coordinate reduction.
+- P1's next round owns the continuous triangle recurrence/moment probe; P4
+  owns the shared continuous-source reduction so it is not duplicated.
+- Candidate/theory records retain provisional IDs only. No shared registries
+  or final allocations changed.
