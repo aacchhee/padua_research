@@ -1,0 +1,18 @@
+{
+  "files": {
+    "topics/padua-lebesgue-followups-20261103/code/t1_check_boundary.py": {
+      "bytes": 4848,
+      "sha256": "844b27cf5294cf8494d63707f9862db5a7165fea00e29f8bdd6a6145523457f2"
+    },
+    "topics/padua-lebesgue-followups-20261103/code/t1_compose.py": {
+      "bytes": 13835,
+      "sha256": "0a4f6a3fde72fb07365ab97e5ed79372cfbe69d1c6a81bbc07cf916bd9746e83"
+    },
+    "topics/padua-lebesgue-followups-20261103/code/t1_payload.py": {
+      "bytes": 2804,
+      "sha256": "49552101a9af61fad4624093d2666307234e718e11a28ed2aaf0d4b4f3ceb8be"
+    }
+  },
+  "reason": "independent review hardening: exact join boundary raw hash/byte/source provenance; no mathematical predicate change; no consequential composition execution yet",
+  "recorded_utc": "2026-11-03T12:08:52.988176+00:00"
+}

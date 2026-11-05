@@ -1,0 +1,36 @@
+{
+  "all_controls_passed": true,
+  "count_certified": false,
+  "rows": [
+    {
+      "active_masks_checked": 8,
+      "all_corners_identical": true,
+      "certificate_sha256": "14a69a131b3c20416fd5521bd971efdadd4e3741f70546d0fc5f0d9f25a2cf61",
+      "corner_maxima": 2,
+      "n": 4
+    },
+    {
+      "active_masks_checked": 8,
+      "all_corners_identical": true,
+      "certificate_sha256": "a1238d59781733cc0d380dc513a0a642d0e24b985aeb9b90bb7233756273386e",
+      "corner_maxima": 2,
+      "n": 5
+    },
+    {
+      "active_masks_checked": 16,
+      "all_corners_identical": true,
+      "certificate_sha256": "c7a113b9b623c47309fd186c19ee2dddb2d5a0270c01b118bd11ee1ee069f0f5",
+      "corner_maxima": 2,
+      "n": 6
+    },
+    {
+      "active_masks_checked": 16,
+      "all_corners_identical": true,
+      "certificate_sha256": "9338e01c89482acd4e3e948812a62b5511ca6d9afcf87672fad053ee28cfaa85",
+      "corner_maxima": 2,
+      "n": 7
+    }
+  ],
+  "scope": "native corner predicates against frozen n4--7 corner certificates only",
+  "seconds": 10.998036910999986
+}

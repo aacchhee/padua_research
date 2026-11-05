@@ -1,0 +1,57 @@
+{
+  "controls_sha256": {
+    "topics/padua-lebesgue-followups-20261103/evidence/t1-native-check-controls.json": "f02e742b680eaa20e0e28db48ba513dd0951e924eef453b7c38abf48b98a9cb9",
+    "topics/padua-lebesgue-followups-20261103/evidence/t1-native-check-wrapper-controls.json": "92cfd665e69a81d83d24f25c36cf6f40e2ef8d7ffcae886e5a731bf04dbdb62d"
+  },
+  "independent_review": "pending",
+  "live_installed": false,
+  "native_primitive_source_sha256": "28afd0babb28f8a35c589900f212d62572fa7c74c5d7c59b5c2461e3c67d226f",
+  "optimized_refusals": [
+    {
+      "entry": "topics/padua-lebesgue-followups-20261103/code/t1_native_check.py",
+      "flag": "-O",
+      "refused_before_imports": true
+    },
+    {
+      "entry": "topics/padua-lebesgue-followups-20261103/code/t1_native_check.py",
+      "flag": "-OO",
+      "refused_before_imports": true
+    },
+    {
+      "entry": "topics/padua-lebesgue-followups-20261103/code/t1_native_check_backend.py",
+      "flag": "-O",
+      "refused_before_imports": true
+    },
+    {
+      "entry": "topics/padua-lebesgue-followups-20261103/code/t1_native_check_backend.py",
+      "flag": "-OO",
+      "refused_before_imports": true
+    },
+    {
+      "entry": "topics/padua-lebesgue-followups-20261103/code/t1_native_check_controls.py",
+      "flag": "-O",
+      "refused_before_imports": true
+    },
+    {
+      "entry": "topics/padua-lebesgue-followups-20261103/code/t1_native_check_controls.py",
+      "flag": "-OO",
+      "refused_before_imports": true
+    },
+    {
+      "entry": "topics/padua-lebesgue-followups-20261103/code/t1_native_check_wrapper_controls.py",
+      "flag": "-O",
+      "refused_before_imports": true
+    },
+    {
+      "entry": "topics/padua-lebesgue-followups-20261103/code/t1_native_check_wrapper_controls.py",
+      "flag": "-OO",
+      "refused_before_imports": true
+    }
+  ],
+  "sources_sha256": {
+    "topics/padua-lebesgue-followups-20261103/code/t1_native_check.py": "c6d6fe6c7772764c706277a00b8575a3f70774dc65fa90a1a26f330eaa39409e",
+    "topics/padua-lebesgue-followups-20261103/code/t1_native_check_backend.py": "607f6016d35f1edc513d04f3a9e38dea3cb37f5c6cfb92a31767392687c75764",
+    "topics/padua-lebesgue-followups-20261103/code/t1_native_check_controls.py": "60da37e17c2d2b64edeb0aae002867c615e2852250daebb2fe348f5f4882f824",
+    "topics/padua-lebesgue-followups-20261103/code/t1_native_check_wrapper_controls.py": "cdebe10c75484cf22824726fddbe5d3140038c24a330209179c04ffe067c51fc"
+  }
+}

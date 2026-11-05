@@ -1,0 +1,38 @@
+{
+  "bytes": 4822048,
+  "command": "PYTHONPATH=/workspace/scratch/lebesgue-t1/deps timeout 3600 python -B topics/padua-lebesgue-followups-20261103/code/t1_boundary.py --output /workspace/scratch/lebesgue-t1/fresh-boundary-v1.json",
+  "count_certified": false,
+  "exit_code": 0,
+  "frozen_boundary_sha256": "6088db34cce2952332bd22e560c8b02e90446236f994dc2bac79b33717e769cb",
+  "logs": {
+    "/workspace/scratch/lebesgue-t1/fresh-boundary-v1.log": {
+      "bytes": 185,
+      "sha256": "b24203e26d81cac17efd4e655c4644ab4aeaa1814befd64b61f0f468596a61da"
+    },
+    "/workspace/scratch/lebesgue-t1/fresh-boundary-v1.progress": {
+      "bytes": 834,
+      "sha256": "4b7e01cd1ef454691128e111cd5515b6e64542b1f0e2dcbea2c7cacbdd81bd46"
+    }
+  },
+  "raw_path": "/workspace/scratch/lebesgue-t1/fresh-boundary-v1.json",
+  "raw_sha256": "adfe1107a326d17cfdd083a2ef9b8ab7ce0aeaa6b906f7a825c53a4fa1da6f08",
+  "recorded_utc": "2026-11-03T12:13:47.280234+00:00",
+  "scope": "complete generated boundary proposal only; all frozen predicates still need independent replay",
+  "source_path": "topics/padua-lebesgue-followups-20261103/code/t1_boundary.py",
+  "source_sha256": "7753e4ba8bc440133a46e6f5325e8b5531f20e5a20d8d0aa6778a32bacbdb7f0",
+  "summary": {
+    "complete": true,
+    "corner": 2,
+    "counts": {
+      "derivative": 27142,
+      "minimum": 1472,
+      "outside": 4454,
+      "root": 16,
+      "sign": 1404
+    },
+    "edge": 16,
+    "seconds": 3242.3575620651245,
+    "unresolved": 0
+  },
+  "tool_session": 35323
+}

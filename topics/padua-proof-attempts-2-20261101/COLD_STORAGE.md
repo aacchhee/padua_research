@@ -121,3 +121,13 @@ These values replace the clipped or inaccurate ones in the tables above. The mac
 - `preparation/final-id-map.json`, **notes** (F4): Registry map written by the one-shot topics/padua-proof-attempts-2-20261101/preparation/prepare.py:112. Working-tree reader: topics/padua-proof-attempts-2-20261101/preparation/validate.py:24 (current(), line 17). validate.py also compares every removed output against git show of RESPONSE e1581b3d697610be5eb647c594e7d66fcbc61352 (:28-29) and reads pinned Git objects for its other inputs, and that revision is absent from this clone, so restoring the map is not sufficient for validate.py to pass; run it at its recorded revision. Restore with `python tools/cold_storage.py restore padua-proof-attempts-2-20261101`. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well.
 
 After any export, check the archive with `python tools/cold_storage.py verify-archive <DIR>/padua-proof-attempts-2-20261101 --manifest topics/padua-proof-attempts-2-20261101/cold-storage.json`, and run it again immediately before relying on the archive (for delivery acceptance, or before a history purge). The export receipt alone is not proof that the files are still present.
+
+## 2026-11-05 raw-output archival addendum
+
+AC directed generated outputs to cold storage. Additional raw transcripts and
+analysis captures from this topic are now pinned at source40347d1 in separate
+component manifests; all older manifests/identities above are unchanged. See
+[the migration index](../padua-lebesgue-followups-20261103/preparation/cold-storage-migration.md)
+for exact file counts, manifest paths, verified export/restore commands and
+receipt hashes. Small essential proof receipts, summaries and code remain in Git.
+Physical delivery to AC remains pending; staging is not a delivery claim.

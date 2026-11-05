@@ -1,0 +1,20 @@
+{
+  "files": {
+    "topics/padua-lebesgue-followups-20261103/code/t1_check_boundary.py": {
+      "bytes": 4848,
+      "sha256": "844b27cf5294cf8494d63707f9862db5a7165fea00e29f8bdd6a6145523457f2"
+    },
+    "topics/padua-lebesgue-followups-20261103/code/t1_compose.py": {
+      "bytes": 13513,
+      "sha256": "25b5627b5d8c19b977aa837616dc5dbc0875a5bd62349091520eae2e4a115452"
+    },
+    "topics/padua-lebesgue-followups-20261103/code/t1_payload.py": {
+      "bytes": 2804,
+      "sha256": "49552101a9af61fad4624093d2666307234e718e11a28ed2aaf0d4b4f3ceb8be"
+    }
+  },
+  "original_summary_ast_sha256": "61812bc064c96305324af5a2a52746da8a65e675b0340da792042c026aedf3ca",
+  "recorded_utc": "2026-11-03T12:04:00.698388+00:00",
+  "scope": "proposed identity/stratum composition sources before adversarial review; no consequential execution",
+  "source_of_original_summary_ast": "a5_checker_n8.py at frozen a9cff5748d6c40ee41ac76e4e8a0035e0d5dab95f4de1233dfcc26902cb085a2"
+}

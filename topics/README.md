@@ -26,3 +26,24 @@ Active MZ campaign: [log](mz-constants/LOG.md), [report](mz-constants/report.md)
 ## Second proof campaign — PR12 final registration
 
 [padua-proof-attempts-2-20261101](padua-proof-attempts-2-20261101/LOG.md): accepted second proof campaign; PD-T156–197, PD-N072–073, IDEA-286–311. Proved and OPEN scopes are separate. Claude audit-01 accepted, minor response complete, PR12 prepared after merged PR15. Only AC merges.
+
+## Padua Lebesgue follow-ups — PR20 scoped registration
+
+[padua-lebesgue-followups-20261103](padua-lebesgue-followups-20261103/LOG.md),
+branch `codex/padua-lebesgue-followups-20261103`:
+[report](padua-lebesgue-followups-20261103/report.md),
+[reserved ranges](padua-lebesgue-followups-20261103/ALLOCATIONS.md),
+[results](../results/padua-lebesgue-followups-20261103.md).
+Existing PD-T184/180 prove exact n8 counts 44 interior/62 closed-square (44+16+2),
+reusing IDEA-299. PD-T266–271 prove limiting edge-defect centre minima, endpoint
+expansion, general-position geometric evaluation, parity-independent corner
+defect, one-dimensional quadratic bound and corner constant with explicit
+vanishing error; IDEA-356/357/358 retain the candidates. Full sharp PD-T098
+remains OPEN. [Claude audit-01](padua-lebesgue-followups-20261103/audit-01.md)
+accepts the mathematics; [response-01](padua-lebesgue-followups-20261103/response-01.md)
+answers minor findings. Registration/rehearsal and raw-output archival checked; PR20 is ready for AC’s
+merge decision. The conservative count is reduced to 3,859,377 bytes.
+T2/T3 prospective-gate timing remains a confirmed, unwaived deviation of minor
+assessed impact for AC's decision; physical cold-storage delivery remains pending.
+Completed results and registration are the post-merge outcome; no further
+mathematical campaign, manuscript or priority claim is assigned. Only AC merges.

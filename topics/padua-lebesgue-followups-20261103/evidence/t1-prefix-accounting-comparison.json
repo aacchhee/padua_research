@@ -1,0 +1,11 @@
+{
+  "count_certified": false,
+  "exact_accounting_identity": true,
+  "matching_logged_visited_counts": [
+    1000,
+    2000,
+    3000
+  ],
+  "plain_log_sha256": "8911c90f711cec62f9231d9cbd24a8531d77c173db402c26a7a8bea77aad234f",
+  "scope": "shared diagnostic progress points only; no retained plain tree and no mathematical count"
+}

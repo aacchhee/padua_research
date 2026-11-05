@@ -262,3 +262,26 @@ Every earlier accepted reservation, unused gap and priority remains intact.
 AC's 2026-11-05 instruction removes the planned further Claude check;
 the accepted mathematical audit and response check retain their stated scopes.
 Only AC merges.
+
+## PR20 Lebesgue follow-ups — unchanged reservation import and assignments
+
+2026-11-05. Owner `codex/padua-lebesgue-followups-20261103`; reservation
+first published at `514e3763a827c106c5170eecd55d849b39265da2`,
+[PR20](https://github.com/aacchhee/padua_research/pull/20).
+Import unchanged PD-T266–285 (20), PD-N092–099 (8), IDEA356–375 (20),
+LIT474–481 (8), recorded 2026-11-03. No re-reservation or extra headroom.
+Original checked heads and priority remain in the [topic ledger](../padua-lebesgue-followups-20261103/ALLOCATIONS.md).
+The [fresh recheck](../padua-lebesgue-followups-20261103/preparation/reservation-recheck.md)
+reads current main `5db1e01dcd2258f45de2adcaef43859e59734618` and open
+PR20–24, all ledgers/four registries and permanent gaps; no closed-unmerged
+PR is present. Other live ranges through T363/N131/IDEA453/LIT593 remain
+owned by their branches and are not assigned here. All previous records survive.
+
+Assigned PD-T266–271 (6), IDEA-356–358 (3); PD-T180/184, IDEA-299 and
+LIT-388 reused. No new negative or literature ID. Permanent unused gaps:
+PD-T272–285, PD-N092–099, IDEA359–375, LIT474–481.
+[Exact map](../padua-lebesgue-followups-20261103/preparation/final-id-map.json).
+PR19 is already merged. PR20 is prepared next against current main; other
+PR21–24 remain drafts and must refresh before their own readiness. A disposable
+sequential squash rehearsal checks preservation, not approval of those drafts.
+Only AC merges.

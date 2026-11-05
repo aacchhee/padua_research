@@ -59,3 +59,23 @@ No manuscript has been drafted or accepted. The following is a development brief
 | Brief | Question | Supporting results | Remaining gaps | Readiness |
 |---|---|---|---|---|
 | [Effective argmax report](topics/padua-argmax-effective-20261103/report.md) | Effective all-degree global Padua corner argmax | PD-T246 finite17–32, continuous2–32 with inherited cases; PD-T250 exact spectrum; PD-T251 all-n normalized slopes and explicit physical n^-6 local radius; PD-T249 three finite E-C comparisons; PD-T247/248/252 MEASURED; scoped PD-N084–086 | PD-T099 OPEN; no effective global n0 or complete33<=n<N_* bridge; degree40 uncertified,33–39 unrun; weighted energy and the fixed scaled phase radius remain OPEN; G8 transfer/novelty coverage incomplete | Existing scopes accepted by [audit-01](topics/padua-argmax-effective-20261103/audit-01.md) and [response-check-01](topics/padua-argmax-effective-20261103/response-check-01.md); registration prepared for AC decision after mechanical checks; completed preparation historical after merge; no manuscript, submission or further Claude round |
+
+## Padua Lebesgue follow-ups — scoped count completion and analytic brief
+
+| Brief | Question | Supporting results | Remaining gaps | Readiness |
+|---|---|---|---|---|
+| [Lebesgue follow-ups](topics/padua-lebesgue-followups-20261103/report.md) | Degree-eight strict local maxima; limiting edge-defect shape/evaluation; corner constant | Existing PD-T184: 44 interior; existing PD-T180: 62 total = 44+16+2; PD-T266/267 centre minima and endpoint expansion; PD-T268 general-position series/tails; PD-T269/270/271 parity-independent defect limit, quadratic one-dimensional estimate and corner constant | Full sharp PD-T098 OPEN; finite-degree ordering/effective argmax bridge excluded; historical novelty/source limits retained | Mathematics accepted by [Claude audit-01](topics/padua-lebesgue-followups-20261103/audit-01.md); minor findings answered in [response-01](topics/padua-lebesgue-followups-20261103/response-01.md); registration/rehearsal and archival checked; PR20 ready for AC decision; conservative budget reduced to 3,859,377 B; T2/T3 gate-timing deviation disclosed for AC; no manuscript or submission claim |
+
+Dated 2026-11-05 supersession: the earlier briefs' degree-eight completeness/global
+OPEN wording is historical. PD-T181's global statement was separately proved in
+PR17; this follow-up completes unchanged PD-T184/180 count targets after every
+registered gate ([actual verification](topics/padua-lebesgue-followups-20261103/independent-checks-t1.md)).
+Earlier center-minimality/general-beta OPEN clauses are superseded only at the
+limiting-integral PD-T266/268 scopes; finite-degree ordering remains excluded.
+PD-T100 stays MEASURED, PD-T183 stays separate, and PD-T098's -1/N and sharp
+remainder and PD-T099's all-degree bridge remain OPEN. LIT-388 v1 Table 3 receives
+only the scoped certified candidate correction 44/62 versus numerical 38/56,
+with no accepted erratum or author contact. After merge, completed registration
+is historical preparation; the scoped results above are the outcome, with no
+further mathematical campaign assigned. Physical cold-storage delivery remains
+pending; T2/T3 prospective-gate timing is not waived or cured.

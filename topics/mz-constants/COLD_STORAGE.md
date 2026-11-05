@@ -56,3 +56,13 @@ These values replace the clipped or inaccurate ones in the tables above. The mac
 - **Topic note** (F4): All four are manifests/maps/patch, not scientific data. audit-targets.json (123 files at fdf0648) and response-01-targets.json (140 files) are hash manifests with no committed generator; topics/mz-constants/check_response_01.py hard-reads audit-targets.json (:99), final-id-map.json (:30) and response-01-targets.json (:120) and hashes every listed working-tree file, so it fails after removal of any of these or of the tracks/mz-constants/evidence files they list. The patch is exactly git diff --unified=0 08fafe6..2cc1918 on ten shared paths (both commits reachable) and is regenerable. final-id-map.json is a registry map and a runtime input to four working-tree scripts (listed in its entry) and is linked from tracks/mz-constants/paper/README.md:14; it was moved to cold storage as well under AC's 2026-11-02 approval, so restore it before running those scripts. Small committed receipt: topics/mz-constants/response-01-checks.json (PASS). AC cold storage for this topic: C:\Users\andreyac\Downloads\padua\cold_storage\mz-constants\ (LOG.md:23), delivery unconfirmed; topics/mz-constants/cold-storage.md is only a local staging record. Abbreviations used in entries: K/ = tracks/mz-constants/evidence/, M/ = topics/mz-constants/.
 
 After any export, check the archive with `python tools/cold_storage.py verify-archive <DIR>/mz-constants --manifest topics/mz-constants/cold-storage.json`, and run it again immediately before relying on the archive (for delivery acceptance, or before a history purge). The export receipt alone is not proof that the files are still present.
+
+## 2026-11-05 raw-output archival addendum
+
+AC directed generated outputs to cold storage. Additional raw transcripts and
+analysis captures from this topic are now pinned at source40347d1 in separate
+component manifests; all older manifests/identities above are unchanged. See
+[the migration index](../padua-lebesgue-followups-20261103/preparation/cold-storage-migration.md)
+for exact file counts, manifest paths, verified export/restore commands and
+receipt hashes. Small essential proof receipts, summaries and code remain in Git.
+Physical delivery to AC remains pending; staging is not a delivery claim.
