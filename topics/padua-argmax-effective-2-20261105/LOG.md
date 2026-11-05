@@ -142,3 +142,15 @@
 
 - Actual seven-case rehearsal at af3c73c passed without merge conflicts; own and foreign bytes were exact. Before completion, live connector/ref refresh found PR21 advanced3ed6c94→67b3e01 (accepted audit/metadata handoff). Main330fab8 and PR24 3a179f6 remain unchanged; population still3 open/22 closed-merged, none closed-unmerged.
 - Read and compared every complete PR21 ledger and four-registry file at both heads: exact equality and identical path set. No range/status/ID changed, so the full reservation union remains valid. live-recheck.json records all identities and changed paths. Retained the prior successful rehearsal receipt locally and updated only the rehearsal's foreign pin for a fresh actual seven-case run; no foreign files/branches changed.
+
+## 2026-11-05 — refreshed rehearsal and preservation checks
+
+- Refreshed seven actual squash sequences at32b24b6 with PR21 67b3e01/PR24 3a179f6 all PASS,0 merge conflicts; own and foreign bytes preserved exactly in both pair orders and both triple orders. Created/deleted only the helper's temporary branch/worktree. Foreign blank-line whitespace notes remain scoped/disclosed and no other branch is edited.
+- Supplementary protocol review independently read the refreshed helper/hash, seven final trees and all12 PR21 comparison-file identities; core3648 checks PASS with3285 baseline files preserved. Its earlier RESULTS relative-link finding is fixed and verified. Required Claude preparation audit still pending; no substitute mathematical acceptance is inferred.
+- Root verification:246 topic/new-shared relative links resolve; all topic JSONs parse and stay below16KiB; eight theory bodies and T02/literature INDEX retain accepted bytes; current conservative non-record inventory including planned artifacts is4,422,023bytes below5,000,000. Cold-storage plan reports0 bytes to relocate. Subsequent enclosing-index/lifecycle metadata gets its own final check.
+
+## 2026-11-05 — preparation evidence source
+
+- Added preparation/record.md and the explicit PR-body template, carrying R1–R4 unchanged and keeping PR25 draft for Claude preparation audit. The final body resolves only the two commit placeholders after the enclosing candidate and handoff commits exist.
+- The corrected first rehearsal and the subsequent refreshed seven-case execution are both recorded honestly. Current foreign pin PR21 67b3e01 has identical reservation/registry bytes to the original full scan. Old raw/cache receipt stays local; no foreign whitespace or unrelated scientific file was edited.
+- Final registration source and checks are concrete; the following commit re-pins the enclosing evidence index to this source while retaining historical reviewer hashes. No further registry/science change is planned. Source/fulltext, AC interpretation and physical archival limitations remain explicit; only AC merges.

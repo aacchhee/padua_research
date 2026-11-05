@@ -90,6 +90,9 @@ def main():
     excluded_report = ('# ', '## Protocol and storage limits', '## 2026-11-05 response record and reproduction corrections')
     check('report_scientific_sections', all(new_report.get(k,'').rstrip()==v.rstrip() for k,v in old_report.items() if not k.startswith(excluded_report)))
     check('own_RESULTS_section_present', any(SLUG in k for k in ns))
+    canonical = read('results/'+SLUG+'.md').decode().replace('../topics/', 'topics/').strip()
+    own_sections = [v.strip() for k,v in ns.items() if SLUG in k]
+    check('canonical_RESULTS_copy', own_sections == [canonical])
     for rel in ('ID_CROSSWALK.md','topics/padua-batch-20261031/ALLOCATIONS.md',TOPIC+'/ALLOCATIONS.md'):
         check('append_only:' + rel, read(rel).startswith(read(rel, True)))
     mapping = json.loads(read(TOPIC+'/preparation/final-id-map.json'))

@@ -1,6 +1,6 @@
 # Supplementary preparation protocol check 01
 
-**CORE PRESERVATION PASS; final receipt review pending.** This is an independent
+**PASS within the core registration and rehearsal scope below.** This is an independent
 Codex supplement, not the required Claude preparation audit or a readiness
 approval. PR25 must remain draft pending Claude Opus 5.5 high review.
 
@@ -80,7 +80,7 @@ historical reviewer pins are protected without purporting to re-prove them.
 It checks the exact new IDs/statuses, unique new registry rows, all old row
 lists (including inherited repeated historical mentions), append-only
 IDEAS/crosswalk/ledgers, unrelated RESULTS sections and topic-index lines,
-unchanged literature registry, exact mapping and permanent gaps. The executed core check passed **3,647 checks** with no failures; the
+unchanged literature registry, exact mapping and permanent gaps. The executed core check passed **3,648 checks** with no failures; the
 [receipt](registration-check.json) records exact-body and shared-file hashes.
 All scientific report sections are also unchanged; administrative status and
 registration paragraphs were reviewed as a diff. Historical repeated IDs
@@ -95,9 +95,38 @@ by this checker.
 
 ## Remaining review and residuals
 
-Final snapshot-manifest coverage and the orchestrator's actual disposable
-squash-rehearsal receipt remain to be reviewed. Reviewing a receipt does not
-mean this checker executed its merges. Whole-repository JSON, link and
+The [actual squash receipt](integration-rehearsal.json) pins candidate
+`32b24b6c1cf10d1447f29b5758c5decfafb13a0f`, main
+`330fab835f43e5ba5b24e320c2d7e9647e6cbd60`, PR21
+`67b3e01e0109793e34d43b8c98d5f9064dc568f0` and PR24
+`3a179f68ecbed20dc7e15862da842ed6116aa375`. Reviewed its complete helper,
+verified the helper SHA256, and independently used read-only Git diffs on
+all seven recorded final commits: receipt tree IDs match, candidate own
+shared/topic/results bytes match exactly, and all 99 PR21 / 234 PR24 changed
+paths match their foreign heads. Pair and triple sequences produce identical
+trees in the exercised reverse orders. There are no merge conflicts. The
+foreign change inventories do not touch the shared registry set at these pins.
+
+The first rehearsal stopped on inherited foreign whitespace at candidate
+11ba17e; the corrected helper requires own whitespace checks and separately
+records foreign notes without altering foreign bytes. This is an accurately
+scoped correction, not a repaired scientific claim. The orchestrator executed
+the disposable squash operations; this checker executed only independent
+read-only tree comparisons. The current worktree list contains only the live
+topic worktree. This receipt establishes no future unpinned merge result.
+
+The orchestrator's live refresh advanced PR21 from 3ed6c942 to 67b3e01e.
+Independently re-read all 12 complete ledger/canonical-registry files in
+[live-recheck.json](live-recheck.json) at both commits: bytes, sizes, SHA256
+and Git blob identities match the receipt, so the original reservation union
+remains applicable. Refreshed seven-case tree comparisons and helper-hash
+verification also pass. This is read-only corroboration of pinned objects,
+not an independent live-network population query.
+
+No unresolved finding remains in this core registration/rehearsal scope.
+The enclosing evidence index is intentionally a subsequent orchestration
+step after these records receive a source commit; this review does not yet
+attest that later manifest's hashes or source pin. Whole-repository JSON, link and
 output-size checks and the 40-file local artifact rehash are owned by the
 orchestrator and will be identified as such.
 

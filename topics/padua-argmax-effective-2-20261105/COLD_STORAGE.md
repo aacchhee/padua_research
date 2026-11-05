@@ -6,8 +6,11 @@ The destination authorized by handoff01 is
 Actual generated files are local under
 `local-output/argmax-effective-2-20261105/` only.
 
-[cold-storage.json](cold-storage.json) records every actual local file's relative
-locator, byte count and SHA-256 in its `pending_local.files` table. The standard
+[cold-storage.json](cold-storage.json) records the40 original scientific-run files' relative
+locators, byte counts and SHA-256 in its `pending_local.files` table.
+Later preparation-only convenience caches are separate regenerable working
+records; they do not extend that historical40-file inventory or supply a proof
+component. The standard
 `entries` list is deliberately empty: no Git-backed archived entry or verified
 remote retrieval is asserted. Its pinned source commit contains every generating
 script; per-run receipts retain earlier actual source and binary identities.
