@@ -9,3 +9,7 @@ Run code/g0_replay.py with the report's pinned dependencies and unchanged polyra
 ## Retention and retrieval
 
 Actual local path is /tmp/padua-lanczos-frontier-g0; sandbox retention is not guaranteed. Desired Windows destination from handoff01 is Downloads/padua/cold_storage/padua-lanczos-frontier-20261105/, but no access or transfer took place. AC remains archive custodian; physical delivery is pending. If local files survive, hash and size must match the JSON before use. Otherwise regenerate from committed code and pinned Git history; do not claim to have recovered original timed receipts. These outputs support replay diagnosis, not a new computer-assisted theorem.
+
+## G0 explanation outputs
+
+The inventory now includes raw attribution Q/H, reference and propagated-residual NPZ files and independent fresh-kernel basis NPZ files. Command/checker identifiers resolve to the exact commands and results in the committed methods and independent report/receipts. No raw basis enters Git. Source08b9f18d6ac1c7c90546763ac330fff754030fcb6e1561989d764990ed3dd984 was independently executed. Additive G0 resolution changes no original output. Physical archive delivery remains pending.

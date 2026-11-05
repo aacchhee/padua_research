@@ -1,8 +1,8 @@
-# Lanczos frontier — blocked G0 checkpoint
+# Lanczos frontier — G0 resolved, research in preparation
 
-Stage WORK; [draft PR24](https://github.com/aacchhee/padua_research/pull/24), not ready for merge. Rules/input `8359bf7a047d9a212bd841224fb97a458cb7435e`, base/main `440d1079e42c3ef21c40d1cf8870f5b206410c6a`. No new mathematical result, final-ID assignment or scientific registry change.
+Stage WORK (G0 resolved); [draft PR24](https://github.com/aacchhee/padua_research/pull/24), not ready for merge. Rules/input `8359bf7a047d9a212bd841224fb97a458cb7435e`, base/main `440d1079e42c3ef21c40d1cf8870f5b206410c6a`. No new mathematical result, final-ID assignment or scientific registry change.
 
-## Gate outcome
+## Original G0 checkpoint (historical)
 
 G0 FAIL under the original handoff criterion. [Independent replay](independent-checks-g0.md) records successful exact scalar-certificate/witness replays and E5 identities, but an unresolved numerical E6 triangle degree-12 discrepancy. The checker demonstrated BLAS-kernel sensitivity, preserved code/input identity and repeated current output, without identifying the historical execution that yielded the old values. Exact reconstruction of all optional scalar comparator outputs was not performed. Existing theory and finite proofs are not refuted by this discrepancy.
 
@@ -26,10 +26,14 @@ The candidate records preserve preparatory routes, failed/deferred dispositions 
 
 This checkpoint supplies reproducibility findings and proposed experiments only. It adds no theorem, fitting conclusion or priority claim to the bivariate Lanczos/V+A note. Inherited statements retain their registered scopes; the unmerged PR21 P3 comparison remains a coverage-qualified external dependency, not newly read fulltext.
 
-## Next step
+## Original next step (historical)
 
 Resolve G0 through pinned provenance or a justified numerical analysis distinguishing recurrence arithmetic variation from reference error. Keep the original receipt and stop criterion intact. If the criterion must change, obtain AC's explicit disposition, record it prospectively, and resume the original scientific handoff only after a documented gate decision. Claude audit remains pending; this blocked development checkpoint is not an audit request.
 
 ## Protocol limitation
 
 Some candidate formulas were drafted before workers completed all mandatory shortlisted reading. This prospective novelty-gate timing deviation is disclosed, not cured by later reading or by the G0 stop. Complete the gate before pursuing the candidates and request an explicit Claude protocol disposition at the later audit. No result or novelty claim is supported by those drafts.
+
+## Additive G0 resolution — 2026-11-05
+
+The original stop above is historical and retained. [Disposition02](g0-disposition-02.md), [methods](g0-attribution-methods.md) and [independent check](independent-checks-g0-resolution.md) now resolve G0 under the unchanged explanation criterion. Fresh high-precision projection excludes reference noise as the source of major xy/yx/alt changes. Measured u-scale residuals propagate through the inherited frozen recurrence to reproduce observed normal errors to~3e-18, independently rerun; supported kernel and precision controls identify arithmetic sensitivity. Historical Q/H/dispatch remain missing: in particular old alt7.301e-12 is scale-consistent, not reconstructed or within a claimed empirical envelope. This is a replay explanation, not a theorem or new G1–G4 result. Scientific work resumes subject to original gates; Claude audit and the timing-deviation disposition remain pending.

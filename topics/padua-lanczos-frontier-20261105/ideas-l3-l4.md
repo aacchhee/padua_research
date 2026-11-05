@@ -172,3 +172,70 @@ development is deferred pending an explicit resolved G0 verdict and resumption
 instruction. Required source reading also remains unfinished (including the
 unmerged PR21 P3 comparison/addenda); no historical priority conclusion is
 drawn from the preparation above.
+
+## Handoff02 reading continuation — 2026-11-05 (G0 not yet cleared)
+
+Rules reread at `f85c7b5c83822ff60b62c84bed1ec6ae31628422`:
+AGENTS, WORKFLOW and CODEX; both frontier handoffs, and current plan/gates,
+LOG/report/COLD_STORAGE and the two G0 summary/probe receipts. This is a
+reading continuation only. No derivation, code or experiment was performed
+in this continuation. The original candidate formulas preceded completion
+of the prospective novelty gate; the timing deviation is retained and later
+reading does not cure it. Claude must explicitly disposition that protocol
+point during the later audit, as handoff02 requires.
+
+The complete current `state/IDEAS.md` was now read, literally every line
+1–889, in sequential bounded views: 1–52, 53–122, 123–288, 289–439,
+440–516, 517–577, 578–630, 631–683, 684–763, 764–844 and 845–889.
+This includes all headings, IDs, aliases, summaries, obstruction rows and
+disposition tables. The scan includes the historical IDEA-127/130/134/140,
+147/148/150/151 neighbors and all IDEA-246–267 entries. It is a current
+coverage statement, not a claim that the original incomplete scan sufficed.
+
+Completed full-source reads after the stop: PD-T136/137/139/140;
+PD-N062/063; the complete ideas-e3-e4, ideas-e5 and ideas-e6 files; prior
+plan, directions E2–E5, audits01–04 and responses01–03; PD-T144/145/146;
+PD-T055, the commutator-shadow file (actually PD-T047), and the separate
+reference-free-span-drift-lower-bound file (PD-T053). PD-T142/143/054,
+ideas-e1 and the exact/scalar recurrence producers had already been read
+fully in the first preparation. A combined directions E1/E5/E6 display was
+truncated; E5 was reread alone and E1's tail reread, and no missing portion
+is counted merely because its command ran.
+
+The pinned PR21 copy `890f56ccde35431b70b43141c224b0b8817fea7f`
+was consulted by read-only Git operations. P3 comparison and all three
+Xu343/Xu342/Dunkl–Xu addenda were read in full. These are **PR21
+(unmerged)** repository reading records; their reader's stated primary-page
+coverage is not a new primary-fulltext read by this worker. P3 row15 treats
+PD-T142/143 as numerical-selection statements distinct from exact-span
+ordering remarks, and credits Barrio–Peña–Sauer Remark9 as closer prior art.
+The Favard/truncated-converse distinctions in the addenda do not establish
+a new selection-stability or scalar-capacity claim here. No historical
+priority statement is added.
+
+Exact shortlist outcomes, before any resumption:
+
+| Saved candidate | Closest full entries and outcome | Applicable obstruction / scope |
+|---|---|---|
+| L3a | IDEA-251/252 and PD-T142/143: quantitative continuation, not a new inverse-score principle | PD-T143's remainder is particular-family dependent; a uniform finite-u result needs the stronger explicitly stated source budget, a noncircular pivot radius and derived coefficient control. (C) alone and omission of chi remain rejected. |
+| L3b | IDEA-151/251, PD-T054/143: elementary finite-family continuation of L3a; no separate mechanism or efficiency claim | Frozen pivot choices have no switching guarantee; exact rotQ24 tie (2,1) prevents assuming a positive tie margin. No implicit-section conclusion for non-(C) paths. |
+| L4a | IDEA-246/249/250 and PD-T136/137/138/139/140/141: quantitative upper-certificate variant | Aggregate Hilbert input and scalar l-infinity input differ; the full scalar rho must be retained. Spectral envelope must be proved, then certified with exact/outward arithmetic. A failed upper only fails the certificate. |
+| L4b | IDEA-250 and PD-T138/140/141: already-recorded coherent/multinode witness mechanism, quantitative variant only | A stronger attained full-output witness must be checked by direct projection. Failure to improve a lower does not upper-bound the capacity. |
+
+IDEA-253 is duplicate zero-error quantifier clarification, not a new PD-N;
+PD-N062/IDEA-254 forbids exact/o(u) fixed-degree projection-only repair and
+does not forbid an O(u) upper guarantee; IDEA-255's all-degree amplification
+and IDEA-256's externally informed parent experiment stay outside these
+candidates. PD-N063/IDEA-259–261 only reject their specified Padua witness
+paths (fixed-A case eventual only), so they supply no L3/L4 obstruction.
+IDEA-257/258/262 and IDEA-263–267 concern certificate radii, reading(E)/(G)
+or implementation measurements; none supplies the missing finite-u or full
+scalar comparison guarantee. No additional candidate was generated.
+
+Outstanding mandatory read-first sources are still being completed;
+therefore **the overall reading/gate-completion claim is still withheld**.
+In particular this continuation has not yet completed the required broad
+PD-T056–075 linked theory set, PROOF_STATUS ranges, track/drift README,
+external-code/independent-checks, full G0 harness/manifest/source-audit read,
+or the remaining literature-INDEX coverage. Mechanism terms and cheapest
+tests remain those registered above; no new test ran while G0 was blocked.

@@ -1,10 +1,10 @@
 # Bivariate Lanczos / V+A round 2 (E2, PD-T055, selection, PD-T140 rotQ24, PD-T075(U2), PD-T056(G), V+A study): log
 
 - Branch: `codex/padua-lanczos-frontier-20261105` · Base: main `440d107` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK (G0 blocked) · Next: `Codex (gpt-6.1-sol xhigh): Continue codex/padua-lanczos-frontier-20261105.` · Open handoff at published boundary: [handoffs/02-resolve-g0.md](handoffs/02-resolve-g0.md)
-- Reserved final-ID ranges: none yet. Reserve when the draft PR opens, checking open PRs #19–#22 and the parallel `codex/padua-mz-2d-frontier-20261105`.
+- Stage: WORK (G0 resolved; research gates pending) · Next: `Codex (gpt-6.1-sol xhigh): Continue codex/padua-lanczos-frontier-20261105.` · Open handoff at published boundary: [handoffs/02-resolve-g0.md](handoffs/02-resolve-g0.md)
+- Permanent reservation: PD-T324–363, PD-N116–131, IDEA414–453, LIT582–593; first pushed40b3eb6, draft PR24. No final IDs assigned; recheck union before future assignment/readiness.
 - Claims: none yet.
-- Open for AC: no waiver requested. Original G0 stop remains active; future criterion changes require an explicit disposition. Compute remains sandbox-only.
+- Open for AC: no waiver requested. G0 explanation resolved in additive disposition02; historical rounding trajectory remains unverified. Scientific/protocol Claude audit pending. Compute remains sandbox-only.
 
 ## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
 
@@ -14,7 +14,7 @@
 
 ## Runs needed
 
-- G0–G4 and L1–L7 as in handoff 01.
+- Resolve/disposition G0 as in handoff02; then G1–G4 and L1–L7 as in handoff01. Exact G0 witness/identity replays already completed; original FAIL and its limits are retained.
 
 ## 2026-11-05 — Codex, requested gpt-6.1-sol xhigh — WORK start
 
@@ -44,3 +44,16 @@ Workers recorded preliminary candidate mechanisms/formulas while some mandatory 
 - Independent replay orchestration was itself fully executed: five main subprocesses and seven E6 diagnostics, all subprocess exits0; automated E6 difference classification is separated from the dated checker stop disposition. Final label-only source adjustment and syntax check are recorded with both source hashes.
 - `python topics/padua-lanczos-frontier-20261105/code/check_manifest.py`: PASS,29 pinned checkpoint files. All topic/results Markdown targets and all17 local G0 raw-output hashes/sizes verified. `git diff --check`: PASS. No claim of validated L7 producer arithmetic.
 - Handoff01 execution ends at its mandatory G0 stop, not scientific completion. Its research scope remains binding through [handoff02](handoffs/02-resolve-g0.md), which diagnoses the blocker before resuming L1–L7. Required Claude scientific/protocol audit remains pending after development.
+
+## 2026-11-05 — handoff02 G0 diagnosis, Codex gpt-6.1-sol xhigh
+
+- Rules read at `f85c7b5c83822ff60b62c84bed1ec6ae31628422`; base/main refreshed and unchanged at `440d1079e42c3ef21c40d1cf8870f5b206410c6a`, already an ancestor. Worktree initially clean. Existing reservation unchanged; no allocation/readiness operation.
+- Developer diagnostic assigned to gpt-6.1-sol medium (code/g0_attribution.py, evidence/g0-attribution.json, g0-attribution-methods.md); supplementary independent check assigned to gpt-6-astra high (independent-checks-g0-resolution.md, code/g0_independent.py, evidence/g0-independent.json). Only root changes Git.
+- Scope is numerical attribution/replay of the existing frozen E6 experiment, applying PD-T142's existing residual/surrogate relation. No new research candidate or novelty claim is generated, so the research-generation novelty gate is inapplicable to this diagnostic. G1–G4 and scientific work remain stopped pending an explicit gate disposition. Earlier timing deviation remains disclosed.
+- Before executions: compare fixed computed bases against independently evaluated higher-precision reference spaces; measure original recurrence residuals and propagate them using the frozen computed coefficients, distinguishing span error from diagnostic error; compare only the already explored default and one lower BLAS kernel, plus a higher-precision arithmetic control. No historical kernel fishing and no new acceptance tolerance. Historical missing Q/dispatch remains a limit.
+
+### G0 resolution boundary
+
+- [Disposition02](g0-disposition-02.md): RESOLVED under unchanged criterion, following separate gpt-6-astra high executions/Arb projection and attribution rerun. Legacy/full reference error and same-Q scalar changes are distinguished. Local residuals~u reconstruct large normal errors to~3e-18, and higher precision suppresses them. Historical alt7.301e-12 is scale-consistent, not reproduced, bounded by probes or causally reconstructed.
+- Frozen diagnostic producer08b9f18d6ac1c7c90546763ac330fff754030fcb6e1561989d764990ed3dd984, small source/receipts and methods retained. Original FAIL/report/receipts unchanged. No theorem status/final ID/novelty claim; exact E1/E5 are prior replay evidence, not newly rerun by this reviewer.
+- Resuming mandatory L3/L4 source/gate reading only before its target experiments. No G1–G4 run yet. Prospective-gate timing deviation remains for Claude disposition.

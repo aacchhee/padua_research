@@ -1,0 +1,355 @@
+{
+  "status": "MEASURED_DIAGNOSTICS_ONLY",
+  "rules_head": "f85c7b5c83822ff60b62c84bed1ec6ae31628422",
+  "source_snapshot": "8359bf7a047d9a212bd841224fb97a458cb7435e",
+  "upstream_commit": "6903d7af9995c9d88e661fb229626696e00fdfba",
+  "code_sha256": "08b9f18d6ac1c7c90546763ac330fff754030fcb6e1561989d764990ed3dd984",
+  "upstream_sha256": {
+    "arnoldi.py": "e51f356170dc5e1403f1065daf5bc331e7ce470cac1b9161f5ecb9efccf68d86",
+    "index.py": "84df400c73a2aacf922ff38c0a591b525c2ac1f9b7a9f958f4111d4ceb88d10d",
+    "basis.py": "9ce50feba7cfaa706db3bb94bbe2b34f065d9dbde28a18a3eee021d11e8ec478",
+    "version.py": "1d13b63cb7af46b37f80ac0d695be5f795c2db5ce6e66dea34143da4cb434439"
+  },
+  "local_dependency_sha256": {
+    "L2/l2_core.py": "e8c8fa3378b3531f4fc13faac9902757b97c92c281b2bcd2c02875e0b1c5638d",
+    "L1/l1_recurrence.py": "4b6014359d6cf50d2977ace0524846a5d0bf5498528a382e1c6abde2cb05b884",
+    "L1/l1_r04_checkerboard.py": "1a53cdc4c187edf5ae1e14a60d125b7e2846009134d2d390a68ceb8345506c20"
+  },
+  "input_sha256": "bd2a98cab06f16494f95d89697091aeacebd3a87fdbd760ffaac707bfc57a929",
+  "scope": {
+    "set": "T24",
+    "n": 12,
+    "M": 325,
+    "N": 91,
+    "kernels": [
+      "Haswell",
+      "Nehalem"
+    ]
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "longdouble_mantissa": 63,
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+  },
+  "reference": {
+    "ld_vs_50dps_projector_gap": 1.1171575007031186e-18,
+    "double_vs_50dps_projector_gap": 1.335316835585768e-14,
+    "ld_orthogonality": 1.441040387705749e-18,
+    "normalized_dubiner_condition": 9.1337574761508
+  },
+  "commands": [
+    {
+      "env": {
+        "OPENBLAS_CORETYPE": "Haswell",
+        "OPENBLAS_NUM_THREADS": "1"
+      },
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g0_attribution.py",
+        "--external",
+        "/tmp/padua-lanczos-frontier-g0/polyrat",
+        "--snapshot",
+        "/tmp/padua-lanczos-frontier-g0/replay",
+        "--worker",
+        "/tmp/padua-lanczos-frontier-g0/attribution-pinned/Haswell.npz"
+      ]
+    },
+    {
+      "env": {
+        "OPENBLAS_CORETYPE": "Nehalem",
+        "OPENBLAS_NUM_THREADS": "1"
+      },
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g0_attribution.py",
+        "--external",
+        "/tmp/padua-lanczos-frontier-g0/polyrat",
+        "--snapshot",
+        "/tmp/padua-lanczos-frontier-g0/replay",
+        "--worker",
+        "/tmp/padua-lanczos-frontier-g0/attribution-pinned/Nehalem.npz"
+      ]
+    }
+  ],
+  "cases": {
+    "Haswell": {
+      "xy": {
+        "max_local_residual": 1.0113393154049814e-16,
+        "local_residual_fro": 7.613236282822063e-16,
+        "max_local_residual_over_u": 0.9109334728006013,
+        "normalized_source_fro": 2.9285422404299146e-15,
+        "propagated_error_norm": 1.2401191335125353e-09,
+        "normal_error": 7.595276964927342e-10,
+        "propagated_normal_error": 7.594972264137818e-10,
+        "normal_reconstruction_discrepancy": 2.0173661710825805e-13,
+        "frozen_inverse_50dps_normal_error": 7.595276965077749e-10,
+        "frozen_inverse_50dps_reconstruction_discrepancy": 2.7372159357746393e-18,
+        "ld_vs_50dps_propagation_discrepancy": 7.569319227378202e-13,
+        "normal_amplification_over_residual_fro": 997601.0177530606,
+        "q0_constant": true,
+        "legacy_e6_gap": 7.595275418606441e-10,
+        "fixed_Q_gap_50dps_reference": 7.595276964977086e-10,
+        "fixed_Q_gap_ld_reference": 7.595276965012135e-10,
+        "extended_original_algorithm_gap": 1.9447035481887587e-13,
+        "orthogonality": 6.002062432527284e-16
+      },
+      "yx": {
+        "max_local_residual": 1.1874751714083322e-16,
+        "local_residual_fro": 7.659821072203084e-16,
+        "max_local_residual_over_u": 1.0695825478932561,
+        "normalized_source_fro": 2.929975561599546e-15,
+        "propagated_error_norm": 1.264704436259147e-09,
+        "normal_error": 2.755869867628491e-10,
+        "propagated_normal_error": 2.757396669849763e-10,
+        "normal_reconstruction_discrepancy": 2.75931129524347e-13,
+        "frozen_inverse_50dps_normal_error": 2.755869867578985e-10,
+        "frozen_inverse_50dps_reconstruction_discrepancy": 2.728858829081113e-18,
+        "ld_vs_50dps_propagation_discrepancy": 4.329453839425754e-13,
+        "normal_amplification_over_residual_fro": 359981.86430961796,
+        "q0_constant": true,
+        "legacy_e6_gap": 2.7558694937119657e-10,
+        "fixed_Q_gap_50dps_reference": 2.7558698676355815e-10,
+        "fixed_Q_gap_ld_reference": 2.7558698675320857e-10,
+        "extended_original_algorithm_gap": 2.3013317545493946e-13,
+        "orthogonality": 9.280454259541902e-16
+      },
+      "alt": {
+        "max_local_residual": 1.1355756930431166e-16,
+        "local_residual_fro": 7.005542709499237e-16,
+        "max_local_residual_over_u": 1.0228356536079946,
+        "normalized_source_fro": 1.825190171135752e-15,
+        "propagated_error_norm": 5.385112697679862e-12,
+        "normal_error": 1.3021561039390395e-12,
+        "propagated_normal_error": 1.3020162607344078e-12,
+        "normal_reconstruction_discrepancy": 1.9032568231190447e-15,
+        "frozen_inverse_50dps_normal_error": 1.3021560891671944e-12,
+        "frozen_inverse_50dps_reconstruction_discrepancy": 2.7278032926257676e-18,
+        "ld_vs_50dps_propagation_discrepancy": 3.83527306598911e-15,
+        "normal_amplification_over_residual_fro": 1858.55159939133,
+        "q0_constant": true,
+        "legacy_e6_gap": 1.3027152069570486e-12,
+        "fixed_Q_gap_50dps_reference": 1.3021561006919375e-12,
+        "fixed_Q_gap_ld_reference": 1.3021560854941423e-12,
+        "extended_original_algorithm_gap": 2.584510813048319e-15,
+        "orthogonality": 9.288059605200285e-16
+      },
+      "mirror": {
+        "legacy_e6_gap": 1.4562450797784627e-14,
+        "fixed_Q_gap_50dps_reference": 1.2399859852931148e-14,
+        "extended_original_algorithm_gap": 3.9748604952325426e-18
+      },
+      "adapt": {
+        "legacy_e6_gap": 7.681630418458321e-14,
+        "fixed_Q_gap_50dps_reference": 7.624786176079531e-14,
+        "extended_original_algorithm_gap": 4.81349958211085e-17
+      }
+    },
+    "Nehalem": {
+      "xy": {
+        "max_local_residual": 1.1764437819685004e-16,
+        "local_residual_fro": 8.134433935784679e-16,
+        "max_local_residual_over_u": 1.0596463556191351,
+        "normalized_source_fro": 3.1879596494663087e-15,
+        "propagated_error_norm": 1.0927998360072861e-09,
+        "normal_error": 2.25430241384447e-10,
+        "propagated_normal_error": 2.2538583923522643e-10,
+        "normal_reconstruction_discrepancy": 2.7361868891608146e-13,
+        "frozen_inverse_50dps_normal_error": 2.2543024139199031e-10,
+        "frozen_inverse_50dps_reconstruction_discrepancy": 2.725626451224435e-18,
+        "ld_vs_50dps_propagation_discrepancy": 5.860421810670765e-13,
+        "normal_amplification_over_residual_fro": 277076.2428147803,
+        "q0_constant": true,
+        "legacy_e6_gap": 2.2543053521579852e-10,
+        "fixed_Q_gap_50dps_reference": 2.2543024139089655e-10,
+        "fixed_Q_gap_ld_reference": 2.2543024135324791e-10,
+        "extended_original_algorithm_gap": 1.9447035481887587e-13,
+        "orthogonality": 6.043753470570561e-16
+      },
+      "yx": {
+        "max_local_residual": 1.2017499197755027e-16,
+        "local_residual_fro": 8.098379750756844e-16,
+        "max_local_residual_over_u": 1.0824400981786955,
+        "normalized_source_fro": 3.1664709096319236e-15,
+        "propagated_error_norm": 5.501536521423792e-10,
+        "normal_error": 3.2401076881282477e-10,
+        "propagated_normal_error": 3.2401996367449697e-10,
+        "normal_reconstruction_discrepancy": 1.35521617998511e-13,
+        "frozen_inverse_50dps_normal_error": 3.2401076882545556e-10,
+        "frozen_inverse_50dps_reconstruction_discrepancy": 2.7517374550290246e-18,
+        "ld_vs_50dps_propagation_discrepancy": 6.129690812998261e-13,
+        "normal_amplification_over_residual_fro": 400104.67975920154,
+        "q0_constant": true,
+        "legacy_e6_gap": 3.240107801718023e-10,
+        "fixed_Q_gap_50dps_reference": 3.240107688154506e-10,
+        "fixed_Q_gap_ld_reference": 3.2401076882450554e-10,
+        "extended_original_algorithm_gap": 2.3013317545493946e-13,
+        "orthogonality": 1.6145016861752945e-15
+      },
+      "alt": {
+        "max_local_residual": 9.388989273076969e-17,
+        "local_residual_fro": 7.401448368470673e-16,
+        "max_local_residual_over_u": 0.8456849718323004,
+        "normalized_source_fro": 1.9519938618654242e-15,
+        "propagated_error_norm": 1.2414276091870952e-11,
+        "normal_error": 3.024053032498462e-12,
+        "propagated_normal_error": 3.0232241730752966e-12,
+        "normal_reconstruction_discrepancy": 1.6407382424225564e-15,
+        "frozen_inverse_50dps_normal_error": 3.024053032854603e-12,
+        "frozen_inverse_50dps_reconstruction_discrepancy": 2.7505940897857135e-18,
+        "ld_vs_50dps_propagation_discrepancy": 1.1307870216561942e-14,
+        "normal_amplification_over_residual_fro": 4084.6386039168865,
+        "q0_constant": true,
+        "legacy_e6_gap": 3.024454728216266e-12,
+        "fixed_Q_gap_50dps_reference": 3.024053032996529e-12,
+        "fixed_Q_gap_ld_reference": 3.024053019882044e-12,
+        "extended_original_algorithm_gap": 2.584510813048319e-15,
+        "orthogonality": 1.6174208547969993e-15
+      },
+      "mirror": {
+        "legacy_e6_gap": 2.473495713548506e-14,
+        "fixed_Q_gap_50dps_reference": 2.450650067165511e-14,
+        "extended_original_algorithm_gap": 3.9748604952325426e-18
+      },
+      "adapt": {
+        "legacy_e6_gap": 7.418532006219792e-14,
+        "fixed_Q_gap_50dps_reference": 7.584115538388782e-14,
+        "extended_original_algorithm_gap": 4.81349958211085e-17
+      }
+    }
+  },
+  "kernel_comparison": {
+    "xy": {
+      "Q_entry_max_difference": 2.8343206948111543e-10,
+      "H_entry_max_difference": 4.791082716107051e-11,
+      "computed_span_gap": 7.466774230865839e-10
+    },
+    "yx": {
+      "Q_entry_max_difference": 8.282363683775884e-11,
+      "H_entry_max_difference": 2.5057446222231278e-11,
+      "computed_span_gap": 4.217073871361681e-10
+    },
+    "alt": {
+      "Q_entry_max_difference": 9.077461005091436e-13,
+      "H_entry_max_difference": 2.645305849369173e-13,
+      "computed_span_gap": 2.764079307387945e-12
+    }
+  },
+  "kernel_runtime": {
+    "Haswell": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-fdde5778.so",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell",
+        "sha256": "ee2039cf13a45e1e89f04d0cea9585657d93ffaa425594e1935161013fdf4e12"
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-6cdc3b4a.so",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell",
+        "sha256": "8fb864c29cac4b25f6e2c139491ea96f2724dde42d51394f84e9c4a622e34790"
+      }
+    ],
+    "Nehalem": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-fdde5778.so",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "Nehalem",
+        "sha256": "ee2039cf13a45e1e89f04d0cea9585657d93ffaa425594e1935161013fdf4e12"
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 1,
+        "prefix": "libscipy_openblas",
+        "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-6cdc3b4a.so",
+        "version": "0.3.30",
+        "threading_layer": "pthreads",
+        "architecture": "Nehalem",
+        "sha256": "8fb864c29cac4b25f6e2c139491ea96f2724dde42d51394f84e9c4a622e34790"
+      }
+    ]
+  },
+  "elapsed_seconds": 51.326387882232666,
+  "artifacts": [
+    {
+      "path": "/tmp/padua-lanczos-frontier-g0/attribution-pinned/Haswell-alt-propagation.npz",
+      "bytes": 946890,
+      "sha256": "1c8e41402dd9e1ea50e030d9325af03d98c64b7f83cd1178bed01979ca0ec755"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-g0/attribution-pinned/Haswell-xy-propagation.npz",
+      "bytes": 946890,
+      "sha256": "8eecbf377022581a3fa79a8c82f4856fba4aae61f93ca9366bdcd52e1e46aa9f"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-g0/attribution-pinned/Haswell-yx-propagation.npz",
+      "bytes": 946890,
+      "sha256": "9ec5b76d2ef74f782bf971d4fb6fcb0265625aeb23cfa40648a05e2772ae0b63"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-g0/attribution-pinned/Haswell.npz",
+      "bytes": 4152790,
+      "sha256": "8f9c52b93c0d6bcf3c7b57eb357c1c1dc3b591dfd256487f370cf252dc558173"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-g0/attribution-pinned/Haswell.npz.runtime.json",
+      "bytes": 896,
+      "sha256": "19184353fafc3975429843352027ae80905240babe6e514b3cf4c5070a9e3e58"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-g0/attribution-pinned/Nehalem-alt-propagation.npz",
+      "bytes": 946890,
+      "sha256": "10dca6f26208bf0cc055b3b6fc085d99a480c07b1635e8cadfc1a62242f85b2a"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-g0/attribution-pinned/Nehalem-xy-propagation.npz",
+      "bytes": 946890,
+      "sha256": "6dd229a4001c6753c68ea4a20afbe1ee08b0c4e9ce38b7ba624628d2800202be"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-g0/attribution-pinned/Nehalem-yx-propagation.npz",
+      "bytes": 946890,
+      "sha256": "98a3d0641aa1cb2808c0d89c92b6a387e54ea0cba866b36a5846da2ea0a0944a"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-g0/attribution-pinned/Nehalem.npz",
+      "bytes": 4152790,
+      "sha256": "9ec5d8dd5c9a70d4d370f8bfec659179ce0ec1ab4f174462c377f935d14ac1ab"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-g0/attribution-pinned/Nehalem.npz.runtime.json",
+      "bytes": 896,
+      "sha256": "670456de447bfc46b73ff696a6959760d166e98b7120da5def4c3996f686ade3"
+    },
+    {
+      "path": "/tmp/padua-lanczos-frontier-g0/attribution-pinned/references.npz",
+      "bytes": 1893766,
+      "sha256": "07d3f36baa888d972f511625e06061dc62676875d909a8d1ae78162c4b52aa04"
+    }
+  ],
+  "limits": [
+    "No historical Q/H or dispatch/library binary pin is available; no exact historical causal reconstruction.",
+    "Longdouble residual and inverse computations are diagnostic, not interval certificates.",
+    "Alt H reconstructed by exact operation replay and checked entrywise; mirror/adapt only reference and precision controls.",
+    "No G0 disposition, tolerance change, new theorem, or G1-G4 run."
+  ]
+}
