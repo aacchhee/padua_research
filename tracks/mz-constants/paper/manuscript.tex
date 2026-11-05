@@ -26,14 +26,16 @@
 \DeclareMathOperator{\diag}{diag}
 \title{Marcinkiewicz--Zygmund constants of Clenshaw--Curtis\texorpdfstring{\\}{ }and Padua rules beyond half-exactness}
 \author{Research development draft\thanks{Authorship and submission venue to be decided by AC. This document is not for submission.}}
-\date{31 October 2026}
+\date{5 November 2026}
 \begin{document}
 \maketitle
 \begin{center}\small
 \textbf{Development status.} Independent Astra reconstruction accepted the analytic
 M1--M3 results within its stated scope. Claude audits~01--02 accepted the scientific
 statements and response within their recorded scopes. The prior-art corrections
-are closed by Codex audit~03; no historical novelty clearance is claimed.
+are closed by Codex audit~03. The signed Padua results added in Section~\ref{sec:padua}
+were accepted in the PR~23 audit; their manuscript integration is pending review.
+No historical novelty clearance is claimed.
 Historical priority: \textbf{screened, not cleared} (documented, non-exhaustive search; some fulltexts pending); see Section~\ref{sec:context}.
 \end{center}
 
@@ -56,10 +58,15 @@ An exact witness at $N=512$ excludes a uniform defect bound of $3/4$
 covering that endpoint case, without contradicting a conditional theorem
 of An and Wu. For signed Lebesgue Padua rules, we prove the exact
 factor-two Clenshaw--Curtis marginal and its spectral compression consequence;
-the two-dimensional upper bounds and endpoint asymptotics remain open.
-All proofs are self-contained. That the minimum eigenvalue on the full
-interpolation space is not bounded below, and that the maximum eigenvalue is
-bounded, follow from classical weighted Marcinkiewicz--Zygmund results. In a
+the actual signed Gram form has divergent negative and positive extrema
+along even construction degrees, at every fixed degree ratio above one half.
+Explicit parity carriers and logarithmic boundary-weight asymptotics prove
+this sharp half-exactness threshold. Nevertheless the direct signed
+coefficient hyperinterpolant has a uniform $C\to L^2$ norm below thirty.
+Analytic proofs are included. For CC, the qualitative facts that the
+minimum eigenvalue on the full interpolation space is not bounded below
+and that the maximum eigenvalue is bounded follow from classical weighted
+Marcinkiewicz--Zygmund results. In a
 documented but non-exhaustive search we found no prior statement of the
 two-sided logarithmic order, of a threshold below two, or of the explicit
 constants.
@@ -132,8 +139,10 @@ The upper constant in \eqref{eq:main-upper} is the endpoint corollary
 of the degree-sensitive estimate \eqref{eq:main-ratio}; it equals the
 exact quotient one when $N=2$, and the upper inequality is strict for $N\ge3$.
 At full degree $N$ the upper threshold fails, as an explicit $T_N$
-test shows below. Padua conclusions will be restricted to an exact
-compression and a one-sided asymptotic implication.
+test shows below. For the signed Padua rule the picture is different: Section~\ref{sec:padua}
+proves divergence of both spectral extrema along even construction degrees
+above half-exactness, alongside a uniform bound for its direct coefficient
+operator. These results do not depend on a finite eigenvalue fit.
 
 \paragraph{Attribution and coverage limits.}
 The folded Chebyshev moments used below are established prior algebra:
@@ -937,7 +946,9 @@ of $\lambda_-^{-1/2}$ does not describe the norm of $\mathcal L_n$.
 Neither the general mechanism nor the validity of An--Wu's conditional
 theorem is challenged by this CC application.
 
-\section{An exact Padua compression}\label{sec:padua}
+\section{Signed Padua rules beyond half-exactness}\label{sec:padua}
+
+\subsection{The marginal compression}
 
 Let $\mathcal P_n$ denote bivariate polynomials of total degree at most $n$.
 For a construction index $N\ge2$, use the Padua support
@@ -991,12 +1002,353 @@ liminf after taking limits on the right.
 Proposition~\ref{prop:counterexample} gives the finite consequence.
 \end{proof}
 
-The theorem provides no limsup bound, no Padua positive definiteness, and
-no two-dimensional upper threshold. In particular it does not prove that
-the Padua defect tends to one or that its minimum eigenvalue has the CC
-logarithmic order. For signed weights these require a distinct argument
-on the complement of the univariate subspace. These targets remain open
-(\id{PD-T028}).
+\subsection{Exact density and logarithmic boundary weights}
+
+We now use the actual interpolatory Lebesgue weights, rather than an
+arbitrary degree-$N$ exact rule, and write $m=N$ to match the finite
+Padua records. Put $\theta_j=j\pi/m$, $\phi_k=k\pi/(m+1)$, and let
+$\epsilon_j,\gamma_k$ be one at interior indices and one half at the
+respective endpoints. The positive auxiliary weights
+\[
+ \rho_{jk}=\frac{2\epsilon_j\gamma_k}{m(m+1)},\qquad j+k\text{ even},
+\]
+have mass one; they are distinct from the signed weights $w_{jk}$ of
+$Q_m^\Pa$. Put $c_0=1$, $c_a=2$ for $a>0$, and
+$h_a=\int_{-1}^1T_a(x)\dd x$. Thus $h_a=0$ for odd $a$ and
+$h_a=2/(1-a^2)$ for even $a$.
+
+\begin{lemma}[Integrated cardinal density; \id{PD-T101}, \id{PD-T111}]
+The signed weights satisfy $w_z=\rho_z d_m(z)$, where
+\begin{equation}\label{eq:padua-density}
+ d_m(x,y)=\sum_{a+b\le m}c_ah_ac_bh_bT_a(x)T_b(y)-2h_mT_m(x).
+\end{equation}
+\end{lemma}
+\begin{proof}
+Finite cosine sums on the two Lobatto grids show that
+$\sqrt{c_ac_b}T_a(x)T_b(y)$, $a+b\le m$, are orthogonal for $\rho$,
+with squared norm one except that $(a,b)=(m,0)$ has squared norm two.
+Indeed the checkerboard sum is the full tensor sum plus its alternating
+sum. A nonzero alternating product would require combined frequencies
+at least $m$ and $m+1$, hence total degree at least $2m+1$;
+products under consideration have degree at most $2m$. In the full tensor
+sum only the highest $x$ mode has the exceptional Lobatto norm.
+Their discrete reproducing kernel consequently gives the cardinal function
+at $z=(x_j,y_k)$ as
+\[
+ L_z(x,y)=\rho_z\left\{\sum_{a+b\le m}c_ac_b
+ T_a(x)T_a(x_j)T_b(y)T_b(y_k)-T_m(x)T_m(x_j)\right\}.
+\]
+There are exactly $\dim\mathcal P_m$ orthogonal functions and nodes,
+so this kernel is cardinal. Integrating it proves
+\eqref{eq:padua-density}; the constant $y$ factor in the exceptional
+term has integral two.
+\end{proof}
+
+\begin{theorem}[Boundary weight limit; \id{PD-T295}]\label{thm:padua-weights}
+Let $e_0=1/2$ and $e_j=1$ for $j\ge1$. For fixed nonnegative integers
+$j,k$ with $j+k$ even,
+\begin{equation}\label{eq:padua-weight-limit}
+ \lim_{\substack{m\to\infty\\m\text{ even}}}
+ \frac{m^4w_{jk}}{\log m}=-16e_je_k(-1)^j.
+\end{equation}
+Moreover, for every even $m\ge4$ and every retained node,
+\begin{equation}\label{eq:padua-weight-majorant}
+ |w_{jk}|\le\frac{4096}{m^4}
+       \bigl\{(1+j)(1+k)+\log(m+1)\bigr\}.
+\end{equation}
+The indices in this majorant are distances from the corner $(1,1)$;
+the fixed-index limit is not asserted uniformly across the grid.
+\end{theorem}
+\begin{proof}
+Write $m=2R$, $t_0=2$, $t_a=-4/(4a^2-1)$ for $a\ge1$, and
+\[
+ S_R(t,s)=\sum_{a+b\le R}t_at_b\cos(2at)\cos(2bs).
+\]
+Equation~\eqref{eq:padua-density} gives
+\begin{equation}\label{eq:padua-weight-exact}
+ w_{jk}=\frac{2\epsilon_j\gamma_k}{m(m+1)}
+ \{S_R(\theta_j,\phi_k)-2h_m\cos(m\theta_j)\}.
+\end{equation}
+The absolutely convergent cosine series
+$f(t)=\pi\sin t=\sum_{a\ge0}t_a\cos(2at)$ on $[0,\pi]$
+follows by integrating its coefficients. Equality follows from uniqueness
+of cosine coefficients, or from density of polynomials in $\cos t$.
+Let $T_R(t)=\sum_{a>R}t_a\cos(2at)$ and
+\[
+ V_R(t,s)=\sum_{\substack{1\le a,b\le R\\a+b>R}}
+               t_at_b\cos(2at)\cos(2bs).
+\]
+Absolute convergence gives
+\begin{equation}\label{eq:padua-triangle}
+ S_R=f(t)f(s)-f(t)T_R(s)-f(s)T_R(t)+T_R(t)T_R(s)-V_R(t,s).
+\end{equation}
+Telescoping yields $|T_R|\le2/(2R+1)\le R^{-1}$.
+Since $|t_a|\le4/(3a^2)$, split the omitted triangle into $a\le R/2$,
+$b\le R/2$, and $a,b>R/2$. In the first strip there are at most $a$
+choices of $b$, all greater than $R/2$, so it contributes at most
+$64H_{\lfloor R/2\rfloor}/(9R^2)$; the second contributes the same.
+The last part contributes at most $256/(9R^2)$. Hence
+\[
+ |V_R|\le64(1+\log R)/R^2.
+\]
+Using $\sin\theta_j\le\pi j/m$, $\sin\phi_k\le\pi k/m$ in
+\eqref{eq:padua-triangle}, the bracket in
+\eqref{eq:padua-weight-exact} has absolute value at most
+\[
+ m^{-2}\{\pi^4jk+2\pi^2(j+k)+260+256\log R+16/3\}.
+\]
+Multiplication by $2\epsilon_j\gamma_k/[m(m+1)]\le2/m^2$
+proves \eqref{eq:padua-weight-majorant}.
+
+For fixed $j,k$, the terms other than $V_R$ in
+\eqref{eq:padua-triangle} are $O_{j,k}(R^{-2})$. To evaluate $V_R$,
+fix $0<\delta<1/2$. In its strip $a\le\delta R$, $R-a<b\le R$,
+\[
+ R^2t_b\cos(2b\phi_k)=-(-1)^k+O_k(\delta)+o_R(1),
+ \quad \cos(2a\theta_j)=1+O_j(\delta^2),
+\]
+uniformly, while
+$\sum_{a\le\delta R}a t_a=-\log R+O_\delta(1)$.
+Thus this strip contributes $(-1)^k+O_{j,k}(\delta)+o_R(1)$
+to $R^2V_R/\log R$. The strip $b\le\delta R$ contributes
+$(-1)^j$ in the same way. The middle has absolute value at most
+$16/(9\delta^4R^2)$, hence gives zero after this normalization.
+Taking $R\to\infty$ and then $\delta\downarrow0$ gives
+\[
+ R^2V_R/\log R\longrightarrow(-1)^j+(-1)^k.
+\]
+Substitution into \eqref{eq:padua-weight-exact}, using
+$(-1)^j=(-1)^k$ on the checkerboard and
+$\epsilon_j\gamma_k=e_je_k$ eventually, proves
+\eqref{eq:padua-weight-limit}.
+\end{proof}
+
+\subsection{Two signed carriers and the exact ratio threshold}
+
+Define the degree-$r$ Fej\'er polynomial by
+\begin{equation}\label{eq:padua-fejer}
+ F_r(\cos t)=\frac1{r+1}
+  \left(\frac{\sin((r+1)t/2)}{\sin(t/2)}\right)^2
+ =1+2\sum_{\ell=1}^r\left(1-\frac\ell{r+1}\right)\cos(\ell t).
+\end{equation}
+Its value at $t=0$ is $r+1$. All norms in this subsection use
+unnormalized Lebesgue measure.
+
+\begin{theorem}[Signed countersequences; \id{PD-N105}, \id{PD-N106}]\label{thm:padua-carriers}
+Fix $a,b>0$ and put $r=\lfloor am\rfloor$, $s=\lfloor bm\rfloor$.
+Along even $m$, if $a+b<1/2$, the polynomials
+\[
+ p_m^-(x,y)=T_{m/2}(x)F_r(x)F_s(y)
+\]
+have degree at most $m-1$ eventually and satisfy
+\begin{equation}\label{eq:padua-negative}
+ Q_m^\Pa((p_m^-)^2)/\log m\longrightarrow-16ab/9.
+\end{equation}
+If $2a+b<1/2$, the polynomials
+\[
+ p_m^+(x,y)=\tfrac12\{T_{m/2-r}(x)-T_{m/2+r}(x)\}F_r(x)F_s(y)
+\]
+also have degree at most $m-1$ eventually and satisfy
+\begin{equation}\label{eq:padua-positive}
+ Q_m^\Pa((p_m^+)^2)/\log m\longrightarrow8ab/9.
+\end{equation}
+Both sequences are nonzero and have squared norm at most $C_0^2$,
+where $C_0=(1+\pi^4)/2$. Consequently
+\[
+ \lamin(G^\Pa_{m,m-1})\longrightarrow-\infty,\qquad
+ \lamax(G^\Pa_{m,m-1})\longrightarrow+\infty
+ \quad(m\text{ even}).
+\]
+\end{theorem}
+\begin{proof}
+The degrees are $m/2+r+s$ and $m/2+2r+s$ respectively, so the
+strict parameter inequalities give admissibility. The second carrier
+factor at $x=\cos t$ equals $\sin(mt/2)\sin(rt)$ and has modulus
+at most one, as does $T_{m/2}$. For $L=r+1$,
+\[
+ |F_r(\cos t)|\le\min\{L,\pi^2/(Lt^2)\}.
+\]
+Splitting its squared integral at $1/L$ and using $\sin t\le t$
+gives $\|F_r\|_2^2\le(1+\pi^4)/2=C_0$. Product integration proves
+the asserted norm bound; the nonzero leading coefficients prove
+nonvanishing.
+
+For a mesh denominator $M$ and endpoint halfweights $c_j$, elementary
+cosine sums give, for every cosine polynomial $h$ of degree $<M$,
+\begin{equation}\label{eq:padua-trapezoid}
+ \sum_{j=0}^M c_jh(j\pi/M)=M\widehat h_0,\qquad
+ \sum_{j=0}^M c_j(-1)^jh(j\pi/M)=0.
+\end{equation}
+The constant cosine coefficient of $F_r^2$ is
+\[
+ D_r=1+2\sum_{\ell=1}^r(1-\ell/(r+1))^2
+     =1+\frac{r(2r+1)}{3(r+1)},\qquad D_r/r\to2/3.
+\]
+For the negative carrier, the $x$ profile
+$U_{m,j}=\cos^2(j\pi/2)[F_r(\cos\theta_j)/m]^2$
+vanishes at odd $j$ and has weighted sum $D_r/(2m)\to a/3$.
+The $y$ profile $V_{m,k}=[F_s(\cos\phi_k)/m]^2$ has weighted sum
+$(m+1)D_s/m^2\to2b/3$ and alternating sum zero. These identities use
+$2r<m$, $2s<m+1$, which hold eventually.
+
+For the positive carrier replace the $x$ profile by
+\[
+ U^+_{m,j}=\sin^2(j\pi/2)\sin^2(r\theta_j)
+                      [F_r(\cos\theta_j)/m]^2.
+\]
+It vanishes for even $j$. The polynomial
+$h_r(\cos t)=\sin^2(rt)F_r(\cos t)^2$ has degree $4r<m$ and constant
+coefficient $D_r/2-1/[2(r+1)^2]$: the coefficient of $T_{2r}$ in
+$F_r^2$ is $2/(r+1)^2$. By \eqref{eq:padua-trapezoid},
+$\sum_j\epsilon_jU^+_{m,j}\to a/6$.
+
+Here each profile converges at fixed indices, and the geometric bound
+for $F_r$ gives $|F_r(\cos\theta_j)|/m\le C_a(1+j)^{-2}$
+on the entire mesh, with the analogous $y$ bound. Together with
+\eqref{eq:padua-weight-majorant}, the normalized signed summand is
+bounded by a constant times $(1+j)^{-3}(1+k)^{-3}$. Extend arrays by
+zero outside their grids and apply dominated convergence. The finite
+profile identities therefore also identify their infinite limiting
+sums. For the negative carrier only even $j$ and even $k$ remain,
+so \eqref{eq:padua-weight-limit} gives
+$-16(a/3)(b/3)=-16ab/9$. For the positive carrier only odd $j$ and
+odd $k$ remain, giving $16(a/6)(b/3)=8ab/9$.
+This proves \eqref{eq:padua-negative}--\eqref{eq:padua-positive}.
+The continuous norms are positive and bounded above by $C_0^2$;
+the variational principle then gives the two divergences. No finite
+threshold is inferred from these limits.
+\end{proof}
+
+\begin{corollary}[Sharp half-degree threshold; \id{PD-N107}]\label{cor:padua-ratio}
+For $0\le\theta\le1/2$ and $n\le\theta m$, exactness gives
+$G^\Pa_{m,n}=I$. For every fixed $1/2<\theta<1$,
+\[
+ \lamin(G^\Pa_{m,\lfloor\theta m\rfloor})\to-\infty,\qquad
+ \lamax(G^\Pa_{m,\lfloor\theta m\rfloor})\to+\infty
+ \quad(m\text{ even}).
+\]
+Thus there is no uniform strong signed MZ constant $\eta_\theta<1$
+above half-exactness.
+\end{corollary}
+\begin{proof}
+For the first statement $2n\le m$. For the second set
+$a=b=(\theta-1/2)/4$ in the two carriers. Their degrees are bounded
+respectively by $(1/2+2a)m<\theta m$ and
+$(1/2+3a)m<\theta m$. The preceding proof and norm bounds apply.
+\end{proof}
+
+The positivity and upper-threshold assertions formerly posed in
+\id{PD-T028}, \id{PD-T110} and \id{PD-T116} are refuted for this signed
+rule. Their retained registry status \texttt{OPEN} does not override
+the binding \texttt{REJECTED: refuted} dispositions. The conclusions do
+not apply to positive Chebyshev Padua cubature or tensor CC rules.
+
+\subsection{A uniform signed hyperinterpolation norm}
+
+For a Lebesgue-orthonormal basis $P_1,\ldots,P_d$ of $\mathcal P_n$,
+define the direct signed coefficient operator
+\[
+ H_{m,n}f=\sum_{i=1}^dQ_m^\Pa(fP_i)P_i.
+\]
+It is distinct from inverse-Gram least squares. Euclidean duality gives
+\begin{equation}\label{eq:padua-L1-norm}
+ \|H_{m,n}\|_{C\to L^2}
+ =\sup_{\substack{p\in\mathcal P_n\\\|p\|_2=1}}
+          \sum_z|w_z|\,|p(z)|.
+\end{equation}
+Indeed the inequality in one direction follows by duality and the
+triangle inequality. Equality follows by assigning the signs of
+$w_zp(z)$ as bounded continuous data at the finitely many distinct nodes.
+
+\begin{theorem}[Uniform coefficient norm; \id{PD-T297}]\label{thm:padua-operator}
+For every $m\ge2$ and $0\le n<m$,
+\[
+ 2\le\|H_{m,n}\|_{C\to L^2}\le C_{\Pa}<30,\qquad
+ C_{\Pa}=\frac{4\sqrt2\,\pi}{\pi-4/3}
+       +\frac{68}{3}\left(\frac12+\frac1\pi\right)
+       =28.3763348311\ldots.
+\]
+\end{theorem}
+\begin{proof}
+Let $g(x)=\pi\sqrt{1-x^2}$, $R=\lfloor m/2\rfloor$, and $M=2R+1$.
+The absolutely convergent coefficients $t_r$ used above have
+$\sum|t_r|=4$. Since $\sum_{j=0}^q t_j=2/(2q+1)$, summing the triangle first in
+its second coordinate gives
+\[
+ A_R=\frac4M-8\sum_{i=1}^R
+       \frac1{(2i-1)(2i+1)(M-2i)}.
+\]
+Partial fractions, followed by the sums over $2i-1$, $2i+1$ and $M-2i$,
+give
+\[
+ A_R:=\sum_{r+s\le R}t_rt_s
+ =\frac8{M(M+1)}-\frac{16}{M^2-1}
+              \sum_{i=1}^R\frac1{2i-1}\ge-\frac4M.
+\]
+For the last inequality use
+$\sum_{i=1}^R(2i-1)^{-1}\le(R+2)/3\le R(R+2)/M$.
+Changing signed coefficients to absolute values affects only the two
+nonzero coordinate axes. Their total change is $16-16/M$; hence
+\[
+ \sum_{r+s>R}|t_rt_s|=16/M-A_R\le20/M\le20/m.
+\]
+The exceptional term of \eqref{eq:padua-density} vanishes for odd $m$;
+for even $m$, $2|h_m|=4/(m^2-1)\le8/(3m)$. Consequently
+\begin{equation}\label{eq:padua-density-tail}
+ \|d_m-g\otimes g\|_\infty\le68/(3m).
+\end{equation}
+
+Put $\dd\nu=\dd x/(\pi\sqrt{1-x^2})$ and $\kappa=1/2+1/\pi$.
+For a univariate polynomial $q$ of degree $\le m-1$, the Legendre
+expansion gives $\|q\|_\infty^2\le m^2\|q\|_2^2/2$.
+In $\pi^{-1}\int_0^\pi q(\cos t)^2\dd t$, the middle interval
+$[1/m,\pi-1/m]$ contributes at most $(m/2)\|q\|_2^2$ because
+$\sin t\ge2/(\pi m)$; the two remaining intervals contribute at most
+$(m/\pi)\|q\|_2^2$. Thus
+\[
+ \int q^2\dd\nu\le\kappa m\int q^2\dd x.
+\]
+Apply this in both coordinates. Discrete cosine orthogonality below
+the exceptional mode gives
+$\sum_z\rho_zp(z)^2=\int p^2\dd(\nu\otimes\nu)$
+for $p\in\mathcal P_{m-1}$. Since $\sum\rho_z=1$,
+\begin{equation}\label{eq:padua-raw-L1}
+ \sum_z\rho_z|p(z)|\le\kappa m\|p\|_2.
+\end{equation}
+
+Let $v_z=\rho_zg(x_z)g(y_z)\ge0$, and put $\alpha=\pi-4/3$.
+The CC interior weight estimate used in
+Lemma~\ref{lem:weight-comparison}, with its displayed error estimate,
+gives $w_{N,j}^{\CC}\ge\alpha\sin(j\pi/N)/N$.
+The bound has zero right side at endpoints as well. Hence
+\[
+ v_{jk}\le\frac{2\pi^2}{\alpha^2}w_{m,j}^{\CC}w_{m+1,k}^{\CC}.
+\]
+Enlarge the sum to the positive tensor grid and apply the CC upper
+bound twice to obtain
+$\sum_zv_zp(z)^2\le8\pi^2\|p\|_2^2/\alpha^2$.
+Reflection on the odd one of the two meshes cancels the alternating
+sine sum, while
+$\sum_{j=1}^{N-1}\sin(j\pi/N)=\cot(\pi/(2N))$.
+It follows that
+\[
+ \sum_zv_z=\frac{\pi^2}{m(m+1)}
+ \cot\frac\pi{2m}\cot\frac\pi{2(m+1)}\le4.
+\]
+Cauchy--Schwarz gives
+$\sum_zv_z|p(z)|\le4\sqrt2\pi\|p\|_2/\alpha$.
+Finally \eqref{eq:padua-density-tail} implies
+$|w_z|\le v_z+[68/(3m)]\rho_z$. Combine this with
+\eqref{eq:padua-raw-L1} and \eqref{eq:padua-L1-norm} for the upper
+bound. Exactness reproduces the constant one, whose $L^2$ norm on
+the square is two, proving the lower bound.
+\end{proof}
+
+Uniformity of this operator norm does not require signed Gram positivity
+or an upper signed MZ inequality. Reproduction is guaranteed on
+$\mathcal P_k$ when $0\le k\le\min(n,m-n)$. At $n=m-1$ this only
+supplies $k\le1$; the uniform norm alone is not a fixed-function
+convergence theorem at that endpoint.
 
 \section{Finite observations and unresolved sharpenings}\label{sec:numerics}
 
@@ -1045,6 +1397,33 @@ The two negative weights in each listed Padua experiment underscore the
 need to retain a signed-form argument. Finite positive eigenvalues alone
 give no all-degree positive-definiteness theorem.
 
+The accepted exact rational-pencil computations give the following
+strict finite brackets, independently reconstructed with exact arithmetic
+(\id{PD-T298}, \id{PD-T299}):
+\begin{center}
+\begin{tabular}{rccc}\toprule
+$m$ & $n$ & $\lambda_-$ & $\lambda_+$\\\midrule
+60 & 59 & $(0.188593,0.188594)$ & $(1.802011,1.802012)$\\
+80 & 79 & $(0.172730,0.172731)$ & $(1.816497,1.816498)$\\\bottomrule
+\end{tabular}
+\end{center}
+Here the decimal endpoints are exact rationals. In the product-Chebyshev
+basis let $H$ and $Q$ be the exact continuous and quadrature Gram
+matrices. At each proposed endpoint $t$, an integer congruence transforms
+a positive multiple of $Q-tH$ into a symmetric strictly diagonally
+dominant matrix. Turning off its off-diagonal entries preserves
+nonsingularity, so its diagonal signs give its inertia. Nonsingularity
+also proves the proposed square congruence matrix invertible.
+Since $H$ is positive definite, negative inertia counts eigenvalues below
+$t$: the exact counts are $0,1$ at the minimum endpoints and $d-1,d$ at
+the maximum endpoints. Both producer and independent reconstruction
+accepted these checks at each of the two degrees. This is a
+computer-assisted finite result under the recorded GMP/FLINT and checker
+trust; the repository provides the code and short receipts. It asserts
+neither positivity between untested degrees nor an all-degree bound.
+The finite brackets are compatible with the later divergence in
+Theorem~\ref{thm:padua-carriers}.
+
 Several sharper questions remain separate from the proved comparisons.
 First, neither existence nor value of
 $\lim_{N\to\infty}(\log N)^2\lambda_-(N,N-1)$ is proved
@@ -1052,17 +1431,22 @@ $\lim_{N\to\infty}(\log N)^2\lambda_-(N,N-1)$ is proved
 its existence and exact value, and a uniform endpoint bound $B<2$ are
 open (\id{PD-T027}). Table~\ref{tab:cc} stops at $N=1280$;
 the supplied $N=20480$ output has not been reproduced and supplies no
-claim here. Third, the Padua positivity, upper threshold, endpoint order,
-and defect convergence remain open as specified after
-Theorem~\ref{thm:padua}. These mathematical questions are distinct from
-the pending historical source comparison and required Claude audit.
+claim here. Third, for the signed Padua rule, Theorem~\ref{thm:padua-carriers}
+refutes the universal positivity and upper-threshold conjectures and the
+proposed positive endpoint orders and convergence of the defect to one.
+The first finite negative witness, odd-construction-degree classification,
+and sharp growth constants are separate quantitative questions; the
+accepted even-degree carriers give no explicit onset. Sharp direct-operator
+norms and endpoint fixed-function convergence also remain separate.
+These mathematical questions are distinct from historical priority and
+the review of the present manuscript integration.
 
 \paragraph{Reproducibility and claim identification.}
 The accompanying README gives exact compilation and numerical commands,
 artifact hashes, and links to the theory and evidence. The final
 \id{PD-T}/\id{PD-N} identifiers in theorem headings refer to the durable
 repository claims; bibliography keys use the final \id{LIT} allocation.
-These identifiers do not confer publication or audit readiness. All
+These identifiers do not confer publication or audit readiness. Analytic
 proofs of the central CC and Padua statements have been included here;
 no private manuscript is a mathematical dependency.
 
