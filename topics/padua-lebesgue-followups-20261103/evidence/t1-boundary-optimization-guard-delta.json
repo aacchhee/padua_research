@@ -1,0 +1,23 @@
+{
+  "controls": [
+    {
+      "flag": "-O",
+      "refused_before_import": true,
+      "returncode": 1
+    },
+    {
+      "flag": "-OO",
+      "refused_before_import": true,
+      "returncode": 1
+    }
+  ],
+  "executed_generation_source_remains_old": true,
+  "format": "t1-boundary-guard-only-delta-v1",
+  "new_sha256": "a70e25326e513e65554c197c62d3fe684d45f6e54aa72e2e6df68bc5a25510bb",
+  "old_git_blob": "011b8c4174bf1506479021f306c65da71f173e1e",
+  "old_git_commit": "f346d99261aa695a55d118f6d543b8fb417c2bb7",
+  "old_sha256": "7753e4ba8bc440133a46e6f5325e8b5531f20e5a20d8d0aa6778a32bacbdb7f0",
+  "old_source_copy": "/workspace/scratch/lebesgue-t1/executed-sources/t1_boundary.py",
+  "remaining_module_ast_identical": true,
+  "remove_exact_guard_restores_old_bytes": true
+}

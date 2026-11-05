@@ -1,0 +1,194 @@
+{
+  "checker": "Codex gpt-6-astra high",
+  "direct_double_integral_diagnostic": {
+    "code_sha256": "8ce0fe4516d6f8e076ba0ed35648879b024a981400c1fa4a4358589a3beb1953",
+    "command": "python topics/padua-lebesgue-followups-20261103/evidence/analytic-independent-double-diagnostic.py",
+    "exit_code": 0,
+    "max_abs_difference_from_series_midpoint_float": 3.552713678800501e-15,
+    "output_sha256": "697bbad5335798468fb80c720c973accec95ba0a1cb7001e75c5063fbf79e54a",
+    "rows": [
+      {
+        "horizontal": 1.0000000000000002,
+        "m": 0,
+        "vertical": 0.5485148423995582
+      },
+      {
+        "horizontal": 1.0675180074406827,
+        "m": 0.25,
+        "vertical": 0.6941779799375062
+      },
+      {
+        "horizontal": 1.1657259834417526,
+        "m": 0.5,
+        "vertical": 0.8827756416527843
+      },
+      {
+        "horizontal": 1.3405785602591447,
+        "m": 0.75,
+        "vertical": 1.1684098246651837
+      },
+      {
+        "horizontal": 2.2140396535603792,
+        "m": 0.99,
+        "vertical": 2.2009074981919747
+      }
+    ],
+    "scipy_version": "1.17.0",
+    "scope": "Floating diagnostic of inherited original double integrals at exact fraction switches. It does not certify the formula, digits, or quadrature errors.",
+    "status": "MEASURED_ONLY"
+  },
+  "direct_outward_quadrature": {
+    "all_five_series_enclosures_contained": true,
+    "code_sha256": "7f8f5772576ed8fe765adb9bf5328e9f8b90b88f2499edf928b45d522a14f656",
+    "command": "python topics/padua-lebesgue-followups-20261103/code/t3_quadrature.py --series-receipt topics/padua-lebesgue-followups-20261103/evidence/t3-series-developer.json --output /workspace/scratch/lebesgue-analytic-check/t3-quadrature-final-rerun.json",
+    "exit_code": 0,
+    "final_replay_exit_code": 0,
+    "initial_output_sha256": "4589b44015df9e4209c0a54dd2ae0643e2dafbf144a64cbe726022421c5637a2",
+    "matches_developer_quadrature_json_exactly": true,
+    "output_sha256": "99d3ed87fc421818ff58a6d083f5109236062da2835df6a443cb603043d77edb",
+    "parameters": {
+      "endpoint_tail_width": "1/4096",
+      "inner_cells": 128,
+      "outer_cells": 64,
+      "precision": 42,
+      "vertical_cells": 512
+    },
+    "series_receipt_sha256": "06de81671732b4d487e4cf0fe3463f55ac23dc10928b66ebcc89de2e5f45d3b8",
+    "trusted_base": "Python Decimal directed +,-,*,/ and correctly rounded sqrt/ln widened by adjacent decimal; proved positive monotone Darboux bounds and explicit endpoint tail."
+  },
+  "extreme_endpoint_control": {
+    "arithmetic": "exact Fraction",
+    "bits": 309,
+    "checks": [
+      "p.hi < 1",
+      "p.lo*p.lo <= m <= p.hi*p.hi"
+    ],
+    "command_python": "import sys; from fractions import Fraction as Q; sys.path.insert(0,\"topics/padua-lebesgue-followups-20261103/code\"); import t3_series as s; m=1-Q(1,2**300); p=s.sqrt_q(m,bits=max(256,m.denominator.bit_length()+8)); assert p.hi<1 and p.lo*p.lo<=m<=p.hi*p.hi",
+    "m": "1-2^-300",
+    "result": "PASS"
+  },
+  "final_code_impact": "Adaptive sqrt precision max(256,denominator.bit_length()+8) preserves all default outputs and guarantees upper sqrt endpoint below1. Final exact evaluator separately rerun with exit0 and exact final developer JSON agreement.",
+  "final_theory_impact": "Final metadata adds completed-check wording, verification links, trusted arithmetic and value-table references. Inspected updates and t3-verification.md; accepted mathematical statements/proofs and numerical values remain unchanged.",
+  "initial_series_code_sha256": "405bc337edd181b7a5ec6c3e32d895a4dbd9fe303fb33ab336b24fb44aeddff0",
+  "initial_series_rerun_sha256": "19bc9496006a69db83a5e12f4a47173a29e6cd661a7aae4d2851d0ba47e88059",
+  "initial_theory_sha256": {
+    "t2-01-edge-centre-minima.md": "afc8585aa1482a3b4c88c7898efd54a1e84db32487150b7848fa408765ec1b6d",
+    "t2-02-common-endpoint-expansion.md": "ae2c2bdc80fa584a1308995df61a83c26b5bf967ee7a96b26e75fb46e532e4ac",
+    "t3-01-general-position-series.md": "cb51af3768e13f5fe133ece49a919503e8e98c9e83aff4116f4fc4fc11fd3cb1"
+  },
+  "kind": "supplementary independent checks, not required Claude audit",
+  "matches_developer_series_json_exactly": true,
+  "python": "3.12.14",
+  "series_code_sha256": "55e2a9760e52f3ce522dddc707f87f60ff1d71877695ad2804485edd72cec259",
+  "series_command": "python topics/padua-lebesgue-followups-20261103/code/t3_series.py --terms 72 --digits 16 --output /workspace/scratch/lebesgue-analytic-check/t3-series-final-rerun.json",
+  "series_exit_code": 0,
+  "series_rerun_sha256": "06de81671732b4d487e4cf0fe3463f55ac23dc10928b66ebcc89de2e5f45d3b8",
+  "series_rows": [
+    {
+      "horizontal": {
+        "lower": "1.0000000000000000",
+        "lower_rational": "1",
+        "upper": "1.0000000000000000",
+        "upper_rational": "1"
+      },
+      "horizontal_chart": "centre",
+      "horizontal_tail_upper": "0.000000000000000000000",
+      "m_cos_beta_squared": "0",
+      "terms_through": 72,
+      "vertical": {
+        "lower": "0.5485148423995582",
+        "lower_rational": "2742574211997791/5000000000000000",
+        "upper": "0.5485148423995583",
+        "upper_rational": "5485148423995583/10000000000000000"
+      },
+      "vertical_tail_upper": "0.000000000000000000001"
+    },
+    {
+      "horizontal": {
+        "lower": "1.0675180074406826",
+        "lower_rational": "5337590037203413/5000000000000000",
+        "upper": "1.0675180074406827",
+        "upper_rational": "10675180074406827/10000000000000000"
+      },
+      "horizontal_chart": "centre",
+      "horizontal_tail_upper": "0.000000000000000000001",
+      "m_cos_beta_squared": "1/4",
+      "terms_through": 72,
+      "vertical": {
+        "lower": "0.6941779799375061",
+        "lower_rational": "6941779799375061/10000000000000000",
+        "upper": "0.6941779799375062",
+        "upper_rational": "3470889899687531/5000000000000000"
+      },
+      "vertical_tail_upper": "0.000000000000000000001"
+    },
+    {
+      "horizontal": {
+        "lower": "1.1657259834417526",
+        "lower_rational": "5828629917208763/5000000000000000",
+        "upper": "1.1657259834417527",
+        "upper_rational": "11657259834417527/10000000000000000"
+      },
+      "horizontal_chart": "centre",
+      "horizontal_tail_upper": "0.000000000000000000001",
+      "m_cos_beta_squared": "1/2",
+      "terms_through": 72,
+      "vertical": {
+        "lower": "0.8827756416527839",
+        "lower_rational": "8827756416527839/10000000000000000",
+        "upper": "0.8827756416527840",
+        "upper_rational": "55173477603299/62500000000000"
+      },
+      "vertical_tail_upper": "0.000000000000000000001"
+    },
+    {
+      "horizontal": {
+        "lower": "1.3405785602591445",
+        "lower_rational": "2681157120518289/2000000000000000",
+        "upper": "1.3405785602591446",
+        "upper_rational": "6702892801295723/5000000000000000"
+      },
+      "horizontal_chart": "endpoint",
+      "horizontal_tail_upper": "0.000000000000000000001",
+      "m_cos_beta_squared": "3/4",
+      "terms_through": 72,
+      "vertical": {
+        "lower": "1.1684098246651837",
+        "lower_rational": "11684098246651837/10000000000000000",
+        "upper": "1.1684098246651838",
+        "upper_rational": "5842049123325919/5000000000000000"
+      },
+      "vertical_tail_upper": "0.000000000000000000001"
+    },
+    {
+      "horizontal": {
+        "lower": "2.2140396535603800",
+        "lower_rational": "110701982678019/50000000000000",
+        "upper": "2.2140396535603801",
+        "upper_rational": "22140396535603801/10000000000000000"
+      },
+      "horizontal_chart": "endpoint",
+      "horizontal_tail_upper": "0.000000000000000000001",
+      "m_cos_beta_squared": "99/100",
+      "terms_through": 72,
+      "vertical": {
+        "lower": "2.2009074981919784",
+        "lower_rational": "2751134372739973/1250000000000000",
+        "upper": "2.2009074981919785",
+        "upper_rational": "4401814996383957/2000000000000000"
+      },
+      "vertical_tail_upper": "0.000000000000000000001"
+    }
+  ],
+  "theory_sha256": {
+    "t2-01-edge-centre-minima.md": "5b1156c384dbf22b9d6749a840f4d78c36f0a1e60a2e8d5fc12e30af309b4c42",
+    "t2-02-common-endpoint-expansion.md": "a61f3371445bae5bfa71f5b1947f63696697f97ac42c0f742c4eb4d587f98da3",
+    "t3-01-general-position-series.md": "8eae6849e3a5c756356864bb97dcd3d9fd25b09d2ac58ec93bb96a9e054a3ce5"
+  },
+  "trusted_base": [
+    "Python exact integer/Fraction arithmetic",
+    "proved Machin arctangent, positive atanh log, integer-square-root enclosures",
+    "written analytic series/moments and positive-tail bounds"
+  ],
+  "verification_record_sha256": "76cc781df818064d97eff256ea21f30ee5ec1d8f02f0132cc1f88ed701f2089d"
+}

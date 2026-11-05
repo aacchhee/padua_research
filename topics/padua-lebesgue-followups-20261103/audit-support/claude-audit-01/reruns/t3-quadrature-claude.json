@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "arithmetic": "outward Decimal Darboux quadrature",
+  "precision": 42,
+  "python": "3.13.18",
+  "vertical_cells": 512,
+  "outer_cells": 64,
+  "inner_cells": 128,
+  "endpoint_tail_width": "1/4096",
+  "source_sha256": "7f8f5772576ed8fe765adb9bf5328e9f8b90b88f2499edf928b45d522a14f656",
+  "series_receipt_sha256": "440c3fda6243d79dc6dfbdde004b4f76c4762cd9936f16a619a0b65febbda3c3",
+  "rows": [
+    {
+      "m_cos_beta_squared": "0",
+      "vertical": {
+        "lower": "0.548478922725307555879202381798627159077618",
+        "upper": "0.548550723991378660327746794809383200306720"
+      },
+      "horizontal": {
+        "lower": "0.983355658860709694205849852761513542119957",
+        "upper": "1.02444073395930674368169397329032191129744"
+      },
+      "contains_exact_series_enclosures": true
+    },
+    {
+      "m_cos_beta_squared": "1/4",
+      "vertical": {
+        "lower": "0.694120010932652069586186151628694371694190",
+        "upper": "0.694235887614904335472569599005514558387939"
+      },
+      "horizontal": {
+        "lower": "1.05016214879229734903799314161586507973097",
+        "upper": "1.09268450606247262863265289272945153413416"
+      },
+      "contains_exact_series_enclosures": true
+    },
+    {
+      "m_cos_beta_squared": "1/2",
+      "vertical": {
+        "lower": "0.882622135655630544861691678232066236933147",
+        "upper": "0.882929016587407837141472987511890554853500"
+      },
+      "horizontal": {
+        "lower": "1.14731688274033194552041720496331432973447",
+        "upper": "1.19196871419673533465942648542542131155180"
+      },
+      "contains_exact_series_enclosures": true
+    },
+    {
+      "m_cos_beta_squared": "3/4",
+      "vertical": {
+        "lower": "1.16795116473103118763581165120995800295532",
+        "upper": "1.16886823731171444980261302713822321287664"
+      },
+      "horizontal": {
+        "lower": "1.32020819259538056480689573430486231832701",
+        "upper": "1.36883148454386110332494979403545526936977"
+      },
+      "contains_exact_series_enclosures": true
+    },
+    {
+      "m_cos_beta_squared": "99/100",
+      "vertical": {
+        "lower": "2.19595159669402423763729650127884635187370",
+        "upper": "2.20586299708846926943086710091796153598676"
+      },
+      "horizontal": {
+        "lower": "2.18059377503719058703280371902576569462576",
+        "upper": "2.25584263012691540245723744255558632032643"
+      },
+      "contains_exact_series_enclosures": true
+    }
+  ]
+}

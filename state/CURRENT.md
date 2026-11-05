@@ -94,3 +94,48 @@ obligation for these committed finite certificates. Only AC merges.
 PD-T099 stays OPEN: no effective global n0, unknown bridge33<=n<N_*, degree40 uncertified,33–39 unrun. PD-T249 adds three exact finite E-C comparisons; all-n E-C, interior-to-boundary comparison and uniform remainder/defect control remain OPEN. PD-T247/248/252 stay MEASURED; PD-N084–086 kill only their specified mechanisms. G8 coverage is partial, with no1-D proof transfer or novelty claim.
 
 [audit-01](../topics/padua-argmax-effective-20261103/audit-01.md) and [response-check-01](../topics/padua-argmax-effective-20261103/response-check-01.md) accept the existing scopes. Final registration/preparation are completed work after merge; no subsequent Claude check or computation is queued. Raw archive delivery and developer per-receipt compiler/GMP mapping remain disclosed limitations, not new proof obligations. Only AC merges.
+
+## Padua Lebesgue follow-ups — completed scoped results, 2026-11-05
+
+[Report](../topics/padua-lebesgue-followups-20261103/report.md) and
+[registered results](../results/padua-lebesgue-followups-20261103.md): existing
+PD-T184 proves exactly 44 strict interior maxima at n=8; existing PD-T180
+proves exactly 62 strict relative maxima on the closed square, decomposed as
+44 interior + 16 open-edge + 2 non-node-corner. Complete original-predicate
+replays, fresh proof-input identity, literal joining and original final accounting
+are recorded in [actual verification](../topics/padua-lebesgue-followups-20261103/independent-checks-t1.md)
+and the [completion record](../topics/padua-lebesgue-followups-20261103/theory/t1-closed-count.md).
+Claude also completed one monolithic original run. IDEA-299 is retained/completed
+at its registered count-continuation scope. The historical PR12/PR17 exact n8
+count OPEN clauses above are superseded only at this scope; earlier deadline
+failures remain failed executions. PD-T100 remains MEASURED, PD-T183 retains its
+separate lower bound, and PD-T181 retains its separately accepted global theorem.
+LIT-388 v1 Table 3 receives a certified candidate correction from numerical
+38/56 to proved 44/62; no accepted erratum, author contact or later-version
+coverage is claimed.
+
+PD-T266 proves unique centre minima of both limiting edge defects (vertical g,
+horizontal exactly 1); PD-T267 proves their common logarithmic endpoint expansion;
+PD-T268 gives all-interior-angle geometric series with explicit tails.
+PD-T269 proves the parity-independent corner-defect limit and series, PD-T270
+the all-n one-dimensional quadratic bound (sharpening PD-T158), and PD-T271
+the corner constant c with an explicit vanishing remainder. The separate retained
+candidates are IDEA-356/357/358. Dated supersession: earlier CURRENT/RESULTS
+limiting-integral center-minimality and general-beta-series OPEN clauses are
+superseded at exactly PD-T266/268's scopes; old clauses remain historical.
+Finite-degree ordering and effective degree rates are excluded. PD-T098's full
+-1/N and O(log N/N²) expansion remains OPEN; PD-T099's all-degree bridge is
+unchanged. Finite PSLQ nulls remain MEASURED.
+
+[Claude audit-01](../topics/padua-lebesgue-followups-20261103/audit-01.md) accepts
+the mathematics; [response-01](../topics/padua-lebesgue-followups-20261103/response-01.md)
+answers all nine minor findings. The T2/T3 prospective-gate timing deviation
+remains confirmed, not waived or cured, with minor impact assessed by Claude and
+acceptance left to AC; see the [qualified gate](../topics/padua-lebesgue-followups-20261103/gate-t2-t3.md).
+Registration, fresh reservation checks and integration rehearsal are complete.
+AC-directed archival moved 326 raw captures out of the tracked tree with exact
+export/restore verification. The conservative count is now 3,859,377 bytes;
+independent storage review resolves the budget finding by reduction. PR20 is
+ready for AC’s merge decision; no further agent preparation is queued. After merge, the completed results above replace preparation tasks as
+this topic's outcome; no further mathematical campaign is assigned. Physical
+cold-storage delivery remains pending. Only AC merges.

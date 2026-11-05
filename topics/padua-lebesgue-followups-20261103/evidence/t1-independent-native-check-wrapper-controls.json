@@ -1,0 +1,36 @@
+{
+  "all_controls_passed": true,
+  "count_certified": false,
+  "rows": [
+    {
+      "mode": "success",
+      "passed": true,
+      "scientific_checker_executed": false
+    },
+    {
+      "mode": "source-fault",
+      "passed": true,
+      "scientific_checker_executed": false
+    },
+    {
+      "mode": "runtime-fault",
+      "passed": true,
+      "scientific_checker_executed": false
+    },
+    {
+      "mode": "input-fault",
+      "passed": true,
+      "scientific_checker_executed": false
+    },
+    {
+      "mode": "binding-fault",
+      "passed": true,
+      "scientific_checker_executed": false
+    },
+    {
+      "mode": "exception",
+      "passed": true,
+      "scientific_checker_executed": false
+    }
+  ]
+}

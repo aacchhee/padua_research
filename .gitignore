@@ -17,3 +17,15 @@ Thumbs.db
 # Generated data belongs in campaign-specific cold storage.
 /local-output/
 /local-cache/
+
+# Raw run/progress streams belong in cold storage (AC, 2026-11-05).
+# Existing tracked small essential receipts are unaffected.
+*.log
+*.jsonl
+*.raw
+*.raw.gz
+*.stdout
+*.stderr
+topics/programme-ideas-20261031/checks/code/**/*.out
+topics/bivariate-lanczos-20261031/**/analysis*.txt
+topics/bivariate-lanczos-20261031/**/reanalysis*.txt

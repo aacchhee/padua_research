@@ -105,3 +105,13 @@ These values replace the clipped or inaccurate ones in the tables above. The mac
 - `provisional-id-map.json`, **notes** (F4): Registry map. Restore with `python tools/cold_storage.py restore lattice-unisolvence-20261031`. Working-tree readers: topics/lattice-unisolvence-20261031/check-response-01.py:50, topics/lattice-unisolvence-20261031/response-review/check_response.py:31 and, across topics, topics/programme-ideas-20261031/pr-prep/allocate.py:30 and topics/programme-ideas-20261031/audit-04-support/allocation-repair-check.py:49-50 (current() snapshot; the same script also reads it from Git at :45). Historical Git readers (pinned revisions; restoring the current file does not replace that history): topics/programme-ideas-20261031/audit-04-support/allocation-check.py:56 and :178-186 (SOURCE 37820a528c863e5cfe2dc2f1f8879b4fd40cf210 and ALLOC^) and topics/programme-ideas-20261031/audit-04-support/integration-repair-check.py:46-50 (git show at SOURCE and REPAIR). The programme-ideas allocator needs further topics restored too: see the notes of topics/programme-ideas-20261031/lit/integration-map.json. AC 2026-11-02 approved moving the retained registry/source files to cold storage as well.
 
 After any export, check the archive with `python tools/cold_storage.py verify-archive <DIR>/lattice-unisolvence-20261031 --manifest topics/lattice-unisolvence-20261031/cold-storage.json`, and run it again immediately before relying on the archive (for delivery acceptance, or before a history purge). The export receipt alone is not proof that the files are still present.
+
+## 2026-11-05 raw-output archival addendum
+
+AC directed generated outputs to cold storage. Additional raw transcripts and
+analysis captures from this topic are now pinned at source40347d1 in separate
+component manifests; all older manifests/identities above are unchanged. See
+[the migration index](../padua-lebesgue-followups-20261103/preparation/cold-storage-migration.md)
+for exact file counts, manifest paths, verified export/restore commands and
+receipt hashes. Small essential proof receipts, summaries and code remain in Git.
+Physical delivery to AC remains pending; staging is not a delivery claim.
