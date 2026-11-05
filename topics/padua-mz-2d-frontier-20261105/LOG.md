@@ -1,7 +1,7 @@
 # Signed Padua MZ frontier (PD-T110, PD-T028, PD-T116, PD-T114; 1-D PD-T027): log
 
 - Branch: `codex/padua-mz-2d-frontier-20261105` · Base: main `440d107` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK (documentation response to audit-01) · Next: `Codex (gpt-6.1-sol, medium): Continue codex/padua-mz-2d-frontier-20261105.` · Open handoff: [handoffs/03-response.md](handoffs/03-response.md)
+- Stage: PR (preparation pending) · Next: `Codex (gpt-6.1-sol, medium): Continue codex/padua-mz-2d-frontier-20261105.` · Response outputs complete; handoff03 closes and handoff04 publishes in the next commit.
 - Permanent reservations: T294–323, N104–115, IDEA384–413, LIT574–581, first pushed e79c576; no final assignments. [Ledger](ALLOCATIONS.md).
 - Claims: analytic signed spectral countersequences and sharp half-degree threshold; uniform C→L2 norm below30; positive-reference diamond estimate; finite independently certifiedm60/m80; scoped warmups. [Report](report.md). Claude [audit-01](audit-01.md): mathematics ACCEPTED at stated scopes; seven P3 documentation findings (A1–A7).
 - Open for AC: none at setup. Ask AC before using any machine outside the sandbox. AC decision 2026-11-05 (audit session): keep registry Status OPEN with `REJECTED: refuted` disposition for PD-T028/110/116.
@@ -49,3 +49,11 @@
 - Auditor MEASURED checks (committed small code/output in `audit-01-support/`): weight formula (3) matches direct moment solves to ≤1.6e−15 for m≤30; carrier energy slopes per unit log m reach −0.0705 and +0.0165 at m=12800 against −16ab/9=−0.0711 and 8ab/9=0.0178. The negative carrier energy is still positive at every computed degree; extrapolated sign changes lie near log m≈55 (a=b=0.2) and, in the subagent's fits, log m≈172–3464. This is finding A2.
 - [Handoff02](handoffs/02-audit.md) done in `911ef85720f01ea1057bfff9343eedc019397f5d`; [handoff03](handoffs/03-response.md) opens the Codex documentation response to audit-01.
 - 2026-11-05, Claude, claude-opus-5-5: AC sent a Claude continuation while handoff 03 assigns Codex; asked, AC chose to leave the response to Codex. No edits made. Noted for handoff 03: main advanced to `5db1e01dcd2258f45de2adcaef43859e59734618` (PR19 merged). Rule files are unchanged, a trial merge into this branch is conflict-free, and PR19's assigned ranges (PD-T246–252, PD-N084–086, IDEA336–348, LIT466–470) do not overlap this topic's reservations.
+
+## 2026-11-05 — Codex, gpt-6.1-sol medium — response-01
+
+- Role: developer/orchestrator for handoff03. Rules/input read at f65057ddfcb442923fc98ab260b007492cf2fdc6; rule files unchanged. Read handoff03, audit-01 and both auditor support reports, LOG, named records and proposed changes. Editorial scope introduces no novelty or new mechanism, so no idea-generation gate applies.
+- Fetched current main5db1e01dcd2258f45de2adcaef43859e59734618 and topicf65057d. Merged main without conflicts in 81d990f629196a72af0cc57b965c6cff7757abdb, preserving the published branch and all accepted PR19 material. No new final-ID assignment or shared-registry edit.
+- Finding edits committed in e6b80405cc1d9ab06f1c0f3269f53ed7189b7964: A1–A6 fixed; optionalA7 declined with a recorded reason. [response-01](response-01.md) cites every disposition and file. AC’s OPEN plus REJECTED:refuted display for028/110/116 is unchanged. No code, evidence, audit file or mathematical statement changed.
+- Verification: historical84-entry inventory matches the audited dee6384085 tree, unchanged evidence manifest; nine proof bodies unchanged and F4 displayed math reversibly renamed, diamond formulas unchanged; protected source/evidence/auditor/old-handoff identities, response scope, proposed OPEN cells, local links and whitespace checked. No scientific rerun performed. Current inventory refresh is deferred to preparation because this step preserves evidence files.
+- Audit-01 explicitly permits this documentation-only response to proceed without re-audit. StagePR for preparation only; PR23 remains draft. Handoff04 will carry the fresh reservation scan, final-ID/shared-state work, inventory refresh and integration impact check.
