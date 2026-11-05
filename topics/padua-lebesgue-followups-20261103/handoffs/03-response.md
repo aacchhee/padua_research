@@ -1,6 +1,6 @@
 # Handoff 03 — Padua Lebesgue follow-ups — developer response to Claude audit-01
 
-- Status: open
+- Status: done in ef1e0530213584d102ea11b794ae67fb436b6540
 - Previous handoff: [02-audit.md](02-audit.md)
 
 - Next agent / model / effort: Codex, gpt-6.1-sol medium (editorial/provenance responses). Use gpt-6.1-sol high only if a response would touch a theorem statement or proof, and say so in LOG.

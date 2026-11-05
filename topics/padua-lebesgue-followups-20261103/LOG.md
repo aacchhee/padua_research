@@ -1,7 +1,7 @@
 # Padua Lebesgue-function follow-ups (T1–T4): log
 
 - Branch: `codex/padua-lebesgue-followups-20261103` · Original base: main `440d107`; reconciled main `5db1e01` · Developer: Codex · Auditor: Claude (Opus 5.5)
-- Stage: PR preparation authorized (editorial audit response complete; not ready) · Next: `Codex (gpt-6.1-sol medium): Continue codex/padua-lebesgue-followups-20261103.` · Open handoff: [handoffs/03-response.md](handoffs/03-response.md)
+- Stage: PR preparation authorized (editorial audit response complete; not ready) · Next: `Codex (gpt-6.1-sol medium): Continue codex/padua-lebesgue-followups-20261103.` · Open handoff: [handoffs/04-pr-preparation.md](handoffs/04-pr-preparation.md)
 - Reserved final-ID ranges: PD-T266–285, PD-N092–099, IDEA356–375, LIT474–481; [reservation and pinned union scan](ALLOCATIONS.md). No final assignments before audited preparation.
 - Claims: all four core targets complete. T1 PD-T184/180 PROVED (44 interior, 62 total); six T2–T4 analytic records PROVED. Claude audit-01 ACCEPTED the mathematics of all four targets; nine MINOR findings answered in response-01. Full sharp PD-T098 remains OPEN; the T2/T3 protocol timing qualification remains unwaived.
 - Open for AC: none at setup. Ask AC before using any machine outside the sandbox.
@@ -128,3 +128,5 @@
 - Handoff 03 authorizes PR preparation after editorial-only response. Next handoff 04 will require a fresh complete reservation union check (PR19 is now merged), final-ID assignment, corrected shared proposals, integration rehearsal and final readiness checks. This response itself assigns no IDs or edits shared registries; PR20 stays draft.
 
 - Mechanical verification and a distinct gpt-6-astra medium editorial impact check found no unresolved response finding or material re-audit trigger. All 123 manifest entries and four theory hash pairs verify; original code/receipts/auditor files are unchanged. Final response non-record bucket is 4,839,525 bytes under the explicitly documented classifier (manifest reduced by 56 bytes). Current documentation points to the accepted Claude audit while preserving historical pending markers as such.
+
+- Response outputs committed at `ef1e0530213584d102ea11b794ae67fb436b6540`. [Handoff 03](handoffs/03-response.md) is complete; [handoff 04](handoffs/04-pr-preparation.md) publishes the authorized PR-preparation task. No material change requires a new Claude audit; preparation and readiness remain to be completed.
