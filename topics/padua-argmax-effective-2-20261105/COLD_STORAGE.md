@@ -1,0 +1,51 @@
+# Phase-2 local staging and pending cold-storage delivery
+
+No archive has been delivered or staged at AC's Windows destination.
+The destination authorized by handoff01 is
+`Downloads\padua\cold_storage\padua-argmax-effective-2-20261105\`.
+Actual generated files are local under
+`local-output/argmax-effective-2-20261105/` only.
+
+[cold-storage.json](cold-storage.json) records every actual local file's relative
+locator, byte count and SHA-256 in its `pending_local.files` table. The standard
+`entries` list is deliberately empty: no Git-backed archived entry or verified
+remote retrieval is asserted. Its pinned source commit contains every generating
+script; per-run receipts retain earlier actual source and binary identities.
+
+| Output group | Actual local subdirectory | Generating command / validation |
+|---|---|---|
+| Native certificates, build snapshots and checker receipts | replay/ | code/replay.py; both regenerated/committed n17/n24 checker processes accepted; evidence/replay-summary.json |
+| Physical phase samples and finite cosine cross-checks | phase-probe/ | code/phase_probe.py; finite floating validation only; evidence/phase-probe.json |
+| All-admissible-center projected samples/classes | phase-probe/ | code/projection_probe.py; finite floating validation only; evidence/projection-probe.json |
+| Natural-interval partial box cover, unresolved frontiers and validation | phase-probe/ | code/box_pilot.py with OPENBLAS_NUM_THREADS=1; incomplete at every cap; evidence/box-pilot.json |
+
+Exact commands and full file/binary identities are in the linked run records
+and compact receipts. [evidence-manifest.json](evidence-manifest.json) pins the
+committed scientific records/code and records the enclosing source commit.
+The analytic all-n proofs do not depend on any unique bulk output.
+
+## Tool execution and limits
+
+Executed `python tools/cold_storage.py plan topics/padua-argmax-effective-2-20261105`:
+zero tracked generated files above16KiB require relocation. The existing helper
+exports already Git-backed historical entries; it cannot export newly generated,
+never-committed files as historical Git blobs. We neither commit bulk files to
+manufacture such provenance nor claim an empty-entry check verifies local bytes.
+The pending-local inventory was separately verified by reading and hashing its
+actual files. No tool or schema code was changed for this campaign.
+
+## Regeneration, retention and retrieval
+
+Use the commands in independent-replay.md, phase-probe.md, projection-probe.md
+and box-pilot.md from the pinned repository code. GCC/GMP and Python are needed
+for native replay; NumPy and a C compiler for measured probes; mpmath for the
+independent diagnostic checker. These commands rebuild local outputs and may
+replace existing run files, so use a fresh workspace when preserving the
+recorded bytes. Regeneration preserves mathematical outcomes within stated
+scope, not old timings or all historical byte identities.
+
+The local sandbox is the current custodian; durable retention and expiry are
+not guaranteed. Physical cold-storage transfer/retrieval remains pending.
+Before any delivery is accepted, hash the delivered files against
+`pending_local.files` and record the actual destination and independent
+retrieval/verification result. Never infer delivery from this manifest alone.

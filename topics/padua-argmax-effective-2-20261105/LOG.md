@@ -62,3 +62,9 @@
 - The guarded code rerun is the final source/receipt pair. The earlier run is disclosed but not mislabeled as using the final source. Its different CPU-limited stopping count is normal; bounds/counts at completed2000-box degrees match.
 - Development checkpoint is ready for independent Claude Opus5.5 xhigh audit of the exact scoped claims and protocol. This does not declare the original all-degree goal solved. [Handoff02](handoffs/02-audit.md) names the audit scope, explicit remaining H1/H2 work and prospective-gate qualifications. The auditor's next disposition must preserve that remaining research rather than treating this checkpoint as a complete bridge.
 - No main push, live merge, force-push, tag, settings/workflow/.github change or canonical scientific-registry edit. All allocated reservations remain unchanged; PR25 stays a draft.
+
+## 2026-11-05 — enclosing evidence and storage check
+
+- Enclosing scientific source `7d394fd` is pinned in evidence-manifest.json:41 code/theory/essential-record identities match both current bytes and that commit. All10 separately reviewed mathematical/checker identities remain exact. Every topic JSON is parseable and below16KiB.
+- cold-storage.json inventories40 actual local outputs totaling118,964,704bytes, each verified by reading its bytes; physical archival remains pending. Its standard archived entries are empty. The supported storage helper's plan found0 tracked outputs above16KiB, and its empty-entry verification accepted0 archived bytes; this is explicitly not presented as verification of the pending local data or of a Windows delivery.
+- Topic diff against the fetched main is restricted to this topic and its results file. Merged scientific files/registries remain untouched. A final relative-link and worktree check accompanies the numbered audit handoff.
