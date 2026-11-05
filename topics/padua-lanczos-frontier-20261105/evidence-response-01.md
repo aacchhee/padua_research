@@ -52,3 +52,5 @@ Final fast checks actually run: `python -B topics/padua-lanczos-frontier-2026110
 ### 2026-11-05 preparation update — R2-EVD-3/4
 
 The environment receipt describes forced Haswell, not the default dispatch; future receipts should record both when feasible and say which dispatch performed the run. No additional observation is claimed here. `storage_response_inventory.py` without `--check` writes/replaces its committed index; verification-only recipes must retain `--check`. Root's already executed n1 recipe is recorded in evidence/response-n1-recheck.json; earlier agent-specific NOT_EXECUTED wording is historical and superseded by the dated pointers. AC accepted the permanently disclosed A-P1 deviation on2026-11-05, without waiver/cure.
+
+2026-11-05 finalization pointer (audit-03 P3-FIX-7): the root execution receipt of the n1 recipe is [evidence/response-n1-recheck.json](evidence/response-n1-recheck.json), SHA256 `c683aaf8ff20b190cd0b4c165bdc69ad6c4cae983acca1d1bf0ec0ff6d5fb65c`.

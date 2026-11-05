@@ -127,3 +127,7 @@ AC stated “I accept the deviation” on2026-11-05, recorded by Claude at29a78e
 [Reservation refresh](preparation/reservation-check.md) reads main, all open PRs and inherited/retired ledgers before assignment. [Final mapping](preparation/final-id-map.json):16 theories PD-T324–339,3 scoped negatives PD-N116–118,11 distinct new candidates IDEA414–424; eight continuations reuse existing IDs. No LIT assignment. The three negative statements remain separate because their failed/refuted mechanisms and hypotheses differ; no record is silently merged/dropped. Full aliases, scopes, rejected/deferred routes and permanent gaps remain. Pinned L1/L2-01 theorem and n1-contract bytes stay frozen, with current registered metadata companions.
 
 No theorem, proof, source budget or numerical criterion changes. This preparation requires its own Claude Opus5.5 high audit under handoff11 before readiness; only AC merges. The science frontier remains the stated OPEN original targets.
+
+## 2026-11-05 — finalization (Claude audit-03)
+
+Claude preparation audit-03 accepted the final IDs, reservations, literal registry application and integration checks; see [audit-03](audit-03.md). At AC's direction the remaining record fixes were made by Claude, and PR24 is marked ready for AC's merge decision. Earlier wording above that says a preparation audit is pending or required is historical. Scientific statements, statuses and limits are unchanged, and the open frontier listed above remains OPEN.

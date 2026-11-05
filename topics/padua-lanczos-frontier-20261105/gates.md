@@ -59,3 +59,13 @@ The actual fitter completes16.972s external/14.631s internal and the distinct ac
 ## 2026-11-05 — audit-response scope checkpoint
 
 Claude audit-01 accepts all PROVED mathematics and returns required status/scope/record fixes. response-01 addresses them without reopening science gates: G1 remains complete/INCONCLUSIVE on both grids (now bounded repository-only certificate access), G2 formalW/R PASS, G3 INCOMPLETE (n3 bracket, n4/n5 lowers only; originaln3–10 trend/U2 OPEN), and G0/G4 RESOLVED under unchanged explanation criteria. L7 Haswell20/six is a platform-conditioned MEASURED observation, with audit defaultAVX51218/nine disclosed. BroaderL3 is OPEN with a separate PROVED per-column-budget support theorem. A-P1 drafting deviation is not waived/cured; AC decides acceptance after remediation. FocusedClaude re-audit is pending, and no final-ID/merge-readiness decision follows.
+
+## 2026-11-05 — AC decision and finalization addendum
+
+AC accepted the disclosed A-P1 pre-gate drafting deviation on 2026-11-05 ("I accept the deviation"). It remains permanently disclosed, not waived and not cured; earlier pending-decision wording above is historical. Claude preparation audit-03 accepted the preparation. Gate verdicts are unchanged:
+- G1: INCONCLUSIVE on both grids.
+- G2: formal W/R PASS.
+- G3: INCOMPLETE.
+- G0/G4: RESOLVED, with the original failures retained.
+
+See [gate-timing-response-01.md](gate-timing-response-01.md) and [audit-03.md](audit-03.md).

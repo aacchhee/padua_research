@@ -1,8 +1,8 @@
 # Bivariate Lanczos / V+A round 2 (E2, PD-T055, selection, PD-T140 rotQ24, PD-T075(U2), PD-T056(G), V+A study): log
 
 - Branch: `codex/padua-lanczos-frontier-20261105` · Integrated base main `b4d292eea5eed373002506d5e16a3761bd7ae10e` via `a3f03be58be6819d833523ef26ccff69f5bc184a` · Developer Codex · Scientific auditor Claude
-- Stage: PR, audited preparation; audit-01 mathematics accepted, audit-02 response ACCEPTED WITH MINOR FINDINGS addressed here; Claude preparation audit PENDING. Next/open handoff at publication: [handoffs/11-prep-audit.md](handoffs/11-prep-audit.md).
-- Permanent reservation: PD-T324–363, PD-N116–131, IDEA414–453, LIT582–593; first pushed40b3eb6, draft PR24. No final IDs assigned; recheck union before future assignment/readiness.
+- Stage: PR — **ready for AC's merge decision** after Claude [audit-03](audit-03.md) accepted the preparation (AC-directed finalization, no further Codex steps). A-P1 accepted by AC 2026-11-05. No open handoff: the topic closes at PR readiness; remaining research stays OPEN in the registries.
+- Permanent reservation: PD-T324–363, PD-N116–131, IDEA414–453, LIT582–593; first pushed 40b3eb6, PR24. Final IDs assigned 2026-11-05 within it: PD-T324–339, PD-N116–118, IDEA414–424, no LIT. Permanent unused PD-T340–363, PD-N119–131, IDEA425–453 and LIT582–593 stay unavailable. Readiness union refresh PASS (audit-03).
 - Registered claims: PD-T324–339 and PD-N116–118; complete [crosswalk](../../ID_CROSSWALK.md#padua-lanczos-frontier-20261105--final-mappings-and-splitsupport-graph) and [exact map](preparation/final-id-map.json). PD-T331 is PD-T L4-01 (aliasL4a); PD-N116 is PD-N L4-01, the distinct scoped route obstruction. All accepted proofs/statuses preserved; preparation audit pending.
 - AC decision recorded 2026-11-05: A-P1 pre-gate drafting deviation **accepted** ("I accept the deviation"); it remains permanently disclosed, not waived or cured. Remaining AC decision: merge, after audited preparation. Earlier wording of this line is preserved in the dated entries below.
 
@@ -311,3 +311,22 @@ Read-only livePR21 metadata query confirms it remains unmerged/open, nowhead4a8a
 Final root preservation/package check PASS:129 immutable audit/old-handoff files,263 unchanged scientific files,3 hard-frozen SHA256 pins,63 Python ASTs,140 topic JSON files (all<16KiB; maximum15773bytes),171 introduced rendered local links and3 original source-prefix extensions. Conservative repository total970JSONfiles/4690920bytes. The integration helper's final metadata-only refinement adds a complete external per-log SHA256/size inventory and a compact index in its future receipt; root reviewed that diff and parsed its AST. No science source or applied registry changes after e5fbd85. The full-output SHA cannot be embedded in itself; handoff11 records the final exact-head squash execution after the output commit exists.
 
 `check_registration.py --receipt topics/padua-lanczos-frontier-20261105/preparation/application-receipt.json` still PASS; complete staged evidence manifest is regenerated and checked, then `git diff --cached --check` must pass before commit. PR24 metadata is updated after the output SHA exists, and handoff11 records that publication. Outputs first; next commit changes only handoff10 status and adds11. Stage remains PR/preparation-audit PENDING and draft until the required Claude audit passes.
+
+## 2026-11-05 — Claude, Opus 5.5 high (claude-opus-5-5) — preparation audit-03 and AC-directed finalization (handoff11)
+
+- AC wrote: "Claude (Opus5.5 high): Continue codex/padua-lanczos-frontier-20261105. And make this PR ready to merge, no.more codex". Codex had already published the preparation (`e5fbd85`, `0299fcf`) and handoff11 (`1fb21c1`); handoff11 asks Claude to audit the preparation and then finalize. Codex's role in this topic ends here at AC's direction.
+- Rules read at `1fb21c1a021642b76f0c60a68efde83e8024b595`, identical to earlier audits and current main `b4d292e`. Three Claude Opus 5.5 high subagents (REG, APP, FIX) audited checks 1–8 with no Git authority; reports in [audit-03/](audit-03/).
+- Verdict [audit-03](audit-03.md): preparation ACCEPTED, with no BLOCKING or MAJOR finding.
+  - No ID collision with main, PR27 (`3dda890`) or the new PR28 (reserves T432–471/N162–177/IDEA530–569/LIT614–629).
+  - All 57 aliases persist, and the eight consolidations are genuine.
+  - Registries reconstruct byte-identically.
+  - The squash rehearsal reproduces tree `aee4d7c…`, and the branch merges cleanly into main.
+- Minor record fixes were applied by Claude, at AC's direction, instead of being returned to Codex:
+  - stale "preparation audit pending" stage text;
+  - AC acceptance missing in five inherited IDEA rows and in gates.md;
+  - self-referencing and cross-namespace labels;
+  - ledger whitespace;
+  - LOG line 5;
+  - the readiness reservation refresh including PR28.
+- How the registry fixes were applied: proposal NEW-block amendments, then a guarded `--update-applied` re-application from a scratch copy of `apply_registration.py`. The copy changes only `TOPIC` and the archive path, which points to session scratch instead of `/tmp`. `check_registration.py` then passes on the real repository. The prior receipt `75892f5e…` is committed at preparation/application-receipt-before-audit03.json.
+- No science, status, proof, threshold or ID changed. A distinct Claude subagent independently checks these fixes before PR24 is marked ready.

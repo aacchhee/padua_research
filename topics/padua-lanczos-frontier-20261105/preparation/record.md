@@ -82,3 +82,26 @@ This result is preparation evidence, not readiness. Claude must refresh live mai
 Final packaging check passes129 immutable audit/old-handoff files,263 unchanged scientific files,three frozen theorem/contract pins,63 Python ASTs,140 topic JSON files (maximum15773bytes; all<16KiB),171 introduced rendered local links and three append-only inherited source prefixes. Conservative repository-wide JSON total is4690920bytes across970files. These are mechanical checks, not science reruns or replacement audits.
 
 The final helper adds a complete external log-file inventory and compact identity to its receipt. Its tree comparison/ownership/cleanup behavior is unchanged. The final exact-output squash command executes after the output commit exists and is recorded in handoff11 alongside the exact input/output/tree and log-inventory identities. Final staged manifest verification and whitespace checks run before committing outputs. PR24's WORK/AUDIT/PR body is then updated to this preparation, final IDs, accurate AC acceptance and explicit pending Claude audit; it stays draft. Handoff10 closes only after outputs are committed, in a separate two-file handoff publication.
+
+## 2026-11-05 — Claude audit-03 finalization (AC-directed; no further Codex steps)
+
+AC wrote: "make this PR ready to merge, no more codex". Claude preparation audit-03 found no BLOCKING or MAJOR issue. Claude, acting as orchestrator, applied the minor fixes listed in [audit-03.md](../audit-03.md):
+- **Stage wording:** "preparation audit pending" became "accepted by Claude audit-03" in the proposal NEW blocks, the results file and the ledgers.
+- **AC acceptance:** recorded in IDEA-158/160/162/253/255, gates.md and attempts/L2–L5.
+- **Self-references:** consolidated self-references in IDEA-250/262/266/267 now name the local candidate.
+- **ID labels:** cross-namespace local labels now carry provisional tokens, so that final IDs are substituted.
+- **Ledgers:** whitespace fixed in the PR24-owned ledger sections, and the readiness refresh (PR27 `3dda890`, new PR28) recorded.
+- **LOG:** header line 5 corrected.
+
+How the registries were re-applied:
+- **Route:** the guarded `--update-applied` route, run from a scratch copy of `apply_registration.py`. The copy differs only in the absolute `TOPIC` path and in its prior-receipt archive path, which points to session scratch instead of the hard-coded `/tmp`.
+- **Prior receipt:** its bytes (SHA256 `75892f5e490c9024b626fb4e516aa76a6d1a33d6bd7845d22a129d9d94d77621`) are committed at [application-receipt-before-audit03.json](application-receipt-before-audit03.json). The `previous_receipt.path` in the new receipt names the scratch location.
+- **Reconstruction inputs** (correction of the earlier claim, P3-APP-2): the registry outputs are reconstructed from the pinned Git base, the proposal file and the map, **and from the live `results/padua-lanczos-frontier-20261105.md`**, which feeds the RESULTS.md section. That results file is not separately hashed in the receipt.
+
+Recorded but not changed (cosmetic):
+- missing spaces before digits in some applied registry prose (P3-REG-2, registry part);
+- the L5-02/L5-03 crosswalk rows each listing the other's alias (a `build()` behaviour; the two candidates remain distinct, with dispositions deferred/OPEN and abandoned respectively);
+- a repeated sentence in the e1-05 addendum;
+- the GATE N2 wording: the IDEA-414 row names IDEA-130/134 as supplementary predecessors, but the one-line object separation lives only in ideas-l1-l2.md:247–255 (P3-FIX-6).
+
+No science, status, proof, threshold or final ID changed.

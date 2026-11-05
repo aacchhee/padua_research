@@ -122,3 +122,13 @@ collision or foreign assignment in PR24's ranges. The compact receipt and
 temporary raw snapshots/full manifest now identify PR27 at the new head.
 The earlier pin table above records the original scan; this dated refresh
 supersedes its PR27 pin for the preassignment result.
+
+## Readiness refresh — Claude audit-03, 2026-11-05
+
+- PR27 has moved to `3dda890275a7599caa707b0fb8c0b6e6f6a80643`. All 15 pertinent ledger/registry files are byte-identical to `714f3ca`/`95366c1`.
+- New open draft PR28 (`codex/nn-mop-stability-20261105`, first published `d87925630e9e460031df319f3994ca2e7fad8ca0`, head `929ef78` at the API refresh) reserves T432–471/N162–177/IDEA530–569/LIT614–629, disjoint and above ours. It acknowledges PR24's ranges and makes no assignments.
+- Population: 27 PRs. Open: 24, 27 and 28; the other 24 are closed and all merged.
+- Union maxima: T471/N177/IDEA569/LIT629.
+- PR24's ranges, assignments and priority are unchanged. **PASS.**
+
+See [audit-03/REG.md](../audit-03/REG.md).
