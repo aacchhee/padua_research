@@ -26,18 +26,16 @@ positive outward bounds, u=110(1+bit_length(n))^2, and
     kappa=min(1,1/[8(E/(n^4 ell)+3u/ell)]).
 
 Here bit_length(n)=ceil(log2(n+1)), computed by integer arithmetic.
-The numerical trusted dependencies are unchanged: MPFR 4.2.2 correctly
-rounded pi/cos/basic arithmetic, GMP 6.3.0 exact rational assembly, the
-compiled C execution and compiler. A future independent replay has its
-own explicitly recorded trusted dependencies.
+The producer uses MPFR 4.2.2 correctly rounded pi/cos/basic arithmetic
+and GMP 6.3.0 exact rational assembly. The accepted independent path uses
+GMP exact rational arithmetic, its separate Machin/Taylor trigonometric
+enclosures, compiler and execution; see the independent range report.
 
 ## Status by part
 
-Overall status: **CONDITIONAL**, pending parent-arranged independent exact
-range reconstruction from integer inputs. The producer completed all 127
-degrees and its exact common-threshold checks passed. This is not yet an
-independently accepted finite range theorem. Required Claude audit is
-separate. No full global-degree certificate or B2 verdict follows.
+Overall status: **PROVED** by the written analytic reduction and distinct
+exact reconstruction for all 127 integer inputs n2–128. Required Claude
+audit is separate. No full global-degree certificate or B2 verdict follows.
 
 Candidate disposition: retained quantitative range continuation of
 IDEA-330/454/457. No new mechanism, priority or optimal-constant claim.
@@ -109,18 +107,22 @@ committed, and no cold-storage retrieval is assumed for the finite reduction.
 
 ## Reproduction and checks
 
-Actual invocation, environment and remaining replay obligation are in
-`../attempts/N3-corner-batch.md`. No independent replay is claimed here.
-The earlier accepted three-case independent checker is context; it does
-not certify unrun checker degrees through interpolation or extrapolation.
+Producer invocation and environment are in `../attempts/N3-corner-batch.md`.
+The distinct actual range replay is recorded in
+`../independent-checks-corner-range.md` and
+`../evidence/independent-corner-range.json` (SHA-256
+e685674c028bc99e42d547e8b84a2ce5a7e7e67c3cc69f6c29a55ecbcffd23c0).
+It freshly compiled the corrected checker and executed each of the 127
+integer inputs, independently rebuilding mass/energy bounds. All passed
+the common threshold and phase-square condition, with 362045 nonzero
+terms, 4096 exact omissions, no failure or unrun degree, and 12.035 child
+CPU seconds. No interpolation, extrapolation or producer endpoints were used.
 
 ## Scope and open items
 
-Pending: distinct exact range verification from integer inputs, with its
-own source/command/hash/outcome receipt; then parent records the status
-disposition. The larger common corner patch can be used as a hypothesis
-for floating timing studies until verified. Global finite coverage remains
-separate; no n37+ global claim and no all-n effective threshold follows.
+The common patch is available for the finite range exactly as stated.
+Global finite coverage remains separate; no n37+ global claim and no
+all-n effective threshold follows.
 
 ## History
 
@@ -128,3 +130,9 @@ separate; no n37+ global claim and no all-n effective threshold follows.
 c000899f3fb10d6ba0f1725341a045fe11ec943a. Serving model metadata not
 independently exposed. Authorized next bounded corner-helper step, with
 the old accepted three-case source/data/theory pins preserved unchanged.
+
+2026-11-05 dated status disposition: independent range reconstruction
+passes all127 cases. Original CONDITIONAL developer input SHA-256
+41e626ef792867f56b46d82df8bcd940a4645fe948fb99aa2a0c0fa64e04a471
+is preserved at source snapshot bcba739. This update changes status and
+verification record, not the statement, threshold or proof reduction.
