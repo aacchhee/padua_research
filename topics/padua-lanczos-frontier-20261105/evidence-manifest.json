@@ -1,5 +1,5 @@
 {
-  "source_rules_commit": "f85c7b5c83822ff60b62c84bed1ec6ae31628422",
+  "source_rules_commit": "5e5081e991fc48f033d3ef51ee2b6e42f892d29d",
   "scope": "G0 resolved and checked finite full-scalar L4 certificate; identities only, scientific checks in independent receipts",
   "excluded": "Mutable log, handoff chain and manifest itself",
   "files": [
@@ -245,8 +245,8 @@
     },
     {
       "path": "topics/padua-lanczos-frontier-20261105/plan.md",
-      "bytes": 1583,
-      "sha256": "73d00f3ad5368594e986c24f29bac3f709d1eedc1608ba5f0cc04b9ca6cbd446"
+      "bytes": 2242,
+      "sha256": "79082bdb906fd75d0699854d765c550b52fc096415408d993fb68f84ef8d4a60"
     },
     {
       "path": "topics/padua-lanczos-frontier-20261105/proposed-record-changes.md",
