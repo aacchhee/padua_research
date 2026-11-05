@@ -1,6 +1,6 @@
 # Handoff 01 — padua-lanczos-frontier-20261105 — bivariate Lanczos / Vandermonde-with-Arnoldi, round 2
 
-- Status: open
+- Status: done in 0574c47c697a63d76d6222393d3521c145870d03
 - Previous handoff: none
 
 - Next agent / model / effort: Codex. Mathematics: gpt-6.1-sol xhigh. Ultra is allowed for proof steps on L1–L3, with a written justification in LOG. Code, exact certificates, benchmarks and replays: gpt-6.1-sol medium. Supplementary independent checks: gpt-6-astra high.
