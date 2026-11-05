@@ -19,9 +19,11 @@ def prepare(spec):
         assert w > 0
         points.append((x, y, w))
     assert points and len({(x, y) for x, y, _ in points}) == len(points)
+    weight_sum = sum(p[2] for p in points)
+    points = [(x, y, w/weight_sum) for x, y, w in points]
     data = (str(len(points)) + '\n' + ''.join(' '.join(map(str, p)) + '\n' for p in points)).encode()
     return data, {'family': spec['family'], 'admission': spec['admission'],
-                  'point_count': len(points), 'weight_sum': str(sum(p[2] for p in points)),
+                  'point_count': len(points), 'supplied_weight_sum': str(weight_sum), 'native_weight_sum': '1',
                   'native_input_bytes': len(data), 'native_input_sha256': hashlib.sha256(data).hexdigest(),
                   'parameters': spec.get('parameters', {}),
                   'model': 'positive finite measure; weighted Euclidean aggregate source norm'}

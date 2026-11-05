@@ -99,3 +99,26 @@ candidate's mathematics.
   evidence are preserved; interpretation is round2, not an N2 rate claim.
 - No external fulltext or published recurrence theorem was used for these
   elementary admission/moment proofs. No priority claim.
+
+## 2026-11-05 — P3/P4 round 1 and P6 round 2 checkpoint
+
+- P3 wrote its [non-affine-product weight admission](theory/p3-01-high-mode-weight-admission.md)
+  after completing the remaining gate reads. The high mode changes with n;
+  one fixed nonzero eta in(-1,1) gives positive exact data for every n>=2.
+  Capacity and radius are the next step, not inferred from admission.
+- P4 proved the [common definition/admission lemmas](theory/nonproduct-definition.md),
+  [weighted finite quotient](theory/p4-weighted-normal-quotient.md),
+  [exact atomless capacity identity](theory/p4-continuous-capacity.md) and
+  [moment-preserving transfer](theory/p4-moment-capacity-transfer.md).
+  These distinguish arbitrary finite and atomless source models. They are
+  fixed-degree analytic supporting results, not a passed cross-family
+  criterion gate or an all-degree family growth theorem.
+- P6 actually executed36 complete-source degree2–4 rows on T24, H24_222 and
+  D36x9 (four rules each), matching independent arithmetic implementations
+  exactly. T24 also matches inherited endpoint/choice evidence. Largest
+  producer/checker case times were under0.07/0.22s. Receipts and code are
+  committed; distinct-agent verification remains separate.
+- Next P6 cost step: prospectively benchmark degree8 before degree16,
+  120s per backend/rule, then scale only feasible cases within the original
+  600s per-case high-scan cap. N2 thresholds/windows are unchanged. Reanalyze
+  inherited T24 certified log intervals separately from new experiments.

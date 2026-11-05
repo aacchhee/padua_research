@@ -8,10 +8,10 @@ progress stop that direction.
 |---|---:|---|
 | P1 triangle | 1 | Round 1: gate complete; triangle support/injectivity/rational-weight admission proved. Round 2: exact continuous recurrence probe |
 | P2 disk | 1 | Round 1: gate and disk/D36x9 admissions proved; degree-eight exact probe executed. Round 2: interpret structural probe |
-| P3 perturbed SH | 0 | Round 1: prospective gate, perturbation admission and radius route |
-| P4 structural criterion | 0 | Round 1: prospective gate, common definition and criterion tests |
+| P3 perturbed SH | 1 | Round 1: gate completed with disclosed timing limitation; positive rank-two weight family admitted. Round 2: moment/witness/radius proof |
+| P4 structural criterion | 1 | Round 1: common definition, weighted quotient, exact atomless capacity and proved moment transfer. Round 2: exact model sanity checks and criterion gate |
 | P5 Padua | 0 | Round 1: prospective gate, exactness/admission and cutoff test |
-| P6 exact scans | 1 | Round 1: gate/schema complete; inherited uniform T24 scan retained as baseline, weighted formula proof awaited. Round 2: inherited N2 reanalysis and new-family pilots |
+| P6 exact scans | 2 | Round 2: 36 exact weighted pilot rows match two arithmetic paths. Round 3: inherited N2 reanalysis and degree-eight cost benchmarks before sixteen |
 
 ## Round outcomes
 
@@ -28,3 +28,15 @@ progress stop that direction.
   the finite grid has M=324 and injectivity through17. Exact degree-eight
   moment/creator probe ran in 0.154s; structural interpretation follows in
   round2. It is not an N2 scan or a growth theorem.
+- P3 round 1: [admission](theory/p3-01-high-mode-weight-admission.md).
+  Full SH support with positive sign-checkerboard weights is not
+  affine-product for n>=2, 0<|eta|<1. Moment/capacity theorem remains separate;
+  proposal chronology is disclosed canonically in LOG.
+- P4 round 1: [weighted model](theory/p4-weighted-normal-quotient.md),
+  [atomless capacity](theory/p4-continuous-capacity.md),
+  [transfer](theory/p4-moment-capacity-transfer.md). Written fixed-degree
+  analytic results, no cross-family growth criterion or N3 success claimed.
+- P6 round 2: [finite measurements](theory/p6-finite-scans.md).
+  Three admitted measures, four rules and degrees2–4 give36 complete-source
+  exact rows; common-denominator GMP and scalar-rational GMP paths agree.
+  Two implementations by one worker are not distinct-agent approval.

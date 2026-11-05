@@ -68,3 +68,15 @@ lower slopes>0.1 pass; both upper slopes<0.02 redirect; otherwise INCONCLUSIVE.
 Never infer a verdict from missing degrees or fit before complete8–16 windows.
 Outward logarithms must be checked by a distinct arithmetic path before a
 certified screen. Finite fits steer proof work only.
+
+## Formula/admission gate completion before round2 pilots
+
+P1 triangle and P2 D36x9 admission proofs and P4-02 weighted normal-quotient
+proof were read fully before native weighted implementation or execution.
+Input preparation normalizes supplied weights by their exact rational sum;
+H24_222 already has sum1, T24/disk equal weights become1/325 and1/324.
+Native backends require sum1 and positive input weights. The unmodified
+predecessor T24 machinery remains separate and supplies frozen baseline
+comparison; generic input support changes only the node/weight interface
+and the P4-proved weighted inner products/projector diagonal. No extra
+weight is inserted into the Euclidean-source v_hi formula.
