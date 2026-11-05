@@ -1,0 +1,285 @@
+{
+  "label": "EXACT_G1_PRODUCER_INVENTORY_NO_FIT_OR_GATE_VERDICT",
+  "phase": "full",
+  "full_required_scope": {
+    "sets": [
+      "triangle",
+      "rotated"
+    ],
+    "rules": [
+      "bj",
+      "mirror",
+      "alt",
+      "pivot"
+    ],
+    "degrees": [
+      2,
+      20
+    ],
+    "source_class": "all",
+    "expected_rows": 152
+  },
+  "phase_completed_rows": 76,
+  "missing_cases": [
+    {
+      "set": "rotated",
+      "rule": "bj"
+    },
+    {
+      "set": "rotated",
+      "rule": "mirror"
+    },
+    {
+      "set": "rotated",
+      "rule": "alt"
+    },
+    {
+      "set": "rotated",
+      "rule": "pivot"
+    }
+  ],
+  "cases": [
+    {
+      "set": "triangle",
+      "rule": "bj",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1/full-triangle-bj.json",
+        "bytes": 6141,
+        "sha256": "ca4e91d5106b2ea2cbe66c1412b3ed4ca1fd95c77432660c2876e82e1c846c13"
+      },
+      "result": "EXACT_PREFIX_SCAN_COMPLETED",
+      "max_degree": 20,
+      "endpoint_file": {
+        "path": "/tmp/padua-lanczos-frontier-g1/full/triangle-bj/endpoints.json",
+        "bytes": 44755,
+        "sha256": "d4791ceec194d7739256a70422b39769f7722d15d32ad86326e98a4d29734caa"
+      },
+      "basis_recurrence": {
+        "path": "/tmp/padua-lanczos-frontier-g1/full/triangle-bj/basis-recurrence.jsonl.gz",
+        "bytes": 316637,
+        "sha256": "bbe5b1b5662ead56cee62353326912ac7af6313200dce1f4c6b475f0d0eedfb3"
+      },
+      "completed_degrees": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "all_2_through_12_overlap_pass": true,
+      "pivot_ties": [],
+      "independent_degree_controls": [
+        2,
+        3,
+        4
+      ],
+      "elapsed_seconds": 63.96873860300002,
+      "final_displays": {
+        "Knode_squared": 1.5683001095703807e+25,
+        "KHS_squared": 1.547364298114565e+27,
+        "Urow_squared": 1.0648726739435524e+30,
+        "upper_squared": 1.547364298114565e+27
+      }
+    },
+    {
+      "set": "triangle",
+      "rule": "mirror",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1/full-triangle-mirror.json",
+        "bytes": 6052,
+        "sha256": "4f0befd31c1952b4370587d61bcabf7ff8e82471288f1341c04be04d22c691e1"
+      },
+      "result": "EXACT_PREFIX_SCAN_COMPLETED",
+      "max_degree": 20,
+      "endpoint_file": {
+        "path": "/tmp/padua-lanczos-frontier-g1/full/triangle-mirror/endpoints.json",
+        "bytes": 44830,
+        "sha256": "c419a4176454df1888ae7172522b563d476b42040ab9a9b2cc43d9ecad257a06"
+      },
+      "basis_recurrence": {
+        "path": "/tmp/padua-lanczos-frontier-g1/full/triangle-mirror/basis-recurrence.jsonl.gz",
+        "bytes": 310837,
+        "sha256": "d73d0e29d61f3a8c712f4f6302302730f9e1b8333a8c3454ce4ffaccf0df64d6"
+      },
+      "completed_degrees": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "all_2_through_12_overlap_pass": true,
+      "pivot_ties": [],
+      "independent_degree_controls": [
+        2,
+        3,
+        4
+      ],
+      "elapsed_seconds": 62.85387930300021,
+      "final_displays": {
+        "Knode_squared": 49296391483306.62,
+        "KHS_squared": 3910963780829412.5,
+        "Urow_squared": 1.2693692461325023e+19,
+        "upper_squared": 3910963780829412.5
+      }
+    },
+    {
+      "set": "triangle",
+      "rule": "alt",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1/full-triangle-alt.json",
+        "bytes": 6073,
+        "sha256": "0bb5dd2d99e0fbae1850ae1f3b04da8b88a5968145c15259c450b84e9c4b1d76"
+      },
+      "result": "EXACT_PREFIX_SCAN_COMPLETED",
+      "max_degree": 20,
+      "endpoint_file": {
+        "path": "/tmp/padua-lanczos-frontier-g1/full/triangle-alt/endpoints.json",
+        "bytes": 47907,
+        "sha256": "38008a9cbe2ad065b24e98ca78f7fb95a3f3603b0e7631ceb1d66ce241da663d"
+      },
+      "basis_recurrence": {
+        "path": "/tmp/padua-lanczos-frontier-g1/full/triangle-alt/basis-recurrence.jsonl.gz",
+        "bytes": 314279,
+        "sha256": "5e6790f8f34c75d047f7be856f4933ad8b3b2bc80398ca34fe809cf4fe753847"
+      },
+      "completed_degrees": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "all_2_through_12_overlap_pass": true,
+      "pivot_ties": [],
+      "independent_degree_controls": [
+        2,
+        3,
+        4
+      ],
+      "elapsed_seconds": 51.16972921500019,
+      "final_displays": {
+        "Knode_squared": 4.3313544134298874e+17,
+        "KHS_squared": 1.468978181063268e+19,
+        "Urow_squared": 2.582571052817264e+23,
+        "upper_squared": 1.468978181063268e+19
+      }
+    },
+    {
+      "set": "triangle",
+      "rule": "pivot",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1/full-triangle-pivot.json",
+        "bytes": 6039,
+        "sha256": "e2fe75d6585c1f193ab91e23cc8cc9815f492adf8518d1e4a27752251634732c"
+      },
+      "result": "EXACT_PREFIX_SCAN_COMPLETED",
+      "max_degree": 20,
+      "endpoint_file": {
+        "path": "/tmp/padua-lanczos-frontier-g1/full/triangle-pivot/endpoints.json",
+        "bytes": 48169,
+        "sha256": "99833b7e4ac902ce701c5d3eb743b0d83ef14549dc9a163abc3f8cc3dd5f1e3b"
+      },
+      "basis_recurrence": {
+        "path": "/tmp/padua-lanczos-frontier-g1/full/triangle-pivot/basis-recurrence.jsonl.gz",
+        "bytes": 313333,
+        "sha256": "1121e9c61b1439b6abdc52b2051b7a840ffd67a130b8426ee0ed3500fb283ce7"
+      },
+      "completed_degrees": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "all_2_through_12_overlap_pass": true,
+      "pivot_ties": [],
+      "independent_degree_controls": [
+        2,
+        3,
+        4
+      ],
+      "elapsed_seconds": 46.58052019599927,
+      "final_displays": {
+        "Knode_squared": 1881537789682.3872,
+        "KHS_squared": 47324169238842.836,
+        "Urow_squared": 5.346297751353911e+18,
+        "upper_squared": 47324169238842.836
+      }
+    }
+  ],
+  "manifest_code_sha256": "7244ca3e82cf8287a7bf5750e7860229dd5e8f4f325b9cdab1121c191114a4d7",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_manifest.py",
+    "--receipt-dir",
+    "/tmp/padua-lanczos-frontier-g1",
+    "--prefix",
+    "full",
+    "--output",
+    "topics/padua-lanczos-frontier-20261105/evidence/g1-scan.json"
+  ],
+  "limits": [
+    "This receipt inventories actual completed producer work; pending degrees/cases are not completed.",
+    "No descriptive fitting until the full152-row scope is complete.",
+    "Exact finite endpoints give no all-degree conclusion; independent port/checking remains separate.",
+    "Bulk exact endpoints/recurrence arrays remain external temporary evidence with archive/delivery pending."
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "status": "PASS fresh producer/native exact rotated pivot20 comparison",
+  "rules_sha": "9825d184517db81d0aad8542fbd6639f2164b803",
+  "checker": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_batch_independent_rule_compare.py",
+    "bytes": 4768,
+    "sha256": "fcab364d13380d9b0132626ef8d8d6d188b6341ce8db1f019ed441468f0c4d76"
+  },
+  "producer_source": {
+    "path": "/tmp/padua-lanczos-frontier-g1-batch/extended-pilot20/engine-fused49b45df9.py",
+    "bytes": 14342,
+    "sha256": "49b45df9c2c28e3e63e9b886ff873a744ea0f0a44cd5f51fe2e3a345eec81552"
+  },
+  "native_source": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_fast_independent.cpp",
+    "bytes": 9215,
+    "sha256": "b6434df51d3df7e04136b1da9f8ee63e6c5f599e609625f415718766db0480dc"
+  },
+  "producer_receipt": {
+    "path": "/tmp/padua-lanczos-frontier-g1-batch/remaining20/pivot-receipt.json",
+    "bytes": 6720,
+    "sha256": "31a2fdb5ec24db2cb0a2c6d6a013b69daca04697bcff13bd0d7f0982e9022e4f"
+  },
+  "native_receipt": {
+    "path": "/tmp/padua-lanczos-frontier-g1-native-remaining/run/pivot-receipt.json",
+    "bytes": 3709,
+    "sha256": "9b679f25920a9a5f9e77a208f89a6d12771983201207d2a243f17e9d8200a7ed"
+  },
+  "producer_endpoints": {
+    "path": "/tmp/padua-lanczos-frontier-g1-batch/remaining20/pivot/endpoints.json",
+    "bytes": 1047001,
+    "sha256": "16742665027651125c6fe1cb1f4e5fdcc221377e836fc5b13bbf16ca8a9bb4b1"
+  },
+  "native_endpoints": {
+    "path": "/tmp/padua-lanczos-frontier-g1-native-remaining/run/rotated-pivot-d20.jsonl",
+    "bytes": 1023629,
+    "sha256": "8bb75f5909cd15789d5a9ea9396b701b9e1d7a5a033b7275527bf142ae64573d"
+  },
+  "dependencies": [
+    {
+      "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_batch_independent_compare.py",
+      "bytes": 6386,
+      "sha256": "7dfd517188274b67c48a7171b3812d1c43dc69bcca72ec08775eba244d44f928"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_independent_run.py",
+      "bytes": 6795,
+      "sha256": "388c70c0d3af25f33d67c967a5bcf94e45ee6060412be45c4a5430048a9451ae"
+    }
+  ],
+  "matched_degrees": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "rational_endpoint_comparisons": 76,
+  "all_original_nodes": 625,
+  "all_source_columns_at_max_degree": 230,
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_batch_independent_rule_compare.py",
+    "--rule",
+    "pivot",
+    "--producer-receipt",
+    "/tmp/padua-lanczos-frontier-g1-batch/remaining20/pivot-receipt.json",
+    "--native-receipt",
+    "/tmp/padua-lanczos-frontier-g1-native-remaining/run/pivot-receipt.json",
+    "--producer-source",
+    "/tmp/padua-lanczos-frontier-g1-batch/extended-pilot20/engine-fused49b45df9.py",
+    "--receipt",
+    "topics/padua-lanczos-frontier-20261105/evidence/g1-batch-independent-pivot20.json"
+  ],
+  "wall_seconds": 1.6753768689995923,
+  "limits": "Actual read-only all19-row exact comparison; no native rerun, fit or asymptotic claim. Native has no maximizing witness field."
+}

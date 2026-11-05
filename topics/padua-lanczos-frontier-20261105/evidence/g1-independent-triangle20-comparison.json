@@ -1,0 +1,494 @@
+{
+  "status": "PASS exact independent/producer T24 degree2\u201320 all4rules identities",
+  "row_count": 76,
+  "comparisons": [
+    {
+      "status": "PASS exact independent/producer row identities",
+      "rows": [
+        [
+          "triangle",
+          "bj",
+          2
+        ],
+        [
+          "triangle",
+          "bj",
+          3
+        ],
+        [
+          "triangle",
+          "bj",
+          4
+        ],
+        [
+          "triangle",
+          "bj",
+          5
+        ],
+        [
+          "triangle",
+          "bj",
+          6
+        ],
+        [
+          "triangle",
+          "bj",
+          7
+        ],
+        [
+          "triangle",
+          "bj",
+          8
+        ],
+        [
+          "triangle",
+          "bj",
+          9
+        ],
+        [
+          "triangle",
+          "bj",
+          10
+        ],
+        [
+          "triangle",
+          "bj",
+          11
+        ],
+        [
+          "triangle",
+          "bj",
+          12
+        ],
+        [
+          "triangle",
+          "bj",
+          13
+        ],
+        [
+          "triangle",
+          "bj",
+          14
+        ],
+        [
+          "triangle",
+          "bj",
+          15
+        ],
+        [
+          "triangle",
+          "bj",
+          16
+        ],
+        [
+          "triangle",
+          "bj",
+          17
+        ],
+        [
+          "triangle",
+          "bj",
+          18
+        ],
+        [
+          "triangle",
+          "bj",
+          19
+        ],
+        [
+          "triangle",
+          "bj",
+          20
+        ]
+      ],
+      "inputs": [
+        {
+          "path": "/tmp/padua-lanczos-frontier-g1-independent/high20/triangle-bj-d20.jsonl",
+          "bytes": 19643,
+          "sha256": "0e046a58ae330cd4402bf4050958f302a49b9d8e0ea2701c0c7325802661b1bc"
+        },
+        {
+          "path": "/tmp/padua-lanczos-frontier-g1/full/triangle-bj/endpoints.json",
+          "bytes": 44755,
+          "sha256": "d4791ceec194d7739256a70422b39769f7722d15d32ad86326e98a4d29734caa"
+        }
+      ],
+      "code_sha256": "64ee9f3fefdbba8f944f9ec1580352d46b70bc18e332dc715032db11b462fb5e",
+      "command": [
+        "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_independent_compare.py",
+        "--independent",
+        "/tmp/padua-lanczos-frontier-g1-independent/high20/triangle-bj-d20.jsonl",
+        "--producer",
+        "/tmp/padua-lanczos-frontier-g1/full/triangle-bj/endpoints.json",
+        "--receipt",
+        "/tmp/padua-lanczos-frontier-g1-independent/triangle-bj-high20-fresh-comparison.json"
+      ]
+    },
+    {
+      "status": "PASS exact independent/producer row identities",
+      "rows": [
+        [
+          "triangle",
+          "mirror",
+          2
+        ],
+        [
+          "triangle",
+          "mirror",
+          3
+        ],
+        [
+          "triangle",
+          "mirror",
+          4
+        ],
+        [
+          "triangle",
+          "mirror",
+          5
+        ],
+        [
+          "triangle",
+          "mirror",
+          6
+        ],
+        [
+          "triangle",
+          "mirror",
+          7
+        ],
+        [
+          "triangle",
+          "mirror",
+          8
+        ],
+        [
+          "triangle",
+          "mirror",
+          9
+        ],
+        [
+          "triangle",
+          "mirror",
+          10
+        ],
+        [
+          "triangle",
+          "mirror",
+          11
+        ],
+        [
+          "triangle",
+          "mirror",
+          12
+        ],
+        [
+          "triangle",
+          "mirror",
+          13
+        ],
+        [
+          "triangle",
+          "mirror",
+          14
+        ],
+        [
+          "triangle",
+          "mirror",
+          15
+        ],
+        [
+          "triangle",
+          "mirror",
+          16
+        ],
+        [
+          "triangle",
+          "mirror",
+          17
+        ],
+        [
+          "triangle",
+          "mirror",
+          18
+        ],
+        [
+          "triangle",
+          "mirror",
+          19
+        ],
+        [
+          "triangle",
+          "mirror",
+          20
+        ]
+      ],
+      "inputs": [
+        {
+          "path": "/tmp/padua-lanczos-frontier-g1-independent/high20/triangle-mirror-d20.jsonl",
+          "bytes": 19846,
+          "sha256": "1a45faebd668b8ce8c841e1ee69f2bd1abb1d8fb7758b75babc10f831cb07c6e"
+        },
+        {
+          "path": "/tmp/padua-lanczos-frontier-g1/full/triangle-mirror/endpoints.json",
+          "bytes": 44830,
+          "sha256": "c419a4176454df1888ae7172522b563d476b42040ab9a9b2cc43d9ecad257a06"
+        }
+      ],
+      "code_sha256": "64ee9f3fefdbba8f944f9ec1580352d46b70bc18e332dc715032db11b462fb5e",
+      "command": [
+        "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_independent_compare.py",
+        "--independent",
+        "/tmp/padua-lanczos-frontier-g1-independent/high20/triangle-mirror-d20.jsonl",
+        "--producer",
+        "/tmp/padua-lanczos-frontier-g1/full/triangle-mirror/endpoints.json",
+        "--receipt",
+        "/tmp/padua-lanczos-frontier-g1-independent/triangle-mirror-high20-fresh-comparison.json"
+      ]
+    },
+    {
+      "status": "PASS exact independent/producer row identities",
+      "rows": [
+        [
+          "triangle",
+          "alt",
+          2
+        ],
+        [
+          "triangle",
+          "alt",
+          3
+        ],
+        [
+          "triangle",
+          "alt",
+          4
+        ],
+        [
+          "triangle",
+          "alt",
+          5
+        ],
+        [
+          "triangle",
+          "alt",
+          6
+        ],
+        [
+          "triangle",
+          "alt",
+          7
+        ],
+        [
+          "triangle",
+          "alt",
+          8
+        ],
+        [
+          "triangle",
+          "alt",
+          9
+        ],
+        [
+          "triangle",
+          "alt",
+          10
+        ],
+        [
+          "triangle",
+          "alt",
+          11
+        ],
+        [
+          "triangle",
+          "alt",
+          12
+        ],
+        [
+          "triangle",
+          "alt",
+          13
+        ],
+        [
+          "triangle",
+          "alt",
+          14
+        ],
+        [
+          "triangle",
+          "alt",
+          15
+        ],
+        [
+          "triangle",
+          "alt",
+          16
+        ],
+        [
+          "triangle",
+          "alt",
+          17
+        ],
+        [
+          "triangle",
+          "alt",
+          18
+        ],
+        [
+          "triangle",
+          "alt",
+          19
+        ],
+        [
+          "triangle",
+          "alt",
+          20
+        ]
+      ],
+      "inputs": [
+        {
+          "path": "/tmp/padua-lanczos-frontier-g1-independent/high20/triangle-alt-d20.jsonl",
+          "bytes": 22880,
+          "sha256": "57f284cac4b1b5cc3ad63454ef00057eb884a93d8833a18be35921e36fecf38c"
+        },
+        {
+          "path": "/tmp/padua-lanczos-frontier-g1/full/triangle-alt/endpoints.json",
+          "bytes": 47907,
+          "sha256": "38008a9cbe2ad065b24e98ca78f7fb95a3f3603b0e7631ceb1d66ce241da663d"
+        }
+      ],
+      "code_sha256": "64ee9f3fefdbba8f944f9ec1580352d46b70bc18e332dc715032db11b462fb5e",
+      "command": [
+        "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_independent_compare.py",
+        "--independent",
+        "/tmp/padua-lanczos-frontier-g1-independent/high20/triangle-alt-d20.jsonl",
+        "--producer",
+        "/tmp/padua-lanczos-frontier-g1/full/triangle-alt/endpoints.json",
+        "--receipt",
+        "/tmp/padua-lanczos-frontier-g1-independent/triangle-alt-high20-fresh-comparison.json"
+      ]
+    },
+    {
+      "status": "PASS exact independent/producer row identities",
+      "rows": [
+        [
+          "triangle",
+          "pivot",
+          2
+        ],
+        [
+          "triangle",
+          "pivot",
+          3
+        ],
+        [
+          "triangle",
+          "pivot",
+          4
+        ],
+        [
+          "triangle",
+          "pivot",
+          5
+        ],
+        [
+          "triangle",
+          "pivot",
+          6
+        ],
+        [
+          "triangle",
+          "pivot",
+          7
+        ],
+        [
+          "triangle",
+          "pivot",
+          8
+        ],
+        [
+          "triangle",
+          "pivot",
+          9
+        ],
+        [
+          "triangle",
+          "pivot",
+          10
+        ],
+        [
+          "triangle",
+          "pivot",
+          11
+        ],
+        [
+          "triangle",
+          "pivot",
+          12
+        ],
+        [
+          "triangle",
+          "pivot",
+          13
+        ],
+        [
+          "triangle",
+          "pivot",
+          14
+        ],
+        [
+          "triangle",
+          "pivot",
+          15
+        ],
+        [
+          "triangle",
+          "pivot",
+          16
+        ],
+        [
+          "triangle",
+          "pivot",
+          17
+        ],
+        [
+          "triangle",
+          "pivot",
+          18
+        ],
+        [
+          "triangle",
+          "pivot",
+          19
+        ],
+        [
+          "triangle",
+          "pivot",
+          20
+        ]
+      ],
+      "inputs": [
+        {
+          "path": "/tmp/padua-lanczos-frontier-g1-independent/high20/triangle-pivot-d20.jsonl",
+          "bytes": 23193,
+          "sha256": "11f5ea7b7726a975664646b6276d78b8201e44e9c34edc3e21a9bf425a96c9f7"
+        },
+        {
+          "path": "/tmp/padua-lanczos-frontier-g1/full/triangle-pivot/endpoints.json",
+          "bytes": 48169,
+          "sha256": "99833b7e4ac902ce701c5d3eb743b0d83ef14549dc9a163abc3f8cc3dd5f1e3b"
+        }
+      ],
+      "code_sha256": "64ee9f3fefdbba8f944f9ec1580352d46b70bc18e332dc715032db11b462fb5e",
+      "command": [
+        "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_independent_compare.py",
+        "--independent",
+        "/tmp/padua-lanczos-frontier-g1-independent/high20/triangle-pivot-d20.jsonl",
+        "--producer",
+        "/tmp/padua-lanczos-frontier-g1/full/triangle-pivot/endpoints.json",
+        "--receipt",
+        "/tmp/padua-lanczos-frontier-g1-independent/triangle-pivot-high20-fresh-comparison.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+== reference screen comparison (mine vs committed summary)
+triangle 2026110501 8 trusted True True kappa relerr 0.00e+00 rank 45 45 spangap 3.072e-15 vs 3.072e-15 LDgram 1.95e-18 vs 1.84e-18 replaymax 4.86328e-13 vs indep 4.86328e-13
+triangle 2026110501 16 trusted True True kappa relerr 1.40e-16 rank 153 153 spangap 3.094e-15 vs 3.092e-15 LDgram 2.17e-18 vs 2.28e-18 replaymax 2.77845e-06 vs indep 2.77845e-06
+triangle 2026110501 24 trusted True True kappa relerr 1.70e-15 rank 325 325 spangap 3.958e-14 vs 3.826e-14 LDgram 2.49e-18 vs 2.28e-18 replaymax 5.9126 vs indep 5.9126
+ own/L2 Q max 0.0 yx-dev 0.0 adapt full/window parent diffs 0
+triangle 2026110502 8 trusted True True kappa relerr 0.00e+00 rank 45 45 spangap 3.066e-15 vs 3.066e-15 LDgram 1.08e-18 vs 1.08e-18 replaymax 4.1174e-13 vs indep 4.1174e-13
+triangle 2026110502 16 trusted True True kappa relerr 0.00e+00 rank 153 153 spangap 3.580e-15 vs 3.694e-15 LDgram 1.90e-18 vs 1.90e-18 replaymax 2.28067e-06 vs indep 2.28067e-06
+triangle 2026110502 24 trusted True True kappa relerr 1.20e-14 rank 325 325 spangap 1.079e-13 vs 1.079e-13 LDgram 2.93e-18 vs 2.98e-18 replaymax 5.66223 vs indep 5.66223
+ own/L2 Q max 0.0 yx-dev 0.0 adapt full/window parent diffs 0
+== resolved losses (accepted reference only)
+  ('triangle', 2026110501, 24, 'tanh', 'upstream_xy', 'uniform') err 1.4488e-08 ref 2.0746e-09 diff 1.5919e-08
+  ('triangle', 2026110501, 24, 'tanh', 'upstream_xy', 'boundary') err 1.6383e-08 ref 3.3807e-09 diff 1.4580e-08
+  ('triangle', 2026110501, 24, 'tanh', 'dev_window', 'boundary') err 8.0792e-09 ref 3.3807e-09 diff 7.4721e-09
+  ('triangle', 2026110502, 24, 'rational', 'upstream_yx', 'uniform') err 3.7733e-01 ref 1.5645e-01 diff 2.5168e-01
+  ('triangle', 2026110502, 24, 'rational', 'upstream_yx', 'boundary') err 2.1446e+00 ref 8.4962e-01 diff 1.4148e+00
+  ('triangle', 2026110502, 24, 'rational', 'dev_full', 'uniform') err 3.7891e-01 ref 1.5645e-01 diff 2.5324e-01
+  ('triangle', 2026110502, 24, 'rational', 'dev_full', 'boundary') err 2.1470e+00 ref 8.4962e-01 diff 1.4174e+00
+  ('triangle', 2026110502, 24, 'rational', 'dev_window', 'uniform') err 3.9388e-01 ref 1.5645e-01 diff 2.6911e-01
+  ('triangle', 2026110502, 24, 'rational', 'dev_window', 'boundary') err 2.2308e+00 ref 8.4962e-01 diff 1.4981e+00
+  ('triangle', 2026110502, 24, 'tanh', 'upstream_xy', 'boundary') err 2.1046e-08 ref 9.3844e-09 diff 1.8529e-08
+  ('triangle', 2026110502, 24, 'tanh', 'upstream_yx', 'uniform') err 1.9418e-08 ref 3.5429e-09 diff 1.7915e-08
+  ('triangle', 2026110502, 24, 'tanh', 'upstream_yx', 'boundary') err 1.3477e-07 ref 9.3844e-09 diff 1.3047e-07
+  ('triangle', 2026110502, 24, 'tanh', 'dev_full', 'uniform') err 1.9551e-08 ref 3.5429e-09 diff 1.8063e-08
+  ('triangle', 2026110502, 24, 'tanh', 'dev_full', 'boundary') err 1.3553e-07 ref 9.3844e-09 diff 1.3123e-07
+  ('triangle', 2026110502, 24, 'tanh', 'dev_window', 'boundary') err 4.5006e-08 ref 9.3844e-09 diff 4.1495e-08
+  ('triangle', 2026110502, 24, 'absolute', 'upstream_yx', 'uniform') err 9.3869e-02 ref 3.7378e-02 diff 7.1731e-02
+  ('triangle', 2026110502, 24, 'absolute', 'upstream_yx', 'boundary') err 4.8474e-01 ref 1.6419e-01 diff 3.7625e-01
+  ('triangle', 2026110502, 24, 'absolute', 'dev_full', 'uniform') err 9.4265e-02 ref 3.7378e-02 diff 7.2140e-02
+  ('triangle', 2026110502, 24, 'absolute', 'dev_full', 'boundary') err 4.8561e-01 ref 1.6419e-01 diff 3.7720e-01
+  ('triangle', 2026110502, 24, 'absolute', 'dev_window', 'boundary') err 3.4704e-01 ref 1.6419e-01 diff 2.2935e-01
+ count 20
+ recomputed-flag mismatches 0 of 480
+ closest-to-threshold accepted cells:
+   (0.008880867401218517, 'triangle', 2026110501, 24, 'absolute', 'upstream_xy', 'uniform', 0.9911191325987815, 737386073.9842668)
+   (0.04158666619517304, 'triangle', 2026110502, 24, 'tanh', 'dev_window', 'uniform', 0.958413333804827, 55.62185910467545)
+   (0.05685031152755804, 'triangle', 2026110502, 24, 'absolute', 'dev_window', 'boundary', 1.056850311527558, 2293465861.7141333)
+   (0.06178269930555025, 'triangle', 2026110502, 24, 'absolute', 'dev_window', 'uniform', 0.9382173006944498, 455741083.3174769)
+   (0.12132396318617045, 'triangle', 2026110502, 24, 'tanh', 'upstream_xy', 'boundary', 1.1213239631861704, 185.29351127621777)
+   (0.1551374453902089, 'triangle', 2026110501, 24, 'tanh', 'dev_window', 'uniform', 0.8448625546097911, 21.25849057802659)
+   (0.17231272014605448, 'triangle', 2026110501, 24, 'tanh', 'upstream_yx', 'boundary', 0.8276872798539455, 28.16603642903797)
+   (0.17433482968336478, 'triangle', 2026110501, 24, 'tanh', 'mirror_full', 'boundary', 0.5062168773426597, 0.8256651703166352)
+== paired directions (both seeds) where both seeds present
+  triangle 24 tanh boundary upstream_xy / mirror_full winner mirror_full ratios(comparator/winner) 4.7867;2.2426 SAME-GROUP
+  triangle 24 tanh boundary upstream_xy / alt_full winner alt_full ratios(comparator/winner) 4.8463;2.2454 SAME-GROUP
+  triangle 24 tanh boundary upstream_xy / adapt_full winner adapt_full ratios(comparator/winner) 4.8462;2.2426 SAME-GROUP
+  triangle 24 tanh boundary upstream_xy / mirror_window winner mirror_window ratios(comparator/winner) 4.8608;2.2425 cross-group
+  triangle 24 tanh boundary upstream_xy / alt_window winner alt_window ratios(comparator/winner) 4.8463;2.2453 cross-group
+  triangle 24 tanh boundary upstream_xy / adapt_window winner adapt_window ratios(comparator/winner) 4.8463;2.2426 cross-group
+  triangle 24 tanh boundary mirror_full / dev_window winner mirror_full ratios(comparator/winner) 2.3605;4.7958 cross-group
+  triangle 24 tanh boundary alt_full / dev_window winner alt_full ratios(comparator/winner) 2.3899;4.8019 cross-group
+  triangle 24 tanh boundary adapt_full / dev_window winner adapt_full ratios(comparator/winner) 2.3898;4.7959 cross-group
+  triangle 24 tanh boundary dev_window / mirror_window winner mirror_window ratios(comparator/winner) 2.3970;4.7955 SAME-GROUP
+  triangle 24 tanh boundary dev_window / alt_window winner alt_window ratios(comparator/winner) 2.3899;4.8016 SAME-GROUP
+  triangle 24 tanh boundary dev_window / adapt_window winner adapt_window ratios(comparator/winner) 2.3899;4.7959 SAME-GROUP

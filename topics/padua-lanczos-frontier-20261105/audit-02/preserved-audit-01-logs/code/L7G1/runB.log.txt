@@ -1,0 +1,6 @@
+ov mirror exit 0
+full mirror exit 0
+mirror elapsed 12.725775601
+ov pivot exit 0
+full pivot exit 0
+pivot elapsed 26.212522329

@@ -1,0 +1,50 @@
+{
+ "schema": "numerical-environment-v1",
+ "observed_utc": "2026-11-05T19:39:53.138953+00:00",
+ "scope": "Actual response-session environment observation only; not a historical suite receipt or rerun",
+ "collector_sha256": "38e77399d1e09fa58214219e44255a97ba073b47c0234584abf07752ab8b8c63",
+ "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+ "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+ "machine": "x86_64",
+ "libc": [
+  "glibc",
+  "2.41"
+ ],
+ "cpu": {
+  "vendor_id": "AuthenticAMD",
+  "model name": "AMD EPYC 7763 64-Core Processor",
+  "flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr arat npt nrip_save tsc_scale vmcb_clean flushbyasid pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm arch_capabilities"
+ },
+ "numpy": "2.3.5",
+ "scipy": "1.17.0",
+ "blas_dispatch": [
+  {
+   "user_api": "blas",
+   "internal_api": "openblas",
+   "num_threads": 1,
+   "prefix": "libscipy_openblas",
+   "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-fdde5778.so",
+   "version": "0.3.30",
+   "threading_layer": "pthreads",
+   "architecture": "Haswell"
+  },
+  {
+   "user_api": "blas",
+   "internal_api": "openblas",
+   "num_threads": 1,
+   "prefix": "libscipy_openblas",
+   "filepath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-6cdc3b4a.so",
+   "version": "0.3.30",
+   "threading_layer": "pthreads",
+   "architecture": "Haswell"
+  }
+ ],
+ "numpy_runtime": "[{'numpy_version': '2.3.5',\n  'python': '3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]',\n  'uname': uname_result(system='Linux', node='1adaf4399d89', release='6.18.57', version='#1 SMP Tue Oct 20 21:56:04 UTC 2026', machine='x86_64')},\n {'simd_extensions': {'baseline': ['SSE', 'SSE2', 'SSE3'],\n                      'found': ['SSSE3',\n                                'SSE41',\n                                'POPCNT',\n                                'SSE42',\n                                'AVX',\n                                'F16C',\n                                'FMA3',\n                                'AVX2'],\n                      'not_found': ['AVX512F',\n                                    'AVX512CD',\n                                    'AVX512_KNL',\n                                    'AVX512_KNM',\n                                    'AVX512_SKX',\n                                    'AVX512_CLX',\n                                    'AVX512_CNL',\n                                    'AVX512_ICL',\n                                    'AVX512_SPR']}},\n {'ignore_floating_point_errors_in_matmul': False},\n {'architecture': 'Haswell',\n  'filepath': '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-fdde5778.so',\n  'internal_api': 'openblas',\n  'num_threads': 1,\n  'prefix': 'libscipy_openblas',\n  'threading_layer': 'pthreads',\n  'user_api': 'blas',\n  'version': '0.3.30'},\n {'architecture': 'Haswell',\n  'filepath': '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-6cdc3b4a.so',\n  'internal_api': 'openblas',\n  'num_threads': 1,\n  'prefix': 'libscipy_openblas',\n  'threading_layer': 'pthreads',\n  'user_api': 'blas',\n  'version': '0.3.30'}]\n",
+ "environment": {
+  "OPENBLAS_CORETYPE": "Haswell",
+  "OPENBLAS_NUM_THREADS": "1",
+  "OMP_NUM_THREADS": "1",
+  "MKL_NUM_THREADS": null,
+  "NPY_DISABLE_CPU_FEATURES": null
+ }
+}

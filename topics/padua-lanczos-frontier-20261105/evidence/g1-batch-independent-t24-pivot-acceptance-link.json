@@ -1,0 +1,169 @@
+{
+  "status": "PASS derived T24 case identity link to prior actual exact acceptance; no new rerun",
+  "grid": "triangle",
+  "rule": "pivot",
+  "degrees": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "endpoints": {
+    "path": "/tmp/padua-lanczos-frontier-g1/full/triangle-pivot/endpoints.json",
+    "bytes": 48169,
+    "sha256": "99833b7e4ac902ce701c5d3eb743b0d83ef14549dc9a163abc3f8cc3dd5f1e3b"
+  },
+  "independent_endpoints": {
+    "path": "/tmp/padua-lanczos-frontier-g1-independent/high20/triangle-pivot-d20.jsonl",
+    "bytes": 23193,
+    "sha256": "11f5ea7b7726a975664646b6276d78b8201e44e9c34edc3e21a9bf425a96c9f7"
+  },
+  "prior_actual_acceptance": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/evidence/g1-independent-triangle20-comparison.json",
+    "bytes": 10229,
+    "sha256": "a6e785dd8150eef1d48c5a2af99508ccf75115e1dbe4ac4c950721af202d2d6d"
+  },
+  "prior_case_comparison": {
+    "status": "PASS exact independent/producer row identities",
+    "rows": [
+      [
+        "triangle",
+        "pivot",
+        2
+      ],
+      [
+        "triangle",
+        "pivot",
+        3
+      ],
+      [
+        "triangle",
+        "pivot",
+        4
+      ],
+      [
+        "triangle",
+        "pivot",
+        5
+      ],
+      [
+        "triangle",
+        "pivot",
+        6
+      ],
+      [
+        "triangle",
+        "pivot",
+        7
+      ],
+      [
+        "triangle",
+        "pivot",
+        8
+      ],
+      [
+        "triangle",
+        "pivot",
+        9
+      ],
+      [
+        "triangle",
+        "pivot",
+        10
+      ],
+      [
+        "triangle",
+        "pivot",
+        11
+      ],
+      [
+        "triangle",
+        "pivot",
+        12
+      ],
+      [
+        "triangle",
+        "pivot",
+        13
+      ],
+      [
+        "triangle",
+        "pivot",
+        14
+      ],
+      [
+        "triangle",
+        "pivot",
+        15
+      ],
+      [
+        "triangle",
+        "pivot",
+        16
+      ],
+      [
+        "triangle",
+        "pivot",
+        17
+      ],
+      [
+        "triangle",
+        "pivot",
+        18
+      ],
+      [
+        "triangle",
+        "pivot",
+        19
+      ],
+      [
+        "triangle",
+        "pivot",
+        20
+      ]
+    ],
+    "inputs": [
+      {
+        "path": "/tmp/padua-lanczos-frontier-g1-independent/high20/triangle-pivot-d20.jsonl",
+        "bytes": 23193,
+        "sha256": "11f5ea7b7726a975664646b6276d78b8201e44e9c34edc3e21a9bf425a96c9f7"
+      },
+      {
+        "path": "/tmp/padua-lanczos-frontier-g1/full/triangle-pivot/endpoints.json",
+        "bytes": 48169,
+        "sha256": "99833b7e4ac902ce701c5d3eb743b0d83ef14549dc9a163abc3f8cc3dd5f1e3b"
+      }
+    ],
+    "code_sha256": "64ee9f3fefdbba8f944f9ec1580352d46b70bc18e332dc715032db11b462fb5e",
+    "command": [
+      "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_independent_compare.py",
+      "--independent",
+      "/tmp/padua-lanczos-frontier-g1-independent/high20/triangle-pivot-d20.jsonl",
+      "--producer",
+      "/tmp/padua-lanczos-frontier-g1/full/triangle-pivot/endpoints.json",
+      "--receipt",
+      "/tmp/padua-lanczos-frontier-g1-independent/triangle-pivot-high20-fresh-comparison.json"
+    ]
+  },
+  "derivation_code": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_batch_independent_manifest.py",
+    "bytes": 4956,
+    "sha256": "ff0a6f0e6fd616d1396579f405f3096c5611a0550738761e4d8fd4557fe3b9b2"
+  },
+  "limits": "Identity-only derivation from retained actual comparison; no new scientific execution."
+}

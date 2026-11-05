@@ -1,0 +1,18 @@
+{
+  "state": "LOCAL_ONLY_NOT_DELIVERED",
+  "inventory": {
+    "path": "/tmp/padua-lanczos-frontier-storage/response01-inventory.json",
+    "bytes": 1809,
+    "sha256": "5fa7ebd228dd943135c6348835a8665db381e625daa3caff481c29802472c549",
+    "files": 11
+  },
+  "builder": {
+    "path": "code/storage_response_inventory.py",
+    "bytes": 2765,
+    "sha256": "714ffab89ad730512470cd0c8165a850d3600265c0291147f7960339f4f9f964"
+  },
+  "build_command": "python -B topics/padua-lanczos-frontier-20261105/code/storage_response_inventory.py --n1-root /tmp/padua-l6-response-recheck.KLTHWlF1 --packaging-root /tmp/padua-response-packaging-replay",
+  "check_command": "python -B topics/padua-lanczos-frontier-20261105/code/storage_response_inventory.py --check",
+  "provenance": "evidence-response-01.md, l6-n1-methods.md, response-01.md and evidence/response-n1-recheck.json distinguish actual runs and recipes.",
+  "retention": "Temporary scratch only; no Windows delivery or retention guarantee. Prior cold-storage indices remain unchanged."
+}

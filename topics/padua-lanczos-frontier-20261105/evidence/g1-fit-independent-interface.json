@@ -1,0 +1,58 @@
+{
+  "status": "PASS independent SYNTHETIC report verification; REAL G1 NOT RUN",
+  "synthetic_only": true,
+  "checker": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_fit_independent.py",
+    "sha256": "0bbcf38542e077806b8d2f9c36c7b0bdf8ca19105f562b7b4369aefaed70750c",
+    "bytes": 30621
+  },
+  "manifest": {
+    "path": "/tmp/padua-lanczos-frontier-g1-fit/synthetic-v3/valid-fixture/manifest.json",
+    "sha256": "511c59c827773ced04d281e14149d41311c6f9aebc2387ff4b5cd5cab6ced65d",
+    "bytes": 5723
+  },
+  "report": {
+    "path": "/tmp/padua-lanczos-frontier-g1-fit-independent/synthetic-report-interface/report.json",
+    "sha256": "df1c0e6d9072cfd568b52bfb2aadb1e52b2aafab4e149855042632d891c8cc14",
+    "bytes": 60887
+  },
+  "grids": {
+    "triangle": {
+      "reported_status": "INCONCLUSIVE, certified counterchoice",
+      "independent": {
+        "clause": "early",
+        "exact_product_compare_to_one": -1
+      },
+      "descriptive_intervals": "PASS independent outward enclosures"
+    },
+    "rotated": {
+      "reported_status": "INCONCLUSIVE, certified counterchoice",
+      "independent": {
+        "clause": "early",
+        "exact_product_compare_to_one": -1
+      },
+      "descriptive_intervals": "PASS independent outward enclosures"
+    }
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_fit_independent.py",
+    "--manifest",
+    "/tmp/padua-lanczos-frontier-g1-fit/synthetic-v3/valid-fixture/manifest.json",
+    "--report",
+    "/tmp/padua-lanczos-frontier-g1-fit-independent/synthetic-report-interface/report.json",
+    "--receipt",
+    "/tmp/padua-lanczos-frontier-g1-fit-independent/synthetic-report-interface/independent-final-labeled.json"
+  ],
+  "scope": "Finite descriptive fits and unchanged operational certificates only; no asymptotic claim.",
+  "producer_command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "topics/padua-lanczos-frontier-20261105/code/g1_fit.py",
+    "--manifest",
+    "/tmp/padua-lanczos-frontier-g1-fit/synthetic-v3/valid-fixture/manifest.json",
+    "--output-dir",
+    "/tmp/padua-lanczos-frontier-g1-fit-independent/synthetic-report-interface"
+  ]
+}

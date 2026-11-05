@@ -1,0 +1,31 @@
+{
+  "status": "PASS synthetic independent fit arithmetic controls",
+  "controls": [
+    "log bounds checked by separate exact exponential series",
+    "negative log powers, negative rounding and crossing-zero squares",
+    "known exact affine exponential and log predictor coefficients",
+    "strict early equality fails; nonstrict late equality passes; positive early product",
+    "strict SSE witness for exact synthetic exponential singleton ordinates",
+    "universal root cover for exact synthetic logarithmic singleton ordinates",
+    "accepted full explicitly synthetic152-row manifest without logarithms",
+    "rejected missing case before logs",
+    "rejected wrong frozen source before logs",
+    "rejected incorrect artifact hash before logs",
+    "rejected omitted source",
+    "rejected wrong node family cardinality",
+    "rejected wrong exact upper minimum",
+    "rejected Y tie choice",
+    "rejected missing frozen tie"
+  ],
+  "actual_G1_inputs_used": false,
+  "code_sha256": "0bbcf38542e077806b8d2f9c36c7b0bdf8ca19105f562b7b4369aefaed70750c",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "topics/padua-lanczos-frontier-20261105/code/g1_fit_independent.py",
+    "--self-test"
+  ],
+  "external_cap_seconds": 60,
+  "elapsed_seconds": 0.9944952580008248,
+  "scope": "Synthetic data only; actual G1 fit forbidden before152 rows and rootSTART."
+}

@@ -1,0 +1,125 @@
+{
+  "status": "PASS all3 native remaining-rule20 cases; fresh producer matches pending",
+  "raw_summary": {
+    "path": "/tmp/padua-lanczos-frontier-g1-native-remaining/run/summary.json",
+    "bytes": 717,
+    "sha256": "909f6ed9f5499c9de0f143c8c5fa2a77e8cf83f7dc6807287d3cf9a5559ecbd1"
+  },
+  "launcher": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_batch_independent_remaining.py",
+    "bytes": 7336,
+    "sha256": "11c5ce4e4f0888f76a7b826317920abc9725c55996711c28c02d9c93d2767fad"
+  },
+  "native_source": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_fast_independent.cpp",
+    "bytes": 9215,
+    "sha256": "b6434df51d3df7e04136b1da9f8ee63e6c5f599e609625f415718766db0480dc"
+  },
+  "cases": [
+    {
+      "rule": "mirror",
+      "elapsed_seconds": 435.95768520899946,
+      "completed_degrees": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-native-remaining/run/mirror-receipt.json",
+        "bytes": 3713,
+        "sha256": "0184f6afe680cb5543ddb37727821d230274ddf0086c31fb0ca949d6594bb358"
+      },
+      "endpoints": {
+        "path": "/tmp/padua-lanczos-frontier-g1-native-remaining/run/rotated-mirror-d20.jsonl",
+        "bytes": 943312,
+        "sha256": "e08a759eac1724fb7d7c7a34aa4d4695e1f740560fcd796dbf47b844d15e63b8"
+      }
+    },
+    {
+      "rule": "alt",
+      "elapsed_seconds": 847.3176770520004,
+      "completed_degrees": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-native-remaining/run/alt-receipt.json",
+        "bytes": 3701,
+        "sha256": "7d4054a54f42e6f2c62e1c037c92eb0dfe79fab269eaecd00d8a262482e8e1c2"
+      },
+      "endpoints": {
+        "path": "/tmp/padua-lanczos-frontier-g1-native-remaining/run/rotated-alt-d20.jsonl",
+        "bytes": 1047866,
+        "sha256": "d76c0b8e4a55531313df0291c3d3e98f40c6f85358c9ed130a7869f074425994"
+      }
+    },
+    {
+      "rule": "pivot",
+      "elapsed_seconds": 785.9056627909995,
+      "completed_degrees": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-native-remaining/run/pivot-receipt.json",
+        "bytes": 3709,
+        "sha256": "9b679f25920a9a5f9e77a208f89a6d12771983201207d2a243f17e9d8200a7ed"
+      },
+      "endpoints": {
+        "path": "/tmp/padua-lanczos-frontier-g1-native-remaining/run/rotated-pivot-d20.jsonl",
+        "bytes": 1023629,
+        "sha256": "8bb75f5909cd15789d5a9ea9396b701b9e1d7a5a033b7275527bf142ae64573d"
+      }
+    }
+  ]
+}
