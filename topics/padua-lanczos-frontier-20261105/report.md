@@ -1,6 +1,6 @@
 # Lanczos frontier — aggregate separation and checked closure certificates
 
-Stage WORK — response to Claude audit-01 FINDINGS REQUIRE WORK. [Draft PR24](https://github.com/aacchhee/padua_research/pull/24), not ready for merge. Rules read at7f50cae80f5372db7c278aef4ba4a0a05e1137ea; current main330fab835f43e5ba5b24e320c2d7e9647e6cbd60 merged without changing the frozen Lanczos sources. No final IDs assigned or canonical registries changed; [literal proposed changes](proposed-record-changes.md) await audited preparation.
+Stage AUDIT — response-01 complete, focused Claude re-audit PENDING; audit-01 FINDINGS REQUIRE WORK remains preserved. [Draft PR24](https://github.com/aacchhee/padua_research/pull/24), not ready for merge. Rules read at7f50cae80f5372db7c278aef4ba4a0a05e1137ea; integrated main snapshot330fab835f43e5ba5b24e320c2d7e9647e6cbd60 merged without changing the frozen Lanczos sources. No final IDs assigned or canonical registries changed; [literal proposed changes](proposed-record-changes.md) await audited preparation.
 
 ## L1: analytic separation on the saved sheared family
 
@@ -115,3 +115,7 @@ The following are bounded attributions to the **PR21 (unmerged)** P3 comparison 
 | L3-01 finite-error support theorem | Row15: RELATED, DIFFERENT SETTING to exact-span validity/nonuniqueness remarks; P3 names Barrio–Peña–Sauer Remark9 as closer prior art on numerical selection (not re-read there). State the explicit per-column finite-budget/full-projection hypotheses, keep Hres-only and useful degree-uniform/efficient selection OPEN, and claim no first selection-stability result. |
 
 Canonical aliases, timing-qualified literal future rows and original-to-support mappings are proposed only; shared registries remain unchanged. The compact G1/log tables permit bounded repository-only verification of both INCONCLUSIVE counterchoices; they do not regenerate the exact rational endpoints. The full20-cell Haswell L7 loss list and aggregator identity are committed separately from historical truncated summaries. See evidence-response-01.md and the current storage addendum for provenance and limits.
+
+## Response-01 publication boundary
+
+All audit findings have recorded dispositions in [response-01.md](response-01.md), with fixes pinned to a64b866e25a3b117c9ce87410e9b511f428881da. [Supplementary Astrahigh response review](independent-checks-response-01.md) passes after a chronology clarification; it does not replace Claude's focused re-audit or AC's protocol decision. No accepted proof/formula, numerical criterion, source table or tolerance changes after that review. Final stage/next-step, response, inventory and handoff metadata are publication additions. Next: [handoff08](handoffs/08-reaudit.md), Claude Opus5.5 high. A-P1 acceptance, historicalCPU provenance and physical archival remain explicitly unresolved as described; no merge readiness or final IDs.
