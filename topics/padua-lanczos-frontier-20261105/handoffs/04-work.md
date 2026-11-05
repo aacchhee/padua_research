@@ -1,6 +1,6 @@
 # Handoff 04 — continue the frontier after all-degree aggregate and closure proofs
 
-- Status: open
+- Status: done in b6bf1f6fe98b8fc72b35ac7d275ea03039dd3055
 - Previous handoff: [03-work.md](03-work.md).
 - Next agent / model / effort: Codex orchestrator and mathematics, gpt-6.1-sol xhigh; technical implementation gpt-6.1-sol medium; supplementary mathematical checks gpt-6-astra high, xhigh for a justified new structural/adversarial mechanism. Required later cross-family audit: Claude Opus5.5 xhigh, pending.
 - Role: orchestrator/developer.
