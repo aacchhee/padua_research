@@ -21,11 +21,22 @@ The sharper geometric choice q=1−cos(r/2) also gives the same conditional impl
 
 Use PD-T216/225's phases, normalization and Λ_c. Natural logarithms. The quoted rigorous lower bound is Λ_c≥A log²n−54 (PD-T156/157, with the PD-T159 corner-product dependency). The hypothetical specified C is the unresolved hypothesis. The roots below are floating diagnostics; no decimal endpoint is claimed outward rounded.
 
+The hypothetical interval C∈[1.4,1.7] is prescribed by
+[handoff 01, gate A0](../handoffs/01-work.md). Its empirical motivation is
+the finite G3 screens in [PD-T247](../../padua-argmax-effective-20261103/theory/argmax-effective-codex-02-gate-measurements.md)
+and [PD-T252](../../padua-argmax-effective-20261103/theory/argmax-effective-claude-01-pilot-measurements.md).
+Those MEASURED screens do not prove a global C in this interval.
+
 ## Status by part
 
 Overall status: **CONDITIONAL**, because the stated C range has not been proved globally. The algebraic implication is written below; it is not a new established effective threshold. Arithmetic roots are supplementary floating evaluations, with no maximum-certification role.
 
 Candidate disposition: inherited-route diagnostic, not a new mechanism or a refutation of R1.
+
+Dated review note, 2026-11-05: Claude [audit-01](../audit-01.md) accepts the
+original conditional arithmetic. Retain this file as gate-A0 evidence
+linked from R1's deferred disposition, with no final PD-T registration
+proposed (F5). The existing provisional alias and CONDITIONAL status remain.
 
 ## Depends on
 
@@ -70,7 +81,7 @@ The leading balance is T≈Cπ⁴/(2r²); this explains the inherited shorthand 
 
 Under the **original written A0 inequality**, both radii give roots above 10⁴, and the order 3×10⁵ claim is confirmed at 1/64. The sufficient root does not prove that actual maximizers require such a huge n; it measures the loss in this proof route. It also does not justify the universal phrase “no sharpening can work.”
 
-The separately displayed exact phase sharpening gives a root below 10⁴ at r=1/16. This is a genuine refinement of the arithmetic and must not be hidden by a blanket closed-R1 verdict. It does **not** reopen an already workable bridge: the inherited noncorner defect theorem is only for r≤1/64, and the inherited strict local corner comparison still requires log n≥10⁷. At r=1/64 the sharpened roots remain above 10⁵. A route extending defect and corner predicates to the larger radius is a separate unresolved option, not a consequence of the diagnostic. Even n≈exp(7076) is far beyond finite enumeration.
+The separately displayed exact phase sharpening gives a root below 10⁴ at r=1/16. This is a genuine refinement of the arithmetic and must not be hidden by a blanket closed-R1 verdict. It does **not** reopen an already workable bridge. The original PD-T224 noncorner defect bound stopped at r≤1/64; the accepted [T04](defect-radius-extension.md) now covers ρ≤1/10, including r=1/16, for n≥48. The inherited PD-T228 corner comparison still needs log n≥10⁷, while T07's all-degree physical radius does not establish corner comparison throughout the phase zone ρ≤1/16. A globally certified C and a compatible corner comparison remain missing. At r=1/64 the sharpened roots remain above 10⁵; even n≈exp(7076) is far beyond finite enumeration. The dated interpretation of the reopening criterion is recorded in [gates.md](../gates.md).
 
 ## Checks
 
@@ -82,8 +93,17 @@ Internal proved dependencies and explicit hypothetical C. No external priority c
 
 ## Scope and open items
 
-Needed: an explicit globally valid C and stronger defect/corner estimates if this route is pursued. A0 diagnoses the inherited sufficient mechanism; it neither disproves PD-T099 nor supplies an effective N₁. It does not rule out different effective inequalities or quantitative refinements.
+Needed: an explicit globally valid C and a corner comparison on the
+matching phase radius if this route is pursued. T04 now supplies the
+noncorner defect at r=1/16 for n≥48. A0 diagnoses the inherited sufficient
+mechanism; it neither disproves PD-T099 nor supplies an effective N₁.
+It does not rule out different effective inequalities or quantitative refinements.
 
 ## History
 
 2026-11-05, Codex, AC-requested gpt-6-astra ultra mathematical development; runtime metadata not independently exposed. Replaces the handoff's approximate numerical diagnosis with an explicit conditional formula while preserving the original gate and separately recording the sharper geometric observation. No final ID assigned.
+
+2026-11-05 audit response, Codex, gpt-6-astra ultra: F5 corrects the
+current defect-radius limitation using T04, records the hypothetical
+C-range provenance and keeps T02 as unregistered A0 evidence. Original
+conditional statement, arithmetic proof, thresholds and status are unchanged.

@@ -31,8 +31,9 @@ integer n>=2. b_n may depend arbitrarily on n but not on the phases.
 ## Status by part
 
 Overall status: **PROVED**, immediate consequence of the separately
-proved boundary formula. Independent supplementary check and Claude audit
-pending at first writing.
+proved boundary formula. Dated review note, 2026-11-05: Claude
+[audit-01](../audit-01.md) accepted this original scope; the record response
+check is pending.
 
 Candidate disposition: **REJECTED: refuted**, only for the explicitly
 specified leading-factor-only vanishing-remainder trial.
@@ -64,14 +65,25 @@ This proves (1) for every b_n. The divergence follows from log N -> infinity.
 
 ## Scope and open items
 
-The obstruction requires a nonzero phase-dependent logarithmic correction
-on the diamond boundary. Its midpoint coefficient relative to log n is
-exactly 4/pi. This does not show that any particular corrected profile
-works in the interior, refute H2 in general, or address PD-T099.
-Independent reconstruction and required Claude audit remain pending.
+Boundary-profile remark (using T03, beyond this midpoint proof):
+[T03 equations (2)–(4)](profile-boundary-cotangent.md) have a=0 all along
+the boundary, S_n=1 at its vertices and S_n=L_N at its midpoints.
+Consequently a phase-independent correction cannot give a vanishing
+absolute uniform error there: the required logarithmic correction varies
+with phase, with midpoint coefficient 4/pi relative to log n. The midpoint
+argument above alone establishes only (1). Neither observation shows that
+any particular corrected profile works in the interior, refutes H2 in
+general, or addresses PD-T099. Audit-01 accepted the original negative
+statement; the record response check remains pending.
 
 ## History
 
 2026-11-05, Codex, AC-requested gpt-6-astra ultra; rules/input
 ed21cc0bf205549936fccde90244a291bc6de324. Trial specified and tested
 analytically after the gate, before any fitting. No final ID allocated.
+
+2026-11-05 audit response, Codex, gpt-6-astra ultra: F10 labels the
+boundary-profile discussion as a remark and supplies its T03 attribution.
+The earlier unqualified wording attributed too much to the midpoint
+obstruction alone. The negative statement, proof, constants, PROVED
+status and scoped REJECTED: refuted disposition are unchanged.

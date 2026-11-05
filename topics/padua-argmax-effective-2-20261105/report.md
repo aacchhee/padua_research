@@ -6,7 +6,9 @@ input topic head `50cc7effde11fc9cc875cf2b8275a76458c75152`,
 fetched/merged main `21dbfc90257b952d8923f6d01739d12aa8d6e0a1`.
 Mathematics used AC-requested Astra ultra; code/replays used Sol medium;
 a distinct Astra high agent supplied the mathematical supplement.
-Parent serving metadata is unexposed. Required Claude audit remains PENDING.
+Parent serving metadata is unexposed. Claude [audit-01](audit-01.md) ACCEPTS
+the mathematics at every stated scope. This response corrects records and
+attribution; its required Claude response check is pending.
 
 ## Main result: H3 has an explicit physical n^-2 radius
 
@@ -22,10 +24,18 @@ and PD-T227's aggregate inequality. W_n<=10^10 n^4 Lambda_c and
 Lambda_n<=27500 Lambda_c are explicit. The scalar inequality permits
 individual cardinal sign changes, so PD-N085 is respected. The small constant
 is not a claim that the practical H1 corner zone or runtime gate is solved.
-The old n^-6 radius can be larger at moderate degrees and remains available.
+The closest radius predecessors are PD-T227 §Scope (8), whose implication is
+instantiated here with a=1/8, b=10^10 and K=30000, and PD-T228
+[statement and proof](../padua-argmax-alln-20261101/theory/gated-codex-14-reflection-first-corner-bound.md),
+which already gives2^-17/n² eventually under log n>=10^7. The distinction is
+validity at every n>=2 with an explicit constant, not first discovery of the
+n^-2 scale. Against PD-T251, the new radius is larger only for n>=473.
+The available all-degree strict-descent radius is therefore
+max(1/(2[n(n+1)]³),10^-11/n²). The displayed quantitative loss above belongs
+only to T07's own10^-11/n² radius; it is not extended to the larger union.
 
 These are written analytic PROVED statements, with supplementary independent
-reconstruction complete and required Claude audit pending. They add no global
+reconstruction complete and Claude audit-01 accepted at these scopes. They add no global
 finite degree or effective all-degree threshold.
 
 ## H1 and noncorner defect
@@ -86,10 +96,12 @@ nor a confirmed counterexample. Receipts and exact reproducible commands are
 in [phase-probe.md](phase-probe.md) and [projection-probe.md](projection-probe.md).
 
 The [independent Astra supplement](independent-math-checks.md) reconstructs
-T01–T07/N01, including the new full-orbit formula, and executes a separately
+T01–T07/N01, including the full-orbit formula (a routine generalization of
+PD-T228 eq.(3)), and executes a separately
 authored70-digit polynomial checker at n2–8. It records final reviewed hashes
 and no unresolved mathematical finding. It explicitly does not complete the
-full-registry novelty/protocol audit or replace the required Claude audit.
+full-registry novelty/protocol audit or replace Claude audit-01, which has
+now completed those checks and accepted the mathematics.
 
 ## Exact remaining gap
 
@@ -106,10 +118,16 @@ its existing finite comparisons; no new E-C mechanism or R3 run was attempted.
 
 ## For the paper
 
-Subject to the required audit, the Padua Lebesgue-function paper can add an
-explicit all-degree physical n^-2 strict corner-descent neighborhood, aggregate
-energy/global-norm bounds, a wider uniform noncorner defect neighborhood, and
-an exact phase-boundary cotangent profile with a uniform vanishing error. It
+The scoped statements accepted by Claude audit-01 support an explicit
+all-degree continuation of the existing physical n^-2 corner theorem, aggregate
+energy control, a wider uniform noncorner defect neighborhood, and an exact
+phase-boundary cotangent profile with a uniform vanishing error. T06 is an
+auxiliary explicit-constant re-derivation of the known global O(log² n) bound,
+not a new global-norm theorem or a claim to the first explicit constant.
+The relevant source record is LIT-312 (Bos et al.2006, Theorem3), with LIT-379
+and local PD-T216+PD-T157 / PD-T227 §Scope as further predecessors. Bos et al.
+fulltext/constant comparison remains pending; this response reads the existing
+coverage-qualified record, not a new external fulltext. The paper
 must retain the global corner-argmax assertion as OPEN beyond the finite
 certified range and the inherited non-effective eventual theorem. No priority,
 submission or new literature-transfer claim is made.
@@ -120,11 +138,39 @@ Scientific registrations remain provisional; permanent reservation is in
 [ALLOCATIONS.md](ALLOCATIONS.md). [Literal shared-record proposals](proposed-record-changes.md)
 are not applied to merged state. Complete prospective-gate timing qualifications
 for the energy child and IDEA358 wrapper are explicitly retained in H3/H2 gate
-records for Claude's disposition. No retrospective full compliance is claimed.
+records for Claude's disposition (accepted as disclosed in audit-01). The H1 record-order
+and delegated-read qualifications are also retained; no retrospective full
+prospective compliance is claimed.
 
 Code and small essential receipts are committed. Bulk replay/probe outputs stay
 under local-output/argmax-effective-2-20261105 pending physical delivery to AC's
 Padua cold storage; no Windows transfer or durable retention is claimed. All
 scientific proofs above are analytic and do not depend on unique local raw
-bytes. Generated measurements remain reproducible at their pinned source
-identities, while rerunning does not reproduce old timing bytes.
+bytes. All40 original local files were reverified present and byte-identical
+in this Codex sandbox during response-01; the separate Claude environment did
+not have these paths. Reruns recover the recorded mathematical fields, while
+old timing bytes and hardware-dependent CPU-capped frontiers are not guaranteed.
+
+## 2026-11-05 response record and reproduction corrections
+
+T01's inherited identities are verification, with only the finite sufficiency
+reduction proposed for registration. T02 stays CONDITIONAL gate-A0 evidence and
+will not be registered. The existing accepted finite measurements are collected
+in the proposed scoped MEASURED T08 record; no scientific field or scope is
+expanded. Optional degree40 cross-check: not attempted in this phase2 campaign.
+
+The historical handoff02 body is immutable. Its missing required output flag
+is corrected here for any later rerun (not executed in this response):
+
+```sh
+OPENBLAS_NUM_THREADS=1 python topics/padua-argmax-effective-2-20261105/code/independent_math.py --output local-output/argmax-effective-2-20261105/response-check/independent-math.json
+OPENBLAS_NUM_THREADS=1 python topics/padua-argmax-effective-2-20261105/code/projection_probe.py
+OPENBLAS_NUM_THREADS=1 python topics/padua-argmax-effective-2-20261105/code/box_pilot.py
+```
+
+Use an isolated checkout for scripts that overwrite run receipts. The last two
+commands import phase_probe from their script directory and must run without
+Python's -I flag. The structure_probe exact checks cover PD-T101's direct kernel
+expansion and reflection/multiset identities, including tested shifts ±π/4;
+they do not test the full-orbit or Q formulas, continuum cover lemma or sinc
+interval chart. Those require their separately documented proofs/checks.

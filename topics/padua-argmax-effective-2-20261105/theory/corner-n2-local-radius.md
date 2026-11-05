@@ -26,13 +26,23 @@ Use PD-T101's corrected cardinal polynomials, PD-T227's inward slopes
 A_n,B_n and weighted energy W_n, and Lambda_n=max lambda_n. h_x,h_y are
 physical, not angular, increments. Exact arithmetic, no sign-stability
 or global argmax hypothesis. This radius lies inside the physical square.
+Here H=h_x+h_y denotes physical L1 distance, whereas H in T05/T06 is
+1+log(n+1). In the scope comparison below N=n(n+1) is the mesh product,
+not PD-T101's node count.
 
 ## Status by part
 
 Overall status: **PROVED**, using the separately stated PROVED
-dependencies below, with no unresolved mathematical hypothesis.
-Supplementary final-file check and required Claude audit pending at
-first writing; independent checker has accepted the antecedent arguments.
+dependencies below, with no unresolved mathematical hypothesis. Dated
+review note, 2026-11-05: Claude [audit-01](../audit-01.md) accepted T07
+at its original scope, including its dependence on T05/T06 as accepted
+in that audit. First-writing review-pending wording is superseded;
+the record response check remains pending.
+
+| Part | Status | Evidence / limitation |
+|---|---|---|
+| Descent and loss (1) on the stated radius | PROVED | Accepted PD-T251, T05/T06 and PD-T227 (3) |
+| Transfer to the second nonnode corner | PROVED (routine invariance) | PD-T228, end of §4; node/weight permutation, detailed below |
 
 Candidate disposition: retained local theorem. PD-T099 is still OPEN.
 
@@ -49,8 +59,17 @@ Candidate disposition: retained local theorem. PD-T099 is still OPEN.
 ## Checks and sources
 
 Pure analytic assembly; no numerical data, runtime projection or fitted
-constant. The independent checker must review this final assembly and
-the exact dependency hashes. No external theorem or priority claim.
+constant. The supplementary reconstruction and Claude audit-01 cover
+the original assembly and dependencies. No external theorem or priority claim.
+
+Closest predecessors are [PD-T227 §Scope, (8)](../../padua-argmax-alln-20261101/theory/gated-codex-13-corner-first-variation.md)
+and [PD-T228](../../padua-argmax-alln-20261101/theory/gated-codex-14-reflection-first-corner-bound.md).
+The former already gives kappa=min(1,a/(b+eK)) under its slope, energy
+and norm premises; T07 instantiates that mechanism with a=1/8,
+b=10^10 and K=30000. PD-T228 already supplies physical radius
+2^-17/n² under its condition (2), in particular for log n>=10^7.
+T07's distinction is an explicit constant valid for every n>=2; it
+does not introduce the n^-2 scale or improve PD-T228's eventual constant.
 
 ## Proof
 
@@ -74,7 +93,11 @@ For z<=10^-11,
 Thus the bracket in (3) is at most 1-z/16, proving (1).
 The node-preserving x reflection for even n and y reflection for odd n
 transfers the same cardinals, slopes and energy to the second nonnode
-corner. No third corner is included in this statement.
+corner. Explicitly j maps to n-j for even n, or k to m-k for odd n
+(when m is even): both maps preserve j+k even and endpoint weights,
+and interpolation uniqueness permutes the cardinals, preserving inward
+slopes and energy. This is PD-T228's proof §4, final paragraph.
+No third corner is included in this statement.
 
 ## Scope
 
@@ -86,9 +109,19 @@ box-count or runtime pass without the actual H1 cover measurements.
 PD-N085 remains valid: the proof allows individual affine sign changes
 and controls their aggregate cost via W_n.
 
+Range comparison and recorded combination of accepted theorems (not a new
+target or a replacement of (1)): PD-T251 gives strict descent for physical
+H<=1/(2N³), while T07 gives (1) for H<=10^-11/n². The usable all-degree
+strict-descent radius from these two results is therefore
+max(1/(2N³),10^-11/n²). T07's radius is larger exactly for integer n>=473;
+PD-T251's is larger for 2<=n<=472. Each theorem retains its own loss
+estimate on its own domain: the stronger loss in (1) is not asserted on
+the whole maximum radius. PD-T228's larger eventual radius remains
+available under its separate stated condition.
+
 ## Open items
 
-Independent final-file check and required Claude audit; sharper radius
+Record response check; sharper radius
 constants or per-degree corner bounds for practical H1 coverage; full
 near-coset and far-region assembly. PD-T099 remains OPEN.
 
@@ -99,3 +132,13 @@ ed21cc0bf205549936fccde90244a291bc6de324. This strengthens the radius
 scale beyond PD-T251's physical n^-6 neighborhood while retaining its
 all-degree slope theorem as a dependency. Original H3's larger practical
 corner-box objective remains recorded; no final ID allocated.
+
+2026-11-05 audit response, Codex, gpt-6-astra ultra: F2 qualifies the
+first-writing "strengthens" description above by the exact n>=473 radius
+comparison and cites PD-T227/228. The scale existed already in PD-T228;
+the distinction is all-degree validity. The usable max radius is only a
+recorded combination of accepted strict-descent theorems, not a new claim
+registration or an extension of (1)'s loss bound. F9 and E1/E2 add the
+existing reflection justification, accepted-dependency review note and
+notation. The original Statement, constants and PROVED status remain
+unchanged; the sole proof-body addition explains the already cited symmetry.

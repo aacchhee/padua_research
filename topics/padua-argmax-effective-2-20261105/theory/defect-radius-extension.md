@@ -18,14 +18,17 @@ The bound is uniform over all admissible phase signs, centers and degrees in thi
 ## Definitions and assumptions
 
 The corrected finite kernel, positive endpoint weights, full defect Δ and projected defects Q_v,Q_h are those of PD-T215 and `phase-structure.md`. Exact real arithmetic. The inherited adaptive-block theorem PD-T222 applies at ρ≤1/8 to points whose relevant physical angular endpoint distance is at least 4π/n. We use that theorem only in this stated regime.
+Throughout, ρ:=|α|+|β|.
 
 ## Status by part
 
-Overall status: **PROVED**, by the analytic finite construction below; supplementary check and required Claude audit pending.
+Overall status: **PROVED**, by the analytic finite construction below.
+Dated review note, 2026-11-05: Claude [audit-01](../audit-01.md) accepted
+the original scope; the record response check is pending.
 
 | Mathematical part | Status | Evidence / limitation |
 |---|---|---|
-| Uniform noncorner defect (1), n≥48 and ρ≤1/10 | PROVED | Same lattice-line selections as PD-T224 with sharpened numerator floor |
+| Uniform noncorner defect (1), n≥48 and ρ≤1/10 | PROVED | Same lattice-line selections as PD-T224 with improved baseline and a smaller resulting numerator floor |
 
 Candidate disposition: retained quantitative variant of IDEA-328 / PD-T224. No new mechanism or historical novelty claim.
 
@@ -46,7 +49,7 @@ For odd periodic index pairs, a signed half-kernel has the form
  \quad a=\tfrac12(\cos\alpha+\cos\beta),
 \]
 
-up to a sign common to the two terms of the relevant projected pair. Throughout ρ≤1/10,
+up to a sign common to the two terms of the relevant projected pair. Throughout ρ≤1/10, use α²+β²≤(|α|+|β|)²=ρ² to obtain
 
 \[
  a\ge1-(\alpha^2+\beta^2)/4\ge399/400,
@@ -67,7 +70,7 @@ Take an endpoint-distance index s∈{1,2,3,4}. The two target angles in each con
  \quad\hbox{or}\quad 2t<26/n.                               \tag{3}
 \]
 
-If the selected comparison angle lies strictly between the two targets, the cosine denominators are nonzero, opposite in sign and bounded in magnitude by their target span. Equations (2)–(3) give a defect of the two signed half-kernels of at least m/832 vertically or n/832 horizontally. The normalization of each half-kernel projected sum is 1/N.
+If the selected comparison angle lies strictly between the two targets, the cosine denominators are nonzero, opposite in sign and bounded in magnitude by their target span. The vertical and horizontal constructions below verify this ordering on [π/8,3π/4], where cosine is strictly decreasing. Equations (2)–(3) give a defect of the two signed half-kernels of at least m/832 vertically or n/832 horizontally. The normalization of each half-kernel projected sum is 1/N.
 
 ### Vertical lines, including parity
 
@@ -106,7 +109,7 @@ For the top, r+k=n+q and odd J+K gives J≡n+s (mod 2); q≡s. For the bottom r+
 
 ### Horizontal lines and the fixed numerator
 
-Let l run through integers m/4≤l≤m/2; there are at least m/8. The physical first index is j=l+q and the periodic second index is r. Put b=jπ/n (a first-mesh angle in this subsection). Use
+Let l run through integers m/4≤l≤m/2; there are at least m/4−1≥m/8, since m=n+1≥49. The physical first index is j=l+q and the periodic second index is r. Put b=jπ/n (a first-mesh angle in this subsection). Use
 
 | Physical center | q | r and comparison angle w | t | n(w−b) |
 |---|---:|---|---|---|
@@ -169,3 +172,11 @@ Only noncorner odd centers, n≥48. The corner centers have zero defect at zero 
 ## History
 
 2026-11-05, Codex mathematical worker, AC-requested gpt-6-astra ultra; runtime metadata not independently exposed. Root proposed enlarging the inherited numerator floor during the A2 gate, and the worker reconstructed all eight lines, parity and far cases before recording the theorem. No final ID assigned; no registry edit.
+
+2026-11-05 audit response, Codex, gpt-6-astra ultra: E5 corrects the
+first-writing description above. The baseline improves from 1/16 to
+3/40, while the resulting numerator floor decreases from 223/4096 to
+397/16000 as the admissible radius grows. E6 makes ρ, the square bound,
+the later angle-ordering check and the horizontal row-count step explicit.
+These explain estimates already used in the accepted proof; no statement,
+proof step, constant or epistemic status is changed.

@@ -4,7 +4,9 @@ Branch `codex/padua-argmax-effective-2-20261105`; [draft PR25](https://github.co
 Mathematical development complete at the scoped checkpoint below. Claude
 [audit-01](../topics/padua-argmax-effective-2-20261105/audit-01.md) accepts
 the mathematics at every stated scope with no status change; record findings
-(attribution of T06/T07, scope wording, dispositions) await Codex response-01.
+(attribution of T06/T07, scope wording, dispositions) are addressed in
+[response-01](../topics/padua-argmax-effective-2-20261105/response-01.md);
+the required Claude response check is pending.
 All IDs provisional; no canonical registry changes.
 
 - **PROVED analytic T05/T06/T07:** W_n<=10^10 n^4 Lambda_c,
@@ -12,7 +14,12 @@ All IDs provisional; no canonical registry changes.
   corners whenever0<H<=10^-11/n², with loss>=n² Lambda_c H/16.
   [Radius](../topics/padua-argmax-effective-2-20261105/theory/corner-n2-local-radius.md).
   This closes H3's physical n^-2 scale while leaving useful constants/practical
-  coverage unresolved; individual cardinal sign changes are allowed.
+  coverage unresolved; individual cardinal sign changes are allowed. T07
+  instantiates PD-T227 §Scope(8) and provides an all-degree counterpart
+  to PD-T228's eventual n^-2 radius, with the smaller explicit constant10^-11. Relative to PD-T251 the new radius is larger only
+  for n>=473; strict descent is available on
+  max(1/(2[n(n+1)]³),10^-11/n²). T06 re-derives a known global O(log² n)
+  bound with explicit auxiliary constants, without claiming first constants.
 - **PROVED analytic T03:** exact cotangent profile on all four closed diamond
   edges with absolute error<=7/(12[n(n+1)]²), midpoint S_n=L_{n(n+1)}.
   [Boundary](../topics/padua-argmax-effective-2-20261105/theory/profile-boundary-cotangent.md).
@@ -36,6 +43,7 @@ All IDs provisional; no canonical registry changes.
 n>32, explicit full-diamond N1 or completed bridge33<=n<N_* is supplied.
 [Report](../topics/padua-argmax-effective-2-20261105/report.md) and
 [gate verdicts](../topics/padua-argmax-effective-2-20261105/gates.md).
-Next: Codex response-01 to audit-01 findings F1–F12/E1–E8, then response check
-and PR preparation; practical H1/full-diamond H2 remain OPEN research.
-Bulk outputs remain local pending physical archival; no delivery claimed.
+Next: Claude response check of response-01, then audited PR preparation;
+practical H1/full-diamond H2 remain OPEN research. All40 original bulk files
+were reverified byte-identical in the Codex sandbox; physical archival is
+pending and no delivery or durable retention is claimed.

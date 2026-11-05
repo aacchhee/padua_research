@@ -21,20 +21,27 @@ value at the nonnode corner. Then
 Set m=n+1, N=nm. Use the corrected finite kernel G_n=D_n-cos(nu),
 the same positive endpoint weights and all polynomial values at removable
 collisions. All arithmetic is exact. No global argmax assumption.
+Explicitly, D_n(u,v)=sum_(a+b<=n) h_a h_b cos(au)cos(bv), with h_0=1
+and h_a=2 for a>0. N is the mesh product, not PD-T101's node count.
+The H=1+log m used below is a logarithmic factor, not T07's physical H.
 
 ## Status by part
 
-Overall status: **PROVED**, analytic proof below. Independent supplementary
-checker accepted the proposed argument; final-file review and required
-Claude audit remain pending at first writing.
+Overall status: **PROVED**, analytic proof below. Dated review note,
+2026-11-05: Claude [audit-01](../audit-01.md) accepted the original scope;
+the record response check is pending. Earlier pending-review wording
+described first writing, before that audit.
 
-Candidate disposition: retained supporting explicit bound. No optimal
-coefficient, sharp norm ratio or new historical mechanism is claimed.
+Candidate disposition: retained explicit-constant re-derivation of the
+known O(log² n) global bound, with an explicit all-degree norm ratio.
+No optimal coefficient, sharp ratio, new historical mechanism or first
+explicit constant is claimed.
 
 ## Depends on
 
-PD-T101/PD-T185 finite rhombus kernel and endpoint-weighted reflection;
-PD-T250's Lambda_c>=2; PD-T157's
+PD-T101/PD-T185 finite rhombus kernel; PD-T227, first display of the proof
+§Values and gradients, for the interior four-reflection cardinal formula;
+PD-T251 §1 for Lambda_c>=2; PD-T157's
 Lambda_c>=(4/pi^2)log^2 n-54. The lattice count and constants are proved
 below, without importing a global Lebesgue theorem from the literature.
 
@@ -43,7 +50,22 @@ below, without importing a global Lebesgue theorem from the literature.
 Analytic proof only; no numerical run is a premise. The independent
 checker was sent the complete count, normalizations and constants before
 this file was written. Gate: `../novelty-gate-H2-H3.md` and the continuation
-record `../attempts/H3.md`. No external theorem or priority claim.
+record `../attempts/H3.md`.
+
+Closest predecessors (internal records inspected for this response):
+[LIT-312's record](../../../literature/lattice-unisolvence/records/padua-2006.md)
+reports Bos et al. 2006, Theorem 3, as a global C log² n bound;
+[T-A2](../../padua-proof-attempts-2-20261101/attempts/T-A2.md) records its
+unspecified constant and the LIT-379 global leading asymptotic
+(4/pi²)log² n+O(log n). The [literature INDEX](../../../literature/INDEX.md)
+preserves the source-reading qualifications and later addenda for both IDs.
+[PD-T227 §Scope, (8)](../../padua-argmax-alln-20261101/theory/gated-codex-13-corner-first-variation.md)
+already records the eventual non-explicit ratio from PD-T216 plus PD-T157.
+The present contribution is the displayed explicit all-degree constants,
+proved locally. No external fulltext was read in this response: these are
+comparisons to repository records, not a fresh source verification or a
+transferred proof. Bos et al. fulltext remains a pending reference; no
+"first explicit constant" claim is supported or made.
 
 ## Proof
 
@@ -140,7 +162,8 @@ Thus H^2<=250 Lambda_c for all n>=2. Combine with (6) to prove (1).
 This deliberately coarse explicit ratio is sufficient for a uniform
 corner-radius implication. It neither proves Lambda_n=Lambda_c nor
 gives a useful near-coset defect margin. Sharpening its constants is
-separate from its all-degree validity. Required Claude audit pending.
+separate from its all-degree validity. Audit-01 accepted that validity;
+the record response check remains pending.
 
 ## History
 
@@ -148,3 +171,10 @@ separate from its all-degree validity. Required Claude audit pending.
 ed21cc0bf205549936fccde90244a291bc6de324. The rotated-bin argument was
 given to the independent checker before writing; no fit or external
 global-norm theorem is used. No final ID allocated.
+
+2026-11-05 audit response, Codex, gpt-6-astra ultra: F1 and E1/E2/E4
+add the omitted predecessors, qualify this as an explicit-constant
+re-derivation, define the kernel and fix the reflection/lower-bound
+citations. The original no-import description concerns proof dependence,
+not absence of known literature. Statement, proof body, constants and
+PROVED status are unchanged. Historical source-reading limits are retained.

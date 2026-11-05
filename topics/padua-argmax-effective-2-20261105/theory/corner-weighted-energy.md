@@ -23,24 +23,40 @@ All arithmetic is exact real arithmetic. Original physical node indices satisfy 
     q_x=L_jk,x(c)/L_jk(c), q_y=L_jk,y(c)/L_jk(c).
 
 Then the contribution to W is V(q_x^2+q_y^2). Write H=1+log m and H_r=sum_(h=1)^r 1/h. Every sum below is finite unless explicitly bounded by a convergent positive series. The elementary estimates 8<pi^2<10 and sum_(r>=1) r^(-p)<=2 for p>=2 suffice.
+Here N=nm is the mesh product, not PD-T101's node count; H denotes a
+logarithmic factor, whereas H in T07 denotes the physical distance h_x+h_y.
 
 ## Status by part
 
-Overall status: **PROVED** by the written analytic argument below; supplementary independent mathematical check and required Claude audit are pending.
+Overall status: **PROVED** by the written analytic argument below.
+Dated review note, 2026-11-05: Claude [audit-01](../audit-01.md) accepted
+the original scope; the record response check is pending.
 
 | Part | Status | Evidence / limit |
 |---|---|---|
 | Explicit all-n energy bound (1) | PROVED | Diagonal cancellation; off-diagonal weighted sums; separate removable index |
+| Transfer to the second nonnode corner | PROVED (routine invariance) | PD-T228, end of §4; parity-preserving node/weight permutation and cardinal uniqueness |
 
 Candidate disposition: retained quantitative continuation of IDEA-330. No priority claim. The original all-degree global argmax target remains OPEN.
 
 ## Depends on
 
 - PD-T227: exact values and physical gradient/value formulas, zero mask, removable index.
-- PD-T250 / PD-T251: Lambda_c>=2 and node-preserving corner reflections.
+- PD-T251 §1: Lambda_c>=2, hence also Lambda_c>=1 used in (14).
+- PD-T228, end of proof §4: node-preserving corner reflections, also used in PD-T251.
 - PD-T157: Lambda_c >= (4/pi^2) log^2 n -54.
 
-The last two scalar lower bounds are used only to absorb H into Lambda_c. No global Lebesgue upper bound, claimed argmax equality, fitted constant, numerical energy screen, or unproved sign stability is used.
+The scalar lower bounds absorb H into Lambda_c; Lambda_c>=1 also
+justifies the last inequality of (14). No global Lebesgue upper bound,
+claimed argmax equality, fitted constant, numerical energy screen, or
+unproved sign stability is used.
+
+For the corner transfer, x-reflection sends j to n-j when n is even;
+y-reflection sends k to m-k when n is odd (so m is even). Each preserves
+j+k even and the endpoint weights. Uniqueness of interpolation permutes
+the cardinals; inward derivatives and squared gradient magnitudes
+therefore give the same Lambda_c, A_n, B_n and W_n at the second corner.
+This spells out the invariance already cited in the statement.
 
 ## Proof
 
@@ -71,7 +87,10 @@ With sinc z=sin z/z, define
     R_E=(1-ab)/E_0=(sin^2 s+sin^2 t)/(s^2+t^2),
     R_u=(1-a^2)/u^2=sinc^2 u.
 
-All these ratios lie in (0,1]. Sine's chord bound yields R_C,R_d>=4/pi^2>2/5. The Taylor estimates 0<=1-sinc z<=z^2/6 and 0<=1-sinc^2 z<=z^2/3 yield
+All these ratios lie in (0,1]. Here 0<=t<=s<=u<=pi/2, and sinc is
+positive and decreasing on [0,pi/2], with value 1 at zero.
+R_E is the weighted average of sinc^2 s and sinc^2 t with weights
+s^2,t^2, so R_E>=sinc^2 s. Sine's chord bound yields R_C,R_d>=4/pi^2>2/5. The Taylor estimates 0<=1-sinc z<=z^2/6 and 0<=1-sinc^2 z<=z^2/3 on 0<=z<=pi/2 yield
 
     1-R_C<=u^2/12, 1-R_d<=u^2/6,
     1-R_E<=u^2/3, 1-R_u<=u^2/3.
@@ -83,6 +102,7 @@ Consequently
     |cos u/R_d-1| < 2u^2.                                      (4)
 
 For example the first numerator error is at most (1/3+1/12+1/6)u^2=7u^2/12, and its denominator exceeds 4/25. The other two follow in the same way, with numerator bounds 2u^2/3 and denominator bounds 4/25 and 2/5 respectively.
+For the second numerator use 1-R_d^2=(1-R_d)(1+R_d)<=2(1-R_d).
 
 In (2), replace the three nonconstant rational terms by their leading expressions
 
@@ -159,6 +179,9 @@ For the first sum, D<=j+k<=2k+L; each pair k,L allows at most two j. Extending p
       <=2 sum_(k=1)^m sum_(L>=2) [2/(k L^3)+1/(k^2 L^2)]
       <=8H_m+8 <=16H.                                        (10)
 
+Here H_m<=1+log m=H by the integral bound for the harmonic sum,
+and H>=1 absorbs the additive 8.
+
 For fixed L,D there are at most four index pairs: each of j=k+L and j=k-L has at most two solutions of D=min(j+k,2n+1-j-k). Therefore
 
     sum_off 1/(D^3L^3)<=16,
@@ -174,6 +197,9 @@ Using (r_1+r_2+r_3+r_4)^2<=4 sum r_i^2 in (2), and sum_off V<=Lambda_c, gives
 
     E_x,off:=sum_off V q_x^2
       <=n^4 Lambda_c+130000000 n^4 H.                         (12)
+
+The unsimplified extra terms are 129440000 n^4 H+3904 n^4;
+H>=1 absorbs 3904 into the unused 560000 n^4 H allowance in (12).
 
 Set R=q_y-q_x. Equation (3) gives R^2<=2m^2+2A^2/d^2. The second estimate in (9) was proved using |a|<=1, so its proof also gives sum_off V/d^2<=976n^4. Since A<=2,
 
@@ -212,6 +238,10 @@ Analytic proof only. No new computation was executed for this claim; the earlier
 
 No external theorem is imported and no historical originality is claimed. This is a quantitative continuation of the existing weighted-energy mechanism. It proves the n^4 Lambda_c energy scale with an explicit very loose constant; it does not prove the conjectural constant 1 from PD-T227.
 
+The measured predecessor is [PD-T233](../../padua-argmax-alln-20261101/theory/prep-codex-02-d2-corner-screen.md),
+the finite corner slope and weighted-energy screen. Its observations are
+context only; no sampled value supplies this analytic all-degree bound.
+
 The known per-cardinal affine obstruction remains intact. The pointwise Hessian/Markov shortcut controls Taylor remainders but does not by itself control affine sign crossings; (1) supplies the missing aggregate control through PD-T227's scalar inequality.
 
 ## Open items
@@ -221,3 +251,12 @@ A usable constant is not supplied: 10^10 is many orders above the measured energ
 ## History
 
 2026-11-05, Codex mathematical subagent, parent-assigned gpt-6-astra ultra under AC's explicit campaign allocation; input/rules ed21cc0bf205549936fccde90244a291bc6de324. Parent granted this file after an initial no-write analysis assignment. No Git operations, large compute, or edits outside this file. The result closes a previously specified quantitative premise rather than claiming a new historical mechanism; the surrounding H3 candidate/gate records are maintained by the parent.
+
+2026-11-05 audit response, Codex, gpt-6-astra ultra: F6/F9 cite PD-T233
+and the precise PD-T228 reflection argument, with a routine status row.
+E2/E7 disambiguate symbols and spell out the sinc range, weighted-average,
+square, harmonic and constant-absorption facts already used. The original
+Statement and every numbered proof assertion are unchanged; these are
+explanations of the accepted proof, not a new mathematical result or premise.
+First-writing pending-review notes in Checks describe that historical stage;
+audit-01 accepts the original scope, and the record response check is pending.

@@ -38,7 +38,7 @@ Arithmetic: exact `fractions.Fraction` group algebra modulo z^(2L)−1, with L=4
 | 5 | 48 | 1008 | 48 | 8 | 1 |
 | 6 | 62 | 1736 | 62 | 8 | 1 |
 
-All checks accepted. The program additionally checks G(0,0)=2n(n+1) and G(π,π)=2n(−1)^n at each degree. Physical points include both parities, all odd centers, nonzero admissible phase shifts, edges, corners and diamond-boundary ties. These are formula checks, not finite maximum certificates.
+All checks accepted. The “direct cardinal” path is the PD-T101 kernel expansion at phases (±π/4,±π/4), compared with four reflected kernels and weighted periodic multisets. The program additionally checks G(0,0)=2n(n+1) and G(π,π)=2n(−1)^n at each degree. Physical points include both parities, all odd centers, nonzero admissible phase shifts, edges, corners and diamond-boundary ties. It does not exercise the full-orbit formula, the Q formulas, the cover lemma or the sinc chart. These are formula checks, not finite maximum certificates; separate checks in `independent-math-checks.md` must not be attributed to this program.
 
 The analytic all-n result in `theory/phase-structure.md` proves exact λ=S_n−Δ for the full reflection defect, endpoint multiplicities and sufficient finite class/box predicates. Using Q_v/Q_h gives only an upper bound. The new PD-T269 signed deformation is a different quantity despite the inherited Δ notation.
 
@@ -55,3 +55,42 @@ This is an available lower-bound ingredient, **not an A2 pass**: one must still 
 ## Unexecuted dependent gates
 
 A3 depends on a predefined profile and a genuine uniform error estimate; A4 cannot turn a fitted remainder into a proved N₁. A5 cannot turn a failed primitive/defect sufficient predicate into a Lebesgue-function counterexample. This structural work supplies none of those gate conclusions and leaves PD-T099 OPEN.
+
+## Response corrections — 2026-11-05
+
+Claude audit-01 accepted the mathematics at the stated scopes; earlier
+“pending” phrases above describe the structural checkpoint. This record
+response remains subject to the response check.
+
+T01's identities verify PD-T215/216/218/223/225/226/228 and PD-T101;
+the orbit formula routinely generalizes PD-T228 (3). Only its finite
+phase-chart sufficiency reduction is proposed for a narrow new
+registration, with PD-T210 as predecessor. The T02 arithmetic remains
+CONDITIONAL gate-A0 evidence, not a proposed new registration. Its
+hypothetical C range is prescribed in handoff-01 and motivated by
+PD-T247/252's finite measured screens, which do not prove C globally.
+The inherited 1/64 defect range mentioned in the historical A0 account
+is now enlarged to 1/10 by T04; this covers 1/16 but changes neither the
+A0 arithmetic nor its missing global-C/corner-comparison obligations.
+
+The following corrected reproduction commands replace erroneous forms
+in handoff-02 without editing that historical handoff's instruction
+body. They are instructions only; this response executed no probe:
+
+```sh
+OPENBLAS_NUM_THREADS=1 python3 -I topics/padua-argmax-effective-2-20261105/code/independent_math.py --output /tmp/argmax-effective-2-independent-math.json
+OPENBLAS_NUM_THREADS=1 python3 topics/padua-argmax-effective-2-20261105/code/projection_probe.py
+OPENBLAS_NUM_THREADS=1 python3 topics/padua-argmax-effective-2-20261105/code/box_pilot.py
+```
+
+`--output` is required by `independent_math.py`. The latter two scripts
+import `phase_probe` from their own directory and must run without
+`-I`; they write their compact receipts as well as local raw outputs,
+so independent reruns should use a disposable checkout and preserve
+their own receipts. No new independent rerun is claimed here.
+
+At `d98613e`, T01/T02/T04 already linked this file and the H1 gate and
+attempt; these records first entered a published commit at `50bcbb4`.
+The H1 gate's prospective timing is self-attested, and its full
+registry read was delegated. This dated clarification is not evidence
+of retrospective prospective compliance.

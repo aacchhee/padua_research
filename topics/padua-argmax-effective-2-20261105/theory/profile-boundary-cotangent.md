@@ -61,8 +61,11 @@ S_n(\alpha,\beta)=\frac1{2N}\sum_{\Gamma^-}
                     \frac{r\pi+\beta}m\right)\right|.
 \]
 
-L_M is PD-T270's one-dimensional sum, equivalently
+L_M is PD-T159's one-dimensional odd-cosecant sum, in the equivalent
+cotangent form of PD-T270 equation (2),
 \(L_M=M^{-1}\sum_{k=0}^{M-1}\cot(\pi(k+1/2)/(2M))\).
+It is unrelated to the cusp-slope L_n of PD-T220. N=n(n+1) here is
+the mesh product, not the node-count notation used in PD-T101.
 All logarithms are natural; gamma is Euler's constant.
 
 ## Assumptions
@@ -72,8 +75,9 @@ odd periodic board and normalization. No global argmax or fitted profile.
 
 ## Status by part
 
-Overall status: **PROVED** by the analytic proof below; supplementary
-independent check and required Claude audit are pending at first writing.
+Overall status: **PROVED** by the analytic proof below. Dated review note,
+2026-11-05: Claude [audit-01](../audit-01.md) accepted the original scope;
+the record response check is pending.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -87,6 +91,8 @@ is OPEN; (2) is a boundary theorem only.
 ## Depends on
 
 PD-T185's finite corrected kernel; PD-T216's exact numerator identity;
+PD-T159's definition of the odd-cosecant L_M and PD-T270 equation (2)
+for its equivalent cotangent form;
 PD-T270's elementary bound |v''|<1 on [0,pi/2] for
 v(x)=cot(x)-1/x, v(0)=0, and its all-integer L_M estimate (4).
 The finite CRT and the new paired remainder are proved here.
@@ -225,11 +231,16 @@ class-wise defects, or establish an effective global argmax threshold.
 ## Open items
 
 Full-diamond logarithmic and constant profiles, with compatible interior
-and boundary transition remainders; independent reconstruction and Claude
-audit. H2 and PD-T099 remain OPEN.
+and boundary transition remainders. The original scope was accepted by
+audit-01; the record response check remains pending. H2 and PD-T099 remain OPEN.
 
 ## History
 
 2026-11-05, Codex, AC-requested gpt-6-astra ultra. Input/rules
 ed21cc0bf205549936fccde90244a291bc6de324. Candidate selected after the
 documented gate and before any fits. No final ID allocated.
+
+2026-11-05 audit response, Codex, gpt-6-astra ultra: E2/E3 disambiguate
+N and L_M and cite the csc definition and cotangent identity separately.
+The first-writing pending-review description is superseded by audit-01's
+acceptance at the original scope. Statement, proof and status are unchanged.

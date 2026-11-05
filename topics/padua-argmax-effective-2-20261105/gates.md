@@ -4,7 +4,9 @@ The original criteria remain unchanged in handoff01. This file records actual
 scope and verdicts; it does not replace unavailable proofs by sample fits.
 Rules/input integration: ed21cc0bf205549936fccde90244a291bc6de324.
 Mathematics: AC-requested Astra ultra. Technical probes: Sol medium.
-Supplementary independent mathematics: distinct Astra high; Claude audit PENDING.
+Supplementary independent mathematics: distinct Astra high. Claude audit-01
+accepted the mathematics at its stated scopes; this record response remains
+subject to the response check.
 
 | Gate | Actual result / status | Exact remaining obligation |
 |---|---|---|
@@ -18,6 +20,11 @@ Supplementary independent mathematics: distinct Astra high; Claude audit PENDING
 H3 separately closes the physical n^-2 scale: T05/T06/T07 yield strict descent
 for every n>=2 at inward H<=10^-11/n². The constant does not establish a useful
 H1 box count. PD-N085 remains valid because individual sign changes are allowed.
+PD-T227 Scope (8) is the aggregate-radius predecessor; PD-T228 already
+gives the eventual 2^-17/n² radius, in particular for log n>=10^7. T07's
+separation is an explicit constant for every n>=2. The available all-degree
+strict-descent radius is max(1/(2[n(n+1)]³),10^-11/n²), combining PD-T251
+and T07 without extending either theorem's loss estimate.
 
 ## Completed commands and evidence
 
@@ -32,7 +39,30 @@ H1 box count. PD-N085 remains valid because individual sign changes are allowed.
 - Separate analytic reconstruction and70-digit diagnostics:
   independent-math-checks.md and evidence/independent-math.json.
 
+The phase/projection/box-pilot observations have the proposed scoped MEASURED
+home T08 in `theory/phase2-measurements.md`; this is transcription of existing
+evidence, not a new run or status. PD-T232/247 are the phase/defect-screen
+predecessors and PD-T233 is the separate measured energy predecessor. The
+hypothetical C=1.4–1.7 in A0 comes from handoff-01 and the finite primitive
+screens PD-T247/252; those samples do not establish a global C. T02 stays
+CONDITIONAL gate evidence linked to deferred R1 and is not proposed for
+registration.
+
 ## Separately dated criterion clarifications
+
+2026-11-05, response to audit-01 F3: interpret handoff-01's R1 reopening
+criterion “if that value is ≤10^4” as referring to the inherited
+PD-T216+PD-T225 coarse route. Its log n values 17456–21197 at ρ=1/16
+(and about 2.8–3.4·10^5 at 1/64) do not meet that threshold. The
+sharpened geometric variant gives 7076–8592 at 1/16, so it meets the
+literal numeric cutoff if the criterion is instead extended to that
+variant. Our recorded interpretation keeps R1 deferred: the refinement
+is separate, C is unproved, and no practical bridge or corner comparison
+follows. T04 now covers the noncorner radius 1/16, so that radius itself
+is no longer the missing defect ingredient. **AC may choose the broader
+interpretation; this decision item is preserved for AC.** The original
+criterion is unchanged, and the record response proceeds without
+reopening R1 or requiring a new permission request.
 
 2026-11-05: The inherited phrase "same safety margins as the exact version"
 does not define an executable floating predicate before the enclosures exist.
@@ -45,6 +75,13 @@ profile. The narrowly specified a(alpha,beta)*b_n trial is rejected by the exact
 boundary theorem; this does not reject every H2 profile or imply a second
 full-diamond fit has run. The retained boundary correction is useful but remains
 restricted to the diamond boundary.
+
+2026-11-05, response to audit-01 E8: optional degree-40 cross-check
+(handoff-01 task 5) **not attempted**. Within its analytic small-radius
+branch, the current box pilot uses the valid constant 1/8192 instead of
+the maximum of that constant and the projected-profile bound. This can
+weaken acceptance near n≈48–64; it is recorded as an implementation
+limitation, with no code change or new run.
 
 ## Runs needed
 

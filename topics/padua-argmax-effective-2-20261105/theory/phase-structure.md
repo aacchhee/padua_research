@@ -46,24 +46,43 @@ It has 2N terms. This equals PD-T216's normalization N⁻¹Σ|F_rs| because |F_r
 
 At boundary centers this imposes the appropriate inward phase signs. A phase point is attached only to centers for which it is physical.
 
+Notation: here and in the companion theory files N=n(n+1) is the mesh
+product. It is not PD-T101's node count (n+1)(n+2)/2. The one-dimensional
+L_n mentioned in the history is PD-T159/270's sum, not PD-T220's cusp slope.
+
 ## Assumptions
 
 The corrected cardinal identity PD-T101, even-checkerboard nodes, and exact real arithmetic. For certificate acceptance every supplied enclosure must be exact or outward rounded and independently validated; floats alone are insufficient. No assumption about a maximizer, smooth sign pattern or asymptotic profile is used.
 
 ## Status by part
 
-Overall status: **PROVED** by the analytic reduction below, pending supplementary check and required Claude audit. This is an inherited-identity verification plus a sufficient finite reduction; it does not upgrade any finite degree or PD-T099.
+Overall status: **PROVED** for the finite sufficiency reduction below.
+Dated review note, 2026-11-05: Claude [audit-01](../audit-01.md) accepted
+all mathematics at its original scope. The inherited identities are
+verification material and the orbit/profile formulas are routine lemmas,
+not separately new PROVED dependencies. F4's proposed registration is
+limited to the sufficiency reduction; the response record check is pending.
+No finite degree or PD-T099 is upgraded.
 
 | Mathematical part | Status | Evidence / limitation |
 |---|---|---|
-| Common primitive, reflection multiplicities and full-defect equality | PROVED | Product-to-sum and exact periodic reindexing |
+| Common primitive, reflection multiplicities and full-defect equality | Verification of inherited PROVED results | PD-T215/216/218/223; product-to-sum and exact periodic reindexing |
+| Cover, collision charts and all-center orbit/profile formulas | Routine verified lemmas | PD-T101/225/226/228; no separate registration |
 | Sufficiency of the stated finite-cover predicates | PROVED | Pointwise comparison and coverage |
 
 Candidate disposition: retained quantitative/computational variant. No novelty claim.
 
 ## Depends on
 
-PD-T101 for the cardinal coefficients; PD-T215/216/218/223 are the exact inherited identities reconstructed here. PD-T224 and PD-T251 can supply narrowly scoped predicates, but are **not** needed for the reduction theorem itself. PD-T099 remains OPEN.
+PD-T101 for the cardinal coefficients; PD-T215/216/218/223/225/226/228
+for the inherited primitive, reflection, cover and chart material verified
+here. In particular, PD-T225 supplies the odd-center cover precedent, and
+PD-T228 equation (3) supplies the corner-centered orbit formula, routinely
+reindexed here to all odd centers. PD-T210 is the predecessor finite-cover
+sufficiency theorem; the present formulation uses common phase charts and
+classwise defect predicates. PD-T224 and PD-T251 can supply narrowly scoped
+predicates, but are **not** needed for the reduction theorem itself.
+PD-T099 remains OPEN.
 
 ## Proof or evidence
 
@@ -192,6 +211,11 @@ On a neighborhood |q|<π this denominator is positive. Validated Taylor/range bo
 
 Internal dependencies above. The delegated novelty scan read the literature index before source comparisons. No external attribution, source transfer or historical novelty claim is made.
 
+Finite phase/defect-screen predecessors are
+[PD-T232](../../padua-argmax-alln-20261101/theory/prep-codex-01-d1-phase-defect-screen.md)
+and [PD-T247](../../padua-argmax-effective-20261103/theory/argmax-effective-codex-02-gate-measurements.md).
+These MEASURED records are context, not premises of the sufficient reduction.
+
 ## Scope and open items
 
 The inherited structural identity survives A1. The **cost gate remains unevaluated** until the now-available local corner theorem is implemented alongside classwise box bounds, arithmetic margins and a genuine box cover. A float point grid supplies none of the missing cover proof. No maximum certificate at n>32 or effective all-degree threshold follows from this record. PD-T099 remains OPEN.
@@ -199,3 +223,10 @@ The inherited structural identity survives A1. The **cost gate remains unevaluat
 ## History
 
 2026-11-05, Codex mathematical worker, AC-requested gpt-6-astra ultra; runtime model/effort not independently exposed. Input/rules ed21cc0bf205549936fccde90244a291bc6de324. Reconstructed the existing equality in response to the possible reflection-inequality concern. This is not a correction of PD-T215/223. Newly merged PD-T269 uses Δ_n for a **different signed mesh deformation** in Λ_c−L_n²; it is not the Δ of this record and supplies no H1 cancellation bound. No final IDs assigned.
+
+2026-11-05 audit response, Codex, gpt-6-astra ultra: F4/F6 and E2 add
+attribution, registration classification and notation. The earlier pending
+review wording described first writing; audit-01 now accepts the original
+scope. Both original Statement paragraphs and the mathematical proof are
+unchanged. The orbit formula is a routine generalization of PD-T228 (3),
+not a new primitive identity or separately registrable dependency.

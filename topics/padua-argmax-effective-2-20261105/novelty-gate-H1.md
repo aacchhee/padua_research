@@ -19,8 +19,8 @@ Relevant full candidate reading: IDEA-305 registration and central-envelope atte
 |---|---|---|
 | IDEA-305; PD-T215/218/223 | Same reflection/primitive/defect architecture | No new identity claimed; only an explicit finite phase-cover certificate and computational reuse |
 | IDEA-326/327/328/331/336 | Existing global/local gain, finite defect and effective assembly | Need quantitative uniform class bounds on the phase region actually used, including a usable corner predicate |
-| IDEA-320/343; PD-T210/246 | Existing exact finite certificate and compiled implementation | H1 proposes covering a common phase diamond, with reusable primitive rather than a separate physical cardinal polynomial cover |
-| IDEA-330/346/348 | Existing corner aggregate/spectral control | Fixed scaled corner radius is still missing; the known physical n⁻⁶ radius does not meet this proposed distinction |
+| IDEA-320/343; PD-T210/246 | Original IDEA-320 already proposed S-discard, direct near-coset control and a local corner certificate; PD-T210/246 provide its finite implementation | H1's proposed distinction is reuse of one phase-diamond primitive with classwise defect bounds; three regions and S-discard themselves are inherited |
+| IDEA-330/346/348; PD-T227/228/251 | Existing corner aggregate/spectral control; PD-T228 already gives an eventual 2^-17/n² radius, in particular for log n≥10^7 | At the initial gate the missing ingredient was an explicit physical n⁻² radius for every n≥2; PD-T251's all-degree n⁻⁶ radius and PD-T228's eventual radius do not meet that combined scope |
 | IDEA-356/357; PD-T266/268 | New limiting edge minima and general-position series | Limit-integral ordering and pointwise series do not supply finite-n class bounds |
 | IDEA-358; PD-T269/271 | New corner constant/remainder | This concerns signed mesh deformation, not the nonnegative reflection defect or a uniform phase profile |
 
@@ -46,3 +46,24 @@ Root proposed testing the inherited finite-line proof at ρ≤1/10. Closest prio
 ## Retained dispositions
 
 H1 common-primitive route: retained, overall construction OPEN. S-only coset maximality: already refuted predecessor, not pursued anew. Uniform per-cardinal affine corner signs: already failed predecessor, not retried. At the initial gate a full finite cover with a fixed scaled corner predicate was deferred until H3 supplied that ingredient. The subsequent H3 files now prove a uniform physical n⁻² radius with constant 10⁻¹¹; practical per-degree constants and the complete box implementation remain open. A projected-defect class screen is retained as a diagnostic/rigorous-bound ingredient, never identified with the full defect. All-degree assembly remains OPEN.
+
+## Response qualification — 2026-11-05
+
+Audit-01 F7/F8 corrects attribution and records the publication ordering.
+The original IDEA-320 body in
+`../padua-argmax-alln-20261101/ideas.md` already contains the three-region
+architecture described above. The variant verdict is unchanged. The T04
+finite-line extension is retained as `IDEA?argmax-effective-2-codex-05` in
+`ideas/H1.md`; the larger radius comes from the improved baseline 1/16 to
+3/40, while the resulting numerator floor decreases from 223/4096 to
+397/16000.
+
+At published checkpoint `d98613e`, T01/T02/T04 linked to this file,
+`attempts/H1.md` and `gates-structural.md`; those three records were first
+committed at `50bcbb4`. Thus the stated prospective timing is self-attested
+only, and the full registry read was delegated as disclosed above. This
+response does not turn the later durable records into prospective evidence
+or assert that the H1 parent personally completed the full registry read.
+These corrections retain the inherited gate scope and verdict; no new
+candidate, full prospective gate, mathematical claim or external-source reading is
+claimed by this response.
