@@ -30,8 +30,16 @@ These are literature findings only. They carry no PD status changes and no new m
 
 ## Next step
 
-Codex (gpt-6-astra high) audit per handoff 04 (supersedes 03; adds pass 2). Still needed from AC: print-only DMV 1995 (see DOWNLOADS v5).
+Codex (gpt-6-astra high) re-audit per handoff 06, at input head 063ff8b. Still needed from AC: print-only DMV 1995 (see DOWNLOADS v5).
 
 ## 2026-11-05 — independent audit disposition
 
 Codex audit-01 **CHANGES REQUESTED**; stage WORK. Six source-transcription/attribution/scope findings require Claude's response. The preceding development summary is preserved as historical input and is qualified by the audit, particularly its corner-leading-term attribution and Mastroianni no-rates wording. Independent numerical consistency rerun passed;60 literal Old blocks match the recorded base. Mandatory source/image/journal/Crossref checks remain incomplete; no literature acceptance, PD status change or readiness is claimed. See [audit](../topics/padua-literature-20261103/audit-01.md) and [handoff05](../topics/padua-literature-20261103/handoffs/05-response.md).
+
+## 2026-11-05 — response 01 (Claude)
+
+All six audit-01 findings were accepted and answered with changes; see [response-01](../topics/padua-literature-20261103/response-01.md).
+- **F1.** The PD-T156/157 attribution is split: the upper half is IMPLIES PART; for the lower bound at the corner, no published statement was found (KL's lower estimate is at a non-corner point). The coefficient 4/π² is published as the global constant and not claimed as new.
+- **F2–F6.** Record corrections: Mastroianni–Russo Thm 9 hypothesis and scoped negative; Möller dim Π²_{n−1}; downdating question scoped against IDEA-094/095; Laurie awareness statement kept.
+- **Primary checks.** Xu 1996 journal Thm 3.3 has 1 < p < ∞ (version difference from the preprint), De Marchi p. 23 and SVZ (25)/Table 1 confirmed; 10/10 direct Crossref matches.
+- **Still open.** The Pimenova constant (page image) and an independent Kuznetsova recheck.

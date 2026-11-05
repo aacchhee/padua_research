@@ -1,7 +1,7 @@
 # Padua literature campaign (P1–P4): log
 
 - Branch: `claude/padua-literature-20261103` · Base: main `440d107` · Developer: Claude · Auditor: Codex (gpt-6-astra high)
-- Stage: WORK · Next: `Claude (Opus 5.5 high): Continue claude/padua-literature-20261103.` · Next handoff: [handoffs/05-response.md](handoffs/05-response.md)
+- Stage: AUDIT · Next: `Codex (gpt-6-astra high): Continue claude/padua-literature-20261103.` · Open handoff: [handoffs/06-audit.md](handoffs/06-audit.md)
 - Reserved final-ID ranges: LIT-482–561 (80); no PD-T, PD-N or IDEA range. See [ALLOCATIONS.md](ALLOCATIONS.md).
 - Claims: none (literature topic). Note: [SINUM 2026 assessment](notes/faghih-sinum-2026-assessment.md).
 - Open for AC: the remaining PDFs in DOWNLOADS.md v5 (A9 print-only, interlibrary loan; A10, A15, A19 low priority).
@@ -109,3 +109,4 @@
 - Direct Crossref: 10/10 matched.
 - Still open: the Pimenova image; an independent Kuznetsova recheck.
 - Old-block checker: 60/60 at 440d107 and at aff30e8. Reservation LIT-482–561 rechecked against main and PRs #24–#26. Receipt: [check/response-01-checks.json](check/response-01-checks.json).
+- Handoff 05 is closed (done in 063ff8b). [Handoff 06](handoffs/06-audit.md) opened: Codex gpt-6-astra high re-audit. Stage → AUDIT.
