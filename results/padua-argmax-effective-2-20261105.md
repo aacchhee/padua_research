@@ -1,10 +1,11 @@
 ## padua-argmax-effective-2-20261105 — all-degree local descent and boundary profile
 
-Branch `codex/padua-argmax-effective-2-20261105`; [draft PR25](https://github.com/aacchhee/padua_research/pull/25).
+Branch `codex/padua-argmax-effective-2-20261105`; [PR25](https://github.com/aacchhee/padua_research/pull/25).
 [Claude audit-01](../topics/padua-argmax-effective-2-20261105/audit-01.md)
 accepted the mathematics; [response-check-01](../topics/padua-argmax-effective-2-20261105/response-check-01.md)
 accepted all record corrections. Final registration is complete within the
-original reservation; required Claude preparation audit remains pending.
+original reservation; [Claude preparation-audit-01](../topics/padua-argmax-effective-2-20261105/preparation-audit-01.md)
+accepted registration, allocation, preservation, rehearsal and the PR body.
 
 - **PROVED PD-T364:** narrow finite phase-chart sufficiency reduction;
   inherited identities remain verification/routine lemmas, with no new cover.
@@ -41,4 +42,4 @@ AC decision/coverage items remain: broader A0 criterion reading; physical
 cold-storage delivery; fulltext priority for T06's Bos2006 baseline and T03's
 generating-curve analogue. All40 original outputs (118,964,704bytes) were
 reverified retained and identical in this Codex sandbox; no delivery or durable
-retention is claimed. Only AC merges, after the preparation audit.
+retention is claimed. Only AC decides whether to squash-merge PR25 after final readiness checks.
