@@ -178,3 +178,27 @@ independent storage review resolves the budget finding by reduction. PR20 is
 ready for AC’s merge decision; no further agent preparation is queued. After merge, the completed results above replace preparation tasks as
 this topic's outcome; no further mathematical campaign is assigned. Physical
 cold-storage delivery remains pending. Only AC merges.
+
+## NN MOP IEP — PR22 scoped outcome and retained frontier
+
+[Report](../topics/nn-mop-iep-20261103/report.md),
+[results](../results/nn-mop-iep-20261103.md): PD-T286 gives the standard finite
+normal moment formulation; PD-T288/289 prove complete marginal-data NN
+reconstruction through degree N−1 using divisors only through N−2.
+Terminal equality is a necessary boundary condition, not a C4 obstruction.
+The withdrawn provisional negative stays historical and has no final ID.
+
+PD-T287 and PD-N100 retain finite exact checks and only literal same-site
+counterexamples. Both NN directions have spectral value x; no second
+independent coordinate follows from the lattice indexing. PD-T290 records
+only finite binary64 C4 coefficient errors, not general instability or an
+error-source decomposition. Auditor exact-reference checks cover the sampled
+N4,8,12,16,24; N32 uses precision convergence. Source residual metrics and
+C3 comparisons were not reproduced.
+
+IDEA-117 was resumed on AC’s request and the gate stops at known exact
+algebra. IDEA-376–379 retain all C1–C4 dispositions; IDEA-378 remains deferred
+until there is a concrete coupled update, preserved invariants and a measurable
+comparison criterion. This is the post-merge mathematical frontier, not a new
+assigned campaign or novelty/priority claim. Claude audit-02 accepted science;
+preparation/protocol history stays in the topic log. Only AC merges.

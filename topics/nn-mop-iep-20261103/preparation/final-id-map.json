@@ -1,0 +1,214 @@
+{
+  "date": "2026-11-05",
+  "rules": "f4c41acb665f4ea35b5db05ec45ae8ba34fe6b96",
+  "audited_science": "5b36f8f8ac5b3c9a426d22a9375155a2b4d86e1b",
+  "base": "21dbfc90257b952d8923f6d01739d12aa8d6e0a1",
+  "reservation_priority": "a0abe8b7b5af6e8c53dc8b0353934537f891f1c9",
+  "assignments": [
+    {
+      "provisional": "PD-T?nn-mop-iep-codex-01",
+      "final": "PD-T286",
+      "status": "PROVED",
+      "path": "topics/nn-mop-iep-20261103/theory/finite-moment-formulation.md"
+    },
+    {
+      "provisional": "PD-T?nn-mop-iep-codex-02",
+      "final": "PD-T287",
+      "status": "MEASURED",
+      "path": "topics/nn-mop-iep-20261103/theory/finite-checks.md"
+    },
+    {
+      "provisional": "PD-T?nn-mop-iep-codex-03",
+      "final": "PD-T288",
+      "status": "PROVED",
+      "path": "topics/nn-mop-iep-20261103/theory/interior-divisor-nonvanishing.md"
+    },
+    {
+      "provisional": "PD-T?nn-mop-iep-codex-04",
+      "final": "PD-T289",
+      "status": "PROVED",
+      "path": "topics/nn-mop-iep-20261103/theory/marginal-reconstruction.md"
+    },
+    {
+      "provisional": "PD-T?nn-mop-iep-codex-05",
+      "final": "PD-T290",
+      "status": "MEASURED",
+      "path": "topics/nn-mop-iep-20261103/theory/c4-baseline-measurements.md"
+    },
+    {
+      "provisional": "PD-N?nn-mop-iep-codex-02",
+      "final": "PD-N100",
+      "status": "MEASURED",
+      "path": "topics/nn-mop-iep-20261103/theory/fixed-site-dictionary-failure.md"
+    },
+    {
+      "provisional": "IDEA?nn-mop-iep-codex-01",
+      "final": "IDEA-376",
+      "disposition": "equivalent/background",
+      "path": "topics/nn-mop-iep-20261103/candidates.md"
+    },
+    {
+      "provisional": "IDEA?nn-mop-iep-codex-02",
+      "final": "IDEA-377",
+      "disposition": "REJECTED: refuted (literal dictionary only)",
+      "path": "topics/nn-mop-iep-20261103/candidates.md"
+    },
+    {
+      "provisional": "IDEA?nn-mop-iep-codex-03",
+      "final": "IDEA-378",
+      "disposition": "deferred",
+      "path": "topics/nn-mop-iep-20261103/candidates.md"
+    },
+    {
+      "provisional": "IDEA?nn-mop-iep-codex-04",
+      "final": "IDEA-379",
+      "disposition": "equivalent/background",
+      "path": "topics/nn-mop-iep-20261103/candidates.md"
+    }
+  ],
+  "withdrawn": [
+    {
+      "provisional": "PD-N?nn-mop-iep-codex-01",
+      "final": null,
+      "disposition": "withdrawn; no final ID",
+      "splits": [
+        "PD-T288",
+        "PD-T289"
+      ],
+      "path": "topics/nn-mop-iep-20261103/theory/terminal-division-obstruction.md"
+    }
+  ],
+  "literature": [
+    {
+      "provisional": "LIT?nn-mop-iep-codex-01",
+      "final": "LIT-420",
+      "reused": true,
+      "related_ids": [],
+      "source_key": "filipuk-haneczok-vanassche-2015",
+      "path": "topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-01",
+      "coverage": "01: Codex primary bounded reading and response recheck; earlier \u00a72 coverage retained; Maple/code not executed",
+      "arxiv": "1406.0364v2"
+    },
+    {
+      "provisional": "LIT?nn-mop-iep-codex-02",
+      "final": "LIT-562",
+      "reused": false,
+      "related_ids": [],
+      "source_key": "vanassche-2011",
+      "path": "topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-02",
+      "coverage": "02: Codex primary bounded reading; general-r proof, later examples and external Riemann\u2013Hilbert dependencies remain unread",
+      "arxiv": "1104.3778v1"
+    },
+    {
+      "provisional": "LIT?nn-mop-iep-codex-03",
+      "final": "LIT-420",
+      "reused": true,
+      "related_ids": [],
+      "source_key": "aptekarev-denisov-yattselev-2020",
+      "path": "topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-03",
+      "coverage": "03: Codex primary bounded reading only; spectral identities and later asymptotics not fully checked; no response recheck",
+      "arxiv": "1806.10531v1"
+    },
+    {
+      "provisional": "LIT?nn-mop-iep-codex-04",
+      "final": "LIT-563",
+      "reused": false,
+      "related_ids": [],
+      "source_key": "denisov-yattselev-2020",
+      "path": "topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-04",
+      "coverage": "04: reconnaissance only; Parts1\u20134 and publication metadata not checked",
+      "arxiv": "2008.08210"
+    },
+    {
+      "provisional": "LIT?nn-mop-iep-codex-05",
+      "final": "LIT-564",
+      "reused": false,
+      "related_ids": [],
+      "source_key": "aptekarev-denisov-yattselev-2021",
+      "path": "topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-05",
+      "coverage": "05: reconnaissance only; theorem proofs and journal metadata unchecked; no theorem used as local dependency",
+      "arxiv": "2004.04113v2"
+    },
+    {
+      "provisional": "LIT?nn-mop-iep-codex-06",
+      "final": "LIT-565",
+      "reused": false,
+      "related_ids": [],
+      "source_key": "aptekarev-derevyagin-vanassche-2016",
+      "path": "topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-06",
+      "coverage": "06: Codex primary bounded reading; intervening framework, remaining algorithms and examples not fully read; no response recheck",
+      "arxiv": "1409.4053v2"
+    },
+    {
+      "provisional": "LIT?nn-mop-iep-codex-07",
+      "final": "LIT-566",
+      "reused": false,
+      "related_ids": [],
+      "source_key": "aptekarev-derevyagin-vanassche-2015",
+      "path": "topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-07",
+      "coverage": "07: introductory report only; commutation/symmetrisation theorems and proofs unread; DOI not independently verified",
+      "arxiv": "1410.1332v2"
+    },
+    {
+      "provisional": "LIT?nn-mop-iep-codex-08",
+      "final": "LIT-567",
+      "reused": false,
+      "related_ids": [],
+      "source_key": "aptekarev-derevyagin-miki-vanassche-2016",
+      "path": "topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-08",
+      "coverage": "08: Codex primary bounded reading; full continuous/discrete Lax proofs and examples incomplete; no response recheck",
+      "arxiv": "1511.08098v3"
+    },
+    {
+      "provisional": "LIT?nn-mop-iep-codex-09",
+      "final": "LIT-568",
+      "reused": false,
+      "related_ids": [],
+      "source_key": "kozhan-vaktnas-2026",
+      "path": "topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-09",
+      "coverage": "09: Codex primary 19-Nov-2025 arXiv version; journal metadata checked separately; Thm3.19 not rechecked in response; factorization proof incomplete",
+      "arxiv": "2407.13946v2"
+    },
+    {
+      "provisional": "LIT?nn-mop-iep-codex-10",
+      "final": "LIT-346",
+      "reused": true,
+      "related_ids": [],
+      "source_key": "vanbarel-vanbuggenhout-vandebril-2023",
+      "path": "topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-10",
+      "coverage": "10: campaign-mediated report at d669363; no fresh primary check",
+      "arxiv": "2302.00355"
+    },
+    {
+      "provisional": "LIT?nn-mop-iep-codex-11",
+      "final": "LIT-119",
+      "reused": true,
+      "related_ids": [
+        "LIT-347"
+      ],
+      "source_key": "faghih-et-al-2025",
+      "path": "topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-11",
+      "coverage": "11: campaign assessment at d669363, Claude P4 selected primary coverage; no fresh primary/code check",
+      "arxiv": "2506.19796"
+    },
+    {
+      "provisional": "LIT?nn-mop-iep-codex-12",
+      "final": "LIT-348",
+      "reused": true,
+      "related_ids": [
+        "LIT-117",
+        "LIT-118"
+      ],
+      "source_key": "faghih-vanbarel-vandebril-2026",
+      "path": "topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-12",
+      "coverage": "12: campaign-mediated fulltext report at d669363; developer primary recheck p.20 validates inputs only, no algorithm/error reproduction",
+      "arxiv": "2608.25758v1"
+    }
+  ],
+  "unused_permanent_gaps": {
+    "PD-T": "291\u2013293",
+    "PD-N": "101\u2013103",
+    "IDEA": "380\u2013383",
+    "LIT": "569\u2013573"
+  }
+}

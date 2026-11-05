@@ -1283,3 +1283,50 @@ Source: [audit-01](topics/padua-mz-2d-frontier-20261105/audit-01.md) and [respon
 Original-target mapping: PD-T028 positivity/endpoint-order/eta assertions are refuted by PD-N105/106; PD-T110 upper assertion by PD-N106; PD-T116 universal fixed-ratio assertion by PD-N107. Per AC, all three Status cells remain exactly OPEN with REJECTED: refuted disposition, while their negative statements are PROVED under the new IDs. PD-T114 is PROVED at its unchanged endpoint target via the stronger all-n<m PD-T297 theorem. The positive reference PD-T296 is supporting context, not a signed transfer or proved parameter slice. Historical f3-signed-target-open remains the existing PD-T116 continuation and receives no duplicate ID. PD-T027 remains OPEN.
 
 Permanent unused gaps: T301–323,N108–115,IDEA398–413,LIT574–581. No new LIT assignment, no reuse of another topic’s reservation, and no effective finite onset or exact m1600 certificate.
+
+## NN MOP IEP — PR22 final aliases and withdrawn split
+
+[Topic ledger](topics/nn-mop-iep-20261103/ALLOCATIONS.md),
+[union scan](topics/nn-mop-iep-20261103/preparation/reservation-check.md),
+[exact mapping](topics/nn-mop-iep-20261103/preparation/final-id-map.json).
+Audited scientific content5b36f8f; audit-02 accepted. Labels/registries do not
+change mathematical scope. All reservations and unused gaps remain permanent.
+
+| Provisional alias | Final ID | Canonical record | Disposition / scope |
+|---|---|---|---|
+| PD-T?nn-mop-iep-codex-01 | PD-T286 | [record](topics/nn-mop-iep-20261103/theory/finite-moment-formulation.md) | PROVED |
+| PD-T?nn-mop-iep-codex-02 | PD-T287 | [record](topics/nn-mop-iep-20261103/theory/finite-checks.md) | MEASURED |
+| PD-T?nn-mop-iep-codex-03 | PD-T288 | [record](topics/nn-mop-iep-20261103/theory/interior-divisor-nonvanishing.md) | PROVED |
+| PD-T?nn-mop-iep-codex-04 | PD-T289 | [record](topics/nn-mop-iep-20261103/theory/marginal-reconstruction.md) | PROVED |
+| PD-T?nn-mop-iep-codex-05 | PD-T290 | [record](topics/nn-mop-iep-20261103/theory/c4-baseline-measurements.md) | MEASURED |
+| PD-N?nn-mop-iep-codex-02 | PD-N100 | [record](topics/nn-mop-iep-20261103/theory/fixed-site-dictionary-failure.md) | MEASURED |
+| IDEA?nn-mop-iep-codex-01 | IDEA-376 | [record](topics/nn-mop-iep-20261103/candidates.md) | equivalent/background |
+| IDEA?nn-mop-iep-codex-02 | IDEA-377 | [record](topics/nn-mop-iep-20261103/candidates.md) | REJECTED: refuted (literal dictionary only) |
+| IDEA?nn-mop-iep-codex-03 | IDEA-378 | [record](topics/nn-mop-iep-20261103/candidates.md) | deferred |
+| IDEA?nn-mop-iep-codex-04 | IDEA-379 | [record](topics/nn-mop-iep-20261103/candidates.md) | equivalent/background |
+| PD-N?nn-mop-iep-codex-01 | withdrawn, no final ID | [historical redirect](topics/nn-mop-iep-20261103/theory/terminal-division-obstruction.md) | failure classification withdrawn; interior assertion → PD-T288; terminal equality → PD-T289; full original wording retained |
+| LIT?nn-mop-iep-codex-01 | LIT-420 | [source coverage](topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-01) | LITERATURE; same-source ID reused |
+| LIT?nn-mop-iep-codex-02 | LIT-562 | [source coverage](topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-02) | LITERATURE; new source, bounded coverage |
+| LIT?nn-mop-iep-codex-03 | LIT-420 | [source coverage](topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-03) | LITERATURE; same-source ID reused |
+| LIT?nn-mop-iep-codex-04 | LIT-563 | [source coverage](topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-04) | LITERATURE; new source, bounded coverage |
+| LIT?nn-mop-iep-codex-05 | LIT-564 | [source coverage](topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-05) | LITERATURE; new source, bounded coverage |
+| LIT?nn-mop-iep-codex-06 | LIT-565 | [source coverage](topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-06) | LITERATURE; new source, bounded coverage |
+| LIT?nn-mop-iep-codex-07 | LIT-566 | [source coverage](topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-07) | LITERATURE; new source, bounded coverage |
+| LIT?nn-mop-iep-codex-08 | LIT-567 | [source coverage](topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-08) | LITERATURE; new source, bounded coverage |
+| LIT?nn-mop-iep-codex-09 | LIT-568 | [source coverage](topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-09) | LITERATURE; new source, bounded coverage |
+| LIT?nn-mop-iep-codex-10 | LIT-346 | [source coverage](topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-10) | LITERATURE; same-source ID reused |
+| LIT?nn-mop-iep-codex-11 | LIT-119 | [source coverage](topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-11) | LITERATURE; same-source ID reused |
+| LIT?nn-mop-iep-codex-12 | LIT-348 | [source coverage](topics/nn-mop-iep-20261103/literature.md#nn-mop-lit-12) | LITERATURE; same-source ID reused |
+
+LIT-420 is an existing compound entry: topic alias01 adds FHV coverage and
+alias03 adds ADY coverage; their scopes are not conflated. Reused LIT119
+also relates to347, and reused348 to117/118; no accepted ID is renumbered.
+PR21 at890f56ccde35431b70b43141c224b0b8817fea7f has no final assignments.
+Its same-source provisional aliases are explicitly pinned in the dedup ledger;
+no offset into its LIT482–561 range was inferred and no duplicate final source
+ID was allocated. Essential statements/coverage live locally on this branch.
+
+Assigned T286–290, N100, IDEA376–379, LIT562–568. Permanent unused gaps:
+T291–293, N101–103, IDEA380–383, LIT569–573. The withdrawn provisional
+negative never had a final ID. [SPLITS.md](topics/nn-mop-iep-20261103/SPLITS.md)
+retains original-to-split provenance; this is not a status downgrade.
