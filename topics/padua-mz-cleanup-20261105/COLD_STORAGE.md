@@ -121,3 +121,7 @@ Temporary staging has no promised lifespan. AC becomes external custodian
 only after actual transfer and verification. The code and small receipts stay
 in Git; historical Git blobs remain retrievable while history is retained.
 No historical purge, external-machine access or delivery is performed here.
+
+## Final scan supplement
+
+All23 scan rows completed. Final local supplement `/tmp/mz-cleanup/transfer-stage/padua-mz-cleanup-20261105/final-scan-supplement.tar.gz`: 44,618,351 bytes, SHA-256 `257fa21a83b5bb74b93483e371efcc87cf5e0ac965bb32fab2ddfadd808bc338`. Its13 members include the final raw receipts/logs, small summary, summary code, and vectors absent from the prior snapshot. Full inventory `/tmp/mz-cleanup/transfer-stage/padua-mz-cleanup-20261105/final-scan-supplement/INVENTORY.json` (1955 bytes, SHA-256 `0b2e20c0f668219720cef76f54a59262b63c04d046a7a86472d2ce746aac0f6c`) stays off-repository. Every archived member was reopened and its bytes/hash verified. These are MEASURED observations, not extra certificates. Same Padua destination; delivery remains PENDING.

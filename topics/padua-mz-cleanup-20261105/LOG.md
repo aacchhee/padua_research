@@ -1,9 +1,9 @@
 # MZ cleanup (certified indefiniteness witness, odd m, growth constants, manuscript integration): log
 
 - Branch: `codex/padua-mz-cleanup-20261105` · Base: main `21dbfc9` (PR #23 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: `Codex (gpt-6.1-sol xhigh): Continue codex/padua-mz-cleanup-20261105.` · Open handoff: [handoffs/01-work.md](handoffs/01-work.md)
-- Reserved final-ID ranges: none yet. Reserve when the draft PR opens: main, open PRs #21, #22, #24, the argmax phase-2 branch, and retired gaps.
-- Claims: none yet.
+- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Continue codex/padua-mz-cleanup-20261105.` · Open handoff: [handoffs/02-audit.md](handoffs/02-audit.md)
+- Reserved final-ID ranges: T376–391/N138–145/IDEA466–489, no LIT; first publication ee49035, draft PR26. No final assignments.
+- Claims: finite indefiniteness at1101/1240/1600, odd-parity completion and normalized one-sided bounds PROVED in development;23 finite observations MEASURED. Required Claude audit pending.
 - Open for AC: none. The sandbox compute allowance in handoff 01 (4 h wall per run, about 24 h cumulative CPU) is approved by AC (2026-11-05). Ask AC before using any machine outside the sandbox.
 
 ## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
@@ -41,3 +41,13 @@
 - C1 checkpoint39479ff: final producer and independent alternate arithmetic each accept negative witnesses at1101,1240,1600. All exact norms positive; m1600 source vector reproduces the prior hash exactly. K1 passes by both paths. Producer malformed zero/above-degree artifacts reject; positive constant control accepts. Full commands/hashes in receipts.
 - C4 accepted-result manuscript checkpoint58a3d15; cleanup additions are being built and documented separately. C5 inventories/proposals are committed; actual delivery remains pending. C6 is optional and was not executed.
 - Current scans run the predeclared coarse/odd/fine grids and K2 growth grid. Legacy `exploratory_scope` text inside the frozen copied minimum runner describes its parent campaign; this topic's plan/gates pre-register its own scans. No float scan supplies positivity or a proof premise.
+
+## 2026-11-05 — Codex, gpt-6.1-sol xhigh — development complete, AUDIT
+
+- All23 minimum-only rows completed; every even1230..1240, prescribed odd probes, and higher grid through3000. Largest measured positive even1238, smallest certified negative even1240 in this campaign. All numerical jobs exited normally; m3000 completed648.397s. No positivity or first-crossing proof inferred.
+- K2 complete: historical slope-0.091530043047304, higher slope-0.09212159619973995; diagnostic moves toward raw-1/9. Dedicated provisional MEASURED record -05 and small scan summary preserve the actual scope. Sharp limits remain OPEN.
+- Supplementary Astra high finite review completed with no unresolved correctness finding; both m60 arithmetic paths actually rerun, large artifact identities/norms/bracket containment independently checked, no duplicate large tensor rerun credited. Its report documents the default-printed interval caveat. C2/C3 supplementary check remains complete.
+- Final manuscript25 pages, clean logs, sourcehash d0da06adcad1f6d9aa6bcf6add2631c5a065d104fc3327ebee234632a6c8e04f. Existing bibliography and preserved PDFs unchanged. All new claims remain pending Claude audit.
+- Final verified local supplement44,618,351B, SHA256257fa21a83b5bb74b93483e371efcc87cf5e0ac965bb32fab2ddfadd808bc338, supplements the159,265,962B witness package. Delivery remains pending. Shared-record literal old blocks reverified against main aff30e8. No shared registries/final IDs edited, no merge performed.
+- Current small evidence inventory generated and verified; scientific receipt/source identities, local links, code syntax and diff checks passed. Exact commands/results are in report, attempt records, inventories and receipts.
+- Development handoff01 completes in the output commit; [handoff02](handoffs/02-audit.md) requests Claude Opus5.5 xhigh audit of that exact candidate. Final-ID/shared-record preparation follows only after audit.

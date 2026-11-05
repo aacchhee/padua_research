@@ -33,3 +33,14 @@ alternate arithmetic accepted in1.89s, relative width <5.854e-8. Both
 are below ten minutes and1e-6. Sources, timings and exact enclosures:
 evidence/witness-producer-m400.json and witness-independent-m400.json.
 Later m1101,1240,1600 are strictly negative on both arithmetic paths.
+
+## K2 completion — 2026-11-05
+
+Pre-registration PASS: all criteria were written before m>1600 execution.
+The full higher grid1600/2000/2400/3000 actually completed. Slopes are
+-0.091530043047304 (historical window) and-0.09212159619973995 (higher).
+The diagnostic decision is moves toward raw-1/9; this is MEASURED only.
+Exact rows, residuals, commands, hashes and coefficients are in
+evidence/scan-summary.json and theory/finite-measurements.md. No spectral
+limit or missing normalization is supplied by the fit. All jobs stopped
+normally after completing their requested grids.

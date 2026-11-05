@@ -27,7 +27,10 @@ def main():
                   root/'tracks/mz-constants/paper/manuscript.tex',
                   root/'tracks/mz-constants/paper/refs.bib',
                   root/'tracks/mz-constants/paper/README.md',
-                  root/'topics/mz-constants/directions/M7/manuscript-record.md']
+                  root/'topics/mz-constants/directions/M7/manuscript-record.md',
+                  root/'tracks/mz-constants/code/mz2d_spectra.py',
+                  root/'topics/padua-mz-2d-20261101/definitions.md',
+                  root/'topics/padua-mz-2d-frontier-20261105/evidence/g1-minimum-only.json']
         rows=[[str(p.relative_to(root)),p.stat().st_size,digest(p)]
               for p in sorted(set(files))]
         out=dict(format='padua-mz-cleanup-small-inventory-v1',
