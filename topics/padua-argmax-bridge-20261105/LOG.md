@@ -4,7 +4,7 @@
 - Stage: WORK · Next: `Codex (gpt-6-astra high): Continue codex/padua-argmax-bridge-20261105.` · Open handoff: [handoffs/01-work.md](handoffs/01-work.md)
 - Reserved final-ID ranges: none yet. Reserve when the draft PR opens: main, open PRs #21 and #24, and retired gaps.
 - Claims: none yet.
-- Open for AC: none at setup. The sandbox allowance is approved. Syvert is pre-approved up to about 20 cores × 7 days under gate B4, and AC launches it from Codex's run package.
+- Open for AC: none at setup. The sandbox allowance is approved. Syvert is pre-approved under gate B4: syvert1 (16 cores, 256 GB) and syvert2 (32 cores, 128 GB), up to all of both for about a week, and AC launches it from Codex's run package.
 
 ## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
 
@@ -41,6 +41,11 @@
   - an offline bundled runtime with a preflight against PD-T246;
   - the returned ZIP checked independently before any degree counts.
 - Codex had not started; the handoff was amended in place.
+
+## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — Syvert hosts
+
+- AC: "Syvert1: 16 cores with 256gb memory, syvet2: 32 core with 128gb memory, use all this if necessary".
+- The handoff 01 compute limits and the pack table now name both hosts, with up to all of both for about a week under gate B4. syvert0 still needs a separate ask.
 
 ## Runs needed
 

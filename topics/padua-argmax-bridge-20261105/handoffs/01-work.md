@@ -168,11 +168,11 @@ If a criterion proves ill-posed, record why and add a new criterion as a separat
   - **Kill (that model):** r(n) ≥ half the margin for every n ≤ 10⁶. Then add the next correction term once, and stop N1 with that model if it still fails.
 - **B4, meet in the middle.**
   - If the projected n₁ is within the range N3 can certify in about 48 h of sandbox CPU, proceed.
-  - If it needs more than the sandbox but at most about **20 cores × 7 days**, it is pre-approved on Syvert (AC, 2026-11-05: "Syvert has approx same power, no problem to run 20 cores for a week there if that would meet the analytic N").
+  - If it needs more than the sandbox, it is pre-approved on Syvert, up to **all of syvert1 (16 cores, 256 GB) and syvert2 (32 cores, 128 GB) for about a week**. AC's words, 2026-11-05: "Syvert has approx same power, no problem to run 20 cores for a week there if that would meet the analytic N", then "Syvert1: 16 cores with 256gb memory, syvet2: 32 core with 128gb memory, use all this if necessary".
     - The condition is that the projection shows that compute would meet the proved (or nearly proved) n₁.
     - Codex has no access to Syvert. Prepare the run pack exactly as in "Syvert run pack" below.
     - Ask AC in the chat to launch it. AC returns the outputs, or stages them to cold storage, for the independent checker.
-    - Anything beyond 20 cores × 7 days, or used for another purpose, needs a separate ask.
+    - Use only what the projection needs. Anything beyond syvert1 + syvert2 for about a week, syvert0, or use for another purpose needs a separate ask.
   - If it is beyond any plausible compute, record the gap and put effort into sharpening r(n).
 - **B5, N4 LP test.** Exact rational LP at n = 3–8.
   - **Pass:** a structured class of M(x) is feasible at all critical x for every tested n.
@@ -186,8 +186,9 @@ AC (2026-11-05): "If you go for building Syvert packs, check latest bttb Syvert 
 - **One pack is one campaign.**
   - Each pack is a fresh directory plus a deterministic ZIP: fixed timestamps, so a rebuild reproduces the same bytes.
   - Never unpack it over an older run, and never reuse an output directory.
-  - The README has one table row per campaign: campaign, intended host (AC chooses among syvert0/1/2), workers, per-worker address-space limit and supervisor limit.
-  - Split by degree block, for example A = n 33–64 and B = n 65–128, with the sum within about 20 cores × 7 days.
+  - The README has one table row per campaign: campaign, intended host (syvert1: 16 cores, 256 GB; syvert2: 32 cores, 128 GB), workers, per-worker address-space limit and supervisor limit.
+  - Split by degree block across the two hosts, for example campaign A = n 33–64 on syvert1 and campaign B = n 65–128 on syvert2.
+  - Size worker counts and memory limits to the host. The total stays within both hosts for about a week.
 - **Files, all in the topic's `syvert/` folder:**
   - `README.md`: the table, commands, scope, and expected time and memory, labelled as estimates;
   - `plans.py`: the frozen job list. One job is one degree n (or one degree block) with its literal argv. Schedule the longest estimate first;
@@ -255,7 +256,12 @@ AC (2026-11-05): "If you go for building Syvert packs, check latest bttb Syvert 
 - **Compute.**
   - Sandbox: up to 6 h wall per run and about 48 h of cumulative CPU per direction-round batch. AC approved these limits on 2026-11-05.
   - Large runs use compiled code (C with Arb/FLINT, or MPFR). Python is for prototypes only.
-  - **Syvert (NTNU):** pre-approved up to about 20 cores × 7 days under the B4 condition, launched by AC from Codex's run package. Use no other machine, and no Syvert use beyond that, without asking AC.
+  - **Syvert (NTNU):** pre-approved under the B4 condition, launched by AC from Codex's run pack:
+    - syvert1: 16 cores, 256 GB;
+    - syvert2: 32 cores, 128 GB;
+    - up to all of both for about a week.
+
+    syvert0 and any other machine need AC's separate approval.
 - **Literature.**
   - You may open any public page holding relevant literature. Cite only after a fulltext read, and record LIT entries.
   - List unreachable fulltexts for AC with clickable DOI and journal links.
