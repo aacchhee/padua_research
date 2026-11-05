@@ -1,6 +1,6 @@
 # Handoff 03 — continue the Lanczos frontier after finite factor-ten proof
 
-- Status: open
+- Status: done in dfa3244361a41b2ffee5e679c9f142ee0c7fc52a
 - Previous handoff: [02-resolve-g0.md](02-resolve-g0.md).
 - Next agent / model / effort: Codex orchestrator/mathematics gpt-6.1-sol xhigh; technical producers/ports gpt-6.1-sol medium; supplementary independent checks gpt-6-astra high (xhigh only for justified adversarial scope). Required later cross-family audit: Claude Opus5.5 xhigh, pending.
 - Branch: codex/padua-lanczos-frontier-20261105.
