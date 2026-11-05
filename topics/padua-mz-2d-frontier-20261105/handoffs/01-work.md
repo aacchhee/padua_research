@@ -1,6 +1,6 @@
 # Handoff 01 — padua-mz-2d-frontier-20261105 — signed Padua Marcinkiewicz–Zygmund frontier (PD-T110, PD-T116, PD-T028, PD-T114)
 
-- Status: open
+- Status: done in dee638408505c9977f3febd98fdd42c9bc512c92
 - Previous handoff: none
 
 - Next agent / model / effort: Codex. Mathematics: gpt-6.1-sol xhigh. Ultra is allowed for proof steps on F1–F3, with a written justification in LOG. Code, certification ports and replays: gpt-6.1-sol medium. Supplementary independent checks: gpt-6-astra high.

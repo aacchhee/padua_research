@@ -1,7 +1,7 @@
 # Signed Padua MZ frontier (PD-T110, PD-T028, PD-T116, PD-T114; 1-D PD-T027): log
 
 - Branch: `codex/padua-mz-2d-frontier-20261105` · Base: main `440d107` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Continue codex/padua-mz-2d-frontier-20261105.` · Work outputs complete; handoff01 closes and handoff02 publishes in the following commit.
+- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Continue codex/padua-mz-2d-frontier-20261105.` · Open handoff: [handoffs/02-audit.md](handoffs/02-audit.md)
 - Permanent reservations: T294–323, N104–115, IDEA384–413, LIT574–581, first pushed e79c576; no final assignments. [Ledger](ALLOCATIONS.md).
 - Claims: analytic signed spectral countersequences and sharp half-degree threshold; uniform C→L2 norm below30; positive-reference diamond estimate; finite independently certifiedm60/m80; scoped warmups. Required Claude audit pending. [Report](report.md).
 - Open for AC: none at setup. Ask AC before using any machine outside the sandbox.
@@ -37,3 +37,4 @@
 - Development complete at the checked analytic countersequence boundary; F1/F2/F3 resolved negatively, F4 positively,1D027 remainsOPEN. Ceilings were not claimed as consumed hours. All workers finished; no active jobs remain.
 - Final verification:84 inventory identities; all compact JSON files parse and remain below16KiB; source control characters, documentation links (excluding fenced literal registry replacements), scope/protected-path checks and git diff --check pass. Standard cold-storage tool finds zero tracked bulk outputs and verifies an empty Git-backed entry set; actual12-file local staging inventory is separate, external delivery pending. Initial link scan treated fenced literal registry rows as document-relative links; rerun correctly excluded those literal blocks, preserving their exact old/new text.
 - Required next step: distinct Claude Opus5.5 xhigh audit of the exact output candidate and complete IDEAS/novelty scope. Shared registry edits/final IDs deferred; proposed-record-changes.md retains literal replacements, including explicit refuted dispositions. DraftPR23 remains unready; no merge approval requested.
+- [Handoff01](handoffs/01-work.md) done in `dee638408505c9977f3febd98fdd42c9bc512c92`; [handoff02](handoffs/02-audit.md) opens the distinct Claude Opus5.5 xhigh audit. Main refetched unchanged at close.
