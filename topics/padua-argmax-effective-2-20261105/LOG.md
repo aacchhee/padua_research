@@ -1,7 +1,7 @@
 # Effective all-degree Padua argmax, phase 2 (PD-T099): log
 
 - Branch: `codex/padua-argmax-effective-2-20261105` · Base: main `330fab835f43e5ba5b24e320c2d7e9647e6cbd60` (original topic base5db1e01) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: PR (preparation audit pending) · Next: `Claude (Opus 5.5 high): Continue codex/padua-argmax-effective-2-20261105.` · Open handoff: [handoffs/06-preparation-audit.md](handoffs/06-preparation-audit.md)
+- Stage: PR (preparation audit accepted; readiness bookkeeping) · Next: `Codex (gpt-6.1-sol medium): Continue codex/padua-argmax-effective-2-20261105.` · Open handoff: [handoffs/07-final-readiness.md](handoffs/07-final-readiness.md)
 - Permanent reservation: T364–375/N132–137/IDEA454–465/LIT594–597, first published ce17564; assigned T364–370/N132/IDEA454–461, no LIT, unused gaps permanent. [Ledger](ALLOCATIONS.md).
 - Final scoped IDs: PD-T364–369 PROVED; PD-T370 MEASURED; PD-N132 PROVED scoped obstruction; IDEA454–461 all dispositions. Exact provisional aliases retained; T02 remains an unregistered CONDITIONAL diagnostic. Full-diamond H2, complete H1 certification and PD-T099 remain OPEN; see report.md and gates.md.
 - Open for AC: the sandbox compute allowance in handoff 01 (6 h per run, about 48 h cumulative CPU) is Claude's proposal; AC may change it. Ask AC before using any machine outside the sandbox.
@@ -170,3 +170,4 @@
 - Rules read at `b301f530a621528f77724401e572977586982651`. Main `330fab8`. Live open PRs: #21 `67b3e01`, #24 `45646d7` (advanced from the `3a179f6` pin; own-topic files only), #25 `b301f53`.
 - [preparation-audit-01](preparation-audit-01.md): ACCEPTED. Executed: check_registration PASS (3648 checks); an own shared-diff scan (only the PD-T099 insertion and the two accepted CURRENT/PAPER_MAP anchors change existing lines); a collision scan at the live heads (acknowledgements only); an own squash rehearsal of seven orders at the live heads (0 conflicts, order-independent trees, no new duplicate rows, every RESULTS section kept); theory-body prefix preservation; 69+10 index rows; JSON/16 KiB/5 MB limits; PR-body/template match.
 - Finding P1 (minor): the PR body's PR24 pin is stale. Handoff 07 refreshes the live pins, the reservation union and the results "pending" sentence (both copies, with a re-pin). PD-T099 OPEN; range 2–32.
+- Handoff 06 done in `205fcb6`; [handoff 07](handoffs/07-final-readiness.md): Codex final readiness bookkeeping.
