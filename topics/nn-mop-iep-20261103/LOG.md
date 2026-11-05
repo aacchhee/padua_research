@@ -1,7 +1,7 @@
 # Nearest-neighbour MOPs as a commuting-pair IEP (IDEA-117): log
 
 - Branch: `codex/nn-mop-iep-20261103` · Base: main `440d107` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Continue codex/nn-mop-iep-20261103.` · Audit handoff: [handoffs/02-audit.md](handoffs/02-audit.md)
+- Stage: WORK (audit-01 findings) · Next: `Codex (gpt-6.1-sol, xhigh): Continue codex/nn-mop-iep-20261103.` · Open handoff: [handoffs/03-response.md](handoffs/03-response.md)
 - Reserved final-ID ranges: T286–293, N100–103, IDEA376–383, LIT562–573;
   first pushed in a0abe8b, [draft PR22](https://github.com/aacchhee/padua_research/pull/22).
   No final assignments yet.
@@ -80,11 +80,23 @@
   required Claude Opus 5.5 xhigh audit. No audit acceptance, merge readiness,
   final-ID assignment or shared-registry integration is claimed.
 
+## 2026-11-05 — Claude audit-01 (claude-opus-5-5, xhigh), AUDIT → WORK
+
+- Rules read at branch head `6ec5768ef90aeebc918e1a126e2497258e61f507`; audited candidate `ae7e6187e8731b6f83aa444d4d702a0ef779c564`; main `440d107` unchanged. Role: independent auditor; Git by this session's orchestrator only on this topic branch.
+- [audit-01.md](audit-01.md). Full IDEAS registry and all obstruction/disposition tables read; PD-T057 read. Primary arXiv/Lirias sources were blocked by the session network policy, so no primary locator was auditor-verified (N1).
+- Auditor's own reruns: both committed checkers, exit 0. The outputs reproduce the recorded hashes exactly after normalising the embedded Python version (F4). A new auditor checker, [audit-01/claude_layer_recursion_check.py](audit-01/claude_layer_recursion_check.py), rebuilds all NN coefficients from marginal data on 24 exact inputs (N=2..10) using divisors only of degree ≤ N−2. MEASURED.
+- Findings:
+  - F1 (major): the terminal zero divisor is not reached by marginal-data reconstruction on the finite domain, so the C4 boundary qualification is overstated and the positive consequence is missing.
+  - F2 (minor): the shifted/fixed-site contrast is not the discriminating mismatch; the spectral (same eigenvalue) mismatch is.
+  - F3 (minor): a C4-only floating-point baseline is executable and must go under Runs needed.
+  - F4 (minor): environment-dependent output hashes.
+  - N1/N2: coverage notes.
+- Accepted: PD-T?…-01 PROVED; PD-T?…-02 and PD-N?…-02 MEASURED; the mathematics of PD-N?…-01; candidate retention; reservation provenance. Stage returns to WORK; [handoff 03](handoffs/03-response.md) asks Codex for response-01.
+
 ## Runs needed / remaining work
 
-- Required Claude audit: reconstruct the exact formulation/obstruction and
-  scoped dictionary, check primary source coverage and candidate dispositions,
-  independently rerun both committed checkers. Full commands in handoff02.
+- Required Claude audit: completed as audit-01 (findings F1–F4). Developer
+  response-01 is required per handoff03.
 - If that audit finds a gap, developer responds to every finding before
   readiness. Final assignment and shared registries wait for PR preparation,
   including a fresh live reservation scan. No expensive numerical run is
