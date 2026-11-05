@@ -132,3 +132,8 @@
 
 - Supplementary Astra-medium preparation protocol core check PASS: exact accepted scopes/dispositions, all old rows/sections, theory body prefixes, normalized IDEA bodies and unrelated files preserved. The concrete RESULTS relative-path finding was fixed only in our new root section; canonical results links remain relative to results/. Current report changes are stage/registration metadata only. Final rehearsal/manifest review remains pending.
 - Added the root-operated disposable integration script with pinned current-main/foreign heads. Both open foreign drafts currently change no shared registry path; actual pair orders and two three-PR orders will still be exercised after this source checkpoint. No actual rehearsal result is claimed in this checkpoint.
+
+## 2026-11-05 — rehearsal checker scope correction
+
+- First actual rehearsal attempt at registered source11ba17e stopped at the broad BASE..HEAD whitespace check on the already-existing foreign path results/padua-literature-20261103.md:55 (new blank line at EOF). The process-created worktree/branch were cleaned in finally; no live branch was changed. This was a checker-scope issue, not a merge conflict or loss of scientific rows.
+- Corrected only our rehearsal helper: require owned paths' whitespace to pass, retain the complete foreign byte-identity check, and record pre-existing foreign whitespace notes rather than editing another topic or falsely declaring them absent. Disposable commit trailers distinguish the requested Astra-ultra allocation from unexposed serving metadata. No science/code/evidence kernel changed. Rerun all seven orders at the corrected helper source below.

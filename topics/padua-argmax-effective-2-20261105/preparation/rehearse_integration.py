@@ -64,7 +64,7 @@ def main():
                 run('git', '-c', 'user.name=Andrey Chesnokov', '-c',
                     'user.email=aacchhee@gmail.com', 'commit', '-q',
                     '-m', 'test: disposable PR' + label + ' squash rehearsal',
-                    '-m', 'Agent: Codex\nModel: GPT-6 orchestrator; serving metadata unexposed',
+                    '-m', 'Agent: Codex\nModel: GPT-6 orchestrator; requested gpt-6-astra ultra, serving model/effort unexposed',
                     cwd=work)
                 commits.append(run('git', 'rev-parse', 'HEAD', cwd=work).stdout.strip())
             if conflicts or len(commits) != len(order):
@@ -81,11 +81,15 @@ def main():
                 assert not differences, (label, differences)
                 foreign[label] = {'changed_paths': len(paths[label]),
                                   'all_changed_bytes_identical_to_foreign_head': True}
-            run('git', 'diff', '--check', BASE, 'HEAD', cwd=work)
+            run('git', 'diff', '--check', BASE, 'HEAD', '--', *OWN, cwd=work)
+            all_whitespace = run('git', 'diff', '--check', BASE, 'HEAD',
+                                 cwd=work, required=False).stdout.splitlines()
             source_tree = run('git', 'rev-parse', 'HEAD^{tree}', cwd=work).stdout.strip()
             rows.append({'order': order, 'status': 'PASS', 'conflicts': [],
                          'squash_commits': commits, 'final_tree': source_tree,
                          'own_shared_topic_results_identical_to_candidate': True,
+                         'own_whitespace_check': 'PASS',
+                         'foreign_whitespace_notes': all_whitespace,
                          'foreign_preservation': foreign})
     finally:
         run('git', 'worktree', 'remove', '--force', str(work), required=False)
@@ -94,7 +98,7 @@ def main():
     report = {'format': 'padua-sequential-squash-v1', 'method':
               'Actual git merge --squash and local commits in a process-created temporary named branch/worktree; only that branch was reset/deleted; no live ref merged or pushed.',
               'base': BASE, 'heads': heads, 'foreign_shared_change_matrix': matrix,
-              'note': 'Neither foreign draft currently changes these shared registries; both pair orders and two full three-PR orders were nevertheless exercised.',
+              'note': 'Neither foreign draft currently changes these shared registries; both pair orders and two full three-PR orders were nevertheless exercised. Own whitespace checks must pass; pre-existing foreign whitespace notes are recorded without changing foreign bytes.',
               'script_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
               'cases': rows, 'accepted': accepted}
     data = json.dumps(report, separators=(',', ':')) + '\n'
