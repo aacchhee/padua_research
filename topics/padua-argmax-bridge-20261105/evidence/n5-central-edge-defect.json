@@ -1,0 +1,26 @@
+{
+  "kind": "MEASURED developer finite-polynomial diagnostic; no ordering claim",
+  "input_head": "714f3cad18859c07cd13f31561f2a185f9591a7f",
+  "python": "3.12.14",
+  "mpmath": "1.3.0",
+  "decimal_digits": 80,
+  "cases": 6,
+  "exact_rational_constant_checks": true,
+  "all_diagnostics_passed": true,
+  "minimum_defect_over_bound": "117.013941479426946580551191843",
+  "max_primitive_identity_error": "9.445809357e-79",
+  "sources": {
+    "code/n5_central_edge_defect.py": "c0c6280c88a15c265bd8a20d0bf78d9048203ae37f385abf3ca0b558c6ead6ac",
+    "theory/N5-central-edge-defect.md": "51ed4849ea1ff68bdd607596f8de1f893613b3bf644380dde4e00024591a4870",
+    "ideas/N5-central-edge-defect.md": "8ceeffd4ff1ff21cbc23b85aabfad1491b9f72fef8773037e0195b3b5150d488",
+    "novelty-gate-N5.md": "dcc374a0801bc742bfefd4790d2a665e0af99b4ce267cbe33c763d46ba8fc9f6",
+    "theory/N1-row-model.md": "d087ad8374c9e8274c5d228a47a7f796a8c64d412255a7362c0ea68863c14250"
+  },
+  "cpu_seconds": 2.79821127,
+  "independent_review": "PENDING; execution is by the developer",
+  "bulk_output": {
+    "path": "local-output/argmax-bridge-20261105/N5/central-edge-defect-cases.json",
+    "bytes": 5064,
+    "sha256": "b74e8af14f0cf3e74392765f8cadbe18abdc80111ef09519f7deb84e359d04b6"
+  }
+}

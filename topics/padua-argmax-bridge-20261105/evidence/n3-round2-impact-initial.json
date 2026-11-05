@@ -1,0 +1,60 @@
+{
+  "status": "PASS input-impact verification only; no new mathematical execution",
+  "rules_input": "3dda890275a7599caa707b0fb8c0b6e6f6a80643",
+  "command": "python topics/padua-argmax-bridge-20261105/code/n3_round2_impact.py",
+  "source": {
+    "path": "topics/padua-argmax-bridge-20261105/code/n3_round2_impact.py",
+    "bytes": 3574,
+    "sha256": "396ca17aa649492f26d9f53dc228243c5029f227e18a0c3dfed5379aa4f8d10c"
+  },
+  "float_receipt": {
+    "path": "topics/padua-argmax-bridge-20261105/evidence/n3-float-v2.json",
+    "bytes": 6111,
+    "sha256": "329f4a161932d7a003367fa2afb3819838c60b90e49c461ac92784c4b527d711"
+  },
+  "corner_independent_receipt": {
+    "path": "topics/padua-argmax-bridge-20261105/evidence/independent-corner-replay.json",
+    "bytes": 5161,
+    "sha256": "28050ad27ecccb011faf0df4958744041e3843e3cd1581ca921b830e1504983f"
+  },
+  "verified_float_file_identities": [
+    "topics/padua-argmax-bridge-20261105/code/n3_meanvalue.c",
+    "topics/padua-argmax-bridge-20261105/code/n3_float_v2.py",
+    "topics/padua-argmax-effective-2-20261105/code/box_pilot.c",
+    "topics/padua-argmax-effective-2-20261105/code/phase_probe.c",
+    "topics/padua-argmax-effective-2-20261105/code/phase_probe.py",
+    "topics/padua-argmax-effective-2-20261105/attempts/H1.md",
+    "topics/padua-argmax-effective-2-20261105/theory/phase-structure.md",
+    "topics/padua-argmax-effective-2-20261105/theory/defect-radius-extension.md",
+    "topics/padua-argmax-effective-2-20261105/theory/corner-n2-local-radius.md",
+    "local-output/argmax-bridge-20261105/N3/float-v2/box-trace.jsonl",
+    "local-output/argmax-bridge-20261105/N3/float-v2/box-frontiers.json",
+    "local-output/argmax-bridge-20261105/N3/float-v2/box-validation.json"
+  ],
+  "patch_interface": {
+    "degrees": [
+      33,
+      64,
+      128
+    ],
+    "phase_square": "1/128",
+    "common_kappa": "1/12500"
+  },
+  "completed_float_counts": {
+    "33": 2028,
+    "64": 1908,
+    "128": 1794
+  },
+  "cpu_seconds": {
+    "33": 12.223261275999999,
+    "64": 47.46418704999999,
+    "128": 162.65457397
+  },
+  "interpretation": "Frozen v2 conditional corner premise is now independently verified; original execution status and timings are unchanged.",
+  "limits": [
+    "This guard trusts the named different-agent corner acceptance; it does not replay that arithmetic.",
+    "B2 float timing and finite count criteria hold at the three named degrees; no universal count law is proved.",
+    "Floating phase leaves are not outward certificates. No full-phase checker or global argmax extension follows.",
+    "An unnecessary v3 repeat was terminated before any degree completion; it supplies no evidence."
+  ]
+}

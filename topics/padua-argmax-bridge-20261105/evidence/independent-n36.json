@@ -1,0 +1,17 @@
+{
+  "accepted": true,
+  "all_supplied_bounds_verified": true,
+  "binary_sha256": "f17fed2e69a98c952d1ad5e72de03c08b2ceb07970c49fc0db1b35396fe3e605",
+  "certificate_sha256": "067fcf2af8eb2f112f65f2689ecd7102b87f1b2cb31b2508d97ba09be0d9f22c",
+  "checker_sha256": "b6c7320db2f7cfebf27fe33aa38ffdd45ff719870e3d23e15f845b6e8026eb2e",
+  "complete_partition": true,
+  "counts": {
+    "bound": 306,
+    "corner": 2,
+    "splits": 307
+  },
+  "format": "padua-native-independent-check-v1",
+  "kernel_sha256": "b0c871e7711219edfe3ce01480d8d1de3503a20d9b59f82b63a00eff248bc6e0",
+  "n": 36,
+  "seconds": 925.8015888400002
+}

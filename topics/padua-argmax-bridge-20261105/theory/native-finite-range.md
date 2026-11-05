@@ -1,4 +1,4 @@
-# PD-T?argmax-bridge-codex-F1 — Exact Padua corner argmax at degrees 33–34
+# PD-T?argmax-bridge-codex-F1 — Exact Padua corner argmax at degrees 33–36
 
 ID kind: PD-T. Aliases: native bridge extension; accepted finite certificates.
 Split from: the finite cases of PD-T099; the remaining bridge stays OPEN.
@@ -6,10 +6,10 @@ Split into: none.
 
 ## Statement
 
-For every n in {33,34}, use the corrected even-checkerboard Padua
+For every n in {33,34,35,36}, use the corrected even-checkerboard Padua
 cardinals of PD-T101. On the closed physical square the maximum of
 lambda_n is Lambda_c(n), and equality holds exactly at the two nonnode
-corners: {(-1,-1),(-1,1)} for n33 and {(-1,-1),(1,-1)} for n34.
+corners: {(-1,-1),(-1,1)} for odd n and {(-1,-1),(1,-1)} for even n.
 
 ## Definitions and assumptions
 
@@ -29,6 +29,8 @@ this campaign is pending. No phase-box prototype is a premise.
 |---|---|---:|---|
 |33|[n33.json.gz](../evidence/n33.json.gz)|284 / 2|[receipt](../evidence/independent-n33.json)|
 |34|[n34.json.gz](../evidence/n34.json.gz)|288 / 2|[receipt](../evidence/independent-n34.json)|
+|35|[n35.json.gz](../evidence/n35.json.gz)|298 / 2|[receipt](../evidence/independent-n35.json)|
+|36|[n36.json.gz](../evidence/n36.json.gz)|306 / 2|[receipt](../evidence/independent-n36.json)|
 
 ## Depends on
 
@@ -45,14 +47,16 @@ has a strictly separating exact bound; each of the two corner leaves
 has PD-T210's strict off-vertex predicate. The independent checker
 reconstructs and verifies every supplied bound, both corner leaves,
 metadata and the entire prefix partition. Therefore PD-T210 yields the
-displayed maximum and equality set at each of the two degrees.
+displayed maximum and equality set at each of the four degrees.
 
 The producer ran in a different worker from the checker. The producer
-always writes accepted=false. The checker accepted both complete artifacts
+always writes accepted=false. The checker accepted all four complete artifacts
 in fresh independent executions, with these frozen identities:
 
 - n33 certificate SHA256 `090f650ae5d52d72716857e8a67a8fac7c330fa208ff81487368e1ef89d82f90`.
 - n34 certificate SHA256 `8c4866e2bda66e331e4940f17ace71b9caeb8ecf0bdd091bf026d215b21acb2d`.
+- n35 certificate SHA256 `cdf5058f476692d1fc3847b8b59ca44ffe9cecd9ffc3271a2d47b733464935bb`.
+- n36 certificate SHA256 `067fcf2af8eb2f112f65f2689ecd7102b87f1b2cb31b2508d97ba09be0d9f22c`.
 - checker driver SHA256 `b6c7320db2f7cfebf27fe33aa38ffdd45ff719870e3d23e15f845b6e8026eb2e`.
 - checker kernel SHA256 `b0c871e7711219edfe3ce01480d8d1de3503a20d9b59f82b63a00eff248bc6e0`.
 
@@ -89,9 +93,8 @@ small essential certificates and acceptance receipts are committed; unique
 unarchived timing/sample files are not proof dependencies.
 
 Combined with inherited degrees2–32 this gives the independently checked
-finite range2–34. The eventual PD-T229 onset remains non-effective. At this
-checkpoint n35/n36 are complete producer candidates awaiting independent
-acceptance; they are outside this statement. All-degree PD-T099 stays OPEN.
+finite range2–36. The eventual PD-T229 onset remains non-effective. The
+remaining bridge is37<=n<N_*. All-degree PD-T099 stays OPEN.
 
 ## History
 
@@ -100,3 +103,9 @@ Sol medium; distinct checker requested Astra high. Serving identities and
 effective efforts are unexposed. Certificates retained at0bca52b; independent
 acceptance arrived during the subsequent WORK step. No shared registry or
 final-ID assignment, and no Claude audit completion is claimed.
+
+2026-11-05 scope extension: the first statement covered33/34. Subsequent
+separate checker executions accepted35/36 with complete partitions and all
+bounds verified, at820.595/925.802seconds wall under concurrent load. The
+statement now covers33–36; no earlier receipt, audit scope or execution is
+rewritten. The same proved reduction and unmodified independent kernel apply.

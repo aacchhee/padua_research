@@ -9,6 +9,7 @@ import math
 from pathlib import Path
 import platform
 import subprocess
+import sys
 
 import numpy as np
 
@@ -147,14 +148,17 @@ def main():
                ROOT/"topics/padua-argmax-alln-20261101/theory/gated-codex-12-row-primitive-identity.md",
                ROOT/"topics/padua-argmax-effective-2-20261105/theory/profile-boundary-cotangent.md"]
     def identity(path):
+        path = path.resolve()
         content = path.read_bytes()
-        return dict(path=str(path.relative_to(ROOT)),bytes=len(content),sha256=hashlib.sha256(content).hexdigest())
-    receipt = dict(status=payload["status"],command="python topics/padua-argmax-bridge-20261105/code/n2_rows.py",
+        locator = path.relative_to(ROOT) if path.is_relative_to(ROOT) else path
+        return dict(path=str(locator),bytes=len(content),sha256=hashlib.sha256(content).hexdigest())
+    receipt = dict(status=payload["status"],command=[sys.executable, *sys.argv],
                    input_head=subprocess.check_output(["git","rev-parse","HEAD"],cwd=ROOT,text=True).strip(),
                    python=platform.python_version(),numpy=np.__version__,degrees=degrees,
                    counts=counts,max_absolute_errors=maxima,sources=[identity(x) for x in sources],
                    raw=identity(args.output),independent_rerun="PENDING",fit="NONE",
                    limits="Binary64 checks only; no rigorous rounding bound, continuum claim, profile fit, B3 pass or proof dependency. Cold-storage archival pending.")
+    args.receipt.parent.mkdir(parents=True, exist_ok=True)
     args.receipt.write_text(json.dumps(receipt,indent=2,sort_keys=True)+"\n")
     print(json.dumps({k:receipt[k] for k in ["status","counts","max_absolute_errors","raw"]},indent=2))
 

@@ -107,14 +107,18 @@ four source hashes are unchanged. Dependency SHA256 is
 |---|---|---:|---:|---:|---:|
 | 33 | ACCEPTED | 284 | 2 | 285 | 805.616 |
 | 34 | ACCEPTED | 288 | 2 | 289 | 813.230 |
-| 35 | RUNNING | — | — | — | — |
-| 36 | RUNNING | — | — | — | — |
+| 35 | ACCEPTED | 298 | 2 | 299 | 820.595 |
+| 36 | ACCEPTED | 306 | 2 | 307 | 925.802 |
 
-The completed [n33](evidence/independent-n33.json) and
-[n34](evidence/independent-n34.json) receipts both record
+The completed [n33](evidence/independent-n33.json),
+[n34](evidence/independent-n34.json) and
+[n35](evidence/independent-n35.json), together with
+[n36](evidence/independent-n36.json), all record
 `complete_partition=true`, `all_supplied_bounds_verified=true` and
 `accepted=true`. n33 reconstructs595 cardinals and corners(-1,-1),(-1,1);
-n34 reconstructs630 cardinals and corners(-1,-1),(1,-1). These are separate
+n34 reconstructs630 cardinals and corners(-1,-1),(1,-1);
+n35 reconstructs666 cardinals and corners(-1,-1),(-1,1);
+n36 reconstructs703 cardinals and corners(-1,-1),(1,-1). These are separate
 fresh arithmetic executions on every leaf, not acceptance inferred from
 the producer's `complete` field.
 
@@ -183,9 +187,17 @@ N4/N5 were only read preliminarily here; their formal independent review
 belongs to the separately assigned checker and is not included in this
 acceptance.
 
-## Remaining boundary
+## Final disposition and remaining boundary
 
-Finish the two remaining native invocations and record their actual results.
+ACCEPTED within this supplementary scope: the four exact finite certificates
+at n33–36, the entire n33 corruption suite, and the narrow N6 analytic
+obstruction/covering-family verification. No unresolved finding within
+that scope. All original native jobs completed; none was restarted.
+Final integrity checks matched each receipt's certificate, binary and
+checker source hashes against the actual bytes, along with the degree,
+leaf counts and acceptance flags. Receipt/report/code sizes remain below
+16KiB each.
+
 The parent integrates accepted degree claims and small essential evidence.
 Bulk binary/raw replay output remains local; no cold-storage transfer was
 performed. Required Claude audit and all-degree bridge closure remain open.

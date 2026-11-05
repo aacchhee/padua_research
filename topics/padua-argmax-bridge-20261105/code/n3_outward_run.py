@@ -31,6 +31,7 @@ def main():
     ap.add_argument('--work',type=Path,default=OUT/'outward-v1')
     ap.add_argument('--execute',action='store_true',help='explicitly select complete-cover production')
     args=ap.parse_args()
+    args.work=args.work.resolve()
     if not args.execute:
         raise SystemExit('Prospective next-round producer: select --execute to run.')
     assert all(2<=n<=1000 for n in args.degrees) and args.seconds>0 and args.boxes>0

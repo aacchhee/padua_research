@@ -1,60 +1,42 @@
-# padua-argmax-bridge-20261105 — closing the Padua argmax bridge
+# Padua argmax bridge — current results
 
-This file is written only by the topic orchestrator. Branch `codex/padua-argmax-bridge-20261105`; no PR yet.
+Branch `codex/padua-argmax-bridge-20261105`, [draft PR27](https://github.com/aacchhee/padua_research/pull/27). Stage WORK; required Claude audit pending.
 
-## Status (2026-11-05): WORK, topic set up
+**Independently checked global finite range: 2–36.** New exact certificates
+at33–36 pass the separate C++/GMP checker;36 corruption controls reject as
+expected. The remaining bridge is37<=n<N_*, with N_* still non-effective.
+PD-T099 remains **OPEN**. [Finite proof/evidence](../topics/padua-argmax-bridge-20261105/theory/native-finite-range.md).
 
-Goal: PD-T099 for all n. It is currently certified for 2–32 and proved for n ≥ N_* with N_* not explicit.
+Analytic development results, with supplementary reviews recorded:
 
-The plan, in [handoff 01](../topics/padua-argmax-bridge-20261105/handoffs/01-work.md), is to meet in the middle:
+- Exact full-phase cotangent rows and collision/sign-arc handling, extending
+  the beta-zero predecessor. [N2](../topics/padua-argmax-bridge-20261105/theory/N2-row-decomposition.md).
+- Uniform fourth-order arbitrary-offset cotangent block error, exact poles
+  retained; no pole-distance lower bound. [N5-01](../topics/padua-argmax-bridge-20261105/theory/N5-partial-cotangent.md).
+- Full-diamond n-dependent row-model error
+  r_n=[7pi^4/1800+7pi^3H_n/900]/n^4, and a quantified cancellation-integral
+  reduction eliminating moving numerator-root cutoffs. The outer sum remains
+  degree-dependent; compactification and onset are OPEN.
+  [N1](../topics/padua-argmax-bridge-20261105/theory/N1-cancellation-quadrature.md).
+- Wider central vertical-edge actual-lambda defect floors, n>=32, phase
+  windows .5/.25 and explicit strip hypotheses. Developer proof; distinct
+  review in progress. [N5-02](../topics/padua-argmax-bridge-20261105/theory/N5-central-edge-defect.md).
 
-- **finite side:** a practical outward certifier (N3: Taylor models, dyadic corner shells) pushed upward from 33;
-- **analytic side:** a degree-uniform computer-assisted proof for n ≥ n₁ with explicit n₁ (N1: explicit summation remainders; N2: the phase-dependent log profile from polygonal Lebesgue-constant methods).
+**N3 measured throughput:** complete float covers33/64/128 use2028/1908/1794
+visits and12.22/47.46/162.65CPU-s after a larger per-degree corner patch.
+The corrected independent exact corner replay verifies that patch at those
+three degrees; initial checker-contract error and actual corrected rerun are
+disclosed. B2 finite floating throughput/count scope passes. No full outward
+cover or new phase-certified degree is claimed.
+[Measurements](../topics/padua-argmax-bridge-20261105/theory/phase-cover-measurements.md).
 
-Side probes:
+N4 and N6 produce scoped structural obstructions: unrestricted transport is
+equivalent to the norm target; exact mode-diagonal positive translation works
+only on the complementary grid; fixed same-t trace domination and probability
+full-vector trace lifts fail. Broader routes are deferred, not rejected.
+No external theorem or novelty claim is transferred from unread papers.
 
-- N4: positive-translation / hypergroup contraction;
-- N5/N6: 1-D classical analysis and the Lissajous curve.
-
-No results yet.
-
-## Next step
-
-`Codex (gpt-6-astra high): Continue codex/padua-argmax-bridge-20261105.`
-
-## 2026-11-05 development checkpoint
-
-B0 PASS: fresh native n24 regeneration and separate checker replays of both
-regenerated/committed certificates agree exactly; the n32 floating pilot
-reproduces all deterministic counts and its unresolved902-box frontier.
-[Replay record](../topics/padua-argmax-bridge-20261105/independent-checks-b0.md).
-
-B1 **MEASURED diagnostics**: seven-degree finite map,33/48/64/96/128/192/256,
-with all admissible noncorner centers at161 near phases per degree. The expanded
-small-phase grid recovers positive primitive excess at128/256. Continuous
-region extrema and tiny-shell signs remain unresolved.
-[Margin anatomy](../topics/padua-argmax-bridge-20261105/margin-anatomy.md).
-
-N1–N6 first rounds are running in parallel; [draft PR27](https://github.com/aacchhee/padua_research/pull/27).
-No new degree or effective onset is claimed at this checkpoint. PD-T099 stays
-OPEN and the inherited certified global range stays2–32.
-
-## Independently checked extension and first analytic rounds
-
-**PROVED development result, Claude audit pending:** exact finite argmax at
-n33/34, independently accepted with full arithmetic/partition verification
-and36 rejected corruption controls. The checked finite range is now2–34;
-35/36 remain candidate-only at this checkpoint.
-[Finite record](../topics/padua-argmax-bridge-20261105/theory/native-finite-range.md).
-
-Analytic development supplies exact full-phase cotangent rows, a uniform
-fourth-order pole-extracted block bound, and an explicit n-dependent row-model
-error r(n)=[7pi^4/1800+7pi^3H_n/900]/n^4. A distinct Astrahigh supplement found
-no substantive mathematics issue. This still retains outer rows/reciprocal
-sums; no compact uniform-degree model or onset follows.
-[Model](../topics/padua-argmax-bridge-20261105/theory/N1-row-model.md).
-
-N3 **MEASURED** first-order float covers33/64 complete;128 capped with344
-pending. B2 remains incomplete. Exact positive-translation and trace-lifting
-obstructions reject specified classes only; broader N4/N6 and PD-T099 stay
-OPEN/deferred. N1/N5/N3 continue their next gated steps.
+Next: full outward overlap/replay and practical cost, sharper actual-lambda
+control, and a compact uniform-degree profile with a proved effective onset.
+No Syvert pack until B4's analytic/throughput condition is met. Small evidence
+stays in Git; raw outputs/libraries stay local with physical archival pending.

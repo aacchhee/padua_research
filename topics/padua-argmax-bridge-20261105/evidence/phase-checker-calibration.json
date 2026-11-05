@@ -1,0 +1,271 @@
+{
+  "status": "MEASURED bounded replay; full cover absent; independent review pending",
+  "rules_input": "3dda890275a7599caa707b0fb8c0b6e6f6a80643",
+  "developer": "Codex Sol medium (as allocated; runtime metadata not independently exposed)",
+  "samples": [
+    {
+      "file": "local-output/argmax-bridge-20261105/N3/outward-calibration-v1/n17-sample-far.json",
+      "sha256": "c9b48003767936f5b29ef5e941944b57c6a3487b6757542e6281280dd577609a",
+      "replay": {
+        "accepted": false,
+        "complete": false,
+        "n": 17,
+        "checked_leaves": 1,
+        "total_leaves": 1,
+        "pending": 27,
+        "independent_constants": [
+          8.6179478249936,
+          8.617947824993601,
+          3.141592653589793,
+          3.1415926535897936
+        ],
+        "arithmetic": "FLINT 3.1.3 Arb 160-bit balls; exact rational acceptance/geometry",
+        "supplied_numeric_leaf_bounds": "ignored; predicates recomputed independently",
+        "local_patch": "inherited T251/T369 only; no new kappa accepted"
+      }
+    },
+    {
+      "file": "local-output/argmax-bridge-20261105/N3/outward-calibration-v1/n17-sample-nonlocal-defect.json",
+      "sha256": "c0ffd540ea58144e362e6867bcc03fb064aad1d3150e0e17778fe3865857aa83",
+      "replay": {
+        "accepted": false,
+        "complete": false,
+        "n": 17,
+        "checked_leaves": 1,
+        "total_leaves": 1,
+        "pending": 39,
+        "independent_constants": [
+          8.6179478249936,
+          8.617947824993601,
+          3.141592653589793,
+          3.1415926535897936
+        ],
+        "arithmetic": "FLINT 3.1.3 Arb 160-bit balls; exact rational acceptance/geometry",
+        "supplied_numeric_leaf_bounds": "ignored; predicates recomputed independently",
+        "local_patch": "inherited T251/T369 only; no new kappa accepted"
+      }
+    },
+    {
+      "file": "local-output/argmax-bridge-20261105/N3/outward-calibration-v1/n17-sample-local.json",
+      "sha256": "4bb3143427b11e4e81205395ccdf3745e4eaf78f4daa4351eb4aba3c7b45fe15",
+      "replay": {
+        "accepted": false,
+        "complete": false,
+        "n": 17,
+        "checked_leaves": 1,
+        "total_leaves": 1,
+        "pending": 39,
+        "independent_constants": [
+          8.6179478249936,
+          8.617947824993601,
+          3.141592653589793,
+          3.1415926535897936
+        ],
+        "arithmetic": "FLINT 3.1.3 Arb 160-bit balls; exact rational acceptance/geometry",
+        "supplied_numeric_leaf_bounds": "ignored; predicates recomputed independently",
+        "local_patch": "inherited T251/T369 only; no new kappa accepted"
+      }
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "false complete",
+      "rejected": true,
+      "reason": "false completion flag"
+    },
+    {
+      "name": "remove pending region",
+      "rejected": true,
+      "reason": "tree partition has a gap"
+    },
+    {
+      "name": "duplicate leaf",
+      "rejected": true,
+      "reason": "duplicate tree leaf"
+    },
+    {
+      "name": "ancestor overlap",
+      "rejected": true,
+      "reason": "overlapping ancestor/descendant leaves"
+    },
+    {
+      "name": "root omission",
+      "rejected": true,
+      "reason": "root geometry mismatch"
+    },
+    {
+      "name": "pi shrink",
+      "rejected": true,
+      "reason": "pi constants do not outward-enclose independent pi"
+    },
+    {
+      "name": "inflated corner threshold",
+      "rejected": true,
+      "reason": "corner constants fail independent enclosure check"
+    },
+    {
+      "name": "false outside",
+      "rejected": true,
+      "reason": "leaf predicate failed"
+    },
+    {
+      "name": "false local radius",
+      "rejected": true,
+      "reason": "leaf predicate failed"
+    },
+    {
+      "name": "unknown kind",
+      "rejected": true,
+      "reason": "unknown leaf predicate"
+    }
+  ],
+  "overlap": [
+    {
+      "n": 17,
+      "inherited_certificate_sha256": "7ec44ce35cc20b12386e115749ef21c073b4362f066f4d92063ae43da7d756f8",
+      "constant_intervals_overlap": true,
+      "independent_Lc": [
+        8.6179478249936,
+        8.617947824993601
+      ],
+      "note": "constant overlap only; no Bernstein leaf replay"
+    },
+    {
+      "n": 24,
+      "inherited_certificate_sha256": "1f64d40557604a83565d1b995a181cd8636ea75ebc42eb86e6e94b65c70e5c5e",
+      "constant_intervals_overlap": true,
+      "independent_Lc": [
+        9.872512535796146,
+        9.872512535796147
+      ],
+      "note": "constant overlap only; no Bernstein leaf replay"
+    },
+    {
+      "n": 32,
+      "inherited_certificate_sha256": "e17a8712fb257a219436e44e977eaa6a1e0287ba6a64a86c78e34009f984c609",
+      "constant_intervals_overlap": true,
+      "independent_Lc": [
+        10.993594541100443,
+        10.993594541100444
+      ],
+      "note": "constant overlap only; no Bernstein leaf replay"
+    }
+  ],
+  "point_checks": [
+    {
+      "n": 3,
+      "r": 0,
+      "s": 0,
+      "alpha": 0.0,
+      "beta": 0.0,
+      "triangular_value_and_gradient_agree": true
+    },
+    {
+      "n": 3,
+      "r": 3,
+      "s": 4,
+      "alpha": 0.0,
+      "beta": 0.0,
+      "triangular_value_and_gradient_agree": true
+    },
+    {
+      "n": 3,
+      "r": 0,
+      "s": 4,
+      "alpha": 0.0,
+      "beta": 0.0,
+      "triangular_value_and_gradient_agree": true
+    },
+    {
+      "n": 17,
+      "r": 5,
+      "s": 8,
+      "alpha": 0.2,
+      "beta": 0.3,
+      "triangular_value_and_gradient_agree": true
+    },
+    {
+      "n": 24,
+      "r": 24,
+      "s": 25,
+      "alpha": 0.0,
+      "beta": 0.0,
+      "triangular_value_and_gradient_agree": true
+    },
+    {
+      "n": 32,
+      "r": 0,
+      "s": 0,
+      "alpha": 0.01,
+      "beta": -0.01,
+      "triangular_value_and_gradient_agree": true
+    }
+  ],
+  "cost": [
+    {
+      "n": 17,
+      "cpu_seconds_per_box": 0.05650491599999996,
+      "bounds": [
+        8.470824107121885,
+        8.44722758512311,
+        0.5910594116700636
+      ]
+    },
+    {
+      "n": 24,
+      "cpu_seconds_per_box": 0.12485785600000021,
+      "bounds": [
+        9.695554912608394,
+        9.668643033367156,
+        0.5761697577075169
+      ]
+    },
+    {
+      "n": 32,
+      "cpu_seconds_per_box": 0.39618306699999994,
+      "bounds": [
+        10.789945460077641,
+        10.7597191705987,
+        0.569277663672252
+      ]
+    },
+    {
+      "n": 33,
+      "cpu_seconds_per_box": 0.47573944999999984,
+      "bounds": [
+        10.910892473162644,
+        10.880311346130279,
+        0.5712912664052285
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/arb_kernel.cpp",
+      "sha256": "236116452dc7aae66e39cbf8800fe847cffe931ac0ce8a9682397313de7c43a6",
+      "bytes": 5635
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/build.sh",
+      "sha256": "d406128df4c836f49ca65531fb43ab17f8f575e22abfd3c3a11d88e3349fd7b4",
+      "bytes": 475
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/check.py",
+      "sha256": "d38f268e817518dd02ff00a102f9c0c2a0afa05598a4abb586d5ea602aa85bac",
+      "bytes": 6089
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/controls.py",
+      "sha256": "564ab1cacd0606d3fd3e7f71eec2621c8f1eb7c6a78b003acbc4676de89568ff",
+      "bytes": 5452
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/setup.py",
+      "sha256": "ff6babcf65f90c42d35353bd306f89d96ac293c6783508b03bef175ab5a60391",
+      "bytes": 1131
+    }
+  ],
+  "supplied_numeric_bounds_policy": "not trusted; leaf predicates recomputed independently; bound-only metadata corruption is intentionally irrelevant",
+  "cpu_seconds": 2.90908254
+}

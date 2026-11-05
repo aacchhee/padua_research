@@ -1,0 +1,177 @@
+{
+  "status": "MEASURED floating first-order cover with larger corner patch",
+  "corner_premise": "CONDITIONAL what-if; larger corner patch not independently accepted",
+  "corner_replay": null,
+  "rules_sha": "3dda890275a7599caa707b0fb8c0b6e6f6a80643",
+  "command": "OPENBLAS_NUM_THREADS=1 python topics/padua-argmax-bridge-20261105/code/n3_float_v2.py",
+  "compile_command": [
+    "cc",
+    "-O3",
+    "-std=c11",
+    "-shared",
+    "-fPIC",
+    "/workspace/padua_research/topics/padua-argmax-effective-2-20261105/code/phase_probe.c",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/n3_meanvalue.c",
+    "-lm",
+    "-o",
+    "/workspace/padua_research/local-output/argmax-bridge-20261105/N3/float-v2/box_pilot.so"
+  ],
+  "compiler": "cc (Debian 14.2.0-19) 14.2.0",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "caps": {
+    "visited_boxes": 1000000,
+    "CPU_seconds_per_degree": 600.0
+  },
+  "policy": "four quadrants; breadth-first; longest-side bisection",
+  "sources": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_meanvalue.c",
+      "bytes": 3606,
+      "sha256": "4739e36d05d75ce4389118364a2e2a693d2b14d87a8b79e84aa5199d6bb6a86a"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_float_v2.py",
+      "bytes": 9957,
+      "sha256": "5ebe7167abf7e98d0b8fc0b0df98418e53b34a61513254a41dcd5165c35138c3"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/code/box_pilot.c",
+      "bytes": 4359,
+      "sha256": "92f111e0c58c59de32490118a30d88b26de356a93e0ec7251928059e1f2f4d0b"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/code/phase_probe.c",
+      "bytes": 1510,
+      "sha256": "692d4afd89d3bbda3bac3daaeef7c56aa4ecdde0f9cdd32b9fefa0e296adc365"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/code/phase_probe.py",
+      "bytes": 7620,
+      "sha256": "a2d85ffd293c50095fc6e451a6a4473b17b63bbb54123f397dcec148b08495d9"
+    }
+  ],
+  "mathematical_inputs": [
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/attempts/H1.md",
+      "bytes": 8653,
+      "sha256": "05ee5522c80b00ffd76f844042d5515dfba6a19f0c86183fad0b8f792b3835cf"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/theory/phase-structure.md",
+      "bytes": 17238,
+      "sha256": "378548a0635206c8e61111c8ddb24b51f4b7ef1bf3cb16640da16dcf94a9e718"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/theory/defect-radius-extension.md",
+      "bytes": 11139,
+      "sha256": "243077d9af371f8b19c1e28b9872e44900d73daafe4d509a0d6a5a3815403d97"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/theory/corner-n2-local-radius.md",
+      "bytes": 7735,
+      "sha256": "fc358b11db799b272a89f8910797ffdf2fb03309161ae2cdfc5a4dfb24aeb045"
+    }
+  ],
+  "validation": {
+    "points": 412,
+    "max_violation": 1.1368683772161603e-13,
+    "diagnostic_tolerance": "1e-10*(1+abs(reference))",
+    "accepted": true
+  },
+  "degrees": [
+    {
+      "n": 33,
+      "Lambda_corner": 11.117523283576109,
+      "eps": 1.2117523283576109e-11,
+      "visited": 2028,
+      "counts": {
+        "split": 1012,
+        "outside": 32,
+        "far": 552,
+        "corner-orbit-plus-defect": 404,
+        "local-corner-plus-defect": 28
+      },
+      "unresolved_frontier": 0,
+      "complete_float_cover": true,
+      "stop_reason": "complete",
+      "wall_seconds": 12.228376022000248,
+      "cpu_seconds": 12.223261275999999,
+      "deepest_bisections": 22,
+      "minimum_visited_maxwidth": 0.0015339807878856412,
+      "profile_boxes": 476,
+      "frontier_maxwidth_min": 0,
+      "frontier_maxwidth_max": 0
+    },
+    {
+      "n": 64,
+      "Lambda_corner": 13.973207805351175,
+      "eps": 1.4973207805351175e-11,
+      "visited": 1908,
+      "counts": {
+        "split": 952,
+        "outside": 28,
+        "far": 500,
+        "corner-orbit-plus-defect": 396,
+        "local-corner-plus-defect": 32
+      },
+      "unresolved_frontier": 0,
+      "complete_float_cover": true,
+      "stop_reason": "complete",
+      "wall_seconds": 47.469325406999815,
+      "cpu_seconds": 47.46418704999999,
+      "deepest_bisections": 22,
+      "minimum_visited_maxwidth": 0.0015339807878856412,
+      "profile_boxes": 452,
+      "frontier_maxwidth_min": 0,
+      "frontier_maxwidth_max": 0
+    },
+    {
+      "n": 128,
+      "Lambda_corner": 17.34605680007003,
+      "eps": 1.834605680007003e-11,
+      "visited": 1794,
+      "counts": {
+        "split": 895,
+        "outside": 24,
+        "far": 502,
+        "corner-orbit-plus-defect": 341,
+        "local-corner-plus-defect": 32
+      },
+      "unresolved_frontier": 0,
+      "complete_float_cover": true,
+      "stop_reason": "complete",
+      "wall_seconds": 162.69597086799968,
+      "cpu_seconds": 162.65457397,
+      "deepest_bisections": 23,
+      "minimum_visited_maxwidth": 0.0015339807878856412,
+      "profile_boxes": 397,
+      "frontier_maxwidth_min": 0,
+      "frontier_maxwidth_max": 0
+    }
+  ],
+  "raw": [
+    {
+      "path": "local-output/argmax-bridge-20261105/N3/float-v2/box-trace.jsonl",
+      "bytes": 1342850,
+      "sha256": "0dd0028879e0fbe40b9af6220e7cb6e6961178ad115c90bd4b6b1a7f32792192"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/N3/float-v2/box-frontiers.json",
+      "bytes": 27,
+      "sha256": "d48626a54eac6602daa47a64ff4342f0d17bdf6a9858139ed7664116e3283ac0"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/N3/float-v2/box-validation.json",
+      "bytes": 69331,
+      "sha256": "14e6f43a4595239c6cdd96b73065f107c5a32f14f4a5feb9c36ed36049593dc9"
+    }
+  ],
+  "limits": [
+    "No directed rounding; eps is a diagnostic budget, not an error bound.",
+    "First-order mean-value variant only; capped frontier is unresolved, not a box-growth kill criterion.",
+    "Larger |alpha|,|beta|<=1/128 patch uses the explicitly recorded corner-premise status; no exact smallest sign radius is asserted.",
+    "No independent agent checker, corruption controls, exact certificate or exact timing projection."
+  ]
+}

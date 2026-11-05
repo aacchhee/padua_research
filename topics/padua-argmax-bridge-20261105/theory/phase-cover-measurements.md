@@ -64,3 +64,26 @@ and the required outward/checker work are resolved.
 record by coordinator requested Astra high. Serving metadata unexposed.
 The N3 frozen first-round source/receipt hashes define the measured scope;
 no scaling fit, new certified degree or continuous error claim is added.
+
+## Round2 — fixed kernel, larger independently verified corner domain
+
+The separately preregistered variant changes only the local predicate to the
+phase square |alpha|,|beta|<=1/128 at n33/64/128. Its run was explicitly
+conditional when launched; that receipt remains byte-frozen. The corrected
+independent GMP replay later certified the required corner premises. A separate
+actual input-impact check verified the corrected checker, data, and every
+frozen floating source/raw identity without repeating the same campaign.
+
+| n | Complete floating cover | Visited | CPU seconds |
+|---|---|---:|---:|
+|33|yes|2028|12.22|
+|64|yes|1908|47.46|
+|128|yes|1794|162.65|
+
+The finite floating throughput/count criterion is met: n64 is below600CPU-s
+and the three complete counts decrease. This is an observed three-degree
+comparison, not an asymptotic box-growth theorem. No exact smallest true-sign
+radius was computed, and no full outward cover or new phase-certified degree
+follows. [Round2 freeze](../evidence/n3-round2-freeze.json) pins the run and
+corrected-premise impact check. The earlier first-order capped run and its
+frontier are retained; no historical outcome or conditional label is rewritten.
