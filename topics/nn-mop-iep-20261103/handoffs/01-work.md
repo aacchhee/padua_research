@@ -1,6 +1,6 @@
 # Handoff 01 — nn-mop-iep-20261103 — nearest-neighbour MOPs as a commuting-pair IEP (IDEA-117)
 
-- Status: open
+- Status: done in ae7e6187e8731b6f83aa444d4d702a0ef779c564
 - Previous handoff: none
 
 - Next agent / model / effort: Codex.
