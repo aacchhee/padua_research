@@ -1,6 +1,6 @@
 # Handoff 04 — Padua Lebesgue follow-ups — authorized PR preparation
 
-- Status: open
+- Status: done in 9d9638dafb5ce64a0086f98c07c72b167c2c9b3a
 - Previous handoff: [03-response.md](03-response.md)
 - Next agent / model / effort: Codex, gpt-6.1-sol medium (mechanical preparation and integration); distinct gpt-6-astra medium for protocol/registration checks. No new mathematics is assigned.
 - Role: topic orchestrator and PR preparer
