@@ -1,0 +1,11 @@
+{
+ "eps": "1E-28",
+ "prec": 70,
+ "kernel_channel_draws": 15404310,
+ "frob_rel_err_RQtilde_over_eps_vs_Phi": 0.10174396131368375,
+ "max_col_rel_err": 0.25275730169262506,
+ "col90_sq_replay": 676811711024.5558,
+ "readout_sq_replay": 1652561493867.069,
+ "L": 2041704913997,
+ "seconds": 22.81723976135254
+}

@@ -1,0 +1,2 @@
+tri_all exit=0 secs=524
+rot_node1 exit=0 secs=362

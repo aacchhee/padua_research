@@ -1,0 +1,52 @@
+{
+ "bj_basis_seconds": 0.5472164154052734,
+ "bj_gram_diag_exact": true,
+ "bj_rho_seconds": 2.342423439025879,
+ "bj_adjoint_seconds": 2.5903549194335938,
+ "bj_forward_seconds": 4.935962438583374,
+ "V90_equals_s_times_S90": true,
+ "old_target90_equals_frozen_G_R": true,
+ "Q_floor": 2041704913997,
+ "L_le_Q_lt_L_plus_1": true,
+ "Q_gt_100B_exact": true,
+ "Q_exact_sha256_str": "bc2fb280ce39d9f7e740bd29bf0abb0fee122ba30c28eecb2c64010774c1994f",
+ "denominator_xTDx_float": 36070581.86058743,
+ "denominator_xTDx_exact_digits": [
+  2604,
+  2596
+ ],
+ "nonzero_readout_coeffs": 59,
+ "readout_maxabs": 1000000,
+ "readout_support_monomials": [
+  [
+   6,
+   2
+  ],
+  [
+   6,
+   3
+  ],
+  [
+   6,
+   4
+  ],
+  [
+   6,
+   5
+  ],
+  [
+   6,
+   6
+  ]
+ ],
+ "bj_seconds": 6.478535175323486,
+ "alt_trace_equals_frozen_U_R": true,
+ "all_z_le_Bv": true,
+ "U_exact_float": 13462956265.146723,
+ "ceil_U_equals_B": true,
+ "rayleigh_floor": 13462955378,
+ "100_rayleigh_floor_ge_G": true,
+ "alt_seconds": 52.17471218109131,
+ "L_gt_100B_int": true,
+ "elapsed": 52.26400566101074
+}
