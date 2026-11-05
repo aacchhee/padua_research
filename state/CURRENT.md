@@ -133,8 +133,9 @@ answers all nine minor findings. The T2/T3 prospective-gate timing deviation
 remains confirmed, not waived or cured, with minor impact assessed by Claude and
 acceptance left to AC; see the [qualified gate](../topics/padua-lebesgue-followups-20261103/gate-t2-t3.md).
 Registration, fresh reservation checks and integration rehearsal are complete.
-The independent preparation review leaves one readiness blocker: the conservative
-4,851,736-byte storage total needs an explicit AC exception/interpretation of
-“well below 5 MB,” or an authorized reduction. PR20 remains draft. After merge, the completed results above replace preparation tasks as
+AC-directed archival moved 326 raw captures out of the tracked tree with exact
+export/restore verification. The conservative count is now 3,859,377 bytes;
+independent storage review resolves the budget finding by reduction. PR20 is
+ready for AC’s merge decision; no further agent preparation is queued. After merge, the completed results above replace preparation tasks as
 this topic's outcome; no further mathematical campaign is assigned. Physical
 cold-storage delivery remains pending. Only AC merges.

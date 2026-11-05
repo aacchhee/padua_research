@@ -90,3 +90,22 @@ readiness transition is not performed. The requested next action concerns
 this concrete, reviewable preparation; mathematics is accepted and unchanged.
 A budget acceptance would leave only refreshed readiness/lifecycle bookkeeping,
 not another research or Claude-audit round. Only AC merges.
+
+## S1 resolved by AC-directed reduction — 2026-11-05
+
+AC replied: “generated outputs should go to cold storage.” The
+[verified migration](cold-storage-migration.md) follows that direction:
+326 raw captures / 1,155,908 bytes moved, preserving exact source hashes,
+small essential receipts and all code. All 42 exports and separate restorations
+passed; manifest metadata is included in the **3,859,377-byte** final count.
+The distinct Astra medium [storage review](cold-storage-review.md) accepts this
+bounded technical change. S1 is **resolved by reduction**, not waived; its
+original report remains unchanged as history. No mathematical re-audit trigger
+arose from relocating exact bytes with verified cloud retrieval.
+
+Refreshed all 51 current ledger/registry copies and repeated the detached
+sequential squash rehearsal against current main and PR21–24, including PR23
+`7a8d8dd313b5370589810f4efd910ed65744f865`. All reservations and shared records
+survive; no archived raw path is resurrected. PR20 is ready for AC’s merge
+decision with the existing T2/T3 timing and pending physical-delivery disclosures.
+No new agent campaign or further preparation step remains.

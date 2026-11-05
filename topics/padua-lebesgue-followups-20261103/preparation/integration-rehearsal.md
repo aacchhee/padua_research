@@ -71,3 +71,25 @@ warnings are recorded; PR20–23 pass the whitespace check. No remote branch
 was modified. The only changes after the tested PR20 candidate are preparation
 review/disposition/refresh documentation and lifecycle status; no scientific
 registration or proof change is introduced by that bookkeeping.
+
+## After authorized raw-output migration
+
+Repeated the same detached sequential squash procedure after AC instructed
+that generated outputs go to cold storage. Main remains5db1e01; the live
+23-PR population is unchanged. PR23 advanced to the input below. Worktree:
+`/workspace/scratch/lebesgue-cold-integration`.
+
+| PR | Input head | Disposable squash commit | Result tree | New paths checked |
+|---|---|---|---|---:|
+| 20 | `4952cdd7e9f433ff40632d88cf2d319114ad7fdf` | `305a830cb3cf467b9fbf570aa0ffcdf42bbabea2` | `447a63612840847b73c05a0fcf0094a70b5e76e5` | 264 |
+| 21 | `890f56ccde35431b70b43141c224b0b8817fea7f` | `031168f20c695963d8694325e38f5d4cee78196e` | `64c6f22782194278b9525be070de8c2193d46157` | 70 |
+| 22 | `30a361d19a6c23fa1df950becbe73f635aa22e71` | `a9f95eb981c9bd158c2b3f6b2408df3d8215a339` | `3b9cc9928cf01c0990b6f27b42243cd7b952ae70` | 31 |
+| 23 | `7a8d8dd313b5370589810f4efd910ed65744f865` | `31d22c8feec42d64f24c7edd55675134b16c0b5e` | `57bf9e31fc2c99038189169f67ff8971bc75185b` | 107 |
+| 24 | `5e5081e991fc48f033d3ef51ee2b6e42f892d29d` | `66658c610c83b182fd71fe1b68ee426ec53825bd` | `415f132524d9fe40bf78c9f0318bb140d0df1cfa` | 58 |
+
+All five merges remain conflict-free; PR20's first squash tree equals its input.
+The nine shared records stay byte-identical through later drafts; every new
+path matches its input head. All326 newly archived raw paths remain absent
+after the full sequence, so later drafts do not resurrect them. PR20–23
+whitespace checks pass; PR24 retains the same two known EOF warnings. No
+remote merge, branch rewrite or foreign draft repair was performed.

@@ -117,3 +117,15 @@ regeneration/retrieval paths and **pending physical delivery** to AC's Padua
 cold storage; this inspection makes no delivery claim. Original executed
 sources, audited receipts and all necessary producer/checker code are retained.
 No evidence was rewritten, split or removed to reduce the count.
+
+## 2026-11-05 supersession — actual archival reduction
+
+The unresolved assessment above describes input40347d1. AC subsequently directed
+“generated outputs should go to cold storage.” The [migration](cold-storage-migration.md)
+removes 1,155,908 original raw-output bytes and adds 163,549 counted manifest bytes.
+Committed candidate4952cdd contains **970 non-record files / 3,859,377 bytes**,
+leaving **1,140,623 bytes (22.81246%)** below 5,000,000. No metadata exemption or
+source subtraction is applied. Each of 42 new component manifests is below 16 KiB
+(max 14,271). [Independent storage review](cold-storage-review.md) resolves S1
+by this verified reduction; no AC budget exception was requested or inferred.
+Physical delivery remains pending, with exact Git-backed retrieval retained.

@@ -41,8 +41,8 @@ defect, one-dimensional quadratic bound and corner constant with explicit
 vanishing error; IDEA-356/357/358 retain the candidates. Full sharp PD-T098
 remains OPEN. [Claude audit-01](padua-lebesgue-followups-20261103/audit-01.md)
 accepts the mathematics; [response-01](padua-lebesgue-followups-20261103/response-01.md)
-answers minor findings. Registration/rehearsal checked; draft PR20 awaits AC budget decision: the
-4,851,736-byte conservative total does not establish “well below 5 MB.”
+answers minor findings. Registration/rehearsal and raw-output archival checked; PR20 is ready for AC’s
+merge decision. The conservative count is reduced to 3,859,377 bytes.
 T2/T3 prospective-gate timing remains a confirmed, unwaived deviation of minor
 assessed impact for AC's decision; physical cold-storage delivery remains pending.
 Completed results and registration are the post-merge outcome; no further

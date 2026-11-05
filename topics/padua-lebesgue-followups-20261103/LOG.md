@@ -1,10 +1,10 @@
 # Padua Lebesgue-function follow-ups (T1–T4): log
 
 - Branch: `codex/padua-lebesgue-followups-20261103` · Original base: main `440d107`; reconciled main `5db1e01` · Developer: Codex · Auditor: Claude (Opus 5.5)
-- Stage: PR — registration checked; readiness blocked on AC aggregate-budget decision · Next: `Codex (gpt-6.1-sol medium): Continue codex/padua-lebesgue-followups-20261103.` · Open handoff: [handoffs/05-budget-decision-readiness.md](handoffs/05-budget-decision-readiness.md)
+- Stage: PR ready for AC’s merge decision — registration and archival checks complete · Final lifecycle: [handoffs/05-budget-decision-readiness.md](handoffs/05-budget-decision-readiness.md)
 - Reserved final-ID ranges: PD-T266–285, PD-N092–099, IDEA356–375, LIT474–481; [reservation and pinned union scan](ALLOCATIONS.md). Final assignments: PD-T266–271 and IDEA-356–358; all unused headroom remains permanent gaps.
 - Claims: all four core targets complete. T1 PD-T184/180 PROVED (44 interior, 62 total); six T2–T4 analytic records PROVED. Claude audit-01 ACCEPTED the mathematics of all four targets; nine MINOR findings answered in response-01. Full sharp PD-T098 remains OPEN; the T2/T3 protocol timing qualification remains unwaived.
-- Open for AC: accept the 4,851,736-byte conservative total as an explicit budget exception/interpretation, or authorize a scoped reduction. PR20 stays draft; no outside machine is used.
+- Open for AC: merge decision only, with confirmed T2/T3 timing disclosure and pending physical cold-storage delivery. S1 resolved by authorized archival reduction; no budget exception or outside machine used.
 
 ## 2026-11-03 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
 
@@ -18,7 +18,7 @@
 
 ## Runs needed
 
-- No development or mathematical audit run remains for the four core targets. Preparation review and integration checks are complete; readiness awaits the explicit AC budget decision. Full sharp PD-T098 is an unattempted stretch beyond the completed constant-term target; physical cold-storage delivery remains pending.
+- No development or mathematical audit run remains for the four core targets. Preparation, archival review and integration checks are complete; no further agent run is queued. Full sharp PD-T098 is an unattempted stretch beyond the completed constant-term target; physical cold-storage delivery remains pending.
 
 ## 2026-11-03 — Codex development resumed
 
@@ -153,3 +153,9 @@
 - Sol medium inventory worker classified raw outputs by function and retained small essential receipts. Root archived 326 files / 1,155,908 B into 42 existing logical component groups with per-file source/blob/hash/size manifests. Every final export and separate restoration was byte-verified before removing tracked copies; no history rewrite or proof/code/auditor-report change.
 - [Migration record](preparation/cold-storage-migration.md) carries exact commands, receipt hashes and limitations. Frozen original commands are preserved where recovered; missing capture details are honestly retrieval-only. The conservative expected count falls to 3,859,377 B including all new manifests. Physical AC delivery remains pending; Git-pinned cloud retrieval and local verified staging remain available.
 - Distinct Astra medium technical/protocol migration review and final readiness refresh are in progress. No waiver requested, mathematical claim changed or new Claude mathematics round needed solely for byte-preserving relocation.
+
+## 2026-11-05 — archival review accepted; PR readiness
+
+- Migration candidate `4952cdd7e9f433ff40632d88cf2d319114ad7fdf` pushed. Distinct configured Astra medium [storage review](preparation/cold-storage-review.md) independently exported/restored all 326 files and checked frozen command provenance; no unresolved finding. S1 is resolved by reduction to 3,859,377 B, not a waiver. All 1,075 protected scientific/source/report files remain byte-identical; only explicitly archived raw bytes move.
+- [Final union refresh](preparation/reservation-recheck.md) rereads 51 complete files; own IDs/ledgers unchanged and PR23 new7a8d8 identical in checked registry content. [Fresh sequential rehearsal](preparation/integration-rehearsal.md) passes all five conflict/preservation checks and confirms all 326 raw files stay archived. PR24’s existing two EOF warnings remain its responsibility.
+- PR20 ready for AC’s merge decision after final lifecycle publication. No agent research/preparation remains. T2/T3 timing remains confirmed/unwaived; physical archival delivery remains pending. Transfer package and exact digest are in the migration record; verified staging is not delivery. Only AC merges.

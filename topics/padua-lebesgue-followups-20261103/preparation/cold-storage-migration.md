@@ -154,3 +154,22 @@ v2 receipts, matching manifests/provenance records, the unchanged verifier
 utility and a README. This makes transfer reviewable; it is not a receipt of
 delivery to AC. After transfer, extract and run the documented offline
 verify-archive commands against the delivered copies.
+
+## Final verification and disposition
+
+Executed `verify_cold_storage.py --staging /workspace/scratch/padua-cold-storage-20261105-v2
+--restored /workspace/scratch/padua-cold-restore-20261105`: PASS 42 logical
+manifests, 326 files / 1,155,908 bytes, exact deletion map, every export/restore,
+1,075 protected repository files unchanged. Registration verification passes
+138 immutable inputs (including archived-byte resolution), 9 mathematical bodies,
+123 manifest rows, 9 mappings and 757 local links. `git diff --check` passes.
+The committed inventory at4952cdd is exactly **3,859,377 bytes**.
+
+The transfer package was additionally extracted to a separate scratch directory;
+all 42 archives passed offline verify-archive using its packaged tool/manifests.
+The distinct Astra medium [independent storage review](cold-storage-review.md)
+accepts the migration with no unresolved finding. S1 is resolved through reduction,
+not an exception. Fresh reservation and sequential squash checks pass, retaining
+all topics’ records and all 326 archival removals. PR20 is ready for AC decision.
+Physical delivery remains pending; the trusted retrieval source is still pushed
+40347d1 and no history purge is authorized.

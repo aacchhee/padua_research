@@ -172,3 +172,48 @@ The original reservation-recheck.json SHA-256 remains
 `2d886e2e4336453bf7a87bce354f601adac2a6f130d4e57e8d2d4a2bd17a93b3`.
 No JSON, code, evidence, shared record or Git state was modified by this final
 recheck. This appended Markdown leaves the non-record budget unchanged.
+
+## Readiness recheck after authorized cold-storage reduction — 2026-11-05
+
+**PASS for the refreshed complete union.** Rules were reread at published
+candidate `4952cdd7e9f433ff40632d88cf2d319114ad7fdf` (the orchestrator identifies
+the rules checkpoint as `40347d1`). This remains an allocation-only check, with
+no new mathematics or novelty claim. The user-authorized storage reduction
+changes no reservation or final-ID registration.
+
+The orchestrator's fresh live all-state query still returns 23 PRs, with open
+PR20–24 and every returned closed PR merged; no closed-unmerged reservation
+needs recovery. The supplied `lebesgue-cold-prs.json` population has SHA-256
+`1adb9d60988e3cd3c39eb948f6eae5d2e0fc0c53ff87a3063e931625929cedec`.
+Main remains `5db1e01dcd2258f45de2adcaef43859e59734618`. PR21/22/24 remain at
+their original full pins above. PR20 is now the published candidate
+`4952cdd7e9f433ff40632d88cf2d319114ad7fdf`; PR23 is now
+`7a8d8dd313b5370589810f4efd910ed65744f865`.
+
+I reread all **51 complete ledger/four-registry copies** at these six heads
+using read-only `git ls-tree` and `git show`, recomputed the ordered full-file
+inventory digests defined in the previous recheck, and compared every PR20
+selected file with candidate `871e25bf918116f95a37f8c3dda3d1533810f4b3` and
+every PR23 selected file with `8fc9c1da776f85a784eead3591c02fcf4b642250`.
+**Every selected file is byte-identical to the respective preceding check.**
+All six inventory digests and file counts therefore equal the preceding table,
+including PR20 `e8fcd7d982107232d0025bb11a7d42f7b7b9b60cd90b6af29360471454295d9f`
+and PR23 `91913198e7eabe4259a2081d185bf53ba74f4fc17653dcbd021e4354c702045c`.
+There is no new shared-registry or reservation delta to interpret on PR23:
+its four registries/shared batch ledger still match current main exactly,
+and its own ledger retains the identical ranges and gaps.
+
+A fresh search of every complete registry again finds T266–271 only in PR20's
+six PROOF_STATUS rows and corresponding crosswalk mappings, and IDEA356–358
+only in its three IDEAS rows and corresponding mappings. No other checked
+head uses any of the nine IDs. All earlier owner intervals, permanent unused
+gaps and retained records remain byte-equivalent to the passed union above;
+no overlap or priority change occurs. Maxima remain T363/N131/IDEA453/LIT593.
+PR20's unused T272–285/N092–099/IDEA359–375/LIT474–481 stay permanent gaps.
+
+The original JSON receipt was read and remains unchanged at SHA-256
+`2d886e2e4336453bf7a87bce354f601adac2a6f130d4e57e8d2d4a2bd17a93b3`.
+Only this Markdown entry was appended; no new generated scan receipt, shared
+edit, storage operation or Git mutation was performed. This PASS covers final
+ID availability/preservation at the refreshed pins, independently of the
+separate storage and preparation review dispositions.
