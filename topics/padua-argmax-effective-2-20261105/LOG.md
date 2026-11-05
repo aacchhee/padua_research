@@ -184,3 +184,9 @@
 - Read-only supplementary Codex check (requested gpt-6.1-sol medium; serving metadata unexposed) reports PASS:49 pinned inventory identities,25PR population records, RESULTS-copy equality,171 relative Markdown links,18topicJSON below16KiB and34 protected theory/code/evidence/historical files unchanged, including all9theory files. This supplements, rather than replaces, the accepted Claude audits.
 - Re-pinned evidence index to readiness source `d00026242fd273cc816ff258c0bd15754d172422`:74topic+10repository identities all match source Git and current bytes. Previous index retained by full commit/blob/bytes/hash with its nested provenance. Historical reviewer reports and pins unchanged. Index11,190bytes;18topicJSON parse, largest14,857bytes. Conservative1093 non-record files4,441,044bytes<5,000,000. Scoped diff hygiene passes; cold-storage plan0files/bytes.
 - No material main/foreign movement or shared-registry change. Final readiness checks pass; publish the updated PR body and mark PR25 ready for AC's squash-merge decision, then close handoff07/open08. Only AC merges.
+
+## 2026-11-05 — ready for AC's merge decision
+
+- Published final readiness source/index at `5b24f17848b6cd4c69af08362c2c4ec366d707eb`, updated PR25's WORK/AUDIT/PR body with accepted preparation audit/P1–P3 and live pins, then successfully marked it ready for review (GitHub returned draft=false). No agent merge performed.
+- Topic stage PR; assigned work and handoff07 are complete. The topic awaits only AC's decision whether to squash-merge PR25. AC's broader A0 interpretation, physical cold-storage delivery and external fulltext-priority items remain unchanged and explicit. No new research is queued in this topic.
+- [Handoff08](handoffs/08-ac-decision.md) names only that decision and post-merge closure; if AC does not merge, AC's instruction defines the next step.
