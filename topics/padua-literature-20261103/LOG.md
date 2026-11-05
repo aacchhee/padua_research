@@ -1,7 +1,7 @@
 # Padua literature campaign (P1–P4): log
 
 - Branch: `claude/padua-literature-20261103` · Base: main `440d107` · Developer: Claude · Auditor: Codex (gpt-6-astra high)
-- Stage: WORK · Next: `Claude (Opus 5.5 high): Continue claude/padua-literature-20261103.` · Next handoff: [handoffs/09-response.md](handoffs/09-response.md)
+- Stage: PR (preparation pending; PR draft) · Next: `Claude (Opus 5.5 high): Continue claude/padua-literature-20261103.` · Next handoff: [handoffs/11-prepare.md](handoffs/11-prepare.md)
 - Reserved final-ID ranges: LIT-482–561 (80); no PD-T, PD-N or IDEA range. See [ALLOCATIONS.md](ALLOCATIONS.md).
 - Claims: none (literature topic). Note: [SINUM 2026 assessment](notes/faghih-sinum-2026-assessment.md).
 - Open for AC: the remaining PDFs in DOWNLOADS.md v5 (A9 print-only, interlibrary loan; A10, A15, A19 low priority).
@@ -141,3 +141,11 @@
 - No verdict, PD status, IDEA, final ID or registry change. F1–F6 corrections and developer-only verification qualifications unchanged.
 - Old-block checker rerun at main aff30e8: 60/60, 0 missing.
 - [Handoff 09](handoffs/09-response.md) done in afd765e; [handoff 10](handoffs/10-audit.md) opened: short Codex gpt-6-astra high check of F7. Stage → AUDIT.
+
+## 2026-11-05 — Codex — audit 03 (handoff 10)
+
+- Rules read at `3ed6c94246f21353350f82712b6628b39db6f65a`, unchanged; requested gpt-6-astra high, serving identity/effective effort unexposed. Independent auditor/orchestrator. Input response `afd765e91d9cfee580f2945d43821b714d983b00`.
+- [audit-03.md](audit-03.md): F7 ACCEPTED. Three bounded sentences and kept-copy dispositions checked against the exact five-file response patch; publication adds only handoff closure/history/new handoff. No surviving operative universal-absence inference found in the scoped copy search. No scientific verdict/status/ID changes.
+- No new source search, numerical run or checker rerun: the change is wording only, and audit02's independent checks/limits remain intact. Pinned input receipt: check/audit-03-inputs.json.
+- Main refreshed to `330fab835f43e5ba5b24e320c2d7e9647e6cbd60` (new MZ-cleanup registration; no rule/topic-file change). Merge and fresh reservation/dedup refresh belong to preparation; no allocation/readiness declared by this check.
+- Stage→PR, preparation pending and PR remains draft. Corrected the stale working LOG pointer. [Handoff11](handoffs/11-prepare.md): Claude audited PR preparation. Only AC merges.
