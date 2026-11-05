@@ -9,3 +9,9 @@ Independent checker reruns the documented E1 scalar regeneration (or supported s
 ## G1–G4
 
 Not run. Growth-fit specification, L2 formalizations, L5 certificate specification and L7 suite preregistration must be recorded before their respective runs. G4 is separate from G0's single E6 case and must replay both PD-T146 rows.
+
+## 2026-11-05 — G0 verdict: FAIL / STOP
+
+[Independent report](independent-checks-g0.md): both documented degree-12 E1 witness regenerations, exact scalar certificate checks and E5 symbolic output PASS. The scalar checker did not freshly regenerate comparator uppers. E6 T24/n12 executes but differs from the frozen numerical row: dev gap 2.7558694937e-10 versus 2.4812027023e-10; alternating 1.3027152070e-12 versus 7.3010222490e-12. Input and producer/upstream pins match. Repeat processes and fresh package wheels reproduce current bytes; controlled BLAS kernels change values but do not reproduce the historical receipt. Historical runtime dispatch/library identities are missing. Checker conservatively leaves the discrepancy unexplained and applies the original stop rule. This is neither an algorithm refutation nor a status change to inherited mathematics. No criterion or tolerance is changed.
+
+New experiments and further campaign development stopped. G1/G2/G3/G4 NOT RUN. Worker preparation notes and [L7 preregistration](l7-preregistration.md) are preserved, not executed outcomes. Any unvalidated code remains preparation only. Resolve G0 before authorizing their execution.

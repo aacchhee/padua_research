@@ -1,0 +1,124 @@
+{
+  "source_commit": "8359bf7a047d9a212bd841224fb97a458cb7435e",
+  "scope": "Bounded G0 discrepancy diagnosis, not new target science",
+  "probes": [
+    {
+      "kind": "repeat",
+      "index": 0,
+      "exact_baseline_equal": true
+    },
+    {
+      "kind": "repeat",
+      "index": 1,
+      "exact_baseline_equal": true
+    },
+    {
+      "kind": "repeat",
+      "index": 2,
+      "exact_baseline_equal": true
+    },
+    {
+      "kind": "kernel",
+      "core": "Sandybridge",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/tmp/padua-lanczos-frontier-g0/validation/replay/tracks/bivariate-lanczos/code/drift/e6_benchmark.py",
+        "--external",
+        "/tmp/padua-lanczos-frontier-g0/polyrat",
+        "--sets",
+        "T24",
+        "--grid-degree",
+        "12",
+        "--output",
+        "/tmp/padua-lanczos-frontier-g0/validation/e6-Sandybridge.json"
+      ],
+      "pythonpath": "/tmp/padua-lanczos-frontier-g0/fresh-numeric:/tmp/padua-lanczos-frontier-g0/deps",
+      "exact_committed_case_equal": false,
+      "output_sha256": "75ab3067279a3f70ff4905c31e87208fa1da5272d0fa499fc4503d571f5d0526",
+      "gaps": {
+        "upstream_xy": 3.6865660962095507e-10,
+        "upstream_yx": 3.5634728373384624e-10,
+        "dev": 3.5634728373384624e-10,
+        "mirror": 1.482507014504967e-14,
+        "alt": 3.150881040006476e-12,
+        "adapt": 1.0687082588915775e-13
+      }
+    },
+    {
+      "kind": "kernel",
+      "core": "Nehalem",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/tmp/padua-lanczos-frontier-g0/validation/replay/tracks/bivariate-lanczos/code/drift/e6_benchmark.py",
+        "--external",
+        "/tmp/padua-lanczos-frontier-g0/polyrat",
+        "--sets",
+        "T24",
+        "--grid-degree",
+        "12",
+        "--output",
+        "/tmp/padua-lanczos-frontier-g0/validation/e6-Nehalem.json"
+      ],
+      "pythonpath": "/tmp/padua-lanczos-frontier-g0/fresh-numeric:/tmp/padua-lanczos-frontier-g0/deps",
+      "exact_committed_case_equal": false,
+      "output_sha256": "cba76d5744d32cd55ac7a52e728d159b170d4cc94accba8bc9dfe65c010ec6b5",
+      "gaps": {
+        "upstream_xy": 2.2543047511689457e-10,
+        "upstream_yx": 3.2401085783355763e-10,
+        "dev": 3.2401085783355763e-10,
+        "mirror": 2.462815786295884e-14,
+        "alt": 3.0245497546707835e-12,
+        "adapt": 7.432849533496004e-14
+      }
+    },
+    {
+      "kind": "kernel",
+      "core": "Prescott",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/tmp/padua-lanczos-frontier-g0/validation/replay/tracks/bivariate-lanczos/code/drift/e6_benchmark.py",
+        "--external",
+        "/tmp/padua-lanczos-frontier-g0/polyrat",
+        "--sets",
+        "T24",
+        "--grid-degree",
+        "12",
+        "--output",
+        "/tmp/padua-lanczos-frontier-g0/validation/e6-Prescott.json"
+      ],
+      "pythonpath": "/tmp/padua-lanczos-frontier-g0/fresh-numeric:/tmp/padua-lanczos-frontier-g0/deps",
+      "exact_committed_case_equal": false,
+      "output_sha256": "26cbda145407ea01a57c383d954d43b86b6dbc716617beeee268d79d5a989a34",
+      "gaps": {
+        "upstream_xy": 4.5659402263544126e-10,
+        "upstream_yx": 2.789155998299593e-10,
+        "dev": 2.789155998299593e-10,
+        "mirror": 1.525851928230323e-14,
+        "alt": 4.741952175194923e-12,
+        "adapt": 7.317972430600246e-14
+      }
+    },
+    {
+      "kind": "fresh_wheels",
+      "pythonpath": "/tmp/padua-lanczos-frontier-g0/fresh-numeric:/tmp/padua-lanczos-frontier-g0/deps",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/tmp/padua-lanczos-frontier-g0/validation/replay/tracks/bivariate-lanczos/code/drift/e6_benchmark.py",
+        "--external",
+        "/tmp/padua-lanczos-frontier-g0/polyrat",
+        "--sets",
+        "T24",
+        "--grid-degree",
+        "12",
+        "--output",
+        "/tmp/padua-lanczos-frontier-g0/validation/e6-fresh.json"
+      ],
+      "output_sha256": "47215d4cc60807445fa5b31d4acb00ac89f2065b8353a1a18218f4bd14f260f6",
+      "exact_baseline_equal": true
+    }
+  ]
+}

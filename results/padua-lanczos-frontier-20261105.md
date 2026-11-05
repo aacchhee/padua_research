@@ -1,21 +1,10 @@
-# padua-lanczos-frontier-20261105 — bivariate Lanczos / V+A round 2
+# padua-lanczos-frontier-20261105 — G0 checkpoint
 
-This file is written only by the topic orchestrator. Branch `codex/padua-lanczos-frontier-20261105`; no PR yet.
+Branch `codex/padua-lanczos-frontier-20261105`; [draft PR24](https://github.com/aacchhee/padua_research/pull/24). Stage WORK, blocked by the original replay gate.
 
-## Status (2026-11-05): WORK, topic set up
+- Independent E1 degree-12 witness regenerations and exact scalar certificate checks PASS; E5 symbolic output matches exactly.
+- G0 FAIL: E6 T24/n12 floating-point gaps differ from historical values despite matching code/input/package pins. BLAS-kernel dependence is established, but the historical cause is unresolved. See [independent record](../topics/padua-lanczos-frontier-20261105/independent-checks-g0.md). No inherited theorem is refuted.
+- G1–G4 and new L1–L7 experiments were not run. Preparatory candidates, unverified analytic drafts and L7 preregistration are retained; all research targets remain OPEN. No new theorem, final ID or fitting conclusion.
+- [Report](../topics/padua-lanczos-frontier-20261105/report.md), [gates](../topics/padua-lanczos-frontier-20261105/gates.md), [plan](../topics/padua-lanczos-frontier-20261105/plan.md).
 
-Targets are specified in [handoff 01](../topics/padua-lanczos-frontier-20261105/handoffs/01-work.md). All of them were left OPEN by PR #15:
-
-- **L1:** an all-degree span-drift theorem on an explicit non-product family (E2).
-- **L2:** PD-T055, made well-posed and then settled.
-- **L3:** an unconditional selection principle, building on PD-T142/143.
-- **L4:** the factor-ten conjunct of PD-T140 on rotQ24.
-- **L5:** PD-T075(U2), the uniform Padua obstruction radius.
-- **L6:** PD-T056 reading (G).
-- **L7:** a measured V+A study across codes on natural fitting problems.
-
-No results yet.
-
-## Next step
-
-`Codex (gpt-6.1-sol xhigh): Continue codex/padua-lanczos-frontier-20261105.`
+Next: diagnose and disposition G0 before resuming the scientific work; Claude audit remains pending.
