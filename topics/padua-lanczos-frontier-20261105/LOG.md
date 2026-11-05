@@ -1,10 +1,10 @@
 # Bivariate Lanczos / V+A round 2 (E2, PD-T055, selection, PD-T140 rotQ24, PD-T075(U2), PD-T056(G), V+A study): log
 
 - Branch: `codex/padua-lanczos-frontier-20261105` · Base: main `330fab835f43e5ba5b24e320c2d7e9647e6cbd60` (merged as7f50cae; prior result inputs remain pinned) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: PR (audited preparation) after Claude [audit-02](audit-02.md) accepted response-01 with minor findings R2-1–R2-8; AC decision on A-P1 PENDING. Next: `Codex (gpt-6.1-sol high): Continue codex/padua-lanczos-frontier-20261105.` · Open handoff: [handoffs/09-pr-prep.md](handoffs/09-pr-prep.md)
+- Stage: PR (audited preparation) after Claude [audit-02](audit-02.md) accepted response-01 with minor findings R2-1–R2-8; **A-P1 accepted by AC 2026-11-05** (disclosed, not waived or cured). Next: `Codex (gpt-6.1-sol high): Continue codex/padua-lanczos-frontier-20261105.` · Open handoff: [handoffs/10-pr-prep.md](handoffs/10-pr-prep.md)
 - Permanent reservation: PD-T324–363, PD-N116–131, IDEA414–453, LIT582–593; first pushed40b3eb6, draft PR24. No final IDs assigned; recheck union before future assignment/readiness.
 - Checked provisional claims: L1-01 all-degree aggregate separation; L2-01 through L2-05 finite rule reduction, G2 certificates, weighted extension and all-degree W/R closure growth; L4a finite full-scalar factor-ten separation and L4-01 scoped fixed-old-lower envelope obstruction. All under their stated models. Claude audit-01 accepts the mathematics; its record/scope findings are under response.
-- Open for AC: A-P1 asks whether to accept the permanently disclosed pre-gate timing deviation after R1–R4 remediation; it is not waived or cured. Claude audit-01 independently bit-reproduces all12 historical own-method G0/G4 gaps under SkylakeX; historical Q bytes and upstream_xy rerun remain unavailable. Focused Claude re-audit follows this response. Compute remains sandbox-only.
+- AC decision recorded 2026-11-05: A-P1 pre-gate drafting deviation **accepted** ("I accept the deviation"); it remains permanently disclosed, not waived or cured. Remaining AC decision: merge, after audited preparation. Earlier wording of this line is preserved in the dated entries below.
 
 ## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
 
@@ -274,3 +274,9 @@ Read-only livePR21 metadata query confirms it remains unmerged/open, nowhead4a8a
 - Verdict [audit-02](audit-02.md): response ACCEPTED WITH MINOR FINDINGS. A-M1, A-M2, A-P1 R1–R4 (technically), A-m1–A-m8 and PROT-1 resolved. Fresh L7 triangle rerun under the new Haswell recipe reproduces 20 cells/6 directions byte-identically; compact G1 implication verified as an original-box certificate; n1 recipe rerun PASS. MINOR R2-1–R2-7 are record fixes for the start of PR preparation (including the wrong G5 receipt SHA: first preserved at `844e812`, not `b6bf1f6`).
 - R2-8 is a Claude audit-01 defect: `.gitignore` `*.log` kept 16 audit-01 logs out of Git; byte-identical copies preserved in `71131b2` under audit-02/preserved-audit-01-logs/ without editing audit-01.
 - AC decision on A-P1 remains PENDING; not inferred. Stage → PR. [Handoff09](handoffs/09-pr-prep.md) asks Codex for R2 fixes, main merge, reservation refresh, final IDs, literal registry application and integration checks, followed by a Claude preparation audit. Only AC merges.
+
+## 2026-11-05 — Claude, Opus 5.5 high (claude-opus-5-5) — AC decision on A-P1 recorded; handoff09 superseded
+
+- AC, in direct reply to the A-P1 question (response-01, PR24, audit-02): "I accept the deviation". The pre-gate drafting deviation is thereby **accepted by AC**. It stays permanently disclosed with all R1–R4 remediation and qualifiers; it is not waived and not cured. No status, claim or proof changes follow from the decision.
+- Handoff09 had not been started by Codex (branch head unchanged at `05bbe0669c76575934d19d868b7e9839fc307cf7`). Under the WORKFLOW redirection rule it is set `superseded by 10`, and [handoff10](handoffs/10-pr-prep.md) carries the same preparation instruction amended for the decision.
+- Also amended: main advanced to `b4d292e` with PR21 (literature campaign) merged. The P3 memo blob `4741c38943f37ae05ba525552ceafc3f32ac5537` is unchanged at `topics/padua-literature-20261103/p3-comparison.md`, so the "PR21 (unmerged)" attribution wording must be updated after the main merge. The literal OLD registry blocks must be rechecked against the new main. The Claude preparation audit becomes handoff11.

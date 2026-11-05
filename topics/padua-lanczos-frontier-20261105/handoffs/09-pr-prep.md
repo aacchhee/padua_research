@@ -1,6 +1,6 @@
 # Handoff 09 — padua-lanczos-frontier-20261105 — audited PR preparation
 
-- Status: open
+- Status: superseded by 10: AC accepted the A-P1 deviation on 2026-11-05 and PR21 merged into main before this handoff was worked
 - Previous handoff: [08-reaudit.md](08-reaudit.md)
 
 - Next agent / model / effort: Codex. Orchestration and the R2 wording fixes run on gpt-6.1-sol **high**. Mechanical registry application, ID assignment, crosswalk, ledger and inventory work run on gpt-6.1-sol **medium**. A supplementary gpt-6-astra check is allowed, but it does not replace the Claude preparation audit below.
