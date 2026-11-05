@@ -213,3 +213,169 @@ states this limitation. Later Claude audit, temporary-artifact retention and
 missing external-code/fulltext coverage remain open. No universal conclusion,
 new negative mechanism, mathematical status upgrade or external archival
 delivery is supplied by this PASS.
+
+## Additional root allocation: L6 necessary-condition review
+
+After the initial routine three-route scope, root separately assigned the
+newly completed L6 necessary-condition theorem and scoped negative consequence.
+This mathematical/negative scope requires the full registry read: completed
+all974 lines of current `state/IDEAS.md`, including all obstruction and
+disposition tables. One combined middle display truncated; reread491–735
+in three bounded views, so no unseen truncated text is credited. Also read
+the entire new ideas-l6-continuation and saved attempts/L6, full PD-T060,
+PD-T145 and PD-T056, the full original L3 candidate file, and the complete
+IDEA-258/262 records with their gate/history context. These fresh reads replace
+any inference of inherited approval for L6. No external theorem, novelty,
+priority or fulltext clearance is asserted. The earlier draft's incomplete
+prospective gate remains disclosed; this review does not retroactively cure it.
+
+**Analytic PASS** for `theory/l6-01-full-square-residual-bound.md`, SHA256
+`d90d7e9fb15506202bf26c426ed0e574214f090bb8cf2065ba9ba6693ee82149`,
+and its separate `theory/l6-N01-complete-residual-realization-obstruction.md`,
+initial SHA256
+`ec5ab9b7cba2bc501a5e0b92485f0919d233e4d5e0f81e38398813b02be2f17b`.
+No scientific/symbolic script or numerical experiment was run for this
+analytic reconstruction. The written elementary route fits the high
+allocation; no structural/adversarial xhigh escalation was needed.
+
+Independent reconstruction:
+
+1. The two opposite split atoms contribute t²/3=e to exactly x²,xy,y²
+   through total degree three; odd-degree terms cancel. This produces the
+   displayed M,Cx,Cy directly from the measure. Positive leading minors
+   justify Cholesky. With M=R^T R and A=M^-1 Cx, the orthonormal section is
+   R A R^-1=R^-T Cx R^-1, in the stated common positive-leading gauge.
+2. Multiplication by the displayed inverse M yields A,B as written.
+   The commutator entry is a(d-f)+b(d-c): its numerator simplifies to
+   81e²(1+2e)-3e(1+6e)(1+9e)=3e(12e-1). On0<e<=1/300 its magnitude is at
+   least7200e/2809. Entrywise magnitude bounds the spectral norm.
+3. Trace M<2 and det M>=1/27 give lambda_min>=1/108 and
+   kappa(R)<=sqrt216<15. Therefore the orthonormal-section commutator norm
+   exceeds480e/2809>e/6. Weighted evaluation on the four atoms, normalized
+   by R^-1, is an isometry, and all coordinates have absolute value<=1;
+   compression thus gives both section norm bounds. This is separate from
+   claiming the sections commute, which they do not.
+4. Expanding (XY-YX)Q with BOTH complete residual relations gives exactly
+   Q[Hx,Hy]=-Fx Hy+Fy Hx-X Fy+Y Fx. No symmetry or orthogonality of Q is
+   silently used. Norm-at-most-one bounds and invertibility give
+   ||Fx||+||Fy||>=e sigma_min(Q)/12. The individual c u ||Q|| budgets yield
+   e<=24 c u kappa(Q); the Gram hypothesis gives kappa(Q)<=sqrt3.
+5. The separate negative statement follows because fixed c bounds e/u by
+   24sqrt3 c along every putative sequence. It rejects only that explicit
+   conjunction of exact family match, complete residuals and near orthogonality.
+   It supplies no actual IEEE trajectory, no omitted-Y bound, no nearby
+   positive model and no universal obstruction to PD-T056(G). G remains OPEN,
+   not PARTIAL. IDEA-262's broader deferred realization is not rejected.
+
+A nonblocking wording clarification was sent to the developer: replace
+"every listed hypothesis is essential" with wording requiring those hypotheses
+for the stated scope, avoiding an unproved claim that each constant/condition
+is irreducible. This does not affect any inequality or sequence conclusion.
+
+## n4 lower theorem integration consistency
+
+Read complete `theory/l5-03-n4-lower.md`. Its claim delta_obs(4)>=1/2048
+follows from the accepted L5a whole-ball implication and the separately
+executed distinct exact-check premises, and it is correctly split from any
+upper search or trend. The named P4 lower polynomial is not used to infer an
+optimal-radius upper. Full jet rank/kernel checks are supporting setup and
+not substituted for Taylor positivity. Largest passing dyadic Taylor radius
+is explicitly distinguished from maximal positivity radius. The computer-
+assisted PROVED status has the required finite reduction, exact code/data and
+distinct execution record; later Claude audit and trusted implementation
+dependencies remain explicit. This is integration/proof-scope review, not an
+additional n4 execution by this reviewer. No new G3 bracket or U2 conclusion.
+
+## G1 explicitly new resource allocation
+
+Root subsequently assigned review of the separately dated
+`g1-extended-pilot.md`, SHA256
+`d3fe7dfd70e110a1382577d3391d88b14a3ba56a86c74260daaf24650ffffbc8`,
+and full `code/g1_extended_pilot.py`, SHA256
+`45656c2825aa8a0782cbcf1545bbd84dcb0422e9a60d50315916d62672c60b2f`.
+**Scoped PASS for this prospective resource-only successor.** The original
+<=60s prerequisite failed at72.526631s and is not reclassified as passed.
+The old engine main guard remains unchanged, and no producer20 occurred
+under that old conditional allocation. Root now explicitly allocates one
+first-time BJ20 execution with the frozen49b45df9 engine under the original
+1800s ceiling. This is a disclosed new scheduling decision, not a scientific
+threshold change or an erased failed trial.
+
+The wrapper verifies exact source/input hashes, same-source completed14
+controls/all13 old rows, old88 overlap, old sweep and native comparator.
+It calls the unchanged numerical `run` routine, retains all625nodes and
+all230sources, requires all19 exact rational endpoints/choices/ties, and
+records failures/caps without completing missing-source rows. The separate
+1800s subprocess timeout enforces a hard ceiling in addition to1795s signal
+handling. The approximately1030s estimate from the native14-to20 ratio is
+correctly labeled uncertain planning, not a cost theorem. Distinct technical
+prelaunch and completed-output checking remain assigned to g1_check; this
+review executes no G1 code and accepts no new row. Witness agreement is
+explicitly outside the native-comparison scope. No other20 case, retry,
+fit before152 rows or asymptotic/scientific verdict is authorized by the plan.
+
+## L6 wording and prospective contract impact
+
+Developer adopted the nonblocking wording clarification in l6-N01. Reviewed
+updated SHA256
+`ea73e94c0def8117e8095be6a1b07d8069d70665b4c42fc935176cf00b18866f`:
+"All listed hypotheses are required for this stated scope" preserves the
+accepted mathematical statement without an irreducibility assertion. The
+initial theorem hash remains d90d7e9f above; its analytic PASS is unchanged.
+
+Read complete prospective `theory/l6-02-actual-n1-implementation-contract.md`,
+SHA256 `e2d5e70ec1f6aab7f5748e388001d882f6aeb6eb163f3a4dd35ceb314ae4ffdb`.
+**PASS as an unexecuted specification**, not an implemented algorithm or a
+mathematical claim about its eventual output. The mirror basis order(1,y,x),
+Y injection, X full products, scalar RN/DOT/CGS2 operation order and exact
+stored-byte interpretation are all explicit. Its two pass coefficients are
+retained rather than silently replaced by fresh projections. Saturation at
+three vectors and the14 raw coefficient slots are consistent.
+
+The specified exact completion satisfies
+Hy Hx e0=h0*j0+h1*j1+beta2*j2=Hx*j0=Hx Hy e0, so it gives precisely the
+first-column commutator identity. It supplies neither symmetry/positive-moment
+consistency nor a small omitted Y residual. Those obligations are separately
+and correctly required, together with full Q conditioning and residual norms.
+The frozen64u diagnostic budget is a future finite test, not an existing O(u)
+theorem. Raw data, an optional certified correction, exact matching and
+approximate matching remain distinct. Correction-to-moment conversion must
+be certified and included in the total allowance; no post hoc favorable
+correction can assert robustness over all corrections.
+
+For an exactly matched PD-T145 reference and fit allowance e/6, its lower
+radius is indeed sqrt(e/6). Correction-inclusive or approximate-family
+statements need their enlarged total gamma budget, as the contract states;
+the exact-match residual barrier cannot be silently transferred. Failed
+consistency, radius-zero non-discrimination, capped search and an unavailable
+positive certificate have distinct retained outcomes. No implementation,
+output words, exact trace, norm enclosure or nearby measure was produced or
+checked here; these remain Runs needed. PD-T056(G) stays OPEN.
+
+## New allocation: prospective actual-n1 independent trace check
+
+After the preceding analytic boundary, root allocated a bounded actual n1
+producer task to a distinct technical agent and assigned this reviewer
+`code/l6_n1_independent.py` and `evidence/l6-n1-independent.json`. The accepted
+contract's final metadata hash is
+`9d857e30146be3e2f8963f20cf89a4441fa72b1b542a5dcb79245384198e3a35`;
+its operations and thresholds remain those reviewed above. Final theorem
+metadata hashes are77ce40a9 (l6-01) anddd2c218a (l6-N01); these report the
+completed review, with no new mathematical claim or execution inferred.
+
+Before any producer scientific execution, review its pinned source and
+byte-level arithmetic interpreter against the literal contract. Independently
+implement binary64 round-to-nearest/ties-even from exact rationals and
+integer IEEE encodings; for square roots compare rational midpoint squares.
+Generate the complete prescribed scalar operation trace independently and
+compare every operand/result word, including signed zero. Do not import
+producer arithmetic or reconstruction helpers. Rebuild raw coefficient
+data, exact C1 completion, full residuals and Q Gram from the independently
+generated words. Independently establish rational norm enclosures and test
+the frozen64u budgets/Gram condition. Inspect all required necessary exact
+consistency conditions; any exact symmetry failure stops the raw branch as
+INCONSISTENT. No correction search, positive-model search, larger n or
+general Greenbaum conclusion is authorized. Each execution is capped at60s
+and512MiB. The finite measured/exact-instance outcome needs this actual
+distinct execution before acceptance. At this registration all L6 scientific
+executions remain NOT RUN.
