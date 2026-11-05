@@ -76,3 +76,9 @@ New (proposed):
 - Record G4 additive explanation resolution separately from the historical PD-T146 measurements. No historic row is replaced, no actual arithmetic trajectory reconstructed, and no new natural-target result is inferred. G1 remains incomplete with measured implementation costs; fit specification is unexecuted preparation.
 
 - Add PD-T?lanczos-frontier-codex-L5b, PROVED finite computer-assisted `1/512 <= delta_obs(3) <= 1/2`, theory/l5-02-n3-bracket.md, split from the finite n3 part of G3, with full real coefficient class and full Euclidean node balls. U2 remains OPEN; no n4–8/trend or exact optimal value is claimed.
+
+## Handoff05 additions — unapplied
+
+- Add L5c PROVED finite lower delta_obs(4)>=1/2048, theory/l5-03-n4-lower.md; upper search inconclusive, no bracket/U2 upgrade.
+- Add provisional L7 MEASURED reference-conditioned natural fitting record, theory/l7-natural-suite-measurements.md,16/24 acceptedreferences,20/1280 resolved-loss cells, six paired-seed advantages, severe replay retained and no causal/universal claim.
+- Add L6-01 PROVED complete-square residual theorem and separate PD-N L6-01 PROVED scoped unbounded e/u obstruction; preserve original G OPEN. Add L6-03 MEASURED frozen actual n1 execution and PD-N L6-02 PROVED exact unchanged14slot nonrealizability, with byte witness and distinct executed trace. No corrected/toleranced/G target rejection. All final-ID/shared registry changes wait audited preparation.

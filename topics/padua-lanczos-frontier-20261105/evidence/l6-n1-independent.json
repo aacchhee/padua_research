@@ -1,0 +1,120 @@
+{
+ "status": "PASS exact independent frozen n1 trace; raw branch INCONSISTENT",
+ "source": {
+  "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/l6_n1_independent.py",
+  "sha256": "269dfb1efe51edc5972509a600267991514c0cd7795881cf1a35a168894f2585",
+  "bytes": 16716
+ },
+ "command": [
+  "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+  "topics/padua-lanczos-frontier-20261105/code/l6_n1_independent.py",
+  "--producer-root",
+  "/tmp/padua-lanczos-frontier-l6-n1/producer",
+  "--out",
+  "/tmp/padua-lanczos-frontier-l6-n1-independent/run",
+  "--receipt",
+  "topics/padua-lanczos-frontier-20261105/evidence/l6-n1-independent.json"
+ ],
+ "inputs": [
+  {
+   "path": "/tmp/padua-lanczos-frontier-l6-n1/producer/receipt.json",
+   "sha256": "7c5ea62e8639a7bd0c5bb2743eb77697a0f99d56142cbca24d445d76e56b316f",
+   "bytes": 8101
+  },
+  {
+   "path": "/tmp/padua-lanczos-frontier-l6-n1/producer/analysis.json",
+   "sha256": "d34f67ec26873e04914ccc640554330f842fe2ad8717b995a0f5b65365c19aeb",
+   "bytes": 6367
+  },
+  {
+   "path": "/tmp/padua-lanczos-frontier-l6-n1/producer/trace-packed.json",
+   "sha256": "81928b468a0b8a65483a438f2aec83e60c38993826b0bcac892932d06ca83b8e",
+   "bytes": 10383
+  }
+ ],
+ "python": "3.12.14",
+ "trace_operations": 367,
+ "producer_source_sha256": "d001e22e4ed8713721c6af429d5089d6c462afef60f9835e3802f79f03738be5",
+ "contract_sha256": "9d857e30146be3e2f8963f20cf89a4441fa72b1b542a5dcb79245384198e3a35",
+ "detail": {
+  "path": "/tmp/padua-lanczos-frontier-l6-n1-independent/run/independent-analysis.json",
+  "sha256": "f0a192202320113e25fcca9ca76fe830b94ec5af82c92f5b48981e866575bf0e",
+  "bytes": 6263
+ },
+ "trace": {
+  "path": "/tmp/padua-lanczos-frontier-l6-n1-independent/run/independent-trace.json",
+  "sha256": "b7a68f208671a1b14ad0a54d4d2a4e8012fe7e9e90870aa03a6bfa17cb572209",
+  "bytes": 24537
+ },
+ "elapsed_seconds": 0.12364389399954234,
+ "peak_rss_KiB": 13568,
+ "exact_primitive_controls": "ties-even normal/subnormal and signed-zero add/sub/mul/sqrt pass",
+ "all_operation_operand_result_words_match": true,
+ "exact_C1_and_full_residuals_match": true,
+ "producer_norm_enclosures_validated": true,
+ "independent_norm_method": "Exact Gram max-row bound; residual column lower/Frobenius upper; rational dyadic sqrt enclosures",
+ "independent_norm_bounds": {
+  "gram_norm": [
+   "44812743482091139/162259276829213363391578010288128",
+   "1637279924420295164873436906688679/5846006549323611672814739330865132078623730171904"
+  ],
+  "Q_norm": [
+   "730750818665451356771847140089686540396420277869/730750818665451459101842416358141509827966271488",
+   "182687704666362890357959423156645537394008403489/182687704666362864775460604089535377456991567872"
+  ],
+  "sigma_min_Q": [
+   "730750818665451356771847140089686540396420277869/730750818665451459101842416358141509827966271488",
+   "182687704666362890357959423156645537394008403489/182687704666362864775460604089535377456991567872"
+  ],
+  "Fx_norm": [
+   "79089172880336764881946319872833/1461501637330902918203684832716283019655932542976",
+   "11678373776547795062993465164905/182687704666362864775460604089535377456991567872"
+  ],
+  "Fy_norm": [
+   "134942721747724987963859648989977/1461501637330902918203684832716283019655932542976",
+   "21663631121709795935538932857385/182687704666362864775460604089535377456991567872"
+  ]
+ },
+ "Gram_loss_le_half": true,
+ "full_residual_64u_budget_pass": true,
+ "necessary_symmetry_failures": [
+  {
+   "matrix": "Hx",
+   "row": 0,
+   "col": 1,
+   "value": "1/36028797018963968"
+  },
+  {
+   "matrix": "Hx",
+   "row": 0,
+   "col": 2,
+   "value": "-1/18014398509481984"
+  },
+  {
+   "matrix": "Hx",
+   "row": 1,
+   "col": 2,
+   "value": "1/18014398509481984"
+  },
+  {
+   "matrix": "Hy",
+   "row": 0,
+   "col": 1,
+   "value": "-1/18014398509481984"
+  },
+  {
+   "matrix": "Hy",
+   "row": 1,
+   "col": 2,
+   "value": "-458938539825448114955158381407295/4773244359603823366570065810181503616699540176896"
+  }
+ ],
+ "malformed_controls_rejected": [
+  "changed operation result word",
+  "omitted operation",
+  "changed exact C1 column",
+  "changed omitted Y residual",
+  "invalid zero residual norm upper"
+ ],
+ "limits": "One fixed binary64 n1 instance. Necessary exact symmetry fails, so no raw mass-one section functional/positive model is claimed. No correction branch, PD-T145 matching or general Greenbaum verdict."
+}

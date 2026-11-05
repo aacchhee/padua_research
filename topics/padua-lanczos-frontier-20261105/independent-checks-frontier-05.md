@@ -379,3 +379,227 @@ general Greenbaum conclusion is authorized. Each execution is capped at60s
 and512MiB. The finite measured/exact-instance outcome needs this actual
 distinct execution before acceptance. At this registration all L6 scientific
 executions remain NOT RUN.
+
+## L6 producer pre-execution source review
+
+Before the producer's first scientific invocation, read the complete
+`code/l6_n1_producer.py`, SHA256
+`d001e22e4ed8713721c6af429d5089d6c462afef60f9835e3802f79f03738be5`,
+and prospective `l6-n1-methods.md`, SHA256
+`46f9aca5340cd87d24ce1f76ea7a0c8f66b0b5bc9be86bd899c1bdcf292f34c7`.
+The literal scalar construction, two-pass same-vector dot products, row
+subtraction order, startup, normalization, fourteen raw slots and saturation
+match the accepted contract. Every host primitive has a separately evaluated
+exact rational target; midpoint checks use adjacent binary64 words and their
+least significand bit for ties. Sqrt uses the squares of nonnegative rational
+midpoints, including the zero-boundary case; signed-zero logic is explicit.
+No BLAS, reassociation or unrecorded fused arithmetic enters the constructor.
+
+The exact C1 completion, full Fx/Fy (including the omitted Y column), exact
+determinant/Gram and conservative norm enclosures implement the contract.
+Frobenius upper bounds are not mislabeled as exact spectral norms. Source
+review found one prelaunch provenance gap: the receipt was written only at
+exit. The producer supplied a separate on-disk start-provenance.json with
+source/plan/contract pins, argv, caps and environment BEFORE invoking the
+unchanged source. This satisfies the conditional source-review PASS. The
+recorded actual head was60126006dcc7c814680ed87d4fef8d9f9404a3d7; rules remain
+the unchanged9825d184 instructions. The source's caught-exception process
+exit0 is not an acceptance criterion; the scientific receipt status governs.
+
+## L6 actual distinct exact trace execution
+
+**PASS for the frozen finite trace and its raw inconsistency outcome.**
+Executed own `code/l6_n1_independent.py` with exact integer IEEE encodings and
+rational arithmetic; no producer helper was imported. The interpreter searches
+adjacent representable encodings using exact comparisons and independently
+rounds each rational target or square root using rational midpoint squares.
+It reproduces the literal contract program flow from the constants rather
+than validating producer outputs only against producer-supplied operands.
+
+Actual command from repository root:
+
+```sh
+timeout 60s python -B topics/padua-lanczos-frontier-20261105/code/l6_n1_independent.py --producer-root /tmp/padua-lanczos-frontier-l6-n1/producer --out /tmp/padua-lanczos-frontier-l6-n1-independent/run --receipt topics/padua-lanczos-frontier-20261105/evidence/l6-n1-independent.json
+```
+
+Exit0, internal elapsed0.123643894seconds, Python3.12.14. Internal55s alarm
+and512MiB address-space cap were set before reconstruction, with external60s
+timeout. Exact source/input/contract hashes and caps were written before the
+independent scientific check. Receipt `evidence/l6-n1-independent.json` is
+4377bytes; raw independent analysis and trace, start provenance and logs are
+under `/tmp/padua-lanczos-frontier-l6-n1-independent`. No external archival
+delivery is claimed. Both stderr logs were empty at the completed checks.
+
+All367 ordered primitive operand/result words and all47 named stored states
+agree exactly, including signed-zero bits. Independent normal/subnormal
+ties-even and signed-zero primitive controls pass. Reconstructed Q, all14
+raw data slots, terminal vectors, rational C1 j2, completed Hy, Gram, nonzero
+detQ, every Fx/Fy entry and the omitted Y column agree exactly. Compressed
+trace decoding checks its original byte count and SHA256. The producer's
+primitive exact-target annotations and subnormal flags also match independently
+recomputed values.
+
+Independently verified every producer rational norm interval by squaring its
+endpoints against exact column/Frobenius sums and Gram-derived singular-value
+bounds. Independently generated, distinct conservative enclosures use Gram
+maximum absolute row sum, residual column lower/Frobenius upper bounds and
+160-bit fractional dyadic sqrt bounds. These prove Gram loss<=1/2 and both
+complete residual bounds<=64u||Q||, as well as invertibility. They are genuine
+rational certificates, not rounded SVD diagnostics or claims of sharp norms.
+
+Exact necessary symmetry nevertheless fails. The simplest witness is
+
+`Hx[0,1]-Hx[1,0]=1/36028797018963968=2^-55`.
+
+Four further nonzero witnesses (two more Hx and two Hy entries) are retained
+in the receipt. C1 enforces its promised first-column commutator identity;
+it cannot repair the already nonsymmetric raw Hx. Hence the raw branch is
+correctly **INCONSISTENT**, despite small complete residuals and Gram error.
+Exact orthonormal polynomial sections of a positive measure are symmetric
+because integral(x*p_i*p_j) is symmetric in i,j, so no measure reproduces
+these exact raw Hx slots in the fixed orthonormal gauge. This exact finite-data
+consequence must be separated from the measured host execution and from all
+toleranced/corrected-data questions. It does not refute general reading(G).
+
+Five distinct corrupted controls were actually rejected: changed primitive
+result word, omitted primitive, altered C1 entry, altered omitted-Y residual,
+and invalid zero residual-norm upper bound. The unmodified original was then
+checked again successfully. No corrected branch, moment reconstruction after
+the necessary-condition failure, PD-T145-family match, positive-model search
+or higher-degree execution occurred. The complete raw failure is a finished
+outcome of this frozen instance; broader L6/G remains OPEN.
+
+## G1 remaining native allocation: pre-execution review
+
+After the accepted BJ20 producer/native comparison and 128/152 total matched
+rows, root explicitly allocated the three remaining rotated mirror/alt/pivot20
+native cases, each capped at900seconds with at most2 concurrent workers.
+I read the complete prospective launcher
+`code/g1_batch_independent_remaining.py`, SHA256
+`11c5ce4e4f0888f76a7b826317920abc9725c55996711c28c02d9c93d2767fad`,
+the appended plan in `independent-checks-g1-05.md`, and its imported validation
+functions before launch. This is a separate resource allocation, preserving
+the original failed BJ14 timing guard and all scientific criteria.
+
+Scoped source-review PASS: native source, old input and accepted BJ20 receipt
+are hash-asserted; executable and launcher identities and per-case commands
+are written before execution; subprocess timeouts enforce the allocation;
+there is no automatic retry. Complete cases require all19 endpoint rows,
+all625 original nodes, all230 degree20 source columns, exact Gram checks,
+ordered degree prefixes and agreement with frozen old degrees2--12. Capped
+prefixes and interrupted trailing output remain raw and cannot be promoted
+to completed cases. New native outputs still require fresh producer comparison
+before upgrading the coverage claim to152/152.
+
+Two nonblocking provenance details were communicated: the validation dependency
+is hashed in the receipt rather than asserted to a fixed digest, and the
+hardcoded GMP package-version string should be supported by an actual package
+query in launch provenance or identified as a prior observation. I performed
+no scientific G1 execution in this review.
+
+The native checker subsequently ran an actual `dpkg-query` of libgmp-dev,
+libgmp10 and libgmpxx4ldbl: all returned `2:6.3.0+dfsg-3`. Its raw sidecar
+`/tmp/padua-lanczos-frontier-g1-native-remaining/run/gmp-package-observation.json`
+explicitly labels this as an observation during execution at17:23:40UTC,
+not prelaunch provenance. The launcher remained unchanged.
+
+## L6 finite statement integration review
+
+After the actual distinct execution above, I read both complete developer
+statements and verified their hashes:
+
+- `theory/l6-03-frozen-n1-output.md`, SHA256
+  `8707e96c6c1997ef862395affb778f766f376f9f3c8ac65ed06a9d95f7e2eb0a`;
+- `theory/l6-N02-frozen-n1-raw-data-nonrealizability.md`, SHA256
+  `8714cd12a6294517e8fd12bb52465928ce688b210694805527ca98d7e624432a`.
+
+PASS for the stated scope and status split. L6-03 remains MEASURED for the
+one host execution, with independently certified finite Gram/residual and
+trace diagnostics. L6-N02 has a PROVED exact finite-data implication:
+the certified stored words decode respectively to
+`-4246034448350515/2^54` and `-8492068896701031/2^55`, differing by `2^-55`.
+I decoded those words again in this document review. For any real functional
+on degree3 polynomials with positive-definite degree1 moment matrix, its
+orthonormal x-section entries must satisfy
+`L(x*p_i*p_j)=L(x*p_j*p_i)`. Thus these two unchanged entries already exclude
+an exact realization of all14 raw slots, irrespective of support or C1.
+The moment assumptions suffice because these products have degree at most3.
+
+The raw exact-match branch is therefore rejected for this frozen instance,
+while corrected/toleranced models and general PD-T056(G) remain OPEN. The
+finite residual certificates do not establish a uniform-in-precision theorem
+or negate a model that allows a specified correction. No additional scientific
+execution or new-mechanism analysis was needed for this integration review;
+the later required Claude audit remains separate and pending.
+
+Post-review metadata-only versions are L6-03 SHA256
+`43f0d18ab8d23b86e3f9f1bee4d84cdc3d8bf03a2c1c6425932c89a7e1cd8510`
+and L6-N02 SHA256
+`cbcd2f91622d18042a0c735b5aaaebbb48d560d59424f9afe799ce825f64094d`.
+I verified that removing only each new review-metadata paragraph exactly
+recovers its originally reviewed byte hash above; the scoped PASS is unchanged.
+
+## G3 n5 prospective field, source and resource review
+
+Root explicitly allocated one new bounded n5 pilot after assessing n4's542.209s
+cost, preserving the n4 upper caps and INCONCLUSIVE outcome. I read the complete
+prospective `g3-n5-methods.md`, SHA256
+`8e31431fd9721e39aa4fd97cdf112e96477d61402bbf4544b853164d748ce662`,
+and complete initial `code/g3_n5_producer.py`, SHA256
+`ed12cf77041c9340b1038836c2028f4e14f44dd2509a0be19b835ed18c1d4e56`,
+before any scientific invocation. I then reviewed the prelaunch cap corrections
+in source SHA256
+`1656c7225a5c297e08d095ad9a6bcd9b25d99cc303cc62fcaac73b57271b3c25`.
+
+Scoped mathematical/source PASS, conditional on root release and a separate
+persisted pre-start provenance record before invocation. This is routine
+implementation of the saved L5a finite certificate route and existing P_n,
+not a new mechanism, parity conjecture, asymptotic argument or priority claim.
+The previously reconstructed route/registry gate applies at that limited
+scope; a new full novelty gate is unnecessary. No higher-degree allocation
+or analytic approval is inferred from the n4 result.
+
+Independent reconstruction: Q(sqrt5,sqrt3) has basis(1,sqrt5,sqrt3,sqrt15).
+If sqrt3=a+b sqrt5 with rational a,b, squaring gives ab=0 and either a²=3
+or b²=3/5, both impossible rational squares. Thus exact four-coefficient
+equality and conjugate division are valid. In the positive embedding, for
+opposite-sign nonzero u,v the sign of u+v sqrt3 is
+sign(u)*sign(u²-3v²); the inner quadratic comparison is the corresponding
+rational-square rule. No floating ordering is used for acceptance.
+
+The six ordered X values are endpoints and all four U4 roots, and the seven
+ordered Y values endpoints and all five U5 roots. Exact recurrence identities,
+strict ordering and root counts identify the cosine grids. Even j+k selects
+21 distinct nodes. Complete degree<=11 contains78 monomials and imposes63
+value/first-derivative rows. Exact elimination, JB=0 and rankB=78-rankJ certify
+the full field kernel, without assuming a predicted dimension or generator
+equality. The accepted minor argument supplies the real kernel extension.
+
+The source constructs exactly
+`P5=9(g1²-g0*g2/2)+g2²-g1*g3`, with
+`g_m=T_(5-m)(x)*T_m(y)-T_m(x)*T_(6-m)(y)`.
+This matches the named existing certificate formula. It verifies nonzero
+degree<=11, every zero jet and positive Hessian, and all78 translated Taylor
+coefficients per node. For positive Hessian H, det(H)/trace(H) is a lower
+bound on its smallest eigenvalue; the complete coefficient-sum condition
+therefore proves nonnegativity on the entire closed Euclidean ball. Saved
+dyadic radii and the upper q2/4/8 proposal grids are unchanged. Upper acceptance
+requires full retained evaluation rank, strictly positive exact weights,
+exact balance in every full-kernel coordinate and exact in-ball offsets.
+Floating LP status alone establishes neither an endpoint nor infeasibility.
+
+I found an initial timing-control gap: the10s deadline was reset without
+being checked, and finished kernel/lower work could similarly reset an elapsed
+stage deadline. The final reviewed source adds checks after initial identities,
+after full kernel verification, during the lower-radius loop, before lower
+acceptance and after lower return, plus before accepting an upper certificate.
+The mathematical acceptance predicates and search grids did not change.
+
+The150s kernel,60s lower and210s per-grid deadlines are cooperative polling
+caps; a current operation may slightly overrun, which must be reported honestly.
+The external900s timeout is the hard overall bound, internal global deadline
+890s and address-space limit2GiB. Lower failure, cap or no accepted radius
+stops upper work. Partial/capped proposals remain incomplete, with no retry,
+extra radius/grid or n6+ execution. An actual distinct exact checker is still
+required for every accepted endpoint; this review itself executed no n5
+scientific calculation. U2 and the full n3--8 G3 decision remain OPEN.

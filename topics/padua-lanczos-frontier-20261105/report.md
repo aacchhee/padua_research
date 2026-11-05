@@ -36,6 +36,12 @@ The [L5 finite certificate reduction](theory/l5-01-finite-optimal-radius-certifi
 
 Both G4 high-degree rows ran and differed from historical span gaps. The [additive disposition](g4-disposition-04.md) resolves the discrepancy at the independently checked arithmetic-sensitivity scope, preserving the failed numeric screens and historical limitations. The [natural suite](theory/l7-natural-suite-measurements.md) now ran all eight domain/seed cases and passed distinct all-case checking plus a separate full triangle rerun. References accept16/24 degree cases;20/1280 accepted-reference method/target/distribution cells meet the saved loss rule, all on triangle24. Six paired-seed advantages occur for triangle24/tanh/boundary. Large recurrence replay defects are preserved, so this is measured end-to-end fitting behavior, not evidence isolating span error as the cause.
 
+## L6: complete residuals and one actual scalar output
+
+The [complete-square theorem](theory/l6-01-full-square-residual-bound.md) proves commutator>=e/6 and residualsum>=e sigma_min(Q)/12 for the exact PD-T145 family. The [separate scoped obstruction](theory/l6-N01-complete-residual-realization-obstruction.md) excludes unbounded e/u only under its complete, uniformly O(u), near-orthogonal square hypotheses.
+
+A [frozen actual n1 scalar run](theory/l6-03-frozen-n1-output.md) has now executed. A distinct integer-word checker reproduces all367 primitives and47 states, exact C1 completion, full residuals including omitted Y, Gram and conservative rational norm enclosures. The complete64u budgets pass, but the raw formed coefficients are exactly inconsistent: Hx[0,1]-Hx[1,0]=2^-55. The [finite nonrealizability record](theory/l6-N02-frozen-n1-raw-data-nonrealizability.md) proves only that these unchanged14 raw slots cannot be exact orthonormal sections of a positive measure in the fixed gauge. No correction, moment fit or nearby-model search occurred; general PD-T056(G) remains OPEN.
+
 ## G1: remaining comparator cases
 
 The exact fused producer and distinct native C++/GMP checker now match128/152 required rows: all76 T24 degree2–20 rows and52 rotated rows, including complete BJ2–20. The first fused BJ20 run completed821.603s under a separately documented1800s scheduling allocation; all19 rows agree exactly. All original nodes/sources/endpoints/choices/ties are retained. Previous scalar-native20 timeouts and all failed60s moderate-cost conditions remain recorded; no scientific criterion was changed.
@@ -80,7 +86,7 @@ Large exact arrays remain local and regenerable outside Git, with [manifest and 
 | [L3](attempts/L3.md) | Finite-error explicit-radius/tolerance/adaptive theorem PROVED; broader degree-uniform/efficient selection remains OPEN. |
 | [L4](attempts/L4.md) | PROVED finite formal comparison above. Actual IEEE activation, finite-u behavior and all-degree growth remain outside it. |
 | [L5](attempts/L5.md) | Finite n3 bracket and n4 lower PROVED computer-assisted; optimal n4 upper, n5–8/G3 trend and U2 remain OPEN. |
-| [L6](attempts/L6.md) | OPEN. Actual recurrence/moment consistency and complete omitted-operator residual control remain unresolved. |
+| [L6](attempts/L6.md) | Scoped complete-residual theorem PROVED; one actual n1 raw output is exactly inconsistent despite passing complete residual budgets. Corrected positive-model/general G remains OPEN. |
 | [L7](attempts/L7.md) | Frozen polyrat/own natural suite completed and independently checked, with16/24 accepted references. Findings remain MEASURED; missing external-code/literature tasks remain disclosed. |
 
 ## For the paper and protocol
