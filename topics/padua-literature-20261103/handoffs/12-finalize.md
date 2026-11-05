@@ -1,6 +1,6 @@
 # Handoff 12 — padua-literature-20261103 — Codex finalization at AC's instruction
 
-- Status: open
+- Status: done in e6badf788969a9204b2e81f0d3701e46802fdc5d
 - Previous handoff: 11-prepare.md (superseded: AC assigned Codex finalization)
 - Next agent / model / effort: Codex, gpt-6-astra high (AC's explicit request)
 - Role: topic orchestrator / mechanical PR preparation
