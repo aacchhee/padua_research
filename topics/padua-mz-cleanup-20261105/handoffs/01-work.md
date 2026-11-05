@@ -1,6 +1,6 @@
 # Handoff 01 — padua-mz-cleanup-20261105 — MZ cleanup: certified finite witness, odd m, growth constants, manuscript integration
 
-- Status: open
+- Status: done in 10898ad99882248e5e6f9d76641624146af97454
 - Previous handoff: none (new topic; the parent campaign is `topics/padua-mz-2d-frontier-20261105/`, merged as PR #23)
 
 - Next agent / model / effort: Codex. Mathematics: gpt-6.1-sol xhigh. Code, witness certification, scans and manuscript LaTeX: gpt-6.1-sol medium. Supplementary independent checks: gpt-6-astra high.
