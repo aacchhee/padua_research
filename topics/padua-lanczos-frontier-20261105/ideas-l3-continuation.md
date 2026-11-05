@@ -119,10 +119,38 @@ or radius bounds, and acceptance at a prescribed error size or score
 filters remain OPEN. No separate PD-N or independent L3b mechanism is
 invented.
 
-This completes the saved handoff01 finite-u item and gives an adaptive
-branch guarantee in the declared aggregate model. Broader L3 remains
-PARTIAL/OPEN, with scalar-CGS2/IEEE reduction, polynomial-score existence
+This proves a reformulation of the saved handoff01 finite-u item and gives
+an adaptive branch guarantee under the stronger per-column finite-error
+budget (1). Broader L3 remains **OPEN**, with L3-01 a PROVED supporting
+result; scalar-CGS2/IEEE reduction, polynomial-score existence
 and efficient online selection still absent. Required Claude audit and
 prospective-timing protocol disposition remain pending; no final ID,
 canonical registry change, primary-paper novelty or readiness claim is
 made. The historical unchecked draft and all earlier records are retained.
+
+## Audit response / History — 2026-11-05
+
+A-M1 / L3-1: original "PARTIAL/OPEN" and "completes the saved handoff01
+finite-u item" are superseded by **broader L3 OPEN** and **PROVED
+supporting finite-error reformulation L3-01** under stronger per-column
+budgets. Hres alone does not give a uniform radius/remainder. L3a's
+canonical candidate ID is IDEA?lanczos-frontier-codex-L3-01 (alias
+IDEA?lanczos-frontier-codex-L3a); L3b's is
+IDEA?lanczos-frontier-codex-L3-02 (alias
+IDEA?lanczos-frontier-codex-L3b). Both point to
+PD-T?lanczos-frontier-codex-L3-01, with L3b an elementary corollary.
+No final ID, new claim, explicit PARTIAL split or status upgrade.
+
+Both candidates and L3-01's constants were drafted before the mandatory
+gate and first committed at 0574c47. The later completed gate preceded
+the proof; it does not waive or cure the deviation. The constants survived
+unchanged according to the historical developer account; the unretained
+reviewed draft limits repository verification. AC decides acceptance;
+see [gate-timing-response-01.md](gate-timing-response-01.md).
+
+| Family NOTE | Disposition |
+|---|---|
+| L3-7 | Accept unretained-draft limit; the old "no formula changed" account is not independently byte-verifiable. Claude directly audited final d42f4e89... bytes. |
+| L3-8 | Accept; a monotonicity/lower-pivot-enclosure sentence now makes conservative acceptance explicit. |
+| L3-9 | Accept facts and permanent disclosure; acceptance is AC's decision, not cured by the later gate. |
+| L3-10 | Accept distinction: Astra was supplementary same-family review; Claude audit-01 supplied cross-family audit. |

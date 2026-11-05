@@ -1,6 +1,6 @@
-# PD-T?lanczos-frontier-codex-L5d — certified n5 lower obstruction radius
+# PD-T?lanczos-frontier-codex-L5-04 — certified n5 lower obstruction radius
 
-ID kind: PD-T. Aliases: P5 whole-ball Taylor certificate; n5 G3 lower endpoint.
+ID kind: PD-T. Aliases: PD-T?lanczos-frontier-codex-L5d; L5d; P5 whole-ball Taylor certificate; n5 G3 lower endpoint.
 Split from: finite n5 certificate task of L5/G3. Split into: none.
 
 ## Statement and model
@@ -50,3 +50,5 @@ Upper-search failures/caps remain INCONCLUSIVE. No n5 upper bound, n6–8 value,
 ## History and review
 
 2026-11-05: Codex root, requested gpt-6.1-sol xhigh, rules9825d184517db81d0aad8542fbd6639f2164b803. Root allocated one explicit n5 field/cost pilot after reviewing n4 costs; the field/source plan received independent mathematical review before science. This finite statement is written only after actual distinct lower/kernel checking and controls. Its PROVED lower status is separate from the completed, capped and inconclusive upper search and required later Claude audit.
+
+2026-11-05 audit-01 response, Codex statement/metadata worker; requested gpt-6.1-sol high; runtime variant/effort not independently exposed. Rules read at `7f50cae80f5372db7c278aef4ba4a0a05e1137ea`. L5-5: this saved dyadic lower endpoint is weaker than the reviewer bound `b_5=1.0225e-4` already cited in PD-T075 for the same polynomial and Taylor criterion; [audit-01/L5.md](../audit-01/L5.md) independently reproduced its scope. No new endpoint computation is claimed. Canonical ID is `PD-T?lanczos-frontier-codex-L5-04` (aliases old PD-T L5d, L5d). The audit reran the committed checker under both SymPy ground-types backends (flint and python); original receipts do not identify the developer's backend. Proof and certificate bytes are unchanged. The saved candidate draft first entered Git at `0574c47` before its prospective source gate was complete. Later completed reading does not cure or waive that deviation; acceptance remains AC's decision. The dated chronology and missing-read/gate checkpoints are in [gate-timing-response-01.md](../gate-timing-response-01.md). No novelty or priority claim is added.

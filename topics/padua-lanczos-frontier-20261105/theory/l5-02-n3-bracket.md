@@ -1,7 +1,7 @@
-# PD-T?lanczos-frontier-codex-L5b — A certified finite bracket for the optimal Padua degree-three obstruction radius
+# PD-T?lanczos-frontier-codex-L5-02 — A certified finite bracket for the optimal Padua degree-three obstruction radius
 
 ID kind: PD-T.
-Aliases: n3 G3 pilot; full-kernel positive-balance upper; pstar whole-ball Taylor lower; 1/512-to-1/2 bracket.
+Aliases: PD-T?lanczos-frontier-codex-L5b; L5b; n3 G3 pilot; full-kernel positive-balance upper; pstar whole-ball Taylor lower; 1/512-to-1/2 bracket.
 Split from: the finite-value task in L5/G3 for PD-T075(U2); U2 is not settled.
 Split into: none.
 
@@ -50,7 +50,7 @@ Candidate disposition: retained finite result of saved L5-01 and known Taylor lo
 
 ## Depends on
 
-[PD-T?lanczos-frontier-codex-L5a](l5-01-finite-optimal-radius-certificates.md), the accepted analytic finite-certificate reduction, current metadata/convention hash `6beeb3f07eaa7fd0e401f94257c3afa9902d556324dc7cb18bc234ebe2cdfde6`. Its original proof input and empty-set convention were independently accepted; the present Padua feasible set is nonempty by the lower certificate. PD-T075 fixes the optimal-radius definition; PD-N020 supplies only the historical baseline polynomial, whose actual coefficients/jets are freshly checked here. No assumed equality between the PD-T065 generator image and S1 is used.
+[PD-T?lanczos-frontier-codex-L5-01](l5-01-finite-optimal-radius-certificates.md), the accepted analytic finite-certificate reduction, historical audited metadata/convention hash `6beeb3f07eaa7fd0e401f94257c3afa9902d556324dc7cb18bc234ebe2cdfde6` (before the dated audit-response metadata update). Its original proof input and empty-set convention were independently accepted; the present Padua feasible set is nonempty by the lower certificate. PD-T075 fixes the optimal-radius definition; PD-N020 supplies only the historical baseline polynomial, whose actual coefficients/jets are freshly checked here. No assumed equality between the PD-T065 generator image and S1 is used.
 
 Trusted computational dependencies: Python3.12.14 exact integers/Fraction pairs for the producer; SymPy1.14.0 QQ(sqrt(2)) algebraic domain and DomainMatrix exact linear algebra for the independent checker; exact rational comparisons fixing the positive sqrt(2) embedding; standard JSON parsing, SHA256 and Git retrieval for input identity. The producer's NumPy2.3.5/SciPy1.17.0 HiGHS LP is a proposer only, excluded from mathematical acceptance. A fresh floating proposer need not reproduce the same weights or search trajectory to verify the fixed certificates.
 
@@ -116,3 +116,5 @@ n4--8 certified brackets and the saved G3 trend/otherwise decision, under a new 
 ## History
 
 2026-11-05: Codex mathematics developer `/root/l1_l2`, assigned gpt-6.1-sol xhigh; runtime metadata not independently exposed. Rules read atbb67c1ee830d468fa33007e15008d5574d00ccf4; concurrent integration head observed844e812f127d52cab789ff7fc740fd799d389034. This record was created only after root and the distinct checker reported actual PASS and the owner read both full implementations, exact certificates, receipts and finalized report. Producer `/root/g3_producer` and distinct checker `/root/g1_port` used the required medium allocation; their executions are attributed separately and are not this mathematics worker's reruns. No new scientific run, code edit, Git mutation, final ID or self-audit by this owner.
+
+2026-11-05 audit-01 response, Codex statement/metadata worker; requested gpt-6.1-sol high; runtime variant/effort not independently exposed. Rules read at `7f50cae80f5372db7c278aef4ba4a0a05e1137ea`. Canonical ID is `PD-T?lanczos-frontier-codex-L5-02` (aliases old PD-T L5b, L5b); its supporting reduction is L5-01. The distinct finite statement, endpoint data and proofs are unchanged. The audit independently reran the committed checker under both SymPy ground-types backends (flint and python), with matching mathematical fields; this reports [audit-01/L5.md](../audit-01/L5.md), not a new execution here. The saved candidate draft first entered Git at `0574c47` before its prospective source gate was complete. Later completed reading does not cure or waive that deviation; acceptance remains AC's decision. The dated chronology and missing-read/gate checkpoints are in [gate-timing-response-01.md](../gate-timing-response-01.md). No novelty or priority claim is added.

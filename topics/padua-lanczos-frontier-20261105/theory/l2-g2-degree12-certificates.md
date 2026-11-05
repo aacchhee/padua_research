@@ -147,3 +147,13 @@ regenerable outside Git; physical archival/delivery is root-owned.
   fixed data and receipts. No threshold, source law or class changed.
   Only after root accepted those passes was further weighted/all-degree
   L2 development authorized. No all-degree proof is claimed in this file.
+
+- 2026-11-05, audit response A-P1/R2: this result descends from W/R
+  definitions drafted before the mandatory reading gate, first committed
+  at `0574c47`. The completed-gate receipt was first preserved at `aab7bbe`
+  (`684849d` was the worker input/rules SHA); the later proof and G2
+  certificates followed the reported completed reading, and actual G2 acceptance preceded all-degree development.
+  Later reading does not waive or cure the deviation. AC decides its
+  acceptance; see [gate-timing-response-01.md](../gate-timing-response-01.md).
+  This additive metadata preserves the statement/proof and status; the
+  required focused Claude re-audit remains pending.

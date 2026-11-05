@@ -3,7 +3,7 @@
 ID kind: PD-N.
 Aliases: fixed-lower envelope obstruction; post hoc Rayleigh diagnostic.
 Split from: only the fixed-old-lower subroute of
-`IDEA?lanczos-frontier-codex-L4a`, after all nine original positive-vector
+`IDEA?lanczos-frontier-codex-L4-01` (alias L4a), after all nine original positive-vector
 upper tests failed. The scalar factor-ten target is independently proved
 by the stronger full-output lower in the separate L4 theorem; this
 fixed-old-lower obstruction remains valid.
@@ -80,7 +80,7 @@ No rejection of the original factor-ten target or of a new witness is implied.
 
 ## Negative-result scope
 
-Attempted mechanism: `IDEA?lanczos-frontier-codex-L4a`, restricted to
+Attempted mechanism: `IDEA?lanczos-frontier-codex-L4-01` (alias L4a), restricted to
 combining the unchanged old BJ lower G_R with any upper of the exact
 unprojected absolute envelope's spectral value lambda_max(C_alt).
 
@@ -188,8 +188,9 @@ This negative record excludes one exact certificate pairing, including
 untested positive vectors. It is stronger than saying that nine proposals
 failed, and narrower than saying the formal scalar model fails its
 factor-ten target. It imposes no ceiling on an improved BJ lower. The
-next authorized test retains the same frozen formal error vector but uses
-its complete output, as preregistered under L4b in `attempts/L4.md`.
+subsequent L4b test retained the same frozen formal error vector and used
+its complete output; its successful final outcome is recorded in
+`attempts/L4.md` and the separate positive L4 theorem.
 
 ## Open items
 
@@ -214,3 +215,5 @@ actual-rounding or all-degree conclusion follows.
   fixed-old-lower subroute as REJECTED:failed. The separate full-output
   lower succeeds on the original finite target; that result and the
   original experiment's INCONCLUSIVE verdict remain separate.
+
+- 2026-11-05 audit-01 response, Codex statement/metadata worker; requested gpt-6.1-sol high; runtime variant/effort not independently exposed. Rules read at `7f50cae80f5372db7c278aef4ba4a0a05e1137ea`. L4-4/L4-5: this negative is split from IDEA L4-01's fixed-old-lower candidate criterion only; it is not split from the successful positive theorem `PD-T?lanczos-frontier-codex-L4-01`. The later full-output test succeeded. The scope and proof are unchanged. The saved candidate draft first entered Git at `0574c47` before its prospective source gate was complete. Later completed reading does not cure or waive that deviation; acceptance remains AC's decision. The dated chronology and missing-read/gate checkpoints are in [gate-timing-response-01.md](../gate-timing-response-01.md). No novelty or priority claim is added.

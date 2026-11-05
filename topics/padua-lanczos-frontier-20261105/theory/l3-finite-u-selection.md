@@ -4,7 +4,15 @@ Provisional scoped ID; no final assignment. Codex, requested
 `gpt-6.1-sol` xhigh; rules read at
 `bb67c1ee830d468fa33007e15008d5574d00ccf4`.
 
-ID kind: PD-T. Split from: the finite-u item of L3 / PD-T143's open items.
+ID kind: PD-T.
+Aliases: PD-T?lanczos-frontier-codex-L3a; L3a explicit-radius majorant;
+L3b adaptive finite-union corollary; explicit finite-error selection bound.
+Split from: related reformulation of PD-T143's OPEN item "provide a
+finite-u transfer radius" and handoff01's possible shape "a finite-u
+radius for the first-order guarantee, with an explicit O(u²) remainder".
+This is a supporting result with changed source hypotheses, not a proved
+conjunct of the broader selection target.
+Split into: none; the adaptive corollary stays in this uniformly PROVED record.
 Polynomial score/radius bounds, acceptance at a prescribed error size or
 prescribed score filters uniformly in degree, and efficient online
 selection remain OPEN.
@@ -95,10 +103,19 @@ theta_s <= B_R(u)
 ```
 
 This is a uniform finite-error estimate, including an explicit quadratic
-remainder and explicit neighborhood, for the **stronger source model (1)**.
+remainder and explicit neighborhood, for the **per-column finite-error model (1)**.
 It does not assert uniformity over the merely first-order Hres families of
-PD-T143. The radius and constants can be very poor and are not bounded
-polynomially in degree here.
+PD-T143. Model (1) is a zeroth-order budget relative to each computed
+parent product and permits nonsmooth errors; Hres is an aggregate
+derivative budget on smooth families. Neither full class contains the
+other. Thus "stronger" means the finite-error control required for this
+reformulation, not set inclusion of all error families. Covering every
+Hres direction by prescribed per-column budgets forces
+`lambda_k v_k/beta_k^* >= C_loc sqrt(N-1) chi_R` for each k and hence
+`F >= C_loc (N-1) chi_R`, a factor `sqrt(N-1)` above Hres's aggregate
+coefficient. The smaller coefficient in the special case below covers
+that per-column model and is not a uniform transfer for all Hres directions.
+The radius limitation is quantified in the dated audit-response scope note below.
 
 For the special budget `lambda_k=C_loc`, PD-T143's exact local ratio
 `chi_R=max_k v_k/beta_k^*` gives
@@ -136,7 +153,11 @@ budgets, `u` and tolerance, all this is a finite computable criterion:
 one can compute the exact baseline and take, for example, the algebraic
 Frobenius upper `K=max_i||Lbar_R^*(i)^(-1)||_F`. Algebraic arithmetic and
 comparison then decide acceptance and fixed-tie minimization. Certified
-upper enclosures can instead give conservative acceptance. General real
+upper enclosures can instead give conservative acceptance: the majorants
+and B_R(u) are nondecreasing in their nonnegative inputs b, Delta, K, F
+and J while the denominators are positive; lower enclosures of positive
+exact pivots give upper majorants, and upper b,d give a conservative radius.
+General real
 inputs define a finite mathematical minimizer, without an asserted
 computation absent an appropriate comparison representation/oracle.
 
@@ -164,6 +185,36 @@ switches at an exact-data tie. No (C)-based implicit-section interpretation
 is inferred for its non-(C) branches. This corollary is a finite-union
 consequence, not a new online score or a frozen-branch differentiability
 argument.
+
+## Definitions
+
+The represented weighted coordinates, fixed admissible paths, exact
+baseline, computed projectors and source budgets are defined in Statement
+and model. Equations (2)–(5) define every majorant and the zero-denominator
+radius convention. All vector norms are Euclidean and matrix norms
+spectral except the explicitly specified Frobenius upper for K.
+
+## Assumptions
+
+Positive fixed normalized weights; evaluation injective on Pi_s, s>=1;
+fixed graded order and admissible immediate monomial parents; exact start,
+projection and normalization; finite nonnegative prescribed lambda_k;
+only sources satisfying (1) and 0<=u<=r_R. Adaptive policies must have
+every selected prefix extendible within the declared finite class.
+
+## Status by part
+
+Overall status: **PROVED, analytic**. The broader L3 target is **OPEN**.
+
+| Mathematical part | Status | Evidence / classification |
+|---|---|---|
+| Explicit finite-error nonbreakdown and bounds (6)–(7) | PROVED | Main analytic theorem; proof below |
+| Finite exact-data selection and tolerance (8) | PROVED | Corollaries of the same explicit bound |
+| Represented-algebraic decidability | PROVED | Finite algebraic construction and comparison |
+| Adaptive prefix completion and bound (9) | PROVED | Corollary; finite union with completion before division |
+
+Candidate disposition: retained quantitative variant, with adaptive
+corollary; no independent adaptive mechanism or new PD-N is introduced.
 
 ## Proof
 
@@ -292,7 +343,7 @@ realized path `Rhat` and apply the fixed-path bound. Taking finite maxima
 and then bounding each linear and quadratic coefficient separately proves
 (9). No limit, tie margin or smooth policy is used. ∎
 
-## Status, checks and boundaries
+## Checks
 
 Current status: **PROVED, analytic**, with distinct supplementary
 independent mathematical reconstruction accepted. The saved L3a formulas
@@ -313,12 +364,30 @@ distinguishing the proved finite-degree positive-radius acceptance from
 degree-uniform usefulness. That scope clarification and this status/check
 metadata leave the mathematical statement, constants and proof unchanged.
 
-Depends on: PD-T142's residual-to-span certificate; PD-T143 supplies the
+The uncommitted reviewed draft `cdcf...` cannot be reconstructed from
+repository bytes. Claims above or in historical records that formulas
+were unchanged describe the developer's account; they are not a
+repository-verifiable comparison. Claude audit-01/L3 directly audited
+the committed final input `d42f4e89795349c94e59209527e05f8b41039142bac4e78d8eed39e892768a96`
+and accepted its mathematics. No new scientific execution accompanies this response.
+
+## Depends on
+
+PD-T142's residual-to-span certificate; PD-T143 supplies the
 closest inverse-score criterion and its Hres quantifier limitation;
 PD-T054 supplies staircase/admissible-path context. PD-T046 explains why
 positive-pivot and local-product factors cannot simply be omitted. The
 source gate and prospective claim/kill/verification are in
 [ideas-l3-continuation.md](../ideas-l3-continuation.md).
+
+## Sources
+
+PD-T142/143 and PD-T054/046 are repository theory dependencies/context as
+specified above. The projector identity, normalization inequality,
+Neumann inversion and real-algebraic comparison are standard ingredients.
+No new primary literature was read or priority claim made in this response.
+
+## Scope
 
 The bound is for the specified aggregate full-projection implementation.
 An actual scalar or IEEE implementation needs its own finite-error
@@ -339,7 +408,46 @@ prospective-gate timing deviation is historical and is not cured by the
 completed reading before this continuation. Supporting this finite-error
 item does not upgrade L3's original broader safety target.
 
+### Dated radius limitation — 2026-11-05 (audit-01/L3, L3-4)
+
+The auditor derived `d>=sqrt(2)b`, so `1/(2b)` is redundant in (5).
+For lambda_1>0 the auditor also derived the universal ceiling
+`r_R<=5^(-(N-3)/2)/(4 sqrt(2) lambda_1)`; for lambda identically 1 this
+is below 2^-53 for every s>=9. These are attributed consequences of this
+frame-based majorant recorded by the independent audit, not a new
+theorem or an alteration of (2)–(9). They explain why this majorant cannot
+supply useful radii at higher degree. The original formula is retained,
+including its conventions when budgets vanish. No radius ceiling is
+asserted by division by lambda_1 when lambda_1=0.
+
+## Open items
+
+The broader unconditional selection target remains OPEN: useful
+degree-uniform radii and polynomial scores, prescribed-u/filter acceptance
+uniformly in degree, efficient online selection and an actual scalar/IEEE
+finite-error reduction. PD-T143's Hres alone cannot yield this model's
+uniform radius/remainder, because unconstrained second-order terms remain.
+Final IDs and registry application await focused Claude re-audit and
+PR preparation; AC's gate-timing decision remains open.
+
 ## History
+
+- 2026-11-05, response to A-M1 / L3-1: original attempt wording
+  "PARTIAL for the broader L3 target" and continuation wording
+  "PARTIAL/OPEN" are superseded by OPEN. L3-01 is a PROVED supporting
+  reformulation with a stronger per-column finite-error budget, not an
+  explicit decomposition of the original target. Original "completes the
+  handoff01 finite-u item" wording means only this reformulation; no
+  uniform Hres-only version is established. Proof and displayed (1)–(15)
+  are unchanged. Template, model-comparison and attributed audit-limit
+  metadata answer L3-2–5 and L3-8; no status upgrade.
+- 2026-11-05, A-P1/R2: L3a/L3b candidates and the constants (2)–(5)
+  were drafted before the mandatory reading gate and first committed at
+  `0574c47`. They survived unchanged according to the developer's
+  historical account; the unretained draft limits byte verification as
+  stated in Checks. Later completed gates preceded the proof and do not
+  waive or cure the deviation. Acceptance is AC's decision. See
+  [gate-timing-response-01.md](../gate-timing-response-01.md).
 
 - 2026-11-05, handoff01: unchecked formulas first saved in attempts/L3 and
   ideas-l3-l4 before G0 stopped campaign development; the incomplete gate

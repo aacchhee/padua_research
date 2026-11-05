@@ -35,3 +35,9 @@ HTML receipts retained outside Git at `/tmp/padua-lanczos-frontier-l7/zhu-gh*.ht
 ## Retention
 
 Small source-access metadata only in Git. External source and HTML downloads are regenerable by URLs, with byte sizes/hashes in evidence/l7-preparation.json; local artifacts are pending AC-selected long-term Padua archive delivery. No external-machine storage invented. Source retrieval itself is not an experiment or G4 replay.
+
+## 2026-11-05 — audit-response current execution/dependency addendum
+
+The earlier NOT_RUN/G0-stop paragraphs are dated preparation history. G4 later executed and its additive arithmetic-sensitivity explanation is RESOLVED; all8 L7 natural-suite cases subsequently executed with pinned polyrat and passed the documented distinct checks. See g4-disposition-04.md, l7-suite-methods.md and theory/l7-natural-suite-measurements.md. Claude audit-01 adds cross-kernel scope: Haswell reproduces20 loss cells/six within-group paired directions; default AVX-512 gives18/nine. Neither reading claims a platform-independent cell list.
+
+Dependency-name correction: the required distribution is `backports.cached-property==1.0.2`, imported as `backports.cached_property`, rather than a claim that an unrelated `cached-property` package supplies that namespace. Historical local path/package shorthand is preserved above. The actual polyrat source files and numeric versions remain pinned. BNT/Chebfun execution, identifiable Zhu–Nakatsukasa author-code execution and Franke primary-fulltext coverage remain NOT RUN; no new download or external-code execution occurred in this response. Future numerical receipts must name CPU ISA and the actual BLAS dispatch, and numerical regeneration pins `OPENBLAS_CORETYPE=Haswell` with single-thread settings.

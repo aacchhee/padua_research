@@ -66,11 +66,15 @@ supplementary mathematical check accepted; required Claude audit pending.
 
 ## Depends on
 
-- Checked L1a, `l1-01-sheared-U-aggregate-separation.md`, for the SH_n
+- Checked L1-01 (historical alias L1a), `l1-01-sheared-U-aggregate-separation.md`, for the SH_n
   positive normalized weights, injectivity through n+1, exact tensor basis
-  and creator identities. Its immutable reviewed proof hash is
-  `9f59217da265a433470bb6030074acf76e63e4ffb0a6590add800666a64de90d`;
-  its separate acceptance is recorded in `independent-checks-sh.md`.
+  and creator identities (PROVED elementary facts in proof sections 1–2
+  only). The committed theorem SHA-256 is
+  `f27a22c4c6f13d03710750f52eef4dc9bac31f27bd009beaa536866fbbe24d9f`.
+  Its seven-section digest and recipe, and the missing historical draft's
+  provenance limit, are in [l1-01-audit-response-20261105.md](l1-01-audit-response-20261105.md).
+  Claude audit-01/L1 directly re-verified those committed family facts;
+  neither L2-04 nor L2-05 uses the span-separation bound as a closure lower.
 - L2-01 and its separate positive-weight extension L2-03, for arbitrary
   saved-rule projector derivatives and the actual closure map.
 
@@ -180,3 +184,13 @@ earlier campaign timing deviation.
   complete initial draft, added verification metadata and clarified
   wording about the separate L1 review. Statement and proof are unchanged;
   required Claude audit and earlier protocol qualification remain pending.
+
+- 2026-11-05, audit response A-P1/R2: this result descends from W/R
+  definitions drafted before the mandatory reading gate, first committed
+  at `0574c47`. The completed-gate receipt was first preserved at `aab7bbe`
+  (`684849d` was the worker input/rules SHA); the later proof and G2
+  certificates followed the reported completed reading, and actual G2 acceptance preceded all-degree development.
+  Later reading does not waive or cure the deviation. AC decides its
+  acceptance; see [gate-timing-response-01.md](../gate-timing-response-01.md).
+  This additive metadata preserves the statement/proof and status; the
+  required focused Claude re-audit remains pending.

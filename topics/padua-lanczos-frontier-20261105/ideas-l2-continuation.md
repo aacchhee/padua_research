@@ -157,3 +157,21 @@ and there is no IEEE, high-probability, implicit-section or finite-u theorem.
 Required Claude audit and explicit disposition of the earlier timing
 deviation remain pending; no publication-priority claim or shared-state/
 Git mutation is made.
+
+## Audit response / History — 2026-11-05
+
+Current L2-01 pending prose is superseded by its separate
+[later-results companion](theory/l2-01-audit-response-20261105.md), so
+no checker-pinned input is changed. The model is formal first-order
+smooth exact-base aggregate, with no working-precision/IEEE claim.
+L2-04/05 depend only on L1-01's elementary family facts at committed
+f27a22c4... bytes, not the unavailable 9f59217... draft or a span lower.
+R's conversion to the intended spectral defect remains OPEN.
+
+Saved W/R/F definitions first entered Git at 0574c47 before completion
+of the mandatory reading gate. Gate completion preceded all proofs and
+certificates; later reading does not waive or cure the deviation. Each
+candidate retains that qualification, with AC deciding acceptance. See
+[gate-timing-response-01.md](gate-timing-response-01.md) and the original
+candidate ledger's per-IDEA qualifiers/closest-entry additions.
+The companion records all L2-5–9 NOTE dispositions without a new run.

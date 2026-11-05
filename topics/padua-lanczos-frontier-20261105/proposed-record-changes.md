@@ -1,5 +1,7 @@
 # Proposed shared-record changes — not applied
 
+**2026-11-05 response-01:** the complete current literal OLD→NEW replacement set is [registry-proposals-response-01.md](registry-proposals-response-01.md). It supersedes the incomplete historical blocks/lists preserved below. Read it with [gate timing](gate-timing-response-01.md), including the explicit AC decision. Apply nothing before focused re-audit, fresh reservation checks and final-ID assignment. No shared registry was edited.
+
 Original proposal source: main440d1079e42c3ef21c40d1cf8870f5b206410c6a. Current main21dbfc90257b952d8923f6d01739d12aa8d6e0a1 is merged; frozen Lanczos records are unchanged.
 These literal proposals are for later audited PR preparation only. Obtain the
 required Claude scientific/protocol audit, refresh all active/retired ID

@@ -191,7 +191,7 @@ receipt. It is temporary working evidence pending cold-storage delivery.
 Failure of these readouts would not upper-bound BJ capacity or kill the
 factor-ten target; it would only fail this specific stronger-readout test.
 
-The developer execution exited 0 in 217.23 seconds. Exact target-90
+The developer execution exited 0 in 217.2247 seconds. Exact target-90
 projection reproduced the old G_R, then the first preregistered quantization
 (1e6) gave exact rational Q with integer floor `2041704913997`.
 This exceeds the required strict threshold `1346295626600`; the conservative
@@ -214,3 +214,7 @@ can now reconstruct the frozen witness and evaluate this **fixed vector**
 exactly without rerunning the floating SVD proposal. The certificate's sign
 array hash uses compact UTF-8 JSON with no spaces or newline; its rational
 value hash uses the exact FLINT rational string without newline.
+
+## Audit-01 metadata addendum — 2026-11-05
+
+The full-output receipt records 217.2247 seconds; this exact printed duration harmonizes the methods, attempt and theory. Earlier same-producer regenerations are distinct re-executions of the pinned producer. The independent checker and Claude audit's separately implemented exact reconstruction are different checks; see [audit-01/L4.md](audit-01/L4.md). No producer, certificate, acceptance criterion or run was changed or repeated for this addendum.

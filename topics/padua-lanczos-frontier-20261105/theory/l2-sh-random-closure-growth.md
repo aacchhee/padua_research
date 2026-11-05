@@ -57,8 +57,13 @@ supplementary mathematical check accepted; required Claude audit pending.
 
 L2-03 for positive-weight rule invariance and the exact global sign
 covariance/trace reduction; L2-04 for its independently checkable exact
-closure action of source h=(n,0), equation(2). L1a supplies the checked
-family dimensions, orthogonality and source scale. No span lower is
+closure action of source h=(n,0), equation(2). L1-01 (historical alias
+L1a) supplies only the PROVED elementary family facts in proof sections
+1–2: dimensions, orthogonality and source scale, at committed SHA-256
+`f27a22c4c6f13d03710750f52eef4dc9bac31f27bd009beaa536866fbbe24d9f`.
+The section-digest recipe and historical input limit are in
+[l1-01-audit-response-20261105.md](l1-01-audit-response-20261105.md).
+No span lower is
 used as a closure lower. Actual G2 passes preceded this proof as the
 required protocol gate, without extrapolating a finite computation.
 
@@ -147,6 +152,11 @@ Independent mathematical reconstruction is accepted. Required Claude
 scientific/protocol review remains pending, with the earlier campaign
 timing deviation preserved.
 
+The preregistered conversion from this Frobenius expectation to the
+intended maximum spectral-defect statement remains OPEN. In particular,
+no high-probability or per-realization spectral lower follows without a
+separate argument; the present theorem does not supply that conversion.
+
 ## History
 
 - 2026-11-05: Codex, configured gpt-6.1-sol xhigh. Saved R target, full
@@ -158,3 +168,13 @@ timing deviation preserved.
 - 2026-11-05: Verification metadata updated after distinct reconstruction
   accepted the complete initial draft. Statement, law and proof are
   unchanged; required Claude audit remains pending.
+
+- 2026-11-05, audit response A-P1/R2: this result descends from W/R
+  definitions drafted before the mandatory reading gate, first committed
+  at `0574c47`. The completed-gate receipt was first preserved at `aab7bbe`
+  (`684849d` was the worker input/rules SHA); the later proof and G2
+  certificates followed the reported completed reading, and actual G2 acceptance preceded all-degree development.
+  Later reading does not waive or cure the deviation. AC decides its
+  acceptance; see [gate-timing-response-01.md](../gate-timing-response-01.md).
+  This additive metadata preserves the statement/proof and status; the
+  required focused Claude re-audit remains pending.

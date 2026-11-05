@@ -1,13 +1,14 @@
-# PD-T?lanczos-frontier-codex-L4a — certified full scalar-CGS2 factor-ten separation on rotQ24 at degree12
+# PD-T?lanczos-frontier-codex-L4-01 — certified full scalar-CGS2 factor-ten separation on rotQ24 at degree12
 
 ID kind: PD-T.
-Aliases: full scalar envelope spectral upper; positive-vector envelope
+Aliases: PD-T?lanczos-frontier-codex-L4a; L4a; full scalar envelope spectral upper; positive-vector envelope
 certificate; same-sign full-output BJ readout.
-Split from: the previously OPEN rotQ24 conjunct of PD-T140; no inherited
-record is modified.
-Split into: the fixed-old-BJ-lower subroute obstruction is recorded
-separately as `PD-N?lanczos-frontier-codex-L4-01`; it does not kill the
-target or the use of this upper with a stronger BJ lower.
+Split from: the previously OPEN rotQ24 conjunct of PD-T140; candidate inputs are
+`IDEA?lanczos-frontier-codex-L4-01` (old L4a upper) and
+`IDEA?lanczos-frontier-codex-L4-02` (old L4b full-output lower), both
+quantitative variants of IDEA-250. No inherited record is modified.
+Split into: none. The separate `PD-N?lanczos-frontier-codex-L4-01` is split
+from the fixed-old-lower candidate subroute, not from this positive theorem.
 
 ## Statement
 
@@ -120,8 +121,8 @@ first-order scalar model. Separate Claude scientific/protocol audit pending.
 |---|---|---|
 | Reduction (1)–(2), including all scalar sources | PROVED, analytic | Written finite-dimensional argument; independently reviewed |
 | Fixed full-output lower (6)–(7) | PROVED, analytic | Exact norm/readout reduction; independently checked projection arithmetic |
-| Comparator squared upper B in (F) | PROVED, finite computer-assisted | Complete independent S regeneration, all exact component inequalities and old-trace control |
-| BJ squared lower L in (F) | PROVED, finite computer-assisted | Same frozen signs; complete independent V regeneration, exact Gram/projection/readout and fixed-vector check |
+| Comparator squared upper B in (F) | PROVED, finite computer-assisted | Distinct re-execution of the pinned S producer, all exact component inequalities and old-trace control |
+| BJ squared lower L in (F) | PROVED, finite computer-assisted | Same frozen signs; distinct re-execution of the pinned V producer, exact Gram/projection/readout and fixed-vector check |
 | Strict finite comparison (T), via (F) | PROVED, finite computer-assisted | Exact integer comparison L>100B |
 
 Candidate disposition: sharper-certificate variant of IDEA250/PD-T138/140/141.
@@ -179,7 +180,7 @@ then regenerated the same frozen BJ error vector's full response. It
 reproduced G_R by explicit projection of column90 exactly before any new
 readout. The first preregistered quantization,10^6, gave
 `floor Q(x)=2041704913997`; it stopped at that first pass, so the10^9 and
-10^12 proposals were not run. Its actual217.22-second execution is
+10^12 proposals were not run. Its actual217.2247-second execution is
 recorded in `evidence/l4-full-witness.json`. No error-sign search occurred.
 
 The accepted91-integer vector, with dummy coefficient0 equal to zero,
@@ -376,3 +377,5 @@ all-degree comparisons remain outside this theorem. L3 is deferred this round.
   changed to the finite certified separation now established. All earlier
   preparation/failure history and the original PD-T140 INCONCLUSIVE outcome
   are preserved. No actual-rounding or all-degree status is changed.
+
+- 2026-11-05 audit-01 response, Codex statement/metadata worker; requested gpt-6.1-sol high; runtime variant/effort not independently exposed. Rules read at `7f50cae80f5372db7c278aef4ba4a0a05e1137ea`. Canonical provisional ID is now `PD-T?lanczos-frontier-codex-L4-01`; the old L4a result label remains an alias. IDEA L4-01 (old L4a) is **REJECTED: failed** only for its `100U<G_R` criterion with the fixed old lower; its valid upper is reused here. IDEA L4-02 (old L4b) is retained/successful. The negative record is a split of that failed candidate subroute. Auditor L4-1 accepted: regeneration means a distinct re-execution of the pinned producer, not an independently implemented producer; the separate checker and audit's CPython reconstruction are identified in [audit-01/L4.md](../audit-01/L4.md). Runtime is the receipt's 217.2247 seconds. Proofs, formulas and certificate bytes are unchanged. The saved candidate draft first entered Git at `0574c47` before its prospective source gate was complete. Later completed reading does not cure or waive that deviation; acceptance remains AC's decision. The dated chronology and missing-read/gate checkpoints are in [gate-timing-response-01.md](../gate-timing-response-01.md). No novelty or priority claim is added.

@@ -1,10 +1,10 @@
 # Bivariate Lanczos / V+A round 2 (E2, PD-T055, selection, PD-T140 rotQ24, PD-T075(U2), PD-T056(G), V+A study): log
 
-- Branch: `codex/padua-lanczos-frontier-20261105` · Base: main `aff30e8ad5542c94fab642ae024dc9aab4fa7ad7` (reconciled 2026-11-05; prior result inputs remain pinned) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
+- Branch: `codex/padua-lanczos-frontier-20261105` · Base: main `330fab835f43e5ba5b24e320c2d7e9647e6cbd60` (merged as7f50cae; prior result inputs remain pinned) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
 - Stage: WORK after Claude [audit-01](audit-01.md) (FINDINGS REQUIRE WORK: mathematics accepted; status/scope/record fixes required) · Next: `Codex (gpt-6.1-sol high): Continue codex/padua-lanczos-frontier-20261105.` · Open handoff: [handoffs/07-response.md](handoffs/07-response.md)
 - Permanent reservation: PD-T324–363, PD-N116–131, IDEA414–453, LIT582–593; first pushed40b3eb6, draft PR24. No final IDs assigned; recheck union before future assignment/readiness.
-- Checked provisional claims: L1-01 all-degree aggregate separation; L2-01 through L2-05 finite rule reduction, G2 certificates, weighted extension and all-degree W/R closure growth; L4a finite full-scalar factor-ten separation and L4-01 scoped fixed-old-lower envelope obstruction. All under their stated models. Claude audit pending.
-- Open for AC: no waiver requested. G0 explanation resolved in additive disposition02; historical rounding trajectory remains unverified. Scientific/protocol Claude audit pending. Compute remains sandbox-only.
+- Checked provisional claims: L1-01 all-degree aggregate separation; L2-01 through L2-05 finite rule reduction, G2 certificates, weighted extension and all-degree W/R closure growth; L4a finite full-scalar factor-ten separation and L4-01 scoped fixed-old-lower envelope obstruction. All under their stated models. Claude audit-01 accepts the mathematics; its record/scope findings are under response.
+- Open for AC: A-P1 asks whether to accept the permanently disclosed pre-gate timing deviation after R1–R4 remediation; it is not waived or cured. Claude audit-01 independently bit-reproduces all12 historical own-method G0/G4 gaps under SkylakeX; historical Q bytes and upstream_xy rerun remain unavailable. Focused Claude re-audit follows this response. Compute remains sandbox-only.
 
 ## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
 
@@ -14,7 +14,15 @@
 
 ## Runs needed
 
-- Continue incomplete G1 with a new bounded implementation/cost plan, and remaining L3/L5/L6/L7 under handoff01. G2 W/R passed; G3/G4 remain unrun. G0 is resolved under disposition02, preserving its original FAIL and historical limits. Current L2 analytic continuation and next handoff are recorded below.
+Current obligations (2026-11-05 audit response; no new scientific execution authorized by this list):
+
+- G1 scan/fits complete, both interval verdicts INCONCLUSIVE; G2 W/R PASS; G4 RESOLVED; L7 measured suite complete at Haswell scope. Use the new repository-only compact G1 checker and n1 staging recipe for bounded rechecks; exact commands are in evidence-response-01.md and l6-n1-methods.md.
+- G3 remains INCOMPLETE: n3 bracket and n4/n5 lowers only; n4/n5 uppers, n6–8 gate and handoff01 n3–10 radius trend remain OPEN. No unchanged capped proposer rerun or asymptotic attempt. A new upper/grid/field cost proposal is required before another allocation; current producer CLIs are in g3-methods.md, g3-n4-methods.md and g3-n5-methods.md, not authorization to extend them.
+- F, scalar/IEEE activation, useful degree-uniform/efficient L3 and corrected positive-model (G) remain OPEN. No implemented F/degree-uniform/positive-fit command exists. A corrected n1 continuation must first use the already frozen l6-02 rules, not choose tolerances after seeing its ulp defects.
+- External tasks remain unexecuted: BNT/Chebfun needs a working Octave/Chebfun adapter; no executable adapter exists. Zhu–Nakatsukasa author code and Franke primary fulltext need a pinned accessible source before a scientific command can be supplied. See external-code.md for exact URLs and bounded failed attempts.
+- Optional upstream_xy replay (NOT RUN here): `PYTHONPATH=/tmp/padua-lanczos-frontier-g0/deps OPENBLAS_CORETYPE=Haswell OPENBLAS_NUM_THREADS=1 python tracks/bivariate-lanczos/code/drift/e6_benchmark.py --external /tmp/padua-lanczos-frontier-g0/polyrat --sets rotpi4 triangle --output /tmp/padua-lanczos-frontier-upstream-fresh/g4.json`; use a fresh directory and source/hash checks from external-code.md. This reproduces an implementation trajectory, not old historic Q bytes.
+- Fresh-machine regeneration commands in COLD_STORAGE.md are recipes, with actually executed component commands distinguished. Physical delivery to AC's Windows cold storage is pending because no destination access exists; no transfer command can be asserted. Local temporary indices are not proof of remote retrievability.
+- Complete response-01, then focused Claude re-audit before final IDs, registry application or readiness. AC's A-P1 decision remains separate.
 
 ## 2026-11-05 — Codex, requested gpt-6.1-sol xhigh — WORK start
 
@@ -226,3 +234,22 @@ All new science is complete at this bounded boundary: G3 distinct exact checker 
 - G0/G4 RESOLVED accepted and strengthened: frozen `8359bf7` code under the default SkylakeX OpenBLAS kernel on this AVX-512 host reproduces all12 historical own-method gaps bit-for-bit (subagent run; orchestrator rerun byte-identical receipts). upstream_xy not rerun (pinned polyrat fetch refused).
 - `code/check_manifest.py` now fails at the audit checkpoints because audit-01/ was added (A-m8); not altered by the auditor.
 - Stage → WORK. [Handoff07](handoffs/07-response.md) asks Codex for response-01 and fixes, then a focused Claude re-audit. Only AC merges.
+
+## 2026-11-05 — handoff07 audit-response start
+
+- Root requested Codex gpt-6.1-sol high; rules read at7f50cae80f5372db7c278aef4ba4a0a05e1137ea, byte-identical to prior3a179f6/main330fab8. Initial localhead3a179f6 was stale; fetching found Claude audit commits through45646d772d4fa3633d992d9b77253a6116bddbb8. Fast-forwarded without rewriting history, then merged currentmain330fab835f43e5ba5b24e320c2d7e9647e6cbd60 as7f50cae80f5372db7c278aef4ba4a0a05e1137ea. PR26 changes MZ records/manuscript/registries, no Lanczos source or rule bytes; no merge conflicts. No new IDs/ranges.
+- Read openhandoff07, audit-01 and all family findings/NOTEs. Mathematics is accepted; this response addresses statuses, scopes, chronology, proposals, retrieval and packaging. No new mechanism/novelty claim; the generation gate is inapplicable to these mechanical/wording responses, while historical A-P1 remediation is explicit. Runtime skill/network policy read; current running/enforced restricted/noVPN observations; no credential contents or external compute.
+- Disjoint delegation: response_math solhigh L1–L3 records; response_l4_l6 solhigh L4–L6 metadata; response_timing solhigh R1–R4 historical reconciliation; response_evidence solmedium compact G1/L7/CPU records; response_proposals solmedium literal future registry blocks. Root alone Git/integration/response/log/report/results/storage. Shared ideas-l3-l4 writes serialized between family owners. No audit file or earlier handoff body is edited.
+
+### Handoff07 completed family fixes and evidence validation
+
+- A-M1: broaderL3OPEN, with a separate PROVED stronger per-column-budget supporting theorem; no unsupported PARTIAL split. A-M2: Haswell20/6 versus audit defaultAVX51218/9 scoped explicitly, within-group reporting post-registration, six cross-group directions retained, historicalCPU unknown. Accepted proof/formula sections remain unchanged; frozenL1/L2-01/L6-02 theorem/contract bytes are preserved through dated companions.
+- A-P1 R1 lists14pre-gate candidates, missing reads, worker inputSHAs versus first preserved gate receipts, post-gate verdicts and descendants. R2 qualifiers/aliases and R3 omitted predecessor scopes are applied; R4 requires an orchestrator-committed gate checkpoint before candidate drafting. The deviation remains not waived/not cured; AC acceptance is an explicit pending decision, separate from mathematical validity.
+- Added two logical complete per-grid G1 outward tables, a standard-library checker, complete20-row L7 loss list, sixcross-group directions and currentCPU/ISA/BLAS observation. Developer bounded packaging replay/guards/log-enclosure checks and two counterchoice-destroying controls pass; no full scan, fit or suite rerun. The new checker proves the ORIGINAL endpoint-defined counterchoice via a strictly positive lower enclosure, not a counterchoice solely in an enlarged box.
+- Root actually executes the fresh-scratch repository-only n1 recipe: `timeout 60s python3 -I -B topics/padua-lanczos-frontier-20261105/code/l6_n1_independent.py --producer-root /tmp/padua-l6-response-recheck.KLTHWlF1/producer --out /tmp/padua-l6-response-recheck.KLTHWlF1/check --receipt /tmp/padua-l6-response-recheck.KLTHWlF1/check-receipt.json`, after copying the three committed inputs to the documented names. Exit0,0.125899961s,367operations, complete64uPASS, rawINCONSISTENT, fivecorruptionsrejected. Smallnewreceipt preserves the actual run; historical receipts are untouched.
+- New raw response inventory actually indexes/checks11 artifacts; complete inventory stays external behind cold-storage-response-01.json. No physical archive delivery, originalCPU reconstruction or guaranteed retention claimed.
+- Supplementary Astrahigh independently recomputes both compactcounterchoices and all20 losses/sixcross-groups from pinned saved data; this supplements focused Claude re-audit, not replaces it. One chronology wording finding (input684849d versus published gate-receiptaab7bbe) is corrected consistently in fiveL2 metadata passages. No audit file is edited.
+
+### Handoff07 first fix checkpoint checks
+
+Root actually checks58 developer-code ASTs,132 topic JSON files (all<16KiB),383 rendered links in changed prose, three hard-frozen theorem/contract SHA pins, and absence of changes to audit-01 or old handoff bodies. All18 descendant timing-qualifier destinations are present, including frozen companions. `git diff --check` passes. Conservative repository-wide JSON bytes4423544 across931files remain below5MB. Rebuilt the existing complete evidence inventory with current provenance to include immutable audit additions and response artifacts:328 file identities,35239byte external inventory; `check_manifest.py --cached` PASS. This resolves A-m8 without changing its source or any auditor file. No fast-check result substitutes for scientific proof.

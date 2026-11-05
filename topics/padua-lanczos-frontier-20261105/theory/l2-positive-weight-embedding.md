@@ -184,3 +184,13 @@ record and its hash are unchanged.
 - 2026-11-05: Verification metadata updated after distinct mathematical
   reconstruction accepted the complete initial draft. Statement and
   proof are unchanged; required Claude audit remains pending.
+
+- 2026-11-05, audit response A-P1/R2: this result descends from W/R
+  definitions drafted before the mandatory reading gate, first committed
+  at `0574c47`. The completed-gate receipt was first preserved at `aab7bbe`
+  (`684849d` was the worker input/rules SHA); the later proof and G2
+  certificates followed the reported completed reading, and actual G2 acceptance preceded all-degree development.
+  Later reading does not waive or cure the deviation. AC decides its
+  acceptance; see [gate-timing-response-01.md](../gate-timing-response-01.md).
+  This additive metadata preserves the statement/proof and status; the
+  required focused Claude re-audit remains pending.

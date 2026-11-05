@@ -1,6 +1,6 @@
-# PD-T?lanczos-frontier-codex-L5c — certified n4 lower obstruction radius
+# PD-T?lanczos-frontier-codex-L5-03 — certified n4 lower obstruction radius
 
-ID kind: PD-T. Aliases: P4 whole-ball Taylor certificate; n4 G3 lower endpoint.
+ID kind: PD-T. Aliases: PD-T?lanczos-frontier-codex-L5c; L5c; P4 whole-ball Taylor certificate; n4 G3 lower endpoint.
 Split from: finite n4 certificate task of L5/G3. Split into: none.
 
 ## Statement
@@ -41,9 +41,9 @@ All15 exact checks pass at L=1/2048:
 
 Since |h_x|,|h_y|<=||h||, the quadratic term dominates the complete higher-degree sum for every ||h||<=L, including the ball boundary. Thus P4 is nonnegative on K_L, is nonzero and vanishes at P_4, proving the stated lower bound by L5a.
 
-The distinct checker additionally reconstructs the full45-by55 jet matrix, obtains rank45/kernel10 and verifies exact rank and annihilation. This supports the complete-space setup but is not a replacement for the Taylor inequalities or an upper certificate. Its actual lower execution took16.874s and checked all21 saved dyadic radii; 1/2048 is the largest passing radius for this sufficient Taylor test, not a maximal positivity radius. Exact margins, source/input identities and malformed controls are recorded in [independent receipt](../evidence/g3-n4-independent-lower.json) and [independent report](../independent-checks-g3-05.md).
+The distinct checker additionally reconstructs the full45-by55 jet matrix, obtains rank45/kernel10 and verifies exact rank and annihilation. This supports the complete-space setup but is not a replacement for the Taylor inequalities or an upper certificate. Its actual lower execution took16.874s and checked all21 saved dyadic radii; 1/2048 is the largest passing saved dyadic radius for this sufficient Taylor test, not its largest passing real radius or a maximal positivity radius. Exact margins, source/input identities and malformed controls are recorded in [independent receipt](../evidence/g3-n4-independent-lower.json) and [independent report](../independent-checks-g3-05.md).
 
-The fixed lower certificate has4961bytes and SHA256 `ee25f934fdb934b9ca5286c3d6206171525364aebb7c4e0f8f867cd97d24a7c6`. Independent checker input SHA256 is `335bb5c3908b4da12df779e856757ac4c28a22c4239977662316b96e167da474`. Exact commands, versions and measured producer stage costs are in [n4 methods](../g3-n4-methods.md) and the independent receipt. Regeneration needs the committed small polynomial certificate and repository checker, not original temporary kernel or LP output. New-directory recipes are distinct from the recorded actual execution.
+The fixed lower certificate has4961bytes and SHA256 `ee25f934fdb934b9ca5286c3d6206171525364aebb7c4e0f8f867cd97d24a7c6`. Independent checker source SHA256 is `335bb5c3908b4da12df779e856757ac4c28a22c4239977662316b96e167da474`; its lower-certificate input SHA256 is `ee25f934fdb934b9ca5286c3d6206171525364aebb7c4e0f8f867cd97d24a7c6`. Exact commands, versions and measured producer stage costs are in [n4 methods](../g3-n4-methods.md) and the independent receipt. Regeneration needs the committed small polynomial certificate and repository checker, not original temporary kernel or LP output. New-directory recipes are distinct from the recorded actual execution.
 
 ## Scope and remaining work
 
@@ -52,3 +52,5 @@ Upper-certificate search outcomes, including caps or LP failures, are separate a
 ## History and independent check
 
 2026-11-05: Codex root, requested gpt-6.1-sol xhigh, rules9825d184517db81d0aad8542fbd6639f2164b803. Written only after producer and distinct medium checker actual lower passes, under the separately reviewed n4 field/certificate plan. This record integrates their finite evidence and the previously proved L5a implication; it is not a new root execution. Supplementary mathematical/technical review and required Claude audit remain separately recorded.
+
+2026-11-05 audit-01 response, Codex statement/metadata worker; requested gpt-6.1-sol high; runtime variant/effort not independently exposed. Rules read at `7f50cae80f5372db7c278aef4ba4a0a05e1137ea`. L5-1/L5-5: the dyadic endpoint is not the best previously recorded Taylor lower bound. PD-T075 already cites the stronger reviewer bound `b_4=5.6302e-4` for the same polynomial and criterion; [audit-01/L5.md](../audit-01/L5.md) independently reproduced its scope. No new endpoint computation is claimed. Canonical ID is `PD-T?lanczos-frontier-codex-L5-03` (aliases old PD-T L5c, L5c). The audit also reran the committed checker under both SymPy ground-types backends (flint and python); original receipts do not identify the developer's backend. Proof and certificate bytes are unchanged. The saved candidate draft first entered Git at `0574c47` before its prospective source gate was complete. Later completed reading does not cure or waive that deviation; acceptance remains AC's decision. The dated chronology and missing-read/gate checkpoints are in [gate-timing-response-01.md](../gate-timing-response-01.md). No novelty or priority claim is added.

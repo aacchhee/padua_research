@@ -1,13 +1,13 @@
-# PD-T?lanczos-frontier-G1-fit — finite endpoint fitting and interval-gate measurements
+# PD-T?lanczos-frontier-codex-G1-01 — finite endpoint fitting and interval-gate measurements
 
 ID kind: PD-T (provisional; no final ID assigned).
-Aliases: G1 complete rational-grid endpoint fits; frozen finite logratio gate.
+Aliases: `PD-T?lanczos-frontier-G1-fit` (historical ID); `PD-T?lanczos-frontier-codex-G1-fit` (response working alias); G1 complete rational-grid endpoint fits; frozen finite logratio gate.
 Split from: none.
 Split into: none.
 
 ## Statement
 
-On the frozen T24 and rational rotQ24 grids, all four rules BJ/mirror/alternating/exact-pivot and every integer degree2–20 have all-source exact endpoint rows independently matched before fitting (152rows). The frozen fitter actually computed the prescribed endpoint/midpoint descriptive OLS diagnostics. Each grid's unchanged universal interval kill predicate returns **INCONCLUSIVE, certified counterchoice**, because an explicit admissible logratio corner makes the late slope minus half the early slope strictly positive. The producer certifies the universal early-positive clause on both grids. Neither grid triggers KILL. The universal SSE clause is unneeded after that counterchoice and was not decided. No true condition curve or asymptotic rate is computed or inferred.
+On the frozen T24 and rational rotQ24 grids, all four rules BJ/mirror/alternating/exact-pivot and every integer degree2–20 have all-source exact endpoint rows independently matched before fitting (152rows). The frozen fitter actually computed the prescribed endpoint/midpoint descriptive OLS diagnostics. Each grid's unchanged universal interval kill predicate returns **INCONCLUSIVE, certified counterchoice**, because an explicit admissible logratio corner makes the late slope minus half the early slope strictly positive. The producer certifies the universal early-positive clause on both grids. Neither grid triggers KILL. The producer stopped after that slope counterchoice without separately testing the SSE clause. The committed midpoint intervals also certify a violation of the universal SSE clause on both grids, as detailed in the audit-response addendum below. No true condition curve or asymptotic rate is computed or inferred.
 
 ## Definitions
 
@@ -59,7 +59,7 @@ Positive coefficients choose the exact upper logendpoint; negative coefficients 
 | T24 | .594088615 | +1.061247932 | Certified INCONCLUSIVE |
 | rotQ24 | .170682406 | +.951663459 | Certified INCONCLUSIVE |
 
-These strict positive counterchoice margins show that the universally quantified kill predicate over the preregistered box is false. They do not say which exact ordinate choices the unknown true condition curve realizes. No box-cover computation was needed; none is claimed. The producer certifies the early-positive property separately from the failing late clause; the universal SSE clause remains undecided/unneeded.
+These strict positive counterchoice margins show that the universally quantified kill predicate over the preregistered box is false. They do not say which exact ordinate choices the unknown true condition curve realizes. No box-cover computation was needed; none is claimed. The producer certifies the early-positive property separately from the failing late clause; the producer did not evaluate the universal SSE clause on this branch, but the saved midpoint diagnostics already certify its failure (see addendum).
 
 Midpoint logratio diagnostics, explicitly **MEASURED and descriptive**, are:
 
@@ -89,7 +89,7 @@ Finite exact endpoint calculations plus outward numerical log/OLS verification u
 
 ## Open items
 
-Actual distinct fit verification is complete and PASS; required later Claude scientific/protocol audit remains pending. Archive raw manifest/report/logs through root's cold-storage workflow; Windows delivery remains pending and temporary retention is not guaranteed. General/asymptotic targets remain separate open obligations. No final ID or merge readiness is implied.
+Actual distinct fit verification and Claude audit-01 are complete; focused Claude re-audit of the response remains pending. Archive raw manifest/report/logs through root's cold-storage workflow; Windows delivery remains pending and temporary retention is not guaranteed. General/asymptotic targets remain separate open obligations. No final ID or merge readiness is implied.
 
 ## History
 
@@ -100,3 +100,20 @@ Actual distinct fit verification is complete and PASS; required later Claude sci
 The separately implemented checker SHA256 `0bbcf38542e077806b8d2f9c36c7b0bdf8ca19105f562b7b4369aefaed70750c` actually verified the complete pinned report in29.717486s under its own1800s cap. It independently rebuilt the complete input/coverage guards, outward logarithms, OLS endpoint/midpoint intercept/slope intervals, heldout diagnostics, comparator-minimum recipes and both admissible late-minus-half-early counterchoices. The independently certified slope signs are positive on both grids, equivalently the rational-product signs are positive. The receipt field `exact_product_compare_to_one=1` records that sign: the checker can resolve it from outward logarithm bounds before its expanded-product fallback, so this field does not establish that an expanded rational product was evaluated. On this counterchoice branch the distinct checker does not separately re-evaluate the producer-certified universal early-minimum clause; its independently verified decisive late sign suffices for the INCONCLUSIVE verdict. It reports **PASS independent complete G1 descriptive report/certificate verification**, with both grid outcomes **INCONCLUSIVE, certified counterchoice**.
 
 [Independent report](../independent-checks-g1-fit.md) and the independent receipt identity in [actual receipt](../evidence/g1-fit-actual.json) retain its separate command/source/input/report pins. This closes the preceding distinct-verification obligation; it does not replace required later Claude audit or strengthen the finite operational verdict into an asymptotic result. No further fitting, source change, cover run or precision increase occurred.
+
+### Audit-01 finite certificate packaging and wording — 2026-11-05
+
+L7G1-7: at the admissible midpoint tau=1/2, the committed outward diagnostics certify `2*SSE_P-SSE_E > 93.80` (T24) and `> 50.35` (rotQ24), and late−early/2 > .383 / .322. Thus both the SSE and late universal clauses are false on each grid; "undecided" described an unexecuted producer branch too broadly. The outcome remains INCONCLUSIVE with a certified counterchoice, not KILL. These are consequences of existing certified intervals, with no new fit or threshold. The historical producer receipt's NOT_NEEDED marker describes execution accurately.
+
+L7G1-8: [triangle](../evidence/g1-compact-triangle.json) and [rotated](../evidence/g1-compact-rotated.json) each contain all 76 per-rule/per-degree log endpoint enclosures for their logical grid, outward rounded to integer bounds divided by 10^15. Each is below 16 KiB. [New standalone checker](../code/g1_compact_check.py) reconstructs comparator minima, exact interval arithmetic, the same rational tau, early positivity and the strict late counterchoice using only committed bytes; both grids PASS. It also verifies the midpoint late violation. This is a bounded certificate recheck rather than a repeated scan or a new descriptive fit. Exact raw endpoint generation and the prior full-report verification retain their original provenance and dependencies; the new tables preserve source manifest/report and all eight case hash links. No report source was changed. Full raw delivery remains pending; compact evidence does not reconstruct complete raw trajectories or certify archival availability.
+
+L7G1-9: accept the guard limitation. A PASS prefix and two hashes do not authenticate an independent scientific check, and the independent complete-G1 label partly trusts a manifest flag. The actual original acceptance links were separately audited and are unaffected. No general anti-forgery guarantee is claimed; stronger receipt semantics are deferred to a separately reviewed code change. The compact checker claims only the 152 supplied rounded endpoint-log enclosures and their finite implication, not a fresh full-scan acceptance.
+
+L7G1-10: the distinct checker record says **requested gpt-6.1-sol medium; runtime model metadata not independently exposed**. Summaries describing that technical checker as gpt-6-astra should use that recorded attribution; no new independent agent execution is asserted in this response. L7G1-11: accept the positive scheduling note; preserved failures, caps and prospective successors remain unchanged.
+
+History: agent-qualified provisional ID replaces the historical spelling as canonical, retaining the old alias. The finite status, input universe, spec and source thresholds remain unchanged. Focused Claude response re-audit is pending after completed Claude audit-01.
+
+
+### History — permanent gate-timing qualifier (A-P1 / PROT-2), 2026-11-05
+
+This result descends from l1-01 (exact-grid G1 rate continuation), drafted before completion of the mandatory reading gate and first committed at `0574c47c697a63d76d6222393d3521c145870d03`. The completed L1/L2 gate receipt was first preserved at `aab7bbe97899b0216d60a015c1a0d2cb2d7cbd99` (input/rules `684849d7d19ac2604213ae3d4f499d3436f58b3d`), with delta receipt published at `b81c374722a5eaf3441cb36c970d6f6da8a58230` (input `0e493be7f9883e00e6260cf6b081c607a230177f`). Later finite computations do not make the initial drafting prospective. The timing deviation remains disclosed, not waived or cured; independent mathematical acceptance and AC's protocol decision are separate. [Gate-timing response](../gate-timing-response-01.md) retains the coverage, publication/input distinction and pending AC acceptance decision.

@@ -29,8 +29,7 @@ Overall status: **PROVED** (exact finite-data certificate plus the written neces
 | No functional/positive measure has those exact orthonormal-section slots | PROVED | Multiplication sections are necessarily symmetric; proof below |
 | Changed or toleranced raw data, positive nearby model, general PD-T056(G) | OPEN | Not rejected or decided by this equality obstruction |
 
-Candidate / claim disposition: **REJECTED** for the raw exact-match branch of this one frozen execution in IDEA?lanczos-frontier-codex-L6-02.
-Rejection reason: **refuted**, by a necessary-symmetry violation in unchanged formed coefficients. This is a completed raw-branch outcome; IDEA-262's broader corrected/toleranced actual-run target is not rejected.
+Scoped claim disposition: **REJECTED: refuted** for the claim that the unchanged fourteen raw slots of this one frozen execution are exact orthonormal-section data, a sub-route of IDEA-262 / IDEA?lanczos-frontier-codex-L6-02. The necessary-symmetry violation refutes that exact-match claim only. The parent actual-run candidate remains deferred; it is duplicate as a mechanism and its corrected/toleranced target is not rejected.
 
 ## Negative-result scope
 
@@ -85,3 +84,5 @@ Parent-owned status/ID integration and later required Claude audit. A corrected/
 ## History
 
 2026-11-05, Codex mathematical developer, requested `gpt-6.1-sol`, xhigh; runtime variant/effort not independently exposed; rules `9825d184517db81d0aad8542fbd6639f2164b803`. Root assigned the finite statement after the one frozen run and distinct actual PASS. New substantive exact raw-data negative consequence split from the MEASURED output record, with no new mechanism: the symmetry stop was frozen in l6-02 before execution. The argument applies to the unchanged raw slots only; original PD-T056(G) scope/status is preserved. No Git/shared-registry change or additional scientific execution by this developer.
+
+2026-11-05 audit-01 response, Codex statement/metadata worker; requested gpt-6.1-sol high; runtime variant/effort not independently exposed. Rules read at `7f50cae80f5372db7c278aef4ba4a0a05e1137ea`. L6-3: rejection applies to the fixed raw exact-match claim, not IDEA L6-02 or IDEA-262 as a whole; the broader corrected/toleranced continuation remains deferred. The [contract companion](l6-02-execution-metadata-20261105.md) points to its unchanged frozen correction/nontriviality rules and later execution. This finite negative descends from saved pre-gate L6-02; the exact-consistency stop was frozen before execution after the gate. The saved candidate draft first entered Git at `0574c47` before its prospective source gate was complete. Later completed reading does not cure or waive that deviation; acceptance remains AC's decision. The dated chronology and missing-read/gate checkpoints are in [gate-timing-response-01.md](../gate-timing-response-01.md). No novelty or priority claim is added.

@@ -46,3 +46,20 @@ Essential files, each<16KiB:
 - `evidence/l6-n1-start-provenance.json`:1886bytes,SHA256 `e6d1a410a9f0862a02b2dd9623f5159100689d3125b121772c835faec0819ef3`.
 
 Raw output/frozen sources remain under `/tmp/padua-lanczos-frontier-l6-n1`. Distinct reviewer owns separate exact trace/checker execution/report; no independent PASS is claimed by this producer until that execution. Root owns Git/storage/shared integration. This one fixed n1 output supplies no Padua result, corrected-branch authorization, universal IEEE claim or resolution of PD-T056(G).
+
+## Repository-only non-overwriting checker recipe — 2026-11-05
+
+L6-2: the commands above record the original executions. The following prospective recipe uses only committed code, contract and three compact input files; it does not require the original `/tmp` tree or write any repository file. Run from the repository root, with Python 3 available. The checker uses the standard library only. Each invocation creates fresh scratch; retain or archive that scratch separately if needed. This documentation was not executed as another scientific run in this response.
+
+```sh
+l6_check_scratch=$(mktemp -d /tmp/padua-l6-recheck.XXXXXXXX)
+mkdir "$l6_check_scratch/producer"
+cp topics/padua-lanczos-frontier-20261105/evidence/l6-n1-producer-receipt.json "$l6_check_scratch/producer/receipt.json"
+cp topics/padua-lanczos-frontier-20261105/evidence/l6-n1-exact-analysis.json "$l6_check_scratch/producer/analysis.json"
+cp topics/padua-lanczos-frontier-20261105/evidence/l6-n1-trace-packed.json "$l6_check_scratch/producer/trace-packed.json"
+timeout 60s python3 -I -B topics/padua-lanczos-frontier-20261105/code/l6_n1_independent.py --producer-root "$l6_check_scratch/producer" --out "$l6_check_scratch/check" --receipt "$l6_check_scratch/check-receipt.json"
+```
+
+The staging names are mandatory because the checker reads `receipt.json`, `analysis.json` and `trace-packed.json` from `--producer-root`. `--out` must not exist before execution. The receipt destination is fresh scratch, not `evidence/l6-n1-independent.json`. Source SHA256 remains `269dfb1efe51edc5972509a600267991514c0cd7795881cf1a35a168894f2585`; the live contract SHA256 remains `9d857e30146be3e2f8963f20cf89a4441fa72b1b542a5dcb79245384198e3a35`. A successful future checker should report PASS, 367 operations, all complete residual budgets passing, raw branch INCONSISTENT, and five rejected corruptions; a stated expectation is not a new execution claim.
+
+The [contract metadata companion](theory/l6-02-execution-metadata-20261105.md) records the later execution while preserving all pinned contract bytes and thresholds. No BLAS is involved in this scalar program or exact interpreter; its arithmetic contract is explicit in l6-02. Future numerical receipts using BLAS must separately record dispatch and CPU ISA, as audit-01 requests.

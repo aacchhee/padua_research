@@ -1,0 +1,103 @@
+{
+ "status": "PASS packaging byte replay, compact certificates and negative controls",
+ "rules_sha": "7f50cae80f5372db7c278aef4ba4a0a05e1137ea",
+ "scope": "Developer response checks only; focused independent Claude re-audit pending",
+ "packaging_replay_identical_files": 4,
+ "corruption_controls_rejected": 2,
+ "elapsed_seconds": 0.018035596003755927,
+ "checker": {
+  "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_compact_check.py",
+  "sha256": "902f6a30d2a20592d9ebb63911e8c659cb3606ae9fce9054c335ae61dab94b59"
+ },
+ "harness_sha256": "7af1dd0e26f725ab411a203e58684739802f456448e34372e581419871a249a6",
+ "checks": [
+  {
+   "grid": "triangle",
+   "table_sha256": "2c99758edf1888f2cdd8a0fcd7563512a1466407bb6659f630d7838abad37f38",
+   "rows": 76,
+   "status": "INCONCLUSIVE, certified counterchoice",
+   "tau": [
+    "1",
+    "1",
+    "1",
+    "1",
+    "1/2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1"
+   ],
+   "late_minus_half_early": [
+    "466949090116225203/440000000000000000",
+    "1400847270348676849/1320000000000000000"
+   ],
+   "early_minimum": [
+    "11881772295217903/20000000000000000",
+    "35645316885653749/60000000000000000"
+   ],
+   "midpoint_late_minus_half_early": [
+    "126682944394262507/330000000000000000",
+    "3838877102856449/10000000000000000"
+   ],
+   "source_scope": "Rounded outward original per-rule endpoint logs; comparator minima independently reconstructed",
+   "committed_midpoint_2SSE_P_minus_SSE_E": [
+    "15960575823581535927778742255452559855171/170141183460469231731687303715884105728",
+    "3990143955895383981944685563863139978853/42535295865117307932921825928971026432"
+   ]
+  },
+  {
+   "grid": "rotated",
+   "table_sha256": "e52d8ac85956210b984773d1c805199e758ff537239a4926801e23146431f5f8",
+   "rows": 76,
+   "status": "INCONCLUSIVE, certified counterchoice",
+   "tau": [
+    "1",
+    "1",
+    "1",
+    "1",
+    "1/2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1"
+   ],
+   "late_minus_half_early": [
+    "1256195765646386779/1320000000000000000",
+    "1256195765646388019/1320000000000000000"
+   ],
+   "early_minimum": [
+    "10240944331491527/60000000000000000",
+    "3413648110497189/20000000000000000"
+   ],
+   "midpoint_late_minus_half_early": [
+    "9677553724769251/30000000000000000",
+    "35484363657487357/110000000000000000"
+   ],
+   "source_scope": "Rounded outward original per-rule endpoint logs; comparator minima independently reconstructed",
+   "committed_midpoint_2SSE_P_minus_SSE_E": [
+    "17134713734772750110132262748926147004089/340282366920938463463374607431768211456",
+    "17134713734772750110132262748926147048189/340282366920938463463374607431768211456"
+   ]
+  }
+ ]
+}

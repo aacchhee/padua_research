@@ -199,7 +199,7 @@ Delta mechanism search: `shear|Krawtchouk|semicircle|Lanczos|normal.quotient|spa
 
 ### Dated disposition — saved SH_n route survives its decisive analytic check
 
-IDEA?lanczos-frontier-codex-l1-02 is retained with a complete written all-degree result [PD-T?lanczos-frontier-codex-L1a](theory/l1-01-sheared-U-aggregate-separation.md), **PROVED in written analytic form; supplementary independent Astra xhigh reconstruction accepted; required Claude audit pending**. No new final ID or shared registry entry is allocated. Prior G0 STOP and unchecked-candidate text remains historical, superseded only at the precise hypothesis/derivative/separation scope below.
+IDEA?lanczos-frontier-codex-l1-02 is retained with a complete written all-degree result [PD-T?lanczos-frontier-codex-L1-01](theory/l1-01-sheared-U-aggregate-separation.md), **PROVED in written analytic form; supplementary independent Astra xhigh reconstruction accepted; required Claude audit pending**. No new final ID or shared registry entry is allocated. Prior G0 STOP and unchecked-candidate text remains historical, superseded only at the precise hypothesis/derivative/separation scope below.
 
 - Actual decisive check: positive normalized sine weights; U tensor orthogonality and injectivity through n+1; triangular physical monic gauge; exact pivot1/2 and raw-product scales; direct weighted normalized normal-quotient derivative; explicit final-degree source in S_n's orthogonal complement; complete mirror boundary elimination with normalized-source coefficient -4. All are written analytically in the theory record. No code experiment was run.
 - Surviving distinction: for every n>=2, kappa_BJ>=sqrt(2(4^(n+1)-1)/3), whereas kappa_mirror<=2sqrt(6)(n+1)^2(N_n-1), in the saved relative-aggregate source norm and spectral span derivative. The exponential channel is retained by the normal projector, not inferred from a large raw entry or finite fitted slopes. Mirror is bounded over the full source sphere.
@@ -218,3 +218,55 @@ Aliases: SH_n coordinate-product channel; discrete highest-U sign channel; forma
 - Applicable obstructions: aggregate sources are larger than an operation-generated family; independent formal deltas need not occur in one IEEE execution; dot/norm terms vanish only in a stated first-order normal quotient; uniform finite-epsilon behavior remains separate. No degree12 L2 predicate or closure conclusion follows.
 - Novelty verdict: proposed variant/extension of established formal-graph and aggregate mechanisms, not a new-mechanism or priority claim.
 - Actual results: none claimed; no new scalar graph, proof, experiment or implementation. Disposition: **deferred** until a separately recorded exact scalar-model specification. L1a's supplementary independent review is now accepted; that does not freeze or establish this scalar extension. No PD-N for deferral and no alteration of L1a's frozen model.
+
+## Audit response / final candidate dispositions — 2026-11-05
+
+This dated update supersedes the old "none / deferred" checkpoint text
+above; it preserves that text as drafting history. No new candidate or
+novelty claim is generated, so a new novelty campaign is not invoked.
+Current canonical L1 theorem ID is **PD-T?lanczos-frontier-codex-L1-01**;
+`PD-T?lanczos-frontier-codex-L1a` and L1a are historical aliases. Its
+checker-pinned bytes remain frozen, with current metadata in the
+[L1-01 companion](theory/l1-01-audit-response-20261105.md).
+
+| Canonical candidate ID | Final disposition and result | Permanent timing qualifier |
+|---|---|---|
+| IDEA?lanczos-frontier-codex-l1-01 | Retained finite G1 continuation; actual full scan/fitter independently executed, both grids INCONCLUSIVE. No finite KILL, no all-degree conclusion; original E2 remains OPEN. | Draft first committed 0574c47 before gate completion; later reading does not waive or cure the deviation. |
+| IDEA?lanczos-frontier-codex-l1-02 | Retained SH_n quantitative variant, PROVED analytic as L1-01. Both bounds hold for all n>=2; the ratio bound exceeds 1 only for n>=18; no small-n ordering is claimed. The family is an affine image of a product grid. | Candidate/formulas first committed 0574c47 before gate completion; later gate preceded proof, without curing the deviation. |
+| IDEA?lanczos-frontier-codex-l1-03 | Deferred scalar-operation extension; no graph, proof or run. | Post-L1 candidate from the completed handoff03 gate; no new pre-gate claim made here. |
+| IDEA?lanczos-frontier-codex-l2-01 (W) | Retained formalization variant. L2-01/03 analytic reduction/weighted bridge, L2-02 exact finite G2 PASS on both grids, then L2-04 PROVED saved all-n W on SH_n. | Definition first committed 0574c47 before gate closure; all proofs/certificates after the gate; actual G2 acceptance before all-degree development. |
+| IDEA?lanczos-frontier-codex-l2-02 (R) | Retained formalization variant. Same finite bridge/G2, then L2-05 PROVED saved all-n R under its unchanged full law. Spectral/probability conversion remains OPEN. | Definition first committed 0574c47 before gate closure; all proofs/certificates after the gate; actual G2 acceptance before all-degree development. |
+| IDEA?lanczos-frontier-codex-l2-03 (F) | Deferred/unrun fixed-implementation variant; no IEEE claim or all-degree F theorem. | Draft first committed 0574c47 before gate closure; later reading does not waive or cure the deviation. |
+
+AC decides acceptance of the disclosed deviation; no worker grants a
+waiver. See [gate-timing-response-01.md](gate-timing-response-01.md) for
+the consolidated R1 table, missing-read checkpoints and R4 process rule.
+
+### Closest-entry completeness (A-P1/R3; PROT-4)
+
+- SH_n additionally cites **IDEA-130** (PD-T035/037/041): the measured
+  non-product window-instability route and finite exact growth certificate
+  leave the all-degree target OPEN. The SH_n result instead proves a
+  weighted normal-quotient span-capacity bound for the specified affine
+  product family; raw window amplification is not its output metric.
+- SH_n additionally cites **IDEA-134** (PD-T037(a)): exact-recurrence
+  amplification is MEASURED for the tested dev selection through n<=20.
+  L1-01 supplies a separate explicit-family all-n aggregate theorem and
+  makes no general a priori non-product or every-selection claim.
+- W and R additionally cite **IDEA-148 / PD-N013**: full
+  reorthogonalization fails to preserve the tested graded spaces in its
+  recorded five-set benchmark. The present variants prove actual
+  first-order closure capacity/expectation for a saved smooth exact-base
+  class, not a new reorthogonalization remedy or a universal drift theorem.
+- W and R additionally cite **IDEA-151 / PD-N015**: tested selection
+  rules fail uniform safety within their stated benchmark scope. W/R fix
+  BJ parents and use a different declared first-order aggregate observable;
+  they neither repair selection nor refute every possible selection rule.
+
+These missing summary citations change no duplicate/variant verdict.
+PD-T055 stays OPEN. Every L2 summary means the **formal first-order smooth
+exact-base aggregate model, with no working-precision/IEEE claim**.
+The [L2-01 companion](theory/l2-01-audit-response-20261105.md) supersedes
+its frozen pending prose and records all L2 NOTE dispositions. The L1
+companion records every L1 NOTE disposition and the committed dependency
+hash; unavailable reviewed drafts are not current theorem inputs.

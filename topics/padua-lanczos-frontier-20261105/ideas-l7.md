@@ -2,9 +2,9 @@
 
 Rules/input `8359bf7a047d9a212bd841224fb97a458cb7435e`; 2026-11-05, Codex gpt-6.1-sol medium. All experiments **NOT RUN** because G0 failed. These are prescribed empirical comparisons extending IDEA-263–267, not proposed new mathematical mechanisms. The full mechanism-generation novelty gate is inapplicable to that scope. Relevant state/IDEAS entries and obstruction/disposition tables were searched/read selectively; this is not a claim of having completed a new full-registry novelty gate. Literature INDEX inspected; no paper fulltext retrieved/read here and no source theorem inherited.
 
-## IDEA?frontier-l7-01 — natural-target fit loss
+## IDEA?lanczos-frontier-codex-L7-01 — natural-target fit loss
 
-Aliases: drift costs accuracy; non-adversarial approximation; nearby complex singularities; nonsmooth data.
+Aliases: `IDEA?frontier-l7-01` (historical ID); drift costs accuracy; non-adversarial approximation; nearby complex singularities; nonsmooth data.
 
 - Question/scope: detect natural-target loss relative to a screened longdouble polynomial least-squares reference on the preregistered four domains.
 - Mechanism/hypotheses: no new mechanism; actual upstream and existing own recurrences, fixed rational/tanh/absolute/entire targets, seeds, degrees and tests in l7-preregistration.md.
@@ -19,9 +19,9 @@ Aliases: drift costs accuracy; non-adversarial approximation; nearby complex sin
 - Disposition/reason: deferred; resume after explained G0, then actual G4 PASS. Not a rejected theorem.
 - Canonical theory ID: none; no mathematical measurement was made.
 
-## IDEA?frontier-l7-02 — selection and reorthogonalization matter for natural fits
+## IDEA?lanczos-frontier-codex-L7-02 — selection and reorthogonalization matter for natural fits
 
-Aliases: BJ/dev versus mirror/alternating/pivot-adaptive; full CGS2 versus window.
+Aliases: `IDEA?frontier-l7-02` (historical ID); BJ/dev versus mirror/alternating/pivot-adaptive; full CGS2 versus window.
 
 - Question/scope: whether choices produce reproducible >2 accuracy ratios in both fixed seeds at the same case/target/test distribution.
 - Mechanism/hypotheses: existing PD-T051 selections and arithmetic, not a new rule. Adaptive parent paths can differ between full and window modes and must be reported.
@@ -34,9 +34,9 @@ Aliases: BJ/dev versus mirror/alternating/pivot-adaptive; full CGS2 versus windo
 - Disposition/reason: deferred by G0 FAIL; resume only after G0/G4.
 - Canonical theory ID: none.
 
-## IDEA?frontier-l7-03 — BNT background and a literature fitting task
+## IDEA?lanczos-frontier-codex-L7-03 — BNT background and a literature fitting task
 
-Aliases: author-attributed Chebfun example; Octave; absolute-value degree80.
+Aliases: `IDEA?frontier-l7-03` (historical ID); author-attributed Chebfun example; Octave; absolute-value degree80.
 
 - Question/scope: execute the source tutorial or an explicitly documented numeric-vector adaptation under Octave; no bivariate parent rule is attributed to this univariate code.
 - Closest entry read in full: IDEA-266 and E6 external-code provenance.
@@ -48,9 +48,9 @@ Aliases: author-attributed Chebfun example; Octave; absolute-value degree80.
 - Disposition/reason: deferred; need runtime installation within writable roots, G0/G4, and a separately frozen source task/adapter.
 - Canonical theory ID: none.
 
-## IDEA?frontier-l7-04 — identifiable Zhu–Nakatsukasa code
+## IDEA?lanczos-frontier-codex-L7-04 — identifiable Zhu–Nakatsukasa code
 
-Aliases: ZN actual code; irregular-domain Vandermonde Arnoldi.
+Aliases: `IDEA?frontier-l7-04` (historical ID); ZN actual code; irregular-domain Vandermonde Arnoldi.
 
 - Question/scope/mechanism: locate author-attributed code before pinning, inspecting or executing it; polyrat is not a substitute.
 - Closest entry read in full: IDEA-267 and E6 external-code.md.
@@ -64,3 +64,7 @@ Aliases: ZN actual code; irregular-domain Vandermonde Arnoldi.
 ## Additive G4 status — 2026-11-05
 
 At bb67c1ee830d468fa33007e15008d5574d00ccf4, prescribed G4 developer replay executed both historical rows after G0 resolution. Matching source/input/order/ranks did not reproduce numeric gaps; all12 method gap screens failed, so all four empirical questions above remain deferred and no natural target was run. See g4-methods.md for unchanged criterion, measured discrepancies, source-layout correction/primitive validation and prospectively specified bounded attribution. This is routine explanation of an existing implementation measurement, not a newly proposed mechanism or negative theorem. Distinct review/root disposition remain required.
+
+## Current execution/status addendum — 2026-11-05 (audit L7G1-3)
+
+The NOT-RUN/deferred statements above describe the earlier G0/G4 stop checkpoints. IDEA?lanczos-frontier-codex-L7-01 and -02 subsequently executed after G4's explained-arithmetic disposition; their present disposition is **retained, finite empirical comparison completed**, with canonical measured theory `PD-T?lanczos-frontier-codex-L7-01` in [l7-natural-suite-measurements](theory/l7-natural-suite-measurements.md). The recorded Haswell outcome is 20/1280 losses, six same-group plus six cross-group directions, with the same-group restriction identified as post-registration. Cross-kernel counts differ (18/9 default AVX-512; 20/6 Haswell). No causal/universal or novelty claim follows. Full supplementary checking and Claude audit-01 completed; focused response re-audit is pending. The BNT and Zhu tasks (-03/-04) remain deferred for the stated access/runtime/source reasons. Historical IDs are retained as aliases; no final IDs are allocated.

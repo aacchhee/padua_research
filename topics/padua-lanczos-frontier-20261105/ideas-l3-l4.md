@@ -50,9 +50,9 @@ source norms differ; subset upper bounds do not bound the full scalar graph;
 an endpoint ratio below 100 cannot kill the unknown true ratio. Finite-u
 aggregate guarantees do not establish actual IEEE error realizability.
 
-## IDEA?lanczos-frontier-codex-L3a — Explicit-radius recurrence majorant
+## IDEA?lanczos-frontier-codex-L3-01 — Explicit-radius recurrence majorant
 
-Aliases: nonasymptotic inverse-score transfer; quantitative pivot continuation.
+Aliases: IDEA?lanczos-frontier-codex-L3a; L3a; nonasymptotic inverse-score transfer; quantitative pivot continuation.
 
 - Question / scope: give the normalized inverse score a finite-u radius and
   an explicit quadratic remainder for aggregate residuals under exact full
@@ -82,11 +82,11 @@ Aliases: nonasymptotic inverse-score transfer; quantitative pivot continuation.
   does not; a numerical small-error example cannot replace this obligation.
 - Actual result: analytic development, no experimental dependency; see L3.md.
 - Disposition: deferred by G0 FAIL; unchecked candidate formulas retained.
-- Canonical result: `PD-T?lanczos-frontier-codex-L3a`.
+- Canonical result: `PD-T?lanczos-frontier-codex-L3-01`.
 
-## IDEA?lanczos-frontier-codex-L3b — Finite decision-tree adaptive bound
+## IDEA?lanczos-frontier-codex-L3-02 — Finite decision-tree adaptive bound
 
-Aliases: switching-safe aggregate selection; adaptive pivot without tie gap.
+Aliases: IDEA?lanczos-frontier-codex-L3b; L3b; switching-safe aggregate selection; adaptive pivot without tie gap.
 
 - Question / scope: extend a finite-u guarantee to adaptive choices, including
   exact ties, without pretending a perturbed run follows the frozen exact rule.
@@ -108,9 +108,9 @@ Aliases: switching-safe aggregate selection; adaptive pivot without tie gap.
 - Actual result: analytic development only; see L3.md.
 - Disposition: deferred by G0 FAIL; unchecked finite-union argument retained.
 
-## IDEA?lanczos-frontier-codex-L4a — Positive-envelope spectral upper
+## IDEA?lanczos-frontier-codex-L4-01 — Positive-envelope spectral upper
 
-Aliases: Perron scalar-graph upper; weighted row/Collatz certificate.
+Aliases: IDEA?lanczos-frontier-codex-L4a; L4a; Perron scalar-graph upper; weighted row/Collatz certificate.
 
 - Question / scope: settle the rotQ24 degree-12 factor-ten conjunct in the
   full frozen scalar-CGS2 graph, retaining the original INCONCLUSIVE test.
@@ -141,12 +141,12 @@ Aliases: Perron scalar-graph upper; weighted row/Collatz certificate.
   decides the positive outcome without computing K exactly.
 - Actual runs: none; G0 was pending at registration and subsequently failed.
 - Disposition: deferred by G0 FAIL; no mathematical/certified result claimed.
-- Canonical result: reserved provisional `PD-T?lanczos-frontier-codex-L4a`
+- Canonical result: reserved provisional `PD-T?lanczos-frontier-codex-L4-01`
   only if its exact checks and independent reproduction are completed.
 
-## IDEA?lanczos-frontier-codex-L4b — Stronger BJ witness
+## IDEA?lanczos-frontier-codex-L4-02 — Stronger BJ witness
 
-Aliases: multiple-output scalar witness; improve beyond greedy target 90.
+Aliases: IDEA?lanczos-frontier-codex-L4b; L4b; multiple-output scalar witness; improve beyond greedy target 90.
 
 - Scope/mechanism: retain the full output matrix of the existing BJ node-sign
   witness; its spectral norm is at least the old target-column norm. If needed,
@@ -407,7 +407,7 @@ obstruction remain separate and unchanged.
   quantization10^6 passes, with the fixed integer readout independently
   checked. Final endpoints L=2041704913997 and B=13462956266 satisfy
   `L>100B=1346295626600`. Provisional
-  `PD-T?lanczos-frontier-codex-L4a` is PROVED as a finite computer-assisted
+  `PD-T?lanczos-frontier-codex-L4-01` is PROVED as a finite computer-assisted
   statement on the full PD-T138 graph at rotQ24 degree12, including the
   stronger named-alt comparison and hence the original minimum-comparator
   target. No second/third proposal or new error-sign search ran.
@@ -422,3 +422,35 @@ no actual IEEE, finite-u or all-degree statement is made. The original
 prospective novelty-gate timing deviation and Claude's still-pending
 explicit protocol disposition are preserved. No Git, shared-registry or
 handoff mutations were made by this worker.
+
+## Dated canonical/disposition update — 2026-11-05
+
+Earlier G0-deferred dispositions are historical. L3-01 (alias L3a) is a
+retained quantitative variant, PROVED analytic as
+PD-T?lanczos-frontier-codex-L3-01; L3-02 (alias L3b) is its retained
+PROVED adaptive corollary in the same theorem. The broader L3 target is
+OPEN. The result reformulates the finite-u item using per-column
+zeroth-order budgets; it does not give a uniform Hres-only transfer.
+See [ideas-l3-continuation.md](ideas-l3-continuation.md) for the final
+scope and family NOTE dispositions. Historical PD-T?lanczos-frontier-codex-L3a
+is an alias of the single canonical L3-01 theorem, not another result.
+
+For the shared L4 candidate ledger, canonical IDEA IDs are
+IDEA?lanczos-frontier-codex-L4-01 and IDEA?lanczos-frontier-codex-L4-02;
+the old IDEA L4a/L4b labels are aliases. Canonical positive theorem ID is
+PD-T?lanczos-frontier-codex-L4-01, with old PD-T L4a retained as an alias.
+The existing final dispositions above remain: L4-01 **REJECTED: failed**
+only for its original `100U<G_R` criterion with the fixed old BJ lower; its
+valid upper is reused in the positive theorem. L4-02 is **retained/successful**
+as a quantitative certificate variant of IDEA-250. The positive theorem is
+split from the rotQ24 conjunct of PD-T140. The separate negative
+`PD-N?lanczos-frontier-codex-L4-01` is split from L4-01's failed candidate
+subroute, not from that successful positive theorem.
+
+Timing qualifier for each IDEA L3-01, L3-02, L4-01 and L4-02: its draft
+first entered Git at 0574c47 before the required reading gate completed.
+Later gates preceded proof/certificate development but do not waive or
+cure this deviation; acceptance is AC's decision. L3-01's constants
+survived unchanged according to the developer account, with the
+unretained-draft byte-verification limit recorded in the theory Checks.
+See [gate-timing-response-01.md](gate-timing-response-01.md).

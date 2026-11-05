@@ -32,8 +32,7 @@ Overall status: PROVED (analytic consequence of l6-01; distinct independent reco
 | Nonexistence of the sequence satisfying 1–3 | PROVED | Uniform bound `e_k/u_k<=24 sqrt(3)c` below |
 | General actual-run Greenbaum target PD-T056(G) | OPEN | Not the negation asserted here; no actual execution or universal obstruction is supplied |
 
-Candidate / claim disposition: **REJECTED** for realization of PD-T145 with unbounded e/u by a near-orthogonal square Q and two complete uniformly O(u) local residuals.
-Rejection reason: **refuted**, within exactly hypotheses 1–3 and the displayed parameter range.
+Scoped claim disposition: **REJECTED: refuted** for realization of PD-T145 with unbounded e/u by a near-orthogonal square Q and two complete uniformly O(u) local residuals, within exactly hypotheses 1–3 and the displayed parameter range. The parent IDEA L6-01 remains retained as the PROVED complete-residual barrier.
 
 ## Negative-result scope
 
@@ -70,3 +69,5 @@ Parent-owned registry allocation and later required Claude audit. A prospective 
 2026-11-05, Codex mathematical developer, requested `gpt-6.1-sol`, xhigh; runtime variant/effort not independently exposed; rules `9825d184517db81d0aad8542fbd6639f2164b803`. New scoped negative statement separated from the quantitative theorem because the realization rejection is reported on its own. Exact target/kill and full continuation gate were saved before the proof. No final ID, Git mutation or scientific execution by this developer.
 
 2026-11-05: distinct Astra-high routine reconstruction PASS; accepted the reviewer's nonblocking hypothesis-scope wording clarification. This avoids an unproved irreducibility assertion and changes no mathematical conclusion. Acceptance metadata added; proof body unchanged.
+
+2026-11-05 audit-01 response, Codex statement/metadata worker; requested gpt-6.1-sol high; runtime variant/effort not independently exposed. Rules read at `7f50cae80f5372db7c278aef4ba4a0a05e1137ea`. L6-1: "remains unexecuted" above is preserved as the analytic boundary before the later technical allocation. Current execution metadata are in [the frozen-contract companion](l6-02-execution-metadata-20261105.md), with [L6-03](l6-03-frozen-n1-output.md) and [N02](l6-N02-frozen-n1-raw-data-nonrealizability.md). L6-3: the rejection object is the named unbounded-e/u realization claim only; the diagnostic candidate stays retained. The saved pre-gate residual draft already contained the identity and constants; the continuation/verification followed the completed gate. The saved candidate draft first entered Git at `0574c47` before its prospective source gate was complete. Later completed reading does not cure or waive that deviation; acceptance remains AC's decision. The dated chronology and missing-read/gate checkpoints are in [gate-timing-response-01.md](../gate-timing-response-01.md). No novelty or priority claim is added.

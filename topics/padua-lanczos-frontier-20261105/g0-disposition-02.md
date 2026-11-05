@@ -73,3 +73,11 @@ explicit protocol disposition at the later audit. G1/G2/G3/G4 have not been
 executed by this resolution. Original handoff01's scope, source norms,
 quantifiers, finite-versus-all-degree distinction and storage rules remain
 binding; none of its scientific targets is marked complete by this document.
+
+## 2026-11-05 — Claude audit-01 historical own-method reproduction addendum
+
+[PROT-1 and the orchestrator confirming rerun](audit-01/PROT.md#3-executions) report actual bit-for-bit reproduction of all12 historical own-method gaps across G0 T24/n12 and G4 rotpi4/n24 and triangle/n20, using frozen8359bf7 code on an AVX-512 Intel Xeon host with the OpenBLAS SkylakeX kernel. Matching input hashes and an independently repeated orchestrator execution are recorded there. The historical alternating G0 error is reconstructed from0.85u local residuals with amplification about4.03e3. This is new cross-family evidence, reused here by attribution; Codex did not rerun those kernels for this addendum.
+
+The scope is the own dev/mirror/alternating/adaptive methods only; upstream_xy was not rerun. Historical Q bytes remain unavailable for byte comparison. The audit orchestrator also qualifies the Haswell comparison: it does not bit-reproduce this developer's recorded current own-method gaps, differing by about8e-8 and7e-5 relative for the stated G0 dev/alternating values. The historical SkylakeX match does not depend on explaining those smaller remaining Haswell differences.
+
+This additive evidence preserves the original FAIL, original numeric rows, class-level arithmetic-sensitivity explanation and RESOLVED disposition under the unchanged explanation criterion. It neither invents old Q/H bytes nor claims a kernel envelope, tolerance waiver or general IEEE theorem. Future numerical receipts record CPU ISA, BLAS library/dispatch and core-type setting.
