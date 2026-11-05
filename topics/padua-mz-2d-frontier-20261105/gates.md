@@ -41,6 +41,14 @@ before profiles; the original criterion is preserved in handoff01.
 Complete scan every integer m2..300, n=m−1/m−2 planned; actual coverage
 will be stated separately. Any float hit requires exact acceptance.
 
-## G5 — IN DEVELOPMENT
+## G5 — 2026-11-05 — NOT RUN; analytic resolution
 
-F4 analysis and explicit-input lower-bound screen pending.
+Original numerical criterion is preserved in handoff01 and attempts/F4.md.
+Dated alternative: the complete analytic weighted-L1 density-tail proof
+establishes the stronger uniform conclusion directly, C*=28.37634<30,
+for every m>=2,n<m. Supplementary independent Astra reconstruction found
+no gap and separately checked small-degree formulae. Thus the planned
+finite lower-witness/fit screen is unnecessary for boundedness and was not
+executed. This is not a PASS of unrun numerical certification. Required
+Claude audit remains pending. See theory/f4-uniform-density-bound.md and
+independent-checks-math.md.
