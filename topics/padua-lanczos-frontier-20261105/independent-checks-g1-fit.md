@@ -88,3 +88,42 @@ No full-scan START has been issued. Actual execution remains forbidden until
 all152 rows have independent acceptance and root authorizes the final
 manifest. Native and producer remaining-rule completions/comparisons take
 priority; synthetic report acceptance supplies no real fit/trend verdict.
+
+## Actual full152-row execution after explicit START
+
+After the final pivot comparison completed152/152 independently matched rows,
+root inspected the canonical manifest and all eight acceptance receipts, then
+explicitly issued full-scan START. Only after the completed producer report
+existed, executed unchanged independent checker0bbcf385 against manifest
+SHA-2568bd04bb6502762a61d53d5633f6737786315d743b6e408e689d647ac7998c144
+and actual producer report SHA-256
+`5211917f379060bfa5f477354bbe0cf29066dba76d85d428d43de34a6190176b`.
+The source/input/report identities and exact argv were captured before the
+child invocation. Its own external1800s cap was retained.
+
+**PASS**, exit0 in29.717486s, with empty stderr. The independent checker
+revalidated the entire152-row input scope/hashes/metadata before any log,
+then independently reconstructed all eight rules' lower/upper/midpoint OLS
+fits, both grids' ratio comparator recipes and lower/upper/midpoint
+all-degree/training/holdout/early/late diagnostics. All reported descriptive
+intervals contain the independently computed outward enclosures.
+
+Both actual grid outcomes are **INCONCLUSIVE, certified counterchoice**.
+Each stored admissible canonical tau corner strictly violates the frozen
+late-minus-half-early clause; the independent sign comparison is positive.
+No universal KILL or covering-tree acceptance is claimed/needed for these
+counterchoices. This certifies failure of that universal finite operational
+predicate on each saved log-ratio box, not exponential growth of the true
+conditions or a capacity ratio, and supplies no asymptotic/IEEE conclusion.
+
+`evidence/g1-fit-independent-actual.json` retains the actual small receipt,
+source/manifest/report identities, prelaunch/execution/log identities, both
+nineteen-coordinate tau witnesses and their producer signed intervals,
+explicitly distinguishing those printed intervals from the independently
+verified strict signs. Actual raw root is
+`/tmp/padua-lanczos-frontier-g1-fit-independent/actual`; the1,035,283-byte
+producer report stays at `/tmp/padua-lanczos-frontier-g1-fit/actual/report.json`.
+No guard/interface failure or source change occurred in the actual check.
+Root accepted this PASS and directed no further checks/source changes.
+All raw artifacts are stable for the storage inventory; archival delivery
+and required distinct Claude scientific/protocol audit remain pending.

@@ -84,3 +84,5 @@ New (proposed):
 - Add L6-01 PROVED complete-square residual theorem and separate PD-N L6-01 PROVED scoped unbounded e/u obstruction; preserve original G OPEN. Add L6-03 MEASURED frozen actual n1 execution and PD-N L6-02 PROVED exact unchanged14slot nonrealizability, with byte witness and distinct executed trace. No corrected/toleranced/G target rejection. All final-ID/shared registry changes wait audited preparation.
 
 - Add L5d PROVED finite lower delta_obs(5)>=1/16384, theory/l5-04-n5-lower.md, independently reconstructed in the full real embedding. All three upper grids cap without a certificate; no n5 bracket, n6–8 trend or U2 upgrade.
+
+- Add provisional PD-T?lanczos-frontier-G1-fit MEASURED finite all152-row/four-rule/two-grid scan and frozen fits, theory/g1-finite-growth-measurements.md. Both independently verified interval verdicts are INCONCLUSIVE by certified late-slope counterchoices. No frozen-grid KILL, true-capacity or asymptotic inference; preserve all historical cost failures and distinct scheduling authorizations.

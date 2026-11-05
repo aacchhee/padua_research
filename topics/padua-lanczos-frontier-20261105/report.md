@@ -1,6 +1,6 @@
 # Lanczos frontier — aggregate separation and checked closure certificates
 
-Stage WORK. [Draft PR24](https://github.com/aacchhee/padua_research/pull/24), not ready for merge. Rules read at9825d184517db81d0aad8542fbd6639f2164b803; current mainaff30e8ad5542c94fab642ae024dc9aab4fa7ad7 merged without changing the frozen Lanczos sources. No final IDs assigned or canonical registries changed; [literal proposed changes](proposed-record-changes.md) await audited preparation.
+Stage AUDIT for the checked batch. [Draft PR24](https://github.com/aacchhee/padua_research/pull/24), not ready for merge. Rules read at9825d184517db81d0aad8542fbd6639f2164b803; current mainaff30e8ad5542c94fab642ae024dc9aab4fa7ad7 merged without changing the frozen Lanczos sources. No final IDs assigned or canonical registries changed; [literal proposed changes](proposed-record-changes.md) await audited preparation.
 
 ## L1: analytic separation on the saved sheared family
 
@@ -42,11 +42,11 @@ The [complete-square theorem](theory/l6-01-full-square-residual-bound.md) proves
 
 A [frozen actual n1 scalar run](theory/l6-03-frozen-n1-output.md) has now executed. A distinct integer-word checker reproduces all367 primitives and47 states, exact C1 completion, full residuals including omitted Y, Gram and conservative rational norm enclosures. The complete64u budgets pass, but the raw formed coefficients are exactly inconsistent: Hx[0,1]-Hx[1,0]=2^-55. The [finite nonrealizability record](theory/l6-N02-frozen-n1-raw-data-nonrealizability.md) proves only that these unchanged14 raw slots cannot be exact orthonormal sections of a positive measure in the fixed gauge. No correction, moment fit or nearby-model search occurred; general PD-T056(G) remains OPEN.
 
-## G1: remaining comparator cases
+## G1: full finite scan
 
-The exact fused producer and distinct native C++/GMP checker now match144/152 required rows: all76 T24 degree2–20 rows and68 rotated rows, including complete BJ, mirror and alternating2–20. The first fused BJ20 run completed821.603s under a separately documented1800s scheduling allocation; all19 rows agree exactly. All original nodes/sources/endpoints/choices/ties are retained. Previous scalar-native20 timeouts and all failed60s moderate-cost conditions remain recorded; no scientific criterion was changed.
+The exact fused producer and distinct native C++/GMP checker now match all152/152 required rows: all76 T24 and76 rotated degree2–20 rows for all four rules. The first fused BJ20 run completed821.603s under a separately documented1800s scheduling allocation; all19 rows agree exactly. All original nodes/sources/endpoints/choices/ties are retained. Previous scalar-native20 timeouts and all failed60s moderate-cost conditions remain recorded; no scientific criterion was changed.
 
-The8 remaining rotated pivot13–20 rows await the running producer under its1800s cap; all three native comparator20 runs have completed under900s. No completed-case or fit claim is made for those pending cases. The fitting implementation is synthetic-tested preparation only; the152-row gate remains. See [batching](g1-batching.md), [resource successor](g1-extended-pilot.md) and [independent exact check](independent-checks-g1-05.md).
+All three remaining native comparator20 runs complete under900s; their producers complete under1800s, with distinct full19-row comparisons. The152-row fit entry gate is now met. The first actual frozen fit completes16.972s externally/14.631s internally, and its distinct actual report checker passes29.717s. Both grids are INCONCLUSIVE, certified counterchoice: an admissible interval corner violates the late-slope condition. Neither grid triggers the frozen operational KILL; all endpoint/midpoint fits remain finite MEASURED diagnostics and prove no true-capacity asymptotic rate. See the [finite measured fit record](theory/g1-finite-growth-measurements.md), [batching](g1-batching.md), [resource successor](g1-extended-pilot.md) and [independent exact check](independent-checks-g1-05.md).
 
 ## Main result — L4
 
@@ -75,13 +75,13 @@ Large exact arrays remain local and regenerable outside Git, with [manifest and 
 ## Gates
 
 - **G0 RESOLVED**, additively under its unchanged explanation criterion: [disposition02](g0-disposition-02.md), [methods](g0-attribution-methods.md), [independent review](independent-checks-g0-resolution.md). Existing exact witness/certificate and symbolic replays pass. For numerical replay variation, independent high-precision projection, u-scale local residual propagation and kernel/precision controls explain arithmetic sensitivity. Historical Q/H/dispatch remain missing; old alternating7.301e-12 is scale-consistent, not reconstructed or bounded by a kernel envelope. The original dated FAIL remains unchanged.
-- **G1 INCOMPLETE; G2 W/R PASS on both grids; G3 n3 bracket accepted, n4–8 incomplete; G4 RESOLVED.** G1 has no completed fit or verdict; F is deferred. The L4 and aggregate-model results do not stand in for optimal Padua-radius brackets or high-degree polyrat replay. The L1/L2 and L3/L4 relevant mandatory repository-reading gates are now complete for the saved routes; no primary-fulltext/priority clearance is implied.
+- **G1 complete, interval verdict INCONCLUSIVE on both grids; G2 W/R PASS on both grids; G3 n3 bracket accepted, n4–8 incomplete; G4 RESOLVED.** G1 completes all152 rows and its independently verified finite fits; F is deferred. The L4 and aggregate-model results do not stand in for optimal Padua-radius brackets or high-degree polyrat replay. The L1/L2 and L3/L4 relevant mandatory repository-reading gates are now complete for the saved routes; no primary-fulltext/priority clearance is implied.
 
 ## Remaining directions
 
 | Direction | Status and next obligation |
 |---|---|
-| [L1](attempts/L1.md) | Handoff01 aggregate-model theorem option PROVED on SH_n. G1 scan remains incomplete; scalar-operation/IEEE and uniform finite-error extensions remain open. |
+| [L1](attempts/L1.md) | Handoff01 aggregate-model theorem option PROVED on SH_n. G1 scan/fits complete, both frozen interval verdicts INCONCLUSIVE; scalar-operation/IEEE and uniform finite-error extensions remain open. |
 | [L2](attempts/L2.md) | Saved smooth exact-base W/R formalizations PROVED on every SH_n after both-grid G2 acceptance. Original working-precision PD-T055 and F stay OPEN. |
 | [L3](attempts/L3.md) | Finite-error explicit-radius/tolerance/adaptive theorem PROVED; broader degree-uniform/efficient selection remains OPEN. |
 | [L4](attempts/L4.md) | PROVED finite formal comparison above. Actual IEEE activation, finite-u behavior and all-degree growth remain outside it. |
@@ -93,7 +93,7 @@ Large exact arrays remain local and regenerable outside Git, with [manifest and 
 
 The SH_n aggregate separation, actual-closure W/R growth theorems and finite full-scalar factor-ten certificate can enter a bivariate Lanczos/V+A note after the required audit, with their different source models stated separately. The first satisfies handoff01 L1’s aggregate-model option; uniform finite-error matching-rate extensions remain open. The finite L4 theorem and its explicit witness close its separate comparison. L4 alone supplies no all-degree or universal IEEE instability statement. The fixed-old-lower route obstruction explains the certificate improvement. Primary-source coverage/priority wording remains qualified by the pinned **PR21 (unmerged)** P3 comparison and its stated reading limits; no publication-level novelty is claimed.
 
-Some initial candidate formulas preceded completion of all mandatory shortlisted reading. That prospective novelty-gate timing deviation remains explicitly disclosed; later reading does not cure it. Claude must give a protocol disposition at the later audit. No waiver, merge readiness or final-ID assignment is implied. Next development is the remaining frontier under a new numbered handoff; only AC merges.
+Some initial candidate formulas preceded completion of all mandatory shortlisted reading. That prospective novelty-gate timing deviation remains explicitly disclosed; later reading does not cure it. Claude must give a protocol disposition at the later audit. No waiver, merge readiness or final-ID assignment is implied. Next is the required Claude Opus5.5 xhigh scientific/protocol audit in handoff06, including disposition of the remaining frontier; only AC merges.
 
 ## Rechecking without historical scratch files
 

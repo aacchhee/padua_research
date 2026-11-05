@@ -47,3 +47,11 @@ Exact n3 producer and distinct algebraic checker establish `1/512 <= delta_obs(3
 ## Handoff05 execution boundary
 
 G1 has144/152 independently matched rows, with full T24 and rotatedBJ/mirror/alternating2–20 accepted. Pivot producer remains within its allocated1800s cap; no actual fit before all152. G3 has a separate exact n4 lower1/2048 and n5 lower1/16384, with full kernels and independent execution; n4 upper exhausted/capped inconclusive, n5 upper reaches all three210s caps with20/63 proposals completed inconclusive and43 uncompleted. These lower endpoints do not decide the n3–8 optimal-radius trend. G4 remains resolved; the frozen natural suite actually completes all8cases,16accepted/8rejected references and distinct checks, retaining measured/end-to-end interpretation. The exact raw n1 branch is now a completed INCONSISTENT outcome, with general corrected G open.
+
+## Handoff05 full-scan acceptance
+
+All152/152 frozen rows now independently match exactly. Final pivot producer1571.209s completes under its original cap; separate full19-row comparison passes. The canonical manifest pins all8 original complete case artifacts and accepts the prior actual T2476-row comparison via explicitly derived identity links. Root verifies those identities and explicitly starts the first real frozen fitter and subsequent distinct report check, each capped1800s, with unchanged precision/cover rules. Fit outcomes remain pending at this entry; no finite-to-asymptotic inference or automatic grid kill follows from scan completion.
+
+## Handoff05 accepted G1 operational outcome
+
+The actual fitter completes16.972s external/14.631s internal and the distinct actual report checker passes29.717s, both below their1800s caps. All152 input rows, eight rule regressions and both grids' ratio recipes/diagnostics verify. Each grid is INCONCLUSIVE, certified counterchoice: its admissible corner has positive late-minus-half-early slope, violating the universal predicate. Early positivity passes; SSE universal covering is unnecessary after this counterchoice. No cover budget is exhausted and no grid KILL follows. Endpoint/midpoint fits are finite MEASURED diagnostics; no trueK or asymptotic conclusion. Original failed scheduling guards and earlier incomplete snapshots remain historical entries above.

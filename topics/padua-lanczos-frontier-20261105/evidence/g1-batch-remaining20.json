@@ -1,0 +1,317 @@
+{
+  "label": "REMAINING_ROTATED20_SCHEDULING_SUCCESSORS",
+  "authorization": "Root explicit2026-11-05: exactlymirror/alt/pivot20, each1800wall max2producers; unchanged fusedengine49b45df9.",
+  "prior60s_condition": "PriorFAIL retained; separate explicit resource successor. No engineCLI guard falsification.",
+  "wrapper": {
+    "path": "/tmp/padua-lanczos-frontier-g1-batch/remaining20/wrapper-reviewed-650876b2.py",
+    "bytes": 7573,
+    "sha256": "650876b2bb871c983b66e35f173ddb7c82dbb4126e43d40cbb1843b797cc3445"
+  },
+  "prospective_plan": {
+    "path": "/tmp/padua-lanczos-frontier-g1-batch/remaining20/plan-prospective.md",
+    "bytes": 3244,
+    "sha256": "7d283a23de106b3b4fcab439c5bb657a21e93da7b58d47e1fbe4974c8bceae07"
+  },
+  "queue": {
+    "path": "/tmp/padua-lanczos-frontier-g1-batch/remaining20/run_queue.py",
+    "bytes": 1874,
+    "sha256": "a39735fa918c7c6afe5c9008a41f9cf268617c32a9f16d2075006c40e3a0a92d"
+  },
+  "prelaunch_findings": {
+    "path": "/tmp/padua-lanczos-frontier-g1-batch/remaining20/prelaunch-findings.txt",
+    "bytes": 392,
+    "sha256": "4336eee0f31fe9261405b2f5f51708339ccab7d496adf1e2dc3f9423ace17f5a"
+  },
+  "external_case_cap_seconds": 1800,
+  "signal_cap_seconds": 1795,
+  "max_producer_workers": 2,
+  "cases": [
+    {
+      "rule": "mirror",
+      "result": "EXACT_CASE_COMPLETED",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/remaining20/mirror-receipt.json",
+        "bytes": 6722,
+        "sha256": "8ff230c14e2183fb5a2315b56da5f8f0d93a80ce4a28f67944e3d103006d3b83"
+      },
+      "code_sha256": "49b45df9c2c28e3e63e9b886ff873a744ea0f0a44cd5f51fe2e3a345eec81552",
+      "timing": {
+        "wall_seconds": 1057.4316371749992,
+        "process_cpu_seconds": 1056.246510378,
+        "basis_wall_seconds": 7.586695684996812,
+        "basis_cpu_seconds": 7.577355315
+      },
+      "complete_degrees": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "native_exact_comparison_degrees": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "all_original_nodes": 625,
+      "all_source_columns": 230,
+      "endpoint_file": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/remaining20/mirror/endpoints.json",
+        "bytes": 965833,
+        "sha256": "ff723646e7c80ebdf3a20f5bd8d69126600b2f17b282d02ca2dac1fd69227df4"
+      },
+      "baseline": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/remaining20/mirror/baseline.jsonl.gz",
+        "bytes": 6066096,
+        "sha256": "83808016941db2b2f943e31da4ae3bb3393d494cf6a014704886bc11067b3e7f"
+      },
+      "native_comparator": {
+        "path": "/tmp/padua-lanczos-frontier-g1-native-remaining/run/rotated-mirror-d20.jsonl",
+        "bytes": 943312,
+        "sha256": "e08a759eac1724fb7d7c7a34aa4d4695e1f740560fcd796dbf47b844d15e63b8"
+      },
+      "pre_run_worker": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/remaining20/mirror/pre-run.json",
+        "bytes": 3706,
+        "sha256": "a4835433b13c6cea12012d1476af9294c323de906653f29b270fc8818a1d3a58"
+      },
+      "supervisor": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/remaining20/mirror/supervisor-launch.json",
+        "bytes": 3438,
+        "sha256": "b520b39c91c28af569da108108d77ad64537540040751d544a5b3b5746b85585"
+      }
+    },
+    {
+      "rule": "alt",
+      "result": "EXACT_CASE_COMPLETED",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/remaining20/alt-receipt.json",
+        "bytes": 6692,
+        "sha256": "964cc3e384b6cb02e72503d51351de7128d9cd2276f55a0d35786b916be4c7da"
+      },
+      "code_sha256": "49b45df9c2c28e3e63e9b886ff873a744ea0f0a44cd5f51fe2e3a345eec81552",
+      "timing": {
+        "wall_seconds": 1727.907064375002,
+        "process_cpu_seconds": 1726.519519948,
+        "basis_wall_seconds": 6.976221942000848,
+        "basis_cpu_seconds": 6.9616715110000005
+      },
+      "complete_degrees": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "native_exact_comparison_degrees": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "all_original_nodes": 625,
+      "all_source_columns": 230,
+      "endpoint_file": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/remaining20/alt/endpoints.json",
+        "bytes": 1070317,
+        "sha256": "625981896f96b8f568cb8ba48115a9786e9989f5c56d53bada0de5db00059994"
+      },
+      "baseline": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/remaining20/alt/baseline.jsonl.gz",
+        "bytes": 6121749,
+        "sha256": "f423419722a5a45181ade42fdcb8c6955c761a039325d503b161413f423c088c"
+      },
+      "native_comparator": {
+        "path": "/tmp/padua-lanczos-frontier-g1-native-remaining/run/rotated-alt-d20.jsonl",
+        "bytes": 1047866,
+        "sha256": "d76c0b8e4a55531313df0291c3d3e98f40c6f85358c9ed130a7869f074425994"
+      },
+      "pre_run_worker": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/remaining20/alt/pre-run.json",
+        "bytes": 3680,
+        "sha256": "3436c33179d0117312f0c4d3b9289ce05641a98ab96b49a000710364076ae13a"
+      },
+      "supervisor": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/remaining20/alt/supervisor-launch.json",
+        "bytes": 3415,
+        "sha256": "cb6b3d2e982b04de7a40130c974868a9151ddaad4fcc89256086bfef9b9abbea"
+      }
+    },
+    {
+      "rule": "pivot",
+      "result": "EXACT_CASE_COMPLETED",
+      "receipt": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/remaining20/pivot-receipt.json",
+        "bytes": 6720,
+        "sha256": "31a2fdb5ec24db2cb0a2c6d6a013b69daca04697bcff13bd0d7f0982e9022e4f"
+      },
+      "code_sha256": "49b45df9c2c28e3e63e9b886ff873a744ea0f0a44cd5f51fe2e3a345eec81552",
+      "timing": {
+        "wall_seconds": 1571.2090656399996,
+        "process_cpu_seconds": 1571.113567358,
+        "basis_wall_seconds": 13.412982990001183,
+        "basis_cpu_seconds": 13.410620791000001
+      },
+      "complete_degrees": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "native_exact_comparison_degrees": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "all_original_nodes": 625,
+      "all_source_columns": 230,
+      "endpoint_file": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/remaining20/pivot/endpoints.json",
+        "bytes": 1047001,
+        "sha256": "16742665027651125c6fe1cb1f4e5fdcc221377e836fc5b13bbf16ca8a9bb4b1"
+      },
+      "baseline": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/remaining20/pivot/baseline.jsonl.gz",
+        "bytes": 6092835,
+        "sha256": "a66da8ff6f5d09cdd3af0bfe4171738c908dec801f6febb21c0fc6c9748ff691"
+      },
+      "native_comparator": {
+        "path": "/tmp/padua-lanczos-frontier-g1-native-remaining/run/rotated-pivot-d20.jsonl",
+        "bytes": 1023629,
+        "sha256": "8bb75f5909cd15789d5a9ea9396b701b9e1d7a5a033b7275527bf142ae64573d"
+      },
+      "pre_run_worker": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/remaining20/pivot/pre-run.json",
+        "bytes": 3698,
+        "sha256": "ed4a68f129a1df7c0bc3620ffeaae6cca7992657d1e1fba2a61ec47e9ae92de1"
+      },
+      "supervisor": {
+        "path": "/tmp/padua-lanczos-frontier-g1-batch/remaining20/pivot/supervisor-launch.json",
+        "bytes": 3431,
+        "sha256": "48241bfecbd90bd0d14efabbe2933e2a85c80c2369e81d40022eeb81cd64bb08"
+      }
+    }
+  ],
+  "limits": [
+    "No extra cases/optimizations/cap increases or automatic retries.",
+    "Completed producer cases compareall19native rows exactly; distinct final checks recorded separately.",
+    "No fit beforeall152independentPASS, no operational/asymptotic conclusion.",
+    "Raw outputs temporaryoutsideGit; archivalpending."
+  ],
+  "all_three_producers_complete": true,
+  "new_matched_rows_13_to_20": 24,
+  "distinct_checker_reported_frozen_coverage": "152/152; root owns canonical acceptance and any fit authorization",
+  "independent_comparisons": [
+    {
+      "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/evidence/g1-batch-independent-mirror20.json",
+      "bytes": 3327,
+      "sha256": "fadb5fd5555b899d3036f142da2c75a821e728a3aeeb0cef8093bb4eed487832"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/evidence/g1-batch-independent-alt20.json",
+      "bytes": 3302,
+      "sha256": "9b63a20ccc88e5462648927e2d2a870319c5d0f6f968d03b446b42fe8f4f0ee2"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/evidence/g1-batch-independent-pivot20.json",
+      "bytes": 3320,
+      "sha256": "a4d3182d3b90efec3551bc224a7803295852a32a90c0acfe5c53294533d2e718"
+    }
+  ],
+  "queue_results": {
+    "path": "/tmp/padua-lanczos-frontier-g1-batch/remaining20/queue-results.json",
+    "bytes": 790,
+    "sha256": "810eca3703dff0bbfce178af2c9be8a7738421fbc51d30ac87e9044d804eb4a6"
+  },
+  "numerical_raw_files_stable": true
+}

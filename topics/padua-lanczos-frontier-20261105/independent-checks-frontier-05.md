@@ -642,3 +642,118 @@ or an asymptotic U2 conclusion. The separate upper pilot was still running
 when this integration review was requested; no upper certificate or completed
 upper outcome is inferred here. Required later Claude audit remains pending.
 I performed no additional scientific execution for this review.
+
+## G1 manifest and frozen fitter: bounded pre-START source review
+
+At root's request while the actual scan still had144/152 accepted rows, I
+reviewed source and contract only. I did not invoke a fitter, take logarithms
+of actual endpoint data, compute a diagnostic or rerun synthetic tests.
+Reviewed byte identities:
+
+- Manifest builder `code/g1_batch_independent_manifest.py`:
+  `ff0a6f0e6fd616d1396579f405f3096c5611a0550738761e4d8fd4557fe3b9b2`.
+- Its identity helper source `code/g1_batch_independent_compare.py`:
+  `7dfd517188274b67c48a7171b3812d1c43dc69bcca72ec08775eba244d44f928`.
+- Frozen producer `code/g1_fit.py`:
+  `18eea30277a3d2d58aab8ece2f15b33e83a1178d5b03e96180229b41a247aeac`.
+- Distinct verifier `code/g1_fit_independent.py`:
+  `0bbcf38542e077806b8d2f9c36c7b0bdf8ca19105f562b7b4369aefaed70750c`.
+- `g1-fit-spec.md`:
+  `a922144e93fdc0394b712b569d0d93d2990c6b7916932063f2f104dea956c314`.
+- `g1-fit-methods.md`:
+  `98cc45161903691b852367033ea10f726de262b51f351b534d31e2e2251429aa`.
+
+Scoped source/contract PASS: no material mismatch requiring a block on root's
+future explicit START, once canonical152-row independent acceptance exists.
+The builder validates all four rotated exact19-row acceptance receipts and
+their fixed source identities before creating any manifest output. Each
+triangle link preserves the prior actual76-row T24 acceptance and pins its
+original producer/native bytes; this is explicitly identity-only derivation,
+not a new triangle scientific rerun. Missing or incomplete rotated acceptance
+fails before writing the manifest. No builder path computes logarithms.
+
+The fitter then freshly validates all eight cases and19 degrees per case,
+both endpoint artifact identities, exact producer/native rational equality,
+full original-node/source/basis counts, trace, legal choices/ties, positive
+endpoint order and upper minimum. The entire152-row load completes before
+the first logarithm or fitting call. Its independent verifier separately
+rechecks complete input scope and original endpoint values; it does not
+accept the producer's final Boolean as a mathematical certificate.
+
+I reconstructed the contract-sensitive arithmetic from the source: separate
+per-degree comparator minima, half-logs of squared ratios, outward dyadic
+rounding and sign-aware scaled log2 error, both OLS predictor families,
+training2--14 and heldout15--20 log-ordinate SSE, exact early-positive and
+late-minus-half-early corner signs/equality conventions, and the symmetric
+quadratic `2*SSE_P-SSE_E`. The center/radius and direct interval bounds are
+conservative even for an indefinite quadratic. Tau vectors remain admissible
+in the original independent endpoint box. A KILL requires both slope passes
+and a complete certified cover; processed-node exhaustion never becomes a
+KILL. The distinct verifier reconstructs OLS/quadratic arithmetic, witnesses
+or every split/leaf, including the frozen width/tie splitting rule. Tighter
+independent log bounds verify supplier enclosures used solely for that rule.
+
+The128/256/512 fractional-bit schedule and4096 processed boxes per grid and
+precision are unchanged. Root's1800s wall limit must be supplied by the
+external launcher: the fitter itself has no wall timer. If it fires, partial
+artifacts must remain unaccepted and incomplete descriptive reports must be
+identified as pending. The saved synthetic PASS receipts have the reviewed
+producer/verifier hashes and explicitly exclude real G1 inputs; they are
+preparation evidence, not an actual gate result or this reviewer's execution.
+Any completed real report still requires the separately assigned actual
+distinct verification. A certified counterchoice means this finite universal
+kill predicate fails, not that exponential separation or an asymptotic rate
+has been established. No new mechanism or threshold was introduced here.
+
+## G1 completed finite measurement integration review
+
+Root requested a bounded claim/status review after actual producer execution
+and actual distinct full-report verification, without another scientific run.
+I read the complete original `theory/g1-finite-growth-measurements.md` at
+SHA256 `929b4feb27c644ed935ea35034daf76e2501c791c0e5efa2bcc8c66e2e557a6a`,
+the complete actual producer/independent receipts, and the independent report.
+I checked the pinned full report identity and inspected its saved exact
+rational output intervals against the displayed decimal tables; this only
+formats existing results and performs no new logarithm, fit or scientific run.
+
+Final corrected theory SHA256
+`fda5bd26b884a7d1ceb52c40e6ab3e21b8a6e458c243175a5e710cd7467b619d`
+receives integration PASS. Essential reviewed receipts are
+`evidence/g1-fit-actual.json`,10627bytes,SHA256
+`d9986a38dbac05132093db29a81f7fac5e9496cd43792eaadf299073567c9ae9`,
+and `evidence/g1-fit-independent-actual.json`,4813bytes,SHA256
+`68b0382ea05cd7c4669ba881fb3abe0fa173f16e7f11d2d1b67bd5260ae64481`.
+The actual1035283-byte full report has SHA256
+`5211917f379060bfa5f477354bbe0cf29066dba76d85d428d43de34a6190176b`.
+Actual distinct checker execution is attributed to its owner:29.717486s
+under1800s, unchanged source0bbcf385, complete152-row guards, independent
+descriptive outward intervals and both decisive admissible counterchoices PASS.
+
+The same saved tau corner on both grids maximizes the linear late-minus-
+half-early expression. Its strict positive certified value is enough to
+falsify the universally quantified conjunction. The corrected text properly
+says the universal predicate over the box is false, not that every point
+fails. This establishes each frozen operational outcome INCONCLUSIVE,
+certified counterchoice. It does not determine the actual true-condition
+ordinate choices. The producer separately certifies a positive universal
+early-slope minimum; the distinct checker on this counterchoice branch
+does not independently re-evaluate that extra clause. It verifies the
+decisive late-corner sign, which suffices for the reported outcome.
+
+I also found and corrected an execution-provenance wording overstatement:
+the independent receipt key `exact_product_compare_to_one=1` names an
+equivalent sign comparison, but its source first tries outward logarithm
+signs and expands a rational product only if needed. That field alone is
+not evidence that a product was actually expanded. The final theory says
+certified slope-sign verification and explicitly explains the field. The
+producer report labels its own decisive route `outward logarithm sign`.
+Raw receipts, sources, thresholds and numerical results were preserved.
+
+Both outcomes occurred at128bits with empty restart history and no covering
+boxes. The universal SSE clause was not needed or decided; its descriptive
+endpoint/midpoint heldout diagnostics were computed and distinctly checked.
+All displayed decimal tables agree with the saved rational report intervals.
+The MEASURED finite-fit status and explicit absence of KILL, trueK or
+asymptotic conclusions correctly preserve the original rules. No new
+mechanism, scientific rerun or stronger general claim is introduced.
+Required later Claude audit and archival delivery remain separate obligations.

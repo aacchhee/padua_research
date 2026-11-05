@@ -245,3 +245,116 @@ queue's corresponding-native-PASS gate/max2 workers and each producer's
 scope; actual full native preflight remains due per case before launch.
 Raw review receipt is
 `/tmp/padua-lanczos-frontier-g1-check05/remaining-producer-preflight.json`.
+
+### First remaining native completion: mirror
+
+Actual native mirror20 completed in435.957685s under900s. All19 rows,
+625 nodes/230 sources/full exact Gram, positive endpoint order/minimum and
+all inherited2–12 endpoint/choice/tie checks pass. Receipt
+`evidence/g1-batch-independent-native-mirror20.json` pins the raw receipt,
+binary/compiler/dependency/source identities and endpoint/progress outputs.
+Fresh producer agreement remains pending; no additional matched row is
+accepted from native completion alone. Alt remains active and pivot takes
+the free native worker slot, retaining max2.
+
+Independently executed the producer mirror wrapper's complete read-only
+preflight against this actual native PASS: all checks pass, no engine import
+or scientific execution by this checker. Raw preflight receipt is
+`/tmp/padua-lanczos-frontier-g1-check05/mirror-producer-preflight.json`.
+
+Supplementary reviewer accepted native launcher11c5ce4e. Its nonblocking
+GMP-version provenance observation is addressed by an actual during-run
+dpkg-query of libgmp-dev/libgmp10/libgmpxx4ldbl: all are2:6.3.0+dfsg-3.
+The exact query, stdout and observed UTC17:23:40 are in the raw
+gmp-package-observation.json sidecar, referenced by the compact receipt.
+The running launcher remains immutable; its prior-version literal is not
+misrepresented as a package query made before the first child launch.
+
+### Second remaining native completion: alt
+
+Actual native alt20 completed in847.317677s under its900s cap. All19 rows,
+625 nodes/230 sources/full exact Gram and inherited2–12 checks pass.
+`evidence/g1-batch-independent-native-alt20.json` records the complete
+provenance and raw artifact identities. Independently re-executed the
+producer alt wrapper's full read-only preflight on this actual native PASS:
+all checks pass, with no numerical engine import/run by this checker.
+Raw preflight receipt is
+`/tmp/padua-lanczos-frontier-g1-check05/alt-producer-preflight.json`.
+Fresh producer agreement remains pending. Pivot remains the only active
+native case, retaining its own original900s cap; no extra allocation/retry.
+
+### Third native completion and final native allocation outcome
+
+Actual native pivot20 completed in785.905663s under900s. All19 rows,
+625 nodes/230 sources/full exact Gram and inherited2–12 checks pass.
+Receipt `evidence/g1-batch-independent-native-pivot20.json` pins its complete
+provenance. The new launcher completed all three allocated cases without
+retry/cap; `evidence/g1-batch-independent-native-remaining.json` summarizes
+their individual receipt/output identities and measured costs. No native
+case remains active. Fresh producer matches are still pending and the
+accepted scan scope remains128/152 until those comparisons execute.
+
+Independently executed the full producer pivot preflight against its actual
+native PASS: all checks pass, with no numerical engine import/run by this
+checker. Its raw receipt is
+`/tmp/padua-lanczos-frontier-g1-check05/pivot-producer-preflight.json`.
+Producer concurrency/caps remain its separately reviewed max2/1800s
+allocation; completing the native cases does not increase those limits.
+
+## Fresh remaining-rule producer comparisons
+
+Mirror producer completed in1057.431637s under its1800s cap. Actually
+executed new independent `code/g1_batch_independent_rule_compare.py`,
+SHA-256
+`fcab364d13380d9b0132626ef8d8d6d188b6341ce8db1f019ed441468f0c4d76`:
+all19 mirror rows/76 exact rational endpoint pairs and all compared metadata
+pass against the independently completed native case. Comparison elapsed
+1.516878s. Receipt `evidence/g1-batch-independent-mirror20.json` pins the
+exact command and both source/receipt/output identities. No native rerun.
+
+The eight new mirror13–20 rows raise the independently matched scan scope
+to136/152. Alt/pivot16 high rows remain pending; no real fit START or trend
+verdict is authorized by this intermediate checkpoint.
+
+Alt producer completed in1727.907064s within its unchanged1800s ceiling.
+Actually executed the same pinned independent remaining-rule comparator:
+all19 alt rows/76 exact rational endpoint pairs and all metadata pass against
+its native case. Comparison elapsed1.653751s. Receipt
+`evidence/g1-batch-independent-alt20.json` pins both source/receipt/output
+identities and exact invocation. This adds eight alt13–20 rows and raises
+the matched scope to144/152. Only pivot13–20 remains pending. No final
+manifest is built or real fit/log diagnostic run at this intermediate step.
+
+### Final pivot comparison and full152-row acceptance
+
+Pivot producer completed in1571.209066s under1800s. Actually executed the
+same pinned independent remaining-rule comparator: all19 pivot rows/76
+exact rational endpoint pairs and all metadata pass. Comparison elapsed
+1.675377s. Receipt `evidence/g1-batch-independent-pivot20.json` pins the
+actual command and artifacts. The eight new pivot13–20 rows complete
+**152/152 independently matched frozen rows**. Every native/producer case
+finished within its separately authorized cap; no successful case was rerun
+to obtain these remaining comparisons.
+
+Only after this final PASS, executed
+`code/g1_batch_independent_manifest.py` to construct the canonical eight-case
+g1-fit-input-v1 manifest at
+`/tmp/padua-lanczos-frontier-g1-check05/full-fit-input/manifest.json`,
+7308bytes, SHA-256
+`8bd04bb6502762a61d53d5633f6737786315d743b6e408e689d647ac7998c144`.
+Each case references one canonical complete19-row producer file and one
+canonical complete19-row independent file; no partial outputs were merged.
+The four original T24 cases reuse their prior actual76-row acceptance via
+small derived identity-link receipts, explicitly claiming no new rerun.
+Their original inputs and actual comparison record are hash-pinned. All
+rotated cases reference the new actual comparison receipts directly.
+
+Byte-identical small manifest/derived-receipt copies are retained under
+`evidence/g1-batch-independent-full-fit-manifest.json` and
+`evidence/g1-batch-independent-t24-*-acceptance-link.json`. The recorded
+canonical paths remain the actual generation/input paths; raw retrieval and
+archival delivery are still pending. Building the manifest computed no log,
+fit or diagnostic. Root inspected its identities/eight PASS receipts and
+then separately issued explicit full-scan START; actual report verification
+is recorded in independent-checks-g1-fit.md, not inferred from endpoint
+agreement or manifest construction.

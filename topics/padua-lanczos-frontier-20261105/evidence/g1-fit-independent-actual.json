@@ -1,0 +1,141 @@
+{
+  "status": "PASS independent complete G1 descriptive report/certificate verification",
+  "synthetic_only": false,
+  "checker": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_fit_independent.py",
+    "sha256": "0bbcf38542e077806b8d2f9c36c7b0bdf8ca19105f562b7b4369aefaed70750c",
+    "bytes": 30621
+  },
+  "manifest": {
+    "path": "/tmp/padua-lanczos-frontier-g1-check05/full-fit-input/manifest.json",
+    "sha256": "8bd04bb6502762a61d53d5633f6737786315d743b6e408e689d647ac7998c144",
+    "bytes": 7308
+  },
+  "report": {
+    "path": "/tmp/padua-lanczos-frontier-g1-fit/actual/report.json",
+    "sha256": "5211917f379060bfa5f477354bbe0cf29066dba76d85d428d43de34a6190176b",
+    "bytes": 1035283
+  },
+  "grids": {
+    "triangle": {
+      "reported_status": "INCONCLUSIVE, certified counterchoice",
+      "independent": {
+        "clause": "late-half-early",
+        "exact_product_compare_to_one": 1
+      },
+      "descriptive_intervals": "PASS independent outward enclosures"
+    },
+    "rotated": {
+      "reported_status": "INCONCLUSIVE, certified counterchoice",
+      "independent": {
+        "clause": "late-half-early",
+        "exact_product_compare_to_one": 1
+      },
+      "descriptive_intervals": "PASS independent outward enclosures"
+    }
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_fit_independent.py",
+    "--manifest",
+    "/tmp/padua-lanczos-frontier-g1-check05/full-fit-input/manifest.json",
+    "--report",
+    "/tmp/padua-lanczos-frontier-g1-fit/actual/report.json",
+    "--receipt",
+    "/tmp/padua-lanczos-frontier-g1-fit-independent/actual/receipt.json"
+  ],
+  "scope": "Finite descriptive fits and unchanged operational certificates only; no asymptotic claim.",
+  "actual_execution": {
+    "elapsed_seconds": 29.71748594699966,
+    "external_cap_seconds": 1800,
+    "raw_receipt": {
+      "path": "/tmp/padua-lanczos-frontier-g1-fit-independent/actual/receipt.json",
+      "bytes": 1872,
+      "sha256": "8e52a74e50ea39db25fc481fa6656c79126c067fdad3a32bceae2a75d4e9181d"
+    },
+    "prelaunch": {
+      "path": "/tmp/padua-lanczos-frontier-g1-fit-independent/actual/prelaunch.json",
+      "bytes": 1526,
+      "sha256": "da01b448bc10c56762507bdfbc6a9ed53f947b6843d4a26f3ab08872c8a8a6d4"
+    },
+    "launch": {
+      "path": "/tmp/padua-lanczos-frontier-g1-fit-independent/actual/launch.json",
+      "bytes": 1138,
+      "sha256": "e3111f50d7badfbad3d1bcbf8f096935d73ef6902b450acc6a9eeb1f815fb529"
+    },
+    "stdout": {
+      "path": "/tmp/padua-lanczos-frontier-g1-fit-independent/actual/stdout.log",
+      "bytes": 1872,
+      "sha256": "8e52a74e50ea39db25fc481fa6656c79126c067fdad3a32bceae2a75d4e9181d"
+    },
+    "stderr": {
+      "path": "/tmp/padua-lanczos-frontier-g1-fit-independent/actual/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "accepted_witness_records": {
+    "triangle": {
+      "violated_clause": "late_minus_half_early",
+      "tau": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "producer_signed_interval": [
+        "361123958218926752477554136682626387195/340282366920938463463374607431768211456",
+        "180561979109463376238777068341313193607/170141183460469231731687303715884105728"
+      ],
+      "independent_comparison_sign": 1,
+      "limits": "Stored signed interval is producer output; independent checker separately certified the same strict sign. This disproves only the universal finite kill predicate."
+    },
+    "rotated": {
+      "violated_clause": "late_minus_half_early",
+      "tau": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1/2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "producer_signed_interval": [
+        "323834294280464585430837745522635479051/340282366920938463463374607431768211456",
+        "323834294280464585430837745522635479069/340282366920938463463374607431768211456"
+      ],
+      "independent_comparison_sign": 1,
+      "limits": "Stored signed interval is producer output; independent checker separately certified the same strict sign. This disproves only the universal finite kill predicate."
+    }
+  },
+  "interpretation": "Both frozen grids INCONCLUSIVE, certified counterchoice; no universal KILL, true-condition rate, asymptotic conclusion or IEEE claim."
+}

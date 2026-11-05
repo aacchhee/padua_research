@@ -1,0 +1,169 @@
+{
+  "status": "PASS derived T24 case identity link to prior actual exact acceptance; no new rerun",
+  "grid": "triangle",
+  "rule": "bj",
+  "degrees": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "endpoints": {
+    "path": "/tmp/padua-lanczos-frontier-g1/full/triangle-bj/endpoints.json",
+    "bytes": 44755,
+    "sha256": "d4791ceec194d7739256a70422b39769f7722d15d32ad86326e98a4d29734caa"
+  },
+  "independent_endpoints": {
+    "path": "/tmp/padua-lanczos-frontier-g1-independent/high20/triangle-bj-d20.jsonl",
+    "bytes": 19643,
+    "sha256": "0e046a58ae330cd4402bf4050958f302a49b9d8e0ea2701c0c7325802661b1bc"
+  },
+  "prior_actual_acceptance": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/evidence/g1-independent-triangle20-comparison.json",
+    "bytes": 10229,
+    "sha256": "a6e785dd8150eef1d48c5a2af99508ccf75115e1dbe4ac4c950721af202d2d6d"
+  },
+  "prior_case_comparison": {
+    "status": "PASS exact independent/producer row identities",
+    "rows": [
+      [
+        "triangle",
+        "bj",
+        2
+      ],
+      [
+        "triangle",
+        "bj",
+        3
+      ],
+      [
+        "triangle",
+        "bj",
+        4
+      ],
+      [
+        "triangle",
+        "bj",
+        5
+      ],
+      [
+        "triangle",
+        "bj",
+        6
+      ],
+      [
+        "triangle",
+        "bj",
+        7
+      ],
+      [
+        "triangle",
+        "bj",
+        8
+      ],
+      [
+        "triangle",
+        "bj",
+        9
+      ],
+      [
+        "triangle",
+        "bj",
+        10
+      ],
+      [
+        "triangle",
+        "bj",
+        11
+      ],
+      [
+        "triangle",
+        "bj",
+        12
+      ],
+      [
+        "triangle",
+        "bj",
+        13
+      ],
+      [
+        "triangle",
+        "bj",
+        14
+      ],
+      [
+        "triangle",
+        "bj",
+        15
+      ],
+      [
+        "triangle",
+        "bj",
+        16
+      ],
+      [
+        "triangle",
+        "bj",
+        17
+      ],
+      [
+        "triangle",
+        "bj",
+        18
+      ],
+      [
+        "triangle",
+        "bj",
+        19
+      ],
+      [
+        "triangle",
+        "bj",
+        20
+      ]
+    ],
+    "inputs": [
+      {
+        "path": "/tmp/padua-lanczos-frontier-g1-independent/high20/triangle-bj-d20.jsonl",
+        "bytes": 19643,
+        "sha256": "0e046a58ae330cd4402bf4050958f302a49b9d8e0ea2701c0c7325802661b1bc"
+      },
+      {
+        "path": "/tmp/padua-lanczos-frontier-g1/full/triangle-bj/endpoints.json",
+        "bytes": 44755,
+        "sha256": "d4791ceec194d7739256a70422b39769f7722d15d32ad86326e98a4d29734caa"
+      }
+    ],
+    "code_sha256": "64ee9f3fefdbba8f944f9ec1580352d46b70bc18e332dc715032db11b462fb5e",
+    "command": [
+      "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_independent_compare.py",
+      "--independent",
+      "/tmp/padua-lanczos-frontier-g1-independent/high20/triangle-bj-d20.jsonl",
+      "--producer",
+      "/tmp/padua-lanczos-frontier-g1/full/triangle-bj/endpoints.json",
+      "--receipt",
+      "/tmp/padua-lanczos-frontier-g1-independent/triangle-bj-high20-fresh-comparison.json"
+    ]
+  },
+  "derivation_code": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/code/g1_batch_independent_manifest.py",
+    "bytes": 4956,
+    "sha256": "ff0a6f0e6fd616d1396579f405f3096c5611a0550738761e4d8fd4557fe3b9b2"
+  },
+  "limits": "Identity-only derivation from retained actual comparison; no new scientific execution."
+}
