@@ -72,7 +72,7 @@ The report's item (C) was reworded to match.
 |---|---|---|
 | De Marchi 2022 p. 23 | **Confirmed** on the page image: §3.3 item (2) states the corners observation. | AC copy `10.33205-cma.1070020-2240064.pdf`, rendered |
 | Kuznetsova 1995 theorem page (p. 259) | **Not rechecked this session.** It rests on Claude's 2026-11-03 page-image check, recorded in the record. An independent recheck is still open for the auditor. | — |
-| Pimenova 1979 constant (image) | **Still open.** The hidden browser pane renders blank and the browser download did not reach a connected folder. The record keeps the constant UNCONFIRMED. | — |
+| Pimenova 1979 constant (image) | **Closed in the supplement below.** At first: the hidden browser pane rendered blank, and the download had not yet reached the folder. | see supplement |
 | SVZ eq. (25) p. 417 / Table 1 p. 421 | **Confirmed in the journal version's born-digital text layer** (Springer, via NTNU). (24) gives card X_n = (n+2)(n+3)/2 (Padua degree n+1), while (25) prints 1/((n+2)(n+3)), which is the misprint; the correct form is 1/((n+1)(n+2)). The Table 1 Padua row (4.1E-2, 2.5E-3, 8.9E-4, 2.4E-4, 1.4E-4, 5.7E-5, 4.0E-5, 2.0E-5) equals the check script's correct-denominator output to the printed digits. The table's index convention is the P2 reader's, not re-derived. Not an image check. | pdf.js text layer |
 | Mastroianni–Russo Thm 11 p. 23 (visual) | **Confirmed** on the page images of pp. 22–23. | AC copy, rendered |
 | Xu 1996 journal p. 231, Thm 3.3 (mandatory) | **Resolved.** The journal page image prints **1 < p < ∞**, while the author preprint has 1 < p ≤ ∞. The proposed journal correction stands as a documented version difference. | AC copy `1-s2.0-S0021904596901021-main.pdf`, rendered p. 231 |
@@ -91,3 +91,19 @@ The report's item (C) was reworded to match.
 ## Status
 
 All six findings are answered with changes. None remains open on the developer side. Material changes: the F1 verdict split, and the F2, F4 and F6 record corrections. These return to the independent auditor (handoff 06). Open source obligations carried forward: the Pimenova image, an independent Kuznetsova recheck, and the Greenbaum statement re-read (optional). No mathematical claims, PD statuses, IDEAs or final IDs were changed.
+
+## Supplement (2026-11-05, ~15:35, after AC's message "two checks: pdf are in the folder I think")
+
+The browser downloads made earlier in this session had reached `Downloads\padua\papers` after all. With these files the two checks left open, plus an image check of SVZ, are closed on rendered page images (pdftoppm, cloud workspace):
+
+- **Pimenova 1979** (`pimenova-1979-dan43113.pdf`), pp. 52–53.
+  - Thm 1, eq. (2): (2/π²){|sin(n(x+y)/2) sin(n(x−y)/2)| + |cos(n(x+y)/2) cos(n(x−y)/2)|} ln² n + O(ln n). This equals Kuznetsova eq. (1) at m = n.
+  - Eq. (3): (4/π²)|sin((n+½)x)|·|sin((n+½)y)| ln² n + O(ln n).
+  - The record's 2026-11-03 OCR paraphrase of the arguments, (n+½)(x ± y), was wrong and is corrected to n(x ± y)/2. The UNCONFIRMED label is removed from the record, the proposed INDEX/CORPUS rows, the P1 comparison and the report.
+- **Kuznetsova 1995** (`BF01056716-kuznetsova-1995.pdf`, Springer via NTNU), p. 259. Theorem 1, eq. (1), was re-rendered and agrees with the record. This is an independent re-render, but by the same developer; the auditor may still recheck.
+- **SVZ 2008 journal** (`s11075-008-9203-x.pdf`):
+  - p. 417: (24) card X_n = dim Π²_{n+1} = (n+2)(n+3)/2, and (25) w_ξ = 1/((n+2)(n+3))·{1/2, 1, 2}.
+  - p. 421: the Table 1 Padua row is 4.1E-2, 2.5E-3, 8.9E-4, 2.4E-4, 1.4E-4, 5.7E-5, 4.0E-5, 2.0E-5.
+  - The text-layer reading above is now also an image check.
+
+No claim or verdict changes. Remaining optional item: the Greenbaum Thm 1′ statement re-read (its locator is confirmed).

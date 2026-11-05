@@ -14,7 +14,7 @@
   L_mn(x, y) = (2/π²) · { |sin((mx+ny)/2) sin((mx−ny)/2)| + |cos((mx+ny)/2) cos((mx−ny)/2)| } · (2 log m log n − log² m) + O(log n).
 - Hypotheses and notation: n/m ∈ ℕ; absolute constant in O; T² is the periodic setting, with no cosine/even symmetrisation and no Padua node set.
 - Page / theorem / equation: Theorem 1, eq. (1), p. 259. Proof: Lemmas 1–2 on pp. 260–263, eqs. (9)–(12) on pp. 264–265. Method: Trigub's piecewise-sinusoidal replacement (Mat. Sb. 101 (1976) 315–333) plus relations from Kuznetsova 1977.
-- Reading evidence and limitations: eq. (1) was read on the page image, including both absolute values. The rest comes from OCR.
+- Reading evidence and limitations: eq. (1) was read on the page image, including both absolute values. The rest comes from OCR. Rechecked 2026-11-05 on a fresh 110-dpi pdftoppm render of p. 259, from the Springer PDF downloaded to AC's `Downloads\padua\papers\BF01056716-kuznetsova-1995.pdf`: unchanged.
 - Relation to campaign claims (no inherited proof status): Kolomoitsev–Lomako 2021 (LIT-379) cite this paper as their ref. [17] for their Lemma 3.6, eqs. (3.27)–(3.30) (arXiv v1 p. 12). That lemma is background for PD-T157–159. See [P1 comparison](../../topics/padua-literature-20261103/p1-comparison.md).
 
 ### LIT?padua-literature-claude-02 — historical attribution recorded by the source
@@ -32,3 +32,5 @@ Found from KL 2021's reference list (arXiv v1 p. 15) on 2026-11-03. Not previous
 ## History
 
 2026-11-03: created by topic padua-literature-20261103.
+
+2026-11-05: Theorem 1 page re-rendered and rechecked (response-01 supplement).

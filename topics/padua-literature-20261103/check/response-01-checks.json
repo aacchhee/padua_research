@@ -58,7 +58,10 @@
   "Mastroianni–Russo copy p.18 Thm 9: (u/√(wφ))^p ∈ A_p, 1<p<∞ (F2)",
   "Mastroianni–Russo copy pp.22–23 Thm 11 and node construction: unchanged",
   "Xu JAT 87 (1996) p.231 Thm 3.3: 1<p<∞ (journal; author preprint has 1<p≤∞)",
-  "De Marchi CMA 5 (2022) p.23 item (2)"
+  "De Marchi CMA 5 (2022) p.23 item (2)",
+  "Pimenova Dokl. 249 (1979) pp.52–53: Thm 1 eq.(2) constant 2/π², args n(x±y)/2; eq.(3) 4/π² (supplement)",
+  "Kuznetsova Ukr. Math. J. 47 (1995) p.259 Thm 1 eq.(1) re-rendered (supplement)",
+  "SVZ 2008 journal p.417 (24)-(25) and p.421 Table 1 (supplement; upgrades the text-layer check)"
  ],
  "text_layer_checks": [
   "SINUM 64(4) p.1192 intro: authors not aware of extension of Laurie's approach to MOPs; p.1213 §7 proposal (F6)",
@@ -66,7 +69,6 @@
   "Running-head locators: Xu TAMS 343 pp.195–198; 342 pp.858–859; Dunkl–Xu pp.74,75,82,88,92; Greenbaum Thm 1′ p.51"
  ],
  "not_done": [
-  "Pimenova 1979 Thm 1 constant: page image not obtained (hidden browser pane renders blank; download did not reach a connected folder); stays UNCONFIRMED",
-  "Kuznetsova 1995 p.259: no new check this session; relies on the 2026-11-03 page-image check by Claude"
+  "Greenbaum Thm 1′ statement not re-read this session (locator p.51 confirmed)"
  ]
 }

@@ -19,7 +19,7 @@ Claude (claude-opus-5-5, high), 2026-11-03.
 | Key (record) | Content used | Coverage |
 |---|---|---|
 | [kuznetsova-1995](../../literature/records/kuznetsova-1995.md) | Thm 1: pointwise asymptotics of the 2-D rhombic discrete-Fourier Lebesgue function, O(log n) remainder | complete (OCR); Thm 1 on the page image |
-| [pimenova-1979](../../literature/records/pimenova-1979.md) | the m = n, odd-grid trigonometric-interpolation case (1979) | complete (OCR only; constant unconfirmed) |
+| [pimenova-1979](../../literature/records/pimenova-1979.md) | the m = n, odd-grid trigonometric-interpolation case (1979): constant 2/π², the same as Kuznetsova eq. (1) at m = n | complete (OCR); Thm 1 and (3) on page images (2026-11-05) |
 | [kolomoitsev-lomako-2021](../../literature/records/kolomoitsev-lomako-2021.md) (LIT-379) | Thm 2.1 and the Padua sentence on p. 4; Lemmas 3.5–3.6; (3.27)–(3.30) are imported from Kuznetsova | locators confirmed for v1 |
 | [cdmsv-poster-2008](../../literature/records/cdmsv-poster-2008.md) | Conjecture: maximum ≈ (4/π²) log² n, attained at a vertex | complete |
 | demarchi-2022 (LIT-326/377; addendum proposed in [proposed-record-changes.md](proposed-record-changes.md)) | §3.3(2), p. 23: "maxima in the corners, where there are no Padua points" (observation, listed among open problems, Fig. 7) | §3.3, pp. 22–23, journal PDF |

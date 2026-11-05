@@ -125,8 +125,8 @@ Claude (claude-opus-5-5, high), topic orchestrator, 2026-11-03.
   - Paige 2019 ([author PDF](https://www.cs.mcgill.ca/~chris/pub/Pai19.pdf));
   - the version-of-record checks listed in p3-comparison.md, if exact wording will be quoted.
 - **Small gaps:**
-  - Pimenova 1979: the Theorem 1 constant should be checked on the page image (free scan).
-  - Pimenova and Kuznetsova Lemmas 1–2: OCR only.
+  - Pimenova 1979: Theorem 1 and eq. (3) were confirmed on page images (2026-11-05); Theorems 2–3 OCR only.
+  - Kuznetsova Lemmas 1–2: OCR only.
 
 ## Outputs
 

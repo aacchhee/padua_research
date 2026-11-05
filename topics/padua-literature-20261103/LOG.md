@@ -111,3 +111,8 @@
 - Old-block checker: 60/60 at 440d107 and at aff30e8. Reservation LIT-482–561 rechecked against main and PRs #24–#26. Receipt: [check/response-01-checks.json](check/response-01-checks.json).
 - Handoff 05 is closed (done in 063ff8b). [Handoff 06](handoffs/06-audit.md) opened: Codex gpt-6-astra high re-audit. Stage → AUDIT.
 - Note for PR preparation: merged PR #22 reuses LIT-420, LIT-346, LIT-119/347 and LIT-348 as same-source aliases ([main: topics/nn-mop-iep-20261103/preparation/literature-dedup.md](../nn-mop-iep-20261103/preparation/literature-dedup.md)). Its new LIT-562–568 cover Van Assche 2011 and Aptekarev et al., which this topic did not read. Map this topic's provisional records against that note; do not create duplicate same-source IDs. The rows were not rewritten on main (old-block check 60/60 at aff30e8).
+- 2026-11-05 ~15:35 — response-01 supplement. AC: "two checks: pdf are in the folder I think".
+  - Claude's earlier browser downloads had reached `Downloads\padua\papers` (inventory updated).
+  - On page images: Pimenova Thm 1 / eq. (3) confirmed (constant 2/π²; record's OCR argument paraphrase corrected); Kuznetsova p. 259 re-rendered; SVZ pp. 417/421 confirmed.
+  - UNCONFIRMED removed from the Pimenova record and proposals. Old-block checker still 60/60 at aff30e8. No verdict changes.
+  - Handoff 06 had not started, so it is superseded by handoff 07 with the new input head.

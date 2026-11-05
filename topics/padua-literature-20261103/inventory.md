@@ -57,3 +57,9 @@ Listed through the link to AC's computer: 44 files in `Downloads\padua\papers`. 
 Present since 2026-11-03 but not yet listed above: `S0002-9947-1994-1169912-X.pdf` (A16), `S0002-9947-1994-1258289-7.pdf` (A17), `general_properties_of_orthogonal_polynomials_in_several_variables.pdf` (A18, Dunkl–Xu Ch. 3). These were read in the f1007d3 pass.
 
 Still absent: A9 (Della Vecchia–Mastroianni–Vértesi 1995), A10 (Brutman 1997 survey), A15 (Feldheim 1936) and A19 (König–Nielsen journal version).
+
+## Arrivals 2026-11-05 ~15:30 (browser downloads made by Claude during response 01)
+
+- `pimenova-1979-dan43113.pdf` — Pimenova, Dokl. 249 (1979), Math-Net.ru scan
+- `s11075-008-9203-x.pdf` — Sommariva–Vianello–Zanovello, Numer. Algorithms 49 (2008), journal version (Springer via NTNU)
+- `BF01056716-kuznetsova-1995.pdf` — Kuznetsova, Ukr. Math. J. 47 (1995), English translation (Springer via NTNU)
