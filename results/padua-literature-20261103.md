@@ -30,4 +30,4 @@ These are literature findings only. They carry no PD status changes and no new m
 
 ## Next step
 
-Codex (gpt-6-astra high) audit per handoff 04 (supersedes 03; adds pass 2). Still needed from AC: print-only Mastroianni–Russo 2000 and DMV 1995 (see DOWNLOADS v3).
+Codex (gpt-6-astra high) audit per handoff 04 (supersedes 03; adds pass 2). Still needed from AC: print-only DMV 1995 (see DOWNLOADS v5).
