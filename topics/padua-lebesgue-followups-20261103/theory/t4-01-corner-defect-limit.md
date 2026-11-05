@@ -13,7 +13,7 @@ For the Padua corner value Λ_c(n) and same-mesh sum L_n of PD-T159,
  \lim_{n\to\infty}(\Lambda_c(n)-L_n^2)=\kappa,
  \qquad
  \kappa={8\over\pi}\int_0^1 t^2\cot{\pi t\over2}
-       \sum_{\substack{l\ge1\\l\ {\rm odd}}}{dt\over l(l^2-t^2)}.       \tag{1}
+       \sum_{\substack{l\ge1\\l\ {\rm odd}}}{1\over l(l^2-t^2)}\,dt.       \tag{1}
 \]
 
 The limit is over all integers, hence the even and odd limits agree. More explicitly, for n≥32,

@@ -2,7 +2,7 @@
 
 Development branch: `codex/padua-lebesgue-followups-20261103`.
 Base: `440d1079e42c3ef21c40d1cf8870f5b206410c6a`.
-Stage: AUDIT. Core development complete; required Claude audit: PENDING.
+Stage: PR preparation authorized, not yet ready. Claude audit-01 accepts the mathematics; editorial/provenance findings F1–F9 are answered in [response-01](response-01.md).
 
 ## T1 — degree-eight maxima
 
@@ -19,10 +19,16 @@ to the independently replayed archive. Literal joining and two actual final
 composition executions passed every original summary/accounting condition
 and raw/source/component guard. No acceptance predicate changed. This is a
 proved composition of separately executed original predicates under PD-T170;
-no monolithic joined Verifier.run execution is claimed. Its false machine
+no developer monolithic joined Verifier.run execution is claimed. Its false machine
 full-run/count flags preserve that execution distinction. See the
 [composition record](theory/t1-replay-composition.md),
 [attempt](attempts/T1.md) and [independent checks](independent-checks-t1.md).
+
+Dated 2026-11-05 audit evidence: Claude independently regenerated the identical
+boundary proof payload and completed one monolithic original Verifier.run,
+with count_certified true and 62 maxima. See [audit-01 §T1](audit-01.md) and
+the [monolithic receipt](audit-support/claude-audit-01/monolithic-receipt.json).
+This audit execution supplements the developer composition.
 
 For the paper: the [interior](theory/t1-interior-count.md) and
 [closed-square](theory/t1-closed-count.md) completion records, with their
@@ -107,8 +113,9 @@ that is MEASURED evidence and does not exclude a closed form.
 ## Verification and limitations
 
 [Analytic independent check](independent-checks-analytic.md) records exact
-candidate hashes and actual enclosure reruns. Required cross-family Claude
-audit remains distinct and pending. Provisional IDs are retained pending audited preparation;
+candidate hashes and actual enclosure reruns. Cross-family [Claude audit-01](audit-01.md)
+accepts all four targets; [response-01](response-01.md) answers its minor editorial
+and provenance findings. Provisional IDs are retained pending preparation;
 permanent reserved ranges are in [ALLOCATIONS.md](ALLOCATIONS.md).
 
 Protocol qualification: the T2/T3 worker completed some linked predecessor
@@ -116,7 +123,9 @@ candidate/attempt reading after the first mechanisms, while the initial
 registry and inherited-theory screen preceded them. The gate and independent
 report disclose this timing deviation. Later reading and a clean mathematical
 check do not retroactively satisfy the prospective rule or grant clean protocol
-clearance; the required Claude audit must retain that distinction.
+clearance. Claude confirmed the deviation, found minor impact, and stated that
+once F1 is answered it does not by itself block readiness; AC retains the
+decision whether to accept the topic with that recorded deviation.
 
 No manuscript, all-degree finite bridge, author contact, merge, global registry
 rewrite or physical cold-storage delivery is part of this development step.

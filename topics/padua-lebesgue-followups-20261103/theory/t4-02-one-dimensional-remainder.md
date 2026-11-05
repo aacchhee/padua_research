@@ -37,7 +37,7 @@ Overall status: **PROVED**, written analytic proof; supplementary independent re
 
 ## Depends on
 
-Definition of L_n in PD-T159; the elementary cotangent partial fraction with its local Fourier proof in t4-01, §4.
+Definition of L_n in PD-T159; the elementary cotangent partial fraction with its local Fourier proof in t4-01, §4. Predecessor comparison: PD-T158 proves the one-dimensional estimate |L_n−A_n|<2/n, sharpened here to 1/(4n²); its estimate is not an additional proof assumption.
 
 ## Checks
 
@@ -45,7 +45,7 @@ Analytic result. Supplementary finite comparisons in `../code/t4_constant.py` ha
 
 ## Sources
 
-No external classical expansion is cited. The needed estimate is proved locally; literature baseline/limitations are in `../gate-t4.md`.
+No external classical expansion is cited. The needed estimate is proved locally; literature baseline/limitations are in `../gate-t4.md`. The closest predecessor is [PD-T158](../../padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-03-corner-log-coefficient.md), whose 2/n one-dimensional estimate this record sharpens (dated editorial attribution, 2026-11-05; statement and proof unchanged).
 
 ## Proof or evidence
 

@@ -16,7 +16,7 @@ promised retention period; its paths alone are not durable retrieval locators.
 | Fresh native V5 completed negative half | `/workspace/scratch/lebesgue-t1/fresh-interior-native-v5.json.gz` | 391896 | `d6642d630ea387486e1a685fd0cce1c3df3fc0d1e4d6f16d7a6d2cee11920a43` | Negative half complete: 76760 leaves, only parked right path pending, zero unresolved; input to frozen reflection. |
 | Fresh reflected full interior | `/workspace/scratch/lebesgue-t1/fresh-interior-reflected-v1.json.gz` | 637165 | `c5cdcfed9f19f2161b1d55d4f2154bc06a1cd5bd51e28c5c2187ca57c67cc45f` | Complete; developer and independent typed comparisons match all 18969878 canonical mathematical bytes of the separately replayed archive, SHA-256 `e22a9b5592d26756aa63bf143ae19f7c55fd56d1d5ecd5860088c0f2587089a1`. |
 | Fresh literal closed-square join | `/workspace/scratch/lebesgue-t1/fresh-closed-square-v1.json.gz` | 1696013 | `033e851676969bde6a730f76ee1b4819b87de26b79aac775de6d487dade27fdf` | Literal join completed; both actual final-accounting compositions and both predicate-replay pairs passed. Mechanical join alone never certifies the count. |
- Progress logs and atomic edge checkpoints remain in the
+Progress logs and atomic edge checkpoints remain in the
 same named scratch directory; they are diagnostics, not accepted count evidence.
 
 ## Historical retrieval
@@ -122,3 +122,39 @@ new input identities and replay receipts. The final guard-delta and independent
 controls document exact mathematical source equivalence without relabeling old
 runs. See [guard map](evidence/t1-boundary-optimization-guard-delta.json) and
 [independent guard check](evidence/t1-independent-boundary-guard-controls.json).
+
+## 2026-11-05 audit addendum — reproducible boundary proof identity
+
+The durable mathematical boundary identity is the typed proof payload
+SHA-256 `1316b929ec142e0274f8c68a37e59a85b2136f8b322077ecd8172918719b54f2`,
+**4,821,831 bytes**, recorded in [the developer payload receipt](evidence/t1-boundary-payload.json).
+Claude independently regenerated that exact payload from committed code;
+[audit-01 §T1.3](audit-01.md#t13-auditor-boundary-regeneration-executed)
+records the equality. The regenerated raw artifact has a different truthful
+SHA-256, `cf141babf23d1178c0fe6b250d7569c9529bdc2cf23b6e4192b9deb58ae64357`
+(4,822,048 bytes). This demonstrates regeneration stability of the mathematical
+payload for that independent execution, not byte identity of raw metadata/timing.
+
+Claude also executed the complete original monolithic Verifier.run on the
+Git-retrievable archived interior plus its regenerated boundary; the
+[monolithic receipt](audit-support/claude-audit-01/monolithic-receipt.json)
+records exit 0, count_certified true and 44+16+2=62, with unchanged frozen sources.
+This additional audit execution is distinct from the developer's separately
+executed predicates and composition; the developer receipts remain unchanged.
+Auditor bulk artifacts remain in the auditor's sandbox, with identities and
+commands in the [audit support](audit-support/claude-audit-01/README.md).
+Physical cold-storage delivery remains pending. Scratch paths in the historical
+table are not durable remote retrieval locators.
+
+### Receipt reproduction requirement: CPython 3.12.x
+
+The AST pins used by `code/t1_check_boundary.py` (`frozen_boundary_ast`) and
+`code/t1_compose.py` (`summary_predicates`) and their recorded receipts require
+**CPython 3.12.x** (developer executions: 3.12.14). Python 3.13 changes ast.dump
+serialization: the boundary AST pin `73fc0216…` and summary pin `61812bc0…`
+do not match that version. Use CPython 3.12.x when reproducing those historical
+boundary/composition contracts and receipts; do not substitute hashes or edit
+executed sources to bypass a rejection. This is an AST serialization constraint,
+not a different mathematical predicate. Claude's independent monolithic wrapper
+successfully used Python 3.13.18 and does not reuse the 3.12 composition pins;
+see audit-01 F6 and §T1.4. Old source/receipt hashes retain their original meaning.

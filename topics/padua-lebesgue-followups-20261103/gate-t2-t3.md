@@ -106,3 +106,27 @@ the bounded-search variant verdict is unchanged, with no priority claim.
 Detailed outcomes, finite evidence and exact limits are in attempts/T2.md,
 attempts/T3.md and evidence/t3-verification.md. All scientific development
 stopped at the completed T2/T3 done criteria; required Claude audit remains.
+
+## 2026-11-05 — audit F1 closest-entry addendum
+
+This dated correction supplements the original gate above; it is not a claim
+that the omitted comparisons or later full reads preceded derivation.
+
+- T2 closest entries also include IDEA-318 (the measured centre-smallest gap
+  and suggested centreward monotonicity), IDEA-324 (finite E-C centreward edge
+  ordering), and the MEASURED PD-T207/208 profiles.
+- T3 also compares with IDEA-318/324 and PD-T207/208; PD-T208 explicitly records
+  that the general-beta PD-T188 series had not been derived.
+- Separation: **finite measured profile vs proved limiting-integral ordering**.
+  Finite-n cell ordering and finite measurements are different objects from
+  T2's exact ordering of limiting integrals and T3's all-interior-angle formulas
+  with rigorous truncation bounds. The variant verdict, obstruction scope and
+  kill tests above are unchanged.
+
+The original "Shortlist read" sentence records eventual coverage, not verified
+pre-derivation completion of all linked bodies. The later reads listed in the
+coverage reconciliation remain a confirmed prospective-gate deviation. Claude
+[audit-01](audit-01.md) finds minor impact (F1), accepts the mathematics, and
+neither waives nor retrospectively cures the deviation; AC retains that decision.
+No historical timestamp is reconstructed. Future gates should record the actual
+UTC time before derivation and distinguish later coverage additions.

@@ -1,5 +1,12 @@
 # Proposed T1 shared-record updates — development complete; unapplied
 
+Dated 2026-11-05 status supersession: [Claude audit-01](../audit-01.md)
+accepts the mathematics; [response-01](../response-01.md) answers the minor
+findings. Earlier pending/absent-audit wording and PENDING markers below are
+retained proposal history/placeholders, not the current audit status. Preparation
+must replace those markers with the actual evidence when applying the proposals.
+The T2/T3 protocol deviation remains recorded for AC; no proposal is applied here.
+
 **ALL REGISTERED DEVELOPMENT GATES COMPLETED; APPLICATION STILL REQUIRES
 CLAUDE AUDIT AND LATER PREPARATION.** This is an unapplied editing proposal.
 Its mathematical completion claims now have actual supporting receipts; the
@@ -38,7 +45,7 @@ Old (literal current shared-file text):
 New (activate only after all completion conditions below):
 
 ```markdown
-| PD-T180 (PD-T?proof-attempts-2-codex-61) | Degree-eight strict-local-maxima count | PROVED | Exactly62 strict relative local maxima on[-1,1]^2:44 open-square,16 open-edge,2 non-node-corner maxima; disjoint-stratum reduction and every original final predicate completed | Completion of unchanged existing target; historical deadline failures retained; global-value result remains separate PD-T181 | PD-T179, PD-T167, PD-T170, PD-T178; separate interior conjunct PD-T184; frozen schema hypotheses | [completion record](topics/padua-lebesgue-followups-20261103/theory/t1-closed-count.md); [historical record](topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-61-degree-eight-maxima-count.md) | [actual separate replays, identities and accounting](topics/padua-lebesgue-followups-20261103/independent-checks-t1.md); [composition record](topics/padua-lebesgue-followups-20261103/theory/t1-replay-composition.md); [evidence manifest](topics/padua-lebesgue-followups-20261103/evidence-manifest.json); required Claude audit and completed-gate receipts must be linked before this proposal is activated |
+| PD-T180 (PD-T?proof-attempts-2-codex-61) | Degree-eight strict-local-maxima count | PROVED | Exactly62 strict relative local maxima on[-1,1]^2:44 open-square,16 open-edge,2 non-node-corner maxima; disjoint-stratum reduction and every original final predicate completed | Completion of unchanged existing target; historical deadline failures retained; global-value result remains separate PD-T181; earlier OPEN/deadline history preserved in the original record: OPEN, not rejected; deadline failures are not passes | PD-T179, PD-T167, PD-T170, PD-T178; separate interior conjunct PD-T184; frozen schema hypotheses | [completion record](topics/padua-lebesgue-followups-20261103/theory/t1-closed-count.md); [historical record](topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-61-degree-eight-maxima-count.md) | [Claude audit-01](topics/padua-proof-attempts-2-20261101/audit-01.md); [response-01](topics/padua-proof-attempts-2-20261101/response-01.md); [actual separate replays, identities and accounting](topics/padua-lebesgue-followups-20261103/independent-checks-t1.md); [composition record](topics/padua-lebesgue-followups-20261103/theory/t1-replay-composition.md); [evidence manifest](topics/padua-lebesgue-followups-20261103/evidence-manifest.json); required Claude audit and completed-gate receipts must be linked before this proposal is activated |
 ```
 
 ## PROOF_STATUS.md — PD-T100 stays MEASURED

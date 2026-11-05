@@ -1,11 +1,11 @@
 {
   "format": "padua-lebesgue-evidence-manifest-v1",
-  "stage": "AUDIT; core development complete; required Claude audit pending",
+  "stage": "PR preparation authorized; Claude mathematics accepted; editorial findings answered",
   "input_sha": "3f5196cf3639407c25b021fa30f70cc1d3ae113a",
   "base_sha": "440d1079e42c3ef21c40d1cf8870f5b206410c6a",
-  "completed_scope": "T1 PD-T184 and PD-T180 PROVED; six T2-T4 analytic records PROVED; actual distinct-agent replays, identity/composition and exact/outward analytic checks complete",
+  "completed_scope": "T1 PD-T184/180 and six T2-T4 records PROVED; Claude audit-01 accepts mathematics; response-01 documents editorial changes and unchanged executed evidence",
   "commands": "Exact completed commands, environments and executed source identities: attempts/T1.md through T4.md and both independent-check reports. Historical source blobs are preserved; no unrun command is counted as completed.",
-  "t1": "44 interior + 16 open-edge + 2 corner = 62. Both original predicate blocks independently replayed; fresh generation/reflection, typed proof identity, literal join and both original final-accounting compositions passed. No monolithic joined run claimed. COLD_STORAGE.md binds raw identities, immutable source locators and pending physical delivery.",
+  "t1": "44 interior + 16 edge + 2 corner = 62. Developer separate predicates/identity/composition passed. Claude independently regenerated the identical boundary proof payload and completed a monolithic original run; see audit-01 and its pinned audit-support. Physical delivery pending.",
   "protocol_qualification": "T2/T3 some linked full reads completed after mechanisms; independent report discloses timing deviation, not retroactive compliance.",
   "file_columns": [
     "path_relative_to_topic",
@@ -127,14 +127,14 @@
   ["evidence/t3-verification.md","be9d9c55d96aa068c52601937372fca3bddf820cbbf56cc09609dd8f2a583804",5455],
   ["evidence/t4-constant.json","eff53b81ab76245d923846a80a10ae8116a29701bbefb8d34e8c8afa1ced78b9",4736],
   ["evidence/t4-relations.json","52dba38b1cc768af70a6556651ce01d4e0c0cfba3e1c637baa2afd9ab123fbb6",871],
-  ["theory/t1-closed-count.md","9b8a991168da3ebcbdfedc4b915e571146294600bceeaa376c024d3090a80997",8697],
+  ["theory/t1-closed-count.md","a37d07302205f5d692af55cd8b7ebc56020161e157183e832c6a73dcc33bae94",9102],
   ["theory/t1-interior-count.md","6ae38bcfff1de662934b6c8bf175bf023b6cd627ed1015d5ffed807cd9207b18",6848],
   ["theory/t1-replay-composition.md","3953b70ed0e26f547ad67e686564e0f878e9e16bf84640bfb0c38bff5755071f",8329],
-  ["theory/t2-01-edge-centre-minima.md","5b1156c384dbf22b9d6749a840f4d78c36f0a1e60a2e8d5fc12e30af309b4c42",9437],
+  ["theory/t2-01-edge-centre-minima.md","a56639375b736346d6be8f130d198a5180502112d5824bb952e57043f6193150",9438],
   ["theory/t2-02-common-endpoint-expansion.md","a61f3371445bae5bfa71f5b1947f63696697f97ac42c0f742c4eb4d587f98da3",4950],
   ["theory/t3-01-general-position-series.md","8eae6849e3a5c756356864bb97dcd3d9fd25b09d2ac58ec93bb96a9e054a3ce5",10220],
-  ["theory/t4-01-corner-defect-limit.md","ea514179f51e2208ef8b5566e5557625afd7ec518fc928f6c6592eb07f51d706",8979],
-  ["theory/t4-02-one-dimensional-remainder.md","71ce5102541c5c7cdc2b4993195087652f1c76829b6b88e5a039464af83284b3",3893],
+  ["theory/t4-01-corner-defect-limit.md","c02f57266dfa829470425c023fb74c3ccc62d2737ad4c0a3936de59552ed3317",8982],
+  ["theory/t4-02-one-dimensional-remainder.md","d5fe46858e61532792e0c991aad6ec861b6ae8f5e2fb1c040a66938db4b4301a",4324],
   ["theory/t4-03-corner-constant.md","b7ffd40e6544d0c22ec9c1e35a35ad895b6acb1fa58e09f01347ce4bc1188398",3946]
   ]
 }

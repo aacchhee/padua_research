@@ -1,5 +1,12 @@
 # Proposed shared-record changes — unapplied; Claude audit pending
 
+Dated 2026-11-05 status supersession: [Claude audit-01](audit-01.md)
+accepts the mathematics; [response-01](response-01.md) answers the minor
+findings. Earlier pending/absent-audit wording and PENDING markers below are
+retained proposal history/placeholders, not the current audit status. Preparation
+must replace those markers with the actual evidence when applying the proposals.
+The T2/T3 protocol deviation remains recorded for AC; no proposal is applied here.
+
 The handoff restricts writes to this topic and its results file. Shared records
 and merged theory bodies are untouched. These literal old→new rows are proposals,
 subject to required Claude audit and later preparation. Replace descriptive
@@ -24,7 +31,7 @@ Old:
 New (after required audit):
 
 ```text
-| PD-T184 (PD-T?proof-attempts-2-codex-65) | Exactly44 strict interior maxima at degree8 | PROVED | Complete exact developer and distinct-agent replays of the retained self-contained interior tree: 153520 leaves, 541882 ordinary mask records, 44 roots, all node/partition/source obligations checked | Dated completion of the unchanged interior target; boundary and global-value claims are separate | PD-T179, PD-T167, PD-T170, PD-T178; PD-T183 retained separately | [completion record](topics/padua-lebesgue-followups-20261103/theory/t1-interior-count.md); [historical record](topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-65-degree-eight-exact-interior-count.md) | [actual independent replay and source records](topics/padua-lebesgue-followups-20261103/independent-checks-t1.md); required Claude audit must be linked before applying this proposal |
+| PD-T184 (PD-T?proof-attempts-2-codex-65) | Exactly44 strict interior maxima at degree8 | PROVED | Complete exact developer and distinct-agent replays of the retained self-contained interior tree: 153520 leaves, 541882 ordinary mask records, 44 roots, all node/partition/source obligations checked | Dated completion of the unchanged interior target; boundary and global-value claims are separate; earlier OPEN/deadline history preserved in the original record: OPEN, not rejected; deadline failures are not passes | PD-T179, PD-T167, PD-T170, PD-T178; PD-T183 retained separately | [completion record](topics/padua-lebesgue-followups-20261103/theory/t1-interior-count.md); [historical record](topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-65-degree-eight-exact-interior-count.md) | [Claude audit-01](topics/padua-proof-attempts-2-20261101/audit-01.md); [response-01](topics/padua-proof-attempts-2-20261101/response-01.md); [actual independent replay and source records](topics/padua-lebesgue-followups-20261103/independent-checks-t1.md); required Claude audit must be linked before applying this proposal |
 ```
 
 ## PD-T098 — proposed PROOF_STATUS row
@@ -52,7 +59,7 @@ Old:
 New (after required audit and final-ID preparation):
 
 ```text
-| PD-T211 (PD-T?argmax-alln-codex-04) | Positive compact vertical-edge defect integral, uniform moving-phase limit and compact vertical envelope | PROVED | For each fixed compact interval inside(0,pi), gap>=delta²[1-cos(delta/2)]/(16pi²)+o(1); no effective rate | Retained supporting theorem; its excluded center-minimality obligation is proved separately in topics/padua-lebesgue-followups-20261103/theory/t2-01-edge-centre-minima.md; no effective rate added | PD-T185, PD-T189, PD-T190, PD-T191; PD-T156/157 corner growth | [record](topics/padua-argmax-alln-20261101/theory/argmax-alln-codex-04-vertical-compact-defect.md) | Written analytic proof; [Claude audit-01](topics/padua-argmax-alln-20261101/audit-01.md) |
+| PD-T211 (PD-T?argmax-alln-codex-04) | Positive compact vertical-edge defect integral, uniform moving-phase limit and compact vertical envelope | PROVED | For each fixed compact interval inside(0,pi), gap>=delta²[1-cos(delta/2)]/(16pi²)+o(1); no effective rate | Retained supporting theorem; center-minimality remains OPEN/excluded. Dated 2026-11-05 supersession: the excluded limiting-integral center-minimality is proved separately in [t2-01](topics/padua-lebesgue-followups-20261103/theory/t2-01-edge-centre-minima.md), with endpoint behavior in [t2-02](topics/padua-lebesgue-followups-20261103/theory/t2-02-common-endpoint-expansion.md); no effective degree rate added | PD-T185, PD-T189, PD-T190, PD-T191; PD-T156/157 corner growth | [record](topics/padua-argmax-alln-20261101/theory/argmax-alln-codex-04-vertical-compact-defect.md) | Written analytic proof; [Claude audit-01](topics/padua-argmax-alln-20261101/audit-01.md) |
 ```
 
 ## PD-T230 — proposed PROOF_STATUS row
@@ -66,7 +73,25 @@ Old:
 New (after required audit and final-ID preparation):
 
 ```text
-| PD-T230 (PD-T?argmax-alln-gated-codex-16) | Compact horizontal-edge envelope and positive gap, with exact primitive identity S_n^h(s)=S_n(s,0) | PROVED | Both parities/edges and fixed nondegenerate compact I inside(0,pi); Lambda_c-min_I g_h+o_I(1) | Retained supporting envelope; center-minimality and limiting endpoint comparison proved separately in follow-ups t2-01/t2-02; effective degree remainder remains excluded | PD-T212, PD-T216, PD-T217, PD-T157, PD-T185/101 | [record](topics/padua-argmax-alln-20261101/theory/gated-codex-16-horizontal-compact-envelope.md) | Written corrected-mode identification and phase argument; [Claude audit-01](topics/padua-argmax-alln-20261101/audit-01.md) |
+| PD-T230 (PD-T?argmax-alln-gated-codex-16) | Compact horizontal-edge envelope and positive gap, with exact primitive identity S_n^h(s)=S_n(s,0) | PROVED | Both parities/edges and fixed nondegenerate compact I inside(0,pi); Lambda_c-min_I g_h+o_I(1) | Retained supporting envelope; no center-minimality, effective remainder or endpoint comparison. Dated 2026-11-05 supersession: limiting-integral center-minimality is proved separately in [t2-01](topics/padua-lebesgue-followups-20261103/theory/t2-01-edge-centre-minima.md), with limiting endpoint behavior in [t2-02](topics/padua-lebesgue-followups-20261103/theory/t2-02-common-endpoint-expansion.md); effective degree remainder remains excluded | PD-T212, PD-T216, PD-T217, PD-T157, PD-T185/101 | [record](topics/padua-argmax-alln-20261101/theory/gated-codex-16-horizontal-compact-envelope.md) | Written corrected-mode identification and phase argument; [Claude audit-01](topics/padua-argmax-alln-20261101/audit-01.md) |
+```
+
+## PD-T212 — dated annotation decision (2026-11-05, F3)
+
+Include an additive annotation: t2-01 explicitly splits the limiting-integral
+ordering from PD-T212's exclusions. Preserve the original decomposition,
+primitive/envelope limitations, supporting status and prior audit link.
+
+Old:
+
+```text
+| PD-T212 (PD-T?argmax-alln-codex-05) | Exact horizontal primitive-minus-defect decomposition and positive compact horizontal defect limit | PROVED | Supporting decomposition/compact limit only; no primitive upper bound or P2 envelope asserted here | Retained supporting theorem; compact envelope is separately PD-T230 | PD-T185, PD-T189, PD-T211 tail argument | [record](topics/padua-argmax-alln-20261101/theory/argmax-alln-codex-05-horizontal-compact-defect.md) | Written analytic proof; [Claude audit-01](topics/padua-argmax-alln-20261101/audit-01.md) |
+```
+
+New (unapplied):
+
+```text
+| PD-T212 (PD-T?argmax-alln-codex-05) | Exact horizontal primitive-minus-defect decomposition and positive compact horizontal defect limit | PROVED | Supporting decomposition/compact limit only; no primitive upper bound or P2 envelope asserted here | Retained supporting theorem; compact envelope is separately PD-T230. Dated 2026-11-05: its excluded limiting-integral center-minimality is proved separately in [t2-01](topics/padua-lebesgue-followups-20261103/theory/t2-01-edge-centre-minima.md), with endpoint behavior in [t2-02](topics/padua-lebesgue-followups-20261103/theory/t2-02-common-endpoint-expansion.md); the inherited primitive/envelope exclusions are unchanged | PD-T185, PD-T189, PD-T211 tail argument | [record](topics/padua-argmax-alln-20261101/theory/argmax-alln-codex-05-horizontal-compact-defect.md) | Written analytic proof; [Claude audit-01](topics/padua-argmax-alln-20261101/audit-01.md) |
 ```
 
 ## New records and index links to prepare after audit

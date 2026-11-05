@@ -49,7 +49,19 @@ Degree8 strict local count only. No repeat of global-value certification, no non
 
 ## Open items
 
-Required Claude audit. Final retention and retrieval are recorded in [COLD_STORAGE](../COLD_STORAGE.md) and [evidence manifest](../evidence-manifest.json). Mathematical finite verification and assigned fresh reproduction are complete. Essential archived interior evidence is retrievable through its pinned Git blob; fresh bulk boundary/join artifacts remain locally available in scratch and regenerable from pinned sources. Physical external delivery of those bulk artifacts is pending; no archival delivery is claimed.
+Physical cold-storage delivery remains pending. Claude audit-01 accepts the
+mathematics and independently regenerated the exact boundary proof payload:
+4,821,831 bytes, SHA-256
+`1316b929ec142e0274f8c68a37e59a85b2136f8b322077ecd8172918719b54f2`
+([audit §T1.3](../audit-01.md#t13-auditor-boundary-regeneration-executed)).
+The [monolithic audit receipt](../audit-support/claude-audit-01/monolithic-receipt.json)
+records the complete original run on archived interior plus regenerated boundary,
+exit 0 and count_certified true (44+16+2=62). This adds audit provenance without
+changing the theorem or the developer composition proof. Raw regeneration bytes
+may differ; [retention notes](../COLD_STORAGE.md) and the
+[evidence manifest](../evidence-manifest.json) preserve their distinct identities.
+Minor editorial/provenance findings are addressed in [response-01](../response-01.md);
+shared-record preparation remains separate.
 
 ## History
 

@@ -1,9 +1,9 @@
 # Padua Lebesgue-function follow-ups (T1–T4): log
 
-- Branch: `codex/padua-lebesgue-followups-20261103` · Base: main `440d107` · Developer: Codex · Auditor: Claude (Opus 5.5)
-- Stage: WORK (audit-01 findings, all MINOR) · Next: `Codex (gpt-6.1-sol medium): Continue codex/padua-lebesgue-followups-20261103.` · Open handoff: [handoffs/03-response.md](handoffs/03-response.md)
+- Branch: `codex/padua-lebesgue-followups-20261103` · Original base: main `440d107`; reconciled main `5db1e01` · Developer: Codex · Auditor: Claude (Opus 5.5)
+- Stage: PR preparation authorized (editorial audit response complete; not ready) · Next: `Codex (gpt-6.1-sol medium): Continue codex/padua-lebesgue-followups-20261103.` · Open handoff: [handoffs/03-response.md](handoffs/03-response.md)
 - Reserved final-ID ranges: PD-T266–285, PD-N092–099, IDEA356–375, LIT474–481; [reservation and pinned union scan](ALLOCATIONS.md). No final assignments before audited preparation.
-- Claims: all four core targets complete. T1 PD-T184/180 PROVED (44 interior, 62 total); six T2–T4 analytic records PROVED. Claude audit-01 ACCEPTED the mathematics of all four targets; nine MINOR findings await response-01. Full sharp PD-T098 remains OPEN; the T2/T3 protocol timing qualification remains unwaived.
+- Claims: all four core targets complete. T1 PD-T184/180 PROVED (44 interior, 62 total); six T2–T4 analytic records PROVED. Claude audit-01 ACCEPTED the mathematics of all four targets; nine MINOR findings answered in response-01. Full sharp PD-T098 remains OPEN; the T2/T3 protocol timing qualification remains unwaived.
 - Open for AC: none at setup. Ask AC before using any machine outside the sandbox.
 
 ## 2026-11-03 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
@@ -100,7 +100,7 @@
 - Stage AUDIT: required Claude cross-family review is pending. Supplementary Astra checks are complete at their declared scopes. The acknowledged T2/T3 prospective-gate timing deviation is retained for an explicit protocol disposition, not waived or retrospectively cured. Physical cold-storage delivery is pending; source blobs, receipts and regeneration/retrieval instructions are durable.
 
 - Final boundary-producer optimization guard was added only after generation/joining completed. Distinct Astra confirmed exact old Git bytes, guard-only byte/AST identity and both optimized-mode refusals; I2 is resolved with historical source provenance intact.
-- Final integration checks parsed all topic JSON/Python, checked local prose links and control bytes, verified all manifest identities and write scope, and retained ordinary JSON receipts below 16 KiB. The conservative whole-repository generated-data bucket is about 4.21 MB, including existing manifests; no bulk tree or third-party text was added.
+- Final integration checks parsed all topic JSON/Python, checked local prose links and control bytes, verified all manifest identities and write scope, and retained ordinary JSON receipts below 16 KiB. Corrected 2026-11-05 for audit F9: the whole-repository non-record bucket at 5b2e36710144d5ab8dd1b8ee9dc2e8b0f1e13033 is exactly 4,574,085 bytes. Method: sum blob sizes from `git ls-tree -r -l <sha>`, excluding only final extensions md, py, sh, tex, bib, svg and gitignore (tools/cold_storage.py RECORD_EXT), including manifests and cold-storage manifests. This conservative classification also counts non-record source formats. The earlier approximate 4.21 MB used an unstated different filter and is withdrawn; no bulk tree or third-party text was added.
 
 - Development outputs committed as `5b2e36710144d5ab8dd1b8ee9dc2e8b0f1e13033`. [Handoff 01](handoffs/01-work.md) is done at that SHA; [handoff 02](handoffs/02-audit.md) requests the required Claude audit with exact scope, evidence, limitations and acceptance criteria.
 
@@ -117,3 +117,14 @@
 
   Support files: [audit-support/claude-audit-01/](audit-support/claude-audit-01/).
 - Stage WORK. [Handoff 03](handoffs/03-response.md) asks Codex for response-01.
+
+## 2026-11-05 — Codex response to audit-01
+
+- User requested Codex gpt-6.1-sol medium continuation. Role: editorial/provenance developer and topic orchestrator; serving metadata separately unexposed. Rules read at `f4e949339100034f416cfb9ca5aa0b31cb096021`; rule bytes remain unchanged after base reconciliation. Read handoff 03, full audit-01 and both audit subreports. This response adds no mechanism or novelty claim, so no new candidate-generation gate is invoked.
+- Fetched current topic/main. Fast-forwarded topic to Claude's audit handoff; merged main `5db1e01dcd2258f45de2adcaef43859e59734618` (merged PR19) without conflict in `e7244f0882b2e659411254e0e943f0120f4429fd`. This imports accepted main changes, not new edits to shared records. Original scientific/audit base remains `440d1079e42c3ef21c40d1cf8870f5b206410c6a`.
+- [response-01](response-01.md) fixes all F1–F9 and acknowledges N1–N4. Changes are editorial attribution, history-preserving proposals, provenance/environment descriptions and the two auditor-specified notation typos. Statements, mathematical proof content, executed sources, receipts, audit-01 and audit-support remain unchanged in substance (source/receipt/auditor bytes unchanged). Old→new theory hashes and exact checks are recorded in the response.
+- F9 historical count reproduced exactly: 4,574,085 bytes at `5b2e367`, using the auditor's non-record extension classifier. The reconciled pre-response HEAD `e7244f0882b2e659411254e0e943f0120f4429fd` has 4,839,581 bytes by the same method, including manifests and the newly merged effective-argmax artifacts. No new bulk evidence is added. This is close to 5,000,000 bytes; preparation must recheck the exact final budget and may not claim a comfortable margin from the earlier approximate filter.
+- T2/T3 protocol timing deviation remains confirmed, unwaived and uncured; audit-01 finds minor impact and leaves acceptance with that disclosure to AC. Physical cold-storage delivery stays pending. Mathematical acceptance is unchanged.
+- Handoff 03 authorizes PR preparation after editorial-only response. Next handoff 04 will require a fresh complete reservation union check (PR19 is now merged), final-ID assignment, corrected shared proposals, integration rehearsal and final readiness checks. This response itself assigns no IDs or edits shared registries; PR20 stays draft.
+
+- Mechanical verification and a distinct gpt-6-astra medium editorial impact check found no unresolved response finding or material re-audit trigger. All 123 manifest entries and four theory hash pairs verify; original code/receipts/auditor files are unchanged. Final response non-record bucket is 4,839,525 bytes under the explicitly documented classifier (manifest reduced by 56 bytes). Current documentation points to the accepted Claude audit while preserving historical pending markers as such.

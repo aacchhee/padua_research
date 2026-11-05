@@ -229,7 +229,7 @@ Consequently
 
 \[
  F(r)=\frac{2\int_r^1 A(t)\,dt}{1-r^2}
- =\frac{\int_r^1 [A(t)/t],2t\,dt}{\int_r^1 2t\,dt}.       \tag{7}
+ =\frac{\int_r^1 [A(t)/t]\,2t\,dt}{\int_r^1 2t\,dt}.       \tag{7}
 \]
 
 The continuous value at t=0 is A(t)/t=3/2. Both asinh(t)/t and
