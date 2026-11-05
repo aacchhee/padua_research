@@ -25,7 +25,7 @@ Precisely m=60, n=59, with the unchanged PD-T106 alias formula. Computational tr
 
 ## Status by part
 
-Overall status: **PROVED** (computer-assisted development; actual independent exact checker/rerun complete; required Claude audit remains pending). The independent finite-execution obligation is complete specifically at m60. No m80 or contiguous-range result is inherited from this status.
+Overall status: **PROVED** (computer-assisted development; actual independent exact checker/rerun complete; Claude audit-01 accepted). The independent finite-execution obligation is complete specifically at m60. No m80 or contiguous-range result is inherited from this status.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -36,6 +36,8 @@ Candidate / claim disposition: retained finite verification using the existing P
 ## Depends on
 
 PD-T106: exact moments and rational pencil, and equivalence with the orthonormal Gram spectrum. PD-T107: signed-dominance integer congruence reduction. Elementary continuous dependence of symmetric eigenvalues, Sylvester's law of inertia, and positive definiteness of the continuous mass matrix. No floating accuracy theorem is a dependency.
+
+[Claude audit-01](../audit-01.md) accepted the mathematics at its stated scope; [response-01](../response-01.md) addresses the editorial findings. Supplementary reconstruction is recorded in [independent-checks-math.md](../independent-checks-math.md).
 
 ## Checks
 
@@ -79,7 +81,7 @@ Only m60, n59. Positivity and upper bound2 in this case follow from the interval
 ## Open items
 
 - m60 independent checker/rerun is complete; m80 is separately completed in `cert-finite-extension-m80.md`.
-- Required Claude audit remains separate from supplementary independent checking.
+- Claude audit-01 accepted; it is distinct from the completed supplementary independent checking.
 - m100 was stopped at the orchestrator's scope decision without acceptance; cost/phase receipt `../evidence/cert-m100-stopped.json`. All-integer2..60 producer acceptance is complete (`../evidence/cert-range-3-60.json` plus m2 identity), but independent coverage is explicitly limited to10,20,30,40,60,80. This file claims only60.
 - Bulk scratch pencils/transforms are regenerable and hashed in receipts; AC cold-storage export/retrieval is pending. No scratch locator is represented as archived storage.
 

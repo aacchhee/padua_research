@@ -70,7 +70,7 @@ satisfies
 \]
 
 In particular no uniform eta(theta)<1 exists at any theta>1/2.
-The entire positive strong-MZ assertion of PD-T116 is **REJECTED:
+The universal (every theta<1) assertion of PD-T116 is **REJECTED:
 refuted**; its counterexample alternative is resolved analytically.
 No explicit first violating m or effective threshold is asserted.
 
@@ -96,7 +96,7 @@ needed to refute the universal quantifier in PD-T116.
 ## Status by part
 
 Overall status: **PROVED** in analytic development; required Claude
-audit pending. Supplementary independent reconstruction of the common
+audit-01 accepted. Supplementary independent reconstruction of the common
 weight lemma and packet argument is recorded separately by its checker.
 
 | Mathematical part | Status | Evidence / limitations |
@@ -136,6 +136,8 @@ degree specialization is needed below; its core proof is not duplicated.
 The elementary finite trapezoid and norm calculations are given below.
 No numerical spectrum, external MZ theorem or unverified asymptotic fit
 is used.
+
+[Claude audit-01](../audit-01.md) accepted the mathematics at its stated scope; [response-01](../response-01.md) addresses the editorial findings. Supplementary reconstruction is recorded in [independent-checks-math.md](../independent-checks-math.md).
 
 ## Checks
 
@@ -337,11 +339,13 @@ The prior finite spectra can all remain positive within their measured
 or certified ranges. There is no assertion that their numerical results
 were wrong, nor any inferred first crossing.
 
+These explicit carriers prove existence only; they are not usable finite witnesses at feasible degrees, as illustrated by the auditor’s MEASURED extrapolations ([audit-01, A2](../audit-01.md) and [carrier fits](../audit-01-support/subagent-f3/audit-diamond.md)); those extrapolations are not onset bounds and these carriers are unrelated to the m1600 float hit.
+
 ## Open items
 
-Required Claude audit of the common lemma, packet summation and this
-corollary. An effective remainder or a finite explicit violating m
-remains a separate quantitative task. Positive-weight reference MZ
+Claude audit-01 accepted the common lemma, packet summation and this
+corollary; see the references below. An effective remainder or a finite explicit violating m
+remains a separate quantitative task. The odd-m subsequence remains open. Positive-weight reference MZ
 and actual signed MZ must retain distinct notation and conclusions.
 
 ## History

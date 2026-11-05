@@ -59,8 +59,7 @@ so r,s>=1 and the degree fits m−1.
 
 ## Status by part
 
-Overall status: **PROVED** (analytic development; independent/Claude
-audit pending).
+Overall status: **PROVED** (analytic development; independent reconstruction complete; Claude audit-01 accepted).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -93,14 +92,16 @@ elementary bounded-norm proof and finite DCT conventions (not its negative
 spectral conclusion). All necessary new coefficient calculations are
 written below.
 
+[Claude audit-01](../audit-01.md) accepted the mathematics at its stated scope; [response-01](../response-01.md) addresses the editorial findings. Supplementary reconstruction is recorded in [independent-checks-math.md](../independent-checks-math.md).
+
 ## Checks
 
 Rules/input `83cf6f1ee244f2e72057332a7ec04ee74db1f0de`. No mathematical
 program was executed by this developer. The separate numerical worker
 reported positive growing carrier quotients through m2000 for other
-parameters; those finite measurements are not used as proof. Independent
-full-file checks must be linked with actual hashes; required Claude audit
-remains pending.
+parameters; those finite measurements are not used as proof. Completed independent full-file checks and hashes are in
+independent-checks-math.md; Claude audit-01 accepted, with the editorial
+response recorded in response-01.md.
 
 ## Sources
 
@@ -215,9 +216,11 @@ not the divergence of a sufficient absolute-weight majorant. It proves
 existence of arbitrarily large violations without naming the first
 violating m. Finite scans below two remain valid in their finite scope.
 
+These explicit carriers prove existence only; they are not usable finite witnesses at feasible degrees, as illustrated by the auditor’s MEASURED extrapolations ([audit-01, A2](../audit-01.md) and [carrier fits](../audit-01-support/subagent-f3/audit-diamond.md)); those extrapolations are not onset bounds and these carriers are unrelated to the m1600 float hit.
+
 ## Open items
 
-Independent full-file reconstruction and required Claude audit.
+Independent full-file reconstruction and Claude audit-01 are complete; see the references below.
 An effective remainder and explicit first crossing are separate tasks.
 Sharp growth constants of the true extrema and the odd-m branch remain
 unresolved; the original all-m threshold is refuted.

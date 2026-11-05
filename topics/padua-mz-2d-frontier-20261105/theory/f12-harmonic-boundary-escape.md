@@ -79,7 +79,7 @@ pieces disjoint except on a null boundary.
 ## Status by part
 
 Overall status: **PROVED** (analytic development; supplementary Astra
-review found no gap; required Claude audit pending).
+review found no gap; Claude audit-01 accepted).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -96,6 +96,8 @@ PD-T018: this same witness has `||p_N||_2² >= (log N)^3/512` and
 Padua marginal compression. PD-T013: positive CC weights, for the
 strict positivity in (3). No 2D positivity or spectral asymptotic is
 assumed.
+
+[Claude audit-01](../audit-01.md) accepted the mathematics at its stated scope; [response-01](../response-01.md) addresses the editorial findings. Supplementary reconstruction is recorded in [independent-checks-math.md](../independent-checks-math.md).
 
 ## Checks
 
@@ -183,7 +185,7 @@ K_N windows remain possible and require a separate statement.
 
 ## Open items
 
-Required Claude audit. Relate an actual extremal-vector family to a
+Claude audit-01 accepted. Relate an actual extremal-vector family to a
 distributed or localized limiting operator with quantitative errors.
 This profile theorem does not decide the 2D spectral targets; the
 separate signed carrier theorems now refute the all-m upper threshold,

@@ -17,7 +17,8 @@ Thus PD-T116's counterexample alternative is resolved analytically;
 the positive lower and strong eta(theta)<1 assertions above one half
 cannot hold. The positive reference theorem is unchanged and supplies
 no signed comparison. Supplementary independent reconstruction of
-the new classification found no gap; required Claude audit is pending.
+the new classification found no gap; Claude audit-01 accepted its stated
+scope, with the editorial response recorded in response-01.md.
 
 The filename and following original text are retained to preserve the
 initial OPEN state and its exact proof obligations. Their OPEN/deferred
@@ -26,6 +27,8 @@ current status. The full negative proof depends on the separately
 written fixed-node weight lemma `PD-T?mz2d-frontier-codex-12`, and uses
 finite exact trapezoid identities and a uniform continuous norm bound.
 The F3 developer executed no mathematical computation for it.
+
+[Claude audit-01](../audit-01.md) accepted the mathematics at its stated scope; [response-01](../response-01.md) addresses the editorial findings. Supplementary reconstruction is recorded in [independent-checks-math.md](../independent-checks-math.md).
 
 ## Historical continuation — preserved verbatim after the resolution
 

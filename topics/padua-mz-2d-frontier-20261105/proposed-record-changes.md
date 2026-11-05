@@ -1,6 +1,6 @@
 # Proposed shared-record changes — NOT APPLIED
 
-Apply only after the required Claude audit and its findings are disposed, during PR preparation with fresh reservation scan. Final IDs come from this topic’s unchanged reservations; never renumber prior IDs. The original positive statements and every earlier proof/history body remain visible. REJECTED is a disposition, never an epistemic status. The OPEN cells below preserve the old positive assertions as historical labels; their disposition makes them unusable as hypotheses and the separate PD-N records carry PROVED refutations. This display convention is for the auditor/preparer to confirm; it is not a claim that the refuted assertions remain unresolved.
+Apply only after the required Claude audit and its findings are disposed, during PR preparation with fresh reservation scan. Final IDs come from this topic’s unchanged reservations; never renumber prior IDs. The original positive statements and every earlier proof/history body remain visible. REJECTED is a disposition, never an epistemic status. The OPEN cells below preserve the old positive assertions as historical labels; their disposition makes them unusable as hypotheses and the separate PD-N records carry PROVED refutations. AC confirmed this display on 2026-11-05 (audit-01); the preparer must preserve the Status OPEN cells; it is not a claim that the refuted assertions remain unresolved.
 
 ## Literal PROOF_STATUS replacements
 
@@ -15,7 +15,7 @@ Old:
 New (replace provisional references after final-ID assignment):
 
 ```text
-| PD-T028 | two-dimensional Padua upper and endpoint targets | OPEN | Historical positive assertions; analytic even-m signed extrema diverge to opposite infinities; positive endpoint orders and eta→1 are false | REJECTED: refuted (see [negative carrier](topics/padua-mz-2d-frontier-20261105/theory/f12-eventual-negative-carrier.md) and [upper carrier](topics/padua-mz-2d-frontier-20261105/theory/f12-eventual-upper-carrier.md)); separate PD-N refutations PROVED | Supporting PD-T021 only; finite observations PD-T026 | [open-padua-target.md](tracks/mz-constants/theory/open-padua-target.md) | Required new Claude audit: insert accepted candidate SHA and report locator only after it actually exists |
+| PD-T028 | two-dimensional Padua upper and endpoint targets | OPEN | Historical positive assertions; analytic even-m signed extrema diverge to opposite infinities; positive endpoint orders and eta→1 are false | REJECTED: refuted (see [negative carrier](topics/padua-mz-2d-frontier-20261105/theory/f12-eventual-negative-carrier.md) and [upper carrier](topics/padua-mz-2d-frontier-20261105/theory/f12-eventual-upper-carrier.md)); separate PD-N refutations PROVED | Supporting PD-T021 only; finite observations PD-T026 | [open-padua-target.md](tracks/mz-constants/theory/open-padua-target.md) | Claude audit-01 accepted candidate dee638408505c9977f3febd98fdd42c9bc512c92; documentation response-01; final links at preparation |
 ```
 
 ### PD-T110
@@ -29,7 +29,7 @@ Old:
 New (replace provisional references after final-ID assignment):
 
 ```text
-| PD-T110 (PD-T?mz2d-codex-10) | endpoint Padua upper spectrum remains open | OPEN | Historical positive upper threshold; opposite-parity polynomial carrier proves lambda_plus→+infinity along even m | REJECTED: refuted (see [upper carrier PD-N provisional14](topics/padua-mz-2d-frontier-20261105/theory/f12-eventual-upper-carrier.md)); no effective finite onset | PD-T106, PD-T109; PD-T021 marginal support only; PD-T014/022 background only | [record](tracks/mz-constants/theory/mz2d-upper-open.md) | Required new Claude audit: insert accepted candidate SHA and report locator only after it actually exists |
+| PD-T110 (PD-T?mz2d-codex-10) | endpoint Padua upper spectrum remains open | OPEN | Historical positive upper threshold; opposite-parity polynomial carrier proves lambda_plus→+infinity along even m | REJECTED: refuted (see [upper carrier PD-N provisional14](topics/padua-mz-2d-frontier-20261105/theory/f12-eventual-upper-carrier.md)); no effective finite onset | PD-T106, PD-T109; PD-T021 marginal support only; PD-T014/022 background only | [record](tracks/mz-constants/theory/mz2d-upper-open.md) | Claude audit-01 accepted candidate dee638408505c9977f3febd98fdd42c9bc512c92; documentation response-01; final links at preparation |
 ```
 
 ### PD-T114
@@ -43,7 +43,7 @@ Old:
 New (replace provisional references after final-ID assignment):
 
 ```text
-| PD-T114 (PD-T?mz2d-codex-32) | uniform signed Padua hyperinterpolation norm target | PROVED | Every m>=2, 0<=n<m: 2<=||H_(m,n)||_(C→L2)<=C*<30; unchanged endpoint target resolved | Retained; actual weighted-L1 norm controlled; PD-N052 failed absolute-Gram majorants remain unchanged | PD-T101/111/112/017/022; new weighted-L1 density-tail theorem | [record](tracks/mz-constants/theory/mz2d-hyperinterpolation-uniform-open.md) | Required new Claude audit: insert accepted candidate SHA and report locator only after it actually exists |
+| PD-T114 (PD-T?mz2d-codex-32) | uniform signed Padua hyperinterpolation norm target | PROVED | Every m>=2, 0<=n<m: 2<=||H_(m,n)||_(C→L2)<=C*<30; unchanged endpoint target resolved | Retained; actual weighted-L1 norm controlled; PD-N052 failed absolute-Gram majorants remain unchanged | PD-T101/111/112/113/013/017/022; new weighted-L1 density-tail theorem | [record](tracks/mz-constants/theory/mz2d-hyperinterpolation-uniform-open.md) | Claude audit-01 accepted candidate dee638408505c9977f3febd98fdd42c9bc512c92; documentation response-01; final links at preparation |
 ```
 
 ### PD-T116
@@ -57,7 +57,7 @@ Old:
 New (replace provisional references after final-ID assignment):
 
 ```text
-| PD-T116 (PD-T?mz2d-codex-41) | signed Padua MZ at every fixed degree ratio | OPEN | Counterexample alternative resolved: half-degree exactness; every fixed ratio theta>1/2 fails signed strong MZ | REJECTED: refuted for the positive assertion (see [threshold PD-N provisionalf3-01](topics/padua-mz-2d-frontier-20261105/theory/f3-fixed-ratio-threshold.md)); positive reference theorem is separate | PD-T106/109 (D1 support), PD-T115 (reconstruction); PD-N045/053 obstruction context only | [record](tracks/mz-constants/theory/mz2d-fixed-ratio.md) | Required new Claude audit: insert accepted candidate SHA and report locator only after it actually exists |
+| PD-T116 (PD-T?mz2d-codex-41) | signed Padua MZ at every fixed degree ratio | OPEN | Counterexample alternative resolved: half-degree exactness; every fixed ratio theta>1/2 fails signed strong MZ | REJECTED: refuted for the positive assertion (see [threshold PD-N provisionalf3-01](topics/padua-mz-2d-frontier-20261105/theory/f3-fixed-ratio-threshold.md)); positive reference theorem is separate | PD-T106/109 (D1 support), PD-T115 (reconstruction); PD-N045/053 obstruction context only | [record](tracks/mz-constants/theory/mz2d-fixed-ratio.md) | Claude audit-01 accepted candidate dee638408505c9977f3febd98fdd42c9bc512c92; documentation response-01; final links at preparation |
 ```
 
 ## Literal theory status addenda
@@ -99,3 +99,7 @@ New:
 > Signed Padua spectral positive conjectures are refuted analytically: at every fixed ratio theta>1/2, the two extremes diverge in opposite directions along even m; half-degree exactness is sharp. The actual C→L2 coefficient norm is uniformly below30. Required new audit disposition and exact record links belong here only after acceptance. Effective finite thresholds, odd-m behavior, sharp growth constants and the 1-D PD-T027 sharp upper-gap question remain open.
 
 At preparation, copy only this topic’s dedicated results section into RESULTS.md, add all new records/ideas to canonical registries and indexes using final reserved IDs, and link the unchanged topic reservation into the shared batch ledger/crosswalk. Preserve other topics and permanent unused gaps. Do not label the uncertified m1600 float hit a finite computer proof. Do not advertise a gap-free certified2..80 range; independently accepted new finite cases are60 and80. No new LIT record, historical novelty clearance, or third-party fulltext reading is claimed.
+
+## A7 disposition — optional PD-T110 title note
+
+Declined in this response: keep the literal old/new title text and AC’s OPEN-plus-refuted display unchanged. The new row already says “Historical positive upper threshold” and links the refuting result. Preparation may add a dated historical-title annotation without changing the OPEN Status cell; no shared title or file is edited here.

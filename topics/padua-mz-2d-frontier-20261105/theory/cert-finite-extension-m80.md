@@ -2,7 +2,7 @@
 
 ID kind: PD-T (provisional; orchestrator assigns final ID).
 Aliases: G1 m80 native extension; finite m80 signed-dominance certificate.
-Split from: initial m60/m80 statement in `cert-finite-extension.md`, provisional90, to preserve the completed m60 proof separately from this pending case.
+Split from: initial m60/m80 statement in `cert-finite-extension.md`, provisional90, to preserve the completed m60 proof separately from the m80 case that was pending at the time of the split.
 Split into: none.
 
 ## Statement
@@ -19,7 +19,7 @@ Precisely m80,n79. Trust: recorded C compiler/executable, canonical GMP rational
 
 ## Status by part
 
-Overall status: **PROVED** (computer-assisted development; actual independent exact checker/rerun complete; required Claude audit remains pending). This case has its own completed independent reconstruction and acceptance, separate from m60.
+Overall status: **PROVED** (computer-assisted development; actual independent exact checker/rerun complete; Claude audit-01 accepted). This case has its own completed independent reconstruction and acceptance, separate from m60.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -30,6 +30,8 @@ Candidate / claim disposition: retained implementation-only extension of existin
 ## Depends on
 
 PD-T106 rational pencil and change of basis; PD-T107 integer signed-dominance inertia reduction. The m60 numerical values are not a mathematical dependency.
+
+[Claude audit-01](../audit-01.md) accepted the mathematics at its stated scope; [response-01](../response-01.md) addresses the editorial findings. Supplementary reconstruction is recorded in [independent-checks-math.md](../independent-checks-math.md).
 
 ## Checks
 
@@ -66,7 +68,7 @@ Only the displayed m80 case. No contiguous integer interval, all-m bound, endpoi
 ## Open items
 
 - The separate m80 checker/rerun is complete; independently checked degrees are exactly10,20,30,40,60,80, not every integer below80.
-- Required Claude audit remains separate.
+- Claude audit-01 accepted; it is distinct from the completed supplementary checks.
 - Native and fresh independent transforms/pencils remain regenerable scratch under `/tmp`; AC cold-storage delivery/retrieval pending.
 
 ## History
@@ -74,3 +76,5 @@ Only the displayed m80 case. No contiguous integer interval, all-m bound, endpoi
 2026-11-05, Codex certifier worker, assigned gpt-6.1-sol medium: preserved the exact m80 candidate as a separate CONDITIONAL record after actual independent m60 completion allowed the m60 case to become PROVED. This split records the original two-case statement without silently discarding its pending part.
 
 2026-11-05, after actual independent m80 PASS and inspection of source/receipt/report: upgraded this separate case to PROVED computer-assisted development. Required Claude audit remains pending. No additional integer size is inherited from the status change.
+
+2026-11-05, documentation response to audit-01: the pending wording in the earlier dated history above records the development state at that time. Claude audit-01 subsequently accepted the mathematics; response-01 records the permitted editorial changes. No earlier execution or statement is relabeled.

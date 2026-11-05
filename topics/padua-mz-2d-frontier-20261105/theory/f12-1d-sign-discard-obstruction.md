@@ -61,7 +61,7 @@ to refute the all-N quantifier in (1).
 ## Status by part
 
 Overall status: **PROVED** (analytic development; supplementary Astra
-review found no gap; required Claude audit pending).
+review found no gap; Claude audit-01 accepted).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -93,6 +93,8 @@ degree N−1 (used only for the strict lower inequality in (2), not for
 the failure of (1)). Elementary finite cosine identities and Lebesgue
 integration. The second-kind norm identity is derived below; it also
 appears in PD-T019.
+
+[Claude audit-01](../audit-01.md) accepted the mathematics at its stated scope; [response-01](../response-01.md) addresses the editorial findings. Supplementary reconstruction is recorded in [independent-checks-math.md](../independent-checks-math.md).
 
 ## Checks
 
@@ -198,7 +200,7 @@ from a one-dimensional obstruction to this proof route.
 
 ## Open items
 
-Required Claude audit. A successful 1D uniform-gap proof must bypass the
+Claude audit-01 accepted. A successful 1D uniform-gap proof must bypass the
 specific intermediary (1); PD-T027 remains OPEN. This scoped obstruction
 does not decide the signed 2D target. Its separate refutation is proved
 in f12-eventual-upper-carrier.md, using the signed local-weight lemma.

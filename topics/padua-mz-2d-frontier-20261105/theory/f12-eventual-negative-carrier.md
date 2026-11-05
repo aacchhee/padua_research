@@ -69,8 +69,7 @@ quadrature weights and no spectral conjecture is assumed.
 
 ## Status by part
 
-Overall status: **PROVED** (analytic development; independent/Claude
-audit pending).
+Overall status: **PROVED** (analytic development; independent reconstruction complete; Claude audit-01 accepted).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -101,6 +100,8 @@ PD-T?mz2d-frontier-codex-12: the exact fixed-node weight asymptotic and
 its whole-grid majorant. Elementary finite cosine orthogonality below.
 The argument uses no inherited positive Padua form, eigenvalue fit,
 external theorem or unproved weight-sign classification.
+
+[Claude audit-01](../audit-01.md) accepted the mathematics at its stated scope; [response-01](../response-01.md) addresses the editorial findings. Supplementary reconstruction is recorded in [independent-checks-math.md](../independent-checks-math.md).
 
 ## Checks
 
@@ -286,9 +287,11 @@ not name the first violating m or supply a computable explicit onset.
 The packet may become negative much later than a numerically optimized
 eigenvector. No odd-m or sharp asymptotic extremal law is claimed.
 
+These explicit carriers prove existence only; they are not usable finite witnesses at feasible degrees, as illustrated by the auditor’s MEASURED extrapolations ([audit-01, A2](../audit-01.md) and [carrier fits](../audit-01-support/subagent-f3/audit-diamond.md)); those extrapolations are not onset bounds and these carriers are unrelated to the m1600 float hit.
+
 ## Open items
 
-Independent full-file reconstruction and required Claude audit.
+Independent full-file reconstruction and Claude audit-01 are complete; see the references below.
 Obtain an exact finite violating witness if useful; this is a separate
 constructive/effective task. Determine the sharp growth constants of
 the true extremes and behavior on odd m. The original positive-order

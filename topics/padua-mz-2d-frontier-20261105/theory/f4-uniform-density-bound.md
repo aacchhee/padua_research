@@ -14,7 +14,7 @@ exposed. 2026-11-05. No numerical or computer-proof dependency.
 
 For every integer m>=2 and 0<=n<=m-1, use exactly the even-checkerboard
 Padua nodes, signed interpolatory Lebesgue weights, and direct quadrature
-coefficient operator H_(m,n) in the frozen definitions and PD-T112. Then
+coefficient operator H_(m,n) defined in PD-T113, with the frozen node/measure conventions and the norm identity of PD-T112. Then
 
 \[
  2\le \|H_{m,n}\|_{C([-1,1]^2)\to L^2(dx\,dy)}\le C_*<30,
@@ -48,13 +48,13 @@ upper bounds is made.
 ## Status by part
 
 Overall status: **PROVED in development**, complete analytic argument
-below; independent mathematical check and required Claude audit pending.
+below; independent mathematical check and Claude audit-01 accepted.
 The density, tail and comparison calculations below are routine proof
 steps of (1); they are not separate asymptotic targets.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
-| Uniform norm bound (1), every m>=2 and 0<=n<m | PROVED in development | Analytic proof below; independent audit pending |
+| Uniform norm bound (1), every m>=2 and 0<=n<m | PROVED in development | Analytic proof below; Claude audit-01 accepted |
 
 Candidate disposition: retained, IDEA?mz2d-frontier-codex-f4-01.
 No negative candidate or global novelty claim is asserted.
@@ -65,6 +65,8 @@ No negative candidate or global novelty claim is asserted.
 - PD-T111, its exact finite triangular moment sum; repeated here with
   all substitutions needed for the tail estimate.
 - PD-T112, the exact weighted-L1 formula for this operator norm.
+- PD-T113, the direct signed coefficient-operator definition.
+- PD-T013, positivity of the CC weights (also PD-T017 equation (2)).
 - PD-T017 section 1, the elementary CC sine weight floor; the slightly
   sharper constant used here follows from its displayed error estimate.
 - PD-T022, the one-dimensional CC upper bound <2 on degree<N.
@@ -95,36 +97,36 @@ The absolutely convergent cosine series from PD-T017 gives
 \]
 
 Indeed multiplying its `(pi/2)sin(theta)` series by two gives (3),
-including both endpoints by absolute convergence. Since c_(2r)h_(2r)=t_r
+including both endpoints by continuity of both sides and uniform convergence of the absolutely summable series (the Weierstrass M-test). Since c_(2r)h_(2r)=t_r
 and the odd moments vanish, the sum in (2) is precisely the triangular
 partial sum with r+s<=R=floor(m/2) of g(x)g(y).
 
-Put N=2R+1 and S_R=sum_(i=1)^R 1/(2i-1). PD-T111's finite identity is
+Put `M=2R+1` and `\sigma_R=sum_(i=1)^R 1/(2i-1)`. PD-T111's finite identity is
 
 \[
  A_R:=\sum_{r+s\le R}t_rt_s
- ={8\over N(N+1)}-{16S_R\over N^2-1}.                    \tag{4}
+ ={8\over M(M+1)}-{16\sigma_R\over M^2-1}.                    \tag{4}
 \]
 
-For R>=1, `S_R<=1+(R-1)/3=(R+2)/3<=R(R+2)/(2R+1)`.
+For R>=1, `\sigma_R<=1+(R-1)/3=(R+2)/3<=R(R+2)/(2R+1)`.
 Inserting this last bound into (4) gives
 
 \[
- A_R\ge-{4\over N}.                                    \tag{5}
+ A_R\ge-{4\over M}.                                    \tag{5}
 \]
 
-For clarity, `16/(N^2-1)=4/[R(R+1)]`, so (5) is exactly equivalent
-to `S_R<=R(R+2)/N`. The telescoping absolute tail of (3) is
-`sum_(r>R)|t_r|=2/N`. In the finite triangle, changing signs from t_rt_s
+For clarity, `16/(M^2-1)=4/[R(R+1)]`, so (5) is exactly equivalent
+to `\sigma_R<=R(R+2)/M`. The telescoping absolute tail of (3) is
+`sum_(r>R)|t_r|=2/M`. In the finite triangle, changing signs from t_rt_s
 to |t_rt_s| changes only its two nonzero coordinate axes; their total
-change is `8 sum_(r=1)^R |t_r|=16-16/N`. Therefore
+change is `8 sum_(r=1)^R |t_r|=16-16/M`. Therefore
 
 \[
- \sum_{r+s>R}|t_rt_s|={16\over N}-A_R
-       \le {20\over N}\le {20\over m}.                  \tag{6}
+ \sum_{r+s>R}|t_rt_s|={16\over M}-A_R
+       \le {20\over M}\le {20\over m}.                  \tag{6}
 \]
 
-The last inequality uses N=m or m+1. The exceptional correction is zero
+The last inequality uses M=m or m+1. The exceptional correction is zero
 for odd m; for even m>=2,
 
 \[
@@ -175,8 +177,9 @@ mode (m,0), gives exactly
 `sum_z rho_z p(z)^2=integral p^2 d(nu tensor nu)` for this space.
 Equivalently, the full tensor cosine sums are exact in each coordinate
 below 2m and 2(m+1), while a nonzero checkerboard-alternating product
-would require simultaneous degree sums m and m+1, impossible for p^2
-of total degree<=2m-2. Since sum rho=1, Cauchy-Schwarz now gives
+would require x-frequency congruent to m modulo 2m and y-frequency
+congruent to m+1 modulo 2m+2, hence total degree at least 2m+1,
+impossible for p^2 of total degree<=2m-2. Since sum rho=1, Cauchy-Schwarz now gives
 
 \[
  \sum_z\rho_z|p(z)|\le \kappa m\|p\|_2.                  \tag{9}
@@ -184,19 +187,19 @@ of total degree<=2m-2. Since sum rho=1, Cauchy-Schwarz now gives
 
 ### 3. The positive main density has a uniform forward L1 bound
 
-Put v_z=rho_z g(x_z)g(y_z)>=0 and a=pi-4/3>0. For an interior
-N-axis CC node, PD-T017's weight formula `W_N,j=(2/N)S_N(theta_j)`
-and error bound `|S_N-(pi/2)sin(theta_j)|<=(2/3)sin(theta_j)` give
+Put v_z=rho_z g(x_z)g(y_z)>=0 and `\alpha_0=pi-4/3>0`. For an interior
+N-axis CC node, write `\chi_{N,j}=j*pi/N`. PD-T017's weight formula `W_N,j=(2/N)B_N(\chi_{N,j})`
+and error bound `|B_N-(pi/2)sin(\chi_{N,j})|<=(2/3)sin(\chi_{N,j})` give
 
 \[
- W_{N,j}\ge a\,{sin(theta_j)\over N}.                  \tag{10}
+ W_{N,j}\ge \alpha_0\,{sin(\chi_{N,j})\over N}.                  \tag{10}
 \]
 
 This applies to every N>=2; at endpoints the right side is zero.
 At retained interior nodes, (10) in the two axes gives
 
 \[
- v_{jk}\le {2\pi^2\over a^2}W_{m,j}W_{m+1,k};
+ v_{jk}\le {2\pi^2\over \alpha_0^2}W_{m,j}W_{m+1,k};
 \]
 
 the same inequality holds at boundary nodes because v=0 there.
@@ -204,7 +207,7 @@ Both CC rules are positive. Enlarge the sum to the full rectangle and
 apply PD-T022 in each coordinate (each coordinate degree is at most m-1):
 
 \[
- \sum_zv_z p(z)^2\le {8\pi^2\over a^2}\|p\|_2^2.      \tag{11}
+ \sum_zv_z p(z)^2\le {8\pi^2\over \alpha_0^2}\|p\|_2^2.      \tag{11}
 \]
 
 The total v mass is <=4. To check the normalization exactly, expand
@@ -222,7 +225,7 @@ using cot(t)<=1/t for 0<t<pi/2 (from tan(t)>=t). Thus (11),(12)
 and Cauchy-Schwarz imply
 
 \[
- \sum_zv_z|p(z)|\le {4\sqrt2\,\pi\over a}\|p\|_2.     \tag{13}
+ \sum_zv_z|p(z)|\le {4\sqrt2\,\pi\over \alpha_0}\|p\|_2.     \tag{13}
 \]
 
 ### 4. Assemble in the exact weighted L1 formula
@@ -232,7 +235,7 @@ Since rho>=0 and g tensor g>=0, (2),(7) imply
 
 \[
  \sum_z|w_z|\,|p(z)|\le
- \left[{4\sqrt2\,\pi\over a}+{68\kappa\over3}\right]\|p\|_2.
+ \left[{4\sqrt2\,\pi\over \alpha_0}+{68\kappa\over3}\right]\|p\|_2.
 \]
 
 PD-T112's exact norm identity proves the upper bound in (1), also for
@@ -242,6 +245,8 @@ sqrt(2)<3/2. Hence `C_*<54/5+170/9=1336/45<30`.
 Finally H_(m,n) reproduces the constant one by degree-m exactness, so
 its norm is at least `||1||_(L2(dxdy))=2`. This proves (1). ∎
 
+[Claude audit-01](../audit-01.md) accepted the mathematics at its stated scope; [response-01](../response-01.md) addresses the editorial findings. Supplementary reconstruction is recorded in [independent-checks-math.md](../independent-checks-math.md).
+
 ## Checks and sources
 
 Proof is analytic; no numerical run supplies a premise. G5 preregistration
@@ -249,7 +254,7 @@ predates runs and is retained in `../attempts/F4.md`. The novelty gate and
 all retained alternatives are in `../ideas-f4.md`. Local prior-art sources
 and their primary-reading limits are those of the cited dependency files;
 no new external source was contacted or promoted to a proof dependency.
-Independent checking is pending and must not be represented as completed.
+Supplementary independent checking and Claude audit-01 are complete; see the linked audit and supplementary check above.
 
 ## Scope and open items
 
@@ -260,9 +265,10 @@ neither signed Gram positivity nor lambda_+<2, and uses neither. Endpoint
 reproduction still stops at Pi_1 for m>=3 by PD-N051. Sharp operator norms,
 limits and fixed-function convergence remain separate questions.
 
-Next: independent reconstruction of (2), the tail sign bookkeeping,
+Independent reconstruction of (2), the tail sign bookkeeping,
 checkerboard discrete exactness, the CC floor factor, and total mass
-(12); then required Claude audit and orchestrator registry disposition.
+(12) is complete and Claude audit-01 accepted. Next: audited preparation
+and orchestrator registry disposition, following response-01.
 
 ## History
 
@@ -273,3 +279,5 @@ density tail. G0 PASS was confirmed by the orchestrator before any F4
 computation; this proof requires no computation. The original target
 PD-T114 is preserved, with this proposed substantive resolution pending
 independent audit and final-ID integration.
+
+2026-11-05, documentation response to audit-01: the pending wording in the earlier dated history above records the development state at that time. Claude audit-01 subsequently accepted the mathematics; response-01 records the permitted editorial changes. No earlier execution or statement is relabeled.

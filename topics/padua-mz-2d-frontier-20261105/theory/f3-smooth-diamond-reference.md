@@ -80,7 +80,7 @@ spectral hypothesis, computer check or external MZ theorem is assumed.
 ## Status by part
 
 Overall status: **PROVED** in development; supplementary independent
-reconstruction complete, required Claude mathematical audit pending.
+reconstruction complete, Claude mathematical audit-01 accepted.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -92,7 +92,7 @@ This is a variant of classical smoothing and PD-T115, with explicit
 weighted localization previously unproved there. No historical novelty
 claim. This theorem initially left signed PD-T116 OPEN and is not a
 resolved parameter part of that target. Subsequent separate carrier
-countersequences refute its positive assertion above half-exactness;
+countersequences refute PD-T116’s positive assertion above half-exactness;
 see `f3-fixed-ratio-threshold.md`. The positive reference theorem here
 remains valid and is not used as a signed comparison.
 
@@ -101,16 +101,18 @@ remains valid and is not used as a signed comparison.
 PD-T115's checkerboard character geometry and parity projection, whose
 elementary proof is repeated here for the changed kernel. The scalar
 Fejér finite sum is proved by pair counting. The elementary Legendre
-point-evaluation bound used for regularization is justified below.
+point-evaluation bound used for regularization is recalled below.
 No published source is inherited as a proof. PD-N045/048/053 delimit
 excluded transfer steps; they are context, not assumptions in (1).
+
+[Claude audit-01](../audit-01.md) accepted the mathematics at its stated scope; [response-01](../response-01.md) addresses the editorial findings. Supplementary reconstruction is recorded in [independent-checks-math.md](../independent-checks-math.md).
 
 ## Checks
 
 The proof checks the smallest gap `m-n=1`, the edge `m=1,n=0`, the
 Fourier plateau and cutoff, two-sheet lift, square packing and all
 normalizations. No mathematical program or numerical regression was
-executed for this analytic result. Source/rules SHA
+executed by this developer for this analytic result. Source/rules SHA
 `83cf6f1ee244f2e72057332a7ec04ee74db1f0de`. Parent G0 PASS was received
 before any computation was contemplated.
 
@@ -121,13 +123,18 @@ pairs at m=1..24 (379900 coefficient tests), 205311 alias-pair tests at
 m=1..10, and 92064 pairwise lift-separation tests at m=1..8. Lift counts
 were checked through m=24. The frozen checker is
 `../code/independent_f3_check.py`; receipt
-`../evidence/independent-f3-check.json` pins the proof before this
-verification-only metadata update at SHA-256
-`a55b401d450fe3e0510eb605051fd7ea99ee59743a1a3fc46ee14de992773aaa`.
-The mathematical proof and constants below are unchanged. These are
-supplementary analytic/finite regression checks, not an all-m computer
-proof, signed-spectrum test or required Claude audit. This developer
-read the receipt and did not represent that as a rerun.
+`../evidence/independent-f3-check.json` records the supplementary worker’s
+then-current metadata version at SHA-256
+`a55b401d450fe3e0510eb605051fd7ea99ee59743a1a3fc46ee14de992773aaa`;
+that version was not committed, so it is not a Git-replayable proof identity.
+The auditor reran the same checker on the committed audited version
+`dfbc44a3ec0589f794457fe14c3212b730d62a26c66bffa3e1d4a7295e62550d`,
+with PASS (300 degree pairs, 379900 frequency tests, 205311 alias tests,
+92064 lift-separation tests), as recorded in [audit-01](../audit-01.md)
+and [the diamond audit](../audit-01-support/subagent-f3/audit-diamond.md).
+This response cites that actual auditor execution and does not rerun it.
+These finite regressions supplement the accepted analytic proof; no
+all-m computer proof or signed-energy transfer is inferred.
 
 ## Sources
 
@@ -240,9 +247,10 @@ Combining (4) and (6) gives the symmetric envelope
  \le A^2\epsilon^{-8}m^2 E(t-z).                 \tag{7}
 \]
 
-The exponent three, rather than a coordinatewise assumption transferred
-from a rectangle, is the reason the resulting sums and integrals are
-uniformly finite.
+The pre-ratio decay exponent four survives the one-power loss in each
+diagonal variable, leaving exponent three, which is greater than one
+and therefore summable. This is a bound in the actual diagonal geometry,
+not a coordinatewise assumption transferred from a rectangle.
 
 ### 4. Continuous and discrete envelope bounds
 
@@ -271,10 +279,12 @@ original nodes must coincide. Two lifts of the same node differ by
 also valid for squares crossing a fundamental-domain boundary by using
 their local representatives.
 
-Around any center, partition each circle in its two oriented directions
-into half-open intervals of length a. A pair of distance shells numbered
-k,l is a union of at most four such squares and contains at most four
-lifts; antipodal endpoints are assigned to a single interval. Since
+Around any center, use distance shells k defined by
+`d in [ka,(k+1)a)` for k=0,...,2(m+1)-1; each is contained in the union
+of two half-open intervals of length a. Put the antipode in its own
+degenerate shell k=2(m+1), already included in the infinite sum below.
+A pair of shells k,l is contained in at most four such squares (or
+degenerate subsets of them) and contains at most four lifts. Since
 `ma>=pi/4`, the total envelope sum over all lifts is at most
 
 \[
@@ -330,12 +340,12 @@ expansion and Cauchy–Schwarz give
  \|f\|_\infty^2\le\frac{(r+1)^2}{2}\int_{-1}^1 f^2.
 \]
 
-Here `|P_k(x)|<=1` on `[-1,1]`: for `x=cos t`, the classical finite
-integral representation
-`P_k(cos t)=pi^-1 int_0^pi(cos t+i sin t cos phi)^k dphi`
-has integrand of modulus at most one. Its equality with the Legendre
-polynomial follows by the binomial expansion (or its generating series);
-thus no norm theorem is imported. Summing `(2k+1)/2` gives the displayed
+We use the standard Legendre bound `|P_k(x)|<=1` on `[-1,1]`.
+The classical Laplace identity, for `x=cos t`, is
+`P_k(cos t)=pi^-1 int_0^pi(cos t+i sin t cos phi)^k dphi`;
+its integrand has modulus at most one. We invoke this classical identity
+as a standard fact, rather than treating the earlier generating-series
+sketch as a separate derivation. Summing `(2k+1)/2` gives the displayed
 evaluation bound.
 
 Put `delta=1/(r+1)<=1`. The two endpoint angular intervals of length
@@ -374,12 +384,12 @@ norm equivalence is claimed.
 
 ## Open items
 
-- Required Claude audit. Supplementary reconstruction of the lift,
+- Claude audit-01 accepted. Supplementary reconstruction of the lift,
   packing constant, weight ratio and normalized Schur bounds found
   no gap; its finite exact regression has the scope stated above.
 - The initial intended signed comparison is superseded by the separate
   negative classification in `f3-fixed-ratio-threshold.md`. There is
-  no uniform positive signed extension above half-exactness. The
+  no uniform signed eta(theta)<1 for any theta>1/2. The
   positive-reference statement and proof here are unchanged.
 - Primary-source attribution and possible historical overlap; no
   exhaustive novelty clearance is supplied by the local gate.

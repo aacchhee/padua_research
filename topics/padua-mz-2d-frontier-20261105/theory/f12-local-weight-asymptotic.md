@@ -58,8 +58,7 @@ convergence of (1) across all node indices is made.
 
 ## Status by part
 
-Overall status: **PROVED** (analytic development; independent/Claude
-audit pending).
+Overall status: **PROVED** (analytic development; independent reconstruction complete; Claude audit-01 accepted).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -76,6 +75,8 @@ and integrated in PD-T111. The elementary absolutely convergent cosine
 series `pi sin t=2−sum_(a>=1)4cos(2at)/(4a²−1)` on [0,pi]. This last
 identity follows by integrating its cosine coefficients; a direct
 Fourier-uniqueness justification is included below.
+
+[Claude audit-01](../audit-01.md) accepted the mathematics at its stated scope; [response-01](../response-01.md) addresses the editorial findings. Supplementary reconstruction is recorded in [independent-checks-math.md](../independent-checks-math.md).
 
 ## Checks
 
@@ -239,8 +240,7 @@ of a merely pointwise limit with an uncontrolled sum.
 
 ## Open items
 
-Independent analytic reconstruction and required Claude audit; attach
-the completed check records. An effective remainder and finite explicit
+Independent analytic reconstruction and Claude audit-01 are complete; see the references below. An effective remainder and finite explicit
 threshold are not supplied. They are not needed for the existential
 countersequences, but would be needed to name an explicit violating m
 from this proof alone.

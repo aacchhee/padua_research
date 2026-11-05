@@ -55,7 +55,7 @@ at most6.48e-11. See numerical-results.md and evidence/g1-localization.json.
 Continuous L2 angular corner/edge definitions and quadrature were frozen
 before profiles; the original criterion is preserved in handoff01.
 
-## G4 — 2026-11-05 — PARTIAL finite screen; analytic alternative
+## G4 — 2026-11-05 — INCOMPLETE at original scope (float m2..239 of 2..300); analytic alternative
 
 Float coverage is every integer m2..239 at n=m−1 andm−2 (476 rows),
 no threshold hit, maximum residual3.70e−11. The requested240..300
