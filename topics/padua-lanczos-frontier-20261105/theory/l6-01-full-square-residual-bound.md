@@ -1,4 +1,6 @@
-# PD-T?lanczos-frontier-codex-L6-01 — Explicit full-square residual bound for the PD-T145 family
+# PD-T336 — Explicit full-square residual bound for the PD-T145 family
+
+Final registration (2026-11-05): **PD-T336**; status **PROVED** unchanged. Canonical provisional/historical aliases: `PD-T?lanczos-frontier-codex-L6-01`. See [complete map](../preparation/final-id-map.json). This is ID metadata only; original statement/proof and frozen input bytes retain their scopes.
 
 ID kind: PD-T.
 Aliases: complete-square commutator residual bound; e/6 commutator constant; square Q residual diagnostic.
@@ -164,3 +166,15 @@ Parent-owned status integration and later required Claude audit. The prospective
 2026-11-05: distinct Astra-high routine reconstruction PASS at the input hash in Checks. Acceptance metadata added after review; proof body unchanged. Broader actual-run target remains OPEN.
 
 2026-11-05 audit-01 response, Codex statement/metadata worker; requested gpt-6.1-sol high; runtime variant/effort not independently exposed. Rules read at `7f50cae80f5372db7c278aef4ba4a0a05e1137ea`. L6-1: the no-run statements above describe this analytic author's earlier boundary, not the later technical execution. The unchanged frozen contract's current execution metadata are in [its additive companion](l6-02-execution-metadata-20261105.md); [L6-03](l6-03-frozen-n1-output.md) and [N02](l6-N02-frozen-n1-raw-data-nonrealizability.md) contain the later finite run/raw-branch outcome. L6-3: IDEA L6-01 remains **retained**, with the barrier PROVED; **REJECTED: refuted** attaches only to the hypothesized unbounded-e/u realization under N01's exact hypotheses. The saved pre-gate draft already contained the identity, e/6 and weaker e<=48cu; the analytic continuation/verification followed the completed gate. The saved candidate draft first entered Git at `0574c47` before its prospective source gate was complete. Later completed reading does not cure or waive that deviation; acceptance remains AC's decision. The dated chronology and missing-read/gate checkpoints are in [gate-timing-response-01.md](../gate-timing-response-01.md). No novelty or priority claim is added.
+
+## History addendum — 2026-11-05 (handoff10; A-P1)
+
+This result descends from L6-01 complete-residual commutator barrier, drafted before completion of the mandatory reading gate and first committed at `0574c47`. AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. Completed-gate receipt: G6: `6012600`; these are publication SHAs, not worker input/rules SHAs. G6, L6-01, its scoped negative and the contract share `6012600`; their reported gate-before-development order within that commit is not established by Git. Earlier pending-decision wording is historical and is superseded by this dated acceptance record. See [gate-timing-response-01.md](../gate-timing-response-01.md).
+
+## Merged-source attribution addendum — 2026-11-05
+
+PR21 merged into main as `b4d292e`. The current source is [topics/padua-literature-20261103/p3-comparison.md](../../padua-literature-20261103/p3-comparison.md), unchanged memo blob `4741c38943f37ae05ba525552ceafc3f32ac5537`. The following per-statement attributions now cite that merged path with the same blob; earlier “unmerged” prose remains historical.
+
+- completed-gate P3 comparison/addendum attribution: cite the merged P3 path and blob above; the original statement’s selected-source, version/page and primary-reading coverage limits remain unchanged.
+
+This updates source location only. It asserts no new primary reading, proof import or exhaustive priority/novelty clearance.

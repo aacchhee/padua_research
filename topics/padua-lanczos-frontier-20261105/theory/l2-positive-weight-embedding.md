@@ -1,4 +1,6 @@
-# PD-T?lanczos-frontier-codex-L2-03 — positive-weight extension of the finite smooth-rule closure reduction
+# PD-T327 — positive-weight extension of the finite smooth-rule closure reduction
+
+Final registration (2026-11-05): **PD-T327**; status **PROVED** unchanged. Canonical provisional/historical aliases: `PD-T?lanczos-frontier-codex-L2-03`. See [complete map](../preparation/final-id-map.json). This is ID metadata only; original statement/proof and frozen input bytes retain their scopes.
 
 ID kind: PD-T.
 Aliases: weighted evaluation embedding; DST-compatible source normalization.
@@ -194,3 +196,7 @@ record and its hash are unchanged.
   acceptance; see [gate-timing-response-01.md](../gate-timing-response-01.md).
   This additive metadata preserves the statement/proof and status; the
   required focused Claude re-audit remains pending.
+
+## History addendum — 2026-11-05 (handoff10; A-P1)
+
+This result descends from l2-01 W and l2-02 R, with l1-02 SH_n for the application, drafted before completion of the mandatory reading gate and first committed at `0574c47`. AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. Completed-gate receipt: G12: `aab7bbe`, delta `b81c374`; these are publication SHAs, not worker input/rules SHAs. The reported gate-before-development order within the shared `b81c374` publication is prose-attested; Git does not order the receipt against the co-published L1/L2 descendants. Earlier pending-decision wording is historical and is superseded by this dated acceptance record. See [gate-timing-response-01.md](../gate-timing-response-01.md).

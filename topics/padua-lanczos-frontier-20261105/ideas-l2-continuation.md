@@ -175,3 +175,34 @@ candidate retains that qualification, with AC deciding acceptance. See
 [gate-timing-response-01.md](gate-timing-response-01.md) and the original
 candidate ledger's per-IDEA qualifiers/closest-entry additions.
 The companion records all L2-5–9 NOTE dispositions without a new run.
+
+## Per-candidate timing addendum — 2026-11-05 (handoff10)
+
+The following dated qualifiers supplement each named candidate/disposition above; earlier pending-decision text remains historical. Drafts were first committed at `0574c47` before completion of the mandatory reading gate. Existing verdicts and scientific scopes are unchanged.
+
+| Candidate / retained disposition | Permanent qualifier |
+|---|---|
+| l2-01 W continuation | AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. |
+| l2-02 R continuation | AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. |
+| l2-03 F deferred disposition | AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. |
+
+Shared-commit chronology remains reported: Git does not order G12 delta `b81c374`, G34 `aab7bbe`, G3/G5 `844e812` or G6 `6012600` against their co-published descendants. G5’s first receipt is `844e812`, blob `6b811daa2449644dcf81a5ca822f88e8e5f5cfa3`; L5a is co-published. Full receipt/input distinctions and post-gate verdicts remain in [gate-timing-response-01.md](gate-timing-response-01.md).
+
+## Merged-source attribution addendum — 2026-11-05
+
+PR21 merged into main as `b4d292e`. The current source is [topics/padua-literature-20261103/p3-comparison.md](../padua-literature-20261103/p3-comparison.md), unchanged memo blob `4741c38943f37ae05ba525552ceafc3f32ac5537`. The following per-statement attributions now cite that merged path with the same blob; earlier “unmerged” prose remains historical.
+
+- literature comparison and primary-reading limits: cite the merged P3 path and blob above; the original statement’s selected-source, version/page and primary-reading coverage limits remain unchanged.
+
+This updates source location only. It asserts no new primary reading, proof import or exhaustive priority/novelty clearance.
+
+## Final registration — 2026-11-05
+
+Every local candidate remains preserved. Existing-ID rows are aliases/continuations, not new mechanisms. Complete canonical and historical aliases are in [the map](preparation/final-id-map.json).
+
+| Canonical provisional | Final ID | Registration |
+|---|---|---|
+| IDEA?lanczos-frontier-codex-l2-01 | IDEA-416 | new audited variant |
+| IDEA?lanczos-frontier-codex-l2-02 | IDEA-417 | new audited variant |
+
+AC accepted the disclosed pre-gate deviation on 2026-11-05; it remains permanently disclosed, not waived and not cured. This decision does not falsely place L7 empirical work or the post-gate scalar bridge before their recorded gates. No hypothesis, criterion, result or candidate disposition changes.

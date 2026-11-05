@@ -105,3 +105,26 @@ Accept R4 prospectively. Before a worker drafts a candidate, it records the comp
 Family NOTE dispositions: accept L1-8's permanent IDEA/History/PR disclosure, L2's protocol qualifier, L3-9's recommendation for permanent disclosure, L4-9's scope/no-rework conclusion, L5 §5's carry-forward requirement, and L6-9's verification-only timing qualification. Their mathematical acceptance is preserved. The family wording “accepted as disclosed” is an audit recommendation within its scope; the consolidated A-P1 record and handoff07 reserve the protocol acceptance decision for AC. No audit text is altered. L2-5's within-commit proof/restatement order remains prose-attested only; no stronger Git chronology is claimed.
 
 Verification performed for this response: read-only `git log --format`, `git show <sha>:<path>`, `git rev-parse <sha>:<path>`, candidate-heading extraction from the 0574c47 blobs, bounded source reads and destination-existence/link checks. No scientific run was performed. Gate and result receipts frequently share their first publication commit; the record supports the disclosed reading-before-further-development account, not a standalone prospectively committed gate checkpoint. The remaining integration obligation is to confirm every R2 qualifier and R3 local-field edit, then include the explicit AC decision request in response-01 and the PR body and submit the response for Claude re-audit.
+
+## Dated preparation addendum — 2026-11-05 (handoff10; audit-02)
+
+AC accepted the disclosed deviation on 2026-11-05, stating “I accept the deviation”. The deviation remains permanently disclosed, not waived and not cured. Earlier pending-decision wording and the decision request above are historical and superseded by that acceptance; no new acceptance question is pending.
+
+R2-3 erratum (G5 bullet and the L5-01/02/03 coverage rows): G5 was first preserved at `844e812f127d52cab789ff7fc740fd799d389034` (2026-11-05 15:30:34 UTC), ideas-l5-continuation blob `6b811daa2449644dcf81a5ca822f88e8e5f5cfa3`, not first at `b6bf1f6`. The later commit appends the n3 outcome. L5a/L5-01 and the G5 receipt share the first publication commit; reported reading-before-development order is prose-attested, not established by Git. The original conservative but incorrect locator is retained as historical text.
+
+R2-4 erratum: the complete pre-gate majorant system and constants are verifiable in `0574c47:topics/padua-lanczos-frontier-20261105/attempts/L3.md`; they match theory displays (2)–(5) and (7), up to the recorded notation changes. They survived unchanged. The unretained `cdcf4214a6ae251db66954baeb3cfce41a2c17340ab2a85220dfd988164c3a8a` caveat concerns only the intermediate reviewed draft, not that committed pre-gate draft.
+
+R2-1 clarification for the L3a row’s “stronger” model: it is a different per-column zeroth-order finite-error budget whose error-family class neither contains nor is contained in Hres.
+
+Audit-02 NOTE dispositions:
+
+| NOTE | Disposition and scope |
+|---|---|
+| GATE N1 shared-commit order | Accept. G12 delta `b81c374`, G34 `aab7bbe`, G3/G5 `844e812` and G6 `6012600` co-publish receipts and descendants; reported internal order is not Git-established. Per-family addenda retain that caveat. |
+| GATE N2 mirror context | Accept. PD-N011’s measured set-dependent ordering and PD-N015’s measured uniform-safety failure remain context; SH_n’s formal mirror upper bound gives no general ordering. |
+| GATE N3 W/R precision | Accept. First-order invariance is universal within R_smooth with fixed BJ parents. IEEE realization and unrestricted PD-T055(U) remain outside that statement. |
+| GATE N4 qualifier harmonization | Accept. Each affected candidate and all 18 descendant Histories carry dated acceptance qualifiers; L4/L5 parents are explicitly named. Frozen L1/L2 and contract bytes use their existing companions. |
+| GATE N5 R4 scope | Accept. R4 is this topic’s prospective process control. A cross-topic rule would require AC to amend WORKFLOW; no such amendment is made. |
+| R2-TXT-8 shifted ceiling | Defer optional strengthening; the existing qualified non-assertion remains sufficient. No new formula or claim is added. |
+
+This preparation adds record corrections only. Independent mathematical acceptance remains separate from the accepted protocol deviation; original OPEN research targets remain OPEN.

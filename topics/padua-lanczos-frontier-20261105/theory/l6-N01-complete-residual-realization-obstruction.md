@@ -1,4 +1,6 @@
-# PD-N?lanczos-frontier-codex-L6-01 — No unbounded e/u realization under two complete square residual budgets
+# PD-N117 — No unbounded e/u realization under two complete square residual budgets
+
+Final registration (2026-11-05): **PD-N117**; status **PROVED** unchanged. Canonical provisional/historical aliases: `PD-N?lanczos-frontier-codex-L6-01`. See [complete map](../preparation/final-id-map.json). This is ID metadata only; original statement/proof and frozen input bytes retain their scopes.
 
 ID kind: PD-N.
 Aliases: complete-square e/u separation obstruction; well-conditioned full-residual realization barrier.
@@ -71,3 +73,7 @@ Parent-owned registry allocation and later required Claude audit. A prospective 
 2026-11-05: distinct Astra-high routine reconstruction PASS; accepted the reviewer's nonblocking hypothesis-scope wording clarification. This avoids an unproved irreducibility assertion and changes no mathematical conclusion. Acceptance metadata added; proof body unchanged.
 
 2026-11-05 audit-01 response, Codex statement/metadata worker; requested gpt-6.1-sol high; runtime variant/effort not independently exposed. Rules read at `7f50cae80f5372db7c278aef4ba4a0a05e1137ea`. L6-1: "remains unexecuted" above is preserved as the analytic boundary before the later technical allocation. Current execution metadata are in [the frozen-contract companion](l6-02-execution-metadata-20261105.md), with [L6-03](l6-03-frozen-n1-output.md) and [N02](l6-N02-frozen-n1-raw-data-nonrealizability.md). L6-3: the rejection object is the named unbounded-e/u realization claim only; the diagnostic candidate stays retained. The saved pre-gate residual draft already contained the identity and constants; the continuation/verification followed the completed gate. The saved candidate draft first entered Git at `0574c47` before its prospective source gate was complete. Later completed reading does not cure or waive that deviation; acceptance remains AC's decision. The dated chronology and missing-read/gate checkpoints are in [gate-timing-response-01.md](../gate-timing-response-01.md). No novelty or priority claim is added.
+
+## History addendum — 2026-11-05 (handoff10; A-P1)
+
+This result descends from L6-01 complete-residual commutator barrier, drafted before completion of the mandatory reading gate and first committed at `0574c47`. AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. Completed-gate receipt: G6: `6012600`; these are publication SHAs, not worker input/rules SHAs. G6, L6-01, its scoped negative and the contract share `6012600`; their reported gate-before-development order within that commit is not established by Git. Earlier pending-decision wording is historical and is superseded by this dated acceptance record. See [gate-timing-response-01.md](../gate-timing-response-01.md).

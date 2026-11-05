@@ -95,3 +95,34 @@ The distinct Astra-high reviewer subsequently read both full finite records and 
 2026-11-05 audit-01 response, Codex statement/metadata worker; requested gpt-6.1-sol high; runtime variant/effort not independently exposed. Rules read at `7f50cae80f5372db7c278aef4ba4a0a05e1137ea`. Each IDEA entry above descends from the saved pre-gate draft at `0574c47`. L6-01's identity, e/6 and e<=48cu were already drafted; its subsequent analytic continuation and verification followed the completed gate. L6-02's contract was finalized/frozen and executed after the gate, while its saved candidate idea preceded it. The raw exact-match sub-route alone is rejected; IDEA L6-01 remains retained and IDEA L6-02/262 remains deferred/duplicate as a mechanism. Later reading does not cure or waive the deviation; the dated R1 table is [gate-timing-response-01.md](gate-timing-response-01.md), and acceptance remains AC's decision.
 
 L6-1/L6-4: the [metadata companion](theory/l6-02-execution-metadata-20261105.md) supplies the forward pointer for the frozen contract's old unexecuted sentences, and records the existing correction/fit budgets governing any continuation. L6-7: the raw necessary-symmetry stop is accepted within its limited scope; corrected/model discriminability remains untested. PROT-14: the cited PR21 (unmerged) memo is pinned by blob `4741c38943f37ae05ba525552ceafc3f32ac5537`, unchanged at its audited head `67b3e01`; no new primary reading or priority claim is made.
+
+## Per-candidate timing addendum — 2026-11-05 (handoff10)
+
+The following dated qualifiers supplement each named candidate/disposition above; earlier pending-decision text remains historical. Drafts were first committed at `0574c47` before completion of the mandatory reading gate. Existing verdicts and scientific scopes are unchanged.
+
+| Candidate / retained disposition | Permanent qualifier |
+|---|---|
+| L6-01 complete-residual commutator barrier | AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. |
+| L6-02 actual-run localized moment-cone fit / IDEA-262 contract | AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. |
+
+Shared-commit chronology remains reported: Git does not order G12 delta `b81c374`, G34 `aab7bbe`, G3/G5 `844e812` or G6 `6012600` against their co-published descendants. G5’s first receipt is `844e812`, blob `6b811daa2449644dcf81a5ca822f88e8e5f5cfa3`; L5a is co-published. Full receipt/input distinctions and post-gate verdicts remain in [gate-timing-response-01.md](gate-timing-response-01.md).
+
+## Merged-source attribution addendum — 2026-11-05
+
+PR21 merged into main as `b4d292e`. The current source is [topics/padua-literature-20261103/p3-comparison.md](../padua-literature-20261103/p3-comparison.md), unchanged memo blob `4741c38943f37ae05ba525552ceafc3f32ac5537`. The following per-statement attributions now cite that merged path with the same blob; earlier “unmerged” prose remains historical.
+
+- one-operator versus two-operator comparison in the literature gate: cite the merged P3 path and blob above; the original statement’s selected-source, version/page and primary-reading coverage limits remain unchanged.
+- PROT-14 memo pin: cite the merged P3 path and blob above; the original statement’s selected-source, version/page and primary-reading coverage limits remain unchanged.
+
+This updates source location only. It asserts no new primary reading, proof import or exhaustive priority/novelty clearance.
+
+## Final registration — 2026-11-05
+
+Every local candidate remains preserved. Existing-ID rows are aliases/continuations, not new mechanisms. Complete canonical and historical aliases are in [the map](preparation/final-id-map.json).
+
+| Canonical provisional | Final ID | Registration |
+|---|---|---|
+| IDEA?lanczos-frontier-codex-L6-01 | IDEA-422 | new audited variant |
+| IDEA?lanczos-frontier-codex-L6-02 | IDEA-262 | existing canonical home; continuation/alias retained |
+
+AC accepted the disclosed pre-gate deviation on 2026-11-05; it remains permanently disclosed, not waived and not cured. This decision does not falsely place L7 empirical work or the post-gate scalar bridge before their recorded gates. No hypothesis, criterion, result or candidate disposition changes.

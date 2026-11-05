@@ -48,3 +48,7 @@ All commands below ran from `/workspace/padua_research`; no full scan, new data 
 Focused Claude response re-audit remains required. Cold-storage delivery and original historic CPU metadata remain unavailable; no success is invented for either.
 
 Final fast checks actually run: `python -B topics/padua-lanczos-frontier-20261105/code/g1_compact_check.py > /tmp/g1-compact-check-final.json` (PASS); a Python `-B` AST/JSON/Markdown-link check over the seven owned prose files, six new evidence JSONs and four new Python sources (PASS; all JSON files below 16 KiB); `git diff --check` (exit 0). Final hashes of frozen g1_fit.py, g1_fit_independent.py, l7_natural.py, l7_suite_summary.py, l7-preregistration.md and g1-fit-spec.md match their original pins. Root runs/integrates the topic manifest after all concurrent changes.
+
+### 2026-11-05 preparation update — R2-EVD-3/4
+
+The environment receipt describes forced Haswell, not the default dispatch; future receipts should record both when feasible and say which dispatch performed the run. No additional observation is claimed here. `storage_response_inventory.py` without `--check` writes/replaces its committed index; verification-only recipes must retain `--check`. Root's already executed n1 recipe is recorded in evidence/response-n1-recheck.json; earlier agent-specific NOT_EXECUTED wording is historical and superseded by the dated pointers. AC accepted the permanently disclosed A-P1 deviation on2026-11-05, without waiver/cure.

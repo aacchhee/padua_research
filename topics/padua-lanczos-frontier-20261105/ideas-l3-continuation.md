@@ -154,3 +154,38 @@ see [gate-timing-response-01.md](gate-timing-response-01.md).
 | L3-8 | Accept; a monotonicity/lower-pivot-enclosure sentence now makes conservative acceptance explicit. |
 | L3-9 | Accept facts and permanent disclosure; acceptance is AC's decision, not cured by the later gate. |
 | L3-10 | Accept distinction: Astra was supplementary same-family review; Claude audit-01 supplied cross-family audit. |
+
+## Preparation errata — 2026-11-05
+
+R2-1 erratum: every earlier L3 use of “stronger” in this file describes a different per-column zeroth-order finite-error budget: the model (1) error-family class neither contains nor is contained in Hres. It does not assert hypothesis inclusion or a uniform result over Hres alone. This qualifies each occurrence in: closest-record L3a row; adaptive-branch guarantee; audit-response supporting-reformulation paragraph.
+
+R2-4 erratum: the complete pre-gate majorant system and constants are verifiable in `0574c47:topics/padua-lanczos-frontier-20261105/attempts/L3.md`; they match theory displays (2)–(5) and (7), up to the recorded notation changes. They survived unchanged. The unretained `cdcf4214a6ae251db66954baeb3cfce41a2c17340ab2a85220dfd988164c3a8a` caveat concerns only the intermediate reviewed draft, not that committed pre-gate draft.
+
+## Per-candidate timing addendum — 2026-11-05 (handoff10)
+
+The following dated qualifiers supplement each named candidate/disposition above; earlier pending-decision text remains historical. Drafts were first committed at `0574c47` before completion of the mandatory reading gate. Existing verdicts and scientific scopes are unchanged.
+
+| Candidate / retained disposition | Permanent qualifier |
+|---|---|
+| L3a / L3-01 explicit-radius majorant | AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. |
+| L3b / L3-02 adaptive decision tree | AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. |
+
+Shared-commit chronology remains reported: Git does not order G12 delta `b81c374`, G34 `aab7bbe`, G3/G5 `844e812` or G6 `6012600` against their co-published descendants. G5’s first receipt is `844e812`, blob `6b811daa2449644dcf81a5ca822f88e8e5f5cfa3`; L5a is co-published. Full receipt/input distinctions and post-gate verdicts remain in [gate-timing-response-01.md](gate-timing-response-01.md).
+
+## Merged-source attribution addendum — 2026-11-05
+
+PR21 merged into main as `b4d292e`. The current source is [topics/padua-literature-20261103/p3-comparison.md](../padua-literature-20261103/p3-comparison.md), unchanged memo blob `4741c38943f37ae05ba525552ceafc3f32ac5537`. The following per-statement attributions now cite that merged path with the same blob; earlier “unmerged” prose remains historical.
+
+- P3 comparison-digest/source-gap qualification: cite the merged P3 path and blob above; the original statement’s selected-source, version/page and primary-reading coverage limits remain unchanged.
+
+This updates source location only. It asserts no new primary reading, proof import or exhaustive priority/novelty clearance.
+
+## Final registration — 2026-11-05
+
+Every local candidate remains preserved. Existing-ID rows are aliases/continuations, not new mechanisms. Complete canonical and historical aliases are in [the map](preparation/final-id-map.json).
+
+| Canonical provisional | Final ID | Registration |
+|---|---|---|
+| IDEA?lanczos-frontier-codex-L3-01 | IDEA-419 | new audited variant |
+
+AC accepted the disclosed pre-gate deviation on 2026-11-05; it remains permanently disclosed, not waived and not cured. This decision does not falsely place L7 empirical work or the post-gate scalar bridge before their recorded gates. No hypothesis, criterion, result or candidate disposition changes.

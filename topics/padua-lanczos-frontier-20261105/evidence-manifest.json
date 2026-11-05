@@ -1,14 +1,14 @@
 {
   "format": "regenerable-file-inventory-v1",
-  "source_rules_commit": "7f50cae80f5372db7c278aef4ba4a0a05e1137ea",
+  "source_rules_commit": "a3f03be58be6819d833523ef26ccff69f5bc184a",
   "scope": "All tracked topic/results files except LOG, handoffs and this manifest; identities only, not scientific acceptance.",
   "inventory": {
-    "path": "/tmp/padua-lanczos-frontier-storage/files-60d92a7285da6c0b0b6f5115b334d8fcd995fdf19e74cb4da802d78f68272bee.json",
-    "bytes": 35442,
-    "sha256": "60d92a7285da6c0b0b6f5115b334d8fcd995fdf19e74cb4da802d78f68272bee",
-    "files": 330
+    "path": "/tmp/padua-lanczos-frontier-storage/files-b6d845a9d2b53acf950766a05ac4d55e49af73cc6bd2e8f0938917f5856033d4.json",
+    "bytes": 41458,
+    "sha256": "b6d845a9d2b53acf950766a05ac4d55e49af73cc6bd2e8f0938917f5856033d4",
+    "files": 382
   },
   "verification": "Recompute the entire canonical file inventory from repository bytes; external inventory is not an acceptance dependency. Individual rows remain in the external content-addressed inventory and can be regenerated with this committed helper.",
-  "build_command": "python -B topics/padua-lanczos-frontier-20261105/code/check_manifest.py --write --rules 7f50cae80f5372db7c278aef4ba4a0a05e1137ea",
+  "build_command": "python -B topics/padua-lanczos-frontier-20261105/code/check_manifest.py --write --rules a3f03be58be6819d833523ef26ccff69f5bc184a",
   "retention": "Local temporary inventory only; no archival delivery or retention promised."
 }

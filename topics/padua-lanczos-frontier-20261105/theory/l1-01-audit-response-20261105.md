@@ -1,4 +1,6 @@
-# L1-01 metadata companion — audit response, 2026-11-05
+# PD-T324 — L1-01 metadata companion — audit response, 2026-11-05
+
+Final registration (2026-11-05): **PD-T324**; status **PROVED** unchanged. Canonical provisional/historical aliases: `PD-T?lanczos-frontier-codex-L1-01`; `PD-T?lanczos-frontier-codex-L1a`. See [complete map](../preparation/final-id-map.json). This is ID metadata only; original statement/proof and frozen input bytes retain their scopes.
 
 This is additive metadata for the existing PROVED analytic result, not a
 separate mathematical claim or result ID. The theorem/checker inputs stay
@@ -61,3 +63,19 @@ the checker-pinned bytes. There is no novelty or priority claim.
 Metadata response: Codex, assigned gpt-6.1-sol high; runtime-resolved model/effort are not independently exposed; rules read
 at `7f50cae80f5372db7c278aef4ba4a0a05e1137ea`. No scientific rerun or
 status upgrade. Focused Claude re-audit remains required.
+
+## History addendum — 2026-11-05 (handoff10; A-P1)
+
+This result descends from l1-02 SH_n transfer family, drafted before completion of the mandatory reading gate and first committed at `0574c47`. AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. Completed-gate receipt: G12: `aab7bbe`, delta `b81c374`; these are publication SHAs, not worker input/rules SHAs. The reported gate-before-development order within the shared `b81c374` publication is prose-attested; Git does not order the receipt against the co-published L1/L2 descendants. Earlier pending-decision wording is historical and is superseded by this dated acceptance record. See [gate-timing-response-01.md](../gate-timing-response-01.md).
+
+## Audit-02 selection-context addendum — 2026-11-05
+
+GATE N2 accepted: this single-family formal mirror upper bound supplies no general rule ordering. PD-N011 measured set-dependent dev/mirror ordering; PD-N015 measured failure of uniform safety. The all-degree normal-projected aggregate SH_n result remains distinct from IDEA-130/134’s finite loss/raw-propagator observations and finite exact impulse certificates.
+
+## Merged-source attribution addendum — 2026-11-05
+
+PR21 merged into main as `b4d292e`. The current source is [topics/padua-literature-20261103/p3-comparison.md](../../padua-literature-20261103/p3-comparison.md), unchanged memo blob `4741c38943f37ae05ba525552ceafc3f32ac5537`. The following per-statement attributions now cite that merged path with the same blob; earlier “unmerged” prose remains historical.
+
+- frozen theorem’s Literature paragraph, through this companion: cite the merged P3 path and blob above; the original statement’s selected-source, version/page and primary-reading coverage limits remain unchanged.
+
+This updates source location only. It asserts no new primary reading, proof import or exhaustive priority/novelty clearance.

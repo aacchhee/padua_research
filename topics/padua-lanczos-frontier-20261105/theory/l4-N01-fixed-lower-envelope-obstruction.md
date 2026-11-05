@@ -1,4 +1,6 @@
-# PD-N?lanczos-frontier-codex-L4-01 — fixed old BJ lower cannot pass the absolute-envelope spectral certificate on rotQ24
+# PD-N116 — fixed old BJ lower cannot pass the absolute-envelope spectral certificate on rotQ24
+
+Final registration (2026-11-05): **PD-N116**; status **PROVED** unchanged. Canonical provisional/historical aliases: `PD-N?lanczos-frontier-codex-L4-01`. See [complete map](../preparation/final-id-map.json). This is ID metadata only; original statement/proof and frozen input bytes retain their scopes.
 
 ID kind: PD-N.
 Aliases: fixed-lower envelope obstruction; post hoc Rayleigh diagnostic.
@@ -217,3 +219,7 @@ actual-rounding or all-degree conclusion follows.
   original experiment's INCONCLUSIVE verdict remain separate.
 
 - 2026-11-05 audit-01 response, Codex statement/metadata worker; requested gpt-6.1-sol high; runtime variant/effort not independently exposed. Rules read at `7f50cae80f5372db7c278aef4ba4a0a05e1137ea`. L4-4/L4-5: this negative is split from IDEA L4-01's fixed-old-lower candidate criterion only; it is not split from the successful positive theorem `PD-T?lanczos-frontier-codex-L4-01`. The later full-output test succeeded. The scope and proof are unchanged. The saved candidate draft first entered Git at `0574c47` before its prospective source gate was complete. Later completed reading does not cure or waive that deviation; acceptance remains AC's decision. The dated chronology and missing-read/gate checkpoints are in [gate-timing-response-01.md](../gate-timing-response-01.md). No novelty or priority claim is added.
+
+## History addendum — 2026-11-05 (handoff10; A-P1)
+
+This result descends from L4a/L4-01 fixed-old-lower envelope subroute, drafted before completion of the mandatory reading gate and first committed at `0574c47`. AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. Completed-gate receipt: G34: `aab7bbe`; these are publication SHAs, not worker input/rules SHAs. The reported gate-before-development order inside shared publication `aab7bbe` is not established by Git. Earlier pending-decision wording is historical and is superseded by this dated acceptance record. See [gate-timing-response-01.md](../gate-timing-response-01.md).

@@ -1,4 +1,6 @@
-# PD-T?lanczos-frontier-codex-G1-01 — finite endpoint fitting and interval-gate measurements
+# PD-T338 — finite endpoint fitting and interval-gate measurements
+
+Final registration (2026-11-05): **PD-T338**; status **MEASURED** unchanged. Canonical provisional/historical aliases: `PD-T?lanczos-frontier-codex-G1-01`; `PD-T?lanczos-frontier-codex-G1-fit`; `PD-T?lanczos-frontier-G1-fit`. See [complete map](../preparation/final-id-map.json). This is ID metadata only; original statement/proof and frozen input bytes retain their scopes.
 
 ID kind: PD-T (provisional; no final ID assigned).
 Aliases: `PD-T?lanczos-frontier-G1-fit` (historical ID); `PD-T?lanczos-frontier-codex-G1-fit` (response working alias); G1 complete rational-grid endpoint fits; frozen finite logratio gate.
@@ -117,3 +119,7 @@ History: agent-qualified provisional ID replaces the historical spelling as cano
 ### History — permanent gate-timing qualifier (A-P1 / PROT-2), 2026-11-05
 
 This result descends from l1-01 (exact-grid G1 rate continuation), drafted before completion of the mandatory reading gate and first committed at `0574c47c697a63d76d6222393d3521c145870d03`. The completed L1/L2 gate receipt was first preserved at `aab7bbe97899b0216d60a015c1a0d2cb2d7cbd99` (input/rules `684849d7d19ac2604213ae3d4f499d3436f58b3d`), with delta receipt published at `b81c374722a5eaf3441cb36c970d6f6da8a58230` (input `0e493be7f9883e00e6260cf6b081c607a230177f`). Later finite computations do not make the initial drafting prospective. The timing deviation remains disclosed, not waived or cured; independent mathematical acceptance and AC's protocol decision are separate. [Gate-timing response](../gate-timing-response-01.md) retains the coverage, publication/input distinction and pending AC acceptance decision.
+
+## History addendum — 2026-11-05 (handoff10; A-P1)
+
+This result descends from l1-01 exact-grid G1 continuation, drafted before completion of the mandatory reading gate and first committed at `0574c47`. AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. Completed-gate receipt: G12: `aab7bbe`, delta `b81c374`; these are publication SHAs, not worker input/rules SHAs. The reported gate-before-development order within the shared `b81c374` publication is prose-attested; Git does not order the receipt against the co-published L1/L2 descendants. Earlier pending-decision wording is historical and is superseded by this dated acceptance record. See [gate-timing-response-01.md](../gate-timing-response-01.md).

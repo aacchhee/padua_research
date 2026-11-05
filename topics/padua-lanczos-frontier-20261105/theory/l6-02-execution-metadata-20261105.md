@@ -11,3 +11,9 @@ The corrected branch was already specified before the data: maximum-entry correc
 The pre-gate L6 candidate draft already contained the complete-residual identity, `e/6`, and the weaker `e<=48cu` bound. The subsequent analytic continuation and its verification followed the completed gate, but the saved draft preceded it. The contract was finalized/frozen before its execution. These are distinct chronology facts; later reading neither cures nor waives the original gate-timing deviation. See [gate-timing-response-01.md](../gate-timing-response-01.md); acceptance remains AC's decision.
 
 A repository-only checker recipe that stages the three committed inputs under their expected names and writes all new outputs/receipt into fresh scratch is in [l6-n1-methods.md](../l6-n1-methods.md#repository-only-non-overwriting-checker-recipe--2026-11-05). That recipe is documentation, not another executed run.
+
+## Existing root execution and timing addendum — 2026-11-05
+
+R2-7 / R2-TXT-5 / R2-EVD-2: the earlier “not executed” sentence describes the documentation worker’s checkpoint, not the complete response publication. The root actually executed the repository-only n1 recipe once, as recorded in [response-01.md](../response-01.md). The committed receipt is [response-n1-recheck.json](../evidence/response-n1-recheck.json), SHA-256 `c683aaf8ff20b190cd0b4c165bdc69ad6c4cae983acca1d1bf0ec0ff6d5fb65c`: exit 0, 367 operations, complete 64u residual budgets PASS, raw branch INCONSISTENT and five rejected corruption controls. This addendum reports that existing root execution; no new run was performed.
+
+For the frozen contract’s IDEA L6-02 timing: AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. G6 and the contract share `6012600`; the reported within-commit gate-before-development order is not established by Git. The companion preserves the contract’s pinned bytes and all frozen thresholds.

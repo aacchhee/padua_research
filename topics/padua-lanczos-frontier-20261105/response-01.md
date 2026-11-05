@@ -127,3 +127,21 @@ After that supplementary review, only this consolidated response, final stage/ne
 ## Next step
 
 Focused **Claude Opus5.5 high** re-audit under handoff08 covers A-M1/A-M2/A-P1 remediation, A-m1–A-m8, all companions/aliases/proposals, the compact checker and final inventory against the exact response output commit. Accepted mathematical proofs need not be reopened. The auditor may choose xhigh if it identifies a material mathematical statement/proof change; the intended response preserves those bytes and formulas. Keep draft PR24 unready. After acceptance: live/retired reservation refresh, final IDs, literal registry application, integration checks and AC's decision. Only AC merges.
+
+## Dated preparation addendum — 2026-11-05 (handoff10)
+
+AC accepted the disclosed deviation on 2026-11-05, stating “I accept the deviation”. It remains permanently disclosed, not waived and not cured. The earlier pending-decision statements and explicit AC question above are historical; acceptance is already recorded and is not being requested again. Claude audit-02 accepted response-01 with minor record findings; this addendum addresses the owned wording without rewriting that audit or the earlier response.
+
+R2-3 erratum: G5 was first preserved at `844e812f127d52cab789ff7fc740fd799d389034`, ideas-l5-continuation blob `6b811daa2449644dcf81a5ca822f88e8e5f5cfa3`, not first at `b6bf1f6`. L5a/L5-01 shares that commit; the reported gate-before-development order within it is not established by Git. See the dated [gate-timing addendum](gate-timing-response-01.md#dated-preparation-addendum--2026-11-05-handoff10-audit-02).
+
+R2-4 erratum: the complete pre-gate majorant system and constants are verifiable in `0574c47:topics/padua-lanczos-frontier-20261105/attempts/L3.md`; they match theory displays (2)–(5) and (7), up to the recorded notation changes. They survived unchanged. The unretained `cdcf4214a6ae251db66954baeb3cfce41a2c17340ab2a85220dfd988164c3a8a` caveat concerns only the intermediate reviewed draft, not that committed pre-gate draft.
+
+R2-7: the existing root recipe execution is recorded under A-m7 above and in [response-n1-recheck.json](evidence/response-n1-recheck.json), SHA-256 `c683aaf8ff20b190cd0b4c165bdc69ad6c4cae983acca1d1bf0ec0ff6d5fb65c`. Dated pointers in the n1 methods and contract metadata companion correct the documentation-worker “not executed” checkpoint wording. No new execution accompanied this preparation.
+
+A-m6 merged-source update, per statement: PR21 merged into main as `b4d292e`; [topics/padua-literature-20261103/p3-comparison.md](../padua-literature-20261103/p3-comparison.md) retains blob `4741c38943f37ae05ba525552ceafc3f32ac5537`.
+
+- The L1 and each L2 comparison continue to cite P3 row 14/group C for PD-T136–141 extensions, with the existing source-coverage limits.
+- L4 and its route-obstruction comparison continue to cite P3 row 14/group C, with those same limits.
+- L3-01 continues to cite P3 row 15 and Barrio–Peña–Sauer Remark 9 as related numerical-selection prior art; the later in-memo Xu addendum leaves row 15 unaffected.
+
+Earlier “unmerged” wording remains historical. This change supplies merged-source locations, not primary fulltext verification or exhaustive novelty clearance. GATE N1–N5 and R2-TXT-8 dispositions are recorded in the dated gate-timing addendum; R4 remains topic-level only, and W/R remain formal R_smooth statements without IEEE realization claims.

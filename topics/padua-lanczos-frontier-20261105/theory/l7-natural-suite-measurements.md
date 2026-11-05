@@ -1,4 +1,6 @@
-# PD-T?lanczos-frontier-codex-L7-01 — reference-conditioned natural fitting measurements
+# PD-T339 — reference-conditioned natural fitting measurements
+
+Final registration (2026-11-05): **PD-T339**; status **MEASURED** unchanged. Canonical provisional/historical aliases: `PD-T?lanczos-frontier-codex-L7-01`; `PD-T?lanczos-frontier-codex-L7`; `PD-T?lanczos-frontier-L7`. See [complete map](../preparation/final-id-map.json). This is ID metadata only; original statement/proof and frozen input bytes retain their scopes.
 
 ID kind: PD-T (provisional; no final ID allocated).
 Aliases: `PD-T?lanczos-frontier-L7` (historical ID); `PD-T?lanczos-frontier-codex-L7` (response working alias); L7 natural suite; fixed-target build/fit/recurrence study.

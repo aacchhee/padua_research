@@ -67,3 +67,26 @@ Setting u=e in PD-T145 without producing a recurrence is non-discriminating beca
 2026-11-05 audit-01 response, Codex statement/metadata worker; requested gpt-6.1-sol high; runtime variant/effort not independently exposed. Rules read at `7f50cae80f5372db7c278aef4ba4a0a05e1137ea`. The earlier stop/no-run entries are historical. L5-01 is retained as a standard finite-certificate variant; its descendants are canonical PD-T L5-01/02/03/04 (aliases L5a/b/c/d), with n3 bracket and n4/n5 lower proofs recorded separately. L5-02 remains deferred; L5-03 remains abandoned as equivalent/invalid inference, no PD-N. All three candidates were drafted before gate completion; see [gate-timing-response-01.md](gate-timing-response-01.md).
 
 L6-01 remains retained as a diagnostic with barrier PROVED in [the quantitative theorem](theory/l6-01-full-square-residual-bound.md); only the unbounded-e/u realization claim under N01's hypotheses is **REJECTED: refuted**. Its saved draft already contained the identity, e/6 and e<=48cu before the gate; the analytic continuation/verification followed completed reading. L6-02 remains deferred as IDEA-262's contract/continuation, duplicate as a mechanism. The later run and distinct exact replay are in [L6-03](theory/l6-03-frozen-n1-output.md); only its unchanged fourteen-slot raw exact-match claim is **REJECTED: refuted** in [N02](theory/l6-N02-frozen-n1-raw-data-nonrealizability.md). The [frozen-contract companion](theory/l6-02-execution-metadata-20261105.md) resolves its historical unexecuted wording without changing pinned bytes. The actual contract and execution followed the gate; the saved idea preceded it. Later reading does not cure or waive the deviation; acceptance remains AC's decision. No corrected/model search occurred, and PD-T056(G)/U2 stay OPEN.
+
+## Per-candidate timing addendum — 2026-11-05 (handoff10)
+
+The following dated qualifiers supplement each named candidate/disposition above; earlier pending-decision text remains historical. Drafts were first committed at `0574c47` before completion of the mandatory reading gate. Existing verdicts and scientific scopes are unchanged.
+
+| Candidate / retained disposition | Permanent qualifier |
+|---|---|
+| L5-01 full-kernel finite positive spanning | AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. |
+| L5-02 square covering/global positivity | AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. |
+| L5-03 named-certificate decay inference | AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. |
+| L6-01 complete-residual commutator barrier | AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. |
+| L6-02 actual-run localized moment-cone fit | AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. |
+| retained abandoned L6 inferences u=e, compression and (E)→(G) transfer | AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. |
+
+Shared-commit chronology remains reported: Git does not order G12 delta `b81c374`, G34 `aab7bbe`, G3/G5 `844e812` or G6 `6012600` against their co-published descendants. G5’s first receipt is `844e812`, blob `6b811daa2449644dcf81a5ca822f88e8e5f5cfa3`; L5a is co-published. Full receipt/input distinctions and post-gate verdicts remain in [gate-timing-response-01.md](gate-timing-response-01.md).
+
+## Merged-source attribution addendum — 2026-11-05
+
+PR21 merged into main as `b4d292e`. The current source is [topics/padua-literature-20261103/p3-comparison.md](../padua-literature-20261103/p3-comparison.md), unchanged memo blob `4741c38943f37ae05ba525552ceafc3f32ac5537`. The following per-statement attributions now cite that merged path with the same blob; earlier “unmerged” prose remains historical.
+
+- initial P3/Xu/Dunkl–Xu bounded literature report: cite the merged P3 path and blob above; the original statement’s selected-source, version/page and primary-reading coverage limits remain unchanged.
+
+This updates source location only. It asserts no new primary reading, proof import or exhaustive priority/novelty clearance.

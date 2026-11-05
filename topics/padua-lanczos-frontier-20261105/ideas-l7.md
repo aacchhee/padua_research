@@ -68,3 +68,16 @@ At bb67c1ee830d468fa33007e15008d5574d00ccf4, prescribed G4 developer replay exec
 ## Current execution/status addendum — 2026-11-05 (audit L7G1-3)
 
 The NOT-RUN/deferred statements above describe the earlier G0/G4 stop checkpoints. IDEA?lanczos-frontier-codex-L7-01 and -02 subsequently executed after G4's explained-arithmetic disposition; their present disposition is **retained, finite empirical comparison completed**, with canonical measured theory `PD-T?lanczos-frontier-codex-L7-01` in [l7-natural-suite-measurements](theory/l7-natural-suite-measurements.md). The recorded Haswell outcome is 20/1280 losses, six same-group plus six cross-group directions, with the same-group restriction identified as post-registration. Cross-kernel counts differ (18/9 default AVX-512; 20/6 Haswell). No causal/universal or novelty claim follows. Full supplementary checking and Claude audit-01 completed; focused response re-audit is pending. The BNT and Zhu tasks (-03/-04) remain deferred for the stated access/runtime/source reasons. Historical IDs are retained as aliases; no final IDs are allocated.
+
+## Final registration — 2026-11-05
+
+Every local candidate remains preserved. Existing-ID rows are aliases/continuations, not new mechanisms. Complete canonical and historical aliases are in [the map](preparation/final-id-map.json).
+
+| Canonical provisional | Final ID | Registration |
+|---|---|---|
+| IDEA?lanczos-frontier-codex-L7-01 | IDEA-423 | new audited variant |
+| IDEA?lanczos-frontier-codex-L7-02 | IDEA-424 | new audited variant |
+| IDEA?lanczos-frontier-codex-L7-03 | IDEA-266 | existing canonical home; continuation/alias retained |
+| IDEA?lanczos-frontier-codex-L7-04 | IDEA-267 | existing canonical home; continuation/alias retained |
+
+AC accepted the disclosed pre-gate deviation on 2026-11-05; it remains permanently disclosed, not waived and not cured. This decision does not falsely place L7 empirical work or the post-gate scalar bridge before their recorded gates. No hypothesis, criterion, result or candidate disposition changes.

@@ -1,4 +1,6 @@
-# PD-T?lanczos-frontier-codex-L5-01 — Finite certificates bracketing the optimal obstruction radius
+# PD-T332 — Finite certificates bracketing the optimal obstruction radius
+
+Final registration (2026-11-05): **PD-T332**; status **PROVED** unchanged. Canonical provisional/historical aliases: `PD-T?lanczos-frontier-codex-L5-01`; `PD-T?lanczos-frontier-codex-L5a`. See [complete map](../preparation/final-id-map.json). This is ID metadata only; original statement/proof and frozen input bytes retain their scopes.
 
 ID kind: PD-T.
 Aliases: PD-T?lanczos-frontier-codex-L5a; L5a; full first-jet-kernel positive span; finite LP upper certificate; local Taylor lower certificate; G3 verifier reduction.
@@ -132,3 +134,7 @@ The reduction's distinct mathematical check is accepted as recorded above. Separ
 2026-11-05: distinct reviewer accepted the convention/history update at8a43ca4d; linked the durable section and corrected current pending-review metadata only. No further scientific definition, proof or certificate inequality changed. Original accepted hashes and the earlier history are retained.
 
 2026-11-05 audit-01 response, Codex statement/metadata worker; requested gpt-6.1-sol high; runtime variant/effort not independently exposed. Rules read at `7f50cae80f5372db7c278aef4ba4a0a05e1137ea`. A-m2/A-m3: canonical ID `PD-T?lanczos-frontier-codex-L5-01` replaces only the local L5a label, retained as an alias. Historical NOT RUN text describes the saved specification; subsequent finite endpoints have separate durable records. The application row was moved from the analytic status table to Open items. Proof, definitions and certificate inequalities are unchanged. The saved candidate draft first entered Git at `0574c47` before its prospective source gate was complete. Later completed reading does not cure or waive that deviation; acceptance remains AC's decision. The dated chronology and missing-read/gate checkpoints are in [gate-timing-response-01.md](../gate-timing-response-01.md). No novelty or priority claim is added.
+
+## History addendum — 2026-11-05 (handoff10; A-P1)
+
+This result descends from L5-01 full-kernel finite positive spanning, drafted before completion of the mandatory reading gate and first committed at `0574c47`. AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. Completed-gate receipt: G5: `844e812`; these are publication SHAs, not worker input/rules SHAs. G5 was first preserved in ideas-l5-continuation blob `6b811daa2449644dcf81a5ca822f88e8e5f5cfa3`, not first at `b6bf1f6`. L5a/L5-01 shares `844e812` with that receipt; its reported gate-before-development order is not established by Git. Earlier pending-decision wording is historical and is superseded by this dated acceptance record. See [gate-timing-response-01.md](../gate-timing-response-01.md).

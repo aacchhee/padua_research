@@ -270,3 +270,47 @@ The [L2-01 companion](theory/l2-01-audit-response-20261105.md) supersedes
 its frozen pending prose and records all L2 NOTE dispositions. The L1
 companion records every L1 NOTE disposition and the committed dependency
 hash; unavailable reviewed drafts are not current theorem inputs.
+
+## Per-candidate timing addendum — 2026-11-05 (handoff10)
+
+The following dated qualifiers supplement each named candidate/disposition above; earlier pending-decision text remains historical. Drafts were first committed at `0574c47` before completion of the mandatory reading gate. Existing verdicts and scientific scopes are unchanged.
+
+| Candidate / retained disposition | Permanent qualifier |
+|---|---|
+| l1-01 exact-grid G1 continuation | AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. |
+| l1-02 SH_n transfer family | AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. |
+| l2-01 W | AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. |
+| l2-02 R | AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. |
+| l2-03 F | AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. |
+| retained IDEA-253 every-error reading (already disposed; no new candidate) | AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. |
+
+Shared-commit chronology remains reported: Git does not order G12 delta `b81c374`, G34 `aab7bbe`, G3/G5 `844e812` or G6 `6012600` against their co-published descendants. G5’s first receipt is `844e812`, blob `6b811daa2449644dcf81a5ca822f88e8e5f5cfa3`; L5a is co-published. Full receipt/input distinctions and post-gate verdicts remain in [gate-timing-response-01.md](gate-timing-response-01.md).
+
+## Audit-02 scope clarifications — 2026-11-05
+
+GATE N2 accepted: the SH_n mirror upper bound is a formal bound for one explicit affine-product family. PD-N011’s measured set-dependent dev/mirror ordering and PD-N015’s measured failure of uniform safety remain context; no general rule ordering follows. The IDEA-130/134 separation remains normal-projected all-degree aggregate capacity on SH_n versus their finite loss/raw-propagator observations and finite exact impulse certificates.
+
+GATE N3 accepted: “actual first-order closure” above means formal first-order closure in R_smooth with fixed BJ parents. The rule-invariance statement is universal within that class, including its exact-base first-order analogues of the listed plain/CGS2/partial schemes. It does not establish IEEE realization or settle unrestricted PD-T055(U); the caveat about not universalizing applies to IEEE and that unrestricted target.
+
+## Merged-source attribution addendum — 2026-11-05
+
+PR21 merged into main as `b4d292e`. The current source is [topics/padua-literature-20261103/p3-comparison.md](../padua-literature-20261103/p3-comparison.md), unchanged memo blob `4741c38943f37ae05ba525552ceafc3f32ac5537`. The following per-statement attributions now cite that merged path with the same blob; earlier “unmerged” prose remains historical.
+
+- initial P3 report and no-matching-span-result attribution: cite the merged P3 path and blob above; the original statement’s selected-source, version/page and primary-reading coverage limits remain unchanged.
+- l1-01 literature baseline: cite the merged P3 path and blob above; the original statement’s selected-source, version/page and primary-reading coverage limits remain unchanged.
+- checkpoint4 P3 and three-addenda reading attribution: cite the merged P3 path and blob above; the original statement’s selected-source, version/page and primary-reading coverage limits remain unchanged.
+
+This updates source location only. It asserts no new primary reading, proof import or exhaustive priority/novelty clearance.
+
+## Final registration — 2026-11-05
+
+Every local candidate remains preserved. Existing-ID rows are aliases/continuations, not new mechanisms. Complete canonical and historical aliases are in [the map](preparation/final-id-map.json).
+
+| Canonical provisional | Final ID | Registration |
+|---|---|---|
+| IDEA?lanczos-frontier-codex-l1-02 | IDEA-414 | new audited variant |
+| IDEA?lanczos-frontier-codex-l1-03 | IDEA-415 | new audited variant |
+| IDEA?lanczos-frontier-codex-l2-03 | IDEA-418 | new audited variant |
+| IDEA?lanczos-frontier-codex-l1-01 | IDEA-248 | existing canonical home; continuation/alias retained |
+
+AC accepted the disclosed pre-gate deviation on 2026-11-05; it remains permanently disclosed, not waived and not cured. This decision does not falsely place L7 empirical work or the post-gate scalar bridge before their recorded gates. No hypothesis, criterion, result or candidate disposition changes.

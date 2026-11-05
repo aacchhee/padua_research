@@ -53,3 +53,35 @@ After the independently accepted reduction and authorized bounded producer, the 
 The earlier n3-only boundary is historical. Canonical results are L5-01 (analytic reduction; alias L5a), L5-02 (`1/512<=delta_obs(3)<=1/2`; alias L5b), L5-03 (`delta_obs(4)>=1/2048`; alias L5c), and L5-04 (`delta_obs(5)>=1/16384`; alias L5d), all under `PD-T?lanczos-frontier-codex-`. Their separate durable records retain PROVED status. The n4 and n5 bounded upper searches completed without an accepted upper certificate and remain INCONCLUSIVE; the n4 diagnostic rebuilt the same full kernel and tried the original LP plus a positive power-of-two point scaling on its fixed U=1/q2 grid; both calls were INCONCLUSIVE and supplied no upper. See [n4 methods](g3-n4-methods.md), [n4 diagnostic](g3-n4-diagnostic-methods.md) and [n5 methods](g3-n5-methods.md). No search was repeated for this update.
 
 G3 is INCOMPLETE: n4/n5 two-sided brackets, n6--8 and the trend/otherwise decision remain open; the original L5 route asked preliminary n3--10 values, also unresolved beyond the stated finite outcomes. PD-T075 retains PARTIAL through its existing U1 only; U2 remains OPEN. IDEA L5-01 is retained as a standard variant without a novelty claim, L5-02 deferred, and L5-03 abandoned as equivalent/invalid inference with no PD-N. All three candidates were saved before the original gate completed; [gate-timing-response-01.md](gate-timing-response-01.md) records the factual chronology. Later reading does not cure or waive the deviation.
+
+## Per-candidate timing addendum — 2026-11-05 (handoff10)
+
+The following dated qualifiers supplement each named candidate/disposition above; earlier pending-decision text remains historical. Drafts were first committed at `0574c47` before completion of the mandatory reading gate. Existing verdicts and scientific scopes are unchanged.
+
+| Candidate / retained disposition | Permanent qualifier |
+|---|---|
+| L5-01 full-kernel finite positive spanning | AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. |
+| L5-02 square covering/global positivity | AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. |
+| L5-03 named-certificate decay inference | AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. |
+
+Shared-commit chronology remains reported: Git does not order G12 delta `b81c374`, G34 `aab7bbe`, G3/G5 `844e812` or G6 `6012600` against their co-published descendants. G5’s first receipt is `844e812`, blob `6b811daa2449644dcf81a5ca822f88e8e5f5cfa3`; L5a is co-published. Full receipt/input distinctions and post-gate verdicts remain in [gate-timing-response-01.md](gate-timing-response-01.md).
+
+## Merged-source attribution addendum — 2026-11-05
+
+PR21 merged into main as `b4d292e`. The current source is [topics/padua-literature-20261103/p3-comparison.md](../padua-literature-20261103/p3-comparison.md), unchanged memo blob `4741c38943f37ae05ba525552ceafc3f32ac5537`. The following per-statement attributions now cite that merged path with the same blob; earlier “unmerged” prose remains historical.
+
+- prior P3/three-addenda source-reading attribution: cite the merged P3 path and blob above; the original statement’s selected-source, version/page and primary-reading coverage limits remain unchanged.
+
+This updates source location only. It asserts no new primary reading, proof import or exhaustive priority/novelty clearance.
+
+## Final registration — 2026-11-05
+
+Every local candidate remains preserved. Existing-ID rows are aliases/continuations, not new mechanisms. Complete canonical and historical aliases are in [the map](preparation/final-id-map.json).
+
+| Canonical provisional | Final ID | Registration |
+|---|---|---|
+| IDEA?lanczos-frontier-codex-L5-01 | IDEA-421 | new audited variant |
+| IDEA?lanczos-frontier-codex-L5-02 | IDEA-168 | existing canonical home; continuation/alias retained |
+| IDEA?lanczos-frontier-codex-L5-03 | IDEA-168 | existing canonical home; continuation/alias retained |
+
+AC accepted the disclosed pre-gate deviation on 2026-11-05; it remains permanently disclosed, not waived and not cured. This decision does not falsely place L7 empirical work or the post-gate scalar bridge before their recorded gates. No hypothesis, criterion, result or candidate disposition changes.

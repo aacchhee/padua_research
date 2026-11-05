@@ -1,4 +1,6 @@
-# PD-T?lanczos-frontier-codex-L4-01 — certified full scalar-CGS2 factor-ten separation on rotQ24 at degree12
+# PD-T331 — certified full scalar-CGS2 factor-ten separation on rotQ24 at degree12
+
+Final registration (2026-11-05): **PD-T331**; status **PROVED** unchanged. Canonical provisional/historical aliases: `PD-T?lanczos-frontier-codex-L4-01`; `PD-T?lanczos-frontier-codex-L4a`. See [complete map](../preparation/final-id-map.json). This is ID metadata only; original statement/proof and frozen input bytes retain their scopes.
 
 ID kind: PD-T.
 Aliases: PD-T?lanczos-frontier-codex-L4a; L4a; full scalar envelope spectral upper; positive-vector envelope
@@ -379,3 +381,15 @@ all-degree comparisons remain outside this theorem. L3 is deferred this round.
   are preserved. No actual-rounding or all-degree status is changed.
 
 - 2026-11-05 audit-01 response, Codex statement/metadata worker; requested gpt-6.1-sol high; runtime variant/effort not independently exposed. Rules read at `7f50cae80f5372db7c278aef4ba4a0a05e1137ea`. Canonical provisional ID is now `PD-T?lanczos-frontier-codex-L4-01`; the old L4a result label remains an alias. IDEA L4-01 (old L4a) is **REJECTED: failed** only for its `100U<G_R` criterion with the fixed old lower; its valid upper is reused here. IDEA L4-02 (old L4b) is retained/successful. The negative record is a split of that failed candidate subroute. Auditor L4-1 accepted: regeneration means a distinct re-execution of the pinned producer, not an independently implemented producer; the separate checker and audit's CPython reconstruction are identified in [audit-01/L4.md](../audit-01/L4.md). Runtime is the receipt's 217.2247 seconds. Proofs, formulas and certificate bytes are unchanged. The saved candidate draft first entered Git at `0574c47` before its prospective source gate was complete. Later completed reading does not cure or waive that deviation; acceptance remains AC's decision. The dated chronology and missing-read/gate checkpoints are in [gate-timing-response-01.md](../gate-timing-response-01.md). No novelty or priority claim is added.
+
+## History addendum — 2026-11-05 (handoff10; A-P1)
+
+This result descends from L4a/L4-01 full scalar positive envelope and L4b/L4-02 full-output BJ witness, drafted before completion of the mandatory reading gate and first committed at `0574c47`. AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. Completed-gate receipt: G34: `aab7bbe`; these are publication SHAs, not worker input/rules SHAs. The reported gate-before-development order inside shared publication `aab7bbe` is not established by Git. Earlier pending-decision wording is historical and is superseded by this dated acceptance record. See [gate-timing-response-01.md](../gate-timing-response-01.md).
+
+## Merged-source attribution addendum — 2026-11-05
+
+PR21 merged into main as `b4d292e`. The current source is [topics/padua-literature-20261103/p3-comparison.md](../../padua-literature-20261103/p3-comparison.md), unchanged memo blob `4741c38943f37ae05ba525552ceafc3f32ac5537`. The following per-statement attributions now cite that merged path with the same blob; earlier “unmerged” prose remains historical.
+
+- PD-T136–141/P3 three-addenda comparison: cite the merged P3 path and blob above; the original statement’s selected-source, version/page and primary-reading coverage limits remain unchanged.
+
+This updates source location only. It asserts no new primary reading, proof import or exhaustive priority/novelty clearance.

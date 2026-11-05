@@ -1,4 +1,6 @@
-# PD-T?lanczos-frontier-codex-L3-01 — Explicit finite-error selection bound
+# PD-T330 — Explicit finite-error selection bound
+
+Final registration (2026-11-05): **PD-T330**; status **PROVED** unchanged. Canonical provisional/historical aliases: `PD-T?lanczos-frontier-codex-L3-01`; `PD-T?lanczos-frontier-codex-L3a`. See [complete map](../preparation/final-id-map.json). This is ID metadata only; original statement/proof and frozen input bytes retain their scopes.
 
 Provisional scoped ID; no final assignment. Codex, requested
 `gpt-6.1-sol` xhigh; rules read at
@@ -462,3 +464,13 @@ PR preparation; AC's gate-timing decision remains open.
   full; after the developer read its durable report, status/check metadata
   and the degree-uniform scope wording were finalized. No formula changed
   and no scientific execution was required.
+
+## Preparation errata — 2026-11-05
+
+R2-1 erratum: every earlier L3 use of “stronger” in this file describes a different per-column zeroth-order finite-error budget: the model (1) error-family class neither contains nor is contained in Hres. It does not assert hypothesis inclusion or a uniform result over Hres alone. This qualifies each occurrence in: model-comparison prose; coefficient statement under model (1); supporting-reformulation History; saved-formulas reconstruction History.
+
+R2-4 erratum: the complete pre-gate majorant system and constants are verifiable in `0574c47:topics/padua-lanczos-frontier-20261105/attempts/L3.md`; they match theory displays (2)–(5) and (7), up to the recorded notation changes. They survived unchanged. The unretained `cdcf4214a6ae251db66954baeb3cfce41a2c17340ab2a85220dfd988164c3a8a` caveat concerns only the intermediate reviewed draft, not that committed pre-gate draft.
+
+## History addendum — 2026-11-05 (handoff10; A-P1)
+
+This result descends from L3a/L3-01 explicit-radius majorant and L3b/L3-02 adaptive decision tree, drafted before completion of the mandatory reading gate and first committed at `0574c47`. AC accepted the disclosed deviation on 2026-11-05. The deviation remains permanently disclosed, not waived and not cured. Completed-gate receipt: G34: `aab7bbe`; G3: `844e812`; these are publication SHAs, not worker input/rules SHAs. The reported gate-before-development order inside shared publication `aab7bbe` is not established by Git. G3 and L3-01 share `844e812`; the reported gate-before-proof order within that commit is not established by Git. Earlier pending-decision wording is historical and is superseded by this dated acceptance record. See [gate-timing-response-01.md](../gate-timing-response-01.md).
