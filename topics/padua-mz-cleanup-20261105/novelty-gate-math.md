@@ -34,7 +34,7 @@ proofs and the additional C3 exact-norm calculation. This record does not
 retroactively label that initial source-reading algebra a prospective gate.
 No new numerical run was performed before this record.
 
-## IDEA?mz-cleanup-codex-02 — odd-m fixed-node weight extension
+## IDEA-467 — odd-m fixed-node weight extension
 
 Aliases: floor-half triangle; odd-grid logarithmic boundary weights.
 Scope/mechanism: retain the integrated cardinal formula, replace m=2R
@@ -49,7 +49,7 @@ odd-m exceptional logarithm or changed limiting checkerboard sign blocks
 the extension. Outcome: h_m=0 and 2R theta_j,2R phi_k tend j pi,k pi;
 the same sign survives. Retained; proof in theory/odd-weight-asymptotic.md.
 
-## IDEA?mz-cleanup-codex-03 — carriers on the even y mesh for odd m
+## IDEA-468 — carriers on the even y mesh for odd m
 
 Aliases: y-parity carrier; y-carrier odd-grid packet.
 Scope/mechanism: for odd m, m+1 is even; put the negative cosine or
@@ -68,7 +68,7 @@ Outcome: coefficients -16ab/9 and +8ab/9 survive; retained. Both-parity
 classification in theory/odd-carriers.md. There is no duplicate PD-N
 for universal statements already refuted by PD-N105/106.
 
-## IDEA?mz-cleanup-codex-04 — normalize the inherited carriers
+## IDEA-469 — normalize the inherited carriers
 
 Aliases: continuous Fejer mass limit; Rayleigh coefficient repair.
 Scope/mechanism: use u=(r+1)t and dominated convergence to compute exact
@@ -126,7 +126,7 @@ IDEA-385/PD-T294 mass profile, IDEA-071/PD-T020 sharp-target record and
 the full F4 candidates. This response only documents their comparisons;
 no new theorem or test is inferred from matching text.
 
-### IDEA?mz-cleanup-codex-01 — dyadic outward finite-witness certifier
+### IDEA-466 — dyadic outward finite-witness certifier
 
 Aliases: fixed-point nodal energy; integer tensor producer; independently
 bounded floating replay.
@@ -163,11 +163,11 @@ bounded floating replay.
 - Disposition: retained bounded implementation variant, accepted by Claude
   audit-01 at the stated finite scope. Reason: successful exact/outward
   finite reduction and independent execution; no PD-N for implementation.
-- Canonical result: PD-T?mz-cleanup-codex-01, theory/finite-indefiniteness.md.
+- Canonical result: PD-T376, theory/finite-indefiniteness.md.
 - History: C1 implementation was considered and executed in handoff01;
   this missing candidate record is restored by F21 without altering code.
 
-### Completion of IDEA?mz-cleanup-codex-02
+### Completion of IDEA-467
 
 - Question / mechanism, separation, cheapest test and original kill remain
   those stated in the original -02 entry above.
@@ -185,10 +185,10 @@ bounded floating replay.
   all-index asymptotic or global majorant.
 - Disposition/reason: retained parity variant, analytic result accepted at
   its stated scope by audit-01; no negative result or status upgrade.
-- Canonical result: PD-T?mz-cleanup-codex-02, theory/odd-weight-asymptotic.md.
+- Canonical result: PD-T377, theory/odd-weight-asymptotic.md.
 - History: F22 completes template fields; accepted proof unchanged.
 
-### Completion of IDEA?mz-cleanup-codex-03
+### Completion of IDEA-468
 
 - Question / mechanism, separation, cheapest finite identity test and
   original kill remain those in the original -03 entry above.
@@ -210,11 +210,11 @@ bounded floating replay.
 - Disposition/reason: retained variant, analytic odd-m energy limits and
   routine all-parity synthesis accepted by audit-01. Abandonment of the
   two literal subroutes creates no PD-N and rejects no wider theorem.
-- Canonical result: PD-T?mz-cleanup-codex-03, theory/odd-carriers.md.
+- Canonical result: PD-T378, theory/odd-carriers.md.
 - History: F7 removes the ambiguous coordinate-swapped alias; F21/F22
   restore considered-route history and template comparisons.
 
-### Completion of IDEA?mz-cleanup-codex-04
+### Completion of IDEA-469
 
 - Question / mechanism, separation, cheapest analytic norm test and original
   kill remain those in the original -04 entry above.
@@ -233,12 +233,12 @@ bounded floating replay.
   Finite slope agreement is not a normalization proof or branch identity.
 - Disposition/reason: retained quantitative variant; analytic norms and
   one-sided bounds accepted by audit-01, sharp target OPEN.
-- Canonical result: PD-T?mz-cleanup-codex-04, theory/growth-carrier-bounds.md;
-  unresolved original home PD-T?mz-cleanup-codex-06, theory/sharp-growth-open.md.
+- Canonical result: PD-T379, theory/growth-carrier-bounds.md;
+  unresolved original home PD-T381, theory/sharp-growth-open.md.
 - History: F9/F10 clarify display precision and completed checks; F11/F22
   restore target and predecessor relationships without changing a formula.
 
-### IDEA?mz-cleanup-codex-05 — sharp localization for matching spectral bounds
+### IDEA-470 — sharp localization for matching spectral bounds
 
 Aliases: full-signed localization estimate; matching logarithmic bounds.
 
@@ -270,11 +270,11 @@ Aliases: full-signed localization estimate; matching logarithmic bounds.
 - Disposition/reason: deferred, not rejected, because the necessary full-
   signed estimate is absent. Resume only with such an estimate, an exact
   normalization and a matching sharpness argument.
-- Canonical target: PD-T?mz-cleanup-codex-06, theory/sharp-growth-open.md;
+- Canonical target: PD-T381, theory/sharp-growth-open.md;
   no PD-N for an undeveloped or deferred proof route.
 - History: considered in handoff01 C3 and attempts/C3; restored by F21.
 
-### IDEA?mz-cleanup-codex-06 — raw-slope identification with the negative carrier
+### IDEA-471 — raw-slope identification with the negative carrier
 
 Aliases: slope near raw -1/9; same-branch interpretation of the float hit.
 
@@ -307,7 +307,7 @@ Aliases: slope near raw -1/9; same-branch interpretation of the float hit.
 - Disposition/reason: abandoned as an unsupported normalization/branch
   interpretation. No spectral-limit value or universal claim is refuted,
   and no separate negative theorem or PD-N is proposed.
-- Canonical result: none; related evidence is PD-T?mz-cleanup-codex-05
+- Canonical result: none; related evidence is PD-T380
   (MEASURED) and the exact norm calculation -04, not a proved sharp limit.
 - History: handoff01's four-point fit interpretation; caveat in gates.md
   preceded the new runs. F21 restores the explicit disposition.

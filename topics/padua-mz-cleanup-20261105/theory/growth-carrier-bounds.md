@@ -1,15 +1,15 @@
-# PD-T?mz-cleanup-codex-04 — exact carrier norms and one-sided logarithmic spectral bounds
+# PD-T379 — exact carrier norms and one-sided logarithmic spectral bounds
 
 ID kind: PD-T.
 Aliases: normalized Fejer packet constants; Rayleigh normalization repair.
-Split from: [PD-T?mz-cleanup-codex-06](sharp-growth-open.md), C3's
+Split from: [PD-T381](sharp-growth-open.md), C3's
 original sharp-growth target, which remains OPEN.
 Split into: none. This supplies only explicit one-sided bounds.
 
 ## Statement
 
 Use the even-m carriers of PD-N105/106 and the odd-m carriers of
-PD-T?mz-cleanup-codex-03, with their exact definitions, measures and
+PD-T378, with their exact definitions, measures and
 strict parameter inequalities. Put g(u)=[sin(u/2)/(u/2)]^4 for u>=0,
 with g(0)=1, and
 
@@ -73,7 +73,7 @@ bounds or new refutation of the original targets is claimed.
 ## Depends on
 
 PD-N105/106's accepted even-m signed-energy limits and
-PD-T?mz-cleanup-codex-03's odd-m limits. The continuous norm calculation
+PD-T378's odd-m limits. The continuous norm calculation
 below is proved independently of any spectral fit or measured crossing.
 
 ## Checks

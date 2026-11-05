@@ -72,3 +72,11 @@
 - All eight literal old replacement blocks reverified against HEAD/main; AC owner/charter line preserved. Proposed six provisional theory rows, six IDEA dispositions and historical qualifiers are not applied now. Reservations remain unchanged and need a fresh live union scan at preparation.
 - Nonmaterial response classification follows audit-01's explicit allowance: stage PR, preparation pending, no fresh mathematical audit required. Original scientific code/receipt identities, displayed formulas, shared-file preservation, local links, helper syntax, evidence sizes and diff checks verified.
 - Handoff03 completes in the response output commit; [handoff04](handoffs/04-pr-preparation.md) requests final-ID/shared-record and protocol preparation. PR26 remains draft; only AC merges.
+
+## 2026-11-05 — Codex, gpt-6.1-sol xhigh — audited preparation checkpoint
+
+- Rules read at a930f32fbf4568fbc431ddcf0b0fd689f5fa8201, unchanged. Fetched main aff30e8 and topic a930f32; main already integrated. Full handoff04/rules/log/audit/response/proposal scope read. This is registration of accepted science, no new mechanism or novelty claim.
+- Read complete pinned live allocation union:59 copies across main and all open PR21/24/25/26; no closed-unmerged PR returned. Zero overlap. Assigned T376–381 and IDEA466–471 from original ee49035 ranges, preserving all gaps and foreign reservations. Full source pins and map in preparation/.
+- Applied eight literal replacements, six theory/six IDEA registrations, crosswalk, ledger import and only our RESULTS section. Checker:75 passed, zero failed; six theories preserved under substitution,72 scientific/auditor files unchanged, ten old RESULTS sections exact. Original OPEN-plus-refuted displays and PD-T300 historical measurement scope preserved.
+- Manuscript final identifiers are seven comment-only edits; fresh25-page build clean, comment-stripped source and extracted PDF text unchanged. No bibliography, scientific code, original receipt or PDF committed change.
+- Current complete inventory refreshed; cold-storage metadata check accepts with zero Git-backed payloads, not a delivery claim. Next gates: disposable sequential integrations, independent Astra medium protocol review, final live reservation/head check and readiness metadata. Only AC merges.

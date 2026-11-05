@@ -1330,3 +1330,24 @@ Assigned T286–290, N100, IDEA376–379, LIT562–568. Permanent unused gaps:
 T291–293, N101–103, IDEA380–383, LIT569–573. The withdrawn provisional
 negative never had a final ID. [SPLITS.md](topics/nn-mop-iep-20261103/SPLITS.md)
 retains original-to-split provenance; this is not a status downgrade.
+
+## Signed Padua MZ cleanup — final mapping and preserved target
+
+Reservation first published ee490356ce51d5e2f4a84f2c45e6ccb98a19bd90, [PR26](https://github.com/aacchhee/padua_research/pull/26). [Live union check](topics/padua-mz-cleanup-20261105/preparation/reservation-check.md); [exact map](topics/padua-mz-cleanup-20261105/preparation/final-id-map.json); [batch ledger](topics/padua-batch-20261031/ALLOCATIONS.md). No accepted ID is renumbered.
+
+| Provisional alias | Final ID | Durable record / disposition |
+|---|---|---|
+| PD-T?mz-cleanup-codex-01 | PD-T376 | [record](topics/padua-mz-cleanup-20261105/theory/finite-indefiniteness.md); PROVED |
+| PD-T?mz-cleanup-codex-02 | PD-T377 | [record](topics/padua-mz-cleanup-20261105/theory/odd-weight-asymptotic.md); PROVED |
+| PD-T?mz-cleanup-codex-03 | PD-T378 | [record](topics/padua-mz-cleanup-20261105/theory/odd-carriers.md); PROVED |
+| PD-T?mz-cleanup-codex-04 | PD-T379 | [record](topics/padua-mz-cleanup-20261105/theory/growth-carrier-bounds.md); PROVED |
+| PD-T?mz-cleanup-codex-05 | PD-T380 | [record](topics/padua-mz-cleanup-20261105/theory/finite-measurements.md); MEASURED |
+| PD-T?mz-cleanup-codex-06 | PD-T381 | [record](topics/padua-mz-cleanup-20261105/theory/sharp-growth-open.md); OPEN |
+| IDEA?mz-cleanup-codex-01 | IDEA-466 | [candidate](topics/padua-mz-cleanup-20261105/novelty-gate-math.md); active (PROVED outcome) |
+| IDEA?mz-cleanup-codex-02 | IDEA-467 | [candidate](topics/padua-mz-cleanup-20261105/novelty-gate-math.md); active (PROVED outcome) |
+| IDEA?mz-cleanup-codex-03 | IDEA-468 | [candidate](topics/padua-mz-cleanup-20261105/novelty-gate-math.md); active (PROVED outcome) |
+| IDEA?mz-cleanup-codex-04 | IDEA-469 | [candidate](topics/padua-mz-cleanup-20261105/novelty-gate-math.md); active (PROVED outcome) |
+| IDEA?mz-cleanup-codex-05 | IDEA-470 | [candidate](topics/padua-mz-cleanup-20261105/novelty-gate-math.md); deferred |
+| IDEA?mz-cleanup-codex-06 | IDEA-471 | [candidate](topics/padua-mz-cleanup-20261105/novelty-gate-math.md); abandoned |
+
+Original C3 target PD-T381 remains OPEN; split/support PD-T379 is PROVED. These supporting bounds are not a proved conjunct of the target and do not make it PARTIAL. PD-T377/378 extend PD-T295/PD-N105–107 without splitting or narrowing accepted statements. Permanent unused gaps: T382–391, N138–145, IDEA472–489; no LIT assignment.

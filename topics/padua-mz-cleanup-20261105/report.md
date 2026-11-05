@@ -7,22 +7,23 @@ was merged without conflicts in ef9723b. Rules did not change. Codex
 development: user-requested gpt-6.1-sol xhigh; supplementary mathematical
 reviews: distinct gpt-6-astra high. Claude [audit-01](audit-01.md) accepted the mathematics, finite reduction
 and measured scopes without a correctness finding. Editorial/provenance
-dispositions are in [response-01](response-01.md); PR preparation follows.
+dispositions are in [response-01](response-01.md); final registration is recorded in [preparation](preparation/record.md).
 
 ## Outcomes and exact scope
 
 | Target | Development result | Durable record |
 |---|---|---|
-| C1 | **PROVED, computer-assisted:** actual signed forms are indefinite at m1101,1240,1600. Each has an exact dyadic polynomial, positive exact continuous norm, and strictly negative producer and alternate-arithmetic enclosures. | [Finite theorem](theory/finite-indefiniteness.md), provisional PD-T?mz-cleanup-codex-01 |
-| C2 | **PROVED:** odd-m fixed-node logarithmic weights have the same signs and constants as the even case. Odd-m y carriers extend both spectral divergences and the sharp half-degree ratio classification to all integers. | [Odd weights](theory/odd-weight-asymptotic.md), [odd carriers](theory/odd-carriers.md), provisional -02/-03 |
-| C3 | **PROVED:** exact continuous carrier norms and one-sided logarithmic spectral bounds. Sharp spectral limits remain **OPEN**. | [Normalized bounds](theory/growth-carrier-bounds.md), provisional -04 |
+| C1 | **PROVED, computer-assisted:** actual signed forms are indefinite at m1101,1240,1600. Each has an exact dyadic polynomial, positive exact continuous norm, and strictly negative producer and alternate-arithmetic enclosures. | [Finite theorem](theory/finite-indefiniteness.md), PD-T376 |
+| C2 | **PROVED:** odd-m fixed-node logarithmic weights have the same signs and constants as the even case. Odd-m y carriers extend both spectral divergences and the sharp half-degree ratio classification to all integers. | [Odd weights](theory/odd-weight-asymptotic.md), [odd carriers](theory/odd-carriers.md), PD-T377/378 |
+| C3 | **PROVED:** exact continuous carrier norms and one-sided logarithmic spectral bounds. Sharp spectral limits remain **OPEN**. | [Normalized bounds](theory/growth-carrier-bounds.md), PD-T379 |
 | C4 | Expanded manuscript builds cleanly to **25 A4 pages**, with accepted PR23 results and clearly labeled cleanup development results. | [Section/change/build record](manuscript-changes.md) |
 | C5 | Prior PR14/23 inventories retained; final C1 package locally staged and verified; literal shared-record replacements prepared. Actual delivery remains **PENDING**. | [Storage](COLD_STORAGE.md), [proposals](proposed-record-changes.md) |
 | C6 | Optional one-dimensional round not run; PD-T027 remains **OPEN**. | [Disposition](attempts/C6.md) |
 
-All new IDs are provisional. Reservation ee49035 permanently holds
-T376–391/N138–145/IDEA466–489, no LIT; no final assignments or shared
-registry edits occur in this WORK/AUDIT candidate. [Union scan](allocation-scan.json)
+Final preparation assigns PD-T376–381 and IDEA466–471 from reservation
+ee49035, whose permanent ranges remain T376–391/N138–145/IDEA466–489,
+no LIT. Four new theory results are PROVED, PD-T380 is MEASURED and
+PD-T381 remains OPEN. Historical WORK/AUDIT records retain their aliases. [Union scan](allocation-scan.json)
 and [reservation](ALLOCATIONS.md) preserve earlier parallel reservations.
 
 ## Finite certificates and measured crossing
@@ -140,17 +141,25 @@ because an old scratch locator exists. See COLD_STORAGE.md for AC's
 Padua-specific destination, sizes and hashes. No external machine used.
 
 Claude Opus 5.5 audit-01 accepted the scientific scopes; response-01
-addresses every minor/editorial finding. Next is audited PR preparation.
-Final-ID assignment, shared-record application, fresh reservation recheck
-and PR readiness remain a later audited preparation step. Only AC merges.
+addresses every minor/editorial finding. Final-ID assignment and scoped
+shared registration now use the checked original reservation; preparation
+verification and independent protocol review are recorded separately in
+[the preparation record](preparation/record.md). Only AC merges.
 
-## Candidate records
+## Candidate records and remaining mathematical frontier
 
-The three primary completion/normalization candidates are
-IDEA?mz-cleanup-codex-02, -03 and -04 in
-[the candidate and predecessor record](novelty-gate-math.md). The same
-record retains the certifier variant (-01), deferred sharp-localization
-route (-05), and abandoned raw-slope interpretation (-06), including
-scoped dispositions and resume conditions. These remain provisional until
-preparation; no new mechanism or historical-priority claim is introduced
-by completing their records.
+The three primary completion/normalization candidates are IDEA-467
+(odd weights), IDEA-468 (odd carriers) and IDEA-469 (continuous norm
+limits). IDEA-466 retains the finite certifier variant, IDEA-470 the
+deferred full-signed localization route, and IDEA-471 the abandoned
+raw-slope interpretation. The [full candidate record](novelty-gate-math.md)
+preserves all original comparisons, dispositions and timing qualifications;
+the [crosswalk](../../ID_CROSSWALK.md) preserves every provisional alias.
+No new mechanism or historical-priority claim is added by registration.
+
+PD-T381 keeps the original sharp spectral-limit target OPEN. PD-T379's
+proved normalized one-sided bounds remain separate support, not a proved
+conjunct or a PARTIAL resolution. Global first crossings, opposite-direction
+sharp logarithmic estimates, optimal normalized packet parameters and
+PD-T027 remain separate unresolved questions. Completed registration and
+build tasks are retained in the preparation record instead of the frontier.

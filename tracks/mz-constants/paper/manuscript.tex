@@ -1128,7 +1128,7 @@ $\epsilon_j\gamma_k=e_je_k$ eventually, proves
 \eqref{eq:padua-weight-limit}.
 \end{proof}
 
-% Source: topics/padua-mz-cleanup-20261105/theory/odd-weight-asymptotic.md
+% Source: PD-T377; topics/padua-mz-cleanup-20261105/theory/odd-weight-asymptotic.md
 \begin{proposition}[Odd construction degrees]\label{prop:padua-odd-weights}
 The fixed-index limit \eqref{eq:padua-weight-limit} also holds as $m$
 tends to infinity through odd integers. For every odd $m\ge5$, the
@@ -1252,7 +1252,7 @@ the variational principle then gives the two divergences. No finite
 threshold is inferred from these limits.
 \end{proof}
 
-% Source: topics/padua-mz-cleanup-20261105/theory/odd-carriers.md
+% Source: PD-T378; topics/padua-mz-cleanup-20261105/theory/odd-carriers.md
 \begin{proposition}[Odd-degree carriers]\label{prop:padua-odd-carriers}
 For odd $m$ put $M=m+1$, $r=\lfloor am\rfloor$, $s=\lfloor bm\rfloor$.
 Under the respective parameter conditions of
@@ -1294,7 +1294,7 @@ odd-degree divergences. Combining the two parity subsequences proves
 the all-integer conclusions.
 \end{proof}
 
-% Sources: PD-N107 and topics/padua-mz-cleanup-20261105/theory/odd-carriers.md
+% Sources: PD-N107 and PD-T378; topics/padua-mz-cleanup-20261105/theory/odd-carriers.md
 \begin{corollary}[Sharp half-degree threshold]\label{cor:padua-ratio}
 For $0\le\theta\le1/2$ and $n\le\theta m$, exactness gives
 $G^\Pa_{m,n}=I$. For every fixed $1/2<\theta<1$,
@@ -1321,7 +1321,7 @@ rule. Their retained registry status \texttt{OPEN} does not override
 the binding \texttt{REJECTED: refuted} dispositions. The conclusions do
 not apply to positive Chebyshev Padua cubature or tensor CC rules.
 
-% Source: topics/padua-mz-cleanup-20261105/theory/growth-carrier-bounds.md
+% Source: PD-T379; topics/padua-mz-cleanup-20261105/theory/growth-carrier-bounds.md
 \begin{proposition}[Normalized one-sided growth bounds]\label{prop:padua-growth}
 Put
 \[
@@ -1496,6 +1496,7 @@ convergence theorem at that endpoint.
 
 \section{Finite observations and unresolved sharpenings}\label{sec:numerics}
 
+% Companion MEASURED record: PD-T380; topics/padua-mz-cleanup-20261105/theory/finite-measurements.md (campaign rows not reproduced here).
 Tables~\ref{tab:cc}--\ref{tab:padua} reproduce bounded float64 observations
 (\id{PD-T026}), not asymptotic proofs. The producer runs with Python,
 NumPy, and SciPy and pins its code and supplied input hashes in the evidence
@@ -1568,7 +1569,7 @@ neither positivity between untested degrees nor an all-degree bound.
 The finite brackets are compatible with the later divergence in
 Theorem~\ref{thm:padua-carriers}.
 
-% Source: topics/padua-mz-cleanup-20261105/theory/finite-indefiniteness.md
+% Source: PD-T376; topics/padua-mz-cleanup-20261105/theory/finite-indefiniteness.md
 \begin{proposition}[Finite negative witnesses]\label{prop:padua-finite-negative}
 For each row there is a nonzero rational-coefficient polynomial
 $p\in\mathcal P_{m-1}$ whose signed Rayleigh quotient belongs to the
@@ -1626,6 +1627,7 @@ the supplied $N=20480$ output has not been reproduced and supplies no
 claim here. Third, for the signed Padua rule, Theorem~\ref{thm:padua-carriers}
 refutes the universal positivity and upper-threshold conjectures and the
 proposed positive endpoint orders and convergence of the defect to one.
+% OPEN sharp-growth target: PD-T381; topics/padua-mz-cleanup-20261105/theory/sharp-growth-open.md
 The sharp growth constants and effective onset estimates remain separate
 quantitative questions. The present odd-degree extension completes the
 qualitative parity classification; Proposition~\ref{prop:padua-growth}

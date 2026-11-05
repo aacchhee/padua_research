@@ -1,4 +1,4 @@
-# PD-T?mz-cleanup-codex-05 — finite minimum scans and logarithmic diagnostic
+# PD-T380 — finite minimum scans and logarithmic diagnostic
 
 ID kind: PD-T. Aliases: even crossing window; odd-window sign probes;
 higher-window slope comparison. Split from: C1/C3 measured observations,
@@ -14,7 +14,7 @@ negative-0.000027148072763036893 at1240. All even integers1230..1240
 were scanned. All six odd probes1101,1201,1241,1281,1401,1601 are
 negative. No spectral monotonicity, smaller-degree positivity or global
 first crossing is established. The certified witnesses at1101/1240/1600
-belong to the separate PD-T?mz-cleanup-codex-01 record.
+belong to the separate PD-T376 record.
 
 The predeclared higher grid completes with:
 

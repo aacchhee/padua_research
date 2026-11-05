@@ -31,7 +31,11 @@ def main():
                   root/'topics/mz-constants/directions/M7/manuscript-record.md',
                   root/'tracks/mz-constants/code/mz2d_spectra.py',
                   root/'topics/padua-mz-2d-20261101/definitions.md',
-                  root/'topics/padua-mz-2d-frontier-20261105/evidence/g1-minimum-only.json']
+                  root/'topics/padua-mz-2d-frontier-20261105/evidence/g1-minimum-only.json',
+                  root/'PROOF_STATUS.md',root/'state/IDEAS.md',root/'state/CURRENT.md',
+                  root/'ID_CROSSWALK.md',root/'RESULTS.md',root/'PAPER_MAP.md',
+                  root/'topics/padua-batch-20261031/ALLOCATIONS.md',
+                  root/'tracks/mz-constants/README.md']
         rows=[[os.path.relpath(p,topic),p.stat().st_size,digest(p)]
               for p in sorted(set(files))]
         out=dict(format='padua-mz-cleanup-small-inventory-v2',

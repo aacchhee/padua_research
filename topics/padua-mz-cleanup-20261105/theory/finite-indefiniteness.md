@@ -1,4 +1,4 @@
-# PD-T?mz-cleanup-codex-01 — explicit finite signed Padua indefiniteness
+# PD-T376 — explicit finite signed Padua indefiniteness
 
 ID kind: PD-T. Aliases: dyadic negative energy witness; finite loss of
 positive definiteness. Split from: C1 constructive finite certification.

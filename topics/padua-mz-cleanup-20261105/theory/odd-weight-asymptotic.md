@@ -1,9 +1,9 @@
-# PD-T?mz-cleanup-codex-02 — odd-degree fixed-node Padua weights
+# PD-T377 — odd-degree fixed-node Padua weights
 
 ID kind: PD-T.
 Aliases: odd-m boundary logarithm; floor-half spectral triangle.
 Extends: the missing odd-m case of PD-T295; its even-m statement is unchanged.
-Related separate result: odd-m spectral consequences are in PD-T?mz-cleanup-codex-03.
+Related separate result: odd-m spectral consequences are in PD-T378.
 
 ## Statement
 

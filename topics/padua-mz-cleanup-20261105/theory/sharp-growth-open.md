@@ -1,10 +1,10 @@
-# PD-T?mz-cleanup-codex-06 — sharp logarithmic Padua spectral limits
+# PD-T381 — sharp logarithmic Padua spectral limits
 
 ID kind: PD-T.
 Aliases: sharp signed extremal growth coefficients; existence and values
 of the endpoint logarithmic limits.
 Split from: the original C3 target in handoff 01, preserved here explicitly.
-Split into: [PD-T?mz-cleanup-codex-04](growth-carrier-bounds.md) records
+Split into: [PD-T379](growth-carrier-bounds.md) records
 separate exact packet norm limits and one-sided quantitative bounds.
 
 ## Original target and statement
@@ -39,11 +39,11 @@ for any accepted result.
 ## Dependencies and existing support
 
 PD-N105/106/107 prove even-m divergence; the separate odd extension
-PD-T?mz-cleanup-codex-03 gives qualitative divergence over all integers.
-PD-T?mz-cleanup-codex-04 proves exact continuous norms of specified
+PD-T378 gives qualitative divergence over all integers.
+PD-T379 proves exact continuous norms of specified
 carriers and explicit normalized one-sided limsup/liminf bounds. These
 do not establish matching opposite bounds or an extremal spectral limit.
-PD-T?mz-cleanup-codex-05 retains finite observations and fits as MEASURED.
+PD-T380 retains finite observations and fits as MEASURED.
 
 ## Proof or evidence
 
@@ -56,7 +56,7 @@ a matching extremal argument. The finite fitted slopes prove no limit.
 
 PD-N048 shows why negative corner mass by itself cannot control the
 complete signed form. The deferred localization route
-IDEA?mz-cleanup-codex-05 may resume only with a bound for the full signed
+IDEA-470 may resume only with a bound for the full signed
 quadratic form on every admissible polynomial in the continuous metric,
 with exact normalization and a matching lower/upper argument. No new
 localization mechanism or computational run is introduced here.

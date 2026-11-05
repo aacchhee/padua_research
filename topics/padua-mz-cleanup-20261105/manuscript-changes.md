@@ -106,7 +106,7 @@ Actual final incremental pdfLaTeX build: 25 A4 pages, zero final LaTeX/BibTeX wa
 
 These hashes identify the final manuscript-worker pass before orchestrator final-ID substitution. All generated products remain scratch; preserved v1/response-01 artifacts were untouched. No PDF is committed or claimed delivered. Claude audit is pending.
 
-## 2026-11-05 — response to cleanup audit-01 (current build)
+## 2026-11-05 — response to cleanup audit-01 (historical build)
 
 Rules/input: `a64ef35` (full response input recorded by the orchestrator). Codex manuscript-response worker, inherited user-requested gpt-6.1-sol xhigh; runtime serving metadata is not independently exposed. Read the rules, workflow, Codex role, handoff 03, audit-01 findings F12–F16, current source/scope/build receipts and M7 history. This is an editorial translation response, with no new mechanism, mathematical claim, proof change, scientific status upgrade, external citation or novelty claim; the idea-generation gate does not apply.
 
@@ -139,3 +139,61 @@ Two additional final pdfLaTeX passes applied the current audit-status metadata a
 | `/tmp/padua-mz-response-paper/manuscript.pdf` | 510218 | `87bb1e486f52f080f74b229624620954240f98f2926538c2b178be076e11980c` |
 
 Earlier 22/24/25-page receipts above identify their dated source versions; they are not current hashes. PDF timestamps and TeX version may change regenerated PDF bytes. The current source hash identifies this editorial response before later final-ID preparation.
+
+## 2026-11-05 — final-ID preparation (current build)
+
+Rules/input `a930f32fbf4568fbc431ddcf0b0fd689f5fa8201`; Codex manuscript-preparation worker, inherited user-requested gpt-6.1-sol xhigh (runtime serving metadata is not independently exposed). Read handoff04 and the audited response. The orchestrator's live allocation-union check passed before these assignments; the authoritative map is [preparation/final-id-map.json](preparation/final-id-map.json). This is mechanical claim identification and current-status metadata, with no idea generation, new mechanism or historical-priority claim; the novelty gate does not apply.
+
+The manuscript identifies finite indefiniteness as **PD-T376**, odd weights as **PD-T377**, odd carriers/all-integer completion as **PD-T378**, normalized one-sided bounds as **PD-T379**, companion campaign measurements as **PD-T380 (MEASURED)**, and the retained sharp-growth target as **PD-T381 (OPEN)**. PD-T380's additional 23 campaign rows and diagnostic fits are not reproduced in the manuscript; its comment links the companion record only. PD-T379 is supporting work and does not change PD-T381 to PARTIAL. Scientific mathematics and manuscript translation were accepted at their stated scopes in cleanup Claude audit-01; response-01 contains the completed nonmaterial editorial dispositions. **Preparation checks pending**: this worker does not confer PR readiness, merge, submission or historical-novelty clearance.
+
+### Exact reversible source edits
+
+Only seven TeX comment lines changed: five source-comment replacements and two comment insertions. Reverse the following zero-context diff to recover the exact audited-response TeX bytes (SHA-256 `9e10c6353fd625807bfca98fc1f868f1db37cc1eaea89c66751cfbd27c4ba28d`). Lines beginning `+` are final preparation comments; restore the corresponding `-` comments, and remove the two standalone added comments. No executable TeX, displayed or inline mathematics, hypotheses, numerical values, labels, bibliography or citation set changed. Removing whole comment lines from both versions gives byte-identical source, and the new PDF's layout-preserving text extraction is byte-identical to the audited-response PDF's extraction.
+
+```diff
+--- audited-response/manuscript.tex
++++ final-ID/manuscript.tex
+@@ -1131 +1131 @@
+-% Source: topics/padua-mz-cleanup-20261105/theory/odd-weight-asymptotic.md
++% Source: PD-T377; topics/padua-mz-cleanup-20261105/theory/odd-weight-asymptotic.md
+@@ -1255 +1255 @@
+-% Source: topics/padua-mz-cleanup-20261105/theory/odd-carriers.md
++% Source: PD-T378; topics/padua-mz-cleanup-20261105/theory/odd-carriers.md
+@@ -1297 +1297 @@
+-% Sources: PD-N107 and topics/padua-mz-cleanup-20261105/theory/odd-carriers.md
++% Sources: PD-N107 and PD-T378; topics/padua-mz-cleanup-20261105/theory/odd-carriers.md
+@@ -1324 +1324 @@
+-% Source: topics/padua-mz-cleanup-20261105/theory/growth-carrier-bounds.md
++% Source: PD-T379; topics/padua-mz-cleanup-20261105/theory/growth-carrier-bounds.md
+@@ -1498,0 +1499 @@
++% Companion MEASURED record: PD-T380; topics/padua-mz-cleanup-20261105/theory/finite-measurements.md (campaign rows not reproduced here).
+@@ -1571 +1572 @@
+-% Source: topics/padua-mz-cleanup-20261105/theory/finite-indefiniteness.md
++% Source: PD-T376; topics/padua-mz-cleanup-20261105/theory/finite-indefiniteness.md
+@@ -1628,0 +1630 @@
++% OPEN sharp-growth target: PD-T381; topics/padua-mz-cleanup-20261105/theory/sharp-growth-open.md
+```
+
+### Actual build and receipt
+
+Executed from the repository root, using a fresh output directory:
+
+```sh
+mkdir -p /tmp/padua-mz-preparation-paper
+pdflatex -interaction=nonstopmode -halt-on-error -output-directory=/tmp/padua-mz-preparation-paper tracks/mz-constants/paper/manuscript.tex
+(cd /tmp/padua-mz-preparation-paper && BIBINPUTS=/workspace/padua_research/tracks/mz-constants/paper: bibtex manuscript)
+pdflatex -interaction=nonstopmode -halt-on-error -output-directory=/tmp/padua-mz-preparation-paper tracks/mz-constants/paper/manuscript.tex
+pdflatex -interaction=nonstopmode -halt-on-error -output-directory=/tmp/padua-mz-preparation-paper tracks/mz-constants/paper/manuscript.tex
+pdfinfo /tmp/padua-mz-preparation-paper/manuscript.pdf
+pdftotext -layout /tmp/padua-mz-preparation-paper/manuscript.pdf /tmp/padua-mz-preparation-paper/manuscript.txt
+```
+
+Result: **25 A4 pages**. Final LaTeX/BibTeX logs contain zero actual warning/error, undefined-reference/citation, or overfull/underfull messages (package-description `info/warning/error` text and BibTeX's `warning$ -- 0` counter are not warnings). A provisional `PD-T?` / `PD-N?` / `IDEA?` / `LIT?` source scan is empty. Comment-only preservation plus identical PDF text makes a fresh visual layout inspection unnecessary; no visual inspection or numerical/certificate rerun is claimed for this preparation pass.
+
+| Current artifact | Bytes | SHA-256 |
+|---|---:|---|
+| `tracks/mz-constants/paper/manuscript.tex` | 73673 | `75067c43ce96e825b2a7cc81589ad5a7b1aa4728ab5848939ed21b3433aad0b3` |
+| `tracks/mz-constants/paper/refs.bib` (unchanged) | 8810 | `9901ae3dba63af176a1ced7c066da559588bd762ee8fe7bf25602e0a48c7da63` |
+| `/tmp/padua-mz-preparation-paper/manuscript.pdf` | 510218 | `225356bdb1fde444932f14f544998afd65d20f179a113a3b24cdb563e3b33091` |
+
+Earlier receipts retain their dated identities; the preceding audit-response hashes are historical after these comment additions. PDF metadata timestamps/output identifiers can change regenerated bytes. All generated products remain scratch under `/tmp`; no PDF is committed or claimed delivered to external storage. Preserved v1/response-01 artifacts were untouched. No Git or shared-registry operation was performed by this worker.

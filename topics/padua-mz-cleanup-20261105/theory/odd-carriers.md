@@ -1,10 +1,10 @@
-# PD-T?mz-cleanup-codex-03 — odd-m carriers and all-parity spectral divergence
+# PD-T378 — odd-m carriers and all-parity spectral divergence
 
 ID kind: PD-T.
 Aliases: even-y-mesh carrier; all-integer half-exactness classification.
 Extends: the explicitly missing odd-m parameter cases of PD-N105/106/107.
 Related separate result: exact norm limits and quantitative one-sided coefficients
-are separate PD-T?mz-cleanup-codex-04.
+are separate PD-T379.
 
 ## Statement
 
@@ -69,7 +69,7 @@ refute the universal positive assertions, so this adds no duplicate PD-N.
 
 ## Depends on
 
-PD-T?mz-cleanup-codex-02 for odd weights and domination; PD-N105/106
+PD-T377 for odd weights and domination; PD-N105/106
 for Fejer bounds and elementary finite DCT identities, and their accepted
 even-m carrier statements. The all-m threshold combines PD-N107's
 existing even-m conclusions with the newly proved odd-m conclusions.
