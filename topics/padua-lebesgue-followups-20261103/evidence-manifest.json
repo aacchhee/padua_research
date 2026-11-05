@@ -127,14 +127,14 @@
   ["evidence/t3-verification.md","be9d9c55d96aa068c52601937372fca3bddf820cbbf56cc09609dd8f2a583804",5455],
   ["evidence/t4-constant.json","eff53b81ab76245d923846a80a10ae8116a29701bbefb8d34e8c8afa1ced78b9",4736],
   ["evidence/t4-relations.json","52dba38b1cc768af70a6556651ce01d4e0c0cfba3e1c637baa2afd9ab123fbb6",871],
-  ["theory/t1-closed-count.md","a37d07302205f5d692af55cd8b7ebc56020161e157183e832c6a73dcc33bae94",9102],
-  ["theory/t1-interior-count.md","6ae38bcfff1de662934b6c8bf175bf023b6cd627ed1015d5ffed807cd9207b18",6848],
-  ["theory/t1-replay-composition.md","3953b70ed0e26f547ad67e686564e0f878e9e16bf84640bfb0c38bff5755071f",8329],
-  ["theory/t2-01-edge-centre-minima.md","a56639375b736346d6be8f130d198a5180502112d5824bb952e57043f6193150",9438],
-  ["theory/t2-02-common-endpoint-expansion.md","a61f3371445bae5bfa71f5b1947f63696697f97ac42c0f742c4eb4d587f98da3",4950],
-  ["theory/t3-01-general-position-series.md","8eae6849e3a5c756356864bb97dcd3d9fd25b09d2ac58ec93bb96a9e054a3ce5",10220],
-  ["theory/t4-01-corner-defect-limit.md","c02f57266dfa829470425c023fb74c3ccc62d2737ad4c0a3936de59552ed3317",8982],
-  ["theory/t4-02-one-dimensional-remainder.md","d5fe46858e61532792e0c991aad6ec861b6ae8f5e2fb1c040a66938db4b4301a",4324],
-  ["theory/t4-03-corner-constant.md","b7ffd40e6544d0c22ec9c1e35a35ad895b6acb1fa58e09f01347ce4bc1188398",3946]
+  ["theory/t1-closed-count.md","1f64d52d79412814b613ab572c7aead5040b902651dce0517f9164bbe79884d1",9599],
+  ["theory/t1-interior-count.md","ee3a80baaa1ff4c1750382a86735a98409db91806362a8a7439df4b4ae4ee661",7345],
+  ["theory/t1-replay-composition.md","1dceed777c99a1dc3434a878e32c0d7ba214541a243b43fac987d09579bc1c8c",8826],
+  ["theory/t2-01-edge-centre-minima.md","88bddbbb2afe2a5d7a6d4b2d8e101f2c678f9a3c4b96fc0e0cf6bf392202b5b8",9943],
+  ["theory/t2-02-common-endpoint-expansion.md","ccaa7c8feb49df9db28a293b0c61babf22d41f0a5ba7bf7d7984492ceb1f4809",5455],
+  ["theory/t3-01-general-position-series.md","a6103236be88b6d77dfcd1d8e4c98ea9c7a4021904fa931a5a46c3de02ff4fad",10725],
+  ["theory/t4-01-corner-defect-limit.md","a40f61a44d787201ecfe82f08eccb9e57de02a9d3a18161741be7f2f8cde4b46",9487],
+  ["theory/t4-02-one-dimensional-remainder.md","ead57816c2b33e250462514e25bcd4e709902523b33bd4cf1a17c007a6ec2e28",4829],
+  ["theory/t4-03-corner-constant.md","957802f2b3060a704f5a8b72042951f2a623716e2f817eccbed2ee8a23595e8f",4451]
   ]
 }

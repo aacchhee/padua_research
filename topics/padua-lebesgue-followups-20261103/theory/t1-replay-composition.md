@@ -1,5 +1,7 @@
 # T1 verification record — identity and disjoint-stratum replay composition
 
+Dated 2026-11-05 PR registration: Existing ID/verification-record identity retained. [Claude audit-01](../audit-01.md) accepts the mathematics; [response-01](../response-01.md) answers its minor findings. Earlier pending-audit wording below records the development stage and is superseded by this dated status. T2/T3 prospective-gate timing remains unwaived; physical cold-storage delivery remains pending. See [final map](../preparation/final-id-map.json). Mathematical text below is unchanged.
+
 Record kind: verification equivalence for existing PD-T170/PD-T184/PD-T180, not a new exclusion predicate or separately registered mathematical claim.
 Status: **accepted and actually executed verification record** supporting the existing PD-T184/PD-T180 proofs. Independent Astra adversarial review accepted the final protocol before consequential execution; both complete strata replays and both final compositions have passed. This is a verification-equivalence record, not a newly registered theorem.
 

@@ -18,26 +18,28 @@ and both original-accounting compositions completed. No developer monolithic joi
 is claimed; Claude subsequently completed one as audit evidence. [Count proof](../topics/padua-lebesgue-followups-20261103/theory/t1-closed-count.md).
 T2–T4 core analytic targets are complete and accepted by Claude audit-01.
 
-- **PROVED, Claude audit-01 accepted:** both limiting
+- **PROVED PD-T266, Claude audit-01 accepted:** both limiting
   edge defects have unique centre minima, vertical `g` and horizontal exactly
   `1`. [Theory](../topics/padua-lebesgue-followups-20261103/theory/t2-01-edge-centre-minima.md).
-- **PROVED, Claude audit-01 accepted:** common
+- **PROVED PD-T267, Claude audit-01 accepted:** common
   logarithmic endpoint expansion with explicit errors.
   [Theory](../topics/padua-lebesgue-followups-20261103/theory/t2-02-common-endpoint-expansion.md).
-- **PROVED, Claude audit-01 accepted:** general-position
+- **PROVED PD-T268, Claude audit-01 accepted:** general-position
   geometric series with rigorous tails, exact-Fraction enclosures and direct
   outward quadrature independently rerun at five positions.
   [Theory](../topics/padua-lebesgue-followups-20261103/theory/t3-01-general-position-series.md).
-- **PROVED, Claude audit-01 accepted:** parity-independent
+- **PROVED PD-T271, Claude audit-01 accepted:** parity-independent
   corner constant `c`, with an explicit vanishing remainder and independently
   reproduced enclosure
   `1.846160310423926079759838737947 < c < 1.846160310423926079759838737948`.
   [Constant](../topics/padua-lebesgue-followups-20261103/theory/t4-03-corner-constant.md),
-  [defect limit and series](../topics/padua-lebesgue-followups-20261103/theory/t4-01-corner-defect-limit.md),
-  [one-dimensional bound](../topics/padua-lebesgue-followups-20261103/theory/t4-02-one-dimensional-remainder.md).
+  [PD-T269 defect limit and series](../topics/padua-lebesgue-followups-20261103/theory/t4-01-corner-defect-limit.md),
+  [PD-T270 one-dimensional bound](../topics/padua-lebesgue-followups-20261103/theory/t4-02-one-dimensional-remainder.md), sharpening the predecessor PD-T158 estimate.
 
-The new records currently use their provisional IDs in the linked titles.
-The full PD-T098 expansion, including `-1/N` and the sharper remainder, stays
+Final registration assigns PD-T266–271 to t2-01/02, t3-01 and t4-01/02/03,
+respectively; every provisional alias is retained. IDEA-356/357/358 retain the
+T2/T3/T4 candidates; T1 reuses IDEA-299 and existing PD-T180/184.
+The full PD-T098 expansion, including `-1/N` and `O(log N/N²)`, stays
 OPEN. No finite-degree or all-degree argmax conclusion is added here.
 
 Protocol qualification: some linked full T2/T3 candidate/attempt reads were
@@ -53,6 +55,28 @@ Mathematics ACCEPTED for all four targets ([audit-01](../topics/padua-lebesgue-f
 
 All nine MINOR findings (wording, proposal format, provenance/budget notes) are answered by editorial fixes in [response-01](../topics/padua-lebesgue-followups-20261103/response-01.md). PR20 remains draft pending preparation, fresh reservation checks and integration rehearsal. The T2/T3 gate-timing deviation is recorded with minor impact and left for AC's decision.
 
-## Next step
+## Current boundary and post-merge frontier
 
-`Codex (gpt-6.1-sol medium): Continue codex/padua-lebesgue-followups-20261103.`
+Stage: PR preparation. Final registration and shared summaries are applied;
+PR20 remains draft while the orchestrator completes the fresh readiness scan,
+integration rehearsal and independent preparation check. The accepted mathematics
+is unchanged. No further mathematical campaign is assigned.
+
+Dated 2026-11-05 supersession: earlier CURRENT/RESULTS center-minimality and
+general-β-series OPEN clauses are historical and superseded only at the proved
+limiting-integral scopes PD-T266/268. Earlier exact n8 count OPEN clauses are
+superseded only by PD-T184/180; failed/deadline attempts remain history.
+PD-T100 remains MEASURED, PD-T183 remains the separate lower bound, and
+PD-T181 remains the separate accepted global theorem. After merge, these
+registrations and completed results remain the topic's outcome; PD-T098's sharp
+expansion and PD-T099's all-degree bridge retain their separate OPEN scopes.
+Finite PSLQ nulls remain MEASURED. No finite-degree ordering, broader count,
+priority, manuscript or author-contact claim follows. The certified 44/62 is
+only a candidate correction of the inspected LIT-388 v1 Table 3 numerical 38/56;
+no accepted erratum or later-version coverage is claimed.
+
+The T2/T3 prospective-gate deviation remains confirmed, not waived or cured;
+[audit-01](../topics/padua-lebesgue-followups-20261103/audit-01.md) and
+[response-01](../topics/padua-lebesgue-followups-20261103/response-01.md) preserve
+its minor-impact assessment for AC's decision. Physical cold-storage delivery
+remains pending. Only AC merges.

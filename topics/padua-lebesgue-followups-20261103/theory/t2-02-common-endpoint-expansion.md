@@ -1,4 +1,6 @@
-# PD-T?lebesgue-followups-codex-t2-02 — Common logarithmic endpoint expansion
+# PD-T267 — Common logarithmic endpoint expansion
+
+Dated 2026-11-05 PR registration: Final ID: PD-T267. Preserved provisional alias: `PD-T?lebesgue-followups-codex-t2-02`. [Claude audit-01](../audit-01.md) accepts the mathematics; [response-01](../response-01.md) answers its minor findings. Earlier pending-audit wording below records the development stage and is superseded by this dated status. T2/T3 prospective-gate timing remains unwaived; physical cold-storage delivery remains pending. See [final map](../preparation/final-id-map.json). Mathematical text below is unchanged.
 
 ID kind: PD-T.
 Aliases: T2 endpoint behaviour; common vertical/horizontal endpoint constant.

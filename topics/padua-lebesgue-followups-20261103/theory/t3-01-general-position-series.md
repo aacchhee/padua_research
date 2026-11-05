@@ -1,4 +1,6 @@
-# PD-T?lebesgue-followups-codex-t3-01 — General-position geometric series with explicit tails
+# PD-T268 — General-position geometric series with explicit tails
+
+Dated 2026-11-05 PR registration: Final ID: PD-T268. Preserved provisional alias: `PD-T?lebesgue-followups-codex-t3-01`. [Claude audit-01](../audit-01.md) accepts the mathematics; [response-01](../response-01.md) answers its minor findings. Earlier pending-audit wording below records the development stage and is superseded by this dated status. T2/T3 prospective-gate timing remains unwaived; physical cold-storage delivery remains pending. See [final map](../preparation/final-id-map.json). Mathematical text below is unchanged.
 
 ID kind: PD-T.
 Aliases: T3; general-beta defect evaluation; two horizontal expansion charts.

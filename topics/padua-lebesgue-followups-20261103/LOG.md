@@ -130,3 +130,11 @@
 - Mechanical verification and a distinct gpt-6-astra medium editorial impact check found no unresolved response finding or material re-audit trigger. All 123 manifest entries and four theory hash pairs verify; original code/receipts/auditor files are unchanged. Final response non-record bucket is 4,839,525 bytes under the explicitly documented classifier (manifest reduced by 56 bytes). Current documentation points to the accepted Claude audit while preserving historical pending markers as such.
 
 - Response outputs committed at `ef1e0530213584d102ea11b794ae67fb436b6540`. [Handoff 03](handoffs/03-response.md) is complete; [handoff 04](handoffs/04-pr-preparation.md) publishes the authorized PR-preparation task. No material change requires a new Claude audit; preparation and readiness remain to be completed.
+
+## 2026-11-05 — PR preparation registration checkpoint
+
+- User continued this branch with Codex gpt-6.1-sol medium. Rules read at `e8ba6f90a7421fd6dad231586843a4870bdcaf15`; orchestrator owns Git. Cloud runtime skill/readiness checked; no alternate machine used.
+- Current main `5db1e01dcd2258f45de2adcaef43859e59734618` remains reconciled. Fresh live all-state population and pinned scans include open PR20–24, all ledger/registry copies and permanent gaps; no closed-unmerged PR. Final assignments PD-T266–271 and IDEA-356–358 passed before application.
+- [Preparation record](preparation/record.md), [reservation recheck](preparation/reservation-recheck.md), [exact map](preparation/final-id-map.json). Applied corrected registry/state/history proposals within handoff04 scope. No new mathematics/novelty claim; bounded registration exception recorded.
+- Three disjoint sol medium workers supplied allocation, registry/history and state/results work. The 138 immutable-input/9 mathematical-body/123 manifest/mapping/link preservation checks pass. Code, executed receipts and auditor files are unchanged.
+- PR20 remains draft at this checkpoint, pending independent Astra medium preparation review, storage-budget assessment, final refresh and integration rehearsal. Confirmed T2/T3 timing deviation remains unwaived; physical storage delivery remains pending.

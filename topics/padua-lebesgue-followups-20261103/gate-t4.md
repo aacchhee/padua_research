@@ -27,3 +27,7 @@ Aliases: odd-offset Cauchy deformation; parity-free corner defect integral.
 ## Deferred stretch routes
 
 No separate sharp-remainder mechanism was generated after the core done criterion. The finite PSLQ search in `evidence/t4-relations.json` found no relation in the two preregistered bases at coefficient height10⁶, tolerance1e-85, max1000steps, using110digits. It is MEASURED and supplies no independence or universal closed-form exclusion. The -1/N and O(log N/N²) targets remain OPEN, deferred rather than rejected.
+
+## 2026-11-05 final registration
+
+Assigned IDEA-358 (t4-01) after the [fresh reservation recheck](preparation/reservation-recheck.md). Provisional aliases and all earlier candidate/gate text are retained. [Claude audit-01](audit-01.md) accepts the mathematics; [response-01](response-01.md) answers minor findings. Earlier pending-audit text describes development history; T2/T3 prospective-gate timing remains a confirmed, unwaived deviation. No new mechanism or novelty claim is introduced.

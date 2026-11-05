@@ -1,4 +1,6 @@
-# PD-T?lebesgue-followups-codex-t2-01 — Unique centre minima of both edge-defect integrals
+# PD-T266 — Unique centre minima of both edge-defect integrals
+
+Dated 2026-11-05 PR registration: Final ID: PD-T266. Preserved provisional alias: `PD-T?lebesgue-followups-codex-t2-01`. [Claude audit-01](../audit-01.md) accepts the mathematics; [response-01](../response-01.md) answers its minor findings. Earlier pending-audit wording below records the development stage and is superseded by this dated status. T2/T3 prospective-gate timing remains unwaived; physical cold-storage delivery remains pending. See [final map](../preparation/final-id-map.json). Mathematical text below is unchanged.
 
 ID kind: PD-T.
 Aliases: T2; strict centreward integral monotonicity; horizontal central value one.

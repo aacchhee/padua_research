@@ -1,5 +1,8 @@
 # Proposed T1 shared-record updates — development complete; unapplied
 
+2026-11-05 application record: the corrected proposals were applied during handoff04 using the [final ID map](../preparation/final-id-map.json), [accepted audit](../audit-01.md) and [response](../response-01.md). The literal proposal blocks below remain historical; their provisional/PENDING markers are not current shared-registry status.
+
+
 Dated 2026-11-05 status supersession: [Claude audit-01](../audit-01.md)
 accepts the mathematics; [response-01](../response-01.md) answers the minor
 findings. Earlier pending/absent-audit wording and PENDING markers below are

@@ -130,3 +130,7 @@ coverage reconciliation remain a confirmed prospective-gate deviation. Claude
 neither waives nor retrospectively cures the deviation; AC retains that decision.
 No historical timestamp is reconstructed. Future gates should record the actual
 UTC time before derivation and distinguish later coverage additions.
+
+## 2026-11-05 final registration
+
+Assigned IDEA-356 (t2-01) and IDEA-357 (t3-01) after the [fresh reservation recheck](preparation/reservation-recheck.md). Provisional aliases and all earlier candidate/gate text are retained. [Claude audit-01](audit-01.md) accepts the mathematics; [response-01](response-01.md) answers minor findings. Earlier pending-audit text describes development history; T2/T3 prospective-gate timing remains a confirmed, unwaived deviation. No new mechanism or novelty claim is introduced.

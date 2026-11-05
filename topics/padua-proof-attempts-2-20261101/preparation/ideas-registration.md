@@ -141,6 +141,7 @@ Aliases: `IDEA?proof-attempts-2-codex-n8-cover`; original candidate/route labels
 - Cheapest test, prewritten kill criterion and actual outcome: Includes the operational continuation/Candidate4 variants. Capped and deadline-interrupted runs are not passes. Resume only with corner arithmetic/atomic boundary persistence repaired and full checker time.
 - Disposition: **deferred**. Failed/abandoned subroutes above do not reject a parent theorem.
 - Canonical records: PD-T180, PD-T181, PD-T184; [accepted audit](../audit-01.md), [response](../response-01.md).
+- Dated2026-11-03 completion: **retained/completed at registered n8 count-continuation scope**; the earlier deferred disposition and capped/deadline histories are preserved as historical. [PD-T180 completion](../../padua-lebesgue-followups-20261103/theory/t1-closed-count.md) proves62=44interior+16open-edge+2corner after every registered final gate; PD-T184 gives the separate44interior theorem. PD-T181's global theorem was already accepted separately in PR17. [Actual fresh-identity/join/accounting and separate replays](../../padua-lebesgue-followups-20261103/independent-checks-t1.md). [Claude audit-01](../../padua-lebesgue-followups-20261103/audit-01.md); [response-01](../../padua-lebesgue-followups-20261103/response-01.md). No new candidate ID, new-degree scope, novelty claim or reinterpretation of a failed run.
 
 ## IDEA-300 — Universal compatible-gradient leaf
 
