@@ -3,7 +3,7 @@
 - Branch: `codex/padua-lanczos-nonproduct-20261105` · Base: main `be9a831` (PR #29 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
 - Stage: WORK · Next: `Codex (gpt-6-astra high): Continue codex/padua-lanczos-nonproduct-20261105.` · Open handoff: [handoffs/01-work.md](handoffs/01-work.md)
 - Reserved final-ID ranges: none. Under the PR #29 rules, reserve when first needed (normally at PR preparation).
-- Claims: none yet.
+- Claims: P3 all-degree non-affine-product weight separation and uniform sufficient radius; P5 polynomial Padua capacities; P4 model/transfer lemmas and scoped covariance obstruction. Provisional IDs only; see [report](report.md).
 
 ## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
 
@@ -21,7 +21,7 @@
 
 ## Runs needed
 
-- N0–N4 and P1–P6 as in handoff 01.
+- Current development remainder: collect the already-running D36x9 degree16 reflection checks and their separately launched supplementary replay, then close N2 and the evidence inventory. Unrun algebraic bulk scans and unresolved rates are listed in the [report](report.md); they are not premises of the analytic proofs.
 
 ## 2026-11-05 — continuation setup — Codex, requested gpt-6-astra high
 
@@ -265,3 +265,41 @@ candidate's mathematics.
   masks; BJ/mirror continue until complete/cap/replaced. Every final case
   must retain its actual checker-source identity; no incomplete original
   receipt is relabeled PASS. Disk N2 waits for all60 matched rows.
+
+## 2026-11-05 — compact evidence and disk completion checkpoint
+
+- P6 retained the closed incomplete scalar successor and explicit alt/pivot
+  supersession receipt. Original scalar BJ/mirror completed; the new
+  reflection successor checks only the missing two rules. Four-rule producer
+  references are frozen independently, and active receipts remain outside
+  this checkpoint until their runs close.
+- The Hahn compact table retains all60 exact outward endpoint-log rows. A
+  distinct checker verifies120 logarithm enclosures, all60 full-field raw
+  pairs, eight provenance entries and all32 signed-OLS corners per window.
+  Both windows remain INCONCLUSIVE. This small committed evidence supports
+  repository-only rechecking of the screen without committing large arrays.
+- Published source/receipt checkpoint `17c9d85` preserves the resumed
+  collectors, compact checkers and closed attempts. Primary and separately
+  launched supplementary reflection16 jobs continue in the same environment;
+  reconnection did not restart any native computation. Their provenance is
+  retained in the scan review.
+
+### Canonical storage-budget observation
+
+A coordinator check at source checkpoint `17c9d85` counted5,187,037 bytes
+in1,059 tracked JSON/compressed data files repository-wide, of which358,822
+bytes belong to this topic. This broad count includes inventories/receipts;
+it does not establish that every byte is a regenerable scientific output.
+The inherited portion is4,828,215 bytes. The final inventory will add its
+actual measured footprint below. Per-file compliance alone therefore does
+not establish WORKFLOW's repository-wide "well below5MB" generated-output
+target. No unrelated historical evidence was altered under this topic's
+limited scope. Retain this aggregate-budget issue for the substantive audit,
+rather than claiming complete storage-budget compliance.
+
+The executed repository command
+`python -B tools/cold_storage.py plan topics/padua-lanczos-nonproduct-20261105`
+reported zero tracked candidate files and zero bytes at its16,384-byte
+threshold. This is a planning result, not external delivery or archive
+verification. Raw arrays stay in local working storage with availability
+recorded by the final inventory.

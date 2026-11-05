@@ -155,7 +155,7 @@ complete scan. H24_222 uses normalized rational weights proportional to
 | Uniform T24 | inherited2–20; fresh pilots/replay | INCONCLUSIVE |
 | H24_222 | fresh2–16, four rules,60 exact rows | INCONCLUSIVE |
 | D36x9 | fresh2–8, four rules,28 exact rows;16 running | No completed16-window verdict |
-| D65x9 | fresh2–8 pilot, four rules,28 exact rows; cost12 probe running | No completed16-window verdict |
+| D65x9 | fresh2–8 pilot, four rules,28 exact rows; cost12 checker timed out | No completed16-window verdict |
 | SH reweighting | analytic all-degree proof; no bulk algebraic scan | UNRUN |
 | Positive Padua | analytic all-degree bounds; algebraic m2–5 checks | UNRUN |
 
@@ -172,8 +172,9 @@ the P3/P4/P5 proofs in its recorded scope and actually reruns exact checks.
 and28 disk row pairs, independently reconstructs12 small cases with Fraction
 arithmetic, verifies the two N2 outcomes and exercises malformed controls.
 These supplement the required subsequent Claude substantive audit.
-P1/P2/source/registry readiness and any later disk16 additions remain outside
-those completed review scopes unless explicitly added.
+The mathematical review also accepts the P1/P2 admission and covariance
+proofs in its dated additions. Registry readiness and pending disk16
+additions remain outside completed review scopes unless explicitly added.
 
 The bounded generic/block inverse-checker performance attempts are retained
 in [FLINT notes](flint-check-notes.md); no degree16 result used them.
