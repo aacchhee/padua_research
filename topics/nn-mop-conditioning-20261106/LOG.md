@@ -96,3 +96,37 @@ SHA256; C4 verified all27 member pins and inspected executed source,
 obtained isolated Octave9.4 using authorized package downloads, and
 re-passed actual M4. Earlier BLOCKED records are historical and will gain
 dated addenda, not be erased. M2 and full comparison are in progress.
+
+## 2026-11-06 — C1 metric screen and sharp Krawtchouk output
+
+C1 completed all61 integer sizesN4–64 at180/260dps for both scalar
+marginals and balanced-terminal derivative bounds, using a primal/adjoint
+solve rather than repeating the full triangle Jacobian. The signed OLS
+endpoint construction bounds fits of both fixed- and smooth-gauge infima;
+all meet M1's intrinsic threshold. This is a finite MEASURED screen, not
+a certified enclosure or exact optimizer. Written all-gauge diagonal
+lower bounds prove exponential Krawtchouk sensitivity in the defined
+fieldwise metric. Scalar controls grow slowly on this finite grid.
+See C1 core theory, c1-summary.json and c1-grid.csv.
+
+Gate timing qualification: C1 read the complete inventory/obstruction
+tables and nearest PD-T432/437 before derivation, but completed older
+linked nn-mop-iep candidate and PD-T286/289 bodies afterward. No historical
+novelty or fully prospective linked-source coverage is claimed. This is
+the canonical timing qualification; mathematics was checked against those
+completed reads.
+
+The bounded Astra ultra worker supplied a complete all-triangle upper
+proof kappa_N<=3,000,000 N^13(5+2sqrt(6))^(N−1), including all node/weight
+directions, both a fields and terminal successors. With PD-T437 this
+fixes the exact benchmark asymptotic base. The worker's exact N2–6
+checks passed50 Bernstein identities,735 coordinate jets,1050 a-field
+derivatives and330 terminal coordinate checks. Root and supplementary
+Astra checker reconstructed the analytic argument; separate exact checks
+continue. Required Claude audit remains pending.
+
+C4 found a real one-ulp JSON transport change when checking identical
+inputs. Early decimal-transport comparison outputs are exploratory only.
+The wrapper now uses IEEE754 hex transport; final comparisons and C1
+error diagnostics will be generated only after bitwise input verification.
+No provisional comparison ratios are promoted here.
