@@ -25,6 +25,13 @@ full Arb radius<2.584e-16, with3 safe whole-row fallbacks. This is a point
 component; complete whole-box certification and new degrees remain OPEN.
 [Replay](../topics/padua-argmax-bridge-20261105/independent-checks-D07-fourcopy-result.md).
 
+A separate computer-assisted local theorem now certifies both actual
+degree512 corner rectangles with lambda<=Lambda_c-(19/5)(alpha²+beta²),
+using only three point losses and global norm34. Trial11.265079CPU,
+independent fresh replay11.015692CPU. These rectangles cover rho<=1/2;
+full degree512/global complement coverage remains OPEN.
+[Patch proof](../topics/padua-argmax-bridge-20261105/theory/D09-corner-patch-512.md).
+
 The new fixed-work checker PASSes all364 regions of the unchanged known
 n32 certificate in **46.09totalCPU seconds**(45.23subprocess), versus
 139.41subprocess previously: about3.08times faster. It recovers all76

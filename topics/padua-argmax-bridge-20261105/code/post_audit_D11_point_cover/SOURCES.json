@@ -1,0 +1,69 @@
+{
+  "input_head": "96882eaa270adbde69ce24e731256eebbbd03adb",
+  "status": "PREPARATION ONLY: native adapters/resource runner/acceptance gate absent",
+  "immutable_code_data_dependencies": [
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/code/phase_probe.c",
+      "bytes": 1510,
+      "sha256": "692d4afd89d3bbda3bac3daaeef7c56aa4ecdde0f9cdd32b9fefa0e296adc365"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/cheap_rows_C11/point.cpp",
+      "bytes": 6550,
+      "sha256": "6e2f1920ca293ac5a34f01c6369d94345b0d0c9b8a03d3e58ef15d453fbcf1d9"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/cheap_rows_C11/partial.cpp",
+      "bytes": 7688,
+      "sha256": "bde1ce4850849dd402acc91eb3cee7d40883bbd51d5f7cff13334abc0f4ee23c"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D07_fourcopy_point/build.py",
+      "bytes": 5829,
+      "sha256": "13efba942b47be6ccacd4f13f81ce387bb268ff4f7ef77c2e648357a135c9ef8"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D07_fourcopy_point/controls.cpp",
+      "bytes": 2469,
+      "sha256": "5db13088e9fff85a134c95851337750ca03ea62be2f5d3ecf07e1f6e7d49c3fa"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D07_fourcopy_point/point.cpp",
+      "bytes": 9698,
+      "sha256": "03dc79bbbc7563ba9066137c0a52467624c810a758f865f9931511c82985ff6f"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/d09-threepoint.json",
+      "bytes": 11236,
+      "sha256": "34553e6d91dc77285f1bbb277a0f519c5a8a5da5f27a8f43501c7caf13631509"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D09_threepoint/FREEZE.md",
+      "bytes": 2087,
+      "sha256": "6cd130544e02b9734bba710de27d9cba62bfe49a67e0fffbb031782234685d60"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D09_threepoint/SOURCES.json",
+      "bytes": 2403,
+      "sha256": "f7d2bd992d93ec631000e98a657e119ade3d24f843e4280cb1d27f0a0069794a"
+    }
+  ],
+  "contract": {
+    "n": 512,
+    "M": "34",
+    "pi_lower": "157/50",
+    "pi_upper": "22/7",
+    "floor": "1/32",
+    "max_distinct_canonical_C11_vertices": 384,
+    "max_visited_nodes": 2048,
+    "max_depth": 64,
+    "producer_CPU_cap": 60,
+    "checker_CPU_cap": 300,
+    "aggregate_CPU_cap": 400,
+    "pure_control_CPU_cap_within_aggregate": 2,
+    "completed_native_call_stop_CPU": 20,
+    "unfinished_native_call_kill_CPU": 25
+  },
+  "future_build_scope": "unchanged D07 build helper with LOCAL redirect compiles controls.cpp, includes D07 point plus C11 point/partial; producer separately compiles unchanged phase_probe.c",
+  "no_execution": true
+}

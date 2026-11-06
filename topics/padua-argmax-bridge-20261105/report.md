@@ -311,3 +311,28 @@ The campaign is6/25 complete. D07 reuses this structure in a guarded
 point prototype and replaces the conservative outer/retained-row budgets.
 Its pre-execution source review has two controller findings; no numerical
 point call is authorized until their focused closure.
+
+
+## D09 — certified corner patch from three point losses
+
+At degree512 the three primary actual-point upper bounds, one certified
+corner lower, and the independently proved GLOBAL norm34 certify
+lambda<=Lambda_c-(19/5)(alpha²+beta²) on BOTH actual-corner rectangles
+0<=alpha<=pi/4,0<=beta<=3pi/16. These contain the full inward rho<=1/2
+patches, preserve equality at the origins and give strict descent elsewhere.
+[Local theorem](theory/D09-corner-patch-512.md) and
+[independent fresh-build replay](independent-checks-D09-threepoint-result.md).
+
+The whole fixed trial, including compilation and n32 reference control,
+cost11.265079CPU; independent replay11.015692CPU. No fallback rectangle
+ran; the diagonal point used one safe whole-row numerical fallback.
+Exact dyadic epsilon>7.6 gives the radial-square coefficient19/5. This is
+a computer-assisted LOCAL patch proof; degree512 global argmax is OPEN.
+
+D10's [accepted full-cover adapter](theory/D10-cover-contract.md) states
+the remaining exact vertex/geometry obligations. D11 checkpoints a
+floating producer/exact rational checker skeleton, both CLIs fail closed:
+native adapters, parser and resource supervision remain unimplemented.
+No producer, phase checker or new degree job has run. The new phase
+constant bounds are undergoing their separate review; no further analytic
+onset is adopted at this checkpoint.

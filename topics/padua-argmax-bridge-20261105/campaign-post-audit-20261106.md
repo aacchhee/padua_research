@@ -6,7 +6,7 @@ counts scientific rounds rather than individual lemmas or concurrent jobs,
 and does not stop at a small checkpoint while productive authorized work remains.
 Authority, source/rule identity and resource observations are in LOG.
 
-Completed: **8/25**. Active: **D09**; D10 mathematical preparation runs in parallel.
+Completed: **9/25**. Active: **D10**; D11 preparation runs in parallel.
 
 | Round | State | Primary target | Prospective gate / actual outcome |
 |---|---|---|---|
@@ -19,7 +19,7 @@ Completed: **8/25**. Active: **D09**; D10 mathematical preparation runs in paral
 | D06 | COMPLETE | Assess the new analytic error; direct four-copy row structure | Frozen allowance fails useful budgets through10000; scalar/analytic check accepted. Cubic/quartic actual-row reduction accepted at pointwise scope; no implementation/runtime claim. |
 | D07 | COMPLETE | Replace coarse outer/retained-row charges; guarded exact-point prototype | All analytic supports accepted after one weak-inequality correction. Source findings closed;13-case point trial PASS12.056CPU, independent fresh replay PASS12.008CPU. Generic n5122.093CPU,3 safe row fallbacks. Point component only. |
 | D08 | COMPLETE | Lower global analytic onset; point-to-box reduction | Global theorem independently accepted for every n>=50000, primary40000 far failure preserved. Three split point-to-box proofs independently accepted with no findings; no patch instances. |
-| D09 | ACTIVE | Three-point actual-corner trial and a useful independent global norm | Global M512=34 and frozen three-point controller independently accepted. One-shot bounded primary/fixed fallback trial released only after publication; successful premises still pending. |
+| D09 | COMPLETE | Three-point actual-corner trial and a useful independent global norm | Global M512=34 accepted; primary three-point trial PASS11.265CPU and fresh independent replay PASS11.016CPU. Whole actual-corner rectangles certified with19/5 radial-square loss. Full global512 stillOPEN. |
 
 Current boundary: exact argmax2–40 and every integer n>=50000; gap41–49999 OPEN.
 
@@ -41,3 +41,6 @@ records normally<16KiB; aggregate tracked generated output<10,000,000bytes.
 Large raw output remains in the existing Padua local-output tree with pending
 archive provenance. Root alone owns Git/shared topic records and PR27.
 No main push, merge, force, tags, .github/settings or major cleanup.
+
+| D10 | ACTIVE | Sharper completed constant and exact full-cover adapter | Full-cover sufficient implication independently accepted, actual complete cover absent. Global/local/negative constant results split; final review closure pending. |
+| D11 | PREPARING | Lower analytic onset budget and full point-cover implementation | Primary16000/fallback20000 scalar comparison preregistered, no run before D10 acceptance. Producer/checker skeleton frozen, fail-closed and unexecuted; native/parser/resource integration pending. |
