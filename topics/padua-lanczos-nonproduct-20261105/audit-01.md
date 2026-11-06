@@ -1,7 +1,5 @@
 # Audit 01 — padua-lanczos-nonproduct-20261105 — substantive independent audit
 
-> **Checkpoint: IN PROGRESS.** The P5 section is pending its subagent result. Findings and the verdict below are provisional until this banner is removed.
-
 - Auditor: Claude, independent of the Codex developer. Orchestrator and lead auditor: configured `claude-opus-5-5`, xhigh, as handoff 02 specifies. Five independent Claude Opus subagents were each given a disjoint scope:
   - P3: xhigh;
   - P5: xhigh;
@@ -76,7 +74,21 @@ The η=0 controls fail only the moment and rank tests, as they must. Float64 loc
   - 708 impulse tests of the weighted quotient.
 - One combined invocation was stopped after about 22 minutes with no output, cause not diagnosed. The per-family reruns completed.
 
-**P5.** See the P5 section below.
+**P5.**
+- The developer's checker, `python -I -B code/p5_exact_checks.py --output <scratch>/p5.json`, exits 0 with PASS (1.62 s wall). Its output equals the committed receipt in every field except elapsed time.
+- The auditor's own exact cyclotomic code checks m=1..7 (441 moments, 2.3 s, all PASS):
+  - cutoff failure patterns;
+  - hull vertex counts 3, 5, 6, 6, 6, 6, 6;
+  - the exact Gram identity at s=m−1, with exactly one mismatch at s=m;
+  - T_m normal to Π_s;
+  - the readouts.
+- The auditor's own forward-mode Jacobian of the actual normalized algorithm covers m=2..7, every s≤m, BJ and mirror: 54 rows, 1054 s. The float64 brackets are not certified, but:
+  - every lower bracket is ≥ √⌈s/2⌉ and every upper bracket is ≤ the claimed upper;
+  - the brackets are within 3.3% of each other;
+  - κ(m;m) ≤ 5e-14;
+  - 20 random admissible rules have floor √2 or √3.
+- A 90-digit finite-ε check (ε=1e-30) matches the frozen closed form to 7e-31 relative error.
+- An earlier, larger Jacobian run was stopped and its output is unused. The harness errors in the first finite-ε script were the auditor's own and do not indicate a mathematical discrepancy.
 
 **P6.**
 - `p6_scan.py --family H24_222 --max-degree 16 --seconds 600` with a fresh work directory: PASS in 30.6 s. The input sha256 matches, and all 8 case digests equal the committed ones, so all 60 rows match in every field except elapsed time.
@@ -91,6 +103,15 @@ The η=0 controls fail only the moment and rank tests, as they must. Float64 loc
 | T24 | [0.13737, 1.80236] | [−0.21648, 1.82281] | INCONCLUSIVE |
 | H24_222 | [0.05531, 1.53950] | [−0.22020, 1.65120] | INCONCLUSIVE |
 | D36x9 | [−0.50785, 1.06105] | [−0.88737, 1.16246] | INCONCLUSIVE |
+
+**Auditor check code.** Committed as code only under [`audit-01-checks/`](audit-01-checks/). Outputs stay in session scratch and are regenerable; they are not committed. sha256 prefixes:
+
+| Check | Files |
+|---|---|
+| P3 | `p3_audit_check.py` `661687fcdbe8c139` |
+| P4/P1/P2 | `rings_check.py` `8f46f895d4997db2`, `exact_checks.py` `0d475fb17fe642a9`, `finite_capacity_check.py` `9ac376f1416e9dd0`, `impulse_check.py` `0c13fc51e249e861` |
+| P5 | `exact_cyclo.py` `b9672b2d58131945`, `capacity_num.py` `380a109402fff55f`, `fd_mpmath_v2.py` `fd11937e040c6aa7` |
+| P6 | `n2.py` `3aceac3668cd6ad9`, `n2contain.py` `551b4641a3ec0245`, `cmp_rows.py` `e2241d4e9fb03dfe`, `cmp8.py` `48befb5785ba949e` |
 
 **Not executed by this audit:**
 - the degree-16 scalar BJ/mirror checkers (about 2000 s each), which are confirmed only through matching producer digests;
@@ -180,7 +201,10 @@ None.
     - The results file omits the PROVED covariance PD-N and the MEASURED P1/P2 probes.
 15. **Literature cross-reference.** The P1 literature checkpoint does not cross-reference the existing LIT-292 addendum (Dunkl–Xu Chapter 3, read from an AC-supplied PDF). AC may be able to supply Chapter 5 the same way. The provisional LIT for Xu 2015 is not a duplicate.
 16. **Unproved "only D4 symmetry".** `report.md:128-129` and `LOG.md:93-94` say "only D4 symmetry", but `p2-01:40-41` proves only D4 invariance and non-invariance under all rotations. The statement is true: the auditor's exhaustive exact search finds exactly 8 affine self-maps (the signed permutations) on both D36x9 and D65x9. The short proof is that an affine bijection fixes the centroid and the 36 hull vertices on one circle force an orthogonal map, followed by a finite check. Weaken the wording to "D4-invariant, not rotation-invariant". Adding the proof instead would be a material addition and needs a focused re-audit.
-17. **Stale text and spacing.**
+17. **P5 checker hygiene.**
+    - `code/p5_exact_checks.py:159` hard-codes `lower_capacity_squared=(s+1)//2` next to computed fields; annotate it in a later revision, leaving the frozen receipt unchanged.
+    - The P5 receipt and `attempts/P5.md:57` record SymPy only, without the Python version or platform.
+18. **Stale text and spacing.**
     - `p4-weighted-normal-quotient.md:106-107` and `attempts/P4.md:93-94` still say "no independent rerun". The Astra rerun exists (`evidence/check-math-reruns.json`), and this audit adds another.
     - Missing spaces: "through2n+1" (`p3-02:58,60`), "n2–10" and "coefficient1" (`p3-03:70,146`), "and0<|eta|<1" (`LOG.md:139`), and similar elsewhere.
 
@@ -207,7 +231,13 @@ None.
    - The checkers use bare `assert`, which `python -O` would disable; the recorded commands do not use `-O`.
    - `exact_gram_pairs_checked` is a whole-run count repeated on each row.
    - The recovered pivot and the Astra alternating outputs have no saved exit codes. They rest on complete outputs, and this audit's fresh reruns reproduce both scientific outputs.
-8. **Storage (handoff item 7).**
+8. **P5 details.**
+   - The developer's checker covers only s=m−1, with derivative directions only at m=2,3; the records state this scope correctly.
+   - "Precisely six vertices" (`p5-01:145-147,156`) could use one sentence of justification.
+   - "Admissible" at `p5-02:43` should cross-reference PD-T136.
+   - The upper bound is loose by more than 11× in the measured range (2√2·s would suffice).
+   - All P5 files first appear together in `13c3146`; no P5-specific deviation was found.
+9. **Storage (handoff item 7).**
    - Committed JSON and compressed data repository-wide total 5,489,510 bytes in 1,087 files; this topic contributes 661,295 bytes, including 232,786 bytes of inventory chunks. All tracked data-like files, including `.out`/`.log`/`.txt`, total 5,868,931 bytes.
    - **AC decided on 2026-11-06** that storage belongs to a separate cleanup topic and that no cleaning action is taken while everything stays under 10 MB (recorded in [LOG](LOG.md#2026-11-06--claude-audit-01)). The total is under that limit, so this item needs no action here.
    - Every committed file is ≤16 KiB except three prose records (LOG, and the two independent-check records at 28–33 KB). The size limit concerns generated outputs, so these are not an issue.
@@ -245,7 +275,15 @@ The lead auditor's line-by-line check and the subagent's reconstruction agree.
 
 No cubature equivalence between the continuous disk and the ring grids is claimed.
 
-**P5.** See the P5 section below.
+**P5-01 and P5-02** are accepted for all m>s≥1:
+- the continuous cutoff 2m−1 is sharp, with (2m,0) the only failure at degree 2m;
+- agreement with the discrete Lobatto product holds through degree 2m, first failing at (m,m+1);
+- the hull vertex counts are 3, 5 and 6 for m = 1, 2 and ≥3, so no invertible affine image of a product support (a four-vertex rectangle) can match;
+- the full-source upper is valid for unrestricted node sources: moments fix only the base coefficients, and the frozen recurrence then acts through diagonal operators with values in [−1,1];
+- T_m is a unit normal witness, since m+s ≤ 2m−1;
+- the floor κ ≥ 1 for every admissible rule (σ_last ≥ β_last);
+- no all-rule upper, sharp exponent, alternating/pivot upper or IEEE claim is made;
+- s=m is correctly excluded: there κ=0.
 
 **P6.** Accepted:
 - the reflection method's reduction (the 90 representatives share energies only; all 324 nodes and every source are retained, and the seven guards fail closed);
