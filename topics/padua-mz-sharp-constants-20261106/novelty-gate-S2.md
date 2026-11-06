@@ -76,3 +76,21 @@ Their constants give a uniform factor below one. This is a successful
 quantitative continuation of IDEA386, not a new historical mechanism claim.
 The exact candidate and pre-test scalar kill criterion are retained in
 [ideas/S2-core.md](ideas/S2-core.md). No external fulltext result is used.
+
+## Round4 prospective refresh — compact transition remainder
+
+Before pursuing the full-limsup route, searched state/tracks/topics/literature
+Markdown for Mosco, collectively compact, compact remainder, fractional
+Sobolev, concentration compactness, weak endpoint and positive-core/compact
+phrases. Only two irrelevant substring hits appeared (a1/2 degree ratio and
+a prior dependency phrase); no new full predecessor was shortlisted. The
+complete already-read IDEA386/core and PD-N104 remain the closest entries.
+The proposed distinction is compactness in the correct mass metric plus
+positive-form lower semicontinuity, not pointwise matrix convergence.
+
+Round5 refresh: the finite-window spectral-certificate route is recorded in
+ideas/S2-certificate.md. A search of state/IDEAS.md and topic theory/ideas
+for finite-window, spectral-certificate, positive-part, truncated-Laplace,
+Schur-error, Lipschitz-kernel and mass-window variants found no additional
+shortlisted predecessor. Preliminary algebra preceded that formal record;
+no new numerical result or priority claim is used.

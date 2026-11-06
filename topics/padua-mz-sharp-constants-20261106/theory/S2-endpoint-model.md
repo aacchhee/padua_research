@@ -5,7 +5,8 @@ Aliases: endpoint cardinal norm; sine-rational edge model; Nyquist cosine
 sampling in radial Lebesgue mass; microscopic CC model.
 Split from: PD-T027 sharp-limit/value conjunct; the uniform gap is separately
 proved in S2-uniform-upper.md.
-Split into: none at this prediction-registration boundary.
+Split into: S2-fixed-trial-limit.md, S2-qualitative-limit.md and
+S2-finite-certificate.md supply the subsequent proof and computable error.
 
 ## Statement / preregistered prediction
 
@@ -46,30 +47,31 @@ N² dx=N sin(t/N)dt under theta=t/N.
 
 The candidate Hilbert space is the completion of finite linear combinations
 of f_j under the positive norm integral t f²dt. Formula(P) is the squared
-norm of evaluation into the weighted sequence space if evaluation extends
-boundedly. This formulation defines a spectral candidate without assuming
+norm of evaluation into the weighted sequence space. Boundedness was a
+registration obligation and is proved in S2-fixed-trial-limit.md, then
+sharpened in S2-qualitative-limit.md. The formulation defines the norm without assuming
 a classical bounded Wiener–Hopf symbol.
 
 ## Assumptions
 
 Exact Lebesgue CC, N+1 Lobatto nodes, degree N−1. The proposed local trial
 family has fixedJ as N tends infinity, and uses no other endpoint data.
-Both parity sequences are predicted to agree. Norm convergence of the
-finite Gram problem is an additional unproved obligation.
+Both parity sequences agree by S2-qualitative-limit.md. The quantitative
+finite-to-limit error is proved in S2-finite-certificate.md.
 
 ## Status by part
 
-Overall status: **OPEN**.
+Overall status: **PROVED** via the linked follow-on theorem files.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
-| Exact candidate(P) and its common-parity limit prediction | OPEN | Derivation below; no full upper limsup or norm convergence |
-| Value/norm of(P) | OPEN | Model Galerkin computation not yet run at registration |
-| Quantified finite-to-limit spectral error | OPEN | Fixed trials alone cannot bound the complementary degrees/nodes |
+| Exact norm(P) and its common-parity CC upper spectral limit | PROVED | S2-qualitative-limit.md, supplementary distinct review PASS |
+| Explicit computable finite-to-limit error | PROVED | S2-finite-certificate.md, supplementary distinct review PASS |
 
-The accompanying uniform theorem is independently PROVED and is not
-relabeled by this model's OPEN status. No partial sharp-limit claim follows
-from a supporting fixed-vector calculation.
+The exact registered formula and derivation below are preserved. The
+status reflects subsequent proofs, rather than their open obligations at
+registration. A certified decimal evaluation and an elementary/practical
+rate are future refinements, outside these proved claims.
 
 ## Depends on
 
@@ -124,8 +126,9 @@ For fixedu, these identities predict precisely the numerator and denominator
 of(P). Even proved fixed-J form convergence would give only
 liminf lambda_max>=Lambda_edge. It would not supply the reverse inequality:
 maximizing vectors may spread over unbounded endpoint indices or mesoscopic
-scales. The two-endpoint decoupling, domain-density/completeness, a classical
-symbol representation if used, and a uniform remainder bound remain open.
+scales. This was the open upper-limit obligation at registration. It is
+resolved subsequently by the domain-density, compact remainder and positive
+form argument in S2-qualitative-limit.md; a classical symbol is not needed.
 
 ## Closed-form model matrix to check after registration
 
@@ -145,12 +148,15 @@ integral definition in(P) is canonical. A generalized eigenvalue of(D_J,C_J)
 is a finite model lower bound/measurement, not a proof of the infinite norm
 or of convergence of the actual CC spectrum.
 
-## Open items
+## Development crosslinks and future refinements
 
-Coordinator publication before computation. Verify the explicit model matrix;
-prove fixed-J norm convergence with error; compute a bounded Galerkin
-approximation; prove a norm upper bound and finite-to-limit spectral error.
-Stop after two consecutive rounds without progress, preserving every route.
+The exact prediction was published before computation. The finite model
+matrix and actual model solve passed independent replay. Fixed-J errors,
+the full operator-norm limit and an explicit computable vanishing spectral
+error are proved in the linked follow-on files. Certified decimal evaluation,
+an elementary/practical rate, and an optional classical symbol identification
+remain OPEN as future refinements. S2 stopped after five productive rounds
+at coordinator instruction, without any certificate numerical solve.
 
 ## History
 
@@ -175,15 +181,15 @@ is not asserted to be the infinite norm.
 
 S2-fixed-trial-limit.md proves fixed-J form/eigenvalue convergence with
 explicit errors and has supplementary distinct-review PASS. The later
-S2-qualitative-limit.md proves a candidate full common-parity limit, by
+S2-qualitative-limit.md proves the full common-parity limit, by
 core density and compact-positive-form variational arguments; its proof
-was sent for separate review. S2-finite-certificate.md then gives candidate
+passed separate distinct review. S2-finite-certificate.md then gives
 explicit finite L_N,U_N bracketing both the actual finite eigenvalue and
-the model norm, with U_N−L_N->0. That stronger proof is also under separate
+the model norm, with U_N−L_N->0. That stronger proof passed its own distinct
 review and is not attributed to the earlier checker approval.
 
-The OPEN table above records the original preregistration boundary. The
-supporting theorem files carry their current part-by-part statuses. The
+The registered formula is unchanged. The supporting theorem files carry
+their current part-by-part statuses and independent review records. The
 certified numerical norm value, a practical elementary convergence rate,
 and any classical Toeplitz-plus-Hankel/Wiener–Hopf symbol identification
 remain OPEN. No final S4 fit has been read by this worker.

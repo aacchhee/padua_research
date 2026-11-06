@@ -35,7 +35,7 @@ The explicit retained bounds are \(\min(K_N^{-1},1/3)\leq1-\eta_N\leq\min(1,1280
 \]
 Then \(\lambda_{\max}(G_{N,N-1})\to\Lambda_{\rm edge}\) through all integers N, with \(1\leq\Lambda_{\rm edge}\leq3/2\).”
 
-Dependencies: [exact model](theory/S2-endpoint-model.md), [fixed-trial bound](theory/S2-fixed-trial-limit.md), [qualitative convergence](theory/S2-qualitative-limit.md), [check](independent-checks-S2-limit.md). The finite J512 value 1.0044369188646673 is a measured proxy, not a certified decimal evaluation of this exact supremum. The separate [finite-certificate development](theory/S2-finite-certificate.md) proposes computable vanishing brackets; use that additional quantitative sentence only after its independent check is completed.
+Dependencies: [exact model](theory/S2-endpoint-model.md), [fixed-trial bound](theory/S2-fixed-trial-limit.md), [qualitative convergence](theory/S2-qualitative-limit.md), [check](independent-checks-S2-limit.md). The finite J512 value 1.0044369188646673 is a measured proxy, not a certified decimal evaluation of this exact supremum. The separately proved [finite certificates](theory/S2-finite-certificate.md) give explicit finite matrix quantities L_N,U_N bracketing both the finite upper eigenvalue and Lambda_edge, with |lambda_max−Lambda_edge|<=U_N−L_N->0. [Independent certificate check](independent-checks-S2-certificate.md) accepts the exact construction. No such finite certificate was numerically solved, and no elementary or practical convergence rate is asserted.
 
 ## Signed Padua logarithmic limits
 
