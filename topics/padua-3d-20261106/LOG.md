@@ -457,3 +457,24 @@ their corresponding runs, with publication and execution timing distinguished.
   No final IDs, reservation or shared-registry application is made. Following
   the output commit, handoff06 closes and handoff07 carries the focused
   response02 review plus substantive restarted-work audit. Only AC merges.
+
+## 2026-11-06 — Claude, claude-opus-5-5 xhigh — audit 03 (handoff 07)
+
+- Role: independent auditor of Codex development, third round. Rules read at
+  `54d554a13e135dc99a46c38728c9a2d74897a14c`, unchanged since `7afa6a5`; audited
+  candidate `696bca5fe8842b8b99ec298381c948206be79548`; main `f70a260`.
+- [Audit 03](audit-03.md): six Opus 5.5 xhigh subagent scope reports in [audit-03/](audit-03/),
+  audit code in [audit-03/code/](audit-03/code/), receipts in [audit-03/receipts.txt](audit-03/receipts.txt).
+  Full current `state/IDEAS.md` read. Primary sources newly read: Betke–Henk, Chkifa 2015,
+  Kolomoitsev–Lomako Theorem 4.1.
+- Outcome: no BLOCKING; every claimed status accepted. This includes the computer-assisted
+  complete n=2 coset classification (confirmed by a census using a different method) and all
+  nine T8 M=N witnesses (re-certified with fresh primes up to N=455).
+- Six MAJOR findings: E1 T10.1 census incomplete; E2 T10 extraction kill mis-stated;
+  E3 T9 finite complement without measurement; E4 literature-dependency label convention
+  (AC decides); E5 gate predecessors (LIT-391); E6 records for killed rules and candidates.
+  Stage **WORK**.
+- Third-round auditor MINOR fixes go in a separate commit, listed in [audit-03-fixes.md](audit-03-fixes.md).
+  Pinned prose is corrected by companion note only.
+- LOG correction (not an edit of history): the model-attribution withdrawal cited at the
+  2026-11-06 Part A entry ("deviations-02") is in [response-deviations-01.md](response-deviations-01.md), m11.
