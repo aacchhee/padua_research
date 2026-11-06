@@ -33,7 +33,7 @@ completed retrospectively. Existing cheapest-test text is retained; this
 repair supplies no evidence that a separate kill criterion was written
 before testing and claims no preregistration.
 
-## IDEA?nn-mop-cond-codex-C1-01 — diagonal invariant lower bound
+## IDEA-590 — diagonal invariant lower bound
 
 Aliases: frozen gauge; differentiable gauge section; invariant b field;
 terminal beta sensitivity; gauge-infimum screen.
@@ -82,7 +82,7 @@ terminal beta sensitivity; gauge-infimum screen.
   and sharp Hahn all-N rates remained open; the dated addendum below
   updates only the b-dominant benchmark gauge infima. No literature novelty asserted.
 
-## IDEA?nn-mop-cond-codex-C1-02 — scalar/control and constrained derivatives
+## IDEA-591 — scalar/control and constrained derivatives
 
 Aliases: scalar Jacobi control; orthonormal square-root beta; natural
 spacing; logarithmic weights; weighted median fixed-mass dual norm.
@@ -122,7 +122,7 @@ spacing; logarithmic weights; weighted median fixed-mass dual norm.
   growth. Symmetric first-weight Hahn alpha is identically zero; use the
   prescribed absolute scale one, with that exception explicit.
 
-## IDEA?nn-mop-cond-codex-C1-03 — suppressing omitted fields
+## IDEA-592 — suppressing omitted fields
 
 Aliases: degree-geometric scaling; hidden structural shift; arbitrary
 normalization; entrywise scaling cancellation.
@@ -195,3 +195,9 @@ coefficient differentiation, the slow finite-grid control, or norm balancing.
 No external polynomial growth bound is imported into these benchmark results.
 
 2026-11-06 audit-02 addendum: [response-gauge-infimum.md](theory/response-gauge-infimum.md) proves finite positive attainment of the exact b-field lower for both b-dominant benchmarks, for all N>=2 in all six stated input models. The generic non-dominant optimizer problem and sharp full-map Hahn rate remain OPEN.
+
+## Final ID aliases (2026-11-06)
+
+- `IDEA?nn-mop-cond-codex-C1-01` → `IDEA-590`.
+- `IDEA?nn-mop-cond-codex-C1-02` → `IDEA-591`.
+- `IDEA?nn-mop-cond-codex-C1-03` → `IDEA-592`.

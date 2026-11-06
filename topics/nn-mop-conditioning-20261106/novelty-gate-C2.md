@@ -41,7 +41,7 @@ out a lone inverse-minimum-divisor proportionality law, not a full Hermite
 interpolation estimate. Finite-support rank and finite-only Hahn normality
 remain binding. PD-N100 concerns the literal transfer dictionary only.
 
-## IDEA?nn-mop-cond-codex-C2-01 — full binomial Hermite sensitivity bound
+## IDEA-593 — full binomial Hermite sensitivity bound
 
 Aliases: all-degree binomial transform; two-point Hermite dual; matching
 Krawtchouk upper rate; node-derivative transfer.
@@ -70,7 +70,7 @@ Krawtchouk upper rate; node-derivative transfer.
   cannot establish the all-N inequality. Proof remains the acceptance test.
 - Disposition at registration: retained bounded attempt; outcome in C2.md.
 
-## IDEA?nn-mop-cond-codex-C2-02 — parameter-dependent terminal lower base
+## IDEA-594 — parameter-dependent terminal lower base
 
 Aliases: general binomial parity jets; variable-separation rho lower;
 p2=1/2 subfamily.
@@ -97,7 +97,7 @@ p2=1/2 subfamily.
   shifts; an all-N proof is still required for any parameter extension.
 - Disposition at registration: retained; full two-parameter scope OPEN.
 
-## IDEA?nn-mop-cond-codex-C2-03 — Hahn terminal dual lower route
+## IDEA-595 — Hahn terminal dual lower route
 
 Aliases: beta-binomial terminal annihilator; rational weight-ratio dual;
 Hahn all-N normality prerequisite.
@@ -124,7 +124,7 @@ Hahn all-N normality prerequisite.
   agreement as all-N normality or a rate theorem.
 - Disposition at registration: retained bounded attempt, target OPEN.
 
-## C2-03 round 3 subroute — positive balanced Hahn terminal row
+## C2-03 round 3 subroute (IDEA-595; result PD-T513) — positive balanced Hahn terminal row
 
 Aliases: alternating half-grid dual; positive finite-difference terminal
 values; polynomial comparison with an integer coefficient sum.
@@ -175,9 +175,9 @@ remaining stronger inequalities in the upper-search record and ledger.
 
 ## 2026-11-06 response addendum — candidate homes and namespace map
 
-The three existing failed subroutes now have complete provisional
+The three existing failed subroutes now have complete retained
 IDEA-template records in [candidates-response-C2.md](candidates-response-C2.md):
-`IDEA?nn-mop-cond-codex-C2-03-r4`, `-r5` and `-r6`, all retained under
+`IDEA-596`, `IDEA-597` and `IDEA-598`, all retained under
 parent C2-03. That record includes the response reading coverage,
 literature baselines, exact obstructions, variant verdicts, separation and
 kill criteria, discriminability, outcomes and candidate-to-result mapping.
@@ -194,3 +194,13 @@ Only their attempted estimates are REJECTED: failed. Parent C2-03 and the
 full-map Hahn upper remain retained/OPEN at their unresolved scope.
 These are records of audited mathematics, not new mechanisms or broader
 negative claims. No final IDs or shared registries are changed here.
+
+## Final ID aliases (2026-11-06)
+
+- `IDEA?nn-mop-cond-codex-C2-01` → `IDEA-593`.
+- `IDEA?nn-mop-cond-codex-C2-02` → `IDEA-594`.
+- `IDEA?nn-mop-cond-codex-C2-03` → `IDEA-595`.
+- `C2-03 round 3` → `PD-T513`.
+- `IDEA?nn-mop-cond-codex-C2-03-r4` → `IDEA-596`.
+
+Additional historical aliases retained: `C2-03 round 3 terminal-row subroute`.

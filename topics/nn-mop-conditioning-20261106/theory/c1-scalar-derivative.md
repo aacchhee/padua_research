@@ -1,4 +1,4 @@
-# PD-T?nn-mop-cond-codex-C1-02 — scalar and fixed-mass derivative controls
+# PD-T503 — scalar and fixed-mass derivative controls
 
 ID kind: PD-T. Aliases: scalar Jacobi control; polynomial functional
 derivative; weighted-median mass constraint; log-weight equivalence.
@@ -108,3 +108,7 @@ algorithm follows from a condition number.
 
 2026-11-06, Codex gpt-6.1-sol xhigh; source/rules
 `b4a04981d42c7cd872957facf5e3995e4096ca67`.
+
+## Final ID aliases (2026-11-06)
+
+- `PD-T?nn-mop-cond-codex-C1-02` → `PD-T503`.

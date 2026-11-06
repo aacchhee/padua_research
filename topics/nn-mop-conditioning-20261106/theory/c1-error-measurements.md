@@ -1,4 +1,4 @@
-# PD-T?nn-mop-cond-codex-C1-06 — source error against matrix sensitivity bounds
+# PD-T507 — source error against matrix sensitivity bounds
 
 ID kind: PD-T. Aliases: first-order source-error diagnostic; authenticated
 monic spectral comparison; integer versus normalized node boxes.
@@ -91,3 +91,7 @@ has no role in these final numbers.
 2026-11-06, Codex gpt-6.1-sol xhigh, rules/input snapshot
 `b4a04981d42c7cd872957facf5e3995e4096ca67`. Round3, after C4 supplied
 the final bit-preserving rerun; no new NN derivative sweep or Git action.
+
+## Final ID aliases (2026-11-06)
+
+- `PD-T?nn-mop-cond-codex-C1-06` → `PD-T507`.

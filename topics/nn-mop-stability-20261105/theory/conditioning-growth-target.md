@@ -2,7 +2,7 @@
 
 ID kind: PD-T. Aliases: D1 sharp growth-law target; useful matching rate.
 Split from: none; durable home of the original D1 target.
-Split into: PD-T?nn-mop-cond-codex-C2-hard-01, the solved exact benchmark
+Split into: PD-T509, the solved exact benchmark
 Krawtchouk exponential-rate conjunct in
 [the sharp-rate theorem](../../nn-mop-conditioning-20261106/theory/c2-sharp-upper.md).
 The remaining conjuncts stay in this PARTIAL parent. The local derivative,
@@ -28,7 +28,7 @@ field-sup relative norms. Full mixed normality is required. Krawtchouk
 normality is proved for all N by PD-T433. For the exact Hahn benchmark,
 all-N normality (every N>=2, all mixed indices through degree N) is proved
 by the separate analytic theorem
-[PD-T?nn-mop-cond-codex-C2-02](../../nn-mop-conditioning-20261106/theory/c2-hahn-normality.md),
+[PD-T511](../../nn-mop-conditioning-20261106/theory/c2-hahn-normality.md),
 accepted in [audit-01](../../nn-mop-conditioning-20261106/audit-01.md).
 PD-T436 remains the original finite N4–64 computer-assisted certificate;
 it is historical finite evidence, not the current limit of Hahn normality.
@@ -40,7 +40,7 @@ and [audit-02](../../nn-mop-conditioning-20261106/audit-02.md), NOTE-1.
 
 | Direct target part | Status | Split-off result / remaining obligation |
 |---|---|---|
-| Exact benchmark Krawtchouk: determine liminf and limsup of kappa_N^(1/N), their equality and finite value | PROVED | PD-T?nn-mop-cond-codex-C2-hard-01, [sharp-rate theorem](../../nn-mop-conditioning-20261106/theory/c2-sharp-upper.md), together with PD-T437: both limits equal 5+2sqrt(6) |
+| Exact benchmark Krawtchouk: determine liminf and limsup of kappa_N^(1/N), their equality and finite value | PROVED | PD-T509, [sharp-rate theorem](../../nn-mop-conditioning-20261106/theory/c2-sharp-upper.md), together with PD-T437: both limits equal 5+2sqrt(6) |
 | Krawtchouk: determine the required subexponential factors and useful sharp constants | OPEN | The current lower polynomial factor and loose upper 3,000,000 N^13 do not determine a matching prefactor or sharp polynomial correction |
 | Krawtchouk: an informative finite-perturbation radius and useful finite-error digit allowance | OPEN | Local first-order sensitivity does not supply finite-radius remainder control |
 | Exact benchmark Hahn: determine full-map liminf and limsup of kappa_N^(1/N), equality and finite exact value | OPEN | The terminal-row rate and full-map lower liminf at rho_H do not supply a matching full-map upper or equality |
@@ -55,7 +55,7 @@ No candidate is rejected here.
 ## Dependencies, evidence and scope
 
 PD-T286/288/289 define the exact map; PD-T290 fixes the benchmarks and
-PD-T432 the induced derivative metric. PD-T?nn-mop-cond-codex-C2-hard-01
+PD-T432 the induced derivative metric. PD-T509
 is the split-off solved rate conjunct, using PD-T437's matching lower bound.
 The local derivative, coarse upper bound, lower/proximity proofs, finite
 Hahn certificate and measured tables retain their own statements and
@@ -145,3 +145,8 @@ mechanism leads remain open as described above.
 Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
 
 - `PD-T?nn-mop-stability-codex-D1-target` → `PD-T448`.
+
+## Final ID aliases (2026-11-06)
+
+- `PD-T?nn-mop-cond-codex-C2-hard-01` → `PD-T509`.
+- `PD-T?nn-mop-cond-codex-C2-02` → `PD-T511`.

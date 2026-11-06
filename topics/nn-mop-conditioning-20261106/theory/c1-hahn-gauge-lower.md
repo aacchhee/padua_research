@@ -1,4 +1,4 @@
-# PD-T?nn-mop-cond-codex-C1-07 — all-N Hahn lower survives diagonal gauges
+# PD-T508 — all-N Hahn lower survives diagonal gauges
 
 ID kind: PD-T. Aliases: Hahn invariant diagonal lower; base-two gauge
 corollary; fixed-mass terminal witness; algebraic terminal-row gauge lower.
@@ -56,7 +56,7 @@ input perturbations rather than perturbations confined to Hahn parameters.
 
 ## Dependencies and proof
 
-The separate written theorem `PD-T?nn-mop-cond-codex-C2-03` in
+The separate written theorem `PD-T512` in
 `c2-hahn-lower.md`, using the all-N normality result C2-02, constructs a
 mass-zero relative-weight perturbation of the second measure, with no
 node change, at nu=(M-1,1). Its terminal b2 response divided by the
@@ -121,3 +121,8 @@ base-two bound and its provenance; no other C1 file, numerical output,
 shared record or Git state was changed in this continuation.
 
 2026-11-06 audit-02 addendum: [response-gauge-infimum.md](response-gauge-infimum.md) proves finite positive attainment of the exact b-field lower for both b-dominant benchmarks, for all N>=2 in all six stated input models. The generic non-dominant optimizer problem remains OPEN.
+
+## Final ID aliases (2026-11-06)
+
+- `PD-T?nn-mop-cond-codex-C1-07` → `PD-T508`.
+- `PD-T?nn-mop-cond-codex-C2-03` → `PD-T512`.

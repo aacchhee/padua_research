@@ -1,4 +1,4 @@
-# PD-N?nn-mop-cond-codex-response-C2-positivity — nonterminal Hahn differences need not be positive
+# PD-N182 — nonterminal Hahn differences need not be positive
 
 ID kind: PD-N.
 Aliases: C2-03 round 5; unchanged arbitrary-index positivity extension;
@@ -49,7 +49,7 @@ Overall status: PROVED.
 | Failure of universal nonterminal positive differences | PROVED | Exact displayed counterexample |
 
 Candidate / claim disposition: REJECTED: failed for
-[IDEA?nn-mop-cond-codex-C2-03-r5](../candidates-response-C2.md#ideann-mop-cond-codex-c2-03-r5--unchanged-positive-differences-below-terminal-degree).
+[IDEA-597](../candidates-response-C2.md#ideann-mop-cond-codex-c2-03-r5--unchanged-positive-differences-below-terminal-degree).
 Rejection reason: failed unchanged positivity extension; its universal
 sign premise is refuted at the displayed parameters.
 
@@ -63,7 +63,7 @@ M=3,t=1,nu=(1,0),k=1. No assertion that every nonterminal index fails.
 
 ## Depends on
 
-- [PD-T?nn-mop-cond-codex-C2-02](c2-hahn-normality.md): row parameters and
+- [PD-T511](c2-hahn-normality.md): row parameters and
   exact family conventions, solely to identify the attempted mechanism.
 - [Upper-search attempt](c2-hahn-upper-search.md), equation (2), for the
   role of U in that mechanism. The displayed arithmetic independently
@@ -128,3 +128,9 @@ upper-search attempt remains OPEN. No revised estimate is proposed here.
 the already audited round-5 counterexample without changing its statement,
 proof or rejected scope, in response to MAJOR-3. The former location is
 retained as attempt history and links here. Provisional ID only.
+
+## Final ID aliases (2026-11-06)
+
+- `PD-N?nn-mop-cond-codex-response-C2-positivity` → `PD-N182`.
+- `IDEA?nn-mop-cond-codex-C2-03-r5` → `IDEA-597`.
+- `PD-T?nn-mop-cond-codex-C2-02` → `PD-T511`.

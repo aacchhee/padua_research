@@ -1,4 +1,4 @@
-# PD-T?nn-mop-cond-codex-C1-01 — diagonal gauges retain diagonal sensitivity
+# PD-T502 — diagonal gauges retain diagonal sensitivity
 
 ID kind: PD-T. Aliases: invariant b fields; frozen gauge; smooth gauge
 section; fieldwise gauge infimum; terminal step-line lower bound.
@@ -210,3 +210,7 @@ standalone gauge algebra or infer an asymptotic theorem from finite fits.
 and quantified consequence of the retained terminal witness.
 
 2026-11-06 audit-02 addendum: [response-gauge-infimum.md](response-gauge-infimum.md) proves finite positive attainment of the exact b-field lower for both b-dominant benchmarks, for all N>=2 in all six stated input models. The generic non-dominant optimizer problem remains OPEN.
+
+## Final ID aliases (2026-11-06)
+
+- `PD-T?nn-mop-cond-codex-C1-01` → `PD-T502`.

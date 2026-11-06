@@ -1,4 +1,4 @@
-# PD-T?nn-mop-cond-codex-C2-01 — parameter-dependent Krawtchouk lower base
+# PD-T510 — parameter-dependent Krawtchouk lower base
 
 ID kind: PD-T.
 Aliases: two-parameter terminal parity bound; binomial Hermite response sum;
@@ -280,3 +280,7 @@ label is corrected to a supporting-dependency relation (MINOR-6).
 This general-pair lower does not settle the full matching-rate target;
 the benchmark rate conjunct is solved by the separate sharp-upper result
 with PD-T437. Statement, proof and PROVED status remain unchanged.
+
+## Final ID aliases (2026-11-06)
+
+- `PD-T?nn-mop-cond-codex-C2-01` → `PD-T510`.

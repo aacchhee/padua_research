@@ -1,4 +1,4 @@
-# PD-N?nn-mop-cond-codex-C2-01 — separate terminal maxima lose the Hahn rate
+# PD-N181 — separate terminal maxima lose the Hahn rate
 
 ID kind: PD-N. Aliases: product-of-maxima upper obstruction;
 Hahn center/endpoint mismatch. Split from: none. Split into: none.
@@ -37,7 +37,7 @@ Changing to normalized weights leaves this envelope unchanged because
 the dual scales inversely with that normalization.
 
 Overall status: PROVED (scoped failed-route lemma).
-Candidate: [IDEA?nn-mop-cond-codex-C2-03-r4](../candidates-response-C2.md#ideann-mop-cond-codex-c2-03-r4--separate-global-maxima),
+Candidate: [IDEA-596](../candidates-response-C2.md#ideann-mop-cond-codex-c2-03-r4--separate-global-maxima),
 a retained subform of parent C2-03.
 Candidate disposition: REJECTED: failed (global-maxima decoupling); retain
 pointwise correlation and the full sharp-Hahn target. Closest entries:
@@ -136,3 +136,8 @@ gate in `../novelty-gate-C2.md`. No Git/shared registry mutation.
 2026-11-06 response, Codex gpt-6.1-sol high, rules/source `3d5b29d`:
 added the explicit round-4 candidate ID/link for MAJOR-3. Statement,
 proof, PROVED negative status and rejected scope are unchanged.
+
+## Final ID aliases (2026-11-06)
+
+- `PD-N?nn-mop-cond-codex-C2-01` → `PD-N181`.
+- `IDEA?nn-mop-cond-codex-C2-03-r4` → `IDEA-596`.

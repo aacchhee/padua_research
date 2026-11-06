@@ -1,4 +1,4 @@
-# PD-T?nn-mop-cond-codex-C2-03 — all-N Hahn exponential lower bound
+# PD-T512 — all-N Hahn exponential lower bound
 
 ID kind: PD-T. Aliases: Hahn terminal one-cross-step annihilator; base-two
 Hahn lower; relative signed-binomial direction with fixed mass.
@@ -43,7 +43,7 @@ Overall status: PROVED (written analytic proof).
 | Fixed-mass and componentwise-node corollaries | PROVED | Same admissible direction |
 
 Candidate disposition: retained weaker quantitative family variant of
-IDEA?nn-mop-cond-codex-C2-03 and IDEA-534. No historical novelty claim.
+IDEA-595 and IDEA-534. No historical novelty claim.
 The full sharp Hahn rate/base remains OPEN, not PARTIAL from this lemma.
 
 ## Depends on
@@ -176,3 +176,8 @@ The [parent classification proposal](../classification-proposal.md) separates
 the proved benchmark Krawtchouk rate conjunct from the remaining OPEN
 conjuncts; this Hahn lower is not one of the resolved target cases.
 The theorem, proof and PROVED status are unchanged.
+
+## Final ID aliases (2026-11-06)
+
+- `PD-T?nn-mop-cond-codex-C2-03` → `PD-T512`.
+- `IDEA?nn-mop-cond-codex-C2-03` → `IDEA-595`.

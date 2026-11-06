@@ -1,4 +1,4 @@
-# PD-T?nn-mop-cond-codex-C1-03 — monic matrix spectral sensitivity bounds
+# PD-T504 — monic matrix spectral sensitivity bounds
 
 ID kind: PD-T. Aliases: paper Hessenberg metric; box-to-spectral support;
 integer-node affine conversion; diagonal witness in a matrix norm.
@@ -132,3 +132,7 @@ optimization and outward numerical norm enclosures remain open.
 
 2026-11-06, Codex gpt-6.1-sol xhigh, rules/input snapshot
 `b4a04981d42c7cd872957facf5e3995e4096ca67`.
+
+## Final ID aliases (2026-11-06)
+
+- `PD-T?nn-mop-cond-codex-C1-03` → `PD-T504`.

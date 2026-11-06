@@ -1,4 +1,4 @@
-# PD-N?nn-mop-cond-codex-response-C2-node-transfer — unweighted grid differentiation has exponential loss
+# PD-N183 — unweighted grid differentiation has exponential loss
 
 ID kind: PD-N.
 Aliases: C2-03 round 6; common-node unweighted transfer failure;
@@ -47,7 +47,7 @@ Overall status: PROVED.
 | Exponential differentiation norm lower for every M>=2 and absence of a uniform polynomial bound | PROVED | Cardinal-product proof below |
 
 Candidate / claim disposition: REJECTED: failed for
-[IDEA?nn-mop-cond-codex-C2-03-r6](../candidates-response-C2.md#ideann-mop-cond-codex-c2-03-r6--polynomial-unweighted-grid-differentiation).
+[IDEA-598](../candidates-response-C2.md#ideann-mop-cond-codex-c2-03-r6--polynomial-unweighted-grid-differentiation).
 Rejection reason: failed polynomial-cost universal unweighted transfer;
 the stated polynomial norm inequality is refuted by the all-M lower.
 
@@ -136,3 +136,8 @@ record supplies no replacement upper bound.
 the already audited round-6 norm lower and scoped route failure, with
 unchanged mathematical scope, in response to MAJOR-3. The former location
 is retained as attempt history and links here. Provisional ID only.
+
+## Final ID aliases (2026-11-06)
+
+- `PD-N?nn-mop-cond-codex-response-C2-node-transfer` → `PD-N183`.
+- `IDEA?nn-mop-cond-codex-C2-03-r6` → `IDEA-598`.

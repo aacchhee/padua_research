@@ -1,4 +1,4 @@
-# PD-T?nn-mop-cond-codex-C3-02 — forward weak-stability target
+# PD-T515 — forward weak-stability target
 
 ID kind: PD-T. This is a distinct OPEN forward-error target related to
 PD-T449, whose strict backward and correction/data targets retain their
@@ -160,3 +160,7 @@ Audit-01 MINOR-8: the forward target now has its own provisional ID. Its
 inequality and OPEN status are unchanged. PD-T449 retains its original
 strict raw-array and correction/data backward targets; shared algorithmic
 dependencies do not make the forward statement an equivalent reformulation.
+
+## Final ID aliases (2026-11-06)
+
+- `PD-T?nn-mop-cond-codex-C3-02` → `PD-T515`.

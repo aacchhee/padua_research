@@ -1,4 +1,4 @@
-# PD-T?nn-mop-cond-codex-C4-01 — external/native matrix and field measurements
+# PD-T516 — external/native matrix and field measurements
 
 ID kind: PD-T. Distinct finite comparison claim, status MEASURED;
 no new algorithmic theorem or negative-result ID.
@@ -56,3 +56,7 @@ The finite non-Advanpix archive-family scope, including original paperN5–30, i
 ## History
 
 2026-11-06: Codex technical development, assigned gpt-6.1-sol medium; serving metadata not independently exposed. Rules/source b4a04981d42c7cd872957facf5e3995e4096ca67. Round1–2 blocked source preparation; AC supply restored source/runtime in round3; round4 exploratory transport failed bit check; round5 corrected transport produced final measurements. No third-party source or Git mutation by this worker.
+
+## Final ID aliases (2026-11-06)
+
+- `PD-T?nn-mop-cond-codex-C4-01` → `PD-T516`.

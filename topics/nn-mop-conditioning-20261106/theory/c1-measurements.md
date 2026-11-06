@@ -1,4 +1,4 @@
-# PD-T?nn-mop-cond-codex-C1-04 — full C1 scalar and gauge screen
+# PD-T505 — full C1 scalar and gauge screen
 
 ID kind: PD-T. Aliases: M1 bounded gauge-infimum fits; scalar Jacobi
 controls; finite Hahn diagonal lower; input-model variants.
@@ -159,3 +159,7 @@ regenerated against C4's bit-preserving tables and are recorded in
 `b4a04981d42c7cd872957facf5e3995e4096ca67`. No new full NN sweeps;
 the independent terminal row is evaluated through a moment primal/adjoint
 solve, and base field scales through scalar-arithmetic layer recursion.
+
+## Final ID aliases (2026-11-06)
+
+- `PD-T?nn-mop-cond-codex-C1-04` → `PD-T505`.

@@ -1,4 +1,4 @@
-# PD-T?nn-mop-cond-codex-C2-04 — Hahn terminal parity-row rate
+# PD-T513 — Hahn terminal parity-row rate
 
 ID kind: PD-T. Aliases: positive half-grid Hahn dual; balanced terminal
 parity response; algebraic Hahn lower base; finite-type coefficient bound.
@@ -321,3 +321,9 @@ the proved benchmark Krawtchouk rate conjunct from the remaining OPEN
 conjuncts. An exact Hahn row rate and a full-map lower do not settle a
 full-map matching-rate conjunct. Statement, proof and PROVED status remain
 unchanged.
+
+## Final ID aliases (2026-11-06)
+
+- `PD-T?nn-mop-cond-codex-C2-04` → `PD-T513`.
+
+Additional historical aliases retained: `C2-03 round 3`, `historical C2-04 result ledger alias`.

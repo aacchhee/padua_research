@@ -1,6 +1,6 @@
-# PD-T?nn-mop-cond-response-gauge — finite positive gauges attain the b-field lower
+# PD-T517 — finite positive gauges attain the b-field lower
 
-Preferred qualified provisional alias: `PD-T?nn-mop-cond-codex-response-gauge-01`; the heading ID is retained as a historical alias pending final allocation.
+Final registration preserves the original agentless and preferred qualified provisional aliases in the alias table below.
 ID kind: PD-T. Aliases: degree-one anchored taper; finite gauge-infimum
 attainment; b-dominance optimizer; fixed/smooth gauge equality.
 Split from: none. Split into: none.
@@ -370,3 +370,8 @@ The predecessor's statement that exact finite-N optimizers remain open is preser
 history, not silently rewritten. The new theorem closes the stated
 benchmark cases and the general b-dominant case only. Completed independent
 executions and proof reconstruction are recorded in [response-independent.md](../response-independent.md).
+
+## Final ID aliases (2026-11-06)
+
+- `PD-T?nn-mop-cond-response-gauge` → `PD-T517`.
+- `PD-T?nn-mop-cond-codex-response-gauge-01` → `PD-T517`.

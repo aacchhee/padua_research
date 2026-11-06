@@ -1,4 +1,4 @@
-# PD-T?nn-mop-cond-codex-31 — native full integer-grid screen
+# PD-T514 — native full integer-grid screen
 
 ID kind: PD-T. Aliases: C3 A-LU comparison; expanded C4 excess screen.
 Split from / into: none. Overall status: **MEASURED**.
@@ -117,7 +117,7 @@ temporary, regenerable and not committed; no archival delivery is claimed.
 
 ## Scope, open items and history
 
-The distinct forward weak-stability target PD-T?nn-mop-cond-codex-C3-02
+The distinct forward weak-stability target PD-T515
 remains OPEN in
 [c3-weak-stability-open.md](c3-weak-stability-open.md). Measurements do not
 supply its constant C_N, precision radius or remainder bound. M2/M4 and
@@ -128,3 +128,8 @@ normalization metric is substituted for monic NN fields.
 Code and primary run: Codex gpt-6.1-sol medium; mathematics and separate
 replay: Codex gpt-6.1-sol xhigh. The initial six-size pilot was superseded
 by the complete integer grid without changing the algorithm or thresholds.
+
+## Final ID aliases (2026-11-06)
+
+- `PD-T?nn-mop-cond-codex-31` → `PD-T514`.
+- `PD-T?nn-mop-cond-codex-C3-02` → `PD-T515`.

@@ -1,4 +1,4 @@
-# PD-T?nn-mop-cond-codex-C2-02 — all-N Hahn normality and subleading coefficients
+# PD-T511 — all-N Hahn normality and subleading coefficients
 
 ID kind: PD-T. Aliases: shifted-beta row basis; adjacent Cauchy kernel;
 Hahn integer/half-integer normality; exact b-field formula.
@@ -54,7 +54,7 @@ Overall status: PROVED (written proof).
 | Polynomial upper bound (3) | PROVED | Elementary coefficient estimate below |
 
 Candidate disposition: retained standard family-formula variant within
-IDEA?nn-mop-cond-codex-C2-03. This extends PD-T436's finite normality scope
+IDEA-595. This extends PD-T436's finite normality scope
 by an analytic proof; it does not edit or relabel that finite theorem.
 No historical-priority claim and no sharp conditioning-rate conclusion.
 
@@ -206,3 +206,8 @@ upper or the measured conditioning base near11.8. PD-T448 remains OPEN.
 `76ba4214b100c86a44941f5e9a662ce9ce48efb8`; coordinator topic pin
 `b4a04981d42c7cd872957facf5e3995e4096ca67`. Prospective gate C2-03.
 No predecessor edit, Git mutation, or shared registry write.
+
+## Final ID aliases (2026-11-06)
+
+- `PD-T?nn-mop-cond-codex-C2-02` → `PD-T511`.
+- `IDEA?nn-mop-cond-codex-C2-03` → `IDEA-595`.

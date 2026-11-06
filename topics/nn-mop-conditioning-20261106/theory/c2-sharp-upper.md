@@ -1,4 +1,4 @@
-# PD-T?nn-mop-cond-codex-C2-hard-01 — sharp Krawtchouk NN exponential rate
+# PD-T509 — sharp Krawtchouk NN exponential rate
 
 ID kind: PD-T. Aliases: full-triangle Bernstein–Hermite upper bound;
 two-contour sensitivity estimate; common-node logarithmic forcing.
@@ -359,3 +359,7 @@ is b4a04981d42c7cd872957facf5e3995e4096ca67. No Git or shared-file edits.
 The complete C2 documentary gate was read, as were the relevant full
 predecessor records and their proof dependencies. The theorem closes the
 stated fixed-pair case, without silently narrowing PD-T448's other cases.
+
+## Final ID aliases (2026-11-06)
+
+- `PD-T?nn-mop-cond-codex-C2-hard-01` → `PD-T509`.

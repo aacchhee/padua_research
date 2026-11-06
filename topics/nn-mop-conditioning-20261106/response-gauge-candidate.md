@@ -1,6 +1,6 @@
-# IDEA?nn-mop-cond-response-gauge — finite positive gauge attainment
+# IDEA-603 — finite positive gauge attainment
 
-Preferred qualified provisional alias: `IDEA?nn-mop-cond-codex-response-gauge-01`; the heading ID is retained as a historical alias pending final allocation.
+Final registration preserves the original agentless and preferred qualified provisional aliases in the alias table below.
 Aliases: degree-one anchored taper; b-dominance optimizer; finite gauge
 infimum; fixed/smooth gauge equality; variance dominance benchmark.
 
@@ -59,3 +59,8 @@ infimum; fixed/smooth gauge equality; variance dominance benchmark.
    variance/parity-tail test. It is retained with a proved finite reduction,
    completed exact checks and a distinct independent rerun/implementation.
    No full NN Jacobian sweep or floating rate fit was needed.
+
+## Final ID aliases (2026-11-06)
+
+- `IDEA?nn-mop-cond-response-gauge` → `IDEA-603`.
+- `IDEA?nn-mop-cond-codex-response-gauge-01` → `IDEA-603`.

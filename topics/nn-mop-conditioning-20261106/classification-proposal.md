@@ -69,3 +69,7 @@ This proposal changes a classification, not any accepted proof or measured
 payload. Audit-01 accepted the exact rate theorem. The classification and
 record application remain subject to the focused re-audit requested in
 handoff03; no readiness or merge approval is asserted here.
+
+## Application addendum — 2026-11-06
+
+Audit02 accepted this proposal. The predecessor record and shared registries now apply PARTIAL with solved child PD-T509, preserving the exact original statement and earlier OPEN rationale as dated history. The provisional child `PD-T?nn-mop-cond-codex-C2-hard-01` remains its alias. The D1 mechanism leads remain OPEN supporting questions outside the formal target statement. The proposal body above records its original pre-application state.

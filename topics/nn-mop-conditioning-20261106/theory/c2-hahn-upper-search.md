@@ -64,7 +64,7 @@ unchanged positive-difference extension is M=3,t=1,nu=(1,0):
 Thus Delta^k U(0)>0 is false below terminal degree, even at a balanced
 index. The terminal proof's positive sum cannot be carried over as
 written. The canonical scoped PROVED negative statement and candidate
-disposition are [PD-N?nn-mop-cond-codex-response-C2-positivity](response-c2-positivity-failure.md)
+disposition are [PD-N182](response-c2-positivity-failure.md)
 and [C2-03-r5](../candidates-response-C2.md).
 An upper could still bound the cancellations in (2), use a
 different coefficient representation, and prove uniformly over n,m,t
@@ -114,7 +114,7 @@ The actual terminal P and Q can have additional weighted correlation;
 larger than rho_H. Disposition: REJECTED: failed for the polynomial
 unweighted transfer; the weighted estimate for (4) remains OPEN.
 Canonical scoped PROVED negative statement:
-[PD-N?nn-mop-cond-codex-response-C2-node-transfer](response-c2-node-transfer-failure.md);
+[PD-N183](response-c2-node-transfer-failure.md);
 retained candidate: [C2-03-r6](../candidates-response-C2.md).
 
 ## Stop and remaining task
@@ -145,3 +145,8 @@ Gate: C2-03 rounds5--6. No predecessor/shared edits or Git mutations.
 explicit attempt label and candidate links added for MAJOR-3; the two
 already audited negatives receive standalone provisional PD-N homes.
 The formulas and unresolved estimates are unchanged.
+
+## Final ID aliases (2026-11-06)
+
+- `PD-N?nn-mop-cond-codex-response-C2-positivity` → `PD-N182`.
+- `PD-N?nn-mop-cond-codex-response-C2-node-transfer` → `PD-N183`.

@@ -1,4 +1,4 @@
-# PD-T?nn-mop-cond-codex-C1-05 — sharp NN rate survives diagonal gauge optimization
+# PD-T506 — sharp NN rate survives diagonal gauge optimization
 
 ID kind: PD-T. Aliases: gauge-infimum rate squeeze; fixed and smooth
 normalizations; intrinsic Krawtchouk base.
@@ -44,7 +44,7 @@ first-order identical to it for log weights. Therefore
 
     K_dep,N <= K_fix,N <= kappa_monic,mixed,N.
 
-The sharp upper theorem `PD-T?nn-mop-cond-codex-C2-hard-01` in
+The sharp upper theorem `PD-T509` in
 `c2-sharp-upper.md` proves
 
     kappa_monic,mixed,N <= 3,000,000 N^13 rho^(N-1).
@@ -70,3 +70,8 @@ theorem is supplied by this corollary.
 `b4a04981d42c7cd872957facf5e3995e4096ca67`. Added after the coordinator
 supplied the finalized full-NN sharp upper; preserves the earlier
 standalone lower result unchanged.
+
+## Final ID aliases (2026-11-06)
+
+- `PD-T?nn-mop-cond-codex-C1-05` → `PD-T506`.
+- `PD-T?nn-mop-cond-codex-C2-hard-01` → `PD-T509`.

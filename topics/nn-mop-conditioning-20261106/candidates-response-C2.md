@@ -3,7 +3,7 @@
 2026-11-06, Codex developer, gpt-6.1-sol high; rules and response source
 `3d5b29d`. These records instantiate `templates/IDEA.md` for already
 considered C2 rounds 4–6. Their parent remains
-`IDEA?nn-mop-cond-codex-C2-03`; the new suffixes distinguish subforms,
+`IDEA-595`; the new suffixes distinguish subforms,
 not new core mechanisms. No final IDs are assigned.
 
 ## Reading scope and timing
@@ -30,7 +30,9 @@ and [audit 01](audit-01.md), in response to MAJOR-3. Each field headed
 recorded intended test; this response does not independently establish its
 pre-run timing or retroactively assert preregistration.
 
-## IDEA?nn-mop-cond-codex-C2-03-r4 — separate global maxima
+<a id="ideann-mop-cond-codex-c2-03-r4"></a>
+
+## IDEA-596 — separate global maxima
 
 Aliases: C2-03 round 4; product-of-maxima envelope; Hahn center/endpoint
 mismatch; nodewise correlation loss.
@@ -78,12 +80,14 @@ mismatch; nodewise correlation loss.
 - Disposition reason: PROVED exponential loss in that envelope. Correlated
   bounds and the full Hahn matching upper remain OPEN.
 - Canonical theory / negative-result ID:
-  [PD-N?nn-mop-cond-codex-C2-01](theory/c2-hahn-upper-envelope.md), PROVED.
+  [PD-N181](theory/c2-hahn-upper-envelope.md), PROVED.
 - Topic / completed audit link / history: [attempt round 4](attempts/C2.md#round-4--full-hahn-upper-separate-global-maxima-bounded-route);
   [audit 01](audit-01.md), MAJOR-3 and accepted envelope mathematics.
   Full candidate record extracted on 2026-11-06 after that audit.
 
-## IDEA?nn-mop-cond-codex-C2-03-r5 — unchanged positive differences below terminal degree
+<a id="ideann-mop-cond-codex-c2-03-r5"></a>
+
+## IDEA-597 — unchanged positive differences below terminal degree
 
 Aliases: C2-03 round 5; arbitrary-index positivity extension; complementary
 factor U; unchanged positive-coefficient extension.
@@ -131,12 +135,14 @@ factor U; unchanged positive-coefficient extension.
 - Disposition reason: PROVED failure of that sign premise; the correlated
   arbitrary-index upper remains OPEN.
 - Canonical theory / negative-result ID:
-  [PD-N?nn-mop-cond-codex-response-C2-positivity](theory/response-c2-positivity-failure.md), PROVED.
+  [PD-N182](theory/response-c2-positivity-failure.md), PROVED.
 - Topic / completed audit link / history: [attempt round 5](attempts/C2.md#round-5--arbitrary-index-cauchy-inverse-empty-for-rate);
   [audit 01](audit-01.md), MAJOR-3. Extracted from the already audited
   upper-search counterexample on 2026-11-06; no new mathematical scope.
 
-## IDEA?nn-mop-cond-codex-C2-03-r6 — polynomial unweighted grid differentiation
+<a id="ideann-mop-cond-codex-c2-03-r6"></a>
+
+## IDEA-598 — polynomial unweighted grid differentiation
 
 Aliases: C2-03 round 6; common-node derivative transfer; equispaced
 grid-supnorm derivative bound; unweighted interpolation differentiation.
@@ -188,30 +194,52 @@ grid-supnorm derivative bound; unweighted interpolation differentiation.
 - Disposition reason: PROVED exponential operator lower; the weighted
   correlated common-node estimate and full-map Hahn upper remain OPEN.
 - Canonical theory / negative-result ID:
-  [PD-N?nn-mop-cond-codex-response-C2-node-transfer](theory/response-c2-node-transfer-failure.md), PROVED.
+  [PD-N183](theory/response-c2-node-transfer-failure.md), PROVED.
 - Topic / completed audit link / history: [attempt round 6](attempts/C2.md#round-6--common-node-derivative-transfer-empty-for-rate-stop);
   [audit 01](audit-01.md), MAJOR-3. Extracted from the already audited
   upper-search proof on 2026-11-06; no new mathematical scope.
 
-## Candidate-to-result mapping (namespace-qualified, provisional)
+## Candidate-to-result mapping (namespace-qualified, final)
 
 Local numeric suffixes are not a one-to-one candidate/result ID map.
-These rows preserve every existing alias; final allocation is deferred to
-PR preparation. The parent candidate and its retained subforms are not
+These rows preserve every existing alias under the published final allocation. The parent candidate and its retained subforms are not
 renumbered as new independent methods.
 
 | Candidate ID or preserved alias | Result ID(s) | Durable result / status and relationship |
 |---|---|---|
-| IDEA?nn-mop-cond-codex-C2-01 | PD-T?nn-mop-cond-codex-C2-hard-01 | [sharp upper](theory/c2-sharp-upper.md), PROVED benchmark full-map upper/rate; with PD-T437 solves the benchmark rate conjunct of PD-T448 |
-| IDEA?nn-mop-cond-codex-C2-02 | PD-T?nn-mop-cond-codex-C2-01 | [parameter lower](theory/c2-krawtchouk-parameter-lower.md), PROVED supporting lower; general-pair matching upper OPEN |
-| IDEA?nn-mop-cond-codex-C2-03 | PD-T?nn-mop-cond-codex-C2-02; PD-T?nn-mop-cond-codex-C2-03 | [normality](theory/c2-hahn-normality.md) and [base-two lower](theory/c2-hahn-lower.md), PROVED supporting results; no full Hahn case solved |
-| C2-03 round 3; historical C2-04 ledger alias | PD-T?nn-mop-cond-codex-C2-04 | [terminal row rate](theory/c2-hahn-terminal-rate.md), PROVED row-rate/full-map-liminf lower under parent C2-03; matching full-map rate OPEN |
-| IDEA?nn-mop-cond-codex-C2-03-r4 | PD-N?nn-mop-cond-codex-C2-01 | [envelope failure](theory/c2-hahn-upper-envelope.md), negative statement PROVED; candidate REJECTED: failed |
-| IDEA?nn-mop-cond-codex-C2-03-r5 | PD-N?nn-mop-cond-codex-response-C2-positivity | [positivity failure](theory/response-c2-positivity-failure.md), negative statement PROVED; candidate REJECTED: failed |
-| IDEA?nn-mop-cond-codex-C2-03-r6 | PD-N?nn-mop-cond-codex-response-C2-node-transfer | [node-transfer failure](theory/response-c2-node-transfer-failure.md), negative statement PROVED; candidate REJECTED: failed |
+| IDEA-593 | PD-T509 | [sharp upper](theory/c2-sharp-upper.md), PROVED benchmark full-map upper/rate; with PD-T437 solves the benchmark rate conjunct of PD-T448 |
+| IDEA-594 | PD-T510 | [parameter lower](theory/c2-krawtchouk-parameter-lower.md), PROVED supporting lower; general-pair matching upper OPEN |
+| IDEA-595 | PD-T511; PD-T512 | [normality](theory/c2-hahn-normality.md) and [base-two lower](theory/c2-hahn-lower.md), PROVED supporting results; no full Hahn case solved |
+| C2-03 round 3 (parent IDEA-595); historical C2-04 ledger alias | PD-T513 | [terminal row rate](theory/c2-hahn-terminal-rate.md), PROVED row-rate/full-map-liminf lower under parent C2-03; matching full-map rate OPEN |
+| IDEA-596 | PD-N181 | [envelope failure](theory/c2-hahn-upper-envelope.md), negative statement PROVED; candidate REJECTED: failed |
+| IDEA-597 | PD-N182 | [positivity failure](theory/response-c2-positivity-failure.md), negative statement PROVED; candidate REJECTED: failed |
+| IDEA-598 | PD-N183 | [node-transfer failure](theory/response-c2-node-transfer-failure.md), negative statement PROVED; candidate REJECTED: failed |
 
 The parent-target classification proposal is in
 [classification-proposal.md](classification-proposal.md); supporting Hahn
 and general-parameter lowers are dependencies, not resolved full target
-cases. The predecessor's registered OPEN display is historical and remains
-unchanged in this response, pending audited application at PR preparation.
+cases. The predecessor now records the audit02-accepted PARTIAL decomposition; its earlier OPEN rationale is preserved as dated history.
+
+## Final ID aliases (2026-11-06)
+
+- `IDEA?nn-mop-cond-codex-C2-03` → `IDEA-595`.
+- `IDEA?nn-mop-cond-codex-C2-03-r4` → `IDEA-596`.
+- `PD-N?nn-mop-cond-codex-C2-01` → `PD-N181`.
+- `IDEA?nn-mop-cond-codex-C2-03-r5` → `IDEA-597`.
+- `PD-N?nn-mop-cond-codex-response-C2-positivity` → `PD-N182`.
+- `IDEA?nn-mop-cond-codex-C2-03-r6` → `IDEA-598`.
+- `PD-N?nn-mop-cond-codex-response-C2-node-transfer` → `PD-N183`.
+- `IDEA?nn-mop-cond-codex-C2-01` → `IDEA-593`.
+- `PD-T?nn-mop-cond-codex-C2-hard-01` → `PD-T509`.
+- `IDEA?nn-mop-cond-codex-C2-02` → `IDEA-594`.
+- `PD-T?nn-mop-cond-codex-C2-01` → `PD-T510`.
+- `PD-T?nn-mop-cond-codex-C2-02` → `PD-T511`.
+- `PD-T?nn-mop-cond-codex-C2-03` → `PD-T512`.
+- `C2-03 round 3` → `PD-T513`.
+- `PD-T?nn-mop-cond-codex-C2-04` → `PD-T513`.
+
+<a id="ideann-mop-cond-codex-c2-03-r5--unchanged-positive-differences-below-terminal-degree"></a>
+
+<a id="ideann-mop-cond-codex-c2-03-r6--polynomial-unweighted-grid-differentiation"></a>
+
+<a id="ideann-mop-cond-codex-c2-03-r4--separate-global-maxima"></a>
