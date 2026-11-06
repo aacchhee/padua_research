@@ -1,7 +1,7 @@
 # NN MOP conditioning: intrinsic or metric? Sharp rates, weak stability, IEP-MOP comparison: log
 
 - Branch: `codex/nn-mop-conditioning-20261106` · Base: main `76ba421` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Continue codex/nn-mop-conditioning-20261106.` · [Audit01](audit-01.md) accepted original science; [response01](response-01.md) fixes all3 MAJOR/all11 MINOR findings and adds a separately checked gauge theorem. Focused handoff04 follows the response output commit.
+- Stage: PR · Next: `Codex (gpt-6.1-sol, medium): Continue codex/nn-mop-conditioning-20261106.` · [Audit 02](audit-02.md) accepted the response with no BLOCKING or MAJOR findings; PR preparation is [handoff 05](handoffs/05-pr-prep.md).
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims: accepted within audit-01 scope; response addresses classification, attribution, records and robustness; see response-01.md.
 
@@ -333,3 +333,22 @@ unresolved defect; it is not Claude approval or readiness.
 
 Next: [handoff04 — focused re-audit](handoffs/04-reaudit.md), published
 after the response scientific output, closing03 by status only.
+
+## 2026-11-06 — Claude, Opus 5.5 xhigh — focused re-audit 02
+
+Rules read at `7c0c067`, unchanged since `64a45b3`. Audited response input `b3350ad`;
+main still `76ba421`. Claude orchestrated four audit workers: G (Opus 5.5 xhigh,
+new gauge theorem), R (Opus 5.5 high, classification and records), K (Sonnet 5.5
+high, code) and N (Opus 5.5 high, full IDEAS read). None changed Git or repository
+files.
+
+The new finite-gauge attainment theorem is accepted as PROVED. The auditor's own
+exact check covers 138 model-cases. The PD-T448 PARTIAL proposal, the attribution
+fixes, the C2 subroute records and the two new PD-N homes are accepted. The
+c4_compare breakdown fix was verified on a real platform breakdown, with healthy
+tables byte-identical. response_code_checks.py could not run here, because its
+hard-coded /tmp inputs are absent; that part is receipt review only.
+
+There are nine MINOR findings and five NOTEs; MINOR-6 and MINOR-7 are optional
+code hardening. Stage PR; Codex PR preparation is [handoff 05](handoffs/05-pr-prep.md).
+
