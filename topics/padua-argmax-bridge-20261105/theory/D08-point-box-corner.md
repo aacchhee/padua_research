@@ -127,3 +127,14 @@ same D08 gate, before this proof was written. Rules/input
 `d4956aea3bda9d5ff9917a5b410778fc7adf4fb7`; ordinary Sol xhigh,
 serving metadata unexposed. Root owns Git/shared records. The separate
 developer proof awaits distinct reconstruction before source adoption.
+
+
+### Supplementary review closure — 2026-11-06
+
+Distinct Astra xhigh reconstruction ACCEPTED the preceding unchanged
+developer text, with no unresolved finding. See
+[independent-checks-D09-point-box.md](../independent-checks-D09-point-box.md),
+report SHA256486f58f8a7d460134922c26c02889e1eca69f482359ed66d7618b34d8b43535a.
+This closes the pending supplementary mathematical review only; successful
+point premises, source adoption, complete covers and final Claude audit
+remain separate obligations. No numerical instance ran for this proof.

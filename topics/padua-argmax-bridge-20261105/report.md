@@ -32,8 +32,8 @@ measurements, not a complete certifier or a new certified degree.
 The D08 common-Peano/signed-dual reduction proposes obtaining whole-box
 bounds from vertex values and an independent global norm. Its squared-phase
 actual-corner version needs only three certified losses to prove punctured
-origin-box descent. Developer proofs are written; distinct review and
-successful point premises are pending. No successful patch is claimed.
+origin-box descent. Distinct mathematical review accepts all three proofs;
+successful point premises and source adoption are pending. No successful patch is claimed.
 
 The following C13 discussion records the earlier500000 theorem at its
 original scope; D01–D06 sections below are dated campaign history.
