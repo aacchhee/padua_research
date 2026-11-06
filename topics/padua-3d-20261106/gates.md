@@ -80,3 +80,19 @@ residuals on every required monomial. The subsequent sharp 21-positive /
 
 Separate actual reruns and their precise acceptance scope are recorded in
 the independent-check files. Required Claude audit remains separate.
+
+## Handoff 04 prospective new-direction gates — 2026-11-06
+
+T7 and T8 read the complete prior IDEAS registry and current-main delta
+before their mechanisms. T8's starting dispositions were recorded first in
+[candidate retention](candidates-response-01.md).
+[T7 preregistration](preregistration-T7.md) separates subgroup enumeration
+from the continuous translation strata. [T8 preregistration](preregistration-T8.md)
+freezes the zero-phase full finite cyclic census, omitted-degree slice and
+three translated rules before execution. Each new tool must first pass
+the inherited T2/H39, 2-D Padua and invariant-coset controls.
+
+These references authorize only their written prospective scopes. Neither
+finite rank success nor a generic phase sample counts as D2 promising or
+an exhaustive continuous-phase result. New-direction outcomes are recorded
+below as their actual executions complete.

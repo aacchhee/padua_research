@@ -180,3 +180,30 @@ their bounded stops are finalized in [rounds](rounds.md).
 - New directions: T7 cosets without whole-coset reflection symmetry; T8 untested cyclic-orbit variants; T9 the log³ n gap. Budget 25 rounds each, restarted from zero, with the handoff-01 rules. Claude reads "same restarted budget" as 25 for T9 too (not T6's 8); AC may correct this.
 - Stage stays **WORK**. [Handoff 03](handoffs/03-response.md) is superseded by [handoff 04](handoffs/04-work.md), which carries the audit-01 response unchanged as Part A and adds T7–T9 as Part B.
 - Handoff 04 marks Claude's sketches as hypotheses, not results: the general-H short-relation lemma, the fold bound |X| ≥ |H|/8, and the octahedral lattice-packing obstruction to single-coset Padua-type cubature for n ≥ 110. Claude's two unrecorded exact checks of the 10-point example (unisolvence; a degree-2 equal-weight rule exists, no degree-3 rule) must be reproduced by the developer.
+
+## 2026-11-06 — Codex continuation of handoff 04
+
+- Role: developer/orchestrator. AC explicitly selected gpt-6-astra high in
+  this continuation. Rules read at full input SHA
+  `e5b64450fce42262dafc88ee357b72e5f203916b`; rules are unchanged from the
+  initial checkout. Assigned workers: Sol high for the audit response and
+  exact cyclic enumeration; Sol xhigh for T7/T9 mathematics. Two distinct
+  Astra high agents supply supplementary checks. Runtime model metadata
+  is not independently exposed. Required Claude audit remains separate.
+- The workspace initially contained only main `76ba421`. Shell Git fetch
+  failed because the configured proxy could not be reached. The GitHub
+  connector recovered the branch at its pinned SHA, including its commit
+  objects. The reconstructed working tree exactly matched upstream tree
+  `a5df446f5056134de86693335d14530f952e8cef`.
+- Refreshed main is `f70a260e5b5f9a01209dc8a05faabdcf8db1feeb` (PRs 31/32).
+  Its restored files, modes and line endings exactly matched upstream tree
+  `ef88e08806081410b5392f30b26fb3dca0473eb0`. Conflict-free merge
+  `120a19ee71baa8e7834b3b183798df2cf489c432` is published on this topic
+  branch with both original parents preserved. Main was not modified.
+- Each new-direction worker reads the full original IDEAS registry and the
+  complete current-main delta before new mechanisms; the gates record
+  the actual scope. Part A's T2 variant dispositions were written first in
+  [candidates-response-01](candidates-response-01.md), before T8 preregistration.
+- New-direction budgets restart at zero, at most 25 rounds each. Gate kills,
+  proved obstructions and scoped exhaustion must be recorded; no new family
+  is declared promising from ranks alone. No final ranges or IDs are needed.
