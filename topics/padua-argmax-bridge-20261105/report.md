@@ -336,3 +336,22 @@ native adapters, parser and resource supervision remain unimplemented.
 No producer, phase checker or new degree job has run. The new phase
 constant bounds are undergoing their separate review; no further analytic
 onset is adopted at this checkpoint.
+
+
+## D10 — sharper true limiting constant and a scoped obstruction
+
+Four separate scopes are now independently accepted. The completed
+constant satisfies C_infty<8/3 on the full closed phase diamond. On
+the far domain rho>=1/2, its origin increment is<22(1-a). The near
+modulus retains the genuine fractional/entropy central term and improves
+the noncentral increment to19r²/24. An exact positive axis alpha^(3/2)
+term rules out a uniform quadratic-in-(1-a) bound through the origin,
+without contradicting the far bound.
+[Proofs, original split and independent reconstruction](independent-checks-D10-relative-constant.md).
+
+These are phase-only results; full finite S-a*S0 comparison remains OPEN.
+The far relative bound explicitly inherits PD-T271's certified Arb corner
+constant. The current global theorem is still n>=50000 until the new
+D11 assembly and scalar endpoint receive independent review. D11's first
+conditional16000 scalar budget passes; its actual chronology is retained
+in attempts/D11-onset.md, with no range adoption from the scalar alone.

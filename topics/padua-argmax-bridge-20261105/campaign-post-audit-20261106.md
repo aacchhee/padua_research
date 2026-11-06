@@ -6,7 +6,7 @@ counts scientific rounds rather than individual lemmas or concurrent jobs,
 and does not stop at a small checkpoint while productive authorized work remains.
 Authority, source/rule identity and resource observations are in LOG.
 
-Completed: **9/25**. Active: **D10**; D11 preparation runs in parallel.
+Completed: **10/25**. Active: **D11**.
 
 | Round | State | Primary target | Prospective gate / actual outcome |
 |---|---|---|---|
@@ -42,5 +42,5 @@ Large raw output remains in the existing Padua local-output tree with pending
 archive provenance. Root alone owns Git/shared topic records and PR27.
 No main push, merge, force, tags, .github/settings or major cleanup.
 
-| D10 | ACTIVE | Sharper completed constant and exact full-cover adapter | Full-cover sufficient implication independently accepted, actual complete cover absent. Global/local/negative constant results split; final review closure pending. |
-| D11 | PREPARING | Lower analytic onset budget and full point-cover implementation | Primary16000/fallback20000 scalar comparison preregistered, no run before D10 acceptance. Producer/checker skeleton frozen, fail-closed and unexecuted; native/parser/resource integration pending. |
+| D10 | COMPLETE | Sharper completed constant and exact full-cover adapter | Full-cover sufficient implication independently accepted, actual complete cover absent. Four split constant/axis scopes independently accepted: global<8/3, far22(1−a), near fractional modulus, scoped origin-quadratic obstruction. |
+| D11 | ACTIVE | Lower analytic onset budget and full point-cover implementation | Primary16000 conditional formula calculation PASS; no20000fallback. Actual pre-review chronology retained in attempt, adoption awaits distinct D11 review. Producer/checker skeleton checkpointed; bounded native/parser/resource implementation active, no native instance. |
