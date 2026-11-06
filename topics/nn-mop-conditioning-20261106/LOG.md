@@ -77,3 +77,22 @@ theory/c2-sharp-upper.md and attempts/C2-hard.md. No result claimed yet.
 Supplementary distinct Astra high checker independently reruns M0 and C4,
 then checks new gauge/rate mathematics; this supplements, not replaces,
 the eventual Claude audit.
+
+## 2026-11-06 — C3 completed and C4 source resumed
+
+C3 records the precise common-input residual-transfer gap and preserves
+PD-T449 OPEN; two consecutive empty proof rounds end that direction.
+The all-integer N4–32 native grid completed232 solver cases:58 each for
+LU/QR/nodeqr/C4. On kappa*u<=1, A-LU maximum E/(kappa*u) is .809315
+Krawtchouk and .469316 Hahn; C4 reaches40533.1 at HahnN14. These are
+platform-dependent measurements, not a theorem or M3 PASS. A distinct
+worker replayed the same complete scientific payload identically.
+A chain-rule omission in the draft residual reduction was caught by the
+coordinator and corrected to include direct terminal-input dependence
+before publication. See attempts/C3.md and its two theory records.
+
+AC then supplied IEP-MOP-main.zip in this session. Root verified its exact
+SHA256; C4 verified all27 member pins and inspected executed source,
+obtained isolated Octave9.4 using authorized package downloads, and
+re-passed actual M4. Earlier BLOCKED records are historical and will gain
+dated addenda, not be erased. M2 and full comparison are in progress.
