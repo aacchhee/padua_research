@@ -1,0 +1,105 @@
+# audit-02 orchestrator receipts (Claude, 2026-11-06)
+Python 3.13.18; numpy 2.3.5 scipy 1.17.0 sympy 1.14.0 mpmath 1.3.0; OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1
+Candidate e80e000f2ba439ea62c966d255ef1b900b608b27, detached worktree; handoff-05 commands
+
+## sha256 of audit-02 code
+95f44bedd19ab31598b8d1bd4d79c9f1c1f4cb74383614514594d5bbefd309b7  ./T8/audit_census.py
+9d2fb9debdb1f687eb42b3ff9626636fa2041a86c5f2bad10661bfd86fc75874  ./T8/audit_d2.py
+c0ab98dff424751702d7e27fc4612059a00003bcf560c4483c8e4bd320e4223f  ./T8/audit_m20.py
+e1e5ea12901f58a4e89e74cf2507180719d125d7444acef0563730ee9fa2647a  ./T8/audit_m38_prules.py
+1a86263a64812b6df4421eaae4e2a4f10ba52d72550eddf494a8ab406036b9af  ./T8/audit_odd_even.py
+9c062020c34f28b836b5e98dd83236849a0e4a727f0df2f532368dee808c33af  ./T8/audit_trace.py
+e51c9dc9f13b94d3c7b519f49a324f5fd91724ea0f2b0526e0a6b1516b7267d0  ./T8/cmp_receipts.py
+12c6ef856b46e3e2771278b54d6842a9c823e0b1b753ba13aa014d6d283200b3  ./T8/run_producers.py
+6b80460f27b20f8206f09fa0940d901ad96ec4c63375b6410823de44255e57c9  ./T9/a_census.py
+d41d9559871c6fe90d3607cc49e6ff09e92948f9e9a2d5e96a43bde261f3da52  ./T9/a_haar.py
+7994a5f4c4deb42b5087bbf9caa747eec28777852f91ce1e9bbb4965bb195e3b  ./T9/a_kernel.py
+4b3e6b8658447aa5f58494a109c6ffbf3046a2f7625b10ec4bd71c696f428acc  ./T9/a_lebesgue.py
+d5a82c74ee10498386d2a6edafbc251d87360ac07d770975d7614c052d3661b8  ./T9/a_minlin.py
+ee6252d2cbaf8beae00cc390da96569c294f358ab204508233121bc86561ccd0  ./T9/a_minproj.py
+ed03302a6f99dd5b0df1aeb50ce62b16f602b84c573378584e3b235b7140eb84  ./T9/a_minquad.py
+cf745c82a54e90173b95998a1c491e664ab12cb7cdd8714a7c1d7a00569fc00d  ./T9/a_square.py
+f7bae5b7c25fc3c46667c007307210cb5698646b2323c694923984e2f7ec79d3  ./T9/a_transfer.py
+b36a370781e710ed19a61aad3b9f8557bca0de1c14c965a2a5283171da2fe56f  ./T9/run_maxima.py
+c3e54d20a4be2cb38c3a86cbb2d478b288454a2b2fcb1c93bd668e3b30a95414  ./aud_t7.py
+95e2baf42ff9553f156bc1639fce1160086eb482d992e88a81f054cbd831ecf9  ./cmp2.py
+8055e1815605549577aea3c81cb1aa31575336623dc6e4418aa37fa21874c895  ./m20_check.py
+006937c271f21cbe72133b05e6cc7ee337d862261ea18eba83707ac21d38cabc  ./mn_screen.py
+41c68c9be5bb4777baf12231e855988ef5ce377254babab28d91b11b0597611b  ./partA/capvar.py
+0f6ed4e6b136c9cc323350b7469010a27282197f53e7000aa16068fd3b028a09  ./partA/cmp_receipts.py
+c0bb4cb82513e0dd3236757d40e97f230e5d3e8023d12a2c33c7d62e44008941  ./partA/indep_t1_points.py
+c1ee7d0947aa8a9f42cd2cd1dc28e46af49bac577aa67d87f6b4a63b4496eab1  ./partA/indep_t2_sym.py
+db5174f5da63d36628226e8b7f653e06b151a3d7d4803d8834991d2aaa18c1c8  ./t706_check.py
+(hashes after trailing-whitespace normalization; the code is otherwise as executed)
+
+## producer runs (exit, seconds, command)
+{"verdict": "PASS", "artifacts": 56, "bytes": 309009}
+exit 0
+exit 0
+exit 0 secs 3 :: topics/padua-3d-20261106/code/t1_full_enum.py --output <out>/t1.json
+exit 0 secs 1 :: topics/padua-3d-20261106/code/t2_symmetry_check.py --output <out>/symmetry.json
+exit 0 secs 4 :: topics/padua-3d-20261106/code/t7_cosets.py --output <out>/t7.json
+exit 0 secs 0 :: topics/padua-3d-20261106/code/independent_new_math.py --output <out>/independent-math.json
+exit 0 secs 166 :: topics/padua-3d-20261106/code/independent_response_t8.py --t8 --even --output <out>/independent-t8.json
+exit 0 secs 1 :: topics/padua-3d-20261106/code/t8_cyclic.py controls
+exit 0 secs 2 :: topics/padua-3d-20261106/code/t8_cyclic.py census --n 2
+exit 0 secs 16 :: topics/padua-3d-20261106/code/t8_cyclic.py census --n 3
+exit 0 secs 4 :: topics/padua-3d-20261106/code/t8_cyclic.py odd --n 5
+exit 0 secs 12 :: topics/padua-3d-20261106/code/t8_cyclic.py odd --n 6
+exit 0 secs 1 :: topics/padua-3d-20261106/code/t8_phases.py
+exit 0 secs 103 :: topics/padua-3d-20261106/code/t8_even_family.py
+exit 0 secs 0 :: topics/padua-3d-20261106/code/t9_checks.py
+exit 0 secs 14 :: topics/padua-3d-20261106/code/t9_maxima.py
+
+## receipt comparison: regenerated vs committed (scientific fields)
+== topics/padua-3d-20261106/evidence/t8-controls.json diffs 3 float 1 float>1e-9rel 1
+   /preregistration_sha256 | f089f36d00a771b3d86d1a78e2e5d3e0de50373a166d403ed5fdb3f5bc3dcad4 -> 8cad326a7fea6d7c2b629d6417f222756a61a60a714affaa3daf5564351754a9
+== topics/padua-3d-20261106/evidence/t8-even-family.json diffs 6 float 5 float>1e-9rel 5
+== topics/padua-3d-20261106/evidence/t8-odd-n5.json diffs 3 float 1 float>1e-9rel 1
+   /preregistration_sha256 | f089f36d00a771b3d86d1a78e2e5d3e0de50373a166d403ed5fdb3f5bc3dcad4 -> 8cad326a7fea6d7c2b629d6417f222756a61a60a714affaa3daf5564351754a9
+== topics/padua-3d-20261106/evidence/t8-odd-n6.json diffs 3 float 1 float>1e-9rel 1
+   /preregistration_sha256 | f089f36d00a771b3d86d1a78e2e5d3e0de50373a166d403ed5fdb3f5bc3dcad4 -> 8cad326a7fea6d7c2b629d6417f222756a61a60a714affaa3daf5564351754a9
+== topics/padua-3d-20261106/evidence/t8-phases.json diffs 3 float 1 float>1e-9rel 1
+   /preregistration_sha256 | f089f36d00a771b3d86d1a78e2e5d3e0de50373a166d403ed5fdb3f5bc3dcad4 -> 8cad326a7fea6d7c2b629d6417f222756a61a60a714affaa3daf5564351754a9
+== topics/padua-3d-20261106/evidence/t8-unshifted-n2.json diffs 3 float 1 float>1e-9rel 1
+   /preregistration_sha256 | f089f36d00a771b3d86d1a78e2e5d3e0de50373a166d403ed5fdb3f5bc3dcad4 -> 8cad326a7fea6d7c2b629d6417f222756a61a60a714affaa3daf5564351754a9
+== topics/padua-3d-20261106/evidence/t8-unshifted-n3.json diffs 3 float 1 float>1e-9rel 1
+   /preregistration_sha256 | f089f36d00a771b3d86d1a78e2e5d3e0de50373a166d403ed5fdb3f5bc3dcad4 -> 8cad326a7fea6d7c2b629d6417f222756a61a60a714affaa3daf5564351754a9
+== topics/padua-3d-20261106/evidence/t9-maxima.json diffs 22 float 22 float>1e-9rel 22
+== t1-full-enum.json vs t1.json diffs 2 non-negligible 2
+    /command[3] | topics/padua-3d-20261106/evidence/t1-full-enum.json -> /tmp/claude-0/-workspace-padua-research/10b30ff5-df76-597f-8b43-0ded30
+    /python | 3.12.14 -> 3.13.18
+== t2-symmetry-check.json vs symmetry.json diffs 2 non-negligible 2
+    /command[3] | topics/padua-3d-20261106/evidence/t2-symmetry-check.json -> /tmp/claude-0/-workspace-padua-research/10b30ff5-df76-597f-8b43-0ded30
+    /python | 3.12.14 -> 3.13.18
+== t7-diagnostics.json vs t7.json diffs 3 non-negligible 3
+    /command | python topics/padua-3d-20261106/code/t7_cosets.py --output topics/padu -> python topics/padua-3d-20261106/code/t7_cosets.py --output /tmp/claude
+    /seconds | 2.812 -> 2.273
+    /versions/python | 3.12.14 -> 3.13.18
+== independent-new-math.json vs independent-math.json diffs 0 non-negligible 0
+== independent-response-t8.json vs independent-t8.json diffs 7 non-negligible 7
+    /python | 3.12.14 -> 3.13.18
+    /t8/producer_replays[0]/sha256 | 3277df06326b6e643a5bb3113675841e772e6175b02a46ddec299adef5c9722d -> 71658d20b46006c56f781332bee663f656b47360551183d3a81435aa36c82b52
+    /t8/producer_replays[1]/sha256 | 910158050872e4722e0581645bfa13ed96a25636c3dd98b322bc207d2368e6af -> 9abb9717fd7a40127c6c041eaa70bfec0ebd7c196842ecc1b8e4bf73f44afedc
+    /t8/producer_replays[2]/sha256 | 689187880a49902c7c8de15b3289244cc4589c7cdac3ad048f13d7c15a19463f -> aa912bbc431a0da19c66fc8a32b94e5aab28167ab2f7ef780d3a90d680893e47
+    /t8/producer_replays[3]/sha256 | 65142fee51f057efcdd96a274b17a1aaa63f36d14e070a45a07f1f14954add29 -> 53b6565efd4f8456898596a064c4842d8145fd0c2181eb89668dbae040bcb42b
+    /t8/producer_replays[4]/sha256 | 35976f0168aad8cb300b52f3f466ca85a1cf2f672875750398751ef16e09f2b6 -> 94cc95e98ba08c282a32b6497cf3913aa2c78f4f6666f7c5022a2b6619224e0b
+    /t8/producer_replays[5]/sha256 | 0d35ca7a1f084b5baf46394e0bcddf2f1638626ba4ab9058428ad0488c01072c -> ae730e22c9c20d58fbffa8695bf0ae3d94538382769726701caee0d7f0dc0681
+Historical T8 prereg pin: sha256(51c031a:preregistration-T8.md) = f089f36d00a771b3d86d1a78e2e5d3e0de50373a166d403ed5fdb3f5bc3dcad4
+independent_response_t8 producer_replays sha differ only because replayed receipts embed the Python version.
+
+## python -I audit-02/code/t706_check.py   (T7-06 independent: F_p images of det, p = 1 mod 1010)
+{'nodes': 20, 'monomials': 20, 'det_mod_p': [(8081, 6561, 2652), (20201, 15050, 8971)], 'det_float_60digits': '-1.85171720350168e-6'}
+
+## python -I audit-02/code/m20_check.py   (T8 lead: M=N=20 phase-shifted orbit z=(1,2,7), phases (30,75,69)/120)
+distinct nodes 20
+241 rank 20
+601 rank 20
+1201 rank 20
+
+## python -I audit-02/code/mn_screen.py   (unrecorded floating screen, MEASURED-only lead; seed 20261106)
+2 10 numerically full-rank fraction 0.0 best sigma_min/sigma_max 2.32e-15
+3 20 numerically full-rank fraction 0.24666666666666667 best sigma_min/sigma_max 0.104
+4 35 numerically full-rank fraction 0.3433333333333333 best sigma_min/sigma_max 0.031
+5 56 numerically full-rank fraction 0.14 best sigma_min/sigma_max 0.0262
+6 84 numerically full-rank fraction 0.0 best sigma_min/sigma_max 5.25e-15
