@@ -1,7 +1,7 @@
 # Padua-type points in three dimensions: log
 
 - Branch: `codex/padua-3d-20261106` · Base: main `76ba421` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: AUDIT · Next: Claude Opus5.5 xhigh · Successor at publication: [handoffs/05-audit.md](handoffs/05-audit.md)
+- Stage: WORK · Next: `Codex (gpt-6-astra, high): Continue codex/padua-3d-20261106.` · Open handoff at publication: [handoffs/06-work.md](handoffs/06-work.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims: provisional records in [report.md](report.md); no final IDs allocated.
 
@@ -296,3 +296,10 @@ their bounded stops are finalized in [rounds](rounds.md).
   of T7, T8 or T9 met handoff 04's stop rule (stopped after 2, 2 and 1 of
   25 rounds); C2 T9 gate gaps; C3 undisclosed T9 gate edit/timing; C4 ID kind
   of refuted T7 inferences. Several MINOR items. Stage **WORK**.
+- [Handoff 05](handoffs/05-audit.md) done in `9e71858`.
+
+## 2026-11-06 — AC: adventurous round with restarted budgets (recorded by Claude, claude-opus-5-5 xhigh)
+
+- AC: "make then a more adventurous handoff for one more codex round, indicate what are the most promising rounds".
+- AC: "one more means restarting the 25 counter".
+- [Handoff 06](handoffs/06-work.md): Part A responds to audit 02. Part B restarts the counters at 0 with 25 rounds each for T7, T8, T9 and a new T10 (near-Padua Chebyshev-lattice cubature plus extraction; added as Claude's proposal, and AC may drop it). It sets a stricter stop rule and ranks the most promising routes: T10 lattice cubature and extraction; T8 phase-shifted M=N orbits on admissible degrees; T7 census, survivor quality and phase optimization; T9 unconditional packing bound and class-specific lower bounds.
