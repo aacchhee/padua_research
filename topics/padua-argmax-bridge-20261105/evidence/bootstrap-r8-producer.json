@@ -1,0 +1,382 @@
+{
+  "format": "padua-bootstrap-r8-producer-v1",
+  "status": "COMPLETE_PRODUCER_ONLY",
+  "accepted": false,
+  "n": 32,
+  "known_degree_calibration_only": true,
+  "source_commit": "c8bdb63de00984701515a2d9c193dea32766a6c0",
+  "actual_launch_argv": [
+    "python",
+    "topics/padua-argmax-bridge-20261105/code/n3_bootstrap_r8.py",
+    "--run-n32"
+  ],
+  "cwd": "/workspace/padua_research",
+  "single_attempt": true,
+  "preregistered_inputs": {
+    "path": "local-output/argmax-bridge-20261105/bootstrap-r8/preregistered-inputs.json",
+    "bytes": 3402,
+    "sha256": "80db6c0320bd00f700847a92930feb4f961fe7eb828233b21a59eeff1a297327"
+  },
+  "essential_compact_gzip": {
+    "path": "topics/padua-argmax-bridge-20261105/evidence/n3-phase-n32-bootstrap-r8.json.gz",
+    "bytes": 3367,
+    "sha256": "a01bc14b968676161afa0690e5ed41005da8cb3f87fb8c6393594bc37ed3986a"
+  },
+  "compact_plain_decompression_sha256": "97c339181652d37e7e3c34522959f1b7157b8ea26d3f0ab83c0ebc1c3901528e",
+  "total_leaves": 364,
+  "execution": {
+    "n": 32,
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/n3_bootstrap_r8.py",
+      "--worker",
+      "32"
+    ],
+    "exit_status": 0,
+    "watchdog_stopped": false,
+    "subprocess_cpu_seconds": 222.81307,
+    "elapsed_wall_seconds": 223.05083705799916,
+    "execution_started_utc": "2026-11-06T09:18:09Z",
+    "execution_finished_utc": "2026-11-06T09:21:52Z",
+    "stdout": {
+      "path": "local-output/argmax-bridge-20261105/bootstrap-r8/n32-stdout.txt",
+      "bytes": 1874,
+      "sha256": "97bd319861f2cdf49cfd0d0505899c96d06ee8fe5d462dc69811cce2897bf20d"
+    },
+    "stderr": {
+      "path": "local-output/argmax-bridge-20261105/bootstrap-r8/n32-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "complete": true,
+    "accepted": false,
+    "pending": 0,
+    "statistics": {
+      "visited": 724,
+      "splits": 360,
+      "counts": {
+        "split": 360,
+        "outside": 32,
+        "far": 280,
+        "corner-orbit-plus-defect": 28,
+        "maximum-exclusion-plus-defect": 24
+      },
+      "cpu_seconds": 222.0772617
+    },
+    "raw_candidate": {
+      "path": "local-output/argmax-bridge-20261105/bootstrap-r8/n32/n32-phase.json",
+      "bytes": 48481,
+      "sha256": "1cebb32c9678cb858010c4b048cca62ee12653373f24775bd7ed12a01bf07398"
+    },
+    "build_manifest": {
+      "path": "local-output/argmax-bridge-20261105/bootstrap-r8/n32/build/build-manifest.json",
+      "bytes": 14510,
+      "sha256": "ec0c17b73f6e28f859f67261b113fb19c28e3b20093dc6b4023755608011df84"
+    },
+    "compiler_child_cpu_seconds": 0.434272,
+    "build_own_cpu_seconds": 0.074511948,
+    "constants_setup_cpu_seconds": 0.10969784100000002,
+    "candidate": {
+      "path": "local-output/argmax-bridge-20261105/bootstrap-r8/n32/n32-phase-compact.json",
+      "bytes": 21338,
+      "sha256": "97c339181652d37e7e3c34522959f1b7157b8ea26d3f0ab83c0ebc1c3901528e"
+    },
+    "gzip": {
+      "path": "local-output/argmax-bridge-20261105/bootstrap-r8/n32/n32-phase-compact.json.gz",
+      "bytes": 3367,
+      "sha256": "a01bc14b968676161afa0690e5ed41005da8cb3f87fb8c6393594bc37ed3986a"
+    },
+    "own_cpu_seconds": 222.31348531,
+    "total_child_cpu_seconds": 0.443148,
+    "wall_seconds": 222.80512036799882,
+    "closure_unchanged_after": true
+  },
+  "build_closure": {
+    "format": "n3-build-closure-v1",
+    "rules_input": "8dc1521cf68f7780bd10e02495f6f71a639c03c6",
+    "compile_command": [
+      "cc",
+      "-O3",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-I/workspace/padua_research/local-output/argmax-bridge-20261105/bootstrap-r8/n32/build",
+      "-shared",
+      "-fPIC",
+      "-MD",
+      "-MF",
+      "/workspace/padua_research/local-output/argmax-bridge-20261105/bootstrap-r8/n32/build/dependencies.d",
+      "/workspace/padua_research/local-output/argmax-bridge-20261105/bootstrap-r8/n32/build/n3_outward.c",
+      "/lib/x86_64-linux-gnu/libmpfr.so.6",
+      "-lm",
+      "-o",
+      "/workspace/padua_research/local-output/argmax-bridge-20261105/bootstrap-r8/n32/build/n3_outward.so"
+    ],
+    "original_sources": [
+      {
+        "path": "topics/padua-argmax-bridge-20261105/code/n3_outward.c",
+        "bytes": 4830,
+        "sha256": "cfeae9fe2b61e9c7ec2c4d943762ac988e64fa02652ccfe4342430c4ee5f22dd"
+      },
+      {
+        "path": "topics/padua-argmax-bridge-20261105/code/n3_outward_interval.h",
+        "bytes": 4215,
+        "sha256": "6dca513ddbd94264d454872c9f5e753e355d15b49152dc4b19d51cff7635131b"
+      },
+      {
+        "path": "topics/padua-argmax-bridge-20261105/code/n3_bootstrap_r8.py",
+        "bytes": 13679,
+        "sha256": "9058deac09eec2ddd7cfae4815fdf79d702e52099de13820e44af4f82db0a12c"
+      },
+      {
+        "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/check_r8.py",
+        "bytes": 10583,
+        "sha256": "3c71ada8e49829cb897ee1c064fcdc70d08c846afcb1fb067c6c84673e205bb9"
+      },
+      {
+        "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/check_r6.py",
+        "bytes": 12518,
+        "sha256": "437378a5d0fe21d4d0ef30b1c9843274d2cb98fc9f408e9bad5683ec9f1e73dc"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/N3/runtime/extracted/usr/include/mpfr.h",
+        "bytes": 57588,
+        "sha256": "588c2bd606cba060afb49cd024f9119e996089a341a99d1dc7e0367622335a13"
+      }
+    ],
+    "compiler": {
+      "path": "/usr/bin/x86_64-linux-gnu-gcc-14",
+      "bytes": 1162264,
+      "sha256": "a23ecab8ff08f09ad8c80602c2c5df7f49e09c25905cb8975902e101bf72635f"
+    },
+    "compiler_version": "cc (Debian 14.2.0-19) 14.2.0",
+    "linked_runtimes": [
+      {
+        "path": "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "bytes": 1995216,
+        "sha256": "9792e3cbb541c8f44c7acf5f14f4022ea62998ecc787d326bed4d8b6547dfd92"
+      },
+      {
+        "path": "/usr/lib/x86_64-linux-gnu/libgmp.so.10.5.0",
+        "bytes": 566080,
+        "sha256": "d15e1585c6c267296459570c8ac217ca9123044bcd4e896d2f686b32333445d2"
+      },
+      {
+        "path": "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "bytes": 977112,
+        "sha256": "6d567d53e895273ca14a1f9dc164fc6c8d39aed2f60aa46a733c2784228915f3"
+      },
+      {
+        "path": "/usr/lib/x86_64-linux-gnu/libmpfr.so.6.2.2",
+        "bytes": 794992,
+        "sha256": "4e3ccf5b442fc91054b0153140fe62939009f98ca1367f45de62376d5b18d28c"
+      },
+      {
+        "path": "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "bytes": 225672,
+        "sha256": "c8438e4fde1934e61c88311633f00949ff645d5c04cdb8671fa3d78164d2f307"
+      }
+    ],
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "mpfr": "4.2.2",
+    "corner_patch": {
+      "receipt_sha256": "e685674c028bc99e42d547e8b84a2ce5a7e7e67c3cc69f6c29a55ecbcffd23c0",
+      "degrees": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128
+      ],
+      "kappa": "1/16000",
+      "phase_square": "1/128",
+      "code_data_pins": [
+        {
+          "path": "topics/padua-argmax-bridge-20261105/code/check_corner_exact.cpp",
+          "sha256": "3646f4e8b6b16957b9e1114f95ad2f0a7c18eec4687b49d5e6f1947a25eea6e3",
+          "bytes": 5725
+        },
+        {
+          "path": "topics/padua-argmax-bridge-20261105/code/check_corner_range.py",
+          "sha256": "66fc2d9583260572125bd6c70a943577f94f1dd1ce2755a2c47ad96fffa9a982",
+          "bytes": 7416
+        },
+        {
+          "path": "topics/padua-argmax-bridge-20261105/evidence/n3-corner-batch.json",
+          "sha256": "97e20cc877ad5afd0c9dfe96c1e399a42d820b38c18626e2b69bfa54f6acfc88",
+          "bytes": 3601
+        },
+        {
+          "path": "topics/padua-argmax-bridge-20261105/evidence/independent-corner-replay.json",
+          "sha256": "573afc5d5ae229b0fa1d47df9b6bf334e47e0e437288a3543826838e5403cb4b",
+          "bytes": 7892
+        }
+      ],
+      "dependency_scope": "fixed published all-integer finite range theorem; no prose validation pins or caller assertion"
+    },
+    "bootstrap_energy": {
+      "receipt_sha256": "f0c48ea7f55e3a926b36537ebe46724b4305cacb9f1254c6417b2abd9676425b",
+      "degree_first": 2,
+      "degree_last": 128,
+      "normalized_threshold": "3/4",
+      "phase_diamond_radius": "1/2",
+      "receipt_path": "topics/padua-argmax-bridge-20261105/evidence/independent-bootstrap-energy.json",
+      "code_data_pins": [
+        {
+          "path": "topics/padua-argmax-bridge-20261105/code/check_corner_exact.cpp",
+          "sha256": "3646f4e8b6b16957b9e1114f95ad2f0a7c18eec4687b49d5e6f1947a25eea6e3",
+          "bytes": 5725
+        },
+        {
+          "path": "topics/padua-argmax-bridge-20261105/code/check_bootstrap_energy.py",
+          "sha256": "915c6c7c40e8c9e0c748cf50c2fe278f6760d79a9e725939aed1553269030972",
+          "bytes": 7876
+        }
+      ],
+      "scope": "fixed independent finite energy theorem n2..128; no caller premise or prose pins"
+    },
+    "dependency_closure": {
+      "count": 42,
+      "canonical_json_sha256": "cad3318e247f5060c44d852225a9bcf4b8aa8445eca158a51744307da56f9e15",
+      "full_identity_list_manifest": {
+        "path": "local-output/argmax-bridge-20261105/bootstrap-r8/n32/build/build-manifest.json",
+        "bytes": 14510,
+        "sha256": "ec0c17b73f6e28f859f67261b113fb19c28e3b20093dc6b4023755608011df84"
+      },
+      "scope": "All compiler-discovered source/system-header dependency identities; actual MPFR header also separately listed in original_sources"
+    }
+  },
+  "source_manifest_reverified_after": true,
+  "limits": {
+    "seconds": 1100,
+    "boxes": 100000,
+    "total_process_cpu_seconds": 1200
+  },
+  "arithmetic": "Unchanged MPFR producer C/header; new Python bootstrap dispatch and calculation request only",
+  "independent_checker_status": "PENDING distinct whole-leaf replay; producer asserts no acceptance",
+  "comparison_scope": "Matched known-degree n32 r6 baseline only; no new global degree or complexity claim"
+}

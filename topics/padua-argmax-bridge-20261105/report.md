@@ -39,6 +39,14 @@ The earlier unchanged-error certificate is still specifically ruled
 out for small budgets through10^6; the correction escapes that floor.
 Its one-correction allowance is used.
 
+Round7 extracts both logarithmic coefficients of this unchanged model.
+Writing r2=alpha^2+beta^2, their gaps below the corner coefficients are
+at least47r2/(48pi^2) for log^2 n and r2/(24pi^2) for log n. The
+remaining term is uniformly bounded, with no small numerical bound yet.
+The logarithmic coefficient has no linear phase cusp; a finite-degree
+cusp can remain in the residual. See the [coefficient theorem](theory/N1-round7-coefficients.md)
+and the exact [residual comparison obligation](theory/N1-round7-comparison.md).
+
 The [two-phase edge defect](theory/N5-two-phase-defect.md) proves
 lambda<S_n-1/2048 at all interior complementary vertical-edge centers,
 n>=64 and inward rho<=1/2. Thus the new model yields the independently
@@ -75,10 +83,29 @@ putative off-corner maximizer. Under W<=(3/4)n^4Lambda_c it permits an
 inward half-phase patch without a prior global/corner norm ratio. Fresh
 MPFR and separate GMP sweeps prove that energy premise for all127
 integers2–128. This is a cover reduction, not pointwise local descent
-before global closure. A strict complement cover still has to be
-implemented/verified in its new mode. No existing acceptance is
+before global closure. A strict complement cover requires the explicit
+new mode and independent verification recorded below. No existing acceptance is
 retroactively reinterpreted, and the finite energy is not extrapolated
 to the analytic n>=10^6 range.
+
+The new [analytic energy bound](theory/N3-uniform-energy-r8.md), independently
+reviewed, gives for all n>=32
+
+    W_n <= n^4[(21/32)Lambda_c+1,500,000,000(1+log(n+1))].
+
+It proves the unchanged3/4 premise when log n>=128,000,000,000. This
+explicit energy onset is far beyond a practical finite bridge and is
+not an argmax onset. The intermediate energy range129<=n<ceil(exp(128000000000))
+remains OPEN. The finite certifier is deliberately still restricted to
+its independently verified2–128 premise.
+
+The [explicit bootstrap certificate mode](theory/N3-bootstrap-cover-r8.md)
+now has independent mathematical/source acceptance, including exact
+boundary, malformed-partition, premise and strict-defect controls. Its
+first known-degree n32 producer completes364leaves in222.813childCPU-s,
+versus992leaves/620.093CPU-s in round6. Full independent replay is
+pending at this checkpoint; no new global degree or complexity law is
+inferred from the producer result.
 
 ## Gates and remaining work
 

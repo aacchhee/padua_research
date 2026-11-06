@@ -182,3 +182,46 @@ inventory pins corrected source bytes. These paths are under the same
 
 Focused supplementary re-review and coordinator explicit start remain
 required before the single planned n32 calibration. No full run launched.
+
+## Released single producer calibration — 2026-11-06
+
+After separate source/mathematical review accepted the frozen source and
+focused exact-type response, the coordinator committed and pushed
+`c8bdb63de00984701515a2d9c193dea32766a6c0` and explicitly released exactly
+one preregistered n32 producer. The exact planned producer command above
+executed once, beginning09:18:09Z and ending09:21:52Z. No source edit,
+rerun, budget change or other degree occurred.
+
+Observed exit0, watchdog_stopped=false, complete=true, pending0,
+accepted=false; source/build/premise closure unchanged after execution.
+724visited boxes,360splits,364leaves:32outside,280far,
+28corner-orbit-plus-defect and24maximum-exclusion-plus-defect.
+Search CPU222.0772617s; worker own CPU222.31348531s;
+worker compiler/helper child CPU0.443148s; parent-measured total worker
+subprocess CPU222.81307s and wall223.05083705799916s. All fixed budgets
+were respected. The separate checker has not yet supplied acceptance.
+
+Raw candidate:48481bytes, SHA256
+`1cebb32c9678cb858010c4b048cca62ee12653373f24775bd7ed12a01bf07398`.
+Exact compact candidate:21338bytes, SHA256
+`97c339181652d37e7e3c34522959f1b7157b8ea26d3f0ab83c0ebc1c3901528e`.
+Its gzip:3367bytes, SHA256
+`a01bc14b968676161afa0690e5ed41005da8cb3f87fb8c6393594bc37ed3986a`.
+The gzip was explicitly decompressed and compared byte-for-byte with the
+compact candidate; it preserves the reviewed explicit format/mode/kinds.
+Both local candidate files are read-only. An identical essential gzip is
+`evidence/n3-phase-n32-bootstrap-r8.json.gz`; full raw outputs remain in
+the preregistered local n32 directory.
+
+Small producer receipt `evidence/bootstrap-r8-producer.json` records actual
+launch and worker argv, source commit and inventory, all statuses/counts,
+CPU/wall accounting, source/header/compiler/runtime identities, both fixed
+premises and candidate/build/output identities. The full compiler/system
+header dependency list is pinned through the local immutable build manifest
+and a canonical dependency-list hash. No source arithmetic was changed.
+
+Relative to the matched known n32 r6 baseline, producer visits decrease
+1980→724 and leaves992→364; this is only a measurement for the new
+maximum-cover mode at this known degree. It does not establish independent
+acceptance, a new certified degree, an all-n cost law or any B4 release.
+The coordinator assigns the separate whole-leaf checker next.

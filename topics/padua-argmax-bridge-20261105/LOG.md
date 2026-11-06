@@ -259,3 +259,14 @@
 - One known n32 calibration is planned after source-review acceptance and publication: producer1200CPU/100000visits with1100searchCPU; distinct full Arb replay1200CPU, no retries on failure/incomplete/cap. No n64/128 job or new degree follows automatically.
 
 - Preplay disposition: distinct Astra high accepts frozen reduction1353085b..., checker3c71ada8..., producer9058deac... after105 independent controls and7 focused post-fix premise/type checks. No unresolved scoped finding. Exact final report/evidence identities are recorded in independent-checks-bootstrap-r8.md; required Claude audit remains separate. The first full n32 producer is released only after this source checkpoint is published.
+
+### N3 round8 analytic energy and first producer outcome
+
+- Distinct Astra high accepts the Sol xhigh analytic energy proof5de050b4...: for n>=32, W<=n^4[(21/32)Lambda_c+1,500,000,000(1+log(n+1))]. Its explicit3/4-energy corollary requires log n>=128,000,000,000; this is not an argmax onset or practical bridge. The intermediate129<=n<ceil(exp(128000000000)) energy range remains OPEN. Gate chronology qualification is canonical in ideas/N3-uniform-energy-r8.md, inspected by the review; no retrospective complete-gate or historical novelty claim.
+- Reviewed source checkpoint c8bdb63 was pushed after conservative6,646,061-byte size check. The one released n32 producer completed exit0/complete=true/0pending, watchdog not stopped, closure unchanged:724visits/360splits/364leaves (32outside,280far,28orbit+defect,24maximum-exclusion+defect). Search222.0772617CPU-s; totalchild222.81307CPU-s; wall223.0508371s. Compact21338bytes SHA97c33918..., essentialgzip3367bytes SHAa01bc14b... . Producer accepted=false pending distinct full replay. No retry or other degree.
+- Distinct reviewer is released for exactly one full checker run on those immutable compact bytes under1200totalCPU, no leaf cap. Counts/cost reduction remain producer measurements until independent acceptance.
+
+### N1 round7 independently accepted coefficient comparison
+
+- Distinct Astra high accepts Sol xhigh N1-16 e7a7d446... and N1-17 3ff66dfe... with no findings. The unchanged fixed-count model has uniform bounded residual after exact log-polynomial subtraction; both coefficient gaps favor the corner by at least47r²/(48pi²) and r²/(24pi²). This is supporting coefficient control, not a proved portion of the C1 phase/degree target.
+- The OPEN comparison now names the exact residual phase increment F_n and remainingeta107/3584000. Next bounded test must retain finite-degree cusp and every cutoff/collision jump; no smoothness or small residual bound is assumed. One60-digit normalization pilot at17/24/32 gives discrepancy<=1.62e-59 in0.313CPU-s, MEASURED only; no model below1e6, fit or integral evaluation. Independent review inspected but did not relabel that pilot as a rerun.

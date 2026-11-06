@@ -90,3 +90,14 @@ n>=10^6. This discharges the near-domain model-construction obligation,
 but B3 full maximum/far/corner comparison remains OPEN. The proved
 near-edge criterion reduces that class to M_near<=Lambda_c+1/4096,
 still unverified.10^6 is not an argmax onset. B4 remains blocked.
+
+## 2026-11-06 coefficient and explicit-cover checkpoint
+
+N1 round7 proves both logarithmic coefficient gaps favor the corner, with
+uniform bounded residual; the exact finite-part phase-increment comparison
+remains OPEN. B3/B4 do not pass. The new N3 maximum-exclusion cover mode
+and fixed finite premise have distinct source/math acceptance after
+bounded controls. One n32 producer completes364leaves/222.813CPU-s;
+independent full replay is pending. The analytic energy tail threshold
+log n>=128000000000 is not an argmax onset or practical bridge. Global
+range remains2–40; no n64/128 run, cost law or all-n energy assertion.
