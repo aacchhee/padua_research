@@ -93,9 +93,9 @@ closed-form-free check is described in
 support file is changed and no execution of that script is claimed here.
 
 No new numerical run is needed for the written identity or was performed
-for this record. The distinct supplementary check and the focused Claude
-recheck of this new proof text are to be recorded by the coordinator;
-the earlier checks do not constitute review of these new bytes.
+for this record. 2026-11-06 (audit-03 F1): the distinct supplementary
+check is [independent-checks-P4-denominator.md](../independent-checks-P4-denominator.md),
+and the focused Claude recheck is [audit-03](../audit-03.md).
 
 ## Sources
 
@@ -246,8 +246,8 @@ or priority.
 ## Open items
 
 No mathematical case in the statement remains open. Supplementary review
-of this proof text and the focused Claude recheck are the next process
-steps. The practical sharp upper enclosure and two-sided numerical value
+and the focused Claude recheck are complete (audit-03 F1, 2026-11-06:
+[audit-03](../audit-03.md)). The practical sharp upper enclosure and two-sided numerical value
 of Lambda_edge remain separate open refinements in the existing records.
 
 ## History

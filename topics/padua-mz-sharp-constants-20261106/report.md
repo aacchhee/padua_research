@@ -124,7 +124,7 @@ also on Pi_N and on each parity. This meets the equality candidate's reverse-bou
 
 **P2, MEASURED:** [registered calibration and finite tests](theory/P2-measurements.md) use b2=-0.0955298083997758. Calibration/order stability, dense12/13 validation and audit400 overlap pass. The four P2 executions were released only after measured-b2 publication64f3b76; the scope addendum below separates prospective criteria from the postdictive secant criterion. The fixed summary is PASS_FINITE_TEST: mode2 weights0.95895–0.96803 and L-distances0.00289–0.00362 pass all guards; branch-difference decrease rates0.03844594/0.03759102 (even/odd) lie within0.038±0.006; Qmin log-m secants-0.09212119/-0.09246210 lie within0.006 of b2. The [independent m1600 replay and summary check](independent-checks-P2.md) pass. This supports the finite-mode explanation on these four cases, without proving a two-term law, crossing degree or asymptotic decimal value. Original K4 remains unchanged.
 
-Shared statuses and final IDs remain untouched. Audit-02 accepts these results at their stated scopes; the next focused Claude recheck covers only the newly durable denominator derivation, with the other response edits confirmed by diff. AC's original-target mapping decision remains reserved.
+Shared statuses and final IDs remain untouched. Audit-02 accepts these results at their stated scopes; the next focused Claude recheck covers only the newly durable denominator derivation, with the other response edits confirmed by diff. 2026-11-06 (audit-03 F2): [audit-03](audit-03.md) accepted that recheck; the topic is at PR preparation. AC's original-target mapping decision remains reserved.
 
 ## 2026-11-06 audit-02 B1/C2 scope correction
 
