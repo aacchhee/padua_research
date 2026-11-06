@@ -3,7 +3,7 @@
 This file is written only by the topic orchestrator. Branch
 `codex/padua-lanczos-nonproduct-20261105`; [draft PR #30](https://github.com/aacchhee/padua_research/pull/30).
 
-## Status (2026-11-05): AUDIT
+## Status (2026-11-06): WORK (response to audit 01)
 
 PR #24's all-degree drift separation (PD-T324) and closure growth (PD-T328/329) hold on SH_n, an affine image of a product measure. This topic seeks the same on families that are genuinely non-product. Directions are in [handoff 01](../topics/padua-lanczos-nonproduct-20261105/handoffs/01-work.md):
 
@@ -14,8 +14,9 @@ PR #24's all-degree drift separation (PD-T324) and closure growth (PD-T328/329) 
 - **P5:** Padua.
 - **P6:** exact scans.
 
-Results currently have provisional IDs; the substantive independent Claude
-audit follows development. No shared registry or final allocation changed.
+Results currently have provisional IDs. The Claude substantive [audit 01](../topics/padua-lanczos-nonproduct-20261105/audit-01.md)
+accepts every proof in scope and found no BLOCKING issue. It returned three MAJOR wording and record
+findings, among them that the P3 family is moment-equivalent to SH_n through degree 2n+1. No shared registry or final allocation changed.
 
 - **Verification:** N0 PASS: six SH cases, 88 symbolic identities and44 exact
   triangle/rotated-grid prefix rows match the predecessor evidence in an

@@ -1,7 +1,7 @@
 # Span drift on genuinely non-product families: log
 
 - Branch: `codex/padua-lanczos-nonproduct-20261105` · Base: main `be9a831` (PR #29 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Continue codex/padua-lanczos-nonproduct-20261105.` · Open handoff: [handoffs/02-audit.md](handoffs/02-audit.md)
+- Stage: WORK (audit 01 returned findings) · Next: `Codex (gpt-6-astra, high): Continue codex/padua-lanczos-nonproduct-20261105.` · Open handoff: [handoffs/03-response.md](handoffs/03-response.md)
 - Reserved final-ID ranges: none. Under the PR #29 rules, reserve when first needed (normally at PR preparation).
 - Claims: P3 all-degree non-affine-product weight separation and uniform sufficient radius; P5 polynomial Padua capacities; P4 model/transfer lemmas and scoped covariance obstruction. Provisional IDs only; see [report](report.md).
 
@@ -369,3 +369,11 @@ recorded by the final inventory.
   - Measured totals are 5,489,510 bytes of JSON/compressed data and 5,868,931 bytes of all data-like files, both under 10 MB.
   - No cleanup action is taken.
 - Audit report: [audit-01.md](audit-01.md).
+- Verdict: WORK.
+  - No BLOCKING finding.
+  - All proofs in scope were reconstructed and accepted at their stated scope.
+  - All consequential reruns agree, including fresh H24 degree-16 rows, D36x9 degree-16 producers for all four rules, the reflection pivot at degree 16, and an exact N2 recomputation.
+- Findings: three MAJOR (A1 P3 moment-equivalence framing; A2 incomplete P3 gate-timing disclosure; A3 P1 chain holds under BJ only), eighteen MINOR and several NOTEs.
+- Auditor check code is in [audit-01-checks/](audit-01-checks/).
+- Questions Q1–Q3 (P3 gate timing, P3 scope intent, N2 skipped before the P3/P5 proofs) were referred to AC on 2026-11-06.
+- Handoff 02 is done in `ea13ed4`. Next: [handoff 03](handoffs/03-response.md), the Codex response.
