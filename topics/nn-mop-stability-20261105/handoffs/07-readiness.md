@@ -2,7 +2,7 @@
 
 New numbered handoff; earlier instruction bodies remain immutable. Only the orchestrator changes statuses or Git.
 
-- Status: open
+- Status: done in cde86919a4d8326a6c5657c5493e463c88c5491e (topic complete; awaiting AC merge decision)
 - Previous handoff: [06-g5-audit-prep.md](06-g5-audit-prep.md)
 - Next agent / model / effort: Claude, Opus 5.5 high
 - Role: independent readiness reviewer and topic orchestrator
