@@ -1,0 +1,181 @@
+{
+  "format": "padua-bootstrap-r8-controls-v2",
+  "status": "PASS",
+  "rules_input": "8dc1521cf68f7780bd10e02495f6f71a639c03c6",
+  "sources": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_bootstrap_r8.py",
+      "bytes": 13679,
+      "sha256": "9058deac09eec2ddd7cfae4815fdf79d702e52099de13820e44af4f82db0a12c"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/check_r8.py",
+      "bytes": 10583,
+      "sha256": "3c71ada8e49829cb897ee1c064fcdc70d08c846afcb1fb067c6c84673e205bb9"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/r8_controls.py",
+      "bytes": 8266,
+      "sha256": "13cdf5da05e1ce31416dc5685b0be1c8c3565feb2e3606675607be7c1fc56944"
+    }
+  ],
+  "actual_argv": [
+    "python",
+    "topics/padua-argmax-bridge-20261105/code/phase_checker/r8_controls.py"
+  ],
+  "cwd": "/workspace/padua_research",
+  "exit_status": 0,
+  "controls": 58,
+  "full_degree_cover_executed": false,
+  "wall_seconds_observed_by_command_tool": 2.726366064,
+  "own_cpu_seconds": 1.049559661,
+  "mpfr_compiler_child_cpu_seconds": 0.5018459999999999,
+  "total_child_cpu_seconds": 1.686661,
+  "cpu_accounting_limitation": null,
+  "local_report": {
+    "path": "local-output/argmax-bridge-20261105/bootstrap-r8/controls-v2.json",
+    "bytes": 57116,
+    "sha256": "7080e2bc50b0352ffa63fe92cffd33c28b6cf260fdc84bb09dd082bfa209b3c8"
+  },
+  "synthetic_kernel_scope": "parser/partition/branch controls only; not numerical proof",
+  "native_smoke": {
+    "n": 2,
+    "boxes": [
+      {
+        "box": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bounds": [
+          3.000000000000001,
+          3.000000000000001,
+          0.6666666666666666,
+          2.9999999999999996,
+          3.0000000000000004,
+          3.141592653589793,
+          3.1415926535897936
+        ]
+      },
+      {
+        "box": [
+          0.0,
+          0.25,
+          0.0,
+          0.25
+        ],
+        "bounds": [
+          3.1336387200409153,
+          3.133638720196136,
+          0.0,
+          2.9999999999999996,
+          3.0000000000000004,
+          3.141592653589793,
+          3.1415926535897936
+        ]
+      },
+      {
+        "box": [
+          0.0,
+          0.5000000000000001,
+          0.0,
+          0.0
+        ],
+        "bounds": [
+          3.2383794433331063,
+          3.2383794433331063,
+          0.0,
+          2.9999999999999996,
+          3.0000000000000004,
+          3.141592653589793,
+          3.1415926535897936
+        ]
+      }
+    ],
+    "source_snapshot": {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/phase-checker/check-krr0kftu/hybrid_kernel_v2.cpp",
+      "bytes": 10891,
+      "sha256": "17fea91d4fa02e4183823e5d70b44705e96da7acfd26b04a0f3ed1cac443d9a2"
+    },
+    "checker_binary": {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/phase-checker/check-krr0kftu/libphase_checker.so",
+      "bytes": 60728,
+      "sha256": "0e6aa4affcc0904144c565b96045674ce6476868b0fb05976e6de24fc6beaf80"
+    }
+  },
+  "mpfr_flag_control": {
+    "n": 32,
+    "box": [
+      0.0,
+      0.25,
+      0.0,
+      0.25
+    ],
+    "early_exit_bounds": [
+      12.019045280465887,
+      11.967214606575629,
+      0.0,
+      0.0,
+      13.389806958888544,
+      13.38065126384814
+    ],
+    "always_compute_defect_bounds": [
+      12.019045280465887,
+      11.967214606575629,
+      0.31109586590546684,
+      1.0,
+      13.389806958888544,
+      13.38065126384814
+    ],
+    "compile_argv": [
+      "cc",
+      "-O3",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "-I/workspace/padua_research/local-output/argmax-bridge-20261105/bootstrap-r8/controls-mpfr-v2",
+      "/workspace/padua_research/local-output/argmax-bridge-20261105/bootstrap-r8/controls-mpfr-v2/n3_outward.c",
+      "/lib/x86_64-linux-gnu/libmpfr.so.6",
+      "-lm",
+      "-o",
+      "/workspace/padua_research/local-output/argmax-bridge-20261105/bootstrap-r8/controls-mpfr-v2/bounds.so"
+    ],
+    "sources": [
+      {
+        "path": "topics/padua-argmax-bridge-20261105/code/n3_outward.c",
+        "bytes": 4830,
+        "sha256": "cfeae9fe2b61e9c7ec2c4d943762ac988e64fa02652ccfe4342430c4ee5f22dd"
+      },
+      {
+        "path": "topics/padua-argmax-bridge-20261105/code/n3_outward_interval.h",
+        "bytes": 4215,
+        "sha256": "6dca513ddbd94264d454872c9f5e753e355d15b49152dc4b19d51cff7635131b"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/N3/runtime/extracted/usr/include/mpfr.h",
+        "bytes": 57588,
+        "sha256": "588c2bd606cba060afb49cd024f9119e996089a341a99d1dc7e0367622335a13"
+      }
+    ],
+    "binary": {
+      "path": "local-output/argmax-bridge-20261105/bootstrap-r8/controls-mpfr-v2/bounds.so",
+      "bytes": 37208,
+      "sha256": "13d0060f45c7ca9fb58f52be5cc36da8796763b741857316fcbe4ed824d7c9b8"
+    },
+    "compiler_child_cpu_seconds": 0.5018459999999999
+  },
+  "review": "PENDING distinct supplementary source/math review; no full producer/checker calibration launched",
+  "wall_seconds": 2.7383490779993735,
+  "previous_control_receipt": {
+    "path": "local-output/argmax-bridge-20261105/bootstrap-r8/controls-receipt-v1.json",
+    "bytes": 5223,
+    "sha256": "a907c21847c5801390618c345fcd8faf4abc763e6a4c448da644b78fa81d3169"
+  },
+  "previous_local_report": {
+    "path": "local-output/argmax-bridge-20261105/bootstrap-r8/controls.json",
+    "bytes": 56987,
+    "sha256": "29ebe2f79d835cec9c33d0945e0ead642137e0309f8b16fdc2dc0575b8a5e366"
+  },
+  "focused_change": "Require exact bool/int types for n2 controls; added three alias-type negative controls."
+}
